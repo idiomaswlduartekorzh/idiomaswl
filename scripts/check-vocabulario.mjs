@@ -299,7 +299,9 @@ for (const archivo of archivos.sort()) {
       // Con la MISMA tolerancia a la flexión que usa el motor. Cuando la puerta recortaba la
       // raíz por su cuenta («woma») y el motor por la suya («wom»), la puerta avisaba de un
       // problema que no existía: «women» sí contiene a «woman».
-      if (!usa(frase, e.lemma)) {
+      // `norm()` convierte las comillas tipográficas de la frase a rectas; el lema hay que
+      // normalizarlo igual o «o’clock» no se encuentra dentro de «o'clock».
+      if (!usa(frase, norm(e.lemma))) {
         aviso(`${etiqueta}: «${e.lemma}» quizá no aparece en su propio ejemplo — revisar`)
       }
     }
@@ -513,7 +515,10 @@ for (const archivo of archivos.sort()) {
     const otroNivel = []
     for (const e of entradas) {
       const w = e.lemma.toLowerCase()
-      const nivelLista = listaBase.get(w) ?? listaBase.get(FORMA_DE_DICCIONARIO[w])
+      // Los días y los meses figuran capitalizados en el listado —«Monday», «November»— así
+      // que buscar solo en minúscula los daba a todos por ausentes.
+      const nivelLista =
+        listaBase.get(e.lemma) ?? listaBase.get(w) ?? listaBase.get(FORMA_DE_DICCIONARIO[w])
       if (!nivelLista) fuera.push(e.lemma)
       else if (nivelLista.toLowerCase() !== nivel) otroNivel.push(`${e.lemma} (${nivelLista})`)
     }

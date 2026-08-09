@@ -67,36 +67,74 @@ export default function BodyOnePracticeEngine({ essayType }: { essayType: EssayT
 
   useEffect(() => { setParagraphFields(exercise.blocks.map(() => '')); }, [exercise]);
 
+  /**
+   * Explicación por OPCIÓN, no una sola para toda la pregunta.
+   *
+   * Antes las cuatro opciones compartían la misma frase: fallabas y no te decía por qué
+   * fallaba lo TUYO. Ahora casi toda la explicación se deduce, y se deduce porque la fase
+   * anterior hizo que los distractores salieran del propio ejercicio: si el distractor es
+   * el `purpose` del bloque 4, la explicación es «ese es el trabajo del bloque 4». Solo el
+   * nivel 2, cuyas opciones son diagnósticos escritos a mano, necesita texto propio.
+   */
   const mcq = useMemo(() => {
-    if (level === 0) return {
-      question: `What is the function of this ${exercise.blocks[2].label.toLowerCase()} block?`,
-      context: exercise.blocks[2].text,
-      correct: exercise.blocks[2].purpose,
-      options: rotateOptions([exercise.blocks[2].purpose, exercise.blocks[0].purpose, exercise.blocks[3].purpose, exercise.blocks[4].purpose], `body1|${lesson.id}`, level),
-      feedback: `In this ${lesson.shortLabel} paragraph, the ${exercise.blocks[2].label.toLowerCase()} has a specific job: ${exercise.blocks[2].purpose}`,
-    };
-    if (level === 1) return {
-      question: 'Which topic sentence gives this Body 1 paragraph one aligned job?',
-      context: exercise.prompt,
-      correct: exercise.blocks[0].text,
-      options: rotateOptions([exercise.blocks[0].text, ...lesson.examples.filter((item) => item !== exercise).slice(0, 3).map((item) => item.blocks[0].text)], `body1|${lesson.id}`, level),
-      feedback: 'The aligned option answers the paragraph job directly and creates one claim that later sentences can prove.',
-    };
-    if (level === 2) return {
-      question: 'Which diagnosis identifies the most serious paragraph error?',
-      context: `Paragraph job: ${exercise.paragraphJob} Draft: "${exercise.blocks[0].text} This is a very important issue for everyone. Many people have different opinions. It has advantages and disadvantages."`,
-      correct: 'The draft states a claim but does not develop its logic.',
-      options: rotateOptions(['The draft states a claim but does not develop its logic.', 'The draft needs a memorised proverb to make its opening sound more impressive.', 'The draft must include an exact statistic and the name of the study behind it.', 'The draft should delete its topic sentence and begin straight with the supporting detail.'], `body1|${lesson.id}`, level),
-      feedback: 'Task Response depends on relevant development. Generic importance and “different opinions” do not explain the controlling claim.',
-    };
+    const otros = lesson.examples.filter((item) => item !== exercise).slice(0, 3);
+
+    if (level === 0) {
+      const objetivo = exercise.blocks[2];
+      const why = new Map(exercise.blocks.map((block) => [
+        block.purpose,
+        block === objetivo
+          ? `Correct. That is exactly what the ${objetivo.label.toLowerCase()} does in this paragraph.`
+          : `That is the job of the ${block.label.toLowerCase()} block, not the ${objetivo.label.toLowerCase()}. Both are in this paragraph, but they do different work.`,
+      ]));
+      return {
+        question: `What is the function of this ${objetivo.label.toLowerCase()} block?`,
+        context: objetivo.text,
+        correct: objetivo.purpose,
+        options: rotateOptions([objetivo.purpose, exercise.blocks[0].purpose, exercise.blocks[3].purpose, exercise.blocks[4].purpose], `body1|${lesson.id}`, level),
+        why,
+      };
+    }
+
+    if (level === 1) {
+      const why = new Map<string, string>([[exercise.blocks[0].text, 'Correct. It states one claim that the four sentences after it can prove.']]);
+      for (const item of otros) why.set(item.blocks[0].text, `That is a well-built topic sentence, but it belongs to the “${item.title}” paragraph. It does not answer this prompt, and Task Response measures exactly that.`);
+      return {
+        question: 'Which topic sentence gives this Body 1 paragraph one aligned job?',
+        context: exercise.prompt,
+        correct: exercise.blocks[0].text,
+        options: rotateOptions([exercise.blocks[0].text, ...otros.map((item) => item.blocks[0].text)], `body1|${lesson.id}`, level),
+        why,
+      };
+    }
+
+    if (level === 2) {
+      const correct = 'The draft states a claim but does not develop its logic.';
+      return {
+        question: 'Which diagnosis identifies the most serious paragraph error?',
+        context: `Paragraph job: ${exercise.paragraphJob} Draft: "${exercise.blocks[0].text} This is a very important issue for everyone. Many people have different opinions. It has advantages and disadvantages."`,
+        correct,
+        options: rotateOptions([correct, 'The draft needs a memorised proverb to make its opening sound more impressive.', 'The draft must include an exact statistic and the name of the study behind it.', 'The draft should delete its topic sentence and begin straight with the supporting detail.'], `body1|${lesson.id}`, level),
+        why: new Map([
+          [correct, 'Correct. The draft asserts and then repeats itself. Nothing in it explains why the claim holds.'],
+          ['The draft needs a memorised proverb to make its opening sound more impressive.', 'A proverb adds decoration, not development. The examiner is reading for reasoning, and a memorised phrase can lower the score rather than raise it.'],
+          ['The draft must include an exact statistic and the name of the study behind it.', 'No statistic is required in Task 2, and inventing one is worse than leaving it out. What is missing here is the explanation, not the data.'],
+          ['The draft should delete its topic sentence and begin straight with the supporting detail.', 'Removing the topic sentence would leave the paragraph with no claim at all. The claim is the one part that works; it is the support underneath it that is missing.'],
+        ]),
+      };
+    }
+
+    const objetivo = exercise.blocks[3];
+    const why = new Map<string, string>([[objetivo.text, `Correct. It makes the ${exercise.blocks[2].label.toLowerCase()} concrete without changing what the paragraph is about.`]]);
+    for (const item of otros) why.set(item.blocks[3].text, `That is a good illustration, but it comes from the “${item.title}” paragraph. Dropping it in here changes the topic halfway through.`);
     return {
-      question: `Which sentence best completes the missing ${exercise.blocks[3].label} block?`,
-      context: `${exercise.blocks[0].text} ${exercise.blocks[1].text} ${exercise.blocks[2].text} [${exercise.blocks[3].label.toUpperCase()} MISSING] ${exercise.blocks[4].text}`,
-      correct: exercise.blocks[3].text,
-      options: rotateOptions([exercise.blocks[3].text, ...lesson.examples.filter((item) => item !== exercise).slice(0, 3).map((item) => item.blocks[3].text)], `body1|${lesson.id}`, level),
-      feedback: 'The model illustration makes the preceding mechanism concrete without fabricating a named study or changing the paragraph topic.',
+      question: `Which sentence best completes the missing ${objetivo.label} block?`,
+      context: `${exercise.blocks[0].text} ${exercise.blocks[1].text} ${exercise.blocks[2].text} [${objetivo.label.toUpperCase()} MISSING] ${exercise.blocks[4].text}`,
+      correct: objetivo.text,
+      options: rotateOptions([objetivo.text, ...otros.map((item) => item.blocks[3].text)], `body1|${lesson.id}`, level),
+      why,
     };
-  }, [exercise, lesson.examples, level]);
+  }, [exercise, lesson.examples, lesson.id, level]);
 
   const assemblyChoices = useMemo(() => rotateOptions(exercise.blocks.map((item) => item.label), `body1-assemble|${lesson.id}`, level), [exercise, lesson.examples, level]);
   const assemblyCorrect = assembled.join('|') === exercise.blocks.map((item) => item.label).join('|');
@@ -145,7 +183,7 @@ export default function BodyOnePracticeEngine({ essayType }: { essayType: EssayT
           <button type="button" className={styles.secondaryButton} onClick={resetExercise}><RotateCcw size={16} /> Reset</button>
           <button type="button" onClick={check} disabled={(active.mode === 'mcq' && !selected) || (active.mode === 'assemble' && assembled.length !== exercise.blocks.length) || (active.mode === 'write' && wordCount(writing) < 12) || (active.mode === 'paragraph' && paragraphWords < 65)}><CheckCircle2 size={17} /> {active.mode === 'transfer' ? 'Mark transfer ready' : 'Check this level'}</button>
         </div>
-        {checked && <div className={`${styles.feedback} ${passed ? styles.feedbackCorrect : styles.feedbackIncorrect}`} aria-live="polite"><CheckCircle2 size={20} /><div><strong>{passed ? SE_CORRIGE.has(active.mode) ? 'Level complete.' : 'Ready to compare.' : 'Revise this attempt.'}</strong><p>{active.mode === 'mcq' ? mcq.feedback : active.mode === 'assemble' ? `For this ${lesson.shortLabel} task, the study sequence is ${exercise.blocks.map((block) => block.label).join(' → ')}.` : active.mode === 'write' ? `Compare the function of your sentence with the model ${exercise.blocks[2].label.toLowerCase()} block.` : active.mode === 'paragraph' ? 'Read the blocks as one continuous paragraph. Remove repetition and verify that every sentence develops the same controlling idea.' : 'The transfer point is ready. Complete Essay Practice handles timing and the full 250-word response; this engine does not award a band score.'}</p>{active.mode !== 'transfer' && <p><strong>Model:</strong> {bodyParagraph(exercise)}</p>}</div></div>}
+        {checked && <div className={`${styles.feedback} ${passed ? styles.feedbackCorrect : styles.feedbackIncorrect}`} aria-live="polite"><CheckCircle2 size={20} /><div><strong>{passed ? SE_CORRIGE.has(active.mode) ? 'Level complete.' : 'Ready to compare.' : 'Revise this attempt.'}</strong><p>{active.mode === 'mcq' ? (mcq.why.get(selected) ?? mcq.why.get(mcq.correct)) : active.mode === 'assemble' ? `For this ${lesson.shortLabel} task, the study sequence is ${exercise.blocks.map((block) => block.label).join(' → ')}.` : active.mode === 'write' ? `Compare the function of your sentence with the model ${exercise.blocks[2].label.toLowerCase()} block.` : active.mode === 'paragraph' ? 'Read the blocks as one continuous paragraph. Remove repetition and verify that every sentence develops the same controlling idea.' : 'The transfer point is ready. Complete Essay Practice handles timing and the full 250-word response; this engine does not award a band score.'}</p>{active.mode !== 'transfer' && <p><strong>Model:</strong> {bodyParagraph(exercise)}</p>}</div></div>}
       </div>
       <div className={styles.engineNav}><button type="button" onClick={() => go(Math.max(0, level - 1))} disabled={level === 0}><ArrowLeft size={16} /> Previous</button><button type="button" onClick={() => go(Math.min(LEVELS.length - 1, level + 1))} disabled={level === LEVELS.length - 1}>Next <ArrowRight size={16} /></button></div>
     </div>

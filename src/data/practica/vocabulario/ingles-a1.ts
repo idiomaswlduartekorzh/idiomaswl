@@ -291,6 +291,177 @@ const unidad4: VocabEntry[] = [
     { tipo: 'sustantivo' }),
 ]
 
+// ═══ BLOQUE 2 · Números, hora y calendario ════════════════════════════════════
+//
+// Las 30 salen del material del nivel: 29 de la serie de escucha y una («Friday») de un texto
+// de lectura, porque los veinte episodios nunca nombran el viernes. Cero redactadas.
+
+// ─── Unidad 1 · La hora ───────────────────────────────────────────────────────
+
+const b2unidad1: VocabEntry[] = [
+  en('en-a1-041', 'time', 'hora / tiempo', 'sustantivo', 'time',
+    [c('what time is it?', '¿qué hora es?'), c('at the same time', 'a la misma hora'), c('I have no time', 'no tengo tiempo')],
+    { target: 'What time do you get up?', es: '¿A qué hora te levantas?', episodio: 6 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-042', 'o’clock', 'en punto', 'adverbio', 'o-CLOCK',
+    [c('at nine o’clock', 'a las nueve en punto'), c('it’s five o’clock', 'son las cinco en punto')],
+    { target: 'On Monday morning, at nine o’clock.', es: 'El lunes por la mañana, a las nueve en punto.', episodio: 10 },
+    { tipo: 'otro' }),
+
+  en('en-a1-043', 'half', 'media / mitad', 'sustantivo', 'half',
+    [c('half past seven', 'las siete y media'), c('half an hour', 'media hora')],
+    { target: 'I leave at half past seven and I walk.', es: 'Salgo a las siete y media y voy andando.', episodio: 6 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-044', 'hour', 'hora (duración)', 'sustantivo', 'hour',
+    [c('two hours', 'dos horas'), c('half an hour', 'media hora'), c('for eight hours', 'durante ocho horas')],
+    { target: 'Two hours is enough for bread.', es: 'Dos horas bastan para el pan.', episodio: 17 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-045', 'minute', 'minuto', 'sustantivo', 'MI-nute',
+    [c('two minutes', 'dos minutos'), c('every thirty minutes', 'cada treinta minutos'), c('wait a minute', 'espera un momento')],
+    { target: 'Walk straight for two minutes. Don’t cross the street.', es: 'Camina recto dos minutos. No cruces la calle.', episodio: 19 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-046', 'open', 'abrir', 'verbo', 'O-pen',
+    [c('the café opens at eight', 'el café abre a las ocho'), c('open the door', 'abre la puerta'), c('the shop is open', 'la tienda está abierta')],
+    { target: 'What time does the café open?', es: '¿A qué hora abre el café?', episodio: 9 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-047', 'arrive', 'llegar', 'verbo', 'a-RRIVE',
+    [c('arrive at seven', 'llegar a las siete'), c('arrive early', 'llegar temprano'), c('arrive late', 'llegar tarde')],
+    { target: 'It opens at eight. I arrive at half past seven.', es: 'Abre a las ocho. Yo llego a las siete y media.', episodio: 9 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-048', 'leave', 'salir / irse', 'verbo', 'leave',
+    [c('leave at seven', 'salir a las siete'), c('leave home', 'salir de casa'), c('leave the house', 'irse de casa')],
+    { target: 'When do you leave?', es: '¿Cuándo sales?', episodio: 6 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-049', 'sleep', 'dormir', 'verbo', 'sleep',
+    [c('sleep eight hours', 'dormir ocho horas'), c('sleep late', 'dormir hasta tarde'), c('go to sleep', 'irse a dormir')],
+    { target: 'Never. I work on Saturday and I sleep on Sunday.', es: 'Nunca. Trabajo el sábado y duermo el domingo.', episodio: 10 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-050', 'number', 'número', 'sustantivo', 'NUM-ber',
+    [c('the number nine bus', 'el autobús número nueve'), c('a phone number', 'un número de teléfono')],
+    { target: 'Take the number nine bus. Get off at the church.', es: 'Coge el autobús número nueve. Bájate en la iglesia.', episodio: 19 },
+    { tipo: 'sustantivo' }),
+]
+
+// ─── Unidad 2 · Los días de la semana ─────────────────────────────────────────
+
+const b2unidad2: VocabEntry[] = [
+  en('en-a1-051', 'Monday', 'lunes', 'sustantivo', 'MON-day',
+    [c('on Monday', 'el lunes'), c('on Mondays', 'los lunes'), c('Monday morning', 'el lunes por la mañana')],
+    { target: 'What do you do on Mondays?', es: '¿Qué haces los lunes?', episodio: 8 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-052', 'Tuesday', 'martes', 'sustantivo', 'TUES-day',
+    [c('on Tuesday', 'el martes'), c('every Tuesday', 'todos los martes')],
+    { target: 'My English class is on Tuesday at six.', es: 'Mi clase de inglés es el martes a las seis.', episodio: 10 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-053', 'Wednesday', 'miércoles', 'sustantivo', 'WEDNES-day',
+    [c('on Wednesday', 'el miércoles'), c('on Wednesdays', 'los miércoles')],
+    { target: 'I often play football on Wednesdays.', es: 'Yo juego al fútbol a menudo los miércoles.', episodio: 8 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-054', 'Thursday', 'jueves', 'sustantivo', 'THURS-day',
+    [c('on Thursday', 'el jueves'), c('next Thursday', 'el jueves que viene')],
+    { target: 'Is it on Thursday too?', es: '¿También es el jueves?', episodio: 10 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-055', 'Friday', 'viernes', 'sustantivo', 'FRI-day',
+    [c('on Friday', 'el viernes'), c('before Friday', 'antes del viernes'), c('Friday night', 'el viernes por la noche')],
+    {
+      target: 'Please text her before Friday to say if you can come.',
+      es: 'Escríbele antes del viernes para decirle si puedes venir.',
+      lectura: 'en-a1-birthday-party-invite',
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-056', 'Saturday', 'sábado', 'sustantivo', 'SA-tur-day',
+    [c('on Saturday', 'el sábado'), c('every Saturday', 'todos los sábados')],
+    { target: 'You work every Saturday. Do you rest?', es: 'Trabajas todos los sábados. ¿Descansas?', episodio: 9 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-057', 'Sunday', 'domingo', 'sustantivo', 'SUN-day',
+    [c('on Sunday', 'el domingo'), c('Sunday morning', 'el domingo por la mañana')],
+    { target: 'I rest on Sunday. Saturday is the busy day.', es: 'Descanso el domingo. El sábado es el día ocupado.', episodio: 9 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-058', 'day', 'día', 'sustantivo', 'day',
+    [c('every day', 'todos los días'), c('the busy day', 'el día ocupado'), c('all day', 'todo el día')],
+    { target: 'I rest on Sunday. Saturday is the busy day.', es: 'Descanso el domingo. El sábado es el día ocupado.', episodio: 9 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-059', 'week', 'semana', 'sustantivo', 'week',
+    [c('every week', 'todas las semanas'), c('this week', 'esta semana'), c('next week', 'la semana que viene')],
+    { target: 'You say that every single week.', es: 'Dices eso todas las semanas.', episodio: 12 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-060', 'weekend', 'fin de semana', 'sustantivo', 'WEEK-end',
+    [c('at the weekend', 'el fin de semana'), c('this weekend', 'este fin de semana')],
+    { target: 'Do you have classes at the weekend?', es: '¿Tienes clase el fin de semana?', episodio: 10 },
+    { tipo: 'sustantivo' }),
+]
+
+// ─── Unidad 3 · Meses y cada cuánto ───────────────────────────────────────────
+
+const b2unidad3: VocabEntry[] = [
+  en('en-a1-061', 'November', 'noviembre', 'sustantivo', 'no-VEM-ber',
+    [c('in November', 'en noviembre'), c('cold in November', 'frío en noviembre')],
+    { target: 'In November it’s cold and windy.', es: 'En noviembre hace frío y viento.', episodio: 14 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-062', 'December', 'diciembre', 'sustantivo', 'de-CEM-ber',
+    [c('in December', 'en diciembre'), c('at the end of December', 'a finales de diciembre')],
+    { target: 'Is it cold in December too?', es: '¿En diciembre también hace frío?', episodio: 14 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-063', 'winter', 'invierno', 'sustantivo', 'WIN-ter',
+    [c('in winter', 'en invierno'), c('a cold winter', 'un invierno frío')],
+    { target: 'In winter I stay at home with a book.', es: 'En invierno me quedo en casa con un libro.', episodio: 8 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-064', 'today', 'hoy', 'adverbio', 'to-DAY',
+    [c('it’s cold today', 'hoy hace frío'), c('not today', 'hoy no')],
+    { target: 'It’s cold today. Is it always like this?', es: 'Hoy hace frío. ¿Siempre es así?', episodio: 14 },
+    { tipo: 'otro' }),
+
+  en('en-a1-065', 'tomorrow', 'mañana', 'adverbio', 'to-MO-rrow',
+    [c('tomorrow is sunny', 'mañana hace sol'), c('see you tomorrow', 'hasta mañana')],
+    { target: 'Today it’s grey, but tomorrow is sunny.', es: 'Hoy está gris, pero mañana hace sol.', episodio: 14 },
+    { tipo: 'otro' }),
+
+  en('en-a1-066', 'always', 'siempre', 'adverbio', 'AL-ways',
+    [c('I always work on Saturdays', 'siempre trabajo los sábados'), c('it’s always like this', 'siempre es así')],
+    { target: 'Do you always work on Saturdays?', es: '¿Trabajas siempre los sábados?', episodio: 8 },
+    { tipo: 'otro' }),
+
+  en('en-a1-067', 'never', 'nunca', 'adverbio', 'NE-ver',
+    [c('I never work on Sundays', 'nunca trabajo los domingos'), c('never again', 'nunca más')],
+    { target: 'Always. I never work on Sundays.', es: 'Siempre. Nunca trabajo los domingos.', episodio: 8 },
+    { tipo: 'otro' }),
+
+  en('en-a1-068', 'sometimes', 'a veces', 'adverbio', 'SOME-times',
+    [c('sometimes there’s snow', 'a veces hay nieve'), c('sometimes I visit her', 'a veces la visito')],
+    { target: 'It’s colder. Sometimes there’s snow.', es: 'Hace más frío. A veces hay nieve.', episodio: 14 },
+    { tipo: 'otro' }),
+
+  en('en-a1-069', 'often', 'a menudo', 'adverbio', 'OF-ten',
+    [c('I often play football', 'juego a menudo al fútbol'), c('how often?', '¿cada cuánto?')],
+    { target: 'I often play football on Wednesdays.', es: 'Yo juego al fútbol a menudo los miércoles.', episodio: 8 },
+    { tipo: 'otro' }),
+
+  en('en-a1-070', 'every', 'cada / todos los', 'adjetivo', 'EV-ery',
+    [c('every day', 'todos los días'), c('every Saturday', 'todos los sábados'), c('every thirty minutes', 'cada treinta minutos')],
+    { target: 'My bakery opened at five. Every day.', es: 'Mi panadería abría a las cinco. Todos los días.', episodio: 9 },
+    { tipo: 'otro' }),
+]
+
 export const INGLES_A1: VocabLevel = {
   lang: 'ingles',
   nivel: 'a1',
@@ -305,7 +476,9 @@ export const INGLES_A1: VocabLevel = {
       '39 de las 40 entradas están en la banda A1. La excepción es «waitress», que el Oxford 3000 ' +
       'no recoge en ningún nivel aunque sí recoge «waiter» en A1. Se mantiene a propósito: es el ' +
       'oficio de la protagonista de la serie, se oye en el episodio 1, y dejar fuera la forma ' +
-      'femenina es un límite de la lista, no del nivel. La ficha enseña las dos formas.',
+      'femenina es un límite de la lista, no del nivel. La ficha enseña las dos formas. ' +
+      'Segunda excepción: «o’clock», que el Oxford 3000 tampoco recoge pese a ser la manera ' +
+      'normal de decir la hora en punto y aparecer en el episodio 10. Se mantiene por lo mismo.',
   },
   bloques: [
     {
@@ -313,6 +486,12 @@ export const INGLES_A1: VocabLevel = {
       nombre: 'Yo y mi gente',
       icono: '👋',
       entradas: [...unidad1, ...unidad2, ...unidad3, ...unidad4],
+    },
+    {
+      id: 'numeros-hora-y-calendario',
+      nombre: 'Números, hora y calendario',
+      icono: '🕘',
+      entradas: [...b2unidad1, ...b2unidad2, ...b2unidad3],
     },
   ],
 }
