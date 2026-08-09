@@ -878,6 +878,225 @@ const b4unidad3: VocabEntry[] = [
     { tipo: 'otro' }),
 ]
 
+// ═══ BLOQUE 6 · Ropa, colores y describir ═════════════════════════════════════
+//
+// Va antes que el 5 a propósito. El bloque 5 —cuerpo, salud y sensaciones— se paró: el
+// material del nivel no tiene ni una parte del cuerpo salvo «hands», ni «doctor», ni
+// «tired», ni «happy». Está contado en docs/vocabulario-loop.md §3, con la evidencia, y es
+// una decisión del usuario, no del loop. Este bloque sí lo sostiene el material: el episodio
+// 13 es una conversación entera sobre qué se pone cada uno para trabajar.
+//
+// Cinco redactados, más que en ningún bloque anterior, y los cinco forzados:
+//
+//  · «clothes», «colour» y «red» no aparecen en ningún turno ni en ninguna lectura. Son las
+//    palabras que dan nombre al bloque y a su unidad central.
+//  · «black» y «white» sí están, pero las dos viven en la misma frase —«I wear black
+//    trousers and a white shirt»— que ya enseña «trousers» y «shirt». Cuatro palabras que no
+//    aparecen en ningún otro sitio, y solo caben dos. Se quedaron con la frase las dos que
+//    son ropa, y los dos colores llevan frase propia declarada.
+//
+// «sunny» y «busy» se cayeron por lo mismo y no se pudieron rescatar: sus únicas frases ya
+// enseñaban dos palabras cada una («tomorrow» en el episodio 14, «Saturday» y «Sunday» en el
+// 9). Quedan anotadas en el documento del loop.
+
+// ─── Unidad 1 · La ropa ───────────────────────────────────────────────────────
+
+const b6unidad1: VocabEntry[] = [
+  en('en-a1-134', 'clothes', 'ropa', 'sustantivo', 'clothes',
+    [c('warm clothes', 'ropa de abrigo'), c('buy clothes', 'comprar ropa'), c('the clothes are clean', 'la ropa está limpia')],
+    {
+      target: 'I wash my clothes on Sunday.',
+      es: 'Lavo la ropa los domingos.',
+      motivo: NO_SIRVE('clothes', 'no aparece en ningún turno de los 20 episodios ni en ninguna lectura de inglés A1, y es la palabra que da nombre al bloque.'),
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-135', 'wear', 'llevar puesto', 'verbo', 'wear',
+    [c('wear a jacket', 'llevar chaqueta'), c('wear black', 'vestir de negro'), c('what do you wear?', '¿qué te pones?')],
+    { target: 'What do you wear to work?', es: '¿Qué te pones para trabajar?', episodio: 13 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-136', 'trousers', 'pantalones', 'sustantivo', 'TROU-sers',
+    [c('black trousers', 'pantalones negros'), c('a pair of trousers', 'unos pantalones'), c('wear trousers', 'llevar pantalones')],
+    { target: 'I wear black trousers and a white shirt.', es: 'Llevo pantalones negros y una camisa blanca.', episodio: 13 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-137', 'shirt', 'camisa', 'sustantivo', 'shirt',
+    [c('a white shirt', 'una camisa blanca'), c('wear a shirt', 'llevar camisa'), c('a clean shirt', 'una camisa limpia')],
+    { target: 'I wear black trousers and a white shirt.', es: 'Llevo pantalones negros y una camisa blanca.', episodio: 13 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-138', 'jacket', 'chaqueta', 'sustantivo', 'JACK-et',
+    [c('a green jacket', 'una chaqueta verde'), c('wear a jacket', 'llevar chaqueta'), c('take off your jacket', 'quítate la chaqueta')],
+    { target: 'Do you wear a jacket?', es: '¿Llevas chaqueta?', episodio: 13 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-139', 'scarf', 'bufanda', 'sustantivo', 'scarf',
+    [c('a warm scarf', 'una bufanda de abrigo'), c('wear a scarf', 'llevar bufanda'), c('a jacket and a scarf', 'una chaqueta y una bufanda')],
+    { target: 'In winter I wear a green jacket and a scarf.', es: 'En invierno llevo una chaqueta verde y una bufanda.', episodio: 13 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-140', 'shoes', 'zapatos', 'sustantivo', 'shoes',
+    [c('old shoes', 'zapatos viejos'), c('new shoes', 'zapatos nuevos'), c('a pair of shoes', 'un par de zapatos')],
+    { target: 'Your shoes are terrible, Leo.', es: 'Tus zapatos son horribles, Leo.', episodio: 13 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-141', 'terrible', 'horrible / malísimo', 'adjetivo', 'TER-ri-ble',
+    [c('the weather is terrible', 'hace un tiempo horrible'), c('a terrible day', 'un día horrible'), c('terrible shoes', 'unos zapatos horribles')],
+    { target: 'Your shoes are terrible, Leo.', es: 'Tus zapatos son horribles, Leo.', episodio: 13 },
+    { tipo: 'otro' }),
+
+  en('en-a1-142', 'comfortable', 'cómodo', 'adjetivo', 'COM-for-ta-ble',
+    [c('comfortable shoes', 'zapatos cómodos'), c('a comfortable chair', 'una silla cómoda'), c('they are comfortable', 'son cómodos')],
+    { target: 'They’re comfortable. That’s enough for me.', es: 'Son cómodos. Con eso me basta.', episodio: 13 },
+    { tipo: 'otro' }),
+
+  en('en-a1-143', 'hat', 'sombrero / gorro', 'sustantivo', 'hat',
+    [c('bring a hat', 'trae un sombrero'), c('wear a hat', 'llevar sombrero'), c('a hat for the sun', 'un sombrero para el sol')],
+    {
+      target: 'Please arrive at eleven and bring a hat because there is little shade.',
+      es: 'Llega a las once y trae un sombrero, porque hay poca sombra.',
+      lectura: 'en-a1-birthday-party-invite',
+    },
+    { tipo: 'sustantivo' }),
+]
+
+// ─── Unidad 2 · Los colores ───────────────────────────────────────────────────
+
+const b6unidad2: VocabEntry[] = [
+  en('en-a1-144', 'colour', 'color', 'sustantivo', 'CO-lour',
+    [c('what colour is it?', '¿de qué color es?'), c('my favourite colour', 'mi color favorito'), c('the same colour', 'del mismo color')],
+    {
+      target: 'What colour is your jacket?',
+      es: '¿De qué color es tu chaqueta?',
+      motivo: NO_SIRVE('colour', 'no aparece en ningún turno ni en ninguna lectura de inglés A1, y es la palabra con la que se pregunta por todas las demás de esta unidad.'),
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-145', 'black', 'negro', 'adjetivo', 'black',
+    [c('black trousers', 'pantalones negros'), c('black shoes', 'zapatos negros'), c('black and white', 'blanco y negro')],
+    {
+      target: 'My shoes are black and my bag is black too.',
+      es: 'Mis zapatos son negros y mi bolso también.',
+      motivo: NO_SIRVE('black', 'solo aparece en «I wear black trousers and a white shirt», la única frase del nivel que dice «trousers» y «shirt». Caben dos palabras por frase y esas dos no tienen otro sitio de donde salir.'),
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-146', 'white', 'blanco', 'adjetivo', 'white',
+    [c('a white shirt', 'una camisa blanca'), c('white walls', 'paredes blancas'), c('black and white', 'blanco y negro')],
+    {
+      target: 'The walls are white and the door is blue.',
+      es: 'Las paredes son blancas y la puerta es azul.',
+      motivo: NO_SIRVE('white', 'comparte frase con «black»: la única del nivel que la dice ya enseña «trousers» y «shirt», que no salen en ningún otro turno.'),
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-147', 'red', 'rojo', 'adjetivo', 'red',
+    [c('a red jacket', 'una chaqueta roja'), c('red shoes', 'zapatos rojos'), c('the red door', 'la puerta roja')],
+    {
+      target: 'I want the red jacket, not the green one.',
+      es: 'Quiero la chaqueta roja, no la verde.',
+      motivo: NO_SIRVE('red', 'no aparece en ningún turno ni en ninguna lectura de inglés A1, y sin ella la unidad de colores no tiene los tres básicos.'),
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-148', 'green', 'verde', 'adjetivo', 'green',
+    [c('a green jacket', 'una chaqueta verde'), c('the green door', 'la puerta verde'), c('green trousers', 'pantalones verdes')],
+    { target: 'In winter I wear a green jacket and a scarf.', es: 'En invierno llevo una chaqueta verde y una bufanda.', episodio: 13 },
+    { tipo: 'otro' }),
+
+  en('en-a1-149', 'blue', 'azul', 'adjetivo', 'blue',
+    [c('a blue blanket', 'una manta azul'), c('the blue door', 'la puerta azul'), c('a blue box', 'una caja azul')],
+    { target: 'He sleeps under my desk. He’s got a blue blanket.', es: 'Duerme debajo de mi escritorio. Tiene una manta azul.', episodio: 15 },
+    { tipo: 'otro' }),
+
+  en('en-a1-150', 'brown', 'marrón / café', 'adjetivo', 'brown',
+    [c('a brown dog', 'un perro marrón'), c('brown bread', 'pan integral'), c('brown shoes', 'zapatos marrones')],
+    { target: 'I’ve got a small brown dog. His name is Max.', es: 'Tengo un perro pequeño y marrón. Se llama Max.', episodio: 15 },
+    { tipo: 'otro' }),
+
+  en('en-a1-151', 'grey', 'gris', 'adjetivo', 'grey',
+    [c('a grey day', 'un día gris'), c('the library is grey', 'la biblioteca es gris'), c('grey trousers', 'pantalones grises')],
+    { target: 'Today it’s grey, but tomorrow is sunny.', es: 'Hoy está gris, pero mañana hace sol.', episodio: 14 },
+    { tipo: 'otro' }),
+
+  en('en-a1-152', 'yellow', 'amarillo', 'adjetivo', 'YEL-low',
+    [c('a yellow star', 'una estrella amarilla'), c('yellow flowers', 'flores amarillas'), c('the yellow door', 'la puerta amarilla')],
+    {
+      target: 'It has a small yellow star on the front and a name tag inside.',
+      es: 'Tiene una estrella amarilla pequeña delante y una etiqueta con el nombre dentro.',
+      lectura: 'en-a1-lost-and-found-message',
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-153', 'same', 'mismo / igual', 'adjetivo', 'same',
+    [c('the same colour', 'del mismo color'), c('the same shoes', 'los mismos zapatos'), c('at the same time', 'a la misma hora')],
+    { target: 'I always wear the same old shoes.', es: 'Yo llevo siempre los mismos zapatos viejos.', episodio: 13 },
+    { tipo: 'otro' }),
+]
+
+// ─── Unidad 3 · Cómo es: describir cosas y sitios ─────────────────────────────
+
+const b6unidad3: VocabEntry[] = [
+  en('en-a1-154', 'large', 'grande', 'adjetivo', 'large',
+    [c('a large bag', 'una bolsa grande'), c('a large room', 'una habitación grande'), c('too large', 'demasiado grande')],
+    {
+      target: 'Passengers with large bags can use the lift beside the ticket office.',
+      es: 'Los pasajeros con bolsas grandes pueden usar el ascensor junto a la taquilla.',
+      lectura: 'en-a1-train-platform-sign',
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-155', 'size', 'talla / tamaño', 'sustantivo', 'size',
+    [c('the same size', 'del mismo tamaño'), c('what size do you wear?', '¿qué talla usas?'), c('a small size', 'una talla pequeña')],
+    { target: 'Our families are almost the same size.', es: 'Nuestras familias son casi del mismo tamaño.', episodio: 2 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-156', 'short', 'corto / bajo', 'adjetivo', 'short',
+    [c('a short message', 'un mensaje corto'), c('short hair', 'pelo corto'), c('a short walk', 'un paseo corto')],
+    {
+      target: 'Emma reads a short message from her sister.',
+      es: 'Emma lee un mensaje corto de su hermana.',
+      lectura: 'en-a1-my-morning-at-the-cafe',
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-157', 'warm', 'cálido / templado', 'adjetivo', 'warm',
+    [c('warm clothes', 'ropa de abrigo'), c('the water is warm', 'el agua está tibia'), c('a warm day', 'un día templado')],
+    { target: 'It’s not boring. It’s the sea and it’s warm.', es: 'No es aburrido. Es el mar y hace bueno.', episodio: 14 },
+    { tipo: 'otro' }),
+
+  en('en-a1-158', 'sea', 'mar', 'sustantivo', 'sea',
+    [c('at the sea', 'en el mar'), c('the sea is warm', 'el mar está tibio'), c('near the sea', 'cerca del mar')],
+    { target: 'It’s not boring. It’s the sea and it’s warm.', es: 'No es aburrido. Es el mar y hace bueno.', episodio: 14 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-159', 'cold', 'frío', 'adjetivo', 'cold',
+    [c('it’s cold today', 'hoy hace frío'), c('cold water', 'agua fría'), c('cold and windy', 'frío y con viento')],
+    { target: 'It’s cold today. Is it always like this?', es: 'Hoy hace frío. ¿Siempre es así?', episodio: 14 },
+    { tipo: 'otro' }),
+
+  en('en-a1-160', 'boring', 'aburrido', 'adjetivo', 'BOR-ing',
+    [c('a boring day', 'un día aburrido'), c('that’s boring', 'qué aburrido'), c('a boring job', 'un trabajo aburrido')],
+    { target: 'Every day? That’s boring.', es: '¿Todos los días? Qué aburrido.', episodio: 14 },
+    { tipo: 'otro' }),
+
+  en('en-a1-161', 'good', 'bueno', 'adjetivo', 'good',
+    [c('a good answer', 'una buena respuesta'), c('a good friend', 'un buen amigo'), c('the food is good', 'la comida está buena')],
+    { target: 'That’s a very good answer.', es: 'Esa es una respuesta muy buena.', episodio: 9 },
+    { tipo: 'otro' }),
+
+  en('en-a1-162', 'quiet', 'tranquilo / silencioso', 'adjetivo', 'QUI-et',
+    [c('a quiet street', 'una calle tranquila'), c('a quiet day', 'un día tranquilo'), c('the library is quiet', 'la biblioteca es silenciosa')],
+    { target: 'Nice to meet you, Leo. This street is very quiet.', es: 'Encantada, Leo. Esta calle es muy tranquila.', episodio: 1 },
+    { tipo: 'otro' }),
+
+  en('en-a1-163', 'inside', 'dentro', 'adverbio', 'in-SIDE',
+    [c('come inside', 'entra'), c('inside the shop', 'dentro del local'), c('see inside', 'ver por dentro')],
+    { target: 'Do you want to see inside?', es: '¿Quieres ver por dentro?', episodio: 20 },
+    { tipo: 'otro' }),
+]
+
 export const INGLES_A1: VocabLevel = {
   lang: 'ingles',
   nivel: 'a1',
@@ -908,7 +1127,15 @@ export const INGLES_A1: VocabLevel = {
       '«soup» y «sandwich», que podrían estar en banda A2. Se quedaron fuera del bloque ' +
       '«vegetable» y «salad»: solo viven en la frase del menú del comedor, que ya enseña dos ' +
       'palabras, y no son imprescindibles en A1. «money» y «list» salen del episodio 11 pero ' +
-      'no son comida: van a los bloques de ciudad y de trabajo.',
+      'no son comida: van a los bloques de ciudad y de trabajo. ' +
+      'Bloque 6 (ropa, colores y describir), 9 ago 2026: mismo caso, el cruce contra la lista ' +
+      'sigue pendiente. Dos entradas se sabe ya que van una banda por encima —«terrible» y ' +
+      '«comfortable», ambas A2— y se mantienen por la misma razón que «lamp» o «empty»: son lo ' +
+      'que se dice en el episodio 13, que es una conversación A1 sobre qué se pone cada uno ' +
+      'para trabajar, y un estudiante que oye «Your shoes are terrible» necesita entenderlo. ' +
+      'Cinco entradas van redactadas: «clothes», «colour» y «red» no están en el material, y ' +
+      '«black» y «white» comparten la única frase que dice «trousers» y «shirt», donde solo ' +
+      'caben dos. «sunny» y «busy» se quedaron fuera por lo mismo, sin sitio al que ir.',
   },
   bloques: [
     {
@@ -934,6 +1161,12 @@ export const INGLES_A1: VocabLevel = {
       nombre: 'Comida y bebida',
       icono: '🍞',
       entradas: [...b4unidad1, ...b4unidad2, ...b4unidad3],
+    },
+    {
+      id: 'ropa-colores-y-describir',
+      nombre: 'Ropa, colores y describir',
+      icono: '👕',
+      entradas: [...b6unidad1, ...b6unidad2, ...b6unidad3],
     },
   ],
 }

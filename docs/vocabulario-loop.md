@@ -65,7 +65,7 @@ traen las capas de raíz y de acento.
 
 | # | Fase | Estado |
 |---|---|---|
-| 1 | **inglés A1** | 🔨 en curso — 100/300, bloques 1-3 hechos |
+| 1 | **inglés A1** | 🔨 en curso — 160/300, bloques 1-4 y 6 hechos · el 5 parado (§3) |
 | 2 | inglés A2 | pendiente |
 | 3 | inglés B1 | pendiente |
 | 4 | alemán A1 | pendiente |
@@ -92,7 +92,7 @@ con la anterior sin cerrar.
 > **Este apartado se actualiza al final de cada vuelta.** Es el único estado que el loop
 > necesita para saber por dónde va.
 
-**Fase 1 · inglés A1 — 130 de 300**
+**Fase 1 · inglés A1 — 160 de 300**
 
 | Bloque | Palabras | Estado |
 |---|---|---|
@@ -100,9 +100,9 @@ con la anterior sin cerrar.
 | 2 · Números, hora y calendario | 30 | ✅ |
 | 3 · Casa y objetos cotidianos | 30 | ✅ |
 | 4 · Comida y bebida | 30 | ✅ |
-| 5 · Cuerpo, salud y sensaciones | 30 | ⬜ **siguiente** |
-| 6 · Ropa, colores y describir | 30 | ⬜ |
-| 7 · Ciudad, lugares y direcciones | 30 | ⬜ |
+| 5 · Cuerpo, salud y sensaciones | 30 | 🛑 **parado — decide el usuario** |
+| 6 · Ropa, colores y describir | 30 | ✅ |
+| 7 · Ciudad, lugares y direcciones | 30 | ⬜ **siguiente** |
 | 8 · Rutina diaria y acciones | 30 | ⬜ |
 | 9 · Estudio y trabajo | 30 | ⬜ |
 | 10 · Cortesía y supervivencia | 30 | ⬜ |
@@ -110,12 +110,55 @@ con la anterior sin cerrar.
 El bloque 10 no existe hoy en ningún idioma y es el que permite sobrevivir a una conversación:
 saludar, pedir, disculparse, decir «no entiendo».
 
-**Apuntes que deja el bloque 4 para los siguientes:**
+### 🛑 Bloque 5 — parado por §6, y por qué
 
-- `smell` (ep09), `hungry` y `thirsty` van al bloque 5, que es su sitio.
+**El material del nivel no tiene cuerpo ni salud.** No es que falten algunas palabras: falta el
+tema entero. Comprobado abriendo cada frase, no fiándose del ✓ del buscador:
+
+| Lo único que hay de verdad | Dónde |
+|---|---|
+| `hand` | ep17 · «Can you still work with your hands?» |
+| `hospital` | ep07 y la guía del autobús |
+| `smell` | ep09 · «I miss the smell.» |
+| `hear` · `see` | ep16 · ep20 |
+| `rest` · `walk` · `run` · `sit` · `stand` | ep09 · ep06 · ep15 · lecturas · ep17 |
+
+Y lo que el buscador daba por bueno y **no era**: `body` era *nobody* y *somebody*; `ear` era
+*years*, *near* y *wear*; `ill` era *still* y *will*; `hair` era *chair*; `arm` era *warm*;
+`foot` era *football*; `pain` era *paint*.
+
+**Cero apariciones**, ni en escucha ni en lectura: `head`, `eye`, `face`, `mouth`, `nose`,
+`tooth`, `leg`, `heart`, `finger`, `doctor`, `sick`, `medicine`, `hurt`, `tired`, `well`,
+`fever`, `hungry`, `thirsty`, `happy`, `sad`, `angry`, `feel`.
+
+El bloque saldría con **16 de 30 frases inventadas**: cobertura del 47 %, por debajo del 60 %
+que exige el §4. Eso es escribir el vocabulario aparte de las lecciones, que es justo lo que
+la regla de veto existe para impedir. Por eso el loop se paró aquí y siguió por el 6.
+
+**Tres salidas, y la elección es del usuario:**
+
+1. **Fundir el bloque 5 con el tiempo atmosférico.** El episodio 14 es una conversación entera
+   sobre el clima y ha quedado a medio usar: `hot`, `windy`, `snow`, `sunny` y `rain` siguen
+   libres. Un bloque «El tiempo, el cuerpo y cómo me siento» se sostendría con material real
+   para dos tercios, y solo el cuerpo iría redactado. Es la opción más barata.
+2. **Ampliar el corpus**: añadir turnos a la serie de escucha de inglés A1 con las palabras que
+   faltan. Es lo que de verdad arregla el problema —y arregla también los once redactados que
+   ya hay— pero toca contenido publicado con audio grabado, así que no lo decide el loop.
+3. **Dejar el cuerpo fuera de A1** y llevarlo entero a A2, donde el material puede darlo.
+
+Mientras no haya decisión, el loop no toca el bloque 5. **La fase 1 no se puede cerrar sin
+él**, así que la pregunta llega igual antes de las cuatro auditorías.
+
+**Apuntes que dejan los bloques 4 y 6 para los siguientes:**
+
 - `money` y `list` están en el episodio 11 y se guardaron para los bloques 7 y 9. No son comida.
 - `vegetable` y `salad` se quedaron fuera de A1: solo viven en la frase del menú del comedor,
   que ya enseña dos palabras.
+- `sunny` y `busy` se cayeron del bloque 6 por lo mismo: sus únicas frases ya enseñaban dos
+  palabras (`tomorrow` en el ep14, `Saturday` y `Sunday` en el ep09). Si el bloque 5 se funde
+  con el tiempo, `sunny` tiene ahí una segunda oportunidad.
+- Para el bloque 7 el material sobra: ep05, ep19, ep20 y cuatro lecturas (guía del autobús,
+  cartel del andén, biblioteca, objetos perdidos).
 
 ### ⚠️ Deuda que hay que saldar antes de cerrar la fase 1
 
@@ -320,3 +363,5 @@ sin leer commits.
 | 9 ago 2026 | inglés A1, bloque 4 | `tea` daba cuatro positivos y no era ninguno: eran `teaches`, `teach` y `team`. Segundo espejismo del mismo tipo que `clock` dentro de `o’clock`. Se abre la frase siempre; el ✓ del buscador no es una fuente |
 | 9 ago 2026 | inglés A1, bloque 4 | El spec de Playwright estaba fijado a `bloques[0]`: los bloques 2, 3 y 4 pasaban el validador sin que nadie los hubiera jugado nunca. Ahora recorre todos los bloques del nivel, y comprueba antes que la unidad tenga con qué salir de la caja 5 |
 | 9 ago 2026 | inglés A1, bloque 4 | Aparece un caso que la regla no preveía: una palabra que **sí** está en el material pero cuya única frase ya enseña dos. Se resolvió con ejemplo redactado y motivo explícito (`cheese`), en vez de meter una tercera en la misma frase |
+| 9 ago 2026 | inglés A1, bloque 5 | **Un tema entero puede no estar en el corpus.** No faltaban palabras sueltas: faltaba el cuerpo completo. `body`, `ear`, `ill`, `hair`, `arm`, `foot` y `pain` daban positivo y los siete eran espejismos (*nobody*, *years*, *still*, *chair*, *warm*, *football*, *paint*). Lección: antes de escribir un bloque, medir cuántas de sus candidatas sobreviven a abrir la frase — si no llegan al 60 %, el bloque no se empieza |
+| 9 ago 2026 | inglés A1, bloque 6 | La cuota de un episodio y la de una frase se pelean. El ep13 es la única conversación de ropa del nivel y da 10 de 30 (el techo justo), y su frase de los colores enseña cuatro palabras que no salen en ningún otro sitio. Se quedaron con la frase las dos que son ropa; `black` y `white` fueron a redactado. Un tema concentrado en un solo episodio siempre va a costar redactados |
