@@ -100,17 +100,45 @@ con la anterior sin cerrar.
 | 2 · Números, hora y calendario | 30 | ✅ |
 | 3 · Casa y objetos cotidianos | 30 | ✅ |
 | 4 · Comida y bebida | 30 | ✅ |
-| 5 · Cuerpo, salud y sensaciones | 30 | 🛑 **parado — decide el usuario** |
+| 5 · Cuerpo, salud y sensaciones | 30 | ⬜ **siguiente** — desbloqueado, ver abajo |
 | 6 · Ropa, colores y describir | 30 | ✅ |
 | 7 · Ciudad, lugares y direcciones | 30 | ✅ |
 | 8 · Rutina diaria y acciones | 30 | ✅ |
-| 9 · Estudio y trabajo | 30 | ⬜ **siguiente** |
+| 9 · Estudio y trabajo | 30 | ⬜ |
 | 10 · Cortesía y supervivencia | 30 | ⬜ |
 
 El bloque 10 no existe hoy en ningún idioma y es el que permite sobrevivir a una conversación:
 saludar, pedir, disculparse, decir «no entiendo».
 
-### 🛑 Bloque 5 — parado por §6, y por qué
+### ✅ Bloque 5 — desbloqueado por el usuario el 9 ago 2026
+
+**Decisión: se escribe igual, con los ejemplos redactados que hagan falta.** Textualmente:
+*«no importa que no esté en las demás partes… podríamos dejarla así y luego se linkea con su
+parte correspondiente cuando esta surja»*.
+
+Es una excepción consciente a la regla del §4, no un descuido, y no se toca ningún umbral: el
+script mide la cobertura sobre el nivel entero, que se queda en torno al 86 % y sigue muy por
+encima del 60 %. Lo que baja es la cobertura **de este bloque**, a propósito.
+
+Condiciones con las que se escribe:
+
+1. **Cada ejemplo redactado lleva su motivo escrito**, como los demás. Nada de inventar en
+   silencio.
+2. **Se pueden encontrar todos después**, para volver a enlazarlos cuando el corpus crezca:
+
+   ```bash
+   grep -n "motivo:" src/data/practica/vocabulario/ingles-a1.ts
+   ```
+3. **La gramática de los ejemplos no se sale del nivel**: presente simple, `have got`, `can`,
+   `there is/are`. Lo mismo que ya oye el estudiante.
+4. Se aprovecha lo poco real que hay —`hand`, `hospital`, `smell`, `hear`, `see`, `rest`,
+   `run`, `sit`, `stand`— y las sobras del episodio 14 (`hot`, `windy`, `snow`, `sunny`,
+   `rain`), que es de clima y quedó a medio usar.
+
+Lo que sigue debajo es el diagnóstico que llevó a parar. Se deja porque explica **por qué**
+este bloque lleva tantos redactados, y porque es el argumento para ampliar el corpus algún día.
+
+<details><summary>El diagnóstico original</summary>
 
 **El material del nivel no tiene cuerpo ni salud.** No es que falten algunas palabras: falta el
 tema entero. Comprobado abriendo cada frase, no fiándose del ✓ del buscador:
@@ -135,19 +163,11 @@ El bloque saldría con **16 de 30 frases inventadas**: cobertura del 47 %, por d
 que exige el §4. Eso es escribir el vocabulario aparte de las lecciones, que es justo lo que
 la regla de veto existe para impedir. Por eso el loop se paró aquí y siguió por el 6.
 
-**Tres salidas, y la elección es del usuario:**
+Se le ofrecieron tres salidas —fundirlo con el clima, ampliar el corpus, o llevarlo a A2— y
+eligió ninguna: escribirlo tal cual y volver a enlazarlo cuando haya material. Ampliar el
+corpus sigue siendo lo que de verdad lo arregla, y queda apuntado para cuando toque grabar.
 
-1. **Fundir el bloque 5 con el tiempo atmosférico.** El episodio 14 es una conversación entera
-   sobre el clima y ha quedado a medio usar: `hot`, `windy`, `snow`, `sunny` y `rain` siguen
-   libres. Un bloque «El tiempo, el cuerpo y cómo me siento» se sostendría con material real
-   para dos tercios, y solo el cuerpo iría redactado. Es la opción más barata.
-2. **Ampliar el corpus**: añadir turnos a la serie de escucha de inglés A1 con las palabras que
-   faltan. Es lo que de verdad arregla el problema —y arregla también los once redactados que
-   ya hay— pero toca contenido publicado con audio grabado, así que no lo decide el loop.
-3. **Dejar el cuerpo fuera de A1** y llevarlo entero a A2, donde el material puede darlo.
-
-Mientras no haya decisión, el loop no toca el bloque 5. **La fase 1 no se puede cerrar sin
-él**, así que la pregunta llega igual antes de las cuatro auditorías.
+</details>
 
 **Apuntes que dejan los bloques 4 y 6 para los siguientes:**
 
@@ -165,23 +185,29 @@ Mientras no haya decisión, el loop no toca el bloque 5. **La fase 1 no se puede
 - `stay` se quedó fuera del bloque 8 y no tiene adónde ir: su única frase, «In winter I stay
   at home with a book», ya enseñaba dos palabras.
 
-### ⚠️ Deuda que hay que saldar antes de cerrar la fase 1
+### ✅ Deuda saldada — el cruce contra el Oxford 3000 ya está hecho
 
-**El bloque 4 no se cruzó contra el Oxford 3000.** El archivo de la lista no está en esta
-máquina y no vive en el repo por derechos. Las 30 entradas se eligieron por criterio, y hay
-cuatro que conviene mirar primero porque podrían ir una banda por encima: `menu`, `order`,
-`soup` y `sandwich`. **Lo mismo vale para los bloques 6 y 7**, escritos después: de esos, las
-que hay que mirar son `terrible` y `comfortable` (sabidas ya A2, y justificadas por escrito en
-`listaBase.nota`), y `platform`, `passenger`, `church`, `sign`, `straight` y `cross`, que
-podrían serlo. En cuanto haya lista:
+**9 ago 2026, sobre las 220 entradas: 201 en banda A1 (91 %).** La lista se descargó de
+[Kolia951/The_Oxford_3000_CEFR](https://github.com/Kolia951/The_Oxford_3000_CEFR) y viene ya
+en el formato que la puerta espera. **No vive en el repo** —tiene derechos— así que cada vez
+hay que pasarla a mano:
 
 ```bash
 node scripts/check-vocabulario.mjs --lang ingles --level a1 --lista <ruta al oxford3000.json>
 ```
 
-Formato: `{ "A1": ["about", …], "A2": [...] }`. Lo que quede fuera de banda se justifica por
-escrito en `listaBase.nota` o se cambia — no se deja pasar en silencio. Fue justo ese cruce el
-que descubrió que tres palabras del bloque 3 eran decorado de la trama.
+Lo que resolvió, y lo que dejó abierto, está escrito entero en `listaBase.nota`. En corto:
+las nueve sospechas anotadas en los bloques 4, 6, 7 y 8 (`menu`, `order`, `soup`, `sandwich`,
+`afternoon`, `evening`, `finish`, `terrible`, `left`) eran **falsas alarmas**: las nueve son
+A1. Catorce entradas van una banda por encima y se mantienen todas, cada una porque sale de
+una lección A1. Cinco no están en la lista, y solo tres son ausencias de verdad (`waitress`,
+`o’clock`, `scarf`); `shoes` y `café` son la misma palabra que `shoe` y `cafe`, en plural y
+con tilde.
+
+**Ojo con el script cuando lo leas**: la lista mete algunas palabras en dos niveles a la vez
+—`still` está en A1 y en B1, `finish` en A1 y en A2— y el cruce se queda con **el más bajo**,
+que es donde la palabra se introduce. Una comprobación rápida por fuera que se quede con el
+último nivel dará falsos positivos. Ya pasó.
 
 ---
 
@@ -360,6 +386,8 @@ El loop se detiene y pregunta —no adivina— cuando:
 | Una URL por bloque, como en gramática | 8 ago 2026 |
 | El validador entra en el `prebuild` | 8 ago 2026 |
 | Las dos sesiones comparten árbol, luego comparten rama | 8 ago 2026 |
+| Un bloque puede escribirse con ejemplos redactados aunque el corpus no lo cubra, y se vuelve a enlazar cuando el material exista | 9 ago 2026 |
+| La lista base se cruza con `--lista`; no entra al repo por derechos | 9 ago 2026 |
 
 ---
 

@@ -1578,30 +1578,30 @@ export const INGLES_A1: VocabLevel = {
       'palabra sea menos frecuente en general. Sí se sacaron del bloque «balcony», «blanket» y ' +
       '«tile», que no están en la lista en ningún nivel: eran decorado de la historia, no ' +
       'objetos que un principiante necesite. Entraron «bag», «phone» y «water» en su lugar. ' +
-      'Bloque 4 (comida y bebida), 9 ago 2026: el cruce contra la lista NO se pudo hacer, ' +
-      'porque el archivo del Oxford 3000 por nivel no está en esta máquina y la lista no vive ' +
-      'en el repo por derechos. Las 30 entradas se eligieron por criterio y quedan pendientes ' +
-      'de cruzar antes de cerrar la fase; las que hay que mirar primero son «menu», «order», ' +
-      '«soup» y «sandwich», que podrían estar en banda A2. Se quedaron fuera del bloque ' +
-      '«vegetable» y «salad»: solo viven en la frase del menú del comedor, que ya enseña dos ' +
-      'palabras, y no son imprescindibles en A1. «money» y «list» salen del episodio 11 pero ' +
-      'no son comida: van a los bloques de ciudad y de trabajo. ' +
-      'Bloque 6 (ropa, colores y describir), 9 ago 2026: mismo caso, el cruce contra la lista ' +
-      'sigue pendiente. Dos entradas se sabe ya que van una banda por encima —«terrible» y ' +
-      '«comfortable», ambas A2— y se mantienen por la misma razón que «lamp» o «empty»: son lo ' +
-      'que se dice en el episodio 13, que es una conversación A1 sobre qué se pone cada uno ' +
-      'para trabajar, y un estudiante que oye «Your shoes are terrible» necesita entenderlo. ' +
-      'Cinco entradas van redactadas: «clothes», «colour» y «red» no están en el material, y ' +
-      '«black» y «white» comparten la única frase que dice «trousers» y «shirt», donde solo ' +
-      'caben dos. «sunny» y «busy» se quedaron fuera por lo mismo, sin sitio al que ir. ' +
-      'Bloque 7 (ciudad, lugares y direcciones), 9 ago 2026: el mejor surtido del nivel —diez ' +
-      'de las treinta salen de las lecturas, que son señales y avisos de ciudad— y solo dos ' +
-      'redactados: «left», que no está en ningún sitio, y «cross», cuya única frase ya estaba ' +
-      'llena. Pendientes de cruzar contra la lista: «platform», «passenger», «church», «sign», ' +
-      '«straight» y «cross» podrían ir una banda por encima. ' +
-      'Bloque 8 (rutina diaria y acciones), 9 ago 2026: cero redactados, las treinta salen del ' +
-      'material. Pendientes de cruzar: «hardly» no entró por sospecha de B1, y de las que sí ' +
-      'entraron conviene mirar «afternoon», «evening» y «finish».',
+      'Notas de bloque: del 4 se quedaron fuera «vegetable» y «salad» (solo viven en la frase ' +
+      'del menú del comedor, que ya enseña dos palabras); del 6, «sunny» y «busy» por lo mismo; ' +
+      'del 8, «stay». «money» y «list» salen del episodio 11 pero no son comida: van a los ' +
+      'bloques de ciudad y de trabajo. ' +
+      // ── Cruce completo, 9 ago 2026 ──────────────────────────────────────────
+      'CRUCE COMPLETO contra el Oxford 3000 por nivel CEFR, 9 ago 2026, sobre las 220 entradas ' +
+      'de los siete bloques escritos: 201 en banda A1 (91 %). Hasta esa fecha el cruce solo se ' +
+      'había hecho sobre el bloque 1, y los bloques 4, 6, 7 y 8 llevaban anotadas sospechas ' +
+      'que el cruce ha resuelto: de «menu», «order», «soup», «sandwich», «afternoon», ' +
+      '«evening», «finish», «terrible» y «left» se temía que fueran A2 y las nueve son A1. ' +
+      'CATORCE van una banda por encima y se mantienen todas, cada una porque sale de una ' +
+      'lección A1 y el estudiante que la oye necesita entenderla: «shelf» (B1) y «lamp», ' +
+      '«corner», «empty», «comfortable», «size», «inside», «church», «passenger», «platform», ' +
+      '«straight», «cross», «sign» y «rest» (A2). Nombrar lo que hay en la escena es A1 aunque ' +
+      'la palabra sea menos frecuente en general, y un cartel de andén no se puede leer sin ' +
+      '«platform». CINCO no están en la lista en ningún nivel, y son tres casos distintos: ' +
+      '(a) «waitress» y «o’clock», ausencias reales de la lista —recoge «waiter» y «clock» en ' +
+      'A1— que se mantienen porque dejar fuera la forma femenina y la manera normal de decir ' +
+      'la hora es un límite de la lista, no del nivel; (b) «scarf», ausencia real sin ' +
+      'equivalente, que se mantiene porque es una de las seis prendas del episodio 13 y un ' +
+      'bloque de ropa sin bufanda no cubre el invierno; (c) «shoes» y «café», que NO son ' +
+      'ausencias: la lista recoge «shoe» y «cafe» en A1 y la diferencia es solo el plural y la ' +
+      'tilde. Se dejan como están porque es la forma que se oye en la serie. ' +
+      'La lista NO vive en el repo —tiene derechos— y se cruza pasándola con --lista.',
   },
   bloques: [
     {
