@@ -462,6 +462,185 @@ const b2unidad3: VocabEntry[] = [
     { tipo: 'otro' }),
 ]
 
+// ═══ BLOQUE 3 · Casa y objetos cotidianos ═════════════════════════════════════
+//
+// Las 30 salen de la serie. Es el bloque más fácil de surtir del nivel: los episodios 3, 4 y
+// 20 transcurren enteros dentro de una casa y de un local vacío, así que el material está.
+
+// ─── Unidad 1 · La casa ───────────────────────────────────────────────────────
+
+const b3unidad1: VocabEntry[] = [
+  en('en-a1-071', 'house', 'casa', 'sustantivo', 'house',
+    [c('a small house', 'una casa pequeña'), c('at my house', 'en mi casa'), c('a house with a garden', 'una casa con jardín')],
+    { target: 'Our house is small. There are three rooms.', es: 'Nuestra casa es pequeña. Hay tres habitaciones.', episodio: 4 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-072', 'room', 'habitación / cuarto', 'sustantivo', 'room',
+    [c('three rooms', 'tres habitaciones'), c('the living room', 'el salón'), c('there is a room', 'hay una habitación')],
+    { target: 'Our house is small. There are three rooms.', es: 'Nuestra casa es pequeña. Hay tres habitaciones.', episodio: 4 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-073', 'kitchen', 'cocina', 'sustantivo', 'KIT-chen',
+    [c('in the kitchen', 'en la cocina'), c('a small kitchen', 'una cocina pequeña')],
+    { target: 'Where is the kitchen?', es: '¿Dónde está la cocina?', episodio: 4 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-074', 'garden', 'jardín', 'sustantivo', 'GAR-den',
+    [c('in the garden', 'en el jardín'), c('a house with a garden', 'una casa con jardín')],
+    { target: 'Is there a garden?', es: '¿Hay jardín?', episodio: 4 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-101', 'bag', 'bolsa / bolso', 'sustantivo', 'bag',
+    [c('a large bag', 'una bolsa grande'), c('in my bag', 'en mi bolso'), c('carry a bag', 'llevar una bolsa')],
+    {
+      target: 'Passengers with large bags can use the lift beside the ticket office.',
+      es: 'Los pasajeros con bolsas grandes pueden usar el ascensor junto a la taquilla.',
+      lectura: 'en-a1-train-platform-sign',
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-076', 'door', 'puerta', 'sustantivo', 'door',
+    [c('the blue door', 'la puerta azul'), c('open the door', 'abre la puerta'), c('the back door', 'la puerta de atrás')],
+    { target: 'Look for the blue door. Don’t use the back door.', es: 'Busca la puerta azul. No uses la puerta de atrás.', episodio: 19 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-077', 'window', 'ventana', 'sustantivo', 'WIN-dow',
+    [c('under the window', 'debajo de la ventana'), c('open the window', 'abre la ventana')],
+    { target: 'There’s a small desk under the window.', es: 'Hay un escritorio pequeño debajo de la ventana.', episodio: 3 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-078', 'wall', 'pared', 'sustantivo', 'wall',
+    [c('paint the walls', 'pintar las paredes'), c('on the wall', 'en la pared')],
+    { target: 'I can clean them. I can paint the walls.', es: 'Puedo limpiarlas. Puedo pintar las paredes.', episodio: 20 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-079', 'floor', 'suelo', 'sustantivo', 'floor',
+    [c('on the floor', 'en el suelo'), c('the first floor', 'el primer piso')],
+    { target: 'The door is open. There are old tiles on the floor.', es: 'La puerta está abierta. Hay baldosas viejas en el suelo.', episodio: 20 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-080', 'small', 'pequeño', 'adjetivo', 'small',
+    [c('a small house', 'una casa pequeña'), c('a small dog', 'un perro pequeño'), c('too small', 'demasiado pequeño')],
+    { target: 'I’ve got a small brown dog. His name is Max.', es: 'Tengo un perro pequeño y marrón. Se llama Max.', episodio: 15 },
+    { tipo: 'otro' }),
+]
+
+// ─── Unidad 2 · Los muebles y las cosas ───────────────────────────────────────
+
+const b3unidad2: VocabEntry[] = [
+  en('en-a1-081', 'desk', 'escritorio', 'sustantivo', 'desk',
+    [c('on the desk', 'en el escritorio'), c('under my desk', 'debajo de mi escritorio')],
+    { target: 'There’s a small desk under the window.', es: 'Hay un escritorio pequeño debajo de la ventana.', episodio: 3 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-082', 'shelf', 'estante', 'sustantivo', 'shelf',
+    [c('two shelves', 'dos estantes'), c('on the shelves', 'en los estantes')],
+    { target: 'There are two shelves next to the door.', es: 'Hay dos estantes al lado de la puerta.', episodio: 3 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-083', 'lamp', 'lámpara', 'sustantivo', 'lamp',
+    [c('a lamp on the desk', 'una lámpara en el escritorio'), c('turn on the lamp', 'enciende la lámpara')],
+    { target: 'Is there a lamp?', es: '¿Hay lámpara?', episodio: 3 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-084', 'chair', 'silla', 'sustantivo', 'chair',
+    [c('four chairs', 'cuatro sillas'), c('sit on a chair', 'sentarse en una silla')],
+    { target: 'There’s a lamp on the desk, but there isn’t a chair.', es: 'Hay una lámpara en el escritorio, pero no hay silla.', episodio: 3 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-085', 'table', 'mesa', 'sustantivo', 'TA-ble',
+    [c('a very old table', 'una mesa muy vieja'), c('on the table', 'en la mesa')],
+    { target: 'There are four chairs and one very old table.', es: 'Hay cuatro sillas y una mesa muy vieja.', episodio: 4 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-086', 'book', 'libro', 'sustantivo', 'book',
+    [c('read a book', 'leer un libro'), c('with a book', 'con un libro'), c('a box of books', 'una caja de libros')],
+    { target: 'In winter I stay at home with a book.', es: 'En invierno me quedo en casa con un libro.', episodio: 8 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-087', 'box', 'caja', 'sustantivo', 'box',
+    [c('a box of old photos', 'una caja de fotos antiguas'), c('in a box', 'en una caja')],
+    { target: 'There are books and a box of old photos.', es: 'Hay libros y una caja de fotos antiguas.', episodio: 3 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-102', 'phone', 'teléfono', 'sustantivo', 'phone',
+    [c('a phone number', 'un número de teléfono'), c('in your phone', 'en tu teléfono'), c('answer the phone', 'contestar el teléfono')],
+    {
+      target: 'Please save 0088 442 900 in your phone.',
+      es: 'Guarda el 0088 442 900 en tu teléfono.',
+      lectura: 'en-a1-pet-clinic-card',
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-089', 'paint', 'pintura', 'sustantivo', 'paint',
+    [c('under that paint', 'debajo de esa pintura'), c('paint the walls', 'pintar las paredes')],
+    { target: 'My grandfather’s bakery is there, under that paint.', es: 'La panadería de mi abuelo está ahí, debajo de esa pintura.', episodio: 20 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-103', 'water', 'agua', 'sustantivo', 'WA-ter',
+    [c('a bottle of water', 'una botella de agua'), c('drink water', 'beber agua'), c('hot water', 'agua caliente')],
+    {
+      target: 'Bring a raincoat, a bottle of water, and your student card.',
+      es: 'Trae un impermeable, una botella de agua y tu carné de estudiante.',
+      lectura: 'en-a1-morning-school-note',
+    },
+    { tipo: 'sustantivo' }),
+]
+
+// ─── Unidad 3 · Dónde está cada cosa ──────────────────────────────────────────
+
+const b3unidad3: VocabEntry[] = [
+  en('en-a1-091', 'under', 'debajo de', 'preposicion', 'UN-der',
+    [c('under the window', 'debajo de la ventana'), c('under my desk', 'debajo de mi escritorio')],
+    { target: 'He sleeps under my desk. He’s got a blue blanket.', es: 'Duerme debajo de mi escritorio. Tiene una manta azul.', episodio: 15 },
+    { tipo: 'otro' }),
+
+  en('en-a1-092', 'on', 'en / sobre', 'preposicion', 'on',
+    [c('on the shelves', 'en los estantes'), c('on the table', 'en la mesa'), c('on the floor', 'en el suelo')],
+    { target: 'What’s on the shelves?', es: '¿Qué hay en los estantes?', episodio: 3 },
+    { tipo: 'otro' }),
+
+  en('en-a1-093', 'in', 'en / dentro de', 'preposicion', 'in',
+    [c('in the kitchen', 'en la cocina'), c('in a box', 'en una caja'), c('in the garden', 'en el jardín')],
+    { target: 'Are there many chairs in the kitchen?', es: '¿Hay muchas sillas en la cocina?', episodio: 4 },
+    { tipo: 'otro' }),
+
+  en('en-a1-094', 'behind', 'detrás de', 'preposicion', 'be-HIND',
+    [c('behind the school', 'detrás del colegio'), c('behind the door', 'detrás de la puerta')],
+    { target: 'It’s behind the school, near the park.', es: 'Está detrás del colegio, cerca del parque.', episodio: 5 },
+    { tipo: 'otro' }),
+
+  en('en-a1-095', 'near', 'cerca de', 'preposicion', 'near',
+    [c('near the park', 'cerca del parque'), c('near my house', 'cerca de mi casa')],
+    { target: 'Children are playing football near the trees.', es: 'Unos niños juegan al fútbol cerca de los árboles.', episodio: 16 },
+    { tipo: 'otro' }),
+
+  en('en-a1-096', 'corner', 'esquina', 'sustantivo', 'COR-ner',
+    [c('on the corner', 'en la esquina'), c('the shop on the corner', 'el local de la esquina')],
+    { target: 'Look, Leo. The shop on the corner is empty again.', es: 'Mira, Leo. El local de la esquina está vacío otra vez.', episodio: 20 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-097', 'shop', 'tienda / local', 'sustantivo', 'shop',
+    [c('the shop on the corner', 'el local de la esquina'), c('go to the shop', 'ir a la tienda')],
+    { target: 'That shop is empty now. It’s on the corner.', es: 'Ese local está vacío ahora. Está en la esquina.', episodio: 5 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-098', 'empty', 'vacío', 'adjetivo', 'EMP-ty',
+    [c('the shop is empty', 'el local está vacío'), c('an empty room', 'una habitación vacía')],
+    { target: 'That shop is empty now. It’s on the corner.', es: 'Ese local está vacío ahora. Está en la esquina.', episodio: 5 },
+    { tipo: 'otro' }),
+
+  en('en-a1-099', 'clean', 'limpiar', 'verbo', 'clean',
+    [c('clean the floor', 'limpiar el suelo'), c('I can clean them', 'puedo limpiarlas')],
+    { target: 'I can clean them. I can paint the walls.', es: 'Puedo limpiarlas. Puedo pintar las paredes.', episodio: 20 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-100', 'look', 'mirar / buscar', 'verbo', 'look',
+    [c('look for the door', 'busca la puerta'), c('look at the park', 'mira el parque')],
+    { target: 'Look for the blue door. Don’t use the back door.', es: 'Busca la puerta azul. No uses la puerta de atrás.', episodio: 19 },
+    { tipo: 'verbo' }),
+]
+
 export const INGLES_A1: VocabLevel = {
   lang: 'ingles',
   nivel: 'a1',
@@ -478,7 +657,13 @@ export const INGLES_A1: VocabLevel = {
       'oficio de la protagonista de la serie, se oye en el episodio 1, y dejar fuera la forma ' +
       'femenina es un límite de la lista, no del nivel. La ficha enseña las dos formas. ' +
       'Segunda excepción: «o’clock», que el Oxford 3000 tampoco recoge pese a ser la manera ' +
-      'normal de decir la hora en punto y aparecer en el episodio 10. Se mantiene por lo mismo.',
+      'normal de decir la hora en punto y aparecer en el episodio 10. Se mantiene por lo mismo. ' +
+      'Cuatro entradas más van una banda por encima —«shelf» (B1) y «lamp», «corner» y «empty» ' +
+      '(A2)— y se mantienen porque las tres primeras salen de lecciones A1 que transcurren en ' +
+      'un dormitorio y en un local vacío: nombrar lo que hay en la escena es A1, aunque la ' +
+      'palabra sea menos frecuente en general. Sí se sacaron del bloque «balcony», «blanket» y ' +
+      '«tile», que no están en la lista en ningún nivel: eran decorado de la historia, no ' +
+      'objetos que un principiante necesite. Entraron «bag», «phone» y «water» en su lugar.',
   },
   bloques: [
     {
@@ -492,6 +677,12 @@ export const INGLES_A1: VocabLevel = {
       nombre: 'Números, hora y calendario',
       icono: '🕘',
       entradas: [...b2unidad1, ...b2unidad2, ...b2unidad3],
+    },
+    {
+      id: 'casa-y-objetos',
+      nombre: 'Casa y objetos cotidianos',
+      icono: '🏠',
+      entradas: [...b3unidad1, ...b3unidad2, ...b3unidad3],
     },
   ],
 }
