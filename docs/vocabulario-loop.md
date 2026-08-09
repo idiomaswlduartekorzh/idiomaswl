@@ -65,7 +65,7 @@ traen las capas de raíz y de acento.
 
 | # | Fase | Estado |
 |---|---|---|
-| 1 | **inglés A1** | 🔨 en curso — 160/300, bloques 1-4 y 6 hechos · el 5 parado (§3) |
+| 1 | **inglés A1** | 🔨 en curso — 190/300, bloques 1-4, 6 y 7 hechos · el 5 parado (§3) |
 | 2 | inglés A2 | pendiente |
 | 3 | inglés B1 | pendiente |
 | 4 | alemán A1 | pendiente |
@@ -92,7 +92,7 @@ con la anterior sin cerrar.
 > **Este apartado se actualiza al final de cada vuelta.** Es el único estado que el loop
 > necesita para saber por dónde va.
 
-**Fase 1 · inglés A1 — 160 de 300**
+**Fase 1 · inglés A1 — 190 de 300**
 
 | Bloque | Palabras | Estado |
 |---|---|---|
@@ -102,8 +102,8 @@ con la anterior sin cerrar.
 | 4 · Comida y bebida | 30 | ✅ |
 | 5 · Cuerpo, salud y sensaciones | 30 | 🛑 **parado — decide el usuario** |
 | 6 · Ropa, colores y describir | 30 | ✅ |
-| 7 · Ciudad, lugares y direcciones | 30 | ⬜ **siguiente** |
-| 8 · Rutina diaria y acciones | 30 | ⬜ |
+| 7 · Ciudad, lugares y direcciones | 30 | ✅ |
+| 8 · Rutina diaria y acciones | 30 | ⬜ **siguiente** |
 | 9 · Estudio y trabajo | 30 | ⬜ |
 | 10 · Cortesía y supervivencia | 30 | ⬜ |
 
@@ -157,15 +157,21 @@ Mientras no haya decisión, el loop no toca el bloque 5. **La fase 1 no se puede
 - `sunny` y `busy` se cayeron del bloque 6 por lo mismo: sus únicas frases ya enseñaban dos
   palabras (`tomorrow` en el ep14, `Saturday` y `Sunday` en el ep09). Si el bloque 5 se funde
   con el tiempo, `sunny` tiene ahí una segunda oportunidad.
-- Para el bloque 7 el material sobra: ep05, ep19, ep20 y cuatro lecturas (guía del autobús,
-  cartel del andén, biblioteca, objetos perdidos).
+- Para el bloque 8 el material sobra: el ep06 (levantarse, salir, andar), el ep08 (siempre,
+  nunca, jugar), el ep09 (descansar, abrir, llegar) y el ep10 (horario, dormir). Ojo: los
+  adverbios de frecuencia ya se los llevó el bloque 2 y `walk`, `get` y `rest` están
+  repartidos entre el 7 y el 9. Contar antes de empezar cuántas sobreviven.
+- `money` sigue libre en el ep11 y es del bloque 9.
 
 ### ⚠️ Deuda que hay que saldar antes de cerrar la fase 1
 
 **El bloque 4 no se cruzó contra el Oxford 3000.** El archivo de la lista no está en esta
 máquina y no vive en el repo por derechos. Las 30 entradas se eligieron por criterio, y hay
 cuatro que conviene mirar primero porque podrían ir una banda por encima: `menu`, `order`,
-`soup` y `sandwich`. En cuanto haya lista:
+`soup` y `sandwich`. **Lo mismo vale para los bloques 6 y 7**, escritos después: de esos, las
+que hay que mirar son `terrible` y `comfortable` (sabidas ya A2, y justificadas por escrito en
+`listaBase.nota`), y `platform`, `passenger`, `church`, `sign`, `straight` y `cross`, que
+podrían serlo. En cuanto haya lista:
 
 ```bash
 node scripts/check-vocabulario.mjs --lang ingles --level a1 --lista <ruta al oxford3000.json>
@@ -206,6 +212,9 @@ Reglas que la puerta va a comprobar, así que mejor cumplirlas de entrada:
 
 - Colocaciones **con traducción**, y que enseñen una combinación. `my room` no es una
   colocación: es posesivo + sustantivo. *(Se ha caído tres veces en esto.)*
+- **Ninguna colocación puede ser la frase de ejemplo.** Si lo es, el estudiante que copia lo
+  único que la ficha le enseña a decir queda suspendido en la caja 5 y sin salida. Pasó con
+  `city`, con `we are friends` y con `sign`. *(Tres veces también.)*
 - **Máximo dos entradas por frase de ejemplo.** Si una frase enseña seis palabras, en la caja 4
   el hueco se rellena por memoria del molde.
 - **Máximo 34 % del bloque de un mismo episodio.** Un bloque sacado de dos escenas cubre dos
@@ -364,4 +373,5 @@ sin leer commits.
 | 9 ago 2026 | inglés A1, bloque 4 | El spec de Playwright estaba fijado a `bloques[0]`: los bloques 2, 3 y 4 pasaban el validador sin que nadie los hubiera jugado nunca. Ahora recorre todos los bloques del nivel, y comprueba antes que la unidad tenga con qué salir de la caja 5 |
 | 9 ago 2026 | inglés A1, bloque 4 | Aparece un caso que la regla no preveía: una palabra que **sí** está en el material pero cuya única frase ya enseña dos. Se resolvió con ejemplo redactado y motivo explícito (`cheese`), en vez de meter una tercera en la misma frase |
 | 9 ago 2026 | inglés A1, bloque 5 | **Un tema entero puede no estar en el corpus.** No faltaban palabras sueltas: faltaba el cuerpo completo. `body`, `ear`, `ill`, `hair`, `arm`, `foot` y `pain` daban positivo y los siete eran espejismos (*nobody*, *years*, *still*, *chair*, *warm*, *football*, *paint*). Lección: antes de escribir un bloque, medir cuántas de sus candidatas sobreviven a abrir la frase — si no llegan al 60 %, el bloque no se empieza |
+| 9 ago 2026 | inglés A1, bloque 7 | La puerta paró el bloque por un callejón sin salida: la colocación de `sign` era «is there a sign?», que es el ejemplo entero. El estudiante que copiaba lo único que la ficha le enseñaba a decir era suspendido en la caja 5. Es la tercera vez que pasa (`city`, `we are friends`, ahora `sign`): **una colocación nunca puede ser la frase de ejemplo** |
 | 9 ago 2026 | inglés A1, bloque 6 | La cuota de un episodio y la de una frase se pelean. El ep13 es la única conversación de ropa del nivel y da 10 de 30 (el techo justo), y su frase de los colores enseña cuatro palabras que no salen en ningún otro sitio. Se quedaron con la frase las dos que son ropa; `black` y `white` fueron a redactado. Un tema concentrado en un solo episodio siempre va a costar redactados |

@@ -1097,6 +1097,238 @@ const b6unidad3: VocabEntry[] = [
     { tipo: 'otro' }),
 ]
 
+// ═══ BLOQUE 7 · Ciudad, lugares y direcciones ═════════════════════════════════
+//
+// El bloque mejor surtido del nivel, y por una razón que conviene anotar: es el único tema
+// que aparece a la vez en la escucha y en las lecturas. El episodio 19 es una conversación
+// entera de «¿cómo llego a…?», y cuatro de los seis textos de lectura son señales y avisos
+// de la ciudad —la guía del autobús, el cartel del andén, la biblioteca, los objetos
+// perdidos—. Diez de las treinta salen de ahí, y esa es la proporción de lectura más alta
+// que ha tenido un bloque.
+//
+// Solo dos redactados, y los dos por la misma razón:
+//
+//  · «left» no aparece en ningún sitio. Enseñar direcciones con «right» y sin «left» es
+//    enseñar media cosa.
+//  · «cross» sí está, pero en la única frase que dice «straight» —«Walk straight for two
+//    minutes. Don’t cross the street»— que además ya tenía ocupado un hueco. Se quedó
+//    «straight», que es la palabra que ordena el resto de la instrucción.
+//
+// Dos espejismos más para la colección: «car» daba ocho positivos y era *Cartagena*, *card*
+// y *scarf*; «way» daba seis y era *always*. Ninguna de las dos entra.
+
+// ─── Unidad 1 · Los sitios de la ciudad ───────────────────────────────────────
+
+const b7unidad1: VocabEntry[] = [
+  en('en-a1-164', 'street', 'calle', 'sustantivo', 'street',
+    [c('on this street', 'en esta calle'), c('cross the street', 'cruzar la calle'), c('a quiet street', 'una calle tranquila')],
+    { target: 'Is there a supermarket on this street?', es: '¿Hay un supermercado en esta calle?', episodio: 5 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-165', 'supermarket', 'supermercado', 'sustantivo', 'SU-per-mar-ket',
+    [c('go to the supermarket', 'ir al supermercado'), c('at the supermarket', 'en el supermercado'), c('a big supermarket', 'un supermercado grande')],
+    { target: 'Is there a supermarket on this street?', es: '¿Hay un supermercado en esta calle?', episodio: 5 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-166', 'school', 'colegio / escuela', 'sustantivo', 'school',
+    [c('at school', 'en el colegio'), c('after school', 'después del colegio'), c('near the school', 'cerca del colegio')],
+    { target: 'Is it near the school?', es: '¿Está cerca del colegio?', episodio: 19 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-167', 'park', 'parque', 'sustantivo', 'park',
+    [c('in the park', 'en el parque'), c('go to the park', 'ir al parque'), c('the city park', 'el parque de la ciudad')],
+    { target: 'Do you play in the park?', es: '¿Jugáis en el parque?', episodio: 8 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-168', 'library', 'biblioteca', 'sustantivo', 'LI-bra-ry',
+    [c('at the library', 'en la biblioteca'), c('study in the library', 'estudiar en la biblioteca'), c('the library closes at six', 'la biblioteca cierra a las seis')],
+    { target: 'How do I get to the library?', es: '¿Cómo llego a la biblioteca?', episodio: 19 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-169', 'museum', 'museo', 'sustantivo', 'mu-SE-um',
+    [c('visit the museum', 'visitar el museo'), c('the science museum', 'el museo de ciencias'), c('at the museum', 'en el museo')],
+    {
+      target: 'The bus stops at the museum, the city park, and Riverside Market.',
+      es: 'El autobús para en el museo, en el parque de la ciudad y en el mercado de Riverside.',
+      lectura: 'en-a1-saturday-bus-guide',
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-170', 'station', 'estación', 'sustantivo', 'STA-tion',
+    [c('the bus station', 'la estación de autobuses'), c('at the station', 'en la estación'), c('leave the station', 'salir de la estación')],
+    {
+      target: 'On Saturday, the number 12 bus leaves Central Station every thirty minutes.',
+      es: 'Los sábados, el autobús número 12 sale de la Estación Central cada treinta minutos.',
+      lectura: 'en-a1-saturday-bus-guide',
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-171', 'church', 'iglesia', 'sustantivo', 'church',
+    [c('at the church', 'en la iglesia'), c('near the church', 'cerca de la iglesia'), c('get off at the church', 'bajarse en la iglesia')],
+    { target: 'Take the number nine bus. Get off at the church.', es: 'Coge el autobús número nueve. Bájate en la iglesia.', episodio: 19 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-172', 'café', 'cafetería', 'sustantivo', 'CA-fé',
+    [c('at the café', 'en la cafetería'), c('work in a café', 'trabajar en una cafetería'), c('the café is busy', 'la cafetería está llena')],
+    { target: 'Do you like your job at the café?', es: '¿Te gusta tu trabajo en el café?', episodio: 12 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-173', 'hospital', 'hospital', 'sustantivo', 'HOS-pi-tal',
+    [c('at the hospital', 'en el hospital'), c('work in a hospital', 'trabajar en un hospital'), c('go to the hospital', 'ir al hospital')],
+    { target: 'My mother works at the hospital. She starts at seven.', es: 'Mi madre trabaja en el hospital. Empieza a las siete.', episodio: 7 },
+    { tipo: 'sustantivo' }),
+]
+
+// ─── Unidad 2 · Moverse por la ciudad ─────────────────────────────────────────
+
+const b7unidad2: VocabEntry[] = [
+  en('en-a1-174', 'bus', 'autobús', 'sustantivo', 'bus',
+    [c('take the bus', 'coger el autobús'), c('the bus leaves at eight', 'el autobús sale a las ocho'), c('the number nine bus', 'el autobús número nueve')],
+    {
+      target: 'The first bus leaves at eight o’clock, and the last bus leaves at six in the evening.',
+      es: 'El primer autobús sale a las ocho en punto y el último a las seis de la tarde.',
+      lectura: 'en-a1-saturday-bus-guide',
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-175', 'stop', 'parada', 'sustantivo', 'stop',
+    [c('the bus stop', 'la parada del autobús'), c('at the next stop', 'en la siguiente parada'), c('wait at the stop', 'esperar en la parada')],
+    { target: 'There’s one next to the bus stop.', es: 'Hay uno al lado de la parada de autobús.', episodio: 5 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-176', 'next', 'al lado / siguiente', 'preposicion', 'next',
+    [c('next to the door', 'al lado de la puerta'), c('next to the school', 'al lado del colegio'), c('the next bus', 'el siguiente autobús')],
+    { target: 'There’s one next to the bus stop.', es: 'Hay uno al lado de la parada de autobús.', episodio: 5 },
+    { tipo: 'otro' }),
+
+  en('en-a1-177', 'train', 'tren', 'sustantivo', 'train',
+    [c('take the train', 'coger el tren'), c('the train arrives at ten', 'el tren llega a las diez'), c('a train to Bogotá', 'un tren a Bogotá')],
+    {
+      target: 'Attention passengers for train 6 to Northbridge.',
+      es: 'Atención, pasajeros del tren 6 a Northbridge.',
+      lectura: 'en-a1-train-platform-sign',
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-178', 'passenger', 'pasajero', 'sustantivo', 'PAS-sen-ger',
+    [c('passengers for the train', 'los pasajeros del tren'), c('passengers with bags', 'pasajeros con equipaje'), c('attention passengers', 'atención, pasajeros')],
+    {
+      target: 'Attention passengers for train 6 to Northbridge.',
+      es: 'Atención, pasajeros del tren 6 a Northbridge.',
+      lectura: 'en-a1-train-platform-sign',
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-179', 'platform', 'andén', 'sustantivo', 'PLAT-form',
+    [c('from platform 3', 'desde el andén 3'), c('which platform?', '¿qué andén?'), c('the café near platform 3', 'la cafetería que hay junto al andén 3')],
+    {
+      target: 'The train will leave from platform 3 today, not platform 1.',
+      es: 'Hoy el tren sale del andén 3, no del andén 1.',
+      lectura: 'en-a1-train-platform-sign',
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-180', 'ticket', 'billete / tiquete', 'sustantivo', 'TICK-et',
+    [c('buy a ticket', 'comprar un billete'), c('check your ticket', 'revisa tu billete'), c('the ticket office', 'la taquilla')],
+    {
+      target: 'A ticket costs two pounds.',
+      es: 'Un billete cuesta dos libras.',
+      lectura: 'en-a1-saturday-bus-guide',
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-181', 'walk', 'caminar / ir andando', 'verbo', 'walk',
+    [c('walk to school', 'ir andando al colegio'), c('walk for five minutes', 'caminar cinco minutos'), c('walk straight', 'seguir recto')],
+    { target: 'I leave at half past seven and I walk.', es: 'Salgo a las siete y media y voy andando.', episodio: 6 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-182', 'get', 'llegar / conseguir', 'verbo', 'get',
+    [c('get to the library', 'llegar a la biblioteca'), c('get off at the church', 'bajarse en la iglesia'), c('how do I get there?', '¿cómo llego?')],
+    { target: 'How do I get to the library?', es: '¿Cómo llego a la biblioteca?', episodio: 19 },
+    { tipo: 'verbo', phrasal: ['get off — bajarse', 'get up — levantarse'] }),
+
+  en('en-a1-183', 'office', 'oficina / despacho', 'sustantivo', 'OF-fice',
+    [c('the school office', 'la secretaría del colegio'), c('the ticket office', 'la taquilla'), c('at the office', 'en la oficina')],
+    {
+      target: 'If nobody collects it today, the office will keep it until Friday.',
+      es: 'Si nadie lo recoge hoy, la oficina lo guardará hasta el viernes.',
+      lectura: 'en-a1-lost-and-found-message',
+    },
+    { tipo: 'sustantivo' }),
+]
+
+// ─── Unidad 3 · Pedir y dar direcciones ───────────────────────────────────────
+
+const b7unidad3: VocabEntry[] = [
+  en('en-a1-184', 'where', 'dónde', 'pronombre', 'where',
+    [c('where is the library?', '¿dónde está la biblioteca?'), c('where are you from?', '¿de dónde eres?'), c('where do you live?', '¿dónde vives?')],
+    { target: 'Where is the library? I want a card.', es: '¿Dónde está la biblioteca? Quiero un carné.', episodio: 5 },
+    { tipo: 'otro' }),
+
+  en('en-a1-185', 'card', 'carné / tarjeta', 'sustantivo', 'card',
+    [c('a student card', 'un carné de estudiante'), c('bring your card', 'trae tu carné'), c('the blue card', 'la tarjeta azul')],
+    { target: 'Where is the library? I want a card.', es: '¿Dónde está la biblioteca? Quiero un carné.', episodio: 5 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-186', 'turn', 'girar', 'verbo', 'turn',
+    [c('turn right', 'gira a la derecha'), c('turn left', 'gira a la izquierda'), c('turn after the school', 'gira después del colegio')],
+    { target: 'Turn right after the school. The library is grey.', es: 'Gira a la derecha después del colegio. La biblioteca es gris.', episodio: 19 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-187', 'right', 'derecha', 'sustantivo', 'right',
+    [c('turn right', 'gira a la derecha'), c('on the right', 'a la derecha'), c('the first street on the right', 'la primera calle a la derecha')],
+    { target: 'Turn right after the school. The library is grey.', es: 'Gira a la derecha después del colegio. La biblioteca es gris.', episodio: 19 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-188', 'left', 'izquierda', 'sustantivo', 'left',
+    [c('turn left', 'gira a la izquierda'), c('on the left', 'a la izquierda'), c('the door on the left', 'la puerta de la izquierda')],
+    {
+      target: 'Turn left at the bus stop. The café is on the left.',
+      es: 'Gira a la izquierda en la parada. La cafetería está a la izquierda.',
+      motivo: NO_SIRVE('left', 'no aparece en ningún turno ni en ninguna lectura de inglés A1. Enseñar a dar direcciones con «right» y sin «left» es enseñar media cosa.'),
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-189', 'straight', 'recto / derecho', 'adverbio', 'straight',
+    [c('walk straight', 'sigue recto'), c('go straight for two minutes', 'sigue recto dos minutos'), c('straight to the park', 'recto hasta el parque')],
+    { target: 'Walk straight for two minutes. Don’t cross the street.', es: 'Camina recto dos minutos. No cruces la calle.', episodio: 19 },
+    { tipo: 'otro' }),
+
+  en('en-a1-190', 'cross', 'cruzar', 'verbo', 'cross',
+    [c('cross the street', 'cruzar la calle'), c('don’t cross here', 'no cruces aquí'), c('cross at the church', 'cruza en la iglesia')],
+    {
+      target: 'Cross the street and turn right.',
+      es: 'Cruza la calle y gira a la derecha.',
+      motivo: NO_SIRVE('cross', 'solo aparece en «Walk straight for two minutes. Don’t cross the street», la única frase del nivel que dice «straight», y esa frase ya tenía ocupado uno de sus dos huecos.'),
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-191', 'sign', 'cartel / letrero', 'sustantivo', 'sign',
+    // Ojo: nada de «is there a sign?» como colocación. Es el ejemplo entero, y la caja 5
+    // rechazaba al estudiante que copiaba lo único que la ficha le enseñaba a decir.
+    [c('a sign in the window', 'un cartel en la ventana'), c('read the sign', 'lee el cartel'), c('a sign on the door', 'un cartel en la puerta')],
+    { target: 'Is there a sign?', es: '¿Hay un cartel?', episodio: 19 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-192', 'front', 'parte de delante', 'sustantivo', 'front',
+    [c('the front desk', 'el mostrador de la entrada'), c('at the front', 'delante'), c('in front of the school', 'delante del colegio')],
+    {
+      target: 'For an emergency, call the number on the blue card at the front desk.',
+      es: 'En caso de urgencia, llama al número de la tarjeta azul del mostrador de la entrada.',
+      lectura: 'en-a1-pet-clinic-card',
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-193', 'flat', 'apartamento', 'sustantivo', 'flat',
+    [c('a small flat', 'un apartamento pequeño'), c('at Mia’s flat', 'en el apartamento de Mia'), c('live in a flat', 'vivir en un apartamento')],
+    {
+      target: 'If it rains, the picnic will move to Mia’s flat at 24 King Street.',
+      es: 'Si llueve, el picnic se traslada al apartamento de Mia, en el 24 de King Street.',
+      lectura: 'en-a1-birthday-party-invite',
+    },
+    { tipo: 'sustantivo' }),
+]
+
 export const INGLES_A1: VocabLevel = {
   lang: 'ingles',
   nivel: 'a1',
@@ -1135,7 +1367,12 @@ export const INGLES_A1: VocabLevel = {
       'para trabajar, y un estudiante que oye «Your shoes are terrible» necesita entenderlo. ' +
       'Cinco entradas van redactadas: «clothes», «colour» y «red» no están en el material, y ' +
       '«black» y «white» comparten la única frase que dice «trousers» y «shirt», donde solo ' +
-      'caben dos. «sunny» y «busy» se quedaron fuera por lo mismo, sin sitio al que ir.',
+      'caben dos. «sunny» y «busy» se quedaron fuera por lo mismo, sin sitio al que ir. ' +
+      'Bloque 7 (ciudad, lugares y direcciones), 9 ago 2026: el mejor surtido del nivel —diez ' +
+      'de las treinta salen de las lecturas, que son señales y avisos de ciudad— y solo dos ' +
+      'redactados: «left», que no está en ningún sitio, y «cross», cuya única frase ya estaba ' +
+      'llena. Pendientes de cruzar contra la lista: «platform», «passenger», «church», «sign», ' +
+      '«straight» y «cross» podrían ir una banda por encima.',
   },
   bloques: [
     {
@@ -1167,6 +1404,12 @@ export const INGLES_A1: VocabLevel = {
       nombre: 'Ropa, colores y describir',
       icono: '👕',
       entradas: [...b6unidad1, ...b6unidad2, ...b6unidad3],
+    },
+    {
+      id: 'ciudad-lugares-y-direcciones',
+      nombre: 'Ciudad, lugares y direcciones',
+      icono: '🗺️',
+      entradas: [...b7unidad1, ...b7unidad2, ...b7unidad3],
     },
   ],
 }
