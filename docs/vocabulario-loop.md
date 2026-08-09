@@ -92,15 +92,15 @@ con la anterior sin cerrar.
 > **Este apartado se actualiza al final de cada vuelta.** Es el único estado que el loop
 > necesita para saber por dónde va.
 
-**Fase 1 · inglés A1 — 100 de 300**
+**Fase 1 · inglés A1 — 130 de 300**
 
 | Bloque | Palabras | Estado |
 |---|---|---|
 | 1 · Yo y mi gente | 40 | ✅ |
 | 2 · Números, hora y calendario | 30 | ✅ |
 | 3 · Casa y objetos cotidianos | 30 | ✅ |
-| 4 · Comida y bebida | 30 | ⬜ **siguiente** |
-| 5 · Cuerpo, salud y sensaciones | 30 | ⬜ |
+| 4 · Comida y bebida | 30 | ✅ |
+| 5 · Cuerpo, salud y sensaciones | 30 | ⬜ **siguiente** |
 | 6 · Ropa, colores y describir | 30 | ⬜ |
 | 7 · Ciudad, lugares y direcciones | 30 | ⬜ |
 | 8 · Rutina diaria y acciones | 30 | ⬜ |
@@ -109,6 +109,28 @@ con la anterior sin cerrar.
 
 El bloque 10 no existe hoy en ningún idioma y es el que permite sobrevivir a una conversación:
 saludar, pedir, disculparse, decir «no entiendo».
+
+**Apuntes que deja el bloque 4 para los siguientes:**
+
+- `smell` (ep09), `hungry` y `thirsty` van al bloque 5, que es su sitio.
+- `money` y `list` están en el episodio 11 y se guardaron para los bloques 7 y 9. No son comida.
+- `vegetable` y `salad` se quedaron fuera de A1: solo viven en la frase del menú del comedor,
+  que ya enseña dos palabras.
+
+### ⚠️ Deuda que hay que saldar antes de cerrar la fase 1
+
+**El bloque 4 no se cruzó contra el Oxford 3000.** El archivo de la lista no está en esta
+máquina y no vive en el repo por derechos. Las 30 entradas se eligieron por criterio, y hay
+cuatro que conviene mirar primero porque podrían ir una banda por encima: `menu`, `order`,
+`soup` y `sandwich`. En cuanto haya lista:
+
+```bash
+node scripts/check-vocabulario.mjs --lang ingles --level a1 --lista <ruta al oxford3000.json>
+```
+
+Formato: `{ "A1": ["about", …], "A2": [...] }`. Lo que quede fuera de banda se justifica por
+escrito en `listaBase.nota` o se cambia — no se deja pasar en silencio. Fue justo ese cruce el
+que descubrió que tres palabras del bloque 3 eran decorado de la trama.
 
 ---
 
@@ -295,3 +317,6 @@ sin leer commits.
 | 8 ago 2026 | inglés A1, bloques 1-3 | El barajado de opciones vivía en el JSX: la correcta caía siempre en la B y el validador no lo veía. La lógica que decide qué ve el estudiante vive ahora fuera del componente, y la puerta ejecuta esa misma función |
 | 8 ago 2026 | inglés A1, bloque 1 | El corpus de escucha no da para 300 palabras. Se conectó la lectura: de 160 a 221 frases disponibles |
 | 8 ago 2026 | inglés A1, bloque 3 | Tres palabras eran decorado de la historia (`balcony`, `blanket`, `tile`) y no estaban en el Oxford 3000. El corpus enseña lo que la trama necesita, no lo que el nivel necesita: hay que cruzar siempre con la lista oficial |
+| 9 ago 2026 | inglés A1, bloque 4 | `tea` daba cuatro positivos y no era ninguno: eran `teaches`, `teach` y `team`. Segundo espejismo del mismo tipo que `clock` dentro de `o’clock`. Se abre la frase siempre; el ✓ del buscador no es una fuente |
+| 9 ago 2026 | inglés A1, bloque 4 | El spec de Playwright estaba fijado a `bloques[0]`: los bloques 2, 3 y 4 pasaban el validador sin que nadie los hubiera jugado nunca. Ahora recorre todos los bloques del nivel, y comprueba antes que la unidad tenga con qué salir de la caja 5 |
+| 9 ago 2026 | inglés A1, bloque 4 | Aparece un caso que la regla no preveía: una palabra que **sí** está en el material pero cuya única frase ya enseña dos. Se resolvió con ejemplo redactado y motivo explícito (`cheese`), en vez de meter una tercera en la misma frase |

@@ -641,6 +641,243 @@ const b3unidad3: VocabEntry[] = [
     { tipo: 'verbo' }),
 ]
 
+// ═══ BLOQUE 4 · Comida y bebida ═══════════════════════════════════════════════
+//
+// El primer bloque donde la escucha no basta y la lectura pasa a ser un tercio del material.
+// Los episodios 6, 11, 12 y 17 dan el armazón —el desayuno, la compra, los gustos, la cocina
+// del abuelo— pero los alimentos concretos solo salen en el menú del comedor y en el texto
+// del café, y ahí una sola frase enumera seis a la vez.
+//
+// Tres cosas se decidieron mirando las fuentes, y las tres quedan visibles en las fichas:
+//
+//  · «tea» daba cuatro positivos y no era ninguno: eran «teaches», «teach» y «team». La única
+//    taza de té del nivel está en la lectura del café. Mismo espejismo que «clock» dentro de
+//    «o’clock», y por eso se abre siempre la frase en vez de fiarse del ✓.
+//  · «food» y «drink» no existen en el material —los positivos eran «football» y «driver»— y
+//    un bloque de comida y bebida sin las dos palabras que lo nombran no se sostiene.
+//  · «cheese» sí está, pero solo dentro de la frase del menú que ya enseña «chicken» y
+//    «apple». Meter una tercera en la misma frase es justo lo que hace que en la caja 4 el
+//    hueco se rellene por memoria del molde, así que se le escribió frase propia, declarada.
+//
+// Quedan fuera «vegetable» y «salad», que viven en esa misma frase del menú y no llegan a
+// imprescindibles en A1. «money» y «list», que sí están en el episodio 11, se guardan para
+// los bloques de ciudad y de trabajo: no son comida.
+
+/** Motivo de un ejemplo redactado, escrito entero para que se pueda discutir. */
+const NO_SIRVE = (palabra: string, porque: string) =>
+  `«${palabra}» ${porque} Ejemplo redactado con la gramática del nivel y anotado para la ` +
+  `próxima ampliación del corpus.`
+
+// ─── Unidad 1 · Las tres comidas ──────────────────────────────────────────────
+
+const b4unidad1: VocabEntry[] = [
+  en('en-a1-104', 'food', 'comida', 'sustantivo', 'food',
+    [c('Colombian food', 'comida colombiana'), c('the food is good', 'la comida está buena'), c('food and drink', 'comida y bebida')],
+    {
+      target: 'The food in this café is very good.',
+      es: 'La comida de este café es muy buena.',
+      motivo: NO_SIRVE('food', 'no aparece en los 20 episodios de The Corner Shop ni en las lecturas de inglés A1: los positivos de la búsqueda eran «football».'),
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-105', 'eat', 'comer', 'verbo', 'eat',
+    [c('eat at home', 'comer en casa'), c('eat fruit', 'comer fruta'), c('what do you eat?', '¿qué comes?')],
+    { target: 'I eat bread and fruit at seven.', es: 'Como pan y fruta a las siete.', episodio: 6 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-106', 'drink', 'beber / tomar', 'verbo', 'drink',
+    [c('drink water', 'beber agua'), c('drink coffee', 'tomar café'), c('something to drink', 'algo de beber')],
+    {
+      target: 'I don’t drink coffee. I drink tea at night.',
+      es: 'No tomo café. Tomo té por la noche.',
+      motivo: NO_SIRVE('drink', 'no aparece en el material de inglés A1: los positivos de la búsqueda eran «driver» y «drives». Es la mitad del nombre del bloque y sin ella no se puede pedir nada en un café.'),
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-107', 'breakfast', 'desayuno', 'sustantivo', 'BREAK-fast',
+    [c('have breakfast', 'desayunar'), c('breakfast at seven', 'el desayuno a las siete'), c('a big breakfast', 'un desayuno grande')],
+    { target: 'Do you have breakfast at home?', es: '¿Desayunas en casa?', episodio: 6 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-108', 'lunch', 'almuerzo', 'sustantivo', 'lunch',
+    [c('have lunch', 'almorzar'), c('lunch with a friend', 'almorzar con un amigo'), c('the lunch is at twelve', 'el almuerzo es a las doce')],
+    {
+      target: 'Lunch starts at twelve and finishes at one thirty.',
+      es: 'El almuerzo empieza a las doce y termina a la una y media.',
+      lectura: 'en-a1-lunch-menu',
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-109', 'dinner', 'cena', 'sustantivo', 'DIN-ner',
+    [c('make dinner', 'hacer la cena'), c('have dinner', 'cenar'), c('dinner at eight', 'la cena a las ocho')],
+    { target: 'Yes, I’m making dinner at his house.', es: 'Sí, hago la cena en su casa.', episodio: 18 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-110', 'cook', 'cocinar', 'verbo', 'cook',
+    [c('cook rice', 'hacer arroz'), c('cook for the family', 'cocinar para la familia'), c('can you cook?', '¿sabes cocinar?')],
+    { target: 'Can you cook, Maya?', es: '¿Sabes cocinar, Maya?', episodio: 17 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-111', 'make', 'hacer / preparar', 'verbo', 'make',
+    [c('make coffee', 'hacer café'), c('make bread', 'hacer pan'), c('make a cake', 'hacer un pastel')],
+    { target: 'I get up at six. I make coffee first.', es: 'Me levanto a las seis. Primero hago café.', episodio: 6 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-112', 'menu', 'carta / menú', 'sustantivo', 'MEN-u',
+    [c('the lunch menu', 'el menú del almuerzo'), c('look at the menu', 'mirar la carta'), c('what’s on the menu?', '¿qué hay en la carta?')],
+    {
+      target: 'Today’s lunch menu has three choices.',
+      es: 'El menú de hoy tiene tres opciones.',
+      lectura: 'en-a1-lunch-menu',
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-113', 'order', 'pedir', 'verbo', 'OR-der',
+    [c('order a coffee', 'pedir un café'), c('order tea with milk', 'pedir té con leche'), c('can I order?', '¿puedo pedir?')],
+    {
+      target: 'She sits near the window and orders tea with milk.',
+      es: 'Se sienta junto a la ventana y pide té con leche.',
+      lectura: 'en-a1-my-morning-at-the-cafe',
+    },
+    { tipo: 'verbo' }),
+]
+
+// ─── Unidad 2 · La compra ─────────────────────────────────────────────────────
+
+const b4unidad2: VocabEntry[] = [
+  en('en-a1-114', 'bread', 'pan', 'sustantivo', 'bread',
+    [c('a piece of bread', 'un trozo de pan'), c('make bread', 'hacer pan'), c('bread and milk', 'pan y leche')],
+    { target: 'I’ve got it here. We need bread, rice and milk.', es: 'La tengo aquí. Necesitamos pan, arroz y leche.', episodio: 11 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-115', 'milk', 'leche', 'sustantivo', 'milk',
+    [c('a glass of milk', 'un vaso de leche'), c('tea with milk', 'té con leche'), c('we need milk', 'necesitamos leche')],
+    { target: 'I’ve got it here. We need bread, rice and milk.', es: 'La tengo aquí. Necesitamos pan, arroz y leche.', episodio: 11 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-116', 'rice', 'arroz', 'sustantivo', 'rice',
+    [c('cook rice', 'hacer arroz'), c('rice and beans', 'arroz con frijoles'), c('chicken rice', 'arroz con pollo')],
+    { target: 'I know. You always eat rice and beans.', es: 'Lo sé. Tú siempre comes arroz con frijoles.', episodio: 12 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-117', 'egg', 'huevo', 'sustantivo', 'egg',
+    [c('two eggs', 'dos huevos'), c('eggs for breakfast', 'huevos para el desayuno'), c('have we got eggs?', '¿tenemos huevos?')],
+    { target: 'Have we got eggs at home?', es: '¿Tenemos huevos en casa?', episodio: 11 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-118', 'coffee', 'café', 'sustantivo', 'COF-fee',
+    [c('make coffee', 'hacer café'), c('a cup of coffee', 'una taza de café'), c('coffee with milk', 'café con leche')],
+    { target: 'We haven’t got any eggs. And we’ve got very little coffee.', es: 'No nos quedan huevos. Y tenemos muy poco café.', episodio: 11 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-119', 'tea', 'té', 'sustantivo', 'tea',
+    [c('a cup of tea', 'una taza de té'), c('tea with milk', 'té con leche'), c('make tea', 'hacer té')],
+    {
+      target: 'She sits near the window and orders tea with milk.',
+      es: 'Se sienta junto a la ventana y pide té con leche.',
+      lectura: 'en-a1-my-morning-at-the-cafe',
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-120', 'juice', 'jugo / zumo', 'sustantivo', 'juice',
+    [c('orange juice', 'jugo de naranja'), c('a glass of juice', 'un vaso de jugo'), c('fruit and juice', 'fruta y jugo')],
+    {
+      target: 'At noon, everyone can share fruit and juice in the community room.',
+      es: 'Al mediodía, todos pueden compartir fruta y jugo en la sala común.',
+      lectura: 'en-a1-park-cleanup-poster',
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-121', 'cake', 'pastel / torta', 'sustantivo', 'cake',
+    [c('a piece of cake', 'un trozo de pastel'), c('the banana cake', 'el pastel de banano'), c('make a cake', 'hacer un pastel')],
+    { target: 'Good. My grandfather has got a cake for us.', es: 'Bien. Mi abuelo tiene un pastel para nosotros.', episodio: 11 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-122', 'banana', 'banano / plátano', 'sustantivo', 'ba-NA-na',
+    [c('banana cake', 'pastel de banano'), c('two bananas', 'dos bananos'), c('a banana for breakfast', 'un banano para el desayuno')],
+    { target: 'Has he got the banana cake?', es: '¿Tiene el pastel de banano?', episodio: 11 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-123', 'fruit', 'fruta', 'sustantivo', 'fruit',
+    [c('eat fruit', 'comer fruta'), c('fresh fruit', 'fruta fresca'), c('fruit and juice', 'fruta y jugo')],
+    {
+      target: 'At noon, everyone can share fruit and juice in the community room.',
+      es: 'Al mediodía, todos pueden compartir fruta y jugo en la sala común.',
+      lectura: 'en-a1-park-cleanup-poster',
+    },
+    { tipo: 'sustantivo' }),
+]
+
+// ─── Unidad 3 · En el plato, y lo que me gusta ────────────────────────────────
+
+const b4unidad3: VocabEntry[] = [
+  en('en-a1-124', 'soup', 'sopa', 'sustantivo', 'soup',
+    [c('tomato soup', 'sopa de tomate'), c('vegetable soup', 'sopa de verduras'), c('cook soup', 'hacer sopa')],
+    { target: 'I can cook rice and soup. I can’t make bread.', es: 'Sé hacer arroz y sopa. No sé hacer pan.', episodio: 17 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-125', 'tomato', 'tomate', 'sustantivo', 'to-MA-to',
+    [c('tomato soup', 'sopa de tomate'), c('two tomatoes', 'dos tomates'), c('rice with tomato', 'arroz con tomate')],
+    { target: 'I hate tomato soup.', es: 'Yo odio la sopa de tomate.', episodio: 12 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-126', 'chicken', 'pollo', 'sustantivo', 'CHICK-en',
+    [c('chicken rice', 'arroz con pollo'), c('cook chicken', 'hacer pollo'), c('chicken with salad', 'pollo con ensalada')],
+    {
+      target: 'Students can have vegetable soup with bread, chicken rice with salad, or a cheese sandwich with an apple.',
+      es: 'Los estudiantes pueden tomar sopa de verduras con pan, arroz con pollo y ensalada, o un sándwich de queso con una manzana.',
+      lectura: 'en-a1-lunch-menu',
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-127', 'apple', 'manzana', 'sustantivo', 'AP-ple',
+    [c('a green apple', 'una manzana verde'), c('eat an apple', 'comerse una manzana'), c('an apple for lunch', 'una manzana para el almuerzo')],
+    {
+      target: 'Students can have vegetable soup with bread, chicken rice with salad, or a cheese sandwich with an apple.',
+      es: 'Los estudiantes pueden tomar sopa de verduras con pan, arroz con pollo y ensalada, o un sándwich de queso con una manzana.',
+      lectura: 'en-a1-lunch-menu',
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-128', 'cheese', 'queso', 'sustantivo', 'cheese',
+    [c('a cheese sandwich', 'un sándwich de queso'), c('bread with cheese', 'pan con queso'), c('a piece of cheese', 'un trozo de queso')],
+    {
+      target: 'I want bread with cheese, please.',
+      es: 'Quiero pan con queso, por favor.',
+      motivo: NO_SIRVE('cheese', 'sí está en el material, pero solo dentro de la frase del menú del comedor, que ya enseña «chicken» y «apple». Una tercera palabra en esa misma frase haría que en la caja 4 el hueco se rellenara por memoria del molde.'),
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-129', 'sandwich', 'sándwich', 'sustantivo', 'SAND-wich',
+    [c('a cheese sandwich', 'un sándwich de queso'), c('make a sandwich', 'hacer un sándwich'), c('a sandwich for later', 'un sándwich para después')],
+    {
+      target: 'At the end, she orders a sandwich for later.',
+      es: 'Al final, pide un sándwich para después.',
+      lectura: 'en-a1-my-morning-at-the-cafe',
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-130', 'like', 'gustar', 'verbo', 'like',
+    [c('I like coffee', 'me gusta el café'), c('do you like it?', '¿te gusta?'), c('I don’t like the noise', 'no me gusta el ruido')],
+    { target: 'I like the people. I don’t like the noise.', es: 'Me gusta la gente. No me gusta el ruido.', episodio: 12 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-131', 'love', 'encantar', 'verbo', 'love',
+    [c('I love bananas', 'me encantan los bananos'), c('she loves her job', 'le encanta su trabajo'), c('I love cooking', 'me encanta cocinar')],
+    { target: 'I love the soup. My favourite is tomato soup.', es: 'Me encanta la sopa. Mi favorita es la de tomate.', episodio: 12 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-132', 'hate', 'odiar', 'verbo', 'hate',
+    [c('I hate the noise', 'odio el ruido'), c('hate cold coffee', 'odiar el café frío'), c('she hates rice', 'odia el arroz')],
+    { target: 'I hate tomato soup.', es: 'Yo odio la sopa de tomate.', episodio: 12 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-133', 'favourite', 'favorito / favorita', 'adjetivo', 'FA-vou-rite',
+    [c('my favourite food', 'mi comida favorita'), c('your favourite lunch', 'tu almuerzo favorito'), c('it’s my favourite', 'es mi favorito')],
+    { target: 'I love the soup. My favourite is tomato soup.', es: 'Me encanta la sopa. Mi favorita es la de tomate.', episodio: 12 },
+    { tipo: 'otro' }),
+]
+
 export const INGLES_A1: VocabLevel = {
   lang: 'ingles',
   nivel: 'a1',
@@ -663,7 +900,15 @@ export const INGLES_A1: VocabLevel = {
       'un dormitorio y en un local vacío: nombrar lo que hay en la escena es A1, aunque la ' +
       'palabra sea menos frecuente en general. Sí se sacaron del bloque «balcony», «blanket» y ' +
       '«tile», que no están en la lista en ningún nivel: eran decorado de la historia, no ' +
-      'objetos que un principiante necesite. Entraron «bag», «phone» y «water» en su lugar.',
+      'objetos que un principiante necesite. Entraron «bag», «phone» y «water» en su lugar. ' +
+      'Bloque 4 (comida y bebida), 9 ago 2026: el cruce contra la lista NO se pudo hacer, ' +
+      'porque el archivo del Oxford 3000 por nivel no está en esta máquina y la lista no vive ' +
+      'en el repo por derechos. Las 30 entradas se eligieron por criterio y quedan pendientes ' +
+      'de cruzar antes de cerrar la fase; las que hay que mirar primero son «menu», «order», ' +
+      '«soup» y «sandwich», que podrían estar en banda A2. Se quedaron fuera del bloque ' +
+      '«vegetable» y «salad»: solo viven en la frase del menú del comedor, que ya enseña dos ' +
+      'palabras, y no son imprescindibles en A1. «money» y «list» salen del episodio 11 pero ' +
+      'no son comida: van a los bloques de ciudad y de trabajo.',
   },
   bloques: [
     {
@@ -683,6 +928,12 @@ export const INGLES_A1: VocabLevel = {
       nombre: 'Casa y objetos cotidianos',
       icono: '🏠',
       entradas: [...b3unidad1, ...b3unidad2, ...b3unidad3],
+    },
+    {
+      id: 'comida-y-bebida',
+      nombre: 'Comida y bebida',
+      icono: '🍞',
+      entradas: [...b4unidad1, ...b4unidad2, ...b4unidad3],
     },
   ],
 }
