@@ -46,6 +46,29 @@ const onlyLang = val('--lang')
 const onlyLevel = val('--level')
 const verbose = args.includes('--verbose')
 
+/**
+ * Cruce opcional contra la lista base oficial del idioma.
+ *
+ * La lista NO se guarda en el repo: la del Oxford 3000 tiene derechos, y las de Goethe y ТРКИ
+ * también. Se descarga aparte y se pasa por parámetro:
+ *
+ *   node scripts/check-vocabulario.mjs --lang ingles --level a1 --lista ~/Downloads/oxford3000.json
+ *
+ * Formato esperado: JSON `{ "A1": ["about", ...], "A2": [...], ... }`.
+ */
+const listaPath = val('--lista')
+let listaBase = null
+if (listaPath) {
+  const crudo = JSON.parse(fs.readFileSync(listaPath, 'utf8'))
+  listaBase = new Map()
+  for (const [nivelLista, palabras] of Object.entries(crudo)) {
+    for (const p of palabras) if (!listaBase.has(p)) listaBase.set(p, nivelLista)
+  }
+}
+
+/** Lemas que guardamos en plural porque así se usan; la lista los trae en singular. */
+const FORMA_DE_DICCIONARIO = { parents: 'parent', children: 'child', people: 'person' }
+
 /** Cuántas entradas pueden compartir la misma frase de ejemplo. */
 const MAX_ENTRADAS_POR_EJEMPLO = 2
 /** Qué parte del bloque puede venir de un solo episodio. */
@@ -92,6 +115,37 @@ const norm = (value) =>
     .replace(/\s+/gu, ' ')
     .trim()
 
+/** Código de dos letras con que se nombran los ejercicios de lectura. */
+const CODIGO = {
+  ingles: 'en', aleman: 'de', frances: 'fr', italiano: 'it',
+  portugues: 'pt', ruso: 'ru', coreano: 'ko', japones: 'ja',
+}
+
+/**
+ * Los textos de lectura del nivel, como segunda fuente de ejemplos.
+ *
+ * La regla de veto siempre dijo «corpus de escucha **o lectura**», pero el validador solo
+ * miraba la escucha. Y el número manda: la serie de inglés A1 tiene 160 turnos, y con el tope
+ * de dos palabras por frase eso da para 320 entradas en el mejor de los casos —contando frases
+ * de una sola palabra útil, que no sirven—. Los diez textos de lectura añaden 61 frases y 255
+ * formas nuevas, que es lo que hace alcanzable un núcleo de 300 sin inventar ejemplos.
+ */
+function cargarLectura(lang, nivel) {
+  const dir = path.join(repoRoot, 'src', 'data', 'reading', 'exercises')
+  if (!fs.existsSync(dir)) return []
+  const prefijo = `${CODIGO[lang] ?? lang}-${nivel}-`
+  const frases = []
+  for (const archivo of fs.readdirSync(dir).filter((f) => f.startsWith(prefijo) && f.endsWith('.json'))) {
+    const datos = JSON.parse(fs.readFileSync(path.join(dir, archivo), 'utf8'))
+    const texto = datos?.content?.targetText ?? ''
+    for (const bruta of texto.split(/(?<=[.!?])\s+/u)) {
+      const frase = norm(bruta)
+      if (frase.split(' ').length >= 4) frases.push({ ejercicio: archivo.replace(/\.json$/, ''), target: frase })
+    }
+  }
+  return frases
+}
+
 function cargarCorpus(lang, nivel) {
   const file = path.join(seriesDir, `${lang}-${nivel}-series.ts`)
   if (!fs.existsSync(file)) return null
@@ -115,7 +169,7 @@ const usaLemma = (texto, lemma) => {
 // La misma función que usa el componente para pintar las opciones. Auditar una copia no
 // sirve de nada: lo que hay que medir es lo que ve el estudiante.
 const { opcionesDe } = loadModule(path.join(vocabDir, 'opciones.ts'))
-const { ahuecar, corrigioOrtografia, ejercicioCaja2, evaluarFrasePropia } = loadModule(
+const { ahuecar, corrigioOrtografia, ejercicioCaja2, evaluarFrasePropia, usa } = loadModule(
   path.join(vocabDir, 'ejercicios.ts'),
 )
 
@@ -179,7 +233,9 @@ for (const archivo of archivos.sort()) {
 
   // 3 y 4 · Regla de veto, fuente exacta y cuota de ejemplos redactados
   const corpus = cargarCorpus(lang, nivel)
+  const lectura = cargarLectura(lang, nivel)
   let deCorpus = 0
+  let deLectura = 0
   let redactados = 0
   if (!corpus) {
     aviso(`${etiqueta}: no se encontró la serie de escucha; la regla de veto no se pudo comprobar`)
@@ -201,9 +257,29 @@ for (const archivo of archivos.sort()) {
         if (!fuente.motivo || fuente.motivo.length < 40) {
           fallo(`${etiqueta}: «${e.lemma}» tiene ejemplo redactado sin motivo suficiente. Redactar es la excepción y se justifica`)
         }
-        // Un ejemplo redactado que SÍ estaba en el corpus es un despiste, no una excepción.
+        // Un ejemplo redactado que SÍ estaba en el material es un despiste, no una excepción.
         if (corpus.turnos.some((t) => t.target === frase)) {
           fallo(`${etiqueta}: «${e.lemma}» se declara redactado pero su frase sí está en «${corpus.titulo}»`)
+        }
+        if (lectura.some((l) => l.target === frase)) {
+          fallo(`${etiqueta}: «${e.lemma}» se declara redactado pero su frase sí está en un texto de lectura del nivel`)
+        }
+        continue
+      }
+
+      if (fuente.tipo === 'lectura') {
+        deLectura += 1
+        const donde = lectura.filter((l) => l.target === frase)
+        if (donde.length === 0) {
+          fallo(
+            `${etiqueta}: «${e.lemma}» se declara tomado de lectura pero su frase no aparece en ningún ` +
+              `texto de ${lang}/${nivel}`,
+          )
+        } else if (!donde.some((d) => d.ejercicio === fuente.ejercicio)) {
+          fallo(
+            `${etiqueta}: «${e.lemma}» declara «${fuente.ejercicio}» pero su frase está en ` +
+              `${[...new Set(donde.map((d) => d.ejercicio))].join(', ')}`,
+          )
         }
         continue
       }
@@ -213,28 +289,34 @@ for (const archivo of archivos.sort()) {
       if (donde.length === 0) {
         fallo(
           `${etiqueta}: «${e.lemma}» se declara tomado del corpus pero su frase no suena en «${corpus.titulo}». ` +
-            `O se toma del corpus, o se declara redactado con su motivo`,
+            `O se toma del corpus o de lectura, o se declara redactado con su motivo`,
         )
         continue
       }
       if (!donde.some((d) => d.episodio === fuente.episodio)) {
         fallo(`${etiqueta}: «${e.lemma}» declara ep${fuente.episodio} pero su frase suena en ep${donde.map((d) => d.episodio).join(', ep')}`)
       }
-      const enFrase = frase.toLowerCase().includes(e.lemma.toLowerCase().split(' ')[0].slice(0, Math.max(4, e.lemma.length - 2)))
-      if (!enFrase) {
+      // Con la MISMA tolerancia a la flexión que usa el motor. Cuando la puerta recortaba la
+      // raíz por su cuenta («woma») y el motor por la suya («wom»), la puerta avisaba de un
+      // problema que no existía: «women» sí contiene a «woman».
+      if (!usa(frase, e.lemma)) {
         aviso(`${etiqueta}: «${e.lemma}» quizá no aparece en su propio ejemplo — revisar`)
       }
     }
 
-    const cobertura = entradas.length ? deCorpus / entradas.length : 0
+    const cobertura = entradas.length ? (deCorpus + deLectura) / entradas.length : 0
     if (cobertura < MIN_COBERTURA_CORPUS) {
       fallo(
-        `${etiqueta}: solo el ${Math.round(cobertura * 100)} % de los ejemplos sale del corpus ` +
+        `${etiqueta}: solo el ${Math.round(cobertura * 100)} % de los ejemplos sale del material del nivel ` +
           `(mínimo ${Math.round(MIN_COBERTURA_CORPUS * 100)} %). Por debajo de ahí el vocabulario se está ` +
           `escribiendo aparte de las lecciones, que es justo lo que la regla de veto evita`,
       )
     } else {
-      console.log(`   cobertura de corpus: ${Math.round(cobertura * 100)} % (${deCorpus} del corpus, ${redactados} redactados)`)
+      console.log(
+        `   cobertura del material: ${Math.round(cobertura * 100)} % ` +
+          `(${deCorpus} de escucha, ${deLectura} de lectura, ${redactados} redactados) · ` +
+          `disponible: ${corpus.turnos.length} turnos + ${lectura.length} frases de lectura`,
+      )
     }
   }
 
@@ -418,6 +500,27 @@ for (const archivo of archivos.sort()) {
       `   sesión simulada: caja 2 con ortografía en ${conOrtografia}/${entradas.length} · ` +
         `caja 4 con hueco en ${entradas.length - sinHueco}/${entradas.length}`,
     )
+  }
+
+  // 11 · Cruce contra la lista base oficial, si se pasó una
+  //
+  // Aviso y no problema a propósito: una palabra fuera de la lista puede estar justificada
+  // —«waitress» no está en el Oxford 3000 aunque «waiter» sí, y dejar fuera la forma femenina
+  // es un límite de la lista, no del nivel— pero la justificación tiene que estar escrita en
+  // `listaBase.nota`, no en la cabeza de nadie.
+  if (listaBase) {
+    const fuera = []
+    const otroNivel = []
+    for (const e of entradas) {
+      const w = e.lemma.toLowerCase()
+      const nivelLista = listaBase.get(w) ?? listaBase.get(FORMA_DE_DICCIONARIO[w])
+      if (!nivelLista) fuera.push(e.lemma)
+      else if (nivelLista.toLowerCase() !== nivel) otroNivel.push(`${e.lemma} (${nivelLista})`)
+    }
+    const dentro = entradas.length - fuera.length - otroNivel.length
+    console.log(`   lista base: ${dentro}/${entradas.length} en la banda ${nivel.toUpperCase()}`)
+    if (otroNivel.length) aviso(`${etiqueta}: la lista sitúa en otro nivel — ${otroNivel.join(', ')}`)
+    if (fuera.length) aviso(`${etiqueta}: fuera de la lista base — ${fuera.join(', ')}. Justificar en listaBase.nota`)
   }
 
   // 8 · Volumen

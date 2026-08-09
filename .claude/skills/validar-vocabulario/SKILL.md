@@ -19,6 +19,17 @@ Los tres, en este orden. Si uno falla, arreglar antes de seguir.
 node scripts/check-vocabulario.mjs --verbose
 ```
 
+Y cuando se cierre un bloque o un nivel, además el cruce contra la lista oficial del idioma:
+
+```bash
+node scripts/check-vocabulario.mjs --lang ingles --level a1 --lista ~/Downloads/oxford3000.json
+```
+
+La lista **no vive en el repo** —la del Oxford 3000, la del Goethe y la de ТРКИ tienen derechos—
+así que se descarga aparte. Formato: `{ "A1": ["about", ...], "A2": [...] }`. Una palabra fuera de
+la lista es aviso, no problema: puede estar justificada, pero la justificación va escrita en
+`listaBase.nota` del archivo del nivel, no en la cabeza de nadie.
+
 ```bash
 npx tsc --noEmit
 ```

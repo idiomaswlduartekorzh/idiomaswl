@@ -77,6 +77,7 @@ export type Ejemplo = {
  */
 export type FuenteEjemplo =
   | { tipo: 'corpus'; serie: string; episodio: number }
+  | { tipo: 'lectura'; ejercicio: string }
   | { tipo: 'redactado'; motivo: string }
 
 /**

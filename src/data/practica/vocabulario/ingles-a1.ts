@@ -28,7 +28,10 @@ const SERIE = 'The Corner Shop'
 const c = (chunk: string, es: string): Colocacion => ({ chunk, es })
 
 type Tipo = { tipo: 'sustantivo' } | { tipo: 'verbo'; phrasal?: string[] } | { tipo: 'otro' }
-type FuenteCorta = { target: string; es: string; episodio: number } | { target: string; es: string; motivo: string }
+type FuenteCorta =
+  | { target: string; es: string; episodio: number }
+  | { target: string; es: string; lectura: string }
+  | { target: string; es: string; motivo: string }
 
 const en = (
   id: string,
@@ -51,7 +54,9 @@ const en = (
     fuente:
       'episodio' in ejemplo
         ? { tipo: 'corpus', serie: SERIE, episodio: ejemplo.episodio }
-        : { tipo: 'redactado', motivo: ejemplo.motivo },
+        : 'lectura' in ejemplo
+          ? { tipo: 'lectura', ejercicio: ejemplo.lectura }
+          : { tipo: 'redactado', motivo: ejemplo.motivo },
   },
   extra: { lang: 'ingles', acento, registro, colocaciones, ...extra },
 })
@@ -179,7 +184,7 @@ const unidad3: VocabEntry[] = [
 
   en('en-a1-022', 'woman', 'mujer', 'sustantivo', 'WO-man',
     [c('a young woman', 'una mujer joven'), c('an old woman', 'una mujer mayor'), c('who is that woman?', '¿quién es esa mujer?')],
-    { target: 'The woman with the red bag is my mother.', es: 'La mujer del bolso rojo es mi madre.', motivo: SIN_CORPUS('woman') },
+    { target: 'And two women are running with their dogs.', es: 'Y dos mujeres corren con sus perros.', episodio: 16 },
     { tipo: 'sustantivo' }),
 
   en('en-a1-023', 'young', 'joven', 'adjetivo', 'young',
@@ -208,7 +213,7 @@ const unidad3: VocabEntry[] = [
     { tipo: 'sustantivo' }),
 
   en('en-a1-028', 'waitress', 'camarera / mesera', 'sustantivo', 'WAI-tress',
-    [c('work as a waitress', 'trabajar de camarera'), c('a waitress on Saturdays', 'camarera los sábados')],
+    [c('work as a waitress', 'trabajar de camarera'), c('a waiter or a waitress', 'un camarero o una camarera')],
     { target: 'I’m a student, and I’m a waitress on Saturdays.', es: 'Soy estudiante y camarera los sábados.', episodio: 1 },
     { tipo: 'sustantivo' }),
 
@@ -267,8 +272,12 @@ const unidad4: VocabEntry[] = [
     { tipo: 'sustantivo' }),
 
   en('en-a1-038', 'city', 'ciudad', 'sustantivo', 'CI-ty',
-    [c('a big city', 'una ciudad grande'), c('live in a city', 'vivir en una ciudad'), c('the city centre', 'el centro de la ciudad')],
-    { target: 'I live in a small city.', es: 'Vivo en una ciudad pequeña.', motivo: SIN_CORPUS('city') },
+    [c('a big city', 'una ciudad grande'), c('live in a city', 'vivir en una ciudad'), c('the city park', 'el parque de la ciudad')],
+    {
+      target: 'The bus stops at the museum, the city park, and Riverside Market.',
+      es: 'El bus para en el museo, el parque de la ciudad y el mercado Riverside.',
+      lectura: 'en-a1-saturday-bus-guide',
+    },
     { tipo: 'sustantivo' }),
 
   en('en-a1-039', 'nice', 'simpático / agradable', 'adjetivo', 'nice',
@@ -289,10 +298,14 @@ export const INGLES_A1: VocabLevel = {
   listaBase: {
     fuente: 'Oxford 3000 por nivel CEFR, contrastado con el English Vocabulary Profile',
     url: 'https://www.oxfordlearnersdictionaries.com/about/wordlists/oxford3000-5000',
+    cupoOficial: undefined,
     nota:
       'El Oxford 3000 etiqueta por nivel pero no fija cupo por nivel: el cupo (300 en A1) lo pone ' +
-      'nuestro núcleo productivo. Pendiente de la Puerta 1: cruzar las 30 entradas contra el ' +
-      'listado descargado y marcar las que no estén en la banda A1.',
+      'nuestro núcleo productivo. Cruce hecho el 8 ago 2026 contra el listado por nivel: ' +
+      '39 de las 40 entradas están en la banda A1. La excepción es «waitress», que el Oxford 3000 ' +
+      'no recoge en ningún nivel aunque sí recoge «waiter» en A1. Se mantiene a propósito: es el ' +
+      'oficio de la protagonista de la serie, se oye en el episodio 1, y dejar fuera la forma ' +
+      'femenina es un límite de la lista, no del nivel. La ficha enseña las dos formas.',
   },
   bloques: [
     {

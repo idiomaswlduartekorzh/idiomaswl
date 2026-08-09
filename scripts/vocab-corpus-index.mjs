@@ -101,23 +101,90 @@ for (const episode of series.episodes) {
   }
 }
 
+/** Código de dos letras con que se nombran los ejercicios de lectura. */
+const CODIGO = {
+  ingles: 'en', aleman: 'de', frances: 'fr', italiano: 'it',
+  portugues: 'pt', ruso: 'ru', coreano: 'ko', japones: 'ja',
+}
+
+/**
+ * Las frases de los textos de lectura del nivel.
+ *
+ * La regla de veto siempre dijo «escucha **o lectura**». La escucha sola no da: 160 turnos no
+ * alcanzan para un núcleo de 300 con el tope de dos palabras por frase. Los textos de lectura
+ * son la otra mitad del material que ya está escrito y nivelado.
+ */
+function frasesDeLectura() {
+  const dir = path.join(repoRoot, 'src', 'data', 'reading', 'exercises')
+  if (!fs.existsSync(dir)) return []
+  const prefijo = `${CODIGO[lang] ?? lang}-${level}-`
+  const out = []
+  for (const archivo of fs.readdirSync(dir).filter((f) => f.startsWith(prefijo) && f.endsWith('.json'))) {
+    const datos = JSON.parse(fs.readFileSync(path.join(dir, archivo), 'utf8'))
+    for (const bruta of (datos?.content?.targetText ?? '').split(/(?<=[.!?])\s+/u)) {
+      const frase = bruta.replace(/\s+/gu, ' ').trim()
+      if (frase.split(' ').length >= 4) out.push({ ejercicio: archivo.replace(/\.json$/, ''), target: frase })
+    }
+  }
+  return out
+}
+
 // ── Modo búsqueda: sirve para los ocho idiomas, incluidos ja/ko ────────────────
 if (find) {
   const needle = find.toLowerCase()
-  const hits = sentences.filter(
-    (s) => s.target.toLowerCase().includes(needle) || strip(s.target).includes(strip(needle)),
-  )
-  if (hits.length === 0) {
-    console.log(`«${find}» no aparece en ${lang}/${level}. Según la regla de veto, no puede entrar al núcleo sin añadirla al corpus.`)
+  /**
+   * Busca también por raíz, no solo literal.
+   *
+   * Buscar «woman» no encontraba «women» y la palabra se daba por ausente del corpus cuando
+   * está en el episodio 16. Sobre 300 entradas, comparar literalmente manda a «redactado»
+   * decenas de palabras que sí se oyen — y cada una de esas es una frase inventada que no
+   * hacía falta. El motor ya tolera la flexión al ahuecar; el buscador tiene que tolerarla
+   * igual o miente sobre el material disponible.
+   */
+  const raiz = needle.slice(0, Math.max(3, needle.length - 2))
+  const literal = (t) => t.toLowerCase().includes(needle) || strip(t).includes(strip(needle))
+  // La raíz encuentra «women» buscando «woman», pero también «you» buscando «young» y
+  // «counter» buscando «country». Por eso va aparte y etiquetada: sirve para no dar por
+  // ausente lo que está flexionado, no para decidir sin mirar.
+  const porRaiz = (t) => !literal(t) && strip(t).split(' ').some((p) => p.startsWith(raiz))
+
+  const escucha = sentences.filter((s) => literal(s.target))
+  const escuchaRaiz = sentences.filter((s) => porRaiz(s.target))
+  const lecturas = frasesDeLectura()
+  const enLectura = lecturas.filter((l) => literal(l.target))
+  const enLecturaRaiz = lecturas.filter((l) => porRaiz(l.target))
+
+  if (!escucha.length && !enLectura.length && !escuchaRaiz.length && !enLecturaRaiz.length) {
+    console.log(`«${find}» no aparece ni en la escucha ni en la lectura de ${lang}/${level}.`)
+    console.log('Para entrar al núcleo necesita ejemplo redactado y declarado, con su motivo.')
     process.exit(2)
   }
-  console.log(`«${find}» aparece en ${hits.length} turno(s) de ${lang}/${level}:\n`)
-  for (const hit of hits) {
-    console.log(`  ep${String(hit.episode).padStart(2, '0')} · ${hit.speaker}`)
-    console.log(`    ${hit.target}`)
-    console.log(`    ${hit.es}\n`)
+
+  for (const [titulo, filas] of [
+    [`${escucha.length} turno(s) de escucha`, escucha],
+    [`${enLectura.length} frase(s) de lectura`, enLectura],
+  ]) {
+    if (!filas.length) continue
+    console.log(`«${find}» · ${titulo}:\n`)
+    for (const hit of filas) {
+      console.log(hit.episode ? `  🎧 ep${String(hit.episode).padStart(2, '0')} · ${hit.speaker}` : `  📄 ${hit.ejercicio}`)
+      console.log(`    ${hit.target}`)
+      if (hit.es) console.log(`    ${hit.es}`)
+      console.log()
+    }
   }
-  process.exit(0)
+
+  const dudosas = [...escuchaRaiz, ...enLecturaRaiz]
+  if (dudosas.length) {
+    console.log(`Por raíz «${raiz}» — verifica que sea de verdad la palabra:\n`)
+    for (const hit of dudosas) {
+      console.log(hit.episode ? `  ~ ep${String(hit.episode).padStart(2, '0')}` : `  ~ ${hit.ejercicio}`)
+      console.log(`    ${hit.target}\n`)
+    }
+  }
+
+  // Solo cuenta como encontrada si hay coincidencia literal; lo demás hay que mirarlo.
+  process.exit(escucha.length || enLectura.length ? 0 : 2)
 }
 
 // ── Palabras clave que la propia serie ya declara por episodio ─────────────────

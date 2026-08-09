@@ -96,10 +96,18 @@ function Chunks({ colocaciones }: { colocaciones: Colocacion[] }) {
 
 function Fuente({ entrada }: { entrada: VocabEntry }) {
   const f = entrada.ejemplo.fuente
-  const esCorpus = f.tipo === 'corpus'
+  const delMaterial = f.tipo !== 'redactado'
+  const etiqueta =
+    f.tipo === 'corpus' ? `🎧 ep${f.episodio}` : f.tipo === 'lectura' ? '📄 lectura' : '✎ redactado'
+  const titulo =
+    f.tipo === 'corpus'
+      ? `Se oye en el episodio ${f.episodio} de ${f.serie}`
+      : f.tipo === 'lectura'
+        ? `Se lee en el ejercicio ${f.ejercicio}`
+        : f.motivo
   return (
     <span
-      title={esCorpus ? `Se oye en el episodio ${f.episodio} de ${f.serie}` : f.motivo}
+      title={titulo}
       style={{
         display: 'inline-block',
         fontSize: '0.68rem',
@@ -107,12 +115,12 @@ function Fuente({ entrada }: { entrada: VocabEntry }) {
         padding: '0.12rem 0.42rem',
         borderRadius: 6,
         border: '1px solid var(--line-soft)',
-        color: esCorpus ? COLOR : 'var(--muted)',
-        background: esCorpus ? `${COLOR}0d` : 'transparent',
+        color: delMaterial ? COLOR : 'var(--muted)',
+        background: delMaterial ? `${COLOR}0d` : 'transparent',
         whiteSpace: 'nowrap',
       }}
     >
-      {esCorpus ? `🎧 ep${f.episodio}` : '✎ redactado'}
+      {etiqueta}
     </span>
   )
 }

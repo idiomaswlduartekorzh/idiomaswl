@@ -311,13 +311,63 @@ deja una palabra de menos de cuatro letras —*meet → met*, que existe y signi
 transposición solo actúa en palabras de cinco letras o más, porque *son → sno* o *boy → byo* no
 son faltas de nadie, son erratas de teclado.
 
-### Lo que sigue faltando
+### Cruce con la lista base — hecho
 
-**Cruzar las 30 entradas contra el Oxford 3000 descargado** y marcar las que no estén en la banda
-A1. La lista base está declarada en el archivo pero no verificada contra el listado real.
+**39 de las 40 entradas están en la banda A1 del Oxford 3000.** La única excepción es *waitress*,
+que el Oxford 3000 no recoge en ningún nivel, aunque sí recoge *waiter* en A1. Se mantiene a
+propósito: es el oficio de la protagonista de la serie, se oye en el episodio 1, y dejar fuera la
+forma femenina es un límite de la lista, no del nivel. La ficha enseña las dos formas y la
+excepción está escrita en `listaBase.nota`.
 
-Hasta que eso ocurra, **no se escriben los otros nueve bloques de inglés A1** ni se toca ningún
-otro idioma. Es el punto del plan.
+El cruce es repetible: `check-vocabulario.mjs` acepta `--lista <archivo>`. La lista **no vive en el
+repo** —la del Oxford 3000, la del Goethe y la de ТРКИ tienen derechos— así que se descarga aparte.
+
+### La corriente de decisión sobre el corpus
+
+Decidido el 8 de agosto: **se dejan las once frases redactadas como están.** Arreglarlas exige
+tocar guiones ya grabados y regenerar audio, y el mismo hueco va a aparecer en los otros siete
+idiomas. Se resolverá de una vez para las 24 series cuando llegue la Fase 5 del audio, que ya
+estaba planificada al final.
+
+---
+
+## 🚪 Puerta 1 de inglés — ABIERTA (8 de agosto de 2026)
+
+| Mitad | Estado |
+|---|---|
+| Automática | Diez comprobaciones en verde, más el cruce con la lista base |
+| Pedagógica | Las seis preguntas respondidas; los cuatro hallazgos, corregidos |
+
+```
+cobertura de corpus: 73 % (29 del corpus, 11 redactados)
+posición de la correcta: A:10 B:11 C:10 D:9
+sesión simulada: caja 2 con ortografía en 14/40 · caja 4 con hueco en 40/40
+lista base: 39/40 en la banda A1
+```
+
+**Se puede escalar.** Siguiente paso: los nueve bloques restantes de inglés A1 —260 palabras— y
+después la Puerta 2 del nivel. Ningún otro idioma se toca hasta entonces.
+
+### Antes de escalar: dos arreglos que había que hacer primero
+
+Medido antes de escribir nada, y menos mal.
+
+**1. La escucha sola no da para 300 palabras.** La serie de inglés A1 tiene 160 turnos, y con el
+tope de dos entradas por frase se agota mucho antes del 60 % de cobertura. La regla de veto
+siempre dijo «escucha **o lectura**», pero el validador solo miraba la escucha. Conectados los
+diez textos de lectura del nivel, el material disponible pasa de 160 a **221 frases**, y el
+esquema gana una tercera procedencia: `lectura`, con el ejercicio declarado, que la ficha muestra
+como `📄 lectura`.
+
+**2. El buscador de corpus mentía por comparar literalmente.** Buscar «woman» no encontraba
+«women», que está en el episodio 16. Sobre 300 entradas eso habría mandado decenas de palabras a
+«redactado» sin necesidad — cada una, una frase inventada que sobraba. Ahora busca también por
+raíz, pero **en una sección aparte y etiquetada**, porque la raíz también trae falsos positivos:
+«young» casa con «you» y «country» con «counter». El buscador propone; decide quien mira.
+
+Con los dos arreglos, sin escribir una palabra nueva: la cobertura del bloque sube del 73 % al
+**78 %** y los ejemplos inventados bajan de once a nueve, porque *woman* y *city* sí estaban en el
+material y nadie los había encontrado.
 
 ---
 

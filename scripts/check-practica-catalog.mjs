@@ -84,6 +84,32 @@ expectText('src/components/practica/ListeningPlayer.tsx', 'ListeningPlayer');
 expectText('src/components/practica/ListeningJourney.tsx', 'ListeningPlayer');
 expectText('src/data/practica/listening-shuffle.ts', 'balanceOptions');
 
+/**
+ * Vocabulario: las 24 rutas del catálogo y el motor nuevo.
+ *
+ * Mismo razonamiento que con escucha. Estas 24 rutas no las importa ninguna página de IELTS
+ * ni de ICFES, así que un merge mal resuelto se las lleva y el build sigue en verde. Aquí solo
+ * se comprueba que la ruta EXISTA, no qué componente pinta: la Fase 1 va a sustituir los
+ * `Content.tsx` por el motor único, y un guardián que fije el nombre del componente frenaría
+ * el trabajo que él mismo debería proteger.
+ *
+ * Lo que sí se fija por marcador es el motor y sus módulos de lógica. `opciones.ts` y
+ * `ejercicios.ts` están fuera del componente a propósito: es lo que permite que
+ * `check-vocabulario.mjs` audite lo que de verdad ve el estudiante. Si alguien devuelve esa
+ * lógica al JSX, el validador deja de ver ese trozo — que es justo cómo se coló el sesgo de
+ * la respuesta correcta siempre en la misma opción.
+ */
+for (const language of languages) {
+  for (const level of ['a1', 'a2', 'b1']) {
+    read(`src/app/(site)/practica/${language}/${level}/vocabulario/page.tsx`);
+  }
+}
+expectText('src/components/practica/VocabularyJourney.tsx', 'VocabularyJourney');
+expectText('src/data/practica/vocabulario/schema.ts', 'LangExtra');
+expectText('src/data/practica/vocabulario/opciones.ts', 'opcionesDe');
+expectText('src/data/practica/vocabulario/ejercicios.ts', 'evaluarFrasePropia');
+expectText('src/app/(site)/practica/ingles/a1/vocabulario/[slug]/page.tsx', 'VocabularyJourney');
+
 expectText('src/app/(site)/nivel-radar/page.tsx', 'NivelRadarClient');
 expectText('src/app/(site)/practica/ielts/IELTSHubClient.tsx', 'IELTS Academic');
 expectText('src/app/(site)/practica/ielts/academic/writing/task1/page.tsx', 'Task 1');
