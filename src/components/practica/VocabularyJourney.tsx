@@ -256,7 +256,16 @@ function Sesion({
         })}
       </div>
 
-      <div style={{ border: '1px solid var(--line-soft)', borderRadius: 16, padding: '1.3rem', background: 'var(--bg)' }}>
+      {/* Los data-* no pintan nada: son el asidero de la auditoría con Playwright, que
+          recorre la escalera entera y necesita saber en qué caja está y con qué palabra
+          sin adivinarlo del texto. */}
+      <div
+        data-testid="ejercicio"
+        data-caja={modo}
+        data-lemma={actual.lemma}
+        data-variante={modo === 2 ? caja2.tipo : undefined}
+        style={{ border: '1px solid var(--line-soft)', borderRadius: 16, padding: '1.3rem', background: 'var(--bg)' }}
+      >
         <p style={{ margin: '0 0 0.9rem', fontFamily: 'var(--mono)', fontSize: '0.74rem', color: COLOR }}>
           CAJA {modo} · {CAJAS[modo - 1].nombre} —{' '}
           {modo === 2 && caja2.tipo === 'ortografia' ? 'Corrige cómo se escribe' : CAJAS[modo - 1].pide}

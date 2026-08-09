@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "npm run check:practica-catalog && npm run check:reading-content && npm run audit:writing-curriculum && npm run check:listening-series && npm run check:ielts-task2",
+    "prebuild": "npm run check:practica-catalog && npm run check:reading-content && npm run audit:writing-curriculum && npm run check:listening-series && npm run check:ielts-task2 && npm run check:vocabulario",
     "dev": "NODE_OPTIONS='--max-old-space-size=3072' next dev",
     "dev:audit": "NODE_OPTIONS='--max-old-space-size=3072' next dev --webpack",
     "dev:safe": "node scripts/safe-dev.js",
@@ -31,7 +31,9 @@
     "check:ielts-task2": "node scripts/check-ielts-task2-alignment.mjs",
     "audit:ielts": "node scripts/audit-ielts-routes.mjs",
     "clean": "rm -rf .next .turbo node_modules/.cache && echo '✓ Cache limpiado'",
-    "audit:listening-audio": "node scripts/audit-listening-audio.mjs"
+    "audit:listening-audio": "node scripts/audit-listening-audio.mjs",
+    "test:e2e": "playwright test",
+    "check:vocabulario": "node scripts/check-vocabulario.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.112.1",
@@ -56,6 +58,7 @@
     "zustand": "^4.4.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.62.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

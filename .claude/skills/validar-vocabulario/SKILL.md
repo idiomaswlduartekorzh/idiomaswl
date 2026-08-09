@@ -11,6 +11,20 @@ jugando un poco** — se ven en el conjunto: la respuesta correcta siempre en la
 bloque sacado de dos episodios, una frase que enseña seis palabras, un callejón sin salida en la
 caja 5.
 
+## Dos auditorías, y las dos hacen falta
+
+Ninguna sustituye a la otra, y cada una ya pilló algo que la otra no podía ver.
+
+| | Qué hace | Qué pilló |
+|---|---|---|
+| **Node** — `check-vocabulario.mjs` | Ejecuta la lógica y mide el conjunto | Una frase enseñando tres palabras; un bloque sacado de dos escenas; la colocación de *city* que era su propio ejemplo |
+| **Navegador** — Playwright | Hace clic como un estudiante, y **ataca** | El sesgo de la letra B vivía en el JSX y el script de Node no lo veía |
+
+**Atacar no es opcional.** Los tests no comprueban que la página cargue: fallan a propósito,
+copian el chunk que la propia ficha imprime, escriben la palabra suelta. Lo que se afirma es que
+**no hay manera de quedarse atascado** — porque el atasco de la caja 5 solo apareció cuando una
+persona se quedó encallada ahí, y ninguna comprobación estática lo habría encontrado.
+
 ## Qué ejecutar
 
 Los tres, en este orden. Si uno falla, arreglar antes de seguir.
@@ -40,6 +54,26 @@ npm run build
 
 `npm run build` solo si se han tocado rutas o componentes; para cambios de datos basta con los
 dos primeros.
+
+Y la segunda auditoría, en navegador. Necesita el servidor levantado — no lo arranca ella a
+propósito, porque esta máquina tiene 8 GB y otro `next dev` compite con el que ya esté abierto:
+
+```bash
+npm run test:e2e
+```
+
+```bash
+BASE_URL=http://localhost:3010 npm run test:e2e
+```
+
+Tarda unos 8 segundos y recorre la escalera entera de una unidad —las cinco cajas, las dos
+variantes de la caja 2, el cierre— además de los ataques. Si tarda minutos, es que alguien metió
+una espera redundante por paso: la primera versión tardaba 9 minutos por esperar dos veces en
+cada uno.
+
+Los tres tests viven en `tests/e2e/vocabulario.spec.ts` y se apoyan en los `data-caja`,
+`data-lemma` y `data-variante` del componente. **No los quites**: sin ellos el test tiene que
+adivinar en qué caja está leyendo el texto, y deja de ser fiable.
 
 ## Qué mira el script
 
