@@ -1099,6 +1099,19 @@
   font-weight: 600;
 }
 
+/* El borrador defectuoso que hay que revisar. Se presenta como lo que es —texto de un
+   ensayo real, con sus fallos— y no como una advertencia: el trabajo del alumno es
+   encontrar el problema, así que la caja no puede adelantarle que hay uno. */
+.reviewDraft {
+  background: var(--bg-2, #f4f4f6);
+  border-left: 3px solid var(--intro-blue, #0f3d8c);
+  border-radius: 6px;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  margin: 0 0 0.85rem !important;
+  padding: 0.95rem 1.1rem;
+}
+
 .paragraphView {
   border: 1px solid var(--line-soft);
   border-radius: 10px;
