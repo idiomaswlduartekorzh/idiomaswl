@@ -1329,6 +1329,232 @@ const b7unidad3: VocabEntry[] = [
     { tipo: 'sustantivo' }),
 ]
 
+// ═══ BLOQUE 8 · Rutina diaria y acciones ══════════════════════════════════════
+//
+// **Cero redactados.** Las treinta salen del material, y es el primer bloque del nivel que lo
+// consigue. La razón es que una rutina no vive en un episodio: vive repartida por los veinte,
+// porque todos los personajes hacen cosas todo el rato. Ningún episodio aporta más de tres
+// entradas —el reparto más plano del nivel, un 10 % de techo frente al 33 % del bloque 6—.
+//
+// Que salga fácil no quiere decir que sobrara sitio. Al contrario: casi todas las frases
+// buenas ya estaban ocupadas por bloques anteriores, así que hubo que buscar la segunda o la
+// tercera aparición de cada verbo. «stay» se quedó fuera por eso —su única frase, «In winter
+// I stay at home with a book», ya enseñaba dos— y entró «evening», que completa el juego de
+// las cuatro partes del día y sí tenía hueco.
+//
+// Y otra tanda de espejismos, que a estas alturas ya es la norma: «go» daba doce positivos y
+// los doce eran *got*; «read» siete y casi todos eran *bread*; «wait» cinco y eran
+// *waitress*; «sing» tres y uno era *single*; «come» tres y eran *comfortable* y *community*.
+
+// ─── Unidad 1 · Las horas del día ─────────────────────────────────────────────
+
+const b8unidad1: VocabEntry[] = [
+  en('en-a1-194', 'morning', 'mañana (parte del día)', 'sustantivo', 'MOR-ning',
+    [c('in the morning', 'por la mañana'), c('every morning', 'todas las mañanas'), c('on Monday morning', 'el lunes por la mañana')],
+    { target: 'I’m working in the morning. In the afternoon I’m free.', es: 'Trabajo por la mañana. Por la tarde estoy libre.', episodio: 18 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-195', 'afternoon', 'tarde', 'sustantivo', 'af-ter-NOON',
+    [c('in the afternoon', 'por la tarde'), c('this afternoon', 'esta tarde'), c('every afternoon', 'todas las tardes')],
+    { target: 'I’m working in the morning. In the afternoon I’m free.', es: 'Trabajo por la mañana. Por la tarde estoy libre.', episodio: 18 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-196', 'evening', 'tarde-noche', 'sustantivo', 'EVE-ning',
+    [c('in the evening', 'por la tarde-noche'), c('six in the evening', 'las seis de la tarde'), c('good evening', 'buenas tardes')],
+    {
+      target: 'The first bus leaves at eight o’clock, and the last bus leaves at six in the evening.',
+      es: 'El primer autobús sale a las ocho en punto y el último a las seis de la tarde.',
+      lectura: 'en-a1-saturday-bus-guide',
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-197', 'night', 'noche', 'sustantivo', 'night',
+    [c('at night', 'de noche'), c('work at night', 'trabajar de noche'), c('good night', 'buenas noches')],
+    { target: 'Does she work at night?', es: '¿Trabaja de noche?', episodio: 7 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-198', 'first', 'primero', 'adverbio', 'first',
+    [c('I make coffee first', 'primero hago café'), c('the first bus', 'el primer autobús'), c('first, we clean', 'primero limpiamos')],
+    {
+      target: 'First, we collect paper near the lake.',
+      es: 'Primero recogemos papel cerca del lago.',
+      lectura: 'en-a1-park-cleanup-poster',
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-199', 'then', 'luego / entonces', 'adverbio', 'then',
+    // El ejemplo NO puede ser «And then?», aunque sea la frase más natural del corpus: tiene
+    // dos palabras, y la caja 5 pide tres. La ficha estaría enseñando como modelo algo que el
+    // propio motor rechaza si el estudiante lo copia.
+    [c('and then?', '¿y luego?'), c('first this, then that', 'primero esto, luego aquello'), c('then we go home', 'y luego nos vamos a casa')],
+    {
+      target: 'Then we clean the picnic tables.',
+      es: 'Luego limpiamos las mesas del picnic.',
+      lectura: 'en-a1-park-cleanup-poster',
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-200', 'after', 'después de', 'preposicion', 'AF-ter',
+    [c('after school', 'después del colegio'), c('after the church', 'después de la iglesia'), c('after four o’clock', 'después de las cuatro')],
+    { target: 'Are you visiting your grandfather after?', es: '¿Vas a ver a tu abuelo después?', episodio: 18 },
+    { tipo: 'otro' }),
+
+  en('en-a1-201', 'before', 'antes de', 'preposicion', 'be-FORE',
+    [c('before five', 'antes de las cinco'), c('before Friday', 'antes del viernes'), c('before you choose', 'antes de elegir')],
+    {
+      target: 'If you cannot come today, call Mrs Green before five.',
+      es: 'Si hoy no puedes venir, llama a la señora Green antes de las cinco.',
+      lectura: 'en-a1-library-book-message',
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-202', 'start', 'empezar', 'verbo', 'start',
+    [c('start at seven', 'empezar a las siete'), c('start on Sunday', 'empezar el domingo'), c('when does it start?', '¿cuándo empieza?')],
+    { target: 'Then we can start on Sunday morning.', es: 'Entonces podemos empezar el domingo por la mañana.', episodio: 17 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-203', 'finish', 'terminar', 'verbo', 'FIN-ish',
+    [c('finish at one thirty', 'terminar a la una y media'), c('finish the book', 'terminar el libro'), c('when do you finish?', '¿a qué hora terminas?')],
+    {
+      target: 'Lunch starts at twelve and finishes at one thirty.',
+      es: 'El almuerzo empieza a las doce y termina a la una y media.',
+      lectura: 'en-a1-lunch-menu',
+    },
+    { tipo: 'verbo' }),
+]
+
+// ─── Unidad 2 · Lo que hago cada día ──────────────────────────────────────────
+
+const b8unidad2: VocabEntry[] = [
+  en('en-a1-204', 'come', 'venir', 'verbo', 'come',
+    [c('can you come?', '¿puedes venir?'), c('come with an adult', 'venir con un adulto'), c('come to the park', 'venir al parque')],
+    {
+      target: 'If you cannot come today, call Mrs Green before five.',
+      es: 'Si hoy no puedes venir, llama a la señora Green antes de las cinco.',
+      lectura: 'en-a1-library-book-message',
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-205', 'study', 'estudiar', 'verbo', 'STU-dy',
+    [c('study in the library', 'estudiar en la biblioteca'), c('study English', 'estudiar inglés'), c('study at night', 'estudiar de noche')],
+    { target: 'I usually study in the library. Sometimes I visit my grandfather.', es: 'Normalmente estudio en la biblioteca. A veces visito a mi abuelo.', episodio: 8 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-206', 'read', 'leer', 'verbo', 'read',
+    [c('read a book', 'leer un libro'), c('read the sign', 'leer el cartel'), c('he reads and he cooks', 'lee y cocina')],
+    { target: 'He doesn’t work now. He reads and he cooks.', es: 'Ahora no trabaja. Lee y cocina.', episodio: 7 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-207', 'play', 'jugar / tocar', 'verbo', 'play',
+    [c('play football', 'jugar al fútbol'), c('play in the park', 'jugar en el parque'), c('play the guitar', 'tocar la guitarra')],
+    { target: 'Do you play in the park?', es: '¿Jugáis en el parque?', episodio: 8 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-208', 'run', 'correr', 'verbo', 'run',
+    [c('run in the park', 'correr en el parque'), c('run every morning', 'correr todas las mañanas'), c('run with a dog', 'correr con un perro')],
+    { target: 'He’s three. He runs in the park every morning.', es: 'Tres. Corre en el parque cada mañana.', episodio: 15 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-209', 'sing', 'cantar', 'verbo', 'sing',
+    [c('sing a song', 'cantar una canción'), c('he is singing', 'está cantando'), c('sing in the park', 'cantar en el parque')],
+    { target: 'Somebody is singing. Can you hear it?', es: 'Alguien está cantando. ¿Lo oyes?', episodio: 16 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-210', 'sell', 'vender', 'verbo', 'sell',
+    [c('sell ice cream', 'vender helados'), c('sell bread', 'vender pan'), c('what do they sell?', '¿qué venden?')],
+    { target: 'That man is selling ice cream in November.', es: 'Ese hombre está vendiendo helados en noviembre.', episodio: 16 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-211', 'wait', 'esperar', 'verbo', 'wait',
+    [c('wait at the stop', 'esperar en la parada'), c('wait outside', 'esperar fuera'), c('wait for a friend', 'esperar a un amigo')],
+    { target: 'I can’t wait.', es: 'Me muero de ganas.', episodio: 17 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-212', 'rest', 'descansar', 'verbo', 'rest',
+    [c('rest on Sunday', 'descansar el domingo'), c('rest at home', 'descansar en casa'), c('do you rest?', '¿descansas?')],
+    { target: 'You work every Saturday. Do you rest?', es: 'Trabajas todos los sábados. ¿Descansas?', episodio: 9 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-213', 'bring', 'traer / llevar', 'verbo', 'bring',
+    [c('bring your card', 'trae tu carné'), c('bring a hat', 'trae un sombrero'), c('bring a friend', 'traer a un amigo')],
+    {
+      target: 'Bring gloves if you have them.',
+      es: 'Trae guantes si tienes.',
+      lectura: 'en-a1-park-cleanup-poster',
+    },
+    { tipo: 'verbo' }),
+]
+
+// ─── Unidad 3 · Hablar, pedir y responder ─────────────────────────────────────
+
+const b8unidad3: VocabEntry[] = [
+  en('en-a1-214', 'want', 'querer', 'verbo', 'want',
+    [c('I want a card', 'quiero un carné'), c('do you want to see it?', '¿quieres verlo?'), c('what do you want?', '¿qué quieres?')],
+    { target: 'Do you want to see inside?', es: '¿Quieres ver por dentro?', episodio: 20 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-215', 'need', 'necesitar', 'verbo', 'need',
+    [c('we need bread', 'necesitamos pan'), c('I need help', 'necesito ayuda'), c('what do you need?', '¿qué necesitas?')],
+    {
+      target: 'Please tell Mr Lee if you need a vegetarian meal.',
+      es: 'Dile al señor Lee si necesitas un plato vegetariano.',
+      lectura: 'en-a1-morning-school-note',
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-216', 'tell', 'decir (a alguien)', 'verbo', 'tell',
+    [c('tell me', 'dime'), c('tell your sister', 'díselo a tu hermana'), c('tell the teacher', 'díselo al profesor')],
+    {
+      target: 'Please tell Mr Lee if you need a vegetarian meal.',
+      es: 'Dile al señor Lee si necesitas un plato vegetariano.',
+      lectura: 'en-a1-morning-school-note',
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-217', 'know', 'saber / conocer', 'verbo', 'know',
+    [c('I know', 'lo sé'), c('I don’t know', 'no lo sé'), c('know the answer', 'saber la respuesta')],
+    { target: 'Those tiles are from 1971. I know every one.', es: 'Esas baldosas son de 1971. Me sé cada una.', episodio: 20 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-218', 'say', 'decir', 'verbo', 'say',
+    [c('what do you say?', '¿qué dices?'), c('say the same thing', 'decir lo mismo'), c('say yes', 'decir que sí')],
+    { target: 'My grandfather says the same thing.', es: 'Mi abuelo dice exactamente lo mismo.', episodio: 13 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-219', 'ask', 'preguntar / pedir', 'verbo', 'ask',
+    [c('ask the teacher', 'pregúntale al profesor'), c('ask a question', 'hacer una pregunta'), c('ask about the menu', 'preguntar por la carta')],
+    {
+      target: 'Ask the kitchen team about allergies before you choose.',
+      es: 'Pregunta al equipo de cocina por las alergias antes de elegir.',
+      lectura: 'en-a1-lunch-menu',
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-220', 'answer', 'respuesta', 'sustantivo', 'AN-swer',
+    [c('a good answer', 'una buena respuesta'), c('know the answer', 'saber la respuesta'), c('the right answer', 'la respuesta correcta')],
+    { target: 'That’s a very good answer.', es: 'Esa es una respuesta muy buena.', episodio: 9 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-221', 'call', 'llamar', 'verbo', 'call',
+    [c('call the office', 'llamar a la oficina'), c('call before five', 'llamar antes de las cinco'), c('call your name', 'decir tu nombre en voz alta')],
+    {
+      target: 'Dogs must wait outside until a nurse calls their name.',
+      es: 'Los perros esperan fuera hasta que una enfermera dice su nombre.',
+      lectura: 'en-a1-pet-clinic-card',
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-222', 'again', 'otra vez', 'adverbio', 'a-GAIN',
+    [c('singing again', 'cantando otra vez'), c('empty again', 'vacío otra vez'), c('say it again', 'dilo otra vez')],
+    { target: 'It’s the man with the guitar. He’s singing again.', es: 'Es el hombre de la guitarra. Está cantando otra vez.', episodio: 16 },
+    { tipo: 'otro' }),
+
+  en('en-a1-223', 'still', 'todavía', 'adverbio', 'still',
+    [c('do you still work?', '¿todavía trabajas?'), c('still open', 'todavía abierto'), c('I still live here', 'todavía vivo aquí')],
+    { target: 'Can you still work with your hands?', es: '¿Todavía puedes trabajar con las manos?', episodio: 17 },
+    { tipo: 'otro' }),
+]
+
 export const INGLES_A1: VocabLevel = {
   lang: 'ingles',
   nivel: 'a1',
@@ -1372,7 +1598,10 @@ export const INGLES_A1: VocabLevel = {
       'de las treinta salen de las lecturas, que son señales y avisos de ciudad— y solo dos ' +
       'redactados: «left», que no está en ningún sitio, y «cross», cuya única frase ya estaba ' +
       'llena. Pendientes de cruzar contra la lista: «platform», «passenger», «church», «sign», ' +
-      '«straight» y «cross» podrían ir una banda por encima.',
+      '«straight» y «cross» podrían ir una banda por encima. ' +
+      'Bloque 8 (rutina diaria y acciones), 9 ago 2026: cero redactados, las treinta salen del ' +
+      'material. Pendientes de cruzar: «hardly» no entró por sospecha de B1, y de las que sí ' +
+      'entraron conviene mirar «afternoon», «evening» y «finish».',
   },
   bloques: [
     {
@@ -1410,6 +1639,12 @@ export const INGLES_A1: VocabLevel = {
       nombre: 'Ciudad, lugares y direcciones',
       icono: '🗺️',
       entradas: [...b7unidad1, ...b7unidad2, ...b7unidad3],
+    },
+    {
+      id: 'rutina-diaria-y-acciones',
+      nombre: 'Rutina diaria y acciones',
+      icono: '🔁',
+      entradas: [...b8unidad1, ...b8unidad2, ...b8unidad3],
     },
   ],
 }

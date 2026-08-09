@@ -65,7 +65,7 @@ traen las capas de raíz y de acento.
 
 | # | Fase | Estado |
 |---|---|---|
-| 1 | **inglés A1** | 🔨 en curso — 190/300, bloques 1-4, 6 y 7 hechos · el 5 parado (§3) |
+| 1 | **inglés A1** | 🔨 en curso — 220/300, bloques 1-4 y 6-8 hechos · el 5 parado (§3) |
 | 2 | inglés A2 | pendiente |
 | 3 | inglés B1 | pendiente |
 | 4 | alemán A1 | pendiente |
@@ -92,7 +92,7 @@ con la anterior sin cerrar.
 > **Este apartado se actualiza al final de cada vuelta.** Es el único estado que el loop
 > necesita para saber por dónde va.
 
-**Fase 1 · inglés A1 — 190 de 300**
+**Fase 1 · inglés A1 — 220 de 300**
 
 | Bloque | Palabras | Estado |
 |---|---|---|
@@ -103,8 +103,8 @@ con la anterior sin cerrar.
 | 5 · Cuerpo, salud y sensaciones | 30 | 🛑 **parado — decide el usuario** |
 | 6 · Ropa, colores y describir | 30 | ✅ |
 | 7 · Ciudad, lugares y direcciones | 30 | ✅ |
-| 8 · Rutina diaria y acciones | 30 | ⬜ **siguiente** |
-| 9 · Estudio y trabajo | 30 | ⬜ |
+| 8 · Rutina diaria y acciones | 30 | ✅ |
+| 9 · Estudio y trabajo | 30 | ⬜ **siguiente** |
 | 10 · Cortesía y supervivencia | 30 | ⬜ |
 
 El bloque 10 no existe hoy en ningún idioma y es el que permite sobrevivir a una conversación:
@@ -157,11 +157,13 @@ Mientras no haya decisión, el loop no toca el bloque 5. **La fase 1 no se puede
 - `sunny` y `busy` se cayeron del bloque 6 por lo mismo: sus únicas frases ya enseñaban dos
   palabras (`tomorrow` en el ep14, `Saturday` y `Sunday` en el ep09). Si el bloque 5 se funde
   con el tiempo, `sunny` tiene ahí una segunda oportunidad.
-- Para el bloque 8 el material sobra: el ep06 (levantarse, salir, andar), el ep08 (siempre,
-  nunca, jugar), el ep09 (descansar, abrir, llegar) y el ep10 (horario, dormir). Ojo: los
-  adverbios de frecuencia ya se los llevó el bloque 2 y `walk`, `get` y `rest` están
-  repartidos entre el 7 y el 9. Contar antes de empezar cuántas sobreviven.
-- `money` sigue libre en el ep11 y es del bloque 9.
+- Para el bloque 9 (estudio y trabajo) queda: `money` (ep11), `class` (ep10), `schedule`
+  (ep10), `guitar` y `music` (ep16), `English` (lecturas), `ready` (biblioteca), `free`
+  (ep18), `hardly` y `usually` (ep08), `miss` (ep09), `take` (ep19, frase llena) y `hand`
+  (ep17). **Cuéntalas antes de escribir**: el nivel va por 220 de 300 y las frases libres
+  escasean, así que puede que no salgan 30 sin redactados.
+- `stay` se quedó fuera del bloque 8 y no tiene adónde ir: su única frase, «In winter I stay
+  at home with a book», ya enseñaba dos palabras.
 
 ### ⚠️ Deuda que hay que saldar antes de cerrar la fase 1
 
@@ -212,9 +214,11 @@ Reglas que la puerta va a comprobar, así que mejor cumplirlas de entrada:
 
 - Colocaciones **con traducción**, y que enseñen una combinación. `my room` no es una
   colocación: es posesivo + sustantivo. *(Se ha caído tres veces en esto.)*
-- **Ninguna colocación puede ser la frase de ejemplo.** Si lo es, el estudiante que copia lo
-  único que la ficha le enseña a decir queda suspendido en la caja 5 y sin salida. Pasó con
-  `city`, con `we are friends` y con `sign`. *(Tres veces también.)*
+- **La frase de ejemplo tiene que valer como respuesta de la caja 5.** Dos maneras de
+  romperlo, y las dos ya han pasado: que una colocación sea la frase entera (`city`, `sign`)
+  o que la frase tenga menos de tres palabras (`And then?`). Si el ejemplo no pasaría el
+  ejercicio, la ficha está enseñando como modelo algo que el motor rechaza. La puerta lo dice
+  así: *«la caja 5 rechaza el propio ejemplo de X — no hay salida evidente»*.
 - **Máximo dos entradas por frase de ejemplo.** Si una frase enseña seis palabras, en la caja 4
   el hueco se rellena por memoria del molde.
 - **Máximo 34 % del bloque de un mismo episodio.** Un bloque sacado de dos escenas cubre dos
@@ -373,5 +377,7 @@ sin leer commits.
 | 9 ago 2026 | inglés A1, bloque 4 | El spec de Playwright estaba fijado a `bloques[0]`: los bloques 2, 3 y 4 pasaban el validador sin que nadie los hubiera jugado nunca. Ahora recorre todos los bloques del nivel, y comprueba antes que la unidad tenga con qué salir de la caja 5 |
 | 9 ago 2026 | inglés A1, bloque 4 | Aparece un caso que la regla no preveía: una palabra que **sí** está en el material pero cuya única frase ya enseña dos. Se resolvió con ejemplo redactado y motivo explícito (`cheese`), en vez de meter una tercera en la misma frase |
 | 9 ago 2026 | inglés A1, bloque 5 | **Un tema entero puede no estar en el corpus.** No faltaban palabras sueltas: faltaba el cuerpo completo. `body`, `ear`, `ill`, `hair`, `arm`, `foot` y `pain` daban positivo y los siete eran espejismos (*nobody*, *years*, *still*, *chair*, *warm*, *football*, *paint*). Lección: antes de escribir un bloque, medir cuántas de sus candidatas sobreviven a abrir la frase — si no llegan al 60 %, el bloque no se empieza |
+| 9 ago 2026 | inglés A1, bloque 8 | La puerta volvió a parar el bloque por lo mismo, pero por otra causa: el ejemplo de `then` era «And then?», la frase más natural del corpus… y de dos palabras, cuando la caja 5 pide tres. La ficha proponía como modelo algo que el propio motor rechaza. Se cambió el ejemplo, no el umbral. Y sí: la regla estaba escrita desde el bloque 7 y aun así se cayó — por eso la comprueba un script y no la memoria de nadie |
+| 9 ago 2026 | inglés A1, bloque 8 | Primer bloque con **cero redactados**. Salió porque una rutina no vive en un episodio: vive repartida por los veinte. Ningún episodio pasa de tres entradas (10 %) frente al 33 % del bloque 6. Un tema transversal siempre se surtirá mejor que uno concentrado |
 | 9 ago 2026 | inglés A1, bloque 7 | La puerta paró el bloque por un callejón sin salida: la colocación de `sign` era «is there a sign?», que es el ejemplo entero. El estudiante que copiaba lo único que la ficha le enseñaba a decir era suspendido en la caja 5. Es la tercera vez que pasa (`city`, `we are friends`, ahora `sign`): **una colocación nunca puede ser la frase de ejemplo** |
 | 9 ago 2026 | inglés A1, bloque 6 | La cuota de un episodio y la de una frase se pelean. El ep13 es la única conversación de ropa del nivel y da 10 de 30 (el techo justo), y su frase de los colores enseña cuatro palabras que no salen en ningún otro sitio. Se quedaron con la frase las dos que son ropa; `black` y `white` fueron a redactado. Un tema concentrado en un solo episodio siempre va a costar redactados |
