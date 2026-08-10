@@ -1555,6 +1555,825 @@ const b8unidad3: VocabEntry[] = [
     { tipo: 'otro' }),
 ]
 
+// ═══ BLOQUE 5 · Cuerpo, salud y sensaciones ═══════════════════════════════════
+//
+// El bloque que se paró el 9 de agosto y que el usuario desbloqueó ese mismo día: se escribe
+// igual, con los ejemplos redactados que hagan falta, y se vuelven a enlazar cuando el corpus
+// crezca. La decisión y sus condiciones están en docs/vocabulario-loop.md §3 y §7.
+//
+// Por qué son tantos: el material de inglés A1 no tiene el tema. Ni una parte del cuerpo
+// salvo «hands», ni «doctor», ni «tired», ni «happy». Los siete positivos que daba el buscador
+// eran espejismos —«body» era *nobody*, «ear» era *years*, «hair» era *chair*, «arm» era
+// *warm*, «foot» era *football*, «pain» era *paint*, «ill» era *still*—.
+//
+// Ocho de las treinta sí salen del material, y son las que sostienen el bloque: «hand»,
+// «hear», «smell», «miss», «hot», «windy», «snow» y «rain». Las veintidós restantes van
+// redactadas, cada una con su motivo, y se encuentran todas de golpe con:
+//
+//   grep -n "motivo:" src/data/practica/vocabulario/ingles-a1.ts
+//
+// La gramática de esas frases no se sale del nivel: presente simple, `have got`, `can`,
+// `there is/are`. Lo mismo que el estudiante ya oye en los veinte episodios.
+
+/** Motivo de las veintidós del bloque 5. La decisión de escribirlas es del usuario. */
+const SIN_TEMA = (palabra: string, papel: string) =>
+  `«${palabra}» no aparece en ningún turno de los 20 episodios ni en ninguna lectura de ` +
+  `inglés A1: el material del nivel no trata el cuerpo ni la salud. ${papel} Frase redactada ` +
+  `con la gramática del nivel, por decisión del usuario (9 ago 2026), y marcada para volver a ` +
+  `enlazarla cuando el corpus cubra el tema.`
+
+// ─── Unidad 1 · El cuerpo ─────────────────────────────────────────────────────
+
+const b5unidad1: VocabEntry[] = [
+  en('en-a1-224', 'body', 'cuerpo', 'sustantivo', 'BO-dy',
+    [c('my whole body', 'todo el cuerpo'), c('parts of the body', 'partes del cuerpo'), c('a strong body', 'un cuerpo fuerte')],
+    {
+      target: 'My body is tired after work.',
+      es: 'Tengo el cuerpo cansado después del trabajo.',
+      motivo: SIN_TEMA('body', 'Es la palabra que da nombre a la unidad.'),
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-225', 'head', 'cabeza', 'sustantivo', 'head',
+    [c('from head to foot', 'de la cabeza a los pies'), c('a hat on your head', 'un sombrero en la cabeza'), c('my head is cold', 'tengo la cabeza fría')],
+    {
+      target: 'My head is cold. Where is my hat?',
+      es: 'Tengo frío en la cabeza. ¿Dónde está mi sombrero?',
+      motivo: SIN_TEMA('head', 'Sin ella no se puede señalar nada por encima del cuello.'),
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-226', 'face', 'cara', 'sustantivo', 'face',
+    [c('a happy face', 'una cara alegre'), c('wash your face', 'lávate la cara'), c('I know that face', 'me suena esa cara')],
+    {
+      target: 'She has got a happy face.',
+      es: 'Tiene una cara alegre.',
+      motivo: SIN_TEMA('face', 'Es la parte que se nombra al describir a alguien.'),
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-227', 'eye', 'ojo', 'sustantivo', 'eye',
+    [c('green eyes', 'ojos verdes'), c('open your eyes', 'abre los ojos'), c('big brown eyes', 'ojos grandes y marrones')],
+    {
+      target: 'My sister has got green eyes.',
+      es: 'Mi hermana tiene los ojos verdes.',
+      motivo: SIN_TEMA('eye', 'Describir a una persona en A1 empieza por los ojos y el pelo.'),
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-228', 'ear', 'oreja / oído', 'sustantivo', 'ear',
+    [c('small ears', 'orejas pequeñas'), c('in one ear', 'en un oído'), c('the dog’s ears', 'las orejas del perro')],
+    {
+      target: 'The dog has got small ears.',
+      es: 'El perro tiene las orejas pequeñas.',
+      motivo: SIN_TEMA('ear', 'Va con «hear», que sí está en el material.'),
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-229', 'nose', 'nariz', 'sustantivo', 'nose',
+    [c('a black nose', 'una nariz negra'), c('a cold nose', 'la nariz fría'), c('under your nose', 'delante de tus narices')],
+    {
+      target: 'The cat has got a black nose.',
+      es: 'El gato tiene la nariz negra.',
+      motivo: SIN_TEMA('nose', 'Va con «smell», que sí está en el material.'),
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-230', 'mouth', 'boca', 'sustantivo', 'mouth',
+    [c('open your mouth', 'abre la boca'), c('with your mouth full', 'con la boca llena'), c('a small mouth', 'una boca pequeña')],
+    {
+      target: 'Open your mouth, please.',
+      es: 'Abre la boca, por favor.',
+      motivo: SIN_TEMA('mouth', 'Es la parte del cuerpo que aparece en cualquier visita al médico.'),
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-231', 'hair', 'pelo', 'sustantivo', 'hair',
+    [c('short hair', 'pelo corto'), c('brown hair', 'pelo marrón'), c('wash your hair', 'lavarse el pelo')],
+    {
+      target: 'She has got short brown hair.',
+      es: 'Tiene el pelo corto y marrón.',
+      motivo: SIN_TEMA('hair', 'El buscador la daba por presente y era «chair» en los episodios 3 y 4.'),
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-232', 'hand', 'mano', 'sustantivo', 'hand',
+    [c('work with your hands', 'trabajar con las manos'), c('wash your hands', 'lavarse las manos'), c('in my hand', 'en la mano')],
+    { target: 'Can you still work with your hands?', es: '¿Todavía puedes trabajar con las manos?', episodio: 17 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-233', 'arm', 'brazo', 'sustantivo', 'arm',
+    [c('tired arms', 'brazos cansados'), c('under your arm', 'debajo del brazo'), c('long arms', 'brazos largos')],
+    {
+      target: 'My arms are tired after eight hours.',
+      es: 'Tengo los brazos cansados después de ocho horas.',
+      motivo: SIN_TEMA('arm', 'El buscador la daba por presente y era «warm» del episodio 14.'),
+    },
+    { tipo: 'sustantivo' }),
+]
+
+// ─── Unidad 2 · La salud y cómo me siento ─────────────────────────────────────
+
+const b5unidad2: VocabEntry[] = [
+  en('en-a1-234', 'leg', 'pierna / pata', 'sustantivo', 'leg',
+    [c('four legs', 'cuatro patas'), c('my legs are tired', 'tengo las piernas cansadas'), c('long legs', 'piernas largas')],
+    {
+      target: 'The table has got four legs.',
+      es: 'La mesa tiene cuatro patas.',
+      motivo: SIN_TEMA('leg', 'Sirve para el cuerpo y para los muebles, que sí están en el nivel.'),
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-235', 'foot', 'pie', 'sustantivo', 'foot',
+    [c('on foot', 'a pie'), c('two feet', 'dos pies'), c('my feet are cold', 'tengo los pies fríos')],
+    {
+      target: 'I go to school on foot.',
+      es: 'Voy al colegio a pie.',
+      motivo: SIN_TEMA('foot', 'El buscador la daba por presente y era «football» de los episodios 8 y 16.'),
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-236', 'back', 'espalda', 'sustantivo', 'back',
+    [c('my back hurts', 'me duele la espalda'), c('behind my back', 'a mis espaldas'), c('a tired back', 'la espalda cansada')],
+    {
+      target: 'My back is tired after the bus.',
+      es: 'Tengo la espalda cansada después del autobús.',
+      motivo: SIN_TEMA('back', 'En el material solo aparece como «the back door», que es otra cosa.'),
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-237', 'doctor', 'médico / doctora', 'sustantivo', 'DOC-tor',
+    [c('go to the doctor', 'ir al médico'), c('the doctor says', 'el médico dice'), c('a good doctor', 'un buen médico')],
+    {
+      target: 'The doctor works at the hospital.',
+      es: 'El médico trabaja en el hospital.',
+      motivo: SIN_TEMA('doctor', 'El nivel enseña «nurse» y «hospital» pero nunca dice «doctor».'),
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-238', 'sick', 'enfermo', 'adjetivo', 'sick',
+    [c('I am sick today', 'hoy estoy enfermo'), c('a sick child', 'un niño enfermo'), c('sick at home', 'enfermo en casa')],
+    {
+      target: 'I am sick today. I can’t work.',
+      es: 'Hoy estoy enfermo. No puedo trabajar.',
+      motivo: SIN_TEMA('sick', 'Es la frase con la que se avisa de que no se va a clase o al trabajo.'),
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-239', 'tired', 'cansado', 'adjetivo', 'tired',
+    [c('I am tired', 'estoy cansado'), c('tired after work', 'cansado después del trabajo'), c('very tired', 'muy cansado')],
+    {
+      target: 'I am tired after eight hours.',
+      es: 'Estoy cansado después de ocho horas.',
+      motivo: SIN_TEMA('tired', 'El abuelo del episodio 17 trabaja ocho horas y nunca dice esta palabra.'),
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-240', 'hungry', 'con hambre', 'adjetivo', 'HUN-gry',
+    [c('I am hungry', 'tengo hambre'), c('hungry children', 'niños con hambre'), c('very hungry', 'con mucha hambre')],
+    {
+      target: 'I am hungry. Is there bread?',
+      es: 'Tengo hambre. ¿Hay pan?',
+      motivo: SIN_TEMA('hungry', 'El bloque de comida entero se escribió sin poder decir «tengo hambre».'),
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-241', 'thirsty', 'con sed', 'adjetivo', 'THIRS-ty',
+    [c('I am thirsty', 'tengo sed'), c('thirsty after football', 'con sed después del fútbol'), c('very thirsty', 'con mucha sed')],
+    {
+      target: 'I am thirsty. I want water.',
+      es: 'Tengo sed. Quiero agua.',
+      motivo: SIN_TEMA('thirsty', 'Va con «hungry»: son la pareja con la que se pide de comer y de beber.'),
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-242', 'happy', 'contento / feliz', 'adjetivo', 'HAP-py',
+    [c('a happy face', 'una cara alegre'), c('happy with the job', 'contento con el trabajo'), c('very happy', 'muy contento')],
+    {
+      target: 'She is happy with her new job.',
+      es: 'Está contenta con su trabajo nuevo.',
+      motivo: SIN_TEMA('happy', 'Ninguno de los cuatro personajes dice nunca cómo se siente.'),
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-243', 'sad', 'triste', 'adjetivo', 'sad',
+    [c('a sad day', 'un día triste'), c('sad about the shop', 'triste por lo del local'), c('a sad film', 'una película triste')],
+    {
+      target: 'He is sad today. His dog is sick.',
+      es: 'Hoy está triste. Su perro está enfermo.',
+      motivo: SIN_TEMA('sad', 'Es la otra mitad de «happy»: sin las dos no se puede contestar «¿cómo estás?».'),
+    },
+    { tipo: 'otro' }),
+]
+
+// ─── Unidad 3 · Los sentidos y el tiempo que hace ─────────────────────────────
+
+const b5unidad3: VocabEntry[] = [
+  en('en-a1-244', 'feel', 'sentirse', 'verbo', 'feel',
+    [c('how do you feel?', '¿cómo te sientes?'), c('feel tired', 'sentirse cansado'), c('feel better', 'sentirse mejor')],
+    {
+      target: 'I feel tired today.',
+      es: 'Hoy me siento cansado.',
+      motivo: SIN_TEMA('feel', 'Es el verbo con el que se usa todo lo demás de esta unidad.'),
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-245', 'hear', 'oír', 'verbo', 'hear',
+    [c('can you hear it?', '¿lo oyes?'), c('hear the music', 'oír la música'), c('I can’t hear you', 'no te oigo')],
+    { target: 'Somebody is singing. Can you hear it?', es: 'Alguien está cantando. ¿Lo oyes?', episodio: 16 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-246', 'see', 'ver', 'verbo', 'see',
+    [c('I can see the park', 'veo el parque'), c('see you tomorrow', 'hasta mañana'), c('see the doctor', 'ver al médico')],
+    {
+      target: 'I can see the park from my window.',
+      es: 'Veo el parque desde mi ventana.',
+      motivo: SIN_TEMA('see', 'Sí aparece en «Do you want to see inside?», pero esa frase ya enseña dos palabras.'),
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-247', 'smell', 'olor', 'sustantivo', 'smell',
+    [c('the smell of bread', 'el olor a pan'), c('a good smell', 'un buen olor'), c('I miss the smell', 'echo de menos el olor')],
+    { target: 'I miss the smell. I don’t miss the hours.', es: 'Echo de menos el olor. No echo de menos el horario.', episodio: 9 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-248', 'miss', 'echar de menos', 'verbo', 'miss',
+    [c('miss the bakery', 'echar de menos la panadería'), c('miss your family', 'echar de menos a tu familia'), c('I don’t miss it', 'no lo echo de menos')],
+    { target: 'Five! Do you miss it?', es: '¡Las cinco! ¿La echas de menos?', episodio: 9 },
+    { tipo: 'verbo' }),
+
+  en('en-a1-249', 'hot', 'caluroso / caliente', 'adjetivo', 'hot',
+    [c('it’s hot today', 'hoy hace calor'), c('hot coffee', 'café caliente'), c('a hot city', 'una ciudad calurosa')],
+    { target: 'In Cartagena it’s hot every day.', es: 'En Cartagena hace calor todos los días.', episodio: 14 },
+    { tipo: 'otro' }),
+
+  en('en-a1-250', 'windy', 'con viento', 'adjetivo', 'WIN-dy',
+    [c('cold and windy', 'frío y con viento'), c('a windy day', 'un día de viento'), c('windy in November', 'con viento en noviembre')],
+    { target: 'In November it’s cold and windy.', es: 'En noviembre hace frío y viento.', episodio: 14 },
+    { tipo: 'otro' }),
+
+  en('en-a1-251', 'snow', 'nieve', 'sustantivo', 'snow',
+    [c('there’s snow', 'hay nieve'), c('snow in winter', 'nieve en invierno'), c('a lot of snow', 'mucha nieve')],
+    { target: 'It’s colder. Sometimes there’s snow.', es: 'Hace más frío. A veces hay nieve.', episodio: 14 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-252', 'rain', 'llover / lluvia', 'verbo', 'rain',
+    [c('if it rains', 'si llueve'), c('it rains every day', 'llueve todos los días'), c('a lot of rain', 'mucha lluvia')],
+    {
+      target: 'If it rains, the picnic will move to Mia’s flat at 24 King Street.',
+      es: 'Si llueve, el picnic se traslada al apartamento de Mia, en el 24 de King Street.',
+      lectura: 'en-a1-birthday-party-invite',
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-253', 'weather', 'tiempo (clima)', 'sustantivo', 'WEA-ther',
+    [c('the weather is cold', 'hace frío'), c('good weather', 'buen tiempo'), c('how’s the weather?', '¿qué tiempo hace?')],
+    {
+      target: 'The weather is cold in November.',
+      es: 'En noviembre hace frío.',
+      motivo: SIN_TEMA('weather', 'El episodio 14 habla del clima entero sin usar nunca la palabra que lo nombra.'),
+    },
+    { tipo: 'sustantivo' }),
+]
+
+// ═══ BLOQUE 9 · Estudio, trabajo y dinero ═════════════════════════════════════
+//
+// Diecisiete de las treinta salen del material, y trece van redactadas. El reparto tiene una
+// explicación clara: el nivel enseña muy bien los **recados** —recoger un libro, revisar un
+// billete, guardar algo en la oficina, quedar en la biblioteca— porque las lecturas son
+// avisos y mensajes. Lo que no enseña es la **clase por dentro** («teacher», «learn»,
+// «write», «listen», «question», «homework», «exam») ni el **dinero** más allá de «I've got
+// money for the coffee»: no hay «pay», ni «buy», ni «price», ni «cheap», ni «expensive».
+//
+// Tres entradas van una banda por encima —«schedule», «owner» y «collect», las tres A2— y se
+// mantienen porque salen literalmente del episodio 10 y de los avisos del colegio.
+
+const SIN_AULA = (palabra: string, papel: string) =>
+  `«${palabra}» no aparece en el material de inglés A1. ${papel} Frase redactada con la ` +
+  `gramática del nivel y marcada para volver a enlazarla cuando el corpus la cubra.`
+
+// ─── Unidad 1 · En clase ──────────────────────────────────────────────────────
+
+const b9unidad1: VocabEntry[] = [
+  en('en-a1-254', 'class', 'clase', 'sustantivo', 'class',
+    [c('the English class', 'la clase de inglés'), c('after class', 'después de clase'), c('a class at nine', 'una clase a las nueve')],
+    {
+      target: 'A blue backpack was found near Room 4 after the English class.',
+      es: 'Se encontró una mochila azul cerca del Aula 4 después de la clase de inglés.',
+      lectura: 'en-a1-lost-and-found-message',
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-255', 'teacher', 'profesor / profesora', 'sustantivo', 'TEA-cher',
+    [c('ask the teacher', 'pregúntale al profesor'), c('an English teacher', 'un profesor de inglés'), c('a good teacher', 'un buen profesor')],
+    {
+      target: 'My teacher is from Colombia.',
+      es: 'Mi profesora es de Colombia.',
+      motivo: SIN_AULA('teacher', 'El nivel enseña «teach» y «student» pero nunca nombra al que enseña.'),
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-256', 'learn', 'aprender', 'verbo', 'learn',
+    [c('learn English', 'aprender inglés'), c('learn a new word', 'aprender una palabra nueva'), c('learn at school', 'aprender en el colegio')],
+    {
+      target: 'I want to learn English this year.',
+      es: 'Quiero aprender inglés este año.',
+      motivo: SIN_AULA('learn', 'Es lo que hace el estudiante que usa esta página, y no está en el material.'),
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-257', 'write', 'escribir', 'verbo', 'write',
+    [c('write a message', 'escribir un mensaje'), c('write your name', 'escribe tu nombre'), c('write in English', 'escribir en inglés')],
+    {
+      target: 'Please write your name on the card.',
+      es: 'Escribe tu nombre en la tarjeta, por favor.',
+      motivo: SIN_AULA('write', 'El nivel tiene «read» pero no su pareja.'),
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-258', 'listen', 'escuchar', 'verbo', 'LIS-ten',
+    [c('listen to the teacher', 'escuchar al profesor'), c('listen to music', 'escuchar música'), c('listen again', 'escúchalo otra vez')],
+    {
+      target: 'Listen to the music and answer.',
+      es: 'Escucha la música y responde.',
+      motivo: SIN_AULA('listen', 'El nivel tiene «hear» —oír sin querer— pero no «listen», que es escuchar a propósito.'),
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-259', 'question', 'pregunta', 'sustantivo', 'QUES-tion',
+    [c('ask a question', 'hacer una pregunta'), c('a good question', 'una buena pregunta'), c('answer the question', 'responder a la pregunta')],
+    {
+      target: 'Can I ask a question about the exam?',
+      es: '¿Puedo hacer una pregunta sobre el examen?',
+      motivo: SIN_AULA('question', 'El nivel enseña «answer» y «ask» pero no el sustantivo que las une.'),
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-260', 'homework', 'deberes / tarea', 'sustantivo', 'HOME-work',
+    [c('do your homework', 'haz los deberes'), c('homework for Monday', 'deberes para el lunes'), c('a lot of homework', 'muchos deberes')],
+    {
+      target: 'I do my homework after dinner.',
+      es: 'Hago los deberes después de cenar.',
+      motivo: SIN_AULA('homework', 'Es la palabra con la que un estudiante organiza su semana.'),
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-261', 'exam', 'examen', 'sustantivo', 'ex-AM',
+    [c('an English exam', 'un examen de inglés'), c('the exam is on Friday', 'el examen es el viernes'), c('study for the exam', 'estudiar para el examen')],
+    {
+      target: 'The English exam is on Friday morning.',
+      es: 'El examen de inglés es el viernes por la mañana.',
+      motivo: SIN_AULA('exam', 'La academia entera prepara exámenes y el nivel no dice la palabra.'),
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-262', 'ready', 'listo / preparado', 'adjetivo', 'REA-dy',
+    [c('the book is ready', 'el libro está listo'), c('ready for the exam', 'listo para el examen'), c('are you ready?', '¿estás listo?')],
+    {
+      target: 'Hi Leo, your English book is ready at the library.',
+      es: 'Hola Leo, tu libro de inglés está listo en la biblioteca.',
+      lectura: 'en-a1-library-book-message',
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-263', 'message', 'mensaje', 'sustantivo', 'MES-sage',
+    [c('a short message', 'un mensaje corto'), c('read the message', 'leer el mensaje'), c('send a message', 'mandar un mensaje')],
+    {
+      target: 'Emma reads a short message from her sister.',
+      es: 'Emma lee un mensaje corto de su hermana.',
+      lectura: 'en-a1-my-morning-at-the-cafe',
+    },
+    { tipo: 'sustantivo' }),
+]
+
+// ─── Unidad 2 · En el trabajo ─────────────────────────────────────────────────
+
+const b9unidad2: VocabEntry[] = [
+  en('en-a1-264', 'schedule', 'horario', 'sustantivo', 'SCHE-dule',
+    [c('a perfect schedule', 'un horario perfecto'), c('the bus schedule', 'el horario del autobús'), c('a busy schedule', 'un horario apretado')],
+    { target: 'That’s a perfect schedule.', es: 'Ese horario es perfecto.', episodio: 10 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-265', 'perfect', 'perfecto', 'adjetivo', 'PER-fect',
+    [c('a perfect day', 'un día perfecto'), c('perfect for me', 'perfecto para mí'), c('perfect English', 'un inglés perfecto')],
+    { target: 'That’s a perfect schedule.', es: 'Ese horario es perfecto.', episodio: 10 },
+    { tipo: 'otro' }),
+
+  en('en-a1-266', 'meeting', 'reunión', 'sustantivo', 'MEE-ting',
+    [c('a meeting at four', 'una reunión a las cuatro'), c('meeting at the library', 'quedada en la biblioteca'), c('after the meeting', 'después de la reunión')],
+    { target: 'We’re meeting at the library at four.', es: 'Quedamos en la biblioteca a las cuatro.', episodio: 18 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-267', 'team', 'equipo', 'sustantivo', 'team',
+    [c('the kitchen team', 'el equipo de cocina'), c('a good team', 'un buen equipo'), c('work in a team', 'trabajar en equipo')],
+    {
+      target: 'Ask the kitchen team about allergies before you choose.',
+      es: 'Pregunta al equipo de cocina por las alergias antes de elegir.',
+      lectura: 'en-a1-lunch-menu',
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-268', 'talk', 'hablar', 'verbo', 'talk',
+    [c('talk about school', 'hablar del colegio'), c('talk to the teacher', 'hablar con el profesor'), c('we talk every day', 'hablamos todos los días')],
+    {
+      target: 'A man is waiting at the counter, and two students are talking about school.',
+      es: 'Un hombre espera en el mostrador y dos estudiantes hablan del colegio.',
+      lectura: 'en-a1-my-morning-at-the-cafe',
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-269', 'check', 'revisar / comprobar', 'verbo', 'check',
+    [c('check your ticket', 'revisa tu billete'), c('check the schedule', 'mirar el horario'), c('check before you go', 'compruébalo antes de ir')],
+    {
+      target: 'Please check your ticket before you walk downstairs.',
+      es: 'Revisa tu billete antes de bajar las escaleras.',
+      lectura: 'en-a1-train-platform-sign',
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-270', 'keep', 'guardar', 'verbo', 'keep',
+    [c('keep it until Friday', 'guardarlo hasta el viernes'), c('keep your card', 'guarda tu carné'), c('keep the message', 'guardar el mensaje')],
+    {
+      target: 'If nobody collects it today, the office will keep it until Friday.',
+      es: 'Si nadie lo recoge hoy, la oficina lo guardará hasta el viernes.',
+      lectura: 'en-a1-lost-and-found-message',
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-271', 'owner', 'dueño / dueña', 'sustantivo', 'OW-ner',
+    [c('the owner of the shop', 'el dueño del local'), c('the owner can collect it', 'el dueño puede recogerlo'), c('a new owner', 'un dueño nuevo')],
+    {
+      target: 'The owner can collect it from the school office before four o’clock today.',
+      es: 'El dueño puede recogerlo en la secretaría del colegio antes de las cuatro.',
+      lectura: 'en-a1-lost-and-found-message',
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-272', 'collect', 'recoger', 'verbo', 'col-LECT',
+    [c('collect the book', 'recoger el libro'), c('collect it after school', 'recogerlo después del colegio'), c('collect paper', 'recoger papel')],
+    {
+      target: 'You can collect it after school today.',
+      es: 'Puedes recogerlo hoy después del colegio.',
+      lectura: 'en-a1-library-book-message',
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-273', 'free', 'libre / gratis', 'adjetivo', 'free',
+    [c('I’m free in the afternoon', 'por la tarde estoy libre'), c('free for children', 'gratis para niños'), c('a free class', 'una clase gratis')],
+    {
+      target: 'The first class is free for students.',
+      es: 'La primera clase es gratis para los estudiantes.',
+      motivo: SIN_AULA('free', 'Sí se dice en el episodio 18, pero esa frase ya enseña «morning» y «afternoon».'),
+    },
+    { tipo: 'otro' }),
+]
+
+// ─── Unidad 3 · El dinero y los recados ───────────────────────────────────────
+
+const b9unidad3: VocabEntry[] = [
+  en('en-a1-274', 'money', 'dinero', 'sustantivo', 'MO-ney',
+    [c('money for the coffee', 'dinero para el café'), c('I haven’t got money', 'no tengo dinero'), c('a lot of money', 'mucho dinero')],
+    { target: 'I’ve got money for the coffee.', es: 'Yo tengo dinero para el café.', episodio: 11 },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-275', 'cost', 'costar', 'verbo', 'cost',
+    [c('how much does it cost?', '¿cuánto cuesta?'), c('it costs two pounds', 'cuesta dos libras'), c('costs a lot', 'cuesta mucho')],
+    {
+      target: 'A ticket costs two pounds.',
+      es: 'Un billete cuesta dos libras.',
+      lectura: 'en-a1-saturday-bus-guide',
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-276', 'pay', 'pagar', 'verbo', 'pay',
+    [c('pay for the ticket', 'pagar el billete'), c('pay at the counter', 'pagar en el mostrador'), c('pay every month', 'pagar todos los meses')],
+    {
+      target: 'I pay for the coffee every morning.',
+      es: 'Pago el café todas las mañanas.',
+      motivo: SIN_AULA('pay', 'Hay una compra entera en el episodio 11 y nadie paga.'),
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-277', 'buy', 'comprar', 'verbo', 'buy',
+    [c('buy bread', 'comprar pan'), c('buy a ticket', 'comprar un billete'), c('buy clothes', 'comprar ropa')],
+    {
+      target: 'We buy bread and milk on Saturdays.',
+      es: 'Compramos pan y leche los sábados.',
+      motivo: SIN_AULA('buy', 'La lista de la compra del episodio 11 se hace sin decir «comprar».'),
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-278', 'price', 'precio', 'sustantivo', 'price',
+    [c('a good price', 'un buen precio'), c('the price of the class', 'el precio de la clase'), c('ask the price', 'preguntar el precio')],
+    {
+      target: 'The price is on the blue card.',
+      es: 'El precio está en la tarjeta azul.',
+      motivo: SIN_AULA('price', 'Sin ella no se puede preguntar cuánto cuesta nada.'),
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-279', 'cheap', 'barato', 'adjetivo', 'cheap',
+    [c('a cheap ticket', 'un billete barato'), c('cheap food', 'comida barata'), c('very cheap', 'muy barato')],
+    {
+      target: 'The bus is cheap. The train is not.',
+      es: 'El autobús es barato. El tren no.',
+      motivo: SIN_AULA('cheap', 'Es la mitad de la pareja con la que se compara cualquier precio.'),
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-280', 'expensive', 'caro', 'adjetivo', 'ex-PEN-sive',
+    [c('an expensive jacket', 'una chaqueta cara'), c('very expensive', 'muy caro'), c('too expensive for me', 'demasiado caro para mí')],
+    {
+      target: 'This jacket is expensive. I want the black one.',
+      es: 'Esta chaqueta es cara. Quiero la negra.',
+      motivo: SIN_AULA('expensive', 'La otra mitad de «cheap».'),
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-281', 'text', 'mandar un mensaje', 'verbo', 'text',
+    [c('text her before Friday', 'mándale un mensaje antes del viernes'), c('text a friend', 'escribir a un amigo'), c('text me tomorrow', 'mándame un mensaje mañana')],
+    {
+      target: 'Please text her before Friday to say if you can come.',
+      es: 'Mándale un mensaje antes del viernes para decirle si puedes venir.',
+      lectura: 'en-a1-birthday-party-invite',
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-282', 'game', 'juego', 'sustantivo', 'game',
+    [c('a small game', 'un juego pequeño'), c('play a game', 'jugar a un juego'), c('a game for children', 'un juego para niños')],
+    {
+      target: 'You can bring a small game if you like.',
+      es: 'Puedes traer un juego pequeño si quieres.',
+      lectura: 'en-a1-birthday-party-invite',
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-283', 'adult', 'adulto', 'sustantivo', 'A-dult',
+    [c('come with an adult', 'venir con un adulto'), c('adults and children', 'adultos y niños'), c('classes for adults', 'clases para adultos')],
+    {
+      target: 'Children must come with an adult.',
+      es: 'Los niños tienen que venir con un adulto.',
+      lectura: 'en-a1-park-cleanup-poster',
+    },
+    { tipo: 'sustantivo' }),
+]
+
+// ═══ BLOQUE 10 · Cortesía y supervivencia ═════════════════════════════════════
+//
+// El bloque que no existe en ningún otro idioma del sitio, y el que de verdad permite
+// sobrevivir a una conversación: saludar, pedir, disculparse y —sobre todo— decir que no se
+// ha entendido.
+//
+// Quince salen del material y quince van redactadas, y el corte es revelador: **las palabras
+// que unen frases sí están** («but», «because», «if», «why», «what», «who», «when», «very»,
+// «too», «enough», «of course», «really»), porque los personajes conversan de verdad. **Las
+// fórmulas de cortesía no**: en veinte episodios nadie dice «thank you», ni «sorry», ni
+// «goodbye», ni «I don’t understand». Es lo normal en una serie —los guiones cortan el
+// relleno social— y es justo lo que un estudiante necesita el primer día.
+//
+// «excuse me» se quedó fuera: el Oxford 3000 sitúa «excuse» en B2. Su función la cubren
+// «sorry» y «please».
+
+const SIN_CORTESIA = (palabra: string, papel: string) =>
+  `«${palabra}» no aparece en el material de inglés A1: en veinte episodios nadie usa las ` +
+  `fórmulas de cortesía, porque un guion corta el relleno social. ${papel} Frase redactada ` +
+  `con la gramática del nivel y marcada para volver a enlazarla si el corpus la cubre.`
+
+// ─── Unidad 1 · Saludar y ser amable ──────────────────────────────────────────
+
+const b10unidad1: VocabEntry[] = [
+  en('en-a1-284', 'hello', 'hola', 'expresion', 'hel-LO',
+    [c('hello, my name is…', 'hola, me llamo…'), c('say hello to your sister', 'salúdame a tu hermana'), c('hello and goodbye', 'hola y adiós')],
+    {
+      target: 'Hello, I am the new student.',
+      es: 'Hola, soy el estudiante nuevo.',
+      motivo: SIN_CORTESIA('hello', 'Sí se dice en el episodio 1, pero esa frase ya enseña «name» y «year».'),
+    },
+    { tipo: 'otro' }, 'neutro'),
+
+  en('en-a1-285', 'hi', 'hola (informal)', 'expresion', 'hi',
+    [c('hi, are you new here?', 'hola, ¿eres nuevo aquí?'), c('hi Leo', 'hola, Leo'), c('say hi to Ana', 'saluda a Ana')],
+    { target: 'Hi! Are you new here? I’m Leo.', es: '¡Hola! ¿Eres nueva aquí? Soy Leo.', episodio: 1 },
+    { tipo: 'otro' }, 'informal'),
+
+  en('en-a1-286', 'please', 'por favor', 'expresion', 'please',
+    [c('bring your card, please', 'trae tu carné, por favor'), c('coffee, please', 'un café, por favor'), c('please write your name', 'escribe tu nombre, por favor')],
+    {
+      target: 'Please bring your student card.',
+      es: 'Trae tu carné de estudiante, por favor.',
+      lectura: 'en-a1-library-book-message',
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-287', 'thanks', 'gracias', 'expresion', 'thanks',
+    [c('thanks a lot', 'muchas gracias'), c('thanks for the coffee', 'gracias por el café'), c('no, thanks', 'no, gracias')],
+    {
+      target: 'Thanks for the bread, Grandpa.',
+      es: 'Gracias por el pan, abuelo.',
+      motivo: SIN_CORTESIA('thanks', 'Es la primera palabra que aprende cualquiera en cualquier idioma.'),
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-288', 'sorry', 'perdón / lo siento', 'expresion', 'SO-rry',
+    [c('sorry, I don’t understand', 'perdón, no entiendo'), c('I’m sorry', 'lo siento'), c('sorry, I’m late', 'perdón, llego tarde')],
+    {
+      target: 'Sorry, I am late for the class.',
+      es: 'Perdón, llego tarde a clase.',
+      motivo: SIN_CORTESIA('sorry', 'Cubre también la función de «excuse me», que el Oxford 3000 sitúa en B2.'),
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-289', 'goodbye', 'adiós', 'expresion', 'good-BYE',
+    [c('goodbye, see you tomorrow', 'adiós, hasta mañana'), c('say goodbye', 'despedirse'), c('goodbye for now', 'adiós de momento')],
+    {
+      target: 'Goodbye, Leo. See you on Monday.',
+      es: 'Adiós, Leo. Nos vemos el lunes.',
+      motivo: SIN_CORTESIA('goodbye', 'Ninguno de los veinte episodios termina con una despedida.'),
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-290', 'welcome', 'bienvenido', 'expresion', 'WEL-come',
+    [c('welcome to the shop', 'bienvenido al local'), c('you’re welcome', 'de nada'), c('welcome home', 'bienvenido a casa')],
+    {
+      target: 'Welcome to the school, Maya.',
+      es: 'Bienvenida al colegio, Maya.',
+      motivo: SIN_CORTESIA('welcome', 'Sirve para recibir y, en «you’re welcome», para responder a las gracias.'),
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-291', 'yes', 'sí', 'expresion', 'yes',
+    [c('yes, of course', 'sí, claro'), c('yes, please', 'sí, por favor'), c('yes, I can', 'sí, puedo')],
+    { target: 'Yes, but we hardly ever play in winter.', es: 'Sí, pero casi nunca jugamos en invierno.', episodio: 8 },
+    { tipo: 'otro' }),
+
+  en('en-a1-292', 'no', 'no', 'expresion', 'no',
+    [c('no, thanks', 'no, gracias'), c('no, I can’t', 'no, no puedo'), c('no problem', 'no hay problema')],
+    {
+      target: 'No, thanks. I am not hungry today.',
+      es: 'No, gracias. Hoy no tengo hambre.',
+      motivo: SIN_CORTESIA('no', 'Aparece dentro de frases pero nunca sola, que es como se contesta.'),
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-293', 'sure', 'claro / vale', 'expresion', 'sure',
+    [c('sure, no problem', 'claro, sin problema'), c('are you sure?', '¿seguro?'), c('sure, I can help', 'claro, puedo ayudar')],
+    {
+      target: 'Sure, I can help you tomorrow.',
+      es: 'Claro, te puedo ayudar mañana.',
+      motivo: SIN_CORTESIA('sure', 'Es la manera normal de decir que sí sin decir «yes».'),
+    },
+    { tipo: 'otro' }, 'informal'),
+]
+
+// ─── Unidad 2 · Cuando no entiendo ────────────────────────────────────────────
+
+const b10unidad2: VocabEntry[] = [
+  en('en-a1-294', 'understand', 'entender', 'verbo', 'un-der-STAND',
+    [c('I don’t understand', 'no entiendo'), c('do you understand?', '¿entiendes?'), c('understand the question', 'entender la pregunta')],
+    {
+      target: 'Sorry, I don’t understand the question.',
+      es: 'Perdón, no entiendo la pregunta.',
+      motivo: SIN_CORTESIA('understand', 'Es la frase que salva una conversación entera, y no está en ningún episodio.'),
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-295', 'repeat', 'repetir', 'verbo', 're-PEAT',
+    [c('can you repeat, please?', '¿puedes repetir, por favor?'), c('repeat the word', 'repite la palabra'), c('repeat it slowly', 'repítelo despacio')],
+    {
+      target: 'Can you repeat that, please?',
+      es: '¿Puedes repetirlo, por favor?',
+      motivo: SIN_CORTESIA('repeat', 'Va con «understand»: primero se dice que no se entiende, después se pide que lo repitan.'),
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-296', 'speak', 'hablar (un idioma)', 'verbo', 'speak',
+    [c('speak English', 'hablar inglés'), c('speak slowly, please', 'habla despacio, por favor'), c('I speak a little', 'hablo un poco')],
+    {
+      target: 'I speak a little English.',
+      es: 'Hablo un poco de inglés.',
+      motivo: SIN_CORTESIA('speak', 'El nivel enseña «talk» —charlar— pero no «speak», que es el de los idiomas.'),
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-297', 'mean', 'significar', 'verbo', 'mean',
+    [c('what does it mean?', '¿qué significa?'), c('I mean the blue one', 'me refiero al azul'), c('what do you mean?', '¿qué quieres decir?')],
+    {
+      target: 'What does this word mean?',
+      es: '¿Qué significa esta palabra?',
+      motivo: SIN_CORTESIA('mean', 'Es la pregunta con la que se sale de cualquier palabra desconocida.'),
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-298', 'help', 'ayudar / ayuda', 'verbo', 'help',
+    [c('can you help me?', '¿me puedes ayudar?'), c('help with the bags', 'ayudar con las bolsas'), c('I need help', 'necesito ayuda')],
+    {
+      target: 'Can you help me, please?',
+      es: '¿Me puedes ayudar, por favor?',
+      motivo: SIN_CORTESIA('help', 'Nadie pide ayuda en los veinte episodios.'),
+    },
+    { tipo: 'verbo' }),
+
+  en('en-a1-299', 'maybe', 'quizá / a lo mejor', 'adverbio', 'MAY-be',
+    [c('maybe tomorrow', 'quizá mañana'), c('maybe not', 'a lo mejor no'), c('maybe on Sunday', 'quizá el domingo')],
+    {
+      target: 'Maybe I can come on Sunday.',
+      es: 'A lo mejor puedo venir el domingo.',
+      motivo: SIN_CORTESIA('maybe', 'Sirve para no comprometerse, que en A1 hace falta a diario.'),
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-300', 'course', 'claro (of course)', 'expresion', 'course',
+    [c('of course', 'claro'), c('of course I can', 'claro que puedo'), c('yes, of course', 'sí, por supuesto')],
+    { target: 'Of course. It’s always the banana cake.', es: 'Claro. Siempre es el pastel de banano.', episodio: 11 },
+    { tipo: 'otro' }),
+
+  en('en-a1-301', 'really', '¿de verdad? / realmente', 'adverbio', 'REA-lly',
+    [c('really? I don’t believe it', '¿de verdad? no me lo creo'), c('really good', 'muy bueno'), c('do you really work here?', '¿de verdad trabajas aquí?')],
+    { target: 'Really? And your parents?', es: '¿En serio? ¿Y tus padres?', episodio: 2 },
+    { tipo: 'otro' }),
+
+  en('en-a1-302', 'too', 'también / demasiado', 'adverbio', 'too',
+    [c('me too', 'yo también'), c('too expensive', 'demasiado caro'), c('my cat too', 'mi gato también')],
+    { target: 'My sister is a waitress too. She’s at the bakery.', es: 'Mi hermana también es camarera. Está en la panadería.', episodio: 1 },
+    { tipo: 'otro' }),
+
+  en('en-a1-303', 'very', 'muy', 'adverbio', 'VE-ry',
+    [c('very good', 'muy bueno'), c('very little coffee', 'muy poco café'), c('very tired', 'muy cansado')],
+    { target: 'We haven’t got any eggs. And we’ve got very little coffee.', es: 'No nos quedan huevos. Y tenemos muy poco café.', episodio: 11 },
+    { tipo: 'otro' }),
+]
+
+// ─── Unidad 3 · Las palabras que unen ─────────────────────────────────────────
+
+const b10unidad3: VocabEntry[] = [
+  en('en-a1-304', 'but', 'pero', 'conector', 'but',
+    [c('cheap but good', 'barato pero bueno'), c('yes, but not today', 'sí, pero hoy no'), c('small but nice', 'pequeño pero bonito')],
+    { target: 'Yes, but we hardly ever play in winter.', es: 'Sí, pero casi nunca jugamos en invierno.', episodio: 8 },
+    { tipo: 'otro' }),
+
+  en('en-a1-305', 'because', 'porque', 'conector', 'be-CAUSE',
+    [c('because there is little shade', 'porque hay poca sombra'), c('because I am tired', 'porque estoy cansado'), c('why? because…', '¿por qué? porque…')],
+    {
+      target: 'Please arrive at eleven and bring a hat because there is little shade.',
+      es: 'Llega a las once y trae un sombrero, porque hay poca sombra.',
+      lectura: 'en-a1-birthday-party-invite',
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-306', 'if', 'si (condición)', 'conector', 'if',
+    [c('if it rains', 'si llueve'), c('if you like', 'si quieres'), c('if you need help', 'si necesitas ayuda')],
+    {
+      target: 'Bring gloves if you have them.',
+      es: 'Trae guantes si tienes.',
+      lectura: 'en-a1-park-cleanup-poster',
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-307', 'why', 'por qué', 'pronombre', 'why',
+    [c('why not?', '¿por qué no?'), c('that’s why', 'por eso'), c('why do you work here?', '¿por qué trabajas aquí?')],
+    { target: 'You live next to the school. That’s why.', es: 'Vives al lado del colegio. Por eso.', episodio: 6 },
+    { tipo: 'otro' }),
+
+  en('en-a1-308', 'what', 'qué', 'pronombre', 'what',
+    [c('what’s your name?', '¿cómo te llamas?'), c('what time is it?', '¿qué hora es?'), c('what do you want?', '¿qué quieres?')],
+    { target: 'What’s on the shelves?', es: '¿Qué hay en los estantes?', episodio: 3 },
+    { tipo: 'otro' }),
+
+  en('en-a1-309', 'who', 'quién', 'pronombre', 'who',
+    [c('who is that?', '¿quién es ese?'), c('who is coming?', '¿quién viene?'), c('who works here?', '¿quién trabaja aquí?')],
+    { target: 'Who is the man with the hat?', es: '¿Quién es el hombre del sombrero?', episodio: 2 },
+    { tipo: 'otro' }),
+
+  en('en-a1-310', 'when', 'cuándo', 'pronombre', 'when',
+    // Nada de «when do you leave?»: es el ejemplo entero y deja la caja 5 sin salida.
+    [c('when is the class?', '¿cuándo es la clase?'), c('when you arrive', 'cuando llegues'), c('when does it start?', '¿cuándo empieza?')],
+    { target: 'When do you leave?', es: '¿Cuándo sales?', episodio: 6 },
+    { tipo: 'otro' }),
+
+  en('en-a1-311', 'how', 'cómo', 'pronombre', 'how',
+    [c('how are you?', '¿cómo estás?'), c('how much is it?', '¿cuánto es?'), c('how do you say it?', '¿cómo se dice?')],
+    {
+      target: 'How do you say this word in English?',
+      es: '¿Cómo se dice esta palabra en inglés?',
+      motivo: SIN_CORTESIA('how', 'Sí aparece en «How do I get to the library?», pero esa frase ya enseña «library» y «get».'),
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-312', 'little', 'poco', 'adjetivo', 'LIT-tle',
+    [c('very little coffee', 'muy poco café'), c('a little English', 'un poco de inglés'), c('little shade', 'poca sombra')],
+    {
+      target: 'There is little bread at home.',
+      es: 'Queda poco pan en casa.',
+      motivo: SIN_CORTESIA('little', 'Sus dos frases del material ya estaban ocupadas por «coffee» y por «hat».'),
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-313', 'enough', 'suficiente / basta', 'adjetivo', 'e-NOUGH',
+    [c('that’s enough for me', 'con eso me basta'), c('enough money', 'dinero suficiente'), c('two hours is enough', 'con dos horas basta')],
+    { target: 'They’re comfortable. That’s enough for me.', es: 'Son cómodos. Con eso me basta.', episodio: 13 },
+    { tipo: 'otro' }),
+]
+
 export const INGLES_A1: VocabLevel = {
   lang: 'ingles',
   nivel: 'a1',
@@ -1601,7 +2420,20 @@ export const INGLES_A1: VocabLevel = {
       'bloque de ropa sin bufanda no cubre el invierno; (c) «shoes» y «café», que NO son ' +
       'ausencias: la lista recoge «shoe» y «cafe» en A1 y la diferencia es solo el plural y la ' +
       'tilde. Se dejan como están porque es la forma que se oye en la serie. ' +
-      'La lista NO vive en el repo —tiene derechos— y se cruza pasándola con --lista.',
+      'La lista NO vive en el repo —tiene derechos— y se cruza pasándola con --lista. ' +
+      // ── Nivel cerrado, 9 ago 2026 ───────────────────────────────────────────
+      'NIVEL COMPLETO, 9 ago 2026: 310 entradas en diez bloques, 286 en banda A1 (92 %). Los ' +
+      'bloques 5, 9 y 10 añaden cinco excepciones nuevas a las ya listadas. Cuatro van una ' +
+      'banda por encima y se mantienen porque salen literalmente del material: «smell» (A2, ' +
+      'episodio 9), «schedule» (A2, episodio 10), «owner» y «collect» (A2, avisos del colegio). ' +
+      'La quinta, «windy», no está en la lista en ningún nivel —sí está «wind»— y se mantiene ' +
+      'porque es como se dice el tiempo en el episodio 14, que es la lección de clima del ' +
+      'nivel. Es el mismo caso que «waitress» frente a «waiter». ' +
+      'La cobertura del nivel baja del 91 % al 78 % con estos tres bloques, y es a propósito: ' +
+      'el bloque 5 lleva 22 ejemplos redactados y el 10 lleva 15, porque el material no trata ' +
+      'ni el cuerpo ni las fórmulas de cortesía. Decisión del usuario del 9 ago 2026, con la ' +
+      'condición de volver a enlazarlos cuando el corpus crezca. Se encuentran todos con ' +
+      'grep -n "motivo:" sobre este archivo.',
   },
   bloques: [
     {
@@ -1645,6 +2477,24 @@ export const INGLES_A1: VocabLevel = {
       nombre: 'Rutina diaria y acciones',
       icono: '🔁',
       entradas: [...b8unidad1, ...b8unidad2, ...b8unidad3],
+    },
+    {
+      id: 'cuerpo-salud-y-sensaciones',
+      nombre: 'Cuerpo, salud y sensaciones',
+      icono: '🧍',
+      entradas: [...b5unidad1, ...b5unidad2, ...b5unidad3],
+    },
+    {
+      id: 'estudio-trabajo-y-dinero',
+      nombre: 'Estudio, trabajo y dinero',
+      icono: '💼',
+      entradas: [...b9unidad1, ...b9unidad2, ...b9unidad3],
+    },
+    {
+      id: 'cortesia-y-supervivencia',
+      nombre: 'Cortesía y supervivencia',
+      icono: '🙏',
+      entradas: [...b10unidad1, ...b10unidad2, ...b10unidad3],
     },
   ],
 }

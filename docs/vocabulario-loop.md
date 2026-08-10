@@ -65,7 +65,7 @@ traen las capas de raíz y de acento.
 
 | # | Fase | Estado |
 |---|---|---|
-| 1 | **inglés A1** | 🔨 en curso — 220/300, bloques 1-4 y 6-8 hechos · el 5 parado (§3) |
+| 1 | **inglés A1** | ✅ contenido terminado — 310/300, los diez bloques · faltan las auditorías 5.2 y 5.3 |
 | 2 | inglés A2 | pendiente |
 | 3 | inglés B1 | pendiente |
 | 4 | alemán A1 | pendiente |
@@ -92,23 +92,48 @@ con la anterior sin cerrar.
 > **Este apartado se actualiza al final de cada vuelta.** Es el único estado que el loop
 > necesita para saber por dónde va.
 
-**Fase 1 · inglés A1 — 220 de 300**
+**Fase 1 · inglés A1 — 310 de 300. CONTENIDO TERMINADO.**
 
-| Bloque | Palabras | Estado |
-|---|---|---|
-| 1 · Yo y mi gente | 40 | ✅ |
-| 2 · Números, hora y calendario | 30 | ✅ |
-| 3 · Casa y objetos cotidianos | 30 | ✅ |
-| 4 · Comida y bebida | 30 | ✅ |
-| 5 · Cuerpo, salud y sensaciones | 30 | ⬜ **siguiente** — desbloqueado, ver abajo |
-| 6 · Ropa, colores y describir | 30 | ✅ |
-| 7 · Ciudad, lugares y direcciones | 30 | ✅ |
-| 8 · Rutina diaria y acciones | 30 | ✅ |
-| 9 · Estudio y trabajo | 30 | ⬜ |
-| 10 · Cortesía y supervivencia | 30 | ⬜ |
+| Bloque | Palabras | Del material | Estado |
+|---|---:|---:|---|
+| 1 · Yo y mi gente | 40 | 37 | ✅ |
+| 2 · Números, hora y calendario | 30 | 30 | ✅ |
+| 3 · Casa y objetos cotidianos | 30 | 30 | ✅ |
+| 4 · Comida y bebida | 30 | 27 | ✅ |
+| 5 · Cuerpo, salud y sensaciones | 30 | 8 | ✅ |
+| 6 · Ropa, colores y describir | 30 | 25 | ✅ |
+| 7 · Ciudad, lugares y direcciones | 30 | 28 | ✅ |
+| 8 · Rutina diaria y acciones | 30 | 30 | ✅ |
+| 9 · Estudio, trabajo y dinero | 30 | 17 | ✅ |
+| 10 · Cortesía y supervivencia | 30 | 15 | ✅ |
+| | **310** | **241 (78 %)** | |
 
-El bloque 10 no existe hoy en ningún idioma y es el que permite sobrevivir a una conversación:
-saludar, pedir, disculparse, decir «no entiendo».
+**Lo que toca ahora es cerrar la fase**, no escribir más contenido:
+
+1. Las cuatro auditorías del §5. La 5.1 (código y seguridad) y la 5.4 (Playwright) están
+   hechas y en verde. Faltan la **5.2 pedagógica** y la **5.3 de usuario promedio**.
+2. La revisión personal del usuario sobre las 310. Es la que desbloquea el audio.
+3. Decidir qué pasa con la página madre `/practica/ingles/a1/vocabulario`, que sigue siendo
+   la vieja de 6 sets y 60 palabras y **no enlaza ninguno de los diez bloques nuevos**. Las
+   dos cosas no pueden convivir en la misma URL.
+4. Decidir si se empuja a `main` y si sale el `noindex`.
+
+La fase 2 (inglés A2) no empieza hasta que eso esté.
+
+### Lo que este nivel enseñó sobre el corpus, y que vale para los otros 23
+
+La cobertura por bloque dibuja el mapa de lo que una serie de ficción sí cuenta y lo que no:
+
+- **30 de 30** en rutina y en objetos de casa. Los temas **transversales** —lo que los
+  personajes hacen y tocan todo el rato— se surten solos.
+- **8 de 30** en cuerpo y salud, **15 de 30** en cortesía. Los temas que un guion **no
+  necesita** no aparecen: nadie se pone enfermo, nadie da las gracias, nadie se despide.
+- Entre medias, los temas **de escena** (comida, ropa, ciudad) dependen de que exista un
+  episodio dedicado, y entonces chocan con la cuota del 34 % por episodio.
+
+Para los idiomas que vienen, esto se puede anticipar: **antes de escribir un bloque, medir
+cuántas candidatas sobreviven a abrir la frase.** Si no llegan a 18 de 30, el bloque va a
+necesitar redactados y conviene decirlo antes, no después.
 
 ### ✅ Bloque 5 — desbloqueado por el usuario el 9 ago 2026
 
@@ -405,6 +430,8 @@ sin leer commits.
 | 9 ago 2026 | inglés A1, bloque 4 | El spec de Playwright estaba fijado a `bloques[0]`: los bloques 2, 3 y 4 pasaban el validador sin que nadie los hubiera jugado nunca. Ahora recorre todos los bloques del nivel, y comprueba antes que la unidad tenga con qué salir de la caja 5 |
 | 9 ago 2026 | inglés A1, bloque 4 | Aparece un caso que la regla no preveía: una palabra que **sí** está en el material pero cuya única frase ya enseña dos. Se resolvió con ejemplo redactado y motivo explícito (`cheese`), en vez de meter una tercera en la misma frase |
 | 9 ago 2026 | inglés A1, bloque 5 | **Un tema entero puede no estar en el corpus.** No faltaban palabras sueltas: faltaba el cuerpo completo. `body`, `ear`, `ill`, `hair`, `arm`, `foot` y `pain` daban positivo y los siete eran espejismos (*nobody*, *years*, *still*, *chair*, *warm*, *football*, *paint*). Lección: antes de escribir un bloque, medir cuántas de sus candidatas sobreviven a abrir la frase — si no llegan al 60 %, el bloque no se empieza |
+| 9 ago 2026 | inglés A1, bloques 5+9+10 | Los tres de una vuelta, a petición del usuario. Otra vez la misma puerta y la misma causa: la colocación de `when` era su ejemplo entero. Van cuatro (`city`, `sign`, `then`, `when`). Es el defecto que más se repite del proyecto, y siempre lo caza el script, nunca la relectura |
+| 9 ago 2026 | inglés A1, nivel cerrado | La cobertura por bloque acabó dibujando el mapa del corpus: 30/30 en los temas transversales (rutina, casa), 8/30 en cuerpo y 15/30 en cortesía. Una serie de ficción cuenta lo que sus personajes hacen, no lo que un temario necesita. **Antes de escribir un bloque hay que contar cuántas candidatas sobreviven a abrir la frase**: por debajo de 18 de 30, el bloque va a necesitar redactados y hay que decirlo antes |
 | 9 ago 2026 | inglés A1, bloque 8 | La puerta volvió a parar el bloque por lo mismo, pero por otra causa: el ejemplo de `then` era «And then?», la frase más natural del corpus… y de dos palabras, cuando la caja 5 pide tres. La ficha proponía como modelo algo que el propio motor rechaza. Se cambió el ejemplo, no el umbral. Y sí: la regla estaba escrita desde el bloque 7 y aun así se cayó — por eso la comprueba un script y no la memoria de nadie |
 | 9 ago 2026 | inglés A1, bloque 8 | Primer bloque con **cero redactados**. Salió porque una rutina no vive en un episodio: vive repartida por los veinte. Ningún episodio pasa de tres entradas (10 %) frente al 33 % del bloque 6. Un tema transversal siempre se surtirá mejor que uno concentrado |
 | 9 ago 2026 | inglés A1, bloque 7 | La puerta paró el bloque por un callejón sin salida: la colocación de `sign` era «is there a sign?», que es el ejemplo entero. El estudiante que copiaba lo único que la ficha le enseñaba a decir era suspendido en la caja 5. Es la tercera vez que pasa (`city`, `we are friends`, ahora `sign`): **una colocación nunca puede ser la frase de ejemplo** |
