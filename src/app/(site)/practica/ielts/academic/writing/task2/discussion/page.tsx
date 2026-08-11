@@ -4,7 +4,7 @@ import IeltsTask2PromptBank from '@/components/exam-practice/IeltsTask2PromptBan
 import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
 import { IELTS_TASK2_DISCUSSION_PROMPTS } from '@/data/practica-exams/seo-catalog';
 
-import DiscussionEssayClient from './DiscussionEssayClient';
+import EssayTypePathClient from '../type-paths/EssayTypePathClient';
 
 const URL = 'https://www.idiomaswl.com/practica/ielts/academic/writing/task2/discussion';
 
@@ -29,7 +29,7 @@ const FAQS = [
 export const metadata: Metadata = {
   title: 'IELTS Writing Task 2: discussion essay con ejercicios',
   description:
-    'Practica IELTS Academic Writing Task 2 discussion essays: discuss both views, opinión propia, estructura balanceada y modelo Band 7 explicado.',
+    'Practica IELTS Academic Writing Task 2 discussion essays: discuss both views, opinión propia, estructura balanceada y modelo explicado.',
   keywords: [
     'IELTS discussion essay',
     'IELTS writing task 2 discussion',
@@ -77,15 +77,15 @@ export default function Page() {
           { name: 'Discussion essay', url: URL },
         ]}
       />
-      <DiscussionEssayClient faqs={FAQS} />
+      <EssayTypePathClient type="discussion" faqs={FAQS} />
       <section className="wl-section" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div style={{ maxWidth: 1040, margin: '0 auto' }}>
             <IeltsTask2PromptBank
               prompts={IELTS_TASK2_DISCUSSION_PROMPTS}
-              eyebrow="Banco Discussion Essay"
-              title="2 prompts originales para entrenar discussion essays"
-              intro="en esta ruta practicamos prompts discuss both views and give your own opinion con balance real, opinión visible, comparación de posturas y checklist antes de escribir el ensayo completo."
+              eyebrow="Discussion essay prompt bank"
+              title="Two original prompts to train discussion essays"
+              intro="this route trains discuss-both-views prompts: two views developed to comparable depth, an opinion that is stated rather than implied, and a checklist to run before writing the full essay."
             />
           </div>
         </div>

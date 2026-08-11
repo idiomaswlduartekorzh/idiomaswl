@@ -4,7 +4,7 @@ import IeltsTask2PromptBank from '@/components/exam-practice/IeltsTask2PromptBan
 import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
 import { IELTS_TASK2_OPINION_PROMPTS } from '@/data/practica-exams/seo-catalog';
 
-import OpinionEssayClient from './OpinionEssayClient';
+import EssayTypePathClient from '../type-paths/EssayTypePathClient';
 
 const URL = 'https://www.idiomaswl.com/practica/ielts/academic/writing/task2/opinion';
 
@@ -20,16 +20,16 @@ const FAQS = [
       'Puedes mencionar un contraargumento, pero no debes tratar ambos lados como si fuera un discussion essay. La prioridad es tomar una posición clara y defenderla en todo el ensayo.',
   },
   {
-    question: '¿Qué estructura funciona para un opinion essay Band 7+?',
+    question: '¿Qué estructura funciona para un opinion essay?',
     answer:
-      'Una estructura segura es: introducción con tesis clara, cuerpo 1 con la razón principal, cuerpo 2 con una segunda razón o refutación de contraargumento, y conclusión que reafirma la postura.',
+      'Introducción con una tesis que responda la pregunta, cuerpo 1 con la razón principal, cuerpo 2 con una segunda razón o con el contraargumento refutado, y conclusión que reafirma la misma postura. Ninguna estructura garantiza una banda: lo que se puntúa es si respondiste la pregunta que te hicieron.',
   },
 ];
 
 export const metadata: Metadata = {
   title: 'IELTS Writing Task 2: opinion essay con ejercicios',
   description:
-    'Practica IELTS Academic Writing Task 2 opinion essays: agree/disagree, tesis clara, argumentos, contraargumentos y modelo Band 7 explicado.',
+    'Practica IELTS Academic Writing Task 2 opinion essays: agree/disagree, tesis clara, argumentos, contraargumentos y un modelo explicado bloque a bloque.',
   keywords: [
     'IELTS opinion essay',
     'IELTS writing task 2 opinion',
@@ -77,15 +77,15 @@ export default function Page() {
           { name: 'Opinion essay', url: URL },
         ]}
       />
-      <OpinionEssayClient faqs={FAQS} />
+      <EssayTypePathClient type="opinion" faqs={FAQS} />
       <section className="wl-section" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div style={{ maxWidth: 1040, margin: '0 auto' }}>
             <IeltsTask2PromptBank
               prompts={IELTS_TASK2_OPINION_PROMPTS}
-              eyebrow="Banco Opinion Essay"
-              title="2 prompts originales para entrenar opinion essays"
-              intro="en esta ruta practicamos prompts agree/disagree y to what extent con tesis visible, postura sostenida, contraargumento controlado y checklist antes de escribir el ensayo completo."
+              eyebrow="Opinion essay prompt bank"
+              title="Two original prompts to train opinion essays"
+              intro="this route trains agree/disagree and to what extent prompts: a visible thesis, a position held to the end, one objection conceded and answered, and a checklist to run before writing the full essay."
             />
           </div>
         </div>

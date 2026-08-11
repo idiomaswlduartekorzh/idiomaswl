@@ -189,7 +189,7 @@ function ProductionLevel({ kind, essayType, onNext }: { kind: 'sentence' | 'intr
       <p className={styles.exerciseInstruction}>
         {kind === 'sentence' ? 'Write one thesis sentence that gives the essay a clear route.' : 'Write a complete introduction using only the blocks this prompt needs.'}
       </p>
-      <textarea
+      <textarea spellCheck={false} autoCorrect="off" autoCapitalize="off"
         className={styles.writer}
         value={value}
         onChange={(event) => { setValue(event.target.value); setReviewed(false); }}
@@ -246,7 +246,7 @@ function TimedEssayLevel({ essayType }: { essayType: EssayTypeId }) {
       </div>
       <p className={styles.exercisePrompt}>{prompt}</p>
       <p className={styles.exerciseInstruction}>Write a complete connected essay of at least 250 words. The 40-minute timer is a practice aid based on IELTS guidance.</p>
-      <textarea className={`${styles.writer} ${styles.essayWriter}`} value={essay} onChange={(event) => setEssay(event.target.value)} rows={16} placeholder="Plan briefly, then write your complete response..." />
+      <textarea spellCheck={false} autoCorrect="off" autoCapitalize="off" className={`${styles.writer} ${styles.essayWriter}`} value={essay} onChange={(event) => setEssay(event.target.value)} rows={16} placeholder="Plan briefly, then write your complete response..." />
       <div className={styles.writerMeta}><span className={words >= 250 ? styles.wordReady : ''}>{words} / 250 minimum words</span><span>Task 2 practice</span></div>
       <div className={styles.reviewGrid}>
         {reviewItems.map((item) => (

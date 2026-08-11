@@ -27,7 +27,7 @@ const FAQS = [
 export const metadata: Metadata = {
   title: 'IELTS Writing Task 2 model answers explicados',
   description:
-    'Estudia IELTS Academic Writing Task 2 con model answers originales, anotaciones, comparación débil/fuerte, checklist y explicación Band 7.',
+    '25 ensayos modelo completos de IELTS Academic Writing Task 2, compuestos con los mismos párrafos del curso: cada uno con la función de cada párrafo, comparación de frase floja contra frase fuerte y lista de comprobación final.',
   keywords: [
     'IELTS writing task 2 model answers',
     'IELTS task 2 sample answers',
@@ -57,7 +57,7 @@ export default function Page() {
           'IELTS Academic Writing Task 2',
           'model answers',
           'essay annotation',
-          'Band 7 writing patterns',
+          'Task 2 model essays',
           'self-review checklist',
         ]}
         isPartOf={{

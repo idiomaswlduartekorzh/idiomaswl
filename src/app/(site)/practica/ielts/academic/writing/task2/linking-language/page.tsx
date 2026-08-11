@@ -2,18 +2,18 @@ import type { Metadata } from 'next'
 import { Task2SkillStructuredData } from '../Task2SkillStructuredData'
 
 export const metadata: Metadata = {
-  title: 'IELTS Writing Task 2 — Linking Language — Conectores académicos',
-  description: 'Practica los conectores y linking words del IELTS Writing Task 2: adición, contraste, causa-efecto, ejemplificación y conclusión. Vocabulario cohesivo Band 7.',
+  title: 'Conectores en inglés: las 7 familias con ejemplos y ejercicios',
+  description: 'Conectores de adición, contraste, causa-efecto, ejemplo, concesión, comparación y conclusión. Dónde va cada uno, con qué puntuación, y ejercicios corregidos.',
   keywords: ['IELTS linking words', 'IELTS conectores académicos', 'IELTS cohesion task 2', 'IELTS vocabulary linking'],
   openGraph: {
-    title: 'IELTS Task 2: Linking Language — Conectores académicos',
-    description: 'Practica los conectores y linking words del IELTS Writing Task 2: adición, contraste, causa-efecto, ejemplificación y conclusión. Vocabulario cohesivo Band 7.',
+    title: 'Conectores en inglés: las 7 familias con ejemplos y ejercicios',
+    description: 'Conectores de adición, contraste, causa-efecto, ejemplo, concesión, comparación y conclusión. Dónde va cada uno, con qué puntuación, y ejercicios corregidos.',
     type: 'website', locale: 'es_CO',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ielts/academic/writing/task2/linking-language' },
 }
 
-import LinkingLanguageClient from './LinkingLanguageClient';
+import LinkingHubClient from './LinkingHubClient';
 export default function Page() {
   return (
     <>
@@ -22,7 +22,7 @@ export default function Page() {
         path="/practica/ielts/academic/writing/task2/linking-language"
         teaches={['cohesion', 'linking language', 'essay logic']}
       />
-      <LinkingLanguageClient />
+      <LinkingHubClient />
     </>
   );
 }

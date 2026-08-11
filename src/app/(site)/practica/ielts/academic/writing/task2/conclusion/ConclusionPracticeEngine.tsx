@@ -9,7 +9,7 @@ import { placeFirstAsCorrect } from '@/lib/practica/shuffle-options';
 import styles from '../introduccion/page.module.css';
 
 const LEVELS = [
-  ['Identify the job', 'mcq'], ['Choose the aligned restatement', 'mcq'], ['Detect conclusion drift', 'mcq'],
+  ['Match it to its prompt', 'mcq'], ['Choose the aligned restatement', 'mcq'], ['Detect conclusion drift', 'mcq'],
   ['Assemble the blocks', 'assemble'], ['Complete the synthesis', 'mcq'], ['Write one closing block', 'write'],
   ['Build the conclusion', 'paragraph'], ['Transfer to the full essay', 'transfer'],
 ] as const;
@@ -36,12 +36,55 @@ const SE_CORRIGE = new Set(['mcq', 'assemble', 'order']);
 
 function words(value: string) { return value.trim().split(/\s+/).filter(Boolean).length; }
 
+/** Los 25 enunciados, con su tema, para que el nivel 1 tenga distractores reales. */
+const PROMPT_POOL = CONCLUSION_LESSONS.flatMap((lesson) =>
+  lesson.examples.map((example) => ({
+    text: example.prompt,
+    title: example.title,
+    type: lesson.id,
+    // El tema en minúscula, para poder decir «nunca menciona X» en el feedback.
+    subject: example.title.charAt(0).toLowerCase() + example.title.slice(1),
+  })));
+
+/**
+ * Tres enunciados ajenos, los de longitud más parecida: uno de la misma familia —el difícil,
+ * porque comparte instrucción— y dos de fuera.
+ *
+ * No `slice(0, 3)` sobre la lista tal cual: eso devuelve siempre los tres primeros del banco
+ * y los últimos no saldrían nunca de distractor, así que solo aparecerían cuando les tocase
+ * ser la respuesta. Es el defecto que ya se cazó en la revisión final.
+ */
+function nearestPrompts(correct: string, ownType: string) {
+  const target = words(correct);
+  const sorted = PROMPT_POOL
+    .filter((item) => item.text !== correct)
+    .sort((a, b) => {
+      const difference = Math.abs(words(a.text) - target) - Math.abs(words(b.text) - target);
+      return difference !== 0 ? difference : a.text.localeCompare(b.text);
+    });
+  const same = sorted.filter((item) => item.type === ownType).slice(0, 1);
+  return [...same, ...sorted.filter((item) => item.type !== ownType).slice(0, 3 - same.length)].slice(0, 3);
+}
+
 export default function ConclusionPracticeEngine({ essayType }: { essayType: EssayTypeId }) {
   const [level, setLevel] = useState(0); const [selected, setSelected] = useState(''); const [checked, setChecked] = useState(false);
   const [assembled, setAssembled] = useState<string[]>([]); const [writing, setWriting] = useState(''); const [fields, setFields] = useState<string[]>([]); const [completed, setCompleted] = useState<number[]>([]);
   const lesson = CONCLUSION_LESSONS.find((item) => item.id === essayType) ?? CONCLUSION_LESSONS[0];
   const example = lesson.examples[1 + (level % (lesson.examples.length - 1))]; const active = LEVELS[level];
-  useEffect(() => { setFields(example.blocks.map(() => '')); }, [example]);
+  /**
+   * Vaciar las cajas al cambiar de ejemplo, ajustando el estado en el render.
+   *
+   * Estaba en un `useEffect` con `[example]`: React pintaba las cajas del ejemplo anterior y
+   * las borraba en un segundo render. Con el ajuste en render no llega a pintarse el estado
+   * viejo, y es el patrón que la propia documentación de React recomienda para «reiniciar
+   * estado cuando cambia una prop».
+   */
+  const [fieldsBelongTo, setFieldsBelongTo] = useState(example.title);
+  if (fieldsBelongTo !== example.title) {
+    setFieldsBelongTo(example.title);
+    setFields(example.blocks.map(() => ''));
+  }
+  // El progreso guardado solo existe en el navegador, así que se lee después de montar.
   useEffect(() => { const saved = window.localStorage.getItem(`welearn-task2-conclusion-${essayType}`); if (saved) setCompleted(JSON.parse(saved)); }, [essayType]);
   /**
    * Explicación por OPCIÓN. Los distractores de este motor siguen siendo fijos —son errores
@@ -50,12 +93,31 @@ export default function ConclusionPracticeEngine({ essayType }: { essayType: Ess
    */
   const mcq = useMemo(() => {
     if (level === 0) {
-      const a = lesson.function;
-      return { q: `What must this ${lesson.shortLabel} conclusion do?`, c: example.prompt, a, o: rotate([a, 'Introduce the strongest idea that did not fit in the body.', 'Describe what the essay has discussed without giving an answer.', 'Predict how the topic will change in the future.'], `conclusion|${lesson.id}`, level), why: new Map([
-        [a, 'Correct. The conclusion completes the answer the essay already gave.'],
-        ['Introduce the strongest idea that did not fit in the body.', 'A new idea in the conclusion has nowhere to be developed, so it weakens the essay instead of closing it. If the idea matters, it belongs in a body paragraph.'],
-        ['Describe what the essay has discussed without giving an answer.', 'Summarising the discussion without answering leaves the task unfinished. The examiner is looking for your position, restated.'],
-        ['Predict how the topic will change in the future.', 'A prediction is a new claim, and an unsupported one. The conclusion closes what you argued; it does not open something else.'],
+      /**
+       * Se da la conclusión y se pregunta a qué enunciado responde.
+       *
+       * Dos intentos anteriores fallaron por lo mismo, y merece quedar escrito. La respuesta
+       * era `lesson.function`, que la página imprime más arriba como «Conclusion function: …».
+       * Cambiarla por `example.conclusionJob` no arregló nada: `conclusion-data.ts` lo define
+       * como `conclusionJob: lessonMeta[source.id].function`, la misma cadena. Y cambiarla
+       * por `example.commonMistake` tampoco: es `commonMistake: lessonMeta[source.id].trap`,
+       * y `trap` también se imprime, como «Common trap». Medido las dos veces: 5 de 5 seguían
+       * filtradas.
+       *
+       * Los dos campos son constantes de FAMILIA disfrazadas de campos del ejemplo —los
+       * cinco ejemplos de un tipo comparten job y trap—, así que en este módulo no existe
+       * ninguna respuesta propia del ejemplo salvo el enunciado y los dos bloques.
+       *
+       * Entonces se invierte la pregunta: aquí está la conclusión, ¿de qué pregunta es? La
+       * respuesta es el enunciado, que es del ejemplo y no se imprime como respuesta en
+       * ninguna parte, y la destreza es la primera que hace falta: notar si un cierre
+       * contesta la pregunta que tiene delante.
+       */
+      const a = example.prompt;
+      const otros = nearestPrompts(a, lesson.id);
+      return { q: 'This is the conclusion. Which prompt does it close?', c: `“${conclusionText(example)}”`, a, o: rotate([a, ...otros.map((item) => item.text)], `conclusion|${lesson.id}`, level), why: new Map([
+        [a, 'Correct. The closing sentences answer this question and no other.'],
+        ...otros.map((item) => [item.text, `The conclusion above never mentions ${item.subject}. It closes a different question from the “${item.title}” one.`] as const),
       ]) };
     }
     if (level === 1) {
@@ -96,8 +158,10 @@ export default function ConclusionPracticeEngine({ essayType }: { essayType: Ess
     <div className={styles.enginePanel}><div className={styles.engineHeader}><div><p>Level {level + 1} of 8</p><h3>{active[0]}</h3></div><strong>{completed.length}/8 complete</strong></div><div className={styles.exerciseBody}><span className={styles.typeTag}>{lesson.shortLabel}</span>
       {active[1] === 'mcq' && <><p className={styles.exercisePrompt}>{mcq.q}</p><p className={styles.exerciseInstruction}>{mcq.c}</p><div className={styles.optionGrid}>{mcq.o.map((option, index) => <button key={option} type="button" className={`${styles.option} ${selected === option ? styles.selected : ''} ${checked && option === mcq.a ? styles.correct : ''} ${checked && selected === option && option !== mcq.a ? styles.incorrect : ''}`} onClick={() => { setSelected(option); setChecked(false); }}><span>{String.fromCharCode(65 + index)}</span>{option}</button>)}</div></>}
       {active[1] === 'assemble' && <><p className={styles.exercisePrompt}>Assemble this conclusion architecture.</p><p className={styles.exerciseInstruction}>{example.conclusionJob}</p><div className={styles.assemblyWorkspace}>{assembled.map((label, index) => <button key={`${label}-${index}`} type="button" onClick={() => setAssembled((current) => current.filter((_, itemIndex) => itemIndex !== index))}><span>{index + 1}</span>{label}</button>)}</div><div className={styles.blockChoices}>{rotate(order, `conclusion-orden|${lesson.id}`, 1).filter((label) => !assembled.includes(label)).map((label) => <button key={label} type="button" onClick={() => setAssembled((current) => [...current, label])}>{label}</button>)}</div></>}
-      {active[1] === 'write' && <><p className={styles.exercisePrompt}>Write one original {example.blocks[1].label.toLowerCase()}.</p><p className={styles.exerciseInstruction}>{example.prompt}</p><textarea className={styles.engineTextarea} rows={5} value={writing} onChange={(event) => { setWriting(event.target.value); setChecked(false); }} /><p className={styles.wordMeter}>{words(writing)} words · study target: 10+ purposeful words</p></>}
-      {active[1] === 'paragraph' && <><p className={styles.exercisePrompt}>Build the complete conclusion.</p><p className={styles.exerciseInstruction}>{example.prompt}</p><div className={styles.paragraphBuilder}>{example.blocks.map((block, index) => <label key={block.label}><strong>{block.label}</strong><span>{block.purpose}</span><textarea rows={4} value={fields[index] ?? ''} onChange={(event) => { setFields((current) => current.map((value, itemIndex) => itemIndex === index ? event.target.value : value)); setChecked(false); }} /></label>)}</div><p className={styles.wordMeter}>{totalWords} words · WeLearn study target: about 30–50 words, adjusted to the essay</p></>}
+      {active[1] === 'write' && <><p className={styles.exercisePrompt}>Write one original {example.blocks[1].label.toLowerCase()}.</p><p className={styles.exerciseInstruction}>{example.prompt}</p><textarea className={styles.engineTextarea} rows={5} value={writing} onChange={(event) => { setWriting(event.target.value); setChecked(false); }} spellCheck={false} autoCorrect="off" autoCapitalize="off" /><p className={styles.wordMeter}>{words(writing)} words · {words(writing) >= 10 ? 'minimum 10 reached — you can compare now' : `minimum 10 words · ${10 - words(writing)} to go before you can compare`}</p></>}
+      {active[1] === 'paragraph' && <><p className={styles.exercisePrompt}>Build the complete conclusion.</p><p className={styles.exerciseInstruction}>{example.prompt}</p><div className={styles.paragraphBuilder}>{example.blocks.map((block, index) => <label key={block.label}><strong>{block.label}</strong><span>{block.purpose}</span><textarea rows={4} value={fields[index] ?? ''} onChange={(event) => { setFields((current) => current.map((value, itemIndex) => itemIndex === index ? event.target.value : value)); setChecked(false); }} spellCheck={false} autoCorrect="off" autoCapitalize="off" /></label>)}</div>{/* El umbral que abre el botón son 25 palabras. Antes el texto anunciaba «30–50», que
+        es el objetivo de estudio, no el mínimo: el botón se abría antes de lo que decía. */}
+      <p className={styles.wordMeter}>{totalWords} words · {totalWords >= 25 ? 'minimum 25 reached — WeLearn aims for about 30–50 in the finished essay' : `minimum 25 words · ${25 - totalWords} to go before you can compare`}</p></>}
       {active[1] === 'transfer' && <div className={styles.transferBridge}><span>Conclusion-to-essay bridge</span><h4>Your closing blocks are ready to transfer</h4><p>Complete Essay Practice is where timing and the full 250-word response belong.</p><ul><li>Keep the same answer from the thesis.</li><li>Synthesise only ideas developed in the body.</li><li>Run Final Review before submitting the complete response.</li></ul><Link href="/practica/ielts/academic/writing/task2/tarea-completa">Open Complete Essay Practice <ExternalLink size={16} /></Link></div>}
       <div className={styles.exerciseActions}><button type="button" className={styles.secondaryButton} onClick={reset}><RotateCcw size={16} /> Reset</button><button type="button" onClick={check} disabled={(active[1] === 'mcq' && !selected) || (active[1] === 'assemble' && assembled.length !== order.length) || (active[1] === 'write' && words(writing) < 10) || (active[1] === 'paragraph' && totalWords < 25)}><CheckCircle2 size={17} /> {active[1] === 'transfer' ? 'Mark transfer ready' : 'Check this level'}</button></div>
       {checked && <div className={`${styles.feedback} ${passed ? styles.feedbackCorrect : styles.feedbackIncorrect}`}><CheckCircle2 size={20} /><div><strong>{passed ? SE_CORRIGE.has(active[1]) ? 'Level complete.' : 'Ready to compare.' : 'Revise this attempt.'}</strong><p>{active[1] === 'mcq' ? (mcq.why.get(selected) ?? mcq.why.get(mcq.a)) : active[1] === 'assemble' ? `Use ${order.join(' → ')} for this task.` : active[1] === 'transfer' ? 'Transfer is ready; this engine does not award a band score.' : `Compare the function of each sentence with this model: ${conclusionText(example)}`}</p></div></div>}

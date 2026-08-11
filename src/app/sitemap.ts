@@ -202,6 +202,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.65,
     })),
     { url: `${BASE}/recursos/ielts-writing-task-1-introduccion-pdf`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.78 },
+    // Una URL por familia de conectores. Cada una responde a una búsqueda distinta
+    // —«conectores de contraste en inglés», «conectores de causa y efecto»— que en una sola
+    // página larga competirían entre sí.
+    ...(['addition', 'contrast', 'cause-and-effect', 'examples', 'concession', 'comparison', 'conclusion', 'condition', 'correlative'] as const).map((f) => ({
+      url: `${BASE}/practica/ielts/academic/writing/task2/linking-language/${f}`,
+      lastModified: now, changeFrequency: 'monthly' as const, priority: 0.6,
+    })),
     ...(['analisis-pregunta', 'tipo-ensayo', 'introduccion', 'body-1', 'body-2', 'parrafos-cuerpo', 'linking-language', 'conclusion', 'revision-final', 'tarea-completa', 'opinion', 'discussion', 'advantages-disadvantages', 'problem-solution', 'direct-question', 'model-answers'] as const).map((s) => ({
       url: `${BASE}/practica/ielts/academic/writing/task2/${s}`,
       lastModified: now,

@@ -4,7 +4,7 @@ import IeltsTask2PromptBank from '@/components/exam-practice/IeltsTask2PromptBan
 import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
 import { IELTS_TASK2_PROBLEM_SOLUTION_PROMPTS } from '@/data/practica-exams/seo-catalog';
 
-import ProblemSolutionClient from './ProblemSolutionClient';
+import EssayTypePathClient from '../type-paths/EssayTypePathClient';
 
 const URL = 'https://www.idiomaswl.com/practica/ielts/academic/writing/task2/problem-solution';
 
@@ -29,7 +29,7 @@ const FAQS = [
 export const metadata: Metadata = {
   title: 'IELTS Writing Task 2: problem-solution essays',
   description:
-    'Practica IELTS Academic Writing Task 2 problem-solution essays: problemas, causas, soluciones realistas, estructura y modelo Band 7 explicado.',
+    'Practica IELTS Academic Writing Task 2 problem-solution essays: problemas, causas, soluciones realistas, estructura y modelo explicado.',
   keywords: [
     'IELTS problem solution essay',
     'IELTS writing task 2 problem solution',
@@ -77,15 +77,15 @@ export default function Page() {
           { name: 'Problem-solution', url: URL },
         ]}
       />
-      <ProblemSolutionClient faqs={FAQS} />
+      <EssayTypePathClient type="problem-solution" faqs={FAQS} />
       <section className="wl-section" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div style={{ maxWidth: 1040, margin: '0 auto' }}>
             <IeltsTask2PromptBank
               prompts={IELTS_TASK2_PROBLEM_SOLUTION_PROMPTS}
-              eyebrow="Banco Problem-Solution"
-              title="2 prompts originales para entrenar problem-solution essays"
-              intro="en esta ruta practicamos cómo conectar causas, problemas, consecuencias y soluciones realistas para que cada respuesta ataque exactamente lo que pregunta el prompt."
+              eyebrow="Problem and solution prompt bank"
+              title="Two original prompts to train problem-and-solution essays"
+              intro="this route trains the link that decides this type: every solution you propose has to answer a problem or a cause you named earlier, and the prompt decides which of the two it asked for."
             />
           </div>
         </div>

@@ -173,10 +173,378 @@ for (const [name, bank] of banks) {
   }
 }
 
+/**
+ * El banco de opción del motor de análisis del enunciado.
+ *
+ * Se añade porque ese motor pasó la revisión sin que nadie lo mirase: el ✅ de código
+ * cubría el fichero de datos, no el motor. Medido sobre sus 20 preguntas antes de tocarlo:
+ *
+ *  - 7 textos distintos para 60 ranuras de distractor; dos frases genéricas salían 20 veces
+ *    cada una. En 15 de 15 preguntas posteriores a la primera de su tipo, los tres
+ *    distractores ya se habían visto y la correcta no: se acertaba eligiendo el texto nuevo.
+ *  - En un nivel entero la correcta sacaba entre 31 y 44 palabras al distractor más largo,
+ *    en los cinco tipos.
+ *  - La rotación cíclica dejaba la secuencia C-B-A-C idéntica en tres de los cinco tipos.
+ *  - Las correctas eran campos del TIPO, que la propia página imprime más arriba.
+ *  - Los tres distractores compartían un único mensaje de error.
+ *
+ * Las seis cosas se comprueban aquí. Ninguna se puede estimar a ojo: por eso el guardián.
+ */
+const drills = loadModule(path.join(task2, 'analisis-pregunta', 'analysis-drills.ts'), (id) => {
+  if (id.includes('shuffle-options')) return loadModule(path.join(repoRoot, 'src', 'lib', 'practica', 'shuffle-options.ts'), () => ({}))
+  if (id.includes('prompt-analysis-data')) return analysis
+  return introduction
+})
+
+const drillsByType = Object.entries(drills.ANALYSIS_DRILLS ?? {})
+if (drillsByType.length !== EXPECTED_TYPES.length) {
+  failures.push(`ANALYSIS_DRILLS tiene ${drillsByType.length} tipos; se esperaban ${EXPECTED_TYPES.length}.`)
+}
+
+/** Todo lo que la página imprime en el panel de la familia: nada de esto puede ser respuesta. */
+const camposDelTipo = new Set()
+for (const lesson of introduction.ESSAY_TYPES ?? []) {
+  for (const field of ['signal', 'mustAnswer', 'bodyOne', 'bodyTwo', 'conclusion', 'trap', 'position']) {
+    if (lesson[field]) camposDelTipo.add(lesson[field])
+  }
+}
+const enunciadosResueltos = new Set((introduction.ESSAY_TYPES ?? []).map((lesson) => lesson.examples[0]?.prompt))
+
+const usoDistractor = new Map()
+const secuencias = new Set()
+
+for (const [type, list] of drillsByType) {
+  const vistos = new Set()
+  secuencias.add(list.map((drill) => 'ABCD'[drill.correct] ?? '?').join(''))
+
+  // Reparto: con cuatro preguntas y cuatro opciones, cada letra sale exactamente una vez.
+  const letras = new Set(list.map((drill) => drill.correct))
+  if (list.length === 4 && letras.size !== 4) {
+    failures.push(`${type}: la letra correcta se repite dentro de la pestaña (${list.map((d) => 'ABCD'[d.correct]).join('-')}). Reparte por bloques con placeFirstAsCorrect.`)
+  }
+
+  for (const [index, drill] of list.entries()) {
+    const etiqueta = `análisis/${type}[${index + 1}]`
+    const correcta = drill.options?.[drill.correct]
+    if (!correcta) { failures.push(`${etiqueta}: sin opción correcta.`); continue }
+
+    // La respuesta no puede estar impresa más arriba, ni salir del ejemplo ya resuelto.
+    if (camposDelTipo.has(correcta.text)) {
+      failures.push(`${etiqueta}: la correcta «${correcta.text.slice(0, 60)}…» es un campo del tipo, y la página lo imprime en el panel de familia. Usa un campo del ejemplo.`)
+    }
+    if (enunciadosResueltos.has(drill.prompt)) {
+      failures.push(`${etiqueta}: usa el enunciado del «Worked example», que ya está resuelto encima.`)
+    }
+
+    // Un mensaje por opción: si los tres errores comparten frase, no enseñan cuál falló.
+    const porques = new Set(drill.options.map((option) => option.why))
+    if (porques.size !== drill.options.length) {
+      failures.push(`${etiqueta}: ${porques.size} explicaciones para ${drill.options.length} opciones. Cada distractor explica por qué falla ÉL.`)
+    }
+
+    // Longitud: un empate no delata; lo que delata es ganar en solitario por mucho.
+    const largos = drill.options.map((option) => contar(option.text))
+    const ordenados = [...largos].sort((a, b) => b - a)
+    if (largos[drill.correct] === ordenados[0] && ordenados[0] - ordenados[1] >= DESTAQUE) {
+      failures.push(`${etiqueta}: la correcta tiene ${ordenados[0]} palabras y la siguiente ${ordenados[1]}; se acierta por longitud.`)
+    }
+
+    // El atajo que hacía el motor viejo inservible: elegir el único texto que no habías visto.
+    const distractores = drill.options.filter((_, position) => position !== drill.correct)
+    if (index > 0 && distractores.every((option) => vistos.has(option.text)) && !vistos.has(correcta.text)) {
+      failures.push(`${etiqueta}: los tres distractores ya salieron antes y la correcta no. Se acierta eligiendo el texto nuevo, sin leer.`)
+    }
+    for (const option of drill.options) vistos.add(option.text)
+    for (const option of distractores) usoDistractor.set(option.text, (usoDistractor.get(option.text) ?? 0) + 1)
+  }
+}
+
+// Reciclaje: dos frases de relleno repetidas veinte veces es lo que había antes.
+const RECICLAJE_MAXIMO = 6
+for (const [text, veces] of usoDistractor) {
+  if (veces > RECICLAJE_MAXIMO) {
+    failures.push(`El distractor «${text.slice(0, 60)}…» sale ${veces} veces en el motor de análisis (máximo ${RECICLAJE_MAXIMO}). Los distractores son respuestas reales de otros enunciados, no frases de relleno.`)
+  }
+}
+if (secuencias.size === 1 && drillsByType.length > 1) {
+  failures.push('Los cinco tipos comparten la misma secuencia de letras correctas: se memoriza una y se aprueban los cinco.')
+}
+
+/**
+ * El banco de Tarea Completa.
+ *
+ * Tenía CUATRO enunciados, de las cinco familias que enseña el resto del curso: se podía
+ * terminar Task 2 sin haber escrito nunca una de ventajas y desventajas. Y sus modelos no
+ * tenían relación con ningún otro ejercicio, así que el enunciado sobre el que acababas de
+ * practicar Body 1 no volvía a aparecer.
+ *
+ * Ahora son 25, compuestos de los párrafos que ya existen. Esto vigila las tres cosas que
+ * pueden romper esa composición sin que nada se ponga rojo:
+ *
+ *  - que sigan siendo los mismos enunciados que el resto de Task 2 (si alguien edita un
+ *    enunciado en body-1, aquí tiene que cambiar solo, no quedarse desincronizado),
+ *  - que ningún modelo baje de 250 palabras, que es el mínimo que la propia tarea exige
+ *    —diez de los dieciséis componibles salían por debajo antes de completarlos—,
+ *  - y que no falte ningún párrafo, porque un «ensayo modelo» de tres párrafos no es uno.
+ */
+const bodyOne = loadModule(path.join(task2, 'body-1', 'body-one-data.ts'), () => introduction)
+const bodyTwo = loadModule(path.join(task2, 'body-2', 'body-two-data.ts'), (id) => id.includes('body-one') ? bodyOne : introduction)
+const conclusion = loadModule(path.join(task2, 'conclusion', 'conclusion-data.ts'), (id) =>
+  id.includes('body-one') ? bodyOne : id.includes('body-two') ? bodyTwo : introduction)
+const bank = loadModule(path.join(task2, 'tarea-completa', 'task2-prompt-bank.ts'), (id) => {
+  if (id.includes('body-one')) return bodyOne
+  if (id.includes('body-two')) return bodyTwo
+  if (id.includes('conclusion-data')) return conclusion
+  return introduction
+})
+
+const PALABRAS_MINIMAS = 250
+const PARRAFOS = ['Introduction', 'Body 1', 'Body 2', 'Conclusion']
+const prompts = bank.TASK2_PROMPT_BANK ?? []
+const esperados = EXPECTED_TYPES.length * EXPECTED_EXAMPLES
+
+if (prompts.length !== esperados) {
+  failures.push(`Tarea Completa tiene ${prompts.length} enunciados; se esperaban ${esperados} (${EXPECTED_TYPES.length} familias × ${EXPECTED_EXAMPLES}).`)
+}
+for (const type of EXPECTED_TYPES) {
+  const cuantos = prompts.filter((item) => item.essayType === type).length
+  if (cuantos !== EXPECTED_EXAMPLES) {
+    failures.push(`Tarea Completa: ${cuantos} enunciados de «${type}», se esperaban ${EXPECTED_EXAMPLES}. Practicar cuatro familias de cinco deja una sin escribir nunca.`)
+  }
+}
+
+/** Los enunciados canónicos son los del cuerpo: el banco no puede escaparse de ellos. */
+const canonicos = new Set((bodyOne.BODY_ONE_LESSONS ?? []).flatMap((lesson) => lesson.examples.map((example) => example.prompt)))
+const idsBanco = new Set()
+const enunciadosBanco = new Set()
+
+for (const item of prompts) {
+  const etiqueta = `tarea-completa/${item.title ?? '(sin título)'}`
+  if (idsBanco.has(item.id)) failures.push(`${etiqueta}: identificador repetido «${item.id}».`)
+  idsBanco.add(item.id)
+  if (enunciadosBanco.has(item.prompt)) failures.push(`${etiqueta}: enunciado repetido.`)
+  enunciadosBanco.add(item.prompt)
+
+  if (!canonicos.has(item.prompt)) {
+    failures.push(`${etiqueta}: su enunciado no existe en body-1. El banco se compone de esos párrafos; si el enunciado se separa, el modelo deja de corresponder al ejercicio.`)
+  }
+
+  const etiquetas = (item.model ?? []).map((paragraph) => paragraph.label)
+  for (const nombre of PARRAFOS) {
+    if (!etiquetas.includes(nombre)) failures.push(`${etiqueta}: al modelo le falta «${nombre}».`)
+  }
+  for (const paragraph of item.model ?? []) {
+    if (!paragraph.text?.trim()) failures.push(`${etiqueta}: «${paragraph.label}» está vacío.`)
+    if (!paragraph.job?.trim()) failures.push(`${etiqueta}: «${paragraph.label}» no dice qué hace.`)
+  }
+  if (item.modelWords < PALABRAS_MINIMAS) {
+    failures.push(`${etiqueta}: el modelo tiene ${item.modelWords} palabras. La tarea exige ${PALABRAS_MINIMAS}: un modelo por debajo enseña lo contrario de lo que pide.`)
+  }
+  if (!item.watchFor?.length) {
+    failures.push(`${etiqueta}: sin errores típicos que revisar. Es lo que sustituye a la puntuación automática.`)
+  }
+}
+
+/**
+ * Ningún área de escritura de Task 2 puede llevar corrector ortográfico.
+ *
+ * En el examen no hay subrayado rojo. Verlo aquí entrena a esperar un aviso que el día de la
+ * prueba no va a aparecer, y a no releer buscando erratas. Había **doce** áreas con el
+ * corrector activo repartidas por introducción, Body 1 y Body 2, más las de Tarea Completa.
+ *
+ * Se comprueba sobre el FUENTE y no en el navegador a propósito: la mitad de esas áreas
+ * viven detrás de un paso bloqueado, así que un test de navegador solo ve las que haya
+ * conseguido desbloquear. Aquí se ven todas, incluidas las que alguien añada mañana.
+ */
+function tsxRecursivo(dir) {
+  return fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
+    const full = path.join(dir, entry.name)
+    if (entry.isDirectory()) return tsxRecursivo(full)
+    return entry.name.endsWith('.tsx') ? [full] : []
+  })
+}
+
+/**
+ * Devuelve el texto de cada etiqueta `<textarea …>`, hasta su `>` de cierre.
+ *
+ * No vale un regex que pare en el primer «mayor que». El primer intento marcó como
+ * defectuosas siete áreas que YA estaban corregidas, porque la flecha de `onChange` lleva
+ * un «mayor que» dentro y cortaba la etiqueta antes de llegar al atributo. Hay que contar
+ * llaves y parar en el cierre que esté a nivel cero.
+ */
+function etiquetasTextarea(source) {
+  const tags = []
+  let from = source.indexOf('<textarea')
+  while (from !== -1) {
+    let depth = 0
+    let index = from
+    for (; index < source.length; index += 1) {
+      const char = source[index]
+      if (char === '{') depth += 1
+      else if (char === '}') depth -= 1
+      else if (char === '>' && depth === 0) break
+    }
+    tags.push(source.slice(from, index + 1))
+    from = source.indexOf('<textarea', index)
+  }
+  return tags
+}
+
+/* ── Tipo de ensayo: la escalera, las pistas que delatan y el feedback por opción ─────
+ *
+ * Los tres defectos que se midieron en esta unidad no se ven leyendo el fichero, y por eso
+ * duraron tanto:
+ *
+ *   · Las cinco primeras respuestas caían en las posiciones 0,1,2,3,4 de una rejilla de
+ *     orden fijo. Se acertaban sin leer el enunciado.
+ *   · Cinco de las nueve pistas imprimían el nombre del tipo correcto, así que el segundo
+ *     intento no era un intento y aun así sumaba un punto.
+ *   · La explicación era la misma eligieras lo que eligieras.
+ */
+const essayTypes = loadModule(path.join(task2, 'tipo-ensayo', 'essay-type-drills.ts'), () => introduction)
+const typeDrills = essayTypes.TYPE_DRILLS ?? []
+const typeOptions = (essayTypes.TYPE_OPTIONS ?? []).map((option) => option.id)
+const misreadCases = essayTypes.MISREAD_CASES ?? []
+
+if (typeDrills.length < 10) {
+  failures.push(`tipo-ensayo: ${typeDrills.length} enunciados; hacen falta al menos 10 para cubrir las cinco familias dos veces.`)
+}
+
+// 1 · La escalera. Ningún tramo puede recorrer la rejilla hacia arriba ni hacia abajo.
+const posiciones = typeDrills.map((drill) => typeOptions.indexOf(drill.answer))
+if (posiciones.some((position) => position < 0)) {
+  failures.push('tipo-ensayo: alguna respuesta no corresponde a ninguna de las cinco categorías.')
+} else {
+  let escalera = 1
+  let peor = 1
+  for (let index = 1; index < posiciones.length; index += 1) {
+    const salto = posiciones[index] - posiciones[index - 1]
+    const anterior = posiciones[index - 1] - posiciones[index - 2]
+    escalera = index > 1 && salto === anterior && Math.abs(salto) === 1 ? escalera + 1 : Math.abs(salto) === 1 ? 2 : 1
+    peor = Math.max(peor, escalera)
+  }
+  if (peor >= 4) {
+    failures.push(
+      `tipo-ensayo: la respuesta correcta recorre la rejilla en escalera durante ${peor} preguntas seguidas (${posiciones.join(',')}). Se acierta sin leer.`,
+    )
+  }
+  const reparto = typeOptions.map((id) => typeDrills.filter((drill) => drill.answer === id).length)
+  if (Math.max(...reparto) - Math.min(...reparto) > 1) {
+    failures.push(`tipo-ensayo: reparto desigual de la respuesta correcta entre las cinco categorías (${reparto.join(',')}).`)
+  }
+}
+
+// 2 · Una pista dice dónde mirar, nunca qué contestar.
+const nombreDe = new Map((essayTypes.TYPE_OPTIONS ?? []).map((option) => [option.id, option.label]))
+for (const drill of typeDrills) {
+  const nombre = nombreDe.get(drill.answer) ?? ''
+  if (nombre && drill.hint.toLowerCase().includes(nombre.toLowerCase())) {
+    failures.push(`tipo-ensayo/${drill.id}: la pista imprime «${nombre}». El segundo intento deja de ser un intento.`)
+  }
+}
+
+// 3 · Cada opción equivocada explica por qué falla ELLA, y ningún mensaje se repite.
+for (const conjunto of [
+  { lista: typeDrills, correcta: (drill) => drill.answer, etiqueta: 'tipo-ensayo' },
+  { lista: misreadCases, correcta: (item) => item.wrote, etiqueta: 'tipo-ensayo/caso' },
+]) {
+  for (const item of conjunto.lista) {
+    const equivocadas = typeOptions.filter((id) => id !== conjunto.correcta(item))
+    const mensajes = equivocadas.map((id) => (item.wrong?.[id] ?? '').trim())
+    const vacios = equivocadas.filter((id, index) => mensajes[index].length < 40)
+    if (vacios.length) {
+      failures.push(`${conjunto.etiqueta}/${item.id}: ${vacios.length} opción(es) sin explicación propia (${vacios.join(', ')}).`)
+    }
+    if (new Set(mensajes).size !== mensajes.length) {
+      failures.push(`${conjunto.etiqueta}/${item.id}: dos opciones comparten el mismo mensaje.`)
+    }
+  }
+}
+
+/* ── Párrafos de cuerpo: un diagnóstico que se pueda fallar ───────────────────────────
+ *
+ * El defecto medido: las cuatro observaciones del diagnóstico eran las cuatro verdaderas y
+ * el campo `correct` no lo leía nadie. Pulsando los cuatro botones la página felicitaba. Un
+ * ejercicio de detectar defectos donde todo lo que se ofrece ES un defecto no detecta nada.
+ */
+const bodyParagraphs = loadModule(path.join(task2, 'parrafos-cuerpo', 'body-paragraph-drills.ts'), () => introduction)
+const observaciones = bodyParagraphs.DIAGNOSTIC?.observations ?? []
+const bodyDrills = bodyParagraphs.BODY_DRILLS ?? []
+
+const falsas = observaciones.filter((item) => !item.real)
+const verdaderas = observaciones.filter((item) => item.real)
+if (verdaderas.length < 3 || falsas.length < 2) {
+  failures.push(
+    `parrafos-cuerpo: el diagnóstico tiene ${verdaderas.length} defecto(s) real(es) y ${falsas.length} señuelo(s). Sin señuelos, marcarlo todo aprueba y no se diagnostica nada.`,
+  )
+}
+for (const item of observaciones) {
+  if ((item.why ?? '').trim().length < 60) {
+    failures.push(`parrafos-cuerpo/${item.id}: sin explicación propia. Cada observación dice por qué lo es o por qué no.`)
+  }
+}
+if (new Set(observaciones.map((item) => item.why)).size !== observaciones.length) {
+  failures.push('parrafos-cuerpo: dos observaciones del diagnóstico comparten explicación.')
+}
+
+// Cada caja de escritura anuncia un mínimo y tiene un modelo con el que compararse.
+for (const drill of bodyDrills) {
+  for (const field of drill.fields ?? []) {
+    if (!(field.minWords > 0)) {
+      failures.push(`parrafos-cuerpo/${drill.id}/${field.part}: sin mínimo declarado. Un botón bloqueado tiene que decir cuánto falta.`)
+    }
+    if ((field.model ?? '').split(/\s+/u).filter(Boolean).length < field.minWords) {
+      failures.push(`parrafos-cuerpo/${drill.id}/${field.part}: el modelo no llega al mínimo que se le exige al alumno.`)
+    }
+  }
+}
+
+// 4 · Ninguna promesa de banda en las unidades reconstruidas, ni en pantalla ni en los datos.
+for (const file of [
+  path.join(task2, 'tipo-ensayo', 'TipoEnsayoClient.tsx'),
+  path.join(task2, 'tipo-ensayo', 'essay-type-drills.ts'),
+  path.join(task2, 'tipo-ensayo', 'page.tsx'),
+  path.join(task2, 'parrafos-cuerpo', 'ParrafosCuerpoClient.tsx'),
+  path.join(task2, 'parrafos-cuerpo', 'body-paragraph-drills.ts'),
+  path.join(task2, 'parrafos-cuerpo', 'page.tsx'),
+]) {
+  const promesas = (fs.readFileSync(file, 'utf8').match(/\bBand \d/g) ?? []).length
+  if (promesas) {
+    failures.push(`${path.relative(repoRoot, file)}: ${promesas} promesa(s) de banda. Ninguna de estas páginas lee el texto del alumno, así que ninguna puede prometer una banda.`)
+  }
+}
+
+for (const file of tsxRecursivo(task2)) {
+  const source = fs.readFileSync(file, 'utf8')
+  /**
+   * Vale el atributo escrito, y vale también repartirlo con un spread.
+   *
+   * `tarea-completa` agrupa los cuatro atributos en `const noAssist = { spellCheck: false, … }`
+   * y los reparte con `{...noAssist}`, que es mejor código que repetirlos seis veces. El
+   * guardián lo marcaba como defectuoso: exigía la forma, no la propiedad.
+   */
+  const spreadsSinCorrector = new Set(
+    [...source.matchAll(/const (\w+) = \{[^}]*spellCheck: false/g)].map((match) => `{...${match[1]}}`),
+  )
+  const llevaCorrectorApagado = (tag) =>
+    tag.includes('spellCheck={false}') || [...spreadsSinCorrector].some((spread) => tag.includes(spread))
+  const sinCorrector = etiquetasTextarea(source).filter((tag) => !llevaCorrectorApagado(tag)).length
+  if (sinCorrector) {
+    failures.push(
+      `${path.relative(repoRoot, file)}: ${sinCorrector} área(s) de escritura sin \`spellCheck={false}\`. En el examen no hay corrector.`,
+    )
+  }
+}
+
 if (failures.length) {
   console.error('IELTS Task 2 — alineación enunciado/modelo:')
   for (const failure of failures) console.error(`- ${failure}`)
   process.exitCode = 1
 } else {
+  const totalDrills = drillsByType.reduce((sum, [, list]) => sum + list.length, 0)
   console.log(`IELTS Task 2 alineado: ${lessons.length} tipos × ${EXPECTED_EXAMPLES} ejemplos, ${seen.size} identificadores únicos, cada tema en su enunciado.`)
+  console.log(`Motor de análisis: ${totalDrills} preguntas, ${usoDistractor.size} distractores distintos, ${secuencias.size} secuencias de letras, un mensaje por opción.`)
+  const cortos = Math.min(...prompts.map((item) => item.modelWords))
+  console.log(`Tarea Completa: ${prompts.length} enunciados en ${EXPECTED_TYPES.length} familias, ensayo modelo de 4 párrafos, el más corto de ${cortos} palabras.`)
+  console.log(`Tipo de ensayo: ${typeDrills.length} enunciados (posiciones ${posiciones.join(',')}), ${misreadCases.length} ensayos mal leídos, ninguna pista delata y ninguna promesa de banda.`)
 }

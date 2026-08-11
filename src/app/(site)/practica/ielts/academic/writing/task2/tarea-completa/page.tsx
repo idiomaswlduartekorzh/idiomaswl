@@ -3,11 +3,11 @@ import { Task2SkillStructuredData } from '../Task2SkillStructuredData'
 
 export const metadata: Metadata = {
   title: 'IELTS Writing Task 2 — Tarea Completa — IELTS Writing Task 2 integrado',
-  description: 'Practica el IELTS Writing Task 2 completo: planificación, introducción, párrafos cuerpo, conclusión y revisión. Ejercicio integral con checklist Band 7.',
+  description: '25 enunciados de las cinco familias, cada uno con su ensayo modelo completo. Planifica, escribe con temporizador de 40 minutos y compara párrafo a párrafo.',
   keywords: ['IELTS task 2 completo', 'IELTS writing task 2 full essay', 'IELTS tarea completa task 2', 'IELTS band 7 essay'],
   openGraph: {
     title: 'IELTS Task 2: Tarea Completa — IELTS Writing Task 2 integrado',
-    description: 'Practica el IELTS Writing Task 2 completo: planificación, introducción, párrafos cuerpo, conclusión y revisión. Ejercicio integral con checklist Band 7.',
+    description: '25 enunciados de las cinco familias, cada uno con su ensayo modelo completo. Planifica, escribe con temporizador de 40 minutos y compara párrafo a párrafo.',
     type: 'website', locale: 'es_CO',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ielts/academic/writing/task2/tarea-completa' },

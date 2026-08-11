@@ -4,7 +4,7 @@ import IeltsTask2PromptBank from '@/components/exam-practice/IeltsTask2PromptBan
 import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
 import { IELTS_TASK2_ADVANTAGES_DISADVANTAGES_PROMPTS } from '@/data/practica-exams/seo-catalog';
 
-import AdvantagesDisadvantagesClient from './AdvantagesDisadvantagesClient';
+import EssayTypePathClient from '../type-paths/EssayTypePathClient';
 
 const URL = 'https://www.idiomaswl.com/practica/ielts/academic/writing/task2/advantages-disadvantages';
 
@@ -29,7 +29,7 @@ const FAQS = [
 export const metadata: Metadata = {
   title: 'IELTS Writing Task 2: advantages and disadvantages',
   description:
-    'Practica IELTS Academic Writing Task 2 advantages-disadvantages essays: ventajas, desventajas, outweigh, estructura y modelo Band 7 explicado.',
+    'Practica IELTS Academic Writing Task 2 advantages-disadvantages essays: ventajas, desventajas, outweigh, estructura y modelo explicado.',
   keywords: [
     'IELTS advantages disadvantages essay',
     'IELTS writing task 2 advantages disadvantages',
@@ -77,15 +77,15 @@ export default function Page() {
           { name: 'Advantages and disadvantages', url: URL },
         ]}
       />
-      <AdvantagesDisadvantagesClient faqs={FAQS} />
+      <EssayTypePathClient type="advantages-disadvantages" faqs={FAQS} />
       <section className="wl-section" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div style={{ maxWidth: 1040, margin: '0 auto' }}>
             <IeltsTask2PromptBank
               prompts={IELTS_TASK2_ADVANTAGES_DISADVANTAGES_PROMPTS}
-              eyebrow="Banco Advantages and Disadvantages"
-              title="2 prompts originales para entrenar advantages-disadvantages essays"
-              intro="en esta ruta practicamos la diferencia entre prompts que solo piden ventajas y desventajas y prompts outweigh que exigen comparar peso, impacto y condiciones antes de escribir el ensayo completo."
+              eyebrow="Advantages and disadvantages prompt bank"
+              title="Two original prompts to train advantages-and-disadvantages essays"
+              intro="this route trains the difference between a prompt that asks for both sides and a prompt that asks which side is heavier. One word — outweigh — decides whether a verdict is compulsory."
             />
           </div>
         </div>

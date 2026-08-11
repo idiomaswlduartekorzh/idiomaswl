@@ -5,13 +5,13 @@ import Task2OfficialReviewBlock from '../Task2OfficialReviewBlock';
 import { placeOption } from '@/lib/practica/shuffle-options';
 
 const BANK = [
-  { cat: 'Adición', color: '#0f3d8c', bg: 'rgba(15,61,140,0.08)', items: ['Furthermore', 'Moreover', 'In addition', 'Additionally', 'What is more', 'Not only... but also'] },
-  { cat: 'Contraste', color: '#7c3aed', bg: 'rgba(124,58,237,0.08)', items: ['However', 'Nevertheless', 'On the other hand', 'In contrast', 'Whereas', 'Conversely', 'Despite this'] },
-  { cat: 'Causa-Efecto', color: '#059669', bg: 'rgba(5,150,105,0.08)', items: ['As a result', 'Therefore', 'Consequently', 'Hence', 'This means that', 'This has led to', 'Due to this'] },
-  { cat: 'Ejemplo', color: '#d97706', bg: 'rgba(217,119,6,0.08)', items: ['For example', 'For instance', 'In particular', 'A case in point is', 'This is illustrated by', 'Such as'] },
-  { cat: 'Concesión', color: '#dc2626', bg: 'rgba(220,38,38,0.08)', items: ['Admittedly', 'While this may be true', 'It is true that', 'Although', 'Despite the fact that', 'Even though'] },
-  { cat: 'Comparación', color: '#0891b2', bg: 'rgba(8,145,178,0.08)', items: ['Similarly', 'Likewise', 'In the same way', 'By comparison', 'Compared to'] },
-  { cat: 'Conclusión', color: '#6b7280', bg: 'rgba(107,114,128,0.08)', items: ['In conclusion', 'To conclude', 'In summary', 'To summarise', 'Overall', 'To sum up'] },
+  { cat: 'Addition', color: '#0f3d8c', bg: 'rgba(15,61,140,0.08)', items: ['Furthermore', 'Moreover', 'In addition', 'Additionally', 'What is more', 'Not only... but also'] },
+  { cat: 'Contrast', color: '#7c3aed', bg: 'rgba(124,58,237,0.08)', items: ['However', 'Nevertheless', 'On the other hand', 'In contrast', 'Whereas', 'Conversely', 'Despite this'] },
+  { cat: 'Cause and effect', color: '#059669', bg: 'rgba(5,150,105,0.08)', items: ['As a result', 'Therefore', 'Consequently', 'Hence', 'This means that', 'This has led to', 'Due to this'] },
+  { cat: 'Example', color: '#d97706', bg: 'rgba(217,119,6,0.08)', items: ['For example', 'For instance', 'In particular', 'A case in point is', 'This is illustrated by', 'Such as'] },
+  { cat: 'Concession', color: '#dc2626', bg: 'rgba(220,38,38,0.08)', items: ['Admittedly', 'While this may be true', 'It is true that', 'Although', 'Despite the fact that', 'Even though'] },
+  { cat: 'Comparison', color: '#0891b2', bg: 'rgba(8,145,178,0.08)', items: ['Similarly', 'Likewise', 'In the same way', 'By comparison', 'Compared to'] },
+  { cat: 'Conclusion', color: '#6b7280', bg: 'rgba(107,114,128,0.08)', items: ['In conclusion', 'To conclude', 'In summary', 'To summarise', 'Overall', 'To sum up'] },
 ];
 
 interface Ex {
@@ -21,9 +21,32 @@ interface Ex {
   usageNote: string;
 }
 
+/**
+ * Qué señala cada conector. De aquí sale la explicación de CADA opción equivocada.
+ *
+ * El taller traía una sola `explanation` por pregunta —nueve explicaciones para treinta y
+ * dos opciones—, así que elegir mal no enseñaba nada concreto: salía el mismo texto
+ * eligieras lo que eligieras. Un conector es exactamente una relación entre dos cláusulas,
+ * y esa relación se puede nombrar, así que el mensaje dice cuál pediste y cuál hacía falta.
+ */
+const SIGNALS: Record<string, string> = {
+  Furthermore: 'adds a further point on the same side',
+  'In addition': 'adds a further point on the same side',
+  However: 'marks a contrast with what came before',
+  Nevertheless: 'concedes the previous point and then contrasts it',
+  'As a result': 'presents what follows as the effect of what came before',
+  Therefore: 'presents what follows as the effect of what came before',
+  Consequently: 'presents what follows as the effect of what came before',
+  'For example': 'introduces an illustration of the claim just made',
+  'For instance': 'introduces an illustration of the claim just made',
+  Admittedly: 'concedes that the opposing point is valid, before answering it',
+  Similarly: 'draws a parallel between two comparable cases',
+  'In conclusion': 'closes the whole essay, not a single paragraph',
+};
+
 const EXERCISES: Ex[] = [
   {
-    category: 'Adición', catColor: '#0f3d8c', catBg: 'rgba(15,61,140,0.07)',
+    category: 'Addition', catColor: '#0f3d8c', catBg: 'rgba(15,61,140,0.07)',
     before: 'Online learning has democratised access to higher education for students worldwide.',
     correct: 'Furthermore', after: ', it has opened professional development pathways for working adults who cannot attend traditional campuses.',
     options: ['Furthermore', 'However', 'As a result', 'For example'],
@@ -31,7 +54,7 @@ const EXERCISES: Ex[] = [
     usageNote: 'Use Furthermore/Moreover when you are adding a point that SUPPORTS the same argument, not contradicts it.',
   },
   {
-    category: 'Contraste', catColor: '#7c3aed', catBg: 'rgba(124,58,237,0.07)',
+    category: 'Contrast', catColor: '#7c3aed', catBg: 'rgba(124,58,237,0.07)',
     before: 'Renewable energy sources such as solar and wind power have become significantly more affordable in recent years.',
     correct: 'However', after: ', many developing nations still rely heavily on fossil fuels due to the high upfront cost of transitioning their infrastructure.',
     options: ['However', 'Furthermore', 'Therefore', 'For instance'],
@@ -39,7 +62,7 @@ const EXERCISES: Ex[] = [
     usageNote: 'Use However/Nevertheless when the second clause contradicts, limits or qualifies the first. Ask: "Does this go against what I just said?"',
   },
   {
-    category: 'Causa-Efecto', catColor: '#059669', catBg: 'rgba(5,150,105,0.07)',
+    category: 'Cause and effect', catColor: '#059669', catBg: 'rgba(5,150,105,0.07)',
     before: 'The rapid expansion of e-commerce has fundamentally transformed consumer purchasing habits across the globe.',
     correct: 'As a result', after: ', many traditional high-street retailers have been forced to permanently close their stores.',
     options: ['As a result', 'In addition', 'For example', 'Nevertheless'],
@@ -47,7 +70,7 @@ const EXERCISES: Ex[] = [
     usageNote: 'Use As a result/Consequently/Therefore when C2 is a direct consequence of C1. Test: "C1 CAUSED C2."',
   },
   {
-    category: 'Ejemplo', catColor: '#d97706', catBg: 'rgba(217,119,6,0.07)',
+    category: 'Example', catColor: '#d97706', catBg: 'rgba(217,119,6,0.07)',
     before: 'Several countries have achieved significant reductions in car dependency through sustained investment in cycling infrastructure.',
     correct: 'For instance', after: ', Amsterdam now handles over 40% of all daily urban trips by bicycle following three decades of dedicated investment in cycle lanes and storage facilities.',
     options: ['For instance', 'However', 'Consequently', 'In conclusion'],
@@ -55,15 +78,15 @@ const EXERCISES: Ex[] = [
     usageNote: 'Use For example/For instance when what follows is a SPECIFIC CASE that illustrates a general claim. The example should be more concrete than the claim.',
   },
   {
-    category: 'Concesión', catColor: '#dc2626', catBg: 'rgba(220,38,38,0.07)',
+    category: 'Concession', catColor: '#dc2626', catBg: 'rgba(220,38,38,0.07)',
     before: 'Public transport systems require substantial upfront government investment.',
     correct: 'Admittedly', after: ', yet the long-term environmental, social and economic returns on this expenditure vastly outweigh the initial costs for any city serious about sustainability.',
     options: ['Admittedly', 'Furthermore', 'For example', 'Consequently'],
-    explanation: '"Admittedly" introduces a concession — acknowledging a valid point from the opposing view BEFORE countering it. The structure is: "Admittedly [counterargument], yet/however [your stronger argument wins]." This is Band 8 technique. "Furthermore" would add another supporting point. "For example" would introduce an example. "Consequently" would show a result.',
+    explanation: '"Admittedly" introduces a concession — acknowledging a valid point from the opposing view BEFORE countering it. The structure is: "Admittedly [counterargument], yet/however [your stronger argument wins]." This is It is what separates a real concession from a hedge. "Furthermore" would add another supporting point. "For example" would introduce an example. "Consequently" would show a result.',
     usageNote: 'Admittedly/It is true that are used when you want to acknowledge a weakness in your argument or the opponent\'s strongest point BEFORE explaining why your position still holds. Creates a sophisticated, nuanced argument.',
   },
   {
-    category: 'Comparación', catColor: '#0891b2', catBg: 'rgba(8,145,178,0.07)',
+    category: 'Comparison', catColor: '#0891b2', catBg: 'rgba(8,145,178,0.07)',
     before: 'The Nordic countries have consistently achieved high scores on global education rankings through sustained investment in teacher training and school resources.',
     correct: 'Similarly', after: ', East Asian nations such as South Korea and Singapore have reached the top of international PISA tables by prioritising educator quality and curriculum rigour.',
     options: ['Similarly', 'However', 'As a result', 'Admittedly'],
@@ -71,7 +94,7 @@ const EXERCISES: Ex[] = [
     usageNote: 'Use Similarly/Likewise when you are adding a SECOND EXAMPLE or CASE that parallels and reinforces your first example. Both cases support the same claim.',
   },
   {
-    category: 'Conclusión', catColor: '#6b7280', catBg: 'rgba(107,114,128,0.07)',
+    category: 'Conclusion', catColor: '#6b7280', catBg: 'rgba(107,114,128,0.07)',
     before: 'Both individual behaviour change and systemic government policy have critical and complementary roles to play in addressing the climate crisis.',
     correct: 'In conclusion', after: ', only a sustained, coordinated global effort — combining personal responsibility with ambitious regulation — can lead society towards a genuinely sustainable future.',
     options: ['In conclusion', 'Furthermore', 'For instance', 'However'],
@@ -79,7 +102,7 @@ const EXERCISES: Ex[] = [
     usageNote: 'In conclusion/To conclude should only appear ONCE in your essay: in the first sentence of your final paragraph. Never use it in body paragraphs.',
   },
   {
-    category: 'Contraste avanzado', catColor: '#7c3aed', catBg: 'rgba(124,58,237,0.07)',
+    category: 'Advanced contrast', catColor: '#7c3aed', catBg: 'rgba(124,58,237,0.07)',
     before: 'Remote working undeniably offers employees greater flexibility and in many cases increases individual productivity.',
     correct: 'Nevertheless', after: ', it raises serious concerns about workplace cohesion, employee mental health, and the erosion of the boundary between professional and personal life that cannot simply be dismissed.',
     options: ['Nevertheless', 'Furthermore', 'For instance', 'In conclusion'],
@@ -145,14 +168,14 @@ export default function LinkingLanguageClient() {
   if (finished) return (
     <section className="wl-section"><div className="wrap"><div style={{ maxWidth: 720, margin: '0 auto' }}>
       <div className="wl-card" style={{ padding: '2rem', textAlign: 'center', borderTop: '4px solid #0f3d8c' }}>
-        <p style={{ fontSize: '0.75rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.08em', margin: '0 0 0.5rem' }}>Resultado final</p>
+        <p style={{ fontSize: '0.75rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.08em', margin: '0 0 0.5rem' }}>Final score</p>
         <p style={{ fontSize: '3rem', fontWeight: 800, fontFamily: 'var(--mono)', color: 'var(--ink)', margin: '0 0 0.2rem', lineHeight: 1 }}>{score}/{EXERCISES.length * 2}</p>
         <p style={{ fontSize: '0.9rem', color: 'var(--muted)', margin: '0 0 1.5rem' }}>
-          {score >= 14 ? 'Dominio excelente de conectores — nivel Band 8.' : score >= 10 ? 'Buen nivel. Repasa las categorías que fallaste.' : 'Regresa al banco de frases y practica por categoría.'}
+          {score >= 14 ? 'You picked the right relationship almost every time. Eight connectors is not a band score — it is one skill, and this one is solid.' : score >= 10 ? 'Solid. Go back to the categories you missed and read what each connector actually signals.' : 'Work through the connector bank by category before trying again.'}
         </p>
         <div style={{ display: 'flex', gap: '0.65rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-          <button className="btn btn-sm" onClick={() => { setQIdx(0); setSelected(null); setAttempt(0); setLocked(false); setScore(0); setFixPhase(false); setFixFound([false,false,false,false,false]); setFinished(false); }}>Intentar de nuevo</button>
-          <Link href="/practica/ielts/academic/writing/task2/conclusion" className="btn btn-ghost btn-sm">Sub-habilidad 5: Conclusión →</Link>
+          <button className="btn btn-sm" onClick={() => { setQIdx(0); setSelected(null); setAttempt(0); setLocked(false); setScore(0); setFixPhase(false); setFixFound([false,false,false,false,false]); setFinished(false); }}>Try again</button>
+          <Link href="/practica/ielts/academic/writing/task2/conclusion" className="btn btn-ghost btn-sm">Sub-skill 5: Conclusion →</Link>
         </div>
       </div>
     </div></div></section>
@@ -162,15 +185,15 @@ export default function LinkingLanguageClient() {
     <section className="wl-section"><div className="wrap"><div style={{ maxWidth: 720, margin: '0 auto' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
         <button className="btn btn-ghost btn-sm" onClick={() => setFixPhase(false)}>← Ejercicios</button>
-        <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>Análisis crítico — párrafo sobre-conectado</span>
+        <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>Critical reading — an over-linked paragraph</span>
       </div>
       <p className="eyebrow" style={{ marginBottom: '0.4rem' }}><span className="ink-line" />🔬 Fix the paragraph</p>
       <h2 style={{ fontSize: '1.4rem', fontWeight: 700, margin: '0 0 0.4rem' }}>Identifica los 5 errores de conectores</h2>
       <p style={{ color: 'var(--muted)', fontSize: '0.9rem', margin: '0 0 1.25rem', lineHeight: 1.6 }}>
-        Este párrafo tiene cinco errores graves de linking language. Haz clic en cada problema para ver el análisis y la corrección.
+        This paragraph has five serious linking errors. Click each one to see what is wrong and how to repair it.
       </p>
       <div className="wl-card" style={{ padding: '1.25rem', borderLeft: '4px solid #dc2626', marginBottom: '1.25rem' }}>
-        <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#dc2626', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.5rem' }}>Párrafo con errores</p>
+        <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#dc2626', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.5rem' }}>Draft with errors</p>
         <p style={{ margin: 0, fontSize: '0.93rem', lineHeight: 1.85, color: 'var(--ink)', fontStyle: 'italic' }}>&ldquo;{FIX_PARA.original}&rdquo;</p>
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.25rem' }}>
@@ -178,14 +201,14 @@ export default function LinkingLanguageClient() {
           <button key={i} onClick={() => setFixFound(d => d.map((v,j) => j===i ? !v : v))}
             style={{ textAlign: 'left', padding: '0.75rem 0.9rem', borderRadius: 10, border: fixFound[i] ? '2px solid #dc2626' : '1.5px solid var(--line-soft)', background: fixFound[i] ? 'rgba(220,38,38,0.06)' : 'var(--bg-2)', cursor: 'pointer', transition: 'all 0.15s' }}>
             <p style={{ margin: 0, fontSize: '0.87rem', fontWeight: 700, color: fixFound[i] ? '#dc2626' : 'var(--ink)' }}>{fixFound[i] ? '✓ ' : '○ '}{p.label}</p>
-            {fixFound[i] && <p style={{ margin: '0.35rem 0 0', fontSize: '0.82rem', color: 'var(--ink-2)', lineHeight: 1.55 }}><strong>Corrección:</strong> {p.fix}</p>}
+            {fixFound[i] && <p style={{ margin: '0.35rem 0 0', fontSize: '0.82rem', color: 'var(--ink-2)', lineHeight: 1.55 }}><strong>Repair:</strong> {p.fix}</p>}
           </button>
         ))}
       </div>
       {fixFound.every(Boolean) && (
         <div style={{ padding: '1rem 1.25rem', borderRadius: 12, background: 'rgba(5,150,105,0.07)', border: '1px solid rgba(5,150,105,0.25)', marginBottom: '1rem' }}>
-          <p style={{ margin: '0 0 0.35rem', fontSize: '0.85rem', fontWeight: 700, color: '#059669' }}>¡Perfecto — identificaste los 5 errores!</p>
-          <p style={{ margin: 0, fontSize: '0.83rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>Versión corregida: <em>&ldquo;Technology has undeniably transformed the way people communicate. Social media platforms, for instance, allow individuals to maintain relationships across vast distances with unprecedented ease. However, some researchers argue that this convenience comes at the cost of communication depth, with face-to-face interactions becoming increasingly rare in daily life. The implications of this shift for social cohesion require careful consideration.&rdquo;</em></p>
+          <p style={{ margin: '0 0 0.35rem', fontSize: '0.85rem', fontWeight: 700, color: '#059669' }}>All five found.</p>
+          <p style={{ margin: 0, fontSize: '0.83rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>Repaired version: <em>&ldquo;Technology has undeniably transformed the way people communicate. Social media platforms, for instance, allow individuals to maintain relationships across vast distances with unprecedented ease. However, some researchers argue that this convenience comes at the cost of communication depth, with face-to-face interactions becoming increasingly rare in daily life. The implications of this shift for social cohesion require careful consideration.&rdquo;</em></p>
         </div>
       )}
       <button className="btn" onClick={() => setFinished(true)}>Ver resultado final →</button>
@@ -203,19 +226,19 @@ export default function LinkingLanguageClient() {
           <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />🔗 Sub-habilidad 4</p>
           <h1 style={{ fontSize: '1.75rem', letterSpacing: '-0.03em', margin: '0 0 0.4rem', fontWeight: 700 }}>Linking Language</h1>
           <p style={{ color: 'var(--muted)', fontSize: '0.95rem', margin: '0 0 1.5rem', lineHeight: 1.65 }}>
-            Los conectores determinan la lógica de tu argumento. El error más común de Band 5–6 es usar conectores de adición cuando se necesita contraste, o mezclar funciones. Cada conector tiene una función específica — aprende a elegir por la relación lógica entre las cláusulas.
+            Connectors carry the logic of your argument. The most common mistake is reaching for an addition connector when the sentence needs a contrast, or mixing two functions in one phrase. Every connector signals one relationship — choose by the relationship between the clauses, not by variety.
           </p>
 
           <Task2OfficialReviewBlock
-            focus="Elegir conectores según la relación lógica entre ideas."
-            officialFormat="IELTS Academic Writing Task 2 evalúa coherencia y cohesión dentro de un ensayo. Linking language es una habilidad transversal, no una tarea oficial separada."
-            welearnStrategy="Entrenamos conectores por función para evitar listas mecánicas y mejorar la progresión real del argumento."
-            answerCheck="Una respuesta fuerte usa conectores porque la relación lo exige: contraste, causa, ejemplo, concesión o cierre, no por decorar el texto."
+            focus="Choose connectors by the relationship between the ideas, not by variety."
+            officialFormat="IELTS assesses Coherence and Cohesion across the whole response. Linking language is one part of that criterion, not a separate official task."
+            welearnStrategy="WeLearn practises connectors by function, so the argument progresses instead of being decorated with a list of transition phrases."
+            answerCheck="A strong response uses a connector because the relationship requires it: contrast, cause, example, concession or closing. Nothing here is scored automatically."
           />
 
           <div className="wl-card" style={{ padding: '1.25rem', marginBottom: '1.5rem', cursor: 'pointer' }} onClick={() => setShowBank(v => !v)}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <p style={{ margin: 0, fontWeight: 700, fontSize: '0.95rem', color: 'var(--ink)' }}>📖 Banco completo de conectores (7 categorías)</p>
+              <p style={{ margin: 0, fontWeight: 700, fontSize: '0.95rem', color: 'var(--ink)' }}>📖 The full connector bank (7 categories)</p>
               <span style={{ color: 'var(--muted)' }}>{showBank ? '▲' : '▼'}</span>
             </div>
             {showBank && (
@@ -241,13 +264,13 @@ export default function LinkingLanguageClient() {
 
           <div style={{ marginBottom: '0.6rem' }}>
             <span style={{ fontSize: '0.72rem', padding: '0.2rem 0.6rem', borderRadius: 10, background: q.catBg, color: q.catColor, border: `1px solid ${q.catColor}35`, fontFamily: 'var(--mono)', fontWeight: 700 }}>
-              Función: {q.category}
+              Function: {q.category}
             </span>
             {q.usageNote && <p style={{ margin: '0.4rem 0 0', fontSize: '0.78rem', color: 'var(--muted)', lineHeight: 1.5, fontStyle: 'italic' }}>{q.usageNote}</p>}
           </div>
 
           <div className="wl-card" style={{ padding: '1.5rem', borderLeft: '4px solid #0f3d8c', marginBottom: '1.25rem' }}>
-            <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.75rem' }}>Completa la oración</p>
+            <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.75rem' }}>Complete the sentence</p>
             <p style={{ margin: 0, fontSize: '1rem', lineHeight: 1.85, color: 'var(--ink)' }}>
               {q.before}
               {selected !== null ? (
@@ -279,24 +302,24 @@ export default function LinkingLanguageClient() {
 
           {showHint && (
             <div style={{ padding: '0.85rem 1.1rem', borderRadius: 10, background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.3)', marginBottom: '0.85rem' }}>
-              <p style={{ margin: '0 0 0.3rem', fontSize: '0.78rem', fontWeight: 800, color: '#d97706', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.07em' }}>Pista</p>
-              <p style={{ margin: '0 0 0.5rem', fontSize: '0.85rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>Piensa en la relación lógica entre las dos cláusulas. ¿La segunda cláusula APOYA, CONTRASTA, ES CONSECUENCIA DE, o EJEMPLIFICA la primera?</p>
-              {canRetry && <button className="btn btn-sm" onClick={retry}>Intentar de nuevo →</button>}
+              <p style={{ margin: '0 0 0.3rem', fontSize: '0.78rem', fontWeight: 800, color: '#d97706', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.07em' }}>Hint</p>
+              <p style={{ margin: '0 0 0.5rem', fontSize: '0.85rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>Think about the relationship between the two clauses. Does the second one ADD to the first, CONTRAST with it, FOLLOW FROM it, or ILLUSTRATE it?</p>
+              {canRetry && <button className="btn btn-sm" onClick={retry}>Try again →</button>}
             </div>
           )}
 
           {locked && (
             <div style={{ padding: '1rem 1.25rem', borderRadius: 12, background: isCorrect ? 'rgba(5,150,105,0.07)' : 'rgba(15,61,140,0.05)', border: `1px solid ${isCorrect ? 'rgba(5,150,105,0.25)' : 'rgba(15,61,140,0.2)'}`, marginBottom: '1rem' }}>
               <p style={{ fontSize: '0.78rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.07em', fontFamily: 'var(--mono)', margin: '0 0 0.4rem', color: isCorrect ? '#059669' : '#0f3d8c' }}>
-                {isCorrect ? `✓ Correcto — "${q.correct}"` : `Respuesta: "${q.correct}"`}
+                {isCorrect ? `✓ Correct — "${q.correct}"` : `The answer was "${q.correct}"`}
               </p>
-              <p style={{ margin: 0, fontSize: '0.87rem', lineHeight: 1.65, color: 'var(--ink-2)' }}>{q.explanation}</p>
+              <p style={{ margin: 0, fontSize: '0.87rem', lineHeight: 1.65, color: 'var(--ink-2)' }}>{isCorrect || !selected ? q.explanation : `"${selected}" ${SIGNALS[selected] ?? 'signals a different relationship'}. This sentence needs a connector that ${SIGNALS[q.correct] ?? 'matches the relationship between the clauses'}. ${q.explanation}`}</p>
             </div>
           )}
 
           {locked && (
             <button className="btn btn-sm" onClick={nextQ}>
-              {qIdx < EXERCISES.length - 1 ? 'Siguiente →' : 'Fix the paragraph →'}
+              {qIdx < EXERCISES.length - 1 ? 'Next →' : 'Fix the paragraph →'}
             </button>
           )}
         </div>

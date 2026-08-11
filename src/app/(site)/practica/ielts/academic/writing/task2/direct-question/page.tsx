@@ -4,7 +4,7 @@ import IeltsTask2PromptBank from '@/components/exam-practice/IeltsTask2PromptBan
 import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
 import { IELTS_TASK2_DIRECT_QUESTION_PROMPTS } from '@/data/practica-exams/seo-catalog';
 
-import DirectQuestionClient from './DirectQuestionClient';
+import EssayTypePathClient from '../type-paths/EssayTypePathClient';
 
 const URL = 'https://www.idiomaswl.com/practica/ielts/academic/writing/task2/direct-question';
 
@@ -29,7 +29,7 @@ const FAQS = [
 export const metadata: Metadata = {
   title: 'IELTS Writing Task 2: direct-question essays',
   description:
-    'Practica IELTS Academic Writing Task 2 direct-question essays: two-part questions, estructura, respuestas explícitas y modelo Band 7 explicado.',
+    'Practica IELTS Academic Writing Task 2 direct-question essays: two-part questions, estructura, respuestas explícitas y modelo explicado.',
   keywords: [
     'IELTS direct question essay',
     'IELTS two part question essay',
@@ -77,15 +77,15 @@ export default function Page() {
           { name: 'Direct question', url: URL },
         ]}
       />
-      <DirectQuestionClient faqs={FAQS} />
+      <EssayTypePathClient type="direct-questions" faqs={FAQS} />
       <section className="wl-section" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div style={{ maxWidth: 1040, margin: '0 auto' }}>
             <IeltsTask2PromptBank
               prompts={IELTS_TASK2_DIRECT_QUESTION_PROMPTS}
-              eyebrow="Banco Direct Question"
-              title="2 prompts originales para entrenar direct-question essays"
-              intro="en esta ruta practicamos two-part questions donde cada pregunta necesita una respuesta visible, un párrafo de desarrollo propio y una conclusión que no deje media tarea sin cerrar."
+              eyebrow="Direct question prompt bank"
+              title="Two original prompts to train direct-question essays"
+              intro="this route trains two-part questions: each question needs a visible answer, a body paragraph of its own, and a conclusion that closes both — not the one you found easier."
             />
           </div>
         </div>

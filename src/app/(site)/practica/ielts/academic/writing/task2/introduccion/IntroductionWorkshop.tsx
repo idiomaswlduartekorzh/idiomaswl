@@ -84,6 +84,14 @@ export default function IntroductionWorkshop({ example, essayType }: { example: 
 
   const words = (value: string) => value.trim().split(/\s+/).filter(Boolean).length;
   const writingReady = words(written.paraphrase) >= 8 && words(written.position) >= 10 && words(written.premises) >= 6;
+  /**
+   * Cuántas palabras faltan en total para poder comparar.
+   *
+   * Los tres umbrales existían desde siempre —8 para la paráfrasis, 10 para la posición y 6
+   * para las premisas— pero no se decían en ninguna parte: el botón estaba apagado y nada
+   * explicaba por qué. Un botón bloqueado en silencio no es una restricción, es un callejón.
+   */
+  const missingWords = Math.max(0, 8 - words(written.paraphrase)) + Math.max(0, 10 - words(written.position)) + Math.max(0, 6 - words(written.premises));
 
   /**
    * Lo único que se puede comprobar de verdad sobre una paráfrasis sin analizarla: si es
@@ -160,34 +168,35 @@ export default function IntroductionWorkshop({ example, essayType }: { example: 
           <label className={styles.guidedField}>
             <strong>Your hook <em>· optional</em></strong>
             <span>The claim your essay will prove. Somebody must be able to disagree with it. No “I” here.</span>
-            <textarea rows={2} value={written.hook} onChange={(event) => { setWritten((w) => ({ ...w, hook: event.target.value })); setModelVisible(false); }} placeholder="Leave this empty if you are short of time — a three-sentence introduction is still complete." />
+            <textarea spellCheck={false} autoCorrect="off" autoCapitalize="off" rows={2} value={written.hook} onChange={(event) => { setWritten((w) => ({ ...w, hook: event.target.value })); setModelVisible(false); }} placeholder="Leave this empty if you are short of time — a three-sentence introduction is still complete." />
             <small>{words(written.hook)} words · no minimum</small>
           </label>
           <label className={styles.guidedField}>
             <strong>Your paraphrase</strong>
             <span>Restate the prompt. Keep the meaning, change the wording.</span>
-            <textarea rows={3} value={written.paraphrase} onChange={(event) => { setWritten((w) => ({ ...w, paraphrase: event.target.value })); setModelVisible(false); }} placeholder="Rewrite the prompt in your own words…" />
+            <textarea spellCheck={false} autoCorrect="off" autoCapitalize="off" rows={3} value={written.paraphrase} onChange={(event) => { setWritten((w) => ({ ...w, paraphrase: event.target.value })); setModelVisible(false); }} placeholder="Rewrite the prompt in your own words…" />
             <small>{words(written.paraphrase)} words · minimum 8</small>
             {copiedRun && <small className={styles.copyWarning}>Copied from the prompt: “…{copiedRun}…”. Copied words are not counted by the examiner.</small>}
           </label>
           <label className={styles.guidedField}>
             <strong>Your position</strong>
             <span>Answer the instruction directly. This is where “I” belongs.</span>
-            <textarea rows={3} value={written.position} onChange={(event) => { setWritten((w) => ({ ...w, position: event.target.value })); setModelVisible(false); }} placeholder="I largely agree that…" />
+            <textarea spellCheck={false} autoCorrect="off" autoCapitalize="off" rows={3} value={written.position} onChange={(event) => { setWritten((w) => ({ ...w, position: event.target.value })); setModelVisible(false); }} placeholder="I largely agree that…" />
             <small>{words(written.position)} words · minimum 10</small>
           </label>
           <label className={styles.guidedField}>
             <strong>Your two reasons</strong>
             <span>Very short. These become Body 1 and Body 2.</span>
-            <textarea rows={3} value={written.premises} onChange={(event) => { setWritten((w) => ({ ...w, premises: event.target.value })); setModelVisible(false); }} placeholder="…because X and because Y." />
+            <textarea spellCheck={false} autoCorrect="off" autoCapitalize="off" rows={3} value={written.premises} onChange={(event) => { setWritten((w) => ({ ...w, premises: event.target.value })); setModelVisible(false); }} placeholder="…because X and because Y." />
             <small>{words(written.premises)} words · minimum 6</small>
           </label>
         </div>
         <div className={styles.workshopActions}>
-          <button type="button" onClick={() => setModelVisible(true)} disabled={!writingReady}><Eye size={17} /> Compare with the expert model</button>
+          <button type="button" onClick={() => setModelVisible(true)} disabled={!writingReady}><Eye size={17} /> Show me the model</button>
+        {!writingReady && <p className={styles.unlockHint}>{missingWords} more word{missingWords === 1 ? '' : 's'} to go before you can compare.</p>}
         </div>
         {modelVisible && <div className={styles.bodyModelReveal} aria-live="polite">
-          <span>Expert comparison</span>
+          <span>Compare with the WeLearn model</span>
           <div className={styles.completeParagraph}>
             <strong>Complete model introduction</strong>
             <p className={styles.coloredParagraph}>

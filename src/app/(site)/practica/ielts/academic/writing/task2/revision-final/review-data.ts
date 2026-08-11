@@ -1,9 +1,28 @@
 import type { EssayTypeId } from '../introduccion/introduction-data';
 import { BODY_ONE_LESSONS } from '../body-1/body-one-data';
+import { TASK2_PROMPT_BANK, type ModelParagraph } from '../tarea-completa/task2-prompt-bank';
 
 export type ReviewLayer = { label: string; tone: 'claim' | 'development' | 'contrast' | 'example' | 'link'; question: string };
-export type ReviewCase = { title: string; prompt: string; draft: string; issue: string; category: string; revision: string; explanation: string };
+export type ReviewCase = {
+  title: string; prompt: string; draft: string; issue: string; category: string; revision: string; explanation: string;
+  /**
+   * El ensayo completo y correcto de ESTE enunciado, para leerlo antes de juzgar el
+   * borrador.
+   *
+   * Sin él, seis de los veinticinco casos eran indetectables. El fallo de «Task Response» es
+   * una AUSENCIA —no se contesta la segunda pregunta, no se da la opinión, no se compara—, y
+   * una ausencia no se ve en un fragmento de dos frases: haría falta el ensayo entero para
+   * notar que algo no está. Se leía la descripción del problema y se emparejaba con la
+   * etiqueta, que es lo contrario de revisar.
+   *
+   * Sale del banco de Tarea Completa, que compone los cuatro párrafos de los mismos 25
+   * enunciados. No es material nuevo: es el ensayo que el estudiante ya construyó por pasos.
+   */
+  model: ModelParagraph[];
+};
 export type ReviewLesson = { id: EssayTypeId; shortLabel: string; instruction: string; decisiveCheck: string; layers: ReviewLayer[]; cases: ReviewCase[] };
+
+const modelByPrompt = new Map(TASK2_PROMPT_BANK.map((item) => [item.prompt, item.model]));
 
 const commonLayers: ReviewLayer[] = [
   { label: 'Task Response', tone: 'claim', question: 'Did I answer every instruction and make any required position visible?' },
@@ -70,7 +89,7 @@ const meta: Record<EssayTypeId, Pick<ReviewLesson, 'shortLabel' | 'instruction' 
 
 export const REVIEW_LESSONS: ReviewLesson[] = BODY_ONE_LESSONS.map((source) => ({
   id: source.id, ...meta[source.id], layers: commonLayers,
-  cases: source.examples.map((example, index) => ({ title: example.title, prompt: example.prompt, draft: categorySets[source.id][index][4], category: categorySets[source.id][index][0], issue: categorySets[source.id][index][1], revision: categorySets[source.id][index][2], explanation: categorySets[source.id][index][3] })),
+  cases: source.examples.map((example, index) => ({ title: example.title, prompt: example.prompt, draft: categorySets[source.id][index][4], category: categorySets[source.id][index][0], issue: categorySets[source.id][index][1], revision: categorySets[source.id][index][2], explanation: categorySets[source.id][index][3], model: modelByPrompt.get(example.prompt) ?? [] })),
 }));
 
 /**

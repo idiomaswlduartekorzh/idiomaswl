@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 import { Task2SkillStructuredData } from '../Task2SkillStructuredData'
 
 export const metadata: Metadata = {
-  title: 'IELTS Writing Task 2 — Párrafos Cuerpo — PEEL y argumentación',
-  description: 'Ejercicios de párrafos cuerpo para el IELTS Writing Task 2 con la estructura PEEL: Point, Evidence, Explanation, Link. Conectores y vocabulario académico Band 7.',
-  keywords: ['IELTS párrafos cuerpo', 'IELTS PEEL structure', 'IELTS body paragraphs', 'IELTS writing argumentación'],
+  title: 'IELTS Writing Task 2 — Párrafos de Cuerpo — estructura TEEL',
+  description: 'Ejercicios de párrafos de cuerpo para el IELTS Writing Task 2 con la estructura TEEL: topic sentence, explicación del mecanismo, ejemplo con cifras y link. Ejemplo resuelto, 5 párrafos guiados y un diagnóstico de 7 observaciones.',
+  keywords: ['IELTS párrafos cuerpo', 'IELTS TEEL structure', 'IELTS body paragraphs', 'IELTS writing argumentación'],
   openGraph: {
-    title: 'IELTS Task 2: Párrafos Cuerpo — PEEL y argumentación',
-    description: 'Ejercicios de párrafos cuerpo para el IELTS Writing Task 2 con la estructura PEEL: Point, Evidence, Explanation, Link. Conectores y vocabulario académico Band 7.',
+    title: 'IELTS Task 2: Párrafos de Cuerpo — estructura TEEL',
+    description: 'Ejercicios de párrafos de cuerpo para el IELTS Writing Task 2 con la estructura TEEL: topic sentence, explicación del mecanismo, ejemplo con cifras y link. Ejemplo resuelto, 5 párrafos guiados y un diagnóstico de 7 observaciones.',
     type: 'website', locale: 'es_CO',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ielts/academic/writing/task2/parrafos-cuerpo' },

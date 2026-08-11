@@ -34,12 +34,28 @@ function isCloseMatch(answer: string, expected: string, field: MapField) {
   });
 }
 
-function getPositionOptions(type: EssayTypeId, scope: string) {
+/**
+ * La pregunta que abre el paso 2, en inglés llano y distinta para cada familia.
+ *
+ * Decía «Which planning decision will control the essay?» para las cuatro familias que no
+ * son opinión. Nadie sabe qué es una controlling planning decision, y las opciones eran
+ * peores: en problema-solución salían «Follow the exact route: …» y «Recheck the requested
+ * route», que no son dos planes entre los que elegir sino una orden y un regaño.
+ */
+function getDecisionQuestion(type: EssayTypeId) {
+  if (type === 'opinion') return 'What is your position?';
+  if (type === 'discussion') return 'Which view will you support?';
+  if (type === 'problem-solution') return 'How will you split the two body paragraphs?';
+  if (type === 'advantages-disadvantages') return 'Which side carries more weight?';
+  return 'How will you answer the two questions?';
+}
+
+function getPositionOptions(type: EssayTypeId) {
   if (type === 'opinion') return ['Agree', 'Mostly agree', 'Mostly disagree', 'Disagree'];
-  if (type === 'discussion') return ['View 1 is stronger', 'View 2 is stronger', 'Balanced synthesis'];
-  if (type === 'problem-solution') return [`Follow the exact route: ${scope}`, 'Recheck the requested route'];
-  if (type === 'advantages-disadvantages') return ['Advantages outweigh disadvantages', 'Disadvantages outweigh advantages', 'Balanced trade-off'];
-  return ['Answer Question 1 in Body 1 and Question 2 in Body 2', 'Use a different route and justify it'];
+  if (type === 'discussion') return ['View 1 is stronger', 'View 2 is stronger', 'Both matter, and I say why'];
+  if (type === 'problem-solution') return ['Body 1 = the causes, Body 2 = the solutions', 'Body 1 = one problem and its solution, Body 2 = a second problem and its solution'];
+  if (type === 'advantages-disadvantages') return ['The advantages weigh more', 'The disadvantages weigh more', 'They are evenly balanced, and I say why'];
+  return ['Body 1 answers Question 1, Body 2 answers Question 2', 'Both paragraphs answer both questions through one shared idea'];
 }
 
 function getPlanFields(type: EssayTypeId, decision: string): PlanField[] {
@@ -129,11 +145,15 @@ export default function PromptAnalysisWorkshop({ type, example }: { type: EssayT
           ['scope', 'Scope', 'What must your answer make visible?', 'Explain what the complete response must cover.'],
         ] as const).map(([field, label, help, placeholder]) => <label key={field} className={styles.guidedField}>
           <strong>{label}</strong><span>{help}</span>
-          <textarea value={mapAnswers[field]} onChange={(event) => updateMap(field, event.target.value)} placeholder={placeholder} rows={3} />
-          {mapChecked && <small className={mapResults[field] ? styles.matchGood : styles.matchReview}>{mapResults[field] ? 'Close match. Compare it with the model.' : 'Review the model wording and refine your answer.'}</small>}
+          <textarea value={mapAnswers[field]} onChange={(event) => updateMap(field, event.target.value)} placeholder={placeholder} rows={3} spellCheck={false} autoCorrect="off" autoCapitalize="off" />
+          {/* Esto compara palabras, no significado, así que dice exactamente eso. Antes
+              ponía «Close match» y «Review the model wording», que suenan a veredicto sobre
+              un texto libre: aquí no se puede dar ninguno. */}
+          {mapChecked && <small className={mapResults[field] ? styles.matchGood : styles.matchReview}>{mapResults[field] ? 'Your wording overlaps the model. Read both and check the meaning is the same.' : 'Your wording is different from the model. Read both and decide whether you left something out.'}</small>}
         </label>)}
       </div>
-      <div className={styles.workshopActions}><button type="button" onClick={() => setMapChecked(true)} disabled={!mapReady}><Eye size={17} /> Check my prompt map</button></div>
+      <div className={styles.workshopActions}><button type="button" onClick={() => setMapChecked(true)} disabled={!mapReady}><Eye size={17} /> Show me the model map</button></div>
+      {!mapReady && <p className={styles.unlockHint}>Fill in all three boxes to see the model.</p>}
       {mapChecked && <div className={styles.modelMap} aria-live="polite">
         <div><span>Model topic</span><p>{expected.topic}</p></div>
         <div><span>Model instruction</span><p>{expected.instruction}</p></div>
@@ -143,15 +163,16 @@ export default function PromptAnalysisWorkshop({ type, example }: { type: EssayT
     </div>
 
     <div className={`${styles.workshopStep} ${!mapChecked ? styles.stepLocked : ''}`}>
-      <div className={styles.stepLabel}>{mapChecked ? <CheckCircle2 size={20} /> : <LockKeyhole size={20} />}<strong>Step 2</strong><span>Choose a route and build your paragraph plan</span></div>
+      <div className={styles.stepLabel}>{mapChecked ? <CheckCircle2 size={20} /> : <LockKeyhole size={20} />}<strong>Step 2</strong><span>Decide your answer, then give each paragraph one job</span></div>
       {mapChecked && <>
         <fieldset className={styles.decisionFieldset}>
-          <legend>{type === 'opinion' ? 'What is your position?' : 'Which planning decision will control the essay?'}</legend>
-          <div className={styles.decisionOptions}>{getPositionOptions(type, example.map.scope).map((option) => <label key={option} className={decision === option ? styles.decisionSelected : ''}><input type="radio" name={`decision-${example.title}`} value={option} checked={decision === option} onChange={() => { setDecision(option); setPlanAnswers({}); setPlanChecked(false); }} /><span>{option}</span></label>)}</div>
+          <legend>{getDecisionQuestion(type)}</legend>
+          <div className={styles.decisionOptions}>{getPositionOptions(type).map((option) => <label key={option} className={decision === option ? styles.decisionSelected : ''}><input type="radio" name={`decision-${example.title}`} value={option} checked={decision === option} onChange={() => { setDecision(option); setPlanAnswers({}); setPlanChecked(false); }} /><span>{option}</span></label>)}</div>
         </fieldset>
-        {decision ? <div className={styles.planGrid}>{planFields.map((field) => <label key={field.id} className={styles.guidedField}><strong>{field.label}</strong><span>{field.hint}</span><textarea rows={3} value={planAnswers[field.id] ?? ''} onChange={(event) => { setPlanAnswers((current) => ({ ...current, [field.id]: event.target.value })); setPlanChecked(false); }} /></label>)}</div> : <p className={styles.unlockHint}>Choose a planning decision to unlock the boxes.</p>}
-        <div className={styles.workshopActions}><button type="button" onClick={() => setPlanChecked(true)} disabled={!planReady}><CheckCircle2 size={17} /> Verify my plan</button></div>
-        {planChecked && <div className={styles.planReveal} aria-live="polite"><span>Expert comparison</span><div><strong>Position or controlling decision</strong><p>{example.map.position}</p></div><div><strong>Model Body 1 route</strong><p>{example.map.bodyRoute[0]}</p></div><div><strong>Model Body 2 route</strong><p>{example.map.bodyRoute[1]}</p></div><p>Keep your own ideas when they answer the same instruction clearly. Revise only the boxes that drift away from the topic, scope or chosen position.</p></div>}
+        {decision ? <div className={styles.planGrid}>{planFields.map((field) => <label key={field.id} className={styles.guidedField}><strong>{field.label}</strong><span>{field.hint}</span><textarea rows={3} value={planAnswers[field.id] ?? ''} onChange={(event) => { setPlanAnswers((current) => ({ ...current, [field.id]: event.target.value })); setPlanChecked(false); }} spellCheck={false} autoCorrect="off" autoCapitalize="off" /></label>)}</div> : <p className={styles.unlockHint}>Pick one of the answers above to open the boxes.</p>}
+        <div className={styles.workshopActions}><button type="button" onClick={() => setPlanChecked(true)} disabled={!planReady}><CheckCircle2 size={17} /> Show me the model plan</button></div>
+        {decision && !planReady && <p className={styles.unlockHint}>Write a few words in all {planFields.length} boxes to see the model plan.</p>}
+        {planChecked && <div className={styles.planReveal} aria-live="polite"><span>Compare with the WeLearn model</span><div><strong>The thesis this prompt needs</strong><p>{example.map.position}</p></div><div><strong>What Body 1 does</strong><p>{example.map.bodyRoute[0]}</p></div><div><strong>What Body 2 does</strong><p>{example.map.bodyRoute[1]}</p></div><p>Keep your own ideas when they answer the same question clearly. Change only the boxes that drift away from the topic, from what the prompt requires, or from the answer you chose.</p></div>}
       </>}
     </div>
   </div>;

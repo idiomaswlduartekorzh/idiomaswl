@@ -1,343 +1,345 @@
 'use client';
+
 import { useState } from 'react';
 import Link from 'next/link';
+import { ArrowLeft, ArrowRight, CheckCircle2, RotateCcw } from 'lucide-react';
 import Task2OfficialReviewBlock from '../Task2OfficialReviewBlock';
 import Task2LegoGuide from '../Task2LegoGuide';
+import { BODY_DRILLS, BODY_PLANS, DIAGNOSTIC, WORKED_EXAMPLE } from './body-paragraph-drills';
+import styles from '../introduccion/page.module.css';
 
-const BAND_COMPARE = {
-  prompt: 'Governments should invest more in public transport than in road construction.',
-  band6: {
-    text: 'Public transport is more efficient than cars. When more people use buses and trains, there are fewer cars on the road. This means less traffic. For example, Singapore has a good transport system. This shows that public transport is better.',
-    problems: [
-      'T — Topic sentence too vague: "more efficient" without specifying what or why.',
-      'E — Explanation is obvious reasoning, no mechanism or data. Anyone knows fewer cars = less traffic.',
-      'E — Example is generic ("Singapore has a good system") — no specific data, no figures.',
-      'L — Link is circular ("shows that public transport is better") — just repeats the claim without connecting to a bigger argument.',
-    ],
-  },
-  band8: {
-    text: 'Public transport represents a dramatically more efficient use of urban infrastructure than private vehicles. A single articulated bus carries up to 120 passengers while occupying the space of three or four cars, simultaneously reducing road congestion and per-passenger emissions. Singapore\'s Land Transport Authority reported that its mass rapid transit expansion reduced private car usage by 28% between 2010 and 2022, handling 3.4 million daily journeys. This evidence strongly suggests that sustained government investment in mass transit delivers measurable improvements in urban mobility for the vast majority of city residents.',
-    strengths: [
-      'T — Specific, precise claim with academic vocabulary ("dramatically more efficient use of urban infrastructure").',
-      'E — Concrete mechanism: specific data (120 passengers vs 3–4 car spaces) that proves the claim logically.',
-      'E — Precise example: named authority, specific percentage (28%), specific figure (3.4M journeys), time period.',
-      'L — Links back to the essay\'s main argument: connects evidence to the broader claim about government investment.',
-    ],
-  },
-};
+/**
+ * Sub-habilidad 3 — párrafos de cuerpo (TEEL).
+ *
+ * QUÉ SE MIDIÓ Y QUÉ SE ARREGLÓ
+ *
+ *   · El «diagnóstico» tenía cuatro items y los CUATRO eran defectos reales; el campo
+ *     `correct` no lo leía nadie. Pulsar los cuatro botones bastaba para que la página
+ *     felicitara. Ahora hay siete observaciones, tres de ellas falsas, y marcarlo todo
+ *     ya no aprueba.
+ *   · El botón de ensamblar se bloqueaba en silencio por debajo de quince caracteres. Ahora
+ *     cada caja anuncia su mínimo antes de escribir y dice cuántas palabras faltan.
+ *   · Once menciones de banda, entre ellas la que rotulaba el párrafo modelo, sobre un
+ *     texto que la página no lee. Fuera las once.
+ *   · Los colores del diagnóstico salían de un array indexado por posición: reordenar los
+ *     items descolocaba las etiquetas T/E/E/L. Ahora salen del propio dato.
+ *   · La tabla de Body 1 / Body 2 era una copia en español de lo que ya dice `ESSAY_TYPES`.
+ *     Ahora se deriva de ahí.
+ *
+ * EL EJEMPLO RESUELTO VA ANTES DE ESCRIBIR
+ *
+ * Watch one, then you try: primero el párrafo flojo y el bueno del mismo enunciado, bloque a
+ * bloque y con lo que cambió entre uno y otro; después los cinco que escribe el alumno.
+ */
 
-interface Exercise {
-  context: string; type: string;
-  topicSentence: string;
-  e1label: string; e1model: string;
-  e2label: string; e2model: string;
-  lLabel: string; lModel: string;
+const TONE: Record<string, string> = { T: styles.claim, E1: styles.development, E2: styles.evidence, L: styles.link };
+
+const countWords = (value: string) => value.trim().split(/\s+/u).filter(Boolean).length;
+
+function Feedback({ ok, children }: { ok: boolean; children: React.ReactNode }) {
+  return <div className={`${styles.feedback} ${ok ? styles.feedbackCorrect : styles.feedbackIncorrect}`} aria-live="polite">
+    <CheckCircle2 size={20} /><div>{children}</div>
+  </div>;
 }
 
-const EXERCISES: Exercise[] = [
-  {
-    type: 'Opinión — argumento principal',
-    context: 'Prompt: "Governments should invest more in public transport than in roads. To what extent do you agree?"',
-    topicSentence: 'Public transport represents a dramatically more efficient use of urban infrastructure than private vehicle networks.',
-    e1label: 'Explica el mecanismo — ¿por qué es más eficiente? (1–2 oraciones, con datos o lógica específica, sin ejemplo de país todavía)',
-    e1model: 'A single articulated bus carries up to 120 passengers while occupying the space of only three or four cars, meaning that investing in bus fleets reduces road congestion proportionally while cutting per-passenger emissions significantly.',
-    e2label: 'Example — da un caso concreto con nombre, cifras o estudio (ciudad, país, informe)',
-    e2model: 'Singapore\'s Land Transport Authority reported that its mass rapid transit expansion reduced private car usage by 28% between 2010 and 2022, handling 3.4 million daily journeys at a fraction of the road space required by an equivalent number of vehicles.',
-    lLabel: 'Link — conecta la evidencia con el argumento central del ensayo (empieza con "This demonstrates / suggests / shows that...")',
-    lModel: 'This evidence strongly demonstrates that sustained government investment in mass transit infrastructure delivers measurable improvements in urban mobility for the majority of city residents, making it a far superior use of public funds than road expansion.',
-  },
-  {
-    type: 'Opinión — refutación de contraargumento',
-    context: 'Prompt: "Advertising aimed at children should be banned. To what extent do you agree?"',
-    topicSentence: 'Admittedly, a total ban on children\'s advertising would restrict commercial activity significantly, yet this objection fundamentally misunderstands the power imbalance between advertisers and young audiences.',
-    e1label: 'Explica por qué el contraargumento no es suficiente para refutarte — ¿cuál es la falla lógica o moral en ese argumento?',
-    e1model: 'Children below the age of approximately eight lack the cognitive development to distinguish between promotional content and objective information, making them uniquely vulnerable to commercial manipulation in ways that adult consumers are not.',
-    e2label: 'Example — evidencia que demuestra la vulnerabilidad de los niños ante la publicidad (estudio, dato, ejemplo real)',
-    e2model: 'A landmark 2019 study by the American Psychological Association found that children under seven cannot identify the persuasive intent of advertisements, while 73% of children aged 8–12 reported wanting products they had seen advertised within 24 hours of exposure.',
-    lLabel: 'Link — explica cómo esta evidencia justifica la posición a favor del ban (supera el contraargumento)',
-    lModel: 'Given this documented vulnerability, the commercial inconvenience of restricting advertising is vastly outweighed by the necessity of protecting children from exploitation, and the objection that a ban restricts commerce fails to account for the ethical obligations society has towards its most impressionable members.',
-  },
-  {
-    type: 'Discusión — presentando una postura (View A)',
-    context: 'Prompt: "Some think schools should group students by ability. Others believe mixed-ability classes are better. Discuss both views."',
-    topicSentence: 'Proponents of ability grouping argue that streaming students by academic level allows teachers to deliver instruction precisely calibrated to the needs of each group, maximising learning efficiency.',
-    e1label: 'Explana el mecanismo — ¿cómo exactamente mejora la enseñanza cuando los estudiantes tienen niveles similares?',
-    e1model: 'When all students in a class share a similar baseline, teachers can set a consistent pace and level of complexity without simultaneously leaving advanced students unchallenged and struggling students behind, creating a more productive learning environment for everyone in that group.',
-    e2label: 'Example — un caso donde la agrupación por habilidad ha dado resultados positivos (sistema educativo, estudio, país)',
-    e2model: 'In the United Kingdom, secondary school setting in mathematics has been associated with higher GCSE attainment in higher-ability groups, with a 2020 Education Endowment Foundation study finding that high-achieving students in setted classes outperformed their peers in mixed-ability environments by an average of three months\' additional progress.',
-    lLabel: 'Link — concluye cómo este punto demuestra que el agrupamiento tiene cierto mérito (sin cerrar definitivamente el debate — eso va en tu conclusión)',
-    lModel: 'This suggests that, at least for certain subjects and age groups, ability grouping can provide genuine academic benefits for high-achieving students, lending some credibility to the case for streaming despite its limitations.',
-  },
-  {
-    type: 'Problema-Solución — párrafo de problema',
-    context: 'Prompt: "Obesity rates have risen sharply. What are the main causes and what can be done?"',
-    topicSentence: 'One of the most significant drivers of rising obesity rates is the dramatic reduction in habitual physical activity caused by increasingly sedentary modern lifestyles.',
-    e1label: 'Explica el mecanismo — ¿cómo llevan los estilos de vida sedentarios específicamente a la obesidad? (no solo "people move less")',
-    e1model: 'As desk-based employment has replaced manual labour, and as digital entertainment has supplanted outdoor recreation, the average daily caloric expenditure through physical activity has fallen significantly, creating a chronic energy surplus that the body stores as fat over time.',
-    e2label: 'Example — un dato o estudio que cuantifique la reducción en actividad física y su relación con el aumento de peso',
-    e2model: 'The World Health Organisation estimates that physical inactivity is responsible for up to 6% of the global burden of non-communicable diseases, while a 2021 Lancet study found that adults in high-income countries engage in an average of just 17 minutes of moderate physical activity per day — less than a third of the recommended minimum.',
-    lLabel: 'Link — conecta con el tema del ensayo (necesidad de intervenciones)',
-    lModel: 'This chronic inactivity, embedded into the structure of modern work and leisure, suggests that effective obesity reduction strategies must address lifestyle architecture rather than simply encouraging individuals to exercise more.',
-  },
-  {
-    type: 'Problema-Solución — párrafo de solución',
-    context: 'Prompt: "Obesity rates have risen sharply. What are the main causes and what can be done?"',
-    topicSentence: 'The most effective governmental response to rising obesity would combine targeted taxation on ultra-processed foods with substantial investment in accessible public recreational infrastructure.',
-    e1label: 'Explica el mecanismo dual — ¿cómo funciona el impuesto AND cómo funciona la infraestructura? Necesitas explicar AMBOS componentes.',
-    e1model: 'A sugar and saturated fat levy modelled on the UK\'s Soft Drinks Industry Levy would raise the relative cost of nutritionally poor foods, nudging consumer behaviour towards healthier alternatives while generating revenue specifically for public health initiatives. Simultaneously, free or subsidised parks, cycle paths, and recreational centres remove the financial and logistical barriers that prevent low-income communities from accessing regular exercise.',
-    e2label: 'Example — evidencia de que estas medidas funcionan (menciona al menos UNO con cifras)',
-    e2model: 'The UK\'s sugar levy, introduced in 2018, prompted manufacturers to reformulate over 50% of affected products, reducing average sugar content by 28.8% without significant revenue losses for the industry — demonstrating that tax-based interventions can achieve meaningful dietary change.',
-    lLabel: 'Link — conecta la solución con el problema específico que mencionaste en el Body 1',
-    lModel: 'These complementary measures directly address the two root causes identified earlier: by making unhealthy food more expensive and physical activity more accessible, they reshape the everyday choices that collectively determine population-level health outcomes.',
-  },
-];
-
-const BODY_PLANS = [
-  {
-    type: 'Opinión',
-    body1: 'Razón principal que sostiene tu postura.',
-    body2: 'Segunda razón o contraargumento refutado sin perder tu posición.',
-  },
-  {
-    type: 'Discusión',
-    body1: 'Primera postura explicada con neutralidad y ejemplo.',
-    body2: 'Segunda postura explicada con neutralidad, seguida de tu evaluación.',
-  },
-  {
-    type: 'Problema-Solución',
-    body1: 'Causas/problemas específicos, no una lista vaga.',
-    body2: 'Soluciones que responden directamente a esas causas.',
-  },
-  {
-    type: 'Ventajas-Desventajas',
-    body1: 'Ventajas con impacto real y evidencia.',
-    body2: 'Desventajas más evaluación: cuál lado pesa más y por qué.',
-  },
-  {
-    type: 'Dos preguntas',
-    body1: 'Respuesta completa a la primera pregunta.',
-    body2: 'Respuesta completa a la segunda pregunta, sin convertirla en otro tipo.',
-  },
-];
-
-const DIAGNOSTIC = {
-  paragraph: 'Climate change is a serious problem for the environment. Many scientists have said this is happening. There are lots of effects like flooding and droughts. This is very bad for people all over the world. Governments should do something about it.',
-  issues: [
-    { part: 'T', label: 'Topic sentence demasiado vago', correct: true, explanation: '"Climate change is a serious problem for the environment" no indica QUÉ argumento específico va a desarrollar este párrafo. Un examinador no sabe qué esperar del resto del párrafo.' },
-    { part: 'E1', label: 'Explanation no explica ningún mecanismo', correct: true, explanation: '"Many scientists have said this is happening" solo repite que es un problema. No explica CÓMO ni POR QUÉ produce efectos, ni cuál es el proceso causal.' },
-    { part: 'E2', label: 'Example sin datos específicos ni fuente', correct: true, explanation: '"Flooding and droughts" es genérico. Un ejemplo Band 7+ citaría: "According to the IPCC 2023 report, the frequency of extreme weather events has increased by 40% since 1980, with 2.3 billion people affected by flooding in the past decade."' },
-    { part: 'L', label: 'Link introduce información nueva (soluciones)', correct: true, explanation: '"Governments should do something" introduce un nuevo punto (¿qué hacer?) que debería ir en otro párrafo. El Link debe conectar la evidencia con el argumento central del ensayo, NO abrir un tema nuevo.' },
-  ],
-};
-
-export default function ParrafosCuerpoClient() {
-  const [showCompare, setShowCompare] = useState(false);
-  const [exIdx, setExIdx] = useState(0);
-  const [e1, setE1] = useState('');
-  const [e2, setE2] = useState('');
-  const [lk, setLk] = useState('');
+/** Un ejercicio: el topic sentence está dado y se escriben los tres bloques restantes. */
+function Drill({ drill }: { drill: typeof BODY_DRILLS[number] }) {
+  const [values, setValues] = useState<string[]>(() => drill.fields.map(() => ''));
   const [assembled, setAssembled] = useState(false);
   const [showModel, setShowModel] = useState(false);
-  const [diagPhase, setDiagPhase] = useState(false);
-  const [diagFound, setDiagFound] = useState<boolean[]>([false, false, false, false]);
 
-  const ex = EXERCISES[exIdx];
-  const canAssemble = e1.trim().length > 15 && e2.trim().length > 15 && lk.trim().length > 15;
+  const missing = drill.fields
+    .map((field, index) => ({ field, short: field.minWords - countWords(values[index]) }))
+    .filter((item) => item.short > 0);
 
-  function reset() { setE1(''); setE2(''); setLk(''); setAssembled(false); setShowModel(false); }
-  function nextEx() {
-    if (exIdx < EXERCISES.length - 1) { setExIdx(i => i + 1); reset(); }
-    else setDiagPhase(true);
-  }
+  return <div className={styles.guidedWorkshop}>
+    <div className={styles.promptCard}>
+      <span>IELTS-style prompt · {drill.role}</span>
+      <p>{drill.prompt}</p>
+    </div>
 
-  if (diagPhase) return (
-    <section className="wl-section">
-      <div className="wrap">
-        <div style={{ maxWidth: 720, margin: '0 auto' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
-            <button className="btn btn-ghost btn-sm" onClick={() => { setDiagPhase(false); setExIdx(0); reset(); }}>← Ejercicios</button>
-            <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>Diagnóstico — párrafo Band 5</span>
-          </div>
-          <p className="eyebrow" style={{ marginBottom: '0.4rem' }}><span className="ink-line" />🔬 Diagnóstico TEEL</p>
-          <h2 style={{ fontSize: '1.4rem', fontWeight: 700, margin: '0 0 0.4rem' }}>Identifica las debilidades</h2>
-          <p style={{ color: 'var(--muted)', fontSize: '0.9rem', margin: '0 0 1.25rem', lineHeight: 1.6 }}>
-            Este párrafo de un estudiante tiene cuatro problemas graves de TEEL. Identifícalos haciendo clic en cada problema que detectes.
-          </p>
-          <div className="wl-card" style={{ padding: '1.25rem', borderLeft: '4px solid #dc2626', marginBottom: '1.25rem' }}>
-            <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#dc2626', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.5rem' }}>Párrafo del estudiante (Band 5)</p>
-            <p style={{ margin: 0, fontSize: '0.95rem', lineHeight: 1.85, color: 'var(--ink)', fontStyle: 'italic' }}>&ldquo;{DIAGNOSTIC.paragraph}&rdquo;</p>
-          </div>
-          <p style={{ fontSize: '0.83rem', fontWeight: 600, color: 'var(--muted)', margin: '0 0 0.6rem' }}>Haz clic en los problemas que detectas:</p>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.25rem' }}>
-            {DIAGNOSTIC.issues.map((issue, i) => (
-              <button key={i} onClick={() => setDiagFound(d => d.map((v, j) => j === i ? !v : v))}
-                style={{ textAlign: 'left', padding: '0.7rem 0.9rem', borderRadius: 10, border: diagFound[i] ? '2px solid #dc2626' : '1.5px solid var(--line-soft)', background: diagFound[i] ? 'rgba(220,38,38,0.06)' : 'var(--bg-2)', cursor: 'pointer', transition: 'all 0.15s' }}>
-                <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', marginBottom: diagFound[i] ? '0.35rem' : 0 }}>
-                  <span style={{ fontSize: '0.7rem', padding: '0.1rem 0.4rem', borderRadius: 6, background: `${['#0f3d8c','#7c3aed','#059669','#d97706'][i]}18`, color: ['#0f3d8c','#7c3aed','#059669','#d97706'][i], fontFamily: 'var(--mono)', fontWeight: 800 }}>{issue.part}</span>
-                  <span style={{ fontSize: '0.87rem', fontWeight: 700, color: diagFound[i] ? '#dc2626' : 'var(--ink)' }}>{diagFound[i] ? '✓ ' : '○ '}{issue.label}</span>
-                </div>
-                {diagFound[i] && <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--ink-2)', lineHeight: 1.55 }}>{issue.explanation}</p>}
-              </button>
-            ))}
-          </div>
-          {diagFound.every(Boolean) && (
-            <div style={{ padding: '1rem 1.25rem', borderRadius: 12, background: 'rgba(5,150,105,0.07)', border: '1px solid rgba(5,150,105,0.25)', marginBottom: '1rem' }}>
-              <p style={{ margin: '0 0 0.4rem', fontSize: '0.85rem', fontWeight: 700, color: '#059669' }}>¡Excelente — identificaste los 4 problemas!</p>
-              <p style={{ margin: 0, fontSize: '0.83rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>Un párrafo Band 7+ de este mismo tema comenzaría: <em>&ldquo;One of the most significant consequences of climate change is the dramatic increase in the frequency and severity of extreme weather events.&rdquo;</em> Luego explicaría el mecanismo (CO₂ → temperatura → evaporación → precipitaciones extremas) con datos del IPCC, seguido de un ejemplo específico, y un link al argumento central.</p>
-            </div>
-          )}
-          <div style={{ display: 'flex', gap: '0.65rem', flexWrap: 'wrap' }}>
-            <button className="btn btn-sm" onClick={() => { setDiagFound([false,false,false,false]); }}>Reiniciar diagnóstico</button>
-            <Link href="/practica/ielts/academic/writing/task2/linking-language" className="btn btn-ghost btn-sm">Sub-habilidad 4: Linking Language →</Link>
-          </div>
-        </div>
+    <div className={`${styles.guidedField} ${styles.claim}`}>
+      <strong>T — Topic sentence (given)</strong>
+      <p>{drill.topicSentence}</p>
+    </div>
+
+    {drill.fields.map((field, index) => {
+      const written = countWords(values[index]);
+      const short = field.minWords - written;
+      return <label key={field.part} className={`${styles.guidedField} ${TONE[field.part]}`}>
+        <strong>{field.part === 'L' ? 'L' : 'E'} — {field.label}</strong>
+        <span>{field.ask}</span>
+        <textarea
+          value={values[index]}
+          rows={3}
+          disabled={assembled}
+          spellCheck={false}
+          autoCorrect="off"
+          autoCapitalize="off"
+          autoComplete="off"
+          onChange={(event) => setValues((current) => current.map((v, i) => (i === index ? event.target.value : v)))}
+        />
+        {/* El mínimo se anuncia antes de escribir, y dice cuánto falta mientras se escribe. */}
+        <small className={short > 0 ? styles.matchReview : styles.matchGood}>
+          Minimum {field.minWords} words · {short > 0 ? `${short} to go` : `${written} written`}
+        </small>
+      </label>;
+    })}
+
+    {!assembled && <>
+      <div className={styles.workshopActions}>
+        <button type="button" disabled={missing.length > 0} onClick={() => setAssembled(true)}>
+          Assemble the paragraph <ArrowRight size={16} />
+        </button>
       </div>
-    </section>
-  );
+      {/* Ningún botón bloqueado sin decir por qué. */}
+      {missing.length > 0 && <p className={styles.unlockHint}>
+        Still short: {missing.map((item) => `${item.field.label} (${item.short} more)`).join(', ')}.
+      </p>}
+    </>}
 
-  return (
-    <section className="wl-section">
-      <div className="wrap">
-        <div style={{ maxWidth: 760, margin: '0 auto' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.75rem', flexWrap: 'wrap' }}>
-            <Link href="/practica/ielts/academic/writing/task2" className="btn btn-ghost btn-sm" style={{ fontSize: '0.82rem' }}>← Task 2</Link>
-            <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>Task 2 / Párrafos de Cuerpo</span>
-          </div>
-          <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />🧱 Sub-habilidad 3</p>
-          <h1 style={{ fontSize: '1.75rem', letterSpacing: '-0.03em', margin: '0 0 0.4rem', fontWeight: 700 }}>Estructura TEEL</h1>
-          <p style={{ color: 'var(--muted)', fontSize: '0.95rem', margin: '0 0 1.5rem', lineHeight: 1.65 }}>
-            Todo párrafo de cuerpo Band 7+ sigue TEEL: Topic sentence (qué argumentas) → Explanation (cómo funciona) → Example (evidencia específica) → Link (conexión con el ensayo). El topic sentence ya está escrito — tú construyes E + E + L.
-          </p>
-
-          <Task2OfficialReviewBlock
-            focus="Desarrollar párrafos de cuerpo con idea, explicación, evidencia y conexión."
-            officialFormat="IELTS Academic Writing Task 2 evalúa desarrollo de ideas dentro de un ensayo completo. TEEL es una estructura pedagógica WeLearn, no una plantilla oficial obligatoria."
-            welearnStrategy="Usamos TEEL para que cada párrafo haga trabajo argumentativo real y no se quede en afirmaciones generales."
-            answerCheck="Una respuesta fuerte explica el mecanismo, añade evidencia específica y cierra el párrafo conectándolo con la tesis."
-          />
-
-          <div className="wl-card" style={{ padding: '1.25rem', marginBottom: '1rem', borderTop: '3px solid #0f3d8c' }}>
-            <h2 style={{ margin: '0 0 0.45rem', fontSize: '1.08rem', letterSpacing: 0 }}>Body 1 y Body 2 cambian según el tipo de pregunta</h2>
-            <p style={{ margin: '0 0 0.9rem', color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.88rem' }}>
-              TEEL es el motor interno del párrafo, pero la función del párrafo depende del prompt. Antes de escribir,
-              decide qué bloque debe construir cada body paragraph.
-            </p>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '0.75rem' }}>
-              {BODY_PLANS.map((plan) => (
-                <article key={plan.type} style={{ padding: '0.85rem', borderRadius: 8, background: 'var(--bg-2)', border: '1px solid var(--line-soft)' }}>
-                  <p style={{ margin: '0 0 0.35rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontWeight: 900, fontSize: '0.74rem' }}>{plan.type}</p>
-                  <p style={{ margin: '0 0 0.25rem', color: 'var(--ink-2)', lineHeight: 1.45, fontSize: '0.8rem' }}><strong>Body 1:</strong> {plan.body1}</p>
-                  <p style={{ margin: 0, color: 'var(--ink-2)', lineHeight: 1.45, fontSize: '0.8rem' }}><strong>Body 2:</strong> {plan.body2}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-
-          <Task2LegoGuide />
-
-          <div className="wl-card" style={{ padding: '1.25rem', marginBottom: '1.5rem', cursor: 'pointer' }} onClick={() => setShowCompare(v => !v)}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <p style={{ margin: 0, fontWeight: 700, fontSize: '0.95rem', color: 'var(--ink)' }}>📊 Band 5–6 vs Band 7–8 — comparación de párrafo</p>
-              <span style={{ color: 'var(--muted)' }}>{showCompare ? '▲' : '▼'}</span>
-            </div>
-            {showCompare && (
-              <div style={{ marginTop: '1rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(300px,1fr))', gap: '0.85rem' }}>
-                {[
-                  { label: 'Band 5–6', text: BAND_COMPARE.band6.text, items: BAND_COMPARE.band6.problems, color: '#dc2626', bg: 'rgba(220,38,38,0.05)', border: 'rgba(220,38,38,0.2)', mark: '✗' },
-                  { label: 'Band 7–8', text: BAND_COMPARE.band8.text, items: BAND_COMPARE.band8.strengths, color: '#059669', bg: 'rgba(5,150,105,0.05)', border: 'rgba(5,150,105,0.2)', mark: '✓' },
-                ].map(col => (
-                  <div key={col.label}>
-                    <p style={{ fontSize: '0.68rem', fontWeight: 800, color: col.color, fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.07em', margin: '0 0 0.4rem' }}>{col.label}</p>
-                    <div style={{ padding: '0.85rem', borderRadius: 9, background: col.bg, border: `1px solid ${col.border}`, marginBottom: '0.5rem' }}>
-                      <p style={{ margin: 0, fontSize: '0.82rem', lineHeight: 1.75, color: 'var(--ink)', fontStyle: 'italic' }}>&ldquo;{col.text}&rdquo;</p>
-                    </div>
-                    {col.items.map((item, i) => <p key={i} style={{ margin: '0 0 0.3rem', fontSize: '0.78rem', color: col.color, lineHeight: 1.5 }}>{col.mark} {item}</p>)}
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem' }}>
-            <div style={{ flex: 1, height: 5, background: 'var(--line-soft)', borderRadius: 4 }}>
-              <div style={{ height: '100%', width: `${((exIdx + 1) / EXERCISES.length) * 100}%`, background: '#0f3d8c', borderRadius: 4, transition: 'width 0.4s' }} />
-            </div>
-            <span style={{ fontSize: '0.75rem', fontFamily: 'var(--mono)', color: 'var(--muted)', whiteSpace: 'nowrap' }}>{exIdx + 1}/{EXERCISES.length}</span>
-          </div>
-
-          <div className="wl-card" style={{ padding: '1.25rem', borderLeft: '4px solid var(--line-soft)', marginBottom: '1rem' }}>
-            <p style={{ fontSize: '0.68rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.3rem' }}>{ex.type}</p>
-            <p style={{ margin: 0, fontSize: '0.83rem', color: 'var(--ink-2)', fontStyle: 'italic', lineHeight: 1.5 }}>{ex.context}</p>
-          </div>
-
-          <div style={{ padding: '1rem 1.25rem', borderRadius: 10, background: 'rgba(15,61,140,0.06)', border: '2px solid rgba(15,61,140,0.25)', marginBottom: '1.25rem' }}>
-            <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.07em', margin: '0 0 0.4rem' }}>T — Topic sentence (dada)</p>
-            <p style={{ margin: 0, fontSize: '0.97rem', lineHeight: 1.75, color: 'var(--ink)', fontWeight: 600 }}>{ex.topicSentence}</p>
-          </div>
-
-          {[
-            { label: 'E — Explanation', color: '#7c3aed', border: 'rgba(124,58,237,0.3)', hint: ex.e1label, val: e1, set: setE1 },
-            { label: 'E — Example', color: '#059669', border: 'rgba(5,150,105,0.3)', hint: ex.e2label, val: e2, set: setE2 },
-            { label: 'L — Link back', color: '#d97706', border: 'rgba(217,119,6,0.3)', hint: ex.lLabel, val: lk, set: setLk },
-          ].map(({ label, color, border, hint, val, set }) => (
-            <div key={label} style={{ marginBottom: '1rem' }}>
-              <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 700, color, marginBottom: '0.35rem' }}>{label}</label>
-              <p style={{ fontSize: '0.78rem', color: 'var(--muted)', margin: '0 0 0.4rem', lineHeight: 1.45 }}>{hint}</p>
-              <textarea value={val} onChange={e => set(e.target.value)} rows={3} disabled={assembled}
-                style={{ width: '100%', padding: '0.85rem', borderRadius: 10, border: `1.5px solid ${border}`, background: 'var(--bg)', color: 'var(--ink)', fontSize: '0.93rem', fontFamily: 'inherit', lineHeight: 1.65, resize: 'vertical', boxSizing: 'border-box' }} />
-            </div>
+    {assembled && <>
+      <div className={styles.completeParagraph}>
+        <strong>Your paragraph, read as one</strong>
+        <p>
+          <span className={styles.claim}>{drill.topicSentence}</span>{' '}
+          {drill.fields.map((field, index) => (
+            <span key={field.part} className={TONE[field.part]}>{values[index]} </span>
           ))}
+        </p>
+      </div>
 
-          {!assembled && (
-            <button className="btn" onClick={() => setAssembled(true)} disabled={!canAssemble}
-              style={{ marginBottom: '1.25rem', opacity: canAssemble ? 1 : 0.5, cursor: canAssemble ? 'pointer' : 'not-allowed' }}>
-              Ensamblar párrafo →
-            </button>
-          )}
+      {/*
+        Nada dice si está bien: la página no lee inglés. Lo que sí puede hacer es poner al
+        lado uno que hace el trabajo, para que la comparación la haga quien escribió.
+      */}
+      <p className={styles.mistakeNote}>
+        This page does not mark your English. What it can do is put a paragraph that does the job next to
+        yours: compare them block by block and look for the one where the difference is largest.
+      </p>
 
-          {assembled && (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '1.25rem' }}>
-              <div className="wl-card" style={{ padding: '1.25rem' }}>
-                <p style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.75rem' }}>Tu párrafo ensamblado</p>
-                <p style={{ margin: '0 0 0.65rem', fontSize: '0.93rem', lineHeight: 1.9 }}>
-                  <span style={{ background: 'rgba(15,61,140,0.1)', borderRadius: 3, padding: '0 2px' }}>{ex.topicSentence}</span>
-                  {' '}<span style={{ background: 'rgba(124,58,237,0.08)', borderRadius: 3, padding: '0 2px' }}>{e1}</span>
-                  {' '}<span style={{ background: 'rgba(5,150,105,0.08)', borderRadius: 3, padding: '0 2px' }}>{e2}</span>
-                  {' '}<span style={{ background: 'rgba(217,119,6,0.08)', borderRadius: 3, padding: '0 2px' }}>{lk}</span>
-                </p>
-                <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
-                  {[['#0f3d8c','T'],['#7c3aed','E explanation'],['#059669','E example'],['#d97706','L']].map(([c,l]) => (
-                    <span key={l} style={{ fontSize: '0.68rem', padding: '0.1rem 0.4rem', borderRadius: 6, background: `${c}18`, color: c, fontFamily: 'var(--mono)', fontWeight: 600 }}>{l}</span>
-                  ))}
-                </div>
-              </div>
+      <div className={styles.workshopActions}>
+        <button type="button" className={styles.secondaryButton}
+          onClick={() => { setValues(drill.fields.map(() => '')); setAssembled(false); setShowModel(false); }}>
+          <RotateCcw size={15} /> Write it again
+        </button>
+        <button type="button" onClick={() => setShowModel((current) => !current)}>
+          {showModel ? 'Hide the comparison' : 'Compare with a model'}
+        </button>
+      </div>
 
-              <button className="btn btn-ghost btn-sm" onClick={() => setShowModel(v => !v)} style={{ alignSelf: 'flex-start' }}>
-                {showModel ? 'Ocultar modelo' : 'Ver párrafo modelo Band 7+ →'}
-              </button>
+      {showModel && <div className={styles.modelReveal}>
+        <p className={styles.paragraphLabel}>One paragraph that does the job</p>
+        <p>
+          <span className={styles.claim}>{drill.topicSentence}</span>{' '}
+          {drill.fields.map((field) => (
+            <span key={field.part} className={TONE[field.part]}>{field.model} </span>
+          ))}
+        </p>
+      </div>}
+    </>}
+  </div>;
+}
 
-              {showModel && (
-                <div className="wl-card" style={{ padding: '1.25rem', borderLeft: '3px solid #059669' }}>
-                  <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.75rem' }}>Párrafo modelo Band 7+</p>
-                  <p style={{ margin: 0, fontSize: '0.93rem', lineHeight: 1.9 }}>
-                    <span style={{ background: 'rgba(15,61,140,0.1)', borderRadius: 3, padding: '0 2px' }}>{ex.topicSentence}</span>
-                    {' '}<span style={{ background: 'rgba(124,58,237,0.08)', borderRadius: 3, padding: '0 2px' }}>{ex.e1model}</span>
-                    {' '}<span style={{ background: 'rgba(5,150,105,0.08)', borderRadius: 3, padding: '0 2px' }}>{ex.e2model}</span>
-                    {' '}<span style={{ background: 'rgba(217,119,6,0.08)', borderRadius: 3, padding: '0 2px' }}>{ex.lModel}</span>
-                  </p>
-                </div>
-              )}
+/** El diagnóstico: siete observaciones, tres de ellas falsas. */
+function Diagnostic() {
+  const [opened, setOpened] = useState<string[]>([]);
 
-              <div style={{ display: 'flex', gap: '0.65rem', flexWrap: 'wrap' }}>
-                <button className="btn btn-sm" onClick={() => { reset(); }}>Reintentar</button>
-                <button className="btn btn-ghost btn-sm" onClick={nextEx}>
-                  {exIdx < EXERCISES.length - 1 ? 'Siguiente ejercicio →' : 'Diagnóstico →'}
-                </button>
-              </div>
-            </div>
-          )}
+  const real = DIAGNOSTIC.observations.filter((item) => item.real);
+  const found = real.filter((item) => opened.includes(item.id));
+  const wrongCalls = DIAGNOSTIC.observations.filter((item) => !item.real && opened.includes(item.id));
+  const done = found.length === real.length;
+
+  return <>
+    <div className={styles.sourcePrompt}>{DIAGNOSTIC.paragraph}</div>
+
+    <p className={styles.exerciseInstruction}>
+      Seven things people say about this paragraph. Four of them are real defects and three are not.
+      Click the ones you think are real.
+    </p>
+
+    <div className={styles.optionGrid}>
+      {DIAGNOSTIC.observations.map((item) => {
+        const isOpen = opened.includes(item.id);
+        return <button key={item.id} type="button"
+          onClick={() => setOpened((current) => (current.includes(item.id) ? current.filter((id) => id !== item.id) : [...current, item.id]))}
+          className={[
+            styles.option,
+            isOpen && item.real ? styles.correct : '',
+            isOpen && !item.real ? styles.incorrect : '',
+          ].filter(Boolean).join(' ')}>
+          <div>
+            {/* La etiqueta sale del dato, no de la posición en la lista. */}
+            <strong>{item.part === '—' ? 'Whole paragraph' : item.part}</strong> · {item.claim}
+            {isOpen && <p>{item.real ? item.why : `Not a defect. ${item.why}`}</p>}
+          </div>
+        </button>;
+      })}
+    </div>
+
+    <p className={styles.wordMeter}>
+      {found.length} of {real.length} real defects found
+      {wrongCalls.length > 0 && ` · ${wrongCalls.length} wrong call${wrongCalls.length > 1 ? 's' : ''}`}
+    </p>
+
+    {done && <Feedback ok={wrongCalls.length === 0}>
+      <strong>
+        {wrongCalls.length === 0
+          ? 'All four, and nothing that was not there.'
+          : `All four found — and ${wrongCalls.length} thing${wrongCalls.length > 1 ? 's' : ''} marked that was not a defect.`}
+      </strong>
+      <p>
+        {wrongCalls.length === 0
+          ? 'The three you left alone are the ones people reach for when a paragraph feels weak but they cannot say why: too short, no opinion, no connectors. None of them was the problem.'
+          : `Reread ${wrongCalls.map((item) => `“${item.claim}”`).join(' and ')}. Both the length and the connectors could be changed without the paragraph getting any better.`}
+      </p>
+    </Feedback>}
+
+    {done && <div className={styles.modelReveal}>
+      <p className={styles.paragraphLabel}>The same subject, rebuilt</p>
+      <p>{DIAGNOSTIC.rebuilt}</p>
+    </div>}
+
+    <div className={styles.workshopActions}>
+      <button type="button" className={styles.secondaryButton} onClick={() => setOpened([])}>
+        <RotateCcw size={15} /> Clear
+      </button>
+    </div>
+  </>;
+}
+
+export default function ParrafosCuerpoClient() {
+  const [active, setActive] = useState(0);
+  const drill = BODY_DRILLS[active];
+
+  return <div lang="en" className={styles.page}><div className={styles.shell}>
+    <nav className={styles.breadcrumb} aria-label="Breadcrumb">
+      <Link href="/practica/ielts/academic/writing/task2"><ArrowLeft size={15} /> Task 2</Link>
+      <span>/</span>
+      <span>Body paragraphs</span>
+    </nav>
+
+    <header className={styles.hero}>
+      <p className={styles.kicker}>Sub-skill 3</p>
+      <h1>Build a body paragraph that does four jobs</h1>
+      <p className={styles.heroLead}>
+        Topic sentence, explanation, example, link. The topic sentence is written for you in every exercise —
+        what you build is the three sentences that make it worth having. The failure this page is built to fix
+        is the paragraph that says its claim four times in four different ways.
+      </p>
+      <div className={styles.factGrid}>
+        <div className={styles.fact}><strong>T</strong><span>the one claim this paragraph proves</span></div>
+        <div className={styles.fact}><strong>E</strong><span>the mechanism, not the claim again</span></div>
+        <div className={styles.fact}><strong>E</strong><span>one named case, with figures</span></div>
+        <div className={styles.fact}><strong>L</strong><span>spend the evidence, open nothing new</span></div>
+      </div>
+    </header>
+
+    <section className={styles.section}>
+      <div className={styles.sectionHeading}>
+        <p className={styles.kicker}>Official format and WeLearn strategy</p>
+        <h2>TEEL is a planning tool, not an IELTS rule</h2>
+      </div>
+      <Task2OfficialReviewBlock
+        focus="Developing a body paragraph with a claim, a mechanism, evidence and a link back."
+        officialFormat="IELTS Academic Writing Task 2 assesses how ideas are developed across a complete essay. TEEL is a WeLearn teaching structure, not an official template, and no assessment criterion counts sentences."
+        welearnStrategy="We use TEEL so that each paragraph does argumentative work instead of restating a general claim in four different ways."
+        answerCheck="Read your paragraph and ask what each sentence adds. If two sentences make the same point, one of them is not doing its job."
+      />
+    </section>
+
+    <section className={styles.section}>
+      <div className={styles.sectionHeading}>
+        <p className={styles.kicker}>Before TEEL</p>
+        <h2>What Body 1 and Body 2 are for changes with the instruction</h2>
+        <p>
+          TEEL is the engine inside the paragraph. What the paragraph has to contain comes from the prompt, so
+          decide that first.
+        </p>
+      </div>
+      <div className={styles.studyGrid}>
+        {BODY_PLANS.map((plan) => (
+          <article key={plan.id} className={styles.studyCard}>
+            <p className={styles.typeTag}>{plan.label}</p>
+            <p><strong>Body 1: </strong>{plan.bodyOne}</p>
+            <p><strong>Body 2: </strong>{plan.bodyTwo}</p>
+          </article>
+        ))}
+      </div>
+      <Task2LegoGuide />
+    </section>
+
+    <section className={styles.section}>
+      <div className={styles.sectionHeading}>
+        <p className={styles.kicker}>Watch one</p>
+        <h2>The same claim, written twice</h2>
+        <p>Both paragraphs answer the same prompt and make the same argument. One of them develops it.</p>
+      </div>
+
+      <article className={`${styles.examplePanel} ${styles.workedExample}`}>
+        <div className={styles.workedBadge}>Worked example</div>
+        <div className={styles.promptCard}><span>IELTS-style prompt</span><p>{WORKED_EXAMPLE.prompt}</p></div>
+
+        <div className={styles.weakStrong}>
+          <p className={styles.weak}>{WORKED_EXAMPLE.weakVersion}</p>
+          <p className={styles.strong}>{WORKED_EXAMPLE.blocks.map((block) => block.text).join(' ')}</p>
         </div>
+
+        <div className={styles.modelBlockGrid}>
+          {WORKED_EXAMPLE.blocks.map((block) => (
+            <article key={block.part} className={TONE[block.part]}>
+              <strong>{block.part} — {block.label}</strong>
+              <p>{block.text}</p>
+              <small>{block.job}</small>
+            </article>
+          ))}
+        </div>
+
+        <div className={styles.checkList}>
+          <strong>What changed between the two</strong>
+          {WORKED_EXAMPLE.whatChanged.map((line) => <p key={line}>{line}</p>)}
+        </div>
+      </article>
+
+      <div className={styles.tryDivider}>
+        <span>Now you try</span>
+        <p>Five paragraphs across three question families. The model stays hidden until you have written all three blocks.</p>
+      </div>
+
+      <div className={styles.exampleTabs}>
+        {BODY_DRILLS.map((item, index) => (
+          <button key={item.id} type="button"
+            className={`${styles.exampleTab} ${index === active ? styles.exampleTabActive : ''}`}
+            onClick={() => setActive(index)}>
+            {String(index + 1).padStart(2, '0')} · {item.family} — {item.role.split(' · ')[1]}
+          </button>
+        ))}
+      </div>
+
+      <article className={styles.examplePanel}>
+        {/* `key`: sin él, lo escrito en un ejercicio se queda pegado al siguiente. */}
+        <Drill key={drill.id} drill={drill} />
+      </article>
+    </section>
+
+    <section id="diagnostic" className={`${styles.section} ${styles.practiceSection}`}>
+      <div className={styles.sectionHeading}>
+        <p className={styles.kicker}>Critical reading</p>
+        <h2>Find what is actually wrong with this paragraph</h2>
+        <p>
+          Three of the seven observations below are the things people say when a paragraph feels weak and they
+          cannot say why. Telling them apart from the real defects is the skill.
+        </p>
+      </div>
+      <div className={styles.enginePanel}>
+        <div className={styles.exerciseBody}><Diagnostic /></div>
       </div>
     </section>
-  );
+
+    <div className={styles.nextLinks}>
+      <Link href="/practica/ielts/academic/writing/task2/body-1">Body 1 step by step</Link>
+      <Link href="/practica/ielts/academic/writing/task2/linking-language">Linking language</Link>
+      <Link href="/practica/ielts/academic/writing/task2/tarea-completa">Write a full Task 2</Link>
+    </div>
+  </div></div>;
 }
