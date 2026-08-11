@@ -72,14 +72,31 @@ const bloqueFilter = value('--bloque')
 // Carga del catálogo
 // ─────────────────────────────────────────────────────────────────────────────
 
+/** Igual que el de `check-vocabulario.mjs`: resuelve las importaciones relativas del catálogo. */
+const cacheModulos = new Map()
+
 function loadModule(file) {
-  const source = fs.readFileSync(file, 'utf8')
+  const abs = path.resolve(file)
+  if (cacheModulos.has(abs)) return cacheModulos.get(abs)
+  const source = fs.readFileSync(abs, 'utf8')
   const compiled = ts.transpileModule(source, {
     compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
-    fileName: file,
+    fileName: abs,
   })
   const module = { exports: {} }
-  Function('module', 'exports', 'require', compiled.outputText)(module, module.exports, require)
+  cacheModulos.set(abs, module.exports)
+  const requireRelativo = (spec) => {
+    if (!spec.startsWith('.')) return require(spec)
+    const base = path.resolve(path.dirname(abs), spec)
+    for (const candidato of [base, `${base}.ts`, `${base}.json`, path.join(base, 'index.ts')]) {
+      if (!fs.existsSync(candidato) || fs.statSync(candidato).isDirectory()) continue
+      if (candidato.endsWith('.json')) return JSON.parse(fs.readFileSync(candidato, 'utf8'))
+      return loadModule(candidato)
+    }
+    throw new Error(`loadModule: no se pudo resolver «${spec}»`)
+  }
+  Function('module', 'exports', 'require', compiled.outputText)(module, module.exports, requireRelativo)
+  cacheModulos.set(abs, module.exports)
   return module.exports
 }
 

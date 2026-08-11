@@ -96,14 +96,45 @@ const avisos = []
 const fallo = (msg) => problemas.push(msg)
 const aviso = (msg) => avisos.push(msg)
 
+/**
+ * Carga un `.ts` del catálogo, resolviendo sus importaciones relativas.
+ *
+ * La primera versión no resolvía nada: compilaba el archivo y le pasaba un `require` vacío,
+ * lo cual bastó mientras los datos no importaran nada en tiempo de ejecución. En cuanto
+ * `ingles-a1.ts` empezó a importar `./unidades` para declarar el orden de un bloque, la
+ * puerta reventó entera con un MODULE_NOT_FOUND — el validador dejó de validar por una
+ * limitación suya, no por un problema del contenido.
+ *
+ * La caché es necesaria y no una optimización: sin ella, dos archivos que importen el mismo
+ * módulo tendrían cada uno su copia, y comparar identidades daría falsos negativos.
+ */
+const cacheModulos = new Map()
+
 function loadModule(file) {
-  const source = fs.readFileSync(file, 'utf8')
+  const abs = path.resolve(file)
+  if (cacheModulos.has(abs)) return cacheModulos.get(abs)
+
+  const source = fs.readFileSync(abs, 'utf8')
   const compiled = ts.transpileModule(source, {
     compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
-    fileName: file,
+    fileName: abs,
   })
   const module = { exports: {} }
-  Function('module', 'exports', compiled.outputText)(module, module.exports)
+  cacheModulos.set(abs, module.exports)
+
+  const requireRelativo = (spec) => {
+    if (!spec.startsWith('.')) return {}
+    const base = path.resolve(path.dirname(abs), spec)
+    for (const candidato of [base, `${base}.ts`, `${base}.json`, path.join(base, 'index.ts')]) {
+      if (!fs.existsSync(candidato) || fs.statSync(candidato).isDirectory()) continue
+      if (candidato.endsWith('.json')) return JSON.parse(fs.readFileSync(candidato, 'utf8'))
+      return loadModule(candidato)
+    }
+    throw new Error(`loadModule: no se pudo resolver «${spec}» desde ${path.relative(process.cwd(), abs)}`)
+  }
+
+  Function('module', 'exports', 'require', compiled.outputText)(module, module.exports, requireRelativo)
+  cacheModulos.set(abs, module.exports)
   return module.exports
 }
 

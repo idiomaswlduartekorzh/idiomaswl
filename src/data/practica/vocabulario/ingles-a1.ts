@@ -1,4 +1,5 @@
 import type { Colocacion, VocabEntry, VocabLevel } from './schema'
+import { reordenar } from './unidades'
 
 /**
  * Inglés A1 · núcleo productivo.
@@ -2591,6 +2592,30 @@ const b2unidad5: VocabEntry[] = [
     { tipo: 'otro' }),
 ]
 
+/**
+ * El bloque 10, reordenado para que no choquen entre sí.
+ *
+ * `unidadesDe` corta el bloque en unidades de diez, así que el orden de este array decide qué
+ * palabras se estudian el mismo día. Tal y como estaban escritas, la última unidad juntaba
+ * `because` («porque») con `why` («por qué») y encima cinco monosílabos con w- —why, what,
+ * who, when, how—, y la primera tenía `hello` y `hi`, las dos glosadas «hola». En la caja 3
+ * el estudiante solo ve la glosa española: esos prompts son indistinguibles, y cada confusión
+ * cuesta cuatro peldaños porque fallar devuelve la palabra a la caja 1. Lo encontró la
+ * auditoría de usuario, no una métrica.
+ *
+ * Ahora las cinco w- van repartidas —dos, una y dos— y las parejas que se confunden viven en
+ * unidades distintas. `reordenar` falla si alguien añade una entrada y se olvida de colocarla,
+ * que es la manera de que esto no se pudra al siguiente cambio.
+ */
+const CORTESIA_SIN_CHOQUES = reordenar([...b10unidad1, ...b10unidad2, ...b10unidad3], [
+  // Unidad 1 · saludar, pedir y ser amable
+  'hello', 'please', 'thanks', 'sorry', 'goodbye', 'welcome', 'excuse', 'sure', 'what', 'how', 'little',
+  // Unidad 2 · cuando no entiendo
+  'hi', 'understand', 'repeat', 'speak', 'mean', 'help', 'maybe', 'why', 'too', 'enough',
+  // Unidad 3 · responder y enlazar
+  'yes', 'no', 'course', 'really', 'very', 'but', 'because', 'who', 'when', 'if',
+])
+
 export const INGLES_A1: VocabLevel = {
   lang: 'ingles',
   nivel: 'a1',
@@ -2734,7 +2759,7 @@ export const INGLES_A1: VocabLevel = {
       id: 'cortesia-y-supervivencia',
       nombre: 'Cortesía y supervivencia',
       icono: '🙏',
-      entradas: [...b10unidad1, ...b10unidad2, ...b10unidad3],
+      entradas: CORTESIA_SIN_CHOQUES,
     },
   ],
 }

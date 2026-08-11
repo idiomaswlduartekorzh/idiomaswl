@@ -30,7 +30,22 @@ export default defineConfig({
   reporter: [['list']],
   use: {
     baseURL: process.env.BASE_URL ?? 'http://localhost:3001',
-    trace: 'off',
+    /**
+     * Traza solo cuando algo falla.
+     *
+     * Estaba en `off` para no llenar el disco, y el precio se pagó el 11 de agosto: la suite
+     * falló dos veces seguidas, cada vez en un test distinto y en un bloque distinto, y las dos
+     * veces los mismos tests pasaron al relanzarlos solos. Sin traza no había nada que mirar,
+     * así que las dos hipótesis —ambigüedad de datos, carrera de renderizado— se quedaron en
+     * hipótesis. Una de ellas se descartó a mano; la otra no se pudo ni confirmar ni negar.
+     *
+     * Adivinar la causa de un fallo intermitente y «arreglarla» es la manera más rápida de
+     * meter un cambio que no arregla nada y esconde el problema real. Con la traza, la próxima
+     * vez hay qué mirar: `npx playwright show-trace test-results/<carpeta>/trace.zip`.
+     *
+     * `retain-on-failure` y no `on`: solo pesa cuando hay algo que investigar.
+     */
+    trace: 'retain-on-failure',
     video: 'off',
     screenshot: 'only-on-failure',
   },
