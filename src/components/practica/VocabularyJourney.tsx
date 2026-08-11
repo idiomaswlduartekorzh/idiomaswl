@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react'
 import type { Colocacion, VocabBlock, VocabEntry, VocabLevel } from '@/data/practica/vocabulario/schema'
 import { opcionesDe } from '@/data/practica/vocabulario/opciones'
+import { audioDe, type CorteAudio } from '@/data/practica/vocabulario/audio'
 import {
   ahuecar,
   corregirDictado,
@@ -60,14 +61,48 @@ const CAJAS = [
 // depende del navegador y no se puede auditar en Node.
 
 /**
- * Dictado sin archivos de audio.
+ * Un solo reproductor para toda la página.
  *
- * El audio por palabra se genera con ElevenLabs en la Fase 5, con el catálogo cerrado. Hasta
- * entonces el dictado usa la voz del propio navegador: no pesa en el repo, no cuesta, y para
- * frases de A1 basta. Cuando llegue el audio de verdad, esto se sustituye y el ejercicio no
- * cambia de forma.
+ * Sin esto, pulsar «escuchar» dos veces seguidas deja dos audios sonando encima. Se reutiliza
+ * el mismo elemento y se para lo anterior antes de empezar lo siguiente.
  */
-function decir(texto: string, locale: string): boolean {
+let reproductor: HTMLAudioElement | null = null
+
+/**
+ * Suena el corte grabado, y si no lo hay, la voz del navegador.
+ *
+ * El orden importa y no es una preferencia estética. La auditoría de usuario encontró que en
+ * un portátil colombiano configurado en español, `speechSynthesis` lee el inglés con fonética
+ * española: no es un audio pobre, es un audio que enseña mal. Donde hay grabación, la
+ * grabación manda; la voz del navegador se queda como red para los 23 niveles que aún no la
+ * tienen.
+ */
+function reproducirCorte(corte: CorteAudio): boolean {
+  if (typeof window === 'undefined') return false
+  if (!reproductor) reproductor = new Audio()
+  const a = reproductor
+  a.pause()
+  if (!a.src.endsWith(corte.src)) a.src = corte.src
+
+  const parar = () => {
+    if (a.currentTime >= corte.fin) {
+      a.pause()
+      a.removeEventListener('timeupdate', parar)
+    }
+  }
+
+  const arrancar = () => {
+    a.currentTime = corte.inicio
+    a.addEventListener('timeupdate', parar)
+    void a.play().catch(() => {})
+  }
+
+  if (a.readyState >= 1) arrancar()
+  else a.addEventListener('loadedmetadata', arrancar, { once: true })
+  return true
+}
+
+function decirConNavegador(texto: string, locale: string): boolean {
   if (typeof window === 'undefined' || !window.speechSynthesis) return false
   const u = new SpeechSynthesisUtterance(texto)
   u.lang = locale
@@ -76,6 +111,17 @@ function decir(texto: string, locale: string): boolean {
   window.speechSynthesis.speak(u)
   return true
 }
+
+/** Lo que se le ofrece al estudiante: la grabación si existe, si no la voz del navegador. */
+function decir(entrada: VocabEntry, que: 'lemma' | 'ejemplo', locale: string): boolean {
+  const corte = audioDe(entrada.id, que)
+  if (corte) return reproducirCorte(corte)
+  return decirConNavegador(que === 'lemma' ? entrada.lemma : entrada.ejemplo.target, locale)
+}
+
+/** ¿Hay alguna manera de que suene? Grabado o sintetizado, da igual cuál. */
+const sePuedeOir = (entrada: VocabEntry, que: 'lemma' | 'ejemplo') =>
+  Boolean(audioDe(entrada.id, que)) || (typeof window !== 'undefined' && !!window.speechSynthesis)
 
 const hayVoz = () => typeof window !== 'undefined' && !!window.speechSynthesis
 
@@ -126,7 +172,7 @@ function Fuente({ entrada }: { entrada: VocabEntry }) {
   )
 }
 
-function Ficha({ entrada }: { entrada: VocabEntry }) {
+function Ficha({ entrada, locale }: { entrada: VocabEntry; locale: string }) {
   const x = entrada.extra
   return (
     <article
@@ -141,8 +187,31 @@ function Ficha({ entrada }: { entrada: VocabEntry }) {
     >
       <header style={{ display: 'flex', alignItems: 'baseline', gap: '0.6rem', flexWrap: 'wrap' }}>
         <h3 style={{ margin: 0, fontSize: '1.22rem', letterSpacing: '-0.01em' }}>{entrada.lemma}</h3>
+        {sePuedeOir(entrada, 'lemma') && (
+          <button
+            onClick={() => decir(entrada, 'lemma', locale)}
+            aria-label={`Escuchar «${entrada.lemma}»`}
+            title={`Escuchar «${entrada.lemma}»`}
+            style={{
+              appearance: 'none', border: 'none', background: 'none', cursor: 'pointer',
+              padding: 0, fontSize: '0.95rem', lineHeight: 1, color: COLOR,
+            }}
+          >
+            🔊
+          </button>
+        )}
+        {/*
+          El acento tónico llevaba etiqueta ninguna. La auditoría de usuario lo dijo así:
+          «mi primera lectura es que es otra forma de la palabra, o que la escribí mal».
+          Va marcado, y en voz alta al lado, que es como se entiende de verdad.
+        */}
         {'acento' in x && x.acento && x.acento !== entrada.lemma && (
-          <span style={{ fontFamily: 'var(--mono)', fontSize: '0.76rem', color: 'var(--muted)' }}>{x.acento}</span>
+          <span
+            title="Dónde carga la voz al pronunciarla"
+            style={{ fontFamily: 'var(--mono)', fontSize: '0.76rem', color: 'var(--muted)' }}
+          >
+            se dice {x.acento}
+          </span>
         )}
         <span style={{ fontSize: '0.72rem', fontFamily: 'var(--mono)', color: 'var(--muted)' }}>{entrada.pos}</span>
       </header>
@@ -510,7 +579,7 @@ function Dictado({ frases, locale, onHecho }: { frases: VocabEntry[]; locale: st
         arregla: reconocer la palabra cuando alguien la dice.
       </p>
 
-      <button onClick={() => decir(actual.ejemplo.target, locale)} style={{ ...botonSecundario, marginBottom: '0.8rem' }}>
+      <button onClick={() => decir(actual, 'ejemplo', locale)} style={{ ...botonSecundario, marginBottom: '0.8rem' }}>
         🔊 Escuchar
       </button>
 
@@ -738,7 +807,7 @@ export default function VocabularyJourney({ bloque, nivel, idiomaLabel, nivelLab
             </button>
           </div>
           <div style={{ display: 'grid', gap: '0.7rem', gridTemplateColumns: 'repeat(auto-fill, minmax(268px, 1fr))' }}>
-            {unidad.map((entrada) => <Ficha key={entrada.id} entrada={entrada} />)}
+            {unidad.map((entrada) => <Ficha key={entrada.id} entrada={entrada} locale={locale} />)}
           </div>
         </div>
       ))}

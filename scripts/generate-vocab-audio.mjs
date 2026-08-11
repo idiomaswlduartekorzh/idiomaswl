@@ -38,7 +38,7 @@ const scriptDir = path.dirname(fileURLToPath(import.meta.url))
 const repoRoot = path.resolve(scriptDir, '..')
 const vocabDir = path.join(repoRoot, 'src', 'data', 'practica', 'vocabulario')
 const castingPath = path.join(scriptDir, 'listening-voice-casting.json')
-const manifestPath = path.join(repoRoot, 'docs', 'vocab-audio-manifest.json')
+const manifestPath = path.join(vocabDir, 'audio-manifest.json')
 const audioRoot = path.join(repoRoot, 'public', 'audio', 'vocabulario')
 
 const API = 'https://api.elevenlabs.io'
@@ -236,7 +236,170 @@ if (!doGenerate) {
   process.exit(0)
 }
 
-console.error('✗ La generación todavía no está implementada en este script.')
-console.error('  La factura sí: quita --generate para verla.')
-console.error('  Se implementará cuando el dueño del proyecto apruebe el gasto de la factura.')
-process.exit(1)
+// ─────────────────────────────────────────────────────────────────────────────
+// Generación
+// ─────────────────────────────────────────────────────────────────────────────
+
+const LUFS_OBJETIVO = -16
+const TRUE_PEAK_MAX = -1.5
+
+async function hablar({ key, texto, voiceId, modelId, settings, locale, speed }) {
+  const res = await fetch(`${API}/v1/text-to-speech/${voiceId}?output_format=mp3_44100_128`, {
+    method: 'POST',
+    headers: { 'xi-api-key': key, 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      text: texto,
+      model_id: modelId,
+      language_code: locale.split('-')[0],
+      voice_settings: { ...settings, ...(speed ? { speed } : {}) },
+    }),
+  })
+  if (!res.ok) throw new Error(`${res.status} ${(await res.text()).slice(0, 300)}`)
+  return Buffer.from(await res.arrayBuffer())
+}
+
+/**
+ * Recorta el silencio de los bordes y nivela la sonoridad de cada locución por separado.
+ *
+ * Nivelar corte a corte importa más aquí que en escucha: en el mismo mp3 van una palabra
+ * suelta de medio segundo y una frase de tres, y `loudnorm` sobre la mezcla dejaría la
+ * palabra por debajo. El estudiante pulsa «escuchar» sobre una palabra concreta, no sobre
+ * el archivo.
+ */
+function prepararCorte(mp3) {
+  const wav = mp3.replace(/\.mp3$/u, '-prep.wav')
+  const filtros = [
+    'silenceremove=start_periods=1:start_silence=0.05:start_threshold=-45dB',
+    'areverse',
+    'silenceremove=start_periods=1:start_silence=0.05:start_threshold=-45dB',
+    'areverse',
+    `loudnorm=I=${LUFS_OBJETIVO}:TP=${TRUE_PEAK_MAX}:LRA=11`,
+  ]
+  execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', mp3, '-af', filtros.join(','),
+    '-ar', '44100', '-ac', '1', '-c:a', 'pcm_s16le', wav])
+  return wav
+}
+
+const medir = (file) =>
+  Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', file]).toString().trim())
+
+/**
+ * Pega los cortes con medio segundo de silencio y devuelve dónde cae cada uno.
+ *
+ * Las posiciones se calculan sobre los WAV ya preparados, no sobre lo que devolvió la API:
+ * el recorte de silencio cambia la duración, y usar la de antes desplazaría cada corte un
+ * poco más que el anterior. Al final se comprueba contra el mp3 real —igual que escucha
+ * mide el episodio con ffprobe— porque un desfase acumulado corta la palabra por la mitad.
+ */
+function pegar(cortes, salida) {
+  const dir = path.dirname(cortes[0].mp3)
+  const silencio = path.join(dir, 'silencio.wav')
+  const lista = path.join(dir, 'lista.txt')
+  execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'lavfi', '-t', String(SILENCE_SECONDS),
+    '-i', 'anullsrc=r=44100:cl=mono', '-ar', '44100', '-ac', '1', '-c:a', 'pcm_s16le', silencio])
+
+  const lineas = []
+  const posiciones = []
+  let reloj = 0
+  cortes.forEach((corte, i) => {
+    const wav = prepararCorte(corte.mp3)
+    if (i > 0) {
+      lineas.push(`file '${silencio}'`)
+      reloj += SILENCE_SECONDS
+    }
+    lineas.push(`file '${wav}'`)
+    const dur = medir(wav)
+    posiciones.push({ clave: corte.clave, texto: corte.texto, inicio: Number(reloj.toFixed(3)), fin: Number((reloj + dur).toFixed(3)) })
+    reloj += dur
+  })
+  fs.writeFileSync(lista, lineas.join('\n'))
+
+  execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', lista,
+    '-af', `alimiter=level_in=1:level_out=1:limit=0.7:attack=5:release=50:level=false`,
+    '-c:a', 'libmp3lame', '-b:a', BITRATE, '-ar', '44100', '-ac', '1', salida])
+
+  return { posiciones, previsto: reloj }
+}
+
+async function generar() {
+  const env = leerEnv()
+  const key = env.ELEVENLABS_API_KEY
+  if (!key) {
+    console.error('✗ Falta ELEVENLABS_API_KEY en .env.local.')
+    process.exit(1)
+  }
+  const casting = JSON.parse(fs.readFileSync(castingPath, 'utf8'))
+  const modelo = casting.defaults.model_id
+  const ajustes = casting.defaults.voice_settings
+
+  const manifiesto = fs.existsSync(manifestPath)
+    ? JSON.parse(fs.readFileSync(manifestPath, 'utf8'))
+    : { unidades: [] }
+
+  let gastados = 0
+
+  for (const nivel of niveles()) {
+    const voz = vozDe(casting, nivel.lang)
+    if (!voz) {
+      console.error(`✗ ${nivel.lang} no tiene voz en el reparto. Se salta.`)
+      continue
+    }
+    for (const bloque of nivel.bloques) {
+      if (bloqueFilter && bloque.id !== bloqueFilter) continue
+      const us = unidades(bloque)
+      for (const [i, unidad] of us.entries()) {
+        const nombre = `${bloque.id}-u${i + 1}`
+        const destino = path.join(audioRoot, nivel.lang, nivel.nivel)
+        const salida = path.join(destino, `${nombre}.mp3`)
+        const rel = path.relative(repoRoot, salida)
+        if (fs.existsSync(salida) && !has('--rehacer')) {
+          console.log(`   · ${rel} ya existe — se salta (usa --rehacer para regenerarlo)`)
+          continue
+        }
+        fs.mkdirSync(destino, { recursive: true })
+        const tmp = fs.mkdtempSync(path.join(repoRoot, '.vocab-audio-'))
+        try {
+          const cortes = []
+          for (const entrada of unidad) {
+            for (const l of locuciones(entrada)) {
+              process.stdout.write(`\r   ${nombre} · ${cortes.length + 1} locuciones   `)
+              const buf = await hablar({
+                key, texto: l.texto, voiceId: voz.voice_id, modelId: modelo,
+                settings: ajustes, locale: voz.locale, speed: voz.speed,
+              })
+              const mp3 = path.join(tmp, `${String(cortes.length).padStart(3, '0')}.mp3`)
+              fs.writeFileSync(mp3, buf)
+              cortes.push({ ...l, mp3 })
+              gastados += l.texto.length
+            }
+          }
+          const { posiciones, previsto } = pegar(cortes, salida)
+          const real = medir(salida)
+          // El mp3 real manda. Si se desvía del previsto, el reproductor cortaría palabras.
+          const desfase = Math.abs(real - previsto)
+          console.log(`\n   ✓ ${rel} — ${real.toFixed(1)}s, ${posiciones.length} cortes${desfase > 0.35 ? `  ⚠ desfase ${desfase.toFixed(2)}s` : ''}`)
+          const escala = previsto > 0 ? real / previsto : 1
+          manifiesto.unidades = manifiesto.unidades.filter((u) => u.archivo !== rel)
+          manifiesto.unidades.push({
+            idioma: nivel.lang, nivel: nivel.nivel, bloque: bloque.id, unidad: i + 1,
+            archivo: rel, duracion: real, modelo, voz: voz.voice_id,
+            cortes: posiciones.map((p) => ({
+              ...p,
+              inicio: Number((p.inicio * escala).toFixed(3)),
+              fin: Number((p.fin * escala).toFixed(3)),
+            })),
+          })
+          fs.writeFileSync(manifestPath, `${JSON.stringify(manifiesto, null, 2)}\n`)
+        } finally {
+          fs.rmSync(tmp, { recursive: true, force: true })
+        }
+      }
+    }
+  }
+
+  const tabla = CREDITOS_POR_CARACTER[modelo] ?? CREDITOS_POR_CARACTER.eleven_multilingual_v2
+  console.log(`\nGastado: ${gastados.toLocaleString('es')} caracteres ≈ ${Math.ceil(gastados * tabla.medido).toLocaleString('es')} créditos.`)
+  console.log(`Manifiesto: ${path.relative(repoRoot, manifestPath)}`)
+}
+
+await generar()

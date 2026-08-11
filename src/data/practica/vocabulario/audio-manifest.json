@@ -1,0 +1,4396 @@
+{
+  "unidades": [
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "comida-y-bebida",
+      "unidad": 1,
+      "archivo": "public/audio/vocabulario/ingles/a1/comida-y-bebida-u1.mp3",
+      "duracion": 32.937324,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-104:lemma",
+          "texto": "food",
+          "inicio": 0,
+          "fin": 0.588
+        },
+        {
+          "clave": "en-a1-104:ejemplo",
+          "texto": "The food in this café is very good.",
+          "inicio": 1.088,
+          "fin": 2.708
+        },
+        {
+          "clave": "en-a1-105:lemma",
+          "texto": "eat",
+          "inicio": 3.208,
+          "fin": 3.526
+        },
+        {
+          "clave": "en-a1-105:ejemplo",
+          "texto": "I eat bread and fruit at seven.",
+          "inicio": 4.026,
+          "fin": 5.444
+        },
+        {
+          "clave": "en-a1-106:lemma",
+          "texto": "drink",
+          "inicio": 5.944,
+          "fin": 6.432
+        },
+        {
+          "clave": "en-a1-106:ejemplo",
+          "texto": "I don’t drink coffee. I drink tea at night.",
+          "inicio": 6.932,
+          "fin": 8.933
+        },
+        {
+          "clave": "en-a1-107:lemma",
+          "texto": "breakfast",
+          "inicio": 9.433,
+          "fin": 10.178
+        },
+        {
+          "clave": "en-a1-107:ejemplo",
+          "texto": "Do you have breakfast at home?",
+          "inicio": 10.678,
+          "fin": 11.867
+        },
+        {
+          "clave": "en-a1-108:lemma",
+          "texto": "lunch",
+          "inicio": 12.367,
+          "fin": 12.874
+        },
+        {
+          "clave": "en-a1-108:ejemplo",
+          "texto": "Lunch starts at twelve and finishes at one thirty.",
+          "inicio": 13.374,
+          "fin": 16.054
+        },
+        {
+          "clave": "en-a1-109:lemma",
+          "texto": "dinner",
+          "inicio": 16.554,
+          "fin": 16.928
+        },
+        {
+          "clave": "en-a1-109:ejemplo",
+          "texto": "Yes, I’m making dinner at his house.",
+          "inicio": 17.428,
+          "fin": 19.289
+        },
+        {
+          "clave": "en-a1-110:lemma",
+          "texto": "cook",
+          "inicio": 19.789,
+          "fin": 20.205
+        },
+        {
+          "clave": "en-a1-110:ejemplo",
+          "texto": "Can you cook, Maya?",
+          "inicio": 20.705,
+          "fin": 21.702
+        },
+        {
+          "clave": "en-a1-111:lemma",
+          "texto": "make",
+          "inicio": 22.202,
+          "fin": 22.646
+        },
+        {
+          "clave": "en-a1-111:ejemplo",
+          "texto": "I get up at six. I make coffee first.",
+          "inicio": 23.146,
+          "fin": 25.22
+        },
+        {
+          "clave": "en-a1-112:lemma",
+          "texto": "menu",
+          "inicio": 25.72,
+          "fin": 26.351
+        },
+        {
+          "clave": "en-a1-112:ejemplo",
+          "texto": "Today’s lunch menu has three choices.",
+          "inicio": 26.851,
+          "fin": 28.83
+        },
+        {
+          "clave": "en-a1-113:lemma",
+          "texto": "order",
+          "inicio": 29.33,
+          "fin": 29.808
+        },
+        {
+          "clave": "en-a1-113:ejemplo",
+          "texto": "She sits near the window and orders tea with milk.",
+          "inicio": 30.308,
+          "fin": 32.937
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "comida-y-bebida",
+      "unidad": 2,
+      "archivo": "public/audio/vocabulario/ingles/a1/comida-y-bebida-u2.mp3",
+      "duracion": 38.565714,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-114:lemma",
+          "texto": "bread",
+          "inicio": 0,
+          "fin": 0.42
+        },
+        {
+          "clave": "en-a1-114:ejemplo",
+          "texto": "I’ve got it here. We need bread, rice and milk.",
+          "inicio": 0.92,
+          "fin": 2.975
+        },
+        {
+          "clave": "en-a1-115:lemma",
+          "texto": "milk",
+          "inicio": 3.475,
+          "fin": 4.009
+        },
+        {
+          "clave": "en-a1-115:ejemplo",
+          "texto": "I’ve got it here. We need bread, rice and milk.",
+          "inicio": 4.509,
+          "fin": 6.926
+        },
+        {
+          "clave": "en-a1-116:lemma",
+          "texto": "rice",
+          "inicio": 7.426,
+          "fin": 8.07
+        },
+        {
+          "clave": "en-a1-116:ejemplo",
+          "texto": "I know. You always eat rice and beans.",
+          "inicio": 8.57,
+          "fin": 10.617
+        },
+        {
+          "clave": "en-a1-117:lemma",
+          "texto": "egg",
+          "inicio": 11.117,
+          "fin": 11.539
+        },
+        {
+          "clave": "en-a1-117:ejemplo",
+          "texto": "Have we got eggs at home?",
+          "inicio": 12.039,
+          "fin": 13.087
+        },
+        {
+          "clave": "en-a1-118:lemma",
+          "texto": "coffee",
+          "inicio": 13.587,
+          "fin": 14.23
+        },
+        {
+          "clave": "en-a1-118:ejemplo",
+          "texto": "We haven’t got any eggs. And we’ve got very little coffee.",
+          "inicio": 14.73,
+          "fin": 17.876
+        },
+        {
+          "clave": "en-a1-119:lemma",
+          "texto": "tea",
+          "inicio": 18.376,
+          "fin": 18.923
+        },
+        {
+          "clave": "en-a1-119:ejemplo",
+          "texto": "She sits near the window and orders tea with milk.",
+          "inicio": 19.423,
+          "fin": 22.001
+        },
+        {
+          "clave": "en-a1-120:lemma",
+          "texto": "juice",
+          "inicio": 22.501,
+          "fin": 23.151
+        },
+        {
+          "clave": "en-a1-120:ejemplo",
+          "texto": "At noon, everyone can share fruit and juice in the community room.",
+          "inicio": 23.651,
+          "fin": 26.888
+        },
+        {
+          "clave": "en-a1-121:lemma",
+          "texto": "cake",
+          "inicio": 27.388,
+          "fin": 27.908
+        },
+        {
+          "clave": "en-a1-121:ejemplo",
+          "texto": "Good. My grandfather has got a cake for us.",
+          "inicio": 28.408,
+          "fin": 30.947
+        },
+        {
+          "clave": "en-a1-122:lemma",
+          "texto": "banana",
+          "inicio": 31.447,
+          "fin": 32.193
+        },
+        {
+          "clave": "en-a1-122:ejemplo",
+          "texto": "Has he got the banana cake?",
+          "inicio": 32.693,
+          "fin": 33.991
+        },
+        {
+          "clave": "en-a1-123:lemma",
+          "texto": "fruit",
+          "inicio": 34.491,
+          "fin": 35.04
+        },
+        {
+          "clave": "en-a1-123:ejemplo",
+          "texto": "At noon, everyone can share fruit and juice in the community room.",
+          "inicio": 35.54,
+          "fin": 38.566
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "comida-y-bebida",
+      "unidad": 3,
+      "archivo": "public/audio/vocabulario/ingles/a1/comida-y-bebida-u3.mp3",
+      "duracion": 41.536621,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-124:lemma",
+          "texto": "soup",
+          "inicio": 0,
+          "fin": 0.58
+        },
+        {
+          "clave": "en-a1-124:ejemplo",
+          "texto": "I can cook rice and soup. I can’t make bread.",
+          "inicio": 1.08,
+          "fin": 3.083
+        },
+        {
+          "clave": "en-a1-125:lemma",
+          "texto": "tomato",
+          "inicio": 3.583,
+          "fin": 4.359
+        },
+        {
+          "clave": "en-a1-125:ejemplo",
+          "texto": "I hate tomato soup.",
+          "inicio": 4.859,
+          "fin": 5.74
+        },
+        {
+          "clave": "en-a1-126:lemma",
+          "texto": "chicken",
+          "inicio": 6.24,
+          "fin": 6.787
+        },
+        {
+          "clave": "en-a1-126:ejemplo",
+          "texto": "Students can have vegetable soup with bread, chicken rice with salad, or a cheese sandwich with an apple.",
+          "inicio": 7.287,
+          "fin": 13.381
+        },
+        {
+          "clave": "en-a1-127:lemma",
+          "texto": "apple",
+          "inicio": 13.881,
+          "fin": 14.436
+        },
+        {
+          "clave": "en-a1-127:ejemplo",
+          "texto": "Students can have vegetable soup with bread, chicken rice with salad, or a cheese sandwich with an apple.",
+          "inicio": 14.936,
+          "fin": 20.9
+        },
+        {
+          "clave": "en-a1-128:lemma",
+          "texto": "cheese",
+          "inicio": 21.4,
+          "fin": 21.959
+        },
+        {
+          "clave": "en-a1-128:ejemplo",
+          "texto": "I want bread with cheese, please.",
+          "inicio": 22.459,
+          "fin": 24.139
+        },
+        {
+          "clave": "en-a1-129:lemma",
+          "texto": "sandwich",
+          "inicio": 24.639,
+          "fin": 25.411
+        },
+        {
+          "clave": "en-a1-129:ejemplo",
+          "texto": "At the end, she orders a sandwich for later.",
+          "inicio": 25.911,
+          "fin": 27.889
+        },
+        {
+          "clave": "en-a1-130:lemma",
+          "texto": "like",
+          "inicio": 28.389,
+          "fin": 28.823
+        },
+        {
+          "clave": "en-a1-130:ejemplo",
+          "texto": "I like the people. I don’t like the noise.",
+          "inicio": 29.323,
+          "fin": 31.332
+        },
+        {
+          "clave": "en-a1-131:lemma",
+          "texto": "love",
+          "inicio": 31.832,
+          "fin": 32.369
+        },
+        {
+          "clave": "en-a1-131:ejemplo",
+          "texto": "I love the soup. My favourite is tomato soup.",
+          "inicio": 32.869,
+          "fin": 35.191
+        },
+        {
+          "clave": "en-a1-132:lemma",
+          "texto": "hate",
+          "inicio": 35.691,
+          "fin": 36.234
+        },
+        {
+          "clave": "en-a1-132:ejemplo",
+          "texto": "I hate tomato soup.",
+          "inicio": 36.734,
+          "fin": 37.758
+        },
+        {
+          "clave": "en-a1-133:lemma",
+          "texto": "favourite",
+          "inicio": 38.258,
+          "fin": 38.814
+        },
+        {
+          "clave": "en-a1-133:ejemplo",
+          "texto": "I love the soup. My favourite is tomato soup.",
+          "inicio": 39.314,
+          "fin": 41.537
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "yo-y-mi-gente",
+      "unidad": 1,
+      "archivo": "public/audio/vocabulario/ingles/a1/yo-y-mi-gente-u1.mp3",
+      "duracion": 38.580544,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-001:lemma",
+          "texto": "name",
+          "inicio": 0,
+          "fin": 0.47
+        },
+        {
+          "clave": "en-a1-001:ejemplo",
+          "texto": "Hello. My name is Maya. I’m twenty years old.",
+          "inicio": 0.97,
+          "fin": 3.318
+        },
+        {
+          "clave": "en-a1-002:lemma",
+          "texto": "student",
+          "inicio": 3.818,
+          "fin": 4.534
+        },
+        {
+          "clave": "en-a1-002:ejemplo",
+          "texto": "I’m a student, and I’m a waitress on Saturdays.",
+          "inicio": 5.034,
+          "fin": 7.493
+        },
+        {
+          "clave": "en-a1-003:lemma",
+          "texto": "live",
+          "inicio": 7.993,
+          "fin": 8.548
+        },
+        {
+          "clave": "en-a1-003:ejemplo",
+          "texto": "I’m from Cartagena, in Colombia. Now I live here.",
+          "inicio": 9.048,
+          "fin": 12.262
+        },
+        {
+          "clave": "en-a1-004:lemma",
+          "texto": "from",
+          "inicio": 12.762,
+          "fin": 13.216
+        },
+        {
+          "clave": "en-a1-004:ejemplo",
+          "texto": "I’m from Cartagena, in Colombia. Now I live here.",
+          "inicio": 13.716,
+          "fin": 16.731
+        },
+        {
+          "clave": "en-a1-005:lemma",
+          "texto": "year",
+          "inicio": 17.231,
+          "fin": 17.735
+        },
+        {
+          "clave": "en-a1-005:ejemplo",
+          "texto": "Hello. My name is Maya. I’m twenty years old.",
+          "inicio": 18.235,
+          "fin": 20.743
+        },
+        {
+          "clave": "en-a1-006:lemma",
+          "texto": "old",
+          "inicio": 21.243,
+          "fin": 21.655
+        },
+        {
+          "clave": "en-a1-006:ejemplo",
+          "texto": "There are four chairs and one very old table.",
+          "inicio": 22.155,
+          "fin": 24.395
+        },
+        {
+          "clave": "en-a1-007:lemma",
+          "texto": "new",
+          "inicio": 24.895,
+          "fin": 25.352
+        },
+        {
+          "clave": "en-a1-007:ejemplo",
+          "texto": "Hi! Are you new here? I’m Leo.",
+          "inicio": 25.852,
+          "fin": 27.35
+        },
+        {
+          "clave": "en-a1-008:lemma",
+          "texto": "meet",
+          "inicio": 27.85,
+          "fin": 28.353
+        },
+        {
+          "clave": "en-a1-008:ejemplo",
+          "texto": "Nice to meet you, Leo. This street is very quiet.",
+          "inicio": 28.853,
+          "fin": 31.591
+        },
+        {
+          "clave": "en-a1-009:lemma",
+          "texto": "friend",
+          "inicio": 32.091,
+          "fin": 32.673
+        },
+        {
+          "clave": "en-a1-009:ejemplo",
+          "texto": "Max and your cat are friends already.",
+          "inicio": 33.173,
+          "fin": 34.99
+        },
+        {
+          "clave": "en-a1-010:lemma",
+          "texto": "people",
+          "inicio": 35.49,
+          "fin": 35.999
+        },
+        {
+          "clave": "en-a1-010:ejemplo",
+          "texto": "I like the people. I don’t like the noise.",
+          "inicio": 36.499,
+          "fin": 38.581
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "yo-y-mi-gente",
+      "unidad": 2,
+      "archivo": "public/audio/vocabulario/ingles/a1/yo-y-mi-gente-u2.mp3",
+      "duracion": 36.276984,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-011:lemma",
+          "texto": "family",
+          "inicio": 0,
+          "fin": 0.682
+        },
+        {
+          "clave": "en-a1-011:ejemplo",
+          "texto": "This is a photo of my family.",
+          "inicio": 1.182,
+          "fin": 2.544
+        },
+        {
+          "clave": "en-a1-012:lemma",
+          "texto": "father",
+          "inicio": 3.044,
+          "fin": 3.686
+        },
+        {
+          "clave": "en-a1-012:ejemplo",
+          "texto": "Sometimes. My father drives a bus in the morning.",
+          "inicio": 4.186,
+          "fin": 7.377
+        },
+        {
+          "clave": "en-a1-013:lemma",
+          "texto": "mother",
+          "inicio": 7.877,
+          "fin": 8.404
+        },
+        {
+          "clave": "en-a1-013:ejemplo",
+          "texto": "My mother works at the hospital. She starts at seven.",
+          "inicio": 8.904,
+          "fin": 11.776
+        },
+        {
+          "clave": "en-a1-014:lemma",
+          "texto": "sister",
+          "inicio": 12.276,
+          "fin": 12.854
+        },
+        {
+          "clave": "en-a1-014:ejemplo",
+          "texto": "Is that your sister?",
+          "inicio": 13.354,
+          "fin": 14.373
+        },
+        {
+          "clave": "en-a1-015:lemma",
+          "texto": "brother",
+          "inicio": 14.873,
+          "fin": 15.352
+        },
+        {
+          "clave": "en-a1-015:ejemplo",
+          "texto": "My brother is sixteen. He is a student too.",
+          "inicio": 15.852,
+          "fin": 18.322
+        },
+        {
+          "clave": "en-a1-016:lemma",
+          "texto": "grandfather",
+          "inicio": 18.822,
+          "fin": 19.695
+        },
+        {
+          "clave": "en-a1-016:ejemplo",
+          "texto": "Good. My grandfather has got a cake for us.",
+          "inicio": 20.195,
+          "fin": 22.504
+        },
+        {
+          "clave": "en-a1-017:lemma",
+          "texto": "grandmother",
+          "inicio": 23.004,
+          "fin": 23.654
+        },
+        {
+          "clave": "en-a1-017:ejemplo",
+          "texto": "My grandmother has a table like that.",
+          "inicio": 24.154,
+          "fin": 26.018
+        },
+        {
+          "clave": "en-a1-018:lemma",
+          "texto": "parents",
+          "inicio": 26.518,
+          "fin": 27.184
+        },
+        {
+          "clave": "en-a1-018:ejemplo",
+          "texto": "Really? And your parents?",
+          "inicio": 27.684,
+          "fin": 28.94
+        },
+        {
+          "clave": "en-a1-019:lemma",
+          "texto": "children",
+          "inicio": 29.44,
+          "fin": 30.075
+        },
+        {
+          "clave": "en-a1-019:ejemplo",
+          "texto": "Children are playing football near the trees.",
+          "inicio": 30.575,
+          "fin": 32.701
+        },
+        {
+          "clave": "en-a1-020:lemma",
+          "texto": "photo",
+          "inicio": 33.201,
+          "fin": 33.848
+        },
+        {
+          "clave": "en-a1-020:ejemplo",
+          "texto": "There are books and a box of old photos.",
+          "inicio": 34.348,
+          "fin": 36.277
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "yo-y-mi-gente",
+      "unidad": 3,
+      "archivo": "public/audio/vocabulario/ingles/a1/yo-y-mi-gente-u3.mp3",
+      "duracion": 37.956984,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-021:lemma",
+          "texto": "man",
+          "inicio": 0,
+          "fin": 0.496
+        },
+        {
+          "clave": "en-a1-021:ejemplo",
+          "texto": "Who is the man with the hat?",
+          "inicio": 0.996,
+          "fin": 2.317
+        },
+        {
+          "clave": "en-a1-022:lemma",
+          "texto": "woman",
+          "inicio": 2.817,
+          "fin": 3.415
+        },
+        {
+          "clave": "en-a1-022:ejemplo",
+          "texto": "And two women are running with their dogs.",
+          "inicio": 3.915,
+          "fin": 5.544
+        },
+        {
+          "clave": "en-a1-023:lemma",
+          "texto": "young",
+          "inicio": 6.044,
+          "fin": 6.547
+        },
+        {
+          "clave": "en-a1-023:ejemplo",
+          "texto": "My grandfather is old, but he is not tired. My sister is young.",
+          "inicio": 7.047,
+          "fin": 10.674
+        },
+        {
+          "clave": "en-a1-024:lemma",
+          "texto": "work",
+          "inicio": 11.174,
+          "fin": 11.767
+        },
+        {
+          "clave": "en-a1-024:ejemplo",
+          "texto": "Do you always work on Saturdays?",
+          "inicio": 12.267,
+          "fin": 13.88
+        },
+        {
+          "clave": "en-a1-025:lemma",
+          "texto": "job",
+          "inicio": 14.38,
+          "fin": 14.837
+        },
+        {
+          "clave": "en-a1-025:ejemplo",
+          "texto": "Do you like your job at the café?",
+          "inicio": 15.337,
+          "fin": 16.86
+        },
+        {
+          "clave": "en-a1-026:lemma",
+          "texto": "driver",
+          "inicio": 17.36,
+          "fin": 17.991
+        },
+        {
+          "clave": "en-a1-026:ejemplo",
+          "texto": "My father is a bus driver. My mother is a nurse.",
+          "inicio": 18.491,
+          "fin": 21.149
+        },
+        {
+          "clave": "en-a1-027:lemma",
+          "texto": "nurse",
+          "inicio": 21.649,
+          "fin": 22.247
+        },
+        {
+          "clave": "en-a1-027:ejemplo",
+          "texto": "My father is a bus driver. My mother is a nurse.",
+          "inicio": 22.747,
+          "fin": 25.471
+        },
+        {
+          "clave": "en-a1-028:lemma",
+          "texto": "waitress",
+          "inicio": 25.971,
+          "fin": 26.547
+        },
+        {
+          "clave": "en-a1-028:ejemplo",
+          "texto": "I’m a student, and I’m a waitress on Saturdays.",
+          "inicio": 27.047,
+          "fin": 29.318
+        },
+        {
+          "clave": "en-a1-029:lemma",
+          "texto": "teach",
+          "inicio": 29.818,
+          "fin": 30.396
+        },
+        {
+          "clave": "en-a1-029:ejemplo",
+          "texto": "My mother teaches at the school.",
+          "inicio": 30.896,
+          "fin": 32.504
+        },
+        {
+          "clave": "en-a1-030:lemma",
+          "texto": "visit",
+          "inicio": 33.004,
+          "fin": 33.676
+        },
+        {
+          "clave": "en-a1-030:ejemplo",
+          "texto": "I usually study in the library. Sometimes I visit my grandfather.",
+          "inicio": 34.176,
+          "fin": 37.957
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "yo-y-mi-gente",
+      "unidad": 4,
+      "archivo": "public/audio/vocabulario/ingles/a1/yo-y-mi-gente-u4.mp3",
+      "duracion": 33.207302,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-031:lemma",
+          "texto": "son",
+          "inicio": 0,
+          "fin": 0.506
+        },
+        {
+          "clave": "en-a1-031:ejemplo",
+          "texto": "My grandfather has one son and two daughters.",
+          "inicio": 1.006,
+          "fin": 3.231
+        },
+        {
+          "clave": "en-a1-032:lemma",
+          "texto": "daughter",
+          "inicio": 3.731,
+          "fin": 4.224
+        },
+        {
+          "clave": "en-a1-032:ejemplo",
+          "texto": "My grandfather has one son and two daughters.",
+          "inicio": 4.724,
+          "fin": 6.857
+        },
+        {
+          "clave": "en-a1-033:lemma",
+          "texto": "husband",
+          "inicio": 7.357,
+          "fin": 8.006
+        },
+        {
+          "clave": "en-a1-033:ejemplo",
+          "texto": "Her husband works in a bakery.",
+          "inicio": 8.506,
+          "fin": 9.962
+        },
+        {
+          "clave": "en-a1-034:lemma",
+          "texto": "wife",
+          "inicio": 10.462,
+          "fin": 11.056
+        },
+        {
+          "clave": "en-a1-034:ejemplo",
+          "texto": "His wife is a teacher at my school.",
+          "inicio": 11.556,
+          "fin": 13.219
+        },
+        {
+          "clave": "en-a1-035:lemma",
+          "texto": "boy",
+          "inicio": 13.719,
+          "fin": 14.2
+        },
+        {
+          "clave": "en-a1-035:ejemplo",
+          "texto": "There is a boy in the garden.",
+          "inicio": 14.7,
+          "fin": 15.938
+        },
+        {
+          "clave": "en-a1-036:lemma",
+          "texto": "girl",
+          "inicio": 16.438,
+          "fin": 16.882
+        },
+        {
+          "clave": "en-a1-036:ejemplo",
+          "texto": "That girl is my sister’s friend.",
+          "inicio": 17.382,
+          "fin": 18.766
+        },
+        {
+          "clave": "en-a1-037:lemma",
+          "texto": "country",
+          "inicio": 19.266,
+          "fin": 19.952
+        },
+        {
+          "clave": "en-a1-037:ejemplo",
+          "texto": "Colombia is a big country.",
+          "inicio": 20.452,
+          "fin": 21.814
+        },
+        {
+          "clave": "en-a1-038:lemma",
+          "texto": "city",
+          "inicio": 22.314,
+          "fin": 22.841
+        },
+        {
+          "clave": "en-a1-038:ejemplo",
+          "texto": "The bus stops at the museum, the city park, and Riverside Market.",
+          "inicio": 23.341,
+          "fin": 26.96
+        },
+        {
+          "clave": "en-a1-039:lemma",
+          "texto": "nice",
+          "inicio": 27.46,
+          "fin": 28.061
+        },
+        {
+          "clave": "en-a1-039:ejemplo",
+          "texto": "Your room is nice. Is there a desk?",
+          "inicio": 28.561,
+          "fin": 30.547
+        },
+        {
+          "clave": "en-a1-040:lemma",
+          "texto": "home",
+          "inicio": 31.047,
+          "fin": 31.496
+        },
+        {
+          "clave": "en-a1-040:ejemplo",
+          "texto": "Do you have breakfast at home?",
+          "inicio": 31.996,
+          "fin": 33.207
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "numeros-hora-y-calendario",
+      "unidad": 1,
+      "archivo": "public/audio/vocabulario/ingles/a1/numeros-hora-y-calendario-u1.mp3",
+      "duracion": 33.510227,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-041:lemma",
+          "texto": "time",
+          "inicio": 0,
+          "fin": 0.574
+        },
+        {
+          "clave": "en-a1-041:ejemplo",
+          "texto": "What time do you get up?",
+          "inicio": 1.074,
+          "fin": 2.166
+        },
+        {
+          "clave": "en-a1-042:lemma",
+          "texto": "o’clock",
+          "inicio": 2.666,
+          "fin": 3.209
+        },
+        {
+          "clave": "en-a1-042:ejemplo",
+          "texto": "On Monday morning, at nine o’clock.",
+          "inicio": 3.709,
+          "fin": 5.466
+        },
+        {
+          "clave": "en-a1-043:lemma",
+          "texto": "half",
+          "inicio": 5.966,
+          "fin": 6.475
+        },
+        {
+          "clave": "en-a1-043:ejemplo",
+          "texto": "I leave at half past seven and I walk.",
+          "inicio": 6.975,
+          "fin": 8.639
+        },
+        {
+          "clave": "en-a1-044:lemma",
+          "texto": "hour",
+          "inicio": 9.139,
+          "fin": 9.647
+        },
+        {
+          "clave": "en-a1-044:ejemplo",
+          "texto": "Two hours is enough for bread.",
+          "inicio": 10.147,
+          "fin": 11.441
+        },
+        {
+          "clave": "en-a1-045:lemma",
+          "texto": "minute",
+          "inicio": 11.941,
+          "fin": 12.462
+        },
+        {
+          "clave": "en-a1-045:ejemplo",
+          "texto": "Walk straight for two minutes. Don’t cross the street.",
+          "inicio": 12.962,
+          "fin": 15.802
+        },
+        {
+          "clave": "en-a1-046:lemma",
+          "texto": "open",
+          "inicio": 16.302,
+          "fin": 16.824
+        },
+        {
+          "clave": "en-a1-046:ejemplo",
+          "texto": "What time does the café open?",
+          "inicio": 17.324,
+          "fin": 18.885
+        },
+        {
+          "clave": "en-a1-047:lemma",
+          "texto": "arrive",
+          "inicio": 19.385,
+          "fin": 19.956
+        },
+        {
+          "clave": "en-a1-047:ejemplo",
+          "texto": "It opens at eight. I arrive at half past seven.",
+          "inicio": 20.456,
+          "fin": 22.868
+        },
+        {
+          "clave": "en-a1-048:lemma",
+          "texto": "leave",
+          "inicio": 23.368,
+          "fin": 23.961
+        },
+        {
+          "clave": "en-a1-048:ejemplo",
+          "texto": "When do you leave?",
+          "inicio": 24.461,
+          "fin": 25.157
+        },
+        {
+          "clave": "en-a1-049:lemma",
+          "texto": "sleep",
+          "inicio": 25.657,
+          "fin": 26.26
+        },
+        {
+          "clave": "en-a1-049:ejemplo",
+          "texto": "Never. I work on Saturday and I sleep on Sunday.",
+          "inicio": 26.76,
+          "fin": 29.558
+        },
+        {
+          "clave": "en-a1-050:lemma",
+          "texto": "number",
+          "inicio": 30.058,
+          "fin": 30.542
+        },
+        {
+          "clave": "en-a1-050:ejemplo",
+          "texto": "Take the number nine bus. Get off at the church.",
+          "inicio": 31.042,
+          "fin": 33.51
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "numeros-hora-y-calendario",
+      "unidad": 2,
+      "archivo": "public/audio/vocabulario/ingles/a1/numeros-hora-y-calendario-u2.mp3",
+      "duracion": 34.569002,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-051:lemma",
+          "texto": "Monday",
+          "inicio": 0,
+          "fin": 0.577
+        },
+        {
+          "clave": "en-a1-051:ejemplo",
+          "texto": "What do you do on Mondays?",
+          "inicio": 1.077,
+          "fin": 2.327
+        },
+        {
+          "clave": "en-a1-052:lemma",
+          "texto": "Tuesday",
+          "inicio": 2.827,
+          "fin": 3.408
+        },
+        {
+          "clave": "en-a1-052:ejemplo",
+          "texto": "My English class is on Tuesday at six.",
+          "inicio": 3.908,
+          "fin": 6.057
+        },
+        {
+          "clave": "en-a1-053:lemma",
+          "texto": "Wednesday",
+          "inicio": 6.557,
+          "fin": 7.211
+        },
+        {
+          "clave": "en-a1-053:ejemplo",
+          "texto": "I often play football on Wednesdays.",
+          "inicio": 7.711,
+          "fin": 9.583
+        },
+        {
+          "clave": "en-a1-054:lemma",
+          "texto": "Thursday",
+          "inicio": 10.083,
+          "fin": 10.799
+        },
+        {
+          "clave": "en-a1-054:ejemplo",
+          "texto": "Is it on Thursday too?",
+          "inicio": 11.299,
+          "fin": 12.479
+        },
+        {
+          "clave": "en-a1-055:lemma",
+          "texto": "Friday",
+          "inicio": 12.979,
+          "fin": 13.599
+        },
+        {
+          "clave": "en-a1-055:ejemplo",
+          "texto": "Please text her before Friday to say if you can come.",
+          "inicio": 14.099,
+          "fin": 16.874
+        },
+        {
+          "clave": "en-a1-056:lemma",
+          "texto": "Saturday",
+          "inicio": 17.374,
+          "fin": 18.074
+        },
+        {
+          "clave": "en-a1-056:ejemplo",
+          "texto": "You work every Saturday. Do you rest?",
+          "inicio": 18.574,
+          "fin": 20.842
+        },
+        {
+          "clave": "en-a1-057:lemma",
+          "texto": "Sunday",
+          "inicio": 21.342,
+          "fin": 21.928
+        },
+        {
+          "clave": "en-a1-057:ejemplo",
+          "texto": "I rest on Sunday. Saturday is the busy day.",
+          "inicio": 22.428,
+          "fin": 24.772
+        },
+        {
+          "clave": "en-a1-058:lemma",
+          "texto": "day",
+          "inicio": 25.272,
+          "fin": 25.672
+        },
+        {
+          "clave": "en-a1-058:ejemplo",
+          "texto": "I rest on Sunday. Saturday is the busy day.",
+          "inicio": 26.172,
+          "fin": 28.554
+        },
+        {
+          "clave": "en-a1-059:lemma",
+          "texto": "week",
+          "inicio": 29.054,
+          "fin": 29.523
+        },
+        {
+          "clave": "en-a1-059:ejemplo",
+          "texto": "You say that every single week.",
+          "inicio": 30.023,
+          "fin": 31.319
+        },
+        {
+          "clave": "en-a1-060:lemma",
+          "texto": "weekend",
+          "inicio": 31.819,
+          "fin": 32.447
+        },
+        {
+          "clave": "en-a1-060:ejemplo",
+          "texto": "Do you have classes at the weekend?",
+          "inicio": 32.947,
+          "fin": 34.569
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "numeros-hora-y-calendario",
+      "unidad": 3,
+      "archivo": "public/audio/vocabulario/ingles/a1/numeros-hora-y-calendario-u3.mp3",
+      "duracion": 32.524898,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-061:lemma",
+          "texto": "November",
+          "inicio": 0,
+          "fin": 0.677
+        },
+        {
+          "clave": "en-a1-061:ejemplo",
+          "texto": "In November it’s cold and windy.",
+          "inicio": 1.177,
+          "fin": 2.784
+        },
+        {
+          "clave": "en-a1-062:lemma",
+          "texto": "December",
+          "inicio": 3.284,
+          "fin": 3.955
+        },
+        {
+          "clave": "en-a1-062:ejemplo",
+          "texto": "Is it cold in December too?",
+          "inicio": 4.455,
+          "fin": 5.771
+        },
+        {
+          "clave": "en-a1-063:lemma",
+          "texto": "winter",
+          "inicio": 6.271,
+          "fin": 6.915
+        },
+        {
+          "clave": "en-a1-063:ejemplo",
+          "texto": "In winter I stay at home with a book.",
+          "inicio": 7.415,
+          "fin": 9.271
+        },
+        {
+          "clave": "en-a1-064:lemma",
+          "texto": "today",
+          "inicio": 9.771,
+          "fin": 10.44
+        },
+        {
+          "clave": "en-a1-064:ejemplo",
+          "texto": "It’s cold today. Is it always like this?",
+          "inicio": 10.94,
+          "fin": 12.882
+        },
+        {
+          "clave": "en-a1-065:lemma",
+          "texto": "tomorrow",
+          "inicio": 13.382,
+          "fin": 13.954
+        },
+        {
+          "clave": "en-a1-065:ejemplo",
+          "texto": "Today it’s grey, but tomorrow is sunny.",
+          "inicio": 14.454,
+          "fin": 16.322
+        },
+        {
+          "clave": "en-a1-066:lemma",
+          "texto": "always",
+          "inicio": 16.822,
+          "fin": 17.417
+        },
+        {
+          "clave": "en-a1-066:ejemplo",
+          "texto": "Do you always work on Saturdays?",
+          "inicio": 17.917,
+          "fin": 19.429
+        },
+        {
+          "clave": "en-a1-067:lemma",
+          "texto": "never",
+          "inicio": 19.929,
+          "fin": 20.43
+        },
+        {
+          "clave": "en-a1-067:ejemplo",
+          "texto": "Always. I never work on Sundays.",
+          "inicio": 20.93,
+          "fin": 22.618
+        },
+        {
+          "clave": "en-a1-068:lemma",
+          "texto": "sometimes",
+          "inicio": 23.118,
+          "fin": 23.954
+        },
+        {
+          "clave": "en-a1-068:ejemplo",
+          "texto": "It’s colder. Sometimes there’s snow.",
+          "inicio": 24.454,
+          "fin": 26.534
+        },
+        {
+          "clave": "en-a1-069:lemma",
+          "texto": "often",
+          "inicio": 27.034,
+          "fin": 27.477
+        },
+        {
+          "clave": "en-a1-069:ejemplo",
+          "texto": "I often play football on Wednesdays.",
+          "inicio": 27.977,
+          "fin": 29.772
+        },
+        {
+          "clave": "en-a1-070:lemma",
+          "texto": "every",
+          "inicio": 30.272,
+          "fin": 30.812
+        },
+        {
+          "clave": "en-a1-070:ejemplo",
+          "texto": "He plays here every Sunday.",
+          "inicio": 31.312,
+          "fin": 32.525
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "numeros-hora-y-calendario",
+      "unidad": 4,
+      "archivo": "public/audio/vocabulario/ingles/a1/numeros-hora-y-calendario-u4.mp3",
+      "duracion": 33.578186,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-314:lemma",
+          "texto": "one",
+          "inicio": 0,
+          "fin": 0.448
+        },
+        {
+          "clave": "en-a1-314:ejemplo",
+          "texto": "Those tiles are from 1971. I know every one.",
+          "inicio": 0.948,
+          "fin": 3.695
+        },
+        {
+          "clave": "en-a1-315:lemma",
+          "texto": "two",
+          "inicio": 4.195,
+          "fin": 4.668
+        },
+        {
+          "clave": "en-a1-315:ejemplo",
+          "texto": "Two hours is enough for bread.",
+          "inicio": 5.168,
+          "fin": 6.656
+        },
+        {
+          "clave": "en-a1-316:lemma",
+          "texto": "three",
+          "inicio": 7.156,
+          "fin": 7.654
+        },
+        {
+          "clave": "en-a1-316:ejemplo",
+          "texto": "He’s three. He runs in the park every morning.",
+          "inicio": 8.154,
+          "fin": 10.254
+        },
+        {
+          "clave": "en-a1-317:lemma",
+          "texto": "four",
+          "inicio": 10.754,
+          "fin": 11.349
+        },
+        {
+          "clave": "en-a1-317:ejemplo",
+          "texto": "We’re meeting at the library at four.",
+          "inicio": 11.849,
+          "fin": 13.643
+        },
+        {
+          "clave": "en-a1-318:lemma",
+          "texto": "five",
+          "inicio": 14.143,
+          "fin": 14.742
+        },
+        {
+          "clave": "en-a1-318:ejemplo",
+          "texto": "Five! Do you miss it?",
+          "inicio": 15.242,
+          "fin": 16.42
+        },
+        {
+          "clave": "en-a1-319:lemma",
+          "texto": "six",
+          "inicio": 16.92,
+          "fin": 17.468
+        },
+        {
+          "clave": "en-a1-319:ejemplo",
+          "texto": "I get up at six. I make coffee first.",
+          "inicio": 17.968,
+          "fin": 20.429
+        },
+        {
+          "clave": "en-a1-320:lemma",
+          "texto": "seven",
+          "inicio": 20.929,
+          "fin": 21.528
+        },
+        {
+          "clave": "en-a1-320:ejemplo",
+          "texto": "I eat bread and fruit at seven.",
+          "inicio": 22.028,
+          "fin": 23.384
+        },
+        {
+          "clave": "en-a1-321:lemma",
+          "texto": "eight",
+          "inicio": 23.884,
+          "fin": 24.282
+        },
+        {
+          "clave": "en-a1-321:ejemplo",
+          "texto": "I get up at eight. I never walk.",
+          "inicio": 24.782,
+          "fin": 26.61
+        },
+        {
+          "clave": "en-a1-322:lemma",
+          "texto": "nine",
+          "inicio": 27.11,
+          "fin": 27.71
+        },
+        {
+          "clave": "en-a1-322:ejemplo",
+          "texto": "On Monday morning, at nine o’clock.",
+          "inicio": 28.21,
+          "fin": 30.07
+        },
+        {
+          "clave": "en-a1-323:lemma",
+          "texto": "ten",
+          "inicio": 30.57,
+          "fin": 30.975
+        },
+        {
+          "clave": "en-a1-323:ejemplo",
+          "texto": "We meet beside the playground at ten o’clock.",
+          "inicio": 31.475,
+          "fin": 33.578
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "numeros-hora-y-calendario",
+      "unidad": 5,
+      "archivo": "public/audio/vocabulario/ingles/a1/numeros-hora-y-calendario-u5.mp3",
+      "duracion": 33.300522,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-324:lemma",
+          "texto": "twenty",
+          "inicio": 0,
+          "fin": 0.501
+        },
+        {
+          "clave": "en-a1-324:ejemplo",
+          "texto": "The train arrives at ten twenty and leaves at ten thirty.",
+          "inicio": 1.001,
+          "fin": 3.842
+        },
+        {
+          "clave": "en-a1-325:lemma",
+          "texto": "thirty",
+          "inicio": 4.342,
+          "fin": 4.982
+        },
+        {
+          "clave": "en-a1-325:ejemplo",
+          "texto": "The train arrives at ten twenty and leaves at ten thirty.",
+          "inicio": 5.482,
+          "fin": 8.274
+        },
+        {
+          "clave": "en-a1-326:lemma",
+          "texto": "hundred",
+          "inicio": 8.774,
+          "fin": 9.212
+        },
+        {
+          "clave": "en-a1-326:ejemplo",
+          "texto": "The books cost a hundred pounds.",
+          "inicio": 9.712,
+          "fin": 11.191
+        },
+        {
+          "clave": "en-a1-327:lemma",
+          "texto": "month",
+          "inicio": 11.691,
+          "fin": 12.14
+        },
+        {
+          "clave": "en-a1-327:ejemplo",
+          "texto": "My birthday is in this month.",
+          "inicio": 12.64,
+          "fin": 13.859
+        },
+        {
+          "clave": "en-a1-328:lemma",
+          "texto": "many",
+          "inicio": 14.359,
+          "fin": 14.942
+        },
+        {
+          "clave": "en-a1-328:ejemplo",
+          "texto": "Are there many chairs in the kitchen?",
+          "inicio": 15.442,
+          "fin": 16.978
+        },
+        {
+          "clave": "en-a1-329:lemma",
+          "texto": "any",
+          "inicio": 17.478,
+          "fin": 17.94
+        },
+        {
+          "clave": "en-a1-329:ejemplo",
+          "texto": "Are there any shelves?",
+          "inicio": 18.44,
+          "fin": 19.537
+        },
+        {
+          "clave": "en-a1-330:lemma",
+          "texto": "about",
+          "inicio": 20.037,
+          "fin": 20.677
+        },
+        {
+          "clave": "en-a1-330:ejemplo",
+          "texto": "She loves it. She talks about her students every day.",
+          "inicio": 21.177,
+          "fin": 24.758
+        },
+        {
+          "clave": "en-a1-331:lemma",
+          "texto": "some",
+          "inicio": 25.258,
+          "fin": 25.804
+        },
+        {
+          "clave": "en-a1-331:ejemplo",
+          "texto": "There are some eggs in the kitchen.",
+          "inicio": 26.304,
+          "fin": 27.845
+        },
+        {
+          "clave": "en-a1-332:lemma",
+          "texto": "all",
+          "inicio": 28.345,
+          "fin": 28.63
+        },
+        {
+          "clave": "en-a1-332:ejemplo",
+          "texto": "I work all day on Saturday.",
+          "inicio": 29.13,
+          "fin": 30.483
+        },
+        {
+          "clave": "en-a1-333:lemma",
+          "texto": "only",
+          "inicio": 30.983,
+          "fin": 31.411
+        },
+        {
+          "clave": "en-a1-333:ejemplo",
+          "texto": "I only work on Saturdays.",
+          "inicio": 31.911,
+          "fin": 33.301
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "casa-y-objetos",
+      "unidad": 1,
+      "archivo": "public/audio/vocabulario/ingles/a1/casa-y-objetos-u1.mp3",
+      "duracion": 36.327438,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-071:lemma",
+          "texto": "house",
+          "inicio": 0,
+          "fin": 0.494
+        },
+        {
+          "clave": "en-a1-071:ejemplo",
+          "texto": "Our house is small. There are three rooms.",
+          "inicio": 0.994,
+          "fin": 3.157
+        },
+        {
+          "clave": "en-a1-072:lemma",
+          "texto": "room",
+          "inicio": 3.657,
+          "fin": 4.205
+        },
+        {
+          "clave": "en-a1-072:ejemplo",
+          "texto": "Our house is small. There are three rooms.",
+          "inicio": 4.705,
+          "fin": 6.885
+        },
+        {
+          "clave": "en-a1-073:lemma",
+          "texto": "kitchen",
+          "inicio": 7.385,
+          "fin": 7.919
+        },
+        {
+          "clave": "en-a1-073:ejemplo",
+          "texto": "Where is the kitchen?",
+          "inicio": 8.419,
+          "fin": 9.341
+        },
+        {
+          "clave": "en-a1-074:lemma",
+          "texto": "garden",
+          "inicio": 9.841,
+          "fin": 10.455
+        },
+        {
+          "clave": "en-a1-074:ejemplo",
+          "texto": "Is there a garden?",
+          "inicio": 10.955,
+          "fin": 12.001
+        },
+        {
+          "clave": "en-a1-101:lemma",
+          "texto": "bag",
+          "inicio": 12.501,
+          "fin": 13.055
+        },
+        {
+          "clave": "en-a1-101:ejemplo",
+          "texto": "Passengers with large bags can use the lift beside the ticket office.",
+          "inicio": 13.555,
+          "fin": 17.035
+        },
+        {
+          "clave": "en-a1-076:lemma",
+          "texto": "door",
+          "inicio": 17.535,
+          "fin": 18.07
+        },
+        {
+          "clave": "en-a1-076:ejemplo",
+          "texto": "Look for the blue door. Don’t use the back door.",
+          "inicio": 18.57,
+          "fin": 20.877
+        },
+        {
+          "clave": "en-a1-077:lemma",
+          "texto": "window",
+          "inicio": 21.377,
+          "fin": 21.895
+        },
+        {
+          "clave": "en-a1-077:ejemplo",
+          "texto": "There’s a small desk under the window.",
+          "inicio": 22.395,
+          "fin": 24.131
+        },
+        {
+          "clave": "en-a1-078:lemma",
+          "texto": "wall",
+          "inicio": 24.631,
+          "fin": 25.12
+        },
+        {
+          "clave": "en-a1-078:ejemplo",
+          "texto": "I can clean them. I can paint the walls.",
+          "inicio": 25.62,
+          "fin": 27.559
+        },
+        {
+          "clave": "en-a1-079:lemma",
+          "texto": "floor",
+          "inicio": 28.059,
+          "fin": 28.561
+        },
+        {
+          "clave": "en-a1-079:ejemplo",
+          "texto": "The door is open. There are old tiles on the floor.",
+          "inicio": 29.061,
+          "fin": 32.547
+        },
+        {
+          "clave": "en-a1-080:lemma",
+          "texto": "small",
+          "inicio": 33.047,
+          "fin": 33.667
+        },
+        {
+          "clave": "en-a1-080:ejemplo",
+          "texto": "I’ve got a small brown dog. His name is Max.",
+          "inicio": 34.167,
+          "fin": 36.327
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "casa-y-objetos",
+      "unidad": 2,
+      "archivo": "public/audio/vocabulario/ingles/a1/casa-y-objetos-u2.mp3",
+      "duracion": 36.848617,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-081:lemma",
+          "texto": "desk",
+          "inicio": 0,
+          "fin": 0.565
+        },
+        {
+          "clave": "en-a1-081:ejemplo",
+          "texto": "There’s a small desk under the window.",
+          "inicio": 1.065,
+          "fin": 2.806
+        },
+        {
+          "clave": "en-a1-082:lemma",
+          "texto": "shelf",
+          "inicio": 3.306,
+          "fin": 3.837
+        },
+        {
+          "clave": "en-a1-082:ejemplo",
+          "texto": "There are two shelves next to the door.",
+          "inicio": 4.337,
+          "fin": 5.968
+        },
+        {
+          "clave": "en-a1-083:lemma",
+          "texto": "lamp",
+          "inicio": 6.468,
+          "fin": 6.989
+        },
+        {
+          "clave": "en-a1-083:ejemplo",
+          "texto": "Is there a lamp?",
+          "inicio": 7.489,
+          "fin": 8.331
+        },
+        {
+          "clave": "en-a1-084:lemma",
+          "texto": "chair",
+          "inicio": 8.831,
+          "fin": 9.247
+        },
+        {
+          "clave": "en-a1-084:ejemplo",
+          "texto": "There’s a lamp on the desk, but there isn’t a chair.",
+          "inicio": 9.747,
+          "fin": 12.385
+        },
+        {
+          "clave": "en-a1-085:lemma",
+          "texto": "table",
+          "inicio": 12.885,
+          "fin": 13.505
+        },
+        {
+          "clave": "en-a1-085:ejemplo",
+          "texto": "There are four chairs and one very old table.",
+          "inicio": 14.005,
+          "fin": 16.243
+        },
+        {
+          "clave": "en-a1-086:lemma",
+          "texto": "book",
+          "inicio": 16.743,
+          "fin": 17.117
+        },
+        {
+          "clave": "en-a1-086:ejemplo",
+          "texto": "In winter I stay at home with a book.",
+          "inicio": 17.617,
+          "fin": 19.336
+        },
+        {
+          "clave": "en-a1-087:lemma",
+          "texto": "box",
+          "inicio": 19.836,
+          "fin": 20.346
+        },
+        {
+          "clave": "en-a1-087:ejemplo",
+          "texto": "There are books and a box of old photos.",
+          "inicio": 20.846,
+          "fin": 22.888
+        },
+        {
+          "clave": "en-a1-102:lemma",
+          "texto": "phone",
+          "inicio": 23.388,
+          "fin": 23.973
+        },
+        {
+          "clave": "en-a1-102:ejemplo",
+          "texto": "Please save 0088 442 900 in your phone.",
+          "inicio": 24.473,
+          "fin": 27.268
+        },
+        {
+          "clave": "en-a1-089:lemma",
+          "texto": "paint",
+          "inicio": 27.768,
+          "fin": 28.382
+        },
+        {
+          "clave": "en-a1-089:ejemplo",
+          "texto": "My grandfather’s bakery is there, under that paint.",
+          "inicio": 28.882,
+          "fin": 31.748
+        },
+        {
+          "clave": "en-a1-103:lemma",
+          "texto": "water",
+          "inicio": 32.248,
+          "fin": 32.845
+        },
+        {
+          "clave": "en-a1-103:ejemplo",
+          "texto": "Bring a raincoat, a bottle of water, and your student card.",
+          "inicio": 33.345,
+          "fin": 36.849
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "casa-y-objetos",
+      "unidad": 3,
+      "archivo": "public/audio/vocabulario/ingles/a1/casa-y-objetos-u3.mp3",
+      "duracion": 35.491134,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-091:lemma",
+          "texto": "under",
+          "inicio": 0,
+          "fin": 0.64
+        },
+        {
+          "clave": "en-a1-091:ejemplo",
+          "texto": "He sleeps under my desk. He’s got a blue blanket.",
+          "inicio": 1.14,
+          "fin": 3.729
+        },
+        {
+          "clave": "en-a1-092:lemma",
+          "texto": "on",
+          "inicio": 4.229,
+          "fin": 4.544
+        },
+        {
+          "clave": "en-a1-092:ejemplo",
+          "texto": "What’s on the shelves?",
+          "inicio": 5.044,
+          "fin": 6.127
+        },
+        {
+          "clave": "en-a1-093:lemma",
+          "texto": "in",
+          "inicio": 6.627,
+          "fin": 7.136
+        },
+        {
+          "clave": "en-a1-093:ejemplo",
+          "texto": "Are there many chairs in the kitchen?",
+          "inicio": 7.636,
+          "fin": 9.237
+        },
+        {
+          "clave": "en-a1-094:lemma",
+          "texto": "behind",
+          "inicio": 9.737,
+          "fin": 10.47
+        },
+        {
+          "clave": "en-a1-094:ejemplo",
+          "texto": "It’s behind the school, near the park.",
+          "inicio": 10.97,
+          "fin": 12.802
+        },
+        {
+          "clave": "en-a1-095:lemma",
+          "texto": "near",
+          "inicio": 13.302,
+          "fin": 13.839
+        },
+        {
+          "clave": "en-a1-095:ejemplo",
+          "texto": "Children are playing football near the trees.",
+          "inicio": 14.339,
+          "fin": 16.515
+        },
+        {
+          "clave": "en-a1-096:lemma",
+          "texto": "corner",
+          "inicio": 17.015,
+          "fin": 17.604
+        },
+        {
+          "clave": "en-a1-096:ejemplo",
+          "texto": "Look, Leo. The shop on the corner is empty again.",
+          "inicio": 18.104,
+          "fin": 20.849
+        },
+        {
+          "clave": "en-a1-097:lemma",
+          "texto": "shop",
+          "inicio": 21.349,
+          "fin": 21.871
+        },
+        {
+          "clave": "en-a1-097:ejemplo",
+          "texto": "That shop is empty now. It’s on the corner.",
+          "inicio": 22.371,
+          "fin": 24.366
+        },
+        {
+          "clave": "en-a1-098:lemma",
+          "texto": "empty",
+          "inicio": 24.866,
+          "fin": 25.407
+        },
+        {
+          "clave": "en-a1-098:ejemplo",
+          "texto": "That shop is empty now. It’s on the corner.",
+          "inicio": 25.907,
+          "fin": 27.95
+        },
+        {
+          "clave": "en-a1-099:lemma",
+          "texto": "clean",
+          "inicio": 28.45,
+          "fin": 29.097
+        },
+        {
+          "clave": "en-a1-099:ejemplo",
+          "texto": "I can clean them. I can paint the walls.",
+          "inicio": 29.597,
+          "fin": 31.679
+        },
+        {
+          "clave": "en-a1-100:lemma",
+          "texto": "look",
+          "inicio": 32.179,
+          "fin": 32.63
+        },
+        {
+          "clave": "en-a1-100:ejemplo",
+          "texto": "Look for the blue door. Don’t use the back door.",
+          "inicio": 33.13,
+          "fin": 35.491
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "ropa-colores-y-describir",
+      "unidad": 1,
+      "archivo": "public/audio/vocabulario/ingles/a1/ropa-colores-y-describir-u1.mp3",
+      "duracion": 32.637596,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-134:lemma",
+          "texto": "clothes",
+          "inicio": 0,
+          "fin": 0.74
+        },
+        {
+          "clave": "en-a1-134:ejemplo",
+          "texto": "I wash my clothes on Sunday.",
+          "inicio": 1.24,
+          "fin": 2.592
+        },
+        {
+          "clave": "en-a1-135:lemma",
+          "texto": "wear",
+          "inicio": 3.092,
+          "fin": 3.69
+        },
+        {
+          "clave": "en-a1-135:ejemplo",
+          "texto": "What do you wear to work?",
+          "inicio": 4.19,
+          "fin": 5.281
+        },
+        {
+          "clave": "en-a1-136:lemma",
+          "texto": "trousers",
+          "inicio": 5.781,
+          "fin": 6.478
+        },
+        {
+          "clave": "en-a1-136:ejemplo",
+          "texto": "I wear black trousers and a white shirt.",
+          "inicio": 6.978,
+          "fin": 8.881
+        },
+        {
+          "clave": "en-a1-137:lemma",
+          "texto": "shirt",
+          "inicio": 9.381,
+          "fin": 9.978
+        },
+        {
+          "clave": "en-a1-137:ejemplo",
+          "texto": "I wear black trousers and a white shirt.",
+          "inicio": 10.478,
+          "fin": 12.35
+        },
+        {
+          "clave": "en-a1-138:lemma",
+          "texto": "jacket",
+          "inicio": 12.85,
+          "fin": 13.421
+        },
+        {
+          "clave": "en-a1-138:ejemplo",
+          "texto": "Do you wear a jacket?",
+          "inicio": 13.921,
+          "fin": 15.081
+        },
+        {
+          "clave": "en-a1-139:lemma",
+          "texto": "scarf",
+          "inicio": 15.581,
+          "fin": 16.175
+        },
+        {
+          "clave": "en-a1-139:ejemplo",
+          "texto": "In winter I wear a green jacket and a scarf.",
+          "inicio": 16.675,
+          "fin": 18.692
+        },
+        {
+          "clave": "en-a1-140:lemma",
+          "texto": "shoes",
+          "inicio": 19.192,
+          "fin": 19.76
+        },
+        {
+          "clave": "en-a1-140:ejemplo",
+          "texto": "Your shoes are terrible, Leo.",
+          "inicio": 20.26,
+          "fin": 21.71
+        },
+        {
+          "clave": "en-a1-141:lemma",
+          "texto": "terrible",
+          "inicio": 22.21,
+          "fin": 22.709
+        },
+        {
+          "clave": "en-a1-141:ejemplo",
+          "texto": "Your shoes are terrible, Leo.",
+          "inicio": 23.209,
+          "fin": 24.641
+        },
+        {
+          "clave": "en-a1-142:lemma",
+          "texto": "comfortable",
+          "inicio": 25.141,
+          "fin": 25.822
+        },
+        {
+          "clave": "en-a1-142:ejemplo",
+          "texto": "They’re comfortable. That’s enough for me.",
+          "inicio": 26.322,
+          "fin": 28.159
+        },
+        {
+          "clave": "en-a1-143:lemma",
+          "texto": "hat",
+          "inicio": 28.659,
+          "fin": 29.202
+        },
+        {
+          "clave": "en-a1-143:ejemplo",
+          "texto": "Please arrive at eleven and bring a hat because there is little shade.",
+          "inicio": 29.702,
+          "fin": 32.638
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "ropa-colores-y-describir",
+      "unidad": 2,
+      "archivo": "public/audio/vocabulario/ingles/a1/ropa-colores-y-describir-u2.mp3",
+      "duracion": 36.237937,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-144:lemma",
+          "texto": "colour",
+          "inicio": 0,
+          "fin": 0.545
+        },
+        {
+          "clave": "en-a1-144:ejemplo",
+          "texto": "What colour is your jacket?",
+          "inicio": 1.045,
+          "fin": 2.079
+        },
+        {
+          "clave": "en-a1-145:lemma",
+          "texto": "black",
+          "inicio": 2.579,
+          "fin": 3.163
+        },
+        {
+          "clave": "en-a1-145:ejemplo",
+          "texto": "My shoes are black and my bag is black too.",
+          "inicio": 3.663,
+          "fin": 5.743
+        },
+        {
+          "clave": "en-a1-146:lemma",
+          "texto": "white",
+          "inicio": 6.243,
+          "fin": 6.797
+        },
+        {
+          "clave": "en-a1-146:ejemplo",
+          "texto": "The walls are white and the door is blue.",
+          "inicio": 7.297,
+          "fin": 9.311
+        },
+        {
+          "clave": "en-a1-147:lemma",
+          "texto": "red",
+          "inicio": 9.811,
+          "fin": 10.304
+        },
+        {
+          "clave": "en-a1-147:ejemplo",
+          "texto": "I want the red jacket, not the green one.",
+          "inicio": 10.804,
+          "fin": 12.616
+        },
+        {
+          "clave": "en-a1-148:lemma",
+          "texto": "green",
+          "inicio": 13.116,
+          "fin": 13.755
+        },
+        {
+          "clave": "en-a1-148:ejemplo",
+          "texto": "In winter I wear a green jacket and a scarf.",
+          "inicio": 14.255,
+          "fin": 16.55
+        },
+        {
+          "clave": "en-a1-149:lemma",
+          "texto": "blue",
+          "inicio": 17.05,
+          "fin": 17.526
+        },
+        {
+          "clave": "en-a1-149:ejemplo",
+          "texto": "He sleeps under my desk. He’s got a blue blanket.",
+          "inicio": 18.026,
+          "fin": 20.569
+        },
+        {
+          "clave": "en-a1-150:lemma",
+          "texto": "brown",
+          "inicio": 21.069,
+          "fin": 21.586
+        },
+        {
+          "clave": "en-a1-150:ejemplo",
+          "texto": "I’ve got a small brown dog. His name is Max.",
+          "inicio": 22.086,
+          "fin": 24.373
+        },
+        {
+          "clave": "en-a1-151:lemma",
+          "texto": "grey",
+          "inicio": 24.873,
+          "fin": 25.441
+        },
+        {
+          "clave": "en-a1-151:ejemplo",
+          "texto": "Today it’s grey, but tomorrow is sunny.",
+          "inicio": 25.941,
+          "fin": 28.243
+        },
+        {
+          "clave": "en-a1-152:lemma",
+          "texto": "yellow",
+          "inicio": 28.743,
+          "fin": 29.287
+        },
+        {
+          "clave": "en-a1-152:ejemplo",
+          "texto": "It has a small yellow star on the front and a name tag inside.",
+          "inicio": 29.787,
+          "fin": 32.972
+        },
+        {
+          "clave": "en-a1-153:lemma",
+          "texto": "same",
+          "inicio": 33.472,
+          "fin": 33.919
+        },
+        {
+          "clave": "en-a1-153:ejemplo",
+          "texto": "I always wear the same old shoes.",
+          "inicio": 34.419,
+          "fin": 36.238
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "ropa-colores-y-describir",
+      "unidad": 3,
+      "archivo": "public/audio/vocabulario/ingles/a1/ropa-colores-y-describir-u3.mp3",
+      "duracion": 35.139615,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-154:lemma",
+          "texto": "large",
+          "inicio": 0,
+          "fin": 0.69
+        },
+        {
+          "clave": "en-a1-154:ejemplo",
+          "texto": "Passengers with large bags can use the lift beside the ticket office.",
+          "inicio": 1.19,
+          "fin": 4.457
+        },
+        {
+          "clave": "en-a1-155:lemma",
+          "texto": "size",
+          "inicio": 4.957,
+          "fin": 5.507
+        },
+        {
+          "clave": "en-a1-155:ejemplo",
+          "texto": "Our families are almost the same size.",
+          "inicio": 6.007,
+          "fin": 7.925
+        },
+        {
+          "clave": "en-a1-156:lemma",
+          "texto": "short",
+          "inicio": 8.425,
+          "fin": 8.905
+        },
+        {
+          "clave": "en-a1-156:ejemplo",
+          "texto": "Emma reads a short message from her sister.",
+          "inicio": 9.405,
+          "fin": 11.23
+        },
+        {
+          "clave": "en-a1-157:lemma",
+          "texto": "warm",
+          "inicio": 11.73,
+          "fin": 12.33
+        },
+        {
+          "clave": "en-a1-157:ejemplo",
+          "texto": "It’s not boring. It’s the sea and it’s warm.",
+          "inicio": 12.83,
+          "fin": 15.385
+        },
+        {
+          "clave": "en-a1-158:lemma",
+          "texto": "sea",
+          "inicio": 15.885,
+          "fin": 16.368
+        },
+        {
+          "clave": "en-a1-158:ejemplo",
+          "texto": "It’s not boring. It’s the sea and it’s warm.",
+          "inicio": 16.868,
+          "fin": 18.939
+        },
+        {
+          "clave": "en-a1-159:lemma",
+          "texto": "cold",
+          "inicio": 19.439,
+          "fin": 19.956
+        },
+        {
+          "clave": "en-a1-159:ejemplo",
+          "texto": "It’s cold today. Is it always like this?",
+          "inicio": 20.456,
+          "fin": 22.73
+        },
+        {
+          "clave": "en-a1-160:lemma",
+          "texto": "boring",
+          "inicio": 23.23,
+          "fin": 23.88
+        },
+        {
+          "clave": "en-a1-160:ejemplo",
+          "texto": "Every day? That’s boring.",
+          "inicio": 24.38,
+          "fin": 25.598
+        },
+        {
+          "clave": "en-a1-161:lemma",
+          "texto": "good",
+          "inicio": 26.098,
+          "fin": 26.501
+        },
+        {
+          "clave": "en-a1-161:ejemplo",
+          "texto": "That’s a very good answer.",
+          "inicio": 27.001,
+          "fin": 28.177
+        },
+        {
+          "clave": "en-a1-162:lemma",
+          "texto": "quiet",
+          "inicio": 28.677,
+          "fin": 29.245
+        },
+        {
+          "clave": "en-a1-162:ejemplo",
+          "texto": "Nice to meet you, Leo. This street is very quiet.",
+          "inicio": 29.745,
+          "fin": 32.12
+        },
+        {
+          "clave": "en-a1-163:lemma",
+          "texto": "inside",
+          "inicio": 32.62,
+          "fin": 33.414
+        },
+        {
+          "clave": "en-a1-163:ejemplo",
+          "texto": "Do you want to see inside?",
+          "inicio": 33.914,
+          "fin": 35.14
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "ciudad-lugares-y-direcciones",
+      "unidad": 1,
+      "archivo": "public/audio/vocabulario/ingles/a1/ciudad-lugares-y-direcciones-u1.mp3",
+      "duracion": 38.506553,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-164:lemma",
+          "texto": "street",
+          "inicio": 0,
+          "fin": 0.583
+        },
+        {
+          "clave": "en-a1-164:ejemplo",
+          "texto": "Is there a supermarket on this street?",
+          "inicio": 1.083,
+          "fin": 2.753
+        },
+        {
+          "clave": "en-a1-165:lemma",
+          "texto": "supermarket",
+          "inicio": 3.253,
+          "fin": 4.138
+        },
+        {
+          "clave": "en-a1-165:ejemplo",
+          "texto": "Is there a supermarket on this street?",
+          "inicio": 4.638,
+          "fin": 6.249
+        },
+        {
+          "clave": "en-a1-166:lemma",
+          "texto": "school",
+          "inicio": 6.749,
+          "fin": 7.263
+        },
+        {
+          "clave": "en-a1-166:ejemplo",
+          "texto": "Is it near the school?",
+          "inicio": 7.763,
+          "fin": 8.864
+        },
+        {
+          "clave": "en-a1-167:lemma",
+          "texto": "park",
+          "inicio": 9.364,
+          "fin": 9.875
+        },
+        {
+          "clave": "en-a1-167:ejemplo",
+          "texto": "Do you play in the park?",
+          "inicio": 10.375,
+          "fin": 11.345
+        },
+        {
+          "clave": "en-a1-168:lemma",
+          "texto": "library",
+          "inicio": 11.845,
+          "fin": 12.678
+        },
+        {
+          "clave": "en-a1-168:ejemplo",
+          "texto": "How do I get to the library?",
+          "inicio": 13.178,
+          "fin": 14.578
+        },
+        {
+          "clave": "en-a1-169:lemma",
+          "texto": "museum",
+          "inicio": 15.078,
+          "fin": 15.957
+        },
+        {
+          "clave": "en-a1-169:ejemplo",
+          "texto": "The bus stops at the museum, the city park, and Riverside Market.",
+          "inicio": 16.457,
+          "fin": 20.279
+        },
+        {
+          "clave": "en-a1-170:lemma",
+          "texto": "station",
+          "inicio": 20.779,
+          "fin": 21.559
+        },
+        {
+          "clave": "en-a1-170:ejemplo",
+          "texto": "On Saturday, the number 12 bus leaves Central Station every thirty minutes.",
+          "inicio": 22.059,
+          "fin": 26.48
+        },
+        {
+          "clave": "en-a1-171:lemma",
+          "texto": "church",
+          "inicio": 26.98,
+          "fin": 27.52
+        },
+        {
+          "clave": "en-a1-171:ejemplo",
+          "texto": "Take the number nine bus. Get off at the church.",
+          "inicio": 28.02,
+          "fin": 30.652
+        },
+        {
+          "clave": "en-a1-172:lemma",
+          "texto": "café",
+          "inicio": 31.152,
+          "fin": 31.853
+        },
+        {
+          "clave": "en-a1-172:ejemplo",
+          "texto": "Do you like your job at the café?",
+          "inicio": 32.353,
+          "fin": 33.838
+        },
+        {
+          "clave": "en-a1-173:lemma",
+          "texto": "hospital",
+          "inicio": 34.338,
+          "fin": 35.077
+        },
+        {
+          "clave": "en-a1-173:ejemplo",
+          "texto": "My mother works at the hospital. She starts at seven.",
+          "inicio": 35.577,
+          "fin": 38.507
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "ciudad-lugares-y-direcciones",
+      "unidad": 2,
+      "archivo": "public/audio/vocabulario/ingles/a1/ciudad-lugares-y-direcciones-u2.mp3",
+      "duracion": 37.97093,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-174:lemma",
+          "texto": "bus",
+          "inicio": 0,
+          "fin": 0.466
+        },
+        {
+          "clave": "en-a1-174:ejemplo",
+          "texto": "The first bus leaves at eight o’clock, and the last bus leaves at six in the evening.",
+          "inicio": 0.966,
+          "fin": 5.441
+        },
+        {
+          "clave": "en-a1-175:lemma",
+          "texto": "stop",
+          "inicio": 5.941,
+          "fin": 6.435
+        },
+        {
+          "clave": "en-a1-175:ejemplo",
+          "texto": "There’s one next to the bus stop.",
+          "inicio": 6.935,
+          "fin": 8.886
+        },
+        {
+          "clave": "en-a1-176:lemma",
+          "texto": "next",
+          "inicio": 9.386,
+          "fin": 9.927
+        },
+        {
+          "clave": "en-a1-176:ejemplo",
+          "texto": "There’s one next to the bus stop.",
+          "inicio": 10.427,
+          "fin": 11.994
+        },
+        {
+          "clave": "en-a1-177:lemma",
+          "texto": "train",
+          "inicio": 12.494,
+          "fin": 13.121
+        },
+        {
+          "clave": "en-a1-177:ejemplo",
+          "texto": "Attention passengers for train 6 to Northbridge.",
+          "inicio": 13.621,
+          "fin": 16.125
+        },
+        {
+          "clave": "en-a1-178:lemma",
+          "texto": "passenger",
+          "inicio": 16.625,
+          "fin": 17.375
+        },
+        {
+          "clave": "en-a1-178:ejemplo",
+          "texto": "Attention passengers for train 6 to Northbridge.",
+          "inicio": 17.875,
+          "fin": 20.5
+        },
+        {
+          "clave": "en-a1-179:lemma",
+          "texto": "platform",
+          "inicio": 21,
+          "fin": 21.802
+        },
+        {
+          "clave": "en-a1-179:ejemplo",
+          "texto": "The café near platform 3 is open until noon.",
+          "inicio": 22.302,
+          "fin": 24.774
+        },
+        {
+          "clave": "en-a1-180:lemma",
+          "texto": "ticket",
+          "inicio": 25.274,
+          "fin": 25.772
+        },
+        {
+          "clave": "en-a1-180:ejemplo",
+          "texto": "A ticket costs two pounds.",
+          "inicio": 26.272,
+          "fin": 27.754
+        },
+        {
+          "clave": "en-a1-181:lemma",
+          "texto": "walk",
+          "inicio": 28.254,
+          "fin": 28.784
+        },
+        {
+          "clave": "en-a1-181:ejemplo",
+          "texto": "I leave at half past seven and I walk.",
+          "inicio": 29.284,
+          "fin": 31.424
+        },
+        {
+          "clave": "en-a1-182:lemma",
+          "texto": "get",
+          "inicio": 31.924,
+          "fin": 32.227
+        },
+        {
+          "clave": "en-a1-182:ejemplo",
+          "texto": "How do I get to the library?",
+          "inicio": 32.727,
+          "fin": 34.144
+        },
+        {
+          "clave": "en-a1-183:lemma",
+          "texto": "office",
+          "inicio": 34.644,
+          "fin": 35.197
+        },
+        {
+          "clave": "en-a1-183:ejemplo",
+          "texto": "The school office is open until four o’clock.",
+          "inicio": 35.697,
+          "fin": 37.971
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "ciudad-lugares-y-direcciones",
+      "unidad": 3,
+      "archivo": "public/audio/vocabulario/ingles/a1/ciudad-lugares-y-direcciones-u3.mp3",
+      "duracion": 39.602857,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-184:lemma",
+          "texto": "where",
+          "inicio": 0,
+          "fin": 0.612
+        },
+        {
+          "clave": "en-a1-184:ejemplo",
+          "texto": "Where is the library? I want a card.",
+          "inicio": 1.112,
+          "fin": 3.532
+        },
+        {
+          "clave": "en-a1-185:lemma",
+          "texto": "card",
+          "inicio": 4.032,
+          "fin": 4.573
+        },
+        {
+          "clave": "en-a1-185:ejemplo",
+          "texto": "Where is the library? I want a card.",
+          "inicio": 5.073,
+          "fin": 7.216
+        },
+        {
+          "clave": "en-a1-186:lemma",
+          "texto": "turn",
+          "inicio": 7.716,
+          "fin": 8.307
+        },
+        {
+          "clave": "en-a1-186:ejemplo",
+          "texto": "Turn right after the school. The library is grey.",
+          "inicio": 8.807,
+          "fin": 11.621
+        },
+        {
+          "clave": "en-a1-187:lemma",
+          "texto": "right",
+          "inicio": 12.121,
+          "fin": 12.545
+        },
+        {
+          "clave": "en-a1-187:ejemplo",
+          "texto": "Turn right after the school. The library is grey.",
+          "inicio": 13.045,
+          "fin": 16.246
+        },
+        {
+          "clave": "en-a1-188:lemma",
+          "texto": "left",
+          "inicio": 16.746,
+          "fin": 17.277
+        },
+        {
+          "clave": "en-a1-188:ejemplo",
+          "texto": "Turn left at the bus stop. The café is on the left.",
+          "inicio": 17.777,
+          "fin": 20.771
+        },
+        {
+          "clave": "en-a1-189:lemma",
+          "texto": "straight",
+          "inicio": 21.271,
+          "fin": 21.798
+        },
+        {
+          "clave": "en-a1-189:ejemplo",
+          "texto": "Walk straight for two minutes. Don’t cross the street.",
+          "inicio": 22.298,
+          "fin": 25.428
+        },
+        {
+          "clave": "en-a1-190:lemma",
+          "texto": "cross",
+          "inicio": 25.928,
+          "fin": 26.532
+        },
+        {
+          "clave": "en-a1-190:ejemplo",
+          "texto": "Cross the street and turn right.",
+          "inicio": 27.032,
+          "fin": 28.543
+        },
+        {
+          "clave": "en-a1-191:lemma",
+          "texto": "sign",
+          "inicio": 29.043,
+          "fin": 29.64
+        },
+        {
+          "clave": "en-a1-191:ejemplo",
+          "texto": "Is there a sign?",
+          "inicio": 30.14,
+          "fin": 31.034
+        },
+        {
+          "clave": "en-a1-192:lemma",
+          "texto": "front",
+          "inicio": 31.534,
+          "fin": 32.074
+        },
+        {
+          "clave": "en-a1-192:ejemplo",
+          "texto": "For an emergency, call the number on the blue card at the front desk.",
+          "inicio": 32.574,
+          "fin": 36.037
+        },
+        {
+          "clave": "en-a1-193:lemma",
+          "texto": "flat",
+          "inicio": 36.537,
+          "fin": 37.181
+        },
+        {
+          "clave": "en-a1-193:ejemplo",
+          "texto": "Mia has got a small flat on King Street.",
+          "inicio": 37.681,
+          "fin": 39.603
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "rutina-diaria-y-acciones",
+      "unidad": 1,
+      "archivo": "public/audio/vocabulario/ingles/a1/rutina-diaria-y-acciones-u1.mp3",
+      "duracion": 43.848571,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-194:lemma",
+          "texto": "morning",
+          "inicio": 0,
+          "fin": 0.524
+        },
+        {
+          "clave": "en-a1-194:ejemplo",
+          "texto": "I’m working in the morning. In the afternoon I’m free.",
+          "inicio": 1.024,
+          "fin": 3.726
+        },
+        {
+          "clave": "en-a1-195:lemma",
+          "texto": "afternoon",
+          "inicio": 4.226,
+          "fin": 4.961
+        },
+        {
+          "clave": "en-a1-195:ejemplo",
+          "texto": "I’m working in the morning. In the afternoon I’m free.",
+          "inicio": 5.461,
+          "fin": 8.73
+        },
+        {
+          "clave": "en-a1-196:lemma",
+          "texto": "evening",
+          "inicio": 9.23,
+          "fin": 9.773
+        },
+        {
+          "clave": "en-a1-196:ejemplo",
+          "texto": "The first bus leaves at eight o’clock, and the last bus leaves at six in the evening.",
+          "inicio": 10.273,
+          "fin": 14.471
+        },
+        {
+          "clave": "en-a1-197:lemma",
+          "texto": "night",
+          "inicio": 14.971,
+          "fin": 15.445
+        },
+        {
+          "clave": "en-a1-197:ejemplo",
+          "texto": "Does she work at night?",
+          "inicio": 15.945,
+          "fin": 16.989
+        },
+        {
+          "clave": "en-a1-198:lemma",
+          "texto": "first",
+          "inicio": 17.489,
+          "fin": 18.09
+        },
+        {
+          "clave": "en-a1-198:ejemplo",
+          "texto": "First, we collect paper near the lake.",
+          "inicio": 18.59,
+          "fin": 20.556
+        },
+        {
+          "clave": "en-a1-199:lemma",
+          "texto": "then",
+          "inicio": 21.056,
+          "fin": 21.557
+        },
+        {
+          "clave": "en-a1-199:ejemplo",
+          "texto": "Then we clean the picnic tables.",
+          "inicio": 22.057,
+          "fin": 23.535
+        },
+        {
+          "clave": "en-a1-200:lemma",
+          "texto": "after",
+          "inicio": 24.035,
+          "fin": 24.592
+        },
+        {
+          "clave": "en-a1-200:ejemplo",
+          "texto": "Are you visiting your grandfather after?",
+          "inicio": 25.092,
+          "fin": 27.091
+        },
+        {
+          "clave": "en-a1-201:lemma",
+          "texto": "before",
+          "inicio": 27.591,
+          "fin": 28.272
+        },
+        {
+          "clave": "en-a1-201:ejemplo",
+          "texto": "If you cannot come today, call Mrs Green before five.",
+          "inicio": 28.772,
+          "fin": 31.887
+        },
+        {
+          "clave": "en-a1-202:lemma",
+          "texto": "start",
+          "inicio": 32.387,
+          "fin": 33.034
+        },
+        {
+          "clave": "en-a1-202:ejemplo",
+          "texto": "Then we can start on Sunday morning.",
+          "inicio": 33.534,
+          "fin": 35.212
+        },
+        {
+          "clave": "en-a1-203:lemma",
+          "texto": "finish",
+          "inicio": 35.712,
+          "fin": 36.338
+        },
+        {
+          "clave": "en-a1-203:ejemplo",
+          "texto": "Lunch starts at twelve and finishes at one thirty.",
+          "inicio": 36.838,
+          "fin": 39.25
+        },
+        {
+          "clave": "en-a1-204:lemma",
+          "texto": "come",
+          "inicio": 39.75,
+          "fin": 40.298
+        },
+        {
+          "clave": "en-a1-204:ejemplo",
+          "texto": "If you cannot come today, call Mrs Green before five.",
+          "inicio": 40.798,
+          "fin": 43.849
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "rutina-diaria-y-acciones",
+      "unidad": 2,
+      "archivo": "public/audio/vocabulario/ingles/a1/rutina-diaria-y-acciones-u2.mp3",
+      "duracion": 32.688231,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-205:lemma",
+          "texto": "study",
+          "inicio": 0,
+          "fin": 0.59
+        },
+        {
+          "clave": "en-a1-205:ejemplo",
+          "texto": "I usually study in the library. Sometimes I visit my grandfather.",
+          "inicio": 1.09,
+          "fin": 4.57
+        },
+        {
+          "clave": "en-a1-206:lemma",
+          "texto": "read",
+          "inicio": 5.07,
+          "fin": 5.411
+        },
+        {
+          "clave": "en-a1-206:ejemplo",
+          "texto": "He doesn’t work now. He reads and he cooks.",
+          "inicio": 5.911,
+          "fin": 8.196
+        },
+        {
+          "clave": "en-a1-207:lemma",
+          "texto": "play",
+          "inicio": 8.696,
+          "fin": 9.321
+        },
+        {
+          "clave": "en-a1-207:ejemplo",
+          "texto": "Do you play in the park?",
+          "inicio": 9.821,
+          "fin": 10.951
+        },
+        {
+          "clave": "en-a1-208:lemma",
+          "texto": "run",
+          "inicio": 11.451,
+          "fin": 11.991
+        },
+        {
+          "clave": "en-a1-208:ejemplo",
+          "texto": "He’s three. He runs in the park every morning.",
+          "inicio": 12.491,
+          "fin": 14.745
+        },
+        {
+          "clave": "en-a1-209:lemma",
+          "texto": "sing",
+          "inicio": 15.245,
+          "fin": 15.813
+        },
+        {
+          "clave": "en-a1-209:ejemplo",
+          "texto": "Somebody is singing. Can you hear it?",
+          "inicio": 16.313,
+          "fin": 18.176
+        },
+        {
+          "clave": "en-a1-210:lemma",
+          "texto": "sell",
+          "inicio": 18.676,
+          "fin": 19.248
+        },
+        {
+          "clave": "en-a1-210:ejemplo",
+          "texto": "That man is selling ice cream in November.",
+          "inicio": 19.748,
+          "fin": 21.573
+        },
+        {
+          "clave": "en-a1-211:lemma",
+          "texto": "wait",
+          "inicio": 22.073,
+          "fin": 22.452
+        },
+        {
+          "clave": "en-a1-211:ejemplo",
+          "texto": "I can’t wait.",
+          "inicio": 22.952,
+          "fin": 23.871
+        },
+        {
+          "clave": "en-a1-212:lemma",
+          "texto": "rest",
+          "inicio": 24.371,
+          "fin": 24.924
+        },
+        {
+          "clave": "en-a1-212:ejemplo",
+          "texto": "You work every Saturday. Do you rest?",
+          "inicio": 25.424,
+          "fin": 27.46
+        },
+        {
+          "clave": "en-a1-334:lemma",
+          "texto": "go",
+          "inicio": 27.96,
+          "fin": 28.373
+        },
+        {
+          "clave": "en-a1-334:ejemplo",
+          "texto": "I go to work at eight.",
+          "inicio": 28.873,
+          "fin": 30
+        },
+        {
+          "clave": "en-a1-213:lemma",
+          "texto": "bring",
+          "inicio": 30.5,
+          "fin": 31.003
+        },
+        {
+          "clave": "en-a1-213:ejemplo",
+          "texto": "Bring gloves if you have them.",
+          "inicio": 31.503,
+          "fin": 32.688
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "rutina-diaria-y-acciones",
+      "unidad": 3,
+      "archivo": "public/audio/vocabulario/ingles/a1/rutina-diaria-y-acciones-u3.mp3",
+      "duracion": 36.444989,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-214:lemma",
+          "texto": "want",
+          "inicio": 0,
+          "fin": 0.507
+        },
+        {
+          "clave": "en-a1-214:ejemplo",
+          "texto": "Do you want to see inside?",
+          "inicio": 1.007,
+          "fin": 2.176
+        },
+        {
+          "clave": "en-a1-215:lemma",
+          "texto": "need",
+          "inicio": 2.676,
+          "fin": 3.033
+        },
+        {
+          "clave": "en-a1-215:ejemplo",
+          "texto": "Please tell Mr Lee if you need a vegetarian meal.",
+          "inicio": 3.533,
+          "fin": 6.018
+        },
+        {
+          "clave": "en-a1-216:lemma",
+          "texto": "tell",
+          "inicio": 6.518,
+          "fin": 7.075
+        },
+        {
+          "clave": "en-a1-216:ejemplo",
+          "texto": "Please tell Mr Lee if you need a vegetarian meal.",
+          "inicio": 7.575,
+          "fin": 10.055
+        },
+        {
+          "clave": "en-a1-217:lemma",
+          "texto": "know",
+          "inicio": 10.555,
+          "fin": 11.093
+        },
+        {
+          "clave": "en-a1-217:ejemplo",
+          "texto": "Those tiles are from 1971. I know every one.",
+          "inicio": 11.593,
+          "fin": 14.227
+        },
+        {
+          "clave": "en-a1-218:lemma",
+          "texto": "say",
+          "inicio": 14.727,
+          "fin": 15.218
+        },
+        {
+          "clave": "en-a1-218:ejemplo",
+          "texto": "My grandfather says the same thing.",
+          "inicio": 15.718,
+          "fin": 17.374
+        },
+        {
+          "clave": "en-a1-219:lemma",
+          "texto": "ask",
+          "inicio": 17.874,
+          "fin": 18.379
+        },
+        {
+          "clave": "en-a1-219:ejemplo",
+          "texto": "Ask the kitchen team about allergies before you choose.",
+          "inicio": 18.879,
+          "fin": 21.708
+        },
+        {
+          "clave": "en-a1-220:lemma",
+          "texto": "answer",
+          "inicio": 22.208,
+          "fin": 22.731
+        },
+        {
+          "clave": "en-a1-220:ejemplo",
+          "texto": "That’s a very good answer.",
+          "inicio": 23.231,
+          "fin": 24.657
+        },
+        {
+          "clave": "en-a1-221:lemma",
+          "texto": "call",
+          "inicio": 25.157,
+          "fin": 25.617
+        },
+        {
+          "clave": "en-a1-221:ejemplo",
+          "texto": "For an emergency, call the number on the blue card at the front desk.",
+          "inicio": 26.117,
+          "fin": 29.63
+        },
+        {
+          "clave": "en-a1-222:lemma",
+          "texto": "again",
+          "inicio": 30.13,
+          "fin": 30.646
+        },
+        {
+          "clave": "en-a1-222:ejemplo",
+          "texto": "It’s the man with the guitar. He’s singing again.",
+          "inicio": 31.146,
+          "fin": 33.191
+        },
+        {
+          "clave": "en-a1-223:lemma",
+          "texto": "still",
+          "inicio": 33.691,
+          "fin": 34.291
+        },
+        {
+          "clave": "en-a1-223:ejemplo",
+          "texto": "Can you still work with your hands?",
+          "inicio": 34.791,
+          "fin": 36.445
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "cuerpo-salud-y-sensaciones",
+      "unidad": 1,
+      "archivo": "public/audio/vocabulario/ingles/a1/cuerpo-salud-y-sensaciones-u1.mp3",
+      "duracion": 33.533379,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-224:lemma",
+          "texto": "body",
+          "inicio": 0,
+          "fin": 0.556
+        },
+        {
+          "clave": "en-a1-224:ejemplo",
+          "texto": "My body is tired after work.",
+          "inicio": 1.056,
+          "fin": 2.614
+        },
+        {
+          "clave": "en-a1-225:lemma",
+          "texto": "head",
+          "inicio": 3.114,
+          "fin": 3.612
+        },
+        {
+          "clave": "en-a1-225:ejemplo",
+          "texto": "My head is cold. Where is my hat?",
+          "inicio": 4.112,
+          "fin": 5.886
+        },
+        {
+          "clave": "en-a1-226:lemma",
+          "texto": "face",
+          "inicio": 6.386,
+          "fin": 7.169
+        },
+        {
+          "clave": "en-a1-226:ejemplo",
+          "texto": "She has got a happy face.",
+          "inicio": 7.669,
+          "fin": 8.962
+        },
+        {
+          "clave": "en-a1-227:lemma",
+          "texto": "eye",
+          "inicio": 9.462,
+          "fin": 9.867
+        },
+        {
+          "clave": "en-a1-227:ejemplo",
+          "texto": "My sister has got green eyes.",
+          "inicio": 10.367,
+          "fin": 11.733
+        },
+        {
+          "clave": "en-a1-228:lemma",
+          "texto": "ear",
+          "inicio": 12.233,
+          "fin": 12.643
+        },
+        {
+          "clave": "en-a1-228:ejemplo",
+          "texto": "My ears are cold in November.",
+          "inicio": 13.143,
+          "fin": 14.5
+        },
+        {
+          "clave": "en-a1-229:lemma",
+          "texto": "nose",
+          "inicio": 15,
+          "fin": 15.643
+        },
+        {
+          "clave": "en-a1-229:ejemplo",
+          "texto": "My nose is cold. I want a scarf.",
+          "inicio": 16.143,
+          "fin": 17.957
+        },
+        {
+          "clave": "en-a1-230:lemma",
+          "texto": "mouth",
+          "inicio": 18.457,
+          "fin": 19.01
+        },
+        {
+          "clave": "en-a1-230:ejemplo",
+          "texto": "Open your mouth, please.",
+          "inicio": 19.51,
+          "fin": 20.678
+        },
+        {
+          "clave": "en-a1-231:lemma",
+          "texto": "hair",
+          "inicio": 21.178,
+          "fin": 21.576
+        },
+        {
+          "clave": "en-a1-231:ejemplo",
+          "texto": "She has got short brown hair.",
+          "inicio": 22.076,
+          "fin": 23.448
+        },
+        {
+          "clave": "en-a1-232:lemma",
+          "texto": "hand",
+          "inicio": 23.948,
+          "fin": 24.44
+        },
+        {
+          "clave": "en-a1-232:ejemplo",
+          "texto": "Can you still work with your hands?",
+          "inicio": 24.94,
+          "fin": 26.844
+        },
+        {
+          "clave": "en-a1-233:lemma",
+          "texto": "arm",
+          "inicio": 27.344,
+          "fin": 27.841
+        },
+        {
+          "clave": "en-a1-233:ejemplo",
+          "texto": "My arms are tired after eight hours.",
+          "inicio": 28.341,
+          "fin": 30.428
+        },
+        {
+          "clave": "en-a1-234:lemma",
+          "texto": "leg",
+          "inicio": 30.928,
+          "fin": 31.178
+        },
+        {
+          "clave": "en-a1-234:ejemplo",
+          "texto": "My legs are tired after the park.",
+          "inicio": 31.678,
+          "fin": 33.533
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "cuerpo-salud-y-sensaciones",
+      "unidad": 2,
+      "archivo": "public/audio/vocabulario/ingles/a1/cuerpo-salud-y-sensaciones-u2.mp3",
+      "duracion": 31.792086,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-235:lemma",
+          "texto": "foot",
+          "inicio": 0,
+          "fin": 0.248
+        },
+        {
+          "clave": "en-a1-235:ejemplo",
+          "texto": "My foot is cold. Where are my shoes?",
+          "inicio": 0.748,
+          "fin": 3.077
+        },
+        {
+          "clave": "en-a1-236:lemma",
+          "texto": "back",
+          "inicio": 3.577,
+          "fin": 3.938
+        },
+        {
+          "clave": "en-a1-236:ejemplo",
+          "texto": "My back is tired after the bus.",
+          "inicio": 4.438,
+          "fin": 6.146
+        },
+        {
+          "clave": "en-a1-237:lemma",
+          "texto": "doctor",
+          "inicio": 6.646,
+          "fin": 7.294
+        },
+        {
+          "clave": "en-a1-237:ejemplo",
+          "texto": "The doctor works at the hospital.",
+          "inicio": 7.794,
+          "fin": 9.309
+        },
+        {
+          "clave": "en-a1-238:lemma",
+          "texto": "sick",
+          "inicio": 9.809,
+          "fin": 10.307
+        },
+        {
+          "clave": "en-a1-238:ejemplo",
+          "texto": "I am sick today. I can’t work.",
+          "inicio": 10.807,
+          "fin": 12.238
+        },
+        {
+          "clave": "en-a1-335:lemma",
+          "texto": "hurt",
+          "inicio": 12.738,
+          "fin": 13.319
+        },
+        {
+          "clave": "en-a1-335:ejemplo",
+          "texto": "My arm hurts. I want a doctor.",
+          "inicio": 13.819,
+          "fin": 15.647
+        },
+        {
+          "clave": "en-a1-239:lemma",
+          "texto": "tired",
+          "inicio": 16.147,
+          "fin": 16.659
+        },
+        {
+          "clave": "en-a1-239:ejemplo",
+          "texto": "I am tired after eight hours.",
+          "inicio": 17.159,
+          "fin": 18.755
+        },
+        {
+          "clave": "en-a1-240:lemma",
+          "texto": "hungry",
+          "inicio": 19.255,
+          "fin": 19.946
+        },
+        {
+          "clave": "en-a1-240:ejemplo",
+          "texto": "I am hungry. Is there bread?",
+          "inicio": 20.446,
+          "fin": 21.767
+        },
+        {
+          "clave": "en-a1-241:lemma",
+          "texto": "thirsty",
+          "inicio": 22.267,
+          "fin": 22.991
+        },
+        {
+          "clave": "en-a1-241:ejemplo",
+          "texto": "I am thirsty. I want water.",
+          "inicio": 23.491,
+          "fin": 25.147
+        },
+        {
+          "clave": "en-a1-242:lemma",
+          "texto": "happy",
+          "inicio": 25.647,
+          "fin": 26.215
+        },
+        {
+          "clave": "en-a1-242:ejemplo",
+          "texto": "She is happy with her new job.",
+          "inicio": 26.715,
+          "fin": 28.139
+        },
+        {
+          "clave": "en-a1-243:lemma",
+          "texto": "sad",
+          "inicio": 28.639,
+          "fin": 29.16
+        },
+        {
+          "clave": "en-a1-243:ejemplo",
+          "texto": "He is sad today. His dog is sick.",
+          "inicio": 29.66,
+          "fin": 31.792
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "cuerpo-salud-y-sensaciones",
+      "unidad": 3,
+      "archivo": "public/audio/vocabulario/ingles/a1/cuerpo-salud-y-sensaciones-u3.mp3",
+      "duracion": 32.080952,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-244:lemma",
+          "texto": "feel",
+          "inicio": 0,
+          "fin": 0.591
+        },
+        {
+          "clave": "en-a1-244:ejemplo",
+          "texto": "I feel tired today.",
+          "inicio": 1.091,
+          "fin": 2.21
+        },
+        {
+          "clave": "en-a1-245:lemma",
+          "texto": "hear",
+          "inicio": 2.71,
+          "fin": 3.258
+        },
+        {
+          "clave": "en-a1-245:ejemplo",
+          "texto": "Somebody is singing. Can you hear it?",
+          "inicio": 3.758,
+          "fin": 5.847
+        },
+        {
+          "clave": "en-a1-246:lemma",
+          "texto": "see",
+          "inicio": 6.347,
+          "fin": 6.893
+        },
+        {
+          "clave": "en-a1-246:ejemplo",
+          "texto": "I can see the park from my window.",
+          "inicio": 7.393,
+          "fin": 8.961
+        },
+        {
+          "clave": "en-a1-247:lemma",
+          "texto": "smell",
+          "inicio": 9.461,
+          "fin": 10.046
+        },
+        {
+          "clave": "en-a1-247:ejemplo",
+          "texto": "I miss the smell. I don’t miss the hours.",
+          "inicio": 10.546,
+          "fin": 12.978
+        },
+        {
+          "clave": "en-a1-248:lemma",
+          "texto": "miss",
+          "inicio": 13.478,
+          "fin": 14.009
+        },
+        {
+          "clave": "en-a1-248:ejemplo",
+          "texto": "Five! Do you miss it?",
+          "inicio": 14.509,
+          "fin": 15.765
+        },
+        {
+          "clave": "en-a1-249:lemma",
+          "texto": "hot",
+          "inicio": 16.265,
+          "fin": 16.778
+        },
+        {
+          "clave": "en-a1-249:ejemplo",
+          "texto": "In Cartagena it’s hot every day.",
+          "inicio": 17.278,
+          "fin": 18.692
+        },
+        {
+          "clave": "en-a1-250:lemma",
+          "texto": "windy",
+          "inicio": 19.192,
+          "fin": 19.803
+        },
+        {
+          "clave": "en-a1-250:ejemplo",
+          "texto": "In November it’s cold and windy.",
+          "inicio": 20.303,
+          "fin": 21.935
+        },
+        {
+          "clave": "en-a1-251:lemma",
+          "texto": "snow",
+          "inicio": 22.435,
+          "fin": 23.03
+        },
+        {
+          "clave": "en-a1-251:ejemplo",
+          "texto": "It’s colder. Sometimes there’s snow.",
+          "inicio": 23.53,
+          "fin": 25.534
+        },
+        {
+          "clave": "en-a1-252:lemma",
+          "texto": "rain",
+          "inicio": 26.034,
+          "fin": 26.674
+        },
+        {
+          "clave": "en-a1-252:ejemplo",
+          "texto": "It rains every afternoon in November.",
+          "inicio": 27.174,
+          "fin": 28.98
+        },
+        {
+          "clave": "en-a1-253:lemma",
+          "texto": "weather",
+          "inicio": 29.48,
+          "fin": 30.014
+        },
+        {
+          "clave": "en-a1-253:ejemplo",
+          "texto": "The weather is cold in November.",
+          "inicio": 30.514,
+          "fin": 32.081
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "estudio-trabajo-y-dinero",
+      "unidad": 1,
+      "archivo": "public/audio/vocabulario/ingles/a1/estudio-trabajo-y-dinero-u1.mp3",
+      "duracion": 35.922472,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-254:lemma",
+          "texto": "class",
+          "inicio": 0,
+          "fin": 0.687
+        },
+        {
+          "clave": "en-a1-254:ejemplo",
+          "texto": "The English class starts at six.",
+          "inicio": 1.187,
+          "fin": 2.784
+        },
+        {
+          "clave": "en-a1-255:lemma",
+          "texto": "teacher",
+          "inicio": 3.284,
+          "fin": 3.742
+        },
+        {
+          "clave": "en-a1-255:ejemplo",
+          "texto": "My teacher is from Colombia.",
+          "inicio": 4.242,
+          "fin": 5.608
+        },
+        {
+          "clave": "en-a1-336:lemma",
+          "texto": "English",
+          "inicio": 6.108,
+          "fin": 6.671
+        },
+        {
+          "clave": "en-a1-336:ejemplo",
+          "texto": "My English class is on Tuesday at six.",
+          "inicio": 7.171,
+          "fin": 9.238
+        },
+        {
+          "clave": "en-a1-256:lemma",
+          "texto": "learn",
+          "inicio": 9.738,
+          "fin": 10.254
+        },
+        {
+          "clave": "en-a1-256:ejemplo",
+          "texto": "I want to learn English this year.",
+          "inicio": 10.754,
+          "fin": 12.311
+        },
+        {
+          "clave": "en-a1-257:lemma",
+          "texto": "write",
+          "inicio": 12.811,
+          "fin": 13.414
+        },
+        {
+          "clave": "en-a1-257:ejemplo",
+          "texto": "Please write your name on the card.",
+          "inicio": 13.914,
+          "fin": 15.399
+        },
+        {
+          "clave": "en-a1-258:lemma",
+          "texto": "listen",
+          "inicio": 15.899,
+          "fin": 16.442
+        },
+        {
+          "clave": "en-a1-258:ejemplo",
+          "texto": "Listen to the music and answer.",
+          "inicio": 16.942,
+          "fin": 18.419
+        },
+        {
+          "clave": "en-a1-259:lemma",
+          "texto": "question",
+          "inicio": 18.919,
+          "fin": 19.533
+        },
+        {
+          "clave": "en-a1-259:ejemplo",
+          "texto": "Can I ask a question about the exam?",
+          "inicio": 20.033,
+          "fin": 21.854
+        },
+        {
+          "clave": "en-a1-260:lemma",
+          "texto": "homework",
+          "inicio": 22.354,
+          "fin": 22.966
+        },
+        {
+          "clave": "en-a1-260:ejemplo",
+          "texto": "I do my homework after dinner.",
+          "inicio": 23.466,
+          "fin": 24.842
+        },
+        {
+          "clave": "en-a1-261:lemma",
+          "texto": "exam",
+          "inicio": 25.342,
+          "fin": 25.888
+        },
+        {
+          "clave": "en-a1-261:ejemplo",
+          "texto": "The English exam is on Friday morning.",
+          "inicio": 26.388,
+          "fin": 28.258
+        },
+        {
+          "clave": "en-a1-262:lemma",
+          "texto": "ready",
+          "inicio": 28.758,
+          "fin": 29.333
+        },
+        {
+          "clave": "en-a1-262:ejemplo",
+          "texto": "Hi Leo, your English book is ready at the library.",
+          "inicio": 29.833,
+          "fin": 32.21
+        },
+        {
+          "clave": "en-a1-263:lemma",
+          "texto": "message",
+          "inicio": 32.71,
+          "fin": 33.438
+        },
+        {
+          "clave": "en-a1-263:ejemplo",
+          "texto": "Emma reads a short message from her sister.",
+          "inicio": 33.938,
+          "fin": 35.922
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "estudio-trabajo-y-dinero",
+      "unidad": 2,
+      "archivo": "public/audio/vocabulario/ingles/a1/estudio-trabajo-y-dinero-u2.mp3",
+      "duracion": 36.90966,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-264:lemma",
+          "texto": "schedule",
+          "inicio": 0,
+          "fin": 0.706
+        },
+        {
+          "clave": "en-a1-264:ejemplo",
+          "texto": "That’s a perfect schedule.",
+          "inicio": 1.206,
+          "fin": 2.312
+        },
+        {
+          "clave": "en-a1-265:lemma",
+          "texto": "perfect",
+          "inicio": 2.812,
+          "fin": 3.528
+        },
+        {
+          "clave": "en-a1-265:ejemplo",
+          "texto": "That’s a perfect schedule.",
+          "inicio": 4.028,
+          "fin": 5.192
+        },
+        {
+          "clave": "en-a1-266:lemma",
+          "texto": "meeting",
+          "inicio": 5.692,
+          "fin": 6.168
+        },
+        {
+          "clave": "en-a1-266:ejemplo",
+          "texto": "We’re meeting at the library at four.",
+          "inicio": 6.668,
+          "fin": 8.669
+        },
+        {
+          "clave": "en-a1-267:lemma",
+          "texto": "team",
+          "inicio": 9.169,
+          "fin": 9.744
+        },
+        {
+          "clave": "en-a1-267:ejemplo",
+          "texto": "Ask the kitchen team about allergies before you choose.",
+          "inicio": 10.244,
+          "fin": 13.171
+        },
+        {
+          "clave": "en-a1-268:lemma",
+          "texto": "talk",
+          "inicio": 13.671,
+          "fin": 14.077
+        },
+        {
+          "clave": "en-a1-268:ejemplo",
+          "texto": "A man is waiting at the counter, and two students are talking about school.",
+          "inicio": 14.577,
+          "fin": 18.269
+        },
+        {
+          "clave": "en-a1-269:lemma",
+          "texto": "check",
+          "inicio": 18.769,
+          "fin": 19.191
+        },
+        {
+          "clave": "en-a1-269:ejemplo",
+          "texto": "Please check your ticket before you walk downstairs.",
+          "inicio": 19.691,
+          "fin": 22.139
+        },
+        {
+          "clave": "en-a1-270:lemma",
+          "texto": "keep",
+          "inicio": 22.639,
+          "fin": 23.183
+        },
+        {
+          "clave": "en-a1-270:ejemplo",
+          "texto": "You can keep the book until Friday.",
+          "inicio": 23.683,
+          "fin": 25.35
+        },
+        {
+          "clave": "en-a1-271:lemma",
+          "texto": "owner",
+          "inicio": 25.85,
+          "fin": 26.338
+        },
+        {
+          "clave": "en-a1-271:ejemplo",
+          "texto": "The owner can collect it from the school office before four o’clock today.",
+          "inicio": 26.838,
+          "fin": 30.312
+        },
+        {
+          "clave": "en-a1-272:lemma",
+          "texto": "collect",
+          "inicio": 30.812,
+          "fin": 31.364
+        },
+        {
+          "clave": "en-a1-272:ejemplo",
+          "texto": "You can collect it after school today.",
+          "inicio": 31.864,
+          "fin": 33.601
+        },
+        {
+          "clave": "en-a1-273:lemma",
+          "texto": "free",
+          "inicio": 34.101,
+          "fin": 34.684
+        },
+        {
+          "clave": "en-a1-273:ejemplo",
+          "texto": "The first class is free for students.",
+          "inicio": 35.184,
+          "fin": 36.91
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "estudio-trabajo-y-dinero",
+      "unidad": 3,
+      "archivo": "public/audio/vocabulario/ingles/a1/estudio-trabajo-y-dinero-u3.mp3",
+      "duracion": 33.553129,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-274:lemma",
+          "texto": "money",
+          "inicio": 0,
+          "fin": 0.488
+        },
+        {
+          "clave": "en-a1-274:ejemplo",
+          "texto": "I’ve got money for the coffee.",
+          "inicio": 0.988,
+          "fin": 2.366
+        },
+        {
+          "clave": "en-a1-275:lemma",
+          "texto": "cost",
+          "inicio": 2.866,
+          "fin": 3.515
+        },
+        {
+          "clave": "en-a1-275:ejemplo",
+          "texto": "A ticket costs two pounds.",
+          "inicio": 4.015,
+          "fin": 5.435
+        },
+        {
+          "clave": "en-a1-276:lemma",
+          "texto": "pay",
+          "inicio": 5.935,
+          "fin": 6.448
+        },
+        {
+          "clave": "en-a1-276:ejemplo",
+          "texto": "I pay for the coffee every morning.",
+          "inicio": 6.948,
+          "fin": 8.569
+        },
+        {
+          "clave": "en-a1-277:lemma",
+          "texto": "buy",
+          "inicio": 9.069,
+          "fin": 9.483
+        },
+        {
+          "clave": "en-a1-277:ejemplo",
+          "texto": "We buy bread and milk on Saturdays.",
+          "inicio": 9.983,
+          "fin": 11.783
+        },
+        {
+          "clave": "en-a1-278:lemma",
+          "texto": "price",
+          "inicio": 12.283,
+          "fin": 12.921
+        },
+        {
+          "clave": "en-a1-278:ejemplo",
+          "texto": "The price is on the blue card.",
+          "inicio": 13.421,
+          "fin": 14.76
+        },
+        {
+          "clave": "en-a1-279:lemma",
+          "texto": "cheap",
+          "inicio": 15.26,
+          "fin": 15.734
+        },
+        {
+          "clave": "en-a1-279:ejemplo",
+          "texto": "The bus is cheap. The train is not.",
+          "inicio": 16.234,
+          "fin": 18.074
+        },
+        {
+          "clave": "en-a1-280:lemma",
+          "texto": "expensive",
+          "inicio": 18.574,
+          "fin": 19.456
+        },
+        {
+          "clave": "en-a1-280:ejemplo",
+          "texto": "This jacket is expensive. I want the black one.",
+          "inicio": 19.956,
+          "fin": 22.487
+        },
+        {
+          "clave": "en-a1-281:lemma",
+          "texto": "text",
+          "inicio": 22.987,
+          "fin": 23.633
+        },
+        {
+          "clave": "en-a1-281:ejemplo",
+          "texto": "Please text her before Friday to say if you can come.",
+          "inicio": 24.133,
+          "fin": 27.21
+        },
+        {
+          "clave": "en-a1-282:lemma",
+          "texto": "game",
+          "inicio": 27.71,
+          "fin": 28.183
+        },
+        {
+          "clave": "en-a1-282:ejemplo",
+          "texto": "You can bring a small game if you like.",
+          "inicio": 28.683,
+          "fin": 30.261
+        },
+        {
+          "clave": "en-a1-283:lemma",
+          "texto": "adult",
+          "inicio": 30.761,
+          "fin": 31.423
+        },
+        {
+          "clave": "en-a1-283:ejemplo",
+          "texto": "Children can come with an adult.",
+          "inicio": 31.923,
+          "fin": 33.553
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "cortesia-y-supervivencia",
+      "unidad": 1,
+      "archivo": "public/audio/vocabulario/ingles/a1/cortesia-y-supervivencia-u1.mp3",
+      "duracion": 30.007642,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-284:lemma",
+          "texto": "hello",
+          "inicio": 0,
+          "fin": 0.359
+        },
+        {
+          "clave": "en-a1-284:ejemplo",
+          "texto": "Hello, I am the new student.",
+          "inicio": 0.859,
+          "fin": 2.23
+        },
+        {
+          "clave": "en-a1-285:lemma",
+          "texto": "hi",
+          "inicio": 2.73,
+          "fin": 3.162
+        },
+        {
+          "clave": "en-a1-285:ejemplo",
+          "texto": "Hi! Are you new here? I’m Leo.",
+          "inicio": 3.662,
+          "fin": 5.287
+        },
+        {
+          "clave": "en-a1-286:lemma",
+          "texto": "please",
+          "inicio": 5.787,
+          "fin": 6.327
+        },
+        {
+          "clave": "en-a1-286:ejemplo",
+          "texto": "Please bring your student card.",
+          "inicio": 6.827,
+          "fin": 8.287
+        },
+        {
+          "clave": "en-a1-287:lemma",
+          "texto": "thanks",
+          "inicio": 8.787,
+          "fin": 9.342
+        },
+        {
+          "clave": "en-a1-287:ejemplo",
+          "texto": "Thanks for the bread, Grandpa.",
+          "inicio": 9.842,
+          "fin": 11.127
+        },
+        {
+          "clave": "en-a1-288:lemma",
+          "texto": "sorry",
+          "inicio": 11.627,
+          "fin": 12.212
+        },
+        {
+          "clave": "en-a1-288:ejemplo",
+          "texto": "Sorry, I am late for class today.",
+          "inicio": 12.712,
+          "fin": 14.469
+        },
+        {
+          "clave": "en-a1-289:lemma",
+          "texto": "goodbye",
+          "inicio": 14.969,
+          "fin": 15.697
+        },
+        {
+          "clave": "en-a1-289:ejemplo",
+          "texto": "Goodbye, Leo. See you on Monday.",
+          "inicio": 16.197,
+          "fin": 17.912
+        },
+        {
+          "clave": "en-a1-290:lemma",
+          "texto": "welcome",
+          "inicio": 18.412,
+          "fin": 18.897
+        },
+        {
+          "clave": "en-a1-290:ejemplo",
+          "texto": "Welcome to the school, Maya.",
+          "inicio": 19.397,
+          "fin": 20.628
+        },
+        {
+          "clave": "en-a1-291:lemma",
+          "texto": "yes",
+          "inicio": 21.128,
+          "fin": 21.565
+        },
+        {
+          "clave": "en-a1-291:ejemplo",
+          "texto": "Yes, but we hardly ever play in winter.",
+          "inicio": 22.065,
+          "fin": 24.047
+        },
+        {
+          "clave": "en-a1-292:lemma",
+          "texto": "no",
+          "inicio": 24.547,
+          "fin": 24.911
+        },
+        {
+          "clave": "en-a1-292:ejemplo",
+          "texto": "No, thanks. I am not hungry today.",
+          "inicio": 25.411,
+          "fin": 27.253
+        },
+        {
+          "clave": "en-a1-293:lemma",
+          "texto": "sure",
+          "inicio": 27.753,
+          "fin": 28.243
+        },
+        {
+          "clave": "en-a1-293:ejemplo",
+          "texto": "Sure, I can help you tomorrow.",
+          "inicio": 28.743,
+          "fin": 30.008
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "cortesia-y-supervivencia",
+      "unidad": 2,
+      "archivo": "public/audio/vocabulario/ingles/a1/cortesia-y-supervivencia-u2.mp3",
+      "duracion": 32.284875,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-294:lemma",
+          "texto": "understand",
+          "inicio": 0,
+          "fin": 0.84
+        },
+        {
+          "clave": "en-a1-294:ejemplo",
+          "texto": "Sorry, I don’t understand the question.",
+          "inicio": 1.34,
+          "fin": 3.21
+        },
+        {
+          "clave": "en-a1-295:lemma",
+          "texto": "repeat",
+          "inicio": 3.71,
+          "fin": 4.32
+        },
+        {
+          "clave": "en-a1-295:ejemplo",
+          "texto": "Can you repeat that, please?",
+          "inicio": 4.82,
+          "fin": 6.031
+        },
+        {
+          "clave": "en-a1-296:lemma",
+          "texto": "speak",
+          "inicio": 6.531,
+          "fin": 7.049
+        },
+        {
+          "clave": "en-a1-296:ejemplo",
+          "texto": "I speak a little English.",
+          "inicio": 7.549,
+          "fin": 8.872
+        },
+        {
+          "clave": "en-a1-297:lemma",
+          "texto": "mean",
+          "inicio": 9.372,
+          "fin": 9.916
+        },
+        {
+          "clave": "en-a1-297:ejemplo",
+          "texto": "What does this word mean?",
+          "inicio": 10.416,
+          "fin": 11.539
+        },
+        {
+          "clave": "en-a1-298:lemma",
+          "texto": "help",
+          "inicio": 12.039,
+          "fin": 12.589
+        },
+        {
+          "clave": "en-a1-298:ejemplo",
+          "texto": "Can you help me, please?",
+          "inicio": 13.089,
+          "fin": 14.181
+        },
+        {
+          "clave": "en-a1-299:lemma",
+          "texto": "maybe",
+          "inicio": 14.681,
+          "fin": 15.319
+        },
+        {
+          "clave": "en-a1-299:ejemplo",
+          "texto": "Maybe I can come on Sunday.",
+          "inicio": 15.819,
+          "fin": 17.129
+        },
+        {
+          "clave": "en-a1-300:lemma",
+          "texto": "course",
+          "inicio": 17.629,
+          "fin": 18.179
+        },
+        {
+          "clave": "en-a1-300:ejemplo",
+          "texto": "Of course. It’s always the banana cake.",
+          "inicio": 18.679,
+          "fin": 20.691
+        },
+        {
+          "clave": "en-a1-301:lemma",
+          "texto": "really",
+          "inicio": 21.191,
+          "fin": 21.783
+        },
+        {
+          "clave": "en-a1-301:ejemplo",
+          "texto": "Really? And your parents?",
+          "inicio": 22.283,
+          "fin": 23.501
+        },
+        {
+          "clave": "en-a1-302:lemma",
+          "texto": "too",
+          "inicio": 24.001,
+          "fin": 24.408
+        },
+        {
+          "clave": "en-a1-302:ejemplo",
+          "texto": "My sister is a waitress too. She’s at the bakery.",
+          "inicio": 24.908,
+          "fin": 27.596
+        },
+        {
+          "clave": "en-a1-303:lemma",
+          "texto": "very",
+          "inicio": 28.096,
+          "fin": 28.736
+        },
+        {
+          "clave": "en-a1-303:ejemplo",
+          "texto": "We haven’t got any eggs. And we’ve got very little coffee.",
+          "inicio": 29.236,
+          "fin": 32.285
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a1",
+      "bloque": "cortesia-y-supervivencia",
+      "unidad": 3,
+      "archivo": "public/audio/vocabulario/ingles/a1/cortesia-y-supervivencia-u3.mp3",
+      "duracion": 30.775533,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a1-304:lemma",
+          "texto": "but",
+          "inicio": 0,
+          "fin": 0.415
+        },
+        {
+          "clave": "en-a1-304:ejemplo",
+          "texto": "Yes, but we hardly ever play in winter.",
+          "inicio": 0.915,
+          "fin": 2.794
+        },
+        {
+          "clave": "en-a1-305:lemma",
+          "texto": "because",
+          "inicio": 3.294,
+          "fin": 3.836
+        },
+        {
+          "clave": "en-a1-305:ejemplo",
+          "texto": "Please arrive at eleven and bring a hat because there is little shade.",
+          "inicio": 4.336,
+          "fin": 7.824
+        },
+        {
+          "clave": "en-a1-306:lemma",
+          "texto": "if",
+          "inicio": 8.324,
+          "fin": 8.831
+        },
+        {
+          "clave": "en-a1-306:ejemplo",
+          "texto": "Bring gloves if you have them.",
+          "inicio": 9.331,
+          "fin": 10.529
+        },
+        {
+          "clave": "en-a1-307:lemma",
+          "texto": "why",
+          "inicio": 11.029,
+          "fin": 11.529
+        },
+        {
+          "clave": "en-a1-307:ejemplo",
+          "texto": "You live next to the school. That’s why.",
+          "inicio": 12.029,
+          "fin": 14.073
+        },
+        {
+          "clave": "en-a1-308:lemma",
+          "texto": "what",
+          "inicio": 14.573,
+          "fin": 15.031
+        },
+        {
+          "clave": "en-a1-308:ejemplo",
+          "texto": "What’s on the shelves?",
+          "inicio": 15.531,
+          "fin": 16.509
+        },
+        {
+          "clave": "en-a1-309:lemma",
+          "texto": "who",
+          "inicio": 17.009,
+          "fin": 17.559
+        },
+        {
+          "clave": "en-a1-309:ejemplo",
+          "texto": "Who is the man with the hat?",
+          "inicio": 18.059,
+          "fin": 19.345
+        },
+        {
+          "clave": "en-a1-310:lemma",
+          "texto": "when",
+          "inicio": 19.845,
+          "fin": 20.281
+        },
+        {
+          "clave": "en-a1-310:ejemplo",
+          "texto": "When do you leave?",
+          "inicio": 20.781,
+          "fin": 21.66
+        },
+        {
+          "clave": "en-a1-311:lemma",
+          "texto": "how",
+          "inicio": 22.16,
+          "fin": 22.736
+        },
+        {
+          "clave": "en-a1-311:ejemplo",
+          "texto": "How do you say this word in English?",
+          "inicio": 23.236,
+          "fin": 24.87
+        },
+        {
+          "clave": "en-a1-312:lemma",
+          "texto": "little",
+          "inicio": 25.37,
+          "fin": 25.852
+        },
+        {
+          "clave": "en-a1-312:ejemplo",
+          "texto": "There is a little bread at home.",
+          "inicio": 26.352,
+          "fin": 27.73
+        },
+        {
+          "clave": "en-a1-313:lemma",
+          "texto": "enough",
+          "inicio": 28.23,
+          "fin": 28.725
+        },
+        {
+          "clave": "en-a1-313:ejemplo",
+          "texto": "They’re comfortable. That’s enough for me.",
+          "inicio": 29.225,
+          "fin": 30.776
+        }
+      ]
+    }
+  ]
+}
