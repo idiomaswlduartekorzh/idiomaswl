@@ -150,11 +150,11 @@ const unidad2: VocabEntry[] = [
 
   en('en-a1-016', 'grandfather', 'abuelo', 'sustantivo', 'GRAND-fa-ther',
     [c('visit my grandfather', 'visitar a mi abuelo'), c('my grandfather had a shop', 'mi abuelo tenía una tienda')],
-    { target: 'That’s my grandfather Sam. His bakery was on this street.', es: 'Ese es mi abuelo Sam. Su panadería estaba en esta calle.', episodio: 2 },
+    { target: 'Good. My grandfather has got a cake for us.', es: 'Bien. Mi abuelo tiene un pastel para nosotros.', episodio: 11 },
     { tipo: 'sustantivo' }),
 
   en('en-a1-017', 'grandmother', 'abuela', 'sustantivo', 'GRAND-mo-ther',
-    [c('visit my grandmother', 'visitar a mi abuela'), c('my grandmother has…', 'mi abuela tiene…')],
+    [c('visit my grandmother', 'visitar a mi abuela'), c('my grandmother’s house', 'la casa de mi abuela')],
     { target: 'My grandmother has a table like that.', es: 'Mi abuela tiene una mesa así.', episodio: 4 },
     { tipo: 'sustantivo' }),
 
@@ -329,7 +329,7 @@ const b2unidad1: VocabEntry[] = [
     { target: 'What time does the café open?', es: '¿A qué hora abre el café?', episodio: 9 },
     { tipo: 'verbo' }),
 
-  en('en-a1-047', 'arrive', 'llegar', 'verbo', 'a-RRIVE',
+  en('en-a1-047', 'arrive', 'llegar', 'verbo', 'ar-RIVE',
     [c('arrive at seven', 'llegar a las siete'), c('arrive early', 'llegar temprano'), c('arrive late', 'llegar tarde')],
     { target: 'It opens at eight. I arrive at half past seven.', es: 'Abre a las ocho. Yo llego a las siete y media.', episodio: 9 },
     { tipo: 'verbo' }),
@@ -431,7 +431,7 @@ const b2unidad3: VocabEntry[] = [
     { target: 'It’s cold today. Is it always like this?', es: 'Hoy hace frío. ¿Siempre es así?', episodio: 14 },
     { tipo: 'otro' }),
 
-  en('en-a1-065', 'tomorrow', 'mañana', 'adverbio', 'to-MO-rrow',
+  en('en-a1-065', 'tomorrow', 'mañana', 'adverbio', 'to-MOR-row',
     [c('tomorrow is sunny', 'mañana hace sol'), c('see you tomorrow', 'hasta mañana')],
     { target: 'Today it’s grey, but tomorrow is sunny.', es: 'Hoy está gris, pero mañana hace sol.', episodio: 14 },
     { tipo: 'otro' }),
@@ -458,7 +458,7 @@ const b2unidad3: VocabEntry[] = [
 
   en('en-a1-070', 'every', 'cada / todos los', 'adjetivo', 'EV-ery',
     [c('every day', 'todos los días'), c('every Saturday', 'todos los sábados'), c('every thirty minutes', 'cada treinta minutos')],
-    { target: 'My bakery opened at five. Every day.', es: 'Mi panadería abría a las cinco. Todos los días.', episodio: 9 },
+    { target: 'He plays here every Sunday.', es: 'Toca aquí todos los domingos.', episodio: 16 },
     { tipo: 'otro' }),
 ]
 
@@ -662,6 +662,20 @@ const b3unidad3: VocabEntry[] = [
 // Quedan fuera «vegetable» y «salad», que viven en esa misma frase del menú y no llegan a
 // imprescindibles en A1. «money» y «list», que sí están en el episodio 11, se guardan para
 // los bloques de ciudad y de trabajo: no son comida.
+
+/**
+ * Motivo de los ejemplos que se retiraron del material por gramática de fuera de nivel.
+ *
+ * Lo destapó la auditoría pedagógica del 9 ago 2026: diez fichas enseñaban su palabra con
+ * pasiva en pasado, `will`, `must` o primer condicional, ninguno de los cuales está en los 25
+ * temas de gramática de inglés A1. Y el dato que importa: **ocho de las diez venían de los
+ * textos de lectura**, no de lo escrito a mano. El vocabulario copió las frases del material
+ * publicado sin comprobar el nivel gramatical, que es un hueco del procedimiento y no de la
+ * redacción. Cuatro se arreglaron con otra frase del mismo material; estas seis, no.
+ */
+const FUERA_DE_NIVEL = (palabra: string, cual: string) =>
+  `«${palabra}» sí está en el material, pero su frase usa gramática que A1 no enseña. ${cual} ` +
+  `Frase redactada dentro del nivel, para no enseñar una estructura antes de tiempo.`
 
 /** Motivo de un ejemplo redactado, escrito entero para que se pueda discutir. */
 const NO_SIRVE = (palabra: string, porque: string) =>
@@ -1011,7 +1025,7 @@ const b6unidad2: VocabEntry[] = [
     { tipo: 'otro' }),
 
   en('en-a1-150', 'brown', 'marrón / café', 'adjetivo', 'brown',
-    [c('a brown dog', 'un perro marrón'), c('brown bread', 'pan integral'), c('brown shoes', 'zapatos marrones')],
+    [c('a brown dog', 'un perro marrón'), c('brown hair', 'pelo marrón'), c('brown shoes', 'zapatos marrones')],
     { target: 'I’ve got a small brown dog. His name is Max.', es: 'Tengo un perro pequeño y marrón. Se llama Max.', episodio: 15 },
     { tipo: 'otro' }),
 
@@ -1222,8 +1236,8 @@ const b7unidad2: VocabEntry[] = [
   en('en-a1-179', 'platform', 'andén', 'sustantivo', 'PLAT-form',
     [c('from platform 3', 'desde el andén 3'), c('which platform?', '¿qué andén?'), c('the café near platform 3', 'la cafetería que hay junto al andén 3')],
     {
-      target: 'The train will leave from platform 3 today, not platform 1.',
-      es: 'Hoy el tren sale del andén 3, no del andén 1.',
+      target: 'The café near platform 3 is open until noon.',
+      es: 'La cafetería que hay junto al andén 3 abre hasta el mediodía.',
       lectura: 'en-a1-train-platform-sign',
     },
     { tipo: 'sustantivo' }),
@@ -1250,9 +1264,9 @@ const b7unidad2: VocabEntry[] = [
   en('en-a1-183', 'office', 'oficina / despacho', 'sustantivo', 'OF-fice',
     [c('the school office', 'la secretaría del colegio'), c('the ticket office', 'la taquilla'), c('at the office', 'en la oficina')],
     {
-      target: 'If nobody collects it today, the office will keep it until Friday.',
-      es: 'Si nadie lo recoge hoy, la oficina lo guardará hasta el viernes.',
-      lectura: 'en-a1-lost-and-found-message',
+      target: 'The school office is open until four o’clock.',
+      es: 'La secretaría del colegio abre hasta las cuatro.',
+      motivo: FUERA_DE_NIVEL('office', 'La frase del aviso —«the office will keep it until Friday»— usa «will», que A1 no enseña.'),
     },
     { tipo: 'sustantivo' }),
 ]
@@ -1322,9 +1336,9 @@ const b7unidad3: VocabEntry[] = [
   en('en-a1-193', 'flat', 'apartamento', 'sustantivo', 'flat',
     [c('a small flat', 'un apartamento pequeño'), c('at Mia’s flat', 'en el apartamento de Mia'), c('live in a flat', 'vivir en un apartamento')],
     {
-      target: 'If it rains, the picnic will move to Mia’s flat at 24 King Street.',
-      es: 'Si llueve, el picnic se traslada al apartamento de Mia, en el 24 de King Street.',
-      lectura: 'en-a1-birthday-party-invite',
+      target: 'Mia has got a small flat on King Street.',
+      es: 'Mia tiene un apartamento pequeño en King Street.',
+      motivo: FUERA_DE_NIVEL('flat', 'Su frase de la invitación es un primer condicional con «will».'),
     },
     { tipo: 'sustantivo' }),
 ]
@@ -1394,8 +1408,8 @@ const b8unidad1: VocabEntry[] = [
     },
     { tipo: 'otro' }),
 
-  en('en-a1-200', 'after', 'después de', 'preposicion', 'AF-ter',
-    [c('after school', 'después del colegio'), c('after the church', 'después de la iglesia'), c('after four o’clock', 'después de las cuatro')],
+  en('en-a1-200', 'after', 'después (de)', 'preposicion', 'AF-ter',
+    [c('after school', 'después del colegio'), c('after work', 'después del trabajo'), c('after lunch', 'después de comer')],
     { target: 'Are you visiting your grandfather after?', es: '¿Vas a ver a tu abuelo después?', episodio: 18 },
     { tipo: 'otro' }),
 
@@ -1475,6 +1489,17 @@ const b8unidad2: VocabEntry[] = [
     { target: 'You work every Saturday. Do you rest?', es: 'Trabajas todos los sábados. ¿Descansas?', episodio: 9 },
     { tipo: 'verbo' }),
 
+  // `go` no estaba en las 310, y es el verbo léxico más frecuente del A1. El buscador daba
+  // doce positivos y los doce eran «got» y «good»: otro espejismo, y de los caros.
+  en('en-a1-334', 'go', 'ir', 'verbo', 'go',
+    [c('go to work', 'ir a trabajar'), c('go home', 'irse a casa'), c('go to the park', 'ir al parque')],
+    {
+      target: 'I go to work at eight.',
+      es: 'Voy a trabajar a las ocho.',
+      motivo: NO_SIRVE('go', 'no aparece suelta en ningún turno ni lectura —los doce positivos de la búsqueda eran «got» y «good»— y es el verbo de movimiento más frecuente del nivel.'),
+    },
+    { tipo: 'verbo', phrasal: ['go out — salir', 'go back — volver'] }),
+
   en('en-a1-213', 'bring', 'traer / llevar', 'verbo', 'bring',
     [c('bring your card', 'trae tu carné'), c('bring a hat', 'trae un sombrero'), c('bring a friend', 'traer a un amigo')],
     {
@@ -1538,8 +1563,8 @@ const b8unidad3: VocabEntry[] = [
   en('en-a1-221', 'call', 'llamar', 'verbo', 'call',
     [c('call the office', 'llamar a la oficina'), c('call before five', 'llamar antes de las cinco'), c('call your name', 'decir tu nombre en voz alta')],
     {
-      target: 'Dogs must wait outside until a nurse calls their name.',
-      es: 'Los perros esperan fuera hasta que una enfermera dice su nombre.',
+      target: 'For an emergency, call the number on the blue card at the front desk.',
+      es: 'En caso de urgencia, llama al número de la tarjeta azul del mostrador de la entrada.',
       lectura: 'en-a1-pet-clinic-card',
     },
     { tipo: 'verbo' }),
@@ -1624,8 +1649,8 @@ const b5unidad1: VocabEntry[] = [
   en('en-a1-228', 'ear', 'oreja / oído', 'sustantivo', 'ear',
     [c('small ears', 'orejas pequeñas'), c('in one ear', 'en un oído'), c('the dog’s ears', 'las orejas del perro')],
     {
-      target: 'The dog has got small ears.',
-      es: 'El perro tiene las orejas pequeñas.',
+      target: 'My ears are cold in November.',
+      es: 'En noviembre tengo las orejas frías.',
       motivo: SIN_TEMA('ear', 'Va con «hear», que sí está en el material.'),
     },
     { tipo: 'sustantivo' }),
@@ -1633,8 +1658,8 @@ const b5unidad1: VocabEntry[] = [
   en('en-a1-229', 'nose', 'nariz', 'sustantivo', 'nose',
     [c('a black nose', 'una nariz negra'), c('a cold nose', 'la nariz fría'), c('under your nose', 'delante de tus narices')],
     {
-      target: 'The cat has got a black nose.',
-      es: 'El gato tiene la nariz negra.',
+      target: 'My nose is cold. I want a scarf.',
+      es: 'Tengo la nariz fría. Quiero una bufanda.',
       motivo: SIN_TEMA('nose', 'Va con «smell», que sí está en el material.'),
     },
     { tipo: 'sustantivo' }),
@@ -1678,8 +1703,8 @@ const b5unidad2: VocabEntry[] = [
   en('en-a1-234', 'leg', 'pierna / pata', 'sustantivo', 'leg',
     [c('four legs', 'cuatro patas'), c('my legs are tired', 'tengo las piernas cansadas'), c('long legs', 'piernas largas')],
     {
-      target: 'The table has got four legs.',
-      es: 'La mesa tiene cuatro patas.',
+      target: 'My legs are tired after the park.',
+      es: 'Tengo las piernas cansadas después del parque.',
       motivo: SIN_TEMA('leg', 'Sirve para el cuerpo y para los muebles, que sí están en el nivel.'),
     },
     { tipo: 'sustantivo' }),
@@ -1687,8 +1712,8 @@ const b5unidad2: VocabEntry[] = [
   en('en-a1-235', 'foot', 'pie', 'sustantivo', 'foot',
     [c('on foot', 'a pie'), c('two feet', 'dos pies'), c('my feet are cold', 'tengo los pies fríos')],
     {
-      target: 'I go to school on foot.',
-      es: 'Voy al colegio a pie.',
+      target: 'My foot is cold. Where are my shoes?',
+      es: 'Tengo el pie frío. ¿Dónde están mis zapatos?',
       motivo: SIN_TEMA('foot', 'El buscador la daba por presente y era «football» de los episodios 8 y 16.'),
     },
     { tipo: 'sustantivo' }),
@@ -1719,6 +1744,16 @@ const b5unidad2: VocabEntry[] = [
       motivo: SIN_TEMA('sick', 'Es la frase con la que se avisa de que no se va a clase o al trabajo.'),
     },
     { tipo: 'otro' }),
+
+  // Un bloque de salud sin «me duele» no sirve para lo único que hace ir al médico.
+  en('en-a1-335', 'hurt', 'doler', 'verbo', 'hurt',
+    [c('my head hurts', 'me duele la cabeza'), c('does it hurt?', '¿te duele?'), c('my back hurts', 'me duele la espalda')],
+    {
+      target: 'My arm hurts. I want a doctor.',
+      es: 'Me duele el brazo. Quiero un médico.',
+      motivo: SIN_TEMA('hurt', 'Es la frase por la que existe un bloque de salud: sin ella el estudiante puede nombrar el cuerpo y no puede decir qué le pasa.'),
+    },
+    { tipo: 'verbo' }),
 
   en('en-a1-239', 'tired', 'cansado', 'adjetivo', 'tired',
     [c('I am tired', 'estoy cansado'), c('tired after work', 'cansado después del trabajo'), c('very tired', 'muy cansado')],
@@ -1820,9 +1855,9 @@ const b5unidad3: VocabEntry[] = [
   en('en-a1-252', 'rain', 'llover / lluvia', 'verbo', 'rain',
     [c('if it rains', 'si llueve'), c('it rains every day', 'llueve todos los días'), c('a lot of rain', 'mucha lluvia')],
     {
-      target: 'If it rains, the picnic will move to Mia’s flat at 24 King Street.',
-      es: 'Si llueve, el picnic se traslada al apartamento de Mia, en el 24 de King Street.',
-      lectura: 'en-a1-birthday-party-invite',
+      target: 'It rains every afternoon in November.',
+      es: 'En noviembre llueve todas las tardes.',
+      motivo: FUERA_DE_NIVEL('rain', 'Comparte con «flat» el primer condicional de la invitación.'),
     },
     { tipo: 'verbo' }),
 
@@ -1858,9 +1893,9 @@ const b9unidad1: VocabEntry[] = [
   en('en-a1-254', 'class', 'clase', 'sustantivo', 'class',
     [c('the English class', 'la clase de inglés'), c('after class', 'después de clase'), c('a class at nine', 'una clase a las nueve')],
     {
-      target: 'A blue backpack was found near Room 4 after the English class.',
-      es: 'Se encontró una mochila azul cerca del Aula 4 después de la clase de inglés.',
-      lectura: 'en-a1-lost-and-found-message',
+      target: 'The English class starts at six.',
+      es: 'La clase de inglés empieza a las seis.',
+      motivo: FUERA_DE_NIVEL('class', 'La frase del aviso —«a blue backpack was found»— es pasiva en pasado, la estructura más lejos del nivel de todo el material.'),
     },
     { tipo: 'sustantivo' }),
 
@@ -1871,6 +1906,11 @@ const b9unidad1: VocabEntry[] = [
       es: 'Mi profesora es de Colombia.',
       motivo: SIN_AULA('teacher', 'El nivel enseña «teach» y «student» pero nunca nombra al que enseña.'),
     },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-336', 'English', 'inglés', 'sustantivo', 'ENG-lish',
+    [c('the English class', 'la clase de inglés'), c('speak English', 'hablar inglés'), c('an English book', 'un libro de inglés')],
+    { target: 'My English class is on Tuesday at six.', es: 'Mi clase de inglés es el martes a las seis.', episodio: 10 },
     { tipo: 'sustantivo' }),
 
   en('en-a1-256', 'learn', 'aprender', 'verbo', 'learn',
@@ -1994,9 +2034,9 @@ const b9unidad2: VocabEntry[] = [
   en('en-a1-270', 'keep', 'guardar', 'verbo', 'keep',
     [c('keep it until Friday', 'guardarlo hasta el viernes'), c('keep your card', 'guarda tu carné'), c('keep the message', 'guardar el mensaje')],
     {
-      target: 'If nobody collects it today, the office will keep it until Friday.',
-      es: 'Si nadie lo recoge hoy, la oficina lo guardará hasta el viernes.',
-      lectura: 'en-a1-lost-and-found-message',
+      target: 'You can keep the book until Friday.',
+      es: 'Puedes quedarte el libro hasta el viernes.',
+      motivo: FUERA_DE_NIVEL('keep', 'Su frase del aviso encadena primer condicional y «will».'),
     },
     { tipo: 'verbo' }),
 
@@ -2111,9 +2151,9 @@ const b9unidad3: VocabEntry[] = [
   en('en-a1-283', 'adult', 'adulto', 'sustantivo', 'A-dult',
     [c('come with an adult', 'venir con un adulto'), c('adults and children', 'adultos y niños'), c('classes for adults', 'clases para adultos')],
     {
-      target: 'Children must come with an adult.',
-      es: 'Los niños tienen que venir con un adulto.',
-      lectura: 'en-a1-park-cleanup-poster',
+      target: 'Children can come with an adult.',
+      es: 'Los niños pueden venir con un adulto.',
+      motivo: FUERA_DE_NIVEL('adult', 'Su frase del cartel usa «must», que A1 no enseña; el nivel sí tiene «can».'),
     },
     { tipo: 'sustantivo' }),
 ]
@@ -2174,11 +2214,11 @@ const b10unidad1: VocabEntry[] = [
     },
     { tipo: 'otro' }),
 
-  en('en-a1-288', 'sorry', 'perdón / lo siento', 'expresion', 'SO-rry',
+  en('en-a1-288', 'sorry', 'perdón / lo siento', 'expresion', 'SOR-ry',
     [c('sorry, I don’t understand', 'perdón, no entiendo'), c('I’m sorry', 'lo siento'), c('sorry, I’m late', 'perdón, llego tarde')],
     {
-      target: 'Sorry, I am late for the class.',
-      es: 'Perdón, llego tarde a clase.',
+      target: 'Sorry, I am late for class today.',
+      es: 'Perdón, hoy llego tarde a clase.',
       motivo: SIN_CORTESIA('sorry', 'Cubre también la función de «excuse me», que el Oxford 3000 sitúa en B2.'),
     },
     { tipo: 'otro' }),
@@ -2192,7 +2232,7 @@ const b10unidad1: VocabEntry[] = [
     },
     { tipo: 'otro' }),
 
-  en('en-a1-290', 'welcome', 'bienvenido', 'expresion', 'WEL-come',
+  en('en-a1-290', 'welcome', 'bienvenido / de nada (you’re welcome)', 'expresion', 'WEL-come',
     [c('welcome to the shop', 'bienvenido al local'), c('you’re welcome', 'de nada'), c('welcome home', 'bienvenido a casa')],
     {
       target: 'Welcome to the school, Maya.',
@@ -2287,7 +2327,7 @@ const b10unidad2: VocabEntry[] = [
     { target: 'Of course. It’s always the banana cake.', es: 'Claro. Siempre es el pastel de banano.', episodio: 11 },
     { tipo: 'otro' }),
 
-  en('en-a1-301', 'really', '¿de verdad? / realmente', 'adverbio', 'REA-lly',
+  en('en-a1-301', 'really', '¿de verdad? / realmente', 'adverbio', 'REAL-ly',
     [c('really? I don’t believe it', '¿de verdad? no me lo creo'), c('really good', 'muy bueno'), c('do you really work here?', '¿de verdad trabajas aquí?')],
     { target: 'Really? And your parents?', es: '¿En serio? ¿Y tus padres?', episodio: 2 },
     { tipo: 'otro' }),
@@ -2329,7 +2369,7 @@ const b10unidad3: VocabEntry[] = [
     },
     { tipo: 'otro' }),
 
-  en('en-a1-307', 'why', 'por qué', 'pronombre', 'why',
+  en('en-a1-307', 'why', 'por qué', 'adverbio', 'why',
     [c('why not?', '¿por qué no?'), c('that’s why', 'por eso'), c('why do you work here?', '¿por qué trabajas aquí?')],
     { target: 'You live next to the school. That’s why.', es: 'Vives al lado del colegio. Por eso.', episodio: 6 },
     { tipo: 'otro' }),
@@ -2344,13 +2384,13 @@ const b10unidad3: VocabEntry[] = [
     { target: 'Who is the man with the hat?', es: '¿Quién es el hombre del sombrero?', episodio: 2 },
     { tipo: 'otro' }),
 
-  en('en-a1-310', 'when', 'cuándo', 'pronombre', 'when',
+  en('en-a1-310', 'when', 'cuándo', 'adverbio', 'when',
     // Nada de «when do you leave?»: es el ejemplo entero y deja la caja 5 sin salida.
     [c('when is the class?', '¿cuándo es la clase?'), c('when you arrive', 'cuando llegues'), c('when does it start?', '¿cuándo empieza?')],
     { target: 'When do you leave?', es: '¿Cuándo sales?', episodio: 6 },
     { tipo: 'otro' }),
 
-  en('en-a1-311', 'how', 'cómo', 'pronombre', 'how',
+  en('en-a1-311', 'how', 'cómo', 'adverbio', 'how',
     [c('how are you?', '¿cómo estás?'), c('how much is it?', '¿cuánto es?'), c('how do you say it?', '¿cómo se dice?')],
     {
       target: 'How do you say this word in English?',
@@ -2362,8 +2402,8 @@ const b10unidad3: VocabEntry[] = [
   en('en-a1-312', 'little', 'poco', 'adjetivo', 'LIT-tle',
     [c('very little coffee', 'muy poco café'), c('a little English', 'un poco de inglés'), c('little shade', 'poca sombra')],
     {
-      target: 'There is little bread at home.',
-      es: 'Queda poco pan en casa.',
+      target: 'There is a little bread at home.',
+      es: 'Hay un poco de pan en casa.',
       motivo: SIN_CORTESIA('little', 'Sus dos frases del material ya estaban ocupadas por «coffee» y por «hat».'),
     },
     { tipo: 'otro' }),
@@ -2371,6 +2411,161 @@ const b10unidad3: VocabEntry[] = [
   en('en-a1-313', 'enough', 'suficiente / basta', 'adjetivo', 'e-NOUGH',
     [c('that’s enough for me', 'con eso me basta'), c('enough money', 'dinero suficiente'), c('two hours is enough', 'con dos horas basta')],
     { target: 'They’re comfortable. That’s enough for me.', es: 'Son cómodos. Con eso me basta.', episodio: 13 },
+    { tipo: 'otro' }),
+]
+
+// ═══ BLOQUE 2 · Unidades 4 y 5 — los números que faltaban ═════════════════════
+//
+// Las escribe la auditoría pedagógica del 9 de agosto de 2026, que encontró lo que nadie
+// había mirado: **un bloque llamado «Números, hora y calendario» sin un solo numeral**.
+// Tenía `number` —la palabra «número»— y ningún número. En las 310 entradas del nivel no
+// había forma de decir cuántos años tienes, tu teléfono ni cuánto cuesta algo.
+//
+// El corpus los tenía todos, y de sobra: las horas de la serie, los precios de la guía del
+// autobús, los muebles de la casa. No hicieron falta ejemplos redactados para el uno al diez.
+// Lo que sí falta en el material son los cuantificadores —`some`, `all`, `only`— y `month`,
+// que se escriben a mano y quedan marcados.
+//
+// Faltaba también `month`: el bloque tenía dos meses, los que dice la serie, y ninguna palabra
+// para «mes». Un estudiante no podía decir su cumpleaños.
+
+// ─── Unidad 4 · Del uno al diez ───────────────────────────────────────────────
+
+const b2unidad4: VocabEntry[] = [
+  en('en-a1-314', 'one', 'uno', 'numero', 'one',
+    [c('one very old table', 'una mesa muy vieja'), c('one of my friends', 'uno de mis amigos'), c('every one', 'cada uno')],
+    { target: 'Those tiles are from 1971. I know every one.', es: 'Esas baldosas son de 1971. Me sé cada una.', episodio: 20 },
+    { tipo: 'otro' }),
+
+  en('en-a1-315', 'two', 'dos', 'numero', 'two',
+    [c('two hours', 'dos horas'), c('two minutes', 'dos minutos'), c('two pounds', 'dos libras')],
+    { target: 'Two hours is enough for bread.', es: 'Dos horas bastan para el pan.', episodio: 17 },
+    { tipo: 'otro' }),
+
+  en('en-a1-316', 'three', 'tres', 'numero', 'three',
+    [c('three rooms', 'tres habitaciones'), c('three choices', 'tres opciones'), c('he’s three', 'tiene tres años')],
+    { target: 'He’s three. He runs in the park every morning.', es: 'Tres. Corre en el parque cada mañana.', episodio: 15 },
+    { tipo: 'otro' }),
+
+  en('en-a1-317', 'four', 'cuatro', 'numero', 'four',
+    [c('at four', 'a las cuatro'), c('four chairs', 'cuatro sillas'), c('before four o’clock', 'antes de las cuatro')],
+    { target: 'We’re meeting at the library at four.', es: 'Quedamos en la biblioteca a las cuatro.', episodio: 18 },
+    { tipo: 'otro' }),
+
+  en('en-a1-318', 'five', 'cinco', 'numero', 'five',
+    [c('at five', 'a las cinco'), c('five minutes', 'cinco minutos'), c('before five', 'antes de las cinco')],
+    { target: 'Five! Do you miss it?', es: '¡Las cinco! ¿La echas de menos?', episodio: 9 },
+    { tipo: 'otro' }),
+
+  en('en-a1-319', 'six', 'seis', 'numero', 'six',
+    [c('at six', 'a las seis'), c('six o’clock', 'las seis en punto'), c('six in the evening', 'las seis de la tarde')],
+    { target: 'I get up at six. I make coffee first.', es: 'Me levanto a las seis. Primero hago café.', episodio: 6 },
+    { tipo: 'otro' }),
+
+  en('en-a1-320', 'seven', 'siete', 'numero', 'SEV-en',
+    [c('at seven', 'a las siete'), c('half past seven', 'las siete y media'), c('seven thirty', 'las siete y media')],
+    { target: 'I eat bread and fruit at seven.', es: 'Como pan y fruta a las siete.', episodio: 6 },
+    { tipo: 'otro' }),
+
+  en('en-a1-321', 'eight', 'ocho', 'numero', 'eight',
+    [c('at eight', 'a las ocho'), c('eight hours', 'ocho horas'), c('eight o’clock', 'las ocho en punto')],
+    { target: 'I get up at eight. I never walk.', es: 'Yo me levanto a las ocho. Nunca voy andando.', episodio: 6 },
+    { tipo: 'otro' }),
+
+  en('en-a1-322', 'nine', 'nueve', 'numero', 'nine',
+    [c('at nine', 'a las nueve'), c('the number nine bus', 'el autobús número nueve'), c('nine o’clock', 'las nueve en punto')],
+    { target: 'On Monday morning, at nine o’clock.', es: 'El lunes por la mañana, a las nueve.', episodio: 10 },
+    { tipo: 'otro' }),
+
+  en('en-a1-323', 'ten', 'diez', 'numero', 'ten',
+    [c('at ten', 'a las diez'), c('ten o’clock', 'las diez en punto'), c('ten minutes', 'diez minutos')],
+    {
+      target: 'We meet beside the playground at ten o’clock.',
+      es: 'Nos vemos al lado del parque infantil a las diez.',
+      lectura: 'en-a1-park-cleanup-poster',
+    },
+    { tipo: 'otro' }),
+]
+
+// ─── Unidad 5 · Cuántos, cuánto y el mes ──────────────────────────────────────
+
+const b2unidad5: VocabEntry[] = [
+  en('en-a1-324', 'twenty', 'veinte', 'numero', 'TWEN-ty',
+    [c('twenty years old', 'veinte años'), c('ten twenty', 'las diez y veinte'), c('twenty minutes', 'veinte minutos')],
+    {
+      target: 'The train arrives at ten twenty and leaves at ten thirty.',
+      es: 'El tren llega a las diez y veinte y sale a las diez y media.',
+      lectura: 'en-a1-train-platform-sign',
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-325', 'thirty', 'treinta', 'numero', 'THIR-ty',
+    [c('every thirty minutes', 'cada treinta minutos'), c('seven thirty', 'las siete y media'), c('thirty students', 'treinta estudiantes')],
+    {
+      target: 'The train arrives at ten twenty and leaves at ten thirty.',
+      es: 'El tren llega a las diez y veinte y sale a las diez y media.',
+      lectura: 'en-a1-train-platform-sign',
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-326', 'hundred', 'cien', 'numero', 'HUN-dred',
+    [c('a hundred pounds', 'cien libras'), c('two hundred people', 'doscientas personas'), c('a hundred years', 'cien años')],
+    {
+      target: 'The books cost a hundred pounds.',
+      es: 'Los libros cuestan cien libras.',
+      motivo: NO_SIRVE('hundred', 'no aparece en el material: la serie no dice ningún precio de tres cifras. Sin ella no se puede hablar de dinero por encima de las decenas.'),
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-327', 'month', 'mes', 'sustantivo', 'month',
+    [c('this month', 'este mes'), c('every month', 'todos los meses'), c('three months', 'tres meses')],
+    {
+      target: 'My birthday is in this month.',
+      es: 'Mi cumpleaños es este mes.',
+      motivo: NO_SIRVE('month', 'no aparece en el material, que solo nombra noviembre y diciembre. Sin «month» el estudiante no puede decir su cumpleaños ni la duración de un curso.'),
+    },
+    { tipo: 'sustantivo' }),
+
+  en('en-a1-328', 'many', 'muchos', 'adjetivo', 'MAN-y',
+    [c('many chairs', 'muchas sillas'), c('how many?', '¿cuántos?'), c('many people', 'mucha gente')],
+    { target: 'Are there many chairs in the kitchen?', es: '¿Hay muchas sillas en la cocina?', episodio: 4 },
+    { tipo: 'otro' }),
+
+  en('en-a1-329', 'any', 'algún / ningún', 'adjetivo', 'AN-y',
+    [c('any shelves', 'algún estante'), c('we haven’t got any', 'no nos queda ninguno'), c('any questions?', '¿alguna pregunta?')],
+    { target: 'Are there any shelves?', es: '¿Hay estantes?', episodio: 3 },
+    { tipo: 'otro' }),
+
+  en('en-a1-330', 'about', 'sobre / acerca de', 'preposicion', 'a-BOUT',
+    [c('talk about school', 'hablar del colegio'), c('ask about the price', 'preguntar por el precio'), c('a book about Colombia', 'un libro sobre Colombia')],
+    { target: 'She loves it. She talks about her students every day.', es: 'Le encanta. Habla de sus alumnos todos los días.', episodio: 7 },
+    { tipo: 'otro' }),
+
+  en('en-a1-331', 'some', 'algunos / algo de', 'adjetivo', 'some',
+    [c('some bread', 'algo de pan'), c('some friends', 'algunos amigos'), c('some of them', 'algunos de ellos')],
+    {
+      target: 'There are some eggs in the kitchen.',
+      es: 'Hay algunos huevos en la cocina.',
+      motivo: NO_SIRVE('some', 'no aparece suelta en el material: los positivos de la búsqueda eran «sometimes». Es la mitad de la pareja «some / any», que un A1 necesita para pedir cualquier cosa.'),
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-332', 'all', 'todo / todos', 'adjetivo', 'all',
+    [c('all day', 'todo el día'), c('all my friends', 'todos mis amigos'), c('that’s all', 'eso es todo')],
+    {
+      target: 'I work all day on Saturday.',
+      es: 'Trabajo todo el sábado.',
+      motivo: NO_SIRVE('all', 'no aparece en el material: los positivos eran «really» y «small».'),
+    },
+    { tipo: 'otro' }),
+
+  en('en-a1-333', 'only', 'solo / solamente', 'adverbio', 'ON-ly',
+    [c('only two', 'solo dos'), c('only on Sundays', 'solo los domingos'), c('I only want water', 'solo quiero agua')],
+    {
+      target: 'I only work on Saturdays.',
+      es: 'Solo trabajo los sábados.',
+      motivo: NO_SIRVE('only', 'no aparece en ningún turno ni lectura, y sin ella no se puede acotar nada.'),
+    },
     { tipo: 'otro' }),
 ]
 
@@ -2433,7 +2628,22 @@ export const INGLES_A1: VocabLevel = {
       'el bloque 5 lleva 22 ejemplos redactados y el 10 lleva 15, porque el material no trata ' +
       'ni el cuerpo ni las fórmulas de cortesía. Decisión del usuario del 9 ago 2026, con la ' +
       'condición de volver a enlazarlos cuando el corpus crezca. Se encuentran todos con ' +
-      'grep -n "motivo:" sobre este archivo.',
+      'grep -n "motivo:" sobre este archivo. ' +
+      // ── Tras la auditoría pedagógica, 9 ago 2026 ────────────────────────────
+      'AUDITORÍA PEDAGÓGICA, 9 ago 2026: el nivel pasa de 310 a 333 entradas. Lo que encontró ' +
+      'y se corrigió: (1) el bloque «Números, hora y calendario» no tenía un solo numeral —solo ' +
+      '«number», la palabra— así que se añaden dos unidades, «del uno al diez» (las diez del ' +
+      'corpus, sin un redactado) y «cuántos, cuánto y el mes»; (2) faltaban «go», «month», ' +
+      '«hurt» y «English», las cuatro imprescindibles y las cuatro ahora dentro; (3) diez ' +
+      'ejemplos usaban gramática que A1 no enseña —pasiva en pasado, will, must, primer ' +
+      'condicional— y ocho venían de los textos de lectura, no de lo escrito a mano: cuatro se ' +
+      'cambiaron por otra frase del mismo material y seis van redactadas con el motivo escrito; ' +
+      '(4) «ear», «nose», «leg» y «foot» se enseñaban sobre un perro, un gato, una mesa y un ' +
+      'chunk de transporte, en un bloque de cuerpo humano. «hurt» y «English» entran sabiendo ' +
+      'que van fuera de banda —A2 la primera, ausente de la lista la segunda, como los nombres ' +
+      'de idioma— porque un bloque de salud sin «me duele» y un curso de inglés sin «English» ' +
+      'no se sostienen. La cobertura baja al 75 %: es el precio de escribir los temas que el ' +
+      'material no trata, y está contado, no disimulado.',
   },
   bloques: [
     {
@@ -2446,7 +2656,7 @@ export const INGLES_A1: VocabLevel = {
       id: 'numeros-hora-y-calendario',
       nombre: 'Números, hora y calendario',
       icono: '🕘',
-      entradas: [...b2unidad1, ...b2unidad2, ...b2unidad3],
+      entradas: [...b2unidad1, ...b2unidad2, ...b2unidad3, ...b2unidad4, ...b2unidad5],
     },
     {
       id: 'casa-y-objetos',
