@@ -390,6 +390,47 @@ function etiquetasTextarea(source) {
   return tags
 }
 
+/* ── El curso construye UN ensayo, no seis ejercicios sueltos ────────────────────────
+ *
+ * `introduction-data.ts` usaba NUEVE enunciados que no existían en ningún otro módulo:
+ * toda la familia de discusión y cuatro de cinco de opinión. Escribías la introducción de
+ * «team sports» y en Body 1 te encontrabas «museums». «Build the essay · Step 1 a 6» no
+ * construía el mismo ensayo en 9 de 25 casos, y las rutas por tipo tenían que avisarlo.
+ *
+ * Tres de los cuatro de opinión eran además el MISMO enunciado mal copiado, con la
+ * instrucción cambiada: «To what extent» donde el resto del curso dice «Do you agree», que
+ * es justamente la diferencia que enseña la fila «Scope». Y la introducción de acceso
+ * universitario defendía lo contrario que su propio Body 2.
+ *
+ * Esta comprobación exige que cada enunciado de la introducción exista en los otros cuatro
+ * módulos. Es la que impide que vuelva a pasar.
+ */
+const cadena = [
+  ['analisis', lessons],
+  ['body-1', bodyOne.BODY_ONE_LESSONS ?? []],
+  ['body-2', bodyTwo.BODY_TWO_LESSONS ?? []],
+  ['conclusion', conclusion.CONCLUSION_LESSONS ?? []],
+]
+const normalizar = (value) => value.trim().replace(/\s+/gu, ' ')
+
+for (const tipo of introduction.ESSAY_TYPES ?? []) {
+  for (const ejemplo of tipo.examples) {
+    const enunciado = normalizar(ejemplo.prompt)
+    const faltan = cadena
+      .filter(([, lista]) => {
+        const leccion = lista.find((item) => item.id === tipo.id)
+        return !leccion?.examples.some((otro) => normalizar(otro.prompt) === enunciado)
+      })
+      .map(([nombre]) => nombre)
+    if (faltan.length) {
+      failures.push(
+        `introduccion/${tipo.id}/${ejemplo.title}: su enunciado no existe en ${faltan.join(', ')}. ` +
+        'El alumno escribiría la introducción de un enunciado y el cuerpo de otro.',
+      )
+    }
+  }
+}
+
 /* ── Tipo de ensayo: la escalera, las pistas que delatan y el feedback por opción ─────
  *
  * Los tres defectos que se midieron en esta unidad no se ven leyendo el fichero, y por eso
@@ -546,5 +587,6 @@ if (failures.length) {
   console.log(`Motor de análisis: ${totalDrills} preguntas, ${usoDistractor.size} distractores distintos, ${secuencias.size} secuencias de letras, un mensaje por opción.`)
   const cortos = Math.min(...prompts.map((item) => item.modelWords))
   console.log(`Tarea Completa: ${prompts.length} enunciados en ${EXPECTED_TYPES.length} familias, ensayo modelo de 4 párrafos, el más corto de ${cortos} palabras.`)
+  console.log(`Cadena del curso: los ${(introduction.ESSAY_TYPES ?? []).reduce((n, t) => n + t.examples.length, 0)} enunciados de la introducción existen en análisis, Body 1, Body 2 y conclusión.`)
   console.log(`Tipo de ensayo: ${typeDrills.length} enunciados (posiciones ${posiciones.join(',')}), ${misreadCases.length} ensayos mal leídos, ninguna pista delata y ninguna promesa de banda.`)
 }

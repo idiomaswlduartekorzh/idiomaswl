@@ -46,7 +46,21 @@ const securityHeaders = [
     value: [
       "default-src 'self'",
       // GTM + GA4 + Meta Pixel script sources
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://ssl.google-analytics.com https://connect.facebook.net",
+      //
+      // La última entrada lleva RUTA COMPLETA a propósito. Un tag de Meta publicado en el
+      // contenedor de GTM carga su «CAPI param builder» desde unpkg.com, que es el CDN
+      // público de npm: autorizar el host entero permitiría a cualquier paquete que exista o
+      // llegue a existir en npm ejecutar código en todas las páginas del sitio. Con la ruta,
+      // el navegador solo deja pasar ese fichero.
+      //
+      // Lo correcto de verdad sigue siendo pausar ese tag en GTM —el script solo enriquece
+      // la cookie `_fbc` y no hace nada sin CAPI del lado servidor—, pero el contenedor vive
+      // fuera del repositorio. Si algún día se pausa, esta línea sobra y se borra.
+      //
+      // Nota honesta sobre lo que esto protege: si unpkg responde con una redirección, el
+      // navegador deja de comparar la ruta y solo mira el host. Así que esto no es una
+      // garantía, es reducir mucho la superficie frente a poner `https://unpkg.com` a secas.
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://ssl.google-analytics.com https://connect.facebook.net https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js",
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       "font-src 'self' https://fonts.gstatic.com data:",
       // Supabase project URL for storage, auth and realtime + GA4 + Meta Pixel

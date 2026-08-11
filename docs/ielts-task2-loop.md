@@ -129,16 +129,39 @@ Guardián: familias completas, 4 párrafos por modelo, mínimo de 250 palabras, 
 enunciado siga existiendo en `body-1`. Playwright: 8 tests, incluido que el reloj pausa y
 reanuda de verdad.
 
-### HALLAZGO ABIERTO — la introducción enseña sobre otros enunciados
+### La cadena del curso — CERRADA (era el hallazgo abierto)
 
-`introduction-data.ts` usa **9 enunciados que no existen en ningún otro módulo**: toda la
-familia de discusión y cuatro de cinco de opinión. Escribes la introducción de «team sports»
-y en Body 1 te encuentras «museums». «Build the essay · Step 1 a 6» no construye el mismo
-ensayo en 9 de 25 casos.
+`introduction-data.ts` usaba **9 enunciados que no existían en ningún otro módulo**: toda la
+familia de discusión y cuatro de cinco de opinión. Escribías la introducción de «team sports»
+y en Body 1 te encontrabas «museums».
 
-No lo he tocado: alinearlo es reescribir 9 introducciones aprobadas, y esa es una decisión de
-contenido, no una corrección. Mientras tanto, `task2-prompt-bank.ts` escribe esas 9
-introducciones por su cuenta para que los 25 modelos estén completos.
+**Al mirarlo de cerca era peor que "nueve temas distintos".** Tres de los cuatro de opinión
+eran **el mismo enunciado mal copiado, con la instrucción cambiada**:
+
+| | La introducción decía | El resto del curso dice |
+|---|---|---|
+| University access | «To what extent do you agree?» | «**Do you agree or disagree?**» |
+| Advertising | «prohibited… Do you agree?» | «**banned… To what extent**» |
+| Remote work | «for employees **and employers**» | «for employees» |
+
+Cambiar «to what extent» por «do you agree» cambia **el margen que deja la instrucción**, que
+es justo lo que enseña la fila «Scope» del método. La lección se contradecía a sí misma.
+
+Y una peor todavía: la introducción de **University access defendía lo contrario que su propio
+Body 2**. La tesis decía «only partly support universal free tuition because targeted
+assistance is fairer»; el Body 2 del curso rebate la objeción de financiación y **mantiene** el
+apoyo al acceso gratuito. El alumno escribía una tesis y el cuerpo argumentaba la contraria.
+
+**El criterio.** El enunciado canónico es el que comparten `analisis-pregunta`, `body-1`,
+`body-2`, `conclusion` y el banco de 25 —cinco fuentes de acuerdo contra una—, así que la
+introducción se adapta. Las nueve se reescribieron sobre el enunciado canónico, y cada tesis
+prepara lo que su Body 1 y su Body 2 argumentan de verdad.
+
+Resultado: **0 huérfanas de 25**, y las cinco rutas por tipo hilan un solo enunciado de
+principio a fin (discussion pasó de 3/5 a 5/5, así que ya no avisa de nada).
+
+**Compuerta, mordida.** Si alguien vuelve a meter una introducción con enunciado propio, el
+build se para: «el alumno escribiría la introducción de un enunciado y el cuerpo de otro».
 
 ### conclusion — CERRADA
 
@@ -421,8 +444,8 @@ Ahora la página **hila un solo enunciado**, elegido midiendo cuál comparten m�
 
 | Tipo | Cobertura del hilo |
 |---|---|
-| opinion · problem-solution · advantages-disadvantages · direct-questions | **5 de 5 módulos** |
-| discussion | **3 de 5** — y la página lo dice en los dos pasos que se salen |
+| los cinco tipos | **5 de 5 módulos** |
+| ~~discussion~~ | **5 de 5** desde que se cerró la cadena del curso (abajo) |
 
 Y antes de cada párrafo va la cadena: **qué obliga el enunciado → qué decides → qué sale de
 ahí**. Los tres campos ya existían en los módulos (`instruction`, `plan`, `paragraphJob`,
@@ -558,11 +581,7 @@ Las ocho unidades con taller o motor tienen las cuatro casillas en ✅. La noven
 
 ### Lo que queda, y es decisión tuya
 
-1. **La introducción enseña sobre 9 enunciados que no existen en el resto del curso.** Es
-   una decisión de contenido: alinearlo es reescribir 9 introducciones ya aprobadas.
-2. **`tipo-ensayo`** tiene 4 promesas de banda y lógica de acierto sin barajado.
-3. **El idioma de las 8 subhabilidades restantes**: ~25 líneas de español cada una.
-4. **Repaso de comprensión de los nueve motores.** Lo pidió David con la unidad de análisis
+1. **Repaso de comprensión de los nueve motores.** Lo pidió David con la unidad de análisis
    delante: «no entiendo las opciones, y si yo no entiendo probablemente la gente tampoco...
    los motores de cada sección no pueden confundir». El sospechoso conocido es
    `analisis-pregunta`, cuyas opciones salen de `example.instruction` — notas de redacción,
