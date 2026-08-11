@@ -25,11 +25,7 @@ export function getVocabBlock(
   return getVocabBlocks(lang, nivel).find((b) => b.id === slug)
 }
 
-/** Las diez unidades de un bloque van de diez en diez (metodología §4). */
-export function unidadesDe(bloque: VocabBlock, tamano = 10): VocabBlock['entradas'][] {
-  const unidades: VocabBlock['entradas'][] = []
-  for (let i = 0; i < bloque.entradas.length; i += tamano) {
-    unidades.push(bloque.entradas.slice(i, i + tamano))
-  }
-  return unidades
-}
+// El reparto en unidades vive en `unidades.ts`, sin importar ningún nivel, para que lo pueda
+// cargar también el script que factura el audio. Se reexporta para no romper a quien ya lo
+// importaba de aquí.
+export { TAMANO_UNIDAD, unidadesDe } from './unidades'
