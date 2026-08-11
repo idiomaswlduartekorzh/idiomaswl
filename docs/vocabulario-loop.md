@@ -65,8 +65,8 @@ traen las capas de raíz y de acento.
 
 | # | Fase | Estado |
 |---|---|---|
-| 1 | **inglés A1** | ✅ contenido terminado — 310/300, los diez bloques · faltan las auditorías 5.2 y 5.3 |
-| 2 | inglés A2 | pendiente |
+| 1 | **inglés A1** | ✅ TERMINADO — 334 palabras, audio, persistencia, las cuatro auditorías y sus arreglos, en producción |
+| 2 | **inglés A2** | 🔨 en curso — material medido (§3), 0/350 |
 | 3 | inglés B1 | pendiente |
 | 4 | alemán A1 | pendiente |
 | 5 | alemán A2 | pendiente |
@@ -92,7 +92,43 @@ con la anterior sin cerrar.
 > **Este apartado se actualiza al final de cada vuelta.** Es el único estado que el loop
 > necesita para saber por dónde va.
 
-**Fase 1 · inglés A1 — 310 de 300. CONTENIDO TERMINADO.**
+## Fase 2 · inglés A2 — medido antes de escribir
+
+**El material da menos por palabra que en A1.** 159 turnos de escucha + 87 frases de lectura =
+**246 frases para 350 palabras** (0,70 por palabra). A1 tenía 221 para 300 (0,74) y acabó con
+un 75 % de cobertura. Así que A2 va a necesitar redactados desde el principio, y conviene
+decirlo ahora y no al llegar al bloque 7.
+
+Cobertura real por bloque, contando **solo tokens verdaderos** —no subcadenas: `bus` casaba
+con *business* y `station` con *workstations*—, sobre 15 candidatas típicas de cada tema:
+
+| Bloque | Sobreviven | Veredicto |
+|---|---|---|
+| 7 · Casa, barrio y convivencia | 14/15 | la serie va de alquilar y montar un local |
+| 6 · Comer fuera y restaurante | 12/15 | el local es una cafetería |
+| 2 · Trabajo y empleo | 11/15 | |
+| 3 · Compras, dinero y trámites | 11/15 | |
+| 9 · Ocio, planes y tiempo libre | 11/15 | |
+| 8 · Tecnología y comunicación | 10/15 | web, correo, teléfono |
+| 1 · Viajes y transporte | 7/16 | vive en las **lecturas**, no en la serie |
+| 10 · Clima, naturaleza y entorno | 7/15 | |
+| 5 · Describir personas y carácter | **3/15** | ⚠️ |
+| 4 · Salud y consulta médica | **1/15** | 🛑 el bloque 5 de A1, otra vez |
+
+**El orden de trabajo cambia**: se empieza por los bien surtidos —7, 6, 2, 3, 9, 8— y se dejan
+para el final el 1 y el 10, que hay que sacar de la lectura. Los bloques **4 y 5 se deciden
+antes de escribirlos**, no después: con 1 de 15, «Salud y consulta médica» saldría con unas 33
+de 35 frases redactadas. En A1 el usuario decidió escribirlo igual y reenlazarlo cuando el
+corpus crezca; la decisión no se hereda sola, se vuelve a preguntar con el número delante.
+
+Vale la pena anotar por qué pasa: **la serie de A2 es una historia de montar un local**, así
+que cubre casa, comida, dinero, trabajo y web de sobra, y no toca ni la salud ni el retrato de
+personas. Lo mismo que en A1: una ficción cuenta lo que sus personajes hacen, no lo que un
+temario necesita.
+
+---
+
+**Fase 1 · inglés A1 — 334 de 300. TERMINADO Y EN PRODUCCIÓN.**
 
 | Bloque | Palabras | Del material | Estado |
 |---|---:|---:|---|
