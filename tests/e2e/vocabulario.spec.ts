@@ -1,6 +1,7 @@
 import { expect, test, type Locator, type Page } from '@playwright/test'
 import { INGLES_A1 } from '../../src/data/practica/vocabulario/ingles-a1'
 import { ahuecar } from '../../src/data/practica/vocabulario/ejercicios'
+import { unidadesDe } from '../../src/data/practica/vocabulario/unidades'
 import type { VocabBlock, VocabEntry, VocabLevel } from '../../src/data/practica/vocabulario/schema'
 
 /**
@@ -178,15 +179,28 @@ for (const BLOQUE of NIVEL.bloques) {
 
       const tarjeta = page.locator('[data-testid="ejercicio"]')
 
-      // Subir una palabra hasta la caja 5 por el camino corto.
+      /**
+       * Subir una palabra hasta la caja 5.
+       *
+       * El tope se calcula, no se escribe a mano. Estaba fijado en 40 y funcionó mientras
+       * todas las unidades midieron diez; el día que tres bloques pasaron a 31 entradas y el
+       * reparto dio unidades de once, la primera palabra necesitaba 44 pasos y el bucle salía
+       * antes de llegar a la caja 5. El test fallaba por su propia constante, no por el motor.
+       *
+       * El motor va rotando por la palabra de caja más baja, así que hasta que una llega a la
+       * caja 5 pasan, como mucho, cuatro rondas completas de la unidad.
+       */
+      const tope = unidadesDe(BLOQUE)[0].length * 4 + 6
       let entrada = porLemma.get((await tarjeta.getAttribute('data-lemma'))!)!
-      for (let paso = 0; paso < 40; paso += 1) {
+      let llego = false
+      for (let paso = 0; paso < tope; paso += 1) {
         const caja = Number(await tarjeta.getAttribute('data-caja'))
         entrada = porLemma.get((await tarjeta.getAttribute('data-lemma'))!)!
-        if (caja === 5) break
+        if (caja === 5) { llego = true; break }
         await responderBien(tarjeta, entrada, caja)
         await tarjeta.getByRole('button', { name: /^(Siguiente|Reintentar)$/ }).click()
       }
+      expect(llego, `no se alcanzó la caja 5 en ${tope} pasos`).toBe(true)
 
       // Ataque: una frase en español que contiene la palabra inglesa.
       await tarjeta.locator('textarea').fill(`Yo uso ${entrada.lemma} todos los dias`)
@@ -195,13 +209,54 @@ for (const BLOQUE of NIVEL.bloques) {
       await expect(tarjeta.getByText(/está en español/)).toBeVisible()
     })
 
+    /**
+     * Salir o recargar no puede borrar el trabajo.
+     *
+     * Era el motivo de abandono más caro que encontró la auditoría de usuario: una unidad son
+     * cincuenta ejercicios y media hora, y quien quería volver a mirar una ficha tenía dos
+     * salidas —fallar a propósito, o pulsar «Salir» y perderlo todo sin aviso—.
+     */
+    test('el progreso sobrevive a recargar la página', async ({ page }) => {
+      await entrarEnLaUnidad(page, BLOQUE)
+      const tarjeta = page.locator('[data-testid="ejercicio"]')
+
+      // Subir tres palabras de peldaño, para que haya algo que perder.
+      const subidas: string[] = []
+      for (let paso = 0; paso < 6 && subidas.length < 3; paso += 1) {
+        const caja = Number(await tarjeta.getAttribute('data-caja'))
+        const lemma = (await tarjeta.getAttribute('data-lemma'))!
+        await responderBien(tarjeta, porLemma.get(lemma)!, caja)
+        await expect(tarjeta.getByText(VEREDICTO_BIEN)).toBeVisible()
+        await tarjeta.getByRole('button', { name: 'Siguiente' }).click()
+        if (!subidas.includes(lemma)) subidas.push(lemma)
+      }
+      expect(subidas.length, 'no se logró subir ninguna palabra').toBeGreaterThan(0)
+
+      await page.reload()
+
+      // La lista de unidades tiene que reconocer que hay algo empezado.
+      await expect(page.getByRole('button', { name: /Retomar esta unidad/ }).first()).toBeVisible()
+      await expect(page.getByText(/a medias|dominada/).first()).toBeVisible()
+
+      // Y al volver a entrar, ninguna de las subidas está de nuevo en la caja 1.
+      await page.getByRole('button', { name: /Retomar esta unidad/ }).first().click()
+      await expect(page.locator('[data-testid="ejercicio"]')).toBeVisible()
+      const cajaAhora = Number(await tarjeta.getAttribute('data-caja'))
+      const lemmaAhora = (await tarjeta.getAttribute('data-lemma'))!
+      if (subidas.includes(lemmaAhora)) {
+        expect(cajaAhora, `«${lemmaAhora}» volvió a la caja 1 tras recargar`).toBeGreaterThan(1)
+      }
+    })
+
     test('la escalera entera: cinco cajas, ortografía, sin callejones, y termina en el cierre', async ({ page }) => {
       test.slow()
 
       // Si ninguna entrada de la unidad trae un chunk de tres palabras, el ataque de copiar el
       // chunk no se puede montar y la salida que el motor le ofrece al estudiante tampoco
       // existe. Es un defecto del bloque, no una excusa para saltarse el test.
-      const conChunk = BLOQUE.entradas.slice(0, 10).filter((e) => chunkLargo(e))
+      // La primera unidad, tal y como la reparte el motor. Aquí había otro `slice(0, 10)`
+      // escrito a mano: la quinta copia del mismo troceado en este repositorio.
+      const conChunk = unidadesDe(BLOQUE)[0].filter((e) => chunkLargo(e))
       expect(
         conChunk.length,
         `la primera unidad de «${BLOQUE.nombre}» no tiene ni un chunk de tres palabras: ` +

@@ -4,6 +4,9 @@ import { useMemo, useState } from 'react'
 import type { Colocacion, VocabBlock, VocabEntry, VocabLevel } from '@/data/practica/vocabulario/schema'
 import { opcionesDe } from '@/data/practica/vocabulario/opciones'
 import { audioDe, type CorteAudio } from '@/data/practica/vocabulario/audio'
+import { resumen } from '@/data/practica/vocabulario/progreso'
+import { useVocabProgress } from './useVocabProgress'
+import { unidadesDe } from '@/data/practica/vocabulario/unidades'
 import {
   ahuecar,
   corregirDictado,
@@ -31,8 +34,10 @@ import {
  *
  * Por eso «dominada» deja de significar «volteó una tarjeta».
  *
- * La persistencia entre sesiones es la Fase 2 (Supabase + localStorage); aquí el progreso
- * vive en memoria, que es lo que hace falta para ver el método funcionando.
+ * El progreso se guarda en el navegador (`useVocabProgress`). Sin cuenta no viaja de un
+ * dispositivo a otro y la caja 5 sigue llegando el mismo día; con cuenta se sincronizará
+ * contra Supabase y el repaso se repartirá a lo largo de mes y medio, que es lo que promete
+ * la metodología.
  */
 
 const COLOR = '#e11d48'
@@ -244,15 +249,23 @@ function Ficha({ entrada, locale }: { entrada: VocabEntry; locale: string }) {
 function Sesion({
   entradas,
   locale,
+  cajas,
+  guardar,
   onSalir,
 }: {
   entradas: VocabEntry[]
   locale: string
+  /**
+   * El progreso llega desde arriba, no se crea aquí.
+   *
+   * Vive en el padre porque la pantalla de unidades también lo necesita para decir por dónde
+   * vas. Con una copia en cada sitio, salir de una sesión dejaría la lista de unidades
+   * pintando lo de antes hasta recargar.
+   */
+  cajas: Record<string, number>
+  guardar: (siguientes: Record<string, number>) => void
   onSalir: () => void
 }) {
-  const [cajas, setCajas] = useState<Record<string, number>>(() =>
-    Object.fromEntries(entradas.map((e) => [e.id, 1])),
-  )
   const [respuesta, setRespuesta] = useState('')
   const [veredicto, setVeredicto] = useState<'acierto' | 'fallo' | null>(null)
   const [detalle, setDetalle] = useState<string[]>([])
@@ -314,10 +327,10 @@ function Sesion({
   }
 
   function siguiente() {
-    setCajas((prev) => ({
-      ...prev,
-      [actual.id]: veredicto === 'acierto' ? (prev[actual.id] ?? 1) + 1 : 1,
-    }))
+    guardar({
+      ...cajas,
+      [actual.id]: veredicto === 'acierto' ? (cajas[actual.id] ?? 1) + 1 : 1,
+    })
     setRespuesta('')
     setVeredicto(null)
     setDetalle([])
@@ -740,12 +753,18 @@ function CierreDeUnidad({ entradas, locale, onSalir }: { entradas: VocabEntry[];
 
 export default function VocabularyJourney({ bloque, nivel, idiomaLabel, nivelLabel, locale }: Props) {
   const [unidadEnEstudio, setUnidadEnEstudio] = useState<number | null>(null)
+  const { cajas, guardar, olvidar, listo } = useVocabProgress(nivel.lang, nivel.nivel, bloque.id, bloque.entradas)
 
-  const unidades = useMemo(() => {
-    const out: VocabEntry[][] = []
-    for (let i = 0; i < bloque.entradas.length; i += 10) out.push(bloque.entradas.slice(i, i + 10))
-    return out
-  }, [bloque])
+  /**
+   * El reparto sale de `unidadesDe`, no de un troceado escrito aquí.
+   *
+   * Aquí había una cuarta copia de «de diez en diez» —después de la del registro y la del
+   * script de audio— y era la que de verdad pintaba la pantalla. Por eso arreglar el reparto
+   * en `unidades.ts` no cambió nada visible: los bloques de 31 entradas seguían mostrando una
+   * cuarta unidad con una sola palabra. Es el mismo patrón que el barajado dentro del JSX, la
+   * cuarta vez que aparece en este motor.
+   */
+  const unidades = useMemo(() => unidadesDe(bloque), [bloque])
 
   const delCorpus = bloque.entradas.filter((e) => e.ejemplo.fuente.tipo === 'corpus').length
 
@@ -755,7 +774,13 @@ export default function VocabularyJourney({ bloque, nivel, idiomaLabel, nivelLab
         <h2 style={{ margin: 0, fontSize: '1.1rem' }}>
           Unidad {unidadEnEstudio + 1} · {unidades[unidadEnEstudio].length} palabras
         </h2>
-        <Sesion entradas={unidades[unidadEnEstudio]} locale={locale} onSalir={() => setUnidadEnEstudio(null)} />
+        <Sesion
+          entradas={unidades[unidadEnEstudio]}
+          locale={locale}
+          cajas={cajas}
+          guardar={guardar}
+          onSalir={() => setUnidadEnEstudio(null)}
+        />
       </section>
     )
   }
@@ -802,8 +827,25 @@ export default function VocabularyJourney({ bloque, nivel, idiomaLabel, nivelLab
             <span style={{ fontFamily: 'var(--mono)', fontSize: '0.74rem', color: 'var(--muted)' }}>
               {unidad.length} palabras · un día de estudio
             </span>
+            {/*
+              Lo que se guardó, dicho antes de entrar.
+              `listo` evita prometer «retomas» en el primer render, cuando todavía no se ha
+              leído el navegador: enseñar «0 dominadas» y corregirlo un instante después es
+              peor que no decir nada.
+            */}
+            {listo && (() => {
+              const r = resumen(cajas, unidad)
+              if (!r.hayQueRetomar) return null
+              return (
+                <span style={{ fontFamily: 'var(--mono)', fontSize: '0.74rem', color: COLOR }}>
+                  {r.dominadas > 0 && `${r.dominadas} dominada${r.dominadas === 1 ? '' : 's'}`}
+                  {r.dominadas > 0 && r.empezadas > 0 && ' · '}
+                  {r.empezadas > 0 && `${r.empezadas} a medias`}
+                </span>
+              )
+            })()}
             <button onClick={() => setUnidadEnEstudio(i)} style={{ ...botonPrimario, marginLeft: 'auto' }}>
-              Estudiar esta unidad →
+              {listo && resumen(cajas, unidad).hayQueRetomar ? 'Retomar esta unidad →' : 'Estudiar esta unidad →'}
             </button>
           </div>
           <div style={{ display: 'grid', gap: '0.7rem', gridTemplateColumns: 'repeat(auto-fill, minmax(268px, 1fr))' }}>
@@ -837,6 +879,30 @@ export default function VocabularyJourney({ bloque, nivel, idiomaLabel, nivelLab
           <span style={{ fontFamily: 'var(--mono)' }}> ✎ redactado </span>
           son palabras que el nivel necesita y que las lecciones todavía no dicen.
         </p>
+        {/*
+          Dónde se guarda y cómo se borra, dicho sin rodeos.
+          Guardar en el navegador y no decirlo tiene dos maneras de salir mal: quien estudia
+          en el locutorio cree que su progreso le sigue, y quien quiere repasar desde cero no
+          encuentra cómo. Las dos se arreglan con este párrafo y un botón.
+        */}
+        {listo && resumen(cajas, bloque.entradas).hayQueRetomar && (
+          <p style={{ margin: 0 }}>
+            Tu avance se guarda <strong>en este navegador</strong>, así que sobrevive a cerrar la
+            pestaña pero no te sigue a otro dispositivo. Cuando haya cuentas, sí.{' '}
+            <button
+              onClick={() => {
+                if (confirm('Se borra tu avance de este bloque y todas las palabras vuelven a la caja 1. ¿Seguimos?')) olvidar()
+              }}
+              style={{
+                appearance: 'none', border: 'none', background: 'none', padding: 0,
+                font: 'inherit', color: COLOR, textDecoration: 'underline', cursor: 'pointer',
+              }}
+            >
+              Empezar este bloque de cero
+            </button>
+            .
+          </p>
+        )}
       </footer>
     </section>
   )
