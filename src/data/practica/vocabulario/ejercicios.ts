@@ -49,6 +49,68 @@ const IRREGULARES: Record<string, string[]> = {
   shelf: ['shelves'],
   leaf: ['leaves'],
   person: ['people'],
+  knife: ['knives'],
+
+  // Verbos irregulares de A1 y A2. Sin esto, el estudiante que escribe el pasado —que es
+  // justo lo que el nivel A2 le está enseñando a hacer— es suspendido por escribirlo bien.
+  be: ['am', 'is', 'are', 'was', 'were', 'been'],
+  begin: ['began', 'begun'],
+  break: ['broke', 'broken'],
+  bring: ['brought'],
+  buy: ['bought'],
+  catch: ['caught'],
+  choose: ['chose', 'chosen'],
+  come: ['came'],
+  cost: ['cost'],
+  cut: ['cut'],
+  do: ['does', 'did', 'done'],
+  draw: ['drew', 'drawn'],
+  drink: ['drank', 'drunk'],
+  drive: ['drove', 'driven'],
+  eat: ['ate', 'eaten'],
+  fall: ['fell', 'fallen'],
+  feel: ['felt'],
+  find: ['found'],
+  forget: ['forgot', 'forgotten'],
+  get: ['got', 'gotten'],
+  give: ['gave', 'given'],
+  go: ['goes', 'went', 'gone'],
+  grow: ['grew', 'grown'],
+  have: ['has', 'had'],
+  hear: ['heard'],
+  hold: ['held'],
+  hurt: ['hurt'],
+  keep: ['kept'],
+  know: ['knew', 'known'],
+  learn: ['learnt'],
+  leave: ['left'],
+  lend: ['lent'],
+  lose: ['lost'],
+  make: ['made'],
+  mean: ['meant'],
+  meet: ['met'],
+  pay: ['paid'],
+  put: ['put'],
+  read: ['read'],
+  run: ['ran'],
+  say: ['said'],
+  see: ['saw', 'seen'],
+  sell: ['sold'],
+  send: ['sent'],
+  sing: ['sang', 'sung'],
+  sit: ['sat'],
+  sleep: ['slept'],
+  speak: ['spoke', 'spoken'],
+  spend: ['spent'],
+  stand: ['stood'],
+  take: ['took', 'taken'],
+  teach: ['taught'],
+  tell: ['told'],
+  think: ['thought'],
+  understand: ['understood'],
+  wear: ['wore', 'worn'],
+  win: ['won'],
+  write: ['wrote', 'written'],
 }
 
 /**
@@ -79,8 +141,17 @@ export function usaProducido(texto: string, lemma: string): boolean {
   const irr = (IRREGULARES[lemma.toLowerCase()] ?? []).map(limpio)
   const formas = new Set([...DESINENCIAS.map((s) => limpio(l + s)), ...irr])
   // `y → ies` (city → cities) y la doble consonante (stop → stopping) no salen de concatenar.
-  if (l.endsWith('y')) formas.add(limpio(`${l.slice(0, -1)}ies`))
+  // `reply → replied` y `busy → busier` faltaban al lado de `city → cities`, y con ellos se
+  // caía media conjugación de los verbos en -y.
+  if (l.endsWith('y')) for (const s of ['ies', 'ied', 'ier', 'iest']) formas.add(limpio(l.slice(0, -1) + s))
   if (l.endsWith('e')) formas.add(limpio(`${l.slice(0, -1)}ing`))
+  // La doble consonante estaba en el comentario y no en el código: `stopped`, `dropped`,
+  // `planning` y `cancelled` se rechazaban aunque son la misma palabra bien escrita. La
+  // puerta lo destapó al no encontrar salida en `drop` y `cancel` — el mismo callejón que
+  // la caja 5 ya tuvo con las colocaciones, pero causado por el juez, no por la ficha.
+  if (/[^aeiou][aeiou][bdgklmnprtvz]$/.test(l)) {
+    for (const s of ['ed', 'ing', 'er', 'est']) formas.add(limpio(l + l.slice(-1) + s))
+  }
   return palabras(texto).some((p) => formas.has(limpio(p)))
 }
 
