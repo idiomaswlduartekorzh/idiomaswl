@@ -6,6 +6,23 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 
 const GTM_ID = 'GTM-57NXLPZV';
 
+/**
+ * GTM no se carga en las vistas previa.
+ *
+ * Iba sin ninguna condición, así que cada despliegue de Vercel —uno por cada push, y hay
+ * decenas— cargaba el contenedor de producción y mandaba datos a GA4 y al píxel de Meta. La
+ * diagnóstica de GTM lo destapó: la lista de «dominios detectados» son todos
+ * `idiomaswl-<hash>-…vercel.app`. Eso ensucia las conversiones con tráfico de pruebas, el mío
+ * incluido.
+ *
+ * La condición está escrita al revés a propósito: **se carga salvo que sepamos que es una
+ * preview**. Si mañana esto se despliega en otro sitio y `VERCEL_ENV` no existe, el tag sigue
+ * funcionando. Quedarse sin analítica en producción por una variable de entorno ausente sería
+ * mucho peor que un poco de ruido de preview.
+ */
+const ENTORNO = process.env.VERCEL_ENV;
+const CARGAR_GTM = ENTORNO !== 'preview' && ENTORNO !== 'development';
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -97,28 +114,32 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col">
         {/* Google Tag Manager (noscript) — immediately after <body> open */}
-        <noscript>
-          <iframe
-            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
-            height="0"
-            width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
-          />
-        </noscript>
+        {CARGAR_GTM && (
+          <noscript>
+            <iframe
+              src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+              height="0"
+              width="0"
+              style={{ display: 'none', visibility: 'hidden' }}
+            />
+          </noscript>
+        )}
         <ThemeProvider>{children}</ThemeProvider>
 
         {/* Google Tag Manager — afterInteractive: loads once the page is interactive */}
-        <Script
-          id="gtm-script"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        {CARGAR_GTM && (
+          <Script
+            id="gtm-script"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','${GTM_ID}');`,
-          }}
-        />
+            }}
+          />
+        )}
       </body>
     </html>
   );

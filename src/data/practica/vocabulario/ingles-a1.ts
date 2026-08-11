@@ -1613,8 +1613,8 @@ const b5unidad1: VocabEntry[] = [
   en('en-a1-224', 'body', 'cuerpo', 'sustantivo', 'BO-dy',
     [c('my whole body', 'todo el cuerpo'), c('parts of the body', 'partes del cuerpo'), c('a strong body', 'un cuerpo fuerte')],
     {
-      target: 'My body is tired after work.',
-      es: 'Tengo el cuerpo cansado después del trabajo.',
+      target: 'A body has got two arms and two legs.',
+      es: 'Un cuerpo tiene dos brazos y dos piernas.',
       motivo: SIN_TEMA('body', 'Es la palabra que da nombre a la unidad.'),
     },
     { tipo: 'sustantivo' }),
@@ -1622,8 +1622,8 @@ const b5unidad1: VocabEntry[] = [
   en('en-a1-225', 'head', 'cabeza', 'sustantivo', 'head',
     [c('from head to foot', 'de la cabeza a los pies'), c('a hat on your head', 'un sombrero en la cabeza'), c('my head is cold', 'tengo la cabeza fría')],
     {
-      target: 'My head is cold. Where is my hat?',
-      es: 'Tengo frío en la cabeza. ¿Dónde está mi sombrero?',
+      target: 'He puts the hat on his head.',
+      es: 'Se pone el sombrero en la cabeza.',
       motivo: SIN_TEMA('head', 'Sin ella no se puede señalar nada por encima del cuello.'),
     },
     { tipo: 'sustantivo' }),
@@ -1649,8 +1649,8 @@ const b5unidad1: VocabEntry[] = [
   en('en-a1-228', 'ear', 'oreja / oído', 'sustantivo', 'ear',
     [c('small ears', 'orejas pequeñas'), c('in one ear', 'en un oído'), c('the dog’s ears', 'las orejas del perro')],
     {
-      target: 'My ears are cold in November.',
-      es: 'En noviembre tengo las orejas frías.',
+      target: 'She has got small ears and short hair.',
+      es: 'Tiene las orejas pequeñas y el pelo corto.',
       motivo: SIN_TEMA('ear', 'Va con «hear», que sí está en el material.'),
     },
     { tipo: 'sustantivo' }),
@@ -1658,8 +1658,8 @@ const b5unidad1: VocabEntry[] = [
   en('en-a1-229', 'nose', 'nariz', 'sustantivo', 'nose',
     [c('a black nose', 'una nariz negra'), c('a cold nose', 'la nariz fría'), c('under your nose', 'delante de tus narices')],
     {
-      target: 'My nose is cold. I want a scarf.',
-      es: 'Tengo la nariz fría. Quiero una bufanda.',
+      target: 'Your nose is red today.',
+      es: 'Hoy tienes la nariz roja.',
       motivo: SIN_TEMA('nose', 'Va con «smell», que sí está en el material.'),
     },
     { tipo: 'sustantivo' }),
@@ -1690,8 +1690,8 @@ const b5unidad1: VocabEntry[] = [
   en('en-a1-233', 'arm', 'brazo', 'sustantivo', 'arm',
     [c('tired arms', 'brazos cansados'), c('under your arm', 'debajo del brazo'), c('long arms', 'brazos largos')],
     {
-      target: 'My arms are tired after eight hours.',
-      es: 'Tengo los brazos cansados después de ocho horas.',
+      target: 'She has got long arms.',
+      es: 'Tiene los brazos largos.',
       motivo: SIN_TEMA('arm', 'El buscador la daba por presente y era «warm» del episodio 14.'),
     },
     { tipo: 'sustantivo' }),
@@ -1703,8 +1703,8 @@ const b5unidad2: VocabEntry[] = [
   en('en-a1-234', 'leg', 'pierna / pata', 'sustantivo', 'leg',
     [c('four legs', 'cuatro patas'), c('my legs are tired', 'tengo las piernas cansadas'), c('long legs', 'piernas largas')],
     {
-      target: 'My legs are tired after the park.',
-      es: 'Tengo las piernas cansadas después del parque.',
+      target: 'My legs hurt today.',
+      es: 'Hoy me duelen las piernas.',
       motivo: SIN_TEMA('leg', 'Sirve para el cuerpo y para los muebles, que sí están en el nivel.'),
     },
     { tipo: 'sustantivo' }),
@@ -1712,8 +1712,8 @@ const b5unidad2: VocabEntry[] = [
   en('en-a1-235', 'foot', 'pie', 'sustantivo', 'foot',
     [c('on foot', 'a pie'), c('two feet', 'dos pies'), c('my feet are cold', 'tengo los pies fríos')],
     {
-      target: 'My foot is cold. Where are my shoes?',
-      es: 'Tengo el pie frío. ¿Dónde están mis zapatos?',
+      target: 'This shoe is too small for my foot.',
+      es: 'Este zapato es muy pequeño para mi pie.',
       motivo: SIN_TEMA('foot', 'El buscador la daba por presente y era «football» de los episodios 8 y 16.'),
     },
     { tipo: 'sustantivo' }),
@@ -1721,8 +1721,8 @@ const b5unidad2: VocabEntry[] = [
   en('en-a1-236', 'back', 'espalda', 'sustantivo', 'back',
     [c('my back hurts', 'me duele la espalda'), c('behind my back', 'a mis espaldas'), c('a tired back', 'la espalda cansada')],
     {
-      target: 'My back is tired after the bus.',
-      es: 'Tengo la espalda cansada después del autobús.',
+      target: 'My back hurts. I want a chair.',
+      es: 'Me duele la espalda. Quiero una silla.',
       motivo: SIN_TEMA('back', 'En el material solo aparece como «the back door», que es otra cosa.'),
     },
     { tipo: 'sustantivo' }),
@@ -2255,6 +2255,28 @@ const b10unidad1: VocabEntry[] = [
     },
     { tipo: 'otro' }),
 
+  /**
+   * «excuse me» entra, y el lema es `excuse` a propósito.
+   *
+   * La primera versión lo dejó fuera porque el Oxford 3000 sitúa `excuse` en B2 y «su función
+   * la cubren sorry y please». La auditoría pedagógica lo discutió y tiene razón: `sorry`
+   * sirve para disculparse, no para **abordar a un desconocido**, que es la función de
+   * supervivencia número uno de quien viaja. Como chunk, «excuse me» es A1 en cualquier
+   * programa; la banda B2 la lleva el verbo suelto, que aquí no se enseña.
+   *
+   * El lema es la palabra y no el chunk de dos porque el motor ahueca por token: con «excuse
+   * me» como lema, la caja 4 no encontraría la palabra en su frase y degradaría a la caja 3.
+   * La ficha enseña la fórmula entera en la glosa y en las colocaciones.
+   */
+  en('en-a1-337', 'excuse', 'disculpe (excuse me)', 'expresion', 'ex-CUSE',
+    [c('excuse me, where is…?', 'disculpe, ¿dónde está…?'), c('excuse me, please', 'disculpe, por favor'), c('excuse me, are you Leo?', 'disculpe, ¿es usted Leo?')],
+    {
+      target: 'Excuse me, where is the station?',
+      es: 'Disculpe, ¿dónde está la estación?',
+      motivo: SIN_CORTESIA('excuse', 'Es la fórmula con la que se para a alguien en la calle, y sin ella no se puede preguntar una dirección a un desconocido.'),
+    },
+    { tipo: 'otro' }, 'formal'),
+
   en('en-a1-293', 'sure', 'claro / vale', 'expresion', 'sure',
     [c('sure, no problem', 'claro, sin problema'), c('are you sure?', '¿seguro?'), c('sure, I can help', 'claro, puedo ayudar')],
     {
@@ -2643,7 +2665,15 @@ export const INGLES_A1: VocabLevel = {
       'que van fuera de banda —A2 la primera, ausente de la lista la segunda, como los nombres ' +
       'de idioma— porque un bloque de salud sin «me duele» y un curso de inglés sin «English» ' +
       'no se sostienen. La cobertura baja al 75 %: es el precio de escribir los temas que el ' +
-      'material no trata, y está contado, no disimulado.',
+      'material no trata, y está contado, no disimulado. ' +
+      'Cierre de los dos hallazgos menores, 9 ago 2026: entra «excuse», con la glosa «disculpe ' +
+      '(excuse me)». El Oxford lo sitúa en B2 y la primera versión lo dejó fuera por eso; la ' +
+      'auditoría lo discutió con razón, porque «sorry» sirve para disculparse y no para abordar ' +
+      'a un desconocido, que es la función de supervivencia número uno de quien viaja. Como ' +
+      'chunk, «excuse me» es A1 en cualquier programa: la banda B2 la lleva el verbo suelto, ' +
+      'que aquí no se enseña. Y se rompió el molde de los redactados del bloque de cuerpo: ' +
+      'cinco frases decían «X is tired after Y» y cuatro «X is cold», así que en la caja 4 el ' +
+      'hueco se rellenaba por memoria del patrón. Quedan una de cada.',
   },
   bloques: [
     {
