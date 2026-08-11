@@ -1,5 +1,6 @@
 import type { Lang, Nivel, VocabBlock, VocabLevel } from './schema'
 import { INGLES_A1 } from './ingles-a1'
+import { INGLES_A2 } from './ingles-a2'
 
 /**
  * Registro de los niveles de vocabulario escritos con el esquema nuevo.
@@ -7,7 +8,7 @@ import { INGLES_A1 } from './ingles-a1'
  * Se llena idioma por idioma según el plan de arranque: un nivel no entra aquí hasta que
  * pasa su Puerta 2. Hoy solo está el piloto de inglés A1, con un bloque de los diez.
  */
-const LEVELS: VocabLevel[] = [INGLES_A1]
+const LEVELS: VocabLevel[] = [INGLES_A1, INGLES_A2]
 
 export function getVocabLevel(lang: Lang | string, nivel: Nivel | string): VocabLevel | undefined {
   return LEVELS.find((l) => l.lang === lang && l.nivel === nivel)

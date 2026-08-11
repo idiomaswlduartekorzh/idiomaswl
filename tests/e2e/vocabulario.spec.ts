@@ -1,5 +1,6 @@
 import { expect, test, type Locator, type Page } from '@playwright/test'
 import { INGLES_A1 } from '../../src/data/practica/vocabulario/ingles-a1'
+import { INGLES_A2 } from '../../src/data/practica/vocabulario/ingles-a2'
 import { ahuecar } from '../../src/data/practica/vocabulario/ejercicios'
 import { unidadesDe } from '../../src/data/practica/vocabulario/unidades'
 import type { VocabBlock, VocabEntry, VocabLevel } from '../../src/data/practica/vocabulario/schema'
@@ -22,8 +23,15 @@ import type { VocabBlock, VocabEntry, VocabLevel } from '../../src/data/practica
  * caja 5. Eso solo se ve jugándolo.
  */
 
-const NIVEL: VocabLevel = INGLES_A1
-const rutaDe = (b: VocabBlock) => `/practica/${NIVEL.lang}/${NIVEL.nivel}/vocabulario/${b.id}`
+/**
+ * Todos los niveles escritos, no solo el primero.
+ *
+ * Estaba fijado a `INGLES_A1`, y el §5.4 del documento del loop avisa de que extender el spec
+ * es parte del trabajo de cada fase nueva, no un extra: un nivel puede pasar el validador de
+ * Node entero y aun así tener un bloque sin salida en la caja 5. Eso solo se ve jugándolo.
+ */
+const NIVELES: VocabLevel[] = [INGLES_A1, INGLES_A2]
+const rutaDe = (n: VocabLevel, b: VocabBlock) => `/practica/${n.lang}/${n.nivel}/vocabulario/${b.id}`
 
 /** Botones que son acciones, no respuestas. */
 const ACCIONES = new Set(['Salir', 'Siguiente', 'Reintentar', 'Comprobar', 'Corregir', '🔊 Escuchar'])
@@ -60,8 +68,8 @@ async function responderBien(tarjeta: Locator, entrada: VocabEntry, caja: number
   await tarjeta.getByRole('button', { name: 'Comprobar' }).click()
 }
 
-async function entrarEnLaUnidad(page: Page, bloque: VocabBlock) {
-  await page.goto(rutaDe(bloque))
+async function entrarEnLaUnidad(page: Page, nivel: VocabLevel, bloque: VocabBlock) {
+  await page.goto(rutaDe(nivel, bloque))
   await page.getByRole('button', { name: /Estudiar esta unidad/ }).first().click()
   await expect(page.locator('[data-testid="ejercicio"]')).toBeVisible()
 }
@@ -75,12 +83,13 @@ function chunkLargo(entrada: VocabEntry): string | undefined {
 
 // ─────────────────────────────────────────────────────────────────────────────
 
+for (const NIVEL of NIVELES)
 for (const BLOQUE of NIVEL.bloques) {
   const porLemma = new Map(BLOQUE.entradas.map((e) => [e.lemma, e]))
 
   test.describe(`${NIVEL.lang}/${NIVEL.nivel} · ${BLOQUE.nombre}`, () => {
     test('cada ficha declara de dónde sale su ejemplo y traduce sus chunks', async ({ page }) => {
-      await page.goto(rutaDe(BLOQUE))
+      await page.goto(rutaDe(NIVEL, BLOQUE))
 
       const fichas = page.locator('article')
       await expect(fichas).toHaveCount(BLOQUE.entradas.length)
@@ -110,7 +119,7 @@ for (const BLOQUE of NIVEL.bloques) {
     })
 
     test('fallar en la caja 1 dice el significado, no la palabra, y devuelve a la caja 1', async ({ page }) => {
-      await entrarEnLaUnidad(page, BLOQUE)
+      await entrarEnLaUnidad(page, NIVEL, BLOQUE)
 
       const tarjeta = page.locator('[data-testid="ejercicio"]')
       const lemma = await tarjeta.getAttribute('data-lemma')
@@ -141,7 +150,7 @@ for (const BLOQUE of NIVEL.bloques) {
      * pantalla — exactamente el mismo patrón que el sesgo de la letra B.
      */
     test('en las cajas de producción la palabra no aparece escrita en ninguna parte', async ({ page }) => {
-      await entrarEnLaUnidad(page, BLOQUE)
+      await entrarEnLaUnidad(page, NIVEL, BLOQUE)
 
       const tarjeta = page.locator('[data-testid="ejercicio"]')
 
@@ -175,7 +184,7 @@ for (const BLOQUE of NIVEL.bloques) {
     })
 
     test('la caja 5 no aprueba español ni una palabra que no es', async ({ page }) => {
-      await entrarEnLaUnidad(page, BLOQUE)
+      await entrarEnLaUnidad(page, NIVEL, BLOQUE)
 
       const tarjeta = page.locator('[data-testid="ejercicio"]')
 
@@ -217,7 +226,7 @@ for (const BLOQUE of NIVEL.bloques) {
      * salidas —fallar a propósito, o pulsar «Salir» y perderlo todo sin aviso—.
      */
     test('el progreso sobrevive a recargar la página', async ({ page }) => {
-      await entrarEnLaUnidad(page, BLOQUE)
+      await entrarEnLaUnidad(page, NIVEL, BLOQUE)
       const tarjeta = page.locator('[data-testid="ejercicio"]')
 
       // Subir tres palabras de peldaño, para que haya algo que perder.
@@ -263,7 +272,7 @@ for (const BLOQUE of NIVEL.bloques) {
           `no hay con qué salir de la caja 5`,
       ).toBeGreaterThan(0)
 
-      await entrarEnLaUnidad(page, BLOQUE)
+      await entrarEnLaUnidad(page, NIVEL, BLOQUE)
 
       const tarjeta = page.locator('[data-testid="ejercicio"]')
       const cajasVistas = new Set<string>()

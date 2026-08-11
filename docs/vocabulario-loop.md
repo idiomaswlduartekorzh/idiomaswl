@@ -66,7 +66,7 @@ traen las capas de raíz y de acento.
 | # | Fase | Estado |
 |---|---|---|
 | 1 | **inglés A1** | ✅ TERMINADO — 334 palabras, audio, persistencia, las cuatro auditorías y sus arreglos, en producción |
-| 2 | **inglés A2** | 🔨 en curso — material medido (§3), 0/350 |
+| 2 | **inglés A2** | 🔨 en curso — 35/350, bloque 7 hecho (35 de 35 del material) |
 | 3 | inglés B1 | pendiente |
 | 4 | alemán A1 | pendiente |
 | 5 | alemán A2 | pendiente |
@@ -114,6 +114,13 @@ con *business* y `station` con *workstations*—, sobre 15 candidatas típicas d
 | 10 · Clima, naturaleza y entorno | 7/15 | |
 | 5 · Describir personas y carácter | **3/15** | ⚠️ |
 | 4 · Salud y consulta médica | **1/15** | 🛑 el bloque 5 de A1, otra vez |
+
+**Hecho: bloque 7 · Casa, barrio y convivencia — 35 palabras, 35 del material, cero redactados.**
+Es el segundo bloque de todo el proyecto que no necesita ni una frase inventada, después del de
+rutina en A1, y por la misma razón: el tema es exactamente lo que la historia cuenta. Doce
+candidatas obvias se cayeron por estar ya en A1 —`flat`, `wall`, `floor`, `window`, `door`,
+`kitchen`, `shelf`, `clean`, `paint`, `quiet`, `sign`, `owner`— y el corpus dio sustitutas del
+mismo tema. **Siguiente: bloque 6 · Comer fuera y restaurante (12/15).**
 
 **El orden de trabajo cambia**: se empieza por los bien surtidos —7, 6, 2, 3, 9, 8— y se dejan
 para el final el 1 y el 10, que hay que sacar de la lectura. Los bloques **4 y 5 se deciden
