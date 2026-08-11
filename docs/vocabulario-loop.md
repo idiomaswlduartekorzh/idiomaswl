@@ -66,7 +66,7 @@ traen las capas de raíz y de acento.
 | # | Fase | Estado |
 |---|---|---|
 | 1 | **inglés A1** | ✅ TERMINADO — 334 palabras, audio, persistencia, las cuatro auditorías y sus arreglos, en producción |
-| 2 | **inglés A2** | 🔨 en curso — 35/350, bloque 7 hecho (35 de 35 del material) |
+| 2 | **inglés A2** | ✅ 350/350 escritas, los diez bloques, puerta superada. Falta la revisión del usuario |
 | 3 | inglés B1 | pendiente |
 | 4 | alemán A1 | pendiente |
 | 5 | alemán A2 | pendiente |
@@ -92,46 +92,56 @@ con la anterior sin cerrar.
 > **Este apartado se actualiza al final de cada vuelta.** Es el único estado que el loop
 > necesita para saber por dónde va.
 
-## Fase 2 · inglés A2 — medido antes de escribir
+## Fase 2 · inglés A2 — las 350 escritas, los diez bloques
 
-**El material da menos por palabra que en A1.** 159 turnos de escucha + 87 frases de lectura =
-**246 frases para 350 palabras** (0,70 por palabra). A1 tenía 221 para 300 (0,74) y acabó con
-un 75 % de cobertura. Así que A2 va a necesitar redactados desde el principio, y conviene
-decirlo ahora y no al llegar al bloque 7.
+**Terminado el 11 ago 2026, en una sola tirada, a petición del usuario («hazlo todo»).** La
+puerta pasa con **77 % de cobertura del material** (269 de 350: 125 de escucha, 144 de
+lectura, 81 redactados), reparto de la respuesta correcta A:87 B:87 C:88 D:88, y hueco de
+caja 4 en las 350.
 
-Cobertura real por bloque, contando **solo tokens verdaderos** —no subcadenas: `bus` casaba
-con *business* y `station` con *workstations*—, sobre 15 candidatas típicas de cada tema:
+| Bloque | Del material | Redactados | Nota |
+|---|---:|---:|---|
+| 7 · Casa, barrio y convivencia | 35 | 0 | la serie va de alquilar y montar un local |
+| 6 · Comer fuera y restaurante | 35 | 0 | el local es una cafetería, más la clase de cocina |
+| 2 · Trabajo y empleo | 35 | 0 | sale de **dos lecturas**, no de la serie |
+| 8 · Tecnología y comunicación | 35 | 0 | la reseña, el mapa colaborativo y la audioguía |
+| 9 · Ocio, planes y tiempo libre | 35 | 0 | sábado de artistas + préstamo de libros |
+| 5 · Describir personas y carácter | 35 | 0 | ⚠️ la medición previa decía 3/15 y estaba mal |
+| 3 · Compras, dinero y trámites | 25 | 10 | nadie paga nunca en el nivel |
+| 1 · Viajes y transporte | 16 | 19 | la serie no sale de una manzana |
+| 10 · Clima, naturaleza y entorno | 18 | 17 | hay huerto, no hay paisaje |
+| 4 · Salud y consulta médica | **0** | **35** | 🛑 el bloque 5 de A1, otra vez y peor |
+| | **269** | **81** | **77 %** |
 
-| Bloque | Sobreviven | Veredicto |
-|---|---|---|
-| 7 · Casa, barrio y convivencia | 14/15 | la serie va de alquilar y montar un local |
-| 6 · Comer fuera y restaurante | 12/15 | el local es una cafetería |
-| 2 · Trabajo y empleo | 11/15 | |
-| 3 · Compras, dinero y trámites | 11/15 | |
-| 9 · Ocio, planes y tiempo libre | 11/15 | |
-| 8 · Tecnología y comunicación | 10/15 | web, correo, teléfono |
-| 1 · Viajes y transporte | 7/16 | vive en las **lecturas**, no en la serie |
-| 10 · Clima, naturaleza y entorno | 7/15 | |
-| 5 · Describir personas y carácter | **3/15** | ⚠️ |
-| 4 · Salud y consulta médica | **1/15** | 🛑 el bloque 5 de A1, otra vez |
+### Las tres cosas que enseñó esta fase
 
-**Hecho: bloque 7 · Casa, barrio y convivencia — 35 palabras, 35 del material, cero redactados.**
-Es el segundo bloque de todo el proyecto que no necesita ni una frase inventada, después del de
-rutina en A1, y por la misma razón: el tema es exactamente lo que la historia cuenta. Doce
-candidatas obvias se cayeron por estar ya en A1 —`flat`, `wall`, `floor`, `window`, `door`,
-`kitchen`, `shelf`, `clean`, `paint`, `quiet`, `sign`, `owner`— y el corpus dio sustitutas del
-mismo tema. **Siguiente: bloque 6 · Comer fuera y restaurante (12/15).**
+**1 · Medir con la lista de candidatas equivocada dice que el tema no está.** El bloque 5
+estaba anotado como 3 de 15 y salió con 35 de 35 del material. Las quince candidatas eran
+alto, bajo, simpático, amable, tímido… y ninguna está en la serie — pero la serie **sí**
+describe a la gente: tiene un episodio entero de comparativos (ep05, ep06, ep18) y otro de
+adverbios de modo (ep15). El tema estaba; la lista, no. Antes de dar un bloque por vacío hay
+que mirar **con qué palabras** lo cuenta ese corpus.
 
-**El orden de trabajo cambia**: se empieza por los bien surtidos —7, 6, 2, 3, 9, 8— y se dejan
-para el final el 1 y el 10, que hay que sacar de la lectura. Los bloques **4 y 5 se deciden
-antes de escribirlos**, no después: con 1 de 15, «Salud y consulta médica» saldría con unas 33
-de 35 frases redactadas. En A1 el usuario decidió escribirlo igual y reenlazarlo cuando el
-corpus crezca; la decisión no se hereda sola, se vuelve a preguntar con el número delante.
+**2 · Salud vuelve a faltar, y ya no es casualidad.** A1 sacó 8 de 30 en «Cuerpo y salud»;
+A2 saca **0 de 35** en «Salud y consulta médica». Dos niveles, dos series distintas, el mismo
+agujero. **Una historia no enferma a sus personajes salvo que la enfermedad sea la trama.** Si
+el temario necesita una consulta médica, hay que grabar un episodio de consulta médica: es una
+decisión de guion, no de vocabulario. Queda apuntado para cuando toque ampliar el corpus.
 
-Vale la pena anotar por qué pasa: **la serie de A2 es una historia de montar un local**, así
-que cubre casa, comida, dinero, trabajo y web de sobra, y no toca ni la salud ni el retrato de
-personas. Lo mismo que en A1: una ficción cuenta lo que sus personajes hacen, no lo que un
-temario necesita.
+**3 · El juez suspendía a quien escribía bien.** La puerta no encontró salida en `drop`,
+`cancel`, `reply` ni `spend`, y la causa no estaba en las fichas: `usaProducido` rechazaba
+`dropped`, `cancelled`, `replied` y `spent`. La doble consonante estaba en el comentario y no
+en el código, `y → ied` no estaba en ninguno de los dos, y la tabla de irregulares eran ocho
+sustantivos sin un solo verbo. Arreglado con sesenta verbos irregulares y las dos reglas que
+faltaban — y vale para A1 igual, donde llevaba desde el principio.
+
+### Lo que queda de la fase
+
+1. La **revisión personal del usuario** sobre las 350. Es la que desbloquea el audio.
+2. El **cruce contra el Oxford 3000** (`--lista`), como se hizo en A1.
+3. Las auditorías **5.2 pedagógica** y **5.3 de usuario promedio**. La 5.1 y la 5.4 están en
+   verde.
+4. Quitar el `noindex` de las rutas de bloque cuando el usuario apruebe.
 
 ---
 
@@ -478,4 +488,9 @@ sin leer commits.
 | 9 ago 2026 | inglés A1, bloque 8 | La puerta volvió a parar el bloque por lo mismo, pero por otra causa: el ejemplo de `then` era «And then?», la frase más natural del corpus… y de dos palabras, cuando la caja 5 pide tres. La ficha proponía como modelo algo que el propio motor rechaza. Se cambió el ejemplo, no el umbral. Y sí: la regla estaba escrita desde el bloque 7 y aun así se cayó — por eso la comprueba un script y no la memoria de nadie |
 | 9 ago 2026 | inglés A1, bloque 8 | Primer bloque con **cero redactados**. Salió porque una rutina no vive en un episodio: vive repartida por los veinte. Ningún episodio pasa de tres entradas (10 %) frente al 33 % del bloque 6. Un tema transversal siempre se surtirá mejor que uno concentrado |
 | 9 ago 2026 | inglés A1, bloque 7 | La puerta paró el bloque por un callejón sin salida: la colocación de `sign` era «is there a sign?», que es el ejemplo entero. El estudiante que copiaba lo único que la ficha le enseñaba a decir era suspendido en la caja 5. Es la tercera vez que pasa (`city`, `we are friends`, ahora `sign`): **una colocación nunca puede ser la frase de ejemplo** |
+| 11 ago 2026 | inglés A2, bloque 5 | **Medir con la lista de candidatas equivocada dice que el tema no está.** El bloque estaba anotado como 3 de 15 —alto, bajo, simpático, amable, tímido— y salió con 35 de 35 del material, porque la serie describe a la gente con otras palabras: tiene un episodio de comparativos y otro de adverbios de modo. Antes de dar un bloque por vacío hay que mirar **con qué palabras** lo cuenta ese corpus, no solo si contiene las que uno esperaba |
+| 11 ago 2026 | inglés A2, bloque 4 | Salud vuelve a faltar, y ya no es casualidad: 8 de 30 en A1, **0 de 35** en A2. Dos niveles, dos series distintas, el mismo agujero. Una historia no enferma a sus personajes salvo que la enfermedad sea la trama. Si el temario necesita una consulta médica, eso se decide **al grabar**, no al escribir el vocabulario |
+| 11 ago 2026 | inglés A2, motor | La puerta no encontró salida en `drop`, `cancel`, `reply` ni `spend`, y la causa no estaba en las fichas: `usaProducido` rechazaba `dropped`, `cancelled`, `replied` y `spent`, o sea que suspendía al estudiante por escribir bien el pasado. La doble consonante estaba en el comentario y no en el código; `y → ied` no estaba en ninguno de los dos. **Un comentario que describe una regla no es la regla** |
+| 11 ago 2026 | inglés A2, bloque 9 | Playwright cazó lo que el validador no miraba: `plan` se traducía por «plan», así que al fallar la caja 1 el motor imprimía «Era «plan»», que contesta a otra pregunta. Había nueve así entre los dos niveles (`hospital`, `no`, `audio`, `plan`, `idea`, `taxi`, `hotel`, `metal`, `material`). Ahora lo comprueba el validador sobre las 684, no el navegador sobre la primera de cada unidad |
+| 11 ago 2026 | inglés A2, motor | `sePuedeOir` miraba `window` durante el render: el servidor pintaba la ficha sin botón de audio y el navegador con él, y React tiraba el árbol y lo rehacía en cliente. En A1 no se veía porque ya hay grabación y el botón salía en los dos lados. **Un nivel sin audio destapa lo que un nivel con audio tapaba** |
 | 9 ago 2026 | inglés A1, bloque 6 | La cuota de un episodio y la de una frase se pelean. El ep13 es la única conversación de ropa del nivel y da 10 de 30 (el techo justo), y su frase de los colores enseña cuatro palabras que no salen en ningún otro sitio. Se quedaron con la frase las dos que son ropa; `black` y `white` fueron a redactado. Un tema concentrado en un solo episodio siempre va a costar redactados |

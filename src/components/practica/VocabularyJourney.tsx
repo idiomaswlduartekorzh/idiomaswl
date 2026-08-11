@@ -1,6 +1,6 @@
 'use client'
 
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import type { Colocacion, VocabBlock, VocabEntry, VocabLevel } from '@/data/practica/vocabulario/schema'
 import { opcionesDe } from '@/data/practica/vocabulario/opciones'
 import { audioDe, type CorteAudio } from '@/data/practica/vocabulario/audio'
@@ -124,11 +124,27 @@ function decir(entrada: VocabEntry, que: 'lemma' | 'ejemplo', locale: string): b
   return decirConNavegador(que === 'lemma' ? entrada.lemma : entrada.ejemplo.target, locale)
 }
 
-/** ¿Hay alguna manera de que suene? Grabado o sintetizado, da igual cuál. */
-const sePuedeOir = (entrada: VocabEntry, que: 'lemma' | 'ejemplo') =>
-  Boolean(audioDe(entrada.id, que)) || (typeof window !== 'undefined' && !!window.speechSynthesis)
+/**
+ * ¿Hay alguna manera de que suene? Grabado o sintetizado, da igual cuál.
+ *
+ * `vozNavegador` entra por parámetro y no se mira aquí a propósito. Mirar `window` durante el
+ * render rompía la hidratación en los niveles sin grabar: el servidor pintaba la ficha sin
+ * botón y el navegador con él, y React tiraba el árbol entero y lo rehacía en cliente. En A1
+ * no se veía porque `audioDe` ya devolvía un corte y el botón salía en los dos lados; se
+ * destapó al llegar A2, que todavía no tiene audio. Quien pregunta por la voz del navegador
+ * tiene que hacerlo **después** de montar, con `useVozDelNavegador`.
+ */
+const sePuedeOir = (entrada: VocabEntry, que: 'lemma' | 'ejemplo', vozNavegador: boolean) =>
+  Boolean(audioDe(entrada.id, que)) || vozNavegador
 
 const hayVoz = () => typeof window !== 'undefined' && !!window.speechSynthesis
+
+/** La voz del navegador, preguntada después de montar para que el servidor y el cliente coincidan. */
+function useVozDelNavegador(): boolean {
+  const [hay, setHay] = useState(false)
+  useEffect(() => setHay(hayVoz()), [])
+  return hay
+}
 
 
 // ─── Piezas de presentación ───────────────────────────────────────────────────
@@ -178,6 +194,7 @@ function Fuente({ entrada }: { entrada: VocabEntry }) {
 }
 
 function Ficha({ entrada, locale }: { entrada: VocabEntry; locale: string }) {
+  const vozNavegador = useVozDelNavegador()
   const x = entrada.extra
   return (
     <article
@@ -192,7 +209,7 @@ function Ficha({ entrada, locale }: { entrada: VocabEntry; locale: string }) {
     >
       <header style={{ display: 'flex', alignItems: 'baseline', gap: '0.6rem', flexWrap: 'wrap' }}>
         <h3 style={{ margin: 0, fontSize: '1.22rem', letterSpacing: '-0.01em' }}>{entrada.lemma}</h3>
-        {sePuedeOir(entrada, 'lemma') && (
+        {sePuedeOir(entrada, 'lemma', vozNavegador) && (
           <button
             onClick={() => decir(entrada, 'lemma', locale)}
             aria-label={`Escuchar «${entrada.lemma}»`}

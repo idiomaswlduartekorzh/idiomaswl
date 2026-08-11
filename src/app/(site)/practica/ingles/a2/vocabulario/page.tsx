@@ -11,7 +11,7 @@ export default function Page() {
       <QuizSchema
         name="Vocabulario de Inglés A2 — Ejercicios interactivos"
         url="https://www.idiomaswl.com/practica/ingles/a2/vocabulario"
-        description="Ejercicios de vocabulario de Inglés nivel A2: tarjetas, listas temáticas y práctica activa."
+        description="Vocabulario de Inglés A2: 350 palabras en diez bloques temáticos, con repaso espaciado, dictado y escritura. Los ejemplos salen de las lecciones de escucha y lectura del nivel."
       />
       <Content />
     </>

@@ -249,6 +249,30 @@ for (const archivo of archivos.sort()) {
     }
   }
 
+  /**
+   * 1b · La traducción no puede ser la palabra misma.
+   *
+   * Lo cazó Playwright el 11 ago 2026 en «plan», cuyo `es` era «plan»: al fallar la caja 1 el
+   * motor imprime «✗ Era «plan»», que contesta a otra pregunta —cuál era la palabra— en vez
+   * de a la que se hizo, que era qué significa. Y en la caja 1 el estudiante elige entre
+   * cuatro opciones con la palabra inglesa delante y su propio gemelo entre las cuatro.
+   *
+   * Había nueve así entre A1 y A2 (`hospital`, `no`, `audio`, `plan`, `idea`, `taxi`,
+   * `hotel`, `metal`, `material`) y el navegador solo llegaba a ver la primera de cada
+   * unidad. Esto las ve todas. Con los cognados de verdad no se trata de traducir distinto:
+   * se trata de añadir el matiz que distingue —«taxi (el coche)», «metal (hierro,
+   * aluminio…)»—, que es lo que la ficha tenía que enseñar de todas formas.
+   */
+  for (const e of entradas) {
+    const sinAcentos = (v) => v.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/gu, '').trim()
+    if (e.es && e.lemma && sinAcentos(e.es) === sinAcentos(e.lemma)) {
+      fallo(
+        `${etiqueta}: «${e.lemma}» se traduce por sí misma («${e.es}»). Al fallar, el motor ` +
+          `imprime «Era «${e.es}»», que responde a otra pregunta. Añade el matiz que distingue`,
+      )
+    }
+  }
+
   // 2 · Lemas únicos dentro del idioma, entre niveles
   if (!lemasPorIdioma.has(lang)) lemasPorIdioma.set(lang, new Map())
   const lemas = lemasPorIdioma.get(lang)

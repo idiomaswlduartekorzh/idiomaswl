@@ -863,7 +863,7 @@ const b4unidad3: VocabEntry[] = [
     },
     { tipo: 'sustantivo' }),
 
-  en('en-a1-129', 'sandwich', 'sándwich', 'sustantivo', 'SAND-wich',
+  en('en-a1-129', 'sandwich', 'sándwich / emparedado', 'sustantivo', 'SAND-wich',
     [c('a cheese sandwich', 'un sándwich de queso'), c('make a sandwich', 'hacer un sándwich'), c('a sandwich for later', 'un sándwich para después')],
     {
       target: 'At the end, she orders a sandwich for later.',
@@ -1188,7 +1188,7 @@ const b7unidad1: VocabEntry[] = [
     { target: 'Do you like your job at the café?', es: '¿Te gusta tu trabajo en el café?', episodio: 12 },
     { tipo: 'sustantivo' }),
 
-  en('en-a1-173', 'hospital', 'hospital', 'sustantivo', 'HOS-pi-tal',
+  en('en-a1-173', 'hospital', 'hospital / centro médico', 'sustantivo', 'HOS-pi-tal',
     [c('at the hospital', 'en el hospital'), c('work in a hospital', 'trabajar en un hospital'), c('go to the hospital', 'ir al hospital')],
     { target: 'My mother works at the hospital. She starts at seven.', es: 'Mi madre trabaja en el hospital. Empieza a las siete.', episodio: 7 },
     { tipo: 'sustantivo' }),
@@ -2247,7 +2247,7 @@ const b10unidad1: VocabEntry[] = [
     { target: 'Yes, but we hardly ever play in winter.', es: 'Sí, pero casi nunca jugamos en invierno.', episodio: 8 },
     { tipo: 'otro' }),
 
-  en('en-a1-292', 'no', 'no', 'expresion', 'no',
+  en('en-a1-292', 'no', 'no (respuesta negativa)', 'expresion', 'no',
     [c('no, thanks', 'no, gracias'), c('no, I can’t', 'no, no puedo'), c('no problem', 'no hay problema')],
     {
       target: 'No, thanks. I am not hungry today.',
