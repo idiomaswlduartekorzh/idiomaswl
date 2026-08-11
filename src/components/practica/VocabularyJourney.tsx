@@ -8,7 +8,8 @@ import {
   corregirDictado,
   ejercicioCaja2,
   evaluarFrasePropia,
-  limpio,
+  evaluarHueco,
+  evaluarProduccion,
   MIN_FRASES,
   MIN_PALABRAS_USADAS,
   progresoEscritura,
@@ -210,6 +211,39 @@ function Sesion({
     setChunkUsado(chunk)
   }
 
+  /**
+   * Un solo sitio donde se decide si la respuesta vale, y ninguna comparación suelta.
+   *
+   * Antes cada caja se calificaba con un `limpio(respuesta) === limpio(esperado)` escrito a
+   * mano en su `onKeyDown` y otro en el botón. Eso significaba tres copias de la misma regla
+   * dentro del JSX —justo donde el validador no llega— y por eso la caja 4 podía exigir
+   * `orders` a quien había aprendido `order` sin que ninguna puerta lo notara.
+   */
+  function comprobar() {
+    if (veredicto !== null || respuesta.trim().length === 0) return
+    if (modo === 5) {
+      const r = evaluarFrasePropia(respuesta, actual)
+      calificar(r.ok, r.faltas, r.chunkUsado)
+      return
+    }
+    if (modo === 4 && hueco) {
+      const r = evaluarHueco(respuesta, hueco.forma, actual.lemma)
+      calificar(r.ok, r.nota ? [r.nota] : [])
+      return
+    }
+    const r = evaluarProduccion(respuesta, actual, entradas)
+    // Al fallar la ortografía, se enseña la regla que el motor ya tenía calculada y se
+    // guardaba para sí. Era la corrección más barata de toda la auditoría.
+    const faltas = r.ok
+      ? r.nota
+        ? [r.nota]
+        : []
+      : modo === 2 && caja2.tipo === 'ortografia'
+        ? [`Lo que fallaba en «${caja2.mal}» era la ${caja2.regla}.`]
+        : []
+    calificar(r.ok, faltas)
+  }
+
   function siguiente() {
     setCajas((prev) => ({
       ...prev,
@@ -234,12 +268,23 @@ function Sesion({
     <div style={{ display: 'grid', gap: '1rem' }}>
       {/* Escalera: el estado de las diez de un vistazo */}
       <div style={{ display: 'flex', gap: '0.3rem', flexWrap: 'wrap' }}>
-        {entradas.map((e) => {
+        {entradas.map((e, i) => {
           const c = cajas[e.id] ?? 1
+          // Ninguna palabra se pinta mientras haya que producir una.
+          //
+          // La escalera imprimía `e.lemma` siempre, con la actual marcada en rojo. Es decir:
+          // la caja 3 decía «escríbela sin ayuda» y tenía la respuesta arriba, subrayada.
+          // Las dos cajas de producción no pedían nada, y el motor felicitaba igual. Lo
+          // encontró la auditoría de usuario; ningún script podía verlo, porque el dato
+          // estaba bien y lo que fallaba era la pantalla. Otra vez.
+          //
+          // Se tapan las diez, no solo la actual: el estudiante pasa por todas, así que
+          // esconder únicamente la de turno solo retrasa la filtración un ejercicio.
+          const tapada = modo >= 2
           return (
             <span
               key={e.id}
-              title={`${e.lemma} · caja ${Math.min(c, 5)}`}
+              title={tapada ? `caja ${Math.min(c, 5)}` : `${e.lemma} · caja ${Math.min(c, 5)}`}
               style={{
                 fontSize: '0.68rem',
                 fontFamily: 'var(--mono)',
@@ -250,7 +295,7 @@ function Sesion({
                 color: c > 5 ? COLOR : 'var(--muted)',
               }}
             >
-              {e.lemma} {c > 5 ? '✓' : c}
+              {tapada ? `· ${i + 1} ·` : e.lemma} {c > 5 ? '✓' : c}
             </span>
           )
         })}
@@ -320,7 +365,7 @@ function Sesion({
               disabled={veredicto !== null}
               onChange={(e) => setRespuesta(e.target.value)}
               onKeyDown={(e) => {
-                if (e.key === 'Enter' && !veredicto) calificar(limpio(respuesta) === limpio(actual.lemma))
+                if (e.key === 'Enter') comprobar()
               }}
               placeholder="Escribe la palabra"
               style={campo}
@@ -342,7 +387,7 @@ function Sesion({
               disabled={veredicto !== null}
               onChange={(e) => setRespuesta(e.target.value)}
               onKeyDown={(e) => {
-                if (e.key === 'Enter' && !veredicto) calificar(limpio(respuesta) === limpio(hueco.forma))
+                if (e.key === 'Enter') comprobar()
               }}
               placeholder="La forma que falta"
               style={campo}
@@ -357,7 +402,9 @@ function Sesion({
               Escribe una frase tuya con <strong style={{ color: COLOR }}>{actual.lemma}</strong>.
             </p>
             <p style={{ color: 'var(--muted)', fontSize: '0.84rem', margin: '0 0 0.8rem' }}>
-              Puedes apoyarte en un chunk: {'colocaciones' in actual.extra ? actual.extra.colocaciones[0].chunk : actual.lemma}
+              Puedes arrancar con una de las combinaciones de la ficha —{' '}
+              <em>{'colocaciones' in actual.extra ? actual.extra.colocaciones[0].chunk : actual.lemma}</em>
+              {' '}— y añadirle algo tuyo. Copiarla tal cual no cuenta.
             </p>
             <textarea
               value={respuesta}
@@ -374,14 +421,7 @@ function Sesion({
         <div style={{ marginTop: '0.9rem', display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
           {veredicto === null && modo !== 1 && (
             <button
-              onClick={() => {
-                if (modo === 5) {
-                  const r = evaluarFrasePropia(respuesta, actual)
-                  calificar(r.ok, r.faltas, r.chunkUsado)
-                } else {
-                  calificar(limpio(respuesta) === limpio(esperado))
-                }
-              }}
+              onClick={() => comprobar()}
               disabled={respuesta.trim().length === 0}
               style={{ ...botonPrimario, opacity: respuesta.trim().length === 0 ? 0.45 : 1 }}
             >
@@ -392,9 +432,16 @@ function Sesion({
           {veredicto && (
             <>
               <span style={{ fontWeight: 700, color: veredicto === 'acierto' ? COLOR : 'var(--muted)' }}>
+                {/*
+                  La caja 5 dice «Guardada», no «Dominada».
+                  El motor comprueba que la frase esté en inglés, que use esa palabra y que
+                  sea una frase. No comprueba —ni puede— que la gramática esté bien. Decir
+                  «Dominada» ahí era prometer una corrección que no existe: la auditoría de
+                  usuario entró «I like eat very much» y salió aprobado con honores.
+                */}
                 {veredicto === 'acierto'
                   ? modo === 5
-                    ? '✓ Dominada'
+                    ? '✓ Guardada'
                     : `✓ Sube a la caja ${modo + 1}`
                   : modo === 5
                     ? '✗ Todavía no'
@@ -417,7 +464,7 @@ function Sesion({
             ))}
             {chunkUsado && (
               <p style={{ margin: 0, color: COLOR }}>
-                ✓ Usaste el chunk «{chunkUsado}». Eso es exactamente lo que se busca.
+                ✓ Usaste la combinación «{chunkUsado}». Eso es exactamente lo que se busca.
               </p>
             )}
           </div>
@@ -560,10 +607,23 @@ function EscrituraReforzada({ entradas, onSalir }: { entradas: VocabEntry[]; onS
         })}
       </div>
 
+      {/*
+        Se cuenta lo que se puede contar, y no se promete lo que no.
+        Antes decía «Esto es lo que un examinador llama riqueza lexical» ante cinco frases
+        que el motor no había leído: la auditoría de usuario cerró la unidad con «I like
+        food. I like eat. I like drink.» —el mismo error de gramática cinco veces— y se
+        llevó la felicitación. Un elogio falso fosiliza el error; es peor que un suspenso.
+      */}
       <p style={{ margin: '0.8rem 0 0', fontSize: '0.86rem', color: listo ? COLOR : 'var(--muted)' }}>
         {usadas.length}/{MIN_PALABRAS_USADAS} palabras · {frases}/{MIN_FRASES} frases
-        {listo && ' — unidad cerrada. Esto es lo que un examinador llama riqueza lexical.'}
+        {listo && ' — unidad cerrada.'}
       </p>
+      {listo && (
+        <p style={{ margin: '0.4rem 0 0', fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.5 }}>
+          Contamos las palabras que usaste y cuántas frases escribiste. La gramática no la
+          revisa nadie aquí todavía: guárdalas y llévalas a tu clase.
+        </p>
+      )}
 
       <div style={{ marginTop: '0.9rem', display: 'flex', gap: '0.5rem' }}>
         <button onClick={onSalir} style={listo ? botonPrimario : botonSecundario}>
@@ -592,8 +652,9 @@ function CierreDeUnidad({ entradas, locale, onSalir }: { entradas: VocabEntry[];
       <div>
         <h3 style={{ margin: '0 0 0.3rem' }}>Las {entradas.length} llegaron a la caja 5</h3>
         <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.88rem', lineHeight: 1.6 }}>
-          Con cuenta, la caja 5 no llega el mismo día: llega 45 días después de conocer la palabra.
-          Ahora cierra la unidad — oírlas y escribir algo tuyo es lo que las vuelve activas.
+          Hoy las has recorrido de una sentada. Cuando haya cuenta, volverán repartidas a lo
+          largo de mes y medio, que es como se quedan. Ahora cierra la unidad: oírlas sin
+          verlas y escribir algo tuyo es lo que las vuelve activas.
         </p>
       </div>
 

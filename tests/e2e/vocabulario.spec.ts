@@ -34,7 +34,7 @@ const ACCIONES = new Set(['Salir', 'Siguiente', 'Reintentar', 'Comprobar', 'Corr
  * veredicto. Anclar al texto exacto evita confundir las dos cosas — que es justo la confusión
  * que producía el atasco cuando el motor felicitaba y suspendía a la vez.
  */
-const VEREDICTO_BIEN = /^✓ (Dominada|Sube a la caja \d)/
+const VEREDICTO_BIEN = /^✓ (Guardada|Sube a la caja \d)/
 const VEREDICTO_MAL = /^✗ (Todavía no|Era «)/
 
 async function opciones(tarjeta: Locator): Promise<string[]> {
@@ -130,6 +130,71 @@ for (const BLOQUE of NIVEL.bloques) {
       await expect(page.locator('[data-testid="ejercicio"]')).toHaveAttribute('data-caja', '1')
     })
 
+    /**
+     * La respuesta no puede estar impresa mientras se pide producirla.
+     *
+     * La fila de progreso pintaba los diez lemas, con el actual marcado en rojo. La caja 3
+     * decía «escríbela sin ayuda» y la tenía encima. Las dos cajas de producción no pedían
+     * nada y el motor felicitaba igual. Lo encontró una persona haciendo de estudiante; el
+     * validador de Node no podía verlo porque el dato estaba bien y lo que fallaba era la
+     * pantalla — exactamente el mismo patrón que el sesgo de la letra B.
+     */
+    test('en las cajas de producción la palabra no aparece escrita en ninguna parte', async ({ page }) => {
+      await entrarEnLaUnidad(page, BLOQUE)
+
+      const tarjeta = page.locator('[data-testid="ejercicio"]')
+
+      // La caja 1 es de reconocer: ahí el lema SÍ se muestra, es la pregunta.
+      await responderBien(tarjeta, porLemma.get((await tarjeta.getAttribute('data-lemma'))!)!, 1)
+      await tarjeta.getByRole('button', { name: /^(Siguiente|Reintentar)$/ }).click()
+
+      for (let paso = 0; paso < 40; paso += 1) {
+        if ((await tarjeta.count()) === 0) break
+        const caja = Number(await tarjeta.getAttribute('data-caja'))
+        const lemma = (await tarjeta.getAttribute('data-lemma'))!
+        const entrada = porLemma.get(lemma)!
+
+        if (caja >= 2) {
+          // El texto visible de la tarjeta no puede contener la palabra que se pide.
+          // Se exceptúa la caja 2 con inicial, que enseña la primera letra a propósito.
+          const visible = (await tarjeta.innerText()).toLowerCase()
+          const variante = await tarjeta.getAttribute('data-variante')
+          if (!(caja === 2 && variante === 'inicial')) {
+            expect(
+              visible.includes(lemma.toLowerCase()),
+              `la caja ${caja} de «${lemma}» imprime la respuesta:\n${visible.slice(0, 400)}`,
+            ).toBe(false)
+          }
+          return // con una caja de producción comprobada basta para cazar la regresión
+        }
+
+        await responderBien(tarjeta, entrada, caja)
+        await tarjeta.getByRole('button', { name: /^(Siguiente|Reintentar)$/ }).click()
+      }
+    })
+
+    test('la caja 5 no aprueba español ni una palabra que no es', async ({ page }) => {
+      await entrarEnLaUnidad(page, BLOQUE)
+
+      const tarjeta = page.locator('[data-testid="ejercicio"]')
+
+      // Subir una palabra hasta la caja 5 por el camino corto.
+      let entrada = porLemma.get((await tarjeta.getAttribute('data-lemma'))!)!
+      for (let paso = 0; paso < 40; paso += 1) {
+        const caja = Number(await tarjeta.getAttribute('data-caja'))
+        entrada = porLemma.get((await tarjeta.getAttribute('data-lemma'))!)!
+        if (caja === 5) break
+        await responderBien(tarjeta, entrada, caja)
+        await tarjeta.getByRole('button', { name: /^(Siguiente|Reintentar)$/ }).click()
+      }
+
+      // Ataque: una frase en español que contiene la palabra inglesa.
+      await tarjeta.locator('textarea').fill(`Yo uso ${entrada.lemma} todos los dias`)
+      await tarjeta.getByRole('button', { name: 'Comprobar' }).click()
+      await expect(tarjeta.getByText(VEREDICTO_MAL)).toBeVisible()
+      await expect(tarjeta.getByText(/está en español/)).toBeVisible()
+    })
+
     test('la escalera entera: cinco cajas, ortografía, sin callejones, y termina en el cierre', async ({ page }) => {
       test.slow()
 
@@ -187,8 +252,8 @@ for (const BLOQUE of NIVEL.bloques) {
           await tarjeta.locator('textarea').fill(chunk)
           await tarjeta.getByRole('button', { name: 'Comprobar' }).click()
           await expect(tarjeta.getByText(VEREDICTO_MAL)).toBeVisible()
-          await expect(tarjeta.getByText(/chunk de la ficha/)).toBeVisible()
-          await expect(tarjeta.getByText(/Usaste el chunk/)).toHaveCount(0)
+          await expect(tarjeta.getByText(/combinación que imprime la ficha/)).toBeVisible()
+          await expect(tarjeta.getByText(/Usaste la combinación/)).toHaveCount(0)
         } else if (caja === '5' && chunk && ataquesHechos.length === ataquesPendientes.length) {
           // Y la salida que se le ofrece al estudiante tiene que funcionar de verdad.
           await tarjeta.locator('textarea').fill(`${chunk} every single day`)
