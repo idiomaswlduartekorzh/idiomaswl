@@ -66,7 +66,7 @@ traen las capas de raíz y de acento.
 | # | Fase | Estado |
 |---|---|---|
 | 1 | **inglés A1** | ✅ TERMINADO — 334 palabras, audio, persistencia, las cuatro auditorías y sus arreglos, en producción |
-| 2 | **inglés A2** | ✅ 350/350 escritas, los diez bloques, puerta superada. Falta la revisión del usuario |
+| 2 | **inglés A2** | ✅ 350/350 en producción, puerta superada, cruzado con el Oxford 3000. Falta la revisión del usuario — y con ella el audio |
 | 3 | inglés B1 | pendiente |
 | 4 | alemán A1 | pendiente |
 | 5 | alemán A2 | pendiente |
@@ -135,12 +135,56 @@ en el código, `y → ied` no estaba en ninguno de los dos, y la tabla de irregu
 sustantivos sin un solo verbo. Arreglado con sesenta verbos irregulares y las dos reglas que
 faltaban — y vale para A1 igual, donde llevaba desde el principio.
 
+### El cruce contra el Oxford 3000 — 12 ago 2026
+
+Hecho sobre las 350. La lista no vive en el repo (tiene derechos) y se pasa con `--lista`.
+
+| | A1 (334) | A2 (350) |
+|---|---:|---:|
+| en su banda | 92 % | **30 %** |
+| banda inferior | 0 % | 43 % |
+| por encima | 6 % | 14 % |
+| fuera de la lista | 2 % | 13 % |
+| **hasta el nivel** | **92 %** | **73 %** |
+
+El 30 % asusta y no debería: A1 se lleva el núcleo cotidiano casi entero, y lo que le queda a
+A2 son las transacciones, que traen palabras que una lista de **frecuencia** coloca en B1 —
+`receipt`, `appointment`, `queue`, `arrival`, `departure`. Ninguna de las 350 repite lema de
+A1: las 150 de banda A1 son palabras nuevas, no repaso.
+
+**Dos avisos para no leer mal el informe del guardián.** El primero: cuenta 104 en banda y no
+105 porque se queda con la **primera** banda de cada palabra, y la lista sitúa muchas en dos
+(`key` es A1 como sustantivo y B1 como adjetivo). Manda la más baja, que es la acepción que
+enseña un nivel inicial. El segundo: la lista trae **lemas de diccionario**, así que `gently`,
+`seller`, `booking`, `realise` u `organisation` salen como ausencias sin serlo — están
+`gentle`, `sell`, `book`, `realize`, `organization`. Veinte de las 65 ausencias eran esto.
+
+**Dos bloques se salen del resto** — el resto va entre 69 % y 83 %:
+
+| Bloque | Hasta nivel | Por encima | Fuera |
+|---|---:|---:|---:|
+| 4 · Salud y consulta médica | **57 %** | 6 | 9 |
+| 3 · Compras, dinero y trámites | **60 %** | 10 | 4 |
+
+El 4 es **el tercer instrumento que señala el mismo sitio**: ya era el único bloque con 35 de
+35 redactados. Corpus, lista y banda coinciden. No es un problema de vocabulario, es el
+agujero de salud otra vez, y se arregla grabando.
+
+El 3 sí tiene algo que mirar: `accounting`, `council`, `collection`, `limited` y `reminder`
+no son de comprar, son de administrar. **El bloque se fue del mostrador a la oficina.**
+Candidatas a sustituir en la revisión.
+
+Las 45 ausencias restantes son sustantivos concretos que el Oxford 3000 no recoge porque es
+una lista de frecuencia y alcance, **no un temario**: `pharmacy`, `luggage`, `suitcase`,
+`motorway`, `fog`, `herb`, `apron`, `jar`, `tile`, `plumber`. Están en cualquier programa de
+A2 y se quedan.
+
 ### Lo que queda de la fase
 
 1. La **revisión personal del usuario** sobre las 350. Es la que desbloquea el audio.
-2. El **cruce contra el Oxford 3000** (`--lista`), como se hizo en A1.
-3. Las auditorías **5.2 pedagógica** y **5.3 de usuario promedio**. La 5.1 y la 5.4 están en
+2. Las auditorías **5.2 pedagógica** y **5.3 de usuario promedio**. La 5.1 y la 5.4 están en
    verde.
+3. Decidir si el bloque 3 cambia sus cinco palabras de oficina.
 4. Quitar el `noindex` de las rutas de bloque cuando el usuario apruebe.
 
 ---
@@ -494,3 +538,6 @@ sin leer commits.
 | 11 ago 2026 | inglés A2, bloque 9 | Playwright cazó lo que el validador no miraba: `plan` se traducía por «plan», así que al fallar la caja 1 el motor imprimía «Era «plan»», que contesta a otra pregunta. Había nueve así entre los dos niveles (`hospital`, `no`, `audio`, `plan`, `idea`, `taxi`, `hotel`, `metal`, `material`). Ahora lo comprueba el validador sobre las 684, no el navegador sobre la primera de cada unidad |
 | 11 ago 2026 | inglés A2, motor | `sePuedeOir` miraba `window` durante el render: el servidor pintaba la ficha sin botón de audio y el navegador con él, y React tiraba el árbol y lo rehacía en cliente. En A1 no se veía porque ya hay grabación y el botón salía en los dos lados. **Un nivel sin audio destapa lo que un nivel con audio tapaba** |
 | 9 ago 2026 | inglés A1, bloque 6 | La cuota de un episodio y la de una frase se pelean. El ep13 es la única conversación de ropa del nivel y da 10 de 30 (el techo justo), y su frase de los colores enseña cuatro palabras que no salen en ningún otro sitio. Se quedaron con la frase las dos que son ropa; `black` y `white` fueron a redactado. Un tema concentrado en un solo episodio siempre va a costar redactados |
+| 12 ago 2026 | inglés A2, cruce | **El informe del guardián exageraba las ausencias en un tercio.** De 65 palabras «fuera de la lista», 20 estaban: la lista trae lemas de diccionario y nosotros guardamos la forma que se usa (`gently`/`gentle`, `booking`/`book`, `realise`/`realize`). Y contaba 104 en banda porque se queda con la primera banda de cada palabra, aunque la lista sitúe `key` en A1 **y** en B1. Un cruce contra una lista oficial necesita normalizar formas y aceptar la banda más baja, o inventa un problema que no existe |
+| 12 ago 2026 | inglés A2, cruce | **Tres instrumentos independientes señalaron el mismo bloque.** Salud iba ya con 35 de 35 redactados; el cruce le dio además el peor porcentaje en banda (57 %) y nueve palabras fuera de la lista. Cuando corpus, banda y lista coinciden, no hay nada que reescribir: falta material. En cambio el bloque 3 (compras) salió al 60 % por otra causa —`accounting`, `council`, `collection`, `limited`, `reminder`— y esa sí es nuestra: **el bloque se fue del mostrador a la oficina** |
+| 12 ago 2026 | inglés A2, cruce | El total de un nivel esconde el reparto. El 14 % por encima de banda no decía nada hasta desglosarlo por bloque: ocho de los diez estaban entre 69 % y 83 %, y los dos que había que mirar se veían solos. **Un porcentaje de nivel no es un diagnóstico; el desglose por bloque sí** |

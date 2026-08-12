@@ -3029,8 +3029,39 @@ export const INGLES_A2: VocabLevel = {
       'redactada, porque la serie del nivel trata literalmente de alquilar y montar un local. ' +
       'Doce candidatas obvias se cayeron por estar ya en A1 —«flat», «wall», «floor», ' +
       '«window», «door», «kitchen», «shelf», «clean», «paint», «quiet», «sign» y «owner»— y se ' +
-      'sustituyeron por otras del mismo tema que el corpus también dice. El cruce contra el ' +
-      'Oxford 3000 queda pendiente hasta cerrar la fase.',
+      'sustituyeron por otras del mismo tema que el corpus también dice. ' +
+      // ── Cruce completo, 12 ago 2026 ─────────────────────────────────────────
+      'CRUCE COMPLETO contra el Oxford 3000 por banda CEFR, 12 ago 2026, sobre las 350 entradas: ' +
+      '105 en banda A2 (30 %), 150 en banda A1 (43 %), 50 una o dos bandas por encima (14 %) y ' +
+      '45 fuera de la lista en cualquier forma (13 %). Hasta el nivel, 255 de 350 — el 73 %. ' +
+      'Dos advertencias para leer esos números. La primera: el guardián cuenta 104 en banda y no ' +
+      '105 porque se queda con la PRIMERA banda de cada palabra, y la lista sitúa muchas en dos ' +
+      '—«key» es A1 como sustantivo y B1 como adjetivo—; manda la banda más baja, que es la ' +
+      'acepción que enseña un nivel inicial. La segunda: la lista trae lemas de diccionario, así ' +
+      'que «gently», «seller», «booking», «realise» u «organisation» salen como ausencias y no lo ' +
+      'son —están «gentle», «sell», «book», «realize» y «organization»—. Veinte de las supuestas ' +
+      '65 ausencias eran esto. ' +
+      'A1 tiene el 92 % en banda y A2 el 30 %, y la diferencia no es un defecto: A1 se lleva el ' +
+      'núcleo cotidiano casi entero, y el trabajo de A2 son las transacciones, que traen palabras ' +
+      'que una lista de frecuencia coloca en B1 —«receipt», «appointment», «queue», «arrival», ' +
+      '«departure»—. Ninguna de las 350 repite lema de A1: las 150 de banda A1 son palabras ' +
+      'nuevas, no repaso. ' +
+      'DOS BLOQUES SE SALEN DEL RESTO. El 4 (salud y consulta médica) tiene el 57 % hasta nivel, ' +
+      'el peor de los diez, con nueve palabras fuera de la lista —«fever», «cough», «sore», ' +
+      '«clinic», «pharmacy», «ambulance», «pill», «prescription», «bandage»— y seis por encima. ' +
+      'Es el tercer instrumento que señala el mismo sitio: ya era el único bloque con 35 de 35 ' +
+      'ejemplos redactados. No es un problema de vocabulario sino del corpus, y es el mismo ' +
+      'agujero que dejó el bloque del cuerpo en A1: una serie de ficción no enferma a sus ' +
+      'personajes salvo que la enfermedad sea la trama. Se arregla grabando, no reescribiendo. ' +
+      'El 3 (compras, dinero y trámites) tiene el 60 % y diez palabras por encima de banda, y ' +
+      'aquí sí hay algo que mirar: «accounting», «council», «collection», «limited» y «reminder» ' +
+      'no son de comprar, son de administrar. El bloque se fue del mostrador a la oficina. ' +
+      'Candidatas a sustituir cuando el usuario revise el nivel. ' +
+      'Las 45 ausencias restantes son casi todas sustantivos concretos que el Oxford 3000 no ' +
+      'recoge porque es una lista de frecuencia y alcance, no un temario: «pharmacy», «luggage», ' +
+      '«suitcase», «motorway», «fog», «herb», «apron», «jar», «tile», «plumber». Están en ' +
+      'cualquier programa de A2 y se mantienen. ' +
+      'La lista NO vive en el repo —tiene derechos— y se cruza pasándola con --lista.',
   },
   bloques: [
     {

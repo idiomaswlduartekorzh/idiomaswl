@@ -2698,7 +2698,12 @@ export const INGLES_A1: VocabLevel = {
       'chunk, «excuse me» es A1 en cualquier programa: la banda B2 la lleva el verbo suelto, ' +
       'que aquí no se enseña. Y se rompió el molde de los redactados del bloque de cuerpo: ' +
       'cinco frases decían «X is tired after Y» y cuatro «X is cold», así que en la caja 4 el ' +
-      'hueco se rellenaba por memoria del patrón. Quedan una de cada.',
+      'hueco se rellenaba por memoria del patrón. Quedan una de cada. ' +
+      // ── Recuento final, 12 ago 2026 ─────────────────────────────────────────
+      'RECUENTO FINAL, 12 ago 2026, al cruzar A2: 334 entradas, 309 en banda A1 (92 %), 20 una ' +
+      'banda por encima y 5 fuera de la lista. Todas las excepciones son las ya justificadas ' +
+      'arriba; el cruce no encontró ninguna nueva. Sirve de contraste para A2, que baja al 30 % ' +
+      'en banda porque este nivel se lleva el núcleo cotidiano casi entero.',
   },
   bloques: [
     {
