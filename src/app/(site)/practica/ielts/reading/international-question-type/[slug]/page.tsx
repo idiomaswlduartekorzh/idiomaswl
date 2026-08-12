@@ -3,6 +3,16 @@ import { notFound } from 'next/navigation';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
 import InternationalQuestionTypePractice from '@/components/exam-practice/InternationalQuestionTypePractice';
 import {
+  MatchingHeadingsGuidedPractice,
+  MatchingHeadingsIndependentPractice,
+  MatchingHeadingsProgressEngine,
+} from '@/components/exam-practice/MatchingHeadingsPracticeLab';
+import {
+  MATCHING_HEADINGS_GUIDED_PASSAGE_ID,
+  MATCHING_HEADINGS_INDEPENDENT_PASSAGE_ID,
+  getMatchingHeadingsPassage,
+} from '@/data/practica-exams/ielts-reading-matching-headings-progress';
+import {
   IELTS_READING_TYPES,
   PRACTICE_BASE_URL,
 } from '@/data/practica-exams/seo-catalog';
@@ -145,6 +155,9 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   const slug = rawSlug as Slug;
   const config = TYPES[slug];
   const route = IELTS_READING_TYPES.find((item) => item.slug === slug)!;
+  const isMatchingHeadings = slug === 'matching-headings';
+  const guidedPassage = isMatchingHeadings ? getMatchingHeadingsPassage(MATCHING_HEADINGS_GUIDED_PASSAGE_ID) : undefined;
+  const independentPassage = isMatchingHeadings ? getMatchingHeadingsPassage(MATCHING_HEADINGS_INDEPENDENT_PASSAGE_ID) : undefined;
 
   return <InternationalReadingSkillLesson
     slug={slug}
@@ -163,7 +176,11 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
     method={config.method}
     weakExample={config.weak}
     strongExample={config.strong}
-    practice={<InternationalQuestionTypePractice name={config.name} accent={config.accent} target={config.target} evidence={config.evidence} risk={config.risk} weak={config.weak} strong={config.strong} />}
+    practice={guidedPassage
+      ? <MatchingHeadingsGuidedPractice passage={guidedPassage} />
+      : <InternationalQuestionTypePractice name={config.name} accent={config.accent} target={config.target} evidence={config.evidence} risk={config.risk} weak={config.weak} strong={config.strong} />}
+    independentPracticeExperience={independentPassage ? <MatchingHeadingsIndependentPractice passage={independentPassage} /> : undefined}
+    progressEngine={isMatchingHeadings ? <MatchingHeadingsProgressEngine /> : undefined}
     independentPractice={[
       `Complete one new ${config.name} set without opening feedback.`,
       `For every item, record the exact evidence used for the decision.`,

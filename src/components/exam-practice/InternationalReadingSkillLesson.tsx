@@ -24,6 +24,8 @@ export interface InternationalReadingSkillLessonProps {
   weakExample: string;
   strongExample: string;
   independentPractice: string[];
+  independentPracticeExperience?: ReactNode;
+  progressEngine?: ReactNode;
   checklist: string[];
   faqs: Faq[];
   practice: ReactNode;
@@ -48,6 +50,8 @@ export default function InternationalReadingSkillLesson({
   weakExample,
   strongExample,
   independentPractice,
+  independentPracticeExperience,
+  progressEngine,
   checklist,
   faqs,
   practice,
@@ -135,7 +139,7 @@ export default function InternationalReadingSkillLesson({
               <h2 id="method-heading">A repeatable process, not a shortcut</h2>
               <p>Follow these steps until the sequence becomes automatic under time pressure.</p>
             </div>
-            <div className={styles.gridTwo}>
+            <div className={`${styles.gridTwo} ${independentPracticeExperience ? styles.followupGrid : ''}`}>
               {method.map((point, index) => (
                 <article className={styles.card} key={point.title}>
                   <span className={styles.stepNumber}>{index + 1}</span><h3>{point.title}</h3><p>{point.text}</p>
@@ -165,11 +169,21 @@ export default function InternationalReadingSkillLesson({
           </section>
 
           <section className={styles.section} aria-labelledby="independent-heading">
+            {independentPracticeExperience && (
+              <>
+                <div className={styles.sectionHeader}>
+                  <p className={styles.eyebrow}>Independent practice</p>
+                  <h2 id="independent-heading">Transfer the method to a new passage</h2>
+                  <p>Complete the full set before feedback opens. This checks whether the process survives without step-by-step prompting.</p>
+                </div>
+                {independentPracticeExperience}
+              </>
+            )}
             <div className={styles.gridTwo}>
               <article className={styles.card}>
                 <div className={styles.sectionHeader}>
-                  <p className={styles.eyebrow}>Independent practice</p>
-                  <h2 id="independent-heading">Transfer the skill to a new passage</h2>
+                  <p className={styles.eyebrow}>{independentPracticeExperience ? 'Independent protocol' : 'Independent practice'}</p>
+                  <h2 id={independentPracticeExperience ? undefined : 'independent-heading'}>{independentPracticeExperience ? 'Repeat the set without weakening the evidence rule' : 'Transfer the skill to a new passage'}</h2>
                 </div>
                 <ol className={styles.checklist}>{independentPractice.map((item) => <li key={item}>{item}</li>)}</ol>
               </article>
@@ -182,6 +196,12 @@ export default function InternationalReadingSkillLesson({
               </article>
             </div>
           </section>
+
+          {progressEngine && (
+            <section className={styles.section} aria-label={`${name} progressive practice`}>
+              {progressEngine}
+            </section>
+          )}
 
           <section className={styles.section} aria-labelledby="faq-heading" lang="es">
             <div className={styles.sectionHeader}>
