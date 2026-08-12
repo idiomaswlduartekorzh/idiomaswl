@@ -94,6 +94,47 @@ function PassageHeadings({ passage }: { passage: MatchingHeadingsTrainingPassage
   );
 }
 
+function HeadingOptionButtons({
+  headings,
+  selected,
+  disabled = false,
+  disabledIds = new Set<string>(),
+  label,
+  onSelect,
+  compact = false,
+}: {
+  headings: MatchingHeadingsTrainingPassage['headings'];
+  selected: string;
+  disabled?: boolean;
+  disabledIds?: Set<string>;
+  label: string;
+  onSelect: (headingId: string) => void;
+  compact?: boolean;
+}) {
+  return (
+    <div className={`${styles.headingOptions} ${compact ? styles.headingOptionsCompact : ''}`} role="radiogroup" aria-label={label}>
+      {headings.map((heading) => {
+        const unavailable = disabledIds.has(heading.id) && selected !== heading.id;
+        return (
+          <button
+            key={heading.id}
+            type="button"
+            role="radio"
+            aria-checked={selected === heading.id}
+            disabled={disabled || unavailable}
+            className={selected === heading.id ? styles.headingOptionSelected : ''}
+            onClick={() => onSelect(heading.id)}
+          >
+            <span>{heading.id}</span>
+            <strong>{heading.text}</strong>
+            {unavailable && <small>Used</small>}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
 export function MatchingHeadingsGuidedPractice({ passage }: { passage: MatchingHeadingsTrainingPassage }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [selected, setSelected] = useState('');
@@ -153,12 +194,19 @@ export function MatchingHeadingsGuidedPractice({ passage }: { passage: MatchingH
             <div className={styles.methodPrompt}><strong>Your two-step decision</strong><span>1. Name the paragraph’s job.</span><span>2. Test whether one heading covers every sentence.</span></div>
           </div>
           <div className={styles.decisionPanel}>
-            <PassageHeadings passage={passage} />
-            <label className={styles.selectLabel} htmlFor={`guided-${paragraph.id}`}>Best heading for {paragraph.label}</label>
-            <select id={`guided-${paragraph.id}`} name={`guided-${paragraph.id}`} value={selected} disabled={checked} onChange={(event) => setSelected(event.target.value)}>
-              <option value="">Choose a heading</option>
-              {passage.headings.map((heading) => <option key={heading.id} value={heading.id}>{heading.id}. {heading.text}</option>)}
-            </select>
+            <div className={styles.clickableHeadingBank}>
+              <div className={styles.headingBankHeader}>
+                <span>Choose the best heading</span>
+                <small>{passage.headings.length - passage.paragraphs.length} will not be used</small>
+              </div>
+              <HeadingOptionButtons
+                headings={passage.headings}
+                selected={selected}
+                disabled={checked}
+                label={`Best heading for ${paragraph.label}`}
+                onSelect={setSelected}
+              />
+            </div>
             {checked && (
               <div className={`${styles.feedback} ${isCorrect ? styles.feedbackCorrect : styles.feedbackIncorrect}`} role="status">
                 {isCorrect ? <CheckCircle2 size={20} /> : <XCircle size={20} />}
@@ -387,11 +435,24 @@ export function MatchingHeadingsProgressEngine() {
               <article className={styles.engineQuestion} key={paragraph.id}>
                 <div className={styles.questionMeta}><span>{String(index + 1).padStart(2, '0')}</span><small>{passage.title} · {paragraph.label}</small></div>
                 <p>{paragraph.text}</p>
-                <label className={styles.selectLabel} htmlFor={`engine-${level.id}-${paragraph.id}`}>Best heading</label>
-                <select id={`engine-${level.id}-${paragraph.id}`} name={`engine-${level.id}-${paragraph.id}`} value={selected} disabled={submitted} onChange={(event) => setAnswers((current) => ({ ...current, [paragraph.id]: event.target.value }))}>
-                  <option value="">Choose a heading</option>
-                  {options.map((heading) => <option key={heading.id} value={heading.id} disabled={isFullPassage && usedElsewhere.has(heading.id)}>{heading.id}. {heading.text}</option>)}
-                </select>
+                {isFullPassage ? (
+                  <div className={styles.engineChoiceControl}>
+                    <label className={styles.selectLabel} htmlFor={`engine-${level.id}-${paragraph.id}`}>Best heading</label>
+                    <select id={`engine-${level.id}-${paragraph.id}`} name={`engine-${level.id}-${paragraph.id}`} value={selected} disabled={submitted} onChange={(event) => setAnswers((current) => ({ ...current, [paragraph.id]: event.target.value }))}>
+                      <option value="">Choose a heading</option>
+                      {options.map((heading) => <option key={heading.id} value={heading.id} disabled={usedElsewhere.has(heading.id)}>{heading.id}. {heading.text}</option>)}
+                    </select>
+                  </div>
+                ) : (
+                  <HeadingOptionButtons
+                    headings={options}
+                    selected={selected}
+                    disabled={submitted}
+                    label={`Best heading for ${passage.title}, ${paragraph.label}`}
+                    onSelect={(headingId) => setAnswers((current) => ({ ...current, [paragraph.id]: headingId }))}
+                    compact
+                  />
+                )}
                 {submitted && (
                   <div className={`${styles.feedback} ${correct ? styles.feedbackCorrect : styles.feedbackIncorrect}`} role="status">
                     {correct ? <CheckCircle2 size={18} /> : <XCircle size={18} />}

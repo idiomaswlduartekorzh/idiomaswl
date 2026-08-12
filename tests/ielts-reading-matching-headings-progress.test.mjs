@@ -90,6 +90,10 @@ test('the public question-type page mounts all three real-practice surfaces', as
   assert.match(page, /MatchingHeadingsIndependentPractice/);
   assert.match(page, /MatchingHeadingsProgressEngine/);
   assert.match(page, /slug === 'matching-headings'/);
+  assert.match(lab, /role="radiogroup"/);
+  assert.match(lab, /role="radio"/);
+  assert.match(lab, /Choose the best heading/);
+  assert.match(lab, /HeadingOptionButtons/);
+  assert.match(lab, /independent-\$\{paragraph\.id\}/);
   assert.match(lab, /disabled=\{usedElsewhere\.has\(heading\.id\)\}/);
-  assert.match(lab, /disabled=\{isFullPassage && usedElsewhere\.has\(heading\.id\)\}/);
 });

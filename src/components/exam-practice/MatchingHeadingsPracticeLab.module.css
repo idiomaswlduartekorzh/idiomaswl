@@ -1,21 +1,21 @@
 .lab,
 .engine {
-  --mh-ink: #0b3048;
-  --mh-accent: #087f8c;
-  --mh-cyan: #e9f7f8;
-  --mh-paper: #f7fafb;
-  --mh-line: #c8dbe2;
-  --mh-good: #087f5b;
-  --mh-bad: #b42318;
+  --mh-ink: #102e6f;
+  --mh-accent: #176b87;
+  --mh-cyan: #eef4ff;
+  --mh-paper: #f7f8fc;
+  --mh-line: #d9deea;
+  --mh-good: #18794e;
+  --mh-bad: #b42332;
   color: var(--ink);
 }
 
 .lab {
   overflow: hidden;
   border: 1px solid var(--mh-line);
-  border-radius: 22px;
+  border-radius: 8px;
   background: var(--bg);
-  box-shadow: 0 20px 50px rgba(11, 48, 72, 0.08);
+  box-shadow: 0 12px 34px rgba(20, 36, 79, 0.08);
 }
 
 .labTopline,
@@ -32,7 +32,8 @@
 .labTopline {
   padding: 1.15rem;
   border-bottom: 1px solid var(--mh-line);
-  background: linear-gradient(110deg, #f5fbfc, var(--bg));
+  border-top: 4px solid var(--mh-ink);
+  background: var(--bg);
 }
 
 .labTopline h3,
@@ -79,7 +80,7 @@
   gap: 0.4rem;
   padding: 0.65rem 0.8rem;
   border: 1px solid var(--mh-line);
-  border-radius: 12px;
+  border-radius: 6px;
   background: var(--bg);
   color: var(--mh-ink);
   font: 800 0.82rem/1.2 var(--mono);
@@ -134,7 +135,7 @@
 .practiceSplit {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
-  min-height: 520px;
+  min-height: 0;
 }
 
 .passagePanel,
@@ -162,7 +163,7 @@
   margin-top: 1.15rem;
   padding: 1rem;
   border-left: 4px solid var(--mh-accent);
-  border-radius: 0 14px 14px 0;
+  border-radius: 0 6px 6px 0;
   background: var(--mh-cyan);
   color: var(--mh-ink);
   line-height: 1.5;
@@ -170,12 +171,16 @@
 
 .methodPrompt span { color: var(--ink-2); }
 
-.headingBank {
+.headingBank,
+.clickableHeadingBank {
   margin-bottom: 1rem;
   border: 1px solid var(--mh-line);
-  border-radius: 16px;
+  border-radius: 8px;
   background: var(--bg);
+  overflow: hidden;
 }
+
+.clickableHeadingBank { margin-bottom: 0; }
 
 .headingBankHeader {
   display: flex;
@@ -210,6 +215,82 @@
 
 .headingBank li strong { color: var(--mh-accent); font-family: var(--mono); }
 
+.headingOptions {
+  display: grid;
+  gap: 0.55rem;
+  padding: 0.8rem;
+}
+
+.headingOptions button {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr) auto;
+  gap: 0.65rem;
+  align-items: center;
+  min-height: 52px;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid var(--mh-line);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--ink-2);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 150ms ease, background 150ms ease, box-shadow 150ms ease, transform 150ms ease;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(16, 46, 111, 0.12);
+}
+
+.headingOptions button:hover:not(:disabled) {
+  border-color: #8295bd;
+  background: #f8faff;
+  transform: translateY(-1px);
+}
+
+.headingOptions button:disabled { cursor: not-allowed; opacity: 0.56; }
+
+.headingOptions button > span {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  border-radius: 50%;
+  background: #edf2ff;
+  color: var(--mh-ink);
+  font: 900 0.74rem/1 var(--mono);
+}
+
+.headingOptions button > strong {
+  color: inherit;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.headingOptions button > small {
+  color: var(--muted);
+  font: 750 0.66rem/1 var(--mono);
+}
+
+.headingOptions .headingOptionSelected {
+  border-color: var(--mh-ink);
+  background: #f2f6ff;
+  box-shadow: 0 0 0 2px #dbe5ff;
+  color: var(--mh-ink);
+}
+
+.headingOptions .headingOptionSelected > span {
+  background: var(--mh-ink);
+  color: white;
+}
+
+.headingOptionsCompact {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 0;
+}
+
+.headingOptionsCompact button {
+  min-height: 48px;
+  padding: 0.55rem 0.65rem;
+}
+
 .selectLabel {
   display: block;
   margin: 0.85rem 0 0.35rem;
@@ -225,7 +306,7 @@
   min-height: 48px;
   padding: 0.72rem 2.5rem 0.72rem 0.8rem;
   border: 1px solid var(--mh-line);
-  border-radius: 12px;
+  border-radius: 6px;
   background: var(--bg);
   color: var(--ink);
   font: inherit;
@@ -234,8 +315,9 @@
 .lab select:focus-visible,
 .engine select:focus-visible,
 .textButton:focus-visible,
-.levelRail button:focus-visible {
-  outline: 3px solid rgba(8, 127, 140, 0.35);
+.levelRail button:focus-visible,
+.headingOptions button:focus-visible {
+  outline: 3px solid rgba(16, 46, 111, 0.24);
   outline-offset: 3px;
 }
 
@@ -246,7 +328,7 @@
   align-items: start;
   margin-top: 0.75rem;
   padding: 0.8rem;
-  border-radius: 12px;
+  border-radius: 6px;
   line-height: 1.55;
 }
 
@@ -327,22 +409,20 @@
 .engine {
   overflow: hidden;
   border: 1px solid var(--mh-line);
-  border-radius: 24px;
+  border-radius: 8px;
   background: var(--bg);
-  box-shadow: 0 24px 60px rgba(11, 48, 72, 0.1);
+  box-shadow: 0 12px 34px rgba(20, 36, 79, 0.08);
 }
 
 .engineHeading {
   padding: clamp(1.1rem, 3vw, 1.7rem);
-  background:
-    radial-gradient(circle at 90% 10%, rgba(81, 210, 222, 0.22), transparent 30%),
-    var(--mh-ink);
+  background: var(--mh-ink);
   color: white;
 }
 
 .engineHeading h2 { margin-top: 0.3rem; color: white; font-size: clamp(1.55rem, 3vw, 2.35rem); }
 .engineHeading p { max-width: 720px; margin: 0.55rem 0 0; color: rgba(255, 255, 255, 0.72); line-height: 1.65; }
-.engineHeading .modeTag { color: #8ee8ef; }
+.engineHeading .modeTag { color: #c9d8ff; }
 
 .engineScore {
   display: grid;
@@ -350,7 +430,7 @@
   justify-items: end;
 }
 
-.engineScore strong { font: 900 clamp(2rem, 4vw, 3.3rem)/1 var(--mono); color: #8ee8ef; }
+.engineScore strong { font: 900 clamp(2rem, 4vw, 3.3rem)/1 var(--mono); color: #dce6ff; }
 .engineScore span { margin-top: 0.35rem; color: rgba(255, 255, 255, 0.72); font-size: 0.7rem; text-transform: uppercase; }
 
 .dashboard {
@@ -388,7 +468,7 @@
   min-height: 72px;
   padding: 0.65rem;
   border: 1px solid var(--mh-line);
-  border-radius: 12px;
+  border-radius: 6px;
   background: var(--bg);
   color: var(--ink-2);
   text-align: left;
@@ -401,7 +481,7 @@
 .levelRail button > span { display: grid; grid-row: 1 / 3; width: 28px; height: 28px; place-items: center; border-radius: 9px; background: var(--mh-paper); color: var(--mh-accent); font: 900 0.72rem/1 var(--mono); }
 .levelRail b { font-size: 0.78rem; line-height: 1.3; }
 .levelRail small { color: var(--muted); font: 700 0.66rem/1.2 var(--mono); }
-.levelRail .levelCurrent { border-color: var(--mh-accent); box-shadow: 0 0 0 2px rgba(8, 127, 140, 0.12); }
+.levelRail .levelCurrent { border-color: var(--mh-ink); background: #f2f6ff; box-shadow: 0 0 0 2px #dbe5ff; }
 .levelRail .levelMastered > span { background: #eaf8f2; color: var(--mh-good); }
 
 .enginePanel { padding: clamp(0.8rem, 2.5vw, 1.35rem); }
@@ -422,22 +502,26 @@
   align-items: start;
   padding: 1rem;
   border: 1px solid var(--mh-line);
-  border-radius: 16px;
+  border-radius: 6px;
   background: var(--mh-paper);
 }
 
 .questionMeta { display: grid; grid-template-columns: 34px 1fr; gap: 0.45rem; align-items: start; color: var(--mh-accent); }
 .questionMeta > span { display: grid; width: 34px; height: 34px; place-items: center; border-radius: 10px; background: var(--mh-cyan); }
 .questionMeta small { color: var(--muted); font-size: 0.68rem; line-height: 1.35; }
-.engineQuestion .selectLabel { grid-column: 3; margin: 0; }
-.engineQuestion select { grid-column: 3; }
+.engineChoiceControl { grid-column: 3; }
+.engineQuestion .headingOptionsCompact {
+  grid-column: 2 / -1;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.engineChoiceControl .selectLabel { margin: 0 0 0.35rem; }
 .engineQuestion .feedback { grid-column: 2 / -1; }
 
 .engineFooter {
   align-items: center;
   margin-top: 1rem;
   padding: 1rem;
-  border-radius: 16px;
+  border-radius: 6px;
   background: var(--mh-ink);
   color: white;
 }
@@ -453,7 +537,7 @@
   align-items: end;
   padding: 1.15rem;
   border-top: 1px solid var(--mh-line);
-  background: var(--mh-cyan);
+  background: #f2f6ff;
 }
 
 .reviewPanel h3 { margin-top: 0.25rem; }
@@ -470,9 +554,10 @@
   .independentCard .selectLabel,
   .independentCard select,
   .independentCard .feedback,
-  .engineQuestion .selectLabel,
-  .engineQuestion select,
+  .engineChoiceControl,
+  .engineQuestion .headingOptionsCompact,
   .engineQuestion .feedback { grid-column: 2; }
+  .engineQuestion .headingOptionsCompact { grid-column: 1; grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .levelRail { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
@@ -492,9 +577,10 @@
   .independentCard .selectLabel,
   .independentCard select,
   .independentCard .feedback,
-  .engineQuestion .selectLabel,
-  .engineQuestion select,
+  .engineChoiceControl,
+  .engineQuestion .headingOptionsCompact,
   .engineQuestion .feedback { grid-column: 1; }
+  .engineQuestion .headingOptionsCompact { grid-template-columns: 1fr; }
   .dashboard { grid-template-columns: 1fr; }
   .dashboard > div:not(:last-child) { border-right: 0; border-bottom: 1px solid var(--mh-line); }
   .levelRail { grid-template-columns: 1fr; }
