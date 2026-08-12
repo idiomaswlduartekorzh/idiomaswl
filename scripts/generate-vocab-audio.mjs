@@ -140,6 +140,60 @@ function locuciones(entrada) {
   return out
 }
 
+/**
+ * Unidades cuyo audio ya no dice lo que dice la ficha.
+ *
+ * El salto se decidía por existencia del archivo, y eso deja pasar el peor fallo que este
+ * script puede tener: se corrige una frase, se vuelve a generar sin `--rehacer`, el mp3 se
+ * queda con la versión vieja y nadie se entera. La ficha muestra una cosa y la voz dice otra,
+ * sin un solo error por pantalla. No es hipotético — pasó al corregir las trece frases de la
+ * auditoría pedagógica del 12 ago 2026, y solo se vio porque el gasto salió en cero.
+ *
+ * El manifiesto guarda el texto exacto de cada corte, así que la comparación es exacta y no
+ * hace falta guardar ninguna huella aparte.
+ */
+function desfasadas(manifiesto) {
+  const guardadas = new Map(
+    (manifiesto.unidades ?? []).map((u) => [`${u.idioma}/${u.nivel}/${u.bloque}-u${u.unidad}`, u]),
+  )
+  const out = []
+  for (const nivel of niveles()) {
+    for (const bloque of nivel.bloques) {
+      if (bloqueFilter && bloque.id !== bloqueFilter) continue
+      for (const [i, unidad] of unidades(bloque).entries()) {
+        const clave = `${nivel.lang}/${nivel.nivel}/${bloque.id}-u${i + 1}`
+        const guardada = guardadas.get(clave)
+        if (!guardada) continue
+        const ahora = unidad.flatMap(locuciones)
+        const antes = guardada.cortes ?? []
+        const cambios = ahora
+          .map((l, j) => ({ clave: l.clave, antes: antes[j]?.texto, ahora: l.texto }))
+          .filter((c) => c.antes !== c.ahora)
+        if (ahora.length !== antes.length || cambios.length) out.push({ clave, cambios })
+      }
+    }
+  }
+  return out
+}
+
+/** Imprime el aviso de desfase. Devuelve cuántas unidades lo están. */
+function avisarDesfasadas(manifiesto) {
+  const desfase = desfasadas(manifiesto)
+  if (!desfase.length) return 0
+  console.log(`\n⚠️  ${desfase.length} unidad(es) con el audio desfasado — el mp3 dice algo que la ficha ya no dice:`)
+  for (const { clave, cambios } of desfase) {
+    console.log(`   ${clave}`)
+    for (const c of cambios.slice(0, 3)) {
+      console.log(`     ${c.clave}`)
+      console.log(`       grabado: ${c.antes ?? '(no había corte)'}`)
+      console.log(`       ficha:   ${c.ahora}`)
+    }
+    if (cambios.length > 3) console.log(`     … y ${cambios.length - 3} corte(s) más`)
+  }
+  console.log(`   Se arregla con --rehacer sobre esos bloques. Sin eso, el audio miente.`)
+  return desfase.length
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 // Factura
 // ─────────────────────────────────────────────────────────────────────────────
@@ -196,6 +250,12 @@ function facturar() {
   console.log(`  créditos con la tarifa medida: ${creditos.toLocaleString('es')}`)
   console.log(`  techo si ElevenLabs cobrara la nominal: ${techo.toLocaleString('es')}`)
   if (soloPalabras) console.log(`  (--solo-palabras: las frases de ejemplo NO entran)`)
+
+  // El desfase se avisa aquí y no solo al generar: la factura es lo que se mira antes de
+  // gastar, y enterarse ahí de que hay audio que miente vale más que enterarse después.
+  if (fs.existsSync(manifestPath)) {
+    avisarDesfasadas(JSON.parse(fs.readFileSync(manifestPath, 'utf8')))
+  }
 
   comprobarEntorno()
   console.log(`\nPara generar de verdad hay que añadir --generate. Sin esa bandera este script nunca gasta.`)
@@ -354,6 +414,10 @@ async function generar() {
     : { unidades: [] }
 
   let gastados = 0
+  // Unidades que se saltan por existir aunque su texto haya cambiado. Se cuentan para poder
+  // salir con error al final: saltarse un audio que miente no puede terminar en éxito.
+  let saltadasDesfasadas = 0
+  const desfase = new Set(desfasadas(manifiesto).map((d) => d.clave))
 
   for (const nivel of niveles()) {
     const voz = vozDe(casting, nivel.lang)
@@ -370,7 +434,12 @@ async function generar() {
         const salida = path.join(destino, `${nombre}.mp3`)
         const rel = path.relative(repoRoot, salida)
         if (fs.existsSync(salida) && !has('--rehacer')) {
-          console.log(`   · ${rel} ya existe — se salta (usa --rehacer para regenerarlo)`)
+          if (desfase.has(`${nivel.lang}/${nivel.nivel}/${nombre}`)) {
+            saltadasDesfasadas++
+            console.log(`   ⚠️  ${rel} EXISTE PERO ESTÁ DESFASADO — la ficha cambió y el mp3 no. Usa --rehacer`)
+          } else {
+            console.log(`   · ${rel} ya existe — se salta (usa --rehacer para regenerarlo)`)
+          }
           continue
         }
         fs.mkdirSync(destino, { recursive: true })
@@ -417,6 +486,15 @@ async function generar() {
   const tabla = CREDITOS_POR_CARACTER[modelo] ?? CREDITOS_POR_CARACTER.eleven_multilingual_v2
   console.log(`\nGastado: ${gastados.toLocaleString('es')} caracteres ≈ ${Math.ceil(gastados * tabla.medido).toLocaleString('es')} créditos.`)
   console.log(`Manifiesto: ${path.relative(repoRoot, manifestPath)}`)
+
+  // Terminar en cero con audio que miente sería decir que todo está bien. No lo está.
+  if (saltadasDesfasadas) {
+    console.error(
+      `\n✗ ${saltadasDesfasadas} unidad(es) se saltaron con el texto cambiado. Su mp3 dice la ` +
+        `versión vieja y la ficha muestra la nueva. Vuelve a lanzarlo con --rehacer sobre esos bloques.`,
+    )
+    process.exitCode = 1
+  }
 }
 
 await generar()

@@ -198,11 +198,82 @@ ser quien está delante el día que la condición se cumple.
 lista a mano: `getVocabLevels()`. Así el nivel 3 entra al índice el día que se escriba, sin
 que nadie tenga que acordarse.
 
+### Auditoría 5.2 · pedagógica — 12 ago 2026
+
+**La hizo un agente, no Zhanna.** Muestra de 30 sobre las 350, semilla `20260812`, repetible.
+Lo que la muestra insinuó se midió después sobre las 350, que es donde estaban los hallazgos.
+
+**1 · Trece ejemplos usaban gramática que A2 no enseña.** Pasado perfecto (5), pasiva (4),
+pasado continuo (4). No es una impresión: B1 tiene `past-perfect-b1`, `passive-voice-b1` y
+`past-continuous-b1` como temas propios. Pero al abrir las fuentes salieron **dos casos
+distintos, y mezclarlos habría llevado a la corrección equivocada**:
+
+- El **pasado continuo no es un desliz: es el nivel.** Diez frases del material, concentradas
+  en dos episodios enteros —ep04 «Rainy Saturday» y ep17 «The Missing Key»—, que son
+  literalmente sus lecciones de esa estructura. Y está en A2 en Cambridge y en el EVP. Lo que
+  falta es el **tema de gramática de A2**, que solo existe como `past-continuous-b1`. Las
+  fichas se quedan; queda apuntado para el módulo de gramática.
+- El **pasado perfecto y la pasiva sí lo eran.** Aparecen sueltos en cuatro lecturas, nadie
+  los enseña, y nueve fichas los ponían como modelo a copiar en la caja 5. Ocho de las nueve
+  palabras salen una sola vez en todo el corpus y era justo en esa frase, así que van
+  redactadas con el motivo escrito, siguiendo el precedente de A1. La novena, `label`, tenía
+  otra frase del material… ya ocupada por `coordinator` y `storage`, que es el tope de dos.
+
+**2 · La lista base no es un temario, y el bloque de compras lo demuestra.** Se había anotado
+que `accounting`, `council`, `collection`, `limited` y `reminder` se habían ido «del mostrador
+a la oficina». Al mirar el bloque entero la recomendación se cayó: **no hay palabras de compra
+mejores que poner.** `price`, `pay`, `cost`, `cheap`, `expensive`, `card`, `buy`, `sell`,
+`shop` y `money` están todas en A1; `customer`, `bill`, `change`, `borrow` y `lend` ya están en
+A2. Lo único libre —`wallet`, `owe`, `afford`— no tiene una sola frase en el corpus. Cuatro de
+las cinco salen del material del nivel y el bloque se llama «y trámites». Se quedan.
+Lección: **mirar cinco palabras sueltas inventa una deriva que el conjunto no confirma.**
+
+**3 · Lo que sí se ve mirando el bloque entero**: once de sus 35 palabras no son de compras ni
+de dinero ni de trámites (`twelve`, `sixty`, `second`, `third`, `few`, `whole`, `add`,
+`monthly`, `yesterday`, `already`, `part`). A1 tiene un bloque propio de números; A2 no, y
+acabaron aquí porque los precios son números. Nota de diseño para B1.
+
+**4 · Los falsos amigos no existen en inglés, y quizá deberían.** `falsoAmigo` está en
+`FrExtra`, `ItExtra` y `PtExtra` pero no en `EnExtra`: el blueprint decidió que era problema de
+las lenguas transparentes. Diez entradas de estos dos niveles son trampas clásicas para un
+hispanohablante —`attend`, `realise`, `support`, `record`, `notice`, `discuss`, `library`,
+`parents`, `large`, `quiet`— y ninguna lo dice. No es un defecto contra el blueprint; es una
+recomendación para cambiarlo.
+
+**5 · Las colocaciones están bien.** Se midió si eran *chunks* o frases: el 13 % da positivo,
+pero es el medidor, que cuenta `the bus station` y `the English class` como oraciones. Las que
+sí lo son —`I am tired`, `my head hurts`, `my name is…`— son expresiones fijas que conviene
+guardar enteras. Sin hallazgo.
+
+### Auditoría 5.3 · usuario promedio — 12 ago 2026
+
+**La hizo un agente, no una persona.** Dos defectos que solo se ven jugando, y los dos se
+midieron en vez de mirarse a ojo:
+
+**1 · Nueve pares de glosas colisionaban dentro de la misma unidad.** Importa porque los
+distractores de la caja 1 salen de esa unidad, y en las cajas 2 y 3 **el estudiante solo ve el
+español**: no tiene con qué desempatar. Cinco eran reales y se arreglaron cambiando la glosa
+—que no se locuta, así que salió gratis—: `anyone` («alguien / nadie» → «alguien (en preguntas
+y negativas)»), `page`, `grass`, `time` y `say`. Las otras cuatro eran ruido del troceado
+(`darse cuenta` vs `darse prisa`).
+
+**2 · Frases que comparten molde.** Es el defecto que la auditoría de A1 ya había cazado
+—«X is tired after Y» cinco veces— y que vuelve en cuanto nadie lo mide. A2 salió limpio: dos
+pares en 350. A1 tenía once, tres de ellos en la misma unidad. Se corrigieron los dos que eran
+de cosecha propia y no del corpus:
+
+- `heart` decía «Walking every day is good for the heart», que es la frase de `health` con otra
+  palabra al final.
+- `arm` decía «She has got long arms» dos fichas después de «She has got a happy face».
+
+Se dejan, justificados: `many`/`some` es un par mínimo que **enseña** la distinción;
+`repeat`/`help` son las dos fórmulas canónicas de cortesía; `rent`/`jar` son del corpus y
+cambiarlas rompería el enlace con la lección.
+
 ### Lo que queda de la fase
 
-1. Las auditorías **5.2 pedagógica** y **5.3 de usuario promedio**. La 5.1 y la 5.4 están en
-   verde.
-2. Decidir si el bloque 3 cambia sus cinco palabras de oficina.
+1. Añadir `past-continuous` al módulo de gramática de A2 — el material ya lo enseña.
+2. Decidir si `falsoAmigo` entra en `EnExtra`, con las diez entradas ya identificadas.
 
 ---
 
@@ -559,4 +630,8 @@ sin leer commits.
 | 12 ago 2026 | inglés A2, cruce | **Tres instrumentos independientes señalaron el mismo bloque.** Salud iba ya con 35 de 35 redactados; el cruce le dio además el peor porcentaje en banda (57 %) y nueve palabras fuera de la lista. Cuando corpus, banda y lista coinciden, no hay nada que reescribir: falta material. En cambio el bloque 3 (compras) salió al 60 % por otra causa —`accounting`, `council`, `collection`, `limited`, `reminder`— y esa sí es nuestra: **el bloque se fue del mostrador a la oficina** |
 | 12 ago 2026 | inglés A2, cruce | El total de un nivel esconde el reparto. El 14 % por encima de banda no decía nada hasta desglosarlo por bloque: ocho de los diez estaban entre 69 % y 83 %, y los dos que había que mirar se veían solos. **Un porcentaje de nivel no es un diagnóstico; el desglose por bloque sí** |
 | 12 ago 2026 | inglés A1, índice | **Un `noindex` con condición de salida no se quita solo.** El de A1 decía «se quita cuando el nivel pase su Puerta 2»; A1 la pasó el 9 de agosto y el `noindex` seguía puesto tres días después. Se descubrió por casualidad, preparando el de A2. El que pone la condición casi nunca es quien está delante el día que se cumple: si algo tiene que salir al índice, va al sitemap desde el registro, no a la memoria de nadie |
+| 12 ago 2026 | inglés A1, audio | **El audio se saltaba por existencia del archivo, no por contenido.** La auditoría pedagógica del 9 ago cambió varias frases de A1 y nadie regeneró la voz: durante tres días el mp3 decía «My body is tired after work» mientras la ficha mostraba «A body has got two arms and two legs». No dio ni un error. Se vio de casualidad, porque una regeneración salió con gasto cero. El script compara ahora el texto del manifiesto con el de la ficha, avisa en la factura y **sale con error** si se salta algo desfasado |
+| 12 ago 2026 | inglés A2, 5.2 | **Dos síntomas iguales, dos causas opuestas.** Trece ejemplos usaban gramática de B1. Nueve eran un defecto —pasado perfecto y pasiva sueltos en las lecturas— y cuatro no lo eran: el pasado continuo lo enseñan dos episodios enteros del propio nivel, y lo que falta es el tema de gramática. Corregir los trece igual habría borrado material bueno. **Antes de arreglar, abrir la fuente** |
+| 12 ago 2026 | inglés A2, 5.2 | Se había recomendado cambiar cinco palabras del bloque de compras por «irse a la oficina». Al mirar el bloque entero la recomendación se cayó: A1 se llevó `price`, `pay`, `cost`, `cheap`, `expensive`, `card`, `buy`, `sell`, `shop` y `money`, y A2 ya tenía `customer`, `bill` y `change`. No había nada mejor que poner. **Cinco palabras sueltas inventan una deriva que el conjunto no confirma** |
+| 12 ago 2026 | inglés A1+A2, 5.3 | Las glosas se revisaban una a una y así no se ve lo único que importa: que **dos de la misma unidad no se puedan distinguir**. `anyone` decía «alguien / nadie» y competía con `nobody` («nadie») entre los distractores de su propia caja 1. En las cajas 2 y 3 el estudiante solo ve el español, así que no tiene con qué desempatar. Nueve pares medidos, cinco reales, arreglados cambiando la glosa — que no se locuta y sale gratis |
 | 12 ago 2026 | árbol compartido | `node_modules` apareció vacío —carpeta creada, cero ficheros— y con él no compilaba nada: ni el guardián, ni `tsc`, ni el build. No dio ningún error que lo dijera; solo un `Cannot find module 'typescript'` desde un script. **Antes de creerse que un script está roto, mirar si el árbol tiene dependencias** |

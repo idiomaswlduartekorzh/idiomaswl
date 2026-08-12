@@ -230,7 +230,7 @@ const b7unidad3: VocabEntry[] = [
     { target: 'If nobody comes, we’ll still open on Sunday.', es: 'Si no viene nadie, abrimos igual el domingo.', episodio: 13 },
     { tipo: 'otro' }),
 
-  en('en-a2-026', 'anyone', 'alguien / nadie', 'pronombre', 'AN-y-one',
+  en('en-a2-026', 'anyone', 'alguien (en preguntas y negativas)', 'pronombre', 'AN-y-one',
     [c('has anyone said anything?', '¿alguien ha dicho algo?'), c('anyone with heavy bags', 'quien lleve bolsas pesadas'), c('before anyone tries it', 'antes de que nadie lo intente')],
     { target: 'Has anyone said anything bad?', es: '¿Alguien ha dicho algo malo?', episodio: 16 },
     { tipo: 'otro' }),
@@ -563,9 +563,11 @@ const b6unidad3: VocabEntry[] = [
   en('en-a2-070', 'delivery', 'entrega / reparto', 'sustantivo', 'de-LIV-er-y',
     [c('a delivery arrives', 'llega un reparto'), c('the milk delivery', 'la entrega de la leche'), c('wait for the delivery', 'esperar el reparto')],
     {
-      target: 'I had expected the work to be quiet, but the room became busy when a delivery arrived.',
-      es: 'Esperaba un trabajo tranquilo, pero la sala se llenó de movimiento cuando llegó un reparto.',
-      lectura: 'en-a2-weekend-volunteer-shift',
+      target: 'The room became busy when a delivery arrived.',
+      es: 'La sala se llenó de movimiento cuando llegó un reparto.',
+      motivo: 'La frase del turno de voluntariado empieza por «I had expected», y el pasado perfecto ' +
+        'es B1 en este currículo. Se conserva su segunda mitad, que va en pasado simple y cuenta la ' +
+        'misma escena del almacén.',
     },
     { tipo: 'sustantivo' }),
 ]
@@ -603,18 +605,22 @@ const b2unidad1: VocabEntry[] = [
   en('en-a2-073', 'task', 'tarea', 'sustantivo', 'task',
     [c('learn a new task', 'aprender una tarea nueva'), c('the first task', 'la primera tarea'), c('finish the task', 'terminar la tarea')],
     {
-      target: 'Before her first job interview, Noor wrote down examples of times when she had solved a problem, helped a customer, or learned a new task.',
-      es: 'Antes de su primera entrevista de trabajo, Noor apuntó ejemplos de veces en que había resuelto un problema, ayudado a un cliente o aprendido una tarea nueva.',
-      lectura: 'en-a2-first-job-interview',
+      target: 'Noor learned a new task on her first day.',
+      es: 'Noor aprendió una tarea nueva en su primer día.',
+      motivo: 'La única frase de la lectura con «task» va en pasado perfecto —«she had solved a ' +
+        'problem, helped a customer, or learned a new task»— y eso es B1. Se reescribe en pasado ' +
+        'simple con la misma protagonista y el mismo hecho.',
     },
     { tipo: 'sustantivo' }),
 
   en('en-a2-074', 'problem', 'problema', 'sustantivo', 'PROB-lem',
     [c('solve a problem', 'resolver un problema'), c('a small problem', 'un problema pequeño'), c('the problem is the water', 'el problema es el agua')],
     {
-      target: 'Before her first job interview, Noor wrote down examples of times when she had solved a problem, helped a customer, or learned a new task.',
-      es: 'Antes de su primera entrevista de trabajo, Noor apuntó ejemplos de veces en que había resuelto un problema, ayudado a un cliente o aprendido una tarea nueva.',
-      lectura: 'en-a2-first-job-interview',
+      target: 'Noor solved a problem for a customer last week.',
+      es: 'Noor resolvió un problema de un cliente la semana pasada.',
+      motivo: 'Mismo caso que «task»: la frase comparte el pasado perfecto de la lectura. Se ' +
+        'reescribe en pasado simple, y se separa de la de «task» para que ninguna de las dos ' +
+        'dependa de la otra al vaciarse el hueco.',
     },
     { tipo: 'sustantivo' }),
 
@@ -675,18 +681,22 @@ const b2unidad1: VocabEntry[] = [
   en('en-a2-081', 'result', 'resultado', 'sustantivo', 're-SULT',
     [c('know the result', 'saber el resultado'), c('wait for the result', 'esperar el resultado'), c('a good result', 'un buen resultado')],
     {
-      target: 'She left without knowing the result, but she felt prepared because she had shown how she worked rather than only describing her qualities.',
-      es: 'Se fue sin saber el resultado, pero se sintió preparada porque había enseñado cómo trabajaba en vez de solo describir sus cualidades.',
-      lectura: 'en-a2-first-job-interview',
+      target: 'She did not know the result until Friday.',
+      es: 'No supo el resultado hasta el viernes.',
+      motivo: 'La frase de la lectura lleva «she had shown», pasado perfecto, que es B1. Se ' +
+        'reescribe en pasado simple manteniendo lo que enseña la palabra: que el resultado se ' +
+        'espera y no se sabe al salir.',
     },
     { tipo: 'sustantivo' }),
 
   en('en-a2-082', 'quality', 'cualidad / calidad', 'sustantivo', 'QUAL-i-ty',
     [c('describe your qualities', 'describir tus cualidades'), c('the quality of the bread', 'la calidad del pan'), c('her best quality', 'su mejor cualidad')],
     {
-      target: 'She left without knowing the result, but she felt prepared because she had shown how she worked rather than only describing her qualities.',
-      es: 'Se fue sin saber el resultado, pero se sintió preparada porque había enseñado cómo trabajaba en vez de solo describir sus cualidades.',
-      lectura: 'en-a2-first-job-interview',
+      target: 'The manager asked about her best quality.',
+      es: 'El responsable preguntó por su mejor cualidad.',
+      motivo: 'Comparte con «result» la frase de pasado perfecto de la lectura. Se reescribe en ' +
+        'pasado simple, y con la acepción de «cualidad» —no la de «calidad»— porque es la que ' +
+        'usa la entrevista.',
     },
     { tipo: 'sustantivo' }),
 ]
@@ -867,9 +877,11 @@ const b2unidad3: VocabEntry[] = [
   en('en-a2-105', 'reason', 'motivo / razón', 'sustantivo', 'REA-son',
     [c('explain the reason', 'explicar el motivo'), c('a good reason', 'un buen motivo'), c('the reason is the rain', 'el motivo es la lluvia')],
     {
-      target: 'During the trial, whenever a bag was rejected, the team left a short note explaining the reason instead of simply leaving it on the pavement.',
-      es: 'Durante la prueba, cada vez que se rechazaba una bolsa, el equipo dejaba una nota corta explicando el motivo en vez de dejarla sin más en la acera.',
-      lectura: 'en-a2-recycling-collection-plan',
+      target: 'The team left a short note to explain the reason.',
+      es: 'El equipo dejó una nota corta para explicar el motivo.',
+      motivo: 'La frase del plan de reciclaje dice «a bag was rejected», y la pasiva es B1 en este ' +
+        'currículo. Se reescribe en pasado simple con infinitivo de finalidad, conservando la nota ' +
+        'y el motivo, que es la escena que enseña la palabra.',
     },
     { tipo: 'sustantivo' }),
 ]
@@ -890,7 +902,7 @@ const b8unidad1: VocabEntry[] = [
     { target: 'I’ve never seen my name on a website before.', es: 'Nunca había visto mi nombre en una página web.', episodio: 16 },
     { tipo: 'sustantivo' }),
 
-  en('en-a2-107', 'page', 'página', 'sustantivo', 'page',
+  en('en-a2-107', 'page', 'página (de un sitio o de un libro)', 'sustantivo', 'page',
     [c('the neighbourhood page', 'la página del barrio'), c('open the page', 'abrir la página'), c('on the first page', 'en la primera página')],
     { target: 'It’s on the neighbourhood page. Somebody wrote it last night.', es: 'Está en la página del barrio. Alguien la escribió anoche.', episodio: 16 },
     { tipo: 'sustantivo' }),
@@ -1021,9 +1033,11 @@ const b8unidad2: VocabEntry[] = [
   en('en-a2-123', 'note', 'nota', 'sustantivo', 'note',
     [c('a short note', 'una nota corta'), c('leave a note', 'dejar una nota'), c('read my note', 'lee mi nota')],
     {
-      target: 'During the trial, whenever a bag was rejected, the team left a short note explaining the reason instead of simply leaving it on the pavement.',
-      es: 'Durante la prueba, cada vez que se rechazaba una bolsa, el equipo dejaba una nota corta explicando el motivo en vez de dejarla sin más en la acera.',
-      lectura: 'en-a2-recycling-collection-plan',
+      target: 'She left a short note on the kitchen table.',
+      es: 'Dejó una nota corta en la mesa de la cocina.',
+      motivo: 'Comparte con «reason» la frase de pasiva del plan de reciclaje. Se reescribe en ' +
+        'pasado simple y con la mesa de la cocina, que sí es del nivel, para que las dos fichas ' +
+        'no dependan de la misma frase.',
     },
     { tipo: 'sustantivo' }),
 
@@ -1129,18 +1143,21 @@ const b8unidad3: VocabEntry[] = [
   en('en-a2-135', 'detail', 'detalle', 'sustantivo', 'DE-tail',
     [c('notice details', 'fijarse en los detalles'), c('a small detail', 'un detalle pequeño'), c('explain the details', 'explicar los detalles')],
     {
-      target: 'The museum says the guide is designed to help visitors notice details, not to replace the labels beside the objects.',
-      es: 'El museo dice que la guía está pensada para que los visitantes se fijen en los detalles, no para sustituir las etiquetas de al lado de los objetos.',
-      lectura: 'en-a2-museum-audio-guide',
+      target: 'The guide helps visitors notice small details.',
+      es: 'La guía ayuda a los visitantes a fijarse en los detalles pequeños.',
+      motivo: 'La frase del museo dice «the guide is designed to», y la pasiva es B1. Se reescribe ' +
+        'en presente simple con la misma audioguía y los mismos detalles.',
     },
     { tipo: 'sustantivo' }),
 
   en('en-a2-136', 'label', 'etiqueta / cartelito', 'sustantivo', 'LA-bel',
     [c('the labels beside the objects', 'las etiquetas junto a los objetos'), c('read the label', 'leer la etiqueta'), c('clearly labelled', 'claramente etiquetado')],
     {
-      target: 'The museum says the guide is designed to help visitors notice details, not to replace the labels beside the objects.',
-      es: 'El museo dice que la guía está pensada para que los visitantes se fijen en los detalles, no para sustituir las etiquetas de al lado de los objetos.',
-      lectura: 'en-a2-museum-audio-guide',
+      target: 'Every box in the storage room has a label.',
+      es: 'Cada caja del almacén tiene una etiqueta.',
+      motivo: 'Dos frases del material tienen «label» y ninguna sirve: la del museo es pasiva —«is ' +
+        'designed to»— y la del turno de voluntariado ya enseña «coordinator» y «storage», que es ' +
+        'el tope de dos por frase. Se reescribe en presente simple con ese mismo almacén.',
     },
     { tipo: 'sustantivo' }),
 
@@ -2275,9 +2292,11 @@ const b1unidad3: VocabEntry[] = [
   en('en-a2-277', 'motorway', 'autopista', 'sustantivo', 'MO-tor-way',
     [c('on the motorway', 'en la autopista'), c('leave the motorway', 'salir de la autopista'), c('the motorway is closed', 'la autopista está cortada')],
     {
-      target: 'The motorway was closed, so the bus used a different route.',
-      es: 'La autopista estaba cortada, así que el autobús usó otra ruta.',
-      motivo: 'La única vía del nivel es una carretera de campo junto a Hill Farm. Se escribe reutilizando el cambio de ruta del autobús 18.',
+      target: 'The bus left the motorway and took a smaller road.',
+      es: 'El autobús salió de la autopista y tomó una carretera más pequeña.',
+      motivo: 'La única vía del nivel es una carretera de campo junto a Hill Farm. Se escribe ' +
+        'reutilizando el cambio de ruta del autobús 18. La primera versión decía «the motorway was ' +
+        'closed», que un A2 lee como pasiva aunque aquí fuera un estado, y la pasiva es B1.',
     },
     { tipo: 'sustantivo' }),
 
@@ -2496,7 +2515,7 @@ const b10unidad2: VocabEntry[] = [
     },
     { tipo: 'sustantivo' }),
 
-  en('en-a2-300', 'grass', 'hierba / césped', 'sustantivo', 'grass',
+  en('en-a2-300', 'grass', 'césped', 'sustantivo', 'grass',
     [c('sit on the grass', 'sentarse en la hierba'), c('cut the grass', 'cortar el césped'), c('the grass is wet', 'la hierba está mojada')],
     {
       target: 'The children played on the grass all afternoon.',
@@ -2782,9 +2801,12 @@ const b4unidad1: VocabEntry[] = [
   en('en-a2-326', 'heart', 'corazón', 'sustantivo', 'heart',
     [c('a strong heart', 'un corazón fuerte'), c('my heart is fast', 'el corazón me va rápido'), c('good for the heart', 'bueno para el corazón')],
     {
-      target: 'Walking every day is good for the heart.',
-      es: 'Andar todos los días es bueno para el corazón.',
-      motivo: 'A1 lo dejó fuera por no estar en su corpus y en A2 tampoco aparece. Es la palabra que más se echa de menos de un cuerpo por dentro.',
+      target: 'The doctor listened to my heart for a minute.',
+      es: 'El médico me escuchó el corazón un minuto.',
+      motivo: 'A1 lo dejó fuera por no estar en su corpus y en A2 tampoco aparece. Es la palabra ' +
+        'que más se echa de menos de un cuerpo por dentro. La primera versión decía «Walking every ' +
+        'day is good for the heart», que es la frase de «health» con otra palabra al final: dos ' +
+        'fichas del mismo bloque con el mismo molde. Se reescribe con «doctor», que sí está en A1.',
     },
     { tipo: 'sustantivo' }),
 

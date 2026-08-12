@@ -300,7 +300,7 @@ const unidad4: VocabEntry[] = [
 // ─── Unidad 1 · La hora ───────────────────────────────────────────────────────
 
 const b2unidad1: VocabEntry[] = [
-  en('en-a1-041', 'time', 'hora / tiempo', 'sustantivo', 'time',
+  en('en-a1-041', 'time', 'la hora (qué hora es)', 'sustantivo', 'time',
     [c('what time is it?', '¿qué hora es?'), c('at the same time', 'a la misma hora'), c('I have no time', 'no tengo tiempo')],
     { target: 'What time do you get up?', es: '¿A qué hora te levantas?', episodio: 6 },
     { tipo: 'sustantivo' }),
@@ -1542,7 +1542,7 @@ const b8unidad3: VocabEntry[] = [
     { target: 'Those tiles are from 1971. I know every one.', es: 'Esas baldosas son de 1971. Me sé cada una.', episodio: 20 },
     { tipo: 'verbo' }),
 
-  en('en-a1-218', 'say', 'decir', 'verbo', 'say',
+  en('en-a1-218', 'say', 'decir (algo)', 'verbo', 'say',
     [c('what do you say?', '¿qué dices?'), c('say the same thing', 'decir lo mismo'), c('say yes', 'decir que sí')],
     { target: 'My grandfather says the same thing.', es: 'Mi abuelo dice exactamente lo mismo.', episodio: 13 },
     { tipo: 'verbo' }),
@@ -1691,9 +1691,12 @@ const b5unidad1: VocabEntry[] = [
   en('en-a1-233', 'arm', 'brazo', 'sustantivo', 'arm',
     [c('tired arms', 'brazos cansados'), c('under your arm', 'debajo del brazo'), c('long arms', 'brazos largos')],
     {
-      target: 'She has got long arms.',
-      es: 'Tiene los brazos largos.',
-      motivo: SIN_TEMA('arm', 'El buscador la daba por presente y era «warm» del episodio 14.'),
+      target: 'I carry the box under my arm.',
+      es: 'Llevo la caja debajo del brazo.',
+      motivo: SIN_TEMA('arm', 'El buscador la daba por presente y era «warm» del episodio 14.') +
+        ' La primera versión decía «She has got long arms», el mismo molde que «She has got a ' +
+        'happy face» dos fichas antes: en la misma unidad, el hueco de la caja 4 se rellenaba ' +
+        'por memoria del patrón y no por saber la palabra.',
     },
     { tipo: 'sustantivo' }),
 ]
