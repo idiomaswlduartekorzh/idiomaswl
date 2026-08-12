@@ -42,7 +42,8 @@ export type MatchingHeadingsLevel = {
   masteryScore: number;
 };
 
-export const MATCHING_HEADINGS_STORAGE_KEY = 'welearn:ielts-reading:matching-headings:v1';
+export const MATCHING_HEADINGS_STORAGE_KEY = 'welearn:ielts-reading:matching-headings:v2';
+export const MATCHING_HEADINGS_LEGACY_STORAGE_KEY = 'welearn:ielts-reading:matching-headings:v1';
 
 export const MATCHING_HEADINGS_PASSAGES: MatchingHeadingsTrainingPassage[] = [
   {
@@ -53,10 +54,10 @@ export const MATCHING_HEADINGS_PASSAGES: MatchingHeadingsTrainingPassage[] = [
     sourceNote: 'Original WeLearn passage grounded in EPA explanations of heat islands, vegetation and cool roofs.',
     headings: [
       { id: 'i', text: 'Mapping the problem before choosing a response' },
-      { id: 'ii', text: 'Why built surfaces create a local heat difference' },
+      { id: 'ii', text: 'The physical origins of uneven urban warming' },
       { id: 'iii', text: 'Two cooling services provided by vegetation' },
       { id: 'iv', text: 'A winter cost that makes reflective roofs useless' },
-      { id: 'v', text: 'Changing a roof rather than the whole building' },
+      { id: 'v', text: 'A targeted intervention at the top of a property' },
       { id: 'vi', text: 'A new habitat designed mainly for city wildlife' },
       { id: 'vii', text: 'Using a local combination instead of one universal fix' },
     ],
@@ -100,11 +101,11 @@ export const MATCHING_HEADINGS_PASSAGES: MatchingHeadingsTrainingPassage[] = [
     sourceUrl: 'https://coast.noaa.gov/states/stories/mangrove-restoration.html',
     sourceNote: 'Original WeLearn passage grounded in NOAA reporting on restoration, coastal protection and community partnerships.',
     headings: [
-      { id: 'vi', text: 'A living barrier against waves and wind' },
+      { id: 'vi', text: 'A flexible coastal defence created by nature' },
       { id: 'ii', text: 'Repairing water movement before replanting' },
-      { id: 'iii', text: 'Restoration work that also develops local skills' },
+      { id: 'iii', text: 'Ecological repair builds workforce capability' },
       { id: 'iv', text: 'The damage that turned concern into action' },
-      { id: 'v', text: 'Benefits that extend beyond storm protection' },
+      { id: 'v', text: 'Why restoration has a wider purpose' },
       { id: 'i', text: 'Why engineered coastal walls always fail' },
       { id: 'vii', text: 'Judging success only by the number of planted trees' },
     ],
@@ -144,9 +145,9 @@ export const MATCHING_HEADINGS_PASSAGES: MatchingHeadingsTrainingPassage[] = [
   {
     id: 'sleep-builds-memory',
     title: 'What sleep does to a new memory',
-    sourceTitle: 'NIH — Sleep On It',
-    sourceUrl: 'https://newsinhealth.nih.gov/2013/04/sleep-it',
-    sourceNote: 'Original WeLearn passage grounded in NIH explanations of sleep before learning, consolidation and memory research.',
+    sourceTitle: 'NIMH — How the Brain Creates New Memories While Maintaining Old Ones',
+    sourceUrl: 'https://www.nimh.nih.gov/news/science-updates/2025/how-the-brain-creates-new-memories-while-maintaining-old-ones',
+    sourceNote: 'Original WeLearn passage grounded in current NIMH explanations of sleep, memory reactivation and separation between newer and older memories.',
     headings: [
       { id: 'i', text: 'An active process hidden inside a resting body' },
       { id: 'ii', text: 'A single sleep schedule suitable for every learner' },
@@ -154,7 +155,7 @@ export const MATCHING_HEADINGS_PASSAGES: MatchingHeadingsTrainingPassage[] = [
       { id: 'iv', text: 'Why lost sleep affects more than recall' },
       { id: 'v', text: 'Strengthening information after it is learned' },
       { id: 'vi', text: 'Replacing study time with longer sleep' },
-      { id: 'vii', text: 'Keeping newer and older memories separate' },
+      { id: 'vii', text: 'How alternating activation prevents interference' },
     ],
     paragraphs: [
       {
@@ -196,13 +197,13 @@ export const MATCHING_HEADINGS_PASSAGES: MatchingHeadingsTrainingPassage[] = [
     sourceUrl: 'https://science.nasa.gov/citizen-science/',
     sourceNote: 'Original WeLearn passage grounded in NASA descriptions of volunteer projects, tools, collaboration and publications.',
     headings: [
-      { id: 'i', text: 'Protecting quality through a shared method' },
-      { id: 'ii', text: 'Turning many small observations into research capacity' },
+      { id: 'i', text: 'Making mass contributions comparable' },
+      { id: 'ii', text: 'Scale through distributed public participation' },
       { id: 'iii', text: 'Why volunteers must already be professional scientists' },
       { id: 'iv', text: 'Different tools for different kinds of participation' },
       { id: 'v', text: 'Results for both research and participants' },
       { id: 'vi', text: 'A competition between people and algorithms' },
-      { id: 'vii', text: 'Combining human judgement with automated search' },
+      { id: 'vii', text: 'A partnership between manual insight and software' },
     ],
     paragraphs: [
       {
@@ -244,13 +245,13 @@ export const MATCHING_HEADINGS_PASSAGES: MatchingHeadingsTrainingPassage[] = [
     sourceUrl: 'https://www.ars.usda.gov/crop-production-and-protection/plant-genetic-resources-genomics-and-genetic-improvement/',
     sourceNote: 'Original WeLearn passage grounded in the USDA mission to safeguard and use plant genetic resources and associated information.',
     headings: [
-      { id: 'i', text: 'Information that gives a sample meaning' },
+      { id: 'i', text: 'Why documentation matters' },
       { id: 'ii', text: 'Why every seed should be frozen in the same way' },
-      { id: 'iii', text: 'Producing fresh seed when viability falls' },
+      { id: 'iii', text: 'Restoring a weakened sample' },
       { id: 'iv', text: 'Protecting diversity as a resource for the future' },
       { id: 'v', text: 'Replacing traditional crops with one modern variety' },
-      { id: 'vi', text: 'Storage that requires monitoring rather than abandonment' },
-      { id: 'vii', text: 'A collection gains value when it can be used' },
+      { id: 'vi', text: 'Preservation needs continuing supervision' },
+      { id: 'vii', text: 'Why safeguarding is incomplete without distribution' },
     ],
     paragraphs: [
       {
@@ -292,13 +293,13 @@ export const MATCHING_HEADINGS_PASSAGES: MatchingHeadingsTrainingPassage[] = [
     sourceUrl: 'https://transport.ec.europa.eu/news-events/news/connecting-europe-train-10-eu-pilot-services-boost-cross-border-rail-2023-01-31_en',
     sourceNote: 'Original WeLearn passage grounded in EU pilot-service reporting and ERA information about sleeper-train authorisation.',
     headings: [
-      { id: 'i', text: 'New vehicles as one condition for expansion' },
+      { id: 'i', text: 'Rolling stock enables—but cannot guarantee—growth' },
       { id: 'ii', text: 'Why every proposed route is already profitable' },
       { id: 'iii', text: 'Renewed demand becomes a set of practical trials' },
-      { id: 'iv', text: 'The passenger problem created by fragmented booking' },
+      { id: 'iv', text: 'Why buying a connected journey remains difficult' },
       { id: 'v', text: 'Replacing all daytime rail with sleeper services' },
-      { id: 'vi', text: 'Barriers that appear when a train crosses systems' },
-      { id: 'vii', text: 'An attractive alternative that still needs the right conditions' },
+      { id: 'vi', text: 'Operational incompatibilities across national networks' },
+      { id: 'vii', text: 'Promise constrained by interdependent requirements' },
     ],
     paragraphs: [
       {
@@ -376,11 +377,46 @@ export const MATCHING_HEADINGS_LEVELS: MatchingHeadingsLevel[] = [
     instruction: 'Work steadily, preserve evidence quality and submit all five decisions together.', passageIds: ['keeping-seeds-useful'], masteryScore: 4,
   },
   {
-    id: 'rail-passage', title: 'Mastery set · Night trains', focus: 'Unseen transfer',
-    instruction: 'Use the complete method independently. A score of 4/5 unlocks mastery.', passageIds: ['night-trains-cross-borders'], masteryScore: 4,
+    id: 'rail-passage', title: 'Skill mastery set · Night trains', focus: 'Unseen transfer',
+    instruction: 'Use the complete method independently. A score of 4/5 records WeLearn skill mastery, not IELTS exam readiness.', passageIds: ['night-trains-cross-borders'], masteryScore: 4,
   },
 ];
 
 export function getMatchingHeadingsPassage(id: string) {
   return MATCHING_HEADINGS_PASSAGES.find((passage) => passage.id === id);
+}
+
+function hashDrillSeed(value: string) {
+  let hash = 2166136261;
+  for (const character of value) {
+    hash ^= character.codePointAt(0) ?? 0;
+    hash = Math.imul(hash, 16777619);
+  }
+  return hash >>> 0;
+}
+
+/**
+ * Returns four auditable drill options in a deterministic but varied order.
+ * The order changes between attempts and never depends on answer correctness.
+ * Keeping this pure lets the content gate detect positional shortcuts before UI ships.
+ */
+export function getMatchingHeadingsDrillOptionIds(
+  passage: MatchingHeadingsTrainingPassage,
+  paragraph: MatchingHeadingsParagraph,
+  attemptSeed: number,
+) {
+  const optionIds = [paragraph.answerHeadingId, paragraph.closestDistractorId];
+  for (const heading of passage.headings) {
+    if (!optionIds.includes(heading.id)) optionIds.push(heading.id);
+    if (optionIds.length === 4) break;
+  }
+
+  let seed = hashDrillSeed(`${paragraph.id}:${Math.max(0, Math.trunc(attemptSeed))}`);
+  const shuffled = optionIds.slice();
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0;
+    const target = seed % (index + 1);
+    [shuffled[index], shuffled[target]] = [shuffled[target], shuffled[index]];
+  }
+  return shuffled;
 }

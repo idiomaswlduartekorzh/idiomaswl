@@ -122,6 +122,17 @@ export default function InternationalReadingSkillLesson({
 
           <p className={styles.answer}><strong>Short answer:</strong> {directAnswer}</p>
 
+          <nav className={styles.journeyNav} aria-label={`${name} lesson sections`}>
+            <span>Choose your next move</span>
+            <div>
+              <a href="#lesson-method">Learn the method</a>
+              <a href="#worked-example">See an example</a>
+              <a href="#guided-practice">Start guided practice</a>
+              <a href="#independent-practice">Open the full set</a>
+              {progressEngine && <a href="#progress-engine">Go to Progress Engine</a>}
+            </div>
+          </nav>
+
           <section className={styles.section} aria-labelledby="outcomes-heading">
             <div className={styles.sectionHeader}>
               <p className={styles.eyebrow}>What this skill changes</p>
@@ -133,7 +144,7 @@ export default function InternationalReadingSkillLesson({
             </div>
           </section>
 
-          <section className={styles.section} aria-labelledby="method-heading">
+          <section id="lesson-method" className={styles.section} aria-labelledby="method-heading">
             <div className={styles.sectionHeader}>
               <p className={styles.eyebrow}>WeLearn method</p>
               <h2 id="method-heading">A repeatable process, not a shortcut</h2>
@@ -148,7 +159,7 @@ export default function InternationalReadingSkillLesson({
             </div>
           </section>
 
-          <section className={styles.section} aria-labelledby="example-heading">
+          <section id="worked-example" className={styles.section} aria-labelledby="example-heading">
             <div className={styles.sectionHeader}>
               <p className={styles.eyebrow}>Worked contrast</p>
               <h2 id="example-heading">See the difference before you practise</h2>
@@ -159,7 +170,7 @@ export default function InternationalReadingSkillLesson({
             </div>
           </section>
 
-          <section className={`${styles.section} ${styles.practice}`} aria-labelledby="guided-practice-heading">
+          <section id="guided-practice" className={`${styles.section} ${styles.practice}`} aria-labelledby="guided-practice-heading">
             <div className={styles.sectionHeader}>
               <p className={styles.eyebrow}>Guided practice</p>
               <h2 id="guided-practice-heading">Apply the method with immediate feedback</h2>
@@ -168,7 +179,7 @@ export default function InternationalReadingSkillLesson({
             {practice}
           </section>
 
-          <section className={styles.section} aria-labelledby="independent-heading">
+          <section id="independent-practice" className={styles.section} aria-labelledby="independent-heading">
             {independentPracticeExperience && (
               <>
                 <div className={styles.sectionHeader}>
@@ -198,7 +209,7 @@ export default function InternationalReadingSkillLesson({
           </section>
 
           {progressEngine && (
-            <section className={styles.section} aria-label={`${name} progressive practice`}>
+            <section id="progress-engine" className={styles.section} aria-label={`${name} progressive practice`}>
               {progressEngine}
             </section>
           )}

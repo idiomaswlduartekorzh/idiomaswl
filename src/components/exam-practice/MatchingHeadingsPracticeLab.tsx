@@ -1,10 +1,12 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useId, useMemo, useState } from 'react';
 import { ArrowRight, CheckCircle2, Clock3, LockKeyhole, RotateCcw, Target, XCircle } from 'lucide-react';
 import {
   MATCHING_HEADINGS_LEVELS,
+  MATCHING_HEADINGS_LEGACY_STORAGE_KEY,
   MATCHING_HEADINGS_STORAGE_KEY,
+  getMatchingHeadingsDrillOptionIds,
   getMatchingHeadingsPassage,
   type MatchingHeadingsErrorCode,
   type MatchingHeadingsParagraph,
@@ -14,20 +16,25 @@ import styles from './MatchingHeadingsPracticeLab.module.css';
 
 type AnswerMap = Record<string, string>;
 type LevelRecord = { attempts: number; bestScore: number; mastered: boolean };
+type AttemptDraft = { answers: AnswerMap; elapsed: number; attemptSeed: number };
 type StoredProgress = {
-  version: 1;
+  version: 2;
   unlockedLevel: number;
+  activeLevelIndex: number;
   levels: Record<string, LevelRecord>;
   errorCounts: Partial<Record<MatchingHeadingsErrorCode, number>>;
   reviewQueue: string[];
+  drafts: Record<string, AttemptDraft>;
 };
 
 const EMPTY_PROGRESS: StoredProgress = {
-  version: 1,
+  version: 2,
   unlockedLevel: 0,
+  activeLevelIndex: 0,
   levels: {},
   errorCounts: {},
   reviewQueue: [],
+  drafts: {},
 };
 
 const ERROR_LABELS: Record<MatchingHeadingsErrorCode, string> = {
@@ -54,16 +61,68 @@ function formatTime(totalSeconds: number) {
   return `${minutes}:${String(seconds).padStart(2, '0')}`;
 }
 
+function nonNegativeInteger(value: unknown, fallback = 0) {
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? Math.max(0, Math.trunc(parsed)) : fallback;
+}
+
+function normalizeLevels(value: unknown): Record<string, LevelRecord> {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return {};
+  const knownLevelIds = new Set(MATCHING_HEADINGS_LEVELS.map((level) => level.id));
+  return Object.fromEntries(Object.entries(value).flatMap(([levelId, raw]) => {
+    if (!knownLevelIds.has(levelId) || !raw || typeof raw !== 'object' || Array.isArray(raw)) return [];
+    const record = raw as Partial<LevelRecord>;
+    return [[levelId, {
+      attempts: nonNegativeInteger(record.attempts),
+      bestScore: Math.min(5, nonNegativeInteger(record.bestScore)),
+      mastered: record.mastered === true,
+    }]];
+  }));
+}
+
+function normalizeErrorCounts(value: unknown): StoredProgress['errorCounts'] {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return {};
+  const knownCodes = new Set(Object.keys(ERROR_LABELS));
+  return Object.fromEntries(Object.entries(value).flatMap(([code, count]) => (
+    knownCodes.has(code) && nonNegativeInteger(count) > 0 ? [[code, nonNegativeInteger(count)]] : []
+  ))) as StoredProgress['errorCounts'];
+}
+
+function normalizeDrafts(value: unknown): Record<string, AttemptDraft> {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return {};
+  const knownLevelIds = new Set(MATCHING_HEADINGS_LEVELS.map((level) => level.id));
+  return Object.fromEntries(Object.entries(value).flatMap(([levelId, raw]) => {
+    if (!knownLevelIds.has(levelId) || !raw || typeof raw !== 'object' || Array.isArray(raw)) return [];
+    const draft = raw as Partial<AttemptDraft>;
+    const answers = draft.answers && typeof draft.answers === 'object' && !Array.isArray(draft.answers)
+      ? Object.fromEntries(Object.entries(draft.answers).filter((row): row is [string, string] => typeof row[1] === 'string'))
+      : {};
+    return [[levelId, {
+      answers,
+      elapsed: nonNegativeInteger(draft.elapsed),
+      attemptSeed: nonNegativeInteger(draft.attemptSeed),
+    }]];
+  }));
+}
+
 function readProgress(): StoredProgress {
   try {
-    const parsed = JSON.parse(window.localStorage.getItem(MATCHING_HEADINGS_STORAGE_KEY) ?? 'null') as Partial<StoredProgress> | null;
-    if (!parsed || parsed.version !== 1) return EMPTY_PROGRESS;
+    const current = window.localStorage.getItem(MATCHING_HEADINGS_STORAGE_KEY);
+    const legacy = window.localStorage.getItem(MATCHING_HEADINGS_LEGACY_STORAGE_KEY);
+    const parsed = JSON.parse(current ?? legacy ?? 'null') as (Omit<Partial<StoredProgress>, 'version'> & { version?: number }) | null;
+    if (!parsed || (parsed.version !== 1 && parsed.version !== 2)) return EMPTY_PROGRESS;
+    const unlockedLevel = Math.min(7, nonNegativeInteger(parsed.unlockedLevel));
+    const requestedActiveLevel = parsed.activeLevelIndex === undefined
+      ? unlockedLevel
+      : nonNegativeInteger(parsed.activeLevelIndex);
     return {
-      version: 1,
-      unlockedLevel: Math.min(7, Math.max(0, Number(parsed.unlockedLevel) || 0)),
-      levels: parsed.levels && typeof parsed.levels === 'object' ? parsed.levels : {},
-      errorCounts: parsed.errorCounts && typeof parsed.errorCounts === 'object' ? parsed.errorCounts : {},
+      version: 2,
+      unlockedLevel,
+      activeLevelIndex: Math.min(unlockedLevel, requestedActiveLevel),
+      levels: normalizeLevels(parsed.levels),
+      errorCounts: normalizeErrorCounts(parsed.errorCounts),
       reviewQueue: Array.isArray(parsed.reviewQueue) ? parsed.reviewQueue.filter((item): item is string => typeof item === 'string') : [],
+      drafts: parsed.version === 2 ? normalizeDrafts(parsed.drafts) : {},
     };
   } catch {
     return EMPTY_PROGRESS;
@@ -111,27 +170,35 @@ function HeadingOptionButtons({
   onSelect: (headingId: string) => void;
   compact?: boolean;
 }) {
+  const groupId = `matching-headings-${useId().replace(/:/g, '')}`;
+
   return (
-    <div className={`${styles.headingOptions} ${compact ? styles.headingOptionsCompact : ''}`} role="radiogroup" aria-label={label}>
+    <fieldset className={`${styles.headingOptions} ${compact ? styles.headingOptionsCompact : ''}`}>
+      <legend className={styles.srOnly}>{label}</legend>
       {headings.map((heading) => {
         const unavailable = disabledIds.has(heading.id) && selected !== heading.id;
         return (
-          <button
+          <label
             key={heading.id}
-            type="button"
-            role="radio"
-            aria-checked={selected === heading.id}
-            disabled={disabled || unavailable}
             className={selected === heading.id ? styles.headingOptionSelected : ''}
-            onClick={() => onSelect(heading.id)}
           >
-            <span>{heading.id}</span>
-            <strong>{heading.text}</strong>
-            {unavailable && <small>Used</small>}
-          </button>
+            <input
+              type="radio"
+              name={groupId}
+              value={heading.id}
+              checked={selected === heading.id}
+              disabled={disabled || unavailable}
+              onChange={() => onSelect(heading.id)}
+            />
+            <span className={styles.headingOptionBody}>
+              <span>{heading.id}</span>
+              <strong>{heading.text}</strong>
+              {unavailable && <small>Used</small>}
+            </span>
+          </label>
         );
       })}
-    </div>
+    </fieldset>
   );
 }
 
@@ -140,20 +207,32 @@ export function MatchingHeadingsGuidedPractice({ passage }: { passage: MatchingH
   const [selected, setSelected] = useState('');
   const [checked, setChecked] = useState(false);
   const [completed, setCompleted] = useState<string[]>([]);
+  const [confirmRestart, setConfirmRestart] = useState(false);
   const paragraph = passage.paragraphs[activeIndex];
   const isCorrect = selected === paragraph.answerHeadingId;
+  const usedHeadingIds = new Set(
+    passage.paragraphs
+      .filter((item) => completed.includes(item.id))
+      .map((item) => item.answerHeadingId),
+  );
 
   function reset() {
+    if ((selected || completed.length > 0) && !confirmRestart) {
+      setConfirmRestart(true);
+      return;
+    }
     setActiveIndex(0);
     setSelected('');
     setChecked(false);
     setCompleted([]);
+    setConfirmRestart(false);
   }
 
   function continuePractice() {
     if (!isCorrect) {
       setSelected('');
       setChecked(false);
+      setConfirmRestart(false);
       return;
     }
     const nextCompleted = completed.includes(paragraph.id) ? completed : [...completed, paragraph.id];
@@ -162,17 +241,31 @@ export function MatchingHeadingsGuidedPractice({ passage }: { passage: MatchingH
       setActiveIndex((current) => current + 1);
       setSelected('');
       setChecked(false);
+      setConfirmRestart(false);
     }
   }
 
   const finished = completed.length === passage.paragraphs.length;
 
   return (
-    <section className={styles.lab} aria-label="Guided matching headings practice">
+    <section className={styles.lab} aria-label="Guided matching headings practice" data-active-practice="true">
       <div className={styles.labTopline}>
         <div><span className={styles.modeTag}>Watch one · do five</span><h3>{passage.title}</h3></div>
-        <button type="button" className={styles.textButton} onClick={reset}><RotateCcw size={16} /> Restart</button>
+        <button type="button" className={styles.textButton} onClick={reset}><RotateCcw size={16} /> {confirmRestart ? 'Press again to restart' : 'Restart'}</button>
       </div>
+
+      <aside className={styles.workedDecision} aria-labelledby="matching-headings-worked-decision">
+        <div>
+          <span className={styles.modeTag}>Worked decision</span>
+          <h4 id="matching-headings-worked-decision">Watch the complete reasoning once</h4>
+          <p>“Several rooftop trials reduced surface temperatures, but installation costs varied by building and climate.”</p>
+        </div>
+        <ol>
+          <li><strong>Name the job</strong><span>Evaluate a promising method while limiting the claim.</span></li>
+          <li><strong>Reject the trap</strong><span>“A universal solution for every building” is too broad.</span></li>
+          <li><strong>Prove coverage</strong><span>“A useful method with context-dependent limits” covers both result and qualification.</span></li>
+        </ol>
+      </aside>
 
       <div className={styles.mapRail} role="progressbar" aria-label="Guided paragraph map" aria-valuemin={0} aria-valuemax={passage.paragraphs.length} aria-valuenow={completed.length}>
         {passage.paragraphs.map((item, index) => {
@@ -203,8 +296,12 @@ export function MatchingHeadingsGuidedPractice({ passage }: { passage: MatchingH
                 headings={passage.headings}
                 selected={selected}
                 disabled={checked}
+                disabledIds={usedHeadingIds}
                 label={`Best heading for ${paragraph.label}`}
-                onSelect={setSelected}
+                onSelect={(headingId) => {
+                  setSelected(headingId);
+                  setConfirmRestart(false);
+                }}
               />
             </div>
             {checked && (
@@ -224,7 +321,7 @@ export function MatchingHeadingsGuidedPractice({ passage }: { passage: MatchingH
           </div>
         </div>
       )}
-      <p className={styles.sourceNote}><strong>Source boundary:</strong> {passage.sourceNote} <a href={passage.sourceUrl}>Review the primary source</a>.</p>
+      <p className={styles.sourceNote}><strong>Source boundary:</strong> {passage.sourceNote} <a href={passage.sourceUrl} target="_blank" rel="noopener noreferrer">Review the primary source <span className={styles.srOnly}>(opens in a new tab)</span></a>.</p>
     </section>
   );
 }
@@ -241,7 +338,7 @@ export function MatchingHeadingsIndependentPractice({ passage }: { passage: Matc
   }
 
   return (
-    <section className={styles.lab} aria-label="Independent matching headings practice">
+    <section className={styles.lab} aria-label="Independent matching headings practice" data-active-practice="true">
       <div className={styles.labTopline}>
         <div><span className={styles.modeTag}>Now you do the full set</span><h3>{passage.title}</h3><p>Feedback remains closed until all five headings are submitted.</p></div>
         <span className={styles.counter} aria-live="polite">{answered}/5 mapped</span>
@@ -283,7 +380,7 @@ export function MatchingHeadingsIndependentPractice({ passage }: { passage: Matc
         <div>{submitted ? <><strong>{score}/5 correct</strong><span>{score >= 4 ? 'Independent target reached.' : 'Review the failed heading reasons, then retry the set.'}</span></> : <><strong>One submission</strong><span>Use each heading once and leave two unused.</span></>}</div>
         <button type="button" className="btn btn-primary" disabled={!submitted && answered !== passage.paragraphs.length} onClick={() => submitted ? reset() : setSubmitted(true)}>{submitted ? 'Try a clean set' : 'Submit all headings'}</button>
       </div>
-      <p className={styles.sourceNote}><strong>Source boundary:</strong> {passage.sourceNote} <a href={passage.sourceUrl}>Review the primary source</a>.</p>
+      <p className={styles.sourceNote}><strong>Source boundary:</strong> {passage.sourceNote} <a href={passage.sourceUrl} target="_blank" rel="noopener noreferrer">Review the primary source <span className={styles.srOnly}>(opens in a new tab)</span></a>.</p>
     </section>
   );
 }
@@ -301,13 +398,10 @@ function buildLevelQuestions(levelIndex: number): EngineQuestion[] {
   }).filter((item): item is EngineQuestion => Boolean(item));
 }
 
-function mixedOptions(passage: MatchingHeadingsTrainingPassage, paragraph: MatchingHeadingsParagraph) {
-  const wanted = [paragraph.answerHeadingId, paragraph.closestDistractorId];
-  for (const heading of passage.headings) {
-    if (!wanted.includes(heading.id)) wanted.push(heading.id);
-    if (wanted.length === 4) break;
-  }
-  return wanted.map((id) => getHeading(passage, id)).filter((item): item is NonNullable<typeof item> => Boolean(item));
+function mixedOptions(passage: MatchingHeadingsTrainingPassage, paragraph: MatchingHeadingsParagraph, attemptSeed: number) {
+  return getMatchingHeadingsDrillOptionIds(passage, paragraph, attemptSeed)
+    .map((id) => getHeading(passage, id))
+    .filter((item): item is NonNullable<typeof item> => Boolean(item));
 }
 
 export function MatchingHeadingsProgressEngine() {
@@ -317,13 +411,21 @@ export function MatchingHeadingsProgressEngine() {
   const [answers, setAnswers] = useState<AnswerMap>({});
   const [submitted, setSubmitted] = useState(false);
   const [elapsed, setElapsed] = useState(0);
+  const [attemptSeed, setAttemptSeed] = useState(0);
+  const [confirmAttemptReset, setConfirmAttemptReset] = useState(false);
   const [confirmReset, setConfirmReset] = useState(false);
 
   useEffect(() => {
     const hydrationTask = window.setTimeout(() => {
       const stored = readProgress();
+      const restoredLevelIndex = Math.min(stored.activeLevelIndex, stored.unlockedLevel, 7);
+      const restoredLevel = MATCHING_HEADINGS_LEVELS[restoredLevelIndex];
+      const restoredDraft = stored.drafts[restoredLevel.id];
       setProgress(stored);
-      setLevelIndex(Math.min(stored.unlockedLevel, 7));
+      setLevelIndex(restoredLevelIndex);
+      setAnswers(restoredDraft?.answers ?? {});
+      setElapsed(restoredDraft?.elapsed ?? 0);
+      setAttemptSeed(restoredDraft?.attemptSeed ?? stored.levels[restoredLevel.id]?.attempts ?? 0);
       setHydrated(true);
     }, 0);
     return () => window.clearTimeout(hydrationTask);
@@ -346,12 +448,36 @@ export function MatchingHeadingsProgressEngine() {
     .sort(([, countA], [, countB]) => (countB ?? 0) - (countA ?? 0))
     .slice(0, 3) as Array<[MatchingHeadingsErrorCode, number]>;
 
+  useEffect(() => {
+    if (!hydrated || submitted) return;
+    const storedDrafts = readProgress().drafts;
+    const nextDrafts = {
+      ...storedDrafts,
+      [level.id]: { answers, elapsed, attemptSeed },
+    };
+    writeProgress({ ...progress, activeLevelIndex: levelIndex, drafts: nextDrafts });
+    // Draft persistence intentionally follows the active attempt, not every saved-score update.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [answers, attemptSeed, elapsed, hydrated, level.id, levelIndex, submitted]);
+
   function switchLevel(nextIndex: number) {
     if (nextIndex > progress.unlockedLevel) return;
+    const storedDrafts = readProgress().drafts;
+    const currentDrafts = submitted ? storedDrafts : {
+      ...storedDrafts,
+      [level.id]: { answers, elapsed, attemptSeed },
+    };
+    const targetLevel = MATCHING_HEADINGS_LEVELS[nextIndex];
+    const targetDraft = currentDrafts[targetLevel.id];
+    const nextProgress = { ...progress, activeLevelIndex: nextIndex, drafts: currentDrafts };
+    setProgress(nextProgress);
+    writeProgress(nextProgress);
     setLevelIndex(nextIndex);
-    setAnswers({});
+    setAnswers(targetDraft?.answers ?? {});
     setSubmitted(false);
-    setElapsed(0);
+    setElapsed(targetDraft?.elapsed ?? 0);
+    setAttemptSeed(targetDraft?.attemptSeed ?? progress.levels[targetLevel.id]?.attempts ?? 0);
+    setConfirmAttemptReset(false);
     setConfirmReset(false);
   }
 
@@ -362,24 +488,37 @@ export function MatchingHeadingsProgressEngine() {
     const wrong = questions.filter(({ paragraph }) => answers[paragraph.id] !== paragraph.answerHeadingId);
     const nextErrors = { ...progress.errorCounts };
     for (const { paragraph } of wrong) nextErrors[paragraph.errorCode] = (nextErrors[paragraph.errorCode] ?? 0) + 1;
+    const nextDrafts = { ...readProgress().drafts };
+    delete nextDrafts[level.id];
     const next: StoredProgress = {
-      version: 1,
+      version: 2,
       unlockedLevel: mastered ? Math.max(progress.unlockedLevel, Math.min(7, levelIndex + 1)) : progress.unlockedLevel,
+      activeLevelIndex: levelIndex,
       levels: {
         ...progress.levels,
         [level.id]: { attempts: previous.attempts + 1, bestScore: Math.max(previous.bestScore, score), mastered: previous.mastered || mastered },
       },
       errorCounts: nextErrors,
       reviewQueue: Array.from(new Set([...progress.reviewQueue, ...wrong.map(({ paragraph }) => paragraph.id)])).filter((id) => !questions.some(({ paragraph }) => paragraph.id === id && answers[id] === paragraph.answerHeadingId)),
+      drafts: nextDrafts,
     };
     setProgress(next);
     writeProgress(next);
   }
 
   function resetAttempt() {
+    if ((answered > 0 || elapsed > 0 || submitted) && !confirmAttemptReset) {
+      setConfirmAttemptReset(true);
+      return;
+    }
+    const nextDrafts = { ...readProgress().drafts };
+    delete nextDrafts[level.id];
     setAnswers({});
     setSubmitted(false);
     setElapsed(0);
+    setAttemptSeed((current) => current + 1);
+    setConfirmAttemptReset(false);
+    writeProgress({ ...progress, activeLevelIndex: levelIndex, drafts: nextDrafts });
   }
 
   function resetAllProgress() {
@@ -389,20 +528,26 @@ export function MatchingHeadingsProgressEngine() {
     }
     setProgress(EMPTY_PROGRESS);
     writeProgress(EMPTY_PROGRESS);
-    switchLevel(0);
+    setLevelIndex(0);
+    setAnswers({});
+    setSubmitted(false);
+    setElapsed(0);
+    setAttemptSeed(0);
+    setConfirmAttemptReset(false);
+    setConfirmReset(false);
   }
 
   return (
-    <section className={styles.engine} aria-labelledby="matching-headings-engine-title">
+    <section className={styles.engine} aria-labelledby="matching-headings-engine-title" data-active-practice="true">
       <div className={styles.engineHeading}>
-        <div><span className={styles.modeTag}>WeLearn Progress Engine</span><h2 id="matching-headings-engine-title">Build heading control across eight levels</h2><p>Recognition levels are followed by four complete passages. Your best scores, review queue and unlocked level stay on this device.</p></div>
+        <div><span className={styles.modeTag}>WeLearn Progress Engine</span><h2 id="matching-headings-engine-title">Build heading control across eight levels</h2><p>Recognition levels are followed by four complete passages. In-progress answers, elapsed time, best scores and unlocked levels stay on this device.</p></div>
         <div className={styles.engineScore}><strong>{completedCount}/8</strong><span>levels mastered</span></div>
       </div>
 
       <div className={styles.dashboard}>
         <div><Target size={19} /><span><strong>{progress.reviewQueue.length}</strong> paragraphs in review</span></div>
         <div><Clock3 size={19} /><span><strong>{formatTime(elapsed)}</strong> current attempt</span></div>
-        <div><CheckCircle2 size={19} /><span><strong>{hydrated ? 'Saved' : 'Loading'}</strong> local progress</span></div>
+        <div><CheckCircle2 size={19} /><span><strong>{hydrated ? 'Saved locally' : 'Loading'}</strong> attempt and progress</span></div>
       </div>
 
       <nav className={styles.levelRail} aria-label="Matching Headings progress levels">
@@ -429,7 +574,7 @@ export function MatchingHeadingsProgressEngine() {
           {questions.map(({ passage, paragraph }, index) => {
             const selected = answers[paragraph.id] ?? '';
             const correct = selected === paragraph.answerHeadingId;
-            const options = isFullPassage ? passage.headings : mixedOptions(passage, paragraph);
+            const options = isFullPassage ? passage.headings : mixedOptions(passage, paragraph, attemptSeed);
             const usedElsewhere = new Set(Object.entries(answers).filter(([id]) => id !== paragraph.id).map(([, value]) => value));
             return (
               <article className={styles.engineQuestion} key={paragraph.id}>
@@ -449,7 +594,10 @@ export function MatchingHeadingsProgressEngine() {
                     selected={selected}
                     disabled={submitted}
                     label={`Best heading for ${passage.title}, ${paragraph.label}`}
-                    onSelect={(headingId) => setAnswers((current) => ({ ...current, [paragraph.id]: headingId }))}
+                    onSelect={(headingId) => {
+                      setAnswers((current) => ({ ...current, [paragraph.id]: headingId }));
+                      setConfirmAttemptReset(false);
+                    }}
                     compact
                   />
                 )}
@@ -466,10 +614,10 @@ export function MatchingHeadingsProgressEngine() {
 
         <footer className={styles.engineFooter} aria-live="polite">
           <div>
-            {submitted ? <><strong>{score}/{questions.length} correct · {mastered ? 'Level mastered' : 'Target not reached yet'}</strong><span>{mastered ? 'The next level is now available.' : `Review ${questions.length - score} decision${questions.length - score === 1 ? '' : 's'} and try a clean attempt.`}</span></> : <><strong>{answered}/{questions.length} decisions complete</strong><span>Answers stay editable until you submit the level.</span></>}
+            {submitted ? <><strong>{score}/{questions.length} correct · {mastered ? 'Skill level mastered' : 'Target not reached yet'}</strong><span>{mastered ? 'The next skill level is now available. This is not an IELTS band or exam-readiness score.' : `Review ${questions.length - score} decision${questions.length - score === 1 ? '' : 's'} and try a clean attempt.`}</span></> : <><strong>{answered}/{questions.length} decisions complete</strong><span>Answers stay editable and saved locally until you submit the level.</span></>}
           </div>
           <div className={styles.actions}>
-            <button type="button" className="btn btn-ghost" onClick={resetAttempt}><RotateCcw size={16} /> Reset attempt</button>
+            <button type="button" className="btn btn-ghost" onClick={resetAttempt}><RotateCcw size={16} /> {confirmAttemptReset ? 'Press again to reset' : 'Reset attempt'}</button>
             {submitted && mastered && levelIndex < 7 ? <button type="button" className="btn btn-primary" onClick={() => switchLevel(levelIndex + 1)}>Next level <ArrowRight size={16} /></button> : <button type="button" className="btn btn-primary" disabled={submitted || answered !== questions.length} onClick={submitLevel}>Submit level</button>}
           </div>
         </footer>

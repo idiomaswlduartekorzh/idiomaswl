@@ -101,12 +101,17 @@ Move the IELTS and TOEFL practice areas from useful pilot pages to a governed, s
 
 ## 2. Non-negotiable rules
 
+The implementation contract for all new IELTS Reading question-type and subskill engines is [`ielts-reading-practice-engine-blueprint.md`](ielts-reading-practice-engine-blueprint.md). Its anti-shortcut, task-rule, native-control, draft-persistence, mobile-overlay and real-browser gates are mandatory before a pilot is copied.
+
 1. No new page enters the sitemap unless it has complete instructional content, metadata, canonical, internal links and at least one useful practice element.
 2. TOEFL 2026 official task claims must cite ETS or be worded as WeLearn strategy.
 3. IELTS question-type pages must map to IELTS official task types when placed under `tipos-de-preguntas`.
 4. Skills such as skimming, scanning, inference and paraphrasing must live under `habilidades`.
 5. Legacy TOEFL pages can exist only with clear labels and no misleading current-format claims.
 6. Exercise content must have answer, explanation, evidence or rationale, and distractor notes when applicable.
+7. A practice engine must prove that answer position and other surface cues cannot satisfy its mastery threshold.
+8. Task-specific constraints must be enforced in every mode, not only the final passage set.
+9. A promised local-progress experience must persist the in-progress attempt as well as completed scores.
 
 ## 3. Phase 1: Governance cleanup
 

@@ -117,17 +117,25 @@ export default function WhatsAppFloat() {
         /* Mobile: always compact */
         @media (max-width: 640px) {
           .wl-wa-float {
-            bottom: 16px;
-            right: 16px;
-            max-width: 48px !important;
+            bottom: max(8px, env(safe-area-inset-bottom));
+            right: max(8px, env(safe-area-inset-right));
+            z-index: 40;
+            max-width: 44px !important;
             gap: 0 !important;
+            opacity: 0.9;
           }
           .wl-wa-float__icon {
-            width: 48px;
-            height: 48px;
+            width: 44px;
+            height: 44px;
           }
           .wl-wa-float__label {
             display: none;
+          }
+        }
+        @media (max-width: 640px) {
+          body:has([data-active-practice="true"]) .wl-wa-float {
+            transform: translateX(calc(100% + 12px));
+            pointer-events: none;
           }
         }
       `}</style>

@@ -18,6 +18,19 @@
   box-shadow: 0 12px 34px rgba(20, 36, 79, 0.08);
 }
 
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .labTopline,
 .engineHeading,
 .levelHeader,
@@ -132,6 +145,51 @@
 .mapRail .mapDone { color: #88e0ba; }
 .mapRail .mapDone b { background: rgba(136, 224, 186, 0.15); }
 
+.workedDecision {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
+  gap: 1rem;
+  padding: 1rem 1.15rem;
+  border-bottom: 1px solid var(--mh-line);
+  background: #f2f6ff;
+}
+
+.workedDecision h4 {
+  margin: 0.25rem 0 0.45rem;
+  color: var(--mh-ink);
+  font-size: 1.05rem;
+}
+
+.workedDecision p {
+  margin: 0;
+  color: var(--ink-2);
+  line-height: 1.6;
+}
+
+.workedDecision ol {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.workedDecision li {
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.75rem;
+  border: 1px solid var(--mh-line);
+  border-top: 4px solid var(--mh-ink);
+  border-radius: 6px;
+  background: var(--bg);
+}
+
+.workedDecision li:nth-child(2) { border-top-color: var(--mh-bad); }
+.workedDecision li:nth-child(3) { border-top-color: var(--mh-good); }
+.workedDecision li strong { color: var(--mh-ink); font-size: 0.78rem; text-transform: uppercase; }
+.workedDecision li span { color: var(--muted); font-size: 0.8rem; line-height: 1.45; }
+
 .practiceSplit {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
@@ -218,10 +276,27 @@
 .headingOptions {
   display: grid;
   gap: 0.55rem;
+  min-width: 0;
   padding: 0.8rem;
+  border: 0;
+  margin: 0;
 }
 
-.headingOptions button {
+.headingOptions label {
+  position: relative;
+  display: block;
+  min-width: 0;
+  cursor: pointer;
+}
+
+.headingOptions input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.headingOptionBody {
   display: grid;
   grid-template-columns: 34px minmax(0, 1fr) auto;
   gap: 0.65rem;
@@ -233,21 +308,21 @@
   background: var(--bg);
   color: var(--ink-2);
   text-align: left;
-  cursor: pointer;
   transition: border-color 150ms ease, background 150ms ease, box-shadow 150ms ease, transform 150ms ease;
   touch-action: manipulation;
   -webkit-tap-highlight-color: rgba(16, 46, 111, 0.12);
 }
 
-.headingOptions button:hover:not(:disabled) {
+.headingOptions label:hover input:not(:disabled) + .headingOptionBody {
   border-color: #8295bd;
   background: #f8faff;
   transform: translateY(-1px);
 }
 
-.headingOptions button:disabled { cursor: not-allowed; opacity: 0.56; }
+.headingOptions label:has(input:disabled) { cursor: not-allowed; }
+.headingOptions input:disabled + .headingOptionBody { opacity: 0.56; }
 
-.headingOptions button > span {
+.headingOptionBody > span {
   display: grid;
   width: 32px;
   height: 32px;
@@ -258,25 +333,25 @@
   font: 900 0.74rem/1 var(--mono);
 }
 
-.headingOptions button > strong {
+.headingOptionBody > strong {
   color: inherit;
   font-size: 0.9rem;
   line-height: 1.4;
 }
 
-.headingOptions button > small {
+.headingOptionBody > small {
   color: var(--muted);
   font: 750 0.66rem/1 var(--mono);
 }
 
-.headingOptions .headingOptionSelected {
+.headingOptions .headingOptionSelected .headingOptionBody {
   border-color: var(--mh-ink);
   background: #f2f6ff;
   box-shadow: 0 0 0 2px #dbe5ff;
   color: var(--mh-ink);
 }
 
-.headingOptions .headingOptionSelected > span {
+.headingOptions .headingOptionSelected .headingOptionBody > span {
   background: var(--mh-ink);
   color: white;
 }
@@ -286,7 +361,7 @@
   padding: 0;
 }
 
-.headingOptionsCompact button {
+.headingOptionsCompact .headingOptionBody {
   min-height: 48px;
   padding: 0.55rem 0.65rem;
 }
@@ -316,7 +391,7 @@
 .engine select:focus-visible,
 .textButton:focus-visible,
 .levelRail button:focus-visible,
-.headingOptions button:focus-visible {
+.headingOptions input:focus-visible + .headingOptionBody {
   outline: 3px solid rgba(16, 46, 111, 0.24);
   outline-offset: 3px;
 }
@@ -549,6 +624,7 @@
 @media (max-width: 900px) {
   .practiceSplit,
   .engineQuestion { grid-template-columns: 1fr; }
+  .workedDecision { grid-template-columns: 1fr; }
   .passagePanel { border-right: 0; border-bottom: 1px solid var(--mh-line); }
   .independentCard { grid-template-columns: 86px 1fr; }
   .independentCard .selectLabel,
@@ -572,6 +648,7 @@
   .mapRail span { grid-template-columns: 28px; }
   .mapRail small,
   .mapRail span::after { display: none; }
+  .workedDecision ol { grid-template-columns: 1fr; }
   .headingBankHeader { display: grid; }
   .independentCard { grid-template-columns: 1fr; }
   .independentCard .selectLabel,
