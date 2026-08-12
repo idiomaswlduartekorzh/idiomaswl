@@ -23,6 +23,8 @@ import {
   MULTIPLE_CHOICE_INDEPENDENT_PASSAGE_ID,
   getMultipleChoicePassage,
 } from '@/data/practica-exams/ielts-reading-multiple-choice-progress';
+import { TfngGuidedPractice, TfngIndependentPractice, TfngProgressEngine } from '@/components/exam-practice/TfngPracticeLab';
+import { TFNG_GUIDED_PASSAGE_ID, TFNG_INDEPENDENT_PASSAGE_ID, getTfngPassage } from '@/data/practica-exams/ielts-reading-tfng-progress';
 import {
   IELTS_READING_TYPES,
   PRACTICE_BASE_URL,
@@ -169,10 +171,13 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   const route = IELTS_READING_TYPES.find((item) => item.slug === slug)!;
   const isMatchingHeadings = slug === 'matching-headings';
   const isMultipleChoice = slug === 'multiple-choice';
+  const isTfng = slug === 'true-false-not-given';
   const guidedPassage = isMatchingHeadings ? getMatchingHeadingsPassage(MATCHING_HEADINGS_GUIDED_PASSAGE_ID) : undefined;
   const independentPassage = isMatchingHeadings ? getMatchingHeadingsPassage(MATCHING_HEADINGS_INDEPENDENT_PASSAGE_ID) : undefined;
   const multipleChoiceGuided = isMultipleChoice ? getMultipleChoicePassage(MULTIPLE_CHOICE_GUIDED_PASSAGE_ID) : undefined;
   const multipleChoiceIndependent = isMultipleChoice ? getMultipleChoicePassage(MULTIPLE_CHOICE_INDEPENDENT_PASSAGE_ID) : undefined;
+  const tfngGuided = isTfng ? getTfngPassage(TFNG_GUIDED_PASSAGE_ID) : undefined;
+  const tfngIndependent = isTfng ? getTfngPassage(TFNG_INDEPENDENT_PASSAGE_ID) : undefined;
 
   return <InternationalReadingSkillLesson
     slug={slug}
@@ -195,13 +200,17 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
       ? <MatchingHeadingsGuidedPractice passage={guidedPassage} />
       : multipleChoiceGuided
         ? <MultipleChoiceGuidedPractice passage={multipleChoiceGuided} />
+      : tfngGuided
+        ? <TfngGuidedPractice passage={tfngGuided} />
       : <InternationalQuestionTypePractice name={config.name} accent={config.accent} target={config.target} evidence={config.evidence} risk={config.risk} weak={config.weak} strong={config.strong} />}
     independentPracticeExperience={independentPassage
       ? <MatchingHeadingsIndependentPractice passage={independentPassage} />
       : multipleChoiceIndependent
         ? <MultipleChoiceIndependentPractice passage={multipleChoiceIndependent} />
+      : tfngIndependent
+        ? <TfngIndependentPractice passage={tfngIndependent} />
         : undefined}
-    progressEngine={isMatchingHeadings ? <MatchingHeadingsProgressEngine /> : isMultipleChoice ? <MultipleChoiceProgressEngine /> : undefined}
+    progressEngine={isMatchingHeadings ? <MatchingHeadingsProgressEngine /> : isMultipleChoice ? <MultipleChoiceProgressEngine /> : isTfng ? <TfngProgressEngine /> : undefined}
     sourceReview={isMultipleChoice ? (
       <SkillReviewSourceBlock
         accent={config.accent}
@@ -216,7 +225,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
           { label: 'WeLearn practice blueprint', note: 'Defines held-back transfer, explicit option comparison, local progress and the client-key security boundary.' },
         ]}
       />
-    ) : undefined}
+    ) : isTfng ? <SkillReviewSourceBlock accent={config.accent} skillName="True / False / Not Given" reviewedFocus={['Guided, independent and Progress Engine passage pools are separated.', 'FALSE requires direct incompatibility rather than a weaker, stronger or merely different claim.', 'NOT GIVEN decisions name the exact missing quantity, identity, date, cost or policy.']} sources={[{ label: 'Official IELTS Academic Reading format', href: IELTS_ACADEMIC_URL, note: 'Confirms identifying-information questions and the TRUE, FALSE and NOT GIVEN evidence relationship.' }, { label: 'WeLearn practice blueprint', note: 'Defines held-back transfer, explicit evidence states, local progress and the client-key security boundary.' }]} /> : undefined}
     independentPractice={[
       `Complete one new ${config.name} set without opening feedback.`,
       `For every item, record the exact evidence used for the decision.`,

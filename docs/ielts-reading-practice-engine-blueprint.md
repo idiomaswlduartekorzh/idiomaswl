@@ -42,6 +42,10 @@ The reusable learning sequence is:
 - Guided, independent and Progress Engine Multiple Choice pools must be disjoint. Feedback must diagnose stem misread, lexical echo, partial truth, scope inflation, wrong relationship or unsupported claim.
 - The learner must commit to a native radio option and explicitly check or submit. First click cannot lock the question, reveal the key or turn an editable draft into immediate correction.
 - Full Multiple Choice sets keep feedback closed until all questions are submitted. A retry reshuffles option positions while preserving the same four meanings.
+- True / False / Not Given practice must operationalise three evidence states: the same exact claim, an incompatible passage claim, or an unresolved claim. FALSE cannot be inferred from a weaker, stronger or merely different statement.
+- A TFNG decision must preserve subject, action, quantity, comparison, timing, certainty and polarity. “Some” does not logically contradict “every” unless the passage supplies an exclusion; “little change” does contradict a claimed sharp increase.
+- Guided, independent and Progress Engine TFNG pools must be disjoint. Feedback must diagnose missed paraphrase, unproved opposite, misclassified silence, quantifier shift, time or degree shift and outside knowledge.
+- Full TFNG sets keep feedback closed until all statements are submitted. Every NOT GIVEN explanation must name the exact missing relationship rather than saying only that the answer is absent.
 - Independent and full-passage sets must preserve the real task rule. For Matching Headings, a heading cannot be reused and extra headings remain unused.
 - Feedback must name why the chosen distractor fails: narrow detail, keyword match, wrong function, excessive scope or unsupported claim. Red/green alone is insufficient.
 - A progress level cannot be certified from repeated position, length, typography, language, lexical-overlap or other surface shortcuts.
@@ -141,4 +145,5 @@ A pilot can become a template only after content checks, TypeScript, production 
 - **Word-limit control:** complete progressive vertical; 6 source-backed passages, 30 exact-span decisions, held-back independent transfer, 6 local levels and production release gates passed.
 - **Time management:** complete progressive vertical; 6 source-backed passage plans, 30 evidence-cost decisions, held-back independent transfer, 6 local levels and production release gates passed.
 - **Multiple Choice:** complete progressive vertical; 6 source-backed passages, 30 one-best-answer decisions, held-back independent transfer, 6 local levels and production release gates passed. The public rewrite destination is pinned by tests so a shadowed route cannot regress silently.
-- **Next question-type vertical after release:** True / False / Not Given. Do not begin it until Multiple Choice passes the static, build and real-browser gates above.
+- **True / False / Not Given:** complete progressive vertical; 6 source-backed passages, 30 evidence-state decisions, held-back independent transfer, 6 local levels and production release gates passed. Guided feedback remains explicit, full-set feedback stays closed until submission, drafts survive reload and the 320–390 px browser audit has no horizontal overflow.
+- **Next question-type vertical:** Yes / No / Not Given. Reuse this released architecture, but replace factual-claim adjudication with writer-view adjudication and keep its content pools, error taxonomy and browser evidence independent from TFNG.

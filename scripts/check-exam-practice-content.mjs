@@ -616,6 +616,11 @@ function validateIeltsReadingSkillPracticeRoutes() {
         '/practica/ielts/reading/tipos-de-preguntas/true-false-not-given',
       ],
     },
+    {
+      path: '/practica/ielts/reading/tipos-de-preguntas/true-false-not-given',
+      label: 'IELTS True False Not Given route',
+      requiredTexts: ['TfngGuidedPractice', 'TfngIndependentPractice', 'TfngProgressEngine', 'TFNG_GUIDED_PASSAGE_ID', 'TFNG_INDEPENDENT_PASSAGE_ID', 'ielts-reading-practice-engine-blueprint.md', 'SkillReviewSourceBlock', 'IELTS_ACADEMIC_URL', '/practica/ielts/reading/habilidades/scanning', '/practica/ielts/reading/habilidades/parafrasis', '/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given'],
+    },
   ];
 
   for (const route of routes) {
@@ -739,9 +744,22 @@ function validateIeltsMultipleChoiceProgressContract() {
   for (const requiredText of ['isMultipleChoice', 'MultipleChoiceGuidedPractice', 'MultipleChoiceIndependentPractice', 'MultipleChoiceProgressEngine']) {
     if (!publicTemplateText.includes(requiredText)) fail(`IELTS public question-type rewrite template must include "${requiredText}".`);
   }
-  if (!rootLayoutText.includes("process.env.NODE_ENV === 'production'")) {
-    fail('Root analytics must remain disabled in local development and preview QA.');
+  if (!rootLayoutText.includes("process.env.NODE_ENV === 'production' && ENTORNO === 'production'")) {
+    fail('Root analytics must remain limited to the canonical Vercel production environment.');
   }
+}
+
+function validateIeltsTfngProgressContract() {
+  const dataPath = path.join(root, 'src/data/practica-exams/ielts-reading-tfng-progress.ts');
+  const componentPath = path.join(root, 'src/components/exam-practice/TfngPracticeLab.tsx');
+  const publicTemplatePath = path.join(root, 'src/app/(site)/practica/ielts/reading/international-question-type/[slug]/page.tsx');
+  if (!fs.existsSync(dataPath)) fail('IELTS True False Not Given progress data is missing.');
+  if (!fs.existsSync(componentPath)) fail('IELTS True False Not Given practice lab is missing.');
+  if (!fs.existsSync(dataPath) || !fs.existsSync(componentPath)) return;
+  const dataText = fs.readFileSync(dataPath, 'utf8'); const componentText = fs.readFileSync(componentPath, 'utf8'); const publicTemplateText = fs.readFileSync(publicTemplatePath, 'utf8');
+  for (const requiredText of ['TFNG_STORAGE_KEY', 'TFNG_LEGACY_STORAGE_KEY', 'TFNG_LEVELS', 'TFNG_OPTIONS', "'paraphrase-missed'", "'opposite-not-proved'", "'silence-misclassified'", "'quantifier-shift'", "'time-or-degree-shift'", "'outside-knowledge'"]) if (!dataText.includes(requiredText)) fail(`IELTS True False Not Given progress data must include "${requiredText}".`);
+  for (const requiredText of ['type="radio"', 'localStorage', 'Press again to reset', 'feedback closed', 'WeLearn Progress Engine', 'not an IELTS band', 'not a secure Practice, Exam or proctored mode']) if (!componentText.includes(requiredText)) fail(`IELTS True False Not Given practice lab must include "${requiredText}".`);
+  for (const requiredText of ['isTfng', 'TfngGuidedPractice', 'TfngIndependentPractice', 'TfngProgressEngine']) if (!publicTemplateText.includes(requiredText)) fail(`IELTS public question-type rewrite template must include "${requiredText}".`);
 }
 
 function validateIeltsGeneralTrainingHub() {
@@ -1474,12 +1492,12 @@ function validateRoute(route, index, routeMapText) {
   if (isIeltsReadingQuestionType && route.status === 'published') {
     const pagePath = routeToPagePath(route.path);
     const pageText = fs.existsSync(pagePath) ? fs.readFileSync(pagePath, 'utf8') : '';
-    const progressiveMultipleChoice = route.path === '/practica/ielts/reading/tipos-de-preguntas/multiple-choice';
-    if (!pageText.includes(progressiveMultipleChoice ? 'SkillReviewSourceBlock' : 'QuestionTypeReviewSourceBlock')) fail(`${label} must render its reviewed source block.`);
-    if (!pageText.includes(progressiveMultipleChoice ? 'IELTS_ACADEMIC_URL' : 'IELTS_SAMPLE_URL')) fail(`${label} must cite the official IELTS Reading source in its review block.`);
+    const progressiveQuestionType = ['/practica/ielts/reading/tipos-de-preguntas/multiple-choice', '/practica/ielts/reading/tipos-de-preguntas/true-false-not-given'].includes(route.path);
+    if (!pageText.includes(progressiveQuestionType ? 'SkillReviewSourceBlock' : 'QuestionTypeReviewSourceBlock')) fail(`${label} must render its reviewed source block.`);
+    if (!pageText.includes(progressiveQuestionType ? 'IELTS_ACADEMIC_URL' : 'IELTS_SAMPLE_URL')) fail(`${label} must cite the official IELTS Reading source in its review block.`);
     if (!pageText.includes('reviewedFocus')) fail(`${label} must declare reviewedFocus for the question-type review block.`);
     if (!pageText.includes('sources={[')) fail(`${label} must declare source notes for the question-type review block.`);
-    if (!progressiveMultipleChoice && !pageText.includes('Formato oficial vs estrategia WeLearn') && !pageText.includes('OfficialStrategyCard')) {
+    if (!progressiveQuestionType && !pageText.includes('Formato oficial vs estrategia WeLearn') && !pageText.includes('OfficialStrategyCard')) {
       fail(`${label} must include a top official-format vs WeLearn-strategy card.`);
     }
   }
@@ -1494,8 +1512,7 @@ function validateRoute(route, index, routeMapText) {
   if (route.path === '/practica/ielts/reading/tipos-de-preguntas/true-false-not-given' && route.status === 'published') {
     const pagePath = routeToPagePath(route.path);
     const pageText = fs.existsSync(pagePath) ? fs.readFileSync(pagePath, 'utf8') : '';
-    if (!pageText.includes('ObjectivePracticeSetBank')) fail(`${label} must render ObjectivePracticeSetBank.`);
-    if (!pageText.includes('IELTS_TFNG_PRACTICE_SETS')) fail(`${label} must use IELTS_TFNG_PRACTICE_SETS.`);
+    for (const requiredText of ['TfngGuidedPractice', 'TfngIndependentPractice', 'TfngProgressEngine', 'TFNG_GUIDED_PASSAGE_ID', 'TFNG_INDEPENDENT_PASSAGE_ID']) if (!pageText.includes(requiredText)) fail(`${label} must include ${requiredText}.`);
   }
 
   if (route.path === '/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given' && route.status === 'published') {
@@ -2946,6 +2963,7 @@ function main() {
   validateIeltsWordLimitProgressContract();
   validateIeltsTimeManagementProgressContract();
   validateIeltsMultipleChoiceProgressContract();
+  validateIeltsTfngProgressContract();
   validateIeltsGeneralTrainingHub();
   validateIeltsWritingRubricRoute();
   validateIeltsGeneralTrainingWritingTask1Route();

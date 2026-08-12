@@ -21,11 +21,9 @@ const GTM_ID = 'GTM-57NXLPZV';
  * mucho peor que un poco de ruido de preview.
  */
 const ENTORNO = process.env.VERCEL_ENV;
-// Local Next development does not have VERCEL_ENV. Treat it as non-production
-// explicitly so QA sessions never pollute analytics or execute remote GTM tags.
-const CARGAR_GTM = process.env.NODE_ENV === 'production'
-  && ENTORNO !== 'preview'
-  && ENTORNO !== 'development';
+// The canonical deployment is Vercel production. Local `next start`, previews
+// and other hosts must not pollute analytics or execute remote GTM tags.
+const CARGAR_GTM = process.env.NODE_ENV === 'production' && ENTORNO === 'production';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
