@@ -24,6 +24,8 @@ The reusable learning sequence is:
 - A worked example must expose the reasoning sequence: identify paragraph/question function, reject the closest distractor and prove whole-answer coverage.
 - Guided practice must remove support progressively. It cannot reveal the answer before the learner acts.
 - Selecting a radio card is a draft decision, not submission. Correctness, colours and explanations stay hidden until an explicit check action.
+- A scanning activity cannot be a sequence of `Reveal evidence` buttons. The learner must first commit to a distinctive search signal and then select an exact evidence span before the answer, trap or explanation opens.
+- Scanning evidence options must include nearby true details with a different entity, number, scope or polarity; random unrelated sentences do not test context control.
 - Independent and full-passage sets must preserve the real task rule. For Matching Headings, a heading cannot be reused and extra headings remain unused.
 - Feedback must name why the chosen distractor fails: narrow detail, keyword match, wrong function, excessive scope or unsupported claim. Red/green alone is insufficient.
 - A progress level cannot be certified from repeated position, length, typography, language, lexical-overlap or other surface shortcuts.

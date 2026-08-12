@@ -29,6 +29,7 @@ export interface InternationalReadingSkillLessonProps {
   checklist: string[];
   faqs: Faq[];
   practice: ReactNode;
+  sourceReview?: ReactNode;
   accent?: string;
   officialNote: string;
   nextLinks: Array<{ href: string; label: string; primary?: boolean }>;
@@ -55,6 +56,7 @@ export default function InternationalReadingSkillLesson({
   checklist,
   faqs,
   practice,
+  sourceReview,
   accent = '#0369a1',
   officialNote,
   nextLinks,
@@ -213,6 +215,8 @@ export default function InternationalReadingSkillLesson({
               {progressEngine}
             </section>
           )}
+
+          {sourceReview}
 
           <section className={styles.section} aria-labelledby="faq-heading" lang="es">
             <div className={styles.sectionHeader}>

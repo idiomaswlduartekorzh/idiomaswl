@@ -1,11 +1,13 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import WordLimitPracticeEngine from '@/components/exam-practice/WordLimitPracticeEngine';
 import { IELTS_READING_SKILLS, IELTS_WORD_LIMIT_PRACTICE_SETS, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 
 const ROUTE = IELTS_READING_SKILLS.find((item) => item.slug === 'limite-de-palabras')!;
 const TITLE = 'Word-limit control: copy the smallest answer that fits';
 const DESCRIPTION = 'Parse the instruction, predict the missing grammar, locate the exact passage span and remove every unnecessary word before submitting.';
+const IELTS_ACADEMIC_URL = 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading';
 const practices = IELTS_WORD_LIMIT_PRACTICE_SETS.map((set) => ({ ...set, timeTarget: '6 gaps · 7 minutes' }));
 
 export const metadata: Metadata = {
@@ -33,6 +35,21 @@ export default function Page() {
     weakExample="Frame: ‘during ___’; passage: ‘during long summer afternoons’; answer: ‘long summer afternoons’ under a two-word limit."
     strongExample="Answer ‘summer afternoons’: it keeps the required time meaning, fits after during and stays within two words."
     practice={<WordLimitPracticeEngine practices={practices} accent="#0f766e" />}
+    sourceReview={(
+      <SkillReviewSourceBlock
+        accent="#0f766e"
+        skillName="Word-limit control"
+        reviewedFocus={[
+          'Every answer is checked against the displayed instruction and the completed sentence grammar.',
+          'Practice distinguishes a correct evidence span from an over-limit or duplicated response.',
+          'The lesson does not generalise one word-limit formula to every official task.',
+        ]}
+        sources={[
+          { label: 'Official IELTS Academic Reading format', href: IELTS_ACADEMIC_URL, note: 'Used to verify that task instructions and word limits are binding.' },
+          { label: 'WeLearn original practice sets', note: 'Used to train minimal grammatical answers without reproducing official questions.' },
+        ]}
+      />
+    )}
     independentPractice={[
       'Collect six completion frames with different one- and two-word answers.',
       'Predict the grammar of each gap before searching the passage.',
@@ -49,7 +66,11 @@ export default function Page() {
     officialNote="Word limits are binding in IELTS completion and short-answer tasks. This WeLearn lesson trains instruction control; always follow the exact wording shown in the task you are completing."
     nextLinks={[
       { href: '/practica/ielts/reading/habilidades/gestion-del-tiempo', label: 'Continue to time management', primary: true },
+      { href: '/practica/ielts/reading/habilidades/scanning', label: 'Review evidence location' },
+      { href: '/practica/ielts/reading/habilidades/parafrasis', label: 'Review paraphrase recognition' },
       { href: '/practica/ielts/reading/tipos-de-preguntas/summary-completion', label: 'Practise Summary Completion' },
+      { href: '/practica/ielts/reading/tipos-de-preguntas/sentence-completion', label: 'Practise Sentence Completion' },
+      { href: '/practica/ielts/reading/tipos-de-preguntas/short-answer', label: 'Practise Short Answer' },
       { href: '/practica/ielts/reading/mixed-practice', label: 'Open Mixed Practice' },
       { href: '/practica/ielts/reading', label: 'Back to Reading hub' },
     ]}

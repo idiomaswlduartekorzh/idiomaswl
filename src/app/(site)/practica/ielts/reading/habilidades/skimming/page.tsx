@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import SkimmingPracticeEngine from '@/components/exam-practice/SkimmingPracticeEngine';
 import { SkimmingIndependentPractice, SkimmingProgressEngine } from '@/components/exam-practice/SkimmingPracticeLab';
 import { IELTS_READING_SKILLS, IELTS_SKIMMING_PRACTICE, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
@@ -11,6 +12,7 @@ import {
 const ROUTE = IELTS_READING_SKILLS.find((item) => item.slug === 'skimming')!;
 const TITLE = 'Skimming: build a passage map before you hunt for answers';
 const DESCRIPTION = 'Learn to identify topic, paragraph purpose and changes of direction in 30–60 seconds, then use that map to return to the right evidence.';
+const IELTS_ACADEMIC_URL = 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading';
 const practice = { ...IELTS_SKIMMING_PRACTICE, timeTarget: '5 decisions · 6 minutes' };
 const independentPassage = getSkimmingPassage(SKIMMING_INDEPENDENT_PASSAGE_ID)!;
 // Scaling contract: docs/ielts-reading-practice-engine-blueprint.md
@@ -48,6 +50,21 @@ export default function Page() {
       practice={<SkimmingPracticeEngine practice={practice} accent="#0369a1" />}
       independentPracticeExperience={<SkimmingIndependentPractice passage={independentPassage} />}
       progressEngine={<SkimmingProgressEngine />}
+      sourceReview={(
+        <SkillReviewSourceBlock
+          accent="#0369a1"
+          skillName="Skimming"
+          reviewedFocus={[
+            'The lesson labels skimming as a transferable WeLearn strategy, not an official IELTS question type.',
+            'Practice decisions require paragraph purpose rather than isolated keyword matching.',
+            'Source-backed passages remain separate from official IELTS tasks and band-score claims.',
+          ]}
+          sources={[
+            { label: 'Official IELTS Academic Reading format', href: IELTS_ACADEMIC_URL, note: 'Used to keep official task rules separate from the WeLearn passage-mapping method.' },
+            { label: 'WeLearn practice blueprint', note: 'Defines guided action, independent transfer, progression, persistence and feedback boundaries.' },
+          ]}
+        />
+      )}
       independentPractice={[
         'Start a clean passage and give yourself 45 seconds for title, paragraph openings and direction markers.',
         'Write one short writer-action label for every paragraph before answering any question.',

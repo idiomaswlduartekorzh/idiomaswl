@@ -47,7 +47,7 @@ const FAQS = [
   {
     question: '¿Skimming y scanning son tipos oficiales de pregunta IELTS?',
     answer:
-      'No. Son habilidades de lectura transferibles. WeLearn las separa de los formatos oficiales y muestra en qué tipos de pregunta se aplican.',
+      'No. Skimming y scanning son habilidades WeLearn de lectura transferibles. El hub las separa de los formatos oficiales y muestra en qué tipos de pregunta se aplican.',
   },
   {
     question: '¿Debo practicar IELTS Reading con cronómetro desde el principio?',

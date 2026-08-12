@@ -1,11 +1,13 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import TimeManagementPracticeEngine from '@/components/exam-practice/TimeManagementPracticeEngine';
 import { IELTS_READING_SKILLS, IELTS_TIME_MANAGEMENT_PRACTICE_SETS, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 
 const ROUTE = IELTS_READING_SKILLS.find((item) => item.slug === 'gestion-del-tiempo')!;
 const TITLE = 'Time management: protect points instead of racing the clock';
 const DESCRIPTION = 'Use a passage budget, prioritise visible evidence, mark productive uncertainty and return only when a second attempt has a clear target.';
+const IELTS_ACADEMIC_URL = 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading';
 
 const practices = [{
   id: 'time-management-international-triage',
@@ -54,6 +56,21 @@ export default function Page() {
     weakExample="Spending four minutes on one Not Given decision because leaving it temporarily feels like failure."
     strongExample="Mark the evidence and the unresolved contrast, answer provisionally, secure three local-evidence items and return with the remaining review budget."
     practice={<TimeManagementPracticeEngine practices={practices} accent="#b45309" />}
+    sourceReview={(
+      <SkillReviewSourceBlock
+        accent="#b45309"
+        skillName="Time management"
+        reviewedFocus={[
+          'The official total section time remains separate from WeLearn passage-budget suggestions.',
+          'Decisions prioritise located evidence and expected return rather than speed at any cost.',
+          'The lesson makes no claim that one fixed passage split is an official IELTS rule.',
+        ]}
+        sources={[
+          { label: 'Official IELTS Academic Reading format', href: IELTS_ACADEMIC_URL, note: 'Used to verify the overall Reading time and separate it from flexible WeLearn pacing.' },
+          { label: 'WeLearn original practice sets', note: 'Used to train solve, mark, postpone and review decisions under a transparent strategy.' },
+        ]}
+      />
+    )}
     independentPractice={[
       'Complete one passage with four visible checkpoints: 2, 11, 17 and 20 minutes.',
       'Label every delayed item with its evidence paragraph and unresolved decision.',
@@ -70,6 +87,10 @@ export default function Page() {
     officialNote="IELTS Academic Reading gives 60 minutes for the full section. The 20-minute passage budget is a flexible WeLearn strategy, not a separate official timing rule for every passage."
     nextLinks={[
       { href: '/practica/ielts/reading/mixed-practice', label: 'Apply all skills in Mixed Practice', primary: true },
+      { href: '/practica/ielts/reading/habilidades/skimming', label: 'Review passage mapping' },
+      { href: '/practica/ielts/reading/habilidades/scanning', label: 'Review evidence location' },
+      { href: '/practica/ielts/reading/tipos-de-preguntas/matching-headings', label: 'Practise Matching Headings' },
+      { href: '/practica/ielts/reading/tipos-de-preguntas/multiple-choice', label: 'Practise Multiple Choice' },
       { href: '/practica/ielts/reading/tipos-de-preguntas', label: 'Browse question types' },
       { href: '/practica/ielts/reading/habilidades', label: 'Back to Reading Skills' },
       { href: '/practica/ielts/reading', label: 'Back to Reading hub' },

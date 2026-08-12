@@ -1,12 +1,17 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
-import ScanningPracticeEngine from '@/components/exam-practice/ScanningPracticeEngine';
-import { IELTS_READING_SKILLS, IELTS_SCANNING_PRACTICE, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
+import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
+import { ScanningIndependentPractice, ScanningPracticeEngine, ScanningProgressEngine } from '@/components/exam-practice/ScanningPracticeLab';
+import { IELTS_READING_SKILLS, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
+import { SCANNING_GUIDED_PASSAGE_ID, SCANNING_INDEPENDENT_PASSAGE_ID, getScanningPassage } from '@/data/practica-exams/ielts-reading-scanning-progress';
 
 const ROUTE = IELTS_READING_SKILLS.find((item) => item.slug === 'scanning')!;
 const TITLE = 'Scanning: locate evidence without rereading the whole passage';
 const DESCRIPTION = 'Turn a question into searchable signals, find the likely evidence zone and read around the match before you commit to an answer.';
-const practice = { ...IELTS_SCANNING_PRACTICE, timeTarget: '5 targets · 7 minutes' };
+const IELTS_ACADEMIC_URL = 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading';
+const guidedPassage = getScanningPassage(SCANNING_GUIDED_PASSAGE_ID)!;
+const independentPassage = getScanningPassage(SCANNING_INDEPENDENT_PASSAGE_ID)!;
+// Scaling contract: docs/ielts-reading-practice-engine-blueprint.md
 
 export const metadata: Metadata = {
   title: 'IELTS Reading Scanning: Evidence Method and Practice', description: DESCRIPTION, keywords: ROUTE.keywords,
@@ -33,7 +38,24 @@ export default function Page() {
       ]}
       weakExample="Starting again at Paragraph A every time a question asks for one date, name or local detail."
       strongExample="Turn ‘When did the pilot expand?’ into the signals pilot + expand + date, scan the likely results paragraph, then read around the matching year."
-      practice={<ScanningPracticeEngine practice={practice} accent="#0369a1" />}
+      practice={<ScanningPracticeEngine passage={guidedPassage} />}
+      independentPracticeExperience={<ScanningIndependentPractice passage={independentPassage} />}
+      progressEngine={<ScanningProgressEngine />}
+      sourceReview={(
+        <SkillReviewSourceBlock
+          accent="#0369a1"
+          skillName="Scanning"
+          reviewedFocus={[
+            'The lesson separates locating a signal from verifying the complete evidence window.',
+            'Distractors test entity, number, scope, polarity and nearby-detail errors rather than random vocabulary.',
+            'Scanning is labelled as a WeLearn reading strategy, not a standalone official IELTS task.',
+          ]}
+          sources={[
+            { label: 'Official IELTS Academic Reading format', href: IELTS_ACADEMIC_URL, note: 'Used to distinguish official task families from the WeLearn evidence-location method.' },
+            { label: 'WeLearn practice blueprint', note: 'Defines guided signal selection, independent transfer, progression and persistent review.' },
+          ]}
+        />
+      )}
       independentPractice={[
         'Take six question stems and underline one high-value search signal in each.',
         'Predict the grammatical form of each answer before returning to the passage.',
@@ -50,6 +72,7 @@ export default function Page() {
       officialNote="Scanning is a WeLearn evidence-location strategy, not a separate official IELTS task. It is especially useful for Matching Information, completion tasks, diagram labels and short answers."
       nextLinks={[
         { href: '/practica/ielts/reading/habilidades/parafrasis', label: 'Continue to paraphrase recognition', primary: true },
+        { href: '/practica/ielts/reading/habilidades/skimming', label: 'Review passage mapping with Skimming' },
         { href: '/practica/ielts/reading/tipos-de-preguntas/matching-information', label: 'Practise Matching Information' },
         { href: '/practica/ielts/reading/mixed-practice', label: 'Open Mixed Practice' },
         { href: '/practica/ielts/reading', label: 'Back to Reading hub' },

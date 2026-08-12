@@ -36,6 +36,10 @@ function includesOneOf(text, alternatives) {
   return alternatives.some((alternative) => text.includes(alternative));
 }
 
+function includesAll(text, requiredTexts) {
+  return requiredTexts.every((requiredText) => text.includes(requiredText));
+}
+
 function loadTsModule(modulePath) {
   const source = fs.readFileSync(modulePath, 'utf8');
   const compiled = ts.transpileModule(source, {
@@ -72,7 +76,13 @@ function validateSkillReviewSourceComponent() {
   }
 
   const componentText = fs.readFileSync(componentPath, 'utf8');
-  for (const requiredText of ['Revisión y fuentes', 'julio de 2026', 'Alcance:', 'no son preguntas oficiales']) {
+  for (const requiredText of [
+    'Review and sources',
+    'reviewed in August 2026',
+    'Scope:',
+    'not official IELTS questions',
+    'do not predict a band score',
+  ]) {
     if (!componentText.includes(requiredText)) fail(`SkillReviewSourceBlock must include "${requiredText}".`);
   }
 }
@@ -93,11 +103,19 @@ function validateQuestionTypeReviewSourceComponent() {
 function validateIeltsReadingQuestionTypesHub() {
   const pagePath = routeToPagePath('/practica/ielts/reading/tipos-de-preguntas');
   const pageText = fs.existsSync(pagePath) ? fs.readFileSync(pagePath, 'utf8') : '';
-  if (!pageText.includes('IeltsReadingMixedQuestionTypeEngine')) {
-    fail('IELTS Reading question-types hub must render IeltsReadingMixedQuestionTypeEngine.');
-  }
-  if (!pageText.includes('IELTS_READING_MIXED_QUESTION_TYPE_SETS')) {
-    fail('IELTS Reading question-types hub must use IELTS_READING_MIXED_QUESTION_TYPE_SETS.');
+  const mixedPath = routeToPagePath('/practica/ielts/reading/mixed-practice');
+  const mixedText = fs.existsSync(mixedPath) ? fs.readFileSync(mixedPath, 'utf8') : '';
+  const embeddedPractice = includesAll(pageText, [
+    'IeltsReadingMixedQuestionTypeEngine',
+    'IELTS_READING_MIXED_QUESTION_TYPE_SETS',
+  ]);
+  const dedicatedPractice = pageText.includes('/practica/ielts/reading/mixed-practice') && includesAll(mixedText, [
+    'IeltsReadingMixedQuestionTypeEngine',
+    'IELTS_READING_MIXED_QUESTION_TYPE_SETS',
+    '3 passages · 12 mixed decisions',
+  ]);
+  if (!embeddedPractice && !dedicatedPractice) {
+    fail('IELTS Reading question-types hub must expose the verified mixed-question practice engine either inline or in its dedicated linked room.');
   }
 }
 
@@ -477,8 +495,22 @@ function validateIeltsSkimScanRoutes() {
 
   const scanningPath = routeToPagePath('/practica/ielts/reading/habilidades/scanning');
   const scanningText = fs.existsSync(scanningPath) ? fs.readFileSync(scanningPath, 'utf8') : '';
-  for (const requiredText of [
+  const newScanningContract = [
     'ScanningPracticeEngine',
+    'ScanningIndependentPractice',
+    'ScanningProgressEngine',
+    'SCANNING_GUIDED_PASSAGE_ID',
+    'SCANNING_INDEPENDENT_PASSAGE_ID',
+    'ielts-reading-practice-engine-blueprint.md',
+    'SkillReviewSourceBlock',
+    'IELTS_ACADEMIC_URL',
+    'reviewedFocus',
+    'sources={[',
+    'officialNote=',
+    '/practica/ielts/reading/habilidades/skimming',
+    '/practica/ielts/reading/tipos-de-preguntas/matching-information',
+  ];
+  const legacyScanningContract = [
     'SkimScanTransferEngine',
     'IELTS_SCANNING_PRACTICE',
     'IELTS_SKIM_SCAN_TRANSFER_SETS',
@@ -487,8 +519,9 @@ function validateIeltsSkimScanRoutes() {
     'Skimming and scanning',
     '/practica/ielts/reading/habilidades/skimming',
     '/practica/ielts/reading/tipos-de-preguntas/matching-information',
-  ]) {
-    if (!scanningText.includes(requiredText)) fail(`IELTS scanning route must include "${requiredText}".`);
+  ];
+  if (!includesAll(scanningText, newScanningContract) && !includesAll(scanningText, legacyScanningContract)) {
+    fail('IELTS scanning route must satisfy the complete progressive or legacy audited practice contract.');
   }
 }
 
@@ -559,8 +592,20 @@ function validateIeltsReadingSkillPracticeRoutes() {
   for (const route of routes) {
     const pagePath = routeToPagePath(route.path);
     const pageText = fs.existsSync(pagePath) ? fs.readFileSync(pagePath, 'utf8') : '';
-    for (const requiredText of route.requiredTexts) {
+    const internationalReviewContract = [
+      'InternationalReadingSkillLesson',
+      'SkillReviewSourceBlock',
+      'IELTS_ACADEMIC_URL',
+      'reviewedFocus',
+      'sources={[',
+      'officialNote=',
+    ];
+    const requiredTexts = route.requiredTexts.filter((requiredText) => requiredText !== 'Formato oficial vs estrategia WeLearn');
+    for (const requiredText of requiredTexts) {
       if (!pageText.includes(requiredText)) fail(`${route.label} must include "${requiredText}".`);
+    }
+    if (!pageText.includes('Formato oficial vs estrategia WeLearn') && !includesAll(pageText, internationalReviewContract)) {
+      fail(`${route.label} must include the complete official-format review boundary.`);
     }
   }
 }
