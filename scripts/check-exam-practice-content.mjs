@@ -531,9 +531,12 @@ function validateIeltsReadingSkillPracticeRoutes() {
       path: '/practica/ielts/reading/habilidades/inferencia',
       label: 'IELTS inference route',
       requiredTexts: [
-        'InferencePracticeEngine',
-        'IELTS_INFERENCE_PRACTICE_SETS',
-        'Formato oficial vs estrategia WeLearn',
+        'InferenceGuidedPractice',
+        'InferenceIndependentPractice',
+        'InferenceProgressEngine',
+        'INFERENCE_GUIDED_PASSAGE_ID',
+        'INFERENCE_INDEPENDENT_PASSAGE_ID',
+        'ielts-reading-practice-engine-blueprint.md',
         'SkillReviewSourceBlock',
         'IELTS_ACADEMIC_URL',
         '/practica/ielts/reading/habilidades/scanning',
@@ -642,6 +645,22 @@ function validateIeltsParaphraseProgressContract() {
   ]) {
     const present = requiredText === 'native' ? componentText.includes('type="radio"') : componentText.includes(requiredText);
     if (!present) fail(`IELTS paraphrase practice lab must include "${requiredText}".`);
+  }
+}
+
+function validateIeltsInferenceProgressContract() {
+  const dataPath = path.join(root, 'src/data/practica-exams/ielts-reading-inference-progress.ts');
+  const componentPath = path.join(root, 'src/components/exam-practice/InferencePracticeLab.tsx');
+  if (!fs.existsSync(dataPath)) fail('IELTS inference progress data is missing.');
+  if (!fs.existsSync(componentPath)) fail('IELTS inference practice lab is missing.');
+  if (!fs.existsSync(dataPath) || !fs.existsSync(componentPath)) return;
+  const dataText = fs.readFileSync(dataPath, 'utf8');
+  const componentText = fs.readFileSync(componentPath, 'utf8');
+  for (const requiredText of ['INFERENCE_STORAGE_KEY', 'INFERENCE_LEGACY_STORAGE_KEY', 'INFERENCE_LEVELS', 'getInferenceOptions', "'outside-knowledge'", "'certainty-inflation'", "'causation-invented'", "'scope-overreach'"]) {
+    if (!dataText.includes(requiredText)) fail(`IELTS inference progress data must include "${requiredText}".`);
+  }
+  for (const requiredText of ['type="radio"', 'localStorage', 'Press again to reset', 'feedback closed', 'WeLearn Progress Engine', 'not an IELTS band', 'not a secure Practice, Exam or proctored mode']) {
+    if (!componentText.includes(requiredText)) fail(`IELTS inference practice lab must include "${requiredText}".`);
   }
 }
 
@@ -2841,6 +2860,7 @@ function main() {
   validateIeltsSkimScanRoutes();
   validateIeltsReadingSkillPracticeRoutes();
   validateIeltsParaphraseProgressContract();
+  validateIeltsInferenceProgressContract();
   validateIeltsGeneralTrainingHub();
   validateIeltsWritingRubricRoute();
   validateIeltsGeneralTrainingWritingTask1Route();

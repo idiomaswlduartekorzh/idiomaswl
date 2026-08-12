@@ -1,14 +1,17 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
 import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
-import InferencePracticeEngine from '@/components/exam-practice/InferencePracticeEngine';
-import { IELTS_INFERENCE_PRACTICE_SETS, IELTS_READING_SKILLS, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
+import { InferenceGuidedPractice, InferenceIndependentPractice, InferenceProgressEngine } from '@/components/exam-practice/InferencePracticeLab';
+import { IELTS_READING_SKILLS, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
+import { INFERENCE_GUIDED_PASSAGE_ID, INFERENCE_INDEPENDENT_PASSAGE_ID, getInferencePassage } from '@/data/practica-exams/ielts-reading-inference-progress';
 
 const ROUTE = IELTS_READING_SKILLS.find((item) => item.slug === 'inferencia')!;
 const TITLE = 'Inference: reach the safest conclusion the evidence allows';
 const DESCRIPTION = 'Combine explicit clues without importing outside knowledge, exaggerating certainty or turning a possible conclusion into a stated fact.';
 const IELTS_ACADEMIC_URL = 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading';
-const practices = IELTS_INFERENCE_PRACTICE_SETS.map((set) => ({ ...set, timeTarget: '5 questions · 7 minutes' }));
+const guidedPassage = getInferencePassage(INFERENCE_GUIDED_PASSAGE_ID)!;
+const independentPassage = getInferencePassage(INFERENCE_INDEPENDENT_PASSAGE_ID)!;
+// Scaling contract: docs/ielts-reading-practice-engine-blueprint.md
 
 export const metadata: Metadata = {
   title: 'IELTS Reading Inference: Evidence Method and Practice', description: DESCRIPTION, keywords: ROUTE.keywords,
@@ -34,7 +37,9 @@ export default function Page() {
     ]}
     weakExample="The passage says visits rose after a renovation, so the renovation must have made every resident happier."
     strongExample="Visits rose while workshop attendance grew and novel borrowing stayed flat, so the new use probably came from services beyond traditional borrowing."
-    practice={<InferencePracticeEngine practices={practices} accent="#7c3aed" />}
+    practice={<InferenceGuidedPractice passage={guidedPassage} />}
+    independentPracticeExperience={<InferenceIndependentPractice passage={independentPassage} />}
+    progressEngine={<InferenceProgressEngine />}
     sourceReview={(
       <SkillReviewSourceBlock
         accent="#7c3aed"
@@ -46,7 +51,7 @@ export default function Page() {
         ]}
         sources={[
           { label: 'Official IELTS Academic Reading format', href: IELTS_ACADEMIC_URL, note: 'Used to preserve the boundary between official tasks and the WeLearn reasoning method.' },
-          { label: 'WeLearn original practice sets', note: 'Used to train evidence-constrained conclusions without copying official items.' },
+          { label: 'WeLearn practice blueprint', note: 'Defines held-back transfer, evidence bridges, local progress and inference-error review.' },
         ]}
       />
     )}

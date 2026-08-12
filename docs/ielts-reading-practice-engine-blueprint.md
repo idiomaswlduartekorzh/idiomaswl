@@ -29,6 +29,9 @@ The reusable learning sequence is:
 - Paraphrase practice must compare complete propositions, not synonym pairs. Every decision records the entity, action, quantity/scope, polarity, time/cause and certainty or comparison that must remain stable.
 - Paraphrase distractors must alter one material meaning control and the feedback must name that distortion. Repeated vocabulary is not a valid distractor rationale by itself.
 - Guided, independent and Progress Engine paraphrase pools must be disjoint. A passage seen in guided practice cannot be presented later as unseen or used to certify independent transfer.
+- Inference practice must expose at least two explicit clues and ask for the smallest conclusion that connects them. A plausible statement from outside the passage is always a distractor, never supporting evidence.
+- Inference feedback must diagnose outside knowledge, certainty inflation, invented causation, scope overreach, contradiction or failure to connect the clues. “Incorrect” alone does not teach the reasoning repair.
+- Inference option order must be varied mechanically. A legacy bank with all keys in one position cannot be used for guided, independent or mastery claims.
 - Independent and full-passage sets must preserve the real task rule. For Matching Headings, a heading cannot be reused and extra headings remain unused.
 - Feedback must name why the chosen distractor fails: narrow detail, keyword match, wrong function, excessive scope or unsupported claim. Red/green alone is insufficient.
 - A progress level cannot be certified from repeated position, length, typography, language, lexical-overlap or other surface shortcuts.
@@ -123,4 +126,5 @@ A pilot can become a template only after content checks, TypeScript, production 
 - **Skimming:** complete progressive vertical.
 - **Scanning:** complete progressive vertical; inherited global validator debt closed.
 - **Paraphrase recognition:** progressive vertical implemented with 6 source-backed passages, 30 decisions, held-back independent transfer and 6 local levels. Browser and release gates must pass before this line is used as a production certificate.
-- **Next subskill after release:** Inference. Do not begin it until Paraphrase passes the static, build and real-browser gates above.
+- **Inference:** progressive vertical implemented with 6 source-backed passages, 30 evidence bridges, held-back independent transfer and 6 local levels. Browser and release gates must pass before this line is used as a production certificate.
+- **Next subskill after release:** Word-limit control. Do not begin it until Inference passes the static, build and real-browser gates above.
