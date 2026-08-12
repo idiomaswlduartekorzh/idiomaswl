@@ -1,194 +1,98 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
-import OfficialStrategyCard from '@/components/exam-practice/OfficialStrategyCard';
-import QuestionTypeReviewSourceBlock from '@/components/exam-practice/QuestionTypeReviewSourceBlock';
-import { Brain, CheckCircle2, SearchCheck } from 'lucide-react';
-import MultipleChoicePassageBank from '@/components/exam-practice/MultipleChoicePassageBank';
-import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
+import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import {
-  IELTS_MULTIPLE_CHOICE_PASSAGES,
-  IELTS_READING_TYPES,
-  PRACTICE_BASE_URL,
-} from '@/data/practica-exams/seo-catalog';
+  MultipleChoiceGuidedPractice,
+  MultipleChoiceIndependentPractice,
+  MultipleChoiceProgressEngine,
+} from '@/components/exam-practice/MultipleChoicePracticeLab';
+import { IELTS_READING_TYPES, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
+import {
+  MULTIPLE_CHOICE_GUIDED_PASSAGE_ID,
+  MULTIPLE_CHOICE_INDEPENDENT_PASSAGE_ID,
+  getMultipleChoicePassage,
+} from '@/data/practica-exams/ielts-reading-multiple-choice-progress';
 
 const ROUTE = IELTS_READING_TYPES.find((item) => item.slug === 'multiple-choice')!;
-const URL = `${PRACTICE_BASE_URL}${ROUTE.path}`;
-const ACCENT = '#0369a1';
-const IELTS_SAMPLE_URL = 'https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test';
+const TITLE = 'IELTS Reading Multiple Choice: prove the one best answer';
+const DESCRIPTION = 'Learn to read the exact stem, locate the evidence zone and reject lexical echoes, partial truths and overconfident distractors.';
+const IELTS_ACADEMIC_URL = 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading';
+const guidedPassage = getMultipleChoicePassage(MULTIPLE_CHOICE_GUIDED_PASSAGE_ID)!;
+const independentPassage = getMultipleChoicePassage(MULTIPLE_CHOICE_INDEPENDENT_PASSAGE_ID)!;
+// Scaling contract: docs/ielts-reading-practice-engine-blueprint.md
 
 export const metadata: Metadata = {
-  title: 'IELTS Reading Multiple Choice: ejercicios y estrategia',
-  description: ROUTE.description,
+  title: 'IELTS Reading Multiple Choice: Method, Practice and Progress',
+  description: DESCRIPTION,
   keywords: ROUTE.keywords,
-  openGraph: {
-    title: 'IELTS Reading Multiple Choice: ejercicios y estrategia',
-    description: ROUTE.description,
-    url: URL,
-    type: 'website',
-    locale: 'es_CO',
-  },
-  alternates: { canonical: URL },
+  alternates: { canonical: `${PRACTICE_BASE_URL}${ROUTE.path}` },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: `${PRACTICE_BASE_URL}${ROUTE.path}`, type: 'website', locale: 'en_US' },
 };
 
 export default function Page() {
-  return (
-    <>
-      <LearningResourceJsonLd
-        name={ROUTE.title}
-        url={URL}
-        description={ROUTE.description}
-        teaches={ROUTE.teaches}
-        isPartOf={{ name: 'Tipos de preguntas IELTS Reading', url: `${PRACTICE_BASE_URL}/practica/ielts/reading/tipos-de-preguntas` }}
-      />
-      <FaqJsonLd faqs={ROUTE.faqs} />
-      <BreadcrumbJsonLd
-        items={[
-          { name: 'Práctica', url: `${PRACTICE_BASE_URL}/practica` },
-          { name: 'IELTS', url: `${PRACTICE_BASE_URL}/practica/ielts` },
-          { name: 'Reading', url: `${PRACTICE_BASE_URL}/practica/ielts/reading` },
-          { name: 'Tipos de preguntas', url: `${PRACTICE_BASE_URL}/practica/ielts/reading/tipos-de-preguntas` },
-          { name: 'Multiple Choice', url: URL },
+  return <InternationalReadingSkillLesson
+    slug="multiple-choice"
+    path={ROUTE.path}
+    indexPath="/practica/ielts/reading/tipos-de-preguntas"
+    indexName="Reading Question Types"
+    lessonLabel="IELTS Academic Reading · Question type"
+    name="Multiple Choice"
+    title={TITLE}
+    description={DESCRIPTION}
+    directAnswer="A strong Multiple Choice decision answers the exact question, matches a precise evidence zone and survives comparison with the closest distractor—not merely the option with familiar words."
+    facts={[{ label: 'First', value: 'Read the stem' }, { label: 'Then', value: 'Locate evidence' }, { label: 'Finish', value: 'Compare scope' }]}
+    outcomes={[
+      { title: 'Control the stem', text: 'Distinguish a detail question from purpose, inference, main idea or vocabulary in context before evaluating options.' },
+      { title: 'Reject attractive fragments', text: 'Notice when an option contains a true detail but fails to answer the complete question.' },
+      { title: 'Prove one best answer', text: 'Compare the final two options against evidence, scope, certainty and the writer’s relationship.' },
+    ]}
+    method={[
+      { title: 'Name the question job', text: 'Underline the operative words in the stem: according to, mainly, imply, purpose or refers to.' },
+      { title: 'Locate before choosing', text: 'Find the paragraph or sentence that controls the answer before following vocabulary in the options.' },
+      { title: 'Test every option', text: 'Label each option supported, contradicted, not given or only partially true.' },
+      { title: 'Defeat the closest rival', text: 'Choose the only option whose scope and relationship match the whole evidence zone.' },
+    ]}
+    weakExample="The option repeats ‘sleep’ and ‘memory’, so it must be correct."
+    strongExample="The stem asks for paragraph purpose. Option B captures the old-view/new-view contrast; the other options reuse details but describe neither the paragraph’s job nor its whole meaning."
+    practice={<MultipleChoiceGuidedPractice passage={guidedPassage} />}
+    independentPracticeExperience={<MultipleChoiceIndependentPractice passage={independentPassage} />}
+    progressEngine={<MultipleChoiceProgressEngine />}
+    sourceReview={(
+      <SkillReviewSourceBlock
+        accent="#0369a1"
+        skillName="Multiple Choice"
+        reviewedFocus={[
+          'Guided, independent and Progress Engine passage pools are separated.',
+          'Distractors are classified by stem misread, lexical echo, partial truth, scope, relationship or unsupported claim.',
+          'Answer positions vary mechanically and full-set feedback remains closed until submission.',
+        ]}
+        sources={[
+          { label: 'Official IELTS Academic Reading format', href: IELTS_ACADEMIC_URL, note: 'Confirms Multiple Choice as an official Reading task family and the possibility of selecting one or more answers according to the instructions.' },
+          { label: 'WeLearn practice blueprint', note: 'Defines held-back transfer, explicit option comparison, local progress and the client-key security boundary.' },
         ]}
       />
-
-      <section className="wl-section">
-        <div className="wrap" style={{ maxWidth: 1040 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
-            <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
-            <span>/</span>
-            <Link href="/practica/ielts" style={{ color: 'var(--muted)', textDecoration: 'none' }}>IELTS</Link>
-            <span>/</span>
-            <Link href="/practica/ielts/reading/tipos-de-preguntas" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Tipos de preguntas</Link>
-            <span>/</span>
-            <span style={{ color: 'var(--ink)', fontWeight: 800 }}>Multiple Choice</span>
-          </div>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '1rem', alignItems: 'stretch', marginBottom: '1.5rem' }}>
-            <div>
-              <p className="eyebrow" style={{ margin: '0 0 0.5rem' }}>
-                <span className="ink-line" />IELTS Reading · Tipo de pregunta
-              </p>
-              <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.1rem)', lineHeight: 1.04, letterSpacing: '-0.04em', margin: '0 0 0.85rem', color: 'var(--ink)' }}>
-                IELTS Reading Multiple Choice
-              </h1>
-              <p style={{ color: 'var(--muted)', fontSize: '1rem', lineHeight: 1.75, margin: 0, maxWidth: 740 }}>
-                Las preguntas de opción múltiple parecen familiares, pero en IELTS los distractores suelen mezclar una palabra verdadera con una conclusión falsa. Tu trabajo es volver al texto y comprobar la relación exacta.
-              </p>
-            </div>
-
-            <aside className="wl-card" style={{ padding: '1rem', borderRadius: 16, display: 'grid', gap: '0.75rem', alignContent: 'center' }}>
-              {[
-                { label: 'Detalle', value: 'evidencia', sub: 'línea o paráfrasis' },
-                { label: 'Inferencia', value: 'probable', sub: 'sin exagerar' },
-                { label: 'Distractor', value: 'mezcla', sub: 'real + falso' },
-              ].map((item) => (
-                <div key={item.label} style={{ display: 'flex', justifyContent: 'space-between', gap: '0.75rem', alignItems: 'center', border: '1px solid var(--line-soft)', borderRadius: 12, padding: '0.75rem', background: 'var(--bg-2)' }}>
-                  <span style={{ color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.72rem', textTransform: 'uppercase', fontWeight: 800 }}>{item.label}</span>
-                  <strong style={{ color: ACCENT, fontFamily: 'var(--mono)', fontSize: '1.05rem', textAlign: 'right' }}>
-                    {item.value}
-                    <span style={{ display: 'block', color: 'var(--muted)', fontSize: '0.66rem', fontWeight: 700 }}>{item.sub}</span>
-                  </strong>
-                </div>
-              ))}
-            </aside>
-          </div>
-
-          <OfficialStrategyCard
-            accent={ACCENT}
-            official="IELTS Academic Reading incluye preguntas Multiple Choice para seleccionar una respuesta o varias respuestas correctas a partir del pasaje."
-            strategy="WeLearn lo trabaja como verificación de evidencia: primero ubicas la zona, luego comparas cada opción contra alcance, propósito, inferencia o paráfrasis."
-          />
-
-          <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: '0.85rem', marginBottom: '1.2rem' }}>
-            {[
-              {
-                icon: <SearchCheck size={18} />,
-                title: 'Ubica la zona',
-                text: 'Antes de comparar opciones, encuentra el párrafo o frase que responde la pregunta.',
-              },
-              {
-                icon: <CheckCircle2 size={18} />,
-                title: 'Compara cada opción',
-                text: 'No elijas la primera que suena correcta. Verifica por qué las otras fallan.',
-              },
-              {
-                icon: <Brain size={18} />,
-                title: 'Respeta el alcance',
-                text: 'Opciones con always, only, never o all suelen ser demasiado fuertes para el texto.',
-              },
-            ].map((item) => (
-              <article key={item.title} className="wl-card" style={{ padding: '1rem', borderRadius: 14 }}>
-                <div style={{ display: 'flex', gap: '0.5rem', color: ACCENT, alignItems: 'center', marginBottom: '0.35rem' }}>
-                  {item.icon}
-                  <h2 style={{ margin: 0, color: 'var(--ink)', fontSize: '1rem' }}>{item.title}</h2>
-                </div>
-                <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.58, fontSize: '0.9rem' }}>{item.text}</p>
-              </article>
-            ))}
-          </section>
-
-          <section className="wl-card" style={{ padding: '1.2rem', borderRadius: 16, marginBottom: '1rem' }}>
-            <p className="eyebrow" style={{ margin: '0 0 0.45rem' }}>Método WeLearn</p>
-            <h2 style={{ margin: '0 0 0.75rem', fontSize: '1.3rem', letterSpacing: '-0.02em' }}>Cómo resolver Multiple Choice</h2>
-            <div style={{ display: 'grid', gap: '0.65rem' }}>
-              {[
-                'Lee la pregunta y decide si pide detalle, propósito, inferencia, vocabulario o idea principal.',
-                'Busca la zona del texto antes de mirar demasiado las opciones.',
-                'Elimina opciones que agregan información nueva o cambian una palabra clave de alcance.',
-                'Elige la opción que conserva el significado aunque use palabras distintas.',
-              ].map((item, index) => (
-                <p key={item} style={{ margin: 0, display: 'grid', gridTemplateColumns: '32px 1fr', gap: '0.65rem', alignItems: 'start', color: 'var(--ink-2)', lineHeight: 1.58 }}>
-                  <span style={{ width: 32, height: 32, borderRadius: 10, background: `${ACCENT}12`, color: ACCENT, display: 'grid', placeItems: 'center', fontFamily: 'var(--mono)', fontWeight: 900 }}>
-                    {index + 1}
-                  </span>
-                  <span>{item}</span>
-                </p>
-              ))}
-            </div>
-          </section>
-
-          <MultipleChoicePassageBank
-            passages={IELTS_MULTIPLE_CHOICE_PASSAGES}
-            accent={ACCENT}
-            eyebrow="Banco Multiple Choice"
-            title="Tres pasajes para entrenar distractores IELTS"
-            intro="Practica con textos originales de WeLearn. Cada pregunta incluye etiqueta de habilidad, explicación y trampa para separar paráfrasis correcta de distractor atractivo."
-          />
-
-          <section style={{ marginTop: '1.4rem' }}>
-            <QuestionTypeReviewSourceBlock
-              accent={ACCENT}
-              questionTypeName={ROUTE.title}
-              sources={[
-                {
-                  label: 'IELTS Academic sample test questions',
-                  href: IELTS_SAMPLE_URL,
-                  note: 'lista oficial de preguntas de muestra de IELTS Academic Reading usada para confirmar que esta ruta corresponde a un tipo de pregunta oficial.',
-                },
-                {
-                  label: 'Banco original WeLearn',
-                  note: 'pasajes, preguntas, distractores y explicaciones creados para practica pedagogica, sin copiar preguntas oficiales.',
-                },
-              ]}
-              reviewedFocus={[
-                'alineacion con tipos de pregunta oficiales de IELTS Reading',
-                'separacion entre formato oficial y metodo WeLearn',
-                'respuesta explicada con evidencia, alcance o trampa',
-              ]}
-            />
-
-            <p className="eyebrow" style={{ margin: '0 0 0.5rem' }}>Preguntas frecuentes</p>
-            <div style={{ display: 'grid', gap: '0.75rem' }}>
-              {ROUTE.faqs.map((faq) => (
-                <article key={faq.question} className="wl-card" style={{ padding: '1rem', borderRadius: 14 }}>
-                  <h2 style={{ margin: '0 0 0.35rem', color: 'var(--ink)', fontSize: '1rem' }}>{faq.question}</h2>
-                  <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.9rem' }}>{faq.answer}</p>
-                </article>
-              ))}
-            </div>
-          </section>
-        </div>
-      </section>
-    </>
-  );
+    )}
+    independentPractice={[
+      'Write the question job beside every stem before opening the options.',
+      'Mark the exact evidence zone and paraphrase it in your own words.',
+      'Explain why the closest distractor fails by scope or relationship.',
+      'Retry with reshuffled options instead of memorising a letter position.',
+    ]}
+    checklist={[
+      'you answer the stem rather than the general topic',
+      'you can quote evidence for the chosen option',
+      'you can name the precise defect in the closest distractor',
+      'your decision survives when option order changes',
+    ]}
+    faqs={ROUTE.faqs}
+    officialNote="Multiple Choice is an official IELTS Academic Reading task family. This page is guided WeLearn practice; because answer keys reach the browser, it is not a secure Exam or proctored mode."
+    nextLinks={[
+      { href: '/practica/ielts/reading/tipos-de-preguntas/true-false-not-given', label: 'Continue to True / False / Not Given', primary: true },
+      { href: '/practica/ielts/reading/habilidades/scanning', label: 'Review evidence location' },
+      { href: '/practica/ielts/reading/habilidades/parafrasis', label: 'Review paraphrase control' },
+      { href: '/practica/ielts/reading/habilidades/inferencia', label: 'Review inference control' },
+      { href: '/practica/ielts/reading/mixed-practice', label: 'Open Mixed Practice' },
+      { href: '/practica/ielts/reading', label: 'Back to Reading hub' },
+    ]}
+  />;
 }

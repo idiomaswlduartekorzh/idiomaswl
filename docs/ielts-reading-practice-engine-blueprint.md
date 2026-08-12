@@ -38,6 +38,10 @@ The reusable learning sequence is:
 - Time-management practice must record the evidence state, time already invested and next search cost. “Go faster” or a decorative countdown is not a pacing method.
 - Leaving an item must preserve its paragraph, anchor and unresolved distinction. Final review prioritises located evidence over searches from zero; the flexible 20-minute passage budget must never be described as an official per-passage IELTS rule.
 - Guided, independent and Progress Engine time-management pools must be disjoint. Feedback must diagnose over-investment, restart search, abandoned evidence, unsupported rush, poor review priority and equal-time fallacy.
+- Multiple Choice practice must begin with the exact stem job: detail, purpose, inference, main idea or vocabulary in context. A familiar topic word is never sufficient evidence.
+- Guided, independent and Progress Engine Multiple Choice pools must be disjoint. Feedback must diagnose stem misread, lexical echo, partial truth, scope inflation, wrong relationship or unsupported claim.
+- The learner must commit to a native radio option and explicitly check or submit. First click cannot lock the question, reveal the key or turn an editable draft into immediate correction.
+- Full Multiple Choice sets keep feedback closed until all questions are submitted. A retry reshuffles option positions while preserving the same four meanings.
 - Independent and full-passage sets must preserve the real task rule. For Matching Headings, a heading cannot be reused and extra headings remain unused.
 - Feedback must name why the chosen distractor fails: narrow detail, keyword match, wrong function, excessive scope or unsupported claim. Red/green alone is insufficient.
 - A progress level cannot be certified from repeated position, length, typography, language, lexical-overlap or other surface shortcuts.
@@ -70,6 +74,7 @@ The reusable learning sequence is:
 
 - Guided Learn mode may deliver answer keys and explanations to the browser only when the UI says so plainly.
 - Client-delivered keys cannot be called secure Practice, Exam or proctored assessment. Those modes require server-side attempt generation, scoring and authorization.
+- When `next.config` rewrites a public question-type URL, the progressive engine must be mounted and tested in the rewrite destination as well as any route-specific source page. Editing a shadowed page is not a release.
 - Never infer authorship, factual verification, rights clearance or human review from a visible WeLearn label. Preserve the applicable rights/provenance contract.
 - Source URLs must be HTTPS, directly relevant, periodically checked and replaceable when they consistently deny or lose access.
 - Production must come from committed `main` in the canonical `idiomaswl` repository.
@@ -134,5 +139,6 @@ A pilot can become a template only after content checks, TypeScript, production 
 - **Paraphrase recognition:** progressive vertical implemented with 6 source-backed passages, 30 decisions, held-back independent transfer and 6 local levels. Browser and release gates must pass before this line is used as a production certificate.
 - **Inference:** complete progressive vertical; 6 source-backed passages, 30 evidence bridges, held-back independent transfer, 6 local levels and production release gates passed.
 - **Word-limit control:** complete progressive vertical; 6 source-backed passages, 30 exact-span decisions, held-back independent transfer, 6 local levels and production release gates passed.
-- **Time management:** progressive vertical implemented with 6 source-backed passage plans, 30 evidence-cost decisions, held-back independent transfer and 6 local levels. Browser and release gates must pass before this line is used as a production certificate.
-- **Next question-type vertical after release:** Multiple Choice. Do not begin it until Time management passes the static, build and real-browser gates above.
+- **Time management:** complete progressive vertical; 6 source-backed passage plans, 30 evidence-cost decisions, held-back independent transfer, 6 local levels and production release gates passed.
+- **Multiple Choice:** complete progressive vertical; 6 source-backed passages, 30 one-best-answer decisions, held-back independent transfer, 6 local levels and production release gates passed. The public rewrite destination is pinned by tests so a shadowed route cannot regress silently.
+- **Next question-type vertical after release:** True / False / Not Given. Do not begin it until Multiple Choice passes the static, build and real-browser gates above.

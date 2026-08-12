@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
 import InternationalQuestionTypePractice from '@/components/exam-practice/InternationalQuestionTypePractice';
+import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import {
   MatchingHeadingsGuidedPractice,
   MatchingHeadingsIndependentPractice,
@@ -12,6 +13,16 @@ import {
   MATCHING_HEADINGS_INDEPENDENT_PASSAGE_ID,
   getMatchingHeadingsPassage,
 } from '@/data/practica-exams/ielts-reading-matching-headings-progress';
+import {
+  MultipleChoiceGuidedPractice,
+  MultipleChoiceIndependentPractice,
+  MultipleChoiceProgressEngine,
+} from '@/components/exam-practice/MultipleChoicePracticeLab';
+import {
+  MULTIPLE_CHOICE_GUIDED_PASSAGE_ID,
+  MULTIPLE_CHOICE_INDEPENDENT_PASSAGE_ID,
+  getMultipleChoicePassage,
+} from '@/data/practica-exams/ielts-reading-multiple-choice-progress';
 import {
   IELTS_READING_TYPES,
   PRACTICE_BASE_URL,
@@ -134,6 +145,7 @@ const TYPES = {
 } satisfies Record<string, QuestionTypeConfig>;
 
 type Slug = keyof typeof TYPES;
+const IELTS_ACADEMIC_URL = 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading';
 const slugs = Object.keys(TYPES) as Slug[];
 export function generateStaticParams() { return slugs.map((slug) => ({ slug })); }
 
@@ -156,8 +168,11 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   const config = TYPES[slug];
   const route = IELTS_READING_TYPES.find((item) => item.slug === slug)!;
   const isMatchingHeadings = slug === 'matching-headings';
+  const isMultipleChoice = slug === 'multiple-choice';
   const guidedPassage = isMatchingHeadings ? getMatchingHeadingsPassage(MATCHING_HEADINGS_GUIDED_PASSAGE_ID) : undefined;
   const independentPassage = isMatchingHeadings ? getMatchingHeadingsPassage(MATCHING_HEADINGS_INDEPENDENT_PASSAGE_ID) : undefined;
+  const multipleChoiceGuided = isMultipleChoice ? getMultipleChoicePassage(MULTIPLE_CHOICE_GUIDED_PASSAGE_ID) : undefined;
+  const multipleChoiceIndependent = isMultipleChoice ? getMultipleChoicePassage(MULTIPLE_CHOICE_INDEPENDENT_PASSAGE_ID) : undefined;
 
   return <InternationalReadingSkillLesson
     slug={slug}
@@ -178,9 +193,30 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
     strongExample={config.strong}
     practice={guidedPassage
       ? <MatchingHeadingsGuidedPractice passage={guidedPassage} />
+      : multipleChoiceGuided
+        ? <MultipleChoiceGuidedPractice passage={multipleChoiceGuided} />
       : <InternationalQuestionTypePractice name={config.name} accent={config.accent} target={config.target} evidence={config.evidence} risk={config.risk} weak={config.weak} strong={config.strong} />}
-    independentPracticeExperience={independentPassage ? <MatchingHeadingsIndependentPractice passage={independentPassage} /> : undefined}
-    progressEngine={isMatchingHeadings ? <MatchingHeadingsProgressEngine /> : undefined}
+    independentPracticeExperience={independentPassage
+      ? <MatchingHeadingsIndependentPractice passage={independentPassage} />
+      : multipleChoiceIndependent
+        ? <MultipleChoiceIndependentPractice passage={multipleChoiceIndependent} />
+        : undefined}
+    progressEngine={isMatchingHeadings ? <MatchingHeadingsProgressEngine /> : isMultipleChoice ? <MultipleChoiceProgressEngine /> : undefined}
+    sourceReview={isMultipleChoice ? (
+      <SkillReviewSourceBlock
+        accent={config.accent}
+        skillName="Multiple Choice"
+        reviewedFocus={[
+          'Guided, independent and Progress Engine passage pools are separated.',
+          'Distractors identify stem misreads, lexical echoes, partial truths, scope inflation, wrong relationships and unsupported claims.',
+          'Answer positions vary mechanically and full-set feedback remains closed until submission.',
+        ]}
+        sources={[
+          { label: 'Official IELTS Academic Reading format', href: IELTS_ACADEMIC_URL, note: 'Confirms Multiple Choice as an official Reading task family and that the instructions determine how many answers to select.' },
+          { label: 'WeLearn practice blueprint', note: 'Defines held-back transfer, explicit option comparison, local progress and the client-key security boundary.' },
+        ]}
+      />
+    ) : undefined}
     independentPractice={[
       `Complete one new ${config.name} set without opening feedback.`,
       `For every item, record the exact evidence used for the decision.`,
