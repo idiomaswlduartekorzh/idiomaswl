@@ -66,7 +66,7 @@ traen las capas de raíz y de acento.
 | # | Fase | Estado |
 |---|---|---|
 | 1 | **inglés A1** | ✅ TERMINADO — 334 palabras, audio, persistencia, las cuatro auditorías y sus arreglos, indexado |
-| 2 | **inglés A2** | ✅ TERMINADO — 350 palabras, cruzado con el Oxford 3000, aprobado por el usuario, 40 mp3, indexado. Faltan las auditorías 5.2 y 5.3 |
+| 2 | **inglés A2** | ✅ TERMINADO — 350 palabras, cruzado con el Oxford 3000, aprobado por el usuario, 40 mp3, indexado y con las cuatro auditorías pasadas |
 | 3 | inglés B1 | pendiente |
 | 4 | alemán A1 | pendiente |
 | 5 | alemán A2 | pendiente |
@@ -270,10 +270,25 @@ Se dejan, justificados: `many`/`some` es un par mínimo que **enseña** la disti
 `repeat`/`help` son las dos fórmulas canónicas de cortesía; `rent`/`jar` son del corpus y
 cambiarlas rompería el enlace con la lección.
 
-### Lo que queda de la fase
+### Las dos deudas, saldadas — 12 ago 2026
 
-1. Añadir `past-continuous` al módulo de gramática de A2 — el material ya lo enseña.
-2. Decidir si `falsoAmigo` entra en `EnExtra`, con las diez entradas ya identificadas.
+**`past-continuous-a2` existe.** Siete niveles de práctica, ejemplos del local de Sam, y el
+reparto con B1 escrito en el propio archivo: aquí la forma, el -ing y la interrupción con
+`when`; en B1 el `while`, la simultaneidad y el contraste fino. Inglés A2 pasa de 20 a 21
+temas y entra al sitemap solo, porque las rutas de gramática salen del registro.
+
+**`falsoAmigo` entra en `EnExtra`, y esta vez se pinta.** Diez entradas marcadas —`attend`,
+`support`, `record`, `notice`, `discuss`, `realise`, `library`, `parents`, `large`, `quiet`—
+con las tres partes que tiene la trampa: qué parece, qué significa, y cómo se dice entonces
+lo que uno quería decir. En las románicas el campo llevaba desde la Fase 0 sin que ningún
+componente lo mostrara: **un campo que nadie muestra es un campo muerto.**
+
+### Lo que queda, y no lo puede cerrar esta sesión
+
+**El corpus de salud.** Es la única que no es una deuda de código: hace falta grabar un
+episodio de consulta médica, y `AGENTS.md` prohíbe tocar las series de escucha porque son
+contenido publicado con audio ya locutado. Guion, locución y volver a medir — decisión de
+David y Zhanna.
 
 ---
 
@@ -634,4 +649,6 @@ sin leer commits.
 | 12 ago 2026 | inglés A2, 5.2 | **Dos síntomas iguales, dos causas opuestas.** Trece ejemplos usaban gramática de B1. Nueve eran un defecto —pasado perfecto y pasiva sueltos en las lecturas— y cuatro no lo eran: el pasado continuo lo enseñan dos episodios enteros del propio nivel, y lo que falta es el tema de gramática. Corregir los trece igual habría borrado material bueno. **Antes de arreglar, abrir la fuente** |
 | 12 ago 2026 | inglés A2, 5.2 | Se había recomendado cambiar cinco palabras del bloque de compras por «irse a la oficina». Al mirar el bloque entero la recomendación se cayó: A1 se llevó `price`, `pay`, `cost`, `cheap`, `expensive`, `card`, `buy`, `sell`, `shop` y `money`, y A2 ya tenía `customer`, `bill` y `change`. No había nada mejor que poner. **Cinco palabras sueltas inventan una deriva que el conjunto no confirma** |
 | 12 ago 2026 | inglés A1+A2, 5.3 | Las glosas se revisaban una a una y así no se ve lo único que importa: que **dos de la misma unidad no se puedan distinguir**. `anyone` decía «alguien / nadie» y competía con `nobody` («nadie») entre los distractores de su propia caja 1. En las cajas 2 y 3 el estudiante solo ve el español, así que no tiene con qué desempatar. Nueve pares medidos, cinco reales, arreglados cambiando la glosa — que no se locuta y sale gratis |
+| 12 ago 2026 | inglés A2, gramática | **El material iba por delante del temario.** Dos episodios enteros del nivel enseñaban pasado continuo y el módulo de gramática no lo tenía: solo existía `past-continuous-b1`. El estudiante se lo encontraba escuchando y no tenía dónde estudiarlo. Lo destapó la auditoría del **vocabulario**, no la de gramática — un hueco entre dos destrezas no lo ve quien mira solo una |
+| 12 ago 2026 | esquema | `falsoAmigo` llevaba desde la Fase 0 en francés, italiano y portugués, y **ningún componente lo pintaba nunca**. Al añadirlo a inglés se vio que el campo estaba muerto en las tres. Un campo que nadie muestra no es contenido pendiente: es contenido que no existe |
 | 12 ago 2026 | árbol compartido | `node_modules` apareció vacío —carpeta creada, cero ficheros— y con él no compilaba nada: ni el guardián, ni `tsc`, ni el build. No dio ningún error que lo dijera; solo un `Cannot find module 'typescript'` desde un script. **Antes de creerse que un script está roto, mirar si el árbol tiene dependencias** |
