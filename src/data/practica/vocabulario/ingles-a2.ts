@@ -565,12 +565,27 @@ const b6unidad3: VocabEntry[] = [
     {
       target: 'The room became busy when a delivery arrived.',
       es: 'La sala se llenó de movimiento cuando llegó un reparto.',
-      motivo: 'La frase del turno de voluntariado empieza por «I had expected», y el pasado perfecto ' +
-        'es B1 en este currículo. Se conserva su segunda mitad, que va en pasado simple y cuenta la ' +
-        'misma escena del almacén.',
+      motivo: 'El turno de voluntariado cuenta la llegada del reparto dentro de una frase que ' +
+        'arranca hablando de lo que la voluntaria esperaba encontrar. Se queda solo la escena: la ' +
+        'sala llenándose de golpe.',
     },
     { tipo: 'sustantivo' }),
 ]
+
+// ─── Nota de la auditoría 5.2, 12 ago 2026 ────────────────────────────────────
+//
+// Nueve fichas de este archivo pasaron de `lectura` a `redactado` porque su frase usaba
+// gramática que A2 no enseña: pasado perfecto en `delivery`, `task`, `problem`, `result` y
+// `quality`; pasiva en `reason`, `note`, `detail` y `label`. B1 tiene `past-perfect-b1` y
+// `passive-voice-b1` como temas propios, así que no es opinable.
+//
+// El razonamiento gramatical vive aquí y no en los `motivo`: ese texto sale en el tooltip de
+// la etiqueta «✎ redactado» y lo lee el estudiante, que no necesita saber en qué banda cae
+// una estructura. Los motivos hablan de la historia, como los demás.
+//
+// El pasado continuo NO entró en esta corrección, aunque también sea B1 en el módulo: lo
+// enseñan dos episodios enteros del propio nivel —ep04 y ep17— y está en A2 en Cambridge y en
+// el EVP. Lo que falta ahí es el tema de gramática de A2, no otra frase.
 
 // ═══ BLOQUE 2 · Trabajo y empleo ═══════════════════════════════════════════════
 //
@@ -607,9 +622,8 @@ const b2unidad1: VocabEntry[] = [
     {
       target: 'Noor learned a new task on her first day.',
       es: 'Noor aprendió una tarea nueva en su primer día.',
-      motivo: 'La única frase de la lectura con «task» va en pasado perfecto —«she had solved a ' +
-        'problem, helped a customer, or learned a new task»— y eso es B1. Se reescribe en pasado ' +
-        'simple con la misma protagonista y el mismo hecho.',
+      motivo: 'La entrevista de Noor enumera de un tirón tres cosas que había hecho —resolver, ' +
+        'ayudar, aprender— en una sola frase. Aquí se cuenta una, la de la tarea, en su primer día.',
     },
     { tipo: 'sustantivo' }),
 
@@ -618,9 +632,8 @@ const b2unidad1: VocabEntry[] = [
     {
       target: 'Noor solved a problem for a customer last week.',
       es: 'Noor resolvió un problema de un cliente la semana pasada.',
-      motivo: 'Mismo caso que «task»: la frase comparte el pasado perfecto de la lectura. Se ' +
-        'reescribe en pasado simple, y se separa de la de «task» para que ninguna de las dos ' +
-        'dependa de la otra al vaciarse el hueco.',
+      motivo: 'Sale de la misma enumeración que «task», y se separa a propósito: dos fichas con ' +
+        'la misma frase se acaban contestando de memoria.',
     },
     { tipo: 'sustantivo' }),
 
@@ -683,9 +696,9 @@ const b2unidad1: VocabEntry[] = [
     {
       target: 'She did not know the result until Friday.',
       es: 'No supo el resultado hasta el viernes.',
-      motivo: 'La frase de la lectura lleva «she had shown», pasado perfecto, que es B1. Se ' +
-        'reescribe en pasado simple manteniendo lo que enseña la palabra: que el resultado se ' +
-        'espera y no se sabe al salir.',
+      motivo: 'Noor sale de la entrevista sin saber el resultado, pero la lectura lo cuenta en ' +
+        'una frase que resume toda la entrevista de golpe. Aquí se queda la espera, que es lo que ' +
+        'enseña la palabra.',
     },
     { tipo: 'sustantivo' }),
 
@@ -694,9 +707,9 @@ const b2unidad1: VocabEntry[] = [
     {
       target: 'The manager asked about her best quality.',
       es: 'El responsable preguntó por su mejor cualidad.',
-      motivo: 'Comparte con «result» la frase de pasado perfecto de la lectura. Se reescribe en ' +
-        'pasado simple, y con la acepción de «cualidad» —no la de «calidad»— porque es la que ' +
-        'usa la entrevista.',
+      motivo: 'Comparte frase con «result» en la lectura. Aquí se escribe la pregunta del ' +
+        'responsable, que es donde una cualidad se nombra de verdad — y en la acepción de ' +
+        '«cualidad», no en la de «calidad».',
     },
     { tipo: 'sustantivo' }),
 ]
@@ -879,9 +892,9 @@ const b2unidad3: VocabEntry[] = [
     {
       target: 'The team left a short note to explain the reason.',
       es: 'El equipo dejó una nota corta para explicar el motivo.',
-      motivo: 'La frase del plan de reciclaje dice «a bag was rejected», y la pasiva es B1 en este ' +
-        'currículo. Se reescribe en pasado simple con infinitivo de finalidad, conservando la nota ' +
-        'y el motivo, que es la escena que enseña la palabra.',
+      motivo: 'El plan de reciclaje cuenta que el equipo dejaba una nota explicando el motivo, ' +
+        'dentro de una frase larga sobre cómo fue la prueba. Se queda la nota y el motivo, que es ' +
+        'la escena.',
     },
     { tipo: 'sustantivo' }),
 ]
@@ -1035,9 +1048,8 @@ const b8unidad2: VocabEntry[] = [
     {
       target: 'She left a short note on the kitchen table.',
       es: 'Dejó una nota corta en la mesa de la cocina.',
-      motivo: 'Comparte con «reason» la frase de pasiva del plan de reciclaje. Se reescribe en ' +
-        'pasado simple y con la mesa de la cocina, que sí es del nivel, para que las dos fichas ' +
-        'no dependan de la misma frase.',
+      motivo: 'Comparte escena con «reason» en el plan de reciclaje, y se separa a propósito. ' +
+        'Esta se lleva a la mesa de la cocina, que también es del nivel.',
     },
     { tipo: 'sustantivo' }),
 
@@ -1145,8 +1157,8 @@ const b8unidad3: VocabEntry[] = [
     {
       target: 'The guide helps visitors notice small details.',
       es: 'La guía ayuda a los visitantes a fijarse en los detalles pequeños.',
-      motivo: 'La frase del museo dice «the guide is designed to», y la pasiva es B1. Se reescribe ' +
-        'en presente simple con la misma audioguía y los mismos detalles.',
+      motivo: 'La audioguía del museo dice que sirve para fijarse en los detalles, pero en una ' +
+        'frase que además habla de las etiquetas. Se queda solo lo de los detalles.',
     },
     { tipo: 'sustantivo' }),
 
@@ -1155,9 +1167,9 @@ const b8unidad3: VocabEntry[] = [
     {
       target: 'Every box in the storage room has a label.',
       es: 'Cada caja del almacén tiene una etiqueta.',
-      motivo: 'Dos frases del material tienen «label» y ninguna sirve: la del museo es pasiva —«is ' +
-        'designed to»— y la del turno de voluntariado ya enseña «coordinator» y «storage», que es ' +
-        'el tope de dos por frase. Se reescribe en presente simple con ese mismo almacén.',
+      motivo: 'Las dos frases del material con «label» están ocupadas: la del museo enseña los ' +
+        'detalles y la del almacén ya enseña «coordinator» y «storage». Se escribe con ese mismo ' +
+        'almacén del banco de alimentos.',
     },
     { tipo: 'sustantivo' }),
 
@@ -2292,11 +2304,12 @@ const b1unidad3: VocabEntry[] = [
   en('en-a2-277', 'motorway', 'autopista', 'sustantivo', 'MO-tor-way',
     [c('on the motorway', 'en la autopista'), c('leave the motorway', 'salir de la autopista'), c('the motorway is closed', 'la autopista está cortada')],
     {
+      // Decía «The motorway was closed», que un A2 lee como pasiva aunque aquí fuera un
+      // estado, y la pasiva es B1 (auditoría 5.2, 12 ago 2026).
       target: 'The bus left the motorway and took a smaller road.',
       es: 'El autobús salió de la autopista y tomó una carretera más pequeña.',
       motivo: 'La única vía del nivel es una carretera de campo junto a Hill Farm. Se escribe ' +
-        'reutilizando el cambio de ruta del autobús 18. La primera versión decía «the motorway was ' +
-        'closed», que un A2 lee como pasiva aunque aquí fuera un estado, y la pasiva es B1.',
+        'reutilizando el cambio de ruta del autobús 18.',
     },
     { tipo: 'sustantivo' }),
 
@@ -2801,12 +2814,13 @@ const b4unidad1: VocabEntry[] = [
   en('en-a2-326', 'heart', 'corazón', 'sustantivo', 'heart',
     [c('a strong heart', 'un corazón fuerte'), c('my heart is fast', 'el corazón me va rápido'), c('good for the heart', 'bueno para el corazón')],
     {
+      // Decía «Walking every day is good for the heart», que es la frase de «health» con otra
+      // palabra al final: dos fichas del mismo bloque con el mismo molde (auditoría 5.3,
+      // 12 ago 2026). Se reescribe con «doctor», que sí está en A1.
       target: 'The doctor listened to my heart for a minute.',
       es: 'El médico me escuchó el corazón un minuto.',
       motivo: 'A1 lo dejó fuera por no estar en su corpus y en A2 tampoco aparece. Es la palabra ' +
-        'que más se echa de menos de un cuerpo por dentro. La primera versión decía «Walking every ' +
-        'day is good for the heart», que es la frase de «health» con otra palabra al final: dos ' +
-        'fichas del mismo bloque con el mismo molde. Se reescribe con «doctor», que sí está en A1.',
+        'que más se echa de menos de un cuerpo por dentro.',
     },
     { tipo: 'sustantivo' }),
 

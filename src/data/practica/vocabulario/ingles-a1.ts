@@ -1691,12 +1691,14 @@ const b5unidad1: VocabEntry[] = [
   en('en-a1-233', 'arm', 'brazo', 'sustantivo', 'arm',
     [c('tired arms', 'brazos cansados'), c('under your arm', 'debajo del brazo'), c('long arms', 'brazos largos')],
     {
+      // Decía «She has got long arms», el mismo molde que «She has got a happy face» dos
+      // fichas antes. En la misma unidad, el hueco de la caja 4 se rellenaba por memoria del
+      // patrón y no por saber la palabra (auditoría 5.3, 12 ago 2026). El cambio se anota
+      // aquí y no en el `motivo`: ese texto lo lee el estudiante en el tooltip de la etiqueta
+      // «✎ redactado», y ahí el historial de ediciones no le sirve de nada.
       target: 'I carry the box under my arm.',
       es: 'Llevo la caja debajo del brazo.',
-      motivo: SIN_TEMA('arm', 'El buscador la daba por presente y era «warm» del episodio 14.') +
-        ' La primera versión decía «She has got long arms», el mismo molde que «She has got a ' +
-        'happy face» dos fichas antes: en la misma unidad, el hueco de la caja 4 se rellenaba ' +
-        'por memoria del patrón y no por saber la palabra.',
+      motivo: SIN_TEMA('arm', 'El buscador la daba por presente y era «warm» del episodio 14.'),
     },
     { tipo: 'sustantivo' }),
 ]
