@@ -1,12 +1,19 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
 import SkimmingPracticeEngine from '@/components/exam-practice/SkimmingPracticeEngine';
+import { SkimmingIndependentPractice, SkimmingProgressEngine } from '@/components/exam-practice/SkimmingPracticeLab';
 import { IELTS_READING_SKILLS, IELTS_SKIMMING_PRACTICE, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
+import {
+  SKIMMING_INDEPENDENT_PASSAGE_ID,
+  getSkimmingPassage,
+} from '@/data/practica-exams/ielts-reading-skimming-progress';
 
 const ROUTE = IELTS_READING_SKILLS.find((item) => item.slug === 'skimming')!;
 const TITLE = 'Skimming: build a passage map before you hunt for answers';
 const DESCRIPTION = 'Learn to identify topic, paragraph purpose and changes of direction in 30–60 seconds, then use that map to return to the right evidence.';
 const practice = { ...IELTS_SKIMMING_PRACTICE, timeTarget: '5 decisions · 6 minutes' };
+const independentPassage = getSkimmingPassage(SKIMMING_INDEPENDENT_PASSAGE_ID)!;
+// Scaling contract: docs/ielts-reading-practice-engine-blueprint.md
 
 export const metadata: Metadata = {
   title: 'IELTS Reading Skimming: Method, Example and Practice',
@@ -39,11 +46,13 @@ export default function Page() {
       weakExample="Reading every word, translating mentally and stopping at difficult vocabulary before you know what the paragraph is doing."
       strongExample="Label Paragraph A ‘initial problem’, Paragraph B ‘pilot solution’ and Paragraph C ‘result + limitation’, then return only when the question points to that function."
       practice={<SkimmingPracticeEngine practice={practice} accent="#0369a1" />}
+      independentPracticeExperience={<SkimmingIndependentPractice passage={independentPassage} />}
+      progressEngine={<SkimmingProgressEngine />}
       independentPractice={[
-        'Choose a new Academic Reading passage and give yourself 45 seconds.',
-        'Write one short function label for every paragraph without answering questions.',
-        'Compare your labels with each paragraph’s opening and closing sentence.',
-        'Use the map to predict where three different question stems belong.',
+        'Start a clean passage and give yourself 45 seconds for title, paragraph openings and direction markers.',
+        'Write one short writer-action label for every paragraph before answering any question.',
+        'Compare each label with the complete paragraph, not only its first sentence.',
+        'Use the finished map to predict where three different question stems belong.',
       ]}
       checklist={[
         'you can state the passage topic in one sentence',

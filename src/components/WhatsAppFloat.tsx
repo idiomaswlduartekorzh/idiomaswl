@@ -134,8 +134,7 @@ export default function WhatsAppFloat() {
         }
         @media (max-width: 640px) {
           body:has([data-active-practice="true"]) .wl-wa-float {
-            transform: translateX(calc(100% + 12px));
-            pointer-events: none;
+            display: none;
           }
         }
       `}</style>

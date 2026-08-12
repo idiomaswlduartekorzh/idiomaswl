@@ -464,13 +464,11 @@ function validateIeltsSkimScanRoutes() {
   const skimmingText = fs.existsSync(skimmingPath) ? fs.readFileSync(skimmingPath, 'utf8') : '';
   for (const requiredText of [
     'SkimmingPracticeEngine',
-    'SkimScanTransferEngine',
+    'SkimmingIndependentPractice',
+    'SkimmingProgressEngine',
     'IELTS_SKIMMING_PRACTICE',
-    'IELTS_SKIM_SCAN_TRANSFER_SETS',
-    'Formato oficial vs estrategia WeLearn',
-    'SkillReviewSourceBlock',
-    'idiomaswl_ielts_skimming_preview.html',
-    'Skimming exercise / Skimming and scanning',
+    'SKIMMING_INDEPENDENT_PASSAGE_ID',
+    'ielts-reading-practice-engine-blueprint.md',
     '/practica/ielts/reading/habilidades/scanning',
     '/practica/ielts/reading/tipos-de-preguntas/matching-headings',
   ]) {

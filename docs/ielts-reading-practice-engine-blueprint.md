@@ -23,9 +23,11 @@ The reusable learning sequence is:
 
 - A worked example must expose the reasoning sequence: identify paragraph/question function, reject the closest distractor and prove whole-answer coverage.
 - Guided practice must remove support progressively. It cannot reveal the answer before the learner acts.
+- Selecting a radio card is a draft decision, not submission. Correctness, colours and explanations stay hidden until an explicit check action.
 - Independent and full-passage sets must preserve the real task rule. For Matching Headings, a heading cannot be reused and extra headings remain unused.
 - Feedback must name why the chosen distractor fails: narrow detail, keyword match, wrong function, excessive scope or unsupported claim. Red/green alone is insufficient.
 - A progress level cannot be certified from repeated position, length, typography, language, lexical-overlap or other surface shortcuts.
+- Skill-label exercises must not invent a no-reuse rule merely to simplify scoring. Real paragraphs can perform similar jobs, so labels are decided from meaning rather than elimination.
 - Short drills must vary correct-option position deterministically by question and attempt. The order must remain stable during one attempt and change on a clean retry.
 - The automated gate must prove that always choosing the first option cannot pass a level and that correct answers occupy multiple positions across the bank.
 - Full-passage content must include plausible competitors and paraphrase the evidence. A high lexical-match success rate is an editorial warning, not proof of mastery.
@@ -93,6 +95,7 @@ Static/unit gates:
 - storage migration and draft schema;
 - native controls, labels and reset confirmation copy;
 - blueprint reference present in the implementation/migration record.
+- the public route mounts guided practice, an independently held-back passage and the Progress Engine; a shell or language refactor must fail if it silently removes any practice surface.
 
 Real-browser gates:
 
@@ -104,6 +107,7 @@ Real-browser gates:
 - draft survives reload; submission and reset behave as documented;
 - floating controls do not cover active choices;
 - internal links, canonical and primary-source links resolve as expected.
+- the production console has no CSP violations from intentionally enabled analytics; allow only reviewed, narrowly scoped script origins, and never open an unversioned package CDN merely to silence a blocked tag.
 
 ## Definition of done for scale
 
