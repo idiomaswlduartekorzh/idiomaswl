@@ -1,4 +1,4 @@
-import type { Colocacion, VocabEntry, VocabLevel } from './schema'
+import type { Colocacion, FalsoAmigo, VocabEntry, VocabLevel } from './schema'
 
 /**
  * Inglés A2 · núcleo productivo.
@@ -27,7 +27,16 @@ const SERIE = 'Sam’s Corner'
 
 const c = (chunk: string, es: string): Colocacion => ({ chunk, es })
 
-type Tipo = { tipo: 'sustantivo' } | { tipo: 'verbo'; phrasal?: string[] } | { tipo: 'otro' }
+/**
+ * Lo que cada ficha declara aparte del acento y las colocaciones.
+ *
+ * `falsoAmigo` va aquí y no en cada rama porque no depende de la clase de palabra: engañan
+ * sustantivos («library»), verbos («attend») y adjetivos («large») por igual. Es opcional a
+ * propósito — marcar como trampa lo que no lo es enseña a desconfiar de todo.
+ */
+type Tipo = ({ tipo: 'sustantivo' } | { tipo: 'verbo'; phrasal?: string[] } | { tipo: 'otro' }) & {
+  falsoAmigo?: FalsoAmigo
+}
 type FuenteCorta =
   | { target: string; es: string; episodio: number }
   | { target: string; es: string; lectura: string }
@@ -520,7 +529,11 @@ const b6unidad3: VocabEntry[] = [
       es: 'La cocina solo tiene ocho puestos, así que quien no pueda asistir debe cancelar antes del lunes por la mañana.',
       lectura: 'en-a2-cooking-class-reminder',
     },
-    { tipo: 'verbo' }),
+    { tipo: 'verbo', falsoAmigo: {
+      pareceEspanol: 'atender',
+      significaEnRealidad: 'asistir a, ir a',
+      seDiceAsi: 'serve',
+    } }),
 
   en('en-a2-064', 'provide', 'poner / facilitar', 'verbo', 'pro-VIDE',
     [c('the centre provides the bowls', 'el centro pone los boles'), c('provide soup and bread', 'poner sopa y pan'), c('we provide the tools', 'nosotros ponemos las herramientas')],
@@ -742,7 +755,11 @@ const b2unidad2: VocabEntry[] = [
       es: 'Me apunté a un turno de sábado en el banco de alimentos porque quería entender cómo funciona la ayuda del barrio.',
       lectura: 'en-a2-weekend-volunteer-shift',
     },
-    { tipo: 'sustantivo' }),
+    { tipo: 'sustantivo', falsoAmigo: {
+      pareceEspanol: 'soportar, aguantar',
+      significaEnRealidad: 'apoyar, respaldar',
+      seDiceAsi: 'put up with',
+    } }),
 
   en('en-a2-086', 'coordinator', 'coordinador / coordinadora', 'sustantivo', 'co-OR-di-na-tor',
     [c('the coordinator showed us', 'la coordinadora nos enseñó'), c('ask the coordinator', 'preguntar a la coordinadora'), c('the garden coordinator', 'la coordinadora del huerto')],
@@ -1069,7 +1086,11 @@ const b8unidad2: VocabEntry[] = [
       es: 'Maya compró una libreta pequeña para anotar sitios que quería visitar.',
       lectura: 'en-a2-weekend-without-my-phone',
     },
-    { tipo: 'verbo' }),
+    { tipo: 'verbo', falsoAmigo: {
+      pareceEspanol: 'recordar',
+      significaEnRealidad: 'grabar, dejar por escrito',
+      seDiceAsi: 'remember',
+    } }),
 
   en('en-a2-126', 'word', 'palabra', 'sustantivo', 'word',
     [c('new words', 'palabras nuevas'), c('a technical word', 'una palabra técnica'), c('in your own words', 'con tus palabras')],
@@ -1180,7 +1201,11 @@ const b8unidad3: VocabEntry[] = [
       es: 'Se dio cuenta cuando llegó el autobús, pero no volvió.',
       lectura: 'en-a2-weekend-without-my-phone',
     },
-    { tipo: 'verbo' }),
+    { tipo: 'verbo', falsoAmigo: {
+      pareceEspanol: 'noticia',
+      significaEnRealidad: 'darse cuenta, fijarse',
+      seDiceAsi: 'news',
+    } }),
 
   en('en-a2-138', 'system', 'sistema', 'sustantivo', 'SYS-tem',
     [c('the colour system', 'el sistema de colores'), c('a new system', 'un sistema nuevo'), c('the system is confusing', 'el sistema es confuso')],
@@ -1323,7 +1348,11 @@ const b9unidad2: VocabEntry[] = [
       es: 'Cada parada dura entre tres y cinco minutos e incluye una pregunta para comentar con un acompañante.',
       lectura: 'en-a2-museum-audio-guide',
     },
-    { tipo: 'verbo' }),
+    { tipo: 'verbo', falsoAmigo: {
+      pareceEspanol: 'discutir, pelear',
+      significaEnRealidad: 'hablar de algo entre varios',
+      seDiceAsi: 'argue',
+    } }),
 
   en('en-a2-156', 'picture', 'imagen / dibujo', 'sustantivo', 'PIC-ture',
     [c('the picture trail', 'el recorrido de imágenes'), c('draw a picture', 'hacer un dibujo'), c('pictures of the bakery', 'imágenes de la panadería')],
@@ -1590,7 +1619,11 @@ const b5unidad2: VocabEntry[] = [
       es: 'En el autobús de vuelta se dio cuenta de que el día se le había hecho más largo y más tranquilo.',
       lectura: 'en-a2-weekend-without-my-phone',
     },
-    { tipo: 'verbo' }),
+    { tipo: 'verbo', falsoAmigo: {
+      pareceEspanol: 'realizar, llevar a cabo',
+      significaEnRealidad: 'darse cuenta',
+      seDiceAsi: 'carry out',
+    } }),
 
   en('en-a2-193', 'hurry', 'meter prisa / darse prisa', 'verbo', 'HUR-ry',
     [c('you can’t hurry bread', 'al pan no se le mete prisa'), c('hurry up', 'date prisa'), c('don’t hurry the tutor', 'no metas prisa al monitor')],

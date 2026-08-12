@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
-import type { Colocacion, VocabBlock, VocabEntry, VocabLevel } from '@/data/practica/vocabulario/schema'
+import type { Colocacion, FalsoAmigo, VocabBlock, VocabEntry, VocabLevel } from '@/data/practica/vocabulario/schema'
 import { opcionesDe } from '@/data/practica/vocabulario/opciones'
 import { audioDe, type CorteAudio } from '@/data/practica/vocabulario/audio'
 import { resumen } from '@/data/practica/vocabulario/progreso'
@@ -193,6 +193,37 @@ function Fuente({ entrada }: { entrada: VocabEntry }) {
   )
 }
 
+/**
+ * El aviso de falso amigo.
+ *
+ * Las tres partes van juntas porque la trampa tiene tres partes, y dar solo una deja al
+ * estudiante a medio camino: qué le parece, qué significa de verdad, y cómo se dice entonces
+ * lo que él quería decir. Sin la tercera, quien buscaba «atender» sigue sin saber qué escribir.
+ *
+ * Va después de las colocaciones y antes del ejemplo a propósito: primero lo que la palabra
+ * hace, luego el aviso, y al final la frase donde se ve funcionando.
+ */
+function Trampa({ falso }: { falso: FalsoAmigo }) {
+  return (
+    <p
+      style={{
+        margin: 0,
+        fontSize: '0.82rem',
+        lineHeight: 1.5,
+        padding: '0.5rem 0.65rem',
+        borderRadius: 10,
+        border: '1px solid var(--line-soft)',
+        borderLeft: `3px solid ${COLOR}`,
+        background: `${COLOR}0a`,
+      }}
+    >
+      <strong style={{ color: COLOR }}>Falso amigo.</strong>{' '}
+      Parece «{falso.pareceEspanol}» y no lo es: significa <strong>{falso.significaEnRealidad}</strong>.
+      {' '}Para decir «{falso.pareceEspanol}» se usa <em>{falso.seDiceAsi}</em>.
+    </p>
+  )
+}
+
 function Ficha({ entrada, locale }: { entrada: VocabEntry; locale: string }) {
   const vozNavegador = useVozDelNavegador()
   const x = entrada.extra
@@ -241,6 +272,8 @@ function Ficha({ entrada, locale }: { entrada: VocabEntry; locale: string }) {
       <p style={{ margin: 0, fontSize: '0.98rem', color: 'var(--ink)' }}>{entrada.es}</p>
 
       {'colocaciones' in x && <Chunks colocaciones={x.colocaciones} />}
+
+      {'falsoAmigo' in x && x.falsoAmigo && <Trampa falso={x.falsoAmigo} />}
 
       <div
         style={{

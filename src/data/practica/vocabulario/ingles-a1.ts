@@ -1,4 +1,4 @@
-import type { Colocacion, VocabEntry, VocabLevel } from './schema'
+import type { Colocacion, FalsoAmigo, VocabEntry, VocabLevel } from './schema'
 import { reordenar } from './unidades'
 
 /**
@@ -28,7 +28,16 @@ const SERIE = 'The Corner Shop'
 /** Colocación con su traducción. */
 const c = (chunk: string, es: string): Colocacion => ({ chunk, es })
 
-type Tipo = { tipo: 'sustantivo' } | { tipo: 'verbo'; phrasal?: string[] } | { tipo: 'otro' }
+/**
+ * Lo que cada ficha declara aparte del acento y las colocaciones.
+ *
+ * `falsoAmigo` va aquí y no en cada rama porque no depende de la clase de palabra: engañan
+ * sustantivos («library»), verbos («attend») y adjetivos («large») por igual. Es opcional a
+ * propósito — marcar como trampa lo que no lo es enseña a desconfiar de todo.
+ */
+type Tipo = ({ tipo: 'sustantivo' } | { tipo: 'verbo'; phrasal?: string[] } | { tipo: 'otro' }) & {
+  falsoAmigo?: FalsoAmigo
+}
 type FuenteCorta =
   | { target: string; es: string; episodio: number }
   | { target: string; es: string; lectura: string }
@@ -162,7 +171,11 @@ const unidad2: VocabEntry[] = [
   en('en-a1-018', 'parents', 'padres', 'sustantivo', 'PA-rents',
     [c('live with my parents', 'vivir con mis padres'), c('my parents work', 'mis padres trabajan')],
     { target: 'Really? And your parents?', es: '¿En serio? ¿Y tus padres?', episodio: 2 },
-    { tipo: 'sustantivo' }),
+    { tipo: 'sustantivo', falsoAmigo: {
+      pareceEspanol: 'parientes',
+      significaEnRealidad: 'los padres',
+      seDiceAsi: 'relatives',
+    } }),
 
   en('en-a1-019', 'children', 'niños / hijos', 'sustantivo', 'CHIL-dren',
     [c('two children', 'dos niños'), c('have children', 'tener hijos'), c('the children are playing', 'los niños están jugando')],
@@ -1060,7 +1073,11 @@ const b6unidad3: VocabEntry[] = [
       es: 'Los pasajeros con bolsas grandes pueden usar el ascensor junto a la taquilla.',
       lectura: 'en-a1-train-platform-sign',
     },
-    { tipo: 'otro' }),
+    { tipo: 'otro', falsoAmigo: {
+      pareceEspanol: 'largo',
+      significaEnRealidad: 'grande',
+      seDiceAsi: 'long',
+    } }),
 
   en('en-a1-155', 'size', 'talla / tamaño', 'sustantivo', 'size',
     [c('the same size', 'del mismo tamaño'), c('what size do you wear?', '¿qué talla usas?'), c('a small size', 'una talla pequeña')],
@@ -1104,7 +1121,11 @@ const b6unidad3: VocabEntry[] = [
   en('en-a1-162', 'quiet', 'tranquilo / silencioso', 'adjetivo', 'QUI-et',
     [c('a quiet street', 'una calle tranquila'), c('a quiet day', 'un día tranquilo'), c('the library is quiet', 'la biblioteca es silenciosa')],
     { target: 'Nice to meet you, Leo. This street is very quiet.', es: 'Encantada, Leo. Esta calle es muy tranquila.', episodio: 1 },
-    { tipo: 'otro' }),
+    { tipo: 'otro', falsoAmigo: {
+      pareceEspanol: 'quieto',
+      significaEnRealidad: 'callado, tranquilo',
+      seDiceAsi: 'still',
+    } }),
 
   en('en-a1-163', 'inside', 'dentro', 'adverbio', 'in-SIDE',
     [c('come inside', 'entra'), c('inside the shop', 'dentro del local'), c('see inside', 'ver por dentro')],
@@ -1158,7 +1179,11 @@ const b7unidad1: VocabEntry[] = [
   en('en-a1-168', 'library', 'biblioteca', 'sustantivo', 'LI-bra-ry',
     [c('at the library', 'en la biblioteca'), c('study in the library', 'estudiar en la biblioteca'), c('the library closes at six', 'la biblioteca cierra a las seis')],
     { target: 'How do I get to the library?', es: '¿Cómo llego a la biblioteca?', episodio: 19 },
-    { tipo: 'sustantivo' }),
+    { tipo: 'sustantivo', falsoAmigo: {
+      pareceEspanol: 'librería',
+      significaEnRealidad: 'biblioteca',
+      seDiceAsi: 'bookshop',
+    } }),
 
   en('en-a1-169', 'museum', 'museo', 'sustantivo', 'mu-SE-um',
     [c('visit the museum', 'visitar el museo'), c('the science museum', 'el museo de ciencias'), c('at the museum', 'en el museo')],

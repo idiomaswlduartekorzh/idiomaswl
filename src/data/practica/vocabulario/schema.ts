@@ -126,6 +126,19 @@ export type EnExtra = {
    * palabra suelta, y eso no es lo que produce un hablante.
    */
   colocaciones: Colocacion[]
+  /**
+   * Falso amigo. Llegó tarde y por un error de diseño que conviene dejar escrito.
+   *
+   * El campo existía solo en las románicas —francés, italiano, portugués— porque el blueprint
+   * dio por hecho que la trampa era cosa de las lenguas transparentes con el español. La
+   * auditoría pedagógica del 12 ago 2026 lo midió sobre inglés A1 y A2 y encontró diez
+   * trampas clásicas para un hispanohablante —`attend`, `realise`, `library`, `parents`— sin
+   * una sola advertencia en la ficha.
+   *
+   * Es opcional a propósito: la mayoría de palabras inglesas no engañan, y marcar como trampa
+   * lo que no lo es enseña a desconfiar de todo.
+   */
+  falsoAmigo?: FalsoAmigo
 } & (
   | { tipo: 'verbo'; phrasal?: string[] }
   | { tipo: 'sustantivo' }

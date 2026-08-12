@@ -19,6 +19,7 @@ import prepositionsMovement from './prepositions-movement'
 import connectors from './connectors'
 import usedTo from './used-to'
 import presentContinuousFuture from './present-continuous-future'
+import pastContinuous from './past-continuous'
 
 const topics: GrammarTopic[] = [
   pastSimpleBe,
@@ -41,6 +42,7 @@ const topics: GrammarTopic[] = [
   connectors,
   usedTo,
   presentContinuousFuture,
+  pastContinuous,
 ]
 
 export default topics
