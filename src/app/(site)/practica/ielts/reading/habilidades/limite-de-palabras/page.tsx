@@ -1,14 +1,16 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
 import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
-import WordLimitPracticeEngine from '@/components/exam-practice/WordLimitPracticeEngine';
-import { IELTS_READING_SKILLS, IELTS_WORD_LIMIT_PRACTICE_SETS, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
+import { WordLimitGuidedPractice, WordLimitIndependentPractice, WordLimitProgressEngine } from '@/components/exam-practice/WordLimitPracticeLab';
+import { WORD_LIMIT_GUIDED_PASSAGE_ID, WORD_LIMIT_INDEPENDENT_PASSAGE_ID, getWordLimitPassage } from '@/data/practica-exams/ielts-reading-word-limit-progress';
+import { IELTS_READING_SKILLS, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 
 const ROUTE = IELTS_READING_SKILLS.find((item) => item.slug === 'limite-de-palabras')!;
 const TITLE = 'Word-limit control: copy the smallest answer that fits';
 const DESCRIPTION = 'Parse the instruction, predict the missing grammar, locate the exact passage span and remove every unnecessary word before submitting.';
 const IELTS_ACADEMIC_URL = 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading';
-const practices = IELTS_WORD_LIMIT_PRACTICE_SETS.map((set) => ({ ...set, timeTarget: '6 gaps · 7 minutes' }));
+const guidedPassage = getWordLimitPassage(WORD_LIMIT_GUIDED_PASSAGE_ID)!;
+const independentPassage = getWordLimitPassage(WORD_LIMIT_INDEPENDENT_PASSAGE_ID)!;
 
 export const metadata: Metadata = {
   title: 'IELTS Reading Word Limits: Rules, Examples and Practice', description: DESCRIPTION, keywords: ROUTE.keywords,
@@ -34,7 +36,9 @@ export default function Page() {
     ]}
     weakExample="Frame: ‘during ___’; passage: ‘during long summer afternoons’; answer: ‘long summer afternoons’ under a two-word limit."
     strongExample="Answer ‘summer afternoons’: it keeps the required time meaning, fits after during and stays within two words."
-    practice={<WordLimitPracticeEngine practices={practices} accent="#0f766e" />}
+    practice={<WordLimitGuidedPractice passage={guidedPassage} />}
+    independentPracticeExperience={<WordLimitIndependentPractice passage={independentPassage} />}
+    progressEngine={<WordLimitProgressEngine />}
     sourceReview={(
       <SkillReviewSourceBlock
         accent="#0f766e"
@@ -51,16 +55,16 @@ export default function Page() {
       />
     )}
     independentPractice={[
-      'Collect six completion frames with different one- and two-word answers.',
-      'Predict the grammar of each gap before searching the passage.',
-      'Write the full completed sentence and underline only your submitted words.',
-      'Create one over-limit or duplicated answer and explain why it fails.',
+      'Restate the instruction before reading each completion frame.',
+      'Predict the missing grammar, then locate the exact passage sentence.',
+      'Copy only the missing span and rebuild the complete sentence.',
+      'Classify every miss as limit, boundary, grammar or evidence.',
     ]}
     checklist={[
       'you read and restate the instruction before answering',
       'your answer completes the sentence grammatically',
       'you do not repeat words already present in the frame',
-      'you count the submitted response rather than the whole phrase in the passage',
+      'you count the submitted response rather than the whole passage phrase',
     ]}
     faqs={ROUTE.faqs}
     officialNote="Word limits are binding in IELTS completion and short-answer tasks. This WeLearn lesson trains instruction control; always follow the exact wording shown in the task you are completing."
@@ -76,3 +80,5 @@ export default function Page() {
     ]}
   />;
 }
+
+// Scaling contract: docs/ielts-reading-practice-engine-blueprint.md

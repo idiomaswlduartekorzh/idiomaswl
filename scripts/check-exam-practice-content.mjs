@@ -567,9 +567,12 @@ function validateIeltsReadingSkillPracticeRoutes() {
       path: '/practica/ielts/reading/habilidades/limite-de-palabras',
       label: 'IELTS word-limit route',
       requiredTexts: [
-        'WordLimitPracticeEngine',
-        'IELTS_WORD_LIMIT_PRACTICE_SETS',
-        'Formato oficial vs estrategia WeLearn',
+        'WordLimitGuidedPractice',
+        'WordLimitIndependentPractice',
+        'WordLimitProgressEngine',
+        'WORD_LIMIT_GUIDED_PASSAGE_ID',
+        'WORD_LIMIT_INDEPENDENT_PASSAGE_ID',
+        'ielts-reading-practice-engine-blueprint.md',
         'SkillReviewSourceBlock',
         'IELTS_ACADEMIC_URL',
         '/practica/ielts/reading/habilidades/scanning',
@@ -661,6 +664,22 @@ function validateIeltsInferenceProgressContract() {
   }
   for (const requiredText of ['type="radio"', 'localStorage', 'Press again to reset', 'feedback closed', 'WeLearn Progress Engine', 'not an IELTS band', 'not a secure Practice, Exam or proctored mode']) {
     if (!componentText.includes(requiredText)) fail(`IELTS inference practice lab must include "${requiredText}".`);
+  }
+}
+
+function validateIeltsWordLimitProgressContract() {
+  const dataPath = path.join(root, 'src/data/practica-exams/ielts-reading-word-limit-progress.ts');
+  const componentPath = path.join(root, 'src/components/exam-practice/WordLimitPracticeLab.tsx');
+  if (!fs.existsSync(dataPath)) fail('IELTS word-limit progress data is missing.');
+  if (!fs.existsSync(componentPath)) fail('IELTS word-limit practice lab is missing.');
+  if (!fs.existsSync(dataPath) || !fs.existsSync(componentPath)) return;
+  const dataText = fs.readFileSync(dataPath, 'utf8');
+  const componentText = fs.readFileSync(componentPath, 'utf8');
+  for (const requiredText of ['WORD_LIMIT_STORAGE_KEY', 'WORD_LIMIT_LEGACY_STORAGE_KEY', 'WORD_LIMIT_LEVELS', 'countWordLimitWords', "'over-limit'", "'duplicate-frame-word'", "'grammar-mismatch'", "'instruction-misread'"]) {
+    if (!dataText.includes(requiredText)) fail(`IELTS word-limit progress data must include "${requiredText}".`);
+  }
+  for (const requiredText of ['localStorage', 'Press again to reset', 'feedback closed', 'WeLearn Progress Engine', 'not an IELTS band', 'not a secure Practice, Exam or proctored mode']) {
+    if (!componentText.includes(requiredText)) fail(`IELTS word-limit practice lab must include "${requiredText}".`);
   }
 }
 
@@ -2861,6 +2880,7 @@ function main() {
   validateIeltsReadingSkillPracticeRoutes();
   validateIeltsParaphraseProgressContract();
   validateIeltsInferenceProgressContract();
+  validateIeltsWordLimitProgressContract();
   validateIeltsGeneralTrainingHub();
   validateIeltsWritingRubricRoute();
   validateIeltsGeneralTrainingWritingTask1Route();

@@ -32,6 +32,9 @@ The reusable learning sequence is:
 - Inference practice must expose at least two explicit clues and ask for the smallest conclusion that connects them. A plausible statement from outside the passage is always a distractor, never supporting evidence.
 - Inference feedback must diagnose outside knowledge, certainty inflation, invented causation, scope overreach, contradiction or failure to connect the clues. “Incorrect” alone does not teach the reasoning repair.
 - Inference option order must be varied mechanically. A legacy bank with all keys in one position cannot be used for guided, independent or mastery claims.
+- Word-limit practice must derive the maximum from the displayed instruction for every item. A hard-coded two-word scorer cannot certify tasks that say `ONE WORD ONLY`, `NO MORE THAN TWO WORDS` or `AND/OR A NUMBER`.
+- The submitted span must be literal, within the stated maximum and grammatically natural when rebuilt with the words before and after the gap. Being under the limit is not enough when the span is incomplete or duplicates a frame word.
+- Guided, independent and Progress Engine word-limit pools must be disjoint. Feedback must distinguish over-limit, duplicated frame word, incomplete span, grammar mismatch, wrong evidence and instruction misread.
 - Independent and full-passage sets must preserve the real task rule. For Matching Headings, a heading cannot be reused and extra headings remain unused.
 - Feedback must name why the chosen distractor fails: narrow detail, keyword match, wrong function, excessive scope or unsupported claim. Red/green alone is insufficient.
 - A progress level cannot be certified from repeated position, length, typography, language, lexical-overlap or other surface shortcuts.
@@ -126,5 +129,6 @@ A pilot can become a template only after content checks, TypeScript, production 
 - **Skimming:** complete progressive vertical.
 - **Scanning:** complete progressive vertical; inherited global validator debt closed.
 - **Paraphrase recognition:** progressive vertical implemented with 6 source-backed passages, 30 decisions, held-back independent transfer and 6 local levels. Browser and release gates must pass before this line is used as a production certificate.
-- **Inference:** progressive vertical implemented with 6 source-backed passages, 30 evidence bridges, held-back independent transfer and 6 local levels. Browser and release gates must pass before this line is used as a production certificate.
-- **Next subskill after release:** Word-limit control. Do not begin it until Inference passes the static, build and real-browser gates above.
+- **Inference:** complete progressive vertical; 6 source-backed passages, 30 evidence bridges, held-back independent transfer, 6 local levels and production release gates passed.
+- **Word-limit control:** progressive vertical implemented with 6 source-backed passages, 30 exact-span decisions, held-back independent transfer and 6 local levels. Browser and release gates must pass before this line is used as a production certificate.
+- **Next subskill after release:** Time management. Do not begin it until Word-limit control passes the static, build and real-browser gates above.
