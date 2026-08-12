@@ -1,35 +1,17 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
 import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
-import TimeManagementPracticeEngine from '@/components/exam-practice/TimeManagementPracticeEngine';
-import { IELTS_READING_SKILLS, IELTS_TIME_MANAGEMENT_PRACTICE_SETS, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
+import { TimeManagementGuidedPractice, TimeManagementIndependentPractice, TimeManagementProgressEngine } from '@/components/exam-practice/TimeManagementPracticeLab';
+import { TIME_MANAGEMENT_GUIDED_PASSAGE_ID, TIME_MANAGEMENT_INDEPENDENT_PASSAGE_ID, getTimeManagementPassage } from '@/data/practica-exams/ielts-reading-time-management-progress';
+import { IELTS_READING_SKILLS, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 
 const ROUTE = IELTS_READING_SKILLS.find((item) => item.slug === 'gestion-del-tiempo')!;
 const TITLE = 'Time management: protect points instead of racing the clock';
 const DESCRIPTION = 'Use a passage budget, prioritise visible evidence, mark productive uncertainty and return only when a second attempt has a clear target.';
 const IELTS_ACADEMIC_URL = 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading';
 
-const practices = [{
-  id: 'time-management-international-triage',
-  title: 'Decision triage: a renovated library',
-  instructions: 'Choose the most efficient next move. The goal is not speed at any cost; it is protecting points across the full passage.',
-  timeTarget: '6 decisions · 6 minutes',
-  passageTitle: 'A city library reopens after renovation',
-  passageMap: [
-    { label: 'Minute 0–2', purpose: 'Skim title, paragraph openings and changes of direction.', timeBudget: 'Build the map' },
-    { label: 'Minute 2–11', purpose: 'Answer questions with visible names, numbers and local evidence.', timeBudget: 'Secure fast points' },
-    { label: 'Minute 11–17', purpose: 'Work on main ideas, inference and close paraphrase decisions.', timeBudget: 'Spend with evidence' },
-    { label: 'Minute 17–20', purpose: 'Return to marked questions that already have an evidence zone.', timeBudget: 'Targeted review' },
-  ],
-  decisions: [
-    { id: 'time-intl-01', questionType: 'Matching Information', prompt: 'The question asks where a donation of equipment is mentioned. Your passage map says Paragraph C covers funding and purchases.', signal: 'likely paragraph already located', options: ['Read Paragraph C closely now.', 'Restart from Paragraph A.', 'Skip without marking an evidence zone.'], answer: 0, explanation: 'A mapped evidence zone makes this a productive immediate task. Read locally and verify the detail.', trap: 'Restarting feels safe but spends time on text you already mapped.' },
-    { id: 'time-intl-02', questionType: 'True / False / Not Given', prompt: 'You have spent 70 seconds on one statement. You found the relevant paragraph but cannot yet decide between contradiction and missing information.', signal: 'evidence located, decision blocked', options: ['Stay until you are completely certain.', 'Mark the evidence, choose provisionally and return later.', 'Leave the item blank and erase the location.'], answer: 1, explanation: 'Preserve the useful evidence location and move on. A later comparison is cheaper than searching again.', trap: 'Unlimited certainty on one item can cost several easier points.' },
-    { id: 'time-intl-03', questionType: 'Sentence Completion', prompt: 'The instruction says NO MORE THAN TWO WORDS. A unique keyword in the frame appears literally in Paragraph B.', signal: 'unique anchor + clear word limit', options: ['Solve it now using the smallest fitting span.', 'Postpone because every completion item is slow.', 'Read all other question types first.'], answer: 0, explanation: 'A unique anchor and explicit limit usually create a fast, controllable point.', trap: 'Treating every completion item as difficult ignores the evidence available.' },
-    { id: 'time-intl-04', questionType: 'Matching Headings', prompt: 'Two headings look possible. One repeats an attractive example; the other summarises the paragraph’s central change.', signal: 'detail versus main function', options: ['Choose the heading with the most repeated words.', 'Compare the opening, direction change and closing sentence.', 'Skip all headings until the end of the full test.'], answer: 1, explanation: 'Spend a controlled amount of time on paragraph function, not raw word overlap.', trap: 'A memorable example is often a distractor rather than the main idea.' },
-    { id: 'time-intl-05', questionType: 'Multiple Choice', prompt: 'One option sounds correct from general knowledge, but you have not found a supporting passage sentence.', signal: 'plausible answer without evidence', options: ['Select it because it is generally true.', 'Search one likely zone; if support does not appear, mark and move on.', 'Use outside knowledge to strengthen the option.'], answer: 1, explanation: 'IELTS Reading rewards passage evidence. Limit an unproductive search and preserve the item for review.', trap: 'Topic knowledge can make unsupported options feel comfortable.' },
-    { id: 'time-intl-06', questionType: 'Final review', prompt: 'Three minutes remain. One unanswered question has marked evidence; another was never located.', signal: 'limited final time', options: ['Return first to the item with marked evidence.', 'Begin a completely new search.', 'Reread the full passage.'], answer: 0, explanation: 'A nearly solved item has a better expected return than a search from zero.', trap: 'The urge to rescue the lost item can sacrifice the answer that is already close.' },
-  ],
-}] satisfies typeof IELTS_TIME_MANAGEMENT_PRACTICE_SETS;
+const guidedPassage = getTimeManagementPassage(TIME_MANAGEMENT_GUIDED_PASSAGE_ID)!;
+const independentPassage = getTimeManagementPassage(TIME_MANAGEMENT_INDEPENDENT_PASSAGE_ID)!;
 
 export const metadata: Metadata = {
   title: 'IELTS Reading Time Management: 20-Minute Passage Method', description: DESCRIPTION, keywords: ROUTE.keywords,
@@ -55,7 +37,9 @@ export default function Page() {
     ]}
     weakExample="Spending four minutes on one Not Given decision because leaving it temporarily feels like failure."
     strongExample="Mark the evidence and the unresolved contrast, answer provisionally, secure three local-evidence items and return with the remaining review budget."
-    practice={<TimeManagementPracticeEngine practices={practices} accent="#b45309" />}
+    practice={<TimeManagementGuidedPractice passage={guidedPassage} />}
+    independentPracticeExperience={<TimeManagementIndependentPractice passage={independentPassage} />}
+    progressEngine={<TimeManagementProgressEngine />}
     sourceReview={(
       <SkillReviewSourceBlock
         accent="#b45309"
@@ -72,10 +56,10 @@ export default function Page() {
       />
     )}
     independentPractice={[
-      'Complete one passage with four visible checkpoints: 2, 11, 17 and 20 minutes.',
-      'Label every delayed item with its evidence paragraph and unresolved decision.',
-      'Record where you lost time: searching, interpreting, comparing or counting words.',
-      'Repeat the passage strategy on a new text and change only one timing rule.',
+      'Run one complete passage with a flexible map, first-pass, comparison and review budget.',
+      'When you delay an item, preserve its paragraph and unresolved distinction.',
+      'Classify lost time as over-investment, restart, abandoned evidence or poor review priority.',
+      'Repeat on a new text and change only one pacing rule at a time.',
     ]}
     checklist={[
       'you can leave one question without losing its evidence location',
@@ -97,3 +81,5 @@ export default function Page() {
     ]}
   />;
 }
+
+// Scaling contract: docs/ielts-reading-practice-engine-blueprint.md

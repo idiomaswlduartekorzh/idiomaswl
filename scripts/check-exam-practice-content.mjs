@@ -585,9 +585,12 @@ function validateIeltsReadingSkillPracticeRoutes() {
       path: '/practica/ielts/reading/habilidades/gestion-del-tiempo',
       label: 'IELTS time-management route',
       requiredTexts: [
-        'TimeManagementPracticeEngine',
-        'IELTS_TIME_MANAGEMENT_PRACTICE_SETS',
-        'Formato oficial vs estrategia WeLearn',
+        'TimeManagementGuidedPractice',
+        'TimeManagementIndependentPractice',
+        'TimeManagementProgressEngine',
+        'TIME_MANAGEMENT_GUIDED_PASSAGE_ID',
+        'TIME_MANAGEMENT_INDEPENDENT_PASSAGE_ID',
+        'ielts-reading-practice-engine-blueprint.md',
         'SkillReviewSourceBlock',
         'IELTS_ACADEMIC_URL',
         '/practica/ielts/reading/habilidades/skimming',
@@ -680,6 +683,22 @@ function validateIeltsWordLimitProgressContract() {
   }
   for (const requiredText of ['localStorage', 'Press again to reset', 'feedback closed', 'WeLearn Progress Engine', 'not an IELTS band', 'not a secure Practice, Exam or proctored mode']) {
     if (!componentText.includes(requiredText)) fail(`IELTS word-limit practice lab must include "${requiredText}".`);
+  }
+}
+
+function validateIeltsTimeManagementProgressContract() {
+  const dataPath = path.join(root, 'src/data/practica-exams/ielts-reading-time-management-progress.ts');
+  const componentPath = path.join(root, 'src/components/exam-practice/TimeManagementPracticeLab.tsx');
+  if (!fs.existsSync(dataPath)) fail('IELTS time-management progress data is missing.');
+  if (!fs.existsSync(componentPath)) fail('IELTS time-management practice lab is missing.');
+  if (!fs.existsSync(dataPath) || !fs.existsSync(componentPath)) return;
+  const dataText = fs.readFileSync(dataPath, 'utf8');
+  const componentText = fs.readFileSync(componentPath, 'utf8');
+  for (const requiredText of ['TIME_MANAGEMENT_STORAGE_KEY', 'TIME_MANAGEMENT_LEGACY_STORAGE_KEY', 'TIME_MANAGEMENT_LEVELS', 'getTimeManagementOptions', "'over-investment'", "'restart-search'", "'unsupported-rush'", "'review-mispriority'"]) {
+    if (!dataText.includes(requiredText)) fail(`IELTS time-management progress data must include "${requiredText}".`);
+  }
+  for (const requiredText of ['type="radio"', 'localStorage', 'Press again to reset', 'feedback closed', 'WeLearn Progress Engine', 'not an IELTS band', 'not a secure Practice, Exam or proctored mode']) {
+    if (!componentText.includes(requiredText)) fail(`IELTS time-management practice lab must include "${requiredText}".`);
   }
 }
 
@@ -2881,6 +2900,7 @@ function main() {
   validateIeltsParaphraseProgressContract();
   validateIeltsInferenceProgressContract();
   validateIeltsWordLimitProgressContract();
+  validateIeltsTimeManagementProgressContract();
   validateIeltsGeneralTrainingHub();
   validateIeltsWritingRubricRoute();
   validateIeltsGeneralTrainingWritingTask1Route();

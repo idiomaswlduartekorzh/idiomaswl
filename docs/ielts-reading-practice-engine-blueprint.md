@@ -35,6 +35,9 @@ The reusable learning sequence is:
 - Word-limit practice must derive the maximum from the displayed instruction for every item. A hard-coded two-word scorer cannot certify tasks that say `ONE WORD ONLY`, `NO MORE THAN TWO WORDS` or `AND/OR A NUMBER`.
 - The submitted span must be literal, within the stated maximum and grammatically natural when rebuilt with the words before and after the gap. Being under the limit is not enough when the span is incomplete or duplicates a frame word.
 - Guided, independent and Progress Engine word-limit pools must be disjoint. Feedback must distinguish over-limit, duplicated frame word, incomplete span, grammar mismatch, wrong evidence and instruction misread.
+- Time-management practice must record the evidence state, time already invested and next search cost. “Go faster” or a decorative countdown is not a pacing method.
+- Leaving an item must preserve its paragraph, anchor and unresolved distinction. Final review prioritises located evidence over searches from zero; the flexible 20-minute passage budget must never be described as an official per-passage IELTS rule.
+- Guided, independent and Progress Engine time-management pools must be disjoint. Feedback must diagnose over-investment, restart search, abandoned evidence, unsupported rush, poor review priority and equal-time fallacy.
 - Independent and full-passage sets must preserve the real task rule. For Matching Headings, a heading cannot be reused and extra headings remain unused.
 - Feedback must name why the chosen distractor fails: narrow detail, keyword match, wrong function, excessive scope or unsupported claim. Red/green alone is insufficient.
 - A progress level cannot be certified from repeated position, length, typography, language, lexical-overlap or other surface shortcuts.
@@ -130,5 +133,6 @@ A pilot can become a template only after content checks, TypeScript, production 
 - **Scanning:** complete progressive vertical; inherited global validator debt closed.
 - **Paraphrase recognition:** progressive vertical implemented with 6 source-backed passages, 30 decisions, held-back independent transfer and 6 local levels. Browser and release gates must pass before this line is used as a production certificate.
 - **Inference:** complete progressive vertical; 6 source-backed passages, 30 evidence bridges, held-back independent transfer, 6 local levels and production release gates passed.
-- **Word-limit control:** progressive vertical implemented with 6 source-backed passages, 30 exact-span decisions, held-back independent transfer and 6 local levels. Browser and release gates must pass before this line is used as a production certificate.
-- **Next subskill after release:** Time management. Do not begin it until Word-limit control passes the static, build and real-browser gates above.
+- **Word-limit control:** complete progressive vertical; 6 source-backed passages, 30 exact-span decisions, held-back independent transfer, 6 local levels and production release gates passed.
+- **Time management:** progressive vertical implemented with 6 source-backed passage plans, 30 evidence-cost decisions, held-back independent transfer and 6 local levels. Browser and release gates must pass before this line is used as a production certificate.
+- **Next question-type vertical after release:** Multiple Choice. Do not begin it until Time management passes the static, build and real-browser gates above.
