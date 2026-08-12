@@ -546,9 +546,12 @@ function validateIeltsReadingSkillPracticeRoutes() {
       path: '/practica/ielts/reading/habilidades/parafrasis',
       label: 'IELTS paraphrase route',
       requiredTexts: [
-        'ParaphrasePracticeEngine',
-        'IELTS_PARAPHRASE_PRACTICE_SETS',
-        'Formato oficial vs estrategia WeLearn',
+        'ParaphraseGuidedPractice',
+        'ParaphraseIndependentPractice',
+        'ParaphraseProgressEngine',
+        'PARAPHRASE_GUIDED_PASSAGE_ID',
+        'PARAPHRASE_INDEPENDENT_PASSAGE_ID',
+        'ielts-reading-practice-engine-blueprint.md',
         'SkillReviewSourceBlock',
         'IELTS_ACADEMIC_URL',
         '/practica/ielts/reading/habilidades/skimming',
@@ -607,6 +610,38 @@ function validateIeltsReadingSkillPracticeRoutes() {
     if (!pageText.includes('Formato oficial vs estrategia WeLearn') && !includesAll(pageText, internationalReviewContract)) {
       fail(`${route.label} must include the complete official-format review boundary.`);
     }
+  }
+}
+
+function validateIeltsParaphraseProgressContract() {
+  const dataPath = path.join(root, 'src/data/practica-exams/ielts-reading-paraphrase-progress.ts');
+  const componentPath = path.join(root, 'src/components/exam-practice/ParaphrasePracticeLab.tsx');
+  if (!fs.existsSync(dataPath)) fail('IELTS paraphrase progress data is missing.');
+  if (!fs.existsSync(componentPath)) fail('IELTS paraphrase practice lab is missing.');
+  if (!fs.existsSync(dataPath) || !fs.existsSync(componentPath)) return;
+  const dataText = fs.readFileSync(dataPath, 'utf8');
+  const componentText = fs.readFileSync(componentPath, 'utf8');
+  for (const requiredText of [
+    'PARAPHRASE_STORAGE_KEY',
+    'PARAPHRASE_LEGACY_STORAGE_KEY',
+    'PARAPHRASE_LEVELS',
+    'getParaphraseOptions',
+    "'scope-shift'",
+    "'certainty-shift'",
+    "'cause-or-sequence-shift'",
+    "'comparison-shift'",
+  ]) if (!dataText.includes(requiredText)) fail(`IELTS paraphrase progress data must include "${requiredText}".`);
+  for (const requiredText of [
+    'native',
+    'localStorage',
+    'Press again to reset',
+    'feedback closed',
+    'WeLearn Progress Engine',
+    'not an IELTS band',
+    'not a secure Practice, Exam or proctored mode',
+  ]) {
+    const present = requiredText === 'native' ? componentText.includes('type="radio"') : componentText.includes(requiredText);
+    if (!present) fail(`IELTS paraphrase practice lab must include "${requiredText}".`);
   }
 }
 
@@ -2805,6 +2840,7 @@ function main() {
   validateToeflReadingCurrentFormatRoutes();
   validateIeltsSkimScanRoutes();
   validateIeltsReadingSkillPracticeRoutes();
+  validateIeltsParaphraseProgressContract();
   validateIeltsGeneralTrainingHub();
   validateIeltsWritingRubricRoute();
   validateIeltsGeneralTrainingWritingTask1Route();

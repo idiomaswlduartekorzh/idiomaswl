@@ -1,14 +1,17 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
 import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
-import ParaphrasePracticeEngine from '@/components/exam-practice/ParaphrasePracticeEngine';
-import { IELTS_PARAPHRASE_PRACTICE_SETS, IELTS_READING_SKILLS, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
+import { ParaphraseGuidedPractice, ParaphraseIndependentPractice, ParaphraseProgressEngine } from '@/components/exam-practice/ParaphrasePracticeLab';
+import { IELTS_READING_SKILLS, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
+import { PARAPHRASE_GUIDED_PASSAGE_ID, PARAPHRASE_INDEPENDENT_PASSAGE_ID, getParaphrasePassage } from '@/data/practica-exams/ielts-reading-paraphrase-progress';
 
 const ROUTE = IELTS_READING_SKILLS.find((item) => item.slug === 'parafrasis')!;
 const TITLE = 'Paraphrase recognition: compare meaning, not matching words';
 const DESCRIPTION = 'Learn to recognise equivalent meaning while controlling scope, cause, time, comparison, certainty and grammatical change.';
 const IELTS_ACADEMIC_URL = 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading';
-const practices = IELTS_PARAPHRASE_PRACTICE_SETS.map((set) => ({ ...set, timeTarget: '6 items · 8 minutes' }));
+const guidedPassage = getParaphrasePassage(PARAPHRASE_GUIDED_PASSAGE_ID)!;
+const independentPassage = getParaphrasePassage(PARAPHRASE_INDEPENDENT_PASSAGE_ID)!;
+// Scaling contract: docs/ielts-reading-practice-engine-blueprint.md
 
 export const metadata: Metadata = {
   title: 'IELTS Reading Paraphrase Recognition: Lesson and Practice', description: DESCRIPTION, keywords: ROUTE.keywords,
@@ -34,7 +37,9 @@ export default function Page() {
     ]}
     weakExample="Choosing an option because it repeats the nouns from the passage, even though it changes ‘some residents’ to ‘all residents’."
     strongExample="Accept ‘The trial may continue if demand remains high’ as equivalent to ‘Officials could extend the trial provided that demand stays strong’, because modality and condition are preserved."
-    practice={<ParaphrasePracticeEngine practices={practices} accent="#7c3aed" />}
+    practice={<ParaphraseGuidedPractice passage={guidedPassage} />}
+    independentPracticeExperience={<ParaphraseIndependentPractice passage={independentPassage} />}
+    progressEngine={<ParaphraseProgressEngine />}
     sourceReview={(
       <SkillReviewSourceBlock
         accent="#7c3aed"
@@ -46,7 +51,7 @@ export default function Page() {
         ]}
         sources={[
           { label: 'Official IELTS Academic Reading format', href: IELTS_ACADEMIC_URL, note: 'Used to keep official task descriptions separate from WeLearn comparison training.' },
-          { label: 'WeLearn original practice sets', note: 'Used to compare complete claims and diagnose meaning distortion.' },
+            { label: 'WeLearn practice blueprint', note: 'Defines held-back independent transfer, proposition-slot controls, local progress and distortion review.' },
         ]}
       />
     )}

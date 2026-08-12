@@ -26,6 +26,9 @@ The reusable learning sequence is:
 - Selecting a radio card is a draft decision, not submission. Correctness, colours and explanations stay hidden until an explicit check action.
 - A scanning activity cannot be a sequence of `Reveal evidence` buttons. The learner must first commit to a distinctive search signal and then select an exact evidence span before the answer, trap or explanation opens.
 - Scanning evidence options must include nearby true details with a different entity, number, scope or polarity; random unrelated sentences do not test context control.
+- Paraphrase practice must compare complete propositions, not synonym pairs. Every decision records the entity, action, quantity/scope, polarity, time/cause and certainty or comparison that must remain stable.
+- Paraphrase distractors must alter one material meaning control and the feedback must name that distortion. Repeated vocabulary is not a valid distractor rationale by itself.
+- Guided, independent and Progress Engine paraphrase pools must be disjoint. A passage seen in guided practice cannot be presented later as unseen or used to certify independent transfer.
 - Independent and full-passage sets must preserve the real task rule. For Matching Headings, a heading cannot be reused and extra headings remain unused.
 - Feedback must name why the chosen distractor fails: narrow detail, keyword match, wrong function, excessive scope or unsupported claim. Red/green alone is insufficient.
 - A progress level cannot be certified from repeated position, length, typography, language, lexical-overlap or other surface shortcuts.
@@ -114,3 +117,10 @@ Real-browser gates:
 ## Definition of done for scale
 
 A pilot can become a template only after content checks, TypeScript, production build and the real-browser story pass. Any issue found in a final audit becomes a new rule or mutation test here before the next type is cloned. Scaling means reusing these constraints—not copying only the visible component.
+
+## Migration record
+
+- **Skimming:** complete progressive vertical.
+- **Scanning:** complete progressive vertical; inherited global validator debt closed.
+- **Paraphrase recognition:** progressive vertical implemented with 6 source-backed passages, 30 decisions, held-back independent transfer and 6 local levels. Browser and release gates must pass before this line is used as a production certificate.
+- **Next subskill after release:** Inference. Do not begin it until Paraphrase passes the static, build and real-browser gates above.
