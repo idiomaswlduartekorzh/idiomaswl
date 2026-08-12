@@ -48,15 +48,15 @@ export default function WordLimitPracticeEngine({
     <section className="wl-card" style={{ padding: '1rem', borderRadius: 18, borderTop: `4px solid ${accent}` }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap', alignItems: 'start', marginBottom: '1rem' }}>
         <div>
-          <p className="eyebrow" style={{ margin: '0 0 0.35rem' }}>Práctica guiada</p>
-          <h2 style={{ margin: 0, fontSize: '1.35rem', letterSpacing: 0 }}>Banco de límite de palabras IELTS Reading</h2>
+          <p className="eyebrow" style={{ margin: '0 0 0.35rem' }}>Guided practice</p>
+          <h2 style={{ margin: 0, fontSize: '1.35rem', letterSpacing: 0 }}>IELTS Reading word-limit practice bank</h2>
           <p style={{ margin: '0.35rem 0 0', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.9rem' }}>
-            Escribe solo palabras del pasaje. El objetivo es copiar la unidad mínima, respetar la instrucción y verificar que la frase final funcione.
+            Use only passage words. Copy the smallest unit, obey the instruction and confirm that the completed sentence works.
           </p>
         </div>
         <button className="btn btn-ghost btn-sm" type="button" onClick={reset} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
           <RotateCcw size={15} />
-          Reiniciar
+          Reset
         </button>
       </div>
 
@@ -64,7 +64,7 @@ export default function WordLimitPracticeEngine({
         {[
           { label: 'Sets', value: String(practiceSets.length) },
           { label: 'Gaps', value: String(questions.length) },
-          { label: 'Regla', value: 'copia solo lo necesario' },
+          { label: 'Rule', value: 'copy only what is needed' },
         ].map((item) => (
           <div key={item.label} style={{ border: '1px solid var(--line-soft)', borderRadius: 12, padding: '0.75rem', background: 'var(--bg-2)' }}>
             <p style={{ margin: '0 0 0.25rem', color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.68rem', textTransform: 'uppercase', fontWeight: 900 }}>{item.label}</p>
@@ -96,7 +96,7 @@ export default function WordLimitPracticeEngine({
               </div>
               <h3 style={{ margin: '0 0 0.25rem', color: 'var(--ink)', fontSize: '1.05rem' }}>{practiceSet.passageTitle}</h3>
               <p style={{ margin: '0 0 0.6rem', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.86rem' }}>
-                {practiceSet.instructions} Meta: {practiceSet.timeTarget}.
+                {practiceSet.instructions} Target: {practiceSet.timeTarget}.
               </p>
               <div style={{ whiteSpace: 'pre-line', color: 'var(--ink-2)', lineHeight: 1.82 }}>{practiceSet.passage}</div>
             </article>
@@ -124,7 +124,7 @@ export default function WordLimitPracticeEngine({
                   Set {setIndex + 1} · Gap {index + 1}
                 </span>
                 <span style={{ color: withinLimit ? 'var(--muted)' : '#b91c1c', fontFamily: 'var(--mono)', fontSize: '0.72rem' }}>
-                  {wordCount}/2 palabras
+                  {wordCount}/2 words
                 </span>
               </div>
 
@@ -135,7 +135,7 @@ export default function WordLimitPracticeEngine({
                     value={value}
                     onInput={(event) => updateAnswer(event.currentTarget.value)}
                     onChange={(event) => updateAnswer(event.currentTarget.value)}
-                    placeholder="tu respuesta"
+                    placeholder="your answer"
                     style={{
                       minWidth: 170,
                       maxWidth: '100%',
@@ -158,7 +158,7 @@ export default function WordLimitPracticeEngine({
                 style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', marginTop: '0.7rem' }}
               >
                 <FileCheck2 size={15} />
-                Revisar respuesta
+                Check answer
               </button>
 
               {isChecked && (
@@ -179,13 +179,13 @@ export default function WordLimitPracticeEngine({
                   >
                     {isCorrect ? <CheckCircle2 size={18} /> : <XCircle size={18} />}
                     <span>
-                      <strong>{isCorrect ? 'Correcto.' : `Respuesta correcta: ${question.answer}.`}</strong>{' '}
-                      {!withinLimit ? 'Tu respuesta supera el límite de palabras. ' : ''}
+                      <strong>{isCorrect ? 'Correct.' : `Correct answer: ${question.answer}.`}</strong>{' '}
+                      {!withinLimit ? 'Your answer exceeds the word limit. ' : ''}
                       {question.explanation}
                     </span>
                   </div>
                   <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.86rem' }}>
-                    <strong style={{ color: 'var(--ink)' }}>Trampa:</strong> {question.trap}
+                    <strong style={{ color: 'var(--ink)' }}>Trap:</strong> {question.trap}
                   </p>
                 </div>
               )}
@@ -199,10 +199,10 @@ export default function WordLimitPracticeEngine({
       {checkedCount === questions.length && (
         <div style={{ marginTop: '1rem', padding: '1rem', borderRadius: 14, background: `${accent}10`, border: `1px solid ${accent}30` }}>
           <h2 style={{ margin: '0 0 0.35rem', fontSize: '1.18rem' }}>
-            Resultado: {correctCount}/{questions.length} respuestas exactas
+            Result: {correctCount}/{questions.length} exact answers
           </h2>
           <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.6 }}>
-            En IELTS, una respuesta puede ser conceptualmente correcta y aun así fallar por copiar demasiadas palabras. La precisión es parte del puntaje.
+            In IELTS, an answer can be conceptually correct and still lose the mark for copying too many words. Precision is part of the score.
           </p>
         </div>
       )}

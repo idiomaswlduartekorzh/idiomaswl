@@ -1,317 +1,78 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
-import { AlarmClock, ArrowRight, CheckCircle2, Gauge, ListChecks, RotateCcw, XCircle } from 'lucide-react';
-import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
+import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
 import TimeManagementPracticeEngine from '@/components/exam-practice/TimeManagementPracticeEngine';
-import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
-import {
-  IELTS_READING_SKILLS,
-  IELTS_TIME_MANAGEMENT_PRACTICE_SETS,
-  PRACTICE_BASE_URL,
-} from '@/data/practica-exams/seo-catalog';
+import { IELTS_READING_SKILLS, IELTS_TIME_MANAGEMENT_PRACTICE_SETS, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 
 const ROUTE = IELTS_READING_SKILLS.find((item) => item.slug === 'gestion-del-tiempo')!;
-const URL = `${PRACTICE_BASE_URL}${ROUTE.path}`;
-const ACCENT = '#7c3aed';
-const IELTS_ACADEMIC_URL = 'https://ielts.org/take-a-test/test-types/ielts-academic-test';
+const TITLE = 'Time management: protect points instead of racing the clock';
+const DESCRIPTION = 'Use a passage budget, prioritise visible evidence, mark productive uncertainty and return only when a second attempt has a clear target.';
+
+const practices = [{
+  id: 'time-management-international-triage',
+  title: 'Decision triage: a renovated library',
+  instructions: 'Choose the most efficient next move. The goal is not speed at any cost; it is protecting points across the full passage.',
+  timeTarget: '6 decisions · 6 minutes',
+  passageTitle: 'A city library reopens after renovation',
+  passageMap: [
+    { label: 'Minute 0–2', purpose: 'Skim title, paragraph openings and changes of direction.', timeBudget: 'Build the map' },
+    { label: 'Minute 2–11', purpose: 'Answer questions with visible names, numbers and local evidence.', timeBudget: 'Secure fast points' },
+    { label: 'Minute 11–17', purpose: 'Work on main ideas, inference and close paraphrase decisions.', timeBudget: 'Spend with evidence' },
+    { label: 'Minute 17–20', purpose: 'Return to marked questions that already have an evidence zone.', timeBudget: 'Targeted review' },
+  ],
+  decisions: [
+    { id: 'time-intl-01', questionType: 'Matching Information', prompt: 'The question asks where a donation of equipment is mentioned. Your passage map says Paragraph C covers funding and purchases.', signal: 'likely paragraph already located', options: ['Read Paragraph C closely now.', 'Restart from Paragraph A.', 'Skip without marking an evidence zone.'], answer: 0, explanation: 'A mapped evidence zone makes this a productive immediate task. Read locally and verify the detail.', trap: 'Restarting feels safe but spends time on text you already mapped.' },
+    { id: 'time-intl-02', questionType: 'True / False / Not Given', prompt: 'You have spent 70 seconds on one statement. You found the relevant paragraph but cannot yet decide between contradiction and missing information.', signal: 'evidence located, decision blocked', options: ['Stay until you are completely certain.', 'Mark the evidence, choose provisionally and return later.', 'Leave the item blank and erase the location.'], answer: 1, explanation: 'Preserve the useful evidence location and move on. A later comparison is cheaper than searching again.', trap: 'Unlimited certainty on one item can cost several easier points.' },
+    { id: 'time-intl-03', questionType: 'Sentence Completion', prompt: 'The instruction says NO MORE THAN TWO WORDS. A unique keyword in the frame appears literally in Paragraph B.', signal: 'unique anchor + clear word limit', options: ['Solve it now using the smallest fitting span.', 'Postpone because every completion item is slow.', 'Read all other question types first.'], answer: 0, explanation: 'A unique anchor and explicit limit usually create a fast, controllable point.', trap: 'Treating every completion item as difficult ignores the evidence available.' },
+    { id: 'time-intl-04', questionType: 'Matching Headings', prompt: 'Two headings look possible. One repeats an attractive example; the other summarises the paragraph’s central change.', signal: 'detail versus main function', options: ['Choose the heading with the most repeated words.', 'Compare the opening, direction change and closing sentence.', 'Skip all headings until the end of the full test.'], answer: 1, explanation: 'Spend a controlled amount of time on paragraph function, not raw word overlap.', trap: 'A memorable example is often a distractor rather than the main idea.' },
+    { id: 'time-intl-05', questionType: 'Multiple Choice', prompt: 'One option sounds correct from general knowledge, but you have not found a supporting passage sentence.', signal: 'plausible answer without evidence', options: ['Select it because it is generally true.', 'Search one likely zone; if support does not appear, mark and move on.', 'Use outside knowledge to strengthen the option.'], answer: 1, explanation: 'IELTS Reading rewards passage evidence. Limit an unproductive search and preserve the item for review.', trap: 'Topic knowledge can make unsupported options feel comfortable.' },
+    { id: 'time-intl-06', questionType: 'Final review', prompt: 'Three minutes remain. One unanswered question has marked evidence; another was never located.', signal: 'limited final time', options: ['Return first to the item with marked evidence.', 'Begin a completely new search.', 'Reread the full passage.'], answer: 0, explanation: 'A nearly solved item has a better expected return than a search from zero.', trap: 'The urge to rescue the lost item can sacrifice the answer that is already close.' },
+  ],
+}] satisfies typeof IELTS_TIME_MANAGEMENT_PRACTICE_SETS;
 
 export const metadata: Metadata = {
-  title: 'Gestión del tiempo IELTS Reading: estrategia de 60 minutos',
-  description: ROUTE.description,
-  keywords: ROUTE.keywords,
-  openGraph: {
-    title: 'Gestión del tiempo IELTS Reading: estrategia de 60 minutos',
-    description: ROUTE.description,
-    url: URL,
-    type: 'website',
-    locale: 'es_CO',
-  },
-  alternates: { canonical: URL },
+  title: 'IELTS Reading Time Management: 20-Minute Passage Method', description: DESCRIPTION, keywords: ROUTE.keywords,
+  alternates: { canonical: `${PRACTICE_BASE_URL}${ROUTE.path}` },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: `${PRACTICE_BASE_URL}${ROUTE.path}`, type: 'website', locale: 'en_US' },
 };
 
 export default function Page() {
-  return (
-    <>
-      <LearningResourceJsonLd
-        name={ROUTE.title}
-        url={URL}
-        description={ROUTE.description}
-        teaches={ROUTE.teaches}
-        isPartOf={{ name: 'Habilidades IELTS Reading', url: `${PRACTICE_BASE_URL}/practica/ielts/reading/habilidades` }}
-      />
-      <FaqJsonLd faqs={ROUTE.faqs} />
-      <BreadcrumbJsonLd
-        items={[
-          { name: 'Práctica', url: `${PRACTICE_BASE_URL}/practica` },
-          { name: 'IELTS', url: `${PRACTICE_BASE_URL}/practica/ielts` },
-          { name: 'Reading', url: `${PRACTICE_BASE_URL}/practica/ielts/reading` },
-          { name: 'Habilidades', url: `${PRACTICE_BASE_URL}/practica/ielts/reading/habilidades` },
-          { name: 'Gestión del tiempo', url: URL },
-        ]}
-      />
-
-      <section className="wl-section">
-        <div className="wrap exam-practice-wrap" style={{ width: '100%', maxWidth: 1040, minWidth: 0, overflowX: 'clip' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
-            <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
-            <span>/</span>
-            <Link href="/practica/ielts" style={{ color: 'var(--muted)', textDecoration: 'none' }}>IELTS</Link>
-            <span>/</span>
-            <Link href="/practica/ielts/reading/habilidades" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Habilidades</Link>
-            <span>/</span>
-            <span style={{ color: 'var(--ink)', fontWeight: 800 }}>Gestión del tiempo</span>
-          </div>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '1rem', alignItems: 'stretch', marginBottom: '1.5rem' }}>
-            <div>
-              <p className="eyebrow" style={{ margin: '0 0 0.5rem' }}>
-                <span className="ink-line" />IELTS Reading · Habilidad
-              </p>
-              <h1 className="exam-practice-hero-title" style={{ fontSize: '2rem', lineHeight: 1.12, letterSpacing: 0, margin: '0 0 0.85rem', color: 'var(--ink)', maxWidth: '100%', overflowWrap: 'anywhere' }}>
-                Gestión del tiempo: protege puntos, no minutos
-              </h1>
-              <p style={{ color: 'var(--muted)', fontSize: '1rem', lineHeight: 1.75, margin: 0, maxWidth: 760 }}>
-                IELTS Academic Reading tiene 60 minutos para tres pasajes y 40 preguntas. La clave no es leer a toda velocidad, sino decidir cuándo hacer skimming, cuándo buscar evidencia y cuándo saltar temporalmente.
-              </p>
-            </div>
-
-            <aside className="wl-card" style={{ padding: '1rem', borderRadius: 16, display: 'grid', gap: '0.75rem', alignContent: 'center' }}>
-              {[
-                { label: 'Formato', value: '60 min', sub: '3 pasajes · 40 preguntas' },
-                { label: 'WeLearn', value: 'triage', sub: 'resolver, marcar, saltar' },
-                { label: 'Meta', value: 'puntos', sub: 'no perfeccionismo' },
-              ].map((item) => (
-                <div key={item.label} style={{ display: 'flex', justifyContent: 'space-between', gap: '0.75rem', alignItems: 'center', border: '1px solid var(--line-soft)', borderRadius: 12, padding: '0.75rem', background: 'var(--bg-2)' }}>
-                  <span style={{ color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.72rem', textTransform: 'uppercase', fontWeight: 800 }}>{item.label}</span>
-                  <strong style={{ color: ACCENT, fontFamily: 'var(--mono)', fontSize: '1.05rem', textAlign: 'right' }}>
-                    {item.value}
-                    <span style={{ display: 'block', color: 'var(--muted)', fontSize: '0.66rem', fontWeight: 700 }}>{item.sub}</span>
-                  </strong>
-                </div>
-              ))}
-            </aside>
-          </div>
-
-          <section className="wl-card" style={{ padding: '1rem', borderRadius: 16, marginBottom: '1rem', background: `${ACCENT}0d` }}>
-            <p style={{ margin: 0, color: 'var(--ink-2)', lineHeight: 1.65 }}>
-              <strong>Respuesta directa:</strong> en IELTS Reading debes responder todo dentro de 60 minutos. La estrategia WeLearn divide el trabajo en mapa rápido, puntos fáciles, preguntas lentas y revisión selectiva.
-            </p>
-          </section>
-
-          <section className="wl-card" style={{ padding: '1rem 1.1rem', borderRadius: 16, marginBottom: '1.2rem' }}>
-            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Formato oficial vs estrategia WeLearn</h2>
-            <p style={{ margin: '0 0 0.65rem', color: 'var(--muted)', lineHeight: 1.65, fontSize: '0.9rem' }}>
-              <strong style={{ color: 'var(--ink)' }}>Formato oficial:</strong> IELTS Academic Reading tiene tres textos largos, 40 preguntas y 60 minutos. El examen puede mezclar varios tipos de pregunta en cada pasaje, por eso no basta con saber el contenido: también debes administrar el orden y la profundidad de lectura.
-            </p>
-            <p style={{ margin: '0 0 0.65rem', color: 'var(--muted)', lineHeight: 1.65, fontSize: '0.9rem' }}>
-              <strong style={{ color: 'var(--ink)' }}>Estrategia WeLearn:</strong> tratamos la gestión del tiempo como triage: resolver ahora lo que tiene señal clara, marcar lo que tiene evidencia pero decisión difícil y saltar búsquedas desde cero cuando el retorno es bajo.
-            </p>
-            <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.65, fontSize: '0.86rem' }}>
-              Fuente oficial revisada: <a href={IELTS_ACADEMIC_URL} style={{ color: ACCENT, fontWeight: 800 }}>IELTS Academic test format and sections</a>. Esta ruta es de habilidad, no de tipo de pregunta.
-            </p>
-          </section>
-
-          <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '0.85rem', marginBottom: '1.2rem' }}>
-            {[
-              { icon: <Gauge size={18} />, title: 'Lee con propósito', text: 'Primero crea mapa; luego lees profundo donde hay evidencia.' },
-              { icon: <AlarmClock size={18} />, title: 'Pon límites', text: 'Si una pregunta se bloquea, marca la zona y avanza.' },
-              { icon: <RotateCcw size={18} />, title: 'Revisa con retorno', text: 'Al final vuelve a preguntas con evidencia localizada.' },
-            ].map((item) => (
-              <article key={item.title} className="wl-card" style={{ padding: '1rem', borderRadius: 14 }}>
-                <div style={{ display: 'flex', gap: '0.5rem', color: ACCENT, alignItems: 'center', marginBottom: '0.35rem' }}>
-                  {item.icon}
-                  <h2 style={{ margin: 0, color: 'var(--ink)', fontSize: '1rem' }}>{item.title}</h2>
-                </div>
-                <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.58, fontSize: '0.9rem' }}>{item.text}</p>
-              </article>
-            ))}
-          </section>
-
-          <section className="wl-card" style={{ padding: '1.2rem', borderRadius: 16, marginBottom: '1rem' }}>
-            <p className="eyebrow" style={{ margin: '0 0 0.45rem' }}>Método WeLearn</p>
-            <h2 style={{ margin: '0 0 0.75rem', fontSize: '1.3rem', letterSpacing: '-0.02em' }}>Sistema de 60 minutos sin pánico</h2>
-            <div style={{ display: 'grid', gap: '0.65rem' }}>
-              {[
-                'Usa 2 minutos iniciales para skimming: tema, cambio, problema y solución.',
-                'Resuelve primero señales claras: fechas, nombres, números, completion con palabra clave única.',
-                'Ataca preguntas lentas cuando ya tienes mapa: headings, inferencia, multiple choice complejo.',
-                'Marca preguntas bloqueadas con evidencia, no con ansiedad.',
-                'Reserva los últimos minutos para volver a evidencias ya localizadas y completar vacíos.',
-              ].map((item, index) => (
-                <p key={item} style={{ margin: 0, display: 'grid', gridTemplateColumns: '32px 1fr', gap: '0.65rem', alignItems: 'start', color: 'var(--ink-2)', lineHeight: 1.58 }}>
-                  <span style={{ width: 32, height: 32, borderRadius: 10, background: `${ACCENT}12`, color: ACCENT, display: 'grid', placeItems: 'center', fontFamily: 'var(--mono)', fontWeight: 900 }}>
-                    {index + 1}
-                  </span>
-                  <span>{item}</span>
-                </p>
-              ))}
-            </div>
-          </section>
-
-          <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '0.85rem', marginBottom: '1.2rem' }}>
-            <article className="wl-card" style={{ padding: '1rem', borderRadius: 14, borderLeft: '4px solid #059669' }}>
-              <div style={{ display: 'flex', gap: '0.45rem', color: '#047857', alignItems: 'center', marginBottom: '0.35rem' }}>
-                <CheckCircle2 size={18} />
-                <h2 style={{ margin: 0, color: 'var(--ink)', fontSize: '1.05rem' }}>Decisión fuerte</h2>
-              </div>
-              <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.9rem' }}>
-                Encontraste la zona, pero dudas entre False y Not Given: marcas evidencia, eliges provisional y avanzas.
-              </p>
-            </article>
-            <article className="wl-card" style={{ padding: '1rem', borderRadius: 14, borderLeft: '4px solid #dc2626' }}>
-              <div style={{ display: 'flex', gap: '0.45rem', color: '#b91c1c', alignItems: 'center', marginBottom: '0.35rem' }}>
-                <XCircle size={18} />
-                <h2 style={{ margin: 0, color: 'var(--ink)', fontSize: '1.05rem' }}>Decisión rota</h2>
-              </div>
-              <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.9rem' }}>
-                Relees todo el pasaje por una duda local. La sensación de control te cuesta preguntas fáciles.
-              </p>
-            </article>
-          </section>
-
-          <TimeManagementPracticeEngine practices={IELTS_TIME_MANAGEMENT_PRACTICE_SETS} accent={ACCENT} />
-
-          <section className="wl-card" style={{ padding: '1.15rem', borderRadius: 16, marginTop: '1.2rem' }}>
-            <p className="eyebrow" style={{ margin: '0 0 0.45rem' }}>Respuestas explicadas</p>
-            <h2 style={{ margin: '0 0 0.75rem', fontSize: '1.25rem', letterSpacing: '-0.02em' }}>Clave del ejercicio de gestión del tiempo</h2>
-            <div style={{ display: 'grid', gap: '0.75rem' }}>
-              {IELTS_TIME_MANAGEMENT_PRACTICE_SETS.flatMap((practiceSet) => practiceSet.decisions).map((decision, index) => (
-                <article key={decision.id} style={{ border: '1px solid var(--line-soft)', borderRadius: 14, padding: '0.9rem', background: 'var(--bg-2)' }}>
-                  <p style={{ margin: '0 0 0.3rem', color: ACCENT, fontFamily: 'var(--mono)', fontWeight: 900, fontSize: '0.72rem', textTransform: 'uppercase' }}>
-                    Decisión {index + 1} · {decision.questionType}
-                  </p>
-                  <h3 style={{ margin: '0 0 0.4rem', fontSize: '1rem', color: 'var(--ink)' }}>
-                    Mejor decisión: {String.fromCharCode(65 + decision.answer)}
-                  </h3>
-                  <p style={{ margin: '0 0 0.45rem', color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.9rem' }}>
-                    {decision.explanation}
-                  </p>
-                  <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.86rem' }}>
-                    <strong style={{ color: 'var(--ink)' }}>Trampa:</strong> {decision.trap}
-                  </p>
-                </article>
-              ))}
-            </div>
-          </section>
-
-          <section className="wl-card" style={{ padding: '1.15rem', borderRadius: 16, marginTop: '1.2rem' }}>
-            <p className="eyebrow" style={{ margin: '0 0 0.45rem' }}>Práctica independiente</p>
-            <h2 style={{ margin: '0 0 0.75rem', fontSize: '1.25rem', letterSpacing: '-0.02em' }}>Haz un triage real antes de corregir</h2>
-            <div style={{ display: 'grid', gap: '0.65rem' }}>
-              {[
-                'Antes de empezar un pasaje, escribe tres columnas: resolver ahora, marcar para volver y saltar temporalmente.',
-                'Durante el skimming, anota el rol de cada párrafo con dos o tres palabras: problema, causa, ejemplo, contraste o resultado.',
-                'Resuelve primero preguntas con señal visible: nombres, fechas, números, términos técnicos o gaps con límite claro.',
-                'Si una pregunta supera 70-90 segundos y ya tienes evidencia, deja una marca breve y avanza.',
-                'En la revisión final, vuelve primero a preguntas con evidencia localizada; evita abrir búsquedas nuevas si quedan pocos minutos.',
-              ].map((item, index) => (
-                <p key={item} style={{ margin: 0, display: 'grid', gridTemplateColumns: '32px 1fr', gap: '0.65rem', alignItems: 'start', color: 'var(--ink-2)', lineHeight: 1.58 }}>
-                  <span style={{ width: 32, height: 32, borderRadius: 10, background: `${ACCENT}12`, color: ACCENT, display: 'grid', placeItems: 'center', fontFamily: 'var(--mono)', fontWeight: 900 }}>
-                    {index + 1}
-                  </span>
-                  <span>{item}</span>
-                </p>
-              ))}
-            </div>
-          </section>
-
-          <section className="wl-card" style={{ padding: '1.15rem', borderRadius: 16, marginTop: '1.2rem' }}>
-            <p className="eyebrow" style={{ margin: '0 0 0.45rem' }}>Checklist de dominio</p>
-            <h2 style={{ margin: '0 0 0.75rem', fontSize: '1.25rem', letterSpacing: '-0.02em' }}>Sabes manejar el tiempo cuando puedes...</h2>
-            <div style={{ display: 'grid', gap: '0.55rem' }}>
-              {[
-                'hacer skimming sin convertirlo en lectura palabra por palabra',
-                'resolver preguntas con señales claras antes de las ambiguas',
-                'marcar una pregunta bloqueada sin perder la evidencia',
-                'volver al final solo a preguntas con alto retorno',
-                'explicar por qué una pregunta difícil no merece destruir el ritmo completo',
-              ].map((item) => (
-                <p key={item} style={{ margin: 0, display: 'grid', gridTemplateColumns: '24px 1fr', gap: '0.55rem', color: 'var(--ink-2)', lineHeight: 1.55 }}>
-                  <ListChecks size={18} style={{ color: ACCENT, marginTop: 2 }} />
-                  <span>{item}</span>
-                </p>
-              ))}
-            </div>
-          </section>
-
-          <section style={{ marginTop: '1.4rem' }}>
-            <p className="eyebrow" style={{ margin: '0 0 0.5rem' }}>Preguntas frecuentes</p>
-            <div style={{ display: 'grid', gap: '0.75rem' }}>
-              {ROUTE.faqs.map((faq) => (
-                <article key={faq.question} className="wl-card" style={{ padding: '1rem', borderRadius: 14 }}>
-                  <h2 style={{ margin: '0 0 0.35rem', color: 'var(--ink)', fontSize: '1rem' }}>{faq.question}</h2>
-                  <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.9rem' }}>{faq.answer}</p>
-                </article>
-              ))}
-            </div>
-          </section>
-
-          <section className="wl-card" style={{ padding: '1.1rem', borderRadius: 16, marginTop: '1.2rem' }}>
-            <p className="eyebrow" style={{ margin: '0 0 0.45rem' }}>Dónde aplicar gestión del tiempo</p>
-            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1.2rem' }}>Conecta esta habilidad con tipos de pregunta oficiales</h2>
-            <p style={{ margin: '0 0 0.85rem', color: 'var(--muted)', lineHeight: 1.65 }}>
-              Gestión del tiempo no reemplaza ningún tipo oficial. Te ayuda a elegir el orden y la profundidad de lectura dentro de cada tarea del IELTS Academic Reading.
-            </p>
-            <div style={{ display: 'flex', gap: '0.7rem', flexWrap: 'wrap' }}>
-              <Link href="/practica/ielts/reading/habilidades/skimming" className="btn btn-sm" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
-                Repasar skimming <ArrowRight size={15} />
-              </Link>
-              <Link href="/practica/ielts/reading/habilidades/scanning" className="btn btn-ghost btn-sm">
-                Repasar scanning
-              </Link>
-              <Link href="/practica/ielts/reading/habilidades/limite-de-palabras" className="btn btn-ghost btn-sm">
-                Controlar límite de palabras
-              </Link>
-              <Link href="/practica/ielts/reading/habilidades/parafrasis" className="btn btn-ghost btn-sm">
-                Entrenar paráfrasis
-              </Link>
-              <Link href="/practica/ielts/reading/tipos-de-preguntas/matching-headings" className="btn btn-ghost btn-sm">
-                Practicar Matching Headings
-              </Link>
-              <Link href="/practica/ielts/reading/tipos-de-preguntas/true-false-not-given" className="btn btn-ghost btn-sm">
-                Practicar True/False/Not Given
-              </Link>
-              <Link href="/practica/ielts/reading/tipos-de-preguntas/multiple-choice" className="btn btn-ghost btn-sm">
-                Practicar Multiple Choice
-              </Link>
-              <Link href="/practica/ielts/reading" className="btn btn-ghost btn-sm">
-                Volver a IELTS Reading
-              </Link>
-            </div>
-          </section>
-
-          <SkillReviewSourceBlock
-            accent={ACCENT}
-            skillName="gestión del tiempo"
-            reviewedFocus={[
-              'separación entre estrategia de tiempo y tipos oficiales de pregunta',
-              'decisiones solve, mark y skip según evidencia disponible y retorno esperado',
-              'alineación con el formato oficial de 60 minutos para tres pasajes y 40 preguntas',
-            ]}
-            sources={[
-              {
-                label: 'IELTS Academic test format and sections',
-                href: IELTS_ACADEMIC_URL,
-                note: 'fuente oficial usada para mantener la estrategia dentro del tiempo real del examen.',
-              },
-              {
-                label: 'Banco WeLearn de triage',
-                note: 'ejercicios originales creados para entrenar decisiones de ritmo, salto y revisión.',
-              },
-              {
-                label: 'Rutas oficiales relacionadas',
-                note: 'la habilidad se transfiere a Matching Headings, Matching Information, Completion, TFNG y Multiple Choice.',
-              },
-            ]}
-          />
-
-          <section style={{ marginTop: '1rem', color: 'var(--muted)', fontSize: '0.86rem', lineHeight: 1.55 }}>
-            <p style={{ margin: 0 }}>
-              Nota de formato: gestión del tiempo es una habilidad de lectura de WeLearn, no una categoría oficial independiente del IELTS. El formato oficial sigue siendo IELTS Academic Reading: tres pasajes, 40 preguntas y 60 minutos.
-            </p>
-          </section>
-        </div>
-      </section>
-    </>
-  );
+  return <InternationalReadingSkillLesson
+    slug="gestion-del-tiempo" name="Time management" title={TITLE} description={DESCRIPTION}
+    directAnswer="Use time as a decision rule. Solve evidence-rich items now, mark questions that already have a useful evidence zone and postpone searches that would restart from zero."
+    facts={[{ label: 'Per passage', value: '≈20 min' }, { label: 'First move', value: 'Map' }, { label: 'Review', value: 'Evidence first' }]}
+    outcomes={[
+      { title: 'Protect the full passage', text: 'Prevent one uncertain item from consuming the time needed for several answerable questions.' },
+      { title: 'Prioritise by evidence', text: 'Work first where names, numbers, local anchors or a mapped paragraph reduce search cost.' },
+      { title: 'Return intelligently', text: 'Keep the evidence location and the unresolved distinction, so review is a second decision rather than a new search.' },
+    ]}
+    method={[
+      { title: 'Budget the passage', text: 'Reserve time for mapping, first-pass points, slower reasoning and a short targeted review.' },
+      { title: 'Classify the next move', text: 'Choose solve now, mark and return, or postpone based on evidence—not on anxiety.' },
+      { title: 'Store useful context', text: 'When you move on, mark the paragraph and the exact uncertainty you need to resolve.' },
+      { title: 'Review by expected return', text: 'Revisit items with located evidence before questions that still require a complete search.' },
+    ]}
+    weakExample="Spending four minutes on one Not Given decision because leaving it temporarily feels like failure."
+    strongExample="Mark the evidence and the unresolved contrast, answer provisionally, secure three local-evidence items and return with the remaining review budget."
+    practice={<TimeManagementPracticeEngine practices={practices} accent="#b45309" />}
+    independentPractice={[
+      'Complete one passage with four visible checkpoints: 2, 11, 17 and 20 minutes.',
+      'Label every delayed item with its evidence paragraph and unresolved decision.',
+      'Record where you lost time: searching, interpreting, comparing or counting words.',
+      'Repeat the passage strategy on a new text and change only one timing rule.',
+    ]}
+    checklist={[
+      'you can leave one question without losing its evidence location',
+      'you solve high-confidence local items before open-ended searches',
+      'your final review begins with evidence-rich questions',
+      'you finish the passage with every item answered or deliberately guessed',
+    ]}
+    faqs={ROUTE.faqs}
+    officialNote="IELTS Academic Reading gives 60 minutes for the full section. The 20-minute passage budget is a flexible WeLearn strategy, not a separate official timing rule for every passage."
+    nextLinks={[
+      { href: '/practica/ielts/reading/mixed-practice', label: 'Apply all skills in Mixed Practice', primary: true },
+      { href: '/practica/ielts/reading/tipos-de-preguntas', label: 'Browse question types' },
+      { href: '/practica/ielts/reading/habilidades', label: 'Back to Reading Skills' },
+      { href: '/practica/ielts/reading', label: 'Back to Reading hub' },
+    ]}
+  />;
 }

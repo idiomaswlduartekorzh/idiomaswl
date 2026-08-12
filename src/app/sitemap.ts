@@ -167,6 +167,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/practica/ielts/general-training/writing/task1`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.66 },
     { url: `${BASE}/practica/ielts/general-training/writing/task2`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.66 },
     { url: `${BASE}/practica/ielts/reading`,                   lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.78 },
+    { url: `${BASE}/practica/ielts/reading/mixed-practice`,    lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.75 },
     { url: `${BASE}/practica/ielts/reading/tipos-de-preguntas`, lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.76 },
     { url: `${BASE}/practica/ielts/reading/habilidades`,        lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.74 },
     { url: `${BASE}/practica/ielts/academic`,                 lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.8  },

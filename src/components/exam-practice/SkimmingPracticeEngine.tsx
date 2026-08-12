@@ -34,7 +34,7 @@ export default function SkimmingPracticeEngine({
     <section className="wl-card" style={{ padding: '1rem', borderRadius: 18, borderTop: `4px solid ${accent}` }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap', alignItems: 'start', marginBottom: '1rem' }}>
         <div>
-          <p className="eyebrow" style={{ margin: '0 0 0.35rem' }}>Práctica guiada</p>
+          <p className="eyebrow" style={{ margin: '0 0 0.35rem' }}>Guided practice</p>
           <h2 style={{ margin: 0, fontSize: '1.35rem', letterSpacing: '-0.02em' }}>{practice.title}</h2>
           <p style={{ margin: '0.35rem 0 0', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.9rem' }}>
             {practice.instructions}
@@ -43,20 +43,20 @@ export default function SkimmingPracticeEngine({
         <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
           <button className="btn btn-ghost btn-sm" type="button" onClick={() => setShowPassage((value) => !value)} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
             <Eye size={15} />
-            {showPassage ? 'Ocultar texto' : 'Ver texto'}
+            {showPassage ? 'Hide passage' : 'Show passage'}
           </button>
           <button className="btn btn-ghost btn-sm" type="button" onClick={reset} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
             <RotateCcw size={15} />
-            Reiniciar
+            Reset
           </button>
         </div>
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: '0.75rem', marginBottom: '1rem' }}>
         {[
-          { label: 'Objetivo', value: 'mapa general' },
-          { label: 'Tiempo sugerido', value: practice.timeTarget },
-          { label: 'No hagas', value: 'traducción palabra por palabra' },
+          { label: 'Goal', value: 'passage map' },
+          { label: 'Suggested time', value: practice.timeTarget },
+          { label: 'Avoid', value: 'word-for-word translation' },
         ].map((item) => (
           <div key={item.label} style={{ border: '1px solid var(--line-soft)', borderRadius: 12, padding: '0.75rem', background: 'var(--bg-2)' }}>
             <p style={{ margin: '0 0 0.25rem', color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.68rem', textTransform: 'uppercase', fontWeight: 900 }}>{item.label}</p>
@@ -80,7 +80,7 @@ export default function SkimmingPracticeEngine({
 
       <article className="wl-card" style={{ padding: '1rem', borderRadius: 14, background: 'var(--bg)', marginBottom: '1rem' }}>
         <p style={{ margin: '0 0 0.45rem', color: accent, fontFamily: 'var(--mono)', fontWeight: 900, fontSize: '0.72rem', textTransform: 'uppercase' }}>
-          Paso 1 · resumen global
+          Step 1 · global summary
         </p>
         <h3 style={{ margin: '0 0 0.75rem', color: 'var(--ink)', fontSize: '1rem', lineHeight: 1.45 }}>{practice.summaryQuestion.question}</h3>
         <div style={{ display: 'grid', gap: '0.5rem' }}>
@@ -153,7 +153,7 @@ export default function SkimmingPracticeEngine({
           >
             {summaryCorrect ? <CheckCircle2 size={18} /> : <XCircle size={18} />}
             <span>
-              <strong>{summaryCorrect ? 'Correcto.' : `Respuesta correcta: ${LETTERS[practice.summaryQuestion.answer]}.`}</strong>{' '}
+              <strong>{summaryCorrect ? 'Correct.' : `Correct answer: ${LETTERS[practice.summaryQuestion.answer]}.`}</strong>{' '}
               {practice.summaryQuestion.explanation}
             </span>
           </div>
@@ -172,7 +172,7 @@ export default function SkimmingPracticeEngine({
 
       <article className="wl-card" style={{ padding: '1rem', borderRadius: 14, background: 'var(--bg)' }}>
         <p style={{ margin: '0 0 0.45rem', color: accent, fontFamily: 'var(--mono)', fontWeight: 900, fontSize: '0.72rem', textTransform: 'uppercase' }}>
-          Paso 2 · mapa de párrafos
+          Step 2 · paragraph map
         </p>
         <div style={{ display: 'grid', gap: '0.85rem' }}>
           {practice.paragraphMap.map((item) => {
@@ -239,10 +239,10 @@ export default function SkimmingPracticeEngine({
         {answeredMap === practice.paragraphMap.length && (
           <div style={{ marginTop: '1rem', padding: '1rem', borderRadius: 14, background: `${accent}10`, border: `1px solid ${accent}30` }}>
             <h2 style={{ margin: '0 0 0.35rem', fontSize: '1.18rem' }}>
-              Mapa: {mapCorrect}/{practice.paragraphMap.length} funciones correctas
+              Map: {mapCorrect}/{practice.paragraphMap.length} paragraph roles correct
             </h2>
             <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.6 }}>
-              Si fallaste, vuelve a mirar la primera oración de cada párrafo y los conectores de giro. Skimming mejora cuando nombras la función, no cuando traduces más.
+              If an answer was wrong, return to each opening sentence and direction-change connector. Skimming improves when you name the paragraph’s role, not when you translate more words.
             </p>
           </div>
         )}

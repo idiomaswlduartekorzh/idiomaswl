@@ -33,23 +33,23 @@ export default function ParaphrasePracticeEngine({
     <section className="wl-card" style={{ padding: '1rem', borderRadius: 18, borderTop: `4px solid ${accent}` }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap', alignItems: 'start', marginBottom: '1rem' }}>
         <div>
-          <p className="eyebrow" style={{ margin: '0 0 0.35rem' }}>Práctica guiada</p>
-          <h2 style={{ margin: 0, fontSize: '1.35rem', letterSpacing: 0 }}>Banco de paráfrasis IELTS Reading</h2>
+          <p className="eyebrow" style={{ margin: '0 0 0.35rem' }}>Guided practice</p>
+          <h2 style={{ margin: 0, fontSize: '1.35rem', letterSpacing: 0 }}>IELTS Reading paraphrase practice bank</h2>
           <p style={{ margin: '0.35rem 0 0', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.9rem' }}>
-            Practica equivalencia de significado en varios contextos. El objetivo es conservar causa, tiempo, cantidad, certeza y contraste aunque cambien las palabras.
+            Practise meaning equivalence across several contexts. Preserve cause, time, quantity, certainty and contrast even when the wording changes.
           </p>
         </div>
         <button className="btn btn-ghost btn-sm" type="button" onClick={reset} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
           <RotateCcw size={15} />
-          Reiniciar
+          Reset
         </button>
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '0.75rem', marginBottom: '1rem' }}>
         {[
           { label: 'Sets', value: `${practiceSets.length}` },
-          { label: 'Conserva', value: 'significado' },
-          { label: 'Vigila', value: 'alcance y certeza' },
+          { label: 'Preserve', value: 'meaning' },
+          { label: 'Watch', value: 'scope and certainty' },
         ].map((item) => (
           <div key={item.label} style={{ border: '1px solid var(--line-soft)', borderRadius: 12, padding: '0.75rem', background: 'var(--bg-2)' }}>
             <p style={{ margin: '0 0 0.25rem', color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.68rem', textTransform: 'uppercase', fontWeight: 900 }}>{item.label}</p>
@@ -91,22 +91,22 @@ export default function ParaphrasePracticeEngine({
                 <article key={item.id} className="wl-card" style={{ padding: '1rem', borderRadius: 14, background: 'var(--bg)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '0.55rem' }}>
                 <span style={{ color: accent, fontFamily: 'var(--mono)', fontWeight: 900, fontSize: '0.72rem', textTransform: 'uppercase' }}>
-                  Set {setIndex + 1} · Paráfrasis {index + 1}
+                  Set {setIndex + 1} · Paraphrase {index + 1}
                 </span>
                 <span style={{ color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.72rem' }}>
-                  foco: {item.focus}
+                  focus: {item.focus}
                 </span>
               </div>
 
               <div style={{ display: 'grid', gridTemplateColumns: '28px 1fr', gap: '0.65rem', border: '1px solid var(--line-soft)', borderRadius: 12, padding: '0.75rem', background: 'var(--bg-2)', marginBottom: '0.75rem' }}>
                 <RefreshCcw size={18} style={{ color: accent, marginTop: 2 }} />
                 <p style={{ margin: 0, color: 'var(--ink-2)', lineHeight: 1.55 }}>
-                  <strong style={{ color: 'var(--ink)' }}>Texto:</strong> {item.source}
+                  <strong style={{ color: 'var(--ink)' }}>Source:</strong> {item.source}
                 </p>
               </div>
 
               <h3 style={{ margin: '0 0 0.75rem', color: 'var(--ink)', fontSize: '1rem', lineHeight: 1.45 }}>
-                ¿Cuál opción conserva el mismo significado?
+                Which option preserves the same meaning?
               </h3>
 
               <div style={{ display: 'grid', gap: '0.5rem' }}>
@@ -178,14 +178,14 @@ export default function ParaphrasePracticeEngine({
                   >
                     {isCorrectSelection ? <CheckCircle2 size={18} /> : <XCircle size={18} />}
                     <span>
-                      <strong>{isCorrectSelection ? 'Correcto.' : `Respuesta correcta: ${LETTERS[item.answer]}.`}</strong>{' '}
+                      <strong>{isCorrectSelection ? 'Correct.' : `Correct answer: ${LETTERS[item.answer]}.`}</strong>{' '}
                       {item.explanation}
                     </span>
                   </div>
                   <div style={{ display: 'grid', gap: '0.35rem' }}>
                     {item.traps.map((trap) => (
                       <p key={trap} style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.5, fontSize: '0.86rem' }}>
-                        <strong style={{ color: 'var(--ink)' }}>Trampa:</strong> {trap}
+                        <strong style={{ color: 'var(--ink)' }}>Trap:</strong> {trap}
                       </p>
                     ))}
                   </div>
@@ -201,10 +201,10 @@ export default function ParaphrasePracticeEngine({
       {answeredCount === items.length && (
         <div style={{ marginTop: '1rem', padding: '1rem', borderRadius: 14, background: `${accent}10`, border: `1px solid ${accent}30` }}>
           <h2 style={{ margin: '0 0 0.35rem', fontSize: '1.18rem' }}>
-            Resultado: {correctCount}/{items.length} equivalencias conservadas
+            Result: {correctCount}/{items.length} accurate equivalences
           </h2>
           <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.6 }}>
-            Si fallaste, revisa qué cambió: cantidad, certeza, causa, tiempo o dirección. En IELTS una palabra pequeña puede romper la equivalencia completa.
+            If an answer was wrong, identify what changed: quantity, certainty, cause, time or direction. In IELTS, one small word can break the full equivalence.
           </p>
         </div>
       )}

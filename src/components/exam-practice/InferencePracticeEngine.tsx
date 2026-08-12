@@ -33,23 +33,23 @@ export default function InferencePracticeEngine({
     <section className="wl-card" style={{ padding: '1rem', borderRadius: 18, borderTop: `4px solid ${accent}` }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap', alignItems: 'start', marginBottom: '1rem' }}>
         <div>
-          <p className="eyebrow" style={{ margin: '0 0 0.35rem' }}>Práctica guiada</p>
-          <h2 style={{ margin: 0, fontSize: '1.35rem', letterSpacing: 0 }}>Banco de inferencia IELTS Reading</h2>
+          <p className="eyebrow" style={{ margin: '0 0 0.35rem' }}>Guided practice</p>
+          <h2 style={{ margin: 0, fontSize: '1.35rem', letterSpacing: 0 }}>IELTS Reading inference practice bank</h2>
           <p style={{ margin: '0.35rem 0 0', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.9rem' }}>
-            Practica conclusiones defendibles en varios pasajes. Cada respuesta debe sostenerse con evidencia textual y mantener un alcance moderado.
+            Practise defensible conclusions across several passages. Every answer must follow from textual evidence and keep a restrained scope.
           </p>
         </div>
         <button className="btn btn-ghost btn-sm" type="button" onClick={reset} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
           <RotateCcw size={15} />
-          Reiniciar
+          Reset
         </button>
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '0.75rem', marginBottom: '1rem' }}>
         {[
           { label: 'Sets', value: `${practiceSets.length}` },
-          { label: 'Regla', value: 'conclusión moderada' },
-          { label: 'Prohibido', value: 'conocimiento externo' },
+          { label: 'Rule', value: 'restrained conclusion' },
+          { label: 'Do not use', value: 'outside knowledge' },
         ].map((item) => (
           <div key={item.label} style={{ border: '1px solid var(--line-soft)', borderRadius: 12, padding: '0.75rem', background: 'var(--bg-2)' }}>
             <p style={{ margin: '0 0 0.25rem', color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.68rem', textTransform: 'uppercase', fontWeight: 900 }}>{item.label}</p>
@@ -65,9 +65,9 @@ export default function InferencePracticeEngine({
             Evidence before conclusion
           </p>
         </div>
-        <h3 style={{ margin: '0 0 0.6rem', color: 'var(--ink)', fontSize: '1.05rem' }}>Cómo usar este banco</h3>
+        <h3 style={{ margin: '0 0 0.6rem', color: 'var(--ink)', fontSize: '1.05rem' }}>How to use this practice bank</h3>
         <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.65 }}>
-          Lee el pasaje, identifica la zona de evidencia y elige la conclusión más moderada. Si una opción necesita datos externos, cambia posibilidad por certeza o exagera el alcance, descártala.
+          Read the passage, identify the evidence window and choose the most restrained conclusion. Reject any option that needs outside facts, turns possibility into certainty or exaggerates scope.
         </p>
       </article>
 
@@ -106,10 +106,10 @@ export default function InferencePracticeEngine({
                 <article key={question.id} className="wl-card" style={{ padding: '1rem', borderRadius: 14, background: 'var(--bg)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '0.55rem' }}>
                 <span style={{ color: accent, fontFamily: 'var(--mono)', fontWeight: 900, fontSize: '0.72rem', textTransform: 'uppercase' }}>
-                  Set {setIndex + 1} · Inferencia {index + 1}
+                  Set {setIndex + 1} · Inference {index + 1}
                 </span>
                 <span style={{ color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.72rem' }}>
-                  evidencia: {question.evidenceFocus}
+                  evidence: {question.evidenceFocus}
                 </span>
               </div>
 
@@ -184,15 +184,15 @@ export default function InferencePracticeEngine({
                   >
                     {isCorrectSelection ? <CheckCircle2 size={18} /> : <XCircle size={18} />}
                     <span>
-                      <strong>{isCorrectSelection ? 'Correcto.' : `Respuesta correcta: ${LETTERS[question.answer]}.`}</strong>{' '}
-                      Evidencia: "{question.evidence}".
+                      <strong>{isCorrectSelection ? 'Correct.' : `Correct answer: ${LETTERS[question.answer]}.`}</strong>{' '}
+                      Evidence: “{question.evidence}”.
                     </span>
                   </div>
                   <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.88rem' }}>{question.explanation}</p>
                   <div style={{ display: 'grid', gap: '0.35rem' }}>
                     {question.traps.map((trap) => (
                       <p key={trap} style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.5, fontSize: '0.86rem' }}>
-                        <strong style={{ color: 'var(--ink)' }}>Trampa:</strong> {trap}
+                        <strong style={{ color: 'var(--ink)' }}>Trap:</strong> {trap}
                       </p>
                     ))}
                   </div>
@@ -208,10 +208,10 @@ export default function InferencePracticeEngine({
       {answeredCount === questions.length && (
         <div style={{ marginTop: '1rem', padding: '1rem', borderRadius: 14, background: `${accent}10`, border: `1px solid ${accent}30` }}>
           <h2 style={{ margin: '0 0 0.35rem', fontSize: '1.18rem' }}>
-            Resultado: {correctCount}/{questions.length} inferencias defendibles
+            Result: {correctCount}/{questions.length} defensible inferences
           </h2>
           <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.6 }}>
-            Si fallaste una pregunta, revisa si elegiste una opción extrema, externa o demasiado literal. La inferencia correcta debe sonar como una conclusión que el texto permite defender.
+            If an answer was wrong, check whether the option was extreme, external or overly literal. A sound inference should read like a conclusion the text allows you to defend.
           </p>
         </div>
       )}

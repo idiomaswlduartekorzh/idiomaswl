@@ -126,6 +126,19 @@ const nextConfig: NextConfig = {
     ];
   },
 
+  async rewrites() {
+    return {
+      beforeFiles: [
+        {
+          source: '/practica/ielts/reading/tipos-de-preguntas/:slug',
+          destination: '/practica/ielts/reading/international-question-type/:slug',
+        },
+      ],
+      afterFiles: [],
+      fallback: [],
+    };
+  },
+
   async redirects() {
     // ── Migración de slugs de gramática ─────────────────────────────────────
     // Las lecciones se renombraron del español al idioma que se enseña

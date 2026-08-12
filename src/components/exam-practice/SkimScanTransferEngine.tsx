@@ -34,32 +34,32 @@ export default function SkimScanTransferEngine({
     <section className="wl-card" style={{ padding: '1rem', borderRadius: 18, borderTop: `4px solid ${accent}` }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap', alignItems: 'start', marginBottom: '1rem' }}>
         <div>
-          <p className="eyebrow" style={{ margin: '0 0 0.35rem' }}>Transferencia skimming + scanning</p>
+          <p className="eyebrow" style={{ margin: '0 0 0.35rem' }}>Skimming + scanning transfer</p>
           <h2 style={{ margin: 0, fontSize: '1.35rem', letterSpacing: 0 }}>
-            Banco de transferencia: del mapa a la evidencia
+            From passage map to evidence
           </h2>
           <p style={{ margin: '0.35rem 0 0', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.9rem' }}>
-            Practica cuándo conviene empezar con skimming y cuándo conviene empezar con scanning. Cada set exige decidir, justificar y revelar evidencia.
+            Decide when to begin with skimming and when to begin with scanning. Every set asks you to choose, justify and reveal the evidence.
           </p>
         </div>
         <button className="btn btn-ghost btn-sm" type="button" onClick={reset} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
           <RotateCcw size={15} />
-          Reiniciar
+          Reset
         </button>
       </div>
 
       <article className="wl-card" style={{ padding: '1rem', borderRadius: 14, borderLeft: `4px solid ${accent}`, marginBottom: '1rem', background: 'var(--bg)' }}>
-        <h3 style={{ margin: '0 0 0.5rem', color: 'var(--ink)', fontSize: '1.05rem' }}>Cómo usar este banco</h3>
+        <h3 style={{ margin: '0 0 0.5rem', color: 'var(--ink)', fontSize: '1.05rem' }}>How to use this practice bank</h3>
         <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.9rem' }}>
-          Si la pregunta pide función, ubicación o propósito general, empieza con skimming. Si ya trae una señal concreta como fecha, número, nombre o frase límite, empieza con scanning.
+          If the question asks about function, location or overall purpose, start with skimming. If it provides a concrete signal such as a date, figure, name or limiting phrase, start with scanning.
         </p>
       </article>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 220px), 1fr))', gap: '0.75rem', marginBottom: '1.2rem' }}>
         {[
-          { label: 'Decisiones correctas', value: `${correctMoves}/${tasks.length}` },
-          { label: 'Preguntas intentadas', value: `${attemptedMoves}/${tasks.length}` },
-          { label: 'Evidencias reveladas', value: `${revealedCount}/${tasks.length}` },
+          { label: 'Correct decisions', value: `${correctMoves}/${tasks.length}` },
+          { label: 'Questions attempted', value: `${attemptedMoves}/${tasks.length}` },
+          { label: 'Evidence revealed', value: `${revealedCount}/${tasks.length}` },
         ].map((item) => (
           <div key={item.label} style={{ border: '1px solid var(--line-soft)', borderRadius: 12, padding: '0.75rem', background: 'var(--bg-2)' }}>
             <p style={{ margin: '0 0 0.25rem', color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.68rem', textTransform: 'uppercase', fontWeight: 900 }}>{item.label}</p>
@@ -80,7 +80,7 @@ export default function SkimScanTransferEngine({
                 {practiceSet.instructions}
               </p>
               <p style={{ margin: '0 0 0.75rem', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.86rem' }}>
-                <strong style={{ color: 'var(--ink)' }}>Tiempo objetivo:</strong> {practiceSet.timeTarget}
+                <strong style={{ color: 'var(--ink)' }}>Target time:</strong> {practiceSet.timeTarget}
               </p>
               <h4 style={{ margin: '0 0 0.65rem', color: 'var(--ink)', fontSize: '0.98rem' }}>{practiceSet.passageTitle}</h4>
               <div style={{ display: 'grid', gap: '0.75rem' }}>
@@ -104,14 +104,14 @@ export default function SkimScanTransferEngine({
               return (
                 <article key={task.id} className="wl-card" style={{ padding: '1rem', borderRadius: 14, background: 'var(--bg)' }}>
                   <p style={{ margin: '0 0 0.4rem', color: accent, fontFamily: 'var(--mono)', fontWeight: 900, fontSize: '0.72rem', textTransform: 'uppercase' }}>
-                    Set {setIndex + 1} · Pregunta {index + 1}
+                    Set {setIndex + 1} · Question {index + 1}
                   </p>
                   <h3 style={{ margin: '0 0 0.75rem', color: 'var(--ink)', fontSize: '1rem', lineHeight: 1.45 }}>{task.question}</h3>
 
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 180px), 1fr))', gap: '0.55rem', marginBottom: locked ? '0.75rem' : 0 }}>
                     {[
-                      { key: 'skim' as const, label: 'Empezar con skimming', icon: <Eye size={16} /> },
-                      { key: 'scan' as const, label: 'Empezar con scanning', icon: <LocateFixed size={16} /> },
+                      { key: 'skim' as const, label: 'Start with skimming', icon: <Eye size={16} /> },
+                      { key: 'scan' as const, label: 'Start with scanning', icon: <LocateFixed size={16} /> },
                     ].map((option) => {
                       const selected = selectedMove === option.key;
                       let border = '1px solid var(--line-soft)';
@@ -175,7 +175,7 @@ export default function SkimScanTransferEngine({
                       >
                         {isCorrect ? <CheckCircle2 size={18} /> : <XCircle size={18} />}
                         <span>
-                          <strong>{isCorrect ? 'Buen primer movimiento.' : `Mejor empezar con ${task.firstMove}.`}</strong>{' '}
+                          <strong>{isCorrect ? 'Strong first move.' : `Start with ${task.firstMove}.`}</strong>{' '}
                           {task.explanation}
                         </span>
                       </div>
@@ -188,22 +188,22 @@ export default function SkimScanTransferEngine({
                         style={{ justifySelf: 'start', display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}
                       >
                         <LocateFixed size={15} />
-                        {isRevealed ? 'Evidencia revelada' : 'Revelar párrafo y señal'}
+                        {isRevealed ? 'Evidence revealed' : 'Reveal paragraph and signal'}
                       </button>
 
                       {isRevealed && (
                         <div style={{ border: '1px solid var(--line-soft)', borderRadius: 12, padding: '0.8rem', background: 'var(--bg-2)', display: 'grid', gap: '0.45rem' }}>
                           <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.88rem' }}>
-                            <strong style={{ color: 'var(--ink)' }}>Párrafo:</strong> {task.paragraphAnswer}
+                            <strong style={{ color: 'var(--ink)' }}>Paragraph:</strong> {task.paragraphAnswer}
                           </p>
                           <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.88rem' }}>
-                            <strong style={{ color: 'var(--ink)' }}>Señal:</strong> {task.signalAnswer}
+                            <strong style={{ color: 'var(--ink)' }}>Signal:</strong> {task.signalAnswer}
                           </p>
                           <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.88rem' }}>
-                            <strong style={{ color: 'var(--ink)' }}>Evidencia:</strong> “{task.evidence}”.
+                            <strong style={{ color: 'var(--ink)' }}>Evidence:</strong> “{task.evidence}”.
                           </p>
                           <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.86rem' }}>
-                            <strong style={{ color: 'var(--ink)' }}>Trampa:</strong> {task.trap}
+                            <strong style={{ color: 'var(--ink)' }}>Trap:</strong> {task.trap}
                           </p>
                         </div>
                       )}

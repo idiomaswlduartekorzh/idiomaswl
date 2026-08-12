@@ -2,12 +2,40 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, BookOpenCheck, Clock, SearchCheck } from 'lucide-react';
 import { CourseSchema } from '@/components/practica/EducationSchema';
-import { BreadcrumbJsonLd, FaqJsonLd, JsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
+import { BreadcrumbJsonLd, FaqJsonLd, JsonLd } from '@/components/exam-practice/StructuredData';
+import InternationalLearningResourceJsonLd from '@/components/exam-practice/InternationalLearningResourceJsonLd';
 import { IELTS_READING_SKILLS, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 
 const URL = `${PRACTICE_BASE_URL}/practica/ielts/reading/habilidades`;
 const ACCENT = '#0369a1';
 const IELTS_ACADEMIC_URL = 'https://ielts.org/take-a-test/test-types/ielts-academic-test';
+
+const SKILL_COPY: Record<string, { title: string; description: string }> = {
+  skimming: {
+    title: 'Skimming',
+    description: 'Build a fast passage map from the title, opening sentences, paragraph roles and direction changes.',
+  },
+  scanning: {
+    title: 'Scanning',
+    description: 'Locate names, dates, figures, technical terms and paraphrased evidence without rereading the whole text.',
+  },
+  inferencia: {
+    title: 'Inference',
+    description: 'Choose the most restrained conclusion that the evidence genuinely supports.',
+  },
+  parafrasis: {
+    title: 'Paraphrase recognition',
+    description: 'Test whether the question and passage express the same meaning with different language.',
+  },
+  'limite-de-palabras': {
+    title: 'Word-limit control',
+    description: 'Copy the smallest grammatical answer that obeys the stated word limit.',
+  },
+  'gestion-del-tiempo': {
+    title: 'Time management',
+    description: 'Decide when to solve, mark, skip and return during the 60-minute Reading test.',
+  },
+};
 
 const HUB_FAQS = [
   {
@@ -31,7 +59,7 @@ const TRANSFER_MAP = [
   {
     skill: 'Skimming',
     href: '/practica/ielts/reading/habilidades/skimming',
-    use: 'Crear mapa del pasaje, detectar idea principal y función de párrafos.',
+    use: 'Map the passage, identify its main idea and label each paragraph’s role.',
     officialTypes: [
       { label: 'Matching Headings', href: '/practica/ielts/reading/tipos-de-preguntas/matching-headings' },
       { label: 'Summary Completion', href: '/practica/ielts/reading/tipos-de-preguntas/summary-completion' },
@@ -40,7 +68,7 @@ const TRANSFER_MAP = [
   {
     skill: 'Scanning',
     href: '/practica/ielts/reading/habilidades/scanning',
-    use: 'Ubicar nombres, fechas, cifras, términos técnicos y zonas de evidencia.',
+    use: 'Locate names, dates, figures, technical terms and evidence windows.',
     officialTypes: [
       { label: 'Matching Information', href: '/practica/ielts/reading/tipos-de-preguntas/matching-information' },
       { label: 'Sentence Completion', href: '/practica/ielts/reading/tipos-de-preguntas/sentence-completion' },
@@ -48,27 +76,27 @@ const TRANSFER_MAP = [
     ],
   },
   {
-    skill: 'Inferencia',
+    skill: 'Inference',
     href: '/practica/ielts/reading/habilidades/inferencia',
-    use: 'Elegir conclusiones moderadas que el texto permite defender.',
+    use: 'Choose restrained conclusions that the text allows you to defend.',
     officialTypes: [
       { label: 'Multiple Choice', href: '/practica/ielts/reading/tipos-de-preguntas/multiple-choice' },
       { label: 'Yes/No/Not Given', href: '/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given' },
     ],
   },
   {
-    skill: 'Paráfrasis',
+    skill: 'Paraphrase recognition',
     href: '/practica/ielts/reading/habilidades/parafrasis',
-    use: 'Comprobar equivalencia entre pregunta, opción y evidencia.',
+    use: 'Check meaning equivalence across the question, option and evidence.',
     officialTypes: [
       { label: 'True/False/Not Given', href: '/practica/ielts/reading/tipos-de-preguntas/true-false-not-given' },
       { label: 'Matching Sentence Endings', href: '/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings' },
     ],
   },
   {
-    skill: 'Límite de palabras',
+    skill: 'Word-limit control',
     href: '/practica/ielts/reading/habilidades/limite-de-palabras',
-    use: 'Copiar la unidad mínima que completa el espacio sin romper la instrucción.',
+    use: 'Copy the minimum unit that completes the gap without breaking the instruction.',
     officialTypes: [
       { label: 'Note Completion', href: '/practica/ielts/reading/tipos-de-preguntas/note-completion' },
       { label: 'Table Completion', href: '/practica/ielts/reading/tipos-de-preguntas/table-completion' },
@@ -76,19 +104,19 @@ const TRANSFER_MAP = [
     ],
   },
   {
-    skill: 'Gestión del tiempo',
+    skill: 'Time management',
     href: '/practica/ielts/reading/habilidades/gestion-del-tiempo',
-    use: 'Decidir qué resolver, marcar o saltar dentro de los 60 minutos.',
+    use: 'Decide what to solve, mark or skip within the 60-minute test.',
     officialTypes: [
-      { label: 'Tipos de pregunta IELTS Reading', href: '/practica/ielts/reading/tipos-de-preguntas' },
+      { label: 'IELTS Reading question types', href: '/practica/ielts/reading/tipos-de-preguntas' },
     ],
   },
 ];
 
 export const metadata: Metadata = {
-  title: 'Habilidades IELTS Reading | Estrategias y práctica',
+  title: 'IELTS Reading Skills | Strategies and guided practice',
   description:
-    'Ruta de habilidades para IELTS Reading: aprende skimming, scanning, inferencia, paráfrasis, límite de palabras y gestión del tiempo antes de hacer simulacros completos.',
+    'Build IELTS Reading skills with guided lessons in skimming, scanning, inference, paraphrase recognition, word-limit control and time management.',
   keywords: [
     'habilidades IELTS reading',
     'skimming IELTS reading',
@@ -97,11 +125,11 @@ export const metadata: Metadata = {
     'IELTS reading practice',
   ],
   openGraph: {
-    title: 'Habilidades IELTS Reading',
-    description: 'Aprende habilidades de lectura para IELTS Academic Reading con práctica guiada.',
+    title: 'IELTS Reading Skills',
+    description: 'Build transferable IELTS Academic Reading skills through guided practice.',
     url: URL,
     type: 'website',
-    locale: 'es_CO',
+    locale: 'en_US',
   },
   alternates: { canonical: URL },
 };
@@ -112,26 +140,26 @@ export default function Page() {
   return (
     <>
       <CourseSchema
-        name="Habilidades IELTS Reading"
-        description="Ruta de habilidades transversales para IELTS Academic Reading: skimming, scanning, inferencia, paráfrasis, límite de palabras y gestión del tiempo."
+        name="IELTS Reading Skills"
+        description="A transferable IELTS Academic Reading pathway: skimming, scanning, inference, paraphrase recognition, word-limit control and time management."
         url={URL}
         educationalLevel="B1,B2,C1"
         teaches="IELTS Reading skills, skimming, scanning, inference, paraphrase, word limit"
-        inLanguage="es-CO"
+        inLanguage="en"
       />
-      <LearningResourceJsonLd
-        name="Habilidades IELTS Reading"
+      <InternationalLearningResourceJsonLd
+        name="IELTS Reading Skills"
         url={URL}
-        description="Índice de habilidades para estudiar IELTS Academic Reading antes de mezclar tipos de pregunta."
+        description="A skill pathway for IELTS Academic Reading before mixing question types."
         teaches={['IELTS Reading', 'skimming', 'scanning', 'inference', 'paraphrase', 'word limit', 'time management']}
         isPartOf={{ name: 'IELTS Reading', url: `${PRACTICE_BASE_URL}/practica/ielts/reading` }}
       />
       <BreadcrumbJsonLd
         items={[
-          { name: 'Práctica', url: `${PRACTICE_BASE_URL}/practica` },
+          { name: 'Practice', url: `${PRACTICE_BASE_URL}/practica` },
           { name: 'IELTS', url: `${PRACTICE_BASE_URL}/practica/ielts` },
           { name: 'Reading', url: `${PRACTICE_BASE_URL}/practica/ielts/reading` },
-          { name: 'Habilidades', url: URL },
+          { name: 'Reading Skills', url: URL },
         ]}
       />
       <FaqJsonLd faqs={HUB_FAQS} />
@@ -139,7 +167,7 @@ export default function Page() {
         value={{
           '@context': 'https://schema.org',
           '@type': 'ItemList',
-          name: 'Ruta de habilidades IELTS Reading',
+          name: 'IELTS Reading skills pathway',
           itemListElement: published.map((skill, index) => ({
             '@type': 'ListItem',
             position: index + 1,
@@ -149,16 +177,16 @@ export default function Page() {
         }}
       />
 
-      <section className="wl-section">
+      <section className="wl-section" lang="en">
         <div className="wrap" style={{ maxWidth: 1040 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
-            <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
+            <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Practice</Link>
             <span>/</span>
             <Link href="/practica/ielts" style={{ color: 'var(--muted)', textDecoration: 'none' }}>IELTS</Link>
             <span>/</span>
             <Link href="/practica/ielts/reading" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Reading</Link>
             <span>/</span>
-            <span style={{ color: 'var(--ink)', fontWeight: 800 }}>Habilidades</span>
+            <span style={{ color: 'var(--ink)', fontWeight: 800 }}>Reading Skills</span>
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '1rem', alignItems: 'stretch', marginBottom: '1.5rem' }}>
@@ -167,18 +195,18 @@ export default function Page() {
                 <span className="ink-line" />IELTS Academic Reading
               </p>
               <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.15rem)', lineHeight: 1.04, letterSpacing: '-0.04em', margin: '0 0 0.85rem', color: 'var(--ink)' }}>
-                Habilidades IELTS Reading
+                IELTS Reading Skills
               </h1>
               <p style={{ color: 'var(--muted)', fontSize: '1rem', lineHeight: 1.75, margin: 0, maxWidth: 720 }}>
-                Los tipos de pregunta te dicen qué responder. Las habilidades te dicen cómo leer. Esta ruta entrena skimming, scanning, inferencia, paráfrasis, límite de palabras y gestión del tiempo para que cada ejercicio tenga método, no suerte.
+                Question types tell you what to answer. Reading skills tell you how to reach the evidence. Build skimming, scanning, inference, paraphrase recognition, word-limit control and time management so every decision follows a method rather than luck.
               </p>
             </div>
 
             <aside className="wl-card" style={{ padding: '1rem', borderRadius: 16, display: 'grid', gap: '0.7rem', alignContent: 'center' }}>
               {[
-                { icon: <BookOpenCheck size={18} />, label: 'Mapa', text: 'Primero entiende de qué trata cada párrafo.' },
-                { icon: <SearchCheck size={18} />, label: 'Evidencia', text: 'Después localiza la zona exacta para responder.' },
-                { icon: <Clock size={18} />, label: 'Tiempo', text: 'La velocidad nace de saber cuándo leer rápido y cuándo frenar.' },
+                { icon: <BookOpenCheck size={18} />, label: 'Map', text: 'First identify what each paragraph is doing.' },
+                { icon: <SearchCheck size={18} />, label: 'Evidence', text: 'Then locate the exact window that supports the answer.' },
+                { icon: <Clock size={18} />, label: 'Time', text: 'Speed comes from knowing when to skim and when to slow down.' },
               ].map((item) => (
                 <div key={item.label} style={{ display: 'grid', gridTemplateColumns: '28px 1fr', gap: '0.65rem', alignItems: 'start' }}>
                   <span style={{ color: ACCENT }}>{item.icon}</span>
@@ -192,45 +220,48 @@ export default function Page() {
 
           <section className="wl-card" style={{ padding: '1rem', borderRadius: 16, marginBottom: '1rem', background: `${ACCENT}0d` }}>
             <p style={{ margin: 0, color: 'var(--ink-2)', lineHeight: 1.65 }}>
-              <strong>Respuesta directa:</strong> esta ruta organiza habilidades de lectura para IELTS Academic Reading. Primero aprendes cómo leer y encontrar evidencia; después aplicas esas habilidades en los tipos oficiales de pregunta.
+              <strong>Direct answer:</strong> this pathway organises the transferable skills behind IELTS Academic Reading. First learn how to map and search a passage; then apply those skills to the official question formats.
             </p>
           </section>
 
           <section className="wl-card" style={{ padding: '1rem 1.1rem', borderRadius: 16, marginBottom: '1.2rem' }}>
-            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Formato oficial vs estrategia WeLearn</h2>
+            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Official format vs WeLearn strategy</h2>
             <p style={{ margin: '0 0 0.65rem', color: 'var(--muted)', lineHeight: 1.65, fontSize: '0.9rem' }}>
-              <strong style={{ color: 'var(--ink)' }}>Formato oficial:</strong> IELTS Academic Reading tiene 60 minutos, tres textos largos y 40 preguntas. Los tipos oficiales incluyen opciones múltiples, emparejamientos, completar información, identificar información/opiniones y respuestas cortas.
+              <strong style={{ color: 'var(--ink)' }}>Official format:</strong> IELTS Academic Reading gives you 60 minutes for three long texts and 40 questions, including multiple choice, matching, completion, identifying information or views, and short answers.
             </p>
             <p style={{ margin: '0 0 0.65rem', color: 'var(--muted)', lineHeight: 1.65, fontSize: '0.9rem' }}>
-              <strong style={{ color: 'var(--ink)' }}>Estrategia WeLearn:</strong> separamos habilidades de tipos de pregunta para que el estudiante practique una destreza concreta antes de mezclarla en simulacros completos.
+              <strong style={{ color: 'var(--ink)' }}>WeLearn strategy:</strong> we separate skills from question formats so you can train one reading decision before combining everything in timed tests.
             </p>
             <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.65, fontSize: '0.86rem' }}>
-              Fuente oficial revisada: <a href={IELTS_ACADEMIC_URL} style={{ color: ACCENT, fontWeight: 800 }}>IELTS Academic test format and sections</a>. Esta ruta es el índice de habilidades, no el índice de tipos oficiales de pregunta.
+              Official source reviewed: <a href={IELTS_ACADEMIC_URL} style={{ color: ACCENT, fontWeight: 800 }}>IELTS Academic test format and sections</a>. This is a skill pathway, not a new list of official question types.
             </p>
           </section>
 
           <section style={{ display: 'grid', gap: '0.9rem', marginBottom: '1.5rem' }}>
-            <h2 style={{ margin: 0, fontSize: '1.35rem', letterSpacing: '-0.02em' }}>Ruta recomendada</h2>
+            <h2 style={{ margin: 0, fontSize: '1.35rem', letterSpacing: '-0.02em' }}>Recommended pathway</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: '0.85rem' }}>
-              {published.map((skill) => (
+              {published.map((skill) => {
+                const copy = SKILL_COPY[skill.slug] ?? { title: skill.title, description: skill.description };
+                return (
                 <Link key={skill.slug} href={skill.path} style={{ color: 'inherit', textDecoration: 'none' }}>
                   <article className="wl-card" style={{ padding: '1rem', borderRadius: 14, height: '100%', borderTop: `3px solid ${ACCENT}` }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', gap: '0.7rem', alignItems: 'start', marginBottom: '0.45rem' }}>
-                      <h3 style={{ margin: 0, color: 'var(--ink)', fontSize: '1rem', letterSpacing: '-0.01em' }}>{skill.title.replace(' en IELTS Reading', '')}</h3>
+                      <h3 style={{ margin: 0, color: 'var(--ink)', fontSize: '1rem', letterSpacing: '-0.01em' }}>{copy.title}</h3>
                       <span style={{ fontFamily: 'var(--mono)', fontSize: '0.64rem', fontWeight: 900, color: ACCENT }}>
-                        DISPONIBLE
+                        AVAILABLE
                       </span>
                     </div>
-                    <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.88rem' }}>{skill.description}</p>
+                    <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.88rem' }}>{copy.description}</p>
                   </article>
                 </Link>
-              ))}
+                );
+              })}
             </div>
           </section>
 
           <section className="wl-card" style={{ padding: '1.15rem', borderRadius: 16, marginBottom: '1.2rem' }}>
-            <p className="eyebrow" style={{ margin: '0 0 0.45rem' }}>Mapa de transferencia</p>
-            <h2 style={{ margin: '0 0 0.75rem', fontSize: '1.25rem', letterSpacing: '-0.02em' }}>Qué habilidad usar según el tipo de pregunta</h2>
+            <p className="eyebrow" style={{ margin: '0 0 0.45rem' }}>Transfer map</p>
+            <h2 style={{ margin: '0 0 0.75rem', fontSize: '1.25rem', letterSpacing: '-0.02em' }}>Which skill supports each question type?</h2>
             <div style={{ display: 'grid', gap: '0.85rem' }}>
               {TRANSFER_MAP.map((item) => (
                 <article key={item.skill} style={{ border: '1px solid var(--line-soft)', borderRadius: 14, padding: '0.9rem', background: 'var(--bg-2)' }}>
@@ -243,9 +274,9 @@ export default function Page() {
                     </div>
                     <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
                       {item.officialTypes.map((type) => (
-                        <Link key={type.href} href={type.href} className="btn btn-ghost btn-sm">
+                        <a key={type.href} href={type.href} className="btn btn-ghost btn-sm">
                           {type.label}
-                        </Link>
+                        </a>
                       ))}
                     </div>
                   </div>
@@ -255,18 +286,18 @@ export default function Page() {
           </section>
 
           <section className="wl-card" style={{ padding: '1.15rem', borderRadius: 16 }}>
-            <p className="eyebrow" style={{ margin: '0 0 0.45rem' }}>Cómo usar esta ruta</p>
+            <p className="eyebrow" style={{ margin: '0 0 0.45rem' }}>How to use this pathway</p>
             <h2 style={{ margin: '0 0 0.7rem', fontSize: '1.25rem', letterSpacing: '-0.02em' }}>
-              Habilidad primero, tipo de pregunta después
+              Build the skill, then transfer it to a question type
             </h2>
             <div style={{ display: 'grid', gap: '0.6rem' }}>
               {[
-                'Empieza con skimming para saber de qué trata cada párrafo sin leer palabra por palabra.',
-                'Pasa a scanning para ubicar datos, nombres, fechas y paráfrasis dentro del mapa.',
-                'Entrena inferencia cuando ya puedas separar evidencia textual de opinión externa.',
-                'Practica límite de palabras para responder completion tasks con frases exactas y gramática compatible.',
-                'Cierra con gestión del tiempo para decidir cuándo resolver, marcar o saltar temporalmente.',
-                'Vuelve a tipos de pregunta como Matching Headings, Matching Information o Summary Completion para transferir la habilidad.',
+                'Start with skimming so you can label each paragraph without reading every word.',
+                'Use scanning to find names, figures, dates and paraphrases inside that map.',
+                'Train inference once you can separate textual support from outside assumptions.',
+                'Practise word-limit control for completion tasks that require exact, grammatical wording.',
+                'Add time management so you know when to solve, mark, skip and return.',
+                'Transfer the method to formats such as Matching Headings, Matching Information and Summary Completion.',
               ].map((step, index) => (
                 <p key={step} style={{ margin: 0, display: 'grid', gridTemplateColumns: '32px 1fr', gap: '0.65rem', alignItems: 'start', color: 'var(--ink-2)', lineHeight: 1.58 }}>
                   <span style={{ width: 32, height: 32, borderRadius: 10, background: `${ACCENT}12`, color: ACCENT, display: 'grid', placeItems: 'center', fontFamily: 'var(--mono)', fontWeight: 900 }}>
@@ -278,7 +309,7 @@ export default function Page() {
             </div>
           </section>
 
-          <section style={{ marginTop: '1.4rem' }}>
+          <section style={{ marginTop: '1.4rem' }} lang="es">
             <p className="eyebrow" style={{ margin: '0 0 0.5rem' }}>Preguntas frecuentes</p>
             <div style={{ display: 'grid', gap: '0.75rem' }}>
               {HUB_FAQS.map((faq) => (
@@ -292,28 +323,28 @@ export default function Page() {
 
           <div style={{ marginTop: '1rem', display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
             <Link href="/practica/ielts/reading/habilidades/skimming" className="btn btn-sm" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
-              Empezar con skimming <ArrowRight size={15} />
+              Start with skimming <ArrowRight size={15} />
             </Link>
             <Link href="/practica/ielts/reading/habilidades/scanning" className="btn btn-ghost btn-sm" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
-              Seguir con scanning <ArrowRight size={15} />
+              Continue with scanning <ArrowRight size={15} />
             </Link>
             <Link href="/practica/ielts/reading/habilidades/inferencia" className="btn btn-ghost btn-sm" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
-              Entrenar inferencia <ArrowRight size={15} />
+              Train inference <ArrowRight size={15} />
             </Link>
             <Link href="/practica/ielts/reading/habilidades/parafrasis" className="btn btn-ghost btn-sm" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
-              Practicar paráfrasis <ArrowRight size={15} />
+              Practise paraphrase recognition <ArrowRight size={15} />
             </Link>
             <Link href="/practica/ielts/reading/habilidades/limite-de-palabras" className="btn btn-ghost btn-sm" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
-              Revisar límite de palabras <ArrowRight size={15} />
+              Control the word limit <ArrowRight size={15} />
             </Link>
             <Link href="/practica/ielts/reading/habilidades/gestion-del-tiempo" className="btn btn-ghost btn-sm" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
-              Gestionar tiempo <ArrowRight size={15} />
+              Manage your time <ArrowRight size={15} />
             </Link>
             <Link href="/practica/ielts/reading/tipos-de-preguntas" className="btn btn-ghost btn-sm">
-              Ver tipos de pregunta
+              Browse question types
             </Link>
             <Link href="/practica/ielts/reading" className="btn btn-ghost btn-sm">
-              Volver a IELTS Reading
+              Back to IELTS Reading
             </Link>
           </div>
         </div>

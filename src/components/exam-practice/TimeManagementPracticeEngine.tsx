@@ -33,23 +33,23 @@ export default function TimeManagementPracticeEngine({
     <section className="wl-card" style={{ padding: '1rem', borderRadius: 18, borderTop: `4px solid ${accent}` }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap', alignItems: 'start', marginBottom: '1rem' }}>
         <div>
-          <p className="eyebrow" style={{ margin: '0 0 0.35rem' }}>Práctica guiada</p>
-          <h2 style={{ margin: 0, fontSize: '1.35rem', letterSpacing: 0 }}>Banco de gestión del tiempo IELTS Reading</h2>
+          <p className="eyebrow" style={{ margin: '0 0 0.35rem' }}>Guided practice</p>
+          <h2 style={{ margin: 0, fontSize: '1.35rem', letterSpacing: 0 }}>IELTS Reading time-management practice bank</h2>
           <p style={{ margin: '0.35rem 0 0', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.9rem' }}>
-            Decide cuándo resolver, marcar o saltar. La meta es proteger puntos, no sentir que cada pregunta recibe el mismo tiempo.
+            Decide when to solve, mark or skip. The goal is to protect marks, not to give every question the same amount of time.
           </p>
         </div>
         <button className="btn btn-ghost btn-sm" type="button" onClick={reset} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
           <RotateCcw size={15} />
-          Reiniciar
+          Reset
         </button>
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 210px), 1fr))', gap: '0.75rem', marginBottom: '1rem' }}>
         {[
-          { label: 'Sets', value: String(practiceSets.length), sub: 'escenarios' },
-          { label: 'Decisiones', value: String(decisions.length), sub: 'resolver · marcar · saltar' },
-          { label: 'Regla', value: 'retorno', sub: 'evidencia antes de orgullo' },
+          { label: 'Sets', value: String(practiceSets.length), sub: 'scenarios' },
+          { label: 'Decisions', value: String(decisions.length), sub: 'solve · mark · skip' },
+          { label: 'Rule', value: 'return', sub: 'evidence before ego' },
         ].map((item) => (
           <article key={item.label} style={{ border: '1px solid var(--line-soft)', borderRadius: 12, padding: '0.75rem', background: 'var(--bg-2)' }}>
             <p style={{ margin: '0 0 0.25rem', color: accent, fontFamily: 'var(--mono)', fontSize: '0.74rem', textTransform: 'uppercase', fontWeight: 900 }}>{item.label}</p>
@@ -101,7 +101,7 @@ export default function TimeManagementPracticeEngine({
             <article key={decision.id} className="wl-card" style={{ padding: '1rem', borderRadius: 14, background: 'var(--bg)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '0.55rem' }}>
                 <span style={{ color: accent, fontFamily: 'var(--mono)', fontWeight: 900, fontSize: '0.72rem', textTransform: 'uppercase' }}>
-                  Set {setIndex + 1} · Decisión {index + 1}
+                  Set {setIndex + 1} · Decision {index + 1}
                 </span>
                 <span style={{ color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.72rem' }}>
                   {decision.questionType}
@@ -115,13 +115,13 @@ export default function TimeManagementPracticeEngine({
                     {decision.prompt}
                   </p>
                   <p style={{ margin: 0, color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.75rem' }}>
-                    Señal: {decision.signal}
+                    Signal: {decision.signal}
                   </p>
                 </div>
               </div>
 
               <h3 style={{ margin: '0 0 0.75rem', color: 'var(--ink)', fontSize: '1rem', lineHeight: 1.45 }}>
-                ¿Qué decisión protege mejor tu puntaje?
+                Which decision best protects your score?
               </h3>
 
               <div style={{ display: 'grid', gap: '0.5rem' }}>
@@ -193,12 +193,12 @@ export default function TimeManagementPracticeEngine({
                   >
                     {isCorrectSelection ? <CheckCircle2 size={18} /> : <XCircle size={18} />}
                     <span>
-                      <strong>{isCorrectSelection ? 'Correcto.' : `Mejor decisión: ${LETTERS[decision.answer]}.`}</strong>{' '}
+                      <strong>{isCorrectSelection ? 'Correct.' : `Better decision: ${LETTERS[decision.answer]}.`}</strong>{' '}
                       {decision.explanation}
                     </span>
                   </div>
                   <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.86rem' }}>
-                    <strong style={{ color: 'var(--ink)' }}>Trampa:</strong> {decision.trap}
+                    <strong style={{ color: 'var(--ink)' }}>Trap:</strong> {decision.trap}
                   </p>
                 </div>
               )}
@@ -212,10 +212,10 @@ export default function TimeManagementPracticeEngine({
       {answeredCount === decisions.length && (
         <div style={{ marginTop: '1rem', padding: '1rem', borderRadius: 14, background: `${accent}10`, border: `1px solid ${accent}30` }}>
           <h2 style={{ margin: '0 0 0.35rem', fontSize: '1.18rem' }}>
-            Resultado: {correctCount}/{decisions.length} decisiones eficientes
+            Result: {correctCount}/{decisions.length} efficient decisions
           </h2>
           <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.6 }}>
-            En IELTS Reading, el tiempo no se ahorra leyendo menos; se ahorra decidiendo mejor cuándo leer profundo, cuándo marcar y cuándo avanzar.
+            In IELTS Reading, time is not saved by reading less. It is saved by deciding when to read closely, when to mark and when to move on.
           </p>
         </div>
       )}

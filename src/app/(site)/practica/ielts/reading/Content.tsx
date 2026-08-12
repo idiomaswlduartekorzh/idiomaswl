@@ -1,162 +1,420 @@
-'use client';
-
-import { useState } from 'react';
 import Link from 'next/link';
+import {
+  ArrowRight,
+  BookOpenCheck,
+  BrainCircuit,
+  CheckCircle2,
+  Clock3,
+  Compass,
+  FileCheck2,
+  Layers3,
+  Map,
+  Route,
+  ScanSearch,
+  SearchCheck,
+  Target,
+  TextSearch,
+  Workflow,
+} from 'lucide-react';
+import {
+  IELTS_READING_SKILLS,
+  IELTS_READING_TYPES,
+} from '@/data/practica-exams/seo-catalog';
+import styles from './page.module.css';
 
-const C = '#0369a1';
+const QUESTION_TYPE_FAMILIES = [
+  {
+    label: 'Evidence and viewpoints',
+    detail: 'Decide what the passage states, contradicts, implies or leaves unresolved.',
+    icon: FileCheck2,
+    routes: [
+      ['True / False / Not Given', 'true-false-not-given'],
+      ['Yes / No / Not Given', 'yes-no-not-given'],
+      ['Multiple Choice', 'multiple-choice'],
+      ['Short-answer Questions', 'short-answer'],
+    ],
+  },
+  {
+    label: 'Matching and organisation',
+    detail: 'Connect paragraphs, people, features and sentence parts by meaning rather than repeated words.',
+    icon: Layers3,
+    routes: [
+      ['Matching Headings', 'matching-headings'],
+      ['Matching Information', 'matching-information'],
+      ['Matching Features', 'matching-features'],
+      ['Matching Sentence Endings', 'matching-sentence-endings'],
+    ],
+  },
+  {
+    label: 'Completion from the passage',
+    detail: 'Locate the exact answer span, preserve grammar and obey the stated word limit.',
+    icon: TextSearch,
+    routes: [
+      ['Sentence Completion', 'sentence-completion'],
+      ['Summary Completion', 'summary-completion'],
+      ['Note Completion', 'note-completion'],
+      ['Table Completion', 'table-completion'],
+      ['Flow-chart Completion', 'flow-chart-completion'],
+      ['Diagram Labeling', 'diagram-labeling'],
+    ],
+  },
+] as const;
 
-const PASSAGE = `The Amazon rainforest is located mainly in Brazil, though it also extends into several other South American countries. It covers approximately 5.5 million square kilometres, making it the world's largest tropical rainforest. Scientists estimate that the Amazon produces around 20% of the world's oxygen through photosynthesis, which is why it is often called "the lungs of the planet." The rainforest is also home to approximately 10% of all animal species on Earth.
+const READING_SKILLS = [
+  {
+    slug: 'skimming',
+    title: 'Skimming',
+    stage: 'Map',
+    detail: 'Capture the topic, purpose and paragraph roles before you hunt for individual answers.',
+    transfer: 'Best starting point for headings, summaries and unfamiliar passages.',
+    icon: Map,
+  },
+  {
+    slug: 'scanning',
+    title: 'Scanning',
+    stage: 'Locate',
+    detail: 'Search for names, numbers, terms and paraphrased anchors without rereading every line.',
+    transfer: 'Useful for information matching, completion and diagram tasks.',
+    icon: ScanSearch,
+  },
+  {
+    slug: 'parafrasis',
+    title: 'Paraphrase recognition',
+    stage: 'Compare',
+    detail: 'Recognise when the question and passage express the same idea with different language.',
+    transfer: 'Essential across every question family, especially matching and statement tasks.',
+    icon: Workflow,
+  },
+  {
+    slug: 'inferencia',
+    title: 'Inference',
+    stage: 'Interpret',
+    detail: 'Choose only conclusions that the evidence supports and control claims that go too far.',
+    transfer: 'Strengthens multiple choice and writer-view decisions.',
+    icon: BrainCircuit,
+  },
+  {
+    slug: 'limite-de-palabras',
+    title: 'Word-limit control',
+    stage: 'Answer',
+    detail: 'Copy the smallest grammatical answer that stays inside the exact instruction.',
+    transfer: 'Required for short answers and every completion format.',
+    icon: CheckCircle2,
+  },
+  {
+    slug: 'gestion-del-tiempo',
+    title: 'Time management',
+    stage: 'Transfer',
+    detail: 'Allocate the 60 minutes, recognise a stalled question and return with a deliberate plan.',
+    transfer: 'Turns isolated accuracy into controlled mixed practice.',
+    icon: Clock3,
+  },
+] as const;
 
-In recent decades, deforestation has significantly reduced the size of the Amazon. According to scientists, approximately 17% of the Amazon has been lost in the last 50 years due to logging, agriculture, and urban expansion. Conservation organizations around the world have called for urgent action to protect the remaining forest.`;
+const READING_SYSTEM = [
+  {
+    number: '01',
+    title: 'Map the passage',
+    detail: 'Skim the title, opening sentences and paragraph functions. You need a route, not every detail.',
+    example: 'Example: Paragraph A introduces a water-waste problem; Paragraph B reports an uneven result; Paragraph C changes the strategy.',
+    href: '/practica/ielts/reading/habilidades/skimming',
+    icon: Compass,
+  },
+  {
+    number: '02',
+    title: 'Locate the evidence',
+    detail: 'Scan for stable anchors, then widen the reading window until the complete idea is visible.',
+    example: 'Example: the number “18,000” is a fast anchor. Stop there, then read the full sentence before deciding what it proves.',
+    href: '/practica/ielts/reading/habilidades/scanning',
+    icon: SearchCheck,
+  },
+  {
+    number: '03',
+    title: 'Compare meaning',
+    detail: 'Test scope, paraphrase, contrast and inference. Repeated vocabulary is not enough.',
+    example: 'Example: “the library effect was smaller” contradicts “sales fell equally”, even though both sentences mention the same locations.',
+    href: '/practica/ielts/reading/habilidades/parafrasis',
+    icon: BrainCircuit,
+  },
+  {
+    number: '04',
+    title: 'Control the answer',
+    detail: 'Check grammar, word limits and the exact question instruction before committing.',
+    example: 'Example: “usage data” completes a 2-word gap naturally; “the usage data collected” would exceed the limit.',
+    href: '/practica/ielts/reading/habilidades/limite-de-palabras',
+    icon: Target,
+  },
+] as const;
 
-type Answer = 'TRUE' | 'FALSE' | 'NOT GIVEN';
+const STUDY_PLAN = [
+  {
+    label: 'Foundation',
+    title: 'Build the reading system',
+    detail: 'Complete Skimming, Scanning and Paraphrase Recognition before chasing speed.',
+  },
+  {
+    label: 'Accuracy',
+    title: 'Train one question family',
+    detail: 'Choose the family that causes the most errors and study its decision rules deliberately.',
+  },
+  {
+    label: 'Transfer',
+    title: 'Mix question types',
+    detail: 'Switch methods inside one passage and explain the evidence behind every decision.',
+  },
+  {
+    label: 'Control',
+    title: 'Add time pressure last',
+    detail: 'Measure pacing only after the method is stable enough to survive a new passage.',
+  },
+] as const;
 
-const STATEMENTS: { statement: string; answer: Answer; explanation: string }[] = [
-  { statement: 'The Amazon rainforest is located exclusively in Brazil.', answer: 'FALSE', explanation: '"Mainly in Brazil" but also extends into other South American countries — so "exclusively" is FALSE.' },
-  { statement: 'The Amazon covers more than 5 million square kilometres.', answer: 'TRUE', explanation: '"Approximately 5.5 million square kilometres" — this is more than 5 million, so TRUE.' },
-  { statement: 'The Amazon produces all of the world\'s oxygen.', answer: 'FALSE', explanation: '"Around 20% of the world\'s oxygen" — not ALL. So FALSE.' },
-  { statement: 'The Amazon rainforest is the largest tropical rainforest in the world.', answer: 'TRUE', explanation: '"The world\'s largest tropical rainforest" is stated directly — TRUE.' },
-  { statement: 'Scientists believe the Amazon is home to more than 10% of animal species.', answer: 'FALSE', explanation: 'The text says "approximately 10%" not "more than 10%" — FALSE.' },
-  { statement: 'Deforestation in the Amazon is caused only by logging.', answer: 'FALSE', explanation: '"Logging, agriculture, and urban expansion" — multiple causes, not only logging. FALSE.' },
-  { statement: 'The Amazon is sometimes called "the lungs of the planet".', answer: 'TRUE', explanation: 'Directly stated in the text — TRUE.' },
-  { statement: 'The Brazilian government has introduced new laws to protect the Amazon.', answer: 'NOT GIVEN', explanation: 'The text mentions conservation organizations calling for action, but says nothing about specific Brazilian government laws — NOT GIVEN.' },
-];
+function questionRoute(slug: string) {
+  const route = IELTS_READING_TYPES.find((item) => item.slug === slug && item.status === 'published');
+  if (!route) throw new Error(`Missing published IELTS Reading question route: ${slug}`);
+  return route.path;
+}
 
-const OPTIONS: Answer[] = ['TRUE', 'FALSE', 'NOT GIVEN'];
-const OPT_COLOR: Record<Answer, string> = { TRUE: '#059669', FALSE: '#dc2626', 'NOT GIVEN': '#d97706' };
+function skillRoute(slug: string) {
+  const route = IELTS_READING_SKILLS.find((item) => item.slug === slug && item.status === 'published');
+  if (!route) throw new Error(`Missing published IELTS Reading skill route: ${slug}`);
+  return route.path;
+}
 
-export default function IELTSReadingContent() {
-  const [answers, setAnswers] = useState<Record<number, Answer>>({});
-  const [revealed, setRevealed] = useState<Record<number, boolean>>({});
-  const [showResult, setShowResult] = useState(false);
-
-  const done = Object.keys(answers).length;
-  const correct = STATEMENTS.filter((s, i) => answers[i] === s.answer).length;
-
-  function pick(qi: number, val: Answer) {
-    if (answers[qi]) return;
-    setAnswers(p => ({ ...p, [qi]: val }));
-    setRevealed(p => ({ ...p, [qi]: true }));
-  }
-  function reset() { setAnswers({}); setRevealed({}); setShowResult(false); }
+export default function IELTSReadingHub() {
+  const publishedQuestionTypes = IELTS_READING_TYPES.filter((item) => item.status === 'published');
+  const publishedSkills = IELTS_READING_SKILLS.filter((item) => item.status === 'published');
 
   return (
-    <section className="wl-section">
-      <div className="wrap" style={{ maxWidth: 760 }}>
+    <div lang="en" className={styles.page}>
+      <div className={styles.shell}>
+        <nav className={styles.breadcrumb} aria-label="Breadcrumb">
+          <Link href="/practica">Practice</Link>
+          <span aria-hidden="true">/</span>
+          <Link href="/practica/ielts">IELTS</Link>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Reading</span>
+        </nav>
 
-        {/* Breadcrumb */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
-          <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
-          <span>/</span>
-          <Link href="/practica/ielts" style={{ color: 'var(--muted)', textDecoration: 'none' }}>IELTS</Link>
-          <span>/</span>
-          <span style={{ color: C, fontWeight: 800 }}>📖 Reading</span>
-        </div>
-
-        <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />📖 IELTS Academic — Reading</p>
-        <h1 style={{ fontSize: '1.9rem', letterSpacing: '-0.03em', margin: '0 0 0.5rem', fontWeight: 700 }}>True / False / Not Given</h1>
-        <p style={{ color: 'var(--muted)', fontSize: '0.95rem', margin: '0 0 0.75rem', lineHeight: 1.65 }}>
-          Lee el pasaje y decide si cada afirmación es <strong style={{ color: '#059669' }}>TRUE</strong>, <strong style={{ color: '#dc2626' }}>FALSE</strong> o <strong style={{ color: '#d97706' }}>NOT GIVEN</strong> según la información del texto.
-        </p>
-
-        {/* Strategy box */}
-        <div style={{ padding: '0.9rem 1.1rem', borderRadius: 12, background: `${C}08`, border: `1px solid ${C}22`, marginBottom: '1.75rem', fontSize: '0.85rem', lineHeight: 1.65, color: 'var(--muted)' }}>
-          <strong style={{ color: 'var(--ink)' }}>Estrategia:</strong>{' '}
-          TRUE = el texto lo afirma explícitamente ·
-          FALSE = el texto contradice la afirmación ·
-          NOT GIVEN = el texto no menciona el tema de la afirmación (nunca asumas).
-        </div>
-
-        {/* Passage */}
-        <div className="wl-card" style={{ padding: '1.5rem', borderLeft: `4px solid ${C}`, marginBottom: '1.5rem' }}>
-          <p style={{ fontSize: '0.7rem', fontWeight: 800, color: C, fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.6rem' }}>Reading Passage</p>
-          <div style={{ fontSize: '0.95rem', lineHeight: 1.85, color: 'var(--ink-2)', whiteSpace: 'pre-line' }}>{PASSAGE}</div>
-        </div>
-
-        {/* Progress bar */}
-        {done > 0 && !showResult && (
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
-            <div style={{ flex: 1, height: 6, background: 'var(--line-soft)', borderRadius: 4 }}>
-              <div style={{ height: '100%', width: `${(done / STATEMENTS.length) * 100}%`, background: C, borderRadius: 4, transition: 'width 0.4s' }} />
+        <header className={styles.hero}>
+          <div className={styles.heroCopy}>
+            <p className={styles.eyebrow}>IELTS Academic Reading</p>
+            <h1>Read with a map. Answer with evidence.</h1>
+            <p className={styles.heroLead}>
+              Build the complete Reading system: understand every question family, train the subskills that make it work, and then transfer both into mixed practice.
+            </p>
+            <div className={styles.heroActions}>
+              <a href="#choose-your-route" className={styles.primaryAction}>
+                Choose your route <ArrowRight size={17} aria-hidden="true" />
+              </a>
+              <Link href="/practica/ielts/reading/habilidades" className={styles.secondaryAction}>
+                Start with reading skills
+              </Link>
             </div>
-            <span style={{ fontSize: '0.78rem', fontFamily: 'var(--mono)', color: 'var(--muted)' }}>{done}/{STATEMENTS.length}</span>
           </div>
-        )}
 
-        {/* Questions */}
-        {!showResult && (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            {STATEMENTS.map((s, qi) => {
-              const ans = answers[qi];
-              const isDone = !!ans;
-              return (
-                <div key={qi} className="wl-card" style={{ padding: '1.25rem' }}>
-                  <div style={{ fontSize: '0.68rem', fontWeight: 800, color: C, fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.5rem' }}>
-                    Statement {qi + 1}
-                  </div>
-                  <p style={{ margin: '0 0 0.85rem', fontWeight: 600, color: 'var(--ink)', fontSize: '0.97rem', lineHeight: 1.6 }}>
-                    &ldquo;{s.statement}&rdquo;
-                  </p>
-                  <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                    {OPTIONS.map(opt => {
-                      const isCorrect = opt === s.answer;
-                      const isSelected = ans === opt;
-                      let bg = 'var(--bg-2)', border = '1px solid var(--line-soft)', color = 'var(--ink)';
-                      if (isDone && isCorrect) { bg = `${OPT_COLOR[opt]}18`; border = `1px solid ${OPT_COLOR[opt]}`; color = OPT_COLOR[opt]; }
-                      if (isDone && isSelected && !isCorrect) { bg = 'rgba(220,38,38,0.1)'; border = '1px solid #dc2626'; color = '#dc2626'; }
-                      return (
-                        <button key={opt} onClick={() => pick(qi, opt)} disabled={isDone}
-                          style={{ padding: '0.5rem 1rem', borderRadius: 8, fontSize: '0.85rem', fontWeight: 800, border, background: bg, color, cursor: isDone ? 'default' : 'pointer', fontFamily: 'var(--mono)', letterSpacing: '0.04em', transition: 'all 0.15s' }}>
-                          {opt}
-                        </button>
-                      );
-                    })}
-                  </div>
-                  {revealed[qi] && (
-                    <div style={{ marginTop: '0.65rem', fontSize: '0.82rem', color: 'var(--ink-2)', padding: '0.5rem 0.75rem', borderRadius: 8, background: ans === s.answer ? 'rgba(5,150,105,0.07)' : 'rgba(220,38,38,0.07)', lineHeight: 1.6 }}>
-                      {ans === s.answer ? '✅ ' : `✗ La respuesta es ${s.answer}. `}{s.explanation}
-                    </div>
-                  )}
+          <aside className={styles.heroMap} aria-label="The WeLearn Reading method">
+            <p className={styles.mapLabel}>The Reading loop</p>
+            {['Map the passage', 'Locate evidence', 'Compare meaning', 'Control the answer'].map((step, index) => (
+              <div key={step} className={styles.mapStep}>
+                <span>{String(index + 1).padStart(2, '0')}</span>
+                <strong>{step}</strong>
+              </div>
+            ))}
+          </aside>
+        </header>
+
+        <div className={styles.factGrid} aria-label="IELTS Academic Reading at a glance">
+          <div className={styles.fact}><strong>3</strong><span>long Academic Reading passages</span></div>
+          <div className={styles.fact}><strong>40</strong><span>questions across the complete test</span></div>
+          <div className={styles.fact}><strong>60 min</strong><span>to read, decide and record answers</span></div>
+          <div className={styles.fact}><strong>{publishedQuestionTypes.length} + {publishedSkills.length}</strong><span>question routes and skill lessons in this hub</span></div>
+        </div>
+
+        <section id="choose-your-route" className={styles.section} aria-labelledby="route-heading">
+          <div className={styles.sectionHeading}>
+            <p className={styles.kicker}>One test · three ways to improve</p>
+            <h2 id="route-heading">Choose the route that matches your current problem</h2>
+            <p>
+              Question types tell you what decision the test requires. Reading skills tell you how to reach that decision. Mixed practice checks whether you can switch between both under one passage.
+            </p>
+          </div>
+          <div className={styles.pathGrid}>
+            <article className={styles.pathCard}>
+              <Route aria-hidden="true" />
+              <span>Path A</span>
+              <h3>Question types</h3>
+              <p>Learn the decision rule, evidence pattern and common trap for every Reading format.</p>
+              <a href="#question-types">Explore all question types <ArrowRight size={16} aria-hidden="true" /></a>
+            </article>
+            <article className={styles.pathCard}>
+              <BookOpenCheck aria-hidden="true" />
+              <span>Path B</span>
+              <h3>Reading skills</h3>
+              <p>Train skimming, scanning, paraphrase, inference, word limits and time management.</p>
+              <a href="#reading-skills">Build the subskills <ArrowRight size={16} aria-hidden="true" /></a>
+            </article>
+            <article className={styles.pathCard}>
+              <Workflow aria-hidden="true" />
+              <span>Path C</span>
+              <h3>Mixed practice</h3>
+              <p>Apply several methods inside one passage and justify each answer from the text.</p>
+              <Link href="/practica/ielts/reading/mixed-practice">Enter the practice room <ArrowRight size={16} aria-hidden="true" /></Link>
+            </article>
+          </div>
+        </section>
+
+        <section className={styles.section} aria-labelledby="system-heading">
+          <div className={styles.sectionHeading}>
+            <p className={styles.kicker}>The WeLearn Reading system</p>
+            <h2 id="system-heading">A repeatable process for unfamiliar passages</h2>
+            <p>The question type changes, but the reading process remains stable. Use these four steps before adding time pressure.</p>
+          </div>
+          <div className={styles.systemGrid}>
+            {READING_SYSTEM.map(({ number, title, detail, example, href, icon: Icon }) => (
+              <Link key={number} href={href} className={styles.systemCard}>
+                <span className={styles.systemNumber}>{number}</span>
+                <Icon size={23} aria-hidden="true" />
+                <h3>{title}</h3>
+                <p>{detail}</p>
+                <div className={styles.systemExample}>
+                  <small>See it in action</small>
+                  <p>{example}</p>
                 </div>
-              );
-            })}
+                <strong>Open the guided lesson <ArrowRight size={15} aria-hidden="true" /></strong>
+              </Link>
+            ))}
           </div>
-        )}
+        </section>
 
-        {done === STATEMENTS.length && !showResult && (
-          <button className="btn btn-sm" style={{ marginTop: '1rem' }} onClick={() => setShowResult(true)}>Ver resultado →</button>
-        )}
-
-        {showResult && (
-          <div className="wl-card" style={{ padding: '1.75rem', textAlign: 'center' }}>
-            <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>{correct >= 6 ? '🎉' : correct >= 4 ? '⭐' : '📚'}</div>
-            <h2 style={{ margin: '0 0 0.5rem', color: 'var(--ink)' }}>{correct} / {STATEMENTS.length} correctas</h2>
-            <p style={{ color: 'var(--muted)', fontSize: '0.9rem', margin: '0 0 0.5rem' }}>
-              {correct >= 6 ? '¡Excelente comprensión lectora!' : correct >= 4 ? 'Buen intento. Revisa los errores.' : 'Vuelve a leer el texto con cuidado.'}
+        <section id="question-types" className={styles.section} aria-labelledby="types-heading">
+          <div className={styles.sectionHeading}>
+            <p className={styles.kicker}>Path A · Question types</p>
+            <h2 id="types-heading">Fourteen focused routes, organised by the decision you make</h2>
+            <p>
+              IELTS groups some completion formats together. We separate them into focused practice routes so you can master the exact layout, grammar and answer behaviour of each one.
             </p>
-            <p style={{ color: 'var(--muted)', fontSize: '0.83rem', fontStyle: 'italic', maxWidth: 460, margin: '0 auto 1.25rem' }}>
-              En IELTS, True/False/Not Given es una de las secciones más difíciles. La clave: no asumas — solo marca lo que el texto dice explícitamente.
+          </div>
+          <div className={styles.typeFamilyGrid}>
+            {QUESTION_TYPE_FAMILIES.map(({ label, detail, icon: Icon, routes }) => (
+              <article key={label} className={styles.typeFamily}>
+                <div className={styles.typeFamilyHeader}>
+                  <Icon size={24} aria-hidden="true" />
+                  <div><h3>{label}</h3><p>{detail}</p></div>
+                </div>
+                <div className={styles.typeLinks}>
+                  {routes.map(([title, slug], index) => (
+                    <a key={slug} href={questionRoute(slug)} className={styles.typeLink}>
+                      <span>{String(index + 1).padStart(2, '0')}</span>
+                      <strong>{title}</strong>
+                      <ArrowRight size={15} aria-hidden="true" />
+                    </a>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
+          <Link href="/practica/ielts/reading/tipos-de-preguntas" className={styles.inlineCta}>
+            Open the complete question-type guide <ArrowRight size={16} aria-hidden="true" />
+          </Link>
+        </section>
+
+        <section id="reading-skills" className={styles.section} aria-labelledby="skills-heading">
+          <div className={styles.sectionHeading}>
+            <p className={styles.kicker}>Path B · Reading skills</p>
+            <h2 id="skills-heading">The subskills behind accurate answers</h2>
+            <p>These are not official IELTS question types. They are transferable reading tools that make the official tasks easier to navigate and verify.</p>
+          </div>
+          <div className={styles.skillGrid}>
+            {READING_SKILLS.map(({ slug, title, stage, detail, transfer, icon: Icon }, index) => (
+              <Link key={slug} href={skillRoute(slug)} className={styles.skillCard}>
+                <div className={styles.skillTopline}>
+                  <span>{String(index + 1).padStart(2, '0')}</span>
+                  <small>{stage}</small>
+                </div>
+                <Icon size={24} aria-hidden="true" />
+                <h3>{title}</h3>
+                <p>{detail}</p>
+                <strong>{transfer}</strong>
+                <em>Open skill lesson <ArrowRight size={15} aria-hidden="true" /></em>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className={styles.section} aria-labelledby="plan-heading">
+          <div className={styles.sectionHeading}>
+            <p className={styles.kicker}>Recommended progression</p>
+            <h2 id="plan-heading">Accuracy first. Speed after the method is stable.</h2>
+          </div>
+          <ol className={styles.planGrid}>
+            {STUDY_PLAN.map((step, index) => (
+              <li key={step.label}>
+                <span>{String(index + 1).padStart(2, '0')}</span>
+                <small>{step.label}</small>
+                <h3>{step.title}</h3>
+                <p>{step.detail}</p>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        <section className={styles.section} aria-labelledby="transfer-heading">
+          <div className={styles.transferBand}>
+            <div>
+              <p className={styles.kicker}>Path C · Transfer</p>
+              <h2 id="transfer-heading">Combine the methods in a dedicated practice room</h2>
+              <p>
+                Mixed practice is most useful after focused study. The practice room keeps the long passages, answer controls and feedback away from this orientation hub, so you can concentrate on one task at a time.
+              </p>
+            </div>
+            <ol className={styles.transferSteps}>
+              <li><span>1</span><p><strong>Identify the format.</strong> Decide whether the task asks for evidence, matching or completion.</p></li>
+              <li><span>2</span><p><strong>Select the method.</strong> Choose the relevant reading skill before answering.</p></li>
+              <li><span>3</span><p><strong>Justify the answer.</strong> Quote the passage evidence and name the rejected trap.</p></li>
+            </ol>
+            <Link href="/practica/ielts/reading/mixed-practice" className={styles.transferAction}>
+              Open Mixed Practice <ArrowRight size={16} aria-hidden="true" />
+            </Link>
+          </div>
+        </section>
+
+        <section className={styles.section} aria-labelledby="official-heading">
+          <div className={styles.officialNote}>
+            <div>
+              <p className={styles.kicker}>Official format and independent preparation</p>
+              <h2 id="official-heading">Use official rules. Practise with an independent learning system.</h2>
+            </div>
+            <p>
+              IELTS Academic Reading contains three long texts and 40 questions completed in 60 minutes. WeLearn organises the official formats into focused routes and adds transferable skill lessons. WeLearn is an independent preparation resource and is not affiliated with or endorsed by the IELTS Partners.
             </p>
-            <div style={{ display: 'flex', gap: '0.65rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <button className="btn btn-sm" onClick={reset}>Intentar de nuevo</button>
-              <Link href="/practica/ielts" className="btn btn-ghost btn-sm">← Volver a IELTS</Link>
-            </div>
+            <a href="https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading">
+              Review the official Academic Reading format <ArrowRight size={16} aria-hidden="true" />
+            </a>
           </div>
-        )}
+        </section>
 
-        {/* Coming soon */}
-        {!showResult && (
-          <div style={{ marginTop: '2.5rem', padding: '1rem 1.25rem', borderRadius: 14, background: 'var(--bg-2)', border: '1px solid var(--line-soft)' }}>
-            <p style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.08em', margin: '0 0 0.6rem' }}>Próximamente en Reading</p>
-            <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-              {['Matching Headings', 'Multiple Choice', 'Summary Completion', 'Sentence Completion'].map(t => (
-                <span key={t} style={{ fontSize: '0.75rem', padding: '0.2rem 0.65rem', borderRadius: 20, background: `${C}08`, color: C, border: `1px solid ${C}22`, fontFamily: 'var(--mono)', fontWeight: 600 }}>{t}</span>
-              ))}
-            </div>
+        <section className={styles.section} aria-labelledby="faq-heading" lang="es">
+          <div className={styles.sectionHeading}>
+            <p className={styles.kicker}>Preguntas frecuentes</p>
+            <h2 id="faq-heading">Cómo usar el hub de Reading</h2>
           </div>
-        )}
+          <div className={styles.faqGrid}>
+            <article><h3>¿Por dónde debería empezar?</h3><p>Empieza con Skimming y Scanning si pierdes tu ubicación dentro del pasaje. Empieza con un tipo de pregunta específico si encuentras la evidencia, pero todavía eliges la respuesta incorrecta.</p></article>
+            <article><h3>¿Skimming y scanning son tipos oficiales de pregunta?</h3><p>No. Son habilidades de lectura transferibles. El hub las separa de los formatos oficiales y muestra en qué tipos de pregunta se aplican.</p></article>
+            <article><h3>¿Debo practicar con cronómetro desde el principio?</h3><p>No. Primero construye un proceso preciso y explicable. Añade presión de tiempo cuando puedas localizar y comprobar evidencia de forma consistente.</p></article>
+            <article><h3>¿Cuándo debo entrar a Mixed Practice?</h3><p>Después de practicar una habilidad y un tipo de pregunta por separado. Allí tendrás que cambiar de método dentro del mismo pasaje y justificar cada respuesta.</p></article>
+          </div>
+        </section>
 
+        <section className={styles.finalCta} aria-labelledby="next-heading">
+          <div><p className={styles.kicker}>Your next session</p><h2 id="next-heading">Build the map before you race the clock.</h2></div>
+          <div className={styles.finalActions}>
+            <Link href="/practica/ielts/reading/habilidades/skimming">Start with Skimming <ArrowRight size={16} aria-hidden="true" /></Link>
+            <Link href="/practica/ielts/reading/tipos-de-preguntas">Browse question types</Link>
+          </div>
+        </section>
       </div>
-    </section>
+    </div>
   );
 }

@@ -26,7 +26,7 @@ export default function ScanningPracticeEngine({
     <section className="wl-card" style={{ padding: '1rem', borderRadius: 18, borderTop: `4px solid ${accent}` }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap', alignItems: 'start', marginBottom: '1rem' }}>
         <div>
-          <p className="eyebrow" style={{ margin: '0 0 0.35rem' }}>Práctica guiada</p>
+          <p className="eyebrow" style={{ margin: '0 0 0.35rem' }}>Guided practice</p>
           <h2 style={{ margin: 0, fontSize: '1.35rem', letterSpacing: '-0.02em' }}>{practice.title}</h2>
           <p style={{ margin: '0.35rem 0 0', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.9rem' }}>
             {practice.instructions}
@@ -34,15 +34,15 @@ export default function ScanningPracticeEngine({
         </div>
         <button className="btn btn-ghost btn-sm" type="button" onClick={reset} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
           <RotateCcw size={15} />
-          Reiniciar
+          Reset
         </button>
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '0.75rem', marginBottom: '1rem' }}>
         {[
-          { label: 'Meta', value: practice.timeTarget },
-          { label: 'Acción', value: 'localizar evidencia' },
-          { label: 'Regla', value: 'lee una oración alrededor' },
+          { label: 'Target', value: practice.timeTarget },
+          { label: 'Action', value: 'locate evidence' },
+          { label: 'Rule', value: 'read one sentence around it' },
         ].map((item) => (
           <div key={item.label} style={{ border: '1px solid var(--line-soft)', borderRadius: 12, padding: '0.75rem', background: 'var(--bg-2)' }}>
             <p style={{ margin: '0 0 0.25rem', color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.68rem', textTransform: 'uppercase', fontWeight: 900 }}>{item.label}</p>
@@ -98,7 +98,7 @@ export default function ScanningPracticeEngine({
                 style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}
               >
                 <LocateFixed size={15} />
-                {isRevealed ? 'Evidencia revelada' : 'Revelar evidencia'}
+                {isRevealed ? 'Evidence revealed' : 'Reveal evidence'}
               </button>
 
               {isRevealed && (
@@ -106,14 +106,14 @@ export default function ScanningPracticeEngine({
                   <div style={{ display: 'grid', gridTemplateColumns: '24px 1fr', gap: '0.55rem', alignItems: 'start', color: '#047857', background: 'rgba(5,150,105,0.08)', borderRadius: 12, padding: '0.7rem', fontSize: '0.88rem', lineHeight: 1.55 }}>
                     <CheckCircle2 size={18} />
                     <span>
-                      <strong>Respuesta: {target.answer}.</strong> Evidencia: “{target.evidence}”.
+                      <strong>Answer: {target.answer}.</strong> Evidence: “{target.evidence}”.
                     </span>
                   </div>
                   <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.88rem' }}>
                     {target.explanation}
                   </p>
                   <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.86rem' }}>
-                    <strong style={{ color: 'var(--ink)' }}>Trampa:</strong> {target.trap}
+                    <strong style={{ color: 'var(--ink)' }}>Trap:</strong> {target.trap}
                   </p>
                 </div>
               )}
@@ -124,9 +124,9 @@ export default function ScanningPracticeEngine({
 
       {revealedCount === practice.targets.length && (
         <div style={{ marginTop: '1rem', padding: '1rem', borderRadius: 14, background: `${accent}10`, border: `1px solid ${accent}30` }}>
-          <h2 style={{ margin: '0 0 0.35rem', fontSize: '1.18rem' }}>Rutina completa</h2>
+          <h2 style={{ margin: '0 0 0.35rem', fontSize: '1.18rem' }}>Routine complete</h2>
           <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.6 }}>
-            Ahora repite el pasaje sin revelar respuestas: mira el target, localiza la señal, lee una oración alrededor y confirma que tu respuesta respeta la pregunta exacta.
+            Repeat the passage without revealing answers: read the target, locate the signal, inspect one sentence around it and confirm that your answer matches the exact question.
           </p>
         </div>
       )}
