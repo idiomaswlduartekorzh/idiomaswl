@@ -577,6 +577,304 @@ for (const file of tsxRecursivo(task2)) {
   }
 }
 
+/**
+ * PARÁFRASIS — las cinco técnicas y su motor.
+ *
+ * Se añade con la unidad, no después, porque la unidad se construyó para no repetir los seis
+ * defectos que la auditoría de agosto de 2026 encontró en las ocho unidades de Task 1, y sin
+ * guardián nada impide que vuelvan:
+ *
+ *  1. La lección imprimía la respuesta y el motor preguntaba por ella (entre el 8 % y el 91 %
+ *     de las respuestas, según la unidad).
+ *  2. La correcta se reconocía por ser la más larga.
+ *  3. Un solo mensaje de error para las cuatro opciones.
+ *  4. El reparto de la correcta lo hacía una rotación, que conserva el orden relativo.
+ *
+ * Las cuatro se miden aquí. Ninguna se puede estimar a ojo: la primera exige comparar cada
+ * respuesta contra todo el texto de las lecciones, y la segunda contar palabras en 32 bancos.
+ */
+const PARA_FUGA = 0.7
+const paraphrasing = loadModule(path.join(task2, 'paraphrasing', 'paraphrasing-data.ts'), () => ({}))
+const paraEngine = loadModule(path.join(task2, 'paraphrasing', 'paraphrasing-engine-data.ts'), () => ({}))
+
+const techniques = paraphrasing.PARAPHRASE_TECHNIQUES ?? []
+const engineDrills = paraEngine.ENGINE_DRILLS ?? []
+
+if (techniques.length !== 5) {
+  failures.push(`Paráfrasis: hay ${techniques.length} técnicas; el material de clase define 5.`)
+}
+if (engineDrills.length !== 12) {
+  failures.push(`Paráfrasis: el motor tiene ${engineDrills.length} ejercicios; se esperaban 12 (4 por nivel).`)
+}
+
+/** Todo lo que la lección IMPRIME. Es contra esto contra lo que no puede preguntar el motor. */
+const textoLecciones = techniques.flatMap((technique) => [
+  technique.howItWorks?.original, technique.howItWorks?.rewritten, technique.howItWorks?.plain,
+  ...(technique.meaningCheck?.options ?? []).map((option) => option.text),
+  ...(technique.examples ?? []).flatMap((example) => [example.original, example.rewritten]),
+  ...(technique.mistakes ?? []).flatMap((mistake) => [mistake.wrong, mistake.right]),
+  ...(technique.drills ?? []).flatMap((drill) => [drill.original, ...drill.options.map((option) => option.text)]),
+].filter(Boolean)).join(' \n ')
+
+const enLaLeccion = new Set(words(textoLecciones))
+
+/**
+ * Por SOLAPAMIENTO de palabras con carga, no por subcadena.
+ *
+ * En `procesos` la primera versión de esta comprobación usaba `includes` y la prueba de
+ * mordida la tumbó: «The flakes are heated and turned into pellets» no es subcadena de «The
+ * flakes are then heated and turned into plastic pellets», y es la misma frase.
+ */
+const solape = (texto, vocabulario) => {
+  const suyas = new Set(words(texto ?? ''))
+  if (suyas.size < 4) return 0
+  return [...suyas].filter((word) => vocabulario.has(word)).length / suyas.size
+}
+
+for (const drill of engineDrills) {
+  for (const campo of ['original', 'rewrite']) {
+    const dentro = solape(drill[campo], enLaLeccion)
+    if (dentro >= PARA_FUGA) {
+      failures.push(
+        `Paráfrasis motor (nivel ${drill.level}): el ${Math.round(dentro * 100)} % de «${String(drill[campo]).slice(0, 50)}…» ya está en las lecciones. El motor tiene que practicar sobre frases nuevas.`,
+      )
+    }
+  }
+}
+
+/** Y dentro de cada técnica: sus ejercicios no pueden preguntar por sus propios ejemplos. */
+for (const technique of techniques) {
+  const suyo = new Set(words([
+    technique.howItWorks?.original, technique.howItWorks?.rewritten,
+    ...(technique.examples ?? []).flatMap((example) => [example.original, example.rewritten]),
+  ].filter(Boolean).join(' \n ')))
+
+  for (const drill of technique.drills ?? []) {
+    const dentro = solape(drill.original, suyo)
+    if (dentro >= PARA_FUGA) {
+      failures.push(
+        `Paráfrasis/${technique.slug}: el ejercicio «${String(drill.original).slice(0, 45)}…» repite un ejemplo resuelto de su propia lección (${Math.round(dentro * 100)} %).`,
+      )
+    }
+  }
+}
+
+/**
+ * Los bancos de opción: silueta, motivos y estructura.
+ *
+ * Se recorren los 32 bancos —20 de las técnicas y 12 del motor— con el mismo criterio que el
+ * resto del curso: `DESTAQUE` palabras de diferencia delatan la correcta a simple vista, y la
+ * correcta no puede ser la más larga en más de la mitad de las preguntas de un banco.
+ */
+const bancos = [
+  ...techniques.flatMap((technique) => (technique.drills ?? []).map((drill) => [`${technique.slug}`, drill])),
+  ...engineDrills.map((drill) => [`motor nivel ${drill.level}`, drill]),
+]
+
+const masLarga = new Map()
+for (const [etiqueta, drill] of bancos) {
+  const largos = drill.options.map((option) => option.text.trim().split(/\s+/u).length)
+  const correcta = largos[drill.correct]
+  const mejorDistractor = Math.max(...largos.filter((_, index) => index !== drill.correct))
+
+  if (correcta - mejorDistractor >= DESTAQUE) {
+    failures.push(
+      `Paráfrasis/${etiqueta}: la correcta saca ${correcta - mejorDistractor} palabras al mejor distractor en «${String(drill.original).slice(0, 40)}…». Se acierta por silueta. Alarga distractores; no acortes la correcta.`,
+    )
+  }
+  /**
+   * ESTRICTAMENTE más larga, no empatada.
+   *
+   * La primera versión contaba `correcta === Math.max(...)`, y eso marca como defectuoso un
+   * banco cuyas cuatro opciones miden lo mismo. Cuatro opciones de doce palabras no delatan
+   * nada: la silueta solo funciona cuando UNA sobresale. Medido sobre estos 32 bancos, la
+   * versión anterior acusaba a nueve ejercicios de los que siete estaban empatados.
+   */
+  if (correcta > mejorDistractor) masLarga.set(etiqueta, (masLarga.get(etiqueta) ?? 0) + 1)
+
+  // Un mensaje por opción. Con uno solo para las cuatro, quien falla no aprende por qué.
+  const motivos = drill.options.map((option) => option.why?.trim())
+  if (motivos.some((why) => !why)) failures.push(`Paráfrasis/${etiqueta}: hay opciones sin motivo propio.`)
+  if (new Set(motivos).size !== motivos.length) failures.push(`Paráfrasis/${etiqueta}: dos opciones comparten el mismo motivo.`)
+  if (drill.options.length !== 4) failures.push(`Paráfrasis/${etiqueta}: ${drill.options.length} opciones; se esperaban 4.`)
+}
+
+const totalPorBanco = new Map()
+for (const [etiqueta] of bancos) totalPorBanco.set(etiqueta, (totalPorBanco.get(etiqueta) ?? 0) + 1)
+for (const [etiqueta, veces] of masLarga) {
+  const total = totalPorBanco.get(etiqueta) ?? 0
+  if (veces * 2 > total) {
+    failures.push(
+      `Paráfrasis/${etiqueta}: la correcta es la más larga en ${veces} de ${total}. Por encima de la mitad se acierta sin leer.`,
+    )
+  }
+}
+
+/** El ejercicio de reconocimiento: tres opciones y exactamente una que conserva el significado. */
+for (const technique of techniques) {
+  const opciones = technique.meaningCheck?.options ?? []
+  const conservan = opciones.filter((option) => option.keeps).length
+  if (opciones.length !== 3) failures.push(`Paráfrasis/${technique.slug}: el reconocimiento tiene ${opciones.length} opciones; se esperaban 3.`)
+  if (conservan !== 1) failures.push(`Paráfrasis/${technique.slug}: ${conservan} opciones conservan el significado; tiene que haber exactamente una.`)
+  if (!(technique.moves ?? []).some((move) => move.risk === 'trap')) {
+    failures.push(`Paráfrasis/${technique.slug}: ningún movimiento marcado como «trap». Cada técnica tiene un sitio donde se rompe el significado.`)
+  }
+}
+
+/**
+ * El reparto de la correcta lo hace `placeOption`, no una rotación.
+ *
+ * Se busca la LLAMADA con su primer argumento, no el nombre suelto: la primera versión de
+ * esta comprobación en Task 1 se quedaba satisfecha con un `import placeOption` que había
+ * sobrevivido al renombrado de la llamada.
+ */
+for (const [fichero, llamada] of [
+  ['paraphrasing/ParaphrasingTechniqueClient.tsx', 'placeOption(drill.options'],
+  ['paraphrasing/ParaphrasingEngine.tsx', 'placeOption(current.options'],
+]) {
+  const source = fs.readFileSync(path.join(task2, fichero), 'utf8')
+  if (!source.includes(llamada)) {
+    failures.push(`${fichero}: no reparte la correcta con \`${llamada}…\`. Una rotación conserva el orden relativo de los distractores.`)
+  }
+}
+
+/**
+ * VOCABULARIO ACADÉMICO — las ocho funciones y su motor.
+ *
+ * Mismas seis reglas que la paráfrasis, por el mismo motivo: la unidad se construyó para no
+ * repetir los defectos de las ocho unidades de Task 1, y sin guardián nada lo impide. Se
+ * añaden dos propias de esta unidad:
+ *
+ *  · Cada palabra lleva su PATRÓN. Una lista de palabras sin la construcción que exigen es
+ *    exactamente lo que produce «detrimental for» y «subsidise to».
+ *  · Cada función lleva su comparador VAGO → PRECISO con lo que gana, y ese `earns` no puede
+ *    contener un número de banda: ninguna página del curso le promete una nota a nadie.
+ */
+const vocabulary = loadModule(path.join(task2, 'academic-vocabulary', 'vocabulary-data.ts'), () => ({}))
+const vocabEngine = loadModule(path.join(task2, 'academic-vocabulary', 'vocabulary-engine-data.ts'), () => ({}))
+
+const funciones = vocabulary.VOCAB_FUNCTIONS ?? []
+const vocabDrills = vocabEngine.ENGINE_DRILLS ?? []
+
+if (funciones.length !== 8) failures.push(`Vocabulario: hay ${funciones.length} funciones; se esperaban 8.`)
+if (vocabDrills.length !== 12) failures.push(`Vocabulario: el motor tiene ${vocabDrills.length} ejercicios; se esperaban 12.`)
+
+/** Conectar NO puede estar aquí: lo cubren las siete familias de `linking-language`. */
+if (funciones.some((f) => /linking|connect|cohesion/i.test(f.slug))) {
+  failures.push('Vocabulario: una función duplica lo que ya enseña `linking-language`. Los conectores tienen sus siete familias.')
+}
+
+const textoVocab = funciones.flatMap((f) => [
+  f.upgrade?.vague, f.upgrade?.precise, f.upgrade?.why,
+  ...(f.check?.options ?? []).map((o) => o.text),
+  ...(f.examples ?? []).map((e) => e.sentence),
+  ...(f.mistakes ?? []).flatMap((m) => [m.wrong, m.right]),
+  ...(f.drills ?? []).flatMap((d) => [d.stem, ...d.options.map((o) => o.text)]),
+].filter(Boolean)).join(' \n ')
+
+const enLasFunciones = new Set(words(textoVocab))
+
+for (const drill of vocabDrills) {
+  const dentro = solape(drill.sentence, enLasFunciones)
+  if (dentro >= PARA_FUGA) {
+    failures.push(
+      `Vocabulario motor (nivel ${drill.level}): el ${Math.round(dentro * 100)} % de «${String(drill.sentence).slice(0, 50)}…» ya está en las lecciones.`,
+    )
+  }
+}
+
+const bancosVocab = [
+  ...funciones.flatMap((f) => (f.drills ?? []).map((d) => [f.slug, { ...d, original: d.stem }])),
+  ...vocabDrills.map((d) => [`motor nivel ${d.level}`, { ...d, original: d.sentence }]),
+]
+
+const masLargaVocab = new Map()
+const totalVocab = new Map()
+for (const [etiqueta, drill] of bancosVocab) {
+  totalVocab.set(etiqueta, (totalVocab.get(etiqueta) ?? 0) + 1)
+  const largos = drill.options.map((o) => o.text.trim().split(/\s+/u).length)
+  const correcta = largos[drill.correct]
+  const mejorDistractor = Math.max(...largos.filter((_, i) => i !== drill.correct))
+
+  if (correcta - mejorDistractor >= DESTAQUE) {
+    failures.push(
+      `Vocabulario/${etiqueta}: la correcta saca ${correcta - mejorDistractor} palabras al mejor distractor en «${String(drill.original).slice(0, 40)}…». Alarga distractores; no acortes la correcta.`,
+    )
+  }
+  if (correcta > mejorDistractor) masLargaVocab.set(etiqueta, (masLargaVocab.get(etiqueta) ?? 0) + 1)
+
+  const motivos = drill.options.map((o) => o.why?.trim())
+  if (motivos.some((why) => !why)) failures.push(`Vocabulario/${etiqueta}: hay opciones sin motivo propio.`)
+  if (new Set(motivos).size !== motivos.length) failures.push(`Vocabulario/${etiqueta}: dos opciones comparten el mismo motivo.`)
+  if (drill.options.length !== 4) failures.push(`Vocabulario/${etiqueta}: ${drill.options.length} opciones; se esperaban 4.`)
+}
+for (const [etiqueta, veces] of masLargaVocab) {
+  const total = totalVocab.get(etiqueta) ?? 0
+  if (veces * 2 > total) {
+    failures.push(`Vocabulario/${etiqueta}: la correcta es la más larga en ${veces} de ${total}. Por encima de la mitad se acierta sin leer.`)
+  }
+}
+
+/**
+ * Motivos repetidos ENTRE bancos, no solo dentro de cada uno.
+ *
+ * La comprobación por banco se le escapó un caso real: un motivo del banco de `quantifying`
+ * copiado al motor. Un mensaje idéntico en dos ejercicios distintos siempre significa lo
+ * mismo —que se copió y pegó sin adaptarlo— y quien lo lee por segunda vez no aprende nada
+ * nuevo de su fallo. El primero en cazarlo fue el test e2e, que sí medía en global; esta
+ * comprobación existe para que el fallo se vea antes, en el build.
+ */
+for (const [nombre, bancoCompleto] of [['Paráfrasis', bancos], ['Vocabulario', bancosVocab]]) {
+  const donde = new Map()
+  for (const [etiqueta, drill] of bancoCompleto) {
+    for (const option of drill.options) {
+      const why = option.why?.trim()
+      if (!why) continue
+      if (donde.has(why)) {
+        failures.push(`${nombre}: el mismo motivo en «${donde.get(why)}» y «${etiqueta}» — «${why.slice(0, 60)}…».`)
+      } else {
+        donde.set(why, etiqueta)
+      }
+    }
+  }
+}
+
+for (const f of funciones) {
+  const opciones = f.check?.options ?? []
+  if (opciones.length !== 3) failures.push(`Vocabulario/${f.slug}: el reconocimiento tiene ${opciones.length} opciones; se esperaban 3.`)
+  if (opciones.filter((o) => o.works).length !== 1) {
+    failures.push(`Vocabulario/${f.slug}: tiene que haber exactamente una opción que haga bien el trabajo.`)
+  }
+
+  // El patrón es la mitad de la enseñanza: una palabra sin su construcción produce
+  // «detrimental for» y «subsidise to», que es justo lo que esta unidad viene a evitar.
+  for (const palabra of f.words ?? []) {
+    if (!palabra.pattern?.trim()) failures.push(`Vocabulario/${f.slug}: «${palabra.text}» no declara su patrón.`)
+  }
+  if (!(f.words ?? []).some((w) => w.risk === 'avoid')) {
+    failures.push(`Vocabulario/${f.slug}: ninguna entrada marcada como «avoid». Cada función tiene su palabra que parece que sirve y no sirve.`)
+  }
+
+  // El comparador vago → preciso, y sin prometer ninguna banda.
+  for (const campo of ['vague', 'precise', 'why']) {
+    if (!f.upgrade?.[campo]?.trim()) failures.push(`Vocabulario/${f.slug}: falta «upgrade.${campo}».`)
+  }
+  if (!(f.upgrade?.earns ?? []).length) failures.push(`Vocabulario/${f.slug}: el comparador no dice qué gana la versión precisa.`)
+  if ((f.upgrade?.earns ?? []).some((earn) => /\d/.test(earn))) {
+    failures.push(`Vocabulario/${f.slug}: «earns» lleva un número. Ninguna página del curso le promete una banda a nadie.`)
+  }
+}
+
+for (const [fichero, llamada] of [
+  ['academic-vocabulary/VocabularyFunctionClient.tsx', 'placeOption(drill.options'],
+  ['academic-vocabulary/VocabularyEngine.tsx', 'placeOption(current.options'],
+]) {
+  const source = fs.readFileSync(path.join(task2, fichero), 'utf8')
+  if (!source.includes(llamada)) {
+    failures.push(`${fichero}: no reparte la correcta con \`${llamada}…\`. Una rotación conserva el orden relativo de los distractores.`)
+  }
+}
+
 if (failures.length) {
   console.error('IELTS Task 2 — alineación enunciado/modelo:')
   for (const failure of failures) console.error(`- ${failure}`)
@@ -589,4 +887,7 @@ if (failures.length) {
   console.log(`Tarea Completa: ${prompts.length} enunciados en ${EXPECTED_TYPES.length} familias, ensayo modelo de 4 párrafos, el más corto de ${cortos} palabras.`)
   console.log(`Cadena del curso: los ${(introduction.ESSAY_TYPES ?? []).reduce((n, t) => n + t.examples.length, 0)} enunciados de la introducción existen en análisis, Body 1, Body 2 y conclusión.`)
   console.log(`Tipo de ensayo: ${typeDrills.length} enunciados (posiciones ${posiciones.join(',')}), ${misreadCases.length} ensayos mal leídos, ninguna pista delata y ninguna promesa de banda.`)
+  console.log(`Paráfrasis: ${techniques.length} técnicas y ${engineDrills.length} ejercicios de motor, ${bancos.length} bancos de opción, ninguna respuesta del motor sale de las lecciones y ninguna correcta destaca por longitud.`)
+  const items = funciones.reduce((n, f) => n + f.words.length, 0)
+  console.log(`Vocabulario: ${funciones.length} funciones y ${items} entradas, todas con su patrón, ${bancosVocab.length} bancos de opción, ningún comparador promete una banda.`)
 }

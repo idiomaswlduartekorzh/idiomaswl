@@ -23,7 +23,10 @@ const QUESTION_TYPES = [
 ] as const;
 
 const TOOLS = [
-  ['Paraphrasing', 'introduccion', 'Restate the prompt accurately without changing its meaning.'],
+  // Las diez fichas enlazan a la etapa donde su habilidad se practica de paso. Paraphrasing
+  // es la única que tiene recorrido propio: se usa en la introducción de Task 2, en la de
+  // Task 1 y en Reading, y es donde un hispanohablante pierde marcas por calco sin enterarse.
+  ['Paraphrasing', 'paraphrasing', 'Restate the prompt accurately without changing its meaning — five techniques, one page each.'],
   ['Thesis and position', 'introduccion', 'Make the controlling answer visible and consistent from the opening.'],
   ['Topic sentences', 'body-1', 'Give each body paragraph one clear, question-aligned job.'],
   ['Explanation and development', 'parrafos-cuerpo', 'Turn a controlling idea into a logical chain instead of a list of claims.'],
@@ -31,7 +34,9 @@ const TOOLS = [
   ['Cohesion and linking', 'linking-language', 'Connect ideas by function without mechanical connector lists.'],
   ['Contrast and concession', 'body-2', 'Acknowledge, contrast or rebut ideas when the instruction requires it.'],
   ['Sentence types', 'introduccion', 'Use simple, compound and complex sentences for a clear purpose.'],
-  ['Academic vocabulary', 'linking-language', 'Choose precise functional language without forcing memorised phrases.'],
+  // Segunda ficha con recorrido propio. Apuntaba a `linking-language`, que enseña otra cosa:
+  // los conectores son UNA función del vocabulario, y esta unidad cubre las ocho restantes.
+  ['Academic vocabulary', 'academic-vocabulary', 'Choose precise functional language without forcing memorised phrases — eight functions, one page each.'],
   ['Critical final review', 'revision-final', 'Check Task Response, logic, cohesion, vocabulary and grammar before finishing.'],
 ] as const;
 
