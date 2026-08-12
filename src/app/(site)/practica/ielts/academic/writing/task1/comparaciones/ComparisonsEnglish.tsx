@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Task1OfficialReviewBlock from '../Task1OfficialReviewBlock';
 import Task1ChartTypeGuide from '../Task1ChartTypeGuide';
+import { WORKED } from './comparisons-data';
 import { IELTSBarChartVisual, IELTSLineGraphVisual, IELTSPieChartVisual, IELTSTableVisual } from '../Task1VisualLab';
 import ComparisonPracticeEngine from './ComparisonPracticeEngine';
 
@@ -14,7 +15,7 @@ type GuidedExample = {
   model: string;
 };
 
-const VISUALS = [
+const VISUAL_SOURCE = [
   {
     id: 'line',
     label: 'Line graph',
@@ -64,6 +65,17 @@ const VISUALS = [
     ] satisfies GuidedExample[],
   },
 ];
+
+/**
+ * Los ejemplos salen de `comparisons-data.ts`, y son TRES por tipo, no cinco. Los otros dos
+ * son sobre los que practica el motor: cuando la lección los enseñaba todos, tres de sus
+ * quince respuestas quedaban impresas encima del ejercicio.
+ */
+const VISUALS = VISUAL_SOURCE.map((visual) => ({
+  ...visual,
+  examples: WORKED.filter((item) => item.kind === visual.id),
+}));
+
 
 export default function ComparisonsEnglish() {
   const [visualIndex, setVisualIndex] = useState(0);

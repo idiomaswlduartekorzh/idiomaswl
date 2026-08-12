@@ -17,12 +17,15 @@ interface Step {
 interface ProcessExercise {
   title: string;
   steps: Step[];
+  /** El gráfico que se pinta. Viaja con el ejercicio: antes salía de su posición en la lista. */
+  variant: number;
   modelParagraph: string;
 }
 
 const EXERCISES: ProcessExercise[] = [
   {
     title: 'How plastic bottles are recycled',
+    variant: 0,
     steps: [
       { n: 1, active: 'Workers collect used bottles from public recycling bins', passive: 'Used bottles are collected from public recycling bins', sequencer: 'First,' },
       { n: 2, active: 'Workers separate plastic from other materials', passive: 'Plastic is separated from other materials', sequencer: 'Next,' },
@@ -34,6 +37,7 @@ const EXERCISES: ProcessExercise[] = [
   },
   {
     title: 'How coffee is prepared for sale',
+    variant: 1,
     steps: [
       { n: 1, active: 'Farmers pick ripe coffee cherries from the plants', passive: 'Ripe coffee cherries are picked from the plants', sequencer: 'First,' },
       { n: 2, active: 'Workers spread the cherries out and dry them in the sun', passive: 'The cherries are spread out and dried in the sun', sequencer: 'Next,' },
@@ -45,6 +49,7 @@ const EXERCISES: ProcessExercise[] = [
   },
   {
     title: 'How bottled water is produced',
+    variant: 2,
     steps: [
       { n: 1, active: 'A company takes water from an underground spring', passive: 'Water is taken from an underground spring', sequencer: 'First,' },
       { n: 2, active: 'Filters remove unwanted particles from the water', passive: 'Unwanted particles are removed from the water', sequencer: 'Next,' },
@@ -56,6 +61,7 @@ const EXERCISES: ProcessExercise[] = [
   },
   {
     title: 'How bricks are manufactured',
+    variant: 3,
     steps: [
       { n: 1, active: 'An excavator removes clay from the ground', passive: 'Clay is removed from the ground by an excavator', sequencer: 'First,' },
       { n: 2, active: 'A machine breaks the clay into smaller pieces', passive: 'The clay is broken into smaller pieces', sequencer: 'Next,' },
@@ -67,6 +73,7 @@ const EXERCISES: ProcessExercise[] = [
   },
   {
     title: 'Honey bee life cycle',
+    variant: 4,
     steps: [
       { n: 1, active: 'The queen lays eggs inside the cells of a hive', passive: 'Eggs are laid inside the cells of a hive', sequencer: 'First,' },
       { n: 2, active: 'The eggs hatch and become small larvae', passive: 'The eggs hatch and become small larvae', sequencer: 'Next,' },
@@ -144,7 +151,7 @@ export default function ProcesosPage() {
 
           <div id="process-example-panel" role="tabpanel" className="wl-card" style={{ padding: '1rem', marginBottom: '1.25rem', background: 'var(--bg-2)', overflowX: 'auto' }}>
             <p style={{ margin: '0 0 0.55rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 900, textTransform: 'uppercase' }}>IELTS-style visual reference</p>
-            <Task1ApprovedProcessVisual variant={exIdx} />
+            <Task1ApprovedProcessVisual variant={ex.variant} />
           </div>
 
           {/* Grammar box */}

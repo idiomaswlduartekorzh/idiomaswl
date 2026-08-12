@@ -30,13 +30,13 @@ const QUESTIONS: Question[] = [
   {
     level: 1, visual: 'bar', title: 'Reporting a proportion',
     prompt: 'Which sentence reports the largest category accurately?',
-    options: ['Housing accounted for just under one third of household expenditure.', 'Housing was three times smaller than food.', 'Housing increased to 32% during the chart.', 'Housing represented the least spending.'], answer: 0,
+    options: ['Housing accounted for just under one third of household expenditure.', 'Housing was three times smaller a category than food.', 'Housing increased to 32% over the period the chart covers.', 'Housing represented the smallest amount of spending recorded here.'], answer: 0,
     explanation: 'Housing is 32%, so “just under one third” is an accurate approximation. This bar chart compares categories at one point, not change over time.',
   },
   {
     level: 1, visual: 'pie', title: 'Shares and proportions',
     prompt: 'Which phrase is the best description of Solar in the pie chart?',
-    options: ['Solar climbed to 34%.', 'Solar was followed by 34%.', 'Solar made up the largest share, at 34%.', 'Solar changed by 34%.'], answer: 2,
+    options: ['Solar climbed to 34% by the end of the period.', 'Solar was followed by 34% in the order shown.', 'Solar made up the largest share, at 34%.', 'Solar changed by 34% across the years recorded.'], answer: 2,
     explanation: 'A single pie chart shows composition. “Made up the largest share” describes a proportion without inventing a change.',
   },
   {
@@ -72,7 +72,7 @@ const QUESTIONS: Question[] = [
   {
     level: 3, visual: 'line', title: 'Choose a controlled comparison',
     prompt: 'Which sentence makes a useful comparison in the final year?',
-    options: ['All regions were identical in 2020.', 'Region B overtook Region A in 2020.', 'Region A remained the highest, while Region C was still the lowest.', 'Region C was more than Region A.'], answer: 2,
+    options: ['All three of the regions were identical by 2020.', 'Region B overtook Region A at some point before 2020.', 'Region A remained the highest, while Region C was still the lowest.', 'Region C recorded a higher figure than Region A did.'], answer: 2,
     explanation: 'The final values are 88%, 79% and 57%. The sentence identifies the meaningful extremes without listing every number.',
   },
   {

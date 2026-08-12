@@ -1,225 +1,123 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import type { ComponentType } from 'react';
-import {
-  IELTSBarChartVisual,
-  IELTSLineGraphVisual,
-  IELTSMapDiagramVisual,
-  IELTSProcessDiagramVisual,
-  IELTSPieChartVisual,
-  IELTSTableVisual,
-} from '../Task1VisualLab';
+import { placeOption } from '@/lib/practica/shuffle-options';
+import { CHART_OF, KIND_LABEL } from './introduction-data';
+import { CHOICE_DRILLS, CLOZE_DRILLS, PRODUCTION_DRILLS } from './introduction-drills';
+import type { ChoiceDrill, ClozeDrill, Option } from './introduction-drills';
+
+/**
+ * El motor de la introducción, después de la auditoría del 12 de agosto de 2026.
+ *
+ * Lo que se arregló, y por qué:
+ *
+ *   1. **Los ejercicios usaban los gráficos que la lección ya tenía resueltos.** Diez de las
+ *      once respuestas estaban impresas arriba, cinco palabra por palabra. Ahora los doce
+ *      ejercicios salen de `introduction-drills.ts`, colgados de las paráfrasis marcadas
+ *      `worked: false`, que la lección no enseña.
+ *   2. **Se podía pulsar «Check answer» con huecos vacíos.** `canCheck` miraba
+ *      `answers.length`, y `answers` se llenaba por índice: elegir primero el tercer hueco
+ *      dejaba `[vacío, vacío, 'x']`, con longitud 3. Al revés, elegir solo el primero
+ *      bloqueaba el botón sin decir por qué. Ahora se cuentan los huecos resueltos y se
+ *      anuncia cuántos faltan.
+ *   3. **Una sola explicación para las cuatro opciones.** Ahora cada opción lleva la suya, y
+ *      salen todas al comprobar: también las que no elegiste, que es donde se aprende.
+ *   4. **La respuesta correcta no se enseñaba al fallar.** Ahora se enseña, junto a la
+ *      paráfrasis modelo y a las sustituciones que hace.
+ *   5. **Sesgo de posición:** en los huecos, la respuesta buena era la tercera opción una vez
+ *      de doce (6/5/1). Ahora la reparte `placeOption`.
+ *   6. **Español en pantalla** («Enunciado», «Bloque 1») dentro de contenido de IELTS.
+ */
 
 const C = '#0f3d8c';
-type Chart = ComponentType<{ variant?: number }>;
 
-type ClozeItem = {
-  chart: Chart;
-  variant: number;
-  label: string;
-  prompt: string;
-  before: string;
-  blank: string[];
-  after: string;
-  options: string[][];
-  explanation: string;
+type Level = {
+  title: string;
+  short: string;
+  tag: string;
+  kind: 'cloze' | 'choice';
+  items: (ClozeDrill | ChoiceDrill)[];
 };
 
-type ChoiceItem = {
-  chart: Chart;
-  variant: number;
-  label: string;
-  prompt: string;
-  options: string[];
-  correct: number;
-  explanation: string;
-};
-
-const CLOZE: ClozeItem[] = [
-  {
-    chart: IELTSBarChartVisual,
-    variant: 0,
-    label: 'Bar chart',
-    prompt: 'The bar chart below shows the amount of money spent on different types of advertising in the UK in 2020.',
-    before: 'The bar chart',
-    blank: ['presents', 'total expenditure on', 'various categories'],
-    after: 'of advertising in the United Kingdom in 2020.',
-    options: [['shows', 'presents', 'present'], ['the amount spent on', 'total expenditure on', 'overall spending on'], ['different categories', 'various categories', 'several types']],
-    explanation: 'The answer preserves the visual type, topic, place and year, while changing the verb, noun and noun phrase structure.',
-  },
-  {
-    chart: IELTSTableVisual,
-    variant: 1,
-    label: 'Table',
-    prompt: 'The table below shows the number of international students enrolled in five subjects at a university in 2015 and 2025.',
-    before: 'The table',
-    blank: ['presents figures for', 'international students studying', 'five subjects'],
-    after: 'at a university in 2015 and 2025.',
-    options: [['shows numbers for', 'provides data on', 'presents figures for'], ['international students enrolled in', 'international students studying', 'the number of international students enrolled in'], ['five subjects', 'five academic subjects', 'five university subjects']],
-    explanation: 'Figures for works for quantities; studying is restructured as enrolled in without changing the meaning.',
-  },
-  {
-    chart: IELTSLineGraphVisual,
-    variant: 1,
-    label: 'Line graph',
-    prompt: 'The line graph below shows the number of trips made by three forms of public transport between 2010 and 2025.',
-    before: 'The line graph',
-    blank: ['illustrates', 'the number of journeys made by', 'three modes'],
-    after: 'of public transport over the period from 2010 to 2025.',
-    options: [['presents', 'illustrates', 'depicts'], ['the number of journeys made by', 'the number of trips taken by', 'journeys made by'], ['three modes', 'three forms', 'three types']],
-    explanation: 'The paraphrase keeps number because trips is countable and uses journeys/modes as natural substitutions.',
-  },
-  {
-    chart: IELTSPieChartVisual,
-    variant: 2,
-    label: 'Pie charts',
-    prompt: 'The pie charts show the reasons why students chose online courses in 2024.',
-    before: 'The pie charts',
-    blank: ['give information about', "students' reasons for choosing", 'online courses'],
-    after: 'in 2024.',
-    options: [['give information about', 'compare', 'present'], ["students' reasons for choosing", 'the reasons students gave for choosing', 'why students chose'], ['online courses', 'online learning courses', 'digital courses']],
-    explanation: 'Pie charts is plural, so give is required; reasons for choosing is the natural structure after reasons.',
-  },
+const LEVELS: Level[] = [
+  { title: 'Level 1 · Build the paraphrase', short: 'Build the paraphrase', tag: 'Word by word', kind: 'cloze', items: CLOZE_DRILLS },
+  { title: 'Level 2 · Choose an aligned introduction', short: 'Choose an aligned introduction', tag: 'Precision and coverage', kind: 'choice', items: CHOICE_DRILLS },
+  { title: 'Level 3 · Review the whole answer', short: 'Review the whole answer', tag: 'Spot what was added', kind: 'choice', items: PRODUCTION_DRILLS },
 ];
 
-const CHOICE: ChoiceItem[] = [
-  {
-    chart: IELTSLineGraphVisual,
-    variant: 0,
-    label: 'Line graph',
-    prompt: 'The graph below shows the percentage of people with internet access in three regions between 2000 and 2020.',
-    correct: 2,
-    options: [
-      'The line graph shows that Region A rose from 30% to 88% and Region C finished at 57%.',
-      'The graph illustrates why internet access increased and argues that this trend is positive.',
-      'The line graph illustrates the proportion of the population with internet access in three regions over the period from 2000 to 2020.',
-      'The pie chart compares internet access in three regions in 2020.',
-    ],
-    explanation: 'The correct answer preserves the visual, topic, broad units, regions and period without adding figures or changing the visual type.',
-  },
-  {
-    chart: IELTSMapDiagramVisual,
-    variant: 1,
-    label: 'Map',
-    prompt: 'The maps below show the development of a university campus between 1995 and 2025.',
-    correct: 0,
-    options: [
-      'The maps illustrate changes to the layout of a university campus over the thirty-year period from 1995 to 2025.',
-      'The bar charts show the university campus had a library and student flats.',
-      'The maps compare the number of students in the lecture hall in 1995 and 2025.',
-      'The map illustrates that the campus became better because a sports centre was added.',
-    ],
-    explanation: 'A change map needs layout/changes and the period; it must not invent evaluations or turn spaces into quantities.',
-  },
-  {
-    chart: IELTSProcessDiagramVisual,
-    variant: 3,
-    label: 'Process diagram',
-    prompt: 'The diagram below shows how bricks are manufactured.',
-    correct: 3,
-    options: [
-      'The diagram compares the percentage of bricks manufactured in five stages.',
-      'The process diagram shows that firing produces the best bricks.',
-      'The line graph presents how clay changed between digging and firing.',
-      'The diagram outlines the stages involved in manufacturing bricks.',
-    ],
-    explanation: 'For a process, the introduction identifies the stages and overall outcome; it adds no judgements, figures or trends.',
-  },
-  {
-    chart: IELTSPieChartVisual,
-    variant: 4,
-    label: 'Pie chart',
-    prompt: 'The pie charts show electricity generation from four sources in two countries.',
-    correct: 1,
-    options: [
-      'The pie charts show gas accounted for 36% and coal for 24%.',
-      'The two pie charts compare the shares of electricity generated from four sources in two countries.',
-      'The charts explain why countries should use renewable electricity.',
-      'The bar charts compare four countries and their electricity production.',
-    ],
-    explanation: 'The correct answer preserves the plural, comparison, shares, sources and countries without turning the introduction into an overview.',
-  },
-];
-
-const PRODUCTION: ChoiceItem[] = [
-  {
-    chart: IELTSProcessDiagramVisual,
-    variant: 1,
-    label: 'Coffee process',
-    prompt: 'The diagram below shows how coffee is produced for sale.',
-    correct: 1,
-    options: [
-      'The diagram shows cherries are harvested, dried and roasted in five exact steps.',
-      'The diagram illustrates the stages involved in producing coffee for sale.',
-      'The process proves that roasted coffee is better than fresh cherries.',
-      'The line graph presents the amount of coffee sold in different years.',
-    ],
-    explanation: 'Level 3 requires reviewing the complete answer: visual type, topic and purpose must align; details belong in the body.',
-  },
-  {
-    chart: IELTSMapDiagramVisual,
-    variant: 4,
-    label: 'Redeveloped shopping centre',
-    prompt: 'The maps below show a shopping centre before and after redevelopment.',
-    correct: 3,
-    options: [
-      'The maps show that a department store is the most useful new building.',
-      'The table compares four facilities in a shopping centre before and after redevelopment.',
-      'The maps present the exact number of visitors to the shopping centre.',
-      'The two maps illustrate how the layout of a shopping centre changed after redevelopment.',
-    ],
-    explanation: 'A map introduction describes the change in layout; it does not evaluate the redevelopment or turn facilities into figures.',
-  },
-  {
-    chart: IELTSBarChartVisual,
-    variant: 4,
-    label: 'Water use',
-    prompt: 'The bar chart below shows water use in five sectors in 2005.',
-    correct: 0,
-    options: [
-      'The bar chart presents water consumption across five sectors in 2005.',
-      'The graph explains why agriculture consumes so much water in modern societies.',
-      'The pie chart compares the proportion of water used by five sectors over time.',
-      'The bar chart shows agriculture used 46 billion litres, more than every other sector.',
-    ],
-    explanation: 'At this level, remove specific data, causal explanations and format changes before choosing.',
-  },
-];
-
-function VisualFrame({ item }: { item: { chart: Chart; variant: number; label: string; prompt: string } }) {
-  const Chart = item.chart;
+function VisualFrame({ drill }: { drill: ClozeDrill | ChoiceDrill }) {
+  const Chart = CHART_OF[drill.source.kind];
   return (
     <div style={{ display: 'grid', gap: '0.8rem' }}>
       <div style={{ background: 'var(--bg-2)', border: '1px solid var(--line-soft)', borderRadius: 14, padding: '0.85rem', overflow: 'hidden' }}>
-        <p style={{ margin: '0 0 0.55rem', color: C, fontFamily: 'var(--mono)', fontSize: '0.68rem', fontWeight: 800, textTransform: 'uppercase' }}>Practice visual · {item.label}</p>
-        <Chart variant={item.variant} />
+        <p style={{ margin: '0 0 0.55rem', color: C, fontFamily: 'var(--mono)', fontSize: '0.68rem', fontWeight: 800, textTransform: 'uppercase' }}>Practice visual · {KIND_LABEL[drill.source.kind]}</p>
+        <Chart variant={drill.source.variant} />
       </div>
       <div style={{ padding: '0.9rem 1rem', borderLeft: `3px solid ${C}`, background: `${C}08`, borderRadius: 10 }}>
-        <p style={{ margin: '0 0 0.3rem', color: C, fontFamily: 'var(--mono)', fontSize: '0.68rem', fontWeight: 800, textTransform: 'uppercase' }}>Enunciado</p>
-        <p style={{ margin: 0, lineHeight: 1.65, fontStyle: 'italic', color: 'var(--ink)' }}>&ldquo;{item.prompt}&rdquo;</p>
+        <p style={{ margin: '0 0 0.3rem', color: C, fontFamily: 'var(--mono)', fontSize: '0.68rem', fontWeight: 800, textTransform: 'uppercase' }}>The prompt</p>
+        <p style={{ margin: 0, lineHeight: 1.65, fontStyle: 'italic', color: 'var(--ink)' }}>&ldquo;{drill.source.prompt}&rdquo;</p>
       </div>
     </div>
   );
 }
 
+/** Las explicaciones de todas las opciones, marcando la correcta y la que se eligió. */
+function WhyList({ options, correct, chosen }: { options: Option[]; correct: number; chosen: number | null }) {
+  return (
+    <ul style={{ listStyle: 'none', margin: '0.6rem 0 0', padding: 0, display: 'grid', gap: '0.45rem' }}>
+      {options.map((option, index) => {
+        const good = index === correct;
+        const mine = index === chosen;
+        return (
+          <li key={option.text} style={{ padding: '0.55rem 0.7rem', borderRadius: 8, border: `1px solid ${good ? 'rgba(5,150,105,0.3)' : 'var(--line-soft)'}`, background: good ? 'rgba(5,150,105,0.06)' : 'var(--bg)' }}>
+            <span style={{ fontFamily: 'var(--mono)', fontSize: '0.66rem', fontWeight: 800, color: good ? '#059669' : 'var(--muted)', textTransform: 'uppercase' }}>
+              {String.fromCharCode(65 + index)}{good ? ' · correct' : ''}{mine && !good ? ' · you chose this' : ''}
+            </span>
+            <p style={{ margin: '0.2rem 0 0', color: 'var(--ink-2)', lineHeight: 1.55, fontSize: '0.86rem' }}>{option.why}</p>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
 export default function Task1IntroductionPracticeEngine() {
-  const levels = useMemo(() => [
-    { title: 'Level 1 · Build the paraphrase', tag: 'Vocabulary blocks', items: CLOZE },
-    { title: 'Level 2 · Choose an aligned introduction', tag: 'Precision and coverage', items: CHOICE },
-    { title: 'Level 3 · Review the response', tag: 'Exam criteria', items: PRODUCTION },
-  ], []);
   const [level, setLevel] = useState(0);
   const [index, setIndex] = useState(0);
-  const [answers, setAnswers] = useState<string[]>([]);
+  const [answers, setAnswers] = useState<(string | null)[]>([]);
   const [selected, setSelected] = useState<number | null>(null);
   const [checked, setChecked] = useState(false);
   const [scores, setScores] = useState<number[]>([0, 0, 0]);
-  const currentLevel = levels[level];
-  const current = currentLevel.items[index];
-  const isCloze = level === 0;
-  const cloze = isCloze ? current as ClozeItem : null;
-  const choice = !isCloze ? current as ChoiceItem : null;
+  /** Ejercicios ya puntuados, para que repetir el motor no infle el marcador por encima del total. */
+  const [done, setDone] = useState<Set<string>>(new Set());
+
+  const currentLevel = LEVELS[level];
+  const drill = currentLevel.items[index];
+  const isCloze = currentLevel.kind === 'cloze';
+  const cloze = isCloze ? (drill as ClozeDrill) : null;
+  const choice = isCloze ? null : (drill as ChoiceDrill);
+  const key = `${level}-${index}`;
+
+  /**
+   * El reparto de la respuesta, estable entre servidor y navegador. Antes la correcta se
+   * escribía primera y se pintaba en ese orden: en los huecos era la tercera opción una sola
+   * vez de doce.
+   */
+  const gaps = useMemo(
+    () => (cloze ? cloze.gaps.map((gap, slot) => placeOption(gap.options, gap.options.findIndex((option) => option.text === gap.answer), `task1-intro-cloze-${index}`, slot)) : []),
+    [cloze, index],
+  );
+  const choices = useMemo(
+    () => (choice ? placeOption(choice.options, choice.correct, `task1-intro-nivel-${level}`, index) : null),
+    [choice, level, index],
+  );
+
+  const resolved = cloze ? cloze.gaps.filter((_, slot) => answers[slot]).length : 0;
+  const missing = cloze ? cloze.gaps.length - resolved : 0;
+  const canCheck = isCloze ? missing === 0 : selected !== null;
+  const isCorrect = isCloze
+    ? cloze!.gaps.every((gap, slot) => answers[slot] === gap.answer)
+    : selected === choices!.correct;
 
   function resetQuestion() {
     setAnswers([]);
@@ -228,88 +126,124 @@ export default function Task1IntroductionPracticeEngine() {
   }
 
   function checkAnswer() {
-    if (checked) return;
-    const ok = isCloze
-      ? cloze!.blank.every((answer, i) => answer === answers[i])
-      : selected === choice!.correct;
-    if (ok) setScores((old) => old.map((score, i) => i === level ? score + 1 : score));
+    if (checked || !canCheck) return;
+    if (isCorrect && !done.has(key)) {
+      setScores((old) => old.map((score, i) => (i === level ? score + 1 : score)));
+      setDone((old) => new Set(old).add(key));
+    }
     setChecked(true);
   }
 
   function next() {
     if (index < currentLevel.items.length - 1) {
       setIndex((old) => old + 1);
-      resetQuestion();
-      return;
+    } else {
+      setLevel((old) => (old + 1) % LEVELS.length);
+      setIndex(0);
     }
-    setLevel((old) => Math.min(old + 1, levels.length - 1));
-    setIndex(0);
     resetQuestion();
   }
-
-  function chooseCloze(slot: number, value: string) {
-    setAnswers((old) => {
-      const next = [...old];
-      next[slot] = value;
-      return next;
-    });
-  }
-
-  const canCheck = isCloze ? answers.length === cloze!.blank.length : selected !== null;
-  const isCorrect = isCloze ? cloze!.blank.every((answer, i) => answer === answers[i]) : selected === choice!.correct;
 
   return (
     <section aria-labelledby="task1-intro-practice" style={{ marginTop: '2.5rem' }}>
       <p className="eyebrow" style={{ marginBottom: '0.65rem' }}><span className="ink-line" />Progressive engine</p>
       <h2 id="task1-intro-practice" style={{ margin: '0 0 0.35rem', color: 'var(--ink)', fontSize: '1.45rem' }}>Practise the introduction by level</h2>
-      <p style={{ margin: '0 0 1.25rem', color: 'var(--muted)', lineHeight: 1.65 }}>Each level trains a different decision: first choose words, then check that the sentence covers the complete prompt, and finally detect errors that reduce precision.</p>
+      <p style={{ margin: '0 0 1.25rem', color: 'var(--muted)', lineHeight: 1.65 }}>
+        These twelve visuals are the ones the lesson above did not work through, so the answer is not printed anywhere on this page. Each level trains a different decision: first choose the words, then check that the sentence covers the whole prompt, and finally spot what a good-sounding introduction has added.
+      </p>
 
       <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
-        {levels.map((item, i) => (
+        {LEVELS.map((item, i) => (
           <button key={item.title} type="button" onClick={() => { setLevel(i); setIndex(0); resetQuestion(); }} aria-pressed={level === i} className="btn btn-sm" style={{ flex: '1 1 180px', minWidth: 0, whiteSpace: 'normal', overflowWrap: 'anywhere', textAlign: 'left', opacity: level === i ? 1 : 0.68 }}>
-            <strong>{i + 1}. {item.title.split('·')[1]}</strong><br /><span style={{ fontSize: '0.72rem', opacity: 0.8 }}>{item.tag} · {scores[i]}/{item.items.length}</span>
+            <strong>{i + 1}. {item.short}</strong><br /><span style={{ fontSize: '0.72rem', opacity: 0.8 }}>{item.tag} · {scores[i]}/{item.items.length}</span>
           </button>
         ))}
       </div>
 
       <div className="wl-card" style={{ padding: '1.2rem', borderTop: `4px solid ${C}` }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
-          <div><p style={{ margin: 0, fontWeight: 800, color: C, fontFamily: 'var(--mono)', fontSize: '0.72rem', textTransform: 'uppercase' }}>{currentLevel.title}</p><p style={{ margin: '0.2rem 0 0', color: 'var(--muted)', fontSize: '0.82rem' }}>Exercise {index + 1} of {currentLevel.items.length}</p></div>
+          <div>
+            <p style={{ margin: 0, fontWeight: 800, color: C, fontFamily: 'var(--mono)', fontSize: '0.72rem', textTransform: 'uppercase' }}>{currentLevel.title}</p>
+            <p style={{ margin: '0.2rem 0 0', color: 'var(--muted)', fontSize: '0.82rem' }}>Exercise {index + 1} of {currentLevel.items.length}</p>
+          </div>
           <span style={{ fontFamily: 'var(--mono)', color: 'var(--muted)', fontSize: '0.78rem' }}>{Math.round(((index + 1) / currentLevel.items.length) * 100)}%</span>
         </div>
-        <VisualFrame item={current} />
 
-        {isCloze && cloze ? (
+        <VisualFrame drill={drill} />
+
+        {cloze ? (
           <div style={{ marginTop: '1rem' }}>
-            <p style={{ margin: '0 0 0.7rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>Complete the introduction with the synonym and structure that fit best:</p>
+            <p style={{ margin: '0 0 0.7rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>Complete the introduction. Every blank has one option that works and two that fail for a reason you will see when you check.</p>
             <div style={{ padding: '0.85rem', background: 'var(--bg-2)', borderRadius: 10, lineHeight: 2.2, color: 'var(--ink)' }}>
               <span>{cloze.before} </span>
-              {cloze.blank.map((_, slot) => (
-                <select key={slot} value={answers[slot] ?? ''} onChange={(event) => chooseCloze(slot, event.target.value)} aria-label={`Bloque ${slot + 1}`} style={{ margin: '0 0.25rem', padding: '0.4rem 0.55rem', border: `1px solid ${C}55`, borderRadius: 7, background: 'var(--bg)', color: 'var(--ink)', maxWidth: '100%' }}>
-                  <option value="">choose...</option>
-                  {cloze.options[slot].map((option) => <option key={option} value={option}>{option}</option>)}
+              {gaps.map((gap, slot) => (
+                <select
+                  key={cloze.gaps[slot].answer}
+                  value={answers[slot] ?? ''}
+                  onChange={(event) => setAnswers((old) => { const copy = [...old]; copy[slot] = event.target.value || null; return copy; })}
+                  aria-label={`Blank ${slot + 1} of ${cloze.gaps.length}`}
+                  disabled={checked}
+                  style={{ margin: '0 0.25rem', padding: '0.4rem 0.55rem', border: `1px solid ${checked ? (answers[slot] === cloze.gaps[slot].answer ? '#059669' : '#dc2626') : `${C}55`}`, borderRadius: 7, background: 'var(--bg)', color: 'var(--ink)', maxWidth: '100%' }}
+                >
+                  <option value="">choose…</option>
+                  {gap.options.map((option) => <option key={option.text} value={option.text}>{option.text}</option>)}
                 </select>
               ))}
               <span> {cloze.after}</span>
             </div>
           </div>
-        ) : choice ? (
+        ) : choices ? (
           <div style={{ marginTop: '1rem' }}>
-            <p style={{ margin: '0 0 0.7rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>Select the introduction that preserves every prompt element without adding data:</p>
+            <p style={{ margin: '0 0 0.7rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>{choice!.question}</p>
             <div style={{ display: 'grid', gap: '0.55rem' }}>
-              {choice.options.map((option, i) => <button key={option} type="button" onClick={() => setSelected(i)} aria-pressed={selected === i} style={{ textAlign: 'left', padding: '0.8rem 0.9rem', borderRadius: 9, border: `1px solid ${selected === i ? C : 'var(--line-soft)'}`, background: selected === i ? `${C}10` : 'var(--bg)', color: 'var(--ink)', cursor: 'pointer', lineHeight: 1.55 }}>{String.fromCharCode(65 + i)}. {option}</button>)}
+              {choices.options.map((option, i) => (
+                <button key={option.text} type="button" onClick={() => !checked && setSelected(i)} aria-pressed={selected === i} disabled={checked} style={{ textAlign: 'left', padding: '0.8rem 0.9rem', borderRadius: 9, border: `1px solid ${checked && i === choices.correct ? '#059669' : checked && i === selected ? '#dc2626' : selected === i ? C : 'var(--line-soft)'}`, background: selected === i ? `${C}10` : 'var(--bg)', color: 'var(--ink)', cursor: checked ? 'default' : 'pointer', lineHeight: 1.55 }}>
+                  {String.fromCharCode(65 + i)}. {option.text}
+                </button>
+              ))}
             </div>
           </div>
         ) : null}
 
         <div style={{ display: 'flex', justifyContent: 'space-between', gap: '0.75rem', alignItems: 'center', flexWrap: 'wrap', marginTop: '1rem' }}>
-          <button type="button" className="btn btn-sm" onClick={checkAnswer} disabled={!canCheck || checked}>{checked ? (isCorrect ? 'Correct' : 'Review explanation') : 'Check answer'}</button>
-          {checked && <button type="button" className="btn btn-sm" onClick={next}>{index < currentLevel.items.length - 1 ? 'Next exercise →' : level < levels.length - 1 ? 'Unlock next level →' : 'Repeat engine →'}</button>}
+          <button type="button" className="btn btn-sm" onClick={checkAnswer} disabled={!canCheck || checked}>
+            {checked ? (isCorrect ? 'Correct' : 'See what happened') : 'Check answer'}
+          </button>
+          {/* Ningún botón bloqueado sin decir por qué. */}
+          {!checked && !canCheck && (
+            <span style={{ color: 'var(--muted)', fontSize: '0.82rem' }}>
+              {isCloze ? `${missing} blank${missing === 1 ? '' : 's'} still to fill` : 'Choose an option first'}
+            </span>
+          )}
+          {checked && <button type="button" className="btn btn-sm" onClick={next}>{index < currentLevel.items.length - 1 ? 'Next exercise →' : level < LEVELS.length - 1 ? 'Next level →' : 'Start again →'}</button>}
         </div>
+
         {checked && (
           <div role="status" style={{ marginTop: '0.85rem', padding: '0.85rem 1rem', borderRadius: 10, background: isCorrect ? 'rgba(5,150,105,0.08)' : 'rgba(217,119,6,0.08)', border: `1px solid ${isCorrect ? 'rgba(5,150,105,0.22)' : 'rgba(217,119,6,0.22)'}` }}>
             <strong style={{ color: isCorrect ? '#059669' : '#b45309' }}>{isCorrect ? 'Good observation.' : 'Not yet.'}</strong>
-            <p style={{ margin: '0.3rem 0 0', color: 'var(--ink-2)', lineHeight: 1.6 }}>{isCloze ? cloze!.explanation : choice!.explanation}</p>
+
+            {cloze ? (
+              <>
+                {/* La respuesta correcta se enseña siempre, también al fallar. */}
+                <p style={{ margin: '0.4rem 0 0', color: 'var(--ink-2)', lineHeight: 1.6 }}>
+                  The full sentence reads: <strong style={{ color: 'var(--ink)' }}>{cloze.before} {cloze.gaps.map((gap) => gap.answer).join(' ')} {cloze.after}</strong>
+                </p>
+                {cloze.gaps.map((gap, slot) => (
+                  <div key={gap.answer} style={{ marginTop: '0.6rem' }}>
+                    <p style={{ margin: 0, fontFamily: 'var(--mono)', fontSize: '0.66rem', fontWeight: 800, color: 'var(--muted)', textTransform: 'uppercase' }}>Blank {slot + 1}</p>
+                    <WhyList options={gaps[slot].options} correct={gaps[slot].options.findIndex((option) => option.text === gap.answer)} chosen={gaps[slot].options.findIndex((option) => option.text === answers[slot])} />
+                  </div>
+                ))}
+              </>
+            ) : (
+              <WhyList options={choices!.options} correct={choices!.correct} chosen={selected} />
+            )}
+
+            <div style={{ marginTop: '0.8rem', padding: '0.7rem 0.85rem', borderRadius: 8, background: 'var(--bg-2)', border: '1px solid var(--line-soft)' }}>
+              <p style={{ margin: 0, fontFamily: 'var(--mono)', fontSize: '0.66rem', fontWeight: 800, color: C, textTransform: 'uppercase' }}>Another way to say it</p>
+              <p style={{ margin: '0.25rem 0 0', color: 'var(--ink)', lineHeight: 1.6, fontSize: '0.88rem' }}>{drill.source.alternative}</p>
+              <p style={{ margin: '0.4rem 0 0', color: C, fontFamily: 'var(--mono)', fontSize: '0.7rem', lineHeight: 1.45 }}>{drill.source.swaps}</p>
+            </div>
           </div>
         )}
       </div>

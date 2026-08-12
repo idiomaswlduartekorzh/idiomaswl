@@ -100,9 +100,19 @@ export function placeOption<T>(
   }
 
   const target = correctPosition(index, options.length, seed)
+  /**
+   * La semilla del barajado lleva el ÍNDICE de la pregunta.
+   *
+   * Sin él, todas las preguntas de una serie recibían la misma permutación de distractores, y
+   * con la semilla de `procesos` esa permutación resultó ser la identidad: los tres
+   * distractores salían en pantalla en el mismo orden en que estaban escritos, en las doce
+   * preguntas. La posición de la correcta se repartía bien —eso lo hace `correctPosition`—,
+   * así que ningún reparto de letras lo habría detectado. Lo cazó el test que compara el orden
+   * de los distractores con el orden escrito, el 12 de agosto de 2026.
+   */
   const distractors = shuffle(
     options.filter((_, position) => position !== correct),
-    `${seed}|distractores`,
+    `${seed}|distractores|${index}`,
   )
 
   const result = [...distractors]

@@ -1,8 +1,10 @@
 'use client';
 
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import type { ComponentType } from 'react';
 import Link from 'next/link';
+import { placeOption } from '@/lib/practica/shuffle-options';
+import { TREND_LEVELS } from './tendencias-drills';
 import Task1OfficialReviewBlock from '../Task1OfficialReviewBlock';
 import Task1ChartTypeGuide from '../Task1ChartTypeGuide';
 import {
@@ -14,29 +16,14 @@ import {
   IELTSTableVisual,
 } from '../Task1VisualLab';
 
-interface Observation {
-  text: string;
-  relevant: boolean;
-  explanation: string;
-}
-
-interface DataSeries {
-  label: string;
-  color: string;
-  values: number[];
-}
-
-interface Scenario {
-  id: string;
-  title: string;
-  unit: string;
-  years: number[];
-  series: DataSeries[];
-  yMax: number;
-  context: string;
-  observations: Observation[];
-  targetCount: number;
-}
+/**
+ * Los tipos viven en `tendencias-scenarios.ts`, con los gráficos.
+ *
+ * `Scenario` es lo que hace falta para PINTAR uno. `WorkedScenario` añade las observaciones,
+ * que solo necesita el ejercicio de selección: los cuatro gráficos del motor no las llevan, y
+ * ese es justamente el punto —no hay nada que copiar.
+ */
+import type { Scenario, WorkedScenario } from './tendencias-scenarios';
 
 type VisualType = 'line' | 'bar' | 'pie' | 'table' | 'process' | 'map';
 type VisualLesson = { id: VisualType; label: string; Chart: ComponentType<{ variant?: number }>; examples: { title: string; insight: string; explanation: string }[] };
@@ -86,7 +73,7 @@ const VISUAL_LESSONS: VisualLesson[] = [
   ] },
 ];
 
-const SCENARIOS: Scenario[] = [
+const SCENARIOS: WorkedScenario[] = [
   {
     id: 'internet',
     title: 'Internet penetration rate (%) — three world regions, 2000–2020',
@@ -501,63 +488,57 @@ export default function TendenciasContent() {
   );
 }
 
-type TrendPracticeItem = { scenario: number; question: string; options: string[]; correct: number; explanation: string };
-
-const TREND_PRACTICE_LEVELS: { title: string; items: TrendPracticeItem[] }[] = [
-  {
-    title: 'Level 1 · Classify the observation',
-    items: [
-      { scenario: 0, question: 'Which is an overall trend?', options: ['Latin America rose from 5% to 15%.', 'All three regions grew over the period.', 'North America reached 90% in 2020.', 'The graph has five data points.'], correct: 1, explanation: 'An overall trend affects most series and helps summarise the complete story.' },
-      { scenario: 3, question: 'Which contrast deserves attention?', options: ['Solar grew much faster than hydro.', 'Solar reached 25 TWh in 2010.', 'The y-axis ends at 120.', 'There are three sources.'], correct: 0, explanation: 'The rate contrast between an accelerating series and a stable one is more useful than an isolated figure.' },
-      { scenario: 4, question: 'Which observation describes convergence?', options: ['Bus stayed near its original level.', 'Car and cycling moved closer together by the end.', 'Cycling stood at 12,000 in 2010.', 'The city used three transport modes.'], correct: 1, explanation: 'Convergence means that the distance between two series becomes smaller.' },
-    ],
-  },
-  {
-    title: 'Level 2 · Select the main features',
-    items: [
-      { scenario: 1, question: 'Choose the best pair for an overview.', options: ['STEM rose steadily and Arts & Humanities declined.', 'STEM was 80,000 in 2000 and Arts was 70,000 in 2020.', 'The lines crossed near 2008 for an unknown reason.', 'There were two subject groups.'], correct: 0, explanation: 'The pair summarises the two opposite directions, which are the chart’s central pattern.' },
-      { scenario: 2, question: 'Which combination best explains the change in leadership?', options: ['Country C began at 5 million.', 'Country B led initially, but Country A grew faster and overtook it.', 'All three countries had six observations.', 'Country A ended at 5 million in 2020.'], correct: 1, explanation: 'A change in leadership combines the initial position, rate of change and later position.' },
-      { scenario: 4, question: 'Which features should be prioritised?', options: ['Car declined, cycling rose and bus was relatively stable.', 'Car was 80,000 in 2005 and bus was 48,000 in 2010.', 'Cycling is better for the environment.', 'The lines use three colours.'], correct: 0, explanation: 'The option combines direction and stability without adding opinion or unnecessary figures.' },
-    ],
-  },
-  {
-    title: 'Level 3 · Draft the strongest overview idea',
-    items: [
-      { scenario: 2, question: 'Which sentence best summarises the chart?', options: ['Overall, tourist arrivals increased in all three countries.', 'Overall, arrivals rose until 2018, with Country A overtaking Country B, before all three fell sharply in 2020.', 'Overall, Country C rose from 5 to 8 million.', 'Overall, tourism grew because of better flights.'], correct: 1, explanation: 'It includes the initial trend, change in leadership and final anomaly without inventing causes.' },
-      { scenario: 3, question: 'Which overview avoids both a list and interpretation?', options: ['Overall, solar rose from 4 to 100 TWh.', 'Overall, hydro was stable, while solar and wind grew, with solar recording the fastest expansion.', 'Overall, renewable energy policy was successful.', 'Overall, wind was 28 TWh in 2005.'], correct: 1, explanation: 'It summarises stability, growth and relative rate: three visible and comparable features.' },
-      { scenario: 0, question: 'Which version is the most complete and cautious?', options: ['Overall, all regions grew, North America remained highest and the gap narrowed.', 'Overall, internet access increased because technology improved.', 'Overall, Latin America rose by 65 percentage points.', 'Overall, Africa was the weakest region.'], correct: 0, explanation: 'It combines the overall pattern, leadership and convergence without causality or evaluative language.' },
-    ],
-  },
-];
-
 function TrendPracticeEngine() {
   const [level, setLevel] = useState(0);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
   const [checked, setChecked] = useState(false);
   const [scores, setScores] = useState([0, 0, 0]);
-  const currentLevel = TREND_PRACTICE_LEVELS[level];
-  const current = currentLevel.items[index];
-  const scenario = SCENARIOS[current.scenario];
+  /** Ejercicios ya puntuados: repetir el motor no puede dejar el marcador en 6/3. */
+  const [done, setDone] = useState<Set<string>>(new Set());
+
+  const currentLevel = TREND_LEVELS[level];
+  const item = currentLevel.items[index];
+  const scenario = item.scenario;
+  const key = `${level}-${index}`;
+
+  /**
+   * Las nueve preguntas se pintaban en el orden en que están escritas, y la correcta era la
+   * A o la B siempre: cero veces la C, cero veces la D. Con dos letras descartadas de
+   * entrada, el ejercicio regala la mitad. `placeOption` reparte por bloques a partir del
+   * nivel y el número de pregunta, igual en servidor y en navegador.
+   */
+  const current = useMemo(() => {
+    const placed = placeOption(item.options, item.correct, `task1-tendencias-nivel-${level}`, index);
+    return { ...item, options: placed.options, correct: placed.correct };
+  }, [index, item, level]);
+
   const correct = selected === current.correct;
 
   function reset() { setSelected(null); setChecked(false); }
-  function check() { if (selected !== null && !checked) { if (correct) setScores((old) => old.map((score, i) => i === level ? score + 1 : score)); setChecked(true); } }
-  function next() { if (index < currentLevel.items.length - 1) { setIndex((old) => old + 1); reset(); } else { setLevel((old) => (old + 1) % TREND_PRACTICE_LEVELS.length); setIndex(0); reset(); } }
+  function check() {
+    if (selected === null || checked) return;
+    if (correct && !done.has(key)) {
+      setScores((old) => old.map((score, i) => (i === level ? score + 1 : score)));
+      setDone((old) => new Set(old).add(key));
+    }
+    setChecked(true);
+  }
+  function next() { if (index < currentLevel.items.length - 1) { setIndex((old) => old + 1); reset(); } else { setLevel((old) => (old + 1) % TREND_LEVELS.length); setIndex(0); reset(); } }
 
   return (
     <section aria-labelledby="task1-trends-practice" style={{ marginTop: '2.5rem' }}>
       <p className="eyebrow"><span className="ink-line" />WeLearn progressive engine</p>
       <h2 id="task1-trends-practice" style={{ margin: '0 0 0.4rem', fontSize: '1.45rem' }}>Practise trends by level</h2>
-      <p style={{ margin: '0 0 1.1rem', color: 'var(--muted)', lineHeight: 1.65 }}>Move from recognising a trend to combining it in an overview. The exercises use different charts and explain why an observation does or does not deserve space.</p>
-      <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '1rem' }}>{TREND_PRACTICE_LEVELS.map((item, i) => <button key={item.title} type="button" className="btn btn-sm" aria-pressed={level === i} onClick={() => { setLevel(i); setIndex(0); reset(); }} style={{ flex: '1 1 180px', textAlign: 'left', whiteSpace: 'normal', opacity: level === i ? 1 : 0.68 }}><strong>{i + 1}. {item.title.split('·')[1]}</strong><br /><span style={{ fontSize: '0.72rem' }}>{scores[i]}/{item.items.length}</span></button>)}</div>
+      <p style={{ margin: '0 0 1.1rem', color: 'var(--muted)', lineHeight: 1.65 }}>Move from recognising a trend to combining it in an overview. These four charts are not the ones dissected above, so no answer is printed anywhere on this page. Every option explains why it does or does not deserve space.</p>
+      <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '1rem' }}>{TREND_LEVELS.map((item, i) => <button key={item.title} type="button" className="btn btn-sm" aria-pressed={level === i} onClick={() => { setLevel(i); setIndex(0); reset(); }} style={{ flex: '1 1 180px', textAlign: 'left', whiteSpace: 'normal', opacity: level === i ? 1 : 0.68 }}><strong>{i + 1}. {item.title.split('·')[1]}</strong><br /><span style={{ fontSize: '0.72rem' }}>{scores[i]}/{item.items.length}</span></button>)}</div>
       <div className="wl-card" style={{ padding: '1.15rem', borderTop: '4px solid #0f3d8c' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', gap: '0.6rem', flexWrap: 'wrap', marginBottom: '0.85rem' }}><div><p style={{ margin: 0, color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 900 }}>{currentLevel.title}</p><p style={{ margin: '0.2rem 0 0', color: 'var(--muted)', fontSize: '0.82rem' }}>Exercise {index + 1} of {currentLevel.items.length} · {scenario.title.split(' — ')[0]}</p></div><span style={{ color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.76rem' }}>{Math.round(((index + 1) / currentLevel.items.length) * 100)}%</span></div>
         <div style={{ padding: '0.7rem', background: 'var(--bg-2)', border: '1px solid var(--line-soft)', borderRadius: 8, overflow: 'hidden' }}><MiniLineChart scenario={scenario} /></div>
         <p style={{ margin: '0.85rem 0 0', fontWeight: 800, color: 'var(--ink)', lineHeight: 1.55 }}>{current.question}</p>
-        <div style={{ display: 'grid', gap: '0.55rem', marginTop: '0.8rem' }}>{current.options.map((option, i) => <button key={option} type="button" onClick={() => !checked && setSelected(i)} aria-pressed={selected === i} style={{ textAlign: 'left', padding: '0.8rem 0.9rem', borderRadius: 8, border: `1.5px solid ${checked && i === current.correct ? '#059669' : checked && selected === i ? '#dc2626' : selected === i ? '#0f3d8c' : 'var(--line-soft)'}`, background: checked && i === current.correct ? 'rgba(5,150,105,0.08)' : selected === i ? 'rgba(15,61,140,0.06)' : 'var(--bg)', color: 'var(--ink)', cursor: checked ? 'default' : 'pointer', lineHeight: 1.55 }}>{String.fromCharCode(65 + i)}. {option}</button>)}</div>
-        <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap', marginTop: '1rem' }}><button type="button" className="btn btn-sm" onClick={check} disabled={selected === null || checked}>{checked ? (correct ? 'Correct' : 'Review the explanation') : 'Check answer'}</button>{checked && <button type="button" className="btn btn-sm" onClick={next}>{index === currentLevel.items.length - 1 ? 'Next level →' : 'Next exercise →'}</button>}</div>
-        {checked && <div role="status" style={{ marginTop: '0.85rem', padding: '0.8rem 0.9rem', borderRadius: 8, background: correct ? 'rgba(5,150,105,0.08)' : 'rgba(217,119,6,0.08)', border: `1px solid ${correct ? 'rgba(5,150,105,0.22)' : 'rgba(217,119,6,0.22)'}` }}><strong style={{ color: correct ? '#059669' : '#b45309' }}>{correct ? 'Good observation.' : 'Not quite yet.'}</strong><p style={{ margin: '0.25rem 0 0', color: 'var(--ink-2)', lineHeight: 1.55 }}>{current.explanation}</p></div>}
+        <div style={{ display: 'grid', gap: '0.55rem', marginTop: '0.8rem' }}>{current.options.map((option, i) => <button key={option.text} type="button" onClick={() => !checked && setSelected(i)} aria-pressed={selected === i} disabled={checked} style={{ textAlign: 'left', padding: '0.8rem 0.9rem', borderRadius: 8, border: `1.5px solid ${checked && i === current.correct ? '#059669' : checked && selected === i ? '#dc2626' : selected === i ? '#0f3d8c' : 'var(--line-soft)'}`, background: selected === i ? 'rgba(15,61,140,0.06)' : 'var(--bg)', color: 'var(--ink)', cursor: checked ? 'default' : 'pointer', lineHeight: 1.55 }}>{String.fromCharCode(65 + i)}. {option.text}</button>)}</div>
+        <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap', marginTop: '1rem' }}><button type="button" className="btn btn-sm" onClick={check} disabled={selected === null || checked}>{checked ? (correct ? 'Correct' : 'See what happened') : 'Check answer'}</button>{!checked && selected === null && <span style={{ color: 'var(--muted)', fontSize: '0.82rem', alignSelf: 'center' }}>Choose an option first</span>}{checked && <button type="button" className="btn btn-sm" onClick={next}>{index === currentLevel.items.length - 1 ? 'Next level →' : 'Next exercise →'}</button>}</div>
+        {checked && <div role="status" style={{ marginTop: '0.85rem', padding: '0.8rem 0.9rem', borderRadius: 8, background: correct ? 'rgba(5,150,105,0.08)' : 'rgba(217,119,6,0.08)', border: `1px solid ${correct ? 'rgba(5,150,105,0.22)' : 'rgba(217,119,6,0.22)'}` }}><strong style={{ color: correct ? '#059669' : '#b45309' }}>{correct ? 'Good observation.' : 'Not quite yet.'}</strong><ul style={{ listStyle: 'none', margin: '0.6rem 0 0', padding: 0, display: 'grid', gap: '0.45rem' }}>{current.options.map((option, i) => { const good = i === current.correct; return <li key={option.text} style={{ padding: '0.55rem 0.7rem', borderRadius: 8, border: `1px solid ${good ? 'rgba(5,150,105,0.3)' : 'var(--line-soft)'}`, background: good ? 'rgba(5,150,105,0.06)' : 'var(--bg)' }}><span style={{ fontFamily: 'var(--mono)', fontSize: '0.66rem', fontWeight: 800, color: good ? '#059669' : 'var(--muted)', textTransform: 'uppercase' }}>{String.fromCharCode(65 + i)}{good ? ' · correct' : ''}{i === selected && !good ? ' · you chose this' : ''}</span><p style={{ margin: '0.2rem 0 0', color: 'var(--ink-2)', lineHeight: 1.55, fontSize: '0.86rem' }}>{option.why}</p></li>; })}</ul></div>}
       </div>
     </section>
   );

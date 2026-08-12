@@ -22,6 +22,9 @@ interface MapExercise {
   modelParagraph: string;
 }
 
+/** En el examen se escribe a mano: ni corrector, ni autocompletado, ni mayúsculas automáticas. */
+const noAssist = { spellCheck: false, autoCorrect: 'off', autoCapitalize: 'off', autoComplete: 'off' } as const;
+
 const EXERCISES: MapExercise[] = [
   {
     title: 'Town centre changes, 1990-2020',
@@ -217,6 +220,7 @@ export default function MapasPage() {
                 onChange={e => setText(e.target.value)}
                 placeholder="Write a sentence describing this change..."
                 rows={3}
+                {...noAssist}
                 style={{ width: '100%', padding: '0.85rem', borderRadius: 10, border: '1.5px solid var(--line-soft)', background: 'var(--bg)', color: 'var(--ink)', fontSize: '0.95rem', fontFamily: 'inherit', lineHeight: 1.6, resize: 'vertical', boxSizing: 'border-box' }}
               />
               {text.trim().length > 10 && !revealed && (

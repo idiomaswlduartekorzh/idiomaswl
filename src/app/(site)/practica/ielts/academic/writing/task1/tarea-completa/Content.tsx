@@ -32,6 +32,9 @@ type FullTask = {
   model: string;
 };
 
+/** En el examen se escribe a mano: ni corrector, ni autocompletado, ni mayúsculas automáticas. */
+const noAssist = { spellCheck: false, autoCorrect: 'off', autoCapitalize: 'off', autoComplete: 'off' } as const;
+
 const SUPPORTED_FULL_TASKS: FullTask[] = [
   {
     id: 'internet-access', label: 'Line graph: internet access', type: 'line', variant: 0,
@@ -245,7 +248,7 @@ export default function TareaCompletaPage({ initialPhase = 'intro', initialTaskI
       <div style={{ padding: '0.65rem', border: '1px solid var(--line-soft)', borderRadius: 8, background: 'var(--bg)', marginBottom: '0.75rem' }}><TaskVisual task={task} /></div>
       <div className="wl-card" style={{ padding: '1rem', borderLeft: '3px solid #0f3d8c', marginBottom: '0.75rem', lineHeight: 1.65 }}>{task.prompt}</div>
       <div style={{ padding: '0.7rem 0.9rem', borderRadius: 8, background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.24)', marginBottom: '0.75rem', fontSize: '0.83rem', lineHeight: 1.55 }}><strong>Data reminder:</strong> {task.dataNotes}</div>
-      <textarea value={text} onChange={(event) => setText(event.target.value)} placeholder={'Introduction: paraphrase the task.\n\nOverview: state the big picture.\n\nBody 1 and Body 2: group the most meaningful details.'} rows={20} style={{ width: '100%', boxSizing: 'border-box', padding: '1rem', borderRadius: 8, border: '1.5px solid var(--line-soft)', background: 'var(--bg)', color: 'var(--ink)', font: 'inherit', lineHeight: 1.75, resize: 'vertical' }} />
+      <textarea value={text} onChange={(event) => setText(event.target.value)} placeholder={'Introduction: paraphrase the task.\n\nOverview: state the big picture.\n\nBody 1 and Body 2: group the most meaningful details.'} rows={20} {...noAssist} style={{ width: '100%', boxSizing: 'border-box', padding: '1rem', borderRadius: 8, border: '1.5px solid var(--line-soft)', background: 'var(--bg)', color: 'var(--ink)', font: 'inherit', lineHeight: 1.75, resize: 'vertical' }} />
       <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '0.6rem', alignItems: 'center' }}><span style={{ color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.8rem' }}>{wordCount < 150 ? `${150 - wordCount} words to the official minimum` : 'Official minimum reached'}</span><button className="btn btn-sm" onClick={submit}>Submit for review →</button></div>
     </div></div></section>;
   }
