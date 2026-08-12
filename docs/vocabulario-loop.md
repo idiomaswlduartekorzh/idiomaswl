@@ -65,8 +65,8 @@ traen las capas de raíz y de acento.
 
 | # | Fase | Estado |
 |---|---|---|
-| 1 | **inglés A1** | ✅ TERMINADO — 334 palabras, audio, persistencia, las cuatro auditorías y sus arreglos, en producción |
-| 2 | **inglés A2** | ✅ 350/350 en producción, puerta superada, cruzado con el Oxford 3000. Falta la revisión del usuario — y con ella el audio |
+| 1 | **inglés A1** | ✅ TERMINADO — 334 palabras, audio, persistencia, las cuatro auditorías y sus arreglos, indexado |
+| 2 | **inglés A2** | ✅ TERMINADO — 350 palabras, cruzado con el Oxford 3000, aprobado por el usuario, 40 mp3, indexado. Faltan las auditorías 5.2 y 5.3 |
 | 3 | inglés B1 | pendiente |
 | 4 | alemán A1 | pendiente |
 | 5 | alemán A2 | pendiente |
@@ -179,13 +179,30 @@ una lista de frecuencia y alcance, **no un temario**: `pharmacy`, `luggage`, `su
 `motorway`, `fog`, `herb`, `apron`, `jar`, `tile`, `plumber`. Están en cualquier programa de
 A2 y se quedan.
 
+### Aprobado, locutado e indexado — 12 ago 2026
+
+El usuario aprobó las 350 sobre la hoja de revisión y con eso caen las tres cosas que
+estaban esperándole:
+
+**Audio.** 27.148 caracteres, 700 locuciones, 40 mp3 (cuatro por bloque, uno por unidad de
+diez), voz Maya, `eleven_flash_v2_5`. Factura previa: 7.520 créditos con la tarifa medida.
+Las duraciones del manifiesto salen de `ffprobe` sobre el archivo real, nunca estimadas.
+
+**Fin del `noindex` — y eran veinte rutas, no diez.** A1 seguía con el suyo puesto desde
+antes de terminarse, con el comentario «se quita cuando el nivel pase su Puerta 2». A1 pasó
+esa puerta el 9 de agosto y nadie volvió a mirar: **tres días de diez páginas invisibles sin
+motivo.** Un `noindex` con condición de salida no se quita solo, y el que lo pone no suele
+ser quien está delante el día que la condición se cumple.
+
+**Las 22 URLs entran al sitemap** (2 hubs + 20 bloques), y salen del registro, no de una
+lista a mano: `getVocabLevels()`. Así el nivel 3 entra al índice el día que se escriba, sin
+que nadie tenga que acordarse.
+
 ### Lo que queda de la fase
 
-1. La **revisión personal del usuario** sobre las 350. Es la que desbloquea el audio.
-2. Las auditorías **5.2 pedagógica** y **5.3 de usuario promedio**. La 5.1 y la 5.4 están en
+1. Las auditorías **5.2 pedagógica** y **5.3 de usuario promedio**. La 5.1 y la 5.4 están en
    verde.
-3. Decidir si el bloque 3 cambia sus cinco palabras de oficina.
-4. Quitar el `noindex` de las rutas de bloque cuando el usuario apruebe.
+2. Decidir si el bloque 3 cambia sus cinco palabras de oficina.
 
 ---
 
@@ -541,3 +558,5 @@ sin leer commits.
 | 12 ago 2026 | inglés A2, cruce | **El informe del guardián exageraba las ausencias en un tercio.** De 65 palabras «fuera de la lista», 20 estaban: la lista trae lemas de diccionario y nosotros guardamos la forma que se usa (`gently`/`gentle`, `booking`/`book`, `realise`/`realize`). Y contaba 104 en banda porque se queda con la primera banda de cada palabra, aunque la lista sitúe `key` en A1 **y** en B1. Un cruce contra una lista oficial necesita normalizar formas y aceptar la banda más baja, o inventa un problema que no existe |
 | 12 ago 2026 | inglés A2, cruce | **Tres instrumentos independientes señalaron el mismo bloque.** Salud iba ya con 35 de 35 redactados; el cruce le dio además el peor porcentaje en banda (57 %) y nueve palabras fuera de la lista. Cuando corpus, banda y lista coinciden, no hay nada que reescribir: falta material. En cambio el bloque 3 (compras) salió al 60 % por otra causa —`accounting`, `council`, `collection`, `limited`, `reminder`— y esa sí es nuestra: **el bloque se fue del mostrador a la oficina** |
 | 12 ago 2026 | inglés A2, cruce | El total de un nivel esconde el reparto. El 14 % por encima de banda no decía nada hasta desglosarlo por bloque: ocho de los diez estaban entre 69 % y 83 %, y los dos que había que mirar se veían solos. **Un porcentaje de nivel no es un diagnóstico; el desglose por bloque sí** |
+| 12 ago 2026 | inglés A1, índice | **Un `noindex` con condición de salida no se quita solo.** El de A1 decía «se quita cuando el nivel pase su Puerta 2»; A1 la pasó el 9 de agosto y el `noindex` seguía puesto tres días después. Se descubrió por casualidad, preparando el de A2. El que pone la condición casi nunca es quien está delante el día que se cumple: si algo tiene que salir al índice, va al sitemap desde el registro, no a la memoria de nadie |
+| 12 ago 2026 | árbol compartido | `node_modules` apareció vacío —carpeta creada, cero ficheros— y con él no compilaba nada: ni el guardián, ni `tsc`, ni el build. No dio ningún error que lo dijera; solo un `Cannot find module 'typescript'` desde un script. **Antes de creerse que un script está roto, mirar si el árbol tiene dependencias** |

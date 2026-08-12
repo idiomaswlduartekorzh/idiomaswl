@@ -4391,6 +4391,4686 @@
           "fin": 30.776
         }
       ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "casa-barrio-y-convivencia",
+      "unidad": 1,
+      "archivo": "public/audio/vocabulario/ingles/a2/casa-barrio-y-convivencia-u1.mp3",
+      "duracion": 25.76898,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-001:lemma",
+          "texto": "rent",
+          "inicio": 0,
+          "fin": 0.637
+        },
+        {
+          "clave": "en-a2-001:ejemplo",
+          "texto": "How much is the rent?",
+          "inicio": 1.137,
+          "fin": 2.246
+        },
+        {
+          "clave": "en-a2-002:lemma",
+          "texto": "key",
+          "inicio": 2.746,
+          "fin": 3.285
+        },
+        {
+          "clave": "en-a2-002:ejemplo",
+          "texto": "A key? Is this the bakery key?",
+          "inicio": 3.785,
+          "fin": 5.231
+        },
+        {
+          "clave": "en-a2-003:lemma",
+          "texto": "lock",
+          "inicio": 5.731,
+          "fin": 6.199
+        },
+        {
+          "clave": "en-a2-003:ejemplo",
+          "texto": "Did it work on this lock?",
+          "inicio": 6.699,
+          "fin": 7.871
+        },
+        {
+          "clave": "en-a2-004:lemma",
+          "texto": "pipe",
+          "inicio": 8.371,
+          "fin": 8.877
+        },
+        {
+          "clave": "en-a2-004:ejemplo",
+          "texto": "Did he fix the pipes?",
+          "inicio": 9.377,
+          "fin": 10.555
+        },
+        {
+          "clave": "en-a2-005:lemma",
+          "texto": "fix",
+          "inicio": 11.055,
+          "fin": 11.44
+        },
+        {
+          "clave": "en-a2-005:ejemplo",
+          "texto": "Did he fix the pipes?",
+          "inicio": 11.94,
+          "fin": 13.114
+        },
+        {
+          "clave": "en-a2-006:lemma",
+          "texto": "plumber",
+          "inicio": 13.614,
+          "fin": 14.096
+        },
+        {
+          "clave": "en-a2-006:ejemplo",
+          "texto": "Did you call the plumber last night?",
+          "inicio": 14.596,
+          "fin": 16.259
+        },
+        {
+          "clave": "en-a2-007:lemma",
+          "texto": "tile",
+          "inicio": 16.759,
+          "fin": 17.277
+        },
+        {
+          "clave": "en-a2-007:ejemplo",
+          "texto": "And the tiles?",
+          "inicio": 17.777,
+          "fin": 18.723
+        },
+        {
+          "clave": "en-a2-008:lemma",
+          "texto": "machine",
+          "inicio": 19.223,
+          "fin": 19.923
+        },
+        {
+          "clave": "en-a2-008:ejemplo",
+          "texto": "We haven’t tested the coffee machine yet.",
+          "inicio": 20.423,
+          "fin": 22.353
+        },
+        {
+          "clave": "en-a2-009:lemma",
+          "texto": "test",
+          "inicio": 22.853,
+          "fin": 23.421
+        },
+        {
+          "clave": "en-a2-009:ejemplo",
+          "texto": "We haven’t tested the coffee machine yet.",
+          "inicio": 23.921,
+          "fin": 25.769
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "casa-barrio-y-convivencia",
+      "unidad": 2,
+      "archivo": "public/audio/vocabulario/ingles/a2/casa-barrio-y-convivencia-u2.mp3",
+      "duracion": 42.87483,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-010:lemma",
+          "texto": "jar",
+          "inicio": 0,
+          "fin": 0.45
+        },
+        {
+          "clave": "en-a2-010:ejemplo",
+          "texto": "How much is in the jar?",
+          "inicio": 0.95,
+          "fin": 2.112
+        },
+        {
+          "clave": "en-a2-011:lemma",
+          "texto": "towel",
+          "inicio": 2.612,
+          "fin": 3.186
+        },
+        {
+          "clave": "en-a2-011:ejemplo",
+          "texto": "I was holding two towels and a bucket at the same time, and I was not laughing.",
+          "inicio": 3.686,
+          "fin": 8.095
+        },
+        {
+          "clave": "en-a2-012:lemma",
+          "texto": "wash",
+          "inicio": 8.595,
+          "fin": 9.082
+        },
+        {
+          "clave": "en-a2-012:ejemplo",
+          "texto": "There are some plates, but there aren’t any clean cups. Somebody has to wash them before eight.",
+          "inicio": 9.582,
+          "fin": 14.06
+        },
+        {
+          "clave": "en-a2-013:lemma",
+          "texto": "somebody",
+          "inicio": 14.56,
+          "fin": 15.288
+        },
+        {
+          "clave": "en-a2-013:ejemplo",
+          "texto": "There are some plates, but there aren’t any clean cups. Somebody has to wash them before eight.",
+          "inicio": 15.788,
+          "fin": 20.461
+        },
+        {
+          "clave": "en-a2-014:lemma",
+          "texto": "bill",
+          "inicio": 20.961,
+          "fin": 21.435
+        },
+        {
+          "clave": "en-a2-014:ejemplo",
+          "texto": "Less than the water bill. The bad news is that he comes back on Thursday morning.",
+          "inicio": 21.935,
+          "fin": 26.537
+        },
+        {
+          "clave": "en-a2-015:lemma",
+          "texto": "light",
+          "inicio": 27.037,
+          "fin": 27.448
+        },
+        {
+          "clave": "en-a2-015:ejemplo",
+          "texto": "Near the window. That’s the best light in the whole shop, and the warmest corner in winter.",
+          "inicio": 27.948,
+          "fin": 32.939
+        },
+        {
+          "clave": "en-a2-016:lemma",
+          "texto": "put",
+          "inicio": 33.439,
+          "fin": 33.755
+        },
+        {
+          "clave": "en-a2-016:ejemplo",
+          "texto": "Then we can put the story on the wall.",
+          "inicio": 34.255,
+          "fin": 36.022
+        },
+        {
+          "clave": "en-a2-017:lemma",
+          "texto": "change",
+          "inicio": 36.522,
+          "fin": 37.314
+        },
+        {
+          "clave": "en-a2-017:ejemplo",
+          "texto": "Thank you. This will change the room.",
+          "inicio": 37.814,
+          "fin": 39.647
+        },
+        {
+          "clave": "en-a2-018:lemma",
+          "texto": "use",
+          "inicio": 40.147,
+          "fin": 40.603
+        },
+        {
+          "clave": "en-a2-018:ejemplo",
+          "texto": "And if it rains, we’ll use the back room.",
+          "inicio": 41.103,
+          "fin": 42.875
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "casa-barrio-y-convivencia",
+      "unidad": 3,
+      "archivo": "public/audio/vocabulario/ingles/a2/casa-barrio-y-convivencia-u3.mp3",
+      "duracion": 45.866463,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-019:lemma",
+          "texto": "neighbour",
+          "inicio": 0,
+          "fin": 0.586
+        },
+        {
+          "clave": "en-a2-019:ejemplo",
+          "texto": "Hello neighbours, we are getting the community garden ready for spring on Sunday, 14 April.",
+          "inicio": 1.086,
+          "fin": 6.179
+        },
+        {
+          "clave": "en-a2-020:lemma",
+          "texto": "community",
+          "inicio": 6.679,
+          "fin": 7.442
+        },
+        {
+          "clave": "en-a2-020:ejemplo",
+          "texto": "Hello neighbours, we are getting the community garden ready for spring on Sunday, 14 April.",
+          "inicio": 7.942,
+          "fin": 13.165
+        },
+        {
+          "clave": "en-a2-021:lemma",
+          "texto": "resident",
+          "inicio": 13.665,
+          "fin": 14.472
+        },
+        {
+          "clave": "en-a2-021:ejemplo",
+          "texto": "The residents’ group would like to welcome them without making the first week too busy.",
+          "inicio": 14.972,
+          "fin": 19.152
+        },
+        {
+          "clave": "en-a2-022:lemma",
+          "texto": "group",
+          "inicio": 19.652,
+          "fin": 20.082
+        },
+        {
+          "clave": "en-a2-022:ejemplo",
+          "texto": "The residents’ group would like to welcome them without making the first week too busy.",
+          "inicio": 20.582,
+          "fin": 24.611
+        },
+        {
+          "clave": "en-a2-023:lemma",
+          "texto": "volunteer",
+          "inicio": 25.111,
+          "fin": 25.915
+        },
+        {
+          "clave": "en-a2-023:ejemplo",
+          "texto": "And we’ve found four volunteers for the weekends.",
+          "inicio": 26.415,
+          "fin": 28.4
+        },
+        {
+          "clave": "en-a2-024:lemma",
+          "texto": "everyone",
+          "inicio": 28.9,
+          "fin": 29.615
+        },
+        {
+          "clave": "en-a2-024:ejemplo",
+          "texto": "The class ends at eight, and everyone can stay for a short tasting session.",
+          "inicio": 30.115,
+          "fin": 34.059
+        },
+        {
+          "clave": "en-a2-025:lemma",
+          "texto": "nobody",
+          "inicio": 34.559,
+          "fin": 35.193
+        },
+        {
+          "clave": "en-a2-025:ejemplo",
+          "texto": "If nobody comes, we’ll still open on Sunday.",
+          "inicio": 35.693,
+          "fin": 37.766
+        },
+        {
+          "clave": "en-a2-026:lemma",
+          "texto": "anyone",
+          "inicio": 38.266,
+          "fin": 39.043
+        },
+        {
+          "clave": "en-a2-026:ejemplo",
+          "texto": "Has anyone said anything bad?",
+          "inicio": 39.543,
+          "fin": 40.902
+        },
+        {
+          "clave": "en-a2-027:lemma",
+          "texto": "move",
+          "inicio": 41.402,
+          "fin": 42.003
+        },
+        {
+          "clave": "en-a2-027:ejemplo",
+          "texto": "Hello everyone, two families will move into Maple Court next month.",
+          "inicio": 42.503,
+          "fin": 45.866
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "casa-barrio-y-convivencia",
+      "unidad": 4,
+      "archivo": "public/audio/vocabulario/ingles/a2/casa-barrio-y-convivencia-u4.mp3",
+      "duracion": 51.242336,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-028:lemma",
+          "texto": "share",
+          "inicio": 0,
+          "fin": 0.589
+        },
+        {
+          "clave": "en-a2-028:ejemplo",
+          "texto": "In the afternoon, volunteers can show the families the recycling room, the bus stop, and the shared garden.",
+          "inicio": 1.089,
+          "fin": 7.28
+        },
+        {
+          "clave": "en-a2-029:lemma",
+          "texto": "lend",
+          "inicio": 7.78,
+          "fin": 8.335
+        },
+        {
+          "clave": "en-a2-029:ejemplo",
+          "texto": "The library will lend you twenty more books for the event.",
+          "inicio": 8.835,
+          "fin": 11.659
+        },
+        {
+          "clave": "en-a2-030:lemma",
+          "texto": "borrow",
+          "inicio": 12.159,
+          "fin": 12.658
+        },
+        {
+          "clave": "en-a2-030:ejemplo",
+          "texto": "Visitors can borrow a small player at the entrance or download the guide before arriving.",
+          "inicio": 13.158,
+          "fin": 17.662
+        },
+        {
+          "clave": "en-a2-031:lemma",
+          "texto": "noise",
+          "inicio": 18.162,
+          "fin": 18.845
+        },
+        {
+          "clave": "en-a2-031:ejemplo",
+          "texto": "I miss having a fixed salary. I don’t miss the noise. Some months I earn less than before.",
+          "inicio": 19.345,
+          "fin": 25.232
+        },
+        {
+          "clave": "en-a2-032:lemma",
+          "texto": "outside",
+          "inicio": 25.732,
+          "fin": 26.434
+        },
+        {
+          "clave": "en-a2-032:ejemplo",
+          "texto": "Because somebody is always waiting outside. Somebody always was. I opened five minutes early for thirty years.",
+          "inicio": 26.934,
+          "fin": 34.951
+        },
+        {
+          "clave": "en-a2-033:lemma",
+          "texto": "beside",
+          "inicio": 35.451,
+          "fin": 36.051
+        },
+        {
+          "clave": "en-a2-033:ejemplo",
+          "texto": "At the market, Maya waited beside the flower shop, their usual meeting place.",
+          "inicio": 36.551,
+          "fin": 41.328
+        },
+        {
+          "clave": "en-a2-034:lemma",
+          "texto": "between",
+          "inicio": 41.828,
+          "fin": 42.495
+        },
+        {
+          "clave": "en-a2-034:ejemplo",
+          "texto": "We’ve never had more than twelve chairs. Twelve is what fits between the tables.",
+          "inicio": 42.995,
+          "fin": 47.265
+        },
+        {
+          "clave": "en-a2-035:lemma",
+          "texto": "local",
+          "inicio": 47.765,
+          "fin": 48.433
+        },
+        {
+          "clave": "en-a2-035:ejemplo",
+          "texto": "On Wednesday, our class visited a local theatre.",
+          "inicio": 48.933,
+          "fin": 51.242
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "comer-fuera-y-restaurante",
+      "unidad": 1,
+      "archivo": "public/audio/vocabulario/ingles/a2/comer-fuera-y-restaurante-u1.mp3",
+      "duracion": 52.332948,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-036:lemma",
+          "texto": "customer",
+          "inicio": 0,
+          "fin": 0.815
+        },
+        {
+          "clave": "en-a2-036:ejemplo",
+          "texto": "I enjoy meeting people. I love listening to their stories. Every customer arrives with one.",
+          "inicio": 1.315,
+          "fin": 6.831
+        },
+        {
+          "clave": "en-a2-037:lemma",
+          "texto": "enjoy",
+          "inicio": 7.331,
+          "fin": 8.04
+        },
+        {
+          "clave": "en-a2-037:ejemplo",
+          "texto": "I enjoy meeting people. I love listening to their stories. Every customer arrives with one.",
+          "inicio": 8.54,
+          "fin": 13.862
+        },
+        {
+          "clave": "en-a2-038:lemma",
+          "texto": "serve",
+          "inicio": 14.362,
+          "fin": 14.962
+        },
+        {
+          "clave": "en-a2-038:ejemplo",
+          "texto": "Who is going to serve the coffee?",
+          "inicio": 15.462,
+          "fin": 16.889
+        },
+        {
+          "clave": "en-a2-039:lemma",
+          "texto": "cup",
+          "inicio": 17.389,
+          "fin": 17.799
+        },
+        {
+          "clave": "en-a2-039:ejemplo",
+          "texto": "We have tested it. You just haven’t tasted the coffee. The first cup is yours tomorrow.",
+          "inicio": 18.299,
+          "fin": 23.526
+        },
+        {
+          "clave": "en-a2-040:lemma",
+          "texto": "taste",
+          "inicio": 24.026,
+          "fin": 24.646
+        },
+        {
+          "clave": "en-a2-040:ejemplo",
+          "texto": "We have tested it. You just haven’t tasted the coffee. The first cup is yours tomorrow.",
+          "inicio": 25.146,
+          "fin": 30.47
+        },
+        {
+          "clave": "en-a2-041:lemma",
+          "texto": "plate",
+          "inicio": 30.97,
+          "fin": 31.514
+        },
+        {
+          "clave": "en-a2-041:ejemplo",
+          "texto": "Then look at the kitchen. There are no plates left. Not one came back with food.",
+          "inicio": 32.014,
+          "fin": 37.546
+        },
+        {
+          "clave": "en-a2-042:lemma",
+          "texto": "break",
+          "inicio": 38.046,
+          "fin": 38.532
+        },
+        {
+          "clave": "en-a2-042:ejemplo",
+          "texto": "Two hours? That’s not going to be enough. I’m going to break at least two cups.",
+          "inicio": 39.032,
+          "fin": 44.085
+        },
+        {
+          "clave": "en-a2-043:lemma",
+          "texto": "blackboard",
+          "inicio": 44.585,
+          "fin": 45.245
+        },
+        {
+          "clave": "en-a2-043:ejemplo",
+          "texto": "I’m going to write the menu on the blackboard.",
+          "inicio": 45.745,
+          "fin": 47.505
+        },
+        {
+          "clave": "en-a2-044:lemma",
+          "texto": "offer",
+          "inicio": 48.005,
+          "fin": 48.553
+        },
+        {
+          "clave": "en-a2-044:ejemplo",
+          "texto": "He says that’s not a fair offer, but he’s already washing.",
+          "inicio": 49.053,
+          "fin": 52.333
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "comer-fuera-y-restaurante",
+      "unidad": 2,
+      "archivo": "public/audio/vocabulario/ingles/a2/comer-fuera-y-restaurante-u2.mp3",
+      "duracion": 53.970227,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-045:lemma",
+          "texto": "fair",
+          "inicio": 0,
+          "fin": 0.459
+        },
+        {
+          "clave": "en-a2-045:ejemplo",
+          "texto": "He says that’s not a fair offer, but he’s already washing.",
+          "inicio": 0.959,
+          "fin": 4.026
+        },
+        {
+          "clave": "en-a2-046:lemma",
+          "texto": "drop",
+          "inicio": 4.526,
+          "fin": 5.019
+        },
+        {
+          "clave": "en-a2-046:ejemplo",
+          "texto": "You served them quickly. You didn’t drop anything.",
+          "inicio": 5.519,
+          "fin": 8.298
+        },
+        {
+          "clave": "en-a2-047:lemma",
+          "texto": "quickly",
+          "inicio": 8.798,
+          "fin": 9.429
+        },
+        {
+          "clave": "en-a2-047:ejemplo",
+          "texto": "You served them quickly. You didn’t drop anything.",
+          "inicio": 9.929,
+          "fin": 12.781
+        },
+        {
+          "clave": "en-a2-048:lemma",
+          "texto": "apron",
+          "inicio": 13.281,
+          "fin": 13.851
+        },
+        {
+          "clave": "en-a2-048:ejemplo",
+          "texto": "Do I have to wear the apron all day?",
+          "inicio": 14.351,
+          "fin": 15.824
+        },
+        {
+          "clave": "en-a2-049:lemma",
+          "texto": "uniform",
+          "inicio": 16.324,
+          "fin": 17.071
+        },
+        {
+          "clave": "en-a2-049:ejemplo",
+          "texto": "You have to wear it in the kitchen. You should wear it outside too. The apron is also the uniform.",
+          "inicio": 17.571,
+          "fin": 23.03
+        },
+        {
+          "clave": "en-a2-050:lemma",
+          "texto": "bowl",
+          "inicio": 23.53,
+          "fin": 24.027
+        },
+        {
+          "clave": "en-a2-050:ejemplo",
+          "texto": "The centre will provide bowls, knives, and all ingredients, but students should bring a clean apron and a container for leftovers.",
+          "inicio": 24.527,
+          "fin": 31.766
+        },
+        {
+          "clave": "en-a2-051:lemma",
+          "texto": "container",
+          "inicio": 32.266,
+          "fin": 32.961
+        },
+        {
+          "clave": "en-a2-051:ejemplo",
+          "texto": "The centre will provide bowls, knives, and all ingredients, but students should bring a clean apron and a container for leftovers.",
+          "inicio": 33.461,
+          "fin": 41.271
+        },
+        {
+          "clave": "en-a2-052:lemma",
+          "texto": "ingredient",
+          "inicio": 41.771,
+          "fin": 42.505
+        },
+        {
+          "clave": "en-a2-052:ejemplo",
+          "texto": "One box needed baby food, while another needed ingredients for a vegetarian meal.",
+          "inicio": 43.005,
+          "fin": 47.643
+        },
+        {
+          "clave": "en-a2-053:lemma",
+          "texto": "meal",
+          "inicio": 48.143,
+          "fin": 48.619
+        },
+        {
+          "clave": "en-a2-053:ejemplo",
+          "texto": "One box needed baby food, while another needed ingredients for a vegetarian meal.",
+          "inicio": 49.119,
+          "fin": 53.97
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "comer-fuera-y-restaurante",
+      "unidad": 3,
+      "archivo": "public/audio/vocabulario/ingles/a2/comer-fuera-y-restaurante-u3.mp3",
+      "duracion": 47.839864,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-054:lemma",
+          "texto": "vegetable",
+          "inicio": 0,
+          "fin": 0.643
+        },
+        {
+          "clave": "en-a2-054:ejemplo",
+          "texto": "This month we are learning to make vegetable dumplings and a simple dipping sauce.",
+          "inicio": 1.143,
+          "fin": 5.338
+        },
+        {
+          "clave": "en-a2-055:lemma",
+          "texto": "sauce",
+          "inicio": 5.838,
+          "fin": 6.455
+        },
+        {
+          "clave": "en-a2-055:ejemplo",
+          "texto": "This month we are learning to make vegetable dumplings and a simple dipping sauce.",
+          "inicio": 6.955,
+          "fin": 11.233
+        },
+        {
+          "clave": "en-a2-056:lemma",
+          "texto": "tin",
+          "inicio": 11.733,
+          "fin": 12.33
+        },
+        {
+          "clave": "en-a2-056:ejemplo",
+          "texto": "My first job was checking dates on tins.",
+          "inicio": 12.83,
+          "fin": 14.996
+        },
+        {
+          "clave": "en-a2-057:lemma",
+          "texto": "date",
+          "inicio": 15.496,
+          "fin": 15.937
+        },
+        {
+          "clave": "en-a2-057:ejemplo",
+          "texto": "My first job was checking dates on tins.",
+          "inicio": 16.437,
+          "fin": 18.587
+        },
+        {
+          "clave": "en-a2-058:lemma",
+          "texto": "tutor",
+          "inicio": 19.087,
+          "fin": 19.576
+        },
+        {
+          "clave": "en-a2-058:ejemplo",
+          "texto": "Please tell the tutor about allergies when you arrive.",
+          "inicio": 20.076,
+          "fin": 22.96
+        },
+        {
+          "clave": "en-a2-059:lemma",
+          "texto": "allergy",
+          "inicio": 23.46,
+          "fin": 24.159
+        },
+        {
+          "clave": "en-a2-059:ejemplo",
+          "texto": "Please tell the tutor about allergies when you arrive.",
+          "inicio": 24.659,
+          "fin": 27.329
+        },
+        {
+          "clave": "en-a2-060:lemma",
+          "texto": "beginner",
+          "inicio": 27.829,
+          "fin": 28.307
+        },
+        {
+          "clave": "en-a2-060:ejemplo",
+          "texto": "Beginners are welcome, and the tutor demonstrates each step slowly before anyone tries it.",
+          "inicio": 28.807,
+          "fin": 33.837
+        },
+        {
+          "clave": "en-a2-061:lemma",
+          "texto": "step",
+          "inicio": 34.337,
+          "fin": 34.922
+        },
+        {
+          "clave": "en-a2-061:ejemplo",
+          "texto": "Beginners are welcome, and the tutor demonstrates each step slowly before anyone tries it.",
+          "inicio": 35.422,
+          "fin": 40.403
+        },
+        {
+          "clave": "en-a2-062:lemma",
+          "texto": "cancel",
+          "inicio": 40.903,
+          "fin": 41.638
+        },
+        {
+          "clave": "en-a2-062:ejemplo",
+          "texto": "The kitchen has only eight workstations, so students who cannot attend should cancel by Monday morning.",
+          "inicio": 42.138,
+          "fin": 47.84
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "comer-fuera-y-restaurante",
+      "unidad": 4,
+      "archivo": "public/audio/vocabulario/ingles/a2/comer-fuera-y-restaurante-u4.mp3",
+      "duracion": 44.294444,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-063:lemma",
+          "texto": "attend",
+          "inicio": 0,
+          "fin": 0.69
+        },
+        {
+          "clave": "en-a2-063:ejemplo",
+          "texto": "The kitchen has only eight workstations, so students who cannot attend should cancel by Monday morning.",
+          "inicio": 1.19,
+          "fin": 6.974
+        },
+        {
+          "clave": "en-a2-064:lemma",
+          "texto": "provide",
+          "inicio": 7.474,
+          "fin": 8.09
+        },
+        {
+          "clave": "en-a2-064:ejemplo",
+          "texto": "At midday, the café across the street will provide soup and bread.",
+          "inicio": 8.59,
+          "fin": 11.887
+        },
+        {
+          "clave": "en-a2-065:lemma",
+          "texto": "session",
+          "inicio": 12.387,
+          "fin": 13.026
+        },
+        {
+          "clave": "en-a2-065:ejemplo",
+          "texto": "The class ends at eight, and everyone can stay for a short tasting session.",
+          "inicio": 13.526,
+          "fin": 17.18
+        },
+        {
+          "clave": "en-a2-066:lemma",
+          "texto": "spend",
+          "inicio": 17.68,
+          "fin": 18.366
+        },
+        {
+          "clave": "en-a2-066:ejemplo",
+          "texto": "We spend too much on milk. I’ll buy less.",
+          "inicio": 18.866,
+          "fin": 20.929
+        },
+        {
+          "clave": "en-a2-067:lemma",
+          "texto": "dollar",
+          "inicio": 21.429,
+          "fin": 22.075
+        },
+        {
+          "clave": "en-a2-067:ejemplo",
+          "texto": "Ninety dollars. That’s not much for a whole month, and the rent takes half of it.",
+          "inicio": 22.575,
+          "fin": 27.731
+        },
+        {
+          "clave": "en-a2-068:lemma",
+          "texto": "full",
+          "inicio": 28.231,
+          "fin": 28.767
+        },
+        {
+          "clave": "en-a2-068:ejemplo",
+          "texto": "You need fewer plates and more patience. A café is not a shop full of plates.",
+          "inicio": 29.267,
+          "fin": 34.39
+        },
+        {
+          "clave": "en-a2-069:lemma",
+          "texto": "bake",
+          "inicio": 34.89,
+          "fin": 35.422
+        },
+        {
+          "clave": "en-a2-069:ejemplo",
+          "texto": "Then we’ll start baking on Friday night.",
+          "inicio": 35.922,
+          "fin": 37.738
+        },
+        {
+          "clave": "en-a2-070:lemma",
+          "texto": "delivery",
+          "inicio": 38.238,
+          "fin": 38.9
+        },
+        {
+          "clave": "en-a2-070:ejemplo",
+          "texto": "I had expected the work to be quiet, but the room became busy when a delivery arrived.",
+          "inicio": 39.4,
+          "fin": 44.294
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "trabajo-y-empleo",
+      "unidad": 1,
+      "archivo": "public/audio/vocabulario/ingles/a2/trabajo-y-empleo-u1.mp3",
+      "duracion": 65.930499,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-071:lemma",
+          "texto": "interview",
+          "inicio": 0,
+          "fin": 0.639
+        },
+        {
+          "clave": "en-a2-071:ejemplo",
+          "texto": "The evening before the interview, she checked the bus route and prepared two questions about the role.",
+          "inicio": 1.139,
+          "fin": 7.026
+        },
+        {
+          "clave": "en-a2-072:lemma",
+          "texto": "role",
+          "inicio": 7.526,
+          "fin": 8.016
+        },
+        {
+          "clave": "en-a2-072:ejemplo",
+          "texto": "The evening before the interview, she checked the bus route and prepared two questions about the role.",
+          "inicio": 8.516,
+          "fin": 13.395
+        },
+        {
+          "clave": "en-a2-073:lemma",
+          "texto": "task",
+          "inicio": 13.895,
+          "fin": 14.527
+        },
+        {
+          "clave": "en-a2-073:ejemplo",
+          "texto": "Before her first job interview, Noor wrote down examples of times when she had solved a problem, helped a customer, or learned a new task.",
+          "inicio": 15.027,
+          "fin": 22.848
+        },
+        {
+          "clave": "en-a2-074:lemma",
+          "texto": "problem",
+          "inicio": 23.348,
+          "fin": 23.941
+        },
+        {
+          "clave": "en-a2-074:ejemplo",
+          "texto": "Before her first job interview, Noor wrote down examples of times when she had solved a problem, helped a customer, or learned a new task.",
+          "inicio": 24.441,
+          "fin": 32.709
+        },
+        {
+          "clave": "en-a2-075:lemma",
+          "texto": "manager",
+          "inicio": 33.209,
+          "fin": 33.928
+        },
+        {
+          "clave": "en-a2-075:ejemplo",
+          "texto": "At the office, the manager asked about teamwork and reliability.",
+          "inicio": 34.428,
+          "fin": 37.868
+        },
+        {
+          "clave": "en-a2-076:lemma",
+          "texto": "teamwork",
+          "inicio": 38.368,
+          "fin": 38.909
+        },
+        {
+          "clave": "en-a2-076:ejemplo",
+          "texto": "At the office, the manager asked about teamwork and reliability.",
+          "inicio": 39.409,
+          "fin": 42.56
+        },
+        {
+          "clave": "en-a2-077:lemma",
+          "texto": "example",
+          "inicio": 43.06,
+          "fin": 43.752
+        },
+        {
+          "clave": "en-a2-077:ejemplo",
+          "texto": "Noor gave one clear example for each question and admitted when she did not know a technical word.",
+          "inicio": 44.252,
+          "fin": 49.072
+        },
+        {
+          "clave": "en-a2-078:lemma",
+          "texto": "admit",
+          "inicio": 49.572,
+          "fin": 50.155
+        },
+        {
+          "clave": "en-a2-078:ejemplo",
+          "texto": "Noor gave one clear example for each question and admitted when she did not know a technical word.",
+          "inicio": 50.655,
+          "fin": 55.751
+        },
+        {
+          "clave": "en-a2-079:lemma",
+          "texto": "term",
+          "inicio": 56.251,
+          "fin": 56.88
+        },
+        {
+          "clave": "en-a2-079:ejemplo",
+          "texto": "When she was unsure about one technical term, she explained how she would find the answer instead of guessing, and the manager seemed to appreciate that honesty.",
+          "inicio": 57.38,
+          "fin": 65.93
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "trabajo-y-empleo",
+      "unidad": 2,
+      "archivo": "public/audio/vocabulario/ingles/a2/trabajo-y-empleo-u2.mp3",
+      "duracion": 63.110998,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-080:lemma",
+          "texto": "honesty",
+          "inicio": 0,
+          "fin": 0.796
+        },
+        {
+          "clave": "en-a2-080:ejemplo",
+          "texto": "When she was unsure about one technical term, she explained how she would find the answer instead of guessing, and the manager seemed to appreciate that honesty.",
+          "inicio": 1.296,
+          "fin": 9.726
+        },
+        {
+          "clave": "en-a2-081:lemma",
+          "texto": "result",
+          "inicio": 10.226,
+          "fin": 10.906
+        },
+        {
+          "clave": "en-a2-081:ejemplo",
+          "texto": "She left without knowing the result, but she felt prepared because she had shown how she worked rather than only describing her qualities.",
+          "inicio": 11.406,
+          "fin": 18.114
+        },
+        {
+          "clave": "en-a2-082:lemma",
+          "texto": "quality",
+          "inicio": 18.614,
+          "fin": 19.262
+        },
+        {
+          "clave": "en-a2-082:ejemplo",
+          "texto": "She left without knowing the result, but she felt prepared because she had shown how she worked rather than only describing her qualities.",
+          "inicio": 19.762,
+          "fin": 27.056
+        },
+        {
+          "clave": "en-a2-083:lemma",
+          "texto": "memorise",
+          "inicio": 27.556,
+          "fin": 28.437
+        },
+        {
+          "clave": "en-a2-083:ejemplo",
+          "texto": "She did not memorise long answers because she wanted to sound natural.",
+          "inicio": 28.937,
+          "fin": 32.641
+        },
+        {
+          "clave": "en-a2-084:lemma",
+          "texto": "shift",
+          "inicio": 33.141,
+          "fin": 33.688
+        },
+        {
+          "clave": "en-a2-084:ejemplo",
+          "texto": "I signed up for a Saturday shift at the food bank because I wanted to understand how local support works.",
+          "inicio": 34.188,
+          "fin": 39.285
+        },
+        {
+          "clave": "en-a2-085:lemma",
+          "texto": "support",
+          "inicio": 39.785,
+          "fin": 40.571
+        },
+        {
+          "clave": "en-a2-085:ejemplo",
+          "texto": "I signed up for a Saturday shift at the food bank because I wanted to understand how local support works.",
+          "inicio": 41.071,
+          "fin": 47.205
+        },
+        {
+          "clave": "en-a2-086:lemma",
+          "texto": "coordinator",
+          "inicio": 47.705,
+          "fin": 48.514
+        },
+        {
+          "clave": "en-a2-086:ejemplo",
+          "texto": "At nine, the coordinator showed us the storage room and explained the labels.",
+          "inicio": 49.014,
+          "fin": 52.732
+        },
+        {
+          "clave": "en-a2-087:lemma",
+          "texto": "storage",
+          "inicio": 53.232,
+          "fin": 54.056
+        },
+        {
+          "clave": "en-a2-087:ejemplo",
+          "texto": "At nine, the coordinator showed us the storage room and explained the labels.",
+          "inicio": 54.556,
+          "fin": 58.545
+        },
+        {
+          "clave": "en-a2-088:lemma",
+          "texto": "pack",
+          "inicio": 59.045,
+          "fin": 59.364
+        },
+        {
+          "clave": "en-a2-088:ejemplo",
+          "texto": "Later, I helped pack boxes for families with different needs.",
+          "inicio": 59.864,
+          "fin": 63.111
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "trabajo-y-empleo",
+      "unidad": 3,
+      "archivo": "public/audio/vocabulario/ingles/a2/trabajo-y-empleo-u3.mp3",
+      "duracion": 61.125782,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-089:lemma",
+          "texto": "way",
+          "inicio": 0,
+          "fin": 0.543
+        },
+        {
+          "clave": "en-a2-089:ejemplo",
+          "texto": "Before leaving, I wrote down three ways to volunteer again.",
+          "inicio": 1.043,
+          "fin": 4.218
+        },
+        {
+          "clave": "en-a2-090:lemma",
+          "texto": "organisation",
+          "inicio": 4.718,
+          "fin": 5.68
+        },
+        {
+          "clave": "en-a2-090:ejemplo",
+          "texto": "The shift was tiring, yet it made the community’s organisation visible to me.",
+          "inicio": 6.18,
+          "fin": 10.562
+        },
+        {
+          "clave": "en-a2-091:lemma",
+          "texto": "donation",
+          "inicio": 11.062,
+          "fin": 11.944
+        },
+        {
+          "clave": "en-a2-091:ejemplo",
+          "texto": "The coordinator explained that the busiest hours were usually just after lunch, when new donations and waiting families often arrived at the same time.",
+          "inicio": 12.444,
+          "fin": 21.233
+        },
+        {
+          "clave": "en-a2-092:lemma",
+          "texto": "staff",
+          "inicio": 21.733,
+          "fin": 22.426
+        },
+        {
+          "clave": "en-a2-092:ejemplo",
+          "texto": "Staff can also lend headphones to visitors who prefer to listen alone, and a printed version is available for anyone who finds small screens difficult.",
+          "inicio": 22.926,
+          "fin": 31.34
+        },
+        {
+          "clave": "en-a2-093:lemma",
+          "texto": "timetable",
+          "inicio": 31.84,
+          "fin": 32.64
+        },
+        {
+          "clave": "en-a2-093:ejemplo",
+          "texto": "At school, my partner, Josh, showed me the library and explained the timetable.",
+          "inicio": 33.14,
+          "fin": 38.024
+        },
+        {
+          "clave": "en-a2-094:lemma",
+          "texto": "show",
+          "inicio": 38.524,
+          "fin": 39.072
+        },
+        {
+          "clave": "en-a2-094:ejemplo",
+          "texto": "At school, my partner, Josh, showed me the library and explained the timetable.",
+          "inicio": 39.572,
+          "fin": 44.289
+        },
+        {
+          "clave": "en-a2-095:lemma",
+          "texto": "rule",
+          "inicio": 44.789,
+          "fin": 45.249
+        },
+        {
+          "clave": "en-a2-095:ejemplo",
+          "texto": "We must wash our hands before we make any food. That rule is not negotiable.",
+          "inicio": 45.749,
+          "fin": 50.527
+        },
+        {
+          "clave": "en-a2-096:lemma",
+          "texto": "agree",
+          "inicio": 51.027,
+          "fin": 51.672
+        },
+        {
+          "clave": "en-a2-096:ejemplo",
+          "texto": "You have to. And you mustn’t change them on Saturday. We agreed on those prices last night.",
+          "inicio": 52.172,
+          "fin": 57.708
+        },
+        {
+          "clave": "en-a2-097:lemma",
+          "texto": "early",
+          "inicio": 58.208,
+          "fin": 58.793
+        },
+        {
+          "clave": "en-a2-097:ejemplo",
+          "texto": "You should open the door five minutes early.",
+          "inicio": 59.293,
+          "fin": 61.126
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "trabajo-y-empleo",
+      "unidad": 4,
+      "archivo": "public/audio/vocabulario/ingles/a2/trabajo-y-empleo-u4.mp3",
+      "duracion": 59.146259,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-098:lemma",
+          "texto": "decide",
+          "inicio": 0,
+          "fin": 0.685
+        },
+        {
+          "clave": "en-a2-098:ejemplo",
+          "texto": "I know. I’ve decided to take a business course in January. Ana found it and signed me up already.",
+          "inicio": 1.185,
+          "fin": 7.4
+        },
+        {
+          "clave": "en-a2-099:lemma",
+          "texto": "business",
+          "inicio": 7.9,
+          "fin": 8.555
+        },
+        {
+          "clave": "en-a2-099:ejemplo",
+          "texto": "I know. I’ve decided to take a business course in January. Ana found it and signed me up already.",
+          "inicio": 9.055,
+          "fin": 15.576
+        },
+        {
+          "clave": "en-a2-100:lemma",
+          "texto": "manage",
+          "inicio": 16.076,
+          "fin": 16.788
+        },
+        {
+          "clave": "en-a2-100:ejemplo",
+          "texto": "You still have to learn to manage the money.",
+          "inicio": 17.288,
+          "fin": 19.233
+        },
+        {
+          "clave": "en-a2-101:lemma",
+          "texto": "salary",
+          "inicio": 19.733,
+          "fin": 20.452
+        },
+        {
+          "clave": "en-a2-101:ejemplo",
+          "texto": "I miss having a fixed salary. I don’t miss the noise. Some months I earn less than before.",
+          "inicio": 20.952,
+          "fin": 26.94
+        },
+        {
+          "clave": "en-a2-102:lemma",
+          "texto": "explain",
+          "inicio": 27.44,
+          "fin": 28.209
+        },
+        {
+          "clave": "en-a2-102:ejemplo",
+          "texto": "The coordinator explained that the busiest hours were usually just after lunch, when new donations and waiting families often arrived at the same time.",
+          "inicio": 28.709,
+          "fin": 37.365
+        },
+        {
+          "clave": "en-a2-103:lemma",
+          "texto": "expect",
+          "inicio": 37.865,
+          "fin": 38.596
+        },
+        {
+          "clave": "en-a2-103:ejemplo",
+          "texto": "Every customer adds one place. It grows faster than we expected. We started it with three streets and a pencil.",
+          "inicio": 39.096,
+          "fin": 46.519
+        },
+        {
+          "clave": "en-a2-104:lemma",
+          "texto": "rota",
+          "inicio": 47.019,
+          "fin": 47.618
+        },
+        {
+          "clave": "en-a2-104:ejemplo",
+          "texto": "We will make a rota and send it on Monday.",
+          "inicio": 48.118,
+          "fin": 50.118
+        },
+        {
+          "clave": "en-a2-105:lemma",
+          "texto": "reason",
+          "inicio": 50.618,
+          "fin": 51.216
+        },
+        {
+          "clave": "en-a2-105:ejemplo",
+          "texto": "During the trial, whenever a bag was rejected, the team left a short note explaining the reason instead of simply leaving it on the pavement.",
+          "inicio": 51.716,
+          "fin": 59.146
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "tecnologia-y-comunicacion",
+      "unidad": 1,
+      "archivo": "public/audio/vocabulario/ingles/a2/tecnologia-y-comunicacion-u1.mp3",
+      "duracion": 49.203469,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-106:lemma",
+          "texto": "website",
+          "inicio": 0,
+          "fin": 0.828
+        },
+        {
+          "clave": "en-a2-106:ejemplo",
+          "texto": "I’ve never seen my name on a website before.",
+          "inicio": 1.328,
+          "fin": 3.191
+        },
+        {
+          "clave": "en-a2-107:lemma",
+          "texto": "page",
+          "inicio": 3.691,
+          "fin": 4.265
+        },
+        {
+          "clave": "en-a2-107:ejemplo",
+          "texto": "It’s on the neighbourhood page. Somebody wrote it last night.",
+          "inicio": 4.765,
+          "fin": 7.429
+        },
+        {
+          "clave": "en-a2-108:lemma",
+          "texto": "app",
+          "inicio": 7.929,
+          "fin": 8.315
+        },
+        {
+          "clave": "en-a2-108:ejemplo",
+          "texto": "It’s more useful than the app on my phone.",
+          "inicio": 8.815,
+          "fin": 10.732
+        },
+        {
+          "clave": "en-a2-109:lemma",
+          "texto": "review",
+          "inicio": 11.232,
+          "fin": 11.755
+        },
+        {
+          "clave": "en-a2-109:ejemplo",
+          "texto": "Have you ever read a review about yourself? This one has fourteen lines and your name in the first one.",
+          "inicio": 12.255,
+          "fin": 18.395
+        },
+        {
+          "clave": "en-a2-110:lemma",
+          "texto": "line",
+          "inicio": 18.895,
+          "fin": 19.442
+        },
+        {
+          "clave": "en-a2-110:ejemplo",
+          "texto": "Have you ever read a review about yourself? This one has fourteen lines and your name in the first one.",
+          "inicio": 19.942,
+          "fin": 25.527
+        },
+        {
+          "clave": "en-a2-111:lemma",
+          "texto": "map",
+          "inicio": 26.027,
+          "fin": 26.566
+        },
+        {
+          "clave": "en-a2-111:ejemplo",
+          "texto": "This map is the most colourful thing on the wall. It has more colours than the menu.",
+          "inicio": 27.066,
+          "fin": 31.732
+        },
+        {
+          "clave": "en-a2-112:lemma",
+          "texto": "audio",
+          "inicio": 32.232,
+          "fin": 32.914
+        },
+        {
+          "clave": "en-a2-112:ejemplo",
+          "texto": "The City Museum has introduced a free audio guide for visitors aged twelve and over.",
+          "inicio": 33.414,
+          "fin": 38.025
+        },
+        {
+          "clave": "en-a2-113:lemma",
+          "texto": "guide",
+          "inicio": 38.525,
+          "fin": 39.001
+        },
+        {
+          "clave": "en-a2-113:ejemplo",
+          "texto": "The guide has twelve stops, but visitors do not need to follow them in order.",
+          "inicio": 39.501,
+          "fin": 43.842
+        },
+        {
+          "clave": "en-a2-114:lemma",
+          "texto": "follow",
+          "inicio": 44.342,
+          "fin": 44.882
+        },
+        {
+          "clave": "en-a2-114:ejemplo",
+          "texto": "The guide has twelve stops, but visitors do not need to follow them in order.",
+          "inicio": 45.382,
+          "fin": 49.203
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "tecnologia-y-comunicacion",
+      "unidad": 2,
+      "archivo": "public/audio/vocabulario/ingles/a2/tecnologia-y-comunicacion-u2.mp3",
+      "duracion": 64.088594,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-115:lemma",
+          "texto": "download",
+          "inicio": 0,
+          "fin": 0.547
+        },
+        {
+          "clave": "en-a2-115:ejemplo",
+          "texto": "Visitors can borrow a small player at the entrance or download the guide before arriving.",
+          "inicio": 1.047,
+          "fin": 5.254
+        },
+        {
+          "clave": "en-a2-116:lemma",
+          "texto": "screen",
+          "inicio": 5.754,
+          "fin": 6.391
+        },
+        {
+          "clave": "en-a2-116:ejemplo",
+          "texto": "Staff can also lend headphones to visitors who prefer to listen alone, and a printed version is available for anyone who finds small screens difficult.",
+          "inicio": 6.891,
+          "fin": 14.958
+        },
+        {
+          "clave": "en-a2-117:lemma",
+          "texto": "display",
+          "inicio": 15.458,
+          "fin": 16.134
+        },
+        {
+          "clave": "en-a2-117:ejemplo",
+          "texto": "Each driver will display a printed sign in the front window, so passengers can confirm the temporary route before they board.",
+          "inicio": 16.634,
+          "fin": 23.204
+        },
+        {
+          "clave": "en-a2-118:lemma",
+          "texto": "email",
+          "inicio": 23.704,
+          "fin": 24.215
+        },
+        {
+          "clave": "en-a2-118:ejemplo",
+          "texto": "To help us plan the food, reply to this email before Thursday and tell us how many people are coming.",
+          "inicio": 24.715,
+          "fin": 30.334
+        },
+        {
+          "clave": "en-a2-119:lemma",
+          "texto": "reply",
+          "inicio": 30.834,
+          "fin": 31.554
+        },
+        {
+          "clave": "en-a2-119:ejemplo",
+          "texto": "To help us plan the food, reply to this email before Thursday and tell us how many people are coming.",
+          "inicio": 32.054,
+          "fin": 38.295
+        },
+        {
+          "clave": "en-a2-120:lemma",
+          "texto": "subject",
+          "inicio": 38.795,
+          "fin": 39.478
+        },
+        {
+          "clave": "en-a2-120:ejemplo",
+          "texto": "Subject: Help us prepare the community garden.",
+          "inicio": 39.978,
+          "fin": 42.827
+        },
+        {
+          "clave": "en-a2-121:lemma",
+          "texto": "send",
+          "inicio": 43.327,
+          "fin": 43.971
+        },
+        {
+          "clave": "en-a2-121:ejemplo",
+          "texto": "We will make a rota and send it on Monday.",
+          "inicio": 44.471,
+          "fin": 46.747
+        },
+        {
+          "clave": "en-a2-122:lemma",
+          "texto": "information",
+          "inicio": 47.247,
+          "fin": 48.126
+        },
+        {
+          "clave": "en-a2-122:ejemplo",
+          "texto": "On Saturday 3 June, we will leave a small basket at each door with local information, tea, and a map.",
+          "inicio": 48.626,
+          "fin": 54.949
+        },
+        {
+          "clave": "en-a2-123:lemma",
+          "texto": "note",
+          "inicio": 55.449,
+          "fin": 55.762
+        },
+        {
+          "clave": "en-a2-123:ejemplo",
+          "texto": "During the trial, whenever a bag was rejected, the team left a short note explaining the reason instead of simply leaving it on the pavement.",
+          "inicio": 56.262,
+          "fin": 64.089
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "tecnologia-y-comunicacion",
+      "unidad": 3,
+      "archivo": "public/audio/vocabulario/ingles/a2/tecnologia-y-comunicacion-u3.mp3",
+      "duracion": 56.156304,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-124:lemma",
+          "texto": "notebook",
+          "inicio": 0,
+          "fin": 0.609
+        },
+        {
+          "clave": "en-a2-124:ejemplo",
+          "texto": "Maya bought a small notebook to record places she wanted to visit.",
+          "inicio": 1.109,
+          "fin": 4.425
+        },
+        {
+          "clave": "en-a2-125:lemma",
+          "texto": "record",
+          "inicio": 4.925,
+          "fin": 5.515
+        },
+        {
+          "clave": "en-a2-125:ejemplo",
+          "texto": "Maya bought a small notebook to record places she wanted to visit.",
+          "inicio": 6.015,
+          "fin": 9.186
+        },
+        {
+          "clave": "en-a2-126:lemma",
+          "texto": "word",
+          "inicio": 9.686,
+          "fin": 10.213
+        },
+        {
+          "clave": "en-a2-126:ejemplo",
+          "texto": "To remember new words, I started a small notebook and reviewed five of them each night before sleeping.",
+          "inicio": 10.713,
+          "fin": 16.36
+        },
+        {
+          "clave": "en-a2-127:lemma",
+          "texto": "remember",
+          "inicio": 16.86,
+          "fin": 17.468
+        },
+        {
+          "clave": "en-a2-127:ejemplo",
+          "texto": "To remember new words, I started a small notebook and reviewed five of them each night before sleeping.",
+          "inicio": 17.968,
+          "fin": 23.426
+        },
+        {
+          "clave": "en-a2-128:lemma",
+          "texto": "vocabulary",
+          "inicio": 23.926,
+          "fin": 24.948
+        },
+        {
+          "clave": "en-a2-128:ejemplo",
+          "texto": "I understood most lessons, although I needed extra time with the science vocabulary.",
+          "inicio": 25.448,
+          "fin": 30.026
+        },
+        {
+          "clave": "en-a2-129:lemma",
+          "texto": "lesson",
+          "inicio": 30.526,
+          "fin": 31.153
+        },
+        {
+          "clave": "en-a2-129:ejemplo",
+          "texto": "I understood most lessons, although I needed extra time with the science vocabulary.",
+          "inicio": 31.653,
+          "fin": 36.323
+        },
+        {
+          "clave": "en-a2-130:lemma",
+          "texto": "language",
+          "inicio": 36.823,
+          "fin": 37.601
+        },
+        {
+          "clave": "en-a2-130:ejemplo",
+          "texto": "The museum plans to add a second language to the guide later this year.",
+          "inicio": 38.101,
+          "fin": 41.813
+        },
+        {
+          "clave": "en-a2-131:lemma",
+          "texto": "later",
+          "inicio": 42.313,
+          "fin": 42.811
+        },
+        {
+          "clave": "en-a2-131:ejemplo",
+          "texto": "The museum plans to add a second language to the guide later this year.",
+          "inicio": 43.311,
+          "fin": 46.862
+        },
+        {
+          "clave": "en-a2-132:lemma",
+          "texto": "translate",
+          "inicio": 47.362,
+          "fin": 48.087
+        },
+        {
+          "clave": "en-a2-132:ejemplo",
+          "texto": "By Friday, I could order lunch, ask for directions, and join conversations without translating every sentence in my head.",
+          "inicio": 48.587,
+          "fin": 56.156
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "tecnologia-y-comunicacion",
+      "unidad": 4,
+      "archivo": "public/audio/vocabulario/ingles/a2/tecnologia-y-comunicacion-u4.mp3",
+      "duracion": 56.124036,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-133:lemma",
+          "texto": "pronunciation",
+          "inicio": 0,
+          "fin": 0.965
+        },
+        {
+          "clave": "en-a2-133:ejemplo",
+          "texto": "Josh laughed at my pronunciation at first, but he soon began correcting me gently instead.",
+          "inicio": 1.465,
+          "fin": 6.622
+        },
+        {
+          "clave": "en-a2-134:lemma",
+          "texto": "correct",
+          "inicio": 7.122,
+          "fin": 7.803
+        },
+        {
+          "clave": "en-a2-134:ejemplo",
+          "texto": "The library is smaller on the map than in real life. Nobody has offered to correct it.",
+          "inicio": 8.303,
+          "fin": 13.032
+        },
+        {
+          "clave": "en-a2-135:lemma",
+          "texto": "detail",
+          "inicio": 13.532,
+          "fin": 14.199
+        },
+        {
+          "clave": "en-a2-135:ejemplo",
+          "texto": "The museum says the guide is designed to help visitors notice details, not to replace the labels beside the objects.",
+          "inicio": 14.699,
+          "fin": 21.054
+        },
+        {
+          "clave": "en-a2-136:lemma",
+          "texto": "label",
+          "inicio": 21.554,
+          "fin": 22.139
+        },
+        {
+          "clave": "en-a2-136:ejemplo",
+          "texto": "The museum says the guide is designed to help visitors notice details, not to replace the labels beside the objects.",
+          "inicio": 22.639,
+          "fin": 29.575
+        },
+        {
+          "clave": "en-a2-137:lemma",
+          "texto": "notice",
+          "inicio": 30.075,
+          "fin": 30.735
+        },
+        {
+          "clave": "en-a2-137:ejemplo",
+          "texto": "She noticed it when the bus arrived, but she did not go back.",
+          "inicio": 31.235,
+          "fin": 34.369
+        },
+        {
+          "clave": "en-a2-138:lemma",
+          "texto": "system",
+          "inicio": 34.869,
+          "fin": 35.513
+        },
+        {
+          "clave": "en-a2-138:ejemplo",
+          "texto": "After four weeks, fewer bags contained the wrong materials, but some residents said the colour system was confusing at night.",
+          "inicio": 36.013,
+          "fin": 43.104
+        },
+        {
+          "clave": "en-a2-139:lemma",
+          "texto": "accident",
+          "inicio": 43.604,
+          "fin": 44.117
+        },
+        {
+          "clave": "en-a2-139:ejemplo",
+          "texto": "Last Saturday, Maya left her phone at home by accident.",
+          "inicio": 44.617,
+          "fin": 47.578
+        },
+        {
+          "clave": "en-a2-140:lemma",
+          "texto": "confirm",
+          "inicio": 48.078,
+          "fin": 48.82
+        },
+        {
+          "clave": "en-a2-140:ejemplo",
+          "texto": "Each driver will display a printed sign in the front window, so passengers can confirm the temporary route before they board.",
+          "inicio": 49.32,
+          "fin": 56.124
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "ocio-planes-y-tiempo-libre",
+      "unidad": 1,
+      "archivo": "public/audio/vocabulario/ingles/a2/ocio-planes-y-tiempo-libre-u1.mp3",
+      "duracion": 50.785578,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-141:lemma",
+          "texto": "plan",
+          "inicio": 0,
+          "fin": 0.538
+        },
+        {
+          "clave": "en-a2-141:ejemplo",
+          "texto": "The council will add brighter signs before deciding whether to keep the plan.",
+          "inicio": 1.038,
+          "fin": 4.886
+        },
+        {
+          "clave": "en-a2-142:lemma",
+          "texto": "invite",
+          "inicio": 5.386,
+          "fin": 6.027
+        },
+        {
+          "clave": "en-a2-142:ejemplo",
+          "texto": "Next Saturday we’re going to invite three artists. Two of them teach at the school and one paints walls.",
+          "inicio": 6.527,
+          "fin": 12.323
+        },
+        {
+          "clave": "en-a2-143:lemma",
+          "texto": "artist",
+          "inicio": 12.823,
+          "fin": 13.446
+        },
+        {
+          "clave": "en-a2-143:ejemplo",
+          "texto": "Next Saturday we’re going to invite three artists. Two of them teach at the school and one paints walls.",
+          "inicio": 13.946,
+          "fin": 20.071
+        },
+        {
+          "clave": "en-a2-144:lemma",
+          "texto": "event",
+          "inicio": 20.571,
+          "fin": 21.2
+        },
+        {
+          "clave": "en-a2-144:ejemplo",
+          "texto": "The library will lend you twenty more books for the event.",
+          "inicio": 21.7,
+          "fin": 24.466
+        },
+        {
+          "clave": "en-a2-145:lemma",
+          "texto": "playlist",
+          "inicio": 24.966,
+          "fin": 25.709
+        },
+        {
+          "clave": "en-a2-145:ejemplo",
+          "texto": "I’m going to make a playlist for the afternoon. Nothing louder than a conversation.",
+          "inicio": 26.209,
+          "fin": 30.937
+        },
+        {
+          "clave": "en-a2-146:lemma",
+          "texto": "conversation",
+          "inicio": 31.437,
+          "fin": 32.406
+        },
+        {
+          "clave": "en-a2-146:ejemplo",
+          "texto": "I’m going to make a playlist for the afternoon. Nothing louder than a conversation.",
+          "inicio": 32.906,
+          "fin": 37.286
+        },
+        {
+          "clave": "en-a2-147:lemma",
+          "texto": "place",
+          "inicio": 37.786,
+          "fin": 38.497
+        },
+        {
+          "clave": "en-a2-147:ejemplo",
+          "texto": "Why did you decide to open this place?",
+          "inicio": 38.997,
+          "fin": 41.036
+        },
+        {
+          "clave": "en-a2-148:lemma",
+          "texto": "spot",
+          "inicio": 41.536,
+          "fin": 42.073
+        },
+        {
+          "clave": "en-a2-148:ejemplo",
+          "texto": "The taxi driver added the best spot for the sunset.",
+          "inicio": 42.573,
+          "fin": 45.601
+        },
+        {
+          "clave": "en-a2-149:lemma",
+          "texto": "centre",
+          "inicio": 46.101,
+          "fin": 46.716
+        },
+        {
+          "clave": "en-a2-149:ejemplo",
+          "texto": "The community centre cooking class starts next Tuesday at six thirty.",
+          "inicio": 47.216,
+          "fin": 50.786
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "ocio-planes-y-tiempo-libre",
+      "unidad": 2,
+      "archivo": "public/audio/vocabulario/ingles/a2/ocio-planes-y-tiempo-libre-u2.mp3",
+      "duracion": 56.292336,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-150:lemma",
+          "texto": "bike",
+          "inicio": 0,
+          "fin": 0.374
+        },
+        {
+          "clave": "en-a2-150:ejemplo",
+          "texto": "My brother wants some cake. He asked twice. He’s waiting outside with his bike.",
+          "inicio": 0.874,
+          "fin": 6.167
+        },
+        {
+          "clave": "en-a2-151:lemma",
+          "texto": "twice",
+          "inicio": 6.667,
+          "fin": 7.317
+        },
+        {
+          "clave": "en-a2-151:ejemplo",
+          "texto": "My brother wants some cake. He asked twice. He’s waiting outside with his bike.",
+          "inicio": 7.817,
+          "fin": 12.868
+        },
+        {
+          "clave": "en-a2-152:lemma",
+          "texto": "sports",
+          "inicio": 13.368,
+          "fin": 14.157
+        },
+        {
+          "clave": "en-a2-152:ejemplo",
+          "texto": "From two until six, it will stop at Oak Street and the sports centre, but it will not stop at Hill Farm or the old bridge.",
+          "inicio": 14.657,
+          "fin": 21.713
+        },
+        {
+          "clave": "en-a2-153:lemma",
+          "texto": "visitor",
+          "inicio": 22.213,
+          "fin": 22.85
+        },
+        {
+          "clave": "en-a2-153:ejemplo",
+          "texto": "The City Museum has introduced a free audio guide for visitors aged twelve and over.",
+          "inicio": 23.35,
+          "fin": 28.015
+        },
+        {
+          "clave": "en-a2-154:lemma",
+          "texto": "companion",
+          "inicio": 28.515,
+          "fin": 29.241
+        },
+        {
+          "clave": "en-a2-154:ejemplo",
+          "texto": "Each stop lasts between three and five minutes and includes one question to discuss with a companion.",
+          "inicio": 29.741,
+          "fin": 36.057
+        },
+        {
+          "clave": "en-a2-155:lemma",
+          "texto": "discuss",
+          "inicio": 36.557,
+          "fin": 37.175
+        },
+        {
+          "clave": "en-a2-155:ejemplo",
+          "texto": "Each stop lasts between three and five minutes and includes one question to discuss with a companion.",
+          "inicio": 37.675,
+          "fin": 43.329
+        },
+        {
+          "clave": "en-a2-156:lemma",
+          "texto": "picture",
+          "inicio": 43.829,
+          "fin": 44.369
+        },
+        {
+          "clave": "en-a2-156:ejemplo",
+          "texto": "Families with younger children can use the picture trail instead.",
+          "inicio": 44.869,
+          "fin": 47.834
+        },
+        {
+          "clave": "en-a2-157:lemma",
+          "texto": "trail",
+          "inicio": 48.334,
+          "fin": 48.912
+        },
+        {
+          "clave": "en-a2-157:ejemplo",
+          "texto": "Families with younger children can use the picture trail instead.",
+          "inicio": 49.412,
+          "fin": 52.321
+        },
+        {
+          "clave": "en-a2-158:lemma",
+          "texto": "theatre",
+          "inicio": 52.821,
+          "fin": 53.434
+        },
+        {
+          "clave": "en-a2-158:ejemplo",
+          "texto": "On Wednesday, our class visited a local theatre.",
+          "inicio": 53.934,
+          "fin": 56.292
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "ocio-planes-y-tiempo-libre",
+      "unidad": 3,
+      "archivo": "public/audio/vocabulario/ingles/a2/ocio-planes-y-tiempo-libre-u3.mp3",
+      "duracion": 50.265805,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-159:lemma",
+          "texto": "exchange",
+          "inicio": 0,
+          "fin": 0.873
+        },
+        {
+          "clave": "en-a2-159:ejemplo",
+          "texto": "When I arrived in Leeds for the school exchange, I expected to feel lonely.",
+          "inicio": 1.373,
+          "fin": 5.638
+        },
+        {
+          "clave": "en-a2-160:lemma",
+          "texto": "football",
+          "inicio": 6.138,
+          "fin": 6.735
+        },
+        {
+          "clave": "en-a2-160:ejemplo",
+          "texto": "Instead, my host family invited me to a neighbourhood football match on the first evening.",
+          "inicio": 7.235,
+          "fin": 11.36
+        },
+        {
+          "clave": "en-a2-161:lemma",
+          "texto": "match",
+          "inicio": 11.86,
+          "fin": 12.44
+        },
+        {
+          "clave": "en-a2-161:ejemplo",
+          "texto": "Instead, my host family invited me to a neighbourhood football match on the first evening.",
+          "inicio": 12.94,
+          "fin": 17.785
+        },
+        {
+          "clave": "en-a2-162:lemma",
+          "texto": "title",
+          "inicio": 18.285,
+          "fin": 18.927
+        },
+        {
+          "clave": "en-a2-162:ejemplo",
+          "texto": "I will put a small list of books on every table, so people can read the titles before they sit down.",
+          "inicio": 19.427,
+          "fin": 24.722
+        },
+        {
+          "clave": "en-a2-163:lemma",
+          "texto": "choose",
+          "inicio": 25.222,
+          "fin": 25.87
+        },
+        {
+          "clave": "en-a2-163:ejemplo",
+          "texto": "And I’ll bring the list to the library every month. I’ll tell you which books people choose.",
+          "inicio": 26.37,
+          "fin": 30.718
+        },
+        {
+          "clave": "en-a2-164:lemma",
+          "texto": "replace",
+          "inicio": 31.218,
+          "fin": 32.086
+        },
+        {
+          "clave": "en-a2-164:ejemplo",
+          "texto": "They’ll read here. If somebody takes one, I’ll replace it.",
+          "inicio": 32.586,
+          "fin": 35.54
+        },
+        {
+          "clave": "en-a2-165:lemma",
+          "texto": "steal",
+          "inicio": 36.04,
+          "fin": 36.606
+        },
+        {
+          "clave": "en-a2-165:ejemplo",
+          "texto": "I think this will work. Nobody in this street will steal a book.",
+          "inicio": 37.106,
+          "fin": 40.312
+        },
+        {
+          "clave": "en-a2-166:lemma",
+          "texto": "hope",
+          "inicio": 40.812,
+          "fin": 41.354
+        },
+        {
+          "clave": "en-a2-166:ejemplo",
+          "texto": "And much more beautiful. I hope nobody ever fixes the scale.",
+          "inicio": 41.854,
+          "fin": 45.184
+        },
+        {
+          "clave": "en-a2-167:lemma",
+          "texto": "ever",
+          "inicio": 45.684,
+          "fin": 46.189
+        },
+        {
+          "clave": "en-a2-167:ejemplo",
+          "texto": "And much more beautiful. I hope nobody ever fixes the scale.",
+          "inicio": 46.689,
+          "fin": 50.266
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "ocio-planes-y-tiempo-libre",
+      "unidad": 4,
+      "archivo": "public/audio/vocabulario/ingles/a2/ocio-planes-y-tiempo-libre-u4.mp3",
+      "duracion": 40.321202,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-168:lemma",
+          "texto": "usually",
+          "inicio": 0,
+          "fin": 0.821
+        },
+        {
+          "clave": "en-a2-168:ejemplo",
+          "texto": "The best things usually are.",
+          "inicio": 1.321,
+          "fin": 2.645
+        },
+        {
+          "clave": "en-a2-169:lemma",
+          "texto": "midday",
+          "inicio": 3.145,
+          "fin": 3.712
+        },
+        {
+          "clave": "en-a2-169:ejemplo",
+          "texto": "At midday, the café across the street will provide soup and bread.",
+          "inicio": 4.212,
+          "fin": 7.747
+        },
+        {
+          "clave": "en-a2-170:lemma",
+          "texto": "person",
+          "inicio": 8.247,
+          "fin": 8.776
+        },
+        {
+          "clave": "en-a2-170:ejemplo",
+          "texto": "Nobody has. One person has asked for more chairs. They came on Saturday, they say.",
+          "inicio": 9.276,
+          "fin": 14.756
+        },
+        {
+          "clave": "en-a2-171:lemma",
+          "texto": "bad",
+          "inicio": 15.256,
+          "fin": 15.665
+        },
+        {
+          "clave": "en-a2-171:ejemplo",
+          "texto": "Has anyone said anything bad?",
+          "inicio": 16.165,
+          "fin": 17.632
+        },
+        {
+          "clave": "en-a2-172:lemma",
+          "texto": "think",
+          "inicio": 18.132,
+          "fin": 18.519
+        },
+        {
+          "clave": "en-a2-172:ejemplo",
+          "texto": "It’s also stranger. People will think we sell tiles.",
+          "inicio": 19.019,
+          "fin": 22.079
+        },
+        {
+          "clave": "en-a2-173:lemma",
+          "texto": "idea",
+          "inicio": 22.579,
+          "fin": 23.211
+        },
+        {
+          "clave": "en-a2-173:ejemplo",
+          "texto": "That’s better than my idea.",
+          "inicio": 23.711,
+          "fin": 25.061
+        },
+        {
+          "clave": "en-a2-174:lemma",
+          "texto": "grow",
+          "inicio": 25.561,
+          "fin": 26.135
+        },
+        {
+          "clave": "en-a2-174:ejemplo",
+          "texto": "Every customer adds one place. It grows faster than we expected. We started it with three streets and a pencil.",
+          "inicio": 26.635,
+          "fin": 33.928
+        },
+        {
+          "clave": "en-a2-175:lemma",
+          "texto": "life",
+          "inicio": 34.428,
+          "fin": 34.835
+        },
+        {
+          "clave": "en-a2-175:ejemplo",
+          "texto": "The library is smaller on the map than in real life. Nobody has offered to correct it.",
+          "inicio": 35.335,
+          "fin": 40.321
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "describir-personas-y-caracter",
+      "unidad": 1,
+      "archivo": "public/audio/vocabulario/ingles/a2/describir-personas-y-caracter-u1.mp3",
+      "duracion": 46.472902,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-176:lemma",
+          "texto": "honest",
+          "inicio": 0,
+          "fin": 0.695
+        },
+        {
+          "clave": "en-a2-176:ejemplo",
+          "texto": "That’s the most honest map in this city.",
+          "inicio": 1.195,
+          "fin": 3.063
+        },
+        {
+          "clave": "en-a2-177:lemma",
+          "texto": "natural",
+          "inicio": 3.563,
+          "fin": 4.184
+        },
+        {
+          "clave": "en-a2-177:ejemplo",
+          "texto": "She did not memorise long answers because she wanted to sound natural.",
+          "inicio": 4.684,
+          "fin": 8.307
+        },
+        {
+          "clave": "en-a2-178:lemma",
+          "texto": "patience",
+          "inicio": 8.807,
+          "fin": 9.467
+        },
+        {
+          "clave": "en-a2-178:ejemplo",
+          "texto": "You need fewer plates and more patience. A café is not a shop full of plates.",
+          "inicio": 9.967,
+          "fin": 14.563
+        },
+        {
+          "clave": "en-a2-179:lemma",
+          "texto": "trust",
+          "inicio": 15.063,
+          "fin": 15.789
+        },
+        {
+          "clave": "en-a2-179:ejemplo",
+          "texto": "I have never trusted reviews. I trust the empty plates.",
+          "inicio": 16.289,
+          "fin": 19.491
+        },
+        {
+          "clave": "en-a2-180:lemma",
+          "texto": "busy",
+          "inicio": 19.991,
+          "fin": 20.635
+        },
+        {
+          "clave": "en-a2-180:ejemplo",
+          "texto": "So somebody took it while we were busy.",
+          "inicio": 21.135,
+          "fin": 23.065
+        },
+        {
+          "clave": "en-a2-181:lemma",
+          "texto": "tiring",
+          "inicio": 23.565,
+          "fin": 24.297
+        },
+        {
+          "clave": "en-a2-181:ejemplo",
+          "texto": "The shift was tiring, yet it made the community’s organisation visible to me.",
+          "inicio": 24.797,
+          "fin": 29.166
+        },
+        {
+          "clave": "en-a2-182:lemma",
+          "texto": "lonely",
+          "inicio": 29.666,
+          "fin": 30.226
+        },
+        {
+          "clave": "en-a2-182:ejemplo",
+          "texto": "When I arrived in Leeds for the school exchange, I expected to feel lonely.",
+          "inicio": 30.726,
+          "fin": 34.703
+        },
+        {
+          "clave": "en-a2-183:lemma",
+          "texto": "nervous",
+          "inicio": 35.203,
+          "fin": 35.896
+        },
+        {
+          "clave": "en-a2-183:ejemplo",
+          "texto": "At first, she felt nervous because she could not check the map or message her friend Sam.",
+          "inicio": 36.396,
+          "fin": 40.627
+        },
+        {
+          "clave": "en-a2-184:lemma",
+          "texto": "calm",
+          "inicio": 41.127,
+          "fin": 41.75
+        },
+        {
+          "clave": "en-a2-184:ejemplo",
+          "texto": "On the bus home, she realised that the day had felt longer and calmer.",
+          "inicio": 42.25,
+          "fin": 46.473
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "describir-personas-y-caracter",
+      "unidad": 2,
+      "archivo": "public/audio/vocabulario/ingles/a2/describir-personas-y-caracter-u2.mp3",
+      "duracion": 42.462313,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-185:lemma",
+          "texto": "strange",
+          "inicio": 0,
+          "fin": 0.863
+        },
+        {
+          "clave": "en-a2-185:ejemplo",
+          "texto": "It’s also stranger. People will think we sell tiles.",
+          "inicio": 1.363,
+          "fin": 4.678
+        },
+        {
+          "clave": "en-a2-186:lemma",
+          "texto": "interesting",
+          "inicio": 5.178,
+          "fin": 5.999
+        },
+        {
+          "clave": "en-a2-186:ejemplo",
+          "texto": "“The Old Tiles” is more interesting than both.",
+          "inicio": 6.499,
+          "fin": 8.828
+        },
+        {
+          "clave": "en-a2-187:lemma",
+          "texto": "difficult",
+          "inicio": 9.328,
+          "fin": 10.113
+        },
+        {
+          "clave": "en-a2-187:ejemplo",
+          "texto": "And the most difficult to clean.",
+          "inicio": 10.613,
+          "fin": 12.168
+        },
+        {
+          "clave": "en-a2-188:lemma",
+          "texto": "smile",
+          "inicio": 12.668,
+          "fin": 13.394
+        },
+        {
+          "clave": "en-a2-188:ejemplo",
+          "texto": "A customer came back at four. She was smiling and she had the key in her hand.",
+          "inicio": 13.894,
+          "fin": 18.629
+        },
+        {
+          "clave": "en-a2-189:lemma",
+          "texto": "laugh",
+          "inicio": 19.129,
+          "fin": 19.562
+        },
+        {
+          "clave": "en-a2-189:ejemplo",
+          "texto": "I was holding two towels and a bucket at the same time, and I was not laughing.",
+          "inicio": 20.062,
+          "fin": 24.595
+        },
+        {
+          "clave": "en-a2-190:lemma",
+          "texto": "behave",
+          "inicio": 25.095,
+          "fin": 25.836
+        },
+        {
+          "clave": "en-a2-190:ejemplo",
+          "texto": "And Max behaved perfectly all morning.",
+          "inicio": 26.336,
+          "fin": 28.189
+        },
+        {
+          "clave": "en-a2-191:lemma",
+          "texto": "regret",
+          "inicio": 28.689,
+          "fin": 29.227
+        },
+        {
+          "clave": "en-a2-191:ejemplo",
+          "texto": "Do you regret leaving your old job?",
+          "inicio": 29.727,
+          "fin": 31.278
+        },
+        {
+          "clave": "en-a2-192:lemma",
+          "texto": "realise",
+          "inicio": 31.778,
+          "fin": 32.599
+        },
+        {
+          "clave": "en-a2-192:ejemplo",
+          "texto": "On the bus home, she realised that the day had felt longer and calmer.",
+          "inicio": 33.099,
+          "fin": 36.941
+        },
+        {
+          "clave": "en-a2-193:lemma",
+          "texto": "hurry",
+          "inicio": 37.441,
+          "fin": 37.833
+        },
+        {
+          "clave": "en-a2-193:ejemplo",
+          "texto": "I’ve learned to wait. Bread taught me that. You can’t hurry bread.",
+          "inicio": 38.333,
+          "fin": 42.462
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "describir-personas-y-caracter",
+      "unidad": 3,
+      "archivo": "public/audio/vocabulario/ingles/a2/describir-personas-y-caracter-u3.mp3",
+      "duracion": 50.587687,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-194:lemma",
+          "texto": "careful",
+          "inicio": 0,
+          "fin": 0.575
+        },
+        {
+          "clave": "en-a2-194:ejemplo",
+          "texto": "The paint was still wet, so we were all very careful with the boxes near the door.",
+          "inicio": 1.075,
+          "fin": 5.667
+        },
+        {
+          "clave": "en-a2-195:lemma",
+          "texto": "gently",
+          "inicio": 6.167,
+          "fin": 6.866
+        },
+        {
+          "clave": "en-a2-195:ejemplo",
+          "texto": "Josh laughed at my pronunciation at first, but he soon began correcting me gently instead.",
+          "inicio": 7.366,
+          "fin": 12.43
+        },
+        {
+          "clave": "en-a2-196:lemma",
+          "texto": "safe",
+          "inicio": 12.93,
+          "fin": 13.531
+        },
+        {
+          "clave": "en-a2-196:ejemplo",
+          "texto": "The library will lend you twenty books. They are old, but nobody reads them here. Will you keep them safe?",
+          "inicio": 14.031,
+          "fin": 20.452
+        },
+        {
+          "clave": "en-a2-197:lemma",
+          "texto": "different",
+          "inicio": 20.952,
+          "fin": 21.536
+        },
+        {
+          "clave": "en-a2-197:ejemplo",
+          "texto": "Later, I helped pack boxes for families with different needs.",
+          "inicio": 22.036,
+          "fin": 25.406
+        },
+        {
+          "clave": "en-a2-198:lemma",
+          "texto": "clear",
+          "inicio": 25.906,
+          "fin": 26.424
+        },
+        {
+          "clave": "en-a2-198:ejemplo",
+          "texto": "Last month, the council tested a clearer plan.",
+          "inicio": 26.924,
+          "fin": 29.3
+        },
+        {
+          "clave": "en-a2-199:lemma",
+          "texto": "bright",
+          "inicio": 29.8,
+          "fin": 30.258
+        },
+        {
+          "clave": "en-a2-199:ejemplo",
+          "texto": "The council will add brighter signs before deciding whether to keep the plan.",
+          "inicio": 30.758,
+          "fin": 34.79
+        },
+        {
+          "clave": "en-a2-200:lemma",
+          "texto": "carefully",
+          "inicio": 35.29,
+          "fin": 36.005
+        },
+        {
+          "clave": "en-a2-200:ejemplo",
+          "texto": "I moved carefully. That’s not the same as fast.",
+          "inicio": 36.505,
+          "fin": 39.126
+        },
+        {
+          "clave": "en-a2-201:lemma",
+          "texto": "fast",
+          "inicio": 39.626,
+          "fin": 40.181
+        },
+        {
+          "clave": "en-a2-201:ejemplo",
+          "texto": "I moved carefully. That’s not the same as fast.",
+          "inicio": 40.681,
+          "fin": 43.047
+        },
+        {
+          "clave": "en-a2-202:lemma",
+          "texto": "quietly",
+          "inicio": 43.547,
+          "fin": 44.404
+        },
+        {
+          "clave": "en-a2-202:ejemplo",
+          "texto": "The first customers came in quietly and looked around slowly. Nobody said a word for five minutes.",
+          "inicio": 44.904,
+          "fin": 50.588
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "describir-personas-y-caracter",
+      "unidad": 4,
+      "archivo": "public/audio/vocabulario/ingles/a2/describir-personas-y-caracter-u4.mp3",
+      "duracion": 43.148549,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-203:lemma",
+          "texto": "slowly",
+          "inicio": 0,
+          "fin": 0.626
+        },
+        {
+          "clave": "en-a2-203:ejemplo",
+          "texto": "The first customers came in quietly and looked around slowly. Nobody said a word for five minutes.",
+          "inicio": 1.126,
+          "fin": 7.095
+        },
+        {
+          "clave": "en-a2-204:lemma",
+          "texto": "softly",
+          "inicio": 7.595,
+          "fin": 8.33
+        },
+        {
+          "clave": "en-a2-204:ejemplo",
+          "texto": "The room worked well. People spoke softly, like in a library. Even the coffee machine sounded quieter.",
+          "inicio": 8.83,
+          "fin": 15.652
+        },
+        {
+          "clave": "en-a2-205:lemma",
+          "texto": "perfectly",
+          "inicio": 16.152,
+          "fin": 17.006
+        },
+        {
+          "clave": "en-a2-205:ejemplo",
+          "texto": "And Max behaved perfectly all morning.",
+          "inicio": 17.506,
+          "fin": 19.5
+        },
+        {
+          "clave": "en-a2-206:lemma",
+          "texto": "easily",
+          "inicio": 20,
+          "fin": 20.815
+        },
+        {
+          "clave": "en-a2-206:ejemplo",
+          "texto": "The bread sold easily. It always did.",
+          "inicio": 21.315,
+          "fin": 23.608
+        },
+        {
+          "clave": "en-a2-207:lemma",
+          "texto": "beautiful",
+          "inicio": 24.108,
+          "fin": 24.7
+        },
+        {
+          "clave": "en-a2-207:ejemplo",
+          "texto": "This is the most beautiful part of the room now. The wood looks different in the morning light.",
+          "inicio": 25.2,
+          "fin": 29.96
+        },
+        {
+          "clave": "en-a2-208:lemma",
+          "texto": "colourful",
+          "inicio": 30.46,
+          "fin": 31.341
+        },
+        {
+          "clave": "en-a2-208:ejemplo",
+          "texto": "This map is the most colourful thing on the wall. It has more colours than the menu.",
+          "inicio": 31.841,
+          "fin": 36.59
+        },
+        {
+          "clave": "en-a2-209:lemma",
+          "texto": "useful",
+          "inicio": 37.09,
+          "fin": 37.626
+        },
+        {
+          "clave": "en-a2-209:ejemplo",
+          "texto": "It’s more useful than the app on my phone.",
+          "inicio": 38.126,
+          "fin": 39.926
+        },
+        {
+          "clave": "en-a2-210:lemma",
+          "texto": "heavy",
+          "inicio": 40.426,
+          "fin": 40.989
+        },
+        {
+          "clave": "en-a2-210:ejemplo",
+          "texto": "It’s the heaviest thing in the room too.",
+          "inicio": 41.489,
+          "fin": 43.149
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "compras-dinero-y-tramites",
+      "unidad": 1,
+      "archivo": "public/audio/vocabulario/ingles/a2/compras-dinero-y-tramites-u1.mp3",
+      "duracion": 55.981474,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-211:lemma",
+          "texto": "market",
+          "inicio": 0,
+          "fin": 0.573
+        },
+        {
+          "clave": "en-a2-211:ejemplo",
+          "texto": "This is the oldest table in the family. Your grandmother chose it in a market in 1968.",
+          "inicio": 1.073,
+          "fin": 6.539
+        },
+        {
+          "clave": "en-a2-212:lemma",
+          "texto": "stall",
+          "inicio": 7.039,
+          "fin": 7.656
+        },
+        {
+          "clave": "en-a2-212:ejemplo",
+          "texto": "Without their phones, they looked carefully at the stalls, talked to the sellers, and tried a new fruit drink.",
+          "inicio": 8.156,
+          "fin": 14.609
+        },
+        {
+          "clave": "en-a2-213:lemma",
+          "texto": "seller",
+          "inicio": 15.109,
+          "fin": 15.706
+        },
+        {
+          "clave": "en-a2-213:ejemplo",
+          "texto": "Without their phones, they looked carefully at the stalls, talked to the sellers, and tried a new fruit drink.",
+          "inicio": 16.206,
+          "fin": 22.235
+        },
+        {
+          "clave": "en-a2-214:lemma",
+          "texto": "list",
+          "inicio": 22.735,
+          "fin": 23.32
+        },
+        {
+          "clave": "en-a2-214:ejemplo",
+          "texto": "Two students walked straight to the book list and read it carefully. They asked if they could take one to the table.",
+          "inicio": 23.82,
+          "fin": 29.794
+        },
+        {
+          "clave": "en-a2-215:lemma",
+          "texto": "basket",
+          "inicio": 30.294,
+          "fin": 30.901
+        },
+        {
+          "clave": "en-a2-215:ejemplo",
+          "texto": "On Saturday 3 June, we will leave a small basket at each door with local information, tea, and a map.",
+          "inicio": 31.401,
+          "fin": 37.915
+        },
+        {
+          "clave": "en-a2-216:lemma",
+          "texto": "spare",
+          "inicio": 38.415,
+          "fin": 39.098
+        },
+        {
+          "clave": "en-a2-216:ejemplo",
+          "texto": "Anyone with spare boxes or garden pots can leave them, clearly labelled, in the hall.",
+          "inicio": 39.598,
+          "fin": 44.295
+        },
+        {
+          "clave": "en-a2-217:lemma",
+          "texto": "cash",
+          "inicio": 44.795,
+          "fin": 45.442
+        },
+        {
+          "clave": "en-a2-217:ejemplo",
+          "texto": "We pay the rent in cash because the machine is broken.",
+          "inicio": 45.942,
+          "fin": 48.797
+        },
+        {
+          "clave": "en-a2-218:lemma",
+          "texto": "receipt",
+          "inicio": 49.297,
+          "fin": 49.977
+        },
+        {
+          "clave": "en-a2-218:ejemplo",
+          "texto": "Keep the receipt if you want to return it.",
+          "inicio": 50.477,
+          "fin": 52.293
+        },
+        {
+          "clave": "en-a2-219:lemma",
+          "texto": "coin",
+          "inicio": 52.793,
+          "fin": 53.299
+        },
+        {
+          "clave": "en-a2-219:ejemplo",
+          "texto": "She gave me two coins and a small paper bag.",
+          "inicio": 53.799,
+          "fin": 55.981
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "compras-dinero-y-tramites",
+      "unidad": 2,
+      "archivo": "public/audio/vocabulario/ingles/a2/compras-dinero-y-tramites-u2.mp3",
+      "duracion": 46.684014,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-220:lemma",
+          "texto": "discount",
+          "inicio": 0,
+          "fin": 0.717
+        },
+        {
+          "clave": "en-a2-220:ejemplo",
+          "texto": "The seller gave us a discount because we bought two.",
+          "inicio": 1.217,
+          "fin": 3.542
+        },
+        {
+          "clave": "en-a2-221:lemma",
+          "texto": "sale",
+          "inicio": 4.042,
+          "fin": 4.597
+        },
+        {
+          "clave": "en-a2-221:ejemplo",
+          "texto": "I bought this jacket in the January sales.",
+          "inicio": 5.097,
+          "fin": 7.276
+        },
+        {
+          "clave": "en-a2-222:lemma",
+          "texto": "queue",
+          "inicio": 7.776,
+          "fin": 8.362
+        },
+        {
+          "clave": "en-a2-222:ejemplo",
+          "texto": "There was a long queue outside the bakery on Saturday.",
+          "inicio": 8.862,
+          "fin": 11.578
+        },
+        {
+          "clave": "en-a2-223:lemma",
+          "texto": "accounting",
+          "inicio": 12.078,
+          "fin": 12.756
+        },
+        {
+          "clave": "en-a2-223:ejemplo",
+          "texto": "We have a lot of ideas and very little money. The jar is the only accounting we have.",
+          "inicio": 13.256,
+          "fin": 18.275
+        },
+        {
+          "clave": "en-a2-224:lemma",
+          "texto": "few",
+          "inicio": 18.775,
+          "fin": 19.321
+        },
+        {
+          "clave": "en-a2-224:ejemplo",
+          "texto": "We have a few cups, but we don’t have many plates.",
+          "inicio": 19.821,
+          "fin": 22.135
+        },
+        {
+          "clave": "en-a2-225:lemma",
+          "texto": "whole",
+          "inicio": 22.635,
+          "fin": 23.23
+        },
+        {
+          "clave": "en-a2-225:ejemplo",
+          "texto": "Ninety dollars. That’s not much for a whole month, and the rent takes half of it.",
+          "inicio": 23.73,
+          "fin": 28.699
+        },
+        {
+          "clave": "en-a2-226:lemma",
+          "texto": "lower",
+          "inicio": 29.199,
+          "fin": 29.69
+        },
+        {
+          "clave": "en-a2-226:ejemplo",
+          "texto": "It’s low. Nobody rented it for two years, so we talked and he lowered it.",
+          "inicio": 30.19,
+          "fin": 34.59
+        },
+        {
+          "clave": "en-a2-227:lemma",
+          "texto": "twelve",
+          "inicio": 35.09,
+          "fin": 35.721
+        },
+        {
+          "clave": "en-a2-227:ejemplo",
+          "texto": "We’ve never had more than twelve chairs. Twelve is what fits between the tables.",
+          "inicio": 36.221,
+          "fin": 40.569
+        },
+        {
+          "clave": "en-a2-228:lemma",
+          "texto": "sixty",
+          "inicio": 41.069,
+          "fin": 41.82
+        },
+        {
+          "clave": "en-a2-228:ejemplo",
+          "texto": "Monthly? That’s going to be a lot of bread. Sixty loaves, maybe more.",
+          "inicio": 42.32,
+          "fin": 46.684
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "compras-dinero-y-tramites",
+      "unidad": 3,
+      "archivo": "public/audio/vocabulario/ingles/a2/compras-dinero-y-tramites-u3.mp3",
+      "duracion": 52.319048,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-229:lemma",
+          "texto": "monthly",
+          "inicio": 0,
+          "fin": 0.644
+        },
+        {
+          "clave": "en-a2-229:ejemplo",
+          "texto": "Monthly? That’s going to be a lot of bread. Sixty loaves, maybe more.",
+          "inicio": 1.144,
+          "fin": 6.093
+        },
+        {
+          "clave": "en-a2-230:lemma",
+          "texto": "second",
+          "inicio": 6.593,
+          "fin": 7.144
+        },
+        {
+          "clave": "en-a2-230:ejemplo",
+          "texto": "Because places are limited, the centre keeps a short waiting list and opens a second group on Thursday whenever enough people ask.",
+          "inicio": 7.644,
+          "fin": 14.628
+        },
+        {
+          "clave": "en-a2-231:lemma",
+          "texto": "limited",
+          "inicio": 15.128,
+          "fin": 15.745
+        },
+        {
+          "clave": "en-a2-231:ejemplo",
+          "texto": "Because places are limited, the centre keeps a short waiting list and opens a second group on Thursday whenever enough people ask.",
+          "inicio": 16.245,
+          "fin": 22.968
+        },
+        {
+          "clave": "en-a2-232:lemma",
+          "texto": "part",
+          "inicio": 23.468,
+          "fin": 23.897
+        },
+        {
+          "clave": "en-a2-232:ejemplo",
+          "texto": "He fixed two pipes, but he didn’t finish the third one, because he didn’t have the right part.",
+          "inicio": 24.397,
+          "fin": 29.355
+        },
+        {
+          "clave": "en-a2-233:lemma",
+          "texto": "third",
+          "inicio": 29.855,
+          "fin": 30.358
+        },
+        {
+          "clave": "en-a2-233:ejemplo",
+          "texto": "He fixed two pipes, but he didn’t finish the third one, because he didn’t have the right part.",
+          "inicio": 30.858,
+          "fin": 35.419
+        },
+        {
+          "clave": "en-a2-234:lemma",
+          "texto": "add",
+          "inicio": 35.919,
+          "fin": 36.315
+        },
+        {
+          "clave": "en-a2-234:ejemplo",
+          "texto": "The taxi driver added the best spot for the sunset.",
+          "inicio": 36.815,
+          "fin": 39.246
+        },
+        {
+          "clave": "en-a2-235:lemma",
+          "texto": "council",
+          "inicio": 39.746,
+          "fin": 40.399
+        },
+        {
+          "clave": "en-a2-235:ejemplo",
+          "texto": "Last month, the council tested a clearer plan.",
+          "inicio": 40.899,
+          "fin": 43.357
+        },
+        {
+          "clave": "en-a2-236:lemma",
+          "texto": "reminder",
+          "inicio": 43.857,
+          "fin": 44.738
+        },
+        {
+          "clave": "en-a2-236:ejemplo",
+          "texto": "A reminder card explained what could not go in the bags.",
+          "inicio": 45.238,
+          "fin": 48.062
+        },
+        {
+          "clave": "en-a2-237:lemma",
+          "texto": "receive",
+          "inicio": 48.562,
+          "fin": 49.212
+        },
+        {
+          "clave": "en-a2-237:ejemplo",
+          "texto": "Each street received a colour and a collection day.",
+          "inicio": 49.712,
+          "fin": 52.319
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "compras-dinero-y-tramites",
+      "unidad": 4,
+      "archivo": "public/audio/vocabulario/ingles/a2/compras-dinero-y-tramites-u4.mp3",
+      "duracion": 37.77585,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-238:lemma",
+          "texto": "collection",
+          "inicio": 0,
+          "fin": 0.772
+        },
+        {
+          "clave": "en-a2-238:ejemplo",
+          "texto": "Each street received a colour and a collection day.",
+          "inicio": 1.272,
+          "fin": 3.829
+        },
+        {
+          "clave": "en-a2-239:lemma",
+          "texto": "paper",
+          "inicio": 4.329,
+          "fin": 4.946
+        },
+        {
+          "clave": "en-a2-239:ejemplo",
+          "texto": "I signed the papers yesterday. The owner wanted a fast answer, so I decided on the same day.",
+          "inicio": 5.446,
+          "fin": 10.78
+        },
+        {
+          "clave": "en-a2-240:lemma",
+          "texto": "yesterday",
+          "inicio": 11.28,
+          "fin": 11.98
+        },
+        {
+          "clave": "en-a2-240:ejemplo",
+          "texto": "I signed the papers yesterday. The owner wanted a fast answer, so I decided on the same day.",
+          "inicio": 12.48,
+          "fin": 17.726
+        },
+        {
+          "clave": "en-a2-241:lemma",
+          "texto": "already",
+          "inicio": 18.226,
+          "fin": 18.905
+        },
+        {
+          "clave": "en-a2-241:ejemplo",
+          "texto": "Grandpa has already put his key on the wall.",
+          "inicio": 19.405,
+          "fin": 21.272
+        },
+        {
+          "clave": "en-a2-242:lemma",
+          "texto": "form",
+          "inicio": 21.772,
+          "fin": 22.389
+        },
+        {
+          "clave": "en-a2-242:ejemplo",
+          "texto": "You have to fill in a form before you can use the room.",
+          "inicio": 22.889,
+          "fin": 25.465
+        },
+        {
+          "clave": "en-a2-243:lemma",
+          "texto": "document",
+          "inicio": 25.965,
+          "fin": 26.69
+        },
+        {
+          "clave": "en-a2-243:ejemplo",
+          "texto": "Bring your documents if you want to open an account.",
+          "inicio": 27.19,
+          "fin": 29.322
+        },
+        {
+          "clave": "en-a2-244:lemma",
+          "texto": "appointment",
+          "inicio": 29.822,
+          "fin": 30.598
+        },
+        {
+          "clave": "en-a2-244:ejemplo",
+          "texto": "I made an appointment for Monday morning.",
+          "inicio": 31.098,
+          "fin": 32.901
+        },
+        {
+          "clave": "en-a2-245:lemma",
+          "texto": "refund",
+          "inicio": 33.401,
+          "fin": 34.132
+        },
+        {
+          "clave": "en-a2-245:ejemplo",
+          "texto": "They gave us a refund because the machine did not work.",
+          "inicio": 34.632,
+          "fin": 37.776
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "viajes-y-transporte",
+      "unidad": 1,
+      "archivo": "public/audio/vocabulario/ingles/a2/viajes-y-transporte-u1.mp3",
+      "duracion": 65.05068,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-246:lemma",
+          "texto": "route",
+          "inicio": 0,
+          "fin": 0.52
+        },
+        {
+          "clave": "en-a2-246:ejemplo",
+          "texto": "Because heavy rain has flooded the road beside Hill Farm, bus 18 will use a different route this afternoon.",
+          "inicio": 1.02,
+          "fin": 6.845
+        },
+        {
+          "clave": "en-a2-247:lemma",
+          "texto": "road",
+          "inicio": 7.345,
+          "fin": 7.947
+        },
+        {
+          "clave": "en-a2-247:ejemplo",
+          "texto": "Because heavy rain has flooded the road beside Hill Farm, bus 18 will use a different route this afternoon.",
+          "inicio": 8.447,
+          "fin": 14.188
+        },
+        {
+          "clave": "en-a2-248:lemma",
+          "texto": "bridge",
+          "inicio": 14.688,
+          "fin": 15.308
+        },
+        {
+          "clave": "en-a2-248:ejemplo",
+          "texto": "From two until six, it will stop at Oak Street and the sports centre, but it will not stop at Hill Farm or the old bridge.",
+          "inicio": 15.808,
+          "fin": 22.756
+        },
+        {
+          "clave": "en-a2-249:lemma",
+          "texto": "farm",
+          "inicio": 23.256,
+          "fin": 23.832
+        },
+        {
+          "clave": "en-a2-249:ejemplo",
+          "texto": "Passengers going to the farm should leave the bus at Oak Street and walk for about twelve minutes.",
+          "inicio": 24.332,
+          "fin": 29.5
+        },
+        {
+          "clave": "en-a2-250:lemma",
+          "texto": "transport",
+          "inicio": 30,
+          "fin": 30.704
+        },
+        {
+          "clave": "en-a2-250:ejemplo",
+          "texto": "The transport office expects the normal route to return tomorrow morning, if the water level falls.",
+          "inicio": 31.204,
+          "fin": 36.259
+        },
+        {
+          "clave": "en-a2-251:lemma",
+          "texto": "return",
+          "inicio": 36.759,
+          "fin": 37.447
+        },
+        {
+          "clave": "en-a2-251:ejemplo",
+          "texto": "The transport office expects the normal route to return tomorrow morning, if the water level falls.",
+          "inicio": 37.947,
+          "fin": 42.859
+        },
+        {
+          "clave": "en-a2-252:lemma",
+          "texto": "taxi",
+          "inicio": 43.359,
+          "fin": 44.054
+        },
+        {
+          "clave": "en-a2-252:ejemplo",
+          "texto": "Anyone with heavy bags or reduced mobility can call the transport office and ask about a short taxi link from Oak Street.",
+          "inicio": 44.554,
+          "fin": 51.734
+        },
+        {
+          "clave": "en-a2-253:lemma",
+          "texto": "mobility",
+          "inicio": 52.234,
+          "fin": 52.998
+        },
+        {
+          "clave": "en-a2-253:ejemplo",
+          "texto": "Anyone with heavy bags or reduced mobility can call the transport office and ask about a short taxi link from Oak Street.",
+          "inicio": 53.498,
+          "fin": 60.229
+        },
+        {
+          "clave": "en-a2-254:lemma",
+          "texto": "travel",
+          "inicio": 60.729,
+          "fin": 61.339
+        },
+        {
+          "clave": "en-a2-254:ejemplo",
+          "texto": "Check the website before travelling because another change is possible.",
+          "inicio": 61.839,
+          "fin": 65.051
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "viajes-y-transporte",
+      "unidad": 2,
+      "archivo": "public/audio/vocabulario/ingles/a2/viajes-y-transporte-u2.mp3",
+      "duracion": 57.799637,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-255:lemma",
+          "texto": "gate",
+          "inicio": 0,
+          "fin": 0.358
+        },
+        {
+          "clave": "en-a2-255:ejemplo",
+          "texto": "We will meet at the main gate at nine thirty and finish around one.",
+          "inicio": 0.858,
+          "fin": 3.805
+        },
+        {
+          "clave": "en-a2-256:lemma",
+          "texto": "main",
+          "inicio": 4.305,
+          "fin": 4.896
+        },
+        {
+          "clave": "en-a2-256:ejemplo",
+          "texto": "We will meet at the main gate at nine thirty and finish around one.",
+          "inicio": 5.396,
+          "fin": 8.456
+        },
+        {
+          "clave": "en-a2-257:lemma",
+          "texto": "direction",
+          "inicio": 8.956,
+          "fin": 9.691
+        },
+        {
+          "clave": "en-a2-257:ejemplo",
+          "texto": "By Friday, I could order lunch, ask for directions, and join conversations without translating every sentence in my head.",
+          "inicio": 10.191,
+          "fin": 17.774
+        },
+        {
+          "clave": "en-a2-258:lemma",
+          "texto": "van",
+          "inicio": 18.274,
+          "fin": 18.674
+        },
+        {
+          "clave": "en-a2-258:ejemplo",
+          "texto": "The group also asks everyone to keep the two visitor parking spaces free during that weekend, so the removal vans have room to unload.",
+          "inicio": 19.174,
+          "fin": 26.293
+        },
+        {
+          "clave": "en-a2-259:lemma",
+          "texto": "parking",
+          "inicio": 26.793,
+          "fin": 27.499
+        },
+        {
+          "clave": "en-a2-259:ejemplo",
+          "texto": "The group also asks everyone to keep the two visitor parking spaces free during that weekend, so the removal vans have room to unload.",
+          "inicio": 27.999,
+          "fin": 35.466
+        },
+        {
+          "clave": "en-a2-260:lemma",
+          "texto": "past",
+          "inicio": 35.966,
+          "fin": 36.551
+        },
+        {
+          "clave": "en-a2-260:ejemplo",
+          "texto": "I walked past this door for twenty years. I never looked inside. I always crossed the street before the corner.",
+          "inicio": 37.051,
+          "fin": 44.275
+        },
+        {
+          "clave": "en-a2-261:lemma",
+          "texto": "stay",
+          "inicio": 44.775,
+          "fin": 45.375
+        },
+        {
+          "clave": "en-a2-261:ejemplo",
+          "texto": "If it rains, we’ll move the small tables inside. The big table stays where it is.",
+          "inicio": 45.875,
+          "fin": 51.043
+        },
+        {
+          "clave": "en-a2-262:lemma",
+          "texto": "trip",
+          "inicio": 51.543,
+          "fin": 51.839
+        },
+        {
+          "clave": "en-a2-262:ejemplo",
+          "texto": "We are going on a school trip next month.",
+          "inicio": 52.339,
+          "fin": 53.955
+        },
+        {
+          "clave": "en-a2-263:lemma",
+          "texto": "journey",
+          "inicio": 54.455,
+          "fin": 54.931
+        },
+        {
+          "clave": "en-a2-263:ejemplo",
+          "texto": "The journey to the airport takes forty minutes by bus.",
+          "inicio": 55.431,
+          "fin": 57.8
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "viajes-y-transporte",
+      "unidad": 3,
+      "archivo": "public/audio/vocabulario/ingles/a2/viajes-y-transporte-u3.mp3",
+      "duracion": 32.555646,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-264:lemma",
+          "texto": "airport",
+          "inicio": 0,
+          "fin": 0.721
+        },
+        {
+          "clave": "en-a2-264:ejemplo",
+          "texto": "We arrived at the airport two hours early.",
+          "inicio": 1.221,
+          "fin": 3.497
+        },
+        {
+          "clave": "en-a2-265:lemma",
+          "texto": "flight",
+          "inicio": 3.997,
+          "fin": 4.579
+        },
+        {
+          "clave": "en-a2-265:ejemplo",
+          "texto": "Our flight leaves at six in the morning.",
+          "inicio": 5.079,
+          "fin": 6.834
+        },
+        {
+          "clave": "en-a2-266:lemma",
+          "texto": "plane",
+          "inicio": 7.334,
+          "fin": 7.919
+        },
+        {
+          "clave": "en-a2-266:ejemplo",
+          "texto": "The plane was full, but we found two seats together.",
+          "inicio": 8.419,
+          "fin": 11.028
+        },
+        {
+          "clave": "en-a2-267:lemma",
+          "texto": "luggage",
+          "inicio": 11.528,
+          "fin": 12.195
+        },
+        {
+          "clave": "en-a2-267:ejemplo",
+          "texto": "You can take one bag as hand luggage.",
+          "inicio": 12.695,
+          "fin": 14.489
+        },
+        {
+          "clave": "en-a2-268:lemma",
+          "texto": "suitcase",
+          "inicio": 14.989,
+          "fin": 15.815
+        },
+        {
+          "clave": "en-a2-268:ejemplo",
+          "texto": "I packed my suitcase the night before.",
+          "inicio": 16.315,
+          "fin": 18.137
+        },
+        {
+          "clave": "en-a2-269:lemma",
+          "texto": "hotel",
+          "inicio": 18.637,
+          "fin": 19.351
+        },
+        {
+          "clave": "en-a2-269:ejemplo",
+          "texto": "We stayed at a small hotel near the station.",
+          "inicio": 19.851,
+          "fin": 22.008
+        },
+        {
+          "clave": "en-a2-270:lemma",
+          "texto": "booking",
+          "inicio": 22.508,
+          "fin": 23.107
+        },
+        {
+          "clave": "en-a2-270:ejemplo",
+          "texto": "I made the booking online last week.",
+          "inicio": 23.607,
+          "fin": 25.577
+        },
+        {
+          "clave": "en-a2-271:lemma",
+          "texto": "seat",
+          "inicio": 26.077,
+          "fin": 26.502
+        },
+        {
+          "clave": "en-a2-271:ejemplo",
+          "texto": "There were no seats left on the last bus.",
+          "inicio": 27.002,
+          "fin": 28.924
+        },
+        {
+          "clave": "en-a2-272:lemma",
+          "texto": "delay",
+          "inicio": 29.424,
+          "fin": 29.964
+        },
+        {
+          "clave": "en-a2-272:ejemplo",
+          "texto": "There was a delay because of the heavy rain.",
+          "inicio": 30.464,
+          "fin": 32.556
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "viajes-y-transporte",
+      "unidad": 4,
+      "archivo": "public/audio/vocabulario/ingles/a2/viajes-y-transporte-u4.mp3",
+      "duracion": 30.273039,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-273:lemma",
+          "texto": "traffic",
+          "inicio": 0,
+          "fin": 0.58
+        },
+        {
+          "clave": "en-a2-273:ejemplo",
+          "texto": "There is a lot of traffic on the main road today.",
+          "inicio": 1.08,
+          "fin": 3.297
+        },
+        {
+          "clave": "en-a2-274:lemma",
+          "texto": "abroad",
+          "inicio": 3.797,
+          "fin": 4.445
+        },
+        {
+          "clave": "en-a2-274:ejemplo",
+          "texto": "My sister is going to study abroad next year.",
+          "inicio": 4.945,
+          "fin": 7.021
+        },
+        {
+          "clave": "en-a2-275:lemma",
+          "texto": "arrival",
+          "inicio": 7.521,
+          "fin": 8.26
+        },
+        {
+          "clave": "en-a2-275:ejemplo",
+          "texto": "The arrival time is on the ticket.",
+          "inicio": 8.76,
+          "fin": 10.335
+        },
+        {
+          "clave": "en-a2-276:lemma",
+          "texto": "departure",
+          "inicio": 10.835,
+          "fin": 11.455
+        },
+        {
+          "clave": "en-a2-276:ejemplo",
+          "texto": "We looked at the departure board twice.",
+          "inicio": 11.955,
+          "fin": 13.918
+        },
+        {
+          "clave": "en-a2-277:lemma",
+          "texto": "motorway",
+          "inicio": 14.418,
+          "fin": 15.126
+        },
+        {
+          "clave": "en-a2-277:ejemplo",
+          "texto": "The motorway was closed, so the bus used a different route.",
+          "inicio": 15.626,
+          "fin": 18.921
+        },
+        {
+          "clave": "en-a2-278:lemma",
+          "texto": "tour",
+          "inicio": 19.421,
+          "fin": 19.994
+        },
+        {
+          "clave": "en-a2-278:ejemplo",
+          "texto": "The guided tour starts at the main entrance.",
+          "inicio": 20.494,
+          "fin": 22.259
+        },
+        {
+          "clave": "en-a2-279:lemma",
+          "texto": "passport",
+          "inicio": 22.759,
+          "fin": 23.357
+        },
+        {
+          "clave": "en-a2-279:ejemplo",
+          "texto": "You have to show your passport at the airport.",
+          "inicio": 23.857,
+          "fin": 25.96
+        },
+        {
+          "clave": "en-a2-280:lemma",
+          "texto": "guest",
+          "inicio": 26.46,
+          "fin": 27.02
+        },
+        {
+          "clave": "en-a2-280:ejemplo",
+          "texto": "The hotel gives every guest a small map of the city.",
+          "inicio": 27.52,
+          "fin": 30.273
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "clima-naturaleza-y-entorno",
+      "unidad": 1,
+      "archivo": "public/audio/vocabulario/ingles/a2/clima-naturaleza-y-entorno-u1.mp3",
+      "duracion": 46.398367,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-281:lemma",
+          "texto": "forecast",
+          "inicio": 0,
+          "fin": 0.907
+        },
+        {
+          "clave": "en-a2-281:ejemplo",
+          "texto": "If it rains on Saturday, what will we do? The forecast says rain all weekend.",
+          "inicio": 1.407,
+          "fin": 6.46
+        },
+        {
+          "clave": "en-a2-282:lemma",
+          "texto": "storm",
+          "inicio": 6.96,
+          "fin": 7.586
+        },
+        {
+          "clave": "en-a2-282:ejemplo",
+          "texto": "The weather forecast says there may be light rain, so we will work unless there is a storm.",
+          "inicio": 8.086,
+          "fin": 12.952
+        },
+        {
+          "clave": "en-a2-283:lemma",
+          "texto": "unless",
+          "inicio": 13.452,
+          "fin": 14.05
+        },
+        {
+          "clave": "en-a2-283:ejemplo",
+          "texto": "The weather forecast says there may be light rain, so we will work unless there is a storm.",
+          "inicio": 14.55,
+          "fin": 19.344
+        },
+        {
+          "clave": "en-a2-284:lemma",
+          "texto": "wet",
+          "inicio": 19.844,
+          "fin": 20.38
+        },
+        {
+          "clave": "en-a2-284:ejemplo",
+          "texto": "The paint was still wet, so we were all very careful with the boxes near the door.",
+          "inicio": 20.88,
+          "fin": 24.992
+        },
+        {
+          "clave": "en-a2-285:lemma",
+          "texto": "dry",
+          "inicio": 25.492,
+          "fin": 26.177
+        },
+        {
+          "clave": "en-a2-285:ejemplo",
+          "texto": "First, we are going to remove dry leaves and prepare four planting areas.",
+          "inicio": 26.677,
+          "fin": 30.594
+        },
+        {
+          "clave": "en-a2-286:lemma",
+          "texto": "sky",
+          "inicio": 31.094,
+          "fin": 31.725
+        },
+        {
+          "clave": "en-a2-286:ejemplo",
+          "texto": "The sky was grey all morning, but it did not rain.",
+          "inicio": 32.225,
+          "fin": 35.2
+        },
+        {
+          "clave": "en-a2-287:lemma",
+          "texto": "cloud",
+          "inicio": 35.7,
+          "fin": 36.249
+        },
+        {
+          "clave": "en-a2-287:ejemplo",
+          "texto": "There were big grey clouds over the street.",
+          "inicio": 36.749,
+          "fin": 38.638
+        },
+        {
+          "clave": "en-a2-288:lemma",
+          "texto": "sun",
+          "inicio": 39.138,
+          "fin": 39.686
+        },
+        {
+          "clave": "en-a2-288:ejemplo",
+          "texto": "We put two tables outside when the sun comes out.",
+          "inicio": 40.186,
+          "fin": 42.926
+        },
+        {
+          "clave": "en-a2-289:lemma",
+          "texto": "wind",
+          "inicio": 43.426,
+          "fin": 44.027
+        },
+        {
+          "clave": "en-a2-289:ejemplo",
+          "texto": "The wind was very strong on Saturday morning.",
+          "inicio": 44.527,
+          "fin": 46.398
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "clima-naturaleza-y-entorno",
+      "unidad": 2,
+      "archivo": "public/audio/vocabulario/ingles/a2/clima-naturaleza-y-entorno-u2.mp3",
+      "duracion": 46.976916,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-290:lemma",
+          "texto": "fog",
+          "inicio": 0,
+          "fin": 0.383
+        },
+        {
+          "clave": "en-a2-290:ejemplo",
+          "texto": "There was fog on the road beside the farm.",
+          "inicio": 0.883,
+          "fin": 2.891
+        },
+        {
+          "clave": "en-a2-291:lemma",
+          "texto": "ice",
+          "inicio": 3.391,
+          "fin": 3.876
+        },
+        {
+          "clave": "en-a2-291:ejemplo",
+          "texto": "There was ice on the street early in the morning.",
+          "inicio": 4.376,
+          "fin": 6.669
+        },
+        {
+          "clave": "en-a2-292:lemma",
+          "texto": "temperature",
+          "inicio": 7.169,
+          "fin": 7.838
+        },
+        {
+          "clave": "en-a2-292:ejemplo",
+          "texto": "The temperature falls a lot at night in winter.",
+          "inicio": 8.338,
+          "fin": 10.55
+        },
+        {
+          "clave": "en-a2-293:lemma",
+          "texto": "leaf",
+          "inicio": 11.05,
+          "fin": 11.355
+        },
+        {
+          "clave": "en-a2-293:ejemplo",
+          "texto": "First, we are going to remove dry leaves and prepare four planting areas.",
+          "inicio": 11.855,
+          "fin": 16.82
+        },
+        {
+          "clave": "en-a2-294:lemma",
+          "texto": "plant",
+          "inicio": 17.32,
+          "fin": 18.041
+        },
+        {
+          "clave": "en-a2-294:ejemplo",
+          "texto": "After that, volunteers can choose between painting the wooden signs and planting herbs.",
+          "inicio": 18.541,
+          "fin": 22.856
+        },
+        {
+          "clave": "en-a2-295:lemma",
+          "texto": "herb",
+          "inicio": 23.356,
+          "fin": 23.851
+        },
+        {
+          "clave": "en-a2-295:ejemplo",
+          "texto": "After that, volunteers can choose between painting the wooden signs and planting herbs.",
+          "inicio": 24.351,
+          "fin": 28.742
+        },
+        {
+          "clave": "en-a2-296:lemma",
+          "texto": "flower",
+          "inicio": 29.242,
+          "fin": 29.876
+        },
+        {
+          "clave": "en-a2-296:ejemplo",
+          "texto": "At the market, Maya waited beside the flower shop, their usual meeting place.",
+          "inicio": 30.376,
+          "fin": 34.932
+        },
+        {
+          "clave": "en-a2-297:lemma",
+          "texto": "pot",
+          "inicio": 35.432,
+          "fin": 35.775
+        },
+        {
+          "clave": "en-a2-297:ejemplo",
+          "texto": "Anyone with spare boxes or garden pots can leave them, clearly labelled, in the hall.",
+          "inicio": 36.275,
+          "fin": 40.844
+        },
+        {
+          "clave": "en-a2-298:lemma",
+          "texto": "wood",
+          "inicio": 41.344,
+          "fin": 41.803
+        },
+        {
+          "clave": "en-a2-298:ejemplo",
+          "texto": "This is the most beautiful part of the room now. The wood looks different in the morning light.",
+          "inicio": 42.303,
+          "fin": 46.977
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "clima-naturaleza-y-entorno",
+      "unidad": 3,
+      "archivo": "public/audio/vocabulario/ingles/a2/clima-naturaleza-y-entorno-u3.mp3",
+      "duracion": 46.72966,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-299:lemma",
+          "texto": "tree",
+          "inicio": 0,
+          "fin": 0.581
+        },
+        {
+          "clave": "en-a2-299:ejemplo",
+          "texto": "There are two old trees in the community garden.",
+          "inicio": 1.081,
+          "fin": 3.396
+        },
+        {
+          "clave": "en-a2-300:lemma",
+          "texto": "grass",
+          "inicio": 3.896,
+          "fin": 4.55
+        },
+        {
+          "clave": "en-a2-300:ejemplo",
+          "texto": "The children played on the grass all afternoon.",
+          "inicio": 5.05,
+          "fin": 7.113
+        },
+        {
+          "clave": "en-a2-301:lemma",
+          "texto": "river",
+          "inicio": 7.613,
+          "fin": 8.102
+        },
+        {
+          "clave": "en-a2-301:ejemplo",
+          "texto": "We walked beside the river for an hour.",
+          "inicio": 8.602,
+          "fin": 10.441
+        },
+        {
+          "clave": "en-a2-302:lemma",
+          "texto": "mountain",
+          "inicio": 10.941,
+          "fin": 11.53
+        },
+        {
+          "clave": "en-a2-302:ejemplo",
+          "texto": "In winter we go to the mountains for two days.",
+          "inicio": 12.03,
+          "fin": 14.289
+        },
+        {
+          "clave": "en-a2-303:lemma",
+          "texto": "beach",
+          "inicio": 14.789,
+          "fin": 15.357
+        },
+        {
+          "clave": "en-a2-303:ejemplo",
+          "texto": "The beach is quieter in October than in July.",
+          "inicio": 15.857,
+          "fin": 18.23
+        },
+        {
+          "clave": "en-a2-304:lemma",
+          "texto": "forest",
+          "inicio": 18.73,
+          "fin": 19.499
+        },
+        {
+          "clave": "en-a2-304:ejemplo",
+          "texto": "The forest is very quiet early in the morning.",
+          "inicio": 19.999,
+          "fin": 22.299
+        },
+        {
+          "clave": "en-a2-305:lemma",
+          "texto": "recycling",
+          "inicio": 22.799,
+          "fin": 23.68
+        },
+        {
+          "clave": "en-a2-305:ejemplo",
+          "texto": "The residents of Brookfield used to put recycling bags outside on different days, and the collection team often missed some streets.",
+          "inicio": 24.18,
+          "fin": 31.1
+        },
+        {
+          "clave": "en-a2-306:lemma",
+          "texto": "glass",
+          "inicio": 31.6,
+          "fin": 32.228
+        },
+        {
+          "clave": "en-a2-306:ejemplo",
+          "texto": "Blue streets put paper and cardboard outside on Monday, while green streets put glass and metal outside on Tuesday.",
+          "inicio": 32.728,
+          "fin": 39.256
+        },
+        {
+          "clave": "en-a2-307:lemma",
+          "texto": "metal",
+          "inicio": 39.756,
+          "fin": 40.198
+        },
+        {
+          "clave": "en-a2-307:ejemplo",
+          "texto": "Blue streets put paper and cardboard outside on Monday, while green streets put glass and metal outside on Tuesday.",
+          "inicio": 40.698,
+          "fin": 46.73
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "clima-naturaleza-y-entorno",
+      "unidad": 4,
+      "archivo": "public/audio/vocabulario/ingles/a2/clima-naturaleza-y-entorno-u4.mp3",
+      "duracion": 40.469456,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-308:lemma",
+          "texto": "material",
+          "inicio": 0,
+          "fin": 0.791
+        },
+        {
+          "clave": "en-a2-308:ejemplo",
+          "texto": "After four weeks, fewer bags contained the wrong materials, but some residents said the colour system was confusing at night.",
+          "inicio": 1.291,
+          "fin": 8.537
+        },
+        {
+          "clave": "en-a2-309:lemma",
+          "texto": "tool",
+          "inicio": 9.037,
+          "fin": 9.596
+        },
+        {
+          "clave": "en-a2-309:ejemplo",
+          "texto": "Bring gardening gloves if you have them, but we can lend tools and gloves to twenty people.",
+          "inicio": 10.096,
+          "fin": 14.416
+        },
+        {
+          "clave": "en-a2-310:lemma",
+          "texto": "glove",
+          "inicio": 14.916,
+          "fin": 15.328
+        },
+        {
+          "clave": "en-a2-310:ejemplo",
+          "texto": "Bring gardening gloves if you have them, but we can lend tools and gloves to twenty people.",
+          "inicio": 15.828,
+          "fin": 20.452
+        },
+        {
+          "clave": "en-a2-311:lemma",
+          "texto": "prepare",
+          "inicio": 20.952,
+          "fin": 21.624
+        },
+        {
+          "clave": "en-a2-311:ejemplo",
+          "texto": "Subject: Help us prepare the community garden.",
+          "inicio": 22.124,
+          "fin": 24.41
+        },
+        {
+          "clave": "en-a2-312:lemma",
+          "texto": "rubbish",
+          "inicio": 24.91,
+          "fin": 25.513
+        },
+        {
+          "clave": "en-a2-312:ejemplo",
+          "texto": "We take the rubbish out before eight in the morning.",
+          "inicio": 26.013,
+          "fin": 28.462
+        },
+        {
+          "clave": "en-a2-313:lemma",
+          "texto": "environment",
+          "inicio": 28.962,
+          "fin": 29.794
+        },
+        {
+          "clave": "en-a2-313:ejemplo",
+          "texto": "Recycling is better for the environment.",
+          "inicio": 30.294,
+          "fin": 32.308
+        },
+        {
+          "clave": "en-a2-314:lemma",
+          "texto": "pollution",
+          "inicio": 32.808,
+          "fin": 33.422
+        },
+        {
+          "clave": "en-a2-314:ejemplo",
+          "texto": "There is more pollution in the city than in the mountains.",
+          "inicio": 33.922,
+          "fin": 36.923
+        },
+        {
+          "clave": "en-a2-315:lemma",
+          "texto": "energy",
+          "inicio": 37.423,
+          "fin": 37.993
+        },
+        {
+          "clave": "en-a2-315:ejemplo",
+          "texto": "We turn off the lights to save energy.",
+          "inicio": 38.493,
+          "fin": 40.469
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "salud-y-consulta-medica",
+      "unidad": 1,
+      "archivo": "public/audio/vocabulario/ingles/a2/salud-y-consulta-medica-u1.mp3",
+      "duracion": 32.044172,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-316:lemma",
+          "texto": "health",
+          "inicio": 0,
+          "fin": 0.507
+        },
+        {
+          "clave": "en-a2-316:ejemplo",
+          "texto": "Walking to work every day is good for your health.",
+          "inicio": 1.007,
+          "fin": 3.069
+        },
+        {
+          "clave": "en-a2-317:lemma",
+          "texto": "healthy",
+          "inicio": 3.569,
+          "fin": 4.21
+        },
+        {
+          "clave": "en-a2-317:ejemplo",
+          "texto": "Vegetable soup is healthier than a sandwich.",
+          "inicio": 4.71,
+          "fin": 6.836
+        },
+        {
+          "clave": "en-a2-318:lemma",
+          "texto": "ill",
+          "inicio": 7.336,
+          "fin": 7.64
+        },
+        {
+          "clave": "en-a2-318:ejemplo",
+          "texto": "Leo was ill last week, so we opened late.",
+          "inicio": 8.14,
+          "fin": 10.534
+        },
+        {
+          "clave": "en-a2-319:lemma",
+          "texto": "pain",
+          "inicio": 11.034,
+          "fin": 11.627
+        },
+        {
+          "clave": "en-a2-319:ejemplo",
+          "texto": "I had a bad pain in my back all morning.",
+          "inicio": 12.127,
+          "fin": 13.949
+        },
+        {
+          "clave": "en-a2-320:lemma",
+          "texto": "cut",
+          "inicio": 14.449,
+          "fin": 15.026
+        },
+        {
+          "clave": "en-a2-320:ejemplo",
+          "texto": "She has a small cut on her finger.",
+          "inicio": 15.526,
+          "fin": 17.275
+        },
+        {
+          "clave": "en-a2-321:lemma",
+          "texto": "stomach",
+          "inicio": 17.775,
+          "fin": 18.362
+        },
+        {
+          "clave": "en-a2-321:ejemplo",
+          "texto": "My stomach hurts when I eat too fast.",
+          "inicio": 18.862,
+          "fin": 20.878
+        },
+        {
+          "clave": "en-a2-322:lemma",
+          "texto": "throat",
+          "inicio": 21.378,
+          "fin": 21.886
+        },
+        {
+          "clave": "en-a2-322:ejemplo",
+          "texto": "I have a sore throat and I can’t speak much.",
+          "inicio": 22.386,
+          "fin": 24.391
+        },
+        {
+          "clave": "en-a2-323:lemma",
+          "texto": "knee",
+          "inicio": 24.891,
+          "fin": 25.322
+        },
+        {
+          "clave": "en-a2-323:ejemplo",
+          "texto": "He hurt his knee when he was carrying the boxes.",
+          "inicio": 25.822,
+          "fin": 28.201
+        },
+        {
+          "clave": "en-a2-324:lemma",
+          "texto": "shoulder",
+          "inicio": 28.701,
+          "fin": 29.309
+        },
+        {
+          "clave": "en-a2-324:ejemplo",
+          "texto": "My shoulder hurts after two hours of painting.",
+          "inicio": 29.809,
+          "fin": 32.044
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "salud-y-consulta-medica",
+      "unidad": 2,
+      "archivo": "public/audio/vocabulario/ingles/a2/salud-y-consulta-medica-u2.mp3",
+      "duracion": 30.704762,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-325:lemma",
+          "texto": "finger",
+          "inicio": 0,
+          "fin": 0.604
+        },
+        {
+          "clave": "en-a2-325:ejemplo",
+          "texto": "He cut his finger with the bread knife.",
+          "inicio": 1.104,
+          "fin": 2.9
+        },
+        {
+          "clave": "en-a2-326:lemma",
+          "texto": "heart",
+          "inicio": 3.4,
+          "fin": 3.77
+        },
+        {
+          "clave": "en-a2-326:ejemplo",
+          "texto": "Walking every day is good for the heart.",
+          "inicio": 4.27,
+          "fin": 6.099
+        },
+        {
+          "clave": "en-a2-327:lemma",
+          "texto": "blood",
+          "inicio": 6.599,
+          "fin": 7.122
+        },
+        {
+          "clave": "en-a2-327:ejemplo",
+          "texto": "The nurse took a blood test on Tuesday.",
+          "inicio": 7.622,
+          "fin": 9.488
+        },
+        {
+          "clave": "en-a2-328:lemma",
+          "texto": "fever",
+          "inicio": 9.988,
+          "fin": 10.577
+        },
+        {
+          "clave": "en-a2-328:ejemplo",
+          "texto": "The baby had a fever all night.",
+          "inicio": 11.077,
+          "fin": 12.649
+        },
+        {
+          "clave": "en-a2-329:lemma",
+          "texto": "cough",
+          "inicio": 13.149,
+          "fin": 13.56
+        },
+        {
+          "clave": "en-a2-329:ejemplo",
+          "texto": "I have had a bad cough since Sunday.",
+          "inicio": 14.06,
+          "fin": 15.814
+        },
+        {
+          "clave": "en-a2-330:lemma",
+          "texto": "flu",
+          "inicio": 16.314,
+          "fin": 16.901
+        },
+        {
+          "clave": "en-a2-330:ejemplo",
+          "texto": "Two students have the flu, so the class is smaller today.",
+          "inicio": 17.401,
+          "fin": 20.39
+        },
+        {
+          "clave": "en-a2-331:lemma",
+          "texto": "headache",
+          "inicio": 20.89,
+          "fin": 21.428
+        },
+        {
+          "clave": "en-a2-331:ejemplo",
+          "texto": "I have a headache because of the noise.",
+          "inicio": 21.928,
+          "fin": 23.735
+        },
+        {
+          "clave": "en-a2-332:lemma",
+          "texto": "sore",
+          "inicio": 24.235,
+          "fin": 24.607
+        },
+        {
+          "clave": "en-a2-332:ejemplo",
+          "texto": "My hands were sore after the volunteer shift.",
+          "inicio": 25.107,
+          "fin": 27.301
+        },
+        {
+          "clave": "en-a2-333:lemma",
+          "texto": "symptom",
+          "inicio": 27.801,
+          "fin": 28.376
+        },
+        {
+          "clave": "en-a2-333:ejemplo",
+          "texto": "The doctor asked about my symptoms twice.",
+          "inicio": 28.876,
+          "fin": 30.705
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "salud-y-consulta-medica",
+      "unidad": 3,
+      "archivo": "public/audio/vocabulario/ingles/a2/salud-y-consulta-medica-u3.mp3",
+      "duracion": 33.041247,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-334:lemma",
+          "texto": "patient",
+          "inicio": 0,
+          "fin": 0.593
+        },
+        {
+          "clave": "en-a2-334:ejemplo",
+          "texto": "The next patient waited beside the door.",
+          "inicio": 1.093,
+          "fin": 2.882
+        },
+        {
+          "clave": "en-a2-335:lemma",
+          "texto": "clinic",
+          "inicio": 3.382,
+          "fin": 3.88
+        },
+        {
+          "clave": "en-a2-335:ejemplo",
+          "texto": "The clinic opens at eight in the morning.",
+          "inicio": 4.38,
+          "fin": 6.395
+        },
+        {
+          "clave": "en-a2-336:lemma",
+          "texto": "dentist",
+          "inicio": 6.895,
+          "fin": 7.625
+        },
+        {
+          "clave": "en-a2-336:ejemplo",
+          "texto": "I have to go to the dentist on Thursday.",
+          "inicio": 8.125,
+          "fin": 10.201
+        },
+        {
+          "clave": "en-a2-337:lemma",
+          "texto": "pharmacy",
+          "inicio": 10.701,
+          "fin": 11.418
+        },
+        {
+          "clave": "en-a2-337:ejemplo",
+          "texto": "The pharmacy on the corner is open until nine.",
+          "inicio": 11.918,
+          "fin": 14.237
+        },
+        {
+          "clave": "en-a2-338:lemma",
+          "texto": "emergency",
+          "inicio": 14.737,
+          "fin": 15.649
+        },
+        {
+          "clave": "en-a2-338:ejemplo",
+          "texto": "Call this number if there is an emergency.",
+          "inicio": 16.149,
+          "fin": 18.166
+        },
+        {
+          "clave": "en-a2-339:lemma",
+          "texto": "ambulance",
+          "inicio": 18.666,
+          "fin": 19.418
+        },
+        {
+          "clave": "en-a2-339:ejemplo",
+          "texto": "Somebody called an ambulance for the old man.",
+          "inicio": 19.918,
+          "fin": 22.043
+        },
+        {
+          "clave": "en-a2-340:lemma",
+          "texto": "medicine",
+          "inicio": 22.543,
+          "fin": 23.288
+        },
+        {
+          "clave": "en-a2-340:ejemplo",
+          "texto": "You have to take this medicine twice a day.",
+          "inicio": 23.788,
+          "fin": 25.696
+        },
+        {
+          "clave": "en-a2-341:lemma",
+          "texto": "pill",
+          "inicio": 26.196,
+          "fin": 26.649
+        },
+        {
+          "clave": "en-a2-341:ejemplo",
+          "texto": "She takes two pills after breakfast.",
+          "inicio": 27.149,
+          "fin": 29.129
+        },
+        {
+          "clave": "en-a2-342:lemma",
+          "texto": "prescription",
+          "inicio": 29.629,
+          "fin": 30.358
+        },
+        {
+          "clave": "en-a2-342:ejemplo",
+          "texto": "The doctor wrote a prescription for the pharmacy.",
+          "inicio": 30.858,
+          "fin": 33.041
+        }
+      ]
+    },
+    {
+      "idioma": "ingles",
+      "nivel": "a2",
+      "bloque": "salud-y-consulta-medica",
+      "unidad": 4,
+      "archivo": "public/audio/vocabulario/ingles/a2/salud-y-consulta-medica-u4.mp3",
+      "duracion": 29.983197,
+      "modelo": "eleven_flash_v2_5",
+      "voz": "PBjLN8WJmwHEGB1u1UzI",
+      "cortes": [
+        {
+          "clave": "en-a2-343:lemma",
+          "texto": "bandage",
+          "inicio": 0,
+          "fin": 0.694
+        },
+        {
+          "clave": "en-a2-343:ejemplo",
+          "texto": "The nurse put a clean bandage on his hand.",
+          "inicio": 1.194,
+          "fin": 3.141
+        },
+        {
+          "clave": "en-a2-344:lemma",
+          "texto": "injury",
+          "inicio": 3.641,
+          "fin": 4.242
+        },
+        {
+          "clave": "en-a2-344:ejemplo",
+          "texto": "He could not play because of an old injury.",
+          "inicio": 4.742,
+          "fin": 6.862
+        },
+        {
+          "clave": "en-a2-345:lemma",
+          "texto": "treatment",
+          "inicio": 7.362,
+          "fin": 8.026
+        },
+        {
+          "clave": "en-a2-345:ejemplo",
+          "texto": "The treatment is working, but it is very slow.",
+          "inicio": 8.526,
+          "fin": 11.158
+        },
+        {
+          "clave": "en-a2-346:lemma",
+          "texto": "recover",
+          "inicio": 11.658,
+          "fin": 12.383
+        },
+        {
+          "clave": "en-a2-346:ejemplo",
+          "texto": "She recovered slowly after two weeks at home.",
+          "inicio": 12.883,
+          "fin": 15.382
+        },
+        {
+          "clave": "en-a2-347:lemma",
+          "texto": "exercise",
+          "inicio": 15.882,
+          "fin": 16.816
+        },
+        {
+          "clave": "en-a2-347:ejemplo",
+          "texto": "The doctor said I should do gentle exercise.",
+          "inicio": 17.316,
+          "fin": 19.518
+        },
+        {
+          "clave": "en-a2-348:lemma",
+          "texto": "diet",
+          "inicio": 20.018,
+          "fin": 20.601
+        },
+        {
+          "clave": "en-a2-348:ejemplo",
+          "texto": "A healthy diet is cheaper than people think.",
+          "inicio": 21.101,
+          "fin": 23.18
+        },
+        {
+          "clave": "en-a2-349:lemma",
+          "texto": "stress",
+          "inicio": 23.68,
+          "fin": 24.316
+        },
+        {
+          "clave": "en-a2-349:ejemplo",
+          "texto": "Maya has less stress than in her old job.",
+          "inicio": 24.816,
+          "fin": 26.892
+        },
+        {
+          "clave": "en-a2-350:lemma",
+          "texto": "breathe",
+          "inicio": 27.392,
+          "fin": 27.966
+        },
+        {
+          "clave": "en-a2-350:ejemplo",
+          "texto": "Breathe slowly and count to ten.",
+          "inicio": 28.466,
+          "fin": 29.983
+        }
+      ]
     }
   ]
 }

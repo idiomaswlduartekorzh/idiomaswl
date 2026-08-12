@@ -6,6 +6,7 @@ import { publishedReadingExercises } from '@/lib/reading/catalog';
 import { readingExercisePath } from '@/lib/reading/routes';
 import { SIMULACROS } from '@/data/mocks/icfes-simulacros';
 import { GUIDED_MOCK_IDS, GUIDED_WORKBOOK_IDS } from '@/data/icfes/guided-registry';
+import { getVocabLevels } from '@/data/practica/vocabulario/registry';
 
 // www es el dominio canónico (idiomaswl.com hace 307 → www.idiomaswl.com).
 // Las URLs del sitemap deben ser las canónicas finales, no redirecciones.
@@ -93,7 +94,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // ── Practice — skill pages ────────────────────────────────────────────────
     // `escucha` existe para los 8 idiomas × 3 niveles (24 páginas verificadas en disco).
-    // Las otras cuatro destrezas (escritura, habla, lectura, vocabulario) también tienen
+    // `vocabulario` entra más abajo, y solo por los niveles escritos: sale del registro,
+    // no de esta lista. Las otras tres destrezas (escritura, habla, lectura) también tienen
     // página y siguen fuera del sitemap: es una decisión aparte, no un olvido de este cambio.
     ...PRACTICE_LANGUAGES.flatMap((lang) =>
       Object.keys(grammarRegistry[lang]).flatMap((level) =>
@@ -113,6 +115,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.72,
     })),
+
+    // ── Practice — vocabulary, hub + one URL per themed block ─────────────────
+    // Solo los niveles del registro, que son los que han pasado su Puerta 2. Un nivel a
+    // medias no entra aquí ni lleva `noindex` en la ruta: sencillamente no está escrito.
+    ...getVocabLevels().flatMap((nivel) => [
+      {
+        url: `${BASE}/practica/${nivel.lang}/${nivel.nivel}/vocabulario`,
+        lastModified: now,
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+      },
+      ...nivel.bloques.map((bloque) => ({
+        url: `${BASE}/practica/${nivel.lang}/${nivel.nivel}/vocabulario/${bloque.id}`,
+        lastModified: now,
+        changeFrequency: 'monthly' as const,
+        priority: 0.72,
+      })),
+    ]),
 
     // ── Reading engine — only human-reviewed, published exercises ───────────
     ...publishedReadings.flatMap((exercise) => {
