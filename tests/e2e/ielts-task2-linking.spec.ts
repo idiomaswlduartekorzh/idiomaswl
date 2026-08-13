@@ -3,6 +3,7 @@ import { erroresPropios } from './consola-ajena'
 import { LINKING_FAMILIES } from '../../src/app/(site)/practica/ielts/academic/writing/task2/linking-language/linking-data'
 import { MIXED_QUIZ } from '../../src/app/(site)/practica/ielts/academic/writing/task2/linking-language/linking-mixed'
 import { ENGINE_LEVELS, acceptedFor } from '../../src/app/(site)/practica/ielts/academic/writing/task2/linking-language/linking-engine-data'
+import { LINKING_EXPLAINERS } from '../../src/app/(site)/practica/ielts/academic/writing/task2/linking-language/linking-explainers'
 
 /**
  * Linking language: el hub y las siete páginas de familia.
@@ -335,5 +336,77 @@ test.describe('Motor progresivo', () => {
     await motor(page).getByRole('button', { name: nivel.best, exact: true }).click()
     await motor(page).getByRole('button', { name: 'Check the join' }).click()
     await expect(motor(page).getByText('That is the join.')).toBeVisible()
+  })
+})
+
+/**
+ * El blueprint de Writing en las nueve familias.
+ *
+ * Esta unidad era la más completa del curso antes de que el blueprint existiera, y aun así le
+ * faltaban dos bloques: la explicación larga y el ejercicio guiado. El orden importa tanto
+ * como la presencia — una página con los cuatro bloques desordenados pasaría una comprobación
+ * de presencia y seguiría enseñando al revés.
+ */
+test.describe('Blueprint de Writing', () => {
+  const FAMILIAS = ['addition', 'contrast', 'cause-and-effect', 'examples', 'concession', 'comparison', 'conclusion', 'condition', 'correlative']
+  const BLOQUES = [
+    ['1 · explicación larga', 'the long version'],
+    ['1 · qué cuesta saltárselo', 'What it costs you to skip'],
+    ['1 · dónde deja de aplicar', 'Where it stops applying'],
+    ['2 · ejemplos', 'what these words actually do'],
+    ['3 · ejercicio guiado', 'with the scaffolding on'],
+    ['4 · motor, la relación', 'step 1, the relationship'],
+    ['4 · motor, la palabra', 'step 2, the word'],
+  ] as const
+
+  for (const familia of FAMILIAS) {
+    test(`${familia}: los cuatro bloques, y en orden`, async ({ page }) => {
+      await page.goto(`/practica/ielts/academic/writing/task2/linking-language/${familia}`)
+      const cuerpo = (await page.locator('body').innerText()).toLowerCase()
+
+      const posiciones: number[] = []
+      for (const [nombre, aguja] of BLOQUES) {
+        const donde = cuerpo.indexOf(aguja.toLowerCase())
+        expect(donde, `${familia}: falta el bloque «${nombre}»`).toBeGreaterThanOrEqual(0)
+        posiciones.push(donde)
+      }
+      expect(posiciones, `${familia}: los bloques salen desordenados`).toEqual([...posiciones].sort((a, b) => a - b))
+
+      /**
+       * El CONTENIDO del explicador, no solo sus rótulos.
+       *
+       * La primera versión comprobaba «What it costs you to skip» y «Where it stops applying»,
+       * que son literales del componente y salen aunque el dato venga vacío. Una prueba de
+       * mordida lo destapó: se vació el explicador entero y el test siguió en verde. Lo que
+       * hay que buscar es texto que solo puede venir del dato de ESTA familia.
+       */
+      const explicador = LINKING_EXPLAINERS[familia]
+      expect(cuerpo, `${familia}: el explicador está vacío`).toContain(explicador.definition.slice(0, 45).toLowerCase())
+      expect(cuerpo, `${familia}: falta el coste de saltárselo`).toContain(explicador.cost.slice(0, 45).toLowerCase())
+      expect(cuerpo, `${familia}: falta dónde deja de aplicar`).toContain(explicador.limits.slice(0, 45).toLowerCase())
+
+      // «Larga y detallada» se mide. Una definición de dos párrafos no es una lección.
+      expect(cuerpo.split(/\s+/u).filter(Boolean).length, `${familia}: la página es demasiado corta`).toBeGreaterThan(1200)
+      expect(cuerpo, 'ninguna página promete una banda').not.toMatch(/band \d/)
+    })
+  }
+
+  test('el guiado no enseña el modelo hasta que escribes', async ({ page }) => {
+    await page.goto('/practica/ielts/academic/writing/task2/linking-language/contrast')
+    const guiado = page.locator('#guided')
+    await guiado.scrollIntoViewIfNeeded()
+
+    const pasos = guiado.locator('[data-step]')
+    await expect(pasos, 'el guiado tiene que traer sus pasos').toHaveCount(3)
+    await expect(pasos.nth(1).locator('textarea'), 'el paso 2 se abre cuando el 1 se resuelve').toHaveCount(0)
+
+    const boton = pasos.nth(0).getByRole('button', { name: /Compare with the model/ })
+    await expect(boton, 'sin escribir nada, no se puede comparar').toBeDisabled()
+    await expect(pasos.nth(0).locator('textarea')).toHaveAttribute('spellcheck', 'false')
+
+    await pasos.nth(0).locator('textarea').fill('It weakens the informal contact that keeps a team coordinated')
+    await expect(boton).toBeEnabled()
+    await boton.click()
+    await expect(pasos.nth(1).locator('textarea'), 'resuelto el paso 1, se abre el 2').toBeVisible()
   })
 })

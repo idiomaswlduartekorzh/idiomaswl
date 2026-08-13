@@ -4,7 +4,10 @@ import { Fragment, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight, CheckCircle2, RotateCcw } from 'lucide-react';
 import { placeOption } from '@/lib/practica/shuffle-options';
+import SkillExplainer from '../../_shared/SkillExplainer';
+import GuidedPractice from '../../_shared/GuidedPractice';
 import { LINKING_FAMILIES, signalFor, type LinkingFamily } from './linking-data';
+import { LINKING_EXPLAINERS, LINKING_GUIDED } from './linking-explainers';
 import styles from '../introduccion/page.module.css';
 
 /**
@@ -160,9 +163,16 @@ export default function LinkingFamilyClient({ slug }: { slug: string }) {
       </div>
     </header>
 
+    {/* BLOQUE 1 del blueprint — la explicación larga. Lo de abajo ya existía y no se toca. */}
+    <SkillExplainer
+      explainer={LINKING_EXPLAINERS[family.slug]}
+      tone={family.tone}
+      heading={`What ${family.label.toLowerCase()} connectors really claim`}
+    />
+
     <section className={styles.section}>
       <div className={styles.sectionHeading}>
-        <p className={styles.kicker}>Start here · what these words actually do</p>
+        <p className={styles.kicker}>Examples · what these words actually do</p>
         <h2>A connector joins two sentences and names the relationship between them</h2>
         <p>
           That is the whole job. The words are not decoration and they are not interchangeable: each one
@@ -189,15 +199,6 @@ export default function LinkingFamilyClient({ slug }: { slug: string }) {
       <p className={styles.trap}>
         <strong>When you need it</strong><br />{family.whenToUse}
       </p>
-    </section>
-
-    <section id="relationship" className={styles.section}>
-      <div className={styles.sectionHeading}>
-        <p className={styles.kicker}>Now you try · the relationship first</p>
-        <h2>Before the word, the direction</h2>
-        <p>Choosing the connector is the second decision. The first one is noticing where the next sentence is going.</p>
-      </div>
-      <RelationDrill family={family} />
     </section>
 
     <section className={styles.section}>
@@ -251,9 +252,21 @@ export default function LinkingFamilyClient({ slug }: { slug: string }) {
       </div>
     </section>
 
+    {/* BLOQUE 3 del blueprint — el escalón entre el ejemplo y el ejercicio de opción. */}
+    <GuidedPractice exercise={LINKING_GUIDED[family.slug]} />
+
+    <section id="relationship" className={styles.section}>
+      <div className={styles.sectionHeading}>
+        <p className={styles.kicker}>Exercises · step 1, the relationship</p>
+        <h2>Before the word, the direction</h2>
+        <p>Choosing the connector is the second decision. The first one is noticing where the next sentence is going.</p>
+      </div>
+      <RelationDrill family={family} />
+    </section>
+
     <section id="practice" className={styles.section}>
       <div className={styles.sectionHeading}>
-        <p className={styles.kicker}>Step 2 · the word</p>
+        <p className={styles.kicker}>Exercises · step 2, the word</p>
         <h2>Choose the connector the sentence actually needs</h2>
         <p>
           Now that you can see the direction, pick the word that announces it. The first wrong answer

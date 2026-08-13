@@ -949,6 +949,50 @@ for (const technique of techniques) {
  * escritura en cada paso: si se publica con el corrector encendido, el ejercicio deja de
  * parecerse al examen justo en la parte donde se escribe.
  */
+/**
+ * LINKING LANGUAGE — los dos bloques que le faltaban.
+ *
+ * La unidad ya era, con diferencia, la más completa del curso: nueve familias con sus
+ * conectores anotados, ejemplos, errores, ejercicios, test mixto, motor y reparación de
+ * párrafo. Nada de eso se ha tocado. Lo que no tenía era explicación larga ni ejercicio
+ * guiado, y sin guardián eso se vuelve a caer en cuanto alguien añada una décima familia sin
+ * darse cuenta de que le faltan dos bloques.
+ */
+const linking = loadModule(path.join(task2, 'linking-language', 'linking-data.ts'), () => ({}))
+const linkingExtras = loadModule(path.join(task2, 'linking-language', 'linking-explainers.ts'), () => ({}))
+const familias = linking.LINKING_FAMILIES ?? []
+
+for (const family of familias) {
+  const explainer = (linkingExtras.LINKING_EXPLAINERS ?? {})[family.slug]
+  if (!explainer) {
+    failures.push(`Linking/${family.slug}: sin explicación larga. Es el bloque 1 del blueprint.`)
+  } else {
+    const palabras = [
+      explainer.definition,
+      ...(explainer.sections ?? []).flatMap((s) => [s.heading, ...(s.body ?? []), ...(s.points ?? []).map((p) => `${p.term} ${p.detail}`)]),
+      explainer.cost, explainer.limits,
+    ].filter(Boolean).join(' ').trim().split(/\s+/u).length
+    if (palabras < EXPLICACION_MINIMA) failures.push(`Linking/${family.slug}: la explicación tiene ${palabras} palabras; el mínimo son ${EXPLICACION_MINIMA}.`)
+    if (!explainer.cost?.trim() || !explainer.limits?.trim()) failures.push(`Linking/${family.slug}: falta «cost» o «limits».`)
+  }
+
+  const guided = (linkingExtras.LINKING_GUIDED ?? {})[family.slug]
+  if (!guided) {
+    failures.push(`Linking/${family.slug}: sin ejercicio guiado. Es el bloque 3.`)
+  } else {
+    if ((guided.steps ?? []).length < PASOS_MINIMOS) failures.push(`Linking/${family.slug}: el guiado tiene ${(guided.steps ?? []).length} pasos; el mínimo son ${PASOS_MINIMOS}.`)
+    for (const [i, step] of (guided.steps ?? []).entries()) {
+      if (!(step.minWords > 0)) failures.push(`Linking/${family.slug}: el paso ${i + 1} del guiado no exige escribir nada.`)
+      for (const campo of ['instruction', 'hint', 'placeholder', 'model', 'why']) {
+        if (!step[campo]?.trim()) failures.push(`Linking/${family.slug}: al paso ${i + 1} le falta «${campo}».`)
+      }
+    }
+    if (!guided.brief?.trim() || !guided.goal?.trim() || !guided.result?.trim()) {
+      failures.push(`Linking/${family.slug}: al guiado le falta el material, el objetivo o el resultado.`)
+    }
+  }
+}
+
 const shared = path.join(repoRoot, 'src', 'app', '(site)', 'practica', 'ielts', 'academic', 'writing', '_shared')
 if (fs.existsSync(shared)) {
   for (const file of fs.readdirSync(shared).filter((name) => name.endsWith('.tsx'))) {
