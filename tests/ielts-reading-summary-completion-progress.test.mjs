@@ -121,6 +121,6 @@ test('the blueprint records Summary Completion gates before scaling again', asyn
     'Summary Completion practice must require the learner to read the connected overview',
     'literal passage span',
     '6 source-backed or conservatively bounded passages and 36 exact-span decisions',
-    'Next question-type vertical:** Table Completion',
+    'Next question-type vertical:** Flow-chart Completion',
   ]) assert.match(blueprint, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
 });

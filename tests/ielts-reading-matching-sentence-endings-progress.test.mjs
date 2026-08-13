@@ -136,6 +136,6 @@ test('the blueprint records sentence-ending gates before scaling again', async (
     'Do not invent a no-reuse rule for Matching Sentence Endings',
     '6 source-backed or conservatively bounded passages and 28 retained decisions',
     'Sentence Completion:** complete progressive vertical',
-    'Next question-type vertical:** Table Completion',
+    'Next question-type vertical:** Flow-chart Completion',
   ]) assert.match(blueprint, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
 });

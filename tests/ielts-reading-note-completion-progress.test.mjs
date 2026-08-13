@@ -126,6 +126,6 @@ test('the blueprint records Note Completion gates before scaling again', async (
   for (const required of [
     'Note Completion practice must treat every group heading as an evidence boundary',
     '6 source-backed or conservatively bounded passages and 36 structured-note decisions',
-    'Next question-type vertical:** Table Completion',
+    'Next question-type vertical:** Flow-chart Completion',
   ]) assert.match(blueprint, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
 });
