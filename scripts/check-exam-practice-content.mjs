@@ -621,6 +621,11 @@ function validateIeltsReadingSkillPracticeRoutes() {
       label: 'IELTS True False Not Given route',
       requiredTexts: ['TfngGuidedPractice', 'TfngIndependentPractice', 'TfngProgressEngine', 'TFNG_GUIDED_PASSAGE_ID', 'TFNG_INDEPENDENT_PASSAGE_ID', 'ielts-reading-practice-engine-blueprint.md', 'SkillReviewSourceBlock', 'IELTS_ACADEMIC_URL', '/practica/ielts/reading/habilidades/scanning', '/practica/ielts/reading/habilidades/parafrasis', '/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given'],
     },
+    {
+      path: '/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given',
+      label: 'IELTS Yes No Not Given route',
+      requiredTexts: ['YnngGuidedPractice', 'YnngIndependentPractice', 'YnngProgressEngine', 'YNNG_GUIDED_PASSAGE_ID', 'YNNG_INDEPENDENT_PASSAGE_ID', 'ielts-reading-practice-engine-blueprint.md', 'SkillReviewSourceBlock', 'IELTS_ACADEMIC_URL', '/practica/ielts/reading/habilidades/inferencia', '/practica/ielts/reading/habilidades/parafrasis', '/practica/ielts/reading/tipos-de-preguntas/matching-headings'],
+    },
   ];
 
   for (const route of routes) {
@@ -1215,7 +1220,7 @@ function validateIeltsTask2LegacySkillReviewRoutes() {
     {
       path: '/practica/ielts/academic/writing/task2/tipo-ensayo',
       component: 'TipoEnsayoClient.tsx',
-      focus: 'Reconocer la instrucción del prompt',
+      focus: 'Reading the instruction at the end of the prompt before choosing a structure.',
     },
     {
       path: '/practica/ielts/academic/writing/task2/introduccion',
@@ -1225,12 +1230,12 @@ function validateIeltsTask2LegacySkillReviewRoutes() {
     {
       path: '/practica/ielts/academic/writing/task2/parrafos-cuerpo',
       component: 'ParrafosCuerpoClient.tsx',
-      focus: 'Desarrollar párrafos de cuerpo',
+      focus: 'Developing a body paragraph with a claim, a mechanism, evidence and a link back.',
     },
     {
       path: '/practica/ielts/academic/writing/task2/linking-language',
       component: 'LinkingLanguageClient.tsx',
-      focus: 'Elegir conectores',
+      focus: 'Choose connectors by the relationship between the ideas, not by variety.',
     },
     {
       path: '/practica/ielts/academic/writing/task2/conclusion',
@@ -1245,7 +1250,7 @@ function validateIeltsTask2LegacySkillReviewRoutes() {
     {
       path: '/practica/ielts/academic/writing/task2/tarea-completa',
       component: 'TareaCompletaTask2Client.tsx',
-      focus: 'Planear, escribir, revisar',
+      focus: 'Plan, write and review one complete essay under time.',
     },
   ];
 
@@ -1313,7 +1318,7 @@ function validateIeltsTask2IntroductionPilot() {
   for (const essayType of ['opinion', 'discussion', 'problem-solution', 'advantages-disadvantages', 'direct-questions']) {
     if (!dataText.includes(`id: '${essayType}'`)) fail(`IELTS Task 2 introduction data must include ${essayType}.`);
   }
-  if ((dataText.match(/title: '/g) ?? []).length < 25) {
+  if ((dataText.match(/\btitle\s*:/g) ?? []).length < 25) {
     fail('IELTS Task 2 introduction must retain at least 25 original guided examples across the five question families.');
   }
   for (const requiredText of ['bodyOne:', 'bodyTwo:', 'bodyThree:', 'conclusion:', 'whyItWorks:', 'INTRO_SENTENCE_TYPES']) {
@@ -1352,7 +1357,7 @@ function validateIeltsTask2PromptAnalysisPilot() {
   for (const requiredText of ['topic:', 'instruction:', 'scope:', 'position:', 'bodyRoute:', 'checklist:']) {
     if (!dataText.includes(requiredText)) fail(`IELTS Task 2 prompt analysis data must include "${requiredText}".`);
   }
-  for (const title of ['Identify the instruction', 'Select the complete checklist', 'Detect the missing part', 'Assemble the prompt map', 'Choose the body route', 'Write a one-sentence plan', 'Build the complete plan', 'Transfer to a timed essay']) {
+  for (const title of ['What has to stay in', 'The thesis', 'Body 1', 'Body 2', 'Map the prompt', 'Plan in one sentence', 'Full plan', 'Timed essay']) {
     if (!engineText.includes(title)) fail(`IELTS Task 2 prompt analysis engine must include "${title}".`);
   }
 }
@@ -1374,11 +1379,11 @@ function validateIeltsTask2BodyOnePilot() {
   for (const essayType of ['opinion', 'discussion', 'problem-solution', 'advantages-disadvantages', 'direct-questions']) {
     if (!dataText.includes(`id: '${essayType}'`)) fail(`IELTS Task 2 Body 1 data must include ${essayType}.`);
   }
-  if ((dataText.match(/title: '/g) ?? []).length < 25) fail('IELTS Task 2 Body 1 must retain at least 25 original guided cases.');
+  if ((dataText.match(/\btitle\s*:/g) ?? []).length < 25) fail('IELTS Task 2 Body 1 must retain at least 25 original guided cases.');
   for (const requiredText of ['Position claim', 'First-view sentence', 'Problem or cause', 'First-side claim', 'Answer to Question 1', 'commonMistake:']) {
     if (!dataText.includes(requiredText)) fail(`IELTS Task 2 Body 1 data must include "${requiredText}".`);
   }
-  for (const requiredText of ['Compare with the expert model', 'not automated band scoring']) {
+  for (const requiredText of ['Compare with the WeLearn model', 'not automated band scoring']) {
     if (!workshopText.includes(requiredText)) fail(`IELTS Task 2 Body 1 workshop must include "${requiredText}".`);
   }
   for (const title of ['Identify the function', 'Choose an aligned topic sentence', 'Detect the logic error', 'Assemble the blocks', 'Complete the missing block', 'Write one original sentence', 'Build the complete Body 1 paragraph', 'Transfer to complete essay practice']) {
@@ -1410,7 +1415,7 @@ function validateIeltsTask2BodyTwoPilot() {
   for (const requiredText of ['Second claim or concession', 'Second-view sentence', 'Concession or contrast', 'Rebuttal or evaluation', 'Solution claim', 'Answer to Question 2', 'commonMistake:']) {
     if (!dataText.includes(requiredText)) fail(`IELTS Task 2 Body 2 data must include "${requiredText}".`);
   }
-  for (const requiredText of ['Compare with the expert model', 'ColoredBodyParagraph', 'not automated band scoring']) {
+  for (const requiredText of ['Compare with the WeLearn model', 'ColoredBodyParagraph', 'not automated band scoring']) {
     if (!workshopText.includes(requiredText)) fail(`IELTS Task 2 Body 2 workshop must include "${requiredText}".`);
   }
   for (const title of ['Identify the second function', 'Choose a distinct controlling idea', 'Detect repetition or misalignment', 'Assemble the Body 2 blocks', 'Complete the relationship block', 'Write one connecting sentence', 'Build the complete Body 2 paragraph', 'Transfer to complete essay practice']) {
@@ -1431,8 +1436,8 @@ function validateIeltsTask2ConclusionLesson() {
   for (const requiredText of ['IELTS Task 2 Conclusion', 'robots: { index: true, follow: true }', "locale: 'en_US'", 'task2/conclusion']) if (!pageText.includes(requiredText)) fail(`IELTS Task 2 Conclusion metadata must include "${requiredText}".`);
   for (const requiredText of ['lang="en"', 'Official format and WeLearn strategy', 'Watch one · then do four', 'Worked example', 'Now you try', 'ConclusionPracticeEngine', 'Frequently asked questions', '/practica/ielts/academic/writing/task2/revision-final']) if (!componentText.includes(requiredText)) fail(`IELTS Task 2 Conclusion lesson must include "${requiredText}".`);
   for (const requiredText of ["opinion:", "discussion:", "'problem-solution':", "'advantages-disadvantages':", "'direct-questions':", 'BODY_ONE_LESSONS.map']) if (!dataText.includes(requiredText)) fail(`IELTS Task 2 Conclusion data must include "${requiredText}".`);
-  for (const requiredText of ['Compare with the expert model', 'ColoredBodyParagraph', 'automated band score']) if (!workshopText.includes(requiredText)) fail(`IELTS Task 2 Conclusion workshop must include "${requiredText}".`);
-  for (const title of ['Identify the job', 'Choose the aligned restatement', 'Detect conclusion drift', 'Assemble the blocks', 'Complete the synthesis', 'Write one closing block', 'Build the conclusion', 'Transfer to the full essay']) if (!engineText.includes(title)) fail(`IELTS Task 2 Conclusion engine must include "${title}".`);
+  for (const requiredText of ['Compare with the WeLearn model', 'ColoredBodyParagraph', 'cannot read your text', 'instead of grading you']) if (!workshopText.includes(requiredText)) fail(`IELTS Task 2 Conclusion workshop must include "${requiredText}".`);
+  for (const title of ['Match it to its prompt', 'Choose the aligned restatement', 'Detect conclusion drift', 'Assemble the blocks', 'Complete the synthesis', 'Write one closing block', 'Build the conclusion', 'Transfer to the full essay']) if (!engineText.includes(title)) fail(`IELTS Task 2 Conclusion engine must include "${title}".`);
   for (const requiredText of ['localStorage', 'Complete Essay Practice', '/practica/ielts/academic/writing/task2/tarea-completa']) if (!engineText.includes(requiredText)) fail(`IELTS Task 2 Conclusion engine must include "${requiredText}".`);
 }
 
@@ -1445,7 +1450,7 @@ function validateIeltsTask2FinalReviewLesson() {
   for (const requiredText of ['IELTS Task 2 Final Review', 'robots: { index: true, follow: true }', "locale: 'en_US'", 'task2/revision-final']) if (!pageText.includes(requiredText)) fail(`IELTS Task 2 Final Review metadata must include "${requiredText}".`);
   for (const requiredText of ['lang="en"', 'Official criteria and WeLearn strategy', 'Watch one · then do four', 'Worked example', 'Now you try', 'FinalReviewPracticeEngine', 'Frequently asked questions', '/practica/ielts/academic/writing/task2/tarea-completa']) if (!componentText.includes(requiredText)) fail(`IELTS Task 2 Final Review lesson must include "${requiredText}".`);
   for (const requiredText of ['Task Response', 'Essay logic', 'Position control', 'Cohesion', 'Language control', 'BODY_ONE_LESSONS.map']) if (!dataText.includes(requiredText)) fail(`IELTS Task 2 Final Review data must include "${requiredText}".`);
-  for (const title of ['Identify the layer', 'Find the missing instruction', 'Diagnose logic drift', 'Order the review', 'Choose the revision', 'Rewrite one sentence', 'Run a full checklist', 'Transfer to timed practice']) if (!engineText.includes(title)) fail(`IELTS Task 2 Final Review engine must include "${title}".`);
+  for (const title of ['Name the check that fails', 'Find the missing instruction', 'Diagnose logic drift', 'Order the review', 'Choose the revision', 'Rewrite one sentence', 'Run a full checklist', 'Transfer to timed practice']) if (!engineText.includes(title)) fail(`IELTS Task 2 Final Review engine must include "${title}".`);
   for (const requiredText of ['localStorage', 'automated band', '/practica/ielts/academic/writing/task2/tarea-completa']) if (!engineText.includes(requiredText)) fail(`IELTS Task 2 Final Review engine must include "${requiredText}".`);
 }
 
@@ -1492,7 +1497,7 @@ function validateRoute(route, index, routeMapText) {
   if (isIeltsReadingQuestionType && route.status === 'published') {
     const pagePath = routeToPagePath(route.path);
     const pageText = fs.existsSync(pagePath) ? fs.readFileSync(pagePath, 'utf8') : '';
-    const progressiveQuestionType = ['/practica/ielts/reading/tipos-de-preguntas/multiple-choice', '/practica/ielts/reading/tipos-de-preguntas/true-false-not-given'].includes(route.path);
+    const progressiveQuestionType = ['/practica/ielts/reading/tipos-de-preguntas/multiple-choice', '/practica/ielts/reading/tipos-de-preguntas/true-false-not-given', '/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given'].includes(route.path);
     if (!pageText.includes(progressiveQuestionType ? 'SkillReviewSourceBlock' : 'QuestionTypeReviewSourceBlock')) fail(`${label} must render its reviewed source block.`);
     if (!pageText.includes(progressiveQuestionType ? 'IELTS_ACADEMIC_URL' : 'IELTS_SAMPLE_URL')) fail(`${label} must cite the official IELTS Reading source in its review block.`);
     if (!pageText.includes('reviewedFocus')) fail(`${label} must declare reviewedFocus for the question-type review block.`);
@@ -1518,8 +1523,7 @@ function validateRoute(route, index, routeMapText) {
   if (route.path === '/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given' && route.status === 'published') {
     const pagePath = routeToPagePath(route.path);
     const pageText = fs.existsSync(pagePath) ? fs.readFileSync(pagePath, 'utf8') : '';
-    if (!pageText.includes('ObjectivePracticeSetBank')) fail(`${label} must render ObjectivePracticeSetBank.`);
-    if (!pageText.includes('IELTS_YNNG_PRACTICE_SETS')) fail(`${label} must use IELTS_YNNG_PRACTICE_SETS.`);
+    for (const requiredText of ['YnngGuidedPractice', 'YnngIndependentPractice', 'YnngProgressEngine', 'YNNG_GUIDED_PASSAGE_ID', 'YNNG_INDEPENDENT_PASSAGE_ID']) if (!pageText.includes(requiredText)) fail(`${label} must include ${requiredText}.`);
   }
 
   if (route.path === '/practica/ielts/reading/tipos-de-preguntas/multiple-choice' && route.status === 'published') {

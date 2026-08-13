@@ -1,213 +1,32 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
-import OfficialStrategyCard from '@/components/exam-practice/OfficialStrategyCard';
-import QuestionTypeReviewSourceBlock from '@/components/exam-practice/QuestionTypeReviewSourceBlock';
-import { AlertTriangle, MessageSquareQuote, SearchCheck } from 'lucide-react';
-import ObjectivePracticeSetBank from '@/components/exam-practice/ObjectivePracticeSetBank';
-import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
-import {
-  IELTS_YNNG_PRACTICE_SETS,
-  IELTS_READING_TYPES,
-  PRACTICE_BASE_URL,
-} from '@/data/practica-exams/seo-catalog';
+import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
+import { YnngGuidedPractice, YnngIndependentPractice, YnngProgressEngine } from '@/components/exam-practice/YnngPracticeLab';
+import { IELTS_READING_TYPES, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
+import { YNNG_GUIDED_PASSAGE_ID, YNNG_INDEPENDENT_PASSAGE_ID, getYnngPassage } from '@/data/practica-exams/ielts-reading-ynng-progress';
 
 const ROUTE = IELTS_READING_TYPES.find((item) => item.slug === 'yes-no-not-given')!;
-const URL = `${PRACTICE_BASE_URL}${ROUTE.path}`;
-const ACCENT = '#7c3aed';
-const IELTS_SAMPLE_URL = 'https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test';
+const TITLE = 'IELTS Yes / No / Not Given: track the writer’s exact position';
+const DESCRIPTION = 'Learn to attribute a view to the writer, preserve its direction and strength, and separate genuine opposition from an unstated position.';
+const IELTS_ACADEMIC_URL = 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading';
+const guidedPassage = getYnngPassage(YNNG_GUIDED_PASSAGE_ID)!;
+const independentPassage = getYnngPassage(YNNG_INDEPENDENT_PASSAGE_ID)!;
+// Scaling contract: docs/ielts-reading-practice-engine-blueprint.md
 
-export const metadata: Metadata = {
-  title: 'IELTS Yes/No/Not Given: writer views y ejercicios',
-  description: ROUTE.description,
-  keywords: ROUTE.keywords,
-  openGraph: {
-    title: 'IELTS Yes/No/Not Given: writer views y ejercicios',
-    description: ROUTE.description,
-    url: URL,
-    type: 'website',
-    locale: 'es_CO',
-  },
-  alternates: { canonical: URL },
-};
+export const metadata: Metadata = { title: 'IELTS Yes / No / Not Given: Method, Practice and Progress', description: DESCRIPTION, keywords: ROUTE.keywords, alternates: { canonical: `${PRACTICE_BASE_URL}${ROUTE.path}` }, openGraph: { title: TITLE, description: DESCRIPTION, url: `${PRACTICE_BASE_URL}${ROUTE.path}`, type: 'website', locale: 'en_US' } };
 
 export default function Page() {
-  return (
-    <>
-      <LearningResourceJsonLd
-        name={ROUTE.title}
-        url={URL}
-        description={ROUTE.description}
-        teaches={ROUTE.teaches}
-        isPartOf={{ name: 'Tipos de preguntas IELTS Reading', url: `${PRACTICE_BASE_URL}/practica/ielts/reading/tipos-de-preguntas` }}
-      />
-      <FaqJsonLd faqs={ROUTE.faqs} />
-      <BreadcrumbJsonLd
-        items={[
-          { name: 'Práctica', url: `${PRACTICE_BASE_URL}/practica` },
-          { name: 'IELTS', url: `${PRACTICE_BASE_URL}/practica/ielts` },
-          { name: 'Reading', url: `${PRACTICE_BASE_URL}/practica/ielts/reading` },
-          { name: 'Tipos de preguntas', url: `${PRACTICE_BASE_URL}/practica/ielts/reading/tipos-de-preguntas` },
-          { name: 'Yes/No/Not Given', url: URL },
-        ]}
-      />
-
-      <section className="wl-section">
-        <div className="wrap" style={{ maxWidth: 1040 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
-            <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
-            <span>/</span>
-            <Link href="/practica/ielts" style={{ color: 'var(--muted)', textDecoration: 'none' }}>IELTS</Link>
-            <span>/</span>
-            <Link href="/practica/ielts/reading/tipos-de-preguntas" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Tipos de preguntas</Link>
-            <span>/</span>
-            <span style={{ color: 'var(--ink)', fontWeight: 800 }}>Yes/No/Not Given</span>
-          </div>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '1rem', alignItems: 'stretch', marginBottom: '1.5rem' }}>
-            <div>
-              <p className="eyebrow" style={{ margin: '0 0 0.5rem' }}>
-                <span className="ink-line" />IELTS Reading · Tipo de pregunta oficial
-              </p>
-              <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.1rem)', lineHeight: 1.04, letterSpacing: '-0.04em', margin: '0 0 0.85rem', color: 'var(--ink)' }}>
-                IELTS Yes/No/Not Given
-              </h1>
-              <p style={{ color: 'var(--muted)', fontSize: '1rem', lineHeight: 1.75, margin: 0, maxWidth: 760 }}>
-                En el formato oficial de IELTS Reading, este tipo se llama identifying writer&apos;s views/claims. No pregunta si una frase es un hecho verdadero: pregunta si coincide con la postura del autor, la contradice o no se puede comprobar.
-              </p>
-            </div>
-
-            <aside className="wl-card" style={{ padding: '1rem', borderRadius: 16, display: 'grid', gap: '0.75rem', alignContent: 'center' }}>
-              {[
-                { label: 'YES', text: 'La afirmación coincide con la opinión o claim del autor.', color: '#059669' },
-                { label: 'NO', text: 'La afirmación contradice la postura del autor.', color: '#dc2626' },
-                { label: 'NOT GIVEN', text: 'El texto no revela esa postura exacta.', color: '#d97706' },
-              ].map((item) => (
-                <div key={item.label} style={{ display: 'grid', gridTemplateColumns: '96px 1fr', gap: '0.65rem', alignItems: 'center' }}>
-                  <span style={{ border: `1px solid ${item.color}55`, background: `${item.color}12`, color: item.color, borderRadius: 10, padding: '0.45rem 0.55rem', fontFamily: 'var(--mono)', fontWeight: 900, textAlign: 'center', fontSize: '0.78rem' }}>
-                    {item.label}
-                  </span>
-                  <span style={{ color: 'var(--muted)', lineHeight: 1.5, fontSize: '0.88rem' }}>{item.text}</span>
-                </div>
-              ))}
-            </aside>
-          </div>
-
-          <OfficialStrategyCard
-            accent={ACCENT}
-            official="IELTS Academic Reading usa Yes/No/Not Given para identificar si una afirmación coincide con las views o claims del escritor, las contradice o no se puede comprobar."
-            strategy="WeLearn no lo trata como hechos tipo True/False: primero buscamos verbos de opinión, juicio, recomendación o evaluación y luego comparamos la postura exacta."
-          />
-
-          <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: '0.85rem', marginBottom: '1.2rem' }}>
-            {[
-              {
-                icon: <MessageSquareQuote size={18} />,
-                title: 'Encuentra la postura',
-                text: 'Busca señales como in my view, the strongest argument, should, may do more, the real test o this does not mean.',
-              },
-              {
-                icon: <SearchCheck size={18} />,
-                title: 'Compara el claim',
-                text: 'La opción correcta suele parafrasear una valoración del autor, no copiar palabras del texto.',
-              },
-              {
-                icon: <AlertTriangle size={18} />,
-                title: 'Separa No de Not Given',
-                text: 'La opción NO exige contradicción de postura. Not Given aparece cuando el tema existe, pero la postura exacta no.',
-              },
-            ].map((item) => (
-              <article key={item.title} className="wl-card" style={{ padding: '1rem', borderRadius: 14 }}>
-                <div style={{ display: 'flex', gap: '0.5rem', color: ACCENT, alignItems: 'center', marginBottom: '0.35rem' }}>
-                  {item.icon}
-                  <h2 style={{ margin: 0, color: 'var(--ink)', fontSize: '1rem' }}>{item.title}</h2>
-                </div>
-                <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.58, fontSize: '0.9rem' }}>{item.text}</p>
-              </article>
-            ))}
-          </section>
-
-          <section className="wl-card" style={{ padding: '1.2rem', borderRadius: 16, marginBottom: '1rem' }}>
-            <p className="eyebrow" style={{ margin: '0 0 0.45rem' }}>Método WeLearn</p>
-            <h2 style={{ margin: '0 0 0.75rem', fontSize: '1.3rem', letterSpacing: '-0.02em' }}>Cómo resolver Yes/No/Not Given</h2>
-            <div style={{ display: 'grid', gap: '0.65rem' }}>
-              {[
-                'Marca en la afirmación el verbo mental: believes, argues, thinks, prefers, recommends, says.',
-                'Encuentra en el texto la frase donde el autor evalúa, limita, recomienda o contrasta una idea.',
-                'Pregunta si la afirmación mantiene la misma postura, la invierte o añade una postura no expresada.',
-                'Si solo puedes justificar la respuesta con sentido común o conocimiento externo, marca Not Given.',
-              ].map((item, index) => (
-                <p key={item} style={{ margin: 0, display: 'grid', gridTemplateColumns: '32px 1fr', gap: '0.65rem', alignItems: 'start', color: 'var(--ink-2)', lineHeight: 1.58 }}>
-                  <span style={{ width: 32, height: 32, borderRadius: 10, background: `${ACCENT}12`, color: ACCENT, display: 'grid', placeItems: 'center', fontFamily: 'var(--mono)', fontWeight: 900 }}>
-                    {index + 1}
-                  </span>
-                  <span>{item}</span>
-                </p>
-              ))}
-            </div>
-          </section>
-
-          <ObjectivePracticeSetBank
-            sets={IELTS_YNNG_PRACTICE_SETS}
-            accent={ACCENT}
-            answers={['YES', 'NO', 'NOT GIVEN']}
-            eyebrow="Banco Yes/No/Not Given"
-            title="Tres pasajes para evaluar writer views and claims"
-            intro="Practica con textos originales de WeLearn. El foco es decidir si la afirmación coincide con la postura del autor, la contradice o añade una opinión no expresada."
-            resultTip="Si fallaste varias, revisa si confundiste una postura contraria con información ausente. En YNNG, la opción NO necesita choque claro con la opinión del autor."
-          />
-
-          <section style={{ marginTop: '1.4rem', display: 'grid', gap: '1rem' }}>
-            <div>
-              <p className="eyebrow" style={{ margin: '0 0 0.5rem' }}>Sigue entrenando</p>
-              <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap' }}>
-                {[
-                  { href: '/practica/ielts/reading/tipos-de-preguntas/true-false-not-given', label: 'Comparar con TFNG' },
-                  { href: '/practica/ielts/reading/habilidades/inferencia', label: 'Entrenar inferencia' },
-                  { href: '/practica/ielts/reading/habilidades/parafrasis', label: 'Entrenar paráfrasis' },
-                  { href: '/practica/ielts/reading/habilidades/gestion-del-tiempo', label: 'Gestión del tiempo' },
-                ].map((item) => (
-                  <Link key={item.href} className="btn btn-ghost btn-sm" href={item.href}>
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <QuestionTypeReviewSourceBlock
-              accent={ACCENT}
-              questionTypeName={ROUTE.title}
-              sources={[
-                {
-                  label: 'IELTS Academic sample test questions',
-                  href: IELTS_SAMPLE_URL,
-                  note: 'lista oficial de preguntas de muestra de IELTS Academic Reading usada para confirmar que esta ruta corresponde a un tipo de pregunta oficial.',
-                },
-                {
-                  label: 'Banco original WeLearn',
-                  note: 'pasajes, preguntas, distractores y explicaciones creados para practica pedagogica, sin copiar preguntas oficiales.',
-                },
-              ]}
-              reviewedFocus={[
-                'alineacion con tipos de pregunta oficiales de IELTS Reading',
-                'separacion entre formato oficial y metodo WeLearn',
-                'respuesta explicada con evidencia, alcance o trampa',
-              ]}
-            />
-
-            <p className="eyebrow" style={{ margin: '0 0 0.5rem' }}>Preguntas frecuentes</p>
-              <div style={{ display: 'grid', gap: '0.75rem' }}>
-                {ROUTE.faqs.map((faq) => (
-                  <article key={faq.question} className="wl-card" style={{ padding: '1rem', borderRadius: 14 }}>
-                    <h2 style={{ margin: '0 0 0.35rem', color: 'var(--ink)', fontSize: '1rem' }}>{faq.question}</h2>
-                    <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.9rem' }}>{faq.answer}</p>
-                  </article>
-                ))}
-              </div>
-            </div>
-          </section>
-        </div>
-      </section>
-    </>
-  );
+  return <InternationalReadingSkillLesson slug="yes-no-not-given" path={ROUTE.path} indexPath="/practica/ielts/reading/tipos-de-preguntas" indexName="Reading Question Types" lessonLabel="IELTS Academic Reading · Question type" name="Yes / No / Not Given" title={TITLE} description={DESCRIPTION}
+    directAnswer="YES means the statement matches the writer’s view, NO means it opposes that view, and NOT GIVEN means the writer never reveals the exact position. First identify whose view it is; then preserve direction, strength and scope."
+    facts={[{ label: 'YES', value: 'Same writer view' }, { label: 'NO', value: 'Opposing writer view' }, { label: 'NOT GIVEN', value: 'Writer view unstated' }]}
+    outcomes={[{ title: 'Attribute the view', text: 'Separate the writer’s position from a critic, expert, institution or example described in the passage.' }, { title: 'Preserve stance force', text: 'Keep recommendation, preference, possibility, certainty, comparison and qualification intact.' }, { title: 'Protect genuine silence', text: 'Use NOT GIVEN when the topic appears but the writer never evaluates the exact proposal or relationship.' }]}
+    method={[{ title: 'Mark the statement’s view', text: 'Underline the attributed person, stance verb, direction, degree, quantity and proposed action.' }, { title: 'Find the writer’s voice', text: 'Locate first-person judgement, evaluation, recommendation, contrast or a clearly signalled conclusion.' }, { title: 'Run the view-state test', text: 'Ask whether the writer agrees with this exact position, expresses an opposing position, or never takes a position.' }, { title: 'Ban borrowed opinions', text: 'Do not assign a critic’s claim, a general fact or your own reasonable belief to the writer.' }]}
+    weakExample="The passage discusses AI risks, so the writer must oppose every AI tool in public libraries."
+    strongExample="The writer discusses risks but explicitly rejects a universal ban and recommends safeguards. The writer’s position opposes the absolute statement, so the answer is No."
+    practice={<YnngGuidedPractice passage={guidedPassage} />} independentPracticeExperience={<YnngIndependentPractice passage={independentPassage} />} progressEngine={<YnngProgressEngine />}
+    sourceReview={<SkillReviewSourceBlock accent="#7c3aed" skillName="Yes / No / Not Given" reviewedFocus={['Guided, independent and Progress Engine passage pools are separated.', 'NO requires an opposing writer position; criticism, qualification or a lower priority is not automatically total opposition.', 'NOT GIVEN explanations identify the exact unstated preference, recommendation, comparison, frequency or policy.']} sources={[{ label: 'Official IELTS Academic Reading format', href: IELTS_ACADEMIC_URL, note: 'Confirms identifying writer views or claims as a Reading task family and the YES, NO and NOT GIVEN response relationship.' }, { label: 'WeLearn practice blueprint', note: 'Defines held-back transfer, explicit writer-view attribution, local progress and the client-key security boundary.' }]} />}
+    independentPractice={['Write writer agrees, writer opposes or writer view unstated before choosing the official label.', 'Quote the smallest span that proves the writer’s position and identify whose voice it contains.', 'If you choose NO, write the opposing writer proposition.', 'If you choose NOT GIVEN, name the precise preference, degree, comparison or policy the writer never states.']}
+    checklist={['you identify whose view the statement attributes', 'you preserve direction, degree, recommendation and scope', 'you never use NO without an opposing writer position', 'you never convert a mentioned topic or outside belief into the writer’s view']}
+    faqs={ROUTE.faqs} officialNote="Yes / No / Not Given is an official IELTS Academic Reading writer-views or claims task family. This page is guided WeLearn practice; because answer keys reach the browser, it is not a secure Exam or proctored mode."
+    nextLinks={[{ href: '/practica/ielts/reading/tipos-de-preguntas/matching-headings', label: 'Continue to Matching Headings', primary: true }, { href: '/practica/ielts/reading/habilidades/inferencia', label: 'Review inference control' }, { href: '/practica/ielts/reading/habilidades/parafrasis', label: 'Review paraphrase control' }, { href: '/practica/ielts/reading/tipos-de-preguntas/true-false-not-given', label: 'Compare with TFNG' }, { href: '/practica/ielts/reading/mixed-practice', label: 'Open Mixed Practice' }, { href: '/practica/ielts/reading', label: 'Back to Reading hub' }]} />;
 }

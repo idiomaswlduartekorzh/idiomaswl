@@ -25,6 +25,8 @@ import {
 } from '@/data/practica-exams/ielts-reading-multiple-choice-progress';
 import { TfngGuidedPractice, TfngIndependentPractice, TfngProgressEngine } from '@/components/exam-practice/TfngPracticeLab';
 import { TFNG_GUIDED_PASSAGE_ID, TFNG_INDEPENDENT_PASSAGE_ID, getTfngPassage } from '@/data/practica-exams/ielts-reading-tfng-progress';
+import { YnngGuidedPractice, YnngIndependentPractice, YnngProgressEngine } from '@/components/exam-practice/YnngPracticeLab';
+import { YNNG_GUIDED_PASSAGE_ID, YNNG_INDEPENDENT_PASSAGE_ID, getYnngPassage } from '@/data/practica-exams/ielts-reading-ynng-progress';
 import {
   IELTS_READING_TYPES,
   PRACTICE_BASE_URL,
@@ -172,12 +174,15 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   const isMatchingHeadings = slug === 'matching-headings';
   const isMultipleChoice = slug === 'multiple-choice';
   const isTfng = slug === 'true-false-not-given';
+  const isYnng = slug === 'yes-no-not-given';
   const guidedPassage = isMatchingHeadings ? getMatchingHeadingsPassage(MATCHING_HEADINGS_GUIDED_PASSAGE_ID) : undefined;
   const independentPassage = isMatchingHeadings ? getMatchingHeadingsPassage(MATCHING_HEADINGS_INDEPENDENT_PASSAGE_ID) : undefined;
   const multipleChoiceGuided = isMultipleChoice ? getMultipleChoicePassage(MULTIPLE_CHOICE_GUIDED_PASSAGE_ID) : undefined;
   const multipleChoiceIndependent = isMultipleChoice ? getMultipleChoicePassage(MULTIPLE_CHOICE_INDEPENDENT_PASSAGE_ID) : undefined;
   const tfngGuided = isTfng ? getTfngPassage(TFNG_GUIDED_PASSAGE_ID) : undefined;
   const tfngIndependent = isTfng ? getTfngPassage(TFNG_INDEPENDENT_PASSAGE_ID) : undefined;
+  const ynngGuided = isYnng ? getYnngPassage(YNNG_GUIDED_PASSAGE_ID) : undefined;
+  const ynngIndependent = isYnng ? getYnngPassage(YNNG_INDEPENDENT_PASSAGE_ID) : undefined;
 
   return <InternationalReadingSkillLesson
     slug={slug}
@@ -202,6 +207,8 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         ? <MultipleChoiceGuidedPractice passage={multipleChoiceGuided} />
       : tfngGuided
         ? <TfngGuidedPractice passage={tfngGuided} />
+      : ynngGuided
+        ? <YnngGuidedPractice passage={ynngGuided} />
       : <InternationalQuestionTypePractice name={config.name} accent={config.accent} target={config.target} evidence={config.evidence} risk={config.risk} weak={config.weak} strong={config.strong} />}
     independentPracticeExperience={independentPassage
       ? <MatchingHeadingsIndependentPractice passage={independentPassage} />
@@ -209,8 +216,10 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         ? <MultipleChoiceIndependentPractice passage={multipleChoiceIndependent} />
       : tfngIndependent
         ? <TfngIndependentPractice passage={tfngIndependent} />
+      : ynngIndependent
+        ? <YnngIndependentPractice passage={ynngIndependent} />
         : undefined}
-    progressEngine={isMatchingHeadings ? <MatchingHeadingsProgressEngine /> : isMultipleChoice ? <MultipleChoiceProgressEngine /> : isTfng ? <TfngProgressEngine /> : undefined}
+    progressEngine={isMatchingHeadings ? <MatchingHeadingsProgressEngine /> : isMultipleChoice ? <MultipleChoiceProgressEngine /> : isTfng ? <TfngProgressEngine /> : isYnng ? <YnngProgressEngine /> : undefined}
     sourceReview={isMultipleChoice ? (
       <SkillReviewSourceBlock
         accent={config.accent}
@@ -225,7 +234,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
           { label: 'WeLearn practice blueprint', note: 'Defines held-back transfer, explicit option comparison, local progress and the client-key security boundary.' },
         ]}
       />
-    ) : isTfng ? <SkillReviewSourceBlock accent={config.accent} skillName="True / False / Not Given" reviewedFocus={['Guided, independent and Progress Engine passage pools are separated.', 'FALSE requires direct incompatibility rather than a weaker, stronger or merely different claim.', 'NOT GIVEN decisions name the exact missing quantity, identity, date, cost or policy.']} sources={[{ label: 'Official IELTS Academic Reading format', href: IELTS_ACADEMIC_URL, note: 'Confirms identifying-information questions and the TRUE, FALSE and NOT GIVEN evidence relationship.' }, { label: 'WeLearn practice blueprint', note: 'Defines held-back transfer, explicit evidence states, local progress and the client-key security boundary.' }]} /> : undefined}
+    ) : isTfng ? <SkillReviewSourceBlock accent={config.accent} skillName="True / False / Not Given" reviewedFocus={['Guided, independent and Progress Engine passage pools are separated.', 'FALSE requires direct incompatibility rather than a weaker, stronger or merely different claim.', 'NOT GIVEN decisions name the exact missing quantity, identity, date, cost or policy.']} sources={[{ label: 'Official IELTS Academic Reading format', href: IELTS_ACADEMIC_URL, note: 'Confirms identifying-information questions and the TRUE, FALSE and NOT GIVEN evidence relationship.' }, { label: 'WeLearn practice blueprint', note: 'Defines held-back transfer, explicit evidence states, local progress and the client-key security boundary.' }]} /> : isYnng ? <SkillReviewSourceBlock accent={config.accent} skillName="Yes / No / Not Given" reviewedFocus={['Guided, independent and Progress Engine passage pools are separated.', 'NO requires an opposing writer position rather than a merely qualified or weaker view.', 'NOT GIVEN decisions name the exact unstated preference, recommendation, comparison or policy.']} sources={[{ label: 'Official IELTS Academic Reading format', href: IELTS_ACADEMIC_URL, note: 'Confirms identifying writer views or claims and the YES, NO and NOT GIVEN response relationship.' }, { label: 'WeLearn practice blueprint', note: 'Defines held-back transfer, writer-view attribution, local progress and the client-key security boundary.' }]} /> : undefined}
     independentPractice={[
       `Complete one new ${config.name} set without opening feedback.`,
       `For every item, record the exact evidence used for the decision.`,
