@@ -537,4 +537,502 @@ export const TASK1_UNITS: VocabUnit[] = [
       },
     ],
   },
+
+  // ── 4 · Comparaciones ──────────────────────────────────────────────────────
+  {
+    slug: 'task1-comparaciones',
+    label: 'Comparisons',
+    spanishName: 'Vocabulario para comparar en inglés',
+    seoTitle: 'Comparar en inglés para IELTS Task 1: twice as many, outnumber, lag behind',
+    seoDescription: 'Cómo comparar cifras en inglés: twice as many, three times higher, outnumbered, fell short of, considerably more. Con su gramática exacta y ejercicios corregidos.',
+    family: 'task1',
+    job: 'it states how two or more things differ, and by how much',
+    whenToUse: 'Bar charts, pie charts and tables live on this, and even a line graph needs it whenever two lines are worth setting against each other. It is also the vocabulary that separates a response which lists figures from one which reports what the figures mean.',
+    tone: 'contrast',
+    explainer: {
+      definition: 'Comparison language sets two quantities against each other and says which is larger, by how much, and in what terms — as a multiple, as a gap, or as a rank.',
+      sections: [
+        {
+          heading: 'Three ways to say the same difference',
+          body: [
+            'Given two numbers, English offers three quite different ways to relate them, and choosing between them is a decision about what your sentence is for. You can state a multiple — “twice as many” — which is the most compact and the most easily checked. You can state a gap — “exceeded X by twelve points” — which is what you want when the size of the difference is the point. Or you can state a rank — “the second highest” — which is what you want when the position matters more than the distance.',
+            'A response that only ever uses one of the three reads as thin however accurate it is, because every comparison in it has the same shape. A response that picks the right one each time is doing something an examiner can see: it is reading the chart rather than transcribing it.',
+            'The grammar is where these break, and it breaks in predictable places. “Twice as many” needs “as” on both sides and a plural noun in between. “Exceed” takes its object directly and never “exceed to”. Comparatives take “than”, and a comparison with no “than” is a sentence waiting for something that never arrives.',
+          ],
+          points: [
+            { term: 'Multiple', detail: '“twice as many as”, “three times higher than”. Compact, and the reader can verify it instantly.' },
+            { term: 'Gap', detail: '“exceeded by”, “fell short of”, “the difference was”. Use when the size of the difference is the point.' },
+            { term: 'Rank', detail: '“the highest”, “second only to”, “the least common”. Use when position matters more than distance.' },
+            { term: 'Countable or not', detail: '“fewer cars” but “less energy”. “Number of” for things you count, “amount of” for a mass.' },
+          ],
+        },
+        {
+          heading: 'Where the accuracy is checked',
+          body: [
+            'Comparison is the most falsifiable language in Task 1: a reader with the chart in front of them can confirm or refute every one of your claims in seconds. “Twice as many” is either true or it is not, and getting it wrong is not a vocabulary slip — it is a misreport of the data, which reaches Task Achievement.',
+            'That is also why the hedged forms are worth knowing. “Almost twice as many”, “just over a third”, “roughly comparable” let you be accurate about a chart whose values do not land on round numbers, which is most charts. Reaching for the clean multiple when the data does not support it is the commonest way this vocabulary produces a false sentence.',
+          ],
+        },
+      ],
+      cost: 'A response without comparison language does not fail; it flattens. Every sentence becomes “X was 40% and Y was 20%”, and the reader is left to do the arithmetic that your sentence was supposed to do — which is precisely the work Task Achievement asks for. And an inaccurate comparison costs twice, because it is both a lexical error and a false statement about the data.',
+      limits: 'Only compare things the visual actually sets side by side. Two charts with different units are not comparable, and a multiple across them is invented. Superlatives need the whole set to be visible: “the highest” is a claim about every category on the chart, so it is false the moment one is off-screen or unlabelled. And do not compare a category with itself across years and call it a comparison — that is a trend.',
+    },
+    upgrade: {
+      vague: 'A lot more people used the bus than the train, and the car was the most used of all.',
+      precise: 'Bus passengers outnumbered rail users by almost two to one, while private cars accounted for the largest share overall.',
+      earns: ['precision', 'range', 'collocation'],
+      why: '“A lot more” reports a difference without measuring it. “Outnumbered … by almost two to one” gives the relationship and its size in one verb, and “accounted for the largest share” replaces the vague superlative “most used” with the phrase the data actually supports.',
+    },
+    groups: [
+      {
+        label: 'Multiples and fractions',
+        purpose: 'The most compact comparison, and the one a reader can check instantly.',
+        entries: [
+          { text: 'twice as many … as', risk: 'watch', pattern: 'Needs “as” on both sides and a plural countable noun between them: “twice as many cars as bicycles”.' },
+          { text: 'three times higher than', risk: 'watch', pattern: 'Takes “than”, not “as”. “Three times higher” and “three times as high as” are both correct; mixing them is not.' },
+          { text: 'half as many as', risk: 'safe', pattern: 'Same frame as “twice as many”. “Half of” takes a noun directly: “half of all households”.' },
+          { text: 'a third / two thirds of', risk: 'safe', pattern: 'Takes “of” plus the noun, and the verb agrees with that noun, not with the fraction.' },
+          { text: 'almost / just over', risk: 'safe', pattern: 'Goes in front of the multiple: “almost twice as many”. This is what keeps a comparison honest when the data is not round.' },
+          { text: 'double / triple', risk: 'watch', pattern: 'As verbs they mean the figure itself grew: “the figure doubled”. They do not compare two different categories.' },
+        ],
+      },
+      {
+        label: 'Stating the gap',
+        purpose: 'For when the size of the difference is the point, not the ratio.',
+        entries: [
+          { text: 'outnumber', risk: 'safe', pattern: 'Takes its object directly: “cyclists outnumbered drivers”. Only for things you can count.' },
+          { text: 'exceed', risk: 'safe', pattern: 'Takes its object directly, never “exceed to”. Takes “by” for the size: “exceeded imports by 12%”.' },
+          { text: 'fall short of', risk: 'watch', pattern: 'Three words, all needed: “fell short of the target by 5%”. Implies a target or an expectation existed.' },
+          { text: 'lag behind', risk: 'safe', pattern: 'Takes its object directly: “lagged behind the European average”. Suggests it is trailing over time, not just lower.' },
+          { text: 'be on a par with', risk: 'watch', pattern: 'The article is required: “on a par with”, never “on par with” in careful writing. Means roughly equal.' },
+          { text: 'the difference between … and', risk: 'safe', pattern: 'Both prepositions are fixed. “The difference of” names an amount, not a comparison.' },
+        ],
+      },
+      {
+        label: 'How much bigger: degree words',
+        purpose: 'These sit in front of a comparative and say how large the gap is.',
+        entries: [
+          { text: 'considerably / substantially', risk: 'safe', pattern: 'Before the comparative: “considerably higher”. Never before a plain adjective — “considerably high” is not English.' },
+          { text: 'slightly / marginally', risk: 'safe', pattern: 'Before the comparative: “marginally lower”. For a difference that is real but small.' },
+          { text: 'far / by far', risk: 'watch', pattern: '“Far” goes before a comparative — “far greater”; “by far” goes before a superlative — “by far the largest”.' },
+          { text: 'nearly identical', risk: 'safe', pattern: 'A useful way to report two figures that are close without pretending they are equal.' },
+          { text: 'very', risk: 'avoid', pattern: 'It cannot modify a comparative at all: “very higher” is not English, and “very high” reports no comparison.' },
+        ],
+      },
+      {
+        label: 'Rank and superlatives',
+        purpose: 'For when position in the set matters more than the distance.',
+        entries: [
+          { text: 'the highest / the largest', risk: 'safe', pattern: 'Takes “the”, and it claims something about the entire set shown.' },
+          { text: 'second only to', risk: 'safe', pattern: 'Takes a noun: “second only to China”. Reports the rank and names what beat it in four words.' },
+          { text: 'the least common', risk: 'safe', pattern: 'Takes “the”. The mirror of “the most common”, and it names the bottom of the set.' },
+          { text: 'account for the largest share', risk: 'watch', pattern: 'Takes “of” for the whole: “the largest share of total output”. Better than “the most used”, which is vague.' },
+          { text: 'joint highest', risk: 'watch', pattern: 'For a genuine tie: “Spain and Italy were joint highest”. Reporting one of two equal figures as “the highest” is a misreport.' },
+        ],
+      },
+    ],
+    examples: [
+      { sentence: 'Bus passengers outnumbered rail users by almost two to one, while private cars accounted for the largest share overall.', doing: 'outnumbered … by · accounted for the largest share', why: 'Two comparisons of different kinds in one sentence: a ratio between two categories and a rank across the whole set. Note “almost”, which keeps the ratio honest when the data is not exactly double.' },
+      { sentence: 'Spending on housing was considerably higher than on transport, although the two were nearly identical by the end of the period.', doing: 'considerably higher than · nearly identical', why: '“Considerably” modifies the comparative and “than” completes it. The second half reports the gap closing without needing either figure.' },
+    ],
+    mistakes: [
+      { wrong: 'The figure for Japan was twice higher as the figure for Korea.', why: 'Two frames crossed. It is either “twice as high as” or “twice the figure for Korea” — “twice higher as” takes half of each.', right: 'The figure for Japan was twice as high as the figure for Korea.' },
+      { wrong: 'Exports exceeded to imports by nearly 20%.', why: '“Exceed” takes its object directly. The “to” is a carry-over from Spanish and there is no version of this verb that uses it.', right: 'Exports exceeded imports by nearly 20%.' },
+    ],
+    guided: {
+      brief: 'A bar chart: cinema attendance in 2019 was 12 million; streaming subscriptions were 34 million; live theatre was 3 million — the smallest of the three.',
+      goal: 'Write one sentence that compares all three, using a different kind of comparison for each relationship.',
+      steps: [
+        {
+          instruction: 'Compare streaming with cinema as a multiple',
+          hint: '34 against 12 is not exactly three times. Write the comparison — and use a word that keeps it honest.',
+          minWords: 6,
+          placeholder: 'Streaming subscriptions were …',
+          model: 'Streaming subscriptions were almost three times as high as cinema attendance',
+          why: '“Almost” is doing the real work: 34 is 2.8 times 12, so a bare “three times” would be a misreport. And the frame is complete — “as high as”, with both halves present.',
+        },
+        {
+          instruction: 'Place theatre in the set',
+          hint: 'Theatre is the smallest of the three. That is a rank, not a ratio. Write the phrase you would use.',
+          minWords: 4,
+          placeholder: 'while live theatre …',
+          model: 'while live theatre attracted the smallest audience of the three',
+          why: '“Of the three” is what makes the superlative safe: it names the set the claim covers, so it cannot be read as a claim about entertainment in general.',
+        },
+        {
+          instruction: 'Write the whole sentence',
+          hint: 'Join both comparisons. Check that every figure you imply is supported, and that no superlative escapes its set.',
+          minWords: 16,
+          placeholder: 'Streaming subscriptions were …',
+          model: 'Streaming subscriptions were almost three times as high as cinema attendance, while live theatre attracted the smallest audience of the three.',
+          why: 'Two kinds of comparison in one sentence — a hedged multiple and a bounded superlative — and neither one claims anything the chart does not support.',
+        },
+      ],
+      result: 'Streaming subscriptions were almost three times as high as cinema attendance, while live theatre attracted the smallest audience of the three.',
+    },
+    drills: [
+      {
+        stem: 'The figure for Germany was ______ the figure for Austria.',
+        correct: 0,
+        options: [
+          { text: 'twice as high as', why: 'Correct. The frame needs “as” on both sides, with the adjective between them.' },
+          { text: 'twice higher as', why: 'Two frames crossed. It is “twice as high as” or “twice higher than”, never a half of each.' },
+          { text: 'twice more high than', why: '“High” forms its comparative with -er, so “more high” is not English.' },
+          { text: 'the double than', why: '“Double” is not used this way in a comparison, and it would take no “than”.' },
+        ],
+      },
+      {
+        stem: 'Rail freight ______ road freight by nearly fifteen percentage points.',
+        correct: 0,
+        options: [
+          { text: 'exceeded', why: 'Correct. It takes its object directly and “by” then introduces the size of the gap.' },
+          { text: 'exceeded to', why: 'The verb takes no preposition before its object. The “to” is carried over from Spanish.' },
+          { text: 'was exceeded', why: 'The passive reverses the comparison: this would say road freight was larger.' },
+          { text: 'outnumbered', why: '“Outnumber” is for things you count. Freight measured in tonnes is a mass, not a count.' },
+        ],
+      },
+      {
+        stem: 'Spending on health was ______ higher than spending on defence.',
+        correct: 0,
+        options: [
+          { text: 'considerably', why: 'Correct. It modifies the comparative “higher”, which is exactly the slot this adverb takes.' },
+          { text: 'very', why: '“Very” cannot modify a comparative at all. “Very higher” is not English.' },
+          { text: 'by far the', why: '“By far the” belongs before a superlative, not before a comparative with “than”.' },
+          { text: 'much more', why: 'Redundant with “higher”: “much more higher” doubles the comparative.' },
+        ],
+      },
+    ],
+  },
+
+  // ── 5 · Procesos ───────────────────────────────────────────────────────────
+  {
+    slug: 'task1-procesos',
+    label: 'Processes',
+    spanishName: 'Vocabulario para describir procesos en inglés',
+    seoTitle: 'Describir un proceso en inglés para IELTS: stages, subsequently, is then transferred',
+    seoDescription: 'Vocabulario para describir procesos y diagramas de flujo en inglés: secuencia, voz pasiva, nombres de las etapas y ciclos. Con su gramática y ejercicios corregidos.',
+    family: 'task1',
+    job: 'it reports a sequence of stages in order, with the doer left out because nobody is named',
+    whenToUse: 'Any process diagram or flow chart, and the manufacturing and natural cycles that appear most often. It is the one Task 1 visual with no figures at all, which changes what the vocabulary has to do: there is nothing to quantify, so everything rests on sequence and on the passive.',
+    tone: 'link',
+    explainer: {
+      definition: 'Process language reports what happens at each stage, in the order it happens, using the passive because the diagram shows actions without showing who performs them.',
+      sections: [
+        {
+          heading: 'Why the passive, and why it is not optional here',
+          body: [
+            'A process diagram shows things being done and almost never shows who does them. Clay is extracted, mixed and fired; nobody in the diagram is doing the extracting. That is the exact situation the passive exists for: it lets a sentence report an action whose agent is unknown, irrelevant or obvious. Writing “workers extract the clay” invents a doer the diagram does not contain, and writing “the clay extracts” is not English at all.',
+            'This makes the process the one Task 1 visual where the passive is the default rather than a choice. It also means the grammar has to be reliable across many sentences in a row: the right form of “be”, the past participle, and the preposition the verb carries with it. “Is transferred to”, “are removed from”, “is passed through” — the preposition is part of the verb and survives into the passive.',
+            'The second half of the vocabulary is sequence. With no figures to anchor a paragraph, the only structure available is order, and a reader who loses the order has lost the whole description. Signalling it explicitly at each transition is not padding here; it is the organisation the criterion is looking for.',
+          ],
+          points: [
+            { term: 'The passive', detail: '“is heated”, “are collected”, “is then transferred to”. The default voice, because the diagram names no agent.' },
+            { term: 'Sequence markers', detail: '“initially”, “subsequently”, “once this is complete”. The only structure a process paragraph has.' },
+            { term: 'Present simple', detail: 'A process is a general truth, so it stays in the present: “is heated”, not “was heated”.' },
+            { term: 'The parts', detail: '“stage”, “phase”, “by-product”, “raw material”. Naming them lets you refer back without repeating a whole clause.' },
+          ],
+        },
+        {
+          heading: 'Linear or cyclical, and why it matters from the first sentence',
+          body: [
+            'Processes come in two shapes and the difference decides your opening and your closing sentence. A linear process starts with a raw material and ends with a product; a cyclical one returns to its starting point, and saying so is one of the features an overview is expected to name. Describing a cycle as though it ended is a misreport of the diagram, and it is the single most common structural error on this visual.',
+            'The vocabulary for each is small and specific. Linear: “the process begins with”, “the final stage”, “the finished product”. Cyclical: “the cycle repeats”, “returns to”, “the process then begins again”.',
+          ],
+        },
+      ],
+      cost: 'Without the passive, a process description either invents people who are not in the diagram or produces sentences that are not English. Without sequence markers it becomes a list of facts in no stated order, which is a Coherence problem rather than a lexical one — and a reader who cannot follow the order cannot check whether the description is accurate at all.',
+      limits: 'A process has no quantities, so trend and comparison vocabulary has nothing to attach to: there is no “rose sharply” in a diagram with no axis. It also has no causes beyond the ones drawn — the diagram shows that heating follows mixing, not that heating is caused by mixing. And do not add stages the diagram does not show, however obvious they seem: an implied step is an invented one.',
+    },
+    upgrade: {
+      vague: 'First they take the clay out of the ground, then they mix it with water and after that it goes in the oven.',
+      precise: 'Initially, clay is extracted from the ground and mixed with water, before being fired in a kiln.',
+      earns: ['precision', 'register', 'collocation'],
+      why: 'The vague version invents a “they” the diagram never shows, and strings three stages together with “then” and “after that”. The precise one uses the passive throughout, names the equipment correctly, and compresses three stages into one sentence with a single sequence marker.',
+    },
+    groups: [
+      {
+        label: 'Sequencing the stages',
+        purpose: 'With no figures anywhere, order is the only structure a process paragraph has.',
+        entries: [
+          { text: 'initially / to begin with', risk: 'safe', pattern: 'Opens the sentence with a comma. Use one of them once, at the actual start.' },
+          { text: 'subsequently', risk: 'safe', pattern: 'Opens the sentence with a comma, or sits before the verb. More formal than “then” and worth the extra syllables.' },
+          { text: 'once this is complete,', risk: 'safe', pattern: 'A whole clause plus a comma. Useful when one stage genuinely has to finish before the next starts.' },
+          { text: 'at this stage', risk: 'safe', pattern: 'Opens the sentence with a comma. Refers back without repeating the previous clause.' },
+          { text: 'simultaneously', risk: 'watch', pattern: 'Only when the diagram shows two things happening at once. It is a claim about the diagram, not a connector.' },
+          { text: 'after that / and then', risk: 'avoid', pattern: 'Not wrong, and it is the phrase a description falls back on four times in a row. Each use is a place where a precise marker was available.' },
+        ],
+      },
+      {
+        label: 'The passive of process',
+        purpose: 'The default voice here, because the diagram shows actions without agents.',
+        entries: [
+          { text: 'is / are extracted from', risk: 'safe', pattern: 'The preposition belongs to the verb and survives the passive: “extracted from the ground”.' },
+          { text: 'is transferred to', risk: 'safe', pattern: 'Takes “to” plus the destination. “Transferred into” changes the meaning to entering a container.' },
+          { text: 'is passed through', risk: 'safe', pattern: 'Takes “through” plus the thing it goes through: a filter, a screen, a chamber.' },
+          { text: 'is separated into', risk: 'safe', pattern: 'Takes “into” plus the resulting parts: “separated into three grades”.' },
+          { text: 'is left to + verb', risk: 'watch', pattern: 'Takes a bare infinitive: “is left to dry”, never “left to drying”. Common in drying and cooling stages.' },
+          { text: 'they put / workers take', risk: 'avoid', pattern: 'Invents an agent the diagram does not show. If nobody is drawn, nobody goes in the sentence.' },
+        ],
+      },
+      {
+        label: 'Naming the parts',
+        purpose: 'Lets you refer back to a stage without repeating the whole clause.',
+        entries: [
+          { text: 'stage / phase', risk: 'safe', pattern: 'Countable: “the third stage”, “an initial phase”. “Stage” is the safer default in Task 1.' },
+          { text: 'raw material', risk: 'safe', pattern: 'Usually plural: “the raw materials”. Names what enters the process before anything is done to it.' },
+          { text: 'by-product', risk: 'watch', pattern: 'Hyphenated, and it means something produced alongside the main output. Not a synonym for waste.' },
+          { text: 'the finished product', risk: 'safe', pattern: 'Takes “the”. Names the output of a linear process, which is where the description ends.' },
+          { text: 'component', risk: 'safe', pattern: 'Countable. For a part that is combined with others rather than transformed.' },
+        ],
+      },
+      {
+        label: 'Opening, closing and looping',
+        purpose: 'Linear or cyclical is a decision you make in the first sentence and honour in the last.',
+        entries: [
+          { text: 'the process begins with', risk: 'safe', pattern: 'Takes “with” plus a noun: “begins with the extraction of clay”. Note the noun form after it.' },
+          { text: 'consists of X stages', risk: 'safe', pattern: 'Takes “of”, never “in”. Counting the stages in the overview is a feature worth naming.' },
+          { text: 'the final stage', risk: 'safe', pattern: 'Takes “the”. Only true of a linear process — a cycle has no final stage.' },
+          { text: 'the cycle then repeats', risk: 'safe', pattern: 'No object needed. The closing sentence of any cyclical process.' },
+          { text: 'returns to', risk: 'safe', pattern: 'Takes “to” plus the earlier stage: “returns to the atmosphere”. The verb that makes a cycle a cycle.' },
+        ],
+      },
+    ],
+    examples: [
+      { sentence: 'Initially, the raw materials are extracted and transferred to a crushing facility, where they are separated into three grades.', doing: 'Initially · are extracted · transferred to · separated into', why: 'One sequence marker and three passives, each carrying its own preposition. No agent appears anywhere, because the diagram shows none.' },
+      { sentence: 'Once this stage is complete, the water is left to evaporate, and the salt that remains is collected before the cycle begins again.', doing: 'Once this stage is complete · is left to evaporate · the cycle begins again', why: '“Left to” takes a bare infinitive, and the closing clause reports that the process is cyclical — which is a feature of the diagram, not a flourish.' },
+    ],
+    mistakes: [
+      { wrong: 'After that, workers take the clay and they put it into the oven.', why: 'Two problems. The diagram shows no workers, so they have been invented; and “after that” is the fallback marker where a precise one was available.', right: 'Subsequently, the clay is transferred to a kiln.' },
+      { wrong: 'The mixture is then left to drying for several hours.', why: '“Be left to” takes a bare infinitive, not an -ing form. The “to” here is part of the infinitive, not a preposition.', right: 'The mixture is then left to dry for several hours.' },
+    ],
+    guided: {
+      brief: 'A diagram of glass recycling: bottles are collected → they are cleaned → they are crushed into small pieces → the pieces are melted → new bottles are made and returned to shops.',
+      goal: 'Describe the middle of this process. Passive throughout, no invented people, and a marker at each transition.',
+      steps: [
+        {
+          instruction: 'Report the first two stages in one sentence',
+          hint: 'Collecting and cleaning. Use one opening marker and the passive for both verbs — and no “they”.',
+          minWords: 8,
+          placeholder: 'Initially, used bottles …',
+          model: 'Initially, used bottles are collected and washed at a processing plant.',
+          why: 'Two passives sharing one auxiliary — “are collected and washed” — which is shorter than repeating it. And no agent appears, because the diagram does not draw one.',
+        },
+        {
+          instruction: 'Report the crushing, with the right preposition',
+          hint: 'The bottles become small pieces. Choose the verb, and check which preposition it takes when the result is named.',
+          minWords: 6,
+          placeholder: 'They are then …',
+          model: 'They are then crushed into small fragments.',
+          why: '“Crushed into” names the result; “crushed in” would name the place. The preposition is doing the work of a whole clause.',
+        },
+        {
+          instruction: 'Close the loop',
+          hint: 'The new bottles go back to the shops, which is where the process started. Say so — the shape of the diagram is a feature.',
+          minWords: 10,
+          placeholder: 'Once the fragments have been melted, …',
+          model: 'Once the fragments have been melted, new bottles are produced and returned to retailers, and the cycle begins again.',
+          why: '“The cycle begins again” reports that this is cyclical rather than linear, which is exactly the feature a description of this diagram must not leave out.',
+        },
+      ],
+      result: 'Initially, used bottles are collected and washed at a processing plant. They are then crushed into small fragments. Once the fragments have been melted, new bottles are produced and returned to retailers, and the cycle begins again.',
+    },
+    drills: [
+      {
+        stem: 'The pulp ______ a series of rollers before it is dried.',
+        correct: 0,
+        options: [
+          { text: 'is passed through', why: 'Correct. The passive with the preposition the verb carries: things are passed *through* rollers.' },
+          { text: 'is passed by', why: '“Passed by” means it went past them without entering. The pulp goes through.' },
+          { text: 'passes through', why: 'Active, which makes the pulp the doer. In a process the material is acted upon.' },
+          { text: 'is passing through', why: 'The continuous reports something happening now. A process is a general truth in the present simple.' },
+        ],
+      },
+      {
+        stem: 'Once the mixture has cooled, it ______ set for twenty-four hours.',
+        correct: 0,
+        options: [
+          { text: 'is left to', why: 'Correct. “Be left to” takes a bare infinitive, and “set” is that infinitive.' },
+          { text: 'is left to setting', why: 'The “to” belongs to the infinitive, not to a preposition, so no -ing form can follow it.' },
+          { text: 'leaves to', why: 'Active, and it makes the mixture do the leaving.' },
+          { text: 'is left for', why: '“Left for” would introduce a purpose or a period, not the action the mixture undergoes.' },
+        ],
+      },
+      {
+        stem: '______, the raw materials are delivered to the site and sorted by size.',
+        correct: 0,
+        options: [
+          { text: 'Initially', why: 'Correct. It opens the sentence with a comma and marks the genuine first stage.' },
+          { text: 'After that', why: 'It refers back to a stage that has not been described yet. This is the beginning.' },
+          { text: 'At the final stage', why: 'It places the first stage at the end of the process.' },
+          { text: 'Simultaneously', why: 'It claims two things happen at once, which is a claim about the diagram, not an opening.' },
+        ],
+      },
+    ],
+  },
+
+  // ── 6 · Mapas ──────────────────────────────────────────────────────────────
+  {
+    slug: 'task1-mapas',
+    label: 'Maps',
+    spanishName: 'Vocabulario para describir mapas en inglés',
+    seoTitle: 'Describir mapas en inglés para IELTS: was demolished, adjacent to, on the outskirts',
+    seoDescription: 'Vocabulario para comparar dos mapas en inglés: puntos cardinales, was constructed, was replaced by, remained in place. Con su preposición exacta y ejercicios corregidos.',
+    family: 'task1',
+    job: 'it reports what changed in a place, and exactly where',
+    whenToUse: 'Whenever the paper gives you two maps of the same place at different times — the commonest form by far. The vocabulary splits cleanly in two: words for position, and words for what happened to each feature.',
+    tone: 'evidence',
+    explainer: {
+      definition: 'Map language does two jobs at once: it locates a feature precisely enough that a reader could find it, and it reports what happened to that feature between the two maps.',
+      sections: [
+        {
+          heading: 'Two jobs, and a sentence needs both',
+          body: [
+            'A map description that says what changed without saying where is unusable: “a supermarket was built” could be anywhere on the page. One that says where without saying what changed is a list of places. Every useful sentence in this visual carries both, and the vocabulary divides along exactly that line — a set of position words and a set of change verbs, combined one from each.',
+            'Position in English is more precise than instinct suggests, and the precision is free. “In the north” places something inside the area; “to the north of” places it outside and beyond something else. “Adjacent to” means sharing a boundary; “near” means neither. A reader with the map in front of them checks these, and the wrong preposition puts your building in the wrong place as surely as the wrong compass point would.',
+            'The change verbs are almost all passive, for the same reason as in a process: the map shows that a warehouse became flats and shows nobody doing it. And they are not interchangeable. “Demolished” means it was removed; “replaced by” means something took its place; “converted into” means the same structure was reused for something else. Three different histories, and the map distinguishes them.',
+          ],
+          points: [
+            { term: 'Inside or beyond', detail: '“in the north of the site” is inside it; “to the north of the site” is outside and past it.' },
+            { term: 'Touching or not', detail: '“adjacent to” shares a boundary. “Near” and “close to” do not claim contact.' },
+            { term: 'Removed, replaced, reused', detail: '“demolished” · “replaced by” · “converted into”. Three different things happened, and the map shows which.' },
+            { term: 'No dates? No dates.', detail: 'If the maps say only “before” and “after”, that is the only framing available. Inventing years invents data.' },
+          ],
+        },
+        {
+          heading: 'What a map never tells you',
+          body: [
+            'A map shows what is there, not why. It does not say the village grew because the road was widened, or that the residents wanted a supermarket, or that any of it was an improvement. Every one of those is a sentence a writer produces without noticing, because the story feels obvious once the two maps are side by side — and every one is a claim about data that is not on the paper.',
+            'It also shows no quantities. There are no figures on a map, so trend and comparison vocabulary has nothing to attach to: nothing rose sharply, and nothing was twice as high as anything else. What a map has instead is what survived, which is the feature descriptions leave out most often.',
+          ],
+        },
+      ],
+      cost: 'Vague position wording makes a description unusable — a reader who cannot locate what you are talking about cannot verify any of it, and precision here is the whole point of the task. And using the wrong change verb misreports the history of a feature: writing that a building was replaced when the map shows it was converted claims a demolition that never happened.',
+      limits: 'No causes, no judgements, no predictions: the maps show what stands where at two moments and nothing else. No quantities either, so trend vocabulary has nothing to attach to. And when the maps carry no years, “before and after” is the only framing the visual supports — assigning dates to them is inventing data.',
+    },
+    upgrade: {
+      vague: 'They knocked down the old buildings in the north part and put a shopping centre there instead.',
+      precise: 'The warehouses in the northern section were demolished and replaced by a shopping centre.',
+      earns: ['precision', 'register', 'collocation'],
+      why: 'The vague version invents a “they” the map does not show and uses “knocked down” and “put”, both conversational. The precise one names the feature, locates it, and uses the two verbs that report exactly what happened — one removal and one substitution.',
+    },
+    groups: [
+      {
+        label: 'Compass and position',
+        purpose: 'Locating a feature precisely enough that a reader could point at it.',
+        entries: [
+          { text: 'in the north / northern part of', risk: 'safe', pattern: 'Places it INSIDE the area: “in the northern part of the site”. The adjective form reads better before a noun.' },
+          { text: 'to the north of', risk: 'watch', pattern: 'Places it OUTSIDE and beyond: “to the north of the river”. Confusing this with “in the north of” moves the feature off the map.' },
+          { text: 'adjacent to', risk: 'watch', pattern: 'Takes “to”, and claims a shared boundary. If there is a gap, the word is “near”.' },
+          { text: 'on the outskirts of', risk: 'safe', pattern: 'Takes “of” plus the settlement. For something at the edge of a town rather than in it.' },
+          { text: 'in the vicinity of', risk: 'safe', pattern: 'Takes “of”. Formal, and it claims nearness without claiming contact.' },
+          { text: 'opposite / facing', risk: 'safe', pattern: 'Take their object directly: “opposite the station”, never “opposite to the station” in this sense.' },
+          { text: 'there / over there', risk: 'avoid', pattern: 'Locates nothing on a page the reader is also looking at. Every use is a place where a compass point was available.' },
+        ],
+      },
+      {
+        label: 'What was added',
+        purpose: 'New features. Almost always passive, because the map shows no builder.',
+        entries: [
+          { text: 'was constructed', risk: 'safe', pattern: 'The neutral default for a new building. Takes “on” for the site: “constructed on the former playing field”.' },
+          { text: 'was erected', risk: 'watch', pattern: 'Suits structures rather than buildings: a monument, a mast, a fence.' },
+          { text: 'was developed', risk: 'safe', pattern: 'For an area rather than a single building: “the eastern edge was developed for housing”.' },
+          { text: 'was extended', risk: 'safe', pattern: 'For something that already existed and grew. Not the same as being replaced.' },
+          { text: 'appeared', risk: 'avoid', pattern: 'Buildings do not appear. It reads as though the map changed by itself.' },
+        ],
+      },
+      {
+        label: 'What was removed or changed',
+        purpose: 'Three different histories, and the map distinguishes them.',
+        entries: [
+          { text: 'was demolished', risk: 'safe', pattern: 'The structure was removed. Say what took its place in the same sentence, or the reader is left with a gap.' },
+          { text: 'was replaced by', risk: 'safe', pattern: 'Takes “by” plus the new feature. Implies the old one went and a different one arrived.' },
+          { text: 'was converted into', risk: 'watch', pattern: 'Takes “into”. The SAME structure was reused for a new purpose — nothing was demolished.' },
+          { text: 'gave way to', risk: 'safe', pattern: 'Takes its object directly: “the orchard gave way to housing”. Useful for land rather than buildings.' },
+          { text: 'was relocated to', risk: 'watch', pattern: 'Takes “to”. The feature still exists somewhere else on the map. Only true if you can point at it.' },
+        ],
+      },
+      {
+        label: 'What stayed the same',
+        purpose: 'The feature descriptions leave out most often, and the easiest one to include.',
+        entries: [
+          { text: 'remained in place', risk: 'safe', pattern: 'No preposition needed. The standard way to report a feature that survived unchanged.' },
+          { text: 'was retained', risk: 'safe', pattern: 'Passive, and it implies a decision was made to keep it — which suits a redevelopment.' },
+          { text: 'was left untouched', risk: 'safe', pattern: 'Slightly stronger than “remained”: nothing at all was done to it.' },
+          { text: 'the only feature to survive', risk: 'watch', pattern: 'Takes “to” plus the infinitive. A strong claim: it must be the only one.' },
+          { text: 'stayed the same', risk: 'watch', pattern: 'Correct and flat. “Remained in place” or “was retained” do the same job at the register the task expects.' },
+        ],
+      },
+    ],
+    examples: [
+      { sentence: 'The warehouses in the northern part of the site were demolished and replaced by a shopping centre, while the chapel adjacent to the main road was retained.', doing: 'in the northern part of · demolished and replaced by · adjacent to · was retained', why: 'Two features, both located and both with the right history: one removed and substituted, one kept. “Adjacent to” claims the chapel touches the road, which is checkable on the map.' },
+      { sentence: 'The old mill was not demolished but converted into apartments, and a car park was constructed on the land to the east of it.', doing: 'converted into · to the east of', why: '“Converted into” reports that the structure survived, which is a different history from “replaced by”. And “to the east of” places the car park beyond the mill rather than inside it.' },
+    ],
+    mistakes: [
+      { wrong: 'A new library was built to the north of the town, in the northern part.', why: 'The two phrases contradict each other. “To the north of the town” is outside it; “in the northern part” is inside. Only one of them can be true.', right: 'A new library was built in the northern part of the town.' },
+      { wrong: 'The factory was replaced into a museum.', why: 'Two verbs crossed. Something is “replaced by” a different thing, or “converted into” a new use — and the map shows which of the two happened here.', right: 'The factory was converted into a museum.' },
+    ],
+    guided: {
+      brief: 'Two maps of Ashford, 1990 and 2020. In 1990: a farm in the west, a school in the centre, woodland in the east. In 2020: the farm is gone and housing stands there; the school is still there but larger; the woodland is unchanged.',
+      goal: 'Describe all three features in two sentences: each one located, each one with the right change verb.',
+      steps: [
+        {
+          instruction: 'Report the farm',
+          hint: 'It is gone and something took its place. Choose between “demolished”, “replaced by” and “gave way to” — and locate it.',
+          minWords: 8,
+          placeholder: 'The farm in the west …',
+          model: 'The farmland in the western part of the town gave way to housing.',
+          why: '“Gave way to” suits land better than “demolished”, which is for structures. And “in the western part of” places it inside the town, which is where the map puts it.',
+        },
+        {
+          instruction: 'Report the school',
+          hint: 'It survived and it grew. That is not the same as being replaced, and it needs two pieces of information.',
+          minWords: 7,
+          placeholder: 'The school …',
+          model: 'The school at the centre remained in place and was extended.',
+          why: '“Remained in place” and “was extended” report two facts that a single verb would lose: it survived, and it is not the same size. “Replaced” would have claimed a demolition that never happened.',
+        },
+        {
+          instruction: 'Report the woodland and join it all',
+          hint: 'Nothing happened to the woodland. That is a feature, not an absence — say it. Then write both sentences.',
+          minWords: 16,
+          placeholder: 'The farmland in the western part …',
+          model: 'The farmland in the western part of the town gave way to housing, while the school at the centre remained in place and was extended. The woodland to the east was left untouched.',
+          why: 'Three features, three different histories, each located. Reporting what did not change is the thing most descriptions leave out, and it is free.',
+        },
+      ],
+      result: 'The farmland in the western part of the town gave way to housing, while the school at the centre remained in place and was extended. The woodland to the east was left untouched.',
+    },
+    drills: [
+      {
+        stem: 'A new car park was built ______ the hospital, sharing its eastern boundary.',
+        correct: 0,
+        options: [
+          { text: 'adjacent to', why: 'Correct. It takes “to” and claims a shared boundary, which is exactly what the sentence goes on to describe.' },
+          { text: 'adjacent of', why: 'The preposition is “to”. “Adjacent of” does not exist.' },
+          { text: 'near to', why: '“Near” claims proximity without contact, and the sentence says the boundaries touch.' },
+          { text: 'in front to', why: 'Two prepositions where the phrase takes one: “in front of”.' },
+        ],
+      },
+      {
+        stem: 'The old cinema was not demolished; it ______ a public library.',
+        correct: 0,
+        options: [
+          { text: 'was converted into', why: 'Correct. The structure survived and was reused, which is what “converted into” reports.' },
+          { text: 'was replaced by', why: 'That would mean the cinema went and something else arrived. The sentence says it was not demolished.' },
+          { text: 'was converted by', why: 'The preposition is “into” for the new use. “By” would name whoever did the converting.' },
+          { text: 'converted into', why: 'Active, which makes the cinema do the converting. The map shows no agent.' },
+        ],
+      },
+      {
+        stem: 'The church was the only original building ______ the redevelopment.',
+        correct: 0,
+        options: [
+          { text: 'to survive', why: 'Correct. “The only … to” takes a bare infinitive, and “survive” takes its object directly.' },
+          { text: 'to survive to', why: '“Survive” takes no preposition before its object.' },
+          { text: 'surviving', why: 'After “the only”, English takes the infinitive rather than the -ing form.' },
+          { text: 'that remained in place of', why: '“In place of” means “instead of”, which claims the church replaced the redevelopment.' },
+        ],
+      },
+    ],
+  },
 ];
