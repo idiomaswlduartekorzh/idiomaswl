@@ -149,6 +149,20 @@ for (const lesson of lessons) {
  * Se toleran 2 palabras de diferencia. A partir de 3 la opción destaca a simple vista.
  */
 const DESTAQUE = 3
+
+/**
+ * Los dos umbrales del blueprint de Writing.
+ *
+ * Viven aquí arriba con `DESTAQUE` y no junto al bloque que los usa, porque tres bloques
+ * distintos los necesitan —paráfrasis, vocabulario y linking— y el primero que se ejecuta
+ * está por encima de donde estaban declarados. Un `const` no existe antes de su línea, así
+ * que el guardián reventaba con un ReferenceError en lugar de comprobar nada.
+ *
+ * 250 palabras es aproximadamente donde una definición deja de serlo y empieza a enseñar.
+ * Tres pasos es el mínimo para que un guiado sea andamio y no un ejemplo partido en trozos.
+ */
+const EXPLICACION_MINIMA = 250
+const PASOS_MINIMOS = 3
 const contar = (value) => value.trim().split(/\s+/u).filter(Boolean).length
 
 // Los bancos de opción son los exports de introduction-data que son listas de preguntas.
@@ -839,7 +853,28 @@ for (const [nombre, bancoCompleto] of [['Paráfrasis', bancos], ['Vocabulario', 
   }
 }
 
+const funcExtras = loadModule(path.join(task2, 'academic-vocabulary', 'vocabulary-explainers.ts'), () => ({}))
+
 for (const f of funciones) {
+  // Bloques 1 y 3 del blueprint, con el mismo criterio que paraphrasing y linking.
+  const explainer = (funcExtras.FUNCTION_EXPLAINERS ?? {})[f.slug]
+  if (!explainer) failures.push(`Vocabulario/${f.slug}: sin explicación larga. Es el bloque 1.`)
+  else {
+    const palabras = [explainer.definition,
+      ...(explainer.sections ?? []).flatMap((s) => [s.heading, ...(s.body ?? []), ...(s.points ?? []).map((p) => `${p.term} ${p.detail}`)]),
+      explainer.cost, explainer.limits].filter(Boolean).join(' ').trim().split(/\s+/u).length
+    if (palabras < EXPLICACION_MINIMA) failures.push(`Vocabulario/${f.slug}: la explicación tiene ${palabras} palabras; el mínimo son ${EXPLICACION_MINIMA}.`)
+    if (!explainer.cost?.trim() || !explainer.limits?.trim()) failures.push(`Vocabulario/${f.slug}: falta «cost» o «limits».`)
+  }
+  const guided = (funcExtras.FUNCTION_GUIDED ?? {})[f.slug]
+  if (!guided) failures.push(`Vocabulario/${f.slug}: sin ejercicio guiado. Es el bloque 3.`)
+  else {
+    if ((guided.steps ?? []).length < PASOS_MINIMOS) failures.push(`Vocabulario/${f.slug}: el guiado tiene ${(guided.steps ?? []).length} pasos.`)
+    for (const [i, step] of (guided.steps ?? []).entries()) {
+      if (!(step.minWords > 0)) failures.push(`Vocabulario/${f.slug}: el paso ${i + 1} del guiado no exige escribir nada.`)
+    }
+  }
+
   const opciones = f.check?.options ?? []
   if (opciones.length !== 3) failures.push(`Vocabulario/${f.slug}: el reconocimiento tiene ${opciones.length} opciones; se esperaban 3.`)
   if (opciones.filter((o) => o.works).length !== 1) {
@@ -889,9 +924,6 @@ for (const [fichero, llamada] of [
  * `cost` y `limits` son obligatorias porque son las dos que ningún material de IELTS trae:
  * qué pierdes exactamente si no lo haces, y dónde la técnica deja de aplicar.
  */
-const EXPLICACION_MINIMA = 250
-const PASOS_MINIMOS = 3
-
 const explainers = loadModule(path.join(task2, 'paraphrasing', 'paraphrasing-explainers.ts'), () => ({}))
 const EXPLAINERS = explainers.EXPLAINERS ?? {}
 const GUIDED = explainers.GUIDED ?? {}

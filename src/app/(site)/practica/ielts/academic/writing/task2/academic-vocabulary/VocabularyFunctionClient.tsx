@@ -4,7 +4,10 @@ import { useMemo, useState } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight, CheckCircle2, RotateCcw } from 'lucide-react';
 import { placeOption } from '@/lib/practica/shuffle-options';
+import SkillExplainer from '../../_shared/SkillExplainer';
+import GuidedPractice from '../../_shared/GuidedPractice';
 import { VOCAB_FUNCTIONS, RISK_LABEL, type VocabFunction } from './vocabulary-data';
+import { FUNCTION_EXPLAINERS, FUNCTION_GUIDED } from './vocabulary-explainers';
 import styles from '../introduccion/page.module.css';
 
 /**
@@ -141,9 +144,16 @@ export default function VocabularyFunctionClient({ slug }: { slug: string }) {
       </div>
     </header>
 
+    {/* BLOQUE 1 del blueprint — la explicación larga. */}
+    <SkillExplainer
+      explainer={FUNCTION_EXPLAINERS[func.slug]}
+      tone={func.tone}
+      heading={`What ${func.label.toLowerCase()} really asks you to decide`}
+    />
+
     <section id="upgrade" className={styles.section}>
       <div className={styles.sectionHeading}>
-        <p className={styles.kicker}>Start here · why precise words score better</p>
+        <p className={styles.kicker}>Examples · why precise words score better</p>
         <h2>The same idea, twice</h2>
         <p>
           Lexical Resource is one of the four criteria, and it is not a count of long words. What it
@@ -170,15 +180,6 @@ export default function VocabularyFunctionClient({ slug }: { slug: string }) {
         {func.upgrade.earns.join(' · ')}. No page here promises anyone a score: these are the things
         the criterion actually looks at, and they are the things you can control.
       </p>
-    </section>
-
-    <section id="recognise" className={styles.section}>
-      <div className={styles.sectionHeading}>
-        <p className={styles.kicker}>Now you try · recognition first</p>
-        <h2>Before you learn the words, learn the job</h2>
-        <p>A word list memorised before you can see what it is for is a word list that gets used in the wrong place.</p>
-      </div>
-      <FunctionCheck func={func} />
     </section>
 
     <section className={styles.section}>
@@ -232,9 +233,21 @@ export default function VocabularyFunctionClient({ slug }: { slug: string }) {
       </div>
     </section>
 
+    {/* BLOQUE 3 del blueprint — el escalón entre el ejemplo y el motor. */}
+    <GuidedPractice exercise={FUNCTION_GUIDED[func.slug]} />
+
+    <section id="recognise" className={styles.section}>
+      <div className={styles.sectionHeading}>
+        <p className={styles.kicker}>Exercises · step 1, recognition</p>
+        <h2>Before you learn the words, learn the job</h2>
+        <p>A word list memorised before you can see what it is for is a word list that gets used in the wrong place.</p>
+      </div>
+      <FunctionCheck func={func} />
+    </section>
+
     <section id="practice" className={styles.section}>
       <div className={styles.sectionHeading}>
-        <p className={styles.kicker}>Step 2 · production</p>
+        <p className={styles.kicker}>Exercises · step 2, production</p>
         <h2>Choose the item that does the job and takes the right pattern</h2>
         <p>Every wrong option is wrong for its own reason, and it says so. Nothing here is scored automatically.</p>
       </div>
