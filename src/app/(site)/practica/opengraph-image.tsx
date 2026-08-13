@@ -40,9 +40,8 @@ export default function Image() {
         </div>
 
         {/* Headline */}
-        <div style={{ fontSize: 58, fontWeight: 800, color: '#fff', lineHeight: 1.1, letterSpacing: '-0.03em', flex: 1 }}>
+        <div style={{ display: 'flex', flexDirection: 'column', fontSize: 58, fontWeight: 800, color: '#fff', lineHeight: 1.1, letterSpacing: '-0.03em', flex: 1 }}>
           Practica coreano
-          <br />
           <span style={{ color: '#f87171' }}>en tiempo real.</span>
         </div>
 
