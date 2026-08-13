@@ -1,210 +1,100 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
-import QuestionTypeReviewSourceBlock from '@/components/exam-practice/QuestionTypeReviewSourceBlock';
-import { FileQuestion, ScanSearch, TextCursorInput } from 'lucide-react';
-import ShortAnswerPassageBank from '@/components/exam-practice/ShortAnswerPassageBank';
-import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
+import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import {
-  IELTS_READING_TYPES,
-  IELTS_SHORT_ANSWER_PASSAGES,
-  PRACTICE_BASE_URL,
-} from '@/data/practica-exams/seo-catalog';
+  ShortAnswerGuidedPractice,
+  ShortAnswerIndependentPractice,
+  ShortAnswerProgressEngine,
+} from '@/components/exam-practice/ShortAnswerPracticeLab';
+import {
+  SHORT_ANSWER_GUIDED_PASSAGE_ID,
+  SHORT_ANSWER_INDEPENDENT_PASSAGE_ID,
+  SHORT_ANSWER_OFFICIAL_FORMAT_URL as IELTS_ACADEMIC_URL,
+  getShortAnswerPassage,
+} from '@/data/practica-exams/ielts-reading-short-answer-progress';
+import { IELTS_READING_TYPES, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 
 const ROUTE = IELTS_READING_TYPES.find((item) => item.slug === 'short-answer')!;
-const URL = `${PRACTICE_BASE_URL}${ROUTE.path}`;
-const ACCENT = '#be123c';
-const IELTS_SAMPLE_URL = 'https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test';
+const TITLE = 'Short Answer: answer the exact factual question';
+const DESCRIPTION = 'Classify what the question asks for, follow the passage evidence in order and copy the smallest exact span that answers that target within the displayed word limit.';
+const guidedPassage = getShortAnswerPassage(SHORT_ANSWER_GUIDED_PASSAGE_ID)!;
+const independentPassage = getShortAnswerPassage(SHORT_ANSWER_INDEPENDENT_PASSAGE_ID)!;
 
 export const metadata: Metadata = {
-  title: 'IELTS Reading Short-answer Questions: ejercicios y método',
-  description: ROUTE.description,
+  title: 'IELTS Short Answer: Method, Practice and Progress',
+  description: DESCRIPTION,
   keywords: ROUTE.keywords,
-  openGraph: {
-    title: 'IELTS Reading Short-answer Questions: ejercicios y método',
-    description: ROUTE.description,
-    url: URL,
-    type: 'website',
-    locale: 'es_CO',
-  },
-  alternates: { canonical: URL },
+  alternates: { canonical: `${PRACTICE_BASE_URL}${ROUTE.path}` },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: `${PRACTICE_BASE_URL}${ROUTE.path}`, type: 'website', locale: 'en_US' },
 };
 
 export default function Page() {
-  return (
-    <>
-      <LearningResourceJsonLd
-        name={ROUTE.title}
-        url={URL}
-        description={ROUTE.description}
-        teaches={ROUTE.teaches}
-        isPartOf={{ name: 'Tipos de preguntas IELTS Reading', url: `${PRACTICE_BASE_URL}/practica/ielts/reading/tipos-de-preguntas` }}
-      />
-      <FaqJsonLd faqs={ROUTE.faqs} />
-      <BreadcrumbJsonLd
-        items={[
-          { name: 'Práctica', url: `${PRACTICE_BASE_URL}/practica` },
-          { name: 'IELTS', url: `${PRACTICE_BASE_URL}/practica/ielts` },
-          { name: 'Reading', url: `${PRACTICE_BASE_URL}/practica/ielts/reading` },
-          { name: 'Tipos de preguntas', url: `${PRACTICE_BASE_URL}/practica/ielts/reading/tipos-de-preguntas` },
-          { name: 'Short-answer Questions', url: URL },
-        ]}
-      />
-
-      <section className="wl-section">
-        <div className="wrap" style={{ maxWidth: 1040 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
-            <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
-            <span>/</span>
-            <Link href="/practica/ielts" style={{ color: 'var(--muted)', textDecoration: 'none' }}>IELTS</Link>
-            <span>/</span>
-            <Link href="/practica/ielts/reading/tipos-de-preguntas" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Tipos de preguntas</Link>
-            <span>/</span>
-            <span style={{ color: 'var(--ink)', fontWeight: 800 }}>Short-answer Questions</span>
-          </div>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '1rem', alignItems: 'stretch', marginBottom: '1.5rem' }}>
-            <div>
-              <p className="eyebrow" style={{ margin: '0 0 0.5rem' }}>
-                <span className="ink-line" />IELTS Reading · Tipo de pregunta oficial
-              </p>
-              <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.1rem)', lineHeight: 1.04, letterSpacing: '-0.04em', margin: '0 0 0.85rem', color: 'var(--ink)' }}>
-                IELTS Reading Short-answer Questions
-              </h1>
-              <p style={{ color: 'var(--muted)', fontSize: '1rem', lineHeight: 1.75, margin: 0, maxWidth: 740 }}>
-                Short-answer Questions parecen simples, pero castigan respuestas demasiado largas o vagas. Tu tarea es encontrar evidencia exacta, responder solo lo que preguntan y respetar el límite de palabras.
-              </p>
-            </div>
-
-            <aside className="wl-card" style={{ padding: '1rem', borderRadius: 16, display: 'grid', gap: '0.75rem', alignContent: 'center' }}>
-              {[
-                { label: 'Formato', value: 'abierto', sub: 'respuesta corta' },
-                { label: 'Riesgo', value: 'extra', sub: 'palabras de más' },
-                { label: 'Clave', value: 'evidencia', sub: 'copiar exacto' },
-              ].map((item) => (
-                <div key={item.label} style={{ display: 'flex', justifyContent: 'space-between', gap: '0.75rem', alignItems: 'center', border: '1px solid var(--line-soft)', borderRadius: 12, padding: '0.75rem', background: 'var(--bg-2)' }}>
-                  <span style={{ color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.72rem', textTransform: 'uppercase', fontWeight: 800 }}>{item.label}</span>
-                  <strong style={{ color: ACCENT, fontFamily: 'var(--mono)', fontSize: '1.05rem', textAlign: 'right' }}>
-                    {item.value}
-                    <span style={{ display: 'block', color: 'var(--muted)', fontSize: '0.66rem', fontWeight: 700 }}>{item.sub}</span>
-                  </strong>
-                </div>
-              ))}
-            </aside>
-          </div>
-
-          <section className="wl-card" style={{ padding: '1rem', borderRadius: 16, marginBottom: '1rem', borderLeft: `4px solid ${ACCENT}` }}>
-            <p className="eyebrow" style={{ margin: '0 0 0.35rem' }}>Formato oficial vs estrategia WeLearn</p>
-            <p style={{ margin: 0, color: 'var(--ink-2)', lineHeight: 1.68 }}>
-              <strong>Formato oficial:</strong> IELTS Academic Reading incluye Short-answer Questions como tipo de pregunta. Debes responder con pocas palabras del pasaje y seguir el límite indicado. <strong>Estrategia WeLearn:</strong> convertimos cada pregunta en una búsqueda de evidencia: palabra interrogativa, dato solicitado, zona del texto y respuesta mínima.
-            </p>
-          </section>
-
-          <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: '0.85rem', marginBottom: '1.2rem' }}>
-            {[
-              {
-                icon: <FileQuestion size={18} />,
-                title: 'Lee la pregunta exacta',
-                text: 'Who, what, where, when y why cambian el tipo de respuesta esperada.',
-              },
-              {
-                icon: <ScanSearch size={18} />,
-                title: 'Ubica la evidencia',
-                text: 'Escanea nombres, fechas, causas o sustantivos clave; luego confirma la frase alrededor.',
-              },
-              {
-                icon: <TextCursorInput size={18} />,
-                title: 'Responde mínimo',
-                text: 'No escribas una oración completa si dos palabras bastan y respetan la instrucción.',
-              },
-            ].map((item) => (
-              <article key={item.title} className="wl-card" style={{ padding: '1rem', borderRadius: 14 }}>
-                <div style={{ display: 'flex', gap: '0.5rem', color: ACCENT, alignItems: 'center', marginBottom: '0.35rem' }}>
-                  {item.icon}
-                  <h2 style={{ margin: 0, color: 'var(--ink)', fontSize: '1rem' }}>{item.title}</h2>
-                </div>
-                <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.58, fontSize: '0.9rem' }}>{item.text}</p>
-              </article>
-            ))}
-          </section>
-
-          <section className="wl-card" style={{ padding: '1.2rem', borderRadius: 16, marginBottom: '1rem' }}>
-            <p className="eyebrow" style={{ margin: '0 0 0.45rem' }}>Método WeLearn</p>
-            <h2 style={{ margin: '0 0 0.75rem', fontSize: '1.3rem', letterSpacing: '-0.02em' }}>Cómo resolver Short-answer Questions</h2>
-            <div style={{ display: 'grid', gap: '0.65rem' }}>
-              {[
-                'Subraya el límite de palabras antes de leer las preguntas.',
-                'Identifica qué pide la pregunta: persona, lugar, objeto, razón, resultado o condición.',
-                'Escanea el pasaje por palabras clave y paráfrasis del enunciado.',
-                'Copia la respuesta mínima del texto y revisa que no estés respondiendo otra cosa.',
-              ].map((item, index) => (
-                <p key={item} style={{ margin: 0, display: 'grid', gridTemplateColumns: '32px 1fr', gap: '0.65rem', alignItems: 'start', color: 'var(--ink-2)', lineHeight: 1.58 }}>
-                  <span style={{ width: 32, height: 32, borderRadius: 10, background: `${ACCENT}12`, color: ACCENT, display: 'grid', placeItems: 'center', fontFamily: 'var(--mono)', fontWeight: 900 }}>
-                    {index + 1}
-                  </span>
-                  <span>{item}</span>
-                </p>
-              ))}
-            </div>
-          </section>
-
-          <ShortAnswerPassageBank
-            passages={IELTS_SHORT_ANSWER_PASSAGES}
-            accent={ACCENT}
-            eyebrow="Banco Short-answer Questions"
-            title="Tres pasajes para responder con palabras mínimas del texto"
-            intro="Practica con textos originales de WeLearn. Cada set entrena lectura de pregunta exacta, busqueda de evidencia, respuesta breve, limite de palabras y eliminacion de respuestas demasiado amplias."
-          />
-
-          <section className="wl-card" style={{ padding: '1rem', borderRadius: 16, marginTop: '1.2rem' }}>
-            <p className="eyebrow" style={{ margin: '0 0 0.45rem' }}>Siguiente práctica</p>
-            <div style={{ display: 'flex', gap: '0.55rem', flexWrap: 'wrap' }}>
-              {[
-                { href: '/practica/ielts/reading/tipos-de-preguntas/multiple-choice', label: 'Multiple Choice' },
-                { href: '/practica/ielts/reading/tipos-de-preguntas/true-false-not-given', label: 'True/False/Not Given' },
-                { href: '/practica/ielts/reading/habilidades/limite-de-palabras', label: 'Límite de palabras' },
-                { href: '/practica/ielts/reading/habilidades/scanning', label: 'Scanning' },
-              ].map((link) => (
-                <Link key={link.href} href={link.href} className="btn btn-ghost btn-sm">
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-          </section>
-
-          <section style={{ marginTop: '1.4rem' }}>
-            <QuestionTypeReviewSourceBlock
-              accent={ACCENT}
-              questionTypeName={ROUTE.title}
-              sources={[
-                {
-                  label: 'IELTS Academic sample test questions',
-                  href: IELTS_SAMPLE_URL,
-                  note: 'lista oficial de preguntas de muestra de IELTS Academic Reading usada para confirmar que esta ruta corresponde a un tipo de pregunta oficial.',
-                },
-                {
-                  label: 'Banco original WeLearn',
-                  note: 'pasajes, preguntas, distractores y explicaciones creados para practica pedagogica, sin copiar preguntas oficiales.',
-                },
-              ]}
-              reviewedFocus={[
-                'alineacion con tipos de pregunta oficiales de IELTS Reading',
-                'separacion entre formato oficial y metodo WeLearn',
-                'respuesta explicada con evidencia, alcance o trampa',
-              ]}
-            />
-
-            <p className="eyebrow" style={{ margin: '0 0 0.5rem' }}>Preguntas frecuentes</p>
-            <div style={{ display: 'grid', gap: '0.75rem' }}>
-              {ROUTE.faqs.map((faq) => (
-                <article key={faq.question} className="wl-card" style={{ padding: '1rem', borderRadius: 14 }}>
-                  <h2 style={{ margin: '0 0 0.35rem', color: 'var(--ink)', fontSize: '1rem' }}>{faq.question}</h2>
-                  <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.9rem' }}>{faq.answer}</p>
-                </article>
-              ))}
-            </div>
-          </section>
-        </div>
-      </section>
-    </>
-  );
+  return <InternationalReadingSkillLesson
+    slug="short-answer"
+    path={ROUTE.path}
+    indexPath="/practica/ielts/reading/tipos-de-preguntas"
+    indexName="Reading Question Types"
+    lessonLabel="IELTS Academic Reading · Question type"
+    name="Short Answer"
+    title={TITLE}
+    description={DESCRIPTION}
+    accent="#be123c"
+    directAnswer="Read the word limit first. Classify the requested target—person, place, time, quantity, object, reason or result—then scan in question order and copy only the exact passage words that answer it."
+    facts={[
+      { label: 'Target', value: 'One precise factual detail' },
+      { label: 'Evidence', value: 'Question focus + ordered passage span' },
+      { label: 'Main risk', value: 'A nearby true detail that answers something else' },
+    ]}
+    outcomes={[
+      { title: 'Predict the answer type', text: 'Turn the question word and grammar into a precise person, place, time, quantity, object, reason or result target.' },
+      { title: 'Search in order', text: 'Use question sequence and paraphrases to narrow the next evidence zone without guessing from one keyword.' },
+      { title: 'Control the final span', text: 'Copy the smallest exact wording that answers the question and remains within the displayed maximum.' },
+    ]}
+    method={[
+      { title: 'Read the instruction', text: 'Record whether words, numbers or both are allowed and the exact maximum.' },
+      { title: 'Classify the target', text: 'Name what the question asks for before you scan: who, where, when, how many, what, why or what result.' },
+      { title: 'Locate the next evidence zone', text: 'Follow question order, scan for meaning and read enough context to reject nearby true details.' },
+      { title: 'Copy minimally and rebuild', text: 'Insert the smallest exact passage span, then reread question plus answer for scope, grammar and word count.' },
+    ]}
+    weakExample="Copy a full sentence because it contains the topic words from the question."
+    strongExample="The question asks where the event takes place, so reject a nearby time expression and copy only the two-word location that answers the requested target."
+    practice={<ShortAnswerGuidedPractice passage={guidedPassage} />}
+    independentPracticeExperience={<ShortAnswerIndependentPractice passage={independentPassage} />}
+    progressEngine={<ShortAnswerProgressEngine />}
+    sourceReview={<SkillReviewSourceBlock
+      accent="#be123c"
+      skillName="Short Answer"
+      reviewedFocus={[
+        'Guided, independent and Progress Engine passage pools are separated.',
+        'Every response is a literal, ordered passage span that answers a named factual target within the displayed maximum.',
+        'Feedback diagnoses wrong targets, wrong evidence zones, nearby details, copied context, word-limit failures and outside knowledge.',
+        'Candidate factual sources and WeLearn publication authorization remain distinct from official IELTS format guidance.',
+      ]}
+      sources={[
+        { label: 'Official IELTS Academic Reading format', href: IELTS_ACADEMIC_URL, note: 'Confirms Short-answer Questions as answering factual details with words and/or numbers from the text, in passage order, under a binding word limit.' },
+        { label: 'WeLearn practice blueprint', note: 'Defines target prediction, ordered evidence windows, held-back transfer, local persistence and the client-key security boundary.' },
+      ]}
+    />}
+    independentPractice={[
+      'Classify all six requested targets before scanning the passage.',
+      'Follow the evidence in order and record the exact passage span for every answer.',
+      'Submit one complete set before opening any key or explanation.',
+      'Repair only responses with the wrong target, evidence zone, answer boundary or word count.',
+    ]}
+    checklist={[
+      'you name the requested answer type before searching',
+      'you use question order and paraphrase to narrow the evidence window',
+      'every response is the smallest exact passage span within the displayed limit',
+      'you can explain why a nearby true detail answers a different question',
+    ]}
+    faqs={ROUTE.faqs}
+    officialNote="Short-answer Questions are an official IELTS Academic Reading task family. This page is guided WeLearn practice; answer keys reach the browser for feedback, so it is not a secure Exam or proctored mode. Candidate sources provide factual context but do not independently verify every composite claim or license WeLearn wording."
+    nextLinks={[
+      { href: '/practica/ielts/reading/mixed-practice', label: 'Continue to Mixed Practice', primary: true },
+      { href: '/practica/ielts/reading/habilidades/scanning', label: 'Strengthen scanning' },
+      { href: '/practica/ielts/reading/habilidades/limite-de-palabras', label: 'Strengthen word-limit control' },
+      { href: '/practica/ielts/reading/habilidades/parafrasis', label: 'Strengthen paraphrase recognition' },
+      { href: '/practica/ielts/reading', label: 'Back to Reading hub' },
+    ]}
+  />;
 }

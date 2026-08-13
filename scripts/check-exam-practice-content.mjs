@@ -1492,7 +1492,7 @@ function validateRoute(route, index, routeMapText) {
   if (isIeltsReadingQuestionType && route.status === 'published') {
     const pagePath = routeToPagePath(route.path);
     const pageText = fs.existsSync(pagePath) ? fs.readFileSync(pagePath, 'utf8') : '';
-    const progressiveQuestionType = ['/practica/ielts/reading/tipos-de-preguntas/multiple-choice', '/practica/ielts/reading/tipos-de-preguntas/true-false-not-given', '/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given', '/practica/ielts/reading/tipos-de-preguntas/matching-headings', '/practica/ielts/reading/tipos-de-preguntas/matching-information', '/practica/ielts/reading/tipos-de-preguntas/matching-features', '/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings', '/practica/ielts/reading/tipos-de-preguntas/sentence-completion', '/practica/ielts/reading/tipos-de-preguntas/summary-completion', '/practica/ielts/reading/tipos-de-preguntas/note-completion', '/practica/ielts/reading/tipos-de-preguntas/table-completion', '/practica/ielts/reading/tipos-de-preguntas/flow-chart-completion', '/practica/ielts/reading/tipos-de-preguntas/diagram-labeling'].includes(route.path);
+    const progressiveQuestionType = ['/practica/ielts/reading/tipos-de-preguntas/multiple-choice', '/practica/ielts/reading/tipos-de-preguntas/true-false-not-given', '/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given', '/practica/ielts/reading/tipos-de-preguntas/matching-headings', '/practica/ielts/reading/tipos-de-preguntas/matching-information', '/practica/ielts/reading/tipos-de-preguntas/matching-features', '/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings', '/practica/ielts/reading/tipos-de-preguntas/sentence-completion', '/practica/ielts/reading/tipos-de-preguntas/summary-completion', '/practica/ielts/reading/tipos-de-preguntas/note-completion', '/practica/ielts/reading/tipos-de-preguntas/table-completion', '/practica/ielts/reading/tipos-de-preguntas/flow-chart-completion', '/practica/ielts/reading/tipos-de-preguntas/diagram-labeling', '/practica/ielts/reading/tipos-de-preguntas/short-answer'].includes(route.path);
     if (!pageText.includes(progressiveQuestionType ? 'SkillReviewSourceBlock' : 'QuestionTypeReviewSourceBlock')) fail(`${label} must render its reviewed source block.`);
     if (!pageText.includes(progressiveQuestionType ? 'IELTS_ACADEMIC_URL' : 'IELTS_SAMPLE_URL')) fail(`${label} must cite the official IELTS Reading source in its review block.`);
     if (!pageText.includes('reviewedFocus')) fail(`${label} must declare reviewedFocus for the question-type review block.`);
@@ -1584,8 +1584,13 @@ function validateRoute(route, index, routeMapText) {
   if (route.path === '/practica/ielts/reading/tipos-de-preguntas/short-answer' && route.status === 'published') {
     const pagePath = routeToPagePath(route.path);
     const pageText = fs.existsSync(pagePath) ? fs.readFileSync(pagePath, 'utf8') : '';
-    if (!pageText.includes('ShortAnswerPassageBank')) fail(`${label} must render ShortAnswerPassageBank.`);
-    if (!pageText.includes('IELTS_SHORT_ANSWER_PASSAGES')) fail(`${label} must use IELTS_SHORT_ANSWER_PASSAGES.`);
+    const publicRewritePath = path.join(root, 'src/app/(site)/practica/ielts/reading/international-question-type/[slug]/page.tsx');
+    const publicRewriteText = fs.existsSync(publicRewritePath) ? fs.readFileSync(publicRewritePath, 'utf8') : '';
+    for (const requiredText of ['ShortAnswerGuidedPractice', 'ShortAnswerIndependentPractice', 'ShortAnswerProgressEngine', 'SHORT_ANSWER_GUIDED_PASSAGE_ID', 'SHORT_ANSWER_INDEPENDENT_PASSAGE_ID']) {
+      if (!pageText.includes(requiredText)) fail(`${label} must include ${requiredText}.`);
+      if (!publicRewriteText.includes(requiredText)) fail(`${label} public rewrite must include ${requiredText}.`);
+    }
+    if (!publicRewriteText.includes("isShortAnswer = slug === 'short-answer'")) fail(`${label} public rewrite must select the progressive Short Answer experience.`);
   }
 
   if (route.path === '/practica/ielts/reading/tipos-de-preguntas/matching-headings' && route.status === 'published') {

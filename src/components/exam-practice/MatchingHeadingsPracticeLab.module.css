@@ -478,6 +478,10 @@
   text-transform: uppercase;
 }
 
+.overLimit {
+  color: var(--mh-bad) !important;
+}
+
 .lab select,
 .engine select {
   width: 100%;
