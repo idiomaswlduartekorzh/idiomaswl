@@ -14,14 +14,9 @@ const inventoryPath = path.join(root, 'docs/ielts-toefl-content-inventory.json')
 const keywordMapPath = path.join(root, 'docs/ielts-toefl-keyword-map.csv');
 
 const errors = [];
-const warnings = [];
 
 function fail(message) {
   errors.push(message);
-}
-
-function warn(message) {
-  warnings.push(message);
 }
 
 function assertText(value, label) {
@@ -1497,7 +1492,7 @@ function validateRoute(route, index, routeMapText) {
   if (isIeltsReadingQuestionType && route.status === 'published') {
     const pagePath = routeToPagePath(route.path);
     const pageText = fs.existsSync(pagePath) ? fs.readFileSync(pagePath, 'utf8') : '';
-    const progressiveQuestionType = ['/practica/ielts/reading/tipos-de-preguntas/multiple-choice', '/practica/ielts/reading/tipos-de-preguntas/true-false-not-given', '/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given', '/practica/ielts/reading/tipos-de-preguntas/matching-headings', '/practica/ielts/reading/tipos-de-preguntas/matching-information', '/practica/ielts/reading/tipos-de-preguntas/matching-features', '/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings', '/practica/ielts/reading/tipos-de-preguntas/sentence-completion', '/practica/ielts/reading/tipos-de-preguntas/summary-completion', '/practica/ielts/reading/tipos-de-preguntas/note-completion', '/practica/ielts/reading/tipos-de-preguntas/table-completion'].includes(route.path);
+    const progressiveQuestionType = ['/practica/ielts/reading/tipos-de-preguntas/multiple-choice', '/practica/ielts/reading/tipos-de-preguntas/true-false-not-given', '/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given', '/practica/ielts/reading/tipos-de-preguntas/matching-headings', '/practica/ielts/reading/tipos-de-preguntas/matching-information', '/practica/ielts/reading/tipos-de-preguntas/matching-features', '/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings', '/practica/ielts/reading/tipos-de-preguntas/sentence-completion', '/practica/ielts/reading/tipos-de-preguntas/summary-completion', '/practica/ielts/reading/tipos-de-preguntas/note-completion', '/practica/ielts/reading/tipos-de-preguntas/table-completion', '/practica/ielts/reading/tipos-de-preguntas/flow-chart-completion'].includes(route.path);
     if (!pageText.includes(progressiveQuestionType ? 'SkillReviewSourceBlock' : 'QuestionTypeReviewSourceBlock')) fail(`${label} must render its reviewed source block.`);
     if (!pageText.includes(progressiveQuestionType ? 'IELTS_ACADEMIC_URL' : 'IELTS_SAMPLE_URL')) fail(`${label} must cite the official IELTS Reading source in its review block.`);
     if (!pageText.includes('reviewedFocus')) fail(`${label} must declare reviewedFocus for the question-type review block.`);
@@ -1569,8 +1564,9 @@ function validateRoute(route, index, routeMapText) {
   if (route.path === '/practica/ielts/reading/tipos-de-preguntas/flow-chart-completion' && route.status === 'published') {
     const pagePath = routeToPagePath(route.path);
     const pageText = fs.existsSync(pagePath) ? fs.readFileSync(pagePath, 'utf8') : '';
-    if (!pageText.includes('FlowChartCompletionPassageBank')) fail(`${label} must render FlowChartCompletionPassageBank.`);
-    if (!pageText.includes('IELTS_FLOW_CHART_COMPLETION_PASSAGES')) fail(`${label} must use IELTS_FLOW_CHART_COMPLETION_PASSAGES.`);
+    for (const requiredText of ['FlowChartCompletionGuidedPractice', 'FlowChartCompletionIndependentPractice', 'FlowChartCompletionProgressEngine', 'FLOW_CHART_GUIDED_PASSAGE_ID', 'FLOW_CHART_INDEPENDENT_PASSAGE_ID']) {
+      if (!pageText.includes(requiredText)) fail(`${label} must include ${requiredText}.`);
+    }
   }
 
   if (route.path === '/practica/ielts/reading/tipos-de-preguntas/diagram-labeling' && route.status === 'published') {
@@ -3234,11 +3230,6 @@ function main() {
   validateToeflWritingScoredVariants('TOEFL_WRITING_SCORED_VARIANTS', catalog.TOEFL_WRITING_SCORED_VARIANTS);
   validateToeflWritingRevisionDrills('TOEFL_WRITING_REVISION_DRILLS', catalog.TOEFL_WRITING_REVISION_DRILLS);
   validateToeflWritingTimedReviewSets('TOEFL_WRITING_TIMED_REVIEW_SETS', catalog.TOEFL_WRITING_TIMED_REVIEW_SETS);
-
-  if (warnings.length > 0) {
-    console.log('Exam practice content warnings:');
-    for (const warning of warnings) console.log(`- ${warning}`);
-  }
 
   if (errors.length > 0) {
     console.error('Exam practice content check failed:');

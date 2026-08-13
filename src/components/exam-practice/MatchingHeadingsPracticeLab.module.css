@@ -145,6 +145,14 @@
 .mapRail .mapDone { color: #88e0ba; }
 .mapRail .mapDone b { background: rgba(136, 224, 186, 0.15); }
 
+.flowMapRail {
+  grid-template-columns: repeat(auto-fit, minmax(112px, 1fr));
+  margin: 0;
+  list-style: none;
+}
+
+.flowMapRail > li { min-width: 0; }
+
 .workedDecision {
   display: grid;
   grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
@@ -194,6 +202,18 @@
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
   min-height: 0;
+}
+
+.guidedLayout,
+.independentLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
+  align-items: start;
+}
+
+.guidedLayout > :last-child,
+.independentLayout > :last-child {
+  min-width: 0;
 }
 
 .passagePanel,
@@ -410,6 +430,7 @@
 }
 
 .lab select:focus-visible,
+.lab input:focus-visible,
 .engine select:focus-visible,
 .textButton:focus-visible,
 .levelRail button:focus-visible,
@@ -493,6 +514,13 @@
 .independentCard .feedback { grid-column: 2 / -1; }
 .counter { color: var(--mh-accent); font-size: 0.78rem; }
 
+.flowAnswerCard {
+  grid-template-columns: 92px minmax(0, 1fr);
+}
+
+.flowAnswerCard .quoteBlock,
+.flowAnswerCard .feedback { grid-column: 2; }
+
 .submitBar {
   align-items: center;
   padding: 1rem 1.15rem;
@@ -520,6 +548,79 @@
 .engineHeading h2 { margin-top: 0.3rem; color: white; font-size: clamp(1.55rem, 3vw, 2.35rem); }
 .engineHeading p { max-width: 720px; margin: 0.55rem 0 0; color: rgba(255, 255, 255, 0.72); line-height: 1.65; }
 .engineHeading .modeTag { color: #c9d8ff; }
+
+.engineHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25rem;
+  align-items: flex-start;
+  padding: clamp(1.1rem, 3vw, 1.7rem);
+  background: var(--mh-ink);
+  color: white;
+}
+
+.engineHeader h3 {
+  margin: 0.3rem 0 0;
+  color: white;
+  font-size: clamp(1.45rem, 3vw, 2.15rem);
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+.engineHeader p {
+  max-width: 680px;
+  margin: 0.55rem 0 0;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.6;
+}
+
+.engineHeader .modeTag { color: #c9d8ff; }
+
+.engineStats {
+  display: grid;
+  min-width: 190px;
+  gap: 0.45rem;
+}
+
+.engineStats span {
+  display: flex;
+  gap: 0.45rem;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.78);
+  font: 800 0.75rem/1.35 var(--mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.flowDrillGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--mh-paper);
+}
+
+.flowDrillCard {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--mh-line);
+  border-radius: 7px;
+  background: var(--bg);
+}
+
+.flowDrillCard .passagePanel {
+  border-right: 0;
+  border-bottom: 1px solid var(--mh-line);
+}
+
+.flowDrillAnswer {
+  display: grid;
+  grid-template-columns: 82px minmax(0, 1fr);
+  gap: 0.85rem;
+  padding: 1rem;
+}
+
+.flowDrillAnswer .quoteBlock,
+.flowDrillAnswer .feedback { grid-column: 2; }
 
 .engineScore {
   display: grid;
@@ -637,6 +738,22 @@
   background: #f2f6ff;
 }
 
+.errorPanel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 1rem;
+  align-items: end;
+  padding: 1.15rem;
+  border-top: 1px solid var(--mh-line);
+  background: #f2f6ff;
+}
+
+.errorPanel h4 { margin: 0.25rem 0 0; color: var(--mh-ink); }
+.errorPanel p { margin: 0.4rem 0 0; color: var(--muted); line-height: 1.55; }
+.errorPanel ul { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0; margin: 0; list-style: none; }
+.errorPanel li { display: flex; gap: 0.6rem; padding: 0.45rem 0.65rem; border: 1px solid var(--mh-line); border-radius: 999px; background: var(--bg); color: var(--ink-2); font-size: 0.78rem; }
+.errorPanel li strong { color: var(--mh-bad); font-family: var(--mono); }
+
 .reviewPanel h3 { margin-top: 0.25rem; }
 .reviewPanel p { margin: 0.4rem 0 0; color: var(--muted); line-height: 1.55; }
 .reviewPanel ul { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0; margin: 0.75rem 0 0; list-style: none; }
@@ -645,6 +762,8 @@
 
 @media (max-width: 900px) {
   .practiceSplit,
+  .guidedLayout,
+  .independentLayout,
   .engineQuestion { grid-template-columns: 1fr; }
   .workedDecision { grid-template-columns: 1fr; }
   .passagePanel { border-right: 0; border-bottom: 1px solid var(--mh-line); }
@@ -657,6 +776,7 @@
   .engineQuestion .feedback { grid-column: 2; }
   .engineQuestion .headingOptionsCompact { grid-column: 1; grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .levelRail { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .flowDrillGrid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 620px) {
@@ -666,6 +786,8 @@
   .engineFooter,
   .submitBar,
   .reviewPanel { display: grid; grid-template-columns: 1fr; }
+  .engineHeader,
+  .errorPanel { display: grid; grid-template-columns: 1fr; }
   .mapRail { padding: 0.7rem; }
   .mapRail span { grid-template-columns: 28px; }
   .mapRail small,
@@ -673,6 +795,11 @@
   .workedDecision ol { grid-template-columns: 1fr; }
   .headingBankHeader { display: grid; }
   .independentCard { grid-template-columns: 1fr; }
+  .flowAnswerCard .quoteBlock,
+  .flowAnswerCard .feedback,
+  .flowDrillAnswer .quoteBlock,
+  .flowDrillAnswer .feedback { grid-column: 1; }
+  .flowDrillAnswer { grid-template-columns: 1fr; }
   .independentCard .selectLabel,
   .independentCard select,
   .independentCard .feedback,
