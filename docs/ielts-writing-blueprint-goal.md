@@ -36,20 +36,24 @@ montaje en `ParaphrasingTechniqueClient.tsx`).
 
 ## 2. Estado actual, medido
 
-### Las diez habilidades transversales de Task 2
+### Las diez habilidades transversales de Task 2 — ✅ COMPLETAS
 
-| # | Habilidad | Página propia | Blueprint |
-|---|---|:-:|:-:|
-| 1 | **Paraphrasing** | ✅ 5 técnicas | ✅ completo |
-| 2 | Thesis and position | ❌ ficha → `introduccion` | ❌ |
-| 3 | Topic sentences | ❌ ficha → `body-1` | ❌ |
-| 4 | Explanation and development | ❌ ficha → `parrafos-cuerpo` | ❌ |
-| 5 | Examples and evidence | ❌ ficha → `parrafos-cuerpo` | ❌ |
-| 6 | **Cohesion and linking** | ✅ 7 familias | ⚠️ **solo falta 1 y 3** |
-| 7 | Contrast and concession | ❌ ficha → `body-2` | ❌ |
-| 8 | Sentence types | ❌ ficha → `introduccion` | ❌ |
-| 9 | **Academic vocabulary** | ✅ 8 funciones | ❌ |
-| 10 | Critical final review | ❌ ficha → `revision-final` | ❌ |
+| # | Habilidad | Recorrido | Blueprint |
+|---|---|---|:-:|
+| 1 | Paraphrasing | 5 técnicas | ✅ |
+| 2 | Thesis and position | `habilidades/thesis-and-position` | ✅ |
+| 3 | Topic sentences | `habilidades/topic-sentences` | ✅ |
+| 4 | Explanation and development | `habilidades/explanation-and-development` | ✅ |
+| 5 | Examples and evidence | `habilidades/examples-and-evidence` | ✅ |
+| 6 | Cohesion and linking | 9 familias | ✅ |
+| 7 | Contrast and concession | `habilidades/contrast-and-concession` | ✅ |
+| 8 | Sentence types | `habilidades/sentence-types` | ✅ |
+| 9 | Academic vocabulary | 8 funciones | ✅ |
+| 10 | Critical final review | `habilidades/critical-final-review` | ✅ |
+
+Cada página declara además su `practisedIn`: la etapa del curso donde la habilidad se construye
+dentro de un párrafo. El guardián falla si alguien borra ese enlace, porque sin él la página de
+la habilidad y la etapa quedan aisladas.
 
 ### El superhub de vocabulario
 
