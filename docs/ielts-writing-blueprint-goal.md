@@ -53,13 +53,19 @@ montaje en `ParaphrasingTechniqueClient.tsx`).
 
 ### El superhub de vocabulario
 
-`/practica/ielts/academic/writing/vocabulario` — **8 unidades de 19**, 184 entradas de 400-600.
+`/practica/ielts/academic/writing/vocabulario` — **10 unidades de 18**, 217 entradas de 400-600.
 
 | Familia | Hecho | Falta |
 |---|---|---|
-| Task 1 por subparte | ✅ **completo, 6 de 6** — introducción, overview, tendencias, comparaciones, procesos, mapas | — |
-| Task 2 por subparte | introducción, cuerpo | **conclusión, revisión** |
-| Funciones transversales | (viven aún en `task2/academic-vocabulary`) | **mover aquí con redirect y subir de 6 a ~20 entradas cada una** |
+| Task 1 por subparte | ✅ **6 de 6** — introducción, overview, tendencias, comparaciones, procesos, mapas | — |
+| Task 2 por subparte | ✅ **4 de 4** — introducción, cuerpo, conclusión, revisión | — |
+| Funciones transversales | — | **las 8, desde `task2/academic-vocabulary`** |
+
+**Lo único que queda de la Fase A son las ocho funciones, y NO es un `git mv`.** Allí son listas
+planas: tienen `upgrade`, `words`, `examples`, `mistakes`, `drills` y el ejercicio de
+reconocimiento, pero **no tienen explicación larga ni ejercicio guiado**, y sus palabras no
+están agrupadas por trabajo. Mudarlas es reescribirlas con el blueprint y subirlas de 6 a ~20
+entradas. Su URL ya está publicada, así que hay que dejar un **redirect permanente**.
 
 Actualizado tras la tanda del 12 ago 2026. Para añadir una unidad: escribirla en el fichero de
 su familia (`task1-vocabulary.ts` / `task2-vocabulary.ts`), y el índice y el guardián la recogen
