@@ -4,19 +4,28 @@ import { useMemo, useState } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight, CheckCircle2, RotateCcw } from 'lucide-react';
 import { placeOption } from '@/lib/practica/shuffle-options';
+import SkillExplainer from '../../_shared/SkillExplainer';
+import GuidedPractice from '../../_shared/GuidedPractice';
 import { PARAPHRASE_TECHNIQUES, RISK_LABEL, type ParaphraseTechnique } from './paraphrasing-data';
+import { EXPLAINERS, GUIDED } from './paraphrasing-explainers';
 import styles from '../introduccion/page.module.css';
 
 /**
- * Una técnica de paráfrasis, con el mismo recorrido que el resto de Task 2.
+ * Una técnica de paráfrasis, con los cuatro bloques del blueprint de Writing.
  *
- *   qué mueve → cuándo se usa → ¿cuál conserva el significado?
- *   → los movimientos con su nota de riesgo → ejemplos resueltos → los errores → ejercicios
+ *   1. EXPLICACIÓN LARGA  · qué es, dónde están las marcas, qué cuesta, dónde deja de aplicar
+ *   2. EJEMPLOS           · la mecánica, los movimientos, tres resueltos y los errores típicos
+ *   3. EJERCICIO GUIADO   · produces tú, por pasos, con el modelo detrás de un botón
+ *   4. MOTOR              · reconocer primero, después elegir entre cuatro
  *
- * El ejercicio de RECONOCIMIENTO va antes que el de producción, igual que en los conectores
- * la relación va antes que la palabra. Aquí el motivo es más fuerte: el fallo característico
- * de la paráfrasis no es escribir mal, es escribir bien otra cosa. Quien no distingue
- * «does not guarantee» de «never brings» no lo va a arreglar produciendo más frases.
+ * El orden importa y no estaba. Antes la página abría con dos párrafos y saltaba a elegir
+ * entre opciones: quien no sabía lo que era una paráfrasis seguía sin saberlo y elegía a
+ * ciegas. Y entre el ejemplo resuelto —que lo hace todo por ti— y el motor —que no te ayuda
+ * en nada— faltaba el escalón intermedio.
+ *
+ * Dentro del bloque 4, el ejercicio de RECONOCIMIENTO va antes que el de producción. El fallo
+ * característico de la paráfrasis no es escribir mal: es escribir bien otra cosa. Quien no
+ * distingue «does not guarantee» de «never brings» no lo arregla produciendo más frases.
  */
 
 function Drill({ technique, index }: { technique: ParaphraseTechnique; index: number }) {
@@ -142,16 +151,24 @@ export default function ParaphrasingTechniqueClient({ slug }: { slug: string }) 
         With this technique, <strong>{technique.signals}</strong>. {technique.whenToUse}
       </p>
       <div className={styles.factGrid}>
-        <div className={styles.fact}><strong>{technique.moves.length} moves</strong><span>each one labelled by how safely it travels</span></div>
-        <div className={styles.fact}><strong>{technique.examples.length} worked examples</strong><span>with an inventory of what moved</span></div>
-        <div className={styles.fact}><strong>{technique.mistakes.length} common mistakes</strong><span>with the repair</span></div>
+        <div className={styles.fact}><strong>The long version</strong><span>what it is, what it costs, where it stops</span></div>
+        <div className={styles.fact}><strong>{technique.examples.length + technique.moves.length} examples</strong><span>{technique.moves.length} moves and {technique.examples.length} worked rewrites</span></div>
+        <div className={styles.fact}><strong>Guided practice</strong><span>{GUIDED[technique.slug].steps.length} steps, you write, then you compare</span></div>
         <div className={styles.fact}><strong>{technique.drills.length + 1} exercises</strong><span>meaning first, then production</span></div>
       </div>
     </header>
 
+    {/* BLOQUE 1 — la explicación larga. */}
+    <SkillExplainer
+      explainer={EXPLAINERS[technique.slug]}
+      tone={technique.tone}
+      heading={`What ${technique.label.toLowerCase()} really asks you to do`}
+    />
+
+    {/* BLOQUE 2 — los ejemplos, empezando por la mecánica en dos frases. */}
     <section className={styles.section}>
       <div className={styles.sectionHeading}>
-        <p className={styles.kicker}>Start here · what this technique does</p>
+        <p className={styles.kicker}>Examples · the move in two sentences</p>
         <h2>A paraphrase changes the words and keeps the claim</h2>
         <p>
           That is the whole job, and it is harder than it sounds: the fastest way to lose marks is to
@@ -178,15 +195,6 @@ export default function ParaphrasingTechniqueClient({ slug }: { slug: string }) 
       <p className={styles.trap}>
         <strong>When you need it</strong><br />{technique.whenToUse}
       </p>
-    </section>
-
-    <section id="meaning" className={styles.section}>
-      <div className={styles.sectionHeading}>
-        <p className={styles.kicker}>Now you try · the meaning first</p>
-        <h2>Before you rewrite anything, learn to spot what changed</h2>
-        <p>Producing a paraphrase is the second skill. The first one is noticing when a sentence that reads well has quietly stopped saying the same thing.</p>
-      </div>
-      <MeaningCheck technique={technique} />
     </section>
 
     <section className={styles.section}>
@@ -246,9 +254,25 @@ export default function ParaphrasingTechniqueClient({ slug }: { slug: string }) 
       </div>
     </section>
 
+    {/* BLOQUE 3 — el ejercicio guiado: el escalón entre el ejemplo y el motor. */}
+    <GuidedPractice exercise={GUIDED[technique.slug]} />
+
+    {/* BLOQUE 4 — el motor: reconocer primero, elegir después. */}
+    <section id="meaning" className={styles.section}>
+      <div className={styles.sectionHeading}>
+        <p className={styles.kicker}>Exercises · step 1, the meaning</p>
+        <h2>Before you judge a rewrite, learn to spot what changed</h2>
+        <p>
+          Producing a paraphrase is the second skill. The first is noticing when a sentence that reads
+          perfectly well has quietly stopped saying the same thing.
+        </p>
+      </div>
+      <MeaningCheck technique={technique} />
+    </section>
+
     <section id="practice" className={styles.section}>
       <div className={styles.sectionHeading}>
-        <p className={styles.kicker}>Step 2 · production</p>
+        <p className={styles.kicker}>Exercises · step 2, production</p>
         <h2>Choose the paraphrase that moves everything and changes nothing</h2>
         <p>
           Every wrong option here is wrong for its own reason, and it says so. Three of them are

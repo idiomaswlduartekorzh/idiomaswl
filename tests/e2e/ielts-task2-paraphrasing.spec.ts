@@ -1,6 +1,7 @@
 import { expect, test } from '@playwright/test'
 import { erroresPropios } from './consola-ajena'
 import { PARAPHRASE_TECHNIQUES } from '../../src/app/(site)/practica/ielts/academic/writing/task2/paraphrasing/paraphrasing-data'
+import { GUIDED } from '../../src/app/(site)/practica/ielts/academic/writing/task2/paraphrasing/paraphrasing-explainers'
 import { ENGINE_DRILLS } from '../../src/app/(site)/practica/ielts/academic/writing/task2/paraphrasing/paraphrasing-engine-data'
 
 /**
@@ -49,6 +50,74 @@ test('las cinco técnicas tienen página propia y el hub lleva a todas', async (
   }
 
   expect(erroresPropios(errores), errores.join('\n')).toEqual([])
+})
+
+test('cada técnica trae los cuatro bloques del blueprint, y en orden', async ({ page }) => {
+  /**
+   * El orden es la mitad del blueprint. David lo pidió así: «primero explicación larga y
+   * detallada, luego ejemplos, luego ejercicio guiado y luego el motor». Una página que
+   * tuviera los cuatro bloques desordenados —el motor antes de la explicación— pasaría una
+   * comprobación de presencia y seguiría enseñando al revés.
+   */
+  const BLOQUES = [
+    ['1 · explicación larga', 'the long version'],
+    ['1 · qué cuesta saltárselo', 'What it costs you to skip'],
+    ['1 · dónde deja de aplicar', 'Where it stops applying'],
+    ['2 · ejemplos', 'the move in two sentences'],
+    ['3 · ejercicio guiado', 'with the scaffolding on'],
+    ['4 · motor, reconocer', 'step 1, the meaning'],
+    ['4 · motor, producir', 'step 2, production'],
+  ] as const
+
+  for (const technique of PARAPHRASE_TECHNIQUES) {
+    await page.goto(`${HUB}/${technique.slug}`)
+    const cuerpo = (await page.locator('body').innerText()).toLowerCase()
+
+    const posiciones: number[] = []
+    for (const [nombre, aguja] of BLOQUES) {
+      const donde = cuerpo.indexOf(aguja.toLowerCase())
+      expect(donde, `${technique.slug}: falta el bloque «${nombre}»`).toBeGreaterThanOrEqual(0)
+      posiciones.push(donde)
+    }
+    const ordenadas = [...posiciones].sort((a, b) => a - b)
+    expect(posiciones, `${technique.slug}: los bloques salen desordenados`).toEqual(ordenadas)
+
+    // «Larga y detallada» se mide. Una definición de dos párrafos no es una lección.
+    const palabras = cuerpo.split(/\s+/u).filter(Boolean).length
+    expect(palabras, `${technique.slug}: solo ${palabras} palabras en toda la página`).toBeGreaterThan(1500)
+  }
+})
+
+test('el ejercicio guiado no enseña el modelo hasta que escribes, y abre los pasos en orden', async ({ page }) => {
+  await page.goto(`${HUB}/synonyms`)
+  const guiado = page.locator('#guided')
+  await guiado.scrollIntoViewIfNeeded()
+
+  const pasos = guiado.locator('[data-step]')
+  await expect(pasos, 'el guiado tiene que traer sus pasos').toHaveCount(GUIDED.synonyms.steps.length)
+
+  // El paso 1 abierto, el 2 cerrado: sin su área de escritura hasta que el anterior se resuelva.
+  await expect(pasos.nth(0).locator('textarea')).toBeVisible()
+  await expect(pasos.nth(1).locator('textarea')).toHaveCount(0)
+
+  const boton = pasos.nth(0).getByRole('button', { name: /Compare with the model/ })
+  await expect(boton, 'sin escribir nada, no se puede comparar').toBeDisabled()
+  await expect(pasos.nth(0).getByText(/more word.* before you can compare/)).toBeVisible()
+
+  // En el examen no hay corrector, ni autocorrección, ni mayúsculas automáticas.
+  await expect(pasos.nth(0).locator('textarea')).toHaveAttribute('spellcheck', 'false')
+
+  // Escribir poco no basta: el mínimo es el andamio entero.
+  await pasos.nth(0).locator('textarea').fill('too short')
+  await expect(boton, 'dos palabras no desbloquean nada').toBeDisabled()
+
+  await pasos.nth(0).locator('textarea').fill('I would leave the topic words alone because replacing them would narrow it')
+  await expect(boton).toBeEnabled()
+  await boton.click()
+
+  await expect(guiado.getByText(GUIDED.synonyms.steps[0].model.slice(0, 40), { exact: false })).toBeVisible()
+  // Y solo entonces se abre el siguiente.
+  await expect(pasos.nth(1).locator('textarea')).toBeVisible()
 })
 
 test('ninguna frase del motor sale del texto de las cinco lecciones', async ({ page }) => {
