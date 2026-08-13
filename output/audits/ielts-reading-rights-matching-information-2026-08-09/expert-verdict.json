@@ -1,0 +1,590 @@
+{
+  "schemaVersion": "ielts-reading-matching-information-expert-verdict.v1",
+  "reviewer": {
+    "humanSignature": false,
+    "sourceContext": "two-pass-blind-then-factual-sources",
+    "reviewSequence": [
+      "blind-review",
+      "factual-source-review"
+    ],
+    "reviewerRunId": "matching-information-ai-expert-20260809T061944-0500",
+    "reviewedAt": "2026-08-09T06:23:13-05:00",
+    "blindPacketSha256": "a8277c5c870fce7bdcc367b800e0c450e78093ffae9fdc8248924a4fe6b49acc",
+    "firstPassSha256": "52a8de99ac5730daa91ceb9f9c9d52f781762e0d934138a96cc7c679e9529fe0",
+    "openedEvidenceIds": [
+      "noise-who-environmental-guidance",
+      "noise-ec-environmental-noise-directive",
+      "noise-who-health-inequalities",
+      "museum-cci-light-deterioration",
+      "museum-cci-textiles-light",
+      "museum-smithsonian-accessible-lighting",
+      "wetlands-noaa-coastal-resiliency",
+      "wetlands-noaa-estuary-restoration-act",
+      "wetlands-noaa-restoration-monitoring"
+    ],
+    "directSourceReview": true,
+    "notes": "Independent AI editorial review conducted in two passes. All nine candidate URLs were opened directly after the blind decisions were fixed. Locators refer to the rendered HTML line extraction or PDF page and line extraction observed on 2026-08-09. A candidate source is not proof of authorship, licensing, authorization, human verification or publication approval."
+  },
+  "records": [
+    {
+      "assetId": "formative:matching-information:mi-city-noise",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "medium",
+        "representationRisk": "medium",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "low",
+        "titleCueRisk": "low",
+        "notes": "The matching task is internally unambiguous but shorter and more explicit than typical IELTS Academic Reading. WHO supports the health and socioeconomic-inequality framing, and the European Commission supports noise mapping in general. The exact map inputs, source-control package, green-space qualification and neighborhood illustrations remain only partially supported or untraceable in the supplied sources."
+      },
+      "questions": [
+        {
+          "questionId": "mi-noise-01",
+          "statement": "a reason why streets with fewer cars may still be noisy",
+          "selectedParagraphId": "B",
+          "supportingQuote": "a narrow street with tall buildings can trap sound even when the number of vehicles is lower than on a wider avenue",
+          "paraphraseMap": {
+            "streets with fewer cars": "the number of vehicles is lower",
+            "may still be noisy": "can trap sound",
+            "a reason": "a narrow street with tall buildings"
+          },
+          "closestCompetingParagraphId": "C",
+          "competitorFailure": "Paragraph C discusses interventions that reduce sound; it does not explain why a street with fewer vehicles can nevertheless remain noisy.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph B gives the requested counterintuitive case and its physical cause: street geometry and tall buildings can trap sound despite a lower vehicle count."
+        },
+        {
+          "questionId": "mi-noise-02",
+          "statement": "examples of measures that reduce noise before it spreads",
+          "selectedParagraphId": "C",
+          "supportingQuote": "Lower speed limits, smoother road surfaces and restrictions on night deliveries can reduce sound at the source.",
+          "paraphraseMap": {
+            "examples of measures": "Lower speed limits, smoother road surfaces and restrictions on night deliveries",
+            "reduce noise before it spreads": "reduce sound at the source"
+          },
+          "closestCompetingParagraphId": "E",
+          "competitorFailure": "Paragraph E mentions an achieved reduction in traffic noise and the need to explain it, but it supplies neither source-control examples nor the idea of acting before propagation.",
+          "ambiguity": "none",
+          "reasoning": "The phrase 'at the source' is the direct equivalent of reducing noise before it spreads, and paragraph C lists three concrete measures."
+        },
+        {
+          "questionId": "mi-noise-03",
+          "statement": "the idea that noise is connected to social inequality",
+          "selectedParagraphId": "D",
+          "supportingQuote": "Wealthier districts may have more parks, wider streets and better insulated buildings, while lower-income neighborhoods can be located closer to highways or industrial areas.",
+          "paraphraseMap": {
+            "social inequality": "Wealthier districts ... while lower-income neighborhoods",
+            "noise is connected to": "different access to buffers and insulation and different proximity to highways or industrial areas"
+          },
+          "closestCompetingParagraphId": "A",
+          "competitorFailure": "Paragraph A establishes health effects and urban noise sources but makes no comparison between socioeconomic groups or neighborhoods.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph D explicitly contrasts noise-related advantages in wealthier districts with greater exposure risks in lower-income neighborhoods."
+        },
+        {
+          "questionId": "mi-noise-04",
+          "statement": "different kinds of urban activities that add to the soundscape",
+          "selectedParagraphId": "A",
+          "supportingQuote": "Traffic remains the most common source in many urban areas, but construction, nightlife and delivery vehicles also contribute to the soundscape.",
+          "paraphraseMap": {
+            "different kinds of urban activities": "Traffic ... construction, nightlife and delivery vehicles",
+            "add to the soundscape": "contribute to the soundscape"
+          },
+          "closestCompetingParagraphId": "B",
+          "competitorFailure": "Paragraph B names several kinds of measurement input, not several urban activities that produce sound.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph A provides the requested list of distinct urban noise-producing activities and explicitly says they contribute to the soundscape."
+        },
+        {
+          "questionId": "mi-noise-05",
+          "statement": "why residents may need an explanation of policy benefits",
+          "selectedParagraphId": "E",
+          "supportingQuote": "If a city lowers traffic noise by a few decibels, the change may be meaningful for health but hard to notice immediately.",
+          "paraphraseMap": {
+            "policy benefits": "meaningful for health",
+            "may need an explanation": "hard to notice immediately"
+          },
+          "closestCompetingParagraphId": "D",
+          "competitorFailure": "Paragraph D identifies a fairness issue for policy makers, but it does not explain why residents may fail to perceive a benefit or why communication is needed.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph E supplies the causal explanation: a health-relevant improvement of a few decibels may not be perceptible straight away, so its benefit must be explained."
+        },
+        {
+          "questionId": "mi-noise-06",
+          "statement": "the use of several data sources to locate the worst affected areas",
+          "selectedParagraphId": "B",
+          "supportingQuote": "These maps combine sensor data, traffic counts and resident complaints to identify areas where exposure is highest.",
+          "paraphraseMap": {
+            "several data sources": "sensor data, traffic counts and resident complaints",
+            "locate": "identify areas",
+            "the worst affected areas": "where exposure is highest"
+          },
+          "closestCompetingParagraphId": "A",
+          "competitorFailure": "Paragraph A lists several sources of urban noise, but those are causes of sound rather than datasets combined to identify high-exposure locations.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph B explicitly describes combining three data inputs to find the places with the highest exposure."
+        }
+      ],
+      "factualClaims": [
+        {
+          "claim": "Today, public health researchers describe it as an environmental stressor that can affect sleep, concentration and long-term wellbeing.",
+          "assessment": "supported",
+          "evidenceIds": [
+            "noise-who-environmental-guidance",
+            "noise-who-health-inequalities"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "noise-who-environmental-guidance",
+              "locator": "HTML heading “Guidance on environmental noise”, lines 84–86",
+              "evidenceSummary": "WHO identifies major environmental-noise sources and reports sleep disturbance, cognitive impairment and multiple longer-term health outcomes from excessive noise."
+            },
+            {
+              "evidenceId": "noise-who-health-inequalities",
+              "locator": "HTML “Overview”, lines 129–135",
+              "evidenceSummary": "WHO Europe calls noise an important environmental risk factor and lists disturbed sleep, cognitive impairment and reduced performance among its effects."
+            }
+          ],
+          "note": "The sources support the health-risk framing and the sleep/cognition elements. “Long-term wellbeing” is broad wording rather than a discrete outcome, but it fairly summarizes the listed chronic and functional harms."
+        },
+        {
+          "claim": "These maps combine sensor data, traffic counts and resident complaints to identify areas where exposure is highest.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "noise-ec-environmental-noise-directive"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "noise-ec-environmental-noise-directive",
+              "locator": "HTML “Overview”, lines 48–62",
+              "evidenceSummary": "The Commission confirms assessment of exposure and required noise maps, public information and action plans, but does not describe a sensor-data, traffic-count and complaint combination."
+            }
+          ],
+          "note": "Noise mapping is supported in general; the exact three-input method is not traceable in the opened candidate source."
+        },
+        {
+          "claim": "Lower speed limits, smoother road surfaces and restrictions on night deliveries can reduce sound at the source.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "noise-ec-environmental-noise-directive",
+            "noise-who-health-inequalities"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "noise-ec-environmental-noise-directive",
+              "locator": "HTML “Overview”, lines 48–63",
+              "evidenceSummary": "The Directive supports preventing and reducing noise but explicitly does not prescribe the measures to be included in action plans."
+            },
+            {
+              "evidenceId": "noise-who-health-inequalities",
+              "locator": "HTML “WHO response”, lines 140–143",
+              "evidenceSummary": "WHO Europe mentions sustainable transport as an example of noise reduction but does not verify any of the passage’s three named measures."
+            }
+          ],
+          "note": "The package of source-control measures may be plausible, but none of the three measures is directly substantiated by the opened sources."
+        },
+        {
+          "claim": "Urban trees and green spaces may also help, though their effect is often modest unless combined with changes in traffic design.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "noise-who-health-inequalities"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "noise-who-health-inequalities",
+              "locator": "HTML “WHO response”, lines 140–144",
+              "evidenceSummary": "The page discusses policy measures and guidance at a general level but does not address trees, green-space effects or interaction with traffic design."
+            }
+          ],
+          "note": "Neither the benefit nor the “often modest unless combined” qualification is traceable in the supplied candidate pages."
+        },
+        {
+          "claim": "Wealthier districts may have more parks, wider streets and better insulated buildings, while lower-income neighborhoods can be located closer to highways or industrial areas.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "noise-who-health-inequalities"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "noise-who-health-inequalities",
+              "locator": "HTML “Overview”, lines 129–135",
+              "evidenceSummary": "WHO Europe reports documented health inequalities in noise exposure and an association between harmful exposure and socioeconomic status."
+            }
+          ],
+          "note": "The socioeconomic association is supported, but the particular contrasts involving parks, street width, insulation, highways and industrial areas are illustrative specifics not verified on this page."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-information:mi-museum-lighting",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "medium",
+        "representationRisk": "low",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "low",
+        "titleCueRisk": "low",
+        "notes": "The exercise is coherent but easier and shorter than typical IELTS Academic Reading. CCI sources strongly support cumulative light damage, differentiated material sensitivity and limited textile exposure. The LED comparison is not directly traceable, and the contrast/safety sentence compresses separate accessible-design principles into one causal formulation."
+      },
+      "questions": [
+        {
+          "questionId": "mi-lighting-01",
+          "statement": "examples of materials that can be harmed by excessive light",
+          "selectedParagraphId": "A",
+          "supportingQuote": "Too much exposure can fade pigments, weaken paper and damage textiles",
+          "paraphraseMap": {
+            "excessive light": "Too much exposure",
+            "materials": "pigments, paper and textiles",
+            "can be harmed": "fade ... weaken ... damage"
+          },
+          "closestCompetingParagraphId": "B",
+          "competitorFailure": "Paragraph B identifies objects with different light tolerances but does not itself state the forms of harm caused by excessive exposure.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph A directly names three materials and three damaging effects of too much light."
+        },
+        {
+          "questionId": "mi-lighting-02",
+          "statement": "a reason why some objects are displayed only temporarily",
+          "selectedParagraphId": "B",
+          "supportingQuote": "Stone sculpture can usually be displayed under stronger light than watercolours, manuscripts or historic fabrics. For this reason, museums often rotate sensitive works or show them for limited periods before returning them to storage.",
+          "paraphraseMap": {
+            "some objects": "sensitive works ... watercolours, manuscripts or historic fabrics",
+            "displayed only temporarily": "show them for limited periods before returning them to storage",
+            "a reason": "tolerate less light than stone sculpture"
+          },
+          "closestCompetingParagraphId": "A",
+          "competitorFailure": "Paragraph A explains that excessive exposure can cause damage, but it does not contain the requested practice of temporary display or distinguish which works are rotated.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph B links the lower light tolerance of sensitive objects causally to rotation and limited display periods."
+        },
+        {
+          "questionId": "mi-lighting-03",
+          "statement": "a system that changes brightness depending on visitor presence",
+          "selectedParagraphId": "C",
+          "supportingQuote": "Some galleries also use sensors so that lights become brighter when visitors approach and dim again when the room is empty.",
+          "paraphraseMap": {
+            "a system": "sensors",
+            "changes brightness": "lights become brighter ... and dim again",
+            "depending on visitor presence": "when visitors approach ... when the room is empty"
+          },
+          "closestCompetingParagraphId": "D",
+          "competitorFailure": "Paragraph D discusses fixed lighting choices that influence visitor behavior, not automated brightness changes triggered by whether visitors are present.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph C states both the presence-sensing mechanism and the corresponding increase and decrease in brightness."
+        },
+        {
+          "questionId": "mi-lighting-04",
+          "statement": "the idea that lighting can influence the route people take",
+          "selectedParagraphId": "D",
+          "supportingQuote": "Lighting also affects how visitors move through a gallery.",
+          "paraphraseMap": {
+            "lighting can influence": "Lighting ... affects",
+            "the route people take": "how visitors move through a gallery"
+          },
+          "closestCompetingParagraphId": "C",
+          "competitorFailure": "Paragraph C makes lighting respond to approaching visitors; it does not say that lighting changes where or how visitors move.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph D explicitly states the requested relationship between lighting and visitor movement, then illustrates it with entrances and attention guidance."
+        },
+        {
+          "questionId": "mi-lighting-05",
+          "statement": "why one lighting solution cannot fit every exhibition",
+          "selectedParagraphId": "E",
+          "supportingQuote": "A science museum may need clear, practical illumination for interactive displays, while an exhibition of medieval manuscripts may require a quieter atmosphere and strict light limits. The best plan depends on the object, the room and the kind of experience the museum wants to create.",
+          "paraphraseMap": {
+            "one lighting solution cannot fit every exhibition": "different exhibition types have contrasting illumination needs",
+            "why": "depends on the object, the room and the kind of experience"
+          },
+          "closestCompetingParagraphId": "B",
+          "competitorFailure": "Paragraph B shows that objects differ in light tolerance, one relevant variable, but does not address the wider combination of object, room and intended exhibition experience or the absence of a single overall formula.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph E directly contrasts the needs of two exhibition types and then states the multiple variables that make a universal plan unsuitable."
+        },
+        {
+          "questionId": "mi-lighting-06",
+          "statement": "a safety concern created by using contrast in a gallery",
+          "selectedParagraphId": "D",
+          "supportingQuote": "Designers sometimes use contrast to guide attention, but they must avoid making pathways unsafe or labels unreadable.",
+          "paraphraseMap": {
+            "using contrast": "use contrast to guide attention",
+            "a safety concern": "making pathways unsafe"
+          },
+          "closestCompetingParagraphId": "A",
+          "competitorFailure": "Paragraph A concerns conservation damage to objects from excess exposure, not visitor safety arising from contrast in gallery lighting.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph D couples the use of contrast with the explicit risk of unsafe pathways."
+        }
+      ],
+      "factualClaims": [
+        {
+          "claim": "Too much exposure can fade pigments, weaken paper and damage textiles, so the brightest display is not always the best one.",
+          "assessment": "supported",
+          "evidenceIds": [
+            "museum-cci-light-deterioration",
+            "museum-cci-textiles-light"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "museum-cci-light-deterioration",
+              "locator": "HTML “The Dilemma: Seeing Versus Saving”, lines 41–43; “Measuring Light”, lines 63–64; material-sensitivity table, lines 282–306",
+              "evidenceSummary": "CCI states that light damages some objects, that damage rate rises with intensity and dose with exposure time, and that many pigments and paper-based materials have measurable fading sensitivity."
+            },
+            {
+              "evidenceId": "museum-cci-textiles-light",
+              "locator": "HTML “Light and ultraviolet radiation”, lines 32–41",
+              "evidenceSummary": "CCI states that light/UV can weaken fibres and fade textile dyes, that damage is cumulative and irreversible, and that the lowest suitable display intensity should be used."
+            }
+          ],
+          "note": "The source language supports the three material categories and the conservation-versus-visibility conclusion, although exact susceptibility varies by pigment, paper and textile composition."
+        },
+        {
+          "claim": "Stone sculpture can usually be displayed under stronger light than watercolours, manuscripts or historic fabrics.",
+          "assessment": "supported",
+          "evidenceIds": [
+            "museum-cci-light-deterioration"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "museum-cci-light-deterioration",
+              "locator": "HTML traditional lighting-policy list, lines 454–468",
+              "evidenceSummary": "CCI lists 50 lux for textiles, works on paper and watercolours, versus 300 lux for stone and metal, while noting that category rules have limitations."
+            }
+          ],
+          "note": "“Usually” is important: CCI notes that treated or coated stone may contain more sensitive materials and that simple category rules can conceal variation."
+        },
+        {
+          "claim": "For this reason, museums often rotate sensitive works or show them for limited periods before returning them to storage.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "museum-cci-textiles-light"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "museum-cci-textiles-light",
+              "locator": "HTML light-control recommendations, lines 41–45",
+              "evidenceSummary": "CCI recommends displaying textiles only for limited periods, gives a three-month example, records exposure, and notes that closed storage protects them from light."
+            }
+          ],
+          "note": "Limited exhibition followed by storage is directly supported for textiles. The broader claim that museums “often rotate sensitive works” across object classes is reasonable but not established by the supplied page."
+        },
+        {
+          "claim": "LED systems can adjust colour temperature, direction and intensity with more precision than older lamps.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "museum-cci-light-deterioration"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "museum-cci-light-deterioration",
+              "locator": "HTML Table 2b “General Characteristics of Light Sources for Museums”, lines 192–245",
+              "evidenceSummary": "CCI lists LED colour-temperature options and notes that LEDs are easily aimed, but the table does not establish superior precision across colour temperature, direction and intensity relative to older lamps."
+            }
+          ],
+          "note": "The comparative “more precision than older lamps” claim is not directly traceable in the candidate material."
+        },
+        {
+          "claim": "Designers sometimes use contrast to guide attention, but they must avoid making pathways unsafe or labels unreadable.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "museum-smithsonian-accessible-lighting"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "museum-smithsonian-accessible-lighting",
+              "locator": "PDF pages 27–28, lines 486–505; page 53, lines 968–974",
+              "evidenceSummary": "Smithsonian guidance requires high text/background contrast for legibility, sufficient light on circulation routes, and avoidance of pools of light and shadow that create false depth or height cues."
+            }
+          ],
+          "note": "The safety and label-legibility principles are supported, but the source does not present them as consequences specifically caused by attention-guiding contrast; the passage compresses distinct design cautions."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-information:mi-coastal-restoration",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "high",
+        "representationRisk": "medium",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "low",
+        "titleCueRisk": "low",
+        "notes": "The information-matching decisions are clean, but the passage is shorter and more direct than typical IELTS Academic Reading. NOAA supports coastal resilience, estuary habitat, hydrologic restoration and tiered monitoring in general. Carbon storage, the exact engineering sequence, pre-project compensation process, named biological indicators and the sea-wall/evacuation/building-rule combination are not all traceable in the candidate pages."
+      },
+      "questions": [
+        {
+          "questionId": "mi-wetlands-01",
+          "statement": "a past attitude that led to the loss of wetland areas",
+          "selectedParagraphId": "A",
+          "supportingQuote": "Coastal wetlands were once dismissed as empty or unusable land, and many were drained for roads, housing or farmland.",
+          "paraphraseMap": {
+            "a past attitude": "were once dismissed as empty or unusable land",
+            "led to the loss of wetland areas": "many were drained for roads, housing or farmland"
+          },
+          "closestCompetingParagraphId": "C",
+          "competitorFailure": "Paragraph C contains present-day objections to restoration and concern about productive land, but it does not describe the historical attitude that caused wetlands to be drained.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph A explicitly joins the former dismissal of wetlands with their subsequent drainage for development and agriculture."
+        },
+        {
+          "questionId": "mi-wetlands-02",
+          "statement": "physical changes needed before plants can succeed",
+          "selectedParagraphId": "B",
+          "supportingQuote": "Engineers may need to remove old barriers, reopen tidal channels or change drainage systems so that salt water can return at the right times.",
+          "paraphraseMap": {
+            "physical changes": "remove old barriers, reopen tidal channels or change drainage systems",
+            "needed before plants can succeed": "so that salt water can return at the right times"
+          },
+          "closestCompetingParagraphId": "D",
+          "competitorFailure": "Paragraph D describes plant spread after restoration and how progress is monitored, not preparatory engineering changes required for plant establishment.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph B lists three alterations to the site and links them to restoration of the water conditions on which plant success depends."
+        },
+        {
+          "questionId": "mi-wetlands-03",
+          "statement": "groups that may view the same project differently",
+          "selectedParagraphId": "C",
+          "supportingQuote": "Fishers may welcome healthier nursery habitats, while farmers worry about losing productive land or seeing salt water move closer to fields.",
+          "paraphraseMap": {
+            "groups": "Fishers ... farmers",
+            "view the same project differently": "may welcome ... while ... worry"
+          },
+          "closestCompetingParagraphId": "E",
+          "competitorFailure": "Paragraph E compares complementary protection measures, not social groups holding different views of one restoration project.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph C explicitly contrasts fishers' favorable response with farmers' concerns about the same kind of wetland project."
+        },
+        {
+          "questionId": "mi-wetlands-04",
+          "statement": "small signs used to judge whether restoration is progressing",
+          "selectedParagraphId": "D",
+          "supportingQuote": "Monitoring teams often measure progress through small indicators such as insect diversity, water depth and the return of juvenile fish.",
+          "paraphraseMap": {
+            "small signs": "small indicators such as insect diversity, water depth and the return of juvenile fish",
+            "used to judge whether restoration is progressing": "Monitoring teams ... measure progress"
+          },
+          "closestCompetingParagraphId": "C",
+          "competitorFailure": "Paragraph C says monitoring plans are discussed before work begins but gives neither the small indicators nor their use in measuring progress.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph D explicitly identifies both the evaluative purpose and three examples of small progress indicators."
+        },
+        {
+          "questionId": "mi-wetlands-05",
+          "statement": "why restoration should not be treated as the only form of protection",
+          "selectedParagraphId": "E",
+          "supportingQuote": "it does not remove the need for evacuation plans or building rules in exposed areas.",
+          "paraphraseMap": {
+            "restoration": "A restored marsh",
+            "should not be treated as the only form of protection": "does not remove the need for evacuation plans or building rules"
+          },
+          "closestCompetingParagraphId": "A",
+          "competitorFailure": "Paragraph A lists the protective services wetlands provide, but it does not state their limits or the continued need for other protections.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph E explains that a restored marsh can reduce storm pressure yet cannot replace evacuation planning or building regulation."
+        },
+        {
+          "questionId": "mi-wetlands-06",
+          "statement": "the importance of getting water movement right",
+          "selectedParagraphId": "B",
+          "supportingQuote": "If the water regime is wrong, new plants may fail even when the species are carefully chosen.",
+          "paraphraseMap": {
+            "water movement": "the water regime",
+            "the importance of getting ... right": "If ... wrong, new plants may fail"
+          },
+          "closestCompetingParagraphId": "D",
+          "competitorFailure": "Paragraph D mentions water depth as a monitoring indicator but does not explain the consequence of an incorrect water regime for restoration success.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph B makes the importance explicit through the failure condition: even suitable species may not establish if the water regime is incorrect."
+        }
+      ],
+      "factualClaims": [
+        {
+          "claim": "Scientists now describe them as protective landscapes because they can absorb wave energy, store carbon and provide nursery areas for fish.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "wetlands-noaa-coastal-resiliency",
+            "wetlands-noaa-estuary-restoration-act"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "wetlands-noaa-coastal-resiliency",
+              "locator": "HTML “Coastal Resiliency”, lines 417–425",
+              "evidenceSummary": "NOAA describes wetlands and marshes as green infrastructure that slows waves and floodwaters, absorbs storm surge and wave energy, and supports essential fish habitat."
+            },
+            {
+              "evidenceId": "wetlands-noaa-estuary-restoration-act",
+              "locator": "HTML introduction, lines 404–421",
+              "evidenceSummary": "NOAA states that estuaries absorb floods and tides and provide habitat essential for aquatic life."
+            }
+          ],
+          "note": "Wave attenuation and fish habitat are supported. Carbon storage is absent from the supplied NOAA pages, and “nursery areas” is more specific than their wording."
+        },
+        {
+          "claim": "Engineers may need to remove old barriers, reopen tidal channels or change drainage systems so that salt water can return at the right times.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "wetlands-noaa-restoration-monitoring"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "wetlands-noaa-restoration-monitoring",
+              "locator": "HTML “A Tiered Monitoring Approach”, lines 433–446",
+              "evidenceSummary": "NOAA identifies hydrologic restoration of wetlands and removal of fish-passage barriers as common restoration approaches, but does not give the passage’s tidal-channel, drainage and salt-water timing sequence."
+            }
+          ],
+          "note": "The general need for hydrologic restoration is supported; the specific engineering actions and causal sequence are not directly substantiated by the candidate source."
+        },
+        {
+          "claim": "Project teams therefore spend months discussing maps, compensation and monitoring plans before work begins.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "wetlands-noaa-estuary-restoration-act"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "wetlands-noaa-estuary-restoration-act",
+              "locator": "HTML program purpose and monitoring sections, lines 420–452",
+              "evidenceSummary": "NOAA discusses interagency partnerships, project implementation and monitoring standards, but not a months-long pre-construction process involving maps and compensation."
+            }
+          ],
+          "note": "No opened candidate source verifies the asserted duration or the maps/compensation/monitoring-plan combination."
+        },
+        {
+          "claim": "Monitoring teams often measure progress through small indicators such as insect diversity, water depth and the return of juvenile fish.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "wetlands-noaa-estuary-restoration-act",
+            "wetlands-noaa-restoration-monitoring"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "wetlands-noaa-estuary-restoration-act",
+              "locator": "HTML “Monitoring Standards”, lines 450–453",
+              "evidenceSummary": "NOAA explains that monitoring documents success and can show why goals were not met, without naming the passage’s indicators."
+            },
+            {
+              "evidenceId": "wetlands-noaa-restoration-monitoring",
+              "locator": "HTML “A Tiered Monitoring Approach”, lines 433–461",
+              "evidenceSummary": "NOAA describes standardized metrics and longer-term investigation of physical, biological and geochemical processes, but does not mention insect diversity, water depth or juvenile-fish return on this page."
+            }
+          ],
+          "note": "Monitoring through multiple parameters is supported in principle; the three exact examples are not traceable in the candidate pages, so the full claim cannot be treated as verified."
+        },
+        {
+          "claim": "A restored marsh may reduce pressure on a sea wall during storms, but it does not remove the need for evacuation plans or building rules in exposed areas.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "wetlands-noaa-coastal-resiliency"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "wetlands-noaa-coastal-resiliency",
+              "locator": "HTML “Coastal Resiliency”, lines 417–425",
+              "evidenceSummary": "NOAA supports marshes and other green infrastructure as reducing waves, floodwaters and storm damage and compares restoration benefits with artificial solutions, but does not discuss pressure on a sea wall, evacuation plans or building rules."
+            }
+          ],
+          "note": "The general protective contribution of marsh restoration is supported; the exact complementary-protection formulation is not traceable in the supplied source."
+        }
+      ]
+    }
+  ]
+}

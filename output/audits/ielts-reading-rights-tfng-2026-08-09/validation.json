@@ -1,0 +1,809 @@
+{
+  "schemaVersion": "ielts-reading-tfng-rights-validation.v1",
+  "generatedAt": "2026-08-09T00:00:00-05:00",
+  "unit": "F0.2b.2 — expediente de tres sets formativos True/False/Not Given",
+  "status": "pass",
+  "passMeaning": "PASS certifica cobertura, identidad, cuarentena, revisión ciega y detección de riesgos. NO aprueba claves, factualidad, derechos, publicación, UI ni eficacia pedagógica en estudiantes reales.",
+  "scope": {
+    "passages": 3,
+    "questions": 22,
+    "registryEntriesInUnit": 3,
+    "registryEntriesTotal": 21,
+    "coveredAssetIds": [
+      "formative:true-false-not-given:tfng-set-urban-trees",
+      "formative:true-false-not-given:tfng-set-school-libraries",
+      "formative:true-false-not-given:tfng-set-coastal-paths"
+    ],
+    "excludedAssetIds": [
+      "legacy:reading-hub:amazon-tfng"
+    ],
+    "parentF02bRemainsOpen": true,
+    "scopedLearnerSourcesChangedSinceBaseline": false
+  },
+  "checks": {
+    "exactCoverage": true,
+    "stableUniqueIds": true,
+    "sourceHashesMatchBaseline": true,
+    "registryReferencesResolve": true,
+    "factualSourceAvailabilityRecorded": true,
+    "candidateSourcesAreNotTreatedAsVerification": true,
+    "factualReviewRequiredForEveryAsset": true,
+    "actualAssetsAllQuarantined": true,
+    "actualRegistryRecordsStructurallyValid": true,
+    "visibleOriginalityClaimObservedButUnverified": true,
+    "blindPacketContainsNoKeysFeedbackOrSkills": true,
+    "blindPacketContainsNoKeyLikeValues": true,
+    "blindPacketContainsNoLearnerOrContactPii": true,
+    "factualSourcePacketContainsNoKeysFeedbackOrSkills": true,
+    "factualSourcePacketContainsNoKeyLikeValues": true,
+    "independentExpertCoverageComplete": true,
+    "expertFirstPassPersistedAndPinned": true,
+    "notGivenEvidenceContractEnforced": true,
+    "studentWalkthroughCoverageComplete": true,
+    "fixedLabelsNotPermuted": true,
+    "statisticalCertificationWithheld": true,
+    "contentCertificationBlocked": true,
+    "contentMutationDenied": true,
+    "scopedLearnerSourcesUnchanged": true,
+    "auditRegistryAbsentFromLearnerRuntimeImports": true,
+    "provenanceSearchLedgerComplete": true,
+    "antiBiasMultidimensionalCoverage": true,
+    "keyLikeValueLeakageMutationDetected": true,
+    "boardStateMatchesValidatedUnit": true
+  },
+  "decisions": [
+    {
+      "assetId": "formative:true-false-not-given:tfng-set-urban-trees",
+      "title": "Set 1: alcance y cuantificadores",
+      "sourceObjectSha256": "a9218541f32e3423ae4cedfad35784679f481e7f281ad79a50fa005d11b0e214",
+      "passageSha256": "91f3be3364e010290f0af8d4b1d07a655fa7ea5e710576b6f0a92128e2fd40a4",
+      "wordCount": 142,
+      "questionCount": 10,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 3,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    {
+      "assetId": "formative:true-false-not-given:tfng-set-school-libraries",
+      "title": "Set 2: información relacionada vs evidencia exacta",
+      "sourceObjectSha256": "d672bb4a7732a959ba7a304993e935bf0f64a25465eda44286778ccd2f6d9878",
+      "passageSha256": "45db7a8749e7ee355f8125c26c76d91faa5e8c67c213d03a194306cf91fab344",
+      "wordCount": 187,
+      "questionCount": 6,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 2,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    {
+      "assetId": "formative:true-false-not-given:tfng-set-coastal-paths",
+      "title": "Set 3: causa, secuencia y límites de información",
+      "sourceObjectSha256": "8e528d9d0e9f0dc1cef8a003cd96b76bdd0100c935e47cbb9da140c130cc5bd7",
+      "passageSha256": "35e904d378e8e819049cf1d026b9b1e83dc45e1d164f8e15e91ebfb5a2f9b225",
+      "wordCount": 183,
+      "questionCount": 6,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 3,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    }
+  ],
+  "provenanceSearch": {
+    "schemaVersion": "ielts-reading-tfng-provenance-search.v1",
+    "searchedAt": "2026-08-09T04:57:00-05:00",
+    "method": "Directed web search using each visible title plus its normalized first sentence in quotation marks; results were reviewed for an exact title-and-text match.",
+    "searchSurface": "OpenAI web search over the public web; result ranking is dynamic and this ledger records only the reviewed results, not a reproducible universal index.",
+    "queries": [
+      {
+        "assetId": "formative:true-false-not-given:tfng-set-urban-trees",
+        "query": "\"Urban trees and heat risk\" \"For many years, urban planners treated city trees mainly as decoration\"",
+        "resultsReviewed": [
+          {
+            "title": "Multilingual corpus collection — English news data",
+            "url": "https://cst.dk/mulinco/corpus_collection/MLCC/ENGLISH.NWS/data/nen2aa",
+            "exactMatch": false,
+            "relevanceNote": "Contains unrelated historical wording about decorative trees; neither the title nor the passage sequence matches."
+          },
+          {
+            "title": "US EPA — Using Trees and Vegetation to Reduce Heat Islands",
+            "url": "https://www.epa.gov/heatislands/using-trees-and-vegetation-reduce-heat-islands",
+            "exactMatch": false,
+            "relevanceNote": "Relevant to factual themes but not an exact title-and-text provenance match."
+          }
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      },
+      {
+        "assetId": "formative:true-false-not-given:tfng-set-school-libraries",
+        "query": "\"School libraries after class\" \"Several secondary schools have kept their libraries open after regular lessons\"",
+        "resultsReviewed": [
+          {
+            "title": "Chesterfield County — Boost School Skills and Confidence with These Free Learning Tools",
+            "url": "https://www.chesterfield.gov/m/newsflash?cat=145&searchTerms=va+cou",
+            "exactMatch": false,
+            "relevanceNote": "Discusses school and library study resources but does not match the title, first sentence or narrated case."
+          },
+          {
+            "title": "UK Parliament — Written Answers, 13 June 2007",
+            "url": "https://hansard.parliament.uk/%E2%80%8CCommons/2007-06-13/debates/5d6abbb1-90e0-4413-a0ed-a6239b104877/WrittenAnswers",
+            "exactMatch": false,
+            "relevanceNote": "Contains unrelated secondary-school policy material; no title or passage-sequence match."
+          }
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      },
+      {
+        "assetId": "formative:true-false-not-given:tfng-set-coastal-paths",
+        "query": "\"Coastal walking paths\" \"A coastal town redesigned part of its walking path after winter storms\"",
+        "resultsReviewed": [
+          {
+            "title": "Rosa Mediterranean Houses — Green Areas and Running Trails",
+            "url": "https://www.rosamh.com/en/Publications/s5/3391/",
+            "exactMatch": false,
+            "relevanceNote": "Mentions coastal paths but does not match the title, first sentence or storm-damage narrative."
+          },
+          {
+            "title": "Sea You Port Saplaya — Blog",
+            "url": "https://www.portsaplaya.com/en/blog.html",
+            "exactMatch": false,
+            "relevanceNote": "Contains general coastal walking content but no exact text or case match."
+          }
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      }
+    ],
+    "interpretation": "This is a directed, non-exhaustive search log. No exact match was located in the reviewed results, but that negative result does not prove originality, authorship, ownership, authorization or universal absence of a prior source."
+  },
+  "factualResearch": [
+    {
+      "assetId": "formative:true-false-not-given:tfng-set-urban-trees",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "urban-epa-heat-island",
+        "urban-usfs-canopy-inequality-2021",
+        "urban-usfs-assessment-management-2018"
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan enfriamiento por sombra/transpiración, desigualdad de canopy y necesidad de planificación, pero no validan cada generalización histórica, geográfica o de implementación del pasaje. Falta revisión humana claim-by-claim."
+    },
+    {
+      "assetId": "formative:true-false-not-given:tfng-set-school-libraries",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "school-govuk-extended-day-case",
+        "school-southwark-homework-clubs"
+      ],
+      "limitation": "Las fuentes candidatas demuestran que existen espacios y clubes after-school con apoyo y voluntariado, pero no identifican el programa descrito, sus términos, supervisores, attendance records, board decision ni patrones por edad. El caso debe documentarse como sintético/composite o sustituirse por uno trazable."
+    },
+    {
+      "assetId": "formative:true-false-not-given:tfng-set-coastal-paths",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "coastal-earnse-bay-storm-2024",
+        "coastal-natural-england-dorset-2025",
+        "coastal-dune-management-govuk"
+      ],
+      "limitation": "Las fuentes candidatas respaldan tormentas, roll-back inland, señalización y manejo de dunas, pero no identifican la ciudad ni verifican longitud, footfall, viewing points, fencing, seasonal notices o maintenance costs. El caso debe declararse sintético/composite o reemplazarse por un caso trazable."
+    }
+  ],
+  "sourceAvailability": {
+    "schemaVersion": "ielts-reading-tfng-source-availability.v1",
+    "checkedAt": "2026-08-09",
+    "method": "curl 8.x -sL with requested URL, final URL, HTTP status, content type and response-body SHA-256 recorded on the stated date",
+    "sources": [
+      {
+        "evidenceId": "urban-epa-heat-island",
+        "requestedUrl": "https://www.epa.gov/heatislands/using-trees-and-vegetation-reduce-heat-islands",
+        "retrievedAt": "2026-08-09T04:55:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.epa.gov/heatislands/using-trees-and-vegetation-reduce-heat-islands",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "bodySha256": "5edf259f211bd5650cbf8b311b80db4d23ebb8594428b26281d0e3e80c0159b7"
+      },
+      {
+        "evidenceId": "urban-usfs-canopy-inequality-2021",
+        "requestedUrl": "https://research.fs.usda.gov/treesearch/62536",
+        "retrievedAt": "2026-08-09T04:55:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://research.fs.usda.gov/treesearch/62536",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "bodySha256": "6628a705935e1b8eda693c6d6331f86112598763db41ca372302ffc338fcbc52"
+      },
+      {
+        "evidenceId": "urban-usfs-assessment-management-2018",
+        "requestedUrl": "https://research.fs.usda.gov/treesearch/55851",
+        "retrievedAt": "2026-08-09T04:55:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://research.fs.usda.gov/treesearch/55851",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "bodySha256": "40e4d1fabbd53099c7f3d97bfa9615bd3cbcfecd98f33d0278d9fc353f2efb84"
+      },
+      {
+        "evidenceId": "school-govuk-extended-day-case",
+        "requestedUrl": "https://www.gov.uk/government/publications/the-report-of-the-commission-on-race-and-ethnic-disparities/education-and-training",
+        "retrievedAt": "2026-08-09T04:55:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.gov.uk/government/publications/the-report-of-the-commission-on-race-and-ethnic-disparities/education-and-training",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "bodySha256": "eed8af783243318548632fffebebcef3e2151f1053e0b25595ea0fd3e2e67fab"
+      },
+      {
+        "evidenceId": "school-southwark-homework-clubs",
+        "requestedUrl": "https://www.southwark.gov.uk/culture-and-sport/libraries/library-activities-children/homework-help-clubs-kids",
+        "retrievedAt": "2026-08-09T04:55:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.southwark.gov.uk/culture-and-sport/libraries/library-activities-children/homework-help-clubs-kids",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "bodySha256": "e25e3223c0beb05391a2cad01366184544da24f6ce17339571a008d66c3f4fa3"
+      },
+      {
+        "evidenceId": "coastal-earnse-bay-storm-2024",
+        "requestedUrl": "https://www.westmorlandandfurness.gov.uk/news/2024/council-taking-action-following-storm-damage-earnse-bay",
+        "retrievedAt": "2026-08-09T04:55:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.westmorlandandfurness.gov.uk/news/2024/council-taking-action-following-storm-damage-earnse-bay",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "bodySha256": "c8bafbce2f1114bff707d6164c26520c9b1080961993f5b06248875b944d3ca1"
+      },
+      {
+        "evidenceId": "coastal-natural-england-dorset-2025",
+        "requestedUrl": "https://www.gov.uk/government/news/dorset-path-improved-from-kimmeridge-bay-to-south-haven-point",
+        "retrievedAt": "2026-08-09T04:55:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.gov.uk/government/news/dorset-path-improved-from-kimmeridge-bay-to-south-haven-point",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "bodySha256": "4e5d30d424062bb49fa95d404eb848ac26a31b93798983c0cf40ccef87d28630"
+      },
+      {
+        "evidenceId": "coastal-dune-management-govuk",
+        "requestedUrl": "https://www.gov.uk/flood-and-coastal-erosion-risk-management-research-reports/sand-dune-processes-and-management-for-flood-and-coastal-defence",
+        "retrievedAt": "2026-08-09T04:55:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.gov.uk/flood-and-coastal-erosion-risk-management-research-reports/sand-dune-processes-and-management-for-flood-and-coastal-defence",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "bodySha256": "1283a28af6afa60515a1ba2eae092803274c6591e1d8bef4e6ad1e5cb15d43a6"
+      }
+    ],
+    "interpretation": "Availability identifies sources that can be reviewed. It does not establish authorship, license, authorization, exact-case identity, claim-level accuracy or human approval."
+  },
+  "expertReview": {
+    "reviewerType": "independent-ai-editorial-review",
+    "humanSignature": false,
+    "answerAgreement": {
+      "matches": 19,
+      "total": 22,
+      "rate": 0.8636363636363636
+    },
+    "keyConflictCount": 3,
+    "keyConflictQuestionIds": [
+      "tfng-urban-trees-05",
+      "tfng-libraries-05",
+      "tfng-coastal-03"
+    ],
+    "materialAmbiguityCount": 2,
+    "materialAmbiguityQuestionIds": [
+      "tfng-urban-trees-03",
+      "tfng-urban-trees-05"
+    ],
+    "factualAssessmentCounts": {
+      "supported": 1,
+      "oversimplified": 5,
+      "unsupported": 1,
+      "untraceable": 7
+    },
+    "verdictPath": "output/audits/ielts-reading-rights-tfng-2026-08-09/expert-verdict.json"
+  },
+  "studentWalkthrough": {
+    "passagesCovered": 3,
+    "questionsCovered": 22,
+    "verdictPath": "output/audits/ielts-reading-rights-tfng-2026-08-09/student-walkthrough.json",
+    "limitation": "Walkthrough cognitivo ciego sobre contenido; no prueba UI, accesibilidad, retención, bandas ni estudiantes reales."
+  },
+  "antiBias": {
+    "optionPermutationApplied": false,
+    "optionPermutationReason": "TRUE/FALSE/NOT GIVEN are fixed IELTS response labels; permuting label identity would create a non-standard task. Bias is audited across items and semantically.",
+    "storedKeyProfile": {
+      "answerCounts": {
+        "TRUE": 7,
+        "FALSE": 11,
+        "NOT GIVEN": 4
+      },
+      "maxSameLabelRun": 2,
+      "absoluteLanguageImpliesFalse": {
+        "definition": "If a statement contains all, always, every, never, only, immediately, permanently or throughout, answer FALSE; otherwise abstain.",
+        "eligible": 10,
+        "tiesOrAbstentions": 12,
+        "hits": 8,
+        "conditionalAccuracy": 0.8,
+        "totalAccuracy": 0.36363636363636365,
+        "randomBaseline": 0.3333333333333333,
+        "wilsonUpper95": 0.9314482070746453,
+        "threshold": 0.43333333333333335
+      },
+      "constantLabelHeuristics": {
+        "TRUE": {
+          "hits": 7,
+          "total": 22,
+          "accuracy": 0.3181818181818182
+        },
+        "FALSE": {
+          "hits": 11,
+          "total": 22,
+          "accuracy": 0.5
+        },
+        "NOT GIVEN": {
+          "hits": 4,
+          "total": 22,
+          "accuracy": 0.18181818181818182
+        }
+      },
+      "statementLengthByLabel": {
+        "TRUE": {
+          "questions": 7,
+          "averageWords": 10.857142857142858,
+          "minWords": 8,
+          "maxWords": 14
+        },
+        "FALSE": {
+          "questions": 11,
+          "averageWords": 10.454545454545455,
+          "minWords": 7,
+          "maxWords": 14
+        },
+        "NOT GIVEN": {
+          "questions": 4,
+          "averageWords": 10,
+          "minWords": 8,
+          "maxWords": 13
+        }
+      },
+      "lexicalOverlapByLabel": {
+        "TRUE": {
+          "questions": 7,
+          "averageStatementTokenOverlap": 0.7800663622092194
+        },
+        "FALSE": {
+          "questions": 11,
+          "averageStatementTokenOverlap": 0.6813885609340155
+        },
+        "NOT GIVEN": {
+          "questions": 4,
+          "averageStatementTokenOverlap": 0.6388888888888888
+        }
+      },
+      "perSet": [
+        {
+          "assetId": "formative:true-false-not-given:tfng-set-urban-trees",
+          "answerCounts": {
+            "TRUE": 3,
+            "FALSE": 5,
+            "NOT GIVEN": 2
+          },
+          "maxSameLabelRun": 2,
+          "absoluteLanguageImpliesFalse": {
+            "definition": "If a statement contains all, always, every, never, only, immediately, permanently or throughout, answer FALSE; otherwise abstain.",
+            "eligible": 5,
+            "tiesOrAbstentions": 5,
+            "hits": 4,
+            "conditionalAccuracy": 0.8,
+            "totalAccuracy": 0.4,
+            "randomBaseline": 0.3333333333333333,
+            "wilsonUpper95": 0.9540428281054049,
+            "threshold": 0.43333333333333335
+          }
+        },
+        {
+          "assetId": "formative:true-false-not-given:tfng-set-school-libraries",
+          "answerCounts": {
+            "TRUE": 2,
+            "FALSE": 3,
+            "NOT GIVEN": 1
+          },
+          "maxSameLabelRun": 1,
+          "absoluteLanguageImpliesFalse": {
+            "definition": "If a statement contains all, always, every, never, only, immediately, permanently or throughout, answer FALSE; otherwise abstain.",
+            "eligible": 4,
+            "tiesOrAbstentions": 2,
+            "hits": 3,
+            "conditionalAccuracy": 0.75,
+            "totalAccuracy": 0.5,
+            "randomBaseline": 0.3333333333333333,
+            "wilsonUpper95": 0.9420993643482015,
+            "threshold": 0.43333333333333335
+          }
+        },
+        {
+          "assetId": "formative:true-false-not-given:tfng-set-coastal-paths",
+          "answerCounts": {
+            "TRUE": 2,
+            "FALSE": 3,
+            "NOT GIVEN": 1
+          },
+          "maxSameLabelRun": 2,
+          "absoluteLanguageImpliesFalse": {
+            "definition": "If a statement contains all, always, every, never, only, immediately, permanently or throughout, answer FALSE; otherwise abstain.",
+            "eligible": 1,
+            "tiesOrAbstentions": 5,
+            "hits": 1,
+            "conditionalAccuracy": 1,
+            "totalAccuracy": 0.16666666666666666,
+            "randomBaseline": 0.3333333333333333,
+            "wilsonUpper95": 1.0000000000000002,
+            "threshold": 0.43333333333333335
+          }
+        }
+      ],
+      "sequenceProfile": {
+        "answerSequence": [
+          "FALSE",
+          "TRUE",
+          "FALSE",
+          "TRUE",
+          "FALSE",
+          "FALSE",
+          "NOT GIVEN",
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN",
+          "FALSE",
+          "TRUE",
+          "FALSE",
+          "TRUE",
+          "NOT GIVEN",
+          "FALSE",
+          "FALSE",
+          "TRUE",
+          "NOT GIVEN",
+          "TRUE",
+          "FALSE",
+          "FALSE"
+        ],
+        "transitions": {
+          "FALSE → TRUE": 5,
+          "TRUE → FALSE": 5,
+          "FALSE → FALSE": 3,
+          "FALSE → NOT GIVEN": 2,
+          "NOT GIVEN → TRUE": 2,
+          "NOT GIVEN → FALSE": 2,
+          "TRUE → NOT GIVEN": 2
+        }
+      }
+    },
+    "independentExpertProfile": {
+      "answerCounts": {
+        "TRUE": 7,
+        "FALSE": 12,
+        "NOT GIVEN": 3
+      },
+      "maxSameLabelRun": 3,
+      "absoluteLanguageImpliesFalse": {
+        "definition": "If a statement contains all, always, every, never, only, immediately, permanently or throughout, answer FALSE; otherwise abstain.",
+        "eligible": 10,
+        "tiesOrAbstentions": 12,
+        "hits": 8,
+        "conditionalAccuracy": 0.8,
+        "totalAccuracy": 0.36363636363636365,
+        "randomBaseline": 0.3333333333333333,
+        "wilsonUpper95": 0.9314482070746453,
+        "threshold": 0.43333333333333335
+      },
+      "constantLabelHeuristics": {
+        "TRUE": {
+          "hits": 7,
+          "total": 22,
+          "accuracy": 0.3181818181818182
+        },
+        "FALSE": {
+          "hits": 12,
+          "total": 22,
+          "accuracy": 0.5454545454545454
+        },
+        "NOT GIVEN": {
+          "hits": 3,
+          "total": 22,
+          "accuracy": 0.13636363636363635
+        }
+      },
+      "statementLengthByLabel": {
+        "TRUE": {
+          "questions": 7,
+          "averageWords": 10.857142857142858,
+          "minWords": 8,
+          "maxWords": 14
+        },
+        "FALSE": {
+          "questions": 12,
+          "averageWords": 10,
+          "minWords": 7,
+          "maxWords": 14
+        },
+        "NOT GIVEN": {
+          "questions": 3,
+          "averageWords": 11.666666666666666,
+          "minWords": 10,
+          "maxWords": 13
+        }
+      },
+      "lexicalOverlapByLabel": {
+        "TRUE": {
+          "questions": 7,
+          "averageStatementTokenOverlap": 0.7800663622092194
+        },
+        "FALSE": {
+          "questions": 12,
+          "averageStatementTokenOverlap": 0.7056246993746994
+        },
+        "NOT GIVEN": {
+          "questions": 3,
+          "averageStatementTokenOverlap": 0.5277777777777778
+        }
+      },
+      "perSet": [
+        {
+          "assetId": "formative:true-false-not-given:tfng-set-urban-trees",
+          "answerCounts": {
+            "TRUE": 3,
+            "FALSE": 4,
+            "NOT GIVEN": 3
+          },
+          "maxSameLabelRun": 1,
+          "absoluteLanguageImpliesFalse": {
+            "definition": "If a statement contains all, always, every, never, only, immediately, permanently or throughout, answer FALSE; otherwise abstain.",
+            "eligible": 5,
+            "tiesOrAbstentions": 5,
+            "hits": 3,
+            "conditionalAccuracy": 0.6,
+            "totalAccuracy": 0.3,
+            "randomBaseline": 0.3333333333333333,
+            "wilsonUpper95": 0.8573066002116804,
+            "threshold": 0.43333333333333335
+          }
+        },
+        {
+          "assetId": "formative:true-false-not-given:tfng-set-school-libraries",
+          "answerCounts": {
+            "TRUE": 2,
+            "FALSE": 4,
+            "NOT GIVEN": 0
+          },
+          "maxSameLabelRun": 2,
+          "absoluteLanguageImpliesFalse": {
+            "definition": "If a statement contains all, always, every, never, only, immediately, permanently or throughout, answer FALSE; otherwise abstain.",
+            "eligible": 4,
+            "tiesOrAbstentions": 2,
+            "hits": 4,
+            "conditionalAccuracy": 1,
+            "totalAccuracy": 0.6666666666666666,
+            "randomBaseline": 0.3333333333333333,
+            "wilsonUpper95": 1,
+            "threshold": 0.43333333333333335
+          }
+        },
+        {
+          "assetId": "formative:true-false-not-given:tfng-set-coastal-paths",
+          "answerCounts": {
+            "TRUE": 2,
+            "FALSE": 4,
+            "NOT GIVEN": 0
+          },
+          "maxSameLabelRun": 2,
+          "absoluteLanguageImpliesFalse": {
+            "definition": "If a statement contains all, always, every, never, only, immediately, permanently or throughout, answer FALSE; otherwise abstain.",
+            "eligible": 1,
+            "tiesOrAbstentions": 5,
+            "hits": 1,
+            "conditionalAccuracy": 1,
+            "totalAccuracy": 0.16666666666666666,
+            "randomBaseline": 0.3333333333333333,
+            "wilsonUpper95": 1.0000000000000002,
+            "threshold": 0.43333333333333335
+          }
+        }
+      ],
+      "sequenceProfile": {
+        "answerSequence": [
+          "FALSE",
+          "TRUE",
+          "FALSE",
+          "TRUE",
+          "NOT GIVEN",
+          "FALSE",
+          "NOT GIVEN",
+          "TRUE",
+          "FALSE",
+          "NOT GIVEN",
+          "FALSE",
+          "TRUE",
+          "FALSE",
+          "TRUE",
+          "FALSE",
+          "FALSE",
+          "FALSE",
+          "TRUE",
+          "FALSE",
+          "TRUE",
+          "FALSE",
+          "FALSE"
+        ],
+        "transitions": {
+          "FALSE → TRUE": 6,
+          "TRUE → FALSE": 6,
+          "TRUE → NOT GIVEN": 1,
+          "NOT GIVEN → FALSE": 2,
+          "FALSE → NOT GIVEN": 2,
+          "NOT GIVEN → TRUE": 1,
+          "FALSE → FALSE": 3
+        }
+      }
+    },
+    "qualitativeCoverage": {
+      "perspectiveAndRepresentation": true,
+      "priorKnowledge": true,
+      "irrelevantCognitiveLoad": true,
+      "visibleFocusLeak": "removed-from-blind-packet"
+    },
+    "sampleAdequacy": {
+      "certificationThreshold": 100,
+      "observedQuestions": 22,
+      "eligibleForStatisticalCertification": false,
+      "conclusion": "The sample is sufficient to detect a severe cue risk, not to certify balanced content statistically."
+    },
+    "statisticalCertification": "withheld-n-below-100",
+    "contentCertification": "blocked-key-and-shortcut-review-required"
+  },
+  "applicability": {
+    "rights": "applicable",
+    "fullStackData": "applicable",
+    "ieltsExpert": "applicable",
+    "cognitiveWalkthrough": "applicable-to-content-only",
+    "antiBias": "applicable",
+    "uiUxAccessibility": "not-applicable-scoped-learner-sources-unchanged",
+    "playwright": "not-applicable-scoped-learner-runtime-unchanged",
+    "evidence": "Within F0.2b.2, the catalog, TFNG route, ObjectivePracticeEngine and ObjectivePracticeSetBank remain exactly pinned by baseline hash, and no app/component source imports the audit registry/contract. This scoped claim does not assert that the entire repository or all shared UI are globally unchanged."
+  },
+  "processLimitations": {
+    "firstPassTrace": "The persisted hash detects ordinary mutation but is not an external append-only witness; a coordinated post-hoc rewrite of all local files cannot be ruled out cryptographically.",
+    "directSourceReview": "Direct-source review is declared by an AI reviewer and cross-checked for eight IDs plus non-empty locators; it is not automatic proof of browsing, a human signature or factual verification.",
+    "factualLocator": "One EPA finding follows a benefits subpage linked from the registered candidate URL; the relationship is documented but not represented as an exact same-page excerpt."
+  },
+  "negativeControl": {
+    "contentHashMismatch": {
+      "assetId": "formative:true-false-not-given:tfng-set-urban-trees",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "rightsBasis": "unknown-quarantined",
+      "reasonCodes": [
+        "authorship-unresolved",
+        "content-hash-mismatch",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    "keyLikeValueLeakFindings": [
+      "$.instruction"
+    ]
+  },
+  "sources": [
+    {
+      "path": "src/data/practica-exams/seo-catalog.ts",
+      "sha256": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de"
+    },
+    {
+      "path": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/true-false-not-given/page.tsx",
+      "sha256": "0d92e60fd6c8f209dd3a2dccce905d8408b0b8f0acad40f10ca6c5798e1df792"
+    },
+    {
+      "path": "src/components/exam-practice/ObjectivePracticeEngine.tsx",
+      "sha256": "7cb6be10adb1c2e4d2c35b19abe3ab6c8c939a74b3c21432c835042bef01051c"
+    },
+    {
+      "path": "src/components/exam-practice/ObjectivePracticeSetBank.tsx",
+      "sha256": "25823a7a418319104af37259c029add0df48a01e6539c61a03b285f68e4b339b"
+    },
+    {
+      "path": "src/lib/ielts/academic-reading-rights.ts",
+      "sha256": "cabd4adf35c75a14a3537bb07e5db4ef9ce8bc0c1a6f4a276d25518732923643"
+    },
+    {
+      "path": "src/data/practica-exams/ielts-reading-rights-registry.ts",
+      "sha256": "e0b8774fd4166724b5355923b6db4f81bf55a945949cd319d6cf391bb2de0fcf"
+    },
+    {
+      "path": "scripts/check-ielts-reading-tfng-rights.mjs",
+      "sha256": "3246327b3db2be8599e1558a1dd1bb479323a4e13954d3ba61a6b78104950afc"
+    },
+    {
+      "path": "tests/ielts-reading-tfng-rights.test.mjs",
+      "sha256": "0ec7621a1000f953623c0e7e9eab830ac24f690e035825877370ac4aa794bf95"
+    },
+    {
+      "path": "docs/ielts-reading-loop.md",
+      "sha256": "1b8613a0065094dac8f6394e32fe48ceea8d31d2f44cf0e5f373751667314b32"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-tfng-2026-08-09/baseline.json",
+      "sha256": "8112348554a328b10b31a5c1e9338ea31388bde3daac4ceeeb5070357a7f7545"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-tfng-2026-08-09/source-availability.json",
+      "sha256": "a688057ef7c9945838aa24582dc9a1f1e602cf3be7af02a5470e22d5d2fb11be"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-tfng-2026-08-09/provenance-search.json",
+      "sha256": "d71fc5396745bb090a22cde4b2caa0040391511cbed0e68f2ffa7ae840855137"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-tfng-2026-08-09/unit-change-manifest.json",
+      "sha256": "d39c7ba402b39184fcedbed52f37d4917d5f4166739c215f562a8048650167dd"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-tfng-2026-08-09/blind-review.json",
+      "sha256": "17823e3cb51d1482b6524ea8d70f10a0ae470b4e27bbf5a6e029acd2d9cbec9c"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-tfng-2026-08-09/factual-source-review.json",
+      "sha256": "a144eb3e3658d2d5e5346bb1b8af1e06e119472d484465b7e5591f0c646612db"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-tfng-2026-08-09/expert-verdict.json",
+      "sha256": "4052536b40f8ee923adec3a58717bdaf33af5a23218d42a751326efb6a1827d6"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-tfng-2026-08-09/expert-first-pass.json",
+      "sha256": "6e47b538e684f75c64aba6b97ab64f4a54e8237be2ad992932dbb98293edbcf1"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-tfng-2026-08-09/student-walkthrough.json",
+      "sha256": "91b73252d6ddb7066dba9942a052965693a937ec27bc2bfcc6be63f4e8fb7b96"
+    }
+  ]
+}

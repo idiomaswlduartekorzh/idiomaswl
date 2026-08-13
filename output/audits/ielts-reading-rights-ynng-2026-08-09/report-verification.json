@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "ielts-reading-ynng-report-verification.v1",
+  "verifiedAt": "2026-08-09T14:48:00Z",
+  "command": "node deliver_portable_artifact.mjs --input output/audits/ielts-reading-rights-ynng-2026-08-09/artifact.json --output output/audits/ielts-reading-rights-ynng-2026-08-09/report.html",
+  "stages": {
+    "validation": "passed",
+    "package": "passed",
+    "verification": "passed"
+  },
+  "viewports": [
+    1440,
+    390
+  ],
+  "counts": {
+    "cards": 4,
+    "charts": 2,
+    "tables": 2,
+    "blocks": 18
+  },
+  "sha256": {
+    "validation": "59425ac1726f29f7f6adf1e08d5ac30990c614299ef33be91b20864efb3ff522",
+    "auditVerdicts": "67b162b6faab53bcd5c39875f86415ddffbf0892264db01fd7d16b6008680dd0",
+    "artifact": "6a95533c15f7f3cd6c93f545252bdba1bcd5d7b46fc70062d5465460c25175f3",
+    "reportMarkdown": "190dda3b42b95ab29108dd3d6883da7f4a8bee1dc77cd6448877cfc77c2c4ea5",
+    "reportHtml": "dec0cfa01d172fcd0b99be10d5cb9d455d167effd1d2b0fb12fcc27cd3891bca"
+  },
+  "interpretation": "Chromium verified the portable stakeholder report only at 1440 and 390 pixels; this is not learner-facing Playwright evidence and does not certify the YNNG product UI."
+}

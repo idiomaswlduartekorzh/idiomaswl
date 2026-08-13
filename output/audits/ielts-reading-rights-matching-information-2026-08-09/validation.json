@@ -1,0 +1,1838 @@
+{
+  "schemaVersion": "ielts-reading-matching-information-rights-validation.v1",
+  "generatedAt": "2026-08-09T06:27:30-05:00",
+  "unit": "F0.2b.4 — three formative Matching Information passages",
+  "status": "pass",
+  "passMeaning": "PASS certifies audit coverage, identity, quarantine, blind adjudication and risk detection. It does not approve keys, factuality, rights, publication, UI or student efficacy.",
+  "scope": {
+    "passages": 3,
+    "paragraphs": 15,
+    "questions": 18,
+    "registryEntriesInUnit": 3,
+    "registryEntriesTotal": 21,
+    "coveredAssetIds": [
+      "formative:matching-information:mi-city-noise",
+      "formative:matching-information:mi-museum-lighting",
+      "formative:matching-information:mi-coastal-restoration"
+    ],
+    "parentF02bRemainsOpen": true,
+    "scopedLearnerSourcesChangedSinceBaseline": false
+  },
+  "checks": {
+    "exactCoverage": true,
+    "stableUniqueIds": true,
+    "sourceHashesMatchBaseline": true,
+    "registryReferencesResolve": true,
+    "officialRuleSourceAvailable": true,
+    "factualSourceAvailabilityRecorded": true,
+    "candidateSourcesAreNotTreatedAsVerification": true,
+    "factualReviewRequiredForEveryAsset": true,
+    "actualAssetsAllQuarantined": true,
+    "actualRegistryRecordsStructurallyValid": true,
+    "visibleOriginalityClaimObservedButUnverified": true,
+    "blindPacketContainsNoKeysFeedbackOrSkills": true,
+    "blindPacketContainsNoKeyLikeValues": true,
+    "blindPacketContainsNoLearnerOrContactPii": true,
+    "factualSourcePacketContainsNoKeysFeedbackOrSkills": true,
+    "factualSourcePacketContainsNoKeyLikeValues": true,
+    "independentExpertCoverageComplete": true,
+    "expertFirstPassPersistedAndPinned": true,
+    "specificInformationEvidenceContractEnforced": true,
+    "singleParagraphDecisionContractEnforced": true,
+    "paragraphReuseInstructionAndDataAligned": true,
+    "studentWalkthroughCoverageComplete": true,
+    "paragraphLabelsNotRandomized": true,
+    "statisticalCertificationWithheld": true,
+    "contentCertificationBlocked": true,
+    "contentMutationDenied": true,
+    "scopedLearnerSourcesUnchanged": true,
+    "auditRegistryAbsentFromLearnerRuntimeImports": true,
+    "provenanceSearchLedgerComplete": true,
+    "chronologyIsMonotonicAndNotFutureDated": true,
+    "finalPanelVerdictsValidated": true,
+    "antiBiasMultidimensionalCoverage": true,
+    "keyLikeValueLeakageMutationDetected": true,
+    "boardStateMatchesValidatedUnit": true,
+    "nextUnitAndParentRemainOpen": true
+  },
+  "decisions": [
+    {
+      "assetId": "formative:matching-information:mi-city-noise",
+      "title": "How cities respond to noise",
+      "sourceObjectSha256": "4dedd37f4422d13c2d7f2e8ed948820849d92987cc5bdce84350ecee344ded62",
+      "passageSha256": "b85fe921aedbd48f035d1bdd764bc033b5af62a2b5f1af4dab6d994af0b93bc1",
+      "wordCount": 249,
+      "paragraphCount": 5,
+      "questionCount": 6,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 3,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    {
+      "assetId": "formative:matching-information:mi-museum-lighting",
+      "title": "Lighting in modern museums",
+      "sourceObjectSha256": "f68ddab75ce213fcf42bb1b0f815138e25fad5218bedd135f74758d970b51280",
+      "passageSha256": "26799b69ea658d6268841c5d3ea29a408a93d5e459de8beaa49952c6e89db211",
+      "wordCount": 236,
+      "paragraphCount": 5,
+      "questionCount": 6,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 3,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    {
+      "assetId": "formative:matching-information:mi-coastal-restoration",
+      "title": "Restoring coastal wetlands",
+      "sourceObjectSha256": "c2e06a4c723bfd321924f9e2961937b494280c8edd55ab9658e3775284b467d7",
+      "passageSha256": "9510b6698b7e693561945516c8ff49a6abbf965e7ad1324017abcbfc373c6947",
+      "wordCount": 234,
+      "paragraphCount": 5,
+      "questionCount": 6,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 3,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    }
+  ],
+  "provenanceSearch": {
+    "schemaVersion": "ielts-reading-matching-information-provenance-search.v1",
+    "searchedAt": "2026-08-09T06:08:00-05:00",
+    "method": "Directed exact-title and exact-first-sentence public-web search; results reviewed manually for verbatim identity.",
+    "searchSurface": "public web search",
+    "queries": [
+      {
+        "assetId": "formative:matching-information:mi-city-noise",
+        "query": "\"How cities respond to noise\" \"City noise was once treated mainly as a minor annoyance\"",
+        "resultsReviewed": [
+          {
+            "title": "Guidance on environmental noise — WHO",
+            "url": "https://www.who.int/tools/compendium-on-health-and-environment/environmental-noise",
+            "exactMatch": false,
+            "relevanceNote": "Topical institutional source; no verbatim passage match."
+          },
+          {
+            "title": "Environmental Noise Directive — European Commission",
+            "url": "https://environment.ec.europa.eu/topics/noise/environmental-noise-directive_en",
+            "exactMatch": false,
+            "relevanceNote": "Topical policy source; no verbatim passage match."
+          }
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      },
+      {
+        "assetId": "formative:matching-information:mi-museum-lighting",
+        "query": "\"Lighting in modern museums\" \"Museum lighting used to be planned mainly around visibility\"",
+        "resultsReviewed": [
+          {
+            "title": "Light, ultraviolet and infrared — Canadian Conservation Institute",
+            "url": "https://www.canada.ca/en/conservation-institute/services/agents-deterioration/light.html",
+            "exactMatch": false,
+            "relevanceNote": "Topical conservation guidance; no verbatim passage match."
+          },
+          {
+            "title": "Smithsonian Guidelines for Accessible Exhibition Design",
+            "url": "https://affiliations.si.edu/wp-content/uploads/PDFs/Accessible-Exhibition-Design.pdf",
+            "exactMatch": false,
+            "relevanceNote": "Topical exhibition-lighting guidance; no verbatim passage match."
+          }
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      },
+      {
+        "assetId": "formative:matching-information:mi-coastal-restoration",
+        "query": "\"Restoring coastal wetlands\" \"Coastal wetlands were once dismissed as empty or unusable land\"",
+        "resultsReviewed": [
+          {
+            "title": "Coastal Resiliency — NOAA Fisheries",
+            "url": "https://www.fisheries.noaa.gov/news/coastal-resiliency",
+            "exactMatch": false,
+            "relevanceNote": "Topical institutional source; no verbatim passage match."
+          },
+          {
+            "title": "The Estuary Restoration Act — NOAA Fisheries",
+            "url": "https://www.fisheries.noaa.gov/national/habitat-conservation/estuary-restoration-act",
+            "exactMatch": false,
+            "relevanceNote": "Topical restoration source; no verbatim passage match."
+          }
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      }
+    ],
+    "interpretation": "Directed and non-exhaustive. No exact match in reviewed results does not prove originality, authorship or universal absence of a prior source."
+  },
+  "factualResearch": [
+    {
+      "assetId": "formative:matching-information:mi-city-noise",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "noise-who-environmental-guidance",
+        "noise-ec-environmental-noise-directive",
+        "noise-who-health-inequalities"
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan riesgos sanitarios, cartografía, información pública y desigualdad socioeconómica, pero no verifican el street-canyon example, el efecto de cada medida ni todas las relaciones causales del pasaje."
+    },
+    {
+      "assetId": "formative:matching-information:mi-museum-lighting",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "museum-cci-light-deterioration",
+        "museum-cci-textiles-light",
+        "museum-smithsonian-accessible-lighting"
+      ],
+      "limitation": "Las fuentes candidatas respaldan daño acumulativo, sensibilidad de papel/textiles, exposición limitada, luces activadas por visitantes y seguridad de rutas; no validan cada comparación con piedra ni una solución universal de iluminación."
+    },
+    {
+      "assetId": "formative:matching-information:mi-coastal-restoration",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "wetlands-noaa-coastal-resiliency",
+        "wetlands-noaa-estuary-restoration-act",
+        "wetlands-noaa-restoration-monitoring"
+      ],
+      "limitation": "Las fuentes candidatas respaldan resiliencia, hábitat, restauración hidrológica y monitoreo a largo plazo, pero no verifican cada secuencia histórica, conflicto comunitario, indicador específico ni la combinación exacta con sea walls del pasaje."
+    }
+  ],
+  "sourceAvailability": {
+    "schemaVersion": "ielts-reading-matching-information-source-availability.v1",
+    "checkedAt": "2026-08-09",
+    "method": "Direct HTTPS retrieval with redirect resolution, response-body SHA-256, content type and byte count.",
+    "sources": [
+      {
+        "evidenceId": "ielts-matching-information-official-format",
+        "requestedUrl": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading",
+        "retrievedAt": "2026-08-09T06:11:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 187270,
+        "bodySha256": "7d2f15ba40e1f5f7cbf3a659a03f8783c8ab4d8701d6de94aca7786213875ab0"
+      },
+      {
+        "evidenceId": "noise-who-environmental-guidance",
+        "requestedUrl": "https://www.who.int/tools/compendium-on-health-and-environment/environmental-noise",
+        "retrievedAt": "2026-08-09T06:11:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.who.int/tools/compendium-on-health-and-environment/environmental-noise",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 91397,
+        "bodySha256": "33383e20346502d121653a09e955f32771fec31eb44a665743c52c1d48948a65"
+      },
+      {
+        "evidenceId": "noise-ec-environmental-noise-directive",
+        "requestedUrl": "https://environment.ec.europa.eu/topics/noise/environmental-noise-directive_en",
+        "retrievedAt": "2026-08-09T06:11:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://environment.ec.europa.eu/topics/noise/environmental-noise-directive_en",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 97351,
+        "bodySha256": "358c9638a131a8484c40e8e84997ea8b7717859ee7e6fd178c3af4ec038f9338"
+      },
+      {
+        "evidenceId": "noise-who-health-inequalities",
+        "requestedUrl": "https://www.who.int/europe/health-topics/noise",
+        "retrievedAt": "2026-08-09T06:11:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.who.int/europe/health-topics/noise",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 138594,
+        "bodySha256": "ed549ecac8965700580c78f7fa3a44a5e32cc24af34f0068613134abdf050fb0"
+      },
+      {
+        "evidenceId": "museum-cci-light-deterioration",
+        "requestedUrl": "https://www.canada.ca/en/conservation-institute/services/agents-deterioration/light.html",
+        "retrievedAt": "2026-08-09T06:11:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.canada.ca/en/conservation-institute/services/agents-deterioration/light.html",
+        "redirected": false,
+        "contentType": "text/html;charset=utf-8",
+        "sizeBytes": 120546,
+        "bodySha256": "f344f0906fcfa649769c37bd4de9f16cdac434a08298da9bedb5c9f10d0fe7ee"
+      },
+      {
+        "evidenceId": "museum-cci-textiles-light",
+        "requestedUrl": "https://www.canada.ca/en/conservation-institute/services/conservation-preservation-publications/canadian-conservation-institute-notes/textiles-environment.html",
+        "retrievedAt": "2026-08-09T06:11:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.canada.ca/en/conservation-institute/services/conservation-preservation-publications/canadian-conservation-institute-notes/textiles-environment.html",
+        "redirected": false,
+        "contentType": "text/html;charset=utf-8",
+        "sizeBytes": 52224,
+        "bodySha256": "a86e11e8d6ebdf04dc561b2fd21a2c1c4a6cfffd23a3ed8061d13f141e77aaaa"
+      },
+      {
+        "evidenceId": "museum-smithsonian-accessible-lighting",
+        "requestedUrl": "https://affiliations.si.edu/wp-content/uploads/PDFs/Accessible-Exhibition-Design.pdf",
+        "retrievedAt": "2026-08-09T06:11:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://affiliations.si.edu/wp-content/uploads/PDFs/Accessible-Exhibition-Design.pdf",
+        "redirected": false,
+        "contentType": "application/pdf",
+        "sizeBytes": 2029848,
+        "bodySha256": "13f3cfe29bdbb2107be5a6d4bd36f2f7373218a383a80f3d5cc4e36d48e1991e"
+      },
+      {
+        "evidenceId": "wetlands-noaa-coastal-resiliency",
+        "requestedUrl": "https://www.fisheries.noaa.gov/news/coastal-resiliency",
+        "retrievedAt": "2026-08-09T06:11:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.fisheries.noaa.gov/news/coastal-resiliency",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 144210,
+        "bodySha256": "acfc80eae5793193f885f73a9f7f30c9fe73696ba60dd3148eacf61c4b420b04"
+      },
+      {
+        "evidenceId": "wetlands-noaa-estuary-restoration-act",
+        "requestedUrl": "https://www.fisheries.noaa.gov/national/habitat-conservation/estuary-restoration-act",
+        "retrievedAt": "2026-08-09T06:11:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.fisheries.noaa.gov/national/habitat-conservation/estuary-restoration-act",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 142573,
+        "bodySha256": "1457ec5e638950f62065ee07caba1285c9ab94ddd3c4858b62635dfad75416ad"
+      },
+      {
+        "evidenceId": "wetlands-noaa-restoration-monitoring",
+        "requestedUrl": "https://www.fisheries.noaa.gov/national/habitat-conservation/monitoring-and-evaluation-restoration-projects",
+        "retrievedAt": "2026-08-09T06:11:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.fisheries.noaa.gov/national/habitat-conservation/monitoring-and-evaluation-restoration-projects",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 141967,
+        "bodySha256": "2c24103ad130c7a6668b1de72620a9dfaf0422bbe3ca4cdf33308ed533fb2788"
+      }
+    ],
+    "interpretation": "Availability and body identity do not establish authorship, factual verification, license, rights-holder authorization or endorsement."
+  },
+  "expertReview": {
+    "reviewerType": "independent-ai-editorial-review",
+    "humanSignature": false,
+    "answerAgreement": {
+      "matches": 18,
+      "total": 18,
+      "rate": 1
+    },
+    "keyConflictCount": 0,
+    "keyConflictQuestionIds": [],
+    "materialAmbiguityCount": 0,
+    "materialAmbiguityQuestionIds": [],
+    "factualAssessmentCounts": {
+      "supported": 3,
+      "oversimplified": 5,
+      "unsupported": 0,
+      "untraceable": 7
+    },
+    "verdictPath": "output/audits/ielts-reading-rights-matching-information-2026-08-09/expert-verdict.json"
+  },
+  "studentWalkthrough": {
+    "passagesCovered": 3,
+    "questionsCovered": 18,
+    "verdictPath": "output/audits/ielts-reading-rights-matching-information-2026-08-09/student-walkthrough.json",
+    "limitation": "Blind content-only cognitive walkthrough; it does not test UI, accessibility, retention, bands or real students."
+  },
+  "antiBias": {
+    "optionPermutationApplied": false,
+    "optionPermutationReason": "Paragraph letters identify text order and cannot be shuffled independently. Position, sequence, overlap and per-set patterns are audited instead.",
+    "storedKeyProfile": {
+      "answerCounts": {
+        "A": 3,
+        "B": 5,
+        "C": 3,
+        "D": 4,
+        "E": 3
+      },
+      "maxSameLabelRun": 1,
+      "constantLabelHeuristics": {
+        "A": {
+          "hits": 3,
+          "total": 18,
+          "accuracy": 0.16666666666666666
+        },
+        "B": {
+          "hits": 5,
+          "total": 18,
+          "accuracy": 0.2777777777777778
+        },
+        "C": {
+          "hits": 3,
+          "total": 18,
+          "accuracy": 0.16666666666666666
+        },
+        "D": {
+          "hits": 4,
+          "total": 18,
+          "accuracy": 0.2222222222222222
+        },
+        "E": {
+          "hits": 3,
+          "total": 18,
+          "accuracy": 0.16666666666666666
+        }
+      },
+      "positionOneToFivePredictsAToE": {
+        "definition": "For question positions 1–5, predict paragraph A–E respectively; abstain on later questions.",
+        "eligible": 15,
+        "tiesOrAbstentions": 3,
+        "hits": 11,
+        "conditionalAccuracy": 0.7333333333333333,
+        "totalAccuracy": 0.6111111111111112,
+        "uniformFiveLabelBaseline": 0.2,
+        "wilsonUpper95": 0.8741907376555618
+      },
+      "highestLexicalOverlapPredictsParagraph": {
+        "eligible": 11,
+        "tiesOrAbstentions": 7,
+        "hits": 8,
+        "conditionalAccuracy": 0.7272727272727273,
+        "totalAccuracy": 0.4444444444444444,
+        "uniformFiveLabelBaseline": 0.2
+      },
+      "statementLengthByLabel": {
+        "A": {
+          "questions": 3,
+          "averageWords": 10.333333333333334,
+          "minWords": 10,
+          "maxWords": 11
+        },
+        "B": {
+          "questions": 5,
+          "averageWords": 9.2,
+          "minWords": 7,
+          "maxWords": 12
+        },
+        "C": {
+          "questions": 3,
+          "averageWords": 8.666666666666666,
+          "minWords": 8,
+          "maxWords": 9
+        },
+        "D": {
+          "questions": 4,
+          "averageWords": 9.5,
+          "minWords": 9,
+          "maxWords": 10
+        },
+        "E": {
+          "questions": 3,
+          "averageWords": 9.666666666666666,
+          "minWords": 8,
+          "maxWords": 12
+        }
+      },
+      "overlapRows": [
+        {
+          "questionId": "mi-noise-01",
+          "storedParagraphId": "B",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.1111111111111111
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.2222222222222222
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.2222222222222222
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.1111111111111111
+            }
+          ]
+        },
+        {
+          "questionId": "mi-noise-02",
+          "storedParagraphId": "C",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0.2857142857142857
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.14285714285714285
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.2857142857142857
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.14285714285714285
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.42857142857142855
+            }
+          ]
+        },
+        {
+          "questionId": "mi-noise-03",
+          "storedParagraphId": "D",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0.42857142857142855
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.2857142857142857
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.2857142857142857
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.14285714285714285
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.42857142857142855
+            }
+          ]
+        },
+        {
+          "questionId": "mi-noise-04",
+          "storedParagraphId": "A",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0.5
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.125
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.25
+            },
+            {
+              "paragraphId": "D",
+              "score": 0
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.25
+            }
+          ]
+        },
+        {
+          "questionId": "mi-noise-05",
+          "storedParagraphId": "E",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0
+            },
+            {
+              "paragraphId": "B",
+              "score": 0
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.14285714285714285
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.2857142857142857
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.42857142857142855
+            }
+          ]
+        },
+        {
+          "questionId": "mi-noise-06",
+          "storedParagraphId": "B",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0.2222222222222222
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.3333333333333333
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.1111111111111111
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.1111111111111111
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.1111111111111111
+            }
+          ]
+        },
+        {
+          "questionId": "mi-lighting-01",
+          "storedParagraphId": "A",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0.14285714285714285
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.2857142857142857
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.2857142857142857
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.2857142857142857
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.14285714285714285
+            }
+          ]
+        },
+        {
+          "questionId": "mi-lighting-02",
+          "storedParagraphId": "B",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.375
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.125
+            },
+            {
+              "paragraphId": "D",
+              "score": 0
+            },
+            {
+              "paragraphId": "E",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "questionId": "mi-lighting-03",
+          "storedParagraphId": "C",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0
+            },
+            {
+              "paragraphId": "B",
+              "score": 0
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.14285714285714285
+            },
+            {
+              "paragraphId": "D",
+              "score": 0
+            },
+            {
+              "paragraphId": "E",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "questionId": "mi-lighting-04",
+          "storedParagraphId": "D",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0.3333333333333333
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.1111111111111111
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.4444444444444444
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.3333333333333333
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.2222222222222222
+            }
+          ]
+        },
+        {
+          "questionId": "mi-lighting-05",
+          "storedParagraphId": "E",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0.25
+            },
+            {
+              "paragraphId": "B",
+              "score": 0
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.125
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.125
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.25
+            }
+          ]
+        },
+        {
+          "questionId": "mi-lighting-06",
+          "storedParagraphId": "D",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0
+            },
+            {
+              "paragraphId": "B",
+              "score": 0
+            },
+            {
+              "paragraphId": "C",
+              "score": 0
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.3333333333333333
+            },
+            {
+              "paragraphId": "E",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "questionId": "mi-wetlands-01",
+          "storedParagraphId": "A",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0.125
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.25
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.125
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.125
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.25
+            }
+          ]
+        },
+        {
+          "questionId": "mi-wetlands-02",
+          "storedParagraphId": "B",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0.14285714285714285
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.2857142857142857
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.2857142857142857
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.14285714285714285
+            },
+            {
+              "paragraphId": "E",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "questionId": "mi-wetlands-03",
+          "storedParagraphId": "C",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.375
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.25
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.25
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.25
+            }
+          ]
+        },
+        {
+          "questionId": "mi-wetlands-04",
+          "storedParagraphId": "D",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0.14285714285714285
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.14285714285714285
+            },
+            {
+              "paragraphId": "C",
+              "score": 0
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.2857142857142857
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.14285714285714285
+            }
+          ]
+        },
+        {
+          "questionId": "mi-wetlands-05",
+          "storedParagraphId": "E",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0.1111111111111111
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.2222222222222222
+            },
+            {
+              "paragraphId": "C",
+              "score": 0
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.3333333333333333
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.3333333333333333
+            }
+          ]
+        },
+        {
+          "questionId": "mi-wetlands-06",
+          "storedParagraphId": "B",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.5
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.16666666666666666
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.3333333333333333
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.16666666666666666
+            }
+          ]
+        }
+      ],
+      "perSet": [
+        {
+          "assetId": "formative:matching-information:mi-city-noise",
+          "answerCounts": {
+            "A": 1,
+            "B": 2,
+            "C": 1,
+            "D": 1,
+            "E": 1
+          },
+          "answerSequence": [
+            "B",
+            "C",
+            "D",
+            "A",
+            "E",
+            "B"
+          ],
+          "reusedParagraphIds": [
+            "B"
+          ]
+        },
+        {
+          "assetId": "formative:matching-information:mi-museum-lighting",
+          "answerCounts": {
+            "A": 1,
+            "B": 1,
+            "C": 1,
+            "D": 2,
+            "E": 1
+          },
+          "answerSequence": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "D"
+          ],
+          "reusedParagraphIds": [
+            "D"
+          ]
+        },
+        {
+          "assetId": "formative:matching-information:mi-coastal-restoration",
+          "answerCounts": {
+            "A": 1,
+            "B": 2,
+            "C": 1,
+            "D": 1,
+            "E": 1
+          },
+          "answerSequence": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "B"
+          ],
+          "reusedParagraphIds": [
+            "B"
+          ]
+        }
+      ],
+      "sequenceProfile": {
+        "answerSequence": [
+          "B",
+          "C",
+          "D",
+          "A",
+          "E",
+          "B",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "D",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "B"
+        ],
+        "transitions": {
+          "B → C": 3,
+          "C → D": 3,
+          "D → A": 2,
+          "A → E": 1,
+          "E → B": 2,
+          "B → A": 1,
+          "A → B": 2,
+          "D → E": 2,
+          "E → D": 1
+        }
+      }
+    },
+    "independentExpertProfile": {
+      "answerCounts": {
+        "A": 3,
+        "B": 5,
+        "C": 3,
+        "D": 4,
+        "E": 3
+      },
+      "maxSameLabelRun": 1,
+      "constantLabelHeuristics": {
+        "A": {
+          "hits": 3,
+          "total": 18,
+          "accuracy": 0.16666666666666666
+        },
+        "B": {
+          "hits": 5,
+          "total": 18,
+          "accuracy": 0.2777777777777778
+        },
+        "C": {
+          "hits": 3,
+          "total": 18,
+          "accuracy": 0.16666666666666666
+        },
+        "D": {
+          "hits": 4,
+          "total": 18,
+          "accuracy": 0.2222222222222222
+        },
+        "E": {
+          "hits": 3,
+          "total": 18,
+          "accuracy": 0.16666666666666666
+        }
+      },
+      "positionOneToFivePredictsAToE": {
+        "definition": "For question positions 1–5, predict paragraph A–E respectively; abstain on later questions.",
+        "eligible": 15,
+        "tiesOrAbstentions": 3,
+        "hits": 11,
+        "conditionalAccuracy": 0.7333333333333333,
+        "totalAccuracy": 0.6111111111111112,
+        "uniformFiveLabelBaseline": 0.2,
+        "wilsonUpper95": 0.8741907376555618
+      },
+      "highestLexicalOverlapPredictsParagraph": {
+        "eligible": 11,
+        "tiesOrAbstentions": 7,
+        "hits": 8,
+        "conditionalAccuracy": 0.7272727272727273,
+        "totalAccuracy": 0.4444444444444444,
+        "uniformFiveLabelBaseline": 0.2
+      },
+      "statementLengthByLabel": {
+        "A": {
+          "questions": 3,
+          "averageWords": 10.333333333333334,
+          "minWords": 10,
+          "maxWords": 11
+        },
+        "B": {
+          "questions": 5,
+          "averageWords": 9.2,
+          "minWords": 7,
+          "maxWords": 12
+        },
+        "C": {
+          "questions": 3,
+          "averageWords": 8.666666666666666,
+          "minWords": 8,
+          "maxWords": 9
+        },
+        "D": {
+          "questions": 4,
+          "averageWords": 9.5,
+          "minWords": 9,
+          "maxWords": 10
+        },
+        "E": {
+          "questions": 3,
+          "averageWords": 9.666666666666666,
+          "minWords": 8,
+          "maxWords": 12
+        }
+      },
+      "overlapRows": [
+        {
+          "questionId": "mi-noise-01",
+          "storedParagraphId": "B",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.1111111111111111
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.2222222222222222
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.2222222222222222
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.1111111111111111
+            }
+          ]
+        },
+        {
+          "questionId": "mi-noise-02",
+          "storedParagraphId": "C",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0.2857142857142857
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.14285714285714285
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.2857142857142857
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.14285714285714285
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.42857142857142855
+            }
+          ]
+        },
+        {
+          "questionId": "mi-noise-03",
+          "storedParagraphId": "D",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0.42857142857142855
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.2857142857142857
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.2857142857142857
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.14285714285714285
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.42857142857142855
+            }
+          ]
+        },
+        {
+          "questionId": "mi-noise-04",
+          "storedParagraphId": "A",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0.5
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.125
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.25
+            },
+            {
+              "paragraphId": "D",
+              "score": 0
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.25
+            }
+          ]
+        },
+        {
+          "questionId": "mi-noise-05",
+          "storedParagraphId": "E",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0
+            },
+            {
+              "paragraphId": "B",
+              "score": 0
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.14285714285714285
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.2857142857142857
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.42857142857142855
+            }
+          ]
+        },
+        {
+          "questionId": "mi-noise-06",
+          "storedParagraphId": "B",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0.2222222222222222
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.3333333333333333
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.1111111111111111
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.1111111111111111
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.1111111111111111
+            }
+          ]
+        },
+        {
+          "questionId": "mi-lighting-01",
+          "storedParagraphId": "A",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0.14285714285714285
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.2857142857142857
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.2857142857142857
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.2857142857142857
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.14285714285714285
+            }
+          ]
+        },
+        {
+          "questionId": "mi-lighting-02",
+          "storedParagraphId": "B",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.375
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.125
+            },
+            {
+              "paragraphId": "D",
+              "score": 0
+            },
+            {
+              "paragraphId": "E",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "questionId": "mi-lighting-03",
+          "storedParagraphId": "C",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0
+            },
+            {
+              "paragraphId": "B",
+              "score": 0
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.14285714285714285
+            },
+            {
+              "paragraphId": "D",
+              "score": 0
+            },
+            {
+              "paragraphId": "E",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "questionId": "mi-lighting-04",
+          "storedParagraphId": "D",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0.3333333333333333
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.1111111111111111
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.4444444444444444
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.3333333333333333
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.2222222222222222
+            }
+          ]
+        },
+        {
+          "questionId": "mi-lighting-05",
+          "storedParagraphId": "E",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0.25
+            },
+            {
+              "paragraphId": "B",
+              "score": 0
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.125
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.125
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.25
+            }
+          ]
+        },
+        {
+          "questionId": "mi-lighting-06",
+          "storedParagraphId": "D",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0
+            },
+            {
+              "paragraphId": "B",
+              "score": 0
+            },
+            {
+              "paragraphId": "C",
+              "score": 0
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.3333333333333333
+            },
+            {
+              "paragraphId": "E",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "questionId": "mi-wetlands-01",
+          "storedParagraphId": "A",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0.125
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.25
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.125
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.125
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.25
+            }
+          ]
+        },
+        {
+          "questionId": "mi-wetlands-02",
+          "storedParagraphId": "B",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0.14285714285714285
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.2857142857142857
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.2857142857142857
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.14285714285714285
+            },
+            {
+              "paragraphId": "E",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "questionId": "mi-wetlands-03",
+          "storedParagraphId": "C",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.375
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.25
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.25
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.25
+            }
+          ]
+        },
+        {
+          "questionId": "mi-wetlands-04",
+          "storedParagraphId": "D",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0.14285714285714285
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.14285714285714285
+            },
+            {
+              "paragraphId": "C",
+              "score": 0
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.2857142857142857
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.14285714285714285
+            }
+          ]
+        },
+        {
+          "questionId": "mi-wetlands-05",
+          "storedParagraphId": "E",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0.1111111111111111
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.2222222222222222
+            },
+            {
+              "paragraphId": "C",
+              "score": 0
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.3333333333333333
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.3333333333333333
+            }
+          ]
+        },
+        {
+          "questionId": "mi-wetlands-06",
+          "storedParagraphId": "B",
+          "scores": [
+            {
+              "paragraphId": "A",
+              "score": 0
+            },
+            {
+              "paragraphId": "B",
+              "score": 0.5
+            },
+            {
+              "paragraphId": "C",
+              "score": 0.16666666666666666
+            },
+            {
+              "paragraphId": "D",
+              "score": 0.3333333333333333
+            },
+            {
+              "paragraphId": "E",
+              "score": 0.16666666666666666
+            }
+          ]
+        }
+      ],
+      "perSet": [
+        {
+          "assetId": "formative:matching-information:mi-city-noise",
+          "answerCounts": {
+            "A": 1,
+            "B": 2,
+            "C": 1,
+            "D": 1,
+            "E": 1
+          },
+          "answerSequence": [
+            "B",
+            "C",
+            "D",
+            "A",
+            "E",
+            "B"
+          ],
+          "reusedParagraphIds": [
+            "B"
+          ]
+        },
+        {
+          "assetId": "formative:matching-information:mi-museum-lighting",
+          "answerCounts": {
+            "A": 1,
+            "B": 1,
+            "C": 1,
+            "D": 2,
+            "E": 1
+          },
+          "answerSequence": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "D"
+          ],
+          "reusedParagraphIds": [
+            "D"
+          ]
+        },
+        {
+          "assetId": "formative:matching-information:mi-coastal-restoration",
+          "answerCounts": {
+            "A": 1,
+            "B": 2,
+            "C": 1,
+            "D": 1,
+            "E": 1
+          },
+          "answerSequence": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "B"
+          ],
+          "reusedParagraphIds": [
+            "B"
+          ]
+        }
+      ],
+      "sequenceProfile": {
+        "answerSequence": [
+          "B",
+          "C",
+          "D",
+          "A",
+          "E",
+          "B",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "D",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "B"
+        ],
+        "transitions": {
+          "B → C": 3,
+          "C → D": 3,
+          "D → A": 2,
+          "A → E": 1,
+          "E → B": 2,
+          "B → A": 1,
+          "A → B": 2,
+          "D → E": 2,
+          "E → D": 1
+        }
+      }
+    },
+    "qualitativeCoverage": {
+      "perspectiveAndRepresentation": true,
+      "priorKnowledge": true,
+      "irrelevantCognitiveLoad": true,
+      "visibleTitleCue": true,
+      "paragraphCompetition": true
+    },
+    "sampleAdequacy": {
+      "certificationThreshold": 100,
+      "observedQuestions": 18,
+      "eligibleForStatisticalCertification": false,
+      "conclusion": "The sample exposes an 11/15 positional shortcut but is too small to certify balanced content statistically."
+    },
+    "statisticalCertification": "withheld-n-below-100",
+    "contentCertification": "blocked-editorial-review-required"
+  },
+  "applicability": {
+    "rights": "applicable",
+    "fullStackData": "applicable",
+    "ieltsExpert": "applicable",
+    "cognitiveWalkthrough": "applicable-to-content-only",
+    "antiBias": "applicable",
+    "uiUxAccessibility": "not-applicable-scoped-learner-sources-unchanged",
+    "playwright": "not-applicable-scoped-learner-runtime-unchanged",
+    "evidence": "Within F0.2b.4, four learner-facing sources remain pinned and no app/component imports the audit registry. This does not certify the existing UI or repository globally."
+  },
+  "processLimitations": {
+    "firstPassTrace": "The persisted hash detects ordinary mutation but is not an external append-only witness; coordinated post-hoc rewriting cannot be ruled out cryptographically.",
+    "directSourceReview": "Direct-source review is declared by an AI reviewer and checked for exact IDs plus non-empty locators; it is not automatic proof of browsing, a human signature or factual verification.",
+    "provenanceSearch": "Public-web search is directed and non-exhaustive; no exact match does not prove original authorship or universal absence."
+  },
+  "negativeControl": {
+    "contentHashMismatch": {
+      "assetId": "formative:matching-information:mi-city-noise",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "rightsBasis": "unknown-quarantined",
+      "reasonCodes": [
+        "authorship-unresolved",
+        "content-hash-mismatch",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    "keyLikeValueLeakFindings": [
+      "$.instruction"
+    ],
+    "spanishKeyLikeValueLeakFindings": [
+      "$.repairAction"
+    ],
+    "imperativeKeyLikeValueLeakFindings": [
+      "$.instruction"
+    ],
+    "spanishCorrespondenceLeakFindings": [
+      "$.repairAction"
+    ]
+  },
+  "sources": [
+    {
+      "path": "src/data/practica-exams/seo-catalog.ts",
+      "sha256": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de"
+    },
+    {
+      "path": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-information/page.tsx",
+      "sha256": "d892c0681b94d8e0b7e1ffe23e4eb2c6963ecfff01076b01f27b519545b4a4e1"
+    },
+    {
+      "path": "src/components/exam-practice/MatchingInformationEngine.tsx",
+      "sha256": "72c835e11537cd61c20a110c213948818875b3aa35ff3c5fb6ec64a211db55d0"
+    },
+    {
+      "path": "src/components/exam-practice/MatchingInformationPassageBank.tsx",
+      "sha256": "b5954b362da326515c2a3ada848c8a22dbaf5fe1548e29357817f823757c8981"
+    },
+    {
+      "path": "src/lib/ielts/academic-reading-rights.ts",
+      "sha256": "cabd4adf35c75a14a3537bb07e5db4ef9ce8bc0c1a6f4a276d25518732923643"
+    },
+    {
+      "path": "src/data/practica-exams/ielts-reading-rights-registry.ts",
+      "sha256": "e0b8774fd4166724b5355923b6db4f81bf55a945949cd319d6cf391bb2de0fcf"
+    },
+    {
+      "path": "scripts/check-ielts-reading-matching-information-rights.mjs",
+      "sha256": "5de8798775aa15fdcedba1acdf11b1d2a1f55e877a32df97ebb2507e9711548c"
+    },
+    {
+      "path": "tests/ielts-reading-matching-information-rights.test.mjs",
+      "sha256": "504c3b4fa13dfe89ef4ecec3391df4794c64b229cc632d0fc8b5c05771e99930"
+    },
+    {
+      "path": "docs/ielts-reading-loop.md",
+      "sha256": "1b8613a0065094dac8f6394e32fe48ceea8d31d2f44cf0e5f373751667314b32"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/baseline.json",
+      "sha256": "793fe28b3ab96fa04488005555045a5c4cc39e0f9ce702a644135c8d60a58bc7"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/source-availability.json",
+      "sha256": "33b93d26d2cbd17e49ed8b68451871788e97b5e006e5482a40514f96c679fb76"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/provenance-search.json",
+      "sha256": "bdc2033bc8dadb2039b5668c5e616038d6447c6811c26c9363ade8f039c60210"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/unit-change-manifest.json",
+      "sha256": "c975b70a9882f0829503a317187bed609f6a4563ebd54d47f92731b442034c08"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/blind-review.json",
+      "sha256": "a8277c5c870fce7bdcc367b800e0c450e78093ffae9fdc8248924a4fe6b49acc"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/factual-source-review.json",
+      "sha256": "fc546f34d0eebde57e8c8609a730b360da0a863269af527c48634df297e10451"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/expert-first-pass.json",
+      "sha256": "52a8de99ac5730daa91ceb9f9c9d52f781762e0d934138a96cc7c679e9529fe0"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/expert-verdict.json",
+      "sha256": "eb78e2ea467f096304b9cead359f829232e0da980bf921b87bbdfb8528c206e2"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/student-walkthrough.json",
+      "sha256": "b4acf68d81fafc2501ace6467f56fe2f323c508ed49c150e8b50686f27798108"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/audit-verdicts.json",
+      "sha256": "c4987f15670dc72c49fb5586ee4421edfe76a29cb677e04fab812958d7b59702"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/build-report.mjs",
+      "sha256": "d6c778a0402a4702a438cb9a2926a67186be74825b926799ecc0761bf9799c17"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/report.md",
+      "sha256": "37ea52fbdf96de6e3687157d865c4bfbfd4a3efac7859ca6815dfa9b6cf9b3b0"
+    }
+  ]
+}

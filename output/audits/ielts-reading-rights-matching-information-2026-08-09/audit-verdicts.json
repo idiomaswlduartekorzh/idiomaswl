@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "ielts-reading-matching-information-audit-verdicts.v1",
+  "reviewedAt": "2026-08-09T06:28:30-05:00",
+  "status": "pass",
+  "passMeaning": "The F0.2b.4 audit and detection control passes; all three assets remain quarantined and content certification remains blocked.",
+  "rows": [
+    {
+      "lane": "Rights and provenance",
+      "boardMark": "✅",
+      "scope": "Three Matching Information assets, directed provenance search and ten-source availability ledger.",
+      "findings": "3/3 assets remain unknown-quarantined; no exact public-web match was located in the directed non-exhaustive search.",
+      "blockersCarriedForward": "Authorship, license, rights-holder authorization, human factual review and human approval remain unresolved."
+    },
+    {
+      "lane": "Full-stack and data",
+      "boardMark": "✅",
+      "scope": "Three passages, 15 paragraphs, 18 statement mappings, registry identity, deny-by-default assessment and report binding.",
+      "findings": "3 passages and 18 statement mappings are pinned by exact object/passage hashes; every record fails closed without structural contract errors.",
+      "blockersCarriedForward": "Runtime enforcement and content certification remain open; this PASS covers the dossier and detection controls only."
+    },
+    {
+      "lane": "IELTS expert",
+      "boardMark": "✅",
+      "scope": "Independent two-pass review of all specific-information mappings and 15 declared factual claims.",
+      "findings": "18/18 statements match the stored paragraph letters; 0 material ambiguities; all three passages have mixed IELTS fitness because they are short and unusually explicit.",
+      "blockersCarriedForward": "The bank still requires harder rewrites, independent re-adjudication and human editorial approval before content certification."
+    },
+    {
+      "lane": "Cognitive walkthrough",
+      "boardMark": "✅",
+      "scope": "Blind content-only simulation from the perspective of an average learner.",
+      "findings": "3/3 passages and 18/18 statements have explicit likely-misread, evidence-hunt, paraphrase, distractor, decision and repair observations.",
+      "blockersCarriedForward": "This is not a real-student usability, retention, transfer or accessibility study."
+    },
+    {
+      "lane": "Anti-bias and leakage",
+      "boardMark": "✅",
+      "scope": "Paragraph-letter distribution, positional cycle, sequence, lexical overlap, statement length, per-set reuse, blind leakage and EN/ES mutation controls.",
+      "findings": "Stored letters are A=3, B=5, C=3, D=4, E=3; the A→E positional shortcut hits 11/15 eligible questions and both blind packets remain key-free.",
+      "blockersCarriedForward": "contentCertification remains blocked: n=18 is below the 100-decision gate and the positional shortcut is materially exploitable."
+    },
+    {
+      "lane": "UI/UX and accessibility",
+      "boardMark": "➖",
+      "scope": "Not applicable to this audit-only delta; four learner-facing sources remain pinned to baseline hashes.",
+      "findings": "No route, component, catalog bank or learner interaction was changed by F0.2b.4.",
+      "blockersCarriedForward": "This does not certify the existing UI, accessibility, responsive behavior or Task 2 visual parity."
+    },
+    {
+      "lane": "Playwright",
+      "boardMark": "➖",
+      "scope": "Not applicable to this audit-only delta; no learner-facing DOM or runtime behavior changed.",
+      "findings": "Static import scans and exact hashes establish the narrow N/A boundary.",
+      "blockersCarriedForward": "No browser matrix was executed for product conformance; portable-report Chromium QA is separate from learner UI testing."
+    }
+  ]
+}

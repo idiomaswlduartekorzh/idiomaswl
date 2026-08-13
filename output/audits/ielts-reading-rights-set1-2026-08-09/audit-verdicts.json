@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "ielts-reading-rights-set1-audit-verdicts.v1",
+  "status": "pass",
+  "generatedAt": "2026-08-09T00:00:00-05:00",
+  "rows": [
+    {
+      "lane": "Derechos y procedencia",
+      "verdict": "PASS",
+      "scope": "Contrato F0.2a, no clearance legal",
+      "findings": "3/3 activos conservan rightsBasis unknown-quarantined; la identificación editorial probable no se trata como licencia y la búsqueda externa se declara dirigida/no exhaustiva."
+    },
+    {
+      "lane": "Full-stack y datos",
+      "verdict": "PASS",
+      "scope": "Registry, hashes, evaluator y validator",
+      "findings": "Cobertura exacta 3/3, hashes alineados, fail-closed ante registro ausente, drift, schema/módulo/basis inválidos, evidencia incompleta, fechas imposibles y duplicados."
+    },
+    {
+      "lane": "IELTS y revisión ciega",
+      "verdict": "PASS",
+      "scope": "Identidad y límite del packet; no calidad de preguntas",
+      "findings": "Academic continúa inferido, no declarado; el packet no contiene pasajes, preguntas, opciones ni claves y no permite fingir aprobación IELTS o pedagógica."
+    },
+    {
+      "lane": "Anti-sesgo e independencia",
+      "verdict": "PASS",
+      "scope": "Separación entre automatización y decisión humana",
+      "findings": "La auto-revisión normalizada, la aprobación automática, estados desconocidos, campos vacíos, keys variantes y PII de estudiante/contacto quedan bloqueados."
+    },
+    {
+      "lane": "Walkthrough cognitivo",
+      "verdict": "NOT_APPLICABLE",
+      "scope": "Sin cambio learner-facing",
+      "findings": "No cambió ninguna tarea, instrucción, decisión o feedback del estudiante; corresponde ➖, no una aprobación."
+    },
+    {
+      "lane": "UI/UX y accesibilidad",
+      "verdict": "NOT_APPLICABLE",
+      "scope": "Sin ruta, componente ni DOM nuevos",
+      "findings": "No existe superficie visual atribuible a F0.2a; corresponde ➖, no una aprobación."
+    },
+    {
+      "lane": "Playwright",
+      "verdict": "NOT_APPLICABLE",
+      "scope": "Sin comportamiento de navegador nuevo",
+      "findings": "El gate es estático y ejecutable en Node; runtime enforcement y navegador permanecen en unidades posteriores."
+    }
+  ]
+}

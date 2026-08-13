@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "ielts-reading-tfng-source-availability.v1",
+  "checkedAt": "2026-08-09",
+  "method": "curl 8.x -sL with requested URL, final URL, HTTP status, content type and response-body SHA-256 recorded on the stated date",
+  "sources": [
+    {
+      "evidenceId": "urban-epa-heat-island",
+      "requestedUrl": "https://www.epa.gov/heatislands/using-trees-and-vegetation-reduce-heat-islands",
+      "retrievedAt": "2026-08-09T04:55:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.epa.gov/heatislands/using-trees-and-vegetation-reduce-heat-islands",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "bodySha256": "5edf259f211bd5650cbf8b311b80db4d23ebb8594428b26281d0e3e80c0159b7"
+    },
+    {
+      "evidenceId": "urban-usfs-canopy-inequality-2021",
+      "requestedUrl": "https://research.fs.usda.gov/treesearch/62536",
+      "retrievedAt": "2026-08-09T04:55:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://research.fs.usda.gov/treesearch/62536",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "bodySha256": "6628a705935e1b8eda693c6d6331f86112598763db41ca372302ffc338fcbc52"
+    },
+    {
+      "evidenceId": "urban-usfs-assessment-management-2018",
+      "requestedUrl": "https://research.fs.usda.gov/treesearch/55851",
+      "retrievedAt": "2026-08-09T04:55:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://research.fs.usda.gov/treesearch/55851",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "bodySha256": "40e4d1fabbd53099c7f3d97bfa9615bd3cbcfecd98f33d0278d9fc353f2efb84"
+    },
+    {
+      "evidenceId": "school-govuk-extended-day-case",
+      "requestedUrl": "https://www.gov.uk/government/publications/the-report-of-the-commission-on-race-and-ethnic-disparities/education-and-training",
+      "retrievedAt": "2026-08-09T04:55:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.gov.uk/government/publications/the-report-of-the-commission-on-race-and-ethnic-disparities/education-and-training",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "bodySha256": "eed8af783243318548632fffebebcef3e2151f1053e0b25595ea0fd3e2e67fab"
+    },
+    {
+      "evidenceId": "school-southwark-homework-clubs",
+      "requestedUrl": "https://www.southwark.gov.uk/culture-and-sport/libraries/library-activities-children/homework-help-clubs-kids",
+      "retrievedAt": "2026-08-09T04:55:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.southwark.gov.uk/culture-and-sport/libraries/library-activities-children/homework-help-clubs-kids",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "bodySha256": "e25e3223c0beb05391a2cad01366184544da24f6ce17339571a008d66c3f4fa3"
+    },
+    {
+      "evidenceId": "coastal-earnse-bay-storm-2024",
+      "requestedUrl": "https://www.westmorlandandfurness.gov.uk/news/2024/council-taking-action-following-storm-damage-earnse-bay",
+      "retrievedAt": "2026-08-09T04:55:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.westmorlandandfurness.gov.uk/news/2024/council-taking-action-following-storm-damage-earnse-bay",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "bodySha256": "c8bafbce2f1114bff707d6164c26520c9b1080961993f5b06248875b944d3ca1"
+    },
+    {
+      "evidenceId": "coastal-natural-england-dorset-2025",
+      "requestedUrl": "https://www.gov.uk/government/news/dorset-path-improved-from-kimmeridge-bay-to-south-haven-point",
+      "retrievedAt": "2026-08-09T04:55:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.gov.uk/government/news/dorset-path-improved-from-kimmeridge-bay-to-south-haven-point",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "bodySha256": "4e5d30d424062bb49fa95d404eb848ac26a31b93798983c0cf40ccef87d28630"
+    },
+    {
+      "evidenceId": "coastal-dune-management-govuk",
+      "requestedUrl": "https://www.gov.uk/flood-and-coastal-erosion-risk-management-research-reports/sand-dune-processes-and-management-for-flood-and-coastal-defence",
+      "retrievedAt": "2026-08-09T04:55:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.gov.uk/flood-and-coastal-erosion-risk-management-research-reports/sand-dune-processes-and-management-for-flood-and-coastal-defence",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "bodySha256": "1283a28af6afa60515a1ba2eae092803274c6591e1d8bef4e6ad1e5cb15d43a6"
+    }
+  ],
+  "interpretation": "Availability identifies sources that can be reviewed. It does not establish authorship, license, authorization, exact-case identity, claim-level accuracy or human approval."
+}

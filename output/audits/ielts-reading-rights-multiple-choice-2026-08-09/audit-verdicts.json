@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "ielts-reading-multiple-choice-audit-verdicts.v1",
+  "status": "pass",
+  "passMeaning": "PASS significa que F0.2b.1 produjo un expediente reproducible, ciego, conservador y capaz de bloquear el contenido. No significa que los pasajes estén licenciados, factualizados, equilibrados, aprobados por IELTS ni listos para publicación.",
+  "rows": [
+    {
+      "lane": "Derechos y procedencia",
+      "verdict": "PASS",
+      "boardMark": "✅",
+      "scope": "Expediente F0.2b.1; no clearance legal",
+      "findings": "Los tres activos están identificados por hash y permanecen unknown-quarantined. La búsqueda de procedencia fue dirigida y no exhaustiva; no se localizó autorización ni se infirió originalidad.",
+      "blockersCarriedForward": "Autoría, titularidad, licencia y revisión humana siguen sin resolver."
+    },
+    {
+      "lane": "Full-stack y datos",
+      "verdict": "PASS",
+      "boardMark": "✅",
+      "scope": "Contrato, registro, validadores y pruebas",
+      "findings": "El contrato v2 falla cerrado ante estados, fechas, evidencias o shapes inválidos. Los hashes catálogo-baseline-registry coinciden; 17/17 pruebas contractuales pasan entre F0.2a y F0.2b.1.",
+      "blockersCarriedForward": "El enforcement learner-facing pertenece a una subunidad posterior."
+    },
+    {
+      "lane": "Experto IELTS Reading",
+      "verdict": "PASS",
+      "boardMark": "✅",
+      "scope": "Revisión ciega y contraste factual en dos pases",
+      "findings": "El experto independiente reprodujo 18/18 claves y encontró 0 ambigüedades materiales. La aptitud IELTS de los tres pasajes es mixed: distractores simples y nivel de inferencia insuficiente para una simulación exigente.",
+      "blockersCarriedForward": "Generalizaciones del sueño, estudio de pares de palabras y tres claims Millgate requieren trazabilidad o reescritura."
+    },
+    {
+      "lane": "Walkthrough cognitivo",
+      "verdict": "PASS",
+      "boardMark": "✅",
+      "scope": "Simulación de estudiante promedio sobre packet ciego",
+      "findings": "La simulación cubre 3/3 pasajes y documenta barreras, atajos, valor formativo y acciones siguientes sin seleccionar respuestas, asignar banda ni representar a un alumno real.",
+      "blockersCarriedForward": "No sustituye pruebas con estudiantes ni auditoría de UI."
+    },
+    {
+      "lane": "Anti-sesgo y anti-atajos",
+      "verdict": "PASS",
+      "boardMark": "✅",
+      "scope": "Detección estructural; no certificación estadística",
+      "findings": "La auditoría detecta A=6, B=8, C=4, D=0 y que la correcta es la opción únicamente más larga en 10 de 13 casos evaluables. Las 54 permutaciones preservan la clave semántica.",
+      "blockersCarriedForward": "La certificación de balance editorial queda bloqueada; n=18 es insuficiente para certificación estadística."
+    },
+    {
+      "lane": "UI/UX y accesibilidad",
+      "verdict": "NOT_APPLICABLE",
+      "boardMark": "➖",
+      "scope": "Sin cambio learner-facing",
+      "findings": "Los hashes del catálogo, ruta y motor coinciden con el baseline; esta subunidad solo modifica contrato, registro, validadores, pruebas y artefactos de auditoría.",
+      "blockersCarriedForward": "La conformidad visual y accesible se valida cuando una subunidad cambie la experiencia del estudiante."
+    },
+    {
+      "lane": "Playwright",
+      "verdict": "NOT_APPLICABLE",
+      "boardMark": "➖",
+      "scope": "Sin cambio de ruta, DOM o interacción",
+      "findings": "No existe una afirmación de comportamiento de navegador que esta unidad deba certificar; el baseline learner-facing permanece idéntico por hash.",
+      "blockersCarriedForward": "La regresión runtime y la exposición del claim de originalidad siguen en unidades posteriores."
+    }
+  ]
+}

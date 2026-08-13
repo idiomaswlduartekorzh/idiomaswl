@@ -1,0 +1,128 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Idiomas WeLearn — home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "Idiomas WeLearn" [ref=e7]
+      - navigation "Main navigation" [ref=e8]:
+        - link "Home" [ref=e9] [cursor=pointer]:
+          - /url: /
+        - link "Languages" [ref=e10] [cursor=pointer]:
+          - /url: /clases-de-idiomas
+        - link "Exams" [ref=e11] [cursor=pointer]:
+          - /url: /examenes
+        - link "Practice" [ref=e12] [cursor=pointer]:
+          - /url: /practica
+        - link "About us" [ref=e13] [cursor=pointer]:
+          - /url: /quienes-somos
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - link "WeLearn on TikTok" [ref=e16] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@idiomas.welearn
+          - link "WeLearn on Instagram" [ref=e19] [cursor=pointer]:
+            - /url: https://www.instagram.com/idiomas_welearn/
+        - button "Switch to dark mode" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: ☀️
+        - link "Sign in" [ref=e127] [cursor=pointer]:
+          - /url: /login
+        - link "Level Radar →" [ref=e128] [cursor=pointer]:
+          - /url: /nivel-radar
+  - main [ref=e28]:
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - link "Práctica" [ref=e32] [cursor=pointer]:
+          - /url: /practica
+        - generic [ref=e33]: /
+        - link "IELTS" [ref=e34] [cursor=pointer]:
+          - /url: /practica/ielts
+        - generic [ref=e35]: /
+        - generic [ref=e36]: 📖 Reading
+      - paragraph [ref=e37]: 📖 IELTS Academic — Reading
+      - heading "True / False / Not Given" [level=1] [ref=e39]
+      - paragraph [ref=e40]:
+        - text: Lee el pasaje y decide si cada afirmación es
+        - strong [ref=e41]: "TRUE"
+        - text: ","
+        - strong [ref=e42]: "FALSE"
+        - text: o
+        - strong [ref=e43]: NOT GIVEN
+        - text: según la información del texto.
+      - generic [ref=e44]:
+        - strong [ref=e45]: "Estrategia:"
+        - text: TRUE = el texto lo afirma explícitamente · FALSE = el texto contradice la afirmación · NOT GIVEN = el texto no menciona el tema de la afirmación (nunca asumas).
+      - generic [ref=e46]:
+        - paragraph [ref=e47]: Reading Passage
+        - generic [ref=e48]: The Amazon rainforest is located mainly in Brazil, though it also extends into several other South American countries. It covers approximately 5.5 million square kilometres, making it the world's largest tropical rainforest. Scientists estimate that the Amazon produces around 20% of the world's oxygen through photosynthesis, which is why it is often called "the lungs of the planet." The rainforest is also home to approximately 10% of all animal species on Earth. In recent decades, deforestation has significantly reduced the size of the Amazon. According to scientists, approximately 17% of the Amazon has been lost in the last 50 years due to logging, agriculture, and urban expansion. Conservation organizations around the world have called for urgent action to protect the remaining forest.
+      - generic [ref=e130]: 1/8
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - generic [ref=e51]: Statement 1
+          - paragraph [ref=e52]: “The Amazon rainforest is located exclusively in Brazil.”
+          - generic [ref=e53]:
+            - button "TRUE" [disabled] [ref=e54]
+            - button "FALSE" [disabled] [ref=e55]
+            - button "NOT GIVEN" [disabled] [ref=e56]
+          - generic [ref=e134]: ✅ "Mainly in Brazil" but also extends into other South American countries — so "exclusively" is FALSE.
+        - generic [ref=e57]:
+          - generic [ref=e58]: Statement 2
+          - paragraph [ref=e59]: “The Amazon covers more than 5 million square kilometres.”
+          - generic [ref=e60]:
+            - button "TRUE" [ref=e61] [cursor=pointer]
+            - button "FALSE" [ref=e62] [cursor=pointer]
+            - button "NOT GIVEN" [ref=e63] [cursor=pointer]
+        - generic [ref=e64]:
+          - generic [ref=e65]: Statement 3
+          - paragraph [ref=e66]: “The Amazon produces all of the world's oxygen.”
+          - generic [ref=e67]:
+            - button "TRUE" [ref=e68] [cursor=pointer]
+            - button "FALSE" [ref=e69] [cursor=pointer]
+            - button "NOT GIVEN" [ref=e70] [cursor=pointer]
+        - generic [ref=e71]:
+          - generic [ref=e72]: Statement 4
+          - paragraph [ref=e73]: “The Amazon rainforest is the largest tropical rainforest in the world.”
+          - generic [ref=e74]:
+            - button "TRUE" [ref=e75] [cursor=pointer]
+            - button "FALSE" [ref=e76] [cursor=pointer]
+            - button "NOT GIVEN" [ref=e77] [cursor=pointer]
+        - generic [ref=e78]:
+          - generic [ref=e79]: Statement 5
+          - paragraph [ref=e80]: “Scientists believe the Amazon is home to more than 10% of animal species.”
+          - generic [ref=e81]:
+            - button "TRUE" [ref=e82] [cursor=pointer]
+            - button "FALSE" [ref=e83] [cursor=pointer]
+            - button "NOT GIVEN" [ref=e84] [cursor=pointer]
+        - generic [ref=e85]:
+          - generic [ref=e86]: Statement 6
+          - paragraph [ref=e87]: “Deforestation in the Amazon is caused only by logging.”
+          - generic [ref=e88]:
+            - button "TRUE" [ref=e89] [cursor=pointer]
+            - button "FALSE" [ref=e90] [cursor=pointer]
+            - button "NOT GIVEN" [ref=e91] [cursor=pointer]
+        - generic [ref=e92]:
+          - generic [ref=e93]: Statement 7
+          - paragraph [ref=e94]: “The Amazon is sometimes called "the lungs of the planet".”
+          - generic [ref=e95]:
+            - button "TRUE" [ref=e96] [cursor=pointer]
+            - button "FALSE" [ref=e97] [cursor=pointer]
+            - button "NOT GIVEN" [ref=e98] [cursor=pointer]
+        - generic [ref=e99]:
+          - generic [ref=e100]: Statement 8
+          - paragraph [ref=e101]: “The Brazilian government has introduced new laws to protect the Amazon.”
+          - generic [ref=e102]:
+            - button "TRUE" [ref=e103] [cursor=pointer]
+            - button "FALSE" [ref=e104] [cursor=pointer]
+            - button "NOT GIVEN" [ref=e105] [cursor=pointer]
+      - generic [ref=e106]:
+        - paragraph [ref=e107]: Próximamente en Reading
+        - generic [ref=e108]:
+          - generic [ref=e109]: Matching Headings
+          - generic [ref=e110]: Multiple Choice
+          - generic [ref=e111]: Summary Completion
+          - generic [ref=e112]: Sentence Completion
+  - link "Contact WeLearn on WhatsApp" [ref=e113] [cursor=pointer]:
+    - /url: https://wa.me/573005004253?text=Hello%2C%20I%20was%20practising%20IELTS%20with%20WeLearn%20and%20would%20like%20guidance%20on%20how%20to%20continue%20my%20preparation.
+    - generic: Message us
+  - button "Open Next.js Dev Tools" [ref=e123] [cursor=pointer]
+  - alert [ref=e129]

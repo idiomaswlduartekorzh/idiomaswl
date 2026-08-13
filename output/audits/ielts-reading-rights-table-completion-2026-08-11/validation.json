@@ -1,0 +1,1356 @@
+{
+  "schemaVersion": "ielts-reading-table-completion-rights-validation.v1",
+  "generatedAt": "2026-08-11T17:27:25Z",
+  "unit": "F0.2b.11 — three formative Table Completion passages",
+  "status": "pass",
+  "passMeaning": "PASS certifies audit coverage, identity, quarantine, prompt-only review, exact-answer adjudication and risk detection. It does not approve keys, factuality, rights, publication, runtime conformity or student efficacy; bank and content certification remain BLOCKED.",
+  "scope": {
+    "passages": 3,
+    "questions": 18,
+    "canonicalAnswers": 18,
+    "rawAcceptedEntries": 18,
+    "normalizedAcceptedValues": 17,
+    "registryEntriesInUnit": 3,
+    "registryEntriesTotal": 39,
+    "coveredAssetIds": [
+      "formative:table-completion:table-cooling-buildings",
+      "formative:table-completion:table-rain-gardens",
+      "formative:table-completion:table-museum-inventory"
+    ],
+    "parentF02bRemainsOpen": true,
+    "scopedLearnerSourcesChangedSinceBaseline": false
+  },
+  "concurrentExternalClosureChange": {
+    "path": "src/app/layout.tsx",
+    "previousSha256": "03d06f0aba4ac802fd9bf69b63229af511a8f4daa132d405dfc36a1a19f01dda",
+    "currentSha256": "6323573c44d1f473e5d9cd3cb7c13706b9aebcc158d211d1f56e190fefda9ec3",
+    "observedDiffSummary": "GTM disabled in preview/development",
+    "observedAt": "2026-08-11T17:01:30Z",
+    "attribution": "outside-F0.2b.11-audit-files",
+    "interpretation": "Table content/engine/bank unchanged; the concurrent root-layout change is preserved and recorded, and no UI conformity is certified by this audit-only unit."
+  },
+  "checks": {
+    "exactCoverageThreeEighteenEighteenEighteenEighteen": true,
+    "stableUniqueIds": true,
+    "registryPolicyV8Pinned": true,
+    "actualAssetsAllQuarantined": true,
+    "officialFormatAndSampleSourcesRetrieved": true,
+    "factualSourceAvailabilityRecordedNotVerified": true,
+    "renderDependencyClosurePinned": true,
+    "auditRegistryAbsentFromLearnerRuntimeImports": true,
+    "threePacketsContainNoKeysAlternativesEditorialFeedbackHintsPiiOrAssignments": true,
+    "promptOnlyReviewCoverageComplete": true,
+    "expertFirstPassPersistedAndPinned": true,
+    "exactOneBestAnswerContractEnforced": true,
+    "expertAgreementEighteenOfEighteen": true,
+    "evidenceSpansClosestCompetitorWordLimitAndOrderEnforced": true,
+    "acceptedAnswerInventoryEighteenExact": true,
+    "noAcceptedAlternativesInventoried": true,
+    "factualClaimsFifteenExact": true,
+    "walkthroughThreeByEighteenExact": true,
+    "multidimensionalShortcutAuditComplete": true,
+    "runtimeExplicitCheckFeedbackKeyHintsAndClientAnswersDetected": true,
+    "runtimeStoredMaxWordsWarningDetected": true,
+    "runtimeNotMisrepresentedAsPracticeOrExam": true,
+    "statisticalCertificationWithheldNBelow100": true,
+    "contentCertificationBlocked": true,
+    "contentMutationDenied": true,
+    "chronologyMonotonicAndNotFutureDated": true,
+    "boardCurrentClosedNextAndParentOpenExactlyOnce": true,
+    "adversarialLeakMutationsDetected": true
+  },
+  "decisions": [
+    {
+      "assetId": "formative:table-completion:table-cooling-buildings",
+      "title": "Passive cooling in public buildings",
+      "sourceObjectSha256": "bbf741fdf9e92620e9491e0b4197558aefe99b2c12b9a6cf11e94da8330518bd",
+      "passageSha256": "4855b6c5fc0b048304b1746b7423c1973b3ef548176673ccbde2641d513e946c",
+      "wordCount": 267,
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "questionCount": 6,
+      "canonicalAnswerCount": 6,
+      "acceptedEntryCount": 6,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 4,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    {
+      "assetId": "formative:table-completion:table-rain-gardens",
+      "title": "Rain gardens in school grounds",
+      "sourceObjectSha256": "23e079b4c30603c96b2ed16bd1f68f52ffc6850d5b780d3af8e29bd5047a70b9",
+      "passageSha256": "b1dd317e09c2ef80e152284263acdb390ca86494e33a95d9dfc425c658ee140f",
+      "wordCount": 223,
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "questionCount": 6,
+      "canonicalAnswerCount": 6,
+      "acceptedEntryCount": 6,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 5,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    {
+      "assetId": "formative:table-completion:table-museum-inventory",
+      "title": "Digitising small museum collections",
+      "sourceObjectSha256": "c7641b80b191b3bedd29a75df19bd1c39174b467e58947a817718d2d0b3fd069",
+      "passageSha256": "f21af1a1f11c1f8b5d70b6f73b3f0113ee76d41de8e39dbe9914570b9e096e69",
+      "wordCount": 214,
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "questionCount": 6,
+      "canonicalAnswerCount": 6,
+      "acceptedEntryCount": 6,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 5,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    }
+  ],
+  "visibleClaims": [
+    {
+      "text": "textos originales de WeLearn",
+      "sourcePath": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/table-completion/page.tsx",
+      "observed": true
+    },
+    {
+      "text": "Banco original WeLearn",
+      "sourcePath": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/table-completion/page.tsx",
+      "observed": true
+    },
+    {
+      "text": "sin copiar preguntas oficiales",
+      "sourcePath": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/table-completion/page.tsx",
+      "observed": true
+    },
+    {
+      "text": "preparado por el equipo académico de WeLearn y revisado en julio de 2026",
+      "sourcePath": "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+      "observed": true
+    },
+    {
+      "text": "los ejercicios son originales de WeLearn",
+      "sourcePath": "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+      "observed": true
+    }
+  ],
+  "renderDependencyClosure": {
+    "sourceCount": 15,
+    "paths": [
+      "src/app/(site)/layout.tsx",
+      "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/table-completion/page.tsx",
+      "src/app/globals.css",
+      "src/app/layout.tsx",
+      "src/components/SiteNav.tsx",
+      "src/components/SiteSkipLink.tsx",
+      "src/components/ThemeProvider.tsx",
+      "src/components/WhatsAppFloat.tsx",
+      "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+      "src/components/exam-practice/StructuredData.tsx",
+      "src/components/exam-practice/TableCompletionPassageBank.tsx",
+      "src/components/exam-practice/TableCompletionEngine.tsx",
+      "src/data/practica-exams/seo-catalog.ts",
+      "src/lib/ielts/academic-reading-question-types.ts",
+      "src/lib/supabase/client.ts"
+    ],
+    "limitation": "Static local-import closure from root/site layouts and route. Runtime-generated or remote copy remains outside scope."
+  },
+  "provenanceSearch": {
+    "schemaVersion": "ielts-reading-table-completion-provenance-search.v1",
+    "searchedAt": "2026-08-11T17:09:00Z",
+    "method": "Directed, non-exhaustive exact opening-fragment and distinctive-sentence searches, followed by comparison with candidate institutional sources.",
+    "searchSurface": "Public web search results and the exact candidate-source URLs recorded in the rights registry.",
+    "queries": [
+      {
+        "assetId": "formative:table-completion:table-cooling-buildings",
+        "query": "\"Passive cooling in public buildings\" \"Public buildings in warm regions\"; \"When windows or vents are placed on opposite sides of a room\"",
+        "resultsReviewed": [
+          {
+            "title": "Australian Government — Passive cooling",
+            "url": "https://www.yourhome.gov.au/passive-design/passive-cooling",
+            "reasonNotExactMatch": "Thematically related institutional guidance; it is not the exact WeLearn title, opening or passage wording."
+          },
+          {
+            "title": "Australian Government — Thermal mass",
+            "url": "https://www.yourhome.gov.au/passive-design/thermal-mass",
+            "reasonNotExactMatch": "Related terminology and principles, but no exact passage-level match was observed in the reviewed result."
+          }
+        ],
+        "candidateFactualSourcesCompared": [
+          "https://www.yourhome.gov.au/passive-design/passive-cooling",
+          "https://www.yourhome.gov.au/passive-design/thermal-mass",
+          "https://www.yourhome.gov.au/passive-design/shading",
+          "https://www.newham.gov.uk/downloads/file/5380/newham-climate-change-guidance-and-topic-paper-part-3-overheating"
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      },
+      {
+        "assetId": "formative:table-completion:table-rain-gardens",
+        "query": "\"Rain gardens in school grounds\" \"Rain gardens are shallow planted areas\"; \"Instead of sending all runoff into drains at once\"",
+        "resultsReviewed": [
+          {
+            "title": "US EPA — Types of Green Infrastructure",
+            "url": "https://www.epa.gov/green-infrastructure/types-green-infrastructure",
+            "reasonNotExactMatch": "Institutional topic guidance, not an exact match for the WeLearn title, opening or distinctive sentence."
+          },
+          {
+            "title": "Penn State Extension — An Introduction to Rain Gardens",
+            "url": "https://extension.psu.edu/an-introduction-to-rain-gardens",
+            "reasonNotExactMatch": "Conceptually related educational material; the reviewed result did not reproduce the exact passage."
+          }
+        ],
+        "candidateFactualSourcesCompared": [
+          "https://www.epa.gov/green-infrastructure/types-green-infrastructure",
+          "https://cfpub.epa.gov/npstbx/files/cwc_raingardenbrochure.pdf",
+          "https://www.nrcs.usda.gov/sites/default/files/2024-07/Home_Drainage_Guide.v25.pdf",
+          "https://extension.psu.edu/an-introduction-to-rain-gardens",
+          "https://archive.epa.gov/students/web/html/teachers.html"
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      },
+      {
+        "assetId": "formative:table-completion:table-museum-inventory",
+        "query": "\"Digitising small museum collections\" \"Small museums often hold objects\"; \"Volunteers can help with scanning and transcription\"",
+        "resultsReviewed": [
+          {
+            "title": "US National Park Service — Museum Handbook Part II",
+            "url": "https://www.nps.gov/subjects/museums/mh2.htm",
+            "reasonNotExactMatch": "A museum documentation handbook, not the exact WeLearn title, opening or passage wording."
+          },
+          {
+            "title": "Government of Canada — Capture Your Collections, Small Museum Version",
+            "url": "https://www.canada.ca/en/heritage-information-network/services/digitization/capture-collections-small-museum.html",
+            "reasonNotExactMatch": "Related digitisation guidance; no exact passage-level match was observed in the reviewed result."
+          }
+        ],
+        "candidateFactualSourcesCompared": [
+          "https://www.nps.gov/subjects/museums/mh2.htm",
+          "https://collectionstrust.org.uk/resource/cataloguing-suggested-procedure/",
+          "https://www.canada.ca/en/heritage-information-network/services/digitization/capture-collections-small-museum.html",
+          "https://www.nps.gov/subjects/museums/upload/MHII_AppK_Photography-2.pdf",
+          "https://www.loc.gov/preservation/about/faqs/reformatting.html"
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      }
+    ],
+    "interpretation": "This was a directed and non-exhaustive search. No exact match in the reviewed results does not prove originality, authorship, ownership, absence of a prior source, factual accuracy or permission to publish."
+  },
+  "sourceAvailability": {
+    "schemaVersion": "ielts-reading-table-completion-source-availability.v1",
+    "checkedAt": "2026-08-11",
+    "retrievalStartedAt": "2026-08-11T17:02:27Z",
+    "method": "Direct HTTPS retrieval with redirects enabled; status, final URL, content type, byte size and response-body SHA-256 were recorded when a body was received.",
+    "coverageContract": {
+      "officialSources": 2,
+      "factualSources": 14,
+      "totalSources": 16,
+      "factualSourcesPerAsset": {
+        "formative:table-completion:table-cooling-buildings": 4,
+        "formative:table-completion:table-rain-gardens": 5,
+        "formative:table-completion:table-museum-inventory": 5
+      },
+      "officialEvidenceIds": [
+        "ielts-table-completion-official-format",
+        "ielts-table-completion-sample-task"
+      ],
+      "factualEvidenceIdsByAsset": {
+        "formative:table-completion:table-cooling-buildings": [
+          "table-cooling-yourhome-passive",
+          "table-cooling-yourhome-thermal-mass",
+          "table-cooling-yourhome-shading",
+          "table-cooling-newham-external-shading"
+        ],
+        "formative:table-completion:table-rain-gardens": [
+          "table-rain-epa-types",
+          "table-rain-epa-brochure",
+          "table-rain-usda-drainage",
+          "table-rain-psu-introduction",
+          "table-rain-epa-school-learning"
+        ],
+        "formative:table-completion:table-museum-inventory": [
+          "table-museum-nps-records",
+          "table-museum-collections-trust",
+          "table-museum-canada-small",
+          "table-museum-nps-photography",
+          "table-museum-loc-preservation"
+        ]
+      }
+    },
+    "sources": [
+      {
+        "evidenceId": "ielts-table-completion-official-format",
+        "requestedUrl": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading",
+        "retrievedAt": "2026-08-11T17:02:30Z",
+        "httpStatus": 200,
+        "finalUrl": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 187011,
+        "bodySha256": "362020852444d12a23ae9a3fc1b468e1da6de89ad5a3ad677241679f1b7d0417",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "A response body was retrieved; availability does not verify the learner bank or grant reuse rights.",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "ielts-table-completion-sample-task",
+        "requestedUrl": "https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test",
+        "retrievedAt": "2026-08-11T17:02:32Z",
+        "httpStatus": 200,
+        "finalUrl": "https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 236135,
+        "bodySha256": "371452c2b04fb9bc3e755a8d543135bd10c12aed66d06612982b3c00fb8c9ada",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "A response body was retrieved; the official sample is reference material, not authorization for WeLearn content.",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "table-cooling-yourhome-passive",
+        "requestedUrl": "https://www.yourhome.gov.au/passive-design/passive-cooling",
+        "retrievedAt": "2026-08-11T17:02:34Z",
+        "httpStatus": 0,
+        "finalUrl": "https://www.yourhome.gov.au/passive-design/passive-cooling",
+        "redirected": false,
+        "contentType": null,
+        "sizeBytes": 0,
+        "bodySha256": null,
+        "availabilityStatus": "not-retrieved",
+        "retrievalInterpretation": "curl HTTP/2 INTERNAL_ERROR; no response body was treated as evidence.",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "table-cooling-yourhome-thermal-mass",
+        "requestedUrl": "https://www.yourhome.gov.au/passive-design/thermal-mass",
+        "retrievedAt": "2026-08-11T17:02:34Z",
+        "httpStatus": 0,
+        "finalUrl": "https://www.yourhome.gov.au/passive-design/thermal-mass",
+        "redirected": false,
+        "contentType": null,
+        "sizeBytes": 0,
+        "bodySha256": null,
+        "availabilityStatus": "not-retrieved",
+        "retrievalInterpretation": "curl HTTP/2 INTERNAL_ERROR; no response body was treated as evidence.",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "table-cooling-yourhome-shading",
+        "requestedUrl": "https://www.yourhome.gov.au/passive-design/shading",
+        "retrievedAt": "2026-08-11T17:02:34Z",
+        "httpStatus": 0,
+        "finalUrl": "https://www.yourhome.gov.au/passive-design/shading",
+        "redirected": false,
+        "contentType": null,
+        "sizeBytes": 0,
+        "bodySha256": null,
+        "availabilityStatus": "not-retrieved",
+        "retrievalInterpretation": "curl HTTP/2 INTERNAL_ERROR; no response body was treated as evidence.",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "table-cooling-newham-external-shading",
+        "requestedUrl": "https://www.newham.gov.uk/downloads/file/5380/newham-climate-change-guidance-and-topic-paper-part-3-overheating",
+        "retrievedAt": "2026-08-11T17:02:36Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.newham.gov.uk/downloads/file/5380/newham-climate-change-guidance-and-topic-paper-part-3-overheating",
+        "redirected": false,
+        "contentType": "application/pdf",
+        "sizeBytes": 1239204,
+        "bodySha256": "f5fadca00d6723dab5a18378b1a7838234af1ada03890b47cb5a10f91cb01688",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "The PDF body was retrieved; relevance and factual support require separate review.",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "table-rain-epa-types",
+        "requestedUrl": "https://www.epa.gov/green-infrastructure/types-green-infrastructure",
+        "retrievedAt": "2026-08-11T17:02:38Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.epa.gov/green-infrastructure/types-green-infrastructure",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 105205,
+        "bodySha256": "0d2866f754064d690843e0aba30331d94d19931aed541805aaec09afae076ed4",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "The response body was retrieved; no claim was automatically verified.",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "table-rain-epa-brochure",
+        "requestedUrl": "https://cfpub.epa.gov/npstbx/files/cwc_raingardenbrochure.pdf",
+        "retrievedAt": "2026-08-11T17:02:45Z",
+        "httpStatus": 200,
+        "finalUrl": "https://cfpub.epa.gov/npstbx/files/cwc_raingardenbrochure.pdf",
+        "redirected": false,
+        "contentType": "application/pdf",
+        "sizeBytes": 1310135,
+        "bodySha256": "baf5acfb4a604cca60e8421a0d5ce3d8120fe766a0526a6f59b239adeb9cf142",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "The PDF body was retrieved; no claim was automatically verified.",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "table-rain-usda-drainage",
+        "requestedUrl": "https://www.nrcs.usda.gov/sites/default/files/2024-07/Home_Drainage_Guide.v25.pdf",
+        "retrievedAt": "2026-08-11T17:02:46Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.nrcs.usda.gov/sites/default/files/2024-07/Home_Drainage_Guide.v25.pdf",
+        "redirected": false,
+        "contentType": "application/pdf",
+        "sizeBytes": 7474909,
+        "bodySha256": "b55d844fdb4b7544a32d6fc8b6d990e564ed729d84117e5f4eac400235595328",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "The PDF body was retrieved; no claim was automatically verified.",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "table-rain-psu-introduction",
+        "requestedUrl": "https://extension.psu.edu/an-introduction-to-rain-gardens",
+        "retrievedAt": "2026-08-11T17:02:49Z",
+        "httpStatus": 200,
+        "finalUrl": "https://extension.psu.edu/an-introduction-to-rain-gardens",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 370630,
+        "bodySha256": "7155806c013aeb3927adff8aeed940c9c543e9a20df2f2f7b6c4ab114f283d0d",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "The response body was retrieved; no claim was automatically verified.",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "table-rain-epa-school-learning",
+        "requestedUrl": "https://archive.epa.gov/students/web/html/teachers.html",
+        "retrievedAt": "2026-08-11T17:02:50Z",
+        "httpStatus": 200,
+        "finalUrl": "https://archive.epa.gov/students/web/html/teachers.html",
+        "redirected": false,
+        "contentType": "text/html",
+        "sizeBytes": 82201,
+        "bodySha256": "f98b382f042dfde92c404e227725295c2ebcf20465048615357109ffdc382a72",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "The archived response body was retrieved; no prevalence claim was automatically verified.",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "table-museum-nps-records",
+        "requestedUrl": "https://www.nps.gov/subjects/museums/mh2.htm",
+        "retrievedAt": "2026-08-11T17:02:51Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.nps.gov/subjects/museums/mh2.htm",
+        "redirected": false,
+        "contentType": "text/html;charset=UTF-8",
+        "sizeBytes": 41866,
+        "bodySha256": "ecf200de493aaacc6366b25d9ace5d02dd92c77946d54bd4ff00f9103e50b068",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "The response body was retrieved; no claim was automatically verified.",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "table-museum-collections-trust",
+        "requestedUrl": "https://collectionstrust.org.uk/resource/cataloguing-suggested-procedure/",
+        "retrievedAt": "2026-08-11T17:02:52Z",
+        "httpStatus": 200,
+        "finalUrl": "https://collectionstrust.org.uk/resource/cataloguing-suggested-procedure/",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 92213,
+        "bodySha256": "34e5c47bfd65098ed2ccc59dbb5a8522f7fd75fa33c3d0b904b55f22ab95da92",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "The response body was retrieved; no claim was automatically verified.",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "table-museum-canada-small",
+        "requestedUrl": "https://www.canada.ca/en/heritage-information-network/services/digitization/capture-collections-small-museum.html",
+        "retrievedAt": "2026-08-11T17:02:54Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.canada.ca/en/heritage-information-network/services/digitization/capture-collections-small-museum.html",
+        "redirected": false,
+        "contentType": "text/html;charset=utf-8",
+        "sizeBytes": 309339,
+        "bodySha256": "b32d767db701197acf74c32595ee2bb9a9f1e978e4c310ef75c2d1468013bb86",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "The response body was retrieved; no claim was automatically verified.",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "table-museum-nps-photography",
+        "requestedUrl": "https://www.nps.gov/subjects/museums/upload/MHII_AppK_Photography-2.pdf",
+        "retrievedAt": "2026-08-11T17:02:55Z",
+        "httpStatus": 404,
+        "finalUrl": "https://www.nps.gov/subjects/museums/upload/MHII_AppK_Photography-2.pdf",
+        "redirected": false,
+        "contentType": "text/html",
+        "sizeBytes": 18909,
+        "bodySha256": "84558944d36a4e9fb35822f1caa66561e9a96e2289598f5980cb966df4c25d06",
+        "availabilityStatus": "not-retrieved",
+        "retrievalInterpretation": "The retrieved body is an HTTP 404 HTML error page, not the expected PDF and not factual evidence.",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "table-museum-loc-preservation",
+        "requestedUrl": "https://www.loc.gov/preservation/about/faqs/reformatting.html",
+        "retrievedAt": "2026-08-11T17:02:55Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.loc.gov/preservation/about/faqs/reformatting.html",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 23203,
+        "bodySha256": "d38ae9f0f823b143cd05d7ded49c817bbc417286281c4eb7281cc479a8e50d7a",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "The response body was retrieved; no claim was automatically verified.",
+        "claimVerificationStatus": "not-performed"
+      }
+    ],
+    "observedAvailability": {
+      "http200": 12,
+      "http403": 0,
+      "networkError": 3,
+      "redirected": 0,
+      "requestedContentRetrieved": 12,
+      "requestedContentNotRetrieved": 4,
+      "claimsVerified": 0
+    },
+    "interpretation": "The retrievalStartedAt value is a shared batch-start marker, not a per-response completion timestamp. HTTP availability and response-body hashes do not establish claim truth, authorship, originality, rights, licence, permission or human review."
+  },
+  "factualResearch": [
+    {
+      "assetId": "formative:table-completion:table-cooling-buildings",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "table-cooling-yourhome-passive",
+        "table-cooling-yourhome-thermal-mass",
+        "table-cooling-yourhome-shading",
+        "table-cooling-newham-external-shading"
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan ventilación, masa térmica y sombreado, pero no convierten condiciones dependientes de clima, geometría y operación en reglas universales. Disponibilidad no prueba autoría, licencia, hechos ni revisión humana."
+    },
+    {
+      "assetId": "formative:table-completion:table-rain-gardens",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "table-rain-epa-types",
+        "table-rain-epa-brochure",
+        "table-rain-usda-drainage",
+        "table-rain-psu-introduction",
+        "table-rain-epa-school-learning"
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan retención, infiltración, criterios de ubicación y selección de plantas, pero no verifican resultados universales ni la prevalencia escolar expresada como “often”. Disponibilidad no prueba autoría, licencia, hechos ni revisión humana."
+    },
+    {
+      "assetId": "formative:table-completion:table-museum-inventory",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "table-museum-nps-records",
+        "table-museum-collections-trust",
+        "table-museum-canada-small",
+        "table-museum-nps-photography",
+        "table-museum-loc-preservation"
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan separación entre captura, catalogación, metadatos, transparencia y preservación, pero no verifican la tríada exacta de identificación ni una regla universal de revisión por trained staff antes de publicar. Disponibilidad no prueba autoría, licencia, hechos ni revisión humana."
+    }
+  ],
+  "shortcutReview": {
+    "promptOnly": {
+      "uniquePredictions": 0,
+      "hits": 0,
+      "total": 18
+    },
+    "interpretation": "Prompt-only exact guesses measure answerability from sentence frames without passage evidence; they are not expert adjudications."
+  },
+  "expertReview": {
+    "reviewerType": "independent-ai-editorial-review",
+    "humanSignature": false,
+    "answerAgreement": {
+      "matches": 18,
+      "total": 18,
+      "rate": 1
+    },
+    "keyConflictCount": 0,
+    "keyConflictQuestionIds": [],
+    "materialAmbiguityCount": 4,
+    "materialAmbiguityQuestionIds": [
+      "table-cooling-01-2",
+      "table-cooling-03-1",
+      "table-museum-inventory-01-1",
+      "table-museum-inventory-01-2"
+    ],
+    "nonNaturalSelectionQuestionIds": [],
+    "passageOrderViolationQuestionIds": [
+      "table-rain-gardens-01-2",
+      "table-museum-inventory-01-2"
+    ],
+    "acceptedAnswerAssessmentCounts": {
+      "verbatim": 18,
+      "normalized-duplicate": 0,
+      "official-spelling-variant": 0,
+      "unsupported": 0
+    },
+    "factualAssessmentCounts": {
+      "supported": 5,
+      "oversimplified": 8,
+      "unsupported": 0,
+      "untraceable": 2
+    },
+    "verdictPath": "output/audits/ielts-reading-rights-table-completion-2026-08-11/expert-verdict.json"
+  },
+  "studentWalkthrough": {
+    "passagesCovered": 3,
+    "questionsCovered": 18,
+    "verdictPath": "output/audits/ielts-reading-rights-table-completion-2026-08-11/student-walkthrough.json",
+    "limitation": "Blind content-only walkthrough; no students, UI or conformance test."
+  },
+  "runtime": {
+    "clientSideCanonicalAnswersPresent": true,
+    "clientSideAcceptedAlternativesPresent": true,
+    "preResponseHintsAvailable": true,
+    "answerCheckRequiresExplicitButton": true,
+    "answerLocksAfterCheck": true,
+    "correctnessAndExplanationShownImmediatelyAfterCheck": true,
+    "incorrectResponseRevealsCanonicalAnswerAfterCheck": true,
+    "wordLimitDisplayHardCodedToTwo": false,
+    "storedWordLimitParsedForEnforcement": true,
+    "wordLimitViolationExplicitlyBlocksCheck": false,
+    "classification": "guided-training-runtime-with-explicit-check-and-immediate-post-check-key-and-explanation-not-practice-or-exam-simulation",
+    "inheritedAccessibilityRisks": {
+      "runtimeClassification": "guided-training-runtime-with-immediate-feedback-not-practice-or-exam-simulation",
+      "answerKeysDeliveredToClient": true,
+      "inputLocksAfterExplicitCheck": true,
+      "inputLocksWhileTyping": false,
+      "correctnessAndExplanationShownImmediatelyAfterCheck": true,
+      "hintsAvailableBeforeResponse": true,
+      "attemptStatePersisted": false,
+      "resetRequiresConfirmation": false,
+      "resetScope": "all-six-blanks-in-one-passage-engine",
+      "wordLimitVisualWarningPresent": true,
+      "wordLimitEnforcedInScoring": false,
+      "inputAccessibleNamePresent": true,
+      "inputAccessibleNamesUniqueAcrossThreeSets": true,
+      "breadcrumbHasNavAndCurrentSemantics": true,
+      "englishPassageHasLangAttribute": false,
+      "progressIndicatorHasProgrammaticRoleNameAndValue": false,
+      "feedbackHasLiveRegion": false,
+      "hintToggleHasExpandedAndControlsSemantics": false,
+      "headingHierarchyIsOrdered": false,
+      "feedbackFocusManaged": false,
+      "uiUxStaticReviewApplicable": true,
+      "playwrightApplicableToAuditOnlyScaffoldDelta": false,
+      "playwrightBecomesApplicableOnLearnerFacingOrRuntimeDrift": true
+    },
+    "limitation": "Explicit check, immediate post-check key/explanation, client answers and pre-response hints prevent representation as Practice or Exam simulation. Stored maxWords only drives a visual warning and does not block scoring."
+  },
+  "antiShortcut": {
+    "storedProfile": {
+      "canonicalAnswerWordCountDistribution": {
+        "oneWord": 17,
+        "twoWords": 1,
+        "overLimit": 0
+      },
+      "alwaysTwoWordAnswerPredictor": {
+        "eligible": 18,
+        "tiesOrAbstentions": 0,
+        "hits": 1
+      },
+      "sameQuestionPositionAcrossSetsModalAnswerWordCount": {
+        "eligible": 18,
+        "positions": 6,
+        "tiesOrAbstentions": 0,
+        "hits": 17
+      },
+      "canonicalAnswerTokenVisibleInTableFrame": {
+        "questionsWithOverlap": 0,
+        "questionIds": []
+      },
+      "passageTitleAnswerTokenOverlap": {
+        "questionsWithOverlap": 0,
+        "questionIds": []
+      },
+      "canonicalAnswerOccurrenceInOwnPassage": {
+        "exactlyOnce": 12,
+        "zero": 0,
+        "multiple": 6,
+        "rows": [
+          {
+            "questionId": "table-cooling-01-1",
+            "occurrences": 4,
+            "offsets": [
+              511,
+              834,
+              1086,
+              1302
+            ],
+            "intendedOffset": 511
+          },
+          {
+            "questionId": "table-cooling-01-2",
+            "occurrences": 1,
+            "offsets": [
+              604
+            ],
+            "intendedOffset": 604
+          },
+          {
+            "questionId": "table-cooling-02-1",
+            "occurrences": 2,
+            "offsets": [
+              850,
+              1425
+            ],
+            "intendedOffset": 850
+          },
+          {
+            "questionId": "table-cooling-02-2",
+            "occurrences": 1,
+            "offsets": [
+              1097
+            ],
+            "intendedOffset": 1097
+          },
+          {
+            "questionId": "table-cooling-03-1",
+            "occurrences": 1,
+            "offsets": [
+              1328
+            ],
+            "intendedOffset": 1328
+          },
+          {
+            "questionId": "table-cooling-03-2",
+            "occurrences": 1,
+            "offsets": [
+              1380
+            ],
+            "intendedOffset": 1380
+          },
+          {
+            "questionId": "table-rain-gardens-01-1",
+            "occurrences": 1,
+            "offsets": [
+              161
+            ],
+            "intendedOffset": 161
+          },
+          {
+            "questionId": "table-rain-gardens-01-2",
+            "occurrences": 2,
+            "offsets": [
+              122,
+              425
+            ],
+            "intendedOffset": 122
+          },
+          {
+            "questionId": "table-rain-gardens-02-1",
+            "occurrences": 2,
+            "offsets": [
+              122,
+              425
+            ],
+            "intendedOffset": 425
+          },
+          {
+            "questionId": "table-rain-gardens-02-2",
+            "occurrences": 2,
+            "offsets": [
+              524,
+              829
+            ],
+            "intendedOffset": 524
+          },
+          {
+            "questionId": "table-rain-gardens-03-1",
+            "occurrences": 3,
+            "offsets": [
+              206,
+              504,
+              879
+            ],
+            "intendedOffset": 879
+          },
+          {
+            "questionId": "table-rain-gardens-03-2",
+            "occurrences": 1,
+            "offsets": [
+              1231
+            ],
+            "intendedOffset": 1231
+          },
+          {
+            "questionId": "table-museum-inventory-01-1",
+            "occurrences": 1,
+            "offsets": [
+              326
+            ],
+            "intendedOffset": 326
+          },
+          {
+            "questionId": "table-museum-inventory-01-2",
+            "occurrences": 1,
+            "offsets": [
+              247
+            ],
+            "intendedOffset": 247
+          },
+          {
+            "questionId": "table-museum-inventory-02-1",
+            "occurrences": 1,
+            "offsets": [
+              434
+            ],
+            "intendedOffset": 434
+          },
+          {
+            "questionId": "table-museum-inventory-02-2",
+            "occurrences": 1,
+            "offsets": [
+              601
+            ],
+            "intendedOffset": 601
+          },
+          {
+            "questionId": "table-museum-inventory-03-1",
+            "occurrences": 1,
+            "offsets": [
+              826
+            ],
+            "intendedOffset": 826
+          },
+          {
+            "questionId": "table-museum-inventory-03-2",
+            "occurrences": 1,
+            "offsets": [
+              1288
+            ],
+            "intendedOffset": 1288
+          }
+        ]
+      },
+      "setsWithStrictlyAscendingCanonicalEvidenceOrder": 1,
+      "passageOrderViolationQuestionIds": [
+        "table-rain-gardens-01-2",
+        "table-museum-inventory-01-2"
+      ],
+      "naiveFirstOccurrenceOrderViolationQuestionIds": [
+        "table-rain-gardens-01-2",
+        "table-rain-gardens-02-1",
+        "table-rain-gardens-03-1",
+        "table-museum-inventory-01-2"
+      ],
+      "intendedWholeTokenEvidence": {
+        "rows": [
+          {
+            "assetId": "formative:table-completion:table-cooling-buildings",
+            "questionId": "table-cooling-01-1",
+            "offset": 511,
+            "paragraph": 2
+          },
+          {
+            "assetId": "formative:table-completion:table-cooling-buildings",
+            "questionId": "table-cooling-01-2",
+            "offset": 604,
+            "paragraph": 2
+          },
+          {
+            "assetId": "formative:table-completion:table-cooling-buildings",
+            "questionId": "table-cooling-02-1",
+            "offset": 850,
+            "paragraph": 3
+          },
+          {
+            "assetId": "formative:table-completion:table-cooling-buildings",
+            "questionId": "table-cooling-02-2",
+            "offset": 1097,
+            "paragraph": 3
+          },
+          {
+            "assetId": "formative:table-completion:table-cooling-buildings",
+            "questionId": "table-cooling-03-1",
+            "offset": 1328,
+            "paragraph": 4
+          },
+          {
+            "assetId": "formative:table-completion:table-cooling-buildings",
+            "questionId": "table-cooling-03-2",
+            "offset": 1380,
+            "paragraph": 4
+          },
+          {
+            "assetId": "formative:table-completion:table-rain-gardens",
+            "questionId": "table-rain-gardens-01-1",
+            "offset": 161,
+            "paragraph": 1
+          },
+          {
+            "assetId": "formative:table-completion:table-rain-gardens",
+            "questionId": "table-rain-gardens-01-2",
+            "offset": 122,
+            "paragraph": 1
+          },
+          {
+            "assetId": "formative:table-completion:table-rain-gardens",
+            "questionId": "table-rain-gardens-02-1",
+            "offset": 425,
+            "paragraph": 2
+          },
+          {
+            "assetId": "formative:table-completion:table-rain-gardens",
+            "questionId": "table-rain-gardens-02-2",
+            "offset": 524,
+            "paragraph": 2
+          },
+          {
+            "assetId": "formative:table-completion:table-rain-gardens",
+            "questionId": "table-rain-gardens-03-1",
+            "offset": 879,
+            "paragraph": 3
+          },
+          {
+            "assetId": "formative:table-completion:table-rain-gardens",
+            "questionId": "table-rain-gardens-03-2",
+            "offset": 1231,
+            "paragraph": 4
+          },
+          {
+            "assetId": "formative:table-completion:table-museum-inventory",
+            "questionId": "table-museum-inventory-01-1",
+            "offset": 326,
+            "paragraph": 1
+          },
+          {
+            "assetId": "formative:table-completion:table-museum-inventory",
+            "questionId": "table-museum-inventory-01-2",
+            "offset": 247,
+            "paragraph": 1
+          },
+          {
+            "assetId": "formative:table-completion:table-museum-inventory",
+            "questionId": "table-museum-inventory-02-1",
+            "offset": 434,
+            "paragraph": 2
+          },
+          {
+            "assetId": "formative:table-completion:table-museum-inventory",
+            "questionId": "table-museum-inventory-02-2",
+            "offset": 601,
+            "paragraph": 2
+          },
+          {
+            "assetId": "formative:table-completion:table-museum-inventory",
+            "questionId": "table-museum-inventory-03-1",
+            "offset": 826,
+            "paragraph": 3
+          },
+          {
+            "assetId": "formative:table-completion:table-museum-inventory",
+            "questionId": "table-museum-inventory-03-2",
+            "offset": 1288,
+            "paragraph": 4
+          }
+        ],
+        "offsetsMatchPinnedBaseline": true
+      },
+      "sameQuestionPositionAcrossSetsModalEvidenceParagraph": {
+        "eligible": 18,
+        "positions": 6,
+        "tiesOrAbstentions": 0,
+        "hits": 13
+      },
+      "acceptedAnswerNormalization": {
+        "algorithm": "trim+lowercase+strip-trailing-[.,;:!?]+collapse-whitespace",
+        "canonicalEntries": 18,
+        "alternativeEntries": 0,
+        "rawAcceptedEntries": 18,
+        "normalizedAcceptedValues": 17
+      },
+      "normalizedDuplicateAlternativeQuestionIds": [],
+      "nonVerbatimAcceptedAlternativeQuestionIds": [],
+      "grammaticallyInvalidAcceptedAlternatives": [],
+      "crossQuestionNormalizedAnswerCollisions": [
+        {
+          "normalizedText": "drains",
+          "questionIds": [
+            "table-rain-gardens-01-2",
+            "table-rain-gardens-02-1"
+          ]
+        }
+      ],
+      "canonicalAnswerGrammarSurface": {
+        "manuallyClassifiedNominalOrNounPhrase": 14,
+        "manuallyClassifiedAdjective": 1,
+        "manuallyClassifiedVerb": 2,
+        "manuallyClassifiedAdverb": 1,
+        "total": 18,
+        "caveat": "Manual structural classification; it is not a statistical POS certification."
+      },
+      "frameGrammaticalFit": {
+        "canonicalAnswersNaturalInCell": 18,
+        "unresolvedExactOneBestAnswerQuestionIds": [
+          "table-cooling-01-2"
+        ],
+        "unresolvedCompetitorSpans": [
+          {
+            "questionId": "table-cooling-01-2",
+            "selectedText": "the direction",
+            "offset": 587
+          },
+          {
+            "questionId": "table-cooling-01-2",
+            "selectedText": "direction",
+            "offset": 591
+          }
+        ],
+        "exactOneBestAnswerEstablished": 17
+      },
+      "promptPassageLexicalAnchors": {
+        "questionsWithUniqueExactBigram": 14,
+        "longestExactNgramDistribution": {
+          "1": 3,
+          "2": 4,
+          "3": 2,
+          "4": 5,
+          "5": 0,
+          "6": 2
+        },
+        "rows": [
+          {
+            "questionId": "table-cooling-01-1",
+            "longest": 2,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "table-cooling-01-2",
+            "longest": 1,
+            "hasUniqueBigram": false
+          },
+          {
+            "questionId": "table-cooling-02-1",
+            "longest": 4,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "table-cooling-02-2",
+            "longest": 4,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "table-cooling-03-1",
+            "longest": 6,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "table-cooling-03-2",
+            "longest": 6,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "table-rain-gardens-01-1",
+            "longest": 4,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "table-rain-gardens-01-2",
+            "longest": 4,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "table-rain-gardens-02-1",
+            "longest": 7,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "table-rain-gardens-02-2",
+            "longest": 2,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "table-rain-gardens-03-1",
+            "longest": 4,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "table-rain-gardens-03-2",
+            "longest": 3,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "table-museum-inventory-01-1",
+            "longest": 2,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "table-museum-inventory-01-2",
+            "longest": 2,
+            "hasUniqueBigram": false
+          },
+          {
+            "questionId": "table-museum-inventory-02-1",
+            "longest": 1,
+            "hasUniqueBigram": false
+          },
+          {
+            "questionId": "table-museum-inventory-02-2",
+            "longest": 1,
+            "hasUniqueBigram": false
+          },
+          {
+            "questionId": "table-museum-inventory-03-1",
+            "longest": 3,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "table-museum-inventory-03-2",
+            "longest": 8,
+            "hasUniqueBigram": true
+          }
+        ]
+      },
+      "preResponseHintExposure": {
+        "questionsWithVisibleHintControl": 18,
+        "hintsContainingNormalizedAcceptedAnswer": 0,
+        "hintsNamingPassageLocationOrAnchor": 18,
+        "semanticParaphraseOnlyHintQuestionIds": []
+      },
+      "promptOnlyExactGuessReviewRequired": true,
+      "exactOneBestAnswerReviewRequired": true,
+      "statisticalCertification": {
+        "observedQuestions": 18,
+        "certificationThreshold": 100,
+        "eligible": false,
+        "contentCertificationBlocked": true,
+        "blockingReasons": [
+          "n-below-100",
+          "client-side-canonical-answers-and-hints",
+          "client-delivered-answer-keys",
+          "rights-and-human-review-pending",
+          "exact-one-best-answer-unresolved-table-cooling-01-2"
+        ]
+      }
+    },
+    "qualitativeCoverage": {
+      "grammarOnlyAndPromptOnlyExactGuess": true,
+      "lexicalOverlap": true,
+      "answerLength": true,
+      "positionAndTextOrder": true,
+      "wordLimit": true,
+      "acceptedAnswerNormalization": true,
+      "exactOneBestAnswer": true,
+      "representation": true,
+      "priorKnowledge": true,
+      "irrelevantLoad": true
+    },
+    "sampleAdequacy": {
+      "certificationThreshold": 100,
+      "observedQuestions": 18,
+      "eligibleForStatisticalCertification": false,
+      "conclusion": "n=18 is too small to certify statistically balanced content."
+    },
+    "statisticalCertification": "withheld-n-below-100",
+    "contentCertification": "blocked-runtime-rights-editorial-review-required"
+  },
+  "applicability": {
+    "rights": "applicable",
+    "fullStackData": "applicable",
+    "ieltsExpert": "applicable",
+    "cognitiveWalkthrough": "applicable-to-content-only",
+    "antiBiasAndLeakage": "applicable",
+    "uiUxAccessibility": "not-applicable-to-unchanged-runtime-delta-conformance",
+    "playwright": "not-applicable-scoped-learner-runtime-unchanged",
+    "evidence": "Seven Table learner-facing files and the final fifteen-file closure remain pinned. A concurrent root-layout drift outside F0.2b.11 was recorded before the revised baseline; Table content/engine/bank did not change. UI/Playwright ➖ is not conformity."
+  },
+  "negativeControl": {
+    "contentHashMismatch": {
+      "assetId": "formative:table-completion:table-cooling-buildings",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "rightsBasis": "unknown-quarantined",
+      "reasonCodes": [
+        "authorship-unresolved",
+        "content-hash-mismatch",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    "leakControls": {
+      "englishAnswer": [
+        "$.instruction"
+      ],
+      "englishCompletion": [
+        "$.instruction"
+      ],
+      "spanishCompletion": [
+        "$.nested.repair"
+      ],
+      "spanishAnswer": [
+        "$.repair"
+      ],
+      "nestedField": [
+        "$.review.selectedAnswer"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "path": "src/data/practica-exams/seo-catalog.ts",
+      "sha256": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de"
+    },
+    {
+      "path": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/table-completion/page.tsx",
+      "sha256": "0907ee7ba7db6b3bab0987ab25dcb12b1958a2f80e2a91e551058aa3d6835895"
+    },
+    {
+      "path": "src/components/exam-practice/TableCompletionEngine.tsx",
+      "sha256": "c49bd375fb061ff7ca35afb0219194393c5a65bd7e44e1f68cc6338bfe329a14"
+    },
+    {
+      "path": "src/components/exam-practice/TableCompletionPassageBank.tsx",
+      "sha256": "7cca09dc031a7377e92d0a6d481767558a87e4cd64b526f45254e448e71e929b"
+    },
+    {
+      "path": "src/lib/ielts/academic-reading-question-types.ts",
+      "sha256": "455924c25a1e33355265497a5c51d4cdb7d34864b34d539f1a7b91bedf3ce3ec"
+    },
+    {
+      "path": "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+      "sha256": "73d3b725c68c0ed193ceba23ebddca3fec7978f6e84712c99b3dddc190443711"
+    },
+    {
+      "path": "src/components/exam-practice/StructuredData.tsx",
+      "sha256": "3e59a611e4d2bac9ce5994bdbd4ba6303407a5ddf82b26a340efe1f3c2b788d8"
+    },
+    {
+      "path": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/flow-chart-completion/page.tsx",
+      "sha256": "f17fed2dfa5003bd1157d57f8adf7e38dab86d5e50c70328805a51dd92ea8c4c"
+    },
+    {
+      "path": "src/components/exam-practice/FlowChartCompletionEngine.tsx",
+      "sha256": "e2c692f7f2962b9b533dc9e245393920422ad3b1698fdd4a5fab34eeac954353"
+    },
+    {
+      "path": "src/components/exam-practice/FlowChartCompletionPassageBank.tsx",
+      "sha256": "06cb3db919ba3b8f3d68977c51f0a472382de77e9ca01b8c429c8cc9f198b213"
+    },
+    {
+      "path": "src/lib/ielts/academic-reading-question-types.ts",
+      "sha256": "455924c25a1e33355265497a5c51d4cdb7d34864b34d539f1a7b91bedf3ce3ec"
+    },
+    {
+      "path": "src/data/practica-exams/seo-catalog.ts",
+      "sha256": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de"
+    },
+    {
+      "path": "src/lib/ielts/academic-reading-rights.ts",
+      "sha256": "cabd4adf35c75a14a3537bb07e5db4ef9ce8bc0c1a6f4a276d25518732923643"
+    },
+    {
+      "path": "src/data/practica-exams/ielts-reading-rights-registry.ts",
+      "sha256": "42fd225aa20a905361901fbf301cfb332cd6db729f880eed91856d8a934c8531"
+    },
+    {
+      "path": "scripts/check-ielts-reading-table-completion-rights.mjs",
+      "sha256": "6036c0f7009f1b7fef9fa009809c2c4af2e64a52f6ed1f70f9ad347d14dadd7f"
+    },
+    {
+      "path": "tests/ielts-reading-table-completion-rights.test.mjs",
+      "sha256": "2c1e989f5270c644bd1dafa1067c0e67cf8aa8633169701973d7390cd54a8ac9"
+    },
+    {
+      "path": "docs/ielts-reading-loop.md",
+      "sha256": "4f2ebd187d982151b25b9c750e362dcfa1e47b5c1a04fddf367ede7d516f09a6"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-table-completion-2026-08-11/baseline.json",
+      "sha256": "32dadd4e8d4b21489ab2bae13d368a1f5b71bb53397f8eeb7ba269c9bcb16a18"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-table-completion-2026-08-11/source-availability.json",
+      "sha256": "43b1e4da5cf88529b3311dad5b91bda59121cf2ad0693982a4fc9952bf236c05"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-table-completion-2026-08-11/provenance-search.json",
+      "sha256": "c11b21d733b61fca3164f80ca173a6648d35bf115aeac5af1a32c6d99a5d3203"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-table-completion-2026-08-11/unit-change-manifest.json",
+      "sha256": "352343e4c2fc2d92d86dd3984594e2ea47276ac483ac31df46cc88bdf79cfc3c"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-table-completion-2026-08-11/prompt-only.json",
+      "sha256": "4f31cc6938b2683a7ccd56682eab7970d3bc276ecab0cb69c7fbc02a0583be71"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-table-completion-2026-08-11/prompt-only-verdict.json",
+      "sha256": "379fbc2dd8e2562caf793cec3fd9d998ccc1f18ab24094f5d16f3a452915efe8"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-table-completion-2026-08-11/blind-review.json",
+      "sha256": "241aa316ca3c6667eb62ff8f5ae72fe7f47cb396519d428589cd5aa5950fa361"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-table-completion-2026-08-11/factual-source-review.json",
+      "sha256": "727744facf6729bb3e742c1748ac846e76019b51bab74131c080810c3c1e34ae"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-table-completion-2026-08-11/expert-first-pass.json",
+      "sha256": "798fd061e9c03a73dddf1cc34f8b706faa6e1df366348544036c164450293add"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-table-completion-2026-08-11/expert-verdict.json",
+      "sha256": "45208cc4e5e2985f87997ed17bb1c59bde2914bd3d67d8080649780b8cab355c"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-table-completion-2026-08-11/student-walkthrough.json",
+      "sha256": "0bb207928c08805bf7cc237557fe5c4c27b522297ba14bb64d63fe8bb80cd202"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-table-completion-2026-08-11/audit-verdicts.json",
+      "sha256": "ec0de168be4e1abd40d8c29df3a7205031d2d081225fcf27de9d21a44cd20056"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-table-completion-2026-08-11/build-report.mjs",
+      "sha256": "f7a269952f74489af9672c24408916d1e246ea54ac7c994c25c14ecb6af1cbc3"
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "schemaVersion": "ielts-reading-matching-headings-student-walkthrough.v1",
+  "reviewer": {
+    "humanSignature": false,
+    "sourceContext": "blind-review-packet-only",
+    "reviewedAt": "2026-08-09T07:12:13-05:00",
+    "notes": [
+      "Walkthrough cognitivo ciego desde la perspectiva de un estudiante promedio que reconoce sus falencias.",
+      "Se registran fricciones, reglas de decisión y acciones de reparación, pero no se selecciona, revela ni sugiere ningún heading o numeral por pregunta."
+    ]
+  },
+  "records": [
+    {
+      "assetId": "formative:matching-headings:mh-public-libraries",
+      "passageBarrier": "El pasaje reutiliza ideas cercanas —acceso, apoyo, tecnología y cambios laborales—, así que puedo confundir un ejemplo visible con la función completa del párrafo.",
+      "titleInfluenceRisk": "medium",
+      "shortcutRisks": [
+        "Emparejar por palabras repetidas como digital, servicios o acceso sin comprobar la idea dominante.",
+        "Elegir por la primera oración y dejar sin explicar la segunda mitad del párrafo.",
+        "Descartar demasiado pronto opciones que expresan la misma idea con una paráfrasis menos obvia."
+      ],
+      "transferValue": "Me entrena a distinguir función general, ejemplos de apoyo y contraste, una habilidad transferible a pasajes donde varias opciones comparten vocabulario.",
+      "nextAction": "Antes de mirar opciones, resumir cada párrafo en ocho o diez palabras; después exigir que una opción cubra todas las oraciones y no solo un ejemplo.",
+      "questionWalkthrough": [
+        {
+          "questionId": "mh-public-libraries-a",
+          "likelyMisread": "Podría quedarme con la mención inicial de libros o con uno de los usos concretos y tratarlo como tema principal.",
+          "globalRead": "Lo leería como la apertura del cambio de criterio con el que se entiende y evalúa la biblioteca.",
+          "mainIdeaCheck": "Comprobaría si mi resumen explica tanto el modelo anterior como los distintos usos actuales y la conclusión final.",
+          "headingComparison": "Compararía opciones por su alcance: una debe abarcar la transformación conceptual, no únicamente talleres, bases de datos o préstamo.",
+          "competitorCheck": "La rival más peligrosa sería una opción basada en un servicio moderno mencionado; fallaría si no incorpora el contraste con la definición antigua.",
+          "decisionRule": "No decidir por el sustantivo más repetido; elegir solo una formulación capaz de parafrasear el giro completo del párrafo.",
+          "repairAction": "Subrayar marcadores temporales y reescribir la relación como antes versus ahora, sin mirar todavía los numerales."
+        },
+        {
+          "questionId": "mh-public-libraries-b",
+          "likelyMisread": "Podría pensar que el párrafo trata principalmente de niños, formación digital o refugio climático porque son ejemplos fáciles de visualizar.",
+          "globalRead": "Lo situaría como una ampliación desde el servicio bibliotecario hacia una función social dentro del vecindario.",
+          "mainIdeaCheck": "Mi resumen tendría que contener el rasgo común de padres, adultos mayores, personas buscando empleo y usuarios que necesitan un lugar seguro.",
+          "headingComparison": "Agruparía primero los ejemplos bajo una categoría común y solo después compararía esa categoría con las opciones.",
+          "competitorCheck": "Una opción centrada en formación o tecnología podría parecer cercana, pero dejaría fuera los demás grupos y la oración final.",
+          "decisionRule": "Dar más peso a la generalización de cierre que al ejemplo que más recuerdo.",
+          "repairAction": "Preguntarme qué servicio único podría incluir los cuatro ejemplos sin borrar la escala de barrio."
+        },
+        {
+          "questionId": "mh-public-libraries-c",
+          "likelyMisread": "Podría reducir todo a internet porque aparecen dispositivos y actividades digitales, aunque la lista va bastante más allá.",
+          "globalRead": "Lo leería como una descripción del acceso a herramientas y capacidades que muchas personas no tienen en casa.",
+          "mainIdeaCheck": "Verificaría que mi frase abarque ayuda, préstamo de equipos y espacios de creación, además de la función de puente expresada al final.",
+          "headingComparison": "Buscaría una opción con amplitud suficiente para cubrir servicios tecnológicos variados y no solo conectividad básica.",
+          "competitorCheck": "La competencia podría venir de una opción sobre apoyo general; la sometería a la lista específica de herramientas para comprobar si es demasiado amplia.",
+          "decisionRule": "Usar la última oración como síntesis, pero validarla contra todos los ejemplos anteriores.",
+          "repairAction": "Clasificar cada ejemplo como herramienta, asistencia o acceso y observar qué denominador común permanece."
+        },
+        {
+          "questionId": "mh-public-libraries-d",
+          "likelyMisread": "Podría confundir lo que hacen los usuarios con lo que cambió para el personal, debido a la continuidad temática con el párrafo anterior.",
+          "globalRead": "Lo ubicaría como consecuencia laboral de los cambios descritos antes.",
+          "mainIdeaCheck": "Mi resumen debe tener como sujeto al personal y cubrir tanto la ampliación de tareas como las nuevas capacidades requeridas.",
+          "headingComparison": "Eliminaría opciones cuyo sujeto real sea el visitante, la comunidad o los equipos, aunque compartan ejemplos del párrafo.",
+          "competitorCheck": "Una opción tecnológica puede atraer por troubleshoot y sitios web; fallaría si no explica clases, alianzas y comunicación.",
+          "decisionRule": "Identificar primero quién cambia y luego qué dimensión de ese sujeto ocupa el párrafo entero.",
+          "repairAction": "Encerrar los verbos cuyo sujeto es staff members y formular una categoría que los reúna."
+        },
+        {
+          "questionId": "mh-public-libraries-e",
+          "likelyMisread": "Podría fijarme solo en que bajó el préstamo y concluir una caída uniforme, ignorando los indicadores que aumentaron.",
+          "globalRead": "Lo leería como un cierre que cuestiona una medición simple del uso bibliotecario.",
+          "mainIdeaCheck": "Comprobaría que mi resumen conserva el contraste entre descenso y crecimiento, además del problema de las métricas antiguas.",
+          "headingComparison": "Preferiría una formulación que admita resultados en direcciones distintas frente a otra que use una afirmación absoluta.",
+          "competitorCheck": "La rival más tentadora sería la opción que toma únicamente el dato negativo; la rechazaría al volver a yet y a la lista de aumentos.",
+          "decisionRule": "Cuando aparezcan predicción, contraste y varias métricas, no convertir una parte en tendencia total.",
+          "repairAction": "Hacer dos columnas, disminuye y aumenta, y probar si mi paráfrasis puede explicar ambas."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-headings:mh-urban-farming",
+      "passageBarrier": "Casi todos los párrafos describen un beneficio o una condición de la agricultura urbana; mi riesgo es tratar fresh food como tema automático y perder el propósito específico de cada sección.",
+      "titleInfluenceRisk": "high",
+      "shortcutRisks": [
+        "Elegir por una palabra gemela entre párrafo y opción, como rooftops, education o residents.",
+        "Suponer que toda afirmación positiva es la idea central, aunque el párrafo esté corrigiendo una forma de medir.",
+        "Ignorar cuantificadores extremos y aceptar opciones que exageran reemplazo, final o universalidad."
+      ],
+      "transferValue": "Ayuda a separar beneficios, mecanismos, condiciones de éxito y límites, categorías frecuentes en Matching Headings.",
+      "nextAction": "Etiquetar la función retórica de cada párrafo —problema-respuesta, beneficio, condición, debate o límite— antes de contrastar opciones.",
+      "questionWalkthrough": [
+        {
+          "questionId": "mh-urban-farming-a",
+          "likelyMisread": "Podría tomar la baja producción como crítica principal, aunque el párrafo comienza con un problema espacial y enumera respuestas.",
+          "globalRead": "Lo vería como la introducción práctica a cómo estos proyectos trabajan con la geografía de la ciudad.",
+          "mainIdeaCheck": "Mi resumen debe unir escasez de terreno, uso creativo de lugares pequeños y resultado productivo modesto.",
+          "headingComparison": "Compararía si una opción describe el problema-respuesta completo o si exagera el alcance de los proyectos.",
+          "competitorCheck": "Una opción sobre sustitución de agricultura a gran escala podría sonar relacionada por rooftops, pero chocaría con rarely y huge harvests.",
+          "decisionRule": "Tratar las expresiones de límite como evidencia contra opciones absolutas.",
+          "repairAction": "Marcar problema, solución y concesión en tres colores mentales y exigir que el resumen respete los tres."
+        },
+        {
+          "questionId": "mh-urban-farming-b",
+          "likelyMisread": "Podría enfocarme en el tomate, el embalaje o el compostaje como temas separados.",
+          "globalRead": "Lo leería como una explicación ambiental apoyada por dos mecanismos distintos.",
+          "mainIdeaCheck": "Mi síntesis debe cubrir tanto transporte y empaque como reducción de residuos, sin limitarse a un producto.",
+          "headingComparison": "Buscaría el vínculo causal común entre cercanía, menor logística y aprovechamiento de residuos.",
+          "competitorCheck": "Una opción centrada solo en mercados o disponibilidad de alimentos sería insuficiente porque el párrafo evalúa efectos ambientales.",
+          "decisionRule": "Cuando haya varios ejemplos, nombrar el tipo de beneficio compartido en lugar de copiar uno.",
+          "repairAction": "Convertir cada oración en causa y efecto, y comparar los efectos antes de revisar opciones."
+        },
+        {
+          "questionId": "mh-urban-farming-c",
+          "likelyMisread": "Podría pensar que la jardinería es el fin de la actividad y omitir que se integra con varias materias.",
+          "globalRead": "Lo situaría como una aplicación educativa cuyo valor se extiende a habilidades y asignaturas diversas.",
+          "mainIdeaCheck": "Comprobaría si mi resumen incluye las tareas de aprendizaje y la condición de conexión con el currículo.",
+          "headingComparison": "Distinguiría una opción sobre aprender jardinería de otra cuyo alcance contemple aprendizaje interdisciplinario.",
+          "competitorCheck": "La opción rival puede apoyarse en una palabra concreta como soil o food; fallaría si no cubre escritura, ciencia y ciudadanía.",
+          "decisionRule": "Priorizar la finalidad pedagógica expresada por el conjunto sobre el escenario físico donde ocurre.",
+          "repairAction": "Completar la frase el jardín sirve para aprender... con todos los elementos, no con el primero."
+        },
+        {
+          "questionId": "mh-urban-farming-d",
+          "likelyMisread": "Podría resumirlo como mantenimiento u horarios porque aparecen decisiones operativas concretas.",
+          "globalRead": "Lo leería como una condición social para la continuidad del proyecto.",
+          "mainIdeaCheck": "Mi resumen tiene que explicar por qué participar en las reglas cambia la percepción y la responsabilidad de residentes.",
+          "headingComparison": "Compararía opciones según si capturan el mecanismo de participación y pertenencia o solo una tarea administrativa.",
+          "competitorCheck": "Una opción sobre voluntariado podría parecer próxima por mantenimiento, pero el párrafo no se centra en disponibilidad de mano de obra.",
+          "decisionRule": "Seguir la cadena escuchar, decidir juntos y asumir responsabilidad, sin aislar el último ejemplo.",
+          "repairAction": "Identificar el contraste entre diseño externo y decisiones compartidas antes de formular la idea central."
+        },
+        {
+          "questionId": "mh-urban-farming-e",
+          "likelyMisread": "Podría asumir que el párrafo solo informa una producción baja o que critica por completo los huertos pequeños.",
+          "globalRead": "Lo vería como una discusión sobre qué cuenta como éxito en estos proyectos.",
+          "mainIdeaCheck": "Mi frase debe mantener la tensión entre una medida cuantitativa y varios resultados no productivos.",
+          "headingComparison": "Contrapondría una opción sobre cantidad de cosecha con otra que represente el debate acerca del criterio de evaluación.",
+          "competitorCheck": "Una opción educativa podría cubrir uno de los beneficios finales, pero no la estructura supporters versus critics ni los otros beneficios.",
+          "decisionRule": "Si el párrafo cuestiona una métrica, resumir la evaluación completa y no el ejemplo usado para cuestionarla.",
+          "repairAction": "Anotar métrica estrecha y valor omitido, luego revisar cuál relación organiza todo el párrafo."
+        },
+        {
+          "questionId": "mh-urban-farming-f",
+          "likelyMisread": "Podría convertir la lista de obstáculos en una afirmación de fracaso inevitable.",
+          "globalRead": "Lo leería como un cierre realista sobre condiciones técnicas y planificación previa.",
+          "mainIdeaCheck": "Mi resumen debe incluir los distintos límites y la respuesta recomendada, no solo el tono problemático.",
+          "headingComparison": "Evaluaría si una opción combina restricciones con planificación o si generaliza el riesgo a todos los proyectos.",
+          "competitorCheck": "Una opción sobre entusiasmo o voluntarios podría atraer por la última frase, pero no explicaría suelo, peso, agua y permisos.",
+          "decisionRule": "Una lista de problemas seguida de therefore indica que la respuesta práctica forma parte de la idea central.",
+          "repairAction": "Reformular como límites que exigen... y comprobar que el complemento cubra las medidas mencionadas."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-headings:mh-night-trains",
+      "passageBarrier": "Hay solapamiento entre el resurgimiento general y una de sus razones ambientales, mientras otros párrafos separan operación, confort, precio y marketing; puedo reutilizar mentalmente la misma opción en dos lugares.",
+      "titleInfluenceRisk": "high",
+      "shortcutRisks": [
+        "Usar la palabra flights como ancla y no distinguir emisiones, velocidad, precio o historia del servicio.",
+        "Aceptar opciones con absolutos como always o complete sin contrastarlas con los matices del texto.",
+        "Asignar una opción plausible dos veces y arreglar el conflicto por descarte, no por evidencia del párrafo."
+      ],
+      "transferValue": "Practica la separación entre causa general, argumento específico, obstáculo operativo, expectativa del usuario y estrategia comercial.",
+      "nextAction": "Crear un mapa de funciones de los seis párrafos y conservar una lista de opciones usadas solo después de justificar cada elección con alcance y tono.",
+      "questionWalkthrough": [
+        {
+          "questionId": "mh-night-trains-a",
+          "likelyMisread": "Podría seleccionar mentalmente solo la reducción de emisiones y olvidar la historia de cancelación, reaparición y cambio de prioridades.",
+          "globalRead": "Lo leería como marco temporal y explicación amplia del resurgimiento del servicio.",
+          "mainIdeaCheck": "Mi resumen debe cubrir caída pasada, anuncios recientes y más de una prioridad del viajero.",
+          "headingComparison": "Distinguiría entre una opción de retorno general y otra dedicada a una razón específica desarrollada con detalle en otra parte.",
+          "competitorCheck": "La rival ambiental es fuerte por lower-emission, pero sería demasiado estrecha si deja fuera traslados al aeropuerto y la secuencia histórica.",
+          "decisionRule": "En una introducción, preferir la formulación que explica el marco completo, no el motivo secundario más llamativo.",
+          "repairAction": "Resumir en una línea cronológica y rodear las dos prioridades mencionadas para evitar reducirlas a una sola."
+        },
+        {
+          "questionId": "mh-night-trains-b",
+          "likelyMisread": "Podría confundir menor contaminación con mayor rapidez porque la comparación explícita es con vuelos.",
+          "globalRead": "Lo ubicaría como desarrollo detallado de un argumento ambiental concreto.",
+          "mainIdeaCheck": "Comprobaría que mi síntesis nombra la comparación de emisiones, la condición de electricidad limpia y la motivación del pasajero.",
+          "headingComparison": "Separaría dimensiones de comparación: el texto aporta evidencia sobre huella ambiental, no sobre tiempo universal de viaje.",
+          "competitorCheck": "Una opción general sobre el regreso del servicio sería posible en el tema, pero no tendría la precisión causal de este párrafo.",
+          "decisionRule": "No trasladar atributos no mencionados desde mi conocimiento del mundo; decidir solo por la dimensión desarrollada.",
+          "repairAction": "Preguntar exactamente qué variable se compara y tachar mentalmente interpretaciones sobre velocidad o conveniencia no demostradas."
+        },
+        {
+          "questionId": "mh-night-trains-c",
+          "likelyMisread": "Podría resumir el párrafo como retrasos en general y perder que la dificultad surge de coordinar varias redes nacionales.",
+          "globalRead": "Lo leería como el principal bloque de complejidad operativa transfronteriza.",
+          "mainIdeaCheck": "Mi resumen debe relacionar reglas, mantenimiento, señalización y efectos de retrasos entre países.",
+          "headingComparison": "Buscaría una opción sobre coordinación horaria y de redes, no una sobre demanda o experiencia turística.",
+          "competitorCheck": "Una opción de confort o velocidad podría aprovechar delay o morning, pero no explica los sistemas nacionales ni la coordinación final.",
+          "decisionRule": "Cuando varios detalles técnicos comparten una escala geográfica, esa escala y su coordinación orientan la idea global.",
+          "repairAction": "Dibujar mentalmente país uno, frontera, país dos y marcar dónde cada restricción afecta al horario."
+        },
+        {
+          "questionId": "mh-night-trains-d",
+          "likelyMisread": "Podría fijarme en compartimentos privados y tratar el párrafo como una descripción de tipos de billete.",
+          "globalRead": "Lo situaría como un equilibrio entre distintas expectativas del pasajero y capacidad del operador.",
+          "mainIdeaCheck": "La síntesis debe incluir la diferencia entre aspiraciones, la decisión de configuración y su efecto en confort y plazas.",
+          "headingComparison": "Compararía opciones por si capturan la gestión de expectativas o solo nombran una modalidad de alojamiento.",
+          "competitorCheck": "Una opción de precio podría parecer conectada porque la configuración afecta el producto, pero aquí no se desarrollan tarifas ni asequibilidad.",
+          "decisionRule": "No inferir precio cuando el texto plantea explícitamente una tensión distinta.",
+          "repairAction": "Completar la estructura unos esperan..., otros quieren..., el operador debe... antes de mirar las opciones."
+        },
+        {
+          "questionId": "mh-night-trains-e",
+          "likelyMisread": "Podría leer subsidios y reservas tempranas como solución total e ignorar el conflicto entre acceso y sostenibilidad financiera.",
+          "globalRead": "Lo vería como el bloque económico que determina quién considera viable el servicio.",
+          "mainIdeaCheck": "Mi resumen debe cubrir comparación de precio, grupos afectados, medidas de alivio y necesidad de ingresos.",
+          "headingComparison": "Distinguiría una opción sobre accesibilidad económica de otra sobre popularidad o comodidad general.",
+          "competitorCheck": "Una opción sobre vuelos puede atraer por la comparación inicial, pero el resto del párrafo desarrolla tarifas, costos y usuarios.",
+          "decisionRule": "Seguir la cadena precio, exclusión potencial, mitigación y costos operativos.",
+          "repairAction": "Separar en quién paga, qué ayuda y qué debe financiarse; luego formular el dilema sin resolverlo de más."
+        },
+        {
+          "questionId": "mh-night-trains-f",
+          "likelyMisread": "Podría interpretar las ciudades y el destino como información turística, en vez de observar cómo se presenta la experiencia.",
+          "globalRead": "Lo leería como una estrategia de comunicación que convierte el trayecto en parte valiosa del viaje.",
+          "mainIdeaCheck": "Mi frase debe abarcar anuncios, secuencia de dormir y despertar, y la redefinición del tiempo de transporte.",
+          "headingComparison": "Buscaría una opción sobre el encuadre comercial de la experiencia, no sobre las estaciones o la operación real del tren.",
+          "competitorCheck": "Una opción turística puede compartir destino y holiday, pero falla si atribuye el atractivo a lugares que el párrafo no describe.",
+          "decisionRule": "Diferenciar el contenido del anuncio de la técnica persuasiva que organiza el párrafo.",
+          "repairAction": "Preguntar quién produce el mensaje, qué imagen vende y qué percepción pretende cambiar."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "ielts-reading-sentence-completion-factual-source-review.v1",
+  "generatedAt": "2026-08-09T16:53:00Z",
+  "reviewScope": "F0.2b.8 — second-pass factual and accepted-spelling-policy review only",
+  "reviewerIsolation": "Open only after expert-first-pass.json is persisted and hashed. Do not change any completion decision after opening these sources.",
+  "prerequisiteHashes": {
+    "promptOnlyVerdict": "dfd5b2054f8710e8b3bd23c2f203cf14be682229039617cb3ff4c75153d43bba",
+    "expertFirstPass": "becd3ae9c2ff3783a370882ed9716616bd6526a26348d46598a54157e88a2bf5"
+  },
+  "instruction": "Open every source directly. Assess each exact claim as supported, oversimplified, unsupported or untraceable. Availability and candidacy do not prove facts, authorship, license, authorization or review.",
+  "excludes": [
+    "answer keys",
+    "accepted alternatives",
+    "explanations",
+    "hints",
+    "prior answer verdicts",
+    "student data"
+  ],
+  "records": [
+    {
+      "assetId": "formative:sentence-completion:sentence-wetland-parks",
+      "claimSpansToReview": [
+        "Instead of moving rainwater away as quickly as possible through concrete channels, these parks hold water temporarily and allow it to filter through plants and soil.",
+        "During heavy storms, this storage capacity can reduce pressure on underground pipes and lower the risk of street flooding.",
+        "Wetland parks also create habitats for insects, birds and amphibians.",
+        "Plants must be monitored, litter needs to be removed and water levels should be checked after extreme weather.",
+        "If a park is neglected, blocked channels can reduce water flow and the area may become less effective during storms."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "wetland-epa-about-green-infrastructure",
+          "label": "US EPA — about green infrastructure",
+          "url": "https://www.epa.gov/green-infrastructure/about-green-infrastructure",
+          "note": "Fuente oficial candidata sobre sistemas de plantas y suelo que almacenan, infiltran y filtran lluvia frente al drenaje gris. Sustenta el mecanismo general, no prueba que todo wetland park tenga el diseño descrito; disponibilidad no verifica el claim ni concede licencia sobre el pasaje."
+        },
+        {
+          "evidenceId": "wetland-epa-mitigate-flooding",
+          "label": "US EPA — green infrastructure to mitigate flooding",
+          "url": "https://www.epa.gov/green-infrastructure/mitigate-flooding",
+          "note": "Fuente oficial candidata sobre absorción y almacenamiento temporal de lluvia, menor acumulación en calles y alivio de redes de tuberías. No demuestra un efecto universal o cuantificado para cada tormenta; disponibilidad no verifica el claim ni concede licencia."
+        },
+        {
+          "evidenceId": "wetland-epa-wetland-functions",
+          "label": "US EPA — wetland functions and value",
+          "url": "https://www.epa.gov/wetlands/how-do-wetlands-function-and-why-are-they-valuable",
+          "note": "Fuente oficial candidata que identifica insectos, anfibios y aves entre los organismos de humedales. No prueba que cada humedal urbano construido sostenga todos esos grupos; disponibilidad no verifica el claim ni concede licencia."
+        },
+        {
+          "evidenceId": "wetland-epa-pond-wetland-maintenance",
+          "label": "US EPA — stormwater pond and wetland maintenance guide",
+          "url": "https://www.epa.gov/sites/default/files/2015-11/documents/pondmgmtguide.pdf",
+          "note": "Guía técnica candidata sobre inspección tras tormentas, salud vegetal, residuos, obstrucciones y mantenimiento. No sustenta de forma exacta cada frecuencia o la frase sobre revisar niveles de agua; disponibilidad no verifica el claim ni concede licencia."
+        },
+        {
+          "evidenceId": "wetland-uk-blockage-management",
+          "label": "GOV.UK — blockage management guide",
+          "url": "https://www.gov.uk/government/publications/blockage-management-guide",
+          "note": "Investigación oficial candidata sobre residuos, vegetación y sedimento que reducen capacidad de flujo y pueden elevar el riesgo de inundación. La aplicación a un parque descuidado es inferencial; disponibilidad no verifica el claim ni concede licencia."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan almacenamiento e infiltración de lluvia, alivio de redes, hábitat y mantenimiento, pero varios apoyos corresponden a infraestructura verde o humedales en general. No verifican que todo parque produzca cada efecto ni la formulación exacta sobre niveles de agua. Disponibilidad o respuesta HTTP no verifica hechos, autoría, derechos ni licencia; falta revisión humana claim-by-claim."
+    },
+    {
+      "assetId": "formative:sentence-completion:sentence-library-makerspaces",
+      "claimSpansToReview": [
+        "In many towns, they now also provide makerspaces: small areas where visitors can use tools such as sewing machines, audio recorders, 3D printers and basic electronics kits.",
+        "Supporters argue that these spaces help libraries move from storing information to helping people create things with it.",
+        "A library makerspace works best when staff can introduce tools safely and connect visitors with realistic first projects.",
+        "Expensive equipment can sit unused if the library buys it without understanding local interests.",
+        "Successful libraries therefore separate noisy activities from study zones and choose tools that match community demand."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "makers-ala-libraries-build-business",
+          "label": "American Library Association — Libraries Build Business playbook",
+          "url": "https://www.ala.org/advocacy/sites/ala.org.advocacy/files/content/Workforce/LBB_Playbook_web_013122.pdf",
+          "note": "Fuente sectorial candidata con casos de makerspaces bibliotecarios que ofrecen impresoras 3D, equipos audiovisuales y máquinas de coser. No demuestra prevalencia en many towns ni el inventario completo; disponibilidad no verifica el claim ni concede licencia."
+        },
+        {
+          "evidenceId": "makers-australian-public-libraries-study",
+          "label": "Slatter and Howard — makerspaces in Australian public libraries",
+          "url": "https://www.tandfonline.com/doi/abs/10.1080/00049670.2013.853335",
+          "note": "Estudio cualitativo candidato sobre el cambio de una imagen de consumo de información hacia creación y participación comunitaria. El acceso directo fue limitado y la muestra es pequeña; disponibilidad o indexación no verifica el claim ni concede licencia."
+        },
+        {
+          "evidenceId": "makers-public-library-coach-study",
+          "label": "Pijls et al. — children and coaches in a public-library makerspace",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9040691/",
+          "note": "Estudio primario candidato sobre experiencias de 307 niños y formación de coaches en makerspaces de la biblioteca pública de Ámsterdam. Apoya la importancia de guía y capacitación, no prueba el superlativo works best ni realistic first projects; disponibilidad no licencia el pasaje."
+        },
+        {
+          "evidenceId": "makers-imls-community-needs",
+          "label": "IMLS and Maker Ed — Library as Incubator Project white paper",
+          "url": "https://makered.org/wp-content/uploads/2019/12/IMLS-LibraryMakerspaces2019_WPweb_final.pdf",
+          "note": "Guía institucional candidata sobre diseñar making como respuesta a necesidades comunitarias y considerar costes. No prueba que equipo costoso quede sin uso ni una consecuencia universal; disponibilidad no verifica el claim ni concede licencia."
+        },
+        {
+          "evidenceId": "makers-wheaton-noise-zones",
+          "label": "Wheaton Public Library — Noise Level Zones Policy",
+          "url": "https://www.wheatonlibrary.org/policies/noise-level-zones-policy",
+          "note": "Política institucional candidata que separa zonas silenciosas, tranquilas y de conversación para proteger lectura y estudio. No es específica de makerspaces ni demuestra que esa separación defina a toda biblioteca exitosa; disponibilidad no verifica el claim ni concede licencia."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan ejemplos de equipos, el giro de consumo a creación, la importancia de coaches, necesidades comunitarias y zonas de ruido, pero no verifican prevalencia, works best, realistic first projects, equipo costoso sin uso ni el superlativo successful. Algunos accesos fueron limitados. Disponibilidad o indexación no verifica hechos, autoría, derechos ni licencia; falta revisión humana claim-by-claim."
+    },
+    {
+      "assetId": "formative:sentence-completion:sentence-night-markets",
+      "claimSpansToReview": [
+        "A closed street, a group of food vendors and a simple lighting plan can create an evening economy without requiring a permanent shopping centre.",
+        "For small businesses, the short trading window lowers some costs and allows them to test new products.",
+        "A night market beside a transit stop is easier to reach than one placed in an isolated car park.",
+        "Organizers may need to limit amplified music, provide waste bins and keep pedestrian routes clear so that the market feels lively without becoming disruptive.",
+        "The strongest markets collect feedback after each event. Vendor sales, crowd movement, noise complaints and cleaning costs reveal whether the market is growing in a healthy way."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "night-naga-ordinance",
+          "label": "City Government of Naga — night-market ordinance",
+          "url": "https://www2.naga.gov.ph/prev-ordinance/ordinance-no-2014-004/",
+          "note": "Ordenanza primaria candidata que permite cerrar temporalmente calles y regular venta de bienes y comida en night markets. No sustenta el lighting plan, la economía causal ni la comparación con un shopping centre; disponibilidad no licencia el pasaje."
+        },
+        {
+          "evidenceId": "night-bromley-test-trading",
+          "label": "London Borough of Bromley — test-trading market stall",
+          "url": "https://www.bromley.gov.uk/TestTradingMarketStall",
+          "note": "Programa municipal candidato de prueba comercial de bajo coste y riesgo para refinar productos, precios y marca. No es un night market y el acceso directo fue limitado; disponibilidad o indexación no verifica el claim ni concede licencia."
+        },
+        {
+          "evidenceId": "night-primary-built-environment-accessibility",
+          "label": "Buildings — built-environment accessibility of night markets",
+          "url": "https://www.mdpi.com/2075-5309/16/14/2728",
+          "note": "Estudio primario candidato que usa paradas de transporte, rail y accesos como indicadores de accesibilidad de mercados nocturnos. No compara exactamente una parada con un aparcamiento aislado y el acceso directo fue limitado; disponibilidad no verifica ni licencia."
+        },
+        {
+          "evidenceId": "night-maidstone-street-trading-policy",
+          "label": "Maidstone Borough Council — street trading policy",
+          "url": "https://maidstone.gov.uk/home/primary-services/council-and-democracy/information-and-data/council-performance-reports/policies/street-trading-policy",
+          "note": "Política municipal candidata sobre obstrucción peatonal, residuos, ruido nocturno y audio amplificado. Regula street trading en general y no prueba el efecto de sentirse lively; disponibilidad no verifica el claim ni concede licencia."
+        },
+        {
+          "evidenceId": "night-hackney-market-metrics-costs",
+          "label": "Hackney Council — markets fees, footfall, waste and feedback",
+          "url": "https://consultation.hackney.gov.uk/parking-markets/fees-and-charges-2026/",
+          "note": "Consulta municipal candidata que documenta footfall, limpieza, residuos, costes y feedback. No sustenta ventas de vendors, crowd movement, frecuencia after each event ni el superlativo strongest; disponibilidad no verifica el claim ni concede licencia."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan cierre temporal de calles, prueba comercial, accesibilidad, controles de nuisance y algunas métricas/costes, pero no verifican el lighting plan, las comparaciones exactas, la cadena causal, la frecuencia after each event ni los superlativos del pasaje. Algunos accesos fueron limitados. Disponibilidad o indexación no verifica hechos, autoría, derechos ni licencia; falta revisión humana claim-by-claim."
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "schemaVersion": "ielts-reading-summary-completion-factual-source-review.v1",
+  "generatedAt": "2026-08-11T15:27:20Z",
+  "reviewScope": "F0.2b.9 — second-pass factual and accepted-spelling-policy review only",
+  "reviewerIsolation": "Open only after expert-first-pass.json is persisted and hashed. Do not change any completion decision after opening these sources.",
+  "prerequisiteHashes": {
+    "promptOnlyVerdict": "8407a8550090fce0c1d95974462bd20c953f2b129324b741dd69e3cf8d9504f0",
+    "expertFirstPass": "715f5ac28f6e51d33cba57d785821ff4eae70a64fe90f395b0dc0c571c77d439"
+  },
+  "instruction": "Open every source directly. Assess each exact claim as supported, oversimplified, unsupported or untraceable. Availability and candidacy do not prove facts, authorship, license, authorization or review.",
+  "excludes": [
+    "answer keys",
+    "accepted alternatives",
+    "explanations",
+    "hints",
+    "prior answer verdicts",
+    "student data"
+  ],
+  "records": [
+    {
+      "assetId": "formative:summary-completion:summary-urban-farms",
+      "claimSpansToReview": [
+        "these projects can shorten food supply chains",
+        "A small farm on top of a supermarket or apartment building cannot feed an entire city, but it can supply herbs, salad leaves and some vegetables to nearby customers.",
+        "Lightweight soil systems and careful irrigation can reduce the strain on older buildings",
+        "rainwater collection may lower the demand for treated water",
+        "Schools use them for science lessons"
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "urban-fao-upa-short-supply-chains",
+          "label": "FAO — Urban and peri-urban agriculture",
+          "url": "https://www.fao.org/urban-peri-urban-agriculture/about/en",
+          "note": "Fuente institucional candidata sobre cadenas cortas de suministro en agricultura urbana y periurbana. No demuestra que toda granja de azotea acorte cadenas ni la escala, cultivos o clientes descritos."
+        },
+        {
+          "evidenceId": "urban-nps-green-roof-structural-load",
+          "label": "US National Park Service — physical impact of green roofs",
+          "url": "https://www.nps.gov/articles/000/green-roofs-on-historic-buildings-physical-impact.htm",
+          "note": "Fuente oficial candidata sobre carga adicional, peso saturado y necesidad de evaluación estructural en edificios históricos. No respalda que una irrigación cuidadosa reduzca la carga."
+        },
+        {
+          "evidenceId": "urban-nyc-green-roof-requirements",
+          "label": "NYC Department of Buildings — green roof requirements",
+          "url": "https://www.nyc.gov/site/buildings/codes/green-roofs.page",
+          "note": "Fuente municipal candidata sobre análisis estructural profesional, carga saturada y aislamiento. Está marcada All Rights Reserved y solo se usa como referencia factual, no para reproducir contenido."
+        },
+        {
+          "evidenceId": "urban-epa-rainwater-potable-demand",
+          "label": "US EPA — green infrastructure and drought preparation",
+          "url": "https://www.epa.gov/green-infrastructure/prepare-drought",
+          "note": "Fuente oficial candidata que indica que barriles y cisternas pueden reducir demanda de agua potable. No valida cualquier diseño, lugar o magnitud y treated water es más amplio que potable water."
+        },
+        {
+          "evidenceId": "urban-usda-cornell-agriculture-education",
+          "label": "USDA NIFA/Cornell — urban agriculture education in New York City",
+          "url": "https://portal.nifa.usda.gov/web/crisprojectpages/1021530-outcomes-of-urban-agriculture-education-in-new-york-city.html",
+          "note": "Proyecto candidato sobre agricultura urbana, invernaderos en azoteas y aprendizaje STEM/científico en escuelas. El contenido remitido por Cornell no se presume dominio público ni valida el universal del pasaje."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan cadenas cortas, cargas estructurales, requisitos de techos verdes, menor demanda de agua potable y ejemplos educativos, pero no verifican escala, cultivos, clientes, todos los efectos ni la afirmación combinada sobre suelo ligero e irrigación. Disponibilidad no prueba autoría, licencia, hechos ni revisión humana."
+    },
+    {
+      "assetId": "formative:summary-completion:summary-repair-cafes",
+      "claimSpansToReview": [
+        "Repair cafes began as informal meetings where residents brought broken household objects and learned how to fix them with help from experienced volunteers.",
+        "Organisers usually ask visitors to stay with the repair instead of leaving the object behind, so the event becomes a lesson rather than a free service.",
+        "check whether common spare parts are available",
+        "Electrical devices, for example, may be inspected only by people with relevant training.",
+        "Older residents can share practical knowledge, students gain confidence with unfamiliar tools and neighbours who rarely meet have a reason to talk."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "repair-cafe-official-about",
+          "label": "Repair Café International — About Repair Café",
+          "url": "https://www.repaircafe.org/en/about/",
+          "note": "Fuente primaria candidata sobre funcionamiento, aprendizaje y voluntarios expertos. La historia oficial identifica un primer evento organizado; no acredita el origen plural como reuniones informales."
+        },
+        {
+          "evidenceId": "repair-cafe-official-house-rules",
+          "label": "Repair Café International — House rules",
+          "url": "https://www.repaircafe.org/en/house-rules/",
+          "note": "Fuente primaria candidata: visitantes reparan por sí mismos cuando es posible, expertos pueden rechazar objetos y puede limitarse un objeto. No establece el requisito eléctrico universal del pasaje."
+        },
+        {
+          "evidenceId": "repair-cafe-official-faq",
+          "label": "Repair Café International — FAQ",
+          "url": "https://www.repaircafe.org/en/faq/",
+          "note": "Fuente primaria candidata: no es un servicio convencional y suelen existir piezas pequeñas, pero no prueba una comprobación sistemática antes de cada sesión. Copyright 2026; no se presume licencia abierta."
+        },
+        {
+          "evidenceId": "repair-cafe-official-foundation",
+          "label": "Repair Café International Foundation",
+          "url": "https://www.repaircafe.org/en/foundation/",
+          "note": "Fuente primaria candidata sobre conservación y difusión de habilidades de reparación y cohesión social. No demuestra grupos etarios, confianza medida ni todos los efectos descritos."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes primarias respaldan el aprendizaje, la ayuda de especialistas, reglas de participación, piezas pequeñas y cohesión social, pero no acreditan el origen plural, la práctica universal de permanecer, una comprobación previa sistemática, el requisito eléctrico only ni los grupos y efectos exactos. Copyright y marca no equivalen a licencia para WeLearn."
+    },
+    {
+      "assetId": "formative:summary-completion:summary-shade-mapping",
+      "claimSpansToReview": [
+        "heatwaves become more common",
+        "The work begins with satellite images, but planners also send teams into streets to record how buildings, trees and bus shelters affect the experience of walking at different times of day.",
+        "A route that appears short on a map may feel much longer if it exposes pedestrians to direct sun for several blocks.",
+        "Older residents, outdoor workers and children may face higher heat exposure",
+        "By comparing shade with these daily movements, planners can identify places where a small intervention would help many people."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "shade-nasa-extreme-weather-frequency",
+          "label": "NASA — Climate change and extreme weather",
+          "url": "https://science.nasa.gov/climate-change/extreme-weather/",
+          "note": "Fuente oficial candidata sobre olas de calor récord más frecuentes e intensas globalmente. No demuestra la misma tendencia o magnitud en cada ciudad."
+        },
+        {
+          "evidenceId": "shade-epa-climate-indicators-2024",
+          "label": "US EPA — Climate Change Indicators in the United States 2024",
+          "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P101AXFE.txt",
+          "note": "Fuente oficial candidata sobre frecuencia de olas de calor, exposición, sensibilidad y vulnerabilidad. No permite tratar exposición y sensibilidad como el mismo mecanismo para todos los grupos."
+        },
+        {
+          "evidenceId": "shade-ut-austin-satellite-ground-mapping",
+          "label": "UT Austin — city and community extreme-heat mapping",
+          "url": "https://news.utexas.edu/2021/06/29/ut-austin-teams-up-with-city-and-community-to-fight-extreme-heat-in-austin/",
+          "note": "Proyecto primario candidato que combina satélite, sensores terrestres, modelos y experiencia de residentes. No prueba un flujo universal que siempre comience con satélite."
+        },
+        {
+          "evidenceId": "shade-rmit-shadeways-routes",
+          "label": "RMIT University — Shadeways heat mapping",
+          "url": "https://www.rmit.edu.au/news/all-news/2019/dec/smart-city-tech-keeps-bendigo-cool-mapping-hot-spots",
+          "note": "Fuente universitaria candidata sobre rutas sombreadas, Street View e imágenes térmicas para priorizar intervenciones. No demuestra percepción de longitud ni several blocks. Copyright RMIT; no reproducir."
+        },
+        {
+          "evidenceId": "shade-phoenix-action-plan",
+          "label": "City of Phoenix — Tree and Shade Programs",
+          "url": "https://www.phoenix.gov/administration/departments/heat/tree-shade-programs.html",
+          "note": "Plan municipal candidato que vincula sombra con población vulnerable y lugares donde se camina, espera el bus o usan parques. No acredita small ni un beneficio cuantificado para many people."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan tendencias de calor, distinción entre exposición y sensibilidad, combinación satélite/sensores y priorización de sombra, pero no un flujo universal, percepción de longitud, several blocks, mecanismos idénticos para grupos ni beneficios cuantificados. Disponibilidad no prueba autoría, licencia, hechos ni revisión humana."
+    }
+  ]
+}

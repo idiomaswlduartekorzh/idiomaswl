@@ -1,0 +1,218 @@
+{
+  "schemaVersion": "ielts-reading-matching-information-student-walkthrough.v1",
+  "reviewer": {
+    "humanSignature": false,
+    "sourceContext": "blind-review-packet-only",
+    "reviewedAt": "2026-08-09T06:19:47-05:00",
+    "notes": [
+      "Recorrido cognitivo simulado desde la perspectiva de un estudiante promedio, elaborado únicamente con el paquete ciego.",
+      "Las observaciones describen búsqueda, contraste y reparación del proceso sin adjudicar respuestas ni ubicaciones correctas."
+    ]
+  },
+  "records": [
+    {
+      "assetId": "formative:matching-information:mi-city-noise",
+      "passageBarrier": "El texto usa un campo semántico muy estable —ciudad, ruido, tráfico y políticas— en casi todo el pasaje. Un estudiante promedio puede reconocer el tema en varios lugares y detenerse antes de comprobar si encontró exactamente una causa, una medida, una desigualdad, una fuente, una explicación o una combinación de datos.",
+      "titleInfluenceRisk": "medium",
+      "shortcutRisks": [
+        "Usar la primera mención de ruido urbano como respuesta aunque el enunciado pida una relación causal o un procedimiento específico.",
+        "Emparejar por una palabra compartida como tráfico, residentes o ciudad sin verificar la función que cumple esa idea.",
+        "Suponer que cada zona del texto se utiliza una sola vez pese a que las instrucciones permiten reutilización."
+      ],
+      "transferValue": "Enseña scanning transferible porque obliga a convertir sustantivos generales en una huella funcional: causa, ejemplos de intervención, vínculo social, lista de fuentes, necesidad de comunicación o integración de datos. La práctica resulta útil si el alumno escanea primero por esa función y después valida una oración completa.",
+      "nextAction": "Antes de buscar, subrayar en cada enunciado la relación exigida y reformularla como una pregunta breve. Después localizar dos candidatos por palabras relacionadas, leer su contexto inmediato y conservar solo el que cumpla toda la relación, no solo el tema.",
+      "questionWalkthrough": [
+        {
+          "questionId": "mi-noise-01",
+          "likelyMisread": "El enunciado es comprensible, pero puedo leerlo como una simple referencia a calles con tráfico y perder el contraste inesperado: menos automóviles y, aun así, ruido. También puedo confundir una observación con la explicación solicitada.",
+          "evidenceHunt": "Buscaría lenguaje de contraste y una estructura de causa y efecto que explique cómo una característica de la calle modifica el sonido pese al menor tráfico. No decidiría al ver solo cars, street o noise.",
+          "paraphraseCheck": "Comprobaría que fewer cars se expresa como un volumen de vehículos más bajo y que still noisy se explica mediante un mecanismo que conserva o intensifica el sonido. La paráfrasis rival es cualquier mención general del tráfico como fuente habitual.",
+          "distractorCheck": "Descartaría un fragmento que enumere fuentes de ruido o medidas de reducción si no resuelve la aparente contradicción. El mejor rival puede compartir el vocabulario de tráfico, pero carecer de la razón específica.",
+          "decisionRule": "Elegir solo cuando una misma unidad de sentido contenga las dos condiciones —menos vehículos y persistencia del ruido— unidas por una explicación explícita o inequívoca.",
+          "repairAction": "Si marqué por coincidencia léxica, volvería a escribir ¿por qué sigue siendo ruidosa? y exigiría una frase que responda directamente antes de decidir."
+        },
+        {
+          "questionId": "mi-noise-02",
+          "likelyMisread": "Puedo confundir cualquier acción contra el ruido con medidas que actúan antes de que se propague. La frase es clara, pero before it spreads exige distinguir intervención en la fuente de mitigación posterior.",
+          "evidenceHunt": "Escanearía verbos de reducir, limitar o cambiar y comprobaría si afectan la producción inicial del sonido. Esperaría varios ejemplos, no una promesa general de mejora.",
+          "paraphraseCheck": "Reduce noise before it spreads debe equivaler a reducirlo at the source o a modificar aquello que lo genera. La rival complicada es una barrera o un elemento que recibe el sonido después de producido.",
+          "distractorCheck": "Revisaría que cada ejemplo citado pertenezca a la misma lógica preventiva. Una sección sobre mapas, salud o comunicación puede mencionar reducción sin describir medidas de origen.",
+          "decisionRule": "Aceptar el candidato solo si ofrece ejemplos concretos y el texto permite explicar en una oración cómo disminuyen la emisión, no únicamente la exposición o la percepción.",
+          "repairAction": "Clasificaría cada medida candidata en fuente, trayecto o receptor; si no cae claramente en fuente, seguiría buscando."
+        },
+        {
+          "questionId": "mi-noise-03",
+          "likelyMisread": "La idea es accesible, pero social inequality puede atraerme hacia cualquier referencia a barrios o residentes. El riesgo es confundir diferencias urbanas descriptivas con una distribución desigual de cargas y protecciones.",
+          "evidenceHunt": "Buscaría una comparación entre grupos o zonas con distintos recursos y distinta exposición, seguida de una consecuencia de equidad. Necesito más que una ubicación geográfica.",
+          "paraphraseCheck": "Connected to social inequality puede aparecer como contraste entre mayor riqueza y menores recursos, o como environmental justice. La rival es una comparación entre tipos de calles que no habla de posición social.",
+          "distractorCheck": "Preguntaría si el contraste identifica quién recibe más ruido o menos protección por condiciones socioeconómicas. Si solo compara diseño urbano, no basta.",
+          "decisionRule": "Decidir únicamente cuando la evidencia vincule explícitamente situación social con exposición, infraestructura protectora o trato desigual.",
+          "repairAction": "Si elegí por la palabra neighborhoods, trazaría dos columnas —grupo favorecido y grupo perjudicado— y verificaría que el texto complete ambas."
+        },
+        {
+          "questionId": "mi-noise-04",
+          "likelyMisread": "Puedo reducir different kinds of urban activities a la fuente dominante y pasar por alto que el enunciado pide pluralidad. También puedo tomar efectos del ruido como si fueran actividades que lo producen.",
+          "evidenceHunt": "Buscaría una enumeración de actividades o fuentes urbanas diferentes. Comprobaría que los elementos producen sonido y no son consecuencias para la salud.",
+          "paraphraseCheck": "Add to the soundscape puede expresarse como contribute y activities como transporte, obras, ocio o reparto. La rival es una lista de efectos como sueño y concentración, que tiene la misma forma de enumeración.",
+          "distractorCheck": "Separaría listas de causas, listas de daños y listas de soluciones. Solo una lista de causas satisface la función solicitada.",
+          "decisionRule": "Aceptar cuando haya al menos dos actividades urbanas identificables presentadas como contribuyentes al entorno sonoro.",
+          "repairAction": "Etiquetaría cada sustantivo de la lista como causa, efecto o solución; si no predominan causas, corregiría mi selección."
+        },
+        {
+          "questionId": "mi-noise-05",
+          "likelyMisread": "El enunciado puede hacerme buscar beneficios de política en general, cuando en realidad pide por qué hace falta explicarlos a residentes. El detalle decisivo es una brecha entre beneficio real y percepción inmediata.",
+          "evidenceHunt": "Buscaría una dificultad de percepción o comprensión seguida de una función de la comunicación. Debe haber una razón humana que conecte la mejora con la necesidad de explicarla.",
+          "paraphraseCheck": "May need an explanation puede aparecer como no reconocer cambios graduales o no notar una mejora, y policy benefits como efectos significativos pero poco perceptibles. La rival es una discusión sobre apoyo público sin explicar su origen.",
+          "distractorCheck": "No bastaría una frase que diga que comunicar importa. Verificaría que el texto dé el motivo y, si aparece, la consecuencia sobre aceptación de medidas incómodas.",
+          "decisionRule": "Elegir solo si puedo completar porque los residentes... con evidencia textual específica y enlazarla lógicamente con la explicación de beneficios.",
+          "repairAction": "Si mi evidencia solo repite communication matters, leería la oración anterior y la siguiente hasta encontrar la causa concreta o descartaría el candidato."
+        },
+        {
+          "questionId": "mi-noise-06",
+          "likelyMisread": "Puedo confundir localizar las zonas más afectadas con simplemente medir ruido. El enunciado exige además que se combinen varias fuentes de datos.",
+          "evidenceHunt": "Escanearía por una lista de insumos informativos y por un verbo de combinación, seguido de un propósito de identificación espacial. Necesito proceso y resultado.",
+          "paraphraseCheck": "Several data sources puede estar realizado mediante sensores, conteos y reportes; locate the worst affected areas mediante identificar dónde la exposición es mayor. La rival es una comparación de calles basada en un solo resultado llamativo.",
+          "distractorCheck": "Una referencia a mapas por sí sola no prueba integración de fuentes. Contaría los tipos de evidencia y comprobaría que alimentan la localización.",
+          "decisionRule": "Aceptar únicamente si el fragmento aporta pluralidad de datos, una acción de integrarlos y el objetivo de hallar las áreas con mayor impacto.",
+          "repairAction": "Haría una lista rápida de fuente 1, fuente 2 y fuente 3; si no puedo llenarla desde el mismo proceso descrito, reabriría la búsqueda."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-information:mi-museum-lighting",
+      "passageBarrier": "Casi todas las partes relacionan luz, objetos y experiencia del visitante, de modo que las mismas palabras activan candidatos rivales. La barrera es distinguir finalidad y relación: daño material, límite temporal, automatización, movimiento, adaptación al contexto o seguridad.",
+      "titleInfluenceRisk": "medium",
+      "shortcutRisks": [
+        "Elegir por la mención de iluminación y visitantes sin comprobar si se habla de conservación, recorrido o seguridad.",
+        "Convertir una asociación plausible de conocimiento previo en evidencia aunque el texto no exprese la relación pedida.",
+        "Tratar ejemplos de materiales, objetos y exposiciones como intercambiables pese a que cumplen funciones distintas."
+      ],
+      "transferValue": "El pasaje entrena scanning transferible mediante señales de categoría —materiales, duración, sensores, circulación, variación contextual y riesgo— y obliga a validar relaciones más finas que el tema. Es especialmente útil para aprender que una palabra compartida abre un candidato, pero no lo confirma.",
+      "nextAction": "Clasificar cada enunciado por función antes de escanear: daño, causa de temporalidad, mecanismo automático, efecto en conducta, ausencia de solución universal o peligro. Comparar después el candidato principal con el fragmento temáticamente parecido que cumple otra función.",
+      "questionWalkthrough": [
+        {
+          "questionId": "mi-lighting-01",
+          "likelyMisread": "Puedo identificar objetos sensibles, pero el enunciado pide ejemplos de materiales dañados por demasiada luz, no solo objetos que reciben distintos niveles. También podría confundir tolerancia con daño explícito.",
+          "evidenceHunt": "Buscaría vocabulario de deterioro junto a una enumeración de sustancias o soportes. Confirmaría que la exposición excesiva es la causa y que los ejemplos son aquello que sufre el daño.",
+          "paraphraseCheck": "Harmed puede aparecer como desvanecer, debilitar o dañar, y excessive light como demasiada exposición. La rival es una lista de objetos sensibles cuya diferencia de tolerancia se explica sin enumerar efectos de daño.",
+          "distractorCheck": "Separaría ejemplos de materiales dañables de ejemplos de objetos con distintas necesidades de exhibición. El primero responde a qué se perjudica; el segundo puede responder a cuánto o durante cuánto tiempo se muestra.",
+          "decisionRule": "Elegir solo si la evidencia contiene al menos un material identificable y una relación explícita con deterioro por exceso de luz.",
+          "repairAction": "Subrayaría por separado causa, verbo de daño y material; si falta uno, dejaría el candidato abierto y seguiría escaneando."
+        },
+        {
+          "questionId": "mi-lighting-02",
+          "likelyMisread": "La pregunta es clara, pero puedo seleccionar cualquier mención de objetos frágiles o límites de luz sin hallar la razón de una exhibición temporal. Debo conectar sensibilidad con rotación o duración limitada.",
+          "evidenceHunt": "Buscaría una relación causal entre tolerancia a la luz y decisiones de mostrar, retirar, rotar o almacenar una pieza. La secuencia de acción es tan importante como el objeto.",
+          "paraphraseCheck": "Displayed only temporarily puede reformularse como mostrar durante periodos limitados y devolver a almacenamiento. Some objects puede aparecer mediante categorías sensibles. La rival es una explicación general del daño sin práctica temporal.",
+          "distractorCheck": "Comprobaría que el texto no solo dice que la luz puede dañar, sino que esa propiedad explica una política concreta de tiempo de exposición.",
+          "decisionRule": "Aceptar cuando pueda expresar una cadena completa: sensibilidad o baja tolerancia, por lo tanto exhibición limitada y posterior retiro.",
+          "repairAction": "Si solo hallé el riesgo, buscaría inmediatamente un conector causal y una acción temporal; sin ambos, no cerraría la respuesta."
+        },
+        {
+          "questionId": "mi-lighting-03",
+          "likelyMisread": "Puedo quedarme con cualquier tecnología que ajuste la luz, aunque el enunciado especifica que la presencia de visitantes activa el cambio de brillo. El control preciso por sí solo no basta.",
+          "evidenceHunt": "Escanearía términos de detección y una condición cuando alguien se acerca o cuando el espacio queda vacío. Verificaría dos estados de brillo vinculados a presencia y ausencia.",
+          "paraphraseCheck": "Depending on visitor presence puede aparecer como luces que reaccionan al acercamiento y luego se atenúan sin personas. La rival es un sistema ajustable en color, dirección o intensidad que requiere control pero no presencia.",
+          "distractorCheck": "Distinguiría capacidad de ajuste de automatización condicionada. Solo la segunda cumple el depending on del enunciado.",
+          "decisionRule": "Elegir únicamente si la evidencia incluye detector o condición de presencia y un cambio automático de luminosidad asociado.",
+          "repairAction": "Preguntaría ¿qué evento dispara el cambio?; si el texto no responde visitantes presentes o ausentes, descartaría ese candidato."
+        },
+        {
+          "questionId": "mi-lighting-04",
+          "likelyMisread": "Route puede hacerme buscar caminos físicos o seguridad, cuando el enunciado se refiere a que la luz modifica cómo se desplaza la gente. También puedo confundir dirigir la mirada con dirigir el movimiento.",
+          "evidenceHunt": "Buscaría verbos de entrar, moverse, guiar o detenerse y una causa lumínica. Necesito una consecuencia conductual, no solo una cualidad visual.",
+          "paraphraseCheck": "Influence the route people take puede expresarse como afectar cómo avanzan por una galería o invitar a entrar. La rival es usar contraste para orientar la atención, que puede tratar la mirada más que el recorrido.",
+          "distractorCheck": "Comprobaría si el efecto descrito recae sobre desplazamiento, velocidad o entrada, y no únicamente sobre visibilidad de un objeto o lectura de una etiqueta.",
+          "decisionRule": "Aceptar cuando el texto vincule directamente una condición de iluminación con una decisión o patrón de movimiento del visitante.",
+          "repairAction": "Cambiaría route por comportamiento espacial y localizaría un verbo de movimiento; sin ese verbo o equivalencia clara, reexaminaría el rival."
+        },
+        {
+          "questionId": "mi-lighting-05",
+          "likelyMisread": "Puedo tomar una diferencia entre objetos como respuesta completa, aunque la frase pide por qué una solución no sirve para todas las exposiciones. La justificación puede combinar objeto, espacio y experiencia deseada.",
+          "evidenceHunt": "Buscaría un rechazo explícito de una fórmula universal, seguido de contextos contrastantes o de varias variables que cambian el plan.",
+          "paraphraseCheck": "Cannot fit every exhibition puede aparecer como no existe una fórmula perfecta y depende de condiciones particulares. La rival es la comparación de tolerancia entre materiales, que explica una variable pero quizá no la amplitud de cada exposición.",
+          "distractorCheck": "Verificaría que la evidencia generalice a planes expositivos distintos y no se limite a una técnica o categoría de objeto.",
+          "decisionRule": "Elegir cuando el fragmento presente diversidad de necesidades y derive de ella que el diseño debe adaptarse al contexto.",
+          "repairAction": "Enumeraría las variables que el texto dice que cambian; si solo encuentro una diferencia aislada y ninguna conclusión contextual, seguiría buscando."
+        },
+        {
+          "questionId": "mi-lighting-06",
+          "likelyMisread": "El enunciado es directo, pero contrast aparece cerca de beneficios para guiar la atención y puedo marcarlo antes de leer la advertencia. La seguridad debe ser la consecuencia específica, no una dificultad estética.",
+          "evidenceHunt": "Buscaría el término o concepto de contraste y luego un conector adversativo que introduzca un riesgo en la circulación o la legibilidad. Separaría peligro físico de inconveniente comunicativo.",
+          "paraphraseCheck": "Safety concern puede expresarse como evitar trayectos inseguros; using contrast puede aparecer como herramienta de guía visual. La rival cercana es que las etiquetas queden ilegibles, problema real pero no necesariamente de seguridad.",
+          "distractorCheck": "Si una oración enumera dos precauciones, identificaría cuál responde estrictamente a safety y no escogería la más fácil de recordar.",
+          "decisionRule": "Aceptar solo si el uso del contraste está conectado explícitamente con un riesgo para desplazarse de manera segura.",
+          "repairAction": "Volvería al enunciado y encerraría safety; luego exigiría un término equivalente a riesgo físico antes de confirmar."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-information:mi-coastal-restoration",
+      "passageBarrier": "El pasaje repite restauración, agua, plantas, protección y proyectos en contextos distintos. El reto para un estudiante promedio es seguir la lógica temporal y causal: actitud pasada, preparación física, conflicto de intereses, indicadores lentos, estrategia combinada y régimen hídrico.",
+      "titleInfluenceRisk": "low",
+      "shortcutRisks": [
+        "Asociar toda referencia a agua o vegetación con éxito de restauración sin identificar si se habla de condición, indicador o beneficio.",
+        "Elegir una oración por su idea principal de protección costera cuando el enunciado solicita un detalle operativo o una limitación.",
+        "Ignorar conectores temporales y causales que distinguen lo que ocurrió antes, lo que debe hacerse y lo que se observa después."
+      ],
+      "transferValue": "Ofrece buen entrenamiento de scanning transferible porque cada pregunta tiene una huella lógica distinta aunque comparta vocabulario ambiental. Obliga a buscar tiempo pasado, requisitos previos, contraste entre actores, métricas de progreso, límites de una solución y causalidad del movimiento del agua.",
+      "nextAction": "Anotar junto a cada enunciado su marcador lógico dominante —pasado, requisito, contraste, indicador, límite o causa— y escanear conectores y verbos antes que sustantivos. Validar después que la evidencia responda a esa función completa.",
+      "questionWalkthrough": [
+        {
+          "questionId": "mi-wetlands-01",
+          "likelyMisread": "Puedo buscar causas físicas de pérdida como carreteras o agricultura y olvidar que la pregunta pide primero una actitud pasada que llevó a esa pérdida. El juicio sobre el valor del terreno es el foco, no solo la acción posterior.",
+          "evidenceHunt": "Buscaría marcadores de tiempo pasado y lenguaje evaluativo sobre cómo se consideraban los humedales, seguido de una acción de eliminación o conversión.",
+          "paraphraseCheck": "Past attitude puede aparecer como una desestimación del terreno por vacío o inútil; led to the loss como drenaje para otros usos. La rival es el cambio moderno de comprensión, que pertenece al presente y favorece restauración.",
+          "distractorCheck": "No aceptaría una lista de usos que reemplazaron el humedal sin verificar que el texto conecta esos usos con una creencia anterior.",
+          "decisionRule": "Elegir solo si hay una valoración histórica negativa y una consecuencia de pérdida unidas en la evidencia.",
+          "repairAction": "Dividiría la frase en actitud y resultado; si mi candidato solo llena resultado, buscaría la cláusula que explica la mentalidad previa."
+        },
+        {
+          "questionId": "mi-wetlands-02",
+          "likelyMisread": "Puedo centrarme en plantar vegetación porque plants aparece en el enunciado, aunque se piden cambios físicos necesarios antes del éxito. La negación de plantar simplemente es una pista crítica.",
+          "evidenceHunt": "Buscaría acciones de ingeniería sobre barreras, canales o drenaje y un vínculo posterior con el establecimiento de plantas. Esperaría más de una modificación concreta.",
+          "paraphraseCheck": "Physical changes needed puede expresarse mediante retirar, reabrir o modificar infraestructura hídrica; before plants can succeed mediante una condición previa para que no fallen. La rival es el crecimiento lento de plantas jóvenes una vez iniciada la restauración.",
+          "distractorCheck": "Distinguiría preparación del sitio de seguimiento posterior. Los verbos de intervención deben ocurrir lógicamente antes del resultado vegetal.",
+          "decisionRule": "Aceptar cuando el fragmento enumere cambios físicos y explique que crean las condiciones necesarias para el éxito de la vegetación.",
+          "repairAction": "Ordenaría la evidencia como antes y después; si los indicadores aparecen después del crecimiento, no responden al requisito previo."
+        },
+        {
+          "questionId": "mi-wetlands-03",
+          "likelyMisread": "El enunciado es fácil de entender, pero podría conformarme con una mención de comunidades o equipos. Se necesitan grupos identificables con perspectivas diferentes sobre el mismo proyecto.",
+          "evidenceHunt": "Escanearía nombres de actores y conectores de contraste, luego identificaría qué beneficio valora uno y qué riesgo teme otro.",
+          "paraphraseCheck": "View differently puede aparecer como un grupo que recibe favorablemente un resultado mientras otro se preocupa por una pérdida o amenaza. La rival es una lista de participantes que colaboran sin desacuerdo.",
+          "distractorCheck": "Verificaría que las posturas se refieran al mismo proyecto y no a etapas o tareas distintas. Debe existir oposición o tensión reconocible.",
+          "decisionRule": "Elegir solo cuando pueda nombrar dos grupos y resumir sus posiciones contrastantes sin añadir conocimiento externo.",
+          "repairAction": "Haría una tabla mental grupo, interés, postura; si no puedo completar las dos filas desde el texto, no decidiría."
+        },
+        {
+          "questionId": "mi-wetlands-04",
+          "likelyMisread": "Puedo confundir beneficios finales grandes con small signs de progreso. La pregunta apunta a indicadores modestos y medibles durante un proceso que tarda.",
+          "evidenceHunt": "Buscaría lenguaje de monitoreo, medición o indicadores acompañado de varios ejemplos observables. Confirmaría que sirven para juzgar avance y no solo describir beneficios generales.",
+          "paraphraseCheck": "Small signs puede aparecer como indicadores pequeños, y judge whether progressing como medir progreso. La rival es una lista de servicios amplios como protección, carbono o hábitat, que no funciona como seguimiento intermedio.",
+          "distractorCheck": "Separaría métricas de proceso de objetivos de largo plazo. Una especie o condición del agua cuenta solo si el texto la presenta como medida de seguimiento.",
+          "decisionRule": "Aceptar cuando haya una práctica de monitoreo y ejemplos concretos usados explícitamente para evaluar el avance.",
+          "repairAction": "Preguntaría ¿quién mide esto y para qué?; si la evidencia no responde evaluar progreso, la reclasificaría como beneficio o condición."
+        },
+        {
+          "questionId": "mi-wetlands-05",
+          "likelyMisread": "Puedo interpretar que la restauración no sirve, cuando el enunciado dice que no debe ser la única protección. La comprensión exige conservar simultáneamente su utilidad y sus límites.",
+          "evidenceHunt": "Buscaría una estructura concesiva: la restauración ayuda en cierta función, pero otras medidas siguen siendo necesarias. Esperaría ejemplos de esas protecciones complementarias.",
+          "paraphraseCheck": "Should not be treated as the only form puede expresarse como no elimina la necesidad de otras reglas o planes y como parte de una estrategia más amplia. La rival es una descripción de desacuerdos comunitarios, que complica proyectos pero no demuestra insuficiencia protectora.",
+          "distractorCheck": "Comprobaría que el contraste trate cobertura de riesgo y complementariedad, no demora, oposición social o fallos de plantación.",
+          "decisionRule": "Elegir cuando la evidencia afirme un beneficio protector y, a la vez, mantenga necesarias otras defensas específicas.",
+          "repairAction": "Escribiría ayuda, pero no reemplaza... y completaría ambas mitades solo con el texto; si falta una, continuaría buscando."
+        },
+        {
+          "questionId": "mi-wetlands-06",
+          "likelyMisread": "El enunciado puede parecer casi igual al de cambios físicos previos, y ese es el rival más fuerte. Aquí el núcleo no es la lista de obras, sino por qué el régimen y el momento del agua determinan el resultado.",
+          "evidenceHunt": "Buscaría referencias a flujo, retorno, drenaje, mareas o régimen hídrico y una consecuencia explícita si esas condiciones son incorrectas.",
+          "paraphraseCheck": "Getting water movement right puede realizarse como permitir que el agua llegue en los momentos adecuados o establecer el régimen correcto. La rival es la enumeración de obras, que puede ser evidencia relacionada pero no suficiente si se separa de la importancia causal.",
+          "distractorCheck": "Compararía dos funciones dentro del mismo tema: qué modificaciones se hacen frente a por qué el comportamiento del agua es decisivo. No asumiría que la misma palabra clave resuelve ambas preguntas.",
+          "decisionRule": "Aceptar solo si la evidencia enlaza la condición del movimiento o calendario del agua con éxito o fracaso de la restauración.",
+          "repairAction": "Reformularía como ¿qué pasa si el agua no se mueve correctamente? y exigiría una consecuencia textual antes de decidir."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "ielts-reading-matching-headings-baseline.v1",
+  "capturedAt": "2026-08-09T07:05:00-05:00",
+  "scope": {
+    "unit": "F0.2b.5",
+    "format": "matching-headings",
+    "passages": 3,
+    "paragraphs": 17,
+    "headingCandidates": 27,
+    "questions": 17
+  },
+  "assets": [
+    {
+      "assetId": "formative:matching-headings:mh-public-libraries",
+      "setId": "mh-public-libraries",
+      "title": "The changing role of public libraries",
+      "paragraphCount": 5,
+      "headingCandidateCount": 9,
+      "wordCount": 279,
+      "questionCount": 5,
+      "answerCounts": { "i": 1, "ii": 0, "iii": 1, "iv": 0, "v": 1, "vi": 0, "vii": 1, "viii": 0, "ix": 1 },
+      "sourceObjectSha256": "9e99d0518d90a6a64fc622a49cc293a2966aa17ac59142685b0e8bdb266eb918",
+      "passageSha256": "e1b63291ae9e2ed99efb145d5a6322a17532b207fd7a4caf18ad4d2a9238955a"
+    },
+    {
+      "assetId": "formative:matching-headings:mh-urban-farming",
+      "setId": "mh-urban-farming",
+      "title": "Urban farming beyond fresh food",
+      "paragraphCount": 6,
+      "headingCandidateCount": 9,
+      "wordCount": 278,
+      "questionCount": 6,
+      "answerCounts": { "i": 1, "ii": 0, "iii": 1, "iv": 1, "v": 1, "vi": 0, "vii": 1, "viii": 1, "ix": 0 },
+      "sourceObjectSha256": "d8505ea0480be939eade2759c1b8536201346219f6817e092f2c7712845564eb",
+      "passageSha256": "00d5dfbda4a92ff0c9e18d445dde1517d5d9ffce37341e6a3d9a960b374b4019"
+    },
+    {
+      "assetId": "formative:matching-headings:mh-night-trains",
+      "setId": "mh-night-trains",
+      "title": "The return of night trains",
+      "paragraphCount": 6,
+      "headingCandidateCount": 9,
+      "wordCount": 281,
+      "questionCount": 6,
+      "answerCounts": { "i": 1, "ii": 0, "iii": 1, "iv": 1, "v": 0, "vi": 1, "vii": 0, "viii": 1, "ix": 1 },
+      "sourceObjectSha256": "6c77fe0e8e219f2cf1a674244d40f9a864e7c3d84e0300450dbb6d36a622e08d",
+      "passageSha256": "6336810444e52bbd62f2d9b17d344aeb4e0d01be6aae774ff6a369bdce1b277d"
+    }
+  ],
+  "structuralRisk": {
+    "answerCounts": { "i": 3, "ii": 0, "iii": 3, "iv": 2, "v": 2, "vi": 1, "vii": 2, "viii": 2, "ix": 2 },
+    "maxSameLabelRun": 1,
+    "samePositionPredictsHeading": { "eligible": 17, "hits": 5, "conditionalAccuracy": 0.29411764705882354, "uniformNineHeadingBaseline": 0.1111111111111111 },
+    "highestLexicalOverlapPredictsHeading": { "eligible": 14, "tiesOrAbstentions": 3, "hits": 6, "conditionalAccuracy": 0.42857142857142855, "uniformNineHeadingBaseline": 0.1111111111111111 },
+    "longestHeadingPredictsAnswer": { "eligible": 12, "tiesOrAbstentions": 5, "hits": 2, "conditionalAccuracy": 0.16666666666666666 },
+    "headingIiNeverCorrect": true,
+    "storedAnswersReuseNoHeadingWithinSet": true,
+    "runtimeEnforcesNoHeadingReuse": false,
+    "statisticalCertificationEligible": false,
+    "reason": "n=17 is below the 100-decision family gate. Lexical overlap reaches 6/14 when it has a unique winner, option ii is never correct and the current engine does not enforce the official no-reuse rule."
+  },
+  "learnerFacingSourceSha256": {
+    "src/data/practica-exams/seo-catalog.ts": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de",
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-headings/page.tsx": "0a7a347a76a2ad89d7c2ef5beb68d48fc5ad4cb003d330ecbd724bb7c4f0a155",
+    "src/components/exam-practice/MatchingHeadingsEngine.tsx": "6271d3865fdd2da9ef5e4bedcd47e8964750dc98e12e7cecce32dd87b0fe03c0",
+    "src/components/exam-practice/MatchingHeadingsPassageBank.tsx": "4f0e80a4bd3894818fb2fd791ef3ec3b665887d6c4ebc13cc2f2ded97abbc408",
+    "src/components/exam-practice/OfficialStrategyCard.tsx": "b4f575bd4bc3655f5f0682404f3d937020b4cfd3d54b42adac758647d9133e3e",
+    "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx": "73d3b725c68c0ed193ceba23ebddca3fec7978f6e84712c99b3dddc190443711",
+    "src/components/exam-practice/StructuredData.tsx": "3e59a611e4d2bac9ce5994bdbd4ba6303407a5ddf82b26a340efe1f3c2b788d8"
+  },
+  "nextUnitSourceSha256": {
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-features/page.tsx": "df659101211ff4405f79e3a9a2c018c5172bf8329307e341bab69473669d5e31",
+    "src/components/exam-practice/MatchingFeaturesEngine.tsx": "8a282ec76ab70b68c3e625693cd63498861331b903dd8607c2aea4db1ae2a93b",
+    "src/components/exam-practice/MatchingFeaturesPassageBank.tsx": "cb176db35754c64ef3bd0e0e150c2b8e5a923136f62d32d908979a8ab08c8750"
+  },
+  "interpretation": "Frozen pre-unit content and learner-runtime identity. Stored heading IDs are retained here for audit only and are never supplied to blind reviewers."
+}

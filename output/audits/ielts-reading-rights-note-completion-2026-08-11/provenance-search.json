@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "ielts-reading-note-completion-provenance-search.v1",
+  "searchedAt": "2026-08-11T16:04:00Z",
+  "method": "Directed exact-title plus exact opening-fragment public-web search. Returned result surfaces were reviewed for verbal identity; candidate factual URLs were kept separate from provenance identity and were not treated as proof of authorship or license.",
+  "searchSurface": "public web search",
+  "queries": [
+    {
+      "assetId": "formative:note-completion:note-mobile-libraries",
+      "query": "\"Mobile libraries and community reading\" \"In several rural regions, mobile libraries have become a practical way\"",
+      "resultsReviewed": [
+        {
+          "title": "State Library of New South Wales — Mobile and Outreach Services report",
+          "url": "https://pls.sl.nsw.gov.au/sites/default/files/2023-09/mobile_outreach_services.pdf",
+          "reasonNotExactMatch": "The report is topically related but does not match the exact title, opening fragment or complete passage identity. It is a candidate factual source, not proof of authorship or license."
+        },
+        {
+          "title": "Wingecarribee Shire Council — Mobile Library",
+          "url": "https://library.wsc.nsw.gov.au/explore/mobile-library/",
+          "reasonNotExactMatch": "The municipal service page discusses mobile-library materials and schedules but does not match the exact title, opening fragment or passage identity."
+        }
+      ],
+      "candidateFactualSourcesCompared": [
+        "https://pls.sl.nsw.gov.au/sites/default/files/2023-09/mobile_outreach_services.pdf",
+        "https://library.wsc.nsw.gov.au/explore/mobile-library/",
+        "https://www.derbyshire.gov.uk/leisure/libraries/services/mobile-libraries/mobile-libraries.aspx",
+        "https://pls.sl.nsw.gov.au/managing-my-library/buildings-and-spaces/people-places/influence/programs-and-partnerships",
+        "https://content.plconnect.slq.qld.gov.au/sites/default/files/APLAALIA-guidelinesstandardsoutcomemeasures-2016.pdf"
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    },
+    {
+      "assetId": "formative:note-completion:note-seed-banks",
+      "query": "\"Community seed banks\" \"Community seed banks are local collections of seeds that farmers can borrow\"",
+      "resultsReviewed": [
+        {
+          "title": "FAO — seed bank borrowing and return after harvest",
+          "url": "https://www.fao.org/4/ac546e/ac546e07.htm",
+          "reasonNotExactMatch": "The FAO page is factually related to borrowing and return but does not match the exact title, opening fragment or complete passage identity."
+        },
+        {
+          "title": "CGIAR — Community seed banks and climate risk",
+          "url": "https://www.cgiar.org/news-events/news/planting-seeds-of-hope-community-seed-banks-empower-farmers-and-address-climate-risk-in-india",
+          "reasonNotExactMatch": "The institutional article discusses community seed banks and adaptation but does not match the exact opening wording or passage identity."
+        }
+      ],
+      "candidateFactualSourcesCompared": [
+        "https://www.fao.org/4/ac546e/ac546e07.htm",
+        "https://www.cgiar.org/news-events/news/planting-seeds-of-hope-community-seed-banks-empower-farmers-and-address-climate-risk-in-india",
+        "https://cgkb.cgiar.croptrust.org/images/file/procedures/chapter_registration_%20genebankmanual8.pdf",
+        "https://www.fao.org/4/AD226E/AD226E06.htm",
+        "https://www.fao.org/4/x6109e/x6109e06.htm"
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    },
+    {
+      "assetId": "formative:note-completion:note-night-libraries",
+      "query": "\"Night study spaces in public libraries\" \"Some public libraries have begun opening selected rooms in the evening\"",
+      "resultsReviewed": [
+        {
+          "title": "Tasmanian Government — Open Library Access trial",
+          "url": "https://www.premier.tas.gov.au/latest-news/2024/september/open-library-access-trial-to-commence-in-2025",
+          "reasonNotExactMatch": "The government announcement describes an extended-hours trial but does not match the exact title, opening fragment or full passage identity."
+        },
+        {
+          "title": "State Library of New South Wales — Extended study hours",
+          "url": "https://www.sl.nsw.gov.au/news/extended-study-hours-students",
+          "reasonNotExactMatch": "The library announcement is topically related to evening study access but does not match the passage wording or identity."
+        }
+      ],
+      "candidateFactualSourcesCompared": [
+        "https://www.premier.tas.gov.au/latest-news/2024/september/open-library-access-trial-to-commence-in-2025",
+        "https://www.sl.nsw.gov.au/news/extended-study-hours-students",
+        "https://library.albany.wa.gov.au/news/library-launches-after-hours-study-space/964",
+        "https://www.krg.nsw.gov.au/Community/Ku-ring-gai-Library/Library-After-Hours/Library-After-Hours-Foyer",
+        "https://www.ryde.nsw.gov.au/Council/Media-Centre/News-and-Public-Notices/Eastwood-Library-begins-exciting-247-opening-trial"
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    }
+  ],
+  "interpretation": "This was a directed and non-exhaustive search. No exact match in the reviewed public-web result surface does not prove originality, authorship, clearance or universal absence of a prior source. It did not cover licensed databases, print-only works, deleted pages, translations, private documents, drafts or extensive paraphrase. Candidate factual sources were selected for later claim review; topical relevance or HTTP availability does not verify learner-facing claims, passage identity, authorship or rights."
+}

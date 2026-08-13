@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "ielts-reading-note-completion-prompt-only-verdict.v1",
+  "reviewer": {
+    "reviewerRunId": "f02b10-note-completion-clean-review-20260811T160856Z",
+    "reviewedAt": "2026-08-11T16:12:00Z",
+    "packetSha256": "25b6900226e7e3e5b1b5e2dc1f643cd8d0b086e13f47c2b7f94ea4a1e7d8636f",
+    "sourceContext": "prompt-only-packet-only",
+    "humanSignature": false,
+    "notes": "Independent prompt-only review based solely on visible note frames and the two-word limit. Candidate completions illustrate prompt plausibility and are not passage-derived answers."
+  },
+  "records": [
+    {
+      "questionId": "note-mobile-libraries-01",
+      "predictedGrammarCategory": "predicative adjective after degree adverb",
+      "plausibleCompletionCountBand": "two-to-three",
+      "plausibleCompletions": ["expensive", "costly", "difficult"],
+      "uniqueExactGuess": null,
+      "reasoning": "The frame requires an adjective complement before the infinitive, but several adjectives naturally express why a permanent branch cannot be maintained."
+    },
+    {
+      "questionId": "note-mobile-libraries-02",
+      "predictedGrammarCategory": "plural count noun in coordinated destination list",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["villages", "clinics", "factories", "parks"],
+      "uniqueExactGuess": null,
+      "reasoning": "The blank completes a list of destinations; many plural place nouns fit both grammar and the broad mobile-service context."
+    },
+    {
+      "questionId": "note-mobile-libraries-03",
+      "predictedGrammarCategory": "noun phrase as object of preposition",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["harvest", "work", "school", "sunset"],
+      "uniqueExactGuess": null,
+      "reasoning": "After permits a time-denoting noun phrase, and the farming context does not identify one exact routine."
+    },
+    {
+      "questionId": "note-mobile-libraries-04",
+      "predictedGrammarCategory": "singular count noun as subject head",
+      "plausibleCompletionCountBand": "two-to-three",
+      "plausibleCompletions": ["schedule", "timetable", "route"],
+      "uniqueExactGuess": null,
+      "reasoning": "The article and singular verb call for a singular count noun, while several planning-related nouns remain plausible."
+    },
+    {
+      "questionId": "note-mobile-libraries-05",
+      "predictedGrammarCategory": "noun phrase as direct object",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["employers", "officials", "agencies", "tutors"],
+      "uniqueExactGuess": null,
+      "reasoning": "Contact takes a person or organisation as its object, and the visible purpose supports numerous possible contacts."
+    },
+    {
+      "questionId": "note-mobile-libraries-06",
+      "predictedGrammarCategory": "plural organisation noun in coordinated list",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["councils", "charities", "businesses", "universities"],
+      "uniqueExactGuess": null,
+      "reasoning": "The final list item is likely another institutional partner, but the frame does not privilege a particular organisation type."
+    },
+    {
+      "questionId": "note-seed-banks-01",
+      "predictedGrammarCategory": "noun phrase as object of temporal preposition",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["harvest", "planting", "germination", "the season"],
+      "uniqueExactGuess": null,
+      "reasoning": "The blank denotes a later farming event or period, with several one- or two-word completions possible."
+    },
+    {
+      "questionId": "note-seed-banks-02",
+      "predictedGrammarCategory": "noun phrase as direct object",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["drought", "flooding", "dry weather", "harsh winters"],
+      "uniqueExactGuess": null,
+      "reasoning": "Tolerate selects a noun phrase naming an adverse condition, and multiple environmental stresses fit the visible context."
+    },
+    {
+      "questionId": "note-seed-banks-03",
+      "predictedGrammarCategory": "singular noun completing compound modifier",
+      "plausibleCompletionCountBand": "two-to-three",
+      "plausibleCompletions": ["season", "conditions", "method"],
+      "uniqueExactGuess": null,
+      "reasoning": "Growing modifies a documentation category, but the list does not determine whether that category is time, environment, or technique."
+    },
+    {
+      "questionId": "note-seed-banks-04",
+      "predictedGrammarCategory": "bare infinitive verb after help",
+      "plausibleCompletionCountBand": "two-to-three",
+      "plausibleCompletions": ["identify", "recognise", "distinguish"],
+      "uniqueExactGuess": null,
+      "reasoning": "Help licenses a bare infinitive here, and several verbs naturally describe using photographs to classify plants."
+    },
+    {
+      "questionId": "note-seed-banks-05",
+      "predictedGrammarCategory": "predicative adjective in coordination",
+      "plausibleCompletionCountBand": "two-to-three",
+      "plausibleCompletions": ["cool", "dark", "clean"],
+      "uniqueExactGuess": null,
+      "reasoning": "The blank is an adjective coordinated with dry, while several storage-condition adjectives are plausible."
+    },
+    {
+      "questionId": "note-seed-banks-06",
+      "predictedGrammarCategory": "plural count noun in coordinated food list",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["beans", "pulses", "vegetables", "legumes"],
+      "uniqueExactGuess": null,
+      "reasoning": "The blank completes a food list after or, and many plural edible-plant nouns fit without passage evidence."
+    },
+    {
+      "questionId": "note-night-libraries-01",
+      "predictedGrammarCategory": "noun in fixed adverbial phrase",
+      "plausibleCompletionCountBand": "one",
+      "plausibleCompletions": ["home"],
+      "uniqueExactGuess": "home",
+      "reasoning": "The sequence work at strongly cues the fixed phrase work at home, making one exact completion uniquely salient from the frame alone."
+    },
+    {
+      "questionId": "note-night-libraries-02",
+      "predictedGrammarCategory": "noun phrase in coordinated facilities list",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["Wi-Fi", "computers", "printers", "lamps"],
+      "uniqueExactGuess": null,
+      "reasoning": "The blank names another usable facility or resource, and the broad study-space context supports many alternatives."
+    },
+    {
+      "questionId": "note-night-libraries-03",
+      "predictedGrammarCategory": "mass or singular noun as subject head",
+      "plausibleCompletionCountBand": "two-to-three",
+      "plausibleCompletions": ["security", "lighting", "supervision"],
+      "uniqueExactGuess": null,
+      "reasoning": "Extra modifies something treated as singular or uncountable, but several entrance-related provisions fit naturally."
+    },
+    {
+      "questionId": "note-night-libraries-04",
+      "predictedGrammarCategory": "singular count noun after definite article",
+      "plausibleCompletionCountBand": "two-to-three",
+      "plausibleCompletions": ["building", "entrance", "library"],
+      "uniqueExactGuess": null,
+      "reasoning": "The definite article cues a singular location noun, while multiple locations can naturally follow outside the."
+    },
+    {
+      "questionId": "note-night-libraries-05",
+      "predictedGrammarCategory": "plural count noun in embedded question",
+      "plausibleCompletionCountBand": "two-to-three",
+      "plausibleCompletions": ["rooms", "areas", "facilities"],
+      "uniqueExactGuess": null,
+      "reasoning": "Agreement with are requires a plural noun, and signs could identify several kinds of accessible space."
+    },
+    {
+      "questionId": "note-night-libraries-06",
+      "predictedGrammarCategory": "mass noun after adjective",
+      "plausibleCompletionCountBand": "two-to-three",
+      "plausibleCompletions": ["permission", "supervision", "consent"],
+      "uniqueExactGuess": null,
+      "reasoning": "Parental modifies an uncountable requirement, but several semantically related nouns fit the rule context."
+    }
+  ]
+}

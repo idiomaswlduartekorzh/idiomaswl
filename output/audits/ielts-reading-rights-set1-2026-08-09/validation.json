@@ -1,0 +1,199 @@
+{
+  "schemaVersion": "ielts-reading-rights-validation.v1",
+  "generatedAt": "2026-08-09T00:00:00-05:00",
+  "unit": "F0.2a — Contrato deny-by-default y expediente de mock set-1",
+  "status": "pass",
+  "scope": {
+    "targetMock": "set-1",
+    "readingAssetsInSource": 3,
+    "registryEntries": 3,
+    "registryEntriesTotal": 21,
+    "coveredAssetIds": [
+      "mock:set-1:reading-part-5",
+      "mock:set-1:reading-part-6",
+      "mock:set-1:reading-part-7"
+    ],
+    "parentF02RemainsOpen": true
+  },
+  "policy": {
+    "defaultDisposition": {
+      "rightsBasis": "unknown-quarantined",
+      "disposition": "quarantine",
+      "reasonCode": "missing-rights-registry-entry"
+    },
+    "automatedTriageCanApprove": false,
+    "humanApprovalRequired": true,
+    "independentReviewerRequired": true,
+    "editorialReviewerIdentityAllowed": true,
+    "learnerAndContactPiiForbidden": true,
+    "contentHashPinned": true
+  },
+  "checks": {
+    "exactSetOneCoverage": true,
+    "uniqueAssetIds": true,
+    "uniqueEvidenceIds": true,
+    "sourceHashesCurrent": true,
+    "actualAssetsAllQuarantined": true,
+    "missingRecordDenied": true,
+    "contentMutationDenied": true,
+    "registryStoresNoAssessmentPayload": true,
+    "registryStoresNoLearnerOrContactPii": true,
+    "syntheticContractTransitionsPass": true
+  },
+  "decisions": [
+    {
+      "assetId": "mock:set-1:reading-part-5",
+      "title": "Bakelite",
+      "sourceObjectSha256": "51bfb1a6a110ed1cb09211aab48d533026c6d87992de3a6c45bff267e5ecdb56",
+      "passageSha256": "f1800a80933cf687f5fd27c9f7176c9db92a8128783b87b6c17c44a3a8f6199e",
+      "moduleStatus": "inferred",
+      "provenanceStatus": "probable-third-party-match",
+      "rightsBasis": "unknown-quarantined",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "humanReviewStatus": "pending",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    {
+      "assetId": "mock:set-1:reading-part-6",
+      "title": "What’s so funny?",
+      "sourceObjectSha256": "df93c358fb8c79c806d5537f5d8cd99379e5815f90433d4c158f0015e799a2a8",
+      "passageSha256": "2de952fc362533e1c006d05737840c99eea546079f78f1f87f51beb9b8f3684f",
+      "moduleStatus": "inferred",
+      "provenanceStatus": "probable-third-party-match",
+      "rightsBasis": "unknown-quarantined",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "humanReviewStatus": "pending",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    {
+      "assetId": "mock:set-1:reading-part-7",
+      "title": "The Birth of Scientific English",
+      "sourceObjectSha256": "cbcff7fc3583ddb6bbccd3828f361f3ed6ce094f1b7352eb3c8e53b5ceb9cf97",
+      "passageSha256": "abc4c678cfe569e824db64cb821daf4c49b01c775175dac0162c9db51a5019bc",
+      "moduleStatus": "inferred",
+      "provenanceStatus": "probable-third-party-match",
+      "rightsBasis": "unknown-quarantined",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "humanReviewStatus": "pending",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    }
+  ],
+  "blockerCounts": [
+    {
+      "reasonCode": "authorship-unresolved",
+      "affectedAssets": 3
+    },
+    {
+      "reasonCode": "factual-review-incomplete",
+      "affectedAssets": 3
+    },
+    {
+      "reasonCode": "human-review-pending",
+      "affectedAssets": 3
+    },
+    {
+      "reasonCode": "module-not-declared",
+      "affectedAssets": 3
+    },
+    {
+      "reasonCode": "rights-unresolved",
+      "affectedAssets": 3
+    }
+  ],
+  "negativeControl": {
+    "missingRecord": {
+      "assetId": "mock:set-1:reading-part-missing",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "rightsBasis": "unknown-quarantined",
+      "reasonCodes": [
+        "missing-rights-registry-entry"
+      ]
+    },
+    "contentHashMismatch": {
+      "assetId": "mock:set-1:reading-part-5",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "rightsBasis": "unknown-quarantined",
+      "reasonCodes": [
+        "authorship-unresolved",
+        "content-hash-mismatch",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    }
+  },
+  "contractMutationChecks": {
+    "verifiedOwnedOriginalCanAdvance": true,
+    "authorCannotSelfApprove": true,
+    "verifiedLicenseCanAdvance": true,
+    "licenseWithoutAuthorizationIsBlocked": true,
+    "verifiedPublicDomainCanAdvance": true,
+    "wrongKindModuleEvidenceIsBlocked": true,
+    "whitespaceAuthorshipIsBlocked": true,
+    "missingProvenanceEvidenceIsBlocked": true,
+    "blankFactualReviewIsBlocked": true,
+    "unknownFactualStatusIsBlocked": true,
+    "whitespaceHumanReviewIsBlocked": true,
+    "missingHumanAttestationIsBlocked": true,
+    "unknownHumanStatusIsBlocked": true,
+    "automatedTriageCannotApprove": true,
+    "invalidRightsBasisIsBlocked": true,
+    "invalidRegistryContractIsBlocked": true,
+    "impossibleCalendarDatesAreBlocked": true,
+    "wrongKindFactualResearchIsBlocked": true,
+    "requiredFactualReviewCannotBeNotApplicable": true,
+    "malformedEvidenceArrayFailsClosed": true,
+    "duplicateEvidenceIdsAreBlocked": true,
+    "duplicateRegistryEntriesAreBlocked": true
+  },
+  "evidenceSearchLimit": "Directed and non-exhaustive. Authorization evidence was not located in the reviewed sources; no universal absence or legal conclusion is asserted.",
+  "sources": [
+    {
+      "path": "src/lib/ielts/academic-reading-rights.ts",
+      "sha256": "cabd4adf35c75a14a3537bb07e5db4ef9ce8bc0c1a6f4a276d25518732923643"
+    },
+    {
+      "path": "src/data/practica-exams/ielts-reading-rights-registry.ts",
+      "sha256": "e0b8774fd4166724b5355923b6db4f81bf55a945949cd319d6cf391bb2de0fcf"
+    },
+    {
+      "path": "src/data/mocks/ielts-set-1.ts",
+      "sha256": "093c9b9ff1b5d31e8f7b96bcf0907b36a4d721b84162f70c777bf2c0c145bffd"
+    },
+    {
+      "path": "scripts/check-ielts-reading-rights.mjs",
+      "sha256": "cef1932ebb66faf5dd094806b2d395f2f0de9b75340aaeeccdd9fe98f541c7de"
+    },
+    {
+      "path": "tests/ielts-reading-rights-contract.test.mjs",
+      "sha256": "11f6a8786a5bb413f22ab352c3446a3a7e3d062af4687b8b59cc067b468a1372"
+    }
+  ]
+}

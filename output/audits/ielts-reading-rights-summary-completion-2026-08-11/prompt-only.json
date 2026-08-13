@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "ielts-reading-summary-completion-prompt-only.v1",
+  "generatedAt": "2026-08-11T15:06:00Z",
+  "reviewScope": "F0.2b.9 — grammar and visible-summary shortcut audit over 18 open responses",
+  "reviewerIsolation": "Use only the visible summary frames and word limits. Do not open passages, hints, keys, blind packets, registry or prior reviews.",
+  "taskRule": "For each blank, classify the grammar requested and record whether the visible frame uniquely suggests an exact one- or two-word completion.",
+  "instruction": "Do not reconstruct stored keys. This packet measures prompt-only exact-guess risk without passage evidence.",
+  "excludes": [
+    "passages",
+    "accepted answers",
+    "alternatives",
+    "explanations",
+    "hints",
+    "prior verdicts",
+    "student data"
+  ],
+  "records": [
+    {
+      "assetId": "formative:summary-completion:summary-urban-farms",
+      "sourceObjectSha256": "f10464976342bfef4607a46ba77d611310ffd7cabeae7c9949bd78a100d93640",
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "summaryFrames": [
+        {
+          "questionId": "summary-urban-farms-01",
+          "before": "Rooftop farming is increasingly visible in cities where there is unused ",
+          "after": "."
+        },
+        {
+          "questionId": "summary-urban-farms-02",
+          "before": "These farms may shorten food ",
+          "after": " and help residents notice seasonal produce."
+        },
+        {
+          "questionId": "summary-urban-farms-03",
+          "before": "Careful irrigation and lightweight soil systems can reduce pressure on ",
+          "after": "."
+        },
+        {
+          "questionId": "summary-urban-farms-04",
+          "before": "Rainwater collection can reduce demand for ",
+          "after": "."
+        },
+        {
+          "questionId": "summary-urban-farms-05",
+          "before": "Some projects have an educational role because schools use them for ",
+          "after": "."
+        },
+        {
+          "questionId": "summary-urban-farms-06",
+          "before": "Before planting, successful projects often require engineers to check the ",
+          "after": "."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:summary-completion:summary-repair-cafes",
+      "sourceObjectSha256": "1d4de4d085159c2cb86336bc9f7277d39f26e1ab4d5ff3a4eac0c4a5ff03f2c4",
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "summaryFrames": [
+        {
+          "questionId": "summary-repair-cafes-01",
+          "before": "Repair cafes help residents fix broken ",
+          "after": " with support from volunteers."
+        },
+        {
+          "questionId": "summary-repair-cafes-02",
+          "before": "Visitors are usually asked to stay during the repair so the activity becomes a ",
+          "after": " instead of only a service."
+        },
+        {
+          "questionId": "summary-repair-cafes-03",
+          "before": "Before a session, volunteers check whether common ",
+          "after": " are available."
+        },
+        {
+          "questionId": "summary-repair-cafes-04",
+          "before": "Electrical items should be inspected by people with relevant ",
+          "after": "."
+        },
+        {
+          "questionId": "summary-repair-cafes-05",
+          "before": "Students may develop ",
+          "after": " when they use unfamiliar tools."
+        },
+        {
+          "questionId": "summary-repair-cafes-06",
+          "before": "Many cafes protect the educational mood by focusing on shared ",
+          "after": "."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:summary-completion:summary-shade-mapping",
+      "sourceObjectSha256": "1321f00ec9e13f803a18a8582c40aad5398dd1ea73dd04eb552d6a1eec5e0230",
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "summaryFrames": [
+        {
+          "questionId": "summary-shade-mapping-01",
+          "before": "Cities are mapping shade as ",
+          "after": " become increasingly frequent."
+        },
+        {
+          "questionId": "summary-shade-mapping-02",
+          "before": "The process starts with ",
+          "after": ", but teams also collect information on streets."
+        },
+        {
+          "questionId": "summary-shade-mapping-03",
+          "before": "A short route may feel longer if pedestrians are exposed to ",
+          "after": " for several blocks."
+        },
+        {
+          "questionId": "summary-shade-mapping-04",
+          "before": "Planners compare shade with daily movements to find places where a small ",
+          "after": " could help many people."
+        },
+        {
+          "questionId": "summary-shade-mapping-05",
+          "before": "In narrow streets, temporary ",
+          "after": " may cool people faster than trees."
+        },
+        {
+          "questionId": "summary-shade-mapping-06",
+          "before": "Useful projects connect data collection with ",
+          "after": " that identify action, funding and feedback."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "ielts-reading-sentence-completion-provenance-search.v1",
+  "searchedAt": "2026-08-09T16:32:55Z",
+  "method": "Directed exact-title plus exact opening-fragment public-web search. Returned result surfaces were reviewed for verbal identity; candidate factual URLs were kept separate from provenance identity and were not treated as proof of authorship or license.",
+  "searchSurface": "public web search",
+  "queries": [
+    {
+      "assetId": "formative:sentence-completion:sentence-wetland-parks",
+      "query": "\"Wetland parks and urban flood control\" \"Many cities are redesigning old drainage areas as wetland parks\"",
+      "resultsReviewed": [
+        {
+          "title": "Title 21A - ZONING (21A.01 Through 21A.06)",
+          "url": "https://aqua.kingcounty.gov/council/clerk/code/24-30_Title_21A.htm",
+          "reasonNotExactMatch": "The returned public-law page is topically related to wetland functions and flood storage but does not match the exact title, first sentence or passage identity."
+        },
+        {
+          "title": "The influence of Covid-19 on perceived health effects of wetland parks in China",
+          "url": "https://eprints.whiterose.ac.uk/id/eprint/179817/1/Zhai%20and%20Lange%2C%202021.%20The%20Influence%20of%20Covid-19%20on%20Perceived%20Health%20Effects%20of%20Wetland%20Parks%20in%20China.pdf",
+          "reasonNotExactMatch": "The returned research paper discusses wetland parks, flood control and wellbeing but does not match the exact title, first sentence or passage identity."
+        }
+      ],
+      "candidateFactualSourcesCompared": [
+        "https://www.epa.gov/green-infrastructure/about-green-infrastructure",
+        "https://www.epa.gov/green-infrastructure/mitigate-flooding",
+        "https://www.epa.gov/wetlands/how-do-wetlands-function-and-why-are-they-valuable",
+        "https://www.epa.gov/sites/default/files/2015-11/documents/pondmgmtguide.pdf",
+        "https://www.gov.uk/government/publications/blockage-management-guide"
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    },
+    {
+      "assetId": "formative:sentence-completion:sentence-library-makerspaces",
+      "query": "\"Library makerspaces and practical learning\" \"Public libraries have long provided quiet rooms\"",
+      "resultsReviewed": [
+        {
+          "title": "Feeds — Chesterfield County, VA",
+          "url": "https://www.chesterfield.gov/m/newsflash?cat=145&searchTerms=va+cou",
+          "reasonNotExactMatch": "The returned local-government page mentions libraries, quiet rooms, makerspaces and 3-D printers but does not match the exact title, first sentence or passage identity."
+        },
+        {
+          "title": "Maker-centered learning in higher education: a descriptive case study across disciplines at a university makerspace",
+          "url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1694566/full",
+          "reasonNotExactMatch": "The returned research article discusses practical learning in a makerspace but does not match the exact title, first sentence, public-library setting or passage identity."
+        }
+      ],
+      "candidateFactualSourcesCompared": [
+        "https://www.ala.org/advocacy/sites/ala.org.advocacy/files/content/Workforce/LBB_Playbook_web_013122.pdf",
+        "https://www.tandfonline.com/doi/abs/10.1080/00049670.2013.853335",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9040691/",
+        "https://makered.org/wp-content/uploads/2019/12/IMLS-LibraryMakerspaces2019_WPweb_final.pdf",
+        "https://www.wheatonlibrary.org/policies/noise-level-zones-policy"
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    },
+    {
+      "assetId": "formative:sentence-completion:sentence-night-markets",
+      "query": "\"Night markets and local economies\" \"Night markets are often associated with tourism\"",
+      "resultsReviewed": [
+        {
+          "title": "Narvasa Red Tameko Globalization of Cebu The Spaces in Between Places",
+          "url": "https://www.scribd.com/document/792167616/Narvasa-Red-Tameko-Globalization-of-Cebu-the-Spaces-in-Between-Places",
+          "reasonNotExactMatch": "The returned document discusses night markets, tourism and local economies but does not match the exact title, first sentence or passage identity."
+        },
+        {
+          "title": "Night Markets & Micro-Popups: Rewiring Coastal Town Commerce in Croatia (2026 Strategies)",
+          "url": "https://croatian.top/night-markets-micro-popups-croatia-2026",
+          "reasonNotExactMatch": "The returned article discusses night markets and local economies but does not match the exact title, first sentence or passage identity."
+        }
+      ],
+      "candidateFactualSourcesCompared": [
+        "https://www2.naga.gov.ph/prev-ordinance/ordinance-no-2014-004/",
+        "https://www.bromley.gov.uk/TestTradingMarketStall",
+        "https://www.mdpi.com/2075-5309/16/14/2728",
+        "https://maidstone.gov.uk/home/primary-services/council-and-democracy/information-and-data/council-performance-reports/policies/street-trading-policy",
+        "https://consultation.hackney.gov.uk/parking-markets/fees-and-charges-2026/"
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    }
+  ],
+  "interpretation": "This was a directed and non-exhaustive search. No exact match in the reviewed public-web result surface does not prove originality, authorship, clearance or universal absence of a prior source. The search did not cover licensed databases, print-only works, deleted pages, translations, private documents, drafts or extensive paraphrase. Candidate factual sources were selected for later claim review; their topical relevance or HTTP availability does not verify learner-facing claims, passage identity, authorship or rights."
+}

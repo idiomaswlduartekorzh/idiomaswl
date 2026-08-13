@@ -1,0 +1,309 @@
+{
+  "schemaVersion": "ielts-reading-note-completion-student-walkthrough.v1",
+  "reviewer": {
+    "humanSignature": false,
+    "sourceContext": "blind-review-packet-only",
+    "reviewedAt": "2026-08-11T16:20:00Z",
+    "blindPacketSha256": "4654dd3245bc5d7dc550556908027af3220b28f3b354602e8328a0df12c43721",
+    "notes": "Prospective key-free walkthrough from the blind packet only; it records learner habits, not completions."
+  },
+  "records": [
+    {
+      "assetId": "formative:note-completion:note-mobile-libraries",
+      "passageBarrier": "I may lose the thread when practical details are spread across several short paragraphs.",
+      "wordLimitRisk": "medium",
+      "promptCueRisk": "medium",
+      "hintCueRisk": "not-assessed",
+      "shortcutRisks": [
+        "I may choose a familiar nearby phrase before checking whether it completes the grammar.",
+        "I may treat the notes as a summary and rely on memory instead of returning to the passage."
+      ],
+      "transferValue": "This trains me to follow paraphrase across an informational passage without turning a note cue into a guess.",
+      "nextAction": "Underline the grammatical slot in each note, then verify one contiguous passage phrase before recording anything.",
+      "questionWalkthrough": [
+        {
+          "questionId": "note-mobile-libraries-01",
+          "likelyMisread": "I may mistake a broad description for the specific reason requested.",
+          "predictedGrammarCategory": "adjective or adjective phrase",
+          "wordLimitCheck": "Count the proposed words after removing surrounding note text; keep at two or fewer.",
+          "promptOnlyGuessRisk": "Medium: the sentence sounds natural with several invented choices.",
+          "evidenceSearch": "Search for the passage statement that explains why the service is used.",
+          "passageSpanCheck": "Confirm the chosen wording is uninterrupted in the passage.",
+          "grammarRecheck": "Read the whole note sentence and check that the phrase describes the required noun.",
+          "spellingCheck": "Copy the passage spelling exactly, including any inflection.",
+          "competitorCheck": "Reject a nearby idea if it answers a different part of the note.",
+          "decisionRule": "Choose only wording that satisfies meaning, grammar, and the limit together.",
+          "repairAction": "If two options remain, reread the full source sentence before deciding."
+        },
+        {
+          "questionId": "note-mobile-libraries-02",
+          "likelyMisread": "I may supply a plausible destination from general knowledge rather than the passage.",
+          "predictedGrammarCategory": "plural noun phrase",
+          "wordLimitCheck": "Use no more than two copied words.",
+          "promptOnlyGuessRisk": "High: the category invites common-sense guessing.",
+          "evidenceSearch": "Locate the delivery description and compare every listed destination carefully.",
+          "passageSpanCheck": "Keep the final wording as one continuous source span.",
+          "grammarRecheck": "Check that the phrase matches the plural pattern after the connector.",
+          "spellingCheck": "Preserve the passage form rather than changing singular or plural.",
+          "competitorCheck": "Do not select another location merely because it is also mentioned later.",
+          "decisionRule": "Use the item that belongs to the same source list as the cue.",
+          "repairAction": "Return to the list and trace its punctuation before finalising."
+        },
+        {
+          "questionId": "note-mobile-libraries-03",
+          "likelyMisread": "I may confuse a timing detail with the reason for that timing.",
+          "predictedGrammarCategory": "plural noun phrase",
+          "wordLimitCheck": "Check that the selected span has two words or fewer.",
+          "promptOnlyGuessRisk": "Medium: a routine-related phrase can be guessed too broadly.",
+          "evidenceSearch": "Find the farming-routine example and separate the scheduling trigger from its explanation.",
+          "passageSpanCheck": "Verify that the copied phrase occurs consecutively.",
+          "grammarRecheck": "Ensure the phrase follows the time preposition naturally.",
+          "spellingCheck": "Copy the exact passage spelling.",
+          "competitorCheck": "Reject another time reference from a different local setting.",
+          "decisionRule": "Prefer the phrase tied directly to the named routine.",
+          "repairAction": "Reread the sentence on both sides of the candidate phrase."
+        },
+        {
+          "questionId": "note-mobile-libraries-04",
+          "likelyMisread": "I may choose an associated service feature instead of the item being evaluated.",
+          "predictedGrammarCategory": "singular noun",
+          "wordLimitCheck": "One or two copied words are allowed; do not add an article unless it is in the source span.",
+          "promptOnlyGuessRisk": "Medium: the comparison cue makes several service features seem possible.",
+          "evidenceSearch": "Search for the comparison with collection size.",
+          "passageSpanCheck": "Check that the candidate is an exact uninterrupted span.",
+          "grammarRecheck": "Read the comparison aloud to confirm a singular noun fits.",
+          "spellingCheck": "Use source spelling exactly.",
+          "competitorCheck": "Exclude a related planning detail that is not part of the comparison.",
+          "decisionRule": "Choose the term explicitly evaluated against collection size.",
+          "repairAction": "Mark the comparison words and reread their immediate context."
+        },
+        {
+          "questionId": "note-mobile-libraries-05",
+          "likelyMisread": "I may combine two support activities instead of isolating the requested object.",
+          "predictedGrammarCategory": "plural noun phrase",
+          "wordLimitCheck": "Keep the copied object within the two-word cap.",
+          "promptOnlyGuessRisk": "Medium: institutional terms can sound interchangeable.",
+          "evidenceSearch": "Find the sentence describing staff assistance and distinguish its separate actions.",
+          "passageSpanCheck": "Use only consecutive words from the source.",
+          "grammarRecheck": "Check that the phrase is a suitable object after the verb.",
+          "spellingCheck": "Retain the passage’s plural form if used.",
+          "competitorCheck": "Reject another organisation mentioned for partnership purposes.",
+          "decisionRule": "Select the object tied directly to the specified assistance action.",
+          "repairAction": "Compare the verb-object relationship in note and passage."
+        },
+        {
+          "questionId": "note-mobile-libraries-06",
+          "likelyMisread": "I may overlook the final member of a three-part partnership list.",
+          "predictedGrammarCategory": "plural noun phrase",
+          "wordLimitCheck": "Do not exceed two copied words.",
+          "promptOnlyGuessRisk": "High: many community partners are plausible from background knowledge.",
+          "evidenceSearch": "Locate the partnership list and track the member required by the note structure.",
+          "passageSpanCheck": "Confirm the words are adjacent in the list.",
+          "grammarRecheck": "Check agreement with the plural list pattern.",
+          "spellingCheck": "Copy the source plural exactly.",
+          "competitorCheck": "Do not substitute organisations named elsewhere for a different role.",
+          "decisionRule": "Use the listed partner that completes this exact sequence.",
+          "repairAction": "Recheck the list from its first item through its last."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:note-completion:note-seed-banks",
+      "passageBarrier": "I can follow the topic, but precise process vocabulary may blur together when I read quickly.",
+      "wordLimitRisk": "medium",
+      "promptCueRisk": "high",
+      "hintCueRisk": "not-assessed",
+      "shortcutRisks": [
+        "I may turn a familiar agriculture concept into my own wording instead of copying a passage span.",
+        "I may choose the first related term I see without testing the note’s grammar."
+      ],
+      "transferValue": "This helps me slow down around technical descriptions and distinguish a process, condition, and outcome.",
+      "nextAction": "For each gap, identify the required grammar first and use surrounding source context to eliminate related terms.",
+      "questionWalkthrough": [
+        {
+          "questionId": "note-seed-banks-01",
+          "likelyMisread": "I may confuse the return point with an earlier stage in the cycle.",
+          "predictedGrammarCategory": "singular noun",
+          "wordLimitCheck": "Use a source span of two words or fewer.",
+          "promptOnlyGuessRisk": "Medium: a farming cycle encourages familiar assumptions.",
+          "evidenceSearch": "Find the sentence that describes the borrowing-and-return sequence.",
+          "passageSpanCheck": "Make sure the candidate is consecutive in the passage.",
+          "grammarRecheck": "Check that a noun fits naturally after the preposition.",
+          "spellingCheck": "Copy the exact source form.",
+          "competitorCheck": "Reject a related stage if the passage assigns it a different action.",
+          "decisionRule": "Choose the stage explicitly linked to returning, not merely to growing.",
+          "repairAction": "Reread the entire sequence before choosing."
+        },
+        {
+          "questionId": "note-seed-banks-02",
+          "likelyMisread": "I may select a different environmental benefit because several are presented together.",
+          "predictedGrammarCategory": "singular noun phrase",
+          "wordLimitCheck": "Check the candidate stays within two words.",
+          "promptOnlyGuessRisk": "High: general knowledge makes several conditions sound likely.",
+          "evidenceSearch": "Locate the list of locally valuable traits and match the note’s relationship.",
+          "passageSpanCheck": "Confirm that the proposed words appear side by side.",
+          "grammarRecheck": "Ensure the phrase works after the verb in the note.",
+          "spellingCheck": "Use the passage spelling with no synonym substitution.",
+          "competitorCheck": "Eliminate other traits from the same list that answer a different cue.",
+          "decisionRule": "Choose the trait that completes the exact note relationship.",
+          "repairAction": "Compare the note verb with each item in the source list."
+        },
+        {
+          "questionId": "note-seed-banks-03",
+          "likelyMisread": "I may write a broad description instead of the specific recorded information type.",
+          "predictedGrammarCategory": "plural noun",
+          "wordLimitCheck": "Use no more than two source words.",
+          "promptOnlyGuessRisk": "Medium: documentation fields are easy to invent.",
+          "evidenceSearch": "Find the record-keeping sentence and distinguish each field in its list.",
+          "passageSpanCheck": "Keep the selected expression contiguous.",
+          "grammarRecheck": "Check that it completes the coordinated list grammatically.",
+          "spellingCheck": "Retain the source number and spelling.",
+          "competitorCheck": "Reject a field that belongs to a later explanation rather than the record list.",
+          "decisionRule": "Use the information category directly named alongside the other records.",
+          "repairAction": "Trace the list punctuation before committing."
+        },
+        {
+          "questionId": "note-seed-banks-04",
+          "likelyMisread": "I may focus on the image itself rather than the action it enables.",
+          "predictedGrammarCategory": "base-form verb",
+          "wordLimitCheck": "Use one or two words only and do not add an ending not present in the passage.",
+          "promptOnlyGuessRisk": "Medium: several learning actions are plausible.",
+          "evidenceSearch": "Read the sentence about photographs and identify the learner action stated there.",
+          "passageSpanCheck": "Check that the final wording is continuous.",
+          "grammarRecheck": "Ensure it follows the note’s verb pattern.",
+          "spellingCheck": "Copy the exact verb form.",
+          "competitorCheck": "Reject a verb from another sentence that describes a different task.",
+          "decisionRule": "Choose the action directly enabled by the photographs.",
+          "repairAction": "Read the note aloud with the candidate to test form."
+        },
+        {
+          "questionId": "note-seed-banks-05",
+          "likelyMisread": "I may merge several storage requirements into an overlong answer.",
+          "predictedGrammarCategory": "adjective",
+          "wordLimitCheck": "Select only the single required quality or an allowed contiguous phrase.",
+          "promptOnlyGuessRisk": "Medium: storage conditions are closely related.",
+          "evidenceSearch": "Find the storage requirements and isolate the quality paired with the cue.",
+          "passageSpanCheck": "Confirm the proposed wording is exactly consecutive.",
+          "grammarRecheck": "Check that the adjective completes the parallel description.",
+          "spellingCheck": "Copy source spelling exactly.",
+          "competitorCheck": "Do not choose another storage condition simply because it appears nearby.",
+          "decisionRule": "Use the condition that matches the note’s stated pairing.",
+          "repairAction": "Separate each item in the source list before deciding."
+        },
+        {
+          "questionId": "note-seed-banks-06",
+          "likelyMisread": "I may use a general food term instead of the exact companion category.",
+          "predictedGrammarCategory": "plural noun",
+          "wordLimitCheck": "Keep the answer at two words or fewer.",
+          "promptOnlyGuessRisk": "High: everyday knowledge supplies many plausible food words.",
+          "evidenceSearch": "Locate the educational example involving food preparation and examine its paired categories.",
+          "passageSpanCheck": "Use an uninterrupted source span.",
+          "grammarRecheck": "Confirm a plural noun completes the coordination.",
+          "spellingCheck": "Preserve the passage plural form.",
+          "competitorCheck": "Reject ingredients mentioned in a different illustrative context.",
+          "decisionRule": "Choose the category explicitly coordinated with the given one.",
+          "repairAction": "Recheck the exact pair rather than relying on food knowledge."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:note-completion:note-night-libraries",
+      "passageBarrier": "I may skim familiar public-place vocabulary and miss distinctions between access, staffing, and policy.",
+      "wordLimitRisk": "low",
+      "promptCueRisk": "medium",
+      "hintCueRisk": "not-assessed",
+      "shortcutRisks": [
+        "I may answer from what libraries usually offer instead of what this passage states.",
+        "I may confuse a general service detail with a condition that belongs to the pilot or rules."
+      ],
+      "transferValue": "This builds the habit of separating closely related operational details before choosing a short exact span.",
+      "nextAction": "Pause at contrasts and lists, then test every candidate against the note sentence before copying it.",
+      "questionWalkthrough": [
+        {
+          "questionId": "note-night-libraries-01",
+          "likelyMisread": "I may replace the stated setting with a more general study location.",
+          "predictedGrammarCategory": "singular noun",
+          "wordLimitCheck": "Use one or two source words only.",
+          "promptOnlyGuessRisk": "Medium: the sentence invites a common-sense location guess.",
+          "evidenceSearch": "Find the opening description of which learners the spaces support.",
+          "passageSpanCheck": "Confirm the wording is a contiguous source span.",
+          "grammarRecheck": "Check that the noun follows the location preposition correctly.",
+          "spellingCheck": "Copy the source spelling exactly.",
+          "competitorCheck": "Reject a location mentioned only as part of the facility description.",
+          "decisionRule": "Choose the setting directly tied to the learners’ need.",
+          "repairAction": "Reread the full contrast between learner need and service provision."
+        },
+        {
+          "questionId": "note-night-libraries-02",
+          "likelyMisread": "I may include a facility that is unavailable rather than one users can access.",
+          "predictedGrammarCategory": "noun phrase",
+          "wordLimitCheck": "Keep to two words or fewer.",
+          "promptOnlyGuessRisk": "High: standard library services make a tempting shortcut.",
+          "evidenceSearch": "Read the access list and its contrast with closed services.",
+          "passageSpanCheck": "Use adjacent words exactly as they occur.",
+          "grammarRecheck": "Ensure the phrase completes the coordinated facilities list.",
+          "spellingCheck": "Do not alter the source form.",
+          "competitorCheck": "Exclude facilities described as closed or outside the access list.",
+          "decisionRule": "Select only an item explicitly available to visitors.",
+          "repairAction": "Mark the contrast words before rereading the list."
+        },
+        {
+          "questionId": "note-night-libraries-03",
+          "likelyMisread": "I may confuse a staffing observation with a building condition.",
+          "predictedGrammarCategory": "uncountable noun",
+          "wordLimitCheck": "Use the shortest exact passage wording within the limit.",
+          "promptOnlyGuessRisk": "Medium: several operational needs could fit without evidence.",
+          "evidenceSearch": "Find what staff assess near the entrance during the trial.",
+          "passageSpanCheck": "Confirm the words form one unbroken span.",
+          "grammarRecheck": "Check that the noun works after the quantifier in the note.",
+          "spellingCheck": "Copy source spelling exactly.",
+          "competitorCheck": "Reject a later practical issue that is not assessed near entrances.",
+          "decisionRule": "Choose the need directly linked to the entrance check.",
+          "repairAction": "Use the location cue to rule out other pilot details."
+        },
+        {
+          "questionId": "note-night-libraries-04",
+          "likelyMisread": "I may treat an outdoor detail as if it referred to an indoor room.",
+          "predictedGrammarCategory": "singular noun",
+          "wordLimitCheck": "Keep the copied span within two words.",
+          "promptOnlyGuessRisk": "Medium: building vocabulary can be inferred too easily.",
+          "evidenceSearch": "Locate the practical-issues example and use its spatial wording precisely.",
+          "passageSpanCheck": "Verify the candidate is consecutive in the passage.",
+          "grammarRecheck": "Read the note sentence to confirm a noun fits the preposition.",
+          "spellingCheck": "Retain the exact passage spelling.",
+          "competitorCheck": "Reject another place mentioned in the broader service description.",
+          "decisionRule": "Choose the place directly modified by the outdoor detail.",
+          "repairAction": "Recheck the local context around the practical issue."
+        },
+        {
+          "questionId": "note-night-libraries-05",
+          "likelyMisread": "I may choose a physical feature instead of the location category the signs clarify.",
+          "predictedGrammarCategory": "plural noun",
+          "wordLimitCheck": "Use no more than two exact source words.",
+          "promptOnlyGuessRisk": "Medium: several parts of the building are discussed.",
+          "evidenceSearch": "Find the design sentence about clear signs and identify what they distinguish.",
+          "passageSpanCheck": "Make sure the answer is an uninterrupted span.",
+          "grammarRecheck": "Check plural agreement with the note verb.",
+          "spellingCheck": "Copy the source plural exactly.",
+          "competitorCheck": "Reject another design feature that serves monitoring rather than clarification.",
+          "decisionRule": "Choose the category that the signs explicitly identify.",
+          "repairAction": "Compare the function of signs with the function of other design features."
+        },
+        {
+          "questionId": "note-night-libraries-06",
+          "likelyMisread": "I may confuse the rule’s requirement with the group affected by it.",
+          "predictedGrammarCategory": "singular noun",
+          "wordLimitCheck": "Keep the selected source words within the stated cap.",
+          "promptOnlyGuessRisk": "Medium: policy language can sound predictable without checking evidence.",
+          "evidenceSearch": "Locate the policy limitation and separate the requirement from the people it concerns.",
+          "passageSpanCheck": "Confirm the candidate occurs as one continuous phrase.",
+          "grammarRecheck": "Check that the noun completes the note naturally.",
+          "spellingCheck": "Use exact passage spelling.",
+          "competitorCheck": "Reject nearby rules about behaviour or booking that solve different issues.",
+          "decisionRule": "Choose the stated requirement attached to the relevant group.",
+          "repairAction": "Reread the policy sentence without using general expectations."
+        }
+      ]
+    }
+  ]
+}

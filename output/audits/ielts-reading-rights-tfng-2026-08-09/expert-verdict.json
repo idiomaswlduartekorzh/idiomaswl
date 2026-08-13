@@ -1,0 +1,475 @@
+{
+  "schemaVersion": "ielts-reading-tfng-expert-verdict.v1",
+  "reviewer": {
+    "humanSignature": false,
+    "sourceContext": "two-pass-blind-then-factual-sources",
+    "reviewSequence": [
+      "blind-review",
+      "factual-source-review"
+    ],
+    "reviewerRunId": "tfng-blind-expert-clean-2026-08-09",
+    "reviewedAt": "2026-08-09T10:03:51Z",
+    "blindPacketSha256": "17823e3cb51d1482b6524ea8d70f10a0ae470b4e27bbf5a6e029acd2d9cbec9c",
+    "firstPassSha256": "6e47b538e684f75c64aba6b97ab64f4a54e8237be2ad992932dbb98293edbcf1",
+    "openedEvidenceIds": [
+      "urban-epa-heat-island",
+      "urban-usfs-canopy-inequality-2021",
+      "urban-usfs-assessment-management-2018",
+      "school-govuk-extended-day-case",
+      "school-southwark-homework-clubs",
+      "coastal-earnse-bay-storm-2024",
+      "coastal-natural-england-dorset-2025",
+      "coastal-dune-management-govuk"
+    ],
+    "directSourceReview": true,
+    "notes": [
+      "All eight candidate URLs were opened directly after the first-pass file had been persisted and hashed.",
+      "The Southwark page failed in the text browser but was retrieved directly from its exact URL and reviewed in full.",
+      "Candidate sources establish factual context only; this review is not a human signature, rights clearance, authorship determination, or publication approval."
+    ]
+  },
+  "records": [
+    {
+      "assetId": "formative:true-false-not-given:tfng-set-urban-trees",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "medium",
+        "representationRisk": "medium",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "low",
+        "notes": [
+          "The core cooling mechanism is well supported, and the income-canopy association has strong research support.",
+          "The passage adds unverified details about built form and municipal satellite use, and two TFNG items remain materially ambiguous under the stated literal rule."
+        ]
+      },
+      "questions": [
+        {
+          "questionId": "tfng-urban-trees-01",
+          "selectedAnswer": "FALSE",
+          "evidenceRelation": "contradicts",
+          "supportingQuote": "For many years, urban planners treated city trees mainly as decoration.",
+          "relatedZoneQuote": "For many years, urban planners treated city trees mainly as decoration. Recent research has changed that view.",
+          "absenceTarget": null,
+          "ambiguity": "none",
+          "reasoning": "Treating trees mainly as decoration for many years contradicts the claim that planners have always regarded them as essential infrastructure."
+        },
+        {
+          "questionId": "tfng-urban-trees-02",
+          "selectedAnswer": "TRUE",
+          "evidenceRelation": "entails",
+          "supportingQuote": "Trees can lower surface temperatures by providing shade and by releasing moisture through transpiration.",
+          "relatedZoneQuote": "Trees can lower surface temperatures by providing shade and by releasing moisture through transpiration.",
+          "absenceTarget": null,
+          "ambiguity": "none",
+          "reasoning": "The passage directly identifies moisture release through transpiration as one mechanism by which trees lower temperatures."
+        },
+        {
+          "questionId": "tfng-urban-trees-03",
+          "selectedAnswer": "FALSE",
+          "evidenceRelation": "contradicts",
+          "supportingQuote": "In dense neighborhoods, this cooling effect can reduce the need for air conditioning during hot months.",
+          "relatedZoneQuote": "In dense neighborhoods, this cooling effect can reduce the need for air conditioning during hot months.",
+          "absenceTarget": null,
+          "ambiguity": "material",
+          "reasoning": "The statement converts a possible reduction in need in dense neighborhoods into complete elimination in all neighborhoods. IELTS convention usually treats that reversal of scope and degree as FALSE, but a strict logical reading can regard the universal elimination claim as merely unestablished rather than explicitly negated."
+        },
+        {
+          "questionId": "tfng-urban-trees-04",
+          "selectedAnswer": "TRUE",
+          "evidenceRelation": "entails",
+          "supportingQuote": "lower-income areas may have fewer trees and more exposed concrete",
+          "relatedZoneQuote": "Wealthier districts often have wider streets, private gardens and long-established parks, while lower-income areas may have fewer trees and more exposed concrete.",
+          "absenceTarget": null,
+          "ambiguity": "none",
+          "reasoning": "The passage directly states that lower-income areas may have more exposed concrete in the contrast with wealthier districts."
+        },
+        {
+          "questionId": "tfng-urban-trees-05",
+          "selectedAnswer": "NOT GIVEN",
+          "evidenceRelation": "not-stated",
+          "supportingQuote": null,
+          "relatedZoneQuote": "Some cities now use satellite imagery to identify neighborhoods with the highest heat risk and the lowest tree coverage.",
+          "absenceTarget": "Whether every city government uses satellite imagery, and whether all such use is specifically for planning tree planting.",
+          "ambiguity": "material",
+          "reasoning": "The passage confirms use by some cities but does not state that any city does not use it. Therefore the universal claim is not established or literally contradicted; however, readers may treat 'some' as pragmatically excluding 'every' and select FALSE."
+        },
+        {
+          "questionId": "tfng-urban-trees-06",
+          "selectedAnswer": "FALSE",
+          "evidenceRelation": "contradicts",
+          "supportingQuote": "Young trees need years of care before they provide significant shade",
+          "relatedZoneQuote": "Young trees need years of care before they provide significant shade, and the wrong species can damage sidewalks or require too much water.",
+          "absenceTarget": null,
+          "ambiguity": "none",
+          "reasoning": "Needing years before providing significant shade directly contradicts providing it immediately after planting."
+        },
+        {
+          "questionId": "tfng-urban-trees-07",
+          "selectedAnswer": "NOT GIVEN",
+          "evidenceRelation": "not-stated",
+          "supportingQuote": null,
+          "relatedZoneQuote": "Young trees need years of care before they provide significant shade, and the wrong species can damage sidewalks or require too much water.",
+          "absenceTarget": "The identity or ranking of any tree species as best for dry climates.",
+          "ambiguity": "none",
+          "reasoning": "The passage mentions species selection and water demand but names no species and makes no best-for-dry-climates judgment."
+        },
+        {
+          "questionId": "tfng-urban-trees-08",
+          "selectedAnswer": "TRUE",
+          "evidenceRelation": "entails",
+          "supportingQuote": "Successful urban forestry programs usually combine tree planting with maintenance budgets, community participation and careful species selection.",
+          "relatedZoneQuote": "Successful urban forestry programs usually combine tree planting with maintenance budgets, community participation and careful species selection.",
+          "absenceTarget": null,
+          "ambiguity": "none",
+          "reasoning": "Community participation is explicitly listed as a component usually combined in successful programs."
+        },
+        {
+          "questionId": "tfng-urban-trees-09",
+          "selectedAnswer": "FALSE",
+          "evidenceRelation": "contradicts",
+          "supportingQuote": "Planting trees is not a quick fix.",
+          "relatedZoneQuote": "Planting trees is not a quick fix.",
+          "absenceTarget": null,
+          "ambiguity": "none",
+          "reasoning": "The author explicitly denies that tree planting is a quick fix."
+        },
+        {
+          "questionId": "tfng-urban-trees-10",
+          "selectedAnswer": "NOT GIVEN",
+          "evidenceRelation": "not-stated",
+          "supportingQuote": null,
+          "relatedZoneQuote": "Wealthier districts often have wider streets, private gardens and long-established parks, while lower-income areas may have fewer trees and more exposed concrete.",
+          "absenceTarget": "A comparison showing that private gardens are more common in wealthy districts than in every lower-income area.",
+          "ambiguity": "minor",
+          "reasoning": "The contrast associates private gardens with wealthier districts but does not compare their prevalence with each lower-income area. The sentence structure may invite a broader comparison, but the universal relation is absent."
+        }
+      ],
+      "factualClaims": [
+        {
+          "claim": "Trees can lower surface temperatures by providing shade and by releasing moisture through transpiration.",
+          "assessment": "supported",
+          "evidenceIds": [
+            "urban-epa-heat-island"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "urban-epa-heat-island",
+              "locator": "Benefits of Trees and Vegetation, How Trees and Vegetation Reduce Heat",
+              "evidenceSummary": "EPA explains that urban vegetation lowers surface and air temperatures through shade and evapotranspiration."
+            }
+          ],
+          "note": "The source directly supports both mechanisms in the claim."
+        },
+        {
+          "claim": "In dense neighborhoods, this cooling effect can reduce the need for air conditioning during hot months.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "urban-epa-heat-island"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "urban-epa-heat-island",
+              "locator": "Benefits of Trees and Vegetation, Co-Benefits of Trees: Reduced energy use",
+              "evidenceSummary": "EPA reports that tree shade can decrease air-conditioning demand and that nearby green infrastructure can reduce building energy demand."
+            }
+          ],
+          "note": "The energy-demand mechanism is supported, but the source does not establish the passage's dense-neighborhood and hot-month framing."
+        },
+        {
+          "claim": "Wealthier districts often have wider streets, private gardens and long-established parks, while lower-income areas may have fewer trees and more exposed concrete.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "urban-usfs-canopy-inequality-2021"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "urban-usfs-canopy-inequality-2021",
+              "locator": "Abstract, income comparison across 5,723 US communities",
+              "evidenceSummary": "The study finds substantially less tree cover and higher land-surface temperatures in low-income blocks across most surveyed US urbanized areas."
+            }
+          ],
+          "note": "The income-tree-cover pattern is supported for the US sample, but wider streets, private gardens, established parks, and exposed concrete are not established by this source."
+        },
+        {
+          "claim": "Some cities now use satellite imagery to identify neighborhoods with the highest heat risk and the lowest tree coverage.",
+          "assessment": "unsupported",
+          "evidenceIds": [
+            "urban-usfs-canopy-inequality-2021"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "urban-usfs-canopy-inequality-2021",
+              "locator": "Abstract, methods",
+              "evidenceSummary": "Researchers used aerial photographs and Landsat measurements to study canopy inequality and temperature; the page does not document municipal deployment for neighborhood prioritization."
+            }
+          ],
+          "note": "The candidate evidence demonstrates a research method, not the claimed city-government practice."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:true-false-not-given:tfng-set-school-libraries",
+      "passageAssessment": {
+        "ieltsFitness": "strong",
+        "factualRisk": "high",
+        "representationRisk": "high",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "low",
+        "notes": [
+          "The TFNG evidence relations are clear and self-contained.",
+          "The candidate sources support the general existence of after-school study provision but do not identify or substantiate the passage's detailed programme narrative."
+        ]
+      },
+      "questions": [
+        {
+          "questionId": "tfng-libraries-01",
+          "selectedAnswer": "FALSE",
+          "evidenceRelation": "contradicts",
+          "supportingQuote": "The decision was not only intended to help students borrow books.",
+          "relatedZoneQuote": "The decision was not only intended to help students borrow books.",
+          "absenceTarget": null,
+          "ambiguity": "none",
+          "reasoning": "The explicit 'not only' construction contradicts the claim that borrowing books was the sole purpose."
+        },
+        {
+          "questionId": "tfng-libraries-02",
+          "selectedAnswer": "TRUE",
+          "evidenceRelation": "entails",
+          "supportingQuote": "Teachers noticed that some pupils needed a quiet place to complete assignments before travelling home, especially those who shared bedrooms with younger siblings.",
+          "relatedZoneQuote": "Teachers noticed that some pupils needed a quiet place to complete assignments before travelling home, especially those who shared bedrooms with younger siblings.",
+          "absenceTarget": null,
+          "ambiguity": "minor",
+          "reasoning": "Needing a quiet place before going home, especially among bedroom-sharing pupils, supports difficulty studying at home; the causal wording is implicit rather than formally stated."
+        },
+        {
+          "questionId": "tfng-libraries-03",
+          "selectedAnswer": "FALSE",
+          "evidenceRelation": "contradicts",
+          "supportingQuote": "In the second term, trained volunteers and senior students helped with basic supervision, while teachers remained available only on two afternoons each week.",
+          "relatedZoneQuote": "The first after-school library sessions were supervised by English teachers, but that model was difficult to maintain. In the second term, trained volunteers and senior students helped with basic supervision, while teachers remained available only on two afternoons each week.",
+          "absenceTarget": null,
+          "ambiguity": "none",
+          "reasoning": "The staffing model changed in the second term, so English teachers did not supervise every session throughout the year."
+        },
+        {
+          "questionId": "tfng-libraries-04",
+          "selectedAnswer": "TRUE",
+          "evidenceRelation": "entails",
+          "supportingQuote": "Younger students used the library mostly for homework support, while older students were more likely to use reference books and online databases for exam projects.",
+          "relatedZoneQuote": "Younger students used the library mostly for homework support, while older students were more likely to use reference books and online databases for exam projects.",
+          "absenceTarget": null,
+          "ambiguity": "none",
+          "reasoning": "The direct contrast says older students were more likely to use online databases for exam projects than the younger group."
+        },
+        {
+          "questionId": "tfng-libraries-05",
+          "selectedAnswer": "FALSE",
+          "evidenceRelation": "contradicts",
+          "supportingQuote": "No final decision about Saturdays had been made by the end of the year.",
+          "relatedZoneQuote": "Some parents wanted weekend opening hours, but the school board decided to review weekday demand first. No final decision about Saturdays had been made by the end of the year.",
+          "absenceTarget": null,
+          "ambiguity": "none",
+          "reasoning": "A permanent rejection would be a final decision, whereas the passage explicitly says no final Saturday decision had been made."
+        },
+        {
+          "questionId": "tfng-libraries-06",
+          "selectedAnswer": "FALSE",
+          "evidenceRelation": "contradicts",
+          "supportingQuote": "The head librarian argued that the library should not be judged only by the number of books borrowed",
+          "relatedZoneQuote": "The head librarian argued that the library should not be judged only by the number of books borrowed, because the space now supported several kinds of academic work.",
+          "absenceTarget": null,
+          "ambiguity": "none",
+          "reasoning": "The librarian explicitly rejects book borrowing as the only useful measure."
+        }
+      ],
+      "factualClaims": [
+        {
+          "claim": "Several secondary schools have kept their libraries open after regular lessons.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "school-govuk-extended-day-case"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "school-govuk-extended-day-case",
+              "locator": "Extended school day, Bedford Free School case study",
+              "evidenceSummary": "The official report documents one school remaining open after its normal day with homework, individual study, library, and ICT facilities available."
+            }
+          ],
+          "note": "The source supports a real instance and broader extended-day practice, but not the claim that several secondary-school libraries followed the described model."
+        },
+        {
+          "claim": "Teachers noticed that some pupils needed a quiet place to complete assignments before travelling home, especially those who shared bedrooms with younger siblings.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "school-govuk-extended-day-case"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "school-govuk-extended-day-case",
+              "locator": "Extended school day, Inspiration Trust case study",
+              "evidenceSummary": "The report describes quiet, productive after-school study environments for pupils who may lack one at home."
+            }
+          ],
+          "note": "The general need for quiet study space is supported, but teacher observations, travel timing, shared bedrooms, and younger siblings are not traced."
+        },
+        {
+          "claim": "In the second term, trained volunteers and senior students helped with basic supervision, while teachers remained available only on two afternoons each week.",
+          "assessment": "untraceable",
+          "evidenceIds": [],
+          "sourceFindings": [],
+          "note": "Neither candidate source identifies this programme, term-by-term staffing change, senior-student supervision, or two-afternoon teacher schedule."
+        },
+        {
+          "claim": "Younger students used the library mostly for homework support, while older students were more likely to use reference books and online databases for exam projects.",
+          "assessment": "untraceable",
+          "evidenceIds": [],
+          "sourceFindings": [],
+          "note": "No candidate source provides the stated age-segmented attendance or resource-use data."
+        },
+        {
+          "claim": "Some parents wanted weekend opening hours, but the school board decided to review weekday demand first.",
+          "assessment": "untraceable",
+          "evidenceIds": [],
+          "sourceFindings": [],
+          "note": "No candidate source identifies the parent request, school board, or staged weekday-demand decision."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:true-false-not-given:tfng-set-coastal-paths",
+      "passageAssessment": {
+        "ieltsFitness": "strong",
+        "factualRisk": "high",
+        "representationRisk": "high",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "low",
+        "notes": [
+          "The TFNG items have decisive passage evidence and require no external knowledge.",
+          "Official sources establish real storm damage, inland roll-back, and dune management, but they do not identify the narrated town or substantiate its footfall, stakeholder, notice, and maintenance details."
+        ]
+      },
+      "questions": [
+        {
+          "questionId": "tfng-coastal-01",
+          "selectedAnswer": "FALSE",
+          "evidenceRelation": "contradicts",
+          "supportingQuote": "Instead of rebuilding the path in the same place, engineers moved the most exposed section farther inland.",
+          "relatedZoneQuote": "Instead of rebuilding the path in the same place, engineers moved the most exposed section farther inland.",
+          "absenceTarget": null,
+          "ambiguity": "none",
+          "reasoning": "The engineers explicitly moved the section rather than rebuilding it in the same location."
+        },
+        {
+          "questionId": "tfng-coastal-02",
+          "selectedAnswer": "TRUE",
+          "evidenceRelation": "entails",
+          "supportingQuote": "This decision made the route slightly longer",
+          "relatedZoneQuote": "This decision made the route slightly longer, but it reduced the likelihood that waves would reach the boards during ordinary storms.",
+          "absenceTarget": null,
+          "ambiguity": "none",
+          "reasoning": "The passage directly states that the inland move made the route slightly longer."
+        },
+        {
+          "questionId": "tfng-coastal-03",
+          "selectedAnswer": "FALSE",
+          "evidenceRelation": "contradicts",
+          "supportingQuote": "footfall data showed little change in weekend visitor numbers",
+          "relatedZoneQuote": "After the path reopened, however, footfall data showed little change in weekend visitor numbers.",
+          "absenceTarget": null,
+          "ambiguity": "none",
+          "reasoning": "Little change in weekend visitor numbers contradicts a sharp increase."
+        },
+        {
+          "questionId": "tfng-coastal-04",
+          "selectedAnswer": "TRUE",
+          "evidenceRelation": "entails",
+          "supportingQuote": "They asked the council to keep visitors off the most fragile areas with low fencing and seasonal notices.",
+          "relatedZoneQuote": "Environmental groups supported the inland move because it allowed damaged dunes to recover. They asked the council to keep visitors off the most fragile areas with low fencing and seasonal notices.",
+          "absenceTarget": null,
+          "ambiguity": "none",
+          "reasoning": "The environmental groups explicitly asked for measures to keep visitors off the fragile areas."
+        },
+        {
+          "questionId": "tfng-coastal-05",
+          "selectedAnswer": "FALSE",
+          "evidenceRelation": "contradicts",
+          "supportingQuote": "the notices would be tested for one summer before becoming permanent",
+          "relatedZoneQuote": "The council accepted the fencing proposal but said the notices would be tested for one summer before becoming permanent.",
+          "absenceTarget": null,
+          "ambiguity": "none",
+          "reasoning": "A summer trial before possible permanence contradicts making the notices permanent immediately."
+        },
+        {
+          "questionId": "tfng-coastal-06",
+          "selectedAnswer": "FALSE",
+          "evidenceRelation": "contradicts",
+          "supportingQuote": "one mild winter was not enough evidence to predict long-term savings",
+          "relatedZoneQuote": "Repairs were less frequent than before, although the council warned that one mild winter was not enough evidence to predict long-term savings.",
+          "absenceTarget": null,
+          "ambiguity": "none",
+          "reasoning": "The council expressly warned that the available six-month evidence was insufficient for a long-term savings prediction."
+        }
+      ],
+      "factualClaims": [
+        {
+          "claim": "A coastal town redesigned part of its walking path after winter storms damaged several wooden sections.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "coastal-earnse-bay-storm-2024",
+            "coastal-natural-england-dorset-2025"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "coastal-earnse-bay-storm-2024",
+              "locator": "Council report, paragraphs on Storm Ashley damage and roll-back",
+              "evidenceSummary": "A storm washed away part of an Earnse Bay footpath, and the route is legally able to shift inland as erosion proceeds."
+            },
+            {
+              "evidenceId": "coastal-natural-england-dorset-2025",
+              "locator": "Ready to roll back and Background sections",
+              "evidenceSummary": "Natural England documents coastal-path realignment and legal provision to move routes after erosion or slips."
+            }
+          ],
+          "note": "Real storm damage and inland roll-back are supported, but the sources do not identify the narrated town, repeated winter storms, several wooden sections, or a completed redesign matching the claim."
+        },
+        {
+          "claim": "After the path reopened, however, footfall data showed little change in weekend visitor numbers.",
+          "assessment": "untraceable",
+          "evidenceIds": [],
+          "sourceFindings": [],
+          "note": "No candidate source supplies reopening footfall data or a weekend visitor comparison for the narrated route."
+        },
+        {
+          "claim": "Environmental groups supported the inland move because it allowed damaged dunes to recover.",
+          "assessment": "untraceable",
+          "evidenceIds": [],
+          "sourceFindings": [],
+          "note": "The sources discuss roll-back, stakeholders, and dune conservation generally but do not trace this environmental-group position or recovery rationale to the narrated case."
+        },
+        {
+          "claim": "The council accepted the fencing proposal but said the notices would be tested for one summer before becoming permanent.",
+          "assessment": "untraceable",
+          "evidenceIds": [],
+          "sourceFindings": [],
+          "note": "No candidate source documents this proposal decision, seasonal trial, or permanence condition."
+        },
+        {
+          "claim": "Repairs were less frequent than before, although the council warned that one mild winter was not enough evidence to predict long-term savings.",
+          "assessment": "untraceable",
+          "evidenceIds": [],
+          "sourceFindings": [],
+          "note": "No candidate source reports the claimed repair-frequency comparison, six-month review, mild winter, or savings warning."
+        }
+      ]
+    }
+  ],
+  "recommendation": "quarantine",
+  "blockers": [
+    "Urban questions tfng-urban-trees-03 and tfng-urban-trees-05 permit materially reasonable alternative TFNG labels under the packet's literal contradiction rule.",
+    "The school-library programme's staffing, age-pattern, and board-decision claims are not traceable to the candidate sources.",
+    "The coastal narrative's footfall, stakeholder, seasonal-notice, and maintenance claims are not traceable to the candidate sources.",
+    "The urban passage overextends its sources on neighborhood form and municipal satellite-imagery practice.",
+    "No human authorship, rights-clearance, or publication-verification decision is represented by this AI review."
+  ]
+}

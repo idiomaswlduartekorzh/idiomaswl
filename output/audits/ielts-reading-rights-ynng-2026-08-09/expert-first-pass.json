@@ -1,0 +1,298 @@
+{
+  "schemaVersion": "ielts-reading-ynng-expert-first-pass.v1",
+  "reviewer": {
+    "reviewerRunId": "ynng-independent-ai-editor-2026-08-09-01",
+    "reviewedAt": "2026-08-09T05:39:13-05:00",
+    "blindPacketSha256": "5a7d7550b4cf47168adc018c40a95279c37e427dbf9ba63bbfbe53cc85798ea8",
+    "humanSignature": false,
+    "sourceContext": "blind-review-packet-only",
+    "notes": [
+      "Independent AI editorial first pass; this is not a human signature.",
+      "Only the blind review packet was consulted before these decisions were persisted.",
+      "This review is not rights clearance or publication approval and does not use prior knowledge."
+    ]
+  },
+  "records": [
+    {
+      "assetId": "formative:yes-no-not-given:ynng-station-art",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "titleCueRisk": "low",
+        "notes": [
+          "The title is descriptive and does not reveal a polarity.",
+          "The set tests writer-versus-reported attribution well, but questions 04 and 07 introduce avoidable modal or comparative shifts."
+        ]
+      },
+      "questions": [
+        {
+          "questionId": "ynng-station-art-01",
+          "selectedAnswer": "YES",
+          "evidenceRelation": "agrees",
+          "supportingQuote": "In my view, it gives a public system a visible connection to the neighborhoods it serves.",
+          "relatedZoneQuote": "Yet the strongest argument for station art is not that it decorates a journey. In my view, it gives a public system a visible connection to the neighborhoods it serves.",
+          "absenceTarget": null,
+          "attributionSource": "writer",
+          "ambiguity": "none",
+          "reasoning": "The writer explicitly identifies local connection, rather than decoration, as the strongest argument."
+        },
+        {
+          "questionId": "ynng-station-art-02",
+          "selectedAnswer": "NO",
+          "evidenceRelation": "contradicts",
+          "supportingQuote": "This does not mean that every station should become a gallery.",
+          "relatedZoneQuote": "This does not mean that every station should become a gallery.",
+          "absenceTarget": null,
+          "attributionSource": "writer",
+          "ambiguity": "none",
+          "reasoning": "The universal recommendation in the statement is directly rejected."
+        },
+        {
+          "questionId": "ynng-station-art-03",
+          "selectedAnswer": "NO",
+          "evidenceRelation": "contradicts",
+          "supportingQuote": "When that happens, art can appear imposed, even if it is technically impressive.",
+          "relatedZoneQuote": "Transport authorities sometimes commission large works without asking local residents what would feel meaningful or useful. When that happens, art can appear imposed, even if it is technically impressive.",
+          "absenceTarget": null,
+          "attributionSource": "writer",
+          "ambiguity": "none",
+          "reasoning": "Technical impressiveness is expressly compatible with residents experiencing a work as imposed, so it is not always welcomed."
+        },
+        {
+          "questionId": "ynng-station-art-04",
+          "selectedAnswer": "YES",
+          "evidenceRelation": "agrees",
+          "supportingQuote": "A modest project developed with community groups may do more for public trust than an expensive installation chosen by distant planners.",
+          "relatedZoneQuote": "A modest project developed with community groups may do more for public trust than an expensive installation chosen by distant planners.",
+          "absenceTarget": null,
+          "attributionSource": "writer",
+          "ambiguity": "minor",
+          "reasoning": "The writer gives the community-informed modest project the stronger potential outcome, supporting the stated preference; however, 'may do more' is a conditional comparison rather than an unqualified preference."
+        },
+        {
+          "questionId": "ynng-station-art-05",
+          "selectedAnswer": "NOT GIVEN",
+          "evidenceRelation": "not-stated",
+          "supportingQuote": null,
+          "relatedZoneQuote": "Critics often claim that station art distracts from urgent transport problems. That criticism has force when art budgets replace maintenance or accessibility work.",
+          "absenceTarget": "The writer never states that station-art budgets usually reduce accessibility funding or gives any frequency for such replacement.",
+          "attributionSource": "mixed",
+          "ambiguity": "minor",
+          "reasoning": "Critics own the broad complaint, while the writer accepts only a conditional case; neither voice supplies the statement's 'usually' claim."
+        },
+        {
+          "questionId": "ynng-station-art-06",
+          "selectedAnswer": "YES",
+          "evidenceRelation": "agrees",
+          "supportingQuote": "Art programs can be funded separately, supported by cultural grants or used to explain local history while renovation is already taking place.",
+          "relatedZoneQuote": "Art programs can be funded separately, supported by cultural grants or used to explain local history while renovation is already taking place.",
+          "absenceTarget": null,
+          "attributionSource": "writer",
+          "ambiguity": "none",
+          "reasoning": "The writer explicitly describes art operating while renovation is under way."
+        },
+        {
+          "questionId": "ynng-station-art-07",
+          "selectedAnswer": "NO",
+          "evidenceRelation": "contradicts",
+          "supportingQuote": "A successful station artwork is not necessarily the largest or most photogenic one.",
+          "relatedZoneQuote": "A successful station artwork is not necessarily the largest or most photogenic one. It is the one that helps passengers understand where they are, respects the daily function of the space and gives local people a reason to recognize the station as part of their own environment.",
+          "absenceTarget": null,
+          "attributionSource": "writer",
+          "ambiguity": "material",
+          "reasoning": "The writer rejects photogenicity as the success criterion and supplies different criteria. Yet 'not necessarily' does not logically exclude 'normally', so NO is intended by discourse but NOT GIVEN remains reasonably arguable under strict quantifier logic."
+        },
+        {
+          "questionId": "ynng-station-art-08",
+          "selectedAnswer": "NOT GIVEN",
+          "evidenceRelation": "not-stated",
+          "supportingQuote": null,
+          "relatedZoneQuote": "The real test is whether a project improves the station experience without pretending to solve operational failures.",
+          "absenceTarget": "The writer gives no recommendation to remove all art from stations that have operational problems.",
+          "attributionSource": "writer",
+          "ambiguity": "none",
+          "reasoning": "Acknowledging operational failures and limiting what art can claim to solve neither entails nor contradicts universal removal."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:yes-no-not-given:ynng-remote-work",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "titleCueRisk": "high",
+        "notes": [
+          "The title announces that city centres still need office workers, cueing the passage's rejection of the end-of-business-district prediction and its pro-proximity conclusion.",
+          "The passage supports clean YNNG attribution, but the title weakens independent reading and question 03 requires a careful distinction between task completion and comparative productivity."
+        ]
+      },
+      "questions": [
+        {
+          "questionId": "ynng-remote-work-01",
+          "selectedAnswer": "YES",
+          "evidenceRelation": "agrees",
+          "supportingQuote": "I think this conclusion is too neat.",
+          "relatedZoneQuote": "The rise of remote work has encouraged some commentators to predict the end of central business districts. I think this conclusion is too neat.",
+          "absenceTarget": null,
+          "attributionSource": "mixed",
+          "ambiguity": "none",
+          "reasoning": "The prediction belongs to commentators, but the writer explicitly evaluates it as too neat, which agrees with 'oversimplified'."
+        },
+        {
+          "questionId": "ynng-remote-work-02",
+          "selectedAnswer": "NO",
+          "evidenceRelation": "contradicts",
+          "supportingQuote": "That does not mean every company should force employees back five days a week.",
+          "relatedZoneQuote": "That does not mean every company should force employees back five days a week.",
+          "absenceTarget": null,
+          "attributionSource": "writer",
+          "ambiguity": "none",
+          "reasoning": "The writer directly rejects the five-day requirement."
+        },
+        {
+          "questionId": "ynng-remote-work-03",
+          "selectedAnswer": "NOT GIVEN",
+          "evidenceRelation": "not-stated",
+          "supportingQuote": null,
+          "relatedZoneQuote": "A rigid return-to-office policy can waste time and damage trust when people have already shown they can complete focused tasks at home.",
+          "absenceTarget": "The writer never compares the overall productivity of remote employees with that of office employees.",
+          "attributionSource": "writer",
+          "ambiguity": "minor",
+          "reasoning": "Ability to complete focused tasks at home is not a claim that either location produces higher or lower employee productivity."
+        },
+        {
+          "questionId": "ynng-remote-work-04",
+          "selectedAnswer": "YES",
+          "evidenceRelation": "agrees",
+          "supportingQuote": "However, entirely optional attendance can create another problem: if nobody knows when colleagues will be present, the office loses its value as a shared meeting place.",
+          "relatedZoneQuote": "However, entirely optional attendance can create another problem: if nobody knows when colleagues will be present, the office loses its value as a shared meeting place.",
+          "absenceTarget": null,
+          "attributionSource": "writer",
+          "ambiguity": "none",
+          "reasoning": "The passage expressly says completely optional attendance can make the office lose its shared-place value."
+        },
+        {
+          "questionId": "ynng-remote-work-05",
+          "selectedAnswer": "NO",
+          "evidenceRelation": "contradicts",
+          "supportingQuote": "City governments also have a role, but they should not rescue office districts by protecting old habits.",
+          "relatedZoneQuote": "City governments also have a role, but they should not rescue office districts by protecting old habits. Instead, they should make centres more mixed and resilient.",
+          "absenceTarget": null,
+          "attributionSource": "writer",
+          "ambiguity": "none",
+          "reasoning": "The writer rejects preservation of old office-district habits and advocates change."
+        },
+        {
+          "questionId": "ynng-remote-work-06",
+          "selectedAnswer": "NOT GIVEN",
+          "evidenceRelation": "not-stated",
+          "supportingQuote": null,
+          "relatedZoneQuote": "Empty ground-floor units can become clinics, classrooms or small performance spaces.",
+          "absenceTarget": "The writer does not compare clinics or classrooms with shops or say that either use is better.",
+          "attributionSource": "writer",
+          "ambiguity": "none",
+          "reasoning": "The examples are possible new uses for empty units, not a ranking against shops."
+        },
+        {
+          "questionId": "ynng-remote-work-07",
+          "selectedAnswer": "YES",
+          "evidenceRelation": "agrees",
+          "supportingQuote": "The real challenge is to use proximity deliberately, rather than pretending that every task becomes better simply because it happens in the same building.",
+          "relatedZoneQuote": "Remote work has changed the city centre, but it has not made proximity irrelevant. The real challenge is to use proximity deliberately, rather than pretending that every task becomes better simply because it happens in the same building.",
+          "absenceTarget": null,
+          "attributionSource": "writer",
+          "ambiguity": "none",
+          "reasoning": "Using proximity deliberately, while rejecting it as an automatic benefit for every task, agrees with selective use."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:yes-no-not-given:ynng-school-uniforms",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "titleCueRisk": "medium",
+        "notes": [
+          "The phrase 'A careful argument' cues a qualified rather than absolute stance, which helps with questions 01 and 06.",
+          "Most decisions are textually clean, but question 04 compresses a nuanced comparison into an awkward 'all loss' formulation."
+        ]
+      },
+      "questions": [
+        {
+          "questionId": "ynng-uniforms-01",
+          "selectedAnswer": "YES",
+          "evidenceRelation": "agrees",
+          "supportingQuote": "Debates about school uniforms often become strangely absolute.",
+          "relatedZoneQuote": "Debates about school uniforms often become strangely absolute. Supporters say uniforms create equality; opponents say they erase individuality. Both claims contain something useful, but neither is strong enough on its own.",
+          "absenceTarget": null,
+          "attributionSource": "writer",
+          "ambiguity": "minor",
+          "reasoning": "The writer frames the debate's two opposing claims as absolute and individually insufficient, which supports the statement, although 'both sides' is an inferred mapping to supporters and opponents."
+        },
+        {
+          "questionId": "ynng-uniforms-02",
+          "selectedAnswer": "NO",
+          "evidenceRelation": "contradicts",
+          "supportingQuote": "A uniform is therefore a partial tool, not a complete answer to inequality.",
+          "relatedZoneQuote": "A uniform is therefore a partial tool, not a complete answer to inequality.",
+          "absenceTarget": null,
+          "attributionSource": "writer",
+          "ambiguity": "none",
+          "reasoning": "The writer explicitly denies that uniforms are a complete solution to inequality."
+        },
+        {
+          "questionId": "ynng-uniforms-03",
+          "selectedAnswer": "NO",
+          "evidenceRelation": "contradicts",
+          "supportingQuote": "Young people express identity through language, friendships, interests and choices outside school.",
+          "relatedZoneQuote": "The strongest objection is not that students lose every form of self-expression. Young people express identity through language, friendships, interests and choices outside school.",
+          "absenceTarget": null,
+          "attributionSource": "writer",
+          "ambiguity": "none",
+          "reasoning": "The passage explicitly identifies several ways students continue to express identity."
+        },
+        {
+          "questionId": "ynng-uniforms-04",
+          "selectedAnswer": "YES",
+          "evidenceRelation": "agrees",
+          "supportingQuote": "The more serious concern is whether uniform rules are enforced unevenly.",
+          "relatedZoneQuote": "The strongest objection is not that students lose every form of self-expression. Young people express identity through language, friendships, interests and choices outside school. The more serious concern is whether uniform rules are enforced unevenly.",
+          "absenceTarget": null,
+          "attributionSource": "writer",
+          "ambiguity": "material",
+          "reasoning": "The intended comparison clearly elevates uneven enforcement over the total-loss objection. However, the statement's 'than all loss of self-expression' can mean any loss rather than loss of every form, a broader comparison the writer does not make; NOT GIVEN is therefore reasonably arguable."
+        },
+        {
+          "questionId": "ynng-uniforms-05",
+          "selectedAnswer": "NOT GIVEN",
+          "evidenceRelation": "not-stated",
+          "supportingQuote": null,
+          "relatedZoneQuote": "It is less true when families must buy from a single supplier or replace branded pieces quickly.",
+          "absenceTarget": "The writer does not state how many schools use single suppliers or that most schools do so.",
+          "attributionSource": "writer",
+          "ambiguity": "none",
+          "reasoning": "A conditional description of one costly arrangement supplies no prevalence claim."
+        },
+        {
+          "questionId": "ynng-uniforms-06",
+          "selectedAnswer": "NO",
+          "evidenceRelation": "contradicts",
+          "supportingQuote": "I am not against uniforms.",
+          "relatedZoneQuote": "I am not against uniforms. I am against treating them as a moral shortcut.",
+          "absenceTarget": null,
+          "attributionSource": "writer",
+          "ambiguity": "none",
+          "reasoning": "The writer directly denies opposition to uniforms themselves."
+        },
+        {
+          "questionId": "ynng-uniforms-07",
+          "selectedAnswer": "YES",
+          "evidenceRelation": "agrees",
+          "supportingQuote": "A good policy should be flexible where identity or affordability is at stake, clear enough to avoid arbitrary punishment and modest about what clothing rules can actually achieve.",
+          "relatedZoneQuote": "A good policy should be flexible where identity or affordability is at stake, clear enough to avoid arbitrary punishment and modest about what clothing rules can actually achieve.",
+          "absenceTarget": null,
+          "attributionSource": "writer",
+          "ambiguity": "none",
+          "reasoning": "The recommendation explicitly calls for flexibility on both identity and affordability."
+        }
+      ]
+    }
+  ]
+}

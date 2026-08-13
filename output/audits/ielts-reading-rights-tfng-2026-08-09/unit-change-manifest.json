@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "ielts-reading-tfng-unit-change-manifest.v1",
+  "unit": "F0.2b.2",
+  "recordedAt": "2026-08-09T04:57:00-05:00",
+  "learnerFacingChangeAuthorized": false,
+  "learnerFacingBaselinePaths": [
+    "src/data/practica-exams/seo-catalog.ts",
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/true-false-not-given/page.tsx",
+    "src/components/exam-practice/ObjectivePracticeEngine.tsx",
+    "src/components/exam-practice/ObjectivePracticeSetBank.tsx"
+  ],
+  "unitSourceFiles": [
+    "src/data/practica-exams/ielts-reading-rights-registry.ts",
+    "scripts/check-ielts-reading-tfng-rights.mjs",
+    "tests/ielts-reading-tfng-rights.test.mjs",
+    "docs/ielts-reading-loop.md"
+  ],
+  "unitOutputDirectory": "output/audits/ielts-reading-rights-tfng-2026-08-09",
+  "interpretation": "This manifest scopes the files intentionally changed for the audit unit. The four learner-facing sources are independently pinned by baseline hash; this does not assert that the entire repository or every shared layout is globally unchanged."
+}

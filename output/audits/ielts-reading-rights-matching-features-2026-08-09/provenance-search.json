@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "ielts-reading-matching-features-provenance-search.v1",
+  "searchedAt": "2026-08-09T08:18:00-05:00",
+  "method": "Directed exact-title, exact-first-sentence, named-entity and distinctive-fragment public-web search; reviewed results were compared for verbal identity and case identity.",
+  "searchSurface": "public web search",
+  "queries": [
+    {
+      "assetId": "formative:matching-features:mf-urban-farming",
+      "query": "\"Different approaches to urban farming\" \"Green Roof Collective\" \"Lina Torres\"",
+      "resultsReviewed": [
+        {
+          "title": "Urban Agriculture — USDA National Agricultural Library",
+          "url": "https://www.nal.usda.gov/farms-and-agricultural-production-systems/urban-agriculture",
+          "reasonNotExactMatch": "Topical institutional overview of rooftop, school, community and controlled-environment agriculture; no named-entity or verbatim passage match."
+        },
+        {
+          "title": "Urban Agriculture — US EPA",
+          "url": "https://www.epa.gov/brownfields/urban-agriculture",
+          "reasonNotExactMatch": "Topical public-sector source on vacant land; no exact project, person or passage match."
+        }
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    },
+    {
+      "assetId": "formative:matching-features:mf-memory-research",
+      "query": "\"Different approaches to studying memory\" \"Helen Ward\" \"Moreno Lab\" \"Kenji Sato\"",
+      "resultsReviewed": [
+        {
+          "title": "Active decision-making and route learning — PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25419818/",
+          "reasonNotExactMatch": "Conceptually related primary research; no match for Helen Ward, the stated pause/prediction protocol or the passage wording."
+        },
+        {
+          "title": "The effect of relative confidence and the co-witness memory conformity effect — DOI 10.1002/acp.3320",
+          "url": "https://doi.org/10.1002/acp.3320",
+          "reasonNotExactMatch": "Conceptually close to confident social misinformation and therefore a provenance alert, but no nominal or verbatim match to Moreno Lab."
+        }
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    },
+    {
+      "assetId": "formative:matching-features:mf-transport-policies",
+      "query": "\"City transport policies with different goals\" \"Rivergate Bus Priority Plan\" \"Northbridge Safe Streets Programme\"",
+      "resultsReviewed": [
+        {
+          "title": "Bus Priority Programme — Transport for London",
+          "url": "https://tfl.gov.uk/modes/buses/bus-priority-programme",
+          "reasonNotExactMatch": "Topical institutional source on bus priority and kerbside activity; no Rivergate identity or verbatim match."
+        },
+        {
+          "title": "Mobility as a Service code of practice — UK Department for Transport",
+          "url": "https://www.gov.uk/government/publications/mobility-as-a-service-maas-code-of-practice/mobility-as-a-service-code-of-practice",
+          "reasonNotExactMatch": "Topical public-sector source on multimodal integration and digital exclusion; no named programme or passage match."
+        }
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    }
+  ],
+  "interpretation": "Directed and non-exhaustive. No exact match in reviewed results does not prove originality, authorship, clearance or universal absence of a prior source. The search did not cover licensed databases, print-only works, deleted pages, translations, private documents, drafts or extensive paraphrase. Repository history establishes when content entered this repository, not who created it; conceptual similarity in the memory passage requires human source reconstruction, not automatic attribution."
+}

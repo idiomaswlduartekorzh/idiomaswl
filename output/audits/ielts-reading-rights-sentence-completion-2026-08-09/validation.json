@@ -1,0 +1,1006 @@
+{
+  "schemaVersion": "ielts-reading-sentence-completion-rights-validation.v1",
+  "generatedAt": "2026-08-09T17:02:00Z",
+  "unit": "F0.2b.8 — three formative Sentence Completion passages",
+  "status": "pass",
+  "passMeaning": "PASS certifies audit coverage, identity, quarantine, prompt-only review, exact-answer adjudication and risk detection. It does not approve accepted alternatives, keys, factuality, rights, publication, runtime conformity or student efficacy; bank and content certification remain BLOCKED.",
+  "scope": {
+    "passages": 3,
+    "questions": 18,
+    "canonicalAnswers": 18,
+    "rawAcceptedEntries": 20,
+    "normalizedAcceptedValues": 19,
+    "registryEntriesInUnit": 3,
+    "registryEntriesTotal": 27,
+    "coveredAssetIds": [
+      "formative:sentence-completion:sentence-wetland-parks",
+      "formative:sentence-completion:sentence-library-makerspaces",
+      "formative:sentence-completion:sentence-night-markets"
+    ],
+    "parentF02bRemainsOpen": true,
+    "scopedLearnerSourcesChangedSinceBaseline": false
+  },
+  "checks": {
+    "exactCoverageThreeEighteenEighteenTwentyNineteen": true,
+    "stableUniqueIds": true,
+    "registryPolicyV8Pinned": true,
+    "actualAssetsAllQuarantined": true,
+    "officialFormatAndSpellingSourcesRetrieved": true,
+    "factualSourceAvailabilityRecordedNotVerified": true,
+    "renderDependencyClosurePinned": true,
+    "auditRegistryAbsentFromLearnerRuntimeImports": true,
+    "threePacketsContainNoKeysAlternativesEditorialFeedbackHintsPiiOrAssignments": true,
+    "promptOnlyReviewCoverageComplete": true,
+    "expertFirstPassPersistedAndPinned": true,
+    "exactOneBestAnswerContractEnforced": true,
+    "expertAgreementEighteenOfEighteen": true,
+    "evidenceSpansClosestCompetitorWordLimitAndOrderEnforced": true,
+    "acceptedAnswerInventoryTwentyExact": true,
+    "normalizedDuplicateAndNonVerbatimAlternativeDetected": true,
+    "factualClaimsFifteenExact": true,
+    "walkthroughThreeByEighteenExact": true,
+    "multidimensionalShortcutAuditComplete": true,
+    "runtimeExplicitCheckFeedbackKeyHintsAndClientAnswersDetected": true,
+    "runtimeHardCodedWordLimitDetected": true,
+    "runtimeNotMisrepresentedAsPracticeOrExam": true,
+    "statisticalCertificationWithheldNBelow100": true,
+    "contentCertificationBlocked": true,
+    "contentMutationDenied": true,
+    "chronologyMonotonicAndNotFutureDated": true,
+    "boardCurrentClosedNextAndParentOpenExactlyOnce": true,
+    "adversarialLeakMutationsDetected": true
+  },
+  "decisions": [
+    {
+      "assetId": "formative:sentence-completion:sentence-wetland-parks",
+      "title": "Wetland parks and urban flood control",
+      "sourceObjectSha256": "42f7976e179acf1b8afec86285530ad9b5a5a26aba13ca89c7ad82c86bbf22db",
+      "passageSha256": "f1f74d465074ba9570c9c4cbb381538a4b0f38c16251930c4d90f2126d14e1a8",
+      "wordCount": 198,
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "questionCount": 6,
+      "canonicalAnswerCount": 6,
+      "acceptedEntryCount": 6,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 5,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    {
+      "assetId": "formative:sentence-completion:sentence-library-makerspaces",
+      "title": "Library makerspaces and practical learning",
+      "sourceObjectSha256": "8f2b278d1b180a17a78f9aa3057364ebf3a8e401ff6b3b529ac109f8936da6bc",
+      "passageSha256": "e13b68261fc5b2e3c3488ffbb2f920710954d7959d744d0deb24b572edd7b5db",
+      "wordCount": 203,
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "questionCount": 6,
+      "canonicalAnswerCount": 6,
+      "acceptedEntryCount": 7,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 5,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    {
+      "assetId": "formative:sentence-completion:sentence-night-markets",
+      "title": "Night markets and local economies",
+      "sourceObjectSha256": "b0434ae0c3ed919b06a0c256586f1753d299b260bbe5aa34c2813ed788622ff3",
+      "passageSha256": "612893d0f0aabbd88a9b75699523b67530744c3402dfe051e0f4197d7657ff1c",
+      "wordCount": 196,
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "questionCount": 6,
+      "canonicalAnswerCount": 6,
+      "acceptedEntryCount": 7,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 5,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    }
+  ],
+  "visibleClaims": [
+    {
+      "text": "textos originales de WeLearn",
+      "sourcePath": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/sentence-completion/page.tsx",
+      "observed": true
+    },
+    {
+      "text": "Banco original WeLearn",
+      "sourcePath": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/sentence-completion/page.tsx",
+      "observed": true
+    },
+    {
+      "text": "sin copiar preguntas oficiales",
+      "sourcePath": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/sentence-completion/page.tsx",
+      "observed": true
+    },
+    {
+      "text": "preparado por el equipo académico de WeLearn y revisado en julio de 2026",
+      "sourcePath": "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+      "observed": true
+    },
+    {
+      "text": "los ejercicios son originales de WeLearn",
+      "sourcePath": "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+      "observed": true
+    }
+  ],
+  "renderDependencyClosure": {
+    "sourceCount": 15,
+    "paths": [
+      "src/app/(site)/layout.tsx",
+      "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/sentence-completion/page.tsx",
+      "src/app/globals.css",
+      "src/app/layout.tsx",
+      "src/components/SiteNav.tsx",
+      "src/components/SiteSkipLink.tsx",
+      "src/components/ThemeProvider.tsx",
+      "src/components/WhatsAppFloat.tsx",
+      "src/components/exam-practice/OfficialStrategyCard.tsx",
+      "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+      "src/components/exam-practice/StructuredData.tsx",
+      "src/components/exam-practice/SummaryCompletionPassageBank.tsx",
+      "src/components/exam-practice/SummaryCompletionPracticeEngine.tsx",
+      "src/data/practica-exams/seo-catalog.ts",
+      "src/lib/supabase/client.ts"
+    ],
+    "limitation": "Static local-import closure from root/site layouts and route. Runtime-generated or remote copy remains outside scope."
+  },
+  "provenanceSearch": {
+    "schemaVersion": "ielts-reading-sentence-completion-provenance-search.v1",
+    "searchedAt": "2026-08-09T16:32:55Z",
+    "method": "Directed exact-title plus exact opening-fragment public-web search. Returned result surfaces were reviewed for verbal identity; candidate factual URLs were kept separate from provenance identity and were not treated as proof of authorship or license.",
+    "searchSurface": "public web search",
+    "queries": [
+      {
+        "assetId": "formative:sentence-completion:sentence-wetland-parks",
+        "query": "\"Wetland parks and urban flood control\" \"Many cities are redesigning old drainage areas as wetland parks\"",
+        "resultsReviewed": [
+          {
+            "title": "Title 21A - ZONING (21A.01 Through 21A.06)",
+            "url": "https://aqua.kingcounty.gov/council/clerk/code/24-30_Title_21A.htm",
+            "reasonNotExactMatch": "The returned public-law page is topically related to wetland functions and flood storage but does not match the exact title, first sentence or passage identity."
+          },
+          {
+            "title": "The influence of Covid-19 on perceived health effects of wetland parks in China",
+            "url": "https://eprints.whiterose.ac.uk/id/eprint/179817/1/Zhai%20and%20Lange%2C%202021.%20The%20Influence%20of%20Covid-19%20on%20Perceived%20Health%20Effects%20of%20Wetland%20Parks%20in%20China.pdf",
+            "reasonNotExactMatch": "The returned research paper discusses wetland parks, flood control and wellbeing but does not match the exact title, first sentence or passage identity."
+          }
+        ],
+        "candidateFactualSourcesCompared": [
+          "https://www.epa.gov/green-infrastructure/about-green-infrastructure",
+          "https://www.epa.gov/green-infrastructure/mitigate-flooding",
+          "https://www.epa.gov/wetlands/how-do-wetlands-function-and-why-are-they-valuable",
+          "https://www.epa.gov/sites/default/files/2015-11/documents/pondmgmtguide.pdf",
+          "https://www.gov.uk/government/publications/blockage-management-guide"
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      },
+      {
+        "assetId": "formative:sentence-completion:sentence-library-makerspaces",
+        "query": "\"Library makerspaces and practical learning\" \"Public libraries have long provided quiet rooms\"",
+        "resultsReviewed": [
+          {
+            "title": "Feeds — Chesterfield County, VA",
+            "url": "https://www.chesterfield.gov/m/newsflash?cat=145&searchTerms=va+cou",
+            "reasonNotExactMatch": "The returned local-government page mentions libraries, quiet rooms, makerspaces and 3-D printers but does not match the exact title, first sentence or passage identity."
+          },
+          {
+            "title": "Maker-centered learning in higher education: a descriptive case study across disciplines at a university makerspace",
+            "url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1694566/full",
+            "reasonNotExactMatch": "The returned research article discusses practical learning in a makerspace but does not match the exact title, first sentence, public-library setting or passage identity."
+          }
+        ],
+        "candidateFactualSourcesCompared": [
+          "https://www.ala.org/advocacy/sites/ala.org.advocacy/files/content/Workforce/LBB_Playbook_web_013122.pdf",
+          "https://www.tandfonline.com/doi/abs/10.1080/00049670.2013.853335",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC9040691/",
+          "https://makered.org/wp-content/uploads/2019/12/IMLS-LibraryMakerspaces2019_WPweb_final.pdf",
+          "https://www.wheatonlibrary.org/policies/noise-level-zones-policy"
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      },
+      {
+        "assetId": "formative:sentence-completion:sentence-night-markets",
+        "query": "\"Night markets and local economies\" \"Night markets are often associated with tourism\"",
+        "resultsReviewed": [
+          {
+            "title": "Narvasa Red Tameko Globalization of Cebu The Spaces in Between Places",
+            "url": "https://www.scribd.com/document/792167616/Narvasa-Red-Tameko-Globalization-of-Cebu-the-Spaces-in-Between-Places",
+            "reasonNotExactMatch": "The returned document discusses night markets, tourism and local economies but does not match the exact title, first sentence or passage identity."
+          },
+          {
+            "title": "Night Markets & Micro-Popups: Rewiring Coastal Town Commerce in Croatia (2026 Strategies)",
+            "url": "https://croatian.top/night-markets-micro-popups-croatia-2026",
+            "reasonNotExactMatch": "The returned article discusses night markets and local economies but does not match the exact title, first sentence or passage identity."
+          }
+        ],
+        "candidateFactualSourcesCompared": [
+          "https://www2.naga.gov.ph/prev-ordinance/ordinance-no-2014-004/",
+          "https://www.bromley.gov.uk/TestTradingMarketStall",
+          "https://www.mdpi.com/2075-5309/16/14/2728",
+          "https://maidstone.gov.uk/home/primary-services/council-and-democracy/information-and-data/council-performance-reports/policies/street-trading-policy",
+          "https://consultation.hackney.gov.uk/parking-markets/fees-and-charges-2026/"
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      }
+    ],
+    "interpretation": "This was a directed and non-exhaustive search. No exact match in the reviewed public-web result surface does not prove originality, authorship, clearance or universal absence of a prior source. The search did not cover licensed databases, print-only works, deleted pages, translations, private documents, drafts or extensive paraphrase. Candidate factual sources were selected for later claim review; their topical relevance or HTTP availability does not verify learner-facing claims, passage identity, authorship or rights."
+  },
+  "sourceAvailability": {
+    "schemaVersion": "ielts-reading-sentence-completion-source-availability.v1",
+    "checkedAt": "2026-08-09",
+    "retrievalStartedAt": "2026-08-09T16:28:30Z",
+    "method": "Direct HTTPS GET with redirect resolution, a conventional browser user-agent, a 45-second request cap, response-body SHA-256, content type and byte count. HTTP availability is recorded independently from factual claim review, authorship, licensing and rights verification.",
+    "coverageContract": {
+      "officialSources": 2,
+      "factualSources": 15,
+      "totalSources": 17,
+      "factualSourcesPerAsset": 5,
+      "officialEvidenceIds": [
+        "ielts-sentence-completion-official-format",
+        "ielts-british-american-spelling-policy"
+      ],
+      "factualEvidenceIdsByAsset": {
+        "formative:sentence-completion:sentence-wetland-parks": [
+          "wetland-epa-about-green-infrastructure",
+          "wetland-epa-mitigate-flooding",
+          "wetland-epa-wetland-functions",
+          "wetland-epa-pond-wetland-maintenance",
+          "wetland-uk-blockage-management"
+        ],
+        "formative:sentence-completion:sentence-library-makerspaces": [
+          "makers-ala-libraries-build-business",
+          "makers-australian-public-libraries-study",
+          "makers-public-library-coach-study",
+          "makers-imls-community-needs",
+          "makers-wheaton-noise-zones"
+        ],
+        "formative:sentence-completion:sentence-night-markets": [
+          "night-naga-ordinance",
+          "night-bromley-test-trading",
+          "night-primary-built-environment-accessibility",
+          "night-maidstone-street-trading-policy",
+          "night-hackney-market-metrics-costs"
+        ]
+      }
+    },
+    "sources": [
+      {
+        "evidenceId": "ielts-sentence-completion-official-format",
+        "requestedUrl": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading",
+        "retrievedAt": "2026-08-09T16:28:30Z",
+        "httpStatus": 200,
+        "finalUrl": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 187270,
+        "bodySha256": "7d2f15ba40e1f5f7cbf3a659a03f8783c8ab4d8701d6de94aca7786213875ab0",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "ielts-british-american-spelling-policy",
+        "requestedUrl": "https://ielts.org/news-and-insights/ielts-is-the-most-trusted-english-test-in-the-world-heres-why",
+        "retrievedAt": "2026-08-09T16:28:30Z",
+        "httpStatus": 200,
+        "finalUrl": "https://ielts.org/news-and-insights/ielts-is-the-most-trusted-english-test-in-the-world-heres-why",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 167890,
+        "bodySha256": "483d9fafbc07e8f3fd761e0c727e5c438c86f36514d193c624a12f987b160e7c",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "wetland-epa-about-green-infrastructure",
+        "requestedUrl": "https://www.epa.gov/green-infrastructure/about-green-infrastructure",
+        "retrievedAt": "2026-08-09T16:28:30Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.epa.gov/green-infrastructure/about-green-infrastructure",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 72125,
+        "bodySha256": "cd3e1c9af171095c7eb43c54a48d457f1276e650900a4c0738aec62cda872fba",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "wetland-epa-mitigate-flooding",
+        "requestedUrl": "https://www.epa.gov/green-infrastructure/mitigate-flooding",
+        "retrievedAt": "2026-08-09T16:28:30Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.epa.gov/green-infrastructure/mitigate-flooding",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 78794,
+        "bodySha256": "79efb4b7a96c5ee7f6c390ab516604c25270c96f6b73e40887ea1a769c608bb9",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "wetland-epa-wetland-functions",
+        "requestedUrl": "https://www.epa.gov/wetlands/how-do-wetlands-function-and-why-are-they-valuable",
+        "retrievedAt": "2026-08-09T16:28:30Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.epa.gov/wetlands/how-do-wetlands-function-and-why-are-they-valuable",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 62723,
+        "bodySha256": "46148ce8b2405a5912a2a121eafc905447a0f4b055546b5ec2a0baa53363ad00",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "wetland-epa-pond-wetland-maintenance",
+        "requestedUrl": "https://www.epa.gov/sites/default/files/2015-11/documents/pondmgmtguide.pdf",
+        "retrievedAt": "2026-08-09T16:28:30Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.epa.gov/sites/default/files/2015-11/documents/pondmgmtguide.pdf",
+        "redirected": false,
+        "contentType": "application/pdf",
+        "sizeBytes": 4738527,
+        "bodySha256": "9fb93e809bdcaad9dd857eca19d2dd8036f7fff79d51fb1d86d552ff1f362b52",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "wetland-uk-blockage-management",
+        "requestedUrl": "https://www.gov.uk/government/publications/blockage-management-guide",
+        "retrievedAt": "2026-08-09T16:28:30Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.gov.uk/flood-and-coastal-erosion-risk-management-research-reports/blockage-management-guide",
+        "redirected": true,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 71271,
+        "bodySha256": "f62d7f3f100a69caedef1a451434ae4633c2fc0a0fe032dae212edb0b201854c",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved-after-redirect",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "makers-ala-libraries-build-business",
+        "requestedUrl": "https://www.ala.org/advocacy/sites/ala.org.advocacy/files/content/Workforce/LBB_Playbook_web_013122.pdf",
+        "retrievedAt": "2026-08-09T16:28:30Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.ala.org/sites/default/files/advocacy/content/Workforce/LBB_Playbook_web_013122.pdf",
+        "redirected": true,
+        "contentType": "application/pdf",
+        "sizeBytes": 1833841,
+        "bodySha256": "f0c89c00657d54c53370ebd222989ab9febfcc35fd98f2574c40501d495da6a9",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved-after-redirect",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "makers-australian-public-libraries-study",
+        "requestedUrl": "https://www.tandfonline.com/doi/abs/10.1080/00049670.2013.853335",
+        "retrievedAt": "2026-08-09T16:28:30Z",
+        "httpStatus": 403,
+        "finalUrl": "https://www.tandfonline.com/doi/abs/10.1080/00049670.2013.853335",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 5632,
+        "bodySha256": "84c4596f67dc3b1092739bd1d158a8a9a43d3e6c81b526402475a7315a348bcc",
+        "availabilityStatus": "not-retrieved",
+        "retrievalInterpretation": "http-403-response-body-only-requested-content-not-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "makers-public-library-coach-study",
+        "requestedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9040691/",
+        "retrievedAt": "2026-08-09T16:28:30Z",
+        "httpStatus": 200,
+        "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9040691/",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 228373,
+        "bodySha256": "010169cb1fed98da0eb4cae257080842012621504cf7ed3f76919e6549f397a7",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "makers-imls-community-needs",
+        "requestedUrl": "https://makered.org/wp-content/uploads/2019/12/IMLS-LibraryMakerspaces2019_WPweb_final.pdf",
+        "retrievedAt": "2026-08-09T16:28:30Z",
+        "httpStatus": 200,
+        "finalUrl": "https://makered.org/wp-content/uploads/2019/12/IMLS-LibraryMakerspaces2019_WPweb_final.pdf",
+        "redirected": false,
+        "contentType": "application/pdf",
+        "sizeBytes": 614693,
+        "bodySha256": "d842b7ed3d48849f32a894b194d53898388c508ca3b4012f4f7b2848f63b3570",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "makers-wheaton-noise-zones",
+        "requestedUrl": "https://www.wheatonlibrary.org/policies/noise-level-zones-policy",
+        "retrievedAt": "2026-08-09T16:28:30Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.wheatonlibrary.org/policies/noise-level-zones-policy",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 63623,
+        "bodySha256": "a62b11e6eb88f25cb8eace0dc2ff5a891ac23cc0bdbfdca387bf623a51f7b373",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "night-naga-ordinance",
+        "requestedUrl": "https://www2.naga.gov.ph/prev-ordinance/ordinance-no-2014-004/",
+        "retrievedAt": "2026-08-09T16:28:30Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www2.naga.gov.ph/prev-ordinance/ordinance-no-2014-004/",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 265096,
+        "bodySha256": "c4376fc879c0b4ede61033eec6bc6d4450208db26b0aeda77e7feec515f65c0a",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "night-bromley-test-trading",
+        "requestedUrl": "https://www.bromley.gov.uk/TestTradingMarketStall",
+        "retrievedAt": "2026-08-09T16:28:30Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.bromley.gov.uk/TestTradingMarketStall",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 72774,
+        "bodySha256": "aa9b79bd31b158a8e88661a7c8188beb801344bae2c6777a9ccb836ced297c8f",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "night-primary-built-environment-accessibility",
+        "requestedUrl": "https://www.mdpi.com/2075-5309/16/14/2728",
+        "retrievedAt": "2026-08-09T16:28:30Z",
+        "httpStatus": 403,
+        "finalUrl": "https://www.mdpi.com/2075-5309/16/14/2728",
+        "redirected": false,
+        "contentType": "text/html",
+        "sizeBytes": 402,
+        "bodySha256": "9fd8f5912ebc289b05f2ec9f3581ec75a94e0b2dae83e043b0b7d5da119532d7",
+        "availabilityStatus": "not-retrieved",
+        "retrievalInterpretation": "http-403-response-body-only-requested-content-not-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "night-maidstone-street-trading-policy",
+        "requestedUrl": "https://maidstone.gov.uk/home/primary-services/council-and-democracy/information-and-data/council-performance-reports/policies/street-trading-policy",
+        "retrievedAt": "2026-08-09T16:28:30Z",
+        "httpStatus": 403,
+        "finalUrl": "https://maidstone.gov.uk/home/primary-services/council-and-democracy/information-and-data/council-performance-reports/policies/street-trading-policy",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 5989,
+        "bodySha256": "815fe750a2ca251c306a276c5c599836b9019a7c5b4341d11a053c102a2e28dd",
+        "availabilityStatus": "not-retrieved",
+        "retrievalInterpretation": "http-403-response-body-only-requested-content-not-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "night-hackney-market-metrics-costs",
+        "requestedUrl": "https://consultation.hackney.gov.uk/parking-markets/fees-and-charges-2026/",
+        "retrievedAt": "2026-08-09T16:28:30Z",
+        "httpStatus": 200,
+        "finalUrl": "https://consultation.hackney.gov.uk/parking-markets/fees-and-charges-2026/",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 87454,
+        "bodySha256": "f8b033c36348e98c76ec52119cca440b3f0a47da18cc1cd58cd7af2550fb596f",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      }
+    ],
+    "observedAvailability": {
+      "http200": 14,
+      "http403": 3,
+      "redirected": 2,
+      "requestedContentRetrieved": 14,
+      "requestedContentNotRetrieved": 3,
+      "claimsVerified": 0
+    },
+    "interpretation": "Seventeen requested endpoints were checked: fourteen returned HTTP 200 and three returned HTTP 403. The three 403 hashes identify only the observed access-denial response bodies, not the requested publications. Two successful requests redirected and their final URLs are preserved. Availability, redirects, response bytes and body hashes do not establish that any learner-facing claim was reviewed or supported, nor authorship, originality, license, rights-holder authorization, endorsement or suitability for publication. None of these sources proves passage authorship or license, and five candidate factual references per asset remain candidates until a separate direct claim review."
+  },
+  "factualResearch": [
+    {
+      "assetId": "formative:sentence-completion:sentence-wetland-parks",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "wetland-epa-about-green-infrastructure",
+        "wetland-epa-mitigate-flooding",
+        "wetland-epa-wetland-functions",
+        "wetland-epa-pond-wetland-maintenance",
+        "wetland-uk-blockage-management"
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan almacenamiento e infiltración de lluvia, alivio de redes, hábitat y mantenimiento, pero varios apoyos corresponden a infraestructura verde o humedales en general. No verifican que todo parque produzca cada efecto ni la formulación exacta sobre niveles de agua. Disponibilidad o respuesta HTTP no verifica hechos, autoría, derechos ni licencia; falta revisión humana claim-by-claim."
+    },
+    {
+      "assetId": "formative:sentence-completion:sentence-library-makerspaces",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "makers-ala-libraries-build-business",
+        "makers-australian-public-libraries-study",
+        "makers-public-library-coach-study",
+        "makers-imls-community-needs",
+        "makers-wheaton-noise-zones"
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan ejemplos de equipos, el giro de consumo a creación, la importancia de coaches, necesidades comunitarias y zonas de ruido, pero no verifican prevalencia, works best, realistic first projects, equipo costoso sin uso ni el superlativo successful. Algunos accesos fueron limitados. Disponibilidad o indexación no verifica hechos, autoría, derechos ni licencia; falta revisión humana claim-by-claim."
+    },
+    {
+      "assetId": "formative:sentence-completion:sentence-night-markets",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "night-naga-ordinance",
+        "night-bromley-test-trading",
+        "night-primary-built-environment-accessibility",
+        "night-maidstone-street-trading-policy",
+        "night-hackney-market-metrics-costs"
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan cierre temporal de calles, prueba comercial, accesibilidad, controles de nuisance y algunas métricas/costes, pero no verifican el lighting plan, las comparaciones exactas, la cadena causal, la frecuencia after each event ni los superlativos del pasaje. Algunos accesos fueron limitados. Disponibilidad o indexación no verifica hechos, autoría, derechos ni licencia; falta revisión humana claim-by-claim."
+    }
+  ],
+  "shortcutReview": {
+    "promptOnly": {
+      "uniquePredictions": 0,
+      "hits": 0,
+      "total": 18
+    },
+    "interpretation": "Prompt-only exact guesses measure answerability from sentence frames without passage evidence; they are not expert adjudications."
+  },
+  "expertReview": {
+    "reviewerType": "independent-ai-editorial-review",
+    "humanSignature": false,
+    "answerAgreement": {
+      "matches": 18,
+      "total": 18,
+      "rate": 1
+    },
+    "keyConflictCount": 0,
+    "keyConflictQuestionIds": [],
+    "materialAmbiguityCount": 1,
+    "materialAmbiguityQuestionIds": [
+      "sentence-makerspaces-01"
+    ],
+    "nonNaturalSelectionQuestionIds": [],
+    "passageOrderViolationQuestionIds": [],
+    "acceptedAnswerAssessmentCounts": {
+      "verbatim": 18,
+      "normalized-duplicate": 1,
+      "official-spelling-variant": 1,
+      "unsupported": 0
+    },
+    "factualAssessmentCounts": {
+      "supported": 3,
+      "oversimplified": 8,
+      "unsupported": 0,
+      "untraceable": 4
+    },
+    "verdictPath": "output/audits/ielts-reading-rights-sentence-completion-2026-08-09/expert-verdict.json"
+  },
+  "studentWalkthrough": {
+    "passagesCovered": 3,
+    "questionsCovered": 18,
+    "verdictPath": "output/audits/ielts-reading-rights-sentence-completion-2026-08-09/student-walkthrough.json",
+    "limitation": "Blind content-only walkthrough; no students, UI or conformance test."
+  },
+  "runtime": {
+    "clientSideCanonicalAnswersPresent": true,
+    "clientSideAcceptedAlternativesPresent": true,
+    "preResponseHintsAvailable": true,
+    "answerCheckRequiresExplicitButton": true,
+    "answerLocksAfterCheck": true,
+    "correctnessAndExplanationShownImmediatelyAfterCheck": true,
+    "incorrectResponseRevealsCanonicalAnswerAfterCheck": true,
+    "wordLimitDisplayHardCodedToTwo": true,
+    "storedWordLimitParsedForEnforcement": false,
+    "wordLimitViolationExplicitlyBlocksCheck": false,
+    "classification": "guided-training-runtime-with-explicit-check-and-immediate-post-check-key-and-explanation-not-practice-or-exam-simulation",
+    "inheritedAccessibilityRisks": {
+      "runtimeClassification": "guided-training-runtime-with-immediate-feedback-not-practice-or-exam-simulation",
+      "answerKeysDeliveredToClient": true,
+      "inputLocksAfterExplicitCheck": true,
+      "inputLocksWhileTyping": false,
+      "correctnessAndExplanationShownImmediatelyAfterCheck": true,
+      "hintsAvailableBeforeResponse": true,
+      "attemptStatePersisted": false,
+      "resetRequiresConfirmation": false,
+      "resetScope": "all-six-blanks-in-one-passage-engine",
+      "wordLimitVisualWarningPresent": true,
+      "wordLimitEnforcedInScoring": false,
+      "inputAccessibleNamePresent": true,
+      "inputAccessibleNamesUniqueAcrossThreeSets": false,
+      "breadcrumbHasNavAndCurrentSemantics": false,
+      "englishPassageHasLangAttribute": false,
+      "progressIndicatorHasProgrammaticRoleNameAndValue": false,
+      "feedbackHasLiveRegion": false,
+      "hintToggleHasExpandedAndControlsSemantics": false,
+      "headingHierarchyIsOrdered": false,
+      "feedbackFocusManaged": false,
+      "uiUxStaticReviewApplicable": true,
+      "playwrightApplicableToAuditOnlyScaffoldDelta": false,
+      "playwrightBecomesApplicableOnLearnerFacingOrRuntimeDrift": true
+    },
+    "limitation": "Explicit check, immediate post-check key/explanation, client answers, hints and hard-coded limit prevent representation as Practice or Exam simulation."
+  },
+  "antiShortcut": {
+    "storedProfile": {
+      "canonicalAnswerWordCountDistribution": {
+        "oneWord": 5,
+        "twoWords": 13,
+        "overLimit": 0
+      },
+      "alwaysTwoWordAnswerPredictor": {
+        "eligible": 18,
+        "tiesOrAbstentions": 0,
+        "hits": 13
+      },
+      "sameQuestionPositionAcrossSetsModalAnswerWordCount": {
+        "eligible": 18,
+        "positions": 6,
+        "tiesOrAbstentions": 0,
+        "hits": 14
+      },
+      "canonicalAnswerTokenVisibleInSentenceFrame": {
+        "questionsWithOverlap": 1,
+        "questionIds": [
+          "sentence-makerspaces-05"
+        ]
+      },
+      "passageTitleAnswerTokenOverlap": {
+        "questionsWithOverlap": 0,
+        "questionIds": []
+      },
+      "canonicalAnswerOccurrenceInOwnPassage": {
+        "exactlyOnce": 18,
+        "zero": 0,
+        "multiple": 0,
+        "rows": [
+          {
+            "questionId": "sentence-wetlands-01",
+            "occurrences": 1
+          },
+          {
+            "questionId": "sentence-wetlands-02",
+            "occurrences": 1
+          },
+          {
+            "questionId": "sentence-wetlands-03",
+            "occurrences": 1
+          },
+          {
+            "questionId": "sentence-wetlands-04",
+            "occurrences": 1
+          },
+          {
+            "questionId": "sentence-wetlands-05",
+            "occurrences": 1
+          },
+          {
+            "questionId": "sentence-wetlands-06",
+            "occurrences": 1
+          },
+          {
+            "questionId": "sentence-makerspaces-01",
+            "occurrences": 1
+          },
+          {
+            "questionId": "sentence-makerspaces-02",
+            "occurrences": 1
+          },
+          {
+            "questionId": "sentence-makerspaces-03",
+            "occurrences": 1
+          },
+          {
+            "questionId": "sentence-makerspaces-04",
+            "occurrences": 1
+          },
+          {
+            "questionId": "sentence-makerspaces-05",
+            "occurrences": 1
+          },
+          {
+            "questionId": "sentence-makerspaces-06",
+            "occurrences": 1
+          },
+          {
+            "questionId": "sentence-night-markets-01",
+            "occurrences": 1
+          },
+          {
+            "questionId": "sentence-night-markets-02",
+            "occurrences": 1
+          },
+          {
+            "questionId": "sentence-night-markets-03",
+            "occurrences": 1
+          },
+          {
+            "questionId": "sentence-night-markets-04",
+            "occurrences": 1
+          },
+          {
+            "questionId": "sentence-night-markets-05",
+            "occurrences": 1
+          },
+          {
+            "questionId": "sentence-night-markets-06",
+            "occurrences": 1
+          }
+        ]
+      },
+      "setsWithStrictlyAscendingCanonicalEvidenceOrder": 3,
+      "passageOrderViolationQuestionIds": [],
+      "acceptedAnswerNormalization": {
+        "algorithm": "trim+lowercase+strip-trailing-[.,;:!?]+collapse-whitespace",
+        "canonicalEntries": 18,
+        "alternativeEntries": 2,
+        "rawAcceptedEntries": 20,
+        "normalizedAcceptedValues": 19
+      },
+      "normalizedDuplicateAlternativeQuestionIds": [
+        "sentence-makerspaces-01"
+      ],
+      "nonVerbatimAcceptedAlternativeQuestionIds": [
+        "sentence-night-markets-01"
+      ],
+      "crossQuestionNormalizedAnswerCollisions": [],
+      "preResponseHintExposure": {
+        "questionsWithVisibleHintControl": 18,
+        "hintsContainingNormalizedAcceptedAnswer": 0,
+        "hintsNamingPassageLocationOrAnchor": 17,
+        "semanticParaphraseOnlyHintQuestionIds": [
+          "sentence-wetlands-05"
+        ]
+      },
+      "promptOnlyExactGuessReviewRequired": true,
+      "exactOneBestAnswerReviewRequired": true,
+      "statisticalCertification": {
+        "observedQuestions": 18,
+        "certificationThreshold": 100,
+        "eligible": false,
+        "contentCertificationBlocked": true
+      }
+    },
+    "qualitativeCoverage": {
+      "grammarOnlyAndPromptOnlyExactGuess": true,
+      "lexicalOverlap": true,
+      "answerLength": true,
+      "positionAndTextOrder": true,
+      "wordLimit": true,
+      "acceptedAnswerNormalization": true,
+      "exactOneBestAnswer": true,
+      "representation": true,
+      "priorKnowledge": true,
+      "irrelevantLoad": true
+    },
+    "sampleAdequacy": {
+      "certificationThreshold": 100,
+      "observedQuestions": 18,
+      "eligibleForStatisticalCertification": false,
+      "conclusion": "n=18 is too small to certify statistically balanced content."
+    },
+    "statisticalCertification": "withheld-n-below-100",
+    "contentCertification": "blocked-runtime-rights-editorial-review-required"
+  },
+  "applicability": {
+    "rights": "applicable",
+    "fullStackData": "applicable",
+    "ieltsExpert": "applicable",
+    "cognitiveWalkthrough": "applicable-to-content-only",
+    "antiBiasAndLeakage": "applicable",
+    "uiUxAccessibility": "not-applicable-to-unchanged-runtime-delta-conformance",
+    "playwright": "not-applicable-scoped-learner-runtime-unchanged",
+    "evidence": "Seven learner-facing files and fifteen-file closure remain pinned. UI/Playwright ➖ is not conformity."
+  },
+  "negativeControl": {
+    "contentHashMismatch": {
+      "assetId": "formative:sentence-completion:sentence-wetland-parks",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "rightsBasis": "unknown-quarantined",
+      "reasonCodes": [
+        "authorship-unresolved",
+        "content-hash-mismatch",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    "leakControls": {
+      "englishAnswer": [
+        "$.instruction"
+      ],
+      "englishCompletion": [
+        "$.instruction"
+      ],
+      "spanishCompletion": [
+        "$.nested.repair"
+      ],
+      "spanishAnswer": [
+        "$.repair"
+      ],
+      "nestedField": [
+        "$.review.selectedAnswer"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "path": "src/data/practica-exams/seo-catalog.ts",
+      "sha256": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de"
+    },
+    {
+      "path": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/sentence-completion/page.tsx",
+      "sha256": "66b94b11b91e0b8042ea39233136cadba4e666fd63c3d30912deed60c8062986"
+    },
+    {
+      "path": "src/components/exam-practice/SummaryCompletionPracticeEngine.tsx",
+      "sha256": "cae94b947ffc61e112fbe13269ad48e1ee121ca7faeccc8b370d2b124893de98"
+    },
+    {
+      "path": "src/components/exam-practice/SummaryCompletionPassageBank.tsx",
+      "sha256": "54a78799014098dd5f159f63bf654ad12181042be40182ab8381bfc1e51a3c58"
+    },
+    {
+      "path": "src/components/exam-practice/OfficialStrategyCard.tsx",
+      "sha256": "b4f575bd4bc3655f5f0682404f3d937020b4cfd3d54b42adac758647d9133e3e"
+    },
+    {
+      "path": "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+      "sha256": "73d3b725c68c0ed193ceba23ebddca3fec7978f6e84712c99b3dddc190443711"
+    },
+    {
+      "path": "src/components/exam-practice/StructuredData.tsx",
+      "sha256": "3e59a611e4d2bac9ce5994bdbd4ba6303407a5ddf82b26a340efe1f3c2b788d8"
+    },
+    {
+      "path": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/summary-completion/page.tsx",
+      "sha256": "42b3c482e04c4a0453aced1b42d669a67f6063ad1f1e0d8fb9668daac18c22ed"
+    },
+    {
+      "path": "src/components/exam-practice/SummaryCompletionPracticeEngine.tsx",
+      "sha256": "cae94b947ffc61e112fbe13269ad48e1ee121ca7faeccc8b370d2b124893de98"
+    },
+    {
+      "path": "src/components/exam-practice/SummaryCompletionPassageBank.tsx",
+      "sha256": "54a78799014098dd5f159f63bf654ad12181042be40182ab8381bfc1e51a3c58"
+    },
+    {
+      "path": "src/lib/ielts/academic-reading-question-types.ts",
+      "sha256": "455924c25a1e33355265497a5c51d4cdb7d34864b34d539f1a7b91bedf3ce3ec"
+    },
+    {
+      "path": "src/data/practica-exams/seo-catalog.ts",
+      "sha256": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de"
+    },
+    {
+      "path": "src/lib/ielts/academic-reading-rights.ts",
+      "sha256": "cabd4adf35c75a14a3537bb07e5db4ef9ce8bc0c1a6f4a276d25518732923643"
+    },
+    {
+      "path": "src/data/practica-exams/ielts-reading-rights-registry.ts",
+      "sha256": "d4a4c3f16d47cc4e0f74ba8566dc8fb6871161c9c501821e452af76f68e22303"
+    },
+    {
+      "path": "scripts/check-ielts-reading-sentence-completion-rights.mjs",
+      "sha256": "dd9f90443d4061709c2bf5233c2d98709d416912ff1752c56643a6d0fd37e9ca"
+    },
+    {
+      "path": "tests/ielts-reading-sentence-completion-rights.test.mjs",
+      "sha256": "ef1a5a183b2b22c6d405c7a142ddc11a8477dc089559c5e1730d79090e70d29c"
+    },
+    {
+      "path": "docs/ielts-reading-loop.md",
+      "sha256": "f7c504a5ee32237da7241f772ed3de778fa34c7cf46b69a8d786bbdf0da0bc30"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-sentence-completion-2026-08-09/baseline.json",
+      "sha256": "f5c431f49607ed9bc7e4e2396865e0698a01192f061540c2c2cf5ca09f37eb94"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-sentence-completion-2026-08-09/source-availability.json",
+      "sha256": "fd64d57534cd407e777e1e000762db05e16fa19a7285ddc5500717a1150c034c"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-sentence-completion-2026-08-09/provenance-search.json",
+      "sha256": "99508d994cb6e445955e8efab2f470ba4663739e0cc5649dee4dec71f1002f21"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-sentence-completion-2026-08-09/unit-change-manifest.json",
+      "sha256": "9b78f0a0562bd7a48fd741e0f7121b4d94726261cad2f4f6c1ebad225aa1ff7f"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-sentence-completion-2026-08-09/prompt-only.json",
+      "sha256": "1dcf91f402f64348ead00a93c0601addcc76724f068366009c1e5547a8505bb0"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-sentence-completion-2026-08-09/prompt-only-verdict.json",
+      "sha256": "dfd5b2054f8710e8b3bd23c2f203cf14be682229039617cb3ff4c75153d43bba"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-sentence-completion-2026-08-09/blind-review.json",
+      "sha256": "76e4e4de7f6d60e44331a4ec07750f49c2201d81b3ef1f363eb935c9719854e4"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-sentence-completion-2026-08-09/factual-source-review.json",
+      "sha256": "a65bfeba59b9c1c6fe5ec5c942a741bd8bb8f1b4aebc8558f3e2175e4ce5155e"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-sentence-completion-2026-08-09/expert-first-pass.json",
+      "sha256": "becd3ae9c2ff3783a370882ed9716616bd6526a26348d46598a54157e88a2bf5"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-sentence-completion-2026-08-09/expert-verdict.json",
+      "sha256": "12d5f22ef02c781ac7d1fca29fbcc1a8bc4bbbfd2f69b8396c48f914e3cc76f9"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-sentence-completion-2026-08-09/student-walkthrough.json",
+      "sha256": "bac52afdefeae67c220473b9dafb8810c239c4ecab479669689cb2c354d57438"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-sentence-completion-2026-08-09/audit-verdicts.json",
+      "sha256": "015967c7aa85df3d1f303098c964d262b08692de6733d3ed2b3bc7576bb2be8f"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-sentence-completion-2026-08-09/build-report.mjs",
+      "sha256": "967d74e95bb4818e905490bc911c1ce1adc5ce146d74fcef6f3fbaa3668f7d57"
+    }
+  ]
+}

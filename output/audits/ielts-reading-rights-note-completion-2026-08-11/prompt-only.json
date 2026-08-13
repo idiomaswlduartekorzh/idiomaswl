@@ -1,0 +1,181 @@
+{
+  "schemaVersion": "ielts-reading-note-completion-prompt-only.v1",
+  "generatedAt": "2026-08-11T16:08:56Z",
+  "reviewScope": "F0.2b.10 — grammar and visible-note shortcut audit over 18 open responses",
+  "reviewerIsolation": "Use only the visible note frames and word limits. Do not open passages, hints, keys, blind packets, registry or prior reviews.",
+  "taskRule": "For each blank, classify the grammar requested and record whether the visible frame uniquely suggests an exact one- or two-word completion.",
+  "instruction": "Do not reconstruct stored keys. This packet measures prompt-only exact-guess risk without passage evidence.",
+  "excludes": [
+    "passages",
+    "accepted answers",
+    "alternatives",
+    "explanations",
+    "hints",
+    "prior verdicts",
+    "student data"
+  ],
+  "records": [
+    {
+      "assetId": "formative:note-completion:note-mobile-libraries",
+      "sourceObjectSha256": "8d64253dbba9480da1cb9de4082bbf4c7bbee221fc17f748e9f9ddaeadb8ea3f",
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "notesTitle": "Notes: mobile library services",
+      "noteGroups": [
+        {
+          "heading": "Purpose and delivery",
+          "items": [
+            {
+              "questionId": "note-mobile-libraries-01",
+              "before": "Used where permanent branches are too ",
+              "after": " to maintain."
+            },
+            {
+              "questionId": "note-mobile-libraries-02",
+              "before": "Vans take reading materials to schools, markets and ",
+              "after": "."
+            }
+          ]
+        },
+        {
+          "heading": "Planning around routines",
+          "items": [
+            {
+              "questionId": "note-mobile-libraries-03",
+              "before": "In farming areas, visits may happen after ",
+              "after": "."
+            },
+            {
+              "questionId": "note-mobile-libraries-04",
+              "before": "A predictable ",
+              "after": " can be as important as collection size."
+            }
+          ]
+        },
+        {
+          "heading": "Support and sustainability",
+          "items": [
+            {
+              "questionId": "note-mobile-libraries-05",
+              "before": "Staff may help residents search for courses or contact ",
+              "after": "."
+            },
+            {
+              "questionId": "note-mobile-libraries-06",
+              "before": "Programmes often need partnerships with schools, health centres and ",
+              "after": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetId": "formative:note-completion:note-seed-banks",
+      "sourceObjectSha256": "f67761984beb116c7f80dbc9f8807b976a79dda2a2890fdc9b926c8815c438ff",
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "notesTitle": "Notes: community seed banks",
+      "noteGroups": [
+        {
+          "heading": "Purpose and local value",
+          "items": [
+            {
+              "questionId": "note-seed-banks-01",
+              "before": "Farmers can borrow seeds and return them after ",
+              "after": "."
+            },
+            {
+              "questionId": "note-seed-banks-02",
+              "before": "Local varieties may resist pests or tolerate ",
+              "after": "."
+            }
+          ]
+        },
+        {
+          "heading": "Documentation",
+          "items": [
+            {
+              "questionId": "note-seed-banks-03",
+              "before": "Volunteers record each seed name, collection place and growing ",
+              "after": "."
+            },
+            {
+              "questionId": "note-seed-banks-04",
+              "before": "Photos can help younger farmers ",
+              "after": " plants correctly."
+            }
+          ]
+        },
+        {
+          "heading": "Storage and education",
+          "items": [
+            {
+              "questionId": "note-seed-banks-05",
+              "before": "Seeds need protection from insects and should be kept dry and ",
+              "after": "."
+            },
+            {
+              "questionId": "note-seed-banks-06",
+              "before": "Cooks may show recipes using less common grains or ",
+              "after": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetId": "formative:note-completion:note-night-libraries",
+      "sourceObjectSha256": "e77d5edaaaefd183affe68194bf95ad7cd6696cdbecc1148b7281c46c8f46ccd",
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "notesTitle": "Notes: night study spaces",
+      "noteGroups": [
+        {
+          "heading": "Service offered",
+          "items": [
+            {
+              "questionId": "note-night-libraries-01",
+              "before": "Evening rooms support students without quiet places to work at ",
+              "after": "."
+            },
+            {
+              "questionId": "note-night-libraries-02",
+              "before": "Visitors may use desks, power sockets and ",
+              "after": "."
+            }
+          ]
+        },
+        {
+          "heading": "Pilot programme",
+          "items": [
+            {
+              "questionId": "note-night-libraries-03",
+              "before": "Staff check whether extra ",
+              "after": " is required near entrances."
+            },
+            {
+              "questionId": "note-night-libraries-04",
+              "before": "The trial can reveal poor lighting outside the ",
+              "after": "."
+            }
+          ]
+        },
+        {
+          "heading": "Design and rules",
+          "items": [
+            {
+              "questionId": "note-night-libraries-05",
+              "before": "Clear signs show which ",
+              "after": " are open."
+            },
+            {
+              "questionId": "note-night-libraries-06",
+              "before": "Some younger visitors may need parental ",
+              "after": "."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

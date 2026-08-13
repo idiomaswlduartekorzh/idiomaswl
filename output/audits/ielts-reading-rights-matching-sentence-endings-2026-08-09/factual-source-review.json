@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "ielts-reading-matching-sentence-endings-factual-source-review.v1",
+  "generatedAt": "2026-08-09T15:20:00Z",
+  "reviewScope": "F0.2b.7 — second-pass factual-source review only",
+  "reviewerIsolation": "Open only after expert-first-pass.json is persisted and hashed. Do not change any sentence-ending decision after opening these sources.",
+  "instruction": "Open each source directly and assess every exact claim as supported, oversimplified, unsupported or untraceable. Availability and candidacy do not prove a claim, authorship, license, authorization or human verification.",
+  "excludes": [
+    "answer keys",
+    "explanations",
+    "traps",
+    "prior answer verdicts",
+    "student data"
+  ],
+  "records": [
+    {
+      "assetId": "formative:matching-sentence-endings:mse-microclimates",
+      "claimSpansToReview": [
+        "People often think of urban heat as a city-wide problem, but temperatures can vary sharply from one block to the next.",
+        "Dark asphalt absorbs more solar energy than lighter paving, and it releases stored heat slowly after sunset.",
+        "Building overhangs, awnings and transit shelters can provide similar relief when they are designed around the times when people actually use the space.",
+        "Urban designers sometimes model airflow before approving large developments because a new tower may improve comfort in one street while making another feel stagnant.",
+        "Small interventions are most effective when they appear along ordinary routes, where people are already walking, waiting or gathering."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "micro-epa-within-city-hotspots",
+          "label": "US EPA — measuring heat islands",
+          "url": "https://www.epa.gov/heatislands/measuring-heat-islands",
+          "note": "Fuente oficial candidata sobre hotspots dentro de una ciudad y diferencias superficiales de escala fina. No demuestra lo que la gente suele pensar ni acredita por sí sola la definición exacta de microclima del pasaje."
+        },
+        {
+          "evidenceId": "micro-epa-cool-pavements",
+          "label": "US EPA — cool pavements and heat islands",
+          "url": "https://www.epa.gov/heatislands/using-cool-pavements-reduce-heat-islands",
+          "note": "Fuente oficial candidata sobre pavimentos convencionales más calientes y alternativas reflectantes o permeables. No verifica directamente la liberación lenta de calor después del atardecer descrita en el pasaje."
+        },
+        {
+          "evidenceId": "micro-epa-tree-shade",
+          "label": "US EPA — benefits of trees and vegetation",
+          "url": "https://www.epa.gov/heatislands/benefits-trees-and-vegetation",
+          "note": "Fuente oficial candidata sobre sombra y evapotranspiración como mecanismos de enfriamiento. No demuestra la comparación exacta entre ubicaciones o diseños planteada en el pasaje."
+        },
+        {
+          "evidenceId": "micro-city-london-wind-guidelines",
+          "label": "City of London — microclimate and wind guidelines",
+          "url": "https://www.cityoflondon.gov.uk/services/planning/planning-application-requirements/microclimate-guidelines",
+          "note": "Guía oficial candidata que exige estudiar temprano los efectos de viento y microclima de desarrollos grandes. No valida resultados opuestos en calles concretas ni todas las relaciones causales del pasaje."
+        },
+        {
+          "evidenceId": "micro-noaa-transit-shade-study",
+          "label": "NOAA repository — heat vulnerability and transit shade study",
+          "url": "https://repository.library.noaa.gov/view/noaa/59089/noaa_59089_DS1.pdf",
+          "note": "Estudio primario candidato sobre experiencias de calor y falta de sombra en calles y paradas de transporte. No demuestra que una intervención sea universalmente la más eficaz."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan hotspots intraurbanos, pavimentos, sombra, estudios de viento y exposición térmica en transporte, pero no verifican todas las comparaciones de ubicación, secuencias temporales, superlativos ni relaciones causales exactas del pasaje."
+    },
+    {
+      "assetId": "formative:matching-sentence-endings:mse-food-waste",
+      "claimSpansToReview": [
+        "Farmers may leave produce unharvested when market prices fall below picking costs.",
+        "Some grocery chains now use local sales data, weather patterns and holiday schedules to predict demand more accurately.",
+        "However, when the same produce is included in normal displays with simple recipe suggestions, customers are more likely to accept it as ordinary food rather than a special problem category.",
+        "Effective programmes use clear collection windows and packaging routines so that surplus meals can move quickly to community kitchens.",
+        "Composting does not prevent waste at the source, but it can reduce the environmental impact of food that cannot be eaten."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "food-usda-farm-market-loss",
+          "label": "USDA ERS — food loss on farms and markets",
+          "url": "https://ers.usda.gov/amber-waves/2020/march/food-loss-why-food-stays-on-the-farm-or-off-the-market",
+          "note": "Fuente oficial candidata que respalda que precios inferiores a costes de cosecha, procesamiento o envío pueden dejar cultivos sin recolectar. No valida todas las causas o magnitudes del pasaje."
+        },
+        {
+          "evidenceId": "food-springer-grocery-holiday-forecasting",
+          "label": "Operational planning for public holidays in grocery retailing",
+          "url": "https://link.springer.com/article/10.1007/s12063-022-00342-z",
+          "note": "Estudio primario candidato sobre datos históricos, calendario, comportamiento local y ajustes meteorológicos en retail alimentario. No acredita que una cadena concreta combine exactamente los tres insumos ni obtenga el resultado narrado."
+        },
+        {
+          "evidenceId": "food-frontiers-imperfect-produce-cues",
+          "label": "Frontiers — naturalness cues and imperfect produce",
+          "url": "https://www.frontiersin.org/journals/sustainable-food-systems/articles/10.3389/fsufs.2023.1313814/full",
+          "note": "Experimentos candidatos sobre señales de marketing y aceptación de productos imperfectos. No validan la comparación exacta entre contenedor de descuento, exposición normal y recetas del pasaje."
+        },
+        {
+          "evidenceId": "food-fda-donation-safety",
+          "label": "US FDA — key steps for donating food",
+          "url": "https://www.fda.gov/food/retail-food-industryregulatory-assistance-training/key-steps-donating-food-retail-food-establishments",
+          "note": "Guía oficial candidata sobre etiquetado, empaque, temperatura, transporte y registros para donación. No acredita las ventanas de recogida ni cocinas comunitarias específicas descritas."
+        },
+        {
+          "evidenceId": "food-epa-wasted-food-scale",
+          "label": "US EPA — Wasted Food Scale",
+          "url": "https://www.epa.gov/sustainable-management-food/wasted-food-scale",
+          "note": "La escala oficial prioriza prevención, donación y upcycling por encima del compostaje. No respalda el superlativo “último paso” en todos los casos ni lo que especialistas suelen recomendar."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan pérdidas por incentivos de mercado, previsión minorista, señales para productos imperfectos, seguridad en donación y jerarquías de gestión, pero no acreditan las implementaciones, combinaciones de insumos, resultados o generalizaciones exactas del pasaje."
+    },
+    {
+      "assetId": "formative:matching-sentence-endings:mse-coastal-libraries",
+      "claimSpansToReview": [
+        "However, because libraries are familiar, free and open for long hours, some local councils now use them as places where residents can find practical information about flooding, insurance and emergency planning.",
+        "When staff receive training from emergency planners, they can guide visitors toward reliable resources without pretending to be engineers or legal advisers.",
+        "Some libraries therefore run small workshops where residents compare official maps with photographs of streets they know.",
+        "The council later used these observations to prioritize maintenance visits.",
+        "Libraries cannot replace evacuation systems, flood barriers or housing policy."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "coastal-ala-resilience-hubs",
+          "label": "American Library Association — Resilient Communities guidelines",
+          "url": "https://www.ala.org/tools/programming/climatechange/guidelines",
+          "note": "Guía primaria candidata sobre bibliotecas como Climate Resilience Hubs, información de preparación y capacitación. No acredita varios concejos costeros ni el contenido específico sobre seguros de inundación."
+        },
+        {
+          "evidenceId": "coastal-imls-trusted-libraries",
+          "label": "Institute of Museum and Library Services — libraries as essential community services",
+          "url": "https://www.imls.gov/news-events/news-releases/primary-source-directors-message-may-2011?Archive=y&F_All=y",
+          "note": "Fuente institucional que caracteriza las bibliotecas como recursos comunitarios de confianza y servicios esenciales. No valida la conducta exacta, la capacitación del personal ni el disclaimer sobre asesoría legal o técnica del pasaje."
+        },
+        {
+          "evidenceId": "coastal-noaa-flood-map-workshops",
+          "label": "NOAA — tips for using coastal flood maps in communities",
+          "url": "https://coast.noaa.gov/data/digitalcoast/pdf/flood-exposure-tips.pdf",
+          "note": "Guía oficial candidata sobre conversaciones y talleres comunitarios apoyados en mapas de inundación. No identifica bibliotecas ni la comparación concreta con fotografías de calles."
+        },
+        {
+          "evidenceId": "coastal-noaa-participatory-flood-mapping",
+          "label": "NOAA — participatory mapping for watershed management",
+          "url": "https://coast.noaa.gov/digitalcoast/training/nc-watershed-management.html",
+          "note": "Caso oficial candidato en que aportes comunitarios cartografían preocupaciones por inundación. No identifica Harbor Point, bibliotecas, desagües ni priorización de mantenimiento."
+        },
+        {
+          "evidenceId": "coastal-fema-community-information-sharing",
+          "label": "FEMA — information sharing for private-public partnerships",
+          "url": "https://www.fema.gov/sites/default/files/documents/fema_npd_information-sharing-guide-for-private-public-partnerships_092023.pdf",
+          "note": "Guía oficial candidata sobre intercambio de información y resiliencia mediante alianzas público-privadas. No demuestra el rol específico de bibliotecas ni el ranking de cuál sería su mayor valor."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan bibliotecas como recursos de confianza, resilience hubs, talleres con mapas, mapeo participativo e intercambio de información, pero no acreditan los concejos, Harbor Point, prácticas, resultados o ranking de valor exactos del pasaje."
+    }
+  ]
+}

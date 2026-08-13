@@ -1,0 +1,144 @@
+{
+  "schemaVersion": "ielts-reading-table-completion-factual-source-review.v1",
+  "generatedAt": "2026-08-11T17:19:29Z",
+  "reviewScope": "F0.2b.11 — second-pass factual-source review only",
+  "reviewerIsolation": "Open only after expert-first-pass.json is persisted and hashed. Do not change any completion decision after opening these sources.",
+  "prerequisiteHashes": {
+    "promptOnlyVerdict": "379fbc2dd8e2562caf793cec3fd9d998ccc1f18ab24094f5d16f3a452915efe8",
+    "expertFirstPass": "798fd061e9c03a73dddf1cc34f8b706faa6e1df366348544036c164450293add"
+  },
+  "instruction": "Open every source directly. Assess each exact claim as supported, oversimplified, unsupported or untraceable. Availability and candidacy do not prove facts, authorship, license, authorization or review.",
+  "excludes": [
+    "answer keys",
+    "accepted alternatives",
+    "explanations",
+    "hints",
+    "prior answer verdicts",
+    "student data"
+  ],
+  "records": [
+    {
+      "assetId": "formative:table-completion:table-cooling-buildings",
+      "claimSpansToReview": [
+        "Architects call these methods passive cooling because they lower indoor temperatures without relying mainly on powered machines.",
+        "When windows or vents are placed on opposite sides of a room, moving air can carry heat away from occupants and surfaces.",
+        "This works best when designers study the direction of prevailing winds before deciding where openings should go.",
+        "Materials such as stone, concrete and brick can absorb heat during the day and release it slowly at night.",
+        "External shade is usually more effective than curtains because it stops heat before it enters the glass."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "table-cooling-yourhome-passive",
+          "label": "Australian Government — Passive cooling",
+          "url": "https://www.yourhome.gov.au/passive-design/passive-cooling",
+          "note": "Fuente gubernamental candidata sobre ventilación, diseño pasivo y reducción de ganancias térmicas. No implica que la refrigeración mecánica nunca sea necesaria ni valida por sí sola todo el pasaje."
+        },
+        {
+          "evidenceId": "table-cooling-yourhome-thermal-mass",
+          "label": "Australian Government — Thermal mass",
+          "url": "https://www.yourhome.gov.au/passive-design/thermal-mass",
+          "note": "Fuente gubernamental candidata sobre absorción diurna y descarga nocturna de calor. El rendimiento depende de clima, sombra, ventilación y rango térmico."
+        },
+        {
+          "evidenceId": "table-cooling-yourhome-shading",
+          "label": "Australian Government — Shading",
+          "url": "https://www.yourhome.gov.au/passive-design/shading",
+          "note": "Fuente gubernamental candidata sobre orientación solar y sombreado exterior. No convierte una formulación simplificada sobre el vidrio en una regla universal."
+        },
+        {
+          "evidenceId": "table-cooling-newham-external-shading",
+          "label": "London Borough of Newham — Overheating guidance",
+          "url": "https://www.newham.gov.uk/downloads/file/5380/newham-climate-change-guidance-and-topic-paper-part-3-overheating",
+          "note": "Guía municipal candidata sobre control solar y sombreado externo. No demuestra la eficacia de cualquier diseño ni concede derechos sobre la redacción WeLearn."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan ventilación, masa térmica y sombreado, pero no convierten condiciones dependientes de clima, geometría y operación en reglas universales. Disponibilidad no prueba autoría, licencia, hechos ni revisión humana."
+    },
+    {
+      "assetId": "formative:table-completion:table-rain-gardens",
+      "claimSpansToReview": [
+        "Rain gardens are shallow planted areas designed to collect water after heavy rainfall.",
+        "Instead of sending all runoff into drains at once, the garden holds water temporarily and lets it soak slowly into the soil.",
+        "If the soil is permanently wet, plant roots may rot and the garden will not absorb new water effectively.",
+        "Deep-rooted native plants are often recommended because they tolerate both wet and dry periods and help open channels in the soil.",
+        "Schools often use rain gardens as outdoor classrooms."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "table-rain-epa-types",
+          "label": "US EPA — Types of Green Infrastructure",
+          "url": "https://www.epa.gov/green-infrastructure/types-green-infrastructure",
+          "note": "Fuente oficial candidata sobre rain gardens y bioretention. Distingue variantes técnicas y no prueba que todo sistema infiltre toda el agua recibida."
+        },
+        {
+          "evidenceId": "table-rain-epa-brochure",
+          "label": "US EPA — What Is a Rain Garden?",
+          "url": "https://cfpub.epa.gov/npstbx/files/cwc_raingardenbrochure.pdf",
+          "note": "Material EPA candidato sobre áreas plantadas, retención temporal e infiltración. No convierte resultados dependientes del sitio en garantías universales."
+        },
+        {
+          "evidenceId": "table-rain-usda-drainage",
+          "label": "USDA NRCS — Home Drainage Guide",
+          "url": "https://www.nrcs.usda.gov/sites/default/files/2024-07/Home_Drainage_Guide.v25.pdf",
+          "note": "Guía oficial candidata sobre ubicación, drenaje y suelos húmedos. La pudrición y el rendimiento dependen de especie, suelo, oxígeno y duración."
+        },
+        {
+          "evidenceId": "table-rain-psu-introduction",
+          "label": "Penn State Extension — An Introduction to Rain Gardens",
+          "url": "https://extension.psu.edu/an-introduction-to-rain-gardens",
+          "note": "Fuente universitaria candidata sobre selección de plantas y ciclos húmedo-seco. Native no garantiza por sí solo raíces profundas ni adecuación al sitio."
+        },
+        {
+          "evidenceId": "table-rain-epa-school-learning",
+          "label": "US EPA — Teacher Resources",
+          "url": "https://archive.epa.gov/students/web/html/teachers.html",
+          "note": "Archivo EPA candidato con recursos escolares y ambientales. No cuantifica que las escuelas usen rain gardens “often” como aula exterior."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan retención, infiltración, criterios de ubicación y selección de plantas, pero no verifican resultados universales ni la prevalencia escolar expresada como “often”. Disponibilidad no prueba autoría, licencia, hechos ni revisión humana."
+    },
+    {
+      "assetId": "formative:table-completion:table-museum-inventory",
+      "claimSpansToReview": [
+        "Digitising the collection does not simply mean taking pictures.",
+        "Staff must create records that explain what each object is, where it came from and why it matters.",
+        "Curators check existing labels, interview donors and compare objects with catalogues from similar collections.",
+        "When information is uncertain, the record should say so clearly rather than presenting a guess as fact.",
+        "Volunteers can help with scanning and transcription, but a trained staff member should review records before publication."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "table-museum-nps-records",
+          "label": "US National Park Service — Museum Handbook Part II",
+          "url": "https://www.nps.gov/subjects/museums/mh2.htm",
+          "note": "Manual oficial candidato sobre registros, catalogación y responsabilidad documental. No prescribe la tríada exacta de entrevistas, labels y catálogos del pasaje."
+        },
+        {
+          "evidenceId": "table-museum-collections-trust",
+          "label": "Collections Trust — Cataloguing procedure",
+          "url": "https://collectionstrust.org.uk/resource/cataloguing-suggested-procedure/",
+          "note": "Guía sectorial candidata sobre catalogación, fuentes y transparencia de incertidumbre. Los mínimos y esquemas varían entre instituciones."
+        },
+        {
+          "evidenceId": "table-museum-canada-small",
+          "label": "Government of Canada — Capture Your Collections, Small Museum Version",
+          "url": "https://www.canada.ca/en/heritage-information-network/services/digitization/capture-collections-small-museum.html",
+          "note": "Guía gubernamental candidata que separa captura, metadatos y gestión. No convierte “why it matters” en campo obligatorio universal."
+        },
+        {
+          "evidenceId": "table-museum-nps-photography",
+          "label": "US National Park Service — Museum photography",
+          "url": "https://www.nps.gov/subjects/museums/upload/MHII_AppK_Photography-2.pdf",
+          "note": "Manual oficial candidato sobre fotografía consistente, fondos, escala y manejo. No valida por sí solo todos los controles de publicación narrados."
+        },
+        {
+          "evidenceId": "table-museum-loc-preservation",
+          "label": "Library of Congress — Reformatting and digitizing FAQ",
+          "url": "https://www.loc.gov/preservation/about/faqs/reformatting.html",
+          "note": "Fuente institucional candidata sobre digitalización y preservación. No establece una regla universal de revisión por trained staff para todo registro voluntario."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan separación entre captura, catalogación, metadatos, transparencia y preservación, pero no verifican la tríada exacta de identificación ni una regla universal de revisión por trained staff antes de publicar. Disponibilidad no prueba autoría, licencia, hechos ni revisión humana."
+    }
+  ]
+}

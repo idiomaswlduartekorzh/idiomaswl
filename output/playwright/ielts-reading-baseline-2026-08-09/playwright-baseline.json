@@ -1,0 +1,827 @@
+{
+  "schemaVersion": "ielts-reading-playwright-baseline.v1",
+  "baseUrl": "http://localhost:3001",
+  "routeSourceCombinedSha256": "937412352ac8bed8f52240be0f9fd1edccda2041ffe2f97a028ac67597526c6c",
+  "scope": {
+    "hubs": 3,
+    "publishedQuestionTypeRoutes": 14,
+    "publishedSkillRoutes": 6,
+    "totalRoutes": 23
+  },
+  "summary": {
+    "routesStatus200": 23,
+    "routesWithOneH1": 23,
+    "routesWithOneMain": 23,
+    "routesWithCanonical": 23,
+    "routesWithoutHorizontalOverflow": 23,
+    "internalLinksChecked": 23,
+    "internalLinksStatus200": 23
+  },
+  "routes": [
+    {
+      "route": "/practica/ielts/reading",
+      "status": 200,
+      "title": "IELTS Reading — práctica Academic y General Training · Idiomas WeLearn",
+      "h1": [
+        "True / False / Not Given"
+      ],
+      "mainCount": 1,
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading",
+      "readingLinks": [],
+      "hasObsoleteComingSoon": true,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "pageerrors": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/practica/ielts/reading/tipos-de-preguntas",
+      "status": 200,
+      "title": "Tipos de preguntas IELTS Reading: guía completa y ejercicios · Idiomas WeLearn",
+      "h1": [
+        "Tipos de preguntas IELTS Reading"
+      ],
+      "mainCount": 1,
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas",
+      "readingLinks": [
+        "/practica/ielts/reading",
+        "/practica/ielts/reading/tipos-de-preguntas/true-false-not-given",
+        "/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given",
+        "/practica/ielts/reading/tipos-de-preguntas/multiple-choice",
+        "/practica/ielts/reading/tipos-de-preguntas/short-answer",
+        "/practica/ielts/reading/tipos-de-preguntas/matching-headings",
+        "/practica/ielts/reading/tipos-de-preguntas/matching-information",
+        "/practica/ielts/reading/tipos-de-preguntas/matching-features",
+        "/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings",
+        "/practica/ielts/reading/tipos-de-preguntas/sentence-completion",
+        "/practica/ielts/reading/tipos-de-preguntas/summary-completion",
+        "/practica/ielts/reading/tipos-de-preguntas/note-completion",
+        "/practica/ielts/reading/tipos-de-preguntas/table-completion",
+        "/practica/ielts/reading/tipos-de-preguntas/flow-chart-completion",
+        "/practica/ielts/reading/tipos-de-preguntas/diagram-labeling",
+        "/practica/ielts/reading/habilidades/skimming",
+        "/practica/ielts/reading/habilidades/scanning",
+        "/practica/ielts/reading/habilidades/inferencia",
+        "/practica/ielts/reading/habilidades/parafrasis",
+        "/practica/ielts/reading/habilidades/limite-de-palabras",
+        "/practica/ielts/reading/habilidades/gestion-del-tiempo",
+        "/practica/ielts/reading/tipos-de-preguntas/true-false-not-given"
+      ],
+      "hasObsoleteComingSoon": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "pageerrors": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/practica/ielts/reading/habilidades",
+      "status": 200,
+      "title": "Habilidades IELTS Reading | Estrategias y práctica · Idiomas WeLearn",
+      "h1": [
+        "Habilidades IELTS Reading"
+      ],
+      "mainCount": 1,
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/habilidades",
+      "readingLinks": [
+        "/practica/ielts/reading",
+        "/practica/ielts/reading/habilidades/skimming",
+        "/practica/ielts/reading/habilidades/scanning",
+        "/practica/ielts/reading/habilidades/inferencia",
+        "/practica/ielts/reading/habilidades/parafrasis",
+        "/practica/ielts/reading/habilidades/limite-de-palabras",
+        "/practica/ielts/reading/habilidades/gestion-del-tiempo",
+        "/practica/ielts/reading/habilidades/skimming",
+        "/practica/ielts/reading/tipos-de-preguntas/matching-headings",
+        "/practica/ielts/reading/tipos-de-preguntas/summary-completion",
+        "/practica/ielts/reading/habilidades/scanning",
+        "/practica/ielts/reading/tipos-de-preguntas/matching-information",
+        "/practica/ielts/reading/tipos-de-preguntas/sentence-completion",
+        "/practica/ielts/reading/tipos-de-preguntas/diagram-labeling",
+        "/practica/ielts/reading/habilidades/inferencia",
+        "/practica/ielts/reading/tipos-de-preguntas/multiple-choice",
+        "/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given",
+        "/practica/ielts/reading/habilidades/parafrasis",
+        "/practica/ielts/reading/tipos-de-preguntas/true-false-not-given",
+        "/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings",
+        "/practica/ielts/reading/habilidades/limite-de-palabras",
+        "/practica/ielts/reading/tipos-de-preguntas/note-completion",
+        "/practica/ielts/reading/tipos-de-preguntas/table-completion",
+        "/practica/ielts/reading/tipos-de-preguntas/short-answer",
+        "/practica/ielts/reading/habilidades/gestion-del-tiempo",
+        "/practica/ielts/reading/tipos-de-preguntas",
+        "/practica/ielts/reading/habilidades/skimming",
+        "/practica/ielts/reading/habilidades/scanning",
+        "/practica/ielts/reading/habilidades/inferencia",
+        "/practica/ielts/reading/habilidades/parafrasis",
+        "/practica/ielts/reading/habilidades/limite-de-palabras",
+        "/practica/ielts/reading/habilidades/gestion-del-tiempo",
+        "/practica/ielts/reading/tipos-de-preguntas",
+        "/practica/ielts/reading"
+      ],
+      "hasObsoleteComingSoon": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "pageerrors": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/practica/ielts/reading/habilidades/gestion-del-tiempo",
+      "status": 200,
+      "title": "Gestión del tiempo IELTS Reading: estrategia de 60 minutos · Idiomas WeLearn",
+      "h1": [
+        "Gestión del tiempo: protege puntos, no minutos"
+      ],
+      "mainCount": 1,
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/habilidades/gestion-del-tiempo",
+      "readingLinks": [
+        "/practica/ielts/reading/habilidades",
+        "/practica/ielts/reading/habilidades/skimming",
+        "/practica/ielts/reading/habilidades/scanning",
+        "/practica/ielts/reading/habilidades/limite-de-palabras",
+        "/practica/ielts/reading/habilidades/parafrasis",
+        "/practica/ielts/reading/tipos-de-preguntas/matching-headings",
+        "/practica/ielts/reading/tipos-de-preguntas/true-false-not-given",
+        "/practica/ielts/reading/tipos-de-preguntas/multiple-choice",
+        "/practica/ielts/reading"
+      ],
+      "hasObsoleteComingSoon": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "pageerrors": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/practica/ielts/reading/habilidades/inferencia",
+      "status": 200,
+      "title": "Inferencia IELTS Reading: evidencia antes de concluir · Idiomas WeLearn",
+      "h1": [
+        "Inferencia: concluye solo lo que la evidencia permite"
+      ],
+      "mainCount": 1,
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/habilidades/inferencia",
+      "readingLinks": [
+        "/practica/ielts/reading/habilidades",
+        "/practica/ielts/reading/habilidades/scanning",
+        "/practica/ielts/reading/habilidades/parafrasis",
+        "/practica/ielts/reading/tipos-de-preguntas/multiple-choice",
+        "/practica/ielts/reading/tipos-de-preguntas/matching-headings",
+        "/practica/ielts/reading/tipos-de-preguntas/true-false-not-given",
+        "/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given",
+        "/practica/ielts/reading"
+      ],
+      "hasObsoleteComingSoon": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "pageerrors": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/practica/ielts/reading/habilidades/limite-de-palabras",
+      "status": 200,
+      "title": "Límite de palabras IELTS Reading: respuestas exactas · Idiomas WeLearn",
+      "h1": [
+        "Límite de palabras: responde exacto, no largo"
+      ],
+      "mainCount": 1,
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/habilidades/limite-de-palabras",
+      "readingLinks": [
+        "/practica/ielts/reading/habilidades",
+        "/practica/ielts/reading/habilidades/scanning",
+        "/practica/ielts/reading/habilidades/parafrasis",
+        "/practica/ielts/reading/tipos-de-preguntas/sentence-completion",
+        "/practica/ielts/reading/tipos-de-preguntas/summary-completion",
+        "/practica/ielts/reading/tipos-de-preguntas/note-completion",
+        "/practica/ielts/reading/tipos-de-preguntas/table-completion",
+        "/practica/ielts/reading/tipos-de-preguntas/diagram-labeling",
+        "/practica/ielts/reading/tipos-de-preguntas/short-answer",
+        "/practica/ielts/reading"
+      ],
+      "hasObsoleteComingSoon": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "pageerrors": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/practica/ielts/reading/habilidades/parafrasis",
+      "status": 200,
+      "title": "Paráfrasis IELTS Reading: reconoce la misma idea · Idiomas WeLearn",
+      "h1": [
+        "Paráfrasis: reconoce la misma idea con otra forma"
+      ],
+      "mainCount": 1,
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/habilidades/parafrasis",
+      "readingLinks": [
+        "/practica/ielts/reading/habilidades",
+        "/practica/ielts/reading/habilidades/skimming",
+        "/practica/ielts/reading/habilidades/scanning",
+        "/practica/ielts/reading/tipos-de-preguntas/summary-completion",
+        "/practica/ielts/reading/tipos-de-preguntas/sentence-completion",
+        "/practica/ielts/reading/tipos-de-preguntas/true-false-not-given",
+        "/practica/ielts/reading"
+      ],
+      "hasObsoleteComingSoon": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "pageerrors": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/practica/ielts/reading/habilidades/scanning",
+      "status": 200,
+      "title": "Scanning IELTS Reading: localiza evidencia rápido · Idiomas WeLearn",
+      "h1": [
+        "Scanning: localiza evidencia sin releer todo el pasaje"
+      ],
+      "mainCount": 1,
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/habilidades/scanning",
+      "readingLinks": [
+        "/practica/ielts/reading/habilidades",
+        "/practica/ielts/reading/habilidades/skimming",
+        "/practica/ielts/reading/tipos-de-preguntas/matching-information",
+        "/practica/ielts/reading/tipos-de-preguntas/sentence-completion",
+        "/practica/ielts/reading/tipos-de-preguntas/diagram-labeling",
+        "/practica/ielts/reading"
+      ],
+      "hasObsoleteComingSoon": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "pageerrors": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/practica/ielts/reading/habilidades/skimming",
+      "status": 200,
+      "title": "Skimming IELTS Reading: método de 45 segundos y ejercicios · Idiomas WeLearn",
+      "h1": [
+        "Skimming: encuentra la idea principal sin leer cada palabra"
+      ],
+      "mainCount": 1,
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/habilidades/skimming",
+      "readingLinks": [
+        "/practica/ielts/reading/habilidades",
+        "/practica/ielts/reading/habilidades/scanning",
+        "/practica/ielts/reading/tipos-de-preguntas/matching-headings",
+        "/practica/ielts/reading/tipos-de-preguntas/matching-information",
+        "/practica/ielts/reading"
+      ],
+      "hasObsoleteComingSoon": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "pageerrors": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/practica/ielts/reading/tipos-de-preguntas/diagram-labeling",
+      "status": 200,
+      "title": "IELTS Diagram Labeling: ejercicios y método · Idiomas WeLearn",
+      "h1": [
+        "IELTS Reading Diagram Labeling"
+      ],
+      "mainCount": 1,
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/diagram-labeling",
+      "readingLinks": [
+        "/practica/ielts/reading/tipos-de-preguntas"
+      ],
+      "hasObsoleteComingSoon": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "pageerrors": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/practica/ielts/reading/tipos-de-preguntas/flow-chart-completion",
+      "status": 200,
+      "title": "IELTS Reading Flow-chart Completion: ejercicios y método · Idiomas WeLearn",
+      "h1": [
+        "IELTS Reading Flow-chart Completion"
+      ],
+      "mainCount": 1,
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/flow-chart-completion",
+      "readingLinks": [
+        "/practica/ielts/reading/tipos-de-preguntas",
+        "/practica/ielts/reading/tipos-de-preguntas/table-completion",
+        "/practica/ielts/reading/tipos-de-preguntas/diagram-labeling",
+        "/practica/ielts/reading/habilidades/limite-de-palabras",
+        "/practica/ielts/reading/habilidades/scanning"
+      ],
+      "hasObsoleteComingSoon": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "pageerrors": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/practica/ielts/reading/tipos-de-preguntas/matching-features",
+      "status": 200,
+      "title": "IELTS Matching Features: ejercicios y estrategia · Idiomas WeLearn",
+      "h1": [
+        "IELTS Matching Features"
+      ],
+      "mainCount": 1,
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/matching-features",
+      "readingLinks": [
+        "/practica/ielts/reading/tipos-de-preguntas",
+        "/practica/ielts/reading/tipos-de-preguntas/matching-information",
+        "/practica/ielts/reading/tipos-de-preguntas/matching-headings",
+        "/practica/ielts/reading/habilidades/scanning",
+        "/practica/ielts/reading/habilidades/parafrasis"
+      ],
+      "hasObsoleteComingSoon": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "pageerrors": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/practica/ielts/reading/tipos-de-preguntas/matching-headings",
+      "status": 200,
+      "title": "IELTS Matching Headings: estrategia y ejercicios · Idiomas WeLearn",
+      "h1": [
+        "IELTS Matching Headings"
+      ],
+      "mainCount": 1,
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/matching-headings",
+      "readingLinks": [
+        "/practica/ielts/reading/tipos-de-preguntas"
+      ],
+      "hasObsoleteComingSoon": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "pageerrors": [],
+      "consoleErrors": [],
+      "failedRequests": [
+        {
+          "url": "http://localhost:3001/practica/ielts/reading/tipos-de-preguntas/matching-headings",
+          "reason": "net::ERR_CONNECTION_REFUSED"
+        }
+      ]
+    },
+    {
+      "route": "/practica/ielts/reading/tipos-de-preguntas/matching-information",
+      "status": 200,
+      "title": "IELTS Matching Information: ejercicios y método · Idiomas WeLearn",
+      "h1": [
+        "IELTS Matching Information"
+      ],
+      "mainCount": 1,
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/matching-information",
+      "readingLinks": [
+        "/practica/ielts/reading/tipos-de-preguntas"
+      ],
+      "hasObsoleteComingSoon": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "pageerrors": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings",
+      "status": 200,
+      "title": "IELTS Matching Sentence Endings: ejercicios · Idiomas WeLearn",
+      "h1": [
+        "IELTS Matching Sentence Endings"
+      ],
+      "mainCount": 1,
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings",
+      "readingLinks": [
+        "/practica/ielts/reading/tipos-de-preguntas",
+        "/practica/ielts/reading/tipos-de-preguntas/sentence-completion",
+        "/practica/ielts/reading/tipos-de-preguntas/summary-completion",
+        "/practica/ielts/reading/habilidades/parafrasis",
+        "/practica/ielts/reading/habilidades/limite-de-palabras"
+      ],
+      "hasObsoleteComingSoon": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "pageerrors": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/practica/ielts/reading/tipos-de-preguntas/multiple-choice",
+      "status": 200,
+      "title": "IELTS Reading Multiple Choice: ejercicios y estrategia · Idiomas WeLearn",
+      "h1": [
+        "IELTS Reading Multiple Choice"
+      ],
+      "mainCount": 1,
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/multiple-choice",
+      "readingLinks": [
+        "/practica/ielts/reading/tipos-de-preguntas"
+      ],
+      "hasObsoleteComingSoon": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "pageerrors": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/practica/ielts/reading/tipos-de-preguntas/note-completion",
+      "status": 200,
+      "title": "IELTS Reading Note Completion: ejercicios y método · Idiomas WeLearn",
+      "h1": [
+        "IELTS Reading Note Completion"
+      ],
+      "mainCount": 1,
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/note-completion",
+      "readingLinks": [
+        "/practica/ielts/reading/tipos-de-preguntas",
+        "/practica/ielts/reading/tipos-de-preguntas/summary-completion",
+        "/practica/ielts/reading/tipos-de-preguntas/sentence-completion",
+        "/practica/ielts/reading/habilidades/limite-de-palabras",
+        "/practica/ielts/reading/habilidades/scanning"
+      ],
+      "hasObsoleteComingSoon": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "pageerrors": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/practica/ielts/reading/tipos-de-preguntas/sentence-completion",
+      "status": 200,
+      "title": "IELTS Reading Sentence Completion: ejercicios y método · Idiomas WeLearn",
+      "h1": [
+        "IELTS Reading Sentence Completion"
+      ],
+      "mainCount": 1,
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/sentence-completion",
+      "readingLinks": [
+        "/practica/ielts/reading/tipos-de-preguntas"
+      ],
+      "hasObsoleteComingSoon": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "pageerrors": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/practica/ielts/reading/tipos-de-preguntas/short-answer",
+      "status": 200,
+      "title": "IELTS Reading Short-answer Questions: ejercicios y método · Idiomas WeLearn",
+      "h1": [
+        "IELTS Reading Short-answer Questions"
+      ],
+      "mainCount": 1,
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/short-answer",
+      "readingLinks": [
+        "/practica/ielts/reading/tipos-de-preguntas",
+        "/practica/ielts/reading/tipos-de-preguntas/multiple-choice",
+        "/practica/ielts/reading/tipos-de-preguntas/true-false-not-given",
+        "/practica/ielts/reading/habilidades/limite-de-palabras",
+        "/practica/ielts/reading/habilidades/scanning"
+      ],
+      "hasObsoleteComingSoon": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "pageerrors": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/practica/ielts/reading/tipos-de-preguntas/summary-completion",
+      "status": 200,
+      "title": "IELTS Reading Summary Completion: ejercicios y método · Idiomas WeLearn",
+      "h1": [
+        "IELTS Reading Summary Completion"
+      ],
+      "mainCount": 1,
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/summary-completion",
+      "readingLinks": [
+        "/practica/ielts/reading/tipos-de-preguntas"
+      ],
+      "hasObsoleteComingSoon": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "pageerrors": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/practica/ielts/reading/tipos-de-preguntas/table-completion",
+      "status": 200,
+      "title": "IELTS Reading Table Completion: ejercicios y método · Idiomas WeLearn",
+      "h1": [
+        "IELTS Reading Table Completion"
+      ],
+      "mainCount": 1,
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/table-completion",
+      "readingLinks": [
+        "/practica/ielts/reading/tipos-de-preguntas",
+        "/practica/ielts/reading/tipos-de-preguntas/note-completion",
+        "/practica/ielts/reading/tipos-de-preguntas/summary-completion",
+        "/practica/ielts/reading/habilidades/limite-de-palabras",
+        "/practica/ielts/reading/habilidades/scanning"
+      ],
+      "hasObsoleteComingSoon": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "pageerrors": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/practica/ielts/reading/tipos-de-preguntas/true-false-not-given",
+      "status": 200,
+      "title": "IELTS True/False/Not Given: explicación y ejercicios · Idiomas WeLearn",
+      "h1": [
+        "IELTS True/False/Not Given"
+      ],
+      "mainCount": 1,
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/true-false-not-given",
+      "readingLinks": [
+        "/practica/ielts/reading/tipos-de-preguntas"
+      ],
+      "hasObsoleteComingSoon": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "pageerrors": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given",
+      "status": 200,
+      "title": "IELTS Yes/No/Not Given: writer views y ejercicios · Idiomas WeLearn",
+      "h1": [
+        "IELTS Yes/No/Not Given"
+      ],
+      "mainCount": 1,
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given",
+      "readingLinks": [
+        "/practica/ielts/reading/tipos-de-preguntas",
+        "/practica/ielts/reading/tipos-de-preguntas/true-false-not-given",
+        "/practica/ielts/reading/habilidades/inferencia",
+        "/practica/ielts/reading/habilidades/parafrasis",
+        "/practica/ielts/reading/habilidades/gestion-del-tiempo"
+      ],
+      "hasObsoleteComingSoon": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "pageerrors": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/practica/ielts/reading",
+      "status": 200
+    },
+    {
+      "href": "/practica/ielts/reading/habilidades",
+      "status": 200
+    },
+    {
+      "href": "/practica/ielts/reading/habilidades/gestion-del-tiempo",
+      "status": 200
+    },
+    {
+      "href": "/practica/ielts/reading/habilidades/inferencia",
+      "status": 200
+    },
+    {
+      "href": "/practica/ielts/reading/habilidades/limite-de-palabras",
+      "status": 200
+    },
+    {
+      "href": "/practica/ielts/reading/habilidades/parafrasis",
+      "status": 200
+    },
+    {
+      "href": "/practica/ielts/reading/habilidades/scanning",
+      "status": 200
+    },
+    {
+      "href": "/practica/ielts/reading/habilidades/skimming",
+      "status": 200
+    },
+    {
+      "href": "/practica/ielts/reading/tipos-de-preguntas",
+      "status": 200
+    },
+    {
+      "href": "/practica/ielts/reading/tipos-de-preguntas/diagram-labeling",
+      "status": 200
+    },
+    {
+      "href": "/practica/ielts/reading/tipos-de-preguntas/flow-chart-completion",
+      "status": 200
+    },
+    {
+      "href": "/practica/ielts/reading/tipos-de-preguntas/matching-features",
+      "status": 200
+    },
+    {
+      "href": "/practica/ielts/reading/tipos-de-preguntas/matching-headings",
+      "status": 200
+    },
+    {
+      "href": "/practica/ielts/reading/tipos-de-preguntas/matching-information",
+      "status": 200
+    },
+    {
+      "href": "/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings",
+      "status": 200
+    },
+    {
+      "href": "/practica/ielts/reading/tipos-de-preguntas/multiple-choice",
+      "status": 200
+    },
+    {
+      "href": "/practica/ielts/reading/tipos-de-preguntas/note-completion",
+      "status": 200
+    },
+    {
+      "href": "/practica/ielts/reading/tipos-de-preguntas/sentence-completion",
+      "status": 200
+    },
+    {
+      "href": "/practica/ielts/reading/tipos-de-preguntas/short-answer",
+      "status": 200
+    },
+    {
+      "href": "/practica/ielts/reading/tipos-de-preguntas/summary-completion",
+      "status": 200
+    },
+    {
+      "href": "/practica/ielts/reading/tipos-de-preguntas/table-completion",
+      "status": 200
+    },
+    {
+      "href": "/practica/ielts/reading/tipos-de-preguntas/true-false-not-given",
+      "status": 200
+    },
+    {
+      "href": "/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given",
+      "status": 200
+    }
+  ],
+  "responsive": [
+    {
+      "width": 320,
+      "height": 568,
+      "scrollWidth": 320,
+      "clientWidth": 320,
+      "whatsappOverlapsPassage": false,
+      "firstQuestionTop": 1635.921875,
+      "passageBottom": 1590.921875
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "whatsappOverlapsPassage": true,
+      "firstQuestionTop": 1296.375,
+      "passageBottom": 1251.375
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "whatsappOverlapsPassage": false,
+      "firstQuestionTop": 843.34375,
+      "passageBottom": 798.34375
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "scrollWidth": 1024,
+      "clientWidth": 1024,
+      "whatsappOverlapsPassage": false,
+      "firstQuestionTop": 843.34375,
+      "passageBottom": 798.34375
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "whatsappOverlapsPassage": false,
+      "firstQuestionTop": 843.34375,
+      "passageBottom": 798.34375
+    }
+  ],
+  "zoom200": {
+    "scrollWidth": 448,
+    "clientWidth": 390,
+    "horizontalOverflow": true,
+    "visibleButtons": 25
+  },
+  "keyboard": {
+    "firstEightStops": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "ariaLabel": null,
+        "href": "#main"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "ariaLabel": "Idiomas WeLearn — home",
+        "href": "/"
+      },
+      {
+        "tag": "A",
+        "text": "Home",
+        "ariaLabel": null,
+        "href": "/"
+      },
+      {
+        "tag": "A",
+        "text": "Languages",
+        "ariaLabel": null,
+        "href": "/clases-de-idiomas"
+      },
+      {
+        "tag": "A",
+        "text": "Exams",
+        "ariaLabel": null,
+        "href": "/examenes"
+      },
+      {
+        "tag": "A",
+        "text": "Practice",
+        "ariaLabel": null,
+        "href": "/practica"
+      },
+      {
+        "tag": "A",
+        "text": "About us",
+        "ariaLabel": null,
+        "href": "/quienes-somos"
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "ariaLabel": "WeLearn on TikTok",
+        "href": "https://www.tiktok.com/@idiomas.welearn"
+      }
+    ],
+    "optionSemantics": {
+      "fieldsets": 0,
+      "radiogroups": 0,
+      "progressbars": 0,
+      "ariaLiveRegions": 0
+    }
+  },
+  "interaction": {
+    "afterCorrect": {
+      "showsExplanation": true,
+      "disabled": [
+        true,
+        true,
+        true
+      ],
+      "progressOneOfEight": true
+    },
+    "afterReload": {
+      "showsExplanation": false,
+      "disabled": [
+        false,
+        false,
+        false
+      ],
+      "progressOneOfEight": false
+    },
+    "deliberateError": "✗ La respuesta es FALSE. \"Mainly in Brazil\" but also extends into other South American countries — so \"exclusively\" is FALSE."
+  },
+  "absentPlannedSurfaces": [
+    {
+      "route": "/practica/ielts/reading/diagnostico",
+      "status": 404
+    },
+    {
+      "route": "/practica/ielts/reading/practica",
+      "status": 404
+    },
+    {
+      "route": "/practica/ielts/reading/simulacro",
+      "status": 404
+    }
+  ],
+  "applicability": {
+    "covered": "current hubs, all 14 question-type routes, all 6 skill routes, internal links, five viewports, zoom, keyboard baseline, click/feedback/reload",
+    "deferred": "Learn hints, Practice submit, Exam 3/40/60, Review, versioned navigation and offline robustness do not exist yet and retain later rows"
+  }
+}

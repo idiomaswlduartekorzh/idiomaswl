@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "ielts-reading-note-completion-audit-verdicts.v1",
+  "reviewedAt": "2026-08-11T16:26:42Z",
+  "status": "pass",
+  "passMeaning": "The F0.2b.10 audit dossier and its detection controls pass; all three assets remain quarantined and the bank, content certification, Practice, Exam and security remain blocked.",
+  "rows": [
+    {
+      "lane": "Rights and provenance",
+      "boardMark": "✅",
+      "scope": "Dossier completeness, candidate-source triage and conservative publication decision for exactly 3/3 Note Completion assets.",
+      "findings": "3/3 assets remain unknown-quarantined; the ledger contains two official policy/sample sources and 15 factual candidates, while the directed provenance search found no useful exact match and does not prove originality.",
+      "blockersCarriedForward": "Authorship, license or rights basis, source-to-draft history, factual sign-off and independent human approval remain unresolved. Candidate availability and topic relevance are not rights clearance."
+    },
+    {
+      "lane": "Full-stack and data",
+      "boardMark": "✅",
+      "scope": "Exact 3/9/18/18/18 inventory, object and passage identity, maxWords contract, evidence offsets, render closure and next-unit boundary.",
+      "findings": "The gate reconciles catalog, baseline and registry; all 18 canonical answers are unique normalized values, whole-token passage spans within two words, and intended evidence order is pinned including the second `areas` occurrence for note-night-libraries-05.",
+      "blockersCarriedForward": "The runtime treats maxWords as a visual warning rather than a scoring gate, exposes keys, hints and explanations to the client, lacks versioned persistence and has no Practice, Exam or Review contract."
+    },
+    {
+      "lane": "IELTS expert",
+      "boardMark": "✅",
+      "scope": "Independent prompt-only, passage-based first pass and source-informed second pass over all 18 questions and 15 factual claims.",
+      "findings": "The clean expert preserved 18/18 answer decisions, confirmed every canonical answer is a natural whole-token span within the visible word limit and found no intended order violation; all three passages were rated mixed rather than certified.",
+      "blockersCarriedForward": "Four minor ambiguities, full-passage coverage instead of the usual localized note section, strong prompt/order cues and factual support of only 2 supported, 10 oversimplified and 3 untraceable claims block content certification."
+    },
+    {
+      "lane": "Cognitive walkthrough",
+      "boardMark": "✅",
+      "scope": "Prospective average-student walkthrough from the key-free blind packet for 3 passages and 18 questions.",
+      "findings": "The walkthrough covers grammar prediction, word-limit checks, evidence search, passage-span validation, spelling, competitor comparison, decision rules and repair actions without assigning completions.",
+      "blockersCarriedForward": "This is an AI simulation, not observed student usability, retention, transfer or band-improvement evidence."
+    },
+    {
+      "lane": "Anti-bias and leakage",
+      "boardMark": "✅",
+      "scope": "Detection of paragraph position, answer length, grammatical class, prompt overlap, hint exposure, client payload leakage and answer-assignment leakage.",
+      "findings": "The position-modal answer-length shortcut hits 14/18; paragraph-by-position hits 18/18, noun or noun-phrase classification covers 15/18, 17/18 frames expose a unique passage bigram and all 18 hints are available before response.",
+      "blockersCarriedForward": "n=18 cannot certify fairness; perfect paragraph-position regularity, serialized keys/hints/explanations and guided-training feedback keep Practice, Exam, security and content certification blocked."
+    },
+    {
+      "lane": "UI/UX and accessibility",
+      "boardMark": "➖",
+      "scope": "Not applicable to unchanged learner-runtime conformance in this audit-only delta.",
+      "findings": "Seven direct learner-facing files and the exact 15-file render closure remain pinned and unchanged by F0.2b.10.",
+      "blockersCarriedForward": "Inherited defects remain: internal-ID accessible names, missing progress/live/hint semantics, missing English language boundaries, broken heading order, no focus repair, destructive reset and no split Text/Questions workflow."
+    },
+    {
+      "lane": "Playwright",
+      "boardMark": "➖",
+      "scope": "Not applicable to unchanged learner-runtime behavior; portable Chromium later verifies the report only.",
+      "findings": "No data, copy, DOM, CSS, interaction or route behavior was changed by this unit, so browser conformance is neither newly exercised nor claimed.",
+      "blockersCarriedForward": "Learner-route hydration, accessibility, responsive behavior, focus, reload/reset, word-limit scoring and pre-response payload secrecy remain open for the implementation phase."
+    }
+  ]
+}

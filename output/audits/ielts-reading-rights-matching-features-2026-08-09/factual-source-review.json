@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "ielts-reading-matching-features-factual-source-review.v1",
+  "generatedAt": "2026-08-09T13:35:00Z",
+  "reviewScope": "F0.2b.6 — second-pass factual-source review only",
+  "instruction": "Open only after persisting the complete blind first pass. Review each exact claim span against candidate sources and classify it supported, oversimplified, unsupported or untraceable. A fetch status or candidate source does not prove the claim, authorship, license, authorization or human verification.",
+  "records": [
+    {
+      "assetId": "formative:matching-features:mf-urban-farming",
+      "claimSpansToReview": [
+        "Urban farming is often described as a single movement, but city projects can have very different goals.",
+        "The Green Roof Collective began by converting flat commercial roofs into small vegetable plots.",
+        "Students maintain raised beds, record soil temperature and compare plant growth under different watering schedules.",
+        "The alliance negotiates temporary use agreements with property owners and turns neglected lots into community gardens.",
+        "Critics point out that such systems require energy and technical maintenance, but the company says the model is useful where year-round supply matters more than low-tech accessibility."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "urban-nyc-rooftop-farm",
+          "label": "NYC Mayor’s Office — rooftop farm case",
+          "url": "https://www.nyc.gov/mayors-office/news/2022/04/mayor-adams-opens-rooftop-farm-staten-island-grow-organic-produce-absorb-stormwater-to",
+          "note": "Caso institucional candidato sobre agricultura en azoteas. No identifica Green Roof Collective, Lina Torres ni demuestra su economía, clientes o procedencia."
+        },
+        {
+          "evidenceId": "urban-doe-controlled-environment-agriculture",
+          "label": "US Department of Energy — controlled-environment agriculture",
+          "url": "https://www.energy.gov/cmei/ito/articles/water-energy-and-future-farming",
+          "note": "Fuente institucional candidata sobre producción controlada, suelo, agua y energía. No valida precios urbanos, suficiencia alimentaria ni una entidad nombrada en el pasaje."
+        },
+        {
+          "evidenceId": "urban-usda-school-gardens",
+          "label": "USDA Food and Nutrition Service — school gardens",
+          "url": "https://www.fna.usda.gov/f2s/school-gardens",
+          "note": "Fuente institucional candidata sobre jardines escolares como recurso de aprendizaje y alimentación. No demuestra todos los efectos educativos o sociales expuestos en el pasaje."
+        },
+        {
+          "evidenceId": "urban-epa-vacant-land-agriculture",
+          "label": "US EPA — urban agriculture on vacant land",
+          "url": "https://www.epa.gov/brownfields/urban-agriculture",
+          "note": "Fuente institucional candidata sobre reutilización de lotes urbanos. No demuestra reducción causal de vertidos, seguridad o custodia pública ni identifica Vacant Lot Alliance."
+        },
+        {
+          "evidenceId": "urban-usda-cea-energy",
+          "label": "USDA Agricultural Research Service — controlled-environment production",
+          "url": "https://www.ars.usda.gov/research/publications/publication/?seqNo115=434664",
+          "note": "Fuente institucional candidata sobre producción anual, energía, inversión y soporte técnico. No acredita Metroponics Lab ni su ubicación o resultados concretos."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas permiten contrastar agricultura en azoteas, producción controlada, huertos escolares, lotes vacantes y costes técnicos, pero no acreditan las entidades nombradas ni verifican todos los resultados, clientes, acuerdos o relaciones causales del pasaje."
+    },
+    {
+      "assetId": "formative:matching-features:mf-memory-research",
+      "claimSpansToReview": [
+        "Her team found that participants remembered routes better when they paused at decision points and described what they expected to see next.",
+        "The lab found that people often adopted details they had only heard during discussion, especially when the other speaker sounded confident.",
+        "Rather than testing complex digital systems, his project used simple visual routines: a tray by the door for keys, coloured stickers on medication boxes and a checklist beside the kettle.",
+        "Students who reviewed new words shortly before sleep and again the next morning remembered more than those who completed both reviews during the afternoon.",
+        "Instead, students with well-organized notes tended to review more actively before class because they wanted their notes to be usable under time pressure."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "memory-pubmed-route-decisions",
+          "label": "PubMed — active decision-making and route learning",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25419818/",
+          "note": "Estudio candidato sobre la contribución de decisiones activas al aprendizaje espacial. No valida el protocolo de pausas/predicción ni identifica a Helen Ward."
+        },
+        {
+          "evidenceId": "memory-goodwin-cowitness",
+          "label": "Goodwin 2017 — confident co-witness misinformation",
+          "url": "https://doi.org/10.1002/acp.3320",
+          "note": "Contraste académico cercano sobre información errónea de un co-testigo seguro. No identifica Moreno Lab ni demuestra que el pasaje derive del artículo."
+        },
+        {
+          "evidenceId": "memory-nia-external-aids",
+          "label": "National Institute on Aging — external memory aids",
+          "url": "https://www.nia.nih.gov/health/health-care-professionals-information/caring-older-patients-cognitive-impairment",
+          "note": "Guía institucional candidata sobre listas, calendarios, recordatorios y organizadores. No valida el ensayo, los objetos concretos ni a Kenji Sato."
+        },
+        {
+          "evidenceId": "memory-pmc-sleep-vocabulary",
+          "label": "PubMed Central — sleep and vocabulary retention",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10275344/",
+          "note": "Estudio candidato sobre sueño y retención de vocabulario. No valida la comparación exacta entre revisión noche-mañana y dos revisiones vespertinas."
+        },
+        {
+          "evidenceId": "memory-plos-open-book",
+          "label": "PLOS ONE — preparation for open-book testing",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0273185",
+          "note": "Estudio candidato sobre preparación y uso de materiales en pruebas abiertas. No demuestra que permitir apuntes cause preparación más activa ni identifica Open Notes Group."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas permiten contrastar decisiones espaciales, misinformation social, ayudas externas, sueño y pruebas con apuntes, pero no acreditan a Helen Ward, Moreno Lab, Kenji Sato, Sleep Recall Study u Open Notes Group ni los protocolos y efectos exactos atribuidos."
+    },
+    {
+      "assetId": "formative:matching-features:mf-transport-policies",
+      "claimSpansToReview": [
+        "City officials reported that average bus journey times fell, but shop owners complained that loading spaces became harder to access.",
+        "The programme did not greatly change total traffic volume, but hospital data showed fewer serious injuries among pedestrians and cyclists in the treated areas.",
+        "Critics noted that the project helped smartphone users first, while cash users had to wait for a later phase.",
+        "The trial reduced fuel use in city departments, but managers said the charging schedule had to be planned carefully because some vehicles returned late from maintenance jobs.",
+        "After public meetings, the city added a small accessible shuttle around the zone."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "transport-tfl-bus-priority",
+          "label": "Transport for London — Bus Priority Programme",
+          "url": "https://tfl.gov.uk/modes/buses/bus-priority-programme",
+          "note": "Fuente institucional candidata sobre prioridad de buses y actividad de bordillo. No acredita Rivergate, tres corredores ni los resultados y ajustes narrados."
+        },
+        {
+          "evidenceId": "transport-who-safe-speeds",
+          "label": "World Health Organization — Streets for Life",
+          "url": "https://www.who.int/news/item/17-05-2021-streets-for-life-campaign-calls-for-30-km-h-urban-streets-to-ensure-safe-healthy-green-and-liveable-cities",
+          "note": "Fuente institucional candidata sobre velocidades seguras y lesiones. No confirma Northbridge, volumen de tráfico estable ni sus datos hospitalarios."
+        },
+        {
+          "evidenceId": "transport-uk-maas-accessibility",
+          "label": "UK Department for Transport — Mobility as a Service code",
+          "url": "https://www.gov.uk/government/publications/mobility-as-a-service-maas-code-of-practice/mobility-as-a-service-code-of-practice",
+          "note": "Fuente institucional candidata sobre integración modal y alternativas para usuarios sin smartphone o banca digital. No acredita Metro Card Integration Project ni su secuencia de despliegue."
+        },
+        {
+          "evidenceId": "transport-doe-smart-charge",
+          "label": "US Department of Energy — smart charge management for fleets",
+          "url": "https://www.energy.gov/cmei/femp/smart-charge-management-implementation-federal-fleets",
+          "note": "Fuente institucional candidata sobre llegada, salida, permanencia y prioridades de carga. No valida Hillside, sus retornos tardíos ni ahorro de combustible."
+        },
+        {
+          "evidenceId": "transport-nyc-pedestrian-plaza",
+          "label": "NYC DOT — Dyckman Plaza pedestrianization case",
+          "url": "https://www.nyc.gov/html/dot/html/pr2021/dyckman-plaza-transforms-inwood-open-street.shtml",
+          "note": "Caso institucional candidato sobre espacio peatonal y restauración. No valida East Market, las declaraciones de taxistas ni que una consulta originara un shuttle accesible."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas permiten contrastar prioridad de buses, velocidad segura, integración modal, carga de flotas y peatonalización, pero no acreditan los cinco programas nombrados ni sus corredores, cifras, quejas, fases, consultas o resultados exactos."
+    }
+  ]
+}

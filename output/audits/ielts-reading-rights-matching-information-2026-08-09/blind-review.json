@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "ielts-reading-matching-information-blind-review.v1",
+  "generatedAt": "2026-08-09T06:15:00-05:00",
+  "reviewScope": "F0.2b.4 — three formative Matching Information passages",
+  "reviewerIsolation": "Use only this packet for the first pass. Do not open the catalog, registry, validator, route, UI, prior audits or factual-source packet until every decision has been fixed in a separate first-pass file.",
+  "taskRule": "Select the lettered paragraph or section that contains the requested specific information. The decisive information may be a detail, example, reason, description, comparison, summary or explanation; it is not necessarily the paragraph’s main idea. A paragraph may be reused only when the instructions permit it.",
+  "instruction": "Independently adjudicate all 18 statements. Select exactly one paragraph, quote its shortest decisive span, explain the question-to-text paraphrase, identify the strongest competing paragraph and why it fails. Mark ambiguity as material whenever two paragraphs remain reasonable under the wording. Record title-cue risk and IELTS fitness. This is an AI editorial review, not a human signature, rights clearance or publication approval.",
+  "excludes": [
+    "answer keys",
+    "correctness labels",
+    "explanations",
+    "trap labels",
+    "declared skills",
+    "prior reviewer decisions",
+    "student data"
+  ],
+  "records": [
+    {
+      "assetId": "formative:matching-information:mi-city-noise",
+      "title": "How cities respond to noise",
+      "sourceObjectSha256": "4dedd37f4422d13c2d7f2e8ed948820849d92987cc5bdce84350ecee344ded62",
+      "passageSha256": "b85fe921aedbd48f035d1bdd764bc033b5af62a2b5f1af4dab6d994af0b93bc1",
+      "instructions": "Match each statement with the paragraph that contains the information. You may use any paragraph more than once.",
+      "paragraphs": [
+        {
+          "paragraphId": "A",
+          "text": "City noise was once treated mainly as a minor annoyance. Today, public health researchers describe it as an environmental stressor that can affect sleep, concentration and long-term wellbeing. Traffic remains the most common source in many urban areas, but construction, nightlife and delivery vehicles also contribute to the soundscape."
+        },
+        {
+          "paragraphId": "B",
+          "text": "Some cities have started mapping noise levels street by street. These maps combine sensor data, traffic counts and resident complaints to identify areas where exposure is highest. The results are sometimes surprising: a narrow street with tall buildings can trap sound even when the number of vehicles is lower than on a wider avenue."
+        },
+        {
+          "paragraphId": "C",
+          "text": "Reducing noise is not always a matter of installing barriers. Lower speed limits, smoother road surfaces and restrictions on night deliveries can reduce sound at the source. Urban trees and green spaces may also help, though their effect is often modest unless combined with changes in traffic design."
+        },
+        {
+          "paragraphId": "D",
+          "text": "Policy makers also face questions of fairness. Wealthier districts may have more parks, wider streets and better insulated buildings, while lower-income neighborhoods can be located closer to highways or industrial areas. As a result, noise reduction has become part of wider debates about environmental justice."
+        },
+        {
+          "paragraphId": "E",
+          "text": "Public communication matters because residents do not always recognize gradual improvements. If a city lowers traffic noise by a few decibels, the change may be meaningful for health but hard to notice immediately. Explaining the goal of a policy can therefore make people more willing to support measures that seem inconvenient at first."
+        }
+      ],
+      "statements": [
+        {
+          "questionId": "mi-noise-01",
+          "statement": "a reason why streets with fewer cars may still be noisy"
+        },
+        {
+          "questionId": "mi-noise-02",
+          "statement": "examples of measures that reduce noise before it spreads"
+        },
+        {
+          "questionId": "mi-noise-03",
+          "statement": "the idea that noise is connected to social inequality"
+        },
+        {
+          "questionId": "mi-noise-04",
+          "statement": "different kinds of urban activities that add to the soundscape"
+        },
+        {
+          "questionId": "mi-noise-05",
+          "statement": "why residents may need an explanation of policy benefits"
+        },
+        {
+          "questionId": "mi-noise-06",
+          "statement": "the use of several data sources to locate the worst affected areas"
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-information:mi-museum-lighting",
+      "title": "Lighting in modern museums",
+      "sourceObjectSha256": "f68ddab75ce213fcf42bb1b0f815138e25fad5218bedd135f74758d970b51280",
+      "passageSha256": "26799b69ea658d6268841c5d3ea29a408a93d5e459de8beaa49952c6e89db211",
+      "instructions": "Match each statement with the paragraph that contains the information. A paragraph may be used more than once.",
+      "paragraphs": [
+        {
+          "paragraphId": "A",
+          "text": "Museum lighting used to be planned mainly around visibility: visitors needed to see paintings, labels and display cases clearly. Curators now treat lighting as part of conservation as well as presentation. Too much exposure can fade pigments, weaken paper and damage textiles, so the brightest display is not always the best one."
+        },
+        {
+          "paragraphId": "B",
+          "text": "Different objects tolerate light in different ways. Stone sculpture can usually be displayed under stronger light than watercolours, manuscripts or historic fabrics. For this reason, museums often rotate sensitive works or show them for limited periods before returning them to storage."
+        },
+        {
+          "paragraphId": "C",
+          "text": "Technology has changed what lighting designers can control. LED systems can adjust colour temperature, direction and intensity with more precision than older lamps. Some galleries also use sensors so that lights become brighter when visitors approach and dim again when the room is empty."
+        },
+        {
+          "paragraphId": "D",
+          "text": "Lighting also affects how visitors move through a gallery. A bright entrance can invite people in, while a lower level of light around a fragile object may encourage slower viewing. Designers sometimes use contrast to guide attention, but they must avoid making pathways unsafe or labels unreadable."
+        },
+        {
+          "paragraphId": "E",
+          "text": "There is no single perfect lighting formula. A science museum may need clear, practical illumination for interactive displays, while an exhibition of medieval manuscripts may require a quieter atmosphere and strict light limits. The best plan depends on the object, the room and the kind of experience the museum wants to create."
+        }
+      ],
+      "statements": [
+        {
+          "questionId": "mi-lighting-01",
+          "statement": "examples of materials that can be harmed by excessive light"
+        },
+        {
+          "questionId": "mi-lighting-02",
+          "statement": "a reason why some objects are displayed only temporarily"
+        },
+        {
+          "questionId": "mi-lighting-03",
+          "statement": "a system that changes brightness depending on visitor presence"
+        },
+        {
+          "questionId": "mi-lighting-04",
+          "statement": "the idea that lighting can influence the route people take"
+        },
+        {
+          "questionId": "mi-lighting-05",
+          "statement": "why one lighting solution cannot fit every exhibition"
+        },
+        {
+          "questionId": "mi-lighting-06",
+          "statement": "a safety concern created by using contrast in a gallery"
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-information:mi-coastal-restoration",
+      "title": "Restoring coastal wetlands",
+      "sourceObjectSha256": "c2e06a4c723bfd321924f9e2961937b494280c8edd55ab9658e3775284b467d7",
+      "passageSha256": "9510b6698b7e693561945516c8ff49a6abbf965e7ad1324017abcbfc373c6947",
+      "instructions": "Match each statement with the paragraph that contains the information. Some paragraphs may answer more than one statement.",
+      "paragraphs": [
+        {
+          "paragraphId": "A",
+          "text": "Coastal wetlands were once dismissed as empty or unusable land, and many were drained for roads, housing or farmland. Scientists now describe them as protective landscapes because they can absorb wave energy, store carbon and provide nursery areas for fish. This change in understanding has encouraged restoration projects in many regions."
+        },
+        {
+          "paragraphId": "B",
+          "text": "Restoration rarely means simply planting vegetation. Engineers may need to remove old barriers, reopen tidal channels or change drainage systems so that salt water can return at the right times. If the water regime is wrong, new plants may fail even when the species are carefully chosen."
+        },
+        {
+          "paragraphId": "C",
+          "text": "Local communities can disagree about wetland projects. Fishers may welcome healthier nursery habitats, while farmers worry about losing productive land or seeing salt water move closer to fields. Project teams therefore spend months discussing maps, compensation and monitoring plans before work begins."
+        },
+        {
+          "paragraphId": "D",
+          "text": "The benefits of restoration are not immediate. Young marsh plants need time to spread, and sediment may accumulate slowly over several seasons. Monitoring teams often measure progress through small indicators such as insect diversity, water depth and the return of juvenile fish."
+        },
+        {
+          "paragraphId": "E",
+          "text": "Some restored wetlands are designed to work alongside human infrastructure. A restored marsh may reduce pressure on a sea wall during storms, but it does not remove the need for evacuation plans or building rules in exposed areas. Restoration is most effective when it forms one part of a wider coastal strategy."
+        }
+      ],
+      "statements": [
+        {
+          "questionId": "mi-wetlands-01",
+          "statement": "a past attitude that led to the loss of wetland areas"
+        },
+        {
+          "questionId": "mi-wetlands-02",
+          "statement": "physical changes needed before plants can succeed"
+        },
+        {
+          "questionId": "mi-wetlands-03",
+          "statement": "groups that may view the same project differently"
+        },
+        {
+          "questionId": "mi-wetlands-04",
+          "statement": "small signs used to judge whether restoration is progressing"
+        },
+        {
+          "questionId": "mi-wetlands-05",
+          "statement": "why restoration should not be treated as the only form of protection"
+        },
+        {
+          "questionId": "mi-wetlands-06",
+          "statement": "the importance of getting water movement right"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,317 @@
+{
+  "schemaVersion": "ielts-reading-ynng-expert-verdict.v1",
+  "reviewer": {
+    "humanSignature": false,
+    "sourceContext": "two-pass-blind-then-factual-sources",
+    "reviewSequence": [
+      "blind-review",
+      "factual-source-review"
+    ],
+    "reviewerRunId": "ynng-independent-ai-editor-2026-08-09-01",
+    "reviewedAt": "2026-08-09T05:42:14-05:00",
+    "blindPacketSha256": "5a7d7550b4cf47168adc018c40a95279c37e427dbf9ba63bbfbe53cc85798ea8",
+    "firstPassSha256": "4fc67f01fb5699a888b6f112725f71236ce75a3793f51962041565cd37653813",
+    "openedEvidenceIds": [
+      "station-lta-gift-art",
+      "station-opdc-community-brief",
+      "remote-ons-hybrid-2025",
+      "remote-london-assembly-central-2024",
+      "remote-ecb-work-preference-2025",
+      "uniforms-dfe-policy-2026",
+      "uniforms-dfe-cost-2026",
+      "uniforms-cma-costs"
+    ],
+    "directSourceReview": true,
+    "notes": [
+      "Independent AI editorial review; humanSignature is false.",
+      "The blind first pass was persisted and hashed before the factual-source packet was opened.",
+      "All eight candidate source URLs were opened directly and reviewed; linked substantive guidance was followed where the candidate landing page exposed it.",
+      "This is not rights clearance, authorship verification, a human expert signature or publication approval.",
+      "Candidate sources contextualise individual claims but do not factualise, license or validate the assessment bank as a whole."
+    ]
+  },
+  "records": [
+    {
+      "assetId": "formative:yes-no-not-given:ynng-station-art",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "high",
+        "representationRisk": "medium",
+        "priorKnowledgeRisk": "medium",
+        "irrelevantLoadRisk": "low",
+        "titleCueRisk": "low",
+        "notes": [
+          "The title remains neutral, but two scored statements contain material or near-material modal shifts.",
+          "The direct sources document institutional aims and one community-engagement brief, not measured general effects, non-consultation prevalence or comparative public-trust outcomes.",
+          "Normative preferences in the passage must not be presented as source-verified empirical conclusions."
+        ]
+      },
+      "questions": [{"questionId":"ynng-station-art-01","selectedAnswer":"YES","evidenceRelation":"agrees","supportingQuote":"In my view, it gives a public system a visible connection to the neighborhoods it serves.","relatedZoneQuote":"Yet the strongest argument for station art is not that it decorates a journey. In my view, it gives a public system a visible connection to the neighborhoods it serves.","absenceTarget":null,"attributionSource":"writer","ambiguity":"none","reasoning":"The writer explicitly identifies local connection, rather than decoration, as the strongest argument."},{"questionId":"ynng-station-art-02","selectedAnswer":"NO","evidenceRelation":"contradicts","supportingQuote":"This does not mean that every station should become a gallery.","relatedZoneQuote":"This does not mean that every station should become a gallery.","absenceTarget":null,"attributionSource":"writer","ambiguity":"none","reasoning":"The universal recommendation in the statement is directly rejected."},{"questionId":"ynng-station-art-03","selectedAnswer":"NO","evidenceRelation":"contradicts","supportingQuote":"When that happens, art can appear imposed, even if it is technically impressive.","relatedZoneQuote":"Transport authorities sometimes commission large works without asking local residents what would feel meaningful or useful. When that happens, art can appear imposed, even if it is technically impressive.","absenceTarget":null,"attributionSource":"writer","ambiguity":"none","reasoning":"Technical impressiveness is expressly compatible with residents experiencing a work as imposed, so it is not always welcomed."},{"questionId":"ynng-station-art-04","selectedAnswer":"YES","evidenceRelation":"agrees","supportingQuote":"A modest project developed with community groups may do more for public trust than an expensive installation chosen by distant planners.","relatedZoneQuote":"A modest project developed with community groups may do more for public trust than an expensive installation chosen by distant planners.","absenceTarget":null,"attributionSource":"writer","ambiguity":"minor","reasoning":"The writer gives the community-informed modest project the stronger potential outcome, supporting the stated preference; however, 'may do more' is a conditional comparison rather than an unqualified preference."},{"questionId":"ynng-station-art-05","selectedAnswer":"NOT GIVEN","evidenceRelation":"not-stated","supportingQuote":null,"relatedZoneQuote":"Critics often claim that station art distracts from urgent transport problems. That criticism has force when art budgets replace maintenance or accessibility work.","absenceTarget":"The writer never states that station-art budgets usually reduce accessibility funding or gives any frequency for such replacement.","attributionSource":"mixed","ambiguity":"minor","reasoning":"Critics own the broad complaint, while the writer accepts only a conditional case; neither voice supplies the statement's 'usually' claim."},{"questionId":"ynng-station-art-06","selectedAnswer":"YES","evidenceRelation":"agrees","supportingQuote":"Art programs can be funded separately, supported by cultural grants or used to explain local history while renovation is already taking place.","relatedZoneQuote":"Art programs can be funded separately, supported by cultural grants or used to explain local history while renovation is already taking place.","absenceTarget":null,"attributionSource":"writer","ambiguity":"none","reasoning":"The writer explicitly describes art operating while renovation is under way."},{"questionId":"ynng-station-art-07","selectedAnswer":"NO","evidenceRelation":"contradicts","supportingQuote":"A successful station artwork is not necessarily the largest or most photogenic one.","relatedZoneQuote":"A successful station artwork is not necessarily the largest or most photogenic one. It is the one that helps passengers understand where they are, respects the daily function of the space and gives local people a reason to recognize the station as part of their own environment.","absenceTarget":null,"attributionSource":"writer","ambiguity":"material","reasoning":"The writer rejects photogenicity as the success criterion and supplies different criteria. Yet 'not necessarily' does not logically exclude 'normally', so NO is intended by discourse but NOT GIVEN remains reasonably arguable under strict quantifier logic."},{"questionId":"ynng-station-art-08","selectedAnswer":"NOT GIVEN","evidenceRelation":"not-stated","supportingQuote":null,"relatedZoneQuote":"The real test is whether a project improves the station experience without pretending to solve operational failures.","absenceTarget":"The writer gives no recommendation to remove all art from stations that have operational problems.","attributionSource":"writer","ambiguity":"none","reasoning":"Acknowledging operational failures and limiting what art can claim to solve neither entails nor contradicts universal removal."}],
+      "factualClaims": [
+        {
+          "claim": "Murals, small exhibitions and temporary installations can certainly soften places that otherwise feel rushed and anonymous.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "station-lta-gift-art",
+            "station-opdc-community-brief"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "station-lta-gift-art",
+              "locator": "Gift of Art — introductory programme description",
+              "evidenceSummary": "LTA says station art is intended to bring vibrancy and liveliness and create a more enjoyable, people-centred transport environment; this is an institutional aim, not measured proof of the passage's general effect."
+            },
+            {
+              "evidenceId": "station-opdc-community-brief",
+              "locator": "Park Royal Subway improvements — Gateway to Park Royal brief",
+              "evidenceSummary": "OPDC describes an underpass as disconnected and uninviting and proposes a mural to make it welcoming, accessible and visually striking, again as a project objective rather than an evaluated outcome."
+            }
+          ],
+          "note": "The sources make the modal possibility plausible, but 'certainly soften' generalises from programme intentions and a single brief without outcome evidence."
+        },
+        {
+          "claim": "Transport authorities sometimes commission large works without asking local residents what would feel meaningful or useful.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "station-lta-gift-art",
+            "station-opdc-community-brief"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "station-lta-gift-art",
+              "locator": "Gift of Art — programme and gallery descriptions",
+              "evidenceSummary": "The page documents donated and sponsored station artworks but does not state whether residents were or were not consulted. Silence cannot establish absence of consultation."
+            },
+            {
+              "evidenceId": "station-opdc-community-brief",
+              "locator": "Park Royal Subway improvements — artist requirements",
+              "evidenceSummary": "The brief expressly requires the selected artist or team to engage closely with the local community, so it supplies no example of the claimed non-consultation practice."
+            }
+          ],
+          "note": "Neither candidate source traces the asserted practice or its frequency; the OPDC example points to consultation rather than its absence."
+        },
+        {
+          "claim": "A modest project developed with community groups may do more for public trust than an expensive installation chosen by distant planners.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "station-opdc-community-brief"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "station-opdc-community-brief",
+              "locator": "Park Royal Subway improvements — community engagement and £50,000 budget requirements",
+              "evidenceSummary": "The brief requires community engagement, inclusiveness, local representation, practicality and a defined budget, but reports no public-trust outcome and makes no comparison with expensive planner-selected works."
+            }
+          ],
+          "note": "This is the writer's normative comparative judgment; the candidate case does not verify the comparison or trust effect."
+        },
+        {
+          "claim": "Art programs can be funded separately, supported by cultural grants or used to explain local history while renovation is already taking place.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "station-lta-gift-art",
+            "station-opdc-community-brief"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "station-lta-gift-art",
+              "locator": "Gift of Art — programme description and gallery donor/sponsor entries",
+              "evidenceSummary": "LTA documents artworks donated by organisations or sponsored as commissions and examples tied to local heritage, supporting separate sponsorship and place-based interpretation in specific cases."
+            },
+            {
+              "evidenceId": "station-opdc-community-brief",
+              "locator": "Park Royal Subway improvements — improvement project and art brief",
+              "evidenceSummary": "OPDC incorporates a mural or integrated public art into a subway-improvement project with a defined project budget, showing that art can form part of practical improvement work."
+            }
+          ],
+          "note": "The cases support parts of this compound claim, but the reviewed pages do not establish cultural-grant funding or the full local-history-during-renovation formulation."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:yes-no-not-given:ynng-remote-work",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "high",
+        "representationRisk": "high",
+        "priorKnowledgeRisk": "high",
+        "irrelevantLoadRisk": "medium",
+        "titleCueRisk": "high",
+        "notes": [
+          "The title discloses the direction of the central thesis and cues at least questions 01 and 07.",
+          "The sources establish persistent hybrid work, observed footfall/ridership/spend concerns and preference patterns, but not the essay's specific causal mechanisms or optimal coordination model.",
+          "Several plausible-sounding claims invite common knowledge or workplace intuition beyond the text and sources."
+        ]
+      },
+      "questions": [{"questionId":"ynng-remote-work-01","selectedAnswer":"YES","evidenceRelation":"agrees","supportingQuote":"I think this conclusion is too neat.","relatedZoneQuote":"The rise of remote work has encouraged some commentators to predict the end of central business districts. I think this conclusion is too neat.","absenceTarget":null,"attributionSource":"mixed","ambiguity":"none","reasoning":"The prediction belongs to commentators, but the writer explicitly evaluates it as too neat, which agrees with 'oversimplified'."},{"questionId":"ynng-remote-work-02","selectedAnswer":"NO","evidenceRelation":"contradicts","supportingQuote":"That does not mean every company should force employees back five days a week.","relatedZoneQuote":"That does not mean every company should force employees back five days a week.","absenceTarget":null,"attributionSource":"writer","ambiguity":"none","reasoning":"The writer directly rejects the five-day requirement."},{"questionId":"ynng-remote-work-03","selectedAnswer":"NOT GIVEN","evidenceRelation":"not-stated","supportingQuote":null,"relatedZoneQuote":"A rigid return-to-office policy can waste time and damage trust when people have already shown they can complete focused tasks at home.","absenceTarget":"The writer never compares the overall productivity of remote employees with that of office employees.","attributionSource":"writer","ambiguity":"minor","reasoning":"Ability to complete focused tasks at home is not a claim that either location produces higher or lower employee productivity."},{"questionId":"ynng-remote-work-04","selectedAnswer":"YES","evidenceRelation":"agrees","supportingQuote":"However, entirely optional attendance can create another problem: if nobody knows when colleagues will be present, the office loses its value as a shared meeting place.","relatedZoneQuote":"However, entirely optional attendance can create another problem: if nobody knows when colleagues will be present, the office loses its value as a shared meeting place.","absenceTarget":null,"attributionSource":"writer","ambiguity":"none","reasoning":"The passage expressly says completely optional attendance can make the office lose its shared-place value."},{"questionId":"ynng-remote-work-05","selectedAnswer":"NO","evidenceRelation":"contradicts","supportingQuote":"City governments also have a role, but they should not rescue office districts by protecting old habits.","relatedZoneQuote":"City governments also have a role, but they should not rescue office districts by protecting old habits. Instead, they should make centres more mixed and resilient.","absenceTarget":null,"attributionSource":"writer","ambiguity":"none","reasoning":"The writer rejects preservation of old office-district habits and advocates change."},{"questionId":"ynng-remote-work-06","selectedAnswer":"NOT GIVEN","evidenceRelation":"not-stated","supportingQuote":null,"relatedZoneQuote":"Empty ground-floor units can become clinics, classrooms or small performance spaces.","absenceTarget":"The writer does not compare clinics or classrooms with shops or say that either use is better.","attributionSource":"writer","ambiguity":"none","reasoning":"The examples are possible new uses for empty units, not a ranking against shops."},{"questionId":"ynng-remote-work-07","selectedAnswer":"YES","evidenceRelation":"agrees","supportingQuote":"The real challenge is to use proximity deliberately, rather than pretending that every task becomes better simply because it happens in the same building.","relatedZoneQuote":"Remote work has changed the city centre, but it has not made proximity irrelevant. The real challenge is to use proximity deliberately, rather than pretending that every task becomes better simply because it happens in the same building.","absenceTarget":null,"attributionSource":"writer","ambiguity":"none","reasoning":"Using proximity deliberately, while rejecting it as an automatic benefit for every task, agrees with selective use."}],
+      "factualClaims": [
+        {
+          "claim": "Fewer daily commuters may reduce pressure on trains and roads, but a city centre is not only a container for desks.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "remote-ons-hybrid-2025",
+            "remote-london-assembly-central-2024"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "remote-ons-hybrid-2025",
+              "locator": "Main points and 'Hybrid working has increased'",
+              "evidenceSummary": "ONS reports 28% hybrid working in early 2025 and a decline in travel-to-work-only patterns, but does not measure pressure on trains or roads."
+            },
+            {
+              "evidenceId": "remote-london-assembly-central-2024",
+              "locator": "Impact of remote working on central London — recommendations 1 and 2",
+              "evidenceSummary": "The Assembly calls for monitoring ridership, footfall, dwell time and spend, showing that commuting and central activity are connected policy concerns, not proving the passage's pressure-reduction mechanism."
+            }
+          ],
+          "note": "The directional premise is plausible and partly contextualised, but the specific transport-pressure effect and roads component are not demonstrated."
+        },
+        {
+          "claim": "It is also a place where shops, cafes, cultural venues and public services depend on repeated daytime movement.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "remote-london-assembly-central-2024"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "remote-london-assembly-central-2024",
+              "locator": "Impact of remote working on central London — recommendations 1, 2 and 4",
+              "evidenceSummary": "The Assembly treats footfall, dwell time, spend, public transport and the central London economy as important linked measures, but the page does not enumerate or establish dependence for each type of venue and service in the claim."
+            }
+          ],
+          "note": "The source supports a general relationship between daytime activity and central economic measures, while the four-sector dependence claim is broader than its evidence."
+        },
+        {
+          "claim": "However, entirely optional attendance can create another problem: if nobody knows when colleagues will be present, the office loses its value as a shared meeting place.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "remote-ecb-work-preference-2025"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "remote-ecb-work-preference-2025",
+              "locator": "Hybrid preference results and discussion of remote-work challenges",
+              "evidenceSummary": "ECB survey reporting shows hybrid work is the most common and preferred remote option and notes social isolation and fewer opportunities to connect with colleagues as remote-work challenges; it does not test unpredictable optional attendance or loss of office value."
+            }
+          ],
+          "note": "Related connection costs are documented, but the passage turns them into a specific causal account without direct support."
+        },
+        {
+          "claim": "Teams may choose two or three common days for meetings, mentoring and decisions that benefit from quick conversation.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "remote-ecb-work-preference-2025"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "remote-ecb-work-preference-2025",
+              "locator": "Actual and desired remote-work days; pay-cut hypothetical",
+              "evidenceSummary": "ECB reports that hybrid arrangements are common and preferred and asks about working from home two or three days weekly, but it does not study common office days, mentoring, meetings or decision quality."
+            }
+          ],
+          "note": "The numerical overlap with 'two or three' concerns days at home, not coordinated in-office overlap; the candidate source cannot substantiate this recommendation."
+        },
+        {
+          "claim": "Empty ground-floor units can become clinics, classrooms or small performance spaces.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "remote-london-assembly-central-2024"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "remote-london-assembly-central-2024",
+              "locator": "Impact of remote working on central London — recommendation 3",
+              "evidenceSummary": "The Assembly recommends facilitating use of empty properties for local charities and community groups, supporting adaptive community use in principle but not the specific ground-floor clinic, classroom or performance-space conversions."
+            }
+          ],
+          "note": "The source supports reuse of empty property generally; the listed uses and physical-location detail are unsourced extrapolations."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:yes-no-not-given:ynng-school-uniforms",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "medium",
+        "representationRisk": "medium",
+        "priorKnowledgeRisk": "high",
+        "irrelevantLoadRisk": "low",
+        "titleCueRisk": "medium",
+        "notes": [
+          "The title's 'careful argument' wording cues a qualified, non-absolute stance.",
+          "Official guidance directly supports affordability, peer-pressure, equality and supplier risks, but not the residual status-signalling examples.",
+          "Question 04 retains a material scope ambiguity between losing every form of expression and any loss of expression."
+        ]
+      },
+      "questions": [{"questionId":"ynng-uniforms-01","selectedAnswer":"YES","evidenceRelation":"agrees","supportingQuote":"Debates about school uniforms often become strangely absolute.","relatedZoneQuote":"Debates about school uniforms often become strangely absolute. Supporters say uniforms create equality; opponents say they erase individuality. Both claims contain something useful, but neither is strong enough on its own.","absenceTarget":null,"attributionSource":"writer","ambiguity":"minor","reasoning":"The writer frames the debate's two opposing claims as absolute and individually insufficient, which supports the statement, although 'both sides' is an inferred mapping to supporters and opponents."},{"questionId":"ynng-uniforms-02","selectedAnswer":"NO","evidenceRelation":"contradicts","supportingQuote":"A uniform is therefore a partial tool, not a complete answer to inequality.","relatedZoneQuote":"A uniform is therefore a partial tool, not a complete answer to inequality.","absenceTarget":null,"attributionSource":"writer","ambiguity":"none","reasoning":"The writer explicitly denies that uniforms are a complete solution to inequality."},{"questionId":"ynng-uniforms-03","selectedAnswer":"NO","evidenceRelation":"contradicts","supportingQuote":"Young people express identity through language, friendships, interests and choices outside school.","relatedZoneQuote":"The strongest objection is not that students lose every form of self-expression. Young people express identity through language, friendships, interests and choices outside school.","absenceTarget":null,"attributionSource":"writer","ambiguity":"none","reasoning":"The passage explicitly identifies several ways students continue to express identity."},{"questionId":"ynng-uniforms-04","selectedAnswer":"YES","evidenceRelation":"agrees","supportingQuote":"The more serious concern is whether uniform rules are enforced unevenly.","relatedZoneQuote":"The strongest objection is not that students lose every form of self-expression. Young people express identity through language, friendships, interests and choices outside school. The more serious concern is whether uniform rules are enforced unevenly.","absenceTarget":null,"attributionSource":"writer","ambiguity":"material","reasoning":"The intended comparison clearly elevates uneven enforcement over the total-loss objection. However, the statement's 'than all loss of self-expression' can mean any loss rather than loss of every form, a broader comparison the writer does not make; NOT GIVEN is therefore reasonably arguable."},{"questionId":"ynng-uniforms-05","selectedAnswer":"NOT GIVEN","evidenceRelation":"not-stated","supportingQuote":null,"relatedZoneQuote":"It is less true when families must buy from a single supplier or replace branded pieces quickly.","absenceTarget":"The writer does not state how many schools use single suppliers or that most schools do so.","attributionSource":"writer","ambiguity":"none","reasoning":"A conditional description of one costly arrangement supplies no prevalence claim."},{"questionId":"ynng-uniforms-06","selectedAnswer":"NO","evidenceRelation":"contradicts","supportingQuote":"I am not against uniforms.","relatedZoneQuote":"I am not against uniforms. I am against treating them as a moral shortcut.","absenceTarget":null,"attributionSource":"writer","ambiguity":"none","reasoning":"The writer directly denies opposition to uniforms themselves."},{"questionId":"ynng-uniforms-07","selectedAnswer":"YES","evidenceRelation":"agrees","supportingQuote":"A good policy should be flexible where identity or affordability is at stake, clear enough to avoid arbitrary punishment and modest about what clothing rules can actually achieve.","relatedZoneQuote":"A good policy should be flexible where identity or affordability is at stake, clear enough to avoid arbitrary punishment and modest about what clothing rules can actually achieve.","absenceTarget":null,"attributionSource":"writer","ambiguity":"none","reasoning":"The recommendation explicitly calls for flexibility on both identity and affordability."}],
+      "factualClaims": [
+        {
+          "claim": "Uniforms can reduce visible competition around clothing, especially in schools where students come from very different economic backgrounds.",
+          "assessment": "supported",
+          "evidenceIds": [
+            "uniforms-dfe-cost-2026"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "uniforms-dfe-cost-2026",
+              "locator": "The importance of the cost of school uniform",
+              "evidenceSummary": "The statutory guidance says a common uniform can act as a social leveller and reduce bullying and peer pressure to wear the latest fashions or expensive clothes, while also warning that unaffordable uniform can recreate visible distinctions."
+            }
+          ],
+          "note": "The modal claim is directly aligned with the official guidance, though the source is England-specific and does not promise the effect in every school."
+        },
+        {
+          "claim": "Expensive shoes, phones and bags can still signal status even when shirts and trousers look similar.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "uniforms-dfe-policy-2026"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "uniforms-dfe-policy-2026",
+              "locator": "PE kit guidance on peer pressure and designer sportswear",
+              "evidenceSummary": "The guidance recognises peer pressure around designer sportswear and visible branding, but does not discuss phones or demonstrate residual status signalling from shoes and bags when core uniform items match."
+            }
+          ],
+          "note": "The claim may be plausible from general social knowledge, but the candidate sources do not trace its specific examples or comparison."
+        },
+        {
+          "claim": "If some hairstyles, cultural garments or body types are treated as problems, the policy can become a source of unfair discipline.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "uniforms-dfe-policy-2026"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "uniforms-dfe-policy-2026",
+              "locator": "Human rights, equality and discrimination; pupil non-compliance",
+              "evidenceSummary": "The guidance requires inclusive and non-discriminatory policies, points schools to hair-discrimination guidance, requires reasonable cultural and religious accommodation, and says breaches should be handled proportionately and fairly. It does not use 'body types' or document the exact causal formulation."
+            }
+          ],
+          "note": "Hair and cultural-garment risks are strongly grounded; the body-type component and universalised discipline consequence go beyond the reviewed text."
+        },
+        {
+          "claim": "It is less true when families must buy from a single supplier or replace branded pieces quickly.",
+          "assessment": "supported",
+          "evidenceIds": [
+            "uniforms-dfe-cost-2026",
+            "uniforms-cma-costs"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "uniforms-dfe-cost-2026",
+              "locator": "Cost considerations, branded items and uniform supply arrangements",
+              "evidenceSummary": "Statutory guidance says schools should avoid single-supplier contracts, minimise branding costs and ensure branded items are durable so parents do not face unnecessarily frequent replacement."
+            },
+            {
+              "evidenceId": "uniforms-cma-costs",
+              "locator": "School uniforms collection — CMA/OFT findings on exclusivity",
+              "evidenceSummary": "CMA reports long-standing parental concerns about restricted choice and cites an OFT study finding exclusive outlets more expensive than general retailers on average."
+            }
+          ],
+          "note": "Both the supplier restriction and replacement/durability mechanisms are directly recognised as affordability risks."
+        }
+      ]
+    }
+  ]
+}

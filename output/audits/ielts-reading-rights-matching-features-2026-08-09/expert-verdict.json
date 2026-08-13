@@ -1,0 +1,564 @@
+{
+  "schemaVersion": "ielts-reading-matching-features-expert-verdict.v1",
+  "reviewer": {
+    "humanSignature": false,
+    "sourceContext": "two-pass-blind-then-factual-sources",
+    "reviewSequence": [
+      "blind-review",
+      "factual-source-review"
+    ],
+    "reviewerRunId": "matching-features-clean-review-2026-08-09-a",
+    "reviewedAt": "2026-08-09T13:53:37Z",
+    "blindPacketSha256": "8bcfaa19f0ee6dd9137677e9474c668034d844c78aa73a6fb382184f8e4a41cc",
+    "firstPassSha256": "31498041546bad09ad26db4c46a076bf342b2531a72afe0f232982d02e3a6fab",
+    "openedEvidenceIds": [
+      "urban-nyc-rooftop-farm",
+      "urban-doe-controlled-environment-agriculture",
+      "urban-usda-school-gardens",
+      "urban-epa-vacant-land-agriculture",
+      "urban-usda-cea-energy",
+      "memory-pubmed-route-decisions",
+      "memory-goodwin-cowitness",
+      "memory-nia-external-aids",
+      "memory-pmc-sleep-vocabulary",
+      "memory-plos-open-book",
+      "transport-tfl-bus-priority",
+      "transport-who-safe-speeds",
+      "transport-uk-maas-accessibility",
+      "transport-doe-smart-charge",
+      "transport-nyc-pedestrian-plaza"
+    ],
+    "directSourceReview": true,
+    "notes": "All 15 candidate URLs were reviewed directly, or through URL/DOI-indexed web results when the destination blocked the reader. Candidate-source inclusion is corroborative only: it is not factual sign-off, proof of named-entity provenance, authorship or authorization, or rights clearance."
+  },
+  "records": [
+    {
+      "assetId": "formative:matching-features:mf-urban-farming",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "high",
+        "representationRisk": "high",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "medium",
+        "passageTitleCueRisk": "low",
+        "featureDescriptionCueRisk": "high",
+        "notes": "The passage is coherent and keeps four actors distinct, but most statements are close, single-sentence paraphrases and the feature descriptions disclose each actor's defining domain. It works as introductory practice, while offering less inference and distractor pressure than a strong IELTS Academic Matching Features set. Direct source review finds broad real-world analogues but does not trace the named collectives, people, lab, agreements, or attributed outcomes. Those unsupported factual-seeming specifics create high factual and representation risk, although every question remains answerable from the passage alone."
+      },
+      "questions": [
+        {
+          "questionId": "mf-urban-farming-01",
+          "selectedFeatureId": "B",
+          "evidenceQuotes": [
+            "The network's coordinator, Amara Singh, says the strongest benefit is not the harvest itself, but the way gardening makes biology, climate and nutrition visible in daily lessons."
+          ],
+          "association": "Actor/claim: Riverside School Network presents gardening chiefly as a way to make biology, climate and nutrition observable in lessons.",
+          "closestCompetingFeatureId": "C",
+          "competitorFailure": "Vacant Lot Alliance also gives gardening a non-food purpose, but that purpose is neighborhood stewardship and reducing illegal dumping, not observation of academic subjects.",
+          "ambiguity": "none",
+          "reasoning": "The statement paraphrases 'makes biology, climate and nutrition visible' as making academic subjects easier to observe, and 'mainly' is supported by the explicit contrast with the harvest."
+        },
+        {
+          "questionId": "mf-urban-farming-02",
+          "selectedFeatureId": "A",
+          "evidenceQuotes": [
+            "The group does not claim that rooftops can feed an entire city. Instead, it presents roof farming as a practical supplement where land prices make ground gardens unrealistic."
+          ],
+          "association": "Actor/claim: Green Roof Collective explicitly limits roof farming to a supplementary rather than city-complete food role.",
+          "closestCompetingFeatureId": "D",
+          "competitorFailure": "Metroponics Lab also proposes an urban production model, but its claim concerns predictable year-round supply and does not characterize the model as merely supplementary.",
+          "ambiguity": "none",
+          "reasoning": "The opposition between not feeding an entire city and being 'a practical supplement' directly encodes the complete-solution versus supplement distinction."
+        },
+        {
+          "questionId": "mf-urban-farming-03",
+          "selectedFeatureId": "C",
+          "evidenceQuotes": [
+            "Its volunteers argue that the gardens reduce illegal dumping and give residents a reason to care for spaces that previously felt unsafe."
+          ],
+          "association": "Actor/result: Vacant Lot Alliance links its gardens to less illegal dumping and renewed care for previously neglected spaces.",
+          "closestCompetingFeatureId": "A",
+          "competitorFailure": "Green Roof Collective uses underused roof space, but the passage does not link its plots to illegal dumping, unsafe areas, or misuse of abandoned land.",
+          "ambiguity": "none",
+          "reasoning": "'Reducing misuse' is a compact paraphrase of reducing illegal dumping, and 'abandoned spaces' points to the alliance's neglected lots."
+        },
+        {
+          "questionId": "mf-urban-farming-04",
+          "selectedFeatureId": "D",
+          "evidenceQuotes": [
+            "Its engineers emphasize predictable production: plants grow under controlled light and nutrient conditions, so harvests are less affected by weather."
+          ],
+          "association": "Actor/mechanism/result: Metroponics Lab uses controlled light and nutrients to reduce weather's effect on harvests.",
+          "closestCompetingFeatureId": "A",
+          "competitorFailure": "Green Roof Collective also produces crops in a non-ground setting, but its rooftop plots are not described as environmentally controlled or protected from weather variability.",
+          "ambiguity": "none",
+          "reasoning": "The statement preserves both the causal mechanism, controlled growing conditions, and the stated result, reduced vulnerability to weather."
+        },
+        {
+          "questionId": "mf-urban-farming-05",
+          "selectedFeatureId": "A",
+          "evidenceQuotes": [
+            "Its founder, Lina Torres, argued that unused roof space could supply herbs and salad leaves to nearby restaurants without competing for street-level land."
+          ],
+          "association": "Actor/goal: Green Roof Collective uses roofs so food production does not compete for land at street level.",
+          "closestCompetingFeatureId": "D",
+          "competitorFailure": "Metroponics Lab grows indoors near transit hubs, but the passage does not say that avoiding competition for street-level land is its goal.",
+          "ambiguity": "none",
+          "reasoning": "The wording 'tries to avoid competition' is directly supported by the founder's claim that roof use supplies produce 'without competing' for street-level land."
+        },
+        {
+          "questionId": "mf-urban-farming-06",
+          "selectedFeatureId": "C",
+          "evidenceQuotes": [
+            "The alliance negotiates temporary use agreements with property owners and turns neglected lots into community gardens."
+          ],
+          "association": "Actor/prerequisite/action: Vacant Lot Alliance negotiates temporary-use agreements with owners in connection with converting neglected lots.",
+          "closestCompetingFeatureId": "A",
+          "competitorFailure": "Green Roof Collective converts commercial roofs, but no agreement or negotiation is stated as a prerequisite for that conversion.",
+          "ambiguity": "none",
+          "reasoning": "The statement generalizes 'temporary use agreements' and preserves their role before or as part of transforming the lots into gardens."
+        },
+        {
+          "questionId": "mf-urban-farming-07",
+          "selectedFeatureId": "D",
+          "evidenceQuotes": [
+            "Critics point out that such systems require energy and technical maintenance, but the company says the model is useful where year-round supply matters more than low-tech accessibility."
+          ],
+          "association": "Actor/criticism: Metroponics Lab's system is criticized for its requirement for technical maintenance, alongside energy use.",
+          "closestCompetingFeatureId": "A",
+          "competitorFailure": "Green Roof Collective's model is constrained by where ground gardens are unrealistic, but the passage identifies no need for substantial technical support and attributes no such criticism to it.",
+          "ambiguity": "none",
+          "reasoning": "'May need significant technical support' accurately paraphrases the expressly criticized requirement for technical maintenance."
+        }
+      ],
+      "factualClaims": [
+        {
+          "claim": "Urban farming is often described as a single movement, but city projects can have very different goals.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "urban-nyc-rooftop-farm",
+            "urban-usda-school-gardens",
+            "urban-epa-vacant-land-agriculture",
+            "urban-doe-controlled-environment-agriculture"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "urban-nyc-rooftop-farm",
+              "locator": "NYC Mayor's Office page, “What you should know” and opening announcement paragraphs",
+              "evidenceSummary": "The official case describes a Staten Island rooftop farm pursuing organic food production, stormwater capture, flood reduction, biodiversity, and community benefits."
+            },
+            {
+              "evidenceId": "urban-usda-school-gardens",
+              "locator": "USDA FNS URL-indexed page, “School Gardens: Using Gardens to Grow Healthy Habits in Cafeterias, Classrooms and Communities” overview",
+              "evidenceSummary": "The USDA overview describes school gardens as educational tools, supports for healthy eating, and vehicles for community inclusion."
+            },
+            {
+              "evidenceId": "urban-epa-vacant-land-agriculture",
+              "locator": "US EPA “Urban Agriculture” page, sections “Community Benefits” and “What to Know Before You Grow”",
+              "evidenceSummary": "EPA describes reuse of brownfields, vacant lots, and abandoned structures for gardens with remediation, food-access, shared-effort, and environmental goals."
+            },
+            {
+              "evidenceId": "urban-doe-controlled-environment-agriculture",
+              "locator": "US DOE “Water, Energy, and the Future of Farming,” paragraphs introducing the CEA Accelerator",
+              "evidenceSummary": "DOE presents controlled-environment agriculture as local, year-round production that can supplement current food production while reducing land and water use."
+            }
+          ],
+          "note": "The reviewed sources substantiate that urban-agriculture projects can pursue different goals, but they do not substantiate the framing that urban farming is commonly treated as a single movement; the compound claim is therefore broader than the evidence."
+        },
+        {
+          "claim": "The Green Roof Collective began by converting flat commercial roofs into small vegetable plots.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "urban-nyc-rooftop-farm"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "urban-nyc-rooftop-farm",
+              "locator": "NYC Mayor's Office announcement, paragraphs describing Corporate Commons Three and the Nicotra Grown Organic Rooftop Farm",
+              "evidenceSummary": "The page documents a real rooftop farm on a corporate building and identifies the Nicotra Group, Brooklyn Grange, and city funding; it does not identify Green Roof Collective."
+            }
+          ],
+          "note": "A close real-world analogue exists, but the named collective, its origin story, and its specific conversion activity are not traceable to the candidate source."
+        },
+        {
+          "claim": "Students maintain raised beds, record soil temperature and compare plant growth under different watering schedules.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "urban-usda-school-gardens"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "urban-usda-school-gardens",
+              "locator": "USDA FNS URL-indexed school-gardens overview and indexed “Growing Your Farm to School Program” school-garden examples",
+              "evidenceSummary": "USDA supports school gardens as classroom educational tools and indexed examples include raised beds and living laboratories, but the reviewed material does not report the soil-temperature and watering-comparison protocol."
+            }
+          ],
+          "note": "The educational setting is plausible and partly corroborated, but the exact student activities and protocol are not traceable to the reviewed USDA material."
+        },
+        {
+          "claim": "The alliance negotiates temporary use agreements with property owners and turns neglected lots into community gardens.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "urban-epa-vacant-land-agriculture"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "urban-epa-vacant-land-agriculture",
+              "locator": "US EPA “Urban Agriculture,” “Community Benefits” and site-assessment guidance",
+              "evidenceSummary": "EPA confirms that vacant lots and abandoned structures can be turned into gardens and advises property assessment for contaminants, but it does not identify the alliance or describe temporary-use negotiations with owners."
+            }
+          ],
+          "note": "Vacant-land conversion is generally supported, while the named actor and temporary-use agreement process remain untraceable."
+        },
+        {
+          "claim": "Critics point out that such systems require energy and technical maintenance, but the company says the model is useful where year-round supply matters more than low-tech accessibility.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "urban-usda-cea-energy",
+            "urban-doe-controlled-environment-agriculture"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "urban-usda-cea-energy",
+              "locator": "USDA ARS Publication #434664, Interpretive Summary",
+              "evidenceSummary": "The ARS review says controlled-environment agriculture is limited by high energy use, startup costs, and technical expertise, while regulated systems target reliable year-round production."
+            },
+            {
+              "evidenceId": "urban-doe-controlled-environment-agriculture",
+              "locator": "US DOE “Water, Energy, and the Future of Farming,” controlled-variables and year-round-production paragraphs",
+              "evidenceSummary": "DOE explains that indoor farms control light, water, nutrients, and HVAC to enable year-round production and discusses energy-efficiency and technical-operation needs."
+            }
+          ],
+          "note": "The generic energy, technical-expertise, and year-round-production trade-off is well corroborated, but neither source supports the attribution to the passage's company or the exact low-tech-accessibility comparison."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-features:mf-memory-research",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "high",
+        "representationRisk": "high",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "medium",
+        "passageTitleCueRisk": "low",
+        "featureDescriptionCueRisk": "high",
+        "notes": "The five research strands are clear and the unused-option format is plausible, but each statement maps to an isolated sentence with little cross-paragraph competition. The feature descriptions effectively summarize the decisive associations, so the set is useful for basic technique but under-challenges IELTS-level discrimination. Direct source review corroborates several broad memory phenomena but not the named researchers or study groups, and multiple passage protocols differ materially from the reviewed studies. The set is internally answerable, yet its unmarked research attributions create high factual and representation risk."
+      },
+      "questions": [
+        {
+          "questionId": "mf-memory-01",
+          "selectedFeatureId": "B",
+          "evidenceQuotes": [
+            "The lab found that people often adopted details they had only heard during discussion, especially when the other speaker sounded confident."
+          ],
+          "association": "Actor/result/condition: Moreno Lab found that discussion can introduce unseen details into memory, particularly when the source sounds confident.",
+          "closestCompetingFeatureId": "A",
+          "competitorFailure": "Dr. Helen Ward also studied recall after an experience, but her participants generated predictions themselves; they were not accepting unseen details from confident social input.",
+          "ambiguity": "none",
+          "reasoning": "'Accept details they did not originally see' paraphrases adopting details heard only in discussion, while the confidence condition is explicitly retained."
+        },
+        {
+          "questionId": "mf-memory-02",
+          "selectedFeatureId": "C",
+          "evidenceQuotes": [
+            "Rather than testing complex digital systems, his project used simple visual routines: a tray by the door for keys, coloured stickers on medication boxes and a checklist beside the kettle."
+          ],
+          "association": "Actor/method: Professor Kenji Sato deliberately used simple visual household routines instead of complex digital systems.",
+          "closestCompetingFeatureId": "E",
+          "competitorFailure": "Open Notes Group also examines a low-tech external aid, but its notes are used in quizzes and are not ordinary household cues contrasted with advanced technology.",
+          "ambiguity": "none",
+          "reasoning": "The contrast between 'complex digital systems' and a tray, stickers, and a kettle-side checklist directly supports both halves of the statement."
+        },
+        {
+          "questionId": "mf-memory-03",
+          "selectedFeatureId": "A",
+          "evidenceQuotes": [
+            "Her team found that participants remembered routes better when they paused at decision points and described what they expected to see next."
+          ],
+          "association": "Actor/method/result: Dr. Helen Ward found that pausing at route decisions to predict the next view improved route memory.",
+          "closestCompetingFeatureId": "D",
+          "competitorFailure": "Sleep Recall Study also links the timing of an action to better recall, but the action is vocabulary review around sleep, not pausing to anticipate a location.",
+          "ambiguity": "none",
+          "reasoning": "'Anticipate the next location' paraphrases describing what participants expected to see next, and improved recall restates their better route memory."
+        },
+        {
+          "questionId": "mf-memory-04",
+          "selectedFeatureId": "D",
+          "evidenceQuotes": [
+            "Students who reviewed new words shortly before sleep and again the next morning remembered more than those who completed both reviews during the afternoon."
+          ],
+          "association": "Study/timing/result: Sleep Recall Study associates reviews placed before and after sleep with greater vocabulary recall.",
+          "closestCompetingFeatureId": "A",
+          "competitorFailure": "Dr. Helen Ward also found that the timing and placement of an encoding action mattered, but her result concerns predictions at route decision points and makes no link to sleep.",
+          "ambiguity": "none",
+          "reasoning": "The comparison isolates review timing around sleep as the distinguishing condition associated with remembering more."
+        },
+        {
+          "questionId": "mf-memory-05",
+          "selectedFeatureId": "E",
+          "evidenceQuotes": [
+            "Instead, students with well-organized notes tended to review more actively before class because they wanted their notes to be usable under time pressure."
+          ],
+          "association": "Group/result: Open Notes Group found that permission to use notes was associated with more active review in preparation for quizzes.",
+          "closestCompetingFeatureId": "C",
+          "competitorFailure": "Professor Kenji Sato also studied support tools, but his aids reduce remembering at the moment of action rather than motivating more active advance preparation.",
+          "ambiguity": "none",
+          "reasoning": "The allowed support tool is the notes, and the observed preparation effect is the students' more active pre-class review so those notes would work under time pressure."
+        },
+        {
+          "questionId": "mf-memory-06",
+          "selectedFeatureId": "A",
+          "evidenceQuotes": [
+            "Dr. Helen Ward studied how people remember directions after walking through unfamiliar buildings."
+          ],
+          "association": "Actor/research focus: Dr. Helen Ward studies memory for directions after movement through unfamiliar indoor buildings.",
+          "closestCompetingFeatureId": "B",
+          "competitorFailure": "Moreno Lab also tested memory after participants observed an event, but its focus is socially induced false details, not navigation through indoor spaces.",
+          "ambiguity": "none",
+          "reasoning": "Remembering directions after walking through buildings is a direct instance of remembering routes through indoor spaces."
+        }
+      ],
+      "factualClaims": [
+        {
+          "claim": "Her team found that participants remembered routes better when they paused at decision points and described what they expected to see next.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "memory-pubmed-route-decisions"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "memory-pubmed-route-decisions",
+              "locator": "PubMed PMID 25419818, Abstract",
+              "evidenceSummary": "Chrastil and Warren report that active path decision-making in a virtual hedge maze significantly contributed to later route finding, compared with being guided."
+            }
+          ],
+          "note": "The source supports a benefit from active route decisions, but not the passage's named researcher, unfamiliar-building protocol, pauses at decision points, or verbal predictions of what would appear next."
+        },
+        {
+          "claim": "The lab found that people often adopted details they had only heard during discussion, especially when the other speaker sounded confident.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "memory-goodwin-cowitness"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "memory-goodwin-cowitness",
+              "locator": "DOI-indexed Wiley article summary for 10.1002/acp.3320",
+              "evidenceSummary": "Goodwin and colleagues found that highly confident co-witnesses presenting misleading details led participants to report more misinformation in collaborative and later individual reports."
+            }
+          ],
+          "note": "The confidence-linked misinformation effect is directly corroborated in substance, but the source identifies Goodwin and colleagues rather than Moreno Lab and does not establish that the passage derives from that study."
+        },
+        {
+          "claim": "Rather than testing complex digital systems, his project used simple visual routines: a tray by the door for keys, coloured stickers on medication boxes and a checklist beside the kettle.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "memory-nia-external-aids"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "memory-nia-external-aids",
+              "locator": "NIA URL-indexed “Caring for Older Patients With Cognitive Impairment,” daily-functioning aids guidance",
+              "evidenceSummary": "NIA recommends simple external aids such as to-do lists, calendars, and reminders for daily functioning, but does not report a study using the passage's tray, stickers, kettle-side checklist, or named researcher."
+            }
+          ],
+          "note": "The general use of low-tech external memory aids is supported, while the exact intervention objects, comparison with complex digital systems, project, and attribution are not traceable."
+        },
+        {
+          "claim": "Students who reviewed new words shortly before sleep and again the next morning remembered more than those who completed both reviews during the afternoon.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "memory-pmc-sleep-vocabulary"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "memory-pmc-sleep-vocabulary",
+              "locator": "PMCID PMC10275344 / PubMed PMID 37334107, Abstract",
+              "evidenceSummary": "Hulme and Rodd found better retention of newly learned word meanings after a 12-hour interval containing sleep than wake, with strongest recall when sleep immediately followed exposure."
+            }
+          ],
+          "note": "The source supports a sleep-related retention benefit, but it used story-based learning of new meanings and did not compare the passage's exact before-sleep-plus-morning review schedule with two afternoon reviews."
+        },
+        {
+          "claim": "Instead, students with well-organized notes tended to review more actively before class because they wanted their notes to be usable under time pressure.",
+          "assessment": "unsupported",
+          "evidenceIds": [
+            "memory-plos-open-book"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "memory-plos-open-book",
+              "locator": "PLOS ONE article 10.1371/journal.pone.0273185, Abstract and Conclusions",
+              "evidenceSummary": "The study reports that students adapted toward note preparation and broad conceptual understanding, and that such habits may relate to higher performance; students also perceived that they studied less for open-note exams."
+            }
+          ],
+          "note": "The reviewed study does not report the claimed before-class active-review behavior, the time-pressure motivation, or an Open Notes Group finding; its reported perceived reduction in study time also prevents treating the passage's stronger causal narrative as supported."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-features:mf-transport-policies",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "high",
+        "representationRisk": "high",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "medium",
+        "passageTitleCueRisk": "low",
+        "featureDescriptionCueRisk": "high",
+        "notes": "The passage offers several policy-benefit-limitation patterns and credible municipal vocabulary, but the statements closely preserve the order and logic of one sentence per policy. Feature descriptions name nearly every decisive mechanism, making the task substantially more cued and less demanding than a robust IELTS Academic item set. Direct source review confirms that comparable transport mechanisms and trade-offs exist, but none of the five named policies or their exact complaints, rollout phases, hospital findings, maintenance returns, or shuttle response is established. Internal matching does not require prior knowledge, while the realistic but untraceable reporting adds construct-irrelevant verification load."
+      },
+      "questions": [
+        {
+          "questionId": "mf-transport-01",
+          "selectedFeatureId": "A",
+          "evidenceQuotes": [
+            "City officials reported that average bus journey times fell, but shop owners complained that loading spaces became harder to access."
+          ],
+          "association": "Policy/result/drawback: Rivergate Bus Priority Plan shortened bus journeys while making delivery loading access more difficult.",
+          "closestCompetingFeatureId": "E",
+          "competitorFailure": "East Market Pedestrian Zone also produced an access complaint after a transport restriction, but the affected access was older residents' walk from taxi drop-off points, and no public-transport travel-time gain is reported.",
+          "ambiguity": "none",
+          "reasoning": "The statement combines both sides of the passage's explicit contrast: falling bus journey times and harder access to loading spaces."
+        },
+        {
+          "questionId": "mf-transport-02",
+          "selectedFeatureId": "B",
+          "evidenceQuotes": [
+            "The programme did not greatly change total traffic volume, but hospital data showed fewer serious injuries among pedestrians and cyclists in the treated areas."
+          ],
+          "association": "Policy/result/limitation: Northbridge Safe Streets Programme coincided with fewer serious injuries despite little change in total traffic volume.",
+          "closestCompetingFeatureId": "E",
+          "competitorFailure": "East Market Pedestrian Zone also changes street access and restricts cars, but the passage reports neither injury reduction nor a finding that traffic volume remained broadly unchanged.",
+          "ambiguity": "none",
+          "reasoning": "'Fewer severe injuries' is an exact semantic match for fewer serious injuries, and the unchanged-volume qualification is explicitly stated."
+        },
+        {
+          "questionId": "mf-transport-03",
+          "selectedFeatureId": "C",
+          "evidenceQuotes": [
+            "Critics noted that the project helped smartphone users first, while cash users had to wait for a later phase."
+          ],
+          "association": "Policy/distributional limitation: Metro Card Integration Project gave smartphone users earlier benefits than cash users.",
+          "closestCompetingFeatureId": "E",
+          "competitorFailure": "East Market Pedestrian Zone also raised unequal-access concerns, but those concerned walking distance for older taxi passengers, not an initial technology-versus-payment-method rollout gap.",
+          "ambiguity": "none",
+          "reasoning": "The contrast between smartphone users helped first and cash users waiting directly encodes unequal initial benefit by technology or payment method."
+        },
+        {
+          "questionId": "mf-transport-04",
+          "selectedFeatureId": "D",
+          "evidenceQuotes": [
+            "The trial reduced fuel use in city departments, but managers said the charging schedule had to be planned carefully because some vehicles returned late from maintenance jobs."
+          ],
+          "association": "Policy/operational constraint: Hillside Electric Fleet Trial required careful charging plans because work vehicles could return late.",
+          "closestCompetingFeatureId": "A",
+          "competitorFailure": "Rivergate Bus Priority Plan also required time-window planning, but that adjustment managed shop deliveries, not the late return and charging of vehicles used for work tasks.",
+          "ambiguity": "none",
+          "reasoning": "The statement retains the stated causal chain from late returns after maintenance jobs to the need for careful scheduling."
+        },
+        {
+          "questionId": "mf-transport-05",
+          "selectedFeatureId": "E",
+          "evidenceQuotes": [
+            "After public meetings, the city added a small accessible shuttle around the zone."
+          ],
+          "association": "Policy/response: East Market Pedestrian Zone added an accessible shuttle after access concerns about older residents were raised.",
+          "closestCompetingFeatureId": "A",
+          "competitorFailure": "Rivergate Bus Priority Plan likewise changed after stakeholder complaints, but it added delivery windows rather than a new passenger service addressing older residents' access.",
+          "ambiguity": "none",
+          "reasoning": "The immediately preceding concern is that older residents faced longer walks from taxi drop-off points; the accessible shuttle is the subsequently added service."
+        },
+        {
+          "questionId": "mf-transport-06",
+          "selectedFeatureId": "C",
+          "evidenceQuotes": [
+            "It was designed for convenience, especially for passengers who used more than one mode in a single journey."
+          ],
+          "association": "Policy/goal: Metro Card Integration Project was designed to make single journeys involving multiple modes more convenient.",
+          "closestCompetingFeatureId": "A",
+          "competitorFailure": "Rivergate Bus Priority Plan improves one mode's journey times, but it neither combines modes nor targets passengers making multimodal trips.",
+          "ambiguity": "none",
+          "reasoning": "'Combine several modes in one trip' directly paraphrases using more than one mode in a single journey."
+        }
+      ],
+      "factualClaims": [
+        {
+          "claim": "City officials reported that average bus journey times fell, but shop owners complained that loading spaces became harder to access.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "transport-tfl-bus-priority"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "transport-tfl-bus-priority",
+              "locator": "TfL “25x25 bus priority programme,” rationale and completed-scheme sections",
+              "evidenceSummary": "TfL links dedicated bus space to faster journeys and documents altered or removed loading and parking bays in several schemes, but does not report Rivergate figures or the passage's shop-owner complaint."
+            }
+          ],
+          "note": "The general bus-priority versus kerbside-loading trade-off is corroborated, but the named plan, average-time report, complaint, and linked delivery adjustment are not established."
+        },
+        {
+          "claim": "The programme did not greatly change total traffic volume, but hospital data showed fewer serious injuries among pedestrians and cyclists in the treated areas.",
+          "assessment": "unsupported",
+          "evidenceIds": [
+            "transport-who-safe-speeds"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "transport-who-safe-speeds",
+              "locator": "WHO “Streets for Life” update, evidence paragraphs on 30 km/h zones",
+              "evidenceSummary": "WHO states that lower urban speeds reduce the risk of death and injury and cites city studies showing reductions in crashes, injuries, and deaths."
+            }
+          ],
+          "note": "The source supports the general safety rationale for lower speeds, but provides no Northbridge programme, treated-area hospital comparison, or finding that total traffic volume remained largely unchanged."
+        },
+        {
+          "claim": "Critics noted that the project helped smartphone users first, while cash users had to wait for a later phase.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "transport-uk-maas-accessibility"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "transport-uk-maas-accessibility",
+              "locator": "UK Department for Transport MaaS code, accessibility/inclusion and multimodal-ticketing sections",
+              "evidenceSummary": "The code says smartphone-dependent ticketing must address digital exclusion and provide offline contact, while MaaS can integrate multiple modes and digital payment."
+            }
+          ],
+          "note": "The source supports the general risk of privileging smartphone users, but it contains no Metro Card project, cash-user delay, critic report, or phased rollout matching the passage."
+        },
+        {
+          "claim": "The trial reduced fuel use in city departments, but managers said the charging schedule had to be planned carefully because some vehicles returned late from maintenance jobs.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "transport-doe-smart-charge"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "transport-doe-smart-charge",
+              "locator": "US DOE “Smart Charge Management Implementation for Federal Fleets,” Data Requirements and charging-schedule applications",
+              "evidenceSummary": "DOE advises using vehicle operational schedules and dwell periods to set charging schedules, prioritize shorter-dwell vehicles, and ensure readiness by departure time."
+            }
+          ],
+          "note": "The operational need to align fleet charging with vehicle availability is supported, but the source does not establish the Hillside trial, reduced fuel use, late returns from maintenance jobs, or the attributed manager statement."
+        },
+        {
+          "claim": "After public meetings, the city added a small accessible shuttle around the zone.",
+          "assessment": "unsupported",
+          "evidenceIds": [
+            "transport-nyc-pedestrian-plaza"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "transport-nyc-pedestrian-plaza",
+              "locator": "NYC DOT “Dyckman Plaza Transforms Inwood Open Street,” announcement and Dyckman Plaza section",
+              "evidenceSummary": "NYC DOT documents a car-free plaza supporting restaurants and community programming, stakeholder involvement, and a nearby Citi Bike station; the page contains no shuttle."
+            }
+          ],
+          "note": "The candidate is a relevant pedestrianization analogue, but it does not support the older-resident access concern, taxi-driver complaint, public-meeting sequence, or accessible-shuttle response."
+        }
+      ]
+    }
+  ]
+}

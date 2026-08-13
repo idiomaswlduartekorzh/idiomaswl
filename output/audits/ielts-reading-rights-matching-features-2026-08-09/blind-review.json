@@ -1,0 +1,204 @@
+{
+  "schemaVersion": "ielts-reading-matching-features-blind-review.v1",
+  "generatedAt": "2026-08-09T13:35:00Z",
+  "reviewScope": "F0.2b.6 — three formative Matching Features passages",
+  "reviewerIsolation": "Use only this packet for the first pass. Do not open the catalog, registry, validator, route, runtime, prior audits or factual-source packet until all 19 decisions have been persisted separately.",
+  "taskRule": "Match each statement to the lettered person, group, study or policy responsible for the action, view, result or limitation. A feature may be reused when the instructions permit it, and some features may remain unused.",
+  "instruction": "Independently adjudicate all 19 statements. Choose one feature, quote decisive passage evidence, explain the association and identify the closest competing feature and why it fails. Record material ambiguity, passage-title cue risk, feature-description cue risk and IELTS fitness. This is an AI editorial review, not a human signature, rights clearance or publication approval.",
+  "excludes": [
+    "answer keys",
+    "correctness labels",
+    "explanations",
+    "trap labels",
+    "declared skills",
+    "prior reviewer decisions",
+    "student data"
+  ],
+  "records": [
+    {
+      "assetId": "formative:matching-features:mf-urban-farming",
+      "title": "Matching Features practice: urban farming projects",
+      "sourceObjectSha256": "94fcc6b7c50c8ab6d433890bf4d9b6e0155cb5519203d3e89aa70362346aa68d",
+      "passageSha256": "c7923d205c2f2bcaeb9bd28724d37bdaeb69f774ce6447bcfaad4e165d12937e",
+      "instructions": "Match each statement with the correct feature. Features may be used more than once, and some may not be used.",
+      "passageTitle": "Different approaches to urban farming",
+      "passage": "Urban farming is often described as a single movement, but city projects can have very different goals. Some focus on food production, while others use gardens as tools for education, environmental repair or neighborhood planning. Understanding who does what is essential when a reading question asks you to match a statement with a person, group or project.\n\nThe Green Roof Collective began by converting flat commercial roofs into small vegetable plots. Its founder, Lina Torres, argued that unused roof space could supply herbs and salad leaves to nearby restaurants without competing for street-level land. The group does not claim that rooftops can feed an entire city. Instead, it presents roof farming as a practical supplement where land prices make ground gardens unrealistic.\n\nIn contrast, the Riverside School Network treats farming primarily as a teaching method. Students maintain raised beds, record soil temperature and compare plant growth under different watering schedules. The network's coordinator, Amara Singh, says the strongest benefit is not the harvest itself, but the way gardening makes biology, climate and nutrition visible in daily lessons.\n\nAnother model is represented by the Vacant Lot Alliance, which works in neighborhoods with abandoned land. The alliance negotiates temporary use agreements with property owners and turns neglected lots into community gardens. Its volunteers argue that the gardens reduce illegal dumping and give residents a reason to care for spaces that previously felt unsafe. Food is part of the project, but public stewardship is the central aim.\n\nThe most technology-driven approach comes from Metroponics Lab, a start-up testing indoor hydroponic systems near transit hubs. Its engineers emphasize predictable production: plants grow under controlled light and nutrient conditions, so harvests are less affected by weather. Critics point out that such systems require energy and technical maintenance, but the company says the model is useful where year-round supply matters more than low-tech accessibility.",
+      "features": [
+        {
+          "featureId": "A",
+          "label": "Green Roof Collective",
+          "description": "Rooftop plots for restaurants and dense commercial areas."
+        },
+        {
+          "featureId": "B",
+          "label": "Riverside School Network",
+          "description": "School gardens used as a teaching environment."
+        },
+        {
+          "featureId": "C",
+          "label": "Vacant Lot Alliance",
+          "description": "Community gardens on neglected neighborhood land."
+        },
+        {
+          "featureId": "D",
+          "label": "Metroponics Lab",
+          "description": "Indoor hydroponic production near transport hubs."
+        }
+      ],
+      "statements": [
+        {
+          "questionId": "mf-urban-farming-01",
+          "statement": "uses farming mainly to make academic subjects easier to observe"
+        },
+        {
+          "questionId": "mf-urban-farming-02",
+          "statement": "claims its model is a supplement rather than a complete food solution"
+        },
+        {
+          "questionId": "mf-urban-farming-03",
+          "statement": "links gardening with reducing misuse of abandoned spaces"
+        },
+        {
+          "questionId": "mf-urban-farming-04",
+          "statement": "depends on controlled conditions to make harvests less vulnerable to weather"
+        },
+        {
+          "questionId": "mf-urban-farming-05",
+          "statement": "tries to avoid competition for land at street level"
+        },
+        {
+          "questionId": "mf-urban-farming-06",
+          "statement": "requires agreements before transforming the spaces it uses"
+        },
+        {
+          "questionId": "mf-urban-farming-07",
+          "statement": "is criticized because its method may need significant technical support"
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-features:mf-memory-research",
+      "title": "Matching Features practice: memory research",
+      "sourceObjectSha256": "c88f5a60dc24c9ce76a773055168b14f496321f720e215401053fc22bba6a36d",
+      "passageSha256": "d75a32a55a1430590620c682a941f68e09f5d41a06bc53103934f5bf2f9c34c9",
+      "instructions": "Match each statement with the correct researcher or study group. Features may be used more than once, and some may not be used.",
+      "passageTitle": "Different approaches to studying memory",
+      "passage": "Memory researchers do not all study the same problem. Some focus on how memories are formed, others on why they become distorted, and others on how memory can be supported in daily life. In IELTS Matching Features, the task is to connect each claim with the correct researcher, group or experiment.\n\nDr. Helen Ward studied how people remember directions after walking through unfamiliar buildings. Her team found that participants remembered routes better when they paused at decision points and described what they expected to see next. Ward argued that active prediction helps people build a stronger mental map than simply following signs.\n\nThe Moreno Lab investigated false memories in group settings. Participants first watched a short event and then discussed it with another person who had been given slightly different details. The lab found that people often adopted details they had only heard during discussion, especially when the other speaker sounded confident.\n\nProfessor Kenji Sato focused on memory aids for older adults. Rather than testing complex digital systems, his project used simple visual routines: a tray by the door for keys, coloured stickers on medication boxes and a checklist beside the kettle. Sato argued that successful aids reduce the need to remember at the exact moment of action.\n\nAnother project, the Sleep Recall Study, examined the effect of rest on learning vocabulary. Students who reviewed new words shortly before sleep and again the next morning remembered more than those who completed both reviews during the afternoon. The researchers suggested that sleep may help stabilize recently learned material.\n\nFinally, the Open Notes Group studied students who were allowed to bring notes into low-stakes quizzes. The group did not find that notes made students lazy. Instead, students with well-organized notes tended to review more actively before class because they wanted their notes to be usable under time pressure.",
+      "features": [
+        {
+          "featureId": "A",
+          "label": "Dr. Helen Ward",
+          "description": "Route memory and active prediction in unfamiliar buildings."
+        },
+        {
+          "featureId": "B",
+          "label": "Moreno Lab",
+          "description": "False memories created through group discussion."
+        },
+        {
+          "featureId": "C",
+          "label": "Professor Kenji Sato",
+          "description": "Simple daily-life memory aids for older adults."
+        },
+        {
+          "featureId": "D",
+          "label": "Sleep Recall Study",
+          "description": "Vocabulary review before and after sleep."
+        },
+        {
+          "featureId": "E",
+          "label": "Open Notes Group",
+          "description": "Student notes and low-stakes quizzes."
+        }
+      ],
+      "statements": [
+        {
+          "questionId": "mf-memory-01",
+          "statement": "found that confident social input can make people accept details they did not originally see"
+        },
+        {
+          "questionId": "mf-memory-02",
+          "statement": "used ordinary household cues rather than advanced technology"
+        },
+        {
+          "questionId": "mf-memory-03",
+          "statement": "argued that pausing to anticipate the next location improves recall"
+        },
+        {
+          "questionId": "mf-memory-04",
+          "statement": "linked better recall with review timing around sleep"
+        },
+        {
+          "questionId": "mf-memory-05",
+          "statement": "suggested that allowing a support tool may encourage more active preparation"
+        },
+        {
+          "questionId": "mf-memory-06",
+          "statement": "studied how people remember routes through indoor spaces"
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-features:mf-transport-policies",
+      "title": "Matching Features practice: transport policies",
+      "sourceObjectSha256": "2b101575e9c524ab47060bdd6266b6d46138502be62b5aea708672eeb226e7b4",
+      "passageSha256": "769eba354fabc78b677e52b719effcc078faf7de7a146b4170dfdec6791f409c",
+      "instructions": "Match each statement with the correct city policy. Features may be used more than once, and some may not be used.",
+      "passageTitle": "City transport policies with different goals",
+      "passage": "Cities often introduce transport policies for different reasons. Some aim to reduce emissions, while others focus on safety, access or travel reliability. Matching Features questions test whether you can identify which policy is linked to a particular goal, limitation or result.\n\nThe Rivergate Bus Priority Plan gave buses dedicated lanes on three crowded corridors. City officials reported that average bus journey times fell, but shop owners complained that loading spaces became harder to access. The plan was therefore adjusted to allow deliveries during early morning windows.\n\nIn Northbridge, the Safe Streets Programme lowered speed limits around schools and redesigned several crossings. The programme did not greatly change total traffic volume, but hospital data showed fewer serious injuries among pedestrians and cyclists in the treated areas.\n\nThe Metro Card Integration Project combined train, bus and shared-bike payment into one account. It was designed for convenience, especially for passengers who used more than one mode in a single journey. Critics noted that the project helped smartphone users first, while cash users had to wait for a later phase.\n\nThe Hillside Electric Fleet Trial replaced a small number of diesel municipal vehicles with electric vans. The trial reduced fuel use in city departments, but managers said the charging schedule had to be planned carefully because some vehicles returned late from maintenance jobs.\n\nThe East Market Pedestrian Zone closed several streets to private cars at weekends. Restaurants welcomed the extra outdoor seating, but taxi drivers argued that older residents had longer walks from drop-off points. After public meetings, the city added a small accessible shuttle around the zone.",
+      "features": [
+        {
+          "featureId": "A",
+          "label": "Rivergate Bus Priority Plan",
+          "description": "Dedicated lanes for buses and adjusted delivery windows."
+        },
+        {
+          "featureId": "B",
+          "label": "Northbridge Safe Streets Programme",
+          "description": "Lower speeds and redesigned crossings near schools."
+        },
+        {
+          "featureId": "C",
+          "label": "Metro Card Integration Project",
+          "description": "Combined payment for train, bus and shared bikes."
+        },
+        {
+          "featureId": "D",
+          "label": "Hillside Electric Fleet Trial",
+          "description": "Electric vans used by municipal departments."
+        },
+        {
+          "featureId": "E",
+          "label": "East Market Pedestrian Zone",
+          "description": "Weekend car restrictions and pedestrian access changes."
+        }
+      ],
+      "statements": [
+        {
+          "questionId": "mf-transport-01",
+          "statement": "improved travel time for one public transport mode but created a problem for deliveries"
+        },
+        {
+          "questionId": "mf-transport-02",
+          "statement": "was associated with fewer severe injuries without greatly reducing traffic volume"
+        },
+        {
+          "questionId": "mf-transport-03",
+          "statement": "initially benefited users of one technology more than people paying another way"
+        },
+        {
+          "questionId": "mf-transport-04",
+          "statement": "required careful planning because vehicles might return late from work tasks"
+        },
+        {
+          "questionId": "mf-transport-05",
+          "statement": "added a new service after concerns about access for older residents"
+        },
+        {
+          "questionId": "mf-transport-06",
+          "statement": "was designed to help passengers combine several modes in one trip"
+        }
+      ]
+    }
+  ]
+}

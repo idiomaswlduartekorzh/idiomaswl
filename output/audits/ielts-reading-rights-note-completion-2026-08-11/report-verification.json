@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "ielts-reading-note-completion-report-verification.v1",
+  "verifiedAt": "2026-08-11T21:27:00Z",
+  "command": "node /Users/josedavidduartesilva/.codex/plugins/cache/openai-curated-remote/data-analytics/0.2.8-13ceeea1f599/skills/build-report/scripts/deliver_portable_artifact.mjs --input output/audits/ielts-reading-rights-note-completion-2026-08-11/artifact.json --output output/audits/ielts-reading-rights-note-completion-2026-08-11/report.html",
+  "stages": {
+    "validation": "passed",
+    "package": "passed",
+    "verification": "passed"
+  },
+  "viewports": [
+    1440,
+    390
+  ],
+  "counts": {
+    "cards": 4,
+    "charts": 3,
+    "tables": 2
+  },
+  "sha256": {
+    "validation": "7260c4c37c3380df979eaead5b7f60f5d3a5eb85f0eeb74d25899d97df9a6ed9",
+    "auditVerdicts": "c365acd65f589c4c0003ceff32e063f7f78fb0b31ba015ddd01cbe1e3b909b09",
+    "buildReport": "87df29d9743c506f84450446856535c659d02f562554e15f41e8466bd292c0d0",
+    "artifact": "2cbcc22c942332fd99a71f715bc83f44e02a2115e7c00861244cbe400f83c72d",
+    "reportMarkdown": "753eb6aa26385ed78f366f28f951886aac1431953be0b361cab23a3bbd3a6b56",
+    "reportHtml": "0616603e5ccc0921506395c1e6809383c0cbea347c7a3e90ee91396845eda1c4"
+  },
+  "interpretation": "Portable Chromium verification covers this report only. It is packaging evidence, not learner-facing Playwright, UI, accessibility or runtime conformance."
+}

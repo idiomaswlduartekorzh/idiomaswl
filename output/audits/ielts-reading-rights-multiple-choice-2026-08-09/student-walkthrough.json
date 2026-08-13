@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "ielts-reading-multiple-choice-student-walkthrough.v1",
+  "reviewer": {
+    "kind": "average-student-cognitive-simulation",
+    "sourceContext": "blind-review-packet-only",
+    "humanSignature": false,
+    "limitation": "Simulación editorial hipotética de cómo podría razonar un estudiante promedio de IELTS Academic Reading, basada únicamente en el paquete ciego. No representa a un alumno real, no asigna banda, no selecciona respuestas correctas y no constituye auditoría de interfaz, validación factual ni revisión humana firmada."
+  },
+  "records": [
+    {
+      "assetId": "formative:multiple-choice:mc-sleep-learning",
+      "likelyComprehensionBarriers": [
+        "Distinguir la función atribuida al sueño de ondas lentas de la función asociada al sueño de movimientos oculares rápidos sin intercambiar ambos detalles.",
+        "Seguir los giros marcados por expresiones como ‘however’, ‘yet’ y ‘this does not mean’, que limitan conclusiones inicialmente atractivas.",
+        "Interpretar ‘time stolen from it’ conectando el pronombre con la idea de aprendizaje o estudio, en vez de buscar solamente el sustantivo más cercano.",
+        "Separar una inferencia prudente sobre eficacia del estudio de afirmaciones absolutas que exceden lo dicho en el pasaje."
+      ],
+      "likelyShortcutBehaviors": [
+        "Escanear palabras repetidas como ‘sleep’, ‘study’ y ‘remembered’ y elegir una opción por coincidencia léxica antes de reconstruir la relación entre ideas.",
+        "Apoyarse en la creencia previa de que dormir más siempre mejora el rendimiento, pasando por alto los límites y condiciones del texto.",
+        "Leer el ejemplo del examen como una recomendación directa y no como la ilustración de una creencia que el autor contrasta con la investigación.",
+        "Descartar demasiado rápido una opción parafraseada si no reutiliza exactamente el vocabulario del pasaje."
+      ],
+      "learningValue": [
+        "Practica la identificación de propósito, detalle, función retórica, idea global, vocabulario contextual e inferencia dentro de un texto breve y cohesionado.",
+        "Enseña a reconocer que una conclusión académica puede ser útil y al mismo tiempo moderada por condiciones individuales.",
+        "Refuerza la diferencia entre evidencia explícita, interpretación razonable y generalización excesiva."
+      ],
+      "nextAction": [
+        "Pedir al estudiante que marque conectores de contraste y escriba al margen qué afirmación corrige o limita cada uno.",
+        "Antes de mirar las opciones, formular en una frase propia la función de cada párrafo y la conclusión general.",
+        "Practicar la eliminación de opciones que añaden términos absolutos como ‘only’, ‘always’, ‘every’ o equivalentes no sustentados.",
+        "Revisar referentes pronominales siguiendo la cadena de sentido de la oración y del párrafo, no solo la proximidad gramatical."
+      ]
+    },
+    {
+      "assetId": "formative:multiple-choice:mc-river-restoration",
+      "likelyComprehensionBarriers": [
+        "Mantener simultáneamente las dimensiones ecológica, pública, técnica y comercial sin reducir el texto a una sola de ellas.",
+        "Comprender que restaurar no equivale necesariamente a devolver el río a un estado completamente natural, debido a las restricciones urbanas.",
+        "Reconocer que el ejemplo de Millgate combina beneficios observados con una condición de mantenimiento continuo.",
+        "Interpretar ‘same narrow strip of land’ como una síntesis figurada del espacio compartido por intereses distintos, y no como un elemento físico aislado."
+      ],
+      "likelyShortcutBehaviors": [
+        "Elegir una opción centrada únicamente en naturaleza o embellecimiento porque coincide con el tema superficial de restauración.",
+        "Usar el nombre ‘Millgate’ como ancla y escoger la primera opción que mencione beneficios, sin comprobar si conserva la advertencia posterior.",
+        "Confundir una preocupación inicial de las empresas con la postura final del autor respecto de su participación.",
+        "Pasar por alto la estructura ‘neither...nor’ del cierre y preferir una conclusión unilateral más sencilla."
+      ],
+      "learningValue": [
+        "Entrena la lectura de textos que construyen una conclusión mediante tensiones y compensaciones entre varios actores.",
+        "Permite practicar cómo un caso concreto puede aportar evidencia y, a la vez, mostrar límites operativos.",
+        "Favorece el reconocimiento de paráfrasis conceptuales cuando la opción no repite literalmente las expresiones del pasaje."
+      ],
+      "nextAction": [
+        "Crear durante la lectura una tabla mental de actor, preocupación, beneficio y ajuste propuesto para evitar mezclar posiciones.",
+        "Resumir el ejemplo de Millgate con una estructura de dos partes: resultado observado y condición necesaria para sostenerlo.",
+        "Comprobar en cada opción si transforma una posibilidad práctica en una promesa total o elimina alguna demanda presente en el cierre.",
+        "Parafrasear las expresiones figuradas dentro del argumento completo antes de comparar las alternativas."
+      ]
+    },
+    {
+      "assetId": "formative:multiple-choice:mc-digital-notes",
+      "likelyComprehensionBarriers": [
+        "Separar las ventajas prácticas del soporte digital de la calidad del aprendizaje que puede o no producir.",
+        "Entender que la comparación central no es simplemente papel contra pantalla, sino copia pasiva frente a selección, conexión y recuperación activa.",
+        "Usar el ejemplo de la tableta con lápiz como contraejemplo a una regla demasiado simple sobre el formato de las notas.",
+        "Interpretar ‘permanent winner’ como una postura universal sobre métodos, no como una persona o un objeto literal."
+      ],
+      "likelyShortcutBehaviors": [
+        "Responder desde la preferencia personal por escribir a mano o usar dispositivos, en vez de seguir la condición que el autor aplica a ambos métodos.",
+        "Equiparar un archivo fácil de buscar con una revisión eficaz porque ambas ideas aparecen próximas en el texto.",
+        "Convertir la recomendación limitada de algunos educadores en la tesis global del pasaje.",
+        "Escoger alternativas categóricas con ‘only’ o ‘every’ porque ofrecen una regla fácil de recordar."
+      ],
+      "learningValue": [
+        "Practica la detección de una tesis matizada que desplaza la atención desde la herramienta hacia el proceso cognitivo.",
+        "Ayuda a distinguir utilidad operativa, procesamiento durante la clase y recuperación posterior como etapas diferentes.",
+        "Refuerza el análisis de ejemplos que cuestionan dicotomías simples y de conclusiones expresadas como criterio de decisión."
+      ],
+      "nextAction": [
+        "Pedir al estudiante que etiquete cada afirmación como ventaja de almacenamiento, procesamiento inicial o revisión activa.",
+        "Formular la tesis sin mencionar ‘papel’ ni ‘digital’ para comprobar si se entendió el criterio cognitivo común.",
+        "Identificar qué regla simplificada desafía cada contraejemplo antes de evaluar las opciones.",
+        "Comparar el alcance de cada alternativa con los calificadores del texto y rechazar soluciones universales no justificadas."
+      ]
+    }
+  ],
+  "overall": {
+    "notes": [
+      "Los tres textos presentan una progresión accesible y patrones de pregunta comparables; un estudiante promedio podría orientarse con rapidez, aunque esa familiaridad también puede favorecer respuestas automáticas.",
+      "El riesgo cognitivo transversal más probable es elegir por coincidencia de palabras o por creencias previas, especialmente cuando una alternativa extrema compite con una paráfrasis más matizada.",
+      "Los pasajes ofrecen valor formativo para practicar conectores de contraste, función de ejemplos, vocabulario figurado, inferencia limitada y síntesis de conclusiones.",
+      "Una estrategia común útil sería anticipar la respuesta en lenguaje propio, localizar la evidencia relevante y después contrastar alcance, condiciones y absolutos en las opciones.",
+      "Estas observaciones describen comportamientos hipotéticos de aprendizaje; no contienen selecciones, puntuaciones, bandas, datos de estudiantes ni conclusiones sobre corrección."
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "ielts-reading-matching-headings-provenance-search.v1",
+  "searchedAt": "2026-08-09T07:00:00-05:00",
+  "method": "Directed exact-title and exact-first-sentence public-web search; results reviewed manually for verbatim identity.",
+  "searchSurface": "public web search",
+  "queries": [
+    {
+      "assetId": "formative:matching-headings:mh-public-libraries",
+      "query": "\"The changing role of public libraries\" \"Public libraries were once defined mainly by the number of books they stored\"",
+      "resultsReviewed": [
+        { "title": "Libraries as civic spaces — Greater London Authority", "url": "https://www.london.gov.uk/libraries-civic-spaces", "exactMatch": false, "relevanceNote": "Topical public-sector source; no verbatim passage match." },
+        { "title": "Digital literacy in public libraries — American Library Association", "url": "https://www.ala.org/news/2026/02/digital-literacy-public-libraries", "exactMatch": false, "relevanceNote": "Topical institutional source; no verbatim passage match." }
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    },
+    {
+      "assetId": "formative:matching-headings:mh-urban-farming",
+      "query": "\"Urban farming beyond fresh food\" \"Urban farming projects often begin with a practical problem\"",
+      "resultsReviewed": [
+        { "title": "Brownfields and urban agriculture — US EPA", "url": "https://www.epa.gov/brownfields/frequent-questions-about-brownfields-and-urban-agriculture", "exactMatch": false, "relevanceNote": "Topical government source; no verbatim passage match." },
+        { "title": "School gardens — USDA Food and Nutrition Service", "url": "https://www.fna.usda.gov/f2s/school-gardens", "exactMatch": false, "relevanceNote": "Topical government source; no verbatim passage match." }
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    },
+    {
+      "assetId": "formative:matching-headings:mh-night-trains",
+      "query": "\"The return of night trains\" \"For decades, many European night train routes were reduced or cancelled\"",
+      "resultsReviewed": [
+        { "title": "Rail and waterborne transport — European Environment Agency", "url": "https://www.eea.europa.eu/en/analysis/publications/rail-and-waterborne-best-for-low-carbon-motorised-transport", "exactMatch": false, "relevanceNote": "Topical European public source; no verbatim passage match." },
+        { "title": "Cross-border passenger rail — Publications Office of the EU", "url": "https://op.europa.eu/en/publication-detail/-/publication/5eb5c258-6ea2-11ec-9136-01aa75ed71a1/language-en", "exactMatch": false, "relevanceNote": "Topical official publication; no verbatim passage match." }
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    }
+  ],
+  "interpretation": "Directed and non-exhaustive. No exact match in reviewed results does not prove originality, authorship or universal absence of a prior source."
+}

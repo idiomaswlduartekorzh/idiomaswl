@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "ielts-reading-matching-features-unit-change-manifest.v1",
+  "unit": "F0.2b.6",
+  "recordedAt": "2026-08-09T08:20:00-05:00",
+  "learnerFacingChangeAuthorized": false,
+  "learnerFacingBaselinePaths": [
+    "src/data/practica-exams/seo-catalog.ts",
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-features/page.tsx",
+    "src/components/exam-practice/MatchingFeaturesEngine.tsx",
+    "src/components/exam-practice/MatchingFeaturesPassageBank.tsx",
+    "src/components/exam-practice/OfficialStrategyCard.tsx",
+    "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+    "src/components/exam-practice/StructuredData.tsx"
+  ],
+  "renderDependencyClosureBaselinePaths": [
+    "src/app/(site)/layout.tsx",
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-features/page.tsx",
+    "src/app/globals.css",
+    "src/app/layout.tsx",
+    "src/components/SiteNav.tsx",
+    "src/components/SiteSkipLink.tsx",
+    "src/components/ThemeProvider.tsx",
+    "src/components/WhatsAppFloat.tsx",
+    "src/components/exam-practice/MatchingFeaturesEngine.tsx",
+    "src/components/exam-practice/MatchingFeaturesPassageBank.tsx",
+    "src/components/exam-practice/OfficialStrategyCard.tsx",
+    "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+    "src/components/exam-practice/StructuredData.tsx",
+    "src/data/practica-exams/seo-catalog.ts",
+    "src/lib/supabase/client.ts"
+  ],
+  "unitSourceFiles": [
+    "src/data/practica-exams/ielts-reading-rights-registry.ts",
+    "scripts/check-ielts-reading-matching-features-rights.mjs",
+    "tests/ielts-reading-matching-features-rights.test.mjs",
+    "docs/ielts-reading-loop.md"
+  ],
+  "unitOutputDirectory": "output/audits/ielts-reading-rights-matching-features-2026-08-09",
+  "interpretation": "This manifest scopes files intentionally changed for F0.2b.6. Seven direct learner-facing sources and the fifteen-file static render dependency closure, including imported CSS, are pinned independently by baseline hash; this does not assert that the entire repository or product UI is globally conformant, and runtime-generated or remote copy remains outside the static closure."
+}

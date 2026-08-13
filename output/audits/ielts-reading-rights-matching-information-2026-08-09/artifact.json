@@ -1,0 +1,749 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "IELTS Reading Matching Information — audit gate",
+    "description": "F0.2b.4 dossier for provenance, exact paragraph evidence, learning value and shortcut risk.",
+    "generatedAt": "2026-08-09T06:29:00-05:00",
+    "cards": [
+      {
+        "id": "scope",
+        "description": "Passages, paragraphs and statements in the scoped formative bank.",
+        "dataset": "summary",
+        "sourceId": "summary_query",
+        "metrics": [
+          {
+            "label": "Passages",
+            "field": "passages",
+            "format": "number"
+          },
+          {
+            "label": "Paragraphs",
+            "field": "paragraphs",
+            "format": "number"
+          },
+          {
+            "label": "Statements",
+            "field": "questions",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "quarantine",
+        "description": "Assets denied advancement by the rights and factual gate.",
+        "dataset": "summary",
+        "sourceId": "summary_query",
+        "metrics": [
+          {
+            "label": "Quarantined",
+            "field": "quarantined",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "agreement",
+        "description": "Independent paragraph decisions matching stored mappings.",
+        "dataset": "summary",
+        "sourceId": "summary_query",
+        "metrics": [
+          {
+            "label": "Expert matches",
+            "field": "expertMatches",
+            "format": "number"
+          },
+          {
+            "label": "Reviewed",
+            "field": "expertTotal",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "ambiguity",
+        "description": "Items admitting more than one reasonable answer under strict scope logic.",
+        "dataset": "summary",
+        "sourceId": "summary_query",
+        "metrics": [
+          {
+            "label": "Material ambiguities",
+            "field": "materialAmbiguities",
+            "format": "number"
+          }
+        ]
+      }
+    ],
+    "charts": [
+      {
+        "id": "label_counts",
+        "title": "Stored paragraph-letter counts",
+        "subtitle": "Question: how are stored A–E paragraph mappings distributed? n=18 is descriptive, not a fairness certification.",
+        "type": "bar",
+        "dataset": "labels",
+        "sourceId": "label_query",
+        "valueFormat": "number",
+        "encodings": {
+          "x": {
+            "field": "label",
+            "type": "nominal",
+            "label": "Stored paragraph letter"
+          },
+          "y": {
+            "field": "count",
+            "type": "quantitative",
+            "label": "Statements"
+          }
+        }
+      },
+      {
+        "id": "claim_assessments",
+        "title": "Independent factual-claim assessments",
+        "subtitle": "Question: how did direct source review classify 15 declared claims? These assessments are not clearance or human verification.",
+        "type": "bar",
+        "dataset": "claims",
+        "sourceId": "claim_query",
+        "valueFormat": "number",
+        "encodings": {
+          "x": {
+            "field": "assessment",
+            "type": "nominal",
+            "label": "Assessment"
+          },
+          "y": {
+            "field": "claims",
+            "type": "quantitative",
+            "label": "Claims"
+          }
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "asset_decisions",
+        "title": "Per-asset decision ledger",
+        "subtitle": "Every record remains fail-closed and quarantined.",
+        "dataset": "decisions",
+        "sourceId": "decision_query",
+        "defaultSort": {
+          "field": "assetId",
+          "direction": "asc"
+        },
+        "density": "dense",
+        "layout": "full",
+        "columns": [
+          {
+            "field": "assetId",
+            "label": "Asset",
+            "type": "text"
+          },
+          {
+            "field": "title",
+            "label": "Title",
+            "type": "text"
+          },
+          {
+            "field": "wordCount",
+            "label": "Words",
+            "type": "number"
+          },
+          {
+            "field": "questionCount",
+            "label": "Questions",
+            "type": "number"
+          },
+          {
+            "field": "provenanceStatus",
+            "label": "Provenance",
+            "type": "text"
+          },
+          {
+            "field": "rightsBasis",
+            "label": "Rights",
+            "type": "text"
+          },
+          {
+            "field": "factualReviewStatus",
+            "label": "Factual review",
+            "type": "text"
+          },
+          {
+            "field": "humanReviewStatus",
+            "label": "Human review",
+            "type": "text"
+          },
+          {
+            "field": "disposition",
+            "label": "Disposition",
+            "type": "text"
+          },
+          {
+            "field": "blockers",
+            "label": "Blocking gates",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "id": "panel_verdicts",
+        "title": "Final panel verdicts",
+        "subtitle": "PASS applies to audit completion; open blockers remain explicit.",
+        "dataset": "audit",
+        "sourceId": "audit_query",
+        "defaultSort": {
+          "field": "lane",
+          "direction": "asc"
+        },
+        "layout": "full",
+        "columns": [
+          {
+            "field": "lane",
+            "label": "Lane",
+            "type": "text"
+          },
+          {
+            "field": "boardMark",
+            "label": "Board",
+            "type": "text"
+          },
+          {
+            "field": "scope",
+            "label": "Scope",
+            "type": "text"
+          },
+          {
+            "field": "findings",
+            "label": "Finding",
+            "type": "text"
+          },
+          {
+            "field": "blockersCarriedForward",
+            "label": "Still open",
+            "type": "text"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "validation",
+        "label": "Executable F0.2b.4 validation",
+        "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/validation.json"
+      },
+      {
+        "id": "baseline",
+        "label": "Pinned Matching Information content and learner-runtime baseline",
+        "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/baseline.json"
+      },
+      {
+        "id": "blind_packet",
+        "label": "Content-only blind review packet",
+        "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/blind-review.json"
+      },
+      {
+        "id": "expert_first_pass",
+        "label": "Persisted pre-source expert adjudication",
+        "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/expert-first-pass.json"
+      },
+      {
+        "id": "factual_packet",
+        "label": "Second-pass exact-claim and source packet",
+        "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/factual-source-review.json"
+      },
+      {
+        "id": "expert_verdict",
+        "label": "Independent two-pass IELTS review",
+        "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/expert-verdict.json"
+      },
+      {
+        "id": "student_walkthrough",
+        "label": "Content-only average-student simulation",
+        "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/student-walkthrough.json"
+      },
+      {
+        "id": "source_availability",
+        "label": "Candidate-source availability ledger",
+        "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/source-availability.json"
+      },
+      {
+        "id": "provenance_search",
+        "label": "Directed, non-exhaustive provenance search",
+        "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/provenance-search.json"
+      },
+      {
+        "id": "unit_change_manifest",
+        "label": "Scoped audit-unit change manifest",
+        "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/unit-change-manifest.json"
+      },
+      {
+        "id": "audit_verdicts",
+        "label": "Final multi-lane panel verdicts",
+        "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/audit-verdicts.json"
+      },
+      {
+        "id": "summary_query",
+        "label": "F0.2b.4 scope and disposition summary",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT\n  scope.passages AS passages,\n  scope.paragraphs AS paragraphs,\n  scope.questions AS questions,\n  COUNT(*) FILTER (WHERE decision.disposition = 'quarantine') AS quarantined,\n  expertReview.answerAgreement.matches AS expertMatches,\n  expertReview.answerAgreement.total AS expertTotal,\n  expertReview.materialAmbiguityCount AS materialAmbiguities\nFROM read_json_auto('output/audits/ielts-reading-rights-matching-information-2026-08-09/validation.json') AS report,\nUNNEST(report.decisions) AS rows(decision)\nGROUP BY ALL;",
+          "description": "F0.2b.4 scope and disposition summary",
+          "executed_at": "2026-08-09T06:29:00-05:00",
+          "tables_used": [
+            "output/audits/ielts-reading-rights-matching-information-2026-08-09/validation.json"
+          ]
+        }
+      },
+      {
+        "id": "label_query",
+        "label": "Stored Matching Information response-label counts",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "UNPIVOT (\n  SELECT antiBias.storedKeyProfile.answerCounts.*\n  FROM read_json_auto('output/audits/ielts-reading-rights-matching-information-2026-08-09/validation.json')\n) ON COLUMNS(*) INTO NAME label VALUE count;",
+          "description": "Stored Matching Information response-label counts",
+          "executed_at": "2026-08-09T06:29:00-05:00",
+          "tables_used": [
+            "output/audits/ielts-reading-rights-matching-information-2026-08-09/validation.json"
+          ]
+        }
+      },
+      {
+        "id": "claim_query",
+        "label": "Independent factual-claim assessments",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "UNPIVOT (\n  SELECT expertReview.factualAssessmentCounts.*\n  FROM read_json_auto('output/audits/ielts-reading-rights-matching-information-2026-08-09/validation.json')\n) ON COLUMNS(*) INTO NAME assessment VALUE claims;",
+          "description": "Independent factual-claim assessments",
+          "executed_at": "2026-08-09T06:29:00-05:00",
+          "tables_used": [
+            "output/audits/ielts-reading-rights-matching-information-2026-08-09/validation.json"
+          ]
+        }
+      },
+      {
+        "id": "decision_query",
+        "label": "Per-asset quarantine decisions",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT\n  decision.assetId,\n  decision.title,\n  decision.wordCount,\n  decision.questionCount,\n  decision.provenanceStatus,\n  decision.rightsBasis,\n  decision.factualReviewStatus,\n  decision.humanReviewStatus,\n  decision.disposition,\n  array_to_string(decision.reasonCodes, ' · ') AS blockers\nFROM read_json_auto('output/audits/ielts-reading-rights-matching-information-2026-08-09/validation.json') AS report,\nUNNEST(report.decisions) AS rows(decision);",
+          "description": "Per-asset quarantine decisions",
+          "executed_at": "2026-08-09T06:29:00-05:00",
+          "tables_used": [
+            "output/audits/ielts-reading-rights-matching-information-2026-08-09/validation.json"
+          ]
+        }
+      },
+      {
+        "id": "audit_query",
+        "label": "Final multi-lane panel verdicts",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT verdict.*\nFROM read_json_auto('output/audits/ielts-reading-rights-matching-information-2026-08-09/audit-verdicts.json') AS audit,\nUNNEST(audit.rows) AS rows(verdict);",
+          "description": "Final multi-lane panel verdicts",
+          "executed_at": "2026-08-09T06:29:00-05:00",
+          "tables_used": [
+            "output/audits/ielts-reading-rights-matching-information-2026-08-09/audit-verdicts.json"
+          ]
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "id": "title",
+        "type": "markdown",
+        "body": "# IELTS Reading Matching Information — audit gate"
+      },
+      {
+        "id": "executive_summary",
+        "type": "markdown",
+        "sourceId": "validation",
+        "body": "## Executive Summary\n\n- The F0.2b.4 control passes; the 3 passages do not. All remain quarantined.\n- Independent review covered 18/18 statements, matched all stored paragraph mappings and found 0 material ambiguities.\n- Predicting A–E for question positions 1–5 succeeds on 11/15 eligible items; content certification remains blocked.\n- UI/UX and Playwright are outside this audit slice because all four learner-facing hashes are unchanged."
+      },
+      {
+        "id": "metrics",
+        "type": "metric-strip",
+        "cardIds": [
+          "scope",
+          "quarantine",
+          "agreement",
+          "ambiguity"
+        ]
+      },
+      {
+        "id": "gate",
+        "type": "markdown",
+        "sourceId": "validation",
+        "body": "## The dossier passes; the bank is blocked\n\nHashes pin identity, incomplete rights records fail closed, and candidate evidence remains separate from verification. Matching every stored mapping is not enough: the bank exposes a strong position shortcut, most factual claims are oversimplified or untraceable, and no author, license, human factual review or human approval is recorded."
+      },
+      {
+        "id": "decision_table",
+        "type": "table",
+        "tableId": "asset_decisions",
+        "layout": "full"
+      },
+      {
+        "id": "matching_logic",
+        "type": "markdown",
+        "sourceId": "expert_verdict",
+        "body": "## Exact evidence and paragraph competition are explicit contracts\n\nEach statement must resolve to one paragraph through an exact supporting span and a defensible paraphrase. The reviewer must also identify the closest competing paragraph and explain why it fails. Paragraph reuse is allowed only because every scoped instruction explicitly permits it."
+      },
+      {
+        "id": "label_context",
+        "type": "markdown",
+        "sourceId": "validation",
+        "body": "## Paragraph-letter counts alone do not certify balance\n\nThe stored mappings are A 3, B 5, C 3, D 4 and E 3. The position-based A–E rule applies to 15 statements and succeeds on 11 (73%). Sequence, length, lexical overlap, titles and paragraph competition are audited separately."
+      },
+      {
+        "id": "label_chart",
+        "type": "chart",
+        "chartId": "label_counts",
+        "layout": "full"
+      },
+      {
+        "id": "factual_context",
+        "type": "markdown",
+        "sourceId": "expert_verdict",
+        "body": "## Plausible wording is not source verification\n\nThe direct-source pass found three of 15 declared claims supported as written; five were oversimplified and seven untraceable. Candidate institutional sources can contextualize a claim without proving the passage, its authorship or its license."
+      },
+      {
+        "id": "claim_chart",
+        "type": "chart",
+        "chartId": "claim_assessments",
+        "layout": "full"
+      },
+      {
+        "id": "learning",
+        "type": "markdown",
+        "sourceId": "student_walkthrough",
+        "body": "## The content still exposes useful learning targets\n\nThe clean walkthrough traces scanning cues, paraphrase checks, exact evidence and competitor rejection across all 18 statements. Its value is prospective and diagnostic: it assigns no paragraph mappings or bands and does not represent a real learner study."
+      },
+      {
+        "id": "panel_scope",
+        "type": "markdown",
+        "sourceId": "audit_verdicts",
+        "body": "## Panel scope\n\nApplicable lanes pass only for a complete, conservative and reproducible dossier. UI/UX and Playwright are not applicable to this unchanged learner-facing delta; that is not approval of the existing interface."
+      },
+      {
+        "id": "panel_table",
+        "type": "table",
+        "tableId": "panel_verdicts",
+        "layout": "full"
+      },
+      {
+        "id": "recommendations",
+        "type": "markdown",
+        "sourceId": "validation",
+        "body": "## Recommended next decisions\n\n1. Redesign question order and independently re-adjudicate it until the A–E position shortcut no longer predicts mappings.\n2. Reduce direct lexical overlap and remeasure all paragraph-selection heuristics.\n3. Resolve authorship, rights, exact factual support and independent human review for all three passages.\n4. Keep F0.2b open; begin F0.2b.5 Matching Headings only in the next loop iteration."
+      },
+      {
+        "id": "caveats",
+        "type": "markdown",
+        "sourceId": "validation",
+        "body": "## Caveats and open questions\n\nThe provenance search is directed and non-exhaustive. Source reachability is not verification. Both independent reviews are AI simulations without human signatures. The 18-question sample cannot certify statistical fairness. Runtime quarantine enforcement and learner-facing UI remain separate open units."
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-08-09T06:29:00-05:00",
+    "status": "ready",
+    "datasets": {
+      "summary": [
+        {
+          "passages": 3,
+          "paragraphs": 15,
+          "questions": 18,
+          "quarantined": 3,
+          "expertMatches": 18,
+          "expertTotal": 18,
+          "materialAmbiguities": 0
+        }
+      ],
+      "labels": [
+        {
+          "label": "A",
+          "count": 3
+        },
+        {
+          "label": "B",
+          "count": 5
+        },
+        {
+          "label": "C",
+          "count": 3
+        },
+        {
+          "label": "D",
+          "count": 4
+        },
+        {
+          "label": "E",
+          "count": 3
+        }
+      ],
+      "claims": [
+        {
+          "assessment": "supported",
+          "claims": 3
+        },
+        {
+          "assessment": "oversimplified",
+          "claims": 5
+        },
+        {
+          "assessment": "unsupported",
+          "claims": 0
+        },
+        {
+          "assessment": "untraceable",
+          "claims": 7
+        }
+      ],
+      "decisions": [
+        {
+          "assetId": "formative:matching-information:mi-city-noise",
+          "title": "How cities respond to noise",
+          "sourceObjectSha256": "4dedd37f4422d13c2d7f2e8ed948820849d92987cc5bdce84350ecee344ded62",
+          "passageSha256": "b85fe921aedbd48f035d1bdd764bc033b5af62a2b5f1af4dab6d994af0b93bc1",
+          "wordCount": 249,
+          "paragraphCount": 5,
+          "questionCount": 6,
+          "provenanceStatus": "unresolved",
+          "rightsBasis": "unknown-quarantined",
+          "factualResearchStatus": "candidate-sources-collected",
+          "factualReviewPolicy": "required",
+          "candidateFactualSourceCount": 3,
+          "factualReviewStatus": "not-reviewed",
+          "humanReviewStatus": "pending",
+          "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+          "disposition": "quarantine",
+          "eligibleForPublicationPipeline": false,
+          "blockers": "authorship-unresolved · factual-review-incomplete · human-review-pending · module-not-declared · rights-unresolved"
+        },
+        {
+          "assetId": "formative:matching-information:mi-museum-lighting",
+          "title": "Lighting in modern museums",
+          "sourceObjectSha256": "f68ddab75ce213fcf42bb1b0f815138e25fad5218bedd135f74758d970b51280",
+          "passageSha256": "26799b69ea658d6268841c5d3ea29a408a93d5e459de8beaa49952c6e89db211",
+          "wordCount": 236,
+          "paragraphCount": 5,
+          "questionCount": 6,
+          "provenanceStatus": "unresolved",
+          "rightsBasis": "unknown-quarantined",
+          "factualResearchStatus": "candidate-sources-collected",
+          "factualReviewPolicy": "required",
+          "candidateFactualSourceCount": 3,
+          "factualReviewStatus": "not-reviewed",
+          "humanReviewStatus": "pending",
+          "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+          "disposition": "quarantine",
+          "eligibleForPublicationPipeline": false,
+          "blockers": "authorship-unresolved · factual-review-incomplete · human-review-pending · module-not-declared · rights-unresolved"
+        },
+        {
+          "assetId": "formative:matching-information:mi-coastal-restoration",
+          "title": "Restoring coastal wetlands",
+          "sourceObjectSha256": "c2e06a4c723bfd321924f9e2961937b494280c8edd55ab9658e3775284b467d7",
+          "passageSha256": "9510b6698b7e693561945516c8ff49a6abbf965e7ad1324017abcbfc373c6947",
+          "wordCount": 234,
+          "paragraphCount": 5,
+          "questionCount": 6,
+          "provenanceStatus": "unresolved",
+          "rightsBasis": "unknown-quarantined",
+          "factualResearchStatus": "candidate-sources-collected",
+          "factualReviewPolicy": "required",
+          "candidateFactualSourceCount": 3,
+          "factualReviewStatus": "not-reviewed",
+          "humanReviewStatus": "pending",
+          "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+          "disposition": "quarantine",
+          "eligibleForPublicationPipeline": false,
+          "blockers": "authorship-unresolved · factual-review-incomplete · human-review-pending · module-not-declared · rights-unresolved"
+        }
+      ],
+      "audit": [
+        {
+          "lane": "Rights and provenance",
+          "boardMark": "✅",
+          "scope": "Three Matching Information assets, directed provenance search and ten-source availability ledger.",
+          "findings": "3/3 assets remain unknown-quarantined; no exact public-web match was located in the directed non-exhaustive search.",
+          "blockersCarriedForward": "Authorship, license, rights-holder authorization, human factual review and human approval remain unresolved."
+        },
+        {
+          "lane": "Full-stack and data",
+          "boardMark": "✅",
+          "scope": "Three passages, 15 paragraphs, 18 statement mappings, registry identity, deny-by-default assessment and report binding.",
+          "findings": "3 passages and 18 statement mappings are pinned by exact object/passage hashes; every record fails closed without structural contract errors.",
+          "blockersCarriedForward": "Runtime enforcement and content certification remain open; this PASS covers the dossier and detection controls only."
+        },
+        {
+          "lane": "IELTS expert",
+          "boardMark": "✅",
+          "scope": "Independent two-pass review of all specific-information mappings and 15 declared factual claims.",
+          "findings": "18/18 statements match the stored paragraph letters; 0 material ambiguities; all three passages have mixed IELTS fitness because they are short and unusually explicit.",
+          "blockersCarriedForward": "The bank still requires harder rewrites, independent re-adjudication and human editorial approval before content certification."
+        },
+        {
+          "lane": "Cognitive walkthrough",
+          "boardMark": "✅",
+          "scope": "Blind content-only simulation from the perspective of an average learner.",
+          "findings": "3/3 passages and 18/18 statements have explicit likely-misread, evidence-hunt, paraphrase, distractor, decision and repair observations.",
+          "blockersCarriedForward": "This is not a real-student usability, retention, transfer or accessibility study."
+        },
+        {
+          "lane": "Anti-bias and leakage",
+          "boardMark": "✅",
+          "scope": "Paragraph-letter distribution, positional cycle, sequence, lexical overlap, statement length, per-set reuse, blind leakage and EN/ES mutation controls.",
+          "findings": "Stored letters are A=3, B=5, C=3, D=4, E=3; the A→E positional shortcut hits 11/15 eligible questions and both blind packets remain key-free.",
+          "blockersCarriedForward": "contentCertification remains blocked: n=18 is below the 100-decision gate and the positional shortcut is materially exploitable."
+        },
+        {
+          "lane": "UI/UX and accessibility",
+          "boardMark": "➖",
+          "scope": "Not applicable to this audit-only delta; four learner-facing sources remain pinned to baseline hashes.",
+          "findings": "No route, component, catalog bank or learner interaction was changed by F0.2b.4.",
+          "blockersCarriedForward": "This does not certify the existing UI, accessibility, responsive behavior or Task 2 visual parity."
+        },
+        {
+          "lane": "Playwright",
+          "boardMark": "➖",
+          "scope": "Not applicable to this audit-only delta; no learner-facing DOM or runtime behavior changed.",
+          "findings": "Static import scans and exact hashes establish the narrow N/A boundary.",
+          "blockersCarriedForward": "No browser matrix was executed for product conformance; portable-report Chromium QA is separate from learner UI testing."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "validation",
+      "label": "Executable F0.2b.4 validation",
+      "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/validation.json"
+    },
+    {
+      "id": "baseline",
+      "label": "Pinned Matching Information content and learner-runtime baseline",
+      "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/baseline.json"
+    },
+    {
+      "id": "blind_packet",
+      "label": "Content-only blind review packet",
+      "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/blind-review.json"
+    },
+    {
+      "id": "expert_first_pass",
+      "label": "Persisted pre-source expert adjudication",
+      "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/expert-first-pass.json"
+    },
+    {
+      "id": "factual_packet",
+      "label": "Second-pass exact-claim and source packet",
+      "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/factual-source-review.json"
+    },
+    {
+      "id": "expert_verdict",
+      "label": "Independent two-pass IELTS review",
+      "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/expert-verdict.json"
+    },
+    {
+      "id": "student_walkthrough",
+      "label": "Content-only average-student simulation",
+      "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/student-walkthrough.json"
+    },
+    {
+      "id": "source_availability",
+      "label": "Candidate-source availability ledger",
+      "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/source-availability.json"
+    },
+    {
+      "id": "provenance_search",
+      "label": "Directed, non-exhaustive provenance search",
+      "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/provenance-search.json"
+    },
+    {
+      "id": "unit_change_manifest",
+      "label": "Scoped audit-unit change manifest",
+      "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/unit-change-manifest.json"
+    },
+    {
+      "id": "audit_verdicts",
+      "label": "Final multi-lane panel verdicts",
+      "path": "output/audits/ielts-reading-rights-matching-information-2026-08-09/audit-verdicts.json"
+    },
+    {
+      "id": "summary_query",
+      "label": "F0.2b.4 scope and disposition summary",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "SELECT\n  scope.passages AS passages,\n  scope.paragraphs AS paragraphs,\n  scope.questions AS questions,\n  COUNT(*) FILTER (WHERE decision.disposition = 'quarantine') AS quarantined,\n  expertReview.answerAgreement.matches AS expertMatches,\n  expertReview.answerAgreement.total AS expertTotal,\n  expertReview.materialAmbiguityCount AS materialAmbiguities\nFROM read_json_auto('output/audits/ielts-reading-rights-matching-information-2026-08-09/validation.json') AS report,\nUNNEST(report.decisions) AS rows(decision)\nGROUP BY ALL;",
+        "description": "F0.2b.4 scope and disposition summary",
+        "executed_at": "2026-08-09T06:29:00-05:00",
+        "tables_used": [
+          "output/audits/ielts-reading-rights-matching-information-2026-08-09/validation.json"
+        ]
+      }
+    },
+    {
+      "id": "label_query",
+      "label": "Stored Matching Information response-label counts",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "UNPIVOT (\n  SELECT antiBias.storedKeyProfile.answerCounts.*\n  FROM read_json_auto('output/audits/ielts-reading-rights-matching-information-2026-08-09/validation.json')\n) ON COLUMNS(*) INTO NAME label VALUE count;",
+        "description": "Stored Matching Information response-label counts",
+        "executed_at": "2026-08-09T06:29:00-05:00",
+        "tables_used": [
+          "output/audits/ielts-reading-rights-matching-information-2026-08-09/validation.json"
+        ]
+      }
+    },
+    {
+      "id": "claim_query",
+      "label": "Independent factual-claim assessments",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "UNPIVOT (\n  SELECT expertReview.factualAssessmentCounts.*\n  FROM read_json_auto('output/audits/ielts-reading-rights-matching-information-2026-08-09/validation.json')\n) ON COLUMNS(*) INTO NAME assessment VALUE claims;",
+        "description": "Independent factual-claim assessments",
+        "executed_at": "2026-08-09T06:29:00-05:00",
+        "tables_used": [
+          "output/audits/ielts-reading-rights-matching-information-2026-08-09/validation.json"
+        ]
+      }
+    },
+    {
+      "id": "decision_query",
+      "label": "Per-asset quarantine decisions",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "SELECT\n  decision.assetId,\n  decision.title,\n  decision.wordCount,\n  decision.questionCount,\n  decision.provenanceStatus,\n  decision.rightsBasis,\n  decision.factualReviewStatus,\n  decision.humanReviewStatus,\n  decision.disposition,\n  array_to_string(decision.reasonCodes, ' · ') AS blockers\nFROM read_json_auto('output/audits/ielts-reading-rights-matching-information-2026-08-09/validation.json') AS report,\nUNNEST(report.decisions) AS rows(decision);",
+        "description": "Per-asset quarantine decisions",
+        "executed_at": "2026-08-09T06:29:00-05:00",
+        "tables_used": [
+          "output/audits/ielts-reading-rights-matching-information-2026-08-09/validation.json"
+        ]
+      }
+    },
+    {
+      "id": "audit_query",
+      "label": "Final multi-lane panel verdicts",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "SELECT verdict.*\nFROM read_json_auto('output/audits/ielts-reading-rights-matching-information-2026-08-09/audit-verdicts.json') AS audit,\nUNNEST(audit.rows) AS rows(verdict);",
+        "description": "Final multi-lane panel verdicts",
+        "executed_at": "2026-08-09T06:29:00-05:00",
+        "tables_used": [
+          "output/audits/ielts-reading-rights-matching-information-2026-08-09/audit-verdicts.json"
+        ]
+      }
+    }
+  ]
+}

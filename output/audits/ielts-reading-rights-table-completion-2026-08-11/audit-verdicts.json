@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "ielts-reading-table-completion-audit-verdicts.v1",
+  "reviewedAt": "2026-08-11T17:27:25Z",
+  "status": "pass",
+  "passMeaning": "The F0.2b.11 audit dossier and its detection controls pass; all three assets remain quarantined and the bank, content certification, Practice, Exam and security remain blocked.",
+  "rows": [
+    {
+      "lane": "Rights and provenance",
+      "boardMark": "✅",
+      "scope": "Dossier completeness, directed provenance search, candidate-source triage and conservative publication decision for exactly 3/3 Table Completion assets.",
+      "findings": "3/3 assets remain unknown-quarantined; two official policy/sample sources and 14 factual candidates are inventoried, while the directed non-exhaustive search found no useful exact match and does not prove originality.",
+      "blockersCarriedForward": "Authorship, license or rights basis, source-to-draft history, factual sign-off and independent human approval remain unresolved. Candidate availability and topic relevance are not rights clearance."
+    },
+    {
+      "lane": "Full-stack and data",
+      "boardMark": "✅",
+      "scope": "Exact 3/18/18/18/17 inventory, object and passage identity, row/cell schema, whole-token offsets, normalization collision, render closure and Flow-chart boundary.",
+      "findings": "Catalog, baseline and registry reconcile exactly; all 18 canonical answers are literal whole-token spans within two words, while the repeated normalized value `drains`, six multi-occurrence spans and two intended order reversals are explicitly pinned.",
+      "blockersCarriedForward": "The runtime exposes keys, hints and explanations to the client, treats maxWords as a warning instead of a scoring gate, locks wrong responses until full reset and has no persistence or Practice/Exam contract. Six historical Reading tests also detect the concurrent root-layout hash drift outside this unit and remain a separate regression debt rather than being silently repinned."
+    },
+    {
+      "lane": "IELTS expert",
+      "boardMark": "✅",
+      "scope": "Independent prompt-only, passage-based first pass and source-informed second pass over all 18 cells, 18 accepted-answer rows and 15 factual claims.",
+      "findings": "The clean expert preserved 18/18 stored decisions as literal natural spans within the word limit and retained the two measured order violations; this is agreement with the stored key, not proof of one-best answerability.",
+      "blockersCarriedForward": "Four material ambiguities—table-cooling-01-2, table-cooling-03-1, table-museum-inventory-01-1 and table-museum-inventory-01-2—plus only 5 supported, 8 oversimplified and 2 untraceable factual claims block content certification."
+    },
+    {
+      "lane": "Cognitive walkthrough",
+      "boardMark": "✅",
+      "scope": "Prospective average-student walkthrough from the key-free blind packet for 3 passages and all 18 cells.",
+      "findings": "The walkthrough covers table navigation, grammatical fit, the two-word limit, passage-span search, row/column context, competitor checking and repair actions without assigning answers or bands.",
+      "blockersCarriedForward": "This is an AI simulation, not observed student usability, retention, transfer, accessibility or band-improvement evidence."
+    },
+    {
+      "lane": "Anti-bias and leakage",
+      "boardMark": "✅",
+      "scope": "Detection of answer length, position, text order, lexical overlap, grammar, repeated values, hint exposure, client payload leakage and EN/ES/nested assignment leaks.",
+      "findings": "The always-two-word shortcut hits 1/18; position-modal word length hits 17/18, position-modal evidence paragraph hits 13/18, 14/18 prompts expose a unique passage bigram and all 18 hints are available before response.",
+      "blockersCarriedForward": "n=18 cannot certify fairness; the narrow institutional corpus, repeated template, client-delivered keys, pre-response hints and four material ambiguities keep Practice, Exam, security and content certification blocked."
+    },
+    {
+      "lane": "UI/UX and accessibility",
+      "boardMark": "➖",
+      "scope": "Not applicable to unchanged learner-runtime conformance in this audit-only delta.",
+      "findings": "Seven direct learner-facing files and the exact 15-file render closure are pinned at the revised baseline; the concurrent root-layout analytics change is recorded separately and Table content, engine and bank did not change.",
+      "blockersCarriedForward": "Inherited defects remain: missing progress/live/hint semantics, English language boundaries, row-header semantics, focus repair, persistence and split Text/Questions workflow; the 760px table fallback is not Task-2 parity."
+    },
+    {
+      "lane": "Playwright",
+      "boardMark": "➖",
+      "scope": "Not applicable to unchanged learner-runtime behavior; portable Chromium verifies the report package only.",
+      "findings": "No Table data, copy, DOM, CSS, interaction or route behavior was changed by F0.2b.11, so learner-facing browser conformance is neither newly exercised nor claimed.",
+      "blockersCarriedForward": "Route hydration, accessible names, keyboard/focus behavior, reset/reload, mobile overflow, word-limit scoring and pre-response payload secrecy remain open for a later implementation unit."
+    }
+  ]
+}

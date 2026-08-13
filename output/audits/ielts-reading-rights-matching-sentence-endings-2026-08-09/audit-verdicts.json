@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "ielts-reading-matching-sentence-endings-audit-verdicts.v1",
+  "reviewedAt": "2026-08-09T15:40:00Z",
+  "status": "pass",
+  "passMeaning": "PASS means the F0.2b.7 audit dossier and detection controls are complete. All three assets remain quarantined; bank, factual approval, learner-runtime conformance and content certification remain blocked.",
+  "rows": [
+    {
+      "lane": "Rights and provenance",
+      "boardMark": "✅",
+      "scope": "Exact census, object and passage identity, directed provenance search, 16-source availability ledger and deny-by-default decision for three Matching Sentence Endings assets.",
+      "findings": "3/3 assets remain unknown-quarantined. The directed, non-exhaustive search found no exact source match in the reviewed results; 16 candidate URLs were available in the ledger, which does not prove claims, authorship or rights.",
+      "blockersCarriedForward": "Authorship, license, rights-holder authorization, factual human sign-off and independent human approval remain unresolved; PASS is not clearance."
+    },
+    {
+      "lane": "Full-stack and data",
+      "boardMark": "✅",
+      "scope": "Executable 3/18/24 identity, registry policy v7, staged review cardinality, render-closure hashes, leakage guards, chronology and exact stop boundary.",
+      "findings": "All three objects and passages match their pinned hashes; four staged packets, two shortcut verdicts, one first pass, one factual second pass and one 3-by-18 walkthrough are bound to exact IDs. The F0.2b.8 sources and objects remain pinned and untouched.",
+      "blockersCarriedForward": "Bank and content certification remain blocked. Stored keys reach the client, selection locks immediately, feedback reveals correctness and pre-response traps remain available."
+    },
+    {
+      "lane": "IELTS expert",
+      "boardMark": "✅",
+      "scope": "Clean one-best-answer adjudication for 18 sentence starts, followed only after persistence by direct review of 15 candidate factual sources.",
+      "findings": "18/18 independent ending decisions match the stored keys, with 0 material ambiguities and two minor ambiguities. All three passages have mixed IELTS fitness. Exact evidence offsets detect two question-order violations.",
+      "blockersCarriedForward": "Agreement is not bank approval: mse-food-waste-06 and mse-libraries-06 violate the official requirement that beginnings follow passage order; difficulty, factual wording and human editorial review remain open."
+    },
+    {
+      "lane": "Cognitive walkthrough",
+      "boardMark": "✅",
+      "scope": "Prospective content-only simulation of an average learner who may overuse grammar, connectors, lexical fit or the nearest plausible ending.",
+      "findings": "3/3 passages and 18/18 questions cover likely misread, relation prediction, grammar and connective risk, evidence search, ending comparison, competitor check, decision rule and repair action without assigning ending letters.",
+      "blockersCarriedForward": "This automated walkthrough is not a real-user study, accessibility evaluation, retention measure, learning-gain estimate or proof of IELTS score improvement."
+    },
+    {
+      "lane": "Anti-bias and leakage",
+      "boardMark": "✅",
+      "scope": "Exhaustive n=18 enumeration of stored letters, run/order, cross-set position, modulo, lexical overlap, ending length, connectors, staged no-passage predictions, trap exposure and client-key delivery.",
+      "findings": "Stored counts are A=3, B=2, C=2, D=2, E=3, F=1, G=2, H=3. All 3 sets ascend strictly by stored letter; the same ordinal-position modal predicts 15/18. Connective-only produces 1/1 correct unique prediction, grammar-only 0 unique predictions, and generic coherence 4/4 correct unique predictions.",
+      "blockersCarriedForward": "n=18 cannot certify fairness. Perfect ascending order in 3/3 sets, position predictability, pre-response traps in 18/18, eight traps naming letters and client-delivered keys keep content/security certification blocked."
+    },
+    {
+      "lane": "UI/UX and accessibility",
+      "boardMark": "➖",
+      "scope": "Not applicable to conformance for this audit-only delta while seven learner-facing files and the fifteen-file render closure remain hash-identical.",
+      "findings": "The dossier records inherited interface and accessibility behavior but does not change or approve DOM, interaction, responsive layout, visual parity or pedagogy in the learner runtime.",
+      "blockersCarriedForward": "This ➖ does not certify the existing UI: 18 selects lack accessible names; progress and feedback lack ARIA semantics; focus is at risk after replacement; English lacks lang markers; state is not persisted and reset is unconfirmed."
+    },
+    {
+      "lane": "Playwright",
+      "boardMark": "➖",
+      "scope": "Not applicable to learner-runtime certification because F0.2b.7 changes only the hash-pinned audit dossier and no learner-facing source, state, copy, CSS or import closure.",
+      "findings": "No learner-route browser pass is presented as approval. Portable-report Chromium verification, when generated, is packaging evidence only and not learner-facing Playwright.",
+      "blockersCarriedForward": "Any future learner-runtime drift activates the full route matrix for hydration, 18 comboboxes, accessible names, keyboard, lock/feedback, ending reuse, traps, reset/reload, focus, ARIA and 1280/390/320 overflow."
+    }
+  ]
+}

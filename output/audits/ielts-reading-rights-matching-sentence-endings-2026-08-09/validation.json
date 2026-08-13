@@ -1,0 +1,4165 @@
+{
+  "schemaVersion": "ielts-reading-matching-sentence-endings-rights-validation.v1",
+  "generatedAt": "2026-08-09T15:40:00Z",
+  "unit": "F0.2b.7 — three formative Matching Sentence Endings passages",
+  "status": "pass",
+  "passMeaning": "PASS certifies audit coverage, identity, quarantine, staged shortcut review and risk detection. It does not approve keys, factuality, rights, publication, runtime conformity or student efficacy; bank and content certification remain BLOCKED.",
+  "scope": {
+    "passages": 3,
+    "questions": 18,
+    "endingCandidates": 24,
+    "registryEntriesInUnit": 3,
+    "registryEntriesTotal": 24,
+    "coveredAssetIds": [
+      "formative:matching-sentence-endings:mse-microclimates",
+      "formative:matching-sentence-endings:mse-food-waste",
+      "formative:matching-sentence-endings:mse-coastal-libraries"
+    ],
+    "parentF02bRemainsOpen": true,
+    "scopedLearnerSourcesChangedSinceBaseline": false
+  },
+  "checks": {
+    "exactCoverageThreeEighteenTwentyFour": true,
+    "stableUniqueIds": true,
+    "registryPolicyV7Pinned": true,
+    "actualAssetsAllQuarantined": true,
+    "officialRuleSourceRetrieved": true,
+    "factualSourceAvailabilityRecordedNotVerified": true,
+    "renderDependencyClosurePinned": true,
+    "auditRegistryAbsentFromLearnerRuntimeImports": true,
+    "fourPacketsContainNoKeysEditorialFeedbackPiiOrAssignments": true,
+    "connectiveOnlyReviewCoverageComplete": true,
+    "surfaceOnlyReviewCoverageComplete": true,
+    "expertFirstPassPersistedAndPinned": true,
+    "exactOneBestAnswerContractEnforced": true,
+    "expertAgreementEighteenOfEighteen": true,
+    "evidenceQuotesClosestCompetitorAndOrderEnforced": true,
+    "passageOrderViolationDetected": true,
+    "factualClaimsFifteenExact": true,
+    "walkthroughThreeByEighteenExact": true,
+    "reusePolicyNotDeclaredAndNoStoredReuse": true,
+    "multidimensionalStructuralAuditComplete": true,
+    "runtimeImmediateFeedbackLockHintsAndClientKeysDetected": true,
+    "runtimeNotMisrepresentedAsPracticeOrExam": true,
+    "statisticalCertificationWithheldNBelow100": true,
+    "contentCertificationBlocked": true,
+    "contentMutationDenied": true,
+    "chronologyMonotonicAndNotFutureDated": true,
+    "boardCurrentClosedNextAndParentOpenExactlyOnce": true,
+    "adversarialLeakMutationsDetected": true
+  },
+  "decisions": [
+    {
+      "assetId": "formative:matching-sentence-endings:mse-microclimates",
+      "title": "Matching Sentence Endings practice: urban microclimates",
+      "sourceObjectSha256": "932ccefb0130c9fb9fa030f3eee1e21948efcb4da58ed537fde24049fae21f05",
+      "passageSha256": "ac2396cf723727f640ba86eb44f7becb08ab829777aedc08632f8ea8af18318e",
+      "wordCount": 274,
+      "questionCount": 6,
+      "endingCandidateCount": 8,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 5,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    {
+      "assetId": "formative:matching-sentence-endings:mse-food-waste",
+      "title": "Matching Sentence Endings practice: reducing food waste",
+      "sourceObjectSha256": "1682b3ff5b6fac272eb80a77d5cecda5307d98d24a690c912f19a42afcc92aa4",
+      "passageSha256": "3c0f8568ccb8244132db25509b08180bc0b6d97e88a0182c61f92502bb8332e9",
+      "wordCount": 263,
+      "questionCount": 6,
+      "endingCandidateCount": 8,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 5,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    {
+      "assetId": "formative:matching-sentence-endings:mse-coastal-libraries",
+      "title": "Matching Sentence Endings practice: coastal libraries",
+      "sourceObjectSha256": "87e771a35de1ad2b132f30a3c61abaf60471fdd0636034d977376d6aed05ebad",
+      "passageSha256": "50fff086a9cf78142f742a48679aa252e2d8a680e107d26d6fb9b078d00b29bb",
+      "wordCount": 242,
+      "questionCount": 6,
+      "endingCandidateCount": 8,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 5,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    }
+  ],
+  "visibleClaims": [
+    {
+      "text": "textos originales de WeLearn",
+      "sourcePath": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings/page.tsx",
+      "observed": true
+    },
+    {
+      "text": "Banco original WeLearn",
+      "sourcePath": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings/page.tsx",
+      "observed": true
+    },
+    {
+      "text": "sin copiar preguntas oficiales",
+      "sourcePath": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings/page.tsx",
+      "observed": true
+    },
+    {
+      "text": "preparado por el equipo académico de WeLearn y revisado en julio de 2026",
+      "sourcePath": "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+      "observed": true
+    },
+    {
+      "text": "los ejercicios son originales de WeLearn",
+      "sourcePath": "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+      "observed": true
+    }
+  ],
+  "renderDependencyClosure": {
+    "sourceCount": 15,
+    "paths": [
+      "src/app/(site)/layout.tsx",
+      "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings/page.tsx",
+      "src/app/globals.css",
+      "src/app/layout.tsx",
+      "src/components/SiteNav.tsx",
+      "src/components/SiteSkipLink.tsx",
+      "src/components/ThemeProvider.tsx",
+      "src/components/WhatsAppFloat.tsx",
+      "src/components/exam-practice/MatchingSentenceEndingsEngine.tsx",
+      "src/components/exam-practice/MatchingSentenceEndingsPassageBank.tsx",
+      "src/components/exam-practice/OfficialStrategyCard.tsx",
+      "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+      "src/components/exam-practice/StructuredData.tsx",
+      "src/data/practica-exams/seo-catalog.ts",
+      "src/lib/supabase/client.ts"
+    ],
+    "limitation": "Static local-import closure from root/site layouts and route. Runtime-generated or remote copy remains outside scope."
+  },
+  "provenanceSearch": {
+    "schemaVersion": "ielts-reading-matching-sentence-endings-provenance-search.v1",
+    "searchedAt": "2026-08-09T15:06:30Z",
+    "method": "Directed exact-title, exact-first-sentence, named-place and distinctive-fragment public-web search; reviewed results were compared for verbal identity and case identity.",
+    "searchSurface": "public web search",
+    "queries": [
+      {
+        "assetId": "formative:matching-sentence-endings:mse-microclimates",
+        "query": "\"How small design choices change city heat\" \"cool plaza\" \"ordinary routes\"",
+        "resultsReviewed": [
+          {
+            "title": "Measuring Heat Islands — US EPA",
+            "url": "https://www.epa.gov/heatislands/measuring-heat-islands",
+            "reasonNotExactMatch": "Topical government source on within-city heat variation; no exact title, passage wording or case identity match."
+          },
+          {
+            "title": "Microclimate guidelines — City of London",
+            "url": "https://www.cityoflondon.gov.uk/services/planning/planning-application-requirements/microclimate-guidelines",
+            "reasonNotExactMatch": "Topical public-sector planning source on wind and microclimate assessment; no exact passage or named-case match."
+          }
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      },
+      {
+        "assetId": "formative:matching-sentence-endings:mse-food-waste",
+        "query": "\"Why food waste policies need more than one solution\" \"separate discount bin\" \"community kitchens\"",
+        "resultsReviewed": [
+          {
+            "title": "Food Loss: Why Food Stays On the Farm or Off the Market — USDA ERS",
+            "url": "https://ers.usda.gov/amber-waves/2020/march/food-loss-why-food-stays-on-the-farm-or-off-the-market",
+            "reasonNotExactMatch": "Topical government discussion of farm-level food loss and market factors; no exact passage, title or composite-case match."
+          },
+          {
+            "title": "Consumer perceptions of suboptimal food — Frontiers in Sustainable Food Systems",
+            "url": "https://www.frontiersin.org/journals/sustainable-food-systems/articles/10.3389/fsufs.2023.1313814/full",
+            "reasonNotExactMatch": "Conceptually related research on imperfect-produce cues; no exact passage wording or scenario identity match."
+          }
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      },
+      {
+        "assetId": "formative:matching-sentence-endings:mse-coastal-libraries",
+        "query": "\"Libraries as climate information hubs\" \"Harbor Point\" \"blocked drains\"",
+        "resultsReviewed": [
+          {
+            "title": "Resilient Communities: Libraries Respond to Climate Change — American Library Association",
+            "url": "https://www.ala.org/tools/programming/climatechange/guidelines",
+            "reasonNotExactMatch": "Topical professional guidance on library climate programming; no Harbor Point case or exact passage match."
+          },
+          {
+            "title": "Participatory watershed planning training — NOAA Digital Coast",
+            "url": "https://coast.noaa.gov/digitalcoast/training/nc-watershed-management.html",
+            "reasonNotExactMatch": "Topical federal resource on participatory planning and local information; no exact title, blocked-drain case or passage wording match."
+          }
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      }
+    ],
+    "interpretation": "Directed and non-exhaustive. No exact match in reviewed results does not prove originality, authorship, clearance or universal absence of a prior source. The search did not cover licensed databases, print-only works, deleted pages, translations, private documents, drafts or extensive paraphrase. Availability of the cited URLs does not verify the learner-facing claims; factual claim coverage and rights adjudication remain pending."
+  },
+  "sourceAvailability": {
+    "schemaVersion": "ielts-reading-matching-sentence-endings-source-availability.v1",
+    "checkedAt": "2026-08-09",
+    "method": "Direct HTTPS retrieval with redirect resolution, response-body SHA-256, content type and byte count. HTTP availability is recorded independently from claim review, authorship, licensing and rights verification.",
+    "sources": [
+      {
+        "evidenceId": "ielts-matching-sentence-endings-official-format",
+        "requestedUrl": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading",
+        "retrievedAt": "2026-08-09T15:05:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 187270,
+        "bodySha256": "7d2f15ba40e1f5f7cbf3a659a03f8783c8ab4d8701d6de94aca7786213875ab0",
+        "availabilityStatus": "retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "micro-epa-within-city-hotspots",
+        "requestedUrl": "https://www.epa.gov/heatislands/measuring-heat-islands",
+        "retrievedAt": "2026-08-09T15:05:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.epa.gov/heatislands/measuring-heat-islands",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 79039,
+        "bodySha256": "be87de2e75fb704584cab41ee141b8b7f902102d9bde87f74839e003701f8509",
+        "availabilityStatus": "retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "micro-epa-cool-pavements",
+        "requestedUrl": "https://www.epa.gov/heatislands/using-cool-pavements-reduce-heat-islands",
+        "retrievedAt": "2026-08-09T15:05:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.epa.gov/heatislands/using-cool-pavements-reduce-heat-islands",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 65102,
+        "bodySha256": "a0b1754332e3e75d6922243bd7bda4618a51008e2c2a5beacfabecbddad2675f",
+        "availabilityStatus": "retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "micro-epa-tree-shade",
+        "requestedUrl": "https://www.epa.gov/heatislands/benefits-trees-and-vegetation",
+        "retrievedAt": "2026-08-09T15:05:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.epa.gov/heatislands/benefits-trees-and-vegetation",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 69388,
+        "bodySha256": "6d3309239788cd91220f638dd8ca29cd436c55a161a77e305930a3ff368aaf0b",
+        "availabilityStatus": "retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "micro-city-london-wind-guidelines",
+        "requestedUrl": "https://www.cityoflondon.gov.uk/services/planning/planning-application-requirements/microclimate-guidelines",
+        "retrievedAt": "2026-08-09T15:05:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.cityoflondon.gov.uk/services/planning/planning-application-requirements/microclimate-guidelines",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 654161,
+        "bodySha256": "268b730fb6f9769f3fb3f2b9ff44ae6bfe6b140aaaae99d466c444db9cd5ccca",
+        "availabilityStatus": "retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "micro-noaa-transit-shade-study",
+        "requestedUrl": "https://repository.library.noaa.gov/view/noaa/59089/noaa_59089_DS1.pdf",
+        "retrievedAt": "2026-08-09T15:05:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://repository.library.noaa.gov/view/noaa/59089/noaa_59089_DS1.pdf",
+        "redirected": false,
+        "contentType": "application/pdf",
+        "sizeBytes": 1401174,
+        "bodySha256": "36b0b25a047c6a87db27ab962da9790656cc835d6290942c7f72b96aa17516d5",
+        "availabilityStatus": "retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "food-usda-farm-market-loss",
+        "requestedUrl": "https://ers.usda.gov/amber-waves/2020/march/food-loss-why-food-stays-on-the-farm-or-off-the-market",
+        "retrievedAt": "2026-08-09T15:05:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://ers.usda.gov/amber-waves/2020/march/food-loss-why-food-stays-on-the-farm-or-off-the-market",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 46326,
+        "bodySha256": "76b3f8f52e4d93b39a6032fd45440406a1ab4e9f5cc97118a043b422f8f461cb",
+        "availabilityStatus": "retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "food-springer-grocery-holiday-forecasting",
+        "requestedUrl": "https://link.springer.com/article/10.1007/s12063-022-00342-z",
+        "retrievedAt": "2026-08-09T15:05:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://link.springer.com/article/10.1007/s12063-022-00342-z?error=cookies_not_supported&code=fad898c0-aa8b-4c5c-b695-14a58920b965",
+        "redirected": true,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 453025,
+        "bodySha256": "517b610981cff315fdf7243de4e12124ed652b1fdba42825a459caa96d910f99",
+        "availabilityStatus": "retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "food-frontiers-imperfect-produce-cues",
+        "requestedUrl": "https://www.frontiersin.org/journals/sustainable-food-systems/articles/10.3389/fsufs.2023.1313814/full",
+        "retrievedAt": "2026-08-09T15:05:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.frontiersin.org/journals/sustainable-food-systems/articles/10.3389/fsufs.2023.1313814/full",
+        "redirected": false,
+        "contentType": "text/html;charset=utf-8",
+        "sizeBytes": 614178,
+        "bodySha256": "2f724b41566d12bb2c1f6c0b84bf6de3afe2b37afaab929252f26d9926f1935d",
+        "availabilityStatus": "retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "food-fda-donation-safety",
+        "requestedUrl": "https://www.fda.gov/food/retail-food-industryregulatory-assistance-training/key-steps-donating-food-retail-food-establishments",
+        "retrievedAt": "2026-08-09T15:05:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.fda.gov/food/retail-food-industryregulatory-assistance-training/key-steps-donating-food-retail-food-establishments",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 36425,
+        "bodySha256": "9eaa85c9a0ddfbfbaaa5c068a1902e305d904945173d1b0f9a17b4848361b515",
+        "availabilityStatus": "retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "food-epa-wasted-food-scale",
+        "requestedUrl": "https://www.epa.gov/sustainable-management-food/wasted-food-scale",
+        "retrievedAt": "2026-08-09T15:05:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.epa.gov/sustainable-management-food/wasted-food-scale",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 74629,
+        "bodySha256": "1a9bcb5d6809fd202fd203775ce8cb628b60ad31496b55868a0409a50e5f230e",
+        "availabilityStatus": "retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "coastal-ala-resilience-hubs",
+        "requestedUrl": "https://www.ala.org/tools/programming/climatechange/guidelines",
+        "retrievedAt": "2026-08-09T15:05:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.ala.org/tools/programming/climatechange/guidelines",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 187173,
+        "bodySha256": "a15b475225ad371f89e525c78662649555168a4be9c07b6001a7fbf7901a3f21",
+        "availabilityStatus": "retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "coastal-imls-trusted-libraries",
+        "requestedUrl": "https://www.imls.gov/news-events/news-releases/primary-source-directors-message-may-2011?Archive=y&F_All=y",
+        "retrievedAt": "2026-08-09T15:05:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.imls.gov/news-events/news-releases/primary-source-directors-message-may-2011?Archive=y&F_All=y",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 36918,
+        "bodySha256": "1b92410c9efcfb1c1bdbd155d0c46eb7ad88b77b0c8ef45a20dd9be8ff4d3a8b",
+        "availabilityStatus": "retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "coastal-noaa-flood-map-workshops",
+        "requestedUrl": "https://coast.noaa.gov/data/digitalcoast/pdf/flood-exposure-tips.pdf",
+        "retrievedAt": "2026-08-09T15:05:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://coast.noaa.gov/data/digitalcoast/pdf/flood-exposure-tips.pdf",
+        "redirected": false,
+        "contentType": "application/pdf",
+        "sizeBytes": 131332,
+        "bodySha256": "5cbab0f5a3c226f2dc55da4fca8eafb3d7380971bbe4073b6d41ee2d96cb21e5",
+        "availabilityStatus": "retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "coastal-noaa-participatory-flood-mapping",
+        "requestedUrl": "https://coast.noaa.gov/digitalcoast/training/nc-watershed-management.html",
+        "retrievedAt": "2026-08-09T15:05:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://coast.noaa.gov/digitalcoast/training/nc-watershed-management.html",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 116301,
+        "bodySha256": "19a12dd45ce057aed512fa7e73fb178588597e2281a2a42878d1b64c6cd26283",
+        "availabilityStatus": "retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "coastal-fema-community-information-sharing",
+        "requestedUrl": "https://www.fema.gov/sites/default/files/documents/fema_npd_information-sharing-guide-for-private-public-partnerships_092023.pdf",
+        "retrievedAt": "2026-08-09T15:05:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.fema.gov/sites/default/files/documents/fema_npd_information-sharing-guide-for-private-public-partnerships_092023.pdf",
+        "redirected": false,
+        "contentType": "application/pdf",
+        "sizeBytes": 496455,
+        "bodySha256": "7584279961385bb7c3945e91d143ab380a5c31b0e5e54cb69d4fb1ed0be1f0d7",
+        "availabilityStatus": "retrieved",
+        "claimVerificationStatus": "not-performed"
+      }
+    ],
+    "interpretation": "All sixteen requested endpoints returned HTTP 200 to this direct client at the recorded retrieval time; one Springer request resolved to a cookies-not-supported URL and is preserved as a redirect. A successful response and a body hash establish only observed availability and byte identity. They do not establish that any passage claim was reviewed or supported, nor authorship, originality, license, rights-holder authorization, endorsement or suitability for publication."
+  },
+  "factualResearch": [
+    {
+      "assetId": "formative:matching-sentence-endings:mse-microclimates",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "micro-epa-within-city-hotspots",
+        "micro-epa-cool-pavements",
+        "micro-epa-tree-shade",
+        "micro-city-london-wind-guidelines",
+        "micro-noaa-transit-shade-study"
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan hotspots intraurbanos, pavimentos, sombra, estudios de viento y exposición térmica en transporte, pero no verifican todas las comparaciones de ubicación, secuencias temporales, superlativos ni relaciones causales exactas del pasaje."
+    },
+    {
+      "assetId": "formative:matching-sentence-endings:mse-food-waste",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "food-usda-farm-market-loss",
+        "food-springer-grocery-holiday-forecasting",
+        "food-frontiers-imperfect-produce-cues",
+        "food-fda-donation-safety",
+        "food-epa-wasted-food-scale"
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan pérdidas por incentivos de mercado, previsión minorista, señales para productos imperfectos, seguridad en donación y jerarquías de gestión, pero no acreditan las implementaciones, combinaciones de insumos, resultados o generalizaciones exactas del pasaje."
+    },
+    {
+      "assetId": "formative:matching-sentence-endings:mse-coastal-libraries",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "coastal-ala-resilience-hubs",
+        "coastal-imls-trusted-libraries",
+        "coastal-noaa-flood-map-workshops",
+        "coastal-noaa-participatory-flood-mapping",
+        "coastal-fema-community-information-sharing"
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan bibliotecas como recursos de confianza, resilience hubs, talleres con mapas, mapeo participativo e intercambio de información, pero no acreditan los concejos, Harbor Point, prácticas, resultados o ranking de valor exactos del pasaje."
+    }
+  ],
+  "shortcutReview": {
+    "connectiveOnly": {
+      "uniquePredictions": 1,
+      "hits": 1,
+      "total": 18
+    },
+    "surfaceOnly": {
+      "grammarOnlyUniquePredictions": 0,
+      "grammarOnlyHits": 0,
+      "genericCoherenceUniquePredictions": 4,
+      "genericCoherenceHits": 4,
+      "total": 18
+    },
+    "interpretation": "These staged reviewers measure answerability without passage evidence. Their predictions are not expert answer adjudications."
+  },
+  "expertReview": {
+    "reviewerType": "independent-ai-editorial-review",
+    "humanSignature": false,
+    "answerAgreement": {
+      "matches": 18,
+      "total": 18,
+      "rate": 1
+    },
+    "keyConflictCount": 0,
+    "keyConflictQuestionIds": [],
+    "materialAmbiguityCount": 0,
+    "materialAmbiguityQuestionIds": [],
+    "passageOrderViolationQuestionIds": [
+      "mse-food-waste-06",
+      "mse-libraries-06"
+    ],
+    "factualAssessmentCounts": {
+      "supported": 2,
+      "oversimplified": 7,
+      "unsupported": 2,
+      "untraceable": 4
+    },
+    "verdictPath": "output/audits/ielts-reading-rights-matching-sentence-endings-2026-08-09/expert-verdict.json"
+  },
+  "studentWalkthrough": {
+    "passagesCovered": 3,
+    "questionsCovered": 18,
+    "verdictPath": "output/audits/ielts-reading-rights-matching-sentence-endings-2026-08-09/student-walkthrough.json",
+    "limitation": "Blind content-only walkthrough; no students, UI or accessibility conformance test."
+  },
+  "runtime": {
+    "answerKeysDeliveredToClient": true,
+    "selectionLocksImmediately": true,
+    "correctnessAndExplanationShownImmediately": true,
+    "preResponseTrapDisclosureAvailable": true,
+    "endingOptionsVisibleBeforeResponse": true,
+    "sameEndingCanBeSelectedForMultipleQuestions": true,
+    "classification": "guided-training-runtime-with-immediate-feedback-not-practice-or-exam-simulation",
+    "inheritedAccessibilityRisks": {
+      "clientSideStoredSelectionsPresent": true,
+      "selectionLocksImmediately": true,
+      "correctnessAndExplanationShownImmediately": true,
+      "sameEndingCanBeSelectedForMultipleQuestionsInUi": true,
+      "attemptStatePersisted": false,
+      "preResponseTrapDisclosureAvailable": true,
+      "nativeSelectAccessibleName": false,
+      "progressIndicatorHasProgrammaticRoleNameAndValue": false,
+      "feedbackHasLiveRegion": false,
+      "keyboardNativeSelectOperable": true,
+      "uiUxStaticReviewApplicable": true,
+      "playwrightApplicableToScaffoldOnlyDelta": false,
+      "playwrightBecomesApplicableOnLearnerFacingOrRuntimeDrift": true
+    },
+    "limitation": "Immediate locking, correctness feedback, client keys and pre-response traps prevent representation as Practice or Exam simulation."
+  },
+  "antiBias": {
+    "storedKeyProfile": {
+      "answerCounts": {
+        "A": 3,
+        "B": 2,
+        "C": 2,
+        "D": 2,
+        "E": 3,
+        "F": 1,
+        "G": 2,
+        "H": 3
+      },
+      "globalConcatenatedMaxSameLabelRun": 1,
+      "perSetMaxSameLabelRun": 1,
+      "setsWithStrictlyAscendingStoredSelectionOrder": 3,
+      "sameQuestionPositionAcrossSetsModalEnding": {
+        "eligible": 18,
+        "positions": 6,
+        "hits": 15
+      },
+      "questionPositionModuloEndingCount": {
+        "definition": "Within each set, predict the ending at zero-based question position modulo eight.",
+        "eligible": 18,
+        "tiesOrAbstentions": 0,
+        "hits": 6,
+        "conditionalAccuracy": 0.3333333333333333,
+        "totalAccuracy": 0.3333333333333333
+      },
+      "highestSentenceStartEndingLexicalOverlapPredictsAnswer": {
+        "eligible": 9,
+        "tiesOrAbstentions": 9,
+        "hits": 2,
+        "conditionalAccuracy": 0.2222222222222222,
+        "totalAccuracy": 0.1111111111111111,
+        "rows": [
+          {
+            "questionId": "mse-microclimates-01",
+            "storedEndingId": "A",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0.4
+              },
+              {
+                "endingId": "C",
+                "score": 0.16666666666666666
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-microclimates-02",
+            "storedEndingId": "C",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0.16666666666666666
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0.14285714285714285
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-microclimates-03",
+            "storedEndingId": "D",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0.14285714285714285
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-microclimates-04",
+            "storedEndingId": "E",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-microclimates-05",
+            "storedEndingId": "F",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-microclimates-06",
+            "storedEndingId": "H",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-food-waste-01",
+            "storedEndingId": "A",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0.3333333333333333
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0.16666666666666666
+              },
+              {
+                "endingId": "D",
+                "score": 0.14285714285714285
+              },
+              {
+                "endingId": "E",
+                "score": 0.16666666666666666
+              },
+              {
+                "endingId": "F",
+                "score": 0.14285714285714285
+              },
+              {
+                "endingId": "G",
+                "score": 0.2857142857142857
+              },
+              {
+                "endingId": "H",
+                "score": 0.16666666666666666
+              }
+            ]
+          },
+          {
+            "questionId": "mse-food-waste-02",
+            "storedEndingId": "B",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0.16666666666666666
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-food-waste-03",
+            "storedEndingId": "D",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0.3333333333333333
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-food-waste-04",
+            "storedEndingId": "E",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0.16666666666666666
+              },
+              {
+                "endingId": "D",
+                "score": 0.14285714285714285
+              },
+              {
+                "endingId": "E",
+                "score": 0.16666666666666666
+              },
+              {
+                "endingId": "F",
+                "score": 0.14285714285714285
+              },
+              {
+                "endingId": "G",
+                "score": 0.14285714285714285
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-food-waste-05",
+            "storedEndingId": "G",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0.14285714285714285
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-food-waste-06",
+            "storedEndingId": "H",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0.16666666666666666
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0.16666666666666666
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-libraries-01",
+            "storedEndingId": "A",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-libraries-02",
+            "storedEndingId": "B",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0.16666666666666666
+              },
+              {
+                "endingId": "D",
+                "score": 0.14285714285714285
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-libraries-03",
+            "storedEndingId": "C",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-libraries-04",
+            "storedEndingId": "E",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0.16666666666666666
+              },
+              {
+                "endingId": "D",
+                "score": 0.14285714285714285
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-libraries-05",
+            "storedEndingId": "G",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-libraries-06",
+            "storedEndingId": "H",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          }
+        ]
+      },
+      "longestEndingWordCountPredictsAnswer": {
+        "eligible": 12,
+        "tiesOrAbstentions": 6,
+        "hits": 2,
+        "conditionalAccuracy": 0.16666666666666666,
+        "totalAccuracy": 0.1111111111111111,
+        "rows": [
+          {
+            "questionId": "mse-microclimates-01",
+            "storedEndingId": "A",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "B",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "C",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "D",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "E",
+                "words": 13,
+                "score": 13
+              },
+              {
+                "endingId": "F",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "G",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "H",
+                "words": 12,
+                "score": 12
+              }
+            ]
+          },
+          {
+            "questionId": "mse-microclimates-02",
+            "storedEndingId": "C",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "B",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "C",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "D",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "E",
+                "words": 13,
+                "score": 13
+              },
+              {
+                "endingId": "F",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "G",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "H",
+                "words": 12,
+                "score": 12
+              }
+            ]
+          },
+          {
+            "questionId": "mse-microclimates-03",
+            "storedEndingId": "D",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "B",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "C",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "D",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "E",
+                "words": 13,
+                "score": 13
+              },
+              {
+                "endingId": "F",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "G",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "H",
+                "words": 12,
+                "score": 12
+              }
+            ]
+          },
+          {
+            "questionId": "mse-microclimates-04",
+            "storedEndingId": "E",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "B",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "C",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "D",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "E",
+                "words": 13,
+                "score": 13
+              },
+              {
+                "endingId": "F",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "G",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "H",
+                "words": 12,
+                "score": 12
+              }
+            ]
+          },
+          {
+            "questionId": "mse-microclimates-05",
+            "storedEndingId": "F",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "B",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "C",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "D",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "E",
+                "words": 13,
+                "score": 13
+              },
+              {
+                "endingId": "F",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "G",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "H",
+                "words": 12,
+                "score": 12
+              }
+            ]
+          },
+          {
+            "questionId": "mse-microclimates-06",
+            "storedEndingId": "H",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "B",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "C",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "D",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "E",
+                "words": 13,
+                "score": 13
+              },
+              {
+                "endingId": "F",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "G",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "H",
+                "words": 12,
+                "score": 12
+              }
+            ]
+          },
+          {
+            "questionId": "mse-food-waste-01",
+            "storedEndingId": "A",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "B",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "C",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "D",
+                "words": 13,
+                "score": 13
+              },
+              {
+                "endingId": "E",
+                "words": 12,
+                "score": 12
+              },
+              {
+                "endingId": "F",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "G",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "H",
+                "words": 8,
+                "score": 8
+              }
+            ]
+          },
+          {
+            "questionId": "mse-food-waste-02",
+            "storedEndingId": "B",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "B",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "C",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "D",
+                "words": 13,
+                "score": 13
+              },
+              {
+                "endingId": "E",
+                "words": 12,
+                "score": 12
+              },
+              {
+                "endingId": "F",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "G",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "H",
+                "words": 8,
+                "score": 8
+              }
+            ]
+          },
+          {
+            "questionId": "mse-food-waste-03",
+            "storedEndingId": "D",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "B",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "C",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "D",
+                "words": 13,
+                "score": 13
+              },
+              {
+                "endingId": "E",
+                "words": 12,
+                "score": 12
+              },
+              {
+                "endingId": "F",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "G",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "H",
+                "words": 8,
+                "score": 8
+              }
+            ]
+          },
+          {
+            "questionId": "mse-food-waste-04",
+            "storedEndingId": "E",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "B",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "C",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "D",
+                "words": 13,
+                "score": 13
+              },
+              {
+                "endingId": "E",
+                "words": 12,
+                "score": 12
+              },
+              {
+                "endingId": "F",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "G",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "H",
+                "words": 8,
+                "score": 8
+              }
+            ]
+          },
+          {
+            "questionId": "mse-food-waste-05",
+            "storedEndingId": "G",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "B",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "C",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "D",
+                "words": 13,
+                "score": 13
+              },
+              {
+                "endingId": "E",
+                "words": 12,
+                "score": 12
+              },
+              {
+                "endingId": "F",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "G",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "H",
+                "words": 8,
+                "score": 8
+              }
+            ]
+          },
+          {
+            "questionId": "mse-food-waste-06",
+            "storedEndingId": "H",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "B",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "C",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "D",
+                "words": 13,
+                "score": 13
+              },
+              {
+                "endingId": "E",
+                "words": 12,
+                "score": 12
+              },
+              {
+                "endingId": "F",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "G",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "H",
+                "words": 8,
+                "score": 8
+              }
+            ]
+          },
+          {
+            "questionId": "mse-libraries-01",
+            "storedEndingId": "A",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "B",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "D",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "E",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "F",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "G",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "H",
+                "words": 7,
+                "score": 7
+              }
+            ]
+          },
+          {
+            "questionId": "mse-libraries-02",
+            "storedEndingId": "B",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "B",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "D",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "E",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "F",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "G",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "H",
+                "words": 7,
+                "score": 7
+              }
+            ]
+          },
+          {
+            "questionId": "mse-libraries-03",
+            "storedEndingId": "C",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "B",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "D",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "E",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "F",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "G",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "H",
+                "words": 7,
+                "score": 7
+              }
+            ]
+          },
+          {
+            "questionId": "mse-libraries-04",
+            "storedEndingId": "E",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "B",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "D",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "E",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "F",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "G",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "H",
+                "words": 7,
+                "score": 7
+              }
+            ]
+          },
+          {
+            "questionId": "mse-libraries-05",
+            "storedEndingId": "G",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "B",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "D",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "E",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "F",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "G",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "H",
+                "words": 7,
+                "score": 7
+              }
+            ]
+          },
+          {
+            "questionId": "mse-libraries-06",
+            "storedEndingId": "H",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "B",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "D",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "E",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "F",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "G",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "H",
+                "words": 7,
+                "score": 7
+              }
+            ]
+          }
+        ],
+        "definition": "Count lowercase ASCII alphanumeric word tokens in ending text; hyphens split."
+      },
+      "visibleConnectiveProfile": {
+        "endingCandidateCounts": {
+          "although": 1,
+          "as": 1,
+          "because": 9,
+          "before": 1,
+          "by": 3,
+          "if": 1,
+          "only when": 3,
+          "unless": 1,
+          "when": 3,
+          "without": 1
+        },
+        "storedCorrectCounts": {
+          "although": 1,
+          "as": 1,
+          "because": 5,
+          "before": 1,
+          "by": 3,
+          "if": 1,
+          "only when": 1,
+          "unless": 1,
+          "when": 3,
+          "without": 1
+        },
+        "endingCandidatesVisiblePreResponse": 24
+      },
+      "storedSelectionReuse": {
+        "declaredReusePolicy": "not-declared",
+        "setsWithReuse": 0,
+        "reusedAssignments": 0,
+        "usedEndingsPerSet": [
+          6,
+          6,
+          6
+        ],
+        "unusedEndingsPerSet": [
+          2,
+          2,
+          2
+        ]
+      },
+      "perSet": [
+        {
+          "assetId": "formative:matching-sentence-endings:mse-microclimates",
+          "reusePolicy": "not-declared",
+          "answerSequence": [
+            "A",
+            "C",
+            "D",
+            "E",
+            "F",
+            "H"
+          ],
+          "answerCounts": {
+            "A": 1,
+            "B": 0,
+            "C": 1,
+            "D": 1,
+            "E": 1,
+            "F": 1,
+            "G": 0,
+            "H": 1
+          },
+          "reusedEndingIds": [],
+          "unusedEndingIds": [
+            "B",
+            "G"
+          ]
+        },
+        {
+          "assetId": "formative:matching-sentence-endings:mse-food-waste",
+          "reusePolicy": "not-declared",
+          "answerSequence": [
+            "A",
+            "B",
+            "D",
+            "E",
+            "G",
+            "H"
+          ],
+          "answerCounts": {
+            "A": 1,
+            "B": 1,
+            "C": 0,
+            "D": 1,
+            "E": 1,
+            "F": 0,
+            "G": 1,
+            "H": 1
+          },
+          "reusedEndingIds": [],
+          "unusedEndingIds": [
+            "C",
+            "F"
+          ]
+        },
+        {
+          "assetId": "formative:matching-sentence-endings:mse-coastal-libraries",
+          "reusePolicy": "not-declared",
+          "answerSequence": [
+            "A",
+            "B",
+            "C",
+            "E",
+            "G",
+            "H"
+          ],
+          "answerCounts": {
+            "A": 1,
+            "B": 1,
+            "C": 1,
+            "D": 0,
+            "E": 1,
+            "F": 0,
+            "G": 1,
+            "H": 1
+          },
+          "reusedEndingIds": [],
+          "unusedEndingIds": [
+            "D",
+            "F"
+          ]
+        }
+      ],
+      "sequenceProfile": {
+        "answerSequence": [
+          "A",
+          "C",
+          "D",
+          "E",
+          "F",
+          "H",
+          "A",
+          "B",
+          "D",
+          "E",
+          "G",
+          "H",
+          "A",
+          "B",
+          "C",
+          "E",
+          "G",
+          "H"
+        ]
+      }
+    },
+    "independentExpertProfile": {
+      "answerCounts": {
+        "A": 3,
+        "B": 2,
+        "C": 2,
+        "D": 2,
+        "E": 3,
+        "F": 1,
+        "G": 2,
+        "H": 3
+      },
+      "globalConcatenatedMaxSameLabelRun": 1,
+      "perSetMaxSameLabelRun": 1,
+      "setsWithStrictlyAscendingStoredSelectionOrder": 3,
+      "sameQuestionPositionAcrossSetsModalEnding": {
+        "eligible": 18,
+        "positions": 6,
+        "hits": 15
+      },
+      "questionPositionModuloEndingCount": {
+        "definition": "Within each set, predict the ending at zero-based question position modulo eight.",
+        "eligible": 18,
+        "tiesOrAbstentions": 0,
+        "hits": 6,
+        "conditionalAccuracy": 0.3333333333333333,
+        "totalAccuracy": 0.3333333333333333
+      },
+      "highestSentenceStartEndingLexicalOverlapPredictsAnswer": {
+        "eligible": 9,
+        "tiesOrAbstentions": 9,
+        "hits": 2,
+        "conditionalAccuracy": 0.2222222222222222,
+        "totalAccuracy": 0.1111111111111111,
+        "rows": [
+          {
+            "questionId": "mse-microclimates-01",
+            "storedEndingId": "A",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0.4
+              },
+              {
+                "endingId": "C",
+                "score": 0.16666666666666666
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-microclimates-02",
+            "storedEndingId": "C",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0.16666666666666666
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0.14285714285714285
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-microclimates-03",
+            "storedEndingId": "D",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0.14285714285714285
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-microclimates-04",
+            "storedEndingId": "E",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-microclimates-05",
+            "storedEndingId": "F",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-microclimates-06",
+            "storedEndingId": "H",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-food-waste-01",
+            "storedEndingId": "A",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0.3333333333333333
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0.16666666666666666
+              },
+              {
+                "endingId": "D",
+                "score": 0.14285714285714285
+              },
+              {
+                "endingId": "E",
+                "score": 0.16666666666666666
+              },
+              {
+                "endingId": "F",
+                "score": 0.14285714285714285
+              },
+              {
+                "endingId": "G",
+                "score": 0.2857142857142857
+              },
+              {
+                "endingId": "H",
+                "score": 0.16666666666666666
+              }
+            ]
+          },
+          {
+            "questionId": "mse-food-waste-02",
+            "storedEndingId": "B",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0.16666666666666666
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-food-waste-03",
+            "storedEndingId": "D",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0.3333333333333333
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-food-waste-04",
+            "storedEndingId": "E",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0.16666666666666666
+              },
+              {
+                "endingId": "D",
+                "score": 0.14285714285714285
+              },
+              {
+                "endingId": "E",
+                "score": 0.16666666666666666
+              },
+              {
+                "endingId": "F",
+                "score": 0.14285714285714285
+              },
+              {
+                "endingId": "G",
+                "score": 0.14285714285714285
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-food-waste-05",
+            "storedEndingId": "G",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0.14285714285714285
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-food-waste-06",
+            "storedEndingId": "H",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0.16666666666666666
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0.16666666666666666
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-libraries-01",
+            "storedEndingId": "A",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-libraries-02",
+            "storedEndingId": "B",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0.16666666666666666
+              },
+              {
+                "endingId": "D",
+                "score": 0.14285714285714285
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-libraries-03",
+            "storedEndingId": "C",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-libraries-04",
+            "storedEndingId": "E",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0.16666666666666666
+              },
+              {
+                "endingId": "D",
+                "score": 0.14285714285714285
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-libraries-05",
+            "storedEndingId": "G",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mse-libraries-06",
+            "storedEndingId": "H",
+            "scores": [
+              {
+                "endingId": "A",
+                "score": 0
+              },
+              {
+                "endingId": "B",
+                "score": 0
+              },
+              {
+                "endingId": "C",
+                "score": 0
+              },
+              {
+                "endingId": "D",
+                "score": 0
+              },
+              {
+                "endingId": "E",
+                "score": 0
+              },
+              {
+                "endingId": "F",
+                "score": 0
+              },
+              {
+                "endingId": "G",
+                "score": 0
+              },
+              {
+                "endingId": "H",
+                "score": 0
+              }
+            ]
+          }
+        ]
+      },
+      "longestEndingWordCountPredictsAnswer": {
+        "eligible": 12,
+        "tiesOrAbstentions": 6,
+        "hits": 2,
+        "conditionalAccuracy": 0.16666666666666666,
+        "totalAccuracy": 0.1111111111111111,
+        "rows": [
+          {
+            "questionId": "mse-microclimates-01",
+            "storedEndingId": "A",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "B",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "C",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "D",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "E",
+                "words": 13,
+                "score": 13
+              },
+              {
+                "endingId": "F",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "G",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "H",
+                "words": 12,
+                "score": 12
+              }
+            ]
+          },
+          {
+            "questionId": "mse-microclimates-02",
+            "storedEndingId": "C",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "B",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "C",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "D",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "E",
+                "words": 13,
+                "score": 13
+              },
+              {
+                "endingId": "F",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "G",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "H",
+                "words": 12,
+                "score": 12
+              }
+            ]
+          },
+          {
+            "questionId": "mse-microclimates-03",
+            "storedEndingId": "D",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "B",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "C",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "D",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "E",
+                "words": 13,
+                "score": 13
+              },
+              {
+                "endingId": "F",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "G",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "H",
+                "words": 12,
+                "score": 12
+              }
+            ]
+          },
+          {
+            "questionId": "mse-microclimates-04",
+            "storedEndingId": "E",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "B",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "C",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "D",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "E",
+                "words": 13,
+                "score": 13
+              },
+              {
+                "endingId": "F",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "G",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "H",
+                "words": 12,
+                "score": 12
+              }
+            ]
+          },
+          {
+            "questionId": "mse-microclimates-05",
+            "storedEndingId": "F",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "B",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "C",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "D",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "E",
+                "words": 13,
+                "score": 13
+              },
+              {
+                "endingId": "F",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "G",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "H",
+                "words": 12,
+                "score": 12
+              }
+            ]
+          },
+          {
+            "questionId": "mse-microclimates-06",
+            "storedEndingId": "H",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "B",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "C",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "D",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "E",
+                "words": 13,
+                "score": 13
+              },
+              {
+                "endingId": "F",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "G",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "H",
+                "words": 12,
+                "score": 12
+              }
+            ]
+          },
+          {
+            "questionId": "mse-food-waste-01",
+            "storedEndingId": "A",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "B",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "C",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "D",
+                "words": 13,
+                "score": 13
+              },
+              {
+                "endingId": "E",
+                "words": 12,
+                "score": 12
+              },
+              {
+                "endingId": "F",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "G",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "H",
+                "words": 8,
+                "score": 8
+              }
+            ]
+          },
+          {
+            "questionId": "mse-food-waste-02",
+            "storedEndingId": "B",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "B",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "C",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "D",
+                "words": 13,
+                "score": 13
+              },
+              {
+                "endingId": "E",
+                "words": 12,
+                "score": 12
+              },
+              {
+                "endingId": "F",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "G",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "H",
+                "words": 8,
+                "score": 8
+              }
+            ]
+          },
+          {
+            "questionId": "mse-food-waste-03",
+            "storedEndingId": "D",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "B",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "C",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "D",
+                "words": 13,
+                "score": 13
+              },
+              {
+                "endingId": "E",
+                "words": 12,
+                "score": 12
+              },
+              {
+                "endingId": "F",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "G",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "H",
+                "words": 8,
+                "score": 8
+              }
+            ]
+          },
+          {
+            "questionId": "mse-food-waste-04",
+            "storedEndingId": "E",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "B",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "C",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "D",
+                "words": 13,
+                "score": 13
+              },
+              {
+                "endingId": "E",
+                "words": 12,
+                "score": 12
+              },
+              {
+                "endingId": "F",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "G",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "H",
+                "words": 8,
+                "score": 8
+              }
+            ]
+          },
+          {
+            "questionId": "mse-food-waste-05",
+            "storedEndingId": "G",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "B",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "C",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "D",
+                "words": 13,
+                "score": 13
+              },
+              {
+                "endingId": "E",
+                "words": 12,
+                "score": 12
+              },
+              {
+                "endingId": "F",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "G",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "H",
+                "words": 8,
+                "score": 8
+              }
+            ]
+          },
+          {
+            "questionId": "mse-food-waste-06",
+            "storedEndingId": "H",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "B",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "C",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "D",
+                "words": 13,
+                "score": 13
+              },
+              {
+                "endingId": "E",
+                "words": 12,
+                "score": 12
+              },
+              {
+                "endingId": "F",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "G",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "H",
+                "words": 8,
+                "score": 8
+              }
+            ]
+          },
+          {
+            "questionId": "mse-libraries-01",
+            "storedEndingId": "A",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "B",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "D",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "E",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "F",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "G",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "H",
+                "words": 7,
+                "score": 7
+              }
+            ]
+          },
+          {
+            "questionId": "mse-libraries-02",
+            "storedEndingId": "B",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "B",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "D",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "E",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "F",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "G",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "H",
+                "words": 7,
+                "score": 7
+              }
+            ]
+          },
+          {
+            "questionId": "mse-libraries-03",
+            "storedEndingId": "C",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "B",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "D",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "E",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "F",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "G",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "H",
+                "words": 7,
+                "score": 7
+              }
+            ]
+          },
+          {
+            "questionId": "mse-libraries-04",
+            "storedEndingId": "E",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "B",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "D",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "E",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "F",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "G",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "H",
+                "words": 7,
+                "score": 7
+              }
+            ]
+          },
+          {
+            "questionId": "mse-libraries-05",
+            "storedEndingId": "G",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "B",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "D",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "E",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "F",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "G",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "H",
+                "words": 7,
+                "score": 7
+              }
+            ]
+          },
+          {
+            "questionId": "mse-libraries-06",
+            "storedEndingId": "H",
+            "scores": [
+              {
+                "endingId": "A",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "B",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "endingId": "D",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "E",
+                "words": 10,
+                "score": 10
+              },
+              {
+                "endingId": "F",
+                "words": 9,
+                "score": 9
+              },
+              {
+                "endingId": "G",
+                "words": 11,
+                "score": 11
+              },
+              {
+                "endingId": "H",
+                "words": 7,
+                "score": 7
+              }
+            ]
+          }
+        ],
+        "definition": "Count lowercase ASCII alphanumeric word tokens in ending text; hyphens split."
+      },
+      "visibleConnectiveProfile": {
+        "endingCandidateCounts": {
+          "although": 1,
+          "as": 1,
+          "because": 9,
+          "before": 1,
+          "by": 3,
+          "if": 1,
+          "only when": 3,
+          "unless": 1,
+          "when": 3,
+          "without": 1
+        },
+        "storedCorrectCounts": {
+          "although": 1,
+          "as": 1,
+          "because": 5,
+          "before": 1,
+          "by": 3,
+          "if": 1,
+          "only when": 1,
+          "unless": 1,
+          "when": 3,
+          "without": 1
+        },
+        "endingCandidatesVisiblePreResponse": 24
+      },
+      "storedSelectionReuse": {
+        "declaredReusePolicy": "not-declared",
+        "setsWithReuse": 0,
+        "reusedAssignments": 0,
+        "usedEndingsPerSet": [
+          6,
+          6,
+          6
+        ],
+        "unusedEndingsPerSet": [
+          2,
+          2,
+          2
+        ]
+      },
+      "perSet": [
+        {
+          "assetId": "formative:matching-sentence-endings:mse-microclimates",
+          "reusePolicy": "not-declared",
+          "answerSequence": [
+            "A",
+            "C",
+            "D",
+            "E",
+            "F",
+            "H"
+          ],
+          "answerCounts": {
+            "A": 1,
+            "B": 0,
+            "C": 1,
+            "D": 1,
+            "E": 1,
+            "F": 1,
+            "G": 0,
+            "H": 1
+          },
+          "reusedEndingIds": [],
+          "unusedEndingIds": [
+            "B",
+            "G"
+          ]
+        },
+        {
+          "assetId": "formative:matching-sentence-endings:mse-food-waste",
+          "reusePolicy": "not-declared",
+          "answerSequence": [
+            "A",
+            "B",
+            "D",
+            "E",
+            "G",
+            "H"
+          ],
+          "answerCounts": {
+            "A": 1,
+            "B": 1,
+            "C": 0,
+            "D": 1,
+            "E": 1,
+            "F": 0,
+            "G": 1,
+            "H": 1
+          },
+          "reusedEndingIds": [],
+          "unusedEndingIds": [
+            "C",
+            "F"
+          ]
+        },
+        {
+          "assetId": "formative:matching-sentence-endings:mse-coastal-libraries",
+          "reusePolicy": "not-declared",
+          "answerSequence": [
+            "A",
+            "B",
+            "C",
+            "E",
+            "G",
+            "H"
+          ],
+          "answerCounts": {
+            "A": 1,
+            "B": 1,
+            "C": 1,
+            "D": 0,
+            "E": 1,
+            "F": 0,
+            "G": 1,
+            "H": 1
+          },
+          "reusedEndingIds": [],
+          "unusedEndingIds": [
+            "D",
+            "F"
+          ]
+        }
+      ],
+      "sequenceProfile": {
+        "answerSequence": [
+          "A",
+          "C",
+          "D",
+          "E",
+          "F",
+          "H",
+          "A",
+          "B",
+          "D",
+          "E",
+          "G",
+          "H",
+          "A",
+          "B",
+          "C",
+          "E",
+          "G",
+          "H"
+        ]
+      }
+    },
+    "qualitativeCoverage": {
+      "grammarOnlyShortcut": true,
+      "visibleConnectiveShortcut": true,
+      "lexicalOverlap": true,
+      "endingLength": true,
+      "positionAndOrder": true,
+      "endingReuse": true,
+      "exactOneBestAnswer": true,
+      "representation": true,
+      "priorKnowledge": true,
+      "irrelevantLoad": true
+    },
+    "sampleAdequacy": {
+      "certificationThreshold": 100,
+      "observedQuestions": 18,
+      "eligibleForStatisticalCertification": false,
+      "conclusion": "n=18 is too small to certify statistically balanced content."
+    },
+    "statisticalCertification": "withheld-n-below-100",
+    "contentCertification": "blocked-order-runtime-editorial-review-required"
+  },
+  "applicability": {
+    "rights": "applicable",
+    "fullStackData": "applicable",
+    "ieltsExpert": "applicable",
+    "cognitiveWalkthrough": "applicable-to-content-only",
+    "antiBias": "applicable",
+    "uiUxAccessibility": "not-applicable-to-unchanged-runtime-delta-conformance",
+    "playwright": "not-applicable-scoped-learner-runtime-unchanged",
+    "evidence": "Seven learner-facing files and fifteen-file closure remain pinned. UI/Playwright ➖ is not conformity."
+  },
+  "negativeControl": {
+    "contentHashMismatch": {
+      "assetId": "formative:matching-sentence-endings:mse-microclimates",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "rightsBasis": "unknown-quarantined",
+      "reasonCodes": [
+        "authorship-unresolved",
+        "content-hash-mismatch",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    "leakControls": {
+      "englishChoice": [
+        "$.nested[0].instruction"
+      ],
+      "englishLetter": [
+        "$.instruction"
+      ],
+      "spanishCorrespondence": [
+        "$.nested.repair"
+      ],
+      "spanishChoice": [
+        "$.repair"
+      ],
+      "completedEnglish": [
+        "$.repair"
+      ],
+      "completedSpanish": [
+        "$.repair"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "path": "src/data/practica-exams/seo-catalog.ts",
+      "sha256": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de"
+    },
+    {
+      "path": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings/page.tsx",
+      "sha256": "e2d13b6b480223a9b71c415dffd062ca0aca54d3250a4ee60ff0b717cd05217e"
+    },
+    {
+      "path": "src/components/exam-practice/MatchingSentenceEndingsEngine.tsx",
+      "sha256": "b5adf8a2f67ca1547ca8dc66302002d45874bfe6f461f6e0ef03218385e43e62"
+    },
+    {
+      "path": "src/components/exam-practice/MatchingSentenceEndingsPassageBank.tsx",
+      "sha256": "09f3e16a355232f673e73328f1dc0165a46a38df39f8f3bcc8925aaf0012e3bb"
+    },
+    {
+      "path": "src/components/exam-practice/OfficialStrategyCard.tsx",
+      "sha256": "b4f575bd4bc3655f5f0682404f3d937020b4cfd3d54b42adac758647d9133e3e"
+    },
+    {
+      "path": "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+      "sha256": "73d3b725c68c0ed193ceba23ebddca3fec7978f6e84712c99b3dddc190443711"
+    },
+    {
+      "path": "src/components/exam-practice/StructuredData.tsx",
+      "sha256": "3e59a611e4d2bac9ce5994bdbd4ba6303407a5ddf82b26a340efe1f3c2b788d8"
+    },
+    {
+      "path": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/sentence-completion/page.tsx",
+      "sha256": "66b94b11b91e0b8042ea39233136cadba4e666fd63c3d30912deed60c8062986"
+    },
+    {
+      "path": "src/components/exam-practice/SummaryCompletionPracticeEngine.tsx",
+      "sha256": "cae94b947ffc61e112fbe13269ad48e1ee121ca7faeccc8b370d2b124893de98"
+    },
+    {
+      "path": "src/components/exam-practice/SummaryCompletionPassageBank.tsx",
+      "sha256": "54a78799014098dd5f159f63bf654ad12181042be40182ab8381bfc1e51a3c58"
+    },
+    {
+      "path": "src/lib/ielts/academic-reading-rights.ts",
+      "sha256": "cabd4adf35c75a14a3537bb07e5db4ef9ce8bc0c1a6f4a276d25518732923643"
+    },
+    {
+      "path": "src/data/practica-exams/ielts-reading-rights-registry.ts",
+      "sha256": "687f49c2bcb4d6ab7c3dcd8b09c0bef67e7aa45427f3bdc56f0fa10f253a0e39"
+    },
+    {
+      "path": "scripts/check-ielts-reading-matching-sentence-endings-rights.mjs",
+      "sha256": "6b31c6511be09d3269bf59cde17e274a33f4077df4f65c8b1a40fd83a6603f1e"
+    },
+    {
+      "path": "tests/ielts-reading-matching-sentence-endings-rights.test.mjs",
+      "sha256": "78800f65233d76e35ba047adfb686a87ce489ef11dff9a73dd238fc1ad7359f7"
+    },
+    {
+      "path": "docs/ielts-reading-loop.md",
+      "sha256": "9cfcc33bd57ab5d51d8ae10c5015fdd13a9bb08abf0be7ac6d329aabf6623652"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-sentence-endings-2026-08-09/baseline.json",
+      "sha256": "818025d289ffa2343ef720c673f575a1bdaeab3eee2a505ee2c1c4dfce1ec9a0"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-sentence-endings-2026-08-09/source-availability.json",
+      "sha256": "3c85c8d9256ffbcbacb6acbc29585220b833eebb157ca65660ee0e7f2650e295"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-sentence-endings-2026-08-09/provenance-search.json",
+      "sha256": "297da66086daae7432258f6c8016132af4d7dbcf4b8d5494d8276deee2b6cbc5"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-sentence-endings-2026-08-09/unit-change-manifest.json",
+      "sha256": "b165b58c6e0647508468c90f5ecee34796c0a46be423a1288b60cdd3e8f1873c"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-sentence-endings-2026-08-09/connective-only.json",
+      "sha256": "046de9743fa38212966ac3ebf03945e158280bcbff75f6cdecd4036c355c055a"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-sentence-endings-2026-08-09/connective-only-verdict.json",
+      "sha256": "60120ab77d77277c06f6ece7fe3f8cab43caa5fde260bcd5f1987a7a343344d4"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-sentence-endings-2026-08-09/surface-only.json",
+      "sha256": "37fe9d0e59faff2b7254c73aad0c966de4c6f81ca007c267cae772a635d0a2d7"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-sentence-endings-2026-08-09/surface-only-verdict.json",
+      "sha256": "cfeefcae36d6f366259263ae0230dd5a37eeae1b195dc9f0e835b5eaa0075320"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-sentence-endings-2026-08-09/blind-review.json",
+      "sha256": "9dafb91f3e3850269e005890d1f1f1484afb3e0a785002775c9fcfb5c6a31393"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-sentence-endings-2026-08-09/factual-source-review.json",
+      "sha256": "ded37a1d414dcccb8c5f859b119d4f25952e7afb6750e927169c02d185c1e697"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-sentence-endings-2026-08-09/expert-first-pass.json",
+      "sha256": "3764f944dcdcac51279701dba0f9e1fa8e97aa15a2a7f9acd659988e1377abc0"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-sentence-endings-2026-08-09/expert-verdict.json",
+      "sha256": "f1e131359504a6218d5bbdf04b97959e6e532eb982e28f606618bc9c6a400d51"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-sentence-endings-2026-08-09/student-walkthrough.json",
+      "sha256": "6160a78bb5473fb1e490667705ad98dc9510451e45c71e23eb678259bf73e510"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-sentence-endings-2026-08-09/audit-verdicts.json",
+      "sha256": "2f0537cdbf38ca28303e52a80ec19acb6d332acb2eff8880fac55cf960b4bd68"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-sentence-endings-2026-08-09/build-report.mjs",
+      "sha256": "3928fad7ea893abee491f89818b5d1b39d091adec9bdb8dd69b2249a367a6eb8"
+    }
+  ]
+}

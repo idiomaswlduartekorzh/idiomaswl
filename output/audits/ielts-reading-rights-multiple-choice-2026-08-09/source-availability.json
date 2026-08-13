@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "ielts-reading-multiple-choice-source-availability.v1",
+  "checkedAt": "2026-08-09",
+  "method": "curl -sL with final HTTP status; executed with network access after the sandbox-only attempt returned 000 for every URL",
+  "sources": [
+    {
+      "evidenceId": "sleep-cairney-sws-emotional-2014",
+      "httpStatus": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3954173/"
+    },
+    {
+      "evidenceId": "sleep-rem-sws-emotional-2025",
+      "httpStatus": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11930935/"
+    },
+    {
+      "evidenceId": "sleep-deprivation-students-2017",
+      "httpStatus": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5489575/"
+    },
+    {
+      "evidenceId": "river-environment-agency-2024",
+      "httpStatus": 200,
+      "finalUrl": "https://www.gov.uk/government/publications/improving-river-habitats-to-support-wildlife-during-high-and-low-flows"
+    },
+    {
+      "evidenceId": "river-skerne-case-study",
+      "httpStatus": 200,
+      "finalUrl": "https://assets.publishing.service.gov.uk/media/5a74bc46ed915d4d83b5e88b/strw83-e-e.pdf"
+    },
+    {
+      "evidenceId": "notes-mueller-oppenheimer-2014",
+      "httpStatus": 403,
+      "finalUrl": "https://journals.sagepub.com/doi/10.1177/0956797614524581",
+      "note": "The canonical DOI resolved to the publisher; the publisher denied the automated fetch. This is availability evidence, not factual verification."
+    },
+    {
+      "evidenceId": "notes-mitchell-zheng-2019-replication",
+      "httpStatus": 200,
+      "finalUrl": "https://aisel.aisnet.org/trr/vol5/iss1/9/"
+    },
+    {
+      "evidenceId": "notes-medical-students-no-difference-2022",
+      "httpStatus": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9247713/"
+    }
+  ],
+  "interpretation": "Reachability does not establish authorship, licensing, authorization, claim-level factual accuracy or human approval."
+}

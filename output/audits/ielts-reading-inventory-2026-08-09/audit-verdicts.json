@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "ielts-reading-inventory-audit-verdicts.v1",
+  "status": "pass-f0.1-only",
+  "reviewedAt": "2026-08-09",
+  "rows": [
+    {
+      "lane": "Derechos y procedencia",
+      "verdict": "✅",
+      "scope": "Censo y clasificación conservadora; no rights clearance",
+      "blockingFindings": "Ninguno para F0.1. La adjudicación y el enforcement de cuarentena siguen abiertos.",
+      "evidence": "120/120 unknown-quarantined; 0 rightsBasis/autor/revisor/fuentes; búsqueda externa dirigida y no exhaustiva."
+    },
+    {
+      "lane": "Full-stack y datos",
+      "verdict": "✅",
+      "scope": "Cobertura, grano, identidad y reproducibilidad del snapshot",
+      "blockingFindings": "Ninguno para F0.1. Los IDs editoriales de grupo/pregunta pertenecen a una unidad posterior.",
+      "evidence": "120 activos, 310 grupos, 1.152 decisiones; registro 20/20 exacto; hashes deterministas; JSON/TSV/blind alineados."
+    },
+    {
+      "lane": "IELTS independiente a ciegas",
+      "verdict": "✅",
+      "scope": "Exhaustividad y verdad del censo; no resolución ni calidad de ítems",
+      "blockingFindings": "Ninguno para F0.1. No certifica dificultad, respuestas, derechos ni separación Academic/GT.",
+      "evidence": "Paquete sin claves; 116 ocurrencias textuales, 115 pasajes canónicos; 119 Academic inferidos y hub legado ambiguo."
+    },
+    {
+      "lane": "Walkthrough cognitivo",
+      "verdict": "➖",
+      "scope": "Artefactos estáticos de auditoría sin flujo learner-facing",
+      "blockingFindings": "No aplica: F0.1 no altera una tarea, feedback, navegación ni experiencia de estudiante.",
+      "evidence": "Diff de la unidad limitado a extractor, manifiestos, reporte y documentación; cero componentes o rutas de producto modificados."
+    },
+    {
+      "lane": "Anti-sesgo, anti-atajos y anti-fugas",
+      "verdict": "✅",
+      "scope": "Cobertura del censo y seguridad del paquete ciego",
+      "blockingFindings": "Ninguno para F0.1. El balance estadístico y las claves de los bancos se auditan en filas posteriores.",
+      "evidence": "Escaneo recursivo sin claves/opciones/PII; duplicado exacto explícito; búsqueda externa sin generalizar a 117 activos no revisados."
+    },
+    {
+      "lane": "UI/UX y accesibilidad",
+      "verdict": "➖",
+      "scope": "Producto learner-facing",
+      "blockingFindings": "No aplica: no existe cambio visual, responsive o accesible que aprobar en esta subunidad de datos.",
+      "evidence": "Los artefactos JSON/TSV/HTML son evidencia técnica local; no se presentan como una nueva superficie educativa."
+    },
+    {
+      "lane": "Playwright",
+      "verdict": "➖",
+      "scope": "Comportamiento de producto en navegador",
+      "blockingFindings": "No aplica: el censo por hashes es estático y no modifica comportamiento navegable.",
+      "evidence": "Reproducibilidad cubierta por --check, hashes y reconciliación; runtime quarantine se probará en F0.3/F0.4."
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "schemaVersion": "ielts-reading-matching-features-student-walkthrough.v1",
+  "reviewer": {
+    "humanSignature": false,
+    "sourceContext": "blind-review-packet-only",
+    "reviewedAt": "2026-08-09T13:46:59Z",
+    "notes": [
+      "Recorrido prospectivo desde el punto de vista de un estudiante promedio propenso a emparejar por palabras parecidas, nombres cercanos y lectura demasiado local.",
+      "Las observaciones describen cómo buscar y verificar evidencia sin seleccionar ni insinuar una opción de respuesta."
+    ]
+  },
+  "records": [
+    {
+      "assetId": "formative:matching-features:mf-urban-farming",
+      "passageBarrier": "Los cuatro modelos comparten vocabulario de cultivo, espacio urbano y beneficios, de modo que una lectura local puede confundir el objetivo principal con una ventaja secundaria, una crítica o una condición operativa.",
+      "featureDescriptionRisk": "high",
+      "passageTitleInfluenceRisk": "low",
+      "shortcutRisks": [
+        "Elegir por una palabra repetida entre el enunciado y la descripción breve de una opción.",
+        "Mantener la opción del enunciado anterior porque dos respuestas aparecen cerca en el texto.",
+        "Confundir lo que un modelo afirma con lo que dicen sus críticos."
+      ],
+      "transferValue": "Entrena a separar propósito, mecanismo, alcance, requisito y crítica cuando varias entidades pertenecen al mismo tema general.",
+      "nextAction": "Subrayar en cada enunciado el verbo de relación y dos condiciones distintivas; después rastrear ambas condiciones en una misma unidad de evidencia antes de comparar opciones.",
+      "questionWalkthrough": [
+        {
+          "questionId": "mf-urban-farming-01",
+          "likelyMisread": "Podría asociar cualquier referencia a estudiantes o aprendizaje con el enunciado sin comprobar que el cultivo se usa principalmente para volver visibles materias académicas.",
+          "associationTarget": "Una entidad cuyo propósito central sea pedagógico y cuya afirmación conecte la actividad práctica con la observación cotidiana de contenidos de clase.",
+          "evidenceSearch": "Buscar una oración de finalidad o valoración que una el trabajo de cultivo con disciplinas concretas, no solo una mención incidental a educación.",
+          "featureComparison": "Comparar las opciones por su objetivo declarado; una descripción de producción, recuperación del espacio o control técnico no basta aunque también pueda enseñar algo.",
+          "competitorCheck": "Revisar si otra entidad menciona beneficios comunitarios que suenen educativos, y descartar esa cercanía si el texto no presenta el aprendizaje como beneficio principal.",
+          "decisionRule": "Aceptar solo cuando sujeto, propósito pedagógico y efecto de hacer observables los contenidos aparecen vinculados en la misma evidencia.",
+          "repairAction": "Si elegí por la palabra relacionada con escuela, volver al pasaje y completar la frase mental: usa el cultivo principalmente para..., con una cita para la finalidad."
+        },
+        {
+          "questionId": "mf-urban-farming-02",
+          "likelyMisread": "Podría confundir una crítica externa sobre las limitaciones de un sistema con una afirmación propia que reduce deliberadamente el alcance del modelo.",
+          "associationTarget": "Una entidad que presenta su propuesta como contribución parcial y rechaza que pueda resolver por sí sola toda la necesidad alimentaria.",
+          "evidenceSearch": "Rastrear lenguaje de alcance y contraste, especialmente una negación de suficiencia seguida de una formulación más limitada de utilidad.",
+          "featureComparison": "Distinguir entre limitación reconocida por la propia entidad, crítica atribuida a terceros y obstáculo operativo descrito por el narrador.",
+          "competitorCheck": "Comprobar si el candidato cercano solo tiene una desventaja técnica; una desventaja no equivale automáticamente a declararse complemento.",
+          "decisionRule": "La evidencia debe contener tanto la exclusión de una solución total como la reformulación positiva de un papel suplementario.",
+          "repairAction": "Si marqué por una frase negativa aislada, leer la oración siguiente y verificar quién sostiene la limitación y qué alcance propone en su lugar."
+        },
+        {
+          "questionId": "mf-urban-farming-03",
+          "likelyMisread": "Podría elegir cualquier iniciativa que mejore el entorno urbano sin identificar el vínculo específico entre jardinería y prevención de un uso indebido del terreno.",
+          "associationTarget": "Una entidad que conecta el cuidado comunitario del lugar con la reducción de una conducta perjudicial en espacios antes abandonados.",
+          "evidenceSearch": "Buscar una cadena causal completa: estado previo del espacio, intervención de jardinería y cambio en la forma en que se usa o cuida.",
+          "featureComparison": "Separar la recuperación social de un terreno de la mera eficiencia en el uso de espacio escaso o de la producción en un entorno controlado.",
+          "competitorCheck": "Revisar el modelo que también aprovecha espacio urbano desaprovechado; descartarlo si no menciona una conducta problemática ni custodia vecinal.",
+          "decisionRule": "Exigir que el mismo pasaje atribuya explícitamente a los jardines la reducción del mal uso y el aumento del cuidado local.",
+          "repairAction": "Si decidí solo por abandono o espacio vacío, añadir dos columnas: problema anterior y efecto posterior, y comprobar que ambas estén respaldadas."
+        },
+        {
+          "questionId": "mf-urban-farming-04",
+          "likelyMisread": "Podría asociar previsibilidad con cualquier método organizado sin comprobar que proviene del control ambiental y que reduce la exposición al clima.",
+          "associationTarget": "Una entidad cuyo mecanismo de producción regula condiciones de crecimiento y cuyo resultado declarado es una cosecha menos dependiente del tiempo atmosférico.",
+          "evidenceSearch": "Localizar en proximidad semántica un mecanismo controlado, ejemplos de variables reguladas y una consecuencia sobre la estabilidad de la cosecha.",
+          "featureComparison": "Comparar mecanismo y resultado, no solo el lugar: trabajar en una ubicación urbana particular no implica controlar luz, nutrientes u otras condiciones.",
+          "competitorCheck": "Comprobar si otra iniciativa se sitúa fuera del suelo convencional, pero descartar la asociación si el texto no atribuye la menor vulnerabilidad al control de variables.",
+          "decisionRule": "Seleccionar únicamente después de verificar la cadena condiciones reguladas → producción predecible → menor efecto del clima.",
+          "repairAction": "Si fui directo a una palabra tecnológica, releer la oración causal y anotar por qué el clima afecta menos, no solo qué tecnología aparece."
+        },
+        {
+          "questionId": "mf-urban-farming-05",
+          "likelyMisread": "Podría confundir evitar competir por suelo a nivel de calle con recuperar terrenos desocupados, porque ambas ideas tratan de escasez de espacio.",
+          "associationTarget": "Una entidad cuya elección física de ubicación permite producir sin disputar el terreno utilizado al nivel de la calle.",
+          "evidenceSearch": "Buscar una relación explícita entre el tipo de superficie aprovechada y la evitación de competencia por otra clase de terreno.",
+          "featureComparison": "Contrastar usar una capa distinta del espacio urbano con reutilizar suelo abandonado; solo una de esas lógicas evita la competencia por nivel físico.",
+          "competitorCheck": "Examinar la opción vinculada a terrenos sin uso y descartar el atajo si el proyecto todavía opera sobre suelo a nivel de calle.",
+          "decisionRule": "La ubicación y la ventaja espacial deben aparecer unidas como mecanismo y propósito, no inferirse solo a partir de una imagen del proyecto.",
+          "repairAction": "Dibujar dos categorías, encima del nivel de calle y sobre terreno disponible, y volver a la frase que explica la razón de la ubicación."
+        },
+        {
+          "questionId": "mf-urban-farming-06",
+          "likelyMisread": "Podría tomar cualquier colaboración con propietarios o negocios como equivalente a necesitar un acuerdo previo para usar el espacio.",
+          "associationTarget": "Una entidad cuyo acceso al lugar depende de negociar una autorización temporal antes de iniciar la transformación física.",
+          "evidenceSearch": "Rastrear una secuencia cronológica con negociación, permiso de uso y conversión posterior del sitio.",
+          "featureComparison": "Distinguir un requisito de acceso previo de una relación comercial posterior o de una necesidad de mantenimiento técnico.",
+          "competitorCheck": "Comprobar si otra entidad abastece a negocios cercanos; esa relación no demuestra que necesite negociar el derecho a transformar el lugar.",
+          "decisionRule": "La evidencia válida debe mostrar que el acuerdo es condición anterior a la intervención, con las partes y el carácter del permiso claramente atribuidos.",
+          "repairAction": "Si asocié por la presencia de terceros, ordenar los verbos del párrafo y verificar qué ocurre antes de que comience el cultivo."
+        },
+        {
+          "questionId": "mf-urban-farming-07",
+          "likelyMisread": "Podría confundir una crítica sobre consumo de recursos con la parte del enunciado que exige apoyo técnico, o atribuir la crítica a la propia entidad.",
+          "associationTarget": "Una entidad cuyo método recibe una objeción externa por requerir energía y mantenimiento especializado.",
+          "evidenceSearch": "Buscar un marcador de voz crítica y comprobar que la objeción incluye una demanda de soporte técnico, no solo un costo general.",
+          "featureComparison": "Separar la descripción del método, la defensa de la entidad y la evaluación de sus críticos antes de comparar las opciones.",
+          "competitorCheck": "Revisar si otro modelo tiene tareas de medición o coordinación; descartarlo si esas tareas no se presentan como crítica a su viabilidad técnica.",
+          "decisionRule": "Debe coincidir la fuente de la crítica, el método criticado y la naturaleza técnica del requisito.",
+          "repairAction": "Marcar quién habla en cada cláusula y reescribir la evidencia como críticos dicen que..., evitando mezclarla con la respuesta defensiva posterior."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-features:mf-memory-research",
+      "passageBarrier": "Todas las entidades estudian memoria y varias describen una mejora del recuerdo, por lo que el desafío es distinguir contexto experimental, mecanismo y tipo de apoyo en vez de seguir palabras como recordar, revisión o ayuda.",
+      "featureDescriptionRisk": "high",
+      "passageTitleInfluenceRisk": "low",
+      "shortcutRisks": [
+        "Emparejar por el tema general de memoria sin comprobar el mecanismo observado.",
+        "Confundir la población o el escenario con el hallazgo que el enunciado pregunta.",
+        "Usar la cercanía de dos enunciados al mismo párrafo como prueba suficiente de reutilización."
+      ],
+      "transferValue": "Ayuda a diferenciar población, diseño, intervención, explicación y resultado en pasajes con varios estudios de un mismo campo.",
+      "nextAction": "Convertir cada enunciado en una ficha de tres partes —contexto, mecanismo y resultado— y no decidir hasta hallar las tres o justificar cuál es la parte no exigida.",
+      "questionWalkthrough": [
+        {
+          "questionId": "mf-memory-01",
+          "likelyMisread": "Podría fijarme solo en discusión grupal y pasar por alto que el detalle falso debe provenir de otra persona y ganar aceptación cuando esa persona suena segura.",
+          "associationTarget": "Un estudio donde información social posterior altera el recuerdo original y la seguridad del interlocutor aumenta esa incorporación.",
+          "evidenceSearch": "Buscar la secuencia evento observado → conversación con información distinta → adopción de detalles, más la condición que intensifica el efecto.",
+          "featureComparison": "Comparar estudios por fuente del cambio en memoria: interacción social, estrategia personal, apoyo externo o momento de repaso.",
+          "competitorCheck": "Comprobar si otro estudio también mejora o modifica recuerdos mediante una acción posterior; descartarlo si no hay información aportada por otra persona.",
+          "decisionRule": "La evidencia debe identificar simultáneamente un detalle no visto, su origen conversacional y el efecto de la confianza expresada.",
+          "repairAction": "Si elegí por la palabra grupo, reconstruir qué sabía el participante antes y después de la conversación y de dónde salió el nuevo detalle."
+        },
+        {
+          "questionId": "mf-memory-02",
+          "likelyMisread": "Podría considerar como tecnología cualquier sistema organizado o confundir materiales visuales sencillos con un dispositivo avanzado.",
+          "associationTarget": "Un proyecto que reemplaza soluciones digitales complejas por señales visuales y objetos cotidianos situados cerca del momento de acción.",
+          "evidenceSearch": "Localizar un contraste explícito entre lo que no se prueba y una lista de ayudas domésticas concretas que sí se utilizan.",
+          "featureComparison": "Comparar la forma del apoyo, no solo su objetivo: señales en el hogar, notas académicas, pausas mentales y horario de estudio cumplen funciones distintas.",
+          "competitorCheck": "Revisar la opción relacionada con una herramienta permitida; descartarla si el soporte pertenece a un contexto académico y no a rutinas domésticas.",
+          "decisionRule": "Exigir evidencia tanto de baja complejidad tecnológica como de uso de señales ordinarias en acciones diarias.",
+          "repairAction": "Hacer una lista de los objetos mencionados y preguntar si funcionan como recordatorios en el entorno o como material de estudio transportable."
+        },
+        {
+          "questionId": "mf-memory-03",
+          "likelyMisread": "Podría reducir el enunciado a hacer pausas y elegir cualquier procedimiento con intervalos, sin comprobar la anticipación del siguiente lugar.",
+          "associationTarget": "Una investigación en la que detenerse en puntos de elección para predecir lo que viene fortalece la representación mental del recorrido.",
+          "evidenceSearch": "Buscar participantes en movimiento, lugares donde deben decidir y una instrucción de describir por adelantado lo que esperan encontrar.",
+          "featureComparison": "Diferenciar una pausa con predicción espacial de una pausa temporal entre repasos o del uso de una ayuda visible.",
+          "competitorCheck": "Comprobar el estudio con intervalos de aprendizaje; descartarlo si el beneficio depende del descanso y no de anticipar una ubicación.",
+          "decisionRule": "Deben coincidir pausa, predicción de la próxima localización y mejora del recuerdo del trayecto.",
+          "repairAction": "Si decidí por pausa, completar la pregunta ¿pausa para hacer qué? y exigir una acción prospectiva ligada a un lugar."
+        },
+        {
+          "questionId": "mf-memory-04",
+          "likelyMisread": "Podría escoger cualquier estudio con dos momentos de práctica sin verificar que el contraste decisivo es la distribución alrededor del sueño.",
+          "associationTarget": "Un estudio que compara horarios de repaso y relaciona un mejor resultado con revisar antes de dormir y después de despertar.",
+          "evidenceSearch": "Rastrear los dos grupos temporales, mantener constante el número de repasos y localizar la explicación propuesta para la diferencia.",
+          "featureComparison": "Comparar la variable manipulada: momento respecto al descanso, presencia de notas, predicción activa o señales ambientales.",
+          "competitorCheck": "Revisar cualquier investigación con acciones repetidas; descartarla si no contrasta horarios ni incluye un periodo de sueño entre ellos.",
+          "decisionRule": "Aceptar solo si la mejora se atribuye al patrón temporal que rodea el sueño y no simplemente a repetir el material.",
+          "repairAction": "Trazar una línea de tiempo para cada condición y confirmar qué sucede entre el primer y el segundo repaso."
+        },
+        {
+          "questionId": "mf-memory-05",
+          "likelyMisread": "Podría asumir que disponer de una ayuda reduce el esfuerzo, aunque el hallazgo del pasaje invierte precisamente esa expectativa.",
+          "associationTarget": "Un grupo que permite un recurso de apoyo durante una evaluación y observa preparación más activa para que ese recurso resulte utilizable.",
+          "evidenceSearch": "Buscar un contraste entre una preocupación inicial sobre dependencia o pereza y el comportamiento observado antes de la actividad evaluada.",
+          "featureComparison": "Separar el soporte permitido durante una prueba de las ayudas que descargan la memoria en tareas domésticas.",
+          "competitorCheck": "Comprobar la entidad que también usa apoyos externos; descartarla si el texto no menciona preparación previa ni presión de tiempo en una evaluación.",
+          "decisionRule": "La misma evidencia debe unir permiso de usar la herramienta, organización previa y aumento de revisión activa.",
+          "repairAction": "Si asocié herramienta con menor carga de memoria, releer el giro de contraste y anotar la conducta real que siguió a su disponibilidad."
+        },
+        {
+          "questionId": "mf-memory-06",
+          "likelyMisread": "Podría elegir cualquier investigación espacial por palabras como lugar o ubicación sin comprobar que la tarea consiste en recordar rutas interiores.",
+          "associationTarget": "Una investigación centrada en el recuerdo de recorridos realizados dentro de edificios desconocidos.",
+          "evidenceSearch": "Localizar participantes que caminan por un entorno interior no familiar y la medida específica de memoria del trayecto.",
+          "featureComparison": "Comparar el objeto recordado: rutas, detalles de un evento, vocabulario, acciones cotidianas o material de clase.",
+          "competitorCheck": "Revisar estudios que mencionan ubicación de objetos; descartarlos si las ubicaciones funcionan como señales y no como recorrido que debe recordarse.",
+          "decisionRule": "El contexto interior y la memoria de navegación deben estar explícitos, sin depender de una inferencia a partir de la palabra espacio.",
+          "repairAction": "Si marqué por una referencia física, identificar qué información se evalúa al final: camino seguido, objeto, palabra o detalle social."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-features:mf-transport-policies",
+      "passageBarrier": "Cada política combina objetivo, resultado, queja y ajuste posterior; la lectura local puede emparejar un enunciado con la queja correcta pero con la política equivocada, o confundir la medida original con su respuesta correctiva.",
+      "featureDescriptionRisk": "high",
+      "passageTitleInfluenceRisk": "medium",
+      "shortcutRisks": [
+        "Seleccionar por el modo de transporte mencionado sin verificar el resultado y la contrapartida.",
+        "Confundir una preocupación de usuarios con la modificación aplicada después.",
+        "Leer una sola oración y perder el contraste introducido en la siguiente."
+      ],
+      "transferValue": "Practica el seguimiento de cadenas política → efecto → problema → ajuste, una estructura frecuente en textos comparativos de políticas públicas.",
+      "nextAction": "Crear para cada política cuatro casillas —medida, beneficio, costo y respuesta— y resolver cada enunciado por la combinación de casillas que exige.",
+      "questionWalkthrough": [
+        {
+          "questionId": "mf-transport-01",
+          "likelyMisread": "Podría emparejar solo por autobuses o por entregas y no verificar que el mismo plan produjo a la vez menor tiempo de viaje y dificultad de carga.",
+          "associationTarget": "Una política que beneficia la velocidad de un modo público, genera una dificultad comercial de acceso y luego necesita una adaptación operativa.",
+          "evidenceSearch": "Buscar en un mismo bloque una medida de tiempo promedio, una queja sobre entregas y una respuesta que modifica horarios.",
+          "featureComparison": "Comparar combinaciones de beneficio y costo; otras políticas mejoran seguridad, acceso, conveniencia o consumo, aunque también tengan quejas.",
+          "competitorCheck": "Revisar la política que también modifica acceso vehicular; descartarla si su problema afecta distancia peatonal y no espacios de carga.",
+          "decisionRule": "Exigir coincidencia de los dos lados del contraste: mejora temporal para transporte público y perjuicio logístico para entregas.",
+          "repairAction": "Si elegí por un sustantivo, escribir dos columnas, ganó y perdió, y comprobar que ambas pertenezcan a la misma política."
+        },
+        {
+          "questionId": "mf-transport-02",
+          "likelyMisread": "Podría interpretar menos lesiones como consecuencia de menos tráfico aunque el enunciado exige que el volumen apenas cambie.",
+          "associationTarget": "Una política de seguridad cuyo resultado sanitario mejora sin una reducción importante de la cantidad total de tráfico.",
+          "evidenceSearch": "Localizar un contraste explícito entre una métrica que casi no cambia y datos de lesiones graves que sí disminuyen.",
+          "featureComparison": "Distinguir resultados de seguridad de mejoras en tiempo, combustible, comodidad de pago o espacio comercial.",
+          "competitorCheck": "Comprobar la medida que restringe automóviles en ciertos momentos; descartarla si no presenta datos hospitalarios ni mantiene el volumen general.",
+          "decisionRule": "La evidencia válida debe preservar simultáneamente la ausencia de gran cambio en tráfico y la reducción documentada de gravedad.",
+          "repairAction": "Si inferí causalidad por menor tráfico, releer la cláusula concesiva y anotar por separado qué indicador se mantiene y cuál mejora."
+        },
+        {
+          "questionId": "mf-transport-03",
+          "likelyMisread": "Podría reducir la desigualdad inicial a una diferencia general de acceso sin identificar el contraste entre usuarios de tecnología móvil y quienes pagan en efectivo.",
+          "associationTarget": "Una política cuyo despliegue por fases favorece primero a usuarios de un medio tecnológico y retrasa la inclusión de otra forma de pago.",
+          "evidenceSearch": "Buscar lenguaje temporal de primera fase y fase posterior junto con dos grupos definidos por la manera de acceder o pagar.",
+          "featureComparison": "Comparar quién queda inicialmente en desventaja: pagadores, personas con movilidad limitada, comercios o gestores de vehículos.",
+          "competitorCheck": "Revisar la política con una preocupación de accesibilidad; descartarla si el grupo afectado se define por distancia física y no por forma de pago.",
+          "decisionRule": "Deben coincidir la ventaja tecnológica inicial, el grupo alternativo y el aplazamiento explícito de su acceso.",
+          "repairAction": "Si elegí por la palabra acceso, preguntar acceso a qué y mediante qué; luego reconstruir el orden de las fases."
+        },
+        {
+          "questionId": "mf-transport-04",
+          "likelyMisread": "Podría asociar planificación cuidadosa con cualquier ajuste de horarios sin comprobar que la causa es el regreso tardío de vehículos desde tareas de trabajo.",
+          "associationTarget": "Una prueba operativa en la que la programación depende de cuándo regresan los vehículos y de su necesidad posterior de recarga.",
+          "evidenceSearch": "Localizar la cadena tarea externa → retorno tardío → restricción sobre el calendario de preparación del vehículo.",
+          "featureComparison": "Distinguir planificación energética de ventanas de entrega, fases de pago o servicios añadidos tras reuniones.",
+          "competitorCheck": "Comprobar el plan que también ajusta horarios; descartarlo si el horario responde a comercios y no al estado operativo de una flota.",
+          "decisionRule": "La razón concreta de la planificación debe ser el retorno variable de los vehículos desde sus encargos, no una necesidad genérica de coordinación.",
+          "repairAction": "Si marqué por horarios, completar la relación porque... y exigir que la causa incluya regreso tardío y disponibilidad para la siguiente operación."
+        },
+        {
+          "questionId": "mf-transport-05",
+          "likelyMisread": "Podría emparejar por la mención de personas mayores sin diferenciar entre la queja inicial y la solución nueva adoptada después.",
+          "associationTarget": "Una política que, tras objeciones sobre mayor distancia de acceso para residentes mayores, incorpora un servicio de conexión local.",
+          "evidenceSearch": "Buscar una secuencia de reacción pública: cambio de acceso, grupo perjudicado, reuniones y adición posterior de un servicio.",
+          "featureComparison": "Comparar remedios posteriores: cambio de horario, fase tardía de inclusión o servicio físico adicional.",
+          "competitorCheck": "Revisar políticas con ajustes después de críticas; descartarlas si el remedio no transporta personas alrededor del área afectada.",
+          "decisionRule": "La evidencia debe vincular la preocupación específica de movilidad del grupo con la creación posterior del servicio.",
+          "repairAction": "Si elegí por el grupo social, leer hasta el final del bloque y anotar qué hizo la ciudad como respuesta concreta."
+        },
+        {
+          "questionId": "mf-transport-06",
+          "likelyMisread": "Podría interpretar combinar modos como mejorar conexiones físicas entre rutas, aunque el mecanismo descrito puede ser una integración de acceso o pago.",
+          "associationTarget": "Una política diseñada para facilitar un viaje multimodal mediante un único sistema de uso entre distintos servicios.",
+          "evidenceSearch": "Localizar una finalidad explícita de conveniencia para pasajeros que emplean más de un modo en el mismo trayecto y el mecanismo que los unifica.",
+          "featureComparison": "Separar integración entre modos de prioridad para un solo modo, sustitución del tipo de vehículo o restricción espacial de automóviles.",
+          "competitorCheck": "Comprobar la política centrada en transporte público rápido; descartarla si solo modifica el desplazamiento de un modo y no integra varios.",
+          "decisionRule": "Deben aparecer juntos el uso de varios modos en un viaje y una infraestructura común que facilite pasar entre ellos.",
+          "repairAction": "Si marqué por cualquier mención de pasajeros, enumerar cuántos modos intervienen y qué elemento compartido hace posible la combinación."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "ielts-reading-ynng-baseline.v1",
+  "capturedAt": "2026-08-09T05:30:00-05:00",
+  "scope": {
+    "unit": "F0.2b.3",
+    "format": "yes-no-not-given",
+    "passages": 3,
+    "questions": 22
+  },
+  "assets": [
+    {
+      "assetId": "formative:yes-no-not-given:ynng-station-art",
+      "setId": "ynng-station-art",
+      "passageTitle": "Public art in transport stations",
+      "wordCount": 255,
+      "questionCount": 8,
+      "sourceObjectSha256": "1fe59c7e1fad1d831a4fa08a7dfa302d7b1bd37005884bf77ce1b9b379abf680",
+      "passageSha256": "13d655a77274b4fa20bbc39e558395d3db455f46043ff23ca2e122b2bb237f0a"
+    },
+    {
+      "assetId": "formative:yes-no-not-given:ynng-remote-work",
+      "setId": "ynng-remote-work",
+      "passageTitle": "Why city centres still need office workers",
+      "wordCount": 279,
+      "questionCount": 7,
+      "sourceObjectSha256": "5a21449c9d3e9dd7e93d30a3c216d088f89c1fbd011439067aa45827d41ec772",
+      "passageSha256": "0a88ab17c6741765c43344c80b3543e4add8309cefea1c7ebc674d1364795a78"
+    },
+    {
+      "assetId": "formative:yes-no-not-given:ynng-school-uniforms",
+      "setId": "ynng-school-uniforms",
+      "passageTitle": "A careful argument about school uniforms",
+      "wordCount": 263,
+      "questionCount": 7,
+      "sourceObjectSha256": "2ad9bf267d022a21725a714a100c3956bda28932183daf210400fce5cddccf0a",
+      "passageSha256": "21d4fa469e99313439dc5ac41a8fd28683d70d058314be4be57376be11e8cdee"
+    }
+  ],
+  "structuralRisk": {
+    "answerCounts": {
+      "YES": 9,
+      "NO": 8,
+      "NOT GIVEN": 5
+    },
+    "maxSameLabelRun": 2,
+    "absoluteOrDegreeLanguageImpliesNo": {
+      "eligible": 11,
+      "hits": 6,
+      "conditionalAccuracy": 0.5454545454545454,
+      "randomBaseline": 0.3333333333333333
+    },
+    "statisticalCertificationEligible": false,
+    "reason": "n=22 is below the 100-decision family gate; this baseline can expose structural cues but cannot certify their absence."
+  },
+  "learnerFacingSourceSha256": {
+    "src/data/practica-exams/seo-catalog.ts": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de",
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given/page.tsx": "c881fec762bbc38fbdc9c88f9cdd4427f0657ff99c9abde97cacf510f90d8956",
+    "src/components/exam-practice/ObjectivePracticeEngine.tsx": "7cb6be10adb1c2e4d2c35b19abe3ab6c8c939a74b3c21432c835042bef01051c",
+    "src/components/exam-practice/ObjectivePracticeSetBank.tsx": "25823a7a418319104af37259c029add0df48a01e6539c61a03b285f68e4b339b"
+  },
+  "interpretation": "This is the frozen pre-unit content and learner-runtime identity. It records stored keys for audit only and is never supplied to blind reviewers."
+}

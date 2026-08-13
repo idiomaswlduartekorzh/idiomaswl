@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "ielts-reading-sentence-completion-prompt-only-verdict.v1",
+  "reviewer": {
+    "reviewerRunId": "sentence-completion-expert-20260809-165020z",
+    "reviewedAt": "2026-08-09T16:50:20Z",
+    "packetSha256": "1dcf91f402f64348ead00a93c0601addcc76724f068366009c1e5547a8505bb0",
+    "sourceContext": "prompt-only-packet-only",
+    "humanSignature": false,
+    "notes": "Independent prompt-only review. Plausible completions are based solely on the visible sentence frames and the two-word limit; no passage, key, hint, explanation, alternative, or other review was consulted."
+  },
+  "records": [
+    {
+      "questionId": "sentence-wetlands-01",
+      "predictedGrammarCategory": "plural or mass noun phrase as object of a preposition",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["drainage pipes", "storm drains", "sewer systems", "concrete channels"],
+      "uniqueExactGuess": null,
+      "reasoning": "The frame requires a destination after 'through', but it supplies no lexical cue that distinguishes among several kinds of urban drainage infrastructure."
+    },
+    {
+      "questionId": "sentence-wetlands-02",
+      "predictedGrammarCategory": "plural or mass noun phrase as object of a preposition",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["drainage systems", "sewer networks", "underground pipes", "city drains"],
+      "uniqueExactGuess": null,
+      "reasoning": "Many storm-water systems can naturally follow 'pressure on'; the sentence does not identify one exact wording."
+    },
+    {
+      "questionId": "sentence-wetlands-03",
+      "predictedGrammarCategory": "plural or mass noun phrase coordinated with 'native plants'",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["shallow pools", "open water", "nesting areas", "muddy banks"],
+      "uniqueExactGuess": null,
+      "reasoning": "The coordination calls for another habitat feature, but numerous ecologically plausible features fit grammatically and semantically."
+    },
+    {
+      "questionId": "sentence-wetlands-04",
+      "predictedGrammarCategory": "singular mass noun completing a compound noun phrase",
+      "plausibleCompletionCountBand": "two-to-three",
+      "plausibleCompletions": ["infrastructure", "engineering", "architecture"],
+      "uniqueExactGuess": null,
+      "reasoning": "The contrast with decoration narrows the semantic field, yet several nouns can form a natural expression after 'ecological'."
+    },
+    {
+      "questionId": "sentence-wetlands-05",
+      "predictedGrammarCategory": "mass noun or noun phrase as direct object",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["water flow", "drainage", "water movement", "flood control"],
+      "uniqueExactGuess": null,
+      "reasoning": "Blocked channels could limit several related processes, so grammar and common knowledge do not determine the passage wording."
+    },
+    {
+      "questionId": "sentence-wetlands-06",
+      "predictedGrammarCategory": "singular abstract noun or noun phrase after a possessive",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["purpose", "ecological role", "design", "wildlife value"],
+      "uniqueExactGuess": null,
+      "reasoning": "Signs and platforms can explain several aspects of a park; the possessive construction alone does not select an exact completion."
+    },
+    {
+      "questionId": "sentence-makerspaces-01",
+      "predictedGrammarCategory": "plural count noun coordinated with 'audio recorders'",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["3D printers", "sewing machines", "laser cutters", "video cameras"],
+      "uniqueExactGuess": null,
+      "reasoning": "Many tools are conventionally found in makerspaces and fit the coordination, leaving no unique exact guess."
+    },
+    {
+      "questionId": "sentence-makerspaces-02",
+      "predictedGrammarCategory": "gerund modifying 'information' after a preposition",
+      "plausibleCompletionCountBand": "two-to-three",
+      "plausibleCompletions": ["storing", "providing", "organizing"],
+      "uniqueExactGuess": null,
+      "reasoning": "The 'move beyond' construction favors an -ing form, but several library functions yield grammatical and meaningful sentences."
+    },
+    {
+      "questionId": "sentence-makerspaces-03",
+      "predictedGrammarCategory": "plural noun phrase modified by 'realistic'",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["first projects", "learning goals", "project ideas", "starting tasks"],
+      "uniqueExactGuess": null,
+      "reasoning": "The adjective and context indicate attainable activities or aims, but do not reveal a single lexical choice."
+    },
+    {
+      "questionId": "sentence-makerspaces-04",
+      "predictedGrammarCategory": "plural or mass noun phrase modified by 'local'",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["interests", "community needs", "demand", "user preferences"],
+      "uniqueExactGuess": null,
+      "reasoning": "Unused equipment could result from ignoring needs, demand, preferences, or interests, all of which fit the frame naturally."
+    },
+    {
+      "questionId": "sentence-makerspaces-05",
+      "predictedGrammarCategory": "plural noun phrase as object of a preposition",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["study zones", "reading rooms", "quiet areas", "work spaces"],
+      "uniqueExactGuess": null,
+      "reasoning": "The noisy-versus-quiet contrast suggests a location, but several library-area labels are equally predictable from the prompt."
+    },
+    {
+      "questionId": "sentence-makerspaces-06",
+      "predictedGrammarCategory": "singular noun phrase after a possessive",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["public role", "educational mission", "community function", "service range"],
+      "uniqueExactGuess": null,
+      "reasoning": "The contrast with replacing books supports a broader institutional function, but it does not fix the passage's exact phrase."
+    },
+    {
+      "questionId": "sentence-night-markets-01",
+      "predictedGrammarCategory": "singular count noun phrase after an article",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["shopping centre", "retail building", "commercial district", "storefront"],
+      "uniqueExactGuess": null,
+      "reasoning": "The frame contrasts a temporary market with some permanent commercial place or structure, but multiple completions fit."
+    },
+    {
+      "questionId": "sentence-night-markets-02",
+      "predictedGrammarCategory": "plural or mass noun phrase as direct object",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["new products", "customer demand", "business ideas", "market interest"],
+      "uniqueExactGuess": null,
+      "reasoning": "A short trading period could test products, demand, ideas, or interest; the prompt does not uniquely constrain the object."
+    },
+    {
+      "questionId": "sentence-night-markets-03",
+      "predictedGrammarCategory": "singular count noun phrase after an article",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["transit stop", "train station", "bus terminal", "town centre"],
+      "uniqueExactGuess": null,
+      "reasoning": "Accessibility is compatible with several transport nodes or central locations, so the exact location cannot be guessed uniquely."
+    },
+    {
+      "questionId": "sentence-night-markets-04",
+      "predictedGrammarCategory": "plural noun phrase as object complement of 'keep'",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["pedestrian routes", "access roads", "emergency exits", "public pathways"],
+      "uniqueExactGuess": null,
+      "reasoning": "Several circulation or access features may need to remain clear; neither syntax nor context identifies one exact phrase."
+    },
+    {
+      "questionId": "sentence-night-markets-05",
+      "predictedGrammarCategory": "comparative adverb modifying 'stay'",
+      "plausibleCompletionCountBand": "two-to-three",
+      "plausibleCompletions": ["longer", "later"],
+      "uniqueExactGuess": null,
+      "reasoning": "Both duration and departure-time readings are natural, so even this tightly constrained adverb slot is not an exact-answer giveaway."
+    },
+    {
+      "questionId": "sentence-night-markets-06",
+      "predictedGrammarCategory": "singular abstract noun phrase as direct object",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["long-term success", "lasting demand", "future viability", "continued popularity"],
+      "uniqueExactGuess": null,
+      "reasoning": "A strong first night does not necessarily demonstrate several possible kinds of durability; the exact noun phrase remains underdetermined."
+    }
+  ]
+}

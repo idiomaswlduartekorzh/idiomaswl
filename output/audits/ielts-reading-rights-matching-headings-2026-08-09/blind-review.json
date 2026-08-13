@@ -1,0 +1,262 @@
+{
+  "schemaVersion": "ielts-reading-matching-headings-blind-review.v1",
+  "generatedAt": "2026-08-09T07:10:00-05:00",
+  "reviewScope": "F0.2b.5 — three formative Matching Headings passages",
+  "reviewerIsolation": "Use only this packet for the first pass. Do not open the catalog, registry, validator, route, UI, prior audits or factual-source packet until every decision has been fixed in a separate first-pass file.",
+  "taskRule": "Match each paragraph or section to one Roman-numeral heading that summarizes its main idea. There are more headings than paragraphs, some headings remain unused, and no heading may be used more than once.",
+  "instruction": "Independently adjudicate all 17 paragraphs. Select exactly one Roman-numeral heading for each paragraph, state the whole-paragraph main idea, quote decisive spans, explain the paragraph-to-heading paraphrase, and identify the strongest competing heading and why it fails. Mark ambiguity as material whenever two headings remain reasonable under the whole paragraph. Record title-cue risk and IELTS fitness. This is an AI editorial review, not a human signature, rights clearance or publication approval.",
+  "excludes": [
+    "answer keys",
+    "correctness labels",
+    "explanations",
+    "trap labels",
+    "declared skills",
+    "prior reviewer decisions",
+    "student data"
+  ],
+  "records": [
+    {
+      "assetId": "formative:matching-headings:mh-public-libraries",
+      "title": "The changing role of public libraries",
+      "sourceObjectSha256": "9e99d0518d90a6a64fc622a49cc293a2966aa17ac59142685b0e8bdb266eb918",
+      "passageSha256": "e1b63291ae9e2ed99efb145d5a6322a17532b207fd7a4caf18ad4d2a9238955a",
+      "instructions": "Choose the correct heading for each paragraph. There are more headings than paragraphs, so some options will not be used.",
+      "headingOptions": [
+        {
+          "headingId": "i",
+          "text": "A new focus on access rather than ownership"
+        },
+        {
+          "headingId": "ii",
+          "text": "Why libraries should charge higher membership fees"
+        },
+        {
+          "headingId": "iii",
+          "text": "Libraries as places for community support"
+        },
+        {
+          "headingId": "iv",
+          "text": "The complete disappearance of printed books"
+        },
+        {
+          "headingId": "v",
+          "text": "How staff roles have expanded"
+        },
+        {
+          "headingId": "vi",
+          "text": "A problem caused by unlimited opening hours"
+        },
+        {
+          "headingId": "vii",
+          "text": "Technology services beyond simple internet use"
+        },
+        {
+          "headingId": "viii",
+          "text": "Evidence that library visits are only declining"
+        },
+        {
+          "headingId": "ix",
+          "text": "A mixed pattern that old measures may miss"
+        }
+      ],
+      "paragraphs": [
+        {
+          "questionId": "mh-public-libraries-a",
+          "paragraphId": "a",
+          "label": "Paragraph A",
+          "text": "Public libraries were once defined mainly by the number of books they stored. Today, many library systems measure success differently. A person may visit without borrowing anything: to use a quiet desk, join a workshop, access a database or receive help with an online form. The central idea is no longer that the library owns information, but that it gives people practical access to it."
+        },
+        {
+          "questionId": "mh-public-libraries-b",
+          "paragraphId": "b",
+          "label": "Paragraph B",
+          "text": "In many cities, libraries have become informal support centers. Parents bring children to reading clubs, older adults attend digital literacy sessions, and job seekers receive guidance on applications. During heatwaves or storms, some branches also function as safe public spaces. These services make the library part of the social infrastructure of a neighborhood."
+        },
+        {
+          "questionId": "mh-public-libraries-c",
+          "paragraphId": "c",
+          "label": "Paragraph C",
+          "text": "The growth of digital services has changed what visitors ask for. People may need help scanning documents, using design software, joining a video interview or protecting personal data online. Some branches lend tablets or Wi-Fi devices, while others offer makerspaces with recording equipment and 3D printers. The library is increasingly a bridge between people and tools they cannot easily afford at home."
+        },
+        {
+          "questionId": "mh-public-libraries-d",
+          "paragraphId": "d",
+          "label": "Paragraph D",
+          "text": "These changes have also transformed library work. Staff members still organize collections, but they may also teach classes, troubleshoot devices, coordinate local partnerships and guide users through government websites. This requires communication skills and technical confidence as much as knowledge of cataloguing systems."
+        },
+        {
+          "questionId": "mh-public-libraries-e",
+          "paragraphId": "e",
+          "label": "Paragraph E",
+          "text": "Despite predictions that libraries would become irrelevant, usage patterns are more complex. Traditional book borrowing has decreased in some places, yet attendance at events, demand for study areas and use of digital services have grown. The challenge for library leaders is to explain this mixed picture to funders who may still judge libraries by older measures."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-headings:mh-urban-farming",
+      "title": "Urban farming beyond fresh food",
+      "sourceObjectSha256": "d8505ea0480be939eade2759c1b8536201346219f6817e092f2c7712845564eb",
+      "passageSha256": "00d5dfbda4a92ff0c9e18d445dde1517d5d9ffce37341e6a3d9a960b374b4019",
+      "instructions": "Choose the correct heading for each paragraph. Focus on the purpose of the whole paragraph before looking at repeated words.",
+      "headingOptions": [
+        {
+          "headingId": "i",
+          "text": "A response to limited urban space"
+        },
+        {
+          "headingId": "ii",
+          "text": "Why rooftop farms have replaced rural agriculture"
+        },
+        {
+          "headingId": "iii",
+          "text": "Educational benefits that extend beyond gardening"
+        },
+        {
+          "headingId": "iv",
+          "text": "The role of community trust and local ownership"
+        },
+        {
+          "headingId": "v",
+          "text": "Technical limits that require realistic planning"
+        },
+        {
+          "headingId": "vi",
+          "text": "How supermarkets caused the end of urban markets"
+        },
+        {
+          "headingId": "vii",
+          "text": "Environmental gains from shorter supply chains"
+        },
+        {
+          "headingId": "viii",
+          "text": "A debate about whether yields are the only measure"
+        },
+        {
+          "headingId": "ix",
+          "text": "The risks of using volunteers in every project"
+        }
+      ],
+      "paragraphs": [
+        {
+          "questionId": "mh-urban-farming-a",
+          "paragraphId": "a",
+          "label": "Paragraph A",
+          "text": "Urban farming projects often begin with a practical problem: cities have little unused land. Instead of searching for large fields, organisers use rooftops, school courtyards, vacant lots and narrow strips beside public buildings. These spaces rarely produce huge harvests, but they can turn overlooked corners into productive places."
+        },
+        {
+          "questionId": "mh-urban-farming-b",
+          "paragraphId": "b",
+          "label": "Paragraph B",
+          "text": "Some advocates describe the environmental value of growing food close to consumers. A tomato grown a few blocks away may require less transport and packaging than one shipped across a continent. Composting programmes connected to gardens can also reduce the amount of organic waste sent to landfill."
+        },
+        {
+          "questionId": "mh-urban-farming-c",
+          "paragraphId": "c",
+          "label": "Paragraph C",
+          "text": "In schools, gardens can become outdoor classrooms. Students measure plant growth, test soil conditions, write observation notes and discuss where food comes from. Teachers often report that the garden works best when it supports science, language and citizenship lessons rather than sitting outside the curriculum."
+        },
+        {
+          "questionId": "mh-urban-farming-d",
+          "paragraphId": "d",
+          "label": "Paragraph D",
+          "text": "Projects are more likely to last when residents feel they have shaped the rules. If a garden is designed by an outside organisation without listening to neighbours, it may be seen as temporary decoration. Shared decisions about opening hours, crop choices and maintenance can create a stronger sense of responsibility."
+        },
+        {
+          "questionId": "mh-urban-farming-e",
+          "paragraphId": "e",
+          "label": "Paragraph E",
+          "text": "Supporters sometimes celebrate urban farms by counting kilograms of produce. Critics argue that this can miss the point. A small site may never compete with commercial farms, yet it may still provide education, social connection and visible evidence that food systems can be changed locally."
+        },
+        {
+          "questionId": "mh-urban-farming-f",
+          "paragraphId": "f",
+          "label": "Paragraph F",
+          "text": "There are also practical limits. Soil may be contaminated, roofs may not support heavy containers, and water access can be unreliable in summer. Successful projects therefore start with testing, permissions and maintenance plans rather than assuming that enthusiasm alone will solve every problem."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-headings:mh-night-trains",
+      "title": "The return of night trains",
+      "sourceObjectSha256": "6c77fe0e8e219f2cf1a674244d40f9a864e7c3d84e0300450dbb6d36a622e08d",
+      "passageSha256": "6336810444e52bbd62f2d9b17d344aeb4e0d01be6aae774ff6a369bdce1b277d",
+      "instructions": "Choose the correct heading for each paragraph. Watch for headings that mention a real detail but fail to summarize the paragraph.",
+      "headingOptions": [
+        {
+          "headingId": "i",
+          "text": "A service revived by changing travel priorities"
+        },
+        {
+          "headingId": "ii",
+          "text": "Why night trains are always faster than planes"
+        },
+        {
+          "headingId": "iii",
+          "text": "Comfort expectations that operators must manage"
+        },
+        {
+          "headingId": "iv",
+          "text": "Timetabling challenges across borders"
+        },
+        {
+          "headingId": "v",
+          "text": "The complete disappearance of business travel"
+        },
+        {
+          "headingId": "vi",
+          "text": "Environmental arguments behind renewed interest"
+        },
+        {
+          "headingId": "vii",
+          "text": "How stations became tourist attractions"
+        },
+        {
+          "headingId": "viii",
+          "text": "Pricing questions that affect who can use the service"
+        },
+        {
+          "headingId": "ix",
+          "text": "Marketing that treats the journey as part of the trip"
+        }
+      ],
+      "paragraphs": [
+        {
+          "questionId": "mh-night-trains-a",
+          "paragraphId": "a",
+          "label": "Paragraph A",
+          "text": "For decades, many European night train routes were reduced or cancelled as airlines offered cheap short-haul flights. Recently, several operators have announced new overnight services. The revival reflects a shift in passenger priorities, with some travellers valuing lower-emission journeys and the chance to avoid early airport transfers."
+        },
+        {
+          "questionId": "mh-night-trains-b",
+          "paragraphId": "b",
+          "label": "Paragraph B",
+          "text": "Supporters often compare night trains with flights in terms of carbon emissions. A rail journey can produce far less pollution than a plane on the same route, especially when the electricity supply is relatively clean. For passengers trying to reduce their travel footprint, this difference is a major part of the appeal."
+        },
+        {
+          "questionId": "mh-night-trains-c",
+          "paragraphId": "c",
+          "label": "Paragraph C",
+          "text": "Running an overnight route is operationally complex. Trains may cross several national networks, each with its own track access rules, maintenance windows and signalling systems. A delay in one country can also affect morning commuter services in another, so coordination matters as much as demand."
+        },
+        {
+          "questionId": "mh-night-trains-d",
+          "paragraphId": "d",
+          "label": "Paragraph D",
+          "text": "Passenger expectations can be difficult to balance. Some people imagine a hotel-like cabin, while others mainly want a clean, safe place to sleep. Operators must decide how many private compartments, couchettes and seats to provide, because each choice affects both comfort and capacity."
+        },
+        {
+          "questionId": "mh-night-trains-e",
+          "paragraphId": "e",
+          "label": "Paragraph E",
+          "text": "Price is another obstacle. If a sleeper ticket costs much more than a flight, families and students may not see it as a realistic option. Subsidies, early-booking fares and shared compartments can help, but operators still need enough revenue to cover staff, cleaning and rolling stock."
+        },
+        {
+          "questionId": "mh-night-trains-f",
+          "paragraphId": "f",
+          "label": "Paragraph F",
+          "text": "Marketing teams increasingly present the overnight journey as more than transport. Advertisements show passengers boarding in one city, sleeping through the dull middle section and waking close to a new destination. This message turns the train into part of the holiday rather than a pause before it begins."
+        }
+      ]
+    }
+  ]
+}

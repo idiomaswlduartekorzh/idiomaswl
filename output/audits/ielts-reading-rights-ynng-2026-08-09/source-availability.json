@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "ielts-reading-ynng-source-availability.v1",
+  "checkedAt": "2026-08-09",
+  "method": "curl 8.x -sS -L with requested URL, final URL, HTTP status, content type, response size and response-body SHA-256 recorded on the stated date",
+  "sources": [
+    {
+      "evidenceId": "ielts-ynng-official-format",
+      "requestedUrl": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading",
+      "retrievedAt": "2026-08-09T05:33:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "sizeBytes": 187270,
+      "bodySha256": "7d2f15ba40e1f5f7cbf3a659a03f8783c8ab4d8701d6de94aca7786213875ab0"
+    },
+    {
+      "evidenceId": "station-lta-gift-art",
+      "requestedUrl": "https://www.lta.gov.sg/content/ltagov/en/getting_around/public_transport/a_better_public_transport_experience/art_in_public_transport/gift-of-art.html",
+      "retrievedAt": "2026-08-09T05:34:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.lta.gov.sg/content/ltagov/en/getting_around/public_transport/a_better_public_transport_experience/art_in_public_transport/gift-of-art.html",
+      "redirected": false,
+      "contentType": "text/html",
+      "sizeBytes": 70584,
+      "bodySha256": "e96e0245676bb608c3694fc636c5546f54b8cf45fb4ad67363e7a3592b2aede3"
+    },
+    {
+      "evidenceId": "station-opdc-community-brief",
+      "requestedUrl": "https://consult.opdc.london.gov.uk/park-royal-subway-improvements",
+      "retrievedAt": "2026-08-09T05:33:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://consult.opdc.london.gov.uk/park-royal-subway-improvements",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "sizeBytes": 47136,
+      "bodySha256": "71817447bfa43345866dd3630040be756552301de018c4c3b05c2a027f5a2fb9"
+    },
+    {
+      "evidenceId": "remote-ons-hybrid-2025",
+      "requestedUrl": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/whohasaccesstohybridworkingreatbritain/latest",
+      "retrievedAt": "2026-08-09T05:34:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/whohasaccesstohybridworkingreatbritain/latest",
+      "redirected": false,
+      "contentType": "text/html;charset=utf-8",
+      "sizeBytes": 75858,
+      "bodySha256": "bbf671273411f0979964d01685bc6e32574d85c17f2c6f621a6e14c3f699379b"
+    },
+    {
+      "evidenceId": "remote-london-assembly-central-2024",
+      "requestedUrl": "https://www.london.gov.uk/who-we-are/what-london-assembly-does/london-assembly-work/london-assembly-publications/impact-remote-working-central-london",
+      "retrievedAt": "2026-08-09T05:33:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.london.gov.uk/who-we-are/what-london-assembly-does/london-assembly-work/london-assembly-publications/impact-remote-working-central-london",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "sizeBytes": 269526,
+      "bodySha256": "a27dc6800500ed9a66ee81cc15084295403cf8fec982c0762fa4fd7be54b4300"
+    },
+    {
+      "evidenceId": "remote-ecb-work-preference-2025",
+      "requestedUrl": "https://www.ecb.europa.eu/press/economic-bulletin/focus/2025/html/ecb.ebbox202506_04~2cd6fd1c14.en.html",
+      "retrievedAt": "2026-08-09T05:33:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.ecb.europa.eu/press/economic-bulletin/focus/2025/html/ecb.ebbox202506_04~2cd6fd1c14.en.html",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "sizeBytes": 113662,
+      "bodySha256": "da58fffcf894a5318d8b09af2b61ae0c1f017d6280d69afe613a1d809369a0f7"
+    },
+    {
+      "evidenceId": "uniforms-dfe-policy-2026",
+      "requestedUrl": "https://www.gov.uk/government/publications/school-uniform/school-uniforms",
+      "retrievedAt": "2026-08-09T05:33:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.gov.uk/government/publications/school-uniform/school-uniforms",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "sizeBytes": 108623,
+      "bodySha256": "4459246fa7326f43834fc1d701d6bf3c182f1900913bdd58d61570a8b2f238ac"
+    },
+    {
+      "evidenceId": "uniforms-dfe-cost-2026",
+      "requestedUrl": "https://www.gov.uk/government/publications/cost-of-school-uniforms",
+      "retrievedAt": "2026-08-09T05:33:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.gov.uk/government/publications/cost-of-school-uniforms",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "sizeBytes": 72673,
+      "bodySha256": "6d48e3f934aac63ae5abd96243271dfd8e181aebb4d98faea4ff541d3953a540"
+    },
+    {
+      "evidenceId": "uniforms-cma-costs",
+      "requestedUrl": "https://www.gov.uk/government/collections/school-uniforms",
+      "retrievedAt": "2026-08-09T05:33:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.gov.uk/government/collections/school-uniforms",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "sizeBytes": 75856,
+      "bodySha256": "3cdc2b32db81685fa2ba56a019834c816ab4a0eb44f445c3fb7fce98215f583c"
+    }
+  ],
+  "interpretation": "Availability identifies sources that can be reviewed. It does not establish authorship, license, authorization, claim-level accuracy, writer stance, human approval or publication fitness."
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "ielts-reading-ynng-student-walkthrough.v1",
+  "reviewer": {
+    "humanSignature": false,
+    "sourceContext": "blind-review-packet-only",
+    "notes": [
+      "Recorrido simulado desde la perspectiva de un estudiante promedio, centrado en atribución, alcance y búsqueda de evidencia.",
+      "No se asignan ni se sugieren claves de respuesta; cada acción termina antes de la clasificación del ítem."
+    ]
+  },
+  "records": [
+    {
+      "assetId": "formative:yes-no-not-given:ynng-station-art",
+      "passageBarrier": "El pasaje alterna concesiones, condiciones y postura personal. Un estudiante puede recordar el tema general del arte público y perder quién formula cada objeción o cuándo el autor limita una idea con expresiones como 'no siempre', 'cuando' o 'no necesariamente'.",
+      "titleInfluenceRisk": "medium",
+      "shortcutRisks": [
+        "Usar el título para asumir que el autor apoya cualquier forma de arte en estaciones.",
+        "Buscar palabras repetidas como 'art', 'station' o 'successful' sin comprobar el alcance de la oración completa.",
+        "Adoptar la afirmación de los críticos como si fuera la conclusión personal del autor."
+      ],
+      "transferValue": "Entrena una rutina transferible: localizar marcadores de postura, asignar cada afirmación a su voz y comparar cuantificadores, condiciones y alcance antes de clasificar.",
+      "nextAction": "Pedir al estudiante que marque con colores distintos la voz del autor, la de los críticos y los ejemplos institucionales; después, que subraye absolutos y condiciones en cada enunciado.",
+      "questionWalkthrough": [
+        {
+          "questionId": "ynng-station-art-01",
+          "likelyMisread": "Confundir una ventaja inicial del arte con la jerarquía de razones que el autor establece después.",
+          "evidenceHunt": "Releer el primer párrafo y localizar el contraste entre decoración del viaje y conexión con los barrios.",
+          "attributionCheck": "Comprobar que la idea seleccionada esté introducida como postura personal del autor y no solo como defensa habitual de terceros.",
+          "decisionRule": "Comparar exactamente qué beneficio se presenta como principal; no basta con que ambos beneficios aparezcan en el texto.",
+          "repairAction": "Encerrar el marcador de postura y escribir al margen qué razón queda priorizada, sin convertir esa nota en una clasificación todavía."
+        },
+        {
+          "questionId": "ynng-station-art-02",
+          "likelyMisread": "Tomar la defensa general del arte como una recomendación universal para transformar todas las estaciones.",
+          "evidenceHunt": "Buscar en el segundo párrafo la frase que delimita hasta dónde llega la propuesta y compararla con 'every' y 'gallery'.",
+          "attributionCheck": "Verificar que el límite pertenezca al autor y no sea una objeción atribuida a residentes o autoridades.",
+          "decisionRule": "Tratar los cuantificadores universales como decisivos: la clasificación depende de si el autor acepta, rechaza o deja sin fijar ese alcance total.",
+          "repairAction": "Sustituir mentalmente 'every' por 'some' para detectar cuánto cambia el enunciado y volver luego a la formulación original."
+        },
+        {
+          "questionId": "ynng-station-art-03",
+          "likelyMisread": "Asociar calidad técnica con aceptación vecinal sin atender al contraste entre ambas dimensiones.",
+          "evidenceHunt": "Revisar el ejemplo de obras encargadas sin consulta y observar la relación entre impresión técnica, imposición y recepción local.",
+          "attributionCheck": "Distinguir la evaluación técnica, la posible percepción de los residentes y la valoración del autor sobre el proceso.",
+          "decisionRule": "Comparar el absoluto 'always' con la modalidad real del pasaje; una coexistencia posible no demuestra una relación invariable.",
+          "repairAction": "Dividir el enunciado en dos columnas, 'impresionante' y 'bien recibido', y anotar únicamente el vínculo que el texto expresa entre ellas."
+        },
+        {
+          "questionId": "ynng-station-art-04",
+          "likelyMisread": "Leer la comparación como una regla simple sobre tamaño o precio y olvidar el papel de la participación comunitaria.",
+          "evidenceHunt": "Localizar la oración que contrapone un proyecto modesto desarrollado con grupos comunitarios y una instalación elegida por planificadores distantes.",
+          "attributionCheck": "Confirmar que la comparación forma parte del razonamiento del autor, aunque las decisiones descritas correspondan a autoridades y planificadores.",
+          "decisionRule": "Mantener juntas las tres variables del enunciado —consulta, modestia y distancia del decisor— y no decidir por una sola palabra compartida.",
+          "repairAction": "Parafrasear la comparación sin adjetivos evaluativos y comprobar si conserva la misma dirección y condiciones."
+        },
+        {
+          "questionId": "ynng-station-art-05",
+          "likelyMisread": "Convertir una condición problemática en una descripción de lo que ocurre habitualmente.",
+          "evidenceHunt": "Examinar el párrafo de los críticos y buscar qué se dice cuando el presupuesto artístico sustituye mantenimiento o accesibilidad, además de las alternativas de financiación.",
+          "attributionCheck": "Separar la afirmación inicial de los críticos de la respuesta matizada que el autor construye a continuación.",
+          "decisionRule": "Comprobar por separado existencia, frecuencia y causalidad; que el texto analice un caso no fija necesariamente cuán usual es.",
+          "repairAction": "Rodear 'usually' y exigir una expresión de frecuencia equivalente antes de cerrar la clasificación."
+        },
+        {
+          "questionId": "ynng-station-art-06",
+          "likelyMisread": "Interpretar la tensión entre arte y necesidades urgentes como exclusión automática en todos los casos.",
+          "evidenceHunt": "Buscar el giro que complica esa elección y los ejemplos de subvenciones culturales o arte durante una renovación.",
+          "attributionCheck": "Reconocer primero la crítica reportada y luego identificar dónde el autor responde con posibilidades concretas.",
+          "decisionRule": "Evaluar la modalidad de 'sometimes' frente a los escenarios que el autor admite; no generalizar más allá de esos escenarios.",
+          "repairAction": "Anotar la condición práctica junto a cada ejemplo y comprobar si el enunciado conserva ese grado limitado de posibilidad."
+        },
+        {
+          "questionId": "ynng-station-art-07",
+          "likelyMisread": "Equiparar visibilidad fotográfica con éxito porque ambos términos aparecen próximos en el cierre.",
+          "evidenceHunt": "Releer las dos últimas oraciones y contrastar el criterio fotográfico con los criterios funcionales, locales y de orientación.",
+          "attributionCheck": "Asegurar que los criterios finales expresan la evaluación del autor y no una preferencia de pasajeros citada indirectamente.",
+          "decisionRule": "Comparar la jerarquía y el cuantificador de frecuencia del enunciado con la formulación exacta del autor.",
+          "repairAction": "Crear una lista de criterios mencionados y señalar cuál relación entre ellos está realmente formulada, sin completarla por intuición estética."
+        },
+        {
+          "questionId": "ynng-station-art-08",
+          "likelyMisread": "Inferir una recomendación extrema a partir de la exigencia de no ocultar fallos operativos.",
+          "evidenceHunt": "Revisar el tercer párrafo para identificar qué prueba propone el autor y si aparece una acción concreta de retirar todas las obras.",
+          "attributionCheck": "No convertir la preocupación de los críticos por problemas urgentes en una instrucción emitida por el autor.",
+          "decisionRule": "Distinguir crítica, condición y recomendación explícita; una idea razonable por sentido común no cuenta si el autor no adopta ese alcance.",
+          "repairAction": "Buscar un verbo directivo equivalente a 'remove' y un alcance equivalente a 'all'; si falta alguno, registrar exactamente qué postura no está fijada."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:yes-no-not-given:ynng-remote-work",
+      "passageBarrier": "El autor rechaza dos extremos y propone un modelo intermedio. La dificultad está en no confundir la predicción de comentaristas, las posibles consecuencias del trabajo remoto y la recomendación personal sobre solapamiento, flexibilidad y rediseño urbano.",
+      "titleInfluenceRisk": "high",
+      "shortcutRisks": [
+        "Leer 'need office workers' en el título como defensa de una vuelta obligatoria y permanente a la oficina.",
+        "Convertir ejemplos de nuevos usos urbanos en una jerarquía entre clínicas, aulas y comercios.",
+        "Confundir una consecuencia posible de la asistencia opcional con una afirmación sobre productividad individual."
+      ],
+      "transferValue": "Ayuda a reconocer argumentos de término medio, diferenciar predicción ajena de postura autoral y controlar comparaciones añadidas por el enunciado.",
+      "nextAction": "Hacer una tabla de tres voces: comentaristas, autor y gobiernos o empresas; luego ubicar cada propuesta y marcar si describe obligación, posibilidad o preferencia.",
+      "questionWalkthrough": [
+        {
+          "questionId": "ynng-remote-work-01",
+          "likelyMisread": "Recordar solo la predicción sobre el fin de los distritos centrales y no la evaluación que el autor hace de ella.",
+          "evidenceHunt": "Volver a las dos primeras oraciones y localizar el marcador que introduce la reacción personal ante la conclusión de los comentaristas.",
+          "attributionCheck": "Asignar la predicción a los comentaristas y la valoración de esa predicción al autor antes de comparar el enunciado.",
+          "decisionRule": "La presencia de una opinión reportada no basta: se debe contrastar el adjetivo evaluativo del enunciado con la postura explícita del autor.",
+          "repairAction": "Escribir dos paráfrasis separadas, una para lo que predicen otros y otra para lo que piensa el autor, y no mezclarlas."
+        },
+        {
+          "questionId": "ynng-remote-work-02",
+          "likelyMisread": "Dejarse guiar por el título y convertir la necesidad de cierta presencia en una obligación de cinco días.",
+          "evidenceHunt": "Buscar el párrafo sobre políticas rígidas y compararlo con la propuesta posterior de días comunes y tiempo flexible.",
+          "attributionCheck": "Confirmar que la valoración de la política empresarial pertenece al autor, mientras que la acción hipotética corresponde a las compañías.",
+          "decisionRule": "Comparar número de días, grado de obligación y propósito de asistencia; una preferencia por coordinación no equivale automáticamente a asistencia total.",
+          "repairAction": "Subrayar 'five days', localizar cualquier cifra o frecuencia en el pasaje y revisar si se presenta como mandato, ejemplo o posibilidad."
+        },
+        {
+          "questionId": "ynng-remote-work-03",
+          "likelyMisread": "Confundir el valor social de la oficina con una comparación de productividad entre dos grupos de empleados.",
+          "evidenceHunt": "Revisar las menciones a tareas concentradas en casa, reuniones, mentoría y conversación rápida; buscar una comparación explícita de rendimiento.",
+          "attributionCheck": "Diferenciar lo que el autor concede sobre completar tareas de cualquier afirmación atribuible a empresas o comentaristas.",
+          "decisionRule": "Exigir que estén presentes los dos grupos, la misma medida de productividad y una relación comparativa; no rellenar esos elementos con conocimiento externo.",
+          "repairAction": "Convertir el enunciado en tres casillas —grupo A, grupo B, medida— y registrar cuál de ellas queda sin formulación textual."
+        },
+        {
+          "questionId": "ynng-remote-work-04",
+          "likelyMisread": "Fijarse solo en que el autor critica la asistencia obligatoria y asumir que cualquier flexibilidad produce el mismo resultado.",
+          "evidenceHunt": "Leer la transición entre la política rígida y el problema que puede surgir cuando nadie sabe cuándo estarán los colegas.",
+          "attributionCheck": "Identificar como razonamiento del autor la consecuencia propuesta, sin adjudicársela a empleados concretos ni a comentaristas.",
+          "decisionRule": "Comparar el alcance de 'completely optional' y el tipo de utilidad de la oficina; no sustituirlo por una opinión general sobre flexibilidad.",
+          "repairAction": "Trazar una cadena breve entre previsibilidad, coincidencia de colegas y función del lugar compartido; comprobar solo los vínculos escritos."
+        },
+        {
+          "questionId": "ynng-remote-work-05",
+          "likelyMisread": "Tomar la idea de proteger los centros urbanos como conservación literal de sus hábitos anteriores.",
+          "evidenceHunt": "Buscar la recomendación dirigida a gobiernos y los ejemplos de mezcla de usos, adaptación de locales y ajuste de calles.",
+          "attributionCheck": "Separar el papel asignado a los gobiernos de la postura del autor sobre cómo deberían ejercerlo.",
+          "decisionRule": "Contrastar el absoluto 'exactly as they were' con los verbos de cambio o preservación empleados por el autor.",
+          "repairAction": "Hacer dos columnas, 'mantener' y 'transformar', y colocar solo acciones explícitas del pasaje antes de comparar."
+        },
+        {
+          "questionId": "ynng-remote-work-06",
+          "likelyMisread": "Interpretar una lista de usos posibles como una preferencia comparativa frente a las tiendas.",
+          "evidenceHunt": "Releer la oración sobre locales vacíos y comprobar si los usos enumerados se ordenan, comparan o solo ejemplifican.",
+          "attributionCheck": "Atribuir al autor la propuesta de diversificación, pero no añadir una valoración de superioridad que podría no haber formulado.",
+          "decisionRule": "Una comparación requiere criterio y dirección explícitos; compartir una lista temática no establece por sí solo qué opción es mejor.",
+          "repairAction": "Rodear 'better than' y buscar un comparativo equivalente en el pasaje; si no aparece, precisar qué comparación queda sin establecer."
+        },
+        {
+          "questionId": "ynng-remote-work-07",
+          "likelyMisread": "Reducir la conclusión a 'la proximidad importa' y omitir la condición sobre cuándo y para qué debe usarse.",
+          "evidenceHunt": "Contrastar el último párrafo con la propuesta de solapamiento predecible y con la diferencia entre tareas sociales y concentradas.",
+          "attributionCheck": "Verificar que la recomendación final está en la voz del autor y no es una predicción de los comentaristas del inicio.",
+          "decisionRule": "Comparar la oposición entre uso deliberado y aplicación automática; preservar la modalidad y el propósito exactos.",
+          "repairAction": "Completar la frase neutral 'la proximidad sirve cuando...' usando solo el pasaje y comprobar si el enunciado conserva ese límite."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:yes-no-not-given:ynng-school-uniforms",
+      "passageBarrier": "El pasaje presenta primero las voces de partidarios y opositores, concede una parte a ambas y después redefine los problemas centrales. El estudiante puede confundir esas voces con la del autor o transformar ejemplos condicionales sobre desigualdad, identidad y coste en generalizaciones.",
+      "titleInfluenceRisk": "medium",
+      "shortcutRisks": [
+        "Usar la palabra 'careful' del título para asumir una neutralidad total del autor.",
+        "Elegir por coincidencia temática entre igualdad, identidad o coste sin revisar absolutos y comparativos.",
+        "Atribuir al autor los eslóganes iniciales de partidarios u opositores."
+      ],
+      "transferValue": "Fortalece la lectura de argumentos con concesiones: permite separar voces enfrentadas, distinguir ejemplo de frecuencia y detectar cómo absolutos o comparativos alteran el alcance.",
+      "nextAction": "Pedir al estudiante que etiquete cada oración como voz de partidarios, opositores, escuelas o autor; después, que reformule cada enunciado eliminando sus absolutos para notar qué cambian.",
+      "questionWalkthrough": [
+        {
+          "questionId": "ynng-uniforms-01",
+          "likelyMisread": "Asumir que los dos eslóganes iniciales son las conclusiones del autor y pasar por alto su evaluación conjunta.",
+          "evidenceHunt": "Releer las tres primeras oraciones y seguir el movimiento desde las posiciones de partidarios y opositores hasta la valoración personal.",
+          "attributionCheck": "Mantener separadas las dos voces reportadas y reservar para el autor únicamente la evaluación introducida después.",
+          "decisionRule": "Comparar si el enunciado describe la postura del autor sobre ambos lados, no si reproduce correctamente lo que dice cada bando.",
+          "repairAction": "Dibujar tres etiquetas —partidarios, opositores, autor— y asignar una sola oración a cada una antes de clasificar."
+        },
+        {
+          "questionId": "ynng-uniforms-02",
+          "likelyMisread": "Detenerse en el beneficio real de reducir competencia visible y convertirlo en solución completa de la desigualdad.",
+          "evidenceHunt": "Leer todo el segundo párrafo, incluidos los ejemplos de zapatos, teléfonos y bolsos y la caracterización final de la herramienta.",
+          "attributionCheck": "Confirmar que tanto la concesión del beneficio como su límite forman parte del razonamiento del autor.",
+          "decisionRule": "Contrastar el absoluto 'completely' con el alcance que el autor concede; no ignorar una limitación por aparecer después del beneficio.",
+          "repairAction": "Subrayar primero la concesión y después su límite, y resumir ambos en una sola frase equilibrada."
+        },
+        {
+          "questionId": "ynng-uniforms-03",
+          "likelyMisread": "Confundir la objeción atribuida a opositores con la postura final del autor sobre las formas de expresar identidad.",
+          "evidenceHunt": "Revisar el inicio y el tercer párrafo, donde se enumeran otras vías de identidad y se redefine la preocupación más seria.",
+          "attributionCheck": "Asignar la idea de borrar individualidad a los opositores y comprobar por separado cómo responde el autor.",
+          "decisionRule": "Los absolutos 'cannot' y 'any way' deben cotejarse con todos los medios de expresión mencionados, no solo con la ropa.",
+          "repairAction": "Listar las vías de identidad descritas y volver a leer el enunciado conservando su alcance total."
+        },
+        {
+          "questionId": "ynng-uniforms-04",
+          "likelyMisread": "Tratar cualquier pérdida de expresión y la aplicación desigual como problemas equivalentes, sin atender a la jerarquía argumentativa.",
+          "evidenceHunt": "Localizar en el tercer párrafo el contraste entre la objeción que el autor descarta como la más fuerte y la preocupación que presenta como más seria.",
+          "attributionCheck": "Diferenciar lo que suelen decir los opositores de la comparación de gravedad formulada por el autor.",
+          "decisionRule": "Comparar exactamente las dos preocupaciones y la relación jerárquica entre ellas; no sustituir una por el tema general de identidad.",
+          "repairAction": "Escribir 'objeción A' y 'preocupación B' con sus dueños y buscar el marcador comparativo que las ordena."
+        },
+        {
+          "questionId": "ynng-uniforms-05",
+          "likelyMisread": "Convertir el ejemplo de comprar a un único proveedor en una estadística sobre la mayoría de las escuelas.",
+          "evidenceHunt": "Releer el párrafo de costes y distinguir las condiciones bajo las cuales una política puede ahorrar o encarecer.",
+          "attributionCheck": "Comprobar que las escuelas aparecen como actores de ciertas suposiciones o reglas, mientras el autor evalúa sus efectos posibles.",
+          "decisionRule": "No derivar frecuencia poblacional de un ejemplo condicional; exigir evidencia separada para 'most schools'.",
+          "repairAction": "Rodear el cuantificador de mayoría y buscar una medida de frecuencia equivalente, registrando si el pasaje solo ofrece una situación posible."
+        },
+        {
+          "questionId": "ynng-uniforms-06",
+          "likelyMisread": "Tomar las críticas detalladas a las políticas como rechazo absoluto de cualquier uniforme.",
+          "evidenceHunt": "Ir al último párrafo y leer juntas la declaración personal y las condiciones propuestas para una buena política.",
+          "attributionCheck": "Asegurar que la declaración final pertenece directamente al autor, no a partidarios, opositores o escuelas.",
+          "decisionRule": "Comparar el alcance de 'completely opposed' con la distinción del autor entre la institución y su uso como atajo moral.",
+          "repairAction": "Separar en dos preguntas: postura sobre uniformes y postura sobre cómo se diseñan; contestarlas solo con formulaciones explícitas del texto."
+        },
+        {
+          "questionId": "ynng-uniforms-07",
+          "likelyMisread": "Recordar la palabra 'flexible' como aprobación general y no comprobar los ámbitos concretos a los que se aplica.",
+          "evidenceHunt": "Releer la última oración y localizar las condiciones vinculadas con identidad, asequibilidad, claridad y disciplina.",
+          "attributionCheck": "Confirmar que la recomendación normativa está formulada por el autor y que las áreas mencionadas no son ejemplos de los dos bandos iniciales.",
+          "decisionRule": "Comparar cada ámbito nombrado en el enunciado con el alcance de la flexibilidad recomendada; evitar decidir por una sola coincidencia léxica.",
+          "repairAction": "Unir con flechas cada principio de política a su condición concreta y verificar la relación completa antes de clasificar."
+        }
+      ]
+    }
+  ]
+}

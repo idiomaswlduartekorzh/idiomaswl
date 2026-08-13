@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "ielts-reading-summary-completion-provenance-search.v1",
+  "searchedAt": "2026-08-11T15:05:00Z",
+  "method": "Directed exact-title plus exact opening-fragment public-web search. Returned result surfaces were reviewed for verbal identity; candidate factual URLs were kept separate from provenance identity and were not treated as proof of authorship or license.",
+  "searchSurface": "public web search",
+  "queries": [
+    {
+      "assetId": "formative:summary-completion:summary-urban-farms",
+      "query": "\"Rooftop farms in modern cities\" \"Rooftop farming has become more visible in several large cities\"",
+      "resultsReviewed": [
+        {
+          "title": "Microclimate Farming: Rooftop Orchards for Urban Food",
+          "url": "https://www.nogg.co/page/2",
+          "reasonNotExactMatch": "The result discusses rooftop agriculture and microclimates but does not match the exact title, opening fragment or passage identity."
+        },
+        {
+          "title": "City of Forests, City of Farms: Sustainability Planning for New York City's Nature",
+          "url": "https://dokumen.pub/city-of-forests-city-of-farms-sustainability-planning-for-new-york-citys-nature-9781501714795-9781501707506.html",
+          "reasonNotExactMatch": "The result discusses rooftop farms and lightweight soils but does not match the exact title, opening fragment or passage identity. It is not used as a rights or factual source."
+        }
+      ],
+      "candidateFactualSourcesCompared": [
+        "https://www.fao.org/urban-peri-urban-agriculture/about/en",
+        "https://www.nps.gov/articles/000/green-roofs-on-historic-buildings-physical-impact.htm",
+        "https://www.nyc.gov/site/buildings/codes/green-roofs.page",
+        "https://www.epa.gov/green-infrastructure/prepare-drought",
+        "https://portal.nifa.usda.gov/web/crisprojectpages/1021530-outcomes-of-urban-agriculture-education-in-new-york-city.html"
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    },
+    {
+      "assetId": "formative:summary-completion:summary-repair-cafes",
+      "query": "\"Community repair cafes\" \"Repair cafes began as informal meetings where residents brought broken household objects\"",
+      "resultsReviewed": [
+        {
+          "title": "News and Views — Faringdon Community Website",
+          "url": "https://www.faringdon.org/newsviewsevents.html",
+          "reasonNotExactMatch": "The result mentions a local Repair Cafe event and volunteers but does not match the exact title, opening fragment or passage identity."
+        },
+        {
+          "title": "Repair Café International — About Repair Café",
+          "url": "https://www.repaircafe.org/en/about/",
+          "reasonNotExactMatch": "The primary organization page is factually related but does not match the passage title, opening wording or complete passage identity; it does not prove authorship or license."
+        }
+      ],
+      "candidateFactualSourcesCompared": [
+        "https://www.repaircafe.org/en/about/",
+        "https://www.repaircafe.org/en/house-rules/",
+        "https://www.repaircafe.org/en/faq/",
+        "https://www.repaircafe.org/en/foundation/"
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    },
+    {
+      "assetId": "formative:summary-completion:summary-shade-mapping",
+      "query": "\"Mapping shade in hot cities\" \"As heatwaves become more common, some cities are mapping shade\"",
+      "resultsReviewed": [
+        {
+          "title": "Welcome to Earth in the Future — Heatwaves",
+          "url": "https://courses.ems.psu.edu/earth103/book/export/html/2",
+          "reasonNotExactMatch": "The course page discusses heatwaves and urban heat but does not match the exact title, opening fragment or passage identity."
+        },
+        {
+          "title": "Coventry Climate Change Strategy — Heat and Drought",
+          "url": "https://www.coventry.gov.uk/climate-change/climate-change-strategy/print",
+          "reasonNotExactMatch": "The strategy discusses heatwaves, shade and vulnerable groups but does not match the exact title, opening fragment or passage identity."
+        }
+      ],
+      "candidateFactualSourcesCompared": [
+        "https://science.nasa.gov/climate-change/extreme-weather/",
+        "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P101AXFE.txt",
+        "https://news.utexas.edu/2021/06/29/ut-austin-teams-up-with-city-and-community-to-fight-extreme-heat-in-austin/",
+        "https://www.rmit.edu.au/news/all-news/2019/dec/smart-city-tech-keeps-bendigo-cool-mapping-hot-spots",
+        "https://www.phoenix.gov/administration/departments/heat/tree-shade-programs.html"
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    }
+  ],
+  "interpretation": "This was a directed and non-exhaustive search. No exact match in the reviewed public-web result surface does not prove originality, authorship, clearance or universal absence of a prior source. It did not cover licensed databases, print-only works, deleted pages, translations, private documents, drafts or extensive paraphrase. Candidate factual sources were selected for later claim review; topical relevance or HTTP availability does not verify learner-facing claims, passage identity, authorship or rights."
+}

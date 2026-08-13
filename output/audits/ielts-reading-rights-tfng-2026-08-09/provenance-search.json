@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "ielts-reading-tfng-provenance-search.v1",
+  "searchedAt": "2026-08-09T04:57:00-05:00",
+  "method": "Directed web search using each visible title plus its normalized first sentence in quotation marks; results were reviewed for an exact title-and-text match.",
+  "searchSurface": "OpenAI web search over the public web; result ranking is dynamic and this ledger records only the reviewed results, not a reproducible universal index.",
+  "queries": [
+    {
+      "assetId": "formative:true-false-not-given:tfng-set-urban-trees",
+      "query": "\"Urban trees and heat risk\" \"For many years, urban planners treated city trees mainly as decoration\"",
+      "resultsReviewed": [
+        {
+          "title": "Multilingual corpus collection — English news data",
+          "url": "https://cst.dk/mulinco/corpus_collection/MLCC/ENGLISH.NWS/data/nen2aa",
+          "exactMatch": false,
+          "relevanceNote": "Contains unrelated historical wording about decorative trees; neither the title nor the passage sequence matches."
+        },
+        {
+          "title": "US EPA — Using Trees and Vegetation to Reduce Heat Islands",
+          "url": "https://www.epa.gov/heatislands/using-trees-and-vegetation-reduce-heat-islands",
+          "exactMatch": false,
+          "relevanceNote": "Relevant to factual themes but not an exact title-and-text provenance match."
+        }
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    },
+    {
+      "assetId": "formative:true-false-not-given:tfng-set-school-libraries",
+      "query": "\"School libraries after class\" \"Several secondary schools have kept their libraries open after regular lessons\"",
+      "resultsReviewed": [
+        {
+          "title": "Chesterfield County — Boost School Skills and Confidence with These Free Learning Tools",
+          "url": "https://www.chesterfield.gov/m/newsflash?cat=145&searchTerms=va+cou",
+          "exactMatch": false,
+          "relevanceNote": "Discusses school and library study resources but does not match the title, first sentence or narrated case."
+        },
+        {
+          "title": "UK Parliament — Written Answers, 13 June 2007",
+          "url": "https://hansard.parliament.uk/%E2%80%8CCommons/2007-06-13/debates/5d6abbb1-90e0-4413-a0ed-a6239b104877/WrittenAnswers",
+          "exactMatch": false,
+          "relevanceNote": "Contains unrelated secondary-school policy material; no title or passage-sequence match."
+        }
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    },
+    {
+      "assetId": "formative:true-false-not-given:tfng-set-coastal-paths",
+      "query": "\"Coastal walking paths\" \"A coastal town redesigned part of its walking path after winter storms\"",
+      "resultsReviewed": [
+        {
+          "title": "Rosa Mediterranean Houses — Green Areas and Running Trails",
+          "url": "https://www.rosamh.com/en/Publications/s5/3391/",
+          "exactMatch": false,
+          "relevanceNote": "Mentions coastal paths but does not match the title, first sentence or storm-damage narrative."
+        },
+        {
+          "title": "Sea You Port Saplaya — Blog",
+          "url": "https://www.portsaplaya.com/en/blog.html",
+          "exactMatch": false,
+          "relevanceNote": "Contains general coastal walking content but no exact text or case match."
+        }
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    }
+  ],
+  "interpretation": "This is a directed, non-exhaustive search log. No exact match was located in the reviewed results, but that negative result does not prove originality, authorship, ownership, authorization or universal absence of a prior source."
+}

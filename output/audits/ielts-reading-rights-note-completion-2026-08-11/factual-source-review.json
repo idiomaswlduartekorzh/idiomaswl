@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "ielts-reading-note-completion-factual-source-review.v1",
+  "generatedAt": "2026-08-11T16:15:28Z",
+  "reviewScope": "F0.2b.10 — second-pass factual-source review only",
+  "reviewerIsolation": "Open only after expert-first-pass.json is persisted and hashed. Do not change any completion decision after opening these sources.",
+  "prerequisiteHashes": {
+    "promptOnlyVerdict": "724907711e96c8240c0bfe2f7e73646550944362e5229b3e76e82dcdcb3b916e",
+    "expertFirstPass": "c694ec40809f26f6fecb2910802b61f76f84e23b826e15c4d44106eda7783f29"
+  },
+  "instruction": "Open every source directly. Assess each exact claim as supported, oversimplified, unsupported or untraceable. Availability and candidacy do not prove facts, authorship, license, authorization or review.",
+  "excludes": [
+    "answer keys",
+    "accepted alternatives",
+    "explanations",
+    "hints",
+    "prior answer verdicts",
+    "student data"
+  ],
+  "records": [
+    {
+      "assetId": "formative:note-completion:note-mobile-libraries",
+      "claimSpansToReview": [
+        "mobile libraries have become a practical way to keep reading services available when permanent branches are too expensive to maintain.",
+        "vans carry books, magazines and digital materials to schools, markets and community halls on a regular schedule.",
+        "In farming areas, visits are often arranged after market days",
+        "a predictable timetable matters as much as the size of the collection",
+        "Fuel, vehicle repairs and trained staff all create costs that may rise faster than local budgets."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "note-mobile-nsw-outreach-report",
+          "label": "State Library of New South Wales — Mobile and Outreach Services report",
+          "url": "https://pls.sl.nsw.gov.au/sites/default/files/2023-09/mobile_outreach_services.pdf",
+          "note": "Fuente sectorial candidata sobre acceso para personas que no llegan a una sucursal, costes operativos y necesidades de personal. No demuestra que mantener sucursales fijas sea siempre demasiado caro ni verifica el pasaje."
+        },
+        {
+          "evidenceId": "note-mobile-wingecarribee-timetable",
+          "label": "Wingecarribee Shire Council — Mobile Library",
+          "url": "https://library.wsc.nsw.gov.au/explore/mobile-library/",
+          "note": "Ejemplo municipal candidato con libros, revistas y un horario periódico. No sustenta el conjunto exacto de escuelas, mercados y community halls ni una regla universal."
+        },
+        {
+          "evidenceId": "note-mobile-derbyshire-village-hall-stops",
+          "label": "Derbyshire County Council — Mobile libraries",
+          "url": "https://www.derbyshire.gov.uk/leisure/libraries/services/mobile-libraries/mobile-libraries.aspx",
+          "note": "Ejemplo oficial candidato de paradas junto a village halls. No acredita mercados, escuelas ni el claim combinado del pasaje."
+        },
+        {
+          "evidenceId": "note-mobile-nsw-library-partnerships",
+          "label": "State Library of New South Wales — Programs and partnerships",
+          "url": "https://pls.sl.nsw.gov.au/managing-my-library/buildings-and-spaces/people-places/influence/programs-and-partnerships",
+          "note": "Orientación institucional candidata sobre alianzas de bibliotecas. No demuestra la cadena causal ni el trío exacto schools, health centres and volunteer groups para mobile libraries."
+        },
+        {
+          "evidenceId": "note-mobile-australia-public-library-guidelines",
+          "label": "Australian Public Library Alliance — Guidelines, standards and outcome measures",
+          "url": "https://content.plconnect.slq.qld.gov.au/sites/default/files/APLAALIA-guidelinesstandardsoutcomemeasures-2016.pdf",
+          "note": "Guía sectorial candidata que trata escuelas, servicios de salud y voluntariado en bibliotecas públicas. No convierte esos ejemplos en una condición universal de éxito ni concede licencia sobre el pasaje."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan casos de outreach, horarios, paradas, costes y alianzas, pero no verifican market days, la comparación “as much as”, el conjunto exacto de destinos o una cadena causal universal. Disponibilidad no prueba autoría, licencia, hechos ni revisión humana."
+    },
+    {
+      "assetId": "formative:note-completion:note-seed-banks",
+      "claimSpansToReview": [
+        "farmers can borrow, grow and return after harvest",
+        "Many of these varieties have been selected over generations for taste, drought tolerance or resistance to local pests.",
+        "Volunteers record the name of each seed, the place where it was collected and the conditions in which it usually grows well.",
+        "Seeds must be kept dry, cool and protected from insects.",
+        "Bank managers also test older seeds by planting a small sample; if too few germinate, the variety must be multiplied before the supply disappears."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "note-seed-fao-borrow-return",
+          "label": "FAO — Community seed bank borrowing and return after harvest",
+          "url": "https://www.fao.org/4/ac546e/ac546e07.htm",
+          "note": "Fuente oficial candidata que documenta préstamo antes de sembrar y devolución después de la cosecha en un contexto local. Las condiciones y cantidades varían entre bancos."
+        },
+        {
+          "evidenceId": "note-seed-cgiar-community-adaptation",
+          "label": "CGIAR — Community seed banks and local climate adaptation",
+          "url": "https://www.cgiar.org/news-events/news/planting-seeds-of-hope-community-seed-banks-empower-farmers-and-address-climate-risk-in-india",
+          "note": "Fuente institucional candidata sobre variedades locales, diversidad y adaptación climática. No sustenta conjuntamente valleys, islands, taste y selección multigeneracional."
+        },
+        {
+          "evidenceId": "note-seed-croptrust-registration",
+          "label": "CGIAR Genebank Platform — Registration procedures",
+          "url": "https://cgkb.cgiar.croptrust.org/images/file/procedures/chapter_registration_%20genebankmanual8.pdf",
+          "note": "Manual técnico candidato sobre nombre de accesión, sitio de recolección, origen y otros descriptores. No demuestra que voluntarios de todo community seed bank sigan exactamente ese flujo."
+        },
+        {
+          "evidenceId": "note-seed-fao-storage",
+          "label": "FAO — Seed storage conditions",
+          "url": "https://www.fao.org/4/AD226E/AD226E06.htm",
+          "note": "Fuente oficial candidata sobre almacenamiento seco y fresco, contenedores y protección contra insectos y hongos. Existen diferencias por especie y tipo de semilla."
+        },
+        {
+          "evidenceId": "note-seed-fao-viability-regeneration",
+          "label": "FAO — Seed germination testing and regeneration timing",
+          "url": "https://www.fao.org/4/x6109e/x6109e06.htm",
+          "note": "Fuente oficial candidata sobre pruebas de germinación en muestras y decisiones de regeneración. Simplifica prácticas de genebank que no necesariamente se aplican igual a todo community seed bank."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan préstamo y devolución, adaptación local, documentación, almacenamiento y pruebas de germinación, pero no verifican cada geografía, rasgo, actor o práctica como universal de todo community seed bank. Disponibilidad no prueba autoría, licencia ni revisión humana."
+    },
+    {
+      "assetId": "formative:note-completion:note-night-libraries",
+      "claimSpansToReview": [
+        "opening selected rooms in the evening for students who do not have quiet places to work at home.",
+        "visitors can use desks, power sockets and wireless internet, but borrowing counters, children's areas and archives remain closed.",
+        "Libraries usually start with a pilot programme before extending evening access.",
+        "A small pilot also reveals practical issues, such as poor lighting outside the building or a shortage of cleaning staff after closing time.",
+        "Younger students may need parental permission"
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "note-night-tasmania-open-library-trial",
+          "label": "Tasmanian Government — Open Library Access trial",
+          "url": "https://www.premier.tas.gov.au/latest-news/2024/september/open-library-access-trial-to-commence-in-2025",
+          "note": "Ejemplo gubernamental candidato de horario extendido, estudio silencioso, prueba temporal, seguridad y consentimiento de guardianes. No demuestra el protocolo universal descrito."
+        },
+        {
+          "evidenceId": "note-night-nsw-extended-study-hours",
+          "label": "State Library of New South Wales — Extended study hours",
+          "url": "https://www.sl.nsw.gov.au/news/extended-study-hours-students",
+          "note": "Ejemplo institucional candidato de horas de estudio extendidas y acceso parcial a espacios. No verifica falta de espacio tranquilo en casa ni una configuración uniforme de servicios."
+        },
+        {
+          "evidenceId": "note-night-albany-after-hours-study",
+          "label": "City of Albany — After-hours study space",
+          "url": "https://library.albany.wa.gov.au/news/library-launches-after-hours-study-space/964",
+          "note": "Ejemplo municipal candidato con espacio asegurado, Wi-Fi y requisitos de permiso para menores. No sustenta el paquete universal de counters, children’s areas y archives."
+        },
+        {
+          "evidenceId": "note-night-kuringgai-foyer",
+          "label": "Ku-ring-gai Council — Library After Hours Foyer",
+          "url": "https://www.krg.nsw.gov.au/Community/Ku-ring-gai-Library/Library-After-Hours/Library-After-Hours-Foyer",
+          "note": "Ejemplo municipal candidato de acceso after-hours con Wi-Fi y límites de equipos y servicios. Muestra variación entre sedes, no el bundle exacto del pasaje."
+        },
+        {
+          "evidenceId": "note-night-ryde-opening-trial",
+          "label": "City of Ryde — Extended opening trial",
+          "url": "https://www.ryde.nsw.gov.au/Council/Media-Centre/News-and-Public-Notices/Eastwood-Library-begins-exciting-247-opening-trial",
+          "note": "Ejemplo municipal candidato de prueba de doce meses, controles de seguridad y feedback. No establece que las bibliotecas usually midan exactamente las variables o adopten la decisión descrita."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan ejemplos de acceso extendido, espacios de estudio, seguridad, servicios parciales, pruebas y permiso de guardianes, pero no verifican prevalencia, el bundle exacto, los conteos operativos ni cleaning staff. Disponibilidad no prueba autoría, licencia ni revisión humana."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "ielts-reading-matching-information-report-verification.v1",
+  "verifiedAt": "2026-08-09T14:48:00Z",
+  "command": "node deliver_portable_artifact.mjs --input output/audits/ielts-reading-rights-matching-information-2026-08-09/artifact.json --output output/audits/ielts-reading-rights-matching-information-2026-08-09/report.html",
+  "stages": {
+    "validation": "passed",
+    "package": "passed",
+    "verification": "passed"
+  },
+  "viewports": [
+    1440,
+    390
+  ],
+  "counts": {
+    "cards": 4,
+    "charts": 2,
+    "tables": 2,
+    "blocks": 18
+  },
+  "sha256": {
+    "validation": "a2a88814b52aee7ce376efd674a1758339ad9f9df5ed00738269a7d5ace09741",
+    "auditVerdicts": "c4987f15670dc72c49fb5586ee4421edfe76a29cb677e04fab812958d7b59702",
+    "artifact": "22f00e5eba79804d7ad8ab9e685b80ff323f003b3dc62cf41a2616f93c2edf6f",
+    "reportMarkdown": "37ea52fbdf96de6e3687157d865c4bfbfd4a3efac7859ca6815dfa9b6cf9b3b0",
+    "reportHtml": "48999e9e1b8a66e92b417e80b588955650393c5b4abd6326f1e483b0590c68cc"
+  },
+  "interpretation": "Chromium verified the portable stakeholder report only at 1440 and 390 pixels; this is report only, not learner-facing Playwright evidence, and it does not certify the Matching Information product UI."
+}

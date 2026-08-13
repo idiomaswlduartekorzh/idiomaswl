@@ -1,0 +1,46 @@
+{
+  "capturedAt": "2026-08-09",
+  "baseUrl": "http://localhost:3001",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "correctSelection": {
+    "selected": "FALSE",
+    "httpStatus": 200,
+    "showsExplanation": true,
+    "firstGroupDisabled": [true, true, true],
+    "progressShowsOneOfEight": true,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "reload": {
+    "showsExplanation": false,
+    "firstGroupDisabled": [false, false, false],
+    "progressShowsOneOfEight": false
+  },
+  "deliberateError": {
+    "selected": "TRUE",
+    "disabled": true,
+    "feedback": "✗ La respuesta es FALSE. \"Mainly in Brazil\" but also extends into other South American countries — so \"exclusively\" is FALSE."
+  },
+  "pageerrorsDuringControlledReload": [],
+  "console": {
+    "uniqueErrors": 1,
+    "error": "GTM tries to load https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js, which the site CSP blocks.",
+    "failedRequestsObserved": 4,
+    "failedRequestReason": "csp",
+    "note": "The same third-party request was attempted after each navigation/reload; this is a real baseline error, not HMR instrumentation."
+  },
+  "commands": [
+    "playwright-cli --session reading-baseline-localhost open http://localhost:3001/practica/ielts/reading",
+    "playwright-cli --session reading-baseline-localhost click e55",
+    "playwright-cli --session reading-baseline-localhost eval <status, explanation, disabled, progress, overflow>",
+    "playwright-cli --session reading-baseline-localhost reload",
+    "playwright-cli --session reading-baseline-localhost eval <explanation, disabled, progress>",
+    "playwright-cli --session reading-baseline-localhost run-code <deliberate wrong answer and feedback>",
+    "playwright-cli --session reading-baseline-localhost run-code <pageerror listener and controlled reload>",
+    "playwright-cli --session reading-baseline-localhost console warning",
+    "playwright-cli --session reading-baseline-localhost requests"
+  ]
+}

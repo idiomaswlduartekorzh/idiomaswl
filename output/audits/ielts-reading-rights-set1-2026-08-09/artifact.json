@@ -1,0 +1,654 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "IELTS Academic Reading — set-1 rights gate",
+    "description": "Technical F0.2a report for source identity, evidence scope and deny-by-default behavior.",
+    "generatedAt": "2026-08-09T00:00:00-05:00",
+    "cards": [
+      {
+        "id": "assets",
+        "description": "Reading sections in the scoped mock.",
+        "dataset": "summary",
+        "sourceId": "rights_summary_query",
+        "metrics": [
+          {
+            "label": "Scoped assets",
+            "field": "assets",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "quarantined",
+        "description": "Assets denied entry to the publication pipeline.",
+        "dataset": "summary",
+        "sourceId": "rights_summary_query",
+        "metrics": [
+          {
+            "label": "Quarantined",
+            "field": "quarantined",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "blockers",
+        "description": "Distinct unresolved contract gates.",
+        "dataset": "summary",
+        "sourceId": "rights_summary_query",
+        "metrics": [
+          {
+            "label": "Blocker types",
+            "field": "blockerTypes",
+            "format": "number"
+          }
+        ]
+      }
+    ],
+    "charts": [
+      {
+        "id": "blockers_by_gate",
+        "title": "Every set-1 passage remains blocked by five independent gates",
+        "subtitle": "Question: what prevents advancement? Each bar counts affected assets; no bar is a legal conclusion.",
+        "type": "bar",
+        "dataset": "blocker_counts",
+        "sourceId": "rights_blocker_query",
+        "valueFormat": "number",
+        "encodings": {
+          "x": {
+            "field": "reasonCode",
+            "type": "nominal",
+            "label": "Unresolved gate"
+          },
+          "y": {
+            "field": "affectedAssets",
+            "type": "quantitative",
+            "label": "Affected assets"
+          }
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "asset_decisions",
+        "title": "Per-asset decision ledger",
+        "subtitle": "Hashes pin identity; probable matching never becomes authorization.",
+        "dataset": "decisions",
+        "sourceId": "rights_decision_query",
+        "defaultSort": {
+          "field": "assetId",
+          "direction": "asc"
+        },
+        "density": "dense",
+        "layout": "full",
+        "columns": [
+          {
+            "field": "assetId",
+            "label": "Asset",
+            "type": "text"
+          },
+          {
+            "field": "title",
+            "label": "Observed title",
+            "type": "text"
+          },
+          {
+            "field": "moduleStatus",
+            "label": "Module",
+            "type": "text"
+          },
+          {
+            "field": "provenanceStatus",
+            "label": "Provenance",
+            "type": "text"
+          },
+          {
+            "field": "rightsBasis",
+            "label": "Rights basis",
+            "type": "text"
+          },
+          {
+            "field": "humanReviewStatus",
+            "label": "Human review",
+            "type": "text"
+          },
+          {
+            "field": "disposition",
+            "label": "Disposition",
+            "type": "text"
+          },
+          {
+            "field": "blockers",
+            "label": "Blocking gates",
+            "type": "text"
+          },
+          {
+            "field": "sourceObjectSha256",
+            "label": "Object SHA-256",
+            "type": "text"
+          },
+          {
+            "field": "passageSha256",
+            "label": "Passage SHA-256",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "id": "evidence_reviewed",
+        "title": "Evidence reviewed",
+        "subtitle": "Identification sources are not license documents.",
+        "dataset": "evidence",
+        "sourceId": "rights_evidence_query",
+        "defaultSort": {
+          "field": "id",
+          "direction": "asc"
+        },
+        "columns": [
+          {
+            "field": "id",
+            "label": "Evidence ID",
+            "type": "text"
+          },
+          {
+            "field": "kind",
+            "label": "Kind",
+            "type": "text"
+          },
+          {
+            "field": "label",
+            "label": "Label",
+            "type": "text"
+          },
+          {
+            "field": "location",
+            "label": "Location",
+            "type": "text"
+          },
+          {
+            "field": "accessedAt",
+            "label": "Reviewed",
+            "type": "text"
+          },
+          {
+            "field": "note",
+            "label": "Scope note",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "id": "audit_verdicts",
+        "title": "Independent panel verdicts",
+        "subtitle": "Verdicts apply only to F0.2a, not to content quality, legality or publication.",
+        "dataset": "audit",
+        "sourceId": "rights_audit_query",
+        "defaultSort": {
+          "field": "lane",
+          "direction": "asc"
+        },
+        "columns": [
+          {
+            "field": "lane",
+            "label": "Lane",
+            "type": "text"
+          },
+          {
+            "field": "verdict",
+            "label": "Verdict",
+            "type": "text"
+          },
+          {
+            "field": "scope",
+            "label": "Scope",
+            "type": "text"
+          },
+          {
+            "field": "findings",
+            "label": "Findings",
+            "type": "text"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "rights_validation",
+        "label": "Executable F0.2a validation result",
+        "path": "output/audits/ielts-reading-rights-set1-2026-08-09/validation.json"
+      },
+      {
+        "id": "blind_review_packet",
+        "label": "Key-free F0.2a review packet",
+        "path": "output/audits/ielts-reading-rights-set1-2026-08-09/blind-review.json"
+      },
+      {
+        "id": "audit_verdicts",
+        "label": "Independent panel verdicts",
+        "path": "output/audits/ielts-reading-rights-set1-2026-08-09/audit-verdicts.json"
+      },
+      {
+        "id": "ielts_copyright_policy",
+        "label": "IELTS copyright and trade mark statement",
+        "url": "https://ielts.org/legal/ielts-copyright-and-trade-mark-statement"
+      },
+      {
+        "id": "cambridge_catalog",
+        "label": "Cambridge ELT catalogue — Cambridge IELTS 5",
+        "url": "https://www.cambridge.org/elt/order/catalogue/Exams.pdf"
+      },
+      {
+        "id": "rights_summary_query",
+        "label": "F0.2a coverage and disposition summary",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT\n  scope.registryEntries AS assets,\n  COUNT(*) FILTER (WHERE decision.disposition = 'quarantine') AS quarantined,\n  list_count(blockerCounts) AS blockerTypes,\n  checks.actualAssetsAllQuarantined AS denyByDefault\nFROM read_json_auto('output/audits/ielts-reading-rights-set1-2026-08-09/validation.json') AS report,\nUNNEST(report.decisions) AS rows(decision)\nGROUP BY ALL;",
+          "description": "F0.2a coverage and disposition summary",
+          "executed_at": "2026-08-09T00:00:00-05:00",
+          "tables_used": [
+            "output/audits/ielts-reading-rights-set1-2026-08-09/validation.json"
+          ]
+        }
+      },
+      {
+        "id": "rights_blocker_query",
+        "label": "Unresolved gates by affected asset count",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT blocker.reasonCode, blocker.affectedAssets\nFROM read_json_auto('output/audits/ielts-reading-rights-set1-2026-08-09/validation.json') AS report,\nUNNEST(report.blockerCounts) AS rows(blocker);",
+          "description": "Unresolved gates by affected asset count",
+          "executed_at": "2026-08-09T00:00:00-05:00",
+          "tables_used": [
+            "output/audits/ielts-reading-rights-set1-2026-08-09/validation.json"
+          ]
+        }
+      },
+      {
+        "id": "rights_decision_query",
+        "label": "Per-asset deny-by-default decisions",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT\n  decision.assetId,\n  decision.title,\n  decision.moduleStatus,\n  decision.provenanceStatus,\n  decision.rightsBasis,\n  decision.authorizationEvidenceStatus,\n  decision.humanReviewStatus,\n  decision.disposition,\n  array_to_string(decision.reasonCodes, ' · ') AS blockers,\n  decision.sourceObjectSha256,\n  decision.passageSha256\nFROM read_json_auto('output/audits/ielts-reading-rights-set1-2026-08-09/validation.json') AS report,\nUNNEST(report.decisions) AS rows(decision);",
+          "description": "Per-asset deny-by-default decisions",
+          "executed_at": "2026-08-09T00:00:00-05:00",
+          "tables_used": [
+            "output/audits/ielts-reading-rights-set1-2026-08-09/validation.json"
+          ]
+        }
+      },
+      {
+        "id": "rights_evidence_query",
+        "label": "Evidence reviewed and its declared role",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT evidence.*\nFROM read_json_auto('output/audits/ielts-reading-rights-set1-2026-08-09/blind-review.json') AS packet,\nUNNEST(packet.evidence) AS rows(evidence);",
+          "description": "Evidence reviewed and its declared role",
+          "executed_at": "2026-08-09T00:00:00-05:00",
+          "tables_used": [
+            "output/audits/ielts-reading-rights-set1-2026-08-09/blind-review.json"
+          ]
+        }
+      },
+      {
+        "id": "rights_audit_query",
+        "label": "Independent F0.2a audit verdicts",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT verdict.*\nFROM read_json_auto('output/audits/ielts-reading-rights-set1-2026-08-09/audit-verdicts.json') AS audit,\nUNNEST(audit.rows) AS rows(verdict);",
+          "description": "Independent F0.2a audit verdicts",
+          "executed_at": "2026-08-09T00:00:00-05:00",
+          "tables_used": [
+            "output/audits/ielts-reading-rights-set1-2026-08-09/audit-verdicts.json"
+          ]
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "id": "title",
+        "type": "markdown",
+        "body": "# IELTS Academic Reading — set-1 rights gate"
+      },
+      {
+        "id": "summary",
+        "type": "markdown",
+        "sourceId": "rights_validation",
+        "body": "## The control passes; the three passages do not\n\nF0.2a now identifies and fingerprints all three Reading sections in `set-1`, but every actual record remains `unknown-quarantined`. The result is a working denial gate, not copyright clearance, IELTS approval or a content-quality verdict."
+      },
+      {
+        "id": "metrics",
+        "type": "metric-strip",
+        "cardIds": [
+          "assets",
+          "quarantined",
+          "blockers"
+        ]
+      },
+      {
+        "id": "gate_explanation",
+        "type": "markdown",
+        "sourceId": "rights_validation",
+        "body": "## Advancement needs five independent facts\n\nAn asset can only become eligible for later editorial review when its module is declared, authorship is identified, a basis-specific rights record is verified, factual review is complete and an independent human reviewer approves. Missing records and changed hashes fail closed."
+      },
+      {
+        "id": "blocker_chart",
+        "type": "chart",
+        "chartId": "blockers_by_gate",
+        "layout": "full"
+      },
+      {
+        "id": "decision_table",
+        "type": "table",
+        "tableId": "asset_decisions",
+        "layout": "full"
+      },
+      {
+        "id": "evidence_scope",
+        "type": "markdown",
+        "sourceId": "blind_review_packet",
+        "body": "## The match is a warning signal, not permission\n\nA publisher catalog and two directed external pages support a high-confidence identification with Cambridge IELTS 5 Academic Reading Test 2. No authorization evidence was located in the sources reviewed. The search was directed and non-exhaustive; it neither proves universal absence nor reaches a legal conclusion."
+      },
+      {
+        "id": "evidence_table",
+        "type": "table",
+        "tableId": "evidence_reviewed",
+        "layout": "full"
+      },
+      {
+        "id": "privacy",
+        "type": "markdown",
+        "sourceId": "rights_validation",
+        "body": "## The registry is safe to audit\n\nThe durable registry and blind packet contain IDs, hashes, statuses and evidence references only. Recursive guards reject passage, question, option, answer-key and common PII fields. Automated triage is explicitly marked as incapable of human approval."
+      },
+      {
+        "id": "audit_intro",
+        "type": "markdown",
+        "sourceId": "audit_verdicts",
+        "body": "## Panel scope\n\nA PASS means the F0.2a control is reproducible and conservatively scoped. It does not validate the learner-facing mock, its answers, its pedagogy, its accessibility or its legal publishability."
+      },
+      {
+        "id": "audit_table",
+        "type": "table",
+        "tableId": "audit_verdicts",
+        "layout": "full"
+      },
+      {
+        "id": "limitations",
+        "type": "markdown",
+        "sourceId": "rights_validation",
+        "body": "## Open work\n\nThe parent F0.2 remains open. This slice does not enforce quarantine in the public mock runner, resolve ownership, collect licenses, verify factual claims, declare module at asset level, adjudicate keys or audit the UI. Those remain separate, named subunits."
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-08-09T00:00:00-05:00",
+    "status": "ready",
+    "datasets": {
+      "summary": [
+        {
+          "assets": 3,
+          "quarantined": 3,
+          "blockerTypes": 5,
+          "denyByDefault": true
+        }
+      ],
+      "blocker_counts": [
+        {
+          "reasonCode": "authorship-unresolved",
+          "affectedAssets": 3
+        },
+        {
+          "reasonCode": "factual-review-incomplete",
+          "affectedAssets": 3
+        },
+        {
+          "reasonCode": "human-review-pending",
+          "affectedAssets": 3
+        },
+        {
+          "reasonCode": "module-not-declared",
+          "affectedAssets": 3
+        },
+        {
+          "reasonCode": "rights-unresolved",
+          "affectedAssets": 3
+        }
+      ],
+      "decisions": [
+        {
+          "assetId": "mock:set-1:reading-part-5",
+          "title": "Bakelite",
+          "sourceObjectSha256": "51bfb1a6a110ed1cb09211aab48d533026c6d87992de3a6c45bff267e5ecdb56",
+          "passageSha256": "f1800a80933cf687f5fd27c9f7176c9db92a8128783b87b6c17c44a3a8f6199e",
+          "moduleStatus": "inferred",
+          "provenanceStatus": "probable-third-party-match",
+          "rightsBasis": "unknown-quarantined",
+          "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+          "humanReviewStatus": "pending",
+          "disposition": "quarantine",
+          "eligibleForPublicationPipeline": false,
+          "blockers": "authorship-unresolved · factual-review-incomplete · human-review-pending · module-not-declared · rights-unresolved"
+        },
+        {
+          "assetId": "mock:set-1:reading-part-6",
+          "title": "What’s so funny?",
+          "sourceObjectSha256": "df93c358fb8c79c806d5537f5d8cd99379e5815f90433d4c158f0015e799a2a8",
+          "passageSha256": "2de952fc362533e1c006d05737840c99eea546079f78f1f87f51beb9b8f3684f",
+          "moduleStatus": "inferred",
+          "provenanceStatus": "probable-third-party-match",
+          "rightsBasis": "unknown-quarantined",
+          "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+          "humanReviewStatus": "pending",
+          "disposition": "quarantine",
+          "eligibleForPublicationPipeline": false,
+          "blockers": "authorship-unresolved · factual-review-incomplete · human-review-pending · module-not-declared · rights-unresolved"
+        },
+        {
+          "assetId": "mock:set-1:reading-part-7",
+          "title": "The Birth of Scientific English",
+          "sourceObjectSha256": "cbcff7fc3583ddb6bbccd3828f361f3ed6ce094f1b7352eb3c8e53b5ceb9cf97",
+          "passageSha256": "abc4c678cfe569e824db64cb821daf4c49b01c775175dac0162c9db51a5019bc",
+          "moduleStatus": "inferred",
+          "provenanceStatus": "probable-third-party-match",
+          "rightsBasis": "unknown-quarantined",
+          "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+          "humanReviewStatus": "pending",
+          "disposition": "quarantine",
+          "eligibleForPublicationPipeline": false,
+          "blockers": "authorship-unresolved · factual-review-incomplete · human-review-pending · module-not-declared · rights-unresolved"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "repository-mock-set-1",
+          "kind": "repository-source",
+          "label": "IELTS mock set-1 source record",
+          "location": "src/data/mocks/ielts-set-1.ts",
+          "accessedAt": "2026-08-09",
+          "note": "El archivo padre se rotula IELTS Academic; esa etiqueta permite inferir el módulo, pero no sustituye una declaración editorial por activo."
+        },
+        {
+          "id": "ielts-copyright-policy",
+          "kind": "official-policy",
+          "label": "IELTS copyright and trade mark statement",
+          "location": "https://ielts.org/legal/ielts-copyright-and-trade-mark-statement",
+          "accessedAt": "2026-08-09",
+          "note": "Política oficial revisada para delimitar reutilización y necesidad de autorización. No concede licencia a este repositorio."
+        },
+        {
+          "id": "cambridge-ielts-5-catalog",
+          "kind": "publisher-catalog",
+          "label": "Cambridge ELT catalogue — Cambridge IELTS 5",
+          "location": "https://www.cambridge.org/elt/order/catalogue/Exams.pdf",
+          "accessedAt": "2026-08-09",
+          "note": "Catálogo oficial que identifica Cambridge IELTS 5 Student’s Book with answers, ISBN 978-0-521-67701-1. No acredita que WeLearn tenga licencia."
+        },
+        {
+          "id": "external-cambridge-5-test-2-sequence",
+          "kind": "external-identification",
+          "label": "External identification of Cambridge 5 Test 2 passage sequence",
+          "location": "https://www.babarenglish.com/post/cambridge-ielts-academic-5-reading-test-1-answers-with-explanation",
+          "accessedAt": "2026-08-09",
+          "note": "Página externa usada solo para cotejo dirigido de la secuencia Bakelite / What’s so funny? / The Birth of Scientific English."
+        },
+        {
+          "id": "external-birth-scientific-english",
+          "kind": "external-identification",
+          "label": "External identification of The Birth of Scientific English",
+          "location": "https://ieltsdeal.com/ielts-academic-reading-cambridge-5-test-2-reading-passage-3-the-birth-of-scientific-english-with-best-solutions-and-best-explanations/",
+          "accessedAt": "2026-08-09",
+          "note": "Página externa usada solo para reforzar la identificación del tercer pasaje; no es evidencia de autorización."
+        }
+      ],
+      "audit": [
+        {
+          "lane": "Derechos y procedencia",
+          "verdict": "PASS",
+          "scope": "Contrato F0.2a, no clearance legal",
+          "findings": "3/3 activos conservan rightsBasis unknown-quarantined; la identificación editorial probable no se trata como licencia y la búsqueda externa se declara dirigida/no exhaustiva."
+        },
+        {
+          "lane": "Full-stack y datos",
+          "verdict": "PASS",
+          "scope": "Registry, hashes, evaluator y validator",
+          "findings": "Cobertura exacta 3/3, hashes alineados, fail-closed ante registro ausente, drift, schema/módulo/basis inválidos, evidencia incompleta, fechas imposibles y duplicados."
+        },
+        {
+          "lane": "IELTS y revisión ciega",
+          "verdict": "PASS",
+          "scope": "Identidad y límite del packet; no calidad de preguntas",
+          "findings": "Academic continúa inferido, no declarado; el packet no contiene pasajes, preguntas, opciones ni claves y no permite fingir aprobación IELTS o pedagógica."
+        },
+        {
+          "lane": "Anti-sesgo e independencia",
+          "verdict": "PASS",
+          "scope": "Separación entre automatización y decisión humana",
+          "findings": "La auto-revisión normalizada, la aprobación automática, estados desconocidos, campos vacíos, keys variantes y PII de estudiante/contacto quedan bloqueados."
+        },
+        {
+          "lane": "Walkthrough cognitivo",
+          "verdict": "NOT_APPLICABLE",
+          "scope": "Sin cambio learner-facing",
+          "findings": "No cambió ninguna tarea, instrucción, decisión o feedback del estudiante; corresponde ➖, no una aprobación."
+        },
+        {
+          "lane": "UI/UX y accesibilidad",
+          "verdict": "NOT_APPLICABLE",
+          "scope": "Sin ruta, componente ni DOM nuevos",
+          "findings": "No existe superficie visual atribuible a F0.2a; corresponde ➖, no una aprobación."
+        },
+        {
+          "lane": "Playwright",
+          "verdict": "NOT_APPLICABLE",
+          "scope": "Sin comportamiento de navegador nuevo",
+          "findings": "El gate es estático y ejecutable en Node; runtime enforcement y navegador permanecen en unidades posteriores."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "rights_validation",
+      "label": "Executable F0.2a validation result",
+      "path": "output/audits/ielts-reading-rights-set1-2026-08-09/validation.json"
+    },
+    {
+      "id": "blind_review_packet",
+      "label": "Key-free F0.2a review packet",
+      "path": "output/audits/ielts-reading-rights-set1-2026-08-09/blind-review.json"
+    },
+    {
+      "id": "audit_verdicts",
+      "label": "Independent panel verdicts",
+      "path": "output/audits/ielts-reading-rights-set1-2026-08-09/audit-verdicts.json"
+    },
+    {
+      "id": "ielts_copyright_policy",
+      "label": "IELTS copyright and trade mark statement",
+      "url": "https://ielts.org/legal/ielts-copyright-and-trade-mark-statement"
+    },
+    {
+      "id": "cambridge_catalog",
+      "label": "Cambridge ELT catalogue — Cambridge IELTS 5",
+      "url": "https://www.cambridge.org/elt/order/catalogue/Exams.pdf"
+    },
+    {
+      "id": "rights_summary_query",
+      "label": "F0.2a coverage and disposition summary",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "SELECT\n  scope.registryEntries AS assets,\n  COUNT(*) FILTER (WHERE decision.disposition = 'quarantine') AS quarantined,\n  list_count(blockerCounts) AS blockerTypes,\n  checks.actualAssetsAllQuarantined AS denyByDefault\nFROM read_json_auto('output/audits/ielts-reading-rights-set1-2026-08-09/validation.json') AS report,\nUNNEST(report.decisions) AS rows(decision)\nGROUP BY ALL;",
+        "description": "F0.2a coverage and disposition summary",
+        "executed_at": "2026-08-09T00:00:00-05:00",
+        "tables_used": [
+          "output/audits/ielts-reading-rights-set1-2026-08-09/validation.json"
+        ]
+      }
+    },
+    {
+      "id": "rights_blocker_query",
+      "label": "Unresolved gates by affected asset count",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "SELECT blocker.reasonCode, blocker.affectedAssets\nFROM read_json_auto('output/audits/ielts-reading-rights-set1-2026-08-09/validation.json') AS report,\nUNNEST(report.blockerCounts) AS rows(blocker);",
+        "description": "Unresolved gates by affected asset count",
+        "executed_at": "2026-08-09T00:00:00-05:00",
+        "tables_used": [
+          "output/audits/ielts-reading-rights-set1-2026-08-09/validation.json"
+        ]
+      }
+    },
+    {
+      "id": "rights_decision_query",
+      "label": "Per-asset deny-by-default decisions",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "SELECT\n  decision.assetId,\n  decision.title,\n  decision.moduleStatus,\n  decision.provenanceStatus,\n  decision.rightsBasis,\n  decision.authorizationEvidenceStatus,\n  decision.humanReviewStatus,\n  decision.disposition,\n  array_to_string(decision.reasonCodes, ' · ') AS blockers,\n  decision.sourceObjectSha256,\n  decision.passageSha256\nFROM read_json_auto('output/audits/ielts-reading-rights-set1-2026-08-09/validation.json') AS report,\nUNNEST(report.decisions) AS rows(decision);",
+        "description": "Per-asset deny-by-default decisions",
+        "executed_at": "2026-08-09T00:00:00-05:00",
+        "tables_used": [
+          "output/audits/ielts-reading-rights-set1-2026-08-09/validation.json"
+        ]
+      }
+    },
+    {
+      "id": "rights_evidence_query",
+      "label": "Evidence reviewed and its declared role",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "SELECT evidence.*\nFROM read_json_auto('output/audits/ielts-reading-rights-set1-2026-08-09/blind-review.json') AS packet,\nUNNEST(packet.evidence) AS rows(evidence);",
+        "description": "Evidence reviewed and its declared role",
+        "executed_at": "2026-08-09T00:00:00-05:00",
+        "tables_used": [
+          "output/audits/ielts-reading-rights-set1-2026-08-09/blind-review.json"
+        ]
+      }
+    },
+    {
+      "id": "rights_audit_query",
+      "label": "Independent F0.2a audit verdicts",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "SELECT verdict.*\nFROM read_json_auto('output/audits/ielts-reading-rights-set1-2026-08-09/audit-verdicts.json') AS audit,\nUNNEST(audit.rows) AS rows(verdict);",
+        "description": "Independent F0.2a audit verdicts",
+        "executed_at": "2026-08-09T00:00:00-05:00",
+        "tables_used": [
+          "output/audits/ielts-reading-rights-set1-2026-08-09/audit-verdicts.json"
+        ]
+      }
+    }
+  ]
+}

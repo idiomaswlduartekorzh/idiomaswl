@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "ielts-reading-matching-headings-audit-verdicts.v1",
+  "reviewedAt": "2026-08-09T07:31:00-05:00",
+  "status": "pass",
+  "passMeaning": "PASS means the F0.2b.5 audit dossier is complete and fail-closed. All three assets remain quarantined and bank/content certification remains blocked.",
+  "rows": [
+    {
+      "lane": "Rights and provenance",
+      "boardMark": "✅",
+      "scope": "Census, hashes, directed provenance search, candidate-source availability and deny-by-default disposition for exactly three Matching Headings assets.",
+      "findings": "3/3 assets remain unknown-quarantined. Ten web sources were reachable, but exact-match search was directed and non-exhaustive; visible originality and July-2026 academic-review claims remain observed but unverified, and no rights-holder authorization was located.",
+      "blockersCarriedForward": "Authorship, license, rights-holder authorization, factual sign-off and independent human approval remain unresolved; PASS is not clearance."
+    },
+    {
+      "lane": "Full-stack and data",
+      "boardMark": "✅",
+      "scope": "Executable identity, registry contract, two-pass review cardinality, source hashes and denial controls for the audit-only delta.",
+      "findings": "3 passages, 17 paragraphs, 27 candidate headings and 17 heading decisions are covered exactly; hashes align and all records fail closed without structural registry errors.",
+      "blockersCarriedForward": "Bank and content certification remain blocked; the public runtime still does not enforce the official no-heading-reuse rule."
+    },
+    {
+      "lane": "IELTS expert",
+      "boardMark": "✅",
+      "scope": "Clean first-pass main-idea adjudication followed by direct candidate-source review; no stored key was shown before decisions were fixed.",
+      "findings": "17/17 heading decisions match the stored mappings, with 0 material ambiguities. All three passage assessments are mixed because the tasks are easier and more predictable than a strong live-style IELTS set.",
+      "blockersCarriedForward": "Agreement is not approval: explicit topic sentences, close lexical echoes, extreme distractors, factual-risk findings and the missing runtime no-reuse enforcement require editorial repair and fresh blind review."
+    },
+    {
+      "lane": "Cognitive walkthrough",
+      "boardMark": "✅",
+      "scope": "Prospective content-only simulation by an average learner who recognizes lexical-matching and local-detail failure modes.",
+      "findings": "3/3 passages and 17/17 paragraphs have a walkthrough covering global reading, main-idea compression, heading comparison, competitor rejection and a repair action without assigning a key.",
+      "blockersCarriedForward": "This AI walkthrough is not a real-user usability study, retention measure, learning-gain estimate or evidence of IELTS band improvement."
+    },
+    {
+      "lane": "Anti-bias and leakage",
+      "boardMark": "✅",
+      "scope": "Exhaustive n=17 enumeration of response labels, sequence, position, option length, lexical overlap, extreme cues, set-level reuse, title risk, representation, prior knowledge and packet leakage.",
+      "findings": "Stored counts are i=3, ii=0, iii=3, iv=2, v=2, vi=1, vii=2, viii=2, ix=2; same-position scores 5/17, lexical overlap scores 6/14 eligible with 3 ties, and nine options trigger the extreme-cue heuristic: eight are never correct and one is a legitimate contextual use.",
+      "blockersCarriedForward": "contentCertification remains blocked: n=17 is below 100, ii is never correct, lexical overlap is predictive when unique, extreme wording marks eight distractors, and runtime no-reuse is absent."
+    },
+    {
+      "lane": "UI/UX and accessibility",
+      "boardMark": "➖",
+      "scope": "Not applicable to this audit-only delta: seven learner-facing route/dependency hashes are pinned unchanged.",
+      "findings": "The dossier records the existing runtime mismatch but does not change or certify DOM, interaction, feedback, responsive layout, accessibility or visual parity.",
+      "blockersCarriedForward": "This ➖ does not certify the existing learner UI; a separate learner-facing delta must repair no-reuse and receive the full UI/UX/accessibility audit."
+    },
+    {
+      "lane": "Playwright",
+      "boardMark": "➖",
+      "scope": "Not applicable to the unchanged learner runtime in F0.2b.5; only the portable stakeholder report will receive browser packaging verification.",
+      "findings": "No learner-facing behavior was changed, and the audit registry is absent from app/component runtime imports.",
+      "blockersCarriedForward": "No browser matrix was executed for the learner route; report Chromium verification is not learner-facing Playwright evidence."
+    }
+  ]
+}

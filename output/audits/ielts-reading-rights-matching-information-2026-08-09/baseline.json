@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "ielts-reading-matching-information-baseline.v1",
+  "capturedAt": "2026-08-09T06:10:00-05:00",
+  "scope": {
+    "unit": "F0.2b.4",
+    "format": "matching-information",
+    "passages": 3,
+    "paragraphs": 15,
+    "questions": 18
+  },
+  "assets": [
+    {
+      "assetId": "formative:matching-information:mi-city-noise",
+      "setId": "mi-city-noise",
+      "title": "How cities respond to noise",
+      "paragraphCount": 5,
+      "wordCount": 249,
+      "questionCount": 6,
+      "answerCounts": { "A": 1, "B": 2, "C": 1, "D": 1, "E": 1 },
+      "sourceObjectSha256": "4dedd37f4422d13c2d7f2e8ed948820849d92987cc5bdce84350ecee344ded62",
+      "passageSha256": "b85fe921aedbd48f035d1bdd764bc033b5af62a2b5f1af4dab6d994af0b93bc1"
+    },
+    {
+      "assetId": "formative:matching-information:mi-museum-lighting",
+      "setId": "mi-museum-lighting",
+      "title": "Lighting in modern museums",
+      "paragraphCount": 5,
+      "wordCount": 236,
+      "questionCount": 6,
+      "answerCounts": { "A": 1, "B": 1, "C": 1, "D": 2, "E": 1 },
+      "sourceObjectSha256": "f68ddab75ce213fcf42bb1b0f815138e25fad5218bedd135f74758d970b51280",
+      "passageSha256": "26799b69ea658d6268841c5d3ea29a408a93d5e459de8beaa49952c6e89db211"
+    },
+    {
+      "assetId": "formative:matching-information:mi-coastal-restoration",
+      "setId": "mi-coastal-restoration",
+      "title": "Restoring coastal wetlands",
+      "paragraphCount": 5,
+      "wordCount": 234,
+      "questionCount": 6,
+      "answerCounts": { "A": 1, "B": 2, "C": 1, "D": 1, "E": 1 },
+      "sourceObjectSha256": "c2e06a4c723bfd321924f9e2961937b494280c8edd55ab9658e3775284b467d7",
+      "passageSha256": "9510b6698b7e693561945516c8ff49a6abbf965e7ad1324017abcbfc373c6947"
+    }
+  ],
+  "structuralRisk": {
+    "answerCounts": { "A": 3, "B": 5, "C": 3, "D": 4, "E": 3 },
+    "maxSameLabelRun": 1,
+    "positionOneToFivePredictsAToE": {
+      "eligible": 15,
+      "hits": 11,
+      "conditionalAccuracy": 0.7333333333333333,
+      "uniformFiveLabelBaseline": 0.2
+    },
+    "everySetReusesOneParagraph": true,
+    "statisticalCertificationEligible": false,
+    "reason": "n=18 is below the 100-decision family gate; the 11/15 positional cycle is a concrete shortcut risk, not a full statistical certification."
+  },
+  "learnerFacingSourceSha256": {
+    "src/data/practica-exams/seo-catalog.ts": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de",
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-information/page.tsx": "d892c0681b94d8e0b7e1ffe23e4eb2c6963ecfff01076b01f27b519545b4a4e1",
+    "src/components/exam-practice/MatchingInformationEngine.tsx": "72c835e11537cd61c20a110c213948818875b3aa35ff3c5fb6ec64a211db55d0",
+    "src/components/exam-practice/MatchingInformationPassageBank.tsx": "b5954b362da326515c2a3ada848c8a22dbaf5fe1548e29357817f823757c8981"
+  },
+  "interpretation": "Frozen pre-unit content and learner-runtime identity. Stored paragraph letters are retained here for audit only and are never supplied to blind reviewers."
+}

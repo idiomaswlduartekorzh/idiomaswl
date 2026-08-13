@@ -1,0 +1,998 @@
+{
+  "schemaVersion": "ielts-reading-sentence-completion-expert-verdict.v1",
+  "reviewer": {
+    "reviewerRunId": "sentence-completion-expert-20260809-165020z",
+    "reviewedAt": "2026-08-09T16:58:07Z",
+    "blindPacketSha256": "76e4e4de7f6d60e44331a4ec07750f49c2201d81b3ef1f363eb935c9719854e4",
+    "firstPassSha256": "becd3ae9c2ff3783a370882ed9716616bd6526a26348d46598a54157e88a2bf5",
+    "factualPacketSha256": "a65bfeba59b9c1c6fe5ec5c942a741bd8bb8f1b4aebc8558f3e2175e4ce5155e",
+    "openedEvidenceIds": [
+      "ielts-british-american-spelling-policy",
+      "wetland-epa-about-green-infrastructure",
+      "wetland-epa-mitigate-flooding",
+      "wetland-epa-wetland-functions",
+      "wetland-epa-pond-wetland-maintenance",
+      "wetland-uk-blockage-management",
+      "makers-ala-libraries-build-business",
+      "makers-australian-public-libraries-study",
+      "makers-public-library-coach-study",
+      "makers-imls-community-needs",
+      "makers-wheaton-noise-zones",
+      "night-naga-ordinance",
+      "night-bromley-test-trading",
+      "night-primary-built-environment-accessibility",
+      "night-maidstone-street-trading-policy",
+      "night-hackney-market-metrics-costs"
+    ],
+    "sourceContext": "two-pass-blind-then-factual-and-policy-sources",
+    "reviewSequence": [
+      "blind-review",
+      "factual-and-policy-source-review"
+    ],
+    "directSourceReview": true,
+    "humanSignature": false,
+    "notes": "Two-pass independent expert review. All 18 blind decisions are preserved unchanged. Every listed URL was opened directly; internal errors, reCAPTCHA and HTTP 429 responses were recorded as limitations and never treated as support. IELTS's official page explicitly states that British and American spellings are accepted."
+  },
+  "records": [
+    {
+      "assetId": "formative:sentence-completion:sentence-wetland-parks",
+      "passageAssessment": {
+        "ieltsFitness": "fit",
+        "factualRisk": "medium",
+        "representationRisk": "medium",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "low",
+        "wordLimitRisk": "low",
+        "questionOrderRisk": "low",
+        "promptCueRisk": "medium",
+        "hintCueRisk": "medium",
+        "notes": "The reading mechanics are sound and ordered, but some general green-infrastructure and wetland mechanisms are represented as properties of the particular park type. Hints were excluded from the authorized packets, so hint-cue risk is conservatively rated rather than directly audited."
+      },
+      "questions": [
+        {
+          "questionId": "sentence-wetlands-01",
+          "selectedAnswer": "concrete channels",
+          "normalizedSelectedAnswer": "concrete channels",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "Wetland parks can keep rainwater for a short time instead of sending it through concrete channels.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "concrete channels",
+            "start": 129,
+            "end": 146
+          },
+          "evidenceQuotes": [
+            "Instead of moving rainwater away as quickly as possible through concrete channels, these parks hold water temporarily and allow it to filter through plants and soil."
+          ],
+          "closestCompetingAnswer": "plants",
+          "closestCompetitorPassageSpan": {
+            "text": "plants",
+            "start": 214,
+            "end": 220
+          },
+          "competitorFailure": "Although water also filters through plants, the question contrasts temporary storage with sending water away through engineered drainage, which is the role assigned to concrete channels.",
+          "ambiguity": "none",
+          "reasoning": "The opening contrast explicitly states that conventional drainage moves rainwater away through concrete channels, whereas the parks hold it temporarily."
+        },
+        {
+          "questionId": "sentence-wetlands-02",
+          "selectedAnswer": "underground pipes",
+          "normalizedSelectedAnswer": "underground pipes",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "During storms, the parks can reduce pressure on underground pipes.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "underground pipes",
+            "start": 297,
+            "end": 314
+          },
+          "evidenceQuotes": [
+            "During heavy storms, this storage capacity can reduce pressure on underground pipes and lower the risk of street flooding."
+          ],
+          "closestCompetingAnswer": "storage capacity",
+          "closestCompetitorPassageSpan": {
+            "text": "storage capacity",
+            "start": 257,
+            "end": 273
+          },
+          "competitorFailure": "Storage capacity is the mechanism that reduces pressure, not the system on which pressure is reduced.",
+          "ambiguity": "none",
+          "reasoning": "The wording 'reduce pressure on' is reproduced directly in the passage and takes underground pipes as its object."
+        },
+        {
+          "questionId": "sentence-wetlands-03",
+          "selectedAnswer": "shallow pools",
+          "normalizedSelectedAnswer": "shallow pools",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "Small wetland areas may help species survive if they include native plants and shallow pools.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "shallow pools",
+            "start": 516,
+            "end": 529
+          },
+          "evidenceQuotes": [
+            "A narrow strip of water beside a road may look small, but if it contains native plants and shallow pools, it can support species that struggle to survive in heavily paved districts."
+          ],
+          "closestCompetingAnswer": "soil",
+          "closestCompetitorPassageSpan": {
+            "text": "soil",
+            "start": 225,
+            "end": 229
+          },
+          "competitorFailure": "Soil appears in the earlier description of filtration, while the survival claim explicitly coordinates native plants with shallow pools.",
+          "ambiguity": "none",
+          "reasoning": "The question closely paraphrases the second-paragraph conditional, preserving the coordinated phrase native plants and shallow pools."
+        },
+        {
+          "questionId": "sentence-wetlands-04",
+          "selectedAnswer": "infrastructure",
+          "normalizedSelectedAnswer": "infrastructure",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Some planners call wetland parks ecological infrastructure instead of decoration.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "infrastructure",
+            "start": 671,
+            "end": 685
+          },
+          "evidenceQuotes": [
+            "Some city planners therefore describe these parks as ecological infrastructure rather than simple decoration."
+          ],
+          "closestCompetingAnswer": "habitats",
+          "closestCompetitorPassageSpan": {
+            "text": "habitats",
+            "start": 381,
+            "end": 389
+          },
+          "competitorFailure": "Habitats is a benefit the parks create, but it is not the label that planners contrast with decoration.",
+          "ambiguity": "none",
+          "reasoning": "The passage explicitly supplies the fixed descriptive phrase ecological infrastructure in the same contrast."
+        },
+        {
+          "questionId": "sentence-wetlands-05",
+          "selectedAnswer": "water flow",
+          "normalizedSelectedAnswer": "water flow",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "If maintenance is poor, blocked channels can limit water flow.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "water flow",
+            "start": 935,
+            "end": 945
+          },
+          "evidenceQuotes": [
+            "If a park is neglected, blocked channels can reduce water flow and the area may become less effective during storms."
+          ],
+          "closestCompetingAnswer": "water levels",
+          "closestCompetitorPassageSpan": {
+            "text": "water levels",
+            "start": 829,
+            "end": 841
+          },
+          "competitorFailure": "Water levels are something staff should check, whereas the stated consequence of blocked channels is reduced water flow.",
+          "ambiguity": "none",
+          "reasoning": "The prompt substitutes poor maintenance and limit for neglected and reduce but keeps the exact affected process."
+        },
+        {
+          "questionId": "sentence-wetlands-06",
+          "selectedAnswer": "purpose",
+          "normalizedSelectedAnswer": "purpose",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Signs and viewing platforms can help people understand the park’s purpose.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "purpose",
+            "start": 1187,
+            "end": 1194
+          },
+          "evidenceQuotes": [
+            "When people recognize the purpose of the park, they are more likely to support its long-term protection."
+          ],
+          "closestCompetingAnswer": "landscape",
+          "closestCompetitorPassageSpan": {
+            "text": "landscape",
+            "start": 1119,
+            "end": 1128
+          },
+          "competitorFailure": "The signs help residents understand why the landscape appears wet or muddy; the following sentence names the underlying object of that understanding as the park's purpose.",
+          "ambiguity": "none",
+          "reasoning": "The two final sentences form a clear explanation-recognition chain, and purpose produces the natural possessive completion requested."
+        }
+      ],
+      "factualClaims": [
+        {
+          "claim": "Instead of moving rainwater away as quickly as possible through concrete channels, these parks hold water temporarily and allow it to filter through plants and soil.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "wetland-epa-about-green-infrastructure"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "wetland-epa-about-green-infrastructure",
+              "locator": "https://www.epa.gov/green-infrastructure/about-green-infrastructure — lines 6 and 18–22",
+              "evidenceSummary": "EPA contrasts conventional gutters, pipes and tunnels that rapidly carry stormwater with green infrastructure using plant or soil systems to store, infiltrate and filter rainfall."
+            }
+          ],
+          "note": "The source supports the general gray-versus-green drainage mechanism, but it does not establish that every redesigned wetland park specifically replaces concrete channels or has all of the stated filtration features."
+        },
+        {
+          "claim": "During heavy storms, this storage capacity can reduce pressure on underground pipes and lower the risk of street flooding.",
+          "assessment": "supported",
+          "evidenceIds": [
+            "wetland-epa-mitigate-flooding"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "wetland-epa-mitigate-flooding",
+              "locator": "https://www.epa.gov/green-infrastructure/mitigate-flooding — lines 8–9 and 21–23",
+              "evidenceSummary": "EPA states that green infrastructure can absorb rainfall, reduce water pooling or flooding in streets, temporarily store stormwater and help prevent pipe networks from being overwhelmed."
+            }
+          ],
+          "note": "The source directly supports the stated storm-storage, pipe-network and street-flooding mechanism, while not implying a universal effect for every site or storm."
+        },
+        {
+          "claim": "Wetland parks also create habitats for insects, birds and amphibians.",
+          "assessment": "supported",
+          "evidenceIds": [
+            "wetland-epa-wetland-functions"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "wetland-epa-wetland-functions",
+              "locator": "https://www.epa.gov/wetlands/how-do-wetlands-function-and-why-are-they-valuable — lines 6–12",
+              "evidenceSummary": "EPA identifies insects, amphibians and birds as organisms in wetland ecosystems and explains that many such species obtain food, water or shelter from wetlands."
+            }
+          ],
+          "note": "This directly supports the habitat claim at the level of wetlands generally; outcomes for a particular small urban park remain site-dependent."
+        },
+        {
+          "claim": "Plants must be monitored, litter needs to be removed and water levels should be checked after extreme weather.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "wetland-epa-pond-wetland-maintenance"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "wetland-epa-pond-wetland-maintenance",
+              "locator": "https://www.epa.gov/sites/default/files/2015-11/documents/pondmgmtguide.pdf — PDF pp. 23 and 26–27",
+              "evidenceSummary": "The guide calls for inspection after major storms, monitoring wetland plant health, checking pipes for clogging and removing debris; it does not prescribe the passage's exact water-level check."
+            }
+          ],
+          "note": "Most maintenance elements are supported, but the composite sentence overstates exact correspondence because checking water levels after extreme weather was not traced in the cited guide."
+        },
+        {
+          "claim": "If a park is neglected, blocked channels can reduce water flow and the area may become less effective during storms.",
+          "assessment": "supported",
+          "evidenceIds": [
+            "wetland-uk-blockage-management"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "wetland-uk-blockage-management",
+              "locator": "https://www.gov.uk/flood-and-coastal-erosion-risk-management-research-reports/blockage-management-guide — lines 115–116",
+              "evidenceSummary": "The official guide states that debris blockages reduce flow capacity, raise water levels and can increase flood risk or change flow patterns."
+            }
+          ],
+          "note": "The core blockage-to-reduced-flow mechanism is directly supported; applying it to a neglected wetland park is a reasonable but site-specific transfer."
+        }
+      ],
+      "acceptedAnswerAssessments": [
+        {
+          "questionId": "sentence-wetlands-01",
+          "acceptedText": "concrete channels",
+          "normalizedText": "concrete channels",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 2,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "Canonical entry is a literal contiguous passage span within the two-word limit."
+        },
+        {
+          "questionId": "sentence-wetlands-02",
+          "acceptedText": "underground pipes",
+          "normalizedText": "underground pipes",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 2,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "Canonical entry is a literal contiguous passage span within the two-word limit."
+        },
+        {
+          "questionId": "sentence-wetlands-03",
+          "acceptedText": "shallow pools",
+          "normalizedText": "shallow pools",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 2,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "Canonical entry is a literal contiguous passage span within the two-word limit."
+        },
+        {
+          "questionId": "sentence-wetlands-04",
+          "acceptedText": "infrastructure",
+          "normalizedText": "infrastructure",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 1,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "Canonical entry is a literal contiguous passage span within the two-word limit."
+        },
+        {
+          "questionId": "sentence-wetlands-05",
+          "acceptedText": "water flow",
+          "normalizedText": "water flow",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 2,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "Canonical entry is a literal contiguous passage span within the two-word limit."
+        },
+        {
+          "questionId": "sentence-wetlands-06",
+          "acceptedText": "purpose",
+          "normalizedText": "purpose",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 1,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "Canonical entry is a literal contiguous passage span within the two-word limit."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:sentence-completion:sentence-library-makerspaces",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "high",
+        "representationRisk": "medium",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "low",
+        "wordLimitRisk": "low",
+        "questionOrderRisk": "low",
+        "promptCueRisk": "medium",
+        "hintCueRisk": "medium",
+        "notes": "The first completion remains materially ambiguous because another listed tool is equally true. Two claim sources were inaccessible and a third exposed only a reCAPTCHA page; accessible sources support related practice but not the passage's superlatives or exact causal formulations. Hints were excluded from review."
+      },
+      "questions": [
+        {
+          "questionId": "sentence-makerspaces-01",
+          "selectedAnswer": "3D printers",
+          "normalizedSelectedAnswer": "3d printers",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "Makerspaces let library visitors use tools including audio recorders and 3D printers.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "3D printers",
+            "start": 209,
+            "end": 220
+          },
+          "evidenceQuotes": [
+            "In many towns, they now also provide makerspaces: small areas where visitors can use tools such as sewing machines, audio recorders, 3D printers and basic electronics kits."
+          ],
+          "closestCompetingAnswer": "sewing machines",
+          "closestCompetitorPassageSpan": {
+            "text": "sewing machines",
+            "start": 175,
+            "end": 190
+          },
+          "competitorFailure": "Sewing machines is also grammatically and factually valid; it is weaker only because 3D printers immediately follows audio recorders in the passage's list, which is not enough to ensure one-best-answer validity.",
+          "ambiguity": "material",
+          "reasoning": "The adjacent continuation is 3D printers, so it is the most likely intended span. However, the non-adjacent listed tool sewing machines completes the sentence equally truthfully within the word limit."
+        },
+        {
+          "questionId": "sentence-makerspaces-02",
+          "selectedAnswer": "storing",
+          "normalizedSelectedAnswer": "storing",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Supporters say makerspaces help libraries move beyond storing information.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "storing",
+            "start": 309,
+            "end": 316
+          },
+          "evidenceQuotes": [
+            "Supporters argue that these spaces help libraries move from storing information to helping people create things with it."
+          ],
+          "closestCompetingAnswer": "reading",
+          "closestCompetitorPassageSpan": {
+            "text": "reading",
+            "start": 1078,
+            "end": 1085
+          },
+          "competitorFailure": "Reading fits the grammar but comes from a different claim about books and is not the starting function in the passage's move-from-to contrast.",
+          "ambiguity": "none",
+          "reasoning": "Move beyond paraphrases move from, and the passage explicitly identifies storing information as the function being extended."
+        },
+        {
+          "questionId": "sentence-makerspaces-03",
+          "selectedAnswer": "first projects",
+          "normalizedSelectedAnswer": "first projects",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "Staff need to introduce tools safely and connect visitors with realistic first projects.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "first projects",
+            "start": 514,
+            "end": 528
+          },
+          "evidenceQuotes": [
+            "A library makerspace works best when staff can introduce tools safely and connect visitors with realistic first projects."
+          ],
+          "closestCompetingAnswer": "design",
+          "closestCompetitorPassageSpan": {
+            "text": "design",
+            "start": 1270,
+            "end": 1276
+          },
+          "competitorFailure": "Realistic design is a possible noun phrase, but connecting visitors with a design is not the staff practice stated in the relevant sentence and is strained in this frame.",
+          "ambiguity": "none",
+          "reasoning": "The question reproduces the source clause almost verbatim, making first projects the direct and natural span."
+        },
+        {
+          "questionId": "sentence-makerspaces-04",
+          "selectedAnswer": "interests",
+          "normalizedSelectedAnswer": "interests",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Equipment may remain unused if the library ignores local interests.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "interests",
+            "start": 832,
+            "end": 841
+          },
+          "evidenceQuotes": [
+            "Expensive equipment can sit unused if the library buys it without understanding local interests."
+          ],
+          "closestCompetingAnswer": "demand",
+          "closestCompetitorPassageSpan": {
+            "text": "demand",
+            "start": 1022,
+            "end": 1028
+          },
+          "competitorFailure": "Local demand is semantically plausible and later influences tool choice, but the explicit unused-equipment condition names local interests.",
+          "ambiguity": "minor",
+          "reasoning": "Remain unused and ignores paraphrase sit unused and without understanding in the same sentence, whose exact object is local interests."
+        },
+        {
+          "questionId": "sentence-makerspaces-05",
+          "selectedAnswer": "study zones",
+          "normalizedSelectedAnswer": "study zones",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "Libraries protect study areas by separating noisy activities from study zones.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "study zones",
+            "start": 972,
+            "end": 983
+          },
+          "evidenceQuotes": [
+            "Successful libraries therefore separate noisy activities from study zones and choose tools that match community demand."
+          ],
+          "closestCompetingAnswer": "quiet rooms",
+          "closestCompetitorPassageSpan": {
+            "text": "quiet rooms",
+            "start": 36,
+            "end": 47
+          },
+          "competitorFailure": "Quiet rooms are a relevant library facility, but the passage's explicit separation policy names study zones.",
+          "ambiguity": "none",
+          "reasoning": "The governing verb phrase separate noisy activities from appears verbatim with study zones as its complement."
+        },
+        {
+          "questionId": "sentence-makerspaces-06",
+          "selectedAnswer": "public role",
+          "normalizedSelectedAnswer": "public role",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "Makerspaces extend the library’s public role rather than replacing books.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "public role",
+            "start": 1133,
+            "end": 1144
+          },
+          "evidenceQuotes": [
+            "Their value is that they extend the library's public role."
+          ],
+          "closestCompetingAnswer": "value",
+          "closestCompetitorPassageSpan": {
+            "text": "value",
+            "start": 1093,
+            "end": 1098
+          },
+          "competitorFailure": "Although library's value is grammatical, the passage says the makerspaces have value because they extend the library's public role, not that they extend its value.",
+          "ambiguity": "none",
+          "reasoning": "The final paragraph explicitly rejects replacement and then states that makerspaces extend the library's public role."
+        }
+      ],
+      "factualClaims": [
+        {
+          "claim": "In many towns, they now also provide makerspaces: small areas where visitors can use tools such as sewing machines, audio recorders, 3D printers and basic electronics kits.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "makers-ala-libraries-build-business"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "makers-ala-libraries-build-business",
+              "locator": "https://www.ala.org/advocacy/sites/ala.org.advocacy/files/content/Workforce/LBB_Playbook_web_013122.pdf — PDF pp. 18–19",
+              "evidenceSummary": "The ALA playbook describes library makerspaces with 3D printers, sewing machines, recording studios, and audio/visual equipment in concrete library examples."
+            }
+          ],
+          "note": "The equipment examples are well supported, but the source does not establish prevalence in 'many towns' or the full exact inventory including basic electronics kits."
+        },
+        {
+          "claim": "Supporters argue that these spaces help libraries move from storing information to helping people create things with it.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "makers-australian-public-libraries-study"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "makers-australian-public-libraries-study",
+              "locator": "https://www.tandfonline.com/doi/abs/10.1080/00049670.2013.853335 — direct open returned an internal error",
+              "evidenceSummary": "No substantive abstract or article text was available from the exact candidate URL during direct review."
+            }
+          ],
+          "note": "Because the exact source could not be inspected, its candidacy or metadata cannot be used as support for the consumption-to-creation claim."
+        },
+        {
+          "claim": "A library makerspace works best when staff can introduce tools safely and connect visitors with realistic first projects.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "makers-public-library-coach-study"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "makers-public-library-coach-study",
+              "locator": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9040691/ — direct open exposed only a reCAPTCHA page",
+              "evidenceSummary": "The exact candidate URL did not expose the article's substantive content during direct review."
+            }
+          ],
+          "note": "The access barrier is a limitation, not evidence; the 'works best' and 'realistic first projects' wording therefore remains untraceable from this source."
+        },
+        {
+          "claim": "Expensive equipment can sit unused if the library buys it without understanding local interests.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "makers-imls-community-needs"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "makers-imls-community-needs",
+              "locator": "https://makered.org/wp-content/uploads/2019/12/IMLS-LibraryMakerspaces2019_WPweb_final.pdf — PDF pp. 5, 8 and 10",
+              "evidenceSummary": "The white paper emphasizes responding to community needs and warns that spending on high-tech equipment without staffing, training or community engagement can leave depreciating equipment and limited engagement."
+            }
+          ],
+          "note": "The source supports alignment with community interests and the risk of poorly planned equipment, but it does not directly state that expensive equipment will sit unused under the passage's exact condition."
+        },
+        {
+          "claim": "Successful libraries therefore separate noisy activities from study zones and choose tools that match community demand.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "makers-wheaton-noise-zones"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "makers-wheaton-noise-zones",
+              "locator": "https://www.wheatonlibrary.org/policies/noise-level-zones-policy — lines 149–189",
+              "evidenceSummary": "The library policy divides spaces into silent, quiet and conversation zones to accommodate quiet study, reading and collaboration."
+            }
+          ],
+          "note": "The policy supports separating activities by noise level, but it is not makerspace-specific and cannot establish that all successful libraries separate noisy activities from study zones."
+        }
+      ],
+      "acceptedAnswerAssessments": [
+        {
+          "questionId": "sentence-makerspaces-01",
+          "acceptedText": "3D printers",
+          "normalizedText": "3d printers",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 2,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "Canonical entry is a literal contiguous passage span within the two-word limit."
+        },
+        {
+          "questionId": "sentence-makerspaces-01",
+          "acceptedText": "3d printers",
+          "normalizedText": "3d printers",
+          "role": "alternative",
+          "passageStatus": "normalized-duplicate",
+          "wordCount": 2,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "Alternative differs from the canonical only by capitalization and normalizes to the same accepted form."
+        },
+        {
+          "questionId": "sentence-makerspaces-02",
+          "acceptedText": "storing",
+          "normalizedText": "storing",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 1,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "Canonical entry is a literal contiguous passage span within the two-word limit."
+        },
+        {
+          "questionId": "sentence-makerspaces-03",
+          "acceptedText": "first projects",
+          "normalizedText": "first projects",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 2,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "Canonical entry is a literal contiguous passage span within the two-word limit."
+        },
+        {
+          "questionId": "sentence-makerspaces-04",
+          "acceptedText": "interests",
+          "normalizedText": "interests",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 1,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "Canonical entry is a literal contiguous passage span within the two-word limit."
+        },
+        {
+          "questionId": "sentence-makerspaces-05",
+          "acceptedText": "study zones",
+          "normalizedText": "study zones",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 2,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "Canonical entry is a literal contiguous passage span within the two-word limit."
+        },
+        {
+          "questionId": "sentence-makerspaces-06",
+          "acceptedText": "public role",
+          "normalizedText": "public role",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 2,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "Canonical entry is a literal contiguous passage span within the two-word limit."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:sentence-completion:sentence-night-markets",
+      "passageAssessment": {
+        "ieltsFitness": "fit",
+        "factualRisk": "high",
+        "representationRisk": "high",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "low",
+        "wordLimitRisk": "low",
+        "questionOrderRisk": "low",
+        "promptCueRisk": "medium",
+        "hintCueRisk": "medium",
+        "notes": "The completion task is mechanically fit, but two sources were inaccessible and the remaining sources only partially support composite causal claims, comparisons, frequencies and the strongest-markets generalization. Hints were excluded from review."
+      },
+      "questions": [
+        {
+          "questionId": "sentence-night-markets-01",
+          "selectedAnswer": "shopping centre",
+          "normalizedSelectedAnswer": "shopping centre",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "Night markets can create an evening economy without a permanent shopping centre.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "shopping centre",
+            "start": 233,
+            "end": 248
+          },
+          "evidenceQuotes": [
+            "A closed street, a group of food vendors and a simple lighting plan can create an evening economy without requiring a permanent shopping centre."
+          ],
+          "closestCompetingAnswer": "car park",
+          "closestCompetitorPassageSpan": {
+            "text": "car park",
+            "start": 459,
+            "end": 467
+          },
+          "competitorFailure": "Car park belongs to the later comparison about accessibility and is not the permanent retail facility that the evening economy does without.",
+          "ambiguity": "none",
+          "reasoning": "The passage states the evening-economy proposition directly and supplies shopping centre after the same without-permanent construction."
+        },
+        {
+          "questionId": "sentence-night-markets-02",
+          "selectedAnswer": "new products",
+          "normalizedSelectedAnswer": "new products",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "A short trading window helps small businesses test new products.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "new products",
+            "start": 339,
+            "end": 351
+          },
+          "evidenceQuotes": [
+            "For small businesses, the short trading window lowers some costs and allows them to test new products."
+          ],
+          "closestCompetingAnswer": "market",
+          "closestCompetitorPassageSpan": {
+            "text": "market",
+            "start": 380,
+            "end": 386
+          },
+          "competitorFailure": "Test market is a familiar expression, but the passage does not say businesses test a market; its explicit object is new products.",
+          "ambiguity": "none",
+          "reasoning": "The prompt compresses allows them to into helps, while retaining the exact verb-object relation test new products."
+        },
+        {
+          "questionId": "sentence-night-markets-03",
+          "selectedAnswer": "transit stop",
+          "normalizedSelectedAnswer": "transit stop",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "Markets near a transit stop are easier for people to reach.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "transit stop",
+            "start": 396,
+            "end": 408
+          },
+          "evidenceQuotes": [
+            "A night market beside a transit stop is easier to reach than one placed in an isolated car park."
+          ],
+          "closestCompetingAnswer": "car park",
+          "closestCompetitorPassageSpan": {
+            "text": "car park",
+            "start": 459,
+            "end": 467
+          },
+          "competitorFailure": "The car park in the comparison is explicitly isolated and marks the less accessible location, not the easier one.",
+          "ambiguity": "none",
+          "reasoning": "Near paraphrases beside and the easier-to-reach comparison directly identifies transit stop."
+        },
+        {
+          "questionId": "sentence-night-markets-04",
+          "selectedAnswer": "pedestrian routes",
+          "normalizedSelectedAnswer": "pedestrian routes",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "Organizers may need to keep pedestrian routes clear to avoid disruption.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "pedestrian routes",
+            "start": 587,
+            "end": 604
+          },
+          "evidenceQuotes": [
+            "Organizers may need to limit amplified music, provide waste bins and keep pedestrian routes clear so that the market feels lively without becoming disruptive."
+          ],
+          "closestCompetingAnswer": "waste bins",
+          "closestCompetitorPassageSpan": {
+            "text": "waste bins",
+            "start": 567,
+            "end": 577
+          },
+          "competitorFailure": "The passage says organizers provide waste bins; clear is grammatically and explicitly predicated of pedestrian routes.",
+          "ambiguity": "none",
+          "reasoning": "The question preserves the exact keep-object-clear construction and paraphrases the purpose clause."
+        },
+        {
+          "questionId": "sentence-night-markets-05",
+          "selectedAnswer": "longer",
+          "normalizedSelectedAnswer": "longer",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Craft stalls and performances can make visitors stay longer.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "longer",
+            "start": 835,
+            "end": 841
+          },
+          "evidenceQuotes": [
+            "Craft stalls, repair tables and small performances can encourage visitors to stay longer and return for reasons beyond dinner."
+          ],
+          "closestCompetingAnswer": "lively",
+          "closestCompetitorPassageSpan": {
+            "text": "lively",
+            "start": 636,
+            "end": 642
+          },
+          "competitorFailure": "Stay lively is grammatically possible but describes visitors' state and is not the duration effect assigned to attractions in the passage.",
+          "ambiguity": "none",
+          "reasoning": "Make paraphrases encourage, while the passage supplies the exact stay longer phrase."
+        },
+        {
+          "questionId": "sentence-night-markets-06",
+          "selectedAnswer": "long-term success",
+          "normalizedSelectedAnswer": "long-term success",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "Organizers need feedback because a busy opening night may not prove long-term success.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "long-term success",
+            "start": 1225,
+            "end": 1242
+          },
+          "evidenceQuotes": [
+            "Without this information, organizers may mistake a busy opening night for long-term success."
+          ],
+          "closestCompetingAnswer": "costs",
+          "closestCompetitorPassageSpan": {
+            "text": "costs",
+            "start": 1090,
+            "end": 1095
+          },
+          "competitorFailure": "Costs are one feedback measure, but a busy opening night is specifically contrasted with long-term success, not offered as proof of costs.",
+          "ambiguity": "none",
+          "reasoning": "Need feedback paraphrases without this information, and may not prove captures the warning against mistaking an opening-night crowd for long-term success."
+        }
+      ],
+      "factualClaims": [
+        {
+          "claim": "A closed street, a group of food vendors and a simple lighting plan can create an evening economy without requiring a permanent shopping centre.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "night-naga-ordinance"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "night-naga-ordinance",
+              "locator": "https://www2.naga.gov.ph/prev-ordinance/ordinance-no-2014-004/ — lines 155–216 and 235–243",
+              "evidenceSummary": "The ordinance authorizes a night market on temporarily closed streets, temporary light structures, timed trading and the sale of goods and services as an economic opportunity."
+            }
+          ],
+          "note": "It supports temporary street use and commercial activity, but not the simple-lighting-plan mechanism or the exact causal comparison with a permanent shopping centre."
+        },
+        {
+          "claim": "For small businesses, the short trading window lowers some costs and allows them to test new products.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "night-bromley-test-trading"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "night-bromley-test-trading",
+              "locator": "https://www.bromley.gov.uk/TestTradingMarketStall — direct open returned an internal error/cache miss",
+              "evidenceSummary": "No substantive program page was available from the exact candidate URL during direct review."
+            }
+          ],
+          "note": "The access error is only a limitation; it cannot support lower costs or testing new products."
+        },
+        {
+          "claim": "A night market beside a transit stop is easier to reach than one placed in an isolated car park.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "night-primary-built-environment-accessibility"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "night-primary-built-environment-accessibility",
+              "locator": "https://www.mdpi.com/2075-5309/16/14/2728 — direct open returned HTTP 429 Too Many Requests",
+              "evidenceSummary": "The exact article URL did not expose study content during direct review because the server rate-limited access."
+            }
+          ],
+          "note": "The 429 response is not evidence, so the transit-stop versus isolated-car-park comparison remains untraceable from this source."
+        },
+        {
+          "claim": "Organizers may need to limit amplified music, provide waste bins and keep pedestrian routes clear so that the market feels lively without becoming disruptive.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "night-maidstone-street-trading-policy"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "night-maidstone-street-trading-policy",
+              "locator": "https://maidstone.gov.uk/home/primary-services/council-and-democracy/information-and-data/council-performance-reports/policies/street-trading-policy — lines 167–181, 212–219, 301–303 and 403–404",
+              "evidenceSummary": "The policy addresses pedestrian obstruction, waste disposal, nighttime noise and amplified audio as street-trading safety and nuisance concerns."
+            }
+          ],
+          "note": "The controls are supported for street trading generally, but the source neither requires the exact three actions for night markets nor supports the causal claim that they produce a lively but non-disruptive atmosphere."
+        },
+        {
+          "claim": "The strongest markets collect feedback after each event. Vendor sales, crowd movement, noise complaints and cleaning costs reveal whether the market is growing in a healthy way.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "night-hackney-market-metrics-costs"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "night-hackney-market-metrics-costs",
+              "locator": "https://consultation.hackney.gov.uk/parking-markets/fees-and-charges-2026/ — lines 27–46, 110–130, 156–159 and 231–259",
+              "evidenceSummary": "The consultation documents footfall, waste and cleansing costs, market sustainability and stakeholder feedback used for fee decisions."
+            }
+          ],
+          "note": "The source supports several relevant measures and feedback practices, but not vendor sales, crowd movement, collection after each event, or the claim that the strongest markets use this exact bundle."
+        }
+      ],
+      "acceptedAnswerAssessments": [
+        {
+          "questionId": "sentence-night-markets-01",
+          "acceptedText": "shopping centre",
+          "normalizedText": "shopping centre",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 2,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "Canonical entry is a literal contiguous passage span within the two-word limit."
+        },
+        {
+          "questionId": "sentence-night-markets-01",
+          "acceptedText": "shopping center",
+          "normalizedText": "shopping center",
+          "role": "alternative",
+          "passageStatus": "official-spelling-variant",
+          "wordCount": 2,
+          "grammaticalFit": "natural",
+          "evidenceIds": [
+            "ielts-british-american-spelling-policy"
+          ],
+          "note": "IELTS explicitly accepts both British and American spellings; 'center' is the American spelling counterpart of passage-form 'centre'."
+        },
+        {
+          "questionId": "sentence-night-markets-02",
+          "acceptedText": "new products",
+          "normalizedText": "new products",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 2,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "Canonical entry is a literal contiguous passage span within the two-word limit."
+        },
+        {
+          "questionId": "sentence-night-markets-03",
+          "acceptedText": "transit stop",
+          "normalizedText": "transit stop",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 2,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "Canonical entry is a literal contiguous passage span within the two-word limit."
+        },
+        {
+          "questionId": "sentence-night-markets-04",
+          "acceptedText": "pedestrian routes",
+          "normalizedText": "pedestrian routes",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 2,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "Canonical entry is a literal contiguous passage span within the two-word limit."
+        },
+        {
+          "questionId": "sentence-night-markets-05",
+          "acceptedText": "longer",
+          "normalizedText": "longer",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 1,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "Canonical entry is a literal contiguous passage span within the two-word limit."
+        },
+        {
+          "questionId": "sentence-night-markets-06",
+          "acceptedText": "long-term success",
+          "normalizedText": "long-term success",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 2,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "Canonical entry is a literal contiguous passage span within the two-word limit."
+        }
+      ]
+    }
+  ]
+}

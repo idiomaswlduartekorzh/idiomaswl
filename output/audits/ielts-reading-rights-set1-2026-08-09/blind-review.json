@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "ielts-reading-rights-blind-review.v1",
+  "generatedAt": "2026-08-09T00:00:00-05:00",
+  "reviewScope": "F0.2a — mock set-1 Reading only",
+  "excludes": [
+    "passage text",
+    "questions",
+    "options",
+    "answer keys",
+    "student data"
+  ],
+  "instruction": "Review only contract completeness, source identity, evidence scope and deny-by-default behavior. This packet cannot support an IELTS-content or legal-clearance verdict.",
+  "evidence": [
+    {
+      "id": "repository-mock-set-1",
+      "kind": "repository-source",
+      "label": "IELTS mock set-1 source record",
+      "location": "src/data/mocks/ielts-set-1.ts",
+      "accessedAt": "2026-08-09",
+      "note": "El archivo padre se rotula IELTS Academic; esa etiqueta permite inferir el módulo, pero no sustituye una declaración editorial por activo."
+    },
+    {
+      "id": "ielts-copyright-policy",
+      "kind": "official-policy",
+      "label": "IELTS copyright and trade mark statement",
+      "location": "https://ielts.org/legal/ielts-copyright-and-trade-mark-statement",
+      "accessedAt": "2026-08-09",
+      "note": "Política oficial revisada para delimitar reutilización y necesidad de autorización. No concede licencia a este repositorio."
+    },
+    {
+      "id": "cambridge-ielts-5-catalog",
+      "kind": "publisher-catalog",
+      "label": "Cambridge ELT catalogue — Cambridge IELTS 5",
+      "location": "https://www.cambridge.org/elt/order/catalogue/Exams.pdf",
+      "accessedAt": "2026-08-09",
+      "note": "Catálogo oficial que identifica Cambridge IELTS 5 Student’s Book with answers, ISBN 978-0-521-67701-1. No acredita que WeLearn tenga licencia."
+    },
+    {
+      "id": "external-cambridge-5-test-2-sequence",
+      "kind": "external-identification",
+      "label": "External identification of Cambridge 5 Test 2 passage sequence",
+      "location": "https://www.babarenglish.com/post/cambridge-ielts-academic-5-reading-test-1-answers-with-explanation",
+      "accessedAt": "2026-08-09",
+      "note": "Página externa usada solo para cotejo dirigido de la secuencia Bakelite / What’s so funny? / The Birth of Scientific English."
+    },
+    {
+      "id": "external-birth-scientific-english",
+      "kind": "external-identification",
+      "label": "External identification of The Birth of Scientific English",
+      "location": "https://ieltsdeal.com/ielts-academic-reading-cambridge-5-test-2-reading-passage-3-the-birth-of-scientific-english-with-best-solutions-and-best-explanations/",
+      "accessedAt": "2026-08-09",
+      "note": "Página externa usada solo para reforzar la identificación del tercer pasaje; no es evidencia de autorización."
+    }
+  ],
+  "records": [
+    {
+      "assetId": "mock:set-1:reading-part-5",
+      "title": "Bakelite",
+      "sourceObjectSha256": "51bfb1a6a110ed1cb09211aab48d533026c6d87992de3a6c45bff267e5ecdb56",
+      "passageSha256": "f1800a80933cf687f5fd27c9f7176c9db92a8128783b87b6c17c44a3a8f6199e",
+      "moduleStatus": "inferred",
+      "provenanceStatus": "probable-third-party-match",
+      "rightsBasis": "unknown-quarantined",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "humanReviewStatus": "pending",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    {
+      "assetId": "mock:set-1:reading-part-6",
+      "title": "What’s so funny?",
+      "sourceObjectSha256": "df93c358fb8c79c806d5537f5d8cd99379e5815f90433d4c158f0015e799a2a8",
+      "passageSha256": "2de952fc362533e1c006d05737840c99eea546079f78f1f87f51beb9b8f3684f",
+      "moduleStatus": "inferred",
+      "provenanceStatus": "probable-third-party-match",
+      "rightsBasis": "unknown-quarantined",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "humanReviewStatus": "pending",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    {
+      "assetId": "mock:set-1:reading-part-7",
+      "title": "The Birth of Scientific English",
+      "sourceObjectSha256": "cbcff7fc3583ddb6bbccd3828f361f3ed6ce094f1b7352eb3c8e53b5ceb9cf97",
+      "passageSha256": "abc4c678cfe569e824db64cb821daf4c49b01c775175dac0162c9db51a5019bc",
+      "moduleStatus": "inferred",
+      "provenanceStatus": "probable-third-party-match",
+      "rightsBasis": "unknown-quarantined",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "humanReviewStatus": "pending",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    }
+  ],
+  "contractMutationChecks": {
+    "verifiedOwnedOriginalCanAdvance": true,
+    "authorCannotSelfApprove": true,
+    "verifiedLicenseCanAdvance": true,
+    "licenseWithoutAuthorizationIsBlocked": true,
+    "verifiedPublicDomainCanAdvance": true,
+    "wrongKindModuleEvidenceIsBlocked": true,
+    "whitespaceAuthorshipIsBlocked": true,
+    "missingProvenanceEvidenceIsBlocked": true,
+    "blankFactualReviewIsBlocked": true,
+    "unknownFactualStatusIsBlocked": true,
+    "whitespaceHumanReviewIsBlocked": true,
+    "missingHumanAttestationIsBlocked": true,
+    "unknownHumanStatusIsBlocked": true,
+    "automatedTriageCannotApprove": true,
+    "invalidRightsBasisIsBlocked": true,
+    "invalidRegistryContractIsBlocked": true,
+    "impossibleCalendarDatesAreBlocked": true,
+    "wrongKindFactualResearchIsBlocked": true,
+    "requiredFactualReviewCannotBeNotApplicable": true,
+    "malformedEvidenceArrayFailsClosed": true,
+    "duplicateEvidenceIdsAreBlocked": true,
+    "duplicateRegistryEntriesAreBlocked": true
+  }
+}

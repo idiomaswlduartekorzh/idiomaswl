@@ -1,0 +1,312 @@
+{
+  "schemaVersion": "ielts-reading-table-completion-student-walkthrough.v1",
+  "reviewer": {
+    "humanSignature": false,
+    "sourceContext": "blind-review-packet-only",
+    "reviewedAt": "2026-08-11T17:17:39Z",
+    "blindPacketSha256": "241aa316ca3c6667eb62ff8f5ae72fe7f47cb396519d428589cd5aa5950fa361",
+    "notes": "Recorrido cognitivo prospectivo de estudiante promedio sobre las 18 celdas. Se usaron únicamente el paquete ciego, las coordenadas de fila y columna y la regla de máximo dos palabras; no se consultaron ayudas ni se consignaron términos candidatos."
+  },
+  "records": [
+    {
+      "assetId": "formative:table-completion:table-cooling-buildings",
+      "passageBarrier": "La tabla alterna mecanismo, condición y limitación en filas temáticamente cercanas. El principal costo cognitivo es conservar simultáneamente la fila y la función de la columna al cambiar entre el resumen y el texto, sin asumir que las celdas siguen el orden lineal del pasaje.",
+      "wordLimitRisk": "low",
+      "promptCueRisk": "medium",
+      "hintCueRisk": "not-assessed",
+      "shortcutRisks": [
+        "Completar por colocación natural del enunciado sin verificar que el término elegido sea un tramo literal y continuo del pasaje.",
+        "Recorrer el texto en el orden de las celdas y aceptar la primera coincidencia temática aunque pertenezca a otra fila o columna.",
+        "Usar la familiaridad con construcción sostenible para suplir evidencia que el pasaje no haya expresado."
+      ],
+      "transferValue": "Entrena a convertir encabezados de fila y columna en una coordenada semántica estable, predecir la forma gramatical antes de buscar y exigir doble ajuste: evidencia local más función dentro de la tabla. El procedimiento se transfiere a tablas técnicas con conceptos repetidos y respuestas fuera de orden.",
+      "nextAction": "En una segunda pasada, cubrir visualmente las demás filas, verbalizar la coordenada de cada celda y aplicar la misma secuencia: categoría gramatical, localización temática, tramo literal, contraste y recuento final.",
+      "questionWalkthrough": [
+        {
+          "questionId": "table-cooling-01-1",
+          "likelyMisread": "Confundir la definición general del método con el efecto específico que la columna pide, o tomar como objetivo del diseño una condición que corresponde a la celda vecina.",
+          "predictedGrammarCategory": "Sustantivo común no contable que funcione como objeto directo de la acción descrita.",
+          "wordLimitCheck": "Antes de escribir, contar únicamente las unidades del tramo copiado; admitir una o dos y tratar una forma con guion como una sola.",
+          "promptOnlyGuessRisk": "Medio: la frase permite varias completaciones plausibles por conocimiento general, de modo que la fluidez no constituye evidencia.",
+          "evidenceSearch": "Usar la etiqueta de la primera fila para localizar el párrafo del método y buscar allí la oración que describe su efecto, no la oración sobre la disposición física.",
+          "passageSpanCheck": "Exigir que el candidato aparezca de forma continua en una única oración del pasaje y que no necesite palabras añadidas o una reformulación.",
+          "grammarRecheck": "Insertar mentalmente el tramo y comprobar que queda un grupo nominal compatible con el verbo y con el resto de la oración.",
+          "spellingCheck": "Copiar mayúsculas, singularidad y ortografía directamente del pasaje; no normalizar el término desde memoria.",
+          "competitorCheck": "Comparar la frase del efecto con cualquier mención próxima a personas, superficies o condiciones y descartar la que no ocupe la función de aquello que se retira.",
+          "decisionRule": "Elegir solo el tramo que satisface a la vez la fila del método, la columna de funcionamiento, la sintaxis y el límite; una coincidencia temática aislada no basta.",
+          "repairAction": "Si quedan dos opciones, volver al encabezado de columna, subrayar mentalmente el verbo rector y releer una oración antes y una después hasta separar efecto de condición."
+        },
+        {
+          "questionId": "table-cooling-01-2",
+          "likelyMisread": "Tomar la colocación enfrentada de las aberturas como la condición solicitada, aunque la celda pide el factor que debe estudiarse antes de ubicarlas.",
+          "predictedGrammarCategory": "Sintagma nominal plural, posiblemente modificado, de no más de dos palabras.",
+          "wordLimitCheck": "Contar el sintagma completo y comprobar que el modificador, si es imprescindible, no eleva el total por encima de dos unidades.",
+          "promptOnlyGuessRisk": "Alto: el contexto arquitectónico activa varias condiciones razonables que podrían completar la frase sin provenir del pasaje.",
+          "evidenceSearch": "Dentro del párrafo identificado por la fila, buscar la relación temporal marcada por la acción previa al diseño y aislar el objeto de esa acción.",
+          "passageSpanCheck": "Verificar continuidad exacta y rechazar combinaciones construidas con palabras tomadas de posiciones separadas.",
+          "grammarRecheck": "Comprobar que el tramo funciona como objeto nominal después del verbo y que concuerda con la referencia posterior del mismo párrafo.",
+          "spellingCheck": "Trasladar el sintagma sin cambiar número, derivación ni orden interno.",
+          "competitorCheck": "Contrastar la variable estudiada con la ubicación resultante y con la consecuencia de una ubicación incorrecta; solo la primera corresponde a la columna de condición.",
+          "decisionRule": "Conservar el candidato que responde qué se estudia antes de decidir y que está explícitamente ligado a esa secuencia en el pasaje.",
+          "repairAction": "Si la atención se fija en las aberturas, retroceder hasta el verbo de estudio, formular la pregunta gramatical «¿qué se estudia?» y buscar su complemento literal."
+        },
+        {
+          "questionId": "table-cooling-02-1",
+          "likelyMisread": "Intercambiar el periodo de absorción con el periodo de liberación por leer ambos como una sola descripción del ciclo térmico.",
+          "predictedGrammarCategory": "Nombre temporal singular introducido por el artículo ya presente en la celda.",
+          "wordLimitCheck": "Confirmar que el tramo temporal cabe sin repetir el artículo incluido en el enunciado y sin exceder dos palabras.",
+          "promptOnlyGuessRisk": "Medio: el contraste temporal hace que una opción opuesta parezca igualmente familiar si no se verifica la dirección del proceso.",
+          "evidenceSearch": "Localizar el párrafo de la segunda fila y seguir específicamente el verbo de absorción, ignorando por el momento la cláusula que describe la fase inversa.",
+          "passageSpanCheck": "Comprobar que el nombre temporal está inmediatamente asociado a la acción pedida y que el tramo es literal y continuo.",
+          "grammarRecheck": "Insertar la opción después del artículo y verificar que produce un complemento temporal natural sin duplicación.",
+          "spellingCheck": "Copiar la forma exacta del nombre temporal y conservar su número.",
+          "competitorCheck": "Comparar las dos fases temporales del ciclo y descartar la que acompaña al verbo opuesto.",
+          "decisionRule": "La acción verbal de la celda decide entre los periodos; elegir únicamente el que el pasaje vincula de manera directa con esa acción.",
+          "repairAction": "Dibujar mentalmente dos columnas, absorción y liberación, y reasignar cada referencia temporal antes de volver a completar."
+        },
+        {
+          "questionId": "table-cooling-02-2",
+          "likelyMisread": "Elegir la referencia a condiciones más frescas en lugar del punto temporal después del cual debe ocurrir la liberación.",
+          "predictedGrammarCategory": "Nombre temporal singular que complete una locución encabezada por una preposición.",
+          "wordLimitCheck": "No copiar la preposición porque ya figura en la celda; contar solo el nombre o sintagma que sigue.",
+          "promptOnlyGuessRisk": "Medio: la frase es predecible por sentido común, pero el pasaje distingue una comparación ambiental de un límite temporal.",
+          "evidenceSearch": "En el párrafo de la segunda fila, buscar la oración de limitación y localizar el complemento temporal gobernado por la preposición final.",
+          "passageSpanCheck": "Validar que el candidato pertenece a la misma cláusula de incapacidad o limitación, no a una oración anterior de beneficio.",
+          "grammarRecheck": "Comprobar que la preposición más el tramo forman un complemento temporal completo y no requieren artículo adicional.",
+          "spellingCheck": "Mantener exactamente la forma encontrada, sin sustituirla por un sinónimo temporal.",
+          "competitorCheck": "Contrastar el punto de referencia de la limitación con la condición comparativa mencionada cerca; escoger solo el que completa la relación de posterioridad.",
+          "decisionRule": "Priorizar la dependencia sintáctica directa con la preposición y el verbo de liberación sobre la cercanía temática de otra referencia temporal.",
+          "repairAction": "Si persiste la duda, releer únicamente la oración que expresa menor utilidad y rastrear desde el verbo hasta su complemento final."
+        },
+        {
+          "questionId": "table-cooling-03-1",
+          "likelyMisread": "Confundir el elemento que detiene la radiación, aquello que la recibe primero o el componente cuya entrada se evita.",
+          "predictedGrammarCategory": "Sustantivo concreto singular precedido por el artículo definido ya incluido.",
+          "wordLimitCheck": "Excluir el artículo del tramo copiado y verificar que el núcleo nominal solo ocupe una o dos palabras.",
+          "promptOnlyGuessRisk": "Alto: varias partes de un edificio encajan semántica y gramaticalmente en la frase aislada.",
+          "evidenceSearch": "Ubicar el párrafo de la tercera fila y buscar la comparación que explica por qué una solución exterior resulta más eficaz.",
+          "passageSpanCheck": "Exigir que el sustantivo sea el complemento literal de la relación de entrada en esa comparación, no un elemento mencionado en una lista anterior.",
+          "grammarRecheck": "Comprobar que el artículo y el sustantivo forman un grupo nominal singular coherente con el verbo.",
+          "spellingCheck": "Copiar el núcleo sin pluralizarlo ni reemplazarlo por una categoría más general.",
+          "competitorCheck": "Comparar los componentes cercanos por su papel causal: bloqueador, objetivo inicial y límite de entrada; la celda solicita solo este último.",
+          "decisionRule": "Seleccionar el término cuya función en la oración fuente coincide exactamente con el punto de entrada descrito por la celda.",
+          "repairAction": "Reconstruir la cadena causal del párrafo en tres pasos y asignar cada sustantivo a su papel antes de decidir."
+        },
+        {
+          "questionId": "table-cooling-03-2",
+          "likelyMisread": "Tomar las variaciones estacionales o diarias como respuesta, aunque actúan como causas de cambio y no como la propiedad de la que depende el diseño.",
+          "predictedGrammarCategory": "Sustantivo abstracto singular posesionado por el grupo nominal previo.",
+          "wordLimitCheck": "Contar solo el complemento de la posesión y evitar copiar explicaciones posteriores que excedan el máximo.",
+          "promptOnlyGuessRisk": "Alto: el posesivo y el contexto permiten inferir varias propiedades físicas sin consultar el texto.",
+          "evidenceSearch": "En el párrafo de la tercera fila, localizar la oración con la relación explícita de dependencia y extraer su complemento inmediato.",
+          "passageSpanCheck": "Comprobar que el candidato es un tramo continuo dentro de la misma proposición de dependencia y no una variable explicativa añadida después.",
+          "grammarRecheck": "Verificar que el sustantivo completa correctamente la construcción posesiva y mantiene el número esperado.",
+          "spellingCheck": "Copiar la forma nominal exacta, sin convertirla en adjetivo ni agregar puntuación.",
+          "competitorCheck": "Distinguir la propiedad gobernante de los factores que explican su variación; la columna pide la primera.",
+          "decisionRule": "Elegir el núcleo nombrado inmediatamente después de la relación de dependencia, siempre que satisfaga fila, columna y límite.",
+          "repairAction": "Si se mezclan propiedad y factores, separar la oración fuente en «depende de X» y «X cambia con Y», y completar solo con X sin escribirlo en las notas."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:table-completion:table-rain-gardens",
+      "passageBarrier": "El pasaje reutiliza vocabulario de agua, ubicación y mantenimiento, mientras la tabla comprime relaciones diferentes: beneficio, destino, acción, estado y punto de intervención. La barrera es no confundir proximidad temática con la función exacta marcada por cada columna.",
+      "wordLimitRisk": "low",
+      "promptCueRisk": "medium",
+      "hintCueRisk": "not-assessed",
+      "shortcutRisks": [
+        "Completar desde conocimientos ambientales generales y omitir la exigencia de copiar un tramo literal.",
+        "Usar la primera mención relacionada con agua como respuesta para varias celdas sin revisar la coordenada de fila y columna.",
+        "Perder la distinción entre el objeto de mantenimiento y el lugar preciso donde se realiza la acción."
+      ],
+      "transferValue": "Refuerza la lectura funcional de tablas en las que un mismo tema reaparece con papeles gramaticales distintos. La combinación de predicción sintáctica y comprobación de la relación causal ayuda a evitar respuestas plausibles pero mal coordinadas.",
+      "nextAction": "Marcar para cada fila una etiqueta funcional breve y, antes de buscar, convertir cada celda en una pregunta gramatical. Después comprobar evidencia, literalidad, competidor y límite de palabras de forma independiente.",
+      "questionWalkthrough": [
+        {
+          "questionId": "table-rain-gardens-01-1",
+          "likelyMisread": "Buscar el destino del agua o el modo de infiltración cuando la celda pide la duración o carácter del almacenamiento posterior a la lluvia.",
+          "predictedGrammarCategory": "Adverbio que modifique el verbo y exprese duración limitada o modo temporal.",
+          "wordLimitCheck": "Comprobar que el modificador cabe como una o dos palabras y no repetir el complemento temporal ya escrito después del hueco.",
+          "promptOnlyGuessRisk": "Alto: numerosos adverbios comunes producen una oración natural, pero solo la evidencia literal resuelve la elección.",
+          "evidenceSearch": "Usar la fila de gestión y buscar en el párrafo introductorio la oración que contrasta retención con envío inmediato.",
+          "passageSpanCheck": "Confirmar que el modificador aparece pegado al verbo correspondiente y constituye un tramo continuo.",
+          "grammarRecheck": "Insertar el tramo y verificar que funciona como adverbio sin alterar la transitividad ni duplicar información.",
+          "spellingCheck": "Copiar la terminación y la forma exactas; no transformar el adjetivo relacionado en adverbio por cuenta propia.",
+          "competitorCheck": "Comparar duración, velocidad de infiltración y momento del evento; descartar lo que responda a cómo entra el agua en el terreno o cuándo llueve.",
+          "decisionRule": "Aceptar solo el modificador que el pasaje conecta directamente con el verbo de retención y que representa la función de la columna.",
+          "repairAction": "Si la frase parece resolverse por intuición, borrar la conjetura, localizar el contraste completo y volver a identificar qué palabra modifica el verbo."
+        },
+        {
+          "questionId": "table-rain-gardens-01-2",
+          "likelyMisread": "Responder con el fenómeno general de escorrentía o con el terreno receptor, en vez del destino al que se evita enviar todo de inmediato.",
+          "predictedGrammarCategory": "Sustantivo contable plural que funcione como complemento de la preposición.",
+          "wordLimitCheck": "No incluir la preposición ya presente y conservar el plural dentro del máximo de dos palabras.",
+          "promptOnlyGuessRisk": "Medio: el contexto urbano sugiere destinos razonables que no necesariamente son el tramo usado por el pasaje.",
+          "evidenceSearch": "En el mismo contraste introductorio, seguir el verbo de envío hasta el complemento que nombra el destino.",
+          "passageSpanCheck": "Verificar que el término aparece en la misma cláusula que cuantifica la totalidad y marca la inmediatez.",
+          "grammarRecheck": "Comprobar que la preposición más el sustantivo plural forman un complemento locativo o de destino completo.",
+          "spellingCheck": "Mantener el número gramatical y copiar la ortografía sin singularizar.",
+          "competitorCheck": "Distinguir lo enviado, el lugar que lo recibe y el espacio que lo retiene; la celda requiere exclusivamente el receptor evitado.",
+          "decisionRule": "Elegir el complemento gobernado por el verbo de envío en la oración fuente, no otro sustantivo acuático cercano.",
+          "repairAction": "Convertir la frase en la pregunta «¿enviar a dónde?» y rastrear solo ese complemento dentro de la oración de contraste."
+        },
+        {
+          "questionId": "table-rain-gardens-02-1",
+          "likelyMisread": "Interpretar el pronombre final como referido al agua y buscar un lugar, aunque la estructura pide la acción que la zona elevada realiza respecto de la instalación.",
+          "predictedGrammarCategory": "Verbo léxico en presente, tercera persona singular, que cierre una oración relativa reducida.",
+          "wordLimitCheck": "Contar únicamente la forma verbal, sin copiar su sujeto ni los complementos ya incluidos en la tabla.",
+          "promptOnlyGuessRisk": "Alto: varias acciones de diseño son semánticamente posibles y la frase aislada no fija una sola.",
+          "evidenceSearch": "Ir al párrafo de ubicación y localizar la relación vertical entre la instalación y la zona asociada; identificar el verbo de la cláusula relativa.",
+          "passageSpanCheck": "Asegurar que la forma verbal es literal, continua y pertenece a la cláusula que modifica a la zona, no a una oración sobre permanencia.",
+          "grammarRecheck": "Verificar la terminación de tercera persona singular y la compatibilidad del verbo con el objeto implícito de la relación.",
+          "spellingCheck": "Copiar la flexión exacta del pasaje y no usar la forma base.",
+          "competitorCheck": "Contrastar verbos de ubicación, recepción y permanencia; conservar el que define la relación funcional entre la zona y la instalación.",
+          "decisionRule": "La sintaxis de la cláusula y la relación espacial de la fila deben converger en el mismo verbo explícito.",
+          "repairAction": "Si se busca un sustantivo por inercia, identificar sujeto y objeto de la frase, predecir de nuevo la categoría verbal y releer la oración fuente."
+        },
+        {
+          "questionId": "table-rain-gardens-02-2",
+          "likelyMisread": "Elegir la consecuencia para las raíces o la pérdida de eficacia en vez del estado del terreno que activa la advertencia.",
+          "predictedGrammarCategory": "Adjetivo predicativo que describa un estado persistente del terreno.",
+          "wordLimitCheck": "No repetir el verbo copulativo incluido y comprobar que el adjetivo o sintagma adjetival no supera dos palabras.",
+          "promptOnlyGuessRisk": "Medio: varias condiciones desfavorables resultan lógicas, pero la celda exige la formulación del pasaje.",
+          "evidenceSearch": "Dentro del párrafo de ubicación, buscar la oración condicional que describe el estado problemático antes de sus consecuencias.",
+          "passageSpanCheck": "Confirmar que el candidato es el atributo literal del terreno en esa condición y no un efecto mencionado después.",
+          "grammarRecheck": "Insertar la forma tras el verbo copulativo y verificar función adjetival y ausencia de determinante innecesario.",
+          "spellingCheck": "Copiar el adjetivo y cualquier modificador permitido exactamente, sin cambiar grado o derivación.",
+          "competitorCheck": "Separar causa, efecto sobre la vegetación y efecto sobre el rendimiento; solo la causa describe al terreno.",
+          "decisionRule": "Elegir el atributo directamente ligado al terreno en la condición explícita, con prioridad sobre consecuencias más llamativas.",
+          "repairAction": "Trazar mentalmente la cadena «estado, consecuencia biológica, consecuencia funcional» y volver al primer eslabón."
+        },
+        {
+          "questionId": "table-rain-gardens-03-1",
+          "likelyMisread": "Tomar las estructuras creadas, la parte de la planta que actúa o el medio donde se forman como si fueran equivalentes.",
+          "predictedGrammarCategory": "Sustantivo común singular que complete un grupo preposicional locativo.",
+          "wordLimitCheck": "Excluir la preposición y el artículo ya proporcionados; contar solo el núcleo locativo copiado.",
+          "promptOnlyGuessRisk": "Medio: el conocimiento de jardinería ofrece varios medios físicos plausibles.",
+          "evidenceSearch": "En la sección sobre elección vegetal, localizar la oración causal que conecta el tipo de planta con la apertura de estructuras y seguir la preposición de lugar.",
+          "passageSpanCheck": "Verificar que el sustantivo aparece inmediatamente dentro del complemento locativo de esa acción.",
+          "grammarRecheck": "Comprobar que el artículo singular y el núcleo forman un sintagma locativo natural.",
+          "spellingCheck": "Copiar el núcleo en singular y evitar una variante técnica no usada por el pasaje.",
+          "competitorCheck": "Distinguir agente, resultado y medio; la celda ya expresa agente y resultado, por lo que falta el medio.",
+          "decisionRule": "Seleccionar exclusivamente el sustantivo que ocupa la función locativa en la oración fuente y respeta la coordenada de beneficio.",
+          "repairAction": "Etiquetar los tres papeles de la oración —quién, qué produce, dónde— y buscar el tramo asociado al tercero."
+        },
+        {
+          "questionId": "table-rain-gardens-03-2",
+          "likelyMisread": "Completar con el residuo que se retira o con el flujo que podría bloquearse, aunque la celda pide el tipo de punto donde se realiza la limpieza.",
+          "predictedGrammarCategory": "Sustantivo singular usado atributivamente para modificar el nombre plural que ya sigue al hueco.",
+          "wordLimitCheck": "No copiar el nombre plural ya visible; contar únicamente el modificador anterior dentro del límite.",
+          "promptOnlyGuessRisk": "Alto: la combinación con el nombre posterior admite varios modificadores funcionales de mantenimiento.",
+          "evidenceSearch": "Ir al párrafo de mantenimiento y seguir la acción de limpieza hasta el complemento que especifica la clase de punto.",
+          "passageSpanCheck": "Confirmar que el modificador y el nombre posterior aparecen juntos en el pasaje, aunque la respuesta contenga solo la parte ausente.",
+          "grammarRecheck": "Verificar que el sustantivo atributivo puede preceder al nombre plural sin artículo ni cambio flexivo.",
+          "spellingCheck": "Copiar la forma singular exacta del modificador; no adaptarla al plural del nombre siguiente.",
+          "competitorCheck": "Contrastar material retirado, lugar de retirada y consecuencia de no hacerlo; la celda solicita el lugar tipificado.",
+          "decisionRule": "Elegir el modificador que forma con el nombre dado la misma unidad nominal usada en la instrucción de mantenimiento.",
+          "repairAction": "Si se escoge el objeto retirado, releer desde la preposición locativa y reconstruir el sintagma nominal completo antes de aislar la parte faltante."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:table-completion:table-museum-inventory",
+      "passageBarrier": "El texto describe etapas que se solapan y controles de calidad que aparecen después de sus acciones principales. La tabla además agrupa dos etapas en una fila, por lo que el estudiante debe preservar la columna funcional y no asumir que toda evidencia de una fila procede de un solo párrafo.",
+      "wordLimitRisk": "low",
+      "promptCueRisk": "high",
+      "hintCueRisk": "not-assessed",
+      "shortcutRisks": [
+        "Responder con vocabulario genérico de archivos digitales porque completa bien la frase, sin comprobar su presencia literal.",
+        "Mantener una búsqueda estrictamente lineal y perder una celda cuya evidencia aparece en otra etapa agrupada por la misma fila.",
+        "Confundir el actor, el objeto documentado y el control de calidad por compartir la misma oración o párrafo."
+      ],
+      "transferValue": "Desarrolla flexibilidad para tablas que reorganizan la estructura del pasaje y agrupan etapas. También practica el control de papeles semánticos —actor, acción, atributo y momento— antes de aceptar una coincidencia léxica.",
+      "nextAction": "Resolver cada celda como una búsqueda independiente, reanclando siempre fila y columna. Para la fila combinada, permitir un salto de párrafo deliberado y verificar que el control de calidad corresponde a la etapa correcta.",
+      "questionWalkthrough": [
+        {
+          "questionId": "table-museum-inventory-01-1",
+          "likelyMisread": "Buscar el tipo de objeto o su importancia comunitaria cuando la celda pide el verbo que completa la relación de procedencia.",
+          "predictedGrammarCategory": "Verbo léxico en pasado simple que complete una construcción de origen.",
+          "wordLimitCheck": "Contar solo la forma verbal ausente y no repetir la preposición de procedencia ya incluida.",
+          "promptOnlyGuessRisk": "Alto: varias formas verbales frecuentes completan de manera natural esta construcción.",
+          "evidenceSearch": "En el párrafo introductorio, localizar la enumeración de lo que un registro debe explicar y seguir la cláusula relativa sobre procedencia.",
+          "passageSpanCheck": "Exigir que la forma verbal aparezca literalmente entre el sujeto pronominal y la preposición correspondiente.",
+          "grammarRecheck": "Comprobar tiempo pasado, concordancia con el sujeto singular y compatibilidad con la preposición posterior.",
+          "spellingCheck": "Copiar la forma flexionada exacta; no sustituirla por un sinónimo ni usar el infinitivo.",
+          "competitorCheck": "Contrastar los tres contenidos del registro: identidad, procedencia y relevancia; solo la segunda relación completa esta celda.",
+          "decisionRule": "Elegir el verbo literal que enlaza el objeto con su procedencia dentro de la enumeración del pasaje.",
+          "repairAction": "Si aparece un sustantivo como opción, volver a identificar el hueco entre sujeto y preposición, reafirmar la categoría verbal y releer la cláusula exacta."
+        },
+        {
+          "questionId": "table-museum-inventory-01-2",
+          "likelyMisread": "Confundir el producto visual con otros componentes de un registro o con las condiciones técnicas de la etapa fotográfica.",
+          "predictedGrammarCategory": "Sustantivo contable plural que funcione como objeto de una forma verbal no finita.",
+          "wordLimitCheck": "No copiar el verbo ya parafraseado en la celda y conservar el sustantivo plural dentro de dos palabras.",
+          "promptOnlyGuessRisk": "Bajo: la oposición conceptual orienta bastante, aunque todavía se debe verificar la forma exacta y el número.",
+          "evidenceSearch": "Buscar en la introducción la negación que limita una definición simplista de la digitalización, no las instrucciones técnicas de un párrafo posterior.",
+          "passageSpanCheck": "Confirmar que el objeto aparece inmediatamente después de la acción mencionada en esa negación.",
+          "grammarRecheck": "Comprobar que la forma plural encaja como objeto directo y que no duplica ningún determinante.",
+          "spellingCheck": "Mantener exactamente el plural y la ortografía del pasaje.",
+          "competitorCheck": "Comparar el producto de la acción básica con elementos del registro y accesorios técnicos; solo el primero está negado como definición suficiente.",
+          "decisionRule": "Aceptar el objeto literal de la acción en la oración de contraste, no un elemento fotográfico citado después.",
+          "repairAction": "Si se salta al párrafo técnico, regresar a la frase definitoria de la introducción y localizar el complemento del verbo."
+        },
+        {
+          "questionId": "table-museum-inventory-02-1",
+          "likelyMisread": "Elegir documentos o repertorios consultados en lugar del grupo humano al que se puede preguntar por la historia del objeto.",
+          "predictedGrammarCategory": "Sustantivo contable plural con referente humano, usado como objeto directo.",
+          "wordLimitCheck": "Comprobar que el referente humano ocupa una o dos palabras y no incluir el verbo de entrevista ya presente.",
+          "promptOnlyGuessRisk": "Alto: distintos participantes habituales de un museo serían plausibles por conocimiento externo.",
+          "evidenceSearch": "En el párrafo de identificación, localizar la lista de métodos de comprobación y distinguir la acción que selecciona un complemento humano.",
+          "passageSpanCheck": "Verificar que el sustantivo plural es el objeto literal del verbo correspondiente dentro de la lista.",
+          "grammarRecheck": "Comprobar pluralidad, referencia humana y ausencia de artículo obligatorio en el contexto de la celda.",
+          "spellingCheck": "Copiar el nombre exactamente, sin reemplazarlo por una etiqueta profesional parecida.",
+          "competitorCheck": "Separar fuentes escritas, objetos comparables y fuentes humanas; la acción de la celda selecciona únicamente la tercera clase.",
+          "decisionRule": "El verbo de interacción humana y la lista del pasaje deben apuntar al mismo referente plural explícito.",
+          "repairAction": "Si dos actores parecen posibles, revisar cuál aparece como complemento directo de la acción concreta y descartar los inferidos por práctica museística."
+        },
+        {
+          "questionId": "table-museum-inventory-02-2",
+          "likelyMisread": "Responder con la incertidumbre misma o con una suposición, sin atender a la categoría epistemológica que no debe atribuirse a información dudosa.",
+          "predictedGrammarCategory": "Sustantivo abstracto no contable que complete una comparación de estatus.",
+          "wordLimitCheck": "No incluir la preposición comparativa ya escrita y verificar que el núcleo nominal cabe dentro del máximo.",
+          "promptOnlyGuessRisk": "Medio: varias etiquetas de certeza son semánticamente cercanas, pero no todas figuran en el texto.",
+          "evidenceSearch": "En el párrafo de identificación, buscar la oración normativa sobre cómo expresar información incierta y seguir la construcción comparativa.",
+          "passageSpanCheck": "Asegurar que el sustantivo es el complemento literal de esa comparación y no el nombre de la conjetura contrastada.",
+          "grammarRecheck": "Comprobar que el sustantivo no contable funciona sin artículo en la construcción dada.",
+          "spellingCheck": "Copiar la forma nominal exacta, sin derivarla de un adjetivo relacionado.",
+          "competitorCheck": "Distinguir estado real de la información, acción incorrecta del redactor y etiqueta de certeza falsamente atribuida; la celda pide la última.",
+          "decisionRule": "Elegir el término que ocupa explícitamente el complemento de la comparación prohibida en la oración fuente.",
+          "repairAction": "Reformular la relación como «no presentar X con estatus Y» y localizar Y gramaticalmente, sin completar por oposición intuitiva."
+        },
+        {
+          "questionId": "table-museum-inventory-03-1",
+          "likelyMisread": "Elegir el propio marcador, el fondo o una propiedad visual cuando la celda pregunta qué magnitud hace útil al marcador.",
+          "predictedGrammarCategory": "Sustantivo abstracto singular que nombre una magnitud o propiedad medible.",
+          "wordLimitCheck": "Contar únicamente el núcleo de la magnitud y no copiar la cláusula condicional completa.",
+          "promptOnlyGuessRisk": "Alto: distintos parámetros de documentación visual pueden parecer relevantes sin estar vinculados al marcador.",
+          "evidenceSearch": "En el párrafo de fotografía, localizar la condición que acompaña el uso del marcador y aislar el sujeto de esa condición.",
+          "passageSpanCheck": "Confirmar que el nombre de la magnitud aparece de forma continua en la misma frase que el marcador.",
+          "grammarRecheck": "Insertar el sustantivo antes del verbo singular ya presente y comprobar concordancia y sentido condicional.",
+          "spellingCheck": "Copiar el nombre exactamente y mantener su singularidad.",
+          "competitorCheck": "Contrastar soporte, iluminación, fondo y magnitud documentada; solo esta última explica la presencia del marcador.",
+          "decisionRule": "Escoger el sustantivo que funciona como sujeto de la condición explícita asociada al marcador, no otra exigencia fotográfica cercana.",
+          "repairAction": "Si se elige un accesorio, volver a preguntar «¿cuándo resulta necesario el marcador?» y rastrear el sujeto de la respuesta textual."
+        },
+        {
+          "questionId": "table-museum-inventory-03-2",
+          "likelyMisread": "Confundir quién revisa, qué se revisa o qué errores se evitan con el momento del proceso antes del cual debe completarse la revisión.",
+          "predictedGrammarCategory": "Sustantivo abstracto no contable que nombre una etapa o evento posterior.",
+          "wordLimitCheck": "No incluir la preposición temporal ya dada; comprobar que el nombre de la etapa ocupa como máximo dos palabras.",
+          "promptOnlyGuessRisk": "Alto: varias etapas finales habituales en flujos digitales completan la frase con naturalidad.",
+          "evidenceSearch": "Aunque la fila combina fotografía y almacenamiento, buscar en el párrafo final la oración normativa sobre revisión humana y seguir su complemento temporal.",
+          "passageSpanCheck": "Confirmar que el término aparece después de la preposición temporal en la misma oración y no en la consecuencia posterior sobre el catálogo.",
+          "grammarRecheck": "Verificar que el sustantivo funciona como evento posterior sin artículo adicional y que la oración queda completa.",
+          "spellingCheck": "Copiar la forma nominal exacta y evitar una variante verbal o un sinónimo de flujo de trabajo.",
+          "competitorCheck": "Separar actor, objeto de revisión, etapa límite y consecuencia de omitir el control; la celda solicita la etapa límite.",
+          "decisionRule": "Seleccionar el complemento literal de la preposición temporal en la regla de revisión, aun cuando esté en un párrafo distinto del primer concepto de la fila.",
+          "repairAction": "Reanclar en la columna de control de calidad, saltar deliberadamente al párrafo final y recorrer la oración desde el verbo de revisión hasta su límite temporal."
+        }
+      ]
+    }
+  ]
+}

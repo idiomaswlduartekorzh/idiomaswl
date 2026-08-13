@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "ielts-reading-summary-completion-audit-verdicts.v1",
+  "reviewedAt": "2026-08-11T15:34:01Z",
+  "status": "pass",
+  "passMeaning": "The F0.2b.9 audit dossier and its detection controls pass; all three assets remain quarantined and the bank, content certification, Practice, Exam and security remain blocked.",
+  "rows": [
+    {
+      "lane": "Rights and provenance",
+      "boardMark": "✅",
+      "scope": "Dossier completeness, candidate-source triage and conservative publication decision for exactly 3/3 Summary Completion assets.",
+      "findings": "3/3 assets remain unknown-quarantined; the ledger contains two official policy/sample sources and 14 factual candidates, while the directed provenance search found no useful exact match and does not prove originality.",
+      "blockersCarriedForward": "Authorship, license or rights basis, source-to-draft history, factual sign-off and independent human approval remain unresolved."
+    },
+    {
+      "lane": "Full-stack and data",
+      "boardMark": "✅",
+      "scope": "Exact 3/18/18/19/19 inventory, object and passage identity, word-limit contract, accepted variants, evidence offsets, render closure and next-unit boundary.",
+      "findings": "The gate reconciles catalog, baseline and registry; 18 canonical answers are whole-token passage spans in intended order and the single extra accepted entry is tracked separately.",
+      "blockersCarriedForward": "The runtime hard-codes two words without scoring enforcement, exposes keys and hints to the client, lacks versioned persistence, and the accepted alternative `the roof` creates an invalid doubled determiner."
+    },
+    {
+      "lane": "IELTS expert",
+      "boardMark": "✅",
+      "scope": "Independent prompt-only, passage-based first pass and source-informed second pass over all 18 questions and 15 factual claims.",
+      "findings": "The expert preserved 18/18 answer decisions, verified the visible two-word limit and intended passage order, and classified all three sets as mixed rather than certifying them as authentic continuous Summary Completion tasks.",
+      "blockersCarriedForward": "Ten material ambiguities, three minor ambiguities, isolated sentence cards instead of a continuous summary, the `the roof` grammar failure and incomplete factual support block content certification."
+    },
+    {
+      "lane": "Cognitive walkthrough",
+      "boardMark": "✅",
+      "scope": "Prospective average-student walkthrough from the key-free blind packet for 3 passages and 18 questions.",
+      "findings": "The walkthrough covers locating evidence, testing grammar and scope, comparing alternatives, respecting the word limit and repairing errors without assigning answers.",
+      "blockersCarriedForward": "This is an AI simulation, not observed student usability, retention, transfer or band improvement evidence."
+    },
+    {
+      "lane": "Anti-bias and leakage",
+      "boardMark": "✅",
+      "scope": "Detection of position, length, grammatical-class, prompt overlap, hint exposure, client payload leakage and answer-assignment leakage.",
+      "findings": "The position-modal answer-length shortcut hits 13/18; paragraph-by-position hits 17/18, nominal-phrase classification covers 18/18, and all 18 hints are available before response.",
+      "blockersCarriedForward": "n=18 cannot certify fairness; strong structural predictability, serialized keys/hints/explanations and guided-training feedback keep Practice, Exam and security blocked."
+    },
+    {
+      "lane": "UI/UX and accessibility",
+      "boardMark": "➖",
+      "scope": "Not applicable to unchanged learner-runtime conformance in this audit-only delta.",
+      "findings": "Seven direct learner-facing files and the exact 16-file render closure remain pinned and unchanged by F0.2b.9.",
+      "blockersCarriedForward": "Inherited defects remain: repeated accessible names, missing progress and live semantics, missing English language boundaries, incomplete focus management, destructive reset and no split Text/Questions workflow."
+    },
+    {
+      "lane": "Playwright",
+      "boardMark": "➖",
+      "scope": "Not applicable to unchanged learner-runtime behavior; portable Chromium later verifies the report only.",
+      "findings": "No data, copy, DOM, CSS, interaction or route behavior was changed by this unit, so browser conformance is neither newly exercised nor claimed.",
+      "blockersCarriedForward": "Learner-route hydration, accessibility, responsive behavior, focus, reload/reset, word-limit scoring and pre-response payload secrecy remain open for the implementation phase."
+    }
+  ]
+}

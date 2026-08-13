@@ -1,0 +1,397 @@
+{
+  "schemaVersion": "ielts-reading-multiple-choice-rights-validation.v1",
+  "generatedAt": "2026-08-09T00:00:00-05:00",
+  "unit": "F0.2b.1 — expediente de tres pasajes formativos Multiple Choice",
+  "status": "pass",
+  "passMeaning": "PASS certifica cobertura, identidad, cuarentena, paquete ciego y detección de riesgos. Los tres pasajes NO quedan aprobados, factualizados, licenciados ni listos para publicación.",
+  "scope": {
+    "passages": 3,
+    "questions": 18,
+    "registryEntriesInUnit": 3,
+    "registryEntriesTotal": 21,
+    "coveredAssetIds": [
+      "formative:multiple-choice:mc-sleep-learning",
+      "formative:multiple-choice:mc-river-restoration",
+      "formative:multiple-choice:mc-digital-notes"
+    ],
+    "parentF02bRemainsOpen": true,
+    "learnerFacingFilesChangedByUnit": false
+  },
+  "checks": {
+    "exactCoverage": true,
+    "stableUniqueIds": true,
+    "sourceHashesMatchBaseline": true,
+    "registryReferencesResolve": true,
+    "factualSourceAvailabilityRecorded": true,
+    "candidateSourcesAreNotTreatedAsVerification": true,
+    "factualReviewRequiredForEveryAsset": true,
+    "actualAssetsAllQuarantined": true,
+    "actualRegistryRecordsStructurallyValid": true,
+    "visibleOriginalityClaimObservedButUnverified": true,
+    "blindPacketContainsNoKeysOrFeedback": true,
+    "blindPacketContainsNoLearnerOrContactPii": true,
+    "factualSourcePacketContainsNoKeysOrFeedback": true,
+    "independentExpertCoverageComplete": true,
+    "studentWalkthroughCoverageComplete": true,
+    "optionPermutationPreservesSemanticKey": true,
+    "statisticalCertificationWithheld": true,
+    "contentBalanceCertificationBlocked": true,
+    "contentMutationDenied": true
+  },
+  "decisions": [
+    {
+      "assetId": "formative:multiple-choice:mc-sleep-learning",
+      "title": "Sleep and learning",
+      "sourceObjectSha256": "8070aae114aa34083b349fa810d547af6cf58d176df75f77e217681a83f4e91f",
+      "passageSha256": "a7762787b2602930b5df81974ca2c5c658c3877c9a9843c0e25a4a90e11bc13c",
+      "wordCount": 233,
+      "questionCount": 6,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 3,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    {
+      "assetId": "formative:multiple-choice:mc-river-restoration",
+      "title": "River restoration in industrial towns",
+      "sourceObjectSha256": "f44a635695ddbd5da41b0867acb404cd557247e33c14679e462541b86f1b5469",
+      "passageSha256": "3e16760822406856be93e5f821bc0409f91bf05007bb57908b6294b2b382d35e",
+      "wordCount": 251,
+      "questionCount": 6,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 2,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    {
+      "assetId": "formative:multiple-choice:mc-digital-notes",
+      "title": "Digital notes and memory",
+      "sourceObjectSha256": "b3510e65794dae07e473b89839115fe272244cee0a7ab7deae3291375f0bda20",
+      "passageSha256": "7f0a8cff97dbee095a78e83e1ae8fbdcb6b671e87b57cd9f52646a437496742d",
+      "wordCount": 246,
+      "questionCount": 6,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 3,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    }
+  ],
+  "provenanceSearch": {
+    "method": "directed-non-exhaustive-title-and-first-sentence-search",
+    "queries": [
+      "“For decades, sleep was viewed mainly as a period of rest.”",
+      "“Many industrial towns were built around rivers that provided transport, water and power.”",
+      "“Students often assume that digital note-taking is automatically more efficient than writing by hand.”",
+      "“Millgate” “river restoration” concrete channel loading bays cafes"
+    ],
+    "reviewedResult": "No exact external match located in the reviewed search results.",
+    "limitation": "A negative directed search does not prove originality, authorship, ownership or universal absence. No rights-holder authorization was located in the reviewed sources."
+  },
+  "factualResearch": [
+    {
+      "assetId": "formative:multiple-choice:mc-sleep-learning",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "sleep-cairney-sws-emotional-2014",
+        "sleep-rem-sws-emotional-2025",
+        "sleep-deprivation-students-2017"
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan que sueño y memoria se relacionan, pero muestran resultados dependientes de etapa, tarea y diseño. Falta una fuente primaria que corresponda al estudio de pares de palabras descrito y una revisión humana claim-by-claim."
+    },
+    {
+      "assetId": "formative:multiple-choice:mc-river-restoration",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "river-environment-agency-2024",
+        "river-skerne-case-study"
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes institucionales apoyan principios generales de restauración, hábitat y resiliencia, pero no identifican “Millgate” ni verifican sus cifras, encuestas, loading bays o cafés. El caso debe documentarse como ficticio o sustituirse por un caso trazable antes de aprobación."
+    },
+    {
+      "assetId": "formative:multiple-choice:mc-digital-notes",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "notes-mueller-oppenheimer-2014",
+        "notes-mitchell-zheng-2019-replication",
+        "notes-medical-students-no-difference-2022"
+      ],
+      "limitation": "Cobertura dirigida y parcial. El pasaje refleja razonablemente un debate no resuelto, pero debe atribuir el estudio original y conservar el matiz aportado por replicaciones y resultados nulos. No hay revisión humana claim-by-claim."
+    }
+  ],
+  "sourceAvailability": {
+    "schemaVersion": "ielts-reading-multiple-choice-source-availability.v1",
+    "checkedAt": "2026-08-09",
+    "method": "curl -sL with final HTTP status; executed with network access after the sandbox-only attempt returned 000 for every URL",
+    "sources": [
+      {
+        "evidenceId": "sleep-cairney-sws-emotional-2014",
+        "httpStatus": 200,
+        "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3954173/"
+      },
+      {
+        "evidenceId": "sleep-rem-sws-emotional-2025",
+        "httpStatus": 200,
+        "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11930935/"
+      },
+      {
+        "evidenceId": "sleep-deprivation-students-2017",
+        "httpStatus": 200,
+        "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5489575/"
+      },
+      {
+        "evidenceId": "river-environment-agency-2024",
+        "httpStatus": 200,
+        "finalUrl": "https://www.gov.uk/government/publications/improving-river-habitats-to-support-wildlife-during-high-and-low-flows"
+      },
+      {
+        "evidenceId": "river-skerne-case-study",
+        "httpStatus": 200,
+        "finalUrl": "https://assets.publishing.service.gov.uk/media/5a74bc46ed915d4d83b5e88b/strw83-e-e.pdf"
+      },
+      {
+        "evidenceId": "notes-mueller-oppenheimer-2014",
+        "httpStatus": 403,
+        "finalUrl": "https://journals.sagepub.com/doi/10.1177/0956797614524581",
+        "note": "The canonical DOI resolved to the publisher; the publisher denied the automated fetch. This is availability evidence, not factual verification."
+      },
+      {
+        "evidenceId": "notes-mitchell-zheng-2019-replication",
+        "httpStatus": 200,
+        "finalUrl": "https://aisel.aisnet.org/trr/vol5/iss1/9/"
+      },
+      {
+        "evidenceId": "notes-medical-students-no-difference-2022",
+        "httpStatus": 200,
+        "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9247713/"
+      }
+    ],
+    "interpretation": "Reachability does not establish authorship, licensing, authorization, claim-level factual accuracy or human approval."
+  },
+  "expertReview": {
+    "reviewerType": "independent-ai-editorial-review",
+    "humanSignature": false,
+    "answerAgreement": {
+      "matches": 18,
+      "total": 18,
+      "rate": 1
+    },
+    "materialAmbiguityCount": 0,
+    "materialAmbiguities": [],
+    "factualClaimAssessments": [
+      {
+        "assetId": "formative:multiple-choice:mc-sleep-learning",
+        "assessment": "oversimplified",
+        "evidenceCount": 2
+      },
+      {
+        "assetId": "formative:multiple-choice:mc-sleep-learning",
+        "assessment": "untraceable",
+        "evidenceCount": 0
+      },
+      {
+        "assetId": "formative:multiple-choice:mc-sleep-learning",
+        "assessment": "untraceable",
+        "evidenceCount": 0
+      },
+      {
+        "assetId": "formative:multiple-choice:mc-sleep-learning",
+        "assessment": "unsupported",
+        "evidenceCount": 1
+      },
+      {
+        "assetId": "formative:multiple-choice:mc-river-restoration",
+        "assessment": "supported",
+        "evidenceCount": 2
+      },
+      {
+        "assetId": "formative:multiple-choice:mc-river-restoration",
+        "assessment": "untraceable",
+        "evidenceCount": 0
+      },
+      {
+        "assetId": "formative:multiple-choice:mc-river-restoration",
+        "assessment": "untraceable",
+        "evidenceCount": 0
+      },
+      {
+        "assetId": "formative:multiple-choice:mc-river-restoration",
+        "assessment": "untraceable",
+        "evidenceCount": 0
+      },
+      {
+        "assetId": "formative:multiple-choice:mc-digital-notes",
+        "assessment": "supported",
+        "evidenceCount": 1
+      },
+      {
+        "assetId": "formative:multiple-choice:mc-digital-notes",
+        "assessment": "oversimplified",
+        "evidenceCount": 3
+      },
+      {
+        "assetId": "formative:multiple-choice:mc-digital-notes",
+        "assessment": "oversimplified",
+        "evidenceCount": 2
+      },
+      {
+        "assetId": "formative:multiple-choice:mc-digital-notes",
+        "assessment": "oversimplified",
+        "evidenceCount": 3
+      }
+    ],
+    "verdictPath": "output/audits/ielts-reading-rights-multiple-choice-2026-08-09/expert-verdict.json"
+  },
+  "studentWalkthrough": {
+    "passagesCovered": 3,
+    "findings": 45,
+    "verdictPath": "output/audits/ielts-reading-rights-multiple-choice-2026-08-09/student-walkthrough.json",
+    "limitation": "Walkthrough cognitivo sobre contenido en packet ciego; no evalúa UI, accesibilidad visual ni interacción runtime."
+  },
+  "antiBias": {
+    "questionCount": 18,
+    "correctOptionIndexCounts": {
+      "A": 6,
+      "B": 8,
+      "C": 4,
+      "D": 0
+    },
+    "unusedCorrectPositions": [
+      "D"
+    ],
+    "uniqueLongestQuestions": 13,
+    "correctIsUniqueLongest": 10,
+    "uniqueLongestHitRate": 0.7692307692307693,
+    "uniqueShortestQuestions": 15,
+    "correctIsUniqueShortest": 2,
+    "uniqueShortestHitRate": 0.13333333333333333,
+    "correctWithAbsoluteLanguage": 2,
+    "distractorsWithAbsoluteLanguage": 23,
+    "permutationChecks": 54,
+    "sampleAdequacy": {
+      "certificationThreshold": 100,
+      "observedQuestions": 18,
+      "eligibleForStatisticalCertification": false,
+      "conclusion": "Riesgo estructural reproducible, no certificación estadística. D nunca es correcta y la opción únicamente más larga acierta 10 de 13 veces."
+    },
+    "contentCertification": "blocked-editorial-rebalancing-required"
+  },
+  "applicability": {
+    "rights": "applicable",
+    "fullStackData": "applicable",
+    "ieltsExpert": "applicable",
+    "cognitiveWalkthrough": "applicable-to-content-only",
+    "antiBias": "applicable",
+    "uiUxAccessibility": "not-applicable-no-learner-facing-change",
+    "playwright": "not-applicable-no-runtime-or-dom-change",
+    "evidence": "The unit changes only the rights contract, registry, validators, tests and audit outputs. The published route, bank and engine hashes remain the recorded baseline values."
+  },
+  "negativeControl": {
+    "contentHashMismatch": {
+      "assetId": "formative:multiple-choice:mc-sleep-learning",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "rightsBasis": "unknown-quarantined",
+      "reasonCodes": [
+        "authorship-unresolved",
+        "content-hash-mismatch",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "path": "src/data/practica-exams/seo-catalog.ts",
+      "sha256": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de"
+    },
+    {
+      "path": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/multiple-choice/page.tsx",
+      "sha256": "9779f7a58f05c911bdbd893d0eee7dc690afca5ede4401b1f654000cfe3cfd5e"
+    },
+    {
+      "path": "src/components/exam-practice/MultipleChoicePracticeEngine.tsx",
+      "sha256": "869d5a7a378b7f2b0e39b94fa4a2575080ce431b29192d15db568aa7aaebbd69"
+    },
+    {
+      "path": "src/lib/ielts/academic-reading-rights.ts",
+      "sha256": "cabd4adf35c75a14a3537bb07e5db4ef9ce8bc0c1a6f4a276d25518732923643"
+    },
+    {
+      "path": "src/data/practica-exams/ielts-reading-rights-registry.ts",
+      "sha256": "e0b8774fd4166724b5355923b6db4f81bf55a945949cd319d6cf391bb2de0fcf"
+    },
+    {
+      "path": "scripts/check-ielts-reading-multiple-choice-rights.mjs",
+      "sha256": "299cff7736356547ffef034077ba5819aea6503661977962d8762cfc424516c2"
+    },
+    {
+      "path": "tests/ielts-reading-multiple-choice-rights.test.mjs",
+      "sha256": "6248ee0529fcdc8cfcddb817769dd3a476d1e9ad8449e4e25aacc34b158e6449"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-multiple-choice-2026-08-09/baseline.json",
+      "sha256": "d2f4a13096cfb4485822a04e23b8a7afd451ca84735557bf47997add5ead3784"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-multiple-choice-2026-08-09/source-availability.json",
+      "sha256": "713949d3807e62530abcce61b5ae4e09585d169ff45cf96ced70d0598e8eac65"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-multiple-choice-2026-08-09/blind-review.json",
+      "sha256": "baa154728e991ec7b9826687d73aec008d34320e2906bbf4b523f53e721d0845"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-multiple-choice-2026-08-09/factual-source-review.json",
+      "sha256": "ab8522ba791b47f496809dafa586682565ddea6e0a6acb6cfed2496b75aed8a7"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-multiple-choice-2026-08-09/expert-verdict.json",
+      "sha256": "cf188e15b9ed9943f26425928b2470824827d606bf7694833fc5d8fe958391f3"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-multiple-choice-2026-08-09/student-walkthrough.json",
+      "sha256": "b568aabeb15d6a9d839fc3250d7add6d2c9aedd772735e4c78bfce3c85316618"
+    }
+  ]
+}

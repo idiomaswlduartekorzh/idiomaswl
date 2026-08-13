@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "ielts-reading-multiple-choice-rights-baseline.v1",
+  "capturedAt": "2026-08-09T00:00:00-05:00",
+  "unit": "F0.2b.1 — expediente de tres pasajes formativos Multiple Choice",
+  "repository": {
+    "branch": "codex/ielts-task2-introduction-pilot",
+    "head": "cf037bf68d766b8bc2cb81f930a4b5a42ffbeb78",
+    "catalogGitStatus": " M",
+    "note": "El catálogo ya estaba modificado por trabajo ajeno antes de F0.2b.1; esta unidad no modifica su contenido ni la ruta learner-facing."
+  },
+  "sources": [
+    {
+      "path": "src/data/practica-exams/seo-catalog.ts",
+      "sha256": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de"
+    },
+    {
+      "path": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/multiple-choice/page.tsx",
+      "sha256": "9779f7a58f05c911bdbd893d0eee7dc690afca5ede4401b1f654000cfe3cfd5e"
+    },
+    {
+      "path": "src/components/exam-practice/MultipleChoicePracticeEngine.tsx",
+      "sha256": "869d5a7a378b7f2b0e39b94fa4a2575080ce431b29192d15db568aa7aaebbd69"
+    }
+  ],
+  "grain": {
+    "passages": 3,
+    "questions": 18,
+    "optionsPerQuestion": 4,
+    "declaredPassageIds": 3,
+    "uniqueQuestionIds": 18
+  },
+  "assets": [
+    {
+      "assetId": "formative:multiple-choice:mc-sleep-learning",
+      "title": "Sleep and learning",
+      "wordCount": 233,
+      "questionCount": 6,
+      "sourceObjectSha256": "8070aae114aa34083b349fa810d547af6cf58d176df75f77e217681a83f4e91f",
+      "passageSha256": "a7762787b2602930b5df81974ca2c5c658c3877c9a9843c0e25a4a90e11bc13c"
+    },
+    {
+      "assetId": "formative:multiple-choice:mc-river-restoration",
+      "title": "River restoration in industrial towns",
+      "wordCount": 251,
+      "questionCount": 6,
+      "sourceObjectSha256": "f44a635695ddbd5da41b0867acb404cd557247e33c14679e462541b86f1b5469",
+      "passageSha256": "3e16760822406856be93e5f821bc0409f91bf05007bb57908b6294b2b382d35e"
+    },
+    {
+      "assetId": "formative:multiple-choice:mc-digital-notes",
+      "title": "Digital notes and memory",
+      "wordCount": 246,
+      "questionCount": 6,
+      "sourceObjectSha256": "b3510e65794dae07e473b89839115fe272244cee0a7ab7deae3291375f0bda20",
+      "passageSha256": "7f0a8cff97dbee095a78e83e1ae8fbdcb6b671e87b57cd9f52646a437496742d"
+    }
+  ],
+  "structuralRisk": {
+    "correctOptionIndexCounts": {
+      "A": 6,
+      "B": 8,
+      "C": 4,
+      "D": 0
+    },
+    "uniqueLongestOptionQuestions": 13,
+    "correctAnswerIsUniqueLongest": 10,
+    "uniqueShortestOptionQuestions": 15,
+    "correctAnswerIsUniqueShortest": 2,
+    "certification": "provisional-only",
+    "limitation": "n=18 es insuficiente para certificar equilibrio estadístico; los patrones sí justifican pruebas metamórficas y revisión editorial posterior."
+  },
+  "observedGovernance": {
+    "visibleOriginalWeLearnClaim": true,
+    "structuredAuthorshipRecord": false,
+    "structuredRightsBasis": false,
+    "structuredFactualSources": false,
+    "humanReviewRecord": false,
+    "runtimeCurrentlyExposed": true,
+    "inventoryDisposition": "quarantine",
+    "runtimeInventoryContradiction": true
+  }
+}

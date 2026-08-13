@@ -1,0 +1,616 @@
+{
+  "schemaVersion": "ielts-reading-summary-completion-expert-verdict.v1",
+  "reviewer": {
+    "reviewerRunId": "expert-blind-first-pass-2026-08-11T15:21:49Z",
+    "reviewedAt": "2026-08-11T15:29:47Z",
+    "blindPacketSha256": "a4c9b36ae228243f470c9d1330659f5578dea7761146b56a1866c735ea62b865",
+    "firstPassSha256": "715f5ac28f6e51d33cba57d785821ff4eae70a64fe90f395b0dc0c571c77d439",
+    "factualPacketSha256": "454057bab82197f7d31cbc5163a3263dcad0e8c94addc5cd5f8252def67cc7df",
+    "openedEvidenceIds": [
+      "ielts-summary-completion-official-samples",
+      "urban-fao-upa-short-supply-chains",
+      "urban-nps-green-roof-structural-load",
+      "urban-nyc-green-roof-requirements",
+      "urban-epa-rainwater-potable-demand",
+      "urban-usda-cornell-agriculture-education",
+      "repair-cafe-official-about",
+      "repair-cafe-official-house-rules",
+      "repair-cafe-official-faq",
+      "repair-cafe-official-foundation",
+      "shade-nasa-extreme-weather-frequency",
+      "shade-epa-climate-indicators-2024",
+      "shade-ut-austin-satellite-ground-mapping",
+      "shade-rmit-shadeways-routes",
+      "shade-phoenix-action-plan"
+    ],
+    "sourceContext": "two-pass-blind-then-factual-and-policy-sources",
+    "reviewSequence": ["blind-review", "factual-and-policy-source-review"],
+    "directSourceReview": true,
+    "humanSignature": false,
+    "notes": "Second pass completed only after the blind decisions were persisted and hashed. Every declared factual URL and the official IELTS Academic sample-task page were opened directly; no answer decision was changed."
+  },
+  "records": [
+    {
+      "assetId": "formative:summary-completion:summary-urban-farms",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "high",
+        "representationRisk": "medium",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "medium",
+        "wordLimitRisk": "low",
+        "questionOrderRisk": "high",
+        "promptCueRisk": "low",
+        "hintCueRisk": "medium",
+        "notes": "The six cards remain independent sentence completions rather than a continuous summary, and answers traverse all four paragraphs in strict order. Direct sources support some themes but not all combined claims, while several removable modifiers weaken exact one-best-answer control. Hint cueing was not directly inspected under the review isolation."
+      },
+      "questions": [
+        {
+          "questionId": "summary-urban-farms-01",
+          "selectedAnswer": "roof space",
+          "normalizedSelectedAnswer": "roof space",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "Rooftop farming is increasingly visible in cities where there is unused roof space.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {"text": "roof space", "start": 89, "end": 99},
+          "evidenceQuotes": ["unused roof space is common"],
+          "closestCompetingAnswer": "space",
+          "closestCompetitorPassageSpan": {"text": "space", "start": 94, "end": 99},
+          "competitorFailure": "It omits the location modifier 'roof'; however, 'unused space' remains grammatical and is a literal subspan that preserves the broad claim, so there is no decisive exclusion.",
+          "ambiguity": "material",
+          "reasoning": "The full noun phrase reproduces the passage precisely, but the head noun alone also completes the frame naturally and is passage-supported. The item therefore lacks a clean exact one-best answer."
+        },
+        {
+          "questionId": "summary-urban-farms-02",
+          "selectedAnswer": "supply chains",
+          "normalizedSelectedAnswer": "supply chains",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "These farms may shorten food supply chains and help residents notice seasonal produce.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {"text": "supply chains", "start": 165, "end": 178},
+          "evidenceQuotes": ["shorten food supply chains"],
+          "closestCompetingAnswer": "chains",
+          "closestCompetitorPassageSpan": {"text": "chains", "start": 172, "end": 178},
+          "competitorFailure": "In the frame, 'chains' creates 'food chains', normally an ecological term, and drops the passage's distribution meaning.",
+          "ambiguity": "minor",
+          "reasoning": "The full two-word span is the only completion that retains the passage's precise logistical claim, although the nested one-word span may attract a superficial response."
+        },
+        {
+          "questionId": "summary-urban-farms-03",
+          "selectedAnswer": "older buildings",
+          "normalizedSelectedAnswer": "older buildings",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "Careful irrigation and lightweight soil systems can reduce pressure on older buildings.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {"text": "older buildings", "start": 515, "end": 530},
+          "evidenceQuotes": ["reduce the strain on older buildings"],
+          "closestCompetingAnswer": "buildings",
+          "closestCompetitorPassageSpan": {"text": "buildings", "start": 521, "end": 530},
+          "competitorFailure": "It loses the age restriction, but the broader statement remains grammatical and logically follows from the passage.",
+          "ambiguity": "material",
+          "reasoning": "The selected phrase is more precise, yet the literal head noun alone still yields a true completed sentence. Exact scoring would need to accept both or revise the frame."
+        },
+        {
+          "questionId": "summary-urban-farms-04",
+          "selectedAnswer": "treated water",
+          "normalizedSelectedAnswer": "treated water",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "Rainwater collection can reduce demand for treated water.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {"text": "treated water", "start": 584, "end": 597},
+          "evidenceQuotes": ["rainwater collection may lower the demand for treated water"],
+          "closestCompetingAnswer": "water",
+          "closestCompetitorPassageSpan": {"text": "water", "start": 592, "end": 597},
+          "competitorFailure": "It removes the qualifier 'treated', but the resulting statement is grammatical and entailed at a more general level.",
+          "ambiguity": "material",
+          "reasoning": "The two-word answer matches the source claim exactly, while its one-word head is also a valid literal completion. This prevents exact one-best adjudication."
+        },
+        {
+          "questionId": "summary-urban-farms-05",
+          "selectedAnswer": "science lessons",
+          "normalizedSelectedAnswer": "science lessons",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "Some projects have an educational role because schools use them for science lessons.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {"text": "science lessons", "start": 917, "end": 932},
+          "evidenceQuotes": ["Schools use them for science lessons"],
+          "closestCompetingAnswer": "lessons",
+          "closestCompetitorPassageSpan": {"text": "lessons", "start": 925, "end": 932},
+          "competitorFailure": "It omits the subject area, but 'schools use them for lessons' remains grammatical and passage-supported.",
+          "ambiguity": "material",
+          "reasoning": "The fuller phrase is maximally faithful, but the nested head noun supplies a second defensible exact span under the same word limit."
+        },
+        {
+          "questionId": "summary-urban-farms-06",
+          "selectedAnswer": "roof",
+          "normalizedSelectedAnswer": "roof",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Before planting, successful projects often require engineers to check the roof.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {"text": "roof", "start": 1411, "end": 1415},
+          "evidenceQuotes": ["engineers check the roof"],
+          "closestCompetingAnswer": "site",
+          "closestCompetitorPassageSpan": {"text": "site", "start": 1489, "end": 1493},
+          "competitorFailure": "The passage assigns care of the site to managers; it explicitly assigns checking the roof to engineers.",
+          "ambiguity": "none",
+          "reasoning": "The agent-action relation and the temporal cue point uniquely to the final-paragraph clause."
+        }
+      ],
+      "factualClaims": [
+        {
+          "claim": "these projects can shorten food supply chains",
+          "assessment": "supported",
+          "evidenceIds": ["urban-fao-upa-short-supply-chains"],
+          "sourceFindings": [
+            {
+              "evidenceId": "urban-fao-upa-short-supply-chains",
+              "locator": "About > UPA offers a wide scope of benefits, paragraph on the environment",
+              "evidenceSummary": "FAO states that urban and peri-urban agriculture improves environmental sustainability by establishing short supply chains. It supports possibility, not a universal effect for every rooftop farm."
+            }
+          ],
+          "note": "The modal 'can' is appropriately limited and matches the institutional source's stated benefit."
+        },
+        {
+          "claim": "A small farm on top of a supermarket or apartment building cannot feed an entire city, but it can supply herbs, salad leaves and some vegetables to nearby customers.",
+          "assessment": "unsupported",
+          "evidenceIds": ["urban-fao-upa-short-supply-chains"],
+          "sourceFindings": [
+            {
+              "evidenceId": "urban-fao-upa-short-supply-chains",
+              "locator": "About > UPA offers a wide scope of benefits, nutrition and environment bullets",
+              "evidenceSummary": "FAO supports direct access to fresh food and short supply chains in urban agriculture generally, but does not establish the rooftop scale limit, building types, crop list or nearby-customer claim."
+            }
+          ],
+          "note": "The available candidate source does not trace the compound example with enough specificity."
+        },
+        {
+          "claim": "Lightweight soil systems and careful irrigation can reduce the strain on older buildings",
+          "assessment": "oversimplified",
+          "evidenceIds": ["urban-nps-green-roof-structural-load", "urban-nyc-green-roof-requirements"],
+          "sourceFindings": [
+            {
+              "evidenceId": "urban-nps-green-roof-structural-load",
+              "locator": "Green Roofs on Historic Buildings: Physical Impact > Weight",
+              "evidenceSummary": "NPS quantifies lower loads for thin extensive systems and requires structural investigation, but warns that retained water adds significant load; it does not say careful irrigation reduces structural strain."
+            },
+            {
+              "evidenceId": "urban-nyc-green-roof-requirements",
+              "locator": "Green Roofs > structural analysis and required elements",
+              "evidenceSummary": "NYC requires professional analysis of saturated added loads and specifies growth-medium depths and irrigation-related conditions. It supports load sensitivity, not the combined causal claim about careful irrigation."
+            }
+          ],
+          "note": "Lightweight media can reduce load relative to deeper systems, but the irrigation mechanism is not supported and water retention can increase load."
+        },
+        {
+          "claim": "rainwater collection may lower the demand for treated water",
+          "assessment": "oversimplified",
+          "evidenceIds": ["urban-epa-rainwater-potable-demand"],
+          "sourceFindings": [
+            {
+              "evidenceId": "urban-epa-rainwater-potable-demand",
+              "locator": "Prepare for Drought > Reduce the Need for Imported Water",
+              "evidenceSummary": "EPA says rain barrels and cisterns can reduce demand for potable water when stored rainwater is used for irrigation and other non-potable uses."
+            }
+          ],
+          "note": "The direction is supported, but 'treated water' is broader than the source's more precise 'potable water' and depends on actual reuse."
+        },
+        {
+          "claim": "Schools use them for science lessons",
+          "assessment": "oversimplified",
+          "evidenceIds": ["urban-usda-cornell-agriculture-education"],
+          "sourceFindings": [
+            {
+              "evidenceId": "urban-usda-cornell-agriculture-education",
+              "locator": "Non Technical Summary and project goals",
+              "evidenceSummary": "The Cornell submission describes urban-agriculture education in school gardens and controlled systems including rooftop greenhouses, and names school greenhouse labs promoting science learning. It does not directly show that the specific rooftop farms described are used for lessons."
+            }
+          ],
+          "note": "Educational use and science learning are well grounded, but the pronoun's exact rooftop-farm referent is broader than the evidence."
+        }
+      ],
+      "acceptedAnswerAssessments": [
+        {"questionId": "summary-urban-farms-01", "acceptedText": "roof space", "normalizedText": "roof space", "role": "canonical", "passageStatus": "verbatim", "wordCount": 2, "grammaticalFit": "natural", "evidenceIds": [], "note": "Exact contiguous passage span and natural completion."},
+        {"questionId": "summary-urban-farms-02", "acceptedText": "supply chains", "normalizedText": "supply chains", "role": "canonical", "passageStatus": "verbatim", "wordCount": 2, "grammaticalFit": "natural", "evidenceIds": [], "note": "Exact contiguous passage span and natural completion."},
+        {"questionId": "summary-urban-farms-03", "acceptedText": "older buildings", "normalizedText": "older buildings", "role": "canonical", "passageStatus": "verbatim", "wordCount": 2, "grammaticalFit": "natural", "evidenceIds": [], "note": "Exact contiguous passage span and natural completion."},
+        {"questionId": "summary-urban-farms-04", "acceptedText": "treated water", "normalizedText": "treated water", "role": "canonical", "passageStatus": "verbatim", "wordCount": 2, "grammaticalFit": "natural", "evidenceIds": [], "note": "Exact contiguous passage span and natural completion."},
+        {"questionId": "summary-urban-farms-05", "acceptedText": "science lessons", "normalizedText": "science lessons", "role": "canonical", "passageStatus": "verbatim", "wordCount": 2, "grammaticalFit": "natural", "evidenceIds": [], "note": "Exact contiguous passage span and natural completion."},
+        {"questionId": "summary-urban-farms-06", "acceptedText": "roof", "normalizedText": "roof", "role": "canonical", "passageStatus": "verbatim", "wordCount": 1, "grammaticalFit": "natural", "evidenceIds": [], "note": "Exact contiguous passage span and natural completion."},
+        {"questionId": "summary-urban-farms-06", "acceptedText": "the roof", "normalizedText": "the roof", "role": "alternative", "passageStatus": "verbatim", "wordCount": 2, "grammaticalFit": "fails", "evidenceIds": [], "note": "The frame already ends with 'the', so this accepted alternative produces the ungrammatical double determiner 'the the roof'."}
+      ]
+    },
+    {
+      "assetId": "formative:summary-completion:summary-repair-cafes",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "high",
+        "representationRisk": "medium",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "medium",
+        "wordLimitRisk": "low",
+        "questionOrderRisk": "high",
+        "promptCueRisk": "low",
+        "hintCueRisk": "medium",
+        "notes": "The cards are a topical sequence of independent completions, not a continuous summary; answers remain strictly ordered across the whole passage. Primary sources support the general learning and community model but not several universal procedures or demographic outcomes. Hint cueing was not directly inspected under the review isolation."
+      },
+      "questions": [
+        {
+          "questionId": "summary-repair-cafes-01",
+          "selectedAnswer": "household objects",
+          "normalizedSelectedAnswer": "household objects",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "Repair cafes help residents fix broken household objects with support from volunteers.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {"text": "household objects", "start": 71, "end": 88},
+          "evidenceQuotes": ["residents brought broken household objects and learned how to fix them"],
+          "closestCompetingAnswer": "objects",
+          "closestCompetitorPassageSpan": {"text": "objects", "start": 81, "end": 88},
+          "competitorFailure": "It removes the household qualifier, but the broader completion is grammatical and still supported by the passage.",
+          "ambiguity": "material",
+          "reasoning": "The full phrase is the closest reproduction, while the nested head noun remains independently acceptable in the frame."
+        },
+        {
+          "questionId": "summary-repair-cafes-02",
+          "selectedAnswer": "lesson",
+          "normalizedSelectedAnswer": "lesson",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Visitors are usually asked to stay during the repair so the activity becomes a lesson instead of only a service.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {"text": "lesson", "start": 403, "end": 409},
+          "evidenceQuotes": ["the event becomes a lesson rather than a free service"],
+          "closestCompetingAnswer": "repair",
+          "closestCompetitorPassageSpan": {"text": "repair", "start": 335, "end": 341},
+          "competitorFailure": "Staying during the repair is the condition; the passage says the event becomes a lesson, not that the activity becomes a repair.",
+          "ambiguity": "none",
+          "reasoning": "The contrast with a service directly paraphrases the passage's lesson-versus-service opposition."
+        },
+        {
+          "questionId": "summary-repair-cafes-03",
+          "selectedAnswer": "spare parts",
+          "normalizedSelectedAnswer": "spare parts",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "Before a session, volunteers check whether common spare parts are available.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {"text": "spare parts", "start": 548, "end": 559},
+          "evidenceQuotes": ["check whether common spare parts are available"],
+          "closestCompetingAnswer": "parts",
+          "closestCompetitorPassageSpan": {"text": "parts", "start": 554, "end": 559},
+          "competitorFailure": "It omits 'spare', but 'common parts' remains grammatical and is a literal subspan of the same proposition.",
+          "ambiguity": "material",
+          "reasoning": "The intended phrase is transparent, yet the stem already supplies 'common', allowing the head noun alone to convey a valid broader meaning."
+        },
+        {
+          "questionId": "summary-repair-cafes-04",
+          "selectedAnswer": "training",
+          "normalizedSelectedAnswer": "training",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Electrical items should be inspected by people with relevant training.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {"text": "training", "start": 722, "end": 730},
+          "evidenceQuotes": ["Electrical devices, for example, may be inspected only by people with relevant training"],
+          "closestCompetingAnswer": "practical knowledge",
+          "closestCompetitorPassageSpan": {"text": "practical knowledge", "start": 968, "end": 987},
+          "competitorFailure": "The phrase belongs to older residents' social contribution; the electrical-safety restriction explicitly requires training.",
+          "ambiguity": "none",
+          "reasoning": "The equipment type, inspection action and adjective 'relevant' align uniquely with the safety sentence."
+        },
+        {
+          "questionId": "summary-repair-cafes-05",
+          "selectedAnswer": "confidence",
+          "normalizedSelectedAnswer": "confidence",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Students may develop confidence when they use unfamiliar tools.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {"text": "confidence", "start": 1003, "end": 1013},
+          "evidenceQuotes": ["students gain confidence with unfamiliar tools"],
+          "closestCompetingAnswer": "practical knowledge",
+          "closestCompetitorPassageSpan": {"text": "practical knowledge", "start": 968, "end": 987},
+          "competitorFailure": "Although grammatically plausible, that benefit is attached to older residents sharing knowledge, whereas the student clause names confidence.",
+          "ambiguity": "minor",
+          "reasoning": "A nearby benefit phrase can distract, but the parallel subjects in the source sentence establish the intended answer clearly."
+        },
+        {
+          "questionId": "summary-repair-cafes-06",
+          "selectedAnswer": "problem solving",
+          "normalizedSelectedAnswer": "problem solving",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "Many cafes protect the educational mood by focusing on shared problem solving.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {"text": "problem solving", "start": 1614, "end": 1629},
+          "evidenceQuotes": ["keep the focus on shared problem solving"],
+          "closestCompetingAnswer": "practical knowledge",
+          "closestCompetitorPassageSpan": {"text": "practical knowledge", "start": 968, "end": 987},
+          "competitorFailure": "Shared practical knowledge is a social benefit earlier in the passage, but the final operating principle explicitly names problem solving.",
+          "ambiguity": "minor",
+          "reasoning": "The educational-atmosphere cue links directly to the final paragraph, making the selected span clearly superior despite a plausible thematic distractor."
+        }
+      ],
+      "factualClaims": [
+        {
+          "claim": "Repair cafes began as informal meetings where residents brought broken household objects and learned how to fix them with help from experienced volunteers.",
+          "assessment": "oversimplified",
+          "evidenceIds": ["repair-cafe-official-about"],
+          "sourceFindings": [
+            {
+              "evidenceId": "repair-cafe-official-about",
+              "locator": "About > What is a Repair Café? and Who thought up the idea?",
+              "evidenceSummary": "The official page describes free meeting places where visitors repair broken items with expert volunteers and learn together, but says the movement began with one organised Amsterdam event in 2009 rather than unspecified informal meetings."
+            }
+          ],
+          "note": "The operating model is supported, while the historical origin is compressed inaccurately."
+        },
+        {
+          "claim": "Organisers usually ask visitors to stay with the repair instead of leaving the object behind, so the event becomes a lesson rather than a free service.",
+          "assessment": "oversimplified",
+          "evidenceIds": ["repair-cafe-official-about", "repair-cafe-official-house-rules", "repair-cafe-official-faq"],
+          "sourceFindings": [
+            {
+              "evidenceId": "repair-cafe-official-about",
+              "locator": "About > What is a Repair Café?",
+              "evidenceSummary": "The official description says visitors and specialists repair together as an ongoing learning process."
+            },
+            {
+              "evidenceId": "repair-cafe-official-house-rules",
+              "locator": "Repair Café house rules, visitor-participation rule",
+              "evidenceSummary": "The rules say visitors carry out repairs themselves whenever possible, with experts helping as needed."
+            },
+            {
+              "evidenceId": "repair-cafe-official-faq",
+              "locator": "FAQ > Do you also make house calls?",
+              "evidenceSummary": "The FAQ explicitly distinguishes a Repair Café from a repair service and calls it a meeting place where people mend items together."
+            }
+          ],
+          "note": "Participation, learning and the non-service model are supported, but no reviewed source states the universal procedure of asking visitors to stay."
+        },
+        {
+          "claim": "check whether common spare parts are available",
+          "assessment": "unsupported",
+          "evidenceIds": ["repair-cafe-official-faq"],
+          "sourceFindings": [
+            {
+              "evidenceId": "repair-cafe-official-faq",
+              "locator": "FAQ > For some repairs, components need to be replaced by spare parts",
+              "evidenceSummary": "The FAQ says stock is limited and small parts are often available, with visitors advised where to buy missing materials. It does not document a systematic pre-session availability check."
+            }
+          ],
+          "note": "Availability is supported, but the exact preparatory procedure is not."
+        },
+        {
+          "claim": "Electrical devices, for example, may be inspected only by people with relevant training.",
+          "assessment": "unsupported",
+          "evidenceIds": ["repair-cafe-official-about", "repair-cafe-official-house-rules"],
+          "sourceFindings": [
+            {
+              "evidenceId": "repair-cafe-official-about",
+              "locator": "About > What is a Repair Café?",
+              "evidenceSummary": "The page identifies expert volunteers with repair skills across fields, including work on electrical appliances, but gives no training-only inspection rule."
+            },
+            {
+              "evidenceId": "repair-cafe-official-house-rules",
+              "locator": "Repair Café house rules, expert discretion and liability rules",
+              "evidenceSummary": "The rules allow experts to refuse objects and limit liability, but do not state that only formally or relevantly trained people may inspect electrical devices."
+            }
+          ],
+          "note": "The safety restriction may be sensible, but it is not traceable to the declared primary sources."
+        },
+        {
+          "claim": "Older residents can share practical knowledge, students gain confidence with unfamiliar tools and neighbours who rarely meet have a reason to talk.",
+          "assessment": "oversimplified",
+          "evidenceIds": ["repair-cafe-official-about", "repair-cafe-official-foundation"],
+          "sourceFindings": [
+            {
+              "evidenceId": "repair-cafe-official-about",
+              "locator": "About > Why a Repair Café?",
+              "evidenceSummary": "The official page says practical repair skills are passed on and notes that younger generations have lost such knowledge, but it does not report measured student confidence."
+            },
+            {
+              "evidenceId": "repair-cafe-official-foundation",
+              "locator": "Foundation > Goal",
+              "evidenceSummary": "The foundation aims to spread repair expertise and promote social cohesion by bringing together neighbours from varied backgrounds. It does not specify older residents, students or neighbours who rarely meet."
+            }
+          ],
+          "note": "General skill transfer and social contact are supported; the demographic assignments and confidence outcome are not directly evidenced."
+        }
+      ],
+      "acceptedAnswerAssessments": [
+        {"questionId": "summary-repair-cafes-01", "acceptedText": "household objects", "normalizedText": "household objects", "role": "canonical", "passageStatus": "verbatim", "wordCount": 2, "grammaticalFit": "natural", "evidenceIds": [], "note": "Exact contiguous passage span and natural completion."},
+        {"questionId": "summary-repair-cafes-02", "acceptedText": "lesson", "normalizedText": "lesson", "role": "canonical", "passageStatus": "verbatim", "wordCount": 1, "grammaticalFit": "natural", "evidenceIds": [], "note": "Exact contiguous passage span and natural completion."},
+        {"questionId": "summary-repair-cafes-03", "acceptedText": "spare parts", "normalizedText": "spare parts", "role": "canonical", "passageStatus": "verbatim", "wordCount": 2, "grammaticalFit": "natural", "evidenceIds": [], "note": "Exact contiguous passage span and natural completion."},
+        {"questionId": "summary-repair-cafes-04", "acceptedText": "training", "normalizedText": "training", "role": "canonical", "passageStatus": "verbatim", "wordCount": 1, "grammaticalFit": "natural", "evidenceIds": [], "note": "Exact contiguous passage span and natural completion."},
+        {"questionId": "summary-repair-cafes-05", "acceptedText": "confidence", "normalizedText": "confidence", "role": "canonical", "passageStatus": "verbatim", "wordCount": 1, "grammaticalFit": "natural", "evidenceIds": [], "note": "Exact contiguous passage span and natural completion."},
+        {"questionId": "summary-repair-cafes-06", "acceptedText": "problem solving", "normalizedText": "problem solving", "role": "canonical", "passageStatus": "verbatim", "wordCount": 2, "grammaticalFit": "natural", "evidenceIds": [], "note": "Exact contiguous passage span and natural completion."}
+      ]
+    },
+    {
+      "assetId": "formative:summary-completion:summary-shade-mapping",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "medium",
+        "representationRisk": "medium",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "medium",
+        "wordLimitRisk": "low",
+        "questionOrderRisk": "high",
+        "promptCueRisk": "low",
+        "hintCueRisk": "medium",
+        "notes": "The cards form a topical outline, not a continuous summary, and answers reward serial scanning from the opening to closing paragraph. Sources support heat trends, mapping methods and shade prioritisation, but some claims conflate exposure with vulnerability or add unverified perceptual detail. Hint cueing was not directly inspected under the review isolation."
+      },
+      "questions": [
+        {
+          "questionId": "summary-shade-mapping-01",
+          "selectedAnswer": "heatwaves",
+          "normalizedSelectedAnswer": "heatwaves",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Cities are mapping shade as heatwaves become increasingly frequent.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {"text": "heatwaves", "start": 3, "end": 12},
+          "evidenceQuotes": ["As heatwaves become more common"],
+          "closestCompetingAnswer": "heat exposure",
+          "closestCompetitorPassageSpan": {"text": "heat exposure", "start": 564, "end": 577},
+          "competitorFailure": "It is a singular mass phrase and therefore disagrees with 'become'; it also denotes a condition, not events becoming more frequent.",
+          "ambiguity": "none",
+          "reasoning": "Number agreement and the opening causal clause identify the plural event noun uniquely."
+        },
+        {
+          "questionId": "summary-shade-mapping-02",
+          "selectedAnswer": "satellite images",
+          "normalizedSelectedAnswer": "satellite images",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "The process starts with satellite images, but teams also collect information on streets.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {"text": "satellite images", "start": 142, "end": 158},
+          "evidenceQuotes": ["The work begins with satellite images"],
+          "closestCompetingAnswer": "images",
+          "closestCompetitorPassageSpan": {"text": "images", "start": 152, "end": 158},
+          "competitorFailure": "It omits the source qualifier, but the resulting sentence is grammatical and supported at a broader level.",
+          "ambiguity": "material",
+          "reasoning": "The full phrase is precise, while its literal head noun is also a defensible answer under the stated extraction rule."
+        },
+        {
+          "questionId": "summary-shade-mapping-03",
+          "selectedAnswer": "direct sun",
+          "normalizedSelectedAnswer": "direct sun",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "A short route may feel longer if pedestrians are exposed to direct sun for several blocks.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {"text": "direct sun", "start": 396, "end": 406},
+          "evidenceQuotes": ["it exposes pedestrians to direct sun for several blocks"],
+          "closestCompetingAnswer": "sun",
+          "closestCompetitorPassageSpan": {"text": "sun", "start": 403, "end": 406},
+          "competitorFailure": "It omits 'direct', but exposure to sun remains grammatical and conveys the same central condition less precisely.",
+          "ambiguity": "material",
+          "reasoning": "The intended two-word phrase is exact, yet the head noun alone remains a true literal completion, so exact one-best scoring is unsafe."
+        },
+        {
+          "questionId": "summary-shade-mapping-04",
+          "selectedAnswer": "intervention",
+          "normalizedSelectedAnswer": "intervention",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Planners compare shade with daily movements to find places where a small intervention could help many people.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {"text": "intervention", "start": 761, "end": 773},
+          "evidenceQuotes": ["a small intervention would help many people"],
+          "closestCompetingAnswer": "map",
+          "closestCompetitorPassageSpan": {"text": "map", "start": 342, "end": 345},
+          "competitorFailure": "A map may inform planning, but the comparison identifies a place for an intervention, not a place where a map itself produces the benefit.",
+          "ambiguity": "none",
+          "reasoning": "The summary closely paraphrases one source clause, including the adjective 'small' and the beneficiary phrase."
+        },
+        {
+          "questionId": "summary-shade-mapping-05",
+          "selectedAnswer": "canopies",
+          "normalizedSelectedAnswer": "canopies",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "In narrow streets, temporary canopies may cool people faster than trees.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {"text": "canopies", "start": 962, "end": 970},
+          "evidenceQuotes": ["In narrow streets, temporary canopies, reflective surfaces or redesigned waiting areas may work faster"],
+          "closestCompetingAnswer": "reflective surfaces",
+          "closestCompetitorPassageSpan": {"text": "reflective surfaces", "start": 972, "end": 991},
+          "competitorFailure": "It creates the grammatically plausible phrase 'temporary reflective surfaces' and is another listed intervention covered by 'may work faster'; the text supplies no firm exclusion.",
+          "ambiguity": "material",
+          "reasoning": "Canopies reproduce the exact local phrase, but the coordinated list makes reflective surfaces a second defensible passage span for the summary's broader cooling claim."
+        },
+        {
+          "questionId": "summary-shade-mapping-06",
+          "selectedAnswer": "cooling plans",
+          "normalizedSelectedAnswer": "cooling plans",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "Useful projects connect data collection with cooling plans that identify action, funding and feedback.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {"text": "cooling plans", "start": 1398, "end": 1411},
+          "evidenceQuotes": ["connect data collection with cooling plans"],
+          "closestCompetingAnswer": "plans",
+          "closestCompetitorPassageSpan": {"text": "plans", "start": 1406, "end": 1411},
+          "competitorFailure": "It omits the purpose modifier, but 'plans that identify action, funding and feedback' remains grammatical and passage-supported.",
+          "ambiguity": "material",
+          "reasoning": "The full phrase is more specific, yet the literal head noun alone also satisfies the frame and extraction rule."
+        }
+      ],
+      "factualClaims": [
+        {
+          "claim": "heatwaves become more common",
+          "assessment": "supported",
+          "evidenceIds": ["shade-nasa-extreme-weather-frequency", "shade-epa-climate-indicators-2024"],
+          "sourceFindings": [
+            {
+              "evidenceId": "shade-nasa-extreme-weather-frequency",
+              "locator": "Extreme Weather, introductory climate-change overview",
+              "evidenceSummary": "NASA states that record-breaking heat waves are becoming more frequent and intense as Earth's climate changes."
+            },
+            {
+              "evidenceId": "shade-epa-climate-indicators-2024",
+              "locator": "Climate Change Indicators, Heat on the Rise and adapting to extreme heat",
+              "evidenceSummary": "EPA reports more frequent heat waves in the United States and says heat waves are becoming more frequent and intense."
+            }
+          ],
+          "note": "The general trend is directly supported, with the usual limitation that local city-level trends may vary."
+        },
+        {
+          "claim": "The work begins with satellite images, but planners also send teams into streets to record how buildings, trees and bus shelters affect the experience of walking at different times of day.",
+          "assessment": "oversimplified",
+          "evidenceIds": ["shade-ut-austin-satellite-ground-mapping"],
+          "sourceFindings": [
+            {
+              "evidenceId": "shade-ut-austin-satellite-ground-mapping",
+              "locator": "UT Austin News, project-method paragraphs on heat mapping",
+              "evidenceSummary": "The Austin project combines satellite data, on-the-ground sensors, computer models and resident input at street scale. It does not establish that work universally begins with satellite images or that teams record the stated objects and walking experience at different times."
+            }
+          ],
+          "note": "The mixed remote-and-ground method is supported; the sequence and detailed field protocol are not."
+        },
+        {
+          "claim": "A route that appears short on a map may feel much longer if it exposes pedestrians to direct sun for several blocks.",
+          "assessment": "unsupported",
+          "evidenceIds": ["shade-rmit-shadeways-routes"],
+          "sourceFindings": [
+            {
+              "evidenceId": "shade-rmit-shadeways-routes",
+              "locator": "Smart city tech keeps Bendigo residents cool, Shadeways description",
+              "evidenceSummary": "RMIT says temperature impedes walking and cycling and that its platform maps cooler, shadier routes and route exposure to extreme temperatures. It does not address perceived route length, direct sun for several blocks or the claimed causal threshold."
+            }
+          ],
+          "note": "The source supports route-choice relevance, not the exact perceptual claim."
+        },
+        {
+          "claim": "Older residents, outdoor workers and children may face higher heat exposure",
+          "assessment": "oversimplified",
+          "evidenceIds": ["shade-epa-climate-indicators-2024"],
+          "sourceFindings": [
+            {
+              "evidenceId": "shade-epa-climate-indicators-2024",
+              "locator": "Climate Change Indicators, extreme-heat health risk and workplace-death sections",
+              "evidenceSummary": "EPA identifies older adults, children and outdoor workers as facing higher risks of heat-related illness and death, and documents occupational heat exposure. It does not say that the increased risk for every group is caused by higher exposure rather than sensitivity or adaptive capacity."
+            }
+          ],
+          "note": "The groups are correctly identified as higher risk, but the claim collapses distinct vulnerability mechanisms into exposure."
+        },
+        {
+          "claim": "By comparing shade with these daily movements, planners can identify places where a small intervention would help many people.",
+          "assessment": "oversimplified",
+          "evidenceIds": ["shade-rmit-shadeways-routes", "shade-phoenix-action-plan"],
+          "sourceFindings": [
+            {
+              "evidenceId": "shade-rmit-shadeways-routes",
+              "locator": "Smart city tech keeps Bendigo residents cool, platform and route paragraphs",
+              "evidenceSummary": "RMIT links shade and heat imagery to pedestrian and cyclist routes, supporting movement-aware prioritisation, but does not quantify the size or number of beneficiaries of an intervention."
+            },
+            {
+              "evidenceId": "shade-phoenix-action-plan",
+              "locator": "Tree Shade Programs > Shade Phoenix: An Action Plan for Trees and Built Shade",
+              "evidenceSummary": "Phoenix focuses shade actions on vulnerable residents and locations where people walk to work, wait for buses or use parks. It does not establish that interventions are small or that any one location helps many people."
+            }
+          ],
+          "note": "Movement-linked shade planning is supported, while 'small' and 'many people' are unquantified extrapolations."
+        }
+      ],
+      "acceptedAnswerAssessments": [
+        {"questionId": "summary-shade-mapping-01", "acceptedText": "heatwaves", "normalizedText": "heatwaves", "role": "canonical", "passageStatus": "verbatim", "wordCount": 1, "grammaticalFit": "natural", "evidenceIds": [], "note": "Exact contiguous passage span and natural completion."},
+        {"questionId": "summary-shade-mapping-02", "acceptedText": "satellite images", "normalizedText": "satellite images", "role": "canonical", "passageStatus": "verbatim", "wordCount": 2, "grammaticalFit": "natural", "evidenceIds": [], "note": "Exact contiguous passage span and natural completion."},
+        {"questionId": "summary-shade-mapping-03", "acceptedText": "direct sun", "normalizedText": "direct sun", "role": "canonical", "passageStatus": "verbatim", "wordCount": 2, "grammaticalFit": "natural", "evidenceIds": [], "note": "Exact contiguous passage span and natural completion."},
+        {"questionId": "summary-shade-mapping-04", "acceptedText": "intervention", "normalizedText": "intervention", "role": "canonical", "passageStatus": "verbatim", "wordCount": 1, "grammaticalFit": "natural", "evidenceIds": [], "note": "Exact contiguous passage span and natural completion."},
+        {"questionId": "summary-shade-mapping-05", "acceptedText": "canopies", "normalizedText": "canopies", "role": "canonical", "passageStatus": "verbatim", "wordCount": 1, "grammaticalFit": "natural", "evidenceIds": [], "note": "Exact contiguous passage span and natural completion."},
+        {"questionId": "summary-shade-mapping-06", "acceptedText": "cooling plans", "normalizedText": "cooling plans", "role": "canonical", "passageStatus": "verbatim", "wordCount": 2, "grammaticalFit": "natural", "evidenceIds": [], "note": "Exact contiguous passage span and natural completion."}
+      ]
+    }
+  ]
+}

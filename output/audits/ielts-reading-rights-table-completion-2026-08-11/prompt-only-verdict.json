@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "ielts-reading-table-completion-prompt-only-verdict.v1",
+  "reviewer": {
+    "reviewerRunId": "codex-table-blind-ielts-expert-2026-08-11",
+    "reviewedAt": "2026-08-11T17:14:11Z",
+    "packetSha256": "4f31cc6938b2683a7ccd56682eab7970d3bc276ecab0cb69c7fbc02a0583be71",
+    "sourceContext": "prompt-only-packet-only",
+    "humanSignature": false,
+    "notes": "Independent prompt-only review. Judgments use only the visible table frames, headers and two-word limit; listed completions are representative grammatical possibilities, not reconstructed keys."
+  },
+  "records": [
+    {
+      "questionId": "table-cooling-01-1",
+      "predictedGrammarCategory": "noun phrase as the object of the separable verb 'carries ... away'",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["heat", "moisture", "warm air", "body heat"],
+      "uniqueExactGuess": null,
+      "reasoning": "The frame requires something that moving air can remove, but neither the table title nor the row label selects one exact noun phrase."
+    },
+    {
+      "questionId": "table-cooling-01-2",
+      "predictedGrammarCategory": "noun phrase as the direct object of 'study'",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["wind direction", "prevailing winds", "airflow patterns", "local winds"],
+      "uniqueExactGuess": null,
+      "reasoning": "Several aspects of wind or airflow can naturally be studied before openings are placed; the visible frame does not determine the passage wording."
+    },
+    {
+      "questionId": "table-cooling-02-1",
+      "predictedGrammarCategory": "definite time-period noun after 'during the'",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["day", "daytime", "summer", "afternoon"],
+      "uniqueExactGuess": null,
+      "reasoning": "The syntax asks for a time period, yet multiple time nouns fit the thermal-mass description without passage evidence."
+    },
+    {
+      "questionId": "table-cooling-02-2",
+      "predictedGrammarCategory": "time noun or event noun phrase after 'after'",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["sunset", "dark", "nightfall", "the evening"],
+      "uniqueExactGuess": null,
+      "reasoning": "The frame signals a later cooling period but admits several exact temporal expressions of one or two words."
+    },
+    {
+      "questionId": "table-cooling-03-1",
+      "predictedGrammarCategory": "definite locative noun phrase as the object of 'enters'",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["building", "interior", "window", "room"],
+      "uniqueExactGuess": null,
+      "reasoning": "External shade may be described as preventing entry into several plausible parts or spaces, so the frame does not expose one exact completion."
+    },
+    {
+      "questionId": "table-cooling-03-2",
+      "predictedGrammarCategory": "noun governed by the possessive 'sun's'",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["angle", "path", "position", "altitude"],
+      "uniqueExactGuess": null,
+      "reasoning": "Several solar properties can determine shading design, and the visible wording does not uniquely distinguish among them."
+    },
+    {
+      "questionId": "table-rain-gardens-01-1",
+      "predictedGrammarCategory": "adverb or short duration adjunct modifying 'holds'",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["temporarily", "briefly", "for hours", "overnight"],
+      "uniqueExactGuess": null,
+      "reasoning": "The blank describes how long water is retained, but many natural adverbial forms fit the visible sentence and word limit."
+    },
+    {
+      "questionId": "table-rain-gardens-01-2",
+      "predictedGrammarCategory": "bare plural or mass noun phrase after 'into'",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["drains", "sewers", "storm drains", "pipes"],
+      "uniqueExactGuess": null,
+      "reasoning": "The frame identifies a runoff destination generically; several drainage-system nouns remain equally plausible without the passage."
+    },
+    {
+      "questionId": "table-rain-gardens-02-1",
+      "predictedGrammarCategory": "third-person singular present-tense verb completing a relative clause",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["drains", "serves", "receives", "catches"],
+      "uniqueExactGuess": null,
+      "reasoning": "The relative clause needs a transitive or contextually licensed verb, and multiple verbs can describe the source area relation."
+    },
+    {
+      "questionId": "table-rain-gardens-02-2",
+      "predictedGrammarCategory": "predicative adjective after 'is permanently'",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["wet", "saturated", "waterlogged", "compacted"],
+      "uniqueExactGuess": null,
+      "reasoning": "The warning calls for a soil condition, but several adjectives are grammatically and semantically compatible with the visible prompt."
+    },
+    {
+      "questionId": "table-rain-gardens-03-1",
+      "predictedGrammarCategory": "definite physical-medium noun phrase after 'in the'",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["soil", "ground", "subsoil", "garden bed"],
+      "uniqueExactGuess": null,
+      "reasoning": "Roots can be said to open channels in several related media; only passage wording could select the exact span."
+    },
+    {
+      "questionId": "table-rain-gardens-03-2",
+      "predictedGrammarCategory": "attributive noun or modifier before plural 'points'",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["entry", "inlet", "collection", "drainage"],
+      "uniqueExactGuess": null,
+      "reasoning": "Several compound-noun modifiers naturally identify points where leaves might obstruct water movement."
+    },
+    {
+      "questionId": "table-museum-inventory-01-1",
+      "predictedGrammarCategory": "third-person singular verb or short verb phrase before 'from'",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["comes", "originates", "derives", "was taken"],
+      "uniqueExactGuess": null,
+      "reasoning": "The clause asks for provenance, but several one- or two-word verb forms produce a complete grammatical sentence."
+    },
+    {
+      "questionId": "table-museum-inventory-01-2",
+      "predictedGrammarCategory": "plural count noun as the object of 'taking'",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["photos", "photographs", "pictures", "images"],
+      "uniqueExactGuess": null,
+      "reasoning": "The frame strongly constrains the semantic field but leaves several ordinary exact lexical choices."
+    },
+    {
+      "questionId": "table-museum-inventory-02-1",
+      "predictedGrammarCategory": "human-denoting plural noun phrase as the object of 'interview'",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["owners", "donors", "local residents", "community elders"],
+      "uniqueExactGuess": null,
+      "reasoning": "Many people could supply object-history evidence, and the table provides no unique role label."
+    },
+    {
+      "questionId": "table-museum-inventory-02-2",
+      "predictedGrammarCategory": "noun or predicative adjective complement after 'as'",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["fact", "certain", "verified", "confirmed"],
+      "uniqueExactGuess": null,
+      "reasoning": "The quality-control warning can be completed idiomatically by either a status noun or several adjectives, so no exact wording is exposed."
+    },
+    {
+      "questionId": "table-museum-inventory-03-1",
+      "predictedGrammarCategory": "singular measurement-related noun as clause subject",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["size", "scale", "measurement", "proportion"],
+      "uniqueExactGuess": null,
+      "reasoning": "A scale marker supports several related visual properties; the frame alone cannot identify which noun appears in the passage."
+    },
+    {
+      "questionId": "table-museum-inventory-03-2",
+      "predictedGrammarCategory": "gerund or event noun after temporal preposition 'before'",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["publication", "publishing", "release", "uploading"],
+      "uniqueExactGuess": null,
+      "reasoning": "The frame establishes a pre-release review step but multiple event nouns or gerunds fit naturally within the limit."
+    }
+  ]
+}

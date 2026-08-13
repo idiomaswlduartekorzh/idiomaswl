@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "ielts-reading-tfng-audit-verdicts.v1",
+  "reviewedAt": "2026-08-09T05:20:00-05:00",
+  "status": "pass",
+  "passMeaning": "PASS closes the F0.2b.2 audit dossier only. The three assets remain quarantined and content certification remains blocked.",
+  "rows": [
+    {
+      "lane": "Rights and provenance",
+      "boardMark": "✅",
+      "scope": "Dossier completeness and conservative disposition; not copyright clearance.",
+      "findings": "Three of three assets remain unknown-quarantined. A directed non-exhaustive provenance ledger and eight candidate-source fetch records do not establish authorship, ownership or authorization.",
+      "blockersCarriedForward": "Authorship, rights basis, license or authorization evidence, and independent human approval remain unresolved."
+    },
+    {
+      "lane": "Full-stack and data",
+      "boardMark": "✅",
+      "scope": "Identity, fail-closed registry decisions, blind packets, first-pass trace and deterministic validation.",
+      "findings": "Object and passage hashes match baseline and registry; malformed or changed records quarantine. Key-like leakage is scanned in names and values, including an adversarial text-value control.",
+      "blockersCarriedForward": "The local first-pass hash is not an external append-only witness; runtime quarantine enforcement belongs to a later unit."
+    },
+    {
+      "lane": "IELTS expert",
+      "boardMark": "✅",
+      "scope": "Complete independent audit of answerability and IELTS fitness; not bank certification.",
+      "findings": "The clean reviewer covered 22 of 22 statements, matched 19 stored keys, refuted three stored decisions and identified two material ambiguities under the official contradiction-versus-absence rule.",
+      "blockersCarriedForward": "The bank remains blocked until miskeys and ambiguous urban items are rewritten and independently re-adjudicated."
+    },
+    {
+      "lane": "Cognitive walkthrough",
+      "boardMark": "✅",
+      "scope": "Prospective content-only simulation, not a real learner or UI study.",
+      "findings": "Three passages and 22 statements have likely misread, evidence hunt, decision rule and repair action recorded without assigned answers or bands.",
+      "blockersCarriedForward": "No claim of retention, band improvement, accessibility, usability or effectiveness with real students."
+    },
+    {
+      "lane": "Anti-bias and leakage",
+      "boardMark": "✅",
+      "scope": "Detection and blocking, not statistical fairness certification.",
+      "findings": "Stored labels are 7 TRUE, 11 FALSE and 4 NOT GIVEN. Always choosing FALSE scores 50%; the absolute-language cue hits 8 of 10 eligible items. Sequence, length, lexical overlap, per-set balance and qualitative risks are recorded.",
+      "blockersCarriedForward": "n=22 is below the certification threshold; contentCertification stays blocked-key-and-shortcut-review-required."
+    },
+    {
+      "lane": "UI/UX and accessibility",
+      "boardMark": "➖",
+      "scope": "Not applicable to the learner-facing delta of F0.2b.2 only.",
+      "findings": "Catalog, route, ObjectivePracticeEngine and ObjectivePracticeSetBank hashes are unchanged; no app or component imports the audit registry or contract.",
+      "blockersCarriedForward": "This does not certify the existing UI, accessibility, Task 2 parity, shared layouts or product-wide behavior."
+    },
+    {
+      "lane": "Playwright",
+      "boardMark": "➖",
+      "scope": "Not applicable because this audit-only unit introduces no scoped DOM, copy, interaction or runtime delta.",
+      "findings": "The N/A decision is guarded by four baseline hashes and absence of audit imports in learner-facing app/component sources.",
+      "blockersCarriedForward": "No browser matrix, screenshots, traces or viewport evidence exists for this row, so it must never be represented as Playwright PASS."
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "schemaVersion": "ielts-reading-matching-sentence-endings-student-walkthrough.v1",
+  "reviewer": {
+    "humanSignature": false,
+    "sourceContext": "blind-review-packet-only",
+    "reviewedAt": "2026-08-09T15:22:05Z",
+    "notes": [
+      "Recorrido prospectivo desde la perspectiva de un estudiante promedio, basado exclusivamente en el paquete ciego.",
+      "Las orientaciones describen procesos de lectura y descarte sin asignar opciones ni redactar oraciones finales completas."
+    ]
+  },
+  "records": [
+    {
+      "assetId": "formative:matching-sentence-endings:mse-microclimates",
+      "passageBarrier": "El texto alterna causas, condiciones, contrastes y límites en párrafos breves; un lector promedio puede recordar el tema general pero confundir qué matiz corresponde a cada inicio.",
+      "grammarOnlyShortcutRisk": "medium",
+      "visibleConnectiveRisk": "high",
+      "shortcutRisks": [
+        "Elegir por repetir una palabra del inicio sin comprobar la idea completa del párrafo.",
+        "Usar el conector inicial de una opción como prueba suficiente de causalidad, condición o contraste.",
+        "Aceptar afirmaciones absolutas aunque el pasaje use límites y variación local."
+      ],
+      "transferValue": "Practica separar tema, relación lógica y alcance antes de comparar terminaciones, una estrategia transferible a textos con varias causas y excepciones.",
+      "nextAction": "En una segunda pasada, anotar junto a cada inicio una relación esperada y una palabra de alcance; después comparar al menos dos candidatas con la evidencia del párrafo.",
+      "questionWalkthrough": [
+        {
+          "questionId": "mse-microclimates-01",
+          "likelyMisread": "Interpretar el inicio como una afirmación general sobre calor urbano y pasar por alto el cambio de escala entre ciudad y bloque.",
+          "predictedRelation": "Justificación de por qué una perspectiva exclusivamente urbana resulta incompleta.",
+          "grammarFilterRisk": "medium",
+          "connectiveShortcutRisk": "high",
+          "evidenceSearch": "Releer la apertura y localizar la comparación entre zonas muy próximas, además del término que nombra esa variación.",
+          "endingComparison": "Comparar explicaciones sobre diferencias locales con alternativas que prometan eliminar por completo el calor.",
+          "competitorCheck": "Preguntar si la candidata rival explica la escala del problema o introduce una tecnología que pertenece a otro párrafo.",
+          "decisionRule": "Conservar solo una continuación cuya relación causal y alcance local estén respaldados por las primeras líneas.",
+          "repairAction": "Si dos opciones parecen posibles, parafrasear el contraste ciudad-bloque antes de volver a leerlas."
+        },
+        {
+          "questionId": "mse-microclimates-02",
+          "likelyMisread": "Convertir una mejora limitada de superficies en una solución total para la ciudad.",
+          "predictedRelation": "Mecanismo mediante el cual ciertos materiales reducen una parte concreta del problema.",
+          "grammarFilterRisk": "medium",
+          "connectiveShortcutRisk": "medium",
+          "evidenceSearch": "Buscar en el segundo párrafo qué absorben y liberan las superficies y qué resultado limitado se atribuye a los materiales claros.",
+          "endingComparison": "Contrastar una explicación física específica con promesas universales o comparaciones no hechas por el autor.",
+          "competitorCheck": "Verificar que la rival no cambie reducción por eliminación ni introduzca una superioridad entre estrategias.",
+          "decisionRule": "Elegir conceptualmente la candidata que preserve el mecanismo y la limitación espacial descritos.",
+          "repairAction": "Subrayar las palabras que moderan el efecto y rechazar cualquier lectura que las borre."
+        },
+        {
+          "questionId": "mse-microclimates-03",
+          "likelyMisread": "Suponer que cualquier sombra es útil sin atender a ubicación, horario y uso peatonal.",
+          "predictedRelation": "Condición práctica necesaria para que una intervención de sombra funcione.",
+          "grammarFilterRisk": "high",
+          "connectiveShortcutRisk": "high",
+          "evidenceSearch": "Releer el párrafo de sombra y localizar el contraste entre una protección situada junto al recorrido y otra demasiado alejada.",
+          "endingComparison": "Comparar condiciones relacionadas con uso real frente a afirmaciones sobre rendimiento general de materiales distintos.",
+          "competitorCheck": "Comprobar si la rival describe cuándo la sombra sirve o si solo menciona una estrategia del mismo tema.",
+          "decisionRule": "La relación debe expresar una condición de eficacia, no una preferencia absoluta entre soluciones.",
+          "repairAction": "Completar mentalmente solo la relación lógica con las palabras dónde y cuándo, sin mirar todavía las opciones."
+        },
+        {
+          "questionId": "mse-microclimates-04",
+          "likelyMisread": "Recordar únicamente que los edificios bloquean brisas e ignorar que también pueden canalizar aire.",
+          "predictedRelation": "Justificación basada en efectos contrastantes y dependientes del lugar.",
+          "grammarFilterRisk": "medium",
+          "connectiveShortcutRisk": "high",
+          "evidenceSearch": "Localizar en el párrafo del viento los dos efectos opuestos de edificios altos y el ejemplo de calles con resultados distintos.",
+          "endingComparison": "Contrastar una continuación que conserve variabilidad espacial con otra que convierta el efecto en una regla universal.",
+          "competitorCheck": "Exigir que la rival explique por qué se modela antes de aprobar y no solo que repita la palabra viento.",
+          "decisionRule": "Aceptar únicamente una relación que justifique la previsión mediante consecuencias variables.",
+          "repairAction": "Dibujar dos flechas desde un edificio hacia posibles resultados opuestos y volver a evaluar."
+        },
+        {
+          "questionId": "mse-microclimates-05",
+          "likelyMisread": "Interpretar valor limitado como falta de enfriamiento, cuando el problema central puede ser el acceso y el uso cotidiano.",
+          "predictedRelation": "Condición negativa que reduce la utilidad práctica de un espacio fresco.",
+          "grammarFilterRisk": "high",
+          "connectiveShortcutRisk": "medium",
+          "evidenceSearch": "Buscar el ejemplo final que relaciona la plaza con paradas, comercios y escuelas.",
+          "endingComparison": "Comparar alternativas sobre distancia respecto de lugares usados con otras acerca de materiales o movimiento del aire.",
+          "competitorCheck": "Verificar que la rival mantenga como sujeto el espacio público y explique su utilidad, no la eficacia de otra intervención.",
+          "decisionRule": "La candidata debe presentar la circunstancia que vuelve menos útil al lugar pese a ser fresco.",
+          "repairAction": "Reformular valor como utilidad para personas y buscar qué impide esa utilidad en el texto."
+        },
+        {
+          "questionId": "mse-microclimates-06",
+          "likelyMisread": "Elegir una condición genérica sobre colocación y perder la referencia específica a rutinas y recorridos habituales.",
+          "predictedRelation": "Condición positiva de integración con el comportamiento diario.",
+          "grammarFilterRisk": "high",
+          "connectiveShortcutRisk": "medium",
+          "evidenceSearch": "Releer las dos últimas oraciones y localizar dónde ya caminan, esperan o se reúnen las personas.",
+          "endingComparison": "Distinguir la idea amplia de ubicación útil de la formulación específica sobre incorporar intervenciones a trayectos existentes.",
+          "competitorCheck": "Comprobar si la rival pertenece al párrafo de sombra y limita la idea a protección peatonal en ciertos horarios.",
+          "decisionRule": "Priorizar la candidata que recoja el vínculo explícito entre intervención y rutina ordinaria.",
+          "repairAction": "Anotar la palabra rutina junto al inicio y descartar opciones centradas en una sola infraestructura."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-sentence-endings:mse-food-waste",
+      "passageBarrier": "Varias soluciones reducen etapas distintas del desperdicio, por lo que la familiaridad temática puede hacer que el estudiante mezcle prevención, redistribución y tratamiento final.",
+      "grammarOnlyShortcutRisk": "medium",
+      "visibleConnectiveRisk": "high",
+      "shortcutRisks": [
+        "Emparejar por sustantivos repetidos sin identificar en qué etapa ocurre el desperdicio.",
+        "Tratar una medida de último recurso como si evitara el problema desde el origen.",
+        "Confundir condiciones necesarias con causas debido a conectores aparentemente compatibles."
+      ],
+      "transferValue": "Ayuda a rastrear agentes, etapas y mecanismos en textos de políticas donde varias medidas plausibles no son intercambiables.",
+      "nextAction": "Crear una mini tabla mental con agente, acción, etapa y límite para cada párrafo antes de comparar las terminaciones.",
+      "questionWalkthrough": [
+        {
+          "questionId": "mse-food-waste-01",
+          "likelyMisread": "Aceptar el encuadre de consumidores descuidados y omitir productores, comercios y restaurantes.",
+          "predictedRelation": "Justificación que amplía la responsabilidad a etapas anteriores al consumo.",
+          "grammarFilterRisk": "medium",
+          "connectiveShortcutRisk": "high",
+          "evidenceSearch": "Releer el primer párrafo y enumerar qué ocurre antes de que la comida llegue al plato.",
+          "endingComparison": "Comparar una explicación de origen múltiple con alternativas limitadas a incertidumbre en restaurantes u otras etapas particulares.",
+          "competitorCheck": "Preguntar si la rival sustenta el adverbio solo o explica apenas un ejemplo secundario.",
+          "decisionRule": "La continuación debe justificar el reparto de responsabilidad con alcance anterior a la decisión del comprador.",
+          "repairAction": "Marcar la secuencia productor-comercio-restaurante-consumidor y volver al contraste del inicio."
+        },
+        {
+          "questionId": "mse-food-waste-02",
+          "likelyMisread": "Pensar que pronosticar elimina todo desperdicio o confundirlo con la respuesta a periodos de alta demanda en restaurantes.",
+          "predictedRelation": "Mecanismo de reducción basado en mejorar la precisión de estimaciones cercanas.",
+          "grammarFilterRisk": "medium",
+          "connectiveShortcutRisk": "medium",
+          "evidenceSearch": "Buscar qué datos usan las cadenas y qué cantidad de producto fresco se reduce antes de una caída de demanda.",
+          "endingComparison": "Contrastar el mecanismo de estimación con explicaciones sobre excedentes de otro agente.",
+          "competitorCheck": "Verificar que la rival describa lo que hace el sistema, no solo por qué la demanda puede cambiar.",
+          "decisionRule": "Mantener la opción conceptual que vincule mejores predicciones con pedidos más ajustados sin prometer eliminación total.",
+          "repairAction": "Separar en dos notas causa operativa y resultado limitado antes de decidir."
+        },
+        {
+          "questionId": "mse-food-waste-03",
+          "likelyMisread": "Creer que separar y rebajar siempre favorece la venta, aunque el texto describe una señal de inferioridad.",
+          "predictedRelation": "Condición de presentación que normaliza el producto y facilita su aceptación.",
+          "grammarFilterRisk": "high",
+          "connectiveShortcutRisk": "high",
+          "evidenceSearch": "Releer el contraste entre un contenedor separado y la exhibición normal acompañada de una ayuda práctica.",
+          "endingComparison": "Comparar una condición de normalización con otra que recomiende aislamiento del resto de alimentos.",
+          "competitorCheck": "Comprobar si la rival invierte el contraste presentado por el autor aunque su gramática encaje bien.",
+          "decisionRule": "La continuación debe conservar el modo de presentación asociado con mayor aceptación.",
+          "repairAction": "Escribir dos columnas, separado y normal, y ubicar bajo cada una la reacción descrita."
+        },
+        {
+          "questionId": "mse-food-waste-04",
+          "likelyMisread": "Interpretar la utilidad de donar como incondicional y olvidar el requisito de seguridad temporal.",
+          "predictedRelation": "Condición necesaria ligada al momento y manejo del excedente.",
+          "grammarFilterRisk": "high",
+          "connectiveShortcutRisk": "high",
+          "evidenceSearch": "Buscar la advertencia sobre alimentos inseguros y las rutinas de recogida y empaque.",
+          "endingComparison": "Contrastar una condición temporal de seguridad con explicaciones sobre previsión o compostaje.",
+          "competitorCheck": "Confirmar que la rival explique cuándo el programa puede ayudar y no por qué se genera el excedente.",
+          "decisionRule": "La relación correcta en sentido debe imponer el requisito logístico que el párrafo presenta como indispensable.",
+          "repairAction": "Reformular útil como útil siempre que y localizar la condición exacta en el párrafo."
+        },
+        {
+          "questionId": "mse-food-waste-05",
+          "likelyMisread": "Equiparar menor impacto ambiental con prevención del desperdicio en origen.",
+          "predictedRelation": "Clasificación de la medida como etapa final y no sustituto de prevención.",
+          "grammarFilterRisk": "medium",
+          "connectiveShortcutRisk": "medium",
+          "evidenceSearch": "Releer el último párrafo y distinguir entre evitar desperdicio y tratar material que ya no puede consumirse.",
+          "endingComparison": "Comparar una función residual con afirmaciones que atribuyan al compostaje efectos sobre pedidos comerciales.",
+          "competitorCheck": "Verificar que la rival no cambie impacto por prevención ni un agente doméstico por uno comercial.",
+          "decisionRule": "Conservar la continuación que respete el orden de prioridades declarado por los especialistas.",
+          "repairAction": "Dibujar una secuencia prevención-redistribución-tratamiento y ubicar la medida antes de comparar."
+        },
+        {
+          "questionId": "mse-food-waste-06",
+          "likelyMisread": "Confundir la razón de preparar de más con el funcionamiento de los programas de donación.",
+          "predictedRelation": "Causa operativa asociada a no quedarse sin comida en periodos intensos.",
+          "grammarFilterRisk": "medium",
+          "connectiveShortcutRisk": "high",
+          "evidenceSearch": "Volver al primer párrafo y localizar la motivación explícita de los restaurantes durante momentos de alta actividad.",
+          "endingComparison": "Distinguir la causa del excedente de las condiciones posteriores para trasladarlo de forma segura.",
+          "competitorCheck": "Preguntar si la rival responde por qué se produce de más o qué debe hacerse después con lo sobrante.",
+          "decisionRule": "La continuación debe mantener el mismo agente y explicar la decisión de preparación previa.",
+          "repairAction": "Encerrar restaurante y producir en el inicio, y buscar en el pasaje la oración con ese mismo agente y acción."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-sentence-endings:mse-coastal-libraries",
+      "passageBarrier": "El pasaje atribuye a las bibliotecas funciones valiosas pero delimitadas; el obstáculo principal es distinguir apoyo, intermediación y preparación de sustitución de servicios expertos o de emergencia.",
+      "grammarOnlyShortcutRisk": "medium",
+      "visibleConnectiveRisk": "high",
+      "shortcutRisks": [
+        "Elegir una continuación positiva solo porque coincide con el tono favorable hacia las bibliotecas.",
+        "Ignorar límites explícitos y convertir apoyo comunitario en reemplazo de sistemas formales.",
+        "Confundir el ejemplo de evidencia vecinal con los talleres de interpretación de mapas."
+      ],
+      "transferValue": "Entrena la distinción entre capacidad, límite y condición en textos que presentan instituciones con varios papeles relacionados.",
+      "nextAction": "Etiquetar cada párrafo como acceso, confianza, mapas, evidencia local o límites y exigir que cada inicio permanezca dentro de su función.",
+      "questionWalkthrough": [
+        {
+          "questionId": "mse-libraries-01",
+          "likelyMisread": "Pensar que la adaptación sustituye las funciones tradicionales o depende de abandonar libros e internet.",
+          "predictedRelation": "Justificación basada en accesibilidad, familiaridad y disponibilidad del espacio público.",
+          "grammarFilterRisk": "medium",
+          "connectiveShortcutRisk": "high",
+          "evidenceSearch": "Releer la apertura y localizar las características institucionales que explican el nuevo uso sin eliminar los anteriores.",
+          "endingComparison": "Comparar razones de acceso comunitario con condiciones que exijan dejar funciones tradicionales.",
+          "competitorCheck": "Comprobar si la rival contradice explícitamente la permanencia del préstamo, internet y grupos de lectura.",
+          "decisionRule": "La continuación debe explicar capacidad de apoyo sin presentar una sustitución no descrita.",
+          "repairAction": "Separar en dos columnas funciones que continúan y función añadida, luego revisar la relación causal."
+        },
+        {
+          "questionId": "mse-libraries-02",
+          "likelyMisread": "Asignar al personal un papel de asesor experto que el pasaje limita de forma expresa.",
+          "predictedRelation": "Modo de orientación confiable con una frontera profesional clara.",
+          "grammarFilterRisk": "high",
+          "connectiveShortcutRisk": "medium",
+          "evidenceSearch": "Buscar qué permite la capacitación y qué dos papeles especializados no debe fingir el personal.",
+          "endingComparison": "Contrastar guía hacia recursos con sustitución de especialistas o infraestructura.",
+          "competitorCheck": "Verificar si la rival preserva el alcance de orientar o lo amplía hasta dar asesoramiento técnico.",
+          "decisionRule": "Aceptar solo una continuación coherente con la función de enlace y su límite declarado.",
+          "repairAction": "Reformular guiar como dirigir hacia fuentes y volver a evaluar cualquier opción que implique resolver el problema."
+        },
+        {
+          "questionId": "mse-libraries-03",
+          "likelyMisread": "Quedarse con la mera existencia de mapas oficiales y omitir el puente hacia lugares conocidos.",
+          "predictedRelation": "Mecanismo mediante el cual una proyección abstracta se conecta con referencias cotidianas.",
+          "grammarFilterRisk": "medium",
+          "connectiveShortcutRisk": "medium",
+          "evidenceSearch": "Releer el párrafo de talleres y ubicar la comparación entre mapas y fotografías de calles familiares.",
+          "endingComparison": "Comparar una acción de interpretación con ideas sobre acceso general o aportes para mantenimiento.",
+          "competitorCheck": "Preguntar si la rival explica cómo el taller vuelve comprensible el mapa, no solo otro beneficio del programa.",
+          "decisionRule": "La continuación debe reflejar el puente entre escala regional y puntos de referencia reconocibles.",
+          "repairAction": "Anotar abstracto a conocido como transformación buscada y usarla para filtrar."
+        },
+        {
+          "questionId": "mse-libraries-04",
+          "likelyMisread": "Confundir la participación de residentes con recepción de instrucciones en vez de producción de evidencia local.",
+          "predictedRelation": "Resultado de incorporar observaciones vecinales a decisiones concretas de mantenimiento.",
+          "grammarFilterRisk": "medium",
+          "connectiveShortcutRisk": "high",
+          "evidenceSearch": "Buscar qué marcaron los visitantes y cómo utilizó después esas observaciones el consejo local.",
+          "endingComparison": "Distinguir uso de datos aportados por residentes de actividades centradas en interpretar información oficial.",
+          "competitorCheck": "Comprobar que la rival contiene una consecuencia de planificación y no solo una actividad educativa.",
+          "decisionRule": "La relación debe conectar observación local con una decisión posterior verificable dentro del ejemplo.",
+          "repairAction": "Trazar la cadena observación-registro-priorización y descartar continuaciones que rompan esa secuencia."
+        },
+        {
+          "questionId": "mse-libraries-05",
+          "likelyMisread": "Asociar mayor valor con actuar durante la emergencia, pese a que el cierre sitúa la contribución antes de la crisis.",
+          "predictedRelation": "Condición temporal y funcional de preparación, interpretación y conexión con servicios.",
+          "grammarFilterRisk": "high",
+          "connectiveShortcutRisk": "high",
+          "evidenceSearch": "Releer la última oración y separar las acciones previas a una emergencia de la gestión del evento mismo.",
+          "endingComparison": "Comparar preparación y acceso a servicios con afirmaciones de respuesta directa durante una crisis.",
+          "competitorCheck": "Verificar que la rival responda cuándo y cómo se maximiza el valor, no solamente qué limitación existe.",
+          "decisionRule": "La continuación debe conservar simultáneamente el momento previo y la función de enlace e interpretación.",
+          "repairAction": "Encerrar el superlativo mayor y buscar en el cierre la condición explícita que lo acompaña."
+        },
+        {
+          "questionId": "mse-libraries-06",
+          "likelyMisread": "Elegir otra formulación positiva sobre preparación y no responder a la advertencia de no gestionar emergencias en solitario.",
+          "predictedRelation": "Justificación mediante límites institucionales frente a sistemas formales de protección.",
+          "grammarFilterRisk": "medium",
+          "connectiveShortcutRisk": "high",
+          "evidenceSearch": "Localizar la lista de funciones que las bibliotecas no pueden reemplazar en el párrafo final.",
+          "endingComparison": "Distinguir la razón de no asumir gestión directa de la descripción de cuándo ofrecen mayor valor.",
+          "competitorCheck": "Preguntar si la rival explica el límite del inicio o simplemente menciona una función útil y relacionada.",
+          "decisionRule": "La continuación debe justificar la expectativa limitada mediante la existencia de protecciones formales no sustituibles.",
+          "repairAction": "Convertir el inicio en la pregunta por qué no y responder primero con una categoría de evidencia, sin mirar las opciones."
+        }
+      ]
+    }
+  ]
+}

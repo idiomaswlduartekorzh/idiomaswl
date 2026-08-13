@@ -1,0 +1,161 @@
+- generic [active] [ref=f2e1]:
+  - link "Skip to main content" [ref=f2e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f2e3]:
+    - generic [ref=f2e4]:
+      - link "Idiomas WeLearn — home" [ref=f2e5] [cursor=pointer]:
+        - /url: /
+        - img "Idiomas WeLearn" [ref=f2e7]
+      - navigation "Main navigation" [ref=f2e8]:
+        - link "Home" [ref=f2e9] [cursor=pointer]:
+          - /url: /
+        - link "Languages" [ref=f2e10] [cursor=pointer]:
+          - /url: /clases-de-idiomas
+        - link "Exams" [ref=f2e11] [cursor=pointer]:
+          - /url: /examenes
+        - link "Practice" [ref=f2e12] [cursor=pointer]:
+          - /url: /practica
+        - link "About us" [ref=f2e13] [cursor=pointer]:
+          - /url: /quienes-somos
+      - generic [ref=f2e14]:
+        - generic [ref=f2e15]:
+          - link "WeLearn on TikTok" [ref=f2e16] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@idiomas.welearn
+          - link "WeLearn on Instagram" [ref=f2e19] [cursor=pointer]:
+            - /url: https://www.instagram.com/idiomas_welearn/
+        - button "Switch to dark mode" [ref=f2e24] [cursor=pointer]:
+          - generic [ref=f2e25]: ☀️
+        - link "Sign in" [ref=f2e27] [cursor=pointer]:
+          - /url: /login
+        - link "Level Radar →" [ref=f2e28] [cursor=pointer]:
+          - /url: /nivel-radar
+  - main [ref=f2e29]:
+    - generic [ref=f2e31]:
+      - navigation "Breadcrumb" [ref=f2e32]:
+        - link "Practice" [ref=f2e33] [cursor=pointer]:
+          - /url: /practica
+        - generic [ref=f2e34]: /
+        - link "IELTS" [ref=f2e35] [cursor=pointer]:
+          - /url: /practica/ielts
+        - generic [ref=f2e36]: /
+        - link "Reading" [ref=f2e37] [cursor=pointer]:
+          - /url: /practica/ielts/reading
+        - generic [ref=f2e38]: /
+        - link "Question Types" [ref=f2e39] [cursor=pointer]:
+          - /url: /practica/ielts/reading/tipos-de-preguntas
+        - generic [ref=f2e40]: /
+        - generic [ref=f2e41]: Sentence Completion
+      - generic [ref=f2e42]:
+        - generic [ref=f2e43]:
+          - paragraph [ref=f2e44]: IELTS Academic Reading · Question-type lesson
+          - 'heading "Sentence Completion: predict grammar, then find meaning" [level=1] [ref=f2e45]'
+          - paragraph [ref=f2e46]: Use the incomplete sentence to predict grammar and meaning, locate its paraphrase in the passage and insert the smallest exact answer.
+        - complementary "Sentence Completion at a glance" [ref=f2e47]:
+          - generic [ref=f2e48]
+          - generic [ref=f2e51]
+          - generic [ref=f2e54]
+      - paragraph [ref=f2e57]:
+        - strong [ref=f2e58]: "Short answer:"
+        - text: "One completed statement. Start from sentence frame + equivalent passage sentence, and control the main risk: repeating frame words or exceeding the limit."
+      - navigation "Sentence Completion lesson sections" [ref=f2e59]:
+        - generic [ref=f2e60]: Choose your next move
+        - generic [ref=f2e61]:
+          - link "Learn the method" [ref=f2e62] [cursor=pointer]:
+            - /url: "#lesson-method"
+          - link "See an example" [ref=f2e63] [cursor=pointer]:
+            - /url: "#worked-example"
+          - link "Start guided practice" [ref=f2e64] [cursor=pointer]:
+            - /url: "#guided-practice"
+          - link "Open the full set" [ref=f2e65] [cursor=pointer]:
+            - /url: "#independent-practice"
+          - link "Go to Progress Engine" [ref=f2e66] [cursor=pointer]:
+            - /url: "#progress-engine"
+      - region "Use it with a clear purpose" [ref=f2e67]:
+        - generic [ref=f2e68]:
+          - paragraph [ref=f2e69]: What this skill changes
+          - heading "Use it with a clear purpose" [level=2] [ref=f2e70]
+          - paragraph [ref=f2e71]: A useful reading skill changes what you notice, what you ignore and how you prove an answer.
+        - generic [ref=f2e72]:
+          - article [ref=f2e73]
+          - article [ref=f2e76]
+          - article [ref=f2e79]
+      - region "A repeatable process, not a shortcut" [ref=f2e82]:
+        - generic [ref=f2e83]:
+          - paragraph [ref=f2e84]: WeLearn method
+          - heading "A repeatable process, not a shortcut" [level=2] [ref=f2e85]
+          - paragraph [ref=f2e86]: Follow these steps until the sequence becomes automatic under time pressure.
+        - generic [ref=f2e87]:
+          - article [ref=f2e88]
+          - article [ref=f2e92]
+          - article [ref=f2e96]
+          - article [ref=f2e100]
+      - region "See the difference before you practise" [ref=f2e104]:
+        - generic [ref=f2e105]:
+          - paragraph [ref=f2e106]: Worked contrast
+          - heading "See the difference before you practise" [level=2] [ref=f2e107]
+        - generic [ref=f2e108]:
+          - article [ref=f2e109]
+          - article [ref=f2e112]
+      - region "Apply the method with immediate feedback" [ref=f2e115]:
+        - generic [ref=f2e116]:
+          - paragraph [ref=f2e117]: Guided practice
+          - heading "Apply the method with immediate feedback" [level=2] [ref=f2e118]
+          - paragraph [ref=f2e119]: Make a decision first. Then use the explanation to compare your reasoning with the evidence.
+        - region "Guided Sentence Completion practice" [ref=f2e120]:
+          - generic [ref=f2e121]
+          - complementary "Predict before you scan" [ref=f2e128]
+          - progressbar "Guided Sentence Completion progress" [ref=f2e142]
+          - generic [ref=f2e161]
+          - paragraph [ref=f2e183]
+      - region "Transfer the method to a new passage" [ref=f2e187]:
+        - generic [ref=f2e188]:
+          - paragraph [ref=f2e189]: Independent practice
+          - heading "Transfer the method to a new passage" [level=2] [ref=f2e190]
+          - paragraph [ref=f2e191]: Complete the full set before feedback opens. This checks whether the process survives without step-by-step prompting.
+        - region "Independent Sentence Completion set" [ref=f2e192]:
+          - generic [ref=f2e193]
+          - generic [ref=f2e198]
+          - generic [ref=f2e291]
+          - paragraph [ref=f2e301]
+        - generic [ref=f2e305]:
+          - article [ref=f2e306]
+          - article [ref=f2e315]
+      - region "Sentence Completion progressive practice" [ref=f2e324]:
+        - region "Build exact answers across six levels" [ref=f2e325]:
+          - generic [ref=f2e326]
+          - generic [ref=f2e333]
+          - navigation "Sentence Completion progress levels" [ref=f2e353]
+          - generic [ref=f2e398]
+          - complementary "Sentence Completion review plan" [ref=f2e486]
+          - paragraph [ref=f2e498]
+          - paragraph [ref=f2e502]
+          - paragraph [ref=f2e506]
+          - paragraph [ref=f2e510]
+          - paragraph [ref=f2e514]: Guided Learn mode delivers answer keys and explanations to this browser. It is not a secure Practice, Exam or proctored mode.
+      - generic [ref=f2e515]:
+        - paragraph [ref=f2e516]: Review and sources
+        - heading "How this Sentence Completion lesson was reviewed" [level=2] [ref=f2e517]
+        - paragraph [ref=f2e518]: This material was reviewed in August 2026 to keep the official IELTS Reading format separate from the WeLearn learning strategy used on this page.
+        - generic [ref=f2e519]:
+          - article [ref=f2e520]
+          - article [ref=f2e527]
+        - paragraph [ref=f2e535]: "Scope: these WeLearn exercises support academic-reading practice. They are not official IELTS questions and do not predict a band score by themselves."
+      - region "Preguntas frecuentes" [ref=f2e536]:
+        - generic [ref=f2e537]:
+          - paragraph [ref=f2e538]: FAQ en español
+          - heading "Preguntas frecuentes" [level=2] [ref=f2e539]
+          - paragraph [ref=f2e540]: Esta es la única sección de la lección que se conserva en español.
+        - generic [ref=f2e541]:
+          - article [ref=f2e542]
+          - article [ref=f2e545]
+          - article [ref=f2e548]
+      - region "Turn the skill into exam decisions" [ref=f2e551]:
+        - article [ref=f2e552]:
+          - paragraph [ref=f2e553]: Continue your Reading pathway
+          - heading "Turn the skill into exam decisions" [level=2] [ref=f2e554]
+          - paragraph [ref=f2e555]: Sentence Completion is presented here as guided WeLearn practice. Answer keys reach the browser for feedback, so this is not a secure Exam or proctored mode. Candidate sources do not by themselves prove authorship or full factual verification.
+          - list [ref=f2e556]
+          - generic [ref=f2e560]
+  - link "Contact WeLearn on WhatsApp" [ref=f2e566] [cursor=pointer]:
+    - /url: https://wa.me/573005004253?text=Hello%2C%20I%20was%20practising%20IELTS%20with%20WeLearn%20and%20would%20like%20guidance%20on%20how%20to%20continue%20my%20preparation.
+    - generic: Message us

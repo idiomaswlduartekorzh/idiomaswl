@@ -1,0 +1,47 @@
+{
+  "capturedAt": "2026-08-09",
+  "branch": "codex/ielts-task2-introduction-pilot",
+  "head": "cf037bf68d766b8bc2cb81f930a4b5a42ffbeb78",
+  "originMain": "1181433edfc7e10362a88c66e9377b4829a4761f",
+  "headVsOriginMain": {
+    "headOnly": 5,
+    "originMainOnly": 0
+  },
+  "statusAtUnitStart": [
+    " M scripts/check-ielts-task2-alignment.mjs",
+    " M src/app/(site)/practica/ielts/academic/writing/task2/analisis-pregunta/PromptAnalysisClient.tsx",
+    " M src/app/(site)/practica/ielts/academic/writing/task2/analisis-pregunta/PromptAnalysisPracticeEngine.tsx",
+    " M src/app/(site)/practica/ielts/academic/writing/task2/analisis-pregunta/PromptAnalysisWorkshop.tsx",
+    " M src/app/(site)/practica/ielts/academic/writing/task2/tarea-completa/TareaCompletaTask2Client.tsx",
+    " M src/app/(site)/practica/ielts/academic/writing/task2/tarea-completa/page.tsx",
+    "?? docs/ielts-reading-loop.md",
+    "?? docs/ielts-task2-loop.md",
+    "?? docs/toefl-2026-alignment-loop.md",
+    "?? src/app/(site)/practica/ielts/academic/writing/task2/analisis-pregunta/analysis-drills.ts",
+    "?? src/app/(site)/practica/ielts/academic/writing/task2/tarea-completa/task2-prompt-bank.ts",
+    "?? tests/e2e/ielts-task2-analisis.spec.ts",
+    "?? tests/e2e/ielts-task2-tarea-completa.spec.ts"
+  ],
+  "concurrentUntrackedFilesObservedAfterStart": [
+    "docs/toefl-2026-audio-manifest-2026-08-09.tsv",
+    "docs/toefl-2026-baseline-2026-08-09.md",
+    "docs/toefl-2026-editorial-inventory-2026-08-09.md",
+    "docs/toefl-2026-editorial-inventory-2026-08-09.tsv",
+    "docs/toefl-2026-fidelity-and-disclosure-contract.md",
+    "docs/toefl-ibt-2026-official-format.md"
+  ],
+  "fingerprints": {
+    "readingAppAndExamPracticeAggregateSha256": "1f38640c3be957de016d014ede140c50856779a2a5647463db71b948f8666fad",
+    "task2ReferenceAggregateSha256": "31831cf16ad0ea35cbd5b6f4f48d4c79f884c09e5ed82c9b657b1e3a007b9b49",
+    "ieltsMocksAggregateSha256": "ae3603e568e71171edf386a37eb1e680cfb93c1276dbde0dee76053e7c149be6",
+    "seoCatalogSha256": "8f19d7520483e779bb33c64e3ce2d67eb062549a8da98aedcdc5e1d61e4d436d",
+    "mockTypesSha256": "c8fca69d7a73f92dfaed6c9095f250e6bdd088a33e6393acac06c4bbc8f7bd13",
+    "ieltsPracticeClientSha256": "4a6c360778b2ed1e85414617a13eb100eec5925ee7c12177138c5f69d28b06ee",
+    "examPrimitivesSha256": "38fc4e1f7c8a22d149887ace477cde8f16ad15a575627de8976072632522bf93"
+  },
+  "fingerprintCommands": [
+    "find 'src/app/(site)/practica/ielts/reading' src/components/exam-practice -type f -print0 | sort -z | xargs -0 shasum -a 256 | shasum -a 256",
+    "find 'src/app/(site)/practica/ielts/academic/writing/task2' -type f -print0 | sort -z | xargs -0 shasum -a 256 | shasum -a 256",
+    "find src/data/mocks -maxdepth 1 -name 'ielts-set-*.ts' -type f -print0 | sort -z | xargs -0 shasum -a 256 | shasum -a 256"
+  ]
+}

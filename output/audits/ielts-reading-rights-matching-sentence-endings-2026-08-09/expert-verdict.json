@@ -1,0 +1,1462 @@
+{
+  "schemaVersion": "ielts-reading-matching-sentence-endings-expert-verdict.v1",
+  "reviewer": {
+    "reviewerRunId": "mse-expert-2026-08-09T15:29:38Z",
+    "reviewedAt": "2026-08-09T15:36:59Z",
+    "blindPacketSha256": "9dafb91f3e3850269e005890d1f1f1484afb3e0a785002775c9fcfb5c6a31393",
+    "firstPassSha256": "3764f944dcdcac51279701dba0f9e1fa8e97aa15a2a7f9acd659988e1377abc0",
+    "openedEvidenceIds": [
+      "micro-epa-within-city-hotspots",
+      "micro-epa-cool-pavements",
+      "micro-epa-tree-shade",
+      "micro-city-london-wind-guidelines",
+      "micro-noaa-transit-shade-study",
+      "food-usda-farm-market-loss",
+      "food-springer-grocery-holiday-forecasting",
+      "food-frontiers-imperfect-produce-cues",
+      "food-fda-donation-safety",
+      "food-epa-wasted-food-scale",
+      "coastal-ala-resilience-hubs",
+      "coastal-imls-trusted-libraries",
+      "coastal-noaa-flood-map-workshops",
+      "coastal-noaa-participatory-flood-mapping",
+      "coastal-fema-community-information-sharing"
+    ],
+    "sourceContext": "two-pass-blind-then-factual-sources",
+    "reviewSequence": [
+      "blind-review",
+      "factual-source-review"
+    ],
+    "directSourceReview": true,
+    "humanSignature": false,
+    "notes": "The blind first pass was persisted, structurally validated and hashed before the factual packet or any source was opened. All 15 exact candidate URLs were then opened directly. Thirteen returned reviewable content; the IMLS HTML URL and FEMA PDF URL returned no reviewable content after direct attempts, and were treated as source limitations rather than evidence. Question decisions were carried forward unchanged."
+  },
+  "records": [
+    {
+      "assetId": "formative:matching-sentence-endings:mse-microclimates",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "high",
+        "representationRisk": "medium",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "low",
+        "grammarShortcutRisk": "medium",
+        "visibleConnectiveRisk": "high",
+        "passageTitleCueRisk": "low",
+        "notes": "The item remains internally answerable without outside knowledge, but the factual review found a pattern of plausible synthesis presented as settled detail. Official sources support fine-scale urban heat variation, cool pavements, shade and early microclimate studies; they do not establish several exact temporal, comparative or superlative claims."
+      },
+      "questions": [
+        {
+          "questionId": "mse-microclimates-01",
+          "selectedEndingId": "A",
+          "completedSentence": "Urban heat should not be treated only as a city-wide issue because the same district can contain very different local conditions.",
+          "logicalRelation": "cause: block-level temperature variation explains why a city-wide-only framing is inadequate",
+          "evidenceQuotes": [
+            "People often think of urban heat as a city-wide problem, but temperatures can vary sharply from one block to the next.",
+            "Two streets in the same district may therefore feel very different on a summer afternoon."
+          ],
+          "candidateAssessments": [
+            {
+              "endingId": "A",
+              "grammarFit": "natural",
+              "oneBestStatus": "best",
+              "note": "Directly restates the contrast between city-wide framing and sharply different local conditions within one district."
+            },
+            {
+              "endingId": "B",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "The passage explicitly says surface changes do not cool an entire city immediately; nothing stops all heat."
+            },
+            {
+              "endingId": "C",
+              "grammarFit": "strained",
+              "oneBestStatus": "unrelated",
+              "note": "A means phrase does not logically complete the claim about how urban heat should be treated."
+            },
+            {
+              "endingId": "D",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "This placement condition belongs to shade benefits, not to whether urban heat is a city-wide issue."
+            },
+            {
+              "endingId": "E",
+              "grammarFit": "natural",
+              "oneBestStatus": "plausible-but-inferior",
+              "note": "Variable building effects illustrate local variation, but the ending is narrower than the passage's direct same-district explanation."
+            },
+            {
+              "endingId": "F",
+              "grammarFit": "fails",
+              "oneBestStatus": "unrelated",
+              "note": "The singular locative pronoun has no coherent referent in 'urban heat'."
+            },
+            {
+              "endingId": "G",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "No comparison establishes that reflective roofs always outperform trees."
+            },
+            {
+              "endingId": "H",
+              "grammarFit": "strained",
+              "oneBestStatus": "unrelated",
+              "note": "The route condition applies to interventions, not to the conceptual framing of urban heat."
+            }
+          ],
+          "closestCompetingEndingId": "E",
+          "competitorFailure": "It gives one location-dependent example involving buildings, whereas A directly supplies the passage's stated general reason and retains the same-district contrast.",
+          "ambiguity": "none",
+          "reasoning": "The opening and closing sentences of the first paragraph create an explicit city-wide versus block-level contrast. A captures both the causal relation and the same-district evidence most completely."
+        },
+        {
+          "questionId": "mse-microclimates-02",
+          "selectedEndingId": "C",
+          "completedSentence": "Pale road coatings and reflective roof materials may help by lowering the amount of heat stored in particular materials.",
+          "logicalRelation": "mechanism: reflective surface treatments reduce heat storage in specific surfaces",
+          "evidenceQuotes": [
+            "This is why some cities are testing pale road coatings and reflective roof materials.",
+            "These changes do not cool an entire city immediately, but they can reduce the heat stored in specific surfaces."
+          ],
+          "candidateAssessments": [
+            {
+              "endingId": "A",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Local variation motivates microclimate analysis but does not state how the coatings help."
+            },
+            {
+              "endingId": "B",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "The passage limits the effect to reducing stored heat in surfaces, not stopping all city heat."
+            },
+            {
+              "endingId": "C",
+              "grammarFit": "natural",
+              "oneBestStatus": "best",
+              "note": "This is an exact paraphrase of reducing heat stored in specific surfaces."
+            },
+            {
+              "endingId": "D",
+              "grammarFit": "natural",
+              "oneBestStatus": "plausible-but-inferior",
+              "note": "Placement and timing can affect urban design benefits, but the passage assigns that condition to shade rather than reflective materials."
+            },
+            {
+              "endingId": "E",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Variable airflow effects concern towers, not surface treatments."
+            },
+            {
+              "endingId": "F",
+              "grammarFit": "strained",
+              "oneBestStatus": "unrelated",
+              "note": "The singular 'it' does not naturally refer to the plural materials and the location claim is absent."
+            },
+            {
+              "endingId": "G",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "The passage makes no always-better comparison with shade trees."
+            },
+            {
+              "endingId": "H",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Ordinary-route placement is the condition for small interventions generally, not the stated mechanism for these surfaces."
+            }
+          ],
+          "closestCompetingEndingId": "D",
+          "competitorFailure": "D is a defensible general design principle but transfers the shade paragraph's condition to different interventions; C alone matches the stated material mechanism.",
+          "ambiguity": "none",
+          "reasoning": "The second paragraph names the two treatments and immediately defines their limited benefit as lower heat storage in particular surfaces."
+        },
+        {
+          "questionId": "mse-microclimates-03",
+          "selectedEndingId": "D",
+          "completedSentence": "Shade structures are most useful only when they are placed where and when pedestrians need protection.",
+          "logicalRelation": "condition: shade benefit depends on spatial placement and timing of actual pedestrian use",
+          "evidenceQuotes": [
+            "Shade also matters, though its benefits depend on placement.",
+            "Building overhangs, awnings and transit shelters can provide similar relief when they are designed around the times when people actually use the space."
+          ],
+          "candidateAssessments": [
+            {
+              "endingId": "A",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Same-district variation does not define when shade structures are most useful."
+            },
+            {
+              "endingId": "B",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "No shade measure stops all heat entering a city."
+            },
+            {
+              "endingId": "C",
+              "grammarFit": "strained",
+              "oneBestStatus": "unrelated",
+              "note": "Shade does reduce received heat, but the passage and wording here concern storage in materials."
+            },
+            {
+              "endingId": "D",
+              "grammarFit": "natural",
+              "oneBestStatus": "best",
+              "note": "Combines the paragraph's explicit placement dependence with its timing-of-use condition."
+            },
+            {
+              "endingId": "E",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Air movement around new buildings is a different mechanism."
+            },
+            {
+              "endingId": "F",
+              "grammarFit": "fails",
+              "oneBestStatus": "contradicted",
+              "note": "The plural subject conflicts with 'it', and being away from users reduces usefulness."
+            },
+            {
+              "endingId": "G",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "The passage does not rank reflective roofs over shade trees."
+            },
+            {
+              "endingId": "H",
+              "grammarFit": "natural",
+              "oneBestStatus": "plausible-but-inferior",
+              "note": "Routes people use are relevant to practical placement, but H omits the explicit timing requirement and refers most directly to small interventions generally."
+            }
+          ],
+          "closestCompetingEndingId": "H",
+          "competitorFailure": "H captures user-location relevance but is less precise than D, which covers both where and when shade is needed and mirrors the dedicated shade paragraph.",
+          "ambiguity": "none",
+          "reasoning": "The shade paragraph states both that benefits depend on placement and that analogous structures should be designed around actual times of use."
+        },
+        {
+          "questionId": "mse-microclimates-04",
+          "selectedEndingId": "E",
+          "completedSentence": "Airflow modelling is important before large developments although the effect of new buildings on air movement can vary by location.",
+          "logicalRelation": "concession and rationale: modelling is needed because the same development can improve one location and worsen another",
+          "evidenceQuotes": [
+            "Urban designers sometimes model airflow before approving large developments because a new tower may improve comfort in one street while making another feel stagnant.",
+            "For this reason, wind solutions are rarely universal."
+          ],
+          "candidateAssessments": [
+            {
+              "endingId": "A",
+              "grammarFit": "natural",
+              "oneBestStatus": "plausible-but-inferior",
+              "note": "Different local conditions broadly justify modelling, but A omits the direct new-building airflow mechanism."
+            },
+            {
+              "endingId": "B",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "Modelling does not stop heat entering the city."
+            },
+            {
+              "endingId": "C",
+              "grammarFit": "strained",
+              "oneBestStatus": "unrelated",
+              "note": "Heat stored in materials is not the object of airflow modelling here."
+            },
+            {
+              "endingId": "D",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Pedestrian shade placement is a separate issue."
+            },
+            {
+              "endingId": "E",
+              "grammarFit": "natural",
+              "oneBestStatus": "best",
+              "note": "Directly paraphrases the tower's differing effects across streets."
+            },
+            {
+              "endingId": "F",
+              "grammarFit": "strained",
+              "oneBestStatus": "unrelated",
+              "note": "The referent and location condition do not describe modelling."
+            },
+            {
+              "endingId": "G",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "There is no roof-versus-tree comparison."
+            },
+            {
+              "endingId": "H",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Daily routes concern placement of interventions, not why developments require airflow models."
+            }
+          ],
+          "closestCompetingEndingId": "A",
+          "competitorFailure": "A states the general existence of local variation, while E specifically identifies the location-dependent airflow effect of new buildings that the modelling is designed to predict.",
+          "ambiguity": "none",
+          "reasoning": "The fourth paragraph explicitly links pre-approval modelling to opposite airflow outcomes in different streets; E preserves that contrast."
+        },
+        {
+          "questionId": "mse-microclimates-05",
+          "selectedEndingId": "F",
+          "completedSentence": "A cool public space may have limited value if it is located away from the places people normally use.",
+          "logicalRelation": "condition: spatial disconnection from routine destinations limits practical usefulness",
+          "evidenceQuotes": [
+            "A cool plaza is less useful if it is far from bus stops, shops or schools."
+          ],
+          "candidateAssessments": [
+            {
+              "endingId": "A",
+              "grammarFit": "natural",
+              "oneBestStatus": "plausible-but-inferior",
+              "note": "Local differences might affect value, but the passage gives distance from routine destinations as the direct condition."
+            },
+            {
+              "endingId": "B",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "The absolute claim about stopping all heat is unsupported."
+            },
+            {
+              "endingId": "C",
+              "grammarFit": "strained",
+              "oneBestStatus": "unrelated",
+              "note": "Lower material heat storage describes a mechanism, not why a cool space has limited value."
+            },
+            {
+              "endingId": "D",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "Placement where pedestrians need protection increases, rather than limits, value."
+            },
+            {
+              "endingId": "E",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Variable building airflow is not the stated accessibility problem."
+            },
+            {
+              "endingId": "F",
+              "grammarFit": "natural",
+              "oneBestStatus": "best",
+              "note": "Precisely paraphrases a plaza being far from bus stops, shops or schools."
+            },
+            {
+              "endingId": "G",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "No comparison of roofs and trees explains the plaza's limited value."
+            },
+            {
+              "endingId": "H",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "Adding a public space to ordinary routes would increase its practical value."
+            }
+          ],
+          "closestCompetingEndingId": "A",
+          "competitorFailure": "A is only a broad contextual possibility; F is the near-verbatim condition stated for the cool plaza and preserves the singular referent.",
+          "ambiguity": "none",
+          "reasoning": "The final paragraph uses the same cool-place example and directly equates limited usefulness with distance from common destinations."
+        },
+        {
+          "questionId": "mse-microclimates-06",
+          "selectedEndingId": "H",
+          "completedSentence": "Small microclimate interventions work best when they are added to routes people already use in daily life.",
+          "logicalRelation": "condition: interventions are most effective when integrated into ordinary routines",
+          "evidenceQuotes": [
+            "Small interventions are most effective when they appear along ordinary routes, where people are already walking, waiting or gathering."
+          ],
+          "candidateAssessments": [
+            {
+              "endingId": "A",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Local variation motivates interventions but does not define their best placement."
+            },
+            {
+              "endingId": "B",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "No intervention stops all heat from entering a city."
+            },
+            {
+              "endingId": "C",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Some surface interventions reduce stored heat, but the final claim covers interventions generally and their placement."
+            },
+            {
+              "endingId": "D",
+              "grammarFit": "natural",
+              "oneBestStatus": "plausible-but-inferior",
+              "note": "User-centred placement and timing are relevant, but D is framed specifically around pedestrian protection and shade."
+            },
+            {
+              "endingId": "E",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Location-variable airflow does not state the general best-use condition."
+            },
+            {
+              "endingId": "F",
+              "grammarFit": "fails",
+              "oneBestStatus": "contradicted",
+              "note": "The singular pronoun mismatches the plural subject and remote placement would reduce effectiveness."
+            },
+            {
+              "endingId": "G",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "The categorical roof comparison is absent."
+            },
+            {
+              "endingId": "H",
+              "grammarFit": "natural",
+              "oneBestStatus": "best",
+              "note": "Near-verbatim paraphrase of appearing along ordinary routes already used by people."
+            }
+          ],
+          "closestCompetingEndingId": "D",
+          "competitorFailure": "D shares the user-centred design idea but narrows it to protection and timing; H directly matches the final sentence's ordinary-route criterion.",
+          "ambiguity": "none",
+          "reasoning": "The passage ends with an explicit most-effective condition, and H reproduces its routine-route logic."
+        }
+      ],
+      "factualClaims": [
+        {
+          "claim": "People often think of urban heat as a city-wide problem, but temperatures can vary sharply from one block to the next.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "micro-epa-within-city-hotspots"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "micro-epa-within-city-hotspots",
+              "locator": "Measuring Heat Islands — Designing an Approach; Geographic Coverage; Types of Temperature Data",
+              "evidenceSummary": "EPA explicitly discusses hotter and cooler areas within a city, identifies intra-city hot spots, and says surface data can reveal differences at very fine scales. It does not document what people generally think or establish the exact block-to-block wording."
+            }
+          ],
+          "note": "The temperature-variation core is supported, but the public-belief framing and exact spatial comparison go beyond the cited page."
+        },
+        {
+          "claim": "Dark asphalt absorbs more solar energy than lighter paving, and it releases stored heat slowly after sunset.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "micro-epa-cool-pavements"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "micro-epa-cool-pavements",
+              "locator": "Using Cool Pavements to Reduce Heat Islands — opening definition and Arizona pilot",
+              "evidenceSummary": "EPA defines cool pavements as reflecting more solar energy or otherwise remaining cooler and reports conventional asphalt reaching higher midday surface temperatures than cool pavement. The page does not establish slow release of stored heat after sunset."
+            }
+          ],
+          "note": "Daytime absorption and temperature contrast are supported in broad terms; the nighttime-release component is not traced here."
+        },
+        {
+          "claim": "Building overhangs, awnings and transit shelters can provide similar relief when they are designed around the times when people actually use the space.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "micro-epa-tree-shade"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "micro-epa-tree-shade",
+              "locator": "Benefits of Trees and Vegetation — How Trees and Vegetation Reduce Heat",
+              "evidenceSummary": "EPA explains that trees and vegetation reduce local surface and air temperatures through shade and evapotranspiration. It does not discuss building overhangs, awnings, transit shelters, or scheduling shade around use times."
+            }
+          ],
+          "note": "The general value of shade is traceable, but the exact structures and timing claim are not supported by this source."
+        },
+        {
+          "claim": "Urban designers sometimes model airflow before approving large developments because a new tower may improve comfort in one street while making another feel stagnant.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "micro-city-london-wind-guidelines"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "micro-city-london-wind-guidelines",
+              "locator": "Microclimate guidelines — Thermal Comfort Guidelines and Wind Microclimate Guidelines",
+              "evidenceSummary": "The City of London calls for early assessment of large developments, expects thermal-comfort and wind studies, and recommends early-stage wind studies to quantify conditions. It notes adverse wind effects on outdoor usability, but does not give the exact one-street-improves and another-stagnates tower scenario."
+            }
+          ],
+          "note": "Early modelling and location-sensitive comfort assessment are supported; the paired street outcome is an illustrative synthesis rather than a sourced finding."
+        },
+        {
+          "claim": "Small interventions are most effective when they appear along ordinary routes, where people are already walking, waiting or gathering.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "micro-noaa-transit-shade-study"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "micro-noaa-transit-shade-study",
+              "locator": "NOAA repository PDF, pp. 5–6 — Barriers to adjusting to heat and recommended adaptation strategies",
+              "evidenceSummary": "The qualitative study reports heat exposure during bus travel, lack of shade at bus stops and along streets, and residents recommending artificial shade along streets or in parks. It does not compare intervention effectiveness or establish that ordinary-route placement is universally most effective."
+            }
+          ],
+          "note": "The study supports route-based need and resident preferences, not the passage's superlative effectiveness claim."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-sentence-endings:mse-food-waste",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "medium",
+        "representationRisk": "medium",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "low",
+        "grammarShortcutRisk": "medium",
+        "visibleConnectiveRisk": "high",
+        "passageTitleCueRisk": "low",
+        "notes": "The supply-chain framing is broadly credible and several claims have strong institutional support. Risk arises where the passage turns adjacent research into exact implementations: the recipe-display comparison and collection-window/community-kitchen detail were not present in the reviewed sources, and the forecasting claim combines inputs more neatly than the study does."
+      },
+      "questions": [
+        {
+          "questionId": "mse-food-waste-01",
+          "selectedEndingId": "A",
+          "completedSentence": "Food waste should not be blamed only on careless consumers because waste can begin before consumers make any decision.",
+          "logicalRelation": "cause: losses arise at farms, supermarkets and restaurants before final consumer choice",
+          "evidenceQuotes": [
+            "Food waste is often described as a problem of careless consumers, but waste occurs at several points before food reaches a plate.",
+            "Farmers may leave produce unharvested when market prices fall below picking costs."
+          ],
+          "candidateAssessments": [
+            {
+              "endingId": "A",
+              "grammarFit": "natural",
+              "oneBestStatus": "best",
+              "note": "Directly restates the opening contrast and the pre-consumer stages."
+            },
+            {
+              "endingId": "B",
+              "grammarFit": "strained",
+              "oneBestStatus": "unrelated",
+              "note": "Forecast accuracy is a response to waste, not the reason blame should extend beyond consumers."
+            },
+            {
+              "endingId": "C",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "The passage says separating imperfect produce can reinforce inferiority."
+            },
+            {
+              "endingId": "D",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Normal presentation concerns imperfect-produce sales, not assignment of blame."
+            },
+            {
+              "endingId": "E",
+              "grammarFit": "strained",
+              "oneBestStatus": "unrelated",
+              "note": "The safety condition applies to donation logistics."
+            },
+            {
+              "endingId": "F",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "Composting does not prevent supermarket over-ordering."
+            },
+            {
+              "endingId": "G",
+              "grammarFit": "strained",
+              "oneBestStatus": "unrelated",
+              "note": "The final-option role of composting does not explain wider responsibility."
+            },
+            {
+              "endingId": "H",
+              "grammarFit": "natural",
+              "oneBestStatus": "plausible-but-inferior",
+              "note": "Restaurant overproduction is one non-consumer source, but it is only one narrower example of the multi-stage problem."
+            }
+          ],
+          "closestCompetingEndingId": "H",
+          "competitorFailure": "H explains only the restaurant example, whereas A captures the paragraph's general reason that waste precedes any consumer decision at multiple stages.",
+          "ambiguity": "none",
+          "reasoning": "The opening sentence explicitly rejects consumer-only attribution and supports that rejection with pre-plate examples."
+        },
+        {
+          "questionId": "mse-food-waste-02",
+          "selectedEndingId": "B",
+          "completedSentence": "Forecasting systems can reduce waste by making short-term demand estimates more accurate.",
+          "logicalRelation": "means: local signals improve demand prediction and reduce orders made before demand falls",
+          "evidenceQuotes": [
+            "Some grocery chains now use local sales data, weather patterns and holiday schedules to predict demand more accurately.",
+            "Better forecasting does not remove waste entirely, but it can reduce the amount of fresh food ordered shortly before demand drops."
+          ],
+          "candidateAssessments": [
+            {
+              "endingId": "A",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Pre-consumer waste does not describe the forecasting mechanism."
+            },
+            {
+              "endingId": "B",
+              "grammarFit": "natural",
+              "oneBestStatus": "best",
+              "note": "Accurately paraphrases the use of local data to predict near-term demand."
+            },
+            {
+              "endingId": "C",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "Separation of imperfect produce is neither forecasting nor beneficial in the passage."
+            },
+            {
+              "endingId": "D",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Presentation and recipe ideas address customer acceptance, not forecasts."
+            },
+            {
+              "endingId": "E",
+              "grammarFit": "strained",
+              "oneBestStatus": "unrelated",
+              "note": "The surplus-food safety condition concerns donation."
+            },
+            {
+              "endingId": "F",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "Composting does not prevent ordering and is unrelated to forecasting."
+            },
+            {
+              "endingId": "G",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Forecasting is a preventive tool, not a final option for inedible food."
+            },
+            {
+              "endingId": "H",
+              "grammarFit": "natural",
+              "oneBestStatus": "plausible-but-inferior",
+              "note": "Uncertain busy-period demand can motivate forecasting, but H does not state how systems reduce waste and comes from the restaurant example."
+            }
+          ],
+          "closestCompetingEndingId": "H",
+          "competitorFailure": "H offers a narrow reason forecasting might be desirable; B states the explicit mechanism and mirrors the paragraph's more-accurate prediction language.",
+          "ambiguity": "none",
+          "reasoning": "The forecasting paragraph links data-driven accuracy to fewer fresh-food orders just before a decline in demand."
+        },
+        {
+          "questionId": "mse-food-waste-03",
+          "selectedEndingId": "D",
+          "completedSentence": "Imperfect produce may sell better when it is treated as normal food and linked to practical cooking ideas.",
+          "logicalRelation": "condition: integration into normal displays plus recipe suggestions improves shopper acceptance",
+          "evidenceQuotes": [
+            "However, when the same produce is included in normal displays with simple recipe suggestions, customers are more likely to accept it as ordinary food rather than a special problem category."
+          ],
+          "candidateAssessments": [
+            {
+              "endingId": "A",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "The timing of waste does not explain improved sales presentation."
+            },
+            {
+              "endingId": "B",
+              "grammarFit": "natural",
+              "oneBestStatus": "plausible-but-inferior",
+              "note": "Demand estimation could plausibly assist selling, but the passage makes no link between forecasting and acceptance of imperfect produce."
+            },
+            {
+              "endingId": "C",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "A separate discount bin may make shoppers treat the produce as inferior."
+            },
+            {
+              "endingId": "D",
+              "grammarFit": "natural",
+              "oneBestStatus": "best",
+              "note": "Closely paraphrases normal displays, recipe suggestions and acceptance as ordinary food."
+            },
+            {
+              "endingId": "E",
+              "grammarFit": "strained",
+              "oneBestStatus": "unrelated",
+              "note": "Safe movement of surplus meals is a donation constraint."
+            },
+            {
+              "endingId": "F",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "Composting neither prevents ordering nor explains produce sales."
+            },
+            {
+              "endingId": "G",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "A final disposal option cannot describe how produce sells better."
+            },
+            {
+              "endingId": "H",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Busy-period uncertainty concerns restaurant preparation."
+            }
+          ],
+          "closestCompetingEndingId": "B",
+          "competitorFailure": "B is only a general commercial mechanism and has no textual connection to imperfect produce; D reproduces both presentation conditions stated in the dedicated paragraph.",
+          "ambiguity": "none",
+          "reasoning": "The paragraph contrasts unsuccessful categorical separation with successful normalization and recipe support, making D the full contrastive completion."
+        },
+        {
+          "questionId": "mse-food-waste-04",
+          "selectedEndingId": "E",
+          "completedSentence": "Food donation programmes are useful unless surplus food is moved while it is still safe to use.",
+          "logicalRelation": "necessary condition expressed as exception: donation loses usefulness if safe, timely transfer does not occur",
+          "evidenceQuotes": [
+            "Food donation programmes can also help, but they require careful timing.",
+            "A restaurant cannot simply call a charity after food has already become unsafe.",
+            "Effective programmes use clear collection windows and packaging routines so that surplus meals can move quickly to community kitchens."
+          ],
+          "candidateAssessments": [
+            {
+              "endingId": "A",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Pre-consumer waste does not define donation usefulness."
+            },
+            {
+              "endingId": "B",
+              "grammarFit": "strained",
+              "oneBestStatus": "unrelated",
+              "note": "Forecast accuracy is not a donation condition."
+            },
+            {
+              "endingId": "C",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "Imperfect-produce separation is unrelated and not beneficial as stated."
+            },
+            {
+              "endingId": "D",
+              "grammarFit": "strained",
+              "oneBestStatus": "unrelated",
+              "note": "The singular 'it' has no clear referent and presentation concerns produce sales."
+            },
+            {
+              "endingId": "E",
+              "grammarFit": "natural",
+              "oneBestStatus": "best",
+              "note": "Encodes the paragraph's requirement that surplus be transferred before it becomes unsafe."
+            },
+            {
+              "endingId": "F",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "Composting does not prevent over-ordering and does not define donation."
+            },
+            {
+              "endingId": "G",
+              "grammarFit": "natural",
+              "oneBestStatus": "plausible-but-inferior",
+              "note": "Donation can function late in the waste hierarchy for edible surplus, but the passage reserves 'last step' for composting and stresses safety timing here."
+            },
+            {
+              "endingId": "H",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Busy-period uncertainty explains surplus generation, not programme usefulness."
+            }
+          ],
+          "closestCompetingEndingId": "G",
+          "competitorFailure": "G is a plausible broad waste-hierarchy description but is textually assigned to composting; E states the donation paragraph's explicit safety prerequisite.",
+          "ambiguity": "minor",
+          "reasoning": "E is logically an unusual negative formulation—programmes are useful unless safe movement occurs—but in context it means usefulness fails absent timely safe transfer. The evidence and all other candidates still make E the clear intended completion."
+        },
+        {
+          "questionId": "mse-food-waste-05",
+          "selectedEndingId": "G",
+          "completedSentence": "Household composting is best understood as a final option for food that cannot realistically be eaten.",
+          "logicalRelation": "classification: composting is a last-stage response for unavoidable, inedible scraps rather than prevention",
+          "evidenceQuotes": [
+            "Composting does not prevent waste at the source, but it can reduce the environmental impact of food that cannot be eaten.",
+            "For this reason, waste specialists usually treat composting as a last step, not as a substitute for buying and preparing food more carefully."
+          ],
+          "candidateAssessments": [
+            {
+              "endingId": "A",
+              "grammarFit": "natural",
+              "oneBestStatus": "plausible-but-inferior",
+              "note": "Pre-consumer waste gives broad context for multiple solutions but does not classify composting's role."
+            },
+            {
+              "endingId": "B",
+              "grammarFit": "strained",
+              "oneBestStatus": "unrelated",
+              "note": "Demand estimation concerns forecasting, not the meaning of composting."
+            },
+            {
+              "endingId": "C",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Produce separation does not define composting."
+            },
+            {
+              "endingId": "D",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Normal food displays and recipes concern edible imperfect produce."
+            },
+            {
+              "endingId": "E",
+              "grammarFit": "strained",
+              "oneBestStatus": "unrelated",
+              "note": "The unless clause produces no coherent classification of household composting."
+            },
+            {
+              "endingId": "F",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "The passage expressly says composting is not source prevention."
+            },
+            {
+              "endingId": "G",
+              "grammarFit": "natural",
+              "oneBestStatus": "best",
+              "note": "Direct paraphrase of food that cannot be eaten and composting as the last step."
+            },
+            {
+              "endingId": "H",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Restaurant demand uncertainty is unrelated to classifying composting."
+            }
+          ],
+          "closestCompetingEndingId": "A",
+          "competitorFailure": "A supplies only general context; G uniquely combines the two explicit propositions that the food cannot be eaten and composting is a last step.",
+          "ambiguity": "none",
+          "reasoning": "The final paragraph distinguishes prevention from impact reduction and explicitly labels composting a last step, yielding an exact match to G."
+        },
+        {
+          "questionId": "mse-food-waste-06",
+          "selectedEndingId": "H",
+          "completedSentence": "Restaurants may produce surplus meals because demand during busy periods can be uncertain.",
+          "logicalRelation": "cause: restaurants overprepare to avoid shortages under uncertain peak demand",
+          "evidenceQuotes": [
+            "Restaurants may prepare more food than customers order in order to avoid running out during busy periods."
+          ],
+          "candidateAssessments": [
+            {
+              "endingId": "A",
+              "grammarFit": "natural",
+              "oneBestStatus": "plausible-but-inferior",
+              "note": "It correctly places some waste before consumer action but does not explain the restaurant's operational motive."
+            },
+            {
+              "endingId": "B",
+              "grammarFit": "strained",
+              "oneBestStatus": "unrelated",
+              "note": "More accurate estimates are a possible remedy, not the passage's stated cause of surplus."
+            },
+            {
+              "endingId": "C",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Imperfect produce separation has no connection to restaurant surplus."
+            },
+            {
+              "endingId": "D",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Presentation of produce does not explain extra meals."
+            },
+            {
+              "endingId": "E",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Safe transfer determines whether surplus can be donated, not why it is produced."
+            },
+            {
+              "endingId": "F",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "Composting does not prevent supermarket ordering and cannot explain restaurant production."
+            },
+            {
+              "endingId": "G",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "This classifies a response to inedible food rather than the cause of meals becoming surplus."
+            },
+            {
+              "endingId": "H",
+              "grammarFit": "natural",
+              "oneBestStatus": "best",
+              "note": "Paraphrases overpreparation to avoid running out in busy periods, which implies uncertain demand."
+            }
+          ],
+          "closestCompetingEndingId": "A",
+          "competitorFailure": "A describes the stage at which waste occurs but not the cause; H supplies the busy-period demand uncertainty implied by overpreparing to avoid shortages.",
+          "ambiguity": "none",
+          "reasoning": "The first paragraph directly attributes restaurant surplus to preparing a buffer against running out during busy service."
+        }
+      ],
+      "factualClaims": [
+        {
+          "claim": "Farmers may leave produce unharvested when market prices fall below picking costs.",
+          "assessment": "supported",
+          "evidenceIds": [
+            "food-usda-farm-market-loss"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "food-usda-farm-market-loss",
+              "locator": "Food Loss: Why Food Stays On the Farm or Off the Market — Highlights; Price Volatility",
+              "evidenceSummary": "USDA states that food may be left unharvested for economic reasons and that produce may become unprofitable to market when prices fall below harvest, processing, or shipping costs."
+            }
+          ],
+          "note": "The source directly supports the claimed price-versus-harvest-cost mechanism."
+        },
+        {
+          "claim": "Some grocery chains now use local sales data, weather patterns and holiday schedules to predict demand more accurately.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "food-springer-grocery-holiday-forecasting"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "food-springer-grocery-holiday-forecasting",
+              "locator": "Operational planning for public holidays in grocery retailing — sections 4.1 and Summary",
+              "evidenceSummary": "The study reports data-driven forecasts using past data, calendar effects handled by IT, local consumer behavior motivating decentralized forecasting, and weather forecasts requiring short-term manual adjustments at most retailers. It does not show a single grocery-chain system combining all three inputs or demonstrate the exact accuracy outcome claimed."
+            }
+          ],
+          "note": "All three factors occur in the study, but the passage compresses separate practices and caveats into one integrated system."
+        },
+        {
+          "claim": "However, when the same produce is included in normal displays with simple recipe suggestions, customers are more likely to accept it as ordinary food rather than a special problem category.",
+          "assessment": "unsupported",
+          "evidenceIds": [
+            "food-frontiers-imperfect-produce-cues"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "food-frontiers-imperfect-produce-cues",
+              "locator": "The beauty in imperfection — experiments 1 and 2 on naturalness cues and purchase intention",
+              "evidenceSummary": "The experiments find that naturalness marketing cues can improve evaluations and purchase intentions for unattractive carrots and pears. The article contains no recipe treatment and does not test normal displays against a separate discount bin or the claimed ordinary-food categorization."
+            }
+          ],
+          "note": "The source supports a different marketing mechanism, so it cannot substantiate this exact comparison."
+        },
+        {
+          "claim": "Effective programmes use clear collection windows and packaging routines so that surplus meals can move quickly to community kitchens.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "food-fda-donation-safety"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "food-fda-donation-safety",
+              "locator": "Key Steps for Donating Food — steps on labeling, packaging, safe storage, transport and records",
+              "evidenceSummary": "FDA advises safe handling, original or intact packaging, temperature-controlled transport, and records including what was donated and when. It does not prescribe collection windows or identify community kitchens as the destination."
+            }
+          ],
+          "note": "Safe packaging and timely handling are broadly supported, but the operational programme described is more specific than the guidance."
+        },
+        {
+          "claim": "Composting does not prevent waste at the source, but it can reduce the environmental impact of food that cannot be eaten.",
+          "assessment": "supported",
+          "evidenceIds": [
+            "food-epa-wasted-food-scale"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "food-epa-wasted-food-scale",
+              "locator": "Wasted Food Scale — About the Scale; Prevent Wasted Food; Compost; Landfill",
+              "evidenceSummary": "EPA ranks prevention above composting, describes composting as management of wasted organic material that recycles nutrients and builds soil health, and contrasts it with landfill methane and lost nutrients. This supports composting as impact-reducing management rather than source prevention."
+            }
+          ],
+          "note": "The source supports both halves of the contrast, while not implying that composting is the least preferred endpoint in every case."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-sentence-endings:mse-coastal-libraries",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "high",
+        "representationRisk": "high",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "low",
+        "grammarShortcutRisk": "medium",
+        "visibleConnectiveRisk": "high",
+        "passageTitleCueRisk": "medium",
+        "notes": "Libraries as climate-resilience and preparedness hubs are real and source-backed, but the passage presents several untraced particulars as observed programmes. No reviewed source establishes the coastal councils, trained-staff disclaimer, library photo workshops, or Harbor Point drain-maintenance sequence. These issues do not alter the internally recoverable answers but materially affect representational reliability."
+      },
+      "questions": [
+        {
+          "questionId": "mse-libraries-01",
+          "selectedEndingId": "A",
+          "completedSentence": "Libraries can support climate adaptation because they are familiar public spaces with broad local access.",
+          "logicalRelation": "cause: familiarity, free entry and long opening hours make libraries accessible adaptation-information hubs",
+          "evidenceQuotes": [
+            "However, because libraries are familiar, free and open for long hours, some local councils now use them as places where residents can find practical information about flooding, insurance and emergency planning."
+          ],
+          "candidateAssessments": [
+            {
+              "endingId": "A",
+              "grammarFit": "natural",
+              "oneBestStatus": "best",
+              "note": "Condenses the first paragraph's explicit because-clause about familiarity and access."
+            },
+            {
+              "endingId": "B",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Avoiding expert impersonation constrains staff guidance, not the broad reason libraries support adaptation."
+            },
+            {
+              "endingId": "C",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Recognizable places explain a specific map-workshop technique."
+            },
+            {
+              "endingId": "D",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "Traditional lending and internet functions explicitly continue."
+            },
+            {
+              "endingId": "E",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Using observations for maintenance describes Harbor Point, not the general enabling reason."
+            },
+            {
+              "endingId": "F",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "Libraries cannot replace flood barriers."
+            },
+            {
+              "endingId": "G",
+              "grammarFit": "natural",
+              "oneBestStatus": "plausible-but-inferior",
+              "note": "This is a supported way libraries add value before crises, but it answers the later greatest-value proposition more precisely than the general opening claim."
+            },
+            {
+              "endingId": "H",
+              "grammarFit": "natural",
+              "oneBestStatus": "plausible-but-inferior",
+              "note": "Their limited institutional role supports a complementary function, but limitation is not the first paragraph's direct reason for support."
+            }
+          ],
+          "closestCompetingEndingId": "G",
+          "competitorFailure": "G is independently supported and grammatically complete, but A is attached to an explicit causal explanation in the opening paragraph and answers why libraries in particular are chosen as hubs. With no no-reuse rule, the distinction is real rather than absolute.",
+          "ambiguity": "minor",
+          "reasoning": "A is the closest paraphrase of the passage's opening causal clause. G also makes a true completion, but it is more tightly cued by the later 'greatest value' start and the final paragraph's before-emergency language."
+        },
+        {
+          "questionId": "mse-libraries-02",
+          "selectedEndingId": "B",
+          "completedSentence": "Trained library staff can guide residents without claiming to replace technical or legal experts.",
+          "logicalRelation": "limitation: staff can direct people to reliable resources while preserving professional boundaries",
+          "evidenceQuotes": [
+            "When staff receive training from emergency planners, they can guide visitors toward reliable resources without pretending to be engineers or legal advisers."
+          ],
+          "candidateAssessments": [
+            {
+              "endingId": "A",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Familiar broad access explains use of libraries, not how trained staff guide."
+            },
+            {
+              "endingId": "B",
+              "grammarFit": "natural",
+              "oneBestStatus": "best",
+              "note": "Near-verbatim paraphrase of guidance without pretending to be engineers or legal advisers."
+            },
+            {
+              "endingId": "C",
+              "grammarFit": "natural",
+              "oneBestStatus": "plausible-but-inferior",
+              "note": "Staff could guide residents by relating maps to familiar places, but the passage assigns this method to workshops, not trained-staff guidance generally."
+            },
+            {
+              "endingId": "D",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "Residents continue to use libraries for books and internet access."
+            },
+            {
+              "endingId": "E",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Maintenance evidence concerns resident observations in Harbor Point."
+            },
+            {
+              "endingId": "F",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "Libraries do not replace barriers."
+            },
+            {
+              "endingId": "G",
+              "grammarFit": "natural",
+              "oneBestStatus": "plausible-but-inferior",
+              "note": "Connecting people to services before crises is a plausible guidance function, but it omits the explicit professional-boundary qualification."
+            },
+            {
+              "endingId": "H",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "The inability to replace protection systems does not state how staff guide residents."
+            }
+          ],
+          "closestCompetingEndingId": "C",
+          "competitorFailure": "C is a plausible guidance method in the wider passage but belongs specifically to map workshops; B matches the only sentence about trained staff and its explicit boundary.",
+          "ambiguity": "none",
+          "reasoning": "The trained-staff sentence contains both the guiding action and the non-expert limitation, which B preserves exactly."
+        },
+        {
+          "questionId": "mse-libraries-03",
+          "selectedEndingId": "C",
+          "completedSentence": "Map workshops become useful by linking official projections to places residents recognize.",
+          "logicalRelation": "means: familiar street photographs make abstract regional flood projections concrete",
+          "evidenceQuotes": [
+            "Some libraries therefore run small workshops where residents compare official maps with photographs of streets they know.",
+            "This helps people connect regional projections with everyday landmarks."
+          ],
+          "candidateAssessments": [
+            {
+              "endingId": "A",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Public familiarity explains library access, not the workshop's interpretive mechanism."
+            },
+            {
+              "endingId": "B",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Professional boundaries concern trained staff."
+            },
+            {
+              "endingId": "C",
+              "grammarFit": "natural",
+              "oneBestStatus": "best",
+              "note": "Directly paraphrases connecting projections with everyday landmarks via known-street photographs."
+            },
+            {
+              "endingId": "D",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "Workshops do not require ending traditional library use."
+            },
+            {
+              "endingId": "E",
+              "grammarFit": "natural",
+              "oneBestStatus": "plausible-but-inferior",
+              "note": "Participatory sessions can yield maintenance evidence, but that occurred in the separate Harbor Point observation exercise, not the map workshops."
+            },
+            {
+              "endingId": "F",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "Workshops cannot replace physical barriers."
+            },
+            {
+              "endingId": "G",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "This describes libraries' broader pre-crisis value rather than why map workshops work."
+            },
+            {
+              "endingId": "H",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Institutional limits do not provide the workshop mechanism."
+            }
+          ],
+          "closestCompetingEndingId": "E",
+          "competitorFailure": "E describes a different participatory programme and outcome; C alone matches the map-to-photograph comparison and projection-to-landmark connection.",
+          "ambiguity": "none",
+          "reasoning": "The map paragraph explicitly defines the workshop's utility as translating regional projections into recognizable everyday landmarks."
+        },
+        {
+          "questionId": "mse-libraries-04",
+          "selectedEndingId": "E",
+          "completedSentence": "The Harbor Point programme showed that residents helped planning when local observations are treated as evidence for maintenance decisions.",
+          "logicalRelation": "condition and result: residents' drain-blockage observations informed prioritization of council maintenance",
+          "evidenceQuotes": [
+            "In Harbor Point, library visitors were invited to mark places where drains blocked after heavy rain.",
+            "The council later used these observations to prioritize maintenance visits.",
+            "The process showed that residents could provide useful local evidence, not just receive instructions."
+          ],
+          "candidateAssessments": [
+            {
+              "endingId": "A",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Library familiarity does not state how residents helped planning."
+            },
+            {
+              "endingId": "B",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Expert-role boundaries concern staff guidance."
+            },
+            {
+              "endingId": "C",
+              "grammarFit": "natural",
+              "oneBestStatus": "plausible-but-inferior",
+              "note": "Linking official information to known locations is participatory and locally grounded, but Harbor Point's stated planning contribution was maintenance evidence."
+            },
+            {
+              "endingId": "D",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "Traditional library services did not need to stop."
+            },
+            {
+              "endingId": "E",
+              "grammarFit": "natural",
+              "oneBestStatus": "best",
+              "note": "Precisely combines local observations with their use in prioritizing maintenance."
+            },
+            {
+              "endingId": "F",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "The programme did not replace flood barriers."
+            },
+            {
+              "endingId": "G",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Pre-crisis service connection is broader than the Harbor Point result."
+            },
+            {
+              "endingId": "H",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Formal-system limits do not explain the residents' planning input."
+            }
+          ],
+          "closestCompetingEndingId": "C",
+          "competitorFailure": "C captures local recognition but refers to interpreting projections; E names both the resident observations and the exact maintenance-decision use reported for Harbor Point.",
+          "ambiguity": "none",
+          "reasoning": "The Harbor Point sequence is explicit: residents marked blocked drains, the council prioritized visits from those marks, and the text labels them useful local evidence."
+        },
+        {
+          "questionId": "mse-libraries-05",
+          "selectedEndingId": "G",
+          "completedSentence": "Libraries have the greatest value before a crisis by helping people understand and reach relevant services.",
+          "logicalRelation": "time and function: libraries' peak contribution is pre-emergency interpretation and service connection",
+          "evidenceQuotes": [
+            "Their value is greatest when they connect people to services and help communities interpret information before an emergency, rather than trying to manage the emergency itself."
+          ],
+          "candidateAssessments": [
+            {
+              "endingId": "A",
+              "grammarFit": "natural",
+              "oneBestStatus": "plausible-but-inferior",
+              "note": "Familiar access helps explain value, but the sentence containing 'greatest' specifies pre-crisis interpretation and service connection."
+            },
+            {
+              "endingId": "B",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Non-expert guidance is one bounded role, not the complete greatest-value condition."
+            },
+            {
+              "endingId": "C",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Map interpretation is one example rather than the general greatest-value statement."
+            },
+            {
+              "endingId": "D",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "Traditional services continue."
+            },
+            {
+              "endingId": "E",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Maintenance evidence is another specific programme outcome."
+            },
+            {
+              "endingId": "F",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "They cannot replace flood barriers."
+            },
+            {
+              "endingId": "G",
+              "grammarFit": "natural",
+              "oneBestStatus": "best",
+              "note": "Near-verbatim restatement of the final sentence's timing and two functions."
+            },
+            {
+              "endingId": "H",
+              "grammarFit": "natural",
+              "oneBestStatus": "plausible-but-inferior",
+              "note": "The limitation helps define a complementary role, but does not state the positive pre-crisis functions that make value greatest."
+            }
+          ],
+          "closestCompetingEndingId": "A",
+          "competitorFailure": "A explains institutional suitability but not the text's explicit superlative condition; G mirrors 'value is greatest', 'connect people to services', 'interpret information' and 'before an emergency'.",
+          "ambiguity": "none",
+          "reasoning": "The final sentence gives an exact greatest-value formulation, and G preserves its timing and positive functions."
+        },
+        {
+          "questionId": "mse-libraries-06",
+          "selectedEndingId": "H",
+          "completedSentence": "Libraries should not be expected to manage emergencies alone because they cannot replace formal protection systems.",
+          "logicalRelation": "cause and limitation: information hubs complement but cannot substitute for evacuation, barriers or housing policy",
+          "evidenceQuotes": [
+            "Libraries cannot replace evacuation systems, flood barriers or housing policy.",
+            "Their value is greatest when they connect people to services and help communities interpret information before an emergency, rather than trying to manage the emergency itself."
+          ],
+          "candidateAssessments": [
+            {
+              "endingId": "A",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Familiar access does not explain why emergency management cannot be delegated to libraries."
+            },
+            {
+              "endingId": "B",
+              "grammarFit": "natural",
+              "oneBestStatus": "plausible-but-inferior",
+              "note": "Not claiming expert status is consistent with bounded responsibility, but the passage's emergency limitation is specifically inability to replace protection systems."
+            },
+            {
+              "endingId": "C",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Map interpretation is a useful function, not the reason for the limit."
+            },
+            {
+              "endingId": "D",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "Traditional services remain in place."
+            },
+            {
+              "endingId": "E",
+              "grammarFit": "natural",
+              "oneBestStatus": "unrelated",
+              "note": "Local maintenance observations do not establish emergency-management capacity."
+            },
+            {
+              "endingId": "F",
+              "grammarFit": "natural",
+              "oneBestStatus": "contradicted",
+              "note": "It asserts precisely the replacement capacity the passage denies."
+            },
+            {
+              "endingId": "G",
+              "grammarFit": "natural",
+              "oneBestStatus": "plausible-but-inferior",
+              "note": "The preferred pre-crisis role contrasts with emergency management, but it is a positive function rather than the direct causal limitation."
+            },
+            {
+              "endingId": "H",
+              "grammarFit": "natural",
+              "oneBestStatus": "best",
+              "note": "Direct paraphrase of the inability to replace evacuation, barrier and policy systems."
+            }
+          ],
+          "closestCompetingEndingId": "B",
+          "competitorFailure": "B concerns professional self-presentation by staff; H directly states the institutional incapacity that supports the 'should not be expected' claim.",
+          "ambiguity": "none",
+          "reasoning": "The final paragraph first names the formal systems libraries cannot replace and then contrasts pre-crisis support with emergency management, making H conclusive."
+        }
+      ],
+      "factualClaims": [
+        {
+          "claim": "However, because libraries are familiar, free and open for long hours, some local councils now use them as places where residents can find practical information about flooding, insurance and emergency planning.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "coastal-ala-resilience-hubs"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "coastal-ala-resilience-hubs",
+              "locator": "Resilient Communities: Application Guidelines — Program Description, Award Information and Requirements",
+              "evidenceSummary": "ALA documents a U.S. pilot designating libraries as Climate Resilience Hubs that share extreme-weather preparedness information, run educational events, and connect with emergency managers. It does not establish several coastal councils, the familiar/free/long-hours rationale, or flooding and insurance information."
+            }
+          ],
+          "note": "The general resilience-hub role is supported, while the geography, institutional adoption and specific rationale are not."
+        },
+        {
+          "claim": "When staff receive training from emergency planners, they can guide visitors toward reliable resources without pretending to be engineers or legal advisers.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "coastal-imls-trusted-libraries"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "coastal-imls-trusted-libraries",
+              "locator": "IMLS direct URL — Primary Source: Director's Message, May 2011",
+              "evidenceSummary": "The exact URL was opened directly but returned no reviewable page content. Consequently it could not establish emergency-planner training, resource guidance, or the engineering and legal-advice disclaimer."
+            }
+          ],
+          "note": "Source availability is not evidence; with no reviewable content and no direct trace for the specifics, the claim remains untraceable."
+        },
+        {
+          "claim": "Some libraries therefore run small workshops where residents compare official maps with photographs of streets they know.",
+          "assessment": "unsupported",
+          "evidenceIds": [
+            "coastal-noaa-flood-map-workshops"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "coastal-noaa-flood-map-workshops",
+              "locator": "Tips for Using These Maps in Your Community, p. 1 — Stakeholders and Discussion Questions",
+              "evidenceSummary": "NOAA recommends using flood-exposure maps to spur stakeholder discussion and inform community planning. The document does not mention libraries, workshops run by libraries, or comparison with photographs of familiar streets."
+            }
+          ],
+          "note": "The source supports map-based community discussion but not the entities or concrete workshop method asserted."
+        },
+        {
+          "claim": "The council later used these observations to prioritize maintenance visits.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "coastal-noaa-participatory-flood-mapping"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "coastal-noaa-participatory-flood-mapping",
+              "locator": "A Thoughtful Community Engagement Strategy for Watershed Management — Lessons Learned, Process and Engagement Activities",
+              "evidenceSummary": "The NOAA case describes residents marking flooding concerns, public feedback entering a digital map and engineering study, and a steering committee guiding future recommendations. It concerns North Carolina counties, not Harbor Point, and does not report blocked drains or council maintenance visits."
+            }
+          ],
+          "note": "The source validates participatory mapping generally but provides no trace for the named sequence or maintenance outcome."
+        },
+        {
+          "claim": "Libraries cannot replace evacuation systems, flood barriers or housing policy.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "coastal-fema-community-information-sharing"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "coastal-fema-community-information-sharing",
+              "locator": "FEMA direct PDF URL — Information Sharing Guide for Private-Public Partnerships",
+              "evidenceSummary": "The exact PDF URL was opened directly but returned an internal error or empty document stream, leaving no reviewable content. No inference about library substitution for evacuation, barriers or housing policy can be made from availability alone."
+            }
+          ],
+          "note": "The limitation is sensible as a policy proposition, but this candidate source was unavailable and therefore does not trace the exact library claim."
+        }
+      ]
+    }
+  ]
+}

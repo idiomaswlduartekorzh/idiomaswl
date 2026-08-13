@@ -1,0 +1,300 @@
+{
+  "schemaVersion": "ielts-reading-matching-information-expert-first-pass.v1",
+  "reviewer": {
+    "reviewerRunId": "matching-information-ai-expert-20260809T061944-0500",
+    "reviewedAt": "2026-08-09T06:19:44-05:00",
+    "blindPacketSha256": "a8277c5c870fce7bdcc367b800e0c450e78093ffae9fdc8248924a4fe6b49acc",
+    "humanSignature": false,
+    "sourceContext": "blind-review-packet-only",
+    "notes": "Independent AI editorial adjudication based only on the blind packet. This is not a human signature, rights clearance, factual-source verification or publication approval."
+  },
+  "records": [
+    {
+      "assetId": "formative:matching-information:mi-city-noise",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "titleCueRisk": "low",
+        "notes": "The passage supports unambiguous paragraph matching and includes plausible neighboring distractors, but it is shorter and generally more explicit than a typical IELTS Academic passage. The title identifies only the broad topic and does not reveal paragraph locations."
+      },
+      "questions": [
+        {
+          "questionId": "mi-noise-01",
+          "statement": "a reason why streets with fewer cars may still be noisy",
+          "selectedParagraphId": "B",
+          "supportingQuote": "a narrow street with tall buildings can trap sound even when the number of vehicles is lower than on a wider avenue",
+          "paraphraseMap": {
+            "streets with fewer cars": "the number of vehicles is lower",
+            "may still be noisy": "can trap sound",
+            "a reason": "a narrow street with tall buildings"
+          },
+          "closestCompetingParagraphId": "C",
+          "competitorFailure": "Paragraph C discusses interventions that reduce sound; it does not explain why a street with fewer vehicles can nevertheless remain noisy.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph B gives the requested counterintuitive case and its physical cause: street geometry and tall buildings can trap sound despite a lower vehicle count."
+        },
+        {
+          "questionId": "mi-noise-02",
+          "statement": "examples of measures that reduce noise before it spreads",
+          "selectedParagraphId": "C",
+          "supportingQuote": "Lower speed limits, smoother road surfaces and restrictions on night deliveries can reduce sound at the source.",
+          "paraphraseMap": {
+            "examples of measures": "Lower speed limits, smoother road surfaces and restrictions on night deliveries",
+            "reduce noise before it spreads": "reduce sound at the source"
+          },
+          "closestCompetingParagraphId": "E",
+          "competitorFailure": "Paragraph E mentions an achieved reduction in traffic noise and the need to explain it, but it supplies neither source-control examples nor the idea of acting before propagation.",
+          "ambiguity": "none",
+          "reasoning": "The phrase 'at the source' is the direct equivalent of reducing noise before it spreads, and paragraph C lists three concrete measures."
+        },
+        {
+          "questionId": "mi-noise-03",
+          "statement": "the idea that noise is connected to social inequality",
+          "selectedParagraphId": "D",
+          "supportingQuote": "Wealthier districts may have more parks, wider streets and better insulated buildings, while lower-income neighborhoods can be located closer to highways or industrial areas.",
+          "paraphraseMap": {
+            "social inequality": "Wealthier districts ... while lower-income neighborhoods",
+            "noise is connected to": "different access to buffers and insulation and different proximity to highways or industrial areas"
+          },
+          "closestCompetingParagraphId": "A",
+          "competitorFailure": "Paragraph A establishes health effects and urban noise sources but makes no comparison between socioeconomic groups or neighborhoods.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph D explicitly contrasts noise-related advantages in wealthier districts with greater exposure risks in lower-income neighborhoods."
+        },
+        {
+          "questionId": "mi-noise-04",
+          "statement": "different kinds of urban activities that add to the soundscape",
+          "selectedParagraphId": "A",
+          "supportingQuote": "Traffic remains the most common source in many urban areas, but construction, nightlife and delivery vehicles also contribute to the soundscape.",
+          "paraphraseMap": {
+            "different kinds of urban activities": "Traffic ... construction, nightlife and delivery vehicles",
+            "add to the soundscape": "contribute to the soundscape"
+          },
+          "closestCompetingParagraphId": "B",
+          "competitorFailure": "Paragraph B names several kinds of measurement input, not several urban activities that produce sound.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph A provides the requested list of distinct urban noise-producing activities and explicitly says they contribute to the soundscape."
+        },
+        {
+          "questionId": "mi-noise-05",
+          "statement": "why residents may need an explanation of policy benefits",
+          "selectedParagraphId": "E",
+          "supportingQuote": "If a city lowers traffic noise by a few decibels, the change may be meaningful for health but hard to notice immediately.",
+          "paraphraseMap": {
+            "policy benefits": "meaningful for health",
+            "may need an explanation": "hard to notice immediately"
+          },
+          "closestCompetingParagraphId": "D",
+          "competitorFailure": "Paragraph D identifies a fairness issue for policy makers, but it does not explain why residents may fail to perceive a benefit or why communication is needed.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph E supplies the causal explanation: a health-relevant improvement of a few decibels may not be perceptible straight away, so its benefit must be explained."
+        },
+        {
+          "questionId": "mi-noise-06",
+          "statement": "the use of several data sources to locate the worst affected areas",
+          "selectedParagraphId": "B",
+          "supportingQuote": "These maps combine sensor data, traffic counts and resident complaints to identify areas where exposure is highest.",
+          "paraphraseMap": {
+            "several data sources": "sensor data, traffic counts and resident complaints",
+            "locate": "identify areas",
+            "the worst affected areas": "where exposure is highest"
+          },
+          "closestCompetingParagraphId": "A",
+          "competitorFailure": "Paragraph A lists several sources of urban noise, but those are causes of sound rather than datasets combined to identify high-exposure locations.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph B explicitly describes combining three data inputs to find the places with the highest exposure."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-information:mi-museum-lighting",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "titleCueRisk": "low",
+        "notes": "The paragraph distinctions and paraphrases are coherent, but most matches are highly explicit and the five-paragraph passage is less demanding than a typical IELTS Academic Reading text. The title supplies only the general subject."
+      },
+      "questions": [
+        {
+          "questionId": "mi-lighting-01",
+          "statement": "examples of materials that can be harmed by excessive light",
+          "selectedParagraphId": "A",
+          "supportingQuote": "Too much exposure can fade pigments, weaken paper and damage textiles",
+          "paraphraseMap": {
+            "excessive light": "Too much exposure",
+            "materials": "pigments, paper and textiles",
+            "can be harmed": "fade ... weaken ... damage"
+          },
+          "closestCompetingParagraphId": "B",
+          "competitorFailure": "Paragraph B identifies objects with different light tolerances but does not itself state the forms of harm caused by excessive exposure.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph A directly names three materials and three damaging effects of too much light."
+        },
+        {
+          "questionId": "mi-lighting-02",
+          "statement": "a reason why some objects are displayed only temporarily",
+          "selectedParagraphId": "B",
+          "supportingQuote": "Stone sculpture can usually be displayed under stronger light than watercolours, manuscripts or historic fabrics. For this reason, museums often rotate sensitive works or show them for limited periods before returning them to storage.",
+          "paraphraseMap": {
+            "some objects": "sensitive works ... watercolours, manuscripts or historic fabrics",
+            "displayed only temporarily": "show them for limited periods before returning them to storage",
+            "a reason": "tolerate less light than stone sculpture"
+          },
+          "closestCompetingParagraphId": "A",
+          "competitorFailure": "Paragraph A explains that excessive exposure can cause damage, but it does not contain the requested practice of temporary display or distinguish which works are rotated.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph B links the lower light tolerance of sensitive objects causally to rotation and limited display periods."
+        },
+        {
+          "questionId": "mi-lighting-03",
+          "statement": "a system that changes brightness depending on visitor presence",
+          "selectedParagraphId": "C",
+          "supportingQuote": "Some galleries also use sensors so that lights become brighter when visitors approach and dim again when the room is empty.",
+          "paraphraseMap": {
+            "a system": "sensors",
+            "changes brightness": "lights become brighter ... and dim again",
+            "depending on visitor presence": "when visitors approach ... when the room is empty"
+          },
+          "closestCompetingParagraphId": "D",
+          "competitorFailure": "Paragraph D discusses fixed lighting choices that influence visitor behavior, not automated brightness changes triggered by whether visitors are present.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph C states both the presence-sensing mechanism and the corresponding increase and decrease in brightness."
+        },
+        {
+          "questionId": "mi-lighting-04",
+          "statement": "the idea that lighting can influence the route people take",
+          "selectedParagraphId": "D",
+          "supportingQuote": "Lighting also affects how visitors move through a gallery.",
+          "paraphraseMap": {
+            "lighting can influence": "Lighting ... affects",
+            "the route people take": "how visitors move through a gallery"
+          },
+          "closestCompetingParagraphId": "C",
+          "competitorFailure": "Paragraph C makes lighting respond to approaching visitors; it does not say that lighting changes where or how visitors move.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph D explicitly states the requested relationship between lighting and visitor movement, then illustrates it with entrances and attention guidance."
+        },
+        {
+          "questionId": "mi-lighting-05",
+          "statement": "why one lighting solution cannot fit every exhibition",
+          "selectedParagraphId": "E",
+          "supportingQuote": "A science museum may need clear, practical illumination for interactive displays, while an exhibition of medieval manuscripts may require a quieter atmosphere and strict light limits. The best plan depends on the object, the room and the kind of experience the museum wants to create.",
+          "paraphraseMap": {
+            "one lighting solution cannot fit every exhibition": "different exhibition types have contrasting illumination needs",
+            "why": "depends on the object, the room and the kind of experience"
+          },
+          "closestCompetingParagraphId": "B",
+          "competitorFailure": "Paragraph B shows that objects differ in light tolerance, one relevant variable, but does not address the wider combination of object, room and intended exhibition experience or the absence of a single overall formula.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph E directly contrasts the needs of two exhibition types and then states the multiple variables that make a universal plan unsuitable."
+        },
+        {
+          "questionId": "mi-lighting-06",
+          "statement": "a safety concern created by using contrast in a gallery",
+          "selectedParagraphId": "D",
+          "supportingQuote": "Designers sometimes use contrast to guide attention, but they must avoid making pathways unsafe or labels unreadable.",
+          "paraphraseMap": {
+            "using contrast": "use contrast to guide attention",
+            "a safety concern": "making pathways unsafe"
+          },
+          "closestCompetingParagraphId": "A",
+          "competitorFailure": "Paragraph A concerns conservation damage to objects from excess exposure, not visitor safety arising from contrast in gallery lighting.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph D couples the use of contrast with the explicit risk of unsafe pathways."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-information:mi-coastal-restoration",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "titleCueRisk": "low",
+        "notes": "The content permits clean information matching and paragraph reuse, but the compact passage and near-explicit wording make the set easier than normal IELTS Academic Reading. The title does not identify any answer-bearing paragraph."
+      },
+      "questions": [
+        {
+          "questionId": "mi-wetlands-01",
+          "statement": "a past attitude that led to the loss of wetland areas",
+          "selectedParagraphId": "A",
+          "supportingQuote": "Coastal wetlands were once dismissed as empty or unusable land, and many were drained for roads, housing or farmland.",
+          "paraphraseMap": {
+            "a past attitude": "were once dismissed as empty or unusable land",
+            "led to the loss of wetland areas": "many were drained for roads, housing or farmland"
+          },
+          "closestCompetingParagraphId": "C",
+          "competitorFailure": "Paragraph C contains present-day objections to restoration and concern about productive land, but it does not describe the historical attitude that caused wetlands to be drained.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph A explicitly joins the former dismissal of wetlands with their subsequent drainage for development and agriculture."
+        },
+        {
+          "questionId": "mi-wetlands-02",
+          "statement": "physical changes needed before plants can succeed",
+          "selectedParagraphId": "B",
+          "supportingQuote": "Engineers may need to remove old barriers, reopen tidal channels or change drainage systems so that salt water can return at the right times.",
+          "paraphraseMap": {
+            "physical changes": "remove old barriers, reopen tidal channels or change drainage systems",
+            "needed before plants can succeed": "so that salt water can return at the right times"
+          },
+          "closestCompetingParagraphId": "D",
+          "competitorFailure": "Paragraph D describes plant spread after restoration and how progress is monitored, not preparatory engineering changes required for plant establishment.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph B lists three alterations to the site and links them to restoration of the water conditions on which plant success depends."
+        },
+        {
+          "questionId": "mi-wetlands-03",
+          "statement": "groups that may view the same project differently",
+          "selectedParagraphId": "C",
+          "supportingQuote": "Fishers may welcome healthier nursery habitats, while farmers worry about losing productive land or seeing salt water move closer to fields.",
+          "paraphraseMap": {
+            "groups": "Fishers ... farmers",
+            "view the same project differently": "may welcome ... while ... worry"
+          },
+          "closestCompetingParagraphId": "E",
+          "competitorFailure": "Paragraph E compares complementary protection measures, not social groups holding different views of one restoration project.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph C explicitly contrasts fishers' favorable response with farmers' concerns about the same kind of wetland project."
+        },
+        {
+          "questionId": "mi-wetlands-04",
+          "statement": "small signs used to judge whether restoration is progressing",
+          "selectedParagraphId": "D",
+          "supportingQuote": "Monitoring teams often measure progress through small indicators such as insect diversity, water depth and the return of juvenile fish.",
+          "paraphraseMap": {
+            "small signs": "small indicators such as insect diversity, water depth and the return of juvenile fish",
+            "used to judge whether restoration is progressing": "Monitoring teams ... measure progress"
+          },
+          "closestCompetingParagraphId": "C",
+          "competitorFailure": "Paragraph C says monitoring plans are discussed before work begins but gives neither the small indicators nor their use in measuring progress.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph D explicitly identifies both the evaluative purpose and three examples of small progress indicators."
+        },
+        {
+          "questionId": "mi-wetlands-05",
+          "statement": "why restoration should not be treated as the only form of protection",
+          "selectedParagraphId": "E",
+          "supportingQuote": "it does not remove the need for evacuation plans or building rules in exposed areas.",
+          "paraphraseMap": {
+            "restoration": "A restored marsh",
+            "should not be treated as the only form of protection": "does not remove the need for evacuation plans or building rules"
+          },
+          "closestCompetingParagraphId": "A",
+          "competitorFailure": "Paragraph A lists the protective services wetlands provide, but it does not state their limits or the continued need for other protections.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph E explains that a restored marsh can reduce storm pressure yet cannot replace evacuation planning or building regulation."
+        },
+        {
+          "questionId": "mi-wetlands-06",
+          "statement": "the importance of getting water movement right",
+          "selectedParagraphId": "B",
+          "supportingQuote": "If the water regime is wrong, new plants may fail even when the species are carefully chosen.",
+          "paraphraseMap": {
+            "water movement": "the water regime",
+            "the importance of getting ... right": "If ... wrong, new plants may fail"
+          },
+          "closestCompetingParagraphId": "D",
+          "competitorFailure": "Paragraph D mentions water depth as a monitoring indicator but does not explain the consequence of an incorrect water regime for restoration success.",
+          "ambiguity": "none",
+          "reasoning": "Paragraph B makes the importance explicit through the failure condition: even suitable species may not establish if the water regime is incorrect."
+        }
+      ]
+    }
+  ]
+}

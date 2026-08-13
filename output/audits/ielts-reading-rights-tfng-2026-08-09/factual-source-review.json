@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "ielts-reading-tfng-factual-source-review.v1",
+  "generatedAt": "2026-08-09T00:00:00-05:00",
+  "reviewScope": "F0.2b.2 — second-pass factual-source review only",
+  "instruction": "Open only after saving the complete first-pass TFNG adjudication. Review every exact claim span against the candidate sources and classify it supported, oversimplified, unsupported or untraceable. Candidate sources do not prove authorship, license, authorization or verification.",
+  "records": [
+    {
+      "assetId": "formative:true-false-not-given:tfng-set-urban-trees",
+      "claimSpansToReview": [
+        "Trees can lower surface temperatures by providing shade and by releasing moisture through transpiration.",
+        "In dense neighborhoods, this cooling effect can reduce the need for air conditioning during hot months.",
+        "Wealthier districts often have wider streets, private gardens and long-established parks, while lower-income areas may have fewer trees and more exposed concrete.",
+        "Some cities now use satellite imagery to identify neighborhoods with the highest heat risk and the lowest tree coverage."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "urban-epa-heat-island",
+          "label": "US EPA — using trees and vegetation to reduce heat islands",
+          "url": "https://www.epa.gov/heatislands/using-trees-and-vegetation-reduce-heat-islands",
+          "note": "Fuente oficial candidata sobre sombra, evapotranspiración, temperaturas urbanas y demanda de aire acondicionado; no verifica la autoría del pasaje."
+        },
+        {
+          "evidenceId": "urban-usfs-canopy-inequality-2021",
+          "label": "US Forest Service — tree cover and temperature disparity",
+          "url": "https://research.fs.usda.gov/treesearch/62536",
+          "note": "Estudio primario candidato sobre desigualdad de canopy por ingresos y temperatura, basado en imágenes aéreas y Landsat; no respalda cada detalle comparativo del pasaje."
+        },
+        {
+          "evidenceId": "urban-usfs-assessment-management-2018",
+          "label": "US Forest Service — improving city forests through assessment and management",
+          "url": "https://research.fs.usda.gov/treesearch/55851",
+          "note": "Revisión candidata sobre beneficios, evaluación, selección de especies, mantenimiento, consumo de agua y posibles costos de infraestructura."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan enfriamiento por sombra/transpiración, desigualdad de canopy y necesidad de planificación, pero no validan cada generalización histórica, geográfica o de implementación del pasaje. Falta revisión humana claim-by-claim."
+    },
+    {
+      "assetId": "formative:true-false-not-given:tfng-set-school-libraries",
+      "claimSpansToReview": [
+        "Several secondary schools have kept their libraries open after regular lessons.",
+        "Teachers noticed that some pupils needed a quiet place to complete assignments before travelling home, especially those who shared bedrooms with younger siblings.",
+        "In the second term, trained volunteers and senior students helped with basic supervision, while teachers remained available only on two afternoons each week.",
+        "Younger students used the library mostly for homework support, while older students were more likely to use reference books and online databases for exam projects.",
+        "Some parents wanted weekend opening hours, but the school board decided to review weekday demand first."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "school-govuk-extended-day-case",
+          "label": "GOV.UK — extended school day case studies",
+          "url": "https://www.gov.uk/government/publications/the-report-of-the-commission-on-race-and-ethnic-disparities/education-and-training",
+          "note": "Fuente oficial candidata que documenta escuelas abiertas para homework support, individual study y library/ICT facilities; no identifica el caso narrado ni sus datos de asistencia."
+        },
+        {
+          "evidenceId": "school-southwark-homework-clubs",
+          "label": "Southwark Council — library homework help clubs",
+          "url": "https://www.southwark.gov.uk/culture-and-sport/libraries/library-activities-children/homework-help-clubs-kids",
+          "note": "Fuente municipal candidata que confirma horarios after-school y apoyo voluntario en clubes de tarea; no valida supervisores, términos o patrones de uso del pasaje."
+        }
+      ],
+      "limitation": "Las fuentes candidatas demuestran que existen espacios y clubes after-school con apoyo y voluntariado, pero no identifican el programa descrito, sus términos, supervisores, attendance records, board decision ni patrones por edad. El caso debe documentarse como sintético/composite o sustituirse por uno trazable."
+    },
+    {
+      "assetId": "formative:true-false-not-given:tfng-set-coastal-paths",
+      "claimSpansToReview": [
+        "A coastal town redesigned part of its walking path after winter storms damaged several wooden sections.",
+        "After the path reopened, however, footfall data showed little change in weekend visitor numbers.",
+        "Environmental groups supported the inland move because it allowed damaged dunes to recover.",
+        "The council accepted the fencing proposal but said the notices would be tested for one summer before becoming permanent.",
+        "Repairs were less frequent than before, although the council warned that one mild winter was not enough evidence to predict long-term savings."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "coastal-earnse-bay-storm-2024",
+          "label": "Westmorland and Furness Council — Earnse Bay storm damage",
+          "url": "https://www.westmorlandandfurness.gov.uk/news/2024/council-taking-action-following-storm-damage-earnse-bay",
+          "note": "Caso municipal candidato de daño por tormenta, señalización y desplazamiento inland mediante roll-back; es un caso distinto del texto y no valida sus métricas."
+        },
+        {
+          "evidenceId": "coastal-natural-england-dorset-2025",
+          "label": "Natural England — Dorset coast path improvements and roll-back",
+          "url": "https://www.gov.uk/government/news/dorset-path-improved-from-kimmeridge-bay-to-south-haven-point",
+          "note": "Fuente oficial candidata sobre mejora de rutas y provisión para mover el sendero tras erosión; no identifica la ciudad, visitantes, cafés ni ahorro descritos."
+        },
+        {
+          "evidenceId": "coastal-dune-management-govuk",
+          "label": "GOV.UK — sand dune processes and management",
+          "url": "https://www.gov.uk/flood-and-coastal-erosion-risk-management-research-reports/sand-dune-processes-and-management-for-flood-and-coastal-defence",
+          "note": "Investigación oficial candidata sobre dinámica, conservación y técnicas de manejo de dunas; no verifica la propuesta ni el seguimiento del caso del pasaje."
+        }
+      ],
+      "limitation": "Las fuentes candidatas respaldan tormentas, roll-back inland, señalización y manejo de dunas, pero no identifican la ciudad ni verifican longitud, footfall, viewing points, fencing, seasonal notices o maintenance costs. El caso debe declararse sintético/composite o reemplazarse por un caso trazable."
+    }
+  ]
+}

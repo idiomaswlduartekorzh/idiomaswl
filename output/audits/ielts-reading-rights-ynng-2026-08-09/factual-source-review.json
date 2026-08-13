@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "ielts-reading-ynng-factual-source-review.v1",
+  "generatedAt": "2026-08-09T05:36:00-05:00",
+  "reviewScope": "F0.2b.3 — second-pass factual-source review only",
+  "instruction": "Open only after persisting the full blind first pass. Review every exact claim span against candidate sources and classify it supported, oversimplified, unsupported or untraceable. Separate factual support from the writer’s normative stance. Candidate sources do not prove authorship, license, authorization or verification.",
+  "records": [
+    {
+      "assetId": "formative:yes-no-not-given:ynng-station-art",
+      "claimSpansToReview": [
+        "Murals, small exhibitions and temporary installations can certainly soften places that otherwise feel rushed and anonymous.",
+        "Transport authorities sometimes commission large works without asking local residents what would feel meaningful or useful.",
+        "A modest project developed with community groups may do more for public trust than an expensive installation chosen by distant planners.",
+        "Art programs can be funded separately, supported by cultural grants or used to explain local history while renovation is already taking place."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "station-lta-gift-art",
+          "label": "Singapore LTA — Gift of Art in public transport",
+          "url": "https://www.lta.gov.sg/content/ltagov/en/getting_around/public_transport/a_better_public_transport_experience/art_in_public_transport/gift-of-art.html",
+          "note": "Fuente primaria institucional candidata sobre arte en estaciones, experiencia de pasajeros y conexión con quienes viven y trabajan alrededor. No valida la preferencia normativa del autor del pasaje."
+        },
+        {
+          "evidenceId": "station-opdc-community-brief",
+          "label": "OPDC — Park Royal subway public-art community brief",
+          "url": "https://consult.opdc.london.gov.uk/park-royal-subway-improvements",
+          "note": "Brief público candidato que exige trabajo con la comunidad local, representación, wayfinding, durabilidad y presupuesto. Es un caso específico y no prueba efectos generales sobre confianza."
+        }
+      ],
+      "limitation": "Las fuentes candidatas muestran programas de arte en transporte, conexión local, participación comunitaria, wayfinding y límites prácticos, pero no verifican que proyectos modestos generen más confianza ni que el criterio normativo del pasaje sea empíricamente generalizable."
+    },
+    {
+      "assetId": "formative:yes-no-not-given:ynng-remote-work",
+      "claimSpansToReview": [
+        "Fewer daily commuters may reduce pressure on trains and roads, but a city centre is not only a container for desks.",
+        "It is also a place where shops, cafes, cultural venues and public services depend on repeated daytime movement.",
+        "However, entirely optional attendance can create another problem: if nobody knows when colleagues will be present, the office loses its value as a shared meeting place.",
+        "Teams may choose two or three common days for meetings, mentoring and decisions that benefit from quick conversation.",
+        "Empty ground-floor units can become clinics, classrooms or small performance spaces."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "remote-ons-hybrid-2025",
+          "label": "ONS — access to hybrid work in Great Britain",
+          "url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/whohasaccesstohybridworkingreatbritain/latest",
+          "note": "Fuente estadística primaria candidata sobre persistencia y distribución del trabajo híbrido. No determina la política óptima para cada empresa o centro urbano."
+        },
+        {
+          "evidenceId": "remote-london-assembly-central-2024",
+          "label": "London Assembly — impact of remote working on central London",
+          "url": "https://www.london.gov.uk/who-we-are/what-london-assembly-does/london-assembly-work/london-assembly-publications/impact-remote-working-central-london",
+          "note": "Fuente institucional candidata sobre ridership, footfall, dwell time, spend y public realm en el centro de Londres. No prueba cada relación causal generalizada por el pasaje."
+        },
+        {
+          "evidenceId": "remote-ecb-work-preference-2025",
+          "label": "ECB Consumer Expectations Survey — remote-work preferences",
+          "url": "https://www.ecb.europa.eu/press/economic-bulletin/focus/2025/html/ecb.ebbox202506_04~2cd6fd1c14.en.html",
+          "note": "Fuente primaria candidata sobre prevalencia, preferencia y satisfacción con modelos híbridos en la zona euro. No prueba que dos o tres días comunes sean universalmente óptimos."
+        }
+      ],
+      "limitation": "Las fuentes candidatas documentan trabajo híbrido persistente, preferencia por modelos híbridos y efectos que autoridades monitorizan sobre footfall y gasto; no prueban que dos o tres días comunes sean la mejor solución universal ni cada causalidad del ensayo."
+    },
+    {
+      "assetId": "formative:yes-no-not-given:ynng-school-uniforms",
+      "claimSpansToReview": [
+        "Uniforms can reduce visible competition around clothing, especially in schools where students come from very different economic backgrounds.",
+        "Expensive shoes, phones and bags can still signal status even when shirts and trousers look similar.",
+        "If some hairstyles, cultural garments or body types are treated as problems, the policy can become a source of unfair discipline.",
+        "It is less true when families must buy from a single supplier or replace branded pieces quickly."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "uniforms-dfe-policy-2026",
+          "label": "UK Department for Education — developing school uniform policy",
+          "url": "https://www.gov.uk/government/publications/school-uniform/school-uniforms",
+          "note": "Guía oficial candidata sobre identidad, consulta, flexibilidad, igualdad, religión, discapacidad, disciplina y asequibilidad. Sustenta riesgos de aplicación, no una conclusión universal a favor o en contra."
+        },
+        {
+          "evidenceId": "uniforms-dfe-cost-2026",
+          "label": "UK Department for Education — cost of school uniforms",
+          "url": "https://www.gov.uk/government/publications/cost-of-school-uniforms",
+          "note": "Guía estatutaria candidata sobre coste razonable y gestión de proveedores. No demuestra que la mayoría de escuelas use proveedor único."
+        },
+        {
+          "evidenceId": "uniforms-cma-costs",
+          "label": "UK Competition and Markets Authority — school uniforms",
+          "url": "https://www.gov.uk/government/collections/school-uniforms",
+          "note": "Evidencia institucional candidata sobre quejas de familias, exclusividad y diferencias de precio. No valida por sí sola todos los claims de desigualdad o identidad del pasaje."
+        }
+      ],
+      "limitation": "Las fuentes candidatas sustentan que coste, proveedor, consulta, flexibilidad y aplicación no discriminatoria importan, pero no verifican que los uniformes reduzcan competencia visible ni todas las comparaciones sociales del pasaje."
+    }
+  ]
+}

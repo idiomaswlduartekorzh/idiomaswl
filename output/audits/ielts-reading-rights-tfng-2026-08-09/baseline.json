@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "ielts-reading-tfng-rights-baseline.v1",
+  "generatedAt": "2026-08-09T00:00:00-05:00",
+  "unit": "F0.2b.2 — three formative True/False/Not Given sets",
+  "repository": {
+    "branch": "codex/ielts-task2-introduction-pilot",
+    "head": "cf037bf68d766b8bc2cb81f930a4b5a42ffbeb78",
+    "worktree": "dirty-shared-preserved",
+    "relevantPreExistingStatus": [
+      " M src/data/practica-exams/seo-catalog.ts",
+      "?? docs/ielts-reading-loop.md",
+      "?? src/data/practica-exams/ielts-reading-rights-registry.ts",
+      "?? src/lib/ielts/academic-reading-rights.ts"
+    ]
+  },
+  "scope": {
+    "format": "true-false-not-given",
+    "family": "formative-route-bank",
+    "passages": 3,
+    "questions": 22,
+    "excludedFromUnit": [
+      "legacy:reading-hub:amazon-tfng"
+    ],
+    "exclusionReason": "The legacy hub is reserved for F0.2e; this unit covers only the three formative route-bank sets."
+  },
+  "assets": [
+    {
+      "assetId": "formative:true-false-not-given:tfng-set-urban-trees",
+      "id": "tfng-set-urban-trees",
+      "title": "Set 1: alcance y cuantificadores",
+      "passageTitle": "Urban trees and heat risk",
+      "wordCount": 142,
+      "questionCount": 10,
+      "sourceObjectSha256": "a9218541f32e3423ae4cedfad35784679f481e7f281ad79a50fa005d11b0e214",
+      "passageSha256": "91f3be3364e010290f0af8d4b1d07a655fa7ea5e710576b6f0a92128e2fd40a4",
+      "answerCounts": {
+        "TRUE": 3,
+        "FALSE": 5,
+        "NOT GIVEN": 2
+      }
+    },
+    {
+      "assetId": "formative:true-false-not-given:tfng-set-school-libraries",
+      "id": "tfng-set-school-libraries",
+      "title": "Set 2: información relacionada vs evidencia exacta",
+      "passageTitle": "School libraries after class",
+      "wordCount": 187,
+      "questionCount": 6,
+      "sourceObjectSha256": "d672bb4a7732a959ba7a304993e935bf0f64a25465eda44286778ccd2f6d9878",
+      "passageSha256": "45db7a8749e7ee355f8125c26c76d91faa5e8c67c213d03a194306cf91fab344",
+      "answerCounts": {
+        "TRUE": 2,
+        "FALSE": 3,
+        "NOT GIVEN": 1
+      }
+    },
+    {
+      "assetId": "formative:true-false-not-given:tfng-set-coastal-paths",
+      "id": "tfng-set-coastal-paths",
+      "title": "Set 3: causa, secuencia y límites de información",
+      "passageTitle": "Coastal walking paths",
+      "wordCount": 183,
+      "questionCount": 6,
+      "sourceObjectSha256": "8e528d9d0e9f0dc1cef8a003cd96b76bdd0100c935e47cbb9da140c130cc5bd7",
+      "passageSha256": "35e904d378e8e819049cf1d026b9b1e83dc45e1d164f8e15e91ebfb5a2f9b225",
+      "answerCounts": {
+        "TRUE": 2,
+        "FALSE": 3,
+        "NOT GIVEN": 1
+      }
+    }
+  ],
+  "structuralRisk": {
+    "answerCounts": {
+      "TRUE": 7,
+      "FALSE": 11,
+      "NOT GIVEN": 4
+    },
+    "answerRates": {
+      "TRUE": 0.3181818181818182,
+      "FALSE": 0.5,
+      "NOT GIVEN": 0.18181818181818182
+    },
+    "maxSameLabelRun": 2,
+    "answerSequence": [
+      "FALSE",
+      "TRUE",
+      "FALSE",
+      "TRUE",
+      "FALSE",
+      "FALSE",
+      "NOT GIVEN",
+      "TRUE",
+      "FALSE",
+      "NOT GIVEN",
+      "FALSE",
+      "TRUE",
+      "FALSE",
+      "TRUE",
+      "NOT GIVEN",
+      "FALSE",
+      "FALSE",
+      "TRUE",
+      "NOT GIVEN",
+      "TRUE",
+      "FALSE",
+      "FALSE"
+    ],
+    "absoluteLanguageImpliesFalse": {
+      "definition": "If a statement contains all, always, every, never, only, immediately, permanently or throughout, answer FALSE; otherwise abstain.",
+      "eligible": 10,
+      "tiesOrAbstentions": 12,
+      "hits": 8,
+      "conditionalAccuracy": 0.8,
+      "totalAccuracy": 0.36363636363636365,
+      "randomBaseline": 0.3333333333333333,
+      "wilsonUpper95": 0.9314482070746453,
+      "threshold": 0.43333333333333335
+    },
+    "statisticalCertification": "not-eligible-n-below-100",
+    "contentCertification": "blocked-structural-and-key-review-required"
+  },
+  "knownSemanticRisksBeforeIndependentReview": [
+    {
+      "questionId": "tfng-libraries-05",
+      "storedAnswer": "NOT GIVEN",
+      "risk": "The passage says no final decision was made, which may directly contradict a permanent rejection."
+    },
+    {
+      "questionId": "tfng-coastal-03",
+      "storedAnswer": "NOT GIVEN",
+      "risk": "The passage reports little change, which may directly contradict a sharp increase."
+    }
+  ],
+  "visibleClaims": [
+    {
+      "claim": "Practica con sets originales de WeLearn.",
+      "status": "observed-unverified"
+    },
+    {
+      "claim": "Banco original WeLearn",
+      "status": "observed-unverified"
+    },
+    {
+      "claim": "sin copiar preguntas oficiales",
+      "status": "observed-unverified"
+    }
+  ],
+  "runtimeBaseline": {
+    "feedbackTiming": "immediate-per-item-and-selection-locked",
+    "progressPersistence": "none-observed",
+    "preResponseLabelStyling": "route-explanation-colors-TRUE-green-FALSE-red-NOT-GIVEN-orange",
+    "learnerFacingChangeAuthorizedInThisUnit": false
+  },
+  "sources": [
+    {
+      "path": "src/data/practica-exams/seo-catalog.ts",
+      "sha256": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de"
+    },
+    {
+      "path": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/true-false-not-given/page.tsx",
+      "sha256": "0d92e60fd6c8f209dd3a2dccce905d8408b0b8f0acad40f10ca6c5798e1df792"
+    },
+    {
+      "path": "src/components/exam-practice/ObjectivePracticeEngine.tsx",
+      "sha256": "7cb6be10adb1c2e4d2c35b19abe3ab6c8c939a74b3c21432c835042bef01051c"
+    },
+    {
+      "path": "src/components/exam-practice/ObjectivePracticeSetBank.tsx",
+      "sha256": "25823a7a418319104af37259c029add0df48a01e6539c61a03b285f68e4b339b"
+    }
+  ]
+}

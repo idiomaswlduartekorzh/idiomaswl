@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "ielts-reading-matching-sentence-endings-surface-only.v1",
+  "generatedAt": "2026-08-09T15:20:00Z",
+  "reviewScope": "F0.2b.7 — grammar and generic-coherence shortcut audit over 18 questions",
+  "reviewerIsolation": "Use only sentence starts and full ending options. Do not open passages, keys, connective verdicts, blind packets or prior reviews.",
+  "taskRule": "For every question, record all grammatically compatible endings and all endings that remain generically coherent without passage evidence. Mark a unique candidate only when exactly one survives that stated filter.",
+  "instruction": "This is an adversarial surface-form audit, not an IELTS answer adjudication.",
+  "excludes": [
+    "passages",
+    "answer keys",
+    "explanations",
+    "traps",
+    "prior verdicts",
+    "student data"
+  ],
+  "records": [
+    {
+      "assetId": "formative:matching-sentence-endings:mse-microclimates",
+      "sourceObjectSha256": "932ccefb0130c9fb9fa030f3eee1e21948efcb4da58ed537fde24049fae21f05",
+      "endingOptions": [
+        {
+          "endingId": "A",
+          "text": "because the same district can contain very different local conditions."
+        },
+        {
+          "endingId": "B",
+          "text": "because they stop all heat from entering the city."
+        },
+        {
+          "endingId": "C",
+          "text": "by lowering the amount of heat stored in particular materials."
+        },
+        {
+          "endingId": "D",
+          "text": "only when they are placed where and when pedestrians need protection."
+        },
+        {
+          "endingId": "E",
+          "text": "although the effect of new buildings on air movement can vary by location."
+        },
+        {
+          "endingId": "F",
+          "text": "if it is located away from the places people normally use."
+        },
+        {
+          "endingId": "G",
+          "text": "because reflective roofs always perform better than shade trees."
+        },
+        {
+          "endingId": "H",
+          "text": "when they are added to routes people already use in daily life."
+        }
+      ],
+      "sentenceStarts": [
+        {
+          "questionId": "mse-microclimates-01",
+          "sentenceStart": "Urban heat should not be treated only as a city-wide issue"
+        },
+        {
+          "questionId": "mse-microclimates-02",
+          "sentenceStart": "Pale road coatings and reflective roof materials may help"
+        },
+        {
+          "questionId": "mse-microclimates-03",
+          "sentenceStart": "Shade structures are most useful"
+        },
+        {
+          "questionId": "mse-microclimates-04",
+          "sentenceStart": "Airflow modelling is important before large developments"
+        },
+        {
+          "questionId": "mse-microclimates-05",
+          "sentenceStart": "A cool public space may have limited value"
+        },
+        {
+          "questionId": "mse-microclimates-06",
+          "sentenceStart": "Small microclimate interventions work best"
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-sentence-endings:mse-food-waste",
+      "sourceObjectSha256": "1682b3ff5b6fac272eb80a77d5cecda5307d98d24a690c912f19a42afcc92aa4",
+      "endingOptions": [
+        {
+          "endingId": "A",
+          "text": "because waste can begin before consumers make any decision."
+        },
+        {
+          "endingId": "B",
+          "text": "by making short-term demand estimates more accurate."
+        },
+        {
+          "endingId": "C",
+          "text": "only when imperfect produce is separated from all other food."
+        },
+        {
+          "endingId": "D",
+          "text": "when it is treated as normal food and linked to practical cooking ideas."
+        },
+        {
+          "endingId": "E",
+          "text": "unless surplus food is moved while it is still safe to use."
+        },
+        {
+          "endingId": "F",
+          "text": "because composting prevents supermarkets from ordering too much food."
+        },
+        {
+          "endingId": "G",
+          "text": "as a final option for food that cannot realistically be eaten."
+        },
+        {
+          "endingId": "H",
+          "text": "because demand during busy periods can be uncertain."
+        }
+      ],
+      "sentenceStarts": [
+        {
+          "questionId": "mse-food-waste-01",
+          "sentenceStart": "Food waste should not be blamed only on careless consumers"
+        },
+        {
+          "questionId": "mse-food-waste-02",
+          "sentenceStart": "Forecasting systems can reduce waste"
+        },
+        {
+          "questionId": "mse-food-waste-03",
+          "sentenceStart": "Imperfect produce may sell better"
+        },
+        {
+          "questionId": "mse-food-waste-04",
+          "sentenceStart": "Food donation programmes are useful"
+        },
+        {
+          "questionId": "mse-food-waste-05",
+          "sentenceStart": "Household composting is best understood"
+        },
+        {
+          "questionId": "mse-food-waste-06",
+          "sentenceStart": "Restaurants may produce surplus meals"
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-sentence-endings:mse-coastal-libraries",
+      "sourceObjectSha256": "87e771a35de1ad2b132f30a3c61abaf60471fdd0636034d977376d6aed05ebad",
+      "endingOptions": [
+        {
+          "endingId": "A",
+          "text": "because they are familiar public spaces with broad local access."
+        },
+        {
+          "endingId": "B",
+          "text": "without claiming to replace technical or legal experts."
+        },
+        {
+          "endingId": "C",
+          "text": "by linking official projections to places residents recognize."
+        },
+        {
+          "endingId": "D",
+          "text": "only when residents stop using them for books and internet access."
+        },
+        {
+          "endingId": "E",
+          "text": "when local observations are treated as evidence for maintenance decisions."
+        },
+        {
+          "endingId": "F",
+          "text": "because they can replace flood barriers during severe storms."
+        },
+        {
+          "endingId": "G",
+          "text": "before a crisis by helping people understand and reach relevant services."
+        },
+        {
+          "endingId": "H",
+          "text": "because they cannot replace formal protection systems."
+        }
+      ],
+      "sentenceStarts": [
+        {
+          "questionId": "mse-libraries-01",
+          "sentenceStart": "Libraries can support climate adaptation"
+        },
+        {
+          "questionId": "mse-libraries-02",
+          "sentenceStart": "Trained library staff can guide residents"
+        },
+        {
+          "questionId": "mse-libraries-03",
+          "sentenceStart": "Map workshops become useful"
+        },
+        {
+          "questionId": "mse-libraries-04",
+          "sentenceStart": "The Harbor Point programme showed that residents helped planning"
+        },
+        {
+          "questionId": "mse-libraries-05",
+          "sentenceStart": "Libraries have the greatest value"
+        },
+        {
+          "questionId": "mse-libraries-06",
+          "sentenceStart": "Libraries should not be expected to manage emergencies alone"
+        }
+      ]
+    }
+  ]
+}

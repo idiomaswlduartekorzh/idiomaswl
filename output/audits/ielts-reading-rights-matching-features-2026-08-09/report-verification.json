@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "ielts-reading-matching-features-report-verification.v1",
+  "verifiedAt": "2026-08-09T14:49:30Z",
+  "command": "node deliver_portable_artifact.mjs --input output/audits/ielts-reading-rights-matching-features-2026-08-09/artifact.json --output output/audits/ielts-reading-rights-matching-features-2026-08-09/report.html",
+  "stages": {
+    "validation": "passed",
+    "package": "passed",
+    "verification": "passed"
+  },
+  "viewports": [1440, 390],
+  "counts": {
+    "cards": 4,
+    "charts": 2,
+    "tables": 2
+  },
+  "sha256": {
+    "validation": "363502eeaffa8eb3dee3ae57f4e86fee0f48995226c1beb9f42f88e5181eb123",
+    "auditVerdicts": "e865c56875485f3da79db7e54e1d0963327694a95d6ba4b02ca872f1703db694",
+    "artifact": "e9a272e424c2b800a0a34c036e1452655f03212e510b58ae988b57f40c0bd2d9",
+    "reportMarkdown": "60d682b460c12574af17b7beb7c0d48be58021e9cf12a00d475fb875ed7cb929",
+    "reportHtml": "46dcb4e85b678c576a3a3703335e1fa5d5ba7b7bcac2df92638c80350058ada7"
+  },
+  "interpretation": "Validation, packaging and responsive Chromium verification passed for the portable stakeholder report only. This is not learner-facing Playwright evidence and does not certify the Matching Features route, accessibility or runtime behavior."
+}

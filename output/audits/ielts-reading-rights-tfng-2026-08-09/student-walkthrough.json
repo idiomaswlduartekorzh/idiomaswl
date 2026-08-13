@@ -1,0 +1,261 @@
+{
+  "schemaVersion": "ielts-reading-tfng-student-walkthrough.v1",
+  "reviewer": {
+    "humanSignature": false,
+    "sourceContext": "blind-review-packet-only",
+    "notes": [
+      "Recorrido prospectivo desde la perspectiva de un estudiante promedio que todavía confunde coincidencia temática, contradicción textual y ausencia de información.",
+      "La revisión se limita al pasaje y a los enunciados del paquete ciego; no incorpora conocimiento externo ni observaciones sobre una interfaz o estudiantes reales.",
+      "Las acciones propuestas entrenan búsqueda de evidencia y control del lenguaje, sin adjudicar respuestas, etiquetas, bandas ni claves."
+    ]
+  },
+  "records": [
+    {
+      "assetId": "formative:true-false-not-given:tfng-set-urban-trees",
+      "likelyComprehensionBarriers": [
+        "Seguir el cambio histórico entre la visión decorativa de los árboles y la investigación reciente, especialmente cuando el enunciado usa un absoluto temporal.",
+        "Distinguir fuerza y alcance entre can, may, often, usually y formulaciones como always, all, every o immediately.",
+        "Separar una observación general sobre selección de especies de la identificación concreta de una especie, clima o recomendación óptima.",
+        "Mantener separadas varias comparaciones cercanas: riqueza, ancho de calles, jardines privados, parques, cobertura arbórea y concreto expuesto.",
+        "Ignorar conocimiento externo plausible sobre calor urbano, riego o especies cuando el pasaje no lo convierte en evidencia."
+      ],
+      "likelyShortcutBehaviors": [
+        "Aceptar un enunciado porque repite tree, shade, concrete o community sin comparar la proposición completa.",
+        "Convertir una posibilidad o tendencia del pasaje en una regla universal.",
+        "Tratar la falta de apoyo suficiente como si fuera automáticamente una oposición textual.",
+        "Rellenar con sentido común qué ciudades usan satélites o qué árboles funcionan en climas secos.",
+        "Leer solo la oración con la palabra coincidente y omitir la oración anterior o posterior que fija el tiempo o el alcance."
+      ],
+      "learningValue": [
+        "Practicar una auditoría palabra por palabra de cuantificadores, modalidad y expresiones temporales.",
+        "Aprender a exigir evidencia para cada parte de una comparación, no solo para el tema general.",
+        "Diferenciar oposición explícita de dato requerido ausente sin depender de plausibilidad.",
+        "Reducir la carga irrelevante mediante una búsqueda guiada por el núcleo verificable del enunciado."
+      ],
+      "nextAction": [
+        "Antes de decidir, subrayar en cada enunciado sujeto, verbo, cuantificador, tiempo y término comparativo.",
+        "Crear tres notas breves por pregunta: zona más cercana, palabras decisivas y pieza que todavía faltaría probar.",
+        "Cuando aparezca un absoluto, buscar cobertura completa o una excepción textual; no ampliar una tendencia por intuición.",
+        "Si el pasaje solo habla del tema cercano, formular con precisión el hecho ausente antes de considerar que existe contradicción."
+      ],
+      "questionWalkthrough": [
+        {
+          "questionId": "tfng-urban-trees-01",
+          "likelyMisread": "Pasar por alto el cambio temporal y leer mainly as decoration como compatible con always considered essential infrastructure.",
+          "evidenceHunt": "Releer las tres primeras oraciones y marcar For many years, mainly as decoration y Recent research has changed that view; comprobar qué periodo cubre cada expresión.",
+          "decisionRule": "El absoluto always exige evidencia para toda la línea temporal. Comparar la concepción atribuida a los planificadores con essential infrastructure y decidir si el pasaje se opone a esa concepción o simplemente no la menciona.",
+          "repairAction": "Dibujar una línea antes/después de recent research y colocar en ella únicamente las descripciones textuales de los árboles."
+        },
+        {
+          "questionId": "tfng-urban-trees-02",
+          "likelyMisread": "Reconocer la idea general de enfriamiento pero no verificar el mecanismo parcial indicado por partly.",
+          "evidenceHunt": "Localizar la oración que enumera shade y releasing moisture through transpiration; emparejar reduce temperatures con lower surface temperatures.",
+          "decisionRule": "Una afirmación parcial necesita que el mecanismo y el efecto estén unidos en el pasaje; no hace falta que sea el único mecanismo ni conviene añadir explicaciones científicas externas.",
+          "repairAction": "Trazar dos flechas separadas desde los mecanismos mencionados hacia el efecto térmico y comprobar cuál corresponde al enunciado."
+        },
+        {
+          "questionId": "tfng-urban-trees-03",
+          "likelyMisread": "Transformar reduce the need en becomes unnecessary y extender dense neighborhoods a all neighborhoods with many trees.",
+          "evidenceHunt": "Volver al final del primer párrafo y encerrar can, reduce the need, dense neighborhoods y during hot months; buscar además una mención explícita a eliminación total.",
+          "decisionRule": "Comprobar por separado grado, población y condición temporal. Una formulación más débil no debe convertirse sin evidencia en eliminación universal; distinguir insuficiencia de apoyo de una oposición expresa.",
+          "repairAction": "Reescribir el enunciado como tres requisitos verificables —eliminación, todos los barrios y muchos árboles— y señalar qué texto cubriría cada uno."
+        },
+        {
+          "questionId": "tfng-urban-trees-04",
+          "likelyMisread": "Perder la comparación porque exposed concrete aparece después de varias características de los distritos ricos.",
+          "evidenceHunt": "Leer completa la oración unida por while e identificar qué descripción pertenece a wealthier districts y cuál a lower-income areas.",
+          "decisionRule": "Mantener el modal may y la dirección de la comparación. La evidencia debe asociar el concreto expuesto con el grupo correcto sin convertir una posibilidad en una frecuencia universal.",
+          "repairAction": "Hacer dos columnas por tipo de distrito y copiar solo las características colocadas explícitamente en cada lado de while."
+        },
+        {
+          "questionId": "tfng-urban-trees-05",
+          "likelyMisread": "Tomar Some cities como equivalente a every city government o, en el extremo contrario, asumir que some demuestra que otras ciudades no lo hacen.",
+          "evidenceHunt": "Localizar Some cities now use satellite imagery y buscar si el pasaje cuantifica al resto de las ciudades o identifica alguna que no use esa herramienta.",
+          "decisionRule": "Every exige cobertura del conjunto completo. Some confirma participación de una parte, pero por sí solo no establece qué ocurre con todos los demás; registrar la cobertura faltante antes de hablar de oposición.",
+          "repairAction": "Escribir conjuntos simples: ciudades mencionadas y ciudades no descritas; no completar el segundo conjunto con conocimiento externo."
+        },
+        {
+          "questionId": "tfng-urban-trees-06",
+          "likelyMisread": "Saltar sobre need years of care y dejar que la idea familiar de plantar para dar sombra domine la secuencia temporal.",
+          "evidenceHunt": "Ir al inicio del tercer párrafo y relacionar Young trees, need years of care, before, significant shade e immediately after planting.",
+          "decisionRule": "Comparar el momento afirmado con el intervalo que el pasaje coloca antes del efecto; before y immediately determinan si hay oposición temporal o falta de precisión.",
+          "repairAction": "Convertir la oración en una secuencia plantación → cuidados durante años → sombra significativa y contrastarla con el momento exigido."
+        },
+        {
+          "questionId": "tfng-urban-trees-07",
+          "likelyMisread": "Confundir la advertencia the wrong species con una lista o recomendación de la mejor especie para un clima concreto.",
+          "evidenceHunt": "Examinar el tercer párrafo para encontrar nombres de especies, criterios de superioridad y referencias a dry climates; anotar también qué sí se dice sobre agua y selección.",
+          "decisionRule": "La cercanía temática no basta: best requiere comparación de opciones e identifies requiere una especie concreta. Si esos componentes no aparecen, precisar el dato faltante sin inferirlo.",
+          "repairAction": "Separar en una tabla advertencia general, criterio de selección y especie identificada; dejar vacía cualquier celda que el texto no complete."
+        },
+        {
+          "questionId": "tfng-urban-trees-08",
+          "likelyMisread": "Leer la enumeración final como detalles secundarios y no notar que combine establece componentes de los programas exitosos.",
+          "evidenceHunt": "Localizar la última oración y seguir la coordinación entre tree planting, maintenance budgets, community participation y careful species selection.",
+          "decisionRule": "Can be part of solo exige inclusión posible dentro del conjunto descrito; no convertir esa inclusión en requisito exclusivo, causa única o garantía de éxito.",
+          "repairAction": "Encerrar cada elemento de la enumeración y verificar si el enunciado pregunta por pertenencia o por necesidad absoluta."
+        },
+        {
+          "questionId": "tfng-urban-trees-09",
+          "likelyMisread": "Quedarse con los beneficios de los dos primeros párrafos y atribuir al autor una conclusión rápida que el tercer párrafo matiza.",
+          "evidenceHunt": "Buscar las formulaciones sobre velocidad y solución al inicio del tercer párrafo y conectarlas con need years of care before significant shade.",
+          "decisionRule": "Una afirmación sobre la postura del autor debe compararse con su formulación explícita, no con el tono general del tema; decidir si existe oposición directa sobre rapidez o solo falta de una promesa.",
+          "repairAction": "Copiar lado a lado la proposición atribuida al autor y la frase temporal más cercana, eliminando ejemplos secundarios."
+        },
+        {
+          "questionId": "tfng-urban-trees-10",
+          "likelyMisread": "Fusionar often have private gardens con lower-income areas may have fewer trees y concluir una comparación exhaustiva que el texto quizá no construye.",
+          "evidenceHunt": "Volver a la oración comparativa del segundo párrafo y preguntar si private gardens se compara directamente entre ambos grupos y si se cubre every lower-income area.",
+          "decisionRule": "Para una comparación A more common than every B se necesita evidencia sobre A, sobre los B y sobre el alcance de every. Fewer trees no equivale automáticamente a fewer private gardens.",
+          "repairAction": "Descomponer la afirmación en objeto comparado, dos grupos y cuantificador; prohibirse usar cobertura arbórea como sustituto de jardines privados."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:true-false-not-given:tfng-set-school-libraries",
+      "likelyComprehensionBarriers": [
+        "Seguir el cambio de supervisión entre las primeras sesiones, el segundo trimestre y la disponibilidad semanal posterior.",
+        "Distinguir finalidad única de finalidad adicional cuando el pasaje usa not only.",
+        "Interpretar comparaciones de uso entre estudiantes jóvenes y mayores sin perder mostly, more likely ni el tipo de actividad.",
+        "Separar una decisión aplazada de una decisión permanente, especialmente con first, still y by the end of the year.",
+        "Atribuir correctamente una opinión al director de la biblioteca sin invertir la negación."
+      ],
+      "likelyShortcutBehaviors": [
+        "Leer books o borrow y aceptar cualquier enunciado sobre la finalidad de la biblioteca.",
+        "Mantener el primer modelo de supervisión durante todo el año e ignorar la transición del segundo párrafo.",
+        "Suponer un resultado definitivo porque el consejo no aprobó de inmediato la petición de los padres.",
+        "Confundir el patrón de asistencia con datos numéricos exactos que el pasaje no ofrece.",
+        "Invertir should not be judged only by al recordar únicamente judged y books borrowed."
+      ],
+      "learningValue": [
+        "Entrenar el seguimiento de cambios de estado y decisiones pendientes.",
+        "Reconocer negación, exclusividad y alcance temporal como información decisiva.",
+        "Comparar grupos usando la medida exacta mencionada en lugar de una impresión general.",
+        "Controlar inferencias causales plausibles sobre condiciones de estudio en casa."
+      ],
+      "nextAction": [
+        "Marcar en el margen una línea temporal: primeras sesiones, segundo trimestre, dos tardes por semana y final de año.",
+        "Encerrar only, every, throughout, more often, permanently y no final decision antes de buscar palabras temáticas.",
+        "Para cada comparación, escribir quién hace qué, con qué frecuencia relativa y para qué propósito.",
+        "Cuando una decisión esté pendiente, buscar lenguaje explícito de aceptación, rechazo, prueba o revisión antes de inferir permanencia."
+      ],
+      "questionWalkthrough": [
+        {
+          "questionId": "tfng-libraries-01",
+          "likelyMisread": "Ignorar not only y reducir toda la decisión de apertura al préstamo de libros.",
+          "evidenceHunt": "Leer juntas las dos primeras oraciones y la explicación sobre un lugar tranquilo para completar tareas antes de viajar a casa.",
+          "decisionRule": "Only exige exclusividad. Comparar la finalidad única del enunciado con todas las finalidades expresamente ligadas a la decisión y determinar si hay oposición o información insuficiente.",
+          "repairAction": "Enumerar cada propósito mencionado y comprobar si el enunciado permite más de uno."
+        },
+        {
+          "questionId": "tfng-libraries-02",
+          "likelyMisread": "Convertir especially those who shared bedrooms en una causalidad más fuerte o, al revés, pasar por alto la relación contextual con necesitar un lugar tranquilo.",
+          "evidenceHunt": "Localizar needed a quiet place to complete assignments y especially those who shared bedrooms with younger siblings; observar cómo se conectan ambas partes.",
+          "decisionRule": "Verificar que dificultad de estudio, hogar compartido y relación causal estén suficientemente vinculados por el texto; no añadir detalles sobre ruido, rendimiento o familia.",
+          "repairAction": "Parafrasear la oración conservando el grado de certeza y tachar cualquier causa que provenga solo del sentido común."
+        },
+        {
+          "questionId": "tfng-libraries-03",
+          "likelyMisread": "Extender first after-school library sessions a every session throughout the year.",
+          "evidenceHunt": "Construir la secuencia first sessions → second term → teachers remained available only on two afternoons each week e identificar quién ayudó después.",
+          "decisionRule": "Los cuantificadores every y throughout deben sobrevivir a todos los periodos descritos. Una modificación posterior del modelo puede aportar oposición temporal, mientras un periodo no descrito solo deja una brecha.",
+          "repairAction": "Dividir el año en etapas y asignar supervisores solo donde el pasaje los nombra."
+        },
+        {
+          "questionId": "tfng-libraries-04",
+          "likelyMisread": "Recordar que los mayores usaban bases de datos, pero no comprobar la comparación more often than younger ni la finalidad exam projects.",
+          "evidenceHunt": "Volver al patrón de asistencia: younger students mostly for homework support frente a older students more likely to use reference books and online databases for exam projects.",
+          "decisionRule": "Una comparación de frecuencia necesita grupos, conducta y propósito alineados. More likely puede sostener una relación comparativa, pero no autoriza números ni una diferencia mayor de la indicada.",
+          "repairAction": "Escribir una fila por grupo con uso principal, recurso y finalidad; comparar solo la columna exacta que pregunta el enunciado."
+        },
+        {
+          "questionId": "tfng-libraries-05",
+          "likelyMisread": "Interpretar review weekday demand first como rechazo final de los sábados.",
+          "evidenceHunt": "Examinar las dos últimas oraciones y marcar wanted weekend opening hours, decided to review weekday demand first y No final decision about Saturdays had been made by the end of the year.",
+          "decisionRule": "Permanently exige un estado definitivo. Diferenciar aplazamiento, revisión y ausencia de decisión de una negativa expresa; el límite by the end of the year fija el momento evaluado.",
+          "repairAction": "Asignar a la propuesta un estado textual —solicitada, en revisión, probada, aceptada o rechazada— sin saltar a uno que no aparezca."
+        },
+        {
+          "questionId": "tfng-libraries-06",
+          "likelyMisread": "Perder la negación en should not be judged only by y atribuir a la bibliotecaria la postura inversa.",
+          "evidenceHunt": "Localizar la opinión completa de la head librarian y leer la causa introducida por because sobre several kinds of academic work.",
+          "decisionRule": "Cuando se atribuye una creencia, conservar negación y exclusividad. Comparar only useful measure con not judged only by y con la pluralidad de usos descrita.",
+          "repairAction": "Reformular la opinión en lenguaje propio incluyendo la palabra no antes de contrastarla con el enunciado."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:true-false-not-given:tfng-set-coastal-paths",
+      "likelyComprehensionBarriers": [
+        "Seguir decisiones que cambian ubicación, longitud y exposición sin confundir causa, consecuencia y objetivo.",
+        "Distinguir preocupación inicial de los comerciantes de los datos observados después de la reapertura.",
+        "Mantener separadas dos propuestas ambientales con estados distintos: cercado aceptado y avisos sometidos a prueba.",
+        "Interpretar little change, less frequent y not enough evidence sin exagerar dirección o certeza.",
+        "Respetar horizontes temporales: reapertura, un verano de prueba, seis meses y una sola temporada invernal."
+      ],
+      "likelyShortcutBehaviors": [
+        "Responder según lo que temían los comerciantes en vez de según los datos posteriores.",
+        "Agrupar fencing y notices como una única decisión del consejo.",
+        "Tomar less frequent repairs como prueba suficiente de ahorro a largo plazo.",
+        "Emparejar increased con footfall data sin procesar little change ni sharply.",
+        "Usar conocimiento externo sobre tormentas, dunas o ingeniería costera para completar motivos y resultados."
+      ],
+      "learningValue": [
+        "Practicar contraste entre expectativa, acción y resultado observado.",
+        "Aprender a rastrear el estado independiente de propuestas cercanas.",
+        "Calibrar comparación, magnitud y suficiencia de evidencia.",
+        "Distinguir un dato de corto plazo de una predicción longitudinal."
+      ],
+      "nextAction": [
+        "Crear una cronología con daño, rediseño, reapertura, verano de prueba y revisión a seis meses.",
+        "Separar en columnas actores, propuesta o preocupación, decisión y evidencia posterior.",
+        "Subrayar modificadores de magnitud y certeza como slightly, little, less frequent, one mild winter y long-term.",
+        "Antes de decidir, preguntar si el texto contradice el núcleo del enunciado o solo deja sin medir su magnitud, duración o causa."
+      ],
+      "questionWalkthrough": [
+        {
+          "questionId": "tfng-coastal-01",
+          "likelyMisread": "Quedarse con rebuilt y damaged path sin procesar Instead of rebuilding the path in the same place ni moved farther inland.",
+          "evidenceHunt": "Leer las dos primeras oraciones y marcar la ubicación anterior, la alternativa descartada y el destino de the most exposed section.",
+          "decisionRule": "Exactly the same location exige identidad espacial. Comparar esa identidad con el cambio de ubicación descrito y no confundir rediseñar parte del camino con reconstruirla en el mismo sitio.",
+          "repairAction": "Dibujar dos puntos, costa e interior, y mover solo la sección que el texto especifica."
+        },
+        {
+          "questionId": "tfng-coastal-02",
+          "likelyMisread": "Concentrarse en la menor exposición a olas y omitir el costo espacial del cambio de ruta.",
+          "evidenceHunt": "Localizar This decision made the route slightly longer y comprobar que This decision remite al traslado hacia el interior.",
+          "decisionRule": "A little debe compararse con slightly sin convertirlo en una cifra exacta ni en un cambio grande; confirmar también que el sujeto sigue siendo la ruta.",
+          "repairAction": "Unir pronombre, decisión y consecuencia con flechas antes de evaluar la paráfrasis de magnitud."
+        },
+        {
+          "questionId": "tfng-coastal-03",
+          "likelyMisread": "Confundir el temor inicial sobre menos visitantes con un aumento posterior o leer cualquier cambio como increased sharply.",
+          "evidenceHunt": "Ir a la oración de footfall data y encerrar little change, weekend visitor numbers y after the path reopened; mantener aparte la preocupación previa.",
+          "decisionRule": "La dirección y magnitud deben coincidir: increased sharply requiere evidencia de aumento grande, mientras little change describe otra escala. Usar el dato observado, no la expectativa.",
+          "repairAction": "Escribir expectativa y resultado en líneas distintas y asignar a cada uno su expresión de magnitud."
+        },
+        {
+          "questionId": "tfng-coastal-04",
+          "likelyMisread": "Recordar que los grupos apoyaron el traslado, pero no relacionar su petición concreta con las áreas frágiles de dunas.",
+          "evidenceHunt": "Leer las dos primeras oraciones del tercer párrafo y seguir They desde Environmental groups hasta keep visitors off the most fragile areas.",
+          "decisionRule": "Wanted puede expresarse mediante una petición explícita; verificar actor, acción solicitada y zona objetivo sin añadir prohibiciones más amplias que fragile areas.",
+          "repairAction": "Sustituir pronombres por su antecedente y resumir la petición en tres elementos: quién, qué y dónde."
+        },
+        {
+          "questionId": "tfng-coastal-05",
+          "likelyMisread": "Transferir la aceptación del fencing proposal a seasonal notices o saltar de tested for one summer a permanent immediately.",
+          "evidenceHunt": "Separar las dos cláusulas de la decisión del consejo: accepted the fencing proposal, but notices would be tested for one summer before becoming permanent.",
+          "decisionRule": "Cada propuesta necesita su propio estado. Immediately debe contrastarse con cualquier periodo de prueba y before; no heredar la aceptación de un objeto al otro.",
+          "repairAction": "Crear dos tarjetas, fencing y notices, y copiar en cada una solamente su decisión y su calendario."
+        },
+        {
+          "questionId": "tfng-coastal-06",
+          "likelyMisread": "Convertir repairs were less frequent en capacidad inmediata para predecir ahorros duraderos.",
+          "evidenceHunt": "Leer juntas las dos oraciones finales: revisión a seis meses, reparaciones menos frecuentes y advertencia sobre one mild winter y long-term savings.",
+          "decisionRule": "Distinguir observación pasada de inferencia futura. Already predict long-term exige suficiencia declarada para extrapolar; comprobar qué límite pone el consejo a esa extrapolación.",
+          "repairAction": "Dividir la evidencia en observado, periodo observado y conclusión permitida; no llevar el primer dato más allá del límite textual."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "ielts-reading-summary-completion-prompt-only-verdict.v1",
+  "reviewer": {
+    "reviewerRunId": "expert-prompt-only-2026-08-11T15:18:34Z",
+    "reviewedAt": "2026-08-11T15:18:34Z",
+    "packetSha256": "8d95f1306040e2bcb0a41e18c4e2a77efcf80719f527ebb005a2f9a9eabb6079",
+    "sourceContext": "prompt-only-packet-only",
+    "humanSignature": false,
+    "notes": "Independent prompt-only review. Candidate completions are examples inferred solely from the visible frames; they are not passage-derived answers."
+  },
+  "records": [
+    {
+      "questionId": "summary-urban-farms-01",
+      "predictedGrammarCategory": "singular or mass noun phrase",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["rooftop space", "roof space", "space", "land"],
+      "uniqueExactGuess": null,
+      "reasoning": "The blank is the object of 'unused' and accepts many place or area nouns; the frame does not select one exact wording."
+    },
+    {
+      "questionId": "summary-urban-farms-02",
+      "predictedGrammarCategory": "plural noun phrase",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["miles", "transport distances", "supply chains", "journeys"],
+      "uniqueExactGuess": null,
+      "reasoning": "Several transport- and distribution-related nouns complete 'food ...' naturally, with no lexical cue fixing one expression."
+    },
+    {
+      "questionId": "summary-urban-farms-03",
+      "predictedGrammarCategory": "plural or mass noun phrase",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["roofs", "buildings", "roof structures", "drainage systems"],
+      "uniqueExactGuess": null,
+      "reasoning": "The preposition permits several physical targets of pressure, and the engineering context remains too broad for an exact guess."
+    },
+    {
+      "questionId": "summary-urban-farms-04",
+      "predictedGrammarCategory": "mass noun phrase",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["mains water", "tap water", "drinking water", "municipal water"],
+      "uniqueExactGuess": null,
+      "reasoning": "Rainwater collection predictably reduces demand for some water supply, but multiple natural labels remain available."
+    },
+    {
+      "questionId": "summary-urban-farms-05",
+      "predictedGrammarCategory": "plural or mass noun phrase",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["science lessons", "environmental education", "practical learning", "school projects"],
+      "uniqueExactGuess": null,
+      "reasoning": "The purpose complement after 'for' can denote lessons, education, learning, or projects without a unique exact phrase."
+    },
+    {
+      "questionId": "summary-urban-farms-06",
+      "predictedGrammarCategory": "singular noun phrase",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["roof structure", "load capacity", "building", "site"],
+      "uniqueExactGuess": null,
+      "reasoning": "Engineering checks before rooftop planting could target several related objects or properties, so the frame is not answer-revealing."
+    },
+    {
+      "questionId": "summary-repair-cafes-01",
+      "predictedGrammarCategory": "plural or mass noun phrase",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["items", "appliances", "possessions", "equipment"],
+      "uniqueExactGuess": null,
+      "reasoning": "Repair cafes can work on many categories of broken objects, and the visible wording does not constrain the category exactly."
+    },
+    {
+      "questionId": "summary-repair-cafes-02",
+      "predictedGrammarCategory": "singular count noun phrase",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["learning experience", "social event", "shared activity", "workshop"],
+      "uniqueExactGuess": null,
+      "reasoning": "The article requires a singular countable complement, but several event or learning nouns fit the stated contrast."
+    },
+    {
+      "questionId": "summary-repair-cafes-03",
+      "predictedGrammarCategory": "plural noun phrase",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["tools", "spare parts", "materials", "components"],
+      "uniqueExactGuess": null,
+      "reasoning": "Agreement with 'are' signals a plural, while preparation for repairs leaves many plausible resource categories."
+    },
+    {
+      "questionId": "summary-repair-cafes-04",
+      "predictedGrammarCategory": "mass or plural noun phrase",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["training", "qualifications", "experience", "expertise"],
+      "uniqueExactGuess": null,
+      "reasoning": "After 'relevant', several competence-related nouns fit grammatically and semantically without passage evidence."
+    },
+    {
+      "questionId": "summary-repair-cafes-05",
+      "predictedGrammarCategory": "mass or plural noun phrase",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["confidence", "practical skills", "problem-solving skills", "independence"],
+      "uniqueExactGuess": null,
+      "reasoning": "Using unfamiliar tools could develop several abilities or dispositions, so the outcome cannot be guessed exactly."
+    },
+    {
+      "questionId": "summary-repair-cafes-06",
+      "predictedGrammarCategory": "mass noun or gerund phrase",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["learning", "problem solving", "participation", "responsibility"],
+      "uniqueExactGuess": null,
+      "reasoning": "The adjective 'shared' permits multiple activity or value nouns consistent with an educational atmosphere."
+    },
+    {
+      "questionId": "summary-shade-mapping-01",
+      "predictedGrammarCategory": "plural noun phrase",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["heatwaves", "hot days", "extreme temperatures", "heat events"],
+      "uniqueExactGuess": null,
+      "reasoning": "The plural verb 'become' requires a plural subject, but many heat-related events satisfy the visible causal context."
+    },
+    {
+      "questionId": "summary-shade-mapping-02",
+      "predictedGrammarCategory": "plural or mass noun phrase",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["satellite images", "digital maps", "aerial photographs", "computer models"],
+      "uniqueExactGuess": null,
+      "reasoning": "A mapping process may begin with several types of remote or digital evidence; the street-data contrast does not isolate one."
+    },
+    {
+      "questionId": "summary-shade-mapping-03",
+      "predictedGrammarCategory": "mass noun phrase",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["direct sunlight", "intense heat", "high temperatures", "full sun"],
+      "uniqueExactGuess": null,
+      "reasoning": "Extended pedestrian exposure could be described by multiple heat or sunlight expressions, all grammatically valid after 'to'."
+    },
+    {
+      "questionId": "summary-shade-mapping-04",
+      "predictedGrammarCategory": "singular count noun",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["intervention", "change", "shelter", "canopy"],
+      "uniqueExactGuess": null,
+      "reasoning": "The article and adjective cue one singular count noun, but several planning actions or structures fit the sentence."
+    },
+    {
+      "questionId": "summary-shade-mapping-05",
+      "predictedGrammarCategory": "plural or mass noun phrase",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["awnings", "shade sails", "canopies", "structures"],
+      "uniqueExactGuess": null,
+      "reasoning": "Several temporary shade structures can contrast with trees and produce immediate cooling, preventing an exact prompt-only guess."
+    },
+    {
+      "questionId": "summary-shade-mapping-06",
+      "predictedGrammarCategory": "plural noun phrase",
+      "plausibleCompletionCountBand": "four-or-more",
+      "plausibleCompletions": ["plans", "strategies", "budgets", "processes"],
+      "uniqueExactGuess": null,
+      "reasoning": "The relative clause takes a plural antecedent, while action, funding, and feedback can be organised through several document or process types."
+    }
+  ]
+}

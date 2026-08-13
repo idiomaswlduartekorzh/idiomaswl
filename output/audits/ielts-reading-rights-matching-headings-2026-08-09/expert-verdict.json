@@ -1,0 +1,671 @@
+{
+  "schemaVersion": "ielts-reading-matching-headings-expert-verdict.v1",
+  "reviewer": {
+    "humanSignature": false,
+    "sourceContext": "two-pass-blind-then-factual-sources",
+    "reviewSequence": [
+      "blind-review",
+      "factual-source-review"
+    ],
+    "reviewerRunId": "matching-headings-blind-expert-2026-08-09T07:12:35-05:00",
+    "reviewedAt": "2026-08-09T07:26:09-05:00",
+    "blindPacketSha256": "4c64f1fca28ddeb1d80744c2f3f728660d7d92bbc47449f9f166b8426a2ea4fb",
+    "firstPassSha256": "efc61917a76af034ecde1562a6f67981cf99e120e37252685a9290a22837f0b6",
+    "openedEvidenceIds": [
+      "libraries-gla-civic-spaces",
+      "libraries-ala-digital-literacy",
+      "libraries-imls-making",
+      "urban-epa-brownfields-agriculture",
+      "urban-usda-school-gardens",
+      "urban-fao-healthy-soils",
+      "night-eea-rail-low-carbon",
+      "night-eu-cross-border-rail",
+      "night-era-sleeper-authorisation"
+    ],
+    "directSourceReview": true,
+    "notes": "Second-pass AI editorial review after a persisted blind first pass. All nine candidate URLs were opened directly; the web reader initially failed on IMLS, USDA and ERA, so those same URLs were retrieved directly and inspected without substituting other sources. Candidate sources were used only to assess factual support and do not establish authorship, licensing, authorization, rights clearance or publication approval."
+  },
+  "records": [
+    {
+      "assetId": "formative:matching-headings:mh-public-libraries",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "medium",
+        "representationRisk": "medium",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "low",
+        "titleCueRisk": "low",
+        "notes": "The heading logic remains clear and independent of outside knowledge, but several broad trend and prevalence claims are not established by the candidate sources. The sources support civic, digital-literacy and making functions while only partially supporting the passage's generalizations across library systems."
+      },
+      "questions": [
+        {
+          "questionId": "mh-public-libraries-a",
+          "paragraphId": "a",
+          "selectedHeadingId": "i",
+          "globalEvidenceScope": "Paragraph A",
+          "mainIdeaStatement": "Libraries now define success through the practical access they provide, not primarily through the materials they own or lend.",
+          "supportingQuotes": [
+            "measure success differently",
+            "The central idea is no longer that the library owns information, but that it gives people practical access to it."
+          ],
+          "paraphraseMap": {
+            "mapping": "The contrast between owning stored information and enabling people to use spaces, services and information directly paraphrases a shift from ownership to access."
+          },
+          "closestCompetingHeadingId": "vii",
+          "competitorFailure": "The database and online-form examples are only two members of a wider list that also includes a desk and a workshop; technology is not the organizing idea of the paragraph.",
+          "ambiguity": "none",
+          "reasoning": "The final sentence states the ownership-versus-access contrast explicitly, so heading vii is only a detail-based distractor. Heading i captures the whole paragraph's explicit shift from ownership to practical access, whereas heading vii covers only selected examples."
+        },
+        {
+          "questionId": "mh-public-libraries-b",
+          "paragraphId": "b",
+          "selectedHeadingId": "iii",
+          "globalEvidenceScope": "Paragraph B",
+          "mainIdeaStatement": "Libraries increasingly support neighbourhood residents through learning, employment help and safe public space.",
+          "supportingQuotes": [
+            "libraries have become informal support centers",
+            "part of the social infrastructure of a neighborhood"
+          ],
+          "paraphraseMap": {
+            "mapping": "An informal support centre that serves different community groups and provides refuge is a place for community support."
+          },
+          "closestCompetingHeadingId": "v",
+          "competitorFailure": "The services could imply staff involvement, but the paragraph never centres staff or their changing responsibilities; it centres the library's social function.",
+          "ambiguity": "none",
+          "reasoning": "Both the opening claim and concluding generalization point directly to community support. Heading iii covers the paragraph's full range of neighbourhood support functions and its concluding social-infrastructure claim."
+        },
+        {
+          "questionId": "mh-public-libraries-c",
+          "paragraphId": "c",
+          "selectedHeadingId": "vii",
+          "globalEvidenceScope": "Paragraph C",
+          "mainIdeaStatement": "Libraries now connect visitors with a wide range of advanced digital help, devices and production tools that may be unaffordable at home.",
+          "supportingQuotes": [
+            "help scanning documents, using design software, joining a video interview or protecting personal data online",
+            "makerspaces with recording equipment and 3D printers"
+          ],
+          "paraphraseMap": {
+            "mapping": "Scanning, design software, data protection, device lending and makerspace equipment are technology services substantially broader than basic internet access."
+          },
+          "closestCompetingHeadingId": "i",
+          "competitorFailure": "The final bridge metaphor does concern access, but the paragraph consistently narrows that access to digital services and technology tools; heading i is too general.",
+          "ambiguity": "none",
+          "reasoning": "Heading i captures a secondary access theme, but heading vii accounts for the full chain of examples and the opening topic sentence. Heading vii accounts for the opening change in visitor needs and the entire sequence of advanced digital services, devices and makerspace tools."
+        },
+        {
+          "questionId": "mh-public-libraries-d",
+          "paragraphId": "d",
+          "selectedHeadingId": "v",
+          "globalEvidenceScope": "Paragraph D",
+          "mainIdeaStatement": "Library employees now combine traditional collection work with teaching, technical support, partnership coordination and online guidance.",
+          "supportingQuotes": [
+            "These changes have also transformed library work.",
+            "Staff members still organize collections, but they may also teach classes, troubleshoot devices, coordinate local partnerships and guide users through government websites."
+          ],
+          "paraphraseMap": {
+            "mapping": "The still-but-also contrast explicitly describes a widening set of staff responsibilities and the additional skills those duties require."
+          },
+          "closestCompetingHeadingId": "iii",
+          "competitorFailure": "Teaching and government-site guidance support users, but they are examples used to demonstrate changes in staff work, not a description of the library's overall community role.",
+          "ambiguity": "none",
+          "reasoning": "The paragraph's grammatical subject and conclusion are both staff work and staff skills. Heading v matches the paragraph's explicit transformation of library work, from traditional collection duties to multiple new roles and skills."
+        },
+        {
+          "questionId": "mh-public-libraries-e",
+          "paragraphId": "e",
+          "selectedHeadingId": "ix",
+          "globalEvidenceScope": "Paragraph E",
+          "mainIdeaStatement": "Library use shows simultaneous decline in some traditional activity and growth in other services, a mixed result obscured by borrowing-based measures.",
+          "supportingQuotes": [
+            "usage patterns are more complex",
+            "Traditional book borrowing has decreased in some places, yet attendance at events, demand for study areas and use of digital services have grown.",
+            "older measures"
+          ],
+          "paraphraseMap": {
+            "mapping": "The decrease-yet-growth contrast is the mixed pattern, while funders' continued reliance on traditional indicators explains how older measures miss it."
+          },
+          "closestCompetingHeadingId": "viii",
+          "competitorFailure": "The paragraph explicitly rejects a decline-only interpretation by setting reduced borrowing against growth in attendance, study-space demand and digital use.",
+          "ambiguity": "none",
+          "reasoning": "Heading viii is contradicted by the evidence; the paragraph explicitly names the picture as mixed. Heading ix captures both the mixed decline-and-growth evidence and the concluding warning that older metrics fail to represent it."
+        }
+      ],
+      "factualClaims": [
+        {
+          "claim": "Today, many library systems measure success differently.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "libraries-ala-digital-literacy",
+            "libraries-gla-civic-spaces"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "libraries-ala-digital-literacy",
+              "locator": "Digital literacy in public libraries, paragraphs 3-9 beneath the title",
+              "evidenceSummary": "ALA describes digital access, full-scale programming and ways to measure the impact of digital-literacy initiatives, but it does not report that many library systems have changed their overall success measures."
+            },
+            {
+              "evidenceId": "libraries-gla-civic-spaces",
+              "locator": "The power of libraries as dynamic community spaces; Calling all libraries",
+              "evidenceSummary": "The GLA page documents expanded civic functions and community connections in London but provides no evidence about how many systems measure success or how those measures changed."
+            }
+          ],
+          "note": "The sources make the broader change plausible but do not directly trace the prevalence or measurement trend asserted."
+        },
+        {
+          "claim": "In many cities, libraries have become informal support centers.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "libraries-gla-civic-spaces"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "libraries-gla-civic-spaces",
+              "locator": "The power of libraries as dynamic community spaces; Cool Spaces; Collaboration boosts resilience",
+              "evidenceSummary": "The page directly presents London libraries as trusted spaces for community wellbeing, social connection, extreme-heat respite and dementia-friendly support."
+            }
+          ],
+          "note": "A strong London example supports the function, but one city-level source does not establish the quantified-sounding generalization across many cities."
+        },
+        {
+          "claim": "Some branches lend tablets or Wi-Fi devices, while others offer makerspaces with recording equipment and 3D printers.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "libraries-imls-making",
+            "libraries-ala-digital-literacy"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "libraries-imls-making",
+              "locator": "Overview, paragraphs beginning ‘Museums and libraries have long been recognized’ and ‘IMLS also funds’",
+              "evidenceSummary": "IMLS directly documents learning spaces, makerspaces and maker programming in libraries, including work with digital and traditional media, but does not identify recording equipment, 3D printers, tablet lending or Wi-Fi-device lending on this page."
+            },
+            {
+              "evidenceId": "libraries-ala-digital-literacy",
+              "locator": "Digital literacy in public libraries, paragraphs 3-9 beneath the title",
+              "evidenceSummary": "ALA supports broad digital technical support, services and spaces, but the page does not enumerate the lending and equipment examples in the claim."
+            }
+          ],
+          "note": "The makerspace and digital-service categories are supported, while the combined list of specific equipment and lending practices is not directly established."
+        },
+        {
+          "claim": "Staff members still organize collections, but they may also teach classes, troubleshoot devices, coordinate local partnerships and guide users through government websites.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "libraries-ala-digital-literacy",
+            "libraries-imls-making"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "libraries-ala-digital-literacy",
+              "locator": "Digital literacy in public libraries, paragraphs 5-9 beneath the title",
+              "evidenceSummary": "ALA directly discusses library workers moving from ad hoc tech questions to integrated programs, technical support, outreach, lesson planning and internal or external partnerships. It does not directly cover government-website guidance or the full traditional-to-new-duty contrast."
+            },
+            {
+              "evidenceId": "libraries-imls-making",
+              "locator": "Overview; Making & Learning",
+              "evidenceSummary": "IMLS describes library learning programs, makerspace design and resources intended to grow staff capacity, but not every duty listed in the claim."
+            }
+          ],
+          "note": "The expanded teaching, technical and partnership role is supported in substance; the full composite list is broader than either source."
+        },
+        {
+          "claim": "Traditional book borrowing has decreased in some places, yet attendance at events, demand for study areas and use of digital services have grown.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "libraries-ala-digital-literacy",
+            "libraries-gla-civic-spaces"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "libraries-ala-digital-literacy",
+              "locator": "Digital literacy in public libraries, paragraphs 3-9 beneath the title",
+              "evidenceSummary": "ALA documents the importance and scope of digital-literacy services but gives no comparative time-series evidence for borrowing, event attendance, study-area demand or digital-service use."
+            },
+            {
+              "evidenceId": "libraries-gla-civic-spaces",
+              "locator": "The power of libraries as dynamic community spaces; Calling all libraries",
+              "evidenceSummary": "The GLA page describes civic uses and reaching new users but provides none of the usage trend measures asserted."
+            }
+          ],
+          "note": "No candidate source directly traces the claimed decrease-and-growth pattern."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-headings:mh-urban-farming",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "medium",
+        "representationRisk": "medium",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "low",
+        "titleCueRisk": "medium",
+        "notes": "The passage remains self-contained for heading matching, but several broad causal statements combine supported ideas with unverified details. Candidate sources directly support school gardens as educational tools and urban-soil contamination concerns; land scarcity, transport and packaging, landfill diversion, roof loads and seasonal water access receive incomplete or no direct support."
+      },
+      "questions": [
+        {
+          "questionId": "mh-urban-farming-a",
+          "paragraphId": "a",
+          "selectedHeadingId": "i",
+          "globalEvidenceScope": "Paragraph A",
+          "mainIdeaStatement": "Urban growers respond to scarce open land by turning small, overlooked urban sites into productive spaces.",
+          "supportingQuotes": [
+            "cities have little unused land",
+            "organisers use rooftops, school courtyards, vacant lots and narrow strips beside public buildings"
+          ],
+          "paraphraseMap": {
+            "mapping": "Using rooftops and other small, unconventional sites is the project's practical response to limited urban land."
+          },
+          "closestCompetingHeadingId": "viii",
+          "competitorFailure": "The sentence about harvest size concedes a limitation but introduces no debate about evaluation; the paragraph is organized around finding space.",
+          "ambiguity": "none",
+          "reasoning": "Low yields are subordinate to the explicit opening problem of scarce land and the list of spatial adaptations. Heading i covers the explicit space constraint, the alternative sites used in response and the concluding transformation of overlooked corners."
+        },
+        {
+          "questionId": "mh-urban-farming-b",
+          "paragraphId": "b",
+          "selectedHeadingId": "vii",
+          "globalEvidenceScope": "Paragraph B",
+          "mainIdeaStatement": "Producing food near consumers can reduce transport, packaging and landfill waste.",
+          "supportingQuotes": [
+            "environmental value of growing food close to consumers",
+            "require less transport and packaging",
+            "reduce the amount of organic waste sent to landfill"
+          ],
+          "paraphraseMap": {
+            "mapping": "Local production shortens the route from grower to consumer, yielding the stated environmental benefits in transport, packaging and waste."
+          },
+          "closestCompetingHeadingId": "i",
+          "competitorFailure": "Physical proximity is mentioned, but no shortage of land or adaptation of space appears; proximity is used to explain environmental impact.",
+          "ambiguity": "none",
+          "reasoning": "The environmental frame is explicit and covers both the tomato example and composting. Heading vii unifies the local-food transport example and the connected composting benefit under the paragraph's explicit environmental frame."
+        },
+        {
+          "questionId": "mh-urban-farming-c",
+          "paragraphId": "c",
+          "selectedHeadingId": "iii",
+          "globalEvidenceScope": "Paragraph C",
+          "mainIdeaStatement": "School gardens work as cross-curricular classrooms for science, writing, food knowledge and citizenship rather than as isolated gardening activities.",
+          "supportingQuotes": [
+            "gardens can become outdoor classrooms",
+            "supports science, language and citizenship lessons rather than sitting outside the curriculum"
+          ],
+          "paraphraseMap": {
+            "mapping": "The garden's value extends from growing plants into several academic and civic learning domains."
+          },
+          "closestCompetingHeadingId": "iv",
+          "competitorFailure": "Citizenship lessons may concern community life, but the paragraph says nothing about resident ownership, trust or shared project rules.",
+          "ambiguity": "none",
+          "reasoning": "Every example is an educational use and the conclusion explicitly integrates the garden into the curriculum. Heading iii captures the outdoor-classroom frame, the varied learning activities and the conclusion that gardens should support multiple curriculum areas."
+        },
+        {
+          "questionId": "mh-urban-farming-d",
+          "paragraphId": "d",
+          "selectedHeadingId": "iv",
+          "globalEvidenceScope": "Paragraph D",
+          "mainIdeaStatement": "Urban gardens are more durable when residents help make decisions and consequently feel responsible for the project.",
+          "supportingQuotes": [
+            "more likely to last when residents feel they have shaped the rules",
+            "Shared decisions about opening hours, crop choices and maintenance can create a stronger sense of responsibility."
+          ],
+          "paraphraseMap": {
+            "mapping": "Listening to neighbours and sharing decisions establish local ownership and trust, which the paragraph links to durability and responsibility."
+          },
+          "closestCompetingHeadingId": "ix",
+          "competitorFailure": "Maintenance responsibility might involve voluntary effort, but volunteers and risks arising from their use are never discussed.",
+          "ambiguity": "none",
+          "reasoning": "The outside-organization contrast and repeated emphasis on residents' decisions directly support heading iv. Heading iv explains the full causal sequence: resident participation produces ownership and responsibility, which makes the project more durable."
+        },
+        {
+          "questionId": "mh-urban-farming-e",
+          "paragraphId": "e",
+          "selectedHeadingId": "viii",
+          "globalEvidenceScope": "Paragraph E",
+          "mainIdeaStatement": "Crop weight alone undervalues small urban farms because their education, social and demonstration benefits may matter even when output is modest.",
+          "supportingQuotes": [
+            "counting kilograms of produce",
+            "Critics argue that this can miss the point.",
+            "yet it may still provide education, social connection and visible evidence that food systems can be changed locally"
+          ],
+          "paraphraseMap": {
+            "mapping": "The supporters-versus-critics structure directly debates yield as a measure and supplies several non-yield outcomes that a narrow metric misses."
+          },
+          "closestCompetingHeadingId": "iii",
+          "competitorFailure": "Education is only one of three alternative benefits listed; the larger point is that yield should not be the sole standard of success.",
+          "ambiguity": "none",
+          "reasoning": "Heading iii captures one supporting detail, whereas heading viii captures the explicit evaluative debate and all examples. Heading viii matches the explicit dispute over kilograms as a success measure and embraces all three alternative benefits in the conclusion."
+        },
+        {
+          "questionId": "mh-urban-farming-f",
+          "paragraphId": "f",
+          "selectedHeadingId": "v",
+          "globalEvidenceScope": "Paragraph F",
+          "mainIdeaStatement": "Contamination, structural capacity and water constraints mean urban farms need testing, permission and maintenance planning.",
+          "supportingQuotes": [
+            "There are also practical limits.",
+            "Soil may be contaminated, roofs may not support heavy containers, and water access can be unreliable in summer.",
+            "start with testing, permissions and maintenance plans"
+          ],
+          "paraphraseMap": {
+            "mapping": "The physical constraints are technical limits, and the prescribed tests, approvals and maintenance arrangements constitute realistic planning."
+          },
+          "closestCompetingHeadingId": "ix",
+          "competitorFailure": "The warning that enthusiasm is insufficient might superficially suggest volunteer risk, but no volunteer model is mentioned and all stated obstacles are site or infrastructure constraints.",
+          "ambiguity": "none",
+          "reasoning": "The heading mirrors both halves of the paragraph: practical constraints followed by planning responses. Heading v precisely covers the paragraph's structure: three practical constraints followed by the testing, permissions and plans needed to address them."
+        }
+      ],
+      "factualClaims": [
+        {
+          "claim": "Urban farming projects often begin with a practical problem: cities have little unused land.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "urban-epa-brownfields-agriculture",
+            "urban-fao-healthy-soils"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "urban-epa-brownfields-agriculture",
+              "locator": "What is Urban Agriculture?, paragraphs 4-9",
+              "evidenceSummary": "EPA documents urban agriculture on rooftops, balconies, vacant lots, parks and other constrained city sites, but does not state that little unused land is the frequent starting problem for projects."
+            },
+            {
+              "evidenceId": "urban-fao-healthy-soils",
+              "locator": "How soils are shaping our cities today and tomorrow; Soils provide food for urban and peri-urban population",
+              "evidenceSummary": "FAO describes expanding cities, pressure on urban systems, compact growth and rooftop farms, but does not directly quantify unused land or project origins."
+            }
+          ],
+          "note": "The spatial adaptation is documented; the universalized causal framing about how projects often begin is not."
+        },
+        {
+          "claim": "A tomato grown a few blocks away may require less transport and packaging than one shipped across a continent.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "urban-fao-healthy-soils"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "urban-fao-healthy-soils",
+              "locator": "Soils provide food for urban and peri-urban population",
+              "evidenceSummary": "FAO says urban food can remain available and accessible to urban markets, but it gives no transport or packaging comparison and no tomato example."
+            }
+          ],
+          "note": "The candidate source does not directly establish the claimed supply-chain comparison."
+        },
+        {
+          "claim": "Composting programmes connected to gardens can also reduce the amount of organic waste sent to landfill.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "urban-fao-healthy-soils"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "urban-fao-healthy-soils",
+              "locator": "Soil health is a good driver for better city waste management",
+              "evidenceSummary": "FAO directly describes safely separating organic materials, processing them into compost and applying them to urban farms as better city waste management, but it does not explicitly measure or mention landfill diversion."
+            }
+          ],
+          "note": "The compost-to-urban-farm pathway is supported, while the stated landfill effect is an unquantified inference."
+        },
+        {
+          "claim": "In schools, gardens can become outdoor classrooms.",
+          "assessment": "supported",
+          "evidenceIds": [
+            "urban-usda-school-gardens"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "urban-usda-school-gardens",
+              "locator": "School Gardens: Using Gardens to Grow Healthy Habits in Cafeterias, Classrooms and Communities, body paragraph beginning ‘School gardens have been around’",
+              "evidenceSummary": "USDA states directly that school districts use school gardens as educational tools in the classroom, supporting the outdoor-classroom formulation."
+            }
+          ],
+          "note": "The claim is a faithful concise paraphrase of the institutional source."
+        },
+        {
+          "claim": "Soil may be contaminated, roofs may not support heavy containers, and water access can be unreliable in summer.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "urban-epa-brownfields-agriculture",
+            "urban-fao-healthy-soils"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "urban-epa-brownfields-agriculture",
+              "locator": "Why should I test for environmental contaminants?; What contaminants should I test for at my site?",
+              "evidenceSummary": "EPA directly documents potential soil contamination, exposure risks and the need for testing in urban agriculture. It does not address roof load capacity or unreliable summer water access."
+            },
+            {
+              "evidenceId": "urban-fao-healthy-soils",
+              "locator": "Soils can reduce pollution, extreme weather events and temperatures in cities",
+              "evidenceSummary": "FAO states that urban soils can become polluted and require identification, management and restoration, but provides no direct support for the roof-load and water-access clauses."
+            }
+          ],
+          "note": "One of the three technical limits is strongly supported; the other two remain untraced in the candidate evidence."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-headings:mh-night-trains",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "high",
+        "representationRisk": "medium",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "low",
+        "titleCueRisk": "high",
+        "notes": "The matching decisions remain self-contained and unique, but the candidate evidence directly supports only the general night-train revival and rail's GHG advantage. Claims about several operators, exact cross-network scheduling effects and fare or cost mechanisms go beyond the directly reviewed evidence, increasing factual risk despite low prior-knowledge dependence."
+      },
+      "questions": [
+        {
+          "questionId": "mh-night-trains-a",
+          "paragraphId": "a",
+          "selectedHeadingId": "i",
+          "globalEvidenceScope": "Paragraph A",
+          "mainIdeaStatement": "Previously reduced night-train services are being revived because some travellers now value lower-emission travel and avoiding early airport transfers.",
+          "supportingQuotes": [
+            "Recently, several operators have announced new overnight services.",
+            "The revival reflects a shift in passenger priorities"
+          ],
+          "paraphraseMap": {
+            "mapping": "New overnight routes are the revived service, and the newly valued environmental and convenience benefits are the changing priorities behind it."
+          },
+          "closestCompetingHeadingId": "vi",
+          "competitorFailure": "Lower emissions are one reason for the revival, but the paragraph also emphasizes avoiding early airport transfers and frames both as a broader shift in priorities.",
+          "ambiguity": "none",
+          "reasoning": "Heading vi fits one substantial detail, but heading i uniquely covers the decline-revival history and both stated passenger priorities. Heading i uniquely covers the paragraph's complete decline-to-revival arc and both environmental and convenience changes in passenger priorities."
+        },
+        {
+          "questionId": "mh-night-trains-b",
+          "paragraphId": "b",
+          "selectedHeadingId": "vi",
+          "globalEvidenceScope": "Paragraph B",
+          "mainIdeaStatement": "Night trains appeal to lower-impact travellers because their carbon emissions can be far below those of equivalent flights.",
+          "supportingQuotes": [
+            "compare night trains with flights in terms of carbon emissions",
+            "A rail journey can produce far less pollution than a plane on the same route",
+            "this difference is a major part of the appeal"
+          ],
+          "paraphraseMap": {
+            "mapping": "The lower-emissions comparison is the environmental argument, and its role in passenger appeal explains renewed interest."
+          },
+          "closestCompetingHeadingId": "i",
+          "competitorFailure": "Reduced-footprint travel is a changing priority, but this paragraph does not discuss the service's disappearance and revival; it develops the environmental case alone.",
+          "ambiguity": "none",
+          "reasoning": "The paragraph's exclusive focus on carbon and pollution makes heading vi more precise than the broader heading i. Heading vi accounts for the complete flight-versus-rail emissions comparison and the conclusion that this environmental difference drives passenger appeal."
+        },
+        {
+          "questionId": "mh-night-trains-c",
+          "paragraphId": "c",
+          "selectedHeadingId": "iv",
+          "globalEvidenceScope": "Paragraph C",
+          "mainIdeaStatement": "Overnight trains crossing national rail systems require difficult coordination because rules, maintenance windows, signalling and delays interact across borders.",
+          "supportingQuotes": [
+            "Trains may cross several national networks",
+            "each with its own track access rules, maintenance windows and signalling systems",
+            "A delay in one country can also affect morning commuter services in another"
+          ],
+          "paraphraseMap": {
+            "mapping": "Maintenance windows and delays affecting other scheduled services are timetabling problems, and the multiple national networks make them cross-border challenges."
+          },
+          "closestCompetingHeadingId": "i",
+          "competitorFailure": "The paragraph concerns the operational feasibility of a route, not passenger priorities or why the service has returned.",
+          "ambiguity": "none",
+          "reasoning": "Heading iv directly unifies every operational example; no other heading covers international scheduling coordination. Heading iv unifies the national-network rules, maintenance windows, signalling differences and cross-border delay consequences as one coordination problem."
+        },
+        {
+          "questionId": "mh-night-trains-d",
+          "paragraphId": "d",
+          "selectedHeadingId": "iii",
+          "globalEvidenceScope": "Paragraph D",
+          "mainIdeaStatement": "Operators must balance different passenger expectations for overnight comfort against the capacity consequences of each accommodation type.",
+          "supportingQuotes": [
+            "Passenger expectations can be difficult to balance.",
+            "Some people imagine a hotel-like cabin, while others mainly want a clean, safe place to sleep.",
+            "each choice affects both comfort and capacity"
+          ],
+          "paraphraseMap": {
+            "mapping": "The competing visions of accommodation are comfort expectations, while choosing the mix of compartments, couchettes and seats is how operators manage them."
+          },
+          "closestCompetingHeadingId": "viii",
+          "competitorFailure": "Capacity can affect commercial outcomes, but the paragraph neither mentions prices nor identifies affordability or access by customer group; it focuses on comfort and capacity design.",
+          "ambiguity": "none",
+          "reasoning": "The opening and closing sentences explicitly frame the issue as balancing comfort expectations. Heading iii captures the contrasting comfort expectations and the operator's resulting need to choose an accommodation mix that balances comfort with capacity."
+        },
+        {
+          "questionId": "mh-night-trains-e",
+          "paragraphId": "e",
+          "selectedHeadingId": "viii",
+          "globalEvidenceScope": "Paragraph E",
+          "mainIdeaStatement": "Night-train pricing must reconcile affordability for families and students with the operator's need to cover substantial service costs.",
+          "supportingQuotes": [
+            "If a sleeper ticket costs much more than a flight, families and students may not see it as a realistic option.",
+            "Subsidies, early-booking fares and shared compartments can help",
+            "operators still need enough revenue to cover staff, cleaning and rolling stock"
+          ],
+          "paraphraseMap": {
+            "mapping": "The paragraph connects ticket price to access for particular travellers and weighs price-reduction mechanisms against financial viability."
+          },
+          "closestCompetingHeadingId": "iii",
+          "competitorFailure": "Shared compartments and cleaning touch on the travel experience, but they appear as pricing or cost variables; no competing comfort expectations are discussed.",
+          "ambiguity": "none",
+          "reasoning": "Price is named as the obstacle and both passenger affordability and operator revenue are developed around it. Heading viii covers both sides of the paragraph's pricing problem: whether key passenger groups can afford the service and whether operators can cover its costs."
+        },
+        {
+          "questionId": "mh-night-trains-f",
+          "paragraphId": "f",
+          "selectedHeadingId": "ix",
+          "globalEvidenceScope": "Paragraph F",
+          "mainIdeaStatement": "Advertising reframes overnight rail travel as an enjoyable and meaningful part of a holiday rather than merely transport between destinations.",
+          "supportingQuotes": [
+            "Marketing teams increasingly present the overnight journey as more than transport.",
+            "This message turns the train into part of the holiday rather than a pause before it begins."
+          ],
+          "paraphraseMap": {
+            "mapping": "Presenting the ride as more than transport and as part of the holiday is marketing the journey itself as part of the trip."
+          },
+          "closestCompetingHeadingId": "i",
+          "competitorFailure": "The campaign may respond to traveller preferences, but the paragraph does not explain the service's revival; it describes a specific promotional framing.",
+          "ambiguity": "none",
+          "reasoning": "The heading is effectively a concise paraphrase of both the opening claim and final sentence. Heading ix directly paraphrases the opening marketing claim, the advertisement example and the final redefinition of the train as part of the holiday."
+        }
+      ],
+      "factualClaims": [
+        {
+          "claim": "Recently, several operators have announced new overnight services.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "night-era-sleeper-authorisation"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "night-era-sleeper-authorisation",
+              "locator": "Press-release summary; body paragraph beginning ‘The Vehicle Authorisation concerns’",
+              "evidenceSummary": "ERA documents authorisation of new-generation sleeper coaches for ÖBB Nightjet, describes night rail trips as returning and calls the rolling stock a step toward revival. It does not document announcements by several operators."
+            }
+          ],
+          "note": "The revival and one concrete operator are supported, but the plural operator-announcement claim is not."
+        },
+        {
+          "claim": "A rail journey can produce far less pollution than a plane on the same route, especially when the electricity supply is relatively clean.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "night-eea-rail-low-carbon"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "night-eea-rail-low-carbon",
+              "locator": "Key messages; Trains are the best choice for passenger travel",
+              "evidenceSummary": "EEA reports rail passenger GHG emissions per passenger-kilometre as a fraction of most modes, identifies flights among the least efficient, and links rail improvement to electrification and a less carbon-intensive electricity mix. The figures are aggregate EU modal results rather than a same-route comparison, and they concern GHG emissions rather than pollution generally."
+            }
+          ],
+          "note": "The environmental direction and electricity-mix qualification are supported, but ‘same route’ and the broader word ‘pollution’ exceed the source's measured scope."
+        },
+        {
+          "claim": "Trains may cross several national networks, each with its own track access rules, maintenance windows and signalling systems.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "night-eu-cross-border-rail",
+            "night-era-sleeper-authorisation"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "night-eu-cross-border-rail",
+              "locator": "Executive summary",
+              "evidenceSummary": "The European Commission publication explicitly studies long-distance cross-border rail and obstacles to establishing and operating services, but the displayed executive summary does not enumerate track access rules, maintenance windows or signalling systems."
+            },
+            {
+              "evidenceId": "night-era-sleeper-authorisation",
+              "locator": "Body paragraphs beginning ‘The Vehicle Authorisation concerns’ and ‘The authorisation granted today’; About the EU Agency for Railways",
+              "evidenceSummary": "ERA documents operation across Germany, Italy, Austria and Switzerland and discusses interoperability, harmonising rules and multi-country authorisations, but not the full three-part list in the claim."
+            }
+          ],
+          "note": "Cross-border network and rule complexity is supported in substance; maintenance-window and signalling details are not directly established by the reviewed pages."
+        },
+        {
+          "claim": "A delay in one country can also affect morning commuter services in another, so coordination matters as much as demand.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "night-eu-cross-border-rail",
+            "night-era-sleeper-authorisation"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "night-eu-cross-border-rail",
+              "locator": "Executive summary",
+              "evidenceSummary": "The publication page confirms that operational obstacles to cross-border rail are a study topic, but it gives no delay-propagation example involving commuter services in another country and no coordination-versus-demand comparison."
+            },
+            {
+              "evidenceId": "night-era-sleeper-authorisation",
+              "locator": "Body; About the EU Agency for Railways",
+              "evidenceSummary": "ERA discusses seamless cross-border services, interoperability and harmonised rules, but not the asserted downstream effect of a delay on another country's morning commuter timetable."
+            }
+          ],
+          "note": "The precise operational scenario and evaluative conclusion are not directly traceable in the candidate sources."
+        },
+        {
+          "claim": "Subsidies, early-booking fares and shared compartments can help, but operators still need enough revenue to cover staff, cleaning and rolling stock.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "night-eu-cross-border-rail",
+            "night-era-sleeper-authorisation"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "night-eu-cross-border-rail",
+              "locator": "Executive summary",
+              "evidenceSummary": "The publication page says the underlying study covers obstacles and potential actions for cross-border rail, but the visible source text does not state the listed fare mechanisms or operating-cost components."
+            },
+            {
+              "evidenceId": "night-era-sleeper-authorisation",
+              "locator": "Executive Director quotation; body paragraph beginning ‘The Vehicle Authorisation concerns’",
+              "evidenceSummary": "ERA describes potential commercial viability and the importance of suitable rolling stock, but does not document subsidies, early-booking fares, shared compartments or revenue needed for staff and cleaning."
+            }
+          ],
+          "note": "The commercial theme is adjacent, but none of the specific mechanisms or cost claims is directly supported by the reviewed candidate pages."
+        }
+      ]
+    }
+  ]
+}

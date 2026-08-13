@@ -1,0 +1,505 @@
+{
+  "schemaVersion": "ielts-reading-note-completion-expert-first-pass.v1",
+  "reviewer": {
+    "reviewerRunId": "f02b10-note-completion-clean-review-20260811T160856Z",
+    "reviewedAt": "2026-08-11T16:12:49Z",
+    "blindPacketSha256": "4654dd3245bc5d7dc550556908027af3220b28f3b354602e8328a0df12c43721",
+    "sourceContext": "blind-review-packet-only",
+    "humanSignature": false,
+    "notes": "Independent first-pass adjudication using only the frozen blind packet. Each selected answer and competitor is a literal whole-token passage span within the two-word limit."
+  },
+  "records": [
+    {
+      "assetId": "formative:note-completion:note-mobile-libraries",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "wordLimitFitness": "fit",
+        "questionOrderRisk": "high",
+        "promptCueRisk": "medium",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "low",
+        "notes": "The passage and notes are coherent, and the six cards form a readable three-part note. However, all answers proceed in strict passage order, cover nearly the whole text, and frequently reproduce nearby wording, which reduces authentic IELTS search and discrimination."
+      },
+      "questions": [
+        {
+          "questionId": "note-mobile-libraries-01",
+          "selectedAnswer": "expensive",
+          "normalizedSelectedAnswer": "expensive",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Used where permanent branches are too expensive to maintain.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "expensive",
+            "start": 138,
+            "end": 147
+          },
+          "evidenceQuotes": [
+            "In several rural regions, mobile libraries have become a practical way to keep reading services available when permanent branches are too expensive to maintain."
+          ],
+          "closestCompetingAnswer": "available",
+          "closestCompetitorPassageSpan": {
+            "text": "available",
+            "start": 96,
+            "end": 105
+          },
+          "competitorFailure": "Available fits the adjective slot but reverses the causal meaning: availability is the service goal, not the reason permanent branches cannot be maintained.",
+          "ambiguity": "none",
+          "reasoning": "The passage repeats the complete clause permanent branches are too expensive to maintain, so the literal adjective expensive is uniquely supported."
+        },
+        {
+          "questionId": "note-mobile-libraries-02",
+          "selectedAnswer": "community halls",
+          "normalizedSelectedAnswer": "community halls",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "Vans take reading materials to schools, markets and community halls.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "community halls",
+            "start": 289,
+            "end": 304
+          },
+          "evidenceQuotes": [
+            "Instead of asking residents to travel long distances, vans carry books, magazines and digital materials to schools, markets and community halls on a regular schedule."
+          ],
+          "closestCompetingAnswer": "health centres",
+          "closestCompetitorPassageSpan": {
+            "text": "health centres",
+            "start": 1363,
+            "end": 1377
+          },
+          "competitorFailure": "Health centres is a later partnership item, not the destination completing the passage's delivery list after schools and markets.",
+          "ambiguity": "none",
+          "reasoning": "The note preserves the exact destination sequence from the first paragraph, making community halls the only supported continuation."
+        },
+        {
+          "questionId": "note-mobile-libraries-03",
+          "selectedAnswer": "market days",
+          "normalizedSelectedAnswer": "market days",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "In farming areas, visits may happen after market days.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "market days",
+            "start": 442,
+            "end": 453
+          },
+          "evidenceQuotes": [
+            "In farming areas, visits are often arranged after market days, when families are already near a central meeting place."
+          ],
+          "closestCompetingAnswer": "early mornings",
+          "closestCompetitorPassageSpan": {
+            "text": "early mornings",
+            "start": 552,
+            "end": 566
+          },
+          "competitorFailure": "Early mornings belongs to the contrasting coastal-town schedule and is something that schedule avoids, not the farming-area event after which visits occur.",
+          "ambiguity": "none",
+          "reasoning": "The farming-area sentence explicitly locates visits after market days and the two-word span completes the note naturally."
+        },
+        {
+          "questionId": "note-mobile-libraries-04",
+          "selectedAnswer": "timetable",
+          "normalizedSelectedAnswer": "timetable",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "A predictable timetable can be as important as collection size.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "timetable",
+            "start": 641,
+            "end": 650
+          },
+          "evidenceQuotes": [
+            "Librarians say that a predictable timetable matters as much as the size of the collection because people need to know when the service will arrive."
+          ],
+          "closestCompetingAnswer": "schedule",
+          "closestCompetitorPassageSpan": {
+            "text": "schedule",
+            "start": 533,
+            "end": 541
+          },
+          "competitorFailure": "Schedule is a close semantic substitute, but the comparative claim in the note directly condenses the later sentence containing predictable timetable and the collection-size comparison.",
+          "ambiguity": "minor",
+          "reasoning": "Timetable has exact local support in the sentence paraphrased by the note; schedule remains superficially plausible because it occurs nearby and is synonymous."
+        },
+        {
+          "questionId": "note-mobile-libraries-05",
+          "selectedAnswer": "public offices",
+          "normalizedSelectedAnswer": "public offices",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "Staff may help residents search for courses or contact public offices.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "public offices",
+            "start": 1029,
+            "end": 1043
+          },
+          "evidenceQuotes": [
+            "Staff use the connection to help residents download forms, search for courses or contact public offices."
+          ],
+          "closestCompetingAnswer": "visiting librarians",
+          "closestCompetitorPassageSpan": {
+            "text": "visiting librarians",
+            "start": 1137,
+            "end": 1156
+          },
+          "competitorFailure": "Visiting librarians can grammatically be contacted, but the phrase belongs to the separate description of children's activities and does not complete the enumerated support action.",
+          "ambiguity": "none",
+          "reasoning": "The note reproduces the passage's coordinated actions search for courses or contact public offices, providing exact and local support."
+        },
+        {
+          "questionId": "note-mobile-libraries-06",
+          "selectedAnswer": "volunteer groups",
+          "normalizedSelectedAnswer": "volunteer groups",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "Programmes often need partnerships with schools, health centres and volunteer groups.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "volunteer groups",
+            "start": 1382,
+            "end": 1398
+          },
+          "evidenceQuotes": [
+            "Successful programmes therefore build partnerships with schools, health centres and volunteer groups."
+          ],
+          "closestCompetingAnswer": "public offices",
+          "closestCompetitorPassageSpan": {
+            "text": "public offices",
+            "start": 1029,
+            "end": 1043
+          },
+          "competitorFailure": "Public offices is a grammatically plausible institution, but it is named as a resident contact rather than as the final member of the partnerships list.",
+          "ambiguity": "none",
+          "reasoning": "Volunteer groups is the exact final item in the partnership list repeated by the note."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:note-completion:note-seed-banks",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "wordLimitFitness": "fit",
+        "questionOrderRisk": "high",
+        "promptCueRisk": "medium",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "low",
+        "notes": "The notes form a coherent three-part summary and every target respects the limit. The six answers nevertheless follow passage order, extend across all four paragraphs, and are mostly lifted from nearly identical local clauses, so the bank is less demanding than a strong IELTS note-completion set."
+      },
+      "questions": [
+        {
+          "questionId": "note-seed-banks-01",
+          "selectedAnswer": "harvest",
+          "normalizedSelectedAnswer": "harvest",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Farmers can borrow seeds and return them after harvest.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "harvest",
+            "start": 99,
+            "end": 106
+          },
+          "evidenceQuotes": [
+            "Community seed banks are local collections of seeds that farmers can borrow, grow and return after harvest."
+          ],
+          "closestCompetingAnswer": "planting",
+          "closestCompetitorPassageSpan": {
+            "text": "planting",
+            "start": 1028,
+            "end": 1036
+          },
+          "competitorFailure": "Planting fits after grammatically but occurs in the later seed-testing procedure and is not when borrowed seeds are returned.",
+          "ambiguity": "none",
+          "reasoning": "The opening sentence states the borrowing cycle verbatim and ends it with after harvest."
+        },
+        {
+          "questionId": "note-seed-banks-02",
+          "selectedAnswer": "drought",
+          "normalizedSelectedAnswer": "drought",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Local varieties may resist pests or tolerate drought.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "drought",
+            "start": 317,
+            "end": 324
+          },
+          "evidenceQuotes": [
+            "Many of these varieties have been selected over generations for taste, drought tolerance or resistance to local pests."
+          ],
+          "closestCompetingAnswer": "poor soil",
+          "closestCompetitorPassageSpan": {
+            "text": "poor soil",
+            "start": 654,
+            "end": 663
+          },
+          "competitorFailure": "Poor soil is a grammatically plausible stress, but it appears in the documentation explanation; the passage's paired variety traits are drought tolerance and pest resistance.",
+          "ambiguity": "none",
+          "reasoning": "The note converts drought tolerance into tolerate drought while preserving the passage's contrast with pest resistance."
+        },
+        {
+          "questionId": "note-seed-banks-03",
+          "selectedAnswer": "conditions",
+          "normalizedSelectedAnswer": "conditions",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Volunteers record each seed name, collection place and growing conditions.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "conditions",
+            "start": 496,
+            "end": 506
+          },
+          "evidenceQuotes": [
+            "Volunteers record the name of each seed, the place where it was collected and the conditions in which it usually grows well."
+          ],
+          "closestCompetingAnswer": "stages",
+          "closestCompetitorPassageSpan": {
+            "text": "stages",
+            "start": 712,
+            "end": 718
+          },
+          "competitorFailure": "Growing stages is grammatical, but stages are represented in photographs rather than listed among the information volunteers record for each seed.",
+          "ambiguity": "none",
+          "reasoning": "Growing conditions is the compact nominalisation of the recorded conditions in which a seed grows well."
+        },
+        {
+          "questionId": "note-seed-banks-04",
+          "selectedAnswer": "identify",
+          "normalizedSelectedAnswer": "identify",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Photos can help younger farmers identify plants correctly.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "identify",
+            "start": 742,
+            "end": 750
+          },
+          "evidenceQuotes": [
+            "Some banks also photograph plants at different stages so younger farmers can identify them correctly."
+          ],
+          "closestCompetingAnswer": "photograph",
+          "closestCompetitorPassageSpan": {
+            "text": "photograph",
+            "start": 681,
+            "end": 691
+          },
+          "competitorFailure": "Photograph forms a grammatical sentence, but banks create the photos by photographing plants; the photos then help younger farmers identify them.",
+          "ambiguity": "none",
+          "reasoning": "The pronoun them in the passage resolves to plants, so identify is the exact verb required by the compressed note."
+        },
+        {
+          "questionId": "note-seed-banks-05",
+          "selectedAnswer": "cool",
+          "normalizedSelectedAnswer": "cool",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Seeds need protection from insects and should be kept dry and cool.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "cool",
+            "start": 822,
+            "end": 826
+          },
+          "evidenceQuotes": [
+            "Seeds must be kept dry, cool and protected from insects."
+          ],
+          "closestCompetingAnswer": "protected",
+          "closestCompetitorPassageSpan": {
+            "text": "protected",
+            "start": 831,
+            "end": 840
+          },
+          "competitorFailure": "Protected fits the coordination grammatically, but it redundantly repeats the note's preceding protection from insects rather than supplying the omitted separate condition cool.",
+          "ambiguity": "minor",
+          "reasoning": "The note has already recast protected from insects before the blank, leaving dry and cool as the unrepeated coordinated storage conditions."
+        },
+        {
+          "questionId": "note-seed-banks-06",
+          "selectedAnswer": "beans",
+          "normalizedSelectedAnswer": "beans",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Cooks may show recipes using less common grains or beans.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "beans",
+            "start": 1320,
+            "end": 1325
+          },
+          "evidenceQuotes": [
+            "Farmers compare harvest results, school groups learn why crop diversity matters and cooks demonstrate recipes using less common grains or beans."
+          ],
+          "closestCompetingAnswer": "seeds",
+          "closestCompetitorPassageSpan": {
+            "text": "seeds",
+            "start": 46,
+            "end": 51
+          },
+          "competitorFailure": "Seeds is broadly compatible with recipes, but it is not the second food item in the passage's explicit less common grains or beans list.",
+          "ambiguity": "none",
+          "reasoning": "The note closely repeats the recipe clause, whose coordinated second item is beans."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:note-completion:note-night-libraries",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "wordLimitFitness": "fit",
+        "questionOrderRisk": "high",
+        "promptCueRisk": "high",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "low",
+        "notes": "The six cards read as a coherent service, pilot and rules note, but targets run in strict passage order across the full text and largely mirror source syntax. The first blank is exactly guessable as home without reading, and several nearby nouns create shallow lexical rather than deeper reading decisions."
+      },
+      "questions": [
+        {
+          "questionId": "note-night-libraries-01",
+          "selectedAnswer": "home",
+          "normalizedSelectedAnswer": "home",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Evening rooms support students without quiet places to work at home.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "home",
+            "start": 124,
+            "end": 128
+          },
+          "evidenceQuotes": [
+            "Some public libraries have begun opening selected rooms in the evening for students who do not have quiet places to work at home."
+          ],
+          "closestCompetingAnswer": "nearby schools",
+          "closestCompetitorPassageSpan": {
+            "text": "nearby schools",
+            "start": 1390,
+            "end": 1404
+          },
+          "competitorFailure": "Nearby schools can follow work at grammatically, but the phrase occurs in a later cooperation strategy and does not describe the students' lack of quiet study space.",
+          "ambiguity": "none",
+          "reasoning": "The opening sentence supplies work at home verbatim; despite being uniquely guessable from the prompt, it is also unequivocally passage-supported."
+        },
+        {
+          "questionId": "note-night-libraries-02",
+          "selectedAnswer": "wireless internet",
+          "normalizedSelectedAnswer": "wireless internet",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "Visitors may use desks, power sockets and wireless internet.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "wireless internet",
+            "start": 254,
+            "end": 271
+          },
+          "evidenceQuotes": [
+            "In many cases, visitors can use desks, power sockets and wireless internet, but borrowing counters, children's areas and archives remain closed."
+          ],
+          "closestCompetingAnswer": "archives",
+          "closestCompetitorPassageSpan": {
+            "text": "archives",
+            "start": 318,
+            "end": 326
+          },
+          "competitorFailure": "Archives fits the noun list grammatically but belongs to the contrasting list of facilities that remain closed, not those visitors may use.",
+          "ambiguity": "none",
+          "reasoning": "Wireless internet is the exact third item in the passage's list of resources visitors can use."
+        },
+        {
+          "questionId": "note-night-libraries-03",
+          "selectedAnswer": "security",
+          "normalizedSelectedAnswer": "security",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Staff check whether extra security is required near entrances.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "security",
+            "start": 501,
+            "end": 509
+          },
+          "evidenceQuotes": [
+            "Staff count how many people arrive, which hours are busiest and whether extra security is needed near entrances."
+          ],
+          "closestCompetingAnswer": "lighting",
+          "closestCompetitorPassageSpan": {
+            "text": "lighting",
+            "start": 700,
+            "end": 708
+          },
+          "competitorFailure": "Extra lighting near entrances is plausible and lighting is a pilot issue, but the passage explicitly says staff check whether extra security is needed near entrances; lighting is described outside the building.",
+          "ambiguity": "minor",
+          "reasoning": "Security is supported by an almost exact clause, while lighting gains only contextual plausibility from the following pilot outcome."
+        },
+        {
+          "questionId": "note-night-libraries-04",
+          "selectedAnswer": "building",
+          "normalizedSelectedAnswer": "building",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "The trial can reveal poor lighting outside the building.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "building",
+            "start": 721,
+            "end": 729
+          },
+          "evidenceQuotes": [
+            "A small pilot also reveals practical issues, such as poor lighting outside the building or a shortage of cleaning staff after closing time."
+          ],
+          "closestCompetingAnswer": "entrances",
+          "closestCompetitorPassageSpan": {
+            "text": "entrances",
+            "start": 525,
+            "end": 534
+          },
+          "competitorFailure": "Entrances is nearby and location-compatible, but it is plural and therefore fails the note's singular phrase outside the; the cited lighting clause names the building.",
+          "ambiguity": "none",
+          "reasoning": "Building is the literal location in the pilot's poor-lighting example and fits the singular determiner."
+        },
+        {
+          "questionId": "note-night-libraries-05",
+          "selectedAnswer": "areas",
+          "normalizedSelectedAnswer": "areas",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Clear signs show which areas are open.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "areas",
+            "start": 899,
+            "end": 904
+          },
+          "evidenceQuotes": [
+            "Clear signs reduce confusion about which areas are open, while glass walls allow staff to monitor rooms without interrupting students."
+          ],
+          "closestCompetingAnswer": "rooms",
+          "closestCompetitorPassageSpan": {
+            "text": "rooms",
+            "start": 50,
+            "end": 55
+          },
+          "competitorFailure": "Rooms produces a natural summary and the passage says selected rooms open in the evening, but the clear-sign sentence itself specifies which areas are open.",
+          "ambiguity": "minor",
+          "reasoning": "Areas is the exact noun in the clause directly paraphrased by the note; rooms remains a nearby semantic alternative from the service description."
+        },
+        {
+          "questionId": "note-night-libraries-06",
+          "selectedAnswer": "permission",
+          "normalizedSelectedAnswer": "permission",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Some younger visitors may need parental permission.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "permission",
+            "start": 1179,
+            "end": 1189
+          },
+          "evidenceQuotes": [
+            "Younger students may need parental permission, and libraries must decide how to respond if visitors use the space mainly for socialising."
+          ],
+          "closestCompetingAnswer": "rules",
+          "closestCompetitorPassageSpan": {
+            "text": "rules",
+            "start": 1346,
+            "end": 1351
+          },
+          "competitorFailure": "Parental rules is a possible phrase but the passage's rules are library management measures; only permission is explicitly modified by parental and needed by younger students.",
+          "ambiguity": "none",
+          "reasoning": "The note closely reproduces the policy sentence, with younger visitors paraphrasing younger students and permission unchanged."
+        }
+      ]
+    }
+  ]
+}

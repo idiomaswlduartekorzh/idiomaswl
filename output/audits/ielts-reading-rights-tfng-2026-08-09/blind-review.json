@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "ielts-reading-tfng-blind-review.v1",
+  "generatedAt": "2026-08-09T00:00:00-05:00",
+  "reviewScope": "F0.2b.2 — three formative True/False/Not Given sets",
+  "reviewerIsolation": "Use only this packet for the first pass. Do not open the catalog, registry, validator, route, UI, prior audits or factual-source packet until every answer and evidence decision has been fixed in a separate first-pass file.",
+  "taskRule": "TRUE only when the statement agrees with the passage; FALSE only when the passage contradicts it; NOT GIVEN when the passage neither confirms nor contradicts it. Do not use prior knowledge.",
+  "instruction": "Independently adjudicate all 22 statements from passage evidence. For TRUE/FALSE, quote the shortest decisive span. For NOT GIVEN, identify the closest related zone and state precisely which required fact is absent. Classify ambiguity and IELTS Academic Reading fitness. This is an AI editorial review, not a human signature, rights clearance or publication approval.",
+  "excludes": [
+    "answer keys",
+    "correctness labels",
+    "explanations",
+    "trap labels",
+    "declared skills",
+    "prior reviewer answers",
+    "student data"
+  ],
+  "records": [
+    {
+      "assetId": "formative:true-false-not-given:tfng-set-urban-trees",
+      "passageTitle": "Urban trees and heat risk",
+      "sourceObjectSha256": "a9218541f32e3423ae4cedfad35784679f481e7f281ad79a50fa005d11b0e214",
+      "passageSha256": "91f3be3364e010290f0af8d4b1d07a655fa7ea5e710576b6f0a92128e2fd40a4",
+      "passage": "For many years, urban planners treated city trees mainly as decoration. Recent research has changed that view. Trees can lower surface temperatures by providing shade and by releasing moisture through transpiration. In dense neighborhoods, this cooling effect can reduce the need for air conditioning during hot months.\n\nHowever, the benefits are not distributed equally. Wealthier districts often have wider streets, private gardens and long-established parks, while lower-income areas may have fewer trees and more exposed concrete. Some cities now use satellite imagery to identify neighborhoods with the highest heat risk and the lowest tree coverage.\n\nPlanting trees is not a quick fix. Young trees need years of care before they provide significant shade, and the wrong species can damage sidewalks or require too much water. Successful urban forestry programs usually combine tree planting with maintenance budgets, community participation and careful species selection.",
+      "statements": [
+        {
+          "questionId": "tfng-urban-trees-01",
+          "statement": "Urban planners have always considered city trees essential infrastructure."
+        },
+        {
+          "questionId": "tfng-urban-trees-02",
+          "statement": "Trees can reduce temperatures partly by releasing moisture."
+        },
+        {
+          "questionId": "tfng-urban-trees-03",
+          "statement": "Air conditioning becomes unnecessary in all neighborhoods with many trees."
+        },
+        {
+          "questionId": "tfng-urban-trees-04",
+          "statement": "Lower-income areas may have more exposed concrete than wealthier districts."
+        },
+        {
+          "questionId": "tfng-urban-trees-05",
+          "statement": "Satellite imagery is used by every city government to plan tree planting."
+        },
+        {
+          "questionId": "tfng-urban-trees-06",
+          "statement": "Young trees usually provide significant shade immediately after planting."
+        },
+        {
+          "questionId": "tfng-urban-trees-07",
+          "statement": "The passage identifies the best tree species for dry climates."
+        },
+        {
+          "questionId": "tfng-urban-trees-08",
+          "statement": "Community participation can be part of a successful urban forestry program."
+        },
+        {
+          "questionId": "tfng-urban-trees-09",
+          "statement": "The author argues that planting trees solves urban heat problems quickly."
+        },
+        {
+          "questionId": "tfng-urban-trees-10",
+          "statement": "Private gardens are more common in wealthy districts than in every lower-income area."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:true-false-not-given:tfng-set-school-libraries",
+      "passageTitle": "School libraries after class",
+      "sourceObjectSha256": "d672bb4a7732a959ba7a304993e935bf0f64a25465eda44286778ccd2f6d9878",
+      "passageSha256": "45db7a8749e7ee355f8125c26c76d91faa5e8c67c213d03a194306cf91fab344",
+      "passage": "Several secondary schools have kept their libraries open after regular lessons. The decision was not only intended to help students borrow books. Teachers noticed that some pupils needed a quiet place to complete assignments before travelling home, especially those who shared bedrooms with younger siblings.\n\nThe first after-school library sessions were supervised by English teachers, but that model was difficult to maintain. In the second term, trained volunteers and senior students helped with basic supervision, while teachers remained available only on two afternoons each week. This reduced staffing pressure without closing the service.\n\nAttendance records showed a clear pattern. Younger students used the library mostly for homework support, while older students were more likely to use reference books and online databases for exam projects. The head librarian argued that the library should not be judged only by the number of books borrowed, because the space now supported several kinds of academic work.\n\nThe programme still had limits. Some parents wanted weekend opening hours, but the school board decided to review weekday demand first. No final decision about Saturdays had been made by the end of the year.",
+      "statements": [
+        {
+          "questionId": "tfng-libraries-01",
+          "statement": "The libraries stayed open after lessons only so that students could borrow books."
+        },
+        {
+          "questionId": "tfng-libraries-02",
+          "statement": "Some students found it hard to study at home because they shared bedrooms."
+        },
+        {
+          "questionId": "tfng-libraries-03",
+          "statement": "English teachers supervised every after-school session throughout the year."
+        },
+        {
+          "questionId": "tfng-libraries-04",
+          "statement": "Older students used online databases for exam projects more often than younger students did."
+        },
+        {
+          "questionId": "tfng-libraries-05",
+          "statement": "The school board rejected weekend opening hours permanently."
+        },
+        {
+          "questionId": "tfng-libraries-06",
+          "statement": "The head librarian believed book borrowing was the only useful measure of the library."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:true-false-not-given:tfng-set-coastal-paths",
+      "passageTitle": "Coastal walking paths",
+      "sourceObjectSha256": "8e528d9d0e9f0dc1cef8a003cd96b76bdd0100c935e47cbb9da140c130cc5bd7",
+      "passageSha256": "35e904d378e8e819049cf1d026b9b1e83dc45e1d164f8e15e91ebfb5a2f9b225",
+      "passage": "A coastal town redesigned part of its walking path after winter storms damaged several wooden sections. Instead of rebuilding the path in the same place, engineers moved the most exposed section farther inland. This decision made the route slightly longer, but it reduced the likelihood that waves would reach the boards during ordinary storms.\n\nLocal shop owners initially worried that the new route would take visitors away from the seafront cafes. After the path reopened, however, footfall data showed little change in weekend visitor numbers. The council suggested that clearer signs and two new viewing points helped people understand the altered route.\n\nEnvironmental groups supported the inland move because it allowed damaged dunes to recover. They asked the council to keep visitors off the most fragile areas with low fencing and seasonal notices. The council accepted the fencing proposal but said the notices would be tested for one summer before becoming permanent.\n\nMaintenance costs were reviewed six months after the reopening. Repairs were less frequent than before, although the council warned that one mild winter was not enough evidence to predict long-term savings.",
+      "statements": [
+        {
+          "questionId": "tfng-coastal-01",
+          "statement": "Engineers rebuilt the damaged path in exactly the same location."
+        },
+        {
+          "questionId": "tfng-coastal-02",
+          "statement": "Moving the path inland made the route a little longer."
+        },
+        {
+          "questionId": "tfng-coastal-03",
+          "statement": "Weekend visitor numbers increased sharply after the path reopened."
+        },
+        {
+          "questionId": "tfng-coastal-04",
+          "statement": "Environmental groups wanted visitors kept away from fragile dune areas."
+        },
+        {
+          "questionId": "tfng-coastal-05",
+          "statement": "The council made seasonal notices permanent immediately."
+        },
+        {
+          "questionId": "tfng-coastal-06",
+          "statement": "The council could already predict long-term maintenance savings after six months."
+        }
+      ]
+    }
+  ]
+}

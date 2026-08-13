@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "ielts-reading-matching-features-audit-verdicts.v1",
+  "reviewedAt": "2026-08-09T13:56:00Z",
+  "status": "pass",
+  "passMeaning": "PASS means the F0.2b.6 audit dossier is complete and fail-closed. All three assets remain quarantined; bank, Exam/security and content certification remain blocked.",
+  "rows": [
+    {
+      "lane": "Rights and provenance",
+      "boardMark": "✅",
+      "scope": "Census, object/passage hashes, directed provenance search, 16-source availability ledger and deny-by-default disposition for exactly three Matching Features assets.",
+      "findings": "3/3 assets remain unknown-quarantined. Directed search found no exact passage or named-case match in the reviewed results, but it was non-exhaustive; five visible originality/review claims remain observed and unverified. Four direct fetches returned anti-bot 403/405 and were not reclassified as successful verification.",
+      "blockersCarriedForward": "Authorship, real/composite/fictional status of named entities, license, rights-holder authorization, factual sign-off and independent human approval remain unresolved; PASS is not clearance."
+    },
+    {
+      "lane": "Full-stack and data",
+      "boardMark": "✅",
+      "scope": "Executable identity, registry v6, two-pass cardinality, hashes, source binding, leakage controls and stop boundary for the audit-only delta.",
+      "findings": "3 passages, 14 visible feature candidates and 19 feature decisions are covered exactly. Registry records fail closed, first-pass decisions are hash-pinned before sources, and seven learner-facing dependencies plus F0.2b.7 remain unchanged.",
+      "blockersCarriedForward": "Bank and content certification remain blocked. Answer keys are delivered to the client; the runtime locks and corrects on first selection, exposes trap hints before response and cannot represent Practice, Exam or secure assessment."
+    },
+    {
+      "lane": "IELTS expert",
+      "boardMark": "✅",
+      "scope": "Clean first-pass association adjudication followed by direct review of 15 candidate factual sources, without showing the stored key before decisions were fixed.",
+      "findings": "19/19 independent associations match the stored feature letters, with 0 material ambiguities. All three passage assessments are mixed: relationships are answerable, but visible feature descriptions, ordered structure and weak competition make the construct easier than robust IELTS-style Matching Features.",
+      "blockersCarriedForward": "Agreement is not approval. The 15 claims received 0 supported, 8 oversimplified, 3 unsupported and 4 untraceable assessments; factual wording, named-entity status, difficulty and cue leakage require editorial repair and fresh blind review."
+    },
+    {
+      "lane": "Cognitive walkthrough",
+      "boardMark": "✅",
+      "scope": "Prospective blind content-only simulation by an average learner prone to lexical matching, nearby-name selection and overly local reading.",
+      "findings": "3/3 passages and 19/19 statements have a walkthrough covering likely misread, association target, evidence search, feature comparison, competitor check, decision rule and repair action without assigning a feature letter.",
+      "blockersCarriedForward": "This AI walkthrough is not a real-user usability study, accessibility test, retention measure, learning-gain estimate or evidence of IELTS band improvement."
+    },
+    {
+      "lane": "Anti-bias and leakage",
+      "boardMark": "✅",
+      "scope": "Exhaustive n=19 enumeration of stored labels, set/order sequence, modulo-position, lexical overlap, description length, visible semantic cues, pre-answer traps, representation, prior knowledge and client-key exposure.",
+      "findings": "Stored counts are A=5, B=3, C=5, D=4, E=2. The question-position modulo feature-count rule scores 11/19; exact label/description overlap scores 1/4 eligible with 15 ties; longest description scores 2/7 eligible with 12 ties. Independent semantic screening found descriptions sufficient for 16/19 and descriptions plus pre-answer traps sufficient for 18/19.",
+      "blockersCarriedForward": "contentCertification remains blocked: n=19 is below 100, Transport begins A-B-C-D-E, descriptions and traps leak associations, all sets use every feature, keys reach the client and these descriptive diagnostics cannot certify statistical fairness."
+    },
+    {
+      "lane": "UI/UX and accessibility",
+      "boardMark": "➖",
+      "scope": "Not applicable to conformance for this audit-only delta: seven scoped learner-facing source hashes are pinned unchanged.",
+      "findings": "The dossier records inherited behavior and accessibility defects but does not modify or approve the DOM, interaction model, responsive shell, visual parity or learning experience.",
+      "blockersCarriedForward": "This ➖ does not certify the existing UI: 19/19 selects lack accessible names, progress and feedback lack ARIA semantics, focus falls to BODY after lock, English content lacks lang markers, state is not persisted and reset has no confirmation."
+    },
+    {
+      "lane": "Playwright",
+      "boardMark": "➖",
+      "scope": "Not applicable to learner-runtime certification because F0.2b.6 changes only the audit dossier; existing baseline browser evidence is used solely to describe inherited behavior.",
+      "findings": "Scoped prior evidence documents route hydration, 19 comboboxes, immediate incorrect feedback/lock, option reuse, 7/7 aggregate completion, reload reset and no overflow at 1280, 390 and 320 pixels.",
+      "blockersCarriedForward": "No browser matrix was executed as approval of the unchanged learner UI. Portable-report Chromium verification is packaging evidence, not learner-facing Playwright or accessibility certification."
+    }
+  ]
+}

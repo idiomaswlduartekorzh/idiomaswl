@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "ielts-reading-matching-information-provenance-search.v1",
+  "searchedAt": "2026-08-09T06:08:00-05:00",
+  "method": "Directed exact-title and exact-first-sentence public-web search; results reviewed manually for verbatim identity.",
+  "searchSurface": "public web search",
+  "queries": [
+    {
+      "assetId": "formative:matching-information:mi-city-noise",
+      "query": "\"How cities respond to noise\" \"City noise was once treated mainly as a minor annoyance\"",
+      "resultsReviewed": [
+        { "title": "Guidance on environmental noise — WHO", "url": "https://www.who.int/tools/compendium-on-health-and-environment/environmental-noise", "exactMatch": false, "relevanceNote": "Topical institutional source; no verbatim passage match." },
+        { "title": "Environmental Noise Directive — European Commission", "url": "https://environment.ec.europa.eu/topics/noise/environmental-noise-directive_en", "exactMatch": false, "relevanceNote": "Topical policy source; no verbatim passage match." }
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    },
+    {
+      "assetId": "formative:matching-information:mi-museum-lighting",
+      "query": "\"Lighting in modern museums\" \"Museum lighting used to be planned mainly around visibility\"",
+      "resultsReviewed": [
+        { "title": "Light, ultraviolet and infrared — Canadian Conservation Institute", "url": "https://www.canada.ca/en/conservation-institute/services/agents-deterioration/light.html", "exactMatch": false, "relevanceNote": "Topical conservation guidance; no verbatim passage match." },
+        { "title": "Smithsonian Guidelines for Accessible Exhibition Design", "url": "https://affiliations.si.edu/wp-content/uploads/PDFs/Accessible-Exhibition-Design.pdf", "exactMatch": false, "relevanceNote": "Topical exhibition-lighting guidance; no verbatim passage match." }
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    },
+    {
+      "assetId": "formative:matching-information:mi-coastal-restoration",
+      "query": "\"Restoring coastal wetlands\" \"Coastal wetlands were once dismissed as empty or unusable land\"",
+      "resultsReviewed": [
+        { "title": "Coastal Resiliency — NOAA Fisheries", "url": "https://www.fisheries.noaa.gov/news/coastal-resiliency", "exactMatch": false, "relevanceNote": "Topical institutional source; no verbatim passage match." },
+        { "title": "The Estuary Restoration Act — NOAA Fisheries", "url": "https://www.fisheries.noaa.gov/national/habitat-conservation/estuary-restoration-act", "exactMatch": false, "relevanceNote": "Topical restoration source; no verbatim passage match." }
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    }
+  ],
+  "interpretation": "Directed and non-exhaustive. No exact match in reviewed results does not prove originality, authorship or universal absence of a prior source."
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "ielts-reading-ynng-provenance-search.v1",
+  "searchedAt": "2026-08-09T05:35:00-05:00",
+  "method": "Directed web search using each visible title and normalized first sentence in quotation marks; results were reviewed for an exact title-and-text match.",
+  "searchSurface": "OpenAI web search over the public web; ranking is dynamic and this ledger records only reviewed results, not a reproducible universal index.",
+  "queries": [
+    {
+      "assetId": "formative:yes-no-not-given:ynng-station-art",
+      "query": "\"Public art in transport stations\" \"Public art in transport stations is often defended as a way to make commuting more pleasant\"",
+      "resultsReviewed": [
+        {
+          "title": "Singapore LTA — Gift of Art",
+          "url": "https://www.lta.gov.sg/content/ltagov/en/getting_around/public_transport/a_better_public_transport_experience/art_in_public_transport/gift-of-art.html",
+          "exactMatch": false,
+          "relevanceNote": "Relevant institutional material about art in stations, but neither the visible title nor the passage text matches."
+        },
+        {
+          "title": "Transport for NSW — Public Art in Transport Infrastructure",
+          "url": "https://standards.transport.nsw.gov.au/_entity/annotation/76f5da99-f722-ef11-840a-6045bdc373da",
+          "exactMatch": false,
+          "relevanceNote": "Related transport-art guidance; no exact title, first-sentence or paragraph-sequence match."
+        }
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    },
+    {
+      "assetId": "formative:yes-no-not-given:ynng-remote-work",
+      "query": "\"Why city centres still need office workers\" \"The rise of remote work has encouraged some commentators to predict the end of central business districts\"",
+      "resultsReviewed": [
+        {
+          "title": "London Assembly — Impact of remote working on central London",
+          "url": "https://www.london.gov.uk/who-we-are/what-london-assembly-does/london-assembly-work/london-assembly-publications/impact-remote-working-central-london",
+          "exactMatch": false,
+          "relevanceNote": "Overlapping policy topic and vocabulary, but no exact title or passage-sequence match."
+        },
+        {
+          "title": "OECD — The new geography of remote jobs",
+          "url": "https://www.oecd.org/en/publications/oecd-regions-and-cities-at-a-glance-2024_f42db3bf-en/full-report/the-new-geography-of-remote-jobs_6fe0d665.html",
+          "exactMatch": false,
+          "relevanceNote": "Relevant evidence on remote and hybrid work, but no exact title or first-sentence match."
+        }
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    },
+    {
+      "assetId": "formative:yes-no-not-given:ynng-school-uniforms",
+      "query": "\"A careful argument about school uniforms\" \"Debates about school uniforms often become strangely absolute\"",
+      "resultsReviewed": [
+        {
+          "title": "UK Department for Education — Developing school uniform policy",
+          "url": "https://www.gov.uk/government/publications/school-uniform/school-uniforms",
+          "exactMatch": false,
+          "relevanceNote": "Official guidance covers identity, equality, cost and enforcement but does not match the title or passage prose."
+        },
+        {
+          "title": "Australian Institute of Family Studies — Citizen child: school uniforms",
+          "url": "https://aifs.gov.au/all-research/research-reports/citizen-child-australian-law-and-childrens-rights",
+          "exactMatch": false,
+          "relevanceNote": "Discusses competing uniform arguments and expression, but no exact title, first sentence or paragraph sequence matches."
+        }
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    }
+  ],
+  "interpretation": "This is a directed, non-exhaustive search log. No exact match was located in the reviewed results, but that negative result does not prove originality, authorship, ownership, authorization or universal absence of a prior source."
+}

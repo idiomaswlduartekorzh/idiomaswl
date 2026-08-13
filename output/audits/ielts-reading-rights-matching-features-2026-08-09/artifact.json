@@ -1,0 +1,766 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "IELTS Reading Matching Features — audit gate",
+    "description": "F0.2b.6 stakeholder dossier for provenance, feature association, learning value and shortcut risk.",
+    "generatedAt": "2026-08-09T13:56:00Z",
+    "cards": [
+      {
+        "id": "scope",
+        "description": "Passages, feature candidates and learner decisions in the scoped formative bank.",
+        "dataset": "summary",
+        "sourceId": "summary_query",
+        "metrics": [
+          {
+            "label": "Passages",
+            "field": "passages",
+            "format": "number"
+          },
+          {
+            "label": "Features",
+            "field": "featureCandidates",
+            "format": "number"
+          },
+          {
+            "label": "Decisions",
+            "field": "questions",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "quarantine",
+        "description": "Assets denied advancement by the rights and factual gate.",
+        "dataset": "summary",
+        "sourceId": "summary_query",
+        "metrics": [
+          {
+            "label": "Quarantined",
+            "field": "quarantined",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "agreement",
+        "description": "Independent semantic associations matching stored feature letters.",
+        "dataset": "summary",
+        "sourceId": "summary_query",
+        "metrics": [
+          {
+            "label": "Expert matches",
+            "field": "expertMatches",
+            "format": "number"
+          },
+          {
+            "label": "Reviewed",
+            "field": "expertTotal",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "ambiguity",
+        "description": "Statements with more than one materially defensible feature.",
+        "dataset": "summary",
+        "sourceId": "summary_query",
+        "metrics": [
+          {
+            "label": "Material ambiguities",
+            "field": "materialAmbiguities",
+            "format": "number"
+          }
+        ]
+      }
+    ],
+    "charts": [
+      {
+        "id": "label_counts",
+        "title": "Stored feature-letter counts",
+        "subtitle": "Question: how are A–E stored answer letters distributed? n=19 is descriptive, not learner accuracy or fairness evidence.",
+        "type": "bar",
+        "dataset": "labels",
+        "sourceId": "label_query",
+        "valueFormat": "number",
+        "encodings": {
+          "x": {
+            "field": "label",
+            "type": "nominal",
+            "label": "Stored feature letter"
+          },
+          "y": {
+            "field": "count",
+            "type": "quantitative",
+            "label": "Decisions"
+          }
+        }
+      },
+      {
+        "id": "claim_assessments",
+        "title": "Independent factual-claim assessments",
+        "subtitle": "Question: how did direct source review classify 15 declared claims? These counts are not rights clearance or human verification.",
+        "type": "bar",
+        "dataset": "claims",
+        "sourceId": "claim_query",
+        "valueFormat": "number",
+        "encodings": {
+          "x": {
+            "field": "assessment",
+            "type": "nominal",
+            "label": "Assessment"
+          },
+          "y": {
+            "field": "claims",
+            "type": "quantitative",
+            "label": "Claims"
+          }
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "asset_decisions",
+        "title": "Per-asset decision ledger",
+        "subtitle": "Every record remains fail-closed and quarantined.",
+        "dataset": "decisions",
+        "sourceId": "decision_query",
+        "defaultSort": {
+          "field": "assetId",
+          "direction": "asc"
+        },
+        "density": "dense",
+        "layout": "full",
+        "columns": [
+          {
+            "field": "assetId",
+            "label": "Asset",
+            "type": "text"
+          },
+          {
+            "field": "title",
+            "label": "Title",
+            "type": "text"
+          },
+          {
+            "field": "wordCount",
+            "label": "Words",
+            "type": "number"
+          },
+          {
+            "field": "questionCount",
+            "label": "Statements",
+            "type": "number"
+          },
+          {
+            "field": "featureCandidateCount",
+            "label": "Features",
+            "type": "number"
+          },
+          {
+            "field": "provenanceStatus",
+            "label": "Provenance",
+            "type": "text"
+          },
+          {
+            "field": "rightsBasis",
+            "label": "Rights",
+            "type": "text"
+          },
+          {
+            "field": "factualReviewStatus",
+            "label": "Factual review",
+            "type": "text"
+          },
+          {
+            "field": "humanReviewStatus",
+            "label": "Human review",
+            "type": "text"
+          },
+          {
+            "field": "disposition",
+            "label": "Disposition",
+            "type": "text"
+          },
+          {
+            "field": "blockers",
+            "label": "Blocking gates",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "id": "panel_verdicts",
+        "title": "Final panel verdicts",
+        "subtitle": "PASS applies to audit completion; open product and editorial blockers remain explicit.",
+        "dataset": "audit",
+        "sourceId": "audit_query",
+        "defaultSort": {
+          "field": "lane",
+          "direction": "asc"
+        },
+        "layout": "full",
+        "columns": [
+          {
+            "field": "lane",
+            "label": "Lane",
+            "type": "text"
+          },
+          {
+            "field": "boardMark",
+            "label": "Board",
+            "type": "text"
+          },
+          {
+            "field": "scope",
+            "label": "Scope",
+            "type": "text"
+          },
+          {
+            "field": "findings",
+            "label": "Finding",
+            "type": "text"
+          },
+          {
+            "field": "blockersCarriedForward",
+            "label": "Still open",
+            "type": "text"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "validation",
+        "label": "Executable F0.2b.6 validation",
+        "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/validation.json"
+      },
+      {
+        "id": "baseline",
+        "label": "Pinned Matching Features content and learner-runtime baseline",
+        "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/baseline.json"
+      },
+      {
+        "id": "blind_packet",
+        "label": "Content-only blind review packet",
+        "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/blind-review.json"
+      },
+      {
+        "id": "expert_first_pass",
+        "label": "Persisted pre-source expert adjudication",
+        "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/expert-first-pass.json"
+      },
+      {
+        "id": "factual_packet",
+        "label": "Second-pass exact-claim and source packet",
+        "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/factual-source-review.json"
+      },
+      {
+        "id": "expert_verdict",
+        "label": "Independent two-pass IELTS review",
+        "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/expert-verdict.json"
+      },
+      {
+        "id": "student_walkthrough",
+        "label": "Content-only average-student simulation",
+        "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/student-walkthrough.json"
+      },
+      {
+        "id": "source_availability",
+        "label": "Candidate-source availability ledger",
+        "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/source-availability.json"
+      },
+      {
+        "id": "provenance_search",
+        "label": "Directed, non-exhaustive provenance search",
+        "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/provenance-search.json"
+      },
+      {
+        "id": "unit_change_manifest",
+        "label": "Scoped audit-unit change manifest",
+        "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/unit-change-manifest.json"
+      },
+      {
+        "id": "audit_verdicts",
+        "label": "Final multi-lane panel verdicts",
+        "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/audit-verdicts.json"
+      },
+      {
+        "id": "summary_query",
+        "label": "F0.2b.6 scope and disposition summary",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT\n  scope.passages AS passages,\n  scope.questions AS questions,\n  scope.featureCandidates AS featureCandidates,\n  COUNT(*) FILTER (WHERE decision.disposition = 'quarantine') AS quarantined,\n  expertReview.answerAgreement.matches AS expertMatches,\n  expertReview.answerAgreement.total AS expertTotal,\n  expertReview.materialAmbiguityCount AS materialAmbiguities\nFROM read_json_auto('output/audits/ielts-reading-rights-matching-features-2026-08-09/validation.json') AS report,\nUNNEST(report.decisions) AS rows(decision)\nGROUP BY ALL;",
+          "description": "F0.2b.6 scope and disposition summary",
+          "executed_at": "2026-08-09T13:56:00Z",
+          "tables_used": [
+            "output/audits/ielts-reading-rights-matching-features-2026-08-09/validation.json"
+          ]
+        }
+      },
+      {
+        "id": "label_query",
+        "label": "Stored Matching Features response-letter counts",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "UNPIVOT (\n  SELECT antiBias.storedKeyProfile.answerCounts.*\n  FROM read_json_auto('output/audits/ielts-reading-rights-matching-features-2026-08-09/validation.json')\n) ON COLUMNS(*) INTO NAME label VALUE count;",
+          "description": "Stored Matching Features response-letter counts",
+          "executed_at": "2026-08-09T13:56:00Z",
+          "tables_used": [
+            "output/audits/ielts-reading-rights-matching-features-2026-08-09/validation.json"
+          ]
+        }
+      },
+      {
+        "id": "claim_query",
+        "label": "Independent factual-claim assessments",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "UNPIVOT (\n  SELECT expertReview.factualAssessmentCounts.*\n  FROM read_json_auto('output/audits/ielts-reading-rights-matching-features-2026-08-09/validation.json')\n) ON COLUMNS(*) INTO NAME assessment VALUE claims;",
+          "description": "Independent factual-claim assessments",
+          "executed_at": "2026-08-09T13:56:00Z",
+          "tables_used": [
+            "output/audits/ielts-reading-rights-matching-features-2026-08-09/validation.json"
+          ]
+        }
+      },
+      {
+        "id": "decision_query",
+        "label": "Per-asset quarantine decisions",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT\n  decision.assetId,\n  decision.title,\n  decision.wordCount,\n  decision.questionCount,\n  decision.featureCandidateCount,\n  decision.provenanceStatus,\n  decision.rightsBasis,\n  decision.factualResearchStatus,\n  decision.factualReviewStatus,\n  decision.humanReviewStatus,\n  decision.disposition,\n  array_to_string(decision.reasonCodes, ' · ') AS blockers\nFROM read_json_auto('output/audits/ielts-reading-rights-matching-features-2026-08-09/validation.json') AS report,\nUNNEST(report.decisions) AS rows(decision);",
+          "description": "Per-asset quarantine decisions",
+          "executed_at": "2026-08-09T13:56:00Z",
+          "tables_used": [
+            "output/audits/ielts-reading-rights-matching-features-2026-08-09/validation.json"
+          ]
+        }
+      },
+      {
+        "id": "audit_query",
+        "label": "Final multi-lane panel verdicts",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT verdict.*\nFROM read_json_auto('output/audits/ielts-reading-rights-matching-features-2026-08-09/audit-verdicts.json') AS audit,\nUNNEST(audit.rows) AS rows(verdict);",
+          "description": "Final multi-lane panel verdicts",
+          "executed_at": "2026-08-09T13:56:00Z",
+          "tables_used": [
+            "output/audits/ielts-reading-rights-matching-features-2026-08-09/audit-verdicts.json"
+          ]
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "id": "title",
+        "type": "markdown",
+        "body": "# IELTS Reading Matching Features — audit gate"
+      },
+      {
+        "id": "executive_summary",
+        "type": "markdown",
+        "sourceId": "validation",
+        "body": "## Executive Summary\n\n- **audit PASS; bank and content certification BLOCKED.** The dossier closes F0.2b.6 controls; all 3/3 assets remain quarantined.\n- Independent IELTS review matched 19/19 stored feature assignments and recorded 0 material ambiguities.\n- A stored-position heuristic succeeds on **11/19** decisions. Independent semantic screening reaches **16/19** from visible descriptions alone and **18/19** when pre-answer trap text is added. These are three different diagnostics over n=19, not learner accuracy, fairness or efficacy proof.\n- The unchanged runtime is **guided-training** with immediate answer locking and feedback, client-delivered keys, visible feature descriptions and traps available before response; it is not Practice or Exam simulation.\n- UI/UX, accessibility and Playwright are ➖ because no learner-facing source changed. ➖ means unchanged and not audited for conformity; the inherited blockers remain open.\n- Stop at this gate. **F0.2b.7 Matching Sentence Endings** is next and has not been started."
+      },
+      {
+        "id": "metrics",
+        "type": "metric-strip",
+        "cardIds": [
+          "scope",
+          "quarantine",
+          "agreement",
+          "ambiguity"
+        ]
+      },
+      {
+        "id": "gate",
+        "type": "markdown",
+        "sourceId": "validation",
+        "body": "## The audit passes; the bank does not\n\nThe control layer pins 3 passage objects, 14 feature candidates and 19 feature decisions. It applies deny-by-default rights records and preserves clean-review hashes.\n\nPassing those controls is not publication approval. Authorship, license, factual review and independent human approval remain unresolved. Open key conflicts or material ambiguities are reported, never overwritten: none recorded."
+      },
+      {
+        "id": "decision_table",
+        "type": "table",
+        "tableId": "asset_decisions",
+        "layout": "full"
+      },
+      {
+        "id": "matching_contract",
+        "type": "markdown",
+        "sourceId": "expert_verdict",
+        "body": "## Matching Features requires attributed relationships\n\nThe task associates statements with people, groups, policies or other features identified by letters. A defensible decision requires the right actor or feature, the stated relationship, exact passage evidence and rejection of the closest competitor. Options may be unused, and an option may be reused only when the task instruction explicitly allows it. The three audited sets declare reuse.\n\nThe clean expert agreement is an audit signal. It does not prove that the descriptions, hints or runtime teach the skill safely."
+      },
+      {
+        "id": "label_context",
+        "type": "markdown",
+        "sourceId": "validation",
+        "body": "## Letter counts describe stored keys, not fairness\n\nAcross n=19, stored counts are A=5, B=3, C=5, D=4, E=2. The longest global same-letter run is 2, and every set contains declared reuse.\n\nThe **11/19** result is a stored-position heuristic: it predicts the feature at question position modulo the number of features in that set. It is a structural shortcut warning, not a learner score. The sample is below the 100-item certification threshold, so no balance or fairness claim is made."
+      },
+      {
+        "id": "label_chart",
+        "type": "chart",
+        "chartId": "label_counts",
+        "layout": "full"
+      },
+      {
+        "id": "semantic_screening",
+        "type": "markdown",
+        "sourceId": "validation",
+        "body": "## Visible descriptions and hints can collapse the reading task\n\nAn independent semantic screen matches **16/19** stored assignments using visible feature descriptions without passage evidence. With pre-answer trap text, it matches **18/19**. These are independent semantic screening counts over n=19; they are not learner accuracy results and do not establish statistical fairness.\n\nThe automated highest label-plus-description overlap heuristic hits 1/4 eligible unique predictions with 15 ties or abstentions. The longest-description heuristic hits 2/7 eligible predictions with 12 ties or abstentions. Differing denominators make these diagnostics non-comparable as a leaderboard."
+      },
+      {
+        "id": "factual_context",
+        "type": "markdown",
+        "sourceId": "expert_verdict",
+        "body": "## Candidate sources contextualize claims; they do not clear them\n\nThe second pass classifies 15 declared factual claims as supported 0, oversimplified 8, unsupported 3, untraceable 4. Candidate institutional sources can support or challenge wording, but they do not establish authorship, licensing, provenance or human factual approval."
+      },
+      {
+        "id": "claim_chart",
+        "type": "chart",
+        "chartId": "claim_assessments",
+        "layout": "full"
+      },
+      {
+        "id": "learning",
+        "type": "markdown",
+        "sourceId": "student_walkthrough",
+        "body": "## Learning value remains prospective\n\nThe content-only walkthrough covers 3/3 passages and 19/19 statements. It models attribution, evidence search, feature comparison, closest-competitor rejection and repair after superficial matching.\n\nIt is an AI cognitive walkthrough, not observation of a real student. It assigns no band and supplies no evidence of learning gains, retention, transfer or usability."
+      },
+      {
+        "id": "runtime",
+        "type": "markdown",
+        "sourceId": "validation",
+        "body": "## The current runtime is guided-training, not Practice or Exam\n\nRecorded classification: **guided-training-runtime-with-immediate-feedback-not-practice-or-exam-simulation**. Selection immediately locks the item and reveals correctness; answer keys are delivered to the client; feature descriptions are visible before response; and trap hints can be opened before answering. These inherited behaviors block bank and content certification.\n\nAccessibility observations remain open: 19 unnamed selects; progress ARIA=false; feedback aria-live=false; trap aria-expanded/controls=false; focus after lock=SELECT→BODY; answer persistence=false; reset confirmation=false."
+      },
+      {
+        "id": "panel_scope",
+        "type": "markdown",
+        "sourceId": "audit_verdicts",
+        "body": "## Panel scope\n\nApplicable lanes pass only for a complete, conservative and reproducible dossier. UI/UX and accessibility plus Playwright are ➖ only because the seven pinned learner-facing files are unchanged in this audit-only delta.\n\n➖ means unchanged, not conformant. It does not certify the existing interface, accessibility, responsive behavior, focus handling or learner workflow. Packaging this stakeholder report in Chromium is report verification only, not a learner-facing browser audit."
+      },
+      {
+        "id": "panel_table",
+        "type": "table",
+        "tableId": "panel_verdicts",
+        "layout": "full"
+      },
+      {
+        "id": "recommendations",
+        "type": "markdown",
+        "sourceId": "validation",
+        "body": "## Recommended next decisions\n\n1. Keep all three assets quarantined until authorship, license, factual review and independent human approval are recorded.\n2. Remove or defer feature descriptions and pre-answer trap hints, then repeat a clean semantic screen; preserve official reuse instructions where applicable.\n3. Redesign item order and remeasure the 11/19 stored-position signal on a substantially larger bank before any fairness claim.\n4. Separate guided-training from Practice and Exam modes; prevent immediate disclosure in assessment modes and add evidence-focused feedback.\n5. Resolve the inherited accessibility blockers, then run an applicable learner-facing Playwright matrix in that separate UI delta.\n6. Re-run clean IELTS and average-student reviews after content or runtime changes.\n7. Stop here. F0.2b.7 Matching Sentence Endings belongs to the next loop iteration."
+      },
+      {
+        "id": "caveats",
+        "type": "markdown",
+        "sourceId": "validation",
+        "body": "## Caveats and open questions\n\nThe provenance search is directed and non-exhaustive. Source reachability is not factual verification, authorship evidence or rights clearance. Both independent reviews are AI simulations without human signatures.\n\nThe 11/19, 16/19 and 18/19 diagnostics answer different questions over n=19. None is learner accuracy, a causal learning measure or proof of content fairness. This audit-only delta does not test responsive layout, assistive technology, real learners, retention, band improvement or production publication controls."
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-08-09T13:56:00Z",
+    "status": "ready",
+    "datasets": {
+      "summary": [
+        {
+          "passages": 3,
+          "questions": 19,
+          "featureCandidates": 14,
+          "quarantined": 3,
+          "expertMatches": 19,
+          "expertTotal": 19,
+          "materialAmbiguities": 0
+        }
+      ],
+      "labels": [
+        {
+          "label": "A",
+          "count": 5
+        },
+        {
+          "label": "B",
+          "count": 3
+        },
+        {
+          "label": "C",
+          "count": 5
+        },
+        {
+          "label": "D",
+          "count": 4
+        },
+        {
+          "label": "E",
+          "count": 2
+        }
+      ],
+      "claims": [
+        {
+          "assessment": "supported",
+          "claims": 0
+        },
+        {
+          "assessment": "oversimplified",
+          "claims": 8
+        },
+        {
+          "assessment": "unsupported",
+          "claims": 3
+        },
+        {
+          "assessment": "untraceable",
+          "claims": 4
+        }
+      ],
+      "decisions": [
+        {
+          "assetId": "formative:matching-features:mf-urban-farming",
+          "title": "Matching Features practice: urban farming projects",
+          "sourceObjectSha256": "94fcc6b7c50c8ab6d433890bf4d9b6e0155cb5519203d3e89aa70362346aa68d",
+          "passageSha256": "c7923d205c2f2bcaeb9bd28724d37bdaeb69f774ce6447bcfaad4e165d12937e",
+          "wordCount": 308,
+          "questionCount": 7,
+          "featureCandidateCount": 4,
+          "provenanceStatus": "unresolved",
+          "rightsBasis": "unknown-quarantined",
+          "factualResearchStatus": "candidate-sources-collected",
+          "factualReviewPolicy": "required",
+          "candidateFactualSourceCount": 5,
+          "factualReviewStatus": "not-reviewed",
+          "humanReviewStatus": "pending",
+          "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+          "disposition": "quarantine",
+          "eligibleForPublicationPipeline": false,
+          "blockers": "authorship-unresolved · factual-review-incomplete · human-review-pending · module-not-declared · rights-unresolved"
+        },
+        {
+          "assetId": "formative:matching-features:mf-memory-research",
+          "title": "Matching Features practice: memory research",
+          "sourceObjectSha256": "c88f5a60dc24c9ce76a773055168b14f496321f720e215401053fc22bba6a36d",
+          "passageSha256": "d75a32a55a1430590620c682a941f68e09f5d41a06bc53103934f5bf2f9c34c9",
+          "wordCount": 306,
+          "questionCount": 6,
+          "featureCandidateCount": 5,
+          "provenanceStatus": "unresolved",
+          "rightsBasis": "unknown-quarantined",
+          "factualResearchStatus": "candidate-sources-collected",
+          "factualReviewPolicy": "required",
+          "candidateFactualSourceCount": 5,
+          "factualReviewStatus": "not-reviewed",
+          "humanReviewStatus": "pending",
+          "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+          "disposition": "quarantine",
+          "eligibleForPublicationPipeline": false,
+          "blockers": "authorship-unresolved · factual-review-incomplete · human-review-pending · module-not-declared · rights-unresolved"
+        },
+        {
+          "assetId": "formative:matching-features:mf-transport-policies",
+          "title": "Matching Features practice: transport policies",
+          "sourceObjectSha256": "2b101575e9c524ab47060bdd6266b6d46138502be62b5aea708672eeb226e7b4",
+          "passageSha256": "769eba354fabc78b677e52b719effcc078faf7de7a146b4170dfdec6791f409c",
+          "wordCount": 264,
+          "questionCount": 6,
+          "featureCandidateCount": 5,
+          "provenanceStatus": "unresolved",
+          "rightsBasis": "unknown-quarantined",
+          "factualResearchStatus": "candidate-sources-collected",
+          "factualReviewPolicy": "required",
+          "candidateFactualSourceCount": 5,
+          "factualReviewStatus": "not-reviewed",
+          "humanReviewStatus": "pending",
+          "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+          "disposition": "quarantine",
+          "eligibleForPublicationPipeline": false,
+          "blockers": "authorship-unresolved · factual-review-incomplete · human-review-pending · module-not-declared · rights-unresolved"
+        }
+      ],
+      "audit": [
+        {
+          "lane": "Rights and provenance",
+          "boardMark": "✅",
+          "scope": "Census, object/passage hashes, directed provenance search, 16-source availability ledger and deny-by-default disposition for exactly three Matching Features assets.",
+          "findings": "3/3 assets remain unknown-quarantined. Directed search found no exact passage or named-case match in the reviewed results, but it was non-exhaustive; five visible originality/review claims remain observed and unverified. Four direct fetches returned anti-bot 403/405 and were not reclassified as successful verification.",
+          "blockersCarriedForward": "Authorship, real/composite/fictional status of named entities, license, rights-holder authorization, factual sign-off and independent human approval remain unresolved; PASS is not clearance."
+        },
+        {
+          "lane": "Full-stack and data",
+          "boardMark": "✅",
+          "scope": "Executable identity, registry v6, two-pass cardinality, hashes, source binding, leakage controls and stop boundary for the audit-only delta.",
+          "findings": "3 passages, 14 visible feature candidates and 19 feature decisions are covered exactly. Registry records fail closed, first-pass decisions are hash-pinned before sources, and seven learner-facing dependencies plus F0.2b.7 remain unchanged.",
+          "blockersCarriedForward": "Bank and content certification remain blocked. Answer keys are delivered to the client; the runtime locks and corrects on first selection, exposes trap hints before response and cannot represent Practice, Exam or secure assessment."
+        },
+        {
+          "lane": "IELTS expert",
+          "boardMark": "✅",
+          "scope": "Clean first-pass association adjudication followed by direct review of 15 candidate factual sources, without showing the stored key before decisions were fixed.",
+          "findings": "19/19 independent associations match the stored feature letters, with 0 material ambiguities. All three passage assessments are mixed: relationships are answerable, but visible feature descriptions, ordered structure and weak competition make the construct easier than robust IELTS-style Matching Features.",
+          "blockersCarriedForward": "Agreement is not approval. The 15 claims received 0 supported, 8 oversimplified, 3 unsupported and 4 untraceable assessments; factual wording, named-entity status, difficulty and cue leakage require editorial repair and fresh blind review."
+        },
+        {
+          "lane": "Cognitive walkthrough",
+          "boardMark": "✅",
+          "scope": "Prospective blind content-only simulation by an average learner prone to lexical matching, nearby-name selection and overly local reading.",
+          "findings": "3/3 passages and 19/19 statements have a walkthrough covering likely misread, association target, evidence search, feature comparison, competitor check, decision rule and repair action without assigning a feature letter.",
+          "blockersCarriedForward": "This AI walkthrough is not a real-user usability study, accessibility test, retention measure, learning-gain estimate or evidence of IELTS band improvement."
+        },
+        {
+          "lane": "Anti-bias and leakage",
+          "boardMark": "✅",
+          "scope": "Exhaustive n=19 enumeration of stored labels, set/order sequence, modulo-position, lexical overlap, description length, visible semantic cues, pre-answer traps, representation, prior knowledge and client-key exposure.",
+          "findings": "Stored counts are A=5, B=3, C=5, D=4, E=2. The question-position modulo feature-count rule scores 11/19; exact label/description overlap scores 1/4 eligible with 15 ties; longest description scores 2/7 eligible with 12 ties. Independent semantic screening found descriptions sufficient for 16/19 and descriptions plus pre-answer traps sufficient for 18/19.",
+          "blockersCarriedForward": "contentCertification remains blocked: n=19 is below 100, Transport begins A-B-C-D-E, descriptions and traps leak associations, all sets use every feature, keys reach the client and these descriptive diagnostics cannot certify statistical fairness."
+        },
+        {
+          "lane": "UI/UX and accessibility",
+          "boardMark": "➖",
+          "scope": "Not applicable to conformance for this audit-only delta: seven scoped learner-facing source hashes are pinned unchanged.",
+          "findings": "The dossier records inherited behavior and accessibility defects but does not modify or approve the DOM, interaction model, responsive shell, visual parity or learning experience.",
+          "blockersCarriedForward": "This ➖ does not certify the existing UI: 19/19 selects lack accessible names, progress and feedback lack ARIA semantics, focus falls to BODY after lock, English content lacks lang markers, state is not persisted and reset has no confirmation."
+        },
+        {
+          "lane": "Playwright",
+          "boardMark": "➖",
+          "scope": "Not applicable to learner-runtime certification because F0.2b.6 changes only the audit dossier; existing baseline browser evidence is used solely to describe inherited behavior.",
+          "findings": "Scoped prior evidence documents route hydration, 19 comboboxes, immediate incorrect feedback/lock, option reuse, 7/7 aggregate completion, reload reset and no overflow at 1280, 390 and 320 pixels.",
+          "blockersCarriedForward": "No browser matrix was executed as approval of the unchanged learner UI. Portable-report Chromium verification is packaging evidence, not learner-facing Playwright or accessibility certification."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "validation",
+      "label": "Executable F0.2b.6 validation",
+      "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/validation.json"
+    },
+    {
+      "id": "baseline",
+      "label": "Pinned Matching Features content and learner-runtime baseline",
+      "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/baseline.json"
+    },
+    {
+      "id": "blind_packet",
+      "label": "Content-only blind review packet",
+      "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/blind-review.json"
+    },
+    {
+      "id": "expert_first_pass",
+      "label": "Persisted pre-source expert adjudication",
+      "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/expert-first-pass.json"
+    },
+    {
+      "id": "factual_packet",
+      "label": "Second-pass exact-claim and source packet",
+      "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/factual-source-review.json"
+    },
+    {
+      "id": "expert_verdict",
+      "label": "Independent two-pass IELTS review",
+      "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/expert-verdict.json"
+    },
+    {
+      "id": "student_walkthrough",
+      "label": "Content-only average-student simulation",
+      "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/student-walkthrough.json"
+    },
+    {
+      "id": "source_availability",
+      "label": "Candidate-source availability ledger",
+      "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/source-availability.json"
+    },
+    {
+      "id": "provenance_search",
+      "label": "Directed, non-exhaustive provenance search",
+      "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/provenance-search.json"
+    },
+    {
+      "id": "unit_change_manifest",
+      "label": "Scoped audit-unit change manifest",
+      "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/unit-change-manifest.json"
+    },
+    {
+      "id": "audit_verdicts",
+      "label": "Final multi-lane panel verdicts",
+      "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/audit-verdicts.json"
+    },
+    {
+      "id": "summary_query",
+      "label": "F0.2b.6 scope and disposition summary",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "SELECT\n  scope.passages AS passages,\n  scope.questions AS questions,\n  scope.featureCandidates AS featureCandidates,\n  COUNT(*) FILTER (WHERE decision.disposition = 'quarantine') AS quarantined,\n  expertReview.answerAgreement.matches AS expertMatches,\n  expertReview.answerAgreement.total AS expertTotal,\n  expertReview.materialAmbiguityCount AS materialAmbiguities\nFROM read_json_auto('output/audits/ielts-reading-rights-matching-features-2026-08-09/validation.json') AS report,\nUNNEST(report.decisions) AS rows(decision)\nGROUP BY ALL;",
+        "description": "F0.2b.6 scope and disposition summary",
+        "executed_at": "2026-08-09T13:56:00Z",
+        "tables_used": [
+          "output/audits/ielts-reading-rights-matching-features-2026-08-09/validation.json"
+        ]
+      }
+    },
+    {
+      "id": "label_query",
+      "label": "Stored Matching Features response-letter counts",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "UNPIVOT (\n  SELECT antiBias.storedKeyProfile.answerCounts.*\n  FROM read_json_auto('output/audits/ielts-reading-rights-matching-features-2026-08-09/validation.json')\n) ON COLUMNS(*) INTO NAME label VALUE count;",
+        "description": "Stored Matching Features response-letter counts",
+        "executed_at": "2026-08-09T13:56:00Z",
+        "tables_used": [
+          "output/audits/ielts-reading-rights-matching-features-2026-08-09/validation.json"
+        ]
+      }
+    },
+    {
+      "id": "claim_query",
+      "label": "Independent factual-claim assessments",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "UNPIVOT (\n  SELECT expertReview.factualAssessmentCounts.*\n  FROM read_json_auto('output/audits/ielts-reading-rights-matching-features-2026-08-09/validation.json')\n) ON COLUMNS(*) INTO NAME assessment VALUE claims;",
+        "description": "Independent factual-claim assessments",
+        "executed_at": "2026-08-09T13:56:00Z",
+        "tables_used": [
+          "output/audits/ielts-reading-rights-matching-features-2026-08-09/validation.json"
+        ]
+      }
+    },
+    {
+      "id": "decision_query",
+      "label": "Per-asset quarantine decisions",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "SELECT\n  decision.assetId,\n  decision.title,\n  decision.wordCount,\n  decision.questionCount,\n  decision.featureCandidateCount,\n  decision.provenanceStatus,\n  decision.rightsBasis,\n  decision.factualResearchStatus,\n  decision.factualReviewStatus,\n  decision.humanReviewStatus,\n  decision.disposition,\n  array_to_string(decision.reasonCodes, ' · ') AS blockers\nFROM read_json_auto('output/audits/ielts-reading-rights-matching-features-2026-08-09/validation.json') AS report,\nUNNEST(report.decisions) AS rows(decision);",
+        "description": "Per-asset quarantine decisions",
+        "executed_at": "2026-08-09T13:56:00Z",
+        "tables_used": [
+          "output/audits/ielts-reading-rights-matching-features-2026-08-09/validation.json"
+        ]
+      }
+    },
+    {
+      "id": "audit_query",
+      "label": "Final multi-lane panel verdicts",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "SELECT verdict.*\nFROM read_json_auto('output/audits/ielts-reading-rights-matching-features-2026-08-09/audit-verdicts.json') AS audit,\nUNNEST(audit.rows) AS rows(verdict);",
+        "description": "Final multi-lane panel verdicts",
+        "executed_at": "2026-08-09T13:56:00Z",
+        "tables_used": [
+          "output/audits/ielts-reading-rights-matching-features-2026-08-09/audit-verdicts.json"
+        ]
+      }
+    }
+  ]
+}

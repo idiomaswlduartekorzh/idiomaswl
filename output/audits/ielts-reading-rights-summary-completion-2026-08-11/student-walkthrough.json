@@ -1,0 +1,312 @@
+{
+  "schemaVersion": "ielts-reading-summary-completion-student-walkthrough.v1",
+  "reviewer": {
+    "humanSignature": false,
+    "sourceContext": "blind-review-packet-only",
+    "reviewedAt": "2026-08-11T15:18:39Z",
+    "blindPacketSha256": "a4c9b36ae228243f470c9d1330659f5578dea7761146b56a1866c735ea62b865",
+    "notes": "Prospective simulation of an average IELTS Academic Reading student using only the blind review packet. The walkthrough records likely process errors and repair checks without selecting, quoting, or implying any completion."
+  },
+  "records": [
+    {
+      "assetId": "formative:summary-completion:summary-urban-farms",
+      "passageBarrier": "medium",
+      "wordLimitRisk": "medium",
+      "promptCueRisk": "medium",
+      "hintCueRisk": "low",
+      "shortcutRisks": [
+        "Following the summary order mechanically and stopping at the first topical match.",
+        "Copying a nearby phrase before checking whether it fits both sides of the sentence.",
+        "Treating repeated subject matter as sufficient evidence instead of verifying the stated relationship."
+      ],
+      "transferValue": "High transfer value for learning to map paraphrased functions across several paragraphs while preserving exact-span and word-limit discipline.",
+      "nextAction": "Complete a timed second pass in which every tentative span is withheld until grammar, contiguity, word count, and competitor checks are written down.",
+      "questionWalkthrough": [
+        {
+          "questionId": "summary-urban-farms-01",
+          "likelyMisread": "I may treat the opening location phrase as background and scan too far beyond the first paragraph.",
+          "predictedGrammarCategory": "Uncountable or plural noun phrase functioning as the object of the preposition.",
+          "wordLimitCheck": "Count the copied span as printed and reject anything above two words before considering meaning.",
+          "promptOnlyGuessRisk": "Medium: the city setting invites several plausible place-related guesses without passage verification.",
+          "evidenceSearch": "Start at the opening claim and look for the clause that explains the condition under which the activity is visible.",
+          "passageSpanCheck": "Confirm that the candidate is one uninterrupted span and that no omitted modifier is required for the sentence to work.",
+          "grammarRecheck": "Read the whole sentence aloud to confirm that the preposition can introduce the chosen noun phrase naturally.",
+          "spellingCheck": "Copy capitalization and spelling exactly from the passage, then check for an accidental singular or plural change.",
+          "competitorCheck": "Compare the first location-related span with any later references to buildings and reject matches that do not express the opening condition.",
+          "decisionRule": "Keep a span only if it matches the opening relationship, fits grammatically, remains contiguous, and stays within two words.",
+          "repairAction": "If two place phrases remain plausible, return to the subject and verb of the summary and trace their closest paraphrase in the passage."
+        },
+        {
+          "questionId": "summary-urban-farms-02",
+          "likelyMisread": "I may focus on kinds of produce rather than the logistical effect described earlier in the sentence.",
+          "predictedGrammarCategory": "Plural countable noun completing a compound noun phrase.",
+          "wordLimitCheck": "Verify that the exact span uses no more than two orthographic words and do not add an explanatory noun.",
+          "promptOnlyGuessRisk": "Medium: common collocations can sound convincing even when they are not the passage wording.",
+          "evidenceSearch": "Locate the supporters' first claimed benefit and match the verb-object relationship rather than individual topic words.",
+          "passageSpanCheck": "Ensure the words are adjacent in the passage and are not assembled from separated parts of the claim.",
+          "grammarRecheck": "Check number agreement and confirm that the inserted noun produces a conventional compound after the preceding modifier.",
+          "spellingCheck": "Compare every letter with the source span and preserve the printed plural ending.",
+          "competitorCheck": "Test any nearby food-related phrase against the verb in the summary and discard it if it names products rather than the process being shortened.",
+          "decisionRule": "Choose only a source span that expresses the same affected process and fits the compound structure without alteration.",
+          "repairAction": "If I am relying on a familiar phrase from memory, cover the prompt and restate the passage claim before rescanning it."
+        },
+        {
+          "questionId": "summary-urban-farms-03",
+          "likelyMisread": "I may merge the two design measures with a later insulation benefit and search in the wrong sentence.",
+          "predictedGrammarCategory": "Plural countable noun phrase serving as the object of a preposition.",
+          "wordLimitCheck": "Treat articles and modifiers as words and keep the final copied unit at two words or fewer.",
+          "promptOnlyGuessRisk": "Medium: general building knowledge may produce a sensible but unsupported structural term.",
+          "evidenceSearch": "Find the sentence where both measures occur together, then identify what their shared effect is said to reduce.",
+          "passageSpanCheck": "Verify that the selected object is copied contiguously and is governed by the same reduction relationship in the passage.",
+          "grammarRecheck": "Check that the phrase works after the preposition and that its number agrees with any visible determiner or modifier.",
+          "spellingCheck": "Recheck the exact source form, especially the final consonants and plural marker.",
+          "competitorCheck": "Contrast the target of reduced pressure with later references to temperature effects and delivery burdens.",
+          "decisionRule": "Prefer the object directly linked to both named measures, not a related benefit elsewhere in the paragraph.",
+          "repairAction": "Draw a quick arrow from each named measure to its shared consequence and rescan only that clause."
+        },
+        {
+          "questionId": "summary-urban-farms-04",
+          "likelyMisread": "I may select a broad resource term from world knowledge instead of the more specific object stated in the passage.",
+          "predictedGrammarCategory": "Uncountable noun phrase following a preposition.",
+          "wordLimitCheck": "Count any adjective as a separate word and reject a three-word expansion even if it is semantically precise.",
+          "promptOnlyGuessRisk": "High: the environmental context makes the missing object easy to guess generically.",
+          "evidenceSearch": "Stay in the design paragraph and find the explicit consequence attached to collection, paying attention to specificity.",
+          "passageSpanCheck": "Check that the entire candidate appears as one continuous unit and that shortening it would not change the reference.",
+          "grammarRecheck": "Confirm that the phrase can follow the visible preposition without an additional article.",
+          "spellingCheck": "Copy the source form exactly and ensure that no compound has been split, joined, or normalized.",
+          "competitorCheck": "Compare the precise demand object with broader mentions of irrigation and environmental benefits.",
+          "decisionRule": "Retain the most specific contiguous source wording that is explicitly governed by the reduction claim.",
+          "repairAction": "If my candidate came from prediction, locate the complete clause and replace the prediction with its exact grammatical object."
+        },
+        {
+          "questionId": "summary-urban-farms-05",
+          "likelyMisread": "I may confuse the schools' activity with the separate examples involving restaurants or community groups.",
+          "predictedGrammarCategory": "Plural countable noun phrase naming an educational activity.",
+          "wordLimitCheck": "Confirm the activity span is at most two words and do not append contextual detail from the same sentence.",
+          "promptOnlyGuessRisk": "Medium: a school context supports many plausible lesson types.",
+          "evidenceSearch": "Move to the social-function paragraph and isolate the example whose actor is schools.",
+          "passageSpanCheck": "Make sure the activity is a direct adjacent span after the relevant use construction rather than a summary of the whole example list.",
+          "grammarRecheck": "Check that the plural or mass form follows the preposition naturally and matches the sentence's educational role.",
+          "spellingCheck": "Compare the candidate letter by letter and preserve the printed number form.",
+          "competitorCheck": "Test the other social activities but reject them because their actors and purposes do not match the prompt.",
+          "decisionRule": "Use only the activity tied directly to schools in the passage, subject to exact-span and two-word checks.",
+          "repairAction": "Underline the actor in the prompt and find the identical actor before evaluating any possible activity."
+        },
+        {
+          "questionId": "summary-urban-farms-06",
+          "likelyMisread": "I may answer from the list of planning roles generally instead of tracking the action assigned specifically to engineers.",
+          "predictedGrammarCategory": "Singular countable noun phrase functioning as the direct object of the infinitive.",
+          "wordLimitCheck": "Keep only the direct object span and verify that it contains no more than two words.",
+          "promptOnlyGuessRisk": "Low: the role-action pairing sharply narrows where to search, though a building-related guess remains possible.",
+          "evidenceSearch": "Go to the final planning sentence and match the named professional role with its stated action.",
+          "passageSpanCheck": "Verify that the object immediately associated with that action is contiguous and not borrowed from another role's duty.",
+          "grammarRecheck": "Read the completed infinitive structure and check whether the visible article agrees with the noun form.",
+          "spellingCheck": "Copy the exact singular form and check that no nearby punctuation has been absorbed.",
+          "competitorCheck": "Contrast the engineers' object with the choices and responsibilities assigned to growers and managers.",
+          "decisionRule": "Select the object linked to the specified actor and verb, not merely any planning noun in the same sentence.",
+          "repairAction": "Create a three-row actor-action table mentally and return only to the row named by the prompt."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:summary-completion:summary-repair-cafes",
+      "passageBarrier": "medium",
+      "wordLimitRisk": "medium",
+      "promptCueRisk": "medium",
+      "hintCueRisk": "low",
+      "shortcutRisks": [
+        "Using everyday knowledge about repair services instead of matching the passage's educational framing.",
+        "Confusing examples of preparation, safety, social benefit, and operating principle because they share the same topic.",
+        "Changing the grammatical number of a copied span to make it fit."
+      ],
+      "transferValue": "High transfer value for distinguishing examples from claims and for verifying actor-action links in a passage with repeated thematic vocabulary.",
+      "nextAction": "On review, label each paragraph by function and require an explicit actor, action, and consequence match before accepting any span.",
+      "questionWalkthrough": [
+        {
+          "questionId": "summary-repair-cafes-01",
+          "likelyMisread": "I may narrow the object category to one of the examples of faults rather than identify what residents bring overall.",
+          "predictedGrammarCategory": "Plural countable noun phrase as the direct object of the repair verb.",
+          "wordLimitCheck": "Count the full object phrase exactly as printed and reject it if it exceeds two words.",
+          "promptOnlyGuessRisk": "High: ordinary repair contexts offer many plausible household-item labels.",
+          "evidenceSearch": "Use the opening sentence and identify the broad object category associated with residents, breakage, and volunteer help.",
+          "passageSpanCheck": "Confirm that the category is a contiguous source span and not a synthesis of the following examples.",
+          "grammarRecheck": "Check that a plural direct object follows the verb naturally and matches the lack of an article in the prompt.",
+          "spellingCheck": "Preserve the exact plural form and check each component against the passage.",
+          "competitorCheck": "Compare the broad category with the later list of specific faults and reject any candidate that answers how an item failed.",
+          "decisionRule": "Choose the passage's category for the things repaired, not a defect or replacement component.",
+          "repairAction": "If I selected an example, reread the first clause and ask what noun the examples belong to."
+        },
+        {
+          "questionId": "summary-repair-cafes-02",
+          "likelyMisread": "I may focus on the instruction to remain present and overlook the contrast that explains its purpose.",
+          "predictedGrammarCategory": "Singular countable predicate noun after an indefinite article.",
+          "wordLimitCheck": "Ensure the copied predicate contains at most two words and does not include surrounding contrast language.",
+          "promptOnlyGuessRisk": "Medium: the service contrast strongly suggests a function but does not guarantee the passage's exact word.",
+          "evidenceSearch": "Find the sentence about visitors staying and inspect the stated transformation of the event.",
+          "passageSpanCheck": "Verify that the candidate is the exact contiguous complement of the transformation clause.",
+          "grammarRecheck": "Check that it is singular and countable after the visible indefinite article.",
+          "spellingCheck": "Copy the noun exactly and do not replace it with a related form.",
+          "competitorCheck": "Compare the stated educational outcome with nearby labels for meetings, objects, and services.",
+          "decisionRule": "Accept only the noun that names what the event becomes because participants remain involved.",
+          "repairAction": "Trace the prompt's cause-and-result structure back to one sentence and identify the result complement before copying."
+        },
+        {
+          "questionId": "summary-repair-cafes-03",
+          "likelyMisread": "I may copy the equipment being sorted rather than the items whose availability is checked.",
+          "predictedGrammarCategory": "Plural countable noun phrase modified by the visible adjective.",
+          "wordLimitCheck": "Do not duplicate the adjective already supplied in the prompt; count only the missing contiguous words and cap them at two.",
+          "promptOnlyGuessRisk": "Medium: preparation vocabulary makes several nearby nouns seem interchangeable.",
+          "evidenceSearch": "Locate the pre-session preparation list and distinguish the object of sorting from the object of the availability check.",
+          "passageSpanCheck": "Confirm that the selected words follow the matching availability relation as one continuous span.",
+          "grammarRecheck": "Check plural agreement with the visible verb and ensure the phrase combines naturally with the supplied modifier.",
+          "spellingCheck": "Verify the plural ending and copy any internal spacing exactly.",
+          "competitorCheck": "Test the nearby tool-related noun against the specific verb in the prompt and reject it if the passage assigns it a different action.",
+          "decisionRule": "Match both the preparation stage and the availability verb; topic proximity alone is insufficient.",
+          "repairAction": "Separate the coordinated actions into mini-pairs and match the prompt to the correct verb-object pair."
+        },
+        {
+          "questionId": "summary-repair-cafes-04",
+          "likelyMisread": "I may substitute a professional title for the qualification that the passage actually associates with inspection.",
+          "predictedGrammarCategory": "Uncountable abstract noun following an adjective and a preposition.",
+          "wordLimitCheck": "Use no more than two words and avoid adding a person label that is not part of the copied qualification phrase.",
+          "promptOnlyGuessRisk": "High: safety conventions encourage plausible occupational guesses from outside knowledge.",
+          "evidenceSearch": "Find the electrical-device example and identify the stated property of the people permitted to inspect.",
+          "passageSpanCheck": "Check that the property is expressed as one adjacent source span and not inferred from the safety rationale.",
+          "grammarRecheck": "Confirm that the phrase follows the visible adjective naturally and does not require an article or plural marker.",
+          "spellingCheck": "Copy the abstract noun form exactly rather than converting it into a person noun.",
+          "competitorCheck": "Compare qualification language with nearby references to experience and safety, keeping only what is linked to this inspection.",
+          "decisionRule": "Prefer the explicit inspector qualification over an inferred job title or general safety concept.",
+          "repairAction": "Circle the people-reference in the source sentence and copy only the grammatical complement that describes them."
+        },
+        {
+          "questionId": "summary-repair-cafes-05",
+          "likelyMisread": "I may choose the skill-related outcome I expect students to gain instead of the exact psychological outcome stated.",
+          "predictedGrammarCategory": "Uncountable abstract noun serving as the direct object of the development verb.",
+          "wordLimitCheck": "Reject multiword paraphrases over the limit and do not add a modifier unless it belongs to the exact source span.",
+          "promptOnlyGuessRisk": "High: education prompts invite generic outcomes such as ability or experience.",
+          "evidenceSearch": "Go to the social-benefits list, locate the student example, and isolate its outcome before the tool context.",
+          "passageSpanCheck": "Verify that the outcome is a contiguous source span directly governed by the relevant verb.",
+          "grammarRecheck": "Check that an uncountable noun can appear without an article in the prompt frame.",
+          "spellingCheck": "Copy the exact derivational form and ensure it has not been changed into an adjective.",
+          "competitorCheck": "Compare the student outcome with the knowledge shared by older residents and the social interaction of neighbours.",
+          "decisionRule": "Keep only the outcome explicitly assigned to students, not another group's benefit or an inferred practical skill.",
+          "repairAction": "Map each social group to its own outcome and revisit the student row if the first choice came from expectation."
+        },
+        {
+          "questionId": "summary-repair-cafes-06",
+          "likelyMisread": "I may focus on limits to daily intake as the answer rather than recognize that this action protects a broader operating focus.",
+          "predictedGrammarCategory": "Gerund or verbal-noun phrase completing the object of a preposition.",
+          "wordLimitCheck": "Count both elements if the source uses a two-word activity phrase and do not append the surrounding modifier.",
+          "promptOnlyGuessRisk": "Medium: the phrase shared in the prompt narrows the grammar but can encourage a familiar collocation guess.",
+          "evidenceSearch": "Read the final sentence and identify the activity that the cafes keep central, separate from the numerical limit used to support it.",
+          "passageSpanCheck": "Confirm that the activity phrase is adjacent in the source and can be lifted without grammatical alteration.",
+          "grammarRecheck": "Check that the verbal noun fits after the supplied adjective and that the full phrase functions as the preposition's object.",
+          "spellingCheck": "Verify the ending of the verbal noun and the exact form of any accompanying noun.",
+          "competitorCheck": "Contrast the core activity with object limits, commercial pressure, and speed, which are conditions rather than the focus itself.",
+          "decisionRule": "Select the explicitly named shared focus, not the protective policy or the threat it addresses.",
+          "repairAction": "Rewrite the final sentence as policy versus purpose, then search only the purpose side for an exact span."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:summary-completion:summary-shade-mapping",
+      "passageBarrier": "medium",
+      "wordLimitRisk": "medium",
+      "promptCueRisk": "medium",
+      "hintCueRisk": "low",
+      "shortcutRisks": [
+        "Assuming that all answers follow the sequence of the summary without independently locating each claim.",
+        "Choosing a general heat or planning term from the topic instead of the exact object in the matched clause.",
+        "Ignoring which intervention is temporary, which is long term, and which is merely a measurement method."
+      ],
+      "transferValue": "High transfer value for separating observations, vulnerable groups, interventions, and implementation requirements in a compact policy passage.",
+      "nextAction": "Repeat the task with paragraph-function labels, then justify every tentative span by matching the summary's actor, action, and comparison before checking form.",
+      "questionWalkthrough": [
+        {
+          "questionId": "summary-shade-mapping-01",
+          "likelyMisread": "I may look for a general temperature trend rather than the specific event whose frequency is changing.",
+          "predictedGrammarCategory": "Plural countable noun serving as the subject of the subordinate clause.",
+          "wordLimitCheck": "Confirm that the event name is no more than two words and do not add frequency language already supplied by the prompt.",
+          "promptOnlyGuessRisk": "Medium: the hot-city title supports several weather-event predictions.",
+          "evidenceSearch": "Begin with the opening causal clause and match the change-in-frequency idea rather than scanning all heat vocabulary.",
+          "passageSpanCheck": "Ensure the event term is one contiguous source span and carries the same grammatical number.",
+          "grammarRecheck": "Check plural agreement with the visible verb and confirm that the sentence remains natural without an article.",
+          "spellingCheck": "Copy the event term exactly, including whether it is printed as one word or more.",
+          "competitorCheck": "Compare the opening event with later mentions of exposure, temperature, and surface conditions, rejecting those without a frequency claim.",
+          "decisionRule": "Use the event explicitly linked to becoming more common, not a broader topic term.",
+          "repairAction": "If I chose a generic heat noun, return to the first subordinate clause and identify its complete subject."
+        },
+        {
+          "questionId": "summary-shade-mapping-02",
+          "likelyMisread": "I may select the street teams or their observations because they are more concrete than the initial data source.",
+          "predictedGrammarCategory": "Plural countable noun phrase following a preposition.",
+          "wordLimitCheck": "Retain only the initial source phrase, count both words, and do not include the following conjunction.",
+          "promptOnlyGuessRisk": "Medium: mapping commonly suggests several technological inputs not necessarily stated here.",
+          "evidenceSearch": "Use the contrast in the first paragraph to distinguish what begins the process from what teams collect later.",
+          "passageSpanCheck": "Confirm that the selected starting input is adjacent in the source and occurs before the contrast marker.",
+          "grammarRecheck": "Check that the plural phrase fits after the visible preposition with no missing article.",
+          "spellingCheck": "Compare both components exactly and preserve the source plural.",
+          "competitorCheck": "Contrast the starting input with street observations, maps, and later portable measurement tools.",
+          "decisionRule": "Choose the source explicitly governed by the process-begins relation, not another method mentioned elsewhere.",
+          "repairAction": "Mark the prompt's before-and-after contrast and align each side with the same contrast in the passage."
+        },
+        {
+          "questionId": "summary-shade-mapping-03",
+          "likelyMisread": "I may answer with a general exposure condition while overlooking the precise cause stated for several blocks.",
+          "predictedGrammarCategory": "Uncountable noun phrase functioning as the object of a preposition.",
+          "wordLimitCheck": "Count any modifier as a word and retain at most the two-word contiguous environmental condition.",
+          "promptOnlyGuessRisk": "High: the heat context makes several exposure phrases seem self-evident.",
+          "evidenceSearch": "Find the route comparison in the opening paragraph and identify what pedestrians are exposed to over distance.",
+          "passageSpanCheck": "Verify that the environmental condition is copied as one span directly after the exposure relation.",
+          "grammarRecheck": "Check that the mass noun phrase works without an article after the visible preposition.",
+          "spellingCheck": "Copy the modifier and noun exactly and check spacing.",
+          "competitorCheck": "Compare the immediate exposure condition with later measured quantities and broader heat-exposure language.",
+          "decisionRule": "Retain the specific condition attached to the multi-block route, not a later metric or general risk label.",
+          "repairAction": "Locate the sentence containing the short-versus-long comparison and restrict the search to its causal clause."
+        },
+        {
+          "questionId": "summary-shade-mapping-04",
+          "likelyMisread": "I may pick the benefit itself or the group helped rather than the small action planners are trying to locate.",
+          "predictedGrammarCategory": "Singular countable noun after an indefinite article.",
+          "wordLimitCheck": "Use no more than two words and do not copy the result clause that follows the missing noun.",
+          "promptOnlyGuessRisk": "Medium: urban-planning vocabulary supplies several plausible action nouns.",
+          "evidenceSearch": "Move to the social-data paragraph and find the sentence joining comparison of movements to a high-impact place.",
+          "passageSpanCheck": "Confirm that the noun is a contiguous span modified by the same size adjective in the source.",
+          "grammarRecheck": "Check singular countability after the visible article and agreement with the modal verb.",
+          "spellingCheck": "Copy the full noun form exactly and avoid substituting a related verb.",
+          "competitorCheck": "Compare the action noun with nearby data, routes, stops, and groups, rejecting things that cannot logically produce the stated benefit.",
+          "decisionRule": "Choose the small planned action named in the matched clause, not its location, evidence source, or outcome.",
+          "repairAction": "Break the source sentence into method, target, and result, then map the blank only to the target action."
+        },
+        {
+          "questionId": "summary-shade-mapping-05",
+          "likelyMisread": "I may choose any fast intervention in the list without respecting the temporary label already supplied in the prompt.",
+          "predictedGrammarCategory": "Plural countable noun completing a modified noun phrase.",
+          "wordLimitCheck": "Because the prompt already supplies a modifier, count only the copied noun span and keep it within two words.",
+          "promptOnlyGuessRisk": "High: common street-shade solutions are easy to supply from outside knowledge.",
+          "evidenceSearch": "Find the narrow-street contrast and compare the listed faster options with the long-term option discussed just before it.",
+          "passageSpanCheck": "Confirm that the candidate immediately follows the same modifier in the source and is not taken from another list item.",
+          "grammarRecheck": "Check plural agreement with the modal verb and verify that the supplied modifier forms a natural phrase with the noun.",
+          "spellingCheck": "Copy the plural spelling exactly and check for any internal vowel or ending error.",
+          "competitorCheck": "Evaluate the other fast options and the later sensors, rejecting any that do not carry the temporary description in the source.",
+          "decisionRule": "Use the intervention explicitly marked as temporary in the narrow-street sentence, not merely another quick or portable item.",
+          "repairAction": "Anchor on the supplied modifier in both prompt and passage before considering any noun from the intervention list."
+        },
+        {
+          "questionId": "summary-shade-mapping-06",
+          "likelyMisread": "I may select budgets, schedules, or rules because they are concrete implementation details, although the prompt asks for the broader framework connecting them.",
+          "predictedGrammarCategory": "Plural countable noun phrase following a preposition.",
+          "wordLimitCheck": "Confirm the framework phrase contains no more than two words and exclude its following relative clause.",
+          "promptOnlyGuessRisk": "Medium: the listed implementation features constrain meaning but still allow several policy labels.",
+          "evidenceSearch": "Use the concluding paragraph and locate what data collection is explicitly connected with before the details of actors, money, and feedback.",
+          "passageSpanCheck": "Verify that the framework is one uninterrupted source span and that all listed details modify that same phrase.",
+          "grammarRecheck": "Check plural agreement with the relative verb and ensure the phrase fits naturally after the visible preposition.",
+          "spellingCheck": "Copy both words exactly if two are used and preserve the source plural ending.",
+          "competitorCheck": "Compare the umbrella framework with the individual implementation mechanisms and reject any detail too narrow to govern all three prompt elements.",
+          "decisionRule": "Select the explicitly named plural framework that contains action, funding, and feedback, not one of those components.",
+          "repairAction": "Bracket the relative clause in the source and identify the noun phrase it modifies before applying the exact-span checks."
+        }
+      ]
+    }
+  ]
+}

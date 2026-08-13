@@ -1,0 +1,202 @@
+{
+  "schemaVersion": "ielts-reading-sentence-completion-baseline.v1",
+  "capturedAt": "2026-08-09T16:23:37Z",
+  "scope": {
+    "unit": "F0.2b.8",
+    "format": "sentence-completion",
+    "passages": 3,
+    "questions": 18,
+    "blanks": 18
+  },
+  "assets": [
+    {
+      "assetId": "formative:sentence-completion:sentence-wetland-parks",
+      "setId": "sentence-wetland-parks",
+      "title": "Wetland parks and urban flood control",
+      "wordCount": 198,
+      "paragraphCount": 4,
+      "questionCount": 6,
+      "blankCount": 6,
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "questionIds": [
+        "sentence-wetlands-01",
+        "sentence-wetlands-02",
+        "sentence-wetlands-03",
+        "sentence-wetlands-04",
+        "sentence-wetlands-05",
+        "sentence-wetlands-06"
+      ],
+      "sourceObjectSha256": "42f7976e179acf1b8afec86285530ad9b5a5a26aba13ca89c7ad82c86bbf22db",
+      "passageSha256": "f1f74d465074ba9570c9c4cbb381538a4b0f38c16251930c4d90f2126d14e1a8"
+    },
+    {
+      "assetId": "formative:sentence-completion:sentence-library-makerspaces",
+      "setId": "sentence-library-makerspaces",
+      "title": "Library makerspaces and practical learning",
+      "wordCount": 203,
+      "paragraphCount": 4,
+      "questionCount": 6,
+      "blankCount": 6,
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "questionIds": [
+        "sentence-makerspaces-01",
+        "sentence-makerspaces-02",
+        "sentence-makerspaces-03",
+        "sentence-makerspaces-04",
+        "sentence-makerspaces-05",
+        "sentence-makerspaces-06"
+      ],
+      "sourceObjectSha256": "8f2b278d1b180a17a78f9aa3057364ebf3a8e401ff6b3b529ac109f8936da6bc",
+      "passageSha256": "e13b68261fc5b2e3c3488ffbb2f920710954d7959d744d0deb24b572edd7b5db"
+    },
+    {
+      "assetId": "formative:sentence-completion:sentence-night-markets",
+      "setId": "sentence-night-markets",
+      "title": "Night markets and local economies",
+      "wordCount": 196,
+      "paragraphCount": 4,
+      "questionCount": 6,
+      "blankCount": 6,
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "questionIds": [
+        "sentence-night-markets-01",
+        "sentence-night-markets-02",
+        "sentence-night-markets-03",
+        "sentence-night-markets-04",
+        "sentence-night-markets-05",
+        "sentence-night-markets-06"
+      ],
+      "sourceObjectSha256": "b0434ae0c3ed919b06a0c256586f1753d299b260bbe5aa34c2813ed788622ff3",
+      "passageSha256": "612893d0f0aabbd88a9b75699523b67530744c3402dfe051e0f4197d7657ff1c"
+    }
+  ],
+  "hashMethods": {
+    "sourceObjectSha256": "SHA-256 of recursively key-sorted JSON for the complete source set object.",
+    "passageSha256": "SHA-256 of the passage text only after NFKC normalization and whitespace collapse to single spaces; this is the same canonical method used by rights registry policy v8."
+  },
+  "structuralRisk": {
+    "wordLimitContract": {
+      "declaredInstruction": "NO MORE THAN TWO WORDS",
+      "setsWithDeclaredInstruction": 3,
+      "setsWithMaxWordsField": 0,
+      "runtimeHardCodedDisplayLimit": 2,
+      "wordLimitParticipatesInScoring": false
+    },
+    "answerSurfaceProfile": {
+      "questions": 18,
+      "oneWordPrimaryAnswers": 5,
+      "twoWordPrimaryAnswers": 13,
+      "primaryAnswersOverTwoWords": 0,
+      "primaryAnswersExactPassageTokenSequences": 18,
+      "primaryAnswerTokenSequencesUniqueWithinBank": 18,
+      "questionsWithAcceptedAlternativeEntry": 2,
+      "normalizedRedundantAlternativeEntries": 1,
+      "manuallyClassifiedNominalOrNounPhrasePrimaryAnswers": 16,
+      "manualClassificationCaveat": "This aggregate surface classification is reviewer judgment, not an IELTS rule or a content-quality certification."
+    },
+    "textOrder": {
+      "setsWithStrictlyAscendingEvidenceOrder": 3,
+      "totalSets": 3,
+      "orderViolations": 0
+    },
+    "shortcutSignals": {
+      "questionsWhoseImmediateLeftPassageTokenMatchesPromptContext": 13,
+      "questionsWithHintsAvailableBeforeResponse": 18,
+      "preResponseHintsWithAnchorOrLocationLanguage": 17,
+      "preResponseHintsExplicitlyProvidingParaphrase": 1,
+      "questionsWithPostCheckExplanation": 18,
+      "sameQuestionPositionAcrossSetsModalPrimaryAnswerWordCountHits": 14,
+      "sameQuestionPositionAcrossSetsEligible": 18,
+      "surfaceShortcutReviewRequired": true
+    },
+    "normalizationContract": {
+      "trimOuterWhitespace": true,
+      "lowercase": true,
+      "collapseInternalWhitespace": true,
+      "removeTrailingAsciiPunctuation": ".,;:!?",
+      "unicodeNormalization": false,
+      "hyphenNormalization": false,
+      "britishAmericanSpellingOnlyWhenExplicitAlternativeExists": true
+    }
+  },
+  "runtimeAndAccessibilityBaseline": {
+    "runtimeClassification": "guided-training-runtime-with-immediate-feedback-not-practice-or-exam-simulation",
+    "answerKeysDeliveredToClient": true,
+    "inputLocksAfterExplicitCheck": true,
+    "inputLocksWhileTyping": false,
+    "correctnessAndExplanationShownImmediatelyAfterCheck": true,
+    "hintsAvailableBeforeResponse": true,
+    "attemptStatePersisted": false,
+    "resetRequiresConfirmation": false,
+    "resetScope": "all-six-blanks-in-one-passage-engine",
+    "wordLimitVisualWarningPresent": true,
+    "wordLimitEnforcedInScoring": false,
+    "inputAccessibleNamePresent": true,
+    "inputAccessibleNamesUniqueAcrossThreeSets": false,
+    "breadcrumbHasNavAndCurrentSemantics": false,
+    "englishPassageHasLangAttribute": false,
+    "progressIndicatorHasProgrammaticRoleNameAndValue": false,
+    "feedbackHasLiveRegion": false,
+    "hintToggleHasExpandedAndControlsSemantics": false,
+    "headingHierarchyIsOrdered": false,
+    "feedbackFocusManaged": false,
+    "uiUxStaticReviewApplicable": true,
+    "playwrightApplicableToAuditOnlyScaffoldDelta": false,
+    "playwrightBecomesApplicableOnLearnerFacingOrRuntimeDrift": true
+  },
+  "learnerFacingSourceSha256": {
+    "src/data/practica-exams/seo-catalog.ts": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de",
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/sentence-completion/page.tsx": "66b94b11b91e0b8042ea39233136cadba4e666fd63c3d30912deed60c8062986",
+    "src/components/exam-practice/SummaryCompletionPracticeEngine.tsx": "cae94b947ffc61e112fbe13269ad48e1ee121ca7faeccc8b370d2b124893de98",
+    "src/components/exam-practice/SummaryCompletionPassageBank.tsx": "54a78799014098dd5f159f63bf654ad12181042be40182ab8381bfc1e51a3c58",
+    "src/components/exam-practice/OfficialStrategyCard.tsx": "b4f575bd4bc3655f5f0682404f3d937020b4cfd3d54b42adac758647d9133e3e",
+    "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx": "73d3b725c68c0ed193ceba23ebddca3fec7978f6e84712c99b3dddc190443711",
+    "src/components/exam-practice/StructuredData.tsx": "3e59a611e4d2bac9ce5994bdbd4ba6303407a5ddf82b26a340efe1f3c2b788d8"
+  },
+  "routeObjectSha256": "76c8f69fd90f898a61b21099c480ebf694d03af4db589fbff5002e9020215585",
+  "renderDependencyClosureSha256": {
+    "src/app/(site)/layout.tsx": "b427054c94eb33f0177c05c241a2b3920c76e2b7497ad3822b7f379f8b9f2a11",
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/sentence-completion/page.tsx": "66b94b11b91e0b8042ea39233136cadba4e666fd63c3d30912deed60c8062986",
+    "src/app/globals.css": "60efb283eab56b59072c8e43ac7469a3c34977346079600b525b19556207915d",
+    "src/app/layout.tsx": "03d06f0aba4ac802fd9bf69b63229af511a8f4daa132d405dfc36a1a19f01dda",
+    "src/components/SiteNav.tsx": "9114393b428d703d41f84807e6322527c2f79036e4fe05eb8b43cd1238e4307b",
+    "src/components/SiteSkipLink.tsx": "d0c3ca1c465744e16e756623c704834083518acc1c84d83f09b581071cef967e",
+    "src/components/ThemeProvider.tsx": "0bfdbb8105d100202331d5409c3b3cf0cd8ae8a0d231c03ec93c8836ca06c340",
+    "src/components/WhatsAppFloat.tsx": "762256aadcff27912dacf99bb56d6fc6222ad0e54104910a545e8954b0a02255",
+    "src/components/exam-practice/SummaryCompletionPracticeEngine.tsx": "cae94b947ffc61e112fbe13269ad48e1ee121ca7faeccc8b370d2b124893de98",
+    "src/components/exam-practice/SummaryCompletionPassageBank.tsx": "54a78799014098dd5f159f63bf654ad12181042be40182ab8381bfc1e51a3c58",
+    "src/components/exam-practice/OfficialStrategyCard.tsx": "b4f575bd4bc3655f5f0682404f3d937020b4cfd3d54b42adac758647d9133e3e",
+    "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx": "73d3b725c68c0ed193ceba23ebddca3fec7978f6e84712c99b3dddc190443711",
+    "src/components/exam-practice/StructuredData.tsx": "3e59a611e4d2bac9ce5994bdbd4ba6303407a5ddf82b26a340efe1f3c2b788d8",
+    "src/data/practica-exams/seo-catalog.ts": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de",
+    "src/lib/supabase/client.ts": "acb02d5d75dad866b04380241e3a40623de46f098ee98ff017be8138c0d076e4"
+  },
+  "nextUnit": {
+    "unit": "F0.2b.9",
+    "format": "summary-completion",
+    "sourceSha256": {
+      "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/summary-completion/page.tsx": "42b3c482e04c4a0453aced1b42d669a67f6063ad1f1e0d8fb9668daac18c22ed",
+      "src/components/exam-practice/SummaryCompletionPracticeEngine.tsx": "cae94b947ffc61e112fbe13269ad48e1ee121ca7faeccc8b370d2b124893de98",
+      "src/components/exam-practice/SummaryCompletionPassageBank.tsx": "54a78799014098dd5f159f63bf654ad12181042be40182ab8381bfc1e51a3c58",
+      "src/lib/ielts/academic-reading-question-types.ts": "455924c25a1e33355265497a5c51d4cdb7d34864b34d539f1a7b91bedf3ce3ec",
+      "src/data/practica-exams/seo-catalog.ts": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de"
+    },
+    "routeObjectSha256": "06654687307ce15a00429a58bcbc8cc5cf0b5b78593306613acff7fa26c6f0a4",
+    "sourceObjectSha256": {
+      "summary-urban-farms": "f10464976342bfef4607a46ba77d611310ffd7cabeae7c9949bd78a100d93640",
+      "summary-repair-cafes": "1d4de4d085159c2cb86336bc9f7277d39f26e1ab4d5ff3a4eac0c4a5ff03f2c4",
+      "summary-shade-mapping": "1321f00ec9e13f803a18a8582c40aad5398dd1ea73dd04eb552d6a1eec5e0230"
+    },
+    "scope": {
+      "passages": 3,
+      "questions": 18,
+      "renderDependencyClosurePaths": 16
+    },
+    "sharedDependencyBoundary": [
+      "src/components/exam-practice/SummaryCompletionPracticeEngine.tsx",
+      "src/components/exam-practice/SummaryCompletionPassageBank.tsx",
+      "src/data/practica-exams/seo-catalog.ts"
+    ]
+  },
+  "interpretation": "Frozen audit-only learner-facing and static render identity for F0.2b.8. This baseline contains IDs, counts, aggregate surface measurements and hashes, but no answers, accepted-answer values, explanations, hints, learner input or PII. Hashes cover source objects that contain runtime keys without disclosing those keys here. The three assets remain unadjudicated and must be treated as unknown-quarantined until the later rights, factual, IELTS and human gates complete. Static UI/UX review records inherited defects; Playwright is not applicable to this scaffold-only delta while every direct and render-closure hash remains unchanged, and that is not a conformity finding. Runtime-generated and remote copy remain outside the static closure. Work stops before F0.2b.9 Summary Completion."
+}

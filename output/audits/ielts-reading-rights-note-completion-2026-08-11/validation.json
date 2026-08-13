@@ -1,0 +1,1317 @@
+{
+  "schemaVersion": "ielts-reading-note-completion-rights-validation.v1",
+  "generatedAt": "2026-08-11T16:26:42Z",
+  "unit": "F0.2b.10 — three formative Note Completion passages",
+  "status": "pass",
+  "passMeaning": "PASS certifies audit coverage, identity, quarantine, prompt-only review, exact-answer adjudication and risk detection. It does not approve keys, factuality, rights, publication, runtime conformity or student efficacy; bank and content certification remain BLOCKED.",
+  "scope": {
+    "passages": 3,
+    "questions": 18,
+    "canonicalAnswers": 18,
+    "rawAcceptedEntries": 18,
+    "normalizedAcceptedValues": 18,
+    "registryEntriesInUnit": 3,
+    "registryEntriesTotal": 39,
+    "coveredAssetIds": [
+      "formative:note-completion:note-mobile-libraries",
+      "formative:note-completion:note-seed-banks",
+      "formative:note-completion:note-night-libraries"
+    ],
+    "parentF02bRemainsOpen": true,
+    "scopedLearnerSourcesChangedSinceBaseline": false
+  },
+  "checks": {
+    "exactCoverageThreeEighteenEighteenEighteenEighteen": true,
+    "stableUniqueIds": true,
+    "registryPolicyV8Pinned": true,
+    "actualAssetsAllQuarantined": true,
+    "officialFormatAndSampleSourcesRetrieved": true,
+    "factualSourceAvailabilityRecordedNotVerified": true,
+    "renderDependencyClosurePinned": true,
+    "auditRegistryAbsentFromLearnerRuntimeImports": true,
+    "threePacketsContainNoKeysAlternativesEditorialFeedbackHintsPiiOrAssignments": true,
+    "promptOnlyReviewCoverageComplete": true,
+    "expertFirstPassPersistedAndPinned": true,
+    "exactOneBestAnswerContractEnforced": true,
+    "expertAgreementEighteenOfEighteen": true,
+    "evidenceSpansClosestCompetitorWordLimitAndOrderEnforced": true,
+    "acceptedAnswerInventoryEighteenExact": true,
+    "noAcceptedAlternativesInventoried": true,
+    "factualClaimsFifteenExact": true,
+    "walkthroughThreeByEighteenExact": true,
+    "multidimensionalShortcutAuditComplete": true,
+    "runtimeExplicitCheckFeedbackKeyHintsAndClientAnswersDetected": true,
+    "runtimeStoredMaxWordsWarningDetected": true,
+    "runtimeNotMisrepresentedAsPracticeOrExam": true,
+    "statisticalCertificationWithheldNBelow100": true,
+    "contentCertificationBlocked": true,
+    "contentMutationDenied": true,
+    "chronologyMonotonicAndNotFutureDated": true,
+    "boardCurrentClosedNextAndParentOpenExactlyOnce": true,
+    "adversarialLeakMutationsDetected": true
+  },
+  "decisions": [
+    {
+      "assetId": "formative:note-completion:note-mobile-libraries",
+      "title": "Mobile libraries and community reading",
+      "sourceObjectSha256": "8d64253dbba9480da1cb9de4082bbf4c7bbee221fc17f748e9f9ddaeadb8ea3f",
+      "passageSha256": "c22dfef22bc06bd72409d3952715faee8ade98a21f9a019384b0a3c46b6fb343",
+      "wordCount": 232,
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "questionCount": 6,
+      "canonicalAnswerCount": 6,
+      "acceptedEntryCount": 6,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 5,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    {
+      "assetId": "formative:note-completion:note-seed-banks",
+      "title": "Community seed banks",
+      "sourceObjectSha256": "f67761984beb116c7f80dbc9f8807b976a79dda2a2890fdc9b926c8815c438ff",
+      "passageSha256": "e754e89bcb82bc8f9655028851c8696014be32fcbcd8007f6faf2b245ee38709",
+      "wordCount": 239,
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "questionCount": 6,
+      "canonicalAnswerCount": 6,
+      "acceptedEntryCount": 6,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 5,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    {
+      "assetId": "formative:note-completion:note-night-libraries",
+      "title": "Night study spaces in public libraries",
+      "sourceObjectSha256": "e77d5edaaaefd183affe68194bf95ad7cd6696cdbecc1148b7281c46c8f46ccd",
+      "passageSha256": "c7d601de88b071a6061fa7b20ebb292656934f2e1808f0a9d69809a1f16df218",
+      "wordCount": 236,
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "questionCount": 6,
+      "canonicalAnswerCount": 6,
+      "acceptedEntryCount": 6,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 5,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    }
+  ],
+  "visibleClaims": [
+    {
+      "text": "textos originales de WeLearn",
+      "sourcePath": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/note-completion/page.tsx",
+      "observed": true
+    },
+    {
+      "text": "Banco original WeLearn",
+      "sourcePath": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/note-completion/page.tsx",
+      "observed": true
+    },
+    {
+      "text": "sin copiar preguntas oficiales",
+      "sourcePath": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/note-completion/page.tsx",
+      "observed": true
+    },
+    {
+      "text": "preparado por el equipo académico de WeLearn y revisado en julio de 2026",
+      "sourcePath": "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+      "observed": true
+    },
+    {
+      "text": "los ejercicios son originales de WeLearn",
+      "sourcePath": "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+      "observed": true
+    }
+  ],
+  "renderDependencyClosure": {
+    "sourceCount": 15,
+    "paths": [
+      "src/app/(site)/layout.tsx",
+      "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/note-completion/page.tsx",
+      "src/app/globals.css",
+      "src/app/layout.tsx",
+      "src/components/SiteNav.tsx",
+      "src/components/SiteSkipLink.tsx",
+      "src/components/ThemeProvider.tsx",
+      "src/components/WhatsAppFloat.tsx",
+      "src/components/exam-practice/NoteCompletionEngine.tsx",
+      "src/components/exam-practice/NoteCompletionPassageBank.tsx",
+      "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+      "src/components/exam-practice/StructuredData.tsx",
+      "src/data/practica-exams/seo-catalog.ts",
+      "src/lib/ielts/academic-reading-question-types.ts",
+      "src/lib/supabase/client.ts"
+    ],
+    "limitation": "Static local-import closure from root/site layouts and route. Runtime-generated or remote copy remains outside scope."
+  },
+  "provenanceSearch": {
+    "schemaVersion": "ielts-reading-note-completion-provenance-search.v1",
+    "searchedAt": "2026-08-11T16:04:00Z",
+    "method": "Directed exact-title plus exact opening-fragment public-web search. Returned result surfaces were reviewed for verbal identity; candidate factual URLs were kept separate from provenance identity and were not treated as proof of authorship or license.",
+    "searchSurface": "public web search",
+    "queries": [
+      {
+        "assetId": "formative:note-completion:note-mobile-libraries",
+        "query": "\"Mobile libraries and community reading\" \"In several rural regions, mobile libraries have become a practical way\"",
+        "resultsReviewed": [
+          {
+            "title": "State Library of New South Wales — Mobile and Outreach Services report",
+            "url": "https://pls.sl.nsw.gov.au/sites/default/files/2023-09/mobile_outreach_services.pdf",
+            "reasonNotExactMatch": "The report is topically related but does not match the exact title, opening fragment or complete passage identity. It is a candidate factual source, not proof of authorship or license."
+          },
+          {
+            "title": "Wingecarribee Shire Council — Mobile Library",
+            "url": "https://library.wsc.nsw.gov.au/explore/mobile-library/",
+            "reasonNotExactMatch": "The municipal service page discusses mobile-library materials and schedules but does not match the exact title, opening fragment or passage identity."
+          }
+        ],
+        "candidateFactualSourcesCompared": [
+          "https://pls.sl.nsw.gov.au/sites/default/files/2023-09/mobile_outreach_services.pdf",
+          "https://library.wsc.nsw.gov.au/explore/mobile-library/",
+          "https://www.derbyshire.gov.uk/leisure/libraries/services/mobile-libraries/mobile-libraries.aspx",
+          "https://pls.sl.nsw.gov.au/managing-my-library/buildings-and-spaces/people-places/influence/programs-and-partnerships",
+          "https://content.plconnect.slq.qld.gov.au/sites/default/files/APLAALIA-guidelinesstandardsoutcomemeasures-2016.pdf"
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      },
+      {
+        "assetId": "formative:note-completion:note-seed-banks",
+        "query": "\"Community seed banks\" \"Community seed banks are local collections of seeds that farmers can borrow\"",
+        "resultsReviewed": [
+          {
+            "title": "FAO — seed bank borrowing and return after harvest",
+            "url": "https://www.fao.org/4/ac546e/ac546e07.htm",
+            "reasonNotExactMatch": "The FAO page is factually related to borrowing and return but does not match the exact title, opening fragment or complete passage identity."
+          },
+          {
+            "title": "CGIAR — Community seed banks and climate risk",
+            "url": "https://www.cgiar.org/news-events/news/planting-seeds-of-hope-community-seed-banks-empower-farmers-and-address-climate-risk-in-india",
+            "reasonNotExactMatch": "The institutional article discusses community seed banks and adaptation but does not match the exact opening wording or passage identity."
+          }
+        ],
+        "candidateFactualSourcesCompared": [
+          "https://www.fao.org/4/ac546e/ac546e07.htm",
+          "https://www.cgiar.org/news-events/news/planting-seeds-of-hope-community-seed-banks-empower-farmers-and-address-climate-risk-in-india",
+          "https://cgkb.cgiar.croptrust.org/images/file/procedures/chapter_registration_%20genebankmanual8.pdf",
+          "https://www.fao.org/4/AD226E/AD226E06.htm",
+          "https://www.fao.org/4/x6109e/x6109e06.htm"
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      },
+      {
+        "assetId": "formative:note-completion:note-night-libraries",
+        "query": "\"Night study spaces in public libraries\" \"Some public libraries have begun opening selected rooms in the evening\"",
+        "resultsReviewed": [
+          {
+            "title": "Tasmanian Government — Open Library Access trial",
+            "url": "https://www.premier.tas.gov.au/latest-news/2024/september/open-library-access-trial-to-commence-in-2025",
+            "reasonNotExactMatch": "The government announcement describes an extended-hours trial but does not match the exact title, opening fragment or full passage identity."
+          },
+          {
+            "title": "State Library of New South Wales — Extended study hours",
+            "url": "https://www.sl.nsw.gov.au/news/extended-study-hours-students",
+            "reasonNotExactMatch": "The library announcement is topically related to evening study access but does not match the passage wording or identity."
+          }
+        ],
+        "candidateFactualSourcesCompared": [
+          "https://www.premier.tas.gov.au/latest-news/2024/september/open-library-access-trial-to-commence-in-2025",
+          "https://www.sl.nsw.gov.au/news/extended-study-hours-students",
+          "https://library.albany.wa.gov.au/news/library-launches-after-hours-study-space/964",
+          "https://www.krg.nsw.gov.au/Community/Ku-ring-gai-Library/Library-After-Hours/Library-After-Hours-Foyer",
+          "https://www.ryde.nsw.gov.au/Council/Media-Centre/News-and-Public-Notices/Eastwood-Library-begins-exciting-247-opening-trial"
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      }
+    ],
+    "interpretation": "This was a directed and non-exhaustive search. No exact match in the reviewed public-web result surface does not prove originality, authorship, clearance or universal absence of a prior source. It did not cover licensed databases, print-only works, deleted pages, translations, private documents, drafts or extensive paraphrase. Candidate factual sources were selected for later claim review; topical relevance or HTTP availability does not verify learner-facing claims, passage identity, authorship or rights."
+  },
+  "sourceAvailability": {
+    "schemaVersion": "ielts-reading-note-completion-source-availability.v1",
+    "checkedAt": "2026-08-11",
+    "retrievalStartedAt": "2026-08-11T16:02:00Z",
+    "method": "Direct HTTPS GET with redirect resolution, a 30-second request cap, response-body SHA-256, content type and byte count. HTTP availability is recorded independently from factual claim review, authorship, licensing and rights verification.",
+    "coverageContract": {
+      "officialSources": 2,
+      "factualSources": 15,
+      "totalSources": 17,
+      "factualSourcesPerAsset": {
+        "formative:note-completion:note-mobile-libraries": 5,
+        "formative:note-completion:note-seed-banks": 5,
+        "formative:note-completion:note-night-libraries": 5
+      },
+      "officialEvidenceIds": [
+        "ielts-note-completion-official-format",
+        "ielts-note-completion-official-samples"
+      ],
+      "factualEvidenceIdsByAsset": {
+        "formative:note-completion:note-mobile-libraries": [
+          "note-mobile-nsw-outreach-report",
+          "note-mobile-wingecarribee-timetable",
+          "note-mobile-derbyshire-village-hall-stops",
+          "note-mobile-nsw-library-partnerships",
+          "note-mobile-australia-public-library-guidelines"
+        ],
+        "formative:note-completion:note-seed-banks": [
+          "note-seed-fao-borrow-return",
+          "note-seed-cgiar-community-adaptation",
+          "note-seed-croptrust-registration",
+          "note-seed-fao-storage",
+          "note-seed-fao-viability-regeneration"
+        ],
+        "formative:note-completion:note-night-libraries": [
+          "note-night-tasmania-open-library-trial",
+          "note-night-nsw-extended-study-hours",
+          "note-night-albany-after-hours-study",
+          "note-night-kuringgai-foyer",
+          "note-night-ryde-opening-trial"
+        ]
+      }
+    },
+    "observedAvailability": {
+      "http200": 14,
+      "http403": 2,
+      "networkError": 1,
+      "redirected": 1,
+      "requestedContentRetrieved": 14,
+      "requestedContentNotRetrieved": 3,
+      "claimsVerified": 0
+    },
+    "sources": [
+      {
+        "evidenceId": "ielts-note-completion-official-format",
+        "requestedUrl": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading",
+        "retrievedAt": "2026-08-11T16:02:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 187011,
+        "bodySha256": "362020852444d12a23ae9a3fc1b468e1da6de89ad5a3ad677241679f1b7d0417",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "ielts-note-completion-official-samples",
+        "requestedUrl": "https://www.ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test",
+        "retrievedAt": "2026-08-11T16:02:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 236135,
+        "bodySha256": "371452c2b04fb9bc3e755a8d543135bd10c12aed66d06612982b3c00fb8c9ada",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "note-mobile-nsw-outreach-report",
+        "requestedUrl": "https://pls.sl.nsw.gov.au/sites/default/files/2023-09/mobile_outreach_services.pdf",
+        "retrievedAt": "2026-08-11T16:02:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://pls.sl.nsw.gov.au/sites/default/files/2023-09/mobile_outreach_services.pdf",
+        "redirected": false,
+        "contentType": "application/pdf",
+        "sizeBytes": 2786487,
+        "bodySha256": "96bf303c1de19b5fecdd340c01d40f8b250877f85ecde489cc37dcbb17b9990c",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "note-mobile-wingecarribee-timetable",
+        "requestedUrl": "https://library.wsc.nsw.gov.au/explore/mobile-library/",
+        "retrievedAt": "2026-08-11T16:02:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://library.wsc.nsw.gov.au/explore/mobile-library/",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 1205650,
+        "bodySha256": "e357ab4186771becaca3095be687e01d2d39283a72ccd1d2193356a7694eee8d",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "note-mobile-derbyshire-village-hall-stops",
+        "requestedUrl": "https://www.derbyshire.gov.uk/leisure/libraries/services/mobile-libraries/mobile-libraries.aspx",
+        "retrievedAt": "2026-08-11T16:02:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.derbyshire.gov.uk/leisure/libraries/services/mobile-libraries/mobile-libraries.aspx",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 69078,
+        "bodySha256": "a1265da9ba4b604bd83265384fffa98985e14e0add2bea22c69971b270445895",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "note-mobile-nsw-library-partnerships",
+        "requestedUrl": "https://pls.sl.nsw.gov.au/managing-my-library/buildings-and-spaces/people-places/influence/programs-and-partnerships",
+        "retrievedAt": "2026-08-11T16:02:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://pls.sl.nsw.gov.au/managing-my-library/buildings-and-spaces/people-places/influence/programs-and-partnerships",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 79296,
+        "bodySha256": "5dcc509cada01dcd64beaf4e0bbb1ab54b28d7a9a0f799fa97e2766dc3e640c4",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "note-mobile-australia-public-library-guidelines",
+        "requestedUrl": "https://content.plconnect.slq.qld.gov.au/sites/default/files/APLAALIA-guidelinesstandardsoutcomemeasures-2016.pdf",
+        "retrievedAt": "2026-08-11T16:02:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://content.plconnect.slq.qld.gov.au/sites/default/files/APLAALIA-guidelinesstandardsoutcomemeasures-2016.pdf",
+        "redirected": false,
+        "contentType": "application/pdf",
+        "sizeBytes": 2304181,
+        "bodySha256": "b7f1f60549ae122bca0bb933d0a6a249fe6732d5ccc747bc4d7d3e4a17d388fe",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "note-seed-fao-borrow-return",
+        "requestedUrl": "https://www.fao.org/4/ac546e/ac546e07.htm",
+        "retrievedAt": "2026-08-11T16:02:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.fao.org/4/ac546e/ac546e07.htm",
+        "redirected": false,
+        "contentType": "text/html",
+        "sizeBytes": 18958,
+        "bodySha256": "880f451e9908e45895c1f7e78827d3639d5e5a0532e3cd510789dd910a47bb29",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "note-seed-cgiar-community-adaptation",
+        "requestedUrl": "https://www.cgiar.org/news-events/news/planting-seeds-of-hope-community-seed-banks-empower-farmers-and-address-climate-risk-in-india",
+        "retrievedAt": "2026-08-11T16:02:00Z",
+        "httpStatus": 403,
+        "finalUrl": "https://www.cgiar.org/news-events/news/planting-seeds-of-hope-community-seed-banks-empower-farmers-and-address-climate-risk-in-india",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 5841,
+        "bodySha256": "0546262a7fde57271d6d0e7c79719341186e14ffa248f85123f1021a03961241",
+        "availabilityStatus": "not-retrieved",
+        "retrievalInterpretation": "http-403-response-body-not-source-content",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "note-seed-croptrust-registration",
+        "requestedUrl": "https://cgkb.cgiar.croptrust.org/images/file/procedures/chapter_registration_%20genebankmanual8.pdf",
+        "retrievedAt": "2026-08-11T16:02:00Z",
+        "httpStatus": 0,
+        "finalUrl": "https://cgkb.cgiar.croptrust.org/images/file/procedures/chapter_registration_%20genebankmanual8.pdf",
+        "redirected": false,
+        "contentType": null,
+        "sizeBytes": 0,
+        "bodySha256": null,
+        "availabilityStatus": "not-retrieved",
+        "retrievalInterpretation": "dns-resolution-failed",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "note-seed-fao-storage",
+        "requestedUrl": "https://www.fao.org/4/AD226E/AD226E06.htm",
+        "retrievedAt": "2026-08-11T16:02:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.fao.org/4/AD226E/AD226E06.htm",
+        "redirected": false,
+        "contentType": "text/html",
+        "sizeBytes": 4555,
+        "bodySha256": "c7c72019ebd3eed395a5afb32a7ba9ad434b119cf822c787bb8aa9edd05f312e",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "note-seed-fao-viability-regeneration",
+        "requestedUrl": "https://www.fao.org/4/x6109e/x6109e06.htm",
+        "retrievedAt": "2026-08-11T16:02:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.fao.org/4/x6109e/x6109e06.htm",
+        "redirected": false,
+        "contentType": "text/html",
+        "sizeBytes": 159783,
+        "bodySha256": "6c9bd2dda2477dc523a23c609ad473d676c6bd8ef353f0a7642704ea95d8bc15",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "note-night-tasmania-open-library-trial",
+        "requestedUrl": "https://www.premier.tas.gov.au/latest-news/2024/september/open-library-access-trial-to-commence-in-2025",
+        "retrievedAt": "2026-08-11T16:02:00Z",
+        "httpStatus": 403,
+        "finalUrl": "https://www.premier.tas.gov.au/latest-news/2024/september/open-library-access-trial-to-commence-in-2025",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 5693,
+        "bodySha256": "b6f543df3f63b1adf71f019f7a9e5bb9864bd074b69b320f363ddec8087a4117",
+        "availabilityStatus": "not-retrieved",
+        "retrievalInterpretation": "http-403-response-body-not-source-content",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "note-night-nsw-extended-study-hours",
+        "requestedUrl": "https://www.sl.nsw.gov.au/news/extended-study-hours-students",
+        "retrievedAt": "2026-08-11T16:02:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.sl.nsw.gov.au/news/extended-study-hours-students",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 89840,
+        "bodySha256": "b97570f518c945fb5dae5f1cc22de727e43615e8293deee402327c24d821507e",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "note-night-albany-after-hours-study",
+        "requestedUrl": "https://library.albany.wa.gov.au/news/library-launches-after-hours-study-space/964",
+        "retrievedAt": "2026-08-11T16:02:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://library.albany.wa.gov.au/news/library-launches-after-hours-study-space/964",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 48365,
+        "bodySha256": "ae1cc220167c60ea78d9be54ddf33de448e6d36a7c2c675d1d2ea6ab970f2155",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "note-night-kuringgai-foyer",
+        "requestedUrl": "https://www.krg.nsw.gov.au/Community/Ku-ring-gai-Library/Library-After-Hours/Library-After-Hours-Foyer",
+        "retrievedAt": "2026-08-11T16:02:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.krg.nsw.gov.au/Community/Ku-ring-gai-Library/Library-After-Hours",
+        "redirected": true,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 154887,
+        "bodySha256": "f14b74b980ff248d8274f3c196ab2a441921cedf12f2f670440807a9c6f6a251",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "redirected-requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      },
+      {
+        "evidenceId": "note-night-ryde-opening-trial",
+        "requestedUrl": "https://www.ryde.nsw.gov.au/Council/Media-Centre/News-and-Public-Notices/Eastwood-Library-begins-exciting-247-opening-trial",
+        "retrievedAt": "2026-08-11T16:02:00Z",
+        "httpStatus": 200,
+        "finalUrl": "https://www.ryde.nsw.gov.au/Council/Media-Centre/News-and-Public-Notices/Eastwood-Library-begins-exciting-247-opening-trial",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 209977,
+        "bodySha256": "be6cef1e010c678742fa9cc18177d9b28a5d72b40333f8623313e8ef03b5fd19",
+        "availabilityStatus": "retrieved",
+        "retrievalInterpretation": "requested-content-retrieved",
+        "claimVerificationStatus": "not-performed"
+      }
+    ],
+    "interpretation": "HTTP availability and response hashes do not establish factual support, authorship, originality, permission, licensing or publication rights. A 200 response is not a claim verdict; 403 and DNS failures are retained honestly as unavailable requested content. Browser or indexed access observed elsewhere is not substituted for this retrieval receipt. Each source retrievedAt is the shared batch-start marker, not a per-response completion timestamp or append-only witness."
+  },
+  "factualResearch": [
+    {
+      "assetId": "formative:note-completion:note-mobile-libraries",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "note-mobile-nsw-outreach-report",
+        "note-mobile-wingecarribee-timetable",
+        "note-mobile-derbyshire-village-hall-stops",
+        "note-mobile-nsw-library-partnerships",
+        "note-mobile-australia-public-library-guidelines"
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan casos de outreach, horarios, paradas, costes y alianzas, pero no verifican market days, la comparación “as much as”, el conjunto exacto de destinos o una cadena causal universal. Disponibilidad no prueba autoría, licencia, hechos ni revisión humana."
+    },
+    {
+      "assetId": "formative:note-completion:note-seed-banks",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "note-seed-fao-borrow-return",
+        "note-seed-cgiar-community-adaptation",
+        "note-seed-croptrust-registration",
+        "note-seed-fao-storage",
+        "note-seed-fao-viability-regeneration"
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan préstamo y devolución, adaptación local, documentación, almacenamiento y pruebas de germinación, pero no verifican cada geografía, rasgo, actor o práctica como universal de todo community seed bank. Disponibilidad no prueba autoría, licencia ni revisión humana."
+    },
+    {
+      "assetId": "formative:note-completion:note-night-libraries",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "note-night-tasmania-open-library-trial",
+        "note-night-nsw-extended-study-hours",
+        "note-night-albany-after-hours-study",
+        "note-night-kuringgai-foyer",
+        "note-night-ryde-opening-trial"
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan ejemplos de acceso extendido, espacios de estudio, seguridad, servicios parciales, pruebas y permiso de guardianes, pero no verifican prevalencia, el bundle exacto, los conteos operativos ni cleaning staff. Disponibilidad no prueba autoría, licencia ni revisión humana."
+    }
+  ],
+  "shortcutReview": {
+    "promptOnly": {
+      "uniquePredictions": 1,
+      "hits": 1,
+      "total": 18
+    },
+    "interpretation": "Prompt-only exact guesses measure answerability from sentence frames without passage evidence; they are not expert adjudications."
+  },
+  "expertReview": {
+    "reviewerType": "independent-ai-editorial-review",
+    "humanSignature": false,
+    "answerAgreement": {
+      "matches": 18,
+      "total": 18,
+      "rate": 1
+    },
+    "keyConflictCount": 0,
+    "keyConflictQuestionIds": [],
+    "materialAmbiguityCount": 0,
+    "materialAmbiguityQuestionIds": [],
+    "nonNaturalSelectionQuestionIds": [],
+    "passageOrderViolationQuestionIds": [],
+    "acceptedAnswerAssessmentCounts": {
+      "verbatim": 18,
+      "normalized-duplicate": 0,
+      "official-spelling-variant": 0,
+      "unsupported": 0
+    },
+    "factualAssessmentCounts": {
+      "supported": 2,
+      "oversimplified": 10,
+      "unsupported": 0,
+      "untraceable": 3
+    },
+    "verdictPath": "output/audits/ielts-reading-rights-note-completion-2026-08-11/expert-verdict.json"
+  },
+  "studentWalkthrough": {
+    "passagesCovered": 3,
+    "questionsCovered": 18,
+    "verdictPath": "output/audits/ielts-reading-rights-note-completion-2026-08-11/student-walkthrough.json",
+    "limitation": "Blind content-only walkthrough; no students, UI or conformance test."
+  },
+  "runtime": {
+    "clientSideCanonicalAnswersPresent": true,
+    "clientSideAcceptedAlternativesPresent": true,
+    "preResponseHintsAvailable": true,
+    "answerCheckRequiresExplicitButton": true,
+    "answerLocksAfterCheck": true,
+    "correctnessAndExplanationShownImmediatelyAfterCheck": true,
+    "incorrectResponseRevealsCanonicalAnswerAfterCheck": true,
+    "wordLimitDisplayHardCodedToTwo": false,
+    "storedWordLimitParsedForEnforcement": true,
+    "wordLimitViolationExplicitlyBlocksCheck": false,
+    "classification": "guided-training-runtime-with-explicit-check-and-immediate-post-check-key-and-explanation-not-practice-or-exam-simulation",
+    "inheritedAccessibilityRisks": {
+      "runtimeClassification": "guided-training-runtime-with-immediate-feedback-not-practice-or-exam-simulation",
+      "answerKeysDeliveredToClient": true,
+      "inputLocksAfterExplicitCheck": true,
+      "inputLocksWhileTyping": false,
+      "correctnessAndExplanationShownImmediatelyAfterCheck": true,
+      "hintsAvailableBeforeResponse": true,
+      "attemptStatePersisted": false,
+      "resetRequiresConfirmation": false,
+      "resetScope": "all-six-blanks-in-one-passage-engine",
+      "wordLimitVisualWarningPresent": true,
+      "wordLimitEnforcedInScoring": false,
+      "inputAccessibleNamePresent": true,
+      "inputAccessibleNamesUniqueAcrossThreeSets": true,
+      "breadcrumbHasNavAndCurrentSemantics": true,
+      "englishPassageHasLangAttribute": false,
+      "progressIndicatorHasProgrammaticRoleNameAndValue": false,
+      "feedbackHasLiveRegion": false,
+      "hintToggleHasExpandedAndControlsSemantics": false,
+      "headingHierarchyIsOrdered": false,
+      "feedbackFocusManaged": false,
+      "uiUxStaticReviewApplicable": true,
+      "playwrightApplicableToAuditOnlyScaffoldDelta": false,
+      "playwrightBecomesApplicableOnLearnerFacingOrRuntimeDrift": true
+    },
+    "limitation": "Explicit check, immediate post-check key/explanation, client answers and pre-response hints prevent representation as Practice or Exam simulation. Stored maxWords only drives a visual warning and does not block scoring."
+  },
+  "antiShortcut": {
+    "storedProfile": {
+      "canonicalAnswerWordCountDistribution": {
+        "oneWord": 13,
+        "twoWords": 5,
+        "overLimit": 0
+      },
+      "alwaysTwoWordAnswerPredictor": {
+        "eligible": 18,
+        "tiesOrAbstentions": 0,
+        "hits": 5
+      },
+      "sameQuestionPositionAcrossSetsModalAnswerWordCount": {
+        "eligible": 18,
+        "positions": 6,
+        "tiesOrAbstentions": 0,
+        "hits": 14
+      },
+      "canonicalAnswerTokenVisibleInNoteFrame": {
+        "questionsWithOverlap": 0,
+        "questionIds": []
+      },
+      "passageTitleAnswerTokenOverlap": {
+        "questionsWithOverlap": 1,
+        "questionIds": [
+          "note-mobile-libraries-02"
+        ]
+      },
+      "canonicalAnswerOccurrenceInOwnPassage": {
+        "exactlyOnce": 15,
+        "zero": 0,
+        "multiple": 3,
+        "rows": [
+          {
+            "questionId": "note-mobile-libraries-01",
+            "occurrences": 1,
+            "offsets": [
+              138
+            ],
+            "intendedOffset": 138
+          },
+          {
+            "questionId": "note-mobile-libraries-02",
+            "occurrences": 1,
+            "offsets": [
+              289
+            ],
+            "intendedOffset": 289
+          },
+          {
+            "questionId": "note-mobile-libraries-03",
+            "occurrences": 1,
+            "offsets": [
+              442
+            ],
+            "intendedOffset": 442
+          },
+          {
+            "questionId": "note-mobile-libraries-04",
+            "occurrences": 1,
+            "offsets": [
+              641
+            ],
+            "intendedOffset": 641
+          },
+          {
+            "questionId": "note-mobile-libraries-05",
+            "occurrences": 1,
+            "offsets": [
+              1029
+            ],
+            "intendedOffset": 1029
+          },
+          {
+            "questionId": "note-mobile-libraries-06",
+            "occurrences": 1,
+            "offsets": [
+              1382
+            ],
+            "intendedOffset": 1382
+          },
+          {
+            "questionId": "note-seed-banks-01",
+            "occurrences": 2,
+            "offsets": [
+              99,
+              1198
+            ],
+            "intendedOffset": 99
+          },
+          {
+            "questionId": "note-seed-banks-02",
+            "occurrences": 1,
+            "offsets": [
+              317
+            ],
+            "intendedOffset": 317
+          },
+          {
+            "questionId": "note-seed-banks-03",
+            "occurrences": 1,
+            "offsets": [
+              496
+            ],
+            "intendedOffset": 496
+          },
+          {
+            "questionId": "note-seed-banks-04",
+            "occurrences": 1,
+            "offsets": [
+              742
+            ],
+            "intendedOffset": 742
+          },
+          {
+            "questionId": "note-seed-banks-05",
+            "occurrences": 1,
+            "offsets": [
+              822
+            ],
+            "intendedOffset": 822
+          },
+          {
+            "questionId": "note-seed-banks-06",
+            "occurrences": 1,
+            "offsets": [
+              1320
+            ],
+            "intendedOffset": 1320
+          },
+          {
+            "questionId": "note-night-libraries-01",
+            "occurrences": 1,
+            "offsets": [
+              124
+            ],
+            "intendedOffset": 124
+          },
+          {
+            "questionId": "note-night-libraries-02",
+            "occurrences": 1,
+            "offsets": [
+              254
+            ],
+            "intendedOffset": 254
+          },
+          {
+            "questionId": "note-night-libraries-03",
+            "occurrences": 1,
+            "offsets": [
+              501
+            ],
+            "intendedOffset": 501
+          },
+          {
+            "questionId": "note-night-libraries-04",
+            "occurrences": 2,
+            "offsets": [
+              721,
+              1467
+            ],
+            "intendedOffset": 721
+          },
+          {
+            "questionId": "note-night-libraries-05",
+            "occurrences": 2,
+            "offsets": [
+              308,
+              899
+            ],
+            "intendedOffset": 899
+          },
+          {
+            "questionId": "note-night-libraries-06",
+            "occurrences": 1,
+            "offsets": [
+              1179
+            ],
+            "intendedOffset": 1179
+          }
+        ]
+      },
+      "setsWithStrictlyAscendingCanonicalEvidenceOrder": 3,
+      "passageOrderViolationQuestionIds": [],
+      "naiveFirstOccurrenceOrderViolationQuestionIds": [
+        "note-night-libraries-05"
+      ],
+      "intendedWholeTokenEvidence": {
+        "rows": [
+          {
+            "assetId": "formative:note-completion:note-mobile-libraries",
+            "questionId": "note-mobile-libraries-01",
+            "offset": 138,
+            "paragraph": 1
+          },
+          {
+            "assetId": "formative:note-completion:note-mobile-libraries",
+            "questionId": "note-mobile-libraries-02",
+            "offset": 289,
+            "paragraph": 1
+          },
+          {
+            "assetId": "formative:note-completion:note-mobile-libraries",
+            "questionId": "note-mobile-libraries-03",
+            "offset": 442,
+            "paragraph": 2
+          },
+          {
+            "assetId": "formative:note-completion:note-mobile-libraries",
+            "questionId": "note-mobile-libraries-04",
+            "offset": 641,
+            "paragraph": 2
+          },
+          {
+            "assetId": "formative:note-completion:note-mobile-libraries",
+            "questionId": "note-mobile-libraries-05",
+            "offset": 1029,
+            "paragraph": 3
+          },
+          {
+            "assetId": "formative:note-completion:note-mobile-libraries",
+            "questionId": "note-mobile-libraries-06",
+            "offset": 1382,
+            "paragraph": 4
+          },
+          {
+            "assetId": "formative:note-completion:note-seed-banks",
+            "questionId": "note-seed-banks-01",
+            "offset": 99,
+            "paragraph": 1
+          },
+          {
+            "assetId": "formative:note-completion:note-seed-banks",
+            "questionId": "note-seed-banks-02",
+            "offset": 317,
+            "paragraph": 1
+          },
+          {
+            "assetId": "formative:note-completion:note-seed-banks",
+            "questionId": "note-seed-banks-03",
+            "offset": 496,
+            "paragraph": 2
+          },
+          {
+            "assetId": "formative:note-completion:note-seed-banks",
+            "questionId": "note-seed-banks-04",
+            "offset": 742,
+            "paragraph": 2
+          },
+          {
+            "assetId": "formative:note-completion:note-seed-banks",
+            "questionId": "note-seed-banks-05",
+            "offset": 822,
+            "paragraph": 3
+          },
+          {
+            "assetId": "formative:note-completion:note-seed-banks",
+            "questionId": "note-seed-banks-06",
+            "offset": 1320,
+            "paragraph": 4
+          },
+          {
+            "assetId": "formative:note-completion:note-night-libraries",
+            "questionId": "note-night-libraries-01",
+            "offset": 124,
+            "paragraph": 1
+          },
+          {
+            "assetId": "formative:note-completion:note-night-libraries",
+            "questionId": "note-night-libraries-02",
+            "offset": 254,
+            "paragraph": 1
+          },
+          {
+            "assetId": "formative:note-completion:note-night-libraries",
+            "questionId": "note-night-libraries-03",
+            "offset": 501,
+            "paragraph": 2
+          },
+          {
+            "assetId": "formative:note-completion:note-night-libraries",
+            "questionId": "note-night-libraries-04",
+            "offset": 721,
+            "paragraph": 2
+          },
+          {
+            "assetId": "formative:note-completion:note-night-libraries",
+            "questionId": "note-night-libraries-05",
+            "offset": 899,
+            "paragraph": 3
+          },
+          {
+            "assetId": "formative:note-completion:note-night-libraries",
+            "questionId": "note-night-libraries-06",
+            "offset": 1179,
+            "paragraph": 4
+          }
+        ],
+        "offsetsMatchPinnedBaseline": true
+      },
+      "sameQuestionPositionAcrossSetsModalEvidenceParagraph": {
+        "eligible": 18,
+        "positions": 6,
+        "tiesOrAbstentions": 0,
+        "hits": 18
+      },
+      "acceptedAnswerNormalization": {
+        "algorithm": "trim+lowercase+strip-trailing-[.,;:!?]+collapse-whitespace",
+        "canonicalEntries": 18,
+        "alternativeEntries": 0,
+        "rawAcceptedEntries": 18,
+        "normalizedAcceptedValues": 18
+      },
+      "normalizedDuplicateAlternativeQuestionIds": [],
+      "nonVerbatimAcceptedAlternativeQuestionIds": [],
+      "grammaticallyInvalidAcceptedAlternatives": [],
+      "crossQuestionNormalizedAnswerCollisions": [],
+      "canonicalAnswerGrammarSurface": {
+        "manuallyClassifiedNominalOrNounPhrase": 15,
+        "manuallyClassifiedAdjective": 2,
+        "manuallyClassifiedVerb": 1,
+        "total": 18,
+        "caveat": "Manual structural classification; it is not a statistical POS certification."
+      },
+      "promptPassageLexicalAnchors": {
+        "questionsWithUniqueExactBigram": 17,
+        "longestExactNgramDistribution": {
+          "1": 1,
+          "2": 5,
+          "3": 3,
+          "4": 3,
+          "5": 4,
+          "6": 2
+        },
+        "rows": [
+          {
+            "questionId": "note-mobile-libraries-01",
+            "longest": 4,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "note-mobile-libraries-02",
+            "longest": 5,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "note-mobile-libraries-03",
+            "longest": 4,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "note-mobile-libraries-04",
+            "longest": 2,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "note-mobile-libraries-05",
+            "longest": 5,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "note-mobile-libraries-06",
+            "longest": 6,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "note-seed-banks-01",
+            "longest": 3,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "note-seed-banks-02",
+            "longest": 1,
+            "hasUniqueBigram": false
+          },
+          {
+            "questionId": "note-seed-banks-03",
+            "longest": 2,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "note-seed-banks-04",
+            "longest": 2,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "note-seed-banks-05",
+            "longest": 3,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "note-seed-banks-06",
+            "longest": 6,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "note-night-libraries-01",
+            "longest": 5,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "note-night-libraries-02",
+            "longest": 5,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "note-night-libraries-03",
+            "longest": 2,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "note-night-libraries-04",
+            "longest": 4,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "note-night-libraries-05",
+            "longest": 2,
+            "hasUniqueBigram": true
+          },
+          {
+            "questionId": "note-night-libraries-06",
+            "longest": 3,
+            "hasUniqueBigram": true
+          }
+        ]
+      },
+      "preResponseHintExposure": {
+        "questionsWithVisibleHintControl": 18,
+        "hintsContainingNormalizedAcceptedAnswer": 0,
+        "hintsNamingPassageLocationOrAnchor": 18,
+        "semanticParaphraseOnlyHintQuestionIds": []
+      },
+      "promptOnlyExactGuessReviewRequired": true,
+      "exactOneBestAnswerReviewRequired": true,
+      "statisticalCertification": {
+        "observedQuestions": 18,
+        "certificationThreshold": 100,
+        "eligible": false,
+        "contentCertificationBlocked": true,
+        "blockingReasons": [
+          "n-below-100",
+          "client-side-canonical-answers-and-hints",
+          "client-delivered-answer-keys",
+          "rights-and-human-review-pending"
+        ]
+      }
+    },
+    "qualitativeCoverage": {
+      "grammarOnlyAndPromptOnlyExactGuess": true,
+      "lexicalOverlap": true,
+      "answerLength": true,
+      "positionAndTextOrder": true,
+      "wordLimit": true,
+      "acceptedAnswerNormalization": true,
+      "exactOneBestAnswer": true,
+      "representation": true,
+      "priorKnowledge": true,
+      "irrelevantLoad": true
+    },
+    "sampleAdequacy": {
+      "certificationThreshold": 100,
+      "observedQuestions": 18,
+      "eligibleForStatisticalCertification": false,
+      "conclusion": "n=18 is too small to certify statistically balanced content."
+    },
+    "statisticalCertification": "withheld-n-below-100",
+    "contentCertification": "blocked-runtime-rights-editorial-review-required"
+  },
+  "applicability": {
+    "rights": "applicable",
+    "fullStackData": "applicable",
+    "ieltsExpert": "applicable",
+    "cognitiveWalkthrough": "applicable-to-content-only",
+    "antiBiasAndLeakage": "applicable",
+    "uiUxAccessibility": "not-applicable-to-unchanged-runtime-delta-conformance",
+    "playwright": "not-applicable-scoped-learner-runtime-unchanged",
+    "evidence": "Seven learner-facing files and fifteen-file closure remain pinned. UI/Playwright ➖ is not conformity."
+  },
+  "negativeControl": {
+    "contentHashMismatch": {
+      "assetId": "formative:note-completion:note-mobile-libraries",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "rightsBasis": "unknown-quarantined",
+      "reasonCodes": [
+        "authorship-unresolved",
+        "content-hash-mismatch",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    "leakControls": {
+      "englishAnswer": [
+        "$.instruction"
+      ],
+      "englishCompletion": [
+        "$.instruction"
+      ],
+      "spanishCompletion": [
+        "$.nested.repair"
+      ],
+      "spanishAnswer": [
+        "$.repair"
+      ],
+      "nestedField": [
+        "$.review.selectedAnswer"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "path": "src/data/practica-exams/seo-catalog.ts",
+      "sha256": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de"
+    },
+    {
+      "path": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/note-completion/page.tsx",
+      "sha256": "fa2f8f73b4ea5e407fa97ee1d5b5946752dddb84dbbba0337e9a1c339446678b"
+    },
+    {
+      "path": "src/components/exam-practice/NoteCompletionEngine.tsx",
+      "sha256": "d032c0726e0cbf1f0426a52ffded5c3dff0582d58a6a4af636587004ccd000a5"
+    },
+    {
+      "path": "src/components/exam-practice/NoteCompletionPassageBank.tsx",
+      "sha256": "e553cf1f0b2fa30eafedf3d94ed4686dd9008a772c8a88cd23bd33e22b23ebf4"
+    },
+    {
+      "path": "src/lib/ielts/academic-reading-question-types.ts",
+      "sha256": "455924c25a1e33355265497a5c51d4cdb7d34864b34d539f1a7b91bedf3ce3ec"
+    },
+    {
+      "path": "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+      "sha256": "73d3b725c68c0ed193ceba23ebddca3fec7978f6e84712c99b3dddc190443711"
+    },
+    {
+      "path": "src/components/exam-practice/StructuredData.tsx",
+      "sha256": "3e59a611e4d2bac9ce5994bdbd4ba6303407a5ddf82b26a340efe1f3c2b788d8"
+    },
+    {
+      "path": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/table-completion/page.tsx",
+      "sha256": "0907ee7ba7db6b3bab0987ab25dcb12b1958a2f80e2a91e551058aa3d6835895"
+    },
+    {
+      "path": "src/components/exam-practice/TableCompletionEngine.tsx",
+      "sha256": "c49bd375fb061ff7ca35afb0219194393c5a65bd7e44e1f68cc6338bfe329a14"
+    },
+    {
+      "path": "src/components/exam-practice/TableCompletionPassageBank.tsx",
+      "sha256": "7cca09dc031a7377e92d0a6d481767558a87e4cd64b526f45254e448e71e929b"
+    },
+    {
+      "path": "src/lib/ielts/academic-reading-question-types.ts",
+      "sha256": "455924c25a1e33355265497a5c51d4cdb7d34864b34d539f1a7b91bedf3ce3ec"
+    },
+    {
+      "path": "src/data/practica-exams/seo-catalog.ts",
+      "sha256": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de"
+    },
+    {
+      "path": "src/lib/ielts/academic-reading-rights.ts",
+      "sha256": "cabd4adf35c75a14a3537bb07e5db4ef9ce8bc0c1a6f4a276d25518732923643"
+    },
+    {
+      "path": "src/data/practica-exams/ielts-reading-rights-registry.ts",
+      "sha256": "42fd225aa20a905361901fbf301cfb332cd6db729f880eed91856d8a934c8531"
+    },
+    {
+      "path": "scripts/check-ielts-reading-note-completion-rights.mjs",
+      "sha256": "6879a865628cc81abc9d3957035793d6c683ed25b470e57c4dbd9f32fd11d25c"
+    },
+    {
+      "path": "tests/ielts-reading-note-completion-rights.test.mjs",
+      "sha256": "bab2f0c0e4df572148b342805d9fb63dc33efd21b12e84cce6ee37f4b78b9185"
+    },
+    {
+      "path": "docs/ielts-reading-loop.md",
+      "sha256": "4f2ebd187d982151b25b9c750e362dcfa1e47b5c1a04fddf367ede7d516f09a6"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-note-completion-2026-08-11/baseline.json",
+      "sha256": "7164b851c328781e9cb994e96f9c8f6e588cacad11a62f89558508cd45feb96a"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-note-completion-2026-08-11/source-availability.json",
+      "sha256": "e2c29efac5ad28880f432c49d4c533a7610ecd908d923161f8b831a5438c4e07"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-note-completion-2026-08-11/provenance-search.json",
+      "sha256": "7f162801ff1d4ea5e435636ab9e523a402ef0f4271c7e74a7d3426b76e03bceb"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-note-completion-2026-08-11/unit-change-manifest.json",
+      "sha256": "3ed19bfc3ce5b337ecf7d1a7d7a9581aedc6598b3d9fc7c7ebc1c7ef2621a1d5"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-note-completion-2026-08-11/prompt-only.json",
+      "sha256": "25b6900226e7e3e5b1b5e2dc1f643cd8d0b086e13f47c2b7f94ea4a1e7d8636f"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-note-completion-2026-08-11/prompt-only-verdict.json",
+      "sha256": "724907711e96c8240c0bfe2f7e73646550944362e5229b3e76e82dcdcb3b916e"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-note-completion-2026-08-11/blind-review.json",
+      "sha256": "4654dd3245bc5d7dc550556908027af3220b28f3b354602e8328a0df12c43721"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-note-completion-2026-08-11/factual-source-review.json",
+      "sha256": "be69fa1790a7b44304b2d193d013b0da3b7265308fc5f1f01694376f1f5a49da"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-note-completion-2026-08-11/expert-first-pass.json",
+      "sha256": "c694ec40809f26f6fecb2910802b61f76f84e23b826e15c4d44106eda7783f29"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-note-completion-2026-08-11/expert-verdict.json",
+      "sha256": "cbbccc4f3356184f60fa1d9a8cf8c480de69bc6c9df6d35dde1d16392a917915"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-note-completion-2026-08-11/student-walkthrough.json",
+      "sha256": "81c73225560cf03223cebffe5e870a8dce32a01402de4ceb8d19c4f6dc112542"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-note-completion-2026-08-11/audit-verdicts.json",
+      "sha256": "c365acd65f589c4c0003ceff32e063f7f78fb0b31ba015ddd01cbe1e3b909b09"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-note-completion-2026-08-11/build-report.mjs",
+      "sha256": "87df29d9743c506f84450446856535c659d02f562554e15f41e8466bd292c0d0"
+    }
+  ]
+}

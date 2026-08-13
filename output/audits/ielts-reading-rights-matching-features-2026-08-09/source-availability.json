@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "ielts-reading-matching-features-source-availability.v1",
+  "checkedAt": "2026-08-09",
+  "method": "Direct HTTPS retrieval with redirect resolution, response-body SHA-256, content type and byte count. Anti-bot 403/405 responses are retained as observed rather than reclassified as successful retrieval.",
+  "sources": [
+    {
+      "evidenceId": "ielts-matching-features-official-format",
+      "requestedUrl": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading",
+      "retrievedAt": "2026-08-09T08:26:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "sizeBytes": 187270,
+      "bodySha256": "7d2f15ba40e1f5f7cbf3a659a03f8783c8ab4d8701d6de94aca7786213875ab0"
+    },
+    {
+      "evidenceId": "urban-nyc-rooftop-farm",
+      "requestedUrl": "https://www.nyc.gov/mayors-office/news/2022/04/mayor-adams-opens-rooftop-farm-staten-island-grow-organic-produce-absorb-stormwater-to",
+      "retrievedAt": "2026-08-09T08:26:00-05:00",
+      "httpStatus": 403,
+      "finalUrl": "https://www.nyc.gov/mayors-office/news/2022/04/mayor-adams-opens-rooftop-farm-staten-island-grow-organic-produce-absorb-stormwater-to",
+      "redirected": false,
+      "contentType": "text/html",
+      "sizeBytes": 546,
+      "bodySha256": "1227028f8ed0657ce89742d640afe6d90c658f27c6ce5587f8ec3d3ceea50270"
+    },
+    {
+      "evidenceId": "urban-doe-controlled-environment-agriculture",
+      "requestedUrl": "https://www.energy.gov/cmei/ito/articles/water-energy-and-future-farming",
+      "retrievedAt": "2026-08-09T08:26:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.energy.gov/cmei/ito/articles/water-energy-and-future-farming",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "sizeBytes": 118988,
+      "bodySha256": "16cf983359465ea8e09798062c2043dafa364c0f9334a756cd83e7c7e542e812"
+    },
+    {
+      "evidenceId": "urban-usda-school-gardens",
+      "requestedUrl": "https://www.fna.usda.gov/f2s/school-gardens",
+      "retrievedAt": "2026-08-09T08:26:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.fna.usda.gov/f2s/school-gardens",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "sizeBytes": 42860,
+      "bodySha256": "aafde1652c099417f19dac3043ce2b006d8878d21a4561ff606266ca5037a21e"
+    },
+    {
+      "evidenceId": "urban-epa-vacant-land-agriculture",
+      "requestedUrl": "https://www.epa.gov/brownfields/urban-agriculture",
+      "retrievedAt": "2026-08-09T08:26:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.epa.gov/brownfields/urban-agriculture",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "sizeBytes": 86928,
+      "bodySha256": "8152c4871047fc657cdf56415344e409482289dd85f21580235732f5789eb35c"
+    },
+    {
+      "evidenceId": "urban-usda-cea-energy",
+      "requestedUrl": "https://www.ars.usda.gov/research/publications/publication/?seqNo115=434664",
+      "retrievedAt": "2026-08-09T08:26:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.ars.usda.gov/research/publications/publication/?seqNo115=434664",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "sizeBytes": 31833,
+      "bodySha256": "492aad100283611193dd0532f8aac393da583cc60104672b3b830f801bdaa3f6"
+    },
+    {
+      "evidenceId": "memory-pubmed-route-decisions",
+      "requestedUrl": "https://pubmed.ncbi.nlm.nih.gov/25419818/",
+      "retrievedAt": "2026-08-09T08:26:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://pubmed.ncbi.nlm.nih.gov/25419818/",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "sizeBytes": 125000,
+      "bodySha256": "1961adb028ab3149b06e276e6d5f6182361dea6f9b1382f2eaa1ba730596f269"
+    },
+    {
+      "evidenceId": "memory-goodwin-cowitness",
+      "requestedUrl": "https://doi.org/10.1002/acp.3320",
+      "retrievedAt": "2026-08-09T08:26:00-05:00",
+      "httpStatus": 403,
+      "finalUrl": "https://onlinelibrary.wiley.com/doi/10.1002/acp.3320",
+      "redirected": true,
+      "contentType": "text/html; charset=UTF-8",
+      "sizeBytes": 5567,
+      "bodySha256": "05c1ce79c8159575d1eef45c772b841d836ca7caad49a97eeedf67c536f9951e"
+    },
+    {
+      "evidenceId": "memory-nia-external-aids",
+      "requestedUrl": "https://www.nia.nih.gov/health/health-care-professionals-information/caring-older-patients-cognitive-impairment",
+      "retrievedAt": "2026-08-09T08:26:00-05:00",
+      "httpStatus": 405,
+      "finalUrl": "https://www.nia.nih.gov/health/health-care-professionals-information/caring-older-patients-cognitive-impairment",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "sizeBytes": 2523,
+      "bodySha256": "a7df247cfb6fe838f91bf91f7a370055b7e4a7072587d0bee3ea514c61987ace"
+    },
+    {
+      "evidenceId": "memory-pmc-sleep-vocabulary",
+      "requestedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10275344/",
+      "retrievedAt": "2026-08-09T08:26:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10275344/",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "sizeBytes": 292474,
+      "bodySha256": "f18abf52a04fb82cd0f9be5fb14a40818f736e67fc39e5bc8ca2afeff9f0d87b"
+    },
+    {
+      "evidenceId": "memory-plos-open-book",
+      "requestedUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0273185",
+      "retrievedAt": "2026-08-09T08:26:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0273185",
+      "redirected": false,
+      "contentType": "text/html;charset=UTF-8",
+      "sizeBytes": 225751,
+      "bodySha256": "b59bf56fe1cb753fe8a47c477e165d0f5f3d67fa7aa8f6b5fd9d93ee60545836"
+    },
+    {
+      "evidenceId": "transport-tfl-bus-priority",
+      "requestedUrl": "https://tfl.gov.uk/modes/buses/bus-priority-programme",
+      "retrievedAt": "2026-08-09T08:26:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://tfl.gov.uk/modes/buses/bus-priority-programme",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "sizeBytes": 111282,
+      "bodySha256": "9a95846f185d8107ef51124efd933340f229a3417cb7ca99cfb45973510c73a4"
+    },
+    {
+      "evidenceId": "transport-who-safe-speeds",
+      "requestedUrl": "https://www.who.int/news/item/17-05-2021-streets-for-life-campaign-calls-for-30-km-h-urban-streets-to-ensure-safe-healthy-green-and-liveable-cities",
+      "retrievedAt": "2026-08-09T08:26:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.who.int/news/item/17-05-2021-streets-for-life-campaign-calls-for-30-km-h-urban-streets-to-ensure-safe-healthy-green-and-liveable-cities",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "sizeBytes": 104473,
+      "bodySha256": "189e138856725dfa5d52f6d90e88b586e4ba8acc9de8c02abc4f3458314549f7"
+    },
+    {
+      "evidenceId": "transport-uk-maas-accessibility",
+      "requestedUrl": "https://www.gov.uk/government/publications/mobility-as-a-service-maas-code-of-practice/mobility-as-a-service-code-of-practice",
+      "retrievedAt": "2026-08-09T08:26:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.gov.uk/government/publications/mobility-as-a-service-maas-code-of-practice/mobility-as-a-service-code-of-practice",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "sizeBytes": 282194,
+      "bodySha256": "731b7b7c4807fccf40b7b3b907fcb00dd9fc229b4caa7997d06fed0bf6a9fcca"
+    },
+    {
+      "evidenceId": "transport-doe-smart-charge",
+      "requestedUrl": "https://www.energy.gov/cmei/femp/smart-charge-management-implementation-federal-fleets",
+      "retrievedAt": "2026-08-09T08:26:00-05:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.energy.gov/cmei/femp/smart-charge-management-implementation-federal-fleets",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "sizeBytes": 130754,
+      "bodySha256": "4a20120e1101efa30e81c2d5b2aedd5fb537ed67ee1ab5e8e43304ac6ab89ac7"
+    },
+    {
+      "evidenceId": "transport-nyc-pedestrian-plaza",
+      "requestedUrl": "https://www.nyc.gov/html/dot/html/pr2021/dyckman-plaza-transforms-inwood-open-street.shtml",
+      "retrievedAt": "2026-08-09T08:26:00-05:00",
+      "httpStatus": 403,
+      "finalUrl": "https://www.nyc.gov/html/dot/html/pr2021/dyckman-plaza-transforms-inwood-open-street.shtml",
+      "redirected": false,
+      "contentType": "text/html",
+      "sizeBytes": 475,
+      "bodySha256": "aaa19a2b04bcc211edd591db74fd306f2da4b367050a256e2f055944cdf4ceb9"
+    }
+  ],
+  "interpretation": "Availability, redirect resolution and body identity do not establish authorship, factual verification, license, rights-holder authorization or endorsement. HTTP 403/405 records document direct-client access limits and do not imply that the underlying source content was reviewed through that response."
+}

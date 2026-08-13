@@ -1,0 +1,969 @@
+{
+  "audit": "IELTS Academic Reading official 11 types ↔ 14 WeLearn routes",
+  "date": "2026-08-09",
+  "baseUrl": "http://localhost:3002",
+  "runner": "Playwright 1.63.0-alpha-2026-08-05 / Chromium",
+  "passed": true,
+  "summary": {
+    "passed": 28,
+    "failed": 0,
+    "total": 28
+  },
+  "assertions": [
+    {
+      "name": "14 destinos publicados responden 200",
+      "pass": true,
+      "details": [
+        {
+          "slug": "multiple-choice",
+          "status": 200
+        },
+        {
+          "slug": "true-false-not-given",
+          "status": 200
+        },
+        {
+          "slug": "yes-no-not-given",
+          "status": 200
+        },
+        {
+          "slug": "matching-information",
+          "status": 200
+        },
+        {
+          "slug": "matching-headings",
+          "status": 200
+        },
+        {
+          "slug": "matching-features",
+          "status": 200
+        },
+        {
+          "slug": "matching-sentence-endings",
+          "status": 200
+        },
+        {
+          "slug": "sentence-completion",
+          "status": 200
+        },
+        {
+          "slug": "summary-completion",
+          "status": 200
+        },
+        {
+          "slug": "note-completion",
+          "status": 200
+        },
+        {
+          "slug": "table-completion",
+          "status": 200
+        },
+        {
+          "slug": "flow-chart-completion",
+          "status": 200
+        },
+        {
+          "slug": "diagram-labeling",
+          "status": 200
+        },
+        {
+          "slug": "short-answer",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "name": "14 destinos tienen un solo H1",
+      "pass": true,
+      "details": [
+        {
+          "slug": "multiple-choice",
+          "h1Count": 1
+        },
+        {
+          "slug": "true-false-not-given",
+          "h1Count": 1
+        },
+        {
+          "slug": "yes-no-not-given",
+          "h1Count": 1
+        },
+        {
+          "slug": "matching-information",
+          "h1Count": 1
+        },
+        {
+          "slug": "matching-headings",
+          "h1Count": 1
+        },
+        {
+          "slug": "matching-features",
+          "h1Count": 1
+        },
+        {
+          "slug": "matching-sentence-endings",
+          "h1Count": 1
+        },
+        {
+          "slug": "sentence-completion",
+          "h1Count": 1
+        },
+        {
+          "slug": "summary-completion",
+          "h1Count": 1
+        },
+        {
+          "slug": "note-completion",
+          "h1Count": 1
+        },
+        {
+          "slug": "table-completion",
+          "h1Count": 1
+        },
+        {
+          "slug": "flow-chart-completion",
+          "h1Count": 1
+        },
+        {
+          "slug": "diagram-labeling",
+          "h1Count": 1
+        },
+        {
+          "slug": "short-answer",
+          "h1Count": 1
+        }
+      ]
+    },
+    {
+      "name": "14 destinos tienen canonical congruente",
+      "pass": true,
+      "details": [
+        {
+          "slug": "multiple-choice",
+          "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/multiple-choice"
+        },
+        {
+          "slug": "true-false-not-given",
+          "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/true-false-not-given"
+        },
+        {
+          "slug": "yes-no-not-given",
+          "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given"
+        },
+        {
+          "slug": "matching-information",
+          "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/matching-information"
+        },
+        {
+          "slug": "matching-headings",
+          "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/matching-headings"
+        },
+        {
+          "slug": "matching-features",
+          "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/matching-features"
+        },
+        {
+          "slug": "matching-sentence-endings",
+          "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings"
+        },
+        {
+          "slug": "sentence-completion",
+          "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/sentence-completion"
+        },
+        {
+          "slug": "summary-completion",
+          "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/summary-completion"
+        },
+        {
+          "slug": "note-completion",
+          "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/note-completion"
+        },
+        {
+          "slug": "table-completion",
+          "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/table-completion"
+        },
+        {
+          "slug": "flow-chart-completion",
+          "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/flow-chart-completion"
+        },
+        {
+          "slug": "diagram-labeling",
+          "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/diagram-labeling"
+        },
+        {
+          "slug": "short-answer",
+          "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/short-answer"
+        }
+      ]
+    },
+    {
+      "name": "ningún destino publicado se anuncia como próximamente",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "hub responde 200",
+      "pass": true,
+      "details": 200
+    },
+    {
+      "name": "hub tiene un solo H1 y canonical",
+      "pass": true,
+      "details": {
+        "h1Count": 1,
+        "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas"
+      }
+    },
+    {
+      "name": "contrato v1 visible en DOM",
+      "pass": true,
+      "details": "ielts-academic-reading-question-types.v1"
+    },
+    {
+      "name": "matriz visible exacta 11 ↔ 14",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "14 slugs visibles y únicos",
+      "pass": true,
+      "details": [
+        "multiple-choice",
+        "true-false-not-given",
+        "yes-no-not-given",
+        "matching-information",
+        "matching-headings",
+        "matching-features",
+        "matching-sentence-endings",
+        "sentence-completion",
+        "summary-completion",
+        "note-completion",
+        "table-completion",
+        "flow-chart-completion",
+        "diagram-labeling",
+        "short-answer"
+      ]
+    },
+    {
+      "name": "label aprobado visible y claim prohibido ausente",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "fuente oficial y límite de derechos visibles",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "breadcrumb semántico con current",
+      "pass": true,
+      "details": "Tipos de preguntas"
+    },
+    {
+      "name": "nombres oficiales y rutas marcan idioma inglés",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "motor no revela tipos antes de responder",
+      "pass": true,
+      "details": {
+        "tasks": 12,
+        "genericLabels": 12
+      }
+    },
+    {
+      "name": "motor no revela funciones de párrafo antes de cerrar set",
+      "pass": true,
+      "details": {
+        "paragraphs": 9
+      }
+    },
+    {
+      "name": "motor no serializa clave en atributos DOM",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "teclado responde y revela solo el ítem contestado",
+      "pass": true,
+      "details": {
+        "taskStates": [
+          "true",
+          "false",
+          "false",
+          "false",
+          "false",
+          "false",
+          "false",
+          "false",
+          "false",
+          "false",
+          "false",
+          "false"
+        ],
+        "paragraphStates": [
+          "false",
+          "false",
+          "false",
+          "false",
+          "false",
+          "false",
+          "false",
+          "false",
+          "false"
+        ],
+        "firstTaskGeneric": false,
+        "firstTaskDisabledButtons": 3
+      }
+    },
+    {
+      "name": "una respuesta no revela todavía funciones del set",
+      "pass": true,
+      "details": [
+        "false",
+        "false",
+        "false",
+        "false",
+        "false",
+        "false",
+        "false",
+        "false",
+        "false"
+      ]
+    },
+    {
+      "name": "reload restaura estado pre-respuesta sin tipo revelado",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "cuatro rutas del tipo 9 declaran su condición WeLearn",
+      "pass": true,
+      "details": [
+        {
+          "slug": "summary-completion",
+          "status": 200,
+          "routeLabel": true,
+          "groupingExplanation": true,
+          "mapBackLink": true,
+          "currentBreadcrumb": true,
+          "h1Lang": "en",
+          "officialSource": true
+        },
+        {
+          "slug": "note-completion",
+          "status": 200,
+          "routeLabel": true,
+          "groupingExplanation": true,
+          "mapBackLink": true,
+          "currentBreadcrumb": true,
+          "h1Lang": "en",
+          "officialSource": true
+        },
+        {
+          "slug": "table-completion",
+          "status": 200,
+          "routeLabel": true,
+          "groupingExplanation": true,
+          "mapBackLink": true,
+          "currentBreadcrumb": true,
+          "h1Lang": "en",
+          "officialSource": true
+        },
+        {
+          "slug": "flow-chart-completion",
+          "status": 200,
+          "routeLabel": true,
+          "groupingExplanation": true,
+          "mapBackLink": true,
+          "currentBreadcrumb": true,
+          "h1Lang": "en",
+          "officialSource": true
+        }
+      ]
+    },
+    {
+      "name": "cuatro rutas del tipo 9 conservan breadcrumb accesible",
+      "pass": true,
+      "details": [
+        {
+          "slug": "summary-completion",
+          "status": 200,
+          "routeLabel": true,
+          "groupingExplanation": true,
+          "mapBackLink": true,
+          "currentBreadcrumb": true,
+          "h1Lang": "en",
+          "officialSource": true
+        },
+        {
+          "slug": "note-completion",
+          "status": 200,
+          "routeLabel": true,
+          "groupingExplanation": true,
+          "mapBackLink": true,
+          "currentBreadcrumb": true,
+          "h1Lang": "en",
+          "officialSource": true
+        },
+        {
+          "slug": "table-completion",
+          "status": 200,
+          "routeLabel": true,
+          "groupingExplanation": true,
+          "mapBackLink": true,
+          "currentBreadcrumb": true,
+          "h1Lang": "en",
+          "officialSource": true
+        },
+        {
+          "slug": "flow-chart-completion",
+          "status": 200,
+          "routeLabel": true,
+          "groupingExplanation": true,
+          "mapBackLink": true,
+          "currentBreadcrumb": true,
+          "h1Lang": "en",
+          "officialSource": true
+        }
+      ]
+    },
+    {
+      "name": "cuatro rutas del tipo 9 enlazan la fuente oficial exacta",
+      "pass": true,
+      "details": [
+        {
+          "slug": "summary-completion",
+          "status": 200,
+          "routeLabel": true,
+          "groupingExplanation": true,
+          "mapBackLink": true,
+          "currentBreadcrumb": true,
+          "h1Lang": "en",
+          "officialSource": true
+        },
+        {
+          "slug": "note-completion",
+          "status": 200,
+          "routeLabel": true,
+          "groupingExplanation": true,
+          "mapBackLink": true,
+          "currentBreadcrumb": true,
+          "h1Lang": "en",
+          "officialSource": true
+        },
+        {
+          "slug": "table-completion",
+          "status": 200,
+          "routeLabel": true,
+          "groupingExplanation": true,
+          "mapBackLink": true,
+          "currentBreadcrumb": true,
+          "h1Lang": "en",
+          "officialSource": true
+        },
+        {
+          "slug": "flow-chart-completion",
+          "status": 200,
+          "routeLabel": true,
+          "groupingExplanation": true,
+          "mapBackLink": true,
+          "currentBreadcrumb": true,
+          "h1Lang": "en",
+          "officialSource": true
+        }
+      ]
+    },
+    {
+      "name": "cinco viewports sin overflow horizontal",
+      "pass": true,
+      "details": [
+        {
+          "name": "mobile-320x568",
+          "width": 320,
+          "height": 568,
+          "clientWidth": 320,
+          "scrollWidth": 320,
+          "typeNineVisible": true,
+          "overflow": 0
+        },
+        {
+          "name": "mobile-390x844",
+          "width": 390,
+          "height": 844,
+          "clientWidth": 390,
+          "scrollWidth": 390,
+          "typeNineVisible": true,
+          "overflow": 0
+        },
+        {
+          "name": "tablet-768x1024",
+          "width": 768,
+          "height": 1024,
+          "clientWidth": 768,
+          "scrollWidth": 768,
+          "typeNineVisible": true,
+          "overflow": 0
+        },
+        {
+          "name": "desktop-1024x768",
+          "width": 1024,
+          "height": 768,
+          "clientWidth": 1024,
+          "scrollWidth": 1024,
+          "typeNineVisible": true,
+          "overflow": 0
+        },
+        {
+          "name": "desktop-1440x900",
+          "width": 1440,
+          "height": 900,
+          "clientWidth": 1440,
+          "scrollWidth": 1440,
+          "typeNineVisible": true,
+          "overflow": 0
+        }
+      ]
+    },
+    {
+      "name": "tipo 9 presente en cinco viewports",
+      "pass": true,
+      "details": [
+        {
+          "name": "mobile-320x568",
+          "width": 320,
+          "height": 568,
+          "clientWidth": 320,
+          "scrollWidth": 320,
+          "typeNineVisible": true,
+          "overflow": 0
+        },
+        {
+          "name": "mobile-390x844",
+          "width": 390,
+          "height": 844,
+          "clientWidth": 390,
+          "scrollWidth": 390,
+          "typeNineVisible": true,
+          "overflow": 0
+        },
+        {
+          "name": "tablet-768x1024",
+          "width": 768,
+          "height": 1024,
+          "clientWidth": 768,
+          "scrollWidth": 768,
+          "typeNineVisible": true,
+          "overflow": 0
+        },
+        {
+          "name": "desktop-1024x768",
+          "width": 1024,
+          "height": 768,
+          "clientWidth": 1024,
+          "scrollWidth": 1024,
+          "typeNineVisible": true,
+          "overflow": 0
+        },
+        {
+          "name": "desktop-1440x900",
+          "width": 1440,
+          "height": 900,
+          "clientWidth": 1440,
+          "scrollWidth": 1440,
+          "typeNineVisible": true,
+          "overflow": 0
+        }
+      ]
+    },
+    {
+      "name": "zoom 200% conserva el contrato sin overflow",
+      "pass": true,
+      "details": {
+        "clientWidth": 720,
+        "scrollWidth": 720,
+        "typeNineVisible": true,
+        "overflow": 0,
+        "emulation": "1440×900 physical viewport at 200% → 720×450 CSS reflow viewport"
+      }
+    },
+    {
+      "name": "cero pageerror",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "cero requests internas fallidas",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "cero errores propios de consola",
+      "pass": true,
+      "details": {
+        "unexpectedConsole": [],
+        "knownBaselineConsoleCount": 12
+      }
+    }
+  ],
+  "routeResults": [
+    {
+      "slug": "multiple-choice",
+      "status": 200,
+      "h1Count": 1,
+      "h1": "IELTS Reading Multiple Choice",
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/multiple-choice",
+      "currentBreadcrumb": "",
+      "bodyIncludesComingSoon": false,
+      "expectedPath": "/practica/ielts/reading/tipos-de-preguntas/multiple-choice"
+    },
+    {
+      "slug": "true-false-not-given",
+      "status": 200,
+      "h1Count": 1,
+      "h1": "IELTS True/False/Not Given",
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/true-false-not-given",
+      "currentBreadcrumb": "",
+      "bodyIncludesComingSoon": false,
+      "expectedPath": "/practica/ielts/reading/tipos-de-preguntas/true-false-not-given"
+    },
+    {
+      "slug": "yes-no-not-given",
+      "status": 200,
+      "h1Count": 1,
+      "h1": "IELTS Yes/No/Not Given",
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given",
+      "currentBreadcrumb": "",
+      "bodyIncludesComingSoon": false,
+      "expectedPath": "/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given"
+    },
+    {
+      "slug": "matching-information",
+      "status": 200,
+      "h1Count": 1,
+      "h1": "IELTS Matching Information",
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/matching-information",
+      "currentBreadcrumb": "",
+      "bodyIncludesComingSoon": false,
+      "expectedPath": "/practica/ielts/reading/tipos-de-preguntas/matching-information"
+    },
+    {
+      "slug": "matching-headings",
+      "status": 200,
+      "h1Count": 1,
+      "h1": "IELTS Matching Headings",
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/matching-headings",
+      "currentBreadcrumb": "",
+      "bodyIncludesComingSoon": false,
+      "expectedPath": "/practica/ielts/reading/tipos-de-preguntas/matching-headings"
+    },
+    {
+      "slug": "matching-features",
+      "status": 200,
+      "h1Count": 1,
+      "h1": "IELTS Matching Features",
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/matching-features",
+      "currentBreadcrumb": "",
+      "bodyIncludesComingSoon": false,
+      "expectedPath": "/practica/ielts/reading/tipos-de-preguntas/matching-features"
+    },
+    {
+      "slug": "matching-sentence-endings",
+      "status": 200,
+      "h1Count": 1,
+      "h1": "IELTS Matching Sentence Endings",
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings",
+      "currentBreadcrumb": "",
+      "bodyIncludesComingSoon": false,
+      "expectedPath": "/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings"
+    },
+    {
+      "slug": "sentence-completion",
+      "status": 200,
+      "h1Count": 1,
+      "h1": "IELTS Reading Sentence Completion",
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/sentence-completion",
+      "currentBreadcrumb": "",
+      "bodyIncludesComingSoon": false,
+      "expectedPath": "/practica/ielts/reading/tipos-de-preguntas/sentence-completion"
+    },
+    {
+      "slug": "summary-completion",
+      "status": 200,
+      "h1Count": 1,
+      "h1": "IELTS Reading Summary Completion",
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/summary-completion",
+      "currentBreadcrumb": "Summary Completion",
+      "bodyIncludesComingSoon": false,
+      "expectedPath": "/practica/ielts/reading/tipos-de-preguntas/summary-completion"
+    },
+    {
+      "slug": "note-completion",
+      "status": 200,
+      "h1Count": 1,
+      "h1": "IELTS Reading Note Completion",
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/note-completion",
+      "currentBreadcrumb": "Note Completion",
+      "bodyIncludesComingSoon": false,
+      "expectedPath": "/practica/ielts/reading/tipos-de-preguntas/note-completion"
+    },
+    {
+      "slug": "table-completion",
+      "status": 200,
+      "h1Count": 1,
+      "h1": "IELTS Reading Table Completion",
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/table-completion",
+      "currentBreadcrumb": "Table Completion",
+      "bodyIncludesComingSoon": false,
+      "expectedPath": "/practica/ielts/reading/tipos-de-preguntas/table-completion"
+    },
+    {
+      "slug": "flow-chart-completion",
+      "status": 200,
+      "h1Count": 1,
+      "h1": "IELTS Reading Flow-chart Completion",
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/flow-chart-completion",
+      "currentBreadcrumb": "Flow-chart Completion",
+      "bodyIncludesComingSoon": false,
+      "expectedPath": "/practica/ielts/reading/tipos-de-preguntas/flow-chart-completion"
+    },
+    {
+      "slug": "diagram-labeling",
+      "status": 200,
+      "h1Count": 1,
+      "h1": "IELTS Reading Diagram Labeling",
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/diagram-labeling",
+      "currentBreadcrumb": "",
+      "bodyIncludesComingSoon": false,
+      "expectedPath": "/practica/ielts/reading/tipos-de-preguntas/diagram-labeling"
+    },
+    {
+      "slug": "short-answer",
+      "status": 200,
+      "h1Count": 1,
+      "h1": "IELTS Reading Short-answer Questions",
+      "canonical": "https://www.idiomaswl.com/practica/ielts/reading/tipos-de-preguntas/short-answer",
+      "currentBreadcrumb": "",
+      "bodyIncludesComingSoon": false,
+      "expectedPath": "/practica/ielts/reading/tipos-de-preguntas/short-answer"
+    }
+  ],
+  "typeNineResults": [
+    {
+      "slug": "summary-completion",
+      "status": 200,
+      "routeLabel": true,
+      "groupingExplanation": true,
+      "mapBackLink": true,
+      "currentBreadcrumb": true,
+      "h1Lang": "en",
+      "officialSource": true
+    },
+    {
+      "slug": "note-completion",
+      "status": 200,
+      "routeLabel": true,
+      "groupingExplanation": true,
+      "mapBackLink": true,
+      "currentBreadcrumb": true,
+      "h1Lang": "en",
+      "officialSource": true
+    },
+    {
+      "slug": "table-completion",
+      "status": 200,
+      "routeLabel": true,
+      "groupingExplanation": true,
+      "mapBackLink": true,
+      "currentBreadcrumb": true,
+      "h1Lang": "en",
+      "officialSource": true
+    },
+    {
+      "slug": "flow-chart-completion",
+      "status": 200,
+      "routeLabel": true,
+      "groupingExplanation": true,
+      "mapBackLink": true,
+      "currentBreadcrumb": true,
+      "h1Lang": "en",
+      "officialSource": true
+    }
+  ],
+  "viewportResults": [
+    {
+      "name": "mobile-320x568",
+      "width": 320,
+      "height": 568,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "typeNineVisible": true,
+      "overflow": 0
+    },
+    {
+      "name": "mobile-390x844",
+      "width": 390,
+      "height": 844,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "typeNineVisible": true,
+      "overflow": 0
+    },
+    {
+      "name": "tablet-768x1024",
+      "width": 768,
+      "height": 1024,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "typeNineVisible": true,
+      "overflow": 0
+    },
+    {
+      "name": "desktop-1024x768",
+      "width": 1024,
+      "height": 768,
+      "clientWidth": 1024,
+      "scrollWidth": 1024,
+      "typeNineVisible": true,
+      "overflow": 0
+    },
+    {
+      "name": "desktop-1440x900",
+      "width": 1440,
+      "height": 900,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "typeNineVisible": true,
+      "overflow": 0
+    }
+  ],
+  "zoomMetrics": {
+    "clientWidth": 720,
+    "scrollWidth": 720,
+    "typeNineVisible": true,
+    "overflow": 0,
+    "emulation": "1440×900 physical viewport at 200% → 720×450 CSS reflow viewport"
+  },
+  "diagnostics": {
+    "pageErrors": [],
+    "internalFailedRequests": [],
+    "externalFailedRequests": [
+      {
+        "url": "https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js",
+        "error": "csp"
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-YSYKDBDC4J&gtm=45je6852v9253881565z89253867252za20gzb9253867252zd9253867252&_p=1786259951107&gcd=13l3l3l3l1l1&npa=0&dma=0&are=1&cid=413295986.1786259952&frm=0&ngs=1&pscdl=noapi&rcb=1&sr=1440x900&uaa=arm&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=macOS&uapv=26.2.0&uaw=0&ul=en-us&_s=1&tag_exp=115616986~115938466~115938468~118897920~118897930~119337769~119527020~119896803&sid=1786259952&sct=1&seg=0&dl=http%3A%2F%2Flocalhost%2Fpractica%2Fielts%2Freading%2Ftipos-de-preguntas&dt=Tipos%20de%20preguntas%20IELTS%20Reading%3A%20gu%C3%ADa%20completa%20y%20ejercicios%20%C2%B7%20Idiomas%20WeLearn&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=1070",
+        "error": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js",
+        "error": "csp"
+      },
+      {
+        "url": "https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js",
+        "error": "csp"
+      },
+      {
+        "url": "https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js",
+        "error": "csp"
+      },
+      {
+        "url": "https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js",
+        "error": "csp"
+      },
+      {
+        "url": "https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js",
+        "error": "csp"
+      },
+      {
+        "url": "https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js",
+        "error": "csp"
+      },
+      {
+        "url": "https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js",
+        "error": "csp"
+      },
+      {
+        "url": "https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js",
+        "error": "csp"
+      },
+      {
+        "url": "https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js",
+        "error": "csp"
+      },
+      {
+        "url": "https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js",
+        "error": "csp"
+      },
+      {
+        "url": "https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js",
+        "error": "csp"
+      }
+    ],
+    "unexpectedConsole": [],
+    "knownBaselineConsole": [
+      {
+        "type": "error",
+        "text": "Loading the script 'https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js' violates the following Content Security Policy directive: \"script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://ssl.google-analytics.com https://connect.facebook.net\". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked.",
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-57NXLPZV"
+      },
+      {
+        "type": "error",
+        "text": "Loading the script 'https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js' violates the following Content Security Policy directive: \"script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://ssl.google-analytics.com https://connect.facebook.net\". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked.",
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-57NXLPZV"
+      },
+      {
+        "type": "error",
+        "text": "Loading the script 'https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js' violates the following Content Security Policy directive: \"script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://ssl.google-analytics.com https://connect.facebook.net\". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked.",
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-57NXLPZV"
+      },
+      {
+        "type": "error",
+        "text": "Loading the script 'https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js' violates the following Content Security Policy directive: \"script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://ssl.google-analytics.com https://connect.facebook.net\". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked.",
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-57NXLPZV"
+      },
+      {
+        "type": "error",
+        "text": "Loading the script 'https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js' violates the following Content Security Policy directive: \"script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://ssl.google-analytics.com https://connect.facebook.net\". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked.",
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-57NXLPZV"
+      },
+      {
+        "type": "error",
+        "text": "Loading the script 'https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js' violates the following Content Security Policy directive: \"script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://ssl.google-analytics.com https://connect.facebook.net\". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked.",
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-57NXLPZV"
+      },
+      {
+        "type": "error",
+        "text": "Loading the script 'https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js' violates the following Content Security Policy directive: \"script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://ssl.google-analytics.com https://connect.facebook.net\". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked.",
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-57NXLPZV"
+      },
+      {
+        "type": "error",
+        "text": "Loading the script 'https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js' violates the following Content Security Policy directive: \"script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://ssl.google-analytics.com https://connect.facebook.net\". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked.",
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-57NXLPZV"
+      },
+      {
+        "type": "error",
+        "text": "Loading the script 'https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js' violates the following Content Security Policy directive: \"script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://ssl.google-analytics.com https://connect.facebook.net\". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked.",
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-57NXLPZV"
+      },
+      {
+        "type": "error",
+        "text": "Loading the script 'https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js' violates the following Content Security Policy directive: \"script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://ssl.google-analytics.com https://connect.facebook.net\". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked.",
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-57NXLPZV"
+      },
+      {
+        "type": "error",
+        "text": "Loading the script 'https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js' violates the following Content Security Policy directive: \"script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://ssl.google-analytics.com https://connect.facebook.net\". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked.",
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-57NXLPZV"
+      },
+      {
+        "type": "error",
+        "text": "Loading the script 'https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js' violates the following Content Security Policy directive: \"script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://ssl.google-analytics.com https://connect.facebook.net\". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked.",
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-57NXLPZV"
+      }
+    ]
+  }
+}

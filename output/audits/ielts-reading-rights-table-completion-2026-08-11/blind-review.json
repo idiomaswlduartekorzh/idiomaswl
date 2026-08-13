@@ -1,0 +1,259 @@
+{
+  "schemaVersion": "ielts-reading-table-completion-blind-review.v1",
+  "generatedAt": "2026-08-11T17:10:03Z",
+  "reviewScope": "F0.2b.11 — clean exact one-best-answer adjudication over three table passages",
+  "reviewerIsolation": "Use only this packet. Do not open catalog, registry, validator, runtime, prompt-only verdict, factual packet or prior audits until all 18 decisions are persisted.",
+  "taskRule": "Complete every table gap with a contiguous span from its passage. Use no more than two words; a hyphenated expression counts as one word and contractions are not tested. For official type 9, answers may not occur in passage order; judge this bank as written.",
+  "instruction": "Persist the completed cell, exact passage span, evidence, closest plausible competing span and ambiguity. Also judge whether row and column headers provide coherent coordinates without revealing the key. Do not use hints or outside knowledge.",
+  "excludes": [
+    "answer keys",
+    "accepted alternatives",
+    "explanations",
+    "hints",
+    "prior verdicts",
+    "factual sources",
+    "student data"
+  ],
+  "records": [
+    {
+      "assetId": "formative:table-completion:table-cooling-buildings",
+      "title": "Passive cooling in public buildings",
+      "sourceObjectSha256": "bbf741fdf9e92620e9491e0b4197558aefe99b2c12b9a6cf11e94da8330518bd",
+      "passageSha256": "4855b6c5fc0b048304b1746b7423c1973b3ef548176673ccbde2641d513e946c",
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "passage": "Public buildings in warm regions are increasingly being designed to reduce the need for mechanical air conditioning. Architects call these methods passive cooling because they lower indoor temperatures without relying mainly on powered machines. The approach is not new: older houses in many climates used courtyards, thick walls and shaded openings long before electric cooling became common.\n\nOne method is cross-ventilation. When windows or vents are placed on opposite sides of a room, moving air can carry heat away from occupants and surfaces. This works best when designers study the direction of prevailing winds before deciding where openings should go. If the openings face the wrong direction, the room may still feel still and humid.\n\nAnother method is thermal mass. Materials such as stone, concrete and brick can absorb heat during the day and release it slowly at night. In schools and libraries, this can make indoor temperatures more stable, especially where nights are cooler than afternoons. However, thermal mass is less useful if the building cannot release stored heat after sunset.\n\nShading is also important. Deep roof edges, external screens and trees can block direct sunlight before it reaches windows. External shade is usually more effective than curtains because it stops heat before it enters the glass. The best shading design depends on the sun's angle, which changes with season and time of day.\n\nPassive cooling is not a complete replacement for all mechanical systems. Hospitals, laboratories and data rooms may still need precise temperature control. But in many public buildings, passive methods can reduce energy demand and make indoor spaces more comfortable during ordinary use.",
+      "tableTitle": "Passive cooling methods",
+      "columns": [
+        "Method",
+        "How it works",
+        "Important condition or limitation"
+      ],
+      "rows": [
+        {
+          "rowId": "table-cooling-01",
+          "cells": [
+            {
+              "kind": "text",
+              "text": "Cross-ventilation"
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-cooling-01-1",
+              "before": "Moving air carries ",
+              "after": " away from people and surfaces."
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-cooling-01-2",
+              "before": "Designers should study ",
+              "after": " before placing openings."
+            }
+          ]
+        },
+        {
+          "rowId": "table-cooling-02",
+          "cells": [
+            {
+              "kind": "text",
+              "text": "Thermal mass"
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-cooling-02-1",
+              "before": "Stone, concrete and brick absorb heat during the ",
+              "after": "."
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-cooling-02-2",
+              "before": "It is less useful if stored heat cannot be released after ",
+              "after": "."
+            }
+          ]
+        },
+        {
+          "rowId": "table-cooling-03",
+          "cells": [
+            {
+              "kind": "text",
+              "text": "Shading"
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-cooling-03-1",
+              "before": "External shade stops heat before it enters the ",
+              "after": "."
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-cooling-03-2",
+              "before": "Good design depends on the sun's ",
+              "after": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetId": "formative:table-completion:table-rain-gardens",
+      "title": "Rain gardens in school grounds",
+      "sourceObjectSha256": "23e079b4c30603c96b2ed16bd1f68f52ffc6850d5b780d3af8e29bd5047a70b9",
+      "passageSha256": "b1dd317e09c2ef80e152284263acdb390ca86494e33a95d9dfc425c658ee140f",
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "passage": "Rain gardens are shallow planted areas designed to collect water after heavy rainfall. Instead of sending all runoff into drains at once, the garden holds water temporarily and lets it soak slowly into the soil. Schools are starting to install them because playgrounds and car parks often create large amounts of surface water during storms.\n\nThe first design decision is location. A rain garden should sit below the area it drains, but it must not be placed where water already remains for days. If the soil is permanently wet, plant roots may rot and the garden will not absorb new water effectively. Designers also keep rain gardens away from building foundations so that water does not increase damp problems.\n\nPlant choice matters as much as shape. Deep-rooted native plants are often recommended because they tolerate both wet and dry periods and help open channels in the soil. Decorative annual flowers may look attractive, but they usually need more maintenance and may not survive sudden flooding.\n\nSchools often use rain gardens as outdoor classrooms. Students can measure rainfall, observe insects and compare how quickly different surfaces dry after a storm. Maintenance remains important: leaves must be cleared from inlet points, and litter should be removed before it blocks the flow of water. A well-managed rain garden reduces runoff while making drainage visible to students.",
+      "tableTitle": "Rain garden design and use",
+      "columns": [
+        "Feature",
+        "Reason or benefit",
+        "Condition or warning"
+      ],
+      "rows": [
+        {
+          "rowId": "table-rain-gardens-01",
+          "cells": [
+            {
+              "kind": "text",
+              "text": "Water management"
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-rain-gardens-01-1",
+              "before": "The garden holds water ",
+              "after": " after heavy rain."
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-rain-gardens-01-2",
+              "before": "It helps avoid sending all runoff into ",
+              "after": " immediately."
+            }
+          ]
+        },
+        {
+          "rowId": "table-rain-gardens-02",
+          "cells": [
+            {
+              "kind": "text",
+              "text": "Location"
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-rain-gardens-02-1",
+              "before": "The garden should sit below the area it ",
+              "after": "."
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-rain-gardens-02-2",
+              "before": "Avoid soil that is permanently ",
+              "after": "."
+            }
+          ]
+        },
+        {
+          "rowId": "table-rain-gardens-03",
+          "cells": [
+            {
+              "kind": "text",
+              "text": "Planting and maintenance"
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-rain-gardens-03-1",
+              "before": "Deep-rooted native plants open channels in the ",
+              "after": "."
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-rain-gardens-03-2",
+              "before": "Leaves should be cleared from ",
+              "after": " points."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetId": "formative:table-completion:table-museum-inventory",
+      "title": "Digitising small museum collections",
+      "sourceObjectSha256": "c7641b80b191b3bedd29a75df19bd1c39174b467e58947a817718d2d0b3fd069",
+      "passageSha256": "f21af1a1f11c1f8b5d70b6f73b3f0113ee76d41de8e39dbe9914570b9e096e69",
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "passage": "Small museums often hold objects that are valuable to local communities but poorly documented. A drawer may contain old tools, letters or photographs with little more than a handwritten label. Digitising the collection does not simply mean taking pictures. Staff must create records that explain what each object is, where it came from and why it matters.\n\nThe first stage is identification. Curators check existing labels, interview donors and compare objects with catalogues from similar collections. When information is uncertain, the record should say so clearly rather than presenting a guess as fact. This honesty is useful for future researchers who may later add better evidence.\n\nPhotography comes next, but it requires consistency. Objects should be photographed against a plain background, with a scale marker when size is important. Reflective objects may need side lighting to avoid glare, while fragile paper should be supported so it does not tear during handling.\n\nDigital records also need storage rules. File names should be stable, backups should be kept in more than one place and access permissions must be agreed before sensitive material is shared online. Volunteers can help with scanning and transcription, but a trained staff member should review records before publication. Without review, spelling errors or missing dates can spread quickly through the public catalogue.",
+      "tableTitle": "Digitising a small museum collection",
+      "columns": [
+        "Stage",
+        "Main action",
+        "Risk or quality control"
+      ],
+      "rows": [
+        {
+          "rowId": "table-museum-inventory-01",
+          "cells": [
+            {
+              "kind": "text",
+              "text": "Creating records"
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-museum-inventory-01-1",
+              "before": "Records explain what an object is and where it ",
+              "after": " from."
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-museum-inventory-01-2",
+              "before": "A photo alone is not enough because digitising is more than taking ",
+              "after": "."
+            }
+          ]
+        },
+        {
+          "rowId": "table-museum-inventory-02",
+          "cells": [
+            {
+              "kind": "text",
+              "text": "Identification"
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-museum-inventory-02-1",
+              "before": "Curators may interview ",
+              "after": " to check object history."
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-museum-inventory-02-2",
+              "before": "Uncertain information should not be presented as ",
+              "after": "."
+            }
+          ]
+        },
+        {
+          "rowId": "table-museum-inventory-03",
+          "cells": [
+            {
+              "kind": "text",
+              "text": "Photography and storage"
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-museum-inventory-03-1",
+              "before": "A scale marker helps when ",
+              "after": " is important."
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-museum-inventory-03-2",
+              "before": "A trained staff member should review records before ",
+              "after": "."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

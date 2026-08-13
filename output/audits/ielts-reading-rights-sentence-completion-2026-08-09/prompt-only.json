@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "ielts-reading-sentence-completion-prompt-only.v1",
+  "generatedAt": "2026-08-09T16:36:00Z",
+  "reviewScope": "F0.2b.8 — grammar and sentence-frame shortcut audit over 18 open responses",
+  "reviewerIsolation": "Use only sentence frames and word limits. Do not open passages, hints, keys, blind packets, registry or prior reviews.",
+  "taskRule": "For each blank, classify the grammar requested and record whether the visible frame uniquely suggests an exact one- or two-word completion.",
+  "instruction": "Do not reconstruct stored keys. This packet measures prompt-only exact-guess risk without passage evidence.",
+  "excludes": [
+    "passages",
+    "accepted answers",
+    "alternatives",
+    "explanations",
+    "hints",
+    "prior verdicts",
+    "student data"
+  ],
+  "records": [
+    {
+      "assetId": "formative:sentence-completion:sentence-wetland-parks",
+      "sourceObjectSha256": "42f7976e179acf1b8afec86285530ad9b5a5a26aba13ca89c7ad82c86bbf22db",
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "sentenceFrames": [
+        {
+          "questionId": "sentence-wetlands-01",
+          "before": "Wetland parks can keep rainwater for a short time instead of sending it through ",
+          "after": "."
+        },
+        {
+          "questionId": "sentence-wetlands-02",
+          "before": "During storms, the parks can reduce pressure on ",
+          "after": "."
+        },
+        {
+          "questionId": "sentence-wetlands-03",
+          "before": "Small wetland areas may help species survive if they include native plants and ",
+          "after": "."
+        },
+        {
+          "questionId": "sentence-wetlands-04",
+          "before": "Some planners call wetland parks ecological ",
+          "after": " instead of decoration."
+        },
+        {
+          "questionId": "sentence-wetlands-05",
+          "before": "If maintenance is poor, blocked channels can limit ",
+          "after": "."
+        },
+        {
+          "questionId": "sentence-wetlands-06",
+          "before": "Signs and viewing platforms can help people understand the park’s ",
+          "after": "."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:sentence-completion:sentence-library-makerspaces",
+      "sourceObjectSha256": "8f2b278d1b180a17a78f9aa3057364ebf3a8e401ff6b3b529ac109f8936da6bc",
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "sentenceFrames": [
+        {
+          "questionId": "sentence-makerspaces-01",
+          "before": "Makerspaces let library visitors use tools including audio recorders and ",
+          "after": "."
+        },
+        {
+          "questionId": "sentence-makerspaces-02",
+          "before": "Supporters say makerspaces help libraries move beyond ",
+          "after": " information."
+        },
+        {
+          "questionId": "sentence-makerspaces-03",
+          "before": "Staff need to introduce tools safely and connect visitors with realistic ",
+          "after": "."
+        },
+        {
+          "questionId": "sentence-makerspaces-04",
+          "before": "Equipment may remain unused if the library ignores local ",
+          "after": "."
+        },
+        {
+          "questionId": "sentence-makerspaces-05",
+          "before": "Libraries protect study areas by separating noisy activities from ",
+          "after": "."
+        },
+        {
+          "questionId": "sentence-makerspaces-06",
+          "before": "Makerspaces extend the library’s ",
+          "after": " rather than replacing books."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:sentence-completion:sentence-night-markets",
+      "sourceObjectSha256": "b0434ae0c3ed919b06a0c256586f1753d299b260bbe5aa34c2813ed788622ff3",
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "sentenceFrames": [
+        {
+          "questionId": "sentence-night-markets-01",
+          "before": "Night markets can create an evening economy without a permanent ",
+          "after": "."
+        },
+        {
+          "questionId": "sentence-night-markets-02",
+          "before": "A short trading window helps small businesses test ",
+          "after": "."
+        },
+        {
+          "questionId": "sentence-night-markets-03",
+          "before": "Markets near a ",
+          "after": " are easier for people to reach."
+        },
+        {
+          "questionId": "sentence-night-markets-04",
+          "before": "Organizers may need to keep ",
+          "after": " clear to avoid disruption."
+        },
+        {
+          "questionId": "sentence-night-markets-05",
+          "before": "Craft stalls and performances can make visitors stay ",
+          "after": "."
+        },
+        {
+          "questionId": "sentence-night-markets-06",
+          "before": "Organizers need feedback because a busy opening night may not prove ",
+          "after": "."
+        }
+      ]
+    }
+  ]
+}

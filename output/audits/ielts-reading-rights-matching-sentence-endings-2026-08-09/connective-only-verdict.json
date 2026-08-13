@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "ielts-reading-matching-sentence-endings-connective-only-verdict.v1",
+  "reviewer": {
+    "reviewerRunId": "mse-surface-reviewer-2026-08-09-connective-regenerated",
+    "reviewedAt": "2026-08-09T15:23:04Z",
+    "packetSha256": "046de9743fa38212966ac3ebf03945e158280bcbff75f6cdecd4036c355c055a",
+    "sourceContext": "connective-only-packet-only",
+    "humanSignature": false,
+    "notes": [
+      "Reviewed from sentence starts and visible connective labels only; no passage, ending text, answer material, or prior verdict was consulted.",
+      "Compatibility reflects plausible logical relations signalled by the start, not a reconstruction of stored answers."
+    ]
+  },
+  "records": [
+    {
+      "questionId": "mse-microclimates-01",
+      "predictedRelation": "justification or concession for rejecting an exclusively city-wide framing",
+      "compatibleConnectives": ["because", "although"],
+      "connectorCompatibleEndingIds": ["A", "B", "E", "G"],
+      "uniqueConnectorEndingId": null,
+      "reasoning": "The negative recommendation invites an explanation and can also accept a concessive qualification; three because options and one although option remain visible."
+    },
+    {
+      "questionId": "mse-microclimates-02",
+      "predictedRelation": "mechanism, cause, condition, timing, or concession describing how the materials may help",
+      "compatibleConnectives": ["because", "by", "only when", "although", "if", "when"],
+      "connectorCompatibleEndingIds": ["A", "B", "C", "D", "E", "F", "G", "H"],
+      "uniqueConnectorEndingId": null,
+      "reasoning": "A modal benefit claim is open to a mechanism, explanation, condition, time frame, or concession, so connector labels alone do not narrow the options."
+    },
+    {
+      "questionId": "mse-microclimates-03",
+      "predictedRelation": "condition, timing, or reason for maximum usefulness",
+      "compatibleConnectives": ["because", "only when", "if", "when"],
+      "connectorCompatibleEndingIds": ["A", "B", "D", "F", "G", "H"],
+      "uniqueConnectorEndingId": null,
+      "reasoning": "The superlative most useful naturally invites circumstances or a reason, but every compatible class is represented by multiple visible IDs overall."
+    },
+    {
+      "questionId": "mse-microclimates-04",
+      "predictedRelation": "reason, condition, timing, or concession bearing on the importance of modelling",
+      "compatibleConnectives": ["because", "only when", "although", "if", "when"],
+      "connectorCompatibleEndingIds": ["A", "B", "D", "E", "F", "G", "H"],
+      "uniqueConnectorEndingId": null,
+      "reasoning": "An assertion of importance can be explained, conditioned, timed, or qualified; the visible connective inventory leaves seven endings possible."
+    },
+    {
+      "questionId": "mse-microclimates-05",
+      "predictedRelation": "cause or condition under which the space has limited value",
+      "compatibleConnectives": ["because", "only when", "if", "when"],
+      "connectorCompatibleEndingIds": ["A", "B", "D", "F", "G", "H"],
+      "uniqueConnectorEndingId": null,
+      "reasoning": "Limited value can be followed by either a cause or a limiting circumstance, leaving several connector-compatible endings."
+    },
+    {
+      "questionId": "mse-microclimates-06",
+      "predictedRelation": "mechanism, reason, condition, or timing for best performance",
+      "compatibleConnectives": ["because", "by", "only when", "if", "when"],
+      "connectorCompatibleEndingIds": ["A", "B", "C", "D", "F", "G", "H"],
+      "uniqueConnectorEndingId": null,
+      "reasoning": "Work best can introduce how, why, or under what circumstances interventions succeed; connector form does not isolate one ending."
+    },
+    {
+      "questionId": "mse-food-waste-01",
+      "predictedRelation": "justification for rejecting sole blame on consumers",
+      "compatibleConnectives": ["because"],
+      "connectorCompatibleEndingIds": ["A", "F", "H"],
+      "uniqueConnectorEndingId": null,
+      "reasoning": "The recommendation most directly calls for a reason, but three visible endings use because."
+    },
+    {
+      "questionId": "mse-food-waste-02",
+      "predictedRelation": "mechanism, reason, or condition under which forecasting reduces waste",
+      "compatibleConnectives": ["because", "by", "only when", "when", "unless"],
+      "connectorCompatibleEndingIds": ["A", "B", "C", "D", "E", "F", "H"],
+      "uniqueConnectorEndingId": null,
+      "reasoning": "The causal claim can be completed by method, explanation, or limiting conditions, leaving seven visible IDs."
+    },
+    {
+      "questionId": "mse-food-waste-03",
+      "predictedRelation": "mechanism, reason, or condition affecting better sales",
+      "compatibleConnectives": ["because", "by", "only when", "when", "unless"],
+      "connectorCompatibleEndingIds": ["A", "B", "C", "D", "E", "F", "H"],
+      "uniqueConnectorEndingId": null,
+      "reasoning": "May sell better permits causal, instrumental, and conditional continuations, so the connector layer is highly non-unique."
+    },
+    {
+      "questionId": "mse-food-waste-04",
+      "predictedRelation": "reason, condition, timing, or role explaining usefulness",
+      "compatibleConnectives": ["because", "only when", "when", "unless", "as"],
+      "connectorCompatibleEndingIds": ["A", "C", "D", "E", "F", "G", "H"],
+      "uniqueConnectorEndingId": null,
+      "reasoning": "A usefulness claim can be justified, conditioned, timed, or characterized by role; connector labels retain seven endings."
+    },
+    {
+      "questionId": "mse-food-waste-05",
+      "predictedRelation": "classification or role after the lexical frame best understood",
+      "compatibleConnectives": ["as"],
+      "connectorCompatibleEndingIds": ["G"],
+      "uniqueConnectorEndingId": "G",
+      "reasoning": "At connective-only level, best understood most strongly predicts an as-complement, and only G exposes that connective."
+    },
+    {
+      "questionId": "mse-food-waste-06",
+      "predictedRelation": "cause, mechanism, timing, or condition for producing surplus meals",
+      "compatibleConnectives": ["because", "by", "only when", "when", "unless"],
+      "connectorCompatibleEndingIds": ["A", "B", "C", "D", "E", "F", "H"],
+      "uniqueConnectorEndingId": null,
+      "reasoning": "The modal production claim accepts explanations, mechanisms, and conditions; visible connectives cannot isolate one ending."
+    },
+    {
+      "questionId": "mse-libraries-01",
+      "predictedRelation": "mechanism, reason, condition, timing, or limitation describing support",
+      "compatibleConnectives": ["because", "without", "by", "only when", "when", "before"],
+      "connectorCompatibleEndingIds": ["A", "B", "C", "D", "E", "F", "G", "H"],
+      "uniqueConnectorEndingId": null,
+      "reasoning": "A broad support claim is compatible with every visible relation class in this option set."
+    },
+    {
+      "questionId": "mse-libraries-02",
+      "predictedRelation": "mechanism, reason, condition, timing, or limitation describing how staff guide residents",
+      "compatibleConnectives": ["because", "without", "by", "only when", "when", "before"],
+      "connectorCompatibleEndingIds": ["A", "B", "C", "D", "E", "F", "G", "H"],
+      "uniqueConnectorEndingId": null,
+      "reasoning": "Guide residents can take a means, circumstance, time, reason, or limiting qualification, so all connective labels survive."
+    },
+    {
+      "questionId": "mse-libraries-03",
+      "predictedRelation": "mechanism, reason, condition, timing, or limitation governing when workshops become useful",
+      "compatibleConnectives": ["because", "without", "by", "only when", "when", "before"],
+      "connectorCompatibleEndingIds": ["A", "B", "C", "D", "E", "F", "G", "H"],
+      "uniqueConnectorEndingId": null,
+      "reasoning": "Become useful readily accepts the full visible range of explanatory and circumstantial relations."
+    },
+    {
+      "questionId": "mse-libraries-04",
+      "predictedRelation": "mechanism, circumstance, reason, timing, or limitation describing residents' contribution",
+      "compatibleConnectives": ["because", "without", "by", "only when", "when", "before"],
+      "connectorCompatibleEndingIds": ["A", "B", "C", "D", "E", "F", "G", "H"],
+      "uniqueConnectorEndingId": null,
+      "reasoning": "The reported contribution can be followed by how, why, when, or under what limitation it occurred; all connector classes remain."
+    },
+    {
+      "questionId": "mse-libraries-05",
+      "predictedRelation": "reason, mechanism, condition, timing, or limitation for greatest value",
+      "compatibleConnectives": ["because", "without", "by", "only when", "when", "before"],
+      "connectorCompatibleEndingIds": ["A", "B", "C", "D", "E", "F", "G", "H"],
+      "uniqueConnectorEndingId": null,
+      "reasoning": "A greatest-value claim can be explained or bounded in several ways, preserving all visible endings."
+    },
+    {
+      "questionId": "mse-libraries-06",
+      "predictedRelation": "justification or limitation for rejecting sole emergency responsibility",
+      "compatibleConnectives": ["because", "without"],
+      "connectorCompatibleEndingIds": ["A", "B", "F", "H"],
+      "uniqueConnectorEndingId": null,
+      "reasoning": "The negative expectation invites a reason or a without-limitation, but three because endings and one without ending remain."
+    }
+  ]
+}

@@ -1,0 +1,1042 @@
+{
+  "schemaVersion": "ielts-reading-table-completion-expert-verdict.v1",
+  "reviewer": {
+    "reviewerRunId": "codex-table-blind-ielts-expert-2026-08-11",
+    "reviewedAt": "2026-08-11T17:22:39Z",
+    "blindPacketSha256": "241aa316ca3c6667eb62ff8f5ae72fe7f47cb396519d428589cd5aa5950fa361",
+    "firstPassSha256": "798fd061e9c03a73dddf1cc34f8b706faa6e1df366348544036c164450293add",
+    "factualPacketSha256": "727744facf6729bb3e742c1748ac846e76019b51bab74131c080810c3c1e34ae",
+    "openedEvidenceIds": [
+      "ielts-table-completion-official-format",
+      "ielts-table-completion-sample-task",
+      "table-cooling-yourhome-passive",
+      "table-cooling-yourhome-thermal-mass",
+      "table-cooling-yourhome-shading",
+      "table-cooling-newham-external-shading",
+      "table-rain-epa-types",
+      "table-rain-epa-brochure",
+      "table-rain-usda-drainage",
+      "table-rain-psu-introduction",
+      "table-rain-epa-school-learning",
+      "table-museum-nps-records",
+      "table-museum-collections-trust",
+      "table-museum-canada-small",
+      "table-museum-nps-photography",
+      "table-museum-loc-preservation"
+    ],
+    "sourceContext": "two-pass-blind-then-factual-and-policy-sources",
+    "reviewSequence": [
+      "blind-review",
+      "factual-and-policy-source-review"
+    ],
+    "directSourceReview": true,
+    "humanSignature": false,
+    "notes": "All 16 specified URLs were opened after first-pass persistence. Penn State and the NPS photography PDF returned Internal Error; Collections Trust displayed an interstitial without substantive content. Access limits were not treated as support, and availability was not treated as proof of authorship, license, facts or human review. All 18 first-pass decisions remain unchanged."
+  },
+  "records": [
+    {
+      "assetId": "formative:table-completion:table-cooling-buildings",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "medium",
+        "representationRisk": "high",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "low",
+        "wordLimitRisk": "high",
+        "questionOrderRisk": "low",
+        "promptCueRisk": "low",
+        "hintCueRisk": "not-assessed",
+        "notes": "Official IELTS guidance confirms table completion with words from the text, an enforced word limit and possible non-sequential answers. Coordinates are coherent, but two cells have material one-best defects and the two-word cap truncates a four-word source complement. Sources support the mechanisms with climate and design qualifications."
+      },
+      "questions": [
+        {
+          "questionId": "table-cooling-01-1",
+          "selectedAnswer": "heat",
+          "normalizedSelectedAnswer": "heat",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Moving air carries heat away from people and surfaces.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "heat",
+            "start": 511,
+            "end": 515
+          },
+          "evidenceQuotes": [
+            "When windows or vents are placed on opposite sides of a room, moving air can carry heat away from occupants and surfaces."
+          ],
+          "closestCompetingAnswer": "stored heat",
+          "closestCompetitorPassageSpan": {
+            "text": "stored heat",
+            "start": 1079,
+            "end": 1090
+          },
+          "competitorFailure": "'Stored heat' is grammatical, but that span belongs to the thermal-mass limitation; the cross-ventilation sentence directly states that moving air carries heat away.",
+          "ambiguity": "none",
+          "reasoning": "The Cross-ventilation × How it works coordinate and the near-verbatim evidence select 'heat' without relying on prior knowledge."
+        },
+        {
+          "questionId": "table-cooling-01-2",
+          "selectedAnswer": "prevailing winds",
+          "normalizedSelectedAnswer": "prevailing winds",
+          "selectedAnswerWordCount": 2,
+          "completedSentence": "Designers should study prevailing winds before placing openings.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "prevailing winds",
+            "start": 604,
+            "end": 620
+          },
+          "evidenceQuotes": [
+            "This works best when designers study the direction of prevailing winds before deciding where openings should go."
+          ],
+          "closestCompetingAnswer": "the direction",
+          "closestCompetitorPassageSpan": {
+            "text": "the direction",
+            "start": 587,
+            "end": 600
+          },
+          "competitorFailure": "It does not decisively fail: 'Designers should study the direction before placing openings' is grammatical and contextually interpretable as wind direction, although it is less explicit than 'prevailing winds'.",
+          "ambiguity": "material",
+          "reasoning": "The source complement has four words, while the table allows two. Both its initial span 'the direction' and final span 'prevailing winds' are literal, within limit and defensible in the completed sentence, so the cell lacks a secure one-best answer."
+        },
+        {
+          "questionId": "table-cooling-02-1",
+          "selectedAnswer": "day",
+          "normalizedSelectedAnswer": "day",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Stone, concrete and brick absorb heat during the day.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "day",
+            "start": 850,
+            "end": 853
+          },
+          "evidenceQuotes": [
+            "Materials such as stone, concrete and brick can absorb heat during the day and release it slowly at night."
+          ],
+          "closestCompetingAnswer": "night",
+          "closestCompetitorPassageSpan": {
+            "text": "night",
+            "start": 879,
+            "end": 884
+          },
+          "competitorFailure": "'Night' is grammatical in the table frame, but the sentence contrasts absorption during the day with release at night.",
+          "ambiguity": "none",
+          "reasoning": "The material list and action match the source sentence exactly, which distinguishes the absorption period from the release period."
+        },
+        {
+          "questionId": "table-cooling-02-2",
+          "selectedAnswer": "sunset",
+          "normalizedSelectedAnswer": "sunset",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "It is less useful if stored heat cannot be released after sunset.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "sunset",
+            "start": 1097,
+            "end": 1103
+          },
+          "evidenceQuotes": [
+            "However, thermal mass is less useful if the building cannot release stored heat after sunset."
+          ],
+          "closestCompetingAnswer": "night",
+          "closestCompetitorPassageSpan": {
+            "text": "night",
+            "start": 879,
+            "end": 884
+          },
+          "competitorFailure": "'After night' would move release beyond the period when the passage says heat is released, whereas the limitation is stated verbatim with 'after sunset'.",
+          "ambiguity": "none",
+          "reasoning": "The limitation cell is a close grammatical paraphrase of the explicit final sentence of the thermal-mass paragraph."
+        },
+        {
+          "questionId": "table-cooling-03-1",
+          "selectedAnswer": "glass",
+          "normalizedSelectedAnswer": "glass",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "External shade stops heat before it enters the glass.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "glass",
+            "start": 1328,
+            "end": 1333
+          },
+          "evidenceQuotes": [
+            "Deep roof edges, external screens and trees can block direct sunlight before it reaches windows.",
+            "External shade is usually more effective than curtains because it stops heat before it enters the glass."
+          ],
+          "closestCompetingAnswer": "windows",
+          "closestCompetitorPassageSpan": {
+            "text": "windows",
+            "start": 1221,
+            "end": 1228
+          },
+          "competitorFailure": "It does not decisively fail: the immediately preceding shading evidence says external features block sunlight before it reaches windows, so 'windows' supports the same causal summary even though 'glass' is the verbatim match.",
+          "ambiguity": "material",
+          "reasoning": "'Glass' exactly reproduces the heat sentence, but 'windows' is another literal one-word span in the same paragraph and yields a grammatical, semantically supported completion. A strict one-best key would unfairly reject a defensible answer."
+        },
+        {
+          "questionId": "table-cooling-03-2",
+          "selectedAnswer": "angle",
+          "normalizedSelectedAnswer": "angle",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Good design depends on the sun's angle.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "angle",
+            "start": 1380,
+            "end": 1385
+          },
+          "evidenceQuotes": [
+            "The best shading design depends on the sun's angle, which changes with season and time of day."
+          ],
+          "closestCompetingAnswer": "direction",
+          "closestCompetitorPassageSpan": {
+            "text": "direction",
+            "start": 591,
+            "end": 600
+          },
+          "competitorFailure": "'The sun's direction' is grammatical but the passage uses direction for prevailing winds and explicitly names angle as the shading variable.",
+          "ambiguity": "none",
+          "reasoning": "The Shading × condition coordinate mirrors an explicit source clause and uniquely identifies 'angle'."
+        }
+      ],
+      "factualClaims": [
+        {
+          "claim": "Architects call these methods passive cooling because they lower indoor temperatures without relying mainly on powered machines.",
+          "assessment": "supported",
+          "evidenceIds": [
+            "table-cooling-yourhome-passive"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "table-cooling-yourhome-passive",
+              "locator": "What is passive cooling, lines 149-168; Achieving passive cooling, lines 171-173",
+              "evidenceNote": "Government guidance defines passive cooling as building design and materials controlling hot-weather temperature, distinct from but compatible with mechanical cooling."
+            }
+          ],
+          "note": "The core definition and non-exclusive contrast are supported; mechanical cooling may still be needed."
+        },
+        {
+          "claim": "When windows or vents are placed on opposite sides of a room, moving air can carry heat away from occupants and surfaces.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "table-cooling-yourhome-passive"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "table-cooling-yourhome-passive",
+              "locator": "Increasing heat loss, lines 252-258; Windows, lines 305-322",
+              "evidenceNote": "The source says air movement carries building heat out, cools people by evaporation and requires well-designed openings, but does not state the exact occupants-and-surfaces formulation."
+            }
+          ],
+          "note": "The mechanism is supported, but the sentence compresses distinct building and occupant cooling mechanisms."
+        },
+        {
+          "claim": "This works best when designers study the direction of prevailing winds before deciding where openings should go.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "table-cooling-yourhome-passive",
+            "table-cooling-newham-external-shading"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "table-cooling-yourhome-passive",
+              "locator": "Lines 257-275 and 305-322",
+              "evidenceNote": "The guidance requires well-designed openings and recommends funneling beneficial breezes, but does not use the exact prevailing-wind procedure."
+            },
+            {
+              "evidenceId": "table-cooling-newham-external-shading",
+              "locator": "PDF pages 8-9, lines 383-427",
+              "evidenceNote": "The guidance discusses opening limits and maximum ventilation but does not verify the claimed prevailing-wind study rule."
+            }
+          ],
+          "note": "Orientation-sensitive opening design is supported; the categorical wording and exact procedure are not."
+        },
+        {
+          "claim": "Materials such as stone, concrete and brick can absorb heat during the day and release it slowly at night.",
+          "assessment": "supported",
+          "evidenceIds": [
+            "table-cooling-yourhome-thermal-mass"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "table-cooling-yourhome-thermal-mass",
+              "locator": "Lines 136-159 and 194-204",
+              "evidenceNote": "The source identifies concrete, brick and stone as thermal-mass materials and describes appropriate mass absorbing daytime heat and releasing it at night."
+            }
+          ],
+          "note": "The modal can is supported, with climate and configuration qualifications."
+        },
+        {
+          "claim": "External shade is usually more effective than curtains because it stops heat before it enters the glass.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "table-cooling-yourhome-shading",
+            "table-cooling-newham-external-shading"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "table-cooling-yourhome-shading",
+              "locator": "Lines 185-195 and 208-213",
+              "evidenceNote": "The source says shading glass reduces heat gain and external blinds are optimum for some orientations, but provides no direct curtain comparison."
+            },
+            {
+              "evidenceId": "table-cooling-newham-external-shading",
+              "locator": "PDF pages 8-9, lines 383-423",
+              "evidenceNote": "The municipal guide recommends external shading for relevant orientations but not a universal curtain ranking."
+            }
+          ],
+          "note": "External solar control is supported, but the comparative and causal wording is broader than the reviewed evidence."
+        }
+      ],
+      "acceptedAnswerAssessments": [
+        {
+          "questionId": "table-cooling-01-1",
+          "acceptedText": "heat",
+          "normalizedText": "heat",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 1,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "The canonical answer is a literal whole-token span, respects the two-word limit and fits naturally."
+        },
+        {
+          "questionId": "table-cooling-01-2",
+          "acceptedText": "prevailing winds",
+          "normalizedText": "prevailing winds",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 2,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "The canonical answer is literal and natural, but the blind review found a material competing passage span absent from the canonical-only inventory."
+        },
+        {
+          "questionId": "table-cooling-02-1",
+          "acceptedText": "day",
+          "normalizedText": "day",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 1,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "The canonical answer is a literal whole-token span, respects the two-word limit and fits naturally."
+        },
+        {
+          "questionId": "table-cooling-02-2",
+          "acceptedText": "sunset",
+          "normalizedText": "sunset",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 1,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "The canonical answer is a literal whole-token span, respects the two-word limit and fits naturally."
+        },
+        {
+          "questionId": "table-cooling-03-1",
+          "acceptedText": "glass",
+          "normalizedText": "glass",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 1,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "The canonical answer is literal and natural, but the blind review found a material competing passage span absent from the canonical-only inventory."
+        },
+        {
+          "questionId": "table-cooling-03-2",
+          "acceptedText": "angle",
+          "normalizedText": "angle",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 1,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "The canonical answer is a literal whole-token span, respects the two-word limit and fits naturally."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:table-completion:table-rain-gardens",
+      "passageAssessment": {
+        "ieltsFitness": "fit",
+        "factualRisk": "medium",
+        "representationRisk": "low",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "low",
+        "wordLimitRisk": "low",
+        "questionOrderRisk": "low",
+        "promptCueRisk": "low",
+        "hintCueRisk": "not-assessed",
+        "notes": "The literal spans and table coordinates align with official type 9 guidance. Sources support collection, temporary holding, infiltration and wet/dry planting, but site conditions qualify infiltration and the school source does not establish frequent outdoor-classroom use."
+      },
+      "questions": [
+        {
+          "questionId": "table-rain-gardens-01-1",
+          "selectedAnswer": "temporarily",
+          "normalizedSelectedAnswer": "temporarily",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "The garden holds water temporarily after heavy rain.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "temporarily",
+            "start": 161,
+            "end": 172
+          },
+          "evidenceQuotes": [
+            "Instead of sending all runoff into drains at once, the garden holds water temporarily and lets it soak slowly into the soil."
+          ],
+          "closestCompetingAnswer": "for days",
+          "closestCompetitorPassageSpan": {
+            "text": "for days",
+            "start": 487,
+            "end": 495
+          },
+          "competitorFailure": "Although 'holds water for days' is grammatical, the passage says a rain garden must not be where water already remains for days and states that intended retention is temporary.",
+          "ambiguity": "none",
+          "reasoning": "The water-management benefit is stated directly and the selected adverb fits the table sentence without transformation."
+        },
+        {
+          "questionId": "table-rain-gardens-01-2",
+          "selectedAnswer": "drains",
+          "normalizedSelectedAnswer": "drains",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "It helps avoid sending all runoff into drains immediately.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "drains",
+            "start": 122,
+            "end": 128
+          },
+          "evidenceQuotes": [
+            "Instead of sending all runoff into drains at once, the garden holds water temporarily and lets it soak slowly into the soil."
+          ],
+          "closestCompetingAnswer": "soil",
+          "closestCompetitorPassageSpan": {
+            "text": "soil",
+            "start": 206,
+            "end": 210
+          },
+          "competitorFailure": "The passage presents slow soaking into soil as the desired alternative, not a destination to which all runoff is sent immediately.",
+          "ambiguity": "none",
+          "reasoning": "'Immediately' paraphrases 'at once', so the destination in the contrast is unambiguously drains."
+        },
+        {
+          "questionId": "table-rain-gardens-02-1",
+          "selectedAnswer": "drains",
+          "normalizedSelectedAnswer": "drains",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "The garden should sit below the area it drains.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "drains",
+            "start": 425,
+            "end": 431
+          },
+          "evidenceQuotes": [
+            "A rain garden should sit below the area it drains, but it must not be placed where water already remains for days."
+          ],
+          "closestCompetingAnswer": "collect water",
+          "closestCompetitorPassageSpan": {
+            "text": "collect water",
+            "start": 51,
+            "end": 64
+          },
+          "competitorFailure": "'Area it collect water' fails subject-verb agreement and does not express the source-area relation given in the location sentence.",
+          "ambiguity": "none",
+          "reasoning": "The completed sentence is identical to the relevant source clause and occupies the Location × reason coordinate."
+        },
+        {
+          "questionId": "table-rain-gardens-02-2",
+          "selectedAnswer": "wet",
+          "normalizedSelectedAnswer": "wet",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Avoid soil that is permanently wet.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "wet",
+            "start": 524,
+            "end": 527
+          },
+          "evidenceQuotes": [
+            "If the soil is permanently wet, plant roots may rot and the garden will not absorb new water effectively."
+          ],
+          "closestCompetingAnswer": "dry",
+          "closestCompetitorPassageSpan": {
+            "text": "dry",
+            "start": 837,
+            "end": 840
+          },
+          "competitorFailure": "'Permanently dry' is grammatical, but dry occurs only in the statement that native plants tolerate alternating wet and dry periods; the location warning expressly names permanently wet soil.",
+          "ambiguity": "none",
+          "reasoning": "The warning column converts the source condition into an imperative but otherwise preserves the decisive phrase."
+        },
+        {
+          "questionId": "table-rain-gardens-03-1",
+          "selectedAnswer": "soil",
+          "normalizedSelectedAnswer": "soil",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Deep-rooted native plants open channels in the soil.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "soil",
+            "start": 879,
+            "end": 883
+          },
+          "evidenceQuotes": [
+            "Deep-rooted native plants are often recommended because they tolerate both wet and dry periods and help open channels in the soil."
+          ],
+          "closestCompetingAnswer": "garden",
+          "closestCompetitorPassageSpan": {
+            "text": "garden",
+            "start": 142,
+            "end": 148
+          },
+          "competitorFailure": "'In the garden' is broadly grammatical but identifies a location, whereas the passage explicitly identifies soil as the medium in which roots open channels.",
+          "ambiguity": "none",
+          "reasoning": "The plant type, action and physical medium all match one source sentence, leaving 'soil' as the precise answer."
+        },
+        {
+          "questionId": "table-rain-gardens-03-2",
+          "selectedAnswer": "inlet",
+          "normalizedSelectedAnswer": "inlet",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Leaves should be cleared from inlet points.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "inlet",
+            "start": 1231,
+            "end": 1236
+          },
+          "evidenceQuotes": [
+            "Maintenance remains important: leaves must be cleared from inlet points, and litter should be removed before it blocks the flow of water."
+          ],
+          "closestCompetingAnswer": "drainage",
+          "closestCompetitorPassageSpan": {
+            "text": "drainage",
+            "start": 1365,
+            "end": 1373
+          },
+          "competitorFailure": "'Drainage points' is a plausible general compound, but the passage uses drainage only as something made visible and expressly names inlet points for leaf clearing.",
+          "ambiguity": "none",
+          "reasoning": "The maintenance instruction is nearly verbatim, with only 'must' paraphrased as 'should'."
+        }
+      ],
+      "factualClaims": [
+        {
+          "claim": "Rain gardens are shallow planted areas designed to collect water after heavy rainfall.",
+          "assessment": "supported",
+          "evidenceIds": [
+            "table-rain-epa-types",
+            "table-rain-usda-drainage"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "table-rain-epa-types",
+              "locator": "Bioretention, lines 5-9",
+              "evidenceNote": "EPA describes small, shallow, sunken planted areas that collect stormwater runoff."
+            },
+            {
+              "evidenceId": "table-rain-usda-drainage",
+              "locator": "PDF page 26, lines 928-939",
+              "evidenceNote": "The guide describes a shallow planted depression capturing runoff."
+            }
+          ],
+          "note": "The core definition is directly supported."
+        },
+        {
+          "claim": "Instead of sending all runoff into drains at once, the garden holds water temporarily and lets it soak slowly into the soil.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "table-rain-epa-brochure",
+            "table-rain-usda-drainage"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "table-rain-epa-brochure",
+              "locator": "PDF page 0, lines 5-24 and 29-31",
+              "evidenceNote": "The brochure supports slow seepage, short holding and diversion from storm drains."
+            },
+            {
+              "evidenceId": "table-rain-usda-drainage",
+              "locator": "PDF page 26, lines 930-939",
+              "evidenceNote": "The guide supports infiltration and storage but says low-permeability systems may not fully infiltrate."
+            }
+          ],
+          "note": "The standard mechanism is supported, but all runoff and universal infiltration overstate performance."
+        },
+        {
+          "claim": "If the soil is permanently wet, plant roots may rot and the garden will not absorb new water effectively.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "table-rain-epa-brochure",
+            "table-rain-usda-drainage"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "table-rain-epa-brochure",
+              "locator": "PDF page 1, lines 121-125",
+              "evidenceNote": "A high seasonal water table is said to prevent infiltration; root rot is not stated."
+            },
+            {
+              "evidenceId": "table-rain-usda-drainage",
+              "locator": "PDF pages 26-28, lines 930-944 and 1008-1015",
+              "evidenceNote": "The guide conditions performance on permeability and warns about saturated soils, but does not state the exact root-rot chain."
+            }
+          ],
+          "note": "Poor infiltration under saturation is supported; root rot and total absorption failure depend on species, oxygen, soil and duration."
+        },
+        {
+          "claim": "Deep-rooted native plants are often recommended because they tolerate both wet and dry periods and help open channels in the soil.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "table-rain-usda-drainage",
+            "table-rain-psu-introduction"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "table-rain-usda-drainage",
+              "locator": "PDF pages 26 and 32, lines 935-944 and 1128-1146",
+              "evidenceNote": "The guide supports site-appropriate native and wet/dry-tolerant plants, not guaranteed deep roots or soil channels."
+            },
+            {
+              "evidenceId": "table-rain-psu-introduction",
+              "locator": "Direct URL attempt on 2026-08-11 returned Internal Error",
+              "evidenceNote": "No substantive Penn State content was accessible to confirm the deep-root mechanism."
+            }
+          ],
+          "note": "The sentence bundles separately supported plant traits with an unconfirmed channel mechanism."
+        },
+        {
+          "claim": "Schools often use rain gardens as outdoor classrooms.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "table-rain-epa-school-learning"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "table-rain-epa-school-learning",
+              "locator": "Teacher Resources, lines 510-518 and 678-683",
+              "evidenceNote": "EPA links a K-12 rain-garden curriculum, lesson plan and school-grounds activities, but gives no prevalence measure."
+            }
+          ],
+          "note": "Educational use is documented; often and the exact outdoor-classroom wording are not."
+        }
+      ],
+      "acceptedAnswerAssessments": [
+        {
+          "questionId": "table-rain-gardens-01-1",
+          "acceptedText": "temporarily",
+          "normalizedText": "temporarily",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 1,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "The canonical answer is a literal whole-token span, respects the two-word limit and fits naturally."
+        },
+        {
+          "questionId": "table-rain-gardens-01-2",
+          "acceptedText": "drains",
+          "normalizedText": "drains",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 1,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "The canonical answer is a literal whole-token span, respects the two-word limit and fits naturally."
+        },
+        {
+          "questionId": "table-rain-gardens-02-1",
+          "acceptedText": "drains",
+          "normalizedText": "drains",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 1,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "The canonical answer is a literal whole-token span, respects the two-word limit and fits naturally."
+        },
+        {
+          "questionId": "table-rain-gardens-02-2",
+          "acceptedText": "wet",
+          "normalizedText": "wet",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 1,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "The canonical answer is a literal whole-token span, respects the two-word limit and fits naturally."
+        },
+        {
+          "questionId": "table-rain-gardens-03-1",
+          "acceptedText": "soil",
+          "normalizedText": "soil",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 1,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "The canonical answer is a literal whole-token span, respects the two-word limit and fits naturally."
+        },
+        {
+          "questionId": "table-rain-gardens-03-2",
+          "acceptedText": "inlet",
+          "normalizedText": "inlet",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 1,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "The canonical answer is a literal whole-token span, respects the two-word limit and fits naturally."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:table-completion:table-museum-inventory",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "medium",
+        "representationRisk": "high",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "low",
+        "wordLimitRisk": "medium",
+        "questionOrderRisk": "low",
+        "promptCueRisk": "low",
+        "hintCueRisk": "not-assessed",
+        "notes": "The stage coordinates resemble official table completion, but two Creating records cells admit material literal competitors. Guidance supports documentation, metadata, quality control and trained expertise; it does not establish the exact identification triad or a universal trained-staff publication gate. Two museum sources had limited access."
+      },
+      "questions": [
+        {
+          "questionId": "table-museum-inventory-01-1",
+          "selectedAnswer": "came",
+          "normalizedSelectedAnswer": "came",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Records explain what an object is and where it came from.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "came",
+            "start": 326,
+            "end": 330
+          },
+          "evidenceQuotes": [
+            "Staff must create records that explain what each object is, where it came from and why it matters."
+          ],
+          "closestCompetingAnswer": "is",
+          "closestCompetitorPassageSpan": {
+            "text": "is",
+            "start": 313,
+            "end": 315
+          },
+          "competitorFailure": "It does not decisively fail: 'where it is from' is grammatical, idiomatic and expresses the same provenance relation, and 'is' is a literal span in the very same source sentence.",
+          "ambiguity": "material",
+          "reasoning": "'Came' is the local verb in the source clause, but the task rule only requires a contiguous passage span. Under that rule, 'is' also yields a fully defensible answer and cannot be rejected on grammar or meaning."
+        },
+        {
+          "questionId": "table-museum-inventory-01-2",
+          "selectedAnswer": "pictures",
+          "normalizedSelectedAnswer": "pictures",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "A photo alone is not enough because digitising is more than taking pictures.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "pictures",
+            "start": 247,
+            "end": 255
+          },
+          "evidenceQuotes": [
+            "A drawer may contain old tools, letters or photographs with little more than a handwritten label.",
+            "Digitising the collection does not simply mean taking pictures."
+          ],
+          "closestCompetingAnswer": "photographs",
+          "closestCompetitorPassageSpan": {
+            "text": "photographs",
+            "start": 138,
+            "end": 149
+          },
+          "competitorFailure": "It does not decisively fail: 'taking photographs' is fully grammatical, semantically equivalent in this context and uses another literal span from the same opening paragraph.",
+          "ambiguity": "material",
+          "reasoning": "'Pictures' is the verbatim local completion, but 'photographs' independently satisfies the word limit, passage-span rule, grammar and intended contrast. Exact one-best scoring therefore needs an alternative or rewritten prompt."
+        },
+        {
+          "questionId": "table-museum-inventory-02-1",
+          "selectedAnswer": "donors",
+          "normalizedSelectedAnswer": "donors",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Curators may interview donors to check object history.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "donors",
+            "start": 434,
+            "end": 440
+          },
+          "evidenceQuotes": [
+            "Curators check existing labels, interview donors and compare objects with catalogues from similar collections."
+          ],
+          "closestCompetingAnswer": "local communities",
+          "closestCompetitorPassageSpan": {
+            "text": "local communities",
+            "start": 54,
+            "end": 71
+          },
+          "competitorFailure": "Local communities are described as valuing the objects, but the passage specifically says curators interview donors; it does not state that communities are interviewed.",
+          "ambiguity": "none",
+          "reasoning": "The Identification × main action coordinate paraphrases the explicit curatorial action and uniquely selects the interviewed group."
+        },
+        {
+          "questionId": "table-museum-inventory-02-2",
+          "selectedAnswer": "fact",
+          "normalizedSelectedAnswer": "fact",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "Uncertain information should not be presented as fact.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "fact",
+            "start": 601,
+            "end": 605
+          },
+          "evidenceQuotes": [
+            "When information is uncertain, the record should say so clearly rather than presenting a guess as fact."
+          ],
+          "closestCompetingAnswer": "a guess",
+          "closestCompetitorPassageSpan": {
+            "text": "a guess",
+            "start": 590,
+            "end": 597
+          },
+          "competitorFailure": "'Presented as a guess' is grammatical but reverses the stated quality-control rule, which is to avoid presenting a guess as fact.",
+          "ambiguity": "none",
+          "reasoning": "The table converts the source contrast into a passive warning while preserving the prohibited status 'fact'."
+        },
+        {
+          "questionId": "table-museum-inventory-03-1",
+          "selectedAnswer": "size",
+          "normalizedSelectedAnswer": "size",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "A scale marker helps when size is important.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "size",
+            "start": 826,
+            "end": 830
+          },
+          "evidenceQuotes": [
+            "Objects should be photographed against a plain background, with a scale marker when size is important."
+          ],
+          "closestCompetingAnswer": "consistency",
+          "closestCompetitorPassageSpan": {
+            "text": "consistency",
+            "start": 729,
+            "end": 740
+          },
+          "competitorFailure": "'When consistency is important' is grammatical and consistency is discussed in the photography paragraph, but the scale marker is explicitly linked to size.",
+          "ambiguity": "none",
+          "reasoning": "The photography action and conditional clause reproduce the passage evidence directly."
+        },
+        {
+          "questionId": "table-museum-inventory-03-2",
+          "selectedAnswer": "publication",
+          "normalizedSelectedAnswer": "publication",
+          "selectedAnswerWordCount": 1,
+          "completedSentence": "A trained staff member should review records before publication.",
+          "grammaticalFit": "natural",
+          "selectedAnswerPassageSpan": {
+            "text": "publication",
+            "start": 1288,
+            "end": 1299
+          },
+          "evidenceQuotes": [
+            "Volunteers can help with scanning and transcription, but a trained staff member should review records before publication."
+          ],
+          "closestCompetingAnswer": "scanning",
+          "closestCompetitorPassageSpan": {
+            "text": "scanning",
+            "start": 1204,
+            "end": 1212
+          },
+          "competitorFailure": "'Before scanning' is grammatical, but the passage assigns scanning to volunteers and places trained review after that work and before publication.",
+          "ambiguity": "none",
+          "reasoning": "The staff role, review action and timing match the source sentence exactly, so publication is the one-best completion."
+        }
+      ],
+      "factualClaims": [
+        {
+          "claim": "Digitising the collection does not simply mean taking pictures.",
+          "assessment": "supported",
+          "evidenceIds": [
+            "table-museum-canada-small",
+            "table-museum-loc-preservation"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "table-museum-canada-small",
+              "locator": "Lines 293-337, 490-531 and 555-597",
+              "evidenceNote": "The guide treats digitization as planning, documentation, cataloguing, capture, quality assurance, storage and delivery."
+            },
+            {
+              "evidenceId": "table-museum-loc-preservation",
+              "locator": "Lines 42-69",
+              "evidenceNote": "LOC links digitization to process, quality management, metadata and preservation."
+            }
+          ],
+          "note": "Both institutional sources distinguish capture from the broader digitization workflow."
+        },
+        {
+          "claim": "Staff must create records that explain what each object is, where it came from and why it matters.",
+          "assessment": "supported",
+          "evidenceIds": [
+            "table-museum-nps-records",
+            "table-museum-canada-small"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "table-museum-nps-records",
+              "locator": "Museum Handbook landing, lines 19-38",
+              "evidenceNote": "NPS identifies documenting, cataloging, inventory and accountability as core record functions."
+            },
+            {
+              "evidenceId": "table-museum-canada-small",
+              "locator": "Lines 420-447, 293-337 and 490-531",
+              "evidenceNote": "The guide includes object name and description, origin fields and interpretive significance, linked with images."
+            }
+          ],
+          "note": "The wording is a plain-language synthesis rather than a universal field schema, but the three functions are represented."
+        },
+        {
+          "claim": "Curators check existing labels, interview donors and compare objects with catalogues from similar collections.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "table-museum-nps-records",
+            "table-museum-collections-trust"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "table-museum-nps-records",
+              "locator": "Museum Handbook landing, lines 19-38",
+              "evidenceNote": "The accessible page establishes cataloging coverage but contains no donor interview or exact three-step procedure."
+            },
+            {
+              "evidenceId": "table-museum-collections-trust",
+              "locator": "Direct URL attempt on 2026-08-11 displayed One moment, please",
+              "evidenceNote": "No substantive procedure was accessible to trace the exact triad."
+            }
+          ],
+          "note": "The procedure is plausible, but the exact triad was not traceable in accessible content."
+        },
+        {
+          "claim": "When information is uncertain, the record should say so clearly rather than presenting a guess as fact.",
+          "assessment": "untraceable",
+          "evidenceIds": [
+            "table-museum-collections-trust",
+            "table-museum-nps-records"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "table-museum-collections-trust",
+              "locator": "Direct URL attempt on 2026-08-11 displayed One moment, please",
+              "evidenceNote": "No substantive content was accessible about uncertainty."
+            },
+            {
+              "evidenceId": "table-museum-nps-records",
+              "locator": "Museum Handbook landing, lines 19-38",
+              "evidenceNote": "The landing page does not expose guidance about uncertainty or confidence qualifiers."
+            }
+          ],
+          "note": "The principle is credible, but this source set did not provide directly accessible claim-level evidence."
+        },
+        {
+          "claim": "Volunteers can help with scanning and transcription, but a trained staff member should review records before publication.",
+          "assessment": "oversimplified",
+          "evidenceIds": [
+            "table-museum-canada-small",
+            "table-museum-loc-preservation"
+          ],
+          "sourceFindings": [
+            {
+              "evidenceId": "table-museum-canada-small",
+              "locator": "Lines 246-258, 513-540, 555-597 and 1441-1442",
+              "evidenceNote": "The guide separately supports trained staff, volunteer recruitment, scanning, QA and review before web assembly, not the exact universal rule."
+            },
+            {
+              "evidenceId": "table-museum-loc-preservation",
+              "locator": "Lines 52-69",
+              "evidenceNote": "LOC references process, quality management and metadata but no universal reviewer qualification or publication gate."
+            }
+          ],
+          "note": "The elements are supported separately; the sentence overstates them as one universal staffing rule."
+        }
+      ],
+      "acceptedAnswerAssessments": [
+        {
+          "questionId": "table-museum-inventory-01-1",
+          "acceptedText": "came",
+          "normalizedText": "came",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 1,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "The canonical answer is literal and natural, but the blind review found a material competing passage span absent from the canonical-only inventory."
+        },
+        {
+          "questionId": "table-museum-inventory-01-2",
+          "acceptedText": "pictures",
+          "normalizedText": "pictures",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 1,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "The canonical answer is literal and natural, but the blind review found a material competing passage span absent from the canonical-only inventory."
+        },
+        {
+          "questionId": "table-museum-inventory-02-1",
+          "acceptedText": "donors",
+          "normalizedText": "donors",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 1,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "The canonical answer is a literal whole-token span, respects the two-word limit and fits naturally."
+        },
+        {
+          "questionId": "table-museum-inventory-02-2",
+          "acceptedText": "fact",
+          "normalizedText": "fact",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 1,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "The canonical answer is a literal whole-token span, respects the two-word limit and fits naturally."
+        },
+        {
+          "questionId": "table-museum-inventory-03-1",
+          "acceptedText": "size",
+          "normalizedText": "size",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 1,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "The canonical answer is a literal whole-token span, respects the two-word limit and fits naturally."
+        },
+        {
+          "questionId": "table-museum-inventory-03-2",
+          "acceptedText": "publication",
+          "normalizedText": "publication",
+          "role": "canonical",
+          "passageStatus": "verbatim",
+          "wordCount": 1,
+          "grammaticalFit": "natural",
+          "evidenceIds": [],
+          "note": "The canonical answer is a literal whole-token span, respects the two-word limit and fits naturally."
+        }
+      ]
+    }
+  ]
+}

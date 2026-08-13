@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "ielts-reading-matching-headings-report-verification.v1",
+  "verifiedAt": "2026-08-09T14:48:00Z",
+  "command": "node deliver_portable_artifact.mjs --input output/audits/ielts-reading-rights-matching-headings-2026-08-09/artifact.json --output output/audits/ielts-reading-rights-matching-headings-2026-08-09/report.html",
+  "stages": {
+    "validation": "passed",
+    "package": "passed",
+    "verification": "passed"
+  },
+  "viewports": [1440, 390],
+  "counts": {
+    "cards": 4,
+    "charts": 2,
+    "tables": 2
+  },
+  "sha256": {
+    "validation": "532392eef6b0c3b0ffa1aa43e70d8a63580b5322655ea386da840c18135ce2dd",
+    "auditVerdicts": "1e1414f252e51a0ada387b7c8c62e45ac6b03026709d35bba7d94cdaa4e01e99",
+    "artifact": "7f59eeb36110a40e05eb69730cb8841d9160181ac54ac5efd6a4787075b51d37",
+    "reportMarkdown": "8b5dc28a61b3e56c1f10d63f1a1441ad1856e99b74b8ab6a191b464c9e1698fb",
+    "reportHtml": "c1180c89eef009357e6d51785bd08c6b41a195102aabea4f0f8086758ac55ba8"
+  },
+  "interpretation": "Validation, packaging and responsive Chromium verification passed for the portable stakeholder report only. This is not learner-facing Playwright evidence and does not certify the Matching Headings route, accessibility or runtime behavior."
+}

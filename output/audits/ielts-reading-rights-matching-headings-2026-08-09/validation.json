@@ -1,0 +1,2679 @@
+{
+  "schemaVersion": "ielts-reading-matching-headings-rights-validation.v1",
+  "generatedAt": "2026-08-09T07:30:00-05:00",
+  "unit": "F0.2b.5 — three formative Matching Headings passages",
+  "status": "pass",
+  "passMeaning": "PASS certifies audit coverage, identity, quarantine, blind adjudication and risk detection. It does not approve keys, factuality, rights, publication, UI or student efficacy.",
+  "scope": {
+    "passages": 3,
+    "paragraphs": 17,
+    "questions": 17,
+    "headingCandidates": 27,
+    "registryEntriesInUnit": 3,
+    "registryEntriesTotal": 21,
+    "coveredAssetIds": [
+      "formative:matching-headings:mh-public-libraries",
+      "formative:matching-headings:mh-urban-farming",
+      "formative:matching-headings:mh-night-trains"
+    ],
+    "parentF02bRemainsOpen": true,
+    "scopedLearnerSourcesChangedSinceBaseline": false
+  },
+  "checks": {
+    "exactCoverage": true,
+    "stableUniqueIds": true,
+    "sourceHashesMatchBaseline": true,
+    "registryReferencesResolve": true,
+    "officialRuleSourceAvailable": true,
+    "factualSourceAvailabilityRecorded": true,
+    "candidateSourcesAreNotTreatedAsVerification": true,
+    "factualReviewRequiredForEveryAsset": true,
+    "actualAssetsAllQuarantined": true,
+    "actualRegistryRecordsStructurallyValid": true,
+    "visibleOriginalityClaimObservedButUnverified": true,
+    "learnerFacingDependencyClosureContainsNoKeyLikeValues": true,
+    "blindPacketContainsNoKeysFeedbackOrSkills": true,
+    "blindPacketContainsNoKeyLikeValues": true,
+    "blindPacketContainsNoLearnerOrContactPii": true,
+    "factualSourcePacketContainsNoKeysFeedbackOrSkills": true,
+    "factualSourcePacketContainsNoKeyLikeValues": true,
+    "independentExpertCoverageComplete": true,
+    "expertFirstPassPersistedAndPinned": true,
+    "wholeParagraphMainIdeaEvidenceContractEnforced": true,
+    "singleHeadingDecisionContractEnforced": true,
+    "storedHeadingReuseAbsent": true,
+    "officialNoHeadingReuseRuleCaptured": true,
+    "runtimeNoReuseMismatchDetected": true,
+    "studentWalkthroughCoverageComplete": true,
+    "headingIdTextBindingsPreserved": true,
+    "statisticalCertificationWithheld": true,
+    "contentCertificationBlocked": true,
+    "contentMutationDenied": true,
+    "scopedLearnerSourcesUnchanged": true,
+    "nextUnitSourcesUnchangedAndStopBoundaryEnforced": true,
+    "auditRegistryAbsentFromLearnerRuntimeImports": true,
+    "provenanceSearchLedgerComplete": true,
+    "chronologyIsMonotonicAndNotFutureDated": true,
+    "finalPanelVerdictsValidated": true,
+    "antiBiasMultidimensionalCoverage": true,
+    "keyLikeValueLeakageMutationDetected": true,
+    "boardStateMatchesValidatedUnit": true,
+    "nextUnitCompletedAndParentRemainsOpen": true
+  },
+  "decisions": [
+    {
+      "assetId": "formative:matching-headings:mh-public-libraries",
+      "title": "The changing role of public libraries",
+      "sourceObjectSha256": "9e99d0518d90a6a64fc622a49cc293a2966aa17ac59142685b0e8bdb266eb918",
+      "passageSha256": "e1b63291ae9e2ed99efb145d5a6322a17532b207fd7a4caf18ad4d2a9238955a",
+      "wordCount": 279,
+      "paragraphCount": 5,
+      "questionCount": 5,
+      "headingCandidateCount": 9,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 3,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    {
+      "assetId": "formative:matching-headings:mh-urban-farming",
+      "title": "Urban farming beyond fresh food",
+      "sourceObjectSha256": "d8505ea0480be939eade2759c1b8536201346219f6817e092f2c7712845564eb",
+      "passageSha256": "00d5dfbda4a92ff0c9e18d445dde1517d5d9ffce37341e6a3d9a960b374b4019",
+      "wordCount": 278,
+      "paragraphCount": 6,
+      "questionCount": 6,
+      "headingCandidateCount": 9,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 3,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    {
+      "assetId": "formative:matching-headings:mh-night-trains",
+      "title": "The return of night trains",
+      "sourceObjectSha256": "6c77fe0e8e219f2cf1a674244d40f9a864e7c3d84e0300450dbb6d36a622e08d",
+      "passageSha256": "6336810444e52bbd62f2d9b17d344aeb4e0d01be6aae774ff6a369bdce1b277d",
+      "wordCount": 281,
+      "paragraphCount": 6,
+      "questionCount": 6,
+      "headingCandidateCount": 9,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 3,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    }
+  ],
+  "visibleClaims": [
+    {
+      "text": "textos originales de WeLearn",
+      "sourcePath": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-headings/page.tsx",
+      "observed": true
+    },
+    {
+      "text": "Banco original WeLearn",
+      "sourcePath": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-headings/page.tsx",
+      "observed": true
+    },
+    {
+      "text": "sin copiar preguntas oficiales",
+      "sourcePath": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-headings/page.tsx",
+      "observed": true
+    },
+    {
+      "text": "preparado por el equipo académico de WeLearn y revisado en julio de 2026",
+      "sourcePath": "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+      "observed": true
+    },
+    {
+      "text": "los ejercicios son originales de WeLearn",
+      "sourcePath": "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+      "observed": true
+    }
+  ],
+  "provenanceSearch": {
+    "schemaVersion": "ielts-reading-matching-headings-provenance-search.v1",
+    "searchedAt": "2026-08-09T07:00:00-05:00",
+    "method": "Directed exact-title and exact-first-sentence public-web search; results reviewed manually for verbatim identity.",
+    "searchSurface": "public web search",
+    "queries": [
+      {
+        "assetId": "formative:matching-headings:mh-public-libraries",
+        "query": "\"The changing role of public libraries\" \"Public libraries were once defined mainly by the number of books they stored\"",
+        "resultsReviewed": [
+          {
+            "title": "Libraries as civic spaces — Greater London Authority",
+            "url": "https://www.london.gov.uk/libraries-civic-spaces",
+            "exactMatch": false,
+            "relevanceNote": "Topical public-sector source; no verbatim passage match."
+          },
+          {
+            "title": "Digital literacy in public libraries — American Library Association",
+            "url": "https://www.ala.org/news/2026/02/digital-literacy-public-libraries",
+            "exactMatch": false,
+            "relevanceNote": "Topical institutional source; no verbatim passage match."
+          }
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      },
+      {
+        "assetId": "formative:matching-headings:mh-urban-farming",
+        "query": "\"Urban farming beyond fresh food\" \"Urban farming projects often begin with a practical problem\"",
+        "resultsReviewed": [
+          {
+            "title": "Brownfields and urban agriculture — US EPA",
+            "url": "https://www.epa.gov/brownfields/frequent-questions-about-brownfields-and-urban-agriculture",
+            "exactMatch": false,
+            "relevanceNote": "Topical government source; no verbatim passage match."
+          },
+          {
+            "title": "School gardens — USDA Food and Nutrition Service",
+            "url": "https://www.fna.usda.gov/f2s/school-gardens",
+            "exactMatch": false,
+            "relevanceNote": "Topical government source; no verbatim passage match."
+          }
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      },
+      {
+        "assetId": "formative:matching-headings:mh-night-trains",
+        "query": "\"The return of night trains\" \"For decades, many European night train routes were reduced or cancelled\"",
+        "resultsReviewed": [
+          {
+            "title": "Rail and waterborne transport — European Environment Agency",
+            "url": "https://www.eea.europa.eu/en/analysis/publications/rail-and-waterborne-best-for-low-carbon-motorised-transport",
+            "exactMatch": false,
+            "relevanceNote": "Topical European public source; no verbatim passage match."
+          },
+          {
+            "title": "Cross-border passenger rail — Publications Office of the EU",
+            "url": "https://op.europa.eu/en/publication-detail/-/publication/5eb5c258-6ea2-11ec-9136-01aa75ed71a1/language-en",
+            "exactMatch": false,
+            "relevanceNote": "Topical official publication; no verbatim passage match."
+          }
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      }
+    ],
+    "interpretation": "Directed and non-exhaustive. No exact match in reviewed results does not prove originality, authorship or universal absence of a prior source."
+  },
+  "factualResearch": [
+    {
+      "assetId": "formative:matching-headings:mh-public-libraries",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "libraries-gla-civic-spaces",
+        "libraries-ala-digital-literacy",
+        "libraries-imls-making"
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan funciones cívicas, alfabetización digital y makerspaces, pero no verifican cada secuencia histórica, alcance del servicio ni efecto comunitario del pasaje."
+    },
+    {
+      "assetId": "formative:matching-headings:mh-urban-farming",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "urban-epa-brownfields-agriculture",
+        "urban-usda-school-gardens",
+        "urban-fao-healthy-soils"
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan evaluación de suelo, jardines escolares y salud del suelo urbano, pero no verifican todos los beneficios, restricciones ni relaciones causales del pasaje."
+    },
+    {
+      "assetId": "formative:matching-headings:mh-night-trains",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "night-eea-rail-low-carbon",
+        "night-eu-cross-border-rail",
+        "night-era-sleeper-authorisation"
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan ventajas relativas de emisiones, barreras transfronterizas y renovada autorización de coches cama, pero no verifican cada tendencia comercial, causa ni comparación del pasaje."
+    }
+  ],
+  "sourceAvailability": {
+    "schemaVersion": "ielts-reading-matching-headings-source-availability.v1",
+    "checkedAt": "2026-08-09",
+    "method": "Direct HTTPS retrieval with redirect resolution, response-body SHA-256, content type and byte count.",
+    "sources": [
+      {
+        "evidenceId": "ielts-matching-headings-official-format",
+        "requestedUrl": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading",
+        "retrievedAt": "2026-08-09T07:08:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 187270,
+        "bodySha256": "7d2f15ba40e1f5f7cbf3a659a03f8783c8ab4d8701d6de94aca7786213875ab0"
+      },
+      {
+        "evidenceId": "libraries-gla-civic-spaces",
+        "requestedUrl": "https://www.london.gov.uk/libraries-civic-spaces",
+        "retrievedAt": "2026-08-09T07:08:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.london.gov.uk/libraries-civic-spaces",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 267233,
+        "bodySha256": "63c1d6455e52a8343d412a1f7cbf2235f40d10e6beddb70e1c9c213a694072d1"
+      },
+      {
+        "evidenceId": "libraries-ala-digital-literacy",
+        "requestedUrl": "https://www.ala.org/news/2026/02/digital-literacy-public-libraries",
+        "retrievedAt": "2026-08-09T07:08:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.ala.org/news/2026/02/digital-literacy-public-libraries",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 95043,
+        "bodySha256": "da1d3b4b7ac1ece5b27c4d2e889fbc348224b19faeff814823df55b6c27bc744"
+      },
+      {
+        "evidenceId": "libraries-imls-making",
+        "requestedUrl": "https://www.imls.gov/about/learn-about-imls/priority-areas/making",
+        "retrievedAt": "2026-08-09T07:08:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.imls.gov/about/learn-about-imls/priority-areas/making",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 40785,
+        "bodySha256": "3dc5476efe6827e162c559183a88dda0e7c8f086c6e1c58a1b1233272819d3dc"
+      },
+      {
+        "evidenceId": "urban-epa-brownfields-agriculture",
+        "requestedUrl": "https://www.epa.gov/brownfields/frequent-questions-about-brownfields-and-urban-agriculture",
+        "retrievedAt": "2026-08-09T07:08:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.epa.gov/brownfields/frequent-questions-about-brownfields-and-urban-agriculture",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 99176,
+        "bodySha256": "39be13d196be9519467d5c4e277bcb8b67300c9693be55c2fcd6622c161fe224"
+      },
+      {
+        "evidenceId": "urban-usda-school-gardens",
+        "requestedUrl": "https://www.fna.usda.gov/f2s/school-gardens",
+        "retrievedAt": "2026-08-09T07:08:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.fna.usda.gov/f2s/school-gardens",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 42860,
+        "bodySha256": "aafde1652c099417f19dac3043ce2b006d8878d21a4561ff606266ca5037a21e"
+      },
+      {
+        "evidenceId": "urban-fao-healthy-soils",
+        "requestedUrl": "https://www.fao.org/newsroom/story/healthy-soils-for-more-resilient-and-greener-cities/en",
+        "retrievedAt": "2026-08-09T07:08:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.fao.org/newsroom/story/healthy-soils-for-more-resilient-and-greener-cities/en",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 47594,
+        "bodySha256": "61609468e2d90b29bb24464d4b093bf32083b198671b6a769abe1d606d3561ed"
+      },
+      {
+        "evidenceId": "night-eea-rail-low-carbon",
+        "requestedUrl": "https://www.eea.europa.eu/en/analysis/publications/rail-and-waterborne-best-for-low-carbon-motorised-transport",
+        "retrievedAt": "2026-08-09T07:08:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.eea.europa.eu/en/analysis/publications/rail-and-waterborne-best-for-low-carbon-motorised-transport",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 943125,
+        "bodySha256": "50e44ca5edd3de8f930ce4f5ae74cf49c7aa07e3b14684f5daa4d8d744b9b9db"
+      },
+      {
+        "evidenceId": "night-eu-cross-border-rail",
+        "requestedUrl": "https://op.europa.eu/en/publication-detail/-/publication/5eb5c258-6ea2-11ec-9136-01aa75ed71a1/language-en",
+        "retrievedAt": "2026-08-09T07:08:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://op.europa.eu/en/publication-detail/-/publication/5eb5c258-6ea2-11ec-9136-01aa75ed71a1/language-en",
+        "redirected": false,
+        "contentType": "text/html;charset=UTF-8",
+        "sizeBytes": 420258,
+        "bodySha256": "6b0b7aa5d2bd4597583eece028a447239be9c49949c7b83ad244deb0dec6a1c0"
+      },
+      {
+        "evidenceId": "night-era-sleeper-authorisation",
+        "requestedUrl": "https://www.era.europa.eu/content/era-signs-first-authorisation-new-generation-sleeper-trains-substantial-step-reviving-night",
+        "retrievedAt": "2026-08-09T07:08:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.era.europa.eu/content/era-signs-first-authorisation-new-generation-sleeper-trains-substantial-step-reviving-night",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 56896,
+        "bodySha256": "4d95b10b63ca20a8cf19fec75c245519cd81ed2ea79709bfba0a4bb21d17fdb7"
+      }
+    ],
+    "interpretation": "Availability and body identity do not establish authorship, factual verification, license, rights-holder authorization or endorsement."
+  },
+  "expertReview": {
+    "reviewerType": "independent-ai-editorial-review",
+    "humanSignature": false,
+    "answerAgreement": {
+      "matches": 17,
+      "total": 17,
+      "rate": 1
+    },
+    "keyConflictCount": 0,
+    "keyConflictQuestionIds": [],
+    "materialAmbiguityCount": 0,
+    "materialAmbiguityQuestionIds": [],
+    "factualAssessmentCounts": {
+      "supported": 1,
+      "oversimplified": 9,
+      "unsupported": 0,
+      "untraceable": 5
+    },
+    "verdictPath": "output/audits/ielts-reading-rights-matching-headings-2026-08-09/expert-verdict.json"
+  },
+  "studentWalkthrough": {
+    "passagesCovered": 3,
+    "questionsCovered": 17,
+    "verdictPath": "output/audits/ielts-reading-rights-matching-headings-2026-08-09/student-walkthrough.json",
+    "limitation": "Blind content-only cognitive walkthrough; it does not test UI, accessibility, retention, bands or real students."
+  },
+  "antiBias": {
+    "optionPermutationApplied": false,
+    "optionPermutationReason": "Roman numerals are stable response labels bound to heading text and cannot be shuffled independently from their text. Array order, ID-text binding, position, length, lexical overlap and per-set patterns are audited instead.",
+    "storedKeyProfile": {
+      "answerCounts": {
+        "i": 3,
+        "ii": 0,
+        "iii": 3,
+        "iv": 2,
+        "v": 2,
+        "vi": 1,
+        "vii": 2,
+        "viii": 2,
+        "ix": 2
+      },
+      "maxSameLabelRun": 1,
+      "constantLabelHeuristics": {
+        "i": {
+          "hits": 3,
+          "total": 17,
+          "accuracy": 0.17647058823529413
+        },
+        "ii": {
+          "hits": 0,
+          "total": 17,
+          "accuracy": 0
+        },
+        "iii": {
+          "hits": 3,
+          "total": 17,
+          "accuracy": 0.17647058823529413
+        },
+        "iv": {
+          "hits": 2,
+          "total": 17,
+          "accuracy": 0.11764705882352941
+        },
+        "v": {
+          "hits": 2,
+          "total": 17,
+          "accuracy": 0.11764705882352941
+        },
+        "vi": {
+          "hits": 1,
+          "total": 17,
+          "accuracy": 0.058823529411764705
+        },
+        "vii": {
+          "hits": 2,
+          "total": 17,
+          "accuracy": 0.11764705882352941
+        },
+        "viii": {
+          "hits": 2,
+          "total": 17,
+          "accuracy": 0.11764705882352941
+        },
+        "ix": {
+          "hits": 2,
+          "total": 17,
+          "accuracy": 0.11764705882352941
+        }
+      },
+      "samePositionPredictsHeading": {
+        "definition": "For paragraph position n, predict heading option position n.",
+        "eligible": 17,
+        "tiesOrAbstentions": 0,
+        "hits": 5,
+        "conditionalAccuracy": 0.29411764705882354,
+        "totalAccuracy": 0.29411764705882354,
+        "uniformNineHeadingBaseline": 0.1111111111111111,
+        "wilsonUpper95": 0.49358678858175314
+      },
+      "highestLexicalOverlapPredictsHeading": {
+        "eligible": 14,
+        "tiesOrAbstentions": 3,
+        "hits": 6,
+        "conditionalAccuracy": 0.42857142857142855,
+        "totalAccuracy": 0.35294117647058826,
+        "uniformNineHeadingBaseline": 0.1111111111111111
+      },
+      "longestHeadingPredictsAnswer": {
+        "eligible": 12,
+        "tiesOrAbstentions": 5,
+        "hits": 2,
+        "conditionalAccuracy": 0.16666666666666666,
+        "totalAccuracy": 0.11764705882352941,
+        "uniformNineHeadingBaseline": 0.1111111111111111
+      },
+      "extremeCueDistractorSignal": {
+        "cuePattern": "\\b(?:always|complete|every|only|unlimited|replaced|end of)\\b",
+        "flaggedOptions": 9,
+        "flaggedCorrectUses": 1,
+        "flaggedOptionsNeverCorrect": 8,
+        "rows": [
+          {
+            "assetId": "formative:matching-headings:mh-public-libraries",
+            "headingId": "iv",
+            "text": "The complete disappearance of printed books",
+            "timesCorrect": 0
+          },
+          {
+            "assetId": "formative:matching-headings:mh-public-libraries",
+            "headingId": "vi",
+            "text": "A problem caused by unlimited opening hours",
+            "timesCorrect": 0
+          },
+          {
+            "assetId": "formative:matching-headings:mh-public-libraries",
+            "headingId": "viii",
+            "text": "Evidence that library visits are only declining",
+            "timesCorrect": 0
+          },
+          {
+            "assetId": "formative:matching-headings:mh-urban-farming",
+            "headingId": "ii",
+            "text": "Why rooftop farms have replaced rural agriculture",
+            "timesCorrect": 0
+          },
+          {
+            "assetId": "formative:matching-headings:mh-urban-farming",
+            "headingId": "vi",
+            "text": "How supermarkets caused the end of urban markets",
+            "timesCorrect": 0
+          },
+          {
+            "assetId": "formative:matching-headings:mh-urban-farming",
+            "headingId": "viii",
+            "text": "A debate about whether yields are the only measure",
+            "timesCorrect": 1
+          },
+          {
+            "assetId": "formative:matching-headings:mh-urban-farming",
+            "headingId": "ix",
+            "text": "The risks of using volunteers in every project",
+            "timesCorrect": 0
+          },
+          {
+            "assetId": "formative:matching-headings:mh-night-trains",
+            "headingId": "ii",
+            "text": "Why night trains are always faster than planes",
+            "timesCorrect": 0
+          },
+          {
+            "assetId": "formative:matching-headings:mh-night-trains",
+            "headingId": "v",
+            "text": "The complete disappearance of business travel",
+            "timesCorrect": 0
+          }
+        ]
+      },
+      "headingLengthByLabel": {
+        "i": {
+          "options": 3,
+          "averageWords": 7,
+          "minWords": 6,
+          "maxWords": 8
+        },
+        "ii": {
+          "options": 3,
+          "averageWords": 7.333333333333333,
+          "minWords": 7,
+          "maxWords": 8
+        },
+        "iii": {
+          "options": 3,
+          "averageWords": 6,
+          "minWords": 6,
+          "maxWords": 6
+        },
+        "iv": {
+          "options": 3,
+          "averageWords": 6,
+          "minWords": 4,
+          "maxWords": 8
+        },
+        "v": {
+          "options": 3,
+          "averageWords": 5.666666666666667,
+          "minWords": 5,
+          "maxWords": 6
+        },
+        "vi": {
+          "options": 3,
+          "averageWords": 6.666666666666667,
+          "minWords": 5,
+          "maxWords": 8
+        },
+        "vii": {
+          "options": 3,
+          "averageWords": 5.666666666666667,
+          "minWords": 5,
+          "maxWords": 6
+        },
+        "viii": {
+          "options": 3,
+          "averageWords": 8.333333333333334,
+          "minWords": 7,
+          "maxWords": 9
+        },
+        "ix": {
+          "options": 3,
+          "averageWords": 8.666666666666666,
+          "minWords": 8,
+          "maxWords": 10
+        }
+      },
+      "overlapRows": [
+        {
+          "questionId": "mh-public-libraries-a",
+          "storedHeadingId": "i",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "ii",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "iii",
+              "score": 0.2
+            },
+            {
+              "headingId": "iv",
+              "score": 0.4
+            },
+            {
+              "headingId": "v",
+              "score": 0
+            },
+            {
+              "headingId": "vi",
+              "score": 0
+            },
+            {
+              "headingId": "vii",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "viii",
+              "score": 0.2857142857142857
+            },
+            {
+              "headingId": "ix",
+              "score": 0.2857142857142857
+            }
+          ]
+        },
+        {
+          "questionId": "mh-public-libraries-b",
+          "storedHeadingId": "iii",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0
+            },
+            {
+              "headingId": "ii",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "iii",
+              "score": 0.4
+            },
+            {
+              "headingId": "iv",
+              "score": 0.2
+            },
+            {
+              "headingId": "v",
+              "score": 0.2
+            },
+            {
+              "headingId": "vi",
+              "score": 0
+            },
+            {
+              "headingId": "vii",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "viii",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "ix",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "questionId": "mh-public-libraries-c",
+          "storedHeadingId": "vii",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0
+            },
+            {
+              "headingId": "ii",
+              "score": 0
+            },
+            {
+              "headingId": "iii",
+              "score": 0.2
+            },
+            {
+              "headingId": "iv",
+              "score": 0.2
+            },
+            {
+              "headingId": "v",
+              "score": 0
+            },
+            {
+              "headingId": "vi",
+              "score": 0
+            },
+            {
+              "headingId": "vii",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "viii",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "ix",
+              "score": 0.14285714285714285
+            }
+          ]
+        },
+        {
+          "questionId": "mh-public-libraries-d",
+          "storedHeadingId": "v",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0
+            },
+            {
+              "headingId": "ii",
+              "score": 0
+            },
+            {
+              "headingId": "iii",
+              "score": 0
+            },
+            {
+              "headingId": "iv",
+              "score": 0
+            },
+            {
+              "headingId": "v",
+              "score": 0.4
+            },
+            {
+              "headingId": "vi",
+              "score": 0
+            },
+            {
+              "headingId": "vii",
+              "score": 0
+            },
+            {
+              "headingId": "viii",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "ix",
+              "score": 0.14285714285714285
+            }
+          ]
+        },
+        {
+          "questionId": "mh-public-libraries-e",
+          "storedHeadingId": "ix",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0
+            },
+            {
+              "headingId": "ii",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "iii",
+              "score": 0.6
+            },
+            {
+              "headingId": "iv",
+              "score": 0.2
+            },
+            {
+              "headingId": "v",
+              "score": 0.2
+            },
+            {
+              "headingId": "vi",
+              "score": 0
+            },
+            {
+              "headingId": "vii",
+              "score": 0.3333333333333333
+            },
+            {
+              "headingId": "viii",
+              "score": 0.42857142857142855
+            },
+            {
+              "headingId": "ix",
+              "score": 0.5714285714285714
+            }
+          ]
+        },
+        {
+          "questionId": "mh-urban-farming-a",
+          "storedHeadingId": "i",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0.25
+            },
+            {
+              "headingId": "ii",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "iii",
+              "score": 0
+            },
+            {
+              "headingId": "iv",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "v",
+              "score": 0
+            },
+            {
+              "headingId": "vi",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "vii",
+              "score": 0
+            },
+            {
+              "headingId": "viii",
+              "score": 0
+            },
+            {
+              "headingId": "ix",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "questionId": "mh-urban-farming-b",
+          "storedHeadingId": "vii",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0
+            },
+            {
+              "headingId": "ii",
+              "score": 0
+            },
+            {
+              "headingId": "iii",
+              "score": 0
+            },
+            {
+              "headingId": "iv",
+              "score": 0.2857142857142857
+            },
+            {
+              "headingId": "v",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "vi",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "vii",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "viii",
+              "score": 0.125
+            },
+            {
+              "headingId": "ix",
+              "score": 0.16666666666666666
+            }
+          ]
+        },
+        {
+          "questionId": "mh-urban-farming-c",
+          "storedHeadingId": "iii",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0
+            },
+            {
+              "headingId": "ii",
+              "score": 0
+            },
+            {
+              "headingId": "iii",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "iv",
+              "score": 0.2857142857142857
+            },
+            {
+              "headingId": "v",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "vi",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "vii",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "viii",
+              "score": 0.25
+            },
+            {
+              "headingId": "ix",
+              "score": 0.16666666666666666
+            }
+          ]
+        },
+        {
+          "questionId": "mh-urban-farming-d",
+          "storedHeadingId": "iv",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0
+            },
+            {
+              "headingId": "ii",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "iii",
+              "score": 0
+            },
+            {
+              "headingId": "iv",
+              "score": 0.2857142857142857
+            },
+            {
+              "headingId": "v",
+              "score": 0
+            },
+            {
+              "headingId": "vi",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "vii",
+              "score": 0
+            },
+            {
+              "headingId": "viii",
+              "score": 0.375
+            },
+            {
+              "headingId": "ix",
+              "score": 0.16666666666666666
+            }
+          ]
+        },
+        {
+          "questionId": "mh-urban-farming-e",
+          "storedHeadingId": "viii",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0.25
+            },
+            {
+              "headingId": "ii",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "iii",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "iv",
+              "score": 0.2857142857142857
+            },
+            {
+              "headingId": "v",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "vi",
+              "score": 0.2857142857142857
+            },
+            {
+              "headingId": "vii",
+              "score": 0
+            },
+            {
+              "headingId": "viii",
+              "score": 0.125
+            },
+            {
+              "headingId": "ix",
+              "score": 0.16666666666666666
+            }
+          ]
+        },
+        {
+          "questionId": "mh-urban-farming-f",
+          "storedHeadingId": "v",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0
+            },
+            {
+              "headingId": "ii",
+              "score": 0
+            },
+            {
+              "headingId": "iii",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "iv",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "v",
+              "score": 0.3333333333333333
+            },
+            {
+              "headingId": "vi",
+              "score": 0
+            },
+            {
+              "headingId": "vii",
+              "score": 0
+            },
+            {
+              "headingId": "viii",
+              "score": 0.125
+            },
+            {
+              "headingId": "ix",
+              "score": 0.16666666666666666
+            }
+          ]
+        },
+        {
+          "questionId": "mh-night-trains-a",
+          "storedHeadingId": "i",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0.2
+            },
+            {
+              "headingId": "ii",
+              "score": 0.125
+            },
+            {
+              "headingId": "iii",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "iv",
+              "score": 0
+            },
+            {
+              "headingId": "v",
+              "score": 0.2
+            },
+            {
+              "headingId": "vi",
+              "score": 0
+            },
+            {
+              "headingId": "vii",
+              "score": 0
+            },
+            {
+              "headingId": "viii",
+              "score": 0.1111111111111111
+            },
+            {
+              "headingId": "ix",
+              "score": 0.14285714285714285
+            }
+          ]
+        },
+        {
+          "questionId": "mh-night-trains-b",
+          "storedHeadingId": "vi",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0.2
+            },
+            {
+              "headingId": "ii",
+              "score": 0.375
+            },
+            {
+              "headingId": "iii",
+              "score": 0
+            },
+            {
+              "headingId": "iv",
+              "score": 0
+            },
+            {
+              "headingId": "v",
+              "score": 0.4
+            },
+            {
+              "headingId": "vi",
+              "score": 0
+            },
+            {
+              "headingId": "vii",
+              "score": 0
+            },
+            {
+              "headingId": "viii",
+              "score": 0.2222222222222222
+            },
+            {
+              "headingId": "ix",
+              "score": 0.42857142857142855
+            }
+          ]
+        },
+        {
+          "questionId": "mh-night-trains-c",
+          "storedHeadingId": "iv",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0
+            },
+            {
+              "headingId": "ii",
+              "score": 0.125
+            },
+            {
+              "headingId": "iii",
+              "score": 0
+            },
+            {
+              "headingId": "iv",
+              "score": 0
+            },
+            {
+              "headingId": "v",
+              "score": 0
+            },
+            {
+              "headingId": "vi",
+              "score": 0
+            },
+            {
+              "headingId": "vii",
+              "score": 0
+            },
+            {
+              "headingId": "viii",
+              "score": 0.2222222222222222
+            },
+            {
+              "headingId": "ix",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "questionId": "mh-night-trains-d",
+          "storedHeadingId": "iii",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0
+            },
+            {
+              "headingId": "ii",
+              "score": 0
+            },
+            {
+              "headingId": "iii",
+              "score": 0.6666666666666666
+            },
+            {
+              "headingId": "iv",
+              "score": 0
+            },
+            {
+              "headingId": "v",
+              "score": 0
+            },
+            {
+              "headingId": "vi",
+              "score": 0
+            },
+            {
+              "headingId": "vii",
+              "score": 0.2
+            },
+            {
+              "headingId": "viii",
+              "score": 0.1111111111111111
+            },
+            {
+              "headingId": "ix",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "questionId": "mh-night-trains-e",
+          "storedHeadingId": "viii",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0
+            },
+            {
+              "headingId": "ii",
+              "score": 0.125
+            },
+            {
+              "headingId": "iii",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "iv",
+              "score": 0
+            },
+            {
+              "headingId": "v",
+              "score": 0
+            },
+            {
+              "headingId": "vi",
+              "score": 0
+            },
+            {
+              "headingId": "vii",
+              "score": 0
+            },
+            {
+              "headingId": "viii",
+              "score": 0.1111111111111111
+            },
+            {
+              "headingId": "ix",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "questionId": "mh-night-trains-f",
+          "storedHeadingId": "ix",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0
+            },
+            {
+              "headingId": "ii",
+              "score": 0.125
+            },
+            {
+              "headingId": "iii",
+              "score": 0
+            },
+            {
+              "headingId": "iv",
+              "score": 0
+            },
+            {
+              "headingId": "v",
+              "score": 0.2
+            },
+            {
+              "headingId": "vi",
+              "score": 0
+            },
+            {
+              "headingId": "vii",
+              "score": 0
+            },
+            {
+              "headingId": "viii",
+              "score": 0.1111111111111111
+            },
+            {
+              "headingId": "ix",
+              "score": 0.5714285714285714
+            }
+          ]
+        }
+      ],
+      "perSet": [
+        {
+          "assetId": "formative:matching-headings:mh-public-libraries",
+          "answerCounts": {
+            "i": 1,
+            "ii": 0,
+            "iii": 1,
+            "iv": 0,
+            "v": 1,
+            "vi": 0,
+            "vii": 1,
+            "viii": 0,
+            "ix": 1
+          },
+          "answerSequence": [
+            "i",
+            "iii",
+            "vii",
+            "v",
+            "ix"
+          ],
+          "reusedHeadingIds": [],
+          "unusedHeadingIds": [
+            "ii",
+            "iv",
+            "vi",
+            "viii"
+          ]
+        },
+        {
+          "assetId": "formative:matching-headings:mh-urban-farming",
+          "answerCounts": {
+            "i": 1,
+            "ii": 0,
+            "iii": 1,
+            "iv": 1,
+            "v": 1,
+            "vi": 0,
+            "vii": 1,
+            "viii": 1,
+            "ix": 0
+          },
+          "answerSequence": [
+            "i",
+            "vii",
+            "iii",
+            "iv",
+            "viii",
+            "v"
+          ],
+          "reusedHeadingIds": [],
+          "unusedHeadingIds": [
+            "ii",
+            "vi",
+            "ix"
+          ]
+        },
+        {
+          "assetId": "formative:matching-headings:mh-night-trains",
+          "answerCounts": {
+            "i": 1,
+            "ii": 0,
+            "iii": 1,
+            "iv": 1,
+            "v": 0,
+            "vi": 1,
+            "vii": 0,
+            "viii": 1,
+            "ix": 1
+          },
+          "answerSequence": [
+            "i",
+            "vi",
+            "iv",
+            "iii",
+            "viii",
+            "ix"
+          ],
+          "reusedHeadingIds": [],
+          "unusedHeadingIds": [
+            "ii",
+            "v",
+            "vii"
+          ]
+        }
+      ],
+      "sequenceProfile": {
+        "answerSequence": [
+          "i",
+          "iii",
+          "vii",
+          "v",
+          "ix",
+          "i",
+          "vii",
+          "iii",
+          "iv",
+          "viii",
+          "v",
+          "i",
+          "vi",
+          "iv",
+          "iii",
+          "viii",
+          "ix"
+        ],
+        "transitions": {
+          "i → iii": 1,
+          "iii → vii": 1,
+          "vii → v": 1,
+          "v → ix": 1,
+          "ix → i": 1,
+          "i → vii": 1,
+          "vii → iii": 1,
+          "iii → iv": 1,
+          "iv → viii": 1,
+          "viii → v": 1,
+          "v → i": 1,
+          "i → vi": 1,
+          "vi → iv": 1,
+          "iv → iii": 1,
+          "iii → viii": 1,
+          "viii → ix": 1
+        }
+      }
+    },
+    "independentExpertProfile": {
+      "answerCounts": {
+        "i": 3,
+        "ii": 0,
+        "iii": 3,
+        "iv": 2,
+        "v": 2,
+        "vi": 1,
+        "vii": 2,
+        "viii": 2,
+        "ix": 2
+      },
+      "maxSameLabelRun": 1,
+      "constantLabelHeuristics": {
+        "i": {
+          "hits": 3,
+          "total": 17,
+          "accuracy": 0.17647058823529413
+        },
+        "ii": {
+          "hits": 0,
+          "total": 17,
+          "accuracy": 0
+        },
+        "iii": {
+          "hits": 3,
+          "total": 17,
+          "accuracy": 0.17647058823529413
+        },
+        "iv": {
+          "hits": 2,
+          "total": 17,
+          "accuracy": 0.11764705882352941
+        },
+        "v": {
+          "hits": 2,
+          "total": 17,
+          "accuracy": 0.11764705882352941
+        },
+        "vi": {
+          "hits": 1,
+          "total": 17,
+          "accuracy": 0.058823529411764705
+        },
+        "vii": {
+          "hits": 2,
+          "total": 17,
+          "accuracy": 0.11764705882352941
+        },
+        "viii": {
+          "hits": 2,
+          "total": 17,
+          "accuracy": 0.11764705882352941
+        },
+        "ix": {
+          "hits": 2,
+          "total": 17,
+          "accuracy": 0.11764705882352941
+        }
+      },
+      "samePositionPredictsHeading": {
+        "definition": "For paragraph position n, predict heading option position n.",
+        "eligible": 17,
+        "tiesOrAbstentions": 0,
+        "hits": 5,
+        "conditionalAccuracy": 0.29411764705882354,
+        "totalAccuracy": 0.29411764705882354,
+        "uniformNineHeadingBaseline": 0.1111111111111111,
+        "wilsonUpper95": 0.49358678858175314
+      },
+      "highestLexicalOverlapPredictsHeading": {
+        "eligible": 14,
+        "tiesOrAbstentions": 3,
+        "hits": 6,
+        "conditionalAccuracy": 0.42857142857142855,
+        "totalAccuracy": 0.35294117647058826,
+        "uniformNineHeadingBaseline": 0.1111111111111111
+      },
+      "longestHeadingPredictsAnswer": {
+        "eligible": 12,
+        "tiesOrAbstentions": 5,
+        "hits": 2,
+        "conditionalAccuracy": 0.16666666666666666,
+        "totalAccuracy": 0.11764705882352941,
+        "uniformNineHeadingBaseline": 0.1111111111111111
+      },
+      "extremeCueDistractorSignal": {
+        "cuePattern": "\\b(?:always|complete|every|only|unlimited|replaced|end of)\\b",
+        "flaggedOptions": 9,
+        "flaggedCorrectUses": 1,
+        "flaggedOptionsNeverCorrect": 8,
+        "rows": [
+          {
+            "assetId": "formative:matching-headings:mh-public-libraries",
+            "headingId": "iv",
+            "text": "The complete disappearance of printed books",
+            "timesCorrect": 0
+          },
+          {
+            "assetId": "formative:matching-headings:mh-public-libraries",
+            "headingId": "vi",
+            "text": "A problem caused by unlimited opening hours",
+            "timesCorrect": 0
+          },
+          {
+            "assetId": "formative:matching-headings:mh-public-libraries",
+            "headingId": "viii",
+            "text": "Evidence that library visits are only declining",
+            "timesCorrect": 0
+          },
+          {
+            "assetId": "formative:matching-headings:mh-urban-farming",
+            "headingId": "ii",
+            "text": "Why rooftop farms have replaced rural agriculture",
+            "timesCorrect": 0
+          },
+          {
+            "assetId": "formative:matching-headings:mh-urban-farming",
+            "headingId": "vi",
+            "text": "How supermarkets caused the end of urban markets",
+            "timesCorrect": 0
+          },
+          {
+            "assetId": "formative:matching-headings:mh-urban-farming",
+            "headingId": "viii",
+            "text": "A debate about whether yields are the only measure",
+            "timesCorrect": 1
+          },
+          {
+            "assetId": "formative:matching-headings:mh-urban-farming",
+            "headingId": "ix",
+            "text": "The risks of using volunteers in every project",
+            "timesCorrect": 0
+          },
+          {
+            "assetId": "formative:matching-headings:mh-night-trains",
+            "headingId": "ii",
+            "text": "Why night trains are always faster than planes",
+            "timesCorrect": 0
+          },
+          {
+            "assetId": "formative:matching-headings:mh-night-trains",
+            "headingId": "v",
+            "text": "The complete disappearance of business travel",
+            "timesCorrect": 0
+          }
+        ]
+      },
+      "headingLengthByLabel": {
+        "i": {
+          "options": 3,
+          "averageWords": 7,
+          "minWords": 6,
+          "maxWords": 8
+        },
+        "ii": {
+          "options": 3,
+          "averageWords": 7.333333333333333,
+          "minWords": 7,
+          "maxWords": 8
+        },
+        "iii": {
+          "options": 3,
+          "averageWords": 6,
+          "minWords": 6,
+          "maxWords": 6
+        },
+        "iv": {
+          "options": 3,
+          "averageWords": 6,
+          "minWords": 4,
+          "maxWords": 8
+        },
+        "v": {
+          "options": 3,
+          "averageWords": 5.666666666666667,
+          "minWords": 5,
+          "maxWords": 6
+        },
+        "vi": {
+          "options": 3,
+          "averageWords": 6.666666666666667,
+          "minWords": 5,
+          "maxWords": 8
+        },
+        "vii": {
+          "options": 3,
+          "averageWords": 5.666666666666667,
+          "minWords": 5,
+          "maxWords": 6
+        },
+        "viii": {
+          "options": 3,
+          "averageWords": 8.333333333333334,
+          "minWords": 7,
+          "maxWords": 9
+        },
+        "ix": {
+          "options": 3,
+          "averageWords": 8.666666666666666,
+          "minWords": 8,
+          "maxWords": 10
+        }
+      },
+      "overlapRows": [
+        {
+          "questionId": "mh-public-libraries-a",
+          "storedHeadingId": "i",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "ii",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "iii",
+              "score": 0.2
+            },
+            {
+              "headingId": "iv",
+              "score": 0.4
+            },
+            {
+              "headingId": "v",
+              "score": 0
+            },
+            {
+              "headingId": "vi",
+              "score": 0
+            },
+            {
+              "headingId": "vii",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "viii",
+              "score": 0.2857142857142857
+            },
+            {
+              "headingId": "ix",
+              "score": 0.2857142857142857
+            }
+          ]
+        },
+        {
+          "questionId": "mh-public-libraries-b",
+          "storedHeadingId": "iii",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0
+            },
+            {
+              "headingId": "ii",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "iii",
+              "score": 0.4
+            },
+            {
+              "headingId": "iv",
+              "score": 0.2
+            },
+            {
+              "headingId": "v",
+              "score": 0.2
+            },
+            {
+              "headingId": "vi",
+              "score": 0
+            },
+            {
+              "headingId": "vii",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "viii",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "ix",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "questionId": "mh-public-libraries-c",
+          "storedHeadingId": "vii",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0
+            },
+            {
+              "headingId": "ii",
+              "score": 0
+            },
+            {
+              "headingId": "iii",
+              "score": 0.2
+            },
+            {
+              "headingId": "iv",
+              "score": 0.2
+            },
+            {
+              "headingId": "v",
+              "score": 0
+            },
+            {
+              "headingId": "vi",
+              "score": 0
+            },
+            {
+              "headingId": "vii",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "viii",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "ix",
+              "score": 0.14285714285714285
+            }
+          ]
+        },
+        {
+          "questionId": "mh-public-libraries-d",
+          "storedHeadingId": "v",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0
+            },
+            {
+              "headingId": "ii",
+              "score": 0
+            },
+            {
+              "headingId": "iii",
+              "score": 0
+            },
+            {
+              "headingId": "iv",
+              "score": 0
+            },
+            {
+              "headingId": "v",
+              "score": 0.4
+            },
+            {
+              "headingId": "vi",
+              "score": 0
+            },
+            {
+              "headingId": "vii",
+              "score": 0
+            },
+            {
+              "headingId": "viii",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "ix",
+              "score": 0.14285714285714285
+            }
+          ]
+        },
+        {
+          "questionId": "mh-public-libraries-e",
+          "storedHeadingId": "ix",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0
+            },
+            {
+              "headingId": "ii",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "iii",
+              "score": 0.6
+            },
+            {
+              "headingId": "iv",
+              "score": 0.2
+            },
+            {
+              "headingId": "v",
+              "score": 0.2
+            },
+            {
+              "headingId": "vi",
+              "score": 0
+            },
+            {
+              "headingId": "vii",
+              "score": 0.3333333333333333
+            },
+            {
+              "headingId": "viii",
+              "score": 0.42857142857142855
+            },
+            {
+              "headingId": "ix",
+              "score": 0.5714285714285714
+            }
+          ]
+        },
+        {
+          "questionId": "mh-urban-farming-a",
+          "storedHeadingId": "i",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0.25
+            },
+            {
+              "headingId": "ii",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "iii",
+              "score": 0
+            },
+            {
+              "headingId": "iv",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "v",
+              "score": 0
+            },
+            {
+              "headingId": "vi",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "vii",
+              "score": 0
+            },
+            {
+              "headingId": "viii",
+              "score": 0
+            },
+            {
+              "headingId": "ix",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "questionId": "mh-urban-farming-b",
+          "storedHeadingId": "vii",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0
+            },
+            {
+              "headingId": "ii",
+              "score": 0
+            },
+            {
+              "headingId": "iii",
+              "score": 0
+            },
+            {
+              "headingId": "iv",
+              "score": 0.2857142857142857
+            },
+            {
+              "headingId": "v",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "vi",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "vii",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "viii",
+              "score": 0.125
+            },
+            {
+              "headingId": "ix",
+              "score": 0.16666666666666666
+            }
+          ]
+        },
+        {
+          "questionId": "mh-urban-farming-c",
+          "storedHeadingId": "iii",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0
+            },
+            {
+              "headingId": "ii",
+              "score": 0
+            },
+            {
+              "headingId": "iii",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "iv",
+              "score": 0.2857142857142857
+            },
+            {
+              "headingId": "v",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "vi",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "vii",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "viii",
+              "score": 0.25
+            },
+            {
+              "headingId": "ix",
+              "score": 0.16666666666666666
+            }
+          ]
+        },
+        {
+          "questionId": "mh-urban-farming-d",
+          "storedHeadingId": "iv",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0
+            },
+            {
+              "headingId": "ii",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "iii",
+              "score": 0
+            },
+            {
+              "headingId": "iv",
+              "score": 0.2857142857142857
+            },
+            {
+              "headingId": "v",
+              "score": 0
+            },
+            {
+              "headingId": "vi",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "vii",
+              "score": 0
+            },
+            {
+              "headingId": "viii",
+              "score": 0.375
+            },
+            {
+              "headingId": "ix",
+              "score": 0.16666666666666666
+            }
+          ]
+        },
+        {
+          "questionId": "mh-urban-farming-e",
+          "storedHeadingId": "viii",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0.25
+            },
+            {
+              "headingId": "ii",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "iii",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "iv",
+              "score": 0.2857142857142857
+            },
+            {
+              "headingId": "v",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "vi",
+              "score": 0.2857142857142857
+            },
+            {
+              "headingId": "vii",
+              "score": 0
+            },
+            {
+              "headingId": "viii",
+              "score": 0.125
+            },
+            {
+              "headingId": "ix",
+              "score": 0.16666666666666666
+            }
+          ]
+        },
+        {
+          "questionId": "mh-urban-farming-f",
+          "storedHeadingId": "v",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0
+            },
+            {
+              "headingId": "ii",
+              "score": 0
+            },
+            {
+              "headingId": "iii",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "iv",
+              "score": 0.14285714285714285
+            },
+            {
+              "headingId": "v",
+              "score": 0.3333333333333333
+            },
+            {
+              "headingId": "vi",
+              "score": 0
+            },
+            {
+              "headingId": "vii",
+              "score": 0
+            },
+            {
+              "headingId": "viii",
+              "score": 0.125
+            },
+            {
+              "headingId": "ix",
+              "score": 0.16666666666666666
+            }
+          ]
+        },
+        {
+          "questionId": "mh-night-trains-a",
+          "storedHeadingId": "i",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0.2
+            },
+            {
+              "headingId": "ii",
+              "score": 0.125
+            },
+            {
+              "headingId": "iii",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "iv",
+              "score": 0
+            },
+            {
+              "headingId": "v",
+              "score": 0.2
+            },
+            {
+              "headingId": "vi",
+              "score": 0
+            },
+            {
+              "headingId": "vii",
+              "score": 0
+            },
+            {
+              "headingId": "viii",
+              "score": 0.1111111111111111
+            },
+            {
+              "headingId": "ix",
+              "score": 0.14285714285714285
+            }
+          ]
+        },
+        {
+          "questionId": "mh-night-trains-b",
+          "storedHeadingId": "vi",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0.2
+            },
+            {
+              "headingId": "ii",
+              "score": 0.375
+            },
+            {
+              "headingId": "iii",
+              "score": 0
+            },
+            {
+              "headingId": "iv",
+              "score": 0
+            },
+            {
+              "headingId": "v",
+              "score": 0.4
+            },
+            {
+              "headingId": "vi",
+              "score": 0
+            },
+            {
+              "headingId": "vii",
+              "score": 0
+            },
+            {
+              "headingId": "viii",
+              "score": 0.2222222222222222
+            },
+            {
+              "headingId": "ix",
+              "score": 0.42857142857142855
+            }
+          ]
+        },
+        {
+          "questionId": "mh-night-trains-c",
+          "storedHeadingId": "iv",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0
+            },
+            {
+              "headingId": "ii",
+              "score": 0.125
+            },
+            {
+              "headingId": "iii",
+              "score": 0
+            },
+            {
+              "headingId": "iv",
+              "score": 0
+            },
+            {
+              "headingId": "v",
+              "score": 0
+            },
+            {
+              "headingId": "vi",
+              "score": 0
+            },
+            {
+              "headingId": "vii",
+              "score": 0
+            },
+            {
+              "headingId": "viii",
+              "score": 0.2222222222222222
+            },
+            {
+              "headingId": "ix",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "questionId": "mh-night-trains-d",
+          "storedHeadingId": "iii",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0
+            },
+            {
+              "headingId": "ii",
+              "score": 0
+            },
+            {
+              "headingId": "iii",
+              "score": 0.6666666666666666
+            },
+            {
+              "headingId": "iv",
+              "score": 0
+            },
+            {
+              "headingId": "v",
+              "score": 0
+            },
+            {
+              "headingId": "vi",
+              "score": 0
+            },
+            {
+              "headingId": "vii",
+              "score": 0.2
+            },
+            {
+              "headingId": "viii",
+              "score": 0.1111111111111111
+            },
+            {
+              "headingId": "ix",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "questionId": "mh-night-trains-e",
+          "storedHeadingId": "viii",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0
+            },
+            {
+              "headingId": "ii",
+              "score": 0.125
+            },
+            {
+              "headingId": "iii",
+              "score": 0.16666666666666666
+            },
+            {
+              "headingId": "iv",
+              "score": 0
+            },
+            {
+              "headingId": "v",
+              "score": 0
+            },
+            {
+              "headingId": "vi",
+              "score": 0
+            },
+            {
+              "headingId": "vii",
+              "score": 0
+            },
+            {
+              "headingId": "viii",
+              "score": 0.1111111111111111
+            },
+            {
+              "headingId": "ix",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "questionId": "mh-night-trains-f",
+          "storedHeadingId": "ix",
+          "scores": [
+            {
+              "headingId": "i",
+              "score": 0
+            },
+            {
+              "headingId": "ii",
+              "score": 0.125
+            },
+            {
+              "headingId": "iii",
+              "score": 0
+            },
+            {
+              "headingId": "iv",
+              "score": 0
+            },
+            {
+              "headingId": "v",
+              "score": 0.2
+            },
+            {
+              "headingId": "vi",
+              "score": 0
+            },
+            {
+              "headingId": "vii",
+              "score": 0
+            },
+            {
+              "headingId": "viii",
+              "score": 0.1111111111111111
+            },
+            {
+              "headingId": "ix",
+              "score": 0.5714285714285714
+            }
+          ]
+        }
+      ],
+      "perSet": [
+        {
+          "assetId": "formative:matching-headings:mh-public-libraries",
+          "answerCounts": {
+            "i": 1,
+            "ii": 0,
+            "iii": 1,
+            "iv": 0,
+            "v": 1,
+            "vi": 0,
+            "vii": 1,
+            "viii": 0,
+            "ix": 1
+          },
+          "answerSequence": [
+            "i",
+            "iii",
+            "vii",
+            "v",
+            "ix"
+          ],
+          "reusedHeadingIds": [],
+          "unusedHeadingIds": [
+            "ii",
+            "iv",
+            "vi",
+            "viii"
+          ]
+        },
+        {
+          "assetId": "formative:matching-headings:mh-urban-farming",
+          "answerCounts": {
+            "i": 1,
+            "ii": 0,
+            "iii": 1,
+            "iv": 1,
+            "v": 1,
+            "vi": 0,
+            "vii": 1,
+            "viii": 1,
+            "ix": 0
+          },
+          "answerSequence": [
+            "i",
+            "vii",
+            "iii",
+            "iv",
+            "viii",
+            "v"
+          ],
+          "reusedHeadingIds": [],
+          "unusedHeadingIds": [
+            "ii",
+            "vi",
+            "ix"
+          ]
+        },
+        {
+          "assetId": "formative:matching-headings:mh-night-trains",
+          "answerCounts": {
+            "i": 1,
+            "ii": 0,
+            "iii": 1,
+            "iv": 1,
+            "v": 0,
+            "vi": 1,
+            "vii": 0,
+            "viii": 1,
+            "ix": 1
+          },
+          "answerSequence": [
+            "i",
+            "vi",
+            "iv",
+            "iii",
+            "viii",
+            "ix"
+          ],
+          "reusedHeadingIds": [],
+          "unusedHeadingIds": [
+            "ii",
+            "v",
+            "vii"
+          ]
+        }
+      ],
+      "sequenceProfile": {
+        "answerSequence": [
+          "i",
+          "iii",
+          "vii",
+          "v",
+          "ix",
+          "i",
+          "vii",
+          "iii",
+          "iv",
+          "viii",
+          "v",
+          "i",
+          "vi",
+          "iv",
+          "iii",
+          "viii",
+          "ix"
+        ],
+        "transitions": {
+          "i → iii": 1,
+          "iii → vii": 1,
+          "vii → v": 1,
+          "v → ix": 1,
+          "ix → i": 1,
+          "i → vii": 1,
+          "vii → iii": 1,
+          "iii → iv": 1,
+          "iv → viii": 1,
+          "viii → v": 1,
+          "v → i": 1,
+          "i → vi": 1,
+          "vi → iv": 1,
+          "iv → iii": 1,
+          "iii → viii": 1,
+          "viii → ix": 1
+        }
+      }
+    },
+    "qualitativeCoverage": {
+      "perspectiveAndRepresentation": true,
+      "priorKnowledge": true,
+      "irrelevantCognitiveLoad": true,
+      "visibleTitleCue": true,
+      "paragraphCompetition": true
+    },
+    "sampleAdequacy": {
+      "certificationThreshold": 100,
+      "observedQuestions": 17,
+      "eligibleForStatisticalCertification": false,
+      "conclusion": "The sample exposes a 6/14 unique-winner lexical-overlap shortcut, an unused ii label and an 8-option extreme-cue distractor signal, but n=17 is too small to certify balanced content statistically."
+    },
+    "statisticalCertification": "withheld-n-below-100",
+    "contentCertification": "blocked-editorial-review-required"
+  },
+  "applicability": {
+    "rights": "applicable",
+    "fullStackData": "applicable",
+    "ieltsExpert": "applicable",
+    "cognitiveWalkthrough": "applicable-to-content-only",
+    "antiBias": "applicable",
+    "uiUxAccessibility": "not-applicable-scoped-learner-sources-unchanged",
+    "playwright": "not-applicable-scoped-learner-runtime-unchanged",
+    "evidence": "Within F0.2b.5, seven learner-facing source/dependency files remain pinned and no app/component imports the audit registry. This does not certify the existing UI or repository globally."
+  },
+  "processLimitations": {
+    "firstPassTrace": "The persisted hash detects ordinary mutation but is not an external append-only witness; coordinated post-hoc rewriting cannot be ruled out cryptographically.",
+    "directSourceReview": "Direct-source review is declared by an AI reviewer and checked for exact IDs plus non-empty locators; it is not automatic proof of browsing, a human signature or factual verification.",
+    "provenanceSearch": "Public-web search is directed and non-exhaustive; no exact match does not prove original authorship or universal absence."
+  },
+  "negativeControl": {
+    "contentHashMismatch": {
+      "assetId": "formative:matching-headings:mh-public-libraries",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "rightsBasis": "unknown-quarantined",
+      "reasonCodes": [
+        "authorship-unresolved",
+        "content-hash-mismatch",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    "keyLikeValueLeakFindings": [
+      "$.instruction"
+    ],
+    "spanishKeyLikeValueLeakFindings": [
+      "$.repairAction"
+    ],
+    "imperativeKeyLikeValueLeakFindings": [
+      "$.instruction"
+    ],
+    "spanishCorrespondenceLeakFindings": [
+      "$.repairAction"
+    ]
+  },
+  "sources": [
+    {
+      "path": "src/data/practica-exams/seo-catalog.ts",
+      "sha256": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de"
+    },
+    {
+      "path": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-headings/page.tsx",
+      "sha256": "0a7a347a76a2ad89d7c2ef5beb68d48fc5ad4cb003d330ecbd724bb7c4f0a155"
+    },
+    {
+      "path": "src/components/exam-practice/MatchingHeadingsEngine.tsx",
+      "sha256": "6271d3865fdd2da9ef5e4bedcd47e8964750dc98e12e7cecce32dd87b0fe03c0"
+    },
+    {
+      "path": "src/components/exam-practice/MatchingHeadingsPassageBank.tsx",
+      "sha256": "4f0e80a4bd3894818fb2fd791ef3ec3b665887d6c4ebc13cc2f2ded97abbc408"
+    },
+    {
+      "path": "src/components/exam-practice/OfficialStrategyCard.tsx",
+      "sha256": "b4f575bd4bc3655f5f0682404f3d937020b4cfd3d54b42adac758647d9133e3e"
+    },
+    {
+      "path": "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+      "sha256": "73d3b725c68c0ed193ceba23ebddca3fec7978f6e84712c99b3dddc190443711"
+    },
+    {
+      "path": "src/components/exam-practice/StructuredData.tsx",
+      "sha256": "3e59a611e4d2bac9ce5994bdbd4ba6303407a5ddf82b26a340efe1f3c2b788d8"
+    },
+    {
+      "path": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-features/page.tsx",
+      "sha256": "df659101211ff4405f79e3a9a2c018c5172bf8329307e341bab69473669d5e31"
+    },
+    {
+      "path": "src/components/exam-practice/MatchingFeaturesEngine.tsx",
+      "sha256": "8a282ec76ab70b68c3e625693cd63498861331b903dd8607c2aea4db1ae2a93b"
+    },
+    {
+      "path": "src/components/exam-practice/MatchingFeaturesPassageBank.tsx",
+      "sha256": "cb176db35754c64ef3bd0e0e150c2b8e5a923136f62d32d908979a8ab08c8750"
+    },
+    {
+      "path": "src/lib/ielts/academic-reading-rights.ts",
+      "sha256": "cabd4adf35c75a14a3537bb07e5db4ef9ce8bc0c1a6f4a276d25518732923643"
+    },
+    {
+      "path": "src/data/practica-exams/ielts-reading-rights-registry.ts",
+      "sha256": "e0b8774fd4166724b5355923b6db4f81bf55a945949cd319d6cf391bb2de0fcf"
+    },
+    {
+      "path": "scripts/check-ielts-reading-matching-headings-rights.mjs",
+      "sha256": "754042e9bb909ce0b57c46a6fb1e5b7389841f0cca04ba451b627a5067176258"
+    },
+    {
+      "path": "tests/ielts-reading-matching-headings-rights.test.mjs",
+      "sha256": "8d73b20af1eec33cf75714539d437e097ce4330b36e0602b5e5221888948ef9d"
+    },
+    {
+      "path": "docs/ielts-reading-loop.md",
+      "sha256": "1b8613a0065094dac8f6394e32fe48ceea8d31d2f44cf0e5f373751667314b32"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-headings-2026-08-09/baseline.json",
+      "sha256": "20e7ffae731a4e05a6b784245bc8fe674f2700b6844ad5bfb26d00744de1fea1"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-headings-2026-08-09/source-availability.json",
+      "sha256": "5ed178af503c4bee6ed26c844a1dd140c8d7ffebc7ebfd8a7d20f67350247015"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-headings-2026-08-09/provenance-search.json",
+      "sha256": "afdd08a05d0e34c9297f0aa66d3533f6317a3dbaba8a9151584fb0b7a715beb1"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-headings-2026-08-09/unit-change-manifest.json",
+      "sha256": "e128014d6bfa616ee75628381a9709074d5a7fc4145ec97fe772f16632368ac9"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-headings-2026-08-09/blind-review.json",
+      "sha256": "4c64f1fca28ddeb1d80744c2f3f728660d7d92bbc47449f9f166b8426a2ea4fb"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-headings-2026-08-09/factual-source-review.json",
+      "sha256": "328329aa5a6d8f3dc8f160a4bd1db814d76099ac41fa664e07fa7a084b93b2fc"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-headings-2026-08-09/expert-first-pass.json",
+      "sha256": "efc61917a76af034ecde1562a6f67981cf99e120e37252685a9290a22837f0b6"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-headings-2026-08-09/expert-verdict.json",
+      "sha256": "7cddfb491c51dd0b79668f80d2720e8c187d81cb885c46b6f0b536626a9c1701"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-headings-2026-08-09/student-walkthrough.json",
+      "sha256": "4af7b41f6f66e86ef8fd2bafa4e2c13a42126a052e85973ca5d2fb96cf6b1ad3"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-headings-2026-08-09/audit-verdicts.json",
+      "sha256": "1e1414f252e51a0ada387b7c8c62e45ac6b03026709d35bba7d94cdaa4e01e99"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-headings-2026-08-09/build-report.mjs",
+      "sha256": "95f90e3c9c0af872fd7c07064bb4dc62c8320b757943b38afb8d0605532e295f"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-headings-2026-08-09/report.md",
+      "sha256": "8b5dc28a61b3e56c1f10d63f1a1441ad1856e99b74b8ab6a191b464c9e1698fb"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "ielts-reading-sentence-completion-audit-verdicts.v1",
+  "reviewedAt": "2026-08-09T17:02:00Z",
+  "status": "pass",
+  "passMeaning": "Audit coverage and conservative detection pass; all 3 assets remain quarantined and bank, content, security, UI/runtime conformity and publication certification remain blocked.",
+  "rows": [
+    {
+      "lane": "Rights and provenance",
+      "boardMark": "✅",
+      "scope": "Dossier, source identity, directed provenance search and deny-by-default disposition; not copyright clearance.",
+      "findings": "3/3 assets are unknown-quarantined. The 17-source ledger records 14 retrieved responses and 3 HTTP 403 responses without treating availability as factual or rights verification.",
+      "blockersCarriedForward": "Authorship, rights holder, license or authorization, factual sign-off and independent human review remain unresolved."
+    },
+    {
+      "lane": "Full-stack and data",
+      "boardMark": "✅",
+      "scope": "Static contract and audit pipeline for 3 passages, 18 questions, 18 canonical answers and 20 raw accepted entries.",
+      "findings": "Catalog, baseline and registry hashes reconcile 3/3; seven direct learner files and a 15-file render closure remain unchanged. The declared chronology and two-stage packet hashes are validated locally.",
+      "blockersCarriedForward": "The learner runtime still hard-codes two words, warns visually but does not enforce the word limit in scoring, exposes keys client-side and has no persistence. Local hashes are not an append-only external witness."
+    },
+    {
+      "lane": "IELTS expert",
+      "boardMark": "✅",
+      "scope": "Prompt-only review, blind passage adjudication and second-pass direct source review; this certifies the review, not the bank.",
+      "findings": "The expert matched 18/18 stored canonical answers. Question evidence follows passage order in 3/3 sets and every selected span respects the two-word word limit. `sentence-makerspaces-01` has one material ambiguity and `sentence-makerspaces-04` one minor ambiguity.",
+      "blockersCarriedForward": "The material alternative in sentence-makerspaces-01 blocks content certification. Factual review found 3 supported, 8 oversimplified and 4 untraceable claims; no human IELTS sign-off exists."
+    },
+    {
+      "lane": "Cognitive walkthrough",
+      "boardMark": "✅",
+      "scope": "Prospective average-student simulation from the blind packet only; not a usability study or learning-outcome experiment.",
+      "findings": "The walkthrough covers 3/3 passages and 18/18 questions with grammar prediction, word-limit checks, evidence search, span verification, spelling, competitor comparison and repair actions without solution leakage.",
+      "blockersCarriedForward": "No real student, retention measure, transfer test, usability session or band improvement was observed."
+    },
+    {
+      "lane": "Anti-bias and leakage",
+      "boardMark": "✅",
+      "scope": "Detection of surface shortcuts, answer leakage, accepted-alternative drift and small-sample limits; not a fairness certification.",
+      "findings": "Two-word answers account for 13/18 canonical keys; the same-position word-count heuristic hits 14/18, while prompt-only review produced 0 unique exact predictions. Hints are available before all 18 responses and 17 name a location or anchor.",
+      "blockersCarriedForward": "n=18 is too small for statistical certification. Predictable length, pre-response hints, immediate post-check keys and one material ambiguity require redesign and remeasurement."
+    },
+    {
+      "lane": "UI/UX and accessibility",
+      "boardMark": "➖",
+      "scope": "Not applicable to an unchanged learner-runtime delta; a static inherited baseline was recorded and this is not a conformity finding.",
+      "findings": "Seven direct hashes and the 15-file render closure, including CSS and layouts, are unchanged; no learner-facing data, copy, DOM, interaction or styling was modified by F0.2b.8.",
+      "blockersCarriedForward": "Inherited defects remain: duplicate input names across sets, no semantic progress/live feedback, missing lang and breadcrumb semantics, unbound hint toggles, heading disorder, no focus management and destructive reset."
+    },
+    {
+      "lane": "Playwright",
+      "boardMark": "➖",
+      "scope": "Not applicable to an unchanged learner-runtime delta; report rendering is packaging QA only and does not certify the learner route.",
+      "findings": "The activation contract requires Playwright if any learner hash, render-closure membership, runtime interaction, scoring, persistence, accessibility markup or styling changes.",
+      "blockersCarriedForward": "The existing route still needs future browser coverage for word-limit enforcement, feedback/focus, reset/reload, accessibility semantics, mobile overflow and inherited widget overlap when implementation begins."
+    }
+  ]
+}

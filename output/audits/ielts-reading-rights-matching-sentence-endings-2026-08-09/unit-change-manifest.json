@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "ielts-reading-matching-sentence-endings-unit-change-manifest.v1",
+  "unit": "F0.2b.7",
+  "recordedAt": "2026-08-09T15:12:16Z",
+  "learnerFacingChangeAuthorized": false,
+  "learnerFacingBaselinePaths": [
+    "src/data/practica-exams/seo-catalog.ts",
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings/page.tsx",
+    "src/components/exam-practice/MatchingSentenceEndingsEngine.tsx",
+    "src/components/exam-practice/MatchingSentenceEndingsPassageBank.tsx",
+    "src/components/exam-practice/OfficialStrategyCard.tsx",
+    "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+    "src/components/exam-practice/StructuredData.tsx"
+  ],
+  "renderDependencyClosureBaselinePaths": [
+    "src/app/(site)/layout.tsx",
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings/page.tsx",
+    "src/app/globals.css",
+    "src/app/layout.tsx",
+    "src/components/SiteNav.tsx",
+    "src/components/SiteSkipLink.tsx",
+    "src/components/ThemeProvider.tsx",
+    "src/components/WhatsAppFloat.tsx",
+    "src/components/exam-practice/MatchingSentenceEndingsEngine.tsx",
+    "src/components/exam-practice/MatchingSentenceEndingsPassageBank.tsx",
+    "src/components/exam-practice/OfficialStrategyCard.tsx",
+    "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+    "src/components/exam-practice/StructuredData.tsx",
+    "src/data/practica-exams/seo-catalog.ts",
+    "src/lib/supabase/client.ts"
+  ],
+  "unitSourceFiles": [
+    "src/data/practica-exams/ielts-reading-rights-registry.ts",
+    "scripts/check-ielts-reading-matching-sentence-endings-rights.mjs",
+    "tests/ielts-reading-matching-sentence-endings-rights.test.mjs",
+    "docs/ielts-reading-loop.md"
+  ],
+  "nextUnitBoundary": {
+    "unit": "F0.2b.8",
+    "format": "sentence-completion",
+    "status": "not-started"
+  },
+  "applicability": {
+    "staticUiUxAndAccessibilityReview": "applicable-to-existing-baseline",
+    "uiUxDeltaTesting": "not-applicable-only-while-learner-facing-and-render-closure-hashes-match-baseline",
+    "playwright": "not-applicable-only-while-learner-facing-and-render-closure-hashes-match-baseline",
+    "notApplicableMeaning": "The audit-only unit has no learner-facing or runtime delta while every direct learner-facing and static render-closure hash remains identical to baseline. The UI/UX and Playwright lanes may therefore show ➖ for delta testing, but this is not a UI, accessibility or runtime conformity finding.",
+    "playwrightActivationCriteria": [
+      "learner-facing hash drift",
+      "render dependency closure hash or membership drift",
+      "runtime interaction or feedback change",
+      "accessibility markup or styling change"
+    ]
+  },
+  "unitOutputDirectory": "output/audits/ielts-reading-rights-matching-sentence-endings-2026-08-09",
+  "interpretation": "This manifest scopes the audit-only implementation files for F0.2b.7. Seven direct learner-facing sources and the fifteen-file static render dependency closure, including imported CSS, are pinned independently by baseline hash and are not authorized to change. Static closure excludes runtime-generated and remote copy. UI/UX and Playwright delta testing are ➖ only while all pinned learner-facing and closure identities remain unchanged; that status does not certify the existing UI, accessibility or runtime behavior. The exact stop boundary is before F0.2b.8 Sentence Completion."
+}

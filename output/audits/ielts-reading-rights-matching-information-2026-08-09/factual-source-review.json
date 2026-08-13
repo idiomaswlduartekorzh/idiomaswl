@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "ielts-reading-matching-information-factual-source-review.v1",
+  "generatedAt": "2026-08-09T06:15:00-05:00",
+  "reviewScope": "F0.2b.4 — second-pass factual-source review only",
+  "instruction": "Open only after persisting the full blind first pass. Review every exact claim span against candidate sources and classify it supported, oversimplified, unsupported or untraceable. Separate factual support from the writer’s normative stance. Candidate sources do not prove authorship, license, authorization or verification.",
+  "records": [
+    {
+      "assetId": "formative:matching-information:mi-city-noise",
+      "claimSpansToReview": [
+        "Today, public health researchers describe it as an environmental stressor that can affect sleep, concentration and long-term wellbeing.",
+        "These maps combine sensor data, traffic counts and resident complaints to identify areas where exposure is highest.",
+        "Lower speed limits, smoother road surfaces and restrictions on night deliveries can reduce sound at the source.",
+        "Urban trees and green spaces may also help, though their effect is often modest unless combined with changes in traffic design.",
+        "Wealthier districts may have more parks, wider streets and better insulated buildings, while lower-income neighborhoods can be located closer to highways or industrial areas."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "noise-who-environmental-guidance",
+          "label": "WHO — guidance on environmental noise",
+          "url": "https://www.who.int/tools/compendium-on-health-and-environment/environmental-noise",
+          "note": "Fuente institucional candidata sobre fuentes de ruido y efectos en sueño, cognición, hipertensión y cardiopatía. No valida cada medida municipal del pasaje."
+        },
+        {
+          "evidenceId": "noise-ec-environmental-noise-directive",
+          "label": "European Commission — Environmental Noise Directive",
+          "url": "https://environment.ec.europa.eu/topics/noise/environmental-noise-directive_en",
+          "note": "Fuente normativa candidata sobre mapas de ruido, exposición, información pública y planes de acción. No confirma el método ficticio concreto de sensor + traffic counts + complaints."
+        },
+        {
+          "evidenceId": "noise-who-health-inequalities",
+          "label": "WHO Europe — noise and health inequalities",
+          "url": "https://www.who.int/europe/health-topics/noise",
+          "note": "Fuente institucional candidata que documenta desigualdades de exposición asociadas con nivel socioeconómico. No valida cada contraste urbano del pasaje."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan riesgos sanitarios, cartografía, información pública y desigualdad socioeconómica, pero no verifican el street-canyon example, el efecto de cada medida ni todas las relaciones causales del pasaje."
+    },
+    {
+      "assetId": "formative:matching-information:mi-museum-lighting",
+      "claimSpansToReview": [
+        "Too much exposure can fade pigments, weaken paper and damage textiles, so the brightest display is not always the best one.",
+        "Stone sculpture can usually be displayed under stronger light than watercolours, manuscripts or historic fabrics.",
+        "For this reason, museums often rotate sensitive works or show them for limited periods before returning them to storage.",
+        "LED systems can adjust colour temperature, direction and intensity with more precision than older lamps.",
+        "Designers sometimes use contrast to guide attention, but they must avoid making pathways unsafe or labels unreadable."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "museum-cci-light-deterioration",
+          "label": "Canadian Conservation Institute — light, ultraviolet and infrared",
+          "url": "https://www.canada.ca/en/conservation-institute/services/agents-deterioration/light.html",
+          "note": "Guía técnica candidata sobre daño acumulativo, sensibilidades por material y niveles de luz. No establece una fórmula universal de diseño de exposición."
+        },
+        {
+          "evidenceId": "museum-cci-textiles-light",
+          "label": "Canadian Conservation Institute — textiles and the environment",
+          "url": "https://www.canada.ca/en/conservation-institute/services/conservation-preservation-publications/canadian-conservation-institute-notes/textiles-environment.html",
+          "note": "Guía técnica candidata sobre sensibilidad de textiles, daño acumulativo, exposición limitada y luces activadas por visitantes."
+        },
+        {
+          "evidenceId": "museum-smithsonian-accessible-lighting",
+          "label": "Smithsonian — Guidelines for Accessible Exhibition Design",
+          "url": "https://affiliations.si.edu/wp-content/uploads/PDFs/Accessible-Exhibition-Design.pdf",
+          "note": "Guía institucional candidata sobre rutas iluminadas, seguridad, contraste y legibilidad. No valida por sí sola todas las decisiones curatoriales descritas."
+        }
+      ],
+      "limitation": "Las fuentes candidatas respaldan daño acumulativo, sensibilidad de papel/textiles, exposición limitada, luces activadas por visitantes y seguridad de rutas; no validan cada comparación con piedra ni una solución universal de iluminación."
+    },
+    {
+      "assetId": "formative:matching-information:mi-coastal-restoration",
+      "claimSpansToReview": [
+        "Scientists now describe them as protective landscapes because they can absorb wave energy, store carbon and provide nursery areas for fish.",
+        "Engineers may need to remove old barriers, reopen tidal channels or change drainage systems so that salt water can return at the right times.",
+        "Project teams therefore spend months discussing maps, compensation and monitoring plans before work begins.",
+        "Monitoring teams often measure progress through small indicators such as insect diversity, water depth and the return of juvenile fish.",
+        "A restored marsh may reduce pressure on a sea wall during storms, but it does not remove the need for evacuation plans or building rules in exposed areas."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "wetlands-noaa-coastal-resiliency",
+          "label": "NOAA Fisheries — coastal resiliency",
+          "url": "https://www.fisheries.noaa.gov/news/coastal-resiliency",
+          "note": "Fuente institucional candidata sobre humedales como infraestructura verde, energía de olas, inundaciones, suelos y hábitat. No valida la historia causal completa del pasaje."
+        },
+        {
+          "evidenceId": "wetlands-noaa-estuary-restoration-act",
+          "label": "NOAA Fisheries — Estuary Restoration Act",
+          "url": "https://www.fisheries.noaa.gov/national/habitat-conservation/estuary-restoration-act",
+          "note": "Fuente institucional candidata sobre pérdida, restauración, monitoreo, inundaciones y hábitat de peces en estuarios."
+        },
+        {
+          "evidenceId": "wetlands-noaa-restoration-monitoring",
+          "label": "NOAA Fisheries — monitoring and evaluation for restoration projects",
+          "url": "https://www.fisheries.noaa.gov/national/habitat-conservation/monitoring-and-evaluation-restoration-projects",
+          "note": "Fuente institucional candidata sobre restauración hidrológica y monitoreo de procesos físicos, biológicos y geoquímicos a largo plazo."
+        }
+      ],
+      "limitation": "Las fuentes candidatas respaldan resiliencia, hábitat, restauración hidrológica y monitoreo a largo plazo, pero no verifican cada secuencia histórica, conflicto comunitario, indicador específico ni la combinación exacta con sea walls del pasaje."
+    }
+  ]
+}

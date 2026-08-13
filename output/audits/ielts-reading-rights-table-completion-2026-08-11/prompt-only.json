@@ -1,0 +1,250 @@
+{
+  "schemaVersion": "ielts-reading-table-completion-prompt-only.v1",
+  "generatedAt": "2026-08-11T17:10:03Z",
+  "reviewScope": "F0.2b.11 — grammar and visible-table shortcut audit over 18 open responses",
+  "reviewerIsolation": "Use only the visible table frames, headers and word limits. Do not open passages, hints, keys, blind packets, registry or prior reviews.",
+  "taskRule": "For each blank, classify the grammar requested and record whether the visible frame uniquely suggests an exact one- or two-word completion.",
+  "instruction": "Do not reconstruct stored keys. This packet measures prompt-only exact-guess risk without passage evidence.",
+  "excludes": [
+    "passages",
+    "accepted answers",
+    "alternatives",
+    "explanations",
+    "hints",
+    "prior verdicts",
+    "student data"
+  ],
+  "records": [
+    {
+      "assetId": "formative:table-completion:table-cooling-buildings",
+      "sourceObjectSha256": "bbf741fdf9e92620e9491e0b4197558aefe99b2c12b9a6cf11e94da8330518bd",
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "tableTitle": "Passive cooling methods",
+      "columns": [
+        "Method",
+        "How it works",
+        "Important condition or limitation"
+      ],
+      "rows": [
+        {
+          "rowId": "table-cooling-01",
+          "cells": [
+            {
+              "kind": "text",
+              "text": "Cross-ventilation"
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-cooling-01-1",
+              "before": "Moving air carries ",
+              "after": " away from people and surfaces."
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-cooling-01-2",
+              "before": "Designers should study ",
+              "after": " before placing openings."
+            }
+          ]
+        },
+        {
+          "rowId": "table-cooling-02",
+          "cells": [
+            {
+              "kind": "text",
+              "text": "Thermal mass"
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-cooling-02-1",
+              "before": "Stone, concrete and brick absorb heat during the ",
+              "after": "."
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-cooling-02-2",
+              "before": "It is less useful if stored heat cannot be released after ",
+              "after": "."
+            }
+          ]
+        },
+        {
+          "rowId": "table-cooling-03",
+          "cells": [
+            {
+              "kind": "text",
+              "text": "Shading"
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-cooling-03-1",
+              "before": "External shade stops heat before it enters the ",
+              "after": "."
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-cooling-03-2",
+              "before": "Good design depends on the sun's ",
+              "after": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetId": "formative:table-completion:table-rain-gardens",
+      "sourceObjectSha256": "23e079b4c30603c96b2ed16bd1f68f52ffc6850d5b780d3af8e29bd5047a70b9",
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "tableTitle": "Rain garden design and use",
+      "columns": [
+        "Feature",
+        "Reason or benefit",
+        "Condition or warning"
+      ],
+      "rows": [
+        {
+          "rowId": "table-rain-gardens-01",
+          "cells": [
+            {
+              "kind": "text",
+              "text": "Water management"
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-rain-gardens-01-1",
+              "before": "The garden holds water ",
+              "after": " after heavy rain."
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-rain-gardens-01-2",
+              "before": "It helps avoid sending all runoff into ",
+              "after": " immediately."
+            }
+          ]
+        },
+        {
+          "rowId": "table-rain-gardens-02",
+          "cells": [
+            {
+              "kind": "text",
+              "text": "Location"
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-rain-gardens-02-1",
+              "before": "The garden should sit below the area it ",
+              "after": "."
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-rain-gardens-02-2",
+              "before": "Avoid soil that is permanently ",
+              "after": "."
+            }
+          ]
+        },
+        {
+          "rowId": "table-rain-gardens-03",
+          "cells": [
+            {
+              "kind": "text",
+              "text": "Planting and maintenance"
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-rain-gardens-03-1",
+              "before": "Deep-rooted native plants open channels in the ",
+              "after": "."
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-rain-gardens-03-2",
+              "before": "Leaves should be cleared from ",
+              "after": " points."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetId": "formative:table-completion:table-museum-inventory",
+      "sourceObjectSha256": "c7641b80b191b3bedd29a75df19bd1c39174b467e58947a817718d2d0b3fd069",
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "tableTitle": "Digitising a small museum collection",
+      "columns": [
+        "Stage",
+        "Main action",
+        "Risk or quality control"
+      ],
+      "rows": [
+        {
+          "rowId": "table-museum-inventory-01",
+          "cells": [
+            {
+              "kind": "text",
+              "text": "Creating records"
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-museum-inventory-01-1",
+              "before": "Records explain what an object is and where it ",
+              "after": " from."
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-museum-inventory-01-2",
+              "before": "A photo alone is not enough because digitising is more than taking ",
+              "after": "."
+            }
+          ]
+        },
+        {
+          "rowId": "table-museum-inventory-02",
+          "cells": [
+            {
+              "kind": "text",
+              "text": "Identification"
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-museum-inventory-02-1",
+              "before": "Curators may interview ",
+              "after": " to check object history."
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-museum-inventory-02-2",
+              "before": "Uncertain information should not be presented as ",
+              "after": "."
+            }
+          ]
+        },
+        {
+          "rowId": "table-museum-inventory-03",
+          "cells": [
+            {
+              "kind": "text",
+              "text": "Photography and storage"
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-museum-inventory-03-1",
+              "before": "A scale marker helps when ",
+              "after": " is important."
+            },
+            {
+              "kind": "blank",
+              "questionId": "table-museum-inventory-03-2",
+              "before": "A trained staff member should review records before ",
+              "after": "."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

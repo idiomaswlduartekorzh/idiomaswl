@@ -1,0 +1,226 @@
+{
+  "schemaVersion": "ielts-reading-table-completion-baseline.v1",
+  "capturedAt": "2026-08-11T17:01:30Z",
+  "scope": {
+    "unit": "F0.2b.11",
+    "format": "table-completion",
+    "passages": 3,
+    "questions": 18,
+    "blanks": 18
+  },
+  "assets": [
+    {
+      "assetId": "formative:table-completion:table-cooling-buildings",
+      "setId": "table-cooling-buildings",
+      "title": "Passive cooling in public buildings",
+      "wordCount": 267,
+      "paragraphCount": 5,
+      "questionCount": 6,
+      "blankCount": 6,
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "questionIds": [
+        "table-cooling-01-1",
+        "table-cooling-01-2",
+        "table-cooling-02-1",
+        "table-cooling-02-2",
+        "table-cooling-03-1",
+        "table-cooling-03-2"
+      ],
+      "sourceObjectSha256": "bbf741fdf9e92620e9491e0b4197558aefe99b2c12b9a6cf11e94da8330518bd",
+      "passageSha256": "4855b6c5fc0b048304b1746b7423c1973b3ef548176673ccbde2641d513e946c"
+    },
+    {
+      "assetId": "formative:table-completion:table-rain-gardens",
+      "setId": "table-rain-gardens",
+      "title": "Rain gardens in school grounds",
+      "wordCount": 223,
+      "paragraphCount": 4,
+      "questionCount": 6,
+      "blankCount": 6,
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "questionIds": [
+        "table-rain-gardens-01-1",
+        "table-rain-gardens-01-2",
+        "table-rain-gardens-02-1",
+        "table-rain-gardens-02-2",
+        "table-rain-gardens-03-1",
+        "table-rain-gardens-03-2"
+      ],
+      "sourceObjectSha256": "23e079b4c30603c96b2ed16bd1f68f52ffc6850d5b780d3af8e29bd5047a70b9",
+      "passageSha256": "b1dd317e09c2ef80e152284263acdb390ca86494e33a95d9dfc425c658ee140f"
+    },
+    {
+      "assetId": "formative:table-completion:table-museum-inventory",
+      "setId": "table-museum-inventory",
+      "title": "Digitising small museum collections",
+      "wordCount": 214,
+      "paragraphCount": 4,
+      "questionCount": 6,
+      "blankCount": 6,
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "questionIds": [
+        "table-museum-inventory-01-1",
+        "table-museum-inventory-01-2",
+        "table-museum-inventory-02-1",
+        "table-museum-inventory-02-2",
+        "table-museum-inventory-03-1",
+        "table-museum-inventory-03-2"
+      ],
+      "sourceObjectSha256": "c7641b80b191b3bedd29a75df19bd1c39174b467e58947a817718d2d0b3fd069",
+      "passageSha256": "f21af1a1f11c1f8b5d70b6f73b3f0113ee76d41de8e39dbe9914570b9e096e69"
+    }
+  ],
+  "hashMethods": {
+    "sourceObjectSha256": "SHA-256 over recursively key-sorted JSON for the complete learner-facing source object.",
+    "passageSha256": "SHA-256 over passage text only after NFKC normalization and whitespace collapse, matching rights registry policy v8."
+  },
+  "structuralRisk": {
+    "wordLimitContract": {
+      "declaredInstruction": "NO MORE THAN TWO WORDS",
+      "setsWithDeclaredInstruction": 3,
+      "setsWithMaxWordsField": 3,
+      "runtimeStoredMaxWordsDisplayLimit": 2,
+      "wordLimitParticipatesInScoring": false
+    },
+    "answerSurfaceProfile": {
+      "questions": 18,
+      "oneWordPrimaryAnswers": 17,
+      "twoWordPrimaryAnswers": 1,
+      "primaryAnswersOverTwoWords": 0,
+      "primaryAnswersExactPassageTokenSequences": 18,
+      "primaryAnswerTokenSequencesUniqueWithinBank": 17,
+      "questionsWithAcceptedAlternativeEntry": 0,
+      "rawAcceptedEntries": 18,
+      "normalizedAcceptedValues": 17,
+      "normalizedRedundantAlternativeEntries": 0,
+      "grammaticallyInvalidAlternativeEntries": 0,
+      "manuallyClassifiedNominalOrNounPhrasePrimaryAnswers": 14,
+      "manualClassificationCaveat": "Manual structural classification; it is not an IELTS rule or a statistical POS, key-exclusivity or content-quality certification."
+    },
+    "textOrder": {
+      "setsWithStrictlyAscendingEvidenceOrder": 1,
+      "totalSets": 3,
+      "orderViolations": 2,
+      "canonicalAnswersWithExactlyOneWholeTokenOccurrence": 12,
+      "canonicalAnswersWithMultipleWholeTokenOccurrences": 6,
+      "naiveFirstMatchOrderViolationQuestionIds": [
+        "table-rain-gardens-01-2",
+        "table-rain-gardens-02-1",
+        "table-rain-gardens-03-1",
+        "table-museum-inventory-01-2"
+      ],
+      "intendedWholeTokenOffsetsPinned": 18
+    },
+    "shortcutSignals": {
+      "questionsWithUniqueExactPromptPassageBigram": 14,
+      "alwaysTwoWordPrimaryAnswerHits": 1,
+      "sameQuestionPositionAcrossSetsModalEvidenceParagraphHits": 13,
+      "manuallyClassifiedNominalOrNounPhrasePrimaryAnswers": 14,
+      "questionsWithHintsAvailableBeforeResponse": 18,
+      "preResponseHintsWithAnchorOrLocationLanguage": 18,
+      "preResponseHintsWithParaphraseOnly": 0,
+      "questionsWithPostCheckExplanation": 18,
+      "sameQuestionPositionAcrossSetsModalPrimaryAnswerWordCountHits": 17,
+      "sameQuestionPositionAcrossSetsEligible": 18,
+      "surfaceShortcutReviewRequired": true
+    },
+    "normalizationContract": {
+      "trimOuterWhitespace": true,
+      "lowercase": true,
+      "collapseInternalWhitespace": true,
+      "removeTrailingAsciiPunctuation": ".,;:!?",
+      "unicodeNormalization": false,
+      "hyphenNormalization": false,
+      "acceptedVariantsOnlyWhenExplicitAlternativeExists": true
+    }
+  },
+  "runtimeAndAccessibilityBaseline": {
+    "runtimeClassification": "guided-training-runtime-with-immediate-feedback-not-practice-or-exam-simulation",
+    "answerKeysDeliveredToClient": true,
+    "inputLocksAfterExplicitCheck": true,
+    "inputLocksWhileTyping": false,
+    "correctnessAndExplanationShownImmediatelyAfterCheck": true,
+    "hintsAvailableBeforeResponse": true,
+    "attemptStatePersisted": false,
+    "resetRequiresConfirmation": false,
+    "resetScope": "all-six-blanks-in-one-passage-engine",
+    "wordLimitVisualWarningPresent": true,
+    "wordLimitEnforcedInScoring": false,
+    "inputAccessibleNamePresent": true,
+    "inputAccessibleNamesUniqueAcrossThreeSets": true,
+    "breadcrumbHasNavAndCurrentSemantics": true,
+    "englishPassageHasLangAttribute": false,
+    "progressIndicatorHasProgrammaticRoleNameAndValue": false,
+    "feedbackHasLiveRegion": false,
+    "hintToggleHasExpandedAndControlsSemantics": false,
+    "headingHierarchyIsOrdered": false,
+    "feedbackFocusManaged": false,
+    "uiUxStaticReviewApplicable": true,
+    "playwrightApplicableToAuditOnlyScaffoldDelta": false,
+    "playwrightBecomesApplicableOnLearnerFacingOrRuntimeDrift": true
+  },
+  "learnerFacingSourceSha256": {
+    "src/data/practica-exams/seo-catalog.ts": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de",
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/table-completion/page.tsx": "9aa433566f10715f42412c11d7f5e645894a892f0edb9d054b3606764db3bff2",
+    "src/components/exam-practice/TableCompletionEngine.tsx": "c224f7cff507efecbe6753475ddd98bbf31a1744250bc414a56c5a5494ccfb7b",
+    "src/components/exam-practice/TableCompletionPassageBank.tsx": "7cca09dc031a7377e92d0a6d481767558a87e4cd64b526f45254e448e71e929b",
+    "src/lib/ielts/academic-reading-question-types.ts": "455924c25a1e33355265497a5c51d4cdb7d34864b34d539f1a7b91bedf3ce3ec",
+    "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx": "73d3b725c68c0ed193ceba23ebddca3fec7978f6e84712c99b3dddc190443711",
+    "src/components/exam-practice/StructuredData.tsx": "3e59a611e4d2bac9ce5994bdbd4ba6303407a5ddf82b26a340efe1f3c2b788d8"
+  },
+  "routeObjectSha256": "2ff86681caae0578a04890551bd3068b20ca6e95da378ace5485bfc7ff33f165",
+  "renderDependencyClosureSha256": {
+    "src/app/(site)/layout.tsx": "b427054c94eb33f0177c05c241a2b3920c76e2b7497ad3822b7f379f8b9f2a11",
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/table-completion/page.tsx": "9aa433566f10715f42412c11d7f5e645894a892f0edb9d054b3606764db3bff2",
+    "src/app/globals.css": "60efb283eab56b59072c8e43ac7469a3c34977346079600b525b19556207915d",
+    "src/app/layout.tsx": "6323573c44d1f473e5d9cd3cb7c13706b9aebcc158d211d1f56e190fefda9ec3",
+    "src/components/SiteNav.tsx": "9114393b428d703d41f84807e6322527c2f79036e4fe05eb8b43cd1238e4307b",
+    "src/components/SiteSkipLink.tsx": "d0c3ca1c465744e16e756623c704834083518acc1c84d83f09b581071cef967e",
+    "src/components/ThemeProvider.tsx": "0bfdbb8105d100202331d5409c3b3cf0cd8ae8a0d231c03ec93c8836ca06c340",
+    "src/components/WhatsAppFloat.tsx": "762256aadcff27912dacf99bb56d6fc6222ad0e54104910a545e8954b0a02255",
+    "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx": "73d3b725c68c0ed193ceba23ebddca3fec7978f6e84712c99b3dddc190443711",
+    "src/components/exam-practice/StructuredData.tsx": "3e59a611e4d2bac9ce5994bdbd4ba6303407a5ddf82b26a340efe1f3c2b788d8",
+    "src/components/exam-practice/TableCompletionPassageBank.tsx": "7cca09dc031a7377e92d0a6d481767558a87e4cd64b526f45254e448e71e929b",
+    "src/components/exam-practice/TableCompletionEngine.tsx": "c224f7cff507efecbe6753475ddd98bbf31a1744250bc414a56c5a5494ccfb7b",
+    "src/data/practica-exams/seo-catalog.ts": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de",
+    "src/lib/ielts/academic-reading-question-types.ts": "455924c25a1e33355265497a5c51d4cdb7d34864b34d539f1a7b91bedf3ce3ec",
+    "src/lib/supabase/client.ts": "acb02d5d75dad866b04380241e3a40623de46f098ee98ff017be8138c0d076e4"
+  },
+  "concurrentExternalClosureChange": {
+    "path": "src/app/layout.tsx",
+    "previousSha256": "03d06f0aba4ac802fd9bf69b63229af511a8f4daa132d405dfc36a1a19f01dda",
+    "currentSha256": "6323573c44d1f473e5d9cd3cb7c13706b9aebcc158d211d1f56e190fefda9ec3",
+    "observedDiffSummary": "GTM disabled in preview/development",
+    "observedAt": "2026-08-11T17:01:30Z",
+    "attribution": "outside-F0.2b.11-audit-files",
+    "interpretation": "Table content/engine/bank unchanged; the concurrent root-layout change is preserved and recorded, and no UI conformity is certified by this audit-only unit."
+  },
+  "nextUnit": {
+    "unit": "F0.2b.12",
+    "format": "flow-chart-completion",
+    "sourceSha256": {
+      "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/flow-chart-completion/page.tsx": "f17fed2dfa5003bd1157d57f8adf7e38dab86d5e50c70328805a51dd92ea8c4c",
+      "src/components/exam-practice/FlowChartCompletionEngine.tsx": "e2c692f7f2962b9b533dc9e245393920422ad3b1698fdd4a5fab34eeac954353",
+      "src/components/exam-practice/FlowChartCompletionPassageBank.tsx": "06cb3db919ba3b8f3d68977c51f0a472382de77e9ca01b8c429c8cc9f198b213",
+      "src/lib/ielts/academic-reading-question-types.ts": "455924c25a1e33355265497a5c51d4cdb7d34864b34d539f1a7b91bedf3ce3ec",
+      "src/data/practica-exams/seo-catalog.ts": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de"
+    },
+    "routeObjectSha256": "aa3a81fba832725ba21e150c74a5922a8de8deef049228078261a6f513bf79b3",
+    "sourceObjectSha256": {
+      "flow-recycling-textiles": "d039e350b44ef1b56c4db882eef1139301e534607ae93149b521fb3e3469117d",
+      "flow-community-pottery": "01d18b2fc26faf66c1d7ff0cd7f827fc5234612269244e948e4d98360f038f0a",
+      "flow-noise-mapping": "161d57827e7bbe02a99b6fff519fff6fbd1c14f54ed28dbf17ff81564dddf6b5"
+    },
+    "scope": {
+      "passages": 3,
+      "questions": 18,
+      "renderDependencyClosurePaths": 15
+    },
+    "sharedDependencyBoundary": [
+      "src/components/exam-practice/FlowChartCompletionEngine.tsx",
+      "src/components/exam-practice/FlowChartCompletionPassageBank.tsx",
+      "src/data/practica-exams/seo-catalog.ts"
+    ]
+  },
+  "interpretation": "This is an audit-only F0.2b.11 Table Completion baseline. It records inherited learner-facing, runtime, data, bias and accessibility defects without changing or certifying them. UI/UX and Playwright delta lanes may be marked not applicable only while all current direct and render-closure identities remain unchanged; that is not a conformity finding. The exact stop boundary is before F0.2b.12 Flow-chart Completion."
+}

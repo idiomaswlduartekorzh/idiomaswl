@@ -1,0 +1,312 @@
+{
+  "schemaVersion": "ielts-reading-sentence-completion-student-walkthrough.v1",
+  "reviewer": {
+    "humanSignature": false,
+    "sourceContext": "blind-review-packet-only",
+    "reviewedAt": "2026-08-09T16:50:59Z",
+    "blindPacketSha256": "76e4e4de7f6d60e44331a4ec07750f49c2201d81b3ef1f363eb935c9719854e4",
+    "notes": "Simulación prospectiva de un estudiante promedio y auditoría pedagógica basada solo en el paquete ciego. Describe procesos de lectura y reparación sin consignar soluciones, claves ni fragmentos candidatos del pasaje."
+  },
+  "records": [
+    {
+      "assetId": "formative:sentence-completion:sentence-wetland-parks",
+      "passageBarrier": "medium",
+      "wordLimitRisk": "medium",
+      "promptCueRisk": "medium",
+      "hintCueRisk": "low",
+      "shortcutRisks": [
+        "Completar por conocimiento general sobre infraestructura urbana sin localizar una coincidencia literal y contigua.",
+        "Tomar el primer sustantivo temáticamente plausible del párrafo aunque no complete la gramática de la oración.",
+        "Ignorar que dos ideas cercanas pueden compartir vocabulario, pero cumplir funciones distintas en el pasaje."
+      ],
+      "transferValue": "Entrena el recorrido ordenado por el texto, la distinción entre causa, mecanismo y resultado, y la verificación de sintagmas nominales de una o dos palabras.",
+      "nextAction": "Realizar una segunda pasada cronometrada: marcar el ancla de cada enunciado, localizar una ventana breve en orden y aplicar la secuencia literalidad, gramática, límite y ortografía.",
+      "questionWalkthrough": [
+        {
+          "questionId": "sentence-wetlands-01",
+          "likelyMisread": "El estudiante puede enfocarse en el propósito general del parque y pasar por alto que el hueco pide el medio físico contrastado con la retención temporal.",
+          "predictedGrammarCategory": "Sintagma nominal plural que funcione como complemento de la preposición ya presente.",
+          "wordLimitCheck": "Insertar provisionalmente el tramo y contar solo sus unidades: debe ocupar una o dos palabras; no añadir artículos ni preposiciones.",
+          "promptOnlyGuessRisk": "Alto si se elige una instalación urbana típica por sentido común sin confirmar que aparece literalmente en la primera zona relevante.",
+          "evidenceSearch": "Subrayar el contraste entre conservar el agua temporalmente y desplazarla, y buscar inmediatamente después el complemento del medio de conducción.",
+          "passageSpanCheck": "Verificar que el candidato sea un tramo continuo del pasaje y no una combinación de palabras separadas dentro de la oración.",
+          "grammarRecheck": "Leer la oración completa y confirmar concordancia de número y encaje natural después de la preposición.",
+          "spellingCheck": "Copiar exactamente mayúsculas, terminaciones y cualquier signo interno del tramo localizado.",
+          "competitorCheck": "Comparar con otros elementos del sistema de drenaje mencionados cerca y descartar los que describen un efecto posterior, no el medio del contraste.",
+          "decisionRule": "Elegir solo un tramo literal de máximo dos palabras que exprese el referente del contraste y produzca una oración gramatical completa.",
+          "repairAction": "Si la elección depende de conocimiento urbano, volver a la oración del contraste, encerrar la preposición equivalente y extraer únicamente su complemento inmediato."
+        },
+        {
+          "questionId": "sentence-wetlands-02",
+          "likelyMisread": "Puede confundirse el elemento que recibe menos presión con el resultado visible que se reduce durante una tormenta.",
+          "predictedGrammarCategory": "Sintagma nominal plural, posiblemente modificado, como complemento de una preposición.",
+          "wordLimitCheck": "Comprobar que el modificador y el núcleo, si ambos son necesarios, no excedan dos palabras y que no se copie puntuación final.",
+          "promptOnlyGuessRisk": "Medio-alto porque el tema permite anticipar varios componentes urbanos plausibles que no desempeñan la relación exacta de presión.",
+          "evidenceSearch": "Localizar la oración de las tormentas y separar en ella la causa de almacenamiento, el receptor de la presión y la consecuencia en la calle.",
+          "passageSpanCheck": "Confirmar que las palabras elegidas aparecen juntas en el segmento que sigue a la relación de presión.",
+          "grammarRecheck": "Releer con el hueco cubierto y comprobar que el sustantivo concuerda con la construcción y no duplica una preposición.",
+          "spellingCheck": "Revisar con atención la terminación plural y copiar el posible modificador sin alterarlo.",
+          "competitorCheck": "Contrastar el receptor mecánico de la presión con el lugar donde aparece el daño; elegir según la relación verbal, no según prominencia temática.",
+          "decisionRule": "Aceptar el candidato únicamente si el pasaje afirma literalmente que la presión disminuye sobre ese referente y el tramo cabe completo.",
+          "repairAction": "Si se eligió una consecuencia, dibujar mentalmente la cadena mecanismo-receptor-resultado y regresar al miembro central de la oración fuente."
+        },
+        {
+          "questionId": "sentence-wetlands-03",
+          "likelyMisread": "El estudiante puede tomar un grupo de animales como complemento aunque el enunciado solicita la segunda condición física coordinada con la vegetación.",
+          "predictedGrammarCategory": "Sintagma nominal plural coordinable con otro sintagma nominal ya escrito.",
+          "wordLimitCheck": "Contar el sintagma coordinado completo y mantenerlo en una o dos palabras, sin repetir la conjunción del enunciado.",
+          "promptOnlyGuessRisk": "Alto porque varias características ecológicas suenan razonables, pero solo una completa la pareja literal de condiciones.",
+          "evidenceSearch": "Buscar la frase condicional sobre una zona pequeña y aislar los dos rasgos que aparecen unidos como requisitos de apoyo a especies.",
+          "passageSpanCheck": "Asegurar que modificador y núcleo sean adyacentes y pertenezcan al mismo miembro de la coordinación.",
+          "grammarRecheck": "Confirmar paralelismo con el primer miembro, número plural y ausencia de una conjunción duplicada.",
+          "spellingCheck": "Verificar las terminaciones plurales de todas las palabras copiadas frente al pasaje.",
+          "competitorCheck": "Descartar los nombres de organismos y otros rasgos del entorno que están cerca, pero no forman la pareja introducida por la condición.",
+          "decisionRule": "Seleccionar la segunda condición literal de la coordinación solo si encaja semántica y gramaticalmente sin superar el límite.",
+          "repairAction": "Si hay dos candidatos, marcar la estructura condicional y las dos ramas coordinadas; extraer la rama que corresponde al hueco, no el efecto posterior."
+        },
+        {
+          "questionId": "sentence-wetlands-04",
+          "likelyMisread": "Puede copiarse una descripción estética cercana en vez del núcleo que completa la etiqueta conceptual usada por los planificadores.",
+          "predictedGrammarCategory": "Sustantivo abstracto o de masa que complete una denominación nominal tras un adjetivo.",
+          "wordLimitCheck": "Verificar que el núcleo necesario cabe por sí solo o con un único modificador, sin repetir el adjetivo ya incluido.",
+          "promptOnlyGuessRisk": "Medio porque la colocación del enunciado da una pista fuerte, pero invita a completar por vocabulario frecuente en lugar de copiar el texto.",
+          "evidenceSearch": "Localizar la atribución a los planificadores y observar la expresión exacta situada antes del contraste con una función meramente estética.",
+          "passageSpanCheck": "Comprobar que el candidato sigue de forma contigua al adjetivo correspondiente en la formulación del pasaje.",
+          "grammarRecheck": "Leer la etiqueta completa y confirmar que el hueco aporta el núcleo, no otro adjetivo ni una cláusula.",
+          "spellingCheck": "Copiar el sustantivo sin cambiar su forma derivativa ni adaptar su grafía al español.",
+          "competitorCheck": "Comparar la etiqueta funcional con la palabra del término contrastado y descartar la segunda aunque esté muy próxima.",
+          "decisionRule": "Usar el núcleo literal de la denominación atribuida a los planificadores, siempre que complete la oposición y respete el límite.",
+          "repairAction": "Si la respuesta nace de una colocación memorizada, regresar a la atribución explícita y copiar únicamente el núcleo que allí acompaña al adjetivo."
+        },
+        {
+          "questionId": "sentence-wetlands-05",
+          "likelyMisread": "El estudiante puede seleccionar la eficacia general del parque, aunque la oración pregunta por el proceso inmediato afectado por una obstrucción.",
+          "predictedGrammarCategory": "Sintagma nominal no personal que funcione como objeto directo de un verbo de reducción.",
+          "wordLimitCheck": "Contar el proceso nominal completo; si requiere modificador y núcleo, ambos deben mantenerse dentro de dos palabras.",
+          "promptOnlyGuessRisk": "Medio-alto porque varias consecuencias negativas del mantenimiento deficiente aparecen en la misma zona.",
+          "evidenceSearch": "Ir al párrafo de mantenimiento y distinguir la consecuencia directa de los canales obstruidos del efecto más amplio durante eventos extremos.",
+          "passageSpanCheck": "Revisar que el tramo esté unido en la cláusula causal y no combine el proceso inmediato con la consecuencia de la cláusula siguiente.",
+          "grammarRecheck": "Confirmar que el candidato puede ser limitado y que la oración no necesita artículo adicional para sonar completa.",
+          "spellingCheck": "Comprobar cada palabra contra el pasaje y conservar el número gramatical del núcleo.",
+          "competitorCheck": "Poner lado a lado el proceso físico inmediato y la valoración global de efectividad; decidir cuál es objeto del verbo en la fuente.",
+          "decisionRule": "Aceptar solo el objeto literal asociado a la obstrucción, no una inferencia sobre el rendimiento general del parque.",
+          "repairAction": "Si se eligió un efecto amplio, volver a la primera relación causal del párrafo y subrayar sujeto, verbo y objeto antes de extraer el tramo."
+        },
+        {
+          "questionId": "sentence-wetlands-06",
+          "likelyMisread": "Puede confundirse lo que las personas llegan a comprender con los elementos de acceso que facilitan esa comprensión.",
+          "predictedGrammarCategory": "Sustantivo singular abstracto exigido por el posesivo ya presente.",
+          "wordLimitCheck": "No repetir el posesivo ni añadir un artículo; contar únicamente el sustantivo o sintagma nominal extraído, con máximo de dos palabras.",
+          "promptOnlyGuessRisk": "Alto porque palabras generales como valor, función o diseño podrían completar el enunciado sin ser la formulación literal.",
+          "evidenceSearch": "Localizar la oración sobre recursos de acceso público y seguir el verbo de comprensión hasta su objeto en el pasaje.",
+          "passageSpanCheck": "Confirmar que el candidato aparece de manera contigua como objeto de comprender y no se reconstruye desde la oración posterior.",
+          "grammarRecheck": "Leer con el posesivo y comprobar que el resultado es un sintagma nominal natural, sin doble determinante.",
+          "spellingCheck": "Copiar la forma exacta del núcleo y revisar que no se haya creado un plural por analogía.",
+          "competitorCheck": "Distinguir el objeto de comprensión del resultado posterior de apoyo ciudadano y de los dispositivos físicos mencionados al inicio.",
+          "decisionRule": "Elegir el objeto literal de la comprensión solo si encaja tras el posesivo y no requiere palabras adicionales.",
+          "repairAction": "Si el candidato es una inferencia general, regresar al verbo equivalente a comprender, localizar su objeto gramatical y copiar ese tramo sin reformularlo."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:sentence-completion:sentence-library-makerspaces",
+      "passageBarrier": "medium",
+      "wordLimitRisk": "medium",
+      "promptCueRisk": "high",
+      "hintCueRisk": "low",
+      "shortcutRisks": [
+        "Escoger un ejemplo vistoso de equipamiento porque destaca en la lista, sin comprobar su posición exacta respecto del enunciado.",
+        "Completar con una colocación frecuente sobre aprendizaje o creatividad que no sea un tramo literal del texto.",
+        "Confundir ejemplos individuales con la afirmación general que la oración solicita."
+      ],
+      "transferValue": "Refuerza la lectura de listas, contrastes y ejemplos, además del control de formas verbales, sintagmas nominales y referentes abstractos bajo un límite estricto.",
+      "nextAction": "Practicar una tabla de tres columnas por ítem: ancla del enunciado, frase fuente en orden y control final de categoría gramatical, literalidad y dos palabras.",
+      "questionWalkthrough": [
+        {
+          "questionId": "sentence-makerspaces-01",
+          "likelyMisread": "El estudiante puede copiar el instrumento inmediatamente anterior al ancla del enunciado en vez del miembro de la lista que debe continuarla.",
+          "predictedGrammarCategory": "Sintagma nominal plural que nombre una herramienta y sea coordinable con el elemento ya escrito.",
+          "wordLimitCheck": "Contar con cuidado cualquier componente alfanumérico y el sustantivo; el tramo total debe quedar en una o dos palabras.",
+          "promptOnlyGuessRisk": "Alto porque el contexto permite inventar muchas herramientas típicas de un espacio práctico.",
+          "evidenceSearch": "Ir a la lista de herramientas del primer párrafo, ubicar el elemento repetido en el enunciado y revisar los miembros que siguen en la secuencia.",
+          "passageSpanCheck": "Verificar que todas las unidades del candidato son consecutivas dentro de un solo miembro de la enumeración.",
+          "grammarRecheck": "Confirmar paralelismo nominal, número adecuado y que la conjunción del enunciado no se duplica.",
+          "spellingCheck": "Copiar exactamente letras, cifras, mayúsculas y terminación plural tal como aparezcan en la lista.",
+          "competitorCheck": "Comparar los miembros adyacentes de la enumeración y descartar los que no ocupan la relación señalada por el enunciado.",
+          "decisionRule": "Elegir un miembro literal de la lista que complete la coordinación, respete el orden local y no exceda dos palabras.",
+          "repairAction": "Si se respondió por familiaridad con talleres, volver a la enumeración, señalar el ancla idéntica y extraer un único miembro contiguo."
+        },
+        {
+          "questionId": "sentence-makerspaces-02",
+          "likelyMisread": "Puede elegirse la actividad nueva que las bibliotecas facilitan, cuando el hueco pide la actividad anterior que se pretende superar.",
+          "predictedGrammarCategory": "Forma verbal en gerundio que complete una construcción después de una preposición.",
+          "wordLimitCheck": "No copiar el sustantivo que ya aparece después del hueco; contar solo la forma verbal o tramo verbal necesario.",
+          "promptOnlyGuessRisk": "Alto porque la oposición conceptual es predecible y favorece una paráfrasis no literal.",
+          "evidenceSearch": "Localizar la afirmación de los defensores y separar claramente el punto de partida de la nueva actividad presentada después del contraste.",
+          "passageSpanCheck": "Confirmar que la forma candidata aparece inmediatamente antes del sustantivo compartido y pertenece al mismo tramo continuo.",
+          "grammarRecheck": "Releer la secuencia con la preposición y comprobar que se requiere una forma nominal del verbo, no infinitivo ni sustantivo adicional.",
+          "spellingCheck": "Verificar la terminación verbal exacta en el pasaje y no normalizarla a otra variante.",
+          "competitorCheck": "Contrastar las dos acciones situadas a cada lado del cambio descrito y seleccionar la que corresponde a la posición anterior.",
+          "decisionRule": "Aceptar solo la forma literal que nombra el punto de partida y completa gramaticalmente la construcción ya impresa.",
+          "repairAction": "Si se escogió la actividad de llegada, dibujar una flecha desde antes hacia después en la frase fuente y volver al lado solicitado por el enunciado."
+        },
+        {
+          "questionId": "sentence-makerspaces-03",
+          "likelyMisread": "El estudiante puede confundir la capacitación segura en herramientas con el tipo de experiencia inicial que el personal debe facilitar.",
+          "predictedGrammarCategory": "Sintagma nominal plural modificado por el adjetivo ya presente.",
+          "wordLimitCheck": "Evitar repetir el adjetivo del enunciado; el complemento extraído debe contener como máximo dos palabras.",
+          "promptOnlyGuessRisk": "Medio-alto porque una expresión pedagógica habitual puede parecer natural aunque no sea literal.",
+          "evidenceSearch": "Buscar la oración que define cuándo funciona mejor el espacio y seguir la segunda acción coordinada del personal hasta su complemento.",
+          "passageSpanCheck": "Asegurar que el candidato es el complemento continuo de esa segunda acción, no palabras tomadas de ejemplos posteriores.",
+          "grammarRecheck": "Confirmar número plural, compatibilidad con el adjetivo y ausencia de una preposición duplicada.",
+          "spellingCheck": "Revisar la terminación plural y copiar sin modificar la forma léxica encontrada.",
+          "competitorCheck": "Distinguir entre el objeto de la introducción segura y el objeto de la conexión con una primera experiencia realizable.",
+          "decisionRule": "Escoger únicamente el núcleo literal de la segunda acción del personal si completa el sintagma ya iniciado.",
+          "repairAction": "Si se mezclaron las dos acciones, separar los verbos coordinados y escribir qué complemento depende de cada uno antes de volver a elegir."
+        },
+        {
+          "questionId": "sentence-makerspaces-04",
+          "likelyMisread": "Puede atribuirse el desuso solo al precio del equipo, aunque el hueco pregunta qué información de la comunidad fue desatendida.",
+          "predictedGrammarCategory": "Sustantivo plural abstracto modificado por un adjetivo ya escrito.",
+          "wordLimitCheck": "No repetir el modificador del enunciado y mantener el núcleo dentro del máximo de dos palabras.",
+          "promptOnlyGuessRisk": "Alto porque costos, necesidades y preferencias son causas plausibles, pero la tarea exige una formulación literal.",
+          "evidenceSearch": "Localizar la condición bajo la cual el equipo costoso queda sin uso y aislar el objeto de la falta de comprensión de la biblioteca.",
+          "passageSpanCheck": "Comprobar que el candidato aparece unido al modificador equivalente en la misma cláusula condicional.",
+          "grammarRecheck": "Confirmar que el hueco admite un núcleo plural y que la oración no queda con dos determinantes.",
+          "spellingCheck": "Copiar la terminación plural exacta y no sustituir el término por un sinónimo más frecuente.",
+          "competitorCheck": "Comparar el objeto de la falta de comprensión con otros factores de riesgo del párrafo, como costo o perturbación, y seguir la sintaxis causal.",
+          "decisionRule": "Elegir el núcleo literal de aquello que debe comprenderse, no otro riesgo cercano ni una inferencia sobre demanda.",
+          "repairAction": "Si el candidato procede de la lista de riesgos, volver a la cláusula introducida por la condición y localizar el objeto gramatical del verbo de comprensión."
+        },
+        {
+          "questionId": "sentence-makerspaces-05",
+          "likelyMisread": "El estudiante puede responder con las personas que buscan silencio o con el área general de lectura, sin atender al destino exacto de la separación.",
+          "predictedGrammarCategory": "Sintagma nominal plural que funcione como término de una preposición.",
+          "wordLimitCheck": "Incluir solo el sintagma que sigue a la preposición equivalente en el pasaje y confirmar que tiene una o dos palabras.",
+          "promptOnlyGuessRisk": "Alto porque varias expresiones para áreas silenciosas son semánticamente intercambiables fuera de una tarea de copia literal.",
+          "evidenceSearch": "Buscar la medida adoptada por las bibliotecas exitosas y seguir el verbo de separación hasta el segundo grupo de espacios.",
+          "passageSpanCheck": "Verificar que el candidato está contiguo después de la preposición de separación y no se reconstruye desde la frase anterior.",
+          "grammarRecheck": "Comprobar que el sustantivo es plural, se refiere a un lugar y encaja sin artículo adicional.",
+          "spellingCheck": "Revisar exactamente la grafía y el plural; no convertir el término del pasaje en una variante regional.",
+          "competitorCheck": "Contrastar el área silenciosa mencionada como necesidad con el término literal usado en la solución organizativa posterior.",
+          "decisionRule": "Seleccionar el término literal de la medida de separación, aunque otro sinónimo aparezca antes y parezca más familiar.",
+          "repairAction": "Si hay dos nombres de áreas, asignar uno al problema y otro a la medida; extraer el que depende directamente de la preposición en la medida."
+        },
+        {
+          "questionId": "sentence-makerspaces-06",
+          "likelyMisread": "Puede confundirse la finalidad práctica para cada visitante con la dimensión institucional que se amplía sin sustituir la lectura.",
+          "predictedGrammarCategory": "Sintagma nominal singular que complete un posesivo y nombre una función institucional.",
+          "wordLimitCheck": "No repetir el posesivo del enunciado; verificar que modificador y núcleo, si aparecen, sumen como máximo dos palabras.",
+          "promptOnlyGuessRisk": "Alto porque misión, servicio y función son inferencias naturales, pero solo la expresión literal es válida.",
+          "evidenceSearch": "Ir al último párrafo, localizar la negación de reemplazo y revisar la oración inmediata que define qué dimensión se amplía.",
+          "passageSpanCheck": "Confirmar que el tramo aparece junto como objeto del verbo de ampliación, no como síntesis creada a partir de ejemplos finales.",
+          "grammarRecheck": "Leer después del posesivo y comprobar que el sintagma es singular, completo y compatible con el contraste posterior.",
+          "spellingCheck": "Copiar cada palabra sin cambiar número, apóstrofo cercano ni forma derivativa.",
+          "competitorCheck": "Distinguir la dimensión institucional del valor del espacio y de los resultados personales enumerados a continuación.",
+          "decisionRule": "Aceptar solo el objeto literal del verbo de ampliación que mantiene el contraste con no sustituir los servicios tradicionales.",
+          "repairAction": "Si la respuesta resume el párrafo, volver al verbo de ampliación y extraer su objeto directo, sin reemplazarlo por una etiqueta propia."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:sentence-completion:sentence-night-markets",
+      "passageBarrier": "medium",
+      "wordLimitRisk": "high",
+      "promptCueRisk": "medium",
+      "hintCueRisk": "low",
+      "shortcutRisks": [
+        "Usar conocimientos sobre turismo y comercio para completar con una idea plausible que no aparece como tramo literal.",
+        "Confundir una condición de diseño con el resultado económico o social que produce.",
+        "Perder puntos por contar mal una expresión con guion o por copiar una palabra extra alrededor del tramo."
+      ],
+      "transferValue": "Practica el seguimiento de relaciones entre condición y efecto, la lectura de comparaciones locativas y el control de adverbios y expresiones con guion bajo el límite de dos palabras.",
+      "nextAction": "Resolver de nuevo ocultando las elecciones previas y registrar para cada hueco la categoría esperada, la oración fuente en orden y un descarte explícito del distractor más cercano.",
+      "questionWalkthrough": [
+        {
+          "questionId": "sentence-night-markets-01",
+          "likelyMisread": "El estudiante puede seleccionar la calle cerrada o la iluminación como requisito, aunque el hueco pide la instalación permanente que no resulta necesaria.",
+          "predictedGrammarCategory": "Sintagma nominal singular contable modificado por el adjetivo ya presente.",
+          "wordLimitCheck": "No repetir el adjetivo del enunciado y contar solo el núcleo o sintagma restante, con máximo de dos palabras.",
+          "promptOnlyGuessRisk": "Medio-alto porque varias instalaciones comerciales encajan por sentido general, pero la comparación exige copia literal.",
+          "evidenceSearch": "Localizar la primera explicación de cómo se crea la actividad nocturna y seguir la estructura de ausencia de requisito hasta su complemento.",
+          "passageSpanCheck": "Confirmar que el candidato aparece como una unidad contigua después de la idea de no requerir algo permanente.",
+          "grammarRecheck": "Comprobar que el resultado es un sintagma singular natural con el artículo y el adjetivo ya proporcionados.",
+          "spellingCheck": "Copiar la grafía exacta del núcleo y conservar la variante ortográfica empleada en el pasaje.",
+          "competitorCheck": "Distinguir los componentes temporales que permiten montar el mercado de la infraestructura duradera que el texto declara innecesaria.",
+          "decisionRule": "Elegir solo el complemento literal de la ausencia de requisito, sin sustituirlo por una categoría comercial equivalente.",
+          "repairAction": "Si se eligió un componente del montaje, volver a la cláusula de ausencia, identificar su objeto y extraer ese sintagma continuo."
+        },
+        {
+          "questionId": "sentence-night-markets-02",
+          "likelyMisread": "Puede confundirse lo que las empresas prueban con los costos que disminuyen gracias al periodo breve de venta.",
+          "predictedGrammarCategory": "Sintagma nominal plural que funcione como objeto directo de un verbo de prueba.",
+          "wordLimitCheck": "Incluir el modificador solo si forma parte del tramo literal y confirmar que el objeto completo no exceda dos palabras.",
+          "promptOnlyGuessRisk": "Alto porque precios, demanda e ideas son objetos plausibles en un contexto empresarial.",
+          "evidenceSearch": "Buscar la frase sobre el periodo breve y separar sus dos efectos coordinados: reducción de costos y posibilidad de experimentar comercialmente.",
+          "passageSpanCheck": "Verificar que el candidato está unido como objeto del segundo verbo y no combina palabras de los dos efectos.",
+          "grammarRecheck": "Confirmar número plural y que el verbo del enunciado acepta el sintagma sin artículo añadido.",
+          "spellingCheck": "Revisar la terminación plural y copiar el posible modificador exactamente.",
+          "competitorCheck": "Comparar el objeto del verbo de probar con el objeto del verbo de reducir y descartar el que pertenece al primer efecto.",
+          "decisionRule": "Aceptar únicamente el objeto literal de la actividad experimental atribuida a las pequeñas empresas.",
+          "repairAction": "Si se respondió con un beneficio financiero, dividir la oración fuente en sus dos verbos y emparejar cada verbo con su propio objeto."
+        },
+        {
+          "questionId": "sentence-night-markets-03",
+          "likelyMisread": "El estudiante puede quedarse con la comparación del estacionamiento aislado en vez de identificar la ubicación asociada con mayor accesibilidad.",
+          "predictedGrammarCategory": "Sintagma nominal singular contable que complete una preposición locativa después de un artículo.",
+          "wordLimitCheck": "Contar el nombre de la ubicación con cualquier modificador imprescindible; debe mantenerse en una o dos palabras.",
+          "promptOnlyGuessRisk": "Alto porque muchas ubicaciones céntricas podrían hacer razonable la oración sin coincidir con el texto.",
+          "evidenceSearch": "Localizar la comparación entre dos ubicaciones y asignar cuál se asocia con facilidad de llegada y cuál con aislamiento.",
+          "passageSpanCheck": "Asegurar que el candidato sea el lugar contiguo de la primera rama comparativa, no una mezcla de ambas ubicaciones.",
+          "grammarRecheck": "Confirmar singularidad, compatibilidad con el artículo del enunciado y ausencia de una preposición repetida.",
+          "spellingCheck": "Copiar exactamente ambas unidades si el lugar es compuesto y revisar el número del núcleo.",
+          "competitorCheck": "Contrastar las dos ubicaciones explícitas y elegir según el predicado de accesibilidad, no por cuál parece más memorable.",
+          "decisionRule": "Seleccionar el lugar literal vinculado a la mayor facilidad de llegada y descartar el término de comparación aislado.",
+          "repairAction": "Si se invirtieron las ramas, trazar una tabla ubicación-predicado y volver a la rama que lleva el juicio de accesibilidad."
+        },
+        {
+          "questionId": "sentence-night-markets-04",
+          "likelyMisread": "Puede elegirse un servicio que los organizadores deben proporcionar o una molestia que deben limitar, aunque el hueco pide aquello que debe permanecer despejado.",
+          "predictedGrammarCategory": "Sintagma nominal plural que funcione como objeto directo del verbo causativo ya presente.",
+          "wordLimitCheck": "Mantener el sintagma en una o dos palabras y no copiar el adjetivo que ya aparece después del hueco.",
+          "promptOnlyGuessRisk": "Medio-alto porque seguridad, accesos y calles son complementos plausibles sin evidencia literal.",
+          "evidenceSearch": "Buscar la enumeración de medidas de diseño y localizar el miembro construido con la idea de conservar algo despejado.",
+          "passageSpanCheck": "Comprobar que modificador y núcleo son contiguos dentro del mismo miembro de la lista de medidas.",
+          "grammarRecheck": "Confirmar número plural, función de objeto y concordancia semántica con el predicativo ya escrito.",
+          "spellingCheck": "Revisar ambas terminaciones y copiar el plural exacto sin añadir guiones o artículos.",
+          "competitorCheck": "Comparar los objetos de limitar, proporcionar y mantener; escoger el que depende del tercer verbo, no otro elemento de la enumeración.",
+          "decisionRule": "Elegir el objeto literal de la acción de mantener despejado, respetando su ubicación y el límite.",
+          "repairAction": "Si se tomó otro miembro de la lista, numerar los tres verbos, subrayar sus objetos y seleccionar el emparejamiento del verbo presente en el enunciado."
+        },
+        {
+          "questionId": "sentence-night-markets-05",
+          "likelyMisread": "El estudiante puede completar con una razón para regresar o con una atracción, cuando el hueco modifica la duración de la visita.",
+          "predictedGrammarCategory": "Adverbio comparativo que modifique el verbo de permanencia.",
+          "wordLimitCheck": "Comprobar que la forma adverbial sola satisface el sentido y no copiar palabras vecinas que ya están en el enunciado.",
+          "promptOnlyGuessRisk": "Medio porque la categoría gramatical restringe mucho, pero aún es fácil escoger un adverbio natural no literal.",
+          "evidenceSearch": "Localizar la oración que enumera atracciones adicionales y seguir el primer efecto atribuido a ellas hasta su modificador de duración.",
+          "passageSpanCheck": "Confirmar que el candidato aparece inmediatamente asociado al verbo de permanencia y constituye un tramo continuo.",
+          "grammarRecheck": "Verificar que la forma funciona como adverbio comparativo y no como adjetivo de un sustantivo omitido.",
+          "spellingCheck": "Copiar la forma comparativa exacta y revisar que no se haya añadido una terminación o palabra de grado.",
+          "competitorCheck": "Distinguir el efecto sobre la duración de la visita del efecto posterior sobre el regreso y sus motivos.",
+          "decisionRule": "Aceptar solo el modificador literal de duración que completa el verbo y cabe sin material adicional.",
+          "repairAction": "Si se eligió una razón o atracción, preguntar qué clase de palabra modifica directamente el verbo y volver a ese punto de la oración fuente."
+        },
+        {
+          "questionId": "sentence-night-markets-06",
+          "likelyMisread": "Puede confundirse una gran asistencia inicial con evidencia suficiente de continuidad, reproduciendo justamente la inferencia que el pasaje cuestiona.",
+          "predictedGrammarCategory": "Sintagma nominal singular abstracto, posiblemente con un modificador compuesto con guion.",
+          "wordLimitCheck": "Aplicar la regla del paquete: una expresión unida por guion cuenta como una palabra; sumar luego el núcleo y no exceder dos.",
+          "promptOnlyGuessRisk": "Alto porque éxito, crecimiento y viabilidad son conclusiones intuitivas, pero la tarea exige el término literal y su alcance temporal.",
+          "evidenceSearch": "Ir a la última oración y aislar el contraste entre una impresión de la primera fecha y la conclusión duradera que no puede establecerse sin datos.",
+          "passageSpanCheck": "Verificar que el modificador temporal y el núcleo, si ambos se usan, aparecen juntos y no se construyen desde partes separadas.",
+          "grammarRecheck": "Leer después del verbo de prueba y confirmar que el sintagma nominal es singular, completo y expresa una conclusión, no un proceso.",
+          "spellingCheck": "Copiar exactamente cualquier guion y no separar, pluralizar ni reformular el tramo.",
+          "competitorCheck": "Contrastar las señales inmediatas de actividad con la conclusión de horizonte extendido; evitar otros indicadores enumerados como datos de seguimiento.",
+          "decisionRule": "Elegir únicamente el sintagma literal de la conclusión duradera que el evento inicial no demuestra, contando correctamente el guion.",
+          "repairAction": "Si se eligió un indicador de seguimiento, regresar a la oposición final, localizar el objeto del verbo de confundir o tomar por y revisar su forma exacta."
+        }
+      ]
+    }
+  ]
+}

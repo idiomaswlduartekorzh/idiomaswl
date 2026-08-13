@@ -1,0 +1,274 @@
+{
+  "schemaVersion": "ielts-reading-matching-features-expert-first-pass.v1",
+  "reviewer": {
+    "reviewerRunId": "matching-features-clean-review-2026-08-09-a",
+    "reviewedAt": "2026-08-09T13:47:06Z",
+    "blindPacketSha256": "8bcfaa19f0ee6dd9137677e9474c668034d844c78aa73a6fb382184f8e4a41cc",
+    "humanSignature": false,
+    "sourceContext": "blind-review-packet-only",
+    "notes": "Independent first-pass adjudication based only on the blind review packet; no external sources, answer keys, explanations, or implementation context were consulted."
+  },
+  "records": [
+    {
+      "assetId": "formative:matching-features:mf-urban-farming",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "passageTitleCueRisk": "low",
+        "featureDescriptionCueRisk": "high",
+        "notes": "The passage is coherent and keeps four actors distinct, but most statements are close, single-sentence paraphrases and the feature descriptions disclose each actor's defining domain. It works as introductory practice, while offering less inference and distractor pressure than a strong IELTS Academic Matching Features set."
+      },
+      "questions": [
+        {
+          "questionId": "mf-urban-farming-01",
+          "selectedFeatureId": "B",
+          "evidenceQuotes": [
+            "The network's coordinator, Amara Singh, says the strongest benefit is not the harvest itself, but the way gardening makes biology, climate and nutrition visible in daily lessons."
+          ],
+          "association": "Actor/claim: Riverside School Network presents gardening chiefly as a way to make biology, climate and nutrition observable in lessons.",
+          "closestCompetingFeatureId": "C",
+          "competitorFailure": "Vacant Lot Alliance also gives gardening a non-food purpose, but that purpose is neighborhood stewardship and reducing illegal dumping, not observation of academic subjects.",
+          "ambiguity": "none",
+          "reasoning": "The statement paraphrases 'makes biology, climate and nutrition visible' as making academic subjects easier to observe, and 'mainly' is supported by the explicit contrast with the harvest."
+        },
+        {
+          "questionId": "mf-urban-farming-02",
+          "selectedFeatureId": "A",
+          "evidenceQuotes": [
+            "The group does not claim that rooftops can feed an entire city. Instead, it presents roof farming as a practical supplement where land prices make ground gardens unrealistic."
+          ],
+          "association": "Actor/claim: Green Roof Collective explicitly limits roof farming to a supplementary rather than city-complete food role.",
+          "closestCompetingFeatureId": "D",
+          "competitorFailure": "Metroponics Lab also proposes an urban production model, but its claim concerns predictable year-round supply and does not characterize the model as merely supplementary.",
+          "ambiguity": "none",
+          "reasoning": "The opposition between not feeding an entire city and being 'a practical supplement' directly encodes the complete-solution versus supplement distinction."
+        },
+        {
+          "questionId": "mf-urban-farming-03",
+          "selectedFeatureId": "C",
+          "evidenceQuotes": [
+            "Its volunteers argue that the gardens reduce illegal dumping and give residents a reason to care for spaces that previously felt unsafe."
+          ],
+          "association": "Actor/result: Vacant Lot Alliance links its gardens to less illegal dumping and renewed care for previously neglected spaces.",
+          "closestCompetingFeatureId": "A",
+          "competitorFailure": "Green Roof Collective uses underused roof space, but the passage does not link its plots to illegal dumping, unsafe areas, or misuse of abandoned land.",
+          "ambiguity": "none",
+          "reasoning": "'Reducing misuse' is a compact paraphrase of reducing illegal dumping, and 'abandoned spaces' points to the alliance's neglected lots."
+        },
+        {
+          "questionId": "mf-urban-farming-04",
+          "selectedFeatureId": "D",
+          "evidenceQuotes": [
+            "Its engineers emphasize predictable production: plants grow under controlled light and nutrient conditions, so harvests are less affected by weather."
+          ],
+          "association": "Actor/mechanism/result: Metroponics Lab uses controlled light and nutrients to reduce weather's effect on harvests.",
+          "closestCompetingFeatureId": "A",
+          "competitorFailure": "Green Roof Collective also produces crops in a non-ground setting, but its rooftop plots are not described as environmentally controlled or protected from weather variability.",
+          "ambiguity": "none",
+          "reasoning": "The statement preserves both the causal mechanism, controlled growing conditions, and the stated result, reduced vulnerability to weather."
+        },
+        {
+          "questionId": "mf-urban-farming-05",
+          "selectedFeatureId": "A",
+          "evidenceQuotes": [
+            "Its founder, Lina Torres, argued that unused roof space could supply herbs and salad leaves to nearby restaurants without competing for street-level land."
+          ],
+          "association": "Actor/goal: Green Roof Collective uses roofs so food production does not compete for land at street level.",
+          "closestCompetingFeatureId": "D",
+          "competitorFailure": "Metroponics Lab grows indoors near transit hubs, but the passage does not say that avoiding competition for street-level land is its goal.",
+          "ambiguity": "none",
+          "reasoning": "The wording 'tries to avoid competition' is directly supported by the founder's claim that roof use supplies produce 'without competing' for street-level land."
+        },
+        {
+          "questionId": "mf-urban-farming-06",
+          "selectedFeatureId": "C",
+          "evidenceQuotes": [
+            "The alliance negotiates temporary use agreements with property owners and turns neglected lots into community gardens."
+          ],
+          "association": "Actor/prerequisite/action: Vacant Lot Alliance negotiates temporary-use agreements with owners in connection with converting neglected lots.",
+          "closestCompetingFeatureId": "A",
+          "competitorFailure": "Green Roof Collective converts commercial roofs, but no agreement or negotiation is stated as a prerequisite for that conversion.",
+          "ambiguity": "none",
+          "reasoning": "The statement generalizes 'temporary use agreements' and preserves their role before or as part of transforming the lots into gardens."
+        },
+        {
+          "questionId": "mf-urban-farming-07",
+          "selectedFeatureId": "D",
+          "evidenceQuotes": [
+            "Critics point out that such systems require energy and technical maintenance, but the company says the model is useful where year-round supply matters more than low-tech accessibility."
+          ],
+          "association": "Actor/criticism: Metroponics Lab's system is criticized for its requirement for technical maintenance, alongside energy use.",
+          "closestCompetingFeatureId": "A",
+          "competitorFailure": "Green Roof Collective's model is constrained by where ground gardens are unrealistic, but the passage identifies no need for substantial technical support and attributes no such criticism to it.",
+          "ambiguity": "none",
+          "reasoning": "'May need significant technical support' accurately paraphrases the expressly criticized requirement for technical maintenance."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-features:mf-memory-research",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "passageTitleCueRisk": "low",
+        "featureDescriptionCueRisk": "high",
+        "notes": "The five research strands are clear and the unused-option format is plausible, but each statement maps to an isolated sentence with little cross-paragraph competition. The feature descriptions effectively summarize the decisive associations, so the set is useful for basic technique but under-challenges IELTS-level discrimination."
+      },
+      "questions": [
+        {
+          "questionId": "mf-memory-01",
+          "selectedFeatureId": "B",
+          "evidenceQuotes": [
+            "The lab found that people often adopted details they had only heard during discussion, especially when the other speaker sounded confident."
+          ],
+          "association": "Actor/result/condition: Moreno Lab found that discussion can introduce unseen details into memory, particularly when the source sounds confident.",
+          "closestCompetingFeatureId": "A",
+          "competitorFailure": "Dr. Helen Ward also studied recall after an experience, but her participants generated predictions themselves; they were not accepting unseen details from confident social input.",
+          "ambiguity": "none",
+          "reasoning": "'Accept details they did not originally see' paraphrases adopting details heard only in discussion, while the confidence condition is explicitly retained."
+        },
+        {
+          "questionId": "mf-memory-02",
+          "selectedFeatureId": "C",
+          "evidenceQuotes": [
+            "Rather than testing complex digital systems, his project used simple visual routines: a tray by the door for keys, coloured stickers on medication boxes and a checklist beside the kettle."
+          ],
+          "association": "Actor/method: Professor Kenji Sato deliberately used simple visual household routines instead of complex digital systems.",
+          "closestCompetingFeatureId": "E",
+          "competitorFailure": "Open Notes Group also examines a low-tech external aid, but its notes are used in quizzes and are not ordinary household cues contrasted with advanced technology.",
+          "ambiguity": "none",
+          "reasoning": "The contrast between 'complex digital systems' and a tray, stickers, and a kettle-side checklist directly supports both halves of the statement."
+        },
+        {
+          "questionId": "mf-memory-03",
+          "selectedFeatureId": "A",
+          "evidenceQuotes": [
+            "Her team found that participants remembered routes better when they paused at decision points and described what they expected to see next."
+          ],
+          "association": "Actor/method/result: Dr. Helen Ward found that pausing at route decisions to predict the next view improved route memory.",
+          "closestCompetingFeatureId": "D",
+          "competitorFailure": "Sleep Recall Study also links the timing of an action to better recall, but the action is vocabulary review around sleep, not pausing to anticipate a location.",
+          "ambiguity": "none",
+          "reasoning": "'Anticipate the next location' paraphrases describing what participants expected to see next, and improved recall restates their better route memory."
+        },
+        {
+          "questionId": "mf-memory-04",
+          "selectedFeatureId": "D",
+          "evidenceQuotes": [
+            "Students who reviewed new words shortly before sleep and again the next morning remembered more than those who completed both reviews during the afternoon."
+          ],
+          "association": "Study/timing/result: Sleep Recall Study associates reviews placed before and after sleep with greater vocabulary recall.",
+          "closestCompetingFeatureId": "A",
+          "competitorFailure": "Dr. Helen Ward also found that the timing and placement of an encoding action mattered, but her result concerns predictions at route decision points and makes no link to sleep.",
+          "ambiguity": "none",
+          "reasoning": "The comparison isolates review timing around sleep as the distinguishing condition associated with remembering more."
+        },
+        {
+          "questionId": "mf-memory-05",
+          "selectedFeatureId": "E",
+          "evidenceQuotes": [
+            "Instead, students with well-organized notes tended to review more actively before class because they wanted their notes to be usable under time pressure."
+          ],
+          "association": "Group/result: Open Notes Group found that permission to use notes was associated with more active review in preparation for quizzes.",
+          "closestCompetingFeatureId": "C",
+          "competitorFailure": "Professor Kenji Sato also studied support tools, but his aids reduce remembering at the moment of action rather than motivating more active advance preparation.",
+          "ambiguity": "none",
+          "reasoning": "The allowed support tool is the notes, and the observed preparation effect is the students' more active pre-class review so those notes would work under time pressure."
+        },
+        {
+          "questionId": "mf-memory-06",
+          "selectedFeatureId": "A",
+          "evidenceQuotes": [
+            "Dr. Helen Ward studied how people remember directions after walking through unfamiliar buildings."
+          ],
+          "association": "Actor/research focus: Dr. Helen Ward studies memory for directions after movement through unfamiliar indoor buildings.",
+          "closestCompetingFeatureId": "B",
+          "competitorFailure": "Moreno Lab also tested memory after participants observed an event, but its focus is socially induced false details, not navigation through indoor spaces.",
+          "ambiguity": "none",
+          "reasoning": "Remembering directions after walking through buildings is a direct instance of remembering routes through indoor spaces."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-features:mf-transport-policies",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "passageTitleCueRisk": "low",
+        "featureDescriptionCueRisk": "high",
+        "notes": "The passage offers several policy-benefit-limitation patterns and credible municipal vocabulary, but the statements closely preserve the order and logic of one sentence per policy. Feature descriptions name nearly every decisive mechanism, making the task substantially more cued and less demanding than a robust IELTS Academic item set."
+      },
+      "questions": [
+        {
+          "questionId": "mf-transport-01",
+          "selectedFeatureId": "A",
+          "evidenceQuotes": [
+            "City officials reported that average bus journey times fell, but shop owners complained that loading spaces became harder to access."
+          ],
+          "association": "Policy/result/drawback: Rivergate Bus Priority Plan shortened bus journeys while making delivery loading access more difficult.",
+          "closestCompetingFeatureId": "E",
+          "competitorFailure": "East Market Pedestrian Zone also produced an access complaint after a transport restriction, but the affected access was older residents' walk from taxi drop-off points, and no public-transport travel-time gain is reported.",
+          "ambiguity": "none",
+          "reasoning": "The statement combines both sides of the passage's explicit contrast: falling bus journey times and harder access to loading spaces."
+        },
+        {
+          "questionId": "mf-transport-02",
+          "selectedFeatureId": "B",
+          "evidenceQuotes": [
+            "The programme did not greatly change total traffic volume, but hospital data showed fewer serious injuries among pedestrians and cyclists in the treated areas."
+          ],
+          "association": "Policy/result/limitation: Northbridge Safe Streets Programme coincided with fewer serious injuries despite little change in total traffic volume.",
+          "closestCompetingFeatureId": "E",
+          "competitorFailure": "East Market Pedestrian Zone also changes street access and restricts cars, but the passage reports neither injury reduction nor a finding that traffic volume remained broadly unchanged.",
+          "ambiguity": "none",
+          "reasoning": "'Fewer severe injuries' is an exact semantic match for fewer serious injuries, and the unchanged-volume qualification is explicitly stated."
+        },
+        {
+          "questionId": "mf-transport-03",
+          "selectedFeatureId": "C",
+          "evidenceQuotes": [
+            "Critics noted that the project helped smartphone users first, while cash users had to wait for a later phase."
+          ],
+          "association": "Policy/distributional limitation: Metro Card Integration Project gave smartphone users earlier benefits than cash users.",
+          "closestCompetingFeatureId": "E",
+          "competitorFailure": "East Market Pedestrian Zone also raised unequal-access concerns, but those concerned walking distance for older taxi passengers, not an initial technology-versus-payment-method rollout gap.",
+          "ambiguity": "none",
+          "reasoning": "The contrast between smartphone users helped first and cash users waiting directly encodes unequal initial benefit by technology or payment method."
+        },
+        {
+          "questionId": "mf-transport-04",
+          "selectedFeatureId": "D",
+          "evidenceQuotes": [
+            "The trial reduced fuel use in city departments, but managers said the charging schedule had to be planned carefully because some vehicles returned late from maintenance jobs."
+          ],
+          "association": "Policy/operational constraint: Hillside Electric Fleet Trial required careful charging plans because work vehicles could return late.",
+          "closestCompetingFeatureId": "A",
+          "competitorFailure": "Rivergate Bus Priority Plan also required time-window planning, but that adjustment managed shop deliveries, not the late return and charging of vehicles used for work tasks.",
+          "ambiguity": "none",
+          "reasoning": "The statement retains the stated causal chain from late returns after maintenance jobs to the need for careful scheduling."
+        },
+        {
+          "questionId": "mf-transport-05",
+          "selectedFeatureId": "E",
+          "evidenceQuotes": [
+            "After public meetings, the city added a small accessible shuttle around the zone."
+          ],
+          "association": "Policy/response: East Market Pedestrian Zone added an accessible shuttle after access concerns about older residents were raised.",
+          "closestCompetingFeatureId": "A",
+          "competitorFailure": "Rivergate Bus Priority Plan likewise changed after stakeholder complaints, but it added delivery windows rather than a new passenger service addressing older residents' access.",
+          "ambiguity": "none",
+          "reasoning": "The immediately preceding concern is that older residents faced longer walks from taxi drop-off points; the accessible shuttle is the subsequently added service."
+        },
+        {
+          "questionId": "mf-transport-06",
+          "selectedFeatureId": "C",
+          "evidenceQuotes": [
+            "It was designed for convenience, especially for passengers who used more than one mode in a single journey."
+          ],
+          "association": "Policy/goal: Metro Card Integration Project was designed to make single journeys involving multiple modes more convenient.",
+          "closestCompetingFeatureId": "A",
+          "competitorFailure": "Rivergate Bus Priority Plan improves one mode's journey times, but it neither combines modes nor targets passengers making multimodal trips.",
+          "ambiguity": "none",
+          "reasoning": "'Combine several modes in one trip' directly paraphrases using more than one mode in a single journey."
+        }
+      ]
+    }
+  ]
+}

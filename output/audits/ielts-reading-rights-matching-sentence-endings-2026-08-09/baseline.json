@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "ielts-reading-matching-sentence-endings-baseline.v1",
+  "capturedAt": "2026-08-09T15:04:09Z",
+  "scope": {
+    "unit": "F0.2b.7",
+    "format": "matching-sentence-endings",
+    "passages": 3,
+    "questions": 18,
+    "endingCandidates": 24
+  },
+  "assets": [
+    {
+      "assetId": "formative:matching-sentence-endings:mse-microclimates",
+      "setId": "mse-microclimates",
+      "title": "Matching Sentence Endings practice: urban microclimates",
+      "passageTitle": "How small design choices change city heat",
+      "wordCount": 274,
+      "endingCount": 8,
+      "questionCount": 6,
+      "unusedEndingCount": 2,
+      "endingIds": ["A", "B", "C", "D", "E", "F", "G", "H"],
+      "questionIds": [
+        "mse-microclimates-01",
+        "mse-microclimates-02",
+        "mse-microclimates-03",
+        "mse-microclimates-04",
+        "mse-microclimates-05",
+        "mse-microclimates-06"
+      ],
+      "sourceObjectSha256": "932ccefb0130c9fb9fa030f3eee1e21948efcb4da58ed537fde24049fae21f05",
+      "passageSha256": "ac2396cf723727f640ba86eb44f7becb08ab829777aedc08632f8ea8af18318e"
+    },
+    {
+      "assetId": "formative:matching-sentence-endings:mse-food-waste",
+      "setId": "mse-food-waste",
+      "title": "Matching Sentence Endings practice: reducing food waste",
+      "passageTitle": "Why food waste policies need more than one solution",
+      "wordCount": 263,
+      "endingCount": 8,
+      "questionCount": 6,
+      "unusedEndingCount": 2,
+      "endingIds": ["A", "B", "C", "D", "E", "F", "G", "H"],
+      "questionIds": [
+        "mse-food-waste-01",
+        "mse-food-waste-02",
+        "mse-food-waste-03",
+        "mse-food-waste-04",
+        "mse-food-waste-05",
+        "mse-food-waste-06"
+      ],
+      "sourceObjectSha256": "1682b3ff5b6fac272eb80a77d5cecda5307d98d24a690c912f19a42afcc92aa4",
+      "passageSha256": "3c0f8568ccb8244132db25509b08180bc0b6d97e88a0182c61f92502bb8332e9"
+    },
+    {
+      "assetId": "formative:matching-sentence-endings:mse-coastal-libraries",
+      "setId": "mse-coastal-libraries",
+      "title": "Matching Sentence Endings practice: coastal libraries",
+      "passageTitle": "Libraries as climate information hubs",
+      "wordCount": 242,
+      "endingCount": 8,
+      "questionCount": 6,
+      "unusedEndingCount": 2,
+      "endingIds": ["A", "B", "C", "D", "E", "F", "G", "H"],
+      "questionIds": [
+        "mse-libraries-01",
+        "mse-libraries-02",
+        "mse-libraries-03",
+        "mse-libraries-04",
+        "mse-libraries-05",
+        "mse-libraries-06"
+      ],
+      "sourceObjectSha256": "87e771a35de1ad2b132f30a3c61abaf60471fdd0636034d977376d6aed05ebad",
+      "passageSha256": "50fff086a9cf78142f742a48679aa252e2d8a680e107d26d6fb9b078d00b29bb"
+    }
+  ],
+  "structuralRisk": {
+    "endingSelectionFrequency": {"A": 3, "B": 2, "C": 2, "D": 2, "E": 3, "F": 1, "G": 2, "H": 3},
+    "globalConcatenatedMaxSameEndingRun": 1,
+    "perSetMaxSameEndingRun": 1,
+    "setsWithStrictlyAscendingStoredSelectionOrder": 3,
+    "sameQuestionPositionAcrossSetsModalEnding": {
+      "eligible": 18,
+      "positions": 6,
+      "hits": 15
+    },
+    "questionPositionModuloEndingCount": {
+      "eligible": 18,
+      "tiesOrAbstentions": 0,
+      "hits": 6
+    },
+    "highestSentenceStartEndingLexicalOverlapPredictsSelection": {
+      "eligible": 9,
+      "tiesOrAbstentions": 9,
+      "hits": 2
+    },
+    "longestEndingPredictsSelection": {
+      "eligible": 12,
+      "tiesOrAbstentions": 6,
+      "hits": 2
+    },
+    "visibleEndingConnectorDistribution": {
+      "because": 9,
+      "by": 3,
+      "only when": 3,
+      "when": 3,
+      "although": 1,
+      "if": 1,
+      "unless": 1,
+      "as": 1,
+      "without": 1,
+      "before": 1
+    },
+    "storedSelectionReuse": {
+      "declaredReusePolicy": "not-declared",
+      "setsWithReuse": 0,
+      "reusedAssignments": 0,
+      "usedEndingsPerSet": [6, 6, 6],
+      "unusedEndingsPerSet": [2, 2, 2]
+    },
+    "passageOrderViolationQuestionIds": [
+      "mse-food-waste-06",
+      "mse-libraries-06"
+    ],
+    "surfaceShortcutReviewRequired": true,
+    "preResponseTrapExposure": {
+      "questionsWithVisibleTrapControl": 18,
+      "questionsWhoseTrapNamesAnEndingLetter": 8
+    }
+  },
+  "runtimeAndAccessibilityBaseline": {
+    "clientSideStoredSelectionsPresent": true,
+    "selectionLocksImmediately": true,
+    "correctnessAndExplanationShownImmediately": true,
+    "sameEndingCanBeSelectedForMultipleQuestionsInUi": true,
+    "attemptStatePersisted": false,
+    "preResponseTrapDisclosureAvailable": true,
+    "nativeSelectAccessibleName": false,
+    "progressIndicatorHasProgrammaticRoleNameAndValue": false,
+    "feedbackHasLiveRegion": false,
+    "keyboardNativeSelectOperable": true,
+    "uiUxStaticReviewApplicable": true,
+    "playwrightApplicableToScaffoldOnlyDelta": false,
+    "playwrightBecomesApplicableOnLearnerFacingOrRuntimeDrift": true
+  },
+  "learnerFacingSourceSha256": {
+    "src/data/practica-exams/seo-catalog.ts": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de",
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings/page.tsx": "e2d13b6b480223a9b71c415dffd062ca0aca54d3250a4ee60ff0b717cd05217e",
+    "src/components/exam-practice/MatchingSentenceEndingsEngine.tsx": "b5adf8a2f67ca1547ca8dc66302002d45874bfe6f461f6e0ef03218385e43e62",
+    "src/components/exam-practice/MatchingSentenceEndingsPassageBank.tsx": "09f3e16a355232f673e73328f1dc0165a46a38df39f8f3bcc8925aaf0012e3bb",
+    "src/components/exam-practice/OfficialStrategyCard.tsx": "b4f575bd4bc3655f5f0682404f3d937020b4cfd3d54b42adac758647d9133e3e",
+    "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx": "73d3b725c68c0ed193ceba23ebddca3fec7978f6e84712c99b3dddc190443711",
+    "src/components/exam-practice/StructuredData.tsx": "3e59a611e4d2bac9ce5994bdbd4ba6303407a5ddf82b26a340efe1f3c2b788d8"
+  },
+  "routeObjectSha256": "4d6545dbdb29e4aaddef73633653a8da5efe0faca7cd7f81a26ce05914aaeb6b",
+  "renderDependencyClosureSha256": {
+    "src/app/(site)/layout.tsx": "b427054c94eb33f0177c05c241a2b3920c76e2b7497ad3822b7f379f8b9f2a11",
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings/page.tsx": "e2d13b6b480223a9b71c415dffd062ca0aca54d3250a4ee60ff0b717cd05217e",
+    "src/app/globals.css": "60efb283eab56b59072c8e43ac7469a3c34977346079600b525b19556207915d",
+    "src/app/layout.tsx": "03d06f0aba4ac802fd9bf69b63229af511a8f4daa132d405dfc36a1a19f01dda",
+    "src/components/SiteNav.tsx": "9114393b428d703d41f84807e6322527c2f79036e4fe05eb8b43cd1238e4307b",
+    "src/components/SiteSkipLink.tsx": "d0c3ca1c465744e16e756623c704834083518acc1c84d83f09b581071cef967e",
+    "src/components/ThemeProvider.tsx": "0bfdbb8105d100202331d5409c3b3cf0cd8ae8a0d231c03ec93c8836ca06c340",
+    "src/components/WhatsAppFloat.tsx": "762256aadcff27912dacf99bb56d6fc6222ad0e54104910a545e8954b0a02255",
+    "src/components/exam-practice/MatchingSentenceEndingsEngine.tsx": "b5adf8a2f67ca1547ca8dc66302002d45874bfe6f461f6e0ef03218385e43e62",
+    "src/components/exam-practice/MatchingSentenceEndingsPassageBank.tsx": "09f3e16a355232f673e73328f1dc0165a46a38df39f8f3bcc8925aaf0012e3bb",
+    "src/components/exam-practice/OfficialStrategyCard.tsx": "b4f575bd4bc3655f5f0682404f3d937020b4cfd3d54b42adac758647d9133e3e",
+    "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx": "73d3b725c68c0ed193ceba23ebddca3fec7978f6e84712c99b3dddc190443711",
+    "src/components/exam-practice/StructuredData.tsx": "3e59a611e4d2bac9ce5994bdbd4ba6303407a5ddf82b26a340efe1f3c2b788d8",
+    "src/data/practica-exams/seo-catalog.ts": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de",
+    "src/lib/supabase/client.ts": "acb02d5d75dad866b04380241e3a40623de46f098ee98ff017be8138c0d076e4"
+  },
+  "nextUnit": {
+    "unit": "F0.2b.8",
+    "format": "sentence-completion",
+    "sourceSha256": {
+      "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/sentence-completion/page.tsx": "66b94b11b91e0b8042ea39233136cadba4e666fd63c3d30912deed60c8062986",
+      "src/components/exam-practice/SummaryCompletionPracticeEngine.tsx": "cae94b947ffc61e112fbe13269ad48e1ee121ca7faeccc8b370d2b124893de98",
+      "src/components/exam-practice/SummaryCompletionPassageBank.tsx": "54a78799014098dd5f159f63bf654ad12181042be40182ab8381bfc1e51a3c58"
+    },
+    "routeObjectSha256": "76c8f69fd90f898a61b21099c480ebf694d03af4db589fbff5002e9020215585",
+    "sourceObjectSha256": {
+      "sentence-wetland-parks": "42f7976e179acf1b8afec86285530ad9b5a5a26aba13ca89c7ad82c86bbf22db",
+      "sentence-library-makerspaces": "8f2b278d1b180a17a78f9aa3057364ebf3a8e401ff6b3b529ac109f8936da6bc",
+      "sentence-night-markets": "b0434ae0c3ed919b06a0c256586f1753d299b260bbe5aa34c2813ed788622ff3"
+    }
+  },
+  "interpretation": "Frozen pre-unit learner-facing and static render identity for F0.2b.7. The audit baseline stores identities, counts and aggregate structural measurements but no question-to-ending assignment, explanation or trap text. Hashes cover content that contains runtime keys without disclosing those keys here. Static UI/UX review records existing risks; Playwright is not applicable to this audit-only delta and that is not a conformity finding. Runtime-generated and remote copy remain outside the static closure. Content, rights, factual accuracy, accessibility and runtime behavior remain uncertified. Work stops before F0.2b.8 Sentence Completion."
+}

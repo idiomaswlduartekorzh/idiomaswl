@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "ielts-reading-matching-features-baseline.v1",
+  "capturedAt": "2026-08-09T08:14:00-05:00",
+  "scope": {
+    "unit": "F0.2b.6",
+    "format": "matching-features",
+    "passages": 3,
+    "questions": 19,
+    "featureCandidates": 14
+  },
+  "assets": [
+    {
+      "assetId": "formative:matching-features:mf-urban-farming",
+      "setId": "mf-urban-farming",
+      "title": "Matching Features practice: urban farming projects",
+      "wordCount": 308,
+      "featureCount": 4,
+      "questionCount": 7,
+      "answerCounts": { "A": 2, "B": 1, "C": 2, "D": 2 },
+      "sourceObjectSha256": "94fcc6b7c50c8ab6d433890bf4d9b6e0155cb5519203d3e89aa70362346aa68d",
+      "passageSha256": "c7923d205c2f2bcaeb9bd28724d37bdaeb69f774ce6447bcfaad4e165d12937e"
+    },
+    {
+      "assetId": "formative:matching-features:mf-memory-research",
+      "setId": "mf-memory-research",
+      "title": "Matching Features practice: memory research",
+      "wordCount": 306,
+      "featureCount": 5,
+      "questionCount": 6,
+      "answerCounts": { "A": 2, "B": 1, "C": 1, "D": 1, "E": 1 },
+      "sourceObjectSha256": "c88f5a60dc24c9ce76a773055168b14f496321f720e215401053fc22bba6a36d",
+      "passageSha256": "d75a32a55a1430590620c682a941f68e09f5d41a06bc53103934f5bf2f9c34c9"
+    },
+    {
+      "assetId": "formative:matching-features:mf-transport-policies",
+      "setId": "mf-transport-policies",
+      "title": "Matching Features practice: transport policies",
+      "wordCount": 264,
+      "featureCount": 5,
+      "questionCount": 6,
+      "answerCounts": { "A": 1, "B": 1, "C": 2, "D": 1, "E": 1 },
+      "sourceObjectSha256": "2b101575e9c524ab47060bdd6266b6d46138502be62b5aea708672eeb226e7b4",
+      "passageSha256": "769eba354fabc78b677e52b719effcc078faf7de7a146b4170dfdec6791f409c"
+    }
+  ],
+  "structuralRisk": {
+    "answerCounts": { "A": 5, "B": 3, "C": 5, "D": 4, "E": 2 },
+    "globalConcatenatedMaxSameLabelRun": 2,
+    "perSetMaxSameLabelRun": 1,
+    "questionPositionModuloFeatureCount": {
+      "eligible": 19,
+      "tiesOrAbstentions": 0,
+      "hits": 11
+    },
+    "highestLabelDescriptionOverlapPredictsAnswer": {
+      "eligible": 4,
+      "tiesOrAbstentions": 15,
+      "hits": 1
+    },
+    "longestFeatureDescriptionWordCountPredictsAnswer": {
+      "eligible": 7,
+      "tiesOrAbstentions": 12,
+      "hits": 2
+    },
+    "visibleDescriptionCue": {
+      "featureDescriptions": 14,
+      "passageTitles": 3,
+      "independentDescriptionOnlyMatches": 16,
+      "independentPreAnswerTrapMatches": 18
+    }
+  },
+  "learnerFacingSourceSha256": {
+    "src/data/practica-exams/seo-catalog.ts": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de",
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-features/page.tsx": "df659101211ff4405f79e3a9a2c018c5172bf8329307e341bab69473669d5e31",
+    "src/components/exam-practice/MatchingFeaturesEngine.tsx": "8a282ec76ab70b68c3e625693cd63498861331b903dd8607c2aea4db1ae2a93b",
+    "src/components/exam-practice/MatchingFeaturesPassageBank.tsx": "cb176db35754c64ef3bd0e0e150c2b8e5a923136f62d32d908979a8ab08c8750",
+    "src/components/exam-practice/OfficialStrategyCard.tsx": "b4f575bd4bc3655f5f0682404f3d937020b4cfd3d54b42adac758647d9133e3e",
+    "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx": "73d3b725c68c0ed193ceba23ebddca3fec7978f6e84712c99b3dddc190443711",
+    "src/components/exam-practice/StructuredData.tsx": "3e59a611e4d2bac9ce5994bdbd4ba6303407a5ddf82b26a340efe1f3c2b788d8"
+  },
+  "renderDependencyClosureSha256": {
+    "src/app/(site)/layout.tsx": "b427054c94eb33f0177c05c241a2b3920c76e2b7497ad3822b7f379f8b9f2a11",
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-features/page.tsx": "df659101211ff4405f79e3a9a2c018c5172bf8329307e341bab69473669d5e31",
+    "src/app/globals.css": "60efb283eab56b59072c8e43ac7469a3c34977346079600b525b19556207915d",
+    "src/app/layout.tsx": "03d06f0aba4ac802fd9bf69b63229af511a8f4daa132d405dfc36a1a19f01dda",
+    "src/components/SiteNav.tsx": "9114393b428d703d41f84807e6322527c2f79036e4fe05eb8b43cd1238e4307b",
+    "src/components/SiteSkipLink.tsx": "d0c3ca1c465744e16e756623c704834083518acc1c84d83f09b581071cef967e",
+    "src/components/ThemeProvider.tsx": "0bfdbb8105d100202331d5409c3b3cf0cd8ae8a0d231c03ec93c8836ca06c340",
+    "src/components/WhatsAppFloat.tsx": "762256aadcff27912dacf99bb56d6fc6222ad0e54104910a545e8954b0a02255",
+    "src/components/exam-practice/MatchingFeaturesEngine.tsx": "8a282ec76ab70b68c3e625693cd63498861331b903dd8607c2aea4db1ae2a93b",
+    "src/components/exam-practice/MatchingFeaturesPassageBank.tsx": "cb176db35754c64ef3bd0e0e150c2b8e5a923136f62d32d908979a8ab08c8750",
+    "src/components/exam-practice/OfficialStrategyCard.tsx": "b4f575bd4bc3655f5f0682404f3d937020b4cfd3d54b42adac758647d9133e3e",
+    "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx": "73d3b725c68c0ed193ceba23ebddca3fec7978f6e84712c99b3dddc190443711",
+    "src/components/exam-practice/StructuredData.tsx": "3e59a611e4d2bac9ce5994bdbd4ba6303407a5ddf82b26a340efe1f3c2b788d8",
+    "src/data/practica-exams/seo-catalog.ts": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de",
+    "src/lib/supabase/client.ts": "acb02d5d75dad866b04380241e3a40623de46f098ee98ff017be8138c0d076e4"
+  },
+  "nextUnitSourceSha256": {
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings/page.tsx": "e2d13b6b480223a9b71c415dffd062ca0aca54d3250a4ee60ff0b717cd05217e",
+    "src/components/exam-practice/MatchingSentenceEndingsEngine.tsx": "b5adf8a2f67ca1547ca8dc66302002d45874bfe6f461f6e0ef03218385e43e62",
+    "src/components/exam-practice/MatchingSentenceEndingsPassageBank.tsx": "09f3e16a355232f673e73328f1dc0165a46a38df39f8f3bcc8925aaf0012e3bb"
+  },
+  "nextUnitObjectSha256": {
+    "mse-microclimates": "932ccefb0130c9fb9fa030f3eee1e21948efcb4da58ed537fde24049fae21f05",
+    "mse-food-waste": "1682b3ff5b6fac272eb80a77d5cecda5307d98d24a690c912f19a42afcc92aa4",
+    "mse-coastal-libraries": "87e771a35de1ad2b132f30a3c61abaf60471fdd0636034d977376d6aed05ebad"
+  },
+  "interpretation": "Frozen pre-unit content and learner-runtime identity. Stored feature labels are retained here for audit only and are never supplied to blind reviewers. The existing runtime locks and corrects on first selection, exposes trap hints pre-answer, has no persisted attempt state and retains documented accessibility defects; none is certified by this audit-only unit."
+}

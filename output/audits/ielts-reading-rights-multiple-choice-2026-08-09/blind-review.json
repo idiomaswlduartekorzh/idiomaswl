@@ -1,0 +1,243 @@
+{
+  "schemaVersion": "ielts-reading-multiple-choice-blind-review.v1",
+  "generatedAt": "2026-08-09T00:00:00-05:00",
+  "reviewScope": "F0.2b.1 — three formative Multiple Choice passages",
+  "reviewerIsolation": "Use only this packet and official/public sources linked here. Do not open the catalog, registry, validator, source route, prior audit artifacts or UI components.",
+  "instruction": "First pass only: independently answer every question from passage evidence. Quote the shortest decisive span, classify ambiguity as none/minor/material, and assess IELTS Academic Reading fitness. Do not open the second-pass factual-source packet until all 18 selections and evidence spans are fixed. This is an AI editorial review, not a human signature, rights clearance or publication approval.",
+  "secondPassPath": "output/audits/ielts-reading-rights-multiple-choice-2026-08-09/factual-source-review.json",
+  "excludes": [
+    "answer keys",
+    "correctness labels",
+    "explanations",
+    "trap labels",
+    "prior reviewer answers",
+    "student data"
+  ],
+  "records": [
+    {
+      "assetId": "formative:multiple-choice:mc-sleep-learning",
+      "title": "Sleep and learning",
+      "sourceObjectSha256": "8070aae114aa34083b349fa810d547af6cf58d176df75f77e217681a83f4e91f",
+      "passageSha256": "a7762787b2602930b5df81974ca2c5c658c3877c9a9843c0e25a4a90e11bc13c",
+      "passage": "For decades, sleep was viewed mainly as a period of rest. Researchers now argue that sleep is an active state in which the brain reorganizes information gathered during the day. In particular, slow-wave sleep appears to support the consolidation of factual knowledge, while rapid eye movement sleep may help integrate emotional experiences and creative associations.\n\nOne study asked participants to learn pairs of unrelated words in the evening. Some participants slept before being tested, while others stayed awake for the same number of hours. The group that slept remembered more pairs the next morning, especially when their sleep included longer periods of slow-wave activity. However, the researchers warned that sleep does not replace active study; it seems to strengthen material that has already been learned with attention.\n\nThe timing of sleep may also matter. Students often stay awake late before an exam, believing that additional review will compensate for fatigue. Yet several experiments suggest that sacrificing sleep can reduce attention, working memory and the ability to apply knowledge flexibly. In other words, an extra hour of tired study may be less useful than an hour of sleep after focused preparation.\n\nThis does not mean that every learner needs the same schedule. Age, stress, health and daily routines influence sleep patterns. The practical lesson is more modest: learners should treat sleep as part of the learning process rather than as time stolen from it.",
+      "questions": [
+        {
+          "questionId": "mc-sleep-01",
+          "prompt": "What is the main purpose of the first paragraph?",
+          "options": [
+            "To argue that sleep is less important than researchers once believed",
+            "To introduce a newer view of sleep as an active cognitive process",
+            "To compare several medical treatments for sleep problems",
+            "To explain why emotional experiences are easier to remember than facts"
+          ],
+          "declaredSkill": "purpose"
+        },
+        {
+          "questionId": "mc-sleep-02",
+          "prompt": "According to the passage, what did the word-pair study suggest?",
+          "options": [
+            "Participants who slept remembered more word pairs than those who stayed awake",
+            "Participants learned best when they studied without paying close attention",
+            "Rapid eye movement sleep was the only factor that improved factual memory",
+            "Sleep helped participants learn material they had never studied"
+          ],
+          "declaredSkill": "detail"
+        },
+        {
+          "questionId": "mc-sleep-03",
+          "prompt": "The author mentions students staying awake late before an exam in order to",
+          "options": [
+            "show that exam preparation is impossible without late-night study",
+            "criticize all forms of review before an important test",
+            "illustrate a common belief that may conflict with research on sleep",
+            "prove that students need identical sleep schedules"
+          ],
+          "declaredSkill": "rhetorical purpose"
+        },
+        {
+          "questionId": "mc-sleep-04",
+          "prompt": "Which statement best reflects the author’s conclusion?",
+          "options": [
+            "Students should follow one universal sleep schedule",
+            "Sleep should be considered one part of effective learning",
+            "Creative thinking only improves during rapid eye movement sleep",
+            "Studying is unnecessary if learners sleep for enough hours"
+          ],
+          "declaredSkill": "main idea"
+        },
+        {
+          "questionId": "mc-sleep-05",
+          "prompt": "The phrase \"time stolen from it\" in the final paragraph refers to time taken away from",
+          "options": [
+            "health",
+            "active study",
+            "daily routines",
+            "emotional experiences"
+          ],
+          "declaredSkill": "vocabulary in context"
+        },
+        {
+          "questionId": "mc-sleep-06",
+          "prompt": "Which of the following can be inferred from the passage?",
+          "options": [
+            "A tired learner may study longer but use the time less effectively",
+            "Slow-wave sleep prevents all forms of exam anxiety",
+            "People who sleep more always remember everything they study",
+            "Researchers have stopped studying rapid eye movement sleep"
+          ],
+          "declaredSkill": "inference"
+        }
+      ]
+    },
+    {
+      "assetId": "formative:multiple-choice:mc-river-restoration",
+      "title": "River restoration in industrial towns",
+      "sourceObjectSha256": "f44a635695ddbd5da41b0867acb404cd557247e33c14679e462541b86f1b5469",
+      "passageSha256": "3e16760822406856be93e5f821bc0409f91bf05007bb57908b6294b2b382d35e",
+      "passage": "Many industrial towns were built around rivers that provided transport, water and power. Over time, however, those same rivers were narrowed, straightened or hidden behind warehouses. In recent years, some councils have begun to restore urban rivers, arguing that a visible waterway can improve public space as well as wildlife habitat.\n\nRestoration does not usually mean returning a river to a completely natural condition. In a dense town, flood walls, bridges and underground pipes still shape what is possible. The aim is often more practical: to soften hard banks, create shallow planted edges and give floodwater somewhere safer to spread during storms.\n\nOne project in Millgate replaced a concrete channel with a wider river corridor. Within two years, surveys recorded more insects and small fish, while residents reported using the nearby path more often. Yet the project also required regular maintenance. Without removing litter and controlling invasive plants, the new habitat could quickly lose some of its value.\n\nBusinesses sometimes worry that river restoration will reduce parking or delivery access. Those concerns should not be dismissed, but the strongest schemes involve local firms early rather than treating them as obstacles. In Millgate, loading bays were moved rather than removed, and several cafes later used the river path to attract customers.\n\nUrban river restoration is therefore neither a simple beautification project nor a purely ecological one. Its success depends on whether engineers, residents and businesses can share the same narrow strip of land without asking the river to solve every urban problem.",
+      "questions": [
+        {
+          "questionId": "mc-river-01",
+          "prompt": "What is the main purpose of the first paragraph?",
+          "options": [
+            "To explain why industrial towns no longer need rivers",
+            "To introduce a change in how some towns view their rivers",
+            "To argue that warehouses should be built closer to waterways",
+            "To compare river transport with modern road transport"
+          ],
+          "declaredSkill": "purpose"
+        },
+        {
+          "questionId": "mc-river-02",
+          "prompt": "According to the passage, urban river restoration usually aims to",
+          "options": [
+            "remove every bridge and pipe near the water",
+            "return rivers to a completely natural state",
+            "make practical improvements within urban limits",
+            "prevent all future flooding in nearby streets"
+          ],
+          "declaredSkill": "detail"
+        },
+        {
+          "questionId": "mc-river-03",
+          "prompt": "The Millgate example is used mainly to show that",
+          "options": [
+            "river projects can bring benefits but still need ongoing care",
+            "wildlife always returns without human maintenance",
+            "residents prefer concrete channels to planted paths",
+            "river restoration prevents businesses from operating"
+          ],
+          "declaredSkill": "rhetorical purpose"
+        },
+        {
+          "questionId": "mc-river-04",
+          "prompt": "What can be inferred about local businesses in successful restoration schemes?",
+          "options": [
+            "They must give up all delivery access",
+            "They are more likely to cooperate when included early",
+            "They always oppose ecological improvements",
+            "They benefit only if parking spaces are increased"
+          ],
+          "declaredSkill": "inference"
+        },
+        {
+          "questionId": "mc-river-05",
+          "prompt": "The phrase \"same narrow strip of land\" refers to",
+          "options": [
+            "the area where different urban needs meet around the river",
+            "a path used only by cafes and cyclists",
+            "the underground pipe network beneath Millgate",
+            "a parking zone that should be removed permanently"
+          ],
+          "declaredSkill": "vocabulary in context"
+        },
+        {
+          "questionId": "mc-river-06",
+          "prompt": "Which statement best reflects the author’s conclusion?",
+          "options": [
+            "River restoration succeeds only when ecological goals replace all business needs",
+            "Urban rivers should be hidden again when maintenance becomes expensive",
+            "Restoration requires balancing public, ecological and practical demands",
+            "Beautification is the only realistic goal for industrial rivers"
+          ],
+          "declaredSkill": "main idea"
+        }
+      ]
+    },
+    {
+      "assetId": "formative:multiple-choice:mc-digital-notes",
+      "title": "Digital notes and memory",
+      "sourceObjectSha256": "b3510e65794dae07e473b89839115fe272244cee0a7ab7deae3291375f0bda20",
+      "passageSha256": "7f0a8cff97dbee095a78e83e1ae8fbdcb6b671e87b57cd9f52646a437496742d",
+      "passage": "Students often assume that digital note-taking is automatically more efficient than writing by hand. Laptops and tablets make it easy to store, search and reorganize large amounts of information. They also reduce the chance of losing a notebook. These advantages are real, but they do not guarantee better learning.\n\nThe key issue is how notes are created. When students type quickly, they may copy a lecturer's words almost exactly. This can produce a detailed record, but it may require little processing at the moment of listening. By contrast, slower note-taking often forces students to select, shorten and connect ideas, which can support understanding.\n\nSome educators therefore recommend handwritten notes for conceptual subjects. That recommendation is useful, but it can be too simple. A tablet with a stylus may encourage the same selection and diagramming as paper, while a paper notebook used for copying sentences may be no better than a laptop. The tool matters less than the thinking it encourages.\n\nDigital systems can be especially helpful after class. Search functions allow students to locate examples quickly, and linked folders can connect lecture notes with readings, practice questions and feedback. However, a searchable archive is not the same as revision. Students still need to test themselves, reorganize ideas and notice what they cannot yet explain.\n\nThe most sensible approach is not to choose a permanent winner between paper and screens. Learners should ask which method helps them transform information while taking notes and retrieve it actively afterwards.",
+      "questions": [
+        {
+          "questionId": "mc-notes-01",
+          "prompt": "What is the author’s main point in the first paragraph?",
+          "options": [
+            "Digital notes have practical advantages but do not automatically improve learning",
+            "Paper notebooks are safer than laptops and tablets",
+            "Students should stop storing information digitally",
+            "Searching notes is the only reliable way to study"
+          ],
+          "declaredSkill": "main idea"
+        },
+        {
+          "questionId": "mc-notes-02",
+          "prompt": "Why can fast typing be a problem during lectures?",
+          "options": [
+            "It always produces inaccurate records",
+            "It may encourage copying without much processing",
+            "It prevents students from storing large amounts of information",
+            "It makes students select too few details from the lecture"
+          ],
+          "declaredSkill": "detail"
+        },
+        {
+          "questionId": "mc-notes-03",
+          "prompt": "The tablet-with-stylus example is used to show that",
+          "options": [
+            "all tablets are better than paper notebooks",
+            "the learning value depends on the kind of thinking a tool supports",
+            "handwriting is impossible on digital devices",
+            "students should use diagrams instead of words in every subject"
+          ],
+          "declaredSkill": "rhetorical purpose"
+        },
+        {
+          "questionId": "mc-notes-04",
+          "prompt": "What does the author imply about a searchable archive?",
+          "options": [
+            "It is useful, but it cannot replace active revision",
+            "It makes self-testing unnecessary",
+            "It works only for students who write by hand",
+            "It prevents students from connecting notes with readings"
+          ],
+          "declaredSkill": "inference"
+        },
+        {
+          "questionId": "mc-notes-05",
+          "prompt": "In the final paragraph, the phrase \"permanent winner\" refers to",
+          "options": [
+            "a student who receives the highest mark in a class",
+            "one note-taking method being treated as best in all situations",
+            "a folder that stores notes without being deleted",
+            "a lecturer whose words are copied exactly"
+          ],
+          "declaredSkill": "vocabulary in context"
+        },
+        {
+          "questionId": "mc-notes-06",
+          "prompt": "Which recommendation best matches the author’s conclusion?",
+          "options": [
+            "Use only handwritten notes for every conceptual subject",
+            "Use only digital notes because they are searchable",
+            "Choose a method based on processing during class and active retrieval after class",
+            "Copy as much information as possible before deciding what it means"
+          ],
+          "declaredSkill": "main idea"
+        }
+      ]
+    }
+  ]
+}

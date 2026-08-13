@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "ielts-reading-matching-headings-unit-change-manifest.v1",
+  "unit": "F0.2b.5",
+  "recordedAt": "2026-08-09T07:06:00-05:00",
+  "learnerFacingChangeAuthorized": false,
+  "learnerFacingBaselinePaths": [
+    "src/data/practica-exams/seo-catalog.ts",
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-headings/page.tsx",
+    "src/components/exam-practice/MatchingHeadingsEngine.tsx",
+    "src/components/exam-practice/MatchingHeadingsPassageBank.tsx",
+    "src/components/exam-practice/OfficialStrategyCard.tsx",
+    "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+    "src/components/exam-practice/StructuredData.tsx"
+  ],
+  "unitSourceFiles": [
+    "src/data/practica-exams/ielts-reading-rights-registry.ts",
+    "scripts/check-ielts-reading-matching-headings-rights.mjs",
+    "tests/ielts-reading-matching-headings-rights.test.mjs",
+    "docs/ielts-reading-loop.md"
+  ],
+  "unitOutputDirectory": "output/audits/ielts-reading-rights-matching-headings-2026-08-09",
+  "interpretation": "This manifest scopes files intentionally changed for F0.2b.5. Seven learner-facing sources are pinned independently by baseline hash; this does not assert that the entire repository, shared layout or product UI is globally unchanged."
+}

@@ -1,0 +1,923 @@
+{
+  "schemaVersion": "ielts-reading-ynng-rights-validation.v1",
+  "generatedAt": "2026-08-09T05:50:00-05:00",
+  "unit": "F0.2b.3 — expediente de tres sets formativos Yes/No/Not Given",
+  "status": "pass",
+  "passMeaning": "PASS certifica cobertura, identidad, cuarentena, revisión ciega y detección de riesgos. NO aprueba claves, factualidad, derechos, publicación, UI ni eficacia pedagógica en estudiantes reales.",
+  "scope": {
+    "passages": 3,
+    "questions": 22,
+    "registryEntriesInUnit": 3,
+    "registryEntriesTotal": 21,
+    "coveredAssetIds": [
+      "formative:yes-no-not-given:ynng-station-art",
+      "formative:yes-no-not-given:ynng-remote-work",
+      "formative:yes-no-not-given:ynng-school-uniforms"
+    ],
+    "parentF02bRemainsOpen": true,
+    "scopedLearnerSourcesChangedSinceBaseline": false
+  },
+  "checks": {
+    "exactCoverage": true,
+    "stableUniqueIds": true,
+    "sourceHashesMatchBaseline": true,
+    "registryReferencesResolve": true,
+    "officialRuleSourceAvailable": true,
+    "factualSourceAvailabilityRecorded": true,
+    "candidateSourcesAreNotTreatedAsVerification": true,
+    "factualReviewRequiredForEveryAsset": true,
+    "actualAssetsAllQuarantined": true,
+    "actualRegistryRecordsStructurallyValid": true,
+    "visibleOriginalityClaimObservedButUnverified": true,
+    "blindPacketContainsNoKeysFeedbackOrSkills": true,
+    "blindPacketContainsNoKeyLikeValues": true,
+    "blindPacketContainsNoLearnerOrContactPii": true,
+    "factualSourcePacketContainsNoKeysFeedbackOrSkills": true,
+    "factualSourcePacketContainsNoKeyLikeValues": true,
+    "independentExpertCoverageComplete": true,
+    "expertFirstPassPersistedAndPinned": true,
+    "viewpointAttributionContractEnforced": true,
+    "notGivenAbsenceContractEnforced": true,
+    "studentWalkthroughCoverageComplete": true,
+    "fixedLabelsNotPermuted": true,
+    "statisticalCertificationWithheld": true,
+    "contentCertificationBlocked": true,
+    "contentMutationDenied": true,
+    "scopedLearnerSourcesUnchanged": true,
+    "auditRegistryAbsentFromLearnerRuntimeImports": true,
+    "provenanceSearchLedgerComplete": true,
+    "chronologyIsMonotonicAndNotFutureDated": true,
+    "finalPanelVerdictsValidated": true,
+    "antiBiasMultidimensionalCoverage": true,
+    "keyLikeValueLeakageMutationDetected": true,
+    "boardStateMatchesValidatedUnit": true
+  },
+  "decisions": [
+    {
+      "assetId": "formative:yes-no-not-given:ynng-station-art",
+      "title": "Yes/No/Not Given practice: public art in transport stations",
+      "sourceObjectSha256": "1fe59c7e1fad1d831a4fa08a7dfa302d7b1bd37005884bf77ce1b9b379abf680",
+      "passageSha256": "13d655a77274b4fa20bbc39e558395d3db455f46043ff23ca2e122b2bb237f0a",
+      "wordCount": 255,
+      "questionCount": 8,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 2,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    {
+      "assetId": "formative:yes-no-not-given:ynng-remote-work",
+      "title": "Yes/No/Not Given practice: remote work and city centres",
+      "sourceObjectSha256": "5a21449c9d3e9dd7e93d30a3c216d088f89c1fbd011439067aa45827d41ec772",
+      "passageSha256": "0a88ab17c6741765c43344c80b3543e4add8309cefea1c7ebc674d1364795a78",
+      "wordCount": 279,
+      "questionCount": 7,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 3,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    {
+      "assetId": "formative:yes-no-not-given:ynng-school-uniforms",
+      "title": "Yes/No/Not Given practice: school uniforms and identity",
+      "sourceObjectSha256": "2ad9bf267d022a21725a714a100c3956bda28932183daf210400fce5cddccf0a",
+      "passageSha256": "21d4fa469e99313439dc5ac41a8fd28683d70d058314be4be57376be11e8cdee",
+      "wordCount": 263,
+      "questionCount": 7,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 3,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    }
+  ],
+  "provenanceSearch": {
+    "schemaVersion": "ielts-reading-ynng-provenance-search.v1",
+    "searchedAt": "2026-08-09T05:35:00-05:00",
+    "method": "Directed web search using each visible title and normalized first sentence in quotation marks; results were reviewed for an exact title-and-text match.",
+    "searchSurface": "OpenAI web search over the public web; ranking is dynamic and this ledger records only reviewed results, not a reproducible universal index.",
+    "queries": [
+      {
+        "assetId": "formative:yes-no-not-given:ynng-station-art",
+        "query": "\"Public art in transport stations\" \"Public art in transport stations is often defended as a way to make commuting more pleasant\"",
+        "resultsReviewed": [
+          {
+            "title": "Singapore LTA — Gift of Art",
+            "url": "https://www.lta.gov.sg/content/ltagov/en/getting_around/public_transport/a_better_public_transport_experience/art_in_public_transport/gift-of-art.html",
+            "exactMatch": false,
+            "relevanceNote": "Relevant institutional material about art in stations, but neither the visible title nor the passage text matches."
+          },
+          {
+            "title": "Transport for NSW — Public Art in Transport Infrastructure",
+            "url": "https://standards.transport.nsw.gov.au/_entity/annotation/76f5da99-f722-ef11-840a-6045bdc373da",
+            "exactMatch": false,
+            "relevanceNote": "Related transport-art guidance; no exact title, first-sentence or paragraph-sequence match."
+          }
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      },
+      {
+        "assetId": "formative:yes-no-not-given:ynng-remote-work",
+        "query": "\"Why city centres still need office workers\" \"The rise of remote work has encouraged some commentators to predict the end of central business districts\"",
+        "resultsReviewed": [
+          {
+            "title": "London Assembly — Impact of remote working on central London",
+            "url": "https://www.london.gov.uk/who-we-are/what-london-assembly-does/london-assembly-work/london-assembly-publications/impact-remote-working-central-london",
+            "exactMatch": false,
+            "relevanceNote": "Overlapping policy topic and vocabulary, but no exact title or passage-sequence match."
+          },
+          {
+            "title": "OECD — The new geography of remote jobs",
+            "url": "https://www.oecd.org/en/publications/oecd-regions-and-cities-at-a-glance-2024_f42db3bf-en/full-report/the-new-geography-of-remote-jobs_6fe0d665.html",
+            "exactMatch": false,
+            "relevanceNote": "Relevant evidence on remote and hybrid work, but no exact title or first-sentence match."
+          }
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      },
+      {
+        "assetId": "formative:yes-no-not-given:ynng-school-uniforms",
+        "query": "\"A careful argument about school uniforms\" \"Debates about school uniforms often become strangely absolute\"",
+        "resultsReviewed": [
+          {
+            "title": "UK Department for Education — Developing school uniform policy",
+            "url": "https://www.gov.uk/government/publications/school-uniform/school-uniforms",
+            "exactMatch": false,
+            "relevanceNote": "Official guidance covers identity, equality, cost and enforcement but does not match the title or passage prose."
+          },
+          {
+            "title": "Australian Institute of Family Studies — Citizen child: school uniforms",
+            "url": "https://aifs.gov.au/all-research/research-reports/citizen-child-australian-law-and-childrens-rights",
+            "exactMatch": false,
+            "relevanceNote": "Discusses competing uniform arguments and expression, but no exact title, first sentence or paragraph sequence matches."
+          }
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      }
+    ],
+    "interpretation": "This is a directed, non-exhaustive search log. No exact match was located in the reviewed results, but that negative result does not prove originality, authorship, ownership, authorization or universal absence of a prior source."
+  },
+  "factualResearch": [
+    {
+      "assetId": "formative:yes-no-not-given:ynng-station-art",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "station-lta-gift-art",
+        "station-opdc-community-brief"
+      ],
+      "limitation": "Las fuentes candidatas muestran programas de arte en transporte, conexión local, participación comunitaria, wayfinding y límites prácticos, pero no verifican que proyectos modestos generen más confianza ni que el criterio normativo del pasaje sea empíricamente generalizable."
+    },
+    {
+      "assetId": "formative:yes-no-not-given:ynng-remote-work",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "remote-ons-hybrid-2025",
+        "remote-london-assembly-central-2024",
+        "remote-ecb-work-preference-2025"
+      ],
+      "limitation": "Las fuentes candidatas documentan trabajo híbrido persistente, preferencia por modelos híbridos y efectos que autoridades monitorizan sobre footfall y gasto; no prueban que dos o tres días comunes sean la mejor solución universal ni cada causalidad del ensayo."
+    },
+    {
+      "assetId": "formative:yes-no-not-given:ynng-school-uniforms",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "uniforms-dfe-policy-2026",
+        "uniforms-dfe-cost-2026",
+        "uniforms-cma-costs"
+      ],
+      "limitation": "Las fuentes candidatas sustentan que coste, proveedor, consulta, flexibilidad y aplicación no discriminatoria importan, pero no verifican que los uniformes reduzcan competencia visible ni todas las comparaciones sociales del pasaje."
+    }
+  ],
+  "sourceAvailability": {
+    "schemaVersion": "ielts-reading-ynng-source-availability.v1",
+    "checkedAt": "2026-08-09",
+    "method": "curl 8.x -sS -L with requested URL, final URL, HTTP status, content type, response size and response-body SHA-256 recorded on the stated date",
+    "sources": [
+      {
+        "evidenceId": "ielts-ynng-official-format",
+        "requestedUrl": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading",
+        "retrievedAt": "2026-08-09T05:33:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 187270,
+        "bodySha256": "7d2f15ba40e1f5f7cbf3a659a03f8783c8ab4d8701d6de94aca7786213875ab0"
+      },
+      {
+        "evidenceId": "station-lta-gift-art",
+        "requestedUrl": "https://www.lta.gov.sg/content/ltagov/en/getting_around/public_transport/a_better_public_transport_experience/art_in_public_transport/gift-of-art.html",
+        "retrievedAt": "2026-08-09T05:34:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.lta.gov.sg/content/ltagov/en/getting_around/public_transport/a_better_public_transport_experience/art_in_public_transport/gift-of-art.html",
+        "redirected": false,
+        "contentType": "text/html",
+        "sizeBytes": 70584,
+        "bodySha256": "e96e0245676bb608c3694fc636c5546f54b8cf45fb4ad67363e7a3592b2aede3"
+      },
+      {
+        "evidenceId": "station-opdc-community-brief",
+        "requestedUrl": "https://consult.opdc.london.gov.uk/park-royal-subway-improvements",
+        "retrievedAt": "2026-08-09T05:33:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://consult.opdc.london.gov.uk/park-royal-subway-improvements",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 47136,
+        "bodySha256": "71817447bfa43345866dd3630040be756552301de018c4c3b05c2a027f5a2fb9"
+      },
+      {
+        "evidenceId": "remote-ons-hybrid-2025",
+        "requestedUrl": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/whohasaccesstohybridworkingreatbritain/latest",
+        "retrievedAt": "2026-08-09T05:34:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/whohasaccesstohybridworkingreatbritain/latest",
+        "redirected": false,
+        "contentType": "text/html;charset=utf-8",
+        "sizeBytes": 75858,
+        "bodySha256": "bbf671273411f0979964d01685bc6e32574d85c17f2c6f621a6e14c3f699379b"
+      },
+      {
+        "evidenceId": "remote-london-assembly-central-2024",
+        "requestedUrl": "https://www.london.gov.uk/who-we-are/what-london-assembly-does/london-assembly-work/london-assembly-publications/impact-remote-working-central-london",
+        "retrievedAt": "2026-08-09T05:33:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.london.gov.uk/who-we-are/what-london-assembly-does/london-assembly-work/london-assembly-publications/impact-remote-working-central-london",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 269526,
+        "bodySha256": "a27dc6800500ed9a66ee81cc15084295403cf8fec982c0762fa4fd7be54b4300"
+      },
+      {
+        "evidenceId": "remote-ecb-work-preference-2025",
+        "requestedUrl": "https://www.ecb.europa.eu/press/economic-bulletin/focus/2025/html/ecb.ebbox202506_04~2cd6fd1c14.en.html",
+        "retrievedAt": "2026-08-09T05:33:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.ecb.europa.eu/press/economic-bulletin/focus/2025/html/ecb.ebbox202506_04~2cd6fd1c14.en.html",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 113662,
+        "bodySha256": "da58fffcf894a5318d8b09af2b61ae0c1f017d6280d69afe613a1d809369a0f7"
+      },
+      {
+        "evidenceId": "uniforms-dfe-policy-2026",
+        "requestedUrl": "https://www.gov.uk/government/publications/school-uniform/school-uniforms",
+        "retrievedAt": "2026-08-09T05:33:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.gov.uk/government/publications/school-uniform/school-uniforms",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 108623,
+        "bodySha256": "4459246fa7326f43834fc1d701d6bf3c182f1900913bdd58d61570a8b2f238ac"
+      },
+      {
+        "evidenceId": "uniforms-dfe-cost-2026",
+        "requestedUrl": "https://www.gov.uk/government/publications/cost-of-school-uniforms",
+        "retrievedAt": "2026-08-09T05:33:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.gov.uk/government/publications/cost-of-school-uniforms",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 72673,
+        "bodySha256": "6d48e3f934aac63ae5abd96243271dfd8e181aebb4d98faea4ff541d3953a540"
+      },
+      {
+        "evidenceId": "uniforms-cma-costs",
+        "requestedUrl": "https://www.gov.uk/government/collections/school-uniforms",
+        "retrievedAt": "2026-08-09T05:33:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.gov.uk/government/collections/school-uniforms",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 75856,
+        "bodySha256": "3cdc2b32db81685fa2ba56a019834c816ab4a0eb44f445c3fb7fce98215f583c"
+      }
+    ],
+    "interpretation": "Availability identifies sources that can be reviewed. It does not establish authorship, license, authorization, claim-level accuracy, writer stance, human approval or publication fitness."
+  },
+  "expertReview": {
+    "reviewerType": "independent-ai-editorial-review",
+    "humanSignature": false,
+    "answerAgreement": {
+      "matches": 22,
+      "total": 22,
+      "rate": 1
+    },
+    "keyConflictCount": 0,
+    "keyConflictQuestionIds": [],
+    "materialAmbiguityCount": 2,
+    "materialAmbiguityQuestionIds": [
+      "ynng-station-art-07",
+      "ynng-uniforms-04"
+    ],
+    "factualAssessmentCounts": {
+      "supported": 2,
+      "oversimplified": 7,
+      "unsupported": 0,
+      "untraceable": 4
+    },
+    "verdictPath": "output/audits/ielts-reading-rights-ynng-2026-08-09/expert-verdict.json"
+  },
+  "studentWalkthrough": {
+    "passagesCovered": 3,
+    "questionsCovered": 22,
+    "verdictPath": "output/audits/ielts-reading-rights-ynng-2026-08-09/student-walkthrough.json",
+    "limitation": "Walkthrough cognitivo ciego sobre contenido; no prueba UI, accesibilidad, retención, bandas ni estudiantes reales."
+  },
+  "antiBias": {
+    "optionPermutationApplied": false,
+    "optionPermutationReason": "YES/NO/NOT GIVEN are fixed IELTS response labels; label identity is not shuffled. Bias is audited across items, stance attribution and semantics.",
+    "storedKeyProfile": {
+      "answerCounts": {
+        "YES": 9,
+        "NO": 8,
+        "NOT GIVEN": 5
+      },
+      "maxSameLabelRun": 2,
+      "degreeLanguageImpliesNo": {
+        "definition": "If a statement contains all, always, every, never, only, usually, normally, most, completely or exactly, answer NO; otherwise abstain.",
+        "eligible": 11,
+        "tiesOrAbstentions": 11,
+        "hits": 6,
+        "conditionalAccuracy": 0.5454545454545454,
+        "totalAccuracy": 0.2727272727272727,
+        "randomBaseline": 0.3333333333333333,
+        "wilsonUpper95": 0.7579095924033233,
+        "threshold": 0.43333333333333335
+      },
+      "constantLabelHeuristics": {
+        "YES": {
+          "hits": 9,
+          "total": 22,
+          "accuracy": 0.4090909090909091
+        },
+        "NO": {
+          "hits": 8,
+          "total": 22,
+          "accuracy": 0.36363636363636365
+        },
+        "NOT GIVEN": {
+          "hits": 5,
+          "total": 22,
+          "accuracy": 0.22727272727272727
+        }
+      },
+      "statementLengthByLabel": {
+        "YES": {
+          "questions": 9,
+          "averageWords": 12.666666666666666,
+          "minWords": 11,
+          "maxWords": 15
+        },
+        "NO": {
+          "questions": 8,
+          "averageWords": 11.5,
+          "minWords": 8,
+          "maxWords": 13
+        },
+        "NOT GIVEN": {
+          "questions": 5,
+          "averageWords": 11.4,
+          "minWords": 10,
+          "maxWords": 13
+        }
+      },
+      "lexicalOverlapByLabel": {
+        "YES": {
+          "questions": 9,
+          "averagePassageTokenOverlap": 0.5313519813519814,
+          "averageTitleTokenOverlap": 0.030471380471380476
+        },
+        "NO": {
+          "questions": 8,
+          "averagePassageTokenOverlap": 0.5757575757575758,
+          "averageTitleTokenOverlap": 0.122979797979798
+        },
+        "NOT GIVEN": {
+          "questions": 5,
+          "averagePassageTokenOverlap": 0.5772727272727273,
+          "averageTitleTokenOverlap": 0.12636363636363634
+        }
+      },
+      "writerVerbByLabel": {
+        "believes": {
+          "YES": 6,
+          "NO": 2,
+          "NOT GIVEN": 1
+        },
+        "thinks": {
+          "YES": 1,
+          "NO": 3,
+          "NOT GIVEN": 0
+        },
+        "prefers": {
+          "YES": 1,
+          "NO": 0,
+          "NOT GIVEN": 0
+        },
+        "says": {
+          "YES": 0,
+          "NO": 1,
+          "NOT GIVEN": 3
+        },
+        "argues": {
+          "YES": 1,
+          "NO": 1,
+          "NOT GIVEN": 0
+        },
+        "recommends": {
+          "YES": 0,
+          "NO": 0,
+          "NOT GIVEN": 1
+        },
+        "is": {
+          "YES": 0,
+          "NO": 1,
+          "NOT GIVEN": 0
+        }
+      },
+      "perSet": [
+        {
+          "assetId": "formative:yes-no-not-given:ynng-station-art",
+          "answerCounts": {
+            "YES": 3,
+            "NO": 3,
+            "NOT GIVEN": 2
+          },
+          "maxSameLabelRun": 2,
+          "degreeLanguageImpliesNo": {
+            "definition": "If a statement contains all, always, every, never, only, usually, normally, most, completely or exactly, answer NO; otherwise abstain.",
+            "eligible": 5,
+            "tiesOrAbstentions": 3,
+            "hits": 3,
+            "conditionalAccuracy": 0.6,
+            "totalAccuracy": 0.375,
+            "randomBaseline": 0.3333333333333333,
+            "wilsonUpper95": 0.8573066002116804,
+            "threshold": 0.43333333333333335
+          }
+        },
+        {
+          "assetId": "formative:yes-no-not-given:ynng-remote-work",
+          "answerCounts": {
+            "YES": 3,
+            "NO": 2,
+            "NOT GIVEN": 2
+          },
+          "maxSameLabelRun": 1,
+          "degreeLanguageImpliesNo": {
+            "definition": "If a statement contains all, always, every, never, only, usually, normally, most, completely or exactly, answer NO; otherwise abstain.",
+            "eligible": 2,
+            "tiesOrAbstentions": 5,
+            "hits": 1,
+            "conditionalAccuracy": 0.5,
+            "totalAccuracy": 0.14285714285714285,
+            "randomBaseline": 0.3333333333333333,
+            "wilsonUpper95": 0.8791480193875478,
+            "threshold": 0.43333333333333335
+          }
+        },
+        {
+          "assetId": "formative:yes-no-not-given:ynng-school-uniforms",
+          "answerCounts": {
+            "YES": 3,
+            "NO": 3,
+            "NOT GIVEN": 1
+          },
+          "maxSameLabelRun": 2,
+          "degreeLanguageImpliesNo": {
+            "definition": "If a statement contains all, always, every, never, only, usually, normally, most, completely or exactly, answer NO; otherwise abstain.",
+            "eligible": 4,
+            "tiesOrAbstentions": 3,
+            "hits": 2,
+            "conditionalAccuracy": 0.5,
+            "totalAccuracy": 0.2857142857142857,
+            "randomBaseline": 0.3333333333333333,
+            "wilsonUpper95": 0.8176166951607965,
+            "threshold": 0.43333333333333335
+          }
+        }
+      ],
+      "sequenceProfile": {
+        "answerSequence": [
+          "YES",
+          "NO",
+          "NO",
+          "YES",
+          "NOT GIVEN",
+          "YES",
+          "NO",
+          "NOT GIVEN",
+          "YES",
+          "NO",
+          "NOT GIVEN",
+          "YES",
+          "NO",
+          "NOT GIVEN",
+          "YES",
+          "YES",
+          "NO",
+          "NO",
+          "YES",
+          "NOT GIVEN",
+          "NO",
+          "YES"
+        ],
+        "transitions": {
+          "YES → NO": 5,
+          "NO → NO": 2,
+          "NO → YES": 3,
+          "YES → NOT GIVEN": 2,
+          "NOT GIVEN → YES": 4,
+          "NO → NOT GIVEN": 3,
+          "YES → YES": 1,
+          "NOT GIVEN → NO": 1
+        }
+      }
+    },
+    "independentExpertProfile": {
+      "answerCounts": {
+        "YES": 9,
+        "NO": 8,
+        "NOT GIVEN": 5
+      },
+      "maxSameLabelRun": 2,
+      "degreeLanguageImpliesNo": {
+        "definition": "If a statement contains all, always, every, never, only, usually, normally, most, completely or exactly, answer NO; otherwise abstain.",
+        "eligible": 11,
+        "tiesOrAbstentions": 11,
+        "hits": 6,
+        "conditionalAccuracy": 0.5454545454545454,
+        "totalAccuracy": 0.2727272727272727,
+        "randomBaseline": 0.3333333333333333,
+        "wilsonUpper95": 0.7579095924033233,
+        "threshold": 0.43333333333333335
+      },
+      "constantLabelHeuristics": {
+        "YES": {
+          "hits": 9,
+          "total": 22,
+          "accuracy": 0.4090909090909091
+        },
+        "NO": {
+          "hits": 8,
+          "total": 22,
+          "accuracy": 0.36363636363636365
+        },
+        "NOT GIVEN": {
+          "hits": 5,
+          "total": 22,
+          "accuracy": 0.22727272727272727
+        }
+      },
+      "statementLengthByLabel": {
+        "YES": {
+          "questions": 9,
+          "averageWords": 12.666666666666666,
+          "minWords": 11,
+          "maxWords": 15
+        },
+        "NO": {
+          "questions": 8,
+          "averageWords": 11.5,
+          "minWords": 8,
+          "maxWords": 13
+        },
+        "NOT GIVEN": {
+          "questions": 5,
+          "averageWords": 11.4,
+          "minWords": 10,
+          "maxWords": 13
+        }
+      },
+      "lexicalOverlapByLabel": {
+        "YES": {
+          "questions": 9,
+          "averagePassageTokenOverlap": 0.5313519813519814,
+          "averageTitleTokenOverlap": 0.030471380471380476
+        },
+        "NO": {
+          "questions": 8,
+          "averagePassageTokenOverlap": 0.5757575757575758,
+          "averageTitleTokenOverlap": 0.122979797979798
+        },
+        "NOT GIVEN": {
+          "questions": 5,
+          "averagePassageTokenOverlap": 0.5772727272727273,
+          "averageTitleTokenOverlap": 0.12636363636363634
+        }
+      },
+      "writerVerbByLabel": {
+        "believes": {
+          "YES": 6,
+          "NO": 2,
+          "NOT GIVEN": 1
+        },
+        "thinks": {
+          "YES": 1,
+          "NO": 3,
+          "NOT GIVEN": 0
+        },
+        "prefers": {
+          "YES": 1,
+          "NO": 0,
+          "NOT GIVEN": 0
+        },
+        "says": {
+          "YES": 0,
+          "NO": 1,
+          "NOT GIVEN": 3
+        },
+        "argues": {
+          "YES": 1,
+          "NO": 1,
+          "NOT GIVEN": 0
+        },
+        "recommends": {
+          "YES": 0,
+          "NO": 0,
+          "NOT GIVEN": 1
+        },
+        "is": {
+          "YES": 0,
+          "NO": 1,
+          "NOT GIVEN": 0
+        }
+      },
+      "perSet": [
+        {
+          "assetId": "formative:yes-no-not-given:ynng-station-art",
+          "answerCounts": {
+            "YES": 3,
+            "NO": 3,
+            "NOT GIVEN": 2
+          },
+          "maxSameLabelRun": 2,
+          "degreeLanguageImpliesNo": {
+            "definition": "If a statement contains all, always, every, never, only, usually, normally, most, completely or exactly, answer NO; otherwise abstain.",
+            "eligible": 5,
+            "tiesOrAbstentions": 3,
+            "hits": 3,
+            "conditionalAccuracy": 0.6,
+            "totalAccuracy": 0.375,
+            "randomBaseline": 0.3333333333333333,
+            "wilsonUpper95": 0.8573066002116804,
+            "threshold": 0.43333333333333335
+          }
+        },
+        {
+          "assetId": "formative:yes-no-not-given:ynng-remote-work",
+          "answerCounts": {
+            "YES": 3,
+            "NO": 2,
+            "NOT GIVEN": 2
+          },
+          "maxSameLabelRun": 1,
+          "degreeLanguageImpliesNo": {
+            "definition": "If a statement contains all, always, every, never, only, usually, normally, most, completely or exactly, answer NO; otherwise abstain.",
+            "eligible": 2,
+            "tiesOrAbstentions": 5,
+            "hits": 1,
+            "conditionalAccuracy": 0.5,
+            "totalAccuracy": 0.14285714285714285,
+            "randomBaseline": 0.3333333333333333,
+            "wilsonUpper95": 0.8791480193875478,
+            "threshold": 0.43333333333333335
+          }
+        },
+        {
+          "assetId": "formative:yes-no-not-given:ynng-school-uniforms",
+          "answerCounts": {
+            "YES": 3,
+            "NO": 3,
+            "NOT GIVEN": 1
+          },
+          "maxSameLabelRun": 2,
+          "degreeLanguageImpliesNo": {
+            "definition": "If a statement contains all, always, every, never, only, usually, normally, most, completely or exactly, answer NO; otherwise abstain.",
+            "eligible": 4,
+            "tiesOrAbstentions": 3,
+            "hits": 2,
+            "conditionalAccuracy": 0.5,
+            "totalAccuracy": 0.2857142857142857,
+            "randomBaseline": 0.3333333333333333,
+            "wilsonUpper95": 0.8176166951607965,
+            "threshold": 0.43333333333333335
+          }
+        }
+      ],
+      "sequenceProfile": {
+        "answerSequence": [
+          "YES",
+          "NO",
+          "NO",
+          "YES",
+          "NOT GIVEN",
+          "YES",
+          "NO",
+          "NOT GIVEN",
+          "YES",
+          "NO",
+          "NOT GIVEN",
+          "YES",
+          "NO",
+          "NOT GIVEN",
+          "YES",
+          "YES",
+          "NO",
+          "NO",
+          "YES",
+          "NOT GIVEN",
+          "NO",
+          "YES"
+        ],
+        "transitions": {
+          "YES → NO": 5,
+          "NO → NO": 2,
+          "NO → YES": 3,
+          "YES → NOT GIVEN": 2,
+          "NOT GIVEN → YES": 4,
+          "NO → NOT GIVEN": 3,
+          "YES → YES": 1,
+          "NOT GIVEN → NO": 1
+        }
+      }
+    },
+    "qualitativeCoverage": {
+      "perspectiveAndRepresentation": true,
+      "priorKnowledge": true,
+      "irrelevantCognitiveLoad": true,
+      "writerVsReportedVoice": true,
+      "visibleTitleCue": true
+    },
+    "sampleAdequacy": {
+      "certificationThreshold": 100,
+      "observedQuestions": 22,
+      "eligibleForStatisticalCertification": false,
+      "conclusion": "The sample can expose severe cues but cannot certify balanced content statistically."
+    },
+    "statisticalCertification": "withheld-n-below-100",
+    "contentCertification": "blocked-editorial-review-required"
+  },
+  "applicability": {
+    "rights": "applicable",
+    "fullStackData": "applicable",
+    "ieltsExpert": "applicable",
+    "cognitiveWalkthrough": "applicable-to-content-only",
+    "antiBias": "applicable",
+    "uiUxAccessibility": "not-applicable-scoped-learner-sources-unchanged",
+    "playwright": "not-applicable-scoped-learner-runtime-unchanged",
+    "evidence": "Within F0.2b.3, the catalog, YNNG route, ObjectivePracticeEngine and ObjectivePracticeSetBank remain pinned by baseline hash, and no app/component imports the audit registry/contract. This does not certify the existing UI or the repository globally."
+  },
+  "processLimitations": {
+    "firstPassTrace": "The persisted hash detects ordinary mutation but is not an external append-only witness; coordinated post-hoc rewriting of all local files cannot be ruled out cryptographically.",
+    "directSourceReview": "Direct-source review is declared by an AI reviewer and checked for exact IDs plus non-empty locators; it is not automatic proof of browsing, a human signature or factual verification.",
+    "provenanceSearch": "Public-web search is directed and non-exhaustive; no exact match in reviewed results does not prove original authorship or universal absence."
+  },
+  "negativeControl": {
+    "contentHashMismatch": {
+      "assetId": "formative:yes-no-not-given:ynng-station-art",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "rightsBasis": "unknown-quarantined",
+      "reasonCodes": [
+        "authorship-unresolved",
+        "content-hash-mismatch",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    "keyLikeValueLeakFindings": [
+      "$.instruction"
+    ],
+    "spanishKeyLikeValueLeakFindings": [
+      "$.repairAction"
+    ]
+  },
+  "sources": [
+    {
+      "path": "src/data/practica-exams/seo-catalog.ts",
+      "sha256": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de"
+    },
+    {
+      "path": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given/page.tsx",
+      "sha256": "c881fec762bbc38fbdc9c88f9cdd4427f0657ff99c9abde97cacf510f90d8956"
+    },
+    {
+      "path": "src/components/exam-practice/ObjectivePracticeEngine.tsx",
+      "sha256": "7cb6be10adb1c2e4d2c35b19abe3ab6c8c939a74b3c21432c835042bef01051c"
+    },
+    {
+      "path": "src/components/exam-practice/ObjectivePracticeSetBank.tsx",
+      "sha256": "25823a7a418319104af37259c029add0df48a01e6539c61a03b285f68e4b339b"
+    },
+    {
+      "path": "src/lib/ielts/academic-reading-rights.ts",
+      "sha256": "cabd4adf35c75a14a3537bb07e5db4ef9ce8bc0c1a6f4a276d25518732923643"
+    },
+    {
+      "path": "src/data/practica-exams/ielts-reading-rights-registry.ts",
+      "sha256": "e0b8774fd4166724b5355923b6db4f81bf55a945949cd319d6cf391bb2de0fcf"
+    },
+    {
+      "path": "scripts/check-ielts-reading-ynng-rights.mjs",
+      "sha256": "1ad82131199b4efb8f52b1f242ac106850b3bc374556028c614e21033578af66"
+    },
+    {
+      "path": "tests/ielts-reading-ynng-rights.test.mjs",
+      "sha256": "314bfd87b1b384f13bbcc31be01399a161ba5e99909c9450dd9b285267a065eb"
+    },
+    {
+      "path": "docs/ielts-reading-loop.md",
+      "sha256": "1b8613a0065094dac8f6394e32fe48ceea8d31d2f44cf0e5f373751667314b32"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-ynng-2026-08-09/baseline.json",
+      "sha256": "96ab84cec67a31a9c375a48e65adef659e0e5e0699b3bb03a5532ae1baca9ed8"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-ynng-2026-08-09/source-availability.json",
+      "sha256": "b3873b7af6f5c574ca290e1b9cae26889bde78c396bd1613e5c444709ee458a2"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-ynng-2026-08-09/provenance-search.json",
+      "sha256": "73b997bc34bb106463b02a83b7d83834883d014c0b553a85bcf1590a8cdc8d69"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-ynng-2026-08-09/unit-change-manifest.json",
+      "sha256": "98343a252c18bc129dc4057874085b78afde895485befe54aa3ae2636bb4e905"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-ynng-2026-08-09/blind-review.json",
+      "sha256": "5a7d7550b4cf47168adc018c40a95279c37e427dbf9ba63bbfbe53cc85798ea8"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-ynng-2026-08-09/factual-source-review.json",
+      "sha256": "d7db6369b71ca8dd478d66450fa81845850cecfa82e10cb83cd8d94004693e69"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-ynng-2026-08-09/expert-first-pass.json",
+      "sha256": "4fc67f01fb5699a888b6f112725f71236ce75a3793f51962041565cd37653813"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-ynng-2026-08-09/expert-verdict.json",
+      "sha256": "5a6f884ce532a34acc74e6f2a17c346904914df8789a07ccde795f85b78004b5"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-ynng-2026-08-09/student-walkthrough.json",
+      "sha256": "8c9689402d22bee7484f4e065cbd022c29512dfcb46767d3469035684291ea31"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-ynng-2026-08-09/audit-verdicts.json",
+      "sha256": "67b162b6faab53bcd5c39875f86415ddffbf0892264db01fd7d16b6008680dd0"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-ynng-2026-08-09/build-report.mjs",
+      "sha256": "c6ece4063202642c0fb6d4ec6d2322ba0de43a04be3401ad43e21d2d7b95aa51"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-ynng-2026-08-09/report.md",
+      "sha256": "190dda3b42b95ab29108dd3d6883da7f4a8bee1dc77cd6448877cfc77c2c4ea5"
+    }
+  ]
+}

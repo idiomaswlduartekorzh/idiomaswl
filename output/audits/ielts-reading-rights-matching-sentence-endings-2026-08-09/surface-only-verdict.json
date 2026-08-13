@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "ielts-reading-matching-sentence-endings-surface-only-verdict.v1",
+  "reviewer": {
+    "reviewerRunId": "mse-surface-reviewer-2026-08-09-surface-regenerated",
+    "reviewedAt": "2026-08-09T15:23:05Z",
+    "packetSha256": "37fe9d0e59faff2b7254c73aad0c966de4c6f81ca007c267cae772a635d0a2d7",
+    "sourceContext": "surface-only-packet-only",
+    "humanSignature": false,
+    "notes": [
+      "Reviewed only from the sentence starts and ending options in the regenerated surface-only packet.",
+      "Grammar compatibility includes syntactically attachable continuations but excludes clear local pronoun-number mismatches; generic coherence is broader than factual correctness."
+    ]
+  },
+  "records": [
+    {
+      "questionId": "mse-microclimates-01",
+      "grammarCompatibleEndingIds": ["A", "C", "E", "F", "G"],
+      "grammarOnlyUniqueEndingId": null,
+      "genericCoherenceCandidateEndingIds": ["A"],
+      "genericCoherenceUniqueEndingId": "A",
+      "notes": "The singular/mass start rejects plural-anaphor endings. Among the remaining choices, only A supplies a direct, generically coherent reason for rejecting a city-wide-only framing."
+    },
+    {
+      "questionId": "mse-microclimates-02",
+      "grammarCompatibleEndingIds": ["A", "B", "C", "D", "E", "G", "H"],
+      "grammarOnlyUniqueEndingId": null,
+      "genericCoherenceCandidateEndingIds": ["A", "B", "C", "E", "G"],
+      "genericCoherenceUniqueEndingId": null,
+      "notes": "The plural subject supports they but not the singular it in F. Several explanations, mechanisms, and a concession remain superficially interpretable without passage evidence."
+    },
+    {
+      "questionId": "mse-microclimates-03",
+      "grammarCompatibleEndingIds": ["A", "B", "C", "D", "E", "G", "H"],
+      "grammarOnlyUniqueEndingId": null,
+      "genericCoherenceCandidateEndingIds": ["A", "B", "C", "D", "E", "H"],
+      "genericCoherenceUniqueEndingId": null,
+      "notes": "Shade structures is plural, so F is the only clear agreement failure. Multiple causal, instrumental, conditional, and temporal endings remain generically coherent."
+    },
+    {
+      "questionId": "mse-microclimates-04",
+      "grammarCompatibleEndingIds": ["A", "C", "E", "F", "G"],
+      "grammarOnlyUniqueEndingId": null,
+      "genericCoherenceCandidateEndingIds": ["A", "E"],
+      "genericCoherenceUniqueEndingId": null,
+      "notes": "Plural-anaphor endings lack a local antecedent. A gives a plausible reason and E a superficially intelligible qualification, while C, F, and G do not coherently connect modelling to the stated circumstance."
+    },
+    {
+      "questionId": "mse-microclimates-05",
+      "grammarCompatibleEndingIds": ["A", "C", "E", "F", "G"],
+      "grammarOnlyUniqueEndingId": null,
+      "genericCoherenceCandidateEndingIds": ["F"],
+      "genericCoherenceUniqueEndingId": "F",
+      "notes": "The singular space supports it and not they. Only F gives a direct generic condition under which a public space would have limited value."
+    },
+    {
+      "questionId": "mse-microclimates-06",
+      "grammarCompatibleEndingIds": ["A", "B", "C", "D", "E", "G", "H"],
+      "grammarOnlyUniqueEndingId": null,
+      "genericCoherenceCandidateEndingIds": ["A", "B", "C", "D", "E", "H"],
+      "genericCoherenceUniqueEndingId": null,
+      "notes": "The plural subject excludes F by local agreement. Several explanations, mechanisms, conditions, and timing statements remain coherent at surface level."
+    },
+    {
+      "questionId": "mse-food-waste-01",
+      "grammarCompatibleEndingIds": ["A", "B", "C", "D", "E", "F", "G", "H"],
+      "grammarOnlyUniqueEndingId": null,
+      "genericCoherenceCandidateEndingIds": ["A", "H"],
+      "genericCoherenceUniqueEndingId": null,
+      "notes": "All continuations are syntactically attachable, but A and H alone provide clear generic upstream reasons not to assign sole blame to consumers."
+    },
+    {
+      "questionId": "mse-food-waste-02",
+      "grammarCompatibleEndingIds": ["A", "B", "C", "E", "F", "G", "H"],
+      "grammarOnlyUniqueEndingId": null,
+      "genericCoherenceCandidateEndingIds": ["A", "B", "H"],
+      "genericCoherenceUniqueEndingId": null,
+      "notes": "The plural systems does not provide the singular antecedent needed by D. A, B, and H remain plausible surface explanations or mechanisms for forecasting."
+    },
+    {
+      "questionId": "mse-food-waste-03",
+      "grammarCompatibleEndingIds": ["A", "B", "C", "D", "E", "F", "G", "H"],
+      "grammarOnlyUniqueEndingId": null,
+      "genericCoherenceCandidateEndingIds": ["C", "D"],
+      "genericCoherenceUniqueEndingId": null,
+      "notes": "Imperfect produce licenses singular it and every ending is syntactically possible. C and D are the two conditions that remain generically related to how such produce is presented or sold."
+    },
+    {
+      "questionId": "mse-food-waste-04",
+      "grammarCompatibleEndingIds": ["A", "B", "C", "E", "F", "G", "H"],
+      "grammarOnlyUniqueEndingId": null,
+      "genericCoherenceCandidateEndingIds": ["A", "H"],
+      "genericCoherenceUniqueEndingId": null,
+      "notes": "The plural programmes lacks a singular antecedent for D. A and H can generically motivate a redistribution programme; the other endings are mismatched in role or logic."
+    },
+    {
+      "questionId": "mse-food-waste-05",
+      "grammarCompatibleEndingIds": ["A", "B", "C", "D", "E", "F", "G", "H"],
+      "grammarOnlyUniqueEndingId": null,
+      "genericCoherenceCandidateEndingIds": ["G"],
+      "genericCoherenceUniqueEndingId": "G",
+      "notes": "All endings can attach syntactically, but only G yields a coherent classification of composting as an option for food that cannot be eaten."
+    },
+    {
+      "questionId": "mse-food-waste-06",
+      "grammarCompatibleEndingIds": ["A", "B", "C", "E", "F", "G", "H"],
+      "grammarOnlyUniqueEndingId": null,
+      "genericCoherenceCandidateEndingIds": ["A", "H"],
+      "genericCoherenceUniqueEndingId": null,
+      "notes": "The plural nouns do not license D's singular it. A and H remain generic causal accounts of why restaurants might end up with surplus."
+    },
+    {
+      "questionId": "mse-libraries-01",
+      "grammarCompatibleEndingIds": ["A", "B", "C", "D", "E", "F", "G", "H"],
+      "grammarOnlyUniqueEndingId": null,
+      "genericCoherenceCandidateEndingIds": ["A", "B", "C", "E", "G", "H"],
+      "genericCoherenceUniqueEndingId": null,
+      "notes": "All endings are grammatical with the plural subject. Several reasons, mechanisms, conditions, timing statements, and limitations remain generically coherent."
+    },
+    {
+      "questionId": "mse-libraries-02",
+      "grammarCompatibleEndingIds": ["A", "B", "C", "D", "E", "F", "G", "H"],
+      "grammarOnlyUniqueEndingId": null,
+      "genericCoherenceCandidateEndingIds": ["B", "C", "E", "G", "H"],
+      "genericCoherenceUniqueEndingId": null,
+      "notes": "Staff can be construed as plural in this context, leaving all endings grammatical. Five endings retain a plausible guidance, timing, evidence, or role-limitation relation."
+    },
+    {
+      "questionId": "mse-libraries-03",
+      "grammarCompatibleEndingIds": ["A", "B", "C", "D", "E", "F", "G", "H"],
+      "grammarOnlyUniqueEndingId": null,
+      "genericCoherenceCandidateEndingIds": ["B", "C", "E", "G", "H"],
+      "genericCoherenceUniqueEndingId": null,
+      "notes": "Every ending attaches grammatically to the plural workshops. Several mechanisms, circumstances, and limitations remain plausible without passage evidence."
+    },
+    {
+      "questionId": "mse-libraries-04",
+      "grammarCompatibleEndingIds": ["A", "B", "C", "D", "E", "F", "G", "H"],
+      "grammarOnlyUniqueEndingId": null,
+      "genericCoherenceCandidateEndingIds": ["B", "C", "E", "G", "H"],
+      "genericCoherenceUniqueEndingId": null,
+      "notes": "The trailing adjuncts can grammatically modify the reported contribution. B, C, E, G, and H remain superficially coherent descriptions or limitations of residents' role."
+    },
+    {
+      "questionId": "mse-libraries-05",
+      "grammarCompatibleEndingIds": ["A", "B", "C", "D", "E", "F", "G", "H"],
+      "grammarOnlyUniqueEndingId": null,
+      "genericCoherenceCandidateEndingIds": ["A", "B", "C", "E", "G", "H"],
+      "genericCoherenceUniqueEndingId": null,
+      "notes": "All endings agree grammatically with libraries. Multiple reasons, mechanisms, conditions, timing statements, and limitations can generically explain value."
+    },
+    {
+      "questionId": "mse-libraries-06",
+      "grammarCompatibleEndingIds": ["A", "B", "C", "D", "E", "F", "G", "H"],
+      "grammarOnlyUniqueEndingId": null,
+      "genericCoherenceCandidateEndingIds": ["H"],
+      "genericCoherenceUniqueEndingId": "H",
+      "notes": "Every ending is syntactically attachable, but only H directly and coherently justifies why libraries should not bear emergency-management responsibility alone."
+    }
+  ]
+}

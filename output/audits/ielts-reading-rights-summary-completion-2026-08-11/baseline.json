@@ -1,0 +1,215 @@
+{
+  "schemaVersion": "ielts-reading-summary-completion-baseline.v1",
+  "capturedAt": "2026-08-11T14:40:00Z",
+  "scope": {
+    "unit": "F0.2b.9",
+    "format": "summary-completion",
+    "passages": 3,
+    "questions": 18,
+    "blanks": 18
+  },
+  "assets": [
+    {
+      "assetId": "formative:summary-completion:summary-urban-farms",
+      "setId": "summary-urban-farms",
+      "title": "Rooftop farms in modern cities",
+      "wordCount": 228,
+      "paragraphCount": 4,
+      "questionCount": 6,
+      "blankCount": 6,
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "questionIds": [
+        "summary-urban-farms-01",
+        "summary-urban-farms-02",
+        "summary-urban-farms-03",
+        "summary-urban-farms-04",
+        "summary-urban-farms-05",
+        "summary-urban-farms-06"
+      ],
+      "sourceObjectSha256": "f10464976342bfef4607a46ba77d611310ffd7cabeae7c9949bd78a100d93640",
+      "passageSha256": "71854aeab48ed3c297f05b2c6c5f3ce081c4febe7e8799d61ece40364f84e80e"
+    },
+    {
+      "assetId": "formative:summary-completion:summary-repair-cafes",
+      "setId": "summary-repair-cafes",
+      "title": "Community repair cafes",
+      "wordCount": 253,
+      "paragraphCount": 4,
+      "questionCount": 6,
+      "blankCount": 6,
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "questionIds": [
+        "summary-repair-cafes-01",
+        "summary-repair-cafes-02",
+        "summary-repair-cafes-03",
+        "summary-repair-cafes-04",
+        "summary-repair-cafes-05",
+        "summary-repair-cafes-06"
+      ],
+      "sourceObjectSha256": "1d4de4d085159c2cb86336bc9f7277d39f26e1ab4d5ff3a4eac0c4a5ff03f2c4",
+      "passageSha256": "d335aea3d71ba26b7fa484f697a5b73b9bc4745937ca0d8dd60c18582f88e4ca"
+    },
+    {
+      "assetId": "formative:summary-completion:summary-shade-mapping",
+      "setId": "summary-shade-mapping",
+      "title": "Mapping shade in hot cities",
+      "wordCount": 242,
+      "paragraphCount": 4,
+      "questionCount": 6,
+      "blankCount": 6,
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "questionIds": [
+        "summary-shade-mapping-01",
+        "summary-shade-mapping-02",
+        "summary-shade-mapping-03",
+        "summary-shade-mapping-04",
+        "summary-shade-mapping-05",
+        "summary-shade-mapping-06"
+      ],
+      "sourceObjectSha256": "1321f00ec9e13f803a18a8582c40aad5398dd1ea73dd04eb552d6a1eec5e0230",
+      "passageSha256": "663aa18c9170a448f562bcfe4d3b10d70494198020800995dd978dfc07a97307"
+    }
+  ],
+  "hashMethods": {
+    "sourceObjectSha256": "SHA-256 of recursively key-sorted JSON for the complete source set object.",
+    "passageSha256": "SHA-256 of the passage text only after NFKC normalization and whitespace collapse to single spaces; this is the canonical method used by rights registry policy v8, whose version identifies policy/schema rather than unit count."
+  },
+  "structuralRisk": {
+    "wordLimitContract": {
+      "declaredInstruction": "NO MORE THAN TWO WORDS",
+      "setsWithDeclaredInstruction": 3,
+      "setsWithMaxWordsField": 0,
+      "runtimeHardCodedDisplayLimit": 2,
+      "wordLimitParticipatesInScoring": false
+    },
+    "answerSurfaceProfile": {
+      "questions": 18,
+      "oneWordPrimaryAnswers": 7,
+      "twoWordPrimaryAnswers": 11,
+      "primaryAnswersOverTwoWords": 0,
+      "primaryAnswersExactPassageTokenSequences": 18,
+      "primaryAnswerTokenSequencesUniqueWithinBank": 18,
+      "questionsWithAcceptedAlternativeEntry": 1,
+      "rawAcceptedEntries": 19,
+      "normalizedAcceptedValues": 19,
+      "normalizedRedundantAlternativeEntries": 0,
+      "grammaticallyInvalidAlternativeEntries": 1,
+      "manuallyClassifiedNominalOrNounPhrasePrimaryAnswers": 18,
+      "manualClassificationCaveat": "Manual structural classification; it is not an IELTS rule or a statistical POS/content-quality certification."
+    },
+    "textOrder": {
+      "setsWithStrictlyAscendingEvidenceOrder": 3,
+      "totalSets": 3,
+      "orderViolations": 0,
+      "canonicalAnswersWithExactlyOneWholeTokenOccurrence": 17,
+      "canonicalAnswersWithMultipleWholeTokenOccurrences": 1,
+      "naiveFirstMatchOrderViolationQuestionIds": [
+        "summary-urban-farms-06"
+      ],
+      "intendedWholeTokenOffsetsPinned": 18
+    },
+    "shortcutSignals": {
+      "questionsWithUniqueExactPromptPassageBigram": 16,
+      "alwaysTwoWordPrimaryAnswerHits": 11,
+      "sameQuestionPositionAcrossSetsModalEvidenceParagraphHits": 17,
+      "manuallyClassifiedNominalOrNounPhrasePrimaryAnswers": 18,
+      "questionsWithHintsAvailableBeforeResponse": 18,
+      "preResponseHintsWithAnchorOrLocationLanguage": 16,
+      "preResponseHintsWithParaphraseOnly": 2,
+      "questionsWithPostCheckExplanation": 18,
+      "sameQuestionPositionAcrossSetsModalPrimaryAnswerWordCountHits": 13,
+      "sameQuestionPositionAcrossSetsEligible": 18,
+      "surfaceShortcutReviewRequired": true
+    },
+    "normalizationContract": {
+      "trimOuterWhitespace": true,
+      "lowercase": true,
+      "collapseInternalWhitespace": true,
+      "removeTrailingAsciiPunctuation": ".,;:!?",
+      "unicodeNormalization": false,
+      "hyphenNormalization": false,
+      "acceptedVariantsOnlyWhenExplicitAlternativeExists": true
+    }
+  },
+  "runtimeAndAccessibilityBaseline": {
+    "runtimeClassification": "guided-training-runtime-with-immediate-feedback-not-practice-or-exam-simulation",
+    "answerKeysDeliveredToClient": true,
+    "inputLocksAfterExplicitCheck": true,
+    "inputLocksWhileTyping": false,
+    "correctnessAndExplanationShownImmediatelyAfterCheck": true,
+    "hintsAvailableBeforeResponse": true,
+    "attemptStatePersisted": false,
+    "resetRequiresConfirmation": false,
+    "resetScope": "all-six-blanks-in-one-passage-engine",
+    "wordLimitVisualWarningPresent": true,
+    "wordLimitEnforcedInScoring": false,
+    "inputAccessibleNamePresent": true,
+    "inputAccessibleNamesUniqueAcrossThreeSets": false,
+    "breadcrumbHasNavAndCurrentSemantics": true,
+    "englishPassageHasLangAttribute": false,
+    "progressIndicatorHasProgrammaticRoleNameAndValue": false,
+    "feedbackHasLiveRegion": false,
+    "hintToggleHasExpandedAndControlsSemantics": false,
+    "headingHierarchyIsOrdered": false,
+    "feedbackFocusManaged": false,
+    "uiUxStaticReviewApplicable": true,
+    "playwrightApplicableToAuditOnlyScaffoldDelta": false,
+    "playwrightBecomesApplicableOnLearnerFacingOrRuntimeDrift": true
+  },
+  "learnerFacingSourceSha256": {
+    "src/data/practica-exams/seo-catalog.ts": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de",
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/summary-completion/page.tsx": "42b3c482e04c4a0453aced1b42d669a67f6063ad1f1e0d8fb9668daac18c22ed",
+    "src/components/exam-practice/SummaryCompletionPracticeEngine.tsx": "cae94b947ffc61e112fbe13269ad48e1ee121ca7faeccc8b370d2b124893de98",
+    "src/components/exam-practice/SummaryCompletionPassageBank.tsx": "54a78799014098dd5f159f63bf654ad12181042be40182ab8381bfc1e51a3c58",
+    "src/components/exam-practice/OfficialStrategyCard.tsx": "b4f575bd4bc3655f5f0682404f3d937020b4cfd3d54b42adac758647d9133e3e",
+    "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx": "73d3b725c68c0ed193ceba23ebddca3fec7978f6e84712c99b3dddc190443711",
+    "src/components/exam-practice/StructuredData.tsx": "3e59a611e4d2bac9ce5994bdbd4ba6303407a5ddf82b26a340efe1f3c2b788d8"
+  },
+  "routeObjectSha256": "06654687307ce15a00429a58bcbc8cc5cf0b5b78593306613acff7fa26c6f0a4",
+  "renderDependencyClosureSha256": {
+    "src/app/(site)/layout.tsx": "b427054c94eb33f0177c05c241a2b3920c76e2b7497ad3822b7f379f8b9f2a11",
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/summary-completion/page.tsx": "42b3c482e04c4a0453aced1b42d669a67f6063ad1f1e0d8fb9668daac18c22ed",
+    "src/app/globals.css": "60efb283eab56b59072c8e43ac7469a3c34977346079600b525b19556207915d",
+    "src/app/layout.tsx": "03d06f0aba4ac802fd9bf69b63229af511a8f4daa132d405dfc36a1a19f01dda",
+    "src/components/SiteNav.tsx": "9114393b428d703d41f84807e6322527c2f79036e4fe05eb8b43cd1238e4307b",
+    "src/components/SiteSkipLink.tsx": "d0c3ca1c465744e16e756623c704834083518acc1c84d83f09b581071cef967e",
+    "src/components/ThemeProvider.tsx": "0bfdbb8105d100202331d5409c3b3cf0cd8ae8a0d231c03ec93c8836ca06c340",
+    "src/components/WhatsAppFloat.tsx": "762256aadcff27912dacf99bb56d6fc6222ad0e54104910a545e8954b0a02255",
+    "src/components/exam-practice/OfficialStrategyCard.tsx": "b4f575bd4bc3655f5f0682404f3d937020b4cfd3d54b42adac758647d9133e3e",
+    "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx": "73d3b725c68c0ed193ceba23ebddca3fec7978f6e84712c99b3dddc190443711",
+    "src/components/exam-practice/StructuredData.tsx": "3e59a611e4d2bac9ce5994bdbd4ba6303407a5ddf82b26a340efe1f3c2b788d8",
+    "src/components/exam-practice/SummaryCompletionPassageBank.tsx": "54a78799014098dd5f159f63bf654ad12181042be40182ab8381bfc1e51a3c58",
+    "src/components/exam-practice/SummaryCompletionPracticeEngine.tsx": "cae94b947ffc61e112fbe13269ad48e1ee121ca7faeccc8b370d2b124893de98",
+    "src/data/practica-exams/seo-catalog.ts": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de",
+    "src/lib/ielts/academic-reading-question-types.ts": "455924c25a1e33355265497a5c51d4cdb7d34864b34d539f1a7b91bedf3ce3ec",
+    "src/lib/supabase/client.ts": "acb02d5d75dad866b04380241e3a40623de46f098ee98ff017be8138c0d076e4"
+  },
+  "nextUnit": {
+    "unit": "F0.2b.10",
+    "format": "note-completion",
+    "sourceSha256": {
+      "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/note-completion/page.tsx": "fa2f8f73b4ea5e407fa97ee1d5b5946752dddb84dbbba0337e9a1c339446678b",
+      "src/components/exam-practice/NoteCompletionEngine.tsx": "d032c0726e0cbf1f0426a52ffded5c3dff0582d58a6a4af636587004ccd000a5",
+      "src/components/exam-practice/NoteCompletionPassageBank.tsx": "e553cf1f0b2fa30eafedf3d94ed4686dd9008a772c8a88cd23bd33e22b23ebf4",
+      "src/lib/ielts/academic-reading-question-types.ts": "455924c25a1e33355265497a5c51d4cdb7d34864b34d539f1a7b91bedf3ce3ec",
+      "src/data/practica-exams/seo-catalog.ts": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de"
+    },
+    "routeObjectSha256": "75461a7de98bdf9e4e1ea5966e4a0f52423c62ce3da5c8f241587d8cef5af6d8",
+    "sourceObjectSha256": {
+      "note-mobile-libraries": "8d64253dbba9480da1cb9de4082bbf4c7bbee221fc17f748e9f9ddaeadb8ea3f",
+      "note-seed-banks": "f67761984beb116c7f80dbc9f8807b976a79dda2a2890fdc9b926c8815c438ff",
+      "note-night-libraries": "e77d5edaaaefd183affe68194bf95ad7cd6696cdbecc1148b7281c46c8f46ccd"
+    },
+    "scope": {
+      "passages": 3,
+      "questions": 18,
+      "renderDependencyClosurePaths": 15
+    },
+    "sharedDependencyBoundary": [
+      "src/components/exam-practice/NoteCompletionEngine.tsx",
+      "src/components/exam-practice/NoteCompletionPassageBank.tsx",
+      "src/data/practica-exams/seo-catalog.ts"
+    ]
+  },
+  "interpretation": "Frozen audit-only learner-facing and static render identity for F0.2b.9. This baseline contains IDs, counts, aggregate surface measurements and hashes, but no answer strings, accepted-answer values, explanations, hints, learner input or PII. Hashes cover source objects that contain runtime keys without disclosing those keys here. The three assets remain unknown-quarantined. Static UI/UX review records inherited defects; Playwright is not applicable to this audit-only delta while every direct and render-closure hash remains unchanged, and that is not a conformity finding. Runtime-generated and remote copy remain outside the static closure. Work stops before F0.2b.10 Note Completion."
+}

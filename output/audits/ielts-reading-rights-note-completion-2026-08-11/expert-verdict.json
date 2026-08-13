@@ -1,0 +1,349 @@
+{
+  "schemaVersion": "ielts-reading-note-completion-expert-verdict.v1",
+  "reviewer": {
+    "reviewerRunId": "f02b10-note-completion-clean-review-20260811T160856Z",
+    "reviewedAt": "2026-08-11T16:21:53Z",
+    "blindPacketSha256": "4654dd3245bc5d7dc550556908027af3220b28f3b354602e8328a0df12c43721",
+    "firstPassSha256": "c694ec40809f26f6fecb2910802b61f76f84e23b826e15c4d44106eda7783f29",
+    "factualPacketSha256": "be69fa1790a7b44304b2d193d013b0da3b7265308fc5f1f01694376f1f5a49da",
+    "openedEvidenceIds": [
+      "ielts-note-completion-official-samples",
+      "ielts-note-completion-official-format",
+      "note-mobile-nsw-outreach-report",
+      "note-mobile-wingecarribee-timetable",
+      "note-mobile-derbyshire-village-hall-stops",
+      "note-mobile-nsw-library-partnerships",
+      "note-mobile-australia-public-library-guidelines",
+      "note-seed-fao-borrow-return",
+      "note-seed-cgiar-community-adaptation",
+      "note-seed-croptrust-registration",
+      "note-seed-fao-storage",
+      "note-seed-fao-viability-regeneration",
+      "note-night-tasmania-open-library-trial",
+      "note-night-nsw-extended-study-hours",
+      "note-night-albany-after-hours-study",
+      "note-night-kuringgai-foyer",
+      "note-night-ryde-opening-trial"
+    ],
+    "sourceContext": "two-pass-blind-then-factual-and-policy-sources",
+    "reviewSequence": ["blind-review", "factual-and-policy-source-review"],
+    "directSourceReview": true,
+    "humanSignature": false,
+    "notes": "The authorized official IELTS sample page, official IELTS Academic Reading format page and all 15 candidate factual URLs were opened directly after the blind first pass. The format page confirms that type 9 notes normally summarize part rather than the whole text, answers may not follow text order, answers usually come from one part, and stated word limits govern scoring. The Crop Trust registration PDF returned a non-retryable safe-open error, and the designated FAO viability URL resolved to unrelated proceedings; affected findings are conservatively marked untraceable or only partially supported."
+  },
+  "records": [
+    {
+      "assetId": "formative:note-completion:note-mobile-libraries",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "high",
+        "representationRisk": "high",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "low",
+        "wordLimitRisk": "low",
+        "questionOrderRisk": "high",
+        "promptCueRisk": "medium",
+        "hintCueRisk": "not-assessed",
+        "notes": "Official IELTS materials confirm note completion as an Academic Reading task, but this bank's six answers run in strict passage order across nearly the whole text and often mirror source syntax. Direct sources support mobile access, schedules and operating-cost examples, yet not the passage's exact destination bundle, market-day routine, comparative importance claim or broad causal framing."
+      },
+      "questions": [{"questionId":"note-mobile-libraries-01","selectedAnswer":"expensive","normalizedSelectedAnswer":"expensive","selectedAnswerWordCount":1,"completedSentence":"Used where permanent branches are too expensive to maintain.","grammaticalFit":"natural","selectedAnswerPassageSpan":{"text":"expensive","start":138,"end":147},"evidenceQuotes":["In several rural regions, mobile libraries have become a practical way to keep reading services available when permanent branches are too expensive to maintain."],"closestCompetingAnswer":"available","closestCompetitorPassageSpan":{"text":"available","start":96,"end":105},"competitorFailure":"Available fits the adjective slot but reverses the causal meaning: availability is the service goal, not the reason permanent branches cannot be maintained.","ambiguity":"none","reasoning":"The passage repeats the complete clause permanent branches are too expensive to maintain, so the literal adjective expensive is uniquely supported."},{"questionId":"note-mobile-libraries-02","selectedAnswer":"community halls","normalizedSelectedAnswer":"community halls","selectedAnswerWordCount":2,"completedSentence":"Vans take reading materials to schools, markets and community halls.","grammaticalFit":"natural","selectedAnswerPassageSpan":{"text":"community halls","start":289,"end":304},"evidenceQuotes":["Instead of asking residents to travel long distances, vans carry books, magazines and digital materials to schools, markets and community halls on a regular schedule."],"closestCompetingAnswer":"health centres","closestCompetitorPassageSpan":{"text":"health centres","start":1363,"end":1377},"competitorFailure":"Health centres is a later partnership item, not the destination completing the passage's delivery list after schools and markets.","ambiguity":"none","reasoning":"The note preserves the exact destination sequence from the first paragraph, making community halls the only supported continuation."},{"questionId":"note-mobile-libraries-03","selectedAnswer":"market days","normalizedSelectedAnswer":"market days","selectedAnswerWordCount":2,"completedSentence":"In farming areas, visits may happen after market days.","grammaticalFit":"natural","selectedAnswerPassageSpan":{"text":"market days","start":442,"end":453},"evidenceQuotes":["In farming areas, visits are often arranged after market days, when families are already near a central meeting place."],"closestCompetingAnswer":"early mornings","closestCompetitorPassageSpan":{"text":"early mornings","start":552,"end":566},"competitorFailure":"Early mornings belongs to the contrasting coastal-town schedule and is something that schedule avoids, not the farming-area event after which visits occur.","ambiguity":"none","reasoning":"The farming-area sentence explicitly locates visits after market days and the two-word span completes the note naturally."},{"questionId":"note-mobile-libraries-04","selectedAnswer":"timetable","normalizedSelectedAnswer":"timetable","selectedAnswerWordCount":1,"completedSentence":"A predictable timetable can be as important as collection size.","grammaticalFit":"natural","selectedAnswerPassageSpan":{"text":"timetable","start":641,"end":650},"evidenceQuotes":["Librarians say that a predictable timetable matters as much as the size of the collection because people need to know when the service will arrive."],"closestCompetingAnswer":"schedule","closestCompetitorPassageSpan":{"text":"schedule","start":533,"end":541},"competitorFailure":"Schedule is a close semantic substitute, but the comparative claim in the note directly condenses the later sentence containing predictable timetable and the collection-size comparison.","ambiguity":"minor","reasoning":"Timetable has exact local support in the sentence paraphrased by the note; schedule remains superficially plausible because it occurs nearby and is synonymous."},{"questionId":"note-mobile-libraries-05","selectedAnswer":"public offices","normalizedSelectedAnswer":"public offices","selectedAnswerWordCount":2,"completedSentence":"Staff may help residents search for courses or contact public offices.","grammaticalFit":"natural","selectedAnswerPassageSpan":{"text":"public offices","start":1029,"end":1043},"evidenceQuotes":["Staff use the connection to help residents download forms, search for courses or contact public offices."],"closestCompetingAnswer":"visiting librarians","closestCompetitorPassageSpan":{"text":"visiting librarians","start":1137,"end":1156},"competitorFailure":"Visiting librarians can grammatically be contacted, but the phrase belongs to the separate description of children's activities and does not complete the enumerated support action.","ambiguity":"none","reasoning":"The note reproduces the passage's coordinated actions search for courses or contact public offices, providing exact and local support."},{"questionId":"note-mobile-libraries-06","selectedAnswer":"volunteer groups","normalizedSelectedAnswer":"volunteer groups","selectedAnswerWordCount":2,"completedSentence":"Programmes often need partnerships with schools, health centres and volunteer groups.","grammaticalFit":"natural","selectedAnswerPassageSpan":{"text":"volunteer groups","start":1382,"end":1398},"evidenceQuotes":["Successful programmes therefore build partnerships with schools, health centres and volunteer groups."],"closestCompetingAnswer":"public offices","closestCompetitorPassageSpan":{"text":"public offices","start":1029,"end":1043},"competitorFailure":"Public offices is a grammatically plausible institution, but it is named as a resident contact rather than as the final member of the partnerships list.","ambiguity":"none","reasoning":"Volunteer groups is the exact final item in the partnership list repeated by the note."}],
+      "factualClaims": [
+        {
+          "claim": "mobile libraries have become a practical way to keep reading services available when permanent branches are too expensive to maintain.",
+          "assessment": "oversimplified",
+          "evidenceIds": ["note-mobile-nsw-outreach-report"],
+          "sourceFindings": [
+            {
+              "evidenceId": "note-mobile-nsw-outreach-report",
+              "locator": "PDF pp. 6-8, 37 and 69; mobile-library definitions and current-service discussion",
+              "evidenceNote": "The report says mobile libraries extend access where no library building exists, where people have difficulty accessing libraries, and where population may not warrant a static branch. It does not establish that fixed branches are generally too expensive to maintain."
+            }
+          ],
+          "note": "The access rationale is supported, but the passage turns one possible economic and demographic rationale into a broad causal statement."
+        },
+        {
+          "claim": "vans carry books, magazines and digital materials to schools, markets and community halls on a regular schedule.",
+          "assessment": "oversimplified",
+          "evidenceIds": ["note-mobile-wingecarribee-timetable", "note-mobile-derbyshire-village-hall-stops"],
+          "sourceFindings": [
+            {
+              "evidenceId": "note-mobile-wingecarribee-timetable",
+              "locator": "Mobile Library page, service description and 2026 timetable",
+              "evidenceNote": "The council documents fortnightly visits to towns and villages, a published timetable, and holdings including books and magazines, but not the exact schools-markets-community-halls destination bundle or digital-material claim."
+            },
+            {
+              "evidenceId": "note-mobile-derbyshire-village-hall-stops",
+              "locator": "Places served table, entries for village halls, Market Place and locations near schools",
+              "evidenceNote": "The schedule includes stops at several village halls, a Market Place and school-adjacent locations, but these are separate examples and do not verify the passage's combined list or carried materials."
+            }
+          ],
+          "note": "Regular mobile-library routes and some listed destinations are real, while the exact composite sentence is not directly sourced."
+        },
+        {
+          "claim": "In farming areas, visits are often arranged after market days",
+          "assessment": "untraceable",
+          "evidenceIds": ["note-mobile-derbyshire-village-hall-stops"],
+          "sourceFindings": [
+            {
+              "evidenceId": "note-mobile-derbyshire-village-hall-stops",
+              "locator": "Places served table, Castleton Market Place entry",
+              "evidenceNote": "The source shows a scheduled stop at a place called Market Place, not a practice of arranging farming-area visits after market days."
+            }
+          ],
+          "note": "No opened candidate source substantiated either the claimed prevalence or the timing after market days."
+        },
+        {
+          "claim": "a predictable timetable matters as much as the size of the collection",
+          "assessment": "oversimplified",
+          "evidenceIds": ["note-mobile-wingecarribee-timetable"],
+          "sourceFindings": [
+            {
+              "evidenceId": "note-mobile-wingecarribee-timetable",
+              "locator": "Mobile Library page, fortnightly service statement and 2026 timetable",
+              "evidenceNote": "The source demonstrates a predictable published timetable, but it offers no comparison between timetable importance and collection size."
+            }
+          ],
+          "note": "The timetable component is concrete; the equal-importance comparison remains an unsupported rhetorical judgment."
+        },
+        {
+          "claim": "Fuel, vehicle repairs and trained staff all create costs that may rise faster than local budgets.",
+          "assessment": "oversimplified",
+          "evidenceIds": ["note-mobile-nsw-outreach-report", "note-mobile-australia-public-library-guidelines"],
+          "sourceFindings": [
+            {
+              "evidenceId": "note-mobile-nsw-outreach-report",
+              "locator": "PDF pp. 7-8 and 75; challenges and survey findings",
+              "evidenceNote": "The report identifies increasing fuel and maintenance costs, vehicle replacement expense and staffing constraints. It does not show that all three costs rise faster than local budgets."
+            },
+            {
+              "evidenceId": "note-mobile-australia-public-library-guidelines",
+              "locator": "PDF pp. 1, 27-28; budget, personnel and asset-replacement guidance",
+              "evidenceNote": "The guidelines treat operational budgets, personnel costs and asset replacement as planning considerations, without establishing the claimed relative rate of cost growth."
+            }
+          ],
+          "note": "The cost categories are credible and partly documented, but the faster-than-budgets comparison is not traced."
+        }
+      ],
+      "acceptedAnswerAssessments": [
+        {"questionId":"note-mobile-libraries-01","acceptedText":"expensive","normalizedText":"expensive","role":"canonical","passageStatus":"verbatim","wordCount":1,"grammaticalFit":"natural","evidenceIds":[],"note":"Matches the unchanged first-pass literal passage span and fits the one- to two-word limit."},
+        {"questionId":"note-mobile-libraries-02","acceptedText":"community halls","normalizedText":"community halls","role":"canonical","passageStatus":"verbatim","wordCount":2,"grammaticalFit":"natural","evidenceIds":[],"note":"Matches the unchanged first-pass literal passage span and fits the one- to two-word limit."},
+        {"questionId":"note-mobile-libraries-03","acceptedText":"market days","normalizedText":"market days","role":"canonical","passageStatus":"verbatim","wordCount":2,"grammaticalFit":"natural","evidenceIds":[],"note":"Matches the unchanged first-pass literal passage span and fits the one- to two-word limit."},
+        {"questionId":"note-mobile-libraries-04","acceptedText":"timetable","normalizedText":"timetable","role":"canonical","passageStatus":"verbatim","wordCount":1,"grammaticalFit":"natural","evidenceIds":[],"note":"Matches the unchanged first-pass literal passage span and fits the one- to two-word limit."},
+        {"questionId":"note-mobile-libraries-05","acceptedText":"public offices","normalizedText":"public offices","role":"canonical","passageStatus":"verbatim","wordCount":2,"grammaticalFit":"natural","evidenceIds":[],"note":"Matches the unchanged first-pass literal passage span and fits the one- to two-word limit."},
+        {"questionId":"note-mobile-libraries-06","acceptedText":"volunteer groups","normalizedText":"volunteer groups","role":"canonical","passageStatus":"verbatim","wordCount":2,"grammaticalFit":"natural","evidenceIds":[],"note":"Matches the unchanged first-pass literal passage span and fits the one- to two-word limit."}
+      ]
+    },
+    {
+      "assetId": "formative:note-completion:note-seed-banks",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "medium",
+        "representationRisk": "high",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "low",
+        "wordLimitRisk": "low",
+        "questionOrderRisk": "high",
+        "promptCueRisk": "medium",
+        "hintCueRisk": "not-assessed",
+        "notes": "The answer mechanics are clean and the notes are coherent, but all six targets proceed in order and are close paraphrases across the entire passage. Direct sources support borrow-and-return practice, local adaptation and basic storage, but the combined trait history, volunteer documentation workflow and regeneration claim exceed or escape the accessible evidence."
+      },
+      "questions": [{"questionId":"note-seed-banks-01","selectedAnswer":"harvest","normalizedSelectedAnswer":"harvest","selectedAnswerWordCount":1,"completedSentence":"Farmers can borrow seeds and return them after harvest.","grammaticalFit":"natural","selectedAnswerPassageSpan":{"text":"harvest","start":99,"end":106},"evidenceQuotes":["Community seed banks are local collections of seeds that farmers can borrow, grow and return after harvest."],"closestCompetingAnswer":"planting","closestCompetitorPassageSpan":{"text":"planting","start":1028,"end":1036},"competitorFailure":"Planting fits after grammatically but occurs in the later seed-testing procedure and is not when borrowed seeds are returned.","ambiguity":"none","reasoning":"The opening sentence states the borrowing cycle verbatim and ends it with after harvest."},{"questionId":"note-seed-banks-02","selectedAnswer":"drought","normalizedSelectedAnswer":"drought","selectedAnswerWordCount":1,"completedSentence":"Local varieties may resist pests or tolerate drought.","grammaticalFit":"natural","selectedAnswerPassageSpan":{"text":"drought","start":317,"end":324},"evidenceQuotes":["Many of these varieties have been selected over generations for taste, drought tolerance or resistance to local pests."],"closestCompetingAnswer":"poor soil","closestCompetitorPassageSpan":{"text":"poor soil","start":654,"end":663},"competitorFailure":"Poor soil is a grammatically plausible stress, but it appears in the documentation explanation; the passage's paired variety traits are drought tolerance and pest resistance.","ambiguity":"none","reasoning":"The note converts drought tolerance into tolerate drought while preserving the passage's contrast with pest resistance."},{"questionId":"note-seed-banks-03","selectedAnswer":"conditions","normalizedSelectedAnswer":"conditions","selectedAnswerWordCount":1,"completedSentence":"Volunteers record each seed name, collection place and growing conditions.","grammaticalFit":"natural","selectedAnswerPassageSpan":{"text":"conditions","start":496,"end":506},"evidenceQuotes":["Volunteers record the name of each seed, the place where it was collected and the conditions in which it usually grows well."],"closestCompetingAnswer":"stages","closestCompetitorPassageSpan":{"text":"stages","start":712,"end":718},"competitorFailure":"Growing stages is grammatical, but stages are represented in photographs rather than listed among the information volunteers record for each seed.","ambiguity":"none","reasoning":"Growing conditions is the compact nominalisation of the recorded conditions in which a seed grows well."},{"questionId":"note-seed-banks-04","selectedAnswer":"identify","normalizedSelectedAnswer":"identify","selectedAnswerWordCount":1,"completedSentence":"Photos can help younger farmers identify plants correctly.","grammaticalFit":"natural","selectedAnswerPassageSpan":{"text":"identify","start":742,"end":750},"evidenceQuotes":["Some banks also photograph plants at different stages so younger farmers can identify them correctly."],"closestCompetingAnswer":"photograph","closestCompetitorPassageSpan":{"text":"photograph","start":681,"end":691},"competitorFailure":"Photograph forms a grammatical sentence, but banks create the photos by photographing plants; the photos then help younger farmers identify them.","ambiguity":"none","reasoning":"The pronoun them in the passage resolves to plants, so identify is the exact verb required by the compressed note."},{"questionId":"note-seed-banks-05","selectedAnswer":"cool","normalizedSelectedAnswer":"cool","selectedAnswerWordCount":1,"completedSentence":"Seeds need protection from insects and should be kept dry and cool.","grammaticalFit":"natural","selectedAnswerPassageSpan":{"text":"cool","start":822,"end":826},"evidenceQuotes":["Seeds must be kept dry, cool and protected from insects."],"closestCompetingAnswer":"protected","closestCompetitorPassageSpan":{"text":"protected","start":831,"end":840},"competitorFailure":"Protected fits the coordination grammatically, but it redundantly repeats the note's preceding protection from insects rather than supplying the omitted separate condition cool.","ambiguity":"minor","reasoning":"The note has already recast protected from insects before the blank, leaving dry and cool as the unrepeated coordinated storage conditions."},{"questionId":"note-seed-banks-06","selectedAnswer":"beans","normalizedSelectedAnswer":"beans","selectedAnswerWordCount":1,"completedSentence":"Cooks may show recipes using less common grains or beans.","grammaticalFit":"natural","selectedAnswerPassageSpan":{"text":"beans","start":1320,"end":1325},"evidenceQuotes":["Farmers compare harvest results, school groups learn why crop diversity matters and cooks demonstrate recipes using less common grains or beans."],"closestCompetingAnswer":"seeds","closestCompetitorPassageSpan":{"text":"seeds","start":46,"end":51},"competitorFailure":"Seeds is broadly compatible with recipes, but it is not the second food item in the passage's explicit less common grains or beans list.","ambiguity":"none","reasoning":"The note closely repeats the recipe clause, whose coordinated second item is beans."}],
+      "factualClaims": [
+        {
+          "claim": "farmers can borrow, grow and return after harvest",
+          "assessment": "supported",
+          "evidenceIds": ["note-seed-fao-borrow-return"],
+          "sourceFindings": [
+            {
+              "evidenceId": "note-seed-fao-borrow-return",
+              "locator": "Conservation measures, paragraph immediately before Box 10",
+              "evidenceNote": "FAO describes an institutionalized community-seed-bank exchange in which a borrower receives seed before planting and returns seed after the harvest."
+            }
+          ],
+          "note": "The source directly supports this borrowing cycle as a documented community-seed-bank practice, while quantities and local rules can vary."
+        },
+        {
+          "claim": "Many of these varieties have been selected over generations for taste, drought tolerance or resistance to local pests.",
+          "assessment": "oversimplified",
+          "evidenceIds": ["note-seed-cgiar-community-adaptation"],
+          "sourceFindings": [
+            {
+              "evidenceId": "note-seed-cgiar-community-adaptation",
+              "locator": "Planting seeds of hope, climate-risk introduction and three-item benefits list",
+              "evidenceNote": "CGIAR links community seed banks to locally adapted, climate-resilient varieties and crop diversity under drought and irregular rainfall, but does not jointly establish multigenerational selection for taste, drought tolerance and local-pest resistance."
+            }
+          ],
+          "note": "Local adaptation is supported; the passage compresses several distinct selection traits and a historical claim into one unsourced generalization."
+        },
+        {
+          "claim": "Volunteers record the name of each seed, the place where it was collected and the conditions in which it usually grows well.",
+          "assessment": "untraceable",
+          "evidenceIds": ["note-seed-croptrust-registration"],
+          "sourceFindings": [
+            {
+              "evidenceId": "note-seed-croptrust-registration",
+              "locator": "Direct PDF URL access attempt",
+              "evidenceNote": "The candidate PDF could not be opened because the direct URL returned a non-retryable safe-open error, so its alleged registration fields and actor claims could not be verified."
+            }
+          ],
+          "note": "No accessible opened source verified that volunteers in community seed banks record this exact three-part data set."
+        },
+        {
+          "claim": "Seeds must be kept dry, cool and protected from insects.",
+          "assessment": "oversimplified",
+          "evidenceIds": ["note-seed-fao-storage"],
+          "sourceFindings": [
+            {
+              "evidenceId": "note-seed-fao-storage",
+              "locator": "Seed Storage, numbered procedure steps 1-8 and species exception paragraph",
+              "evidenceNote": "FAO instructs keeping many seeds well dried in a dry, cool place and protecting them from insects, but also states that some species do not tolerate drying or cold storage."
+            }
+          ],
+          "note": "The practical guidance is well supported for many orthodox seeds, but the categorical wording omits explicit species-dependent exceptions."
+        },
+        {
+          "claim": "Bank managers also test older seeds by planting a small sample; if too few germinate, the variety must be multiplied before the supply disappears.",
+          "assessment": "oversimplified",
+          "evidenceIds": ["note-seed-fao-storage", "note-seed-fao-viability-regeneration"],
+          "sourceFindings": [
+            {
+              "evidenceId": "note-seed-fao-storage",
+              "locator": "Seed Storage, numbered procedure step 6",
+              "evidenceNote": "FAO supports planting a seed sample to calculate germination or viability, but does not in this source specify older-seed thresholds, community-bank managers or multiplication before disappearance."
+            },
+            {
+              "evidenceId": "note-seed-fao-viability-regeneration",
+              "locator": "Direct URL, Part II - Extended Abstracts Posters",
+              "evidenceNote": "The candidate URL resolved to unrelated agricultural proceedings rather than seed viability and regeneration guidance, so it cannot substantiate the claimed decision rule."
+            }
+          ],
+          "note": "Sample germination testing is supported, but the actor, age condition, low-germination trigger and required multiplication sequence are not verified by the opened candidates."
+        }
+      ],
+      "acceptedAnswerAssessments": [
+        {"questionId":"note-seed-banks-01","acceptedText":"harvest","normalizedText":"harvest","role":"canonical","passageStatus":"verbatim","wordCount":1,"grammaticalFit":"natural","evidenceIds":[],"note":"Matches the unchanged first-pass literal passage span and fits the one- to two-word limit."},
+        {"questionId":"note-seed-banks-02","acceptedText":"drought","normalizedText":"drought","role":"canonical","passageStatus":"verbatim","wordCount":1,"grammaticalFit":"natural","evidenceIds":[],"note":"Matches the unchanged first-pass literal passage span and fits the one- to two-word limit."},
+        {"questionId":"note-seed-banks-03","acceptedText":"conditions","normalizedText":"conditions","role":"canonical","passageStatus":"verbatim","wordCount":1,"grammaticalFit":"natural","evidenceIds":[],"note":"Matches the unchanged first-pass literal passage span and fits the one- to two-word limit."},
+        {"questionId":"note-seed-banks-04","acceptedText":"identify","normalizedText":"identify","role":"canonical","passageStatus":"verbatim","wordCount":1,"grammaticalFit":"natural","evidenceIds":[],"note":"Matches the unchanged first-pass literal passage span and fits the one- to two-word limit."},
+        {"questionId":"note-seed-banks-05","acceptedText":"cool","normalizedText":"cool","role":"canonical","passageStatus":"verbatim","wordCount":1,"grammaticalFit":"natural","evidenceIds":[],"note":"Matches the unchanged first-pass literal passage span and fits the one- to two-word limit."},
+        {"questionId":"note-seed-banks-06","acceptedText":"beans","normalizedText":"beans","role":"canonical","passageStatus":"verbatim","wordCount":1,"grammaticalFit":"natural","evidenceIds":[],"note":"Matches the unchanged first-pass literal passage span and fits the one- to two-word limit."}
+      ]
+    },
+    {
+      "assetId": "formative:note-completion:note-night-libraries",
+      "passageAssessment": {
+        "ieltsFitness": "mixed",
+        "factualRisk": "high",
+        "representationRisk": "high",
+        "priorKnowledgeRisk": "low",
+        "irrelevantLoadRisk": "low",
+        "wordLimitRisk": "low",
+        "questionOrderRisk": "high",
+        "promptCueRisk": "high",
+        "hintCueRisk": "not-assessed",
+        "notes": "The six cards form a coherent service-pilot-rules note and all literal answers fit the limit, but they follow passage order across the full text, mostly mirror local clauses, and home is guessable without reading. Direct sources show extended study access, partial services, trials, security and guardian consent, while the exact closed-service bundle, asserted usual pilot sequence and cleaning-staff discovery are not established."
+      },
+      "questions": [{"questionId":"note-night-libraries-01","selectedAnswer":"home","normalizedSelectedAnswer":"home","selectedAnswerWordCount":1,"completedSentence":"Evening rooms support students without quiet places to work at home.","grammaticalFit":"natural","selectedAnswerPassageSpan":{"text":"home","start":124,"end":128},"evidenceQuotes":["Some public libraries have begun opening selected rooms in the evening for students who do not have quiet places to work at home."],"closestCompetingAnswer":"nearby schools","closestCompetitorPassageSpan":{"text":"nearby schools","start":1390,"end":1404},"competitorFailure":"Nearby schools can follow work at grammatically, but the phrase occurs in a later cooperation strategy and does not describe the students' lack of quiet study space.","ambiguity":"none","reasoning":"The opening sentence supplies work at home verbatim; despite being uniquely guessable from the prompt, it is also unequivocally passage-supported."},{"questionId":"note-night-libraries-02","selectedAnswer":"wireless internet","normalizedSelectedAnswer":"wireless internet","selectedAnswerWordCount":2,"completedSentence":"Visitors may use desks, power sockets and wireless internet.","grammaticalFit":"natural","selectedAnswerPassageSpan":{"text":"wireless internet","start":254,"end":271},"evidenceQuotes":["In many cases, visitors can use desks, power sockets and wireless internet, but borrowing counters, children's areas and archives remain closed."],"closestCompetingAnswer":"archives","closestCompetitorPassageSpan":{"text":"archives","start":318,"end":326},"competitorFailure":"Archives fits the noun list grammatically but belongs to the contrasting list of facilities that remain closed, not those visitors may use.","ambiguity":"none","reasoning":"Wireless internet is the exact third item in the passage's list of resources visitors can use."},{"questionId":"note-night-libraries-03","selectedAnswer":"security","normalizedSelectedAnswer":"security","selectedAnswerWordCount":1,"completedSentence":"Staff check whether extra security is required near entrances.","grammaticalFit":"natural","selectedAnswerPassageSpan":{"text":"security","start":501,"end":509},"evidenceQuotes":["Staff count how many people arrive, which hours are busiest and whether extra security is needed near entrances."],"closestCompetingAnswer":"lighting","closestCompetitorPassageSpan":{"text":"lighting","start":700,"end":708},"competitorFailure":"Extra lighting near entrances is plausible and lighting is a pilot issue, but the passage explicitly says staff check whether extra security is needed near entrances; lighting is described outside the building.","ambiguity":"minor","reasoning":"Security is supported by an almost exact clause, while lighting gains only contextual plausibility from the following pilot outcome."},{"questionId":"note-night-libraries-04","selectedAnswer":"building","normalizedSelectedAnswer":"building","selectedAnswerWordCount":1,"completedSentence":"The trial can reveal poor lighting outside the building.","grammaticalFit":"natural","selectedAnswerPassageSpan":{"text":"building","start":721,"end":729},"evidenceQuotes":["A small pilot also reveals practical issues, such as poor lighting outside the building or a shortage of cleaning staff after closing time."],"closestCompetingAnswer":"entrances","closestCompetitorPassageSpan":{"text":"entrances","start":525,"end":534},"competitorFailure":"Entrances is nearby and location-compatible, but it is plural and therefore fails the note's singular phrase outside the; the cited lighting clause names the building.","ambiguity":"none","reasoning":"Building is the literal location in the pilot's poor-lighting example and fits the singular determiner."},{"questionId":"note-night-libraries-05","selectedAnswer":"areas","normalizedSelectedAnswer":"areas","selectedAnswerWordCount":1,"completedSentence":"Clear signs show which areas are open.","grammaticalFit":"natural","selectedAnswerPassageSpan":{"text":"areas","start":899,"end":904},"evidenceQuotes":["Clear signs reduce confusion about which areas are open, while glass walls allow staff to monitor rooms without interrupting students."],"closestCompetingAnswer":"rooms","closestCompetitorPassageSpan":{"text":"rooms","start":50,"end":55},"competitorFailure":"Rooms produces a natural summary and the passage says selected rooms open in the evening, but the clear-sign sentence itself specifies which areas are open.","ambiguity":"minor","reasoning":"Areas is the exact noun in the clause directly paraphrased by the note; rooms remains a nearby semantic alternative from the service description."},{"questionId":"note-night-libraries-06","selectedAnswer":"permission","normalizedSelectedAnswer":"permission","selectedAnswerWordCount":1,"completedSentence":"Some younger visitors may need parental permission.","grammaticalFit":"natural","selectedAnswerPassageSpan":{"text":"permission","start":1179,"end":1189},"evidenceQuotes":["Younger students may need parental permission, and libraries must decide how to respond if visitors use the space mainly for socialising."],"closestCompetingAnswer":"rules","closestCompetitorPassageSpan":{"text":"rules","start":1346,"end":1351},"competitorFailure":"Parental rules is a possible phrase but the passage's rules are library management measures; only permission is explicitly modified by parental and needed by younger students.","ambiguity":"none","reasoning":"The note closely reproduces the policy sentence, with younger visitors paraphrasing younger students and permission unchanged."}],
+      "factualClaims": [
+        {
+          "claim": "opening selected rooms in the evening for students who do not have quiet places to work at home.",
+          "assessment": "oversimplified",
+          "evidenceIds": ["note-night-nsw-extended-study-hours", "note-night-albany-after-hours-study"],
+          "sourceFindings": [
+            {
+              "evidenceId": "note-night-nsw-extended-study-hours",
+              "locator": "Extended study hours article, service announcement",
+              "evidenceNote": "The State Library of NSW extended one reading room to 10 pm for students and described it as a comfortable place to focus, but did not attribute the service to students lacking quiet places at home."
+            },
+            {
+              "evidenceId": "note-night-albany-after-hours-study",
+              "locator": "After Hours Study Space article, paragraphs on access and purpose",
+              "evidenceNote": "Albany documents student access to part of the library after hours in a secured study environment, while its stated barrier is lack of facilities and resources outside normal hours rather than home conditions."
+            }
+          ],
+          "note": "Evening access to selected study space is directly evidenced; the specific home-environment rationale is not."
+        },
+        {
+          "claim": "visitors can use desks, power sockets and wireless internet, but borrowing counters, children's areas and archives remain closed.",
+          "assessment": "oversimplified",
+          "evidenceIds": ["note-night-nsw-extended-study-hours", "note-night-kuringgai-foyer"],
+          "sourceFindings": [
+            {
+              "evidenceId": "note-night-nsw-extended-study-hours",
+              "locator": "Extended study hours article, access details",
+              "evidenceNote": "Students receive reading-room access and free Wi-Fi while Special Collections and other parts close earlier, but the source does not list the passage's exact available and closed facilities."
+            },
+            {
+              "evidenceId": "note-night-kuringgai-foyer",
+              "locator": "What it includes and FAQs sections",
+              "evidenceNote": "The after-hours foyer offers Wi-Fi and seating but excludes public computers and printers during unstaffed hours, showing that after-hours service bundles vary by site."
+            }
+          ],
+          "note": "Partial-service configurations are supported, but the precise desks-sockets-internet versus counters-children's-archives bundle is not traced."
+        },
+        {
+          "claim": "Libraries usually start with a pilot programme before extending evening access.",
+          "assessment": "oversimplified",
+          "evidenceIds": ["note-night-tasmania-open-library-trial", "note-night-ryde-opening-trial"],
+          "sourceFindings": [
+            {
+              "evidenceId": "note-night-tasmania-open-library-trial",
+              "locator": "Open Library Access announcement, 12-month trial details",
+              "evidenceNote": "Tasmania announced a 12-month extended-hours trial at two libraries, establishing one pilot example but not a usual sequence across libraries."
+            },
+            {
+              "evidenceId": "note-night-ryde-opening-trial",
+              "locator": "Eastwood Library announcement, 12-month trial details",
+              "evidenceNote": "Ryde likewise describes a 12-month after-hours trial, adding a second example without establishing prevalence or the claimed before-extending sequence."
+            }
+          ],
+          "note": "The sources show that pilots occur; two examples cannot support usually as a general operational rule."
+        },
+        {
+          "claim": "A small pilot also reveals practical issues, such as poor lighting outside the building or a shortage of cleaning staff after closing time.",
+          "assessment": "untraceable",
+          "evidenceIds": ["note-night-tasmania-open-library-trial", "note-night-ryde-opening-trial"],
+          "sourceFindings": [
+            {
+              "evidenceId": "note-night-tasmania-open-library-trial",
+              "locator": "Open Library Access announcement, safety and building works paragraph",
+              "evidenceNote": "The source reports lighting upgrades, CCTV and other works being installed before or during trial setup, not poor external lighting revealed by a pilot, and it says nothing about cleaning-staff shortages."
+            },
+            {
+              "evidenceId": "note-night-ryde-opening-trial",
+              "locator": "Eastwood Library announcement, safety measures and staffing paragraphs",
+              "evidenceNote": "Ryde lists security controls and the absence of service staff after hours but does not report that a pilot revealed poor lighting or a shortage of cleaning staff."
+            }
+          ],
+          "note": "The opened trial sources contain adjacent safety and staffing topics but do not substantiate either claimed discovered issue."
+        },
+        {
+          "claim": "Younger students may need parental permission",
+          "assessment": "supported",
+          "evidenceIds": ["note-night-albany-after-hours-study", "note-night-tasmania-open-library-trial"],
+          "sourceFindings": [
+            {
+              "evidenceId": "note-night-albany-after-hours-study",
+              "locator": "Eligibility paragraph for students under 18",
+              "evidenceNote": "Albany explicitly requires students under 18 to provide written permission from a parent or guardian."
+            },
+            {
+              "evidenceId": "note-night-tasmania-open-library-trial",
+              "locator": "Age and induction conditions",
+              "evidenceNote": "Tasmania requires parent or guardian consent for members aged 16 to 17 and accompaniment for younger children."
+            }
+          ],
+          "note": "Two government or municipal examples directly support the qualified may need formulation."
+        }
+      ],
+      "acceptedAnswerAssessments": [
+        {"questionId":"note-night-libraries-01","acceptedText":"home","normalizedText":"home","role":"canonical","passageStatus":"verbatim","wordCount":1,"grammaticalFit":"natural","evidenceIds":[],"note":"Matches the unchanged first-pass literal passage span and fits the one- to two-word limit."},
+        {"questionId":"note-night-libraries-02","acceptedText":"wireless internet","normalizedText":"wireless internet","role":"canonical","passageStatus":"verbatim","wordCount":2,"grammaticalFit":"natural","evidenceIds":[],"note":"Matches the unchanged first-pass literal passage span and fits the one- to two-word limit."},
+        {"questionId":"note-night-libraries-03","acceptedText":"security","normalizedText":"security","role":"canonical","passageStatus":"verbatim","wordCount":1,"grammaticalFit":"natural","evidenceIds":[],"note":"Matches the unchanged first-pass literal passage span and fits the one- to two-word limit."},
+        {"questionId":"note-night-libraries-04","acceptedText":"building","normalizedText":"building","role":"canonical","passageStatus":"verbatim","wordCount":1,"grammaticalFit":"natural","evidenceIds":[],"note":"Matches the unchanged first-pass literal passage span and fits the one- to two-word limit."},
+        {"questionId":"note-night-libraries-05","acceptedText":"areas","normalizedText":"areas","role":"canonical","passageStatus":"verbatim","wordCount":1,"grammaticalFit":"natural","evidenceIds":[],"note":"Matches the unchanged first-pass literal passage span and fits the one- to two-word limit."},
+        {"questionId":"note-night-libraries-06","acceptedText":"permission","normalizedText":"permission","role":"canonical","passageStatus":"verbatim","wordCount":1,"grammaticalFit":"natural","evidenceIds":[],"note":"Matches the unchanged first-pass literal passage span and fits the one- to two-word limit."}
+      ]
+    }
+  ]
+}

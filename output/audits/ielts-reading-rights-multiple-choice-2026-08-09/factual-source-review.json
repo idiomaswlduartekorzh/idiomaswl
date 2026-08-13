@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "ielts-reading-multiple-choice-factual-source-review.v1",
+  "generatedAt": "2026-08-09T00:00:00-05:00",
+  "reviewScope": "F0.2b.1 — second-pass factual-source review only",
+  "instruction": "Open only after fixing all 18 first-pass answers and evidence spans. Use these sources to flag supported, oversimplified, unsupported or untraceable claims. Candidate sources do not prove authorship, licensing, authorization or factual verification.",
+  "records": [
+    {
+      "assetId": "formative:multiple-choice:mc-sleep-learning",
+      "claimSpansToReview": [
+        "In particular, slow-wave sleep appears to support the consolidation of factual knowledge, while rapid eye movement sleep may help integrate emotional experiences and creative associations.",
+        "One study asked participants to learn pairs of unrelated words in the evening.",
+        "The group that slept remembered more pairs the next morning, especially when their sleep included longer periods of slow-wave activity.",
+        "Yet several experiments suggest that sacrificing sleep can reduce attention, working memory and the ability to apply knowledge flexibly."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "sleep-cairney-sws-emotional-2014",
+          "label": "Cairney et al. — targeted memory reactivation during slow-wave sleep",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3954173/",
+          "note": "Estudio primario candidato sobre sueño de ondas lentas, husos y consolidación de memoria emocional; no verifica por sí solo todas las generalizaciones del pasaje."
+        },
+        {
+          "evidenceId": "sleep-rem-sws-emotional-2025",
+          "label": "Both slow-wave and REM sleep contribute to emotional memory consolidation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11930935/",
+          "note": "Estudio primario candidato cuya discusión subraya resultados mixtos y complementarios para SWS/REM; obliga a revisar el reparto categórico presentado por el pasaje."
+        },
+        {
+          "evidenceId": "sleep-deprivation-students-2017",
+          "label": "Effects of sleep deprivation on university-student performance",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5489575/",
+          "note": "Ensayo cruzado controlado candidato: una noche sin dormir afectó reacción, pero no mostró deterioro significativo en las pruebas cognitivas usadas. Sirve como contraevidencia frente a afirmaciones demasiado amplias."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan que sueño y memoria se relacionan, pero muestran resultados dependientes de etapa, tarea y diseño. Falta una fuente primaria que corresponda al estudio de pares de palabras descrito y una revisión humana claim-by-claim."
+    },
+    {
+      "assetId": "formative:multiple-choice:mc-river-restoration",
+      "claimSpansToReview": [
+        "The aim is often more practical: to soften hard banks, create shallow planted edges and give floodwater somewhere safer to spread during storms.",
+        "One project in Millgate replaced a concrete channel with a wider river corridor.",
+        "Within two years, surveys recorded more insects and small fish, while residents reported using the nearby path more often.",
+        "In Millgate, loading bays were moved rather than removed, and several cafes later used the river path to attract customers."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "river-environment-agency-2024",
+          "label": "Environment Agency — improving river habitats during high and low flows",
+          "url": "https://www.gov.uk/government/publications/improving-river-habitats-to-support-wildlife-during-high-and-low-flows",
+          "note": "Investigación institucional candidata sobre medidas de restauración, hábitat y resiliencia a sequías e inundaciones. No identifica el caso “Millgate”."
+        },
+        {
+          "evidenceId": "river-skerne-case-study",
+          "label": "Environment Agency — River Skerne restoration case study",
+          "url": "https://assets.publishing.service.gov.uk/media/5a74bc46ed915d4d83b5e88b/strw83-e-e.pdf",
+          "note": "Caso institucional candidato de restauración fluvial urbana y soft revetment. Es un caso distinto y no valida estadísticas, empresas o resultados atribuidos a “Millgate”."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes institucionales apoyan principios generales de restauración, hábitat y resiliencia, pero no identifican “Millgate” ni verifican sus cifras, encuestas, loading bays o cafés. El caso debe documentarse como ficticio o sustituirse por un caso trazable antes de aprobación."
+    },
+    {
+      "assetId": "formative:multiple-choice:mc-digital-notes",
+      "claimSpansToReview": [
+        "When students type quickly, they may copy a lecturer's words almost exactly.",
+        "By contrast, slower note-taking often forces students to select, shorten and connect ideas, which can support understanding.",
+        "A tablet with a stylus may encourage the same selection and diagramming as paper, while a paper notebook used for copying sentences may be no better than a laptop.",
+        "The tool matters less than the thinking it encourages."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "notes-mueller-oppenheimer-2014",
+          "label": "Mueller and Oppenheimer — longhand versus laptop note taking",
+          "url": "https://doi.org/10.1177/0956797614524581",
+          "note": "Estudio primario candidato sobre transcripción literal, procesamiento y desempeño conceptual. Debe leerse junto con replicaciones y resultados nulos."
+        },
+        {
+          "evidenceId": "notes-mitchell-zheng-2019-replication",
+          "label": "Mitchell and Zheng — replication of longhand versus laptop findings",
+          "url": "https://aisel.aisnet.org/trr/vol5/iss1/9/",
+          "note": "Replicación primaria candidata que no reprodujo el mismo patrón conceptual del estudio original y recomienda más investigación."
+        },
+        {
+          "evidenceId": "notes-medical-students-no-difference-2022",
+          "label": "No difference in recall across tablet, laptop and longhand note taking",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9247713/",
+          "note": "Estudio observacional/experimental candidato que no halló diferencia en recuerdo factual o conceptual entre las modalidades evaluadas; limita cualquier conclusión universal."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. El pasaje refleja razonablemente un debate no resuelto, pero debe atribuir el estudio original y conservar el matiz aportado por replicaciones y resultados nulos. No hay revisión humana claim-by-claim."
+    }
+  ]
+}

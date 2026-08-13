@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "ielts-reading-matching-sentence-endings-provenance-search.v1",
+  "searchedAt": "2026-08-09T15:06:30Z",
+  "method": "Directed exact-title, exact-first-sentence, named-place and distinctive-fragment public-web search; reviewed results were compared for verbal identity and case identity.",
+  "searchSurface": "public web search",
+  "queries": [
+    {
+      "assetId": "formative:matching-sentence-endings:mse-microclimates",
+      "query": "\"How small design choices change city heat\" \"cool plaza\" \"ordinary routes\"",
+      "resultsReviewed": [
+        {"title":"Measuring Heat Islands — US EPA","url":"https://www.epa.gov/heatislands/measuring-heat-islands","reasonNotExactMatch":"Topical government source on within-city heat variation; no exact title, passage wording or case identity match."},
+        {"title":"Microclimate guidelines — City of London","url":"https://www.cityoflondon.gov.uk/services/planning/planning-application-requirements/microclimate-guidelines","reasonNotExactMatch":"Topical public-sector planning source on wind and microclimate assessment; no exact passage or named-case match."}
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    },
+    {
+      "assetId": "formative:matching-sentence-endings:mse-food-waste",
+      "query": "\"Why food waste policies need more than one solution\" \"separate discount bin\" \"community kitchens\"",
+      "resultsReviewed": [
+        {"title":"Food Loss: Why Food Stays On the Farm or Off the Market — USDA ERS","url":"https://ers.usda.gov/amber-waves/2020/march/food-loss-why-food-stays-on-the-farm-or-off-the-market","reasonNotExactMatch":"Topical government discussion of farm-level food loss and market factors; no exact passage, title or composite-case match."},
+        {"title":"Consumer perceptions of suboptimal food — Frontiers in Sustainable Food Systems","url":"https://www.frontiersin.org/journals/sustainable-food-systems/articles/10.3389/fsufs.2023.1313814/full","reasonNotExactMatch":"Conceptually related research on imperfect-produce cues; no exact passage wording or scenario identity match."}
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    },
+    {
+      "assetId": "formative:matching-sentence-endings:mse-coastal-libraries",
+      "query": "\"Libraries as climate information hubs\" \"Harbor Point\" \"blocked drains\"",
+      "resultsReviewed": [
+        {"title":"Resilient Communities: Libraries Respond to Climate Change — American Library Association","url":"https://www.ala.org/tools/programming/climatechange/guidelines","reasonNotExactMatch":"Topical professional guidance on library climate programming; no Harbor Point case or exact passage match."},
+        {"title":"Participatory watershed planning training — NOAA Digital Coast","url":"https://coast.noaa.gov/digitalcoast/training/nc-watershed-management.html","reasonNotExactMatch":"Topical federal resource on participatory planning and local information; no exact title, blocked-drain case or passage wording match."}
+      ],
+      "outcome": "no-exact-match-in-reviewed-results"
+    }
+  ],
+  "interpretation": "Directed and non-exhaustive. No exact match in reviewed results does not prove originality, authorship, clearance or universal absence of a prior source. The search did not cover licensed databases, print-only works, deleted pages, translations, private documents, drafts or extensive paraphrase. Availability of the cited URLs does not verify the learner-facing claims; factual claim coverage and rights adjudication remain pending."
+}

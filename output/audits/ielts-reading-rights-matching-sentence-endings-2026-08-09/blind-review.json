@@ -1,0 +1,226 @@
+{
+  "schemaVersion": "ielts-reading-matching-sentence-endings-blind-review.v1",
+  "generatedAt": "2026-08-09T15:20:00Z",
+  "reviewScope": "F0.2b.7 — clean one-best-answer adjudication over three passages",
+  "reviewerIsolation": "Use only this packet. Do not open the catalog, registry, validator, runtime, connective/surface verdicts, factual packet or prior audits until all 18 decisions are persisted.",
+  "taskRule": "Choose one ending that completes each sentence according to the passage. More endings are provided than sentence starts. Reuse is not declared by the supplied instructions, so do not infer a reuse rule.",
+  "instruction": "For all 18 questions, persist the completed sentence, logical relation, exact passage evidence, all eight candidate assessments, closest competitor and ambiguity. Do not use outside knowledge.",
+  "excludes": [
+    "answer keys",
+    "explanations",
+    "traps",
+    "hints",
+    "prior verdicts",
+    "factual sources",
+    "student data"
+  ],
+  "records": [
+    {
+      "assetId": "formative:matching-sentence-endings:mse-microclimates",
+      "title": "Matching Sentence Endings practice: urban microclimates",
+      "sourceObjectSha256": "932ccefb0130c9fb9fa030f3eee1e21948efcb4da58ed537fde24049fae21f05",
+      "passageSha256": "ac2396cf723727f640ba86eb44f7becb08ab829777aedc08632f8ea8af18318e",
+      "instructions": "Complete each sentence by choosing the correct ending. There are more endings than sentence starts, so some endings will not be used.",
+      "passageTitle": "How small design choices change city heat",
+      "passage": "People often think of urban heat as a city-wide problem, but temperatures can vary sharply from one block to the next. This local variation is known as a microclimate. It is shaped by materials, shade, wind movement and the amount of heat released by vehicles and buildings. Two streets in the same district may therefore feel very different on a summer afternoon.\n\nSurface material is one major factor. Dark asphalt absorbs more solar energy than lighter paving, and it releases stored heat slowly after sunset. This is why some cities are testing pale road coatings and reflective roof materials. These changes do not cool an entire city immediately, but they can reduce the heat stored in specific surfaces.\n\nShade also matters, though its benefits depend on placement. A tree beside a wide pavement may protect pedestrians at midday, while a tree planted too far from the walking route may have little practical effect. Building overhangs, awnings and transit shelters can provide similar relief when they are designed around the times when people actually use the space.\n\nWind is more complicated. Tall buildings can block cooling breezes, but they can also channel air through narrow corridors. Urban designers sometimes model airflow before approving large developments because a new tower may improve comfort in one street while making another feel stagnant. For this reason, wind solutions are rarely universal.\n\nFinally, microclimate planning only works when it is connected to daily behavior. A cool plaza is less useful if it is far from bus stops, shops or schools. Small interventions are most effective when they appear along ordinary routes, where people are already walking, waiting or gathering.",
+      "endingOptions": [
+        {
+          "endingId": "A",
+          "text": "because the same district can contain very different local conditions."
+        },
+        {
+          "endingId": "B",
+          "text": "because they stop all heat from entering the city."
+        },
+        {
+          "endingId": "C",
+          "text": "by lowering the amount of heat stored in particular materials."
+        },
+        {
+          "endingId": "D",
+          "text": "only when they are placed where and when pedestrians need protection."
+        },
+        {
+          "endingId": "E",
+          "text": "although the effect of new buildings on air movement can vary by location."
+        },
+        {
+          "endingId": "F",
+          "text": "if it is located away from the places people normally use."
+        },
+        {
+          "endingId": "G",
+          "text": "because reflective roofs always perform better than shade trees."
+        },
+        {
+          "endingId": "H",
+          "text": "when they are added to routes people already use in daily life."
+        }
+      ],
+      "sentenceStarts": [
+        {
+          "questionId": "mse-microclimates-01",
+          "sentenceStart": "Urban heat should not be treated only as a city-wide issue"
+        },
+        {
+          "questionId": "mse-microclimates-02",
+          "sentenceStart": "Pale road coatings and reflective roof materials may help"
+        },
+        {
+          "questionId": "mse-microclimates-03",
+          "sentenceStart": "Shade structures are most useful"
+        },
+        {
+          "questionId": "mse-microclimates-04",
+          "sentenceStart": "Airflow modelling is important before large developments"
+        },
+        {
+          "questionId": "mse-microclimates-05",
+          "sentenceStart": "A cool public space may have limited value"
+        },
+        {
+          "questionId": "mse-microclimates-06",
+          "sentenceStart": "Small microclimate interventions work best"
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-sentence-endings:mse-food-waste",
+      "title": "Matching Sentence Endings practice: reducing food waste",
+      "sourceObjectSha256": "1682b3ff5b6fac272eb80a77d5cecda5307d98d24a690c912f19a42afcc92aa4",
+      "passageSha256": "3c0f8568ccb8244132db25509b08180bc0b6d97e88a0182c61f92502bb8332e9",
+      "instructions": "Complete each sentence by choosing the correct ending. There are more endings than sentence starts, so some endings will not be used.",
+      "passageTitle": "Why food waste policies need more than one solution",
+      "passage": "Food waste is often described as a problem of careless consumers, but waste occurs at several points before food reaches a plate. Farmers may leave produce unharvested when market prices fall below picking costs. Supermarkets may reject fruit and vegetables because their shape or size does not match retail standards. Restaurants may prepare more food than customers order in order to avoid running out during busy periods.\n\nOne response is to improve forecasting. Some grocery chains now use local sales data, weather patterns and holiday schedules to predict demand more accurately. Better forecasting does not remove waste entirely, but it can reduce the amount of fresh food ordered shortly before demand drops.\n\nAnother approach is to change how imperfect produce is presented. When stores sell unusual-looking vegetables in a separate discount bin, shoppers may treat them as inferior. However, when the same produce is included in normal displays with simple recipe suggestions, customers are more likely to accept it as ordinary food rather than a special problem category.\n\nFood donation programmes can also help, but they require careful timing. A restaurant cannot simply call a charity after food has already become unsafe. Effective programmes use clear collection windows and packaging routines so that surplus meals can move quickly to community kitchens.\n\nFinally, some cities have introduced household food-scrap collection. Composting does not prevent waste at the source, but it can reduce the environmental impact of food that cannot be eaten. For this reason, waste specialists usually treat composting as a last step, not as a substitute for buying and preparing food more carefully.",
+      "endingOptions": [
+        {
+          "endingId": "A",
+          "text": "because waste can begin before consumers make any decision."
+        },
+        {
+          "endingId": "B",
+          "text": "by making short-term demand estimates more accurate."
+        },
+        {
+          "endingId": "C",
+          "text": "only when imperfect produce is separated from all other food."
+        },
+        {
+          "endingId": "D",
+          "text": "when it is treated as normal food and linked to practical cooking ideas."
+        },
+        {
+          "endingId": "E",
+          "text": "unless surplus food is moved while it is still safe to use."
+        },
+        {
+          "endingId": "F",
+          "text": "because composting prevents supermarkets from ordering too much food."
+        },
+        {
+          "endingId": "G",
+          "text": "as a final option for food that cannot realistically be eaten."
+        },
+        {
+          "endingId": "H",
+          "text": "because demand during busy periods can be uncertain."
+        }
+      ],
+      "sentenceStarts": [
+        {
+          "questionId": "mse-food-waste-01",
+          "sentenceStart": "Food waste should not be blamed only on careless consumers"
+        },
+        {
+          "questionId": "mse-food-waste-02",
+          "sentenceStart": "Forecasting systems can reduce waste"
+        },
+        {
+          "questionId": "mse-food-waste-03",
+          "sentenceStart": "Imperfect produce may sell better"
+        },
+        {
+          "questionId": "mse-food-waste-04",
+          "sentenceStart": "Food donation programmes are useful"
+        },
+        {
+          "questionId": "mse-food-waste-05",
+          "sentenceStart": "Household composting is best understood"
+        },
+        {
+          "questionId": "mse-food-waste-06",
+          "sentenceStart": "Restaurants may produce surplus meals"
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-sentence-endings:mse-coastal-libraries",
+      "title": "Matching Sentence Endings practice: coastal libraries",
+      "sourceObjectSha256": "87e771a35de1ad2b132f30a3c61abaf60471fdd0636034d977376d6aed05ebad",
+      "passageSha256": "50fff086a9cf78142f742a48679aa252e2d8a680e107d26d6fb9b078d00b29bb",
+      "instructions": "Complete each sentence by choosing the correct ending. There are more endings than sentence starts, so some endings will not be used.",
+      "passageTitle": "Libraries as climate information hubs",
+      "passage": "In several coastal towns, public libraries have begun to play a role in climate adaptation. Their traditional function has not disappeared: they still lend books, provide internet access and host reading groups. However, because libraries are familiar, free and open for long hours, some local councils now use them as places where residents can find practical information about flooding, insurance and emergency planning.\n\nOne advantage is trust. Residents may ignore technical reports from distant agencies, but they often know library staff personally. When staff receive training from emergency planners, they can guide visitors toward reliable resources without pretending to be engineers or legal advisers.\n\nLibraries can also make risk maps easier to understand. A printed map showing future flood zones may look alarming or abstract. Some libraries therefore run small workshops where residents compare official maps with photographs of streets they know. This helps people connect regional projections with everyday landmarks.\n\nThe most successful programmes do not rely only on one-way information. In Harbor Point, library visitors were invited to mark places where drains blocked after heavy rain. The council later used these observations to prioritize maintenance visits. The process showed that residents could provide useful local evidence, not just receive instructions.\n\nThere are limits, however. Libraries cannot replace evacuation systems, flood barriers or housing policy. Their value is greatest when they connect people to services and help communities interpret information before an emergency, rather than trying to manage the emergency itself.",
+      "endingOptions": [
+        {
+          "endingId": "A",
+          "text": "because they are familiar public spaces with broad local access."
+        },
+        {
+          "endingId": "B",
+          "text": "without claiming to replace technical or legal experts."
+        },
+        {
+          "endingId": "C",
+          "text": "by linking official projections to places residents recognize."
+        },
+        {
+          "endingId": "D",
+          "text": "only when residents stop using them for books and internet access."
+        },
+        {
+          "endingId": "E",
+          "text": "when local observations are treated as evidence for maintenance decisions."
+        },
+        {
+          "endingId": "F",
+          "text": "because they can replace flood barriers during severe storms."
+        },
+        {
+          "endingId": "G",
+          "text": "before a crisis by helping people understand and reach relevant services."
+        },
+        {
+          "endingId": "H",
+          "text": "because they cannot replace formal protection systems."
+        }
+      ],
+      "sentenceStarts": [
+        {
+          "questionId": "mse-libraries-01",
+          "sentenceStart": "Libraries can support climate adaptation"
+        },
+        {
+          "questionId": "mse-libraries-02",
+          "sentenceStart": "Trained library staff can guide residents"
+        },
+        {
+          "questionId": "mse-libraries-03",
+          "sentenceStart": "Map workshops become useful"
+        },
+        {
+          "questionId": "mse-libraries-04",
+          "sentenceStart": "The Harbor Point programme showed that residents helped planning"
+        },
+        {
+          "questionId": "mse-libraries-05",
+          "sentenceStart": "Libraries have the greatest value"
+        },
+        {
+          "questionId": "mse-libraries-06",
+          "sentenceStart": "Libraries should not be expected to manage emergencies alone"
+        }
+      ]
+    }
+  ]
+}

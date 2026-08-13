@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "ielts-reading-ynng-blind-review.v1",
+  "generatedAt": "2026-08-09T05:36:00-05:00",
+  "reviewScope": "F0.2b.3 — three formative Yes/No/Not Given sets",
+  "reviewerIsolation": "Use only this packet for the first pass. Do not open the catalog, registry, validator, route, UI, prior audits or factual-source packet until every decision has been fixed in a separate first-pass file.",
+  "taskRule": "YES only when the statement agrees with the writer’s own view or claim; NO only when it contradicts that view or claim; NOT GIVEN when it neither agrees nor contradicts. Distinguish the writer from reported supporters, opponents, critics and commentators. Do not use prior knowledge.",
+  "instruction": "Independently adjudicate all 22 statements. For YES/NO quote the shortest decisive span; for NOT GIVEN identify the closest related zone and the exact missing writer posture. Record who owns the quoted claim, ambiguity, title-cue risk and IELTS fitness. This is an AI editorial review, not a human signature, rights clearance or publication approval.",
+  "excludes": [
+    "answer keys",
+    "correctness labels",
+    "explanations",
+    "trap labels",
+    "declared skills",
+    "prior reviewer decisions",
+    "student data"
+  ],
+  "records": [
+    {
+      "assetId": "formative:yes-no-not-given:ynng-station-art",
+      "passageTitle": "Public art in transport stations",
+      "sourceObjectSha256": "1fe59c7e1fad1d831a4fa08a7dfa302d7b1bd37005884bf77ce1b9b379abf680",
+      "passageSha256": "13d655a77274b4fa20bbc39e558395d3db455f46043ff23ca2e122b2bb237f0a",
+      "passage": "Public art in transport stations is often defended as a way to make commuting more pleasant. Murals, small exhibitions and temporary installations can certainly soften places that otherwise feel rushed and anonymous. Yet the strongest argument for station art is not that it decorates a journey. In my view, it gives a public system a visible connection to the neighborhoods it serves.\n\nThis does not mean that every station should become a gallery. Transport authorities sometimes commission large works without asking local residents what would feel meaningful or useful. When that happens, art can appear imposed, even if it is technically impressive. A modest project developed with community groups may do more for public trust than an expensive installation chosen by distant planners.\n\nCritics often claim that station art distracts from urgent transport problems. That criticism has force when art budgets replace maintenance or accessibility work. However, the choice is not always so simple. Art programs can be funded separately, supported by cultural grants or used to explain local history while renovation is already taking place. The real test is whether a project improves the station experience without pretending to solve operational failures.\n\nFor this reason, public art should be judged by process as much as by appearance. A successful station artwork is not necessarily the largest or most photogenic one. It is the one that helps passengers understand where they are, respects the daily function of the space and gives local people a reason to recognize the station as part of their own environment.",
+      "statements": [
+        {
+          "questionId": "ynng-station-art-01",
+          "statement": "The writer believes the main value of station art is its connection to local communities."
+        },
+        {
+          "questionId": "ynng-station-art-02",
+          "statement": "The writer thinks every transport station should display art like a gallery."
+        },
+        {
+          "questionId": "ynng-station-art-03",
+          "statement": "The writer believes technically impressive art is always welcomed by residents."
+        },
+        {
+          "questionId": "ynng-station-art-04",
+          "statement": "The writer prefers community-informed modest projects over expensive works chosen by remote planners."
+        },
+        {
+          "questionId": "ynng-station-art-05",
+          "statement": "The writer says station art budgets usually reduce funding for accessibility improvements."
+        },
+        {
+          "questionId": "ynng-station-art-06",
+          "statement": "The writer argues that art can sometimes coexist with practical renovation work."
+        },
+        {
+          "questionId": "ynng-station-art-07",
+          "statement": "The writer believes the most photogenic station artwork is normally the most successful."
+        },
+        {
+          "questionId": "ynng-station-art-08",
+          "statement": "The writer recommends removing all art from stations with operational problems."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:yes-no-not-given:ynng-remote-work",
+      "passageTitle": "Why city centres still need office workers",
+      "sourceObjectSha256": "5a21449c9d3e9dd7e93d30a3c216d088f89c1fbd011439067aa45827d41ec772",
+      "passageSha256": "0a88ab17c6741765c43344c80b3543e4add8309cefea1c7ebc674d1364795a78",
+      "passage": "The rise of remote work has encouraged some commentators to predict the end of central business districts. I think this conclusion is too neat. Fewer daily commuters may reduce pressure on trains and roads, but a city centre is not only a container for desks. It is also a place where shops, cafes, cultural venues and public services depend on repeated daytime movement.\n\nThat does not mean every company should force employees back five days a week. A rigid return-to-office policy can waste time and damage trust when people have already shown they can complete focused tasks at home. However, entirely optional attendance can create another problem: if nobody knows when colleagues will be present, the office loses its value as a shared meeting place.\n\nThe best approach, in my view, is not to count hours at a desk but to design predictable overlap. Teams may choose two or three common days for meetings, mentoring and decisions that benefit from quick conversation. The remaining time can be used more flexibly. This model accepts that not all work has the same social requirement.\n\nCity governments also have a role, but they should not rescue office districts by protecting old habits. Instead, they should make centres more mixed and resilient. Empty ground-floor units can become clinics, classrooms or small performance spaces. Streets designed only for peak-hour office crowds should be adjusted for residents, students and visitors who use the area at different times.\n\nRemote work has changed the city centre, but it has not made proximity irrelevant. The real challenge is to use proximity deliberately, rather than pretending that every task becomes better simply because it happens in the same building.",
+      "statements": [
+        {
+          "questionId": "ynng-remote-work-01",
+          "statement": "The writer believes predictions about the end of central business districts are oversimplified."
+        },
+        {
+          "questionId": "ynng-remote-work-02",
+          "statement": "The writer thinks companies should require office attendance five days a week."
+        },
+        {
+          "questionId": "ynng-remote-work-03",
+          "statement": "The writer says remote employees are less productive than office employees."
+        },
+        {
+          "questionId": "ynng-remote-work-04",
+          "statement": "The writer believes completely optional attendance can reduce the office's usefulness."
+        },
+        {
+          "questionId": "ynng-remote-work-05",
+          "statement": "The writer argues that governments should preserve office districts exactly as they were."
+        },
+        {
+          "questionId": "ynng-remote-work-06",
+          "statement": "The writer believes clinics and classrooms are better than shops in city centres."
+        },
+        {
+          "questionId": "ynng-remote-work-07",
+          "statement": "The writer thinks proximity should be used selectively rather than automatically."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:yes-no-not-given:ynng-school-uniforms",
+      "passageTitle": "A careful argument about school uniforms",
+      "sourceObjectSha256": "2ad9bf267d022a21725a714a100c3956bda28932183daf210400fce5cddccf0a",
+      "passageSha256": "21d4fa469e99313439dc5ac41a8fd28683d70d058314be4be57376be11e8cdee",
+      "passage": "Debates about school uniforms often become strangely absolute. Supporters say uniforms create equality; opponents say they erase individuality. Both claims contain something useful, but neither is strong enough on its own. In my view, a uniform policy should be judged by the daily pressures it reduces and by the new problems it may create.\n\nUniforms can reduce visible competition around clothing, especially in schools where students come from very different economic backgrounds. This benefit is real, but it is sometimes overstated. Expensive shoes, phones and bags can still signal status even when shirts and trousers look similar. A uniform is therefore a partial tool, not a complete answer to inequality.\n\nThe strongest objection is not that students lose every form of self-expression. Young people express identity through language, friendships, interests and choices outside school. The more serious concern is whether uniform rules are enforced unevenly. If some hairstyles, cultural garments or body types are treated as problems, the policy can become a source of unfair discipline.\n\nCost also matters. Schools sometimes assume uniforms save families money because they reduce the need for varied outfits. That may be true when items are simple and widely available. It is less true when families must buy from a single supplier or replace branded pieces quickly. A cheap-looking policy can still be expensive in practice.\n\nI am not against uniforms. I am against treating them as a moral shortcut. A good policy should be flexible where identity or affordability is at stake, clear enough to avoid arbitrary punishment and modest about what clothing rules can actually achieve.",
+      "statements": [
+        {
+          "questionId": "ynng-uniforms-01",
+          "statement": "The writer believes both sides of the uniform debate are too absolute."
+        },
+        {
+          "questionId": "ynng-uniforms-02",
+          "statement": "The writer thinks uniforms completely solve economic inequality between students."
+        },
+        {
+          "questionId": "ynng-uniforms-03",
+          "statement": "The writer says students cannot express identity in any way while wearing uniforms."
+        },
+        {
+          "questionId": "ynng-uniforms-04",
+          "statement": "The writer believes uneven enforcement is a more serious issue than all loss of self-expression."
+        },
+        {
+          "questionId": "ynng-uniforms-05",
+          "statement": "The writer says most schools use single suppliers for uniforms."
+        },
+        {
+          "questionId": "ynng-uniforms-06",
+          "statement": "The writer is completely opposed to school uniforms."
+        },
+        {
+          "questionId": "ynng-uniforms-07",
+          "statement": "The writer believes uniform policies should include flexibility for identity and affordability."
+        }
+      ]
+    }
+  ]
+}

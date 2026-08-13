@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "ielts-reading-summary-completion-unit-change-manifest.v1",
+  "unit": "F0.2b.9",
+  "recordedAt": "2026-08-11T15:05:20Z",
+  "learnerFacingChangeAuthorized": false,
+  "learnerFacingBaselinePaths": [
+    "src/data/practica-exams/seo-catalog.ts",
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/summary-completion/page.tsx",
+    "src/components/exam-practice/SummaryCompletionPracticeEngine.tsx",
+    "src/components/exam-practice/SummaryCompletionPassageBank.tsx",
+    "src/components/exam-practice/OfficialStrategyCard.tsx",
+    "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+    "src/components/exam-practice/StructuredData.tsx"
+  ],
+  "renderDependencyClosureBaselinePaths": [
+    "src/app/(site)/layout.tsx",
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/summary-completion/page.tsx",
+    "src/app/globals.css",
+    "src/app/layout.tsx",
+    "src/components/SiteNav.tsx",
+    "src/components/SiteSkipLink.tsx",
+    "src/components/ThemeProvider.tsx",
+    "src/components/WhatsAppFloat.tsx",
+    "src/components/exam-practice/OfficialStrategyCard.tsx",
+    "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+    "src/components/exam-practice/StructuredData.tsx",
+    "src/components/exam-practice/SummaryCompletionPassageBank.tsx",
+    "src/components/exam-practice/SummaryCompletionPracticeEngine.tsx",
+    "src/data/practica-exams/seo-catalog.ts",
+    "src/lib/ielts/academic-reading-question-types.ts",
+    "src/lib/supabase/client.ts"
+  ],
+  "unitSourceFiles": [
+    "src/data/practica-exams/ielts-reading-rights-registry.ts",
+    "scripts/check-ielts-reading-summary-completion-rights.mjs",
+    "tests/ielts-reading-summary-completion-rights.test.mjs",
+    "docs/ielts-reading-loop.md"
+  ],
+  "unitOutputDirectory": "output/audits/ielts-reading-rights-summary-completion-2026-08-11",
+  "nextUnitBoundary": {
+    "unit": "F0.2b.10",
+    "format": "note-completion",
+    "status": "not-started"
+  },
+  "applicability": {
+    "staticUiUxAndAccessibilityReview": "applicable-to-existing-baseline",
+    "uiUxDeltaTesting": "not-applicable-only-while-learner-facing-and-render-closure-hashes-match-baseline",
+    "playwright": "not-applicable-only-while-learner-facing-and-render-closure-hashes-match-baseline",
+    "notApplicableMeaning": "The audit-only unit has no learner-facing or runtime delta while every direct learner-facing and static render-closure hash remains identical to baseline. UI/UX and Playwright delta lanes may therefore show ➖, but this is not a UI, accessibility or runtime conformity finding.",
+    "playwrightActivationCriteria": [
+      "learner-facing hash drift",
+      "render dependency closure hash or membership drift",
+      "runtime interaction, scoring, persistence or feedback change",
+      "accessibility markup or styling change",
+      "new route-visible copy or data import"
+    ]
+  },
+  "interpretation": "This manifest scopes the final audit-only F0.2b.9 unit surface: registry, validator, tests, loop evidence and the portable dossier. Seven direct learner-facing sources and the sixteen-file static render dependency closure, including imported CSS, are pinned and are not authorized to change. Static closure excludes runtime-generated and remote copy. UI/UX and Playwright delta testing are ➖ only while all pinned identities and closure membership remain unchanged; that status does not certify inherited UI, accessibility, scoring or runtime behavior. The exact stop boundary is before F0.2b.10 Note Completion."
+}

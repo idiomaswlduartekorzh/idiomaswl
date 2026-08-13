@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "ielts-reading-matching-sentence-endings-connective-only.v1",
+  "generatedAt": "2026-08-09T15:20:00Z",
+  "reviewScope": "F0.2b.7 — connective-only shortcut audit over 18 questions",
+  "reviewerIsolation": "Use only connectors and sentence starts. Do not open passages, full endings, keys, other packets or prior reviews.",
+  "taskRule": "Predict the logical relation requested by each sentence start, then record which visible connective classes could complete it.",
+  "instruction": "Do not reconstruct or guess stored keys. This packet measures whether visible connectives create a shortcut without passage evidence.",
+  "excludes": [
+    "passages",
+    "full ending text",
+    "answer keys",
+    "explanations",
+    "traps",
+    "prior verdicts",
+    "student data"
+  ],
+  "records": [
+    {
+      "assetId": "formative:matching-sentence-endings:mse-microclimates",
+      "sourceObjectSha256": "932ccefb0130c9fb9fa030f3eee1e21948efcb4da58ed537fde24049fae21f05",
+      "endingConnectives": [
+        {
+          "endingId": "A",
+          "visibleConnective": "because"
+        },
+        {
+          "endingId": "B",
+          "visibleConnective": "because"
+        },
+        {
+          "endingId": "C",
+          "visibleConnective": "by"
+        },
+        {
+          "endingId": "D",
+          "visibleConnective": "only when"
+        },
+        {
+          "endingId": "E",
+          "visibleConnective": "although"
+        },
+        {
+          "endingId": "F",
+          "visibleConnective": "if"
+        },
+        {
+          "endingId": "G",
+          "visibleConnective": "because"
+        },
+        {
+          "endingId": "H",
+          "visibleConnective": "when"
+        }
+      ],
+      "sentenceStarts": [
+        {
+          "questionId": "mse-microclimates-01",
+          "sentenceStart": "Urban heat should not be treated only as a city-wide issue"
+        },
+        {
+          "questionId": "mse-microclimates-02",
+          "sentenceStart": "Pale road coatings and reflective roof materials may help"
+        },
+        {
+          "questionId": "mse-microclimates-03",
+          "sentenceStart": "Shade structures are most useful"
+        },
+        {
+          "questionId": "mse-microclimates-04",
+          "sentenceStart": "Airflow modelling is important before large developments"
+        },
+        {
+          "questionId": "mse-microclimates-05",
+          "sentenceStart": "A cool public space may have limited value"
+        },
+        {
+          "questionId": "mse-microclimates-06",
+          "sentenceStart": "Small microclimate interventions work best"
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-sentence-endings:mse-food-waste",
+      "sourceObjectSha256": "1682b3ff5b6fac272eb80a77d5cecda5307d98d24a690c912f19a42afcc92aa4",
+      "endingConnectives": [
+        {
+          "endingId": "A",
+          "visibleConnective": "because"
+        },
+        {
+          "endingId": "B",
+          "visibleConnective": "by"
+        },
+        {
+          "endingId": "C",
+          "visibleConnective": "only when"
+        },
+        {
+          "endingId": "D",
+          "visibleConnective": "when"
+        },
+        {
+          "endingId": "E",
+          "visibleConnective": "unless"
+        },
+        {
+          "endingId": "F",
+          "visibleConnective": "because"
+        },
+        {
+          "endingId": "G",
+          "visibleConnective": "as"
+        },
+        {
+          "endingId": "H",
+          "visibleConnective": "because"
+        }
+      ],
+      "sentenceStarts": [
+        {
+          "questionId": "mse-food-waste-01",
+          "sentenceStart": "Food waste should not be blamed only on careless consumers"
+        },
+        {
+          "questionId": "mse-food-waste-02",
+          "sentenceStart": "Forecasting systems can reduce waste"
+        },
+        {
+          "questionId": "mse-food-waste-03",
+          "sentenceStart": "Imperfect produce may sell better"
+        },
+        {
+          "questionId": "mse-food-waste-04",
+          "sentenceStart": "Food donation programmes are useful"
+        },
+        {
+          "questionId": "mse-food-waste-05",
+          "sentenceStart": "Household composting is best understood"
+        },
+        {
+          "questionId": "mse-food-waste-06",
+          "sentenceStart": "Restaurants may produce surplus meals"
+        }
+      ]
+    },
+    {
+      "assetId": "formative:matching-sentence-endings:mse-coastal-libraries",
+      "sourceObjectSha256": "87e771a35de1ad2b132f30a3c61abaf60471fdd0636034d977376d6aed05ebad",
+      "endingConnectives": [
+        {
+          "endingId": "A",
+          "visibleConnective": "because"
+        },
+        {
+          "endingId": "B",
+          "visibleConnective": "without"
+        },
+        {
+          "endingId": "C",
+          "visibleConnective": "by"
+        },
+        {
+          "endingId": "D",
+          "visibleConnective": "only when"
+        },
+        {
+          "endingId": "E",
+          "visibleConnective": "when"
+        },
+        {
+          "endingId": "F",
+          "visibleConnective": "because"
+        },
+        {
+          "endingId": "G",
+          "visibleConnective": "before"
+        },
+        {
+          "endingId": "H",
+          "visibleConnective": "because"
+        }
+      ],
+      "sentenceStarts": [
+        {
+          "questionId": "mse-libraries-01",
+          "sentenceStart": "Libraries can support climate adaptation"
+        },
+        {
+          "questionId": "mse-libraries-02",
+          "sentenceStart": "Trained library staff can guide residents"
+        },
+        {
+          "questionId": "mse-libraries-03",
+          "sentenceStart": "Map workshops become useful"
+        },
+        {
+          "questionId": "mse-libraries-04",
+          "sentenceStart": "The Harbor Point programme showed that residents helped planning"
+        },
+        {
+          "questionId": "mse-libraries-05",
+          "sentenceStart": "Libraries have the greatest value"
+        },
+        {
+          "questionId": "mse-libraries-06",
+          "sentenceStart": "Libraries should not be expected to manage emergencies alone"
+        }
+      ]
+    }
+  ]
+}

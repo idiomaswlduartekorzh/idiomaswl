@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "ielts-reading-sentence-completion-blind-review.v1",
+  "generatedAt": "2026-08-09T16:36:00Z",
+  "reviewScope": "F0.2b.8 — clean exact one-best-answer adjudication over three passages",
+  "reviewerIsolation": "Use only this packet. Do not open catalog, registry, validator, runtime, prompt-only verdict, factual packet or prior audits until all 18 decisions are persisted.",
+  "taskRule": "Complete every sentence with a contiguous span from its passage. Use no more than two words; a hyphenated expression counts as one word and contractions are not tested. The questions must follow passage order.",
+  "instruction": "Persist the completed sentence, exact passage span, evidence, closest plausible competing span and ambiguity. Do not use hints or outside knowledge.",
+  "excludes": [
+    "answer keys",
+    "accepted alternatives",
+    "explanations",
+    "hints",
+    "prior verdicts",
+    "factual sources",
+    "student data"
+  ],
+  "records": [
+    {
+      "assetId": "formative:sentence-completion:sentence-wetland-parks",
+      "title": "Wetland parks and urban flood control",
+      "sourceObjectSha256": "42f7976e179acf1b8afec86285530ad9b5a5a26aba13ca89c7ad82c86bbf22db",
+      "passageSha256": "f1f74d465074ba9570c9c4cbb381538a4b0f38c16251930c4d90f2126d14e1a8",
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "passage": "Many cities are redesigning old drainage areas as wetland parks. Instead of moving rainwater away as quickly as possible through concrete channels, these parks hold water temporarily and allow it to filter through plants and soil. During heavy storms, this storage capacity can reduce pressure on underground pipes and lower the risk of street flooding.\n\nWetland parks also create habitats for insects, birds and amphibians. A narrow strip of water beside a road may look small, but if it contains native plants and shallow pools, it can support species that struggle to survive in heavily paved districts. Some city planners therefore describe these parks as ecological infrastructure rather than simple decoration.\n\nThe success of a wetland park depends on maintenance. Plants must be monitored, litter needs to be removed and water levels should be checked after extreme weather. If a park is neglected, blocked channels can reduce water flow and the area may become less effective during storms.\n\nPublic access is another important issue. Walkways, signs and viewing platforms can help residents understand why the landscape sometimes appears wet or muddy. When people recognize the purpose of the park, they are more likely to support its long-term protection.",
+      "questions": [
+        {
+          "questionId": "sentence-wetlands-01",
+          "before": "Wetland parks can keep rainwater for a short time instead of sending it through ",
+          "after": "."
+        },
+        {
+          "questionId": "sentence-wetlands-02",
+          "before": "During storms, the parks can reduce pressure on ",
+          "after": "."
+        },
+        {
+          "questionId": "sentence-wetlands-03",
+          "before": "Small wetland areas may help species survive if they include native plants and ",
+          "after": "."
+        },
+        {
+          "questionId": "sentence-wetlands-04",
+          "before": "Some planners call wetland parks ecological ",
+          "after": " instead of decoration."
+        },
+        {
+          "questionId": "sentence-wetlands-05",
+          "before": "If maintenance is poor, blocked channels can limit ",
+          "after": "."
+        },
+        {
+          "questionId": "sentence-wetlands-06",
+          "before": "Signs and viewing platforms can help people understand the park’s ",
+          "after": "."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:sentence-completion:sentence-library-makerspaces",
+      "title": "Library makerspaces and practical learning",
+      "sourceObjectSha256": "8f2b278d1b180a17a78f9aa3057364ebf3a8e401ff6b3b529ac109f8936da6bc",
+      "passageSha256": "e13b68261fc5b2e3c3488ffbb2f920710954d7959d744d0deb24b572edd7b5db",
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "passage": "Public libraries have long provided quiet rooms, books and internet access. In many towns, they now also provide makerspaces: small areas where visitors can use tools such as sewing machines, audio recorders, 3D printers and basic electronics kits. Supporters argue that these spaces help libraries move from storing information to helping people create things with it.\n\nThe equipment is not the main point. A library makerspace works best when staff can introduce tools safely and connect visitors with realistic first projects. A teenager recording a podcast, a parent repairing a school costume and a retired engineer teaching soldering all use the space differently, but each activity turns knowledge into a visible result.\n\nThere are risks. Expensive equipment can sit unused if the library buys it without understanding local interests. Noise can also disturb people who still need a quiet reading area. Successful libraries therefore separate noisy activities from study zones and choose tools that match community demand.\n\nMakerspaces are not a replacement for books or reading. Their value is that they extend the library's public role. A person may enter to print a document and leave with the confidence to try a repair, record a story or ask for help with a design.",
+      "questions": [
+        {
+          "questionId": "sentence-makerspaces-01",
+          "before": "Makerspaces let library visitors use tools including audio recorders and ",
+          "after": "."
+        },
+        {
+          "questionId": "sentence-makerspaces-02",
+          "before": "Supporters say makerspaces help libraries move beyond ",
+          "after": " information."
+        },
+        {
+          "questionId": "sentence-makerspaces-03",
+          "before": "Staff need to introduce tools safely and connect visitors with realistic ",
+          "after": "."
+        },
+        {
+          "questionId": "sentence-makerspaces-04",
+          "before": "Equipment may remain unused if the library ignores local ",
+          "after": "."
+        },
+        {
+          "questionId": "sentence-makerspaces-05",
+          "before": "Libraries protect study areas by separating noisy activities from ",
+          "after": "."
+        },
+        {
+          "questionId": "sentence-makerspaces-06",
+          "before": "Makerspaces extend the library’s ",
+          "after": " rather than replacing books."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:sentence-completion:sentence-night-markets",
+      "title": "Night markets and local economies",
+      "sourceObjectSha256": "b0434ae0c3ed919b06a0c256586f1753d299b260bbe5aa34c2813ed788622ff3",
+      "passageSha256": "612893d0f0aabbd88a9b75699523b67530744c3402dfe051e0f4197d7657ff1c",
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "passage": "Night markets are often associated with tourism, but many successful markets begin as local experiments. A closed street, a group of food vendors and a simple lighting plan can create an evening economy without requiring a permanent shopping centre. For small businesses, the short trading window lowers some costs and allows them to test new products.\n\nLocation matters. A night market beside a transit stop is easier to reach than one placed in an isolated car park. Nearby residents also influence the design. Organizers may need to limit amplified music, provide waste bins and keep pedestrian routes clear so that the market feels lively without becoming disruptive.\n\nFood is usually the most visible attraction, but it should not be the only one. Craft stalls, repair tables and small performances can encourage visitors to stay longer and return for reasons beyond dinner. A market that depends on one fashionable dish may lose visitors quickly when tastes change.\n\nThe strongest markets collect feedback after each event. Vendor sales, crowd movement, noise complaints and cleaning costs reveal whether the market is growing in a healthy way. Without this information, organizers may mistake a busy opening night for long-term success.",
+      "questions": [
+        {
+          "questionId": "sentence-night-markets-01",
+          "before": "Night markets can create an evening economy without a permanent ",
+          "after": "."
+        },
+        {
+          "questionId": "sentence-night-markets-02",
+          "before": "A short trading window helps small businesses test ",
+          "after": "."
+        },
+        {
+          "questionId": "sentence-night-markets-03",
+          "before": "Markets near a ",
+          "after": " are easier for people to reach."
+        },
+        {
+          "questionId": "sentence-night-markets-04",
+          "before": "Organizers may need to keep ",
+          "after": " clear to avoid disruption."
+        },
+        {
+          "questionId": "sentence-night-markets-05",
+          "before": "Craft stalls and performances can make visitors stay ",
+          "after": "."
+        },
+        {
+          "questionId": "sentence-night-markets-06",
+          "before": "Organizers need feedback because a busy opening night may not prove ",
+          "after": "."
+        }
+      ]
+    }
+  ]
+}

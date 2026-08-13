@@ -1,0 +1,190 @@
+{
+  "schemaVersion": "ielts-reading-note-completion-blind-review.v1",
+  "generatedAt": "2026-08-11T16:08:56Z",
+  "reviewScope": "F0.2b.10 — clean exact one-best-answer adjudication over three passages",
+  "reviewerIsolation": "Use only this packet. Do not open catalog, registry, validator, runtime, prompt-only verdict, factual packet or prior audits until all 18 decisions are persisted.",
+  "taskRule": "Complete every note gap with a contiguous span from its passage. Use no more than two words; a hyphenated expression counts as one word and contractions are not tested. For official type 9, answers may not occur in passage order and usually come from one part rather than the whole text; judge this bank as written.",
+  "instruction": "Persist the completed note sentence, exact passage span, evidence, closest plausible competing span and ambiguity. Also judge whether the six separated cards function as a genuine continuous note. Do not use hints or outside knowledge.",
+  "excludes": [
+    "answer keys",
+    "accepted alternatives",
+    "explanations",
+    "hints",
+    "prior verdicts",
+    "factual sources",
+    "student data"
+  ],
+  "records": [
+    {
+      "assetId": "formative:note-completion:note-mobile-libraries",
+      "title": "Mobile libraries and community reading",
+      "sourceObjectSha256": "8d64253dbba9480da1cb9de4082bbf4c7bbee221fc17f748e9f9ddaeadb8ea3f",
+      "passageSha256": "c22dfef22bc06bd72409d3952715faee8ade98a21f9a019384b0a3c46b6fb343",
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "passage": "In several rural regions, mobile libraries have become a practical way to keep reading services available when permanent branches are too expensive to maintain. Instead of asking residents to travel long distances, vans carry books, magazines and digital materials to schools, markets and community halls on a regular schedule.\n\nThe service is most useful when it responds to local routines. In farming areas, visits are often arranged after market days, when families are already near a central meeting place. In coastal towns, the schedule may avoid early mornings because many adults are working at sea. Librarians say that a predictable timetable matters as much as the size of the collection because people need to know when the service will arrive.\n\nMobile libraries also support learners who cannot easily use online resources. Some vans include tablets and a small satellite connection, but the aim is not to replace printed books. Staff use the connection to help residents download forms, search for courses or contact public offices. For children, the most popular activities are still story sessions and reading games led by visiting librarians.\n\nThe main challenge is long-term funding. Fuel, vehicle repairs and trained staff all create costs that may rise faster than local budgets. Successful programmes therefore build partnerships with schools, health centres and volunteer groups. These partners share spaces, announce visits and help identify families who would benefit from extra support.",
+      "notesTitle": "Notes: mobile library services",
+      "noteGroups": [
+        {
+          "heading": "Purpose and delivery",
+          "items": [
+            {
+              "questionId": "note-mobile-libraries-01",
+              "before": "Used where permanent branches are too ",
+              "after": " to maintain."
+            },
+            {
+              "questionId": "note-mobile-libraries-02",
+              "before": "Vans take reading materials to schools, markets and ",
+              "after": "."
+            }
+          ]
+        },
+        {
+          "heading": "Planning around routines",
+          "items": [
+            {
+              "questionId": "note-mobile-libraries-03",
+              "before": "In farming areas, visits may happen after ",
+              "after": "."
+            },
+            {
+              "questionId": "note-mobile-libraries-04",
+              "before": "A predictable ",
+              "after": " can be as important as collection size."
+            }
+          ]
+        },
+        {
+          "heading": "Support and sustainability",
+          "items": [
+            {
+              "questionId": "note-mobile-libraries-05",
+              "before": "Staff may help residents search for courses or contact ",
+              "after": "."
+            },
+            {
+              "questionId": "note-mobile-libraries-06",
+              "before": "Programmes often need partnerships with schools, health centres and ",
+              "after": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetId": "formative:note-completion:note-seed-banks",
+      "title": "Community seed banks",
+      "sourceObjectSha256": "f67761984beb116c7f80dbc9f8807b976a79dda2a2890fdc9b926c8815c438ff",
+      "passageSha256": "e754e89bcb82bc8f9655028851c8696014be32fcbcd8007f6faf2b245ee38709",
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "passage": "Community seed banks are local collections of seeds that farmers can borrow, grow and return after harvest. They are different from large national seed stores because they focus on varieties used in a particular valley, island or farming region. Many of these varieties have been selected over generations for taste, drought tolerance or resistance to local pests.\n\nThe first task in a seed bank is documentation. Volunteers record the name of each seed, the place where it was collected and the conditions in which it usually grows well. This information matters because a seed is not useful if farmers do not know when to plant it or how it behaves in poor soil. Some banks also photograph plants at different stages so younger farmers can identify them correctly.\n\nStorage is another challenge. Seeds must be kept dry, cool and protected from insects. In humid regions, simple clay jars or sealed glass containers may work better than expensive equipment if they are checked regularly. Bank managers also test older seeds by planting a small sample; if too few germinate, the variety must be multiplied before the supply disappears.\n\nSeed banks often become educational centres. Farmers compare harvest results, school groups learn why crop diversity matters and cooks demonstrate recipes using less common grains or beans. The goal is not to reject modern agriculture, but to keep local options available when weather, markets or disease make a single commercial crop risky.",
+      "notesTitle": "Notes: community seed banks",
+      "noteGroups": [
+        {
+          "heading": "Purpose and local value",
+          "items": [
+            {
+              "questionId": "note-seed-banks-01",
+              "before": "Farmers can borrow seeds and return them after ",
+              "after": "."
+            },
+            {
+              "questionId": "note-seed-banks-02",
+              "before": "Local varieties may resist pests or tolerate ",
+              "after": "."
+            }
+          ]
+        },
+        {
+          "heading": "Documentation",
+          "items": [
+            {
+              "questionId": "note-seed-banks-03",
+              "before": "Volunteers record each seed name, collection place and growing ",
+              "after": "."
+            },
+            {
+              "questionId": "note-seed-banks-04",
+              "before": "Photos can help younger farmers ",
+              "after": " plants correctly."
+            }
+          ]
+        },
+        {
+          "heading": "Storage and education",
+          "items": [
+            {
+              "questionId": "note-seed-banks-05",
+              "before": "Seeds need protection from insects and should be kept dry and ",
+              "after": "."
+            },
+            {
+              "questionId": "note-seed-banks-06",
+              "before": "Cooks may show recipes using less common grains or ",
+              "after": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetId": "formative:note-completion:note-night-libraries",
+      "title": "Night study spaces in public libraries",
+      "sourceObjectSha256": "e77d5edaaaefd183affe68194bf95ad7cd6696cdbecc1148b7281c46c8f46ccd",
+      "passageSha256": "c7d601de88b071a6061fa7b20ebb292656934f2e1808f0a9d69809a1f16df218",
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "passage": "Some public libraries have begun opening selected rooms in the evening for students who do not have quiet places to work at home. These night study spaces are not the same as full library service. In many cases, visitors can use desks, power sockets and wireless internet, but borrowing counters, children's areas and archives remain closed.\n\nLibraries usually start with a pilot programme before extending evening access. Staff count how many people arrive, which hours are busiest and whether extra security is needed near entrances. The data helps managers decide if the service should run during exam periods only or throughout the year. A small pilot also reveals practical issues, such as poor lighting outside the building or a shortage of cleaning staff after closing time.\n\nDesign choices affect whether night study spaces feel safe and productive. Clear signs reduce confusion about which areas are open, while glass walls allow staff to monitor rooms without interrupting students. Some libraries create silent zones and discussion zones so groups preparing presentations do not disturb people reading alone.\n\nThe policy has limits. Younger students may need parental permission, and libraries must decide how to respond if visitors use the space mainly for socialising. Supporters argue that these problems can be managed with simple rules, booking systems and cooperation with nearby schools. When the rules are clear, night access can turn an underused building into a valuable study option.",
+      "notesTitle": "Notes: night study spaces",
+      "noteGroups": [
+        {
+          "heading": "Service offered",
+          "items": [
+            {
+              "questionId": "note-night-libraries-01",
+              "before": "Evening rooms support students without quiet places to work at ",
+              "after": "."
+            },
+            {
+              "questionId": "note-night-libraries-02",
+              "before": "Visitors may use desks, power sockets and ",
+              "after": "."
+            }
+          ]
+        },
+        {
+          "heading": "Pilot programme",
+          "items": [
+            {
+              "questionId": "note-night-libraries-03",
+              "before": "Staff check whether extra ",
+              "after": " is required near entrances."
+            },
+            {
+              "questionId": "note-night-libraries-04",
+              "before": "The trial can reveal poor lighting outside the ",
+              "after": "."
+            }
+          ]
+        },
+        {
+          "heading": "Design and rules",
+          "items": [
+            {
+              "questionId": "note-night-libraries-05",
+              "before": "Clear signs show which ",
+              "after": " are open."
+            },
+            {
+              "questionId": "note-night-libraries-06",
+              "before": "Some younger visitors may need parental ",
+              "after": "."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

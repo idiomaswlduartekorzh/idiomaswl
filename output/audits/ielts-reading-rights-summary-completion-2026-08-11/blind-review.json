@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "ielts-reading-summary-completion-blind-review.v1",
+  "generatedAt": "2026-08-11T15:06:00Z",
+  "reviewScope": "F0.2b.9 — clean exact one-best-answer adjudication over three passages",
+  "reviewerIsolation": "Use only this packet. Do not open catalog, registry, validator, runtime, prompt-only verdict, factual packet or prior audits until all 18 decisions are persisted.",
+  "taskRule": "Complete every summary gap with a contiguous span from its passage. Use no more than two words; a hyphenated expression counts as one word and contractions are not tested. For official type 9, answers may not occur in passage order and usually come from one part rather than the whole text; judge this bank as written.",
+  "instruction": "Persist the completed summary sentence, exact passage span, evidence, closest plausible competing span and ambiguity. Also judge whether the six separated cards function as a genuine continuous summary. Do not use hints or outside knowledge.",
+  "excludes": [
+    "answer keys",
+    "accepted alternatives",
+    "explanations",
+    "hints",
+    "prior verdicts",
+    "factual sources",
+    "student data"
+  ],
+  "records": [
+    {
+      "assetId": "formative:summary-completion:summary-urban-farms",
+      "title": "Rooftop farms in modern cities",
+      "sourceObjectSha256": "f10464976342bfef4607a46ba77d611310ffd7cabeae7c9949bd78a100d93640",
+      "passageSha256": "71854aeab48ed3c297f05b2c6c5f3ce081c4febe7e8799d61ece40364f84e80e",
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "passage": "Rooftop farming has become more visible in several large cities, especially where unused roof space is common. Supporters argue that these projects can shorten food supply chains and make residents more aware of seasonal produce. A small farm on top of a supermarket or apartment building cannot feed an entire city, but it can supply herbs, salad leaves and some vegetables to nearby customers.\n\nThe environmental benefits depend on design. Lightweight soil systems and careful irrigation can reduce the strain on older buildings, while rainwater collection may lower the demand for treated water. Some rooftop farms also improve insulation, keeping buildings cooler in summer and slightly warmer in winter. However, these advantages are limited if the farm requires frequent deliveries of heavy materials or uses energy-intensive equipment.\n\nRooftop farms often have a social function as well. Schools use them for science lessons, restaurants invite customers to see where ingredients are grown, and community groups organize volunteer sessions. These activities can make urban agriculture visible and educational, even when the total harvest is modest.\n\nThe main barrier is not always technology. Building permissions, safety rules and maintenance costs can slow projects before the first seeds are planted. For this reason, successful rooftop farms usually begin with a realistic plan: engineers check the roof, growers choose suitable crops and managers decide who will care for the site throughout the year.",
+      "questions": [
+        {
+          "questionId": "summary-urban-farms-01",
+          "before": "Rooftop farming is increasingly visible in cities where there is unused ",
+          "after": "."
+        },
+        {
+          "questionId": "summary-urban-farms-02",
+          "before": "These farms may shorten food ",
+          "after": " and help residents notice seasonal produce."
+        },
+        {
+          "questionId": "summary-urban-farms-03",
+          "before": "Careful irrigation and lightweight soil systems can reduce pressure on ",
+          "after": "."
+        },
+        {
+          "questionId": "summary-urban-farms-04",
+          "before": "Rainwater collection can reduce demand for ",
+          "after": "."
+        },
+        {
+          "questionId": "summary-urban-farms-05",
+          "before": "Some projects have an educational role because schools use them for ",
+          "after": "."
+        },
+        {
+          "questionId": "summary-urban-farms-06",
+          "before": "Before planting, successful projects often require engineers to check the ",
+          "after": "."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:summary-completion:summary-repair-cafes",
+      "title": "Community repair cafes",
+      "sourceObjectSha256": "1d4de4d085159c2cb86336bc9f7277d39f26e1ab4d5ff3a4eac0c4a5ff03f2c4",
+      "passageSha256": "d335aea3d71ba26b7fa484f697a5b73b9bc4745937ca0d8dd60c18582f88e4ca",
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "passage": "Repair cafes began as informal meetings where residents brought broken household objects and learned how to fix them with help from experienced volunteers. The idea has spread because many items that appear useless need only a loose wire, a missing button or a simple replacement part. Organisers usually ask visitors to stay with the repair instead of leaving the object behind, so the event becomes a lesson rather than a free service.\n\nThe most successful cafes prepare carefully before each session. Volunteers sort tools, check whether common spare parts are available and decide which repairs are too risky to attempt in a public space. Electrical devices, for example, may be inspected only by people with relevant training. This protects visitors and prevents the cafe from promising results it cannot safely deliver.\n\nSupporters often describe repair cafes as environmental projects, but their social benefits are just as important. Older residents can share practical knowledge, students gain confidence with unfamiliar tools and neighbours who rarely meet have a reason to talk. Even when an object cannot be fixed, visitors often leave understanding why it failed and how future purchases might be chosen more carefully.\n\nSome councils now support repair cafes because they reduce waste and encourage local cooperation. However, organisers warn that the model depends on trust. If sessions become too commercial or if volunteers are pressured to work quickly, the educational atmosphere disappears. For this reason, many cafes limit the number of objects accepted each day and keep the focus on shared problem solving.",
+      "questions": [
+        {
+          "questionId": "summary-repair-cafes-01",
+          "before": "Repair cafes help residents fix broken ",
+          "after": " with support from volunteers."
+        },
+        {
+          "questionId": "summary-repair-cafes-02",
+          "before": "Visitors are usually asked to stay during the repair so the activity becomes a ",
+          "after": " instead of only a service."
+        },
+        {
+          "questionId": "summary-repair-cafes-03",
+          "before": "Before a session, volunteers check whether common ",
+          "after": " are available."
+        },
+        {
+          "questionId": "summary-repair-cafes-04",
+          "before": "Electrical items should be inspected by people with relevant ",
+          "after": "."
+        },
+        {
+          "questionId": "summary-repair-cafes-05",
+          "before": "Students may develop ",
+          "after": " when they use unfamiliar tools."
+        },
+        {
+          "questionId": "summary-repair-cafes-06",
+          "before": "Many cafes protect the educational mood by focusing on shared ",
+          "after": "."
+        }
+      ]
+    },
+    {
+      "assetId": "formative:summary-completion:summary-shade-mapping",
+      "title": "Mapping shade in hot cities",
+      "sourceObjectSha256": "1321f00ec9e13f803a18a8582c40aad5398dd1ea73dd04eb552d6a1eec5e0230",
+      "passageSha256": "663aa18c9170a448f562bcfe4d3b10d70494198020800995dd978dfc07a97307",
+      "wordLimit": "NO MORE THAN TWO WORDS",
+      "maxWords": 2,
+      "passage": "As heatwaves become more common, some cities are mapping shade with the same care once reserved for traffic or drainage. The work begins with satellite images, but planners also send teams into streets to record how buildings, trees and bus shelters affect the experience of walking at different times of day. A route that appears short on a map may feel much longer if it exposes pedestrians to direct sun for several blocks.\n\nShade maps are especially useful when they are combined with social data. Older residents, outdoor workers and children may face higher heat exposure, while people without cars depend more heavily on walking routes and public transport stops. By comparing shade with these daily movements, planners can identify places where a small intervention would help many people.\n\nThe interventions are not limited to planting trees. Trees provide long-term cooling, but they need space, water and years of growth. In narrow streets, temporary canopies, reflective surfaces or redesigned waiting areas may work faster. Some cities test these ideas before making permanent changes, using portable sensors to measure air temperature and surface heat.\n\nResearchers warn that shade mapping should not become a decorative exercise. A beautiful map is useful only if it changes budgets, maintenance schedules and building rules. The best projects therefore connect data collection with cooling plans that specify who will act, where the money will come from and how residents will report gaps after the first improvements are installed.",
+      "questions": [
+        {
+          "questionId": "summary-shade-mapping-01",
+          "before": "Cities are mapping shade as ",
+          "after": " become increasingly frequent."
+        },
+        {
+          "questionId": "summary-shade-mapping-02",
+          "before": "The process starts with ",
+          "after": ", but teams also collect information on streets."
+        },
+        {
+          "questionId": "summary-shade-mapping-03",
+          "before": "A short route may feel longer if pedestrians are exposed to ",
+          "after": " for several blocks."
+        },
+        {
+          "questionId": "summary-shade-mapping-04",
+          "before": "Planners compare shade with daily movements to find places where a small ",
+          "after": " could help many people."
+        },
+        {
+          "questionId": "summary-shade-mapping-05",
+          "before": "In narrow streets, temporary ",
+          "after": " may cool people faster than trees."
+        },
+        {
+          "questionId": "summary-shade-mapping-06",
+          "before": "Useful projects connect data collection with ",
+          "after": " that identify action, funding and feedback."
+        }
+      ]
+    }
+  ]
+}

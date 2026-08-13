@@ -1,0 +1,3512 @@
+{
+  "schemaVersion": "ielts-reading-matching-features-rights-validation.v1",
+  "generatedAt": "2026-08-09T13:55:00Z",
+  "unit": "F0.2b.6 — three formative Matching Features passages",
+  "status": "pass",
+  "passMeaning": "PASS certifies audit coverage, identity, quarantine, blind adjudication and risk detection. It does not approve keys, factuality, rights, publication, runtime conformity or student efficacy.",
+  "scope": {
+    "passages": 3,
+    "questions": 19,
+    "featureCandidates": 14,
+    "registryEntriesInUnit": 3,
+    "registryEntriesTotal": 24,
+    "coveredAssetIds": [
+      "formative:matching-features:mf-urban-farming",
+      "formative:matching-features:mf-memory-research",
+      "formative:matching-features:mf-transport-policies"
+    ],
+    "parentF02bRemainsOpen": true,
+    "scopedLearnerSourcesChangedSinceBaseline": false
+  },
+  "checks": {
+    "exactCoverage": true,
+    "stableUniqueIds": true,
+    "sourceHashesMatchBaseline": true,
+    "registryPolicyV7Pinned": true,
+    "registryReferencesResolve": true,
+    "registryEvidenceAndReviewTimestampsValid": true,
+    "officialRuleSourceAvailable": true,
+    "factualSourceAvailabilityRecorded": true,
+    "availabilityNotTreatedAsVerification": true,
+    "candidateSourcesAreNotTreatedAsVerification": true,
+    "factualReviewRequiredForEveryAsset": true,
+    "actualAssetsAllQuarantined": true,
+    "actualRegistryRecordsStructurallyValid": true,
+    "visibleOriginalityClaimObservedButUnverified": true,
+    "renderDependencyClosureContainsNoUnexpectedClaims": true,
+    "learnerFacingDependencyClosureContainsNoFeatureAssignments": true,
+    "blindPacketContainsNoAnswersExplanationsTrapsOrSkills": true,
+    "blindPacketContainsNoFeatureLetterAssignments": true,
+    "blindPacketContainsNoLearnerOrContactPii": true,
+    "factualSourcePacketContainsNoAnswersExplanationsTrapsOrSkills": true,
+    "factualSourcePacketContainsNoFeatureLetterAssignments": true,
+    "independentExpertCoverageComplete": true,
+    "expertAgreementNineteenOfNineteen": true,
+    "expertFirstPassPersistedAndPinned": true,
+    "evidenceQuotesAndClosestCompetitorEnforced": true,
+    "exactFactualClaimCoverage": true,
+    "studentWalkthroughCoverageComplete": true,
+    "featureReuseDeclaredAllowedAndAudited": true,
+    "featureLetterBindingsPreserved": true,
+    "runtimeImmediateFeedbackAndAnswerLockingDetected": true,
+    "preResponseTrapHintsDetected": true,
+    "visibleFeatureDescriptionsDetected": true,
+    "answerKeysDeliveredToClientDetected": true,
+    "runtimeNotMisrepresentedAsPracticeOrExam": true,
+    "statisticalCertificationWithheld": true,
+    "contentCertificationBlocked": true,
+    "contentMutationDenied": true,
+    "scopedLearnerSourcesUnchanged": true,
+    "nextUnitSourcesUnchangedAndStopBoundaryEnforced": true,
+    "auditRegistryAbsentFromLearnerRuntimeImports": true,
+    "provenanceSearchLedgerComplete": true,
+    "chronologyIsMonotonicAndNotFutureDated": true,
+    "finalPanelVerdictsValidated": true,
+    "antiBiasMultidimensionalCoverage": true,
+    "keyLikeValueLeakageMutationsDetected": true,
+    "boardStateMatchesValidatedUnit": true,
+    "nextUnitAndParentRemainOpen": true
+  },
+  "decisions": [
+    {
+      "assetId": "formative:matching-features:mf-urban-farming",
+      "title": "Matching Features practice: urban farming projects",
+      "sourceObjectSha256": "94fcc6b7c50c8ab6d433890bf4d9b6e0155cb5519203d3e89aa70362346aa68d",
+      "passageSha256": "c7923d205c2f2bcaeb9bd28724d37bdaeb69f774ce6447bcfaad4e165d12937e",
+      "wordCount": 308,
+      "questionCount": 7,
+      "featureCandidateCount": 4,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 5,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    {
+      "assetId": "formative:matching-features:mf-memory-research",
+      "title": "Matching Features practice: memory research",
+      "sourceObjectSha256": "c88f5a60dc24c9ce76a773055168b14f496321f720e215401053fc22bba6a36d",
+      "passageSha256": "d75a32a55a1430590620c682a941f68e09f5d41a06bc53103934f5bf2f9c34c9",
+      "wordCount": 306,
+      "questionCount": 6,
+      "featureCandidateCount": 5,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 5,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    {
+      "assetId": "formative:matching-features:mf-transport-policies",
+      "title": "Matching Features practice: transport policies",
+      "sourceObjectSha256": "2b101575e9c524ab47060bdd6266b6d46138502be62b5aea708672eeb226e7b4",
+      "passageSha256": "769eba354fabc78b677e52b719effcc078faf7de7a146b4170dfdec6791f409c",
+      "wordCount": 264,
+      "questionCount": 6,
+      "featureCandidateCount": 5,
+      "provenanceStatus": "unresolved",
+      "rightsBasis": "unknown-quarantined",
+      "factualResearchStatus": "candidate-sources-collected",
+      "factualReviewPolicy": "required",
+      "candidateFactualSourceCount": 5,
+      "factualReviewStatus": "not-reviewed",
+      "humanReviewStatus": "pending",
+      "authorizationEvidenceStatus": "not-located-in-reviewed-sources",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "reasonCodes": [
+        "authorship-unresolved",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    }
+  ],
+  "visibleClaims": [
+    {
+      "text": "textos originales de WeLearn",
+      "sourcePath": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-features/page.tsx",
+      "observed": true
+    },
+    {
+      "text": "Banco original WeLearn",
+      "sourcePath": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-features/page.tsx",
+      "observed": true
+    },
+    {
+      "text": "sin copiar preguntas oficiales",
+      "sourcePath": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-features/page.tsx",
+      "observed": true
+    },
+    {
+      "text": "preparado por el equipo académico de WeLearn y revisado en julio de 2026",
+      "sourcePath": "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+      "observed": true
+    },
+    {
+      "text": "los ejercicios son originales de WeLearn",
+      "sourcePath": "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+      "observed": true
+    }
+  ],
+  "renderDependencyClosure": {
+    "sourceCount": 15,
+    "unexpectedClaimFiles": [],
+    "limitation": "Static local-import closure from root/site layouts and the Matching Features route; runtime-generated or remote copy still requires browser/runtime review."
+  },
+  "provenanceSearch": {
+    "schemaVersion": "ielts-reading-matching-features-provenance-search.v1",
+    "searchedAt": "2026-08-09T08:18:00-05:00",
+    "method": "Directed exact-title, exact-first-sentence, named-entity and distinctive-fragment public-web search; reviewed results were compared for verbal identity and case identity.",
+    "searchSurface": "public web search",
+    "queries": [
+      {
+        "assetId": "formative:matching-features:mf-urban-farming",
+        "query": "\"Different approaches to urban farming\" \"Green Roof Collective\" \"Lina Torres\"",
+        "resultsReviewed": [
+          {
+            "title": "Urban Agriculture — USDA National Agricultural Library",
+            "url": "https://www.nal.usda.gov/farms-and-agricultural-production-systems/urban-agriculture",
+            "reasonNotExactMatch": "Topical institutional overview of rooftop, school, community and controlled-environment agriculture; no named-entity or verbatim passage match."
+          },
+          {
+            "title": "Urban Agriculture — US EPA",
+            "url": "https://www.epa.gov/brownfields/urban-agriculture",
+            "reasonNotExactMatch": "Topical public-sector source on vacant land; no exact project, person or passage match."
+          }
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      },
+      {
+        "assetId": "formative:matching-features:mf-memory-research",
+        "query": "\"Different approaches to studying memory\" \"Helen Ward\" \"Moreno Lab\" \"Kenji Sato\"",
+        "resultsReviewed": [
+          {
+            "title": "Active decision-making and route learning — PubMed",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/25419818/",
+            "reasonNotExactMatch": "Conceptually related primary research; no match for Helen Ward, the stated pause/prediction protocol or the passage wording."
+          },
+          {
+            "title": "The effect of relative confidence and the co-witness memory conformity effect — DOI 10.1002/acp.3320",
+            "url": "https://doi.org/10.1002/acp.3320",
+            "reasonNotExactMatch": "Conceptually close to confident social misinformation and therefore a provenance alert, but no nominal or verbatim match to Moreno Lab."
+          }
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      },
+      {
+        "assetId": "formative:matching-features:mf-transport-policies",
+        "query": "\"City transport policies with different goals\" \"Rivergate Bus Priority Plan\" \"Northbridge Safe Streets Programme\"",
+        "resultsReviewed": [
+          {
+            "title": "Bus Priority Programme — Transport for London",
+            "url": "https://tfl.gov.uk/modes/buses/bus-priority-programme",
+            "reasonNotExactMatch": "Topical institutional source on bus priority and kerbside activity; no Rivergate identity or verbatim match."
+          },
+          {
+            "title": "Mobility as a Service code of practice — UK Department for Transport",
+            "url": "https://www.gov.uk/government/publications/mobility-as-a-service-maas-code-of-practice/mobility-as-a-service-code-of-practice",
+            "reasonNotExactMatch": "Topical public-sector source on multimodal integration and digital exclusion; no named programme or passage match."
+          }
+        ],
+        "outcome": "no-exact-match-in-reviewed-results"
+      }
+    ],
+    "interpretation": "Directed and non-exhaustive. No exact match in reviewed results does not prove originality, authorship, clearance or universal absence of a prior source. The search did not cover licensed databases, print-only works, deleted pages, translations, private documents, drafts or extensive paraphrase. Repository history establishes when content entered this repository, not who created it; conceptual similarity in the memory passage requires human source reconstruction, not automatic attribution."
+  },
+  "factualResearch": [
+    {
+      "assetId": "formative:matching-features:mf-urban-farming",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "urban-nyc-rooftop-farm",
+        "urban-doe-controlled-environment-agriculture",
+        "urban-usda-school-gardens",
+        "urban-epa-vacant-land-agriculture",
+        "urban-usda-cea-energy"
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas permiten contrastar agricultura en azoteas, producción controlada, huertos escolares, lotes vacantes y costes técnicos, pero no acreditan las entidades nombradas ni verifican todos los resultados, clientes, acuerdos o relaciones causales del pasaje."
+    },
+    {
+      "assetId": "formative:matching-features:mf-memory-research",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "memory-pubmed-route-decisions",
+        "memory-goodwin-cowitness",
+        "memory-nia-external-aids",
+        "memory-pmc-sleep-vocabulary",
+        "memory-plos-open-book"
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas permiten contrastar decisiones espaciales, misinformation social, ayudas externas, sueño y pruebas con apuntes, pero no acreditan a Helen Ward, Moreno Lab, Kenji Sato, Sleep Recall Study u Open Notes Group ni los protocolos y efectos exactos atribuidos."
+    },
+    {
+      "assetId": "formative:matching-features:mf-transport-policies",
+      "status": "candidate-sources-collected",
+      "sourceEvidenceIds": [
+        "transport-tfl-bus-priority",
+        "transport-who-safe-speeds",
+        "transport-uk-maas-accessibility",
+        "transport-doe-smart-charge",
+        "transport-nyc-pedestrian-plaza"
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas permiten contrastar prioridad de buses, velocidad segura, integración modal, carga de flotas y peatonalización, pero no acreditan los cinco programas nombrados ni sus corredores, cifras, quejas, fases, consultas o resultados exactos."
+    }
+  ],
+  "sourceAvailability": {
+    "schemaVersion": "ielts-reading-matching-features-source-availability.v1",
+    "checkedAt": "2026-08-09",
+    "method": "Direct HTTPS retrieval with redirect resolution, response-body SHA-256, content type and byte count. Anti-bot 403/405 responses are retained as observed rather than reclassified as successful retrieval.",
+    "sources": [
+      {
+        "evidenceId": "ielts-matching-features-official-format",
+        "requestedUrl": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading",
+        "retrievedAt": "2026-08-09T08:26:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 187270,
+        "bodySha256": "7d2f15ba40e1f5f7cbf3a659a03f8783c8ab4d8701d6de94aca7786213875ab0"
+      },
+      {
+        "evidenceId": "urban-nyc-rooftop-farm",
+        "requestedUrl": "https://www.nyc.gov/mayors-office/news/2022/04/mayor-adams-opens-rooftop-farm-staten-island-grow-organic-produce-absorb-stormwater-to",
+        "retrievedAt": "2026-08-09T08:26:00-05:00",
+        "httpStatus": 403,
+        "finalUrl": "https://www.nyc.gov/mayors-office/news/2022/04/mayor-adams-opens-rooftop-farm-staten-island-grow-organic-produce-absorb-stormwater-to",
+        "redirected": false,
+        "contentType": "text/html",
+        "sizeBytes": 546,
+        "bodySha256": "1227028f8ed0657ce89742d640afe6d90c658f27c6ce5587f8ec3d3ceea50270"
+      },
+      {
+        "evidenceId": "urban-doe-controlled-environment-agriculture",
+        "requestedUrl": "https://www.energy.gov/cmei/ito/articles/water-energy-and-future-farming",
+        "retrievedAt": "2026-08-09T08:26:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.energy.gov/cmei/ito/articles/water-energy-and-future-farming",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 118988,
+        "bodySha256": "16cf983359465ea8e09798062c2043dafa364c0f9334a756cd83e7c7e542e812"
+      },
+      {
+        "evidenceId": "urban-usda-school-gardens",
+        "requestedUrl": "https://www.fna.usda.gov/f2s/school-gardens",
+        "retrievedAt": "2026-08-09T08:26:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.fna.usda.gov/f2s/school-gardens",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 42860,
+        "bodySha256": "aafde1652c099417f19dac3043ce2b006d8878d21a4561ff606266ca5037a21e"
+      },
+      {
+        "evidenceId": "urban-epa-vacant-land-agriculture",
+        "requestedUrl": "https://www.epa.gov/brownfields/urban-agriculture",
+        "retrievedAt": "2026-08-09T08:26:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.epa.gov/brownfields/urban-agriculture",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 86928,
+        "bodySha256": "8152c4871047fc657cdf56415344e409482289dd85f21580235732f5789eb35c"
+      },
+      {
+        "evidenceId": "urban-usda-cea-energy",
+        "requestedUrl": "https://www.ars.usda.gov/research/publications/publication/?seqNo115=434664",
+        "retrievedAt": "2026-08-09T08:26:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.ars.usda.gov/research/publications/publication/?seqNo115=434664",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 31833,
+        "bodySha256": "492aad100283611193dd0532f8aac393da583cc60104672b3b830f801bdaa3f6"
+      },
+      {
+        "evidenceId": "memory-pubmed-route-decisions",
+        "requestedUrl": "https://pubmed.ncbi.nlm.nih.gov/25419818/",
+        "retrievedAt": "2026-08-09T08:26:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://pubmed.ncbi.nlm.nih.gov/25419818/",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 125000,
+        "bodySha256": "1961adb028ab3149b06e276e6d5f6182361dea6f9b1382f2eaa1ba730596f269"
+      },
+      {
+        "evidenceId": "memory-goodwin-cowitness",
+        "requestedUrl": "https://doi.org/10.1002/acp.3320",
+        "retrievedAt": "2026-08-09T08:26:00-05:00",
+        "httpStatus": 403,
+        "finalUrl": "https://onlinelibrary.wiley.com/doi/10.1002/acp.3320",
+        "redirected": true,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 5567,
+        "bodySha256": "05c1ce79c8159575d1eef45c772b841d836ca7caad49a97eeedf67c536f9951e"
+      },
+      {
+        "evidenceId": "memory-nia-external-aids",
+        "requestedUrl": "https://www.nia.nih.gov/health/health-care-professionals-information/caring-older-patients-cognitive-impairment",
+        "retrievedAt": "2026-08-09T08:26:00-05:00",
+        "httpStatus": 405,
+        "finalUrl": "https://www.nia.nih.gov/health/health-care-professionals-information/caring-older-patients-cognitive-impairment",
+        "redirected": false,
+        "contentType": "text/html; charset=UTF-8",
+        "sizeBytes": 2523,
+        "bodySha256": "a7df247cfb6fe838f91bf91f7a370055b7e4a7072587d0bee3ea514c61987ace"
+      },
+      {
+        "evidenceId": "memory-pmc-sleep-vocabulary",
+        "requestedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10275344/",
+        "retrievedAt": "2026-08-09T08:26:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10275344/",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 292474,
+        "bodySha256": "f18abf52a04fb82cd0f9be5fb14a40818f736e67fc39e5bc8ca2afeff9f0d87b"
+      },
+      {
+        "evidenceId": "memory-plos-open-book",
+        "requestedUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0273185",
+        "retrievedAt": "2026-08-09T08:26:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0273185",
+        "redirected": false,
+        "contentType": "text/html;charset=UTF-8",
+        "sizeBytes": 225751,
+        "bodySha256": "b59bf56fe1cb753fe8a47c477e165d0f5f3d67fa7aa8f6b5fd9d93ee60545836"
+      },
+      {
+        "evidenceId": "transport-tfl-bus-priority",
+        "requestedUrl": "https://tfl.gov.uk/modes/buses/bus-priority-programme",
+        "retrievedAt": "2026-08-09T08:26:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://tfl.gov.uk/modes/buses/bus-priority-programme",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 111282,
+        "bodySha256": "9a95846f185d8107ef51124efd933340f229a3417cb7ca99cfb45973510c73a4"
+      },
+      {
+        "evidenceId": "transport-who-safe-speeds",
+        "requestedUrl": "https://www.who.int/news/item/17-05-2021-streets-for-life-campaign-calls-for-30-km-h-urban-streets-to-ensure-safe-healthy-green-and-liveable-cities",
+        "retrievedAt": "2026-08-09T08:26:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.who.int/news/item/17-05-2021-streets-for-life-campaign-calls-for-30-km-h-urban-streets-to-ensure-safe-healthy-green-and-liveable-cities",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 104473,
+        "bodySha256": "189e138856725dfa5d52f6d90e88b586e4ba8acc9de8c02abc4f3458314549f7"
+      },
+      {
+        "evidenceId": "transport-uk-maas-accessibility",
+        "requestedUrl": "https://www.gov.uk/government/publications/mobility-as-a-service-maas-code-of-practice/mobility-as-a-service-code-of-practice",
+        "retrievedAt": "2026-08-09T08:26:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.gov.uk/government/publications/mobility-as-a-service-maas-code-of-practice/mobility-as-a-service-code-of-practice",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 282194,
+        "bodySha256": "731b7b7c4807fccf40b7b3b907fcb00dd9fc229b4caa7997d06fed0bf6a9fcca"
+      },
+      {
+        "evidenceId": "transport-doe-smart-charge",
+        "requestedUrl": "https://www.energy.gov/cmei/femp/smart-charge-management-implementation-federal-fleets",
+        "retrievedAt": "2026-08-09T08:26:00-05:00",
+        "httpStatus": 200,
+        "finalUrl": "https://www.energy.gov/cmei/femp/smart-charge-management-implementation-federal-fleets",
+        "redirected": false,
+        "contentType": "text/html; charset=utf-8",
+        "sizeBytes": 130754,
+        "bodySha256": "4a20120e1101efa30e81c2d5b2aedd5fb537ed67ee1ab5e8e43304ac6ab89ac7"
+      },
+      {
+        "evidenceId": "transport-nyc-pedestrian-plaza",
+        "requestedUrl": "https://www.nyc.gov/html/dot/html/pr2021/dyckman-plaza-transforms-inwood-open-street.shtml",
+        "retrievedAt": "2026-08-09T08:26:00-05:00",
+        "httpStatus": 403,
+        "finalUrl": "https://www.nyc.gov/html/dot/html/pr2021/dyckman-plaza-transforms-inwood-open-street.shtml",
+        "redirected": false,
+        "contentType": "text/html",
+        "sizeBytes": 475,
+        "bodySha256": "aaa19a2b04bcc211edd591db74fd306f2da4b367050a256e2f055944cdf4ceb9"
+      }
+    ],
+    "interpretation": "Availability, redirect resolution and body identity do not establish authorship, factual verification, license, rights-holder authorization or endorsement. HTTP 403/405 records document direct-client access limits and do not imply that the underlying source content was reviewed through that response."
+  },
+  "expertReview": {
+    "reviewerType": "independent-ai-editorial-review",
+    "humanSignature": false,
+    "answerAgreement": {
+      "matches": 19,
+      "total": 19,
+      "rate": 1
+    },
+    "keyConflictCount": 0,
+    "keyConflictQuestionIds": [],
+    "materialAmbiguityCount": 0,
+    "materialAmbiguityQuestionIds": [],
+    "factualAssessmentCounts": {
+      "supported": 0,
+      "oversimplified": 8,
+      "unsupported": 3,
+      "untraceable": 4
+    },
+    "verdictPath": "output/audits/ielts-reading-rights-matching-features-2026-08-09/expert-verdict.json"
+  },
+  "studentWalkthrough": {
+    "passagesCovered": 3,
+    "questionsCovered": 19,
+    "verdictPath": "output/audits/ielts-reading-rights-matching-features-2026-08-09/student-walkthrough.json",
+    "limitation": "Blind content-only cognitive walkthrough; it does not test UI, accessibility, retention, bands or real students."
+  },
+  "runtime": {
+    "answerLocksImmediatelyAfterSelection": true,
+    "correctnessFeedbackAppearsImmediately": true,
+    "trapHintsAvailableBeforeResponse": true,
+    "featureDescriptionsVisibleBeforeResponse": true,
+    "answerKeysDeliveredToClient": true,
+    "classification": "guided-training-runtime-with-immediate-feedback-not-practice-or-exam-simulation",
+    "accessibilityObservations": {
+      "unnamedSelects": 19,
+      "progressHasAria": false,
+      "feedbackHasAriaLive": false,
+      "trapToggleHasExpandedControls": false,
+      "focusAfterLock": "SELECT→BODY",
+      "breadcrumbUsesSemanticNav": false,
+      "documentLangConfirmedInScopedClosure": false,
+      "answerPersistence": false,
+      "resetConfirmation": false
+    },
+    "limitation": "Detection documents the unchanged runtime. Immediate locking, correctness feedback and pre-response traps prevent representing it as Practice or Exam simulation and block content certification."
+  },
+  "antiBias": {
+    "optionPermutationApplied": false,
+    "optionPermutationReason": "Letters remain bound to feature labels/descriptions. Binding, declared reuse, distribution, sequence, question-position modulo k, length and statement-to-label/description overlap are audited instead.",
+    "storedKeyProfile": {
+      "answerCounts": {
+        "A": 5,
+        "B": 3,
+        "C": 5,
+        "D": 4,
+        "E": 2
+      },
+      "globalConcatenatedMaxSameLabelRun": 2,
+      "perSetMaxSameLabelRun": 1,
+      "constantLabelHeuristics": {
+        "A": {
+          "hits": 5,
+          "total": 19,
+          "accuracy": 0.2631578947368421
+        },
+        "B": {
+          "hits": 3,
+          "total": 19,
+          "accuracy": 0.15789473684210525
+        },
+        "C": {
+          "hits": 5,
+          "total": 19,
+          "accuracy": 0.2631578947368421
+        },
+        "D": {
+          "hits": 4,
+          "total": 19,
+          "accuracy": 0.21052631578947367
+        },
+        "E": {
+          "hits": 2,
+          "total": 19,
+          "accuracy": 0.10526315789473684
+        }
+      },
+      "questionPositionModuloFeatureCount": {
+        "definition": "Within each set, predict feature at zero-based question position modulo k features.",
+        "eligible": 19,
+        "tiesOrAbstentions": 0,
+        "hits": 11,
+        "conditionalAccuracy": 0.5789473684210527,
+        "totalAccuracy": 0.5789473684210527,
+        "perQuestionUniformBaseline": 0.21842105263157902,
+        "wilsonUpper95": 0.743709380489558
+      },
+      "highestLabelDescriptionOverlapPredictsAnswer": {
+        "eligible": 4,
+        "tiesOrAbstentions": 15,
+        "hits": 1,
+        "conditionalAccuracy": 0.25,
+        "totalAccuracy": 0.05263157894736842,
+        "rows": [
+          {
+            "questionId": "mf-urban-farming-01",
+            "storedFeatureId": "B",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-urban-farming-02",
+            "storedFeatureId": "A",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-urban-farming-03",
+            "storedFeatureId": "C",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-urban-farming-04",
+            "storedFeatureId": "D",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-urban-farming-05",
+            "storedFeatureId": "A",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0.2,
+                "score": 0.125
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-urban-farming-06",
+            "storedFeatureId": "C",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-urban-farming-07",
+            "storedFeatureId": "D",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-memory-01",
+            "storedFeatureId": "B",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "E",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-memory-02",
+            "storedFeatureId": "C",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "E",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-memory-03",
+            "storedFeatureId": "A",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0.3333333333333333,
+                "descriptionScore": 0,
+                "score": 0.14285714285714285
+              },
+              {
+                "featureId": "E",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-memory-04",
+            "storedFeatureId": "D",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0.6666666666666666,
+                "descriptionScore": 0.4,
+                "score": 0.42857142857142855
+              },
+              {
+                "featureId": "E",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-memory-05",
+            "storedFeatureId": "E",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0.16666666666666666,
+                "score": 0.125
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "E",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-memory-06",
+            "storedFeatureId": "A",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "E",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-transport-01",
+            "storedFeatureId": "A",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "E",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-transport-02",
+            "storedFeatureId": "B",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "E",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-transport-03",
+            "storedFeatureId": "C",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "E",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-transport-04",
+            "storedFeatureId": "D",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "E",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-transport-05",
+            "storedFeatureId": "E",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "E",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-transport-06",
+            "storedFeatureId": "C",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "E",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          }
+        ]
+      },
+      "longestFeatureDescriptionWordCountPredictsAnswer": {
+        "eligible": 7,
+        "tiesOrAbstentions": 12,
+        "hits": 2,
+        "conditionalAccuracy": 0.2857142857142857,
+        "totalAccuracy": 0.10526315789473684,
+        "rows": [
+          {
+            "questionId": "mf-urban-farming-01",
+            "storedFeatureId": "B",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-urban-farming-02",
+            "storedFeatureId": "A",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-urban-farming-03",
+            "storedFeatureId": "C",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-urban-farming-04",
+            "storedFeatureId": "D",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-urban-farming-05",
+            "storedFeatureId": "A",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-urban-farming-06",
+            "storedFeatureId": "C",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-urban-farming-07",
+            "storedFeatureId": "D",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-memory-01",
+            "storedFeatureId": "B",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "E",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-memory-02",
+            "storedFeatureId": "C",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "E",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-memory-03",
+            "storedFeatureId": "A",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "E",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-memory-04",
+            "storedFeatureId": "D",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "E",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-memory-05",
+            "storedFeatureId": "E",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "E",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-memory-06",
+            "storedFeatureId": "A",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "E",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-transport-01",
+            "storedFeatureId": "A",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "E",
+                "words": 7,
+                "score": 7
+              }
+            ]
+          },
+          {
+            "questionId": "mf-transport-02",
+            "storedFeatureId": "B",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "E",
+                "words": 7,
+                "score": 7
+              }
+            ]
+          },
+          {
+            "questionId": "mf-transport-03",
+            "storedFeatureId": "C",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "E",
+                "words": 7,
+                "score": 7
+              }
+            ]
+          },
+          {
+            "questionId": "mf-transport-04",
+            "storedFeatureId": "D",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "E",
+                "words": 7,
+                "score": 7
+              }
+            ]
+          },
+          {
+            "questionId": "mf-transport-05",
+            "storedFeatureId": "E",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "E",
+                "words": 7,
+                "score": 7
+              }
+            ]
+          },
+          {
+            "questionId": "mf-transport-06",
+            "storedFeatureId": "C",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "E",
+                "words": 7,
+                "score": 7
+              }
+            ]
+          }
+        ],
+        "definition": "Count lowercase ASCII word tokens in feature.description only; hyphens split tokens."
+      },
+      "featureLengthByLabel": {
+        "A": {
+          "options": 3,
+          "averageWords": 11.333333333333334,
+          "minWords": 11,
+          "maxWords": 12
+        },
+        "B": {
+          "options": 3,
+          "averageWords": 9.666666666666666,
+          "minWords": 8,
+          "maxWords": 11
+        },
+        "C": {
+          "options": 3,
+          "averageWords": 10.666666666666666,
+          "minWords": 9,
+          "maxWords": 12
+        },
+        "D": {
+          "options": 3,
+          "averageWords": 9,
+          "minWords": 8,
+          "maxWords": 10
+        },
+        "E": {
+          "options": 2,
+          "averageWords": 10,
+          "minWords": 9,
+          "maxWords": 11
+        }
+      },
+      "descriptionTitleCue": {
+        "featureDescriptionsVisiblePreResponse": 14,
+        "passageTitlesVisible": 3,
+        "independentDescriptionOnlyMatches": 16,
+        "independentPreAnswerTrapMatches": 18,
+        "expertRiskDimensionsRequired": [
+          "featureDescriptionCueRisk",
+          "passageTitleCueRisk"
+        ]
+      },
+      "perSet": [
+        {
+          "assetId": "formative:matching-features:mf-urban-farming",
+          "declaredReuseAllowed": true,
+          "answerCounts": {
+            "A": 2,
+            "B": 1,
+            "C": 2,
+            "D": 2
+          },
+          "answerSequence": [
+            "B",
+            "A",
+            "C",
+            "D",
+            "A",
+            "C",
+            "D"
+          ],
+          "reusedFeatureIds": [
+            "A",
+            "C",
+            "D"
+          ],
+          "unusedFeatureIds": []
+        },
+        {
+          "assetId": "formative:matching-features:mf-memory-research",
+          "declaredReuseAllowed": true,
+          "answerCounts": {
+            "A": 2,
+            "B": 1,
+            "C": 1,
+            "D": 1,
+            "E": 1
+          },
+          "answerSequence": [
+            "B",
+            "C",
+            "A",
+            "D",
+            "E",
+            "A"
+          ],
+          "reusedFeatureIds": [
+            "A"
+          ],
+          "unusedFeatureIds": []
+        },
+        {
+          "assetId": "formative:matching-features:mf-transport-policies",
+          "declaredReuseAllowed": true,
+          "answerCounts": {
+            "A": 1,
+            "B": 1,
+            "C": 2,
+            "D": 1,
+            "E": 1
+          },
+          "answerSequence": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "C"
+          ],
+          "reusedFeatureIds": [
+            "C"
+          ],
+          "unusedFeatureIds": []
+        }
+      ],
+      "sequenceProfile": {
+        "answerSequence": [
+          "B",
+          "A",
+          "C",
+          "D",
+          "A",
+          "C",
+          "D",
+          "B",
+          "C",
+          "A",
+          "D",
+          "E",
+          "A",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "C"
+        ],
+        "transitions": {
+          "B → A": 1,
+          "A → C": 2,
+          "C → D": 3,
+          "D → A": 1,
+          "D → B": 1,
+          "B → C": 2,
+          "C → A": 1,
+          "A → D": 1,
+          "D → E": 2,
+          "E → A": 1,
+          "A → A": 1,
+          "A → B": 1,
+          "E → C": 1
+        }
+      }
+    },
+    "independentExpertProfile": {
+      "answerCounts": {
+        "A": 5,
+        "B": 3,
+        "C": 5,
+        "D": 4,
+        "E": 2
+      },
+      "globalConcatenatedMaxSameLabelRun": 2,
+      "perSetMaxSameLabelRun": 1,
+      "constantLabelHeuristics": {
+        "A": {
+          "hits": 5,
+          "total": 19,
+          "accuracy": 0.2631578947368421
+        },
+        "B": {
+          "hits": 3,
+          "total": 19,
+          "accuracy": 0.15789473684210525
+        },
+        "C": {
+          "hits": 5,
+          "total": 19,
+          "accuracy": 0.2631578947368421
+        },
+        "D": {
+          "hits": 4,
+          "total": 19,
+          "accuracy": 0.21052631578947367
+        },
+        "E": {
+          "hits": 2,
+          "total": 19,
+          "accuracy": 0.10526315789473684
+        }
+      },
+      "questionPositionModuloFeatureCount": {
+        "definition": "Within each set, predict feature at zero-based question position modulo k features.",
+        "eligible": 19,
+        "tiesOrAbstentions": 0,
+        "hits": 11,
+        "conditionalAccuracy": 0.5789473684210527,
+        "totalAccuracy": 0.5789473684210527,
+        "perQuestionUniformBaseline": 0.21842105263157902,
+        "wilsonUpper95": 0.743709380489558
+      },
+      "highestLabelDescriptionOverlapPredictsAnswer": {
+        "eligible": 4,
+        "tiesOrAbstentions": 15,
+        "hits": 1,
+        "conditionalAccuracy": 0.25,
+        "totalAccuracy": 0.05263157894736842,
+        "rows": [
+          {
+            "questionId": "mf-urban-farming-01",
+            "storedFeatureId": "B",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-urban-farming-02",
+            "storedFeatureId": "A",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-urban-farming-03",
+            "storedFeatureId": "C",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-urban-farming-04",
+            "storedFeatureId": "D",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-urban-farming-05",
+            "storedFeatureId": "A",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0.2,
+                "score": 0.125
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-urban-farming-06",
+            "storedFeatureId": "C",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-urban-farming-07",
+            "storedFeatureId": "D",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-memory-01",
+            "storedFeatureId": "B",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "E",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-memory-02",
+            "storedFeatureId": "C",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "E",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-memory-03",
+            "storedFeatureId": "A",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0.3333333333333333,
+                "descriptionScore": 0,
+                "score": 0.14285714285714285
+              },
+              {
+                "featureId": "E",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-memory-04",
+            "storedFeatureId": "D",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0.6666666666666666,
+                "descriptionScore": 0.4,
+                "score": 0.42857142857142855
+              },
+              {
+                "featureId": "E",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-memory-05",
+            "storedFeatureId": "E",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0.16666666666666666,
+                "score": 0.125
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "E",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-memory-06",
+            "storedFeatureId": "A",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "E",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-transport-01",
+            "storedFeatureId": "A",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "E",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-transport-02",
+            "storedFeatureId": "B",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "E",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-transport-03",
+            "storedFeatureId": "C",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "E",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-transport-04",
+            "storedFeatureId": "D",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "E",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-transport-05",
+            "storedFeatureId": "E",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "E",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          },
+          {
+            "questionId": "mf-transport-06",
+            "storedFeatureId": "C",
+            "scores": [
+              {
+                "featureId": "A",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "B",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "C",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "D",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              },
+              {
+                "featureId": "E",
+                "labelScore": 0,
+                "descriptionScore": 0,
+                "score": 0
+              }
+            ]
+          }
+        ]
+      },
+      "longestFeatureDescriptionWordCountPredictsAnswer": {
+        "eligible": 7,
+        "tiesOrAbstentions": 12,
+        "hits": 2,
+        "conditionalAccuracy": 0.2857142857142857,
+        "totalAccuracy": 0.10526315789473684,
+        "rows": [
+          {
+            "questionId": "mf-urban-farming-01",
+            "storedFeatureId": "B",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-urban-farming-02",
+            "storedFeatureId": "A",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-urban-farming-03",
+            "storedFeatureId": "C",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-urban-farming-04",
+            "storedFeatureId": "D",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-urban-farming-05",
+            "storedFeatureId": "A",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-urban-farming-06",
+            "storedFeatureId": "C",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-urban-farming-07",
+            "storedFeatureId": "D",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-memory-01",
+            "storedFeatureId": "B",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "E",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-memory-02",
+            "storedFeatureId": "C",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "E",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-memory-03",
+            "storedFeatureId": "A",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "E",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-memory-04",
+            "storedFeatureId": "D",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "E",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-memory-05",
+            "storedFeatureId": "E",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "E",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-memory-06",
+            "storedFeatureId": "A",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "E",
+                "words": 6,
+                "score": 6
+              }
+            ]
+          },
+          {
+            "questionId": "mf-transport-01",
+            "storedFeatureId": "A",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "E",
+                "words": 7,
+                "score": 7
+              }
+            ]
+          },
+          {
+            "questionId": "mf-transport-02",
+            "storedFeatureId": "B",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "E",
+                "words": 7,
+                "score": 7
+              }
+            ]
+          },
+          {
+            "questionId": "mf-transport-03",
+            "storedFeatureId": "C",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "E",
+                "words": 7,
+                "score": 7
+              }
+            ]
+          },
+          {
+            "questionId": "mf-transport-04",
+            "storedFeatureId": "D",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "E",
+                "words": 7,
+                "score": 7
+              }
+            ]
+          },
+          {
+            "questionId": "mf-transport-05",
+            "storedFeatureId": "E",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "E",
+                "words": 7,
+                "score": 7
+              }
+            ]
+          },
+          {
+            "questionId": "mf-transport-06",
+            "storedFeatureId": "C",
+            "scores": [
+              {
+                "featureId": "A",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "B",
+                "words": 7,
+                "score": 7
+              },
+              {
+                "featureId": "C",
+                "words": 8,
+                "score": 8
+              },
+              {
+                "featureId": "D",
+                "words": 6,
+                "score": 6
+              },
+              {
+                "featureId": "E",
+                "words": 7,
+                "score": 7
+              }
+            ]
+          }
+        ],
+        "definition": "Count lowercase ASCII word tokens in feature.description only; hyphens split tokens."
+      },
+      "featureLengthByLabel": {
+        "A": {
+          "options": 3,
+          "averageWords": 11.333333333333334,
+          "minWords": 11,
+          "maxWords": 12
+        },
+        "B": {
+          "options": 3,
+          "averageWords": 9.666666666666666,
+          "minWords": 8,
+          "maxWords": 11
+        },
+        "C": {
+          "options": 3,
+          "averageWords": 10.666666666666666,
+          "minWords": 9,
+          "maxWords": 12
+        },
+        "D": {
+          "options": 3,
+          "averageWords": 9,
+          "minWords": 8,
+          "maxWords": 10
+        },
+        "E": {
+          "options": 2,
+          "averageWords": 10,
+          "minWords": 9,
+          "maxWords": 11
+        }
+      },
+      "descriptionTitleCue": {
+        "featureDescriptionsVisiblePreResponse": 14,
+        "passageTitlesVisible": 3,
+        "independentDescriptionOnlyMatches": 16,
+        "independentPreAnswerTrapMatches": 18,
+        "expertRiskDimensionsRequired": [
+          "featureDescriptionCueRisk",
+          "passageTitleCueRisk"
+        ]
+      },
+      "perSet": [
+        {
+          "assetId": "formative:matching-features:mf-urban-farming",
+          "declaredReuseAllowed": true,
+          "answerCounts": {
+            "A": 2,
+            "B": 1,
+            "C": 2,
+            "D": 2
+          },
+          "answerSequence": [
+            "B",
+            "A",
+            "C",
+            "D",
+            "A",
+            "C",
+            "D"
+          ],
+          "reusedFeatureIds": [
+            "A",
+            "C",
+            "D"
+          ],
+          "unusedFeatureIds": []
+        },
+        {
+          "assetId": "formative:matching-features:mf-memory-research",
+          "declaredReuseAllowed": true,
+          "answerCounts": {
+            "A": 2,
+            "B": 1,
+            "C": 1,
+            "D": 1,
+            "E": 1
+          },
+          "answerSequence": [
+            "B",
+            "C",
+            "A",
+            "D",
+            "E",
+            "A"
+          ],
+          "reusedFeatureIds": [
+            "A"
+          ],
+          "unusedFeatureIds": []
+        },
+        {
+          "assetId": "formative:matching-features:mf-transport-policies",
+          "declaredReuseAllowed": true,
+          "answerCounts": {
+            "A": 1,
+            "B": 1,
+            "C": 2,
+            "D": 1,
+            "E": 1
+          },
+          "answerSequence": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "C"
+          ],
+          "reusedFeatureIds": [
+            "C"
+          ],
+          "unusedFeatureIds": []
+        }
+      ],
+      "sequenceProfile": {
+        "answerSequence": [
+          "B",
+          "A",
+          "C",
+          "D",
+          "A",
+          "C",
+          "D",
+          "B",
+          "C",
+          "A",
+          "D",
+          "E",
+          "A",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "C"
+        ],
+        "transitions": {
+          "B → A": 1,
+          "A → C": 2,
+          "C → D": 3,
+          "D → A": 1,
+          "D → B": 1,
+          "B → C": 2,
+          "C → A": 1,
+          "A → D": 1,
+          "D → E": 2,
+          "E → A": 1,
+          "A → A": 1,
+          "A → B": 1,
+          "E → C": 1
+        }
+      }
+    },
+    "qualitativeCoverage": {
+      "perspectiveAndRepresentation": true,
+      "priorKnowledge": true,
+      "irrelevantCognitiveLoad": true,
+      "passageTitleCue": true,
+      "featureDescriptionCue": true,
+      "closestFeatureCompetition": true
+    },
+    "sampleAdequacy": {
+      "certificationThreshold": 100,
+      "observedQuestions": 19,
+      "eligibleForStatisticalCertification": false,
+      "conclusion": "The sample exposes an 11/19 question-position-modulo-k shortcut and visible descriptions, but n=19 is too small to certify balanced content statistically."
+    },
+    "statisticalCertification": "withheld-n-below-100",
+    "contentCertification": "blocked-editorial-and-runtime-review-required"
+  },
+  "applicability": {
+    "rights": "applicable",
+    "fullStackData": "applicable",
+    "ieltsExpert": "applicable",
+    "cognitiveWalkthrough": "applicable-to-content-only",
+    "antiBias": "applicable",
+    "uiUxAccessibility": "not-applicable-to-unchanged-runtime-conformance",
+    "playwright": "not-applicable-scoped-learner-runtime-unchanged",
+    "evidence": "Seven learner-facing files and the F0.2b.7 route/engine/bank remain hash-pinned. UI/Playwright ➖ means unchanged and not tested for conformity; inherited accessibility observations remain blockers."
+  },
+  "processLimitations": {
+    "firstPassTrace": "The persisted hash detects ordinary mutation but is not an external append-only witness; coordinated post-hoc rewriting cannot be ruled out cryptographically.",
+    "directSourceReview": "Direct-source review is declared by an AI reviewer and checked for exact IDs plus non-empty locators; it is not automatic proof of browsing, a human signature or factual verification.",
+    "sourceAvailability": "HTTP 200/403/405 and response hashes document retrieval outcomes only; availability or anti-bot denial does not verify claims, authorship or rights.",
+    "provenanceSearch": "Public-web search is directed and non-exhaustive; no exact match does not prove original authorship or universal absence."
+  },
+  "negativeControl": {
+    "contentHashMismatch": {
+      "assetId": "formative:matching-features:mf-urban-farming",
+      "disposition": "quarantine",
+      "eligibleForPublicationPipeline": false,
+      "rightsBasis": "unknown-quarantined",
+      "reasonCodes": [
+        "authorship-unresolved",
+        "content-hash-mismatch",
+        "factual-review-incomplete",
+        "human-review-pending",
+        "module-not-declared",
+        "rights-unresolved"
+      ]
+    },
+    "englishImperativeLeakFindings": [
+      "$.instruction"
+    ],
+    "spanishCorrespondenceLeakFindings": [
+      "$.repairAction"
+    ],
+    "englishStoredLeakFindings": [
+      "$.instruction"
+    ],
+    "spanishStoredLeakFindings": [
+      "$.repairAction"
+    ]
+  },
+  "sources": [
+    {
+      "path": "src/data/practica-exams/seo-catalog.ts",
+      "sha256": "aebd26a1aa6a9cdae60f7b0208c3f5f6c3138889f8aeb4f3ae15efbe888734de"
+    },
+    {
+      "path": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-features/page.tsx",
+      "sha256": "df659101211ff4405f79e3a9a2c018c5172bf8329307e341bab69473669d5e31"
+    },
+    {
+      "path": "src/components/exam-practice/MatchingFeaturesEngine.tsx",
+      "sha256": "8a282ec76ab70b68c3e625693cd63498861331b903dd8607c2aea4db1ae2a93b"
+    },
+    {
+      "path": "src/components/exam-practice/MatchingFeaturesPassageBank.tsx",
+      "sha256": "cb176db35754c64ef3bd0e0e150c2b8e5a923136f62d32d908979a8ab08c8750"
+    },
+    {
+      "path": "src/components/exam-practice/OfficialStrategyCard.tsx",
+      "sha256": "b4f575bd4bc3655f5f0682404f3d937020b4cfd3d54b42adac758647d9133e3e"
+    },
+    {
+      "path": "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+      "sha256": "73d3b725c68c0ed193ceba23ebddca3fec7978f6e84712c99b3dddc190443711"
+    },
+    {
+      "path": "src/components/exam-practice/StructuredData.tsx",
+      "sha256": "3e59a611e4d2bac9ce5994bdbd4ba6303407a5ddf82b26a340efe1f3c2b788d8"
+    },
+    {
+      "path": "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings/page.tsx",
+      "sha256": "e2d13b6b480223a9b71c415dffd062ca0aca54d3250a4ee60ff0b717cd05217e"
+    },
+    {
+      "path": "src/components/exam-practice/MatchingSentenceEndingsEngine.tsx",
+      "sha256": "b5adf8a2f67ca1547ca8dc66302002d45874bfe6f461f6e0ef03218385e43e62"
+    },
+    {
+      "path": "src/components/exam-practice/MatchingSentenceEndingsPassageBank.tsx",
+      "sha256": "09f3e16a355232f673e73328f1dc0165a46a38df39f8f3bcc8925aaf0012e3bb"
+    },
+    {
+      "path": "src/lib/ielts/academic-reading-rights.ts",
+      "sha256": "cabd4adf35c75a14a3537bb07e5db4ef9ce8bc0c1a6f4a276d25518732923643"
+    },
+    {
+      "path": "src/data/practica-exams/ielts-reading-rights-registry.ts",
+      "sha256": "687f49c2bcb4d6ab7c3dcd8b09c0bef67e7aa45427f3bdc56f0fa10f253a0e39"
+    },
+    {
+      "path": "scripts/check-ielts-reading-matching-features-rights.mjs",
+      "sha256": "eb9cc79b4835c95c3648e94ec00d2ca577b767976096fb78d6af14b8a59c6971"
+    },
+    {
+      "path": "tests/ielts-reading-matching-features-rights.test.mjs",
+      "sha256": "50eb968170dccc9bdc7c2bfa77035ac76e6251811057278daf6054c859fde434"
+    },
+    {
+      "path": "docs/ielts-reading-loop.md",
+      "sha256": "9cfcc33bd57ab5d51d8ae10c5015fdd13a9bb08abf0be7ac6d329aabf6623652"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/baseline.json",
+      "sha256": "a373ed88dcfcca5013701b38ec4c5a8dbfa10f946c93c1cc6e3c2e737cb61710"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/source-availability.json",
+      "sha256": "4c0ead32abe2bce0532ff6c62cbda5cf8f94e1899ef40ceed2f9c604b980695b"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/provenance-search.json",
+      "sha256": "f81571f29781b7479ab75e1f132ec7d48817c5b4dff9a41c097c6d1f1d084d7f"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/unit-change-manifest.json",
+      "sha256": "c9c35ade8c5e25fa9ac42b00c5fe046f684de46b586f0c2609e8bf10fed5d5b6"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/blind-review.json",
+      "sha256": "8bcfaa19f0ee6dd9137677e9474c668034d844c78aa73a6fb382184f8e4a41cc"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/factual-source-review.json",
+      "sha256": "633eba956eb5970c8deff5aafd5d1ac3d0e65b4596c34d6a80a299b62f20c176"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/expert-first-pass.json",
+      "sha256": "31498041546bad09ad26db4c46a076bf342b2531a72afe0f232982d02e3a6fab"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/expert-verdict.json",
+      "sha256": "4e45455965df704db3b4cbf2174c013641845f50ec1f98bd562449a18438c937"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/student-walkthrough.json",
+      "sha256": "96683a183366d25965077f97d522ebbdd692bed138486d93c77cab444883ef8f"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/audit-verdicts.json",
+      "sha256": "e865c56875485f3da79db7e54e1d0963327694a95d6ba4b02ca872f1703db694"
+    },
+    {
+      "path": "output/audits/ielts-reading-rights-matching-features-2026-08-09/build-report.mjs",
+      "sha256": "e785dca504b5092c0420a7a2e4df9831dd0dfdd384e8381fdf05cb8b293ff569"
+    }
+  ]
+}

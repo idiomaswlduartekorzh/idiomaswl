@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "ielts-reading-table-completion-unit-change-manifest.v1",
+  "unit": "F0.2b.11",
+  "recordedAt": "2026-08-11T17:09:20Z",
+  "learnerFacingChangeAuthorized": false,
+  "learnerFacingBaselinePaths": [
+    "src/data/practica-exams/seo-catalog.ts",
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/table-completion/page.tsx",
+    "src/components/exam-practice/TableCompletionEngine.tsx",
+    "src/components/exam-practice/TableCompletionPassageBank.tsx",
+    "src/lib/ielts/academic-reading-question-types.ts",
+    "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+    "src/components/exam-practice/StructuredData.tsx"
+  ],
+  "renderDependencyClosureBaselinePaths": [
+    "src/app/(site)/layout.tsx",
+    "src/app/(site)/practica/ielts/reading/tipos-de-preguntas/table-completion/page.tsx",
+    "src/app/globals.css",
+    "src/app/layout.tsx",
+    "src/components/SiteNav.tsx",
+    "src/components/SiteSkipLink.tsx",
+    "src/components/ThemeProvider.tsx",
+    "src/components/WhatsAppFloat.tsx",
+    "src/components/exam-practice/QuestionTypeReviewSourceBlock.tsx",
+    "src/components/exam-practice/StructuredData.tsx",
+    "src/components/exam-practice/TableCompletionPassageBank.tsx",
+    "src/components/exam-practice/TableCompletionEngine.tsx",
+    "src/data/practica-exams/seo-catalog.ts",
+    "src/lib/ielts/academic-reading-question-types.ts",
+    "src/lib/supabase/client.ts"
+  ],
+  "unitSourceFiles": [
+    "src/data/practica-exams/ielts-reading-rights-registry.ts",
+    "scripts/check-ielts-reading-table-completion-rights.mjs",
+    "tests/ielts-reading-table-completion-rights.test.mjs",
+    "docs/ielts-reading-loop.md"
+  ],
+  "unitOutputDirectory": "output/audits/ielts-reading-rights-table-completion-2026-08-11",
+  "nextUnitBoundary": {
+    "unit": "F0.2b.12",
+    "format": "flow-chart-completion",
+    "status": "not-started"
+  },
+  "applicability": {
+    "staticUiUxAndAccessibilityReview": "applicable-to-existing-baseline",
+    "uiUxDeltaTesting": "not-applicable-only-while-learner-facing-and-render-closure-hashes-match-baseline",
+    "playwright": "not-applicable-only-while-learner-facing-and-render-closure-hashes-match-baseline",
+    "notApplicableMeaning": "The F0.2b.11 audit files do not change learner-facing content, DOM, CSS, scoring or runtime behavior while every current direct learner-facing and static render-closure hash remains pinned. UI/UX and Playwright delta lanes may therefore show ➖, but this is not a UI, accessibility or runtime conformity finding.",
+    "playwrightActivationCriteria": [
+      "learner-facing hash drift",
+      "render dependency closure hash or membership drift",
+      "runtime interaction, scoring, persistence or feedback change",
+      "accessibility markup or styling change",
+      "new route-visible copy or data import"
+    ]
+  },
+  "interpretation": "This final audit-only manifest preserves a concurrent root-layout analytics change outside the F0.2b.11 audit files and pins the resulting current closure. The Table route, data, engine and bank are unchanged. The exact stop boundary is before F0.2b.12 Flow-chart Completion; ➖ is local no-delta applicability, not conformity."
+}

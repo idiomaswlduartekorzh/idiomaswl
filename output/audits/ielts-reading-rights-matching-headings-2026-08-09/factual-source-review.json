@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "ielts-reading-matching-headings-factual-source-review.v1",
+  "generatedAt": "2026-08-09T07:10:00-05:00",
+  "reviewScope": "F0.2b.5 — second-pass factual-source review only",
+  "instruction": "Open only after persisting the full blind first pass. Review every exact claim span against candidate sources and classify it supported, oversimplified, unsupported or untraceable. Separate factual support from the writer’s normative stance. Candidate sources do not prove authorship, license, authorization or verification.",
+  "records": [
+    {
+      "assetId": "formative:matching-headings:mh-public-libraries",
+      "claimSpansToReview": [
+        "Today, many library systems measure success differently.",
+        "In many cities, libraries have become informal support centers.",
+        "Some branches lend tablets or Wi-Fi devices, while others offer makerspaces with recording equipment and 3D printers.",
+        "Staff members still organize collections, but they may also teach classes, troubleshoot devices, coordinate local partnerships and guide users through government websites.",
+        "Traditional book borrowing has decreased in some places, yet attendance at events, demand for study areas and use of digital services have grown."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "libraries-gla-civic-spaces",
+          "label": "Greater London Authority — libraries as civic spaces",
+          "url": "https://www.london.gov.uk/libraries-civic-spaces",
+          "note": "Fuente institucional candidata sobre bibliotecas como infraestructura cívica y comunitaria. No verifica cada descripción histórica o servicio del pasaje."
+        },
+        {
+          "evidenceId": "libraries-ala-digital-literacy",
+          "label": "American Library Association — digital literacy in public libraries",
+          "url": "https://www.ala.org/news/2026/02/digital-literacy-public-libraries",
+          "note": "Fuente sectorial candidata sobre apoyo de alfabetización digital en bibliotecas públicas. No valida la adopción universal ni todos los efectos atribuidos en el pasaje."
+        },
+        {
+          "evidenceId": "libraries-imls-making",
+          "label": "Institute of Museum and Library Services — making and makerspaces",
+          "url": "https://www.imls.gov/about/learn-about-imls/priority-areas/making",
+          "note": "Fuente institucional candidata sobre espacios de creación y aprendizaje práctico en bibliotecas. No verifica cada ejemplo ni resultado comunitario del pasaje."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan funciones cívicas, alfabetización digital y makerspaces, pero no verifican cada secuencia histórica, alcance del servicio ni efecto comunitario del pasaje."
+    },
+    {
+      "assetId": "formative:matching-headings:mh-urban-farming",
+      "claimSpansToReview": [
+        "Urban farming projects often begin with a practical problem: cities have little unused land.",
+        "A tomato grown a few blocks away may require less transport and packaging than one shipped across a continent.",
+        "Composting programmes connected to gardens can also reduce the amount of organic waste sent to landfill.",
+        "In schools, gardens can become outdoor classrooms.",
+        "Soil may be contaminated, roofs may not support heavy containers, and water access can be unreliable in summer."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "urban-epa-brownfields-agriculture",
+          "label": "US EPA — brownfields and urban agriculture",
+          "url": "https://www.epa.gov/brownfields/frequent-questions-about-brownfields-and-urban-agriculture",
+          "note": "Fuente institucional candidata sobre evaluación de suelo y riesgos al establecer agricultura urbana en brownfields. No valida cada técnica o beneficio del pasaje."
+        },
+        {
+          "evidenceId": "urban-usda-school-gardens",
+          "label": "USDA Food and Nutrition Service — school gardens",
+          "url": "https://www.fna.usda.gov/f2s/school-gardens",
+          "note": "Fuente institucional candidata sobre jardines escolares como recurso de aprendizaje y alimentación. No demuestra todos los efectos educativos o sociales expuestos en el pasaje."
+        },
+        {
+          "evidenceId": "urban-fao-healthy-soils",
+          "label": "FAO — healthy soils for resilient and greener cities",
+          "url": "https://www.fao.org/newsroom/story/healthy-soils-for-more-resilient-and-greener-cities/en",
+          "note": "Fuente intergubernamental candidata sobre salud del suelo y resiliencia urbana. No verifica todas las relaciones causales ni prácticas concretas del pasaje."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan evaluación de suelo, jardines escolares y salud del suelo urbano, pero no verifican todos los beneficios, restricciones ni relaciones causales del pasaje."
+    },
+    {
+      "assetId": "formative:matching-headings:mh-night-trains",
+      "claimSpansToReview": [
+        "Recently, several operators have announced new overnight services.",
+        "A rail journey can produce far less pollution than a plane on the same route, especially when the electricity supply is relatively clean.",
+        "Trains may cross several national networks, each with its own track access rules, maintenance windows and signalling systems.",
+        "A delay in one country can also affect morning commuter services in another, so coordination matters as much as demand.",
+        "Subsidies, early-booking fares and shared compartments can help, but operators still need enough revenue to cover staff, cleaning and rolling stock."
+      ],
+      "candidateSources": [
+        {
+          "evidenceId": "night-eea-rail-low-carbon",
+          "label": "European Environment Agency — rail and waterborne transport for low-carbon travel",
+          "url": "https://www.eea.europa.eu/en/analysis/publications/rail-and-waterborne-best-for-low-carbon-motorised-transport",
+          "note": "Fuente institucional candidata que compara emisiones de modos de transporte. No valida cada comparación de ruta ni la experiencia completa de los trenes nocturnos descrita."
+        },
+        {
+          "evidenceId": "night-eu-cross-border-rail",
+          "label": "European Commission — long-distance cross-border passenger rail",
+          "url": "https://op.europa.eu/en/publication-detail/-/publication/5eb5c258-6ea2-11ec-9136-01aa75ed71a1/language-en",
+          "note": "Fuente oficial candidata sobre servicios ferroviarios transfronterizos de larga distancia, barreras y oportunidades. No verifica cada afirmación comercial o operativa del pasaje."
+        },
+        {
+          "evidenceId": "night-era-sleeper-authorisation",
+          "label": "European Union Agency for Railways — sleeper train authorisation",
+          "url": "https://www.era.europa.eu/content/era-signs-first-authorisation-new-generation-sleeper-trains-substantial-step-reviving-night",
+          "note": "Fuente oficial candidata sobre la autorización de una nueva generación de coches cama y el renovado interés por servicios nocturnos. No valida el panorama completo ni todas las causas descritas."
+        }
+      ],
+      "limitation": "Cobertura dirigida y parcial. Las fuentes candidatas respaldan ventajas relativas de emisiones, barreras transfronterizas y renovada autorización de coches cama, pero no verifican cada tendencia comercial, causa ni comparación del pasaje."
+    }
+  ]
+}
