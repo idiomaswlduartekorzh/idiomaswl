@@ -27,8 +27,8 @@ const TOOLS = [
   // es la única que tiene recorrido propio: se usa en la introducción de Task 2, en la de
   // Task 1 y en Reading, y es donde un hispanohablante pierde marcas por calco sin enterarse.
   ['Paraphrasing', 'paraphrasing', 'Restate the prompt accurately without changing its meaning — five techniques, one page each.'],
-  ['Thesis and position', 'introduccion', 'Make the controlling answer visible and consistent from the opening.'],
-  ['Topic sentences', 'body-1', 'Give each body paragraph one clear, question-aligned job.'],
+  ['Thesis and position', 'habilidades/thesis-and-position', 'Make the controlling answer visible and consistent from the opening.'],
+  ['Topic sentences', 'habilidades/topic-sentences', 'Give each body paragraph one clear, question-aligned job.'],
   ['Explanation and development', 'parrafos-cuerpo', 'Turn a controlling idea into a logical chain instead of a list of claims.'],
   ['Examples and evidence', 'parrafos-cuerpo', 'Use relevant examples to clarify reasoning without inventing sources.'],
   ['Cohesion and linking', 'linking-language', 'Connect ideas by function without mechanical connector lists.'],
