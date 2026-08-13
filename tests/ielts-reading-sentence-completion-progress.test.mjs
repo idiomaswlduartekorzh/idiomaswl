@@ -122,6 +122,6 @@ test('the blueprint records Sentence Completion gates before scaling again', asy
     'Sentence Completion practice must derive its accepted word count',
     'literal passage span',
     '6 source-backed or conservatively bounded passages and 30 exact-span decisions',
-    'Next question-type vertical:** Note Completion',
+    'Next question-type vertical:** Table Completion',
   ]) assert.match(blueprint, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
 });

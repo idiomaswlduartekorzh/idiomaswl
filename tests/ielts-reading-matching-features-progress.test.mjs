@@ -136,6 +136,6 @@ test('the blueprint records Matching Features gates before scaling again', async
     '6 source-backed or conservatively bounded passages and 30 attribution decisions',
     'Matching Sentence Endings:** complete progressive vertical',
     'Sentence Completion:** complete progressive vertical',
-    'Next question-type vertical:** Note Completion',
+    'Next question-type vertical:** Table Completion',
   ]) assert.match(blueprint, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
 });
