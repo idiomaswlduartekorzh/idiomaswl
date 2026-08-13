@@ -135,7 +135,7 @@ test('the blueprint keeps Matching Information pinned after the roadmap advances
     '6 source-backed passages and 30 exact-detail decisions',
     'Matching Features:** complete progressive vertical',
     'Matching Sentence Endings:** complete progressive vertical',
-    'Sentence Completion:** progressive vertical implemented',
-    'Next question-type vertical:** Summary Completion',
+    'Sentence Completion:** complete progressive vertical',
+    'Next question-type vertical:** Note Completion',
   ]) assert.match(blueprint, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
 });

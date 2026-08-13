@@ -1,194 +1,104 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
-import OfficialStrategyCard from '@/components/exam-practice/OfficialStrategyCard';
-import QuestionTypeReviewSourceBlock from '@/components/exam-practice/QuestionTypeReviewSourceBlock';
-import { FileCheck2, ListChecks, ScanText } from 'lucide-react';
-import SummaryCompletionPassageBank from '@/components/exam-practice/SummaryCompletionPassageBank';
-import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
+import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import {
-  IELTS_READING_TYPES,
-  IELTS_SUMMARY_COMPLETION_PASSAGES,
-  PRACTICE_BASE_URL,
-} from '@/data/practica-exams/seo-catalog';
+  SummaryCompletionGuidedPractice,
+  SummaryCompletionIndependentPractice,
+  SummaryCompletionProgressEngine,
+} from '@/components/exam-practice/SummaryCompletionPracticeLab';
+import {
+  SUMMARY_COMPLETION_GUIDED_PASSAGE_ID,
+  SUMMARY_COMPLETION_INDEPENDENT_PASSAGE_ID,
+  getSummaryCompletionPassage,
+} from '@/data/practica-exams/ielts-reading-summary-completion-progress';
+import { IELTS_READING_TYPES, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 
 const ROUTE = IELTS_READING_TYPES.find((item) => item.slug === 'summary-completion')!;
-const URL = `${PRACTICE_BASE_URL}${ROUTE.path}`;
-const ACCENT = '#0369a1';
-const IELTS_SAMPLE_URL = 'https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test';
+const TITLE = 'Summary Completion: rebuild connected meaning';
+const DESCRIPTION = 'Read the complete summary, map its logical sequence, locate the equivalent passage section and copy the smallest exact answer that fits grammar and the stated limit.';
+const IELTS_ACADEMIC_URL = 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading';
+const guidedPassage = getSummaryCompletionPassage(SUMMARY_COMPLETION_GUIDED_PASSAGE_ID)!;
+const independentPassage = getSummaryCompletionPassage(SUMMARY_COMPLETION_INDEPENDENT_PASSAGE_ID)!;
 
 export const metadata: Metadata = {
-  title: 'IELTS Reading Summary Completion: ejercicios y método',
-  description: ROUTE.description,
+  title: 'IELTS Summary Completion: Method, Practice and Progress',
+  description: DESCRIPTION,
   keywords: ROUTE.keywords,
-  openGraph: {
-    title: 'IELTS Reading Summary Completion: ejercicios y método',
-    description: ROUTE.description,
-    url: URL,
-    type: 'website',
-    locale: 'es_CO',
-  },
-  alternates: { canonical: URL },
+  alternates: { canonical: `${PRACTICE_BASE_URL}${ROUTE.path}` },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: `${PRACTICE_BASE_URL}${ROUTE.path}`, type: 'website', locale: 'en_US' },
 };
 
 export default function Page() {
   return (
-    <>
-      <LearningResourceJsonLd
-        name={ROUTE.title}
-        url={URL}
-        description={ROUTE.description}
-        teaches={ROUTE.teaches}
-        isPartOf={{ name: 'Tipos de preguntas IELTS Reading', url: `${PRACTICE_BASE_URL}/practica/ielts/reading/tipos-de-preguntas` }}
-      />
-      <FaqJsonLd faqs={ROUTE.faqs} />
-      <BreadcrumbJsonLd
-        items={[
-          { name: 'Práctica', url: `${PRACTICE_BASE_URL}/practica` },
-          { name: 'IELTS', url: `${PRACTICE_BASE_URL}/practica/ielts` },
-          { name: 'Reading', url: `${PRACTICE_BASE_URL}/practica/ielts/reading` },
-          { name: 'Tipos de preguntas', url: `${PRACTICE_BASE_URL}/practica/ielts/reading/tipos-de-preguntas` },
-          { name: 'Summary Completion', url: URL },
-        ]}
-      />
-
-      <section className="wl-section">
-        <div className="wrap" style={{ maxWidth: 1040 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
-            <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
-            <span>/</span>
-            <Link href="/practica/ielts" style={{ color: 'var(--muted)', textDecoration: 'none' }}>IELTS</Link>
-            <span>/</span>
-            <Link href="/practica/ielts/reading/tipos-de-preguntas" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Tipos de preguntas</Link>
-            <span>/</span>
-            <span style={{ color: 'var(--ink)', fontWeight: 800 }}>Summary Completion</span>
-          </div>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '1rem', alignItems: 'stretch', marginBottom: '1.5rem' }}>
-            <div>
-              <p className="eyebrow" style={{ margin: '0 0 0.5rem' }}>
-                <span className="ink-line" />IELTS Reading · Tipo de pregunta
-              </p>
-              <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.1rem)', lineHeight: 1.04, letterSpacing: '-0.04em', margin: '0 0 0.85rem', color: 'var(--ink)' }}>
-                IELTS Reading Summary Completion
-              </h1>
-              <p style={{ color: 'var(--muted)', fontSize: '1rem', lineHeight: 1.75, margin: 0, maxWidth: 740 }}>
-                Summary Completion combina lectura, gramática y precisión. El resumen no copia todo el texto: parafrasea ideas y deja espacios donde debes elegir palabras exactas que encajen con el límite indicado.
-              </p>
-            </div>
-
-            <aside className="wl-card" style={{ padding: '1rem', borderRadius: 16, display: 'grid', gap: '0.75rem', alignContent: 'center' }}>
-              {[
-                { label: 'Límite', value: '2 words', sub: 'respeta instrucción' },
-                { label: 'Respuesta', value: 'exacta', sub: 'del pasaje' },
-                { label: 'Chequeo', value: 'gramática', sub: 'encaja en frase' },
-              ].map((item) => (
-                <div key={item.label} style={{ display: 'flex', justifyContent: 'space-between', gap: '0.75rem', alignItems: 'center', border: '1px solid var(--line-soft)', borderRadius: 12, padding: '0.75rem', background: 'var(--bg-2)' }}>
-                  <span style={{ color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.72rem', textTransform: 'uppercase', fontWeight: 800 }}>{item.label}</span>
-                  <strong style={{ color: ACCENT, fontFamily: 'var(--mono)', fontSize: '1.05rem', textAlign: 'right' }}>
-                    {item.value}
-                    <span style={{ display: 'block', color: 'var(--muted)', fontSize: '0.66rem', fontWeight: 700 }}>{item.sub}</span>
-                  </strong>
-                </div>
-              ))}
-            </aside>
-          </div>
-
-          <OfficialStrategyCard
-            accent={ACCENT}
-            official="IELTS Academic Reading incluye Summary Completion para completar un resumen con palabras del pasaje o con opciones, según la instrucción del set."
-            strategy="WeLearn lo entrena como lectura de paráfrasis: entender el resumen, predecir el tipo de palabra y volver al texto para copiar una respuesta que encaje."
-          />
-
-          <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: '0.85rem', marginBottom: '1.2rem' }}>
-            {[
-              {
-                icon: <ScanText size={18} />,
-                title: 'Predice la categoría',
-                text: 'Antes de buscar, decide si el espacio necesita sustantivo, verbo, adjetivo o frase corta.',
-              },
-              {
-                icon: <FileCheck2 size={18} />,
-                title: 'Copia con cuidado',
-                text: 'Si la instrucción pide palabras del pasaje, no cambies la forma de la palabra aunque entiendas la idea.',
-              },
-              {
-                icon: <ListChecks size={18} />,
-                title: 'Prueba la frase',
-                text: 'Lee el resumen completo con tu respuesta: debe sonar gramatical y respetar el límite.',
-              },
-            ].map((item) => (
-              <article key={item.title} className="wl-card" style={{ padding: '1rem', borderRadius: 14 }}>
-                <div style={{ display: 'flex', gap: '0.5rem', color: ACCENT, alignItems: 'center', marginBottom: '0.35rem' }}>
-                  {item.icon}
-                  <h2 style={{ margin: 0, color: 'var(--ink)', fontSize: '1rem' }}>{item.title}</h2>
-                </div>
-                <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.58, fontSize: '0.9rem' }}>{item.text}</p>
-              </article>
-            ))}
-          </section>
-
-          <section className="wl-card" style={{ padding: '1.2rem', borderRadius: 16, marginBottom: '1rem' }}>
-            <p className="eyebrow" style={{ margin: '0 0 0.45rem' }}>Método WeLearn</p>
-            <h2 style={{ margin: '0 0 0.75rem', fontSize: '1.3rem', letterSpacing: '-0.02em' }}>Cómo resolver Summary Completion</h2>
-            <div style={{ display: 'grid', gap: '0.65rem' }}>
-              {[
-                'Lee primero la instrucción y subraya el límite de palabras.',
-                'Revisa el resumen y predice qué tipo de palabra falta en cada espacio.',
-                'Busca en el pasaje la zona equivalente, recordando que el resumen suele usar paráfrasis.',
-                'Copia la respuesta exacta y vuelve a leer la frase completa para revisar gramática.',
-              ].map((item, index) => (
-                <p key={item} style={{ margin: 0, display: 'grid', gridTemplateColumns: '32px 1fr', gap: '0.65rem', alignItems: 'start', color: 'var(--ink-2)', lineHeight: 1.58 }}>
-                  <span style={{ width: 32, height: 32, borderRadius: 10, background: `${ACCENT}12`, color: ACCENT, display: 'grid', placeItems: 'center', fontFamily: 'var(--mono)', fontWeight: 900 }}>
-                    {index + 1}
-                  </span>
-                  <span>{item}</span>
-                </p>
-              ))}
-            </div>
-          </section>
-
-          <SummaryCompletionPassageBank
-            passages={IELTS_SUMMARY_COMPLETION_PASSAGES}
-            accent={ACCENT}
-            eyebrow="Banco Summary Completion"
-            title="Tres pasajes para completar resúmenes con evidencia exacta"
-            intro="Practica con textos originales de WeLearn. Cada blank exige ubicar una idea parafraseada, copiar palabras exactas del pasaje y comprobar que la frase completa conserva cohesion y gramatica."
-          />
-
-          <section style={{ marginTop: '1.4rem' }}>
-            <QuestionTypeReviewSourceBlock
-              accent={ACCENT}
-              questionTypeName={ROUTE.title}
-              sources={[
-                {
-                  label: 'IELTS Academic sample test questions',
-                  href: IELTS_SAMPLE_URL,
-                  note: 'lista oficial de preguntas de muestra de IELTS Academic Reading usada para confirmar que esta ruta corresponde a un tipo de pregunta oficial.',
-                },
-                {
-                  label: 'Banco original WeLearn',
-                  note: 'pasajes, preguntas, distractores y explicaciones creados para practica pedagogica, sin copiar preguntas oficiales.',
-                },
-              ]}
-              reviewedFocus={[
-                'alineacion con tipos de pregunta oficiales de IELTS Reading',
-                'separacion entre formato oficial y metodo WeLearn',
-                'respuesta explicada con evidencia, alcance o trampa',
-              ]}
-            />
-
-            <p className="eyebrow" style={{ margin: '0 0 0.5rem' }}>Preguntas frecuentes</p>
-            <div style={{ display: 'grid', gap: '0.75rem' }}>
-              {ROUTE.faqs.map((faq) => (
-                <article key={faq.question} className="wl-card" style={{ padding: '1rem', borderRadius: 14 }}>
-                  <h2 style={{ margin: '0 0 0.35rem', color: 'var(--ink)', fontSize: '1rem' }}>{faq.question}</h2>
-                  <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.9rem' }}>{faq.answer}</p>
-                </article>
-              ))}
-            </div>
-          </section>
-        </div>
-      </section>
-    </>
+    <InternationalReadingSkillLesson
+      slug="summary-completion"
+      path={ROUTE.path}
+      indexPath="/practica/ielts/reading/tipos-de-preguntas"
+      indexName="Reading Question Types"
+      lessonLabel="IELTS Academic Reading · Question type"
+      name="Summary Completion"
+      title={TITLE}
+      description={DESCRIPTION}
+      accent="#0369a1"
+      directAnswer="Read the full summary before any gap. Use its sequence, reference words and grammar to locate one passage section, then copy only the missing words within the displayed limit."
+      facts={[
+        { label: 'Target', value: 'Connected summary meaning' },
+        { label: 'Evidence', value: 'Summary logic + equivalent passage section' },
+        { label: 'Main risk', value: 'Solving six isolated gaps' },
+      ]}
+      outcomes={[
+        { title: 'Map the summary first', text: 'Identify cause, contrast, sequence and reference before searching for individual answers.' },
+        { title: 'Follow one evidence zone', text: 'Track how the summary compresses and paraphrases a connected passage section.' },
+        { title: 'Rebuild every sentence', text: 'Check literal wording, grammar, duplication and the displayed word limit.' },
+      ]}
+      method={[
+        { title: 'Read the instruction', text: 'Record whether answers come from the passage or a list and copy the maximum word count.' },
+        { title: 'Read the whole summary', text: 'Mark logical connectors, pronouns and the topic progression before touching a blank.' },
+        { title: 'Predict and locate', text: 'Name the required grammar and meaning, then find the passage section with the same idea sequence.' },
+        { title: 'Copy and reconnect', text: 'Insert the smallest exact span and reread the complete summary for cohesion and grammar.' },
+      ]}
+      weakExample="Search each blank independently and copy the nearest repeated noun, even when it belongs to another stage of the summary."
+      strongExample="Use the summary’s cause-result sequence to locate the matching paragraph, then copy the two-word noun phrase that preserves both grammar and connected meaning."
+      practice={<SummaryCompletionGuidedPractice passage={guidedPassage} />}
+      independentPracticeExperience={<SummaryCompletionIndependentPractice passage={independentPassage} />}
+      progressEngine={<SummaryCompletionProgressEngine />}
+      sourceReview={(
+        <SkillReviewSourceBlock
+          accent="#0369a1"
+          skillName="Summary Completion"
+          reviewedFocus={[
+            'Guided, independent and Progress Engine passage pools are separated.',
+            'All accepted responses are literal passage spans within the displayed maximum.',
+            'Feedback distinguishes cohesion, evidence-zone, grammar, answer-boundary and instruction errors.',
+            'The inherited “the roof” alternative is excluded because it produces the ungrammatical frame “the the roof”.',
+          ]}
+          sources={[
+            { label: 'Official IELTS Academic Reading format', href: IELTS_ACADEMIC_URL, note: 'Confirms Summary Completion as completing a summary with words from the text or a supplied list and that a stated word limit is binding.' },
+            { label: 'WeLearn practice blueprint', note: 'Defines connected-summary reading, held-back transfer, local persistence and the client-key security boundary.' },
+          ]}
+        />
+      )}
+      independentPractice={[
+        'Read the entire summary and mark its logical sequence before searching.',
+        'Predict the grammar and meaning required by every gap.',
+        'Locate the connected passage section and record an exact evidence span.',
+        'Submit the full set once, then repair only weak cohesion or evidence chains.',
+      ]}
+      checklist={[
+        'you can explain the summary’s sequence before filling a gap',
+        'you locate one connected passage zone instead of chasing isolated keywords',
+        'every inserted span is grammatical and within the displayed limit',
+        'you can explain why a nearby true detail belongs to a different summary position',
+      ]}
+      faqs={ROUTE.faqs}
+      officialNote="Summary Completion is an official IELTS Academic Reading task family. This page is guided WeLearn practice; answer keys reach the browser for feedback, so it is not a secure Exam or proctored mode. Candidate sources provide context but do not by themselves establish authorship, rights clearance or complete factual verification."
+      nextLinks={[
+        { href: '/practica/ielts/reading/tipos-de-preguntas/note-completion', label: 'Continue to Note Completion', primary: true },
+        { href: '/practica/ielts/reading/habilidades/limite-de-palabras', label: 'Strengthen word-limit control' },
+        { href: '/practica/ielts/reading/habilidades/parafrasis', label: 'Strengthen paraphrase recognition' },
+        { href: '/practica/ielts/reading/mixed-practice', label: 'Open Mixed Practice' },
+        { href: '/practica/ielts/reading', label: 'Back to Reading hub' },
+      ]}
+    />
   );
 }
