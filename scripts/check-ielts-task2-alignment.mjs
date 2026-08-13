@@ -1025,6 +1025,42 @@ for (const family of familias) {
   }
 }
 
+/**
+ * LAS SIETE HABILIDADES TRANSVERSALES con página propia.
+ *
+ * Eran fichas que enlazaban a una etapa. Se comprueban con el mismo criterio que las demás,
+ * y además que cada una siga declarando dónde se practica: la página enseña la habilidad, la
+ * etapa la construye dentro de un párrafo, y perder ese enlace dejaría las dos aisladas.
+ */
+const habilidades = loadModule(path.join(task2, 'habilidades', 'skills-data.ts'), () => ({})).TRANSFERABLE_SKILLS ?? []
+if (habilidades.length !== 7) failures.push(`Habilidades: hay ${habilidades.length}; se esperaban 7.`)
+
+for (const skill of habilidades) {
+  const palabras = [skill.explainer?.definition,
+    ...(skill.explainer?.sections ?? []).flatMap((s) => [s.heading, ...(s.body ?? []), ...(s.points ?? []).map((p) => `${p.term} ${p.detail}`)]),
+    skill.explainer?.cost, skill.explainer?.limits].filter(Boolean).join(' ').trim().split(/\s+/u).length
+  if (palabras < EXPLICACION_MINIMA) failures.push(`Habilidad/${skill.slug}: la explicación tiene ${palabras} palabras; el mínimo son ${EXPLICACION_MINIMA}.`)
+  if (!skill.explainer?.cost?.trim() || !skill.explainer?.limits?.trim()) failures.push(`Habilidad/${skill.slug}: falta «cost» o «limits».`)
+  if ((skill.guided?.steps ?? []).length < PASOS_MINIMOS) failures.push(`Habilidad/${skill.slug}: el guiado tiene ${(skill.guided?.steps ?? []).length} pasos.`)
+  for (const [i, step] of (skill.guided?.steps ?? []).entries()) {
+    if (!(step.minWords > 0)) failures.push(`Habilidad/${skill.slug}: el paso ${i + 1} del guiado no exige escribir nada.`)
+  }
+  if (!skill.practisedIn?.href?.trim()) failures.push(`Habilidad/${skill.slug}: no declara dónde se practica dentro del curso.`)
+  if (!(skill.examples ?? []).length || !(skill.mistakes ?? []).length) failures.push(`Habilidad/${skill.slug}: sin ejemplos o sin errores típicos.`)
+
+  for (const [i, drill] of (skill.drills ?? []).entries()) {
+    const largos = drill.options.map((o) => o.text.trim().split(/\s+/u).length)
+    const mejor = Math.max(...largos.filter((_, j) => j !== drill.correct))
+    if (largos[drill.correct] - mejor >= DESTAQUE) failures.push(`Habilidad/${skill.slug} ejercicio ${i + 1}: la correcta saca ${largos[drill.correct] - mejor} palabras al mejor distractor.`)
+    const motivos = drill.options.map((o) => o.why?.trim())
+    if (motivos.some((w) => !w)) failures.push(`Habilidad/${skill.slug} ejercicio ${i + 1}: hay opciones sin motivo propio.`)
+    if (new Set(motivos).size !== motivos.length) failures.push(`Habilidad/${skill.slug} ejercicio ${i + 1}: dos opciones comparten motivo.`)
+  }
+}
+
+const clienteHab = fs.readFileSync(path.join(task2, 'habilidades', 'SkillClient.tsx'), 'utf8')
+if (!clienteHab.includes('placeOption(drill.options')) failures.push('habilidades/SkillClient.tsx: no reparte la correcta con `placeOption(drill.options…`.')
+
 const shared = path.join(repoRoot, 'src', 'app', '(site)', 'practica', 'ielts', 'academic', 'writing', '_shared')
 if (fs.existsSync(shared)) {
   for (const file of fs.readdirSync(shared).filter((name) => name.endsWith('.tsx'))) {

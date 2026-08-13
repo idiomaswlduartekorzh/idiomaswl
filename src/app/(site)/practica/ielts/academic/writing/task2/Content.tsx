@@ -23,21 +23,22 @@ const QUESTION_TYPES = [
 ] as const;
 
 const TOOLS = [
-  // Las diez fichas enlazan a la etapa donde su habilidad se practica de paso. Paraphrasing
-  // es la única que tiene recorrido propio: se usa en la introducción de Task 2, en la de
-  // Task 1 y en Reading, y es donde un hispanohablante pierde marcas por calco sin enterarse.
+  // Las DIEZ tienen ya recorrido propio con los cuatro bloques del blueprint. Antes ocho eran
+  // fichas que enlazaban a la etapa donde su habilidad se practica de paso; para navegar valía,
+  // para aprender la habilidad no, porque la etapa enseña a montar un párrafo y la habilidad
+  // atraviesa todos. Cada página sigue enlazando a su etapa desde el bloque final.
   ['Paraphrasing', 'paraphrasing', 'Restate the prompt accurately without changing its meaning — five techniques, one page each.'],
   ['Thesis and position', 'habilidades/thesis-and-position', 'Make the controlling answer visible and consistent from the opening.'],
   ['Topic sentences', 'habilidades/topic-sentences', 'Give each body paragraph one clear, question-aligned job.'],
-  ['Explanation and development', 'parrafos-cuerpo', 'Turn a controlling idea into a logical chain instead of a list of claims.'],
-  ['Examples and evidence', 'parrafos-cuerpo', 'Use relevant examples to clarify reasoning without inventing sources.'],
+  ['Explanation and development', 'habilidades/explanation-and-development', 'Turn a controlling idea into a logical chain instead of a list of claims.'],
+  ['Examples and evidence', 'habilidades/examples-and-evidence', 'Use relevant examples to clarify reasoning without inventing sources.'],
   ['Cohesion and linking', 'linking-language', 'Connect ideas by function without mechanical connector lists.'],
-  ['Contrast and concession', 'body-2', 'Acknowledge, contrast or rebut ideas when the instruction requires it.'],
-  ['Sentence types', 'introduccion', 'Use simple, compound and complex sentences for a clear purpose.'],
+  ['Contrast and concession', 'habilidades/contrast-and-concession', 'Acknowledge, contrast or rebut ideas when the instruction requires it.'],
+  ['Sentence types', 'habilidades/sentence-types', 'Use simple, compound and complex sentences for a clear purpose.'],
   // Segunda ficha con recorrido propio. Apuntaba a `linking-language`, que enseña otra cosa:
   // los conectores son UNA función del vocabulario, y esta unidad cubre las ocho restantes.
   ['Academic vocabulary', 'academic-vocabulary', 'Choose precise functional language without forcing memorised phrases — eight functions, one page each.'],
-  ['Critical final review', 'revision-final', 'Check Task Response, logic, cohesion, vocabulary and grammar before finishing.'],
+  ['Critical final review', 'habilidades/critical-final-review', 'Check Task Response, logic, cohesion, vocabulary and grammar before finishing.'],
 ] as const;
 
 export default function Task2HubPage() {
