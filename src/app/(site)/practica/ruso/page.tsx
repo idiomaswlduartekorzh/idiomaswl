@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
+import HistoriasCard from '@/components/practica/HistoriasCard';
 
 export const metadata: Metadata = {
   title: 'Práctica de Ruso — Elige tu nivel MCER',
@@ -47,6 +48,7 @@ export default function RusoPage() {
           Ejercicios organizados por nivel MCER. El ruso usa el alfabeto cirílico — aquí aprenderás desde cero con transliteración.
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+          <HistoriasCard lang="ruso" />
           {NIVELES.map(n => {
             const inner = (
               <div style={{

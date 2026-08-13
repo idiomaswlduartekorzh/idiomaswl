@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
+import HistoriasCard from '@/components/practica/HistoriasCard';
 
 export const metadata: Metadata = {
   title: 'Práctica de Francés — Elige tu nivel MCER',
@@ -49,6 +50,7 @@ export default function FrancesPage() {
           Exercices organisés par niveau CECR. Commence par A1 et progresse à ton rythme.
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+          <HistoriasCard lang="frances" />
           {NIVELES.map(n => {
             const inner = (
               <div style={{

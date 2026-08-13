@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import KoreanToolsClient from './KoreanToolsClient';
 import { CourseSchema } from '@/components/practica/EducationSchema';
+import HistoriasCard from '@/components/practica/HistoriasCard';
 
 export const metadata: Metadata = {
   title: 'Práctica de Coreano — Elige tu nivel TOPIK',
@@ -54,6 +55,7 @@ export default function CoreanoPage() {
           El coreano usa el alfabeto Hangul (한글), diseñado científicamente en 1443. Aprenderás a leerlo en menos de una semana.
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '2.5rem' }}>
+          <HistoriasCard lang="coreano" />
           {NIVELES.map(n => {
             const inner = (
               <div style={{

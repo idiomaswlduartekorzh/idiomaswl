@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
+import HistoriasCard from '@/components/practica/HistoriasCard';
 
 export const metadata: Metadata = {
   title: 'Práctica de Japonés — Elige tu nivel JLPT',
@@ -47,6 +48,7 @@ export default function JaponesPage() {
           El japonés usa 3 sistemas de escritura: ひらがな (hiragana), カタカナ (katakana) y 漢字 (kanji). Aquí empezamos con los dos primeros.
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+          <HistoriasCard lang="japones" />
           {NIVELES.map(n => {
             const inner = (
               <div style={{

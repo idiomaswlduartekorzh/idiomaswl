@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
+import HistoriasCard from '@/components/practica/HistoriasCard';
 
 export const metadata: Metadata = {
   title: 'Práctica de Italiano — Elige tu nivel MCER',
@@ -62,6 +63,7 @@ export default function ItalianoPage() {
           Ejercicios organizados por nivel MCER. Empieza en A1, avanza por A2 y B1 con gramática guiada o salta a los integrados B2.
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+          <HistoriasCard lang="italiano" />
           {NIVELES.map(n => {
             const inner = (
               <div style={{

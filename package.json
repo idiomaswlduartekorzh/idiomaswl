@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "npm run check:practica-catalog && npm run check:reading-content && npm run audit:writing-curriculum && npm run check:listening-series && npm run check:ielts-task1 && npm run check:ielts-task2 && npm run check:vocabulario && npm run check:seo-snippets",
+    "prebuild": "npm run check:practica-catalog && npm run check:reading-content && npm run audit:writing-curriculum && npm run check:listening-series && npm run check:ielts-task1 && npm run check:ielts-task2 && npm run check:vocabulario && npm run check:historias && npm run check:seo-snippets",
     "dev": "NODE_OPTIONS='--max-old-space-size=3072' next dev",
     "dev:audit": "NODE_OPTIONS='--max-old-space-size=3072' next dev --webpack",
     "dev:safe": "node scripts/safe-dev.js",
@@ -35,7 +35,10 @@
     "audit:listening-audio": "node scripts/audit-listening-audio.mjs",
     "test:e2e": "playwright test",
     "check:vocabulario": "node scripts/check-vocabulario.mjs",
-    "check:ielts-task1": "node scripts/check-ielts-task1-alignment.mjs"
+    "check:ielts-task1": "node scripts/check-ielts-task1-alignment.mjs",
+    "check:historias": "node scripts/check-historias.mjs",
+    "audit:historias-tts": "node scripts/audit-historias-tts.mjs",
+    "audio:historias": "node scripts/generate-historias-audio.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.112.1",

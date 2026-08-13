@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, type ReactNode } from 'react'
 import Link from 'next/link'
 import ProgressBar from '@/components/practica/ProgressBar'
 import { getLevelProgress } from '@/lib/progress'
@@ -8,28 +8,6 @@ import { getLevelProgress } from '@/lib/progress'
 const COLOR = '#0066cc'
 
 const SKILL_TOTALS: Record<string, number> = { a1: 6, a2: 6, b2: 1 }
-
-// Historias de comprensión integrada (lectura + listening + preguntas).
-const STORIES = [
-  {
-    href: '/practica/the-locked-phone',
-    icon: '📵',
-    color: '#be185d',
-    title: 'The Locked Phone',
-    level: 'B1–B2',
-    desc: 'Ella pidió revisar el celular, él dijo que no. Discusión de pareja con 2 notas de voz y 19 preguntas.',
-    meta: '1 ejercicio · 2 audios · 19 preguntas',
-  },
-  {
-    href: '/practica/the-grandmothers-ledger',
-    icon: '🎙️',
-    color: '#059669',
-    title: "The Grandmother's Ledger",
-    level: 'B1–B2',
-    desc: 'Comprensión integrada de lectura + listening. Historia de disputa familiar con 2 notas de voz y 19 preguntas.',
-    meta: '1 ejercicio · 2 audios · 19 preguntas',
-  },
-]
 
 const NIVELES = [
   {
@@ -63,7 +41,11 @@ const NIVELES = [
   },
 ]
 
-export default function InglesPageClient() {
+// `historiasCard` llega ya renderizada desde el servidor. Se pasa como slot en
+// vez de importar HistoriasCard aquí a propósito: importarlo arrastraría el
+// registro entero de historias —los textos de los ocho idiomas— al bundle de
+// esta página, que solo necesita pintar una tarjeta.
+export default function InglesPageClient({ historiasCard }: { historiasCard?: ReactNode }) {
   const [levelData, setLevelData] = useState<Record<string, { completed: number }>>({})
 
   useEffect(() => {
@@ -94,33 +76,7 @@ export default function InglesPageClient() {
         </p>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-          {/* Historias de comprensión integrada B1-B2 */}
-          {STORIES.map(story => (
-            <Link key={story.href} href={story.href} style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
-              <div style={{
-                display: 'flex', alignItems: 'center', gap: '1.25rem',
-                padding: '1.2rem 1.5rem',
-                border: `1.5px solid ${story.color}47`,
-                borderRadius: 16,
-                background: `linear-gradient(135deg, ${story.color}0f 0%, transparent 100%)`,
-              }}>
-                <div style={{
-                  width: 58, height: 58, borderRadius: 14, flexShrink: 0,
-                  background: story.color, color: '#fff',
-                  display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem',
-                }}>{story.icon}</div>
-                <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.55rem', marginBottom: '0.2rem', flexWrap: 'wrap' }}>
-                    <span style={{ fontSize: '1.05rem', fontWeight: 800, color: 'var(--ink)' }}>{story.title}</span>
-                    <span style={{ fontSize: '0.6rem', fontWeight: 800, background: story.color, color: '#fff', borderRadius: 5, padding: '0.1rem 0.4rem', fontFamily: 'var(--mono)' }}>{story.level}</span>
-                  </div>
-                  <p style={{ margin: 0, fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.5 }}>{story.desc}</p>
-                  <p style={{ margin: '0.4rem 0 0', fontSize: '0.73rem', color: story.color, fontFamily: 'var(--mono)', fontWeight: 700 }}>{story.meta}</p>
-                </div>
-                <span style={{ fontSize: '1.2rem', color: story.color, fontWeight: 700, flexShrink: 0 }}>→</span>
-              </div>
-            </Link>
-          ))}
+          {historiasCard}
 
           {NIVELES.map(n => {
             const prog = n.key ? levelData[n.key] : undefined
