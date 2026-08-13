@@ -7,6 +7,7 @@ import { readingExercisePath } from '@/lib/reading/routes';
 import { SIMULACROS } from '@/data/mocks/icfes-simulacros';
 import { GUIDED_MOCK_IDS, GUIDED_WORKBOOK_IDS } from '@/data/icfes/guided-registry';
 import { getVocabLevels } from '@/data/practica/vocabulario/registry';
+import { HISTORIA_LANG_KEYS, getHistorias } from '@/data/practica/historias';
 
 // www es el dominio canónico (idiomaswl.com hace 307 → www.idiomaswl.com).
 // Las URLs del sitemap deben ser las canónicas finales, no redirecciones.
@@ -156,9 +157,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ];
     }),
 
-    // ── Practice — historias de comprensión integrada (inglés B1–B2) ─────────
-    { url: `${BASE}/practica/the-locked-phone`,                                lastModified: now, changeFrequency: 'monthly' as const, priority: 0.74 },
-    { url: `${BASE}/practica/the-grandmothers-ledger`,                         lastModified: now, changeFrequency: 'monthly' as const, priority: 0.74 },
+    // ── Practice — Historias: comprensión integrada en los 8 idiomas ─────────
+    // Derivado del registro, no una lista a mano: al añadir una historia entra
+    // aquí sola. El hub de cada idioma va antes que sus historias.
+    ...HISTORIA_LANG_KEYS.flatMap((lang) => [
+      { url: `${BASE}/practica/${lang}/historias`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.74 },
+      ...getHistorias(lang).map((h) => ({
+        url: `${BASE}/practica/${lang}/historias/${h.slug}`,
+        lastModified: now,
+        changeFrequency: 'monthly' as const,
+        priority: 0.72,
+      })),
+    ]),
 
     // ── Practice — ICFES Saber 11 ────────────────────────────────────────────
     { url: `${BASE}/practica/icfes-saber-11`,                                  lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.85 },

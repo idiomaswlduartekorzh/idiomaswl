@@ -180,6 +180,24 @@ const nextConfig: NextConfig = {
     });
 
     return [
+      // ── Historias ────────────────────────────────────────────────────────
+      // Las dos historias de inglés vivían sueltas en /practica/<slug>. Al
+      // agruparlas en la sección Historias pasaron a /practica/ingles/historias/…
+      // Estaban en el sitemap desde junio de 2026, así que van con 301.
+      //
+      // `the-grandmothers-ledger` además cambia de nombre: quien reclama los
+      // regalos es el abuelo, no la abuela.
+      {
+        source: '/practica/the-locked-phone',
+        destination: '/practica/ingles/historias/the-locked-phone',
+        permanent: true,
+      },
+      {
+        source: '/practica/the-grandmothers-ledger',
+        destination: '/practica/ingles/historias/the-grandfathers-ledger',
+        permanent: true,
+      },
+
       // Alemán A1
       g('aleman', 'a1', 'acusativo', 'akkusativ'),
       g('aleman', 'a1', 'articulos-der-die-das', 'artikel'),

@@ -85,3 +85,7 @@ public/audio/**/piloto-*.mp3
 # Playwright — segunda auditoría
 test-results/
 playwright-report/
+
+# Catas de voz de las Historias: mp3 de prueba para elegir voz antes de la tanda
+# completa. No son contenido y no deben subirse — Vercel CLI despliega el árbol local.
+tmp-catas-historias/
