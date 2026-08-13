@@ -8,7 +8,7 @@ const topic: GrammarTopic = {
   level: 'B1',
   title: 'Verbos de Movimiento con Prefijos en Ruso B1',
   shortTitle: 'Verbos de Movimiento con Prefijos',
-  metaTitle: 'Verbos de Movimiento con Prefijos en Ruso B1 — при-, у-, вы-, в-, пере-',
+  metaTitle: 'Verbos de movimiento con prefijos en ruso B1',
   description:
     'Los verbos de movimiento con prefijos son una de las estructuras más productivas del ruso. Al añadir prefijos como при-, у-, вы-, в-, пере-, под-, от- y за- a los verbos de movimiento base, se crean pares aspectuales perfectamente regulares que expresan dirección, llegada, salida y tránsito. Con este sistema dominas decenas de verbos a la vez.',
   lead: 'Aprende a combinar prefijos direccionales con los verbos идти/ходить y ехать/ездить para expresar llegada, salida, entrada, cruce y más.',

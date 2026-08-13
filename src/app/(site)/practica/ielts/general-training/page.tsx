@@ -90,7 +90,7 @@ const practiceItems = [
 export const metadata: Metadata = {
   title: 'IELTS General Training: formato, diferencias y práctica',
   description:
-    'Guía IELTS General Training en español: diferencias con Academic, Reading, Writing Task 1 carta, Task 2 ensayo y ejercicios originales con respuestas explicadas.',
+    'Guía del IELTS General Training en español: diferencias con Academic, Reading, la carta del Task 1 y el ensayo del Task 2, con ejercicios.',
   alternates: { canonical: CANONICAL_URL },
   robots: { index: true, follow: true },
 };

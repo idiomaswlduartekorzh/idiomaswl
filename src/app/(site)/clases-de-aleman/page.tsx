@@ -11,9 +11,9 @@ const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de alemán 
 const WA_GOETHE  = encodeURIComponent('Hola, quiero prepararme para el examen Goethe con WeLearn. ¿Cuándo puedo empezar?');
 
 export const metadata: Metadata = {
-  title: 'Clases de Alemán en Bucaramanga y Online — Goethe, Ausbildung y Enfermería | WeLearn',
+  title: 'Clases de alemán en Bucaramanga y online — Goethe A1–C1',
   description:
-    'Academia de alemán en Bucaramanga con clases presenciales y online para toda Colombia. Preparación Goethe A1–C1 y las rutas reales: Ausbildung, enfermería, Chancenkarte y visa familiar. Diagnóstico gratis.',
+    'Academia de alemán en Bucaramanga y online. Preparación Goethe A1–C1 y las rutas reales: Ausbildung, enfermería y Chancenkarte. Diagnóstico gratis.',
   keywords: [
     'clases de alemán Bucaramanga',
     'curso de alemán Bucaramanga',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     'WeLearn alemán',
   ],
   openGraph: {
-    title: 'Clases de Alemán en Bucaramanga y Online — Goethe y Ausbildung | WeLearn',
+    title: 'Clases de Alemán en Bucaramanga y Online — Goethe y Ausbildung',
     description:
       'Presencial en Bucaramanga y online en toda Colombia. Las rutas reales: Ausbildung, enfermería, Chancenkarte y visa familiar. Diagnóstico gratis.',
     url: 'https://www.idiomaswl.com/clases-de-aleman',

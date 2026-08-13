@@ -6,9 +6,9 @@ import { COMPOUNDS, ROOTS, CATEGORY_COLORS, getCompoundsForRoot } from '@/data/k
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Palabras Compuestas en Coreano (합성어) — Vocabulario × 10 | WeLearn',
+  title: 'Palabras Compuestas en Coreano (합성어) — Vocabulario × 10',
   description:
-    'Aprende cómo el coreano combina raíces simples para crear palabras nuevas. 합성어 con ejemplos visuales e interactivos: 눈물 (lágrimas), 손가락 (dedo), 불고기 y más. Practica gratis.',
+    'Cómo el coreano combina raíces simples para crear palabras nuevas: 눈물, 손가락, 불고기 y siete más, con ejemplos interactivos. Práctica gratis.',
   keywords: [
     'palabras compuestas coreano', 'vocabulario coreano', '합성어',
     'cómo aprender coreano', 'raíces coreanas', 'formación de palabras coreano',

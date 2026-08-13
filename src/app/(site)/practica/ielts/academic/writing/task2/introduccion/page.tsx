@@ -3,7 +3,7 @@ import { Task2SkillStructuredData } from '../Task2SkillStructuredData'
 
 export const metadata: Metadata = {
   title: 'IELTS Writing Task 2 Introduction: Thesis and Paraphrase',
-  description: 'Learn how to write an IELTS Writing Task 2 introduction for five essay types with prompt analysis, sentence blocks, guided examples and progressive practice.',
+  description: 'How to write an IELTS Writing Task 2 introduction for five essay types: prompt analysis, sentence blocks and progressive practice.',
   keywords: ['IELTS Writing Task 2 introduction', 'IELTS thesis statement', 'IELTS essay introduction', 'IELTS Task 2 paraphrasing', 'IELTS essay types'],
   robots: { index: true, follow: true },
   openGraph: {

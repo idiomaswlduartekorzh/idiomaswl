@@ -9,7 +9,7 @@ const pdfUrl = `${WELEARN_PDF_BASE_URL}${IELTS_INTRODUCTION_PDF.href}`
 
 export const metadata: Metadata = {
   title: IELTS_INTRODUCTION_PDF.title,
-  description: 'Descarga una guia original de Idiomas WeLearn para aprender la introduccion y el paraphrasing del IELTS Academic Writing Task 1, con modelos, vocabulario, ejercicios y respuestas explicadas.',
+  description: 'Descarga la guía original de WeLearn sobre la introducción y el paraphrasing del IELTS Writing Task 1, con modelos, ejercicios y respuestas.',
   keywords: ['IELTS Writing Task 1 introduccion PDF', 'IELTS paraphrasing PDF', 'introduccion IELTS Writing Task 1', 'IELTS Academic Writing Task 1 ejercicios'],
   alternates: { canonical },
   openGraph: {

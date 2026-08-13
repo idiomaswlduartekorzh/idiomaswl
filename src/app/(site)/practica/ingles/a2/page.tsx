@@ -5,7 +5,7 @@ import { PracticaWABanner } from '@/components/PracticaWABanner';
 import { listeningCard } from '@/data/practica/series/page-copy';
 
 export const metadata: Metadata = {
-  title: 'Inglés A2 — Elige una habilidad | Idiomas WeLearn',
+  title: 'Inglés A2 — Elige una habilidad',
   description: 'Inglés A2: pasado simple, comparativos, present continuous, going to/will y modales. Lectura, gramática, escritura, habla, vocabulario y escucha.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ingles/a2' },
 };

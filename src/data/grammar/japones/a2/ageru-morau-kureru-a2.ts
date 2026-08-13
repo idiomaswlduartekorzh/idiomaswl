@@ -8,7 +8,7 @@ const topic: GrammarTopic = {
   level: 'A2',
   title: 'あげる/もらう/くれる en japonés A2: dar y recibir',
   shortTitle: 'あげる/もらう/くれる',
-  metaTitle: 'Dar y recibir en japonés A2 — あげる, もらう, くれる y sus formas te-',
+  metaTitle: 'Dar y recibir en japonés A2 — あげる, もらう, くれる',
   description:
     'El japonés tiene tres verbos distintos para expresar dar y recibir según la dirección del intercambio: あげる (yo/nosotros → otros), もらう (yo/nosotros ← otros), くれる (otros → yo/mi grupo). Se combinan con la forma て para expresar hacer un favor: てあげる, てもらう, てくれる. Son estructuras indispensables en japonés A2.',
   lead: 'プレゼントをもらいました: los tres verbos de dar y recibir que todo estudiante necesita.',

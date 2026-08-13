@@ -11,7 +11,7 @@ const ESCUCHA = listeningCard(
 );
 
 export const metadata: Metadata = {
-  title: 'Japonés B1 — Elige una habilidad | Idiomas WeLearn',
+  title: 'Japonés B1 — Elige una habilidad',
   description: 'Japonés B1: voz pasiva, causativa, condicional 〜たら, 〜のに y permisos/prohibiciones. Lectura, gramática, vocabulario, escritura, habla y escucha.',
   alternates: { canonical: 'https://idiomaswl.com/practica/japones/b1' },
 };

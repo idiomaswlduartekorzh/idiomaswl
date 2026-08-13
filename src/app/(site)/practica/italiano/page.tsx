@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
-  title: 'Práctica de Italiano — Elige tu nivel MCER | Idiomas WeLearn',
+  title: 'Práctica de Italiano — Elige tu nivel MCER',
   description: 'Ejercicios interactivos de italiano por nivel MCER. A1, A2, B1 y práctica integrada B2 con lectura, gramática, escucha y escritura.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/italiano' },
 };

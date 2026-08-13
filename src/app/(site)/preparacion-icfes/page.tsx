@@ -8,9 +8,9 @@ const WA_SIMULACRO  = encodeURIComponent('Hola, acabo de hacer el simulacro de i
 const WA_GENERAL    = encodeURIComponent('Hola, vi la página de preparación ICFES inglés en WeLearn y tengo algunas preguntas.');
 
 export const metadata: Metadata = {
-  title: 'Preparación Inglés ICFES Saber 11 — Simulacros y Clases | WeLearn',
+  title: 'Preparación Inglés ICFES Saber 11 — Simulacros y Clases',
   description:
-    'Prepárate para el inglés del ICFES Saber 11 con simulacros completos, clases 1:1 y el método WeLearn. Mejora tu puntaje de inglés y sube tu puntaje global. Para estudiantes de todo Colombia.',
+    'Prepárate para el inglés del ICFES Saber 11 con simulacros completos y clases 1:1. Sube tu puntaje de inglés y con él tu puntaje global.',
   keywords: [
     'preparación inglés ICFES',
     'simulacro ICFES inglés',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     'simulacro ingles saber 11 gratis',
   ],
   openGraph: {
-    title: 'Preparación Inglés ICFES Saber 11 — WeLearn',
+    title: 'Preparación Inglés ICFES Saber 11',
     description:
       'Simulacros completos, análisis por sección y clases 1:1. Sube tu puntaje de inglés en el ICFES. Para estudiantes de todo Colombia.',
     url: 'https://www.idiomaswl.com/preparacion-icfes',

@@ -11,8 +11,8 @@ const ESCUCHA = listeningCard(
 );
 
 export const metadata: Metadata = {
-  title: 'Ruso A2 — Elige una habilidad | Idiomas WeLearn',
-  description: 'Ruso A2: прошедшее время (pasado), будущее время (futuro), глаголы движения (idti/ekhat), падежи (дательный, творительный) y возвратные глаголы. 6 habilidades interactivas.',
+  title: 'Ruso A2 — Elige una habilidad',
+  description: 'Ruso A2: pasado, futuro, verbos de movimiento, casos dativo e instrumental y verbos reflexivos, en seis habilidades interactivas.',
   alternates: { canonical: 'https://idiomaswl.com/practica/ruso/a2' },
 };
 

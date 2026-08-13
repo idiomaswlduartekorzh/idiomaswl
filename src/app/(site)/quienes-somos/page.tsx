@@ -8,9 +8,9 @@ const WA = '573005004253';
 const WA_GENERAL = encodeURIComponent('Hola, vi la página de Quiénes somos en WeLearn y quiero agendar mi diagnóstico gratis.');
 
 export const metadata: Metadata = {
-  title: 'Quiénes somos — Academia de idiomas en Bucaramanga | Idiomas WeLearn',
+  title: 'Quiénes somos — Academia de idiomas en Bucaramanga',
   description:
-    'Idiomas WeLearn es una academia con sede presencial en Bucaramanga (Sotomayor) y clases online en toda Colombia. Fundada en 2015 por José David Duarte, políglota en ocho idiomas, y Zhanna Korzh, lingüista titulada en Rusia en enseñanza de idiomas extranjeros. Más de 1000 estudiantes preparados.',
+    'Academia con sede en Bucaramanga (Sotomayor) y clases online en toda Colombia, fundada en 2015 por un políglota y una lingüista titulada.',
   keywords: [
     'academia de idiomas Bucaramanga',
     'Idiomas WeLearn',

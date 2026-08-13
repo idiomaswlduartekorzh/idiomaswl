@@ -4,7 +4,7 @@ import PerfilClient from './PerfilClient'
 import type { StudentPlan } from '@/lib/actions/assignPlan'
 
 export const metadata = {
-  title: 'Mi perfil — WeLearn',
+  title: 'Mi perfil',
 }
 
 export default async function PerfilPage() {

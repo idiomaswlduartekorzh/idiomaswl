@@ -5,7 +5,7 @@ import { PracticaWABanner } from '@/components/PracticaWABanner';
 import { audioReady } from '@/data/practica/series/audio-ready';
 
 export const metadata: Metadata = {
-  title: 'Coreano A1 — Elige una habilidad | Idiomas WeLearn',
+  title: 'Coreano A1 — Elige una habilidad',
   description: 'Coreano A1: Hangul, 이에요/예요, partículas (은/는 이/가 을/를), números y verbos -아/어요. Todo con romanización.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/coreano/a1' },
 };

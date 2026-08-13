@@ -35,10 +35,17 @@ const BASE_URL = 'https://www.idiomaswl.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: {
-    default: 'Idiomas WeLearn — Aprende un idioma, en serio',
-    template: '%s · Idiomas WeLearn',
-  },
+  // Cadena simple, no `{ default, template }`. Antes había un template
+  // (`'%s · Idiomas WeLearn'`) que añadía 18 caracteres al título de TODAS las
+  // páginas del sitio. Google corta el título alrededor de los 60, así que ese
+  // sufijo se comía justo el final —donde vive lo que distingue a una página de
+  // otra— y encima duplicaba la marca en las páginas que ya la llevaban escrita
+  // («… | WeLearn · Idiomas WeLearn»). El nombre del sitio no se pierde: Google
+  // lo muestra aparte, a partir de `openGraph.siteName` y del JSON-LD WebSite.
+  //
+  // Este título solo se usa en las páginas que no definen el suyo; las que sí lo
+  // definen lo sustituyen entero, sin heredar ningún sufijo.
+  title: 'Idiomas WeLearn — Aprende un idioma, en serio',
   description:
     'Aprende coreano, inglés, francés, alemán, italiano y más con el método WeLearn: once pasos diarios que imitan cómo el cerebro interioriza un idioma. Simulacros completos de TOEFL, IELTS e ICFES.',
   keywords: [

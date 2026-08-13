@@ -27,7 +27,7 @@ const FAQS = [
 export const metadata: Metadata = {
   title: 'IELTS Writing Task 2 model answers explicados',
   description:
-    '25 ensayos modelo completos de IELTS Academic Writing Task 2, compuestos con los mismos párrafos del curso: cada uno con la función de cada párrafo, comparación de frase floja contra frase fuerte y lista de comprobación final.',
+    '25 ensayos modelo de IELTS Academic Writing Task 2, con la función de cada párrafo, frase floja contra frase fuerte y lista de comprobación.',
   keywords: [
     'IELTS writing task 2 model answers',
     'IELTS task 2 sample answers',

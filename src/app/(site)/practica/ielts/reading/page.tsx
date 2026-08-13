@@ -17,7 +17,7 @@ const ENGLISH_SKILL_NAMES: Record<string, string> = {
 }
 
 export const metadata: Metadata = {
-  title: 'IELTS Academic Reading Practice Hub: Skills and Question Types',
+  title: 'IELTS Academic Reading: skills and question types',
   description:
     'Build IELTS Academic Reading step by step with 14 question-type routes, skimming, scanning, inference, paraphrase, word-limit control and mixed practice.',
   keywords: [

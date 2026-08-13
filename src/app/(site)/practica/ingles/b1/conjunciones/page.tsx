@@ -4,7 +4,7 @@ import type { QuestLevel, QuestGuide } from '@/components/practica/QuestEngine';
 import { QuizSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
-  title: 'Conjunctions B1 — and/but/although/when/if/however | Idiomas WeLearn',
+  title: 'Conjunctions B1 — and/but/although/when/if/however',
   description: 'Practica las conjunciones del inglés B1 con 6 niveles progresivos: coordinating, contrast, condition, time y connectors. Feedback inmediato.',
   alternates: { canonical: 'https://idiomaswl.com/practica/ingles/b1/conjunciones' },
 };

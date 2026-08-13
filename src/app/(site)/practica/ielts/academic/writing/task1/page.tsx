@@ -23,8 +23,8 @@ const FAQS = [
 ]
 
 export const metadata: Metadata = {
-  title: 'IELTS Academic Writing Task 1: Structure, Skills and Practice',
-  description: 'Learn the IELTS Academic Writing Task 1 response structure: introduction, overview and two body paragraphs. Practise charts, tables, maps and process diagrams with guided exercises.',
+  title: 'IELTS Academic Writing Task 1: structure and practice',
+  description: 'Learn the IELTS Academic Writing Task 1 structure: introduction, overview and two body paragraphs. Practise charts, tables, maps and processes.',
   keywords: ['IELTS Academic Writing Task 1', 'IELTS Task 1 structure', 'IELTS Task 1 introduction overview body paragraphs', 'IELTS Task 1 practice', 'IELTS Task 1 maps process diagrams'],
   openGraph: {
     title: 'IELTS Writing Task 1',

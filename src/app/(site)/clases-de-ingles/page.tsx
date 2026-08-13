@@ -21,9 +21,9 @@ const WA_FCE     = wa('Hola, necesito preparación para el Cambridge B2 First (F
 
 // ── Metadata ─────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Clases de Inglés en Bucaramanga y Online — IELTS, TOEFL, FCE, ICFES | WeLearn',
+  title: 'Clases de inglés en Bucaramanga y online — IELTS, TOEFL, FCE',
   description:
-    'Academia de inglés en Bucaramanga con clases online para toda Colombia. Preparación IELTS, TOEFL, Cambridge B2 First (FCE) e ICFES Saber 11. Profesor políglota en 8 idiomas. Clase de diagnóstico gratis.',
+    'Academia de inglés en Bucaramanga y online para toda Colombia. Preparación IELTS, TOEFL, Cambridge B2 First e ICFES. Diagnóstico gratis.',
   keywords: [
     'clases de inglés', 'inglés Bucaramanga', 'preparación IELTS Colombia',
     'preparación TOEFL Colombia', 'ICFES inglés Saber 11', 'aprender inglés online Colombia',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-ingles' },
   openGraph: {
-    title: 'Clases de Inglés en Bucaramanga y Online — IELTS, TOEFL, ICFES | WeLearn',
+    title: 'Clases de Inglés en Bucaramanga y Online — IELTS, TOEFL, ICFES',
     description: 'Academia de inglés en Bucaramanga. Preparación IELTS, TOEFL e ICFES con método propio. Clase de diagnóstico gratis para toda Colombia.',
     url: 'https://www.idiomaswl.com/clases-de-ingles',
   },

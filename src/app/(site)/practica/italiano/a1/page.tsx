@@ -5,7 +5,7 @@ import { PracticaWABanner } from '@/components/PracticaWABanner';
 import { listeningCard } from '@/data/practica/series/page-copy';
 
 export const metadata: Metadata = {
-  title: 'Italiano A1 — Elige una habilidad | Idiomas WeLearn',
+  title: 'Italiano A1 — Elige una habilidad',
   description: 'Italiano A1: lectura con textos cortos, gramática (artículos, essere, avere, verbos), escritura guiada, expresión oral y vocabulario temático.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/italiano/a1' },
 };

@@ -11,7 +11,7 @@ const ESCUCHA = listeningCard(
 );
 
 export const metadata: Metadata = {
-  title: 'Portugués A2 — Elige una habilidad | Idiomas WeLearn',
+  title: 'Portugués A2 — Elige una habilidad',
   description: 'Portugués A2: pretérito perfeito vs imperfeito, pronomes oblíquos, ser vs estar, comparativo, futuro e vocabulário temático.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/portugues/a2' },
 };

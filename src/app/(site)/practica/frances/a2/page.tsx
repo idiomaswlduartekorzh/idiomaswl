@@ -11,7 +11,7 @@ const ESCUCHA = listeningCard(
 );
 
 export const metadata: Metadata = {
-  title: 'Francés A2 — Elige una habilidad | Idiomas WeLearn',
+  title: 'Francés A2 — Elige una habilidad',
   description: 'Francés A2: lectura, gramática (passé composé, imparfait, pronoms COD/COI, comparatif/superlatif, futur), escritura, expresión oral, vocabulario y escucha.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/frances/a2' },
 };

@@ -12,9 +12,9 @@ const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de francés
 const WA_DELF    = encodeURIComponent('Hola, quiero prepararme para el examen DELF con WeLearn. ¿Cuándo puedo empezar?');
 
 export const metadata: Metadata = {
-  title: 'Clases de Francés en Bucaramanga y Online — Preparación DELF/DALF | WeLearn',
+  title: 'Clases de francés en Bucaramanga y online — DELF y DALF',
   description:
-    'Academia de francés en Bucaramanga con clases presenciales y online para toda Colombia. Preparación DELF A1–B2 y DALF C1–C2, y TCF/TEF para Canadá. Desde cero hasta C2. Diagnóstico gratis.',
+    'Academia de francés en Bucaramanga y online. Preparación DELF A1–B2, DALF C1–C2 y TCF/TEF para Canadá, desde cero. Diagnóstico gratis.',
   keywords: [
     'clases de francés Bucaramanga',
     'academia de francés Bucaramanga',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     'WeLearn francés',
   ],
   openGraph: {
-    title: 'Clases de Francés en Bucaramanga y Online — DELF/DALF | WeLearn',
+    title: 'Clases de Francés en Bucaramanga y Online — DELF/DALF',
     description:
       'Presencial en Bucaramanga y online en toda Colombia. Preparación DELF, DALF y TCF/TEF Canadá. Diagnóstico gratis.',
     url: 'https://www.idiomaswl.com/clases-de-frances',

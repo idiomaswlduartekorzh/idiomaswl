@@ -4,7 +4,7 @@ import LeccionClient from './LeccionClient';
 export const metadata: Metadata = {
   title: 'Cómo funciona el Método WeLearn',
   description:
-    'Once etapas diarias que imitan la forma en que el cerebro interioriza un idioma: activación, adquisición guiada, reconocimiento, escucha, gramática, producción y revisión espaciada. Preview interactivo.',
+    'Once etapas diarias que imitan cómo el cerebro interioriza un idioma: activación, escucha, gramática, producción y revisión espaciada.',
   keywords: ['método WeLearn', 'cómo aprender idiomas', 'once pasos', 'aprendizaje de idiomas', 'producción guiada'],
   openGraph: {
     title: 'Cómo funciona el Método WeLearn',

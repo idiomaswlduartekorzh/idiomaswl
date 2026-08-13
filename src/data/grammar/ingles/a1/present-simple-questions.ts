@@ -8,7 +8,7 @@ const topic: GrammarTopic = {
   level: 'A1',
   title: 'Present simple interrogativo en inglés A1',
   shortTitle: 'Present simple (preguntas)',
-  metaTitle: 'Present simple interrogativo en inglés A1 | Do/Does y Wh- — guía para hispanohablantes',
+  metaTitle: 'Present simple interrogativo en inglés A1 — Do/Does y Wh-questions',
   description: 'Aprende a construir preguntas Yes/No con Do y Does, y preguntas Wh- con What, Where, When, Who y How, con práctica progresiva de 6 niveles orientada al hispanohablante.',
   lead: 'En español para preguntar puedes solo subir la entonación: ¿Estudias inglés? En inglés necesitas un auxiliar: Do you study English? Y para tercera persona: Does she study English? El auxiliar cambia; el verbo vuelve a su forma base.',
   outcomes: [

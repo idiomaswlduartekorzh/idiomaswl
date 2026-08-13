@@ -1,5 +1,11 @@
 import type { Metadata } from 'next'
 import type { GrammarTopic } from '@/data/grammar/types'
+import {
+  buildGrammarDescription,
+  buildGrammarTitle,
+  fitDescription,
+  fitTitle,
+} from '@/lib/seo-snippet'
 
 const IDIOMA_LABELS: Record<string, string> = {
   ingles: 'Inglés',
@@ -20,11 +26,19 @@ export function generateGrammarMetadata(
   const lang = IDIOMA_LABELS[idioma] ?? idioma
   const canonical = `https://www.idiomaswl.com/practica/${idioma}/${nivel}/gramatica/${topic.slug}`
 
+  // El título y la descripción del buscador se derivan; NO son `topic.metaTitle`
+  // ni `topic.description` en crudo. `description` se pinta además en el cuerpo
+  // del artículo, así que está escrita para leerse en la página: en el resultado
+  // de Google salía cortada y regalaba la respuesta. Ver `@/lib/seo-snippet`.
+  const title = buildGrammarTitle(topic)
+  const description = buildGrammarDescription(topic)
+
   return {
-    title: topic.metaTitle,
-    description: topic.description,
+    title,
+    description,
     alternates: { canonical },
     openGraph: {
+      // En redes no hay corte a 60/155: ahí sí compensa el titular largo.
       title: topic.metaTitle,
       description: topic.lead,
       type: 'website',
@@ -41,8 +55,12 @@ export function generateGrammarIndexMetadata(idioma: string, nivel: string): Met
   const lang = IDIOMA_LABELS[idioma] ?? idioma
   const canonical = `https://www.idiomaswl.com/practica/${idioma}/${nivel}/gramatica`
   return {
-    title: `Gramática ${lang} ${nivel.toUpperCase()} — Temas y ejercicios | Idiomas WeLearn`,
-    description: `Aprende gramática de ${lang} nivel ${nivel.toUpperCase()} con explicaciones de especialista y práctica progresiva de 6 niveles. Para hispanohablantes.`,
+    // Sin sufijo de marca: Google ya muestra el nombre del sitio aparte, y aquí
+    // cada carácter gastado en repetirlo es un carácter que se come el corte.
+    title: fitTitle(`Gramática de ${lang} ${nivel.toUpperCase()}: todos los temas con ejercicios`),
+    description: fitDescription(
+      `Todos los temas de gramática de ${lang} ${nivel.toUpperCase()}, cada uno con explicación para hispanohablantes y ejercicios corregidos al instante.`
+    ),
     alternates: { canonical },
     openGraph: {
       title: `Gramática ${lang} ${nivel.toUpperCase()} — Temas`,

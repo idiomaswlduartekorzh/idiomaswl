@@ -11,7 +11,7 @@ const ESCUCHA = listeningCard(
 );
 
 export const metadata: Metadata = {
-  title: 'Japonés A2 — Elige una habilidad | Idiomas WeLearn',
+  title: 'Japonés A2 — Elige una habilidad',
   description: 'Japonés A2: て-form, た-form, ～ています, ～たいです, ～ことができます, ～なければなりません. Lectura, gramática, vocabulario, escritura, habla y escucha.',
   alternates: { canonical: 'https://idiomaswl.com/practica/japones/a2' },
 };

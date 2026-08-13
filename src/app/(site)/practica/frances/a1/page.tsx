@@ -5,7 +5,7 @@ import { PracticaWABanner } from '@/components/PracticaWABanner';
 import { audioReady } from '@/data/practica/series/audio-ready';
 
 export const metadata: Metadata = {
-  title: 'Francés A1 — Elige una habilidad | Idiomas WeLearn',
+  title: 'Francés A1 — Elige una habilidad',
   description: 'Francés A1: lectura, gramática (articles, être, avoir), escritura, expresión oral, vocabulario y escucha.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/frances/a1' },
 };

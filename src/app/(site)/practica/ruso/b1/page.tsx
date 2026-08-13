@@ -11,7 +11,7 @@ const ESCUCHA = listeningCard(
 );
 
 export const metadata: Metadata = {
-  title: 'Ruso B1 — Elige una habilidad | Idiomas WeLearn',
+  title: 'Ruso B1 — Elige una habilidad',
   description: 'Ruso B1: aspectos verbales (совершенный/несовершенный), caso instrumental, genitivo plural, condicionales con бы y participios. 6 habilidades interactivas.',
   alternates: { canonical: 'https://idiomaswl.com/practica/ruso/b1' },
 };

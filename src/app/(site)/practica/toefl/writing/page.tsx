@@ -12,9 +12,9 @@ const ACCENT = '#1a4fcc';
 const ETS_TOEFL_CONTENT_URL = 'https://www.ets.org/toefl/test-takers/ibt/about/content.html';
 
 export const metadata: Metadata = {
-  title: 'TOEFL Writing: tareas actuales, mixed drills y timed practice',
+  title: 'TOEFL Writing: tareas actuales, drills y timed practice',
   description:
-    'Guía TOEFL Writing actualizada: practica Academic Discussion, Write an Email y Build a Sentence con estructura, prompts, mixed drills, timed review sets y respuestas explicadas.',
+    'Guía TOEFL Writing actualizada: Academic Discussion, Write an Email y Build a Sentence, con estructura, prompts y respuestas explicadas.',
   keywords: [
     'TOEFL writing',
     'TOEFL academic discussion',

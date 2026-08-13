@@ -11,9 +11,9 @@ const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de italiano
 const WA_CILS    = encodeURIComponent('Hola, quiero prepararme para el examen CILS o CELI con WeLearn. ¿Cuándo puedo empezar?');
 
 export const metadata: Metadata = {
-  title: 'Clases de Italiano en Bucaramanga y Online — B1 de Ciudadanía, CILS y CELI | WeLearn',
+  title: 'Clases de italiano en Bucaramanga y online — CILS y CELI',
   description:
-    'Academia de italiano en Bucaramanga con clases presenciales y online para toda Colombia. Preparación del B1 para la ciudadanía italiana, CILS y CELI de A2 hasta C2. Diagnóstico gratis.',
+    'Academia de italiano en Bucaramanga y online. Preparación del B1 para la ciudadanía italiana y de CILS y CELI, de A2 a C2. Diagnóstico gratis.',
   keywords: [
     'clases de italiano Bucaramanga',
     'academia de italiano Bucaramanga',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     'WeLearn italiano',
   ],
   openGraph: {
-    title: 'Clases de Italiano en Bucaramanga y Online — B1 de Ciudadanía | WeLearn',
+    title: 'Clases de Italiano en Bucaramanga y Online — B1 de Ciudadanía',
     description:
       'Presencial en Bucaramanga y online en toda Colombia. Preparación del B1 para la ciudadanía italiana, CILS y CELI. Diagnóstico gratis.',
     url: 'https://www.idiomaswl.com/clases-de-italiano',

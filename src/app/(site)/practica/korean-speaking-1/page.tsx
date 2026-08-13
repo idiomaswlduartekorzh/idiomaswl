@@ -4,7 +4,7 @@ import KoreanIntroSpeaking1 from './KoreanIntroSpeaking1';
 export const metadata: Metadata = {
   title: 'Coreano Introductorio 1: Mi primera presentación oral',
   description:
-    'Módulo de producción oral en coreano para principiantes. Aprende a presentarte en coreano con vocabulario guiado, constructor de frases interactivo y escala de habla progresiva.',
+    'Producción oral en coreano para principiantes: aprende a presentarte con vocabulario guiado y un constructor de frases interactivo.',
   keywords: [
     'coreano principiante', 'presentación en coreano', 'hablar coreano',
     'producción oral coreano', 'hangul principiante', '저는', 'saramieyo',

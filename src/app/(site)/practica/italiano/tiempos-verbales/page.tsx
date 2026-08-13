@@ -4,8 +4,8 @@ import type { DrillItem } from '@/components/practica/TenseDrillEngine';
 import { GrammarLessonSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
-  title: 'Tiempos verbales en italiano — Traducción guiada en vivo | Idiomas WeLearn',
-  description: 'Set de 50 oraciones en español para traducir al italiano en clase, de dificultad creciente, sin pistas. El profesor controla el tiempo y revisa la traducción junto al alumno.',
+  title: 'Tiempos verbales en italiano — Traducción guiada en vivo',
+  description: 'Cincuenta oraciones en español para traducir al italiano en clase, de dificultad creciente y sin pistas. El profesor revisa junto al alumno.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/italiano/tiempos-verbales' },
 };
 

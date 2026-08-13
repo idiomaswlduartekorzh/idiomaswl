@@ -11,9 +11,9 @@ const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de ruso en 
 const WA_BECAS   = encodeURIComponent('Hola, quiero aprender ruso para aplicar a las becas de estudio en Rusia. ¿Cómo me preparo?');
 
 export const metadata: Metadata = {
-  title: 'Clases de Ruso en Bucaramanga y Online — Desde Cero | WeLearn',
+  title: 'Clases de Ruso en Bucaramanga y Online — Desde Cero',
   description:
-    'Academia de ruso en Bucaramanga con clases presenciales y online para toda Colombia. Desde el alfabeto cirílico hasta nivel avanzado, con preparación para estudiar en Rusia. Diagnóstico gratis.',
+    'Academia de ruso en Bucaramanga y online. Del alfabeto cirílico al nivel avanzado, con preparación para estudiar en Rusia. Diagnóstico gratis.',
   keywords: [
     'clases de ruso Bucaramanga',
     'curso de ruso Bucaramanga',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     'WeLearn ruso',
   ],
   openGraph: {
-    title: 'Clases de Ruso en Bucaramanga y Online — Desde Cero | WeLearn',
+    title: 'Clases de Ruso en Bucaramanga y Online — Desde Cero',
     description:
       'Presencial en Bucaramanga y online en toda Colombia. Del alfabeto cirílico al nivel avanzado, con profesora rusoparlante. Diagnóstico gratis.',
     url: 'https://www.idiomaswl.com/clases-de-ruso',

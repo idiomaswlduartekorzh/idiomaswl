@@ -14,9 +14,9 @@ const WA_TOPIK     = encodeURIComponent('Hola, quiero prepararme para el examen 
 const WA_FUNDADOR  = encodeURIComponent('Hola, me interesa el cupo de Miembro Fundador de coreano en WeLearn. ¿Quedan cupos disponibles?');
 
 export const metadata: Metadata = {
-  title: 'Clases de Coreano en Bucaramanga y Online — TOPIK, Hangul | WeLearn',
+  title: 'Clases de Coreano en Bucaramanga y Online — TOPIK, Hangul',
   description:
-    'Academia de coreano en Bucaramanga con clases online para toda Colombia. Hangul, pronunciación, TOPIK I y II. Clases 1:1 con tutor especializado. Cupos de Miembro Fundador disponibles.',
+    'Academia de coreano en Bucaramanga y online para toda Colombia. Hangul, pronunciación y preparación TOPIK I y II, con clases 1:1.',
   keywords: [
     'clases de coreano online Colombia',
     'aprender coreano Bucaramanga',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     'WeLearn coreano',
   ],
   openGraph: {
-    title: 'Clases de Coreano en Bucaramanga y Online — WeLearn',
+    title: 'Clases de Coreano en Bucaramanga y Online',
     description:
       'Academia de coreano en Bucaramanga. Hangul, pronunciación, TOPIK I y II. Clases 1:1. 50 cupos de Miembro Fundador para toda Colombia.',
     url: 'https://www.idiomaswl.com/clases-de-coreano',

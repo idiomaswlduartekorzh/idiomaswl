@@ -11,8 +11,8 @@ const ESCUCHA = listeningCard(
 );
 
 export const metadata: Metadata = {
-  title: 'Francés B1 — Elige una habilidad | Idiomas WeLearn',
-  description: 'Francés B1: lectura, gramática (subjonctif, conditionnel, pronoms relatifs, plus-que-parfait, discours indirect), escritura, expresión oral, vocabulario y escucha.',
+  title: 'Francés B1 — Elige una habilidad',
+  description: 'Francés B1: subjonctif, conditionnel, pronoms relatifs y discours indirect, con lectura, escritura, expresión oral, vocabulario y escucha.',
   alternates: { canonical: 'https://idiomaswl.com/practica/frances/b1' },
 };
 

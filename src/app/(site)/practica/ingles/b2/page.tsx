@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Inglés B2 — Elige una habilidad | Idiomas WeLearn',
+  title: 'Inglés B2 — Elige una habilidad',
   description: 'Inglés B2: Use of English (Multiple Choice Cloze + Word Formation), Reading, Writing y más. Preparación FCE Cambridge y ICFES Saber 11.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ingles/b2' },
 };

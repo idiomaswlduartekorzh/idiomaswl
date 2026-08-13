@@ -5,7 +5,7 @@ import { PracticaWABanner } from '@/components/PracticaWABanner';
 import { audioReady } from '@/data/practica/series/audio-ready';
 
 export const metadata: Metadata = {
-  title: 'Japonés A1 — Elige una habilidad | Idiomas WeLearn',
+  title: 'Japonés A1 — Elige una habilidad',
   description: 'Japonés A1: Hiragana, Katakana, ～は～です, あります/います, números y vocabulario esencial. Todo con romaji.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/japones/a1' },
 };

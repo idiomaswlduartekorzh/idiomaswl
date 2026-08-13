@@ -7,7 +7,7 @@ const DESCRIPTION =
   'Identifica los 5 tipos de ensayo del IELTS Writing Task 2 —opinión, discusión, problema-solución, ventajas-desventajas y doble pregunta— por la instrucción final del enunciado. 10 enunciados con corrección por opción y 3 ensayos que respondieron a la pregunta equivocada.';
 
 export const metadata: Metadata = {
-  title: 'IELTS Writing Task 2 — Tipos de Ensayo — Opinion, Discussion, Problem-Solution',
+  title: 'Tipos de ensayo del IELTS Writing Task 2, uno por uno',
   description: DESCRIPTION,
   keywords: ['IELTS task 2 tipos', 'IELTS opinion essay', 'IELTS discussion essay', 'IELTS writing task 2 tipos de ensayo'],
   openGraph: {

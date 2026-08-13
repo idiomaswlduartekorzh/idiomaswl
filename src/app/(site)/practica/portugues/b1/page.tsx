@@ -11,7 +11,7 @@ const ESCUCHA = listeningCard(
 );
 
 export const metadata: Metadata = {
-  title: 'Portugués B1 — Elige una habilidad | Idiomas WeLearn',
+  title: 'Portugués B1 — Elige una habilidad',
   description: 'Portugués B1: o subjuntivo, o condicional, a voz passiva, pronomes relativos e discurso indireto. Exercícios interativos para o nível intermediário.',
   alternates: { canonical: 'https://idiomaswl.com/practica/portugues/b1' },
 };

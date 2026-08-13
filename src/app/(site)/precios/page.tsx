@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import PreciosClient from './PreciosClient';
 
 export const metadata: Metadata = {
-  title: 'Planes y Precios — Inglés, Coreano, IELTS, TOEFL | WeLearn',
+  title: 'Planes y Precios — Inglés, Coreano, IELTS, TOEFL',
   description:
-    'Planes accesibles para preparar IELTS, TOEFL, ICFES, Goethe, DELF y más. Simulacros ilimitados, feedback por sección y clases 1:1 con tutor. Empieza con 3 días gratis.',
+    'Planes para preparar IELTS, TOEFL, ICFES, Goethe y DELF: simulacros ilimitados, feedback por sección y clases 1:1. Empieza con 3 días gratis.',
   keywords: [
     'precio curso inglés Colombia',
     'precio clases idiomas online',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     'clases idiomas baratos Colombia',
   ],
   openGraph: {
-    title: 'Planes y Precios — Idiomas WeLearn',
+    title: 'Planes y Precios',
     description:
       'Planes desde $50.000/mes para inglés, coreano, francés, alemán y más. Simulacros ilimitados + tutor 1:1.',
     url: 'https://www.idiomaswl.com/precios',

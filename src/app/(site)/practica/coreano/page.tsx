@@ -4,7 +4,7 @@ import KoreanToolsClient from './KoreanToolsClient';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
-  title: 'Práctica de Coreano — Elige tu nivel TOPIK | Idiomas WeLearn',
+  title: 'Práctica de Coreano — Elige tu nivel TOPIK',
   description: 'Ejercicios interactivos de coreano por nivel. Gramática A1, A2 y B1: Hangul, partículas, verbos y conectores TOPIK.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/coreano' },
 };

@@ -93,7 +93,7 @@ export const metadata: Metadata = {
     'IELTS writing band 7',
   ],
   openGraph: {
-    title: 'IELTS Writing rúbrica y checklist de autoevaluación | Idiomas WeLearn',
+    title: 'IELTS Writing rúbrica y checklist de autoevaluación',
     description:
       'Aprende a revisar IELTS Writing Task 1 y Task 2 con criterios pedagógicos, diagnóstico y checklist.',
     type: 'website',

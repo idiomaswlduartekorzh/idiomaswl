@@ -8,7 +8,7 @@ import styles from '../icfes-learning.module.css';
 const CANONICAL = 'https://www.idiomaswl.com/practica/icfes-saber-11/vocabulario';
 
 export const metadata: Metadata = {
-  title: 'Vocabulario para ICFES Inglés: palabras, conectores y práctica',
+  title: 'Vocabulario de inglés para el ICFES: palabras y conectores',
   description: `Estudia ${ICFES_VOCABULARY.length} palabras y conectores útiles para Inglés ICFES Saber 11 con tarjetas, ejemplos y progreso local gratuito.`,
   alternates: { canonical: CANONICAL },
   openGraph: {

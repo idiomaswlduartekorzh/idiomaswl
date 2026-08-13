@@ -9,7 +9,7 @@ const CANONICAL = `${BASE}/practica/icfes-saber-11`;
 
 export const metadata: Metadata = {
   title: 'ICFES Inglés Saber 11: guía, 7 partes, práctica y simulacros',
-  description: 'Superhub gratuito para preparar Inglés ICFES Saber 11: estructura oficial de 7 partes, ejercicios guiados con feedback, vocabulario, gramática y cuadernillos.',
+  description: 'Superhub gratuito de inglés ICFES Saber 11: las 7 partes oficiales, ejercicios guiados con corrección, vocabulario, gramática y cuadernillos.',
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: 'ICFES Inglés Saber 11: aprende y practica las 7 partes',

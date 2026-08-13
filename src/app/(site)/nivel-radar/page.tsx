@@ -6,7 +6,7 @@ const WA = '573005004253';
 const WA_MSG = encodeURIComponent('Hola, quiero saber cuál es mi nivel real de inglés y cómo avanzar con WeLearn.');
 
 export const metadata: Metadata = {
-  title: 'Nivel Radar — ¿Cuál es tu nivel real de inglés? | WeLearn',
+  title: 'Nivel Radar — ¿Cuál es tu nivel real de inglés?',
   description:
     'Diagnóstico adaptativo de inglés entre A1 y C2. Lectura, escucha, vocabulario y uso de la lengua con resultado orientativo inmediato.',
   keywords: [

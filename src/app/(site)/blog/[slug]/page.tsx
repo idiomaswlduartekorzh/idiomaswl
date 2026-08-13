@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { BLOG_POSTS, getPostBySlug, getAllSlugs } from '@/data/blog';
+import { fitDescription, fitTitle } from '@/lib/seo-snippet';
 import { BlogScrollCapture } from '@/components/BlogScrollCapture';
 import s from './page.module.css';
 
@@ -18,11 +19,20 @@ export async function generateMetadata(
   const post = getPostBySlug(slug);
   if (!post) return {};
 
+  // El titular del artículo se escribe para leerse en la página, donde no hay
+  // límite de ancho; Google corta sobre los 60 caracteres. De los 114 artículos,
+  // 113 títulos y 77 descripciones no cabían y salían cortados a mitad de
+  // palabra. `metaTitle`/`metaDescription` permiten escribir la versión corta a
+  // mano; si no existen, se ajusta la larga en vez de dejarla romperse.
+  const title = fitTitle(post.metaTitle ?? post.title);
+  const description = fitDescription(post.metaDescription ?? post.description);
+
   return {
-    title: post.title,
-    description: post.description,
+    title,
+    description,
     keywords: post.tags,
     openGraph: {
+      // En redes sociales no hay corte: ahí sí cabe el titular entero.
       title: post.title,
       description: post.description,
       url: `https://www.idiomaswl.com/blog/${post.slug}`,

@@ -5,7 +5,7 @@ import { EXAM_LIST } from '@/data/exams';
 export const metadata: Metadata = {
   title: 'Simulacros de Certificación Internacional',
   description:
-    'Simulacros completos de TOEFL iBT, IELTS, Cambridge B2 First (FCE), ICFES Saber 11, Goethe-Zertifikat, DELF/DALF, CILS/CELI y CELPE-Bras. Practica con preguntas reales y feedback inmediato.',
+    'Simulacros completos de TOEFL iBT, IELTS, Cambridge B2 First, ICFES Saber 11, Goethe, DELF/DALF, CILS y Celpe-Bras, con resultado inmediato.',
   keywords: [
     'TOEFL iBT simulacro', 'IELTS práctica online', 'ICFES Saber 11 inglés',
     'Cambridge B2 First FCE Colombia', 'FCE simulacro gratis',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     'examen de inglés preparación',
   ],
   openGraph: {
-    title: 'Simulacros de Certificación — Idiomas WeLearn',
+    title: 'Simulacros de Certificación',
     description: 'TOEFL, IELTS, ICFES y más. Simulacros completos con feedback de IA.',
     url: 'https://www.idiomaswl.com/examenes',
   },

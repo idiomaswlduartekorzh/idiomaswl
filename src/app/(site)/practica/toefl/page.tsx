@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import TOEFLHubClient from './TOEFLHubClient';
 
 export const metadata: Metadata = {
-  title: 'Práctica TOEFL — Reading Multiple Choice | Idiomas WeLearn',
+  title: 'Práctica TOEFL — Reading Multiple Choice',
   description: 'Practica TOEFL iBT Reading con pasaje académico real, 6 preguntas de opción múltiple y feedback inmediato con explicaciones detalladas.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/toefl' },
 };

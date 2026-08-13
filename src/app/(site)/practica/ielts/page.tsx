@@ -3,7 +3,7 @@ import IELTSHubClient from './IELTSHubClient';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
-  title: 'IELTS Practice: Academic, General Training, Reading and Writing',
+  title: 'IELTS Practice: Academic, General Training, Reading',
   description:
     'Practise IELTS with Academic and General Training routes, Reading question types, skill practice, and explained Writing Task 1 and Task 2 exercises.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ielts' },

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
-  title: 'Práctica de Portugués — Elige tu nivel MCER | Idiomas WeLearn',
+  title: 'Práctica de Portugués — Elige tu nivel MCER',
   description: 'Ejercicios interactivos de portugués por nivel: A1 disponible con lectura, gramática, escritura, habla, vocabulario y escucha.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/portugues' },
 };

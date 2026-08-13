@@ -22,7 +22,7 @@ const independentPassage = getSentenceEndingPassage(SENTENCE_ENDINGS_INDEPENDENT
 // Scaling contract: docs/ielts-reading-practice-engine-blueprint.md
 
 export const metadata: Metadata = {
-  title: 'IELTS Matching Sentence Endings: Method, Practice and Progress',
+  title: 'IELTS Matching Sentence Endings: method and practice',
   description: DESCRIPTION,
   keywords: ROUTE.keywords,
   alternates: { canonical: `${PRACTICE_BASE_URL}${ROUTE.path}` },

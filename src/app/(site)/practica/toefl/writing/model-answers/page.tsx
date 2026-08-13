@@ -33,7 +33,7 @@ const FAQS = [
 export const metadata: Metadata = {
   title: 'TOEFL Writing model answers y respuestas calificadas',
   description:
-    'Estudia TOEFL Writing con model answers originales, variantes calificadas WeLearn y explicación para Build a Sentence, Write an Email y Academic Discussion.',
+    'TOEFL Writing con model answers originales, variantes calificadas y explicación para Build a Sentence, Write an Email y Academic Discussion.',
   keywords: [
     'TOEFL writing model answers',
     'TOEFL writing scored responses',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     'TOEFL writing sample responses',
   ],
   openGraph: {
-    title: 'TOEFL Writing model answers y scored variants | Idiomas WeLearn',
+    title: 'TOEFL Writing model answers y scored variants',
     description:
       'Model answers originales y variantes calificadas WeLearn para TOEFL Writing actual.',
     url: URL,

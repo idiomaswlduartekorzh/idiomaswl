@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import { Task2SkillStructuredData } from '../Task2SkillStructuredData'
 
 export const metadata: Metadata = {
-  title: 'Conectores en inglés: las 7 familias con ejemplos y ejercicios',
-  description: 'Conectores de adición, contraste, causa-efecto, ejemplo, concesión, comparación y conclusión. Dónde va cada uno, con qué puntuación, y ejercicios corregidos.',
+  title: 'Conectores en inglés: las 7 familias, con ejercicios',
+  description: 'Conectores de adición, contraste, causa-efecto, ejemplo, concesión, comparación y conclusión: dónde va cada uno y con qué puntuación.',
   keywords: ['IELTS linking words', 'IELTS conectores académicos', 'IELTS cohesion task 2', 'IELTS vocabulary linking'],
   openGraph: {
     title: 'Conectores en inglés: las 7 familias con ejemplos y ejercicios',

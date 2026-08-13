@@ -15,7 +15,7 @@ const SMART_COLOR = '#0f3d8c';
 export const metadata: Metadata = {
   title: 'Ejercicios ICFES Inglés: Sinónimos e Inferencia | Saber 11',
   description:
-    'Practica sinónimos, vocabulario en contexto, paráfrasis e inferencia para el componente de inglés del ICFES Saber 11. Ejercicios gratis con pistas y explicación inmediata.',
+    'Sinónimos, vocabulario en contexto, paráfrasis e inferencia para el inglés del ICFES Saber 11. Ejercicios gratis con pistas y explicación inmediata.',
   keywords: [
     'ejercicios ICFES ingles',
     'sinonimos ICFES ingles',

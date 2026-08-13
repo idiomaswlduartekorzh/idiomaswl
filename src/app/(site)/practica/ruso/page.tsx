@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
-  title: 'Práctica de Ruso — Elige tu nivel MCER | Idiomas WeLearn',
+  title: 'Práctica de Ruso — Elige tu nivel MCER',
   description: 'Ejercicios interactivos de ruso por nivel MCER. A1, A2 y B1 con gramática, casos, verbos de movimiento y práctica progresiva.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ruso' },
 };

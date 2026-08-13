@@ -1,7 +1,20 @@
 export interface BlogPost {
   slug: string;
+  /** Titular del artículo. Se pinta como <h1>, donde no hay límite de ancho. */
   title: string;
+  /** Entradilla del artículo. Se pinta en la portada y en la cabecera del post. */
   description: string;
+  /**
+   * Título y descripción para el resultado de búsqueda, cuando el titular del
+   * artículo no cabe en los ~60 / ~155 caracteres que muestra Google.
+   *
+   * Si se dejan vacíos, `title` y `description` se ajustan solos (ver
+   * `src/lib/seo-snippet.ts`), lo cual evita que salgan cortados pero pierde
+   * matices. Vale la pena escribirlos a mano en los artículos que ya reciben
+   * impresiones: ahí cada punto de CTR es tráfico real.
+   */
+  metaTitle?: string;
+  metaDescription?: string;
   date: string; // ISO format
   updatedDate?: string;
   readTime: number; // minutes
@@ -17,6 +30,9 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Cómo sacar Band 7 en el IELTS: guía práctica para hispanohablantes',
     description:
       'Todo lo que necesitas saber para alcanzar Band 7 en el IELTS: qué mide cada sección, cuánto tiempo necesitas y el plan de estudio semana a semana.',
+    metaTitle: 'Cómo sacar Band 7 en el IELTS: guía para hispanohablantes',
+    metaDescription:
+      'Qué mide cada sección del IELTS, cuánto tiempo necesitas de verdad y el plan de estudio semana a semana para llegar a Band 7.',
     date: '2026-05-01',
     updatedDate: '2026-05-30',
     readTime: 9,
@@ -116,6 +132,9 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Cuántos puntos necesitas en inglés del ICFES y cómo subirlos',
     description:
       'Qué mide el componente de inglés del ICFES Saber 11, cuál es el puntaje que piden las universidades colombianas y el plan de estudio más eficiente para subir de nivel.',
+    metaTitle: 'Cuántos puntos necesitas en inglés del ICFES',
+    metaDescription:
+      'Qué mide el inglés del ICFES Saber 11, qué puntaje piden las universidades colombianas y el plan más corto para subir de nivel.',
     date: '2026-05-08',
     updatedDate: '2026-08-03',
     readTime: 7,
@@ -200,6 +219,9 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Aprender coreano desde cero en Colombia: la guía completa para 2026',
     description:
       'Todo lo que necesitas saber para comenzar a aprender coreano en Colombia: alfabeto, recursos gratuitos, examen TOPIK y por qué cada vez más colombianos estudian este idioma.',
+    metaTitle: 'Aprender coreano desde cero en Colombia: guía 2026',
+    metaDescription:
+      'Por dónde empezar con el coreano en Colombia: el alfabeto, recursos gratuitos, cómo encaja el TOPIK y cuánto se tarda en cada etapa.',
     date: '2026-05-15',
     updatedDate: '2026-05-30',
     readTime: 11,
@@ -302,6 +324,9 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'TOEFL iBT: guía de preparación desde cero para colombianos',
     description:
       'Todo lo que necesitas saber sobre el TOEFL iBT: estructura del examen, puntaje mínimo para cada objetivo, diferencias con el IELTS y plan de estudio de 10 semanas.',
+    metaTitle: 'TOEFL iBT: guía de preparación desde cero',
+    metaDescription:
+      'Estructura del examen, qué puntaje pide cada objetivo, en qué se diferencia del IELTS y un plan de estudio de diez semanas.',
     date: '2026-05-20',
     updatedDate: '2026-05-30',
     readTime: 8,
@@ -401,6 +426,9 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'TOPIK I: cómo prepararlo desde cero y pasar al primer intento',
     description:
       'Guía completa del TOPIK I para hispanohablantes: qué evalúa, cómo se califica, materiales gratuitos y plan de estudio de 8 semanas para obtener el nivel 1 o 2.',
+    metaTitle: 'TOPIK I: cómo prepararlo desde cero y aprobar',
+    metaDescription:
+      'Qué evalúa el TOPIK I, cómo se califica, qué materiales gratuitos sirven y un plan de ocho semanas para alcanzar el nivel 1 o 2.',
     date: '2026-05-22',
     updatedDate: '2026-05-30',
     readTime: 7,
@@ -604,6 +632,9 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Inglés para trabajar en empresas multinacionales en Colombia: nivel, certificaciones y cómo lograrlo',
     description:
       'Qué nivel de inglés exigen Samsung, Deloitte, Accenture y otras multinacionales en Colombia, qué certificaciones tienen más peso y el plan realista para llegar ahí.',
+    metaTitle: 'Inglés para multinacionales en Colombia: qué nivel piden',
+    metaDescription:
+      'Qué nivel exigen Samsung, Deloitte, Accenture y otras multinacionales en Colombia, qué certificaciones pesan más y el plan para llegar.',
     date: '2026-05-28',
     updatedDate: '2026-05-30',
     readTime: 8,
@@ -790,6 +821,9 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Cómo aprender idiomas con series y películas: lo que funciona y lo que no',
     description:
       'La guía honesta sobre aprender idiomas con Netflix y K-dramas: qué funciona según la lingüística, cómo estructurar la práctica y por qué hacerlo sin método no da resultados.',
+    metaTitle: 'Aprender idiomas con series: qué funciona y qué no',
+    metaDescription:
+      'Qué dice la lingüística sobre aprender con Netflix y K-dramas, cómo estructurar la práctica y por qué sin método no da resultado.',
     date: '2026-05-29',
     readTime: 7,
     category: 'Coreano',
@@ -967,6 +1001,9 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Cómo mejorar el inglés hablado: por qué te bloqueas al hablar y cómo superarlo',
     description:
       'La guía honesta para hispanohablantes que entienden inglés pero se bloquean al hablarlo. Por qué ocurre el bloqueo, qué no funciona y los ejercicios específicos que sí ayudan.',
+    metaTitle: 'Por qué te bloqueas al hablar inglés y cómo superarlo',
+    metaDescription:
+      'Entiendes inglés pero te trabas al hablarlo. Por qué ocurre ese bloqueo, qué no funciona para quitarlo y los ejercicios que sí ayudan.',
     date: '2026-05-29',
     readTime: 8,
     category: 'IELTS',
@@ -1094,6 +1131,9 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Cómo prepararse para el IELTS en 3 meses: plan semana a semana',
     description:
       'Plan de preparación de 12 semanas para el IELTS desde nivel B1. Incluye distribución de tiempo por sección, recursos recomendados y los errores más comunes que cuestan medio Band.',
+    metaTitle: 'IELTS en 3 meses: plan de estudio semana a semana',
+    metaDescription:
+      'Plan de doce semanas desde nivel B1: cuánto tiempo dedicar a cada sección, qué recursos usar y los errores que cuestan medio Band.',
     date: '2026-05-30',
     readTime: 10,
     category: 'IELTS',
@@ -1203,6 +1243,9 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Niveles de inglés del ICFES: qué significa Pre A1, A1, A2 y B1',
     description:
       'Guía actualizada del componente de inglés del ICFES: qué evalúa, cómo se organiza y qué significan los niveles Pre A1, A1, A2 y B1.',
+    metaTitle: 'Niveles de inglés del ICFES Saber 11, explicados',
+    metaDescription:
+      'Qué significan Pre A1, A1, A2 y B1 en el ICFES, cuántos puntos necesita cada uno y qué estudiar para subir al siguiente nivel.',
     date: '2026-05-30',
     readTime: 8,
     category: 'ICFES',
@@ -1294,6 +1337,9 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Migrar a Canadá desde Colombia: qué puntaje de IELTS necesitas según la visa',
     description:
       'Guía completa sobre los requisitos de inglés para las principales vías de migración a Canadá desde Colombia: Express Entry, PNP y estudio. Qué puntaje de IELTS se necesita y cómo prepararse.',
+    metaTitle: 'Migrar a Canadá: qué puntaje de IELTS pide cada visa',
+    metaDescription:
+      'Requisitos de inglés de Express Entry, los PNP y la vía de estudio, con el puntaje IELTS de cada una y cómo prepararlo desde Colombia.',
     date: '2026-05-30',
     readTime: 9,
     category: 'IELTS',
@@ -1448,6 +1494,9 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
     title: 'TOEFL iBT: estrategias específicas para cada sección y cómo llegar a 100 puntos',
     description:
       'Guía práctica de estrategias para las cuatro secciones del TOEFL iBT: Reading, Listening, Speaking y Writing. Los errores más caros y cómo evitarlos para alcanzar 100+ puntos.',
+    metaTitle: 'TOEFL iBT: estrategias sección por sección',
+    metaDescription:
+      'Qué hacer en Reading, Listening, Speaking y Writing del TOEFL iBT, los errores que más puntos cuestan y cómo apuntar a los 100.',
     date: '2026-05-30',
     readTime: 9,
     category: 'TOEFL',
@@ -1613,6 +1662,9 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
     title: 'Inglés para trabajar en Estados Unidos: qué certificación necesitas y cómo llegar',
     description:
       'Guía completa para colombianos que quieren trabajar en EE.UU.: qué puntaje de inglés piden las visas de trabajo, qué certifica el IELTS vs TOEFL para empleadores americanos y cuánto tiempo toma.',
+    metaTitle: 'Inglés para trabajar en Estados Unidos: qué nivel piden',
+    metaDescription:
+      'Qué nivel de inglés exige cada visa de trabajo a EE. UU., si te sirve el IELTS o el TOEFL, y cómo acreditarlo desde Colombia.',
     date: '2026-05-31',
     readTime: 8,
     category: 'IELTS',
@@ -1692,6 +1744,9 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
     title: 'Cuánto cuesta el IELTS en Colombia 2026: precios, sedes y qué incluye',
     description:
       'Todo lo que necesitas saber sobre el costo del IELTS en Colombia en 2026: precio oficial por ciudad, sedes en Bogotá, Medellín, Cali y Bucaramanga, qué incluye y cómo ahorrar en la preparación.',
+    metaTitle: 'Cuánto cuesta el IELTS en Colombia en 2026',
+    metaDescription:
+      'Precio oficial del IELTS por ciudad en 2026, qué incluye la inscripción, sedes en Bogotá, Medellín, Cali y Bucaramanga, y cuándo conviene pagarlo.',
     date: '2026-05-31',
     readTime: 6,
     category: 'IELTS',
@@ -1763,6 +1818,9 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
     title: 'Inglés para enfermeras colombianas: qué certificación necesitan para trabajar en el exterior',
     description:
       'Guía completa para enfermeras colombianas que quieren trabajar en EE.UU., Canadá, UK o España: requisitos de inglés por país, exámenes como NCLEX y CGFNS, y qué puntaje de IELTS se exige.',
+    metaTitle: 'Inglés para enfermeras: qué certificación necesitas',
+    metaDescription:
+      'Requisitos de inglés por país para enfermeras colombianas en EE. UU., Canadá, Reino Unido y España, con NCLEX, CGFNS y el puntaje IELTS.',
     date: '2026-05-31',
     readTime: 9,
     category: 'IELTS',
@@ -1840,6 +1898,9 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
     title: 'TOPIK I vs TOPIK II: diferencias, qué evalúa cada uno y cuál debes tomar',
     description:
       'Todo sobre el examen TOPIK de coreano: diferencia entre TOPIK I (niveles 1-2) y TOPIK II (niveles 3-6), qué se evalúa en cada uno, cuándo presentar cada nivel y cómo prepararse.',
+    metaTitle: 'TOPIK I o TOPIK II: cuál te toca presentar',
+    metaDescription:
+      'En qué se diferencian el TOPIK I y el TOPIK II, qué niveles otorga cada uno, cómo se califican y cuál necesitas según tu objetivo.',
     date: '2026-05-31',
     readTime: 7,
     category: 'Coreano',
@@ -1932,6 +1993,9 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
     title: 'Clases de inglés online en Colombia: qué considerar al elegir tu academia',
     description:
       'Guía para elegir bien un curso de inglés online en Colombia: qué diferencia una academia seria de una que solo entretiene, qué preguntar antes de pagar y cuáles son las señales de alerta.',
+    metaTitle: 'Clases de inglés online en Colombia: cómo elegir',
+    metaDescription:
+      'Qué separa a una academia seria de una que solo entretiene, qué preguntar antes de pagar y las señales de alerta que conviene mirar.',
     date: '2026-05-31',
     readTime: 7,
     category: 'IELTS',
@@ -2071,6 +2135,9 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
     title: 'Migrar a Australia desde Colombia: qué puntaje de IELTS necesitas según la visa',
     description:
       'Guía actualizada de los requisitos de inglés para las principales vías de migración a Australia desde Colombia en 2026: Skilled Independent, employer-sponsored y estudios con IELTS.',
+    metaTitle: 'Migrar a Australia: qué puntaje de IELTS necesitas',
+    metaDescription:
+      'Requisitos de inglés en 2026 para Skilled Independent, las vías con patrocinio del empleador y el visado de estudios, desde Colombia.',
     date: '2026-05-31',
     readTime: 8,
     category: 'IELTS',
@@ -2150,6 +2217,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'Goethe-Zertifikat en Colombia: niveles, precios, centros y cómo prepararse',
     description:
       'Todo sobre el Goethe-Zertifikat en Colombia: qué mide cada nivel (A1 a C2), cuánto cuesta, dónde presentarlo y cómo prepararse desde cero.',
+    metaTitle: 'Goethe-Zertifikat en Colombia: niveles y precios',
+    metaDescription:
+      'Qué mide cada nivel del Goethe, de A1 a C2, cuánto cuesta el examen en Colombia, dónde presentarlo y cómo prepararlo desde cero.',
     date: '2026-05-30',
     readTime: 8,
     category: 'Alemán',
@@ -2221,6 +2291,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'Celpe-Bras: qué es, requisitos y cómo prepararse desde Colombia',
     description:
       'Todo sobre el Celpe-Bras — el único certificado oficial de portugués brasileño reconocido para universidades, empleos y homologación de títulos en Brasil.',
+    metaTitle: 'Celpe-Bras: qué es y cómo prepararse desde Colombia',
+    metaDescription:
+      'El único certificado oficial de portugués brasileño que valen universidades, empleos y homologaciones en Brasil. Requisitos y preparación.',
     date: '2026-05-30',
     readTime: 7,
     category: 'Portugués',
@@ -2273,6 +2346,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'Cómo aprender un idioma más rápido: lo que dice la ciencia (y lo que no funciona)',
     description:
       'La neurociencia del aprendizaje de idiomas explicada sin tecnicismos: qué hace que tu cerebro retenga vocabulario, por qué la gramática aislada no sirve y cómo estructurar tu práctica diaria.',
+    metaTitle: 'Cómo aprender un idioma más rápido, según la ciencia',
+    metaDescription:
+      'Qué hace que el cerebro retenga vocabulario, por qué la gramática aislada no sirve y cómo ordenar la práctica diaria para avanzar.',
     date: '2026-05-30',
     readTime: 10,
     category: 'Método',
@@ -2331,6 +2407,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'IELTS Writing Task 1: cómo describir gráficas y alcanzar Band 7',
     description:
       'Guía completa del IELTS Academic Writing Task 1: cómo estructurar la respuesta, qué vocabulario usar para cada tipo de gráfica y los errores que bajan el puntaje.',
+    metaTitle: 'IELTS Writing Task 1: describir gráficas para Band 7',
+    metaDescription:
+      'Cómo estructurar la respuesta, qué vocabulario usar en cada tipo de gráfica y los errores que hunden el puntaje del Academic Task 1.',
     date: '2026-05-30',
     readTime: 9,
     category: 'IELTS',
@@ -2407,6 +2486,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'DELF y DALF: la guía completa para colombianos que quieren certificar su francés',
     description:
       'Todo sobre el DELF y el DALF en Colombia: diferencias entre los niveles, dónde presentarlo, cuánto cuesta y cómo prepararse para aprobarlo en el primer intento.',
+    metaTitle: 'DELF y DALF: guía para certificar tu francés',
+    metaDescription:
+      'Diferencias entre niveles, dónde presentarlo en Colombia, cuánto cuesta y cómo prepararse para aprobarlo en el primer intento.',
     date: '2026-05-30',
     readTime: 8,
     category: 'Francés',
@@ -2524,6 +2606,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     slug: 'cuanto-cuesta-aprender-ingles-colombia-2026',
     title: '¿Cuánto cuesta aprender inglés en Colombia en 2026? (Guía de precios real)',
     description: 'Comparativa honesta de precios para aprender inglés en Colombia: academias presenciales, apps, clases online y el costo-beneficio real de cada opción.',
+    metaTitle: 'Cuánto cuesta aprender inglés en Colombia en 2026',
+    metaDescription:
+      'Comparativa honesta de precios en Colombia: academias presenciales, apps, clases online y el costo-beneficio real de cada opción.',
     date: '2026-05-30',
     readTime: 8,
     category: 'Método',
@@ -2576,6 +2661,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     slug: 'topik-ii-como-subir-de-nivel',
     title: 'TOPIK II: cómo pasar del nivel 2 al nivel 4 en coreano',
     description: 'Si ya tienes TOPIK I nivel 2, el siguiente paso es TOPIK II. Aquí la diferencia real entre los niveles, los temas más difíciles y el plan de estudio para subir.',
+    metaTitle: 'TOPIK II: cómo pasar del nivel 2 al nivel 4',
+    metaDescription:
+      'La diferencia real entre los niveles del TOPIK II, los temas donde más gente se atasca y el plan de estudio para subir.',
     date: '2026-05-30',
     readTime: 9,
     category: 'Coreano',
@@ -2661,6 +2749,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     slug: 'ingles-para-trabajo-remoto-empleadores-globales',
     title: 'Entrevistas de trabajo remoto en inglés: cómo responder y qué evitar',
     description: 'El inglés para trabajo remoto es diferente al inglés para un examen. Aquí las habilidades concretas que buscan los empleadores globales y cómo desarrollarlas.',
+    metaTitle: 'Entrevistas de trabajo remoto en inglés: qué evitar',
+    metaDescription:
+      'El inglés de una entrevista remota no es el de un examen. Qué habilidades buscan los empleadores globales y cómo desarrollarlas.',
     date: '2026-05-30',
     readTime: 8,
     category: 'Inglés',
@@ -2776,6 +2867,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'IELTS Reading: estrategias para alcanzar Band 7 sin leer todo el texto',
     description:
       'Guía completa de estrategias para el IELTS Reading: los 5 tipos de pregunta más difíciles, cómo gestionar el tiempo y los errores que bajan el Band en hispanohablantes.',
+    metaTitle: 'IELTS Reading: llegar a Band 7 sin leer todo el texto',
+    metaDescription:
+      'Los cinco tipos de pregunta más difíciles, cómo repartir el tiempo entre los tres pasajes y los fallos típicos del hispanohablante.',
     date: '2026-05-30',
     readTime: 8,
     category: 'IELTS',
@@ -2880,6 +2974,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'IELTS Speaking: cómo preparar las 3 partes y alcanzar Band 7',
     description:
       'Guía práctica para el IELTS Speaking: qué evalúan en cada parte, los errores que más bajan el Band en hispanohablantes y el plan de práctica semana a semana para alcanzar 7.0.',
+    metaTitle: 'IELTS Speaking: cómo preparar las tres partes',
+    metaDescription:
+      'Qué evalúan en cada parte, los errores que más bajan la banda en hispanohablantes y un plan de práctica semana a semana para el 7.0.',
     date: '2026-05-30',
     readTime: 9,
     category: 'IELTS',
@@ -2999,6 +3096,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'CILS y CELI: la guía completa para certificar tu italiano desde Colombia',
     description:
       'Todo sobre el CILS y el CELI en Colombia: qué nivel necesitas, dónde presentarlo, cuánto cuesta y cómo prepararte para aprobar la certificación oficial de italiano.',
+    metaTitle: 'CILS y CELI: certificar tu italiano desde Colombia',
+    metaDescription:
+      'Qué nivel de italiano necesitas, en qué se diferencian el CILS y el CELI, dónde presentarlos en Colombia, cuánto cuestan y cómo prepararte.',
     date: '2026-05-30',
     readTime: 8,
     category: 'Italiano',
@@ -3096,6 +3196,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'Clases de coreano online en Colombia: guía para elegir bien y no perder tiempo',
     description:
       'Cómo elegir clases de coreano online en Colombia: qué diferencia una academia seria de un curso genérico, qué preguntar antes de pagar y cómo saber si el método funciona para tu objetivo.',
+    metaTitle: 'Clases de coreano online en Colombia: cómo elegir',
+    metaDescription:
+      'Qué separa a una academia seria de un curso genérico, qué preguntar antes de pagar y cómo saber si el método sirve para tu objetivo.',
     date: '2026-05-30',
     readTime: 7,
     category: 'Coreano',
@@ -3177,6 +3280,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: '¿Cuánto cuesta aprender coreano en Colombia en 2026? Guía de precios honesta',
     description:
       'Precios reales de aprender coreano en Colombia en 2026: apps, tutores freelance, academias online y presenciales. Qué incluye cada opción y cuál es la mejor relación costo-resultado.',
+    metaTitle: 'Cuánto cuesta aprender coreano en Colombia en 2026',
+    metaDescription:
+      'Precios reales de apps, tutores freelance y academias online y presenciales, con qué incluye cada opción y cuál rinde más.',
     date: '2026-05-30',
     readTime: 7,
     category: 'Coreano',
@@ -3255,6 +3361,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'Clases de alemán online en Colombia: guía para elegir bien y avanzar de verdad',
     description:
       'Cómo elegir clases de alemán online en Colombia: qué diferencia a un buen programa, qué exige el Goethe-Zertifikat y cuánto tiempo necesitas para alcanzar el nivel que necesitas para trabajar o migrar a Alemania.',
+    metaTitle: 'Clases de alemán online en Colombia: cómo elegir',
+    metaDescription:
+      'Qué distingue a un buen programa de alemán, qué exige el Goethe-Zertifikat y cuánto tiempo real necesitas para trabajar o migrar.',
     date: '2026-05-30',
     readTime: 7,
     category: 'Alemán',
@@ -3332,6 +3441,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'Clases de francés online en Colombia: guía para elegir bien y llegar al DELF',
     description:
       'Cómo elegir clases de francés online en Colombia: qué diferencia un buen programa, qué exige el DELF B2 y cuánto tiempo necesitas para alcanzar el nivel que necesitas para estudiar o trabajar en países francófonos.',
+    metaTitle: 'Clases de francés online en Colombia: cómo elegir',
+    metaDescription:
+      'Qué distingue a un buen programa de francés online, qué exige el DELF B2 y cuánto tiempo real necesitas para llegar a ese nivel.',
     date: '2026-05-30',
     readTime: 7,
     category: 'Francés',
@@ -3402,6 +3514,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'Clases de italiano online en Colombia: guía para elegir bien',
     description:
       'Cómo elegir clases de italiano online en Colombia: qué diferencia un programa serio de uno genérico, cuánto tiempo necesitas para el CILS y por qué el italiano es el idioma más accesible para hispanohablantes.',
+    metaTitle: 'Clases de italiano online en Colombia: cómo elegir',
+    metaDescription:
+      'Cómo distinguir un programa serio de uno genérico, cuánto tiempo necesitas para el CILS y qué debe incluir una clase de italiano online.',
     date: '2026-05-30',
     readTime: 6,
     category: 'Italiano',
@@ -3466,6 +3581,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'Clases de portugués online en Colombia: guía para elegir bien',
     description:
       'Cómo elegir clases de portugués online en Colombia: qué diferencia un programa serio, cuánto tiempo necesitas para el Celpe-Bras y por qué el portugués brasileño es estratégico para colombianos en 2026.',
+    metaTitle: 'Clases de portugués online en Colombia: cómo elegir',
+    metaDescription:
+      'Qué distingue a un programa serio, cuánto tiempo necesitas para el Celpe-Bras y por qué el portugués brasileño es estratégico.',
     date: '2026-05-30',
     readTime: 6,
     category: 'Portugués',
@@ -3530,6 +3648,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: '¿Cuánto cuesta aprender alemán en Colombia en 2026? Guía de precios y opciones',
     description:
       'Precios reales de clases de alemán en Colombia en 2026: apps, academias, tutores particulares y preparación Goethe-Zertifikat. Cuánto necesitas invertir para llegar al B1 y qué opciones ofrecen mejor relación costo-beneficio.',
+    metaTitle: 'Cuánto cuesta aprender alemán en Colombia en 2026',
+    metaDescription:
+      'Precios reales de apps, academias, tutores particulares y preparación del Goethe-Zertifikat, y cuánto hay que invertir por nivel.',
     date: '2026-05-30',
     readTime: 6,
     category: 'Alemán',
@@ -3584,6 +3705,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: '¿Cuánto cuesta aprender francés en Colombia en 2026? Guía de precios y opciones',
     description:
       'Precios reales de clases de francés en Colombia en 2026: Alianza Francesa, academias, tutores online y preparación DELF. Cuánto necesitas invertir para llegar al B2 y qué opción tiene mejor costo-beneficio.',
+    metaTitle: 'Cuánto cuesta aprender francés en Colombia en 2026',
+    metaDescription:
+      'Precios reales de la Alianza Francesa, academias, tutores online y preparación del DELF, y cuánto hay que invertir por nivel.',
     date: '2026-05-30',
     readTime: 6,
     category: 'Francés',
@@ -3632,6 +3756,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: '¿Cuánto cuesta aprender italiano en Colombia en 2026? Guía de precios',
     description:
       'Precios reales de clases de italiano en Colombia en 2026: apps, Dante Alighieri, tutores online y preparación CILS. Cuánto necesitas invertir para el B1 de ciudadanía italiana y qué opción ofrece mejor costo-beneficio.',
+    metaTitle: 'Cuánto cuesta aprender italiano en Colombia en 2026',
+    metaDescription:
+      'Precios reales de apps, la Dante Alighieri, tutores online y preparación del CILS, y cuánto hay que invertir para llegar al B1.',
     date: '2026-05-30',
     readTime: 5,
     category: 'Italiano',
@@ -3676,6 +3803,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: '¿Cuánto cuesta aprender portugués en Colombia en 2026? Guía de precios',
     description:
       'Precios reales de clases de portugués en Colombia en 2026: apps, recursos gratuitos, tutores online y preparación Celpe-Bras. Cuánto invertir para cada nivel y qué opción ofrece el mejor costo-beneficio para colombianos.',
+    metaTitle: 'Cuánto cuesta aprender portugués en Colombia en 2026',
+    metaDescription:
+      'Precios reales de apps, recursos gratuitos, tutores online y preparación del Celpe-Bras, con lo que hay que invertir por nivel.',
     date: '2026-05-30',
     readTime: 5,
     category: 'Portugués',
@@ -3723,6 +3853,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'Ciudadanía italiana: el requisito de italiano B1 explicado paso a paso',
     description:
       'Si eres descendiente de italianos o llevas años en Italia, necesitas el B1 de italiano para la ciudadanía por naturalización. Aquí te explicamos qué examen vale, cómo prepararte y cuánto tiempo necesitas desde cero.',
+    metaTitle: 'Ciudadanía italiana: el requisito del italiano B1',
+    metaDescription:
+      'Qué examen de italiano acepta Italia para la ciudadanía, quién está exento, dónde presentarlo desde Colombia y cuánto se tarda en prepararlo.',
     date: '2026-05-30',
     readTime: 7,
     category: 'Italiano',
@@ -3788,6 +3921,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'Trabajar en Alemania: ¿qué nivel de alemán necesitas según tu profesión?',
     description:
       'Guía de niveles de alemán requeridos para trabajar en Alemania según profesión y tipo de visa. Desde A2 para trabajos no calificados hasta C1 para medicina y derecho. Con la nueva Ley de Inmigración de Trabajadores Calificados.',
+    metaTitle: 'Qué nivel de alemán necesitas para trabajar en Alemania',
+    metaDescription:
+      'El nivel exigido según profesión y tipo de visa: de A2 en trabajos no calificados a C1 en medicina y derecho, con la nueva ley de inmigración.',
     date: '2026-05-30',
     readTime: 7,
     category: 'Alemán',
@@ -3844,6 +3980,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'TOPIK 2026: fechas de examen, centros en Colombia y cómo inscribirse',
     description:
       'Todo lo que necesitas saber sobre el TOPIK en Colombia y América Latina en 2026: fechas oficiales, centros de aplicación, cómo inscribirse en NIIED y qué hacer si no hay centro en tu ciudad.',
+    metaTitle: 'TOPIK 2026: fechas, centros en Colombia e inscripción',
+    metaDescription:
+      'Fechas oficiales del TOPIK, centros en Colombia y América Latina, cómo inscribirse en NIIED y qué hacer si no hay centro en tu ciudad.',
     date: '2026-05-30',
     readTime: 6,
     category: 'Coreano',
@@ -3905,6 +4044,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'TCF Canadá: el examen de francés para inmigrar a Quebec (guía 2026)',
     description:
       'Guía completa del TCF Canadá para colombianos: qué puntaje necesitas para Express Entry y el PRTQ, cómo funciona el examen y cómo prepararte desde Colombia con tutor especializado.',
+    metaTitle: 'TCF Canadá: el examen de francés para Quebec',
+    metaDescription:
+      'Qué puntaje piden Express Entry y el PRTQ, cómo funciona el examen por dentro y cómo prepararlo desde Colombia con tutor.',
     date: '2026-05-30',
     readTime: 7,
     category: 'Francés',
@@ -3971,6 +4113,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'Hangul en 1 semana: la guía definitiva para hispanohablantes',
     description:
       'Aprende a leer y escribir Hangul en 7 días con esta guía paso a paso para hispanohablantes. Cómo funciona el sistema de escritura coreano, los 24 caracteres base y cómo practicar cada día.',
+    metaTitle: 'Hangul en una semana: guía para hispanohablantes',
+    metaDescription:
+      'Cómo funciona la escritura coreana, los 24 caracteres base y qué practicar cada día para leer y escribir hangul en siete días.',
     date: '2026-05-30',
     readTime: 8,
     category: 'Coreano',
@@ -4061,6 +4206,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'Alemán para enfermería en Alemania: nivel B2 y la Fachsprachprüfung explicada',
     description:
       'Guía completa para enfermeras y enfermeros colombianos que quieren trabajar en Alemania: nivel de alemán requerido (B2), qué es la Fachsprachprüfung, cómo reconocer el título y cuánto tiempo necesitas para prepararte.',
+    metaTitle: 'Alemán para enfermería en Alemania: el B2 y la FSP',
+    metaDescription:
+      'Nivel de alemán que piden a enfermeras colombianas (B2), qué es la Fachsprachprüfung, cómo homologar el título y cuánto tarda el proceso.',
     date: '2026-05-30',
     readTime: 7,
     category: 'Alemán',
@@ -4123,6 +4271,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'Estudiar en Italia: costos, nivel de italiano requerido y cómo aplicar desde Colombia',
     description:
       'Guía completa para colombianos que quieren estudiar en universidades italianas: costos reales de matrícula, nivel de italiano requerido (B2 o C1), exámenes de idioma aceptados y cómo prepararte.',
+    metaTitle: 'Estudiar en Italia: costos y nivel de italiano',
+    metaDescription:
+      'Costos reales de matrícula en universidades italianas, el nivel de italiano que exigen (B2 o C1) y cómo aplicar desde Colombia.',
     date: '2026-05-30',
     readTime: 7,
     category: 'Italiano',
@@ -4190,6 +4341,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'Portugués para negocios con Brasil: nivel recomendado y guía práctica',
     description:
       'Guía para profesionales y empresarios colombianos que trabajan o quieren trabajar con Brasil: qué nivel de portugués necesitas, por qué el portuñol no es suficiente y cómo alcanzar el B2 conversacional para negocios.',
+    metaTitle: 'Portugués para negocios con Brasil: qué nivel llevar',
+    metaDescription:
+      'Por qué el portuñol no basta al negociar con Brasil, qué nivel se espera de verdad y cómo llegar a un B2 conversacional de trabajo.',
     date: '2026-05-30',
     readTime: 6,
     category: 'Portugués',
@@ -4242,6 +4396,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'TOEFL iBT vs TOEFL Essentials: diferencias y cuál elegir en 2026',
     description:
       'Comparación completa entre TOEFL iBT y TOEFL Essentials: qué mide cada uno, qué universidades y empleadores aceptan cada versión, costos y cuál es más fácil de preparar para colombianos.',
+    metaTitle: 'TOEFL iBT o TOEFL Essentials: cuál te conviene',
+    metaDescription:
+      'Qué mide cada versión del TOEFL, qué universidades y empleadores aceptan cada una, cuánto cuestan y cuál es más fácil según tu perfil.',
     date: '2026-05-30',
     readTime: 6,
     category: 'TOEFL',
@@ -4312,6 +4469,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'Estudiar en Irlanda con IELTS: universidades, costos y puntaje mínimo 2026',
     description:
       'Guía para colombianos que quieren estudiar en Irlanda: puntaje IELTS requerido, costos de universidades irlandesas, visa de estudiante y por qué Irlanda es alternativa a UK tras el Brexit.',
+    metaTitle: 'Estudiar en Irlanda: puntaje IELTS y costos 2026',
+    metaDescription:
+      'Puntaje de IELTS que piden las universidades irlandesas, costos de matrícula, visa de estudiante y por qué es alternativa al Reino Unido.',
     date: '2026-05-30',
     readTime: 6,
     category: 'IELTS',
@@ -4370,6 +4530,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: '¿Se puede aprender coreano con K-pop y K-dramas? Lo que dice la evidencia',
     description:
       'Guía honesta sobre aprender coreano con K-pop y K-dramas: qué sí puedes aprender de forma natural, qué no puedes aprender solo con contenido, y cómo combinar ambos para avanzar de verdad.',
+    metaTitle: 'Aprender coreano con K-pop y K-dramas: ¿funciona?',
+    metaDescription:
+      'Qué se aprende de verdad viendo K-dramas, qué no se aprende solo con contenido y cómo combinarlo con estudio para avanzar.',
     date: '2026-05-30',
     readTime: 7,
     category: 'Coreano',
@@ -4427,6 +4590,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'Qué nivel de inglés piden de verdad en el trabajo remoto internacional',
     description:
       'Guía para colombianos que buscan trabajo remoto en empresas internacionales: qué nivel de inglés necesitas, por qué B2 no siempre es suficiente, cómo practicar el inglés profesional y cómo certificarlo.',
+    metaTitle: 'Qué nivel de inglés piden en el trabajo remoto global',
+    metaDescription:
+      'Por qué un B2 no siempre alcanza para trabajar en remoto con empresas internacionales, qué evalúan de verdad y cómo cerrar la brecha.',
     date: '2026-05-30',
     readTime: 6,
     category: 'Inglés',
@@ -4484,6 +4650,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'Migrar a Nueva Zelanda: puntaje IELTS requerido y tipos de visa en 2026',
     description:
       'Guía completa para colombianos que quieren migrar a Nueva Zelanda: qué puntaje IELTS necesitas, tipos de visa disponibles (Skilled Migrant, Working Holiday, Global Impact), costos y cómo prepararte.',
+    metaTitle: 'Migrar a Nueva Zelanda: puntaje IELTS y visas 2026',
+    metaDescription:
+      'Qué puntaje de IELTS pide cada visa neozelandesa, incluidas Skilled Migrant y Working Holiday, y cómo se acredita desde Colombia.',
     date: '2026-05-30',
     readTime: 6,
     category: 'Migración',
@@ -4542,6 +4711,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'DELF y DALF: cuál nivel necesitas según tu objetivo real en 2026',
     description:
       'Guía práctica del DELF y DALF para colombianos: qué nivel necesitas para trabajar en Francia, estudiar en Quebec, o hacer la Alianza Francesa, y cuál es la diferencia entre DELF y DALF.',
+    metaTitle: 'DELF y DALF: qué nivel necesitas según tu objetivo',
+    metaDescription:
+      'Qué nivel de DELF o DALF piden para trabajar en Francia, estudiar en Quebec o migrar, y cuál te conviene presentar primero.',
     date: '2026-05-30',
     readTime: 6,
     category: 'Francés',
@@ -4618,6 +4790,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: '¿Se pueden aprender dos idiomas a la vez? Lo que dice la ciencia',
     description:
       'Guía basada en evidencia sobre si es posible aprender dos idiomas simultáneamente: cuándo tiene sentido, cuándo no, y cómo organizar el estudio si quieres aprender dos idiomas al mismo tiempo.',
+    metaTitle: '¿Se pueden aprender dos idiomas a la vez?',
+    metaDescription:
+      'Cuándo tiene sentido estudiar dos idiomas en paralelo, cuándo se estorban entre sí y cómo repartir el estudio si decides hacerlo.',
     date: '2026-05-30',
     readTime: 6,
     category: 'Método',
@@ -4671,6 +4846,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'ICFES inglés en 3 meses: plan de estudio semanal para subir tu puntaje',
     description:
       'Plan de estudio semana a semana para mejorar tu puntaje de inglés en el ICFES Saber 11 en 3 meses. Incluye recursos gratuitos, simulacros y las áreas específicas donde los estudiantes pierden más puntos.',
+    metaTitle: 'ICFES inglés en 3 meses: plan de estudio semanal',
+    metaDescription:
+      'Plan semana a semana para subir el puntaje de inglés del Saber 11, con recursos gratuitos y las áreas donde más puntos se pierden.',
     date: '2026-05-30',
     updatedDate: '2026-08-03',
     readTime: 7,
@@ -4740,6 +4918,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'Estudiar medicina en Francia o Bélgica: nivel de francés, costos y proceso desde Colombia',
     description:
       'Guía para colombianos que quieren estudiar medicina en Francia o Bélgica: nivel de francés requerido (C1 mínimo), costos de matrícula comparados con Colombia y EE.UU., visa y proceso de admisión.',
+    metaTitle: 'Estudiar medicina en Francia o Bélgica desde Colombia',
+    metaDescription:
+      'Nivel de francés que exigen (C1 mínimo), costos de matrícula comparados con Colombia, el proceso de admisión y los plazos reales.',
     date: '2026-05-30',
     readTime: 7,
     category: 'Francés',
@@ -4795,6 +4976,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     title: 'Coreano para trabajar en Samsung, LG, Hyundai o Kia en Colombia',
     description:
       'Guía práctica de coreano para profesionales colombianos que trabajan o quieren trabajar en empresas coreanas. Nivel recomendado, frases clave para el entorno laboral y cómo diferenciarte en una empresa surcoreana.',
+    metaTitle: 'Coreano para trabajar en Samsung, LG, Hyundai o Kia',
+    metaDescription:
+      'Qué nivel de coreano se espera en una empresa surcoreana, frases clave del entorno laboral y cómo diferenciarte en el proceso.',
     date: '2026-05-30',
     readTime: 6,
     category: 'Coreano',
@@ -4929,6 +5113,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     description: 'Cómo preparar una entrevista de trabajo en inglés para multinacionales. Frases clave, errores comunes, estructura de respuestas STAR y recursos.',
     category: 'Inglés',
     tags: ['inglés trabajo', 'entrevista trabajo inglés', 'inglés profesional', 'multinacional'],
+    metaTitle: 'Inglés para entrevistas en multinacionales',
+    metaDescription:
+      'Frases clave, errores frecuentes, cómo montar respuestas con el método STAR y qué practicar antes de una entrevista en inglés.',
     date: '2026-05-21',
     readTime: 8,
     body: `
@@ -5018,6 +5205,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     description: 'Estimaciones reales de tiempo para alcanzar B1, B2 y C1 en inglés, francés, alemán, italiano, portugués y coreano. Con datos del FSI y la experiencia WeLearn.',
     category: 'Método',
     tags: ['tiempo aprender idioma', 'FSI idiomas', 'método aprendizaje', 'cuánto tiempo inglés'],
+    metaTitle: 'Cuánto tiempo se tarda en aprender un idioma',
+    metaDescription:
+      'Estimaciones reales para llegar a B1, B2 y C1 en inglés, francés, alemán, italiano, portugués y coreano, con datos del FSI.',
     date: '2026-05-22',
     readTime: 8,
     body: `
@@ -5081,6 +5271,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     description: 'Guía completa de inglés para Express Entry Canadá en 2026: niveles CLB, equivalencias IELTS y CELPIP, puntajes mínimos y cómo maximizar tu CRS.',
     category: 'Migración',
     tags: ['Express Entry Canadá', 'inglés Canadá', 'CLB IELTS', 'migrar Canadá'],
+    metaTitle: 'Express Entry Canadá: CLB, IELTS y puntajes 2026',
+    metaDescription:
+      'Niveles CLB, equivalencias con IELTS y CELPIP, puntajes mínimos y cómo sacar el máximo de CRS con tu resultado de inglés.',
     date: '2026-05-23',
     readTime: 8,
     body: `
@@ -5227,6 +5420,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     description: 'Todo sobre la visa E-7 para trabajar en Corea del Sur: nivel de coreano requerido, sectores, documentos, diferencia con E-9 y H-2, y cómo prepararte.',
     category: 'Coreano',
     tags: ['visa trabajo Corea', 'E-7 Corea del Sur', 'trabajar en Corea', 'TOPIK visa'],
+    metaTitle: 'Visa E-7 en Corea del Sur: requisitos y nivel de coreano',
+    metaDescription:
+      'Nivel de coreano que exige la visa E-7, sectores que la aceptan, documentos, en qué se diferencia de la E-9 y la H-2, y cómo prepararte.',
     date: '2026-05-25',
     readTime: 8,
     body: `
@@ -5298,6 +5494,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     description: 'Guía práctica para aprender italiano desde cero hasta B2 en Colombia: tiempo real por etapa, recursos, el examen CILS y el método más eficiente.',
     category: 'Italiano',
     tags: ['aprender italiano', 'italiano desde cero', 'italiano B2 Colombia', 'CILS italiano'],
+    metaTitle: 'Italiano de cero a B2: cuánto tiempo toma de verdad',
+    metaDescription:
+      'Tiempo real por etapa para llegar al B2 de italiano desde el español, qué recursos sirven, cómo encaja el CILS y qué acorta el camino.',
     date: '2026-05-26',
     readTime: 7,
     body: `
@@ -5371,6 +5570,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     description: 'Qué puedes hacer con un B2 en francés: universidades en Francia y Bélgica, trabajar en empresas francófonas, migrar a Canadá y más oportunidades reales.',
     category: 'Francés',
     tags: ['francés B2', 'DELF B2', 'oportunidades francés', 'trabajo francés'],
+    metaTitle: 'Francés B2: para qué sirve y qué puertas abre',
+    metaDescription:
+      'Con un B2 de francés entras a universidades en Francia y Bélgica, trabajas en empresas francófonas y sumas puntos para migrar a Canadá.',
     date: '2026-05-26',
     readTime: 7,
     body: `
@@ -5432,6 +5634,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     description: 'Guía completa de IELTS Writing Task 1 Academic: estructura, vocabulario de tendencias, errores comunes y cómo pasar de banda 5 a banda 7 en graficas y tablas.',
     category: 'IELTS',
     tags: ['IELTS Writing Task 1', 'describir gráficos inglés', 'IELTS Academic Writing', 'banda 7 IELTS'],
+    metaTitle: 'IELTS Writing Task 1: cómo describir gráficos y tablas',
+    metaDescription:
+      'Estructura, vocabulario de tendencias y los errores que dejan la nota en banda 5. Cómo llegar a banda 7 describiendo gráficos y diagramas.',
     date: '2026-05-27',
     readTime: 9,
     body: `
@@ -5509,6 +5714,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     description: 'Pronunciación, vocabulario y gramática: diferencias entre portugués brasileño y europeo que todo colombiano que aprende portugués debe conocer.',
     category: 'Portugués',
     tags: ['portugués brasileño', 'portugués europeo', 'diferencias portugués', 'aprender portugués'],
+    metaTitle: 'Portugués de Brasil o de Portugal: qué cambia',
+    metaDescription:
+      'Pronunciación, vocabulario y gramática: las diferencias que todo colombiano que aprende portugués debería conocer antes de elegir.',
     date: '2026-05-27',
     readTime: 7,
     body: `
@@ -5581,6 +5789,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     description: 'Guía completa para migrar a Australia desde Colombia en 2026: sistema de puntos, puntaje IELTS requerido, visas 189/190/491 y cómo prepararse.',
     category: 'Migración',
     tags: ['migrar a Australia', 'IELTS Australia', 'visa Australia Colombia', 'puntos Australia 2026'],
+    metaTitle: 'Migrar a Australia en 2026: puntos, visas e IELTS',
+    metaDescription:
+      'Cómo funciona el sistema de puntos, qué puntaje de IELTS piden las visas 189, 190 y 491 y cómo prepararlo desde Colombia.',
     date: '2026-05-28',
     readTime: 8,
     body: `
@@ -5662,6 +5873,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     description: 'Cómo resolver los True/False/Not Given del IELTS Reading sin confundirte. Diferencia entre False y Not Given, estrategia paso a paso y ejemplos resueltos.',
     category: 'IELTS',
     tags: ['IELTS Reading', 'True False Not Given', 'IELTS estrategia', 'Reading IELTS tips'],
+    metaTitle: 'IELTS Reading: True, False, Not Given sin fallar',
+    metaDescription:
+      'La diferencia real entre False y Not Given, una estrategia paso a paso para decidir y ejemplos resueltos del IELTS Reading.',
     date: '2026-05-28',
     readTime: 8,
     body: `
@@ -5731,6 +5945,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     description: 'Estrategia completa para las preguntas integradas del TOEFL Speaking: estructura, notas, vocabulario de enlace y cómo practicar para 24+ puntos.',
     category: 'TOEFL',
     tags: ['TOEFL Speaking', 'integrated tasks TOEFL', 'puntaje TOEFL Speaking', 'TOEFL preparación'],
+    metaTitle: 'TOEFL Speaking: cómo responder las Integrated Tasks',
+    metaDescription:
+      'Estructura de respuesta, cómo tomar notas, vocabulario de enlace y cómo practicar las tareas integradas para pasar de los 24 puntos.',
     date: '2026-05-29',
     readTime: 8,
     body: `
@@ -5818,6 +6035,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     description: 'Estrategias probadas para mejorar Fluency & Coherence en el IELTS Speaking. Qué evalúa el examinador, errores típicos y cómo practicar para banda 7+.',
     category: 'IELTS',
     tags: ['IELTS Speaking', 'fluency coherence IELTS', 'banda 7 Speaking', 'IELTS preparación'],
+    metaTitle: 'IELTS Speaking: subir en Fluency and Coherence',
+    metaDescription:
+      'Qué mira el examinador en Fluency and Coherence, los errores típicos que frenan la banda y cómo practicar para llegar a 7 o más.',
     date: '2026-05-29',
     readTime: 7,
     body: `
@@ -5892,6 +6112,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     description: 'Guía de alemán para trabajar en Suiza: qué nivel necesitas por sector, salarios, cómo aplicar desde Colombia y por qué Suiza es diferente a Alemania.',
     category: 'Alemán',
     tags: ['trabajar en Suiza', 'alemán Suiza', 'visa trabajo Suiza', 'salario Suiza'],
+    metaTitle: 'Alemán para trabajar en Suiza: qué nivel piden',
+    metaDescription:
+      'Nivel de alemán por sector en Suiza, salarios reales, cómo aplicar desde Colombia y en qué se diferencia de trabajar en Alemania.',
     date: '2026-05-29',
     readTime: 7,
     body: `
@@ -5948,6 +6171,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     description: 'Las 200 palabras de inglés más frecuentes en el ICFES Saber 11, organizadas por categoría semántica. Guía práctica para aumentar tu puntaje rápidamente.',
     category: 'ICFES',
     tags: ['vocabulario ICFES inglés', 'palabras frecuentes ICFES', 'Saber 11 inglés', 'inglés ICFES'],
+    metaTitle: 'Vocabulario de inglés del ICFES: las 200 palabras clave',
+    metaDescription:
+      'Las 200 palabras de inglés más frecuentes en el Saber 11, agrupadas por categoría, para subir puntaje sin estudiar de todo un poco.',
     date: '2026-05-30',
     readTime: 8,
     body: `
@@ -6035,6 +6261,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     description: 'Evaluación honesta de Duolingo como herramienta para aprender idiomas: qué sí funciona, qué no funciona, estudios reales y cómo usarlo correctamente.',
     category: 'Método',
     tags: ['Duolingo funciona', 'aprender idioma apps', 'Duolingo vs clases', 'método aprendizaje'],
+    metaTitle: '¿Funciona Duolingo para aprender un idioma?',
+    metaDescription:
+      'Qué consigue Duolingo de verdad, qué no consigue, qué dicen los estudios y cómo usarlo sin que sustituya lo que sí hace falta.',
     date: '2026-05-30',
     readTime: 7,
     body: `
@@ -6089,6 +6318,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     description: 'Guía detallada para alcanzar TOPIK II nivel 3 y 4: diferencias entre niveles, qué evalúan las secciones y estrategia de estudio para hispanohablantes.',
     category: 'Coreano',
     tags: ['TOPIK II nivel 3', 'TOPIK nivel 4', 'coreano avanzado', 'preparación TOPIK'],
+    metaTitle: 'TOPIK II niveles 3 y 4: cómo alcanzarlos',
+    metaDescription:
+      'Qué separa el nivel 3 del nivel 4, qué evalúa cada sección y una estrategia de estudio pensada para hispanohablantes.',
     date: '2026-05-30',
     readTime: 8,
     body: `
@@ -6155,6 +6387,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     description: 'La diferencia entre banda 6 y banda 7 en el IELTS es más estratégica que lingüística. Esta guía explica exactamente qué cambia por módulo y cómo lograrlo.',
     category: 'IELTS',
     tags: ['IELTS banda 7', 'de banda 6 a 7 IELTS', 'mejorar IELTS', 'IELTS preparación avanzada'],
+    metaTitle: 'IELTS de banda 6 a banda 7: qué cambia de verdad',
+    metaDescription:
+      'El salto de 6 a 7 es más estratégico que lingüístico. Qué cambia en cada módulo y qué hay que hacer distinto para cruzarlo.',
     date: '2026-05-30',
     readTime: 8,
     body: `
@@ -6221,6 +6456,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     description: 'Guía de inglés técnico para desarrolladores de software colombianos: vocabulario de programación, cómo leer documentación, reuniones en inglés y entrevistas técnicas.',
     category: 'Inglés',
     tags: ['inglés programadores', 'inglés técnico desarrollo', 'documentación inglés', 'inglés TI'],
+    metaTitle: 'Inglés técnico para programadores y desarrolladores',
+    metaDescription:
+      'Vocabulario de programación, cómo leer documentación sin traducir, reuniones en inglés y qué esperar de una entrevista técnica.',
     date: '2026-05-31',
     readTime: 8,
     body: `
@@ -6303,6 +6541,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     description: 'Todo sobre los requisitos de idioma para migrar a Portugal desde Colombia: visas, nivel de portugués o inglés, el CIPLE y cómo prepararte.',
     category: 'Migración',
     tags: ['migrar a Portugal', 'portugués Portugal', 'visa Portugal colombianos', 'CIPLE Portugal'],
+    metaTitle: 'Migrar a Portugal: ¿inglés, portugués o los dos?',
+    metaDescription:
+      'Requisitos de idioma por tipo de visa para colombianos, qué es el CIPLE, qué nivel piden de verdad y cómo prepararlo.',
     date: '2026-05-31',
     readTime: 8,
     body: `
@@ -6371,6 +6612,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     description: 'Guía completa del batchim en coreano: qué es, cómo se pronuncia cada uno, reglas de enlace (liaison) y por qué es tan importante para sonar natural.',
     category: 'Coreano',
     tags: ['batchim coreano', 'pronunciación coreana', 'consonantes finales coreano', 'fonética coreana'],
+    metaTitle: 'Batchim: las consonantes finales del coreano',
+    metaDescription:
+      'Qué es el batchim, cómo se pronuncia cada uno, las reglas de enlace y por qué es lo que más delata a un hispanohablante.',
     date: '2026-05-31',
     readTime: 7,
     body: `
@@ -6429,6 +6673,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     description: 'Estrategia para los tipos de preguntas más difíciles del TOEFL Reading: inferencia, purpose, vocabulary in context y reference. Con ejemplos resueltos.',
     category: 'TOEFL',
     tags: ['TOEFL Reading', 'inferencia TOEFL', 'preguntas TOEFL Reading', 'puntaje TOEFL'],
+    metaTitle: 'TOEFL Reading: inferencia, propósito y vocabulario',
+    metaDescription:
+      'Estrategia para los tipos de pregunta más difíciles del TOEFL Reading, con ejemplos resueltos de inference, purpose y reference.',
     date: '2026-05-31',
     readTime: 8,
     body: `
@@ -6494,6 +6741,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     description: 'Guía honesta para adultos que empiezan francés desde cero en Colombia: tiempo realista, mitos del aprendizaje adulto, recursos y cómo estructurar el estudio.',
     category: 'Francés',
     tags: ['aprender francés adulto', 'francés desde cero Colombia', 'curso francés adultos', 'francés online Colombia'],
+    metaTitle: 'Aprender francés de adulto desde cero en Colombia',
+    metaDescription:
+      'Cuánto se tarda de verdad, qué mitos hay sobre aprender de adulto, qué recursos sirven y cómo ordenar el estudio.',
     date: '2026-05-31',
     readTime: 7,
     body: `
@@ -6556,6 +6806,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     slug: 'ielts-listening-sections-3-4-estrategias-avanzadas',
     title: 'IELTS Listening Sections 3 y 4: estrategias para las partes más difíciles',
     description: 'Las secciones 3 y 4 del IELTS Listening son las más exigentes. Aprende las estrategias específicas para sacar banda 7 o más en estas partes académicas.',
+    metaTitle: 'IELTS Listening: las secciones 3 y 4, paso a paso',
+    metaDescription:
+      'Las partes académicas del Listening son las más exigentes. Estrategias específicas para sacar banda 7 o más en las secciones 3 y 4.',
     date: '2026-05-31',
     readTime: 10,
     category: 'IELTS',
@@ -6657,6 +6910,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     slug: 'coreano-k-dramas-para-aprender-series-recomendadas',
     title: 'K-dramas para aprender coreano: series por nivel y cómo verlas',
     description: 'Ver K-dramas puede acelerar tu aprendizaje de coreano, pero solo si lo haces correctamente. Guía práctica con series recomendadas según tu nivel.',
+    metaTitle: 'K-dramas para aprender coreano: cuáles y cómo verlos',
+    metaDescription:
+      'Series recomendadas según tu nivel y el método para que ver K-dramas acelere el coreano en vez de quedarse en entretenimiento.',
     date: '2026-05-31',
     readTime: 9,
     category: 'Coreano',
@@ -6738,6 +6994,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     slug: 'migrar-a-nueva-zelanda-ingles-requisitos-visa-2026',
     title: 'Migrar a Nueva Zelanda: requisitos de inglés y tipos de visa en 2026',
     description: 'Nueva Zelanda es uno de los destinos más buscados por colombianos y latinoamericanos. Conoce los requisitos de inglés para cada tipo de visa y cómo prepararte.',
+    metaTitle: 'Nueva Zelanda: requisitos de inglés por tipo de visa',
+    metaDescription:
+      'Qué nivel de inglés pide cada visa neozelandesa en 2026, qué pruebas acepta y cómo prepararlo desde Colombia.',
     date: '2026-05-31',
     readTime: 10,
     category: 'Migración',
@@ -6823,6 +7082,9 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     slug: 'ielts-writing-task-2-tipos-de-ensayo-y-estructura',
     title: 'IELTS Writing Task 2: tipos de ensayo, estructura y errores comunes',
     description: 'El Task 2 del IELTS Writing vale el 66% de tu nota. Aprende los 5 tipos de ensayo, cómo estructurarlos correctamente y los errores que bajan tu banda.',
+    metaTitle: 'IELTS Writing Task 2: los 5 tipos de ensayo',
+    metaDescription:
+      'El Task 2 vale dos tercios de la nota de Writing. Los cinco tipos de ensayo, cómo estructurar cada uno y los errores que bajan la banda.',
     date: '2026-05-31',
     readTime: 12,
     category: 'IELTS',
@@ -6920,6 +7182,9 @@ Banda 8: amplio rango léxico, uso idiomático natural.</p>
     slug: 'aprender-idiomas-tecnica-inmersion-en-casa',
     title: 'Inmersión en casa: cómo crear un ambiente de idioma sin viajar',
     description: 'No necesitas vivir en el extranjero para hacer inmersión lingüística. Técnicas probadas para crear un ambiente de exposición diaria al idioma que quieres aprender.',
+    metaTitle: 'Inmersión en casa: un ambiente de idioma sin viajar',
+    metaDescription:
+      'Técnicas probadas para exponerte al idioma a diario sin salir del país, y en qué orden aplicarlas para que la inmersión funcione.',
     date: '2026-05-31',
     readTime: 9,
     category: 'Método',
@@ -7000,6 +7265,9 @@ Banda 8: amplio rango léxico, uso idiomático natural.</p>
     slug: 'aleman-b2-reconocimiento-titulo-enfermeria-alemania',
     title: 'Alemán B2 para enfermería: reconocimiento de título y proceso en Alemania',
     description: 'Si eres enfermero/a latinoamericano/a y quieres trabajar en Alemania, el alemán B2 es obligatorio. Guía completa del proceso de reconocimiento de título y visado.',
+    metaTitle: 'Alemán B2 para enfermería: homologar el título',
+    metaDescription:
+      'El B2 es obligatorio para ejercer enfermería en Alemania. Cómo es el proceso de reconocimiento del título y el visado, paso a paso.',
     date: '2026-05-31',
     readTime: 11,
     category: 'Alemán',
@@ -7084,6 +7352,9 @@ Banda 8: amplio rango léxico, uso idiomático natural.</p>
     slug: 'ingles-para-residencia-medica-en-estados-unidos',
     title: 'Inglés para médicos que quieren hacer residencia en Estados Unidos',
     description: 'USMLE, ECFMG y la entrevista de residencia requieren inglés de alto nivel. Guía para médicos latinoamericanos que preparan su camino al match de residencia.',
+    metaTitle: 'Inglés para la residencia médica en Estados Unidos',
+    metaDescription:
+      'El USMLE, el ECFMG y la entrevista de residencia piden inglés de alto nivel. Qué preparar y en qué orden para llegar al match.',
     date: '2026-05-31',
     readTime: 11,
     category: 'Inglés',
@@ -7157,6 +7428,9 @@ Banda 8: amplio rango léxico, uso idiomático natural.</p>
     slug: 'portugues-europeo-vs-brasileno-para-aprender',
     title: 'Portugués europeo vs. brasileño: ¿cuál aprender según tu objetivo?',
     description: 'Las diferencias entre el portugués de Portugal y el de Brasil van más allá del acento. Descubre cuál variante te conviene aprender según tu meta laboral o migratoria.',
+    metaTitle: 'Portugués europeo o brasileño: cuál te conviene',
+    metaDescription:
+      'Las diferencias van más allá del acento. Qué variante conviene según tu objetivo laboral o migratorio, y qué cambia al estudiarlas.',
     date: '2026-05-31',
     readTime: 8,
     category: 'Portugués',
@@ -7241,6 +7515,9 @@ Esta diferencia puede generar malentendidos culturales.</p>
     slug: 'toefl-ibt-estructura-completa-y-estrategia-2026',
     title: 'TOEFL iBT 2026: estructura completa, puntajes y estrategia por sección',
     description: 'Guía actualizada del TOEFL iBT 2026 después del rediseño. Conoce la nueva duración, el Academic Discussion Task y la estrategia óptima para cada sección.',
+    metaTitle: 'TOEFL iBT 2026: estructura, puntajes y estrategia',
+    metaDescription:
+      'Guía actualizada tras el rediseño: la nueva duración, el Academic Discussion Task y qué hacer en cada sección para rendir mejor.',
     date: '2026-05-31',
     readTime: 12,
     category: 'TOEFL',
@@ -7361,6 +7638,9 @@ Esta diferencia puede generar malentendidos culturales.</p>
     slug: 'italiano-para-ciudadania-italiana-nivel-b1',
     title: 'Italiano para ciudadanía italiana: qué nivel se exige y cómo prepararse',
     description: 'Desde 2021, Italia exige un examen de italiano B1 para obtener la ciudadanía por naturalización. Guía completa para latinoamericanos con ascendencia italiana.',
+    metaTitle: 'Italiano para la ciudadanía: qué nivel se exige',
+    metaDescription:
+      'Italia exige un B1 de italiano para la ciudadanía por naturalización desde 2021. Qué examen vale, quién queda exento y cómo prepararlo.',
     date: '2026-05-31',
     readTime: 10,
     category: 'Italiano',
@@ -7437,6 +7717,9 @@ Esta diferencia puede generar malentendidos culturales.</p>
     slug: 'ielts-speaking-parte-2-cue-card-como-hablar-2-minutos',
     title: 'IELTS Speaking Parte 2: cómo hablar 2 minutos sobre cualquier tema',
     description: 'La Parte 2 del IELTS Speaking es la que más candidatos temen. Aprende la estructura, técnicas de extensión y cómo preparar temas frecuentes para hablar con fluidez.',
+    metaTitle: 'IELTS Speaking Parte 2: hablar dos minutos seguidos',
+    metaDescription:
+      'La cue card es lo que más se teme. Qué estructura usar, cómo alargar sin repetirte y qué temas conviene llevar preparados.',
     date: '2026-05-31',
     readTime: 9,
     category: 'IELTS',
@@ -7527,6 +7810,9 @@ And explain whether you would recommend it to others.</em>
     slug: 'ingles-para-profesionales-de-salud-colombia',
     title: 'Inglés para profesionales de salud en Colombia: médicos, enfermeros y fisioterapeutas',
     description: 'El inglés es clave para acceder a literatura médica internacional, congresos y oportunidades laborales. Guía para profesionales de salud colombianos que quieren mejorar su inglés.',
+    metaTitle: 'Inglés para profesionales de la salud en Colombia',
+    metaDescription:
+      'Para médicos, enfermeros y fisioterapeutas: qué inglés hace falta para leer literatura médica, ir a congresos y optar a plazas fuera.',
     date: '2026-05-31',
     readTime: 9,
     category: 'Inglés',
@@ -7620,6 +7906,9 @@ And explain whether you would recommend it to others.</em>
     slug: 'migrar-a-espana-nivel-ingles-y-espanol-que-necesitas',
     title: 'Español e inglés para vivir en España: qué nivel necesitas de cada uno',
     description: 'España es el segundo destino migratorio de colombianos. Analizamos si necesitas inglés, cuánto importa, y qué idiomas abren más puertas en el mercado laboral español.',
+    metaTitle: 'Vivir en España: qué nivel de inglés y español necesitas',
+    metaDescription:
+      'España es el segundo destino migratorio de los colombianos. Cuánto importa el inglés allí, para qué empleos, y qué idiomas abren más puertas.',
     date: '2026-05-31',
     readTime: 9,
     category: 'Migración',
@@ -7691,6 +7980,9 @@ And explain whether you would recommend it to others.</em>
     slug: 'frances-para-vivir-en-canada-diferencias-ingles-frances',
     title: 'Francés para vivir en Canadá: cuándo es más valioso que el inglés',
     description: 'En Quebec y ciertas provincias de Canadá, el francés puede ser más importante que el inglés para conseguir residencia y trabajo. Guía para colombianos.',
+    metaTitle: 'Francés en Canadá: cuándo vale más que el inglés',
+    metaDescription:
+      'En Quebec y otras provincias el francés pesa más que el inglés para la residencia y el empleo. Cuándo conviene priorizarlo.',
     date: '2026-05-31',
     readTime: 10,
     category: 'Francés',
@@ -7752,6 +8044,9 @@ And explain whether you would recommend it to others.</em>
     slug: 'coreano-nivel-minimo-para-trabajar-en-corea',
     title: 'Coreano: ¿cuál es el nivel mínimo para trabajar en Corea del Sur?',
     description: 'Trabajar en Corea del Sur como extranjero es posible, pero el nivel de coreano requerido varía enormemente según el sector. Análisis realista por tipo de trabajo y visa.',
+    metaTitle: 'Qué nivel de coreano piden para trabajar en Corea',
+    metaDescription:
+      'El nivel exigido cambia mucho según el sector y el tipo de visa. Análisis realista por tipo de trabajo para extranjeros en Corea.',
     date: '2026-05-31',
     readTime: 9,
     category: 'Coreano',
@@ -7826,6 +8121,9 @@ And explain whether you would recommend it to others.</em>
     slug: 'ielts-vs-duolingo-english-test-diferencias',
     title: 'IELTS vs. Duolingo English Test: diferencias, cuál aceptan las universidades y cuál elegir',
     description: 'El Duolingo English Test es más barato y rápido que el IELTS. Pero no todas las universidades lo aceptan. Comparativa completa para tomar la decisión correcta.',
+    metaTitle: 'IELTS o Duolingo Test: cuál acepta tu universidad',
+    metaDescription:
+      'El Duolingo Test es más barato y rápido, pero no todas las universidades lo aceptan. Comparativa de precio, formato y validez frente al IELTS.',
     date: '2026-05-31',
     readTime: 8,
     category: 'IELTS',
@@ -7917,6 +8215,9 @@ And explain whether you would recommend it to others.</em>
     slug: 'italiano-trabajar-en-italia-visas-y-nivel-requerido',
     title: 'Trabajar en Italia: visas disponibles para latinoamericanos y nivel de italiano requerido',
     description: 'Italia tiene alta demanda de trabajadores en salud, construcción y hostelería. Guía completa de visas, requisitos de idioma y oportunidades laborales para colombianos y latinoamericanos.',
+    metaTitle: 'Trabajar en Italia: visas y nivel de italiano',
+    metaDescription:
+      'Italia demanda trabajadores en salud, construcción y hostelería. Qué visas existen para latinoamericanos y qué italiano piden.',
     date: '2026-05-31',
     readTime: 10,
     category: 'Italiano',
@@ -7997,6 +8298,9 @@ And explain whether you would recommend it to others.</em>
     slug: 'toefl-ibt-puntaje-minimo-canada-universidades',
     title: 'TOEFL iBT para Canadá: puntaje mínimo por universidad y provincia',
     description: 'Cada universidad canadiense tiene sus propios requisitos de TOEFL. Guía con los puntajes mínimos de las principales universidades de Canadá y consejos para alcanzarlos.',
+    metaTitle: 'TOEFL iBT para Canadá: puntaje mínimo por universidad',
+    metaDescription:
+      'Los puntajes de TOEFL que pide cada universidad canadiense, provincia por provincia, y cuánto margen conviene dejar sobre el mínimo.',
     date: '2026-05-31',
     readTime: 9,
     category: 'TOEFL',
@@ -8071,6 +8375,9 @@ And explain whether you would recommend it to others.</em>
     slug: 'como-mantener-la-motivacion-aprendiendo-un-idioma',
     title: 'Cómo mantener la motivación aprendiendo un idioma cuando el progreso se siente lento',
     description: 'El bajón de motivación es normal en el aprendizaje de idiomas — especialmente en el nivel intermedio. Estrategias probadas para mantenerte constante y salir del estancamiento.',
+    metaTitle: 'Cómo no abandonar cuando el idioma deja de avanzar',
+    metaDescription:
+      'El bajón del nivel intermedio es normal y tiene explicación. Estrategias probadas para mantener la constancia y salir del estancamiento.',
     date: '2026-05-31',
     readTime: 8,
     category: 'Método',
@@ -8135,6 +8442,9 @@ And explain whether you would recommend it to others.</em>
     slug: 'ielts-general-training-para-migracion-vs-academic',
     title: 'IELTS General Training para migración: diferencias con Academic y qué esperar',
     description: 'Si vas a migrar a Reino Unido, Canadá, Australia o Nueva Zelanda, probablemente necesitas el IELTS General Training, no el Academic. Descubre las diferencias y cómo prepararte.',
+    metaTitle: 'IELTS General Training o Academic: cuál te toca',
+    metaDescription:
+      'Para migrar a Reino Unido, Canadá, Australia o Nueva Zelanda casi siempre es el General Training. En qué se diferencian y cómo prepararlo.',
     date: '2026-05-31',
     readTime: 9,
     category: 'IELTS',
@@ -8217,6 +8527,9 @@ And explain whether you would recommend it to others.</em>
     slug: 'ielts-vocabulario-para-banda-7-temas-frecuentes',
     title: 'Vocabulario IELTS para banda 7: los temas más frecuentes y cómo dominarlos',
     description: 'Conocer el vocabulario de los temas recurrentes del IELTS puede subirte media o una banda entera. Guía de vocabulario temático para Writing, Speaking y Reading.',
+    metaTitle: 'Vocabulario de IELTS para banda 7: temas frecuentes',
+    metaDescription:
+      'Los temas que más se repiten en el IELTS y el vocabulario de cada uno, aplicable a Writing, Speaking y Reading por igual.',
     date: '2026-05-31',
     readTime: 11,
     category: 'IELTS',
@@ -8312,6 +8625,9 @@ And explain whether you would recommend it to others.</em>
     slug: 'portugues-para-estudiar-en-brasil-universidades-y-requisitos',
     title: 'Portugués para estudiar en Brasil: universidades, becas y nivel requerido',
     description: 'Brasil tiene universidades de clase mundial y programas de becas para latinoamericanos. Descubre qué nivel de portugués necesitas y cómo prepararte para estudiar allí.',
+    metaTitle: 'Estudiar en Brasil: nivel de portugués y becas',
+    metaDescription:
+      'Qué nivel de portugués piden las universidades brasileñas, qué becas existen para latinoamericanos y cómo funciona el Celpe-Bras.',
     date: '2026-05-31',
     readTime: 9,
     category: 'Portugués',
@@ -8389,6 +8705,9 @@ And explain whether you would recommend it to others.</em>
     slug: 'aleman-dsh-examen-para-universidades-alemanas',
     title: 'DSH: el examen de alemán para entrar a universidades en Alemania',
     description: 'El DSH (Deutsche Sprachprüfung für den Hochschulzugang) es el examen de alemán más exigido para estudiar en Alemania. Guía completa de su estructura, nivel requerido y cómo prepararse.',
+    metaTitle: 'DSH: el examen de alemán para universidades alemanas',
+    metaDescription:
+      'Cómo es el DSH por dentro, en qué se diferencia del TestDaF, qué nivel necesitas para aprobarlo y cómo prepararlo desde Colombia.',
     date: '2026-05-31',
     readTime: 10,
     category: 'Alemán',
@@ -8462,6 +8781,9 @@ And explain whether you would recommend it to others.</em>
     slug: 'ingles-para-negociaciones-y-contratos-internacionales',
     title: 'Inglés para negocios internacionales: negociaciones, contratos y presentaciones',
     description: 'El inglés de negocios internacional tiene vocabulario, estructuras y convenciones propias. Guía para profesionales colombianos que negocian en inglés con contrapartes globales.',
+    metaTitle: 'Inglés para negociaciones y contratos internacionales',
+    metaDescription:
+      'Vocabulario, estructuras y convenciones del inglés de negocios que no salen en un curso general, para negociar y firmar sin perder terreno.',
     date: '2026-05-31',
     readTime: 10,
     category: 'Inglés',
@@ -8565,6 +8887,9 @@ And explain whether you would recommend it to others.</em>
     slug: 'migrar-reino-unido-requisitos-ingles-visa-2026',
     title: 'Migrar al Reino Unido en 2026: requisitos de inglés por tipo de visa',
     description: 'El Reino Unido tiene requisitos específicos de inglés para cada tipo de visa. Guía actualizada con los niveles exigidos, pruebas aceptadas y cómo prepararse desde Colombia.',
+    metaTitle: 'Migrar al Reino Unido: requisitos de inglés por visa',
+    metaDescription:
+      'Niveles de inglés exigidos en 2026 para cada tipo de visa británica, qué pruebas se aceptan y cómo prepararlo desde Colombia.',
     date: '2026-05-31',
     readTime: 10,
     category: 'Migración',
@@ -8643,6 +8968,9 @@ And explain whether you would recommend it to others.</em>
     slug: 'coreano-canciones-kpop-para-aprender-idioma',
     title: 'Canciones de K-pop para aprender coreano: cuáles sirven y por qué',
     description: 'El K-pop puede ser una herramienta de aprendizaje de coreano, pero solo si lo usas bien. Guía práctica con canciones recomendadas y método de estudio con música.',
+    metaTitle: 'Canciones de K-pop para aprender coreano',
+    metaDescription:
+      'Cuáles sirven de verdad, por qué muchas no, y el método para estudiar coreano con música sin quedarte solo en la letra.',
     date: '2026-05-31',
     readTime: 8,
     category: 'Coreano',
@@ -8734,6 +9062,9 @@ And explain whether you would recommend it to others.</em>
     slug: 'ielts-reading-skimming-scanning-tecnicas',
     title: 'IELTS Reading: skimming, scanning y las técnicas que realmente dan tiempo',
     description: 'El tiempo es el mayor enemigo en el IELTS Reading. Aprende las técnicas de skimming y scanning correctamente aplicadas al formato IELTS para terminar los 3 pasajes a tiempo.',
+    metaTitle: 'IELTS Reading: skimming y scanning que sí dan tiempo',
+    metaDescription:
+      'Cómo aplicar skimming y scanning al formato del IELTS para terminar los tres pasajes dentro del tiempo, sin leerlo todo.',
     date: '2026-05-31',
     readTime: 9,
     category: 'IELTS',
@@ -8826,6 +9157,9 @@ And explain whether you would recommend it to others.</em>
     slug: 'frances-dalf-c1-para-universidades-y-trabajo-en-francia',
     title: 'DALF C1: qué puertas abre en Francia, Quebec y el mundo francófono',
     description: 'El DALF C1 es el certificado de francés más valorado para trabajar y estudiar en Francia o Quebec. Guía de su estructura, nivel exigido y cómo prepararse.',
+    metaTitle: 'DALF C1: qué puertas abre en Francia y Quebec',
+    metaDescription:
+      'El certificado de francés más valorado para estudiar y trabajar en el mundo francófono. Estructura, nivel exigido y preparación.',
     date: '2026-05-31',
     readTime: 9,
     category: 'Francés',
@@ -8902,6 +9236,9 @@ And explain whether you would recommend it to others.</em>
     slug: 'ingles-para-abogados-y-profesionales-del-derecho',
     title: 'Inglés jurídico para abogados colombianos: contratos, arbitraje y documentos legales',
     description: 'El inglés jurídico tiene vocabulario y convenciones propias. Guía para abogados colombianos que trabajan con clientes o firmas internacionales.',
+    metaTitle: 'Inglés jurídico para abogados: contratos y arbitraje',
+    metaDescription:
+      'El inglés jurídico tiene vocabulario y convenciones propias. Qué dominar para trabajar con clientes y firmas internacionales.',
     date: '2026-05-31',
     readTime: 9,
     category: 'Inglés',
@@ -8999,6 +9336,9 @@ And explain whether you would recommend it to others.</em>
     slug: 'aprender-italiano-con-musica-y-peliculas',
     title: 'Aprender italiano con música y películas: método práctico para hispanohablantes',
     description: 'La música italiana y el cine italiano son las herramientas de inmersión más placenteras. Guía con recursos recomendados y método de estudio activo para hispanohablantes.',
+    metaTitle: 'Aprender italiano con música y películas',
+    metaDescription:
+      'El cine y la música italianos son la inmersión más agradable que hay. Qué recursos usar y cómo estudiarlos de forma activa.',
     date: '2026-05-31',
     readTime: 8,
     category: 'Italiano',
@@ -9089,6 +9429,9 @@ And explain whether you would recommend it to others.</em>
     title: 'Academias de inglés en Bucaramanga: comparativa 2026 y cómo elegir',
     description:
       'Las mejores academias de inglés en Bucaramanga en 2026: qué ofrece cada una, precios, metodología y cuál elegir según tu objetivo (IELTS, TOEFL, inglés conversacional o trabajo remoto).',
+    metaTitle: 'Academias de inglés en Bucaramanga: comparativa 2026',
+    metaDescription:
+      'Qué ofrece cada academia de inglés de Bucaramanga, precios, metodología y cuál elegir según tu objetivo: IELTS, TOEFL o inglés general.',
     date: '2026-06-01',
     readTime: 8,
     category: 'Inglés',
@@ -9173,6 +9516,9 @@ And explain whether you would recommend it to others.</em>
     title: '¿Cuánto cuesta aprender inglés en Bucaramanga en 2026? Precios reales',
     description:
       'Guía completa de precios de clases de inglés en Bucaramanga 2026: academias tradicionales, clases particulares, plataformas online y paquetes de horas. Cuánto pagar según tu objetivo.',
+    metaTitle: 'Cuánto cuesta aprender inglés en Bucaramanga en 2026',
+    metaDescription:
+      'Precios reales de academias, clases particulares y plataformas online en Bucaramanga, y cuánto conviene pagar según tu objetivo.',
     date: '2026-06-01',
     readTime: 7,
     category: 'Inglés',
@@ -9261,6 +9607,9 @@ And explain whether you would recommend it to others.</em>
     title: 'Clases de inglés presenciales vs online en Bucaramanga: guía honesta 2026',
     description:
       'Comparación real entre clases de inglés presenciales y online en Bucaramanga: ventajas, desventajas, diferencias de precio y cuál es mejor según tu objetivo en 2026.',
+    metaTitle: 'Inglés presencial u online en Bucaramanga: cuál elegir',
+    metaDescription:
+      'Ventajas, inconvenientes y diferencias de precio entre clases presenciales y online en Bucaramanga, y cuál rinde más según tu objetivo.',
     date: '2026-06-01',
     readTime: 7,
     category: 'Inglés',
@@ -9335,6 +9684,9 @@ And explain whether you would recommend it to others.</em>
     title: 'IELTS en Bucaramanga: centros autorizados, fechas y cómo registrarse',
     description:
       'Todo lo que necesitas saber sobre el IELTS en Bucaramanga: dónde presentarlo, cuánto cuesta, cómo registrarse y cómo prepararte con WeLearn para alcanzar el puntaje que necesitas.',
+    metaTitle: 'IELTS en Bucaramanga: centros, fechas y registro',
+    metaDescription:
+      'Dónde se presenta el IELTS en Bucaramanga, cuánto cuesta, cómo registrarse paso a paso y cuánto tiempo necesitas para prepararlo.',
     date: '2026-06-01',
     readTime: 6,
     category: 'IELTS',

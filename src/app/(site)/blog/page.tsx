@@ -4,7 +4,7 @@ import BlogClient from './BlogClient';
 import s from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Blog de idiomas — Guías, estrategias y recursos | WeLearn',
+  title: 'Blog de idiomas — Guías, estrategias y recursos',
   description:
     'Artículos prácticos sobre preparación IELTS, TOEFL, ICFES y aprendizaje de coreano escritos por David Duarte y el equipo pedagógico de WeLearn.',
   keywords: [
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     'guia ielts band 7', 'metodo aprendizaje idiomas',
   ],
   openGraph: {
-    title: 'Blog de idiomas — Idiomas WeLearn',
+    title: 'Blog de idiomas',
     description: 'Guías prácticas de preparación IELTS, ICFES y coreano para hispanohablantes.',
     url: 'https://www.idiomaswl.com/blog',
   },

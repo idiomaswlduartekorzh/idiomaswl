@@ -11,7 +11,7 @@ const ESCUCHA = listeningCard(
 );
 
 export const metadata: Metadata = {
-  title: 'Italiano A2 — Elige una habilidad | Idiomas WeLearn',
+  title: 'Italiano A2 — Elige una habilidad',
   description: 'Italiano A2: passato prossimo, imperfetto, futuro semplice, pronomi e comparativi. Lectura, gramática, vocabulario, escritura, habla y escucha.',
   alternates: { canonical: 'https://idiomaswl.com/practica/italiano/a2' },
 };

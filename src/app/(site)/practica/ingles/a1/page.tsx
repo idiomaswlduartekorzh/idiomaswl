@@ -4,7 +4,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema'
 import { PracticaWABanner } from '@/components/PracticaWABanner'
 
 export const metadata: Metadata = {
-  title: 'Inglés A1 — Elige una habilidad | Idiomas WeLearn',
+  title: 'Inglés A1 — Elige una habilidad',
   description: 'Inglés A1: lectura con 5 textos, gramática interactiva, escritura guiada, expresión oral, vocabulario temático y escucha.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ingles/a1' },
 }

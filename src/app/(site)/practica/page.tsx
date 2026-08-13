@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     'ICFES inglés práctica', 'Hangul aprender', 'leer coreano', 'batchim reglas',
   ],
   openGraph: {
-    title: 'Práctica de Idiomas y Exámenes — Idiomas WeLearn',
+    title: 'Práctica de Idiomas y Exámenes',
     description: 'IELTS Writing Task 1, ICFES inglés bajo estrés y herramientas interactivas de coreano.',
     url: 'https://www.idiomaswl.com/practica',
   },

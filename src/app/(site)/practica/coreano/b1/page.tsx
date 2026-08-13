@@ -11,7 +11,7 @@ const ESCUCHA = listeningCard(
 );
 
 export const metadata: Metadata = {
-  title: 'Coreano B1 — Elige una habilidad | Idiomas WeLearn',
+  title: 'Coreano B1 — Elige una habilidad',
   description: 'Coreano B1: -(으)면 (condicional), -아/어야 하다 (obligación), -(으)ㄹ 수 있다 (capacidad), -기 때문에 (razón), -는데 (contexto/contraste). 6 habilidades interactivas.',
   alternates: { canonical: 'https://idiomaswl.com/practica/coreano/b1' },
 };

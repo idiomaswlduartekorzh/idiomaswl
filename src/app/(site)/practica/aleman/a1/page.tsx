@@ -5,7 +5,7 @@ import { PracticaWABanner } from '@/components/PracticaWABanner';
 import { listeningCard } from '@/data/practica/series/page-copy';
 
 export const metadata: Metadata = {
-  title: 'Alemán A1 — Elige una habilidad | Idiomas WeLearn',
+  title: 'Alemán A1 — Elige una habilidad',
   description: 'Alemán A1: Lesen, Grammatik (Artikel, sein, Pronomen), Schreiben, Sprechen, Vokabular und Hören.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/aleman/a1' },
 };

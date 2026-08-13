@@ -6,9 +6,9 @@ const WA = '573005004253';
 const WA_FUNDADOR = encodeURIComponent('Hola, quiero asegurar mi cupo de Miembro Fundador de coreano en WeLearn. ¿Cuántos cupos quedan disponibles?');
 
 export const metadata: Metadata = {
-  title: 'Miembro Fundador Coreano — 50 Cupos · Precio Vitalicio | WeLearn',
+  title: 'Miembro Fundador Coreano — 50 Cupos · Precio Vitalicio',
   description:
-    'Los primeros 50 estudiantes de coreano en WeLearn acceden a precio especial congelado para siempre. Sesión 1:1 con David, grupo exclusivo y acceso a todos los niveles. Cupos limitados.',
+    'Los primeros 50 estudiantes de coreano congelan su precio para siempre: sesión 1:1 con David, grupo exclusivo y todos los niveles. Cupos limitados.',
   keywords: [
     'miembro fundador coreano WeLearn',
     'curso coreano precio especial',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     'coreano WeLearn precio vitalicio',
   ],
   openGraph: {
-    title: 'Miembro Fundador Coreano — 50 Cupos · WeLearn',
+    title: 'Miembro Fundador Coreano — 50 Cupos',
     description: '50 cupos con precio vitalicio congelado. Únete a los primeros estudiantes de coreano en WeLearn.',
     url: 'https://www.idiomaswl.com/miembro-fundador',
   },

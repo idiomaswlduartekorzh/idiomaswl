@@ -9,8 +9,8 @@ import AcademicVocabularyHubClient from './AcademicVocabularyHubClient'
  */
 
 export const metadata: Metadata = {
-  title: 'Vocabulario académico en inglés para IELTS, organizado por función',
-  description: 'Matizar, afirmar, atribuir, cuantificar, causar, valorar, proponer y el registro: las 8 funciones del vocabulario en IELTS Writing Task 2, con el patrón de cada palabra y ejercicios corregidos.',
+  title: 'Vocabulario académico para IELTS, organizado por función',
+  description: 'Las 8 funciones del vocabulario en IELTS Writing Task 2: matizar, afirmar, atribuir, cuantificar, causar, valorar y proponer, con ejercicios.',
   keywords: [
     'vocabulario académico inglés IELTS',
     'vocabulario IELTS writing task 2',

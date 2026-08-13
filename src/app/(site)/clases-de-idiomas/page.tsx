@@ -5,9 +5,9 @@ import { BLOG_POSTS } from '@/data/blog';
 import LocalBand from '@/components/hub/LocalBand';
 
 export const metadata: Metadata = {
-  title: 'Academia de Idiomas en Bucaramanga y Online — 8 Idiomas y 9 Certificaciones | WeLearn',
+  title: 'Academia de idiomas en Bucaramanga y online — 8 idiomas',
   description:
-    'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Ocho idiomas —inglés, italiano, portugués, francés, ruso, alemán, japonés y coreano— y nueve certificaciones oficiales: IELTS, TOEFL, Cambridge, ICFES, Goethe, DELF, CILS, Celpe-Bras y TOPIK. Diagnóstico gratis.',
+    'Ocho idiomas y nueve certificaciones oficiales, en Bucaramanga y online para toda Colombia: IELTS, TOEFL, Goethe, DELF, CILS y TOPIK. Diagnóstico gratis.',
   keywords: [
     'academia de idiomas Bucaramanga',
     'clases de idiomas Bucaramanga',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     'aprender idiomas con tutor Colombia',
   ],
   openGraph: {
-    title: 'Academia de Idiomas en Bucaramanga y Online | WeLearn',
+    title: 'Academia de Idiomas en Bucaramanga y Online',
     description: 'Inglés, italiano, portugués, francés, ruso, alemán, japonés y coreano. Presencial en Bucaramanga y online en toda Colombia. Diagnóstico gratis.',
     url: 'https://www.idiomaswl.com/clases-de-idiomas',
     type: 'website',

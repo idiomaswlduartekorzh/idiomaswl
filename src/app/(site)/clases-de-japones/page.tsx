@@ -11,9 +11,9 @@ const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de japonés
 const WA_JLPT    = encodeURIComponent('Hola, quiero prepararme para el JLPT con WeLearn. ¿Cómo funciona el plan?');
 
 export const metadata: Metadata = {
-  title: 'Clases de Japonés en Bucaramanga y Online — Desde Cero y JLPT | WeLearn',
+  title: 'Clases de japonés en Bucaramanga y online — JLPT desde cero',
   description:
-    'Academia de japonés en Bucaramanga con clases presenciales y online para toda Colombia. Del hiragana al JLPT, con preparación para becas de estudio en Japón. Diagnóstico gratis.',
+    'Academia de japonés en Bucaramanga y online. Del hiragana al JLPT, con preparación para becas de estudio en Japón. Diagnóstico gratis.',
   keywords: [
     'clases de japonés Bucaramanga',
     'curso de japonés Bucaramanga',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     'WeLearn japonés',
   ],
   openGraph: {
-    title: 'Clases de Japonés en Bucaramanga y Online — Desde Cero y JLPT | WeLearn',
+    title: 'Clases de Japonés en Bucaramanga y Online — Desde Cero y JLPT',
     description:
       'Presencial en Bucaramanga y online en toda Colombia. Del hiragana al JLPT, con la ruta real hacia las becas de estudio en Japón. Diagnóstico gratis.',
     url: 'https://www.idiomaswl.com/clases-de-japones',

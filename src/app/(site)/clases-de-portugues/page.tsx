@@ -11,9 +11,9 @@ const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de portugu�
 const WA_CELPE   = encodeURIComponent('Hola, quiero prepararme para el examen Celpe-Bras con WeLearn. ¿Cuándo puedo empezar?');
 
 export const metadata: Metadata = {
-  title: 'Clases de Portugués en Bucaramanga y Online — Preparación Celpe-Bras | WeLearn',
+  title: 'Clases de portugués en Bucaramanga y online — Celpe-Bras',
   description:
-    'Academia de portugués en Bucaramanga con clases presenciales y online para toda Colombia. Preparación del Celpe-Bras, que se presenta en la propia ciudad. Portugués brasileño con método WeLearn. Diagnóstico gratis.',
+    'Academia de portugués en Bucaramanga y online. Preparación del Celpe-Bras, que se presenta en la propia ciudad. Diagnóstico gratis.',
   keywords: [
     'clases de portugués Bucaramanga',
     'curso de portugués Bucaramanga',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     'WeLearn portugués',
   ],
   openGraph: {
-    title: 'Clases de Portugués en Bucaramanga y Online — Celpe-Bras | WeLearn',
+    title: 'Clases de Portugués en Bucaramanga y Online — Celpe-Bras',
     description: 'Presencial en Bucaramanga y online en toda Colombia. Preparación del Celpe-Bras, que se presenta aquí mismo en la ciudad. Diagnóstico gratis.',
     url: 'https://www.idiomaswl.com/clases-de-portugues',
   },

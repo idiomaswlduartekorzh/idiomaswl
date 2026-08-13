@@ -11,8 +11,8 @@ const ESCUCHA = listeningCard(
 );
 
 export const metadata: Metadata = {
-  title: 'Italiano B1 — Elige una habilidad | Idiomas WeLearn',
-  description: 'Italiano B1 Intermedio: congiuntivo, condizionale, particelle pronominali, pronomi relativi, periodo ipotetico y discorso indiretto. Lectura, gramática, vocabulario, escritura, habla y escucha.',
+  title: 'Italiano B1 — Elige una habilidad',
+  description: 'Italiano B1: congiuntivo, condizionale, particelle, pronomi relativi, periodo ipotetico y discorso indiretto, con las seis habilidades.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/italiano/b1' },
 };
 

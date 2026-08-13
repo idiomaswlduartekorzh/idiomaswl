@@ -5,7 +5,7 @@ import { PracticaWABanner } from '@/components/PracticaWABanner';
 import { audioReady } from '@/data/practica/series/audio-ready';
 
 export const metadata: Metadata = {
-  title: 'Portugués A1 — Elige una habilidad | Idiomas WeLearn',
+  title: 'Portugués A1 — Elige una habilidad',
   description: 'Portugués A1: leitura, gramática (artigos, ser/estar, verbos -AR), escritura, expressão oral, vocabulário e escuta.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/portugues/a1' },
 };

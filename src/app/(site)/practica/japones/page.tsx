@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
-  title: 'Práctica de Japonés — Elige tu nivel JLPT | Idiomas WeLearn',
+  title: 'Práctica de Japonés — Elige tu nivel JLPT',
   description: 'Ejercicios interactivos de japonés por nivel JLPT. Gramática A1/N5, A2/N4 y B1/N3 con práctica progresiva.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/japones' },
 };

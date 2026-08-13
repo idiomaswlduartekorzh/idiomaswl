@@ -5,7 +5,7 @@ import { PracticaWABanner } from '@/components/PracticaWABanner';
 import { listeningCard } from '@/data/practica/series/page-copy';
 
 export const metadata: Metadata = {
-  title: 'Alemán B1 — Elige una habilidad | Idiomas WeLearn',
+  title: 'Alemán B1 — Elige una habilidad',
   description: 'Alemán B1: Konjunktiv II, Relativsätze, Passiv, temporale Konjunktionen e Indirekte Rede. 6 habilidades interactivas.',
   alternates: { canonical: 'https://idiomaswl.com/practica/aleman/b1' },
 };

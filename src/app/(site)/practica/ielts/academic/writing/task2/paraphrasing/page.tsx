@@ -10,8 +10,8 @@ import ParaphrasingHubClient from './ParaphrasingHubClient'
  */
 
 export const metadata: Metadata = {
-  title: 'Cómo parafrasear en inglés: las 5 técnicas con ejemplos y ejercicios',
-  description: 'Parafrasear en inglés con sinónimos, orden de palabras, forma de la palabra, voz pasiva y estructura de la frase. Con los calcos del español que hay que evitar y ejercicios corregidos.',
+  title: 'Cómo parafrasear en inglés: las 5 técnicas, con ejercicios',
+  description: 'Parafrasear con sinónimos, orden de palabras, forma de la palabra, voz pasiva y estructura, con los calcos del español que hay que evitar.',
   keywords: [
     'cómo parafrasear en inglés',
     'parafrasear IELTS writing',

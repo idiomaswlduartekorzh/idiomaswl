@@ -5,7 +5,7 @@ import { PracticaWABanner } from '@/components/PracticaWABanner';
 import { audioReady } from '@/data/practica/series/audio-ready';
 
 export const metadata: Metadata = {
-  title: 'Ruso A1 — Elige una habilidad | Idiomas WeLearn',
+  title: 'Ruso A1 — Elige una habilidad',
   description: 'Ruso A1: alfabeto cirílico, gramática (casos, conjugaciones), escritura, frases esenciales y vocabulario con transliteración.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ruso/a1' },
 };

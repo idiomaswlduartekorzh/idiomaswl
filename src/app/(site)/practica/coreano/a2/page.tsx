@@ -11,7 +11,7 @@ const ESCUCHA = listeningCard(
 );
 
 export const metadata: Metadata = {
-  title: 'Coreano A2 — Elige una habilidad | Idiomas WeLearn',
+  title: 'Coreano A2 — Elige una habilidad',
   description: 'Coreano A2: 았/었어요 (pasado), -(으)려고 하다 (intención), -(으)ㄹ 것 같다 (conjetura), -지만 (contraste), -아/어서 (causa/secuencia). 6 habilidades interactivas.',
   alternates: { canonical: 'https://idiomaswl.com/practica/coreano/a2' },
 };

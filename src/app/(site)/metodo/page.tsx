@@ -4,7 +4,7 @@ import MetodoClient from './MetodoClient';
 export const metadata: Metadata = {
   title: 'El Método WeLearn — Cómo aprendemos de verdad',
   description:
-    'Descubre el método WeLearn: 11 etapas diarias diseñadas por nuestra fundadora, doctora en Filología, para que el cerebro interiorice un idioma sin memorización forzada. Más de 1.000 estudiantes y 100 certificaciones internacionales aprobadas.',
+    'Once etapas diarias, diseñadas por una doctora en Filología, para que el cerebro interiorice un idioma sin memorización forzada.',
   keywords: [
     'método WeLearn', 'aprender idiomas método efectivo', 'método pedagógico idiomas Colombia',
     'IELTS preparación efectiva', 'TOEFL método aprendizaje', 'Zhanna Korzh filología',

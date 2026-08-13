@@ -5,7 +5,7 @@ import { PracticaWABanner } from '@/components/PracticaWABanner';
 import { listeningCard } from '@/data/practica/series/page-copy';
 
 export const metadata: Metadata = {
-  title: 'Alemán A2 — Grundkenntnisse | Idiomas WeLearn',
+  title: 'Alemán A2 — Grundkenntnisse',
   description: 'Alemán A2: Perfekt, Dativ, Modalverben im Präteritum, trennbare Verben und Komparativ. 6 habilidades interactivas.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/aleman/a2' },
 };

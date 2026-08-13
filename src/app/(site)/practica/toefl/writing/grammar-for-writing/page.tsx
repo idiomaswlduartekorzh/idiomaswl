@@ -26,7 +26,7 @@ const FAQS = [
 ];
 
 export const metadata: Metadata = {
-  title: 'TOEFL Grammar for Writing: gramática aplicada | Idiomas WeLearn',
+  title: 'TOEFL Grammar for Writing: gramática aplicada',
   description:
     'Practica gramática aplicada a TOEFL Writing: sentence building, conectores, tono de email, cláusulas y precisión para Academic Discussion.',
   keywords: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     'TOEFL email grammar',
   ],
   openGraph: {
-    title: 'TOEFL Grammar for Writing | Idiomas WeLearn',
+    title: 'TOEFL Grammar for Writing',
     description:
       'Gramática aplicada a TOEFL Writing con ejercicios originales, respuestas explicadas y checklist por tarea.',
     url: URL,

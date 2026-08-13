@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   // Search Console (18-29 jul 2026): lo que la gente teclea es «cursos de ingles en
   // bucaramanga presenciales» y «cursos de ingles bucaramanga presencial». El title
   // anterior no contenía ni «cursos» ni «presenciales».
-  title: 'Cursos de inglés en Bucaramanga presenciales y online — Academia WeLearn',
+  title: 'Cursos de inglés en Bucaramanga presenciales y online',
   description:
-    'Academia de inglés con sede física en Bucaramanga, barrio Sotomayor: cursos presenciales y también online. Preparación para IELTS, TOEFL e ICFES con tutor asignado. Diagnóstico de nivel gratis.',
+    'Academia de inglés con sede física en Bucaramanga, barrio Sotomayor: cursos presenciales y online, con tutor asignado. Diagnóstico de nivel gratis.',
   keywords: [
     'cursos de inglés en Bucaramanga presenciales', 'clases de inglés presenciales Bucaramanga',
     'clases de inglés en Bucaramanga', 'academia de inglés Bucaramanga',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-ingles-bucaramanga' },
   openGraph: {
-    title: 'Cursos de inglés en Bucaramanga, presenciales y online — WeLearn',
+    title: 'Cursos de inglés en Bucaramanga, presenciales y online',
     description: 'Sede física en el barrio Sotomayor. Cursos presenciales en Bucaramanga y también online. Preparación IELTS, TOEFL e ICFES. Diagnóstico gratis.',
     url: 'https://www.idiomaswl.com/clases-de-ingles-bucaramanga',
   },

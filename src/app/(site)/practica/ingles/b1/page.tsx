@@ -5,7 +5,7 @@ import { PracticaWABanner } from '@/components/PracticaWABanner';
 import { listeningCard } from '@/data/practica/series/page-copy';
 
 export const metadata: Metadata = {
-  title: 'Inglés B1 — Elige una habilidad | Idiomas WeLearn',
+  title: 'Inglés B1 — Elige una habilidad',
   description: 'Inglés B1: present perfect, past continuous, condicionales y voz pasiva. Lectura, gramática, escritura, habla, vocabulario y escucha.',
   alternates: { canonical: 'https://idiomaswl.com/practica/ingles/b1' },
 };

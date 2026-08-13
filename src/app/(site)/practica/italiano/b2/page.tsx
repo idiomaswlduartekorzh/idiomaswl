@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
-  title: 'Italiano B2 — Esercizi integrati | Idiomas WeLearn',
+  title: 'Italiano B2 — Esercizi integrati',
   description: 'Italiano B2: práctica integrada con lectura, escucha, preguntas de comprensión y escritura argumentativa.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/italiano/b2' },
 };

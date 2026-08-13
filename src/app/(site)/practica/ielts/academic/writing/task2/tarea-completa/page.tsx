@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Task2SkillStructuredData } from '../Task2SkillStructuredData'
 
 export const metadata: Metadata = {
-  title: 'IELTS Writing Task 2 — Tarea Completa — IELTS Writing Task 2 integrado',
+  title: 'IELTS Writing Task 2: la tarea completa, de principio a fin',
   description: '25 enunciados de las cinco familias, cada uno con su ensayo modelo completo. Planifica, escribe con temporizador de 40 minutos y compara párrafo a párrafo.',
   keywords: ['IELTS task 2 completo', 'IELTS writing task 2 full essay', 'IELTS tarea completa task 2', 'IELTS band 7 essay'],
   openGraph: {

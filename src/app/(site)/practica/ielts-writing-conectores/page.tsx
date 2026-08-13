@@ -5,7 +5,7 @@ import ConnectorsGame from './ConnectorsGame';
 export const metadata: Metadata = {
   title: 'Conectores IELTS Writing Task 1 — Práctica Interactiva',
   description:
-    'Practica el uso correcto de conectores en IELTS Writing Task 1. Ordena oraciones y elige los conectores apropiados para alcanzar Band 6–7 en Coherence & Cohesion.',
+    'Practica los conectores del IELTS Writing Task 1: ordena oraciones y elige el conector correcto para subir en Coherence & Cohesion.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ielts-writing-conectores' },
 };
 

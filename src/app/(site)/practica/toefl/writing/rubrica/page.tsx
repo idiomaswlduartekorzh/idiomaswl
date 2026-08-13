@@ -26,7 +26,7 @@ const FAQS = [
 ];
 
 export const metadata: Metadata = {
-  title: 'TOEFL Writing rúbrica, checklist y revision drills | Idiomas WeLearn',
+  title: 'TOEFL Writing rúbrica, checklist y revision drills',
   description:
     'Rúbrica pedagógica TOEFL Writing para Build a Sentence, Write an Email y Academic Discussion: criterios, checklist, revision drills y autoevaluación.',
   keywords: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     'TOEFL writing revision drills',
   ],
   openGraph: {
-    title: 'TOEFL Writing rúbrica, checklist y revision drills | Idiomas WeLearn',
+    title: 'TOEFL Writing rúbrica, checklist y revision drills',
     description:
       'Evalúa tus respuestas TOEFL Writing con rúbrica pedagógica y revision drills para las tareas actuales.',
     url: URL,

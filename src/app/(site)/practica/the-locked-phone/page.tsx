@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import LockedPhoneClient from './LockedPhoneClient';
 
 export const metadata: Metadata = {
-  title: 'The Locked Phone — English Comprehension Practice | WeLearn',
+  title: 'The Locked Phone — English Comprehension Practice',
   description:
-    'Practica listening y comprensión de lectura en inglés B1–B2 con una discusión de pareja real: ella pidió revisarle el celular, él dijo que no. Dos notas de voz, transcripción interactiva y 19 preguntas de vocabulario, inferencia, tono y pensamiento crítico.',
+    'Listening y comprensión en inglés B1–B2 con una discusión de pareja real: dos notas de voz, transcripción interactiva y 19 preguntas.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/the-locked-phone' },
   openGraph: {
     title: 'The Locked Phone — English Comprehension Practice',

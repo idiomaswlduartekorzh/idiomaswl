@@ -4,7 +4,7 @@ import type { QuestLevel, QuestGuide } from '@/components/practica/QuestEngine';
 import { QuizSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
-  title: 'Advanced Connectors B2 — moreover, nevertheless, provided that | Idiomas WeLearn',
+  title: 'Advanced connectors B2: moreover, nevertheless, provided',
   description: 'Practica los conectores avanzados del inglés B2: moreover, furthermore, nevertheless, consequently, provided that, despite, so that. 6 niveles progresivos.',
   alternates: { canonical: 'https://idiomaswl.com/practica/ingles/b2/conectores' },
 };
