@@ -34,8 +34,8 @@ export default function Image() {
         </div>
 
         {/* Headline */}
-        <div style={{ fontSize: 62, fontWeight: 800, color: '#fff', lineHeight: 1.1, letterSpacing: '-0.03em', flex: 1 }}>
-          Aprende alemán<br />
+        <div style={{ display: 'flex', flexDirection: 'column', fontSize: 62, fontWeight: 800, color: '#fff', lineHeight: 1.1, letterSpacing: '-0.03em', flex: 1 }}>
+          Aprende alemán
           <span style={{ color: '#4f6fff' }}>de verdad.</span>
         </div>
 
@@ -58,6 +58,8 @@ export default function Image() {
             border: '1px solid rgba(79,111,255,0.3)',
             borderRadius: 10,
             padding: '10px 18px',
+            display: 'flex',
+            alignItems: 'center',
           }}>
             <span style={{ fontSize: 15, fontWeight: 700, color: '#7b93ff' }}>Goethe-Zertifikat</span>
           </div>
