@@ -220,7 +220,21 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         ? <YnngIndependentPractice passage={ynngIndependent} />
         : undefined}
     progressEngine={isMatchingHeadings ? <MatchingHeadingsProgressEngine /> : isMultipleChoice ? <MultipleChoiceProgressEngine /> : isTfng ? <TfngProgressEngine /> : isYnng ? <YnngProgressEngine /> : undefined}
-    sourceReview={isMultipleChoice ? (
+    sourceReview={isMatchingHeadings ? (
+      <SkillReviewSourceBlock
+        accent={config.accent}
+        skillName="Matching Headings"
+        reviewedFocus={[
+          'Guided, independent and Progress Engine passage pools are separated.',
+          'A heading cannot be reused within a passage, and every full set contains two deliberately unused headings.',
+          'Distractors are classified by detail-level match, lexical echo, wrong paragraph function, excessive breadth or unsupported claim.',
+        ]}
+        sources={[
+          { label: 'Official IELTS Academic Reading format', href: IELTS_ACADEMIC_URL, note: 'Confirms Matching Headings as a Reading task family based on the main idea of a paragraph or section and the use of extra headings.' },
+          { label: 'WeLearn practice blueprint', note: 'Defines held-back transfer, non-reuse, explicit distractor analysis, local progress and the client-key security boundary.' },
+        ]}
+      />
+    ) : isMultipleChoice ? (
       <SkillReviewSourceBlock
         accent={config.accent}
         skillName="Multiple Choice"
@@ -248,8 +262,16 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
       'you preserve scope, polarity, logic and any stated word limit',
     ]}
     faqs={route.faqs}
-    officialNote={`${config.name} is presented here as guided WeLearn practice. The official IELTS format source defines the task family; the passages, explanations and distractors on this page are original training material.`}
-    nextLinks={[
+    officialNote={isMatchingHeadings
+      ? 'Matching Headings is presented here as guided WeLearn practice. Answer keys reach the browser for feedback, so this is not a secure Exam or proctored mode.'
+      : `${config.name} is presented here as guided WeLearn practice. The official IELTS format source defines the task family; the passages, explanations and distractors on this page are original training material.`}
+    nextLinks={isMatchingHeadings ? [
+      { href: '/practica/ielts/reading/tipos-de-preguntas/matching-information', label: 'Continue to Matching Information', primary: true },
+      { href: '/practica/ielts/reading/habilidades/skimming', label: 'Strengthen skimming' },
+      { href: '/practica/ielts/reading/habilidades/parafrasis', label: 'Strengthen paraphrase recognition' },
+      { href: '/practica/ielts/reading/mixed-practice', label: 'Open Mixed Practice' },
+      { href: '/practica/ielts/reading', label: 'Back to Reading hub' },
+    ] : [
       { href: `/practica/ielts/reading/tipos-de-preguntas/${config.next}`, label: `Continue to ${TYPES[config.next as Slug].name}`, primary: true },
       { href: '/practica/ielts/reading/habilidades', label: 'Strengthen Reading skills' },
       { href: '/practica/ielts/reading/mixed-practice', label: 'Open Mixed Practice' },

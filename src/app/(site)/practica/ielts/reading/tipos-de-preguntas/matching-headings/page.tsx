@@ -1,194 +1,109 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
-import OfficialStrategyCard from '@/components/exam-practice/OfficialStrategyCard';
-import QuestionTypeReviewSourceBlock from '@/components/exam-practice/QuestionTypeReviewSourceBlock';
-import { BookOpenCheck, Eye, ListChecks } from 'lucide-react';
-import MatchingHeadingsPassageBank from '@/components/exam-practice/MatchingHeadingsPassageBank';
-import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
+import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import {
-  IELTS_MATCHING_HEADINGS_PASSAGES,
-  IELTS_READING_TYPES,
-  PRACTICE_BASE_URL,
-} from '@/data/practica-exams/seo-catalog';
+  MatchingHeadingsGuidedPractice,
+  MatchingHeadingsIndependentPractice,
+  MatchingHeadingsProgressEngine,
+} from '@/components/exam-practice/MatchingHeadingsPracticeLab';
+import { IELTS_READING_TYPES, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
+import {
+  MATCHING_HEADINGS_GUIDED_PASSAGE_ID,
+  MATCHING_HEADINGS_INDEPENDENT_PASSAGE_ID,
+  getMatchingHeadingsPassage,
+} from '@/data/practica-exams/ielts-reading-matching-headings-progress';
 
 const ROUTE = IELTS_READING_TYPES.find((item) => item.slug === 'matching-headings')!;
-const URL = `${PRACTICE_BASE_URL}${ROUTE.path}`;
-const ACCENT = '#0369a1';
-const IELTS_SAMPLE_URL = 'https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test';
+const TITLE = 'IELTS Matching Headings: match the whole paragraph function';
+const DESCRIPTION = 'Learn to identify a paragraph’s central purpose, reject detail-level distractors and prove one heading across the whole paragraph.';
+const IELTS_ACADEMIC_URL = 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading';
+const guidedPassage = getMatchingHeadingsPassage(MATCHING_HEADINGS_GUIDED_PASSAGE_ID)!;
+const independentPassage = getMatchingHeadingsPassage(MATCHING_HEADINGS_INDEPENDENT_PASSAGE_ID)!;
+// Scaling contract: docs/ielts-reading-practice-engine-blueprint.md
 
 export const metadata: Metadata = {
-  title: 'IELTS Matching Headings: estrategia y ejercicios',
-  description: ROUTE.description,
+  title: 'IELTS Matching Headings: Method, Practice and Progress',
+  description: DESCRIPTION,
   keywords: ROUTE.keywords,
+  alternates: { canonical: `${PRACTICE_BASE_URL}${ROUTE.path}` },
   openGraph: {
-    title: 'IELTS Matching Headings: estrategia y ejercicios',
-    description: ROUTE.description,
-    url: URL,
+    title: TITLE,
+    description: DESCRIPTION,
+    url: `${PRACTICE_BASE_URL}${ROUTE.path}`,
     type: 'website',
-    locale: 'es_CO',
+    locale: 'en_US',
   },
-  alternates: { canonical: URL },
 };
 
 export default function Page() {
   return (
-    <>
-      <LearningResourceJsonLd
-        name={ROUTE.title}
-        url={URL}
-        description={ROUTE.description}
-        teaches={ROUTE.teaches}
-        isPartOf={{ name: 'Tipos de preguntas IELTS Reading', url: `${PRACTICE_BASE_URL}/practica/ielts/reading/tipos-de-preguntas` }}
-      />
-      <FaqJsonLd faqs={ROUTE.faqs} />
-      <BreadcrumbJsonLd
-        items={[
-          { name: 'Práctica', url: `${PRACTICE_BASE_URL}/practica` },
-          { name: 'IELTS', url: `${PRACTICE_BASE_URL}/practica/ielts` },
-          { name: 'Reading', url: `${PRACTICE_BASE_URL}/practica/ielts/reading` },
-          { name: 'Tipos de preguntas', url: `${PRACTICE_BASE_URL}/practica/ielts/reading/tipos-de-preguntas` },
-          { name: 'Matching Headings', url: URL },
-        ]}
-      />
-
-      <section className="wl-section">
-        <div className="wrap" style={{ maxWidth: 1040 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
-            <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
-            <span>/</span>
-            <Link href="/practica/ielts" style={{ color: 'var(--muted)', textDecoration: 'none' }}>IELTS</Link>
-            <span>/</span>
-            <Link href="/practica/ielts/reading/tipos-de-preguntas" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Tipos de preguntas</Link>
-            <span>/</span>
-            <span style={{ color: 'var(--ink)', fontWeight: 800 }}>Matching Headings</span>
-          </div>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '1rem', alignItems: 'stretch', marginBottom: '1.5rem' }}>
-            <div>
-              <p className="eyebrow" style={{ margin: '0 0 0.5rem' }}>
-                <span className="ink-line" />IELTS Reading · Tipo de pregunta
-              </p>
-              <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.1rem)', lineHeight: 1.04, letterSpacing: '-0.04em', margin: '0 0 0.85rem', color: 'var(--ink)' }}>
-                IELTS Matching Headings
-              </h1>
-              <p style={{ color: 'var(--muted)', fontSize: '1rem', lineHeight: 1.75, margin: 0, maxWidth: 740 }}>
-                Matching Headings no pregunta por un dato. Pregunta por la idea que organiza todo el párrafo. Por eso las opciones peligrosas suelen mencionar una palabra real del texto, pero resumen solo un ejemplo secundario.
-              </p>
-            </div>
-
-            <aside className="wl-card" style={{ padding: '1rem', borderRadius: 16, display: 'grid', gap: '0.75rem', alignContent: 'center' }}>
-              {[
-                { label: 'Lectura', value: 'global', sub: 'idea principal' },
-                { label: 'Riesgo', value: 'detalle', sub: 'palabra repetida' },
-                { label: 'Método', value: 'función', sub: 'qué hace el párrafo' },
-              ].map((item) => (
-                <div key={item.label} style={{ display: 'flex', justifyContent: 'space-between', gap: '0.75rem', alignItems: 'center', border: '1px solid var(--line-soft)', borderRadius: 12, padding: '0.75rem', background: 'var(--bg-2)' }}>
-                  <span style={{ color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.72rem', textTransform: 'uppercase', fontWeight: 800 }}>{item.label}</span>
-                  <strong style={{ color: ACCENT, fontFamily: 'var(--mono)', fontSize: '1.05rem', textAlign: 'right' }}>
-                    {item.value}
-                    <span style={{ display: 'block', color: 'var(--muted)', fontSize: '0.66rem', fontWeight: 700 }}>{item.sub}</span>
-                  </strong>
-                </div>
-              ))}
-            </aside>
-          </div>
-
-          <OfficialStrategyCard
-            accent={ACCENT}
-            official="IELTS Academic Reading incluye Matching Headings para emparejar headings con párrafos o secciones según la idea principal."
-            strategy="WeLearn lo entrena como lectura global: identificar la función del párrafo y evitar opciones que solo repiten una palabra o ejemplo secundario."
-          />
-
-          <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: '0.85rem', marginBottom: '1.2rem' }}>
-            {[
-              {
-                icon: <Eye size={18} />,
-                title: 'Lee por función',
-                text: 'Pregunta si el párrafo define, contrasta, enumera, explica un cambio, presenta un problema o da evidencia.',
-              },
-              {
-                icon: <BookOpenCheck size={18} />,
-                title: 'No te cases con una palabra',
-                text: 'Una opción puede repetir vocabulario exacto y seguir siendo incorrecta si solo cubre una frase.',
-              },
-              {
-                icon: <ListChecks size={18} />,
-                title: 'Deja opciones dudosas',
-                text: 'Si dos headings parecen posibles, marca uno provisional y vuelve cuando hayas visto todo el texto.',
-              },
-            ].map((item) => (
-              <article key={item.title} className="wl-card" style={{ padding: '1rem', borderRadius: 14 }}>
-                <div style={{ display: 'flex', gap: '0.5rem', color: ACCENT, alignItems: 'center', marginBottom: '0.35rem' }}>
-                  {item.icon}
-                  <h2 style={{ margin: 0, color: 'var(--ink)', fontSize: '1rem' }}>{item.title}</h2>
-                </div>
-                <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.58, fontSize: '0.9rem' }}>{item.text}</p>
-              </article>
-            ))}
-          </section>
-
-          <section className="wl-card" style={{ padding: '1.2rem', borderRadius: 16, marginBottom: '1rem' }}>
-            <p className="eyebrow" style={{ margin: '0 0 0.45rem' }}>Método WeLearn</p>
-            <h2 style={{ margin: '0 0 0.75rem', fontSize: '1.3rem', letterSpacing: '-0.02em' }}>Cómo resolver Matching Headings</h2>
-            <div style={{ display: 'grid', gap: '0.65rem' }}>
-              {[
-                'Lee el heading como una idea completa, no como una bolsa de palabras clave.',
-                'Lee la primera oración del párrafo y luego busca si el resto desarrolla, contrasta o cambia esa idea.',
-                'Elimina headings demasiado específicos: si solo cubren un ejemplo, no resumen el párrafo.',
-                'Comprueba que el heading elegido pueda funcionar como título del párrafo entero.',
-              ].map((item, index) => (
-                <p key={item} style={{ margin: 0, display: 'grid', gridTemplateColumns: '32px 1fr', gap: '0.65rem', alignItems: 'start', color: 'var(--ink-2)', lineHeight: 1.58 }}>
-                  <span style={{ width: 32, height: 32, borderRadius: 10, background: `${ACCENT}12`, color: ACCENT, display: 'grid', placeItems: 'center', fontFamily: 'var(--mono)', fontWeight: 900 }}>
-                    {index + 1}
-                  </span>
-                  <span>{item}</span>
-                </p>
-              ))}
-            </div>
-          </section>
-
-          <MatchingHeadingsPassageBank
-            passages={IELTS_MATCHING_HEADINGS_PASSAGES}
-            accent={ACCENT}
-            eyebrow="Banco Matching Headings"
-            title="Tres pasajes para entrenar idea principal"
-            intro="Practica con textos originales de WeLearn. El objetivo es elegir el heading que resume la función completa del párrafo, no una palabra llamativa ni un ejemplo aislado."
-          />
-
-          <section style={{ marginTop: '1.4rem' }}>
-            <QuestionTypeReviewSourceBlock
-              accent={ACCENT}
-              questionTypeName={ROUTE.title}
-              sources={[
-                {
-                  label: 'IELTS Academic sample test questions',
-                  href: IELTS_SAMPLE_URL,
-                  note: 'lista oficial de preguntas de muestra de IELTS Academic Reading usada para confirmar que esta ruta corresponde a un tipo de pregunta oficial.',
-                },
-                {
-                  label: 'Banco original WeLearn',
-                  note: 'pasajes, preguntas, distractores y explicaciones creados para practica pedagogica, sin copiar preguntas oficiales.',
-                },
-              ]}
-              reviewedFocus={[
-                'alineacion con tipos de pregunta oficiales de IELTS Reading',
-                'separacion entre formato oficial y metodo WeLearn',
-                'respuesta explicada con evidencia, alcance o trampa',
-              ]}
-            />
-
-            <p className="eyebrow" style={{ margin: '0 0 0.5rem' }}>Preguntas frecuentes</p>
-            <div style={{ display: 'grid', gap: '0.75rem' }}>
-              {ROUTE.faqs.map((faq) => (
-                <article key={faq.question} className="wl-card" style={{ padding: '1rem', borderRadius: 14 }}>
-                  <h2 style={{ margin: '0 0 0.35rem', color: 'var(--ink)', fontSize: '1rem' }}>{faq.question}</h2>
-                  <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.9rem' }}>{faq.answer}</p>
-                </article>
-              ))}
-            </div>
-          </section>
-        </div>
-      </section>
-    </>
+    <InternationalReadingSkillLesson
+      slug="matching-headings"
+      path={ROUTE.path}
+      indexPath="/practica/ielts/reading/tipos-de-preguntas"
+      indexName="Reading Question Types"
+      lessonLabel="IELTS Academic Reading · Question type"
+      name="Matching Headings"
+      title={TITLE}
+      description={DESCRIPTION}
+      directAnswer="Read the paragraph before the options, name its complete job in your own words, and choose the one heading that covers the opening, development and conclusion. Each heading can be used once; two headings remain unused."
+      facts={[
+        { label: 'Target', value: 'Main idea + function' },
+        { label: 'Evidence', value: 'Whole paragraph' },
+        { label: 'Main risk', value: 'Detail-level match' },
+      ]}
+      outcomes={[
+        { title: 'Compress the paragraph', text: 'Express the paragraph’s complete job in one short phrase before the heading bank controls your attention.' },
+        { title: 'Test global coverage', text: 'Use the opening, development, contrast and final sentence to check that one heading covers the full paragraph.' },
+        { title: 'Reject attractive details', text: 'Identify lexical echoes, memorable examples, claims that are too broad and headings with the wrong paragraph function.' },
+      ]}
+      method={[
+        { title: 'Read the paragraph first', text: 'Form a short label for what the entire paragraph does before comparing all headings.' },
+        { title: 'Name its function', text: 'Decide whether the paragraph defines, contrasts, explains, evaluates, sequences or solves.' },
+        { title: 'Eliminate narrow options', text: 'Reject headings that cover only one example, sentence or repeated word.' },
+        { title: 'Prove one-to-one coverage', text: 'Choose one unused heading that works as the title of the complete paragraph, then test the closest competitor.' },
+      ]}
+      weakExample="Choose the heading with the most repeated vocabulary, even if it describes only one supporting example."
+      strongExample="Summarise the paragraph as ‘a useful method with context-dependent limits’, reject the universal-solution heading as too broad, and verify that the remaining heading covers both the result and its qualification."
+      practice={<MatchingHeadingsGuidedPractice passage={guidedPassage} />}
+      independentPracticeExperience={<MatchingHeadingsIndependentPractice passage={independentPassage} />}
+      progressEngine={<MatchingHeadingsProgressEngine />}
+      sourceReview={(
+        <SkillReviewSourceBlock
+          accent="#0369a1"
+          skillName="Matching Headings"
+          reviewedFocus={[
+            'Guided, independent and Progress Engine passage pools are separated.',
+            'A heading cannot be reused within a passage, and every full set contains two deliberately unused headings.',
+            'Distractors are classified by a concrete failure: detail instead of main idea, keyword match, wrong paragraph function, excessive breadth or unsupported claim.',
+          ]}
+          sources={[
+            { label: 'Official IELTS Academic Reading format', href: IELTS_ACADEMIC_URL, note: 'Confirms Matching Headings as a Reading task family based on the main idea of a paragraph or section and the use of extra headings.' },
+            { label: 'WeLearn practice blueprint', note: 'Defines held-back transfer, non-reuse, explicit distractor analysis, local progress and the client-key security boundary.' },
+          ]}
+        />
+      )}
+      independentPractice={[
+        'Write a five-word paragraph label before opening the heading bank.',
+        'For every choice, quote evidence from at least two parts of the paragraph.',
+        'Name the closest distractor and classify why it fails.',
+        'Repeat only the paragraphs where your summary or coverage proof was incomplete.',
+      ]}
+      checklist={[
+        'you can name the paragraph’s complete function before reading the headings',
+        'you can prove your choice across the whole paragraph',
+        'you can reject the closest heading with a specific reason',
+        'you never reuse a heading or choose by lexical overlap alone',
+      ]}
+      faqs={ROUTE.faqs}
+      officialNote="Matching Headings is an official IELTS Academic Reading task family. This page is guided WeLearn practice; answer keys reach the browser for feedback, so it is not a secure Exam or proctored mode."
+      nextLinks={[
+        { href: '/practica/ielts/reading/tipos-de-preguntas/matching-information', label: 'Continue to Matching Information', primary: true },
+        { href: '/practica/ielts/reading/habilidades/skimming', label: 'Strengthen skimming' },
+        { href: '/practica/ielts/reading/habilidades/parafrasis', label: 'Strengthen paraphrase recognition' },
+        { href: '/practica/ielts/reading/mixed-practice', label: 'Open Mixed Practice' },
+        { href: '/practica/ielts/reading', label: 'Back to Reading hub' },
+      ]}
+    />
   );
 }

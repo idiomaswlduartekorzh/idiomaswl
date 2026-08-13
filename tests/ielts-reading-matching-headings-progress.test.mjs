@@ -149,14 +149,26 @@ test('a clean retry changes option order without changing the option set', () =>
   )));
 });
 
-test('the public question-type page mounts all three real-practice surfaces', async () => {
-  const page = await readFile(new URL('../src/app/(site)/practica/ielts/reading/international-question-type/[slug]/page.tsx', import.meta.url), 'utf8');
+test('the canonical and international question-type pages mount all three real-practice surfaces', async () => {
+  const publicPage = await readFile(new URL('../src/app/(site)/practica/ielts/reading/international-question-type/[slug]/page.tsx', import.meta.url), 'utf8');
+  const canonicalPage = await readFile(new URL('../src/app/(site)/practica/ielts/reading/tipos-de-preguntas/matching-headings/page.tsx', import.meta.url), 'utf8');
   const lab = await readFile(new URL('../src/components/exam-practice/MatchingHeadingsPracticeLab.tsx', import.meta.url), 'utf8');
   const whatsAppFloat = await readFile(new URL('../src/components/WhatsAppFloat.tsx', import.meta.url), 'utf8');
-  assert.match(page, /MatchingHeadingsGuidedPractice/);
-  assert.match(page, /MatchingHeadingsIndependentPractice/);
-  assert.match(page, /MatchingHeadingsProgressEngine/);
-  assert.match(page, /slug === 'matching-headings'/);
+  for (const page of [publicPage, canonicalPage]) {
+    assert.match(page, /MatchingHeadingsGuidedPractice/);
+    assert.match(page, /MatchingHeadingsIndependentPractice/);
+    assert.match(page, /MatchingHeadingsProgressEngine/);
+    assert.match(page, /SkillReviewSourceBlock/);
+    assert.match(page, /IELTS_ACADEMIC_URL/);
+  }
+  assert.match(publicPage, /slug === 'matching-headings'/);
+  assert.match(publicPage, /Strengthen skimming/);
+  assert.match(publicPage, /Strengthen paraphrase recognition/);
+  assert.match(publicPage, /not a secure Exam or proctored mode/);
+  assert.match(canonicalPage, /locale: 'en_US'/);
+  assert.match(canonicalPage, /Continue to Matching Information/);
+  assert.match(canonicalPage, /Strengthen skimming/);
+  assert.doesNotMatch(canonicalPage, /Tres pasajes para entrenar/);
   assert.match(lab, /type="radio"/);
   assert.match(lab, /<fieldset/);
   assert.match(lab, /<legend className=\{styles\.srOnly\}>/);
@@ -172,6 +184,8 @@ test('the public question-type page mounts all three real-practice surfaces', as
   assert.match(lab, /parsed\.activeLevelIndex === undefined/);
   assert.match(lab, /normalizeDrafts\(parsed\.drafts\)/);
   assert.match(lab, /opens in a new tab/);
+  assert.match(lab, /Loading…/);
+  assert.equal((lab.match(/<(?:ArrowRight|CheckCircle2|Clock3|LockKeyhole|RotateCcw|Target|XCircle)\b(?![^>]*aria-hidden="true")/g) ?? []).length, 0);
   assert.match(whatsAppFloat, /@media \(max-width: 640px\)[\s\S]*body:has\(\[data-active-practice="true"\]\) \.wl-wa-float/);
   assert.doesNotMatch(whatsAppFloat, /@media \(max-width: 640px\) and \(pointer: coarse\)[\s\S]*body:has/);
 });

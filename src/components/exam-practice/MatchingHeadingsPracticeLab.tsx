@@ -251,7 +251,7 @@ export function MatchingHeadingsGuidedPractice({ passage }: { passage: MatchingH
     <section className={styles.lab} aria-label="Guided matching headings practice" data-active-practice="true">
       <div className={styles.labTopline}>
         <div><span className={styles.modeTag}>Watch one · do five</span><h3>{passage.title}</h3></div>
-        <button type="button" className={styles.textButton} onClick={reset}><RotateCcw size={16} /> {confirmRestart ? 'Press again to restart' : 'Restart'}</button>
+        <button type="button" className={styles.textButton} onClick={reset}><RotateCcw aria-hidden="true" size={16} /> {confirmRestart ? 'Press again to restart' : 'Restart'}</button>
       </div>
 
       <aside className={styles.workedDecision} aria-labelledby="matching-headings-worked-decision">
@@ -276,7 +276,7 @@ export function MatchingHeadingsGuidedPractice({ passage }: { passage: MatchingH
 
       {finished ? (
         <div className={styles.completionCard} role="status">
-          <CheckCircle2 size={28} />
+          <CheckCircle2 aria-hidden="true" size={28} />
           <div><h3>Paragraph map complete</h3><p>You proved all five headings. Continue to the independent passage, where feedback stays closed until the whole set is submitted.</p></div>
         </div>
       ) : (
@@ -306,7 +306,7 @@ export function MatchingHeadingsGuidedPractice({ passage }: { passage: MatchingH
             </div>
             {checked && (
               <div className={`${styles.feedback} ${isCorrect ? styles.feedbackCorrect : styles.feedbackIncorrect}`} role="status">
-                {isCorrect ? <CheckCircle2 size={20} /> : <XCircle size={20} />}
+                {isCorrect ? <CheckCircle2 aria-hidden="true" size={20} /> : <XCircle aria-hidden="true" size={20} />}
                 <div>
                   <strong>{isCorrect ? 'Correct — the whole paragraph is covered.' : 'Not yet — compare function and coverage.'}</strong>
                   <p>{isCorrect ? paragraph.evidence : wrongAnswerFeedback(paragraph, selected)}</p>
@@ -315,7 +315,7 @@ export function MatchingHeadingsGuidedPractice({ passage }: { passage: MatchingH
             )}
             <div className={styles.actions}>
               <button type="button" className="btn btn-primary" disabled={!selected} onClick={() => checked ? continuePractice() : setChecked(true)}>
-                {checked ? (isCorrect ? <>Add to map <ArrowRight size={16} /></> : 'Try this paragraph again') : 'Check decision'}
+                {checked ? (isCorrect ? <>Add to map <ArrowRight aria-hidden="true" size={16} /></> : 'Try this paragraph again') : 'Check decision'}
               </button>
             </div>
           </div>
@@ -368,7 +368,7 @@ export function MatchingHeadingsIndependentPractice({ passage }: { passage: Matc
               </select>
               {submitted && (
                 <div className={`${styles.feedback} ${correct ? styles.feedbackCorrect : styles.feedbackIncorrect}`} role="status">
-                  {correct ? <CheckCircle2 size={18} /> : <XCircle size={18} />}
+                  {correct ? <CheckCircle2 aria-hidden="true" size={18} /> : <XCircle aria-hidden="true" size={18} />}
                   <div><strong>{correct ? 'Correct' : `Best heading: ${paragraph.answerHeadingId}. ${getHeading(passage, paragraph.answerHeadingId)?.text}`}</strong><p>{correct ? paragraph.evidence : wrongAnswerFeedback(paragraph, selected)}</p></div>
                 </div>
               )}
@@ -545,9 +545,9 @@ export function MatchingHeadingsProgressEngine() {
       </div>
 
       <div className={styles.dashboard}>
-        <div><Target size={19} /><span><strong>{progress.reviewQueue.length}</strong> paragraphs in review</span></div>
-        <div><Clock3 size={19} /><span><strong>{formatTime(elapsed)}</strong> current attempt</span></div>
-        <div><CheckCircle2 size={19} /><span><strong>{hydrated ? 'Saved locally' : 'Loading'}</strong> attempt and progress</span></div>
+        <div><Target aria-hidden="true" size={19} /><span><strong>{progress.reviewQueue.length}</strong> paragraphs in review</span></div>
+        <div><Clock3 aria-hidden="true" size={19} /><span><strong>{formatTime(elapsed)}</strong> current attempt</span></div>
+        <div><CheckCircle2 aria-hidden="true" size={19} /><span><strong>{hydrated ? 'Saved locally' : 'Loading…'}</strong> attempt and progress</span></div>
       </div>
 
       <nav className={styles.levelRail} aria-label="Matching Headings progress levels">
@@ -556,7 +556,7 @@ export function MatchingHeadingsProgressEngine() {
           const record = progress.levels[item.id];
           return (
             <button key={item.id} type="button" disabled={locked} aria-current={index === levelIndex ? 'step' : undefined} className={index === levelIndex ? styles.levelCurrent : record?.mastered ? styles.levelMastered : ''} onClick={() => switchLevel(index)}>
-              <span>{locked ? <LockKeyhole size={14} /> : index + 1}</span><b>{item.title}</b><small>{record ? `Best ${record.bestScore}/${index < 4 ? 4 : 5}` : locked ? 'Locked' : 'Ready'}</small>
+              <span>{locked ? <LockKeyhole aria-hidden="true" size={14} /> : index + 1}</span><b>{item.title}</b><small>{record ? `Best ${record.bestScore}/${index < 4 ? 4 : 5}` : locked ? 'Locked' : 'Ready'}</small>
             </button>
           );
         })}
@@ -603,7 +603,7 @@ export function MatchingHeadingsProgressEngine() {
                 )}
                 {submitted && (
                   <div className={`${styles.feedback} ${correct ? styles.feedbackCorrect : styles.feedbackIncorrect}`} role="status">
-                    {correct ? <CheckCircle2 size={18} /> : <XCircle size={18} />}
+                    {correct ? <CheckCircle2 aria-hidden="true" size={18} /> : <XCircle aria-hidden="true" size={18} />}
                     <div><strong>{correct ? `${paragraph.functionLabel}: proved` : `Best heading: ${paragraph.answerHeadingId}. ${getHeading(passage, paragraph.answerHeadingId)?.text}`}</strong><p>{correct ? paragraph.evidence : wrongAnswerFeedback(paragraph, selected)}</p></div>
                   </div>
                 )}
@@ -617,8 +617,8 @@ export function MatchingHeadingsProgressEngine() {
             {submitted ? <><strong>{score}/{questions.length} correct · {mastered ? 'Skill level mastered' : 'Target not reached yet'}</strong><span>{mastered ? 'The next skill level is now available. This is not an IELTS band or exam-readiness score.' : `Review ${questions.length - score} decision${questions.length - score === 1 ? '' : 's'} and try a clean attempt.`}</span></> : <><strong>{answered}/{questions.length} decisions complete</strong><span>Answers stay editable and saved locally until you submit the level.</span></>}
           </div>
           <div className={styles.actions}>
-            <button type="button" className="btn btn-ghost" onClick={resetAttempt}><RotateCcw size={16} /> {confirmAttemptReset ? 'Press again to reset' : 'Reset attempt'}</button>
-            {submitted && mastered && levelIndex < 7 ? <button type="button" className="btn btn-primary" onClick={() => switchLevel(levelIndex + 1)}>Next level <ArrowRight size={16} /></button> : <button type="button" className="btn btn-primary" disabled={submitted || answered !== questions.length} onClick={submitLevel}>Submit level</button>}
+            <button type="button" className="btn btn-ghost" onClick={resetAttempt}><RotateCcw aria-hidden="true" size={16} /> {confirmAttemptReset ? 'Press again to reset' : 'Reset attempt'}</button>
+            {submitted && mastered && levelIndex < 7 ? <button type="button" className="btn btn-primary" onClick={() => switchLevel(levelIndex + 1)}>Next level <ArrowRight aria-hidden="true" size={16} /></button> : <button type="button" className="btn btn-primary" disabled={submitted || answered !== questions.length} onClick={submitLevel}>Submit level</button>}
           </div>
         </footer>
       </div>

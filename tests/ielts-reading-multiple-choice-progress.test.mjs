@@ -102,6 +102,7 @@ test('public route mounts guided, independent and progress surfaces in English',
 
 test('local browser QA cannot load the production GTM container', async () => {
   const layout = await readFile(new URL('../src/app/layout.tsx', import.meta.url), 'utf8');
-  assert.match(layout, /process\.env\.NODE_ENV === 'production'/);
-  assert.match(layout, /ENTORNO !== 'preview'/);
+  assert.match(layout, /const ENTORNO = process\.env\.VERCEL_ENV/);
+  assert.match(layout, /const CARGAR_GTM = process\.env\.NODE_ENV === 'production' && ENTORNO === 'production'/);
+  assert.doesNotMatch(layout, /ENTORNO !== 'preview'/);
 });
