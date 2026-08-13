@@ -12,7 +12,7 @@ const mixedPage = fs.readFileSync(
   'utf8'
 );
 const mixedEngine = fs.readFileSync(
-  path.join(root, 'src/components/exam-practice/IeltsReadingMixedQuestionTypeEngine.tsx'),
+  path.join(root, 'src/components/exam-practice/MixedPracticeLab.tsx'),
   'utf8'
 );
 const skillsHub = fs.readFileSync(
@@ -84,12 +84,14 @@ test('exposes the six transferable Reading subskills as a separate learning path
 test('moves mixed practice into a dedicated English learning route', () => {
   assert.match(content, /\/practica\/ielts\/reading\/mixed-practice/);
   assert.doesNotMatch(content, /IeltsReadingMixedQuestionTypeEngine/);
-  assert.match(mixedPage, /IeltsReadingMixedQuestionTypeEngine/);
-  assert.match(mixedPage, /language="en"/);
+  assert.match(mixedPage, /MixedGuidedPractice/);
+  assert.match(mixedPage, /MixedIndependentPractice/);
+  assert.match(mixedPage, /MixedProgressEngine/);
   assert.match(mixedPage, /alternates: \{ canonical: URL \}/);
   assert.doesNotMatch(content, /Próximamente|Amazon rainforest|const PASSAGE/);
-  assert.match(mixedEngine, /language\?: 'es' \| 'en'/);
-  assert.match(mixedEngine, /Mixed IELTS Reading question-type bank/);
+  assert.match(mixedEngine, /WeLearn Progress Engine/);
+  assert.match(mixedEngine, /Submit all decisions/);
+  assert.match(mixedEngine, /not a secure Practice, Exam or proctored mode/);
 });
 
 test('keeps only the FAQ section in Spanish on the main hub', () => {

@@ -100,17 +100,24 @@ function validateIeltsReadingQuestionTypesHub() {
   const pageText = fs.existsSync(pagePath) ? fs.readFileSync(pagePath, 'utf8') : '';
   const mixedPath = routeToPagePath('/practica/ielts/reading/mixed-practice');
   const mixedText = fs.existsSync(mixedPath) ? fs.readFileSync(mixedPath, 'utf8') : '';
-  const embeddedPractice = includesAll(pageText, [
-    'IeltsReadingMixedQuestionTypeEngine',
-    'IELTS_READING_MIXED_QUESTION_TYPE_SETS',
-  ]);
+  const mixedComponentPath = path.join(root, 'src/components/exam-practice/MixedPracticeLab.tsx');
+  const mixedDataPath = path.join(root, 'src/data/practica-exams/ielts-reading-mixed-progress.ts');
+  const mixedComponentText = fs.existsSync(mixedComponentPath) ? fs.readFileSync(mixedComponentPath, 'utf8') : '';
+  const mixedDataText = fs.existsSync(mixedDataPath) ? fs.readFileSync(mixedDataPath, 'utf8') : '';
   const dedicatedPractice = pageText.includes('/practica/ielts/reading/mixed-practice') && includesAll(mixedText, [
-    'IeltsReadingMixedQuestionTypeEngine',
-    'IELTS_READING_MIXED_QUESTION_TYPE_SETS',
-    '3 passages · 12 mixed decisions',
+    'MixedGuidedPractice',
+    'MixedIndependentPractice',
+    'MixedProgressEngine',
+    '6 passages · 36 decisions · 14 question families',
   ]);
-  if (!embeddedPractice && !dedicatedPractice) {
-    fail('IELTS Reading question-types hub must expose the verified mixed-question practice engine either inline or in its dedicated linked room.');
+  if (!dedicatedPractice) {
+    fail('IELTS Reading question-types hub must link to the complete guided, independent and progressive Mixed Practice room.');
+  }
+  for (const requiredText of ['type="radio"', 'type="text"', 'localStorage', 'Submit all decisions', 'Repair this level', 'answer keys still reach this browser']) {
+    if (!mixedComponentText.includes(requiredText)) fail(`IELTS Reading Mixed Practice must include "${requiredText}".`);
+  }
+  for (const requiredText of ['MIXED_PRACTICE_STORAGE_KEY', 'MIXED_PRACTICE_GUIDED_PASSAGE_ID', 'MIXED_PRACTICE_INDEPENDENT_PASSAGE_ID', 'mixed-level-6']) {
+    if (!mixedDataText.includes(requiredText)) fail(`IELTS Reading Mixed Practice data must include "${requiredText}".`);
   }
 }
 

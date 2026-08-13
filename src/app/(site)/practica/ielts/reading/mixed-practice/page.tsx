@@ -1,11 +1,21 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight, BookOpenCheck, CheckCircle2, SearchCheck } from 'lucide-react';
-import IeltsReadingMixedQuestionTypeEngine from '@/components/exam-practice/IeltsReadingMixedQuestionTypeEngine';
+import {
+  MixedGuidedPractice,
+  MixedIndependentPractice,
+  MixedProgressEngine,
+} from '@/components/exam-practice/MixedPracticeLab';
 import { BreadcrumbJsonLd } from '@/components/exam-practice/StructuredData';
 import InternationalLearningResourceJsonLd from '@/components/exam-practice/InternationalLearningResourceJsonLd';
 import { CourseSchema } from '@/components/practica/EducationSchema';
-import { IELTS_READING_MIXED_QUESTION_TYPE_SETS, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
+import {
+  MIXED_PRACTICE_GUIDED_PASSAGE_ID,
+  MIXED_PRACTICE_INDEPENDENT_PASSAGE_ID,
+  MIXED_PRACTICE_PASSAGES,
+  getMixedPracticePassage,
+} from '@/data/practica-exams/ielts-reading-mixed-progress';
+import { PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 import hubStyles from '../page.module.css';
 import styles from './page.module.css';
 
@@ -27,6 +37,10 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
+  const guidedPassage = getMixedPracticePassage(MIXED_PRACTICE_GUIDED_PASSAGE_ID);
+  const independentPassage = getMixedPracticePassage(MIXED_PRACTICE_INDEPENDENT_PASSAGE_ID);
+  if (!guidedPassage || !independentPassage) throw new Error('Mixed Practice passage pools are incomplete.');
+
   return (
     <>
       <CourseSchema
@@ -40,7 +54,7 @@ export default function Page() {
       <InternationalLearningResourceJsonLd
         name="IELTS Reading Mixed Practice"
         url={URL}
-        description="Three guided passages that combine IELTS Reading task formats and require evidence-based decisions."
+        description="Six original or conservatively bounded passages with thirty-six authentic mixed-format decisions, guided repair, independent submission and a persistent progress engine."
         teaches={['IELTS Reading', 'question-type recognition', 'evidence location', 'mixed practice']}
         isPartOf={{ name: 'IELTS Academic Reading Practice Hub', url: `${PRACTICE_BASE_URL}/practica/ielts/reading` }}
       />
@@ -75,7 +89,7 @@ export default function Page() {
             </div>
             <aside aria-label="When mixed practice is useful">
               <strong>Use this room after focused study</strong>
-              <p>You should already know at least 1 question family and 1 reading subskill. If the format still feels unfamiliar, return to its focused lesson first.</p>
+              <p>You should already know at least one question family and one reading subskill. If a format still feels unfamiliar, use the focused lesson linked in the feedback before advancing.</p>
             </aside>
           </header>
 
@@ -94,15 +108,30 @@ export default function Page() {
 
           <section id="practice" className={styles.practiceSection} aria-labelledby="practice-heading">
             <div className={styles.sectionHeading}>
-              <p className={hubStyles.kicker}>Guided exercise</p>
-              <h2 id="practice-heading">3 passages · 12 mixed decisions</h2>
-              <p>Answer one task at a time. Feedback reveals the task format, the evidence span and the reading skill to strengthen next.</p>
+              <p className={hubStyles.kicker}>Guided decision lab</p>
+              <h2 id="practice-heading">Learn to switch contracts without guessing</h2>
+              <p>Work through one passage and six authentic formats. A wrong answer reopens immediately so you can repair the method before moving on.</p>
             </div>
-            <IeltsReadingMixedQuestionTypeEngine
-              sets={IELTS_READING_MIXED_QUESTION_TYPE_SETS}
-              accent="#0f6f8d"
-              language="en"
-            />
+            <MixedGuidedPractice passage={guidedPassage} />
+          </section>
+
+          <section className={styles.practiceSection} aria-labelledby="independent-heading">
+            <div className={styles.sectionHeading}>
+              <p className={hubStyles.kicker}>Independent practice</p>
+              <h2 id="independent-heading">Hold every key until the full passage is complete</h2>
+              <p>Six different task contracts share one passage. Finish all six before the task labels, evidence and explanations are revealed.</p>
+            </div>
+            <MixedIndependentPractice passage={independentPassage} />
+          </section>
+
+          <section className={styles.practiceSection} aria-labelledby="engine-heading">
+            <div className={styles.sectionHeading}>
+              <p className={hubStyles.kicker}>WeLearn Progress Engine</p>
+              <h2 id="engine-heading">6 passages · 36 decisions · 14 question families</h2>
+              <p>Six levels move from contract recognition to a two-passage mastery check. Drafts, best scores, error diagnoses and the review queue stay in this browser.</p>
+            </div>
+            <MixedProgressEngine />
+            <p className={styles.bankBoundary}>The complete bank contains {MIXED_PRACTICE_PASSAGES.length} passages and {MIXED_PRACTICE_PASSAGES.flatMap((passage) => passage.tasks).length} scored decisions. Progress scores diagnose this practice bank; they are not IELTS band predictions.</p>
           </section>
 
           <nav className={styles.nextGrid} aria-label="Continue IELTS Reading practice">
