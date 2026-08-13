@@ -115,5 +115,6 @@ test('the content guardian and blueprint pin Flow-chart before scaling again', a
   const blueprint = await readFile(new URL('../docs/ielts-reading-practice-engine-blueprint.md', import.meta.url), 'utf8');
   assert.match(blueprint, /Flow-chart Completion practice must begin with the whole process/);
   assert.match(blueprint, /6 source-backed or conservatively bounded passages and 33 process-stage decisions/);
-  assert.match(blueprint, /Next question-type vertical:\*\* Diagram Labeling/);
+  assert.match(blueprint, /Historical handoff completed — Next question-type vertical:\*\* Flow-chart Completion/);
+  assert.match(blueprint, /Diagram Labeling:\*\* progressive vertical implemented/);
 });
