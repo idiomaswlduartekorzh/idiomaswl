@@ -53,13 +53,17 @@ montaje en `ParaphrasingTechniqueClient.tsx`).
 
 ### El superhub de vocabulario
 
-`/practica/ielts/academic/writing/vocabulario` — **3 unidades de 19**, 72 entradas de 400-600.
+`/practica/ielts/academic/writing/vocabulario` — **8 unidades de 19**, 184 entradas de 400-600.
 
 | Familia | Hecho | Falta |
 |---|---|---|
-| Task 1 por subparte | introducción, overview, tendencias | **comparaciones, procesos, mapas** |
-| Task 2 por subparte | — | **introducción, body, conclusión, revisión** |
-| Funciones transversales | (viven aún en `task2/academic-vocabulary`) | **mover aquí y subir de 6 a ~20 entradas cada una** |
+| Task 1 por subparte | ✅ **completo, 6 de 6** — introducción, overview, tendencias, comparaciones, procesos, mapas | — |
+| Task 2 por subparte | introducción, cuerpo | **conclusión, revisión** |
+| Funciones transversales | (viven aún en `task2/academic-vocabulary`) | **mover aquí con redirect y subir de 6 a ~20 entradas cada una** |
+
+Actualizado tras la tanda del 12 ago 2026. Para añadir una unidad: escribirla en el fichero de
+su familia (`task1-vocabulary.ts` / `task2-vocabulary.ts`), y el índice y el guardián la recogen
+solos — el resolver de familias va por nombre, no por lista fija.
 
 ---
 
