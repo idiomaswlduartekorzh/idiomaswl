@@ -34,6 +34,16 @@ import {
   getMatchingFeaturesPassage,
 } from '@/data/practica-exams/ielts-reading-matching-features-progress';
 import {
+  MatchingSentenceEndingsGuidedPractice,
+  MatchingSentenceEndingsIndependentPractice,
+  MatchingSentenceEndingsProgressEngine,
+} from '@/components/exam-practice/MatchingSentenceEndingsPracticeLab';
+import {
+  SENTENCE_ENDINGS_GUIDED_PASSAGE_ID,
+  SENTENCE_ENDINGS_INDEPENDENT_PASSAGE_ID,
+  getSentenceEndingPassage,
+} from '@/data/practica-exams/ielts-reading-matching-sentence-endings-progress';
+import {
   MultipleChoiceGuidedPractice,
   MultipleChoiceIndependentPractice,
   MultipleChoiceProgressEngine,
@@ -194,6 +204,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   const isMatchingHeadings = slug === 'matching-headings';
   const isMatchingInformation = slug === 'matching-information';
   const isMatchingFeatures = slug === 'matching-features';
+  const isMatchingSentenceEndings = slug === 'matching-sentence-endings';
   const isMultipleChoice = slug === 'multiple-choice';
   const isTfng = slug === 'true-false-not-given';
   const isYnng = slug === 'yes-no-not-given';
@@ -203,6 +214,8 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   const matchingInformationIndependent = isMatchingInformation ? getMatchingInformationPassage(MATCHING_INFORMATION_INDEPENDENT_PASSAGE_ID) : undefined;
   const matchingFeaturesGuided = isMatchingFeatures ? getMatchingFeaturesPassage(MATCHING_FEATURES_GUIDED_PASSAGE_ID) : undefined;
   const matchingFeaturesIndependent = isMatchingFeatures ? getMatchingFeaturesPassage(MATCHING_FEATURES_INDEPENDENT_PASSAGE_ID) : undefined;
+  const matchingSentenceEndingsGuided = isMatchingSentenceEndings ? getSentenceEndingPassage(SENTENCE_ENDINGS_GUIDED_PASSAGE_ID) : undefined;
+  const matchingSentenceEndingsIndependent = isMatchingSentenceEndings ? getSentenceEndingPassage(SENTENCE_ENDINGS_INDEPENDENT_PASSAGE_ID) : undefined;
   const multipleChoiceGuided = isMultipleChoice ? getMultipleChoicePassage(MULTIPLE_CHOICE_GUIDED_PASSAGE_ID) : undefined;
   const multipleChoiceIndependent = isMultipleChoice ? getMultipleChoicePassage(MULTIPLE_CHOICE_INDEPENDENT_PASSAGE_ID) : undefined;
   const tfngGuided = isTfng ? getTfngPassage(TFNG_GUIDED_PASSAGE_ID) : undefined;
@@ -233,6 +246,8 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         ? <MatchingInformationGuidedPractice passage={matchingInformationGuided} />
       : matchingFeaturesGuided
         ? <MatchingFeaturesGuidedPractice passage={matchingFeaturesGuided} />
+      : matchingSentenceEndingsGuided
+        ? <MatchingSentenceEndingsGuidedPractice passage={matchingSentenceEndingsGuided} />
       : multipleChoiceGuided
         ? <MultipleChoiceGuidedPractice passage={multipleChoiceGuided} />
       : tfngGuided
@@ -246,6 +261,8 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         ? <MatchingInformationIndependentPractice passage={matchingInformationIndependent} />
       : matchingFeaturesIndependent
         ? <MatchingFeaturesIndependentPractice passage={matchingFeaturesIndependent} />
+      : matchingSentenceEndingsIndependent
+        ? <MatchingSentenceEndingsIndependentPractice passage={matchingSentenceEndingsIndependent} />
       : multipleChoiceIndependent
         ? <MultipleChoiceIndependentPractice passage={multipleChoiceIndependent} />
       : tfngIndependent
@@ -253,7 +270,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
       : ynngIndependent
         ? <YnngIndependentPractice passage={ynngIndependent} />
         : undefined}
-    progressEngine={isMatchingHeadings ? <MatchingHeadingsProgressEngine /> : isMatchingInformation ? <MatchingInformationProgressEngine /> : isMatchingFeatures ? <MatchingFeaturesProgressEngine /> : isMultipleChoice ? <MultipleChoiceProgressEngine /> : isTfng ? <TfngProgressEngine /> : isYnng ? <YnngProgressEngine /> : undefined}
+    progressEngine={isMatchingHeadings ? <MatchingHeadingsProgressEngine /> : isMatchingInformation ? <MatchingInformationProgressEngine /> : isMatchingFeatures ? <MatchingFeaturesProgressEngine /> : isMatchingSentenceEndings ? <MatchingSentenceEndingsProgressEngine /> : isMultipleChoice ? <MultipleChoiceProgressEngine /> : isTfng ? <TfngProgressEngine /> : isYnng ? <YnngProgressEngine /> : undefined}
     sourceReview={isMatchingHeadings ? (
       <SkillReviewSourceBlock
         accent={config.accent}
@@ -296,6 +313,21 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
           { label: 'WeLearn practice blueprint', note: 'Defines held-back transfer, exact attribution evidence, local persistence and the client-key security boundary.' },
         ]}
       />
+    ) : isMatchingSentenceEndings ? (
+      <SkillReviewSourceBlock
+        accent={config.accent}
+        skillName="Matching Sentence Endings"
+        reviewedFocus={[
+          'Guided, independent and Progress Engine question pools are separated.',
+          'Grammar filters options while passage evidence decides the one best completion.',
+          'Known ambiguous and out-of-order legacy items are excluded from progressive practice.',
+          'Feedback diagnoses grammar-only choices, relationship changes, scope, polarity, lexical echo and evidence-zone errors.',
+        ]}
+        sources={[
+          { label: 'Official IELTS Academic Reading format', href: IELTS_ACADEMIC_URL, note: 'Confirms Matching Sentence Endings as completing sentence beginnings with endings from a list and testing understanding of main ideas.' },
+          { label: 'WeLearn practice blueprint', note: 'Defines held-back transfer, explicit competitor rejection, local persistence and the client-key security boundary.' },
+        ]}
+      />
     ) : isMultipleChoice ? (
       <SkillReviewSourceBlock
         accent={config.accent}
@@ -324,7 +356,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
       'you preserve scope, polarity, logic and any stated word limit',
     ]}
     faqs={route.faqs}
-    officialNote={isMatchingHeadings || isMatchingInformation || isMatchingFeatures
+    officialNote={isMatchingHeadings || isMatchingInformation || isMatchingFeatures || isMatchingSentenceEndings
       ? `${config.name} is presented here as guided WeLearn practice. Answer keys reach the browser for feedback, so this is not a secure Exam or proctored mode. Candidate sources do not by themselves prove authorship or full factual verification.`
       : `${config.name} is presented here as guided WeLearn practice. The official IELTS format source defines the task family; the passages, explanations and distractors on this page are original training material.`}
     nextLinks={isMatchingHeadings ? [
@@ -342,6 +374,12 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
     ] : isMatchingFeatures ? [
       { href: '/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings', label: 'Continue to Matching Sentence Endings', primary: true },
       { href: '/practica/ielts/reading/tipos-de-preguntas/matching-information', label: 'Compare with Matching Information' },
+      { href: '/practica/ielts/reading/habilidades/parafrasis', label: 'Strengthen paraphrase recognition' },
+      { href: '/practica/ielts/reading/mixed-practice', label: 'Open Mixed Practice' },
+      { href: '/practica/ielts/reading', label: 'Back to Reading hub' },
+    ] : isMatchingSentenceEndings ? [
+      { href: '/practica/ielts/reading/tipos-de-preguntas/sentence-completion', label: 'Continue to Sentence Completion', primary: true },
+      { href: '/practica/ielts/reading/tipos-de-preguntas/matching-features', label: 'Compare with Matching Features' },
       { href: '/practica/ielts/reading/habilidades/parafrasis', label: 'Strengthen paraphrase recognition' },
       { href: '/practica/ielts/reading/mixed-practice', label: 'Open Mixed Practice' },
       { href: '/practica/ielts/reading', label: 'Back to Reading hub' },
