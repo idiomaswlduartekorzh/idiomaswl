@@ -14,6 +14,16 @@ import {
   getMatchingHeadingsPassage,
 } from '@/data/practica-exams/ielts-reading-matching-headings-progress';
 import {
+  MatchingInformationGuidedPractice,
+  MatchingInformationIndependentPractice,
+  MatchingInformationProgressEngine,
+} from '@/components/exam-practice/MatchingInformationPracticeLab';
+import {
+  MATCHING_INFORMATION_GUIDED_PASSAGE_ID,
+  MATCHING_INFORMATION_INDEPENDENT_PASSAGE_ID,
+  getMatchingInformationPassage,
+} from '@/data/practica-exams/ielts-reading-matching-information-progress';
+import {
   MultipleChoiceGuidedPractice,
   MultipleChoiceIndependentPractice,
   MultipleChoiceProgressEngine,
@@ -172,11 +182,14 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   const config = TYPES[slug];
   const route = IELTS_READING_TYPES.find((item) => item.slug === slug)!;
   const isMatchingHeadings = slug === 'matching-headings';
+  const isMatchingInformation = slug === 'matching-information';
   const isMultipleChoice = slug === 'multiple-choice';
   const isTfng = slug === 'true-false-not-given';
   const isYnng = slug === 'yes-no-not-given';
   const guidedPassage = isMatchingHeadings ? getMatchingHeadingsPassage(MATCHING_HEADINGS_GUIDED_PASSAGE_ID) : undefined;
   const independentPassage = isMatchingHeadings ? getMatchingHeadingsPassage(MATCHING_HEADINGS_INDEPENDENT_PASSAGE_ID) : undefined;
+  const matchingInformationGuided = isMatchingInformation ? getMatchingInformationPassage(MATCHING_INFORMATION_GUIDED_PASSAGE_ID) : undefined;
+  const matchingInformationIndependent = isMatchingInformation ? getMatchingInformationPassage(MATCHING_INFORMATION_INDEPENDENT_PASSAGE_ID) : undefined;
   const multipleChoiceGuided = isMultipleChoice ? getMultipleChoicePassage(MULTIPLE_CHOICE_GUIDED_PASSAGE_ID) : undefined;
   const multipleChoiceIndependent = isMultipleChoice ? getMultipleChoicePassage(MULTIPLE_CHOICE_INDEPENDENT_PASSAGE_ID) : undefined;
   const tfngGuided = isTfng ? getTfngPassage(TFNG_GUIDED_PASSAGE_ID) : undefined;
@@ -203,6 +216,8 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
     strongExample={config.strong}
     practice={guidedPassage
       ? <MatchingHeadingsGuidedPractice passage={guidedPassage} />
+      : matchingInformationGuided
+        ? <MatchingInformationGuidedPractice passage={matchingInformationGuided} />
       : multipleChoiceGuided
         ? <MultipleChoiceGuidedPractice passage={multipleChoiceGuided} />
       : tfngGuided
@@ -212,6 +227,8 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
       : <InternationalQuestionTypePractice name={config.name} accent={config.accent} target={config.target} evidence={config.evidence} risk={config.risk} weak={config.weak} strong={config.strong} />}
     independentPracticeExperience={independentPassage
       ? <MatchingHeadingsIndependentPractice passage={independentPassage} />
+      : matchingInformationIndependent
+        ? <MatchingInformationIndependentPractice passage={matchingInformationIndependent} />
       : multipleChoiceIndependent
         ? <MultipleChoiceIndependentPractice passage={multipleChoiceIndependent} />
       : tfngIndependent
@@ -219,7 +236,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
       : ynngIndependent
         ? <YnngIndependentPractice passage={ynngIndependent} />
         : undefined}
-    progressEngine={isMatchingHeadings ? <MatchingHeadingsProgressEngine /> : isMultipleChoice ? <MultipleChoiceProgressEngine /> : isTfng ? <TfngProgressEngine /> : isYnng ? <YnngProgressEngine /> : undefined}
+    progressEngine={isMatchingHeadings ? <MatchingHeadingsProgressEngine /> : isMatchingInformation ? <MatchingInformationProgressEngine /> : isMultipleChoice ? <MultipleChoiceProgressEngine /> : isTfng ? <TfngProgressEngine /> : isYnng ? <YnngProgressEngine /> : undefined}
     sourceReview={isMatchingHeadings ? (
       <SkillReviewSourceBlock
         accent={config.accent}
@@ -232,6 +249,20 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         sources={[
           { label: 'Official IELTS Academic Reading format', href: IELTS_ACADEMIC_URL, note: 'Confirms Matching Headings as a Reading task family based on the main idea of a paragraph or section and the use of extra headings.' },
           { label: 'WeLearn practice blueprint', note: 'Defines held-back transfer, non-reuse, explicit distractor analysis, local progress and the client-key security boundary.' },
+        ]}
+      />
+    ) : isMatchingInformation ? (
+      <SkillReviewSourceBlock
+        accent={config.accent}
+        skillName="Matching Information"
+        reviewedFocus={[
+          'Guided, independent and Progress Engine passage pools are separated.',
+          'A paragraph may be reused when it genuinely supports more than one requested detail.',
+          'Feedback diagnoses topic matching, entity confusion, qualifier loss, lexical echo, relationship mismatch and nearby true details.',
+        ]}
+        sources={[
+          { label: 'Official IELTS Academic Reading format', href: IELTS_ACADEMIC_URL, note: 'Confirms Matching Information as locating specific information in lettered paragraphs or sections and permits reuse when instructions allow it.' },
+          { label: 'WeLearn practice blueprint', note: 'Defines held-back transfer, explicit evidence confirmation, local progress and the client-key security boundary.' },
         ]}
       />
     ) : isMultipleChoice ? (
@@ -262,12 +293,18 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
       'you preserve scope, polarity, logic and any stated word limit',
     ]}
     faqs={route.faqs}
-    officialNote={isMatchingHeadings
-      ? 'Matching Headings is presented here as guided WeLearn practice. Answer keys reach the browser for feedback, so this is not a secure Exam or proctored mode.'
+    officialNote={isMatchingHeadings || isMatchingInformation
+      ? `${config.name} is presented here as guided WeLearn practice. Answer keys reach the browser for feedback, so this is not a secure Exam or proctored mode. Candidate sources do not by themselves prove authorship or full factual verification.`
       : `${config.name} is presented here as guided WeLearn practice. The official IELTS format source defines the task family; the passages, explanations and distractors on this page are original training material.`}
     nextLinks={isMatchingHeadings ? [
       { href: '/practica/ielts/reading/tipos-de-preguntas/matching-information', label: 'Continue to Matching Information', primary: true },
       { href: '/practica/ielts/reading/habilidades/skimming', label: 'Strengthen skimming' },
+      { href: '/practica/ielts/reading/habilidades/parafrasis', label: 'Strengthen paraphrase recognition' },
+      { href: '/practica/ielts/reading/mixed-practice', label: 'Open Mixed Practice' },
+      { href: '/practica/ielts/reading', label: 'Back to Reading hub' },
+    ] : isMatchingInformation ? [
+      { href: '/practica/ielts/reading/tipos-de-preguntas/matching-features', label: 'Continue to Matching Features', primary: true },
+      { href: '/practica/ielts/reading/habilidades/scanning', label: 'Strengthen scanning' },
       { href: '/practica/ielts/reading/habilidades/parafrasis', label: 'Strengthen paraphrase recognition' },
       { href: '/practica/ielts/reading/mixed-practice', label: 'Open Mixed Practice' },
       { href: '/practica/ielts/reading', label: 'Back to Reading hub' },

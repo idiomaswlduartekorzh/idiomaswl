@@ -1,194 +1,103 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
-import OfficialStrategyCard from '@/components/exam-practice/OfficialStrategyCard';
-import QuestionTypeReviewSourceBlock from '@/components/exam-practice/QuestionTypeReviewSourceBlock';
-import { BookOpenCheck, Eye, SearchCheck } from 'lucide-react';
-import MatchingInformationPassageBank from '@/components/exam-practice/MatchingInformationPassageBank';
-import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
+import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import {
-  IELTS_MATCHING_INFORMATION_PASSAGES,
-  IELTS_READING_TYPES,
-  PRACTICE_BASE_URL,
-} from '@/data/practica-exams/seo-catalog';
+  MatchingInformationGuidedPractice,
+  MatchingInformationIndependentPractice,
+  MatchingInformationProgressEngine,
+} from '@/components/exam-practice/MatchingInformationPracticeLab';
+import {
+  MATCHING_INFORMATION_GUIDED_PASSAGE_ID,
+  MATCHING_INFORMATION_INDEPENDENT_PASSAGE_ID,
+  getMatchingInformationPassage,
+} from '@/data/practica-exams/ielts-reading-matching-information-progress';
+import { IELTS_READING_TYPES, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 
 const ROUTE = IELTS_READING_TYPES.find((item) => item.slug === 'matching-information')!;
-const URL = `${PRACTICE_BASE_URL}${ROUTE.path}`;
-const ACCENT = '#0369a1';
-const IELTS_SAMPLE_URL = 'https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test';
+const TITLE = 'Matching Information: locate the paragraph with the exact detail';
+const DESCRIPTION = 'Learn to build distinctive search signals, scan for paraphrase and confirm the complete detail before matching a statement to a paragraph.';
+const IELTS_ACADEMIC_URL = 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading';
+const guidedPassage = getMatchingInformationPassage(MATCHING_INFORMATION_GUIDED_PASSAGE_ID)!;
+const independentPassage = getMatchingInformationPassage(MATCHING_INFORMATION_INDEPENDENT_PASSAGE_ID)!;
+// Scaling contract: docs/ielts-reading-practice-engine-blueprint.md
 
 export const metadata: Metadata = {
-  title: 'IELTS Matching Information: ejercicios y método',
-  description: ROUTE.description,
+  title: 'IELTS Matching Information: Method, Practice and Progress',
+  description: DESCRIPTION,
   keywords: ROUTE.keywords,
-  openGraph: {
-    title: 'IELTS Matching Information: ejercicios y método',
-    description: ROUTE.description,
-    url: URL,
-    type: 'website',
-    locale: 'es_CO',
-  },
-  alternates: { canonical: URL },
+  alternates: { canonical: `${PRACTICE_BASE_URL}${ROUTE.path}` },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: `${PRACTICE_BASE_URL}${ROUTE.path}`, type: 'website', locale: 'en_US' },
 };
 
 export default function Page() {
   return (
-    <>
-      <LearningResourceJsonLd
-        name={ROUTE.title}
-        url={URL}
-        description={ROUTE.description}
-        teaches={ROUTE.teaches}
-        isPartOf={{ name: 'Tipos de preguntas IELTS Reading', url: `${PRACTICE_BASE_URL}/practica/ielts/reading/tipos-de-preguntas` }}
-      />
-      <FaqJsonLd faqs={ROUTE.faqs} />
-      <BreadcrumbJsonLd
-        items={[
-          { name: 'Práctica', url: `${PRACTICE_BASE_URL}/practica` },
-          { name: 'IELTS', url: `${PRACTICE_BASE_URL}/practica/ielts` },
-          { name: 'Reading', url: `${PRACTICE_BASE_URL}/practica/ielts/reading` },
-          { name: 'Tipos de preguntas', url: `${PRACTICE_BASE_URL}/practica/ielts/reading/tipos-de-preguntas` },
-          { name: 'Matching Information', url: URL },
-        ]}
-      />
-
-      <section className="wl-section">
-        <div className="wrap" style={{ maxWidth: 1040 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
-            <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
-            <span>/</span>
-            <Link href="/practica/ielts" style={{ color: 'var(--muted)', textDecoration: 'none' }}>IELTS</Link>
-            <span>/</span>
-            <Link href="/practica/ielts/reading/tipos-de-preguntas" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Tipos de preguntas</Link>
-            <span>/</span>
-            <span style={{ color: 'var(--ink)', fontWeight: 800 }}>Matching Information</span>
-          </div>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '1rem', alignItems: 'stretch', marginBottom: '1.5rem' }}>
-            <div>
-              <p className="eyebrow" style={{ margin: '0 0 0.5rem' }}>
-                <span className="ink-line" />IELTS Reading · Tipo de pregunta
-              </p>
-              <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.1rem)', lineHeight: 1.04, letterSpacing: '-0.04em', margin: '0 0 0.85rem', color: 'var(--ink)' }}>
-                IELTS Matching Information
-              </h1>
-              <p style={{ color: 'var(--muted)', fontSize: '1rem', lineHeight: 1.75, margin: 0, maxWidth: 740 }}>
-                Matching Information no pregunta cuál párrafo tiene el mejor título. Pregunta dónde aparece una información específica. Tu trabajo es escanear, detectar paráfrasis y evitar perder tiempo leyendo todo con la misma intensidad.
-              </p>
-            </div>
-
-            <aside className="wl-card" style={{ padding: '1rem', borderRadius: 16, display: 'grid', gap: '0.75rem', alignContent: 'center' }}>
-              {[
-                { label: 'Meta', value: 'ubicar', sub: 'dato específico' },
-                { label: 'Clave', value: 'paráfrasis', sub: 'misma idea' },
-                { label: 'Riesgo', value: 'tema', sub: 'no es heading' },
-              ].map((item) => (
-                <div key={item.label} style={{ display: 'flex', justifyContent: 'space-between', gap: '0.75rem', alignItems: 'center', border: '1px solid var(--line-soft)', borderRadius: 12, padding: '0.75rem', background: 'var(--bg-2)' }}>
-                  <span style={{ color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.72rem', textTransform: 'uppercase', fontWeight: 800 }}>{item.label}</span>
-                  <strong style={{ color: ACCENT, fontFamily: 'var(--mono)', fontSize: '1.05rem', textAlign: 'right' }}>
-                    {item.value}
-                    <span style={{ display: 'block', color: 'var(--muted)', fontSize: '0.66rem', fontWeight: 700 }}>{item.sub}</span>
-                  </strong>
-                </div>
-              ))}
-            </aside>
-          </div>
-
-          <OfficialStrategyCard
-            accent={ACCENT}
-            official="IELTS Academic Reading incluye Matching Information para elegir en qué párrafo aparece una información específica; un párrafo puede usarse más de una vez."
-            strategy="WeLearn lo entrena como scanning con paráfrasis: subrayar señales del statement, buscar la zona y confirmar el detalle antes de marcar la letra."
-          />
-
-          <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: '0.85rem', marginBottom: '1.2rem' }}>
-            {[
-              {
-                icon: <SearchCheck size={18} />,
-                title: 'Escanea por señales',
-                text: 'Busca nombres, fechas, consecuencias, razones, comparaciones o palabras técnicas del statement.',
-              },
-              {
-                icon: <Eye size={18} />,
-                title: 'Acepta la paráfrasis',
-                text: 'IELTS rara vez copia la frase exacta. “Worst affected areas” puede aparecer como “highest exposure”.',
-              },
-              {
-                icon: <BookOpenCheck size={18} />,
-                title: 'No confundas tema con ubicación',
-                text: 'Un párrafo puede tratar el mismo tema general y aun así no contener la información específica.',
-              },
-            ].map((item) => (
-              <article key={item.title} className="wl-card" style={{ padding: '1rem', borderRadius: 14 }}>
-                <div style={{ display: 'flex', gap: '0.5rem', color: ACCENT, alignItems: 'center', marginBottom: '0.35rem' }}>
-                  {item.icon}
-                  <h2 style={{ margin: 0, color: 'var(--ink)', fontSize: '1rem' }}>{item.title}</h2>
-                </div>
-                <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.58, fontSize: '0.9rem' }}>{item.text}</p>
-              </article>
-            ))}
-          </section>
-
-          <section className="wl-card" style={{ padding: '1.2rem', borderRadius: 16, marginBottom: '1rem' }}>
-            <p className="eyebrow" style={{ margin: '0 0 0.45rem' }}>Método WeLearn</p>
-            <h2 style={{ margin: '0 0 0.75rem', fontSize: '1.3rem', letterSpacing: '-0.02em' }}>Cómo resolver Matching Information</h2>
-            <div style={{ display: 'grid', gap: '0.65rem' }}>
-              {[
-                'Lee primero los statements y subraya sustantivos, verbos y relaciones lógicas.',
-                'Escanea los párrafos buscando paráfrasis de esas señales, no solo palabras idénticas.',
-                'Cuando encuentres una zona probable, lee dos frases alrededor para confirmar el detalle.',
-                'Recuerda que un mismo párrafo puede responder más de un statement.',
-              ].map((item, index) => (
-                <p key={item} style={{ margin: 0, display: 'grid', gridTemplateColumns: '32px 1fr', gap: '0.65rem', alignItems: 'start', color: 'var(--ink-2)', lineHeight: 1.58 }}>
-                  <span style={{ width: 32, height: 32, borderRadius: 10, background: `${ACCENT}12`, color: ACCENT, display: 'grid', placeItems: 'center', fontFamily: 'var(--mono)', fontWeight: 900 }}>
-                    {index + 1}
-                  </span>
-                  <span>{item}</span>
-                </p>
-              ))}
-            </div>
-          </section>
-
-          <MatchingInformationPassageBank
-            passages={IELTS_MATCHING_INFORMATION_PASSAGES}
-            accent={ACCENT}
-            eyebrow="Banco Matching Information"
-            title="Tres pasajes para ubicar información específica"
-            intro="Practica con textos originales de WeLearn. Aquí no eliges la idea principal: localizas dónde aparece un detalle, razón, ejemplo, efecto o comparación aunque esté parafraseado."
-          />
-
-          <section style={{ marginTop: '1.4rem' }}>
-            <QuestionTypeReviewSourceBlock
-              accent={ACCENT}
-              questionTypeName={ROUTE.title}
-              sources={[
-                {
-                  label: 'IELTS Academic sample test questions',
-                  href: IELTS_SAMPLE_URL,
-                  note: 'lista oficial de preguntas de muestra de IELTS Academic Reading usada para confirmar que esta ruta corresponde a un tipo de pregunta oficial.',
-                },
-                {
-                  label: 'Banco original WeLearn',
-                  note: 'pasajes, preguntas, distractores y explicaciones creados para practica pedagogica, sin copiar preguntas oficiales.',
-                },
-              ]}
-              reviewedFocus={[
-                'alineacion con tipos de pregunta oficiales de IELTS Reading',
-                'separacion entre formato oficial y metodo WeLearn',
-                'respuesta explicada con evidencia, alcance o trampa',
-              ]}
-            />
-
-            <p className="eyebrow" style={{ margin: '0 0 0.5rem' }}>Preguntas frecuentes</p>
-            <div style={{ display: 'grid', gap: '0.75rem' }}>
-              {ROUTE.faqs.map((faq) => (
-                <article key={faq.question} className="wl-card" style={{ padding: '1rem', borderRadius: 14 }}>
-                  <h2 style={{ margin: '0 0 0.35rem', color: 'var(--ink)', fontSize: '1rem' }}>{faq.question}</h2>
-                  <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.9rem' }}>{faq.answer}</p>
-                </article>
-              ))}
-            </div>
-          </section>
-        </div>
-      </section>
-    </>
+    <InternationalReadingSkillLesson
+      slug="matching-information"
+      path={ROUTE.path}
+      indexPath="/practica/ielts/reading/tipos-de-preguntas"
+      indexName="Reading Question Types"
+      lessonLabel="IELTS Academic Reading · Question type"
+      name="Matching Information"
+      title={TITLE}
+      description={DESCRIPTION}
+      directAnswer="Read the statements first, build a distinctive search signal, scan every paragraph for a paraphrase and confirm the complete entity, action and relationship. The same paragraph may answer more than one statement."
+      facts={[
+        { label: 'Target', value: 'Specific information' },
+        { label: 'Evidence', value: 'Exact detail + context' },
+        { label: 'Main risk', value: 'General topic match' },
+      ]}
+      outcomes={[
+        { title: 'Build useful search signals', text: 'Convert each statement into a distinctive entity, action, outcome, reason, comparison or qualification.' },
+        { title: 'Scan for paraphrase', text: 'Locate equivalent meaning rather than waiting for identical wording.' },
+        { title: 'Control nearby traps', text: 'Reject paragraphs that share the topic but change the entity, relationship, scope or required detail.' },
+      ]}
+      method={[
+        { title: 'Read statements first', text: 'Underline the entity, action and logical relationship before reading every paragraph closely.' },
+        { title: 'Build a search signal', text: 'Choose the least repeatable detail: a reason, unusual result, comparison, technical process or qualification.' },
+        { title: 'Scan the passage map', text: 'Move quickly by meaning and paraphrase; a paragraph may be used more than once.' },
+        { title: 'Confirm both sides', text: 'Read around the candidate sentence and verify that entity, action and relationship all match the statement.' },
+      ]}
+      weakExample="Choose Paragraph B because it discusses the same broad topic and repeats one word from the statement."
+      strongExample="Choose Paragraph D because it contains the delayed consequence and the affected group expressed in paraphrase; reject B because it mentions the topic but describes a different result."
+      practice={<MatchingInformationGuidedPractice passage={guidedPassage} />}
+      independentPracticeExperience={<MatchingInformationIndependentPractice passage={independentPassage} />}
+      progressEngine={<MatchingInformationProgressEngine />}
+      sourceReview={(
+        <SkillReviewSourceBlock
+          accent="#0369a1"
+          skillName="Matching Information"
+          reviewedFocus={[
+            'Guided, independent and Progress Engine passage pools are separated.',
+            'A paragraph may be reused when it contains more than one requested detail.',
+            'Feedback names topic matches, entity confusion, qualifier loss, lexical echoes, relationship mismatches and nearby true details.',
+          ]}
+          sources={[
+            { label: 'Official IELTS Academic Reading format', href: IELTS_ACADEMIC_URL, note: 'Confirms Matching Information as locating specific information in lettered paragraphs or sections and permits paragraph reuse when instructions state it.' },
+            { label: 'WeLearn practice blueprint', note: 'Defines held-back transfer, explicit evidence confirmation, local progress and the client-key security boundary.' },
+          ]}
+        />
+      )}
+      independentPractice={[
+        'Write one distinctive search signal beside each statement before scanning.',
+        'For every location, quote the precise sentence that proves the complete detail.',
+        'Name the closest topic-match paragraph and explain what relationship or qualifier it lacks.',
+        'Repeat only the items where your signal or context check was incomplete.',
+      ]}
+      checklist={[
+        'you can distinguish a paragraph topic from a requested specific detail',
+        'you scan for paraphrase rather than identical vocabulary',
+        'you preserve entity, action, scope, time and cause',
+        'you reuse a paragraph only when separate statements are genuinely supported there',
+      ]}
+      faqs={ROUTE.faqs}
+      officialNote="Matching Information is an official IELTS Academic Reading task family. This page is guided WeLearn practice; answer keys reach the browser for feedback, so it is not a secure Exam or proctored mode. Candidate sources do not by themselves prove authorship or full factual verification."
+      nextLinks={[
+        { href: '/practica/ielts/reading/tipos-de-preguntas/matching-features', label: 'Continue to Matching Features', primary: true },
+        { href: '/practica/ielts/reading/habilidades/scanning', label: 'Strengthen scanning' },
+        { href: '/practica/ielts/reading/habilidades/parafrasis', label: 'Strengthen paraphrase recognition' },
+        { href: '/practica/ielts/reading/mixed-practice', label: 'Open Mixed Practice' },
+        { href: '/practica/ielts/reading', label: 'Back to Reading hub' },
+      ]}
+    />
   );
 }
