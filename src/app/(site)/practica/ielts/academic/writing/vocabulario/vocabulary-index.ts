@@ -7,9 +7,11 @@
  *
  * ESTADO, 12 de agosto de 2026
  *
- * Task 1 está COMPLETO: seis de seis. Task 2 tiene dos de sus cuatro —introducción y cuerpo—,
- * y faltan conclusión y revisión, más el traslado de las ocho funciones transversales, que
- * todavía viven en `task2/academic-vocabulary` y tendrán que dejar un redirect al mudarse. Se
+ * Las DIEZ unidades por subparte están completas: Task 1 seis de seis, Task 2 cuatro de cuatro,
+ * 217 entradas. Lo único que falta de la Fase A son las ocho funciones transversales, que
+ * siguen en `task2/academic-vocabulary` y no se pueden mover con un `git mv`: allí son listas
+ * planas sin explicación larga ni ejercicio guiado, así que mudarlas es reescribirlas con el
+ * blueprint, y hay que dejar un redirect permanente porque su URL ya está publicada. Se
  * dice aquí y no en un documento aparte porque es el fichero que alguien abre para añadir la
  * siguiente, y porque un superhub a medio construir que no lo declara se parece demasiado a
  * uno terminado.

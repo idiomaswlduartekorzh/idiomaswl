@@ -348,4 +348,331 @@ export const TASK2_UNITS: VocabUnit[] = [
       },
     ],
   },
+
+  // ── 3 · La conclusión ──────────────────────────────────────────────────────
+  {
+    slug: 'task2-conclusion',
+    label: 'Task 2 conclusion',
+    spanishName: 'Vocabulario para la conclusión de un ensayo',
+    seoTitle: 'Vocabulario para la conclusión de un ensayo IELTS: cerrar sin repetir',
+    seoDescription: 'Cómo cerrar un ensayo en inglés sin copiar la introducción: in conclusion, the evidence presented suggests, on balance. Con su patrón y ejercicios corregidos.',
+    family: 'task2',
+    job: 'it restates the position in different words and closes without introducing anything new',
+    whenToUse: 'The last three or four sentences, written when there are five minutes left and the temptation to paste the introduction is strongest. It is short, it is predictable, and it is the paragraph most often missing entirely.',
+    tone: 'review',
+    explainer: {
+      definition: 'A conclusion restates the position the essay argued, in words that are not the introduction’s, and stops. It adds nothing, proves nothing and introduces nobody new.',
+      sections: [
+        {
+          heading: 'Why it is not a summary, and why copying the introduction fails',
+          body: [
+            'The instinct is to summarise, and the instinct produces the two failures that make conclusions worthless. The first is copying: an examiner who reads the same sentence twice, once at the top and once at the bottom, has been given no new language and no new thinking, and the words in it are counted once. The second is listing: three sentences that recap what each body paragraph said, which tells a reader who has just read them nothing they do not already know.',
+            'What a conclusion is for is narrower and easier. It answers the question again, now that the reasoning is behind it, and it shows that the answer survived the argument. That is why the vocabulary is mostly about referring back — “the evidence presented”, “for the reasons outlined” — rather than about restating content. You point at what you did; you do not do it again.',
+            'The paraphrasing pressure here is real and it is the reason this paragraph has its own vocabulary at all. Your position has already been stated once in your own words, so the conclusion needs a second set. This is where a writer who only knows one way to say their position runs out, and either copies or waffles.',
+          ],
+          points: [
+            { term: 'Signal it', detail: '“In conclusion”, “To conclude”. One of them, once. Examiners look for the paragraph and a signposted one is easier to find.' },
+            { term: 'Refer, do not repeat', detail: '“For the reasons outlined above”. Point at the argument instead of running it again.' },
+            { term: 'Restate the position', detail: 'The same answer, different words. Not the same sentence with two adjectives changed.' },
+            { term: 'Nothing new', detail: 'A new reason in the conclusion is a reason with no paragraph to support it.' },
+          ],
+        },
+        {
+          heading: 'The recommendation question',
+          body: [
+            'Whether to end with a recommendation depends entirely on what was asked. A problem–solution prompt invites one, and closing without it leaves the task half answered. An opinion prompt does not: “governments should therefore act immediately” at the end of an essay that was asked to what extent you agree has answered a different question, and it introduces a proposal the body never argued.',
+            'When a recommendation does belong, it needs the same specificity as any proposal in a body paragraph. “Something must be done” is not a recommendation, and it is the phrase that appears when the writer knows a conclusion should feel forward-looking and has nothing concrete to put there.',
+          ],
+        },
+      ],
+      cost: 'A missing conclusion costs on Task Response, and it is the easiest mark in the whole paper to lose because the paragraph is four sentences long. A copied one costs almost as much: it produces no new language for Lexical Resource and demonstrates no new thinking. And a conclusion that introduces a fresh reason damages the essay backwards, because that reason now has no paragraph supporting it.',
+      limits: 'It does not argue, does not add evidence and does not concede anything new. If the essay never took a position, no conclusion can rescue it — there is nothing to restate. And a recommendation only belongs where the prompt asked for one: appended to an opinion essay it answers a question nobody asked.',
+    },
+    upgrade: {
+      vague: 'In conclusion, I think that public transport is better than roads because it is cheaper and better for the environment, as I said before.',
+      precise: 'In conclusion, the reasons outlined above make a strong case for prioritising public transport, notwithstanding the difficulties this presents in sparsely populated regions.',
+      earns: ['precision', 'register', 'range'],
+      why: 'The vague version repeats both body paragraphs and then admits it with “as I said before”. The precise one points at the argument instead of re-running it, restates the position in new words, and carries the qualification the introduction promised.',
+    },
+    groups: [
+      {
+        label: 'Signalling the close',
+        purpose: 'One of these, once. The examiner is looking for this paragraph.',
+        entries: [
+          { text: 'In conclusion,', risk: 'safe', pattern: 'Opens the paragraph with a comma. The clearest signal available and never wrong.' },
+          { text: 'To conclude,', risk: 'safe', pattern: 'Same position, same comma. Slightly less common, which is its only advantage.' },
+          { text: 'On balance,', risk: 'watch', pattern: 'Opens with a comma, and it promises that two sides were weighed. Only if the essay weighed them.' },
+          { text: 'In summary,', risk: 'watch', pattern: 'Opens with a comma, and it promises a summary — which invites the listing this paragraph should avoid.' },
+          { text: 'In a nutshell,', risk: 'avoid', pattern: 'Conversational. It signals the close and drops the register in three words.' },
+        ],
+      },
+      {
+        label: 'Referring back without repeating',
+        purpose: 'Point at the argument. Do not run it again.',
+        entries: [
+          { text: 'for the reasons outlined above', risk: 'safe', pattern: 'Ends or opens the clause. Refers to the whole argument in five words.' },
+          { text: 'the evidence presented suggests', risk: 'safe', pattern: 'Takes a clause. “Suggests” keeps the strength honest — you presented reasoning, not proof.' },
+          { text: 'as this essay has shown', risk: 'watch', pattern: 'Takes a clause after a comma. “Shown” is a strong claim; “argued” is usually the safer verb.' },
+          { text: 'taken together, these factors', risk: 'safe', pattern: 'Opens with a comma. Groups the body paragraphs without listing them.' },
+          { text: 'as I said before / as mentioned', risk: 'avoid', pattern: 'It announces that repetition is coming, which is the one thing this paragraph must not do.' },
+        ],
+      },
+      {
+        label: 'Restating the position',
+        purpose: 'The same answer in a second set of words. This is where a thin vocabulary runs out.',
+        entries: [
+          { text: 'remains the stronger case', risk: 'safe', pattern: 'Takes no object: “restriction remains the stronger case”. Restates a position as a verdict.' },
+          { text: 'this essay has argued that', risk: 'safe', pattern: 'Takes a clause. Commits without the personal frame and without repeating the opening sentence.' },
+          { text: 'the balance of argument favours', risk: 'safe', pattern: 'Takes a noun or an -ing form: “favours restricting”, never “favours to restrict”.' },
+          { text: 'notwithstanding', risk: 'watch', pattern: 'Takes a noun, not a clause: “notwithstanding the difficulties”. Carries a concession in one word.' },
+          { text: 'I completely agree, as I said', risk: 'avoid', pattern: 'Repeats the introduction and says so. Two failures in one clause.' },
+        ],
+      },
+      {
+        label: 'Closing forward, when the prompt asked for it',
+        purpose: 'Only where a recommendation belongs — and then it must be specific.',
+        entries: [
+          { text: 'should this trend continue,', risk: 'safe', pattern: 'A conditional clause plus a comma. Looks forward without predicting.' },
+          { text: 'the priority should therefore be', risk: 'safe', pattern: 'Takes a noun or an -ing form. Names one action, which is what a recommendation is.' },
+          { text: 'until X is addressed,', risk: 'safe', pattern: 'A clause plus a comma. Ties the outcome to a condition instead of forecasting it.' },
+          { text: 'something must be done', risk: 'avoid', pattern: 'Recommends nothing. It is the phrase that appears when the writer has nothing concrete left.' },
+        ],
+      },
+    ],
+    examples: [
+      { sentence: 'In conclusion, the reasons outlined above make a strong case for prioritising public transport, notwithstanding the difficulties this presents in rural areas.', doing: 'In conclusion · the reasons outlined above · notwithstanding', why: 'Signalled, refers back without repeating, restates the position and carries the qualification the introduction promised — in one sentence and with no new content.' },
+      { sentence: 'Taken together, these factors suggest that regulation remains the stronger case, though the balance may shift as the technology matures.', doing: 'Taken together · remains the stronger case · may shift', why: '“Taken together” groups the body paragraphs without listing them, and the closing hedge looks forward without predicting anything the essay did not argue.' },
+    ],
+    mistakes: [
+      { wrong: 'In conclusion, as I said before, I think public transport is cheaper and better for the environment.', why: 'It announces the repetition and then delivers it, re-running both body paragraphs. Nothing here is new language and nothing is new thinking.', right: 'In conclusion, the reasons outlined above make a strong case for prioritising public transport.' },
+      { wrong: 'In conclusion, governments should also invest in cycling infrastructure and reform parking charges.', why: 'Two new proposals in the last paragraph, neither argued anywhere. A conclusion cannot support a claim, so a fresh one arrives undefended.', right: 'In conclusion, the priority should therefore be sustained investment in the public network.' },
+    ],
+    guided: {
+      brief: 'Your essay argued that city centres should restrict private cars, on health grounds and on congestion grounds, while conceding that rural areas are different. Your introduction said: “This essay will largely support that view, while acknowledging that rural areas present a genuine exception.”',
+      goal: 'Write the conclusion. Three sentences at most, no new content, and not one phrase reused from the introduction.',
+      steps: [
+        {
+          instruction: 'Signal the close and point at the argument',
+          hint: 'Choose one signal. Then refer back to the reasoning without restating either body paragraph.',
+          minWords: 8,
+          placeholder: 'In conclusion, …',
+          model: 'In conclusion, the reasons outlined above make a strong case for restricting private vehicles in urban centres.',
+          why: '“The reasons outlined above” does in five words what a summary of two paragraphs would do in three sentences — and it does not repeat either of them.',
+        },
+        {
+          instruction: 'Restate the position in words the introduction did not use',
+          hint: 'Your introduction said “largely support that view”. Say the same thing differently. Check you are not reusing “largely” or “support”.',
+          minWords: 7,
+          placeholder: 'The balance of argument …',
+          model: 'The balance of argument clearly favours restriction over unrestricted access.',
+          why: 'Same position, second vocabulary. This is the sentence where an essay with only one way of stating its view has to copy, which is exactly why this paragraph needs its own words.',
+        },
+        {
+          instruction: 'Carry the concession, and stop',
+          hint: 'The introduction promised a rural exception. Honour it in one clause — and add nothing new after it.',
+          minWords: 8,
+          placeholder: 'notwithstanding …',
+          model: 'This holds notwithstanding the genuine difficulties such a policy creates in sparsely populated regions.',
+          why: '“Notwithstanding” carries a whole concession in one word, and the sentence ends the essay. Anything after this would be a new claim with no paragraph behind it.',
+        },
+      ],
+      result: 'In conclusion, the reasons outlined above make a strong case for restricting private vehicles in urban centres. The balance of argument clearly favours restriction over unrestricted access. This holds notwithstanding the genuine difficulties such a policy creates in sparsely populated regions.',
+    },
+    drills: [
+      {
+        stem: 'In conclusion, ______ make a strong case for reform.',
+        correct: 0,
+        options: [
+          { text: 'the reasons outlined above', why: 'Correct. It refers back to the whole argument without re-running any of it.' },
+          { text: 'as I said before, my reasons', why: 'It announces repetition, which is the one move this paragraph must not make.' },
+          { text: 'firstly and secondly, my points', why: 'It re-lists the body paragraphs the reader has just finished.' },
+          { text: 'the reasons outlined bellow', why: 'A spelling error, and the direction is wrong: the argument is above, not below.' },
+        ],
+      },
+      {
+        stem: 'The balance of argument favours ______ the scheme in the largest cities only.',
+        correct: 0,
+        options: [
+          { text: 'introducing', why: 'Correct. “Favour” takes a noun or an -ing form directly, with no preposition.' },
+          { text: 'to introduce', why: '“Favour” does not take an infinitive. The -ing form is what follows it.' },
+          { text: 'for introducing', why: 'The verb takes its object directly; “for” has nothing to do here.' },
+          { text: 'that introduce', why: '“Favour” does not take a clause, so “that” leaves the sentence unfinished.' },
+        ],
+      },
+      {
+        stem: 'Your essay was asked to what extent you agree. Which closing sentence belongs?',
+        correct: 0,
+        options: [
+          { text: 'The evidence presented suggests that the benefits outweigh the drawbacks.', why: 'Correct. It answers the question that was asked and keeps the strength to what the essay actually showed.' },
+          { text: 'Governments must therefore ban all private vehicles immediately.', why: 'A recommendation the prompt never asked for, and one the body never argued.' },
+          { text: 'A further reason is that cycling infrastructure is also cheaper.', why: 'A new reason in the conclusion, arriving with no paragraph to support it.' },
+          { text: 'Something must be done about this problem as soon as possible.', why: 'It recommends nothing, and it appears when the writer has nothing concrete left to say.' },
+        ],
+      },
+    ],
+  },
+
+  // ── 4 · La revisión final ──────────────────────────────────────────────────
+  {
+    slug: 'task2-revision',
+    label: 'Final revision',
+    spanishName: 'Vocabulario para la revisión final',
+    seoTitle: 'Revisar un ensayo en inglés: qué palabras cambiar en los últimos cinco minutos',
+    seoDescription: 'Qué buscar al revisar un ensayo de IELTS y por qué cambiarlo: palabras vagas, afirmaciones excesivas y fugas de registro. Con el reemplazo exacto y ejercicios.',
+    family: 'task2',
+    job: 'it names what to hunt for in the last five minutes, and what to put in its place',
+    whenToUse: 'The final pass, when the essay is written and there is no time to restructure anything. Almost every fix available at that point is a word swap — which is why revision is a vocabulary skill and not only a proofreading one.',
+    tone: 'review',
+    explainer: {
+      definition: 'Final revision is a hunt for four specific kinds of word — vague, overclaimed, informal and repeated — and a swap for each one. It is not proofreading, and it is not rewriting.',
+      sections: [
+        {
+          heading: 'Why a word hunt, and not a re-read',
+          body: [
+            'With five minutes left, re-reading an essay for quality does almost nothing: you already believe what you wrote, and you will read what you meant rather than what is on the page. What does work is hunting for specific, findable things. Four words are worth more than four minutes of general anxiety, because each of them is a defect you can see without judgement and fix without rewriting anything around it.',
+            'The four categories are stable across almost every response. Vague words — “thing”, “a lot of”, “good” — where a precise one was available for free. Overclaims — “always”, “never”, “prove” — that commit you to more than the essay supports. Register leaks — contractions, “kids”, an abbreviation — which are invisible while writing because they are correct English. And repetition, where the same content word carries three sentences because the alternative did not come to mind at the time.',
+            'What makes this a vocabulary skill rather than a proofreading one is that finding the defect is only half the job. “Very important” is easy to spot and useless to spot if you cannot produce “significant” or “critical” on demand. The hunt is worth nothing without the replacements, which is why they are listed here in pairs.',
+          ],
+          points: [
+            { term: 'Vague', detail: '“thing”, “stuff”, “a lot of”, “good”, “bad”, “big”. Each one is a place where a precise word cost nothing.' },
+            { term: 'Overclaimed', detail: '“always”, “never”, “all”, “prove”, “completely”. One counter-example destroys any of them.' },
+            { term: 'Register leak', detail: 'Contractions, abbreviations, “kids”, “a lot of”. Correct English, wrong room.' },
+            { term: 'Repeated', detail: 'The same content word three times in a paragraph. Usually one swap fixes the whole run.' },
+          ],
+        },
+        {
+          heading: 'What not to do with five minutes left',
+          body: [
+            'Do not restructure. Moving a paragraph or rewriting a topic sentence at this stage produces a response that is half old and half new, and the seam is more visible than the problem you were fixing. Do not add a new idea either: a fresh reason arriving in the last minutes has no development behind it, and it costs more than the gap it was filling.',
+            'And do not fix what is merely simple. A short, clear sentence is not a defect, and replacing it with a long one at the last moment is the most reliable way to introduce a grammar error into a paragraph that did not have one. The hunt is for defects, not for opportunities.',
+          ],
+        },
+      ],
+      cost: 'Every unrevised vague word is a free mark on Lexical Resource that was left on the table — the precise version was available and cost nothing. Every overclaim invites the counter-example an examiner will supply mentally. And register leaks cluster in the final paragraph, written fastest, which means they land on the last thing the examiner reads.',
+      limits: 'Revision cannot fix structure, cannot add development and cannot rescue a missing position. If the essay never answered the question, no word swap will make it answer. And there is a floor: an essay is not improved by making every sentence longer, and the last five minutes are exactly when that instinct produces new errors.',
+    },
+    upgrade: {
+      vague: 'This is a very big problem and governments always ignore it, which isn’t good for a lot of people.',
+      precise: 'This is a significant problem, and governments have consistently overlooked it, to the detriment of a substantial proportion of the population.',
+      earns: ['precision', 'register', 'range'],
+      why: 'Four defects in one sentence, one of each kind: “very big” is vague, “always” is an overclaim, “isn’t” is a register leak and “a lot of” is both vague and informal. None of them needed a rewrite — each was a swap.',
+    },
+    groups: [
+      {
+        label: 'Vague words, and what to put in their place',
+        purpose: 'Each one is a place where a precise word was available and free.',
+        entries: [
+          { text: 'thing / stuff → factor, issue, aspect', risk: 'safe', pattern: 'Choose by what it actually is: a factor causes, an issue is disputed, an aspect is one part of something larger.' },
+          { text: 'a lot of → a substantial proportion of', risk: 'safe', pattern: 'Takes “of” plus the noun. Use “number” for things you count, “amount” for a mass.' },
+          { text: 'good / bad → beneficial, detrimental', risk: 'safe', pattern: '“Beneficial to/for”, “detrimental to”. Always name who or what is affected.' },
+          { text: 'big → significant, substantial', risk: 'safe', pattern: 'Before the noun. “Big problem” is not wrong, it just reports nothing about the problem.' },
+          { text: 'very + adjective → one stronger adjective', risk: 'safe', pattern: '“Very important” → “critical”. “Very” is nearly always a word that could be spent better.' },
+          { text: 'get → obtain, receive, become', risk: 'watch', pattern: 'Choose by meaning: obtain a qualification, receive support, become worse. “Get” covers all three and reports none.' },
+        ],
+      },
+      {
+        label: 'Overclaims to soften',
+        purpose: 'One counter-example destroys any of these, and the examiner has one.',
+        entries: [
+          { text: 'always / never → typically, rarely', risk: 'safe', pattern: 'Before the verb. Reports a pattern instead of a law, and survives the exception.' },
+          { text: 'all / every → most, the majority of', risk: 'safe', pattern: '“The majority of” takes a plural noun and a plural verb. Claims more than half and nothing beyond.' },
+          { text: 'prove → indicate, suggest', risk: 'safe', pattern: 'Takes a clause. Research indicates; it does not prove, and you have no study to cite anyway.' },
+          { text: 'completely → largely, broadly', risk: 'safe', pattern: 'Before the verb. Leaves the room your concessions need.' },
+          { text: 'will → is likely to', risk: 'watch', pattern: 'Takes an infinitive. Turns a forecast into a probability, which is what the evidence usually supports.' },
+        ],
+      },
+      {
+        label: 'Register leaks',
+        purpose: 'Correct English, wrong room — and they cluster in the last paragraph.',
+        entries: [
+          { text: 'don’t, isn’t, can’t → do not, is not, cannot', risk: 'safe', pattern: 'Write the full form. The fix costs one keystroke and is the most visible of the four categories.' },
+          { text: 'e.g., i.e., etc. → for example, that is', risk: 'safe', pattern: 'Write them out. “Etc.” has no good replacement, so finish the list instead.' },
+          { text: 'kids → children', risk: 'safe', pattern: 'The neutral word is shorter to think of than to justify.' },
+          { text: 'sort out, deal with → resolve, address', risk: 'watch', pattern: 'Not all phrasal verbs are informal — “carry out” and “point out” are fine. These two are not.' },
+          { text: 'Rhetorical questions', risk: 'avoid', pattern: 'Delete and rewrite as a statement. A question hands the argument back to the reader at the moment you should be making it.' },
+        ],
+      },
+      {
+        label: 'Repetition, and the cheapest fix',
+        purpose: 'Usually one swap fixes a whole run of three sentences.',
+        entries: [
+          { text: 'the same noun three times', risk: 'safe', pattern: 'Replace the second occurrence with a pronoun and the third with a synonym. Do not replace all three.' },
+          { text: 'also / and also', risk: 'watch', pattern: 'Two in a paragraph means ideas are being added rather than developed. Replace with a consequence.' },
+          { text: 'important', risk: 'watch', pattern: 'The single most repeated adjective in Task 2. Significant, critical, central, decisive.' },
+          { text: 'people', risk: 'safe', pattern: 'Name the group: residents, employers, commuters, students. It is more precise and it stops the repetition.' },
+        ],
+      },
+    ],
+    examples: [
+      { sentence: 'This is a significant problem, and governments have consistently overlooked it, to the detriment of a substantial proportion of the population.', doing: 'significant · consistently · a substantial proportion of', why: 'Four swaps, no rewriting: “very big” → “significant”, “always” → “consistently”, the contraction expanded, and “a lot of people” → a proportion of a named group. The sentence structure never changed.' },
+      { sentence: 'Research indicates that most commuters would switch to rail if services were reliable.', doing: 'indicates · most', why: '“Proved” became “indicates” and “all” became “most”. Both were overclaims, and both were fixed without touching anything else in the sentence.' },
+    ],
+    mistakes: [
+      { wrong: 'Studies always prove that all young people are affected by this thing.', why: 'Three overclaims and a vague noun in nine words: “always”, “prove”, “all”, and “this thing”, which names nothing at all.', right: 'Research indicates that most young people are affected by this trend.' },
+      { wrong: 'With two minutes left, the writer rewrote the topic sentence of Body 1.', why: 'Restructuring at the end produces a response that is half old and half new, and the seam is more visible than the problem. With five minutes left, the fixes available are word swaps.', right: 'With two minutes left, the writer replaced four vague words and expanded two contractions.' },
+    ],
+    guided: {
+      brief: 'Your final paragraph reads: “In conclusion, this is a very big problem and governments always ignore it. It isn’t good for a lot of people, and studies prove that things will get worse.”',
+      goal: 'Revise it in three passes — one per category. No restructuring, no new ideas.',
+      steps: [
+        {
+          instruction: 'Pass one: hunt the vague words',
+          hint: 'There are four things that name nothing: a size, a judgement, a quantity and a noun. List them with their replacements.',
+          minWords: 8,
+          placeholder: 'very big → …, isn’t good → …',
+          model: 'very big → significant; isn’t good → detrimental; a lot of people → a substantial proportion of the population; things → conditions.',
+          why: 'Four swaps and not one clause moved. “Things” is the worst of them: it names nothing, so the reader cannot check whether the claim is true.',
+        },
+        {
+          instruction: 'Pass two: hunt the overclaims',
+          hint: 'Two words commit you to more than any essay can support. One is about frequency, the other about certainty.',
+          minWords: 6,
+          placeholder: 'always → …, prove → …',
+          model: 'always → consistently; prove → indicate. And “will get worse” → “are likely to deteriorate”.',
+          why: '“Always” dies to one counter-example and “prove” claims a study you cannot cite. The third fix turns a forecast into a probability, which is what the reasoning actually supports.',
+        },
+        {
+          instruction: 'Pass three: the register, then write the paragraph out',
+          hint: 'One contraction remains. Fix it, apply all three passes, and write the finished paragraph.',
+          minWords: 24,
+          placeholder: 'In conclusion, this is a significant problem …',
+          model: 'In conclusion, this is a significant problem, and governments have consistently overlooked it. It is detrimental to a substantial proportion of the population, and research indicates that conditions are likely to deteriorate.',
+          why: 'Nine swaps in two sentences, and the structure is identical to what was there before. That is what five minutes buys: not a better essay, the same essay without the free mistakes.',
+        },
+      ],
+      result: 'In conclusion, this is a significant problem, and governments have consistently overlooked it. It is detrimental to a substantial proportion of the population, and research indicates that conditions are likely to deteriorate.',
+    },
+    drills: [
+      {
+        stem: 'You find “studies prove that all commuters would switch”. What is the minimum fix?',
+        correct: 0,
+        options: [
+          { text: 'Research indicates that most commuters would switch.', why: 'Correct. Two overclaims fixed with two swaps: “prove” → “indicates” and “all” → “most”. Nothing else moved.' },
+          { text: 'Studies prove that the majority of commuters would switch.', why: '“All” was fixed and “prove” was not. Research indicates; it does not prove.' },
+          { text: 'It is possible that some commuters might perhaps switch.', why: 'Three hedges where one swap was needed. The claim has been emptied rather than corrected.' },
+          { text: 'Studies have definitely proven that all commuters would switch.', why: 'Both overclaims got stronger, and a third was added.' },
+        ],
+      },
+      {
+        stem: 'Which of these is NOT a register problem in an academic essay?',
+        correct: 0,
+        options: [
+          { text: 'carry out a survey', why: 'Correct. Not every phrasal verb is informal: “carry out” and “point out” are standard academic English.' },
+          { text: 'sort out the problem', why: 'Informal. The neutral single verb is “resolve” or “address”.' },
+          { text: 'a lot of residents', why: 'Spoken English, and it reports no quantity either.' },
+          { text: 'the govt didn’t act', why: 'An abbreviation and a contraction in four words.' },
+        ],
+      },
+      {
+        stem: 'With four minutes left you notice Body 2 is weaker than Body 1. What should you do?',
+        correct: 0,
+        options: [
+          { text: 'Leave the structure alone and swap the vague and overclaimed words.', why: 'Correct. Restructuring at this point leaves a visible seam; word swaps improve the response without risking anything.' },
+          { text: 'Rewrite the topic sentence of Body 2 so it matches Body 1.', why: 'Restructuring with four minutes left produces a paragraph that is half old and half new.' },
+          { text: 'Add a third reason to Body 2 to give it more content.', why: 'A new reason arriving now has no development behind it, and it costs more than the gap it fills.' },
+          { text: 'Make each sentence in Body 2 longer and more complex.', why: 'The most reliable way to introduce a grammar error into a paragraph that did not have one.' },
+        ],
+      },
+    ],
+  },
 ];
