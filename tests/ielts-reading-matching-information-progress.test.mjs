@@ -126,13 +126,14 @@ test('canonical and rewrite destination pages mount the complete English practic
   assert.match(lab, /not a secure Exam or proctored mode/);
 });
 
-test('the blueprint records Matching Information gates before the next type scales', async () => {
+test('the blueprint keeps Matching Information pinned after the roadmap advances', async () => {
   const blueprint = await readFile(new URL('../docs/ielts-reading-practice-engine-blueprint.md', import.meta.url), 'utf8');
   for (const required of [
     'Matching Information practice must begin from the statements',
     'allow paragraph reuse',
     'native clickable radio cards',
     '6 source-backed passages and 30 exact-detail decisions',
-    'Next question-type vertical:** Matching Features',
+    'Matching Features:** progressive vertical implemented',
+    'Next question-type vertical:** Matching Sentence Endings',
   ]) assert.match(blueprint, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
 });

@@ -1497,7 +1497,7 @@ function validateRoute(route, index, routeMapText) {
   if (isIeltsReadingQuestionType && route.status === 'published') {
     const pagePath = routeToPagePath(route.path);
     const pageText = fs.existsSync(pagePath) ? fs.readFileSync(pagePath, 'utf8') : '';
-    const progressiveQuestionType = ['/practica/ielts/reading/tipos-de-preguntas/multiple-choice', '/practica/ielts/reading/tipos-de-preguntas/true-false-not-given', '/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given', '/practica/ielts/reading/tipos-de-preguntas/matching-headings', '/practica/ielts/reading/tipos-de-preguntas/matching-information'].includes(route.path);
+    const progressiveQuestionType = ['/practica/ielts/reading/tipos-de-preguntas/multiple-choice', '/practica/ielts/reading/tipos-de-preguntas/true-false-not-given', '/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given', '/practica/ielts/reading/tipos-de-preguntas/matching-headings', '/practica/ielts/reading/tipos-de-preguntas/matching-information', '/practica/ielts/reading/tipos-de-preguntas/matching-features'].includes(route.path);
     if (!pageText.includes(progressiveQuestionType ? 'SkillReviewSourceBlock' : 'QuestionTypeReviewSourceBlock')) fail(`${label} must render its reviewed source block.`);
     if (!pageText.includes(progressiveQuestionType ? 'IELTS_ACADEMIC_URL' : 'IELTS_SAMPLE_URL')) fail(`${label} must cite the official IELTS Reading source in its review block.`);
     if (!pageText.includes('reviewedFocus')) fail(`${label} must declare reviewedFocus for the question-type review block.`);
@@ -1602,8 +1602,9 @@ function validateRoute(route, index, routeMapText) {
   if (route.path === '/practica/ielts/reading/tipos-de-preguntas/matching-features' && route.status === 'published') {
     const pagePath = routeToPagePath(route.path);
     const pageText = fs.existsSync(pagePath) ? fs.readFileSync(pagePath, 'utf8') : '';
-    if (!pageText.includes('MatchingFeaturesPassageBank')) fail(`${label} must render MatchingFeaturesPassageBank.`);
-    if (!pageText.includes('IELTS_MATCHING_FEATURES_PASSAGES')) fail(`${label} must use IELTS_MATCHING_FEATURES_PASSAGES.`);
+    for (const requiredText of ['MatchingFeaturesGuidedPractice', 'MatchingFeaturesIndependentPractice', 'MatchingFeaturesProgressEngine', 'MATCHING_FEATURES_GUIDED_PASSAGE_ID', 'MATCHING_FEATURES_INDEPENDENT_PASSAGE_ID']) {
+      if (!pageText.includes(requiredText)) fail(`${label} must include ${requiredText}.`);
+    }
   }
 
   if (route.path === '/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings' && route.status === 'published') {
