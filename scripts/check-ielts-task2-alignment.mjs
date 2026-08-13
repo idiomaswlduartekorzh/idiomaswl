@@ -974,7 +974,14 @@ if (fs.existsSync(shared)) {
 const vocabHub = path.join(repoRoot, 'src', 'app', '(site)', 'practica', 'ielts', 'academic', 'writing', 'vocabulario')
 if (fs.existsSync(vocabHub)) {
   const indice = loadModule(path.join(vocabHub, 'vocabulary-index.ts'), (spec) =>
-    spec.includes('task1-vocabulary') ? loadModule(path.join(vocabHub, 'task1-vocabulary.ts'), () => ({})) : {})
+    /**
+     * El índice importa una familia por fichero. Se resuelve por nombre en vez de con una
+     * lista fija para que añadir `task2-vocabulary` —o cualquier familia futura— no exija
+     * tocar el guardián: si el fichero existe, se carga.
+     */
+    ['task1-vocabulary', 'task2-vocabulary', 'function-vocabulary']
+      .filter((nombre) => spec.includes(nombre) && fs.existsSync(path.join(vocabHub, `${nombre}.ts`)))
+      .reduce((_, nombre) => loadModule(path.join(vocabHub, `${nombre}.ts`), () => ({})), {}))
   const unidades = indice.VOCAB_UNITS ?? []
 
   if (!unidades.length) failures.push('Superhub de vocabulario: no hay ni una unidad publicada.')
