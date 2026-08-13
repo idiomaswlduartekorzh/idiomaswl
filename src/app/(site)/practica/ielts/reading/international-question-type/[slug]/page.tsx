@@ -44,6 +44,16 @@ import {
   getSentenceEndingPassage,
 } from '@/data/practica-exams/ielts-reading-matching-sentence-endings-progress';
 import {
+  SentenceCompletionGuidedPractice,
+  SentenceCompletionIndependentPractice,
+  SentenceCompletionProgressEngine,
+} from '@/components/exam-practice/SentenceCompletionPracticeLab';
+import {
+  SENTENCE_COMPLETION_GUIDED_PASSAGE_ID,
+  SENTENCE_COMPLETION_INDEPENDENT_PASSAGE_ID,
+  getSentenceCompletionPassage,
+} from '@/data/practica-exams/ielts-reading-sentence-completion-progress';
+import {
   MultipleChoiceGuidedPractice,
   MultipleChoiceIndependentPractice,
   MultipleChoiceProgressEngine,
@@ -205,6 +215,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   const isMatchingInformation = slug === 'matching-information';
   const isMatchingFeatures = slug === 'matching-features';
   const isMatchingSentenceEndings = slug === 'matching-sentence-endings';
+  const isSentenceCompletion = slug === 'sentence-completion';
   const isMultipleChoice = slug === 'multiple-choice';
   const isTfng = slug === 'true-false-not-given';
   const isYnng = slug === 'yes-no-not-given';
@@ -216,6 +227,8 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   const matchingFeaturesIndependent = isMatchingFeatures ? getMatchingFeaturesPassage(MATCHING_FEATURES_INDEPENDENT_PASSAGE_ID) : undefined;
   const matchingSentenceEndingsGuided = isMatchingSentenceEndings ? getSentenceEndingPassage(SENTENCE_ENDINGS_GUIDED_PASSAGE_ID) : undefined;
   const matchingSentenceEndingsIndependent = isMatchingSentenceEndings ? getSentenceEndingPassage(SENTENCE_ENDINGS_INDEPENDENT_PASSAGE_ID) : undefined;
+  const sentenceCompletionGuided = isSentenceCompletion ? getSentenceCompletionPassage(SENTENCE_COMPLETION_GUIDED_PASSAGE_ID) : undefined;
+  const sentenceCompletionIndependent = isSentenceCompletion ? getSentenceCompletionPassage(SENTENCE_COMPLETION_INDEPENDENT_PASSAGE_ID) : undefined;
   const multipleChoiceGuided = isMultipleChoice ? getMultipleChoicePassage(MULTIPLE_CHOICE_GUIDED_PASSAGE_ID) : undefined;
   const multipleChoiceIndependent = isMultipleChoice ? getMultipleChoicePassage(MULTIPLE_CHOICE_INDEPENDENT_PASSAGE_ID) : undefined;
   const tfngGuided = isTfng ? getTfngPassage(TFNG_GUIDED_PASSAGE_ID) : undefined;
@@ -248,6 +261,8 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         ? <MatchingFeaturesGuidedPractice passage={matchingFeaturesGuided} />
       : matchingSentenceEndingsGuided
         ? <MatchingSentenceEndingsGuidedPractice passage={matchingSentenceEndingsGuided} />
+      : sentenceCompletionGuided
+        ? <SentenceCompletionGuidedPractice passage={sentenceCompletionGuided} />
       : multipleChoiceGuided
         ? <MultipleChoiceGuidedPractice passage={multipleChoiceGuided} />
       : tfngGuided
@@ -263,6 +278,8 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         ? <MatchingFeaturesIndependentPractice passage={matchingFeaturesIndependent} />
       : matchingSentenceEndingsIndependent
         ? <MatchingSentenceEndingsIndependentPractice passage={matchingSentenceEndingsIndependent} />
+      : sentenceCompletionIndependent
+        ? <SentenceCompletionIndependentPractice passage={sentenceCompletionIndependent} />
       : multipleChoiceIndependent
         ? <MultipleChoiceIndependentPractice passage={multipleChoiceIndependent} />
       : tfngIndependent
@@ -270,7 +287,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
       : ynngIndependent
         ? <YnngIndependentPractice passage={ynngIndependent} />
         : undefined}
-    progressEngine={isMatchingHeadings ? <MatchingHeadingsProgressEngine /> : isMatchingInformation ? <MatchingInformationProgressEngine /> : isMatchingFeatures ? <MatchingFeaturesProgressEngine /> : isMatchingSentenceEndings ? <MatchingSentenceEndingsProgressEngine /> : isMultipleChoice ? <MultipleChoiceProgressEngine /> : isTfng ? <TfngProgressEngine /> : isYnng ? <YnngProgressEngine /> : undefined}
+    progressEngine={isMatchingHeadings ? <MatchingHeadingsProgressEngine /> : isMatchingInformation ? <MatchingInformationProgressEngine /> : isMatchingFeatures ? <MatchingFeaturesProgressEngine /> : isMatchingSentenceEndings ? <MatchingSentenceEndingsProgressEngine /> : isSentenceCompletion ? <SentenceCompletionProgressEngine /> : isMultipleChoice ? <MultipleChoiceProgressEngine /> : isTfng ? <TfngProgressEngine /> : isYnng ? <YnngProgressEngine /> : undefined}
     sourceReview={isMatchingHeadings ? (
       <SkillReviewSourceBlock
         accent={config.accent}
@@ -328,6 +345,21 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
           { label: 'WeLearn practice blueprint', note: 'Defines held-back transfer, explicit competitor rejection, local persistence and the client-key security boundary.' },
         ]}
       />
+    ) : isSentenceCompletion ? (
+      <SkillReviewSourceBlock
+        accent={config.accent}
+        skillName="Sentence Completion"
+        reviewedFocus={[
+          'Guided, independent and Progress Engine passage pools are separated.',
+          'Every stored response is a literal passage span that fits the rebuilt sentence and displayed maximum.',
+          'Feedback separates evidence, grammar, answer-boundary and instruction failures.',
+          'Candidate sources retain explicit limitations and do not certify authorship, rights clearance or every composite claim.',
+        ]}
+        sources={[
+          { label: 'Official IELTS Academic Reading format', href: IELTS_ACADEMIC_URL, note: 'Confirms Sentence Completion as completing sentence beginnings with words taken from the text and that the stated word limit is binding.' },
+          { label: 'WeLearn practice blueprint', note: 'Defines exact-span scoring, held-back transfer, local persistence and the client-key security boundary.' },
+        ]}
+      />
     ) : isMultipleChoice ? (
       <SkillReviewSourceBlock
         accent={config.accent}
@@ -356,7 +388,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
       'you preserve scope, polarity, logic and any stated word limit',
     ]}
     faqs={route.faqs}
-    officialNote={isMatchingHeadings || isMatchingInformation || isMatchingFeatures || isMatchingSentenceEndings
+    officialNote={isMatchingHeadings || isMatchingInformation || isMatchingFeatures || isMatchingSentenceEndings || isSentenceCompletion
       ? `${config.name} is presented here as guided WeLearn practice. Answer keys reach the browser for feedback, so this is not a secure Exam or proctored mode. Candidate sources do not by themselves prove authorship or full factual verification.`
       : `${config.name} is presented here as guided WeLearn practice. The official IELTS format source defines the task family; the passages, explanations and distractors on this page are original training material.`}
     nextLinks={isMatchingHeadings ? [
@@ -380,6 +412,12 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
     ] : isMatchingSentenceEndings ? [
       { href: '/practica/ielts/reading/tipos-de-preguntas/sentence-completion', label: 'Continue to Sentence Completion', primary: true },
       { href: '/practica/ielts/reading/tipos-de-preguntas/matching-features', label: 'Compare with Matching Features' },
+      { href: '/practica/ielts/reading/habilidades/parafrasis', label: 'Strengthen paraphrase recognition' },
+      { href: '/practica/ielts/reading/mixed-practice', label: 'Open Mixed Practice' },
+      { href: '/practica/ielts/reading', label: 'Back to Reading hub' },
+    ] : isSentenceCompletion ? [
+      { href: '/practica/ielts/reading/tipos-de-preguntas/summary-completion', label: 'Continue to Summary Completion', primary: true },
+      { href: '/practica/ielts/reading/habilidades/limite-de-palabras', label: 'Strengthen word-limit control' },
       { href: '/practica/ielts/reading/habilidades/parafrasis', label: 'Strengthen paraphrase recognition' },
       { href: '/practica/ielts/reading/mixed-practice', label: 'Open Mixed Practice' },
       { href: '/practica/ielts/reading', label: 'Back to Reading hub' },

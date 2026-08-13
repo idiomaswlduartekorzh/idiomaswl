@@ -1,194 +1,105 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
-import OfficialStrategyCard from '@/components/exam-practice/OfficialStrategyCard';
-import QuestionTypeReviewSourceBlock from '@/components/exam-practice/QuestionTypeReviewSourceBlock';
-import { FileCheck2, ListChecks, ScanText } from 'lucide-react';
-import SummaryCompletionPassageBank from '@/components/exam-practice/SummaryCompletionPassageBank';
-import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
+import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import {
-  IELTS_READING_TYPES,
-  IELTS_SENTENCE_COMPLETION_PASSAGES,
-  PRACTICE_BASE_URL,
-} from '@/data/practica-exams/seo-catalog';
+  SentenceCompletionGuidedPractice,
+  SentenceCompletionIndependentPractice,
+  SentenceCompletionProgressEngine,
+} from '@/components/exam-practice/SentenceCompletionPracticeLab';
+import {
+  SENTENCE_COMPLETION_GUIDED_PASSAGE_ID,
+  SENTENCE_COMPLETION_INDEPENDENT_PASSAGE_ID,
+  getSentenceCompletionPassage,
+} from '@/data/practica-exams/ielts-reading-sentence-completion-progress';
+import { IELTS_READING_TYPES, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 
 const ROUTE = IELTS_READING_TYPES.find((item) => item.slug === 'sentence-completion')!;
-const URL = `${PRACTICE_BASE_URL}${ROUTE.path}`;
-const ACCENT = '#0369a1';
-const IELTS_SAMPLE_URL = 'https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test';
+const TITLE = 'Sentence Completion: predict, locate and copy precisely';
+const DESCRIPTION = 'Learn to predict the missing grammar, locate an equivalent passage idea and copy the smallest exact answer that fits the displayed word limit.';
+const IELTS_ACADEMIC_URL = 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading';
+const guidedPassage = getSentenceCompletionPassage(SENTENCE_COMPLETION_GUIDED_PASSAGE_ID)!;
+const independentPassage = getSentenceCompletionPassage(SENTENCE_COMPLETION_INDEPENDENT_PASSAGE_ID)!;
+// Scaling contract: docs/ielts-reading-practice-engine-blueprint.md
 
 export const metadata: Metadata = {
-  title: 'IELTS Reading Sentence Completion: ejercicios y método',
-  description: ROUTE.description,
+  title: 'IELTS Sentence Completion: Method, Practice and Progress',
+  description: DESCRIPTION,
   keywords: ROUTE.keywords,
-  openGraph: {
-    title: 'IELTS Reading Sentence Completion: ejercicios y método',
-    description: ROUTE.description,
-    url: URL,
-    type: 'website',
-    locale: 'es_CO',
-  },
-  alternates: { canonical: URL },
+  alternates: { canonical: `${PRACTICE_BASE_URL}${ROUTE.path}` },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: `${PRACTICE_BASE_URL}${ROUTE.path}`, type: 'website', locale: 'en_US' },
 };
 
 export default function Page() {
   return (
-    <>
-      <LearningResourceJsonLd
-        name={ROUTE.title}
-        url={URL}
-        description={ROUTE.description}
-        teaches={ROUTE.teaches}
-        isPartOf={{ name: 'Tipos de preguntas IELTS Reading', url: `${PRACTICE_BASE_URL}/practica/ielts/reading/tipos-de-preguntas` }}
-      />
-      <FaqJsonLd faqs={ROUTE.faqs} />
-      <BreadcrumbJsonLd
-        items={[
-          { name: 'Práctica', url: `${PRACTICE_BASE_URL}/practica` },
-          { name: 'IELTS', url: `${PRACTICE_BASE_URL}/practica/ielts` },
-          { name: 'Reading', url: `${PRACTICE_BASE_URL}/practica/ielts/reading` },
-          { name: 'Tipos de preguntas', url: `${PRACTICE_BASE_URL}/practica/ielts/reading/tipos-de-preguntas` },
-          { name: 'Sentence Completion', url: URL },
-        ]}
-      />
-
-      <section className="wl-section">
-        <div className="wrap" style={{ maxWidth: 1040 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
-            <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
-            <span>/</span>
-            <Link href="/practica/ielts" style={{ color: 'var(--muted)', textDecoration: 'none' }}>IELTS</Link>
-            <span>/</span>
-            <Link href="/practica/ielts/reading/tipos-de-preguntas" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Tipos de preguntas</Link>
-            <span>/</span>
-            <span style={{ color: 'var(--ink)', fontWeight: 800 }}>Sentence Completion</span>
-          </div>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '1rem', alignItems: 'stretch', marginBottom: '1.5rem' }}>
-            <div>
-              <p className="eyebrow" style={{ margin: '0 0 0.5rem' }}>
-                <span className="ink-line" />IELTS Reading · Tipo de pregunta
-              </p>
-              <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.1rem)', lineHeight: 1.04, letterSpacing: '-0.04em', margin: '0 0 0.85rem', color: 'var(--ink)' }}>
-                IELTS Reading Sentence Completion
-              </h1>
-              <p style={{ color: 'var(--muted)', fontSize: '1rem', lineHeight: 1.75, margin: 0, maxWidth: 740 }}>
-                Sentence Completion exige dos lecturas a la vez: ubicar la evidencia en el texto y hacer que la respuesta encaje gramaticalmente en una frase nueva.
-              </p>
-            </div>
-
-            <aside className="wl-card" style={{ padding: '1rem', borderRadius: 16, display: 'grid', gap: '0.75rem', alignContent: 'center' }}>
-              {[
-                { label: 'Antes', value: 'predice', sub: 'tipo de palabra' },
-                { label: 'Durante', value: 'paráfrasis', sub: 'busca equivalente' },
-                { label: 'Después', value: 'encaja', sub: 'gramática limpia' },
-              ].map((item) => (
-                <div key={item.label} style={{ display: 'flex', justifyContent: 'space-between', gap: '0.75rem', alignItems: 'center', border: '1px solid var(--line-soft)', borderRadius: 12, padding: '0.75rem', background: 'var(--bg-2)' }}>
-                  <span style={{ color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.72rem', textTransform: 'uppercase', fontWeight: 800 }}>{item.label}</span>
-                  <strong style={{ color: ACCENT, fontFamily: 'var(--mono)', fontSize: '1.05rem', textAlign: 'right' }}>
-                    {item.value}
-                    <span style={{ display: 'block', color: 'var(--muted)', fontSize: '0.66rem', fontWeight: 700 }}>{item.sub}</span>
-                  </strong>
-                </div>
-              ))}
-            </aside>
-          </div>
-
-          <OfficialStrategyCard
-            accent={ACCENT}
-            official="IELTS Academic Reading incluye Sentence Completion para completar frases con palabras del pasaje y dentro del límite indicado."
-            strategy="WeLearn lo trabaja con tres pasos: predecir la categoría gramatical, ubicar la paráfrasis en el texto y copiar solo las palabras necesarias."
-          />
-
-          <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: '0.85rem', marginBottom: '1.2rem' }}>
-            {[
-              {
-                icon: <ScanText size={18} />,
-                title: 'Predice la gramática',
-                text: 'Mira las palabras antes y después del espacio: normalmente revelan si falta un sustantivo, verbo, adjetivo o frase.',
-              },
-              {
-                icon: <FileCheck2 size={18} />,
-                title: 'Busca la paráfrasis',
-                text: 'La frase de la pregunta rara vez copia el texto completo. Debes buscar la misma idea con otras palabras.',
-              },
-              {
-                icon: <ListChecks size={18} />,
-                title: 'Respeta el límite',
-                text: 'Una respuesta correcta puede volverse incorrecta si agregas un artículo o palabra extra que excede la instrucción.',
-              },
-            ].map((item) => (
-              <article key={item.title} className="wl-card" style={{ padding: '1rem', borderRadius: 14 }}>
-                <div style={{ display: 'flex', gap: '0.5rem', color: ACCENT, alignItems: 'center', marginBottom: '0.35rem' }}>
-                  {item.icon}
-                  <h2 style={{ margin: 0, color: 'var(--ink)', fontSize: '1rem' }}>{item.title}</h2>
-                </div>
-                <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.58, fontSize: '0.9rem' }}>{item.text}</p>
-              </article>
-            ))}
-          </section>
-
-          <section className="wl-card" style={{ padding: '1.2rem', borderRadius: 16, marginBottom: '1rem' }}>
-            <p className="eyebrow" style={{ margin: '0 0 0.45rem' }}>Método WeLearn</p>
-            <h2 style={{ margin: '0 0 0.75rem', fontSize: '1.3rem', letterSpacing: '-0.02em' }}>Cómo resolver Sentence Completion</h2>
-            <div style={{ display: 'grid', gap: '0.65rem' }}>
-              {[
-                'Lee la instrucción y marca el límite de palabras antes de tocar el texto.',
-                'Predice la categoría gramatical de cada espacio usando la frase incompleta.',
-                'Busca en el pasaje la oración que dice la misma idea con otras palabras.',
-                'Copia la respuesta exacta y vuelve a leer la frase completa para revisar sentido y gramática.',
-              ].map((item, index) => (
-                <p key={item} style={{ margin: 0, display: 'grid', gridTemplateColumns: '32px 1fr', gap: '0.65rem', alignItems: 'start', color: 'var(--ink-2)', lineHeight: 1.58 }}>
-                  <span style={{ width: 32, height: 32, borderRadius: 10, background: `${ACCENT}12`, color: ACCENT, display: 'grid', placeItems: 'center', fontFamily: 'var(--mono)', fontWeight: 900 }}>
-                    {index + 1}
-                  </span>
-                  <span>{item}</span>
-                </p>
-              ))}
-            </div>
-          </section>
-
-          <SummaryCompletionPassageBank
-            passages={IELTS_SENTENCE_COMPLETION_PASSAGES}
-            accent={ACCENT}
-            eyebrow="Banco Sentence Completion"
-            title="Tres pasajes para completar frases con palabras exactas"
-            intro="Practica con textos originales de WeLearn. Cada blank exige evidencia textual, límite de palabras y encaje gramatical dentro de la frase."
-          />
-
-          <section style={{ marginTop: '1.4rem' }}>
-            <QuestionTypeReviewSourceBlock
-              accent={ACCENT}
-              questionTypeName={ROUTE.title}
-              sources={[
-                {
-                  label: 'IELTS Academic sample test questions',
-                  href: IELTS_SAMPLE_URL,
-                  note: 'lista oficial de preguntas de muestra de IELTS Academic Reading usada para confirmar que esta ruta corresponde a un tipo de pregunta oficial.',
-                },
-                {
-                  label: 'Banco original WeLearn',
-                  note: 'pasajes, preguntas, distractores y explicaciones creados para practica pedagogica, sin copiar preguntas oficiales.',
-                },
-              ]}
-              reviewedFocus={[
-                'alineacion con tipos de pregunta oficiales de IELTS Reading',
-                'separacion entre formato oficial y metodo WeLearn',
-                'respuesta explicada con evidencia, alcance o trampa',
-              ]}
-            />
-
-            <p className="eyebrow" style={{ margin: '0 0 0.5rem' }}>Preguntas frecuentes</p>
-            <div style={{ display: 'grid', gap: '0.75rem' }}>
-              {ROUTE.faqs.map((faq) => (
-                <article key={faq.question} className="wl-card" style={{ padding: '1rem', borderRadius: 14 }}>
-                  <h2 style={{ margin: '0 0 0.35rem', color: 'var(--ink)', fontSize: '1rem' }}>{faq.question}</h2>
-                  <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.9rem' }}>{faq.answer}</p>
-                </article>
-              ))}
-            </div>
-          </section>
-        </div>
-      </section>
-    </>
+    <InternationalReadingSkillLesson
+      slug="sentence-completion"
+      path={ROUTE.path}
+      indexPath="/practica/ielts/reading/tipos-de-preguntas"
+      indexName="Reading Question Types"
+      lessonLabel="IELTS Academic Reading · Question type"
+      name="Sentence Completion"
+      title={TITLE}
+      description={DESCRIPTION}
+      accent="#0369a1"
+      directAnswer="Read the instruction first. Predict the missing grammatical form, locate the same idea in the passage and copy only the exact words needed to rebuild the sentence within the stated limit."
+      facts={[
+        { label: 'Target', value: 'Exact missing passage span' },
+        { label: 'Evidence', value: 'Meaning + grammar + word limit' },
+        { label: 'Main risk', value: 'True nearby words that do not fit' },
+      ]}
+      outcomes={[
+        { title: 'Predict before searching', text: 'Use the words around the gap to predict a noun, verb, adjective, number or short phrase.' },
+        { title: 'Locate equivalent meaning', text: 'Search for the paraphrased idea and control the exact evidence zone before copying.' },
+        { title: 'Copy the answer boundary', text: 'Submit only the missing passage words, without repeating a frame word or exceeding the instruction.' },
+      ]}
+      method={[
+        { title: 'Read the instruction', text: 'Record whether the task says ONE WORD ONLY, NO MORE THAN TWO WORDS or another explicit limit.' },
+        { title: 'Predict grammar and meaning', text: 'Read the complete sentence frame and describe what kind of information the gap must contain.' },
+        { title: 'Locate the paraphrase', text: 'Find where the passage expresses the same relationship, then read enough context to reject nearby details.' },
+        { title: 'Copy and rebuild', text: 'Insert the smallest exact span, count the submitted words and reread the completed sentence for natural grammar.' },
+      ]}
+      weakExample="Copy a nearby phrase because it repeats one word from the sentence, even if it answers a different detail."
+      strongExample="Predict a two-word noun phrase, locate the equivalent passage sentence and copy only the missing phrase after checking grammar and the displayed limit."
+      practice={<SentenceCompletionGuidedPractice passage={guidedPassage} />}
+      independentPracticeExperience={<SentenceCompletionIndependentPractice passage={independentPassage} />}
+      progressEngine={<SentenceCompletionProgressEngine />}
+      sourceReview={(
+        <SkillReviewSourceBlock
+          accent="#0369a1"
+          skillName="Sentence Completion"
+          reviewedFocus={[
+            'Guided, independent and Progress Engine passage pools are separated.',
+            'Every stored answer is a literal passage span that fits its rebuilt sentence and displayed maximum.',
+            'Feedback separates wrong evidence, incomplete spans, grammar mismatch, repeated frame words, excess words and instruction errors.',
+            'Candidate sources are presented with limitations; they do not certify every composite claim, authorship or rights clearance.',
+          ]}
+          sources={[
+            { label: 'Official IELTS Academic Reading format', href: IELTS_ACADEMIC_URL, note: 'Confirms Sentence Completion as completing sentence beginnings with words taken from the text and that the stated word limit is binding.' },
+            { label: 'WeLearn practice blueprint', note: 'Defines exact-span scoring, held-back transfer, local persistence and the client-key security boundary.' },
+          ]}
+        />
+      )}
+      independentPractice={[
+        'Write the word limit beside the set before searching the passage.',
+        'Predict the missing grammatical form and meaning for every frame.',
+        'Underline the exact passage span and the sentence words already supplied by the frame.',
+        'After submission, classify each miss before retrying only the weak evidence chain.',
+      ]}
+      checklist={[
+        'you derive the answer limit from the displayed instruction',
+        'you can locate the paraphrased evidence rather than chase one repeated word',
+        'the completed sentence is grammatical and preserves the passage meaning',
+        'you submit only the missing words and can explain why a nearby span fails',
+      ]}
+      faqs={ROUTE.faqs}
+      officialNote="Sentence Completion is an official IELTS Academic Reading task family. This page is guided WeLearn practice; answer keys reach the browser for feedback, so it is not a secure Exam or proctored mode. Candidate sources provide context but do not by themselves establish authorship, rights clearance or complete factual verification."
+      nextLinks={[
+        { href: '/practica/ielts/reading/tipos-de-preguntas/summary-completion', label: 'Continue to Summary Completion', primary: true },
+        { href: '/practica/ielts/reading/habilidades/limite-de-palabras', label: 'Strengthen word-limit control' },
+        { href: '/practica/ielts/reading/habilidades/parafrasis', label: 'Strengthen paraphrase recognition' },
+        { href: '/practica/ielts/reading/mixed-practice', label: 'Open Mixed Practice' },
+        { href: '/practica/ielts/reading', label: 'Back to Reading hub' },
+      ]}
+    />
   );
 }
