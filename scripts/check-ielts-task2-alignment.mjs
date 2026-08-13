@@ -875,6 +875,171 @@ for (const [fichero, llamada] of [
   }
 }
 
+/**
+ * EL BLUEPRINT DE WRITING — los cuatro bloques.
+ *
+ * David, 12 de agosto de 2026, mirando paraphrasing terminado: «no veo el blueprint… primero
+ * explicación larga y detallada, luego ejemplos, luego ejercicio guiado y luego el motor».
+ *
+ * Sin guardián eso se cae en la siguiente unidad que alguien escriba con prisa, y se cae en
+ * silencio: una página sin explicación larga sigue compilando y sigue teniendo sus ejercicios.
+ *
+ * «Larga y detallada» se mide, no se estima. El umbral son 250 palabras por explicación, que
+ * es aproximadamente donde una definición deja de serlo y empieza a enseñar. Las secciones
+ * `cost` y `limits` son obligatorias porque son las dos que ningún material de IELTS trae:
+ * qué pierdes exactamente si no lo haces, y dónde la técnica deja de aplicar.
+ */
+const EXPLICACION_MINIMA = 250
+const PASOS_MINIMOS = 3
+
+const explainers = loadModule(path.join(task2, 'paraphrasing', 'paraphrasing-explainers.ts'), () => ({}))
+const EXPLAINERS = explainers.EXPLAINERS ?? {}
+const GUIDED = explainers.GUIDED ?? {}
+
+for (const technique of techniques) {
+  const explainer = EXPLAINERS[technique.slug]
+  if (!explainer) {
+    failures.push(`Blueprint/${technique.slug}: sin explicación larga. Es el bloque 1 y no es opcional.`)
+    continue
+  }
+
+  const palabras = [
+    explainer.definition,
+    ...(explainer.sections ?? []).flatMap((s) => [s.heading, ...(s.body ?? []), ...(s.points ?? []).map((p) => `${p.term} ${p.detail}`)]),
+    explainer.cost, explainer.limits,
+  ].filter(Boolean).join(' ').trim().split(/\s+/u).length
+
+  if (palabras < EXPLICACION_MINIMA) {
+    failures.push(`Blueprint/${technique.slug}: la explicación tiene ${palabras} palabras; el mínimo son ${EXPLICACION_MINIMA}. Una definición no es una lección.`)
+  }
+  if (!(explainer.sections ?? []).length) failures.push(`Blueprint/${technique.slug}: la explicación no tiene ni una sección.`)
+  for (const section of explainer.sections ?? []) {
+    if (!(section.body ?? []).length) failures.push(`Blueprint/${technique.slug}: la sección «${section.heading}» no tiene párrafos.`)
+  }
+  if (!explainer.cost?.trim()) failures.push(`Blueprint/${technique.slug}: falta «cost» — qué se pierde si no se hace.`)
+  if (!explainer.limits?.trim()) failures.push(`Blueprint/${technique.slug}: falta «limits» — dónde deja de aplicar.`)
+
+  const guided = GUIDED[technique.slug]
+  if (!guided) {
+    failures.push(`Blueprint/${technique.slug}: sin ejercicio guiado. Es el bloque 3, el escalón entre el ejemplo y el motor.`)
+    continue
+  }
+  if ((guided.steps ?? []).length < PASOS_MINIMOS) {
+    failures.push(`Blueprint/${technique.slug}: el guiado tiene ${(guided.steps ?? []).length} pasos; el mínimo son ${PASOS_MINIMOS}.`)
+  }
+  for (const [i, step] of (guided.steps ?? []).entries()) {
+    for (const campo of ['instruction', 'hint', 'placeholder', 'model', 'why']) {
+      if (!step[campo]?.trim()) failures.push(`Blueprint/${technique.slug}: al paso ${i + 1} del guiado le falta «${campo}».`)
+    }
+    /**
+     * El mínimo de palabras es el andamio entero. Sin él, el botón que revela el modelo se
+     * pulsa cuatro veces seguidas sin escribir nada, y el ejercicio guiado se convierte en un
+     * ejemplo resuelto partido en trozos —que es justo lo que ya existía más arriba.
+     */
+    if (!(step.minWords > 0)) failures.push(`Blueprint/${technique.slug}: el paso ${i + 1} no exige escribir nada antes de revelar el modelo.`)
+  }
+  if (!guided.brief?.trim() || !guided.goal?.trim() || !guided.result?.trim()) {
+    failures.push(`Blueprint/${technique.slug}: al guiado le falta el material, el objetivo o el resultado.`)
+  }
+}
+
+/**
+ * Los componentes compartidos del blueprint viven en `writing/_shared`, FUERA de `task2`, así
+ * que el barrido de `spellCheck` de más abajo no los veía. `GuidedPractice` tiene un área de
+ * escritura en cada paso: si se publica con el corrector encendido, el ejercicio deja de
+ * parecerse al examen justo en la parte donde se escribe.
+ */
+const shared = path.join(repoRoot, 'src', 'app', '(site)', 'practica', 'ielts', 'academic', 'writing', '_shared')
+if (fs.existsSync(shared)) {
+  for (const file of fs.readdirSync(shared).filter((name) => name.endsWith('.tsx'))) {
+    const source = fs.readFileSync(path.join(shared, file), 'utf8')
+    const sinCorrector = etiquetasTextarea(source).filter((tag) => !tag.includes('spellCheck={false}')).length
+    if (sinCorrector) {
+      failures.push(`_shared/${file}: ${sinCorrector} área(s) de escritura sin \`spellCheck={false}\`. En el examen no hay corrector.`)
+    }
+  }
+}
+
+/**
+ * EL SUPERHUB DE VOCABULARIO DE WRITING.
+ *
+ * Vive en `/writing/vocabulario`, fuera de Task 2, porque sirve a las dos tareas. Se vigila
+ * desde aquí porque comparte blueprint, `placeOption` y la regla del patrón con el resto del
+ * curso, y separar el guardián solo habría duplicado las mismas seis comprobaciones.
+ *
+ * La regla propia del superhub es el PATRÓN: una entrada sin la construcción que exige es
+ * media entrada, y es la que produce «peaked to 40%» y «detrimental for». Publicar una lista
+ * de palabras sin patrones sería exactamente el material que este superhub viene a sustituir.
+ */
+const vocabHub = path.join(repoRoot, 'src', 'app', '(site)', 'practica', 'ielts', 'academic', 'writing', 'vocabulario')
+if (fs.existsSync(vocabHub)) {
+  const indice = loadModule(path.join(vocabHub, 'vocabulary-index.ts'), (spec) =>
+    spec.includes('task1-vocabulary') ? loadModule(path.join(vocabHub, 'task1-vocabulary.ts'), () => ({})) : {})
+  const unidades = indice.VOCAB_UNITS ?? []
+
+  if (!unidades.length) failures.push('Superhub de vocabulario: no hay ni una unidad publicada.')
+
+  const slugs = new Set()
+  for (const unit of unidades) {
+    if (slugs.has(unit.slug)) failures.push(`Superhub/${unit.slug}: slug repetido.`)
+    slugs.add(unit.slug)
+
+    // El patrón, que es la regla del superhub.
+    let entradas = 0
+    for (const group of unit.groups ?? []) {
+      if (!group.purpose?.trim()) failures.push(`Superhub/${unit.slug}: el grupo «${group.label}» no dice qué trabajo hace.`)
+      for (const entry of group.entries ?? []) {
+        entradas += 1
+        if (!entry.pattern?.trim()) failures.push(`Superhub/${unit.slug}: «${entry.text}» se publica sin su patrón.`)
+      }
+    }
+    if (entradas < 15) failures.push(`Superhub/${unit.slug}: solo ${entradas} entradas. Una unidad con menos de 15 no cubre su parte del examen.`)
+    if (!(unit.groups ?? []).length) failures.push(`Superhub/${unit.slug}: el banco no está agrupado por trabajo.`)
+    if (!(unit.groups ?? []).some((g) => (g.entries ?? []).some((e) => e.risk === 'avoid'))) {
+      failures.push(`Superhub/${unit.slug}: ninguna entrada marcada como «avoid». Cada parte tiene su palabra que parece que sirve y no sirve.`)
+    }
+
+    // Los cuatro bloques del blueprint, igual que en paraphrasing.
+    const palabras = [
+      unit.explainer?.definition,
+      ...(unit.explainer?.sections ?? []).flatMap((s) => [s.heading, ...(s.body ?? []), ...(s.points ?? []).map((p) => `${p.term} ${p.detail}`)]),
+      unit.explainer?.cost, unit.explainer?.limits,
+    ].filter(Boolean).join(' ').trim().split(/\s+/u).length
+    if (palabras < EXPLICACION_MINIMA) {
+      failures.push(`Superhub/${unit.slug}: la explicación tiene ${palabras} palabras; el mínimo son ${EXPLICACION_MINIMA}.`)
+    }
+    if (!unit.explainer?.cost?.trim() || !unit.explainer?.limits?.trim()) {
+      failures.push(`Superhub/${unit.slug}: a la explicación le falta «cost» o «limits».`)
+    }
+    if ((unit.guided?.steps ?? []).length < PASOS_MINIMOS) {
+      failures.push(`Superhub/${unit.slug}: el guiado tiene ${(unit.guided?.steps ?? []).length} pasos; el mínimo son ${PASOS_MINIMOS}.`)
+    }
+    for (const [i, step] of (unit.guided?.steps ?? []).entries()) {
+      if (!(step.minWords > 0)) failures.push(`Superhub/${unit.slug}: el paso ${i + 1} del guiado no exige escribir nada.`)
+    }
+    if ((unit.upgrade?.earns ?? []).some((earn) => /\d/.test(earn))) {
+      failures.push(`Superhub/${unit.slug}: «earns» lleva un número. Ninguna página promete una banda.`)
+    }
+
+    // Los bancos de opción, con el mismo criterio que el resto del curso.
+    for (const [i, drill] of (unit.drills ?? []).entries()) {
+      const largos = drill.options.map((o) => o.text.trim().split(/\s+/u).length)
+      const mejor = Math.max(...largos.filter((_, j) => j !== drill.correct))
+      if (largos[drill.correct] - mejor >= DESTAQUE) {
+        failures.push(`Superhub/${unit.slug} ejercicio ${i + 1}: la correcta saca ${largos[drill.correct] - mejor} palabras al mejor distractor.`)
+      }
+      const motivos = drill.options.map((o) => o.why?.trim())
+      if (motivos.some((w) => !w)) failures.push(`Superhub/${unit.slug} ejercicio ${i + 1}: hay opciones sin motivo propio.`)
+      if (new Set(motivos).size !== motivos.length) failures.push(`Superhub/${unit.slug} ejercicio ${i + 1}: dos opciones comparten motivo.`)
+    }
+  }
+
+  const cliente = fs.readFileSync(path.join(vocabHub, 'VocabularyUnitClient.tsx'), 'utf8')
+  if (!cliente.includes('placeOption(drill.options')) {
+    failures.push('vocabulario/VocabularyUnitClient.tsx: no reparte la correcta con `placeOption(drill.options…`.')
+  }
+}
+
 if (failures.length) {
   console.error('IELTS Task 2 — alineación enunciado/modelo:')
   for (const failure of failures) console.error(`- ${failure}`)
