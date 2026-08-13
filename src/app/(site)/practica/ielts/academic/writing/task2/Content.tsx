@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowRight, BookOpen, Braces, CheckCircle2, FilePenLine, Layers3, Route, Search, Wrench } from 'lucide-react';
+import { ArrowRight, BookOpen, Braces, CheckCircle2, Clock3, FilePenLine, Headphones, Layers3, Route, Search, ShieldCheck, Wrench } from 'lucide-react';
 import styles from './introduccion/page.module.css';
 
 const BUILD_PATH = [
@@ -57,6 +57,56 @@ export default function Task2HubPage() {
             <div className={styles.fact}><strong>4 criteria</strong><span>used to assess the complete response</span></div>
           </div>
         </header>
+
+        <section className={`${styles.section} ${styles.podcastSection}`} aria-labelledby="audio-guide-heading">
+          <div className={styles.podcastPanel}>
+            <div className={styles.podcastHeader}>
+              <div>
+                <p className={styles.podcastEyebrow}><Headphones size={16} aria-hidden="true" /> Start here · Audio guide</p>
+                <h2 id="audio-guide-heading">Picking the IELTS Task 2 Lock</h2>
+                <p>Use this English episode as your map of the task: what IELTS asks you to do, how to use the 40 minutes, which question instructions recur and which writing skills make the response work.</p>
+              </div>
+              <div className={styles.podcastDuration} aria-label="Episode length: 21 minutes 45 seconds">
+                <Clock3 size={18} aria-hidden="true" />
+                <span>21:45</span>
+              </div>
+            </div>
+
+            <div className={styles.playerShell}>
+              <div className={styles.nowPlaying}><span>Orientation episode · English</span><strong>No autoplay</strong></div>
+              <audio className={styles.audioPlayer} controls preload="metadata" aria-label="Play Picking the IELTS Task 2 Lock">
+                <source src="/audio/ielts/task2/picking-the-ielts-task-2-lock.mp3" type="audio/mpeg" />
+                Your browser does not support the audio player. <a href="/audio/ielts/task2/picking-the-ielts-task-2-lock.mp3">Download the episode</a>.
+              </audio>
+            </div>
+
+            <div className={styles.podcastBody}>
+              <div className={styles.episodeMap}>
+                <p className={styles.podcastLabel}>By the end, you should be able to</p>
+                <ul>
+                  <li>decode the instruction before choosing an essay structure;</li>
+                  <li>plan a clear position and develop relevant ideas instead of listing them;</li>
+                  <li>connect Task Response, Coherence and Cohesion, Lexical Resource and Grammatical Range and Accuracy to specific writing decisions;</li>
+                  <li>turn the episode into practice using the three paths directly below.</li>
+                </ul>
+                <nav className={styles.podcastLinks} aria-label="Continue from the audio guide">
+                  <a href="#build-the-essay">Architecture <ArrowRight size={15} aria-hidden="true" /></a>
+                  <a href="#question-types">Question types <ArrowRight size={15} aria-hidden="true" /></a>
+                  <a href="#transferable-skills">Writing skills <ArrowRight size={15} aria-hidden="true" /></a>
+                </nav>
+              </div>
+
+              <aside className={styles.editorialNote} aria-label="Editorial accuracy note">
+                <ShieldCheck size={22} aria-hidden="true" />
+                <div>
+                  <p className={styles.podcastLabel}>Editorially reviewed</p>
+                  <h3>Useful defaults, not hidden IELTS rules</h3>
+                  <p>This AI-produced conversation has been checked against the lesson. A four-paragraph essay, about five minutes of planning and an introduction roadmap are practical options—not official requirements. IELTS does not prescribe a fixed paragraph count or one mandatory thesis formula.</p>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </section>
 
         <section className={styles.section} aria-labelledby="official-heading">
           <div className={styles.sectionHeading}><p className={styles.kicker}>Official format and WeLearn strategy</p><h2 id="official-heading">One official essay task, three practical ways to study it</h2><p>IELTS asks for a connected response to the exact prompt. The five question families and the four-paragraph default below are WeLearn study tools, not separate official tasks or a fixed paragraph rule.</p></div>
