@@ -4,6 +4,7 @@ import { toToeflReadingQuestion } from './toefl-reading-adapter';
 import { TOEFL_READING_MODULE2_SETS_1_TO_5 } from '@/data/toefl/reading-module2-sets-1-5';
 import { TOEFL_READING_MODULE2_SETS_6_TO_10 } from '@/data/toefl/reading-module2-sets-6-10';
 import { TOEFL_READING_MODULE2_SETS_11_TO_15 } from '@/data/toefl/reading-module2-sets-11-15';
+import { TOEFL_READING_MODULE2_SETS_16_TO_20 } from '@/data/toefl/reading-module2-sets-16-20';
 import type { ToeflFixedReadingModule2Set } from '@/data/toefl/reading-module2-types';
 
 const READING_MODULE2_BY_SET = Object.fromEntries(
@@ -11,6 +12,7 @@ const READING_MODULE2_BY_SET = Object.fromEntries(
     ...TOEFL_READING_MODULE2_SETS_1_TO_5,
     ...TOEFL_READING_MODULE2_SETS_6_TO_10,
     ...TOEFL_READING_MODULE2_SETS_11_TO_15,
+    ...TOEFL_READING_MODULE2_SETS_16_TO_20,
   ]
     .map((set) => [set.setNumber, set]),
 ) as Readonly<Record<number, ToeflFixedReadingModule2Set>>;

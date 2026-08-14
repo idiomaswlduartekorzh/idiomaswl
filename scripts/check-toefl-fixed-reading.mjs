@@ -3,18 +3,21 @@ import { readFile } from 'node:fs/promises';
 import { TOEFL_READING_MODULE2_SETS_1_TO_5 } from '../src/data/toefl/reading-module2-sets-1-5.ts';
 import { TOEFL_READING_MODULE2_SETS_6_TO_10 } from '../src/data/toefl/reading-module2-sets-6-10.ts';
 import { TOEFL_READING_MODULE2_SETS_11_TO_15 } from '../src/data/toefl/reading-module2-sets-11-15.ts';
+import { TOEFL_READING_MODULE2_SETS_16_TO_20 } from '../src/data/toefl/reading-module2-sets-16-20.ts';
 
 const root = new URL('../', import.meta.url);
 const read = (path) => readFile(new URL(path, root), 'utf8');
 const words = (text) => text.match(/[A-Za-z]+(?:'[A-Za-z]+)?/g) ?? [];
 
-const [publicSource1, publicSource2, publicSource3, privateSource1, privateSource2, privateSource3, enhancerSource, readingRegistrySource, ctwRegistrySource] = await Promise.all([
+const [publicSource1, publicSource2, publicSource3, publicSource4, privateSource1, privateSource2, privateSource3, privateSource4, enhancerSource, readingRegistrySource, ctwRegistrySource] = await Promise.all([
   read('src/data/toefl/reading-module2-sets-1-5.ts'),
   read('src/data/toefl/reading-module2-sets-6-10.ts'),
   read('src/data/toefl/reading-module2-sets-11-15.ts'),
+  read('src/data/toefl/reading-module2-sets-16-20.ts'),
   read('src/server/toefl/reading-module2-sets-1-5.ts'),
   read('src/server/toefl/reading-module2-sets-6-10.ts'),
   read('src/server/toefl/reading-module2-sets-11-15.ts'),
+  read('src/server/toefl/reading-module2-sets-16-20.ts'),
   read('src/data/mocks/toefl-fixed-form.ts'),
   read('src/server/toefl/reading-registry.ts'),
   read('src/server/toefl/complete-words-registry.ts'),
@@ -24,11 +27,12 @@ const sets = [
   ...TOEFL_READING_MODULE2_SETS_1_TO_5,
   ...TOEFL_READING_MODULE2_SETS_6_TO_10,
   ...TOEFL_READING_MODULE2_SETS_11_TO_15,
+  ...TOEFL_READING_MODULE2_SETS_16_TO_20,
 ];
-const publicSources = [publicSource1, publicSource2, publicSource3];
-const privateSources = [privateSource1, privateSource2, privateSource3];
+const publicSources = [publicSource1, publicSource2, publicSource3, publicSource4];
+const privateSources = [privateSource1, privateSource2, privateSource3, privateSource4];
 
-assert.equal(sets.length, 15, 'batch has Sets 1–15');
+assert.equal(sets.length, 20, 'batch has Sets 1–20');
 for (const source of publicSources) {
   assert.doesNotMatch(source, /correctOptionIds|expectedMissing|\banswer\s*:/, 'public Module 2 data contains no answer key');
 }
@@ -39,6 +43,7 @@ assert.match(readingRegistrySource, /\.\.\.module1\.items, \.\.\.module2\.items/
 assert.match(ctwRegistrySource, /TOEFL_CTW_MODULE2_SCORING_BY_OBJECT_ID/, 'CTW registry includes Sets 1–5 Module 2 keys');
 assert.match(ctwRegistrySource, /TOEFL_CTW_MODULE2_SCORING_SETS_6_TO_10_BY_OBJECT_ID/, 'CTW registry includes Sets 6–10 Module 2 keys');
 assert.match(ctwRegistrySource, /TOEFL_CTW_MODULE2_SCORING_SETS_11_TO_15_BY_OBJECT_ID/, 'CTW registry includes Sets 11–15 Module 2 keys');
+assert.match(ctwRegistrySource, /TOEFL_CTW_MODULE2_SCORING_SETS_16_TO_20_BY_OBJECT_ID/, 'CTW registry includes Sets 16–20 Module 2 keys');
 assert.match(enhancerSource, /question\.alignment === 'official-family-pilot'/, 'fixed session removes supplementary Reading items');
 assert.match(enhancerSource, /question\.serverScoring === 'toefl-complete-words'/, 'fixed session removes Set 1 legacy CTW while preserving its source');
 
@@ -99,4 +104,4 @@ const changedPaths = (await import('node:child_process')).execFileSync('git', ['
 }).trim().split('\n').filter(Boolean);
 assert.ok(changedPaths.every((path) => !path.startsWith('public/audio/') && !/\.(mp3|wav|m4a|ogg)$/i.test(path)), 'Reading expansion changes no audio asset');
 
-console.log('✓ TOEFL fixed Reading Module 2: Sets 1–15 have 20 interactions, private keys, official-family shape, and no audio changes');
+console.log('✓ TOEFL fixed Reading Module 2: Sets 1–20 have 20 interactions, private keys, official-family shape, and no audio changes');

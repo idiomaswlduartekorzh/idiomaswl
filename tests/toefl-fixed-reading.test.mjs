@@ -5,11 +5,13 @@ import { scoreToeflReadingAttempt } from '../src/lib/toefl/reading-contract.ts';
 import { TOEFL_READING_MODULE2_SETS_1_TO_5 } from '../src/data/toefl/reading-module2-sets-1-5.ts';
 import { TOEFL_READING_MODULE2_SETS_6_TO_10 } from '../src/data/toefl/reading-module2-sets-6-10.ts';
 import { TOEFL_READING_MODULE2_SETS_11_TO_15 } from '../src/data/toefl/reading-module2-sets-11-15.ts';
+import { TOEFL_READING_MODULE2_SETS_16_TO_20 } from '../src/data/toefl/reading-module2-sets-16-20.ts';
 
 const sets = [
   ...TOEFL_READING_MODULE2_SETS_1_TO_5,
   ...TOEFL_READING_MODULE2_SETS_6_TO_10,
   ...TOEFL_READING_MODULE2_SETS_11_TO_15,
+  ...TOEFL_READING_MODULE2_SETS_16_TO_20,
 ];
 
 const ctwKeys = [
@@ -28,6 +30,11 @@ const ctwKeys = [
   ['fully', 'ch', 'ore', 'hods', 'ow', 'hout', 'ical', 'om', 'ng', 'r'],
   ['ents', 'rm', 'ld', 'ough', 'ins', 'at', 'ngly', 'ther', 'onal', 'erns'],
   ['nts', 'end', 'mals', 'rry', 'ween', 'ile', 'or', 'ls', 'r', 'rby'],
+  ['uments', 'und', 'en', 'ease', 'ong', 'ding', 'ves', 'ough', 'ard', 'oring'],
+  ['ir', 'nd', 'til', 'por', 'und', 'icles', 'tless', 'at', 'ome', 'ible'],
+  ['nisms', 'ead', 'en', 'nments', 'ators', 'ases', 'rols', 'ited', 'oss', 'inal'],
+  ['tas', 'ere', 'ter', 'iting', 'oss', 'nels', 'ands', 'lines', 'aped', 'des'],
+  ['ids', 'wer', 'th', 'ery', 'ile', 'rage', 'nd', 'ers', 'o', 'tions'],
 ];
 
 const readingLabels = [
@@ -46,9 +53,14 @@ const readingLabels = [
   ['c', 'a', 'd', 'b', 'c', 'a', 'd', 'b', 'c', 'a'],
   ['b', 'd', 'c', 'a', 'b', 'd', 'b', 'a', 'c', 'd'],
   ['a', 'c', 'b', 'd', 'a', 'b', 'a', 'c', 'd', 'b'],
+  ['b', 'd', 'a', 'c', 'b', 'c', 'a', 'd', 'b', 'c'],
+  ['a', 'c', 'b', 'a', 'c', 'b', 'c', 'a', 'd', 'b'],
+  ['c', 'a', 'd', 'a', 'c', 'a', 'd', 'b', 'c', 'a'],
+  ['b', 'c', 'a', 'd', 'b', 'c', 'b', 'd', 'a', 'c'],
+  ['a', 'd', 'c', 'a', 'b', 'd', 'a', 'c', 'b', 'd'],
 ];
 
-test('Sets 1–15 Module 2 Complete the Words close deterministically at 10/10', () => {
+test('Sets 1–20 Module 2 Complete the Words close deterministically at 10/10', () => {
   for (const [setIndex, set] of sets.entries()) {
     const scoring = set.completeWords.blanks.map((blank, index) => ({
       ...blank,
@@ -71,7 +83,7 @@ test('Sets 1–15 Module 2 Complete the Words close deterministically at 10/10',
   }
 });
 
-test('Sets 1–15 Module 2 Daily Life and Academic items close at 10/10', () => {
+test('Sets 1–20 Module 2 Daily Life and Academic items close at 10/10', () => {
   for (const [setIndex, set] of sets.entries()) {
     const publicItems = [...set.dailyLife.flatMap((block) => block.items), ...set.academic.items];
     const scoringItems = publicItems.map((item, index) => ({

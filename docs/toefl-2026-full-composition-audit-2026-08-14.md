@@ -2,7 +2,7 @@
 
 Fecha: 14 de agosto de 2026
 
-Estado: brecha confirmada; 15/20 sets ya cierran Reading, ninguno es aún forma fija completa
+Estado: brecha confirmada; 20/20 sets ya cierran Reading, ninguno es aún forma fija completa
 
 ## Respuesta corta
 
@@ -12,16 +12,15 @@ ahora se conserva íntegro y pasa a ser **Módulo 1**.
 
 | Habilidad | Producto actual por set | Referencia fija elegida | Brecha por set |
 | --- | ---: | ---: | ---: |
-| Reading | 20 official-family | 40 | 20 |
+| Reading | 40 official-family | 40 | 0 |
 | Listening | 17 | 34 | 17 |
 | Writing | 12 | 12 | 0 |
 | Speaking | 9 | 11 | 2 |
-| Total | 58 official-family | 97 | 39 |
+| Total | 78 official-family | 97 | 19 |
 
-Además, cada Set 2–20 muestra una pregunta Academic suplementaria fuera del conteo
-official-family. Set 1 también muestra un bloque CTW heredado de seis huecos. Por eso
-la portada hoy informa 59 interacciones en Sets 2–20 y 65 en Set 1, no 58. Esos
-suplementos deben salir de la sesión fija y conservarse como práctica reutilizable.
+En la línea base, cada Set 2–20 mostraba una pregunta Academic suplementaria fuera del
+conteo official-family y Set 1 mostraba además un CTW heredado de seis huecos. La capa
+fija actual ya los excluye de la sesión evaluada sin borrar sus fuentes reutilizables.
 
 ## Referencia oficial usada
 
@@ -119,3 +118,17 @@ ahora quince sets con brecha total 19.
 
 Evidencia editorial y fuentes:
 `docs/toefl-2026-reading-module2-sets11-15-factual-audit-2026-08-14.md`.
+
+## Avance posterior — Reading Módulo 2 Sets 16–20
+
+Los Sets 16–20 cierran el último lote: los veinte simulacros tienen ahora 40/40
+interacciones Reading y 78/97 interacciones totales. La capa fija conserva los objetos
+anteriores, excluye sólo el suplemento del conteo y añade 10 CTW + 5 Daily Life + 5
+Academic con claves server-only. La brecha restante en cada set es 17 Listening y dos
+Repeat; esto todavía no constituye un producto terminado.
+
+El lote cerró checker fijo y unit 3/3, regresiones CTW y Reading 8/8 cada una,
+TypeScript, ESLint dirigido, build con guardianes y 1.364/1.364 rutas, y Chromium 5/5.
+
+Evidencia editorial y fuentes:
+`docs/toefl-2026-reading-module2-sets16-20-factual-audit-2026-08-14.md`.

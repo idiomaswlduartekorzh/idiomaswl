@@ -3317,3 +3317,20 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
 - Estado: Reading Sets 1–15 40/40 y 78/97 total. Faltan Reading Sets 16–20,
   Listening, Repeat, clocks/navegación y gates finales. Cero audio abierto,
   reproducido, transcrito, generado o modificado.
+
+### Expansión forma fija — Reading Módulo 2 Sets 16–20 — 2026-08-14
+
+- Se cerró el último lote Reading con la misma capa reversible: Módulo 1 y sus fuentes
+  se conservan, el suplemento queda fuera de la sesión fija y Módulo 2 agrega 10 CTW,
+  cinco Daily Life (2 + 3) y cinco Academic por set.
+- Los CTW reconstruyen 74–79 palabras y los Academic 189–208. Los 50 huecos pasan
+  alternancia exacta, primera mitad visible, longitud declarada y reconstrucción.
+- Monitoreo sísmico/aerosoles, nubes/anillos, invasoras/fuego, deltas y red eléctrica se
+  contrastaron con USGS, NASA, NOAA, NPS y DOE. Evidencia en
+  `docs/toefl-2026-reading-module2-sets16-20-factual-audit-2026-08-14.md`.
+- Evidencia: checker fijo PASS Sets 1–20, unit 3/3, regresiones CTW y Reading 8/8 cada
+  una, TypeScript y ESLint dirigido PASS; build con guardianes y 1.364/1.364 rutas;
+  Chromium forma fija 5/5, incluido el extremo Set 20.
+- Estado de producto: Reading 40/40 en los 20 sets y 78/97 total. Siguen faltando 17
+  Listening, dos Repeat, clocks/navegación y gates finales. VoiceOver T16/T17 sigue
+  pendiente. Cero audio abierto, reproducido, transcrito, generado o modificado.
