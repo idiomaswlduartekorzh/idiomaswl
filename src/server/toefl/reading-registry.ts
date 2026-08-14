@@ -11,6 +11,7 @@ import { TOEFL_READING_SETS_11_TO_15 } from '@/data/toefl/reading-sets-11-15';
 import { TOEFL_READING_SETS_16_TO_20 } from '@/data/toefl/reading-sets-16-20';
 import type { ToeflReadingScoringItem } from '@/lib/toefl/reading-contract';
 import { TOEFL_READING_MODULE2_SCORING_BY_OBJECT_ID } from '@/server/toefl/reading-module2-sets-1-5';
+import { TOEFL_READING_MODULE2_SCORING_SETS_6_TO_10_BY_OBJECT_ID } from '@/server/toefl/reading-module2-sets-6-10';
 
 const ANSWER_KEY: Readonly<Record<string, readonly string[]>> = {
   'item:t2-r-ap1-v2': ['item:t2-r-ap1-v2:option-b'],
@@ -156,9 +157,14 @@ const TOEFL_READING_MODULE1_SCORING_BY_OBJECT_ID = Object.fromEntries([
   items: ToeflReadingScoringItem[];
 }>>;
 
+const TOEFL_READING_MODULE2_SCORING = {
+  ...TOEFL_READING_MODULE2_SCORING_BY_OBJECT_ID,
+  ...TOEFL_READING_MODULE2_SCORING_SETS_6_TO_10_BY_OBJECT_ID,
+};
+
 export const TOEFL_READING_SCORING_BY_OBJECT_ID = Object.fromEntries(
   Object.entries(TOEFL_READING_MODULE1_SCORING_BY_OBJECT_ID).map(([objectId, module1]) => {
-    const module2 = TOEFL_READING_MODULE2_SCORING_BY_OBJECT_ID[objectId];
+    const module2 = TOEFL_READING_MODULE2_SCORING[objectId];
     return [objectId, module2
       ? {
         scoringVersion: `${module1.scoringVersion}+${module2.scoringVersion}`,

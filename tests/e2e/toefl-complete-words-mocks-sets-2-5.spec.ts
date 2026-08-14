@@ -20,12 +20,14 @@ const cases = [
     set: 6, objectId: 'object:t6-r-ctw-v2', itemPrefix: 'item:t6-r-ctw-v2:',
     answers: ['ting', 'ries', 'n', 'dy', 'sfers', 'o', 'wer', 'sfer', 'low', 'ant'],
     readingObjectId: 'object:toefl-reading-set6-v2', readingLabels: [['a'], ['b'], ['b'], ['d'], ['a'], ['b', 'c']],
+    module2ReadingLabels: ['b', 'd', 'a', 'c', 'b', 'a', 'c', 'd', 'b', 'a'],
     buildObjectId: 'object:toefl-build-sentence-set6-v2',
   },
   {
     set: 10, objectId: 'object:t10-r-ctw-v2', itemPrefix: 'item:t10-r-ctw-v2:',
     answers: ['gin', 'in', 'r', 'ects', 'her', 'wing', 'des', 'nd', 'ries', 'nd'],
     readingObjectId: 'object:toefl-reading-set10-v2', readingLabels: [['d'], ['a'], ['b'], ['c'], ['d'], ['a', 'c']],
+    module2ReadingLabels: ['a', 'b', 'c', 'a', 'b', 'a', 'b', 'c', 'd', 'a'],
     buildObjectId: 'object:toefl-build-sentence-set10-v2',
   },
   {

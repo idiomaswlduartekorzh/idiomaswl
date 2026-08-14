@@ -2,10 +2,12 @@ import type { MockExam, MockSection, Question } from './types';
 import { toToeflCompleteWordsQuestion } from './toefl-complete-words-adapter';
 import { toToeflReadingQuestion } from './toefl-reading-adapter';
 import { TOEFL_READING_MODULE2_SETS_1_TO_5 } from '@/data/toefl/reading-module2-sets-1-5';
+import { TOEFL_READING_MODULE2_SETS_6_TO_10 } from '@/data/toefl/reading-module2-sets-6-10';
 import type { ToeflFixedReadingModule2Set } from '@/data/toefl/reading-module2-types';
 
 const READING_MODULE2_BY_SET = Object.fromEntries(
-  TOEFL_READING_MODULE2_SETS_1_TO_5.map((set) => [set.setNumber, set]),
+  [...TOEFL_READING_MODULE2_SETS_1_TO_5, ...TOEFL_READING_MODULE2_SETS_6_TO_10]
+    .map((set) => [set.setNumber, set]),
 ) as Readonly<Record<number, ToeflFixedReadingModule2Set>>;
 
 function renumberSections(sections: readonly MockSection[]): MockSection[] {

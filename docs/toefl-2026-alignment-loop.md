@@ -3277,3 +3277,24 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
   representativos 8/8. Cero audio abierto, reproducido, generado o modificado.
 - Estado: Reading Sets 1–5 40/40. Todavía no son producto terminado: faltan Reading
   Sets 6–20, Listening, Repeat, clocks/navegación y gates finales.
+
+### Expansión forma fija — Reading Módulo 2 Sets 6–10 — 2026-08-14
+
+- Se extendió la misma capa reversible a Sets 6–10: Módulo 1 se conserva; la pregunta
+  Academic suplementaria sale sólo de la sesión fija; Módulo 2 añade 10 CTW, cinco
+  Daily Life (2 + 3) y cinco Academic por set.
+- Los cinco CTW reconstruyen 71–74 palabras, mantienen intacta la primera oración y
+  ocultan cada segunda palabra de la secuencia objetivo. Las claves viven en un módulo
+  `server-only`; no hay respuestas correctas en los datos públicos.
+- Los Academic tienen 180–184 palabras. Se contrastaron bioluminiscencia/fotosíntesis,
+  humedales/concreto romano, satélites/isla de calor, compostaje/fuentes hidrotermales
+  y acústica/sueño con NOAA, NASA, EPA, OSHA, NIH y literatura primaria abierta.
+  Evidencia: `docs/toefl-2026-reading-module2-sets6-10-factual-audit-2026-08-14.md`.
+- La reconstrucción editorial detectó y corrigió una frase no gramatical en Set 10;
+  la versión final dice “sound energy, thus reducing echoes”.
+- Evidencia: checker fijo PASS para Sets 1–10, unit fijo 3/3, regresiones CTW 8/8 y
+  Reading 8/8, TypeScript y ESLint dirigido PASS; build completo con guardianes y
+  1.364/1.364 rutas; Chromium forma fija 3/3 y mocks representativos 8/8.
+- Estado: Reading Sets 1–10 40/40 y 78/97 total. Faltan Reading Sets 11–20, Listening,
+  Repeat, clocks/navegación y gates finales. Cero audio abierto, reproducido,
+  transcrito, generado o modificado.

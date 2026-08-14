@@ -2,7 +2,7 @@
 
 Fecha: 14 de agosto de 2026
 
-Estado: brecha confirmada; ningún set se declara todavía forma fija completa
+Estado: brecha confirmada; 10/20 sets ya cierran Reading, ninguno es aún forma fija completa
 
 ## Respuesta corta
 
@@ -99,3 +99,13 @@ faltan 17 Listening y 2 Repeat por set. El TSV asociado refleja este avance.
 
 Evidencia editorial y fuentes:
 `docs/toefl-2026-reading-module2-sets1-5-factual-audit-2026-08-14.md`.
+
+## Avance posterior — Reading Módulo 2 Sets 6–10
+
+Los Sets 6–10 también quedan en 40/40 Reading y 78/97 interacciones totales de la
+forma fija. Se aplicó la misma capa reversible: Módulo 1 conservado, suplemento fuera
+de la sesión fija, Módulo 2 de 10 CTW + 5 Daily Life + 5 Academic, y claves nuevas
+únicamente del lado servidor. El TSV refleja ahora diez sets con brecha total 19.
+
+Evidencia editorial y fuentes:
+`docs/toefl-2026-reading-module2-sets6-10-factual-audit-2026-08-14.md`.
