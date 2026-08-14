@@ -3,7 +3,7 @@
 // el ABUELO (Werner), no la abuela: el error que había en la versión inglesa no
 // se hereda aquí — narrador, transcripciones y preguntas dicen lo mismo.
 //
-// AUDIO PENDIENTE: /audio/historias/aleman/das-kassenbuch-des-grossvaters/{a,b}.mp3
+// AUDIO: /audio/historias/aleman/das-kassenbuch-des-grossvaters/{a,b}.mp3
 // a con voz de mujer (Nadine), b con voz de hombre mayor (Werner).
 
 import type { Historia, StoryQuestion as Question } from '../types';
@@ -459,6 +459,7 @@ export const dasKassenbuchDesGrossvaters: Historia = {
       key: 'a',
       name: 'Nadine',
       role: 'Schwiegertochter',
+      sex: 'female',
       color: '#0f3d8c',
       audioSrc: '/audio/historias/aleman/das-kassenbuch-des-grossvaters/a.mp3',
       paragraphs: A_PARAGRAPHS,
@@ -473,6 +474,7 @@ export const dasKassenbuchDesGrossvaters: Historia = {
       key: 'b',
       name: 'Werner',
       role: 'Schwiegervater',
+      sex: 'male',
       color: '#7c3aed',
       audioSrc: '/audio/historias/aleman/das-kassenbuch-des-grossvaters/b.mp3',
       paragraphs: B_PARAGRAPHS,

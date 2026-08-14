@@ -9,7 +9,7 @@
 // claves de abajo llevan la forma exacta que sale en el texto. Si cambias una
 // frase, revisa que su clave siga existiendo aquí.
 //
-// AUDIO PENDIENTE: /audio/historias/coreano/jamgin-hyudaepon/{a,b}.mp3
+// AUDIO: /audio/historias/coreano/jamgin-hyudaepon/{a,b}.mp3
 // a con voz de mujer (지은), b con voz de hombre (민호).
 
 import type { Historia, StoryQuestion as Question } from '../types';
@@ -479,6 +479,7 @@ export const jamginHyudaepon: Historia = {
       key: 'a',
       name: '지은',
       role: '여자친구',
+      sex: 'female',
       color: '#0f3d8c',
       audioSrc: '/audio/historias/coreano/jamgin-hyudaepon/a.mp3',
       paragraphs: A_PARAGRAPHS,
@@ -493,6 +494,7 @@ export const jamginHyudaepon: Historia = {
       key: 'b',
       name: '민호',
       role: '남자친구',
+      sex: 'male',
       color: '#7c3aed',
       audioSrc: '/audio/historias/coreano/jamgin-hyudaepon/b.mp3',
       paragraphs: B_PARAGRAPHS,

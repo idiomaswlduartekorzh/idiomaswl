@@ -5,8 +5,7 @@
 // Los enunciados van en alemán (es lo que se está evaluando); las explicaciones,
 // en español, que es donde tiene que caer la ficha.
 //
-// AUDIO PENDIENTE: cuando se grabe, va en
-// /audio/historias/aleman/das-gesperrte-handy/{a,b}.mp3 — a con voz de mujer
+// AUDIO: /audio/historias/aleman/das-gesperrte-handy/{a,b}.mp3 — a con voz de mujer
 // (Jana), b con voz de hombre (Tobias).
 
 import type { Historia, StoryQuestion as Question } from '../types';
@@ -465,6 +464,7 @@ export const dasGesperrteHandy: Historia = {
       key: 'a',
       name: 'Jana',
       role: 'Freundin',
+      sex: 'female',
       color: '#0f3d8c',
       audioSrc: '/audio/historias/aleman/das-gesperrte-handy/a.mp3',
       paragraphs: A_PARAGRAPHS,
@@ -479,6 +479,7 @@ export const dasGesperrteHandy: Historia = {
       key: 'b',
       name: 'Tobias',
       role: 'Freund',
+      sex: 'male',
       color: '#7c3aed',
       audioSrc: '/audio/historias/aleman/das-gesperrte-handy/b.mp3',
       paragraphs: B_PARAGRAPHS,

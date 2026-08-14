@@ -97,10 +97,13 @@ if (brutoPend !== netoPend) {
 }
 
 console.log('\nCOSTE DE UNA PASADA COMPLETA\n');
+// Tarifas MEDIDAS en esta cuenta, no las nominales de ElevenLabs. Son las mismas
+// que usa generate-historias-audio.mjs: si las dos difieren, la factura previa
+// miente y se toman decisiones con el número equivocado.
 const modelos = [
-  { id: 'eleven_flash_v2_5',    credito: 0.5, usd: 0.05, nota: 'mitad de precio' },
-  { id: 'eleven_multilingual_v2', credito: 1, usd: 0.10, nota: 'el más estable en textos largos' },
-  { id: 'eleven_v3',            credito: 1,   usd: 0.10, nota: 'el más expresivo' },
+  { id: 'eleven_flash_v2_5',      credito: 0.277, usd: 0.05, nota: 'mitad de precio por carácter' },
+  { id: 'eleven_multilingual_v2', credito: 0.548, usd: 0.10, nota: 'el más estable en textos largos' },
+  { id: 'eleven_v3',              credito: 0.548, usd: 0.10, nota: 'el más expresivo' },
 ];
 for (const m of modelos) {
   const cr = Math.round(netoPend * m.credito);

@@ -109,8 +109,10 @@ function readEnv() {
 const apiKey = process.env.ELEVENLABS_API_KEY || readEnv().ELEVENLABS_API_KEY
 
 // ── Inventario de notas ────────────────────────────────────────────────────
-/** El sexo sale del papel, no del nombre: es el dato que se compara con la voz. */
-const FEMENINO = /Girlfriend|Daughter-in-law|Freundin|Schwiegertochter|copine|belle-fille|fidanzata|nuora|namorada|nora|여자친구|며느리|彼女|嫁|девушка|невестка/
+// El sexo viene declarado en la voz (`v.sex`). Se dedujo del papel hasta que
+// llegó «the customer», un papel neutro que hacía salir a Dana como hombre: la
+// comprobación que existe para no repetir lo del abuelo se volvía ciega justo
+// con los personajes que no son de familia.
 
 function inventario() {
   const out = []
@@ -124,7 +126,7 @@ function inventario() {
         out.push({
           id, lang, slug: h.slug, key: v.key,
           personaje: v.name, papel: v.role,
-          sexo: FEMENINO.test(v.role) ? 'female' : 'male',
+          sexo: v.sex,
           titulo: h.title, yaGrabada: v.audioSrc !== null,
           texto,
           destino: path.join(repoRoot, 'public', 'audio', 'historias', lang, h.slug, `${v.key}.mp3`),

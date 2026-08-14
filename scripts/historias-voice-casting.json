@@ -45,18 +45,38 @@
           "personaje": "Sarah",
           "papel": "Daughter-in-law",
           "sexo": "female",
-          "caracteres": 1479,
-          "voz": "Jessica - Playful, Bright, Warm",
-          "motivo": "Jessica · conversacional y cálida: es una nota de voz a una amiga, no una locución"
+          "caracteres": 1479
         },
         "ingles/the-grandfathers-ledger/b": {
           "voice_id": "y2Y5MeVPm6ZQXK64WUui",
           "personaje": "Robert",
           "papel": "Father-in-law",
           "sexo": "male",
-          "caracteres": 1445,
-          "voz": "WL en · Grandpa Sam",
-          "motivo": "WL en · Grandpa Sam · la única voz masculina mayor del reparto inglés"
+          "caracteres": 1445
+        },
+        "ingles/the-tip-screen/a": {
+          "voice_id": "XrExE9yKIg1WjnnlVkGX",
+          "personaje": "Dana",
+          "papel": "the customer",
+          "sexo": "female",
+          "caracteres": 1873,
+          "motivo": "Matilda · femenina de edad media, conversacional: Dana tiene una hija de siete años"
+        },
+        "ingles/the-tip-screen/b": {
+          "voice_id": "mWRBtRP92mUXZzi4RZ0Y",
+          "personaje": "Marcus",
+          "papel": "the employee",
+          "sexo": "male",
+          "caracteres": 1826,
+          "motivo": "WL en · Leo · masculina joven, para el empleado de diecinueve"
+        },
+        "ingles/the-tip-screen/c": {
+          "voice_id": "y2Y5MeVPm6ZQXK64WUui",
+          "personaje": "Ray",
+          "papel": "the owner",
+          "sexo": "male",
+          "caracteres": 2053,
+          "motivo": "WL en · Grandpa Sam · masculina mayor, para el dueño"
         }
       }
     },
@@ -69,36 +89,28 @@
           "personaje": "Jana",
           "papel": "Freundin",
           "sexo": "female",
-          "caracteres": 1505,
-          "voz": "WL de · Emma",
-          "motivo": "WL de · Emma · joven, para la pareja de dos años"
+          "caracteres": 1505
         },
         "aleman/das-gesperrte-handy/b": {
           "voice_id": "SR5PqrZCNyNgSyTEWnLu",
           "personaje": "Tobias",
           "papel": "Freund",
           "sexo": "male",
-          "caracteres": 1411,
-          "voz": "WL de · Lukas",
-          "motivo": "WL de · Lukas · joven"
+          "caracteres": 1411
         },
         "aleman/das-kassenbuch-des-grossvaters/a": {
           "voice_id": "uvysWDLbKpA4XvpD3GI6",
           "personaje": "Nadine",
           "papel": "Schwiegertochter",
           "sexo": "female",
-          "caracteres": 1643,
-          "voz": "WL de · Frau Schneider",
-          "motivo": "WL de · Frau Schneider · edad media, madre de un niño de tres años"
+          "caracteres": 1643
         },
         "aleman/das-kassenbuch-des-grossvaters/b": {
           "voice_id": "NlRO8ABjJNJNYaRaLiPJ",
           "personaje": "Werner",
           "papel": "Schwiegervater",
           "sexo": "male",
-          "caracteres": 1690,
-          "voz": "WL de · Herr Becker",
-          "motivo": "WL de · Herr Becker · la voz masculina más mayor que hay en alemán"
+          "caracteres": 1690
         }
       }
     },
@@ -111,36 +123,28 @@
           "personaje": "Camille",
           "papel": "la copine",
           "sexo": "female",
-          "caracteres": 1433,
-          "voz": "WL fr · Léa",
-          "motivo": "WL fr · Léa · parisina joven"
+          "caracteres": 1433
         },
         "frances/le-telephone-verrouille/b": {
           "voice_id": "yG4Uc56cLYQyZFnWaYv2",
           "personaje": "Julien",
           "papel": "le copain",
           "sexo": "male",
-          "caracteres": 1393,
-          "voz": "WL fr · Hugo",
-          "motivo": "WL fr · Hugo · parisino joven"
+          "caracteres": 1393
         },
         "frances/le-carnet-du-grand-pere/a": {
           "voice_id": "9UK7PgAsdvmlErBPenNb",
           "personaje": "Élodie",
           "papel": "la belle-fille",
           "sexo": "female",
-          "caracteres": 1621,
-          "voz": "WL fr · Madame Martin",
-          "motivo": "WL fr · Madame Martin · edad media"
+          "caracteres": 1621
         },
         "frances/le-carnet-du-grand-pere/b": {
           "voice_id": "t2969wgUwHbBoVCZNHRU",
           "personaje": "Bernard",
           "papel": "le beau-père",
           "sexo": "male",
-          "caracteres": 1668,
-          "voz": "WL fr · Monsieur Bertin",
-          "motivo": "WL fr · Monsieur Bertin · mayor — encaja exacto con el abuelo"
+          "caracteres": 1668
         }
       }
     },
@@ -153,36 +157,28 @@
           "personaje": "Giulia",
           "papel": "la fidanzata",
           "sexo": "female",
-          "caracteres": 1269,
-          "voz": "WL it · Giulia",
-          "motivo": "WL it · Giulia · joven, y además se llama igual que el personaje"
+          "caracteres": 1269
         },
         "italiano/il-telefono-capovolto/b": {
           "voice_id": "x3ahg1G07UwsY7z9siqh",
           "personaje": "Marco",
           "papel": "il fidanzato",
           "sexo": "male",
-          "caracteres": 1298,
-          "voz": "WL it · Matteo",
-          "motivo": "WL it · Matteo · joven"
+          "caracteres": 1298
         },
         "italiano/il-quaderno-del-nonno/a": {
           "voice_id": "zORK9zlVk5JLkgvi02K9",
           "personaje": "Chiara",
           "papel": "la nuora",
           "sexo": "female",
-          "caracteres": 1586,
-          "voz": "WL it · Signora Lucia",
-          "motivo": "WL it · Signora Lucia · edad media"
+          "caracteres": 1586
         },
         "italiano/il-quaderno-del-nonno/b": {
           "voice_id": "ipT4u0Omn6M1PjJcECNG",
           "personaje": "Franco",
           "papel": "il suocero",
           "sexo": "male",
-          "caracteres": 1532,
-          "voz": "WL it · Bruno",
-          "motivo": "WL it · Bruno · mayor — encaja exacto con el nonno"
+          "caracteres": 1532
         }
       }
     },
@@ -195,36 +191,28 @@
           "personaje": "Bia",
           "papel": "a namorada",
           "sexo": "female",
-          "caracteres": 1360,
-          "voz": "WL pt · Nina",
-          "motivo": "WL pt · Nina · brasileña joven"
+          "caracteres": 1360
         },
         "portugues/o-celular-virado-para-baixo/b": {
           "voice_id": "nuqSYpkCikIPhZElRSCJ",
           "personaje": "Rafael",
           "papel": "o namorado",
           "sexo": "male",
-          "caracteres": 1301,
-          "voz": "WL pt · Tiago",
-          "motivo": "WL pt · Tiago · brasileño joven"
+          "caracteres": 1301
         },
         "portugues/o-caderno-do-avo/a": {
           "voice_id": "8EY2gK6oUxZCDZAlvUpZ",
           "personaje": "Camila",
           "papel": "a nora",
           "sexo": "female",
-          "caracteres": 1538,
-          "voz": "WL pt · Dona Célia",
-          "motivo": "WL pt · Dona Célia · brasileña de edad media"
+          "caracteres": 1538
         },
         "portugues/o-caderno-do-avo/b": {
           "voice_id": "CPYJeGOY3LvpmBJRlYK9",
           "personaje": "Sérgio",
           "papel": "o sogro",
           "sexo": "male",
-          "caracteres": 1496,
-          "voz": "WL pt · Seu Antônio",
-          "motivo": "WL pt · Seu Antônio · brasileño mayor — encaja exacto con el avô"
+          "caracteres": 1496
         }
       }
     },
@@ -237,36 +225,28 @@
           "personaje": "지은",
           "papel": "여자친구",
           "sexo": "female",
-          "caracteres": 704,
-          "voz": "WL ko · 유나",
-          "motivo": "WL ko · 유나 · Seúl, joven"
+          "caracteres": 704
         },
         "coreano/jamgin-hyudaepon/b": {
           "voice_id": "LKOcTG4J4tYTPR9DnLeM",
           "personaje": "민호",
           "papel": "남자친구",
           "sexo": "male",
-          "caracteres": 712,
-          "voz": "Mr. K  - Natural Korean Voice",
-          "motivo": "Mr. K · Seúl, joven — no hay ninguna voz masculina con prefijo WL ko"
+          "caracteres": 712
         },
         "coreano/harabeoji-ui-jangbu/a": {
           "voice_id": "qWofGdsKN4woEPGCzrdX",
           "personaje": "수진",
           "papel": "며느리",
           "sexo": "female",
-          "caracteres": 744,
-          "voz": "WL ko · 미나",
-          "motivo": "WL ko · 미나 · Seúl, edad media"
+          "caracteres": 744
         },
         "coreano/harabeoji-ui-jangbu/b": {
           "voice_id": "Mx48CWClvl522or3Frvp",
           "personaje": "만호",
           "papel": "시아버지",
           "sexo": "male",
-          "caracteres": 748,
-          "voz": "SEGU Calm Seoul Korean Male",
-          "motivo": "SEGU Calm Seoul · la masculina coreana de más edad que hay"
+          "caracteres": 748
         }
       }
     },
@@ -279,36 +259,28 @@
           "personaje": "ミサキ",
           "papel": "彼女",
           "sexo": "female",
-          "caracteres": 587,
-          "voz": "WL ja · 恵美",
-          "motivo": "WL ja · 恵美 · joven"
+          "caracteres": 587
         },
         "japones/fuserareta-sumaho/b": {
           "voice_id": "CtZRdCe4DGWkjR4gX6qK",
           "personaje": "リョウ",
           "papel": "彼氏",
           "sexo": "male",
-          "caracteres": 546,
-          "voz": "WL ja · 春",
-          "motivo": "WL ja · 春 · joven, acento de Kanto"
+          "caracteres": 546
         },
         "japones/sofu-no-choubo/a": {
           "voice_id": "t3iNwCjYhE9IEQPVBlys",
           "personaje": "あゆみ",
           "papel": "嫁",
           "sexo": "female",
-          "caracteres": 635,
-          "voz": "WL ja · 田中ゆき",
-          "motivo": "WL ja · 田中ゆき · edad media"
+          "caracteres": 635
         },
         "japones/sofu-no-choubo/b": {
           "voice_id": "BTUNhQfNpOekzVjlvRHS",
           "personaje": "健三",
           "papel": "義父",
           "sexo": "male",
-          "caracteres": 641,
-          "voz": "WL ja · 図書館員",
-          "motivo": "WL ja · 図書館員 · registro tranquilo, el que más suena a mayor en japonés"
+          "caracteres": 641
         }
       }
     },
@@ -321,36 +293,28 @@
           "personaje": "Аня",
           "papel": "девушка",
           "sexo": "female",
-          "caracteres": 1246,
-          "voz": "WL ru · Анна",
-          "motivo": "WL ru · Анна · joven, y se llama igual que el personaje"
+          "caracteres": 1246
         },
         "ruso/telefon-ekranom-vniz/b": {
           "voice_id": "76rT6drChOHgGsscaHMJ",
           "personaje": "Дима",
           "papel": "парень",
           "sexo": "male",
-          "caracteres": 1213,
-          "voz": "WL ru · Миша",
-          "motivo": "WL ru · Миша · joven"
+          "caracteres": 1213
         },
         "ruso/dedushkina-tetrad/a": {
           "voice_id": "ELWVgJ5Mo9lF5Tha9ahW",
           "personaje": "Оля",
           "papel": "невестка",
           "sexo": "female",
-          "caracteres": 1413,
-          "voz": "WL ru · Ирина",
-          "motivo": "WL ru · Ирина · edad media"
+          "caracteres": 1413
         },
         "ruso/dedushkina-tetrad/b": {
           "voice_id": "0igyFIChAVV6GGARy9qg",
           "personaje": "Виктор",
           "papel": "свёкор",
           "sexo": "male",
-          "caracteres": 1444,
-          "voz": "WL ru · Виктор Петрович",
-          "motivo": "WL ru · Виктор Петрович · es literalmente el nombre con el que la nuera le habla en el texto"
+          "caracteres": 1444
         }
       }
     }

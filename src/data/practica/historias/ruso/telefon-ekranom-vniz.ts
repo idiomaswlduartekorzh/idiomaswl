@@ -7,7 +7,7 @@
 // que sale (телефон, телефона, телефоном…). Si cambias una frase, revisa que su
 // clave siga existiendo aquí.
 //
-// AUDIO PENDIENTE: /audio/historias/ruso/telefon-ekranom-vniz/{a,b}.mp3
+// AUDIO: /audio/historias/ruso/telefon-ekranom-vniz/{a,b}.mp3
 // a con voz de mujer (Аня), b con voz de hombre (Дима).
 
 import type { Historia, StoryQuestion as Question } from '../types';
@@ -456,6 +456,7 @@ export const telefonEkranomVniz: Historia = {
       key: 'a',
       name: 'Аня',
       role: 'девушка',
+      sex: 'female',
       color: '#0f3d8c',
       audioSrc: '/audio/historias/ruso/telefon-ekranom-vniz/a.mp3',
       paragraphs: A_PARAGRAPHS,
@@ -470,6 +471,7 @@ export const telefonEkranomVniz: Historia = {
       key: 'b',
       name: 'Дима',
       role: 'парень',
+      sex: 'male',
       color: '#7c3aed',
       audioSrc: '/audio/historias/ruso/telefon-ekranom-vniz/b.mp3',
       paragraphs: B_PARAGRAPHS,

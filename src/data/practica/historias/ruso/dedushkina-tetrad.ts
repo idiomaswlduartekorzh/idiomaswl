@@ -6,7 +6,7 @@
 // DICCIONARIO Y DECLINACIONES: las claves llevan la forma exacta que sale en el
 // texto. Si cambias una frase, revisa su clave.
 //
-// AUDIO PENDIENTE: /audio/historias/ruso/dedushkina-tetrad/{a,b}.mp3
+// AUDIO: /audio/historias/ruso/dedushkina-tetrad/{a,b}.mp3
 // a con voz de mujer (Оля), b con voz de hombre mayor (Виктор).
 
 import type { Historia, StoryQuestion as Question } from '../types';
@@ -452,6 +452,7 @@ export const dedushkinaTetrad: Historia = {
       key: 'a',
       name: 'Оля',
       role: 'невестка',
+      sex: 'female',
       color: '#0f3d8c',
       audioSrc: '/audio/historias/ruso/dedushkina-tetrad/a.mp3',
       paragraphs: A_PARAGRAPHS,
@@ -466,6 +467,7 @@ export const dedushkinaTetrad: Historia = {
       key: 'b',
       name: 'Виктор',
       role: 'свёкор',
+      sex: 'male',
       color: '#7c3aed',
       audioSrc: '/audio/historias/ruso/dedushkina-tetrad/b.mp3',
       paragraphs: B_PARAGRAPHS,

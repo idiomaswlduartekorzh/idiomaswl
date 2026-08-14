@@ -6,7 +6,7 @@
 // DICCIONARIO Y PARTÍCULAS: las claves llevan la forma exacta que sale en el
 // texto, con partícula pegada. Si cambias una frase, revisa su clave.
 //
-// AUDIO PENDIENTE: /audio/historias/coreano/harabeoji-ui-jangbu/{a,b}.mp3
+// AUDIO: /audio/historias/coreano/harabeoji-ui-jangbu/{a,b}.mp3
 // a con voz de mujer (수진), b con voz de hombre mayor (만호).
 
 import type { Historia, StoryQuestion as Question } from '../types';
@@ -468,6 +468,7 @@ export const harabeojiuiJangbu: Historia = {
       key: 'a',
       name: '수진',
       role: '며느리',
+      sex: 'female',
       color: '#0f3d8c',
       audioSrc: '/audio/historias/coreano/harabeoji-ui-jangbu/a.mp3',
       paragraphs: A_PARAGRAPHS,
@@ -482,6 +483,7 @@ export const harabeojiuiJangbu: Historia = {
       key: 'b',
       name: '만호',
       role: '시아버지',
+      sex: 'male',
       color: '#7c3aed',
       audioSrc: '/audio/historias/coreano/harabeoji-ui-jangbu/b.mp3',
       paragraphs: B_PARAGRAPHS,

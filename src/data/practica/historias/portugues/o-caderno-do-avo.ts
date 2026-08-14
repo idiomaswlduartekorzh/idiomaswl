@@ -3,7 +3,7 @@
 // reclama los regalos es el ABUELO (Sérgio) en las tres capas: narrador,
 // transcripciones y preguntas.
 //
-// AUDIO PENDIENTE: /audio/historias/portugues/o-caderno-do-avo/{a,b}.mp3
+// AUDIO: /audio/historias/portugues/o-caderno-do-avo/{a,b}.mp3
 // a con voz de mujer (Camila), b con voz de hombre mayor (Sérgio).
 
 import type { Historia, StoryQuestion as Question } from '../types';
@@ -455,6 +455,7 @@ export const oCadernoDoAvo: Historia = {
       key: 'a',
       name: 'Camila',
       role: 'a nora',
+      sex: 'female',
       color: '#0f3d8c',
       audioSrc: '/audio/historias/portugues/o-caderno-do-avo/a.mp3',
       paragraphs: A_PARAGRAPHS,
@@ -469,6 +470,7 @@ export const oCadernoDoAvo: Historia = {
       key: 'b',
       name: 'Sérgio',
       role: 'o sogro',
+      sex: 'male',
       color: '#7c3aed',
       audioSrc: '/audio/historias/portugues/o-caderno-do-avo/b.mp3',
       paragraphs: B_PARAGRAPHS,

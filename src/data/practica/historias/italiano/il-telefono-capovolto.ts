@@ -2,7 +2,7 @@
 // Adaptación nativa de «The Locked Phone». Enunciados en italiano, explicaciones
 // en español.
 //
-// AUDIO PENDIENTE: /audio/historias/italiano/il-telefono-capovolto/{a,b}.mp3
+// AUDIO: /audio/historias/italiano/il-telefono-capovolto/{a,b}.mp3
 // a con voz de mujer (Giulia), b con voz de hombre (Marco).
 
 import type { Historia, StoryQuestion as Question } from '../types';
@@ -455,6 +455,7 @@ export const ilTelefonoCapovolto: Historia = {
       key: 'a',
       name: 'Giulia',
       role: 'la fidanzata',
+      sex: 'female',
       color: '#0f3d8c',
       audioSrc: '/audio/historias/italiano/il-telefono-capovolto/a.mp3',
       paragraphs: A_PARAGRAPHS,
@@ -469,6 +470,7 @@ export const ilTelefonoCapovolto: Historia = {
       key: 'b',
       name: 'Marco',
       role: 'il fidanzato',
+      sex: 'male',
       color: '#7c3aed',
       audioSrc: '/audio/historias/italiano/il-telefono-capovolto/b.mp3',
       paragraphs: B_PARAGRAPHS,

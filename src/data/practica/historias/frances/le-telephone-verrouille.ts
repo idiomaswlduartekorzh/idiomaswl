@@ -2,7 +2,7 @@
 // Adaptación nativa de «The Locked Phone»: francés hablado real, no traducción.
 // Enunciados en francés, explicaciones en español.
 //
-// AUDIO PENDIENTE: /audio/historias/frances/le-telephone-verrouille/{a,b}.mp3
+// AUDIO: /audio/historias/frances/le-telephone-verrouille/{a,b}.mp3
 // a con voz de mujer (Camille), b con voz de hombre (Julien).
 
 import type { Historia, StoryQuestion as Question } from '../types';
@@ -458,6 +458,7 @@ export const leTelephoneVerrouille: Historia = {
       key: 'a',
       name: 'Camille',
       role: 'la copine',
+      sex: 'female',
       color: '#0f3d8c',
       audioSrc: '/audio/historias/frances/le-telephone-verrouille/a.mp3',
       paragraphs: A_PARAGRAPHS,
@@ -472,6 +473,7 @@ export const leTelephoneVerrouille: Historia = {
       key: 'b',
       name: 'Julien',
       role: 'le copain',
+      sex: 'male',
       color: '#7c3aed',
       audioSrc: '/audio/historias/frances/le-telephone-verrouille/b.mp3',
       paragraphs: B_PARAGRAPHS,

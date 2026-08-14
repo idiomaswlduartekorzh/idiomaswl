@@ -10,7 +10,7 @@
 // Narrador en 常体 (だ・た), notas de voz en japonés hablado informal, que es como
 // se manda un audio a un amigo.
 //
-// AUDIO PENDIENTE: /audio/historias/japones/fuserareta-sumaho/{a,b}.mp3
+// AUDIO: /audio/historias/japones/fuserareta-sumaho/{a,b}.mp3
 // a con voz de mujer (ミサキ), b con voz de hombre (リョウ).
 
 import type { Historia, StoryQuestion as Question } from '../types';
@@ -447,6 +447,7 @@ export const fuseraretaSumaho: Historia = {
       key: 'a',
       name: 'ミサキ',
       role: '彼女',
+      sex: 'female',
       color: '#0f3d8c',
       audioSrc: '/audio/historias/japones/fuserareta-sumaho/a.mp3',
       paragraphs: A_PARAGRAPHS,
@@ -461,6 +462,7 @@ export const fuseraretaSumaho: Historia = {
       key: 'b',
       name: 'リョウ',
       role: '彼氏',
+      sex: 'male',
       color: '#7c3aed',
       audioSrc: '/audio/historias/japones/fuserareta-sumaho/b.mp3',
       paragraphs: B_PARAGRAPHS,

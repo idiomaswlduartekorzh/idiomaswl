@@ -7,7 +7,7 @@
 // clic-para-traducir funcione. Las claves del diccionario son el trozo exacto
 // entre espacios, sin puntuación.
 //
-// AUDIO PENDIENTE: /audio/historias/japones/sofu-no-choubo/{a,b}.mp3
+// AUDIO: /audio/historias/japones/sofu-no-choubo/{a,b}.mp3
 // a con voz de mujer (あゆみ), b con voz de hombre mayor (健三).
 
 import type { Historia, StoryQuestion as Question } from '../types';
@@ -448,6 +448,7 @@ export const sofuNoChoubo: Historia = {
       key: 'a',
       name: 'あゆみ',
       role: '嫁',
+      sex: 'female',
       color: '#0f3d8c',
       audioSrc: '/audio/historias/japones/sofu-no-choubo/a.mp3',
       paragraphs: A_PARAGRAPHS,
@@ -462,6 +463,7 @@ export const sofuNoChoubo: Historia = {
       key: 'b',
       name: '健三',
       role: '義父',
+      sex: 'male',
       color: '#7c3aed',
       audioSrc: '/audio/historias/japones/sofu-no-choubo/b.mp3',
       paragraphs: B_PARAGRAPHS,

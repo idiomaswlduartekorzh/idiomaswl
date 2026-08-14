@@ -17,16 +17,29 @@
 
 import { useState, useRef, type Dispatch, type SetStateAction } from 'react';
 import Link from 'next/link';
-import type { Historia, StoryQuestion, StoryVoice } from '@/data/practica/historias/types';
-import { totalQuestions } from '@/data/practica/historias/types';
+import type { Historia, StoryQuestion, StoryVoice, VoiceKey } from '@/data/practica/historias/types';
+import { totalParts, totalQuestions } from '@/data/practica/historias/types';
 import { STORY_UI } from '@/data/practica/historias/ui';
+
+/**
+ * Cada voz recorre los mismos cinco pasos, en este orden. La fase se compone
+ * como `<clave de la voz>-<paso>`: `a-listen`, `c-compare`…
+ *
+ * Antes estaban escritas una a una para las voces `a` y `b`. Con tres voces esa
+ * lista se volvía inmanejable, así que se genera.
+ */
+const VOICE_STEPS = ['listen', 'write1', 'transcript', 'compare', 'quiz'] as const;
+type VoiceStep = (typeof VOICE_STEPS)[number];
 
 type Phase =
   | 'intro'
   | 'narrator' | 'narrator-quiz'
-  | 'a-listen' | 'a-write1' | 'a-transcript' | 'a-write2' | 'a-compare' | 'a-quiz'
-  | 'b-listen' | 'b-write1' | 'b-transcript' | 'b-write2' | 'b-compare' | 'b-quiz'
+  | `${VoiceKey}-${VoiceStep}`
   | 'final-quiz' | 'results';
+
+/** Estado de escritura y palabras marcadas, una entrada por voz. */
+interface VoiceState { write1: string; write2: string; unknown: Set<string> }
+const emptyVoiceState = (): VoiceState => ({ write1: '', write2: '', unknown: new Set() });
 
 const NARRATOR_COLOR = '#6b7280';
 const FINAL_COLOR = '#059669';
@@ -346,20 +359,24 @@ export default function StoryEngine({ historia, hubHref, hubLabel }: {
   historia: Historia; hubHref: string; hubLabel: string;
 }) {
   const t = STORY_UI[historia.ui];
-  const [voiceA, voiceB] = historia.voices;
+  const voices = historia.voices;
+  const parts = totalParts(historia);
 
   const [phase, setPhase] = useState<Phase>('intro');
   const [scores, setScores] = useState<Record<string, boolean[]>>({});
 
   const [narratorUnknown, setNarratorUnknown] = useState<Set<string>>(new Set());
-  const [aWrite1, setAWrite1] = useState('');
-  const [aWrite2, setAWrite2] = useState('');
-  const [aUnknown, setAUnknown] = useState<Set<string>>(new Set());
-  const [bWrite1, setBWrite1] = useState('');
-  const [bWrite2, setBWrite2] = useState('');
-  const [bUnknown, setBUnknown] = useState<Set<string>>(new Set());
+  const [voiceState, setVoiceState] = useState<Record<string, VoiceState>>(
+    () => Object.fromEntries(voices.map(v => [v.key, emptyVoiceState()])),
+  );
 
   function saveScore(key: string, s: boolean[]) { setScores(prev => ({ ...prev, [key]: s })); }
+
+  const vs = (key: string) => voiceState[key] ?? emptyVoiceState();
+
+  function patchVoice(key: string, patch: Partial<VoiceState>) {
+    setVoiceState(prev => ({ ...prev, [key]: { ...(prev[key] ?? emptyVoiceState()), ...patch } }));
+  }
 
   function toggleUnknown(setter: Dispatch<SetStateAction<Set<string>>>, word: string) {
     setter(prev => {
@@ -368,6 +385,19 @@ export default function StoryEngine({ historia, hubHref, hubLabel }: {
       return next;
     });
   }
+
+  function toggleVoiceUnknown(key: string, word: string) {
+    setVoiceState(prev => {
+      const cur = prev[key] ?? emptyVoiceState();
+      const next = new Set(cur.unknown);
+      if (next.has(word)) next.delete(word); else next.add(word);
+      return { ...prev, [key]: { ...cur, unknown: next } };
+    });
+  }
+
+  /** La fase que sigue al terminar la voz `i`: la siguiente voz, o la final. */
+  const afterVoice = (i: number): Phase =>
+    i + 1 < voices.length ? `${voices[i + 1].key}-listen` : 'final-quiz';
 
   const totalQs = totalQuestions(historia);
   const totalRight = Object.values(scores).flat().filter(Boolean).length;
@@ -379,12 +409,14 @@ export default function StoryEngine({ historia, hubHref, hubLabel }: {
   const quizLabels = { correct: t.correct, notQuite: t.notQuite, next: t.nextQuestion, done: t.continueLabel };
   const textLabels = { hintLabel: t.clickAnyWord, noTranslationLabel: t.noTranslation };
 
-  // Un bloque de escucha (listen / write1 / transcript / write2 / compare / quiz)
-  // es idéntico para las dos voces; solo cambian el estado y las fases.
+  // Un bloque de escucha (listen / write1 / transcript / compare / quiz) es
+  // idéntico para todas las voces; solo cambian el estado y la fase siguiente.
+  // `i` es el índice de la voz: de él salen el número de sección y el «parte N
+  // de M», que antes iban escritos a mano.
   function renderListen(v: StoryVoice, n: string, partIdx: number, nextPhase: Phase) {
     return (
       <div style={{ maxWidth: 720, margin: '0 auto' }}>
-        <SectionHeader n={n} part={t.partOf(partIdx, 4, t.listening)} title={t.voiceNote(v.name)} color={v.color} />
+        <SectionHeader n={n} part={t.partOf(partIdx, parts, t.listening)} title={t.voiceNote(v.name)} color={v.color} />
         <div style={{ background: `${v.color}07`, border: `1px solid ${v.color}22`, borderRadius: 12, padding: '0.85rem 1.1rem', marginBottom: '1.25rem', fontSize: '0.83rem', color: 'var(--muted)', lineHeight: 1.6 }}>
           🎧 <strong style={{ color: 'var(--ink)' }}>{t.step1}</strong> {v.listenHint}
         </div>
@@ -402,7 +434,7 @@ export default function StoryEngine({ historia, hubHref, hubLabel }: {
   function renderWrite1(v: StoryVoice, n: string, partIdx: number, value: string, setValue: (s: string) => void, nextPhase: Phase) {
     return (
       <div style={{ maxWidth: 720, margin: '0 auto' }}>
-        <SectionHeader n={n} part={`${t.partOf(partIdx, 4, t.listening)} · ${t.step2}`} title={t.whatDidYouUnderstand} color={v.color} />
+        <SectionHeader n={n} part={`${t.partOf(partIdx, parts, t.listening)} · ${t.step2}`} title={t.whatDidYouUnderstand} color={v.color} />
         <div style={{ background: 'var(--bg-1)', border: `1.5px solid ${v.color}22`, borderRadius: 16, padding: '1.5rem', marginBottom: '1.25rem' }}>
           <WriteBox
             prompt={v.write1Prompt}
@@ -421,12 +453,12 @@ export default function StoryEngine({ historia, hubHref, hubLabel }: {
 
   function renderTranscript(
     v: StoryVoice, n: string, partIdx: number,
-    unknown: Set<string>, setUnknown: Dispatch<SetStateAction<Set<string>>>,
+    unknown: Set<string>, onToggleWord: (w: string) => void,
     value: string, setValue: (s: string) => void, nextPhase: Phase,
   ) {
     return (
       <div style={{ maxWidth: 720, margin: '0 auto' }}>
-        <SectionHeader n={n} part={`${t.partOf(partIdx, 4, t.listening)} · ${t.step3}`} title={t.listenAgainTranscript} color={v.color} />
+        <SectionHeader n={n} part={`${t.partOf(partIdx, parts, t.listening)} · ${t.step3}`} title={t.listenAgainTranscript} color={v.color} />
         <div style={{ background: `${v.color}07`, border: `1px solid ${v.color}22`, borderRadius: 12, padding: '0.85rem 1.1rem', marginBottom: '1.25rem', fontSize: '0.83rem', color: 'var(--muted)', lineHeight: 1.6 }}>
           📄 <strong style={{ color: 'var(--ink)' }}>{t.clickUnknown}</strong> — {v.transcriptHint}
         </div>
@@ -439,7 +471,7 @@ export default function StoryEngine({ historia, hubHref, hubLabel }: {
             paragraphs={v.paragraphs}
             dict={historia.dict}
             unknown={unknown}
-            onToggle={w => toggleUnknown(setUnknown, w)}
+            onToggle={onToggleWord}
             {...textLabels}
           />
         </div>
@@ -470,9 +502,13 @@ export default function StoryEngine({ historia, hubHref, hubLabel }: {
         <p style={{ margin: '0 0 0.75rem', fontSize: '0.72rem', fontWeight: 800, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.08em', fontFamily: 'var(--mono)' }}>{t.structure}</p>
         {[
           { n: '01', label: t.readNarrator, sub: `${historia.narrator.questions.length} · ${t.readNarratorSub}`, color: NARRATOR_COLOR },
-          { n: '02', label: t.listenTo(voiceA.name), sub: `${voiceA.questions.length} · ${t.listenToSub}`, color: voiceA.color },
-          { n: '03', label: t.listenTo(voiceB.name), sub: `${voiceB.questions.length} · ${t.listenToSub}`, color: voiceB.color },
-          { n: '04', label: t.overallTitle, sub: t.overallSub(historia.finalQuestions.length), color: FINAL_COLOR },
+          ...voices.map((v, i) => ({
+            n: String(i + 2).padStart(2, '0'),
+            label: t.listenTo(v.name),
+            sub: `${v.questions.length} · ${t.listenToSub}`,
+            color: v.color,
+          })),
+          { n: String(parts).padStart(2, '0'), label: t.overallTitle, sub: t.overallSub(historia.finalQuestions.length), color: FINAL_COLOR },
         ].map(step => (
           <div key={step.n} style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '0.6rem 0', borderBottom: '1px solid var(--line-soft)' }}>
             <span style={{ width: 28, height: 28, borderRadius: '50%', background: `${step.color}18`, border: `1.5px solid ${step.color}44`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.72rem', fontWeight: 800, color: step.color, fontFamily: 'var(--mono)', flexShrink: 0 }}>{step.n}</span>
@@ -492,7 +528,7 @@ export default function StoryEngine({ historia, hubHref, hubLabel }: {
   if (phase === 'narrator') return (
     <div style={{ maxWidth: 720, margin: '0 auto' }}>
       <button onClick={() => setPhase('intro')} style={{ background: 'none', border: 'none', color: 'var(--muted)', fontSize: '0.82rem', cursor: 'pointer', marginBottom: '1.5rem', padding: 0 }}>{t.back}</button>
-      <SectionHeader n="01" part={t.partOf(1, 4, t.reading)} title={t.narrator} color={NARRATOR_COLOR} />
+      <SectionHeader n="01" part={t.partOf(1, parts, t.reading)} title={t.narrator} color={NARRATOR_COLOR} />
 
       <div style={{ background: 'var(--bg-1)', border: `1.5px solid ${NARRATOR_COLOR}33`, borderRadius: 20, padding: '2rem', marginBottom: '1rem' }}>
         <p style={{ margin: '0 0 1rem', fontSize: '0.68rem', fontWeight: 800, color: NARRATOR_COLOR, fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>{historia.title}</p>
@@ -515,52 +551,52 @@ export default function StoryEngine({ historia, hubHref, hubLabel }: {
 
   if (phase === 'narrator-quiz') return (
     <div style={{ maxWidth: 720, margin: '0 auto' }}>
-      <SectionHeader n="01" part={`${t.partOf(1, 4, t.reading)} · ${t.questionsLabel}`} title={t.narratorComprehension} color={NARRATOR_COLOR} />
+      <SectionHeader n="01" part={`${t.partOf(1, parts, t.reading)} · ${t.questionsLabel}`} title={t.narratorComprehension} color={NARRATOR_COLOR} />
       <QuizBlock questions={historia.narrator.questions} color={NARRATOR_COLOR} labels={quizLabels}
-        onComplete={s => { saveScore('narrator', s); setPhase('a-listen'); }} />
+        onComplete={s => { saveScore('narrator', s); setPhase(`${voices[0].key}-listen`); }} />
     </div>
   );
 
-  // ── VOZ A ─────────────────────────────────────────────────────────────────
-  if (phase === 'a-listen') return renderListen(voiceA, '02', 2, 'a-write1');
-  if (phase === 'a-write1') return renderWrite1(voiceA, '02', 2, aWrite1, setAWrite1, 'a-transcript');
-  if (phase === 'a-transcript') return renderTranscript(voiceA, '02', 2, aUnknown, setAUnknown, aWrite2, setAWrite2, 'a-compare');
-  if (phase === 'a-compare') return (
-    <div style={{ maxWidth: 720, margin: '0 auto' }}>
-      <SectionHeader n="02" part={`${t.partOf(2, 4, t.listening)} · ${t.comparison}`} title={t.comparisonTitle} color={voiceA.color} />
-      <CompareView write1={aWrite1} write2={aWrite2} unknown={aUnknown} dict={historia.dict} color={voiceA.color} labels={compareLabels} onContinue={() => setPhase('a-quiz')} />
-    </div>
-  );
-  if (phase === 'a-quiz') return (
-    <div style={{ maxWidth: 720, margin: '0 auto' }}>
-      <SectionHeader n="02" part={`${t.partOf(2, 4, t.listening)} · ${t.questionsLabel}`} title={t.comprehensionOf(voiceA.name)} color={voiceA.color} />
-      <QuizBlock questions={voiceA.questions} color={voiceA.color} labels={quizLabels}
-        onComplete={s => { saveScore('a', s); setPhase('b-listen'); }} />
-    </div>
-  );
+  // ── VOCES ─────────────────────────────────────────────────────────────────
+  // Un solo despachador para todas. La voz `i` es la parte `i + 2` (después del
+  // narrador) y su sección se numera `02`, `03`, `04`…
+  for (let i = 0; i < voices.length; i++) {
+    const v = voices[i];
+    if (!phase.startsWith(`${v.key}-`)) continue;
 
-  // ── VOZ B ─────────────────────────────────────────────────────────────────
-  if (phase === 'b-listen') return renderListen(voiceB, '03', 3, 'b-write1');
-  if (phase === 'b-write1') return renderWrite1(voiceB, '03', 3, bWrite1, setBWrite1, 'b-transcript');
-  if (phase === 'b-transcript') return renderTranscript(voiceB, '03', 3, bUnknown, setBUnknown, bWrite2, setBWrite2, 'b-compare');
-  if (phase === 'b-compare') return (
-    <div style={{ maxWidth: 720, margin: '0 auto' }}>
-      <SectionHeader n="03" part={`${t.partOf(3, 4, t.listening)} · ${t.comparison}`} title={t.comparisonTitle} color={voiceB.color} />
-      <CompareView write1={bWrite1} write2={bWrite2} unknown={bUnknown} dict={historia.dict} color={voiceB.color} labels={compareLabels} onContinue={() => setPhase('b-quiz')} />
-    </div>
-  );
-  if (phase === 'b-quiz') return (
-    <div style={{ maxWidth: 720, margin: '0 auto' }}>
-      <SectionHeader n="03" part={`${t.partOf(3, 4, t.listening)} · ${t.questionsLabel}`} title={t.comprehensionOf(voiceB.name)} color={voiceB.color} />
-      <QuizBlock questions={voiceB.questions} color={voiceB.color} labels={quizLabels}
-        onComplete={s => { saveScore('b', s); setPhase('final-quiz'); }} />
-    </div>
-  );
+    const n = String(i + 2).padStart(2, '0');
+    const partIdx = i + 2;
+    const st = vs(v.key);
+    const step = phase.slice(v.key.length + 1) as VoiceStep;
+
+    if (step === 'listen') return renderListen(v, n, partIdx, `${v.key}-write1`);
+    if (step === 'write1') {
+      return renderWrite1(v, n, partIdx, st.write1, s => patchVoice(v.key, { write1: s }), `${v.key}-transcript`);
+    }
+    if (step === 'transcript') {
+      return renderTranscript(v, n, partIdx, st.unknown, w => toggleVoiceUnknown(v.key, w),
+        st.write2, s => patchVoice(v.key, { write2: s }), `${v.key}-compare`);
+    }
+    if (step === 'compare') return (
+      <div style={{ maxWidth: 720, margin: '0 auto' }}>
+        <SectionHeader n={n} part={`${t.partOf(partIdx, parts, t.listening)} · ${t.comparison}`} title={t.comparisonTitle} color={v.color} />
+        <CompareView write1={st.write1} write2={st.write2} unknown={st.unknown} dict={historia.dict}
+          color={v.color} labels={compareLabels} onContinue={() => setPhase(`${v.key}-quiz`)} />
+      </div>
+    );
+    if (step === 'quiz') return (
+      <div style={{ maxWidth: 720, margin: '0 auto' }}>
+        <SectionHeader n={n} part={`${t.partOf(partIdx, parts, t.listening)} · ${t.questionsLabel}`} title={t.comprehensionOf(v.name)} color={v.color} />
+        <QuizBlock questions={v.questions} color={v.color} labels={quizLabels}
+          onComplete={s => { saveScore(v.key, s); setPhase(afterVoice(i)); }} />
+      </div>
+    );
+  }
 
   // ── FINAL ─────────────────────────────────────────────────────────────────
   if (phase === 'final-quiz') return (
     <div style={{ maxWidth: 720, margin: '0 auto' }}>
-      <SectionHeader n="04" part={t.partOf(4, 4, t.overall)} title={t.bigPicture} color={FINAL_COLOR} />
+      <SectionHeader n={String(parts).padStart(2, "0")} part={t.partOf(parts, parts, t.overall)} title={t.bigPicture} color={FINAL_COLOR} />
       {historia.finalIntro.map((p, i) => (
         <p key={i} style={{ color: 'var(--muted)', fontSize: '0.9rem', marginBottom: '1.25rem', lineHeight: 1.6 }}>{p}</p>
       ))}
@@ -572,11 +608,13 @@ export default function StoryEngine({ historia, hubHref, hubLabel }: {
   // ── RESULTADOS ────────────────────────────────────────────────────────────
   const sections = [
     { key: 'narrator', label: t.narrator, color: NARRATOR_COLOR, total: historia.narrator.questions.length },
-    { key: 'a', label: voiceA.name, color: voiceA.color, total: voiceA.questions.length },
-    { key: 'b', label: voiceB.name, color: voiceB.color, total: voiceB.questions.length },
+    ...voices.map(v => ({ key: v.key, label: v.name, color: v.color, total: v.questions.length })),
     { key: 'final', label: t.overall, color: FINAL_COLOR, total: historia.finalQuestions.length },
   ];
-  const allUnknown = Array.from(new Set([...narratorUnknown, ...aUnknown, ...bUnknown]));
+  const allUnknown = Array.from(new Set([
+    ...narratorUnknown,
+    ...voices.flatMap(v => Array.from(vs(v.key).unknown)),
+  ]));
 
   return (
     <div style={{ maxWidth: 720, margin: '0 auto' }}>
@@ -647,8 +685,7 @@ export default function StoryEngine({ historia, hubHref, hubLabel }: {
           onClick={() => {
             setPhase('intro'); setScores({});
             setNarratorUnknown(new Set());
-            setAWrite1(''); setAWrite2(''); setAUnknown(new Set());
-            setBWrite1(''); setBWrite2(''); setBUnknown(new Set());
+            setVoiceState(Object.fromEntries(voices.map(v => [v.key, emptyVoiceState()])));
           }}
           className="btn" style={{ fontSize: '0.9rem' }}>
           {t.tryAgain}

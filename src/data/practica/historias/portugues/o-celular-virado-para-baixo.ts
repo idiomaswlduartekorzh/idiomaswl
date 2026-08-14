@@ -3,7 +3,7 @@
 // que enseña WeLearn y la del Celpe-Bras). Enunciados en portugués, explicaciones
 // en español.
 //
-// AUDIO PENDIENTE: /audio/historias/portugues/o-celular-virado-para-baixo/{a,b}.mp3
+// AUDIO: /audio/historias/portugues/o-celular-virado-para-baixo/{a,b}.mp3
 // a con voz de mujer (Bia), b con voz de hombre (Rafael).
 
 import type { Historia, StoryQuestion as Question } from '../types';
@@ -455,6 +455,7 @@ export const oCelularViradoParaBaixo: Historia = {
       key: 'a',
       name: 'Bia',
       role: 'a namorada',
+      sex: 'female',
       color: '#0f3d8c',
       audioSrc: '/audio/historias/portugues/o-celular-virado-para-baixo/a.mp3',
       paragraphs: A_PARAGRAPHS,
@@ -469,6 +470,7 @@ export const oCelularViradoParaBaixo: Historia = {
       key: 'b',
       name: 'Rafael',
       role: 'o namorado',
+      sex: 'male',
       color: '#7c3aed',
       audioSrc: '/audio/historias/portugues/o-celular-virado-para-baixo/b.mp3',
       paragraphs: B_PARAGRAPHS,

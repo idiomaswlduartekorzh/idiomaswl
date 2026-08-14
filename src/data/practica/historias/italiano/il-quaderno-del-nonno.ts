@@ -2,7 +2,7 @@
 // Adaptación nativa de «The Grandfather's Ledger». Quien reclama los regalos es
 // el ABUELO (Franco) en las tres capas: narrador, transcripciones y preguntas.
 //
-// AUDIO PENDIENTE: /audio/historias/italiano/il-quaderno-del-nonno/{a,b}.mp3
+// AUDIO: /audio/historias/italiano/il-quaderno-del-nonno/{a,b}.mp3
 // a con voz de mujer (Chiara), b con voz de hombre mayor (Franco).
 
 import type { Historia, StoryQuestion as Question } from '../types';
@@ -454,6 +454,7 @@ export const ilQuadernoDelNonno: Historia = {
       key: 'a',
       name: 'Chiara',
       role: 'la nuora',
+      sex: 'female',
       color: '#0f3d8c',
       audioSrc: '/audio/historias/italiano/il-quaderno-del-nonno/a.mp3',
       paragraphs: A_PARAGRAPHS,
@@ -468,6 +469,7 @@ export const ilQuadernoDelNonno: Historia = {
       key: 'b',
       name: 'Franco',
       role: 'il suocero',
+      sex: 'male',
       color: '#7c3aed',
       audioSrc: '/audio/historias/italiano/il-quaderno-del-nonno/b.mp3',
       paragraphs: B_PARAGRAPHS,

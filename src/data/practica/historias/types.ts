@@ -27,13 +27,28 @@ export interface StoryQuestion {
   explanation: string;
 }
 
+/**
+ * Clave de sección de una voz. Es también el nombre del mp3, así que una vez
+ * publicada una historia NO se renombra: rompería la ruta del audio.
+ */
+export type VoiceKey = 'a' | 'b' | 'c' | 'd';
+
 export interface StoryVoice {
-  /** Clave de sección para el marcador. Estable: 'a' | 'b'. */
-  key: 'a' | 'b';
+  key: VoiceKey;
   /** Nombre del personaje: «Jess». */
   name: string;
-  /** Su papel en el conflicto: «Girlfriend», «Nuera». */
+  /** Su papel en el conflicto: «Girlfriend», «Nuera», «the customer». */
   role: string;
+  /**
+   * Sexo de la voz que hay que grabar. Es un dato, no una deducción.
+   *
+   * Antes se infería del papel con una expresión regular («Girlfriend» →
+   * femenino). Funcionaba mientras los papeles eran de parentesco, y se rompió en
+   * cuanto llegó «the customer»: Dana salió marcada como hombre y el control que
+   * existe justamente para que no se repita lo del abuelo habría dejado pasar una
+   * voz masculina sin decir nada.
+   */
+  sex: 'female' | 'male';
   color: string;
   /**
    * Ruta al mp3, o `null` si la grabación todavía no existe.
@@ -75,7 +90,18 @@ export interface Historia {
     /** Consejo de lectura antes de pasar a las preguntas. */
     tip: string;
   };
-  voices: [StoryVoice, StoryVoice];
+  /**
+   * De dos a cuatro voces. Empezó siendo una tupla de dos porque las dos
+   * primeras historias eran un cara a cara; «The Tip Jar» necesitó tres —el
+   * cliente, el empleado y el dueño— y el formato mejoró: con tres ángulos, la
+   * pregunta «¿quién tiene razón?» deja de admitir la respuesta perezosa de
+   * repartir la culpa a medias.
+   *
+   * Cuatro es el techo por una razón de aula, no técnica: a partir de ahí el
+   * alumno ya no sostiene todas las versiones en la cabeza a la vez, que es
+   * justo la destreza que entrena el ejercicio.
+   */
+  voices: StoryVoice[];
   finalQuestions: StoryQuestion[];
   /** Párrafos que abren la sección final. */
   finalIntro: string[];
@@ -131,10 +157,7 @@ export function balanceHistoria(h: Historia): Historia {
   return {
     ...h,
     narrator: { ...h.narrator, questions: h.narrator.questions.map(balanceQuestion) },
-    voices: [
-      { ...h.voices[0], questions: h.voices[0].questions.map(balanceQuestion) },
-      { ...h.voices[1], questions: h.voices[1].questions.map(balanceQuestion) },
-    ],
+    voices: h.voices.map(v => ({ ...v, questions: v.questions.map(balanceQuestion) })),
     finalQuestions: h.finalQuestions.map(balanceQuestion),
   };
 }
@@ -142,13 +165,17 @@ export function balanceHistoria(h: Historia): Historia {
 export function totalQuestions(h: Historia): number {
   return (
     h.narrator.questions.length +
-    h.voices[0].questions.length +
-    h.voices[1].questions.length +
+    h.voices.reduce((n, v) => n + v.questions.length, 0) +
     h.finalQuestions.length
   );
 }
 
-/** Una historia está completa cuando sus dos notas de voz tienen grabación. */
+/** Cuántas pantallas tiene la historia: narrador + una por voz + la final. */
+export function totalParts(h: Historia): number {
+  return h.voices.length + 2;
+}
+
+/** Una historia está completa cuando todas sus notas de voz tienen grabación. */
 export function hasAudio(h: Historia): boolean {
   return h.voices.every(v => v.audioSrc !== null);
 }

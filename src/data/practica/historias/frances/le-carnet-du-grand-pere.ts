@@ -2,7 +2,7 @@
 // Adaptación nativa de «The Grandfather's Ledger». Quien reclama los regalos es
 // el ABUELO (Bernard) en las tres capas: narrador, transcripciones y preguntas.
 //
-// AUDIO PENDIENTE: /audio/historias/frances/le-carnet-du-grand-pere/{a,b}.mp3
+// AUDIO: /audio/historias/frances/le-carnet-du-grand-pere/{a,b}.mp3
 // a con voz de mujer (Élodie), b con voz de hombre mayor (Bernard).
 
 import type { Historia, StoryQuestion as Question } from '../types';
@@ -456,6 +456,7 @@ export const leCarnetDuGrandPere: Historia = {
       key: 'a',
       name: 'Élodie',
       role: 'la belle-fille',
+      sex: 'female',
       color: '#0f3d8c',
       audioSrc: '/audio/historias/frances/le-carnet-du-grand-pere/a.mp3',
       paragraphs: A_PARAGRAPHS,
@@ -470,6 +471,7 @@ export const leCarnetDuGrandPere: Historia = {
       key: 'b',
       name: 'Bernard',
       role: 'le beau-père',
+      sex: 'male',
       color: '#7c3aed',
       audioSrc: '/audio/historias/frances/le-carnet-du-grand-pere/b.mp3',
       paragraphs: B_PARAGRAPHS,

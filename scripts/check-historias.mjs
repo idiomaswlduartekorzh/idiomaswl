@@ -10,7 +10,7 @@
 // Falla (exit 1) si:
 //   • una posición concentra más del 40 % de las respuestas correctas
 //   • alguna posición se queda por debajo del 10 %
-//   • una historia no tiene 19 preguntas, o alguna no tiene 4 opciones
+//   • una historia no tiene la forma esperada (2–4 voces, ~5 preguntas cada una)
 //   • hay opciones repetidas dentro de una pregunta
 //   • una explicación se refiere a una opción por su letra (el reparto la movería)
 
@@ -44,12 +44,30 @@ for (const lang of HISTORIA_LANG_KEYS) {
     const id = `${lang}/${h.slug}`;
     const groups = [
       ['narrador', h.narrator.questions],
-      [h.voices[0].name, h.voices[0].questions],
-      [h.voices[1].name, h.voices[1].questions],
+      ...h.voices.map(v => [v.name, v.questions]),
       ['final', h.finalQuestions],
     ];
     const n = groups.reduce((acc, [, qs]) => acc + qs.length, 0);
-    if (n !== 19) problems.push(`${id}: ${n} preguntas (esperadas 19)`);
+
+    // El número de preguntas ya no es fijo: depende de cuántas voces tenga la
+    // historia. Lo que sí es fijo es la forma — narrador y cierre con cuatro o
+    // cinco, y cada voz con cinco — porque de ahí sale el equilibrio del
+    // ejercicio. Una voz con dos preguntas sería una voz decorativa.
+    if (h.voices.length < 2 || h.voices.length > 4) {
+      problems.push(`${id}: ${h.voices.length} voces (el motor admite de 2 a 4)`);
+    }
+    const esperadas = 4 + h.voices.length * 5 + 5;
+    if (n < esperadas - 1 || n > esperadas + 1) {
+      problems.push(`${id}: ${n} preguntas para ${h.voices.length} voces (se esperan ~${esperadas})`);
+    }
+    for (const [grupo, qs] of groups) {
+      if (qs.length < 4) problems.push(`${id} · ${grupo}: solo ${qs.length} preguntas (mínimo 4)`);
+    }
+    const claves = h.voices.map(v => v.key);
+    if (new Set(claves).size !== claves.length) problems.push(`${id}: claves de voz repetidas (${claves.join(', ')})`);
+    if (claves.join('') !== ['a', 'b', 'c', 'd'].slice(0, claves.length).join('')) {
+      problems.push(`${id}: las claves deben ir en orden desde 'a' — están como ${claves.join(', ')}`);
+    }
 
     for (const [group, qs] of groups) {
       qs.forEach((q, i) => {
