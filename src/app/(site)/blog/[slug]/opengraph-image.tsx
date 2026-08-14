@@ -51,9 +51,23 @@ export default async function Image({ params }: { params: Promise<{ slug: string
         />
 
         {/* Category badge */}
+        {/*
+          `display: 'flex'`, no 'inline-flex'. Satori —el motor que dibuja esta
+          imagen— solo acepta flex, block, contents, none y -webkit-box, y ante
+          cualquier otro valor lanza y la ruta devuelve 500. Esta insignia tenía
+          'inline-flex', así que TODAS las imágenes sociales del blog estaban
+          caídas: al compartir un artículo por WhatsApp salía sin imagen.
+          Detectado el 13 de agosto de 2026; los 5 «errores de servidor» del
+          informe de indexación de Search Console eran justo estas rutas.
+
+          `alignSelf: 'flex-start'` sustituye lo que hacía 'inline-flex': sin él,
+          el hijo de una columna flex se estira a todo el ancho y la píldora
+          dejaría de ser una píldora.
+        */}
         <div
           style={{
-            display: 'inline-flex',
+            display: 'flex',
+            alignSelf: 'flex-start',
             alignItems: 'center',
             background: `${accentColor}22`,
             border: `1.5px solid ${accentColor}55`,
@@ -65,7 +79,9 @@ export default async function Image({ params }: { params: Promise<{ slug: string
             padding: '6px 16px',
             borderRadius: 999,
             marginBottom: 32,
-            width: 'fit-content',
+            // Sin `width: 'fit-content'`: Satori tampoco lo entiende —avisa
+            // «Expected a number, "auto", or a percentage»— y lo ignora. Quien
+            // ajusta la anchura al contenido es el `alignSelf` de arriba.
           }}
         >
           {category}
