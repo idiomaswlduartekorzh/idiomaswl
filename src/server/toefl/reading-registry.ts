@@ -8,6 +8,7 @@ import {
 } from '@/data/toefl/reading-sets-2-5';
 import { TOEFL_READING_SETS_6_TO_10 } from '@/data/toefl/reading-sets-6-10';
 import { TOEFL_READING_SETS_11_TO_15 } from '@/data/toefl/reading-sets-11-15';
+import { TOEFL_READING_SETS_16_TO_20 } from '@/data/toefl/reading-sets-16-20';
 import type { ToeflReadingScoringItem } from '@/lib/toefl/reading-contract';
 
 const ANSWER_KEY: Readonly<Record<string, readonly string[]>> = {
@@ -95,6 +96,36 @@ const ANSWER_KEY: Readonly<Record<string, readonly string[]>> = {
   'item:t15-r-ap4-v2': ['item:t15-r-ap4-v2:option-b'],
   'item:t15-r-ap5-v2': ['item:t15-r-ap5-v2:option-c'],
   'item:t15-r-ap6-supplementary': ['item:t15-r-ap6-supplementary:option-a', 'item:t15-r-ap6-supplementary:option-c'],
+  'item:t16-r-ap1-v2': ['item:t16-r-ap1-v2:option-b'],
+  'item:t16-r-ap2-v2': ['item:t16-r-ap2-v2:option-c'],
+  'item:t16-r-ap3-v2': ['item:t16-r-ap3-v2:option-d'],
+  'item:t16-r-ap4-v2': ['item:t16-r-ap4-v2:option-a'],
+  'item:t16-r-ap5-v2': ['item:t16-r-ap5-v2:option-b'],
+  'item:t16-r-ap6-supplementary': ['item:t16-r-ap6-supplementary:option-a', 'item:t16-r-ap6-supplementary:option-c'],
+  'item:t17-r-ap1-v2': ['item:t17-r-ap1-v2:option-a'],
+  'item:t17-r-ap2-v2': ['item:t17-r-ap2-v2:option-b'],
+  'item:t17-r-ap3-v2': ['item:t17-r-ap3-v2:option-c'],
+  'item:t17-r-ap4-v2': ['item:t17-r-ap4-v2:option-d'],
+  'item:t17-r-ap5-v2': ['item:t17-r-ap5-v2:option-a'],
+  'item:t17-r-ap6-supplementary': ['item:t17-r-ap6-supplementary:option-a', 'item:t17-r-ap6-supplementary:option-c'],
+  'item:t18-r-ap1-v2': ['item:t18-r-ap1-v2:option-d'],
+  'item:t18-r-ap2-v2': ['item:t18-r-ap2-v2:option-a'],
+  'item:t18-r-ap3-v2': ['item:t18-r-ap3-v2:option-b'],
+  'item:t18-r-ap4-v2': ['item:t18-r-ap4-v2:option-c'],
+  'item:t18-r-ap5-v2': ['item:t18-r-ap5-v2:option-d'],
+  'item:t18-r-ap6-supplementary': ['item:t18-r-ap6-supplementary:option-a', 'item:t18-r-ap6-supplementary:option-c'],
+  'item:t19-r-ap1-v2': ['item:t19-r-ap1-v2:option-c'],
+  'item:t19-r-ap2-v2': ['item:t19-r-ap2-v2:option-d'],
+  'item:t19-r-ap3-v2': ['item:t19-r-ap3-v2:option-a'],
+  'item:t19-r-ap4-v2': ['item:t19-r-ap4-v2:option-b'],
+  'item:t19-r-ap5-v2': ['item:t19-r-ap5-v2:option-c'],
+  'item:t19-r-ap6-supplementary': ['item:t19-r-ap6-supplementary:option-a', 'item:t19-r-ap6-supplementary:option-c'],
+  'item:t20-r-ap1-v2': ['item:t20-r-ap1-v2:option-a'],
+  'item:t20-r-ap2-v2': ['item:t20-r-ap2-v2:option-b'],
+  'item:t20-r-ap3-v2': ['item:t20-r-ap3-v2:option-c'],
+  'item:t20-r-ap4-v2': ['item:t20-r-ap4-v2:option-d'],
+  'item:t20-r-ap5-v2': ['item:t20-r-ap5-v2:option-a'],
+  'item:t20-r-ap6-supplementary': ['item:t20-r-ap6-supplementary:option-a', 'item:t20-r-ap6-supplementary:option-c'],
 };
 
 function scoringFor(object: ToeflReadingExpansionObject) {
@@ -117,6 +148,7 @@ export const TOEFL_READING_SCORING_BY_OBJECT_ID = Object.fromEntries([
   ...TOEFL_READING_SETS_2_TO_5.map((object) => [object.objectId, scoringFor(object)]),
   ...TOEFL_READING_SETS_6_TO_10.map((object) => [object.objectId, scoringFor(object)]),
   ...TOEFL_READING_SETS_11_TO_15.map((object) => [object.objectId, scoringFor(object)]),
+  ...TOEFL_READING_SETS_16_TO_20.map((object) => [object.objectId, scoringFor(object)]),
 ]) as Readonly<Record<string, {
   scoringVersion: string;
   disclosure: string;

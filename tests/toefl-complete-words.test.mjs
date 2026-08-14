@@ -7,6 +7,7 @@ import {
 import { TOEFL_CTW_SETS_2_TO_5 } from '../src/data/toefl/complete-the-words-sets-2-5.ts';
 import { TOEFL_CTW_SETS_6_TO_10 } from '../src/data/toefl/complete-the-words-sets-6-10.ts';
 import { TOEFL_CTW_SETS_11_TO_15 } from '../src/data/toefl/complete-the-words-sets-11-15.ts';
+import { TOEFL_CTW_SETS_16_TO_20 } from '../src/data/toefl/complete-the-words-sets-16-20.ts';
 
 const missing = ['ides', 'ght', 'at', 'ke', 'n', 'ible', 'ide', 'un', 'cess', 'lear'];
 const prefixes = ['prov', 'li', 'he', 'ma', 'o', 'poss', 'ins', 's', 'pro', 'nuc'];
@@ -113,10 +114,15 @@ const setKeys = [
   ['ees', 'ers', 'uence', 'ch', 'ches', 'est', 'nts', 'or', 'ile', 'upy'],
   ['ols', 'dens', 'ter', 'dd', 'rial', 'he', 'form', 'ves', 'in', 'ode'],
   ['duce', 'aust', 'ile', 'ough', 'tal', 'act', 'n', 'ation', 'icle', 'nd'],
+  ['ers', 'ow', 'nse', 'at', 'ows', 'der', 'wn', 'ing', 'an', 'leys'],
+  ['lks', 'rm', 'tect', 'ap', 'r', 'ety', 'he', 'ines', 'th', 'ut'],
+  ['rgy', 'ration', 'ter', 'ile', 'ease', 'ough', 's', 'ols', 'enses', 'lets'],
+  ['ved', 'nds', 'ile', 'table', 'pens', 'age', 'he', 'ceptors', 'vert', 'to'],
+  ['els', 'ight', 'ricity', 'nd', 'se', 'ir', 'ive', 'power', 'rgy', 'wing'],
 ];
 
-test('Sets 2–15 each close at 10/10 with their own stable object identity', () => {
-  const expansionSets = [...TOEFL_CTW_SETS_2_TO_5, ...TOEFL_CTW_SETS_6_TO_10, ...TOEFL_CTW_SETS_11_TO_15];
+test('Sets 2–20 each close at 10/10 with their own stable object identity', () => {
+  const expansionSets = [...TOEFL_CTW_SETS_2_TO_5, ...TOEFL_CTW_SETS_6_TO_10, ...TOEFL_CTW_SETS_11_TO_15, ...TOEFL_CTW_SETS_16_TO_20];
   for (const [setIndex, object] of expansionSets.entries()) {
     const scoringBlanks = object.blanks.map((blank, blankIndex) => ({
       ...blank,

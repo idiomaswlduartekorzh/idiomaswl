@@ -22,6 +22,13 @@ import {
   TOEFL_CTW_SET14_V2,
   TOEFL_CTW_SET15_V2,
 } from '@/data/toefl/complete-the-words-sets-11-15';
+import {
+  TOEFL_CTW_SET16_V2,
+  TOEFL_CTW_SET17_V2,
+  TOEFL_CTW_SET18_V2,
+  TOEFL_CTW_SET19_V2,
+  TOEFL_CTW_SET20_V2,
+} from '@/data/toefl/complete-the-words-sets-16-20';
 import type { CompleteWordsScoringBlank } from '@/lib/toefl/complete-words-contract';
 
 function attachKey(
@@ -163,6 +170,71 @@ const SET15_KEY = {
   'item:t15-r-ctw-v2:blank-09': 'icle', 'item:t15-r-ctw-v2:blank-10': 'nd',
 } as const;
 
+const SET16_KEY = {
+  'item:t16-r-ctw-v2:blank-01': 'ers',
+  'item:t16-r-ctw-v2:blank-02': 'ow',
+  'item:t16-r-ctw-v2:blank-03': 'nse',
+  'item:t16-r-ctw-v2:blank-04': 'at',
+  'item:t16-r-ctw-v2:blank-05': 'ows',
+  'item:t16-r-ctw-v2:blank-06': 'der',
+  'item:t16-r-ctw-v2:blank-07': 'wn',
+  'item:t16-r-ctw-v2:blank-08': 'ing',
+  'item:t16-r-ctw-v2:blank-09': 'an',
+  'item:t16-r-ctw-v2:blank-10': 'leys',
+} as const;
+
+const SET17_KEY = {
+  'item:t17-r-ctw-v2:blank-01': 'lks',
+  'item:t17-r-ctw-v2:blank-02': 'rm',
+  'item:t17-r-ctw-v2:blank-03': 'tect',
+  'item:t17-r-ctw-v2:blank-04': 'ap',
+  'item:t17-r-ctw-v2:blank-05': 'r',
+  'item:t17-r-ctw-v2:blank-06': 'ety',
+  'item:t17-r-ctw-v2:blank-07': 'he',
+  'item:t17-r-ctw-v2:blank-08': 'ines',
+  'item:t17-r-ctw-v2:blank-09': 'th',
+  'item:t17-r-ctw-v2:blank-10': 'ut',
+} as const;
+
+const SET18_KEY = {
+  'item:t18-r-ctw-v2:blank-01': 'rgy',
+  'item:t18-r-ctw-v2:blank-02': 'ration',
+  'item:t18-r-ctw-v2:blank-03': 'ter',
+  'item:t18-r-ctw-v2:blank-04': 'ile',
+  'item:t18-r-ctw-v2:blank-05': 'ease',
+  'item:t18-r-ctw-v2:blank-06': 'ough',
+  'item:t18-r-ctw-v2:blank-07': 's',
+  'item:t18-r-ctw-v2:blank-08': 'ols',
+  'item:t18-r-ctw-v2:blank-09': 'enses',
+  'item:t18-r-ctw-v2:blank-10': 'lets',
+} as const;
+
+const SET19_KEY = {
+  'item:t19-r-ctw-v2:blank-01': 'ved',
+  'item:t19-r-ctw-v2:blank-02': 'nds',
+  'item:t19-r-ctw-v2:blank-03': 'ile',
+  'item:t19-r-ctw-v2:blank-04': 'table',
+  'item:t19-r-ctw-v2:blank-05': 'pens',
+  'item:t19-r-ctw-v2:blank-06': 'age',
+  'item:t19-r-ctw-v2:blank-07': 'he',
+  'item:t19-r-ctw-v2:blank-08': 'ceptors',
+  'item:t19-r-ctw-v2:blank-09': 'vert',
+  'item:t19-r-ctw-v2:blank-10': 'to',
+} as const;
+
+const SET20_KEY = {
+  'item:t20-r-ctw-v2:blank-01': 'els',
+  'item:t20-r-ctw-v2:blank-02': 'ight',
+  'item:t20-r-ctw-v2:blank-03': 'ricity',
+  'item:t20-r-ctw-v2:blank-04': 'nd',
+  'item:t20-r-ctw-v2:blank-05': 'se',
+  'item:t20-r-ctw-v2:blank-06': 'ir',
+  'item:t20-r-ctw-v2:blank-07': 'ive',
+  'item:t20-r-ctw-v2:blank-08': 'power',
+  'item:t20-r-ctw-v2:blank-09': 'rgy',
+  'item:t20-r-ctw-v2:blank-10': 'wing',
+} as const;
+
 export const TOEFL_CTW_SCORING_BY_OBJECT_ID: Readonly<Record<string, readonly CompleteWordsScoringBlank[]>> = {
   [TOEFL_CTW_SET1_V3.objectId]: TOEFL_CTW_SET1_V3_SCORING,
   [TOEFL_CTW_SET2_V2.objectId]: attachKey(TOEFL_CTW_SET2_V2.blanks, SET2_KEY),
@@ -179,6 +251,11 @@ export const TOEFL_CTW_SCORING_BY_OBJECT_ID: Readonly<Record<string, readonly Co
   [TOEFL_CTW_SET13_V2.objectId]: attachKey(TOEFL_CTW_SET13_V2.blanks, SET13_KEY),
   [TOEFL_CTW_SET14_V2.objectId]: attachKey(TOEFL_CTW_SET14_V2.blanks, SET14_KEY),
   [TOEFL_CTW_SET15_V2.objectId]: attachKey(TOEFL_CTW_SET15_V2.blanks, SET15_KEY),
+  [TOEFL_CTW_SET16_V2.objectId]: attachKey(TOEFL_CTW_SET16_V2.blanks, SET16_KEY),
+  [TOEFL_CTW_SET17_V2.objectId]: attachKey(TOEFL_CTW_SET17_V2.blanks, SET17_KEY),
+  [TOEFL_CTW_SET18_V2.objectId]: attachKey(TOEFL_CTW_SET18_V2.blanks, SET18_KEY),
+  [TOEFL_CTW_SET19_V2.objectId]: attachKey(TOEFL_CTW_SET19_V2.blanks, SET19_KEY),
+  [TOEFL_CTW_SET20_V2.objectId]: attachKey(TOEFL_CTW_SET20_V2.blanks, SET20_KEY),
 };
 
 // The eight superseded learner-facing blocks remain here as reusable provenance,

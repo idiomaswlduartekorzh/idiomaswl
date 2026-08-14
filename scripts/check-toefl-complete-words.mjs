@@ -11,6 +11,9 @@ import {
 import {
   TOEFL_CTW_SETS_11_TO_15,
 } from '../src/data/toefl/complete-the-words-sets-11-15.ts';
+import {
+  TOEFL_CTW_SETS_16_TO_20,
+} from '../src/data/toefl/complete-the-words-sets-16-20.ts';
 
 const root = new URL('../', import.meta.url);
 const read = (path) => readFile(new URL(path, root), 'utf8');
@@ -39,7 +42,7 @@ assert.equal(sha(candidate.split(/(?<=\.)\s/)[0]), '484adf235348ca922d025eb1813b
 assert.equal(new Set(TOEFL_CTW_SET1_V3.blanks.map((blank) => blank.id)).size, 10, 'blank ids are unique');
 
 const registrySource = await read('src/server/toefl/complete-words-registry.ts');
-const expansionSets = [...TOEFL_CTW_SETS_2_TO_5, ...TOEFL_CTW_SETS_6_TO_10, ...TOEFL_CTW_SETS_11_TO_15];
+const expansionSets = [...TOEFL_CTW_SETS_2_TO_5, ...TOEFL_CTW_SETS_6_TO_10, ...TOEFL_CTW_SETS_11_TO_15, ...TOEFL_CTW_SETS_16_TO_20];
 for (const object of expansionSets) {
   assert.equal(object.blanks.length, 10, `${object.id} has exactly ten targets`);
   assert.equal(new Set(object.blanks.map((blank) => blank.id)).size, 10, `${object.id} blank ids are unique`);
@@ -73,6 +76,9 @@ assert.equal((registrySource.match(/id: 't(?:[6-9]|10)-r-cw[12]'/g) ?? []).lengt
 const legacySets11To15 = await read('src/server/toefl/complete-words-legacy-sets-11-15.ts');
 assert.match(legacySets11To15, /import 'server-only'/, 'the Set 11–15 CTW archive has a server-only boundary');
 assert.equal((legacySets11To15.match(/id: 't(?:11|12|13|14|15)-r-cw[12]'/g) ?? []).length, 10, 'all ten superseded Set 11–15 blocks remain preserved server-side');
+const legacySets16To20 = await read('src/server/toefl/complete-words-legacy-sets-16-20.ts');
+assert.match(legacySets16To20, /import 'server-only'/, 'the Set 16–20 CTW archive has a server-only boundary');
+assert.equal((legacySets16To20.match(/id: 't(?:16|17|18|19|20)-r-cw[12]'/g) ?? []).length, 10, 'all ten superseded Set 16–20 blocks remain preserved server-side');
 
 const [publicData, publicSets2To5, publicPage, legacyPage, mockSource, seoSource, routeSource, clientSource] = await Promise.all([
   read('src/data/toefl/complete-the-words-set-1.ts'),
@@ -86,6 +92,7 @@ const [publicData, publicSets2To5, publicPage, legacyPage, mockSource, seoSource
 ]);
 const publicSets6To10 = await read('src/data/toefl/complete-the-words-sets-6-10.ts');
 const publicSets11To15 = await read('src/data/toefl/complete-the-words-sets-11-15.ts');
+const publicSets16To20 = await read('src/data/toefl/complete-the-words-sets-16-20.ts');
 const completeWordsAdapter = await read('src/data/mocks/toefl-complete-words-adapter.ts');
 
 const publicCandidateObject = publicData.slice(0, publicData.indexOf('export type CompleteWordsOutcomeKind'));
@@ -96,6 +103,7 @@ for (const answer of answers.values()) {
 assert.doesNotMatch(publicSets2To5, /expectedMissing|answer\s*:/, 'public Set 2–5 objects contain no answer key');
 assert.doesNotMatch(publicSets6To10, /expectedMissing|answer\s*:/, 'public Set 6–10 objects contain no answer key');
 assert.doesNotMatch(publicSets11To15, /expectedMissing|answer\s*:/, 'public Set 11–15 objects contain no answer key');
+assert.doesNotMatch(publicSets16To20, /expectedMissing|answer\s*:/, 'public Set 16–20 objects contain no answer key');
 assert.match(publicPage, /<CompleteTheWordsPractice \/>/, 'real CTW is the primary public interaction');
 assert.doesNotMatch(publicPage, /TOEFL_COMPLETE_WORDS_ITEMS/, 'the CTW route no longer renders the old MCQ bank');
 assert.match(legacyPage, /TOEFL_COMPLETE_WORDS_ITEMS/, 'the 16-item bank remains available');
@@ -108,7 +116,7 @@ assert.doesNotMatch(routeSource, /TOEFL_CTW_SET1_V3/, 'scoring route is no longe
 assert.match(clientSource, /objectId: question\.objectId/, 'the mock runner submits each candidate object identity');
 assert.doesNotMatch(clientSource, /TOEFL_CTW_SET1_V3\.objectId/, 'the mock runner has no fixed Set 1 scoring identity');
 
-for (const setNumber of [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]) {
+for (const setNumber of [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]) {
   const setSource = await read(`src/data/mocks/toefl-set-${setNumber}.ts`);
   assert.match(setSource, new RegExp(`TOEFL_CTW_SET${setNumber}_V2`), `Set ${setNumber} uses its canonical CTW object`);
   if (setNumber <= 5) {
@@ -136,4 +144,4 @@ for (const path of srcFiles) {
   assert.doesNotMatch(source, /@\/server\/toefl|complete-words-set-1\.server/, `${path} does not import the private key`);
 }
 
-console.log('✓ TOEFL Complete the Words: Sets 1–15 identity, format, security boundary, and preserved sources');
+console.log('✓ TOEFL Complete the Words: Sets 1–20 identity, format, security boundary, and preserved sources');

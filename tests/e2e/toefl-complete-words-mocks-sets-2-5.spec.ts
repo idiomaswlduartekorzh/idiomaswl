@@ -38,6 +38,18 @@ const cases = [
     readingObjectId: 'object:toefl-reading-set15-v2', readingLabels: [['c'], ['d'], ['a'], ['b'], ['c'], ['a', 'c']],
     buildObjectId: 'object:toefl-build-sentence-set15-v2',
   },
+  {
+    set: 16, objectId: 'object:t16-r-ctw-v2', itemPrefix: 'item:t16-r-ctw-v2:',
+    answers: ['ers', 'ow', 'nse', 'at', 'ows', 'der', 'wn', 'ing', 'an', 'leys'],
+    readingObjectId: 'object:toefl-reading-set16-v2', readingLabels: [['b'], ['c'], ['d'], ['a'], ['b'], ['a', 'c']],
+    buildObjectId: 'object:toefl-build-sentence-set16-v2',
+  },
+  {
+    set: 20, objectId: 'object:t20-r-ctw-v2', itemPrefix: 'item:t20-r-ctw-v2:',
+    answers: ['els', 'ight', 'ricity', 'nd', 'se', 'ir', 'ive', 'power', 'rgy', 'wing'],
+    readingObjectId: 'object:toefl-reading-set20-v2', readingLabels: [['a'], ['b'], ['c'], ['d'], ['a'], ['a', 'c']],
+    buildObjectId: 'object:toefl-build-sentence-set20-v2',
+  },
 ] as const;
 
 const buildPatterns = [

@@ -1,4 +1,10 @@
 import type { MockExam } from './types';
+import { TOEFL_CTW_SET16_V2 } from '@/data/toefl/complete-the-words-sets-16-20';
+import { toToeflCompleteWordsQuestion } from './toefl-complete-words-adapter';
+import { TOEFL_READING_SET16_V2 } from '@/data/toefl/reading-sets-16-20';
+import { toToeflReadingQuestion } from './toefl-reading-adapter';
+import { TOEFL_BUILD_SENTENCE_SET16_V2 } from '@/data/toefl/build-sentence-sets-16-20';
+import { toToeflBuildSentenceQuestion } from './toefl-build-sentence-adapter';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md. Escala 1–6.
@@ -13,36 +19,11 @@ const mock: MockExam = {
   timeMinutes: 86,
   sections: [
     {
-      part: 1, skill: 'reading', title: 'Reading — Complete the Words',
-      instructions: 'Complete each word so the text makes sense. Some letters are given.',
-      questions: [
-        {
-          type: 'wordcomplete', id: 't16-r-cw1', part: 1, qRange: [1, 6],
-          instructions: 'A student is writing to a classmate about a missed class.',
-          template: `Hi Ben,\n\nI missed today's {{1}} because I had to take my dog to the {{2}}. Could you tell me what we {{3}} in class? Did the professor set any {{4}} for next week? If you have your {{5}}, would you mind sharing a photo of them? I'd really {{6}} it. Thanks so much!\n\nBest,\nZoe`,
-          blanks: [
-            { num: 1, prefix: 'se', answer: 'seminar' },
-            { num: 2, prefix: 've', answer: 'vet' },
-            { num: 3, prefix: 'cov', answer: 'covered' },
-            { num: 4, prefix: 'home', answer: 'homework' },
-            { num: 5, prefix: 'no', answer: 'notes' },
-            { num: 6, prefix: 'app', answer: 'appreciate' },
-          ],
-        },
-        {
-          type: 'wordcomplete', id: 't16-r-cw2', part: 1, qRange: [7, 12],
-          instructions: 'The following is from an article about glaciers.',
-          template: `Glaciers are enormous masses of {{1}} that form over many years as snow builds up and is pressed together. They move very {{2}}, often only a few centimeters a day, but over time they can carve deep {{3}} into the land. Glaciers store a large amount of the world's fresh {{4}}. Today, however, many glaciers are {{5}} because of rising temperatures, which causes sea levels to {{6}}.`,
-          blanks: [
-            { num: 1, prefix: 'i', answer: 'ice' },
-            { num: 2, prefix: 'slo', answer: 'slowly' },
-            { num: 3, prefix: 'val', answer: 'valleys' },
-            { num: 4, prefix: 'wa', answer: 'water' },
-            { num: 5, prefix: 'shr', answer: 'shrinking' },
-            { num: 6, prefix: 'ri', answer: 'rise' },
-          ],
-        },
-      ],
+      part: 1,
+      skill: 'reading',
+      title: 'Reading — Complete the Words',
+      instructions: TOEFL_CTW_SET16_V2.instructions,
+      questions: [toToeflCompleteWordsQuestion(TOEFL_CTW_SET16_V2, 1)],
     },
     {
       part: 2, skill: 'reading', title: 'Reading — Read in Daily Life (Train station sign)',
@@ -66,23 +47,15 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 4, skill: 'reading', title: 'Reading — Read an Academic Passage',
-      instructions: 'Read the passage and answer questions.',
-      passage: `The idea that we use only ten percent of our brains is one of the most persistent myths about human biology. It appears in advertisements, self-help books, and films, often accompanied by the tantalizing suggestion that if we could just "unlock" the rest, we might gain extraordinary powers. It is a compelling story. It is also false.\n\nModern neuroscience gives us many tools to observe the brain in action. Brain-imaging techniques, such as functional MRI, allow researchers to watch which areas become active during different tasks. What these studies consistently show is that, over the course of a day, virtually every region of the brain is used. Even during sleep, many areas remain active. There is no large, silent portion waiting to be switched on. Different tasks recruit different regions, but there is no evidence of a vast unused reserve.\n\nThere are also strong evolutionary and biological arguments against the myth. The brain is extraordinarily expensive to run: although it makes up only about two percent of body weight, it consumes roughly twenty percent of the body's energy. It would make no evolutionary sense for us to carry around such a costly organ if ninety percent of it did nothing. Natural selection tends to eliminate wasteful features, not preserve them. Furthermore, damage to almost any part of the brain—through stroke or injury—produces some noticeable effect, which would be strange if most of the brain were inactive.\n\nWhy, then, does the myth survive? Part of the appeal is optimistic: the idea that we have hidden potential is more inspiring than the reality that we are already using our full capacity. The myth may also stem from a misunderstanding of early neuroscience, when scientists could not yet identify the function of every brain region and may have described large portions as having "unknown" functions. "Unknown" was mistranslated, over time, into "unused." The truth is less magical but more remarkable: the brain we already have, fully in use, is one of the most complex and capable structures known to exist.`,
-      passageTitle: 'The Ten-Percent Brain Myth',
-      questions: [
-        { type: 'mcq', id: 't16-r-ap1', part: 4, text: 'What is the main claim of the passage?', options: ['Humans use only ten percent of their brains.', 'The idea that we use only ten percent of our brains is a false but persistent myth.', 'The brain uses no energy.', 'Brain scans are unreliable.'], answer: 1 },
-        { type: 'mcq', id: 't16-r-ap2', part: 4, text: 'What do brain-imaging studies consistently show?', options: ['That the brain shuts down during sleep', 'That most of the brain is silent', 'That virtually every region of the brain is used over the course of a day', 'That only ten percent is active'], answer: 2 },
-        { type: 'mcq', id: 't16-r-ap3', part: 4, text: 'Why is the brain\'s energy use given as an argument against the myth?', options: ['Energy use has nothing to do with the brain.', 'The brain uses all the body\'s energy.', 'The brain uses very little energy.', 'It would make no evolutionary sense to carry such a costly organ if ninety percent did nothing.'], answer: 3 },
-        { type: 'mcq', id: 't16-r-ap4', part: 4, text: 'According to the passage, what does damage to almost any part of the brain produce?', options: ['Some noticeable effect', 'Improved memory', 'Extra brain capacity', 'No effect at all'], answer: 0 },
-        { type: 'mcq', id: 't16-r-ap5', part: 4, text: 'How does the passage explain why the myth may have started?', options: ['Scientists proved it was true.', 'Early "unknown" brain functions may have been mistranslated over time into "unused."', 'Films invented the brain.', 'The brain really is mostly unused.'], answer: 1 },
-        { type: 'multiselect', id: 't16-r-ap6', part: 4, qRange: [6, 6], text: 'Select the TWO statements supported by the passage.', options: [
-          { letter: 'A', text: 'The brain consumes about twenty percent of the body\'s energy.' },
-          { letter: 'B', text: 'Brain scans show that ninety percent of the brain is silent.' },
-          { letter: 'C', text: 'Part of the myth\'s appeal is the optimistic idea of hidden potential.' },
-          { letter: 'D', text: 'Damage to most of the brain produces no effect.' },
-        ], selectCount: 2, answers: ['A', 'C'] },
-      ],
+      part: 4,
+      skill: 'reading',
+      title: 'Reading — Read an Academic Passage',
+      instructions: TOEFL_READING_SET16_V2.academic.instructions,
+      sectionNote: 'Las preguntas 1–5 reproducen familias oficiales de selección única. La pregunta 6 es práctica complementaria WeLearn.',
+      passage: TOEFL_READING_SET16_V2.academic.text,
+      passageTitle: TOEFL_READING_SET16_V2.academic.title,
+      questions: TOEFL_READING_SET16_V2.academic.items.map((item) =>
+        toToeflReadingQuestion(TOEFL_READING_SET16_V2.objectId, item, 4)),
     },
     {
       part: 5, skill: 'listening', title: 'Listening — Listen and Choose a Response',
@@ -132,16 +105,13 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 9, skill: 'writing', title: 'Writing — Build a Sentence',
-      instructions: 'Put the words in the correct order to make a grammatical sentence.',
-      questions: [
-        { type: 'sentencebuild', id: 't16-w-bs1', part: 9, tiles: ['We', 'are', 'planning', 'a trip', 'to the coast'], answer: ['We', 'are', 'planning', 'a trip', 'to the coast'] },
-        { type: 'sentencebuild', id: 't16-w-bs2', part: 9, tiles: ['the volume', 'you', 'lower', 'Could', 'please'], answer: ['Could', 'you', 'please', 'lower', 'the volume'] },
-        { type: 'sentencebuild', id: 't16-w-bs3', part: 9, tiles: ['recommended', 'The hotel', 'you', 'was', 'fully booked'], answer: ['The hotel', 'you', 'recommended', 'was', 'fully booked'] },
-        { type: 'sentencebuild', id: 't16-w-bs4', part: 9, tiles: ['finish,', 'you', 'When', 'let me know', 'please'], answer: ['When', 'you', 'finish,', 'please', 'let me know'] },
-        { type: 'sentencebuild', id: 't16-w-bs5', part: 9, tiles: ['is', 'This laptop', 'the old one', 'than', 'faster', 'far'], answer: ['This laptop', 'is', 'far', 'faster', 'than', 'the old one'] },
-        { type: 'sentencebuild', id: 't16-w-bs6', part: 9, tiles: ['the alarm,', 'Hearing', 'the building', 'everyone', 'left', 'quickly'], answer: ['Hearing', 'the alarm,', 'everyone', 'left', 'the building', 'quickly'] },
-      ],
+      part: 9,
+      skill: 'writing',
+      title: 'Writing — Build a Sentence',
+      instructions: 'Read the first speaker. Arrange the fragments to make a grammatical and contextually appropriate reply. One fragment is not used.',
+      sectionNote: TOEFL_BUILD_SENTENCE_SET16_V2.interactionDisclosure,
+      questions: TOEFL_BUILD_SENTENCE_SET16_V2.items.map((item) =>
+        toToeflBuildSentenceQuestion(TOEFL_BUILD_SENTENCE_SET16_V2.objectId, item, 9)),
     },
     {
       part: 10, skill: 'writing', title: 'Writing — Write an Email',

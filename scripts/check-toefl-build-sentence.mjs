@@ -21,6 +21,13 @@ import {
   TOEFL_BUILD_SENTENCE_SET14_V2,
   TOEFL_BUILD_SENTENCE_SET15_V2,
 } from '../src/data/toefl/build-sentence-sets-11-15.ts';
+import {
+  TOEFL_BUILD_SENTENCE_SET16_V2,
+  TOEFL_BUILD_SENTENCE_SET17_V2,
+  TOEFL_BUILD_SENTENCE_SET18_V2,
+  TOEFL_BUILD_SENTENCE_SET19_V2,
+  TOEFL_BUILD_SENTENCE_SET20_V2,
+} from '../src/data/toefl/build-sentence-sets-16-20.ts';
 
 const root = new URL('../', import.meta.url);
 const read = async (path) => readFile(new URL(path, root), 'utf8');
@@ -41,9 +48,14 @@ const sets = [
   TOEFL_BUILD_SENTENCE_SET13_V2,
   TOEFL_BUILD_SENTENCE_SET14_V2,
   TOEFL_BUILD_SENTENCE_SET15_V2,
+  TOEFL_BUILD_SENTENCE_SET16_V2,
+  TOEFL_BUILD_SENTENCE_SET17_V2,
+  TOEFL_BUILD_SENTENCE_SET18_V2,
+  TOEFL_BUILD_SENTENCE_SET19_V2,
+  TOEFL_BUILD_SENTENCE_SET20_V2,
 ];
 
-assert.equal(new Set(sets.map((set) => set.objectId)).size, 15, 'Build object IDs must be unique across Sets 1–15.');
+assert.equal(new Set(sets.map((set) => set.objectId)).size, 20, 'Build object IDs must be unique across Sets 1–20.');
 for (const [setIndex, set] of sets.entries()) {
   assert.equal(set.items.length, 10, `Set ${setIndex + 1} must contain 10 Build a Sentence items.`);
   assert.equal(new Set(set.items.map((item) => item.id)).size, 10, `Set ${setIndex + 1} item IDs must be unique.`);
@@ -61,15 +73,18 @@ const publicData = await read('src/data/toefl/build-sentence-set-1.ts');
 const expansionPublicData = await read('src/data/toefl/build-sentence-sets-2-5.ts');
 const expansionPublicW5Data = await read('src/data/toefl/build-sentence-sets-6-10.ts');
 const expansionPublicW6Data = await read('src/data/toefl/build-sentence-sets-11-15.ts');
+const expansionPublicW7Data = await read('src/data/toefl/build-sentence-sets-16-20.ts');
 const serverData = await read('src/server/toefl/build-sentence-set-1.ts');
 const expansionServerData = await read('src/server/toefl/build-sentence-sets-2-5.ts');
 const expansionServerW5Data = await read('src/server/toefl/build-sentence-sets-6-10.ts');
 const expansionServerW6Data = await read('src/server/toefl/build-sentence-sets-11-15.ts');
+const expansionServerW7Data = await read('src/server/toefl/build-sentence-sets-16-20.ts');
 const legacyW5Data = await read('src/server/toefl/build-sentence-legacy-sets-6-10.ts');
 const legacyW6Data = await read('src/server/toefl/build-sentence-legacy-sets-11-15.ts');
+const legacyW7Data = await read('src/server/toefl/build-sentence-legacy-sets-16-20.ts');
 const registryData = await read('src/server/toefl/build-sentence-registry.ts');
 const mockData = await read('src/data/mocks/toefl-set-1.ts');
-const expansionMocks = await Promise.all([2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map((set) => read(`src/data/mocks/toefl-set-${set}.ts`)));
+const expansionMocks = await Promise.all([2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20].map((set) => read(`src/data/mocks/toefl-set-${set}.ts`)));
 const renderer = await read('src/components/toefl/BuildSentenceItem.tsx');
 const client = await read('src/app/(site)/examenes/[exam]/practica/[mockId]/Toefl2026PracticeClient.tsx');
 const route = await read('src/app/api/practica/toefl/build-sentence/score/route.ts');
@@ -79,6 +94,7 @@ assert.ok(!publicData.includes('ANSWER_KEY') && !publicData.includes('acceptedOr
 assert.ok(!expansionPublicData.includes('acceptedOrders') && !expansionPublicData.includes('answer:'), 'Sets 2–5 public Build data must not contain scoring keys.');
 assert.ok(!expansionPublicW5Data.includes('acceptedOrders') && !expansionPublicW5Data.includes('answer:'), 'Sets 6–10 public Build data must not contain scoring keys.');
 assert.ok(!expansionPublicW6Data.includes('acceptedOrders') && !expansionPublicW6Data.includes('answer:'), 'Sets 11–15 public Build data must not contain scoring keys.');
+assert.ok(!expansionPublicW7Data.includes('acceptedOrders') && !expansionPublicW7Data.includes('answer:'), 'Sets 16–20 public Build data must not contain scoring keys.');
 assert.match(serverData, /import 'server-only'/, 'Build scoring key must be server-only.');
 assert.match(serverData, /TOEFL_BUILD_SENTENCE_SET1_LEGACY_SOURCE/, 'The six-item legacy source must remain preserved.');
 assert.match(expansionServerData, /import 'server-only'/, 'Sets 2–5 scoring keys must be server-only.');
@@ -92,6 +108,10 @@ assert.match(legacyW6Data, /import 'server-only'/, 'Sets 11–15 legacy sources 
 assert.equal([...legacyW6Data.matchAll(/id: 't(?:11|12|13|14|15)-w-bs[1-6]'/g)].length, 30, 'Sets 11–15 preserve all thirty legacy Build items.');
 assert.match(registryData, /TOEFL_BUILD_SENTENCE_SCORING_SETS_6_TO_10/, 'The master registry includes the W5 scoring objects.');
 assert.match(registryData, /TOEFL_BUILD_SENTENCE_SCORING_SETS_11_TO_15/, 'The master registry includes the W6 scoring objects.');
+assert.match(expansionServerW7Data, /import 'server-only'/, 'Sets 16–20 scoring keys must be server-only.');
+assert.match(legacyW7Data, /import 'server-only'/, 'Sets 16–20 legacy sources must be server-only.');
+assert.equal([...legacyW7Data.matchAll(/id: 't(?:16|17|18|19|20)-w-bs[1-6]'/g)].length, 30, 'Sets 16–20 preserve all thirty legacy Build items.');
+assert.match(registryData, /TOEFL_BUILD_SENTENCE_SCORING_SETS_16_TO_20/, 'The master registry includes the W7 scoring objects.');
 assert.match(mockData, /TOEFL_BUILD_SENTENCE_SET1\.items\.map/, 'Set 1 mock must render all ten public items.');
 assert.ok(!mockData.includes("type: 'sentencebuild', id: 't1-w-bs1'"), 'Set 1 must not retain the exposed legacy key.');
 for (const [index, source] of expansionMocks.entries()) {
@@ -109,4 +129,4 @@ assert.match(route, /TOEFL_BUILD_SENTENCE_SCORING_BY_OBJECT_ID/, 'The scoring ro
 assert.match(practice, /localStorage/, 'The public pilot must persist an anonymous attempt.');
 assert.match(practice, /fallo técnico/, 'Technical scoring failures must not become academic errors.');
 
-console.log('✓ TOEFL 2026 Build a Sentence Sets 1–15: 150 contextual items, server-only exact scoring, persistence and accessible controls verified.');
+console.log('✓ TOEFL 2026 Build a Sentence Sets 1–20: 200 contextual items, server-only exact scoring, persistence and accessible controls verified.');

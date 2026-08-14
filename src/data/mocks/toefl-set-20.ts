@@ -1,4 +1,10 @@
 import type { MockExam } from './types';
+import { TOEFL_CTW_SET20_V2 } from '@/data/toefl/complete-the-words-sets-16-20';
+import { toToeflCompleteWordsQuestion } from './toefl-complete-words-adapter';
+import { TOEFL_READING_SET20_V2 } from '@/data/toefl/reading-sets-16-20';
+import { toToeflReadingQuestion } from './toefl-reading-adapter';
+import { TOEFL_BUILD_SENTENCE_SET20_V2 } from '@/data/toefl/build-sentence-sets-16-20';
+import { toToeflBuildSentenceQuestion } from './toefl-build-sentence-adapter';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md. Escala 1–6.
@@ -13,36 +19,11 @@ const mock: MockExam = {
   timeMinutes: 86,
   sections: [
     {
-      part: 1, skill: 'reading', title: 'Reading — Complete the Words',
-      instructions: 'Complete each word so the text makes sense. Some letters are given.',
-      questions: [
-        {
-          type: 'wordcomplete', id: 't20-r-cw1', part: 1, qRange: [1, 6],
-          instructions: 'A student is writing a message about a lost item.',
-          template: `Hi,\n\nI think I left my {{1}} in the library yesterday afternoon. It's a black backpack with a red {{2}}. Inside there are some books and a blue water {{3}}. I was sitting on the second {{4}}, near the windows, at around three o'clock. Could you please check the lost-and-{{5}}? I would be very {{6}} if you could let me know.\n\nThank you,\nNina`,
-          blanks: [
-            { num: 1, prefix: 'bag', answer: 'bag' },
-            { num: 2, prefix: 'zi', answer: 'zip' },
-            { num: 3, prefix: 'bo', answer: 'bottle' },
-            { num: 4, prefix: 'flo', answer: 'floor' },
-            { num: 5, prefix: 'fo', answer: 'found' },
-            { num: 6, prefix: 'grat', answer: 'grateful' },
-          ],
-        },
-        {
-          type: 'wordcomplete', id: 't20-r-cw2', part: 1, qRange: [7, 12],
-          instructions: 'The following is from an article about renewable energy.',
-          template: `Renewable energy comes from sources that will not run out, such as the sun, wind, and moving {{1}}. Solar panels turn sunlight into {{2}}, while wind {{3}} use moving air to generate power. Unlike coal and oil, these sources produce little or no {{4}}, which makes them much cleaner for the {{5}}. As technology improves and costs fall, more countries are choosing to {{6}} in renewable energy.`,
-          blanks: [
-            { num: 1, prefix: 'wa', answer: 'water' },
-            { num: 2, prefix: 'elec', answer: 'electricity' },
-            { num: 3, prefix: 'tur', answer: 'turbines' },
-            { num: 4, prefix: 'poll', answer: 'pollution' },
-            { num: 5, prefix: 'env', answer: 'environment' },
-            { num: 6, prefix: 'inv', answer: 'invest' },
-          ],
-        },
-      ],
+      part: 1,
+      skill: 'reading',
+      title: 'Reading — Complete the Words',
+      instructions: TOEFL_CTW_SET20_V2.instructions,
+      questions: [toToeflCompleteWordsQuestion(TOEFL_CTW_SET20_V2, 1)],
     },
     {
       part: 2, skill: 'reading', title: 'Reading — Read in Daily Life (Café job notice)',
@@ -66,23 +47,15 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 4, skill: 'reading', title: 'Reading — Read an Academic Passage',
-      instructions: 'Read the passage and answer questions.',
-      passage: `One of the most surprising discoveries in modern astronomy is that the ordinary matter we can see—stars, planets, gas, and everything made of atoms—accounts for only a small fraction of the universe. The rest appears to be made of two mysterious components that scientists call dark matter and dark energy. Despite their similar names, they are quite different, and together they represent one of the great unsolved problems in physics.\n\nDark matter was proposed to explain a puzzle about how galaxies behave. When astronomers measured the speed at which stars orbit within galaxies, they found that the outer stars were moving far too fast. Based on the visible matter alone, these fast-moving stars should have flown off into space; the gravity of the visible stars and gas was simply not strong enough to hold them. The leading explanation is that galaxies contain a large amount of invisible matter—dark matter—whose gravity holds them together. We cannot see it directly because it does not emit or reflect light, but we can detect its gravitational effects.\n\nDark energy addresses a different mystery. In the late twentieth century, astronomers made a startling discovery: the expansion of the universe is not slowing down, as gravity would suggest, but speeding up. Something appears to be pushing the universe apart, overcoming the inward pull of gravity on the largest scales. Scientists gave this unknown force the name dark energy, though naming it is not the same as understanding it.\n\nWhat makes these ideas so remarkable—and so humbling—is their scale. Current estimates suggest that ordinary matter makes up only about five percent of the universe, dark matter about twenty-seven percent, and dark energy the remaining sixty-eight percent. In other words, roughly ninety-five percent of the universe is made of things we cannot see and do not yet understand. Rather than a sign of failure, many scientists see this as thrilling: it means that some of the most fundamental features of reality are still waiting to be discovered.`,
-      passageTitle: 'Dark Matter and Dark Energy',
-      questions: [
-        { type: 'mcq', id: 't20-r-ap1', part: 4, text: 'According to the passage, how much of the universe is ordinary, visible matter?', options: ['About five percent', 'About sixty-eight percent', 'About half', 'About ninety-five percent'], answer: 0 },
-        { type: 'mcq', id: 't20-r-ap2', part: 4, text: 'What puzzle led scientists to propose dark matter?', options: ['The universe is too cold.', 'Outer stars in galaxies move too fast to be held by the gravity of visible matter alone.', 'Stars are disappearing.', 'Galaxies are too small.'], answer: 1 },
-        { type: 'mcq', id: 't20-r-ap3', part: 4, text: 'Why can dark matter not be seen directly?', options: ['It moves too fast.', 'It is too far away.', 'It does not emit or reflect light, though its gravitational effects can be detected.', 'It is hidden behind stars.'], answer: 2 },
-        { type: 'mcq', id: 't20-r-ap4', part: 4, text: 'What mystery does dark energy address?', options: ['Why galaxies form', 'Why light travels fast', 'Why stars are hot', 'Why the expansion of the universe is speeding up rather than slowing down'], answer: 3 },
-        { type: 'mcq', id: 't20-r-ap5', part: 4, text: 'How do many scientists view the fact that ~95% of the universe is not understood?', options: ['As thrilling, because fundamental features of reality are still waiting to be discovered', 'As proof that science is wrong', 'As unimportant', 'As a sign of failure'], answer: 0 },
-        { type: 'multiselect', id: 't20-r-ap6', part: 4, qRange: [6, 6], text: 'Select the TWO statements supported by the passage.', options: [
-          { letter: 'A', text: 'Dark matter\'s gravity is thought to hold galaxies together.' },
-          { letter: 'B', text: 'Dark energy is well understood by scientists.' },
-          { letter: 'C', text: 'The expansion of the universe appears to be speeding up.' },
-          { letter: 'D', text: 'Ordinary matter makes up most of the universe.' },
-        ], selectCount: 2, answers: ['A', 'C'] },
-      ],
+      part: 4,
+      skill: 'reading',
+      title: 'Reading — Read an Academic Passage',
+      instructions: TOEFL_READING_SET20_V2.academic.instructions,
+      sectionNote: 'Las preguntas 1–5 reproducen familias oficiales de selección única. La pregunta 6 es práctica complementaria WeLearn.',
+      passage: TOEFL_READING_SET20_V2.academic.text,
+      passageTitle: TOEFL_READING_SET20_V2.academic.title,
+      questions: TOEFL_READING_SET20_V2.academic.items.map((item) =>
+        toToeflReadingQuestion(TOEFL_READING_SET20_V2.objectId, item, 4)),
     },
     {
       part: 5, skill: 'listening', title: 'Listening — Listen and Choose a Response',
@@ -132,16 +105,13 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 9, skill: 'writing', title: 'Writing — Build a Sentence',
-      instructions: 'Put the words in the correct order to make a grammatical sentence.',
-      questions: [
-        { type: 'sentencebuild', id: 't20-w-bs1', part: 9, tiles: ['They', 'are', 'organizing', 'a concert', 'for charity'], answer: ['They', 'are', 'organizing', 'a concert', 'for charity'] },
-        { type: 'sentencebuild', id: 't20-w-bs2', part: 9, tiles: ['the details', 'you', 'confirm', 'Could', 'by email'], answer: ['Could', 'you', 'confirm', 'the details', 'by email'] },
-        { type: 'sentencebuild', id: 't20-w-bs3', part: 9, tiles: ['recommended', 'The course', 'you', 'was', 'very useful'], answer: ['The course', 'you', 'recommended', 'was', 'very useful'] },
-        { type: 'sentencebuild', id: 't20-w-bs4', part: 9, tiles: ['finish,', 'they', 'When', 'go home', 'they\'ll'], answer: ['When', 'they', 'finish,', 'they\'ll', 'go home'] },
-        { type: 'sentencebuild', id: 't20-w-bs5', part: 9, tiles: ['is', 'This year', 'last year', 'than', 'busier'], answer: ['This year', 'is', 'busier', 'than', 'last year'] },
-        { type: 'sentencebuild', id: 't20-w-bs6', part: 9, tiles: ['the project,', 'Having', 'they', 'a break', 'completed', 'took'], answer: ['Having', 'completed', 'the project,', 'they', 'took', 'a break'] },
-      ],
+      part: 9,
+      skill: 'writing',
+      title: 'Writing — Build a Sentence',
+      instructions: 'Read the first speaker. Arrange the fragments to make a grammatical and contextually appropriate reply. One fragment is not used.',
+      sectionNote: TOEFL_BUILD_SENTENCE_SET20_V2.interactionDisclosure,
+      questions: TOEFL_BUILD_SENTENCE_SET20_V2.items.map((item) =>
+        toToeflBuildSentenceQuestion(TOEFL_BUILD_SENTENCE_SET20_V2.objectId, item, 9)),
     },
     {
       part: 10, skill: 'writing', title: 'Writing — Write an Email',

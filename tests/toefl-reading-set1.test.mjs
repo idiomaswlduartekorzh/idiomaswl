@@ -4,6 +4,7 @@ import { scoreToeflReadingAttempt } from '../src/lib/toefl/reading-contract.ts';
 import { TOEFL_READING_SETS_2_TO_5 } from '../src/data/toefl/reading-sets-2-5.ts';
 import { TOEFL_READING_SETS_6_TO_10 } from '../src/data/toefl/reading-sets-6-10.ts';
 import { TOEFL_READING_SETS_11_TO_15 } from '../src/data/toefl/reading-sets-11-15.ts';
+import { TOEFL_READING_SETS_16_TO_20 } from '../src/data/toefl/reading-sets-16-20.ts';
 
 const single = (number, correct = 'a') => ({
   itemId: `item:single-${number}`,
@@ -123,10 +124,15 @@ const expansionKeys = [
   [['a'], ['b'], ['c'], ['d'], ['a'], ['a', 'c']],
   [['d'], ['a'], ['b'], ['c'], ['d'], ['a', 'c']],
   [['c'], ['d'], ['a'], ['b'], ['c'], ['a', 'c']],
+  [['b'], ['c'], ['d'], ['a'], ['b'], ['a', 'c']],
+  [['a'], ['b'], ['c'], ['d'], ['a'], ['a', 'c']],
+  [['d'], ['a'], ['b'], ['c'], ['d'], ['a', 'c']],
+  [['c'], ['d'], ['a'], ['b'], ['c'], ['a', 'c']],
+  [['a'], ['b'], ['c'], ['d'], ['a'], ['a', 'c']],
 ];
 
-test('Academic Sets 2–15 each reconcile five official items plus one supplement at 6/6', () => {
-  const objects = [...TOEFL_READING_SETS_2_TO_5, ...TOEFL_READING_SETS_6_TO_10, ...TOEFL_READING_SETS_11_TO_15];
+test('Academic Sets 2–20 each reconcile five official items plus one supplement at 6/6', () => {
+  const objects = [...TOEFL_READING_SETS_2_TO_5, ...TOEFL_READING_SETS_6_TO_10, ...TOEFL_READING_SETS_11_TO_15, ...TOEFL_READING_SETS_16_TO_20];
   for (const [setIndex, object] of objects.entries()) {
     const scoringItems = object.academic.items.map((item, itemIndex) => ({
       itemId: item.id,

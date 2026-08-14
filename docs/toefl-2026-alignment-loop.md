@@ -3207,3 +3207,33 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
 - Estado: Sets 2–15 están completos dentro del alcance no-audio actual. El siguiente
   lote es Sets 16–20. VoiceOver T16/T17 sigue pendiente como gate humano. Cero audio
   abierto, reproducido, transcrito, generado o modificado.
+
+### Expansión no-audio — lote W7 Sets 16–20 — 2026-08-14
+
+- Alcance cerrado: Sets 16–20 completan CTW, Academic Passage y Build a Sentence con
+  el contrato aplicado en los lotes W2–W6. Daily Life, Email y Academic Discussion ya
+  cumplían el inventario no-audio.
+- CTW: cinco objetos de 81/85/80/82/84 palabras, primera oración intacta, diez mitades
+  alternas y clave de letras faltantes server-only. Los diez bloques previos se
+  preservan fuera del payload.
+- Academic: cinco pasajes de 190/208/204/206/202 palabras. Cada uno expone cinco
+  single-select official-family y un sexto exact-set rotulado como suplemento WeLearn.
+  Las cinco fuentes largas y sus claves v1 quedan server-only.
+- Revisión factual: se calificó la afirmación sobre arañas que cazan sin red, se separó
+  hielo terrestre de hielo flotante, se evitaron simplificaciones del ciclo del agua y
+  la visión, y se conservaron impactos/variabilidad de renovables. Academic evita el
+  mito del 10 % cerebral, determinismo sobre flow, promesas universales de vacunas,
+  una teoría única de sueños y sustancias oscuras falsamente identificadas. Evidencia
+  en `docs/toefl-2026-written-sets16-20-factual-audit-2026-08-14.md`.
+- Build: 50 intercambios originales con contexto, texto fijo de respuesta, cuatro
+  fragmentos y un distractor. La clave privada verifica que el contenido público
+  mezclado no derive; las 30 actividades anteriores se conservan server-only.
+- Evidencia: checkers CTW/Reading/Build/Writing PASS; units 8/8, 8/8, 9/9 y 8/8;
+  TypeScript y ESLint dirigido PASS; build completo PASS con guardianes y
+  1.364/1.364 rutas. Chromium de producción en Sets 16 y 20 cerró 10/10 + 6/6 +
+  10/10: PASS 2/2. La primera corrida apuntó al puerto equivocado y falló antes de
+  abrir página; la repetición con el puerto configurado pasó 2/2.
+- Estado: Sets 2–20 quedan completos dentro del alcance no-audio actual. El siguiente
+  paso es la auditoría transversal de composición, tiempos, scoring, navegación y
+  accesibilidad de los 20 simulacros. VoiceOver T16/T17 sigue pendiente como gate
+  humano. Cero audio abierto, reproducido, transcrito, generado o modificado.
