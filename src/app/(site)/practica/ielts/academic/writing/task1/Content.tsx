@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Clock3, Headphones, ShieldCheck } from 'lucide-react';
 import Task1ChartTypeGuide from './Task1ChartTypeGuide';
 import styles from './Task1Hub.module.css';
 
@@ -191,6 +191,56 @@ export default function Task1HubPage() {
           </div>
         </header>
 
+        <section className={`${styles.section} ${styles.podcastSection}`} aria-labelledby="audio-guide-heading">
+          <div className={styles.podcastPanel}>
+            <div className={styles.podcastHeader}>
+              <div>
+                <p className={styles.podcastEyebrow}><Headphones size={16} aria-hidden="true" /> Start here · Audio guide</p>
+                <h2 id="audio-guide-heading">Mastering IELTS Academic Writing Task 1</h2>
+                <p>Use this English episode as your map of the task: what Academic Task 1 asks you to do, how to protect the recommended 20 minutes, how to read each visual and how the four scoring criteria translate into practice.</p>
+              </div>
+              <div className={styles.podcastDuration} aria-label="Episode length: 19 minutes 56 seconds">
+                <Clock3 size={18} aria-hidden="true" />
+                <span>19:56</span>
+              </div>
+            </div>
+
+            <div className={styles.playerShell}>
+              <div className={styles.nowPlaying}><span>Orientation episode · English</span><strong>No autoplay</strong></div>
+              <audio className={styles.audioPlayer} controls preload="metadata" aria-label="Play Mastering IELTS Academic Writing Task 1">
+                <source src="/audio/ielts/task1/mastering-ielts-academic-writing-task-1.mp3" type="audio/mpeg" />
+                Your browser does not support the audio player. <a href="/audio/ielts/task1/mastering-ielts-academic-writing-task-1.mp3">Download the episode</a>.
+              </audio>
+            </div>
+
+            <div className={styles.podcastBody}>
+              <div className={styles.episodeMap}>
+                <p className={styles.podcastLabel}>By the end, you should be able to</p>
+                <ul>
+                  <li>separate official requirements from useful preparation defaults and budget Task 1 inside the full Writing test;</li>
+                  <li>read the visual type, select its main features and avoid adding explanations the visual does not support;</li>
+                  <li>group evidence logically, write a clear overview and report details with accurate comparisons;</li>
+                  <li>turn Read, Select, Group and Report into practice using the three paths directly below.</li>
+                </ul>
+                <nav className={styles.podcastLinks} aria-label="Continue from the audio guide">
+                  <a href="#response-architecture">Response plan <ArrowRight size={15} aria-hidden="true" /></a>
+                  <a href="#visual-types">Visual types <ArrowRight size={15} aria-hidden="true" /></a>
+                  <a href="#transferable-skills">Writing skills <ArrowRight size={15} aria-hidden="true" /></a>
+                </nav>
+              </div>
+
+              <aside className={styles.editorialNote} aria-label="Editorial accuracy note">
+                <ShieldCheck size={22} aria-hidden="true" />
+                <div>
+                  <p className={styles.podcastLabel}>Editorially reviewed</p>
+                  <h3>Useful defaults, not hidden IELTS rules</h3>
+                  <p>This AI-produced conversation has been checked against the lesson. The four-part plan, suggested paragraph ranges, a number-free overview and passive-heavy process descriptions are practical defaults—not fixed IELTS rules. IELTS does not prescribe a paragraph count, overview location or sentence formula.</p>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </section>
+
         <section className={styles.section} aria-labelledby="official-heading">
           <div className={styles.sectionHeading}>
             <p className={styles.kicker}>Official format versus WeLearn strategy</p>
@@ -215,7 +265,7 @@ export default function Task1HubPage() {
           </div>
         </section>
 
-        <section className={styles.section} aria-label="Task 1 visual type guide"><Task1ChartTypeGuide /></section>
+        <section id="visual-types" className={styles.section} aria-label="Task 1 visual type guide"><Task1ChartTypeGuide /></section>
 
         <section className={styles.section} aria-labelledby="paragraph-toolkit">
           <div className={styles.sectionHeading}><p className={styles.kicker}>Path B · Paragraph toolkit</p><h2 id="paragraph-toolkit">Use a sub-skill to solve a paragraph decision</h2><p>Paragraphs are the response structure. These linked lessons are reusable tools for charts, tables, processes and maps.</p></div>
