@@ -13,7 +13,6 @@ import type {
 } from '@/data/mocks/types';
 import { TOEFL_BUILD_SENTENCE_SET1 } from '@/data/toefl/build-sentence-set-1';
 import type { CompleteWordsScoreResult } from '@/data/toefl/complete-the-words-set-1';
-import { TOEFL_READING_SET1 } from '@/data/toefl/reading-set-1';
 import type { ToeflReadingScoreResult } from '@/lib/toefl/reading-contract';
 import type { ToeflBuildSentenceScoreResult } from '@/lib/toefl/build-sentence-contract';
 import BuildSentenceItem from '@/components/toefl/BuildSentenceItem';
@@ -451,7 +450,7 @@ function computeReadingListening(
           if (norm(ans.word[q.id]?.[b.num] ?? '') === norm(missing)) correct++;
         }
       } else if (q.type === 'toefl-reading-single' || q.type === 'toefl-reading-multi') {
-        // Set 1 keys stay server-only and are reconciled once through readingScore.
+        // Server-scored reading keys reconcile once through readingScore.
         continue;
       } else if (q.type === 'multiselect') {
         total++;
@@ -502,8 +501,11 @@ function Results({ mock, exam, ans, wordScores, readingScore, buildScore, speakB
   // Transition 0–120 comparable score (approx): each band → /6*30 per section, summed.
   const comparable = Math.round(([rBand, lBand, wBand, spBand].filter(b => b > 0).reduce((a, b) => a + (b / 6) * 30, 0)));
 
-  const officialReadingIds = new Set(TOEFL_READING_SET1.blocks.flatMap((block) => block.items)
-    .filter((item) => item.alignment === 'official-family-pilot').map((item) => item.id));
+  const officialReadingIds = new Set(getSkillSections(mock, 'reading')
+    .flatMap((section) => section.questions)
+    .filter((question) => (question.type === 'toefl-reading-single' || question.type === 'toefl-reading-multi')
+      && question.alignment === 'official-family-pilot')
+    .map((question) => question.id));
   const readingOfficialCorrect = readingScore?.outcomes.reduce(
     (sum, outcome) => sum + (officialReadingIds.has(outcome.itemId) ? outcome.rawPoints ?? 0 : 0), 0,
   ) ?? 0;
@@ -516,7 +518,7 @@ function Results({ mock, exam, ans, wordScores, readingScore, buildScore, speakB
     <>
       {readingScore && (
         <section className="t26-reading-report" aria-labelledby="t26-reading-report-title">
-          <h2 id="t26-reading-report-title">Detalle de Reading Set 1</h2>
+          <h2 id="t26-reading-report-title">Detalle de Reading · {mock.title}</h2>
           <p>Familias oficiales practicadas: <strong>{readingOfficialCorrect}/{readingOfficialTotal}</strong>.</p>
           {readingSupplementary && <p>Complementaria WeLearn: <strong>{readingSupplementary.rawPoints === 1 ? 'correcta' : 'incorrecta o incompleta'}</strong>.</p>}
           <p>Corrección local fija; no equivale a una puntuación oficial de ETS.</p>
@@ -767,9 +769,16 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
       const readingQuestions = getSkillSections(mock, 'reading')
         .flatMap((section) => section.questions)
         .filter((question): question is ToeflReadingSingleQuestion | ToeflReadingMultiQuestion =>
-          question.type === 'toefl-reading-single' || question.type === 'toefl-reading-multi');
+          (question.type === 'toefl-reading-single' || question.type === 'toefl-reading-multi')
+          && question.serverScoring === 'toefl-reading');
       let nextReadingScore = readingScore;
       if (readingQuestions.length > 0 && !nextReadingScore) {
+        const objectIds = new Set(readingQuestions.map((question) => question.objectId));
+        if (objectIds.size !== 1) {
+          setReadingScoringError(true);
+          throw new Error('reading_object_identity_mismatch');
+        }
+        const [readingObjectId] = objectIds;
         const responses = Object.fromEntries(readingQuestions.map((question) => [
           question.id,
           question.type === 'toefl-reading-single' ? ans.single[question.id] ?? null : ans.multi[question.id] ?? [],
@@ -778,9 +787,9 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
           method: 'POST',
           headers: { 'content-type': 'application/json' },
           body: JSON.stringify({
-            objectId: TOEFL_READING_SET1.objectId,
+            objectId: readingObjectId,
             attemptId: stableAttemptId,
-            closeId: `close:${stableAttemptId}:reading-set1`,
+            closeId: `close:${stableAttemptId}:${readingObjectId}`,
             responses,
             presentedItemIds: readingQuestions.map((question) => question.id),
           }),

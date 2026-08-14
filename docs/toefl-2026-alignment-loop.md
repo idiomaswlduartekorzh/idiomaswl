@@ -3078,3 +3078,39 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
   expandir Build a Sentence a diez intercambios con distractor y clave server-only.
   Sets 6–20 conservan pendiente CTW. Cero cambios, reproducción, transcripción,
   generación o consumo de audio/API.
+
+### Expansión no-audio — lote W3 Academic Passage Sets 2–5 — 2026-08-14
+
+- Alcance cerrado: los pasajes de Mirrors, Echolocation, Circadian Rhythm y Horse
+  Domestication pasan de 323/330/342/268 a 188/202/212/212 palabras. Cada texto conserva
+  evidencia explícita para sus cinco preguntas single-select.
+- Conteo honesto: sólo esas cinco preguntas llevan `official-family-pilot`. El antiguo
+  multiselect se conserva como una sexta práctica `welearn-supplementary`, con badge y
+  nota de sección que lo mantienen fuera del conteo oficial-family.
+- Scoring/seguridad: 24 ítems de los cuatro sets tienen IDs y opciones estables. Las
+  respuestas correctas están exclusivamente en `server-only`; el endpoint selecciona
+  una configuración por `objectId`, rechaza nombres desconocidos o heredados del
+  prototipo y mantiene exact-set sin crédito parcial para el suplemento.
+- Runner compartido: dejó de usar el objeto fijo del Reading Set 1. Exige que todas las
+  preguntas server-scored del simulacro pertenezcan a una sola identidad y envía esa
+  identidad al cierre. El informe deriva las cinco preguntas oficiales del mock activo,
+  no del banco Set 1.
+- Preservación: los cuatro pasajes largos y sus claves v1 continúan completos en el
+  registro server-only. La edición es reversible y no borra material reutilizable.
+- Auditoría factual: la afirmación heredada “domesticación en Asia Central hacia 3500
+  a. C.” se corrigió. El texto distingue husbandry local en Botai, el linaje asociado a
+  Przewalski y el origen/expansión posterior del linaje doméstico moderno, conforme a
+  Nature 2021/2024. El supuesto bit wear se presenta como interpretación discutida. La
+  precisión de murciélagos ahora usa el resultado experimental de alambres de 0,18 mm,
+  no la comparación imprecisa con un cabello. Evidencia completa en
+  `docs/toefl-2026-academic-reading-sets2-5-factual-audit-2026-08-14.md`.
+- Evidencia automática: `check:toefl-reading` PASS; unit Reading PASS 8/8, incluidos
+  6/6 por cada Set 2–5; TypeScript PASS. Chromium conjunto verificó CTW 10/10 y Academic
+  6/6 en Sets 2 y 5, además de las cinco historias del Set 1: PASS 7/7.
+- Ruido separado: la primera corrida conjunta tuvo un único fallo de overflow después
+  de cambiar dinámicamente zoom y viewport; el caso aislado pasó. Se reemplazó la lectura
+  instantánea por una espera de reflow y la suite conjunta completa pasó 7/7.
+- Estado: Academic queda cerrado para Sets 2–5 dentro del alcance automático. Sólo falta
+  Build a Sentence para terminar el paquete no-audio de esos cuatro sets. La dispensa
+  editorial/derechos del owner sigue vigente; no se afirma revisión independiente. Cero
+  cambios, reproducción, transcripción, generación o consumo de audio/API.

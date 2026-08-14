@@ -118,11 +118,11 @@ test('Reading permanece utilizable a 320 px, zoom 200 %, modo oscuro y movimient
   expect(styles.color).not.toBe(styles.background);
   expect(styles.outlineStyle).not.toBe('none');
   expect(styles.outlineWidth).not.toBe('0px');
-  let overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
-  expect(overflow).toBeLessThanOrEqual(1);
+  await expect.poll(() => page.evaluate(() =>
+    document.documentElement.scrollWidth - document.documentElement.clientWidth)).toBeLessThanOrEqual(1);
 
   await page.evaluate(() => { document.documentElement.style.zoom = '1'; });
   await page.setViewportSize({ width: 320, height: 900 });
-  overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
-  expect(overflow).toBeLessThanOrEqual(1);
+  await expect.poll(() => page.evaluate(() =>
+    document.documentElement.scrollWidth - document.documentElement.clientWidth)).toBeLessThanOrEqual(1);
 });

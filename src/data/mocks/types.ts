@@ -122,8 +122,9 @@ export interface ToeflReadingSingleQuestion {
   type: 'toefl-reading-single';
   id: string;
   sourceItemId: string;
+  objectId: string;
   contentVersion: string;
-  serverScoring: 'toefl-reading-set1';
+  serverScoring: 'toefl-reading';
   alignment: 'official-family-pilot';
   part: number;
   text: string;
@@ -134,8 +135,9 @@ export interface ToeflReadingMultiQuestion {
   type: 'toefl-reading-multi';
   id: string;
   sourceItemId: string;
+  objectId: string;
   contentVersion: string;
-  serverScoring: 'toefl-reading-set1';
+  serverScoring: 'toefl-reading';
   alignment: 'welearn-supplementary';
   part: number;
   text: string;

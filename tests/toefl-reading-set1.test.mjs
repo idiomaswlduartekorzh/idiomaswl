@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import { scoreToeflReadingAttempt } from '../src/lib/toefl/reading-contract.ts';
+import { TOEFL_READING_SETS_2_TO_5 } from '../src/data/toefl/reading-sets-2-5.ts';
 
 const single = (number, correct = 'a') => ({
   itemId: `item:single-${number}`,
@@ -103,4 +104,40 @@ test('closing the same attempt twice is deterministic', () => {
   const first = scoreToeflReadingAttempt(config, request(allCorrect()));
   const second = scoreToeflReadingAttempt(config, request(allCorrect()));
   assert.deepEqual(second, first);
+});
+
+const expansionKeys = [
+  [['b'], ['c'], ['d'], ['a'], ['b'], ['a', 'c']],
+  [['d'], ['a'], ['b'], ['c'], ['d'], ['a', 'c']],
+  [['c'], ['d'], ['a'], ['b'], ['c'], ['a', 'c']],
+  [['b'], ['c'], ['d'], ['a'], ['b'], ['b', 'c']],
+];
+
+test('Academic Sets 2–5 each reconcile five official items plus one supplement at 6/6', () => {
+  for (const [setIndex, object] of TOEFL_READING_SETS_2_TO_5.entries()) {
+    const scoringItems = object.academic.items.map((item, itemIndex) => ({
+      itemId: item.id,
+      responseKind: item.type === 'single-select' ? 'selected_option_id' : 'selected_option_ids',
+      optionIds: item.options.map((option) => option.id),
+      correctOptionIds: expansionKeys[setIndex][itemIndex].map((label) => `${item.id}:option-${label}`),
+      selectCount: item.type === 'single-select' ? 1 : item.selectCount,
+      maxRawPoints: 1,
+    }));
+    const responses = Object.fromEntries(scoringItems.map((item) => [
+      item.itemId,
+      item.responseKind === 'selected_option_id' ? item.correctOptionIds[0] : item.correctOptionIds,
+    ]));
+    const input = {
+      attemptId: `attempt:set-${setIndex + 2}`,
+      closeId: `close:set-${setIndex + 2}`,
+      responses,
+      presentedItemIds: scoringItems.map((item) => item.itemId),
+    };
+    const config = { scoringVersion: object.scoringVersion, disclosure: object.disclosure, items: scoringItems };
+    const first = scoreToeflReadingAttempt(config, input);
+    const second = scoreToeflReadingAttempt(config, input);
+    assert.equal(first.correct, 6);
+    assert.equal(first.denominator, 6);
+    assert.deepEqual(second, first);
+  }
 });

@@ -1,5 +1,7 @@
 import type { MockExam } from './types';
 import { TOEFL_CTW_SET3_V2 } from '@/data/toefl/complete-the-words-sets-2-5';
+import { TOEFL_READING_SET3_V2 } from '@/data/toefl/reading-sets-2-5';
+import { toToeflReadingQuestion } from './toefl-reading-adapter';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md. Escala 1–6.
@@ -52,22 +54,12 @@ const mock: MockExam = {
     },
     {
       part: 4, skill: 'reading', title: 'Reading — Read an Academic Passage',
-      instructions: 'Read the passage and answer questions.',
-      passage: `Among the many remarkable abilities of the animal kingdom, few are as striking as echolocation—the use of sound to "see" the world. Animals that echolocate, most famously bats and dolphins, emit sounds and then listen to the echoes that bounce back from objects around them. From these echoes, they construct a detailed picture of their surroundings, allowing them to navigate and hunt even in complete darkness or murky water.\n\nThe basic principle is elegant. An echolocating animal produces a sound—often a high-pitched click or call—that travels outward until it strikes an object and reflects back. By measuring the time it takes for the echo to return, the animal can judge how far away the object is: a quick echo means a nearby object, a delayed echo a distant one. The direction of the returning sound reveals the object's location, and subtle features of the echo can reveal an object's size, shape, and even texture.\n\nWhat is astonishing is the precision this system can achieve. Bats hunting insects can detect a target as fine as a human hair in total darkness, adjusting their flight in a fraction of a second. Dolphins can use echolocation to distinguish between objects of slightly different materials, and even to detect fish hidden beneath the sand of the seafloor. To process this flood of acoustic information, these animals have highly specialized brains, and much of their neural machinery is devoted to interpreting sound.\n\nEcholocation is a beautiful example of "convergent evolution"—the process by which unrelated species independently evolve similar solutions to similar problems. Bats and dolphins are not closely related; one is a flying mammal and the other lives in the sea. Yet both faced the challenge of sensing their environment where vision fails, and both arrived at strikingly similar solutions. Studying these systems has also inspired human technology: sonar, used by ships and submarines, and even navigation aids for people who are blind, draw on the same fundamental principle that evolution discovered long before us.`,
-      passageTitle: 'Echolocation',
-      questions: [
-        { type: 'mcq', id: 't3-r-ap1', part: 4, text: 'What is echolocation?', options: ['A way of smelling prey', 'A method of flying', 'The use of light to see', 'The use of sound and its echoes to perceive surroundings'], answer: 3 },
-        { type: 'mcq', id: 't3-r-ap2', part: 4, text: 'How does an echolocating animal judge how far away an object is?', options: ['By measuring the time it takes for the echo to return', 'By its smell', 'By touching it', 'By its color'], answer: 0 },
-        { type: 'mcq', id: 't3-r-ap3', part: 4, text: 'What example shows the precision of bat echolocation?', options: ['Bats can fly during the day.', 'Bats can detect a target as fine as a human hair in total darkness.', 'Bats can sing loudly.', 'Bats never miss their prey.'], answer: 1 },
-        { type: 'mcq', id: 't3-r-ap4', part: 4, text: 'What is "convergent evolution," as illustrated by bats and dolphins?', options: ['Species that always live together', 'Two species becoming one', 'Unrelated species independently evolving similar solutions to similar problems', 'Animals losing an ability'], answer: 2 },
-        { type: 'mcq', id: 't3-r-ap5', part: 4, text: 'How has echolocation inspired human technology?', options: ['It led to the invention of light bulbs.', 'It made radios possible.', 'It has not.', 'It inspired sonar and navigation aids for blind people, based on the same principle.'], answer: 3 },
-        { type: 'multiselect', id: 't3-r-ap6', part: 4, qRange: [6, 6], text: 'Select the TWO statements supported by the passage.', options: [
-          { letter: 'A', text: 'Bats and dolphins both use echolocation despite not being closely related.' },
-          { letter: 'B', text: 'Echolocation relies on light rather than sound.' },
-          { letter: 'C', text: 'The time an echo takes to return helps an animal judge distance.' },
-          { letter: 'D', text: 'Echolocating animals have simple brains with little sound processing.' },
-        ], selectCount: 2, answers: ['A', 'C'] },
-      ],
+      instructions: TOEFL_READING_SET3_V2.academic.instructions,
+      sectionNote: 'Las preguntas 1–5 forman Academic Passage. La selección múltiple final es práctica complementaria WeLearn.',
+      passage: TOEFL_READING_SET3_V2.academic.text,
+      passageTitle: TOEFL_READING_SET3_V2.academic.title,
+      questions: TOEFL_READING_SET3_V2.academic.items.map((item) =>
+        toToeflReadingQuestion(TOEFL_READING_SET3_V2.objectId, item, 4)),
     },
     {
       part: 5, skill: 'listening', title: 'Listening — Listen and Choose a Response',

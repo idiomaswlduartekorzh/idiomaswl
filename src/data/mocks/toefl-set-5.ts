@@ -1,5 +1,7 @@
 import type { MockExam } from './types';
 import { TOEFL_CTW_SET5_V2 } from '@/data/toefl/complete-the-words-sets-2-5';
+import { TOEFL_READING_SET5_V2 } from '@/data/toefl/reading-sets-2-5';
+import { toToeflReadingQuestion } from './toefl-reading-adapter';
 
 // TOEFL iBT — formato oficial vigente (actualización 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md (verificado contra ETS 2026).
@@ -98,64 +100,12 @@ const mock: MockExam = {
       part: 4,
       skill: 'reading',
       title: 'Reading — Read an Academic Passage',
-      instructions: 'Read the passage and answer questions.',
-      passage: `The domestication of the horse transformed human societies more profoundly than almost any other animal. While dogs were domesticated far earlier, horses offered something different: a dramatic extension of human mobility and physical power. Archaeological evidence suggests that horses were first domesticated on the grasslands of Central Asia around 3500 BCE, initially raised for their meat and milk before their potential for transport was recognized.\n\nThe key evidence for early domestication comes from several sources. Changes in horse tooth wear indicate the use of bits, the metal or bone mouthpieces used to control a ridden animal. Settlement sites show a sudden increase in horse bones relative to other animals, suggesting managed herds rather than occasional hunting. Perhaps most tellingly, the geographic spread of certain horse-related vocabulary across ancient languages tracks closely with the movement of peoples who are thought to have relied on horses.\n\nOnce horses could be ridden and, later, harnessed to wheeled vehicles, the consequences rippled across every domain of life. Herders could manage far larger territories. Trade goods moved faster and over greater distances. Most dramatically, mounted warriors gained a decisive military advantage over foot soldiers, reshaping the balance of power between societies. Some historians argue that the spread of entire language families across Eurasia was accelerated by populations whose mobility depended on the horse.\n\nYet the relationship was not simply one of human mastery. Horses required pasture, water, and care, tying their owners to particular patterns of movement and settlement. In this sense, domestication was a mutual adaptation: humans shaped horses through selective breeding, and horses, in turn, shaped the rhythms of human life.`,
-      passageTitle: 'The Domestication of the Horse',
-      questions: [
-        {
-          type: 'mcq', id: 't5-r-ap1', part: 4,
-          text: 'According to the passage, how were horses first used after domestication?',
-          options: [
-            'As riding animals for warfare',
-            'For their meat and milk',
-            'To pull wheeled vehicles',
-            'As status symbols for rulers',
-          ],
-          answer: 1,
-        },
-        {
-          type: 'mcq', id: 't5-r-ap2', part: 4,
-          text: 'The word "bits" in paragraph 2 refers to',
-          options: ['units used to measure distance', 'small pieces of food given to horses', 'mouthpieces used to control a ridden horse', 'fragments of ancient pottery'],
-          answer: 2,
-        },
-        {
-          type: 'mcq', id: 't5-r-ap3', part: 4,
-          text: 'Which of the following is mentioned as evidence of early domestication?',
-          options: ['Written records kept by herders', 'The discovery of ancient saddles', 'Cave paintings depicting mounted riders', 'A sudden increase in horse bones at settlement sites'],
-          answer: 3,
-        },
-        {
-          type: 'mcq', id: 't5-r-ap4', part: 4,
-          text: 'According to paragraph 3, what was the most dramatic consequence of riding horses?',
-          options: ['A military advantage for mounted warriors over foot soldiers', 'The invention of the wheel', 'A decline in trade between distant regions', 'Faster communication by written letter'],
-          answer: 0,
-        },
-        {
-          type: 'mcq', id: 't5-r-ap5', part: 4,
-          text: 'What does the author mean by describing domestication as a "mutual adaptation" in the final paragraph?',
-          options: [
-            'Humans and horses evolved into a single species',
-            'Both humans and horses changed each other: humans bred horses, and horses shaped human patterns of life',
-            'Horses eventually learned to live without human care',
-            'The process happened at the same time in many regions',
-          ],
-          answer: 1,
-        },
-        {
-          type: 'multiselect', id: 't5-r-ap6', part: 4,
-          qRange: [6, 6],
-          text: 'Select the TWO statements that are supported by the passage.',
-          options: [
-            { letter: 'A', text: 'Horses were domesticated before dogs.' },
-            { letter: 'B', text: 'Horse domestication likely began on the grasslands of Central Asia around 3500 BCE.' },
-            { letter: 'C', text: 'The spread of horse-related vocabulary tracks the movement of certain peoples.' },
-            { letter: 'D', text: 'Horses were never used for transport in the ancient world.' },
-          ],
-          selectCount: 2,
-          answers: ['B', 'C'],
-        },
-      ],
+      instructions: TOEFL_READING_SET5_V2.academic.instructions,
+      sectionNote: 'Las preguntas 1–5 forman Academic Passage. La selección múltiple final es práctica complementaria WeLearn.',
+      passage: TOEFL_READING_SET5_V2.academic.text,
+      passageTitle: TOEFL_READING_SET5_V2.academic.title,
+      questions: TOEFL_READING_SET5_V2.academic.items.map((item) =>
+        toToeflReadingQuestion(TOEFL_READING_SET5_V2.objectId, item, 4)),
     },
 
     // ═══════════════════════ LISTENING (≈18 min) ════════════════════════════════

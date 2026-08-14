@@ -1,5 +1,7 @@
 import type { MockExam } from './types';
 import { TOEFL_CTW_SET2_V2 } from '@/data/toefl/complete-the-words-sets-2-5';
+import { TOEFL_READING_SET2_V2 } from '@/data/toefl/reading-sets-2-5';
+import { toToeflReadingQuestion } from './toefl-reading-adapter';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md. Escala 1–6.
@@ -52,22 +54,12 @@ const mock: MockExam = {
     },
     {
       part: 4, skill: 'reading', title: 'Reading — Read an Academic Passage',
-      instructions: 'Read the passage and answer questions.',
-      passage: `Few objects in daily life seem as simple as a mirror, yet the story of how humans learned to make good mirrors is a surprisingly long and revealing one. For most of history, seeing a clear reflection of oneself was a rare experience. Early humans could glimpse themselves only in still water or in polished stones, and these reflections were dim and distorted.\n\nThe first manufactured mirrors, made thousands of years ago, were sheets of polished metal such as bronze, copper, or silver. These could produce a recognizable reflection, but they had serious drawbacks: the images were dark, the metal tarnished and needed constant polishing, and large mirrors were extremely expensive. For much of human history, therefore, a good mirror was a luxury owned only by the wealthy.\n\nThe breakthrough came with glass. Glassmakers discovered that a thin layer of reflective metal applied to the back of a sheet of glass produced a far brighter and clearer image than polished metal alone, while the glass protected the metal from tarnishing. In the sixteenth century, Venetian craftsmen perfected a method using a coating of tin and mercury, and Venice became famous—and rich—for its mirrors. These were still costly, and the process was dangerous, since mercury is highly toxic. But the quality was unprecedented.\n\nThe true democratization of the mirror came in the nineteenth century, when a German chemist developed a process for coating glass with a thin layer of silver using relatively safe chemicals. This method was cheaper, safer, and produced excellent mirrors that could be manufactured on a large scale. For the first time, ordinary people could own a clear mirror. Historians have noted that the spread of affordable mirrors may have subtly changed human self-perception: when people could easily and regularly see themselves as others see them, it likely affected everything from fashion to the very sense of individual identity. A humble object, it turns out, quietly reshaped how humans understand themselves.`,
-      passageTitle: 'A Short History of the Mirror',
-      questions: [
-        { type: 'mcq', id: 't2-r-ap1', part: 4, text: 'How did early humans see their reflections?', options: ['In manufactured glass mirrors', 'Only in still water or polished stones, dimly and with distortion', 'In photographs', 'They could not see reflections at all.'], answer: 1 },
-        { type: 'mcq', id: 't2-r-ap2', part: 4, text: 'What were the drawbacks of early metal mirrors?', options: ['They were too cheap to be valued.', 'They were too light.', 'The images were dark, the metal tarnished, and large ones were very expensive.', 'They broke too easily.'], answer: 2 },
-        { type: 'mcq', id: 't2-r-ap3', part: 4, text: 'Why did glass produce a better mirror than polished metal alone?', options: ['Glass never breaks.', 'Glass is a metal.', 'Glass is heavier.', 'A thin layer of reflective metal behind glass gave a brighter, clearer image, and the glass protected the metal from tarnishing.'], answer: 3 },
-        { type: 'mcq', id: 't2-r-ap4', part: 4, text: 'What made mirrors affordable to ordinary people in the nineteenth century?', options: ['A German chemist\'s process for coating glass with silver using relatively safe chemicals', 'Polished bronze', 'Cheaper water', 'Venetian tin-and-mercury coating'], answer: 0 },
-        { type: 'mcq', id: 't2-r-ap5', part: 4, text: 'What broader effect did affordable mirrors have, according to the passage?', options: ['They had no effect on people.', 'They may have changed human self-perception, affecting fashion and the sense of individual identity.', 'They made people dislike their appearance.', 'They ended the use of glass.'], answer: 1 },
-        { type: 'multiselect', id: 't2-r-ap6', part: 4, qRange: [6, 6], text: 'Select the TWO statements supported by the passage.', options: [
-          { letter: 'A', text: 'Early manufactured mirrors were made of polished metal such as bronze or silver.' },
-          { letter: 'B', text: 'Good mirrors were cheap and common throughout history.' },
-          { letter: 'C', text: 'A nineteenth-century silvering process made clear mirrors affordable for ordinary people.' },
-          { letter: 'D', text: 'Glass mirrors were invented before metal mirrors.' },
-        ], selectCount: 2, answers: ['A', 'C'] },
-      ],
+      instructions: TOEFL_READING_SET2_V2.academic.instructions,
+      sectionNote: 'Las preguntas 1–5 forman Academic Passage. La selección múltiple final es práctica complementaria WeLearn.',
+      passage: TOEFL_READING_SET2_V2.academic.text,
+      passageTitle: TOEFL_READING_SET2_V2.academic.title,
+      questions: TOEFL_READING_SET2_V2.academic.items.map((item) =>
+        toToeflReadingQuestion(TOEFL_READING_SET2_V2.objectId, item, 4)),
     },
     {
       part: 5, skill: 'listening', title: 'Listening — Listen and Choose a Response',
