@@ -3,12 +3,14 @@ import test from 'node:test';
 import { TOEFL_FIXED_LISTENING_SETS_1_TO_5 } from '../src/data/toefl/listening-fixed-sets-1-5.ts';
 import { TOEFL_FIXED_LISTENING_SETS_6_TO_10 } from '../src/data/toefl/listening-fixed-sets-6-10.ts';
 import { TOEFL_FIXED_LISTENING_SETS_11_TO_15 } from '../src/data/toefl/listening-fixed-sets-11-15.ts';
+import { TOEFL_FIXED_LISTENING_SETS_16_TO_20 } from '../src/data/toefl/listening-fixed-sets-16-20.ts';
 import { scoreToeflListeningAttempt } from '../src/lib/toefl/listening-contract.ts';
 
 const fixedListeningSets = [
   ...TOEFL_FIXED_LISTENING_SETS_1_TO_5,
   ...TOEFL_FIXED_LISTENING_SETS_6_TO_10,
   ...TOEFL_FIXED_LISTENING_SETS_11_TO_15,
+  ...TOEFL_FIXED_LISTENING_SETS_16_TO_20,
 ];
 const labels = [
   ['c', 'b', 'a', 'd', 'b', 'c', 'a', 'd', 'b', 'a', 'c', 'b', 'd', 'a', 'c', 'b', 'c', 'a', 'd'],
@@ -26,6 +28,11 @@ const labels = [
   ['d', 'b', 'a', 'c', 'a', 'd', 'b', 'c', 'a', 'd', 'b', 'a', 'c', 'd', 'b', 'a', 'c', 'b', 'd'],
   ['b', 'd', 'c', 'a', 'c', 'b', 'd', 'a', 'b', 'c', 'd', 'd', 'b', 'a', 'c', 'b', 'd', 'a', 'c'],
   ['a', 'b', 'd', 'c', 'd', 'a', 'b', 'c', 'd', 'b', 'a', 'a', 'c', 'b', 'd', 'd', 'a', 'c', 'b'],
+  ['c', 'd', 'a', 'b', 'a', 'c', 'd', 'b', 'd', 'a', 'c', 'b', 'c', 'a', 'd', 'c', 'b', 'd', 'a'],
+  ['b', 'a', 'd', 'c', 'd', 'b', 'a', 'c', 'a', 'd', 'b', 'd', 'a', 'c', 'b', 'a', 'd', 'b', 'c'],
+  ['d', 'c', 'b', 'a', 'b', 'd', 'c', 'a', 'c', 'b', 'd', 'a', 'b', 'd', 'c', 'b', 'a', 'c', 'd'],
+  ['a', 'd', 'c', 'b', 'c', 'a', 'd', 'b', 'a', 'd', 'c', 'c', 'd', 'a', 'b', 'd', 'c', 'a', 'b'],
+  ['c', 'b', 'a', 'd', 'a', 'c', 'b', 'c', 'd', 'a', 'b', 'b', 'd', 'a', 'c', 'b', 'd', 'a', 'c'],
 ];
 
 function publicItems(set) {
@@ -47,7 +54,7 @@ function scoringFor(set, setIndex) {
   }));
 }
 
-test('Sets 1–15 new fixed Listening items close deterministically at 19/19', () => {
+test('Sets 1–20 new fixed Listening items close deterministically at 19/19', () => {
   fixedListeningSets.forEach((set, setIndex) => {
     const scoring = scoringFor(set, setIndex);
     const input = {

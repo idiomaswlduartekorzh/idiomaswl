@@ -3391,3 +3391,22 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
   completo por tener guiones sin medios.
 - Siguiente lote: Sets 16–20. Cero audio abierto, reproducido, transcrito, generado,
   normalizado o modificado.
+
+### Expansión Listening escrita — guiones Sets 16–20 y cierre escrito — 2026-08-14
+
+- Los últimos cinco sets reciben la misma composición 3 Choose M1 + M2 de 8/2/2/4.
+  El inventario escrito total queda en 380 interacciones nuevas y 280 medios planeados
+  con `script-ready-audio-blocked` para los 20 sets.
+- Las claves permanecen en cuatro módulos `server-only`; la prueba cierra 19/19 en cada
+  set, invalida opciones desconocidas sin inflar denominador y conserva no respondidas.
+- Editorial del lote: Choose 6–13 palabras, Conversations 84–92, Announcements 63–71
+  y Academic Talks 190–204. Los 280 guiones acumulados son únicos y sin la pista grande
+  de longitud que controla el guardián.
+- Balance glaciar, ecolocación, fijación de nitrógeno, anillos climáticos y auroras se
+  contrastaron con NASA, NPS, USDA y NOAA. Auditoría factual y de posibles cortes en
+  `docs/toefl-2026-listening-scripts-sets16-20-audit-2026-08-14.md`.
+- Evidencia: checker Listening fijo PASS Sets 1–20, unit 3/3 y TypeScript PASS. Se cierra
+  el trabajo editorial de la brecha, no el producto: aún hay que componer payload/API,
+  preview, voces/costo, medios aprobados y runtime forward-only.
+- Estado visible sigue 17/34 y cero audio fue abierto, reproducido, transcrito,
+  generado, normalizado o modificado.
