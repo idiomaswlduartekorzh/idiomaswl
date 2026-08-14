@@ -3257,3 +3257,23 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
 - Evidencia: docs/toefl-2026-full-composition-audit-2026-08-14.md y TSV asociado.
   Cero audio tocado; primero se preparan guiones/manifiesto y el owner aprueba voces,
   muestras y costo antes de generar.
+
+### Expansión forma fija — Reading Módulo 2 Sets 1–5 — 2026-08-14
+
+- Arquitectura: se añadió una capa central reversible que conserva cada mock base,
+  marca Reading Módulo 1, retira sólo de la sesión fija los suplementos y agrega
+  Reading Módulo 2. Los IDs y fuentes anteriores no se borran.
+- Composición: cada Set 1–5 queda en 40 Reading: M1 10 CTW + 5 Daily + 5 Academic;
+  M2 repite 10 + 5 + 5. El Set 1 ya no mezcla su CTW personal heredado en el conteo.
+- Seguridad: los diez huecos y diez preguntas nuevos por set usan claves privadas.
+  El mismo objeto Reading reconcilia ambos módulos; CTW conserva un objeto por pasaje.
+- Editorial: CTW tiene 70–100 palabras, primera oración intacta y diez mitades
+  alternas; Daily usa 2 + 3; Academic tiene 180–220 palabras y cinco preguntas.
+  Auditoría factual completa en
+  `docs/toefl-2026-reading-module2-sets1-5-factual-audit-2026-08-14.md`.
+- Evidencia: checker fijo PASS; unit fijo 3/3; regresiones CTW 8/8 y Reading 8/8;
+  TypeScript y ESLint dirigido PASS; build completo PASS con guardianes y
+  1.364/1.364 rutas. Chromium: Módulo 2 2/2, Reading Set 1 5/5 y mocks
+  representativos 8/8. Cero audio abierto, reproducido, generado o modificado.
+- Estado: Reading Sets 1–5 40/40. Todavía no son producto terminado: faltan Reading
+  Sets 6–20, Listening, Repeat, clocks/navegación y gates finales.

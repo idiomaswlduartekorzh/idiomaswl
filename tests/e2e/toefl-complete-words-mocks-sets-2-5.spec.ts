@@ -6,12 +6,14 @@ const cases = [
     set: 2, objectId: 'object:t2-r-ctw-v2', itemPrefix: 'item:t2-r-ctw-v2:',
     answers: ['ngs', 'ome', 'at', 'em', 'ckly', 'he', 'n', 'f', 'st', 've'],
     readingObjectId: 'object:toefl-reading-set2-v2', readingLabels: [['b'], ['c'], ['d'], ['a'], ['b'], ['a', 'c']],
+    module2ReadingLabels: ['c', 'b', 'b', 'a', 'c', 'c', 'a', 'd', 'b', 'c'],
     buildObjectId: 'object:toefl-build-sentence-set2-v2',
   },
   {
     set: 5, objectId: 'object:t5-r-ctw-v2', itemPrefix: 'item:t5-r-ctw-v2:',
     answers: ['eep', 'ain', 'ot', 'ut', 't', 'ive', 'ries', 'her', 'esses', 'arch'],
     readingObjectId: 'object:toefl-reading-set5-v2', readingLabels: [['b'], ['c'], ['d'], ['a'], ['b'], ['b', 'c']],
+    module2ReadingLabels: ['c', 'a', 'd', 'a', 'c', 'b', 'd', 'a', 'c', 'b'],
     buildObjectId: 'object:toefl-build-sentence-set5-v2',
   },
   {
@@ -81,13 +83,25 @@ for (const candidate of cases) {
       await expect(inputs.nth(index)).toHaveAccessibleName(new RegExp(`blank ${index + 1} of 10`));
       await inputs.nth(index).fill(candidate.answers[index]);
     }
-    for (let index = 0; index < candidate.readingLabels.length; index += 1) {
+    const module1ReadingLabels = 'module2ReadingLabels' in candidate
+      ? candidate.readingLabels.slice(0, 5)
+      : candidate.readingLabels;
+    for (let index = 0; index < module1ReadingLabels.length; index += 1) {
       const suffix = index === 5 ? 'supplementary' : 'v2';
-      for (const label of candidate.readingLabels[index]) {
+      for (const label of module1ReadingLabels[index]) {
         await page.locator(`input[value="item:t${candidate.set}-r-ap${index + 1}-${suffix}:option-${label}"]`).check();
       }
     }
-    await expect(page.getByText('Práctica complementaria WeLearn · fuera de las 5 preguntas del piloto oficial')).toBeVisible();
+    if ('module2ReadingLabels' in candidate) {
+      for (let index = 0; index < candidate.module2ReadingLabels.length; index += 1) {
+        const code = index < 5 ? `dl${index + 1}` : `ap${index - 4}`;
+        const label = candidate.module2ReadingLabels[index];
+        await page.locator(`input[value="item:t${candidate.set}-r-m2-${code}-v1:option-${label}"]`).check();
+      }
+      await expect(page.getByText(/práctica complementaria WeLearn · fuera/)).toHaveCount(0);
+    } else {
+      await expect(page.getByText('Práctica complementaria WeLearn · fuera de las 5 preguntas del piloto oficial')).toBeVisible();
+    }
 
     await page.getByRole('button', { name: /Writing/ }).click();
     await expect(page.locator('fieldset').filter({ hasText: /Item \d+ of 10/ })).toHaveCount(10);
@@ -125,9 +139,10 @@ for (const candidate of cases) {
     expect(result).toMatchObject({ objectId: candidate.objectId, correct: 10, denominator: 10 });
     const readingPayload = (await readingRequest).postDataJSON() as { objectId: string; presentedItemIds: string[] };
     expect(readingPayload.objectId).toBe(candidate.readingObjectId);
-    expect(readingPayload.presentedItemIds).toHaveLength(6);
+    const expectedReadingItems = 'module2ReadingLabels' in candidate ? 15 : 6;
+    expect(readingPayload.presentedItemIds).toHaveLength(expectedReadingItems);
     const readingResult = await (await readingResponse).json() as { correct: number; denominator: number };
-    expect(readingResult).toMatchObject({ correct: 6, denominator: 6 });
+    expect(readingResult).toMatchObject({ correct: expectedReadingItems, denominator: expectedReadingItems });
     const buildPayload = (await buildRequest).postDataJSON() as { objectId: string; presentedItemIds: string[] };
     expect(buildPayload.objectId).toBe(candidate.buildObjectId);
     expect(buildPayload.presentedItemIds).toHaveLength(10);

@@ -33,6 +33,8 @@
     "test:toefl-ctw": "node --experimental-strip-types --no-warnings --test tests/toefl-complete-words.test.mjs",
     "check:toefl-reading": "node --experimental-strip-types --no-warnings scripts/check-toefl-reading-set1.mjs",
     "test:toefl-reading": "node --experimental-strip-types --no-warnings --test tests/toefl-reading-set1.test.mjs",
+    "check:toefl-fixed-reading": "node --experimental-strip-types --no-warnings scripts/check-toefl-fixed-reading.mjs",
+    "test:toefl-fixed-reading": "node --experimental-strip-types --no-warnings --test tests/toefl-fixed-reading.test.mjs",
     "check:toefl-build-sentence": "node --experimental-strip-types --no-warnings scripts/check-toefl-build-sentence.mjs",
     "test:toefl-build-sentence": "node --experimental-strip-types --no-warnings --test tests/toefl-build-sentence.test.mjs",
     "check:toefl-writing": "node --experimental-strip-types --no-warnings scripts/check-toefl-writing-constructed.mjs",

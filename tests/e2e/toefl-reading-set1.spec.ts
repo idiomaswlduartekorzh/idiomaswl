@@ -82,12 +82,13 @@ test('un fallo técnico conserva la selección y no la convierte en error acadé
   await expect(set.getByText('Resultado de práctica')).toHaveCount(0);
 });
 
-test('el Set 1 renderiza y restaura singles y multiselect sin omitir la nota editorial', async ({ page }) => {
+test('el Set 1 renderiza los dos módulos fijos y conserva fuera el suplemento', async ({ page }) => {
   await page.goto(MOCK_ROUTE);
   await page.getByRole('button', { name: 'Empezar examen' }).click();
-  await expect(page.getByText(/Las preguntas 1–5 forman el piloto/)).toBeVisible();
-  await expect(page.getByRole('radio')).toHaveCount(40);
-  await expect(page.getByRole('checkbox')).toHaveCount(4);
+  await expect(page.getByText(/Cinco preguntas de selección única de la familia oficial/)).toBeVisible();
+  await expect(page.getByRole('radio')).toHaveCount(80);
+  await expect(page.getByRole('checkbox')).toHaveCount(0);
+  await expect(page.getByText(/Módulo 2/)).toHaveCount(4);
 
   const firstRadio = page.getByRole('radio').first();
   await firstRadio.check();

@@ -10,6 +10,7 @@ import { TOEFL_READING_SETS_6_TO_10 } from '@/data/toefl/reading-sets-6-10';
 import { TOEFL_READING_SETS_11_TO_15 } from '@/data/toefl/reading-sets-11-15';
 import { TOEFL_READING_SETS_16_TO_20 } from '@/data/toefl/reading-sets-16-20';
 import type { ToeflReadingScoringItem } from '@/lib/toefl/reading-contract';
+import { TOEFL_READING_MODULE2_SCORING_BY_OBJECT_ID } from '@/server/toefl/reading-module2-sets-1-5';
 
 const ANSWER_KEY: Readonly<Record<string, readonly string[]>> = {
   'item:t2-r-ap1-v2': ['item:t2-r-ap1-v2:option-b'],
@@ -143,13 +144,30 @@ function scoringFor(object: ToeflReadingExpansionObject) {
   };
 }
 
-export const TOEFL_READING_SCORING_BY_OBJECT_ID = Object.fromEntries([
+const TOEFL_READING_MODULE1_SCORING_BY_OBJECT_ID = Object.fromEntries([
   [TOEFL_READING_SET1.objectId, TOEFL_READING_SET1_SCORING],
   ...TOEFL_READING_SETS_2_TO_5.map((object) => [object.objectId, scoringFor(object)]),
   ...TOEFL_READING_SETS_6_TO_10.map((object) => [object.objectId, scoringFor(object)]),
   ...TOEFL_READING_SETS_11_TO_15.map((object) => [object.objectId, scoringFor(object)]),
   ...TOEFL_READING_SETS_16_TO_20.map((object) => [object.objectId, scoringFor(object)]),
 ]) as Readonly<Record<string, {
+  scoringVersion: string;
+  disclosure: string;
+  items: ToeflReadingScoringItem[];
+}>>;
+
+export const TOEFL_READING_SCORING_BY_OBJECT_ID = Object.fromEntries(
+  Object.entries(TOEFL_READING_MODULE1_SCORING_BY_OBJECT_ID).map(([objectId, module1]) => {
+    const module2 = TOEFL_READING_MODULE2_SCORING_BY_OBJECT_ID[objectId];
+    return [objectId, module2
+      ? {
+        scoringVersion: `${module1.scoringVersion}+${module2.scoringVersion}`,
+        disclosure: module2.disclosure,
+        items: [...module1.items, ...module2.items],
+      }
+      : module1];
+  }),
+) as Readonly<Record<string, {
   scoringVersion: string;
   disclosure: string;
   items: ToeflReadingScoringItem[];

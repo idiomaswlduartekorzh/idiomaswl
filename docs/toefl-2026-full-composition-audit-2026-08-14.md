@@ -89,3 +89,13 @@ docs/toefl-2026-full-composition-audit-2026-08-14.tsv.
 **No apto aún para preview de aprobación final.** Primero deben cerrarse el segundo
 módulo, los guiones de medios, la navegación/reloj, el scoring honesto y las pruebas.
 VoiceOver T16/T17 sigue pendiente como gate humano separado.
+
+## Avance posterior — Reading Módulo 2 Sets 1–5
+
+Los Sets 1–5 ya cierran la brecha de Reading: 40/40 interacciones cada uno. La capa
+de forma fija retira de la sesión el CTW heredado del Set 1 y los Academic
+suplementarios, pero conserva sus fuentes. Los cinco sets quedan en 78/97 porque aún
+faltan 17 Listening y 2 Repeat por set. El TSV asociado refleja este avance.
+
+Evidencia editorial y fuentes:
+`docs/toefl-2026-reading-module2-sets1-5-factual-audit-2026-08-14.md`.

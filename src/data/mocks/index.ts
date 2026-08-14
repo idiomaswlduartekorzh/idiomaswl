@@ -1,5 +1,6 @@
 import type { MockExam } from './types';
 import { normalizeIcfesMock } from './normalize-icfes-mock';
+import { withToefl2026ReadingModule2 } from './toefl-fixed-form';
 import icfesMock01 from './icfes-mock-01';
 import icfesMock02 from './icfes-mock-02';
 import icfesMock03 from './icfes-mock-03';
@@ -219,11 +220,11 @@ const MOCK_REGISTRY: Record<string, MockExam> = {
   'ielts:set-19': ieltsSet19,
   'ielts:set-20': ieltsSet20,
   // ── Other exams ───────────────────────────────────────────────────────────
-  'toefl:set-1': toeflSet1,
-  'toefl:set-2': toeflSet2,
-  'toefl:set-3': toeflSet3,
-  'toefl:set-4': toeflSet4,
-  'toefl:set-5': toeflSet5,
+  'toefl:set-1': withToefl2026ReadingModule2(toeflSet1),
+  'toefl:set-2': withToefl2026ReadingModule2(toeflSet2),
+  'toefl:set-3': withToefl2026ReadingModule2(toeflSet3),
+  'toefl:set-4': withToefl2026ReadingModule2(toeflSet4),
+  'toefl:set-5': withToefl2026ReadingModule2(toeflSet5),
   'toefl:set-6': toeflSet6,
   'toefl:set-7': toeflSet7,
   'toefl:set-8': toeflSet8,

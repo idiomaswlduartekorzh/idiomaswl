@@ -258,6 +258,9 @@ export interface MockSection {
   audioUrl?: string;       // URL to audio file (if available)
   comingSoon?: boolean;    // disables the tab, shows "En Construcción" badge
   questions: Question[];
+  // TOEFL 2026 fixed-route practice metadata. The official test is adaptive;
+  // WeLearn intentionally models the published two-module practice-test shape.
+  moduleId?: 'reading-1' | 'reading-2' | 'listening-1' | 'listening-2' | 'writing' | 'speaking';
   // ── Section layout variants ──────────────────────────────────────────────
   sectionStyle?: 'matching-grid' | 'notices-grid' | 'dialogs-grid' | 'cloze-text' | 'reading';
   passageTitle?: string;  // shown as heading above the reading passage
@@ -281,4 +284,23 @@ export interface MockExam {
   // Marks a mock that follows a specific official blueprint. 'toefl-2026' selects
   // the 1–6 section scoring and the new-format task renderers; absent = legacy.
   format?: 'toefl-2026';
+  toefl2026Blueprint?: {
+    delivery: 'fixed-official-practice-shape';
+    adaptive: false;
+    disclosure: string;
+    sourceAsOf: '2026-08-14';
+    targetInteractions: {
+      reading: 40;
+      listening: 34;
+      writing: 12;
+      speaking: 11;
+    };
+    modules: readonly {
+      id: 'reading-1' | 'reading-2' | 'listening-1' | 'listening-2' | 'writing' | 'speaking';
+      skill: 'reading' | 'listening' | 'writing' | 'speaking';
+      interactionCount: number;
+      timeLimitSeconds: number;
+      navigation: 'within-module' | 'forward-only';
+    }[];
+  };
 }
