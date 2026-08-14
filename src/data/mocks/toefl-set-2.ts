@@ -1,6 +1,8 @@
 import type { MockExam } from './types';
 import { TOEFL_CTW_SET2_V2 } from '@/data/toefl/complete-the-words-sets-2-5';
 import { TOEFL_READING_SET2_V2 } from '@/data/toefl/reading-sets-2-5';
+import { TOEFL_BUILD_SENTENCE_SET2_V2 } from '@/data/toefl/build-sentence-sets-2-5';
+import { toToeflBuildSentenceQuestion } from './toefl-build-sentence-adapter';
 import { toToeflReadingQuestion } from './toefl-reading-adapter';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
@@ -110,15 +112,10 @@ const mock: MockExam = {
     },
     {
       part: 9, skill: 'writing', title: 'Writing — Build a Sentence',
-      instructions: 'Put the words in the correct order to make a grammatical sentence.',
-      questions: [
-        { type: 'sentencebuild', id: 't2-w-bs1', part: 9, tiles: ['She', 'volunteers', 'at', 'a shelter', 'on weekends'], answer: ['She', 'volunteers', 'at', 'a shelter', 'on weekends'] },
-        { type: 'sentencebuild', id: 't2-w-bs2', part: 9, tiles: ['the window', 'you', 'open', 'Could', 'a little'], answer: ['Could', 'you', 'open', 'the window', 'a little'] },
-        { type: 'sentencebuild', id: 't2-w-bs3', part: 9, tiles: ['gave', 'The advice', 'you', 'me', 'was', 'helpful'], answer: ['The advice', 'you', 'gave', 'me', 'was', 'helpful'] },
-        { type: 'sentencebuild', id: 't2-w-bs4', part: 9, tiles: ['ready,', 'is', 'When', 'we\'ll', 'the taxi', 'leave'], answer: ['When', 'the taxi', 'is', 'ready,', 'we\'ll', 'leave'] },
-        { type: 'sentencebuild', id: 't2-w-bs5', part: 9, tiles: ['is', 'This model', 'the older one', 'than', 'lighter'], answer: ['This model', 'is', 'lighter', 'than', 'the older one'] },
-        { type: 'sentencebuild', id: 't2-w-bs6', part: 9, tiles: ['the phone,', 'Answering', 'she', 'the good news', 'heard'], answer: ['Answering', 'the phone,', 'she', 'heard', 'the good news'] },
-      ],
+      instructions: 'Read the first speaker. Arrange the fragments to make a grammatical and contextually appropriate reply. One fragment is not used.',
+      sectionNote: TOEFL_BUILD_SENTENCE_SET2_V2.interactionDisclosure,
+      questions: TOEFL_BUILD_SENTENCE_SET2_V2.items.map((item) =>
+        toToeflBuildSentenceQuestion(TOEFL_BUILD_SENTENCE_SET2_V2.objectId, item, 9)),
     },
     {
       part: 10, skill: 'writing', title: 'Writing — Write an Email',

@@ -3114,3 +3114,36 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
   Build a Sentence para terminar el paquete no-audio de esos cuatro sets. La dispensa
   editorial/derechos del owner sigue vigente; no se afirma revisión independiente. Cero
   cambios, reproducción, transcripción, generación o consumo de audio/API.
+
+### Expansión no-audio — lote W4 Build a Sentence Sets 2–5 — 2026-08-14
+
+- Alcance cerrado: cada Set 2–5 pasa de seis frases descontextualizadas a diez
+  intercambios originales. Cada ítem contiene una primera intervención, partes fijas de
+  la respuesta, cuatro fragmentos que forman la respuesta y exactamente un distractor.
+- Revisión editorial: se revisaron los 40 intercambios completos. Los primeros ítems de
+  los cuatro sets se ajustaron para retirar ordenamientos alternativos obvios de
+  complementos y una respuesta redundante sobre duración. Los 40 distractores quedan
+  fuera del orden canónico y ninguna respuesta depende de un hecho externo.
+- Seguridad: el payload público sólo contiene contexto, fragmentos ya mezclados e IDs.
+  Los órdenes aceptados y las fuentes canónicas permanecen en un módulo `server-only`.
+  Al cargar la configuración, el servidor compara los fragmentos públicos contra la
+  fuente privada y falla cerrado si divergen.
+- Scoring: el runner identifica dinámicamente el único `objectId` Build del set activo.
+  El endpoint resuelve la clave privada de Sets 1–5, rechaza objetos, ítems, tiles o
+  presentaciones desconocidos/duplicados y aplica orden exacto sin inventar puntaje ETS.
+- Preservación: las 24 actividades anteriores de Sets 2–5 y sus respuestas se conservan
+  completas como fuentes server-only. Se enlazan los seis IDs heredados de cada set y
+  no se borra material reutilizable.
+- Evidencia automática: checker Build PASS sobre 50 ítems de Sets 1–5; unit PASS 9/9,
+  incluido 10/10 en cada Set 2–5; TypeScript y ESLint dirigido PASS. Las regresiones
+  CTW y Academic pasan 16/16; Writing pasa checker y unit 8/8. El build completo pasa
+  todos los guardianes y genera 1.364/1.364 rutas.
+- Navegador real: Chromium completó CTW 10/10, Academic 6/6 y Build 10/10 dentro de los
+  Sets 2 y 5: PASS 2/2. La regresión completa de Build Set 1 pasó 4/4, incluido teclado,
+  persistencia, fallo técnico y ancho de 320 px. Un primer fallo fue sólo una aserción
+  del test que esperaba `objectId` en la respuesta aunque el contrato lo valida en la
+  solicitud; el producto ya devolvía 10/10 y la aserción se alineó con el contrato.
+- Estado: los Sets 2–5 quedan completos dentro del alcance no-audio actual: CTW,
+  Daily Life, Academic, Build y Writing constructed. Sets 6–20 son el siguiente lote.
+  T16/T17 mantienen pendiente únicamente la aprobación humana VoiceOver documentada.
+  Cero cambios, reproducción, transcripción, generación o consumo de audio/API.

@@ -206,8 +206,9 @@ export interface ToeflBuildSentenceQuestion {
   type: 'toefl-build-sentence';
   id: string;
   sourceItemId?: string;
+  objectId: string;
   contentVersion: string;
-  serverScoring: 'toefl-build-sentence-set1';
+  serverScoring: 'toefl-build-sentence';
   alignment: 'official-family-pilot';
   part: number;
   context: string;

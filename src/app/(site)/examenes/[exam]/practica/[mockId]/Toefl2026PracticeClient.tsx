@@ -11,7 +11,6 @@ import type {
   WordCompleteQuestion, SentenceBuildQuestion, RepeatQuestion,
   ToeflBuildSentenceQuestion, ToeflReadingSingleQuestion, ToeflReadingMultiQuestion,
 } from '@/data/mocks/types';
-import { TOEFL_BUILD_SENTENCE_SET1 } from '@/data/toefl/build-sentence-set-1';
 import type { CompleteWordsScoreResult } from '@/data/toefl/complete-the-words-set-1';
 import type { ToeflReadingScoreResult } from '@/lib/toefl/reading-contract';
 import type { ToeflBuildSentenceScoreResult } from '@/lib/toefl/build-sentence-contract';
@@ -526,7 +525,7 @@ function Results({ mock, exam, ans, wordScores, readingScore, buildScore, speakB
       )}
       {buildScore && (
         <section className="t26-build-report" aria-labelledby="t26-build-report-title">
-          <h2 id="t26-build-report-title">Detalle de Build a Sentence · Set 1</h2>
+          <h2 id="t26-build-report-title">Detalle de Build a Sentence · {mock.title}</h2>
           <p>Órdenes correctos: <strong>{buildScore.correct}/{buildScore.denominator}</strong>.</p>
           <p>Corrección local fija; no equivale a una puntuación oficial de ETS.</p>
         </section>
@@ -804,17 +803,24 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
 
       const buildQuestions = getSkillSections(mock, 'writing')
         .flatMap((section) => section.questions)
-        .filter((question): question is ToeflBuildSentenceQuestion => question.type === 'toefl-build-sentence');
+        .filter((question): question is ToeflBuildSentenceQuestion =>
+          question.type === 'toefl-build-sentence' && question.serverScoring === 'toefl-build-sentence');
       let nextBuildScore = buildScore;
       if (buildQuestions.length > 0 && !nextBuildScore) {
         failureSkill = 'writing';
+        const objectIds = new Set(buildQuestions.map((question) => question.objectId));
+        if (objectIds.size !== 1) {
+          setBuildScoringError(true);
+          throw new Error('build_sentence_object_identity_mismatch');
+        }
+        const [buildObjectId] = objectIds;
         const response = await fetch('/api/practica/toefl/build-sentence/score', {
           method: 'POST',
           headers: { 'content-type': 'application/json' },
           body: JSON.stringify({
-            objectId: TOEFL_BUILD_SENTENCE_SET1.objectId,
+            objectId: buildObjectId,
             attemptId: stableAttemptId,
-            closeId: `close:${stableAttemptId}:build-sentence-set1`,
+            closeId: `close:${stableAttemptId}:${buildObjectId}`,
             responses: Object.fromEntries(buildQuestions.map((question) => [question.id, ans.buildV2[question.id] ?? []])),
             presentedItemIds: buildQuestions.map((question) => question.id),
           }),

@@ -1,6 +1,12 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import { TOEFL_BUILD_SENTENCE_SET1 } from '../src/data/toefl/build-sentence-set-1.ts';
+import {
+  TOEFL_BUILD_SENTENCE_SET2_V2,
+  TOEFL_BUILD_SENTENCE_SET3_V2,
+  TOEFL_BUILD_SENTENCE_SET4_V2,
+  TOEFL_BUILD_SENTENCE_SET5_V2,
+} from '../src/data/toefl/build-sentence-sets-2-5.ts';
 import { scoreToeflBuildSentenceAttempt } from '../src/lib/toefl/build-sentence-contract.ts';
 
 const answerPositions = [
@@ -49,6 +55,68 @@ test('the public pilot contains ten contextual items and no answer property', ()
   assert.ok(TOEFL_BUILD_SENTENCE_SET1.items.every((item) => item.tiles.length === item.blankCount + 1));
   assert.ok(TOEFL_BUILD_SENTENCE_SET1.items.every((item) => !('answer' in item) && !('acceptedOrders' in item)));
   assert.ok(TOEFL_BUILD_SENTENCE_SET1.items.every((item) => new Set(item.tiles.map((tile) => tile.id)).size === item.tiles.length));
+});
+
+test('Sets 2–5 expose forty contextual items with one distractor and no scoring key', () => {
+  const expansionSets = [
+    TOEFL_BUILD_SENTENCE_SET2_V2,
+    TOEFL_BUILD_SENTENCE_SET3_V2,
+    TOEFL_BUILD_SENTENCE_SET4_V2,
+    TOEFL_BUILD_SENTENCE_SET5_V2,
+  ];
+  assert.equal(new Set(expansionSets.map((set) => set.objectId)).size, 4);
+  for (const set of expansionSets) {
+    assert.equal(set.items.length, 10);
+    assert.ok(set.items.every((item) => item.context && item.replyPrefix && item.replySuffix));
+    assert.ok(set.items.every((item) => item.tiles.length === item.blankCount + 1));
+    assert.ok(set.items.every((item) => !('answer' in item) && !('acceptedOrders' in item)));
+    assert.ok(set.items.every((item) => new Set(item.tiles.map((tile) => tile.id)).size === item.tiles.length));
+  }
+});
+
+test('the forty canonical expansion orders reconcile to 10/10 per set', () => {
+  const patterns = [
+    [2, 4, 0, 3, 1],
+    [4, 1, 3, 0, 2],
+    [3, 0, 4, 1, 2],
+    [1, 3, 0, 4, 2],
+    [2, 0, 3, 1, 4],
+  ];
+  const expansionSets = [
+    TOEFL_BUILD_SENTENCE_SET2_V2,
+    TOEFL_BUILD_SENTENCE_SET3_V2,
+    TOEFL_BUILD_SENTENCE_SET4_V2,
+    TOEFL_BUILD_SENTENCE_SET5_V2,
+  ];
+  for (const [setIndex, set] of expansionSets.entries()) {
+    const setNumber = setIndex + 2;
+    const scoringItems = set.items.map((item, index) => {
+      const pattern = patterns[(setNumber * 2 + (index + 1) * 3) % patterns.length];
+      const acceptedOrder = [0, 1, 2, 3].map((sourceIndex) =>
+        `${item.id}:tile-${pattern.indexOf(sourceIndex) + 1}`);
+      return {
+        itemId: item.id,
+        tileIds: item.tiles.map((tile) => tile.id),
+        expectedTileCount: item.blankCount,
+        acceptedOrders: [acceptedOrder],
+        maxRawPoints: 1,
+      };
+    });
+    const expansionConfig = {
+      scoringVersion: `test-build-sentence-set${setNumber}`,
+      disclosure: 'Local test result.',
+      items: scoringItems,
+    };
+    const responses = Object.fromEntries(scoringItems.map((item) => [item.itemId, item.acceptedOrders[0]]));
+    const result = scoreToeflBuildSentenceAttempt(expansionConfig, {
+      attemptId: `attempt:set${setNumber}`,
+      closeId: `close:attempt:set${setNumber}:build`,
+      responses,
+      presentedItemIds: scoringItems.map((item) => item.itemId),
+    });
+    assert.equal(result.correct, 10, `Set ${setNumber} should score 10/10.`);
+    assert.equal(result.denominator, 10, `Set ${setNumber} should retain all ten items.`);
+  }
 });
 
 test('all ten canonical orders reconcile to 10/10', () => {

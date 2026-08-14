@@ -1,6 +1,8 @@
 import type { MockExam } from './types';
 import { TOEFL_CTW_SET5_V2 } from '@/data/toefl/complete-the-words-sets-2-5';
 import { TOEFL_READING_SET5_V2 } from '@/data/toefl/reading-sets-2-5';
+import { TOEFL_BUILD_SENTENCE_SET5_V2 } from '@/data/toefl/build-sentence-sets-2-5';
+import { toToeflBuildSentenceQuestion } from './toefl-build-sentence-adapter';
 import { toToeflReadingQuestion } from './toefl-reading-adapter';
 
 // TOEFL iBT — formato oficial vigente (actualización 21 enero 2026).
@@ -290,15 +292,10 @@ const mock: MockExam = {
       part: 9,
       skill: 'writing',
       title: 'Writing — Build a Sentence',
-      instructions: 'Put the words in the correct order to make a grammatical sentence.',
-      questions: [
-        { type: 'sentencebuild', id: 't5-w-bs1', part: 9, tiles: ['She', 'has', 'lived', 'in', 'Madrid', 'for', 'five years'], answer: ['She', 'has', 'lived', 'in', 'Madrid', 'for', 'five years'] },
-        { type: 'sentencebuild', id: 't5-w-bs2', part: 9, tiles: ['the report', 'before', 'Please', 'the meeting', 'send', 'me'], answer: ['Please', 'send', 'me', 'the report', 'before', 'the meeting'] },
-        { type: 'sentencebuild', id: 't5-w-bs3', part: 9, tiles: ['is', 'the book', 'that', 'I', 'This', 'recommended'], answer: ['This', 'is', 'the book', 'that', 'I', 'recommended'] },
-        { type: 'sentencebuild', id: 't5-w-bs4', part: 9, tiles: ['we', 'If', 'leave', 'now,', 'catch', 'we can', 'the train'], answer: ['If', 'we', 'leave', 'now,', 'we can', 'catch', 'the train'] },
-        { type: 'sentencebuild', id: 't5-w-bs5', part: 9, tiles: ['was', 'The museum', 'than', 'more crowded', 'expected', 'we had'], answer: ['The museum', 'was', 'more crowded', 'than', 'we had', 'expected'] },
-        { type: 'sentencebuild', id: 't5-w-bs6', part: 9, tiles: ['finishing', 'she', 'After', 'her degree,', 'a job', 'found', 'abroad'], answer: ['After', 'finishing', 'her degree,', 'she', 'found', 'a job', 'abroad'] },
-      ],
+      instructions: 'Read the first speaker. Arrange the fragments to make a grammatical and contextually appropriate reply. One fragment is not used.',
+      sectionNote: TOEFL_BUILD_SENTENCE_SET5_V2.interactionDisclosure,
+      questions: TOEFL_BUILD_SENTENCE_SET5_V2.items.map((item) =>
+        toToeflBuildSentenceQuestion(TOEFL_BUILD_SENTENCE_SET5_V2.objectId, item, 9)),
     },
 
     // ── Write an Email ──────────────────────────────────────────────────────────

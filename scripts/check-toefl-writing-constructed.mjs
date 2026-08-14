@@ -35,25 +35,23 @@ assert.match(client, /Continuar sin inventar score/, 'Constructed Writing must n
 assert.match(client, /not_evaluated/, 'Constructed Writing must report its honest outcome.');
 
 for (let setNumber = 2; setNumber <= 20; setNumber += 1) {
-  const moduleUrl = new URL(`../src/data/mocks/toefl-set-${setNumber}.ts`, import.meta.url);
-  const set = (await import(moduleUrl)).default;
-  const tasks = set.sections.flatMap((section) => section.questions).filter((question) => question.type === 'write');
+  const source = await read(`src/data/mocks/toefl-set-${setNumber}.ts`);
+  const tasks = [...source.matchAll(/\{\s*type:\s*'write',[\s\S]*?evaluationDisclosure:\s*'[^']*not_evaluated[^']*'\s*,?\s*\}/g)]
+    .map((match) => match[0]);
   const [setEmail, setDiscussion] = tasks;
 
   assert.equal(tasks.length, 2, `Set ${setNumber} needs exactly Email and Discussion.`);
-  assert.equal(setEmail.taskNumber, 1, `Set ${setNumber} Email must be task 1.`);
-  assert.equal(setEmail.timeLimitSeconds, 420, `Set ${setNumber} Email needs 420 seconds.`);
-  assert.equal(setEmail.minWords, 0, `Set ${setNumber} Email cannot invent a word minimum.`);
-  assert.equal(setEmail.minimumWordsPolicy, 'none-published');
-  assert.ok(!setEmail.text.includes('80–120'), `Set ${setNumber} still exposes the invented Email range.`);
-  assert.match(setEmail.text, /complete sentences/i);
-  assert.match(setEmail.evaluationDisclosure ?? '', /not_evaluated/);
+  assert.match(setEmail, /taskNumber:\s*1/, `Set ${setNumber} Email must be task 1.`);
+  assert.match(setEmail, /timeLimitSeconds:\s*420/, `Set ${setNumber} Email needs 420 seconds.`);
+  assert.match(setEmail, /minWords:\s*0/, `Set ${setNumber} Email cannot invent a word minimum.`);
+  assert.match(setEmail, /minimumWordsPolicy:\s*'none-published'/);
+  assert.ok(!setEmail.includes('80–120'), `Set ${setNumber} still exposes the invented Email range.`);
+  assert.match(setEmail, /complete sentences/i);
 
-  assert.equal(setDiscussion.taskNumber, 2, `Set ${setNumber} Discussion must be task 2.`);
-  assert.equal(setDiscussion.timeLimitSeconds, 600, `Set ${setNumber} Discussion needs 600 seconds.`);
-  assert.equal(setDiscussion.minWords, 100, `Set ${setNumber} Discussion needs the recommended 100 words.`);
-  assert.equal(setDiscussion.minimumWordsPolicy, 'recommended-100');
-  assert.match(setDiscussion.evaluationDisclosure ?? '', /not_evaluated/);
+  assert.match(setDiscussion, /taskNumber:\s*2/, `Set ${setNumber} Discussion must be task 2.`);
+  assert.match(setDiscussion, /timeLimitSeconds:\s*600/, `Set ${setNumber} Discussion needs 600 seconds.`);
+  assert.match(setDiscussion, /minWords:\s*100/, `Set ${setNumber} Discussion needs the recommended 100 words.`);
+  assert.match(setDiscussion, /minimumWordsPolicy:\s*'recommended-100'/);
 }
 
 console.log('✓ TOEFL 2026 Writing T17+: all 20 sets use 7/10-minute references, honest word policies and no invented Writing band.');

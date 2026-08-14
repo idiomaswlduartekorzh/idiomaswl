@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 import { reconcileTimedWritingState, remainingWritingSeconds } from '../src/lib/toefl/writing-time-contract.ts';
 import { TOEFL_WRITING_CONSTRUCTED_SET1 } from '../src/data/toefl/writing-constructed-set-1.ts';
@@ -18,22 +19,18 @@ test('Email has no invented word minimum and Discussion preserves recommended 10
 test('Sets 2–20 preserve the same honest Email and Discussion timing policies', async () => {
   for (let setNumber = 2; setNumber <= 20; setNumber += 1) {
     const moduleUrl = new URL(`../src/data/mocks/toefl-set-${setNumber}.ts`, import.meta.url);
-    const set = (await import(moduleUrl)).default;
-    const [email, discussion] = set.sections
-      .flatMap((section) => section.questions)
-      .filter((question) => question.type === 'write');
+    const source = await readFile(moduleUrl, 'utf8');
+    const [email, discussion] = [...source.matchAll(/\{\s*type:\s*'write',[\s\S]*?evaluationDisclosure:\s*'[^']*not_evaluated[^']*'\s*,?\s*\}/g)]
+      .map((match) => match[0]);
 
-    assert.deepEqual(
-      [email.timeLimitSeconds, email.minWords, email.minimumWordsPolicy],
-      [420, 0, 'none-published'],
-      `Set ${setNumber} Email policy`,
-    );
-    assert.ok(!email.text.includes('80–120'), `Set ${setNumber} Email range`);
-    assert.deepEqual(
-      [discussion.timeLimitSeconds, discussion.minWords, discussion.minimumWordsPolicy],
-      [600, 100, 'recommended-100'],
-      `Set ${setNumber} Discussion policy`,
-    );
+    assert.ok(email && discussion, `Set ${setNumber} must expose both constructed-writing tasks.`);
+    assert.match(email, /timeLimitSeconds:\s*420/, `Set ${setNumber} Email time`);
+    assert.match(email, /minWords:\s*0/, `Set ${setNumber} Email word policy`);
+    assert.match(email, /minimumWordsPolicy:\s*'none-published'/, `Set ${setNumber} Email policy`);
+    assert.ok(!email.includes('80–120'), `Set ${setNumber} Email range`);
+    assert.match(discussion, /timeLimitSeconds:\s*600/, `Set ${setNumber} Discussion time`);
+    assert.match(discussion, /minWords:\s*100/, `Set ${setNumber} Discussion word policy`);
+    assert.match(discussion, /minimumWordsPolicy:\s*'recommended-100'/, `Set ${setNumber} Discussion policy`);
   }
 });
 

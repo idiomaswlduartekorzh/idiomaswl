@@ -1,6 +1,8 @@
 import type { MockExam } from './types';
 import { TOEFL_CTW_SET4_V2 } from '@/data/toefl/complete-the-words-sets-2-5';
 import { TOEFL_READING_SET4_V2 } from '@/data/toefl/reading-sets-2-5';
+import { TOEFL_BUILD_SENTENCE_SET4_V2 } from '@/data/toefl/build-sentence-sets-2-5';
+import { toToeflBuildSentenceQuestion } from './toefl-build-sentence-adapter';
 import { toToeflReadingQuestion } from './toefl-reading-adapter';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
@@ -110,15 +112,10 @@ const mock: MockExam = {
     },
     {
       part: 9, skill: 'writing', title: 'Writing — Build a Sentence',
-      instructions: 'Put the words in the correct order to make a grammatical sentence.',
-      questions: [
-        { type: 'sentencebuild', id: 't4-w-bs1', part: 9, tiles: ['They', 'are', 'launching', 'a new website', 'next month'], answer: ['They', 'are', 'launching', 'a new website', 'next month'] },
-        { type: 'sentencebuild', id: 't4-w-bs2', part: 9, tiles: ['the form', 'you', 'sign', 'Could', 'at the bottom'], answer: ['Could', 'you', 'sign', 'the form', 'at the bottom'] },
-        { type: 'sentencebuild', id: 't4-w-bs3', part: 9, tiles: ['gave', 'The talk', 'she', 'was', 'inspiring'], answer: ['The talk', 'she', 'gave', 'was', 'inspiring'] },
-        { type: 'sentencebuild', id: 't4-w-bs4', part: 9, tiles: ['arrives,', 'the guest', 'When', 'we\'ll', 'begin'], answer: ['When', 'the guest', 'arrives,', 'we\'ll', 'begin'] },
-        { type: 'sentencebuild', id: 't4-w-bs5', part: 9, tiles: ['is', 'This method', 'the old one', 'than', 'simpler'], answer: ['This method', 'is', 'simpler', 'than', 'the old one'] },
-        { type: 'sentencebuild', id: 't4-w-bs6', part: 9, tiles: ['the meeting,', 'Leaving', 'she', 'a message', 'sent'], answer: ['Leaving', 'the meeting,', 'she', 'sent', 'a message'] },
-      ],
+      instructions: 'Read the first speaker. Arrange the fragments to make a grammatical and contextually appropriate reply. One fragment is not used.',
+      sectionNote: TOEFL_BUILD_SENTENCE_SET4_V2.interactionDisclosure,
+      questions: TOEFL_BUILD_SENTENCE_SET4_V2.items.map((item) =>
+        toToeflBuildSentenceQuestion(TOEFL_BUILD_SENTENCE_SET4_V2.objectId, item, 9)),
     },
     {
       part: 10, skill: 'writing', title: 'Writing — Write an Email',

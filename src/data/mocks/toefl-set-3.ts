@@ -1,6 +1,8 @@
 import type { MockExam } from './types';
 import { TOEFL_CTW_SET3_V2 } from '@/data/toefl/complete-the-words-sets-2-5';
 import { TOEFL_READING_SET3_V2 } from '@/data/toefl/reading-sets-2-5';
+import { TOEFL_BUILD_SENTENCE_SET3_V2 } from '@/data/toefl/build-sentence-sets-2-5';
+import { toToeflBuildSentenceQuestion } from './toefl-build-sentence-adapter';
 import { toToeflReadingQuestion } from './toefl-reading-adapter';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
@@ -110,15 +112,10 @@ const mock: MockExam = {
     },
     {
       part: 9, skill: 'writing', title: 'Writing — Build a Sentence',
-      instructions: 'Put the words in the correct order to make a grammatical sentence.',
-      questions: [
-        { type: 'sentencebuild', id: 't3-w-bs1', part: 9, tiles: ['We', 'are', 'hosting', 'a dinner', 'on Saturday'], answer: ['We', 'are', 'hosting', 'a dinner', 'on Saturday'] },
-        { type: 'sentencebuild', id: 't3-w-bs2', part: 9, tiles: ['the door', 'you', 'unlock', 'Could', 'for me'], answer: ['Could', 'you', 'unlock', 'the door', 'for me'] },
-        { type: 'sentencebuild', id: 't3-w-bs3', part: 9, tiles: ['suggested', 'The route', 'you', 'was', 'much faster'], answer: ['The route', 'you', 'suggested', 'was', 'much faster'] },
-        { type: 'sentencebuild', id: 't3-w-bs4', part: 9, tiles: ['stops,', 'the music', 'When', 'we\'ll', 'go home'], answer: ['When', 'the music', 'stops,', 'we\'ll', 'go home'] },
-        { type: 'sentencebuild', id: 't3-w-bs5', part: 9, tiles: ['is', 'This job', 'my last one', 'than', 'harder'], answer: ['This job', 'is', 'harder', 'than', 'my last one'] },
-        { type: 'sentencebuild', id: 't3-w-bs6', part: 9, tiles: ['the letter,', 'Reading', 'he', 'the phone', 'reached for'], answer: ['Reading', 'the letter,', 'he', 'reached for', 'the phone'] },
-      ],
+      instructions: 'Read the first speaker. Arrange the fragments to make a grammatical and contextually appropriate reply. One fragment is not used.',
+      sectionNote: TOEFL_BUILD_SENTENCE_SET3_V2.interactionDisclosure,
+      questions: TOEFL_BUILD_SENTENCE_SET3_V2.items.map((item) =>
+        toToeflBuildSentenceQuestion(TOEFL_BUILD_SENTENCE_SET3_V2.objectId, item, 9)),
     },
     {
       part: 10, skill: 'writing', title: 'Writing — Write an Email',

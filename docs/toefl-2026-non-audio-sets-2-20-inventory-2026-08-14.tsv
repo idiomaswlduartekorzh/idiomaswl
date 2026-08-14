@@ -1,8 +1,8 @@
 set_id	ctw_blanks	daily_questions	daily_words	academic_words	academic_mcq	academic_supplementary_multi	build_items	build_contextual	build_initially_ordered	email_seconds	email_word_policy	discussion_seconds	discussion_word_policy	next_non_audio_action
-set-2	10	3+2	75+82	188	5	1	6	0	1	420	none-published	600	recommended-100	build_expand
-set-3	10	3+2	69+95	202	5	1	6	0	1	420	none-published	600	recommended-100	build_expand
-set-4	10	3+2	68+101	212	5	1	6	0	1	420	none-published	600	recommended-100	build_expand
-set-5	10	3+2	101+105	212	5	1	6	0	1	420	none-published	600	recommended-100	build_expand
+set-2	10	3+2	75+82	188	5	1	10	10	0	420	none-published	600	recommended-100	non_audio_set_complete
+set-3	10	3+2	69+95	202	5	1	10	10	0	420	none-published	600	recommended-100	non_audio_set_complete
+set-4	10	3+2	68+101	212	5	1	10	10	0	420	none-published	600	recommended-100	non_audio_set_complete
+set-5	10	3+2	101+105	212	5	1	10	10	0	420	none-published	600	recommended-100	non_audio_set_complete
 set-6	12	3+2	76+78	295	5	1	6	0	1	420	none-published	600	recommended-100	CTW_repair_academic_compress_build_expand
 set-7	12	3+2	85+97	267	5	1	6	0	1	420	none-published	600	recommended-100	CTW_derive_academic_compress_build_expand
 set-8	12	3+2	85+82	263	5	1	6	0	1	420	none-published	600	recommended-100	CTW_repair_academic_compress_build_expand
