@@ -6,6 +6,7 @@ import {
 } from '../src/lib/toefl/complete-words-contract.ts';
 import { TOEFL_CTW_SETS_2_TO_5 } from '../src/data/toefl/complete-the-words-sets-2-5.ts';
 import { TOEFL_CTW_SETS_6_TO_10 } from '../src/data/toefl/complete-the-words-sets-6-10.ts';
+import { TOEFL_CTW_SETS_11_TO_15 } from '../src/data/toefl/complete-the-words-sets-11-15.ts';
 
 const missing = ['ides', 'ght', 'at', 'ke', 'n', 'ible', 'ide', 'un', 'cess', 'lear'];
 const prefixes = ['prov', 'li', 'he', 'ma', 'o', 'poss', 'ins', 's', 'pro', 'nuc'];
@@ -107,10 +108,15 @@ const setKeys = [
   ['he', 'olved', 'an', 'sure', 'gma', 'tion', 'ease', 'sh', 'ments', 'ses'],
   ['bers', 'ves', 'ood', 'n', 'rect', 'ile', 'nals', 'ch', 'ood', 'gen'],
   ['gin', 'in', 'r', 'ects', 'her', 'wing', 'des', 'nd', 'ries', 'nd'],
+  ['he', 'me', 'ome', 'ot', 'hts', 'e', 'der', 'nd', 'vive', 'ting'],
+  ['vity', 'duce', 'des', 'ts', 'erves', 'act', 'ause', 'on', 'ost', 'phere'],
+  ['ees', 'ers', 'uence', 'ch', 'ches', 'est', 'nts', 'or', 'ile', 'upy'],
+  ['ols', 'dens', 'ter', 'dd', 'rial', 'he', 'form', 'ves', 'in', 'ode'],
+  ['duce', 'aust', 'ile', 'ough', 'tal', 'act', 'n', 'ation', 'icle', 'nd'],
 ];
 
-test('Sets 2–10 each close at 10/10 with their own stable object identity', () => {
-  const expansionSets = [...TOEFL_CTW_SETS_2_TO_5, ...TOEFL_CTW_SETS_6_TO_10];
+test('Sets 2–15 each close at 10/10 with their own stable object identity', () => {
+  const expansionSets = [...TOEFL_CTW_SETS_2_TO_5, ...TOEFL_CTW_SETS_6_TO_10, ...TOEFL_CTW_SETS_11_TO_15];
   for (const [setIndex, object] of expansionSets.entries()) {
     const scoringBlanks = object.blanks.map((blank, blankIndex) => ({
       ...blank,

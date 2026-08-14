@@ -1,4 +1,10 @@
 import type { MockExam } from './types';
+import { TOEFL_CTW_SET14_V2 } from '@/data/toefl/complete-the-words-sets-11-15';
+import { toToeflCompleteWordsQuestion } from './toefl-complete-words-adapter';
+import { TOEFL_READING_SET14_V2 } from '@/data/toefl/reading-sets-11-15';
+import { toToeflReadingQuestion } from './toefl-reading-adapter';
+import { TOEFL_BUILD_SENTENCE_SET14_V2 } from '@/data/toefl/build-sentence-sets-11-15';
+import { toToeflBuildSentenceQuestion } from './toefl-build-sentence-adapter';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md. Escala 1–6.
@@ -13,36 +19,11 @@ const mock: MockExam = {
   timeMinutes: 86,
   sections: [
     {
-      part: 1, skill: 'reading', title: 'Reading — Complete the Words',
+      part: 1,
+      skill: 'reading',
+      title: 'Reading — Complete the Words',
       instructions: 'Complete each word so the text makes sense. Some letters are given.',
-      questions: [
-        {
-          type: 'wordcomplete', id: 't14-r-cw1', part: 1, qRange: [1, 6],
-          instructions: 'A student is writing to a landlord.',
-          template: `Dear Mr. Owens,\n\nI am writing about the {{1}} I signed for the apartment on Elm Street. I would like to {{2}} it for another year, as I am very happy living here. Before I do, could you please confirm whether the monthly {{3}} will stay the same? I would also like to {{4}} a small problem: the kitchen window does not close {{5}}. I would be grateful if this could be {{6}} soon.\n\nKind regards,\nOmar`,
-          blanks: [
-            { num: 1, prefix: 'lea', answer: 'lease' },
-            { num: 2, prefix: 'ren', answer: 'renew' },
-            { num: 3, prefix: 're', answer: 'rent' },
-            { num: 4, prefix: 'men', answer: 'mention' },
-            { num: 5, prefix: 'pro', answer: 'properly' },
-            { num: 6, prefix: 'rep', answer: 'repaired' },
-          ],
-        },
-        {
-          type: 'wordcomplete', id: 't14-r-cw2', part: 1, qRange: [7, 12],
-          instructions: 'The following is from an article about volcano-formed islands.',
-          template: `Some islands are formed by {{1}} activity beneath the ocean. Over thousands of years, layers of {{2}} rock build up until they rise above the water's {{3}}. At first, these islands are bare rock, but over time, seeds carried by wind, waves, and {{4}} allow plants to grow. Animals eventually arrive too, creating new {{5}}. Because they are so isolated, such islands often develop {{6}} species found nowhere else on Earth.`,
-          blanks: [
-            { num: 1, prefix: 'vol', answer: 'volcanic' },
-            { num: 2, prefix: 'coo', answer: 'cooled' },
-            { num: 3, prefix: 'sur', answer: 'surface' },
-            { num: 4, prefix: 'bi', answer: 'birds' },
-            { num: 5, prefix: 'eco', answer: 'ecosystems' },
-            { num: 6, prefix: 'un', answer: 'unique' },
-          ],
-        },
-      ],
+      questions: [toToeflCompleteWordsQuestion(TOEFL_CTW_SET14_V2, 1)],
     },
     {
       part: 2, skill: 'reading', title: 'Reading — Read in Daily Life (Store notice)',
@@ -66,23 +47,15 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 4, skill: 'reading', title: 'Reading — Read an Academic Passage',
-      instructions: 'Read the passage and answer questions.',
-      passage: `Bees are famous for their honey, but their most important contribution to human life is something less obvious: pollination. As bees travel from flower to flower gathering nectar, they carry pollen with them, fertilizing plants so they can produce seeds and fruit. A remarkable proportion of the crops humans depend on—apples, almonds, blueberries, and many more—rely on insect pollination, and bees are the most important pollinators of all. Without them, both wild plants and agriculture would suffer enormously.\n\nWhat makes bees such effective pollinators is not merely their numbers but their behavior. A single honeybee tends to visit flowers of just one species during a foraging trip, a tendency known as flower constancy. This is highly efficient for the plant, because pollen from an apple flower is far more likely to be carried to another apple flower rather than wasted on an unrelated species. In effect, the bee and the flowering plant have evolved a partnership from which both benefit: the bee gets food, and the plant gets reproduction.\n\nIn recent years, however, beekeepers around the world have reported alarming declines in bee populations. A phenomenon called colony collapse disorder, in which the worker bees of a hive suddenly disappear, has drawn particular attention. Scientists have not identified a single cause; rather, the decline appears to result from a combination of pressures: certain pesticides, parasites such as the varroa mite, loss of wildflower habitat, and disease. These factors may weaken bees individually and interact in ways that overwhelm a colony.\n\nThe implications are serious. If pollinators continue to decline, the cost of pollinating crops could rise sharply, and some foods could become scarcer and more expensive. Efforts to help include reducing harmful pesticide use, planting wildflowers to provide forage, and supporting research into bee health. Ultimately, the fate of bees is a reminder of how deeply human well-being is entangled with the health of the natural world—often through creatures we rarely stop to notice.`,
-      passageTitle: 'Bees and Pollination',
-      questions: [
-        { type: 'mcq', id: 't14-r-ap1', part: 4, text: 'According to the passage, what is the most important contribution bees make to human life?', options: ['Making wax', 'Controlling pests', 'Producing honey', 'Pollinating crops and wild plants'], answer: 3 },
-        { type: 'mcq', id: 't14-r-ap2', part: 4, text: 'What is "flower constancy"?', options: ['A single bee tending to visit flowers of just one species during a foraging trip', 'Flowers that never change color', 'A type of pesticide', 'A bee visiting many different species in one trip'], answer: 0 },
-        { type: 'mcq', id: 't14-r-ap3', part: 4, text: 'Why does flower constancy benefit plants?', options: ['It makes flowers grow faster.', 'Pollen is more likely carried to another flower of the same species rather than wasted.', 'It attracts more bees.', 'It reduces the need for water.'], answer: 1 },
-        { type: 'mcq', id: 't14-r-ap4', part: 4, text: 'What does the passage say about the cause of colony collapse disorder?', options: ['It does not really exist.', 'It has a single known cause.', 'It appears to result from a combination of pressures, not a single cause.', 'It is caused only by cold weather.'], answer: 2 },
-        { type: 'mcq', id: 't14-r-ap5', part: 4, text: 'What broader point does the final paragraph make?', options: ['Honey will soon disappear.', 'Pesticides are always safe.', 'Bees are unimportant.', 'Human well-being is deeply entangled with the health of the natural world.'], answer: 3 },
-        { type: 'multiselect', id: 't14-r-ap6', part: 4, qRange: [6, 6], text: 'Select the TWO statements supported by the passage.', options: [
-          { letter: 'A', text: 'Many important human crops rely on insect pollination.' },
-          { letter: 'B', text: 'Colony collapse disorder has a single, well-understood cause.' },
-          { letter: 'C', text: 'Planting wildflowers is one way to help bee populations.' },
-          { letter: 'D', text: 'Bees visit as many different flower species as possible in one trip.' },
-        ], selectCount: 2, answers: ['A', 'C'] },
-      ],
+      part: 4,
+      skill: 'reading',
+      title: 'Reading — Read an Academic Passage',
+      instructions: TOEFL_READING_SET14_V2.academic.instructions,
+      sectionNote: 'Las preguntas 1–5 reproducen familias oficiales de selección única. La pregunta 6 es práctica complementaria WeLearn.',
+      passage: TOEFL_READING_SET14_V2.academic.text,
+      passageTitle: TOEFL_READING_SET14_V2.academic.title,
+      questions: TOEFL_READING_SET14_V2.academic.items.map((item) =>
+        toToeflReadingQuestion(TOEFL_READING_SET14_V2.objectId, item, 4)),
     },
     {
       part: 5, skill: 'listening', title: 'Listening — Listen and Choose a Response',
@@ -132,16 +105,13 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 9, skill: 'writing', title: 'Writing — Build a Sentence',
-      instructions: 'Put the words in the correct order to make a grammatical sentence.',
-      questions: [
-        { type: 'sentencebuild', id: 't14-w-bs1', part: 9, tiles: ['They', 'are', 'painting', 'the house', 'this week'], answer: ['They', 'are', 'painting', 'the house', 'this week'] },
-        { type: 'sentencebuild', id: 't14-w-bs2', part: 9, tiles: ['the address', 'you', 'me', 'give', 'Could', 'please'], answer: ['Could', 'you', 'please', 'give', 'me', 'the address'] },
-        { type: 'sentencebuild', id: 't14-w-bs3', part: 9, tiles: ['wrote', 'The essay', 'she', 'a prize', 'won'], answer: ['The essay', 'she', 'wrote', 'won', 'a prize'] },
-        { type: 'sentencebuild', id: 't14-w-bs4', part: 9, tiles: ['you', 'If', 'need', 'anything,', 'me', 'call'], answer: ['If', 'you', 'need', 'anything,', 'call', 'me'] },
-        { type: 'sentencebuild', id: 't14-w-bs5', part: 9, tiles: ['is', 'This summer', 'last year', 'than', 'hotter'], answer: ['This summer', 'is', 'hotter', 'than', 'last year'] },
-        { type: 'sentencebuild', id: 't14-w-bs6', part: 9, tiles: ['the station,', 'Arriving', 'at', 'the train', 'they', 'had left', 'found'], answer: ['Arriving', 'at', 'the station,', 'they', 'found', 'the train', 'had left'] },
-      ],
+      part: 9,
+      skill: 'writing',
+      title: 'Writing — Build a Sentence',
+      instructions: 'Read the first speaker. Arrange the fragments to make a grammatical and contextually appropriate reply. One fragment is not used.',
+      sectionNote: TOEFL_BUILD_SENTENCE_SET14_V2.interactionDisclosure,
+      questions: TOEFL_BUILD_SENTENCE_SET14_V2.items.map((item) =>
+        toToeflBuildSentenceQuestion(TOEFL_BUILD_SENTENCE_SET14_V2.objectId, item, 9)),
     },
     {
       part: 10, skill: 'writing', title: 'Writing — Write an Email',

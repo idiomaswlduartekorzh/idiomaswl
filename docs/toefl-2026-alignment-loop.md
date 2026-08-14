@@ -3179,3 +3179,31 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
 - Estado: Sets 2–10 están completos dentro del alcance no-audio actual. El siguiente
   lote es Sets 11–15, seguido de Sets 16–20. VoiceOver T16/T17 sigue pendiente como
   gate humano. Cero audio abierto, reproducido, transcrito, generado o modificado.
+
+### Expansión no-audio — lote W6 Sets 11–15 — 2026-08-14
+
+- Alcance cerrado: Sets 11–15 completan CTW, Academic Passage y Build a Sentence con
+  el mismo contrato de los lotes anteriores. Daily Life, Email y Academic Discussion
+  ya cumplían el inventario no-audio.
+- CTW: cinco objetos de 79/81/84/83/87 palabras, primera oración intacta, diez mitades
+  alternas y clave de letras faltantes server-only. Los diez bloques previos se
+  preservan fuera del payload.
+- Academic: cinco pasajes de 182/190/193/202/202 palabras. Cada uno expone cinco
+  single-select official-family y un sexto exact-set rotulado como suplemento WeLearn.
+  Las cinco fuentes largas y sus claves v1 quedan server-only.
+- Revisión factual: se corrigieron simplificación de resistencia antimicrobiana,
+  escala/edad del arrecife, cuarto satélite y doble efecto relativista de GPS,
+  confusión entre CCD y todos los descensos de abejas, y una falsa resolución del
+  debate sobre adquisición del lenguaje. Evidencia en
+  `docs/toefl-2026-written-sets11-15-factual-audit-2026-08-14.md`.
+- Build: 50 intercambios originales con contexto, texto fijo de respuesta, cuatro
+  fragmentos y un distractor. La clave privada verifica que el contenido público
+  mezclado no derive; las 30 actividades anteriores se conservan server-only.
+- Evidencia: checkers CTW/Reading/Build/Writing PASS; units 8/8, 8/8, 9/9 y 8/8;
+  TypeScript y ESLint dirigido PASS; build completo PASS con guardianes y
+  1.364/1.364 rutas. Chromium de producción en Sets 11 y 15 cerró 10/10 + 6/6 +
+  10/10: PASS 2/2. El primer lanzamiento fue bloqueado por el sandbox de macOS antes
+  de abrir página; la repetición autorizada pasó en seis segundos.
+- Estado: Sets 2–15 están completos dentro del alcance no-audio actual. El siguiente
+  lote es Sets 16–20. VoiceOver T16/T17 sigue pendiente como gate humano. Cero audio
+  abierto, reproducido, transcrito, generado o modificado.

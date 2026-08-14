@@ -1,4 +1,10 @@
 import type { MockExam } from './types';
+import { TOEFL_CTW_SET15_V2 } from '@/data/toefl/complete-the-words-sets-11-15';
+import { toToeflCompleteWordsQuestion } from './toefl-complete-words-adapter';
+import { TOEFL_READING_SET15_V2 } from '@/data/toefl/reading-sets-11-15';
+import { toToeflReadingQuestion } from './toefl-reading-adapter';
+import { TOEFL_BUILD_SENTENCE_SET15_V2 } from '@/data/toefl/build-sentence-sets-11-15';
+import { toToeflBuildSentenceQuestion } from './toefl-build-sentence-adapter';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md. Escala 1–6.
@@ -13,36 +19,11 @@ const mock: MockExam = {
   timeMinutes: 86,
   sections: [
     {
-      part: 1, skill: 'reading', title: 'Reading — Complete the Words',
+      part: 1,
+      skill: 'reading',
+      title: 'Reading — Complete the Words',
       instructions: 'Complete each word so the text makes sense. Some letters are given.',
-      questions: [
-        {
-          type: 'wordcomplete', id: 't15-r-cw1', part: 1, qRange: [1, 6],
-          instructions: 'A student is writing to arrange a meeting.',
-          template: `Hi Professor Ahmed,\n\nI hope you are well. I am writing to ask if I could {{1}} a meeting with you this week to discuss my final {{2}}. I have chosen a topic but I am not sure it is {{3}} enough. I am {{4}} on Tuesday and Thursday afternoons. Please let me know a time that {{5}} you. I really {{6}} your guidance.\n\nBest wishes,\nLina`,
-          blanks: [
-            { num: 1, prefix: 'arr', answer: 'arrange' },
-            { num: 2, prefix: 'pro', answer: 'project' },
-            { num: 3, prefix: 'foc', answer: 'focused' },
-            { num: 4, prefix: 'av', answer: 'available' },
-            { num: 5, prefix: 'su', answer: 'suits' },
-            { num: 6, prefix: 'app', answer: 'appreciate' },
-          ],
-        },
-        {
-          type: 'wordcomplete', id: 't15-r-cw2', part: 1, qRange: [7, 12],
-          instructions: 'The following is from an article about electric cars.',
-          template: `Electric cars are becoming more {{1}} as people look for cleaner ways to travel. Unlike traditional cars, they produce no exhaust {{2}}, which helps reduce air pollution in cities. Instead of petrol, they run on {{3}} stored in large batteries. One challenge is that drivers need places to {{4}} their cars, so governments are building more charging {{5}}. As battery technology improves, electric cars can travel greater {{6}} on a single charge.`,
-          blanks: [
-            { num: 1, prefix: 'pop', answer: 'popular' },
-            { num: 2, prefix: 'fu', answer: 'fumes' },
-            { num: 3, prefix: 'elec', answer: 'electricity' },
-            { num: 4, prefix: 'cha', answer: 'charge' },
-            { num: 5, prefix: 'stat', answer: 'stations' },
-            { num: 6, prefix: 'dis', answer: 'distances' },
-          ],
-        },
-      ],
+      questions: [toToeflCompleteWordsQuestion(TOEFL_CTW_SET15_V2, 1)],
     },
     {
       part: 2, skill: 'reading', title: 'Reading — Read in Daily Life (Swimming pool rules)',
@@ -66,23 +47,15 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 4, skill: 'reading', title: 'Reading — Read an Academic Passage',
-      instructions: 'Read the passage and answer questions.',
-      passage: `Human language is one of the most distinctive features of our species, and among its many puzzles, one of the most fascinating is how children acquire it. By the age of five, most children can understand and produce thousands of words and construct grammatically complex sentences—all without formal instruction. How they accomplish this so quickly and reliably has been debated for decades.\n\nOne influential view, associated with the linguist Noam Chomsky, holds that humans are born with an innate capacity for language. According to this view, the human brain contains a kind of built-in framework—sometimes called a "language faculty"—that equips children to detect the underlying rules of any human language they are exposed to. Supporters point out that children produce grammatical patterns they could not simply have copied, and that they make certain systematic errors, such as saying "goed" instead of "went," which suggests they are applying internal rules rather than imitating.\n\nA contrasting view emphasizes learning and social interaction. Researchers in this tradition argue that children acquire language primarily by detecting statistical patterns in the speech they hear and by using powerful general learning abilities, guided by their desire to communicate with the people around them. On this account, the sheer amount of language input a child receives, and the back-and-forth of everyday conversation, do much of the work.\n\nMost researchers today accept that the truth involves both nature and nurture. Children clearly bring remarkable cognitive abilities to the task, and human brains do seem specially prepared for language in ways that other animals' brains are not. But the specific language a child learns, and the pace at which they learn it, depend heavily on the input and interaction they receive. A child raised in a rich language environment learns faster than one who hears little speech. Language acquisition, then, is neither purely instinctive nor purely learned; it emerges from the interaction between a prepared mind and a language-rich world.`,
-      passageTitle: 'How Children Learn Language',
-      questions: [
-        { type: 'mcq', id: 't15-r-ap1', part: 4, text: 'What puzzle does the passage focus on?', options: ['Why adults forget languages', 'Why languages differ', 'How children acquire language so quickly without formal instruction', 'How to teach grammar'], answer: 2 },
-        { type: 'mcq', id: 't15-r-ap2', part: 4, text: 'According to Chomsky\'s view, what do humans have that helps them learn language?', options: ['Better hearing', 'A special muscle for speech', 'A larger vocabulary than animals', 'An innate, built-in capacity or "language faculty"'], answer: 3 },
-        { type: 'mcq', id: 't15-r-ap3', part: 4, text: 'Why is a child saying "goed" instead of "went" used as evidence?', options: ['It suggests the child is applying internal rules rather than simply imitating.', 'It shows the child has not learned any grammar.', 'It shows the child is confused.', 'It shows the child is copying adults exactly.'], answer: 0 },
-        { type: 'mcq', id: 't15-r-ap4', part: 4, text: 'What does the contrasting view emphasize?', options: ['A built-in language faculty', 'Learning through statistical patterns and social interaction', 'That language cannot be learned', 'That only adults can learn language'], answer: 1 },
-        { type: 'mcq', id: 't15-r-ap5', part: 4, text: 'What is the conclusion most researchers today accept?', options: ['Children cannot learn grammar.', 'Language is purely instinctive.', 'Language acquisition emerges from the interaction between a prepared mind and a language-rich world.', 'Language is purely learned.'], answer: 2 },
-        { type: 'multiselect', id: 't15-r-ap6', part: 4, qRange: [6, 6], text: 'Select the TWO statements supported by the passage.', options: [
-          { letter: 'A', text: 'Children acquire complex language largely without formal instruction.' },
-          { letter: 'B', text: 'The pace of language learning is unaffected by a child\'s environment.' },
-          { letter: 'C', text: 'Most researchers today see language acquisition as involving both nature and nurture.' },
-          { letter: 'D', text: 'Chomsky argued that language is purely learned by imitation.' },
-        ], selectCount: 2, answers: ['A', 'C'] },
-      ],
+      part: 4,
+      skill: 'reading',
+      title: 'Reading — Read an Academic Passage',
+      instructions: TOEFL_READING_SET15_V2.academic.instructions,
+      sectionNote: 'Las preguntas 1–5 reproducen familias oficiales de selección única. La pregunta 6 es práctica complementaria WeLearn.',
+      passage: TOEFL_READING_SET15_V2.academic.text,
+      passageTitle: TOEFL_READING_SET15_V2.academic.title,
+      questions: TOEFL_READING_SET15_V2.academic.items.map((item) =>
+        toToeflReadingQuestion(TOEFL_READING_SET15_V2.objectId, item, 4)),
     },
     {
       part: 5, skill: 'listening', title: 'Listening — Listen and Choose a Response',
@@ -132,16 +105,13 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 9, skill: 'writing', title: 'Writing — Build a Sentence',
-      instructions: 'Put the words in the correct order to make a grammatical sentence.',
-      questions: [
-        { type: 'sentencebuild', id: 't15-w-bs1', part: 9, tiles: ['He', 'studies', 'engineering', 'at', 'the university'], answer: ['He', 'studies', 'engineering', 'at', 'the university'] },
-        { type: 'sentencebuild', id: 't15-w-bs2', part: 9, tiles: ['the file', 'you', 'send', 'again', 'Could', 'me'], answer: ['Could', 'you', 'send', 'me', 'the file', 'again'] },
-        { type: 'sentencebuild', id: 't15-w-bs3', part: 9, tiles: ['saw', 'The film', 'we', 'was', 'excellent'], answer: ['The film', 'we', 'saw', 'was', 'excellent'] },
-        { type: 'sentencebuild', id: 't15-w-bs4', part: 9, tiles: ['stops,', 'When', 'go out', 'we\'ll', 'the rain'], answer: ['When', 'the rain', 'stops,', 'we\'ll', 'go out'] },
-        { type: 'sentencebuild', id: 't15-w-bs5', part: 9, tiles: ['is', 'This road', 'the other one', 'than', 'busier'], answer: ['This road', 'is', 'busier', 'than', 'the other one'] },
-        { type: 'sentencebuild', id: 't15-w-bs6', part: 9, tiles: ['the results,', 'Surprised', 'checked', 'she', 'by', 'them again'], answer: ['Surprised', 'by', 'the results,', 'she', 'checked', 'them again'] },
-      ],
+      part: 9,
+      skill: 'writing',
+      title: 'Writing — Build a Sentence',
+      instructions: 'Read the first speaker. Arrange the fragments to make a grammatical and contextually appropriate reply. One fragment is not used.',
+      sectionNote: TOEFL_BUILD_SENTENCE_SET15_V2.interactionDisclosure,
+      questions: TOEFL_BUILD_SENTENCE_SET15_V2.items.map((item) =>
+        toToeflBuildSentenceQuestion(TOEFL_BUILD_SENTENCE_SET15_V2.objectId, item, 9)),
     },
     {
       part: 10, skill: 'writing', title: 'Writing — Write an Email',

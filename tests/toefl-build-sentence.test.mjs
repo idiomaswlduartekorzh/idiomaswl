@@ -14,6 +14,13 @@ import {
   TOEFL_BUILD_SENTENCE_SET9_V2,
   TOEFL_BUILD_SENTENCE_SET10_V2,
 } from '../src/data/toefl/build-sentence-sets-6-10.ts';
+import {
+  TOEFL_BUILD_SENTENCE_SET11_V2,
+  TOEFL_BUILD_SENTENCE_SET12_V2,
+  TOEFL_BUILD_SENTENCE_SET13_V2,
+  TOEFL_BUILD_SENTENCE_SET14_V2,
+  TOEFL_BUILD_SENTENCE_SET15_V2,
+} from '../src/data/toefl/build-sentence-sets-11-15.ts';
 import { scoreToeflBuildSentenceAttempt } from '../src/lib/toefl/build-sentence-contract.ts';
 
 const answerPositions = [
@@ -64,7 +71,7 @@ test('the public pilot contains ten contextual items and no answer property', ()
   assert.ok(TOEFL_BUILD_SENTENCE_SET1.items.every((item) => new Set(item.tiles.map((tile) => tile.id)).size === item.tiles.length));
 });
 
-test('Sets 2–10 expose ninety contextual items with one distractor and no scoring key', () => {
+test('Sets 2–15 expose 140 contextual items with one distractor and no scoring key', () => {
   const expansionSets = [
     TOEFL_BUILD_SENTENCE_SET2_V2,
     TOEFL_BUILD_SENTENCE_SET3_V2,
@@ -75,8 +82,13 @@ test('Sets 2–10 expose ninety contextual items with one distractor and no scor
     TOEFL_BUILD_SENTENCE_SET8_V2,
     TOEFL_BUILD_SENTENCE_SET9_V2,
     TOEFL_BUILD_SENTENCE_SET10_V2,
+    TOEFL_BUILD_SENTENCE_SET11_V2,
+    TOEFL_BUILD_SENTENCE_SET12_V2,
+    TOEFL_BUILD_SENTENCE_SET13_V2,
+    TOEFL_BUILD_SENTENCE_SET14_V2,
+    TOEFL_BUILD_SENTENCE_SET15_V2,
   ];
-  assert.equal(new Set(expansionSets.map((set) => set.objectId)).size, 9);
+  assert.equal(new Set(expansionSets.map((set) => set.objectId)).size, 14);
   for (const set of expansionSets) {
     assert.equal(set.items.length, 10);
     assert.ok(set.items.every((item) => item.context && item.replyPrefix && item.replySuffix));
@@ -86,7 +98,7 @@ test('Sets 2–10 expose ninety contextual items with one distractor and no scor
   }
 });
 
-test('the ninety canonical expansion orders reconcile to 10/10 per set', () => {
+test('the 140 canonical expansion orders reconcile to 10/10 per set', () => {
   const patterns = [
     [2, 4, 0, 3, 1],
     [4, 1, 3, 0, 2],
@@ -104,6 +116,11 @@ test('the ninety canonical expansion orders reconcile to 10/10 per set', () => {
     TOEFL_BUILD_SENTENCE_SET8_V2,
     TOEFL_BUILD_SENTENCE_SET9_V2,
     TOEFL_BUILD_SENTENCE_SET10_V2,
+    TOEFL_BUILD_SENTENCE_SET11_V2,
+    TOEFL_BUILD_SENTENCE_SET12_V2,
+    TOEFL_BUILD_SENTENCE_SET13_V2,
+    TOEFL_BUILD_SENTENCE_SET14_V2,
+    TOEFL_BUILD_SENTENCE_SET15_V2,
   ];
   for (const [setIndex, set] of expansionSets.entries()) {
     const setNumber = setIndex + 2;

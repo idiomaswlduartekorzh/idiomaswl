@@ -8,11 +8,11 @@ set-7	10	3+2	85+97	197	5	1	10	10	0	420	none-published	600	recommended-100	non_au
 set-8	10	3+2	85+82	192	5	1	10	10	0	420	none-published	600	recommended-100	non_audio_set_complete
 set-9	10	3+2	79+94	199	5	1	10	10	0	420	none-published	600	recommended-100	non_audio_set_complete
 set-10	10	3+2	88+73	197	5	1	10	10	0	420	none-published	600	recommended-100	non_audio_set_complete
-set-11	12	3+2	80+91	313	5	1	6	0	1	420	none-published	600	recommended-100	CTW_repair_academic_compress_build_expand
-set-12	12	3+2	82+77	306	5	1	6	0	1	420	none-published	600	recommended-100	CTW_repair_academic_compress_build_expand
-set-13	12	3+2	75+99	310	5	1	6	0	1	420	none-published	600	recommended-100	CTW_rewrite_academic_compress_build_expand
-set-14	12	3+2	84+108	324	5	1	6	0	1	420	none-published	600	recommended-100	CTW_token_adjudicate_academic_compress_build_expand
-set-15	12	3+2	77+96	321	5	1	6	0	1	420	none-published	600	recommended-100	CTW_repair_academic_compress_build_expand
+set-11	10	3+2	80+91	182	5	1	10	10	0	420	none-published	600	recommended-100	non_audio_set_complete
+set-12	10	3+2	82+77	190	5	1	10	10	0	420	none-published	600	recommended-100	non_audio_set_complete
+set-13	10	3+2	75+99	193	5	1	10	10	0	420	none-published	600	recommended-100	non_audio_set_complete
+set-14	10	3+2	84+108	202	5	1	10	10	0	420	none-published	600	recommended-100	non_audio_set_complete
+set-15	10	3+2	77+96	202	5	1	10	10	0	420	none-published	600	recommended-100	non_audio_set_complete
 set-16	12	3+2	73+101	337	5	1	6	0	1	420	none-published	600	recommended-100	CTW_extend_rewrite_academic_compress_build_expand
 set-17	12	3+2	78+107	325	5	1	6	0	1	420	none-published	600	recommended-100	CTW_repair_academic_compress_build_expand
 set-18	12	3+2	64+99	334	5	1	6	0	1	420	none-published	600	recommended-100	CTW_repair_academic_compress_build_expand
