@@ -12,6 +12,7 @@ import { TOEFL_READING_SETS_16_TO_20 } from '@/data/toefl/reading-sets-16-20';
 import type { ToeflReadingScoringItem } from '@/lib/toefl/reading-contract';
 import { TOEFL_READING_MODULE2_SCORING_BY_OBJECT_ID } from '@/server/toefl/reading-module2-sets-1-5';
 import { TOEFL_READING_MODULE2_SCORING_SETS_6_TO_10_BY_OBJECT_ID } from '@/server/toefl/reading-module2-sets-6-10';
+import { TOEFL_READING_MODULE2_SCORING_SETS_11_TO_15_BY_OBJECT_ID } from '@/server/toefl/reading-module2-sets-11-15';
 
 const ANSWER_KEY: Readonly<Record<string, readonly string[]>> = {
   'item:t2-r-ap1-v2': ['item:t2-r-ap1-v2:option-b'],
@@ -160,6 +161,7 @@ const TOEFL_READING_MODULE1_SCORING_BY_OBJECT_ID = Object.fromEntries([
 const TOEFL_READING_MODULE2_SCORING = {
   ...TOEFL_READING_MODULE2_SCORING_BY_OBJECT_ID,
   ...TOEFL_READING_MODULE2_SCORING_SETS_6_TO_10_BY_OBJECT_ID,
+  ...TOEFL_READING_MODULE2_SCORING_SETS_11_TO_15_BY_OBJECT_ID,
 };
 
 export const TOEFL_READING_SCORING_BY_OBJECT_ID = Object.fromEntries(

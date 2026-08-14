@@ -3298,3 +3298,22 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
 - Estado: Reading Sets 1–10 40/40 y 78/97 total. Faltan Reading Sets 11–20, Listening,
   Repeat, clocks/navegación y gates finales. Cero audio abierto, reproducido,
   transcrito, generado o modificado.
+
+### Expansión forma fija — Reading Módulo 2 Sets 11–15 — 2026-08-14
+
+- Se aplicó la capa reversible a Sets 11–15. Cada sesión fija conserva Módulo 1,
+  excluye el suplemento del conteo y suma Módulo 2 con 10 CTW + 5 Daily + 5 Academic.
+- Los CTW reconstruyen 72–79 palabras y los Academic 181–206. Los huecos mantienen
+  la primera oración intacta, alternancia exacta y primera mitad visible.
+- El checker encontró antes de integrar tres cortes incorrectos de mitad (`before`,
+  `without`, `carry`); quedaron corregidos en contenido, claves privadas y pruebas.
+- Auditoría factual: mareas/suelo, agua subterránea/glaciares, conservación preventiva,
+  circulación oceánica y polinización se contrastaron con NOAA, USGS, USDA, NPS y
+  Smithsonian. Evidencia en
+  `docs/toefl-2026-reading-module2-sets11-15-factual-audit-2026-08-14.md`.
+- Evidencia: checker fijo PASS Sets 1–15, unit 3/3, regresiones CTW 8/8 y Reading
+  8/8, TypeScript y ESLint dirigido PASS; build con guardianes y 1.364/1.364 rutas;
+  Chromium forma fija 4/4 y mocks representativos 8/8.
+- Estado: Reading Sets 1–15 40/40 y 78/97 total. Faltan Reading Sets 16–20,
+  Listening, Repeat, clocks/navegación y gates finales. Cero audio abierto,
+  reproducido, transcrito, generado o modificado.

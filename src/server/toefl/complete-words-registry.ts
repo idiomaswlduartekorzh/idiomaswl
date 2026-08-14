@@ -32,6 +32,7 @@ import {
 import type { CompleteWordsScoringBlank } from '@/lib/toefl/complete-words-contract';
 import { TOEFL_CTW_MODULE2_SCORING_BY_OBJECT_ID } from '@/server/toefl/reading-module2-sets-1-5';
 import { TOEFL_CTW_MODULE2_SCORING_SETS_6_TO_10_BY_OBJECT_ID } from '@/server/toefl/reading-module2-sets-6-10';
+import { TOEFL_CTW_MODULE2_SCORING_SETS_11_TO_15_BY_OBJECT_ID } from '@/server/toefl/reading-module2-sets-11-15';
 
 function attachKey(
   blanks: readonly { id: string; num: number; prefix: string; missingLength: number }[],
@@ -260,6 +261,7 @@ export const TOEFL_CTW_SCORING_BY_OBJECT_ID: Readonly<Record<string, readonly Co
   [TOEFL_CTW_SET20_V2.objectId]: attachKey(TOEFL_CTW_SET20_V2.blanks, SET20_KEY),
   ...TOEFL_CTW_MODULE2_SCORING_BY_OBJECT_ID,
   ...TOEFL_CTW_MODULE2_SCORING_SETS_6_TO_10_BY_OBJECT_ID,
+  ...TOEFL_CTW_MODULE2_SCORING_SETS_11_TO_15_BY_OBJECT_ID,
 };
 
 // The eight superseded learner-facing blocks remain here as reusable provenance,

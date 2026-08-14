@@ -34,12 +34,14 @@ const cases = [
     set: 11, objectId: 'object:t11-r-ctw-v2', itemPrefix: 'item:t11-r-ctw-v2:',
     answers: ['he', 'me', 'ome', 'ot', 'hts', 'e', 'der', 'nd', 'vive', 'ting'],
     readingObjectId: 'object:toefl-reading-set11-v2', readingLabels: [['c'], ['d'], ['a'], ['b'], ['c'], ['a', 'c']],
+    module2ReadingLabels: ['b', 'c', 'a', 'd', 'b', 'c', 'a', 'd', 'b', 'c'],
     buildObjectId: 'object:toefl-build-sentence-set11-v2',
   },
   {
     set: 15, objectId: 'object:t15-r-ctw-v2', itemPrefix: 'item:t15-r-ctw-v2:',
     answers: ['duce', 'aust', 'ile', 'ough', 'tal', 'act', 'n', 'ation', 'icle', 'nd'],
     readingObjectId: 'object:toefl-reading-set15-v2', readingLabels: [['c'], ['d'], ['a'], ['b'], ['c'], ['a', 'c']],
+    module2ReadingLabels: ['a', 'c', 'b', 'd', 'a', 'b', 'a', 'c', 'd', 'b'],
     buildObjectId: 'object:toefl-build-sentence-set15-v2',
   },
   {

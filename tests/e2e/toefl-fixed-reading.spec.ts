@@ -23,6 +23,13 @@ const cases = [
     readingLabels: ['a', 'b', 'c', 'a', 'b', 'a', 'b', 'c', 'd', 'a'],
     combinedReadingCount: 15,
   },
+  {
+    set: 15,
+    ctwObjectId: 'object:t15-r-m2-ctw-v1',
+    ctwAnswers: ['nts', 'end', 'mals', 'rry', 'ween', 'ile', 'or', 'ls', 'r', 'rby'],
+    readingLabels: ['a', 'c', 'b', 'd', 'a', 'b', 'a', 'c', 'd', 'b'],
+    combinedReadingCount: 15,
+  },
 ] as const;
 
 for (const candidate of cases) {
