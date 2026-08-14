@@ -180,7 +180,8 @@ export default function MapasPage() {
               alt={`${ex.title}. Original WeLearn IELTS Task 1 map reference showing the before and after layout.`}
               width={1600}
               height={1000}
-              priority={exIdx === 0}
+              loading="lazy"
+              unoptimized
               sizes="(max-width: 768px) 100vw, 1080px"
               style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 6 }}
             />

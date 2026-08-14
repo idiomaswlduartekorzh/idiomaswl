@@ -270,7 +270,7 @@ export default function GraficosDeBarrasContent({ faqs }: { faqs: Faq[] }) {
   }
 
   return (
-    <main className="wl-section">
+    <div className="wl-section">
       <div className="wrap">
         <div style={{ maxWidth: 820, margin: '0 auto' }}>
           <nav aria-label="Breadcrumb" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
@@ -431,6 +431,6 @@ export default function GraficosDeBarrasContent({ faqs }: { faqs: Faq[] }) {
           </section>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

@@ -33,7 +33,8 @@ export default function Task1ApprovedMapVisual({ variant = 0 }: { variant?: numb
       width={1600}
       height={1000}
       sizes="(max-width: 768px) 100vw, 1080px"
-      loading="eager"
+      loading="lazy"
+      unoptimized
       style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 6 }}
     />
   );
