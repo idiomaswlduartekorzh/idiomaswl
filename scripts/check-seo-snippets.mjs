@@ -150,6 +150,48 @@ const walkApp = (dir) => {
 }
 walkApp(appRoot)
 
+// ── 2b. Páginas de examen ────────────────────────────────────────────────────
+//
+// El recorrido de arriba solo ve metadatos escritos como literal dentro de
+// `export const metadata`. `/examenes/[exam]` los arma con `generateMetadata`
+// desde `EXAM_GUIDES`, así que pasaba de largo — y por ahí se coló el título más
+// caro del sitio.
+//
+// Medido el 13 de agosto de 2026: `/examenes/cambridge-b2` servía un título de
+// 96 caracteres y una descripción de 322. Google corta en ~60 y ~155, así que
+// mostraba «Cambridge B2 First (FCE) – First Certificate in English: qu…»: tres
+// veces el nombre del examen y cortado justo antes de la parte útil. Esa página
+// recibe una de cada cuatro búsquedas del sitio con consulta visible.
+//
+// La causa: `cambridge-b2` era la única guía sin `title` ni `description`
+// propios, así que caía en la plantilla de reserva de `generateMetadata`, que
+// concatena el nombre largo del examen y produce esos 96 caracteres. Ocho de las
+// nueve guías tenían además título o descripción fuera de medida.
+const guidesSrc = fs.readFileSync(path.join(root, 'src/data/examGuides.ts'), 'utf8')
+// Las claves aparecen entrecomilladas ('cambridge-b2') y sin comillas (goethe).
+const guideMarks = [...guidesSrc.matchAll(/^ {2}'?([a-z0-9-]+)'?: \{/gm)]
+let examsChecked = 0
+for (const [index, mark] of guideMarks.entries()) {
+  const slug = mark[1]
+  if (slug === 'sources') continue
+  const end = index + 1 < guideMarks.length ? guideMarks[index + 1].index : guidesSrc.length
+  const body = guidesSrc.slice(mark.index, end)
+  const title = (body.match(/\n {4}title: '((?:[^'\\]|\\.)*)'/) ?? [])[1]
+  const description = (body.match(/\n {4}description:\s*\n?\s*'((?:[^'\\]|\\.)*)'/) ?? [])[1]
+
+  // Faltar es peor que pasarse: sin `title` propio, la página cae en la
+  // plantilla de reserva, que siempre produce un título más largo que el tope.
+  if (!title || !description) {
+    failures.push(
+      `src/data/examGuides.ts (${slug}): sin ${!title ? 'title' : 'description'} propio — ` +
+        'la página caería en la plantilla de reserva, que no cabe en el resultado'
+    )
+    continue
+  }
+  audit(`examenes/${slug}`, title, description)
+  examsChecked += 1
+}
+
 // ── 3. Blog: se comprueba el valor ya ajustado, que es el que se publica ──────
 const blogSrc = fs.readFileSync(path.join(root, 'src/data/blog.ts'), 'utf8')
 const blogEntries = [...blogSrc.matchAll(/\n\s{2}\{\n([\s\S]*?)\n\s{2}\},?\n/g)]
@@ -204,7 +246,8 @@ for (const lang of HISTORIA_LANG_KEYS) {
 
 // ── Informe ───────────────────────────────────────────────────────────────────
 console.log(
-  `Fragmentos comprobados: ${grammarChecked} temas de gramática, ${staticChecked} rutas estáticas, ${blogChecked} artículos, ${historiasChecked} páginas de Historias.`
+  `Fragmentos comprobados: ${grammarChecked} temas de gramática, ${staticChecked} rutas estáticas, ` +
+    `${examsChecked} páginas de examen, ${blogChecked} artículos, ${historiasChecked} páginas de Historias.`
 )
 
 if (showSamples) {

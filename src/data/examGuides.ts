@@ -51,8 +51,8 @@ export type ExamGuide = {
 export const EXAM_GUIDES: Record<string, ExamGuide> = {
 
   'celpe-bras': {
-    title: 'Celpe-Bras en Bucaramanga: el único examen oficial que se aplica aquí',
-    description: 'El Celpe-Bras es la única certificación oficial de portugués de Brasil, y se aplica en Bucaramanga. Cómo funciona, qué niveles otorga y por qué no se aprueba ni se reprueba.',
+    title: 'Celpe-Bras en Bucaramanga: el examen oficial de portugués',
+    description: 'La única certificación oficial de portugués de Brasil, y se aplica en Bucaramanga. Cómo funciona y por qué no se aprueba ni se reprueba.',
     lead:
       'Si estás en Bucaramanga, esto es una ventaja poco conocida: <strong>el Celpe-Bras se aplica aquí</strong>. Es el único examen oficial de portugués reconocido por el Gobierno de Brasil, y a diferencia del IELTS o el Goethe, no tienes que viajar a Bogotá para presentarlo.',
     sections: [
@@ -100,8 +100,8 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
     checked: 'agosto de 2026',
   },
   'delf-dalf': {
-    title: 'DELF y DALF: qué certifican y por qué no sirven para migrar a Canadá',
-    description: 'El DELF y el DALF son las certificaciones oficiales de francés del Ministerio de Educación francés, y no caducan. Pero para inmigrar a Canadá se exige TEF o TCF: el error más caro y más común.',
+    title: 'DELF y DALF: qué certifican y por qué no valen para Canadá',
+    description: 'Las certificaciones oficiales de francés, que no caducan. Pero para inmigrar a Canadá se exige TEF o TCF: el error más caro y más común.',
     lead:
       'Antes de pagar nada: <strong>si tu objetivo es migrar a Canadá, el DELF no te sirve</strong>. Es el error más caro y más frecuente con el francés. Para inmigración canadiense se exigen <strong>TEF Canada o TCF Canada</strong>, no el DELF ni el DALF.',
     sections: [
@@ -151,7 +151,7 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
 
   'cils-celi': {
     title: 'CILS B1 ciudadanía italiana: qué examen presentar y dónde',
-    description: 'Para la ciudadanía italiana necesitas acreditar B1. Aquí está la diferencia entre CILS y CELI, qué examen sirve hoy para el trámite y dónde se presenta en Colombia.',
+    description: 'Para la ciudadanía italiana necesitas acreditar B1. Diferencia entre CILS y CELI, cuál sirve hoy para el trámite y dónde se presenta.',
     lead:
       'Si vas por la ciudadanía italiana, esto te ahorra un viaje: <strong>el examen corto de «B1 Ciudadanía» ya no se aplica en Bogotá</strong>. Hoy hay que presentar el <strong>CILS B1 completo</strong>, que es más largo y evalúa las cuatro destrezas. Mucho contenido que sigue circulando no está actualizado en esto.',
     sections: [
@@ -199,8 +199,8 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
     checked: 'agosto de 2026',
   },
   goethe: {
-    title: 'Goethe-Zertifikat: qué nivel necesitas y dónde presentarlo en Colombia',
-    description: 'El Goethe-Zertifikat es la certificación oficial de alemán. Qué nivel piden para estudiar, trabajar o reagrupación familiar en Alemania, y en qué ciudades de Colombia se presenta.',
+    title: 'Goethe-Zertifikat: qué nivel necesitas y dónde presentarlo',
+    description: 'La certificación oficial de alemán. Qué nivel piden para estudiar, trabajar o reagrupación familiar, y dónde se presenta en Colombia.',
     lead:
       'El <strong>Goethe-Zertifikat</strong> es la certificación oficial de alemán del Goethe-Institut, y va de A1 a C2. Lo primero que conviene saber si estás en Bucaramanga: <strong>aquí no hay sede</strong>. En Colombia se presenta en Bogotá, Cali, Medellín y Cartagena.',
     sections: [
@@ -249,8 +249,8 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
   },
 
   ielts: {
-    title: 'IELTS Academic o General: cuál necesitas, y simulacros gratis',
-    description: 'La diferencia real entre IELTS Academic y General Training: Listening y Speaking son idénticos, solo cambian Reading y Writing. Simulacros gratis, banda 0-9 explicada y dónde se presenta en Bucaramanga.',
+    title: 'IELTS Academic o General: cuál necesitas y simulacros gratis',
+    description: 'Listening y Speaking son idénticos en Academic y General; solo cambian Reading y Writing. Simulacros gratis y la banda 0-9 explicada.',
     lead:
       'La duda más frecuente tiene una respuesta corta: <strong>Listening y Speaking son exactamente iguales en los dos exámenes</strong>. Lo único que cambia es <strong>Reading y Writing</strong>. Y no eliges por cuál te parece más fácil: eliges el que te exige la institución o el proceso migratorio al que aplicas.',
     sections: [
@@ -326,7 +326,7 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
 
   toefl: {
     title: 'Simulacro TOEFL gratis y la nueva escala 1–6: guía 2026',
-    description: 'Simulacros del TOEFL iBT gratis con formato real. Desde enero de 2026 el examen se puntúa en bandas de 1 a 6, no sobre 120: aquí está qué cambió, qué significa tu banda y qué siguen pidiendo las universidades.',
+    description: 'Simulacros del TOEFL iBT gratis con formato real. Desde enero de 2026 se puntúa en bandas de 1 a 6, no sobre 120: qué cambió y qué piden.',
     lead:
       'Antes de nada, lo que casi nadie te ha dicho: <strong>desde el 21 de enero de 2026 el TOEFL iBT ya no se puntúa sobre 120</strong>. El puntaje principal es ahora una <strong>banda de 1 a 6</strong>, con medios puntos, igual que el IELTS. El 0–120 se sigue reportando como equivalente, pero solo durante una transición de dos años.',
     sections: [
@@ -403,7 +403,7 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
 
   topik: {
     title: 'TOPIK I y TOPIK II: diferencias, puntajes y simulacro gratis',
-    description: 'TOPIK I y TOPIK II no son dos niveles del mismo examen: son dos exámenes distintos. Aquí está la diferencia, los puntajes que necesitas para cada nivel del 1 al 6, y un simulacro gratis para saber por cuál empezar.',
+    description: 'TOPIK I y TOPIK II son dos exámenes distintos, no dos niveles. La diferencia, los puntajes de cada nivel del 1 al 6 y un simulacro gratis.',
     lead:
       'La confusión más común, y la que hace perder dinero: <strong>TOPIK I y TOPIK II no son dos niveles del mismo examen</strong>. Son dos exámenes distintos, con formato distinto y precio distinto, y te inscribes en uno o en otro. TOPIK I certifica los niveles 1 y 2; TOPIK II certifica del 3 al 6.',
     sections: [
@@ -543,6 +543,9 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
     checked: 'agosto de 2026',
   },
   'cambridge-b2': {
+    title: 'B2 First (FCE): qué nivel de inglés es y cómo se aprueba',
+    description:
+      'El First, el FCE y el B2 First son el mismo examen. Qué nivel certifica, con qué nota se aprueba y 10 simulacros completos gratis.',
     lead:
       'Sí: el <strong>B2 First</strong>, el <strong>FCE</strong> y lo que casi todo el mundo llama simplemente <strong>«el First»</strong> son exactamente el mismo examen. No son tres certificados distintos ni tres niveles distintos. Cambridge le cambió el nombre para que el propio título dijera qué nivel acredita.',
     sections: [
