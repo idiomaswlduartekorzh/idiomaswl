@@ -3042,3 +3042,39 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
 - Preservación: los textos personales, fuentes v1 y ejercicios anteriores no se borran;
   pasan a suplemento o fuente server-only cuando el reemplazo oficial-family esté
   aprobado. Cero cambios de MP3, transcripción, TTS o ElevenLabs.
+
+### Expansión no-audio — lote W2 Complete the Words Sets 2–5 — 2026-08-14
+
+- Alcance cerrado: los Sets 2, 3, 4 y 5 sustituyen sus dos bloques heredados de seis
+  huecos por un único objeto académico de 10 objetivos. Los textos finales miden 84,
+  79, 76 y 79 palabras, respectivamente.
+- Contrato TOEFL: en los cuatro objetos la primera oración queda intacta; después se
+  oculta exactamente cada segunda palabra hasta completar diez objetivos. Cada palabra
+  muestra su primera mitad y el estudiante escribe sólo las letras restantes.
+- Revisión editorial/factual: se aplicaron las reparaciones ya registradas en las
+  auditorías de banco: huddling y efectos climáticos se califican por especie; se retiró
+  “known universe”; la reproducción y comunicación de hormigas ya no se presentan como
+  absolutos; el texto de sueño limita la afirmación de depuración cerebral a evidencia
+  sugerente en personas. Se conserva la dispensa de segunda revisión del owner; no se
+  afirma adjudicación independiente.
+- Seguridad y scoring: cada simulacro tiene `objectId`, versión, IDs estables y clave
+  independiente en un módulo `server-only`. El runner dejó de enviar el objeto fijo del
+  Set 1 y ahora usa la identidad declarada por cada pregunta. El endpoint rechaza objetos,
+  IDs, respuestas o presentaciones desconocidas y reconcilia 10/10 por objeto.
+- Preservación: los ocho bloques anteriores de los Sets 2–5, incluidos los textos
+  personales y sus respuestas, permanecen como fuentes server-only reutilizables; ya no
+  contaminan el conteo official-family ni viajan al cliente.
+- Guardianes automáticos: `check:toefl-ctw` inspecciona Sets 1–5 y verifica conteo,
+  70–100 palabras, primera oración, alternancia, mitad visible, IDs, separación de clave,
+  preservación y wiring por objeto. PASS. Unit scoring PASS 8/8; ESLint dirigido PASS;
+  TypeScript PASS.
+- Navegador real: Chromium recorrió los Sets 2 y 5 como extremos representativos,
+  verificó diez inputs accesibles, envió la identidad correcta y recibió 10/10 desde el
+  endpoint seguro. PASS 2/2. El primer intento no ejecutó casos porque macOS negó el
+  arranque de Chromium dentro del sandbox; la repetición autorizada pasó y separa ese
+  ruido de infraestructura del resultado de producto.
+- Estado: CTW queda cerrado para Sets 2–5. El siguiente trabajo del mismo lote es
+  comprimir Academic a aproximadamente 200 palabras preservando cinco respuestas y
+  expandir Build a Sentence a diez intercambios con distractor y clave server-only.
+  Sets 6–20 conservan pendiente CTW. Cero cambios, reproducción, transcripción,
+  generación o consumo de audio/API.

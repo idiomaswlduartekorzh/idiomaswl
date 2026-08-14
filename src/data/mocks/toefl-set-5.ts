@@ -1,4 +1,5 @@
 import type { MockExam } from './types';
+import { TOEFL_CTW_SET5_V2 } from '@/data/toefl/complete-the-words-sets-2-5';
 
 // TOEFL iBT — formato oficial vigente (actualización 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md (verificado contra ETS 2026).
@@ -26,35 +27,16 @@ const mock: MockExam = {
       questions: [
         {
           type: 'wordcomplete',
-          id: 't5-r-cw1',
+          id: TOEFL_CTW_SET5_V2.id,
           part: 1,
-          qRange: [1, 6],
-          instructions: 'A student is writing a short message to a classmate.',
-          template: `Hi Mara,\n\nThanks for lending me your notes from Tuesday's {{1}}. I was {{2}} because I had a doctor's appointment, so I really appreciate it. I've {{3}} them and I think I understand the main points now. Could we {{4}} at the library tomorrow to compare answers before the {{5}} on Friday? I'm free after two o'clock. Let me {{6}} what time works for you.\n\nSee you soon,\nDan`,
-          blanks: [
-            { num: 1, prefix: 'lec', answer: 'lecture' },
-            { num: 2, prefix: 'ab', answer: 'absent' },
-            { num: 3, prefix: 're', answer: 'read' },
-            { num: 4, prefix: 'm', answer: 'meet' },
-            { num: 5, prefix: 'q', answer: 'quiz' },
-            { num: 6, prefix: 'kn', answer: 'know' },
-          ],
-        },
-        {
-          type: 'wordcomplete',
-          id: 't5-r-cw2',
-          part: 1,
-          qRange: [7, 12],
-          instructions: 'The following is from an article about sleep.',
-          template: `Most adults need between seven and nine hours of sleep each {{1}}. During sleep, the brain does not simply shut down; it stays {{2}}, processing memories and clearing waste products. People who regularly sleep too {{3}} may find it harder to concentrate and are more likely to make {{4}}. Researchers {{5}} that keeping a regular schedule — going to bed and waking up at the same time — is one of the most {{6}} ways to improve sleep quality.`,
-          blanks: [
-            { num: 1, prefix: 'ni', answer: 'night' },
-            { num: 2, prefix: 'ac', answer: 'active' },
-            { num: 3, prefix: 'li', answer: 'little' },
-            { num: 4, prefix: 'mis', answer: 'mistakes' },
-            { num: 5, prefix: 'sugg', answer: 'suggest' },
-            { num: 6, prefix: 'eff', answer: 'effective' },
-          ],
+          qRange: [1, 10],
+          objectId: TOEFL_CTW_SET5_V2.objectId,
+          contentVersion: String(TOEFL_CTW_SET5_V2.version),
+          serverScoring: 'toefl-complete-words',
+          alignment: 'official-family-pilot',
+          instructions: TOEFL_CTW_SET5_V2.instructions,
+          template: TOEFL_CTW_SET5_V2.template,
+          blanks: TOEFL_CTW_SET5_V2.blanks.map((blank) => ({ ...blank })),
         },
       ],
     },

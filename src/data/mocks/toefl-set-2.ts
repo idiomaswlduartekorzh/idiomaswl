@@ -1,4 +1,5 @@
 import type { MockExam } from './types';
+import { TOEFL_CTW_SET2_V2 } from '@/data/toefl/complete-the-words-sets-2-5';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md. Escala 1–6.
@@ -17,30 +18,14 @@ const mock: MockExam = {
       instructions: 'Complete each word so the text makes sense. Some letters are given.',
       questions: [
         {
-          type: 'wordcomplete', id: 't2-r-cw1', part: 1, qRange: [1, 6],
-          instructions: 'A student is writing to a professor to ask for a reference.',
-          template: `Dear Professor Blake,\n\nI am applying for a summer {{1}} at a local research lab, and the application requires a {{2}} from a teacher. As I really enjoyed your biology {{3}} and did well in it, I was hoping you might be willing to {{4}} me. The {{5}} for the application is the end of the month. Please let me know if you would be {{6}} to help.\n\nThank you very much,\nRafael`,
-          blanks: [
-            { num: 1, prefix: 'intern', answer: 'internship' },
-            { num: 2, prefix: 'ref', answer: 'reference' },
-            { num: 3, prefix: 'cou', answer: 'course' },
-            { num: 4, prefix: 'rec', answer: 'recommend' },
-            { num: 5, prefix: 'dead', answer: 'deadline' },
-            { num: 6, prefix: 'wil', answer: 'willing' },
-          ],
-        },
-        {
-          type: 'wordcomplete', id: 't2-r-cw2', part: 1, qRange: [7, 12],
-          instructions: 'The following is from an article about penguins.',
-          template: `Penguins are birds that cannot {{1}}, but they are excellent swimmers. Their wings have become {{2}} that help them move quickly through the water in search of fish. Most penguins live in the southern half of the world, and some survive in extremely {{3}} conditions. To keep warm, they have a thick layer of {{4}} under their skin and huddle together in large {{5}}. Sadly, climate change is now threatening the {{6}} where many penguins live.`,
-          blanks: [
-            { num: 1, prefix: 'fl', answer: 'fly' },
-            { num: 2, prefix: 'fli', answer: 'flippers' },
-            { num: 3, prefix: 'co', answer: 'cold' },
-            { num: 4, prefix: 'fa', answer: 'fat' },
-            { num: 5, prefix: 'gro', answer: 'groups' },
-            { num: 6, prefix: 'hab', answer: 'habitats' },
-          ],
+          type: 'wordcomplete', id: TOEFL_CTW_SET2_V2.id, part: 1, qRange: [1, 10],
+          objectId: TOEFL_CTW_SET2_V2.objectId,
+          contentVersion: String(TOEFL_CTW_SET2_V2.version),
+          serverScoring: 'toefl-complete-words',
+          alignment: 'official-family-pilot',
+          instructions: TOEFL_CTW_SET2_V2.instructions,
+          template: TOEFL_CTW_SET2_V2.template,
+          blanks: TOEFL_CTW_SET2_V2.blanks.map((blank) => ({ ...blank })),
         },
       ],
     },

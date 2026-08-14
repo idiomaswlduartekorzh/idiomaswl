@@ -1,4 +1,5 @@
 import type { MockExam } from './types';
+import { TOEFL_CTW_SET3_V2 } from '@/data/toefl/complete-the-words-sets-2-5';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md. Escala 1–6.
@@ -17,30 +18,14 @@ const mock: MockExam = {
       instructions: 'Complete each word so the text makes sense. Some letters are given.',
       questions: [
         {
-          type: 'wordcomplete', id: 't3-r-cw1', part: 1, qRange: [1, 6],
-          instructions: 'A student is writing to a language school.',
-          template: `Dear Sir or Madam,\n\nI am interested in taking a Spanish {{1}} at your school this summer. I am a complete {{2}} and have never studied the language before. Could you tell me how many {{3}} there are each week and how long the {{4}} lasts? I would also like to know the {{5}} of the course and whether textbooks are {{6}} in the price.\n\nThank you,\nHelen`,
-          blanks: [
-            { num: 1, prefix: 'cou', answer: 'course' },
-            { num: 2, prefix: 'beg', answer: 'beginner' },
-            { num: 3, prefix: 'les', answer: 'lessons' },
-            { num: 4, prefix: 'ter', answer: 'term' },
-            { num: 5, prefix: 'co', answer: 'cost' },
-            { num: 6, prefix: 'inc', answer: 'included' },
-          ],
-        },
-        {
-          type: 'wordcomplete', id: 't3-r-cw2', part: 1, qRange: [7, 12],
-          instructions: 'The following is from an article about the brain.',
-          template: `The human brain is one of the most complex {{1}} in the known universe. It contains billions of nerve cells, or {{2}}, that send signals to one another. These signals allow us to think, feel, move, and {{3}} information. The brain also controls processes we are not aware of, such as our {{4}} and heartbeat. Scientists still do not fully {{5}} how the brain produces thoughts and consciousness, making it one of the great {{6}} of science.`,
-          blanks: [
-            { num: 1, prefix: 'org', answer: 'organs' },
-            { num: 2, prefix: 'neu', answer: 'neurons' },
-            { num: 3, prefix: 'rem', answer: 'remember' },
-            { num: 4, prefix: 'brea', answer: 'breathing' },
-            { num: 5, prefix: 'und', answer: 'understand' },
-            { num: 6, prefix: 'mys', answer: 'mysteries' },
-          ],
+          type: 'wordcomplete', id: TOEFL_CTW_SET3_V2.id, part: 1, qRange: [1, 10],
+          objectId: TOEFL_CTW_SET3_V2.objectId,
+          contentVersion: String(TOEFL_CTW_SET3_V2.version),
+          serverScoring: 'toefl-complete-words',
+          alignment: 'official-family-pilot',
+          instructions: TOEFL_CTW_SET3_V2.instructions,
+          template: TOEFL_CTW_SET3_V2.template,
+          blanks: TOEFL_CTW_SET3_V2.blanks.map((blank) => ({ ...blank })),
         },
       ],
     },

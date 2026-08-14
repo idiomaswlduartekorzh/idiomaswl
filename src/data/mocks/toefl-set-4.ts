@@ -1,4 +1,5 @@
 import type { MockExam } from './types';
+import { TOEFL_CTW_SET4_V2 } from '@/data/toefl/complete-the-words-sets-2-5';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md. Escala 1–6.
@@ -17,30 +18,14 @@ const mock: MockExam = {
       instructions: 'Complete each word so the text makes sense. Some letters are given.',
       questions: [
         {
-          type: 'wordcomplete', id: 't4-r-cw1', part: 1, qRange: [1, 6],
-          instructions: 'A student is writing to report a problem in a dormitory.',
-          template: `Dear Warden,\n\nI am writing to report a {{1}} with the heating in Room 204. It has not been {{2}} for two days, and the room is very {{3}}. I have already tried the controls, but {{4}} happens. Could someone please come to {{5}} it as soon as possible? I would be very {{6}} for a quick response, as it is difficult to study in the cold.\n\nThank you,\nMei`,
-          blanks: [
-            { num: 1, prefix: 'prob', answer: 'problem' },
-            { num: 2, prefix: 'wor', answer: 'working' },
-            { num: 3, prefix: 'co', answer: 'cold' },
-            { num: 4, prefix: 'no', answer: 'nothing' },
-            { num: 5, prefix: 'fi', answer: 'fix' },
-            { num: 6, prefix: 'grat', answer: 'grateful' },
-          ],
-        },
-        {
-          type: 'wordcomplete', id: 't4-r-cw2', part: 1, qRange: [7, 12],
-          instructions: 'The following is from an article about ants.',
-          template: `Ants are among the most successful {{1}} on Earth, living in almost every part of the world. They are famous for being highly {{2}}, living in large colonies where each ant has a specific {{3}}. Some search for food, others care for the young, and the queen lays all the {{4}}. Ants communicate mainly through chemical {{5}} called pheromones. Despite their small size, ants can carry objects many times their own {{6}}.`,
-          blanks: [
-            { num: 1, prefix: 'ins', answer: 'insects' },
-            { num: 2, prefix: 'soc', answer: 'social' },
-            { num: 3, prefix: 'ro', answer: 'role' },
-            { num: 4, prefix: 'eg', answer: 'eggs' },
-            { num: 5, prefix: 'sig', answer: 'signals' },
-            { num: 6, prefix: 'we', answer: 'weight' },
-          ],
+          type: 'wordcomplete', id: TOEFL_CTW_SET4_V2.id, part: 1, qRange: [1, 10],
+          objectId: TOEFL_CTW_SET4_V2.objectId,
+          contentVersion: String(TOEFL_CTW_SET4_V2.version),
+          serverScoring: 'toefl-complete-words',
+          alignment: 'official-family-pilot',
+          instructions: TOEFL_CTW_SET4_V2.instructions,
+          template: TOEFL_CTW_SET4_V2.template,
+          blanks: TOEFL_CTW_SET4_V2.blanks.map((blank) => ({ ...blank })),
         },
       ],
     },

@@ -4,6 +4,7 @@ import {
   scoreCompleteWords,
   validateMissingLetters,
 } from '../src/lib/toefl/complete-words-contract.ts';
+import { TOEFL_CTW_SETS_2_TO_5 } from '../src/data/toefl/complete-the-words-sets-2-5.ts';
 
 const missing = ['ides', 'ght', 'at', 'ke', 'n', 'ible', 'ide', 'un', 'cess', 'lear'];
 const prefixes = ['prov', 'li', 'he', 'ma', 'o', 'poss', 'ins', 's', 'pro', 'nuc'];
@@ -93,4 +94,35 @@ test('closing the same attempt twice is deterministic and idempotent', () => {
   const first = scoreCompleteWords(blanks, request(responses));
   const second = scoreCompleteWords(blanks, request(responses));
   assert.deepEqual(second, first);
+});
+
+const setKeys = [
+  ['ngs', 'ome', 'at', 'em', 'ckly', 'he', 'n', 'f', 'st', 've'],
+  ['ains', 'f', 'lls', 'rons', 'nd', 'o', 'ther', 'nals', 's', 'ink'],
+  ['re', 'or', 'inated', 'vior', 'n', 'nies', 'ch', 'orms', 'ific', 'kers'],
+  ['eep', 'ain', 'ot', 'ut', 't', 'ive', 'ries', 'her', 'esses', 'arch'],
+];
+
+test('Sets 2–5 each close at 10/10 with their own stable object identity', () => {
+  for (const [setIndex, object] of TOEFL_CTW_SETS_2_TO_5.entries()) {
+    const scoringBlanks = object.blanks.map((blank, blankIndex) => ({
+      ...blank,
+      expectedMissing: setKeys[setIndex][blankIndex],
+    }));
+    const presentedBlankIds = scoringBlanks.map((blank) => blank.id);
+    const responses = Object.fromEntries(scoringBlanks.map((blank) => [blank.id, blank.expectedMissing]));
+    const scoringRequest = {
+      objectId: object.objectId,
+      attemptId: `attempt:set-${setIndex + 2}`,
+      closeId: `close:set-${setIndex + 2}`,
+      responses,
+      presentedBlankIds,
+    };
+    const first = scoreCompleteWords(scoringBlanks, scoringRequest);
+    const second = scoreCompleteWords(scoringBlanks, scoringRequest);
+    assert.equal(first.objectId, object.objectId);
+    assert.equal(first.correct, 10);
+    assert.equal(first.denominator, 10);
+    assert.deepEqual(second, first);
+  }
 });

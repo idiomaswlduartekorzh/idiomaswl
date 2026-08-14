@@ -112,6 +112,10 @@ const mock: MockExam = {
         },
         {
           type: 'wordcomplete', id: TOEFL_CTW_SET1_V3.id, part: 1, qRange: [7, 16],
+          objectId: TOEFL_CTW_SET1_V3.objectId,
+          contentVersion: String(TOEFL_CTW_SET1_V3.version),
+          serverScoring: 'toefl-complete-words',
+          alignment: 'official-family-pilot',
           instructions: TOEFL_CTW_SET1_V3.instructions,
           template: TOEFL_CTW_SET1_V3.template,
           blanks: TOEFL_CTW_SET1_V3.blanks.map((blank) => ({

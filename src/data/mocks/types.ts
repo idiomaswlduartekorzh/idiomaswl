@@ -176,6 +176,10 @@ export interface WordCompleteBlank {
 export interface WordCompleteQuestion {
   type: 'wordcomplete';
   id: string;
+  objectId?: string; // stable assessment object; required when serverScoring is enabled
+  contentVersion?: string;
+  serverScoring?: 'toefl-complete-words';
+  alignment?: 'official-family-pilot' | 'welearn-supplementary';
   part: number;
   qRange?: [number, number];
   instructions?: string;

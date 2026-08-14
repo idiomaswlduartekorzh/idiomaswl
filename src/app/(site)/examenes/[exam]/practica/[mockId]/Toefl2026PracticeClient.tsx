@@ -12,10 +12,7 @@ import type {
   ToeflBuildSentenceQuestion, ToeflReadingSingleQuestion, ToeflReadingMultiQuestion,
 } from '@/data/mocks/types';
 import { TOEFL_BUILD_SENTENCE_SET1 } from '@/data/toefl/build-sentence-set-1';
-import {
-  TOEFL_CTW_SET1_V3,
-  type CompleteWordsScoreResult,
-} from '@/data/toefl/complete-the-words-set-1';
+import type { CompleteWordsScoreResult } from '@/data/toefl/complete-the-words-set-1';
 import { TOEFL_READING_SET1 } from '@/data/toefl/reading-set-1';
 import type { ToeflReadingScoreResult } from '@/lib/toefl/reading-contract';
 import type { ToeflBuildSentenceScoreResult } from '@/lib/toefl/build-sentence-contract';
@@ -737,7 +734,10 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
       if (!attemptId) setAttemptId(stableAttemptId);
       const serverQuestions = getSkillSections(mock, 'reading')
         .flatMap((section) => section.questions)
-        .filter((question): question is WordCompleteQuestion => question.type === 'wordcomplete' && question.blanks.some((blank) => blank.id && !blank.answer));
+        .filter((question): question is WordCompleteQuestion & { objectId: string } =>
+          question.type === 'wordcomplete'
+          && question.serverScoring === 'toefl-complete-words'
+          && typeof question.objectId === 'string');
       const nextScores = { ...wordScores };
       for (const question of serverQuestions) {
         if (nextScores[question.id]) continue;
@@ -749,7 +749,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
           method: 'POST',
           headers: { 'content-type': 'application/json' },
           body: JSON.stringify({
-            objectId: TOEFL_CTW_SET1_V3.objectId,
+            objectId: question.objectId,
             attemptId: stableAttemptId,
             closeId: `close:${stableAttemptId}:${question.id}`,
             responses: responseByBlank,
