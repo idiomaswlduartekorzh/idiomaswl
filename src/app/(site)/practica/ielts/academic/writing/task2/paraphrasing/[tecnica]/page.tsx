@@ -4,13 +4,7 @@ import { Task2SkillStructuredData } from '../../Task2SkillStructuredData'
 import { PARAPHRASE_TECHNIQUES, techniqueBySlug } from '../paraphrasing-data'
 import ParaphrasingTechniqueClient from '../ParaphrasingTechniqueClient'
 
-/**
- * Una URL por técnica de paráfrasis.
- *
- * El contenido va en inglés y los metadatos en español, igual que en las siete familias de
- * conectores: quien busca «voz pasiva en inglés» llega a una página que va de eso y nada más,
- * y quien viene de IELTS recorre las cinco desde el hub.
- */
+/** One canonical English page per paraphrasing technique. */
 
 const BASE = 'https://www.idiomaswl.com/practica/ielts/academic/writing/task2/paraphrasing'
 
@@ -22,21 +16,23 @@ export async function generateMetadata({ params }: { params: Promise<{ tecnica: 
   const { tecnica } = await params
   const technique = techniqueBySlug(tecnica)
   if (!technique) return {}
+  const title = `${technique.label} paraphrasing for IELTS Writing Task 2`
+  const description = `Practise ${technique.label.toLowerCase()} as an IELTS Writing Task 2 paraphrasing technique, with meaning checks, common traps and guided exercises.`
 
   return {
-    title: technique.seoTitle,
-    description: technique.seoDescription,
+    title,
+    description,
     keywords: [
-      technique.spanishName.toLowerCase(),
-      `${technique.label.toLowerCase()} paraphrasing english`,
-      'cómo parafrasear en inglés',
-      'parafrasear IELTS writing task 2',
+      `${technique.label.toLowerCase()} paraphrasing`,
+      'how to paraphrase in English',
+      'IELTS Writing Task 2 paraphrasing',
     ],
     openGraph: {
-      title: technique.seoTitle,
-      description: technique.seoDescription,
+      title,
+      description,
       type: 'article',
-      locale: 'es_CO',
+      locale: 'en_US',
+      url: `${BASE}/${technique.slug}`,
     },
     alternates: { canonical: `${BASE}/${technique.slug}` },
   }
@@ -50,7 +46,7 @@ export default async function Page({ params }: { params: Promise<{ tecnica: stri
   return (
     <>
       <Task2SkillStructuredData
-        name={technique.spanishName}
+        name={`${technique.label} paraphrasing for IELTS Writing Task 2`}
         path={`/practica/ielts/academic/writing/task2/paraphrasing/${technique.slug}`}
         teaches={['paraphrasing', technique.label.toLowerCase(), 'lexical resource']}
       />

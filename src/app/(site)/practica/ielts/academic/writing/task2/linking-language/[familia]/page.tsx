@@ -4,14 +4,7 @@ import { Task2SkillStructuredData } from '../../Task2SkillStructuredData'
 import { LINKING_FAMILIES, familyBySlug } from '../linking-data'
 import LinkingFamilyClient from '../LinkingFamilyClient'
 
-/**
- * Una URL por familia de conectores.
- *
- * El contenido de la página está en inglés, porque es lo que se aprende; los metadatos van
- * en español, porque es como busca esta audiencia: «conectores de contraste en inglés» tiene
- * volumen y «contrast linking words» no lo tiene para un lector colombiano. Es el mismo
- * criterio que usa la gramática de práctica.
- */
+/** One canonical English page per linking-function family. */
 
 const BASE = 'https://www.idiomaswl.com/practica/ielts/academic/writing/task2/linking-language'
 
@@ -23,22 +16,24 @@ export async function generateMetadata({ params }: { params: Promise<{ familia: 
   const { familia } = await params
   const family = familyBySlug(familia)
   if (!family) return {}
+  const title = `${family.label} linking words for IELTS Writing Task 2`
+  const description = `Learn how ${family.label.toLowerCase()} linking words work in IELTS Writing Task 2, with punctuation guidance, worked examples and practice exercises.`
 
   return {
-    title: family.seoTitle,
-    description: family.seoDescription,
+    title,
+    description,
     keywords: [
-      family.spanishName.toLowerCase(),
       `${family.label.toLowerCase()} linking words`,
-      ...family.connectors.slice(0, 4).map((connector) => `${connector.text.toLowerCase()} en inglés`),
-      'conectores en inglés',
+      ...family.connectors.slice(0, 4).map((connector) => `${connector.text.toLowerCase()} in academic writing`),
+      'IELTS cohesion practice',
       'IELTS writing task 2 linking words',
     ],
     openGraph: {
-      title: family.seoTitle,
-      description: family.seoDescription,
+      title,
+      description,
       type: 'article',
-      locale: 'es_CO',
+      locale: 'en_US',
+      url: `${BASE}/${family.slug}`,
     },
     alternates: { canonical: `${BASE}/${family.slug}` },
   }
@@ -52,7 +47,7 @@ export default async function Page({ params }: { params: Promise<{ familia: stri
   return (
     <>
       <Task2SkillStructuredData
-        name={`Conectores de ${family.label.toLowerCase()} en inglés`}
+        name={`${family.label} linking words for IELTS Writing Task 2`}
         path={`/practica/ielts/academic/writing/task2/linking-language/${family.slug}`}
         teaches={['linking words', family.label.toLowerCase(), 'cohesion']}
       />

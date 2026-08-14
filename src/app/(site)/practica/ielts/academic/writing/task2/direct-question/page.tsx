@@ -29,7 +29,7 @@ const FAQS = [
 export const metadata: Metadata = {
   title: 'IELTS Writing Task 2: direct-question essays',
   description:
-    'Practica IELTS Academic Writing Task 2 direct-question essays: two-part questions, estructura, respuestas explícitas y modelo explicado.',
+    'Practise IELTS Academic Writing Task 2 direct-question essays with two-part prompt analysis, explicit answers and explained models.',
   keywords: [
     'IELTS direct question essay',
     'IELTS two part question essay',
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'IELTS Writing Task 2: direct-question essays',
     description:
-      'Lección práctica para responder two-part questions de IELTS Task 2 con estructura, planificación y modelo explicado.',
+      'Learn to answer both parts of an IELTS Task 2 direct-question prompt through clear planning and complete development.',
     type: 'website',
-    locale: 'es_CO',
+    locale: 'en_US',
     url: URL,
   },
   alternates: { canonical: URL },
@@ -54,7 +54,7 @@ export default function Page() {
       <LearningResourceJsonLd
         name="IELTS Writing Task 2: direct-question essays"
         url={URL}
-        description="Lección y práctica original para escribir direct-question essays de IELTS Academic Writing Task 2."
+        description="Original lesson and guided practice for writing direct-question essays in IELTS Academic Writing Task 2."
         teaches={[
           'IELTS Academic Writing Task 2',
           'direct-question essays',
@@ -70,7 +70,7 @@ export default function Page() {
       <FaqJsonLd faqs={FAQS} />
       <BreadcrumbJsonLd
         items={[
-          { name: 'Práctica', url: 'https://www.idiomaswl.com/practica' },
+          { name: 'Practice', url: 'https://www.idiomaswl.com/practica' },
           { name: 'IELTS', url: 'https://www.idiomaswl.com/practica/ielts' },
           { name: 'Academic Writing', url: 'https://www.idiomaswl.com/practica/ielts/academic/writing' },
           { name: 'Task 2', url: 'https://www.idiomaswl.com/practica/ielts/academic/writing/task2' },

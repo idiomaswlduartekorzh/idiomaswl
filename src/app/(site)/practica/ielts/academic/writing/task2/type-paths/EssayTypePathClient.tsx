@@ -405,7 +405,7 @@ export default function EssayTypePathClient({ type, faqs }: { type: EssayTypeId;
       escribe en Google y alimenta el resultado enriquecido. El contenido de IELTS, no.
     */}
     {faqs.length > 0 && (
-      <section className={styles.section} id="faq">
+      <section className={styles.section} id="faq" lang="es">
         <div className={styles.sectionHeading}>
           <p className={styles.kicker}>Preguntas frecuentes</p>
           <h2>Lo que se pregunta sobre este tipo de ensayo</h2>

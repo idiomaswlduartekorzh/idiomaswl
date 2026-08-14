@@ -13,16 +13,16 @@ import styles from './page.module.css';
  * borró: no se llegó a construir. El salto era de leer seis definiciones abstractas a
  * producir una introducción entera, sin nada en medio.
  *
- * Sigue el método de David: la introducción responde cuatro preguntas en orden —hook,
- * paráfrasis, opinión y las dos premisas, muy cortas—. Los pasos van bloqueados, así que
- * nadie llega a escribir sin haber distinguido antes las funciones.
+ * La introducción resuelve tres trabajos evaluables —paráfrasis, posición y ruta— y puede
+ * añadir una frase de contexto. Esa frase es opcional: IELTS no exige ni puntúa un “hook”.
+ * Los pasos van bloqueados para distinguir funciones antes de escribir.
  *
  * LOS DISTRACTORES SON LAS OTRAS FUNCIONES DEL MISMO EJEMPLO, y eso es deliberado. Una
  * auditoría de los 205 ejercicios de opción de Task 2 encontró que en el 92,7 % TODOS los
  * distractores eran texto reciclado de otro ejercicio —los mismos rellenos repetidos hasta
  * 25 veces—, así que se acertaba reconociendo la frase vista, no entendiendo. Aquí eso no
  * puede pasar: cada opción es una frase real de ESTA introducción, y equivocarse enseña la
- * distinción concreta que falló. Confundir el hook con la paráfrasis es el error de verdad;
+ * distinción concreta que falló. Confundir el contexto con la paráfrasis es el error real;
  * merece ser una opción, no un relleno.
  */
 
@@ -47,11 +47,11 @@ export default function IntroductionWorkshop({ example, essayType }: { example: 
     if (hook && paraphrase && position) {
       built.push({
         key: 'hook',
-        label: 'Choose the hook',
-        question: 'Which sentence states the claim this essay will prove?',
+        label: 'Identify the optional context',
+        question: 'Which sentence frames the issue before the prompt is paraphrased?',
         correct: hook,
         options: [hook, paraphrase, position],
-        why: 'A hook is arguable: somebody could disagree with it. The paraphrase only restates the prompt, and the position is your answer — that comes later, in your own voice.',
+        why: 'This sentence frames the issue. It is optional and earns no separate IELTS credit. The paraphrase restates the prompt, while the position gives the answer.',
       });
       built.push({
         key: 'paraphrase',
@@ -59,7 +59,7 @@ export default function IntroductionWorkshop({ example, essayType }: { example: 
         question: 'Which sentence restates the prompt without copying it and without adding a judgement?',
         correct: paraphrase,
         options: [paraphrase, copyTrap, hook],
-        why: 'A paraphrase keeps the meaning and changes the wording. Copying the prompt earns nothing, and a claim you could argue with is a hook, not a restatement.',
+        why: 'A paraphrase keeps the meaning and changes the wording. Copying the prompt earns nothing, and an optional context sentence does a different job.',
       });
     }
     return built;
@@ -166,8 +166,8 @@ export default function IntroductionWorkshop({ example, essayType }: { example: 
       {allSolved && <>
         <div className={styles.planGrid}>
           <label className={styles.guidedField}>
-            <strong>Your hook <em>· optional</em></strong>
-            <span>The claim your essay will prove. Somebody must be able to disagree with it. No “I” here.</span>
+            <strong>Optional context <em>· no separate IELTS credit</em></strong>
+            <span>Frame the issue only if this helps you begin clearly. Omit it when it delays your direct answer.</span>
             <textarea spellCheck={false} autoCorrect="off" autoCapitalize="off" rows={2} value={written.hook} onChange={(event) => { setWritten((w) => ({ ...w, hook: event.target.value })); setModelVisible(false); }} placeholder="Leave this empty if you are short of time — a three-sentence introduction is still complete." />
             <small>{words(written.hook)} words · no minimum</small>
           </label>

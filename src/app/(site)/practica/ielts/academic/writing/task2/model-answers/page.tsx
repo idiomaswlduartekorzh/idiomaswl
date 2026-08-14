@@ -25,9 +25,9 @@ const FAQS = [
 ];
 
 export const metadata: Metadata = {
-  title: 'IELTS Writing Task 2 model answers explicados',
+  title: 'IELTS Writing Task 2 model answers explained',
   description:
-    '25 ensayos modelo de IELTS Academic Writing Task 2, con la función de cada párrafo, frase floja contra frase fuerte y lista de comprobación.',
+    'Study 25 original IELTS Academic Writing Task 2 model essays with paragraph functions, weak-versus-strong comparisons and a review checklist.',
   keywords: [
     'IELTS writing task 2 model answers',
     'IELTS task 2 sample answers',
@@ -36,11 +36,11 @@ export const metadata: Metadata = {
     'IELTS writing task 2 checklist',
   ],
   openGraph: {
-    title: 'IELTS Writing Task 2 model answers explicados',
+    title: 'IELTS Writing Task 2 model answers explained',
     description:
-      'Model answers originales para IELTS Task 2 con anotaciones, comparación débil/fuerte y checklist de revisión.',
+      'Original IELTS Task 2 model answers with annotations, weak-versus-strong comparisons and a practical review checklist.',
     type: 'website',
-    locale: 'es_CO',
+    locale: 'en_US',
     url: URL,
   },
   alternates: { canonical: URL },
@@ -50,9 +50,9 @@ export default function Page() {
   return (
     <>
       <LearningResourceJsonLd
-        name="IELTS Writing Task 2 model answers explicados"
+        name="IELTS Writing Task 2 model answers explained"
         url={URL}
-        description="Banco pedagógico de model answers originales para IELTS Academic Writing Task 2 con anotaciones y checklist."
+        description="A teaching bank of original IELTS Academic Writing Task 2 model answers with annotations and a review checklist."
         teaches={[
           'IELTS Academic Writing Task 2',
           'model answers',
@@ -68,7 +68,7 @@ export default function Page() {
       <FaqJsonLd faqs={FAQS} />
       <BreadcrumbJsonLd
         items={[
-          { name: 'Práctica', url: 'https://www.idiomaswl.com/practica' },
+          { name: 'Practice', url: 'https://www.idiomaswl.com/practica' },
           { name: 'IELTS', url: 'https://www.idiomaswl.com/practica/ielts' },
           { name: 'Academic Writing', url: 'https://www.idiomaswl.com/practica/ielts/academic/writing' },
           { name: 'Task 2', url: 'https://www.idiomaswl.com/practica/ielts/academic/writing/task2' },

@@ -57,7 +57,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
     sentenceTypes: ['Paraphrase', 'Position statement', 'Reason preview', 'Concession'],
     linkingFunctions: ['stance', 'concession', 'reason'],
     blocks: [
-      { label: 'Hook', tone: 'hook', text: 'State the claim the essay will prove, in one arguable sentence.', optional: true },
+      { label: 'Optional context', tone: 'hook', text: 'State the claim the essay will prove, in one arguable sentence.', optional: true },
       { label: 'Paraphrase', tone: 'paraphrase', text: 'Reframe the proposition accurately.' },
       { label: 'Position', tone: 'claim', text: 'Answer agree, disagree or extent directly.' },
       { label: 'Reason preview', tone: 'link', text: 'Signal the two controlling reasons.', optional: true },
@@ -69,7 +69,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: 'Choose an extent and make it visible.',
         plan: 'Body 1: wellbeing. Body 2: depth of learning.',
         blocks: [
-          { label: 'Hook', tone: 'hook', text: 'A school system can raise its grades and lower its learning at the same time.' },
+          { label: 'Optional context', tone: 'hook', text: 'A school system can raise its grades and lower its learning at the same time.' },
           { label: 'Paraphrase', tone: 'paraphrase', text: 'High academic expectations have become a defining feature of many school systems.' },
           { label: 'Position', tone: 'claim', text: 'I largely agree that the pressure to secure top marks is excessive because it can damage student wellbeing and encourage superficial learning.' },
         ],
@@ -82,7 +82,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: "The prompt compares two budgets. Answer the comparison, not the topic.",
         plan: "Body 1: people moved per metre of street. Body 2: who gets to travel at all.",
         blocks: [
-          { label: "Hook", tone: "hook", text: "A lane of road carries whatever number of cars will fit; a lane of bus route carries whatever number of people you decide to put on it." },
+          { label: "Optional context", tone: "hook", text: "A lane of road carries whatever number of cars will fit; a lane of bus route carries whatever number of people you decide to put on it." },
           { label: "Paraphrase", tone: "paraphrase", text: "Governments repeatedly face a choice between expanding public transport networks and building additional road capacity." },
           { label: "Position", tone: "claim", text: "I largely agree that public money is better spent on transport than on roads, because a bus or train moves far more people through the same street, and because it reaches the many residents who cannot drive at all." },
         ],
@@ -95,7 +95,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: "This one asks yes or no, not how far. Commit to one.",
         plan: "Body 1: ability, not income, should decide. Body 2: concede the cost, then answer it.",
         blocks: [
-          { label: "Hook", tone: "hook", text: "A tuition fee does not select the strongest applicants; it selects the ones whose families can pay." },
+          { label: "Optional context", tone: "hook", text: "A tuition fee does not select the strongest applicants; it selects the ones whose families can pay." },
           { label: "Paraphrase", tone: "paraphrase", text: "Whether higher education should be provided free of charge to every student remains a contested question of public policy." },
           { label: "Position", tone: "claim", text: "I agree that university education should be free, because charging for it filters students by their parents\u2019 income rather than by what they are capable of, and the funding objection is answerable." },
         ],
@@ -108,7 +108,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: "The claim is about employees. Arguing for the employer answers a different prompt.",
         plan: "Body 1: control over time and place. Body 2: uninterrupted concentration.",
         blocks: [
-          { label: "Hook", tone: "hook", text: "Remote work returns the two things an office takes first: the commute and the interruption." },
+          { label: "Optional context", tone: "hook", text: "Remote work returns the two things an office takes first: the commute and the interruption." },
           { label: "Paraphrase", tone: "paraphrase", text: "It is increasingly claimed that employees are better served by working from home than by travelling to a workplace." },
           { label: "Position", tone: "claim", text: "I largely agree, because working from home hands the employee control over when and where the work happens, and protects the long stretches of concentration that an open office interrupts." },
         ],
@@ -121,7 +121,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: "\u201cBanned\u201d is absolute. Say how far you accept it.",
         plan: "Body 1: children cannot see the persuasion. Body 2: what follows from that.",
         blocks: [
-          { label: "Hook", tone: "hook", text: "An advertisement has already worked on a child by the time the child recognises it as an advertisement." },
+          { label: "Optional context", tone: "hook", text: "An advertisement has already worked on a child by the time the child recognises it as an advertisement." },
           { label: "Paraphrase", tone: "paraphrase", text: "There are recurring calls to prohibit commercial advertising directed at young audiences." },
           { label: "Position", tone: "claim", text: "I largely agree that such advertising should be banned, because children below a certain age cannot reliably identify persuasive intent and therefore cannot weigh it, which makes the usual defence of consumer choice inapplicable to them." },
         ],
@@ -144,7 +144,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
     sentenceTypes: ['Paraphrase', 'Contrast', 'Position statement', 'Roadmap'],
     linkingFunctions: ['contrast', 'comparison', 'stance'],
     blocks: [
-      { label: 'Hook', tone: 'hook', text: 'Name the real tension between the two views, not the topic they share.', optional: true },
+      { label: 'Optional context', tone: 'hook', text: 'Name the real tension between the two views, not the topic they share.', optional: true },
       { label: 'Paraphrase both views', tone: 'paraphrase', text: 'Represent the disagreement neutrally.' },
       { label: 'Position', tone: 'claim', text: 'State which view is more convincing, or give a qualified synthesis.' },
       { label: 'Roadmap', tone: 'link', text: 'Show that both perspectives will be examined.', optional: true },
@@ -157,7 +157,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: "Both views, then a judgement that is yours.",
         plan: "Body 1: the case for daily practice. Body 2: the case for limits, and my judgement.",
         blocks: [
-          { label: "Hook", tone: "hook", text: "Homework stops being practice at the point where it becomes the whole evening." },
+          { label: "Optional context", tone: "hook", text: "Homework stops being practice at the point where it becomes the whole evening." },
           { label: "Paraphrase", tone: "paraphrase", text: "Opinions are divided over whether children benefit from homework every day or from firm limits on how much they receive." },
           { label: "Position", tone: "claim", text: "Both positions rest on something real \u2014 repetition does consolidate learning, and rest does protect it \u2014 but I side with limiting homework, because the gains from repetition flatten out long before the hours do." },
         ],
@@ -170,7 +170,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: "Both views, and say which one you hold.",
         plan: "Body 1: what a car-free centre returns. Body 2: who still needs a route in, and my judgement.",
         blocks: [
-          { label: "Hook", tone: "hook", text: "A city centre is the one place where the ground a parked car occupies is worth the most." },
+          { label: "Optional context", tone: "hook", text: "A city centre is the one place where the ground a parked car occupies is worth the most." },
           { label: "Paraphrase", tone: "paraphrase", text: "Cities are divided over whether their central streets should exclude private vehicles or continue to admit them." },
           { label: "Position", tone: "claim", text: "The two sides are really arguing about who gets access rather than about cars, and although the objections about deliveries and limited mobility are genuine, I support car-free centres because the space recovered serves far more people than it displaces." },
         ],
@@ -183,7 +183,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: "Both views, and a judgement precise enough to defend.",
         plan: "Body 1: what free entry buys. Body 2: what fees pay for, and my mixed position.",
         blocks: [
-          { label: "Hook", tone: "hook", text: "Free entry decides who walks in; ticket revenue decides what is still there to look at in twenty years." },
+          { label: "Optional context", tone: "hook", text: "Free entry decides who walks in; ticket revenue decides what is still there to look at in twenty years." },
           { label: "Paraphrase", tone: "paraphrase", text: "There is continuing disagreement over whether museums should admit visitors free of charge or ask them to pay for entry." },
           { label: "Position", tone: "claim", text: "Each side is protecting something the other one needs, and my own view is a mixed one: permanent collections should stay free, while temporary exhibitions can reasonably carry a charge." },
         ],
@@ -196,7 +196,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: "Both views, and your own preference with a reason.",
         plan: "Body 1: what specialising early gains. Body 2: what breadth protects, and why I prefer it.",
         blocks: [
-          { label: "Hook", tone: "hook", text: "Choosing early is efficient right up to the moment the choice turns out to be the wrong one." },
+          { label: "Optional context", tone: "hook", text: "Choosing early is efficient right up to the moment the choice turns out to be the wrong one." },
           { label: "Paraphrase", tone: "paraphrase", text: "Education systems disagree over whether teenagers should narrow their subjects early or continue studying broadly." },
           { label: "Position", tone: "claim", text: "Early specialisation genuinely buys depth, and I understand why systems reach for it, but I prefer a broad curriculum because a decision taken at fifteen is expensive to reverse at twenty-five." },
         ],
@@ -209,7 +209,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: "Both views, and a judgement the conclusion can return to.",
         plan: "Body 1: where it genuinely helps. Body 2: where it genuinely threatens, and the condition that separates them.",
         blocks: [
-          { label: "Hook", tone: "hook", text: "The system that reads a scan faster than a specialist can also be wrong faster than anyone is able to check." },
+          { label: "Optional context", tone: "hook", text: "The system that reads a scan faster than a specialist can also be wrong faster than anyone is able to check." },
           { label: "Paraphrase", tone: "paraphrase", text: "Artificial intelligence is regarded by some as a significant benefit to society and by others as a serious danger to it." },
           { label: "Position", tone: "claim", text: "Both readings describe the same technology under different conditions, and my judgement is a qualified one: the benefits are real wherever the output can be checked, and the threat is real wherever it cannot." },
         ],
@@ -232,7 +232,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
     sentenceTypes: ['Paraphrase', 'Scope statement', 'Cause-and-effect', 'Roadmap'],
     linkingFunctions: ['cause', 'result', 'solution'],
     blocks: [
-      { label: 'Hook', tone: 'hook', text: 'Give the scale or the cost of the problem in one concrete sentence.', optional: true },
+      { label: 'Optional context', tone: 'hook', text: 'Give the scale or the cost of the problem in one concrete sentence.', optional: true },
       { label: 'Paraphrase the issue', tone: 'paraphrase', text: 'Define the problem without exaggeration.' },
       { label: 'Scope thesis', tone: 'claim', text: 'Name the exact parts the essay will analyse.' },
       { label: 'Solution link', tone: 'link', text: 'Connect proposed responses to the diagnosis.', optional: true },
@@ -244,7 +244,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: 'Cover causes and government measures.',
         plan: 'Body 1: car dependence and weak transit. Body 2: transit and demand management.',
         blocks: [
-          { label: 'Hook', tone: 'hook', text: 'Cities did not run out of road space; they ran out of alternatives to using it.' },
+          { label: 'Optional context', tone: 'hook', text: 'Cities did not run out of road space; they ran out of alternatives to using it.' },
           { label: 'Paraphrase', tone: 'paraphrase', text: 'Severe road congestion has become a costly environmental and mobility problem in many urban areas.' },
           { label: 'Scope thesis', tone: 'claim', text: 'This essay argues that car-dependent planning and inadequate public transport are the principal causes, and examines how investment and demand-management policies can address them.' },
         ],
@@ -256,7 +256,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: 'Answer why and how.',
         plan: 'Body 1: purchasing habits and date labels. Body 2: planning and clearer labels.',
         blocks: [
-          { label: 'Hook', tone: 'hook', text: 'Most discarded food is thrown away long before it becomes unsafe to eat.' },
+          { label: 'Optional context', tone: 'hook', text: 'Most discarded food is thrown away long before it becomes unsafe to eat.' },
           { label: 'Paraphrase', tone: 'paraphrase', text: 'Household food waste remains widespread despite its financial and environmental costs.' },
           { label: 'Scope thesis', tone: 'claim', text: 'The problem largely results from poor purchasing decisions and confusion over date labels, both of which can be reduced through practical consumer guidance and clearer packaging.' },
         ],
@@ -268,7 +268,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: 'Discuss consequences, not reasons for leaving.',
         plan: 'Body 1: ageing population and service decline. Body 2: jobs and connectivity.',
         blocks: [
-          { label: 'Hook', tone: 'hook', text: 'When a village loses its young adults, it loses the people who would have kept its services open.' },
+          { label: 'Optional context', tone: 'hook', text: 'When a village loses its young adults, it loses the people who would have kept its services open.' },
           { label: 'Paraphrase', tone: 'paraphrase', text: 'The movement of younger residents from the countryside to cities is reshaping rural communities.' },
           { label: 'Scope thesis', tone: 'claim', text: 'This trend weakens local workforces and essential services, but targeted employment, transport and digital-connectivity policies could make rural life more viable.' },
         ],
@@ -280,7 +280,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: 'Keep the solutions within the actor named: schools.',
         plan: 'Body 1: sedentary routines and limited access. Body 2: timetable and inclusive activities.',
         blocks: [
-          { label: 'Hook', tone: 'hook', text: 'Children are not choosing to sit still; the shape of the school day is choosing it for them.' },
+          { label: 'Optional context', tone: 'hook', text: 'Children are not choosing to sit still; the shape of the school day is choosing it for them.' },
           { label: 'Paraphrase', tone: 'paraphrase', text: 'Insufficient physical activity has become a common feature of school-age life.' },
           { label: 'Scope thesis', tone: 'claim', text: 'Although sedentary leisure and limited opportunities contribute to the problem, schools can respond by protecting activity time and offering a wider range of accessible sports.' },
         ],
@@ -292,7 +292,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: 'Address both responsible groups.',
         plan: 'Body 1: waste and resource costs. Body 2: business redesign and consumer reuse.',
         blocks: [
-          { label: 'Hook', tone: 'hook', text: 'Packaging is designed for a few minutes of use and survives for centuries.' },
+          { label: 'Optional context', tone: 'hook', text: 'Packaging is designed for a few minutes of use and survives for centuries.' },
           { label: 'Paraphrase', tone: 'paraphrase', text: 'Growing reliance on plastic packaging has intensified concerns about waste and resource consumption.' },
           { label: 'Scope thesis', tone: 'claim', text: 'The most serious effects are persistent pollution and unnecessary material use, requiring businesses to redesign packaging and consumers to favour reusable alternatives.' },
         ],
@@ -315,7 +315,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
     sentenceTypes: ['Paraphrase', 'Evaluation thesis', 'Contrast', 'Concession'],
     linkingFunctions: ['contrast', 'evaluation', 'concession'],
     blocks: [
-      { label: 'Hook', tone: 'hook', text: 'Name the trade-off the development forces, in one sentence.', optional: true },
+      { label: 'Optional context', tone: 'hook', text: 'Name the trade-off the development forces, in one sentence.', optional: true },
       { label: 'Paraphrase the development', tone: 'paraphrase', text: 'Describe the change or trend neutrally.' },
       { label: 'Evaluation thesis', tone: 'claim', text: 'Signal both sides and answer “outweigh” when required.' },
       { label: 'Contrast frame', tone: 'contrast', text: 'Preview the basis of the comparison.', optional: true },
@@ -327,7 +327,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: 'Make a comparative judgement.',
         plan: 'Body 1: flexibility and access. Body 2: collaboration costs, then evaluation.',
         blocks: [
-          { label: 'Hook', tone: 'hook', text: 'Working from home gives back the commute and takes away the corridor conversation.' },
+          { label: 'Optional context', tone: 'hook', text: 'Working from home gives back the commute and takes away the corridor conversation.' },
           { label: 'Paraphrase', tone: 'paraphrase', text: 'Home-based employment has replaced daily office attendance for a growing share of the workforce.' },
           { label: 'Evaluation thesis', tone: 'claim', text: 'Although remote work can weaken spontaneous collaboration, its gains in flexibility and access to employment are more substantial overall.' },
         ],
@@ -339,7 +339,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: 'Cover both sides without inventing an outweigh requirement.',
         plan: 'Body 1: income and exchange. Body 2: environmental and cultural pressure.',
         blocks: [
-          { label: 'Hook', tone: 'hook', text: 'The places most worth visiting are often the least able to absorb the people who visit them.' },
+          { label: 'Optional context', tone: 'hook', text: 'The places most worth visiting are often the least able to absorb the people who visit them.' },
           { label: 'Paraphrase', tone: 'paraphrase', text: 'The rapid growth of cross-border tourism has transformed many destinations and local economies.' },
           { label: 'Scope thesis', tone: 'claim', text: 'This development can generate employment and cultural exchange, but it may also place severe pressure on ecosystems, infrastructure and community life.' },
         ],
@@ -351,7 +351,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: 'Compare learning benefits with practical risks.',
         plan: 'Body 1: access and updates. Body 2: distraction and inequality.',
         blocks: [
-          { label: 'Hook', tone: 'hook', text: 'A textbook that can be corrected overnight is worth more than one that is already out of date on arrival.' },
+          { label: 'Optional context', tone: 'hook', text: 'A textbook that can be corrected overnight is worth more than one that is already out of date on arrival.' },
           { label: 'Paraphrase', tone: 'paraphrase', text: 'Digital resources are increasingly taking the place of printed books in schools.' },
           { label: 'Evaluation thesis', tone: 'claim', text: 'I believe the advantages outweigh the drawbacks because searchable, current materials can improve access to learning, provided that schools address distraction and unequal device access.' },
         ],
@@ -363,7 +363,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: 'Organise benefits and costs around the individual.',
         plan: 'Body 1: career and intercultural growth. Body 2: isolation and instability.',
         blocks: [
-          { label: 'Hook', tone: 'hook', text: 'Moving abroad advances a career and interrupts a life at the same time.' },
+          { label: 'Optional context', tone: 'hook', text: 'Moving abroad advances a career and interrupts a life at the same time.' },
           { label: 'Paraphrase', tone: 'paraphrase', text: 'An increasing number of adults are relocating overseas for employment and long-term residence.' },
           { label: 'Scope thesis', tone: 'claim', text: 'Such mobility can broaden career and cultural experience, although it may also create social isolation and long-term uncertainty.' },
         ],
@@ -375,7 +375,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: 'Evaluate significance rather than count points.',
         plan: 'Body 1: convenience and reach. Body 2: local retail and waste, then judgement.',
         blocks: [
-          { label: 'Hook', tone: 'hook', text: 'Every parcel delivered to a door is a visit a high street did not receive.' },
+          { label: 'Optional context', tone: 'hook', text: 'Every parcel delivered to a door is a visit a high street did not receive.' },
           { label: 'Paraphrase', tone: 'paraphrase', text: 'Purchasing through digital platforms is increasingly displacing conventional in-store shopping.' },
           { label: 'Evaluation thesis', tone: 'claim', text: 'Despite its effects on local retailers and packaging waste, I consider the wider choice and accessibility offered by online shopping to be the more significant outcome.' },
         ],
@@ -398,7 +398,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
     sentenceTypes: ['Paraphrase', 'Two-part thesis', 'Position statement', 'Roadmap'],
     linkingFunctions: ['sequence', 'scope', 'stance'],
     blocks: [
-      { label: 'Hook', tone: 'hook', text: 'Name what has changed to make these questions worth asking now.', optional: true },
+      { label: 'Optional context', tone: 'hook', text: 'Name what has changed to make these questions worth asking now.', optional: true },
       { label: 'Paraphrase the shared topic', tone: 'paraphrase', text: 'Introduce the issue connecting both questions.' },
       { label: 'Answer map', tone: 'link', text: 'Preview a direct response to question one and question two.' },
       { label: 'Position', tone: 'claim', text: 'State the answer if either question requires judgement.' },
@@ -410,7 +410,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: 'Preview a cause and an evaluation.',
         plan: 'Body 1: income and social norms. Body 2: autonomy versus isolation.',
         blocks: [
-          { label: 'Hook', tone: 'hook', text: 'The freedom to live alone arrived faster than the support that used to come with sharing a home.' },
+          { label: 'Optional context', tone: 'hook', text: 'The freedom to live alone arrived faster than the support that used to come with sharing a home.' },
           { label: 'Paraphrase', tone: 'paraphrase', text: 'Single-person households are becoming increasingly common in many societies.' },
           { label: 'Two-part thesis', tone: 'link', text: 'This shift is largely driven by greater financial independence and changing social expectations,' },
           { label: 'Position', tone: 'claim', text: 'and I regard it as mixed overall because greater autonomy may be offset by weaker social support.' },
@@ -423,7 +423,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: 'Answer a cause question and a practical-method question.',
         plan: 'Body 1: speed and convenience. Body 2: source and evidence checks.',
         blocks: [
-          { label: 'Hook', tone: 'hook', text: 'News now reaches people faster than the checks that used to travel with it.' },
+          { label: 'Optional context', tone: 'hook', text: 'News now reaches people faster than the checks that used to travel with it.' },
           { label: 'Paraphrase', tone: 'paraphrase', text: 'Social platforms have become a primary news source for a large part of the public.' },
           { label: 'Two-part thesis', tone: 'link', text: 'Their speed and convenience explain this change, while users can judge reliability by checking authorship, evidence and independent reporting.' },
         ],
@@ -435,7 +435,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: 'State reasons and a judgement.',
         plan: 'Body 1: labour-market change and priorities. Body 2: adaptability versus insecurity.',
         blocks: [
-          { label: 'Hook', tone: 'hook', text: 'A working life of forty years now outlasts most of the jobs inside it.' },
+          { label: 'Optional context', tone: 'hook', text: 'A working life of forty years now outlasts most of the jobs inside it.' },
           { label: 'Paraphrase', tone: 'paraphrase', text: 'Moving between professions has become a normal feature of many working lives.' },
           { label: 'Two-part thesis', tone: 'link', text: 'Technological change and shifting personal priorities are major drivers,' },
           { label: 'Position', tone: 'claim', text: 'and I consider the trend broadly beneficial when workers have access to retraining and financial support.' },
@@ -448,7 +448,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: 'Answer purpose and responsibility.',
         plan: 'Body 1: identity and knowledge. Body 2: shared public-private funding.',
         blocks: [
-          { label: 'Hook', tone: 'hook', text: 'Almost everyone agrees a landmark should survive; the argument is over who receives the bill.' },
+          { label: 'Optional context', tone: 'hook', text: 'Almost everyone agrees a landmark should survive; the argument is over who receives the bill.' },
           { label: 'Paraphrase', tone: 'paraphrase', text: 'Preserving historic architecture often requires substantial and continuing investment.' },
           { label: 'Two-part thesis', tone: 'link', text: 'Such buildings protect cultural memory and local identity, and their upkeep should therefore be shared by governments, owners and the businesses that benefit from heritage tourism.' },
         ],
@@ -460,7 +460,7 @@ export const ESSAY_TYPES: EssayTypeLesson[] = [
         instruction: 'Preview causes and effects without turning the task into an opinion essay.',
         plan: 'Body 1: education, careers and housing. Body 2: stability, health and demographics.',
         blocks: [
-          { label: 'Hook', tone: 'hook', text: 'Parenthood arrives later because the conditions people wait for arrive later too.' },
+          { label: 'Optional context', tone: 'hook', text: 'Parenthood arrives later because the conditions people wait for arrive later too.' },
           { label: 'Paraphrase', tone: 'paraphrase', text: 'Parenthood is being postponed to later stages of adulthood in a growing number of countries.' },
           { label: 'Two-part thesis', tone: 'link', text: 'Longer education, career priorities and housing costs contribute to this pattern, which can bring greater financial stability but also create health and demographic pressures.' },
         ],

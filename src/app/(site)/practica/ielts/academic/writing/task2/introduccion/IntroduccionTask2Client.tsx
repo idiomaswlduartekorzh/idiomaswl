@@ -267,7 +267,7 @@ export default function IntroduccionTask2Client() {
           <div className={styles.sectionHeading}>
             <p className={styles.kicker}>Guided practice</p>
             <h2 id="workshop-heading">Build one introduction before the engine</h2>
-            <p>Separate the four jobs first: the hook, the paraphrase, your answer and your two reasons. Each step unlocks the next.</p>
+            <p>Separate the three essential jobs — paraphrase, answer and route — from optional context. IELTS does not require or separately reward a hook.</p>
           </div>
           <IntroductionWorkshop example={lesson.examples[0]} essayType={activeType} />
         </section>

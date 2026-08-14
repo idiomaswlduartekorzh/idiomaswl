@@ -41,8 +41,8 @@ export const WEAK_STRONG: WeakStrongPair[] = [
     id: 'example',
     job: 'Evidence inside a body paragraph',
     weak: 'For example, in many countries this problem is very common and affects a lot of people every year.',
-    strong: 'Singapore\'s transport authority reported that its rail expansion cut private car use by 28% between 2010 and 2022.',
-    why: 'The weak version has the shape of evidence — “for example” — and carries no information: no place, no figure, no period. An example does its job when a reader could in principle go and check it.',
+    strong: 'For example, a commuter who gains a frequent rail connection may leave the car at home, reducing both road traffic and the emissions produced by that journey.',
+    why: 'The weak version has the shape of an example but no mechanism. The strong version shows one plausible case and explains why it supports the claim. IELTS accepts relevant examples from your own knowledge or experience; it does not require an invented authority, study or statistic.',
   },
 ];
 

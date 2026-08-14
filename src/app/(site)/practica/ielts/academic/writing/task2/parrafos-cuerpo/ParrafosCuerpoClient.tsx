@@ -230,7 +230,7 @@ export default function ParrafosCuerpoClient() {
       <div className={styles.factGrid}>
         <div className={styles.fact}><strong>T</strong><span>the one claim this paragraph proves</span></div>
         <div className={styles.fact}><strong>E</strong><span>the mechanism, not the claim again</span></div>
-        <div className={styles.fact}><strong>E</strong><span>one named case, with figures</span></div>
+        <div className={styles.fact}><strong>E</strong><span>one concrete illustration, clearly connected</span></div>
         <div className={styles.fact}><strong>L</strong><span>spend the evidence, open nothing new</span></div>
       </div>
     </header>

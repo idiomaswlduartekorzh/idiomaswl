@@ -14,11 +14,13 @@ export async function generateMetadata({ params }: { params: Promise<{ habilidad
   const { habilidad } = await params
   const skill = TRANSFERABLE_SKILLS.find((item) => item.slug === habilidad)
   if (!skill) return {}
+  const title = `${skill.label} for IELTS Writing Task 2`
+  const description = `Develop ${skill.label.toLowerCase()} for IELTS Writing Task 2 with a complete explanation, worked examples, common mistakes and guided practice.`
   return {
-    title: skill.seoTitle,
-    description: skill.seoDescription,
-    keywords: [skill.spanishName.toLowerCase(), `${skill.label.toLowerCase()} ielts`, 'IELTS writing task 2'],
-    openGraph: { title: skill.seoTitle, description: skill.seoDescription, type: 'article', locale: 'es_CO' },
+    title,
+    description,
+    keywords: [`${skill.label.toLowerCase()} IELTS`, 'IELTS Writing Task 2 skills', 'IELTS writing practice'],
+    openGraph: { title, description, type: 'article', locale: 'en_US', url: `${BASE}/${skill.slug}` },
     alternates: { canonical: `${BASE}/${skill.slug}` },
   }
 }
@@ -30,7 +32,7 @@ export default async function Page({ params }: { params: Promise<{ habilidad: st
   return (
     <>
       <Task2SkillStructuredData
-        name={skill.spanishName}
+        name={`${skill.label} for IELTS Writing Task 2`}
         path={`/practica/ielts/academic/writing/task2/habilidades/${skill.slug}`}
         teaches={[skill.label.toLowerCase(), 'IELTS writing task 2']}
       />

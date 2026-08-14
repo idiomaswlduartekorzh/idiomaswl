@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import { Task2SkillStructuredData } from '../Task2SkillStructuredData'
 
 export const metadata: Metadata = {
-  title: 'IELTS Writing Task 2: la tarea completa, de principio a fin',
-  description: '25 enunciados de las cinco familias, cada uno con su ensayo modelo completo. Planifica, escribe con temporizador de 40 minutos y compara párrafo a párrafo.',
-  keywords: ['IELTS task 2 completo', 'IELTS writing task 2 full essay', 'IELTS tarea completa task 2', 'IELTS band 7 essay'],
+  title: 'Complete IELTS Writing Task 2 essay practice',
+  description: 'Choose from 25 prompts, plan the response, write with a 40-minute timer and compare your work with a complete original model essay.',
+  keywords: ['complete IELTS Task 2 practice', 'IELTS Writing Task 2 full essay', 'timed IELTS essay practice', 'IELTS model essay'],
   openGraph: {
-    title: 'IELTS Task 2: Tarea Completa — IELTS Writing Task 2 integrado',
-    description: '25 enunciados de las cinco familias, cada uno con su ensayo modelo completo. Planifica, escribe con temporizador de 40 minutos y compara párrafo a párrafo.',
-    type: 'website', locale: 'es_CO',
+    title: 'Complete IELTS Writing Task 2 essay practice',
+    description: 'Plan, write, self-review and compare one full IELTS Task 2 response across 25 original prompts.',
+    type: 'website', locale: 'en_US',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ielts/academic/writing/task2/tarea-completa' },
 }
@@ -18,7 +18,7 @@ export default function Page() {
   return (
     <>
       <Task2SkillStructuredData
-        name="IELTS Task 2 tarea completa"
+        name="Complete IELTS Writing Task 2 essay practice"
         path="/practica/ielts/academic/writing/task2/tarea-completa"
         teaches={['full essay', 'timed writing', 'self review']}
       />

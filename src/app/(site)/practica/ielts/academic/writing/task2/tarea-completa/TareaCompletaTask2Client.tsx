@@ -44,9 +44,9 @@ const MIN_WORDS = 250;
 /** Lo que se revisa en cualquier ensayo, en el orden en que conviene revisarlo. */
 const GENERAL_CHECKS = [
   'The introduction reframes the prompt in different words and states my answer.',
-  'Every body paragraph makes one claim, explains it, illustrates it and links back.',
+  'Each body paragraph has one clear job and develops it with enough explanation or illustration for this prompt.',
   'The conclusion restates my answer with new wording and adds no new argument.',
-  'I wrote at least 250 words, and no paragraph is only one or two sentences.',
+  'I wrote at least 250 words, and every paragraph is developed enough to perform its job.',
 ];
 
 const CRITERIA = [

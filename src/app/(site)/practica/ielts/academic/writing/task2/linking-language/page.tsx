@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import { Task2SkillStructuredData } from '../Task2SkillStructuredData'
 
 export const metadata: Metadata = {
-  title: 'Conectores en inglés: las 7 familias, con ejercicios',
-  description: 'Conectores de adición, contraste, causa-efecto, ejemplo, concesión, comparación y conclusión: dónde va cada uno y con qué puntuación.',
-  keywords: ['IELTS linking words', 'IELTS conectores académicos', 'IELTS cohesion task 2', 'IELTS vocabulary linking'],
+  title: 'IELTS Task 2 linking words by function, with practice',
+  description: 'Learn addition, contrast, cause, example, concession, comparison and conclusion linking language with punctuation and practice.',
+  keywords: ['IELTS linking words', 'academic linking language', 'IELTS cohesion Task 2', 'IELTS linking word practice'],
   openGraph: {
-    title: 'Conectores en inglés: las 7 familias con ejemplos y ejercicios',
-    description: 'Conectores de adición, contraste, causa-efecto, ejemplo, concesión, comparación y conclusión. Dónde va cada uno, con qué puntuación, y ejercicios corregidos.',
-    type: 'website', locale: 'es_CO',
+    title: 'IELTS Task 2 linking words by function, with practice',
+    description: 'Study linking language by logical function, including placement, punctuation, examples and corrected exercises.',
+    type: 'website', locale: 'en_US',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ielts/academic/writing/task2/linking-language' },
 }

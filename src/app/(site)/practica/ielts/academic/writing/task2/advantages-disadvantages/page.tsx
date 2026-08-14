@@ -29,7 +29,7 @@ const FAQS = [
 export const metadata: Metadata = {
   title: 'IELTS Writing Task 2: advantages and disadvantages',
   description:
-    'Practica IELTS Academic Writing Task 2 advantages-disadvantages essays: ventajas, desventajas, outweigh, estructura y modelo explicado.',
+    'Practise IELTS Academic Writing Task 2 advantages-and-disadvantages essays, including outweigh prompts, evaluation and explained models.',
   keywords: [
     'IELTS advantages disadvantages essay',
     'IELTS writing task 2 advantages disadvantages',
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'IELTS Writing Task 2: advantages and disadvantages',
     description:
-      'Lección práctica para escribir advantages-disadvantages essays de IELTS Task 2 con balance, evaluación y modelo explicado.',
+      'Learn to balance, evaluate and answer IELTS Task 2 advantages-and-disadvantages and outweigh prompts.',
     type: 'website',
-    locale: 'es_CO',
+    locale: 'en_US',
     url: URL,
   },
   alternates: { canonical: URL },
@@ -54,7 +54,7 @@ export default function Page() {
       <LearningResourceJsonLd
         name="IELTS Writing Task 2: advantages and disadvantages"
         url={URL}
-        description="Lección y práctica original para escribir advantages-disadvantages essays de IELTS Academic Writing Task 2."
+        description="Original lesson and guided practice for writing advantages-and-disadvantages essays in IELTS Academic Writing Task 2."
         teaches={[
           'IELTS Academic Writing Task 2',
           'advantages and disadvantages essay',
@@ -70,7 +70,7 @@ export default function Page() {
       <FaqJsonLd faqs={FAQS} />
       <BreadcrumbJsonLd
         items={[
-          { name: 'Práctica', url: 'https://www.idiomaswl.com/practica' },
+          { name: 'Practice', url: 'https://www.idiomaswl.com/practica' },
           { name: 'IELTS', url: 'https://www.idiomaswl.com/practica/ielts' },
           { name: 'Academic Writing', url: 'https://www.idiomaswl.com/practica/ielts/academic/writing' },
           { name: 'Task 2', url: 'https://www.idiomaswl.com/practica/ielts/academic/writing/task2' },

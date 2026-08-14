@@ -561,9 +561,9 @@ cambio, porque las dos primeras veces el arreglo no arregló nada y solo se vio 
 Las ocho unidades con taller o motor tienen las cuatro casillas en ✅. La novena fila
 —subhabilidades— era de auditar, no de reconstruir, y su inventario está arriba.
 
-- **90 tests de Playwright en verde** (6 ficheros), en móvil (375) y escritorio.
-- La compuerta `check:ielts-task2` pasa suelta. `npm run build` está en rojo por
-  `check:vocabulario` («o'clock» en inglés A1), que es de **otra sesión** y no se ha tocado.
+- **183 tests de Playwright en verde**, en móvil (375) y escritorio; la consola queda limpia.
+- La compuerta `check:ielts-task2`, TypeScript, el catálogo de práctica y `npm run build`
+  pasan completos. El build genera las 1.357 páginas y ejecuta todos los guardianes previos.
 - El guardián de Task 2 mide ahora: emparejamiento por posición, longitud, distractores
   reciclados, respuesta impresa arriba, un mensaje por opción, reparto de la letra correcta,
   25 enunciados con modelo de 4 párrafos y 250+ palabras, y ningún corrector ortográfico.
@@ -586,6 +586,23 @@ Las ocho unidades con taller o motor tienen las cuatro casillas en ✅. La noven
    los motores de cada sección no pueden confundir». El sospechoso conocido es
    `analisis-pregunta`, cuyas opciones salen de `example.instruction` — notas de redacción,
    no frases escritas para que las lea un estudiante.
+
+### Auditoría multidisciplinaria de cierre — 2026-08-14
+
+La revisión final cruzó cuatro perspectivas: contrato IELTS, pedagogía, usuario promedio y
+producto full-stack/indexable. Encontró cuatro defectos que los conteos anteriores no veían:
+
+| Hallazgo | Corrección | Guardián permanente |
+|---|---|---|
+| Un modelo atribuía a la autoridad de transporte de Singapur una reducción exacta no sustentada; otros ejercicios pedían autoridad, estudio o cifras | Los ejemplos positivos usan mecanismos plausibles de conocimiento/experiencia y prohíben inventar fuente, autoridad o estadística | `check:ielts-task2` escanea los modelos copiables contra esas fórmulas |
+| La revisión de ensayo exigía TEEL y un número mínimo de frases como si fueran reglas IELTS | El checklist comprueba función y desarrollo suficiente para el enunciado, sin una fórmula universal | El texto final ya no certifica estructura rígida |
+| “Hook” aparecía como uno de cuatro trabajos de la introducción | La lección enseña tres trabajos esenciales y un contexto opcional; declara que IELTS no exige ni puntúa un hook por separado | El guardián rechaza que vuelva la etiqueta `Hook` o desaparezca la advertencia de crédito |
+| Páginas inglesas publicaban Open Graph `es_CO` y el subárbol heredaba español sin una frontera accesible | Título, descripción y OG son ingleses con `en_US`; el layout declara `lang="en"` y los FAQ españoles declaran `lang="es"` | El guardián recorre todas las páginas Task 2 y valida locale + layout |
+
+La comprobación de producción leyó cinco rutas representativas, incluidas tres dinámicas:
+canonical absoluto exacto, título inglés, `og:locale=en_US` y frontera `lang="en"`. El FAQ
+español conserva `lang="es"`. Esto mejora indexación, previews y lectores de pantalla sin
+cambiar el idioma global del resto de WeLearn.
 
 ### Fuera del alcance de Task 2, pero visto aquí
 

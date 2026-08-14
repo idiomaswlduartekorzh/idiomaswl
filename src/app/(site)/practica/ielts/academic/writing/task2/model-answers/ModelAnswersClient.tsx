@@ -172,7 +172,7 @@ export default function ModelAnswersClient({ faqs }: { faqs: Faq[] }) {
 
     {/* El FAQ se queda en español: es la superficie de búsqueda de la página. */}
     {faqs.length > 0 && (
-      <section className={styles.section} id="faq">
+      <section className={styles.section} id="faq" lang="es">
         <div className={styles.sectionHeading}>
           <p className={styles.kicker}>Preguntas frecuentes</p>
           <h2>Lo que se pregunta sobre los ensayos modelo</h2>

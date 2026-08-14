@@ -22,21 +22,23 @@ export async function generateMetadata({ params }: { params: Promise<{ funcion: 
   const { funcion } = await params
   const item = functionBySlug(funcion)
   if (!item) return {}
+  const title = `${item.label} in IELTS Writing Task 2 vocabulary`
+  const description = `Build precise academic vocabulary for ${item.label.toLowerCase()} in IELTS Writing Task 2 through usage patterns, common errors and guided practice.`
 
   return {
-    title: item.seoTitle,
-    description: item.seoDescription,
+    title,
+    description,
     keywords: [
-      item.spanishName.toLowerCase(),
       `${item.label.toLowerCase()} academic english`,
-      'vocabulario académico inglés',
+      'academic English vocabulary',
       'IELTS writing task 2 vocabulary',
     ],
     openGraph: {
-      title: item.seoTitle,
-      description: item.seoDescription,
+      title,
+      description,
       type: 'article',
-      locale: 'es_CO',
+      locale: 'en_US',
+      url: `${BASE}/${item.slug}`,
     },
     alternates: { canonical: `${BASE}/${item.slug}` },
   }
@@ -50,7 +52,7 @@ export default async function Page({ params }: { params: Promise<{ funcion: stri
   return (
     <>
       <Task2SkillStructuredData
-        name={item.spanishName}
+        name={`${item.label} in IELTS Writing Task 2 vocabulary`}
         path={`/practica/ielts/academic/writing/task2/academic-vocabulary/${item.slug}`}
         teaches={['academic vocabulary', item.label.toLowerCase(), 'lexical resource']}
       />

@@ -4,16 +4,16 @@ import { Task2SkillStructuredData } from '../Task2SkillStructuredData'
 // Ni el título ni la descripción prometen una banda: la página enseña a leer la instrucción
 // del enunciado, y ningún ejercicio de cinco botones puede prometer un 7.
 const DESCRIPTION =
-  'Identifica los 5 tipos de ensayo del IELTS Writing Task 2 —opinión, discusión, problema-solución, ventajas-desventajas y doble pregunta— por la instrucción final del enunciado. 10 enunciados con corrección por opción y 3 ensayos que respondieron a la pregunta equivocada.';
+  'Identify five common IELTS Writing Task 2 teaching families from the prompt instruction, then practise with 10 corrected prompts and three misaligned essays.';
 
 export const metadata: Metadata = {
-  title: 'Tipos de ensayo del IELTS Writing Task 2, uno por uno',
+  title: 'IELTS Writing Task 2 question types, one by one',
   description: DESCRIPTION,
-  keywords: ['IELTS task 2 tipos', 'IELTS opinion essay', 'IELTS discussion essay', 'IELTS writing task 2 tipos de ensayo'],
+  keywords: ['IELTS Task 2 question types', 'IELTS opinion essay', 'IELTS discussion essay', 'IELTS essay prompt analysis'],
   openGraph: {
-    title: 'IELTS Task 2: Tipos de Ensayo — Opinion, Discussion, Problem-Solution',
+    title: 'IELTS Task 2 question types — opinion, discussion and more',
     description: DESCRIPTION,
-    type: 'website', locale: 'es_CO',
+    type: 'website', locale: 'en_US',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ielts/academic/writing/task2/tipo-ensayo' },
 }
@@ -23,7 +23,7 @@ export default function Page() {
   return (
     <>
       <Task2SkillStructuredData
-        name="IELTS Task 2 tipos de ensayo"
+        name="IELTS Writing Task 2 question types"
         path="/practica/ielts/academic/writing/task2/tipo-ensayo"
         teaches={['essay types', 'prompt analysis', 'task response']}
       />

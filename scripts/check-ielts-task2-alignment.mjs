@@ -1159,6 +1159,70 @@ if (fs.existsSync(vocabHub)) {
   }
 }
 
+/**
+ * COHERENCIA EDITORIAL — los ejemplos no pueden fingir una fuente.
+ *
+ * La auditoría encontró una contradicción que ningún conteo estructural veía: Body
+ * Paragraphs enseñaba correctamente a no inventar estudios, pero su ejemplo principal
+ * atribuía a una autoridad de Singapur una reducción exacta del 28 % que no estaba
+ * respaldada. Además, el ejercicio pedía expresamente «a city, an authority or a study».
+ * Eso premia justo la conducta que el resto del curso identifica como fabricación.
+ *
+ * Estos dos ficheros contienen los modelos positivos que un estudiante puede copiar. Los
+ * distractores que enseñan a detectar una estadística inventada sí pueden conservarla.
+ */
+const evidenceModelFiles = [
+  path.join(task2, 'model-answers', 'model-answer-extras.ts'),
+  path.join(task2, 'parrafos-cuerpo', 'body-paragraph-drills.ts'),
+  path.join(task2, 'parrafos-cuerpo', 'ParrafosCuerpoClient.tsx'),
+]
+const fabricatedEvidencePatterns = [
+  /Singapore(?:'s)? (?:Land Transport Authority|transport authority)/i,
+  /named case with figures/i,
+  /source, a percentage and a date/i,
+  /carries a source, a figure and a period/i,
+  /Give (?:one )?(?:a )?(?:figure|study|authority)/i,
+]
+for (const file of evidenceModelFiles) {
+  const source = fs.readFileSync(file, 'utf8')
+  for (const pattern of fabricatedEvidencePatterns) {
+    if (pattern.test(source)) {
+      failures.push(`${path.relative(task2, file)}: el modelo vuelve a exigir o fingir evidencia externa (${pattern}). Task 2 admite ejemplos relevantes de conocimiento o experiencia; no se inventan fuentes ni cifras.`)
+    }
+  }
+}
+
+/**
+ * IDIOMA E INDEXACIÓN — el producto principal es internacional y está escrito en inglés.
+ *
+ * El FAQ puede seguir en español como capa de búsqueda y aclaración, pero la página que lo
+ * contiene no puede anunciarse socialmente como `es_CO`. Varias rutas publicaban contenido
+ * inglés con título social español y locale colombiano: un documento contradictorio para
+ * buscadores, lectores de previews y agentes. El canonical se comprueba en el guardián SEO;
+ * aquí defendemos la señal de idioma propia de Task 2.
+ */
+function pageFiles(dir) {
+  return fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
+    const target = path.join(dir, entry.name)
+    return entry.isDirectory() ? pageFiles(target) : entry.name === 'page.tsx' ? [target] : []
+  })
+}
+for (const file of pageFiles(task2)) {
+  const source = fs.readFileSync(file, 'utf8')
+  if (/locale:\s*['"]es_CO['"]/.test(source)) {
+    failures.push(`${path.relative(task2, file)}: publica contenido principal inglés con Open Graph es_CO. Usa en_US; el FAQ puede permanecer en español.`)
+  }
+}
+const task2Layout = path.join(task2, 'layout.tsx')
+if (!fs.existsSync(task2Layout) || !/<(?:div|main)[^>]*lang=["']en["']/.test(fs.readFileSync(task2Layout, 'utf8'))) {
+  failures.push('layout.tsx: el subárbol internacional de Task 2 no declara `lang="en"` para lectores de pantalla.')
+}
+const introductionData = fs.readFileSync(path.join(task2, 'introduccion', 'introduction-data.ts'), 'utf8')
+const introductionWorkshop = fs.readFileSync(path.join(task2, 'introduccion', 'IntroductionWorkshop.tsx'), 'utf8')
+if (/label:\s*['"]Hook['"]/.test(introductionData) || !introductionWorkshop.includes('no separate IELTS credit')) {
+  failures.push('Introducción: vuelve a presentar el “hook” como requisito. Debe llamarse contexto opcional y negar crédito IELTS separado.')
+}
+
 if (failures.length) {
   console.error('IELTS Task 2 — alineación enunciado/modelo:')
   for (const failure of failures) console.error(`- ${failure}`)

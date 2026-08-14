@@ -57,14 +57,14 @@ export const WORKED_EXAMPLE: {
     {
       part: 'E1',
       label: 'Explanation',
-      text: 'A single articulated bus carries up to 120 passengers while occupying the road space of three or four cars, so every passenger moved by bus frees capacity that would otherwise be filled by another vehicle.',
+      text: 'A bus can move many commuters in the road space used by only a few cars, so shifting even part of a busy route to public transport frees capacity for journeys that still need the road.',
       job: 'Explains the mechanism — how the claim actually works. Not another way of saying the claim.',
     },
     {
       part: 'E2',
       label: 'Example',
-      text: 'Singapore\'s Land Transport Authority reported that its mass rapid transit expansion reduced private car use by 28% between 2010 and 2022, handling 3.4 million journeys a day.',
-      job: 'One named case with figures. A country name on its own proves nothing; the number is what makes it evidence.',
+      text: 'For example, when a suburban district gains a frequent rail connection, commuters who previously drove can reach the same workplaces without adding another car to the city centre.',
+      job: 'One concrete illustration that makes the mechanism visible. It does not pretend to cite a study or statistic the writer cannot verify.',
     },
     {
       part: 'L',
@@ -77,8 +77,8 @@ export const WORKED_EXAMPLE: {
     'Public transport is more efficient than cars. When more people use buses and trains, there are fewer cars on the road. This means less traffic. For example, Singapore has a good transport system. This shows that public transport is better.',
   whatChanged: [
     'The claim moved from “more efficient” to “more efficient use of urban infrastructure” — efficient at what, and compared with what.',
-    'The explanation stopped restating the claim. “Fewer cars means less traffic” is the claim again; 120 passengers in the space of four cars is the mechanism.',
-    'The example gained a source, a percentage and a date. “Singapore has a good system” is an opinion about Singapore, not evidence.',
+    'The explanation stopped restating the claim. It now shows how carrying more people in less road space can release capacity.',
+    'The example became a concrete scenario with a visible cause and effect. It illustrates the reasoning without inventing a study, authority or statistic.',
     'The final sentence stopped being circular. “This shows public transport is better” proves nothing; the rewrite says what the evidence buys.',
   ],
 };
@@ -110,16 +110,16 @@ export const BODY_DRILLS: BodyDrill[] = [
       {
         part: 'E1',
         label: 'Explanation',
-        ask: 'Explain the mechanism. Why is it more efficient? Use a comparison or a number — and do not name a country yet.',
+        ask: 'Explain the mechanism. Why is it more efficient? Use a clear comparison, but do not invent a statistic.',
         minWords: 20,
-        model: 'A single articulated bus carries up to 120 passengers while occupying the space of only three or four cars, so investing in bus fleets reduces congestion proportionally while cutting emissions per passenger.',
+        model: 'A bus can move many commuters in the road space used by only a few cars, so shifting part of a busy route to public transport frees capacity while reducing emissions per passenger.',
       },
       {
         part: 'E2',
         label: 'Example',
-        ask: 'Give one named case with figures: a city, an authority or a study, plus what it measured.',
+        ask: 'Give one concrete, plausible case that shows the mechanism. Do not invent a named authority, study or exact figure.',
         minWords: 20,
-        model: 'Singapore\'s Land Transport Authority reported that its mass rapid transit expansion reduced private car usage by 28% between 2010 and 2022, handling 3.4 million daily journeys.',
+        model: 'For example, when a suburban district gains a frequent rail connection, commuters who previously drove can reach the same workplaces without adding another car to the city centre.',
       },
       {
         part: 'L',
@@ -147,16 +147,16 @@ export const BODY_DRILLS: BodyDrill[] = [
       {
         part: 'E2',
         label: 'Example',
-        ask: 'Give evidence of that vulnerability: a study, a figure or a documented case.',
+        ask: 'Give a plausible example that makes the vulnerability visible without inventing a study or statistic.',
         minWords: 20,
-        model: 'Research summarised by the American Psychological Association found that children under seven cannot identify the persuasive intent of an advertisement at all, and that most children aged eight to twelve report wanting an advertised product within a day of seeing it.',
+        model: 'For example, a young child may treat a brightly presented claim that a toy is “the best” as product information rather than recognise it as a sales tactic designed to create desire.',
       },
       {
         part: 'L',
         label: 'Link',
         ask: 'Explain why, given that evidence, the objection does not change your answer.',
         minWords: 15,
-        model: 'Set against a documented inability to recognise persuasion, the commercial cost of restricting these advertisements is the smaller of the two harms, which is why the objection does not change the case for a ban.',
+        model: 'Set against a child\'s limited ability to recognise persuasion, the commercial cost of restricting these advertisements is the smaller of the two harms, which is why the objection does not change the case for a ban.',
       },
     ],
   },
@@ -177,9 +177,9 @@ export const BODY_DRILLS: BodyDrill[] = [
       {
         part: 'E2',
         label: 'Example',
-        ask: 'Give one education system or study where grouping produced a measured result.',
+        ask: 'Give a concrete classroom example that illustrates the proposed benefit without pretending to cite research.',
         minWords: 20,
-        model: 'In the United Kingdom, setting in secondary mathematics has been linked to higher attainment among already high-achieving students, with Education Endowment Foundation work reporting roughly three months of additional progress for that group.',
+        model: 'For example, an advanced mathematics group can move directly from basic algebra to multi-step problems, while a foundation group can spend the same lesson repairing the prerequisite skills it actually needs.',
       },
       {
         part: 'L',
@@ -207,9 +207,9 @@ export const BODY_DRILLS: BodyDrill[] = [
       {
         part: 'E2',
         label: 'Example',
-        ask: 'Give a figure that measures the fall in activity or its health cost.',
+        ask: 'Give a realistic example that shows how routine movement has disappeared from an ordinary day.',
         minWords: 20,
-        model: 'The World Health Organisation attributes a significant share of the global burden of non-communicable disease to physical inactivity, and adults in high-income countries now average well under half the recommended daily minutes of moderate activity.',
+        model: 'For example, an office worker may travel by car, sit through the working day and spend the evening on a screen, completing almost every necessary activity without sustained movement.',
       },
       {
         part: 'L',
@@ -237,9 +237,9 @@ export const BODY_DRILLS: BodyDrill[] = [
       {
         part: 'E2',
         label: 'Example',
-        ask: 'Give evidence that at least one of the two measures has worked somewhere.',
+        ask: 'Give a plausible case showing how at least one measure could change an everyday choice.',
         minWords: 20,
-        model: 'After the United Kingdom introduced its Soft Drinks Industry Levy in 2018, manufacturers reformulated a majority of affected products and average sugar content fell by roughly a quarter, without the industry losses that had been predicted.',
+        model: 'For example, if a levy makes a high-sugar drink more expensive than its lower-sugar alternative, manufacturers have a reason to reformulate and shoppers have a reason to choose the cheaper option.',
       },
       {
         part: 'L',
@@ -291,7 +291,7 @@ export const DIAGNOSTIC: { paragraph: string; observations: Observation[]; rebui
       part: 'E2',
       claim: 'The example names effects but never measures them.',
       real: true,
-      why: '“Flooding and droughts” is a category, not evidence. An example does its job when it carries a source, a figure and a period — how much, where, and over how long.',
+      why: '“Flooding and droughts” is a category, not an illustration. A useful example shows one concrete situation and makes its connection to the paragraph\'s reasoning explicit; it does not need an invented source or figure.',
     },
     {
       id: 'link-opens-topic',
@@ -323,5 +323,5 @@ export const DIAGNOSTIC: { paragraph: string; observations: Observation[]; rebui
     },
   ],
   rebuilt:
-    'One of the most damaging consequences of a warming atmosphere is the sharp rise in extreme rainfall. Warmer air holds roughly seven per cent more water vapour for every degree of warming, so the same storm now arrives carrying more water to drop in one place. Pakistan\'s 2022 floods, which followed rainfall almost three times the August average, put a third of the country under water and displaced eight million people. A single season that removes a third of a country from use is the scale of disruption that makes early adaptation cheaper than late repair.',
+    'One of the most damaging consequences of a warming atmosphere is the greater disruption caused by extreme rainfall. When a storm releases more water than streets and drainage systems can carry, homes, transport routes and local services can fail at the same time. A low-lying neighbourhood, for example, may lose road access before residents can reach work, school or medical care. That chain of disruption is why preparing drainage and evacuation routes early can cost less than repairing an unprepared district after a severe storm.',
 };
