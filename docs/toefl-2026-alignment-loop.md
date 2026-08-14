@@ -3353,3 +3353,22 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
 - Estado de producto no cambia: estos guiones aún no se sirven en el examen y Listening
   sigue 17/34. Faltan Sets 6–20, privacidad/API del bloque completo, preview editorial,
   aprobación de voces/costo, medios y runtime forward-only. Cero audio tocado.
+
+### Expansión Listening escrita — guiones Sets 6–10 — 2026-08-14
+
+- Se aplicó sin variar el contrato: cada Set 6–10 recibe tres Choose para M1 y un M2
+  completo de 8 Choose + Conversation 2 + Announcement 2 + Academic Talk 4.
+- Son 95 ítems públicos nuevos y 70 medios planificados con estado
+  `script-ready-audio-blocked`; las 95 claves permanecen en un módulo `server-only`.
+- Editorial: 55 Choose de 6–11 palabras, Conversations 83–89, Announcements 57–66 y
+  Academic Talks 197–207. Dos Choose coincidían con Sets 1–5 y se reescribieron; los
+  140 guiones acumulados quedan únicos y sin pistas grandes de longitud en la clave.
+- Ríos atmosféricos, fitoplancton satelital, manglares, radiocarbono y radar Doppler se
+  contrastaron con NOAA, NASA, NPS y NWS. Evidencia y auditoría de posibles cortes de
+  Conversations heredadas en
+  `docs/toefl-2026-listening-scripts-sets6-10-audit-2026-08-14.md`.
+- Evidencia: checker Listening fijo PASS Sets 1–10, unit determinista 3/3 y TypeScript
+  PASS. El producto operativo no cambia: Listening continúa 17/34 porque los guiones
+  no están conectados y no existen sus medios.
+- Siguiente lote: Sets 11–15. Cero audio abierto, reproducido, transcrito, generado,
+  normalizado o modificado.

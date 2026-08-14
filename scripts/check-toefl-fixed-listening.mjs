@@ -2,35 +2,43 @@ import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
 import { readFile } from 'node:fs/promises';
 import { TOEFL_FIXED_LISTENING_SETS_1_TO_5 } from '../src/data/toefl/listening-fixed-sets-1-5.ts';
+import { TOEFL_FIXED_LISTENING_SETS_6_TO_10 } from '../src/data/toefl/listening-fixed-sets-6-10.ts';
 
 const root = new URL('../', import.meta.url);
 const read = (path) => readFile(new URL(path, root), 'utf8');
 const words = (text) => text.match(/[A-Za-z]+(?:'[A-Za-z]+)?/g) ?? [];
 
-const [publicSource, privateSource, contractSource] = await Promise.all([
+const [publicSource1To5, publicSource6To10, privateSource1To5, privateSource6To10, contractSource] = await Promise.all([
   read('src/data/toefl/listening-fixed-sets-1-5.ts'),
+  read('src/data/toefl/listening-fixed-sets-6-10.ts'),
   read('src/server/toefl/listening-fixed-sets-1-5.ts'),
+  read('src/server/toefl/listening-fixed-sets-6-10.ts'),
   read('docs/toefl-2026-listening-expansion-contract-2026-08-14.md'),
 ]);
 
+const publicSource = `${publicSource1To5}\n${publicSource6To10}`;
+const privateSources = [privateSource1To5, privateSource6To10];
 assert.doesNotMatch(publicSource, /correctOptionId|KEY_LABELS|\banswer\s*:/, 'public fixed Listening data contains no answer keys');
-assert.match(privateSource, /import 'server-only'/, 'fixed Listening keys have an explicit server-only boundary');
+privateSources.forEach((source) => assert.match(source, /import 'server-only'/, 'fixed Listening keys have an explicit server-only boundary'));
 assert.match(contractSource, /\| 1 \| 8 \| 4 \(dos estímulos × 2\) \| 2 \| 4 \| 18 \|/, 'contract records official-practice Module 1 shape');
 assert.match(contractSource, /\| 2 \| 8 \| 2 \(un estímulo × 2\) \| 2 \| 4 \| 16 \|/, 'contract records official-practice Module 2 shape');
 
 const labelsBySet = new Map();
-const keyBlock = privateSource.slice(privateSource.indexOf('const KEY_LABELS'), privateSource.indexOf('function orderedItems'));
-for (const match of keyBlock.matchAll(/^\s*(\d+): \[([^\]]+)\]/gm)) {
-  labelsBySet.set(Number(match[1]), [...match[2].matchAll(/'([^']+)'/g)].map((entry) => entry[1]));
+for (const privateSource of privateSources) {
+  const keyBlock = privateSource.slice(privateSource.indexOf('const KEY_LABELS'), privateSource.indexOf('function orderedItems'));
+  for (const match of keyBlock.matchAll(/^\s*(\d+): \[([^\]]+)\]/gm)) {
+    labelsBySet.set(Number(match[1]), [...match[2].matchAll(/'([^']+)'/g)].map((entry) => entry[1]));
+  }
 }
 
 const itemIds = [];
 const mediaIds = [];
 const plannedUrls = [];
 const lengthClues = [];
-assert.equal(TOEFL_FIXED_LISTENING_SETS_1_TO_5.length, 5, 'first fixed Listening batch has five sets');
+const fixedListeningSets = [...TOEFL_FIXED_LISTENING_SETS_1_TO_5, ...TOEFL_FIXED_LISTENING_SETS_6_TO_10];
+assert.equal(fixedListeningSets.length, 10, 'first two fixed Listening batches have ten sets');
 
-for (const set of TOEFL_FIXED_LISTENING_SETS_1_TO_5) {
+for (const set of fixedListeningSets) {
   assert.equal(set.module1ChooseAdditions.length, 3, `Set ${set.setNumber} adds three Module 1 Choose items`);
   assert.equal(set.module2.choose.length, 8, `Set ${set.setNumber} Module 2 has eight Choose items`);
   assert.equal(set.module2.conversation.items.length, 2, `Set ${set.setNumber} Module 2 Conversation has two questions`);
@@ -92,7 +100,7 @@ assert.equal(new Set(itemIds).size, itemIds.length, 'new fixed Listening item id
 assert.equal(new Set(mediaIds).size, mediaIds.length, 'new fixed Listening media ids are globally unique');
 assert.equal(new Set(plannedUrls).size, plannedUrls.length, 'new fixed Listening planned URLs are globally unique');
 assert.deepEqual(lengthClues, [], `correct options must not reveal themselves through a large length advantage: ${lengthClues.join(', ')}`);
-const allScripts = TOEFL_FIXED_LISTENING_SETS_1_TO_5.flatMap((set) => [
+const allScripts = fixedListeningSets.flatMap((set) => [
   ...set.module1ChooseAdditions,
   ...set.module2.choose,
   set.module2.conversation,
@@ -101,9 +109,12 @@ const allScripts = TOEFL_FIXED_LISTENING_SETS_1_TO_5.flatMap((set) => [
 ]).map((entry) => entry.script.trim().toLowerCase());
 assert.equal(new Set(allScripts).size, allScripts.length, 'all planned scripts in the batch are distinct');
 
-const changedPaths = execFileSync('git', ['diff', '--name-only', 'HEAD'], {
+const changedPaths = execFileSync('git', ['status', '--porcelain=v1', '--untracked-files=all'], {
   cwd: new URL('.', root), encoding: 'utf8',
-}).trim().split('\n').filter(Boolean);
+}).trim().split('\n').filter(Boolean).flatMap((entry) => {
+  const path = entry.slice(3).replace(/^"|"$/g, '');
+  return path.includes(' -> ') ? path.split(' -> ') : [path];
+});
 assert.ok(changedPaths.every((path) => !path.startsWith('public/audio/') && !/\.(mp3|wav|m4a|ogg)$/i.test(path)), 'Listening script work changes no audio asset');
 
-console.log('✓ TOEFL fixed Listening scripts Sets 1–5: 19 new items/set, 14 blocked media/set, private keys, and no audio changes');
+console.log('✓ TOEFL fixed Listening scripts Sets 1–10: 19 new items/set, 14 blocked media/set, private keys, and no audio changes');

@@ -1,14 +1,21 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import { TOEFL_FIXED_LISTENING_SETS_1_TO_5 } from '../src/data/toefl/listening-fixed-sets-1-5.ts';
+import { TOEFL_FIXED_LISTENING_SETS_6_TO_10 } from '../src/data/toefl/listening-fixed-sets-6-10.ts';
 import { scoreToeflListeningAttempt } from '../src/lib/toefl/listening-contract.ts';
 
+const fixedListeningSets = [...TOEFL_FIXED_LISTENING_SETS_1_TO_5, ...TOEFL_FIXED_LISTENING_SETS_6_TO_10];
 const labels = [
   ['c', 'b', 'a', 'd', 'b', 'c', 'a', 'd', 'b', 'a', 'c', 'b', 'd', 'a', 'c', 'b', 'c', 'a', 'd'],
   ['a', 'd', 'c', 'b', 'a', 'd', 'c', 'b', 'd', 'a', 'c', 'c', 'a', 'd', 'b', 'a', 'c', 'd', 'b'],
   ['d', 'b', 'a', 'c', 'd', 'a', 'b', 'a', 'd', 'b', 'b', 'b', 'c', 'a', 'd', 'c', 'b', 'a', 'd'],
   ['b', 'c', 'd', 'a', 'b', 'a', 'd', 'a', 'b', 'c', 'd', 'd', 'a', 'b', 'c', 'd', 'a', 'c', 'b'],
   ['c', 'a', 'b', 'd', 'b', 'a', 'c', 'd', 'b', 'c', 'b', 'a', 'd', 'c', 'b', 'b', 'd', 'a', 'c'],
+  ['b', 'd', 'a', 'c', 'a', 'b', 'd', 'c', 'b', 'a', 'd', 'c', 'b', 'a', 'd', 'b', 'c', 'd', 'a'],
+  ['d', 'a', 'c', 'b', 'd', 'a', 'c', 'b', 'a', 'd', 'c', 'a', 'd', 'c', 'b', 'd', 'b', 'a', 'c'],
+  ['a', 'c', 'b', 'd', 'b', 'c', 'a', 'd', 'c', 'b', 'a', 'b', 'c', 'd', 'a', 'c', 'a', 'd', 'b'],
+  ['c', 'b', 'd', 'a', 'c', 'd', 'b', 'a', 'd', 'c', 'b', 'd', 'a', 'b', 'c', 'a', 'd', 'b', 'c'],
+  ['b', 'a', 'c', 'd', 'c', 'a', 'b', 'd', 'b', 'c', 'a', 'c', 'd', 'a', 'b', 'd', 'c', 'a', 'b'],
 ];
 
 function publicItems(set) {
@@ -30,8 +37,8 @@ function scoringFor(set, setIndex) {
   }));
 }
 
-test('Sets 1–5 new fixed Listening items close deterministically at 19/19', () => {
-  TOEFL_FIXED_LISTENING_SETS_1_TO_5.forEach((set, setIndex) => {
+test('Sets 1–10 new fixed Listening items close deterministically at 19/19', () => {
+  fixedListeningSets.forEach((set, setIndex) => {
     const scoring = scoringFor(set, setIndex);
     const input = {
       attemptId: `attempt:listening-set-${set.setNumber}`,
