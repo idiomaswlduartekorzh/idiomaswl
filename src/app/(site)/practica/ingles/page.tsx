@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import InglesPageClient from './InglesPageClient'
 import { CourseSchema } from '@/components/practica/EducationSchema'
 import HistoriasCard from '@/components/practica/HistoriasCard'
+import ClasesCard from '@/components/practica/ClasesCard'
 
 export const metadata: Metadata = {
   title: 'Práctica de Inglés — Elige tu nivel MCER',
@@ -20,7 +21,10 @@ export default function InglesPage() {
         teaches="Inglés, IELTS, TOEFL"
         inLanguage="en"
       />
-      <InglesPageClient historiasCard={<HistoriasCard lang="ingles" />} />
+      <InglesPageClient
+        historiasCard={<HistoriasCard lang="ingles" />}
+        clasesCard={<ClasesCard lang="ingles" />}
+      />
     </>
   )
 }

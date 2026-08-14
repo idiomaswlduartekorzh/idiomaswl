@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 import HistoriasCard from '@/components/practica/HistoriasCard';
+import ClasesCard from '@/components/practica/ClasesCard';
 
 export const metadata: Metadata = {
   title: 'Práctica de Italiano — Elige tu nivel MCER',
@@ -95,6 +96,7 @@ export default function ItalianoPage() {
               ? <Link key={n.nivel} href={n.href} style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>{inner}</Link>
               : <div key={n.nivel}>{inner}</div>;
           })}
+          <ClasesCard lang="italiano" />
         </div>
 
         <Link href="/practica/italiano/tiempos-verbales" style={{ textDecoration: 'none', color: 'inherit', display: 'block', marginTop: '1.75rem' }}>

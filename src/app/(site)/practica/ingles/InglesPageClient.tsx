@@ -45,7 +45,14 @@ const NIVELES = [
 // vez de importar HistoriasCard aquí a propósito: importarlo arrastraría el
 // registro entero de historias —los textos de los ocho idiomas— al bundle de
 // esta página, que solo necesita pintar una tarjeta.
-export default function InglesPageClient({ historiasCard }: { historiasCard?: ReactNode }) {
+// `clasesCard` viaja igual, por la misma razón: como slot ya renderizado.
+export default function InglesPageClient({
+  historiasCard,
+  clasesCard,
+}: {
+  historiasCard?: ReactNode
+  clasesCard?: ReactNode
+}) {
   const [levelData, setLevelData] = useState<Record<string, { completed: number }>>({})
 
   useEffect(() => {
@@ -124,6 +131,7 @@ export default function InglesPageClient({ historiasCard }: { historiasCard?: Re
               ? <Link key={n.nivel} href={n.href} style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>{inner}</Link>
               : <div key={n.nivel}>{inner}</div>
           })}
+          {clasesCard}
         </div>
       </div>
     </section>

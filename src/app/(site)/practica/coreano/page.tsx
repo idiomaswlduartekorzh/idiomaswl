@@ -3,6 +3,7 @@ import Link from 'next/link';
 import KoreanToolsClient from './KoreanToolsClient';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 import HistoriasCard from '@/components/practica/HistoriasCard';
+import ClasesCard from '@/components/practica/ClasesCard';
 
 export const metadata: Metadata = {
   title: 'Práctica de Coreano — Elige tu nivel TOPIK',
@@ -86,6 +87,7 @@ export default function CoreanoPage() {
               ? <Link key={n.nivel} href={n.href} style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>{inner}</Link>
               : <div key={n.nivel}>{inner}</div>;
           })}
+          <ClasesCard lang="coreano" />
         </div>
         <p className="eyebrow" style={{ marginBottom: '0.75rem' }}><span className="ink-line" />Herramientas adicionales</p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '0.75rem' }}>
