@@ -115,6 +115,30 @@
           "sexo": "male",
           "caracteres": 1965,
           "motivo": "Will · conversational, joven, americano. La suya es una confesión larga: hace falta cercanía, no locución."
+        },
+        "ingles/the-interpreter/a": {
+          "voice_id": "TX3LPaxmHKxFdv7VOQHJ",
+          "personaje": "Dani",
+          "papel": "the employee",
+          "sexo": "male",
+          "caracteres": 2205,
+          "motivo": "Liam · social_media, joven, «energetic». La voz más rápida del catálogo para el personaje más asustado: son las doce de la noche y le queda una noche."
+        },
+        "ingles/the-interpreter/b": {
+          "voice_id": "hpp4J3VqNfWAUOO0d1Us",
+          "personaje": "Marta",
+          "papel": "the director",
+          "sexo": "female",
+          "caracteres": 1885,
+          "motivo": "Bella · «professional, bright, warm», mediana edad. EXCEPCIÓN DELIBERADA al criterio de energía: es informative_educational, no conversational. Aquí el registro pulido ES el personaje — Marta está vendiendo algo por teléfono a una clienta. Lo que se sigue prohibiendo es narrative_story, que es leer en voz alta."
+        },
+        "ingles/the-interpreter/c": {
+          "voice_id": "cgSgspJ2msm6clMCkdW9",
+          "personaje": "Sofía",
+          "papel": "the colleague",
+          "sexo": "female",
+          "caracteres": 2061,
+          "motivo": "Jessica · conversational, joven. Tenía que sonar a las doce y media de la noche y a lo contrario de Marta: rabia privada frente a corporativo controlado. Repite voz con Sarah del ledger, dos historias atrás."
         }
       }
     },

@@ -167,10 +167,10 @@ const NARRATOR_QS: Question[] = [
     type: 'Vocabulario',
     q: 'Il narratore dice che il telefono «si è illuminato sul tavolo». Che cosa significa?',
     opts: [
-      'Il telefono ha preso fuoco',
+      'Il telefono ha preso fuoco per un guasto alla batteria',
       "Lo schermo si è acceso da solo perché è arrivato un messaggio",
-      'Marco ha preso il telefono e lo ha sbloccato',
-      'Quella sera il telefono era regolato molto luminoso',
+      'Marco ha preso il telefono e lo ha sbloccato per leggere',
+      'Quella sera il telefono era regolato con la luminosità alta',
     ],
     correct: 1,
     explanation:
@@ -180,7 +180,7 @@ const NARRATOR_QS: Question[] = [
     type: 'Inferencia',
     q: 'Giulia chiede «mezzo scherzando». Che cosa suggerisce questa scelta?',
     opts: [
-      'Giulia non aveva un vero interesse per il telefono',
+      'Giulia non aveva un vero interesse per il telefono e scherzava per riempire il silenzio',
       'Giulia voleva prendere in giro Marco per ferirlo',
       "La richiesta era avvolta in uno scherzo ma aveva dietro un'intenzione reale",
       'Giulia aveva già guardato il telefono nei giorni prima',
@@ -193,10 +193,10 @@ const NARRATOR_QS: Question[] = [
     type: 'Comprensión',
     q: 'Che cosa propone Marco invece di darle il telefono?',
     opts: [
-      'Cancellare i messaggi davanti a lei',
+      'Cancellare i messaggi davanti a lei, così da chiudere il discorso',
       'Rispondere a qualsiasi domanda volesse fargli',
-      'Mostrarle soltanto le foto',
-      'Darle il telefono il giorno dopo',
+      'Mostrarle soltanto le foto del cane',
+      'Darle il telefono il giorno dopo, con più calma',
     ],
     correct: 1,
     explanation:
@@ -206,10 +206,10 @@ const NARRATOR_QS: Question[] = [
     type: 'Pensamiento crítico',
     q: '«Un rifiuto è già una risposta.» Quale presupposto c\'è dietro questa frase?',
     opts: [
-      'Che chi rifiuta di solito è stanco o occupato',
+      'Che chi rifiuta di solito ha semplicemente qualcosa di più urgente per la testa',
       "Che un innocente avrebbe accettato, quindi il no è di per sé una prova di colpa",
-      'Che Marco aveva promesso di condividere il telefono',
-      'Che rifiutare in italiano è sempre scortese',
+      'Che Marco le aveva già promesso in passato di condividere il telefono, e adesso torna sulla parola data',
+      'Che in italiano rifiutare una richiesta diretta è sempre considerato scortese',
     ],
     correct: 1,
     explanation:
@@ -223,7 +223,7 @@ const A_QS: Question[] = [
     q: 'Secondo Giulia, che cosa voleva davvero quando ha chiesto il telefono?',
     opts: [
       'Leggere due anni di messaggi',
-      'Scoprire chi aveva mandato la notifica durante la cena',
+      'Scoprire chi aveva mandato la notifica che ha interrotto la cena di venerdì',
       'Vederglielo consegnare spontaneamente — la richiesta era un test',
       'Controllare la cronologia delle posizioni',
     ],
@@ -235,7 +235,7 @@ const A_QS: Question[] = [
     type: 'Inferencia',
     q: '«Se non hai niente da nascondere, perché ti costa così tanto?» Dov\'è il problema di questa domanda retorica?',
     opts: [
-      'È grammaticalmente scorretta',
+      'È una domanda grammaticalmente scorretta, quindi non significa niente',
       'Equipara il rifiuto alla colpa: nessuna risposta può scagionare Marco',
       'Dimostra che Giulia sa già cosa c\'è nel telefono',
       'Dimostra che a Giulia non importa della relazione',
@@ -248,10 +248,10 @@ const A_QS: Question[] = [
     type: 'Tono',
     q: 'Come descriveresti meglio il tono del messaggio vocale di Giulia?',
     opts: [
-      'Calmo, misurato e analitico',
-      'Formale e professionale',
+      'Calmo e analitico, come chi espone i fatti',
+      'Formale e professionale, come una segnalazione di lavoro',
       'Arrabbiato e sarcastico, ma incorniciato da dubbio e dolore',
-      'Leggero e divertito dall\'inizio alla fine',
+      'Leggero e divertito, come chi racconta un aneddoto',
     ],
     correct: 2,
     explanation:
@@ -261,10 +261,10 @@ const A_QS: Question[] = [
     type: 'Vocabulario',
     q: '«Confini. Ma per favore.» Che cosa sta facendo Giulia?',
     opts: [
-      'Riconosce educatamente che i confini contano in una coppia',
+      'Riconosce educatamente che i confini contano in una coppia e accetta il ragionamento di Marco',
       'Ripete la sua stessa parola in modo sarcastico per liquidarla come una scusa',
-      'Gli chiede di spiegarle la parola',
-      'Cita una psicologa',
+      'Gli chiede di spiegarle che cosa intende esattamente con quella parola',
+      'Cita una psicologa che ha sentito parlare di confini in un podcast',
     ],
     correct: 1,
     explanation:
@@ -274,10 +274,10 @@ const A_QS: Question[] = [
     type: 'Registro',
     q: 'Giulia dice: A quanto pare ho «superato un limite». Perché usa le virgolette?',
     opts: [
-      'Sta citando un testo giuridico',
+      'Sta citando alla lettera un testo giuridico sulla violazione della privacy',
       "Cita le parole di Marco per prenderne le distanze e segnalare che rifiuta l'accusa",
-      'In italiano questa espressione richiede sempre le virgolette',
-      'Non sa come tradurla',
+      "In italiano un'espressione di questo tipo richiede sempre le virgolette, per una regola ortografica fissa",
+      "Non sa come tradurre in italiano l'espressione che le ha detto Marco",
     ],
     correct: 1,
     explanation:
@@ -290,10 +290,10 @@ const B_QS: Question[] = [
     type: 'Comprensión',
     q: 'Quale motivo dà Marco per il suo rifiuto?',
     opts: [
-      'Ci sono messaggi che non vuole farle vedere',
-      "Il telefono è dell'azienda",
+      "Ci sono messaggi che non vuole farle vedere, anche se giura che sul telefono non c'è niente",
+      "Il telefono è dell'azienda e il regolamento gli vieta di farlo usare ad altri",
       'Non che nasconda qualcosa — ma che accettare una volta creerebbe un\'aspettativa permanente di controllo',
-      'Aveva dimenticato la password',
+      'Aveva dimenticato la password e in quel momento non riusciva a sbloccarlo',
     ],
     correct: 2,
     explanation:
@@ -304,9 +304,9 @@ const B_QS: Question[] = [
     q: '«Questo mese il telefono. Il mese prossimo la mia posizione.» Che tecnica argomentativa è?',
     opts: [
       'Il pendio scivoloso — una piccola concessione presentata come inizio di una catena',
-      'Una citazione esatta di ciò che Giulia ha chiesto',
-      'Una scusa per il suo comportamento a cena',
-      'Un resoconto di fatti già avvenuti',
+      'Una citazione esatta delle richieste che Giulia gli ha fatto a cena',
+      'Una scusa costruita a posteriori per giustificare il suo comportamento a cena',
+      'Un resoconto di controlli che Giulia gli ha già imposto',
     ],
     correct: 0,
     explanation:
@@ -316,7 +316,7 @@ const B_QS: Question[] = [
     type: 'Inferencia',
     q: '«Mi stanno indagando per una cosa che ha fatto qualcun altro.» Che cosa rivela questa frase?',
     opts: [
-      'La polizia sta davvero indagando su Marco',
+      'La polizia lo sta davvero indagando per una denuncia',
       "Marco crede di pagare per il comportamento dell'ex di Giulia",
       "Marco ha fatto la stessa cosa dell'ex di Giulia",
       'Marco vuole che Giulia contatti il suo ex',
@@ -329,10 +329,10 @@ const B_QS: Question[] = [
     type: 'Pensamiento crítico',
     q: '«Se dire di no ti rende colpevole, allora non esiste una risposta che funzioni.» Che cosa sta mettendo in luce Marco?',
     opts: [
-      'Che Giulia non gli fa mai domande',
+      'Che Giulia non gli fa mai domande e preferisce cercare prove',
       'Che la richiesta non si può superare onestamente: qualsiasi reazione conferma il sospetto',
-      'Che vuole chiudere la relazione',
-      'Che non ha capito la domanda',
+      'Che vuole chiudere la relazione e sta preparando il terreno per lasciarla senza dirlo',
+      'Che non ha capito la domanda che Giulia gli stava davvero facendo',
     ],
     correct: 1,
     explanation:
@@ -342,10 +342,10 @@ const B_QS: Question[] = [
     type: 'Tono',
     q: '«Forse potevo gestire meglio quel momento. Forse.» Che effetto ha il «forse» ripetuto?',
     opts: [
-      'Piena assunzione di responsabilità',
-      'Totale confusione su quello che è successo',
+      'Piena assunzione di responsabilità per come ha reagito durante la cena',
+      'Totale confusione su quello che è successo e sul perché Giulia si sia arrabbiata',
       'Una concessione minima che ritira subito — una frase a forma di scusa che non ammette niente',
-      'Vero pentimento e voglia di cambiare',
+      'Vero pentimento e voglia di cambiare, tanto che ammette di aver gestito male tutta la serata con Giulia',
     ],
     correct: 2,
     explanation:
@@ -358,7 +358,7 @@ const FINAL_QS: Question[] = [
     type: 'Síntesis',
     q: 'Quale dettaglio è confermato da ENTRAMBE le versioni?',
     opts: [
-      "Marco ha ricevuto un messaggio da un'altra donna",
+      "Marco ha ricevuto un messaggio da un'altra donna durante la cena",
       'Giulia aveva già letto parte della conversazione',
       'Marco ha capovolto il telefono durante la cena',
       'Marco si è scusato la mattina dopo',
@@ -371,10 +371,10 @@ const FINAL_QS: Question[] = [
     type: 'Perspectiva',
     q: 'Giulia chiama la richiesta «un test». Marco dice che lo stanno «indagando». Che cosa mostra questa distanza?',
     opts: [
-      'Uno dei due mente di proposito sulla serata',
+      'Uno dei due mente di proposito sulla serata per farsi dare ragione da chi lo ascolta',
       'La stessa azione assume significati opposti a seconda di ciò che ciascuno crede che simboleggi',
-      'Nessuno dei due ricorda bene la serata',
-      'Marco usa un lessico più ricercato di Giulia',
+      'Nessuno dei due ricorda bene la serata, perché entrambi erano troppo stanchi',
+      'Marco usa un lessico più ricercato di Giulia perché vuole sembrare più razionale',
     ],
     correct: 1,
     explanation:
@@ -384,10 +384,10 @@ const FINAL_QS: Question[] = [
     type: 'Pensamiento crítico',
     q: 'Qual è la causa PROFONDA più precisa di questo conflitto?',
     opts: [
-      'Marco nasconde qualcosa nel telefono',
-      'Giulia è semplicemente gelosa',
+      'Marco nasconde qualcosa nel telefono e tutto il discorso sui principi serve solo a coprire quello che non vuole farle leggere',
+      'Giulia è semplicemente gelosa e cerca un motivo per controllare il telefono di Marco',
       'La coppia non aveva mai deciso che cosa significa privacy fra loro, prima che venisse messa alla prova',
-      "L'ex di Giulia",
+      "L'ex di Giulia, che l'ha ferita e le ha lasciato addosso questa diffidenza",
     ],
     correct: 2,
     explanation:
@@ -397,10 +397,10 @@ const FINAL_QS: Question[] = [
     type: 'Registro',
     q: 'Giulia dice che Marco la accusa di aver «superato un limite». Marco dice che non si scusa «per avere un limite». Che cosa mostra questa metafora condivisa?',
     opts: [
-      'Citano lo stesso film',
+      'Citano lo stesso film che avevano visto insieme la settimana prima',
       'Usano la stessa immagine del limite per difendere posizioni opposte — ognuno si crede quello che sta proteggendo un confine',
-      '«Limite» significa una cosa completamente diversa nei due casi',
-      'Dimostra che Marco copia il lessico di Giulia',
+      '«Limite» significa una cosa completamente diversa nei due casi: per lei è una regola di coppia, per lui una linea personale',
+      'Dimostra che Marco copia il lessico di Giulia per rivoltarle contro le sue stesse parole',
     ],
     correct: 1,
     explanation:
@@ -410,10 +410,10 @@ const FINAL_QS: Question[] = [
     type: 'Inferencia',
     q: '«Se me lo avesse semplicemente dato, non l\'avrei nemmeno aperto.» Che cosa rivela questa frase?',
     opts: [
-      'Giulia mentiva quando diceva di voler vedere il telefono',
+      "Giulia mentiva quando diceva di voler vedere il telefono, visto che adesso ammette che non l'avrebbe nemmeno aperto se lui gliel'avesse dato",
       'Giulia cercava rassicurazione, non informazione — e l\'unica cosa che gliela avrebbe data era proprio il gesto che Marco rifiuta per principio',
-      'Giulia aveva già aperto il telefono prima',
-      'Giulia non conosce la sua password',
+      "Giulia aveva già aperto il telefono prima di quella cena, quindi sapeva già cosa c'era dentro",
+      'Giulia non conosce la sua password e senza di lui non avrebbe potuto aprirlo',
     ],
     correct: 1,
     explanation:

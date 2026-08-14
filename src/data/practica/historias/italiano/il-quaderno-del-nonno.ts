@@ -167,10 +167,10 @@ const NARRATOR_QS: Question[] = [
     type: 'Vocabulario',
     q: 'Il narratore dice che Franco ha comprato «un passeggino di lusso». Che cosa segnala questa scelta?',
     opts: [
-      'Comprava cose pratiche e a buon mercato',
+      'Comprava cose pratiche e a buon mercato, badando soprattutto a non spendere troppo',
       'Spendeva cifre alte, su prodotti costosi e di fascia alta',
-      'Preferiva comprare usato',
-      'Comprava solo articoli in saldo',
+      'Preferiva comprare usato per risparmiare sui mobili della cameretta',
+      'Comprava solo articoli in saldo, aspettando le offerte di fine stagione',
     ],
     correct: 1,
     explanation:
@@ -180,10 +180,10 @@ const NARRATOR_QS: Question[] = [
     type: 'Inferencia',
     q: 'Il narratore usa «Improvvisamente» per descrivere il cambiamento di Franco. Che cosa implica?',
     opts: [
-      'Il cambiamento è stato graduale e atteso da tempo',
-      'Franco aveva sempre pianificato di riprendersi le cose',
+      'Il cambiamento è maturato piano piano ed era atteso da tempo',
+      "Franco aveva sempre pianificato di riprendersi le cose, e per questo conservava gli scontrini fin dall'inizio",
       "Il cambio è arrivato subito dopo un evento preciso: la gravidanza della figlia",
-      'Sara ha chiesto personalmente le cose a Franco',
+      'Sara ha chiesto personalmente le cose a Franco appena ha saputo di essere incinta',
     ],
     correct: 2,
     explanation:
@@ -195,7 +195,7 @@ const NARRATOR_QS: Question[] = [
     opts: [
       'La lista degli acquisti futuri per il nuovo bambino',
       'Ogni regalo costoso che avesse mai comprato',
-      'Il bilancio familiare',
+      'Il bilancio familiare degli ultimi tre anni',
       'Un contratto fra Franco e suo figlio',
     ],
     correct: 1,
@@ -206,10 +206,10 @@ const NARRATOR_QS: Question[] = [
     type: 'Pensamiento crítico',
     q: '«Tutti pensavano che fosse semplicemente generoso.» Che cosa suggerisce «semplicemente»?',
     opts: [
-      'Franco era chiaramente generoso, senza secondi fini',
+      'Franco era chiaramente generoso, senza nessun secondo fine nascosto',
       "Dietro quella generosità forse c'era altro, che allora non si è visto",
-      'La famiglia sapeva da sempre che Franco poneva condizioni',
-      'Franco cercava apertamente di controllare la famiglia',
+      'La famiglia sapeva da sempre che Franco poneva delle condizioni',
+      'Franco cercava apertamente di controllare la famiglia con i suoi regali',
     ],
     correct: 1,
     explanation:
@@ -222,10 +222,10 @@ const A_QS: Question[] = [
     type: 'Vocabulario',
     q: 'Chiara paragona la visita di Franco a «l\'inventario in un magazzino». Che cosa fa questo paragone?',
     opts: [
-      'Metafora — Franco ha davvero spostato i suoi mobili',
+      'Metafora — identifica la visita con un inventario, senza parole di paragone',
       'Similitudine — lo dipinge freddo e commerciale, come se i regali fossero merce recuperabile',
-      'Iperbole — sta solo esagerando per far ridere',
-      'Personificazione — dà tratti umani alla tabella',
+      'Iperbole — sta solo esagerando per far ridere chi la ascolta',
+      'Personificazione — dà tratti umani alla tabella e agli scontrini',
     ],
     correct: 1,
     explanation:
@@ -235,10 +235,10 @@ const A_QS: Question[] = [
     type: 'Inferencia',
     q: '«Chi tiene gli scontrini dei regali di un neonato?» Che cosa sottintende questa domanda retorica?',
     opts: [
-      'Che tutti dovrebbero conservare gli scontrini',
-      'Che Franco è solo molto ordinato, niente di più',
+      'Che tutti dovrebbero conservare gli scontrini dei regali importanti',
+      'Che Franco è solo molto ordinato e conserva per abitudine ogni scontrino che gli capita',
       'Che gli scontrini provano che Franco pensava di riprendersi le cose fin dall\'inizio',
-      'Che Chiara ha perso i propri scontrini',
+      'Che Chiara ha perso i propri scontrini e non può verificare niente',
     ],
     correct: 2,
     explanation:
@@ -248,10 +248,10 @@ const A_QS: Question[] = [
     type: 'Tono',
     q: 'Come descriveresti meglio il tono del messaggio vocale di Chiara?',
     opts: [
-      'Calmo e analitico',
+      'Calmo e analitico, come chi espone i fatti in ordine',
       'Carico di emozione, indignato e incredulo',
-      'Triste e pieno di rimpianti',
-      'Formale e professionale',
+      'Triste e pieno di rimpianti per come sono andate le cose',
+      'Formale e professionale, come una mail di lavoro',
     ],
     correct: 1,
     explanation:
@@ -261,10 +261,10 @@ const A_QS: Question[] = [
     type: 'Comprensión',
     q: 'Secondo Chiara, quale richiesta di Franco SAREBBE stata accettabile?',
     opts: [
-      'Portare una tabella dettagliata di tutti i regali',
-      'Pretendere subito indietro passeggino e culla',
+      'Portare una tabella dettagliata di tutti i regali fatti',
+      'Pretendere subito indietro il passeggino e la culla di Leo',
       'Chiedere se a Leo era rimasto qualcosa che non usa più',
-      'Mandare una richiesta scritta formale',
+      'Mandare una richiesta scritta formale invece di presentarsi a casa',
     ],
     correct: 2,
     explanation:
@@ -274,10 +274,10 @@ const A_QS: Question[] = [
     type: 'Registro',
     q: '«Senta, quello è suo nipote, non un portafoglio immobiliare.» Che cosa sta facendo Chiara?',
     opts: [
-      'Parla seriamente della sua attività immobiliare',
+      'Parla seriamente del portafoglio immobiliare di Franco, che ha nominato lui poco prima',
       "Usa l'ironia e passa di colpo al «lei» per smascherare il suo modo commerciale di vedere la famiglia",
-      'Approva educatamente il suo punto di vista',
-      'Cita la tabella parola per parola',
+      'Approva educatamente il suo punto di vista e usa il «lei» per mostrargli rispetto davanti a una questione di soldi',
+      'Cita la tabella parola per parola, riprendendo le voci che Franco le ha letto',
     ],
     correct: 1,
     explanation:
@@ -290,10 +290,10 @@ const B_QS: Question[] = [
     type: 'Vocabulario',
     q: 'Franco dice che le cose si potrebbero «tramandare». A quale tradizione rimanda questa parola?',
     opts: [
-      'Riportare un articolo in negozio per il rimborso',
+      'Riportare un articolo in negozio per ottenere il rimborso dello scontrino',
       "L'usanza familiare di passare i beni da un membro all'altro fra le generazioni",
-      'Una procedura legale di successione',
-      'Donare le cose in beneficenza',
+      'Una procedura legale di successione, con cui i beni passano agli eredi dopo una morte',
+      'Donare le cose in beneficenza a chi ne ha più bisogno',
     ],
     correct: 1,
     explanation:
@@ -304,9 +304,9 @@ const B_QS: Question[] = [
     q: 'Secondo Franco, che cosa ha chiesto esattamente — a differenza di quanto racconta Chiara?',
     opts: [
       'Ogni singola voce della sua lista, subito indietro',
-      'Solo i soldi del fondo per l\'università',
+      "Solo i soldi messi nel fondo per l'università",
       'Una conversazione sul condividere qualcuna delle cose più grandi',
-      'Delle scuse scritte da Chiara',
+      'Delle scuse scritte da Chiara e Andrea',
     ],
     correct: 2,
     explanation:
@@ -316,10 +316,10 @@ const B_QS: Question[] = [
     type: 'Inferencia',
     q: '«Quello che mi ha dato fastidio non erano nemmeno le cose. Era l\'atteggiamento.» Che cosa rivela?',
     opts: [
-      'Finge soltanto che gli oggetti non gli interessino',
+      'Finge soltanto che gli oggetti non gli interessino, per non sembrare avido',
       'Si sente disprezzato sul piano affettivo, nonostante anni di generosità',
-      'Vuole allontanare Chiara dalla famiglia',
-      'Si pente di aver comprato i regali',
+      'Vuole allontanare Chiara e mettere il figlio contro di lei',
+      'Si pente di aver comprato tutti quei regali così costosi',
     ],
     correct: 1,
     explanation:
@@ -329,10 +329,10 @@ const B_QS: Question[] = [
     type: 'Tono',
     q: '«Scusate se sono organizzato.» Che tono ha questa frase?',
     opts: [
-      'Vero pentimento',
+      'Vero pentimento per aver portato la tabella',
       "Difesa sarcastica — non pensa di aver sbagliato",
-      'Confusione sul perché tutti siano arrabbiati',
-      'Registro accademico e formale',
+      'Confusione sincera sul perché tutti siano arrabbiati',
+      'Registro accademico e formale, da relazione',
     ],
     correct: 1,
     explanation:
@@ -342,10 +342,10 @@ const B_QS: Question[] = [
     type: 'Vocabulario',
     q: '«Evidentemente adesso il cattivo sono io.» Che cosa rivela la parola «cattivo»?',
     opts: [
-      'Ammette del tutto di aver sbagliato',
+      'Ammette del tutto di aver sbagliato e accetta il ruolo che la famiglia gli ha dato',
       "Si sente messo ingiustamente nel ruolo del cattivo di una storia che raccontano gli altri",
-      'Usa un termine giuridico tecnico',
-      'Cerca pietà con l\'adulazione',
+      'Usa un termine giuridico tecnico, come se ci fosse un processo in corso',
+      "Cerca pietà con l'adulazione, per farsi perdonare dalla nuora",
     ],
     correct: 1,
     explanation:
@@ -358,8 +358,8 @@ const FINAL_QS: Question[] = [
     type: 'Síntesis',
     q: 'Su quale fatto Chiara e Franco sono D\'ACCORDO?',
     opts: [
-      'Franco voleva riprendersi definitivamente tutte le cose',
-      'Chiara aveva già offerto spontaneamente di condividere',
+      'Franco voleva riprendersi definitivamente tutte le cose elencate nella tabella',
+      'Chiara aveva già offerto spontaneamente di condividere qualcosa',
       'Franco è arrivato con una tabella',
       'Sara ha chiesto le cose di persona',
     ],
@@ -371,10 +371,10 @@ const FINAL_QS: Question[] = [
     type: 'Perspectiva',
     q: 'Il narratore dice che Franco «ha chiesto indietro migliaia di euro di roba». Franco dice di aver «proposto di parlarne». Che cosa mostra questa distanza?',
     opts: [
-      'Il narratore è ostile a Franco',
+      'Il narratore è ostile a Franco e ne racconta la versione peggiore',
       "C'è una differenza forte fra l'intenzione dichiarata di Franco e come la richiesta è stata percepita",
-      'Chiara ha inventato quasi tutto',
-      'Il narratore ha sbagliato i fatti',
+      'Chiara ha inventato quasi tutto per farsi dare ragione da chi ascolta',
+      'Il narratore ha sbagliato i fatti, perché nessuno ha mai chiesto indietro migliaia di euro di roba',
     ],
     correct: 1,
     explanation:
@@ -384,10 +384,10 @@ const FINAL_QS: Question[] = [
     type: 'Pensamiento crítico',
     q: 'Qual è la causa PROFONDA più precisa di questo conflitto?',
     opts: [
-      "L'avidità di Franco",
-      "L'ingratitudine di Chiara",
+      "L'avidità di Franco, che ha voluto indietro regali fatti tre anni prima",
+      "L'ingratitudine di Chiara, che per tre anni si è goduta cose pagate da Franco senza mai ringraziarlo davvero",
       'Quando i regali sono stati fatti non si è mai parlato di che cosa ci si aspettava',
-      'La decisione di Sara di avere un figlio',
+      'La decisione di Sara di avere un figlio in un momento economicamente difficile',
     ],
     correct: 2,
     explanation:
@@ -397,10 +397,10 @@ const FINAL_QS: Question[] = [
     type: 'Inferencia',
     q: 'Chiara dice che Franco sembrava «davvero sbigottito» davanti al rifiuto. Che cosa suggerisce questa reazione?',
     opts: [
-      'Fingeva la sorpresa come tattica',
+      'Fingeva la sorpresa come tattica, per farla sentire in colpa',
       "Non aveva davvero previsto che qualcuno potesse trovare la sua richiesta fuori luogo",
-      'Sapeva che avrebbe detto di no e la stava mettendo alla prova',
-      'Non gli hanno mai negato niente in vita sua',
+      'Sapeva già che Chiara avrebbe detto di no e la stava mettendo alla prova',
+      'In tutta la sua vita nessuno gli ha mai negato niente',
     ],
     correct: 1,
     explanation:
@@ -410,10 +410,10 @@ const FINAL_QS: Question[] = [
     type: 'Registro',
     q: 'Franco chiama il figlio e la nuora «quei ragazzi». Che cosa suggerisce questa scelta?',
     opts: [
-      'Suo figlio e Chiara sono letteralmente dei bambini',
+      'Suo figlio e Chiara sono davvero molto giovani, poco più che ragazzi',
       "Franco si vede come l'autorità e loro come persone meno esperte che lui ha aiutato",
-      'Franco ha dimenticato i loro nomi',
-      'In italiano è un\'espressione formale e affettuosa',
+      'Franco ha dimenticato i loro nomi mentre registrava il messaggio',
+      "In italiano «quei ragazzi» è un'espressione formale e affettuosa, che segnala rispetto verso i più giovani",
     ],
     correct: 1,
     explanation:

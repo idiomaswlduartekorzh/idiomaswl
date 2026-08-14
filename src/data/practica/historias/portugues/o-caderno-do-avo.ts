@@ -168,10 +168,10 @@ const NARRATOR_QS: Question[] = [
     type: 'Vocabulario',
     q: 'O narrador diz que o Sérgio comprou «um carrinho de bebê caríssimo». O que essa escolha sinaliza?',
     opts: [
-      'Ele comprava coisas práticas e baratas',
+      'Ele comprava coisas práticas, baratas e sem marca',
       'Ele gastava valores altos, em produtos caros e de ponta',
-      'Ele preferia comprar usado',
-      'Ele só comprava em promoção',
+      'Ele preferia comprar tudo usado para economizar',
+      'Ele só comprava em promoção, aproveitando as liquidações',
     ],
     correct: 1,
     explanation:
@@ -181,10 +181,10 @@ const NARRATOR_QS: Question[] = [
     type: 'Inferencia',
     q: 'O narrador usa «De repente» para descrever a mudança do Sérgio. O que isso implica?',
     opts: [
-      'A mudança foi gradual e esperada há muito tempo',
-      'O Sérgio sempre planejou pegar as coisas de volta',
+      'A mudança foi gradual e esperada há muito tempo por todos na família',
+      'O Sérgio sempre planejou pegar as coisas de volta, desde o dia da compra',
       'A virada veio logo depois de um evento específico: a gravidez da filha',
-      'A Paula pediu as coisas pessoalmente ao Sérgio',
+      'A Paula pediu as coisas pessoalmente ao Sérgio, e ele só repassou o recado',
     ],
     correct: 2,
     explanation:
@@ -207,10 +207,10 @@ const NARRATOR_QS: Question[] = [
     type: 'Pensamiento crítico',
     q: '«Todo mundo achou que ele estava sendo simplesmente generoso.» O que a palavra «simplesmente» sugere?',
     opts: [
-      'O Sérgio era claramente generoso, sem segundas intenções',
+      'O Sérgio era claramente generoso, sem nenhuma segunda intenção escondida naquela época',
       'Talvez houvesse mais por trás daquela generosidade do que parecia na época',
-      'A família sempre soube que o Sérgio impunha condições',
-      'O Sérgio tentava controlar a família abertamente',
+      'A família sempre soube que o Sérgio impunha condições e ninguém se surpreendeu',
+      'O Sérgio tentava controlar a família abertamente, e todo mundo percebia isso',
     ],
     correct: 1,
     explanation:
@@ -223,10 +223,10 @@ const A_QS: Question[] = [
     type: 'Vocabulario',
     q: 'A Camila compara a visita do Sérgio a «inventário de estoque num galpão». O que essa comparação faz?',
     opts: [
-      'Metáfora — o Sérgio realmente mexeu nos móveis dela',
+      'Metáfora — o Sérgio realmente mexeu nos móveis dela, item por item, como num galpão',
       'Comparação — ela o pinta frio e comercial, tratando presentes como mercadoria recuperável',
-      'Hipérbole — ela só está exagerando para fazer graça',
-      'Personificação — ela dá traços humanos à planilha',
+      'Hipérbole — ela só está exagerando para fazer graça e ninguém leva a sério',
+      'Personificação — ela dá traços humanos à planilha, como se o papel decidisse tudo',
     ],
     correct: 1,
     explanation:
@@ -236,10 +236,10 @@ const A_QS: Question[] = [
     type: 'Inferencia',
     q: '«Quem guarda recibo de presente de bebê?» O que essa pergunta retórica sugere?',
     opts: [
-      'Que todo mundo deveria guardar recibos',
-      'Que o Sérgio é só muito organizado, nada além disso',
+      'Que todo mundo deveria guardar recibos de compras caras, para o caso de precisar trocar depois',
+      'Que o Sérgio é só muito organizado com papelada, e guardar nota fiscal não quer dizer nada demais',
       'Que os recibos provam que o Sérgio pensava em pegar as coisas de volta desde o começo',
-      'Que a Camila perdeu os próprios recibos',
+      'Que a Camila perdeu os próprios recibos e por isso não pode conferir os valores',
     ],
     correct: 2,
     explanation:
@@ -249,10 +249,10 @@ const A_QS: Question[] = [
     type: 'Tono',
     q: 'Como você descreveria melhor o tom do áudio da Camila?',
     opts: [
-      'Calmo e analítico',
+      'Calmo e analítico, como quem expõe um problema de trabalho',
       'Carregado de emoção, indignado e incrédulo',
-      'Triste e arrependido',
-      'Formal e profissional',
+      'Triste e arrependido por ter respondido daquele jeito ao sogro',
+      'Formal e profissional, do jeito de quem discute um contrato',
     ],
     correct: 1,
     explanation:
@@ -262,10 +262,10 @@ const A_QS: Question[] = [
     type: 'Comprensión',
     q: 'Segundo a Camila, que pedido do Sérgio TERIA sido aceitável?',
     opts: [
-      'Trazer uma planilha detalhada de todos os presentes',
+      'Trazer uma planilha detalhada de todos os presentes já comprados',
       'Exigir o carrinho e o berço de volta na hora',
       'Perguntar se tinha alguma coisa que o Théo já não usa',
-      'Mandar um pedido formal por escrito',
+      'Mandar um pedido formal por escrito antes da visita',
     ],
     correct: 2,
     explanation:
@@ -275,10 +275,10 @@ const A_QS: Question[] = [
     type: 'Registro',
     q: '«Olha, senhor, aquele é o seu neto, não uma carteira de imóveis.» O que a Camila está fazendo?',
     opts: [
-      'Falando a sério sobre o negócio imobiliário dele',
+      'Falando a sério sobre o negócio imobiliário dele, já que ele mesmo trata o neto como um investimento',
       'Usando ironia e um «senhor» repentino para expor o jeito comercial com que ele trata a família',
-      'Concordando educadamente com o ponto de vista dele',
-      'Citando a planilha palavra por palavra',
+      'Concordando educadamente com o ponto de vista dele, só que num tom mais frio',
+      'Citando a planilha palavra por palavra, do jeito exato em que ele leu na mesa',
     ],
     correct: 1,
     explanation:
@@ -291,10 +291,10 @@ const B_QS: Question[] = [
     type: 'Vocabulario',
     q: 'O Sérgio diz que as coisas podiam ser «passadas adiante». A que tradição essa expressão remete?',
     opts: [
-      'Devolver um produto na loja e pegar o dinheiro de volta',
+      'Devolver um produto na loja e pegar o dinheiro de volta dentro do prazo de troca',
       'O costume familiar de repassar bens de um parente para outro ao longo das gerações',
-      'Um processo legal de herança',
-      'Doar as coisas para caridade',
+      'Um processo legal de herança, com inventário e divisão formal dos bens',
+      'Doar as coisas para caridade quando os filhos já não precisam delas',
     ],
     correct: 1,
     explanation:
@@ -317,10 +317,10 @@ const B_QS: Question[] = [
     type: 'Inferencia',
     q: '«O que me incomodou nem foram as coisas. Foi a atitude.» O que essa frase revela?',
     opts: [
-      'Ele só finge que não liga para os objetos',
+      'Ele só finge que não liga para os objetos caros',
       'Ele se sente desrespeitado no plano afetivo, apesar de anos de generosidade',
-      'Ele quer afastar a Camila da família',
-      'Ele se arrepende de ter comprado os presentes',
+      'Ele quer afastar a Camila da família por causa disso',
+      'Ele se arrepende de ter comprado todos aqueles presentes caros',
     ],
     correct: 1,
     explanation:
@@ -330,10 +330,10 @@ const B_QS: Question[] = [
     type: 'Tono',
     q: '«Desculpa aí por eu ser organizado.» Que tom essa frase tem?',
     opts: [
-      'Arrependimento verdadeiro',
+      'Arrependimento verdadeiro por ter levado a planilha impressa até a cozinha dela',
       'Defesa sarcástica — ele não acha que fez nada de errado',
-      'Confusão sobre por que todos estão bravos',
-      'Registro acadêmico e formal',
+      'Confusão sobre por que todos estão bravos com uma coisa tão simples',
+      'Registro acadêmico e formal, próprio de quem apresenta um relatório',
     ],
     correct: 1,
     explanation:
@@ -343,10 +343,10 @@ const B_QS: Question[] = [
     type: 'Vocabulario',
     q: '«Pelo visto agora o vilão sou eu.» O que a palavra «vilão» revela?',
     opts: [
-      'Ele concorda totalmente que agiu errado',
+      'Ele concorda totalmente que agiu errado e assume o papel que a família deu para ele',
       'Ele se sente injustamente colocado no papel de vilão de uma história que os outros contam',
-      'Ele está usando um termo jurídico técnico',
-      'Ele busca pena por meio de elogios',
+      'Ele está usando um termo jurídico técnico para descrever a acusação que recebeu dentro da própria família',
+      'Ele busca pena por meio de elogios ao próprio esforço de tantos anos',
     ],
     correct: 1,
     explanation:
@@ -372,10 +372,10 @@ const FINAL_QS: Question[] = [
     type: 'Perspectiva',
     q: 'O narrador diz que o Sérgio «pediu de volta milhares de reais em coisas». O Sérgio diz que «propôs conversar sobre dividir». O que essa distância mostra?',
     opts: [
-      'O narrador é hostil ao Sérgio',
+      'O narrador é hostil ao Sérgio e escolhe palavras que o deixam pior do que ele foi',
       'Há uma diferença grande entre a intenção declarada do Sérgio e como o pedido foi percebido',
-      'A Camila inventou quase tudo',
-      'O narrador errou nos fatos',
+      'A Camila inventou quase tudo o que contou para a amiga naquela conversa',
+      'O narrador errou nos fatos e exagerou o valor do que foi pedido',
     ],
     correct: 1,
     explanation:
@@ -385,10 +385,10 @@ const FINAL_QS: Question[] = [
     type: 'Pensamiento crítico',
     q: 'Qual é a causa RAIZ mais exata desse conflito?',
     opts: [
-      'A ganância do Sérgio',
-      'A ingratidão da Camila',
+      'A ganância do Sérgio, que sempre quis o dinheiro de volta',
+      'A ingratidão da Camila, que nunca agradeceu nada ao sogro',
       'Nunca se falou de expectativas na hora em que os presentes foram dados',
-      'A decisão da Paula de ter um filho',
+      'A decisão da Paula de ter um filho neste momento',
     ],
     correct: 2,
     explanation:
@@ -398,10 +398,10 @@ const FINAL_QS: Question[] = [
     type: 'Inferencia',
     q: 'A Camila diz que o Sérgio ficou «genuinamente pasmo» com a recusa. O que essa reação sugere?',
     opts: [
-      'Ele fingiu surpresa como tática',
+      'Ele fingiu surpresa como tática para deixar a Camila sem jeito',
       'Ele realmente não previu que alguém pudesse achar o pedido fora de lugar',
-      'Ele sabia que ela ia recusar e estava testando',
-      'Nunca negaram nada a ele na vida',
+      'Ele sabia que ela ia recusar e estava só testando',
+      'Nunca negaram nada a ele na vida, nem dentro de casa',
     ],
     correct: 1,
     explanation:
@@ -411,10 +411,10 @@ const FINAL_QS: Question[] = [
     type: 'Registro',
     q: 'O Sérgio chama o filho e a nora de «esses meninos». O que essa escolha sugere?',
     opts: [
-      'O filho dele e a Camila são literalmente crianças',
+      'O filho dele e a Camila são literalmente crianças aos olhos da lei brasileira',
       'O Sérgio se vê como a autoridade e eles como pessoas menos experientes que ele ajudou',
-      'O Sérgio esqueceu os nomes deles',
-      'É uma expressão formal e carinhosa em português',
+      'O Sérgio esqueceu os nomes deles no meio da discussão e acabou usando uma expressão genérica qualquer',
+      'É uma expressão formal e carinhosa em português, usada por pais com filhos adultos',
     ],
     correct: 1,
     explanation:

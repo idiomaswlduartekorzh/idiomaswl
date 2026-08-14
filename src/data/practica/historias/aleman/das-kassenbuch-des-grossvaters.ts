@@ -172,10 +172,10 @@ const NARRATOR_QS: Question[] = [
     type: 'Wortschatz',
     q: 'Der Erzähler sagt, Werner habe "fast alles" gekauft und sogar einen Ausbildungsfonds angelegt. Was signalisiert diese Aufzählung?',
     opts: [
-      'Er kaufte günstige, praktische Sachen',
+      'Er kaufte vor allem günstige, praktische Sachen für den Alltag mit einem Baby',
       'Er gab weit mehr aus, als ein Geschenk normalerweise kostet',
-      'Er kaufte alles gebraucht',
-      'Er kaufte nur Sachen im Angebot',
+      'Er kaufte alles gebraucht und gab deshalb kaum Geld aus',
+      'Er kaufte nur Sachen, die gerade im Angebot waren, um Geld zu sparen',
     ],
     correct: 1,
     explanation:
@@ -185,10 +185,10 @@ const NARRATOR_QS: Question[] = [
     type: 'Inferencia',
     q: 'Der Erzähler benutzt das Wort "Plötzlich", als Werners Haltung sich ändert. Was bedeutet das?',
     opts: [
-      'Die Veränderung kam langsam und war lange erwartet',
-      'Werner hatte immer geplant, die Sachen zurückzuholen',
+      'Die Veränderung kam langsam über mehrere Monate und war in der Familie lange erwartet',
+      'Werner hatte von Anfang an geplant, die Sachen eines Tages wieder zurückzuholen',
       'Der Umschwung kam direkt nach einem Ereignis: der Schwangerschaft seiner Tochter',
-      'Lena hatte Werner selbst um die Sachen gebeten',
+      'Lena hatte Werner selbst um die Sachen gebeten, und er gab nur nach',
     ],
     correct: 2,
     explanation:
@@ -200,8 +200,8 @@ const NARRATOR_QS: Question[] = [
     opts: [
       'Eine Liste künftiger Käufe für das neue Baby',
       'Jedes teure Geschenk, das er je gekauft hatte',
-      'Das Haushaltsbudget der Familie',
-      'Ein Vertrag zwischen Werner und seinem Sohn',
+      'Das Haushaltsbudget der Familie für das kommende Jahr',
+      'Ein schriftlicher Vertrag zwischen Werner und seinem Sohn',
     ],
     correct: 1,
     explanation:
@@ -211,10 +211,10 @@ const NARRATOR_QS: Question[] = [
     type: 'Pensamiento crítico',
     q: '"Alle dachten, er sei einfach großzügig." Was deutet das Wort "einfach" an?',
     opts: [
-      'Werner war eindeutig großzügig, ohne Hintergedanken',
+      'Werner war eindeutig großzügig, ganz ohne Hintergedanken',
       'Hinter Werners Großzügigkeit steckte vielleicht mehr, als es damals aussah',
       'Die Familie wusste schon immer, dass Werner Bedingungen stellte',
-      'Werner wollte die Familie offen kontrollieren',
+      'Werner wollte die Familie von Anfang an offen kontrollieren',
     ],
     correct: 1,
     explanation:
@@ -227,10 +227,10 @@ const A_QS: Question[] = [
     type: 'Wortschatz',
     q: 'Nadine vergleicht Werners Besuch mit einer "Inventur im Lager". Was macht dieser Vergleich?',
     opts: [
-      'Metapher — Werner hat wirklich ihre Möbel bewegt',
+      'Metapher — Werner hat in der Küche wirklich ihre Möbel bewegt und alles neu geordnet',
       'Vergleich — er wirkt kalt und geschäftsmäßig, als wären Geschenke rückholbare Ware',
-      'Übertreibung — sie will nur witzig sein',
-      'Personifikation — die Tabelle bekommt menschliche Züge',
+      'Übertreibung — sie will nur witzig sein und meint den Vergleich nicht ernst',
+      'Personifikation — die Tabelle bekommt menschliche Züge und wird selbst zur Figur im Streit',
     ],
     correct: 1,
     explanation:
@@ -240,10 +240,10 @@ const A_QS: Question[] = [
     type: 'Inferencia',
     q: '"Wer hebt Quittungen für Babygeschenke auf, wenn er nicht damit rechnet, sie zurückzubekommen?" Was will diese rhetorische Frage sagen?',
     opts: [
-      'Dass man alle Quittungen aufheben sollte',
-      'Dass Werner einfach nur sehr ordentlich ist',
+      'Dass man alle Quittungen für teure Geschenke grundsätzlich aufheben sollte, egal für wen',
+      'Dass Werner einfach nur ein sehr ordentlicher Mensch ist, der grundsätzlich nie eine Quittung wegwirft',
       'Dass die Quittungen beweisen, dass Werner die Rückgabe von Anfang an im Kopf hatte',
-      'Dass Nadine ihre eigenen Quittungen verloren hat',
+      'Dass Nadine ihre eigenen Quittungen längst verloren hat und deshalb nichts beweisen kann',
     ],
     correct: 2,
     explanation:
@@ -253,10 +253,10 @@ const A_QS: Question[] = [
     type: 'Tono',
     q: 'Wie beschreibst du den Tonfall von Nadines Sprachnachricht am besten?',
     opts: [
-      'Ruhig und analytisch',
+      'Ruhig, distanziert und analytisch',
       'Emotional aufgeladen, empört und ungläubig',
-      'Traurig und reumütig',
-      'Formell und professionell',
+      'Traurig, leise und reumütig',
+      'Formell, sachlich und professionell',
     ],
     correct: 1,
     explanation:
@@ -266,10 +266,10 @@ const A_QS: Question[] = [
     type: 'Comprensión',
     q: 'Welche Bitte von Werner WÄRE für Nadine in Ordnung gewesen?',
     opts: [
-      'Eine ausgedruckte Tabelle aller Geschenke mitbringen',
-      'Kinderwagen und Wiege sofort zurückverlangen',
+      'Eine ausgedruckte Tabelle aller Geschenke mitbringen und sie Punkt für Punkt durchgehen',
+      'Kinderwagen und Wiege sofort zurückverlangen, weil Lena sie jetzt braucht',
       'Fragen, ob Elias etwas rausgewachsen ist, das man weitergeben könnte',
-      'Eine formelle schriftliche Anfrage schicken',
+      'Eine formelle schriftliche Anfrage mit einer Frist schicken',
     ],
     correct: 2,
     explanation:
@@ -279,10 +279,10 @@ const A_QS: Question[] = [
     type: 'Registro',
     q: '"Herr Berger, das ist Ihr Enkel und kein Immobilienportfolio." Was macht Nadine hier?',
     opts: [
-      'Sie spricht sachlich über sein Immobiliengeschäft',
+      'Sie spricht sachlich über sein Immobiliengeschäft, weil Werner sein Geld tatsächlich mit Wohnungen und Häusern verdient',
       'Sie benutzt Ironie und siezt ihn plötzlich, um seine geschäftliche Sicht auf die Familie bloßzustellen',
-      'Sie stimmt ihm höflich zu',
-      'Sie zitiert wörtlich aus der Tabelle',
+      'Sie stimmt ihm höflich zu und bleibt dabei beim förmlichen Sie',
+      'Sie zitiert wörtlich eine Zeile aus seiner ausgedruckten Tabelle',
     ],
     correct: 1,
     explanation:
@@ -297,8 +297,8 @@ const B_QS: Question[] = [
     opts: [
       'Waren im Laden zurückgeben und Geld zurückbekommen',
       'Die Familienpraxis, Besitz von einem Mitglied zum nächsten weiterzureichen',
-      'Ein förmliches Erbverfahren vor dem Notar',
-      'Sachen an eine Wohltätigkeitsorganisation spenden',
+      'Ein förmliches Erbverfahren vor dem Notar mit Urkunden',
+      'Gebrauchte Sachen an eine Wohltätigkeitsorganisation im Ort spenden',
     ],
     correct: 1,
     explanation:
@@ -308,10 +308,10 @@ const B_QS: Question[] = [
     type: 'Comprensión',
     q: 'Was hat Werner nach eigener Aussage verlangt — im Gegensatz zu Nadines Version?',
     opts: [
-      'Jeden einzelnen Gegenstand seiner Liste, sofort zurück',
-      'Nur das Geld aus dem Ausbildungsfonds',
+      'Jeden einzelnen Gegenstand seiner Liste, und zwar sofort und vollständig zurück',
+      'Nur das Geld aus dem Ausbildungsfonds, den er damals angelegt hatte',
       'Ein Gespräch darüber, ein paar der größeren Sachen zu teilen',
-      'Eine schriftliche Entschuldigung von Nadine',
+      'Eine schriftliche Entschuldigung von Nadine für ihre Reaktion an der Haustür',
     ],
     correct: 2,
     explanation:
@@ -324,7 +324,7 @@ const B_QS: Question[] = [
       'Er tut nur so, als wären ihm die Sachen egal',
       'Er fühlt sich emotional missachtet, trotz jahrelanger Großzügigkeit',
       'Er will Nadine aus der Familie drängen',
-      'Er bereut, die Geschenke gekauft zu haben',
+      'Er bereut inzwischen, die teuren Geschenke damals gekauft zu haben',
     ],
     correct: 1,
     explanation:
@@ -334,10 +334,10 @@ const B_QS: Question[] = [
     type: 'Tono',
     q: '"Entschuldigung, dass ich organisiert bin." Welchen Tonfall hat dieser Satz?',
     opts: [
-      'Echte Reue und Bedauern',
+      'Echte Reue und ehrliches Bedauern über die Tabelle',
       'Sarkastische Verteidigung — er findet nicht, dass er etwas falsch gemacht hat',
-      'Verwirrung darüber, warum alle sauer sind',
-      'Akademisch und formell',
+      'Aufrichtige Verwirrung darüber, warum plötzlich alle sauer auf ihn sind und niemand ihn versteht',
+      'Akademisch, distanziert und sehr formell',
     ],
     correct: 1,
     explanation:
@@ -347,10 +347,10 @@ const B_QS: Question[] = [
     type: 'Wortschatz',
     q: '"Offenbar bin ich jetzt der Bösewicht." Was verrät Werners Wortwahl?',
     opts: [
-      'Er gibt zu, dass sein Verhalten falsch war',
+      'Er gibt mit diesem Wort zu, dass sein Verhalten gegenüber den Kindern falsch und übertrieben war',
       'Er fühlt sich zu Unrecht in die Rolle des Bösen einer Geschichte gedrängt, die andere über ihn erzählen',
-      'Er benutzt juristische Fachsprache',
-      'Er sucht Mitleid durch Schmeichelei',
+      'Er benutzt juristische Fachsprache, weil er den Streit wie einen Rechtsfall behandelt',
+      'Er sucht Mitleid durch Schmeichelei, damit die Familie ihm die Sachen freiwillig zurückgibt',
     ],
     correct: 1,
     explanation:
@@ -376,10 +376,10 @@ const FINAL_QS: Question[] = [
     type: 'Perspectiva',
     q: 'Der Erzähler sagt, Werner habe "Sachen im Wert von mehreren tausend Euro zurück" verlangt. Werner sagt, er habe "vorgeschlagen, über das Teilen zu reden". Was zeigt diese Lücke?',
     opts: [
-      'Der Erzähler ist gegen Werner voreingenommen',
+      'Der Erzähler ist von Anfang an gegen Werner voreingenommen und übernimmt Nadines Version',
       'Zwischen Werners erklärter Absicht und der Wirkung seiner Bitte liegt ein großer Unterschied',
-      'Nadine hat den größten Teil erfunden',
-      'Der Erzähler hat sich sachlich geirrt',
+      'Nadine hat den größten Teil der Geschichte erfunden, um Werner schlecht dastehen zu lassen',
+      'Der Erzähler hat sich in den Zahlen und im Ablauf sachlich geirrt',
     ],
     correct: 1,
     explanation:
@@ -389,10 +389,10 @@ const FINAL_QS: Question[] = [
     type: 'Pensamiento crítico',
     q: 'Was ist die genaueste GRUNDursache dieses Konflikts?',
     opts: [
-      'Werners Geldgier',
-      'Nadines Undankbarkeit',
+      'Werners Geldgier im Alter',
+      'Nadines Undankbarkeit gegenüber ihrem Schwiegervater',
       'Beim Schenken wurde nie besprochen, was eigentlich erwartet wird',
-      'Lenas Entscheidung, ein Kind zu bekommen',
+      'Lenas Entscheidung, ausgerechnet in diesem Jahr ein Kind zu bekommen',
     ],
     correct: 2,
     explanation:
@@ -402,10 +402,10 @@ const FINAL_QS: Question[] = [
     type: 'Inferencia',
     q: 'Nadine sagt, Werner sei "ehrlich fassungslos" gewesen. Was sagt diese Reaktion über ihn?',
     opts: [
-      'Er hat die Überraschung nur gespielt',
+      'Er hat die Überraschung nur gespielt, um Mitleid zu bekommen',
       'Er hatte wirklich nicht damit gerechnet, dass jemand seine Bitte unverschämt finden könnte',
       'Er wusste, dass sie Nein sagen würde, und hat sie getestet',
-      'Ihm wurde noch nie im Leben etwas abgeschlagen',
+      'Ihm wurde in seinem ganzen Leben noch nie etwas abgeschlagen',
     ],
     correct: 1,
     explanation:
@@ -415,10 +415,10 @@ const FINAL_QS: Question[] = [
     type: 'Registro',
     q: 'Werner nennt seinen Sohn und seine Schwiegertochter "die Kinder". Was sagt diese Wortwahl?',
     opts: [
-      'Sein Sohn und Nadine sind wirklich noch Kinder',
+      'Sein Sohn und Nadine sind wirklich noch sehr jung und stehen finanziell erst ganz am Anfang',
       'Werner sieht sich als Autorität und die beiden als unerfahrene Menschen, denen er geholfen hat',
-      'Werner hat ihre Namen vergessen',
-      'Es ist im Deutschen ein formeller, respektvoller Ausdruck',
+      'Werner hat im Streit ihre Namen vergessen und redet deshalb allgemein von ihnen',
+      'Es ist im Deutschen ein formeller, respektvoller Ausdruck für erwachsene Söhne und Töchter',
     ],
     correct: 1,
     explanation:

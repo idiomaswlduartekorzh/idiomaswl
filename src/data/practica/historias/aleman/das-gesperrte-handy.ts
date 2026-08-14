@@ -176,9 +176,9 @@ const NARRATOR_QS: Question[] = [
     type: 'Wortschatz',
     q: 'Der Erzähler sagt, das Handy "leuchtete auf dem Tisch auf". Was bedeutet das?',
     opts: [
-      'Das Handy fing Feuer',
+      'Das Handy wurde heiß und fing Feuer',
       'Der Bildschirm ging von selbst an, weil eine Nachricht ankam',
-      'Tobias nahm das Handy und entsperrte es',
+      'Tobias nahm das Handy vom Tisch und entsperrte es',
       'Das Handy war an diesem Abend besonders hell eingestellt',
     ],
     correct: 1,
@@ -189,10 +189,10 @@ const NARRATOR_QS: Question[] = [
     type: 'Inferencia',
     q: 'Jana fragt "halb scherzhaft". Was sagt diese Wortwahl über die Situation?',
     opts: [
-      'Jana hatte kein echtes Interesse an dem Handy',
-      'Jana wollte sich über Tobias lustig machen',
+      'Jana hatte überhaupt kein echtes Interesse an dem Handy und wollte das Thema nur beiläufig ansprechen',
+      'Jana wollte sich über Tobias lustig machen und ihn ein wenig ärgern',
       'Die Bitte war als Scherz verpackt, hatte aber eine echte Absicht dahinter',
-      'Jana hatte das Handy schon vorher angesehen',
+      'Jana hatte das Handy schon vorher heimlich angesehen und stellte die Frage nur zum Schein',
     ],
     correct: 2,
     explanation:
@@ -202,10 +202,10 @@ const NARRATOR_QS: Question[] = [
     type: 'Comprensión',
     q: 'Was bot Tobias an, statt ihr das Handy zu geben?',
     opts: [
-      'Die Nachrichten vor ihren Augen zu löschen',
+      'Die Nachrichten vor ihren Augen zu löschen, damit sie ihm wieder glaubt',
       'Jede Frage zu beantworten, die sie stellen wollte',
-      'Ihr nur die Fotos zu zeigen',
-      'Ihr das Handy am nächsten Tag zu geben',
+      'Ihr nur die Fotos vom Hund zu zeigen',
+      'Ihr das Handy am nächsten Tag zu geben, wenn sie dann noch will',
     ],
     correct: 1,
     explanation:
@@ -215,10 +215,10 @@ const NARRATOR_QS: Question[] = [
     type: 'Pensamiento crítico',
     q: '"Eine Weigerung sei auch eine Antwort." Welche Annahme steckt hinter diesem Satz?',
     opts: [
-      'Dass Menschen, die Nein sagen, meistens müde oder beschäftigt sind',
+      'Dass Menschen, die Nein sagen, meistens müde sind und das Gespräch lieber verschieben wollen',
       'Dass ein Unschuldiger zugestimmt hätte — also ist das Nein selbst ein Beweis',
-      'Dass Tobias versprochen hatte, sein Handy zu teilen',
-      'Dass Ablehnen auf Deutsch immer unhöflich ist',
+      'Dass Tobias ihr früher versprochen hatte, sein Handy mit ihr zu teilen',
+      'Dass ein direktes Nein auf Deutsch immer als unhöflich gilt und deshalb erklärt werden muss',
     ],
     correct: 1,
     explanation:
@@ -231,10 +231,10 @@ const A_QS: Question[] = [
     type: 'Comprensión',
     q: 'Was wollte Jana nach eigener Aussage wirklich, als sie nach dem Handy fragte?',
     opts: [
-      'Zwei Jahre Nachrichten lesen',
-      'Herausfinden, wer die Benachrichtigung geschickt hatte',
+      'Zwei Jahre Nachrichten von Anfang bis Ende durchlesen, um etwas zu finden',
+      'Herausfinden, wer ihm die Benachrichtigung beim Abendessen geschickt hatte und was in der Nachricht stand',
       'Sehen, wie er es ihr freiwillig gibt — die Bitte war ein Test',
-      'Seinen Standortverlauf prüfen',
+      'Seinen Standortverlauf prüfen, um zu sehen, wo er am Freitag wirklich war',
     ],
     correct: 2,
     explanation:
@@ -244,10 +244,10 @@ const A_QS: Question[] = [
     type: 'Inferencia',
     q: '"Wenn du nichts zu verstecken hast, warum kostet es dich dann so viel?" — Wo liegt das Problem dieser rhetorischen Frage?',
     opts: [
-      'Sie ist grammatikalisch falsch',
+      'Sie ist grammatikalisch falsch gebaut und deshalb schwer zu verstehen',
       'Sie setzt Weigerung mit Schuld gleich — keine Antwort kann Tobias entlasten',
-      'Sie zeigt, dass Jana schon weiß, was auf dem Handy ist',
-      'Sie beweist, dass Jana die Beziehung beenden will',
+      'Sie zeigt, dass Jana längst weiß, was auf dem Handy steht, und ihn nur noch überführen will',
+      'Sie beweist, dass Jana die Beziehung ohnehin beenden will und nur nach einem Anlass sucht',
     ],
     correct: 1,
     explanation:
@@ -257,10 +257,10 @@ const A_QS: Question[] = [
     type: 'Tono',
     q: 'Wie würdest du den Tonfall von Janas Sprachnachricht am besten beschreiben?',
     opts: [
-      'Ruhig, sachlich und analytisch',
-      'Formell und professionell',
+      'Ruhig, sachlich und analytisch von Anfang bis Ende',
+      'Formell und professionell, wie in einer Beschwerde',
       'Wütend und sarkastisch, aber eingerahmt von Selbstzweifel und Verletzung',
-      'Durchgehend locker und humorvoll',
+      'Durchgehend locker und humorvoll, fast wie ein Witz',
     ],
     correct: 2,
     explanation:
@@ -270,10 +270,10 @@ const A_QS: Question[] = [
     type: 'Wortschatz',
     q: '"Grenzen. Ach bitte." — Was macht Jana mit dieser Antwort?',
     opts: [
-      'Sie stimmt höflich zu, dass Grenzen wichtig sind',
+      'Sie stimmt ihm höflich zu, dass Grenzen in einer Beziehung wichtig sind',
       'Sie wiederholt sein eigenes Wort sarkastisch, um es als Ausrede abzutun',
-      'Sie bittet ihn, ihr das Wort zu erklären',
-      'Sie zitiert eine Therapeutin',
+      'Sie bittet ihn, ihr das Wort "Grenzen" noch einmal genauer zu erklären',
+      'Sie zitiert eine Therapeutin, die dem Paar dieses Wort beigebracht hat',
     ],
     correct: 1,
     explanation:
@@ -283,10 +283,10 @@ const A_QS: Question[] = [
     type: 'Registro',
     q: 'Jana sagt: Angeblich habe ich "eine Grenze überschritten". Warum benutzt sie hier Anführungszeichen?',
     opts: [
-      'Sie zitiert einen juristischen Text',
+      'Sie zitiert einen juristischen Text, in dem dieser Ausdruck genau so vorkommt',
       'Sie zitiert seine Worte, um sich davon zu distanzieren und den Vorwurf zurückzuweisen',
-      'Der Ausdruck verlangt im Deutschen immer Anführungszeichen',
-      'Sie weiß nicht, wie man das übersetzt',
+      'Der Ausdruck verlangt im Deutschen immer Anführungszeichen, weil er ursprünglich aus der Rechtssprache kommt',
+      'Sie weiß nicht, wie man diesen Ausdruck sonst formulieren soll, und behilft sich mit Anführungszeichen',
     ],
     correct: 1,
     explanation:
@@ -299,10 +299,10 @@ const B_QS: Question[] = [
     type: 'Comprensión',
     q: 'Welchen Grund nennt Tobias für seine Weigerung?',
     opts: [
-      'Auf dem Handy sind Nachrichten, die sie nicht sehen soll',
-      'Das Handy gehört seiner Firma',
+      'Auf dem Handy stehen Nachrichten, die sie besser nicht sehen sollte, deshalb dreht er es beim Essen um',
+      'Das Handy gehört seiner Firma, und er darf es niemandem in die Hand geben',
       'Nicht, dass er etwas versteckt — sondern dass ein einziges Ja eine dauerhafte Kontrollerwartung schaffen würde',
-      'Er hatte sein Passwort vergessen',
+      'Er hatte sein Passwort vergessen und konnte das Handy in diesem Moment selbst nicht entsperren',
     ],
     correct: 2,
     explanation:
@@ -313,9 +313,9 @@ const B_QS: Question[] = [
     q: '"Diesen Monat das Handy. Nächsten Monat mein Standort." Welche Argumentationstechnik ist das?',
     opts: [
       'Dammbruchargument — ein kleines Zugeständnis wird als Anfang einer Kette dargestellt',
-      'Ein wörtliches Zitat von Janas Forderung',
-      'Eine Entschuldigung für sein Verhalten',
-      'Eine sachliche Beschreibung dessen, was schon passiert ist',
+      'Ein wörtliches Zitat aus Janas Forderung an diesem Abend',
+      'Eine Entschuldigung für sein Verhalten am Freitagabend, verpackt in zwei kurze Sätze',
+      'Eine sachliche Beschreibung dessen, was Jana in den letzten Monaten schon von ihm verlangt hat',
     ],
     correct: 0,
     explanation:
@@ -325,10 +325,10 @@ const B_QS: Question[] = [
     type: 'Inferencia',
     q: '"Gegen mich wird ermittelt für etwas, das jemand anderes getan hat." Was zeigt dieser Satz?',
     opts: [
-      'Die Polizei ermittelt tatsächlich gegen Tobias',
+      'Die Polizei ermittelt in diesem Fall tatsächlich gegen Tobias',
       'Tobias glaubt, er zahle für das Verhalten von Janas Ex-Partner',
-      'Tobias hat dasselbe getan wie ihr Ex-Partner',
-      'Tobias will, dass Jana ihren Ex kontaktiert',
+      'Tobias hat im Grunde dasselbe getan wie ihr Ex-Partner',
+      'Tobias will, dass Jana ihren Ex zur Rede stellt',
     ],
     correct: 1,
     explanation:
@@ -338,10 +338,10 @@ const B_QS: Question[] = [
     type: 'Pensamiento crítico',
     q: '"Wenn Nein sagen dich schuldig macht, dann gibt es keine Antwort, die funktioniert." Worauf weist Tobias hin?',
     opts: [
-      'Darauf, dass Jana ihm nie Fragen stellt',
+      'Darauf, dass Jana ihm nie direkte Fragen stellt, obwohl er genau das angeboten hat',
       'Darauf, dass die Bitte gar nicht ehrlich bestanden werden kann — jede Reaktion bestätigt den Verdacht',
-      'Darauf, dass er die Beziehung beenden will',
-      'Darauf, dass er die Frage nicht verstanden hat',
+      'Darauf, dass er die Beziehung beenden will und diesen Streit dafür als Anlass benutzt',
+      'Darauf, dass er Janas Frage von Anfang an falsch verstanden hat und sie deshalb nicht beantworten konnte',
     ],
     correct: 1,
     explanation:
@@ -351,10 +351,10 @@ const B_QS: Question[] = [
     type: 'Tono',
     q: '"Vielleicht hätte ich den Moment besser lösen können. Vielleicht." Was bewirkt das wiederholte "vielleicht"?',
     opts: [
-      'Volle Übernahme der Verantwortung',
-      'Völlige Verwirrung darüber, was passiert ist',
+      'Volle Übernahme der Verantwortung für den ganzen Abend',
+      'Völlige Verwirrung darüber, was an diesem Abend eigentlich passiert ist',
       'Ein minimales Zugeständnis, das er sofort zurücknimmt — ein Satz in Entschuldigungsform, der nichts zugibt',
-      'Echte Reue und ein Plan, sich zu ändern',
+      'Echte Reue und ein konkreter Plan, sich in solchen Momenten anders zu verhalten',
     ],
     correct: 2,
     explanation:
@@ -370,7 +370,7 @@ const FINAL_QS: Question[] = [
       'Tobias bekam eine Nachricht von einer anderen Frau',
       'Jana hatte einen Teil des Chats schon gelesen',
       'Tobias drehte sein Handy beim Abendessen um',
-      'Tobias entschuldigte sich am nächsten Morgen',
+      'Tobias entschuldigte sich am nächsten Morgen für den ganzen Abend',
     ],
     correct: 2,
     explanation:
@@ -380,10 +380,10 @@ const FINAL_QS: Question[] = [
     type: 'Perspectiva',
     q: 'Jana nennt die Bitte einen "Test". Tobias spricht davon, dass gegen ihn "ermittelt" wird. Was zeigt dieser Unterschied?',
     opts: [
-      'Einer von beiden lügt absichtlich über den Abend',
+      'Einer von beiden lügt absichtlich über das, was passiert ist',
       'Dieselbe Handlung bekommt entgegengesetzte Bedeutungen, je nachdem, wofür sie für jeden steht',
-      'Keiner von beiden erinnert sich richtig',
-      'Tobias benutzt einen gehobeneren Wortschatz als Jana',
+      'Keiner von beiden erinnert sich richtig an den Abend',
+      'Tobias benutzt einen gehobeneren Wortschatz als Jana und wirkt deshalb überzeugender',
     ],
     correct: 1,
     explanation:
@@ -393,10 +393,10 @@ const FINAL_QS: Question[] = [
     type: 'Pensamiento crítico',
     q: 'Was ist die genaueste GRUNDursache dieses Konflikts?',
     opts: [
-      'Tobias versteckt etwas auf seinem Handy',
-      'Jana ist einfach ein eifersüchtiger Mensch',
+      'Tobias versteckt auf seinem Handy etwas, das er ihr auf keinen Fall zeigen will',
+      'Jana ist einfach ein eifersüchtiger Mensch, und der Streit wäre so oder so gekommen',
       'Das Paar hatte nie geklärt, was Privatsphäre zwischen ihnen bedeutet — bis es geprüft wurde',
-      'Der Ex-Partner von Jana',
+      'Der Ex-Partner von Jana, dessen Verhalten sie bis heute nicht loslässt und jede neue Beziehung vergiftet',
     ],
     correct: 2,
     explanation:
@@ -406,10 +406,10 @@ const FINAL_QS: Question[] = [
     type: 'Registro',
     q: 'Jana sagt, Tobias werfe ihr vor, "eine Grenze überschritten" zu haben. Tobias sagt, er entschuldige sich nicht dafür, "eine Grenze zu haben". Was zeigt dieses geteilte Bild?',
     opts: [
-      'Beide zitieren denselben Film',
+      'Beide zitieren denselben Film, den sie im Frühling zusammen gesehen haben, ohne es zu merken',
       'Beide benutzen dasselbe Grenz-Bild, um entgegengesetzte Positionen zu verteidigen — jeder hält sich für den, der eine Grenze schützt',
-      '"Grenze" bedeutet in beiden Fällen etwas völlig anderes',
-      'Es beweist, dass Tobias Janas Wortschatz kopiert',
+      '"Grenze" bedeutet in den beiden Sätzen etwas völlig anderes, deshalb ist das gemeinsame Wort nur ein Zufall ohne tiefere Bedeutung',
+      'Es beweist, dass Tobias Janas Wortschatz übernimmt, um ihre eigenen Argumente gegen sie zu benutzen',
     ],
     correct: 1,
     explanation:
@@ -419,10 +419,10 @@ const FINAL_QS: Question[] = [
     type: 'Inferencia',
     q: '"Hätte er mir das Handy einfach gegeben, hätte ich es wahrscheinlich nicht mal aufgemacht." Was zeigt dieser Satz?',
     opts: [
-      'Jana hat gelogen, als sie das Handy sehen wollte',
+      'Jana hat von Anfang an gelogen, als sie sagte, sie wolle das Handy sehen, und gibt das hier versehentlich zu',
       'Jana wollte Beruhigung, keine Information — und das Einzige, was sie ihr gegeben hätte, war genau die Geste, die Tobias aus Prinzip verweigert',
-      'Jana hatte das Handy schon vorher geöffnet',
-      'Jana kennt sein Passwort nicht',
+      'Jana hatte das Handy schon vorher heimlich geöffnet und weiß längst, was darin steht — deshalb kann sie so gelassen über den Abend reden',
+      'Jana kennt sein Passwort nicht und hätte das Handy deshalb sowieso nicht öffnen können',
     ],
     correct: 1,
     explanation:
