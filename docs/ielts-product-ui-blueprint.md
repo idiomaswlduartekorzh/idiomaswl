@@ -32,12 +32,14 @@ Compact training passages must be labelled as compact. The lesson must explain t
 ## Writing invariants
 
 - Task 1 and Task 2 use the same shell, hero, fact rail, section rhythm and card grammar.
+- The Academic Writing hub presents Task 1 and Task 2 as 2 equal primary routes. Cross-task tools such as the rubric are supporting routes and must not become an orphan third card in a 2-column grid.
 - Clearly distinguish official requirements from WeLearn study strategies.
 - Paragraph plans and suggested word ranges are training scaffolds, not official IELTS prescriptions.
 - Task pages link architecture, transferable skills and full-task practice instead of presenting disconnected mini-lessons.
 - Every canonical Task 1 lesson participates in one shared course map. The map groups response architecture, visual types and transferable/application work; it exposes the active route plus previous, hub and next navigation without replacing the lesson's single H1.
 - Do not duplicate breadcrumbs underneath the shared Task 1 course map, and never mount a second `<main>` inside the site's main landmark. Legacy lesson engines may be preserved, but their route shell, focus treatment and responsive width must use the shared product contract.
 - Task 1 information pages remain self-canonical and indexable. A direct timed-writing session may remain `noindex, nofollow` when its canonical practice bank is the durable information surface.
+- A shared course map may expose an inherited lesson only after its principal learning object uses the current visual contract. Line graphs, bar charts, pie charts and tables use the shared Task 1 visual-analysis panel; adding a new shell around a legacy generic card is not visual migration.
 
 ## Interaction and accessibility
 
@@ -56,3 +58,4 @@ Compact training passages must be labelled as compact. The lesson must explain t
 5. Run the practice-content guardian, practice catalog guardian, TypeScript, relevant tests and production build.
 6. Use browser QA for overflow, focus, answer selection, feedback and responsive reading measure.
 7. For Task 1, verify all 14 course-map routes return `200`, expose their own canonical, appear in the sitemap and preserve the timed-session `noindex` boundary.
+8. When a navigation change makes an older route more prominent, capture that route at desktop and mobile widths. Link coverage alone is not evidence of visual parity.

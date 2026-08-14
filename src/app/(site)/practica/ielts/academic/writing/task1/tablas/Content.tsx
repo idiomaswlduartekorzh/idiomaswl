@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
+import Task1VisualPanel from '../Task1VisualPanel';
 
 type Faq = {
   question: string;
@@ -135,16 +136,13 @@ const INTERNAL_LINKS = [
 
 function PracticeTable() {
   return (
-    <div className="wl-card" style={{ padding: '1rem', margin: '1rem 0 1.25rem', overflowX: 'auto' }}>
-      <p style={{ margin: '0 0 0.35rem', fontSize: '0.72rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-        Original practice table
-      </p>
-      <h2 style={{ margin: '0 0 0.35rem', fontSize: '1.05rem', letterSpacing: '-0.01em' }}>
-        Average student use of campus facilities in 2025
-      </h2>
-      <p style={{ margin: '0 0 1rem', color: 'var(--muted)', fontSize: '0.86rem' }}>
-        Figures show average number of students per time period.
-      </p>
+    <Task1VisualPanel
+      eyebrow="Original WeLearn practice data"
+      title="Average student use of campus facilities in 2025"
+      caption="Figures show the average number of students per time period. Read by row, then compare the strongest cross-row patterns."
+      kind="Data table"
+      scrollable
+    >
       <table style={{ width: '100%', minWidth: 560, borderCollapse: 'collapse', fontSize: '0.88rem' }}>
         <thead>
           <tr>
@@ -174,7 +172,7 @@ function PracticeTable() {
           ))}
         </tbody>
       </table>
-    </div>
+    </Task1VisualPanel>
   );
 }
 

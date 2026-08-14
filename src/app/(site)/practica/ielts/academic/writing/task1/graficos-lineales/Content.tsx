@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
+import Task1VisualPanel from '../Task1VisualPanel';
 
 type Faq = {
   question: string;
@@ -142,16 +143,12 @@ function LineGraph() {
   const ticks = [0, 20, 40, 60, 80];
 
   return (
-    <div className="wl-card" style={{ padding: '1rem', margin: '1rem 0 1.25rem' }}>
-      <p style={{ margin: '0 0 0.35rem', fontSize: '0.72rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-        Original practice graph
-      </p>
-      <h2 style={{ margin: '0 0 0.35rem', fontSize: '1.05rem', letterSpacing: '-0.01em' }}>
-        Average monthly public transport journeys in Metroville, 2010-2020
-      </h2>
-      <p style={{ margin: '0 0 1rem', color: 'var(--muted)', fontSize: '0.86rem' }}>
-        Figures are shown in millions of journeys.
-      </p>
+    <Task1VisualPanel
+      eyebrow="Original WeLearn practice data"
+      title="Average monthly public transport journeys in Metroville, 2010–2020"
+      caption="Figures are shown in millions of journeys. Read line direction, crossings and relative position before choosing any wording."
+      kind="Line graph"
+    >
       <svg viewBox={`0 0 ${width} ${height}`} role="img" aria-label="Line graph showing metro, bus and tram journeys in Metroville from 2010 to 2020" style={{ width: '100%', display: 'block' }}>
         {ticks.map((tick) => (
           <g key={tick}>
@@ -186,7 +183,7 @@ function LineGraph() {
           </span>
         ))}
       </div>
-    </div>
+    </Task1VisualPanel>
   );
 }
 

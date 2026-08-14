@@ -6,6 +6,7 @@ import { join } from 'node:path';
 const root = process.cwd();
 const task1Root = join(root, 'src/app/(site)/practica/ielts/academic/writing/task1');
 const courseMapSource = readFileSync(join(task1Root, 'Task1CourseLayout.tsx'), 'utf8');
+const writingHubSource = readFileSync(join(task1Root, '..', 'Content.tsx'), 'utf8');
 const hubSource = [
   readFileSync(join(task1Root, 'Content.tsx'), 'utf8'),
   readFileSync(join(task1Root, 'Task1ChartTypeGuide.tsx'), 'utf8'),
@@ -55,4 +56,20 @@ test('the timed session remains excluded from indexing while its practice bank s
   const bank = readFileSync(join(task1Root, 'tarea-completa/page.tsx'), 'utf8');
   assert.match(session, /robots:\s*\{\s*index:\s*false,\s*follow:\s*false\s*\}/);
   assert.match(bank, /alternates:\s*\{\s*canonical:/);
+});
+
+test('the Writing hub keeps Task 1 and Task 2 as the aligned primary routes', () => {
+  assert.match(writingHubSource, /className=\{styles\.primaryGrid\}/);
+  assert.match(writingHubSource, /PRIMARY_TASKS\.map/);
+  assert.match(writingHubSource, /className=\{styles\.rubricCard\}/);
+  assert.doesNotMatch(writingHubSource, /wl-exams-catalog/);
+  assert.doesNotMatch(writingHubSource, /150\+ palabras|250\+ palabras/);
+});
+
+test('every promoted data-visual lesson uses the shared Task 1 visual desk', () => {
+  for (const slug of ['graficos-lineales', 'graficos-de-barras', 'pie-charts', 'tablas']) {
+    const source = readFileSync(join(task1Root, slug, 'Content.tsx'), 'utf8');
+    assert.match(source, /import Task1VisualPanel from '\.\.\/Task1VisualPanel'/, `${slug} is missing the shared visual panel`);
+    assert.match(source, /<Task1VisualPanel/, `${slug} still exposes its visual through a legacy generic card`);
+  }
 });

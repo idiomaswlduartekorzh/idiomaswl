@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
+import Task1VisualPanel from '../Task1VisualPanel';
 
 type Faq = {
   question: string;
@@ -136,16 +137,12 @@ function PieChart() {
   const radius = 74;
   const circumference = 2 * Math.PI * radius;
   return (
-    <div className="wl-card" style={{ padding: '1rem', margin: '1rem 0 1.25rem' }}>
-      <p style={{ margin: '0 0 0.35rem', fontSize: '0.72rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-        Original practice chart
-      </p>
-      <h2 style={{ margin: '0 0 0.35rem', fontSize: '1.05rem', letterSpacing: '-0.01em' }}>
-        Monthly spending by young professionals in Northbridge, 2025
-      </h2>
-      <p style={{ margin: '0 0 1rem', color: 'var(--muted)', fontSize: '0.86rem' }}>
-        Figures show the percentage of total household spending.
-      </p>
+    <Task1VisualPanel
+      eyebrow="Original WeLearn practice data"
+      title="Monthly spending by young professionals in Northbridge, 2025"
+      caption="Figures show the percentage of total household spending. Group dominant, middle and minor shares before writing the overview."
+      kind="Pie chart"
+    >
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', alignItems: 'center' }}>
         <svg viewBox="0 0 220 220" role="img" aria-label="Pie chart showing monthly spending categories among young professionals in Northbridge" style={{ width: 'min(100%, 270px)', flex: '1 1 190px', display: 'block' }}>
           <circle cx="110" cy="110" r={radius} fill="none" stroke="var(--line-soft)" strokeWidth="42" />
@@ -189,7 +186,7 @@ function PieChart() {
           ))}
         </div>
       </div>
-    </div>
+    </Task1VisualPanel>
   );
 }
 

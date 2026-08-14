@@ -1,0 +1,174 @@
+.page {
+  --writing-navy: #102e6f;
+  --writing-red: #b42332;
+  --writing-teal: #176b87;
+  --writing-ink: #14244f;
+  --writing-muted: #5d6782;
+  min-height: 100vh;
+  padding: clamp(2.5rem, 6vw, 5.5rem) 1.25rem 6rem;
+  background: #f7f8fc;
+  color: var(--writing-ink);
+}
+
+.shell { width: min(1120px, 100%); margin: 0 auto; }
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  color: var(--writing-muted);
+  font: 700 0.78rem/1.4 var(--mono, ui-monospace, monospace);
+}
+
+.breadcrumb a { color: inherit; text-decoration: none; }
+.breadcrumb a:hover,
+.breadcrumb a:focus-visible { color: var(--writing-navy); text-decoration: underline; text-underline-offset: 0.22em; }
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: end;
+  margin-bottom: 2rem;
+}
+
+.eyebrow,
+.sectionLabel {
+  margin: 0 0 0.65rem;
+  color: var(--writing-red);
+  font: 850 0.72rem/1.35 var(--mono, ui-monospace, monospace);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  max-width: 760px;
+  margin: 0;
+  color: var(--writing-navy);
+  font-size: clamp(3rem, 7vw, 6.2rem);
+  font-weight: 750;
+  line-height: 0.93;
+  letter-spacing: -0.06em;
+  text-wrap: balance;
+}
+
+.heroCopy {
+  margin: 0;
+  color: var(--writing-muted);
+  font-size: clamp(1rem, 1.5vw, 1.14rem);
+  line-height: 1.75;
+  text-wrap: pretty;
+}
+
+.formatPanel {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  margin-bottom: 1.15rem;
+  border: 1px solid #d6dceb;
+  border-radius: 14px;
+  background: #d6dceb;
+  box-shadow: 0 18px 44px rgba(16, 46, 111, 0.09);
+}
+
+.formatPanel article { padding: 1.15rem 1.25rem; background: rgba(255, 255, 255, 0.92); }
+.formatPanel h2 { margin: 0 0 0.4rem; color: var(--writing-navy); font-size: 0.94rem; }
+.formatPanel p { margin: 0; color: var(--writing-muted); font-size: 0.86rem; line-height: 1.62; }
+
+.criteria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 2.5rem;
+}
+
+.criteria span {
+  padding: 0.45rem 0.75rem;
+  border: 1px solid rgba(16, 46, 111, 0.2);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--writing-navy);
+  font: 800 0.72rem/1.2 var(--mono, ui-monospace, monospace);
+}
+
+.routeHeader {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.routeHeader h2 { margin: 0; color: var(--writing-navy); font-size: clamp(1.6rem, 3vw, 2.35rem); letter-spacing: -0.035em; }
+.routeHeader p:last-child { margin: 0; color: var(--writing-teal); font: 800 0.74rem/1.4 var(--mono, ui-monospace, monospace); }
+
+.primaryGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+
+.taskCard,
+.rubricCard {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #cfd7e8;
+  background: rgba(255, 255, 255, 0.94);
+  color: inherit;
+  text-decoration: none;
+  box-shadow: 0 14px 36px rgba(16, 46, 111, 0.08);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+  touch-action: manipulation;
+}
+
+.taskCard { min-height: 360px; border-radius: 16px; }
+.taskCard::before,
+.rubricCard::before { content: ''; position: absolute; inset: 0 auto 0 0; width: 5px; background: var(--card-accent); }
+.taskCard:hover,
+.taskCard:focus-visible,
+.rubricCard:hover,
+.rubricCard:focus-visible { transform: translateY(-3px); border-color: var(--card-accent); box-shadow: 0 22px 50px rgba(16, 46, 111, 0.14); }
+.taskCard:focus-visible,
+.rubricCard:focus-visible { outline: 3px solid rgba(23, 107, 135, 0.32); outline-offset: 4px; }
+
+.cardBody { display: flex; min-height: 100%; flex-direction: column; padding: clamp(1.5rem, 3vw, 2.2rem); }
+.cardIndex { margin: 0 0 2.4rem; color: var(--card-accent); font: 900 1rem/1 var(--mono, ui-monospace, monospace); }
+.cardBody h3 { max-width: 420px; margin: 0 0 0.6rem; color: var(--writing-navy); font-size: clamp(2rem, 4vw, 3.25rem); letter-spacing: -0.05em; line-height: 1; }
+.cardMeta { margin: 0 0 1rem; color: var(--card-accent); font: 850 0.74rem/1.4 var(--mono, ui-monospace, monospace); text-transform: uppercase; letter-spacing: 0.05em; }
+.cardDescription { max-width: 500px; margin: 0; color: var(--writing-muted); font-size: 0.98rem; line-height: 1.7; }
+.cardAction { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: auto; padding-top: 2rem; color: var(--writing-navy); font: 850 0.78rem/1.3 var(--mono, ui-monospace, monospace); }
+.cardAction span:last-child { color: var(--card-accent); font-size: 1.15rem; transition: transform 180ms ease; }
+.taskCard:hover .cardAction span:last-child,
+.taskCard:focus-visible .cardAction span:last-child,
+.rubricCard:hover .cardAction span:last-child,
+.rubricCard:focus-visible .cardAction span:last-child { transform: translateX(4px); }
+
+.rubricCard {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(260px, 0.7fr);
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 1.4rem 1.5rem 1.4rem 1.8rem;
+  border-radius: 14px;
+}
+
+.rubricCard h3 { margin: 0 0 0.35rem; color: var(--writing-navy); font-size: 1.25rem; }
+.rubricCard p { margin: 0; color: var(--writing-muted); font-size: 0.9rem; line-height: 1.6; }
+.rubricCard .cardAction { justify-content: flex-end; margin: 0; padding: 0; }
+
+@media (max-width: 760px) {
+  .page { padding-inline: 1rem; }
+  .hero,
+  .primaryGrid,
+  .formatPanel,
+  .rubricCard { grid-template-columns: 1fr; }
+  .taskCard { min-height: 320px; }
+  .routeHeader { align-items: flex-start; flex-direction: column; }
+  .rubricCard .cardAction { justify-content: space-between; padding-top: 0.75rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .taskCard,
+  .rubricCard,
+  .cardAction span:last-child { transition: none; }
+}

@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
+import Task1VisualPanel from '../Task1VisualPanel';
 
 type Faq = {
   question: string;
@@ -143,16 +144,12 @@ function BarChart() {
   const ticks = [0, 20, 40, 60, 80];
 
   return (
-    <div className="wl-card" style={{ padding: '1rem', margin: '1rem 0 1.25rem' }}>
-      <p style={{ margin: '0 0 0.35rem', fontSize: '0.72rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-        Original practice chart
-      </p>
-      <h2 style={{ margin: '0 0 0.35rem', fontSize: '1.05rem', letterSpacing: '-0.01em' }}>
-        Subject choices by study mode in 2024
-      </h2>
-      <p style={{ margin: '0 0 1rem', color: 'var(--muted)', fontSize: '0.86rem' }}>
-        Figures show the percentage of students selecting each subject area.
-      </p>
+    <Task1VisualPanel
+      eyebrow="Original WeLearn practice data"
+      title="Subject choices by study mode in 2024"
+      caption="Figures show the percentage of students selecting each subject area. Compare category rank and the gap between modes before selecting details."
+      kind="Bar chart"
+    >
       <svg viewBox={`0 0 ${width} ${height}`} role="img" aria-label="Bar chart comparing campus and online students by subject choice in 2024" style={{ width: '100%', display: 'block' }}>
         {ticks.map((tick) => (
           <g key={tick}>
@@ -188,7 +185,7 @@ function BarChart() {
           </span>
         ))}
       </div>
-    </div>
+    </Task1VisualPanel>
   );
 }
 
