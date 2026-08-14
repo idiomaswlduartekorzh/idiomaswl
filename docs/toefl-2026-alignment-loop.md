@@ -3372,3 +3372,22 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
   no están conectados y no existen sus medios.
 - Siguiente lote: Sets 11–15. Cero audio abierto, reproducido, transcrito, generado,
   normalizado o modificado.
+
+### Expansión Listening escrita — guiones Sets 11–15 — 2026-08-14
+
+- Cada Set 11–15 recibe tres Choose para completar M1 y el M2 nuevo de 8 Choose +
+  Conversation 2 + Announcement 2 + Academic Talk 4: 95 ítems y 70 medios bloqueados.
+- Claves y scoring siguen en `server-only`; ningún payload público contiene respuestas.
+  La prueba determinista cierra cada lote en 19/19 y deja visibles los no respondidos.
+- Editorial: Choose 6–12 palabras, Conversations 79–91, Announcements 57–67 y
+  Academic Talks 197–201. Los 210 guiones acumulados de Sets 1–15 son únicos y el
+  checker no detecta ventaja grande de longitud en respuestas correctas.
+- Transpiración, surgencia, ceniza volcánica, turnover lacustre y tránsitos de
+  exoplanetas se contrastaron con USGS, NOAA, NPS y NASA. La auditoría de fuentes y
+  posibles cortes de Conversations heredadas está en
+  `docs/toefl-2026-listening-scripts-sets11-15-audit-2026-08-14.md`.
+- Evidencia: checker Listening fijo PASS Sets 1–15, unit 3/3 y TypeScript PASS. Los
+  datos no están servidos y Listening visible continúa 17/34; no se declara producto
+  completo por tener guiones sin medios.
+- Siguiente lote: Sets 16–20. Cero audio abierto, reproducido, transcrito, generado,
+  normalizado o modificado.
