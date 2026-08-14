@@ -178,6 +178,13 @@ const nextConfig: NextConfig = {
       destination: `/practica/${lang}/${lvl}/gramatica`,
       permanent: true,
     });
+    /** Artículo del blog cuyo slug cambió. El destino se escribe completo
+     *  porque a veces no es otro artículo, sino una página del sitio. */
+    const b = (from: string, destination: string) => ({
+      source: `/blog/${from}`,
+      destination,
+      permanent: true,
+    });
 
     return [
       // ── Historias ────────────────────────────────────────────────────────
@@ -293,6 +300,69 @@ const nextConfig: NextConfig = {
       idx('frances', 'a1', 'il-y-a-c-est'),
       idx('japones', 'a1', 'demostrativos-kore-sore-are'),
       idx('japones', 'a1', 'pasado-mashita-deshita'),
+
+      // ── Segunda tanda: las que se escaparon de la primera ─────────────────
+      //
+      // La tabla de arriba se armó con Search Console del 18 al 29 de julio de
+      // 2026 y cubrió 69 slugs. Se quedaron 29 fuera, y Google las siguió
+      // pidiendo: 21 de ellas las rastreó en agosto, ya con las redirecciones
+      // anteriores publicadas, y se llevó un 404 cada vez.
+      //
+      // Medido en el informe de indexación del 13 de agosto de 2026, apartado
+      // «Non trovata (404)», que listaba 38 URLs. Cada destino se comprobó
+      // contra `src/data/grammar/<idioma>/<nivel>/` antes de escribirlo aquí:
+      // el destino existe y el origen no es una lección viva.
+      g('coreano', 'a1', 'presente-ayo-eoyo-haeyo', 'haeyo-presente'),
+      g('coreano', 'a1', 'palabras-interrogativas', 'interrogativos'),
+      g('coreano', 'a1', 'particula-tema-eun-neun', 'marcadores-tema-sujeto'),
+      g('coreano', 'a1', 'particula-sujeto-i-ga', 'marcadores-tema-sujeto'),
+      g('coreano', 'a1', 'particulas-lugar-tiempo-e-eseo', 'marcador-lugar-e'),
+
+      g('frances', 'a1', 'concordancia-adjetivos', 'adjectifs-qualificatifs'),
+      g('frances', 'a1', 'verbo-avoir', 'verbe-avoir'),
+      g('frances', 'a1', 'futuro-proximo', 'futur-proche'),
+      g('frances', 'a1', 'genero-numero-sustantivos', 'genre-noms'),
+
+      g('aleman', 'a1', 'imperativo', 'imperativ'),
+      g('aleman', 'a1', 'articulos-indefinidos-kein', 'artikel'),
+      g('aleman', 'a1', 'es-gibt-acusativo', 'akkusativ'),
+      g('aleman', 'a1', 'negacion-nicht-kein', 'verneinung'),
+      g('aleman', 'a1', 'preguntas', 'w-fragen'),
+
+      g('italiano', 'a1', 'verbos-ere-ire', 'presente-verbi-ere-ire'),
+      g('italiano', 'a1', 'articulos-determinados', 'articoli'),
+      g('italiano', 'a1', 'articulos-indeterminados', 'articoli'),
+      g('italiano', 'a1', 'ci-e-ci-sono', 'ce-ci-sono'),
+
+      g('portugues', 'a1', 'genero-plural-substantivos', 'plural-substantivos'),
+      g('portugues', 'a1', 'a-negacao', 'negacao'),
+      g('portugues', 'a1', 'presente-continuo', 'estar-gerundio'),
+      g('portugues', 'a1', 'possessivos', 'adjetivos-possessivos'),
+
+      g('japones', 'a1', 'numeros-y-contadores', 'numeros-contadores'),
+
+      g('ingles', 'a1', 'articulos-a-an-the', 'articles'),
+      g('ingles', 'a1', 'pronombres-personales', 'subject-pronouns'),
+      g('ingles', 'a2', 'countable-uncountable-some-any', 'quantifiers'),
+
+      g('ruso', 'a1', 'caso-preposicional-lugar', 'preposiciones-lugar-v-na'),
+
+      // Estos dos no tienen equivalente: el tema no existe en ese idioma y nivel
+      // (ruso A1 no cubre el pasado; japonés A1 no tiene la partícula の). Van al
+      // índice, que es lo más cercano a lo que la persona buscaba.
+      idx('ruso', 'a1', 'tiempo-pasado'),
+      idx('japones', 'a1', 'particula-no-posesivo'),
+
+      // ── Artículos del blog renombrados ────────────────────────────────────
+      // Mismo problema, otra sección. `topik-i-` pasó a `topik-1-`: cambió una
+      // letra por un número y la dirección vieja quedó muerta.
+      b('topik-i-preparacion-guia-para-principiantes', '/blog/topik-1-preparacion-guia-para-principiantes'),
+      b('ielts-writing-task-2-guia-completa-para-principiantes', '/blog/ielts-writing-task-2-tipos-de-ensayo-y-estructura'),
+      b('ielts-bandas-0-9-que-significa-cada-puntaje', '/blog/como-sacar-band-7-en-ielts'),
+      b('metodo-welearn-17-pasos-para-aprender-un-idioma', '/metodo'),
+
+      // Página suelta de una versión anterior del sitio, aún rastreada.
+      { source: '/interrogativos_coreano/index.html', destination: '/practica/coreano/a1/gramatica/interrogativos', permanent: true },
     ];
   },
 };
