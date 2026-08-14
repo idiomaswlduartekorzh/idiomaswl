@@ -1,0 +1,142 @@
+.group {
+  min-width: 0;
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid var(--line-soft);
+  border-radius: 14px;
+  background: var(--bg-2);
+}
+
+.legend {
+  width: 100%;
+  padding: 0;
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 750;
+  line-height: 1.5;
+}
+
+.hint,
+.count,
+.error,
+.resultCorrect,
+.resultIncorrect {
+  margin: 0.45rem 0 0;
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.hint,
+.count {
+  color: var(--muted);
+}
+
+.options {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 0.75rem;
+}
+
+.option {
+  display: grid;
+  grid-template-columns: auto 30px minmax(0, 1fr);
+  gap: 0.65rem;
+  align-items: center;
+  min-width: 0;
+  padding: 0.72rem 0.8rem;
+  border: 1px solid var(--line-soft);
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--ink-2);
+  cursor: pointer;
+}
+
+.option:hover {
+  border-color: #1a4fcc;
+}
+
+.option:has(input:focus-visible) {
+  outline: 3px solid #f59e0b;
+  outline-offset: 3px;
+}
+
+.option input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: #1a4fcc;
+}
+
+.option:has(input:disabled) {
+  cursor: default;
+}
+
+.letter {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--bg-3, #eef2f7);
+  color: var(--ink);
+  font: 800 0.75rem/1 var(--mono, monospace);
+}
+
+.selected {
+  border-color: #1a4fcc;
+  background: rgba(26, 79, 204, 0.07);
+}
+
+.correct {
+  border-color: #047857;
+  background: rgba(4, 120, 87, 0.08);
+}
+
+.incorrect {
+  border-color: #b42318;
+  background: rgba(180, 35, 24, 0.08);
+}
+
+.error,
+.resultIncorrect {
+  min-height: 1.2em;
+  color: #b42318;
+  font-weight: 700;
+}
+
+.resultCorrect {
+  color: #047857;
+  font-weight: 700;
+}
+
+.supplementary {
+  border-style: dashed;
+  background: rgba(26, 79, 204, 0.035);
+}
+
+.badge {
+  width: fit-content;
+  margin: 0 0 0.7rem;
+  padding: 0.32rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(26, 79, 204, 0.1);
+  color: #1a4fcc;
+  font: 800 0.7rem/1.3 var(--mono, monospace);
+}
+
+@media (max-width: 480px) {
+  .group {
+    padding: 0.8rem;
+  }
+
+  .option {
+    grid-template-columns: auto 28px minmax(0, 1fr);
+    padding: 0.65rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .option {
+    transition: none;
+  }
+}

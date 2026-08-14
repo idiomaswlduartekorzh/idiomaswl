@@ -1,0 +1,451 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "TOEFL iBT 2026 — readiness de Complete the Words, Set 1",
+    "description": "Expediente técnico documental para implementar y publicar el piloto T12 sin tocar todavía el runtime ni los audios.",
+    "generatedAt": "2026-08-13T19:37:30-05:00",
+    "cards": [
+      {
+        "id": "scope",
+        "description": "Controles de aceptación trazables en la matriz de readiness.",
+        "dataset": "summary",
+        "sourceId": "summary_query",
+        "metrics": [
+          { "label": "Controles", "field": "checks", "format": "number" },
+          { "label": "No bloqueantes", "field": "nonBlocking", "format": "number" }
+        ]
+      },
+      {
+        "id": "blockers",
+        "description": "Controles que impiden declarar T12 completo o publicable.",
+        "dataset": "summary",
+        "sourceId": "summary_query",
+        "metrics": [
+          { "label": "Bloqueantes", "field": "blocking", "format": "number" },
+          { "label": "Pendientes de runtime", "field": "pendingRuntime", "format": "number" }
+        ]
+      },
+      {
+        "id": "answer_contract",
+        "description": "Huecos definidos con prefijo visible, letras faltantes y palabra reconstruida.",
+        "dataset": "summary",
+        "sourceId": "summary_query",
+        "metrics": [
+          { "label": "Huecos", "field": "blanks", "format": "number" },
+          { "label": "Reconstrucciones exactas", "field": "exactReconstructions", "format": "number" }
+        ]
+      },
+      {
+        "id": "signatures",
+        "description": "Firmas humanas requeridas para la autorización editorial y de publicación.",
+        "dataset": "summary",
+        "sourceId": "human_gate_query",
+        "metrics": [
+          { "label": "Firmas registradas", "field": "signaturesRecorded", "format": "number" },
+          { "label": "Firmas requeridas", "field": "signaturesRequired", "format": "number" }
+        ]
+      }
+    ],
+    "charts": [
+      {
+        "id": "evidence_status",
+        "title": "Distribución de estados de evidencia",
+        "subtitle": "Conteos exactos de los 68 controles; las categorías no representan severidad equivalente.",
+        "type": "bar",
+        "dataset": "statuses",
+        "sourceId": "status_query",
+        "valueFormat": "number",
+        "encodings": {
+          "x": { "field": "status", "type": "nominal", "label": "Estado" },
+          "y": { "field": "checks", "type": "quantitative", "label": "Controles" }
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "gate_summary",
+        "title": "Estado por carril de control",
+        "subtitle": "Un control no bloqueante es evidencia documental; no equivale a conformidad del producto.",
+        "dataset": "lanes",
+        "sourceId": "lane_query",
+        "defaultSort": { "field": "lane", "direction": "asc" },
+        "density": "dense",
+        "layout": "full",
+        "columns": [
+          { "field": "lane", "label": "Carril", "type": "text" },
+          { "field": "checks", "label": "Controles", "type": "number" },
+          { "field": "nonBlocking", "label": "No bloqueantes", "type": "number" },
+          { "field": "blocking", "label": "Bloqueantes", "type": "number" },
+          { "field": "pendingRuntime", "label": "Runtime", "type": "number" },
+          { "field": "implication", "label": "Implicación", "type": "text" }
+        ]
+      },
+      {
+        "id": "implementation_gate_coverage",
+        "title": "Cobertura de los doce requisitos del gate T12",
+        "subtitle": "Cobertura documental completa no significa que el requisito haya pasado en runtime.",
+        "dataset": "gateCoverage",
+        "sourceId": "gate_coverage_query",
+        "defaultSort": { "field": "gateId", "direction": "asc" },
+        "density": "dense",
+        "layout": "full",
+        "columns": [
+          { "field": "gateId", "label": "Gate", "type": "text" },
+          { "field": "requirement", "label": "Requisito", "type": "text" },
+          { "field": "currentEvidence", "label": "Evidencia actual", "type": "text" },
+          { "field": "remainingEvidence", "label": "Falta", "type": "text" },
+          { "field": "status", "label": "Estado", "type": "text" },
+          { "field": "owner", "label": "Responsable", "type": "text" }
+        ]
+      },
+      {
+        "id": "blank_contract",
+        "title": "Contrato exacto de los diez huecos",
+        "subtitle": "La respuesta futura deberá contener solo las letras faltantes y reconstruir la palabra canónica.",
+        "dataset": "blanks",
+        "sourceId": "blank_query",
+        "defaultSort": { "field": "blank", "direction": "asc" },
+        "density": "dense",
+        "layout": "full",
+        "columns": [
+          { "field": "blank", "label": "Hueco", "type": "text" },
+          { "field": "prefix", "label": "Prefijo visible", "type": "text" },
+          { "field": "missing", "label": "Letras faltantes", "type": "text" },
+          { "field": "canonical", "label": "Reconstrucción", "type": "text" },
+          { "field": "missingLength", "label": "Longitud", "type": "number" }
+        ]
+      },
+      {
+        "id": "human_gates",
+        "title": "Puertas humanas pendientes",
+        "subtitle": "Ningún agente puede completar ni inferir estas aprobaciones.",
+        "dataset": "humanGates",
+        "sourceId": "human_gate_query",
+        "defaultSort": { "field": "gate", "direction": "asc" },
+        "layout": "full",
+        "columns": [
+          { "field": "gate", "label": "Puerta", "type": "text" },
+          { "field": "status", "label": "Estado", "type": "text" },
+          { "field": "owner", "label": "Responsable", "type": "text" },
+          { "field": "impact", "label": "Impacto", "type": "text" }
+        ]
+      },
+      {
+        "id": "panel_verdicts",
+        "title": "Siete auditorías de esta rebanada documental",
+        "subtitle": "Los resultados se limitan al delta documental y conservan los bloqueos del producto.",
+        "dataset": "audits",
+        "sourceId": "audit_query",
+        "defaultSort": { "field": "order", "direction": "asc" },
+        "layout": "full",
+        "columns": [
+          { "field": "order", "label": "Orden", "type": "number" },
+          { "field": "lane", "label": "Auditoría", "type": "text" },
+          { "field": "documentaryVerdict", "label": "Delta documental", "type": "text" },
+          { "field": "finding", "label": "Hallazgo", "type": "text" },
+          { "field": "carriedBlocker", "label": "Bloqueo conservado", "type": "text" }
+        ]
+      }
+    ],
+    "sources": [
+      { "id": "readiness_matrix", "label": "Matriz T12 de preparación, 68 × 15", "path": "docs/toefl-2026-ctw-set1-readiness-2026-08-13.tsv" },
+      { "id": "gate_coverage", "label": "Cobertura de los 12 requisitos de implementación T12", "path": "docs/toefl-2026-ctw-set1-gate-coverage-2026-08-13.tsv" },
+      { "id": "publication_attestation", "label": "Acta de publicación pendiente de firmas", "path": "docs/toefl-2026-ctw-set1-publication-attestation-2026-08-13.md" },
+      { "id": "pilot_audit", "label": "Auditoría previa del piloto CTW", "path": "docs/toefl-2026-complete-the-words-pilot-audit-2026-08-09.md" },
+      { "id": "factual_rights_audit", "label": "Auditoría factual y de derechos del banco CTW", "path": "docs/toefl-2026-complete-the-words-factual-rights-audit-2026-08-09.tsv" },
+      { "id": "alignment_loop", "label": "Loop de alineación TOEFL iBT 2026", "path": "docs/toefl-2026-alignment-loop.md" },
+      { "id": "ets_reading", "label": "ETS — Reading section, Complete the Words", "path": "https://www.ets.org/toefl/test-takers/ibt/about/content/reading.html" },
+      { "id": "ets_specifications", "label": "ETS — TOEFL iBT Test Specifications 2026", "path": "https://www.ets.org/content/dam/ets-india/pdfs/toefl/toefl-ibt-test-specifications-2026.pdf" },
+      { "id": "ets_validity", "label": "ETS — Validity by Design", "path": "https://www.ets.org/content/ets-org/language-master/ko/home/toefl/institutions/blog/ibt-validity-by-design.html" }
+      ,
+      {
+        "id": "summary_query",
+        "label": "Resumen ejecutable de readiness T12",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "WITH r AS (SELECT * FROM read_csv_auto('docs/toefl-2026-ctw-set1-readiness-2026-08-13.tsv', delim='\\t', header=true, all_varchar=true))\nSELECT count(*) AS checks, count(*) FILTER (WHERE blocking = 'no') AS nonBlocking, count(*) FILTER (WHERE blocking = 'yes') AS blocking, count(*) FILTER (WHERE evidence_status = 'pending_runtime') AS pendingRuntime, count(*) FILTER (WHERE lane = 'answer_contract') AS blanks, count(*) FILTER (WHERE lane = 'answer_contract' AND expected_observation LIKE 'reconstructs_%') AS exactReconstructions FROM r;",
+          "description": "Conteos headline de la matriz fijada.",
+          "executed_at": "2026-08-13T19:37:30-05:00",
+          "tables_used": ["docs/toefl-2026-ctw-set1-readiness-2026-08-13.tsv"],
+          "filters": ["Ninguno; se incluyen los 68 controles."],
+          "metric_definitions": ["nonBlocking = blocking='no'", "pendingRuntime = evidence_status='pending_runtime'", "exactReconstructions = filas answer_contract con expected_observation reconstructs_*"]
+        }
+      },
+      {
+        "id": "status_query",
+        "label": "Estados de evidencia T12",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT evidence_status AS status, count(*) AS checks, count(*) FILTER (WHERE blocking = 'yes') AS blockingChecks, string_agg(DISTINCT owner, ', ' ORDER BY owner) AS owners FROM read_csv_auto('docs/toefl-2026-ctw-set1-readiness-2026-08-13.tsv', delim='\\t', header=true, all_varchar=true) GROUP BY evidence_status ORDER BY checks DESC, status;",
+          "description": "Distribución de estados con contexto adicional de bloqueos y responsables.",
+          "executed_at": "2026-08-13T19:37:30-05:00",
+          "tables_used": ["docs/toefl-2026-ctw-set1-readiness-2026-08-13.tsv"],
+          "filters": ["Ninguno."],
+          "metric_definitions": ["checks = número de controles por evidence_status", "blockingChecks = controles del estado con blocking='yes'"]
+        }
+      },
+      {
+        "id": "lane_query",
+        "label": "Resumen por carril T12",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT lane, count(*) AS checks, count(*) FILTER (WHERE blocking = 'no') AS nonBlocking, count(*) FILTER (WHERE blocking = 'yes') AS blocking, count(*) FILTER (WHERE evidence_status = 'pending_runtime') AS pendingRuntime FROM read_csv_auto('docs/toefl-2026-ctw-set1-readiness-2026-08-13.tsv', delim='\\t', header=true, all_varchar=true) GROUP BY lane ORDER BY lane;",
+          "description": "Controles, bloqueos y dependencia de runtime por carril.",
+          "executed_at": "2026-08-13T19:37:30-05:00",
+          "tables_used": ["docs/toefl-2026-ctw-set1-readiness-2026-08-13.tsv"],
+          "filters": ["Ninguno."],
+          "metric_definitions": ["nonBlocking = blocking='no'", "blocking = blocking='yes'", "pendingRuntime = evidence_status='pending_runtime'"]
+        }
+      },
+      {
+        "id": "gate_coverage_query",
+        "label": "Cobertura ejecutable de los doce requisitos T12",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT gate_id AS gateId, gate_requirement AS requirement, current_evidence AS currentEvidence, remaining_evidence AS remainingEvidence, status, owner FROM read_csv_auto('docs/toefl-2026-ctw-set1-gate-coverage-2026-08-13.tsv', delim='\\t', header=true, all_varchar=true) ORDER BY gate_id;",
+          "description": "Mapea cada requisito numerado del gate de implementación con evidencia actual y pendiente.",
+          "executed_at": "2026-08-13T19:37:30-05:00",
+          "tables_used": ["docs/toefl-2026-ctw-set1-gate-coverage-2026-08-13.tsv"],
+          "filters": ["Ninguno; se incluyen los 12 requisitos."],
+          "metric_definitions": ["status describe la evidencia que aún falta y no un pase del producto"]
+        }
+      },
+      {
+        "id": "blank_query",
+        "label": "Contrato ejecutable de huecos T12",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT replace(blank_id, 'item:t1-r-cw2-v3:', '') AS blank, replace(precondition, 'blank_rendered_with_prefix_', '') AS prefix, replace(action_or_input, 'input_', '') AS missing, replace(expected_observation, 'reconstructs_', '') AS canonical, length(replace(action_or_input, 'input_', '')) AS missingLength FROM read_csv_auto('docs/toefl-2026-ctw-set1-readiness-2026-08-13.tsv', delim='\\t', header=true, all_varchar=true) WHERE lane = 'answer_contract' ORDER BY blank_id;",
+          "description": "Reconstruye las columnas canónicas de los diez huecos.",
+          "executed_at": "2026-08-13T19:37:30-05:00",
+          "tables_used": ["docs/toefl-2026-ctw-set1-readiness-2026-08-13.tsv"],
+          "filters": ["lane='answer_contract'"],
+          "metric_definitions": ["missingLength = número de letras que el estudiante debe escribir"]
+        }
+      },
+      {
+        "id": "human_gate_query",
+        "label": "Puertas humanas pendientes T12",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT check_id AS gateId, evidence_status AS status, owner, notes AS impact FROM read_csv_auto('docs/toefl-2026-ctw-set1-readiness-2026-08-13.tsv', delim='\\t', header=true, all_varchar=true) WHERE evidence_status IN ('pending_independent_review', 'pending_owner_signature', 'pending_independent_signature') ORDER BY check_id;",
+          "description": "Tres controles que requieren revisión o firma humana.",
+          "executed_at": "2026-08-13T19:37:30-05:00",
+          "tables_used": ["docs/toefl-2026-ctw-set1-readiness-2026-08-13.tsv", "docs/toefl-2026-ctw-set1-publication-attestation-2026-08-13.md"],
+          "filters": ["Solo los tres estados humanos pendientes."],
+          "metric_definitions": ["signaturesRecorded = 0 según el acta", "signaturesRequired = 2 según el acta"]
+        }
+      },
+      {
+        "id": "audit_query",
+        "label": "Panel de siete auditorías de la rebanada documental",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT * FROM (VALUES (1, 'Full-stack, datos y repositorio', 'PASS documental'), (2, 'TOEFL', 'PASS de especificación'), (3, 'Editorial y factual', 'PASS limitado'), (4, 'Audio', 'DIFERIDO'), (5, 'Derechos, sesgo y leakage', 'BLOCKED'), (6, 'UI/UX y accesibilidad', 'NO APLICABLE AL DELTA'), (7, 'Playwright', 'NO REEJECUTADO')) AS t(\"order\", lane, documentaryVerdict) ORDER BY \"order\";",
+          "description": "Orden y veredicto delta del panel exigido por el loop.",
+          "executed_at": "2026-08-13T19:37:30-05:00",
+          "tables_used": ["docs/toefl-2026-alignment-loop.md", "docs/toefl-2026-ctw-set1-readiness-2026-08-13.tsv"],
+          "filters": ["Solo la rebanada documental T12 del 13 de agosto de 2026."],
+          "metric_definitions": ["documentaryVerdict describe el delta documental y no la conformidad del producto"]
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "id": "title",
+        "type": "markdown",
+        "body": "# TOEFL iBT 2026 — readiness de Complete the Words, Set 1"
+      },
+      {
+        "id": "technical_summary",
+        "type": "markdown",
+        "sourceId": "readiness_matrix",
+        "body": "## Resumen técnico\n\n**T12 sigue abierto y no es publicable.** La rebanada documental define 68 controles reproducibles: 11 no bloqueantes y 57 bloqueantes. De estos, 52 requieren un cambio futuro del runtime o de su preparación, que no fue autorizado en esta fase. La ampliación cubre persistencia e idempotencia, seguridad y leakage, corrección de la ruta pública y metadata, preferencias de accesibilidad y una base de implementación obligatoriamente creada desde `main` canónico actualizado. La pieza candidata tiene 76 palabras, una primera oración intacta y diez huecos; el runtime actual todavía usa seis huecos y compara contra palabras completas.\n\nLos audios quedan fuera de alcance y se conservan sin cambios."
+      },
+      {
+        "id": "metrics",
+        "type": "metric-strip",
+        "cardIds": ["scope", "blockers", "answer_contract", "signatures"]
+      },
+      {
+        "id": "key_findings",
+        "type": "markdown",
+        "sourceId": "readiness_matrix",
+        "body": "## Hallazgos principales\n\n1. El contrato de respuesta está cerrado documentalmente para diez huecos: prefijo visible + letras faltantes = palabra canónica.\n2. Los doce requisitos de implementación del piloto tienen ahora cobertura explícita; ninguno pasa todavía como gate de producto.\n3. La huella antigua del catálogo SEO compartido no es reproducible en el estado actual. Se reemplaza como baseline T12 por la huella dirigida del objeto CTW `109ff1a0…3454e6`, mientras cuatro fuentes TOEFL específicas conservan sus hashes.\n4. Persistencia, doble cierre, filtrado de claves, logs, reclasificación de los 16 MCQ, metadata y preferencias de accesibilidad ya no quedan implícitos.\n5. Derechos y aprobación editorial permanecen fail-closed: 0 de 2 firmas y una revisión independiente pendientes. T13 no es elegible."
+      },
+      {
+        "id": "status_chart",
+        "type": "chart",
+        "chartId": "evidence_status",
+        "layout": "full"
+      },
+      {
+        "id": "gate_table",
+        "type": "table",
+        "tableId": "gate_summary",
+        "layout": "full"
+      },
+      {
+        "id": "implementation_coverage_context",
+        "type": "markdown",
+        "sourceId": "gate_coverage",
+        "body": "## Cobertura del gate de implementación\n\nLa segunda pasada encontró que la primera matriz no convertía en controles explícitos tres familias exigidas por el propio piloto: persistencia/idempotencia, corrección coherente de la ruta pública y protección frente a filtrado de claves. La matriz ampliada añade esos criterios y mapea los doce requisitos numerados sin declararlos aprobados."
+      },
+      {
+        "id": "implementation_coverage_table",
+        "type": "table",
+        "tableId": "implementation_gate_coverage",
+        "layout": "full"
+      },
+      {
+        "id": "scope_definitions",
+        "type": "markdown",
+        "sourceId": "pilot_audit",
+        "body": "## Alcance, datos y definiciones\n\nObjeto candidato: `object:t1-r-cw2-v3`. Alcance: preparación de datos, reglas de corrección, normalización, accesibilidad futura, evidencia oficial y autorización de publicación del primer Complete the Words de Set 1.\n\n`No bloqueante` significa que la evidencia documental observada es suficiente para ese control aislado. `Bloqueante` significa que T12 no puede cerrarse mientras el control siga pendiente. Ninguna marca documental se interpreta como validación funcional del producto."
+      },
+      {
+        "id": "blank_table",
+        "type": "table",
+        "tableId": "blank_contract",
+        "layout": "full"
+      },
+      {
+        "id": "human_table",
+        "type": "table",
+        "tableId": "human_gates",
+        "layout": "full"
+      },
+      {
+        "id": "methodology",
+        "type": "markdown",
+        "sourceId": "alignment_loop",
+        "body": "## Metodología\n\nSe fijaron los archivos y textos por SHA-256; se reconciliaron las diez reconstrucciones; se contrastó la pieza con la descripción y las especificaciones de ETS vigentes el 13 de agosto de 2026; se separaron comprobaciones documentales, futuras pruebas unitarias y futuras pruebas de interfaz; y se mantuvieron explícitos los responsables y las firmas humanas. Finalmente se recorrieron en orden las siete auditorías exigidas por el loop."
+      },
+      {
+        "id": "audit_table",
+        "type": "table",
+        "tableId": "panel_verdicts",
+        "layout": "full"
+      },
+      {
+        "id": "limitations",
+        "type": "markdown",
+        "sourceId": "publication_attestation",
+        "body": "## Limitaciones, incertidumbre y robustez\n\nNo se escribió código, no se ejecutó un nuevo flujo de estudiante y no se modificaron ni analizaron audios. Las revisiones editoriales del agente no sustituyen las firmas del propietario y del revisor independiente. La búsqueda previa de similitud fue dirigida y no exhaustiva, por lo que no prueba originalidad ni licencia. No existen datos de estudiantes para estimar dificultad, DIF, accesibilidad observada o transferencia.\n\nEl gráfico resume conteos nominales porque el formato portable exige una visualización; no debe leerse como una escala de severidad. Las tablas son la evidencia canónica para el estado, responsable e impacto exactos de cada puerta."
+      },
+      {
+        "id": "next_steps",
+        "type": "markdown",
+        "sourceId": "readiness_matrix",
+        "body": "## Próximos pasos recomendados\n\n1. Obtener autorización explícita para implementar solo T12.\n2. Crear una rama nueva desde `main` canónico actualizado e importar únicamente la evidencia TOEFL; el worktree archivado no es base de integración.\n3. Implementar el contrato de letras faltantes y los diez huecos sin tocar otras unidades.\n4. Ejecutar los 52 controles pendientes de runtime/preparación: datos, normalización, outcomes, persistencia, idempotencia, seguridad, ruta/metadata y accesibilidad.\n5. Realizar revisión TOEFL independiente y registrar ambas firmas humanas.\n6. Repetir las siete auditorías y cerrar T12 únicamente si quedan 0 bloqueantes en los 12 requisitos.\n7. Mantener T13 y todos los audios fuera de alcance hasta entonces."
+      },
+      {
+        "id": "further_questions",
+        "type": "markdown",
+        "body": "## Preguntas para la decisión futura\n\n- ¿Se autoriza una rebanada de implementación limitada a `object:t1-r-cw2-v3`?\n- ¿Quién firma como propietario editorial y quién como revisor independiente?\n- ¿El primer despliegue será entrenamiento guiado, práctica o simulacro? Esa decisión cambia la exposición de respuestas, feedback y persistencia."
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-08-13T19:37:30-05:00",
+    "status": "ready",
+    "datasets": {
+      "summary": [
+        {
+          "checks": 68,
+          "nonBlocking": 11,
+          "blocking": 57,
+          "pendingRuntime": 52,
+          "blanks": 10,
+          "exactReconstructions": 10,
+          "signaturesRecorded": 0,
+          "signaturesRequired": 2
+        }
+      ],
+      "statuses": [
+        { "status": "pending_runtime", "checks": 52 },
+        { "status": "verified_2026-08-13", "checks": 12 },
+        { "status": "verified_limited_scope_2026-08-09", "checks": 1 },
+        { "status": "pending_independent_review", "checks": 1 },
+        { "status": "pending_owner_signature", "checks": 1 },
+        { "status": "pending_independent_signature", "checks": 1 }
+      ],
+      "lanes": [
+        { "lane": "answer_contract", "checks": 10, "nonBlocking": 0, "blocking": 10, "pendingRuntime": 10, "implication": "Contrato definido; falta probarlo en runtime." },
+        { "lane": "data_identity", "checks": 7, "nonBlocking": 6, "blocking": 1, "pendingRuntime": 1, "implication": "Objeto y candidato fijados; falta conciliar el hash implementado." },
+        { "lane": "factual", "checks": 1, "nonBlocking": 1, "blocking": 0, "pendingRuntime": 0, "implication": "Dos cambios respaldados; revisión humana aún separada." },
+        { "lane": "normalization", "checks": 9, "nonBlocking": 0, "blocking": 9, "pendingRuntime": 9, "implication": "Política definida; falta implementación y pruebas." },
+        { "lane": "persistence", "checks": 5, "nonBlocking": 0, "blocking": 5, "pendingRuntime": 5, "implication": "Faltan navegación, recarga, idempotencia, intentos y alcance local." },
+        { "lane": "reporting", "checks": 1, "nonBlocking": 0, "blocking": 1, "pendingRuntime": 1, "implication": "Falta desglose por hueco." },
+        { "lane": "repository", "checks": 6, "nonBlocking": 3, "blocking": 3, "pendingRuntime": 2, "implication": "Scope aislado y baseline dirigido; falta rama fresca de main, autorización y diff final." },
+        { "lane": "rights", "checks": 3, "nonBlocking": 0, "blocking": 3, "pendingRuntime": 0, "implication": "Firmas y autorización pendientes." },
+        { "lane": "scoring", "checks": 7, "nonBlocking": 0, "blocking": 7, "pendingRuntime": 7, "implication": "Falta comprobar puntos, vacíos, invalidación y fallos de configuración." },
+        { "lane": "security", "checks": 2, "nonBlocking": 0, "blocking": 2, "pendingRuntime": 2, "implication": "Falta evitar claves en cliente y respuestas en logs." },
+        { "lane": "surface_claim", "checks": 5, "nonBlocking": 0, "blocking": 5, "pendingRuntime": 5, "implication": "Falta corregir ruta, preservar MCQ, disclosure y metadata." },
+        { "lane": "toefl_fidelity", "checks": 2, "nonBlocking": 1, "blocking": 1, "pendingRuntime": 0, "implication": "Especificación contrastada; revisión independiente pendiente." },
+        { "lane": "ui_accessibility", "checks": 10, "nonBlocking": 0, "blocking": 10, "pendingRuntime": 10, "implication": "Faltan labels, límites, foco, lector de pantalla y preferencias." }
+      ],
+      "gateCoverage": [
+        { "gateId": "T12-GATE-01", "requirement": "Render 76 palabras, primera oración intacta y 10 huecos en posiciones 2–20", "currentEvidence": "Candidata, posiciones y hashes fijados", "remainingEvidence": "Render y E2E", "status": "pending_runtime", "owner": "engineering" },
+        { "gateId": "T12-GATE-02", "requirement": "10 IDs únicos y outcomes reconciliados", "currentEvidence": "Diez IDs candidatos definidos", "remainingEvidence": "Pruebas unitarias, integración y E2E", "status": "pending_runtime", "owner": "engineering" },
+        { "gateId": "T12-GATE-03", "requirement": "Letras faltantes obtienen 10/10; palabras completas nunca 10/10", "currentEvidence": "Contrato exacto definido", "remainingEvidence": "Pruebas del scorer", "status": "pending_runtime", "owner": "engineering" },
+        { "gateId": "T12-GATE-04", "requirement": "Normalización explícita y fail-closed", "currentEvidence": "Política de nueve casos definida", "remainingEvidence": "Pruebas unitarias y E2E", "status": "pending_runtime", "owner": "engineering" },
+        { "gateId": "T12-GATE-05", "requirement": "Reload, Back/Next y doble cierre preservan estado e idempotencia", "currentEvidence": "Contratos T10/T11 cerrados", "remainingEvidence": "Persistencia, navegación e idempotencia", "status": "pending_runtime", "owner": "engineering" },
+        { "gateId": "T12-GATE-06", "requirement": "Teclado, nombres, errores, foco, reflow, lector, zoom y preferencias", "currentEvidence": "Contrato de accesibilidad definido", "remainingEvidence": "E2E y revisión humana independiente", "status": "pending_runtime_and_human", "owner": "accessibility_reviewer" },
+        { "gateId": "T12-GATE-07", "requirement": "Resultado local parcial WeLearn sin escala oficial", "currentEvidence": "Disclosure y privacidad definidos", "remainingEvidence": "Copy, payload y logs en runtime", "status": "pending_runtime", "owner": "product" },
+        { "gateId": "T12-GATE-08", "requirement": "Hashes de fuente, derivación, contrato e implementación versionados", "currentEvidence": "Candidata y superficie dirigida fijadas", "remainingEvidence": "Rama fresca de main, manifiesto y diff postimplementación", "status": "pending_runtime", "owner": "repository_reviewer" },
+        { "gateId": "T12-GATE-09", "requirement": "Procedencia, derechos y revisión editorial independiente", "currentEvidence": "Fuentes factuales y acta fail-closed", "remainingEvidence": "Owner, revisión independiente y 2/2 firmas", "status": "pending_human", "owner": "content_owner" },
+        { "gateId": "T12-GATE-10", "requirement": "Ningún cambio de audio, manifiesto o pipeline", "currentEvidence": "Diff documental sin audio", "remainingEvidence": "Repetir diff después de implementación", "status": "pending_final_diff", "owner": "audio_reviewer" },
+        { "gateId": "T12-GATE-11", "requirement": "Ruta pública CTW real y 16 MCQ preservados como práctica A", "currentEvidence": "Inventario legado y defecto fijados", "remainingEvidence": "Reclasificación, render y E2E", "status": "pending_runtime", "owner": "product" },
+        { "gateId": "T12-GATE-12", "requirement": "Título, metadata, FAQ, JSON-LD, copy e interacción coherentes", "currentEvidence": "Huella dirigida y claim defectuoso fijados", "remainingEvidence": "Asserts estáticos y navegador", "status": "pending_runtime", "owner": "product" }
+      ],
+      "blanks": [
+        { "blank": "blank-01", "prefix": "prov", "missing": "ides", "canonical": "provides", "missingLength": 4 },
+        { "blank": "blank-02", "prefix": "li", "missing": "ght", "canonical": "light", "missingLength": 3 },
+        { "blank": "blank-03", "prefix": "he", "missing": "at", "canonical": "heat", "missingLength": 2 },
+        { "blank": "blank-04", "prefix": "ma", "missing": "ke", "canonical": "make", "missingLength": 2 },
+        { "blank": "blank-05", "prefix": "o", "missing": "n", "canonical": "on", "missingLength": 1 },
+        { "blank": "blank-06", "prefix": "poss", "missing": "ible", "canonical": "possible", "missingLength": 4 },
+        { "blank": "blank-07", "prefix": "ins", "missing": "ide", "canonical": "inside", "missingLength": 3 },
+        { "blank": "blank-08", "prefix": "s", "missing": "un", "canonical": "sun", "missingLength": 2 },
+        { "blank": "blank-09", "prefix": "pro", "missing": "cess", "canonical": "process", "missingLength": 4 },
+        { "blank": "blank-10", "prefix": "nuc", "missing": "lear", "canonical": "nuclear", "missingLength": 4 }
+      ],
+      "humanGates": [
+        { "gate": "Revisión TOEFL independiente", "status": "pending_independent_review", "owner": "TOEFL reviewer", "impact": "Bloquea certificación de fidelidad." },
+        { "gate": "Firma del propietario editorial", "status": "pending_owner_signature", "owner": "Content owner", "impact": "Bloquea autorización de publicación." },
+        { "gate": "Firma del revisor independiente", "status": "pending_independent_signature", "owner": "Independent reviewer", "impact": "Bloquea autorización de publicación." }
+      ],
+      "audits": [
+        { "order": 1, "lane": "Full-stack, datos y repositorio", "documentaryVerdict": "PASS documental", "finding": "68 × 15 y cobertura 12 × 10 válidas; IDs únicos; diez reconstrucciones exactas; delta solo documental.", "carriedBlocker": "Implementación no autorizada; worktree archivado no integrable; runtime actual no conforme." },
+        { "order": 2, "lane": "TOEFL", "documentaryVerdict": "PASS de especificación", "finding": "76 palabras, primera oración intacta y diez huecos coherentes con ETS.", "carriedBlocker": "Falta revisión independiente y el runtime actual conserva seis huecos." },
+        { "order": 3, "lane": "Editorial y factual", "documentaryVerdict": "PASS limitado", "finding": "Los cambios `plasma` y supervivencia limitada tienen respaldo institucional.", "carriedBlocker": "No hay firma editorial humana." },
+        { "order": 4, "lane": "Audio", "documentaryVerdict": "DIFERIDO", "finding": "Ningún audio está en el alcance de Complete the Words ni fue tocado.", "carriedBlocker": "La auditoría de audios se hará al final, por instrucción del propietario." },
+        { "order": 5, "lane": "Derechos, sesgo y leakage", "documentaryVerdict": "BLOCKED", "finding": "La revisión previa de similitud es limitada y no prueba derechos; no hay datos de estudiantes.", "carriedBlocker": "0/2 firmas y derechos sin autorización humana." },
+        { "order": 6, "lane": "UI/UX y accesibilidad", "documentaryVerdict": "NO APLICABLE AL DELTA", "finding": "Diez controles futuros definen labels, límites, foco, anuncios, lector de pantalla, modo oscuro y reduced motion.", "carriedBlocker": "No se modificó ni validó la interfaz del estudiante." },
+        { "order": 7, "lane": "Playwright", "documentaryVerdict": "NO REEJECUTADO", "finding": "No hubo cambio de DOM, estilos, navegación o interacción.", "carriedBlocker": "La conformidad end-to-end se repite solo tras implementación autorizada." }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "readiness_matrix", "label": "Matriz T12 de preparación, 68 × 15", "path": "docs/toefl-2026-ctw-set1-readiness-2026-08-13.tsv" },
+    { "id": "gate_coverage", "label": "Cobertura de los 12 requisitos de implementación T12", "path": "docs/toefl-2026-ctw-set1-gate-coverage-2026-08-13.tsv" },
+    { "id": "publication_attestation", "label": "Acta de publicación pendiente de firmas", "path": "docs/toefl-2026-ctw-set1-publication-attestation-2026-08-13.md" },
+    { "id": "pilot_audit", "label": "Auditoría previa del piloto CTW", "path": "docs/toefl-2026-complete-the-words-pilot-audit-2026-08-09.md" },
+    { "id": "factual_rights_audit", "label": "Auditoría factual y de derechos del banco CTW", "path": "docs/toefl-2026-complete-the-words-factual-rights-audit-2026-08-09.tsv" },
+    { "id": "alignment_loop", "label": "Loop de alineación TOEFL iBT 2026", "path": "docs/toefl-2026-alignment-loop.md" },
+    { "id": "ets_reading", "label": "ETS — Reading section, Complete the Words", "path": "https://www.ets.org/toefl/test-takers/ibt/about/content/reading.html" },
+    { "id": "ets_specifications", "label": "ETS — TOEFL iBT Test Specifications 2026", "path": "https://www.ets.org/content/dam/ets-india/pdfs/toefl/toefl-ibt-test-specifications-2026.pdf" },
+    { "id": "ets_validity", "label": "ETS — Validity by Design", "path": "https://www.ets.org/content/ets-org/language-master/ko/home/toefl/institutions/blog/ibt-validity-by-design.html" }
+  ]
+}

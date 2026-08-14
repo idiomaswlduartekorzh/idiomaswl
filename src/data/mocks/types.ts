@@ -11,7 +11,9 @@ export type QuestionType =
   // TOEFL iBT 2026 task types
   | 'wordcomplete'
   | 'sentencebuild'
-  | 'repeat';
+  | 'repeat'
+  | 'toefl-reading-single'
+  | 'toefl-reading-multi';
 
 // ── Existing types ────────────────────────────────────────────────────────────
 
@@ -50,6 +52,9 @@ export interface WriteQuestion {
   imageAlt?: string;
   text: string;
   minWords: number;
+  timeLimitSeconds?: 420 | 600;
+  minimumWordsPolicy?: 'none-published' | 'recommended-100';
+  evaluationDisclosure?: string;
 }
 
 export interface SpeakQuestion {
@@ -113,6 +118,31 @@ export interface MultiSelectQuestion {
   answers: string[];   // correct letters, e.g. ['A', 'C']
 }
 
+export interface ToeflReadingSingleQuestion {
+  type: 'toefl-reading-single';
+  id: string;
+  sourceItemId: string;
+  contentVersion: string;
+  serverScoring: 'toefl-reading-set1';
+  alignment: 'official-family-pilot';
+  part: number;
+  text: string;
+  options: { id: string; label: string; text: string }[];
+}
+
+export interface ToeflReadingMultiQuestion {
+  type: 'toefl-reading-multi';
+  id: string;
+  sourceItemId: string;
+  contentVersion: string;
+  serverScoring: 'toefl-reading-set1';
+  alignment: 'welearn-supplementary';
+  part: number;
+  text: string;
+  options: { id: string; label: string; text: string }[];
+  selectCount: number;
+}
+
 // Each item has a question number and matches to one of the lettered endings.
 export interface MatchingItem {
   num: number;
@@ -135,10 +165,12 @@ export interface MatchingGroupQuestion {
 // Complete the Words (Reading). A short text/sentence with word gaps that already
 // show some given letters; the test-taker completes each word. Machine scored.
 export interface WordCompleteBlank {
+  id?: string;       // stable response identity; required for server-scored assessment items
   num: number;
   prefix?: string;   // letters shown before the gap, e.g. "lib" for "library"
   suffix?: string;   // letters shown after the gap (rare)
-  answer: string;    // the full word (case-insensitive exact match)
+  missingLength?: number; // number of letters the learner must enter
+  answer?: string;   // legacy local-practice key; omit from server-scored assessment payloads
 }
 
 export interface WordCompleteQuestion {
@@ -160,6 +192,23 @@ export interface SentenceBuildQuestion {
   prompt?: string;   // optional context/instruction shown above the tiles
   tiles: string[];   // words/chunks shown in scrambled order
   answer: string[];  // correct ordering (a permutation of tiles)
+}
+
+// TOEFL iBT 2026 Build a Sentence. The public payload contains stable tile IDs,
+// context and fixed reply text, but never the answer key.
+export interface ToeflBuildSentenceQuestion {
+  type: 'toefl-build-sentence';
+  id: string;
+  sourceItemId?: string;
+  contentVersion: string;
+  serverScoring: 'toefl-build-sentence-set1';
+  alignment: 'official-family-pilot';
+  part: number;
+  context: string;
+  replyPrefix: string;
+  replySuffix: string;
+  tiles: Array<{ id: string; text: string }>;
+  blankCount: number;
 }
 
 // Listen and Repeat (Speaking). An audio-prompt of a sentence the test-taker
@@ -184,7 +233,10 @@ export type Question =
   | MatchingGroupQuestion
   | WordCompleteQuestion
   | SentenceBuildQuestion
-  | RepeatQuestion;
+  | ToeflBuildSentenceQuestion
+  | RepeatQuestion
+  | ToeflReadingSingleQuestion
+  | ToeflReadingMultiQuestion;
 
 // ── Section & exam ────────────────────────────────────────────────────────────
 

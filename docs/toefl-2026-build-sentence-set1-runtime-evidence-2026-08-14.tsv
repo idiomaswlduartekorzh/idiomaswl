@@ -1,0 +1,44 @@
+check_id	verdict	evidence	blocking	remaining_action
+T16-DATA-001	verified_2026-08-14	Set 1 contains exactly ten Build a Sentence items	no	none
+T16-DATA-002	verified_2026-08-14	ten unique stable item identities and unique tile identities	no	none
+T16-DATA-003	verified_2026-08-14	each item has one contextual intact utterance	no	none
+T16-DATA-004	verified_2026-08-14	each reply has fixed prefix and suffix	no	none
+T16-DATA-005	verified_2026-08-14	each item has three or four scored positions and one distractor	no	none
+T16-DATA-006	verified_2026-08-14	no public object contains answer or acceptedOrders	no	none
+T16-DATA-007	verified_2026-08-14	legacy six-item source is preserved server-side	no	none
+T16-TOEFL-001	verified_2026-08-14	ETS specification assigns ten machine-scored Build items	no	none
+T16-TOEFL-002	verified_2026-08-14	ETS current Writing total is twelve items and twenty-three minutes	no	none
+T16-TOEFL-003	verified_2026-08-14	items use intact context plus contextually appropriate reply reconstruction	no	none
+T16-TOEFL-004	verified_2026-08-14	one unused distractor and fixed reply text reproduce the official sample grammar	no	none
+T16-TOEFL-005	accepted_owner_waiver_2026-08-14	owner waived second-person TOEFL editorial review; no independence claimed	no	none
+T16-EDIT-001	verified_2026-08-14	all canonical replies are grammatical and contextually appropriate	no	none
+T16-EDIT-002	verified_2026-08-14	distractors target agreement tense or connector choice without absurdity	no	none
+T16-EDIT-003	verified_2026-08-14	items span simple through complex sentence structures	no	none
+T16-RIGHTS-001	accepted_owner_attestation_2026-08-14	Jose David Duarte Silva states WeLearn creation and rights	no	none
+T16-RIGHTS-002	accepted_owner_risk_2026-08-14	four exact-phrase public searches found no exact queried sentence	no	none
+T16-SCORE-001	verified_2026-08-14	all canonical orders reconcile to ten of ten	no	none
+T16-SCORE-002	verified_2026-08-14	wrong order scores zero and remains in denominator	no	none
+T16-SCORE-003	verified_2026-08-14	incomplete order receives zero unanswered outcome	no	none
+T16-SCORE-004	verified_2026-08-14	unknown tile invalidates and leaves denominator	no	none
+T16-SCORE-005	verified_2026-08-14	duplicate tile invalidates and leaves denominator	no	none
+T16-SCORE-006	verified_2026-08-14	not-presented items reconcile and leave denominator	no	none
+T16-SCORE-007	verified_2026-08-14	impossible configuration fails closed	no	none
+T16-SCORE-008	verified_2026-08-14	repeated close is deterministic	no	none
+T16-SEC-001	verified_2026-08-14	answer key imports server-only	no	none
+T16-SEC-002	verified_2026-08-14	public mock and practice never import private key	no	none
+T16-SEC-003	verified_2026-08-14	route validates object attempt close responses and presented IDs	no	none
+T16-SURFACE-001	verified_2026-08-14	public route renders the ten-item pilot	no	none
+T16-SURFACE-002	verified_2026-08-14	Set 1 renders the same ten-item object	no	none
+T16-SURFACE-003	verified_2026-08-14	legacy workbench remains separately labeled WeLearn supplement	no	none
+T16-PERSIST-001	verified_2026-08-14	public attempt order result and focus restore after reload	no	none
+T16-PERSIST-002	verified_2026-08-14	mock order and placed-fragment focus restore after reload	no	none
+T16-PERSIST-003	verified_2026-08-14	technical failure preserves orders and creates no result	no	none
+T16-UI-001	verified_2026-08-14	native fieldset legend and buttons expose ten exchanges	no	none
+T16-UI-002	verified_2026-08-14	Tab and Enter can construct and remove a response	no	none
+T16-UI-003	verified_2026-08-14	live region announces add remove and clear actions	no	none
+T16-UI-004	verified_2026-08-14	focus follows placed fragment and returns to bank on removal	no	none
+T16-UI-005	verified_2026-08-14	320px mock has no page overflow	no	none
+T16-UI-006	verified_2026-08-14	Chromium production T12 T13 T16 passes fifteen of fifteen	no	none
+T16-UI-007	pending_owner_voiceover_2026-08-14	manual announcement and focus sequence not yet heard with VoiceOver	yes	owner runs short T16 VoiceOver checklist
+T16-REPO-001	verified_2026-08-14	zero mp3 transcript TTS ElevenLabs Whisper or audio pipeline changes	no	none
+T16-REPO-002	verified_2026-08-14	canonical-main-based branch passes full guardians TypeScript 1361-route build	no	none

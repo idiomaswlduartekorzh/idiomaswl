@@ -1,0 +1,69 @@
+check_id	verdict	evidence	blocking	remaining_action
+T12-DATA-001	verified_2026-08-14	server-only v2 source hash 591e04ee... preserved by check:toefl-ctw	no	none
+T12-DATA-002	verified_2026-08-14	candidate hash cebce239... reproduced by check:toefl-ctw	no	none
+T12-DATA-003	verified_2026-08-14	candidate reconstructs to 76 words	no	none
+T12-DATA-004	verified_2026-08-14	first sentence hash 484adf23... reproduced	no	none
+T12-DATA-005	verified_2026-08-14	10 stable unique blank ids in positions 2 through 20	no	none
+T12-DATA-006	verified_2026-08-14	10 of 10 prefix plus missing-letter reconstructions pass	no	none
+T12-DATA-007	verified_2026-08-14	implemented runtime candidate hash matches signed candidate	no	none
+T12-TOEFL-001	verified_2026-08-14	implementation matches the revalidated T12 missing-letter contract	no	none
+T12-TOEFL-002	accepted_owner_waiver_2026-08-14	owner explicitly waived the internal second-person TOEFL/editorial review; no independent review is claimed	no	none
+T12-BLANK-001	verified_2026-08-14	unit and Chromium missing letters ides	no	none
+T12-BLANK-002	verified_2026-08-14	unit and Chromium missing letters ght	no	none
+T12-BLANK-003	verified_2026-08-14	unit and Chromium missing letters at	no	none
+T12-BLANK-004	verified_2026-08-14	unit and Chromium missing letters ke	no	none
+T12-BLANK-005	verified_2026-08-14	unit and Chromium missing letters n	no	none
+T12-BLANK-006	verified_2026-08-14	unit and Chromium missing letters ible	no	none
+T12-BLANK-007	verified_2026-08-14	unit and Chromium missing letters ide	no	none
+T12-BLANK-008	verified_2026-08-14	unit and Chromium missing letters un	no	none
+T12-BLANK-009	verified_2026-08-14	unit and Chromium missing letters cess	no	none
+T12-BLANK-010	verified_2026-08-14	unit and Chromium missing letters lear	no	none
+T12-NORM-001	verified_2026-08-14	case-insensitive unit assertion passes	no	none
+T12-NORM-002	verified_2026-08-14	outer trim unit assertion passes	no	none
+T12-NORM-003	verified_2026-08-14	internal space rejected without cleanup	no	none
+T12-NORM-004	verified_2026-08-14	punctuation rejected without cleanup	no	none
+T12-NORM-005	verified_2026-08-14	digit rejected and retained visibly in Chromium	no	none
+T12-NORM-006	verified_2026-08-14	maxLength and server length validation agree	no	none
+T12-NORM-007	verified_2026-08-14	full words score 0 of 10 in unit test	no	none
+T12-NORM-008	verified_2026-08-14	empty input reconciles as unanswered	no	none
+T12-NORM-009	verified_2026-08-14	typing and paste share the same input validation path	no	none
+T12-SCORE-001	verified_2026-08-14	10 missing-letter answers score 10 of 10	no	none
+T12-SCORE-002	verified_2026-08-14	10 full words score 0 of 10	no	none
+T12-SCORE-003	verified_2026-08-14	8 correct 1 mismatch 1 unanswered reconciles 8 of 10	no	none
+T12-SCORE-004	verified_2026-08-14	not_presented remains visible and leaves denominator	no	none
+T12-SCORE-005	verified_2026-08-14	technical_failure leaves denominator and is not academic error	no	none
+T12-SCORE-006	verified_2026-08-14	public result shows local WeLearn fraction and nonofficial disclosure	no	none
+T12-SCORE-007	verified_2026-08-14	invalidated remains visible and leaves denominator	no	none
+T12-SCORE-008	verified_2026-08-14	impossible key configuration fails closed as invalidated	no	none
+T12-UI-001	verified_2026-08-14	Chromium finds exactly 10 text inputs in reading order	no	none
+T12-UI-002	verified_2026-08-14	10 unique accessible names include passage blank prefix and length	no	none
+T12-UI-003	verified_2026-08-14	maxLength spellcheck autocorrect autocapitalize autocomplete asserted	no	none
+T12-UI-004	verified_2026-08-14	Chromium tabs blank 1 through 10 without trap	no	none
+T12-UI-005	verified_2026-08-14	320 px and 200 percent equivalent zoom have no page overflow	no	none
+T12-UI-006	verified_2026-08-14	invalid and technical states use text and polite live regions	no	none
+T12-UI-007	verified_2026-08-14	no candidate answer or correctness appears before close	no	none
+T12-UI-008	verified_2026-08-14	last candidate focus restores after skill navigation and reload	no	none
+T12-UI-009	verified_owner_voiceover_2026-08-14	José David Duarte Silva completed the manual VoiceOver checklist and declared VoiceOver aprobado	no	none
+T12-UI-010	verified_2026-08-14	Chromium dark preference reduced motion focus and zoom checks pass	no	none
+T12-RIGHTS-001	verified_owner_signature_2026-08-13	José David Duarte Silva signed all owner declarations	no	none
+T12-RIGHTS-002	accepted_owner_attestation_2026-08-14	owner declares WeLearn created the document and owns its rights; second signature waived; no independent signature is claimed	no	none
+T12-RIGHTS-003	accepted_owner_risk_2026-08-14	four public exact-phrase queries found no complete candidate or complete queried phrase; common-fact near wording exists; owner accepts limits and provenance risk	no	none
+T12-FACT-001	verified_2026-08-14	NASA and NOAA factual support remains pinned	no	none
+T12-REPO-001	verified_2026-08-14	implementation stayed in isolated TOEFL worktree	no	none
+T12-REPO-002	verified_2026-08-14	zero mp3 transcript TTS ElevenLabs Whisper or product audio pipeline edits	no	none
+T12-REPO-003	verified_authorization_2026-08-13	owner explicitly granted free path to continue implementation	no	none
+T12-REPO-004	verified_2026-08-14	five start-of-branch hashes match the pinned canonical baseline	no	none
+T12-REPO-005	verified_2026-08-14	targeted diff preserves v2 source 16 legacy MCQ IELTS and product audio	no	none
+T12-REPO-006	verified_2026-08-14	branch fast-forwarded to canonical main 6219b375; practica catalog TOEFL check 7 unit tests TypeScript and full 1359-route build pass	no	none
+T12-PERSIST-001	verified_2026-08-14	Reading to Listening to Reading preserves values and focus	no	none
+T12-PERSIST-002	verified_2026-08-14	reload restores answers attempt and focus	no	none
+T12-PERSIST-003	verified_2026-08-14	deterministic close is idempotent and Chromium sends one score request	no	none
+T12-PERSIST-004	verified_2026-08-14	second attempt has new id and immutable first result in local history	no	none
+T12-PERSIST-005	verified_2026-08-14	UI discloses local-only storage and endpoint performs no persistence	no	none
+T12-SEC-001	verified_2026-08-14	private key exists only in server chunk and zero matching client static chunks	no	none
+T12-SEC-002	verified_2026-08-14	route and client log no raw response prompt key PII or secret	no	none
+T12-SURFACE-001	verified_2026-08-14	public CTW route primary interaction is 76-word 10-input candidate	no	none
+T12-SURFACE-002	verified_2026-08-14	all 16 legacy items remain on contextual word-selection route	no	none
+T12-SURFACE-003	verified_2026-08-14	initial public paint has no candidate key explanation or result	no	none
+T12-SURFACE-004	verified_2026-08-14	title metadata FAQ JSON-LD catalog and visible copy describe missing letters	no	none
+T12-SURFACE-005	verified_2026-08-14	entry and result disclose fixed partial WeLearn practice with no score equivalence	no	none

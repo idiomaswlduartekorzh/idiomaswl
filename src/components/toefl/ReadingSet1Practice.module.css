@@ -1,0 +1,139 @@
+.shell {
+  min-width: 0;
+  margin: 1.2rem 0;
+  padding: clamp(0.85rem, 2vw, 1.25rem);
+  border: 1px solid var(--line-soft);
+  border-radius: 18px;
+  background: var(--bg);
+}
+
+.header h2,
+.summary h3 {
+  margin: 0.25rem 0 0.55rem;
+  color: var(--ink);
+  line-height: 1.25;
+}
+
+.header > p:not(.eyebrow),
+.summary p,
+.actions p {
+  margin: 0.45rem 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.eyebrow,
+.genre {
+  margin: 0;
+  color: #1a4fcc;
+  font: 850 0.72rem/1.4 var(--mono, monospace);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.supplementaryNote {
+  padding: 0.65rem 0.75rem;
+  border-left: 3px solid #1a4fcc;
+  background: rgba(26, 79, 204, 0.06);
+}
+
+.blocks,
+.questions {
+  display: grid;
+  gap: 1rem;
+}
+
+.blocks {
+  margin-top: 1rem;
+}
+
+.block {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 1rem;
+  min-width: 0;
+}
+
+.stimulus {
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid var(--line-soft);
+  border-radius: 14px;
+  background: var(--bg-2);
+}
+
+.stimulus h3 {
+  margin: 0.25rem 0 0.4rem;
+  color: var(--ink);
+}
+
+.instructions {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.text {
+  overflow-wrap: anywhere;
+  white-space: pre-line;
+  color: var(--ink-2);
+  line-height: 1.75;
+}
+
+.technical,
+.summary,
+.actions {
+  margin-top: 1rem;
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+}
+
+.technical {
+  border: 1px solid #b42318;
+  background: rgba(180, 35, 24, 0.08);
+  color: #8a1c13;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.summary {
+  border: 1px solid #047857;
+  background: rgba(4, 120, 87, 0.07);
+}
+
+.disclosure {
+  font-size: 0.86rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--line-soft);
+  background: var(--bg-2);
+}
+
+@media (max-width: 760px) {
+  .block {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .shell {
+    padding: 0.65rem;
+  }
+
+  .actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shell * {
+    scroll-behavior: auto;
+  }
+}

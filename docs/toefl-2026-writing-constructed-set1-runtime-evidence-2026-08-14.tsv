@@ -1,0 +1,47 @@
+check_id	verdict	evidence	blocking	remaining_action
+T17-DATA-001	verified_2026-08-14	Set 1 contains exactly one Email and one Academic Discussion task	no	none
+T17-DATA-002	verified_2026-08-14	object and task identities are stable and content-versioned	no	none
+T17-DATA-003	verified_2026-08-14	public tasks contain no answer key or official score conversion	no	none
+T17-DATA-004	verified_2026-08-14	public pilots and Set 1 derive prompts and limits from one source	no	none
+T17-DATA-005	verified_2026-08-14	legacy workbenches remain preserved as separately labeled WeLearn supplements	no	none
+T17-TOEFL-001	verified_2026-08-14	current Writing family contains ten Build items plus Email and Discussion	no	none
+T17-TOEFL-002	verified_2026-08-14	Email task limit is seven minutes or 420 seconds	no	none
+T17-TOEFL-003	verified_2026-08-14	no official Email word minimum is invented	no	none
+T17-TOEFL-004	verified_2026-08-14	Academic Discussion task limit is ten minutes or 600 seconds	no	none
+T17-TOEFL-005	verified_2026-08-14	Academic Discussion preserves the recommended minimum of 100 words	no	none
+T17-TOEFL-006	verified_2026-08-14	spellcheck and autocorrect are unavailable on both task editors	no	none
+T17-EDIT-001	verified_2026-08-14	Email identifies audience purpose requests and polite tone	no	none
+T17-EDIT-002	verified_2026-08-14	Discussion includes professor question and two coherent student contributions	no	none
+T17-EDIT-003	verified_2026-08-14	Discussion can be answered without specialized outside knowledge	no	none
+T17-EDIT-004	verified_2026-08-14	local criteria separate completion development organization language conventions and task-specific fit	no	none
+T17-TIME-001	verified_2026-08-14	attempt begins only after explicit start action	no	none
+T17-TIME-002	verified_2026-08-14	remaining time derives from a wall-clock deadline rather than interval ticks	no	none
+T17-TIME-003	verified_2026-08-14	reload preserves elapsed time and the original deadline	no	none
+T17-TIME-004	verified_2026-08-14	past or invalid active deadlines fail closed as expired	no	none
+T17-TIME-005	verified_2026-08-14	reaching zero seals and disables the response	no	none
+T17-TIME-006	verified_2026-08-14	explicit submit seals and disables the response	no	none
+T17-TIME-007	verified_2026-08-14	ready and closed attempts never reopen during reconciliation	no	none
+T17-PERSIST-001	verified_2026-08-14	draft text survives reload in the same browser	no	none
+T17-PERSIST-002	verified_2026-08-14	attempt identity and deadline survive reload	no	none
+T17-PERSIST-003	verified_2026-08-14	textarea focus is restored for an active attempt	no	none
+T17-PERSIST-004	verified_2026-08-14	closed reason and local rubric checks persist	no	none
+T17-PERSIST-005	verified_2026-08-14	starting another attempt clears the previous local state intentionally	no	none
+T17-PRIV-001	verified_2026-08-14	pilot state is stored only in localStorage	no	none
+T17-PRIV-002	verified_2026-08-14	TimedWritingTask makes no fetch API or model call	no	none
+T17-PRIV-003	verified_2026-08-14	visible disclosure explains local-only retention and no server or AI submission	no	none
+T17-MOCK-001	verified_2026-08-14	Set 1 displays the official-family 7 and 10 minute references	no	none
+T17-MOCK-002	verified_2026-08-14	Set 1 no longer displays the invented Email range of 80 to 120 words	no	none
+T17-MOCK-003	verified_2026-08-14	Set 1 editors disable spellcheck	no	none
+T17-MOCK-004	verified_2026-08-14	constructed responses close as not_evaluated	no	none
+T17-MOCK-005	verified_2026-08-14	old one-to-six Writing self-band modal is absent	no	none
+T17-MOCK-006	verified_2026-08-14	constructed writing is excluded from the local total and full timer composition remains assigned to T23	no	none
+T17-UI-001	verified_2026-08-14	start submit retry and rubric controls are native labeled controls	no	none
+T17-UI-002	verified_2026-08-14	timer exposes an explicit timer role without announcing every tick	no	none
+T17-UI-003	verified_2026-08-14	expiry and sealed status use live regions	no	none
+T17-UI-004	verified_2026-08-14	focus-visible treatment remains visible for editors buttons and checkboxes	no	none
+T17-UI-005	verified_2026-08-14	320-pixel viewport has no horizontal page overflow	no	none
+T17-UI-006	verified_2026-08-14	reduced-motion preference suppresses nonessential motion	no	none
+T17-UI-007	pending_owner_voiceover_2026-08-14	manual announcements focus sequence and disabled state not yet heard with VoiceOver	yes	owner runs short T17 VoiceOver checklist
+T17-REPO-001	verified_2026-08-14	zero mp3 transcript TTS ElevenLabs Whisper or audio pipeline changes	no	none
+T17-REPO-002	verified_2026-08-14	branch fast-forwarded to current canonical main and restored without conflicts	no	none
+T17-REPO-003	verified_2026-08-14	official Turbopack build passes all guardians TypeScript and 1363 of 1363 pages; production Chromium regression passes 19 of 19	no	none
