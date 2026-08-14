@@ -5,6 +5,7 @@ import {
   validateMissingLetters,
 } from '../src/lib/toefl/complete-words-contract.ts';
 import { TOEFL_CTW_SETS_2_TO_5 } from '../src/data/toefl/complete-the-words-sets-2-5.ts';
+import { TOEFL_CTW_SETS_6_TO_10 } from '../src/data/toefl/complete-the-words-sets-6-10.ts';
 
 const missing = ['ides', 'ght', 'at', 'ke', 'n', 'ible', 'ide', 'un', 'cess', 'lear'];
 const prefixes = ['prov', 'li', 'he', 'ma', 'o', 'poss', 'ins', 's', 'pro', 'nuc'];
@@ -101,10 +102,16 @@ const setKeys = [
   ['ains', 'f', 'lls', 'rons', 'nd', 'o', 'ther', 'nals', 's', 'ink'],
   ['re', 'or', 'inated', 'vior', 'n', 'nies', 'ch', 'orms', 'ific', 'kers'],
   ['eep', 'ain', 'ot', 'ut', 't', 'ive', 'ries', 'her', 'esses', 'arch'],
+  ['ting', 'ries', 'n', 'dy', 'sfers', 'o', 'wer', 'sfer', 'low', 'ant'],
+  ['ass', 'als', 'pted', 're', 'ities', 'nd', 'em', 'o', 'les', 'ting'],
+  ['he', 'olved', 'an', 'sure', 'gma', 'tion', 'ease', 'sh', 'ments', 'ses'],
+  ['bers', 'ves', 'ood', 'n', 'rect', 'ile', 'nals', 'ch', 'ood', 'gen'],
+  ['gin', 'in', 'r', 'ects', 'her', 'wing', 'des', 'nd', 'ries', 'nd'],
 ];
 
-test('Sets 2–5 each close at 10/10 with their own stable object identity', () => {
-  for (const [setIndex, object] of TOEFL_CTW_SETS_2_TO_5.entries()) {
+test('Sets 2–10 each close at 10/10 with their own stable object identity', () => {
+  const expansionSets = [...TOEFL_CTW_SETS_2_TO_5, ...TOEFL_CTW_SETS_6_TO_10];
+  for (const [setIndex, object] of expansionSets.entries()) {
     const scoringBlanks = object.blanks.map((blank, blankIndex) => ({
       ...blank,
       expectedMissing: setKeys[setIndex][blankIndex],

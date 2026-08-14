@@ -1,6 +1,6 @@
 import type { ToeflBuildSentenceItem } from './build-sentence-set-1';
 
-type PublicDefinition = readonly [
+export type PublicDefinition = readonly [
   context: string,
   replyPrefix: string,
   replySuffix: string,
@@ -18,15 +18,16 @@ export interface ToeflBuildSentencePublicObject {
 const CONTENT_VERSION = '2026-08-14.w4';
 const INTERACTION_DISCLOSURE = 'ETS usa movimiento de fragmentos. Esta práctica ofrece botones equivalentes para que también sea operable con teclado, tacto y lector de pantalla.';
 
-function createPublicSet(
+export function createPublicSet(
   setNumber: number,
   definitions: readonly PublicDefinition[],
+  contentVersion = CONTENT_VERSION,
 ): ToeflBuildSentencePublicObject {
   const id = `toefl-build-sentence-set${setNumber}-v2`;
   return {
     id,
     objectId: `object:${id}`,
-    contentVersion: CONTENT_VERSION,
+    contentVersion,
     interactionDisclosure: INTERACTION_DISCLOSURE,
     items: definitions.map(([context, replyPrefix, replySuffix, shuffledTiles], index) => {
       const number = index + 1;
@@ -35,7 +36,7 @@ function createPublicSet(
         type: 'toefl-build-sentence',
         id: itemId,
         legacyId: number <= 6 ? `t${setNumber}-w-bs${number}` : undefined,
-        contentVersion: CONTENT_VERSION,
+        contentVersion,
         context,
         replyPrefix,
         replySuffix,

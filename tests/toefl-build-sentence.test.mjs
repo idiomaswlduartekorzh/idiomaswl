@@ -7,6 +7,13 @@ import {
   TOEFL_BUILD_SENTENCE_SET4_V2,
   TOEFL_BUILD_SENTENCE_SET5_V2,
 } from '../src/data/toefl/build-sentence-sets-2-5.ts';
+import {
+  TOEFL_BUILD_SENTENCE_SET6_V2,
+  TOEFL_BUILD_SENTENCE_SET7_V2,
+  TOEFL_BUILD_SENTENCE_SET8_V2,
+  TOEFL_BUILD_SENTENCE_SET9_V2,
+  TOEFL_BUILD_SENTENCE_SET10_V2,
+} from '../src/data/toefl/build-sentence-sets-6-10.ts';
 import { scoreToeflBuildSentenceAttempt } from '../src/lib/toefl/build-sentence-contract.ts';
 
 const answerPositions = [
@@ -57,14 +64,19 @@ test('the public pilot contains ten contextual items and no answer property', ()
   assert.ok(TOEFL_BUILD_SENTENCE_SET1.items.every((item) => new Set(item.tiles.map((tile) => tile.id)).size === item.tiles.length));
 });
 
-test('Sets 2–5 expose forty contextual items with one distractor and no scoring key', () => {
+test('Sets 2–10 expose ninety contextual items with one distractor and no scoring key', () => {
   const expansionSets = [
     TOEFL_BUILD_SENTENCE_SET2_V2,
     TOEFL_BUILD_SENTENCE_SET3_V2,
     TOEFL_BUILD_SENTENCE_SET4_V2,
     TOEFL_BUILD_SENTENCE_SET5_V2,
+    TOEFL_BUILD_SENTENCE_SET6_V2,
+    TOEFL_BUILD_SENTENCE_SET7_V2,
+    TOEFL_BUILD_SENTENCE_SET8_V2,
+    TOEFL_BUILD_SENTENCE_SET9_V2,
+    TOEFL_BUILD_SENTENCE_SET10_V2,
   ];
-  assert.equal(new Set(expansionSets.map((set) => set.objectId)).size, 4);
+  assert.equal(new Set(expansionSets.map((set) => set.objectId)).size, 9);
   for (const set of expansionSets) {
     assert.equal(set.items.length, 10);
     assert.ok(set.items.every((item) => item.context && item.replyPrefix && item.replySuffix));
@@ -74,7 +86,7 @@ test('Sets 2–5 expose forty contextual items with one distractor and no scorin
   }
 });
 
-test('the forty canonical expansion orders reconcile to 10/10 per set', () => {
+test('the ninety canonical expansion orders reconcile to 10/10 per set', () => {
   const patterns = [
     [2, 4, 0, 3, 1],
     [4, 1, 3, 0, 2],
@@ -87,6 +99,11 @@ test('the forty canonical expansion orders reconcile to 10/10 per set', () => {
     TOEFL_BUILD_SENTENCE_SET3_V2,
     TOEFL_BUILD_SENTENCE_SET4_V2,
     TOEFL_BUILD_SENTENCE_SET5_V2,
+    TOEFL_BUILD_SENTENCE_SET6_V2,
+    TOEFL_BUILD_SENTENCE_SET7_V2,
+    TOEFL_BUILD_SENTENCE_SET8_V2,
+    TOEFL_BUILD_SENTENCE_SET9_V2,
+    TOEFL_BUILD_SENTENCE_SET10_V2,
   ];
   for (const [setIndex, set] of expansionSets.entries()) {
     const setNumber = setIndex + 2;

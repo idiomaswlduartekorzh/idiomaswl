@@ -11,7 +11,7 @@ import type { ToeflBuildSentencePublicObject } from '@/data/toefl/build-sentence
 import { TOEFL_BUILD_SENTENCE_SET1_SCORING } from '@/server/toefl/build-sentence-set-1';
 import type { ToeflBuildSentenceScoringItem } from '@/lib/toefl/build-sentence-contract';
 
-interface SourceDefinition {
+export interface SourceDefinition {
   context: string;
   replyPrefix: string;
   replySuffix: string;
@@ -27,10 +27,11 @@ const PATTERNS = [
   [2, 0, 3, 1, 4],
 ] as const;
 
-function createScoring(
+export function createScoring(
   setNumber: number,
   publicObject: ToeflBuildSentencePublicObject,
   definitions: readonly SourceDefinition[],
+  contentVersion = '2026-08-14.w4',
 ) {
   if (publicObject.items.length !== definitions.length) {
     throw new Error(`Build a Sentence Set ${setNumber}: public/scoring item counts differ.`);
@@ -59,7 +60,7 @@ function createScoring(
     });
   });
   return {
-    scoringVersion: `toefl-build-sentence-local-exact-set${setNumber}@2026-08-14.w4`,
+    scoringVersion: `toefl-build-sentence-local-exact-set${setNumber}@${contentVersion}`,
     disclosure: `Práctica fija WeLearn con 10 ítems originales de Build a Sentence para el Set ${setNumber}. La corrección local no equivale a una puntuación oficial de ETS.`,
     items: scoringItems,
   };

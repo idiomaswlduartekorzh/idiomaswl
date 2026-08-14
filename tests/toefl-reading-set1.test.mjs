@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import { scoreToeflReadingAttempt } from '../src/lib/toefl/reading-contract.ts';
 import { TOEFL_READING_SETS_2_TO_5 } from '../src/data/toefl/reading-sets-2-5.ts';
+import { TOEFL_READING_SETS_6_TO_10 } from '../src/data/toefl/reading-sets-6-10.ts';
 
 const single = (number, correct = 'a') => ({
   itemId: `item:single-${number}`,
@@ -111,10 +112,16 @@ const expansionKeys = [
   [['d'], ['a'], ['b'], ['c'], ['d'], ['a', 'c']],
   [['c'], ['d'], ['a'], ['b'], ['c'], ['a', 'c']],
   [['b'], ['c'], ['d'], ['a'], ['b'], ['b', 'c']],
+  [['a'], ['b'], ['b'], ['d'], ['a'], ['b', 'c']],
+  [['d'], ['a'], ['b'], ['c'], ['d'], ['b', 'd']],
+  [['c'], ['a'], ['a'], ['b'], ['c'], ['b', 'c']],
+  [['b'], ['c'], ['d'], ['a'], ['b'], ['a', 'c']],
+  [['d'], ['a'], ['b'], ['c'], ['d'], ['a', 'c']],
 ];
 
-test('Academic Sets 2–5 each reconcile five official items plus one supplement at 6/6', () => {
-  for (const [setIndex, object] of TOEFL_READING_SETS_2_TO_5.entries()) {
+test('Academic Sets 2–10 each reconcile five official items plus one supplement at 6/6', () => {
+  const objects = [...TOEFL_READING_SETS_2_TO_5, ...TOEFL_READING_SETS_6_TO_10];
+  for (const [setIndex, object] of objects.entries()) {
     const scoringItems = object.academic.items.map((item, itemIndex) => ({
       itemId: item.id,
       responseKind: item.type === 'single-select' ? 'selected_option_id' : 'selected_option_ids',

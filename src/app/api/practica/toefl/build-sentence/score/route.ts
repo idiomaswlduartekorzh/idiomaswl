@@ -1,5 +1,5 @@
 import { scoreToeflBuildSentenceAttempt } from '@/lib/toefl/build-sentence-contract';
-import { TOEFL_BUILD_SENTENCE_SCORING_BY_OBJECT_ID } from '@/server/toefl/build-sentence-sets-2-5';
+import { TOEFL_BUILD_SENTENCE_SCORING_BY_OBJECT_ID } from '@/server/toefl/build-sentence-registry';
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return Boolean(value) && typeof value === 'object' && !Array.isArray(value);

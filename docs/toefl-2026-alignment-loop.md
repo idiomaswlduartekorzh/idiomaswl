@@ -3147,3 +3147,35 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
   Daily Life, Academic, Build y Writing constructed. Sets 6–20 son el siguiente lote.
   T16/T17 mantienen pendiente únicamente la aprobación humana VoiceOver documentada.
   Cero cambios, reproducción, transcripción, generación o consumo de audio/API.
+
+### Expansión no-audio — lote W5 Sets 6–10 — 2026-08-14
+
+- Alcance cerrado: Sets 6–10 completan CTW, Academic Passage y Build a Sentence con el
+  mismo contrato aprobado en Sets 2–5. Daily Life y las dos tareas constructed ya
+  cumplían el inventario no-audio.
+- CTW: cinco objetos de 79/86/82/84/83 palabras, primera oración intacta, diez mitades
+  alternas y clave de letras faltantes server-only. Los diez bloques previos se
+  preservan fuera del payload.
+- Academic: cinco pasajes de 184/197/192/199/197 palabras. Cada uno expone cinco
+  single-select official-family y un sexto exact-set claramente rotulado como
+  suplemento WeLearn. Cinco fuentes largas y sus claves v1 quedan server-only.
+- Revisión factual: se corrigieron independencia temprana de escritura, predicción
+  absoluta sobre arrecifes, mecanismo simplificado de deriva, atribución global a
+  Gutenberg y cronología/causalidad del Great Oxidation Event. CTW también se contrastó
+  con USDA, EPA, USGS y NHLBI. Evidencia en
+  `docs/toefl-2026-written-sets6-10-factual-audit-2026-08-14.md`.
+- Build: 50 intercambios originales con contexto, respuesta fija, cuatro fragmentos y
+  un distractor. La clave privada verifica que el contenido público mezclado no derive;
+  las 30 actividades anteriores se conservan server-only.
+- Seguridad/scoring: el registro Build se separó en un agregador server-only para
+  Sets 1–10; los tres endpoints resuelven el `objectId` del set activo y fallan cerrado
+  ante identidad o presentación inválida. Unit cierra CTW 10/10, Academic 6/6 y Build
+  10/10 por set.
+- Evidencia: checkers CTW/Reading/Build PASS; units 8/8, 8/8 y 9/9; TypeScript PASS;
+  ESLint dirigido PASS; build completo PASS con guardianes y 1.364/1.364 rutas.
+  Chromium en extremos representativos Sets 6 y 10 cerró 10/10 + 6/6 + 10/10: PASS
+  2/2. El primer intento con host cruzado no hidrató; la repetición con `localhost`
+  pasó y queda separada como infraestructura.
+- Estado: Sets 2–10 están completos dentro del alcance no-audio actual. El siguiente
+  lote es Sets 11–15, seguido de Sets 16–20. VoiceOver T16/T17 sigue pendiente como
+  gate humano. Cero audio abierto, reproducido, transcrito, generado o modificado.

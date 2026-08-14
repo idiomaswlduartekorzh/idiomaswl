@@ -1,4 +1,10 @@
 import type { MockExam } from './types';
+import { TOEFL_CTW_SET9_V2 } from '@/data/toefl/complete-the-words-sets-6-10';
+import { toToeflCompleteWordsQuestion } from './toefl-complete-words-adapter';
+import { TOEFL_READING_SET9_V2 } from '@/data/toefl/reading-sets-6-10';
+import { toToeflReadingQuestion } from './toefl-reading-adapter';
+import { TOEFL_BUILD_SENTENCE_SET9_V2 } from '@/data/toefl/build-sentence-sets-6-10';
+import { toToeflBuildSentenceQuestion } from './toefl-build-sentence-adapter';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md. Escala 1–6.
@@ -15,34 +21,7 @@ const mock: MockExam = {
     {
       part: 1, skill: 'reading', title: 'Reading — Complete the Words',
       instructions: 'Complete each word so the text makes sense. Some letters are given.',
-      questions: [
-        {
-          type: 'wordcomplete', id: 't9-r-cw1', part: 1, qRange: [1, 6],
-          instructions: 'A student is writing to a professor about a deadline.',
-          template: `Dear Professor Diaz,\n\nI am writing to ask for a short {{1}} on the essay due Friday. I have been {{2}} this week and was unable to visit the library to find {{3}}. I have already written a first {{4}}, but I would like more time to {{5}} it properly. Would it be possible to submit on Monday {{6}}?\n\nThank you for your understanding,\nHana`,
-          blanks: [
-            { num: 1, prefix: 'ext', answer: 'extension' },
-            { num: 2, prefix: 'i', answer: 'ill' },
-            { num: 3, prefix: 'sou', answer: 'sources' },
-            { num: 4, prefix: 'dr', answer: 'draft' },
-            { num: 5, prefix: 'rev', answer: 'revise' },
-            { num: 6, prefix: 'ins', answer: 'instead' },
-          ],
-        },
-        {
-          type: 'wordcomplete', id: 't9-r-cw2', part: 1, qRange: [7, 12],
-          instructions: 'The following is from an article about the human heart.',
-          template: `The heart is a {{1}} about the size of a fist that pumps blood around the body. It beats around one hundred thousand times a {{2}}, sending oxygen and nutrients to every {{3}}. To keep the heart {{4}}, doctors recommend regular exercise and a balanced {{5}}. Smoking and too much stress can {{6}} the risk of heart disease.`,
-          blanks: [
-            { num: 1, prefix: 'mus', answer: 'muscle' },
-            { num: 2, prefix: 'd', answer: 'day' },
-            { num: 3, prefix: 'ce', answer: 'cell' },
-            { num: 4, prefix: 'hea', answer: 'healthy' },
-            { num: 5, prefix: 'di', answer: 'diet' },
-            { num: 6, prefix: 'inc', answer: 'increase' },
-          ],
-        },
-      ],
+      questions: [toToeflCompleteWordsQuestion(TOEFL_CTW_SET9_V2, 1)],
     },
     {
       part: 2, skill: 'reading', title: 'Reading — Read in Daily Life (Museum sign)',
@@ -66,23 +45,15 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 4, skill: 'reading', title: 'Reading — Read an Academic Passage',
-      instructions: 'Read the passage and answer questions.',
-      passage: `The printing press, developed by Johannes Gutenberg in the mid-fifteenth century, is often described as one of the most important inventions in human history. But to understand why, we must look beyond the machine itself to the transformation it unleashed. Before Gutenberg, books in Europe were copied by hand, usually by monks, a process so slow and costly that a single book could take months to produce and cost as much as a small house. As a result, books were rare, and literacy was largely confined to the clergy and the wealthy.\n\nGutenberg's key innovation was movable type: individual metal letters that could be arranged to form a page, used to print hundreds of copies, and then rearranged for the next page. Combined with an oil-based ink and a press adapted from those used to make wine, this system made it possible to produce books quickly and in large numbers. The cost of a book fell dramatically.\n\nThe consequences rippled far beyond publishing. As books became affordable, literacy spread. Ideas that once circulated slowly among a small elite could now reach thousands of readers within months. This had profound political and religious effects: the Protestant Reformation, for instance, spread with unprecedented speed because reformers could print and distribute pamphlets faster than authorities could suppress them.\n\nThe press also transformed the nature of knowledge itself. When every copy of a book was made by hand, errors crept in with each copying, and no two copies were quite alike. Printing produced identical copies, allowing scholars in different cities to refer to exactly the same text, page by page. This standardization laid the groundwork for the scientific revolution, in which the precise sharing and checking of results became essential. In this sense, Gutenberg did not merely make books cheaper—he changed how humanity accumulates and verifies knowledge.`,
-      passageTitle: 'The Printing Press',
-      questions: [
-        { type: 'mcq', id: 't9-r-ap1', part: 4, text: 'According to paragraph 1, why were books rare before Gutenberg?', options: ['People were not interested in reading.', 'They were copied by hand, making them slow and costly to produce.', 'Paper had not yet been invented.', 'Most people could not afford paper.'], answer: 1 },
-        { type: 'mcq', id: 't9-r-ap2', part: 4, text: 'What was Gutenberg\'s key innovation?', options: ['A new alphabet', 'A new kind of paper', 'Movable metal type that could be rearranged', 'A faster way to copy books by hand'], answer: 2 },
-        { type: 'mcq', id: 't9-r-ap3', part: 4, text: 'According to paragraph 3, how did the printing press affect the Protestant Reformation?', options: ['It had no effect on religion.', 'It was banned by reformers.', 'It slowed the spread of reform ideas.', 'It allowed reformers to print and distribute pamphlets faster than authorities could suppress them.'], answer: 3 },
-        { type: 'mcq', id: 't9-r-ap4', part: 4, text: 'How did printing change the nature of knowledge, according to paragraph 4?', options: ['It produced identical copies, allowing scholars to refer to exactly the same text.', 'It made books more expensive.', 'It reduced the number of readers.', 'It introduced more errors into texts.'], answer: 0 },
-        { type: 'mcq', id: 't9-r-ap5', part: 4, text: 'What does the author mean in the final sentence?', options: ['Gutenberg only made books cheaper.', 'Gutenberg changed how humanity accumulates and verifies knowledge.', 'Gutenberg invented science.', 'Gutenberg discouraged reading.'], answer: 1 },
-        { type: 'multiselect', id: 't9-r-ap6', part: 4, qRange: [6, 6], text: 'Select the TWO statements supported by the passage.', options: [
-          { letter: 'A', text: 'Before printing, books were copied by hand and were very expensive.' },
-          { letter: 'B', text: 'Printing made every copy slightly different.' },
-          { letter: 'C', text: 'The printing press helped standardize texts, supporting the scientific revolution.' },
-          { letter: 'D', text: 'Literacy declined after the invention of the printing press.' },
-        ], selectCount: 2, answers: ['A', 'C'] },
-      ],
+      part: 4,
+      skill: 'reading',
+      title: 'Reading — Read an Academic Passage',
+      instructions: TOEFL_READING_SET9_V2.academic.instructions,
+      sectionNote: 'Las preguntas 1–5 reproducen familias oficiales de selección única. La pregunta 6 es práctica complementaria WeLearn.',
+      passage: TOEFL_READING_SET9_V2.academic.text,
+      passageTitle: TOEFL_READING_SET9_V2.academic.title,
+      questions: TOEFL_READING_SET9_V2.academic.items.map((item) =>
+        toToeflReadingQuestion(TOEFL_READING_SET9_V2.objectId, item, 4)),
     },
     {
       part: 5, skill: 'listening', title: 'Listening — Listen and Choose a Response',
@@ -132,16 +103,13 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 9, skill: 'writing', title: 'Writing — Build a Sentence',
-      instructions: 'Put the words in the correct order to make a grammatical sentence.',
-      questions: [
-        { type: 'sentencebuild', id: 't9-w-bs1', part: 9, tiles: ['She', 'teaches', 'mathematics', 'at', 'a local school'], answer: ['She', 'teaches', 'mathematics', 'at', 'a local school'] },
-        { type: 'sentencebuild', id: 't9-w-bs2', part: 9, tiles: ['the report', 'have', 'ready', 'by Monday', 'Please'], answer: ['Please', 'have', 'the report', 'ready', 'by Monday'] },
-        { type: 'sentencebuild', id: 't9-w-bs3', part: 9, tiles: ['I', 'recommended', 'the film', 'that', 'enjoyed', 'you'], answer: ['I', 'enjoyed', 'the film', 'that', 'you', 'recommended'] },
-        { type: 'sentencebuild', id: 't9-w-bs4', part: 9, tiles: ['finish', 'we', 'Once', 'lunch,', 'we can', 'leave'], answer: ['Once', 'we', 'finish', 'lunch,', 'we can', 'leave'] },
-        { type: 'sentencebuild', id: 't9-w-bs5', part: 9, tiles: ['was', 'The test', 'I', 'than', 'expected', 'easier'], answer: ['The test', 'was', 'easier', 'than', 'I', 'expected'] },
-        { type: 'sentencebuild', id: 't9-w-bs6', part: 9, tiles: ['the news,', 'Hearing', 'immediately', 'she', 'her family', 'called'], answer: ['Hearing', 'the news,', 'she', 'immediately', 'called', 'her family'] },
-      ],
+      part: 9,
+      skill: 'writing',
+      title: 'Writing — Build a Sentence',
+      instructions: 'Read the first speaker. Arrange the fragments to make a grammatical and contextually appropriate reply. One fragment is not used.',
+      sectionNote: TOEFL_BUILD_SENTENCE_SET9_V2.interactionDisclosure,
+      questions: TOEFL_BUILD_SENTENCE_SET9_V2.items.map((item) =>
+        toToeflBuildSentenceQuestion(TOEFL_BUILD_SENTENCE_SET9_V2.objectId, item, 9)),
     },
     {
       part: 10, skill: 'writing', title: 'Writing — Write an Email',

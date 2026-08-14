@@ -8,6 +8,13 @@ import {
   TOEFL_CTW_SET4_V2,
   TOEFL_CTW_SET5_V2,
 } from '@/data/toefl/complete-the-words-sets-2-5';
+import {
+  TOEFL_CTW_SET6_V2,
+  TOEFL_CTW_SET7_V2,
+  TOEFL_CTW_SET8_V2,
+  TOEFL_CTW_SET9_V2,
+  TOEFL_CTW_SET10_V2,
+} from '@/data/toefl/complete-the-words-sets-6-10';
 import type { CompleteWordsScoringBlank } from '@/lib/toefl/complete-words-contract';
 
 function attachKey(
@@ -69,12 +76,57 @@ const SET5_KEY = {
   'item:t5-r-ctw-v2:blank-10': 'arch',
 } as const;
 
+const SET6_KEY = {
+  'item:t6-r-ctw-v2:blank-01': 'ting', 'item:t6-r-ctw-v2:blank-02': 'ries',
+  'item:t6-r-ctw-v2:blank-03': 'n', 'item:t6-r-ctw-v2:blank-04': 'dy',
+  'item:t6-r-ctw-v2:blank-05': 'sfers', 'item:t6-r-ctw-v2:blank-06': 'o',
+  'item:t6-r-ctw-v2:blank-07': 'wer', 'item:t6-r-ctw-v2:blank-08': 'sfer',
+  'item:t6-r-ctw-v2:blank-09': 'low', 'item:t6-r-ctw-v2:blank-10': 'ant',
+} as const;
+
+const SET7_KEY = {
+  'item:t7-r-ctw-v2:blank-01': 'ass', 'item:t7-r-ctw-v2:blank-02': 'als',
+  'item:t7-r-ctw-v2:blank-03': 'pted', 'item:t7-r-ctw-v2:blank-04': 're',
+  'item:t7-r-ctw-v2:blank-05': 'ities', 'item:t7-r-ctw-v2:blank-06': 'nd',
+  'item:t7-r-ctw-v2:blank-07': 'em', 'item:t7-r-ctw-v2:blank-08': 'o',
+  'item:t7-r-ctw-v2:blank-09': 'les', 'item:t7-r-ctw-v2:blank-10': 'ting',
+} as const;
+
+const SET8_KEY = {
+  'item:t8-r-ctw-v2:blank-01': 'he', 'item:t8-r-ctw-v2:blank-02': 'olved',
+  'item:t8-r-ctw-v2:blank-03': 'an', 'item:t8-r-ctw-v2:blank-04': 'sure',
+  'item:t8-r-ctw-v2:blank-05': 'gma', 'item:t8-r-ctw-v2:blank-06': 'tion',
+  'item:t8-r-ctw-v2:blank-07': 'ease', 'item:t8-r-ctw-v2:blank-08': 'sh',
+  'item:t8-r-ctw-v2:blank-09': 'ments', 'item:t8-r-ctw-v2:blank-10': 'ses',
+} as const;
+
+const SET9_KEY = {
+  'item:t9-r-ctw-v2:blank-01': 'bers', 'item:t9-r-ctw-v2:blank-02': 'ves',
+  'item:t9-r-ctw-v2:blank-03': 'ood', 'item:t9-r-ctw-v2:blank-04': 'n',
+  'item:t9-r-ctw-v2:blank-05': 'rect', 'item:t9-r-ctw-v2:blank-06': 'ile',
+  'item:t9-r-ctw-v2:blank-07': 'nals', 'item:t9-r-ctw-v2:blank-08': 'ch',
+  'item:t9-r-ctw-v2:blank-09': 'ood', 'item:t9-r-ctw-v2:blank-10': 'gen',
+} as const;
+
+const SET10_KEY = {
+  'item:t10-r-ctw-v2:blank-01': 'gin', 'item:t10-r-ctw-v2:blank-02': 'in',
+  'item:t10-r-ctw-v2:blank-03': 'r', 'item:t10-r-ctw-v2:blank-04': 'ects',
+  'item:t10-r-ctw-v2:blank-05': 'her', 'item:t10-r-ctw-v2:blank-06': 'wing',
+  'item:t10-r-ctw-v2:blank-07': 'des', 'item:t10-r-ctw-v2:blank-08': 'nd',
+  'item:t10-r-ctw-v2:blank-09': 'ries', 'item:t10-r-ctw-v2:blank-10': 'nd',
+} as const;
+
 export const TOEFL_CTW_SCORING_BY_OBJECT_ID: Readonly<Record<string, readonly CompleteWordsScoringBlank[]>> = {
   [TOEFL_CTW_SET1_V3.objectId]: TOEFL_CTW_SET1_V3_SCORING,
   [TOEFL_CTW_SET2_V2.objectId]: attachKey(TOEFL_CTW_SET2_V2.blanks, SET2_KEY),
   [TOEFL_CTW_SET3_V2.objectId]: attachKey(TOEFL_CTW_SET3_V2.blanks, SET3_KEY),
   [TOEFL_CTW_SET4_V2.objectId]: attachKey(TOEFL_CTW_SET4_V2.blanks, SET4_KEY),
   [TOEFL_CTW_SET5_V2.objectId]: attachKey(TOEFL_CTW_SET5_V2.blanks, SET5_KEY),
+  [TOEFL_CTW_SET6_V2.objectId]: attachKey(TOEFL_CTW_SET6_V2.blanks, SET6_KEY),
+  [TOEFL_CTW_SET7_V2.objectId]: attachKey(TOEFL_CTW_SET7_V2.blanks, SET7_KEY),
+  [TOEFL_CTW_SET8_V2.objectId]: attachKey(TOEFL_CTW_SET8_V2.blanks, SET8_KEY),
+  [TOEFL_CTW_SET9_V2.objectId]: attachKey(TOEFL_CTW_SET9_V2.blanks, SET9_KEY),
+  [TOEFL_CTW_SET10_V2.objectId]: attachKey(TOEFL_CTW_SET10_V2.blanks, SET10_KEY),
 };
 
 // The eight superseded learner-facing blocks remain here as reusable provenance,
@@ -120,4 +172,17 @@ export const TOEFL_CTW_SETS_2_TO_5_LEGACY_SOURCES = [
     template: 'Most adults need between seven and nine hours of sleep each {{1}}. During sleep, the brain does not simply shut down; it stays {{2}}, processing memories and clearing waste products. People who regularly sleep too {{3}} may find it harder to concentrate and are more likely to make {{4}}. Researchers {{5}} that keeping a regular schedule — going to bed and waking up at the same time — is one of the most {{6}} ways to improve sleep quality.',
     answers: ['night', 'active', 'little', 'mistakes', 'suggest', 'effective'],
   },
+] as const;
+
+export const TOEFL_CTW_SETS_6_TO_10_LEGACY_SOURCES = [
+  { id: 't6-r-cw1', template: 'Dear Housing Office,\n\nI would like to {{1}} a problem with the heating in my room. It stopped working two days {{2}}, and the room is now very {{3}}. I have tried adjusting the controls, but {{4}} happens. Could someone please come to {{5}} it as soon as possible? I am usually free in the {{6}}, after my classes finish.\n\nThank you,\nLuis', answers: ['report', 'ago', 'cold', 'nothing', 'fix', 'afternoon'] },
+  { id: 't6-r-cw2', template: 'Bees play a vital role in {{1}}, the process by which plants reproduce. As a bee moves from flower to flower collecting {{2}}, it carries pollen with it, allowing plants to produce seeds and {{3}}. Without bees and other pollinators, many of the crops we depend on would {{4}} sharply. In recent years, scientists have {{5}} a worrying decline in bee populations, and many are working to {{6}} the causes.', answers: ['pollination', 'nectar', 'fruit', 'decline', 'observed', 'understand'] },
+  { id: 't7-r-cw1', template: 'Dear Ms. Carter,\n\nI am interested in {{1}} for the exchange program in Japan next year. Could you tell me what {{2}} I need to submit and the {{3}} for the application? I am also worried about the {{4}} of living there. Are there any {{5}} available for students? I would be grateful for any {{6}} you can give me.\n\nBest wishes,\nElena', answers: ['applying', 'documents', 'deadline', 'cost', 'scholarships', 'advice'] },
+  { id: 't7-r-cw2', template: 'Recycling helps reduce the amount of {{1}} that ends up in landfills. When materials such as glass, paper, and {{2}} are collected and processed, they can be turned into new products, saving {{3}} and energy. However, recycling only works if items are sorted {{4}}. Putting the wrong materials in a recycling bin can {{5}} an entire batch. For this reason, many cities provide clear {{6}} about what can and cannot be recycled.', answers: ['waste', 'plastic', 'resources', 'correctly', 'ruin', 'instructions'] },
+  { id: 't8-r-cw1', template: "Hi Sam,\n\nI've gone to the {{1}} to buy some food for dinner. Could you please do the {{2}} while I'm out? The basket is full. Also, the landlord called about the broken {{3}} in the bathroom — he'll come to {{4}} it on Thursday, so we need to be {{5}}. I'll be back around six. Call me if you need {{6}}.\n\nThanks,\nJo", answers: ['supermarket', 'dishes', 'tap', 'repair', 'home', 'anything'] },
+  { id: 't8-r-cw2', template: "A volcano is an opening in the Earth's {{1}} through which molten rock, ash, and gases can {{2}}. Beneath the surface, this molten rock is called magma; once it {{3}} onto the surface, it is known as lava. Volcanic eruptions can be extremely {{4}}, destroying nearby towns, but they also create rich, fertile {{5}} that is excellent for farming. Scientists closely {{6}} active volcanoes to warn people before an eruption.", answers: ['crust', 'escape', 'reaches', 'dangerous', 'soil', 'monitor'] },
+  { id: 't9-r-cw1', template: 'Dear Professor Diaz,\n\nI am writing to ask for a short {{1}} on the essay due Friday. I have been {{2}} this week and was unable to visit the library to find {{3}}. I have already written a first {{4}}, but I would like more time to {{5}} it properly. Would it be possible to submit on Monday {{6}}?\n\nThank you for your understanding,\nHana', answers: ['extension', 'ill', 'sources', 'draft', 'revise', 'instead'] },
+  { id: 't9-r-cw2', template: 'The heart is a {{1}} about the size of a fist that pumps blood around the body. It beats around one hundred thousand times a {{2}}, sending oxygen and nutrients to every {{3}}. To keep the heart {{4}}, doctors recommend regular exercise and a balanced {{5}}. Smoking and too much stress can {{6}} the risk of heart disease.', answers: ['muscle', 'day', 'cell', 'healthy', 'diet', 'increase'] },
+  { id: 't10-r-cw1', template: 'I had dinner at Green Table last night and I would {{1}} it to anyone. The service was {{2}} — our food arrived quickly and the waiter was very friendly. The vegetable curry was {{3}}, full of flavor, and not too expensive. My only {{4}} is that the restaurant was quite {{5}}, so it was a little hard to talk. Still, I will definitely {{6}} again.', answers: ['recommend', 'excellent', 'delicious', 'complaint', 'noisy', 'return'] },
+  { id: 't10-r-cw2', template: 'A river is a natural stream of water that flows toward an ocean, lake, or another river. Rivers begin in high ground, often from rain or melting {{1}}, and gradually flow {{2}}. Along the way, they shape the {{3}}, carving valleys and carrying soil. For thousands of years, humans have settled near rivers because they provide fresh water, {{4}} for crops, and a route for {{5}}. Today, however, many rivers are threatened by {{6}} from factories and farms.', answers: ['snow', 'downhill', 'landscape', 'irrigation', 'transport', 'pollution'] },
 ] as const;
