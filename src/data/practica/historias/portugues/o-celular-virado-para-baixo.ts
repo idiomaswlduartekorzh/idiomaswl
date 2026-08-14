@@ -180,10 +180,10 @@ const NARRATOR_QS: Question[] = [
     type: 'Inferencia',
     q: 'A Bia pergunta «meio brincando». O que essa escolha de palavras sugere?',
     opts: [
-      'A Bia não tinha interesse real no celular',
-      'A Bia queria zoar o Rafael para magoá-lo',
+      'A Bia não tinha interesse real no celular: era só curiosidade passageira do momento',
+      'A Bia queria zoar o Rafael para magoá-lo, devolvendo o silêncio dele na mesa',
       'O pedido veio embrulhado numa brincadeira, mas com uma intenção de verdade atrás',
-      'A Bia já tinha olhado o celular naquela semana',
+      'A Bia já tinha olhado o celular naquela semana, então perguntou só por formalidade',
     ],
     correct: 2,
     explanation:
@@ -206,10 +206,10 @@ const NARRATOR_QS: Question[] = [
     type: 'Pensamiento crítico',
     q: '«Uma recusa já é uma resposta.» Que suposição está por trás dessa frase?',
     opts: [
-      'Que quem recusa normalmente está cansado ou ocupado',
+      'Que quem recusa normalmente está cansado ou ocupado, e a negativa não significa nada',
       'Que um inocente teria aceitado, então o não já é prova de culpa',
-      'Que o Rafael tinha prometido dividir o celular',
-      'Que recusar em português é sempre grosseiro',
+      'Que o Rafael tinha prometido dividir o celular e voltou atrás na palavra dada',
+      'Que recusar em português é sempre grosseiro, porque um «não» seco soa agressivo demais',
     ],
     correct: 1,
     explanation:
@@ -222,10 +222,10 @@ const A_QS: Question[] = [
     type: 'Comprensión',
     q: 'Segundo a Bia, o que ela realmente queria ao pedir o celular?',
     opts: [
-      'Ler dois anos de mensagens',
-      'Descobrir quem tinha mandado a notificação no jantar',
+      'Ler dois anos de mensagens e conferir a conversa inteira',
+      'Descobrir quem tinha mandado a notificação que acendeu no jantar',
       'Ver ele entregando por vontade própria — o pedido era um teste',
-      'Conferir o histórico de localização',
+      'Conferir o histórico de localização dele nas últimas semanas',
     ],
     correct: 2,
     explanation:
@@ -261,10 +261,10 @@ const A_QS: Question[] = [
     type: 'Vocabulario',
     q: '«Limites. Ah, faça-me o favor.» O que a Bia está fazendo aqui?',
     opts: [
-      'Concordando educadamente que limites importam num relacionamento',
+      'Concordando educadamente que limites importam num relacionamento de dois anos como o deles',
       'Repetindo a palavra dele de forma sarcástica para descartá-la como desculpa',
-      'Pedindo para ele explicar a palavra',
-      'Citando uma terapeuta',
+      'Pedindo para ele explicar a palavra, porque não entendeu o sentido dela',
+      'Citando uma terapeuta que os dois viram falar sobre limites em relacionamentos',
     ],
     correct: 1,
     explanation:
@@ -274,10 +274,10 @@ const A_QS: Question[] = [
     type: 'Registro',
     q: 'A Bia diz: Pelo visto eu «passei do limite». Por que ela usa aspas?',
     opts: [
-      'Está citando um texto jurídico',
+      'Está citando um texto jurídico sobre privacidade, porque a discussão virou quase um processo',
       'Está citando as palavras dele para se distanciar e mostrar que rejeita a acusação',
-      'Em português essa expressão sempre pede aspas',
-      'Ela não sabe como traduzir',
+      'Em português essa expressão sempre pede aspas, porque é uma regra fixa da língua escrita',
+      'Ela não sabe como traduzir a frase e marcou a dúvida com aspas',
     ],
     correct: 1,
     explanation:
@@ -290,10 +290,10 @@ const B_QS: Question[] = [
     type: 'Comprensión',
     q: 'Que motivo o Rafael dá para a recusa?',
     opts: [
-      'Tem mensagens que ele não quer que ela veja',
-      'O celular é da empresa dele',
+      'Tem mensagens que ele não quer que ela veja, e por isso virou a tela na mesa',
+      'O celular é da empresa dele e ele não pode mostrar o grupo do trabalho',
       'Não que ele esconda algo — mas que aceitar uma vez criaria uma cobrança permanente',
-      'Ele tinha esquecido a senha',
+      'Ele tinha esquecido a senha e ficaria constrangido de admitir isso na hora',
     ],
     correct: 2,
     explanation:
@@ -304,9 +304,9 @@ const B_QS: Question[] = [
     q: '«Esse mês o celular. Mês que vem a minha localização.» Que técnica de argumentação é essa?',
     opts: [
       'Ladeira escorregadia — uma concessão pequena é apresentada como o início de uma corrente',
-      'Uma citação exata do que a Bia exigiu',
-      'Um pedido de desculpa pelo comportamento no jantar',
-      'Um relato de fatos que já aconteceram',
+      'Uma citação exata do que a Bia exigiu dele mais tarde, palavra por palavra',
+      'Um pedido de desculpa pelo comportamento dele no jantar, feito de um jeito bem indireto',
+      'Um relato de fatos que já aconteceram entre os dois nos últimos meses',
     ],
     correct: 0,
     explanation:
@@ -329,10 +329,10 @@ const B_QS: Question[] = [
     type: 'Pensamiento crítico',
     q: '«Se dizer não já te deixa culpado, então não existe resposta que funcione.» O que o Rafael está apontando?',
     opts: [
-      'Que a Bia nunca faz perguntas para ele',
+      'Que a Bia nunca faz perguntas para ele e preferiu partir direto para a exigência do celular',
       'Que o pedido não pode ser cumprido de forma honesta: qualquer reação confirma a suspeita',
-      'Que ele quer terminar o relacionamento',
-      'Que ele não entendeu a pergunta',
+      'Que ele quer terminar o relacionamento e está usando a briga toda como pretexto',
+      'Que ele não entendeu a pergunta dela e respondeu outra coisa sem perceber',
     ],
     correct: 1,
     explanation:
@@ -342,10 +342,10 @@ const B_QS: Question[] = [
     type: 'Tono',
     q: '«Talvez eu pudesse ter lidado melhor com aquele momento. Talvez.» O que o «talvez» repetido faz?',
     opts: [
-      'Assume a responsabilidade por inteiro',
-      'Mostra confusão total sobre o que aconteceu',
+      'Assume a responsabilidade por inteiro pelo que fez no jantar e abre caminho para uma conversa nova',
+      'Mostra confusão total sobre o que aconteceu, como se ele ainda não tivesse entendido qual era o problema',
       'Dá uma concessão mínima e a retira em seguida — uma frase em forma de desculpa que não admite nada',
-      'Mostra arrependimento verdadeiro e vontade de mudar',
+      'Mostra arrependimento verdadeiro e vontade de mudar, já que ele chega a admitir que poderia ter lidado melhor com a noite',
     ],
     correct: 2,
     explanation:
@@ -371,10 +371,10 @@ const FINAL_QS: Question[] = [
     type: 'Perspectiva',
     q: 'A Bia chama o pedido de «teste». O Rafael diz que está sendo «investigado». O que essa distância mostra?',
     opts: [
-      'Um dos dois está mentindo de propósito sobre a noite',
+      'Um dos dois está mentindo de propósito sobre o que houve naquela noite',
       'A mesma ação ganha sentidos opostos conforme o que cada um acha que ela simboliza',
-      'Nenhum dos dois lembra bem da noite',
-      'O Rafael usa um vocabulário mais culto que a Bia',
+      'Nenhum dos dois lembra bem da noite e cada um inventou uma versão',
+      'O Rafael usa um vocabulário mais culto que a Bia para parecer racional',
     ],
     correct: 1,
     explanation:
@@ -384,10 +384,10 @@ const FINAL_QS: Question[] = [
     type: 'Pensamiento crítico',
     q: 'Qual é a causa RAIZ mais exata desse conflito?',
     opts: [
-      'O Rafael esconde alguma coisa no celular',
-      'A Bia é simplesmente ciumenta',
+      'O Rafael esconde alguma coisa no celular e o discurso sobre princípios é só fachada',
+      'A Bia é simplesmente ciumenta e transformou uma notificação qualquer numa crise enorme',
       'O casal nunca combinou o que privacidade significa entre eles, até isso ser testado',
-      'O ex da Bia',
+      'O ex da Bia, que deixou nela uma desconfiança que o Rafael agora paga',
     ],
     correct: 2,
     explanation:
@@ -397,10 +397,10 @@ const FINAL_QS: Question[] = [
     type: 'Registro',
     q: 'A Bia diz que o Rafael a acusa de ter «passado do limite». O Rafael diz que não pede desculpa «por ter um limite». O que essa metáfora compartilhada mostra?',
     opts: [
-      'Os dois estão citando o mesmo filme',
+      'Os dois estão citando o mesmo filme que assistiram juntos, e por isso repetem a mesma palavra',
       'Os dois usam a mesma imagem de limite para defender posições opostas — cada um se vê como quem protege uma fronteira',
-      '«Limite» significa coisas completamente diferentes nos dois casos',
-      'Prova que o Rafael copia o vocabulário da Bia',
+      '«Limite» significa coisas completamente diferentes nos dois casos: para ela é uma linha de confiança mútua, para ele é uma regra pessoal inegociável',
+      'Prova que o Rafael copia o vocabulário da Bia e devolve a palavra dela contra ela mesma',
     ],
     correct: 1,
     explanation:
@@ -410,10 +410,10 @@ const FINAL_QS: Question[] = [
     type: 'Inferencia',
     q: '«Se ele tivesse simplesmente entregado, eu nem teria aberto.» O que essa frase revela?',
     opts: [
-      'A Bia mentiu quando disse que queria ver o celular',
+      'A Bia mentiu quando disse que queria ver o celular, porque no fundo já tinha decidido ler tudo o que encontrasse na conversa dele naquela mesma noite',
       'A Bia queria segurança, não informação — e a única coisa que daria isso a ela era exatamente o gesto que o Rafael recusa por princípio',
-      'A Bia já tinha aberto o celular antes',
-      'A Bia não sabe a senha dele',
+      'A Bia já tinha aberto o celular antes daquela noite e por isso sabia exatamente o que ia encontrar',
+      'A Bia não sabe a senha dele, então precisava que ele mesmo desbloqueasse o aparelho para ela',
     ],
     correct: 1,
     explanation:

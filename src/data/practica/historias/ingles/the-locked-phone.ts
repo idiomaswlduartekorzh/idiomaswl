@@ -317,8 +317,8 @@ const NARRATOR_QS: Question[] = [
     type: 'Inference',
     q: 'The narrator says Jess asked "half-joking." What does this word choice suggest?',
     opts: [
-      'Jess had no real interest in the phone',
-      'Jess was making fun of Tom to hurt him',
+      'Jess had no real interest in the phone and only mentioned it to fill the silence',
+      'Jess was making fun of Tom to hurt him for turning the phone over',
       'The request was wrapped in a joke but carried a real intention behind it',
       'Jess had already looked at the phone earlier that week',
     ],
@@ -343,10 +343,10 @@ const NARRATOR_QS: Question[] = [
     type: 'Critical Thinking',
     q: '"Jess told him that a refusal was an answer in itself." What assumption is behind this statement?',
     opts: [
-      'That people who refuse are usually tired or busy',
+      'That people who refuse are usually tired or busy rather than deliberately hiding anything',
       'That an innocent person would have agreed, so saying no is itself evidence of guilt',
-      'That Tom had legally promised to share his phone',
-      'That refusing a request is always impolite in English',
+      'That Tom had legally promised to share his phone when the two of them moved in together',
+      'That refusing a request is always impolite in English, whatever the reason behind it',
     ],
     correct: 1,
     explanation:
@@ -359,10 +359,10 @@ const GF_QS: Question[] = [
     type: 'Comprehension',
     q: 'According to Jess, what did she actually want when she asked for the phone?',
     opts: [
-      'To read two years of his messages',
+      'To read two years of his messages looking for one particular name',
       'To find out who had sent the notification at dinner',
       'To watch him willingly hand it over — the request was a test',
-      'To check his location history',
+      'To check his location history for the past few weeks',
     ],
     correct: 2,
     explanation:
@@ -372,10 +372,10 @@ const GF_QS: Question[] = [
     type: 'Inference',
     q: '"If you\'ve got nothing to hide, why does it cost you so much to prove it?" What is the problem with this rhetorical question?',
     opts: [
-      'It is grammatically incorrect in English',
+      'It is grammatically incorrect in English because a question cannot contain a conditional clause',
       'It assumes refusal equals guilt, so no response Tom gives can clear him',
       'It shows Jess already knows what is on the phone',
-      'It proves Jess does not care about the relationship',
+      'It proves Jess does not care about the relationship and wants an excuse to leave',
     ],
     correct: 1,
     explanation:
@@ -385,10 +385,10 @@ const GF_QS: Question[] = [
     type: 'Tone',
     q: 'How would you best describe the tone of Jess’s voice note?',
     opts: [
-      'Calm, measured and analytical',
-      'Formal and professional',
+      'Calm, measured and analytical from beginning to end',
+      'Formal and professional, as if reporting an incident',
       'Angry and sarcastic, but framed by self-doubt and hurt',
-      'Playful and light-hearted throughout',
+      'Playful and light-hearted throughout, joking about the evening',
     ],
     correct: 2,
     explanation:
@@ -398,10 +398,10 @@ const GF_QS: Question[] = [
     type: 'Vocabulary',
     q: '"Boundaries. Please." — what is Jess doing with this two-word reply?',
     opts: [
-      'Politely agreeing that boundaries matter in a relationship',
+      'Politely agreeing that boundaries matter in a relationship and accepting his explanation',
       'Repeating Tom’s own vocabulary sarcastically to dismiss it as an excuse',
-      'Asking Tom to explain the word to her',
-      'Quoting a therapist she has been seeing',
+      'Asking Tom to explain the word to her in plain language',
+      'Quoting a therapist she has been seeing about relationship boundaries',
     ],
     correct: 1,
     explanation:
@@ -411,10 +411,10 @@ const GF_QS: Question[] = [
     type: 'Vocabulary & Register',
     q: 'Jess says: Apparently I "crossed a line." Why does she put those words in quotation marks?',
     opts: [
-      'She is quoting a legal document',
+      'She is quoting a legal document that defines what counts as crossing a line',
       'She is quoting Tom’s words to distance herself from them and signal she rejects the label',
-      'It is a fixed expression that always requires quotation marks',
-      'She is unsure how to translate the phrase',
+      'It is a fixed expression that always requires quotation marks whenever it is used in written English',
+      'She is unsure how to translate the phrase into her own words',
     ],
     correct: 1,
     explanation:
@@ -427,10 +427,10 @@ const BF_QS: Question[] = [
     type: 'Comprehension',
     q: 'What reason does Tom give for refusing?',
     opts: [
-      'There are messages on the phone he does not want her to see',
-      'The phone belongs to his employer',
+      'There are messages on the phone he does not want her to see, which is why he turned it face-down',
+      'The phone belongs to his employer, so the work chats on it are confidential',
       'Not that he is hiding something — but that agreeing once would create a permanent expectation of checks',
-      'He had forgotten his password',
+      'He had forgotten his password and could not have unlocked it anyway',
     ],
     correct: 2,
     explanation:
@@ -441,9 +441,9 @@ const BF_QS: Question[] = [
     q: '"This month it\'s the phone. Next month it\'s my location, then it\'s who I had lunch with." What argument technique is this?',
     opts: [
       'A slippery-slope argument — one small concession is presented as leading to escalating demands',
-      'A direct quotation of what Jess demanded',
-      'An apology for his behaviour at dinner',
-      'A factual account of what has already happened',
+      'A direct quotation of what Jess demanded from him during the argument that night',
+      'An apology for his behaviour at dinner, listing the things he did wrong',
+      'A factual account of the checks Jess has already carried out over the past few weeks',
     ],
     correct: 0,
     explanation:
@@ -453,10 +453,10 @@ const BF_QS: Question[] = [
     type: 'Inference',
     q: '"I\'m being investigated for something somebody else did." What does this line reveal?',
     opts: [
-      'Tom is under investigation by the police',
+      'Tom is under investigation by the police for something a colleague did',
       'Tom believes he is paying the price for the behaviour of Jess’s ex-partner',
-      'Tom has done the same thing as her ex-partner',
-      'Tom wants Jess to contact her ex',
+      'Tom has done the same thing her ex-partner did to her',
+      'Tom wants Jess to contact her ex and settle the matter',
     ],
     correct: 1,
     explanation:
@@ -466,10 +466,10 @@ const BF_QS: Question[] = [
     type: 'Critical Thinking',
     q: '"If saying no makes you guilty, then there\'s no answer that works." What is Tom pointing out?',
     opts: [
-      'That Jess never asks him questions',
+      'That Jess never asks him questions she actually wants answered',
       'That the request cannot be passed or failed honestly — any response confirms the suspicion',
-      'That he plans to end the relationship',
-      'That he did not understand the question she asked',
+      'That he plans to end the relationship rather than keep defending himself',
+      'That he did not understand the question she asked and needed her to repeat it more clearly',
     ],
     correct: 1,
     explanation:
@@ -479,10 +479,10 @@ const BF_QS: Question[] = [
     type: 'Tone',
     q: '"Look — maybe I could have handled the moment better. Maybe." What does the repeated "maybe" convey?',
     opts: [
-      'Full acceptance of responsibility',
-      'Complete confusion about what happened',
+      'Full acceptance of responsibility for the way the evening ended',
+      'Complete confusion about what happened and why Jess reacted that way',
       'A minimal concession that he immediately withdraws — an apology-shaped sentence that admits nothing',
-      'Genuine remorse and a plan to change',
+      'Genuine remorse and a plan to change how he responds the next time she asks',
     ],
     correct: 2,
     explanation:
@@ -508,10 +508,10 @@ const FINAL_QS: Question[] = [
     type: 'Perspective',
     q: 'Jess calls the request "a test." Tom calls it an "investigation." What does this gap show?',
     opts: [
-      'One of them is deliberately lying about the event',
+      'One of them is deliberately lying about what happened that evening',
       'The same action carries opposite meanings depending on what each person believes it symbolises',
-      'Neither of them remembers the evening clearly',
-      'Tom uses more advanced vocabulary than Jess',
+      'Neither of them remembers the evening clearly enough to describe what was said',
+      'Tom uses more advanced vocabulary than Jess to describe the same evening',
     ],
     correct: 1,
     explanation:
@@ -521,10 +521,10 @@ const FINAL_QS: Question[] = [
     type: 'Critical Thinking',
     q: 'Which is the most accurate ROOT cause of this conflict?',
     opts: [
-      'Tom is hiding something on his phone',
-      'Jess is simply a jealous person',
+      'Tom is hiding something on his phone and used privacy as a convenient excuse',
+      'Jess is simply a jealous person who would have found something else to argue about sooner or later',
       'The couple had never agreed what privacy means between them before the moment it was tested',
-      'Jess’s ex-partner',
+      'Jess’s ex-partner, whose behaviour taught her to expect the worst from anybody',
     ],
     correct: 2,
     explanation:
@@ -534,10 +534,10 @@ const FINAL_QS: Question[] = [
     type: 'Vocabulary & Register',
     q: 'Jess says Tom accused her of "crossing a line." Tom says he will not apologise "for having a line." What does this shared metaphor show?',
     opts: [
-      'They are quoting the same film',
+      'They are quoting the same film, which is where the expression about crossing a line comes from',
       'Both use an identical boundary metaphor to defend opposite positions — each believes they are the one protecting a limit',
-      '"Line" means something completely different in each case',
-      'It proves Tom is copying Jess’s vocabulary',
+      '"Line" means something completely different in each case, so the repeated word is only a coincidence',
+      'It proves Tom is copying Jess’s vocabulary because he had no words of his own for what he was feeling that night',
     ],
     correct: 1,
     explanation:
@@ -547,10 +547,10 @@ const FINAL_QS: Question[] = [
     type: 'Inference',
     q: '"If he\'d just given me the phone, I probably wouldn\'t even have opened it." What does this reveal?',
     opts: [
-      'Jess was lying about wanting to see the phone',
+      'Jess was lying about wanting to see the phone, because somebody who really meant to read the messages would never admit she would have handed it straight back',
       'What Jess wanted was reassurance, not information — and the only thing that would have given it to her was the exact act Tom refused on principle',
-      'Jess had already opened the phone earlier that week',
-      'Jess does not know his password',
+      'Jess had already opened the phone earlier that week, which is why she can be so certain about what she would have found inside',
+      'Jess does not know his password, so opening the phone was never really an option for her',
     ],
     correct: 1,
     explanation:

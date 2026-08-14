@@ -44,21 +44,19 @@ const { HISTORIA_LANG_KEYS, HISTORIAS_BY_LANG } = await import('../src/data/prac
 // Se arregla ALARGANDO LOS DISTRACTORES, desarrollando el error de cada uno.
 // Nunca recortando la correcta: ahí vive la precisión que enseña la lección.
 //
-// DEUDA CONOCIDA. Arreglarlo son tres distractores por pregunta, escritos a mano,
-// en ocho idiomas. Se hizo primero con `the-tip-screen`. Las 16 anteriores están
-// listadas abajo con su cifra del día en que se midió: no tumban el build, pero
-// se imprimen en cada ejecución para que no se olviden. Al arreglar una, se borra
-// de la lista y el guardián empieza a exigirle el umbral.
-const DEUDA_LONGITUD = new Set([
-  'ingles/the-locked-phone', 'ingles/the-grandfathers-ledger',
-  'aleman/das-gesperrte-handy', 'aleman/das-kassenbuch-des-grossvaters',
-  'frances/le-telephone-verrouille', 'frances/le-carnet-du-grand-pere',
-  'italiano/il-telefono-capovolto', 'italiano/il-quaderno-del-nonno',
-  'portugues/o-celular-virado-para-baixo', 'portugues/o-caderno-do-avo',
-  'coreano/jamgin-hyudaepon', 'coreano/harabeoji-ui-jangbu',
-  'japones/fuserareta-sumaho', 'japones/sofu-no-choubo',
-  'ruso/telefon-ekranom-vniz', 'ruso/dedushkina-tetrad',
-]);
+// DEUDA SALDADA — 14 de agosto de 2026. Las 16 historias anteriores se
+// reescribieron distractor a distractor, en los ocho idiomas, y bajaron del 79-89 %
+// al 26 %. Esta lista existía para que no se olvidaran; ya está vacía, y lo que
+// queda es la exigencia: cualquier historia que entre a partir de ahora tiene que
+// cumplir el umbral desde el primer commit.
+//
+// NO VOLVER A LLENARLA para meter una historia nueva con prisa. Se creó para
+// saldar una deuda ya contraída, no para permitir contraerla otra vez: es más
+// barato equilibrar las cuatro opciones mientras se escriben —que es lo que se
+// hizo en `the-cash-bar` (21 %) y `the-interpreter` (13 %)— que reescribir 300
+// distractores después. `node scripts/review-historia.mjs <idioma>/<slug>` da la
+// cifra antes de commitear.
+const DEUDA_LONGITUD = new Set([]);
 
 /** En coreano y japonés se mide en caracteres: cada uno vale por una sílaba. */
 const largo = (s, lang) =>

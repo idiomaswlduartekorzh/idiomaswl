@@ -233,10 +233,10 @@ const NARRATOR_QS: Question[] = [
     type: 'Inference',
     q: 'The narrator uses the word "Suddenly" when describing Robert\'s change in attitude. What does this imply?',
     opts: [
-      'The change was gradual and long expected',
-      'Robert always planned to reclaim the items eventually',
+      'The change was gradual and long expected by everybody in the family',
+      'Robert always planned to reclaim the items eventually, whatever happened in the family',
       "The shift happened quickly after one specific event: his daughter's pregnancy",
-      'Emma personally asked Robert to request the items back',
+      'Emma personally asked Robert to request the items back for her baby',
     ],
     correct: 2,
     explanation:
@@ -259,10 +259,10 @@ const NARRATOR_QS: Question[] = [
     type: 'Critical Thinking',
     q: '"Everyone thought he was simply being generous." What does the word "simply" suggest?',
     opts: [
-      'Robert was definitely generous with no hidden motives',
+      'Robert was definitely generous with no hidden motives of any kind behind the gifts',
       "There may be more to Robert's generosity than it appeared at the time",
-      'The family always knew Robert had conditions on his gifts',
-      'Robert was openly trying to control the family',
+      'The family always knew Robert had conditions on his gifts and accepted them anyway',
+      'Robert was openly trying to control the family from the very beginning',
     ],
     correct: 1,
     explanation:
@@ -275,10 +275,10 @@ const DIL_QS: Question[] = [
     type: 'Vocabulary',
     q: 'Sarah compares Robert\'s visit to "an inventory check at a warehouse." What does this reveal?',
     opts: [
-      'Metaphor — she means Robert physically moved her furniture',
+      'Metaphor — she means Robert physically moved her furniture around while counting it',
       'Simile — she portrays Robert as cold and businesslike, treating gifts as recoverable stock',
-      'Hyperbole — she is simply exaggerating for humour',
-      'Personification — she gives the spreadsheet human qualities',
+      'Hyperbole — she is simply exaggerating for humour, since no visit could really resemble a warehouse',
+      'Personification — she gives the spreadsheet human qualities by making it the visitor',
     ],
     correct: 1,
     explanation:
@@ -288,10 +288,10 @@ const DIL_QS: Question[] = [
     type: 'Inference',
     q: '"Who keeps receipts for baby gifts unless they think they\'re getting them back one day?" What does this rhetorical question imply?',
     opts: [
-      'Sarah thinks everyone should keep all receipts',
-      'Robert was simply very organised but nothing more',
+      'Sarah thinks everyone should keep all receipts for expensive purchases like these',
+      'Robert was simply very organised but nothing more, as he is with everything',
       'The receipts are evidence Robert always intended to reclaim the gifts',
-      'Sarah lost her own receipts and is projecting',
+      'Sarah lost her own receipts and is projecting her guilt onto Robert',
     ],
     correct: 2,
     explanation:
@@ -314,10 +314,10 @@ const DIL_QS: Question[] = [
     type: 'Comprehension',
     q: 'According to Sarah, what request from Robert WOULD have been acceptable?',
     opts: [
-      'Bringing a detailed spreadsheet of all gifts',
-      'Demanding the stroller and crib back immediately',
+      'Bringing a detailed spreadsheet of all gifts with the receipts attached',
+      'Demanding the stroller and crib back immediately for his daughter Emma',
       'Asking whether Ethan had outgrown anything that could be passed on',
-      'Sending a formal written request by mail',
+      'Sending a formal written request by mail instead of visiting in person',
     ],
     correct: 2,
     explanation:
@@ -327,10 +327,10 @@ const DIL_QS: Question[] = [
     type: 'Vocabulary',
     q: '"Sir, that\'s your grandson, not a real-estate portfolio." What technique is Sarah using?',
     opts: [
-      "A literal statement about Robert's real estate business",
+      "A literal statement about Robert's real estate business and the properties he still owns",
       'Irony to highlight how Robert treats a family relationship like a financial investment',
-      "A polite way to agree with Robert's perspective",
-      'A direct quote from the spreadsheet',
+      "A polite way to agree with Robert's perspective while softening the disagreement",
+      'A direct quote from the spreadsheet he brought with him that afternoon',
     ],
     correct: 1,
     explanation:
@@ -343,10 +343,10 @@ const FIL_QS: Question[] = [
     type: 'Vocabulary',
     q: 'Robert says items could "be passed down" to Emma\'s baby. What tradition does this phrase reference?',
     opts: [
-      'Returning purchased goods to a store for a refund',
+      'Returning purchased goods to a store for a refund once you no longer need them',
       'The family practice of handing possessions from one member to another across generations',
-      'A formal legal inheritance process',
-      'Donating items to charity',
+      'A formal legal inheritance process carried out after somebody has died',
+      'Donating items to charity once the children have grown out of them',
     ],
     correct: 1,
     explanation:
@@ -382,10 +382,10 @@ const FIL_QS: Question[] = [
     type: 'Tone',
     q: '"Excuse me for being organised" — what tone does this phrase convey?',
     opts: [
-      'Genuine apology and remorse',
+      'Genuine apology and remorse for the way he raised the subject',
       "Sarcastic defensiveness — he doesn't think he did anything wrong",
-      'Confusion about why anyone is upset',
-      'Academic, formal register',
+      'Confusion about why anyone is upset with him over a list',
+      'Academic, formal register of the kind used in business reports',
     ],
     correct: 1,
     explanation:
@@ -395,10 +395,10 @@ const FIL_QS: Question[] = [
     type: 'Vocabulary',
     q: '"Apparently I\'m the villain now." What does Robert\'s use of "villain" reveal?',
     opts: [
-      'He fully agrees his behaviour was wrong',
+      'He fully agrees his behaviour was wrong and accepts that the word is a fair description of him',
       'He feels unjustly cast as the bad character in a story others are telling about him',
-      'He is using technical legal language',
-      'He is seeking sympathy through flattery',
+      'He is using technical legal language taken from the world of contracts',
+      'He is seeking sympathy through flattery, praising the family before criticising them',
     ],
     correct: 1,
     explanation:
@@ -424,10 +424,10 @@ const FINAL_QS: Question[] = [
     type: 'Perspective',
     q: 'The narrator says Robert "asked for thousands of dollars\' worth of items back." Robert says he "suggested discussing sharing some items." This gap suggests:',
     opts: [
-      'The narrator is biased against Robert',
+      'The narrator is biased against Robert and deliberately inflates the size of what he asked for',
       "There is a significant difference between Robert's stated intention and how his request was perceived",
-      'Sarah invented most of the confrontation',
-      'The narrator made a factual error',
+      'Sarah invented most of the confrontation, since Robert never mentioned the bigger items at all',
+      'The narrator made a factual error when adding up the value of the gifts',
     ],
     correct: 1,
     explanation:
@@ -437,10 +437,10 @@ const FINAL_QS: Question[] = [
     type: 'Critical Thinking',
     q: 'If you had to identify the ROOT cause of this conflict, which is most accurate?',
     opts: [
-      "Robert's financial greed",
-      "Sarah's selfishness and lack of gratitude",
+      "Robert's financial greed, which appeared once Emma was pregnant",
+      "Sarah's selfishness and lack of gratitude towards Robert",
       'No expectations were discussed when the gifts were originally given',
-      "Emma's decision to have a baby",
+      "Emma's decision to have a baby when she did",
     ],
     correct: 2,
     explanation:
@@ -450,10 +450,10 @@ const FINAL_QS: Question[] = [
     type: 'Inference',
     q: 'Sarah says Robert "genuinely seemed shocked" when refused. What does this reaction suggest about Robert?',
     opts: [
-      'Robert was pretending to be surprised as a tactic',
+      'Robert was pretending to be surprised as a tactic to make Sarah feel guilty',
       'Robert had genuinely not anticipated that Sarah would view his request as unreasonable',
-      'Robert knew Sarah would refuse and was testing her',
-      'Robert had never been refused anything in his life',
+      'Robert knew Sarah would refuse and was testing her loyalty to the family',
+      'Robert had never been refused anything in his life and could not cope with it',
     ],
     correct: 1,
     explanation:
@@ -463,10 +463,10 @@ const FINAL_QS: Question[] = [
     type: 'Vocabulary & Register',
     q: 'Robert refers to his son and daughter-in-law as "those kids." What does this word choice suggest?',
     opts: [
-      'His son and Sarah are literally young children',
+      'His son and Sarah are literally young children who still depend on him financially',
       'Robert sees himself as the authority figure and them as less experienced people he helped',
-      'Robert has forgotten their names',
-      'It is a formal, affectionate term in English',
+      'Robert has forgotten their names and cannot bring himself to ask again',
+      'It is a formal, affectionate term in English that older relatives commonly use about younger adults',
     ],
     correct: 1,
     explanation:

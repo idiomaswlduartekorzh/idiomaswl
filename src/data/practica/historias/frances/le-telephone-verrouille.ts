@@ -209,9 +209,9 @@ const NARRATOR_QS: Question[] = [
     type: 'Pensamiento crítico',
     q: '« Un refus était déjà une réponse. » Quelle supposition se cache derrière cette phrase ?',
     opts: [
-      'Que les gens qui refusent sont souvent fatigués ou occupés',
+      "Que tout refus s'explique par la fatigue ou le manque de temps, jamais par un principe qu'on défend",
       "Qu'un innocent aurait accepté, donc le refus est lui-même une preuve de culpabilité",
-      'Que Julien avait promis de partager son téléphone',
+      "Que Julien lui avait déjà promis de partager son téléphone quand ils ont emménagé ensemble",
       'Que refuser est toujours impoli en français',
     ],
     correct: 1,
@@ -225,10 +225,10 @@ const A_QS: Question[] = [
     type: 'Comprensión',
     q: "D'après Camille, que voulait-elle vraiment en demandant le téléphone ?",
     opts: [
-      'Lire deux ans de messages',
-      'Savoir qui avait envoyé la notification pendant le dîner',
+      "Lire les deux ans de messages qu'elle n'avait jamais pu voir depuis le début",
+      "Savoir qui avait envoyé la notification qui a fait s'allumer l'écran pendant le dîner de vendredi",
       "Le voir le lui tendre de son plein gré — la demande était un test",
-      'Vérifier son historique de localisation',
+      "Vérifier son historique de localisation, puisque c'est justement ce que Julien redoute",
     ],
     correct: 2,
     explanation:
@@ -240,8 +240,8 @@ const A_QS: Question[] = [
     opts: [
       'Elle est grammaticalement incorrecte',
       "Elle assimile le refus à la culpabilité : aucune réponse de Julien ne peut le disculper",
-      'Elle montre que Camille sait déjà ce qui est sur le téléphone',
-      "Elle prouve que Camille ne tient pas à la relation",
+      "Elle montre que Camille sait déjà ce qui se trouve sur le téléphone et qu'elle cherche seulement une confirmation",
+      "Elle prouve que Camille ne tient pas assez à la relation pour lui faire confiance",
     ],
     correct: 1,
     explanation:
@@ -251,10 +251,10 @@ const A_QS: Question[] = [
     type: 'Tono',
     q: 'Comment décrirais-tu le mieux le ton du message vocal de Camille ?',
     opts: [
-      'Calme, mesuré et analytique',
+      "Calme et mesuré, elle analyse la soirée point par point",
       'Formel et professionnel',
       'En colère et sarcastique, mais encadré par le doute et la blessure',
-      'Léger et amusé du début à la fin',
+      "Léger et amusé, comme une anecdote qu'on raconte entre amis",
     ],
     correct: 2,
     explanation:
@@ -264,9 +264,9 @@ const A_QS: Question[] = [
     type: 'Vocabulario',
     q: '« De limites. Bien sûr. » Que fait Camille avec cette réponse ?',
     opts: [
-      "Elle reconnaît poliment que les limites comptent dans un couple",
+      "Elle reconnaît poliment que les limites comptent dans un couple, même si celle-ci tombe au mauvais moment",
       'Elle reprend son mot à lui de façon sarcastique pour le rejeter comme une excuse',
-      "Elle lui demande d'expliquer le mot",
+      "Elle lui demande d'expliquer ce qu'il entend exactement par « limites »",
       'Elle cite une psychologue',
     ],
     correct: 1,
@@ -279,8 +279,8 @@ const A_QS: Question[] = [
     opts: [
       'Elle cite un texte juridique',
       "Elle cite les mots de Julien pour s'en distancier et signaler qu'elle rejette l'accusation",
-      'Cette expression exige toujours des guillemets en français',
-      'Elle ne sait pas comment la traduire',
+      "Cette expression toute faite exige toujours des guillemets quand on la met par écrit en français",
+      "Elle ne sait pas comment traduire cette expression et la met entre guillemets par prudence",
     ],
     correct: 1,
     explanation:
@@ -293,8 +293,8 @@ const B_QS: Question[] = [
     type: 'Comprensión',
     q: 'Quelle raison Julien donne-t-il à son refus ?',
     opts: [
-      "Il y a des messages qu'il ne veut pas qu'elle voie",
-      'Le téléphone appartient à son entreprise',
+      "Il y a sur ce téléphone des messages qu'il ne veut pas qu'elle voie, même s'ils sont anodins",
+      "Le téléphone appartient à son entreprise et il n'a pas le droit de le prêter",
       "Pas qu'il cache quelque chose — mais qu'accepter une fois installerait une attente permanente de contrôle",
       'Il avait oublié son mot de passe',
     ],
@@ -307,9 +307,9 @@ const B_QS: Question[] = [
     q: '« Ce mois-ci le téléphone. Le mois prochain ma localisation. » Quelle technique argumentative est-ce ?',
     opts: [
       "La pente glissante — une petite concession présentée comme le début d'une chaîne",
-      'Une citation exacte de ce que Camille a exigé',
+      "Une citation exacte des exigences que Camille a formulées l'une après l'autre",
       'Une excuse pour son comportement au dîner',
-      "Un récit factuel de ce qui s'est déjà passé",
+      "Un récit factuel de ce qui s'est déjà passé entre eux depuis qu'ils vivent ensemble",
     ],
     correct: 0,
     explanation:
@@ -332,9 +332,9 @@ const B_QS: Question[] = [
     type: 'Pensamiento crítico',
     q: '« Si dire non te rend coupable, alors il n\'y a aucune réponse qui marche. » Que met en évidence Julien ?',
     opts: [
-      'Que Camille ne lui pose jamais de questions',
+      "Que Camille ne lui pose jamais de vraies questions et préfère chercher des preuves",
       "Que la demande ne peut être réussie honnêtement : toute réaction confirme le soupçon",
-      "Qu'il veut mettre fin à la relation",
+      "Qu'il veut mettre fin à la relation et cherche une raison de partir sans passer pour le méchant",
       "Qu'il n'a pas compris la question",
     ],
     correct: 1,
@@ -345,10 +345,10 @@ const B_QS: Question[] = [
     type: 'Tono',
     q: "« J'aurais peut-être pu mieux gérer le moment. Peut-être. » Que produit ce « peut-être » répété ?",
     opts: [
-      'Une prise de responsabilité complète',
+      "Une prise de responsabilité complète, même si elle arrive avec un jour de retard",
       "Une confusion totale sur ce qui s'est passé",
       "Une concession minimale qu'il retire aussitôt — une phrase en forme d'excuse qui n'admet rien",
-      'Un vrai remords avec une envie de changer',
+      "Un vrai remords accompagné d'une vraie envie de changer sa façon de réagir",
     ],
     correct: 2,
     explanation:
@@ -374,9 +374,9 @@ const FINAL_QS: Question[] = [
     type: 'Perspectiva',
     q: 'Camille appelle sa demande « un test ». Julien parle d\'une « enquête » sur lui. Que montre cet écart ?',
     opts: [
-      "L'un des deux ment volontairement sur la soirée",
+      "L'un des deux ment volontairement sur la soirée pour se donner le beau rôle",
       'La même action prend des sens opposés selon ce que chacun croit qu\'elle symbolise',
-      'Aucun des deux ne se souvient clairement de la soirée',
+      "Aucun des deux ne se souvient clairement de la soirée, et chacun reconstruit la scène à sa façon",
       'Julien utilise un vocabulaire plus soutenu que Camille',
     ],
     correct: 1,
@@ -387,10 +387,10 @@ const FINAL_QS: Question[] = [
     type: 'Pensamiento crítico',
     q: 'Quelle est la cause PROFONDE la plus juste de ce conflit ?',
     opts: [
-      'Julien cache quelque chose sur son téléphone',
-      'Camille est tout simplement jalouse',
+      "Julien cache quelque chose sur son téléphone : personne ne prépare un discours sur la vie privée sans raison",
+      "Camille est tout simplement jalouse, et la notification du dîner a suffi à déclencher ses soupçons",
       "Le couple n'avait jamais décidé ce que la vie privée signifiait entre eux avant que ce soit testé",
-      "L'ex-partenaire de Camille",
+      "L'ex-partenaire de Camille, dont le comportement a rendu toute confiance impossible",
     ],
     correct: 2,
     explanation:
@@ -402,8 +402,8 @@ const FINAL_QS: Question[] = [
     opts: [
       'Ils citent le même film',
       "Les deux utilisent la même image de limite pour défendre des positions opposées — chacun se croit celui qui protège une frontière",
-      '« Limite » veut dire quelque chose de complètement différent dans chaque cas',
-      'Cela prouve que Julien copie le vocabulaire de Camille',
+      "« Limite » veut dire quelque chose de complètement différent dans chaque bouche : chez elle une règle du couple, chez lui un espace personnel",
+      "Cela prouve que Julien reprend le vocabulaire de Camille pour retourner l'accusation contre elle",
     ],
     correct: 1,
     explanation:
@@ -413,9 +413,9 @@ const FINAL_QS: Question[] = [
     type: 'Inferencia',
     q: "« S'il me l'avait simplement donné, je ne l'aurais même pas ouvert. » Que révèle cette phrase ?",
     opts: [
-      'Camille mentait quand elle disait vouloir voir le téléphone',
+      "Camille mentait quand elle disait vouloir voir le téléphone, puisqu'elle reconnaît maintenant qu'elle ne l'aurait même pas ouvert : ce qu'elle voulait, c'était le prendre en défaut",
       "Camille cherchait à être rassurée, pas informée — et la seule chose qui l'aurait rassurée était exactement le geste que Julien refuse par principe",
-      'Camille avait déjà ouvert le téléphone plus tôt',
+      "Camille avait déjà ouvert le téléphone plus tôt dans la semaine et savait donc qu'il n'y avait rien",
       'Camille ne connaît pas son mot de passe',
     ],
     correct: 1,

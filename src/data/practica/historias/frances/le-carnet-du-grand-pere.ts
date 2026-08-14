@@ -169,9 +169,9 @@ const NARRATOR_QS: Question[] = [
     type: 'Vocabulario',
     q: 'Le narrateur dit que Bernard a acheté « une poussette haut de gamme ». Que signale ce choix de mots ?',
     opts: [
-      'Il achetait des choses pratiques et abordables',
+      "Il achetait des choses pratiques, solides et surtout abordables",
       "Il dépensait beaucoup, sur des produits chers et haut de gamme",
-      "Il préférait acheter d'occasion",
+      "Il préférait acheter d'occasion pour dépenser le moins possible",
       "Il n'achetait qu'en promotion",
     ],
     correct: 1,
@@ -182,8 +182,8 @@ const NARRATOR_QS: Question[] = [
     type: 'Inferencia',
     q: 'Le narrateur utilise « Soudain » pour décrire le changement de Bernard. Qu\'est-ce que cela implique ?',
     opts: [
-      'Le changement a été progressif et attendu depuis longtemps',
-      'Bernard avait toujours prévu de récupérer les affaires',
+      "Le changement a été progressif et attendu depuis longtemps par toute la famille",
+      "Bernard avait prévu depuis le début de récupérer les affaires, et il a seulement attendu le bon moment",
       "Le basculement est arrivé juste après un événement précis : la grossesse de sa fille",
       'Chloé a personnellement demandé les affaires à Bernard',
     ],
@@ -208,9 +208,9 @@ const NARRATOR_QS: Question[] = [
     type: 'Pensamiento crítico',
     q: '« Tout le monde a pensé qu\'il était simplement généreux. » Que suggère le mot « simplement » ?',
     opts: [
-      "Bernard était clairement généreux, sans arrière-pensée",
+      "Bernard était clairement généreux, sans la moindre arrière-pensée derrière ses cadeaux",
       "Il y avait peut-être autre chose derrière cette générosité qu'on n'a pas vu à l'époque",
-      'La famille savait depuis toujours que Bernard posait des conditions',
+      "La famille savait depuis toujours que Bernard posait des conditions à chaque cadeau, sans jamais le dire",
       'Bernard cherchait ouvertement à contrôler la famille',
     ],
     correct: 1,
@@ -224,9 +224,9 @@ const A_QS: Question[] = [
     type: 'Vocabulario',
     q: "Élodie compare la visite de Bernard à « l'inventaire d'un entrepôt ». Que fait cette comparaison ?",
     opts: [
-      'Une métaphore — Bernard a vraiment déplacé ses meubles',
+      "Une métaphore — Bernard a vraiment vidé la chambre et déplacé les meubles lui-même",
       "Une comparaison — elle le montre froid et commerçant, traitant les cadeaux comme du stock récupérable",
-      'Une hyperbole — elle exagère juste pour faire rire',
+      "Une hyperbole — elle exagère volontairement la scène pour faire rire son amie et rendre Bernard ridicule",
       'Une personnification — elle donne des traits humains au tableau',
     ],
     correct: 1,
@@ -237,8 +237,8 @@ const A_QS: Question[] = [
     type: 'Inferencia',
     q: '« Qui garde les reçus des cadeaux de naissance ? » Que sous-entend cette question rhétorique ?',
     opts: [
-      'Que tout le monde devrait garder ses reçus',
-      "Que Bernard est seulement très ordonné, rien de plus",
+      "Que tout le monde devrait garder ses reçus pendant au moins trois ans",
+      "Que Bernard est seulement quelqu'un de très ordonné, comme il le dit lui-même dans sa version",
       "Que les reçus prouvent que Bernard comptait récupérer les affaires depuis le début",
       "Qu'Élodie a perdu ses propres reçus",
     ],
@@ -276,10 +276,10 @@ const A_QS: Question[] = [
     type: 'Registro',
     q: "« Monsieur, c'est votre petit-fils, pas un portefeuille immobilier. » Que fait Élodie ?",
     opts: [
-      "Elle parle sérieusement de son activité immobilière",
+      "Elle parle sérieusement des placements immobiliers de Bernard, puisqu'il vient de mentionner le patrimoine familial juste avant",
       "Elle utilise l'ironie et un vouvoiement soudain pour souligner qu'il traite la famille comme un investissement",
       "Elle approuve poliment son point de vue",
-      'Elle cite le tableau mot pour mot',
+      "Elle cite le tableau mot pour mot, ligne après ligne, pour lui montrer l'absurdité",
     ],
     correct: 1,
     explanation:
@@ -292,9 +292,9 @@ const B_QS: Question[] = [
     type: 'Vocabulario',
     q: 'Bernard dit que les affaires pourraient être « transmises ». À quelle tradition ce mot renvoie-t-il ?',
     opts: [
-      'Rapporter un article en magasin pour se faire rembourser',
+      "Rapporter un article en magasin pour se faire rembourser, ce qui expliquerait pourquoi Bernard a gardé les reçus",
       "La pratique familiale de passer des biens d'un membre à un autre au fil des générations",
-      'Une procédure légale de succession',
+      "Une procédure légale de succession, comme un héritage réglé devant notaire",
       'Faire un don à une association',
     ],
     correct: 1,
@@ -318,10 +318,10 @@ const B_QS: Question[] = [
     type: 'Inferencia',
     q: "« Ce qui m'a blessé, ce n'était même pas les affaires. C'était l'attitude. » Que révèle cette phrase ?",
     opts: [
-      "Il fait seulement semblant de se moquer des objets",
+      "Il fait seulement semblant de se moquer des objets pour paraître désintéressé",
       "Il se sent méprisé sur le plan affectif, malgré des années de générosité",
       "Il veut écarter Élodie de la famille",
-      "Il regrette d'avoir acheté les cadeaux",
+      "Il regrette aujourd'hui d'avoir acheté tous ces cadeaux si chers",
     ],
     correct: 1,
     explanation:
@@ -344,10 +344,10 @@ const B_QS: Question[] = [
     type: 'Vocabulario',
     q: '« Apparemment c\'est moi le méchant maintenant. » Que révèle le mot « méchant » ?',
     opts: [
-      "Il reconnaît totalement avoir mal agi",
+      "Il reconnaît totalement avoir mal agi et accepte le reproche que toute la famille lui adresse maintenant",
       "Il se sent injustement placé dans le rôle du méchant d'une histoire racontée par d'autres",
       "Il emploie un terme juridique technique",
-      'Il cherche la pitié par la flatterie',
+      "Il cherche la pitié par la flatterie, en complimentant ceux qui l'accusent",
     ],
     correct: 1,
     explanation:
@@ -373,10 +373,10 @@ const FINAL_QS: Question[] = [
     type: 'Perspectiva',
     q: "Le narrateur dit que Bernard a demandé « le retour de plusieurs milliers d'euros d'affaires ». Bernard dit avoir « proposé d'en discuter ». Que montre cet écart ?",
     opts: [
-      'Le narrateur est hostile à Bernard',
+      "Le narrateur est hostile à Bernard et choisit les mots les plus durs pour raconter la scène",
       "Il y a un grand écart entre l'intention affichée de Bernard et la façon dont sa demande a été reçue",
-      "Élodie a inventé l'essentiel de la scène",
-      "Le narrateur s'est trompé sur les faits",
+      "Élodie a inventé l'essentiel de la scène, puisque dans sa version Bernard n'a jamais demandé qu'on lui rende quoi que ce soit",
+      "Le narrateur s'est trompé sur les faits en additionnant des sommes que personne n'a réclamées",
     ],
     correct: 1,
     explanation:
@@ -386,10 +386,10 @@ const FINAL_QS: Question[] = [
     type: 'Pensamiento crítico',
     q: 'Quelle est la cause PROFONDE la plus juste de ce conflit ?',
     opts: [
-      "L'avidité de Bernard",
-      "L'ingratitude d'Élodie",
+      "L'avidité de Bernard, qui a gardé les reçus pendant trois ans en attendant de pouvoir tout reprendre",
+      "L'ingratitude d'Élodie, qui a profité pendant trois ans sans jamais remercier celui qui payait",
       "Aucune attente n'a été discutée au moment où les cadeaux ont été faits",
-      "La décision de Chloé d'avoir un enfant",
+      "La décision de Chloé d'avoir un enfant au moment où elle galère financièrement",
     ],
     correct: 2,
     explanation:
@@ -412,10 +412,10 @@ const FINAL_QS: Question[] = [
     type: 'Registro',
     q: 'Bernard appelle son fils et sa belle-fille « ces enfants ». Que suggère ce choix de mots ?',
     opts: [
-      'Son fils et Élodie sont littéralement des enfants',
+      "Son fils et Élodie sont littéralement des enfants, encore trop jeunes pour gérer un budget",
       "Bernard se voit comme l'autorité et eux comme des gens moins expérimentés qu'il a aidés",
       'Bernard a oublié leurs prénoms',
-      "C'est une formule affectueuse et formelle en français",
+      "C'est une formule affectueuse et un peu vieillie, courante chez les grands-parents quand ils parlent du couple",
     ],
     correct: 1,
     explanation:
