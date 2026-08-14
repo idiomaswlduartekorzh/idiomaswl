@@ -91,6 +91,30 @@
           "sexo": "male",
           "caracteres": 2053,
           "motivo": "WL en · Grandpa Sam · masculina mayor, para el dueño"
+        },
+        "ingles/the-cash-bar/a": {
+          "voice_id": "FGY2WhTYpPnrIDTdsKH5",
+          "personaje": "Priya",
+          "papel": "the guest",
+          "sexo": "female",
+          "caracteres": 1950,
+          "motivo": "Laura · social_media, joven, «quirky attitude». Primera tanda con el criterio de energía: Priya despotrica con una amiga, no narra."
+        },
+        "ingles/the-cash-bar/b": {
+          "voice_id": "EXAVITQu4vr4xnSDxMaL",
+          "personaje": "Nadia",
+          "papel": "the bride",
+          "sexo": "female",
+          "caracteres": 1694,
+          "motivo": "Sarah · entertainment_tv, «mature, confident». Tenía que sonar CLARAMENTE distinta de Priya: son las dos voces femeninas seguidas del mismo ejercicio."
+        },
+        "ingles/the-cash-bar/c": {
+          "voice_id": "bIHbv24MWmeRgasZH58o",
+          "personaje": "Owen",
+          "papel": "the groom",
+          "sexo": "male",
+          "caracteres": 1965,
+          "motivo": "Will · conversational, joven, americano. La suya es una confesión larga: hace falta cercanía, no locución."
         }
       }
     },

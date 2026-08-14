@@ -13,6 +13,7 @@ import { balanceHistoria, hasAudio } from './types';
 import { theLockedPhone } from './ingles/the-locked-phone';
 import { theGrandfathersLedger } from './ingles/the-grandfathers-ledger';
 import { theTipScreen } from './ingles/the-tip-screen';
+import { theCashBar } from './ingles/the-cash-bar';
 import { dasGesperrteHandy } from './aleman/das-gesperrte-handy';
 import { dasKassenbuchDesGrossvaters } from './aleman/das-kassenbuch-des-grossvaters';
 import { leTelephoneVerrouille } from './frances/le-telephone-verrouille';
@@ -55,7 +56,7 @@ export const HISTORIA_LANGS: Record<HistoriaLang, HistoriaLangMeta> = {
 // la opción correcta donde caiga —es más fácil redactarlas así— y el reparto de
 // posiciones se hace aquí, una sola vez. Ver la nota en types.ts sobre por qué.
 const raw: Record<HistoriaLang, Historia[]> = {
-  ingles:    [theLockedPhone, theGrandfathersLedger, theTipScreen],
+  ingles:    [theLockedPhone, theGrandfathersLedger, theTipScreen, theCashBar],
   aleman:    [dasGesperrteHandy, dasKassenbuchDesGrossvaters],
   frances:   [leTelephoneVerrouille, leCarnetDuGrandPere],
   italiano:  [ilTelefonoCapovolto, ilQuadernoDelNonno],
