@@ -273,12 +273,18 @@ function WriteView({ q, value, onChange }: { q: WriteQuestion; value: string; on
 
 function RepeatView({ q }: { q: RepeatQuestion }) {
   const [revealed, setRevealed] = useState(false);
+  const blocked = q.mediaStatus === 'script-ready-audio-blocked';
   return (
-    <div className="ielts-speak t26-repeat">
+    <div className="ielts-speak t26-repeat" data-media-status={q.mediaStatus}>
       <div className="ielts-group__label">
         <span className="ielts-group__range">Listen and Repeat — Item {q.itemNumber}</span>
       </div>
-      <AudioPlayer src={q.audioUrl} label={`Sentence ${q.itemNumber}`} />
+      {q.audioUrl && <AudioPlayer src={q.audioUrl} label={`Sentence ${q.itemNumber}`} />}
+      {blocked && (
+        <p className="t26-audio-blocked" role="status">
+          Audio pendiente de aprobación. Este guion se incluye para revisión editorial y no se evalúa todavía.
+        </p>
+      )}
       <p className="t26-repeat__instruction">Escucha la oración y repítela en voz alta con la misma pronunciación, ritmo y entonación.</p>
       <button className="btn btn-ghost btn-sm" onClick={() => setRevealed(r => !r)}>
         {revealed ? 'Ocultar texto' : 'Ver texto de la oración'}
@@ -789,7 +795,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
         else if (q.type === 'toefl-build-sentence') { total++; if ((ans.buildV2[q.id] ?? []).length === q.blankCount) done++; }
         else if (q.type === 'write') { total++; if ((ans.write[q.id] ?? '').trim()) done++; }
         else if (q.type === 'speak') { total++; if ((ans.speak[q.id] ?? '').trim()) done++; }
-        else if (q.type === 'repeat') { total++; done++; }
+        else if (q.type === 'repeat' && q.mediaStatus !== 'script-ready-audio-blocked') { total++; done++; }
       }
     }
     return [sk, { done, total }];
@@ -797,7 +803,8 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
   const totalAnswered = Object.values(progressMap).reduce((a, p) => a + p.done, 0);
   const totalQs = Object.values(progressMap).reduce((a, p) => a + p.total, 0);
   const blockedAudioItems = mock.sections.flatMap((section) => section.questions)
-    .filter((question) => question.type === 'toefl-listening-single' && question.mediaStatus === 'script-ready-audio-blocked').length;
+    .filter((question) => (question.type === 'toefl-listening-single' || question.type === 'repeat')
+      && question.mediaStatus === 'script-ready-audio-blocked').length;
   const blueprintItems = totalQs + blockedAudioItems;
 
   const hasWriteAI = getSkillSections(mock, 'writing').flatMap(s => s.questions).some(q => q.type === 'write');
@@ -982,10 +989,12 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
     );
   }
   if (phase === 'assess-speak') {
-    const rows = getSkillSections(mock, 'speaking').flatMap(s => s.questions).map(q => {
-      if (q.type === 'repeat') return { key: q.id, label: `Listen and Repeat — Item ${(q as RepeatQuestion).itemNumber}` };
-      return { key: q.id, label: `Take an Interview — Q${(q as SpeakQuestion).partNumber}` };
-    });
+    const rows = getSkillSections(mock, 'speaking').flatMap(s => s.questions)
+      .filter((question) => question.type !== 'repeat' || question.mediaStatus !== 'script-ready-audio-blocked')
+      .map(q => {
+        if (q.type === 'repeat') return { key: q.id, label: `Listen and Repeat — Item ${(q as RepeatQuestion).itemNumber}` };
+        return { key: q.id, label: `Take an Interview — Q${(q as SpeakQuestion).partNumber}` };
+      });
     return (
       <div className="prac-shell"><style>{T26_CSS}</style>
         <SelfAssessModal title="Speaking (Listen and Repeat + Interview)" rows={rows} bands={speakBands}

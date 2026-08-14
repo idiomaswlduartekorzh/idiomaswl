@@ -37,6 +37,8 @@
     "test:toefl-fixed-reading": "node --experimental-strip-types --no-warnings --test tests/toefl-fixed-reading.test.mjs",
     "check:toefl-fixed-listening": "node --experimental-strip-types --no-warnings scripts/check-toefl-fixed-listening.mjs",
     "test:toefl-fixed-listening": "node --experimental-strip-types --no-warnings --test tests/toefl-fixed-listening.test.mjs",
+    "check:toefl-fixed-speaking": "node --experimental-strip-types --no-warnings scripts/check-toefl-fixed-speaking.mjs",
+    "test:toefl-fixed-speaking": "node --experimental-strip-types --no-warnings --test tests/toefl-fixed-speaking.test.mjs",
     "check:toefl-build-sentence": "node --experimental-strip-types --no-warnings scripts/check-toefl-build-sentence.mjs",
     "test:toefl-build-sentence": "node --experimental-strip-types --no-warnings --test tests/toefl-build-sentence.test.mjs",
     "check:toefl-writing": "node --experimental-strip-types --no-warnings scripts/check-toefl-writing-constructed.mjs",

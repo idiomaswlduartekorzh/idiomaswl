@@ -246,6 +246,8 @@ export interface RepeatQuestion {
   part: number;
   itemNumber: number;
   audioUrl?: string;      // audio of the sentence to repeat (may not exist yet)
+  mediaId?: string;
+  mediaStatus?: 'ready-existing' | 'script-ready-audio-blocked';
   targetSentence: string; // the sentence to repeat (also the audio script)
 }
 

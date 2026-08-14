@@ -144,3 +144,13 @@ El total compuesto por set queda en 95/97: Reading 40, Listening 34, Writing 12 
 Speaking 9. No es producto terminado: faltan dos Repeat, navegación, relojes, resultados
 y gates de preview/audio. Evidencia y límites en
 `docs/toefl-2026-listening-fixed-runtime-audit-2026-08-14.md`.
+
+## Avance posterior — Speaking fijo Sets 1–20
+
+Cada set conserva cinco Repeat y cuatro Interview y agrega dos Repeat escritos, por lo
+que Speaking queda 7 + 4 = 11 y la forma completa alcanza 97/97 interacciones. Los
+cuarenta medios nuevos siguen bloqueados y no se contabilizan como presentados ni
+evaluados. La composición está completa; la experiencia operacional todavía no.
+
+Evidencia editorial y técnica:
+`docs/toefl-2026-speaking-fixed-expansion-audit-2026-08-14.md`.

@@ -3,6 +3,7 @@ import type {
   MockExam,
   MockSection,
   Question,
+  RepeatQuestion,
   ToeflListeningSingleQuestion,
 } from './types';
 import { toToeflCompleteWordsQuestion } from './toefl-complete-words-adapter';
@@ -25,6 +26,10 @@ import {
   type ToeflFixedListeningLongStimulus,
   type ToeflListeningTask,
 } from '@/data/toefl/listening-fixed-types';
+import {
+  TOEFL_FIXED_REPEAT_BY_SET,
+  TOEFL_RELEASED_FIXED_REPEAT_MEDIA_IDS,
+} from '@/data/toefl/speaking-fixed-repeat';
 
 const READING_MODULE2_BY_SET = Object.fromEntries(
   [
@@ -366,6 +371,48 @@ export function withToefl2026FixedListening(mock: MockExam): MockExam {
   };
 }
 
+/** Adds Repeat items 6–7 without changing or overwriting the five existing MP3s. */
+export function withToefl2026FixedSpeaking(mock: MockExam): MockExam {
+  const setNumber = Number(mock.id.replace(/^set-/, ''));
+  const additions = TOEFL_FIXED_REPEAT_BY_SET[setNumber];
+  if (!additions || additions.length !== 2) return mock;
+
+  const sections = mock.sections.map((section): MockSection => {
+    if (section.skill !== 'speaking') return section;
+    const repeats = section.questions.filter((question): question is RepeatQuestion => question.type === 'repeat');
+    if (repeats.length === 0) return { ...section, moduleId: 'speaking' };
+
+    const existing = repeats.slice(0, 5).map<RepeatQuestion>((question) => ({
+      ...question,
+      mediaId: `media:toefl:set-${setNumber}:speaking-repeat-${question.itemNumber}-existing`,
+      mediaStatus: 'ready-existing',
+    }));
+    const expanded = additions.map<RepeatQuestion>((entry) => {
+      const released = TOEFL_RELEASED_FIXED_REPEAT_MEDIA_IDS.has(entry.mediaId);
+      return {
+        type: 'repeat',
+        id: entry.id,
+        part: section.part,
+        itemNumber: entry.itemNumber,
+        audioUrl: released ? entry.plannedAudioUrl : undefined,
+        mediaId: entry.mediaId,
+        mediaStatus: released ? 'ready-existing' : 'script-ready-audio-blocked',
+        targetSentence: entry.targetSentence,
+      };
+    });
+    return {
+      ...section,
+      moduleId: 'speaking',
+      sectionNote: 'Siete Listen and Repeat forman la práctica fija. Los dos guiones añadidos permanecen bloqueados hasta que el owner apruebe y valide sus audios.',
+      questions: [...existing, ...expanded],
+    };
+  });
+
+  return { ...mock, sections: renumberSections(sections) };
+}
+
 export function withToefl2026FixedForm(mock: MockExam): MockExam {
-  return withToefl2026FixedListening(withToefl2026ReadingModule2(mock));
+  return withToefl2026FixedSpeaking(
+    withToefl2026FixedListening(withToefl2026ReadingModule2(mock)),
+  );
 }
