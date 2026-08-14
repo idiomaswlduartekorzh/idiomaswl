@@ -116,6 +116,32 @@
   line-height: 1.7;
 }
 
+.practiceScope {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.8rem;
+  align-items: start;
+  margin-top: 0.75rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid #d9deea;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.practiceScope strong {
+  color: #176b87;
+  font: 900 0.72rem/1.5 var(--mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.practiceScope p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
 .journeyNav {
   position: sticky;
   top: 5.25rem;
@@ -330,6 +356,7 @@
 
 @media (max-width: 520px) {
   .page { padding: max(1rem, env(safe-area-inset-top)) 0.5rem 4rem; }
+  .practiceScope { grid-template-columns: 1fr; }
   .journeyNav { top: 0.5rem; }
   .actions a { width: 100%; justify-content: center; min-height: 44px; }
 }

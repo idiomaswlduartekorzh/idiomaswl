@@ -1,7 +1,9 @@
 'use client';
 
 import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 import Task1ChartTypeGuide from './Task1ChartTypeGuide';
+import styles from './Task1Hub.module.css';
 
 const RESPONSE_PLAN = [
   {
@@ -171,136 +173,75 @@ const TASK1_FAQS = [
 
 export default function Task1HubPage() {
   return (
-    <section className="wl-section" lang="en">
-      <div className="wrap">
-        <div style={{ maxWidth: 1120, margin: '0 auto' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.75rem', flexWrap: 'wrap' }}>
-            <Link href="/practica/ielts/academic/writing" className="btn btn-ghost btn-sm" style={{ fontSize: '0.82rem' }}>← Writing</Link>
-            <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>IELTS / Academic / Writing / Task 1</span>
+    <div className={styles.page} lang="en">
+      <div className={styles.shell}>
+        <nav className={styles.breadcrumb} aria-label="Breadcrumb">
+          <Link href="/practica/ielts/academic/writing">Academic Writing</Link><span aria-hidden="true">/</span><span aria-current="page">Task 1</span>
+        </nav>
+
+        <header className={styles.hero}>
+          <p className={styles.eyebrow}>IELTS Academic Writing Task 1</p>
+          <h1>Read the visual. Build one clear response.</h1>
+          <p className={styles.heroLead}>Separate response architecture from the visual-analysis tools used inside it. Follow the four-part WeLearn plan, practise one visual type, or strengthen a transferable data-writing skill.</p>
+          <div className={styles.factGrid} aria-label="Official Task 1 facts">
+            <div className={styles.fact}><strong>150+</strong><span>minimum words in the complete response</span></div>
+            <div className={styles.fact}><strong>≈20 min</strong><span>recommended working time for Task 1</span></div>
+            <div className={styles.fact}><strong>1 visual task</strong><span>chart, table, process, map or combined input</span></div>
+            <div className={styles.fact}><strong>4 criteria</strong><span>used to assess the complete response</span></div>
           </div>
+        </header>
 
-          <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />IELTS Academic Writing Task 1</p>
-          <h1 style={{ fontSize: '2rem', letterSpacing: 0, margin: '0 0 0.5rem', fontWeight: 700 }}>
-            IELTS Academic Writing Task 1: response architecture and practice
-          </h1>
-          <p style={{ color: 'var(--muted)', fontSize: '1rem', margin: '0 0 0.5rem', lineHeight: 1.6 }}>
-            Describe visual information in at least 150 words. Task 1 is usually managed in about 20 minutes. Use the four-paragraph WeLearn study plan to turn analysis into a focused response.
-          </p>
-
-          <div style={{ display: 'flex', gap: '0.4rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
-            {['Line graphs','Bar charts','Pie charts','Tables','Processes','Maps','Mixed'].map(t => (
-              <span key={t} style={{ fontSize: '0.72rem', padding: '0.2rem 0.65rem', borderRadius: 20, background: 'rgba(15,61,140,0.07)', color: '#0f3d8c', border: '1px solid rgba(15,61,140,0.2)', fontFamily: 'var(--mono)', fontWeight: 600 }}>{t}</span>
-            ))}
+        <section className={styles.section} aria-labelledby="official-heading">
+          <div className={styles.sectionHeading}>
+            <p className={styles.kicker}>Official format versus WeLearn strategy</p>
+            <h2 id="official-heading">One official task, two layers of study</h2>
+            <p>IELTS asks for a connected description of visual information. The four-part response plan and the skill routes below are WeLearn study tools, not extra official tasks or mandatory paragraph word counts.</p>
           </div>
-
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-              gap: '1rem',
-              marginBottom: '2rem',
-            }}
-          >
-            <h2 style={{ gridColumn: '1 / -1', margin: '0', fontSize: '1.2rem' }}>Official format versus WeLearn strategy</h2>
-            <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: '#fff' }}>
-              <h2 style={{ marginTop: 0, fontSize: '1.05rem' }}>Official format</h2>
-              <p style={{ color: 'var(--muted)', lineHeight: 1.65, marginBottom: 0 }}>
-                IELTS Academic Writing Task 1 asks you to describe visual information in at least 150 words. The input can be a chart, table, process diagram, map or mixed visual. IELTS does not prescribe paragraph names or a word count for each paragraph.
-              </p>
-            </article>
-            <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: '#f8fafc' }}>
-              <h2 style={{ marginTop: 0, fontSize: '1.05rem' }}>WeLearn response strategy</h2>
-              <p style={{ color: 'var(--muted)', lineHeight: 1.65, marginBottom: 0 }}>
-                Study four paragraphs: Introduction, Overview, Body 1 and Body 2. The word ranges below are guidance for practice, not official IELTS rules. Sub-skills help you build each paragraph; they are not separate tasks.
-              </p>
-            </article>
+          <div className={styles.pathGrid}>
+            <article className={styles.pathCard}><span className={styles.cardLabel}>Official format</span><h3>Describe the visual accurately</h3><p>Write at least 150 words about the main features, comparisons or stages shown. IELTS does not prescribe paragraph names or a word count for each paragraph.</p></article>
+            <article className={styles.pathCard}><span className={styles.cardLabel}>WeLearn response strategy</span><h3>Build a readable evidence hierarchy</h3><p>Use Introduction, Overview, Body 1 and Body 2 as a reliable practice plan, then adapt grouping and language to the specific visual.</p></article>
           </div>
+        </section>
 
-          <section aria-labelledby="response-architecture" style={{ margin: '2.25rem 0' }}>
-            <p className="eyebrow"><span className="ink-line" />Response architecture</p>
-            <h2 id="response-architecture" style={{ margin: '0 0 0.45rem', fontSize: '1.45rem' }}>Build one coherent Task 1 response</h2>
-            <p style={{ maxWidth: 780, margin: '0 0 1rem', color: 'var(--muted)', lineHeight: 1.65 }}>A third body paragraph is optional only for an unusually dense visual. It is not the standard structure and should never replace clear grouping.</p>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(230px, 1fr))', gap: '0.75rem' }}>
-              {RESPONSE_PLAN.map((item) => (
-                <Link key={item.label} href={item.href} style={{ textDecoration: 'none' }}>
-                  <article className="wl-card" style={{ height: '100%', padding: '1rem', borderTop: '4px solid #0f3d8c', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', gap: '0.5rem', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 900, color: '#0f3d8c' }}><span>{item.n}</span><span>{item.range}</span></div>
-                    <h3 style={{ margin: 0, fontSize: '1.08rem', color: 'var(--ink)' }}>{item.label}</h3>
-                    <p style={{ margin: 0, color: 'var(--ink-2)', lineHeight: 1.55, fontSize: '0.86rem' }}>{item.purpose}</p>
-                    <p style={{ margin: 'auto 0 0', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 800 }}>{item.skills} →</p>
-                  </article>
-                </Link>
-              ))}
-            </div>
-          </section>
-
-          <Task1ChartTypeGuide />
-
-          <section aria-labelledby="paragraph-toolkit" style={{ marginTop: '2.25rem' }}>
-            <p className="eyebrow"><span className="ink-line" />Paragraph toolkit</p>
-            <h2 id="paragraph-toolkit" style={{ margin: '0 0 0.45rem', fontSize: '1.45rem' }}>Use a sub-skill to solve a paragraph decision</h2>
-            <p style={{ maxWidth: 820, margin: '0 0 1rem', color: 'var(--muted)', lineHeight: 1.65 }}>
-              Paragraphs are the response structure. The linked lessons below are the reusable tools that help you make each paragraph work for charts, tables, processes and maps.
-            </p>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '0.75rem' }}>
-              {PARAGRAPH_TOOLKIT.map((item) => (
-                <article key={item.paragraph} className="wl-card" style={{ padding: '1rem', borderTop: '3px solid #0f3d8c' }}>
-                  <h3 style={{ margin: '0 0 0.4rem', fontSize: '1.02rem' }}>{item.paragraph}</h3>
-                  <p style={{ margin: '0 0 0.75rem', color: 'var(--ink-2)', fontSize: '0.86rem', lineHeight: 1.55 }}>{item.role}</p>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
-                    {item.tools.map((tool) => (
-                      <Link key={tool.href} href={tool.href} style={{ border: '1px solid rgba(15,61,140,0.2)', borderRadius: 999, color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 800, padding: '0.24rem 0.5rem', textDecoration: 'none' }}>
-                        {tool.label}
-                      </Link>
-                    ))}
-                  </div>
-                </article>
-              ))}
-            </div>
-          </section>
-
-          <section aria-labelledby="transferable-skills" style={{ marginTop: '2.25rem' }}>
-            <p className="eyebrow"><span className="ink-line" />Transferable sub-skills</p>
-            <h2 id="transferable-skills" style={{ margin: '0 0 0.45rem', fontSize: '1.45rem' }}>The tools that make the paragraphs work</h2>
-            <p style={{ margin: '0 0 1rem', color: 'var(--muted)', lineHeight: 1.65 }}>Choose a skill after you know which paragraph and which visual decision you need to improve.</p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1rem' }}>
-            {SKILLS.map(sk => (
-              <Link key={sk.id} href={sk.href}
-                style={{ textDecoration: 'none' }}
-              >
-                <div className="wl-card" style={{ padding: '1.25rem', height: '100%', borderTop: '3px solid #0f3d8c', cursor: 'pointer', transition: 'transform 0.15s, box-shadow 0.15s', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-                    <span style={{ fontSize: '1.5rem' }}>{sk.icon}</span>
-                    <span style={{ fontSize: '0.68rem', fontFamily: 'var(--mono)', fontWeight: 800, color: '#0f3d8c', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-                      Sub-skill {sk.n}
-                    </span>
-                  </div>
-                  <h3 style={{ margin: 0, fontWeight: 700, fontSize: '1.05rem', color: 'var(--ink)' }}>{sk.label}</h3>
-                  <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--ink-2)', lineHeight: 1.6, flex: 1 }}>{sk.desc}</p>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '0.25rem' }}>
-                    <span style={{ fontSize: '0.7rem', padding: '0.15rem 0.5rem', borderRadius: 10, background: 'rgba(15,61,140,0.07)', color: '#0f3d8c', border: '1px solid rgba(15,61,140,0.15)', fontFamily: 'var(--mono)', fontWeight: 600 }}>{sk.tag}</span>
-                    <span style={{ fontSize: '0.82rem', color: '#0f3d8c', fontWeight: 700 }}>Practise →</span>
-                  </div>
-                </div>
+        <section className={styles.section} aria-labelledby="response-architecture">
+          <div className={styles.sectionHeading}><p className={styles.kicker}>Path A · Build the response</p><h2 id="response-architecture">The response architecture</h2><p>A third body paragraph is optional only for an unusually dense visual. It should never replace clear grouping.</p></div>
+          <div className={styles.sequenceGrid}>
+            {RESPONSE_PLAN.map((item) => (
+              <Link key={item.label} href={item.href} className={styles.sequenceCard}>
+                <div className={styles.sequenceTop}><span className={styles.sequenceNumber}>{item.n}</span><span className={styles.sequenceRange}>{item.range}</span></div>
+                <h3>{item.label}</h3><p>{item.purpose}</p><small>{item.skills} <ArrowRight size={15} aria-hidden="true" /></small>
               </Link>
             ))}
           </div>
-          </section>
+        </section>
 
-          <section aria-labelledby="task1-faqs" style={{ marginTop: '2.25rem' }}>
-            <p className="eyebrow"><span className="ink-line" />Questions learners ask</p>
-            <h2 id="task1-faqs" style={{ margin: '0 0 0.9rem', fontSize: '1.45rem' }}>IELTS Academic Writing Task 1 FAQ</h2>
-            <div style={{ display: 'grid', gap: '0.6rem' }}>
-              {TASK1_FAQS.map((faq) => (
-                <details key={faq.question} className="wl-card" style={{ padding: '0.9rem 1rem' }}>
-                  <summary style={{ cursor: 'pointer', color: 'var(--ink)', fontWeight: 800, lineHeight: 1.45 }}>{faq.question}</summary>
-                  <p style={{ margin: '0.75rem 0 0', color: 'var(--ink-2)', lineHeight: 1.65 }}>{faq.answer}</p>
-                </details>
-              ))}
-            </div>
-          </section>
-        </div>
+        <section className={styles.section} aria-label="Task 1 visual type guide"><Task1ChartTypeGuide /></section>
+
+        <section className={styles.section} aria-labelledby="paragraph-toolkit">
+          <div className={styles.sectionHeading}><p className={styles.kicker}>Path B · Paragraph toolkit</p><h2 id="paragraph-toolkit">Use a sub-skill to solve a paragraph decision</h2><p>Paragraphs are the response structure. These linked lessons are reusable tools for charts, tables, processes and maps.</p></div>
+          <div className={styles.sequenceGrid}>
+            {PARAGRAPH_TOOLKIT.map((item) => (
+              <article key={item.paragraph} className={styles.pathCard}><span className={styles.cardLabel}>Response block</span><h3>{item.paragraph}</h3><p>{item.role}</p><div className={styles.toolLinks}>{item.tools.map((tool) => <Link key={tool.href} href={tool.href}>{tool.label}</Link>)}</div></article>
+            ))}
+          </div>
+        </section>
+
+        <section className={styles.section} aria-labelledby="transferable-skills">
+          <div className={styles.sectionHeading}><p className={styles.kicker}>Path C · Transferable skills</p><h2 id="transferable-skills">The tools that make the paragraphs work</h2><p>Choose a skill after identifying which paragraph and visual decision you need to improve.</p></div>
+          <div className={styles.studyGrid}>
+            {SKILLS.map((skill) => (
+              <Link key={skill.id} href={skill.href} className={styles.studyCard}>
+                <span>{skill.tag}</span><h3>{skill.label}</h3><p>{skill.desc}</p><strong>Practise this skill <ArrowRight size={15} aria-hidden="true" /></strong>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className={styles.section} aria-labelledby="task1-faqs">
+          <div className={styles.sectionHeading}><p className={styles.kicker}>Frequently asked questions</p><h2 id="task1-faqs">Structure without a rigid formula</h2></div>
+          <div className={styles.faqGrid}>{TASK1_FAQS.map((faq) => <article key={faq.question}><h3>{faq.question}</h3><p>{faq.answer}</p></article>)}</div>
+        </section>
       </div>
-    </section>
+    </div>
   );
 }

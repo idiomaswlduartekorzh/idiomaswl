@@ -124,6 +124,13 @@ export default function InternationalReadingSkillLesson({
 
           <p className={styles.answer}><strong>Short answer:</strong> {directAnswer}</p>
 
+          <aside className={styles.practiceScope} aria-label="Practice passage scope">
+            <strong>Practice scope</strong>
+            <p>
+              These are deliberately compact training passages. They isolate one reading decision at a time; they are not full-length IELTS Academic Reading passages or a timed test simulation.
+            </p>
+          </aside>
+
           <nav className={styles.journeyNav} aria-label={`${name} lesson sections`}>
             <span>Choose your next move</span>
             <div>

@@ -779,6 +779,119 @@
 }
 .engineChoiceControl .selectLabel { margin: 0 0 0.35rem; }
 .engineQuestion .feedback { grid-column: 2 / -1; }
+.engineQuestion > button,
+.engineQuestion > .sourceNote {
+  grid-column: 2 / -1;
+  justify-self: start;
+}
+
+.lab > .passagePanel {
+  padding: clamp(1.25rem, 3vw, 2.25rem);
+}
+
+.lab > .passagePanel > * {
+  width: min(100%, 76ch);
+  margin-inline: auto;
+}
+
+.lab > .passagePanel > h3 {
+  margin-top: 0.35rem;
+  font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+}
+
+.lab > .passagePanel section {
+  margin-top: 1.15rem;
+}
+
+.lab > .passagePanel section + section {
+  padding-top: 1.15rem;
+  border-top: 1px solid color-mix(in srgb, var(--mh-line) 72%, transparent);
+}
+
+.lab > .passagePanel h4 {
+  margin: 0 0 0.35rem;
+  color: var(--mh-accent);
+  font: 850 0.76rem/1.35 var(--mono);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.lab > .passagePanel section p {
+  margin: 0;
+  color: var(--ink-2);
+  font-size: clamp(1rem, 1.35vw, 1.08rem);
+  line-height: 1.82;
+}
+
+.evidenceWorkspace {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--mh-line);
+  border-left: 5px solid var(--mh-accent);
+  border-radius: 6px;
+  background: #fff;
+}
+
+.evidenceWorkspaceHeader {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(260px, 1.2fr);
+  gap: 1rem;
+  align-items: end;
+}
+
+.evidenceWorkspaceHeader h3 {
+  margin: 0.25rem 0 0;
+  color: var(--mh-ink);
+  font-size: 1.2rem;
+  letter-spacing: -0.025em;
+}
+
+.evidenceWorkspaceHeader > p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.evidenceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+  gap: 0.75rem;
+}
+
+.evidencePassage {
+  padding: 1rem;
+  border: 1px solid var(--mh-line);
+  border-radius: 6px;
+  background: var(--mh-paper);
+}
+
+.evidencePassage h4 {
+  margin: 0 0 0.8rem;
+  color: var(--mh-ink);
+  font-size: 1.05rem;
+}
+
+.evidencePassage section + section {
+  margin-top: 0.85rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--mh-line);
+}
+
+.evidencePassage h5 {
+  margin: 0 0 0.25rem;
+  color: var(--mh-accent);
+  font: 850 0.68rem/1.3 var(--mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.evidencePassage p {
+  margin: 0;
+  color: var(--ink-2);
+  line-height: 1.7;
+}
 
 .engineFooter {
   align-items: center;
@@ -838,8 +951,11 @@
   .independentCard .feedback,
   .engineChoiceControl,
   .engineQuestion .headingOptionsCompact,
-  .engineQuestion .feedback { grid-column: 2; }
+  .engineQuestion .feedback,
+  .engineQuestion > button,
+  .engineQuestion > .sourceNote { grid-column: 1; }
   .engineQuestion .headingOptionsCompact { grid-column: 1; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .evidenceWorkspaceHeader { grid-template-columns: 1fr; }
   .levelRail { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .flowDrillGrid { grid-template-columns: 1fr; }
 }
@@ -870,7 +986,9 @@
   .independentCard .feedback,
   .engineChoiceControl,
   .engineQuestion .headingOptionsCompact,
-  .engineQuestion .feedback { grid-column: 1; }
+  .engineQuestion .feedback,
+  .engineQuestion > button,
+  .engineQuestion > .sourceNote { grid-column: 1; }
   .engineQuestion .headingOptionsCompact { grid-template-columns: 1fr; }
   .dashboard { grid-template-columns: 1fr; }
   .dashboard > div:not(:last-child) { border-right: 0; border-bottom: 1px solid var(--mh-line); }

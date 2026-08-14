@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { CheckCircle2, Layers3, Route } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Layers3, Route } from 'lucide-react';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 import { BreadcrumbJsonLd, FaqJsonLd } from '@/components/exam-practice/StructuredData';
 import InternationalLearningResourceJsonLd from '@/components/exam-practice/InternationalLearningResourceJsonLd';
+import styles from './page.module.css';
 import {
   IELTS_READING_SKILLS,
   IELTS_READING_TYPES,
@@ -15,7 +16,6 @@ import {
 } from '@/lib/ielts/academic-reading-question-types';
 
 const URL = `${PRACTICE_BASE_URL}/practica/ielts/reading/tipos-de-preguntas`;
-const ACCENT = '#0369a1';
 const QUESTION_TYPE_CONTRACT = IELTS_ACADEMIC_READING_QUESTION_TYPE_CONTRACT;
 const PRODUCT_LABEL = '11 numbered official types · 14 WeLearn routes for practising their formats and variants.';
 
@@ -156,203 +156,92 @@ export default function Page() {
         ]}
       />
 
-      <section className="wl-section" lang="en">
-        <div className="wrap" style={{ maxWidth: 1040 }}>
-          <nav aria-label="Breadcrumb" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
-            <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Practice</Link>
-            <span>/</span>
-            <Link href="/practica/ielts" style={{ color: 'var(--muted)', textDecoration: 'none' }}>IELTS</Link>
-            <span>/</span>
-            <Link href="/practica/ielts/reading" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Reading</Link>
-            <span>/</span>
-            <span aria-current="page" style={{ color: 'var(--ink)', fontWeight: 800 }}>Question Types</span>
+      <main className={styles.page} lang="en">
+        <div className={styles.shell}>
+          <nav aria-label="Breadcrumb" className={styles.breadcrumb}>
+            <Link href="/practica">Practice</Link><span>/</span>
+            <Link href="/practica/ielts">IELTS</Link><span>/</span>
+            <Link href="/practica/ielts/reading">Reading</Link><span>/</span>
+            <span aria-current="page">Question Types</span>
           </nav>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '1rem', alignItems: 'stretch', marginBottom: '1.5rem' }}>
-            <div>
-              <p className="eyebrow" style={{ margin: '0 0 0.5rem' }}>
-                <span className="ink-line" />IELTS Academic Reading
-              </p>
-              <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.15rem)', lineHeight: 1.04, letterSpacing: '-0.04em', margin: '0 0 0.85rem', color: 'var(--ink)' }}>
-                IELTS Reading Question Types
-              </h1>
-              <p style={{ color: 'var(--muted)', fontSize: '1rem', lineHeight: 1.75, margin: 0, maxWidth: 720 }}>
-                {PRODUCT_LABEL} This map preserves the IELTS numbering and makes every WeLearn pedagogical split explicit.
-              </p>
+          <header className={styles.hero}>
+            <div className={styles.heroCopy}>
+              <p className={styles.eyebrow}>IELTS Academic Reading</p>
+              <h1>Know the task. Choose the reading move.</h1>
+              <p className={styles.lead}>{PRODUCT_LABEL} Learn the decision pattern, practise it with evidence and then transfer it to mixed reading.</p>
             </div>
-
-            <aside className="wl-card" style={{ padding: '1rem', borderRadius: 16, display: 'grid', gap: '0.7rem', alignContent: 'center' }}>
+            <aside className={styles.heroAside} aria-label="Question type map">
               {[
-                { icon: <CheckCircle2 size={18} />, label: '11 official types', text: 'Presented in the order and numbering published by IELTS.' },
-                { icon: <Route size={18} />, label: '14 WeLearn routes', text: 'Each practical format or variant has a dedicated lesson URL.' },
-                { icon: <Layers3 size={18} />, label: 'Official type 9', text: 'IELTS groups Summary, Note, Table and Flow-chart; WeLearn separates them for focused practice.' },
-              ].map((item) => (
-                <div key={item.label} style={{ display: 'grid', gridTemplateColumns: '28px 1fr', gap: '0.65rem', alignItems: 'start' }}>
-                  <span style={{ color: ACCENT }}>{item.icon}</span>
-                  <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.9rem' }}>
-                    <strong style={{ color: 'var(--ink)' }}>{item.label}:</strong> {item.text}
-                  </p>
-                </div>
-              ))}
+                { icon: <CheckCircle2 size={20} aria-hidden="true" />, label: '11 official types', text: 'Kept in the numbering published by IELTS.' },
+                { icon: <Route size={20} aria-hidden="true" />, label: '14 practice routes', text: 'Each WeLearn format has a focused lesson and exercise path.' },
+                { icon: <Layers3 size={20} aria-hidden="true" />, label: 'One connected system', text: 'Question types link to skimming, scanning, paraphrase and word-limit control.' },
+              ].map((item) => <div className={styles.heroPoint} key={item.label}>{item.icon}<p><strong>{item.label}:</strong> {item.text}</p></div>)}
             </aside>
-          </div>
+          </header>
 
-          <section className="wl-card" style={{ padding: '1rem', borderRadius: 16, marginBottom: '1.2rem', borderLeft: `4px solid ${ACCENT}` }}>
-            <p className="eyebrow" style={{ margin: '0 0 0.35rem' }}>Official format vs WeLearn strategy</p>
-            <p style={{ margin: 0, color: 'var(--ink-2)', lineHeight: 1.68 }}>
-              <strong>Official format:</strong> IELTS lists 11 Academic Reading types. <strong>WeLearn strategy:</strong> we provide 14 routes because official type 9 contains four distinct representations; each route also links to supporting skills such as skimming, scanning, paraphrase recognition and word-limit control.
-            </p>
-            <p style={{ margin: '0.65rem 0 0', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.88rem' }}>
-              Official source:{' '}
-              <a href={QUESTION_TYPE_CONTRACT.source.url} style={{ color: ACCENT, fontWeight: 800 }}>
-                {QUESTION_TYPE_CONTRACT.source.title}
-              </a>
-              . Reviewed on {QUESTION_TYPE_CONTRACT.source.reviewedAt}.
-            </p>
-            <p style={{ margin: '0.45rem 0 0', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.82rem' }}>
-              WeLearn is an independent resource and is not affiliated with, sponsored by or endorsed by the IELTS Partners. This map uses names and numbering as factual reference only; it does not reproduce official logos, tasks or passages. Read the{' '}
-              <a href={QUESTION_TYPE_CONTRACT.rights.noticeUrl} style={{ color: ACCENT, fontWeight: 800 }}>
-                IELTS copyright and trade mark notice
-              </a>
-              .
-            </p>
+          <section className={styles.section} aria-labelledby="official-boundary-title">
+            <div className={styles.sectionHeading}><div><p className={styles.eyebrow}>Official format vs WeLearn strategy</p><h2 id="official-boundary-title">Keep the official map. Train each decision separately.</h2></div></div>
+            <div className={styles.sourceNote}>
+              <p><strong>Official format:</strong> IELTS lists 11 Academic Reading types. <strong>WeLearn strategy:</strong> we provide 14 routes because official type 9 contains four distinct representations.</p>
+              <p>Official source: <a href={QUESTION_TYPE_CONTRACT.source.url}>{QUESTION_TYPE_CONTRACT.source.title}</a>. Reviewed on {QUESTION_TYPE_CONTRACT.source.reviewedAt}. WeLearn is independent and does not reproduce official tasks or passages. Read the <a href={QUESTION_TYPE_CONTRACT.rights.noticeUrl}>IELTS copyright and trade mark notice</a>.</p>
+            </div>
           </section>
 
-          <section style={{ display: 'grid', gap: '0.9rem', marginBottom: '1.5rem' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem', alignItems: 'end', flexWrap: 'wrap' }}>
-              <div>
-                <p className="eyebrow" style={{ margin: '0 0 0.35rem' }}>Complete official map</p>
-                <h2 style={{ margin: 0, fontSize: '1.35rem', letterSpacing: '-0.02em' }}>11 official types → 14 WeLearn routes</h2>
-              </div>
-              <span style={{ fontFamily: 'var(--mono)', color: ACCENT, fontSize: '0.78rem', fontWeight: 900 }}>
-                {published.length}/{QUESTION_TYPE_CONTRACT.welearnRouteCount} routes published
-              </span>
+          <section className={styles.section} aria-labelledby="question-type-map-title">
+            <div className={styles.sectionHeading}>
+              <div><p className={styles.eyebrow}>Complete official map</p><h2 id="question-type-map-title">11 official types → 14 WeLearn routes</h2></div>
+              <p className={styles.routeCount}>{published.length}/{QUESTION_TYPE_CONTRACT.welearnRouteCount} routes published</p>
             </div>
-
-            <div data-reading-question-type-contract={QUESTION_TYPE_CONTRACT.schemaVersion} style={{ display: 'grid', gap: '1rem' }}>
+            <div className={styles.mapList} data-reading-question-type-contract={QUESTION_TYPE_CONTRACT.schemaVersion}>
               {QUESTION_TYPE_CONTRACT.officialTypes.map((officialType) => (
-                <section
-                  key={officialType.id}
-                  data-official-type={officialType.officialNumber}
-                  className="wl-card"
-                  style={{ padding: '1rem', borderRadius: 16 }}
-                >
-                  <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'start', marginBottom: '0.55rem' }}>
-                    <span style={{ minWidth: 34, height: 34, borderRadius: 10, background: `${ACCENT}12`, color: ACCENT, display: 'grid', placeItems: 'center', fontFamily: 'var(--mono)', fontWeight: 900 }}>
-                      {officialType.officialNumber}
-                    </span>
-                    <div>
-                      <p style={{ margin: '0 0 0.15rem', color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.68rem', fontWeight: 900 }}>
-                        OFFICIAL IELTS TYPE
-                      </p>
-                      <h3 lang="en" style={{ margin: 0, color: 'var(--ink)', fontSize: '1.08rem' }}>
-                        {officialType.officialName}
-                      </h3>
-                    </div>
-                  </div>
-                  <p style={{ margin: '0 0 0.8rem', color: 'var(--ink-2)', lineHeight: 1.6, fontSize: '0.9rem' }}>
-                    <strong>WeLearn strategy:</strong> {QUESTION_TYPE_FOCUS[officialType.id] ?? officialType.welearnPracticeFocus}
-                  </p>
-                  {'welearnSplitRationale' in officialType && (
-                    <p style={{ margin: '0 0 0.8rem', padding: '0.65rem 0.75rem', borderRadius: 10, background: `${ACCENT}0d`, color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.86rem' }}>
-                      {TYPE_NINE_SPLIT}
-                    </p>
-                  )}
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '0.75rem' }}>
+                <article className={styles.typeCard} data-official-type={officialType.officialNumber} key={officialType.id}>
+                  <header className={styles.typeHeader}><span className={styles.typeNumber}>{officialType.officialNumber}</span><div><small>OFFICIAL IELTS TYPE</small><h3>{officialType.officialName}</h3></div></header>
+                  <p className={styles.strategy}><strong>WeLearn strategy:</strong> {QUESTION_TYPE_FOCUS[officialType.id] ?? officialType.welearnPracticeFocus}</p>
+                  {'welearnSplitRationale' in officialType && <p className={styles.splitNote}>{TYPE_NINE_SPLIT}</p>}
+                  <div className={styles.routeGrid}>
                     {officialType.welearnRoutes.map((routeContract) => {
                       const type = bySlug(routeContract.slug);
-                      return (
-                        <a
-                          key={type.slug}
-                          data-welearn-route={routeContract.slug}
-                          href={type.path}
-                          style={{ color: 'inherit', textDecoration: 'none' }}
-                        >
-                          <article className="wl-card" style={{ padding: '0.9rem', borderRadius: 14, height: '100%', borderTop: `3px solid ${ACCENT}` }}>
-                            <div style={{ display: 'flex', justifyContent: 'space-between', gap: '0.7rem', alignItems: 'start', marginBottom: '0.45rem' }}>
-                              <h4 lang="en" style={{ margin: 0, color: 'var(--ink)', fontSize: '0.96rem', letterSpacing: '-0.01em' }}>
-                                {routeContract.label}
-                              </h4>
-                              <span style={{ fontFamily: 'var(--mono)', fontSize: '0.64rem', fontWeight: 900, color: ACCENT }}>WELEARN ROUTE</span>
-                            </div>
-                            <p style={{ margin: '0 0 0.55rem', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.86rem' }}>{ROUTE_DESCRIPTIONS[type.slug] ?? type.description}</p>
-                            <p style={{ margin: 0, color: ACCENT, fontFamily: 'var(--mono)', fontSize: '0.68rem', fontWeight: 900 }}>
-                              {ROUTE_TAGS[type.slug] ?? type.teaches.filter((item) => item !== 'IELTS Reading').slice(0, 3).join(' · ')}
-                            </p>
-                          </article>
-                        </a>
-                      );
+                      return <a key={type.slug} className={styles.routeCard} data-welearn-route={routeContract.slug} href={type.path}><div><h4>{routeContract.label}</h4><p>{ROUTE_DESCRIPTIONS[type.slug] ?? type.description}</p></div><span className={styles.routeTag}>{ROUTE_TAGS[type.slug] ?? type.teaches.filter((item) => item !== 'IELTS Reading').slice(0, 3).join(' · ')}</span></a>;
                     })}
                   </div>
-                </section>
-              ))}
-            </div>
-          </section>
-
-          <section className="wl-card" style={{ padding: '1.15rem', borderRadius: 16, marginBottom: '1rem' }}>
-            <p className="eyebrow" style={{ margin: '0 0 0.45rem' }}>Supporting reading skills</p>
-            <h2 style={{ margin: '0 0 0.7rem', fontSize: '1.25rem', letterSpacing: '-0.02em' }}>
-              Not official question types, but essential to solving them
-            </h2>
-            <div style={{ display: 'flex', gap: '0.55rem', flexWrap: 'wrap' }}>
-              {publishedSkills.map((skill) => (
-                <Link key={skill.slug} href={skill.path} className="btn btn-ghost btn-sm">
-                  {SKILL_LABELS[skill.slug] ?? skill.title}
-                </Link>
-              ))}
-            </div>
-          </section>
-
-          <section className="wl-card" style={{ padding: '1.15rem', borderRadius: 16 }}>
-            <p className="eyebrow" style={{ margin: '0 0 0.45rem' }}>How to use this guide</p>
-            <h2 style={{ margin: '0 0 0.7rem', fontSize: '1.25rem', letterSpacing: '-0.02em' }}>
-              Accuracy first. Speed after the method is stable.
-            </h2>
-            <div style={{ display: 'grid', gap: '0.6rem' }}>
-              {[
-                'Start with the question type that causes the most confusion and complete one untimed session.',
-                'Read every explanation and classify the error: vocabulary, scope, inference, location or lexical distraction.',
-                'Repeat the same type with a new text. Once accuracy is stable, combine question types.',
-                'Finish the cycle with timed mixed practice to test whether the method transfers under pressure.',
-              ].map((step, index) => (
-                <p key={step} style={{ margin: 0, display: 'grid', gridTemplateColumns: '32px 1fr', gap: '0.65rem', alignItems: 'start', color: 'var(--ink-2)', lineHeight: 1.58 }}>
-                  <span style={{ width: 32, height: 32, borderRadius: 10, background: `${ACCENT}12`, color: ACCENT, display: 'grid', placeItems: 'center', fontFamily: 'var(--mono)', fontWeight: 900 }}>
-                    {index + 1}
-                  </span>
-                  <span>{step}</span>
-                </p>
-              ))}
-            </div>
-          </section>
-
-          <section className="wl-card" style={{ marginTop: '1.2rem', padding: '1.15rem', borderRadius: 16, background: `${ACCENT}0d` }}>
-            <p className="eyebrow" style={{ margin: '0 0 0.4rem' }}>Transfer your method</p>
-            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1.25rem' }}>Ready to choose between formats inside one passage?</h2>
-            <p style={{ margin: '0 0 0.8rem', color: 'var(--muted)', lineHeight: 1.65 }}>
-              Use the dedicated Mixed Practice room after you have studied the individual formats. It asks you to identify the task, choose the right reading skill and justify the answer with passage evidence.
-            </p>
-            <Link href="/practica/ielts/reading/mixed-practice" className="btn btn-sm">Open Mixed Practice</Link>
-          </section>
-
-          {published.length > 0 && (
-            <div style={{ marginTop: '1rem' }}>
-              <a href={bySlug('true-false-not-given').path} className="btn btn-sm">Start with True/False/Not Given</a>
-            </div>
-          )}
-
-          <section style={{ marginTop: '1.4rem' }} lang="es">
-            <p className="eyebrow" style={{ margin: '0 0 0.5rem' }}>Preguntas frecuentes</p>
-            <div style={{ display: 'grid', gap: '0.75rem' }}>
-              {FAQS.map((faq) => (
-                <article key={faq.question} className="wl-card" style={{ padding: '1rem', borderRadius: 14 }}>
-                  <h2 style={{ margin: '0 0 0.35rem', color: 'var(--ink)', fontSize: '1rem' }}>{faq.question}</h2>
-                  <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.9rem' }}>{faq.answer}</p>
                 </article>
               ))}
             </div>
           </section>
+
+          <section className={styles.section} aria-labelledby="supporting-skills-title">
+            <div className={styles.sectionHeading}><div><p className={styles.eyebrow}>Supporting reading skills</p><h2 id="supporting-skills-title">Build the subskills each question type depends on.</h2></div></div>
+            <div className={styles.supportGrid}>
+              {publishedSkills.map((skill) => <Link className={styles.skillCard} href={skill.path} key={skill.slug}>{SKILL_LABELS[skill.slug] ?? skill.title}<span>OPEN SKILL <ArrowRight size={14} aria-hidden="true" /></span></Link>)}
+            </div>
+          </section>
+
+          <section className={styles.section} aria-labelledby="study-sequence-title">
+            <div className={styles.sectionHeading}><div><p className={styles.eyebrow}>Study sequence</p><h2 id="study-sequence-title">Accuracy first. Speed after the method is stable.</h2></div></div>
+            <div className={styles.steps}>
+              {[
+                'Choose the question type that causes the most confusion and complete one untimed lesson.',
+                'Read the explanation and name the error: vocabulary, scope, inference, location or distraction.',
+                'Repeat the same type with a new compact passage until the evidence rule feels automatic.',
+                'Finish with timed mixed practice and test whether the method transfers under pressure.',
+              ].map((step, index) => <p className={styles.step} key={step}><span>{String(index + 1).padStart(2, '0')}</span>{step}</p>)}
+            </div>
+          </section>
+
+          <section className={styles.section} aria-labelledby="mixed-practice-title">
+            <div className={styles.transferCard}>
+              <div><p className={styles.eyebrow}>Transfer your method</p><h2 id="mixed-practice-title">Ready to switch formats inside one passage?</h2><p>Use Mixed Practice after studying the individual formats. Identify the task, choose the reading move and justify the answer with passage evidence.</p></div>
+              <Link href="/practica/ielts/reading/mixed-practice">Open Mixed Practice <ArrowRight size={17} aria-hidden="true" /></Link>
+            </div>
+          </section>
+
+          <section className={styles.section} lang="es" aria-labelledby="faq-title">
+            <div className={styles.sectionHeading}><div><p className={styles.eyebrow}>Preguntas frecuentes</p><h2 id="faq-title">Respuestas rápidas antes de practicar</h2></div></div>
+            <div className={styles.faqGrid}>{FAQS.map((faq) => <article className={styles.faqCard} key={faq.question}><h3>{faq.question}</h3><p>{faq.answer}</p></article>)}</div>
+          </section>
         </div>
-      </section>
+      </main>
     </>
   );
 }

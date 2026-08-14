@@ -1,195 +1,103 @@
 import Link from 'next/link';
-
-const COLOR = '#0f3d8c';
+import { ArrowRight, BookOpenText, Headphones, Mic2, PenLine } from 'lucide-react';
+import styles from './IeltsHub.module.css';
 
 const MODALITIES = [
   {
     id: 'academic',
     name: 'IELTS Academic',
-    desc: 'Available route for Academic Reading, visual-data Writing Task 1 and argumentative Writing Task 2.',
+    desc: 'Academic Reading, visual-data Writing Task 1 and argumentative Writing Task 2 in one connected study route.',
     href: '/practica/ielts/academic',
     status: 'Available',
   },
   {
     id: 'general-training',
     name: 'IELTS General Training',
-    desc: 'A focused hub for official differences, practical Reading and letter-based Writing Task 1 with explained practice.',
+    desc: 'Official differences, practical Reading and letter-based Writing Task 1 with explained practice.',
     href: '/practica/ielts/general-training',
-    status: 'New',
+    status: 'New route',
   },
 ];
 
-const SKILLS = [
+const AVAILABLE_SKILLS = [
   {
     id: 'reading',
-    emoji: '📖',
     name: 'Reading',
-    eng: 'Reading comprehension',
-    desc: 'True/False/Not Given · Matching Headings · Multiple Choice. 60 minutes, 40 questions and 3 academic passages.',
-    count: '14 question types · 6 skills',
+    label: 'Reading comprehension',
+    desc: 'Study 14 question-format routes, strengthen 6 reading skills and transfer the method through guided, independent and mixed practice.',
+    count: '14 question routes · 6 skills',
     href: '/practica/ielts/reading',
-    available: true,
+    icon: BookOpenText,
   },
   {
     id: 'writing',
-    emoji: '✏️',
     name: 'Writing',
-    eng: 'Academic writing',
-    desc: 'Task 1 (visual data) and Task 2 (argumentative essay). 60 minutes in total and 7 sub-skills per task.',
-    count: 'Task 1 · Task 2 · 14+ exercises',
+    label: 'Academic writing',
+    desc: 'Build visual-data responses in Task 1 and argument-led essays in Task 2 through connected architecture, skills and full-task practice.',
+    count: 'Task 1 · Task 2 · complete practice paths',
     href: '/practica/ielts/academic/writing',
-    available: true,
-  },
-  {
-    id: 'listening',
-    emoji: '🎧',
-    name: 'Listening',
-    eng: 'Listening comprehension',
-    desc: 'Four sections with native speakers. 30 minutes of audio plus 10 minutes to transfer answers.',
-    count: 'Coming soon',
-    href: '#',
-    available: false,
-  },
-  {
-    id: 'speaking',
-    emoji: '🗣️',
-    name: 'Speaking',
-    eng: 'Speaking production',
-    desc: 'Part 1 (personal questions), Part 2 (a two-minute cue-card talk) and Part 3 (academic discussion).',
-    count: 'Coming soon',
-    href: '#',
-    available: false,
+    icon: PenLine,
   },
 ];
 
-const SKILL_COLORS: Record<string, string> = {
-  reading: '#0369a1',
-  writing: '#0f3d8c',
-  listening: '#7c3aed',
-  speaking: '#059669',
-};
+const COMING_SKILLS = [
+  { name: 'Listening', label: 'Listening comprehension', desc: 'Four sections with native-speaker audio.', icon: Headphones },
+  { name: 'Speaking', label: 'Speaking production', desc: 'Personal questions, a long turn and discussion.', icon: Mic2 },
+];
 
 export default function IELTSHubClient() {
   return (
-    <section className="wl-section">
-      <div className="wrap" style={{ maxWidth: 900 }}>
+    <div className={styles.page} lang="en">
+      <div className={styles.shell}>
+        <nav className={styles.breadcrumb} aria-label="Breadcrumb"><Link href="/practica">Practice</Link><span aria-hidden="true">/</span><span aria-current="page">IELTS</span></nav>
 
-        {/* Breadcrumb */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
-          <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Practice</Link>
-          <span>/</span>
-          <span style={{ color: 'var(--ink)' }}>🇬🇧 IELTS</span>
-        </div>
-
-        {/* Header */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem', flexWrap: 'wrap' }}>
-          <div style={{
-            width: 56, height: 56, borderRadius: 14, background: COLOR, color: '#fff',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontSize: '1.5rem', fontWeight: 900, flexShrink: 0,
-          }}>
-            🇬🇧
+        <header className={styles.hero}>
+          <p className={styles.eyebrow}>IELTS practice · Format, method & transfer</p>
+          <h1>Choose the exam route. Build the skill behind it.</h1>
+          <p className={styles.heroLead}>Start with Academic or General Training, then move into Reading or Writing. Every available route separates official format from WeLearn strategy and connects explanation to real practice.</p>
+          <div className={styles.factGrid} aria-label="IELTS practice at a glance">
+            <div className={styles.fact}><strong>2 routes</strong><span>Academic and General Training pathways</span></div>
+            <div className={styles.fact}><strong>2 live skills</strong><span>Reading and Writing available now</span></div>
+            <div className={styles.fact}><strong>20+ paths</strong><span>question formats and transferable skills</span></div>
+            <div className={styles.fact}><strong>English-first</strong><span>international learning experience</span></div>
           </div>
-          <div>
-            <p className="eyebrow" style={{ marginBottom: '0.2rem' }}>
-              <span className="ink-line" />IELTS — International English Language Testing System
-            </p>
-            <h1 style={{ fontSize: '2rem', letterSpacing: 0, margin: 0, fontWeight: 700 }}>
-              IELTS practice by format and skill
-            </h1>
+        </header>
+
+        <section className={styles.section} aria-labelledby="routes-heading">
+          <div className={styles.sectionHeading}><p className={styles.kicker}>Choose your test route</p><h2 id="routes-heading">Academic and General Training start differently</h2><p>Choose the test you are preparing for before opening a skill. This keeps Writing Task 1 format differences and Reading contexts clear.</p></div>
+          <div className={styles.pathGrid}>
+            {MODALITIES.map((modality) => (
+              <Link key={modality.id} href={modality.href} className={styles.pathCard}>
+                <div className={styles.pathTop}><h3>{modality.name}</h3><span className={styles.status}>{modality.status}</span></div>
+                <p>{modality.desc}</p>
+              </Link>
+            ))}
           </div>
-        </div>
+        </section>
 
-        <p style={{ color: 'var(--muted)', fontSize: '1rem', maxWidth: 580, margin: '0.5rem 0 1.25rem' }}>
-          IELTS has Academic and General Training routes. Reading and Writing include indexable content, original practice and exercises with explained answers.
-        </p>
+        <section className={styles.section} aria-labelledby="skills-heading">
+          <div className={styles.sectionHeading}><p className={styles.kicker}>Choose a live skill</p><h2 id="skills-heading">Learn the method, practise it, then transfer it</h2><p>Reading and Writing now use the same product structure: clear architecture, focused sub-skills, guided practice and a route into independent work.</p></div>
+          <div className={styles.skillGrid}>
+            {AVAILABLE_SKILLS.map(({ icon: Icon, ...skill }) => (
+              <Link key={skill.id} href={skill.href} className={styles.skillCard}>
+                <div className={styles.skillTop}><span className={styles.skillIcon}><Icon size={23} aria-hidden="true" /></span><span className={styles.skillLabel}>{skill.label}</span></div>
+                <h3>{skill.name}</h3><p>{skill.desc}</p><strong>{skill.count} <ArrowRight size={16} aria-hidden="true" /></strong>
+              </Link>
+            ))}
+          </div>
 
-        {/* Band scale */}
-        <div style={{ display: 'flex', gap: '0.4rem', marginBottom: '1.25rem', flexWrap: 'wrap' }}>
-          {[
-            ['1–4', 'Basic', '#dc2626'],
-            ['5', 'Modest', '#f59e0b'],
-            ['6', 'Competent', '#0369a1'],
-            ['7', 'Good', '#0f3d8c'],
-            ['8–9', 'Expert', '#059669'],
-          ].map(([band, label, color]) => (
-            <span key={band} style={{
-              fontSize: '0.72rem', padding: '0.2rem 0.65rem', borderRadius: 20,
-              background: `${color}15`, color, border: `1px solid ${color}40`,
-              fontFamily: 'var(--mono)', fontWeight: 700,
-            }}>
-              Band {band} — {label}
-            </span>
-          ))}
-        </div>
+          <div className={styles.comingGrid} aria-label="Skills in development">
+            {COMING_SKILLS.map(({ icon: Icon, ...skill }) => (
+              <article key={skill.name} className={styles.comingCard}>
+                <div className={styles.skillTop}><span className={styles.skillIcon}><Icon size={22} aria-hidden="true" /></span><span className={styles.comingBadge}>Coming soon</span></div>
+                <h3>{skill.name}</h3><p>{skill.desc}</p>
+              </article>
+            ))}
+          </div>
 
-        {/* Modality pathways */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
-          {MODALITIES.map(modality => (
-            <Link key={modality.id} href={modality.href} style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
-              <div style={{
-                padding: '1rem',
-                borderRadius: 8,
-                border: `1px solid ${COLOR}28`,
-                background: '#fff',
-                height: '100%',
-                boxSizing: 'border-box' as const,
-              }}>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '0.75rem', marginBottom: '0.5rem' }}>
-                  <h2 style={{ margin: 0, fontSize: '1rem' }}>{modality.name}</h2>
-                  <span style={{ fontSize: '0.68rem', fontWeight: 800, color: COLOR, fontFamily: 'var(--mono)' }}>
-                    {modality.status}
-                  </span>
-                </div>
-                <p style={{ margin: 0, fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.55 }}>{modality.desc}</p>
-              </div>
-            </Link>
-          ))}
-        </div>
-
-        {/* Skills grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1rem' }}>
-          {SKILLS.map(sk => {
-            const c = SKILL_COLORS[sk.id] ?? COLOR;
-            const inner = (
-              <div style={{
-                padding: '1.4rem 1.5rem',
-                border: `1.5px solid ${c}33`,
-                borderRadius: 18,
-                background: `linear-gradient(135deg, ${c}0a 0%, transparent 100%)`,
-                borderTop: `3px solid ${sk.available ? c : 'var(--line-soft)'}`,
-                height: '100%',
-                boxSizing: 'border-box' as const,
-                display: 'flex', flexDirection: 'column' as const, gap: '0.6rem',
-                opacity: sk.available ? 1 : 0.55,
-              }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
-                  <span style={{ fontSize: '1.8rem' }}>{sk.emoji}</span>
-                  <div style={{ flex: 1 }}>
-                    <div style={{ fontSize: '1rem', fontWeight: 800, color: 'var(--ink)' }}>{sk.name}</div>
-                    <div style={{ fontSize: '0.72rem', color: c, fontFamily: 'var(--mono)', fontWeight: 700, textTransform: 'uppercase' as const, letterSpacing: 0 }}>{sk.eng}</div>
-                  </div>
-                  {!sk.available && (
-                    <span style={{ fontSize: '0.58rem', fontWeight: 800, background: 'var(--line-soft)', color: 'var(--muted)', borderRadius: 5, padding: '0.1rem 0.4rem', fontFamily: 'var(--mono)', whiteSpace: 'nowrap' as const }}>
-                      COMING SOON
-                    </span>
-                  )}
-                </div>
-                <p style={{ margin: 0, fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.55, flex: 1 }}>{sk.desc}</p>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <span style={{ fontSize: '0.7rem', color: sk.available ? c : 'var(--muted)', fontFamily: 'var(--mono)', fontWeight: 700 }}>{sk.count}</span>
-                  {sk.available && <span style={{ fontSize: '1rem', color: c, fontWeight: 700 }}>→</span>}
-                </div>
-              </div>
-            );
-
-            return sk.available
-              ? <Link key={sk.id} href={sk.href} style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>{inner}</Link>
-              : <div key={sk.id}>{inner}</div>;
-          })}
-        </div>
-
+          <p className={styles.routeNote}><strong>Score note:</strong> WeLearn lesson and Progress Engine results measure practice performance. They do not predict or award an IELTS band.</p>
+        </section>
       </div>
-    </section>
+    </div>
   );
 }
