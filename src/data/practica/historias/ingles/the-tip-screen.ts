@@ -139,15 +139,19 @@ const DICT: Record<string, string> = {
 // ─── Textos ───────────────────────────────────────────────────────────────────
 
 const NARRATOR_PARAGRAPHS = [
-  'Scoop and Company is a small ice cream shop on a busy street. Four employees, one card reader on the counter.',
-  'Last Saturday afternoon a woman named Dana came in with her seven-year-old daughter and ordered two cones. The total came to fourteen dollars.',
-  'Marcus, the employee behind the counter, turned the tablet around so she could pay.',
-  'Before the payment would go through, the screen offered three buttons: eighteen percent, twenty-two percent, twenty-five percent. Underneath, in smaller grey letters, "No tip."',
+  'Scoop and Company is a small ice cream shop on a busy street, the kind with six flavours in the case and a hand-written sign in the window. Four employees, one card reader on the counter, and a queue that goes out of the door on a warm Saturday.',
+  'It has been open eleven years. The owner, Ray, bought it from the man who opened it, kept the name, and repainted the sign himself.',
+  'In March the shop changed to a new card system. A sales representative came, installed it, showed Ray which button meant refund, and left. The tipping options came switched on, already set at eighteen, twenty-two and twenty-five percent. Ray noticed them that first week.',
+  'Last Saturday afternoon a woman named Dana came in with her seven-year-old daughter. Two cones, one strawberry and one with sprinkles. The total came to fourteen dollars.',
+  'Marcus, who is nineteen and had been on since eleven that morning, made the cones, handed them over, and turned the tablet around so she could pay. He turns it around perhaps four hundred times in a shift, and he was already reaching for the scoop when he did it.',
+  'The screen would not take the payment until she answered it. Three large buttons: eighteen percent, twenty-two percent, twenty-five percent. Underneath, in smaller grey letters, "No tip."',
+  'There were two people in the line behind her. Her daughter was holding both cones.',
   'Dana pressed "No tip."',
-  'She said something while she did it. Nobody agrees on what.',
-  'Marcus said something back. Nobody agrees on that either.',
-  'That evening Dana left a one-star review. The next morning the owner, Ray, read it on his phone before he had finished his coffee.',
-  'Three people now tell three different versions of ninety seconds at a counter.',
+  'She said something while she did it. All three accounts of that afternoon agree that she said something, and no two of them agree on what it was.',
+  'Marcus said something back. Nobody agrees on that either, although Marcus and Dana do agree on one detail: it was the tone, not the words.',
+  'Dana walked out past the line. Her daughter asked her a question on the pavement, which Dana remembers exactly and which nobody else heard.',
+  'That evening Dana left a one-star review. The next morning Ray read it on his phone before he had finished his coffee, and by nine o\'clock he had called Marcus into the back room.',
+  'Three people now tell three different versions of ninety seconds at a counter. Only one of them was not there.',
 ];
 
 const A_PARAGRAPHS = [
@@ -234,10 +238,10 @@ const NARRATOR_QS: Question[] = [
     type: 'Comprehension',
     q: 'According to the narrator, what is the ONE thing all three accounts agree on?',
     opts: [
-      'What Dana said out loud at the counter',
+      'What Dana said out loud, which all three of them quote using almost the same words',
       'That the tablet was turned around showing three preset percentages, and Dana pressed "No tip"',
-      'That Marcus was rude to Dana',
-      'That the ice cream was too expensive',
+      'That Marcus was rude to her, a point both Dana and Ray name as the trigger',
+      'That fourteen dollars for two cones is too much, which all three of them say plainly',
     ],
     correct: 1,
     explanation:
@@ -247,10 +251,10 @@ const NARRATOR_QS: Question[] = [
     type: 'Vocabulary',
     q: 'The narrator says the "No tip" option was in "smaller grey letters" underneath the three percentages. Why does this detail matter?',
     opts: [
-      'It shows the screen was broken',
-      'It shows the shop had run out of ink',
+      'It shows the card reader was faulty and drew part of the interface at the wrong size',
+      'It shows the shop was hiding the real total from customers until after they had paid',
       'The design makes refusing look like the small, shameful option — the layout itself applies pressure',
-      'It proves the shop was breaking the law',
+      'It proves the shop broke a law about how payment options have to be displayed on screen',
     ],
     correct: 2,
     explanation:
@@ -260,10 +264,10 @@ const NARRATOR_QS: Question[] = [
     type: 'Inference',
     q: 'The narrator ends with "three different versions of ninety seconds at a counter." What does the phrase "ninety seconds" do?',
     opts: [
-      'It tells us the shop was about to close',
+      'It tells us the shop was about to close, so everyone at the counter was in a hurry',
       'It contrasts how small the event was with how much meaning three people built on top of it',
-      'It proves Marcus worked too slowly',
-      'It is the exact time the payment took to process',
+      'It proves Marcus was working too slowly and had kept the whole line waiting behind Dana',
+      'It is the exact time the card payment needed to process on the tablet that afternoon',
     ],
     correct: 1,
     explanation:
@@ -273,10 +277,10 @@ const NARRATOR_QS: Question[] = [
     type: 'Critical Thinking',
     q: 'The narrator mentions Ray read the review "before he had finished his coffee." What does this small detail suggest?',
     opts: [
-      'Ray drinks too much coffee',
+      'Ray drinks a great deal of coffee in the mornings, which is the reason he tends to react badly to his own staff',
       'Ray was reacting early, fast and alone — before he had heard anyone, and before he was properly awake',
-      'The review was written by Ray himself',
-      'The shop opens very early',
+      'The review was written by Ray himself, which is how he could quote it so exactly',
+      'The shop opens very early, so the morning shift begins before most of the city wakes',
     ],
     correct: 1,
     explanation:
@@ -289,10 +293,10 @@ const A_QS: Question[] = [
     type: 'Comprehension',
     q: 'Dana insists on one point about herself before telling the rest. What is it?',
     opts: [
-      'That she has worked in a shop before',
-      'That she cannot afford to tip',
+      'That she worked behind a counter like this one for years, so she knows exactly how the job feels from the other side',
+      'That money is genuinely tight this month, so fourteen dollars was already more than she had meant to spend on an afternoon out',
       'That she does tip — twenty percent at restaurants, cash to delivery drivers — so this is not about being cheap',
-      'That she never eats ice cream',
+      'That she almost never buys ice cream any more, so she had no idea what two cones are supposed to cost these days',
     ],
     correct: 2,
     explanation:
@@ -303,9 +307,9 @@ const A_QS: Question[] = [
     q: '"The no tip button is down at the bottom, in grey, in tiny letters, like it is embarrassed to exist." What is Dana doing here?',
     opts: [
       'Personification — she gives the button a human feeling to expose how the design shames the user',
-      'A literal description of a software error',
-      'Hyperbole about the size of the text only',
-      'A quotation from the card company manual',
+      'A literal description of a software error that rendered the button smaller than intended',
+      'Hyperbole about the physical size of the text, and nothing more than a complaint about eyesight',
+      'A direct quotation from the card company manual describing how the button should look',
     ],
     correct: 0,
     explanation:
@@ -315,10 +319,10 @@ const A_QS: Question[] = [
     type: 'Tone',
     q: 'How would you best describe the tone of Dana\'s voice note?',
     opts: [
-      'Calm and neutral throughout',
-      'Amused and light-hearted',
+      'Calm and neutral throughout, as if reporting something that happened to somebody else',
+      'Amused and light-hearted, treating the whole thing as a funny story for a dinner party',
       'Defensive and self-justifying, but landing on a clear argument rather than pure complaint',
-      'Cold and formal, like a written complaint',
+      'Cold and formal from beginning to end, closer to a written complaint than to a message',
     ],
     correct: 2,
     explanation:
@@ -328,10 +332,10 @@ const A_QS: Question[] = [
     type: 'Inference',
     q: 'Dana says the machine "put me on trial in front of my daughter." What does this reveal about what actually upset her?',
     opts: [
-      'She was worried about the legal consequences of not tipping',
-      'Her daughter had asked her for more ice cream',
+      'She was genuinely worried that refusing to tip might carry some kind of legal consequence',
+      'Her daughter had been asking for more ice cream and she had to refuse her in public',
       'The cost was never the problem — being made to perform her generosity publicly was',
-      'She thought the shop would call the police',
+      'She thought the shop was going to call the police over the fourteen dollars she owed',
     ],
     correct: 2,
     explanation:
@@ -341,10 +345,10 @@ const A_QS: Question[] = [
     type: 'Critical Thinking',
     q: '"If they want more money for the ice cream, put it on the price. I will pay it and I will never know." What is the weakness a critic could point out in this argument?',
     opts: [
-      'It is not a real argument, just an opinion',
-      'It is contradictory, because she said she never tips',
+      'It is not really an argument at all, only an opinion that she states firmly without offering a single supporting reason for any part of it',
+      'It contradicts her earlier claim, because she had already told us that she tips twenty percent whenever she is served',
       'It works for her comfort but says nothing about who receives the money — a higher price goes to the shop, not automatically to the worker',
-      'It would be illegal to raise the price',
+      'It would be illegal, because shops are not allowed to change their advertised prices without warning their customers first',
     ],
     correct: 2,
     explanation:
@@ -357,10 +361,10 @@ const B_QS: Question[] = [
     type: 'Comprehension',
     q: 'What does Marcus say about the three percentages on the screen?',
     opts: [
-      'He chose them himself to earn more',
+      'He chose those percentages himself, hoping the higher presets would earn him more each week',
       'He did not set them, and he personally thinks they are too high',
-      'He does not know they exist',
-      'He asks every customer to pick the highest one',
+      'He has never noticed the presets at all, because he never looks at the customer side',
+      'He asks every customer to pick the highest one, which is why Dana felt so pressured',
     ],
     correct: 1,
     explanation:
@@ -370,10 +374,10 @@ const B_QS: Question[] = [
     type: 'Inference',
     q: 'Marcus reports that the man behind Dana "did that thing where he looked at the floor." Why does he include this?',
     opts: [
-      'To show the shop floor needed cleaning',
-      'To prove the other customer agreed with Dana',
+      'To show that the shop floor badly needed cleaning, which happens to be one of the jobs he is expected to do during a busy afternoon shift',
+      'To prove that the other customer agreed with Dana and also thought the preset percentages were completely unreasonable',
       'As a witness detail: someone else reacted, so the words were audible — it is his evidence that she was not only talking to herself',
-      'To explain why the line moved slowly',
+      'To explain why the line behind her was moving so slowly on what was already a very busy Saturday afternoon',
     ],
     correct: 2,
     explanation:
@@ -383,10 +387,10 @@ const B_QS: Question[] = [
     type: 'Vocabulary',
     q: '"What got me was \'for scooping ice cream.\' Like the job is not a job." What is Marcus objecting to?',
     opts: [
-      'The amount of money he lost',
+      'The amount of money he lost on that sale, which he says adds up over a week',
       'Being told he scoops ice cream, which is factually wrong',
       'The implication that his work does not count as work deserving of anything',
-      'That she used the wrong verb in English',
+      'That she used the wrong verb, since what he does is not technically called scooping',
     ],
     correct: 2,
     explanation:
@@ -396,10 +400,10 @@ const B_QS: Question[] = [
     type: 'Tone',
     q: '"I said \'have a good one\' but I said it like that." What is Marcus admitting?',
     opts: [
-      'That he said nothing at all',
+      'That he said nothing at all to her, and that Dana simply invented the reply she now remembers hearing',
       'That his words were polite but his tone was not — and he knows the tone was the message',
-      'That he shouted at her',
-      'That he does not remember what he said',
+      'That he shouted at her across the counter, loudly enough for everyone waiting in the line to hear it',
+      'That he genuinely cannot remember what he said to her, because the shift was long and the shop was full',
     ],
     correct: 1,
     explanation:
@@ -409,10 +413,10 @@ const B_QS: Question[] = [
     type: 'Critical Thinking',
     q: '"I am the only one in that story who does not get to choose anything." Is this claim fair?',
     opts: [
-      'Completely fair — he had no choice about anything at all',
-      'Completely unfair — he had exactly the same choices as everyone else',
+      'Completely fair: he had no choice about the wage, the screen, the presets or anything else that afternoon',
+      'Completely unfair: he had exactly the same range of choices available to him as the other two people standing in that story',
       'Largely fair about the system, but he did choose his tone, which is the one thing that turned a non-tip into a review',
-      'It cannot be judged without knowing his salary',
+      'It cannot be judged at all without knowing exactly how much he earns in tips over a normal week',
     ],
     correct: 2,
     explanation:
@@ -425,10 +429,10 @@ const C_QS: Question[] = [
     type: 'Comprehension',
     q: 'Why does Ray say he did not change the preset percentages when he noticed they were high?',
     opts: [
-      'He did not know how to change them',
-      'The card company would not allow it',
+      'He did not know how to change them, because the card company keeps control of those settings after installation',
+      'The card company would not have allowed him to change the presets once the new system was installed',
       'Because tips went up about forty dollars a week per person — money he did not have to pay himself',
-      'He thought his customers preferred them',
+      'He thought his own customers preferred being offered the higher options, and that they would have said so otherwise',
     ],
     correct: 2,
     explanation:
@@ -438,10 +442,10 @@ const C_QS: Question[] = [
     type: 'Vocabulary',
     q: '"I let a machine ask my customers for the raise that I should be giving my staff myself." What does this sentence do?',
     opts: [
-      'It blames the card company for everything',
+      'It blames the card company for everything and quietly takes the whole decision out of his own hands',
       'It names his own responsibility precisely, using the word "raise" to admit it was a wage problem all along',
-      'It announces that he is closing the shop',
-      'It is sarcasm aimed at Dana',
+      'It announces that he is closing the shop rather than face the wage problem he has just described',
+      'It is sarcasm aimed at Dana for leaving a one-star review over a fourteen dollar sale',
     ],
     correct: 1,
     explanation:
@@ -451,10 +455,10 @@ const C_QS: Question[] = [
     type: 'Inference',
     q: 'Ray gives real numbers: a dollar ten margin per cone, eight thousand a year for a dollar an hour. What is the effect of these numbers?',
     opts: [
-      'They prove he cannot afford to pay more, ending the argument',
+      'They prove beyond doubt that he cannot afford to pay any more, which ends the argument there',
       'They make his constraint concrete and credible — but he immediately undercuts himself with the fifty cents, so they explain rather than excuse',
-      'They show he is bad at mathematics',
-      'They are there to confuse the listener',
+      'They show that he is rather bad at mathematics, since almost none of the numbers he quotes in that section actually add up',
+      'They are there to bury the listener in detail so that the wage question quietly gets forgotten',
     ],
     correct: 1,
     explanation:
@@ -464,10 +468,10 @@ const C_QS: Question[] = [
     type: 'Tone',
     q: 'How does Ray\'s tone change across his voice note?',
     opts: [
-      'It stays angry at Dana from beginning to end',
+      'It stays angry at Dana from beginning to end, and never moves off that first reaction',
       'It starts angry at Marcus and moves towards accepting his own responsibility',
-      'It is cheerful throughout',
-      'It becomes increasingly angry at the card company',
+      'It is cheerful throughout, because the review did not really affect his business',
+      'It becomes increasingly angry at the card company for installing the presets he kept',
     ],
     correct: 1,
     explanation:
@@ -477,10 +481,10 @@ const C_QS: Question[] = [
     type: 'Critical Thinking',
     q: 'Ray ends with "She said the machine made her feel like a bad person. It is my machine." Why is this an effective ending?',
     opts: [
-      'Because it blames Dana for complaining',
-      'Because it promises to give all the money back',
+      'Because it puts the blame back on Dana for complaining about something no small shop can really control',
+      'Because it promises to give the money back to her and to apologise to her face in person',
       'Because it takes her exact words and answers them with ownership, in four words, without asking to be forgiven',
-      'Because it explains the technical settings in detail',
+      'Because it explains the technical settings in enough detail to clear him of any blame at all',
     ],
     correct: 2,
     explanation:
@@ -493,10 +497,10 @@ const FINAL_QS: Question[] = [
     type: 'Synthesis',
     q: 'On the disputed point — what Dana said out loud — what do the three accounts actually give us?',
     opts: [
-      'Proof that Dana lied about what she said',
-      'Proof that Marcus invented what he heard',
+      'Proof that Dana lied about what she said, since the other two people both contradict her version',
+      'Proof that Marcus simply invented what he thought he heard, in order to justify the tone he then decided to use with her',
       'Two incompatible reports and one piece of indirect evidence: Dana\'s intention, Marcus\'s hearing, and a stranger looking at the floor',
-      'A recording that settles it',
+      'A recording from the shop camera that settles the question of what was actually said at the counter',
     ],
     correct: 2,
     explanation:
@@ -506,10 +510,10 @@ const FINAL_QS: Question[] = [
     type: 'Perspective',
     q: 'Dana, Marcus and Ray all separate the money from something else. What is the pattern?',
     opts: [
-      'All three secretly care only about the money',
+      'All three of them secretly care only about the money, and each one reaches for other reasons to disguise that',
       'Each says the money was not the point: for Dana it was public judgement, for Marcus it was being told his job is not a job, for Ray it was his own responsibility',
-      'Only Ray talks about money at all',
-      'Each one wants a different amount of money',
+      'Only Ray talks about money at all in his recording, because he is the only one of the three of them who actually runs a business and has to count it',
+      'Each one of them wants a different amount of money out of the same fourteen dollar sale at the counter',
     ],
     correct: 1,
     explanation:
@@ -519,10 +523,10 @@ const FINAL_QS: Question[] = [
     type: 'Critical Thinking',
     q: 'What is the most accurate ROOT cause of this conflict?',
     opts: [
-      'Dana\'s refusal to tip',
-      'Marcus\'s tone at the counter',
+      'Dana\'s refusal to tip, which is the single decision that set the whole ninety seconds in motion',
+      'Marcus\'s tone at the counter, which is the thing that turned an ordinary routine non-tip into a public argument in front of the whole line',
       'A wage decision was moved onto a screen, so a question about pay was asked of a customer, in public, by a worker who controlled neither',
-      'The price of ice cream in the city',
+      'The price of ice cream in this city, which has risen far faster than local wages have',
     ],
     correct: 2,
     explanation:
@@ -535,7 +539,7 @@ const FINAL_QS: Question[] = [
       'Dana — she decides she should have tipped',
       'Marcus — he decides the customer was right about everything',
       'Ray — he starts blaming his employee and ends holding it himself',
-      'None of them changes at all',
+      'None of them changes at all: each one defends the position they arrived with',
     ],
     correct: 2,
     explanation:
@@ -545,10 +549,10 @@ const FINAL_QS: Question[] = [
     type: 'Critical Thinking',
     q: 'If the shop changes the screen to ten, fifteen and twenty percent with an equal-sized "No tip" button, what does that fix and what does it leave untouched?',
     opts: [
-      'It fixes everything, including the wages',
-      'It fixes nothing at all',
+      'It fixes everything, including the wages, because lower presets mean more people tip',
+      'It fixes nothing at all, since the customer would still have to make the same decision in public, in front of everyone waiting in the line',
       'It fixes the pressure on the customer, but Marcus still earns eleven dollars an hour and will now probably earn less in tips',
-      'It only helps Ray and harms the customers',
+      'It only helps Ray, who keeps his margin while his customers feel worse about paying',
     ],
     correct: 2,
     explanation:

@@ -33,7 +33,39 @@ registerHooks({
 
 const { HISTORIA_LANG_KEYS, HISTORIAS_BY_LANG } = await import('../src/data/practica/historias/index.ts');
 
+// ─── Sesgo de longitud ────────────────────────────────────────────────────────
+//
+// Medido el 13 de agosto de 2026: en las 17 historias, la respuesta correcta era
+// la más larga en el 87 % de las 328 preguntas. Marcar siempre la más larga
+// aprobaba todas, sin leer. Es el mismo tipo de defecto que el sesgo de posición
+// —una propiedad del conjunto, invisible pregunta a pregunta— y ya había mordido
+// antes en IELTS Writing Task 1.
+//
+// Se arregla ALARGANDO LOS DISTRACTORES, desarrollando el error de cada uno.
+// Nunca recortando la correcta: ahí vive la precisión que enseña la lección.
+//
+// DEUDA CONOCIDA. Arreglarlo son tres distractores por pregunta, escritos a mano,
+// en ocho idiomas. Se hizo primero con `the-tip-screen`. Las 16 anteriores están
+// listadas abajo con su cifra del día en que se midió: no tumban el build, pero
+// se imprimen en cada ejecución para que no se olviden. Al arreglar una, se borra
+// de la lista y el guardián empieza a exigirle el umbral.
+const DEUDA_LONGITUD = new Set([
+  'ingles/the-locked-phone', 'ingles/the-grandfathers-ledger',
+  'aleman/das-gesperrte-handy', 'aleman/das-kassenbuch-des-grossvaters',
+  'frances/le-telephone-verrouille', 'frances/le-carnet-du-grand-pere',
+  'italiano/il-telefono-capovolto', 'italiano/il-quaderno-del-nonno',
+  'portugues/o-celular-virado-para-baixo', 'portugues/o-caderno-do-avo',
+  'coreano/jamgin-hyudaepon', 'coreano/harabeoji-ui-jangbu',
+  'japones/fuserareta-sumaho', 'japones/sofu-no-choubo',
+  'ruso/telefon-ekranom-vniz', 'ruso/dedushkina-tetrad',
+]);
+
+/** En coreano y japonés se mide en caracteres: cada uno vale por una sílaba. */
+const largo = (s, lang) =>
+  lang === 'coreano' || lang === 'japones' ? [...s.trim()].length : s.trim().split(/\s+/).length;
+
 const problems = [];
+const deuda = [];
 const posCount = [0, 0, 0, 0];
 let totalQ = 0;
 
@@ -83,6 +115,27 @@ for (const lang of HISTORIA_LANG_KEYS) {
         totalQ++;
       });
     }
+
+    // ── Sesgo de longitud, por historia ────────────────────────────────────
+    const todas = groups.flatMap(([, qs]) => qs);
+    let masLarga = 0, exceso = 0;
+    for (const q of todas) {
+      const ls = q.opts.map(o => largo(o, lang));
+      const c = ls[q.correct];
+      const maxD = Math.max(...ls.filter((_, i) => i !== q.correct));
+      if (c > maxD) masLarga++;
+      if (c - maxD >= 3) exceso++;
+    }
+    const pctLarga = (masLarga / todas.length) * 100;
+    if (DEUDA_LONGITUD.has(id)) {
+      deuda.push(`${id.padEnd(40)} la correcta es la más larga en el ${pctLarga.toFixed(0)} % (${exceso} con 3+ de ventaja)`);
+      if (pctLarga <= 50 && exceso === 0) {
+        problems.push(`${id}: ya cumple el umbral de longitud — bórralo de DEUDA_LONGITUD para que el guardián se lo exija`);
+      }
+    } else {
+      if (pctLarga > 50) problems.push(`${id}: la correcta es la más larga en el ${pctLarga.toFixed(0)} % — marcarla sin leer aprueba`);
+      if (exceso > 0) problems.push(`${id}: ${exceso} pregunta(s) donde la correcta saca 3+ al mejor distractor`);
+    }
   }
 }
 
@@ -96,6 +149,12 @@ posCount.forEach((count, i) => {
 const pcts = posCount.map(c => c / totalQ);
 if (Math.max(...pcts) > 0.40) problems.push(`sesgo de posición: una opción concentra el ${(Math.max(...pcts) * 100).toFixed(1)} %`);
 if (Math.min(...pcts) < 0.10) problems.push(`sesgo de posición: una opción se queda en el ${(Math.min(...pcts) * 100).toFixed(1)} %`);
+
+if (deuda.length) {
+  console.log(`\nDeuda de sesgo de longitud — ${deuda.length} historias pendientes de reescribir sus distractores:`);
+  for (const d of deuda) console.log(`  · ${d}`);
+  console.log('  (no tumban el build; al arreglar una, bórrala de DEUDA_LONGITUD en este archivo)');
+}
 
 if (problems.length) {
   console.error(`\n✗ ${problems.length} problema(s):`);

@@ -9,7 +9,21 @@
     "aparecen en el mismo ejercicio), pero suena mejor con voces distintas.",
     "",
     "ORDEN RECOMENDADO: empieza por --sample --generate, oye las 30 catas, y solo",
-    "entonces lanza idioma por idioma con --lang."
+    "entonces lanza idioma por idioma con --lang.",
+    "",
+    "ENERGÍA DE LA VOZ — decidido el 13 ago 2026, tras oír las 33 primeras tomas.",
+    "Las voces elegidas hasta ahora son correctas pero planas: casi todas están",
+    "etiquetadas 'narrative_story', que es registro de audiolibro. Estas grabaciones",
+    "no son un audiolibro: son notas de voz de alguien indignado, cansado o a la",
+    "defensiva, mandadas a un amigo mientras camina.",
+    "",
+    "Para las próximas, elegir por este orden:",
+    "  1. use_case 'conversational' o 'social_media' antes que 'narrative_story'.",
+    "  2. Oír la muestra pensando: ¿esto suena a persona hablando o a locutor leyendo?",
+    "  3. Si dudas entre dos, la más rápida y con más variación de tono.",
+    "",
+    "Lo que NO hay que tocar para conseguirlo: la velocidad se queda en 0,90–0,92.",
+    "Acelerar no da energía, da prisa; la energía está en la voz, no en el tempo."
   ],
   "defaults": {
     "model_id": "eleven_flash_v2_5",
