@@ -10,7 +10,7 @@ const root = new URL('../', import.meta.url);
 const read = (path) => readFile(new URL(path, root), 'utf8');
 const words = (text) => text.match(/[A-Za-z]+(?:'[A-Za-z]+)?/g) ?? [];
 
-const [publicSource1To5, publicSource6To10, publicSource11To15, publicSource16To20, privateSource1To5, privateSource6To10, privateSource11To15, privateSource16To20, contractSource] = await Promise.all([
+const [publicSource1To5, publicSource6To10, publicSource11To15, publicSource16To20, privateSource1To5, privateSource6To10, privateSource11To15, privateSource16To20, contractSource, fixedFormSource, registrySource, routeSource, clientSource, mockIndexSource] = await Promise.all([
   read('src/data/toefl/listening-fixed-sets-1-5.ts'),
   read('src/data/toefl/listening-fixed-sets-6-10.ts'),
   read('src/data/toefl/listening-fixed-sets-11-15.ts'),
@@ -20,6 +20,11 @@ const [publicSource1To5, publicSource6To10, publicSource11To15, publicSource16To
   read('src/server/toefl/listening-fixed-sets-11-15.ts'),
   read('src/server/toefl/listening-fixed-sets-16-20.ts'),
   read('docs/toefl-2026-listening-expansion-contract-2026-08-14.md'),
+  read('src/data/mocks/toefl-fixed-form.ts'),
+  read('src/server/toefl/listening-registry.ts'),
+  read('src/app/api/practica/toefl/listening/score/route.ts'),
+  read('src/app/(site)/examenes/[exam]/practica/[mockId]/Toefl2026PracticeClient.tsx'),
+  read('src/data/mocks/index.ts'),
 ]);
 
 const publicSource = `${publicSource1To5}\n${publicSource6To10}\n${publicSource11To15}\n${publicSource16To20}`;
@@ -28,6 +33,18 @@ assert.doesNotMatch(publicSource, /correctOptionId|KEY_LABELS|\banswer\s*:/, 'pu
 privateSources.forEach((source) => assert.match(source, /import 'server-only'/, 'fixed Listening keys have an explicit server-only boundary'));
 assert.match(contractSource, /\| 1 \| 8 \| 4 \(dos estímulos × 2\) \| 2 \| 4 \| 18 \|/, 'contract records official-practice Module 1 shape');
 assert.match(contractSource, /\| 2 \| 8 \| 2 \(un estímulo × 2\) \| 2 \| 4 \| 16 \|/, 'contract records official-practice Module 2 shape');
+assert.match(registrySource, /import 'server-only'/, 'the combined 34-item key registry has an explicit server-only boundary');
+assert.match(registrySource, /items\.length !== 34/, 'the combined registry fails closed unless every set has exactly 34 scoring items');
+assert.match(routeSource, /TOEFL_FIXED_LISTENING_SCORING_BY_OBJECT_ID/, 'the Listening endpoint resolves only the private fixed registry');
+assert.match(routeSource, /presentedItemIds/, 'the Listening endpoint distinguishes presented from audio-blocked items');
+assert.equal((mockIndexSource.match(/withToefl2026FixedForm\(toeflSet\d+\)/g) ?? []).length, 20, 'all twenty public mock entries use the fixed TOEFL form');
+assert.match(fixedFormSource, /moduleId: 'listening-1'/, 'the public form composes Listening Module 1');
+assert.match(fixedFormSource, /moduleId: 'listening-2'/, 'the public form composes Listening Module 2');
+assert.match(fixedFormSource, /\.slice\(0, 5\)/, 'the form reuses five existing Choose items');
+assert.match(fixedFormSource, /\.slice\(0, 4\)/, 'the form preserves four fixed questions from long existing stimuli');
+assert.doesNotMatch(fixedFormSource, /answer:\s*question\.answer/, 'the public fixed adapter does not copy legacy keys');
+assert.match(clientSource, /mediaStatus === 'script-ready-audio-blocked'/, 'the preview exposes blocked media honestly');
+assert.match(clientSource, /\/api\/practica\/toefl\/listening\/score/, 'the runner closes presented Listening items through the server endpoint');
 
 const labelsBySet = new Map();
 for (const privateSource of privateSources) {

@@ -10,10 +10,12 @@ import type {
   MCQQuestion, WriteQuestion, SpeakQuestion,
   WordCompleteQuestion, SentenceBuildQuestion, RepeatQuestion,
   ToeflBuildSentenceQuestion, ToeflReadingSingleQuestion, ToeflReadingMultiQuestion,
+  ToeflListeningSingleQuestion,
 } from '@/data/mocks/types';
 import type { CompleteWordsScoreResult } from '@/data/toefl/complete-the-words-set-1';
 import type { ToeflReadingScoreResult } from '@/lib/toefl/reading-contract';
 import type { ToeflBuildSentenceScoreResult } from '@/lib/toefl/build-sentence-contract';
+import type { ToeflListeningScoreResult } from '@/lib/toefl/listening-contract';
 import BuildSentenceItem from '@/components/toefl/BuildSentenceItem';
 import { ReadingMultiChoiceGroup, ReadingSingleChoiceGroup } from '@/components/toefl/ReadingChoiceGroup';
 
@@ -56,12 +58,13 @@ interface Answers {
   buildV2: Record<string, string[]>;                  // stable item id -> stable tile ids
   single: Record<string, string>;                     // stable item id -> stable option id
   multi: Record<string, string[]>;                    // stable item id -> stable option ids
+  listening: Record<string, string>;                  // stable Listening item id -> stable option id
   write: Record<string, string>;                      // qid -> essay
   speak: Record<string, string>;                      // qid -> notes
 }
 type BandMap = Record<string, number>;                // section-key -> self-band 1–6
 
-const EMPTY: Answers = { mcq: {}, word: {}, build: {}, buildV2: {}, single: {}, multi: {}, write: {}, speak: {} };
+const EMPTY: Answers = { mcq: {}, word: {}, build: {}, buildV2: {}, single: {}, multi: {}, listening: {}, write: {}, speak: {} };
 
 // ── MCQ (Read in Daily Life / Academic Passage / all Listening) ─────────────────
 
@@ -83,6 +86,45 @@ function MCQView({ q, index, value, onChange }: {
               onClick={() => onChange(i)}>
               <span className="prac-option__letter">{String.fromCharCode(65 + i)}</span>
               <span className="prac-option__text">{opt}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ListeningSingleView({ q, index, value, onChange }: {
+  q: ToeflListeningSingleQuestion;
+  index: number;
+  value: string | undefined;
+  onChange: (optionId: string) => void;
+}) {
+  const blocked = q.mediaStatus === 'script-ready-audio-blocked';
+  return (
+    <div className="ielts-mcq" data-media-status={q.mediaStatus}>
+      <div className="ielts-mcq__num">{index}.</div>
+      <div className="ielts-mcq__body">
+        {q.task === 'choose-response' && q.audioUrl && <AudioPlayer src={q.audioUrl} label={`Audio ${index}`} />}
+        {blocked && q.task === 'choose-response' && (
+          <p className="t26-audio-blocked" role="status">
+            Audio pendiente de aprobación. Esta pregunta se muestra para revisión editorial y no se califica todavía.
+          </p>
+        )}
+        <p className="ielts-mcq__text">{q.text}</p>
+        <div className="prac-options" role="radiogroup" aria-label={`Listening question ${index}`}>
+          {q.options.map((option) => (
+            <button
+              key={option.id}
+              type="button"
+              role="radio"
+              aria-checked={value === option.id}
+              className={`prac-option${value === option.id ? ' prac-option--selected' : ''}`}
+              onClick={() => onChange(option.id)}
+              disabled={blocked}
+            >
+              <span className="prac-option__letter">{option.label}</span>
+              <span className="prac-option__text">{option.text}</span>
             </button>
           ))}
         </div>
@@ -292,6 +334,8 @@ function renderQuestion(q: Question, index: number, ans: Answers, h: Handlers) {
         onChange={(optionIds) => h.onMulti(q.id, optionIds)}
         onFocus={h.onReadingFocus}
       />;
+    case 'toefl-listening-single':
+      return <ListeningSingleView key={q.id} q={q} index={index} value={ans.listening[q.id]} onChange={(optionId) => h.onListening(q.id, optionId)} />;
     case 'sentencebuild':
       return <SentenceBuildView key={q.id} q={q} order={ans.build[q.id] ?? []} onChange={o => h.onBuild(q.id, o)} />;
     case 'toefl-build-sentence':
@@ -321,7 +365,8 @@ function SectionPanel({ section, ans, handlers }: { section: MockSection; ans: A
       {section.questions.map(q => {
         const numbered = q.type === 'mcq' || q.type === 'dialog' || q.type === 'toefl-reading-single'
           || q.type === 'toefl-reading-multi' || q.type === 'multiselect' || q.type === 'toefl-build-sentence';
-        const idx = numbered ? ++mcqCounter : mcqCounter;
+        const listeningNumbered = q.type === 'toefl-listening-single';
+        const idx = numbered || listeningNumbered ? ++mcqCounter : mcqCounter;
         return renderQuestion(q, idx, ans, handlers);
       })}
     </div>
@@ -349,6 +394,11 @@ function SectionPanel({ section, ans, handlers }: { section: MockSection; ans: A
       <p className="ielts-section-panel__title">{section.title}</p>
       <p className="ielts-section-panel__instructions">{section.instructions}</p>
       {section.sectionNote && <p className="t26-section-note">{section.sectionNote}</p>}
+      {section.mediaStatus === 'script-ready-audio-blocked' && (
+        <p className="t26-audio-blocked" role="status">
+          Audio pendiente de aprobación. El guion y las preguntas están disponibles en la revisión editorial, pero este estímulo no se presenta ni se califica todavía.
+        </p>
+      )}
       {section.audioUrl && (
         <div className="ielts-audio-sticky">
           <AudioPlayer src={section.audioUrl} label="TOEFL Listening" />
@@ -425,11 +475,16 @@ function computeReadingListening(
   ans: Answers,
   wordScores: WordScoreMap,
   readingScore?: ToeflReadingScoreResult,
+  listeningScore?: ToeflListeningScoreResult,
 ) {
   let correct = 0, total = 0;
   if (skill === 'reading' && readingScore) {
     correct += readingScore.correct;
     total += readingScore.denominator;
+  }
+  if (skill === 'listening' && listeningScore) {
+    correct += listeningScore.correct;
+    total += listeningScore.denominator;
   }
   for (const sec of getSkillSections(mock, skill)) {
     for (const q of sec.questions) {
@@ -451,6 +506,9 @@ function computeReadingListening(
       } else if (q.type === 'toefl-reading-single' || q.type === 'toefl-reading-multi') {
         // Server-scored reading keys reconcile once through readingScore.
         continue;
+      } else if (q.type === 'toefl-listening-single') {
+        // Fixed Listening keys reconcile once through the server-only score.
+        continue;
       } else if (q.type === 'multiselect') {
         total++;
         const selectedLetters = (ans.multi[q.id] ?? []).map((id) => id.slice(id.lastIndexOf('-') + 1).toUpperCase());
@@ -463,13 +521,15 @@ function computeReadingListening(
   return { correct, total };
 }
 
-function Results({ mock, exam, ans, wordScores, readingScore, buildScore, speakBands, onRetry }: {
-  mock: MockExam; exam: Exam; ans: Answers; wordScores: WordScoreMap; readingScore?: ToeflReadingScoreResult; buildScore?: ToeflBuildSentenceScoreResult; speakBands: BandMap; onRetry: () => void;
+function Results({ mock, exam, ans, wordScores, readingScore, listeningScore, buildScore, speakBands, onRetry }: {
+  mock: MockExam; exam: Exam; ans: Answers; wordScores: WordScoreMap; readingScore?: ToeflReadingScoreResult; listeningScore?: ToeflListeningScoreResult; buildScore?: ToeflBuildSentenceScoreResult; speakBands: BandMap; onRetry: () => void;
 }) {
   const r = computeReadingListening(mock, 'reading', ans, wordScores, readingScore);
-  const l = computeReadingListening(mock, 'listening', ans, wordScores);
+  const l = computeReadingListening(mock, 'listening', ans, wordScores, readingScore, listeningScore);
+  const blockedListening = getSkillSections(mock, 'listening').flatMap((section) => section.questions)
+    .filter((question) => question.type === 'toefl-listening-single' && question.mediaStatus === 'script-ready-audio-blocked').length;
   const rBand = pctToBand(r.correct, r.total);
-  const lBand = pctToBand(l.correct, l.total);
+  const lBand = blockedListening === 0 ? pctToBand(l.correct, l.total) : 0;
 
   // Writing: Build a Sentence (machine) blended with self-assessed Email + Discussion.
   const buildQs = getSkillSections(mock, 'writing').flatMap(s => s.questions).filter(q => q.type === 'sentencebuild') as SentenceBuildQuestion[];
@@ -492,7 +552,7 @@ function Results({ mock, exam, ans, wordScores, readingScore, buildScore, speakB
 
   const skills = [
     ...(r.total ? [{ skill: 'Reading', score: rBand, max: 6, label: `Band ${rBand}`, raw: `${r.correct}/${r.total}` }] : []),
-    ...(l.total ? [{ skill: 'Listening', score: lBand, max: 6, label: `Band ${lBand}`, raw: `${l.correct}/${l.total}` }] : []),
+    ...(l.total && blockedListening === 0 ? [{ skill: 'Listening', score: lBand, max: 6, label: `Band ${lBand}`, raw: `${l.correct}/${l.total}` }] : []),
     ...(wBand ? [{ skill: 'Writing', score: wBand, max: 6, label: `Band ${wBand}`, raw: bTotal ? `Build ${bCorrect}/${bTotal}` : undefined }] : []),
     ...(spBand ? [{ skill: 'Speaking', score: spBand, max: 6, label: `Band ${spBand}` }] : []),
   ];
@@ -520,6 +580,14 @@ function Results({ mock, exam, ans, wordScores, readingScore, buildScore, speakB
           <h2 id="t26-reading-report-title">Detalle de Reading · {mock.title}</h2>
           <p>Familias oficiales practicadas: <strong>{readingOfficialCorrect}/{readingOfficialTotal}</strong>.</p>
           {readingSupplementary && <p>Complementaria WeLearn: <strong>{readingSupplementary.rawPoints === 1 ? 'correcta' : 'incorrecta o incompleta'}</strong>.</p>}
+          <p>Corrección local fija; no equivale a una puntuación oficial de ETS.</p>
+        </section>
+      )}
+      {listeningScore && (
+        <section className="t26-reading-report" aria-labelledby="t26-listening-report-title">
+          <h2 id="t26-listening-report-title">Detalle de Listening · {mock.title}</h2>
+          <p>Ítems presentados y corregidos: <strong>{l.correct}/{l.total}</strong>.</p>
+          {blockedListening > 0 && <p>Ítems escritos con audio aún bloqueado: <strong>{blockedListening}</strong>. No se contaron como errores ni se calculó banda de Listening.</p>}
           <p>Corrección local fija; no equivale a una puntuación oficial de ETS.</p>
         </section>
       )}
@@ -564,6 +632,7 @@ interface Handlers {
   onWordFocus: (inputId: string) => void;
   onSingle: (id: string, optionId: string) => void;
   onMulti: (id: string, optionIds: string[]) => void;
+  onListening: (id: string, optionId: string) => void;
   onReadingFocus: (inputId: string) => void;
   onBuild: (id: string, order: number[]) => void;
   onBuildV2: (id: string, order: string[]) => void;
@@ -591,6 +660,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
   const [speakBands, setSpeakBands] = useState<BandMap>({});
   const [wordScores, setWordScores] = useState<WordScoreMap>({});
   const [readingScore, setReadingScore] = useState<ToeflReadingScoreResult>();
+  const [listeningScore, setListeningScore] = useState<ToeflListeningScoreResult>();
   const [buildScore, setBuildScore] = useState<ToeflBuildSentenceScoreResult>();
   const [attemptId, setAttemptId] = useState('');
   const [lastWordFocusId, setLastWordFocusId] = useState('');
@@ -600,6 +670,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
   const [scoringWords, setScoringWords] = useState(false);
   const [wordScoringError, setWordScoringError] = useState(false);
   const [readingScoringError, setReadingScoringError] = useState(false);
+  const [listeningScoringError, setListeningScoringError] = useState(false);
   const [buildScoringError, setBuildScoringError] = useState(false);
   const storageKey = `wl:toefl:mock:${mock.id}:attempt:v1`;
 
@@ -614,23 +685,26 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
             ans?: Answers;
             wordScores?: WordScoreMap;
             readingScore?: ToeflReadingScoreResult;
+            listeningScore?: ToeflListeningScoreResult;
             buildScore?: ToeflBuildSentenceScoreResult;
             activeSkill?: string;
             lastWordFocusId?: string;
             lastReadingFocusId?: string;
             lastBuildFocusId?: string;
           };
-          if ((saved.version === 1 || saved.version === 2) && saved.attemptId && saved.ans) {
+          if ((saved.version === 1 || saved.version === 2 || saved.version === 3) && saved.attemptId && saved.ans) {
             setAttemptId(saved.attemptId);
             setAns({
               ...EMPTY,
               ...saved.ans,
               single: saved.ans.single ?? {},
               multi: saved.ans.multi ?? {},
+              listening: saved.ans.listening ?? {},
               buildV2: saved.ans.buildV2 ?? {},
             });
             setWordScores(saved.wordScores ?? {});
             setReadingScore(saved.readingScore);
+            setListeningScore(saved.listeningScore);
             setBuildScore(saved.buildScore);
             if (saved.activeSkill && skills.includes(saved.activeSkill)) setActiveSkill(saved.activeSkill);
             setLastWordFocusId(saved.lastWordFocusId ?? '');
@@ -661,11 +735,12 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
     if (!hydrated || !attemptId || phase === 'intro' || phase === 'results') return;
     try {
       window.localStorage.setItem(storageKey, JSON.stringify({
-        version: 2,
+        version: 3,
         attemptId,
         ans,
         wordScores,
         readingScore,
+        listeningScore,
         buildScore,
         activeSkill,
         lastWordFocusId,
@@ -675,7 +750,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
     } catch {
       // Anonymous practice continues without local restoration.
     }
-  }, [activeSkill, ans, attemptId, buildScore, hydrated, lastBuildFocusId, lastReadingFocusId, lastWordFocusId, phase, readingScore, storageKey, wordScores]);
+  }, [activeSkill, ans, attemptId, buildScore, hydrated, lastBuildFocusId, lastReadingFocusId, lastWordFocusId, listeningScore, phase, readingScore, storageKey, wordScores]);
 
   useEffect(() => {
     if (phase !== 'exam') return;
@@ -691,6 +766,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
     onWordFocus: useCallback((inputId) => setLastWordFocusId(inputId), []),
     onSingle: useCallback((id, optionId) => setAns(p => ({ ...p, single: { ...p.single, [id]: optionId } })), []),
     onMulti: useCallback((id, optionIds) => setAns(p => ({ ...p, multi: { ...p.multi, [id]: optionIds } })), []),
+    onListening: useCallback((id, optionId) => setAns(p => ({ ...p, listening: { ...p.listening, [id]: optionId } })), []),
     onReadingFocus: useCallback((inputId) => setLastReadingFocusId(inputId), []),
     onBuild: useCallback((id, order) => setAns(p => ({ ...p, build: { ...p.build, [id]: order } })), []),
     onBuildV2: useCallback((id, order) => setAns(p => ({ ...p, buildV2: { ...p.buildV2, [id]: order } })), []),
@@ -708,6 +784,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
         else if (q.type === 'wordcomplete') { for (const b of q.blanks) { total++; if ((ans.word[q.id]?.[b.num] ?? '').trim()) done++; } }
         else if (q.type === 'toefl-reading-single') { total++; if (ans.single[q.id]) done++; }
         else if (q.type === 'toefl-reading-multi' || q.type === 'multiselect') { total++; if ((ans.multi[q.id] ?? []).length === q.selectCount) done++; }
+        else if (q.type === 'toefl-listening-single' && q.mediaStatus === 'ready-existing') { total++; if (ans.listening[q.id]) done++; }
         else if (q.type === 'sentencebuild') { total++; if ((ans.build[q.id] ?? []).length) done++; }
         else if (q.type === 'toefl-build-sentence') { total++; if ((ans.buildV2[q.id] ?? []).length === q.blankCount) done++; }
         else if (q.type === 'write') { total++; if ((ans.write[q.id] ?? '').trim()) done++; }
@@ -719,6 +796,9 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
   }));
   const totalAnswered = Object.values(progressMap).reduce((a, p) => a + p.done, 0);
   const totalQs = Object.values(progressMap).reduce((a, p) => a + p.total, 0);
+  const blockedAudioItems = mock.sections.flatMap((section) => section.questions)
+    .filter((question) => question.type === 'toefl-listening-single' && question.mediaStatus === 'script-ready-audio-blocked').length;
+  const blueprintItems = totalQs + blockedAudioItems;
 
   const hasWriteAI = getSkillSections(mock, 'writing').flatMap(s => s.questions).some(q => q.type === 'write');
   const hasSpeak = getSkillSections(mock, 'speaking').flatMap(s => s.questions).length > 0;
@@ -728,8 +808,9 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
     setScoringWords(true);
     setWordScoringError(false);
     setReadingScoringError(false);
+    setListeningScoringError(false);
     setBuildScoringError(false);
-    let failureSkill: 'reading' | 'writing' = 'reading';
+    let failureSkill: 'reading' | 'listening' | 'writing' = 'reading';
     try {
       const stableAttemptId = attemptId || createClientId('attempt');
       if (!attemptId) setAttemptId(stableAttemptId);
@@ -801,6 +882,40 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
         setReadingScore(nextReadingScore);
       }
 
+      const listeningQuestions = getSkillSections(mock, 'listening')
+        .flatMap((section) => section.questions)
+        .filter((question): question is ToeflListeningSingleQuestion =>
+          question.type === 'toefl-listening-single'
+          && question.serverScoring === 'toefl-listening'
+          && question.mediaStatus === 'ready-existing');
+      let nextListeningScore = listeningScore;
+      if (listeningQuestions.length > 0 && !nextListeningScore) {
+        failureSkill = 'listening';
+        const objectIds = new Set(listeningQuestions.map((question) => question.objectId));
+        if (objectIds.size !== 1) {
+          setListeningScoringError(true);
+          throw new Error('listening_object_identity_mismatch');
+        }
+        const [listeningObjectId] = objectIds;
+        const response = await fetch('/api/practica/toefl/listening/score', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({
+            objectId: listeningObjectId,
+            attemptId: stableAttemptId,
+            closeId: `close:${stableAttemptId}:${listeningObjectId}`,
+            responses: Object.fromEntries(listeningQuestions.map((question) => [question.id, ans.listening[question.id] ?? null])),
+            presentedItemIds: listeningQuestions.map((question) => question.id),
+          }),
+        });
+        if (!response.ok) {
+          setListeningScoringError(true);
+          throw new Error('listening_scoring_unavailable');
+        }
+        nextListeningScore = await response.json() as ToeflListeningScoreResult;
+        setListeningScore(nextListeningScore);
+      }
+
       const buildQuestions = getSkillSections(mock, 'writing')
         .flatMap((section) => section.questions)
         .filter((question): question is ToeflBuildSentenceQuestion =>
@@ -842,12 +957,12 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
     } finally {
       setScoringWords(false);
     }
-  }, [ans.buildV2, ans.multi, ans.single, ans.word, attemptId, buildScore, hasSpeak, hasWriteAI, mock, readingScore, scoringWords, wordScores]);
+  }, [ans.buildV2, ans.listening, ans.multi, ans.single, ans.word, attemptId, buildScore, hasSpeak, hasWriteAI, listeningScore, mock, readingScore, scoringWords, wordScores]);
 
   const handleRetry = useCallback(() => {
     setAns(EMPTY); setSpeakBands({});
-    setWordScores({}); setReadingScore(undefined); setBuildScore(undefined); setAttemptId(createClientId('attempt')); setLastWordFocusId(''); setLastReadingFocusId(''); setLastBuildFocusId('');
-    setWordScoringError(false); setReadingScoringError(false); setBuildScoringError(false);
+    setWordScores({}); setReadingScore(undefined); setListeningScore(undefined); setBuildScore(undefined); setAttemptId(createClientId('attempt')); setLastWordFocusId(''); setLastReadingFocusId(''); setLastBuildFocusId('');
+    setWordScoringError(false); setReadingScoringError(false); setListeningScoringError(false); setBuildScoringError(false);
     try { window.localStorage.removeItem(storageKey); } catch { /* local-only reset */ }
     setActiveSkill(skills[0] ?? 'reading'); setPhase('intro');
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -882,7 +997,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
   if (phase === 'results') {
     return (
       <div className="prac-shell"><style>{T26_CSS}</style>
-        <Results mock={mock} exam={exam} ans={ans} wordScores={wordScores} readingScore={readingScore} buildScore={buildScore} speakBands={speakBands} onRetry={handleRetry} />
+        <Results mock={mock} exam={exam} ans={ans} wordScores={wordScores} readingScore={readingScore} listeningScore={listeningScore} buildScore={buildScore} speakBands={speakBands} onRetry={handleRetry} />
       </div>
     );
   }
@@ -896,9 +1011,10 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
           <h1 className="prac-intro__title">{mock.title}</h1>
           <p className="prac-intro__sub">{mock.subtitle}</p>
           <div className="prac-intro__stats">
-            <div className="prac-intro__stat"><span className="prac-intro__stat-val">{totalQs}</span><span className="prac-intro__stat-lbl">Ítems</span></div>
+            <div className="prac-intro__stat"><span className="prac-intro__stat-val">{blueprintItems}</span><span className="prac-intro__stat-lbl">Ítems del blueprint</span></div>
             <div className="prac-intro__stat"><span className="prac-intro__stat-val">{mock.timeMinutes}</span><span className="prac-intro__stat-lbl">Minutos</span></div>
             <div className="prac-intro__stat"><span className="prac-intro__stat-val">1–6</span><span className="prac-intro__stat-lbl">Escala</span></div>
+            {blockedAudioItems > 0 && <div className="prac-intro__stat"><span className="prac-intro__stat-val">{blockedAudioItems}</span><span className="prac-intro__stat-lbl">Audios pendientes</span></div>}
           </div>
           <div className="prac-intro__tips">
             <p className="prac-intro__tips-title">Formato oficial vigente (act. enero 2026)</p>
@@ -943,6 +1059,11 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
       {readingScoringError && (
         <div className="t26-technical" role="status" aria-live="polite">
           No pudimos corregir Read in Daily Life y Academic Passage por un fallo técnico. Tus selecciones siguen guardadas y ninguna se contó como error académico. Vuelve a finalizar para reintentar.
+        </div>
+      )}
+      {listeningScoringError && (
+        <div className="t26-technical" role="status" aria-live="polite">
+          No pudimos corregir los ítems de Listening que sí tienen audio. Tus selecciones siguen guardadas y ninguna se contó como error académico. Vuelve a finalizar para reintentar.
         </div>
       )}
       {buildScoringError && (
@@ -991,6 +1112,9 @@ const T26_CSS = `
   .t26-word__input[aria-invalid="true"] { border-bottom-color:#b42318; background:rgba(180,35,24,.08); }
   .t26-sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
   .t26-technical { margin:.8rem auto 0; max-width:1100px; padding:.8rem 1rem; border-left:4px solid #b42318; background:rgba(180,35,24,.08); color:var(--ink,#1a2230); font-size:.88rem; line-height:1.55; }
+  .t26-audio-blocked { margin:.7rem 0; padding:.7rem .8rem; border:1px solid #b7791f; border-left-width:4px; border-radius:8px; background:rgba(183,121,31,.09); color:var(--ink,#1a2230); font-size:.88rem; line-height:1.55; }
+  .t26-audio-blocked + .ielts-mcq__text { margin-top:.8rem; }
+  [data-media-status="script-ready-audio-blocked"] .prac-option:disabled { opacity:.62; cursor:not-allowed; }
   .t26-section-note { margin:.7rem 0; padding:.65rem .75rem; border-left:3px solid var(--exam-color,#0a56c4); background:rgba(10,86,196,.06); color:var(--ink,#1a2230); font-size:.86rem; line-height:1.55; }
   .t26-reading-report { max-width:900px; margin:1rem auto; padding:1rem; border:1px solid #047857; border-radius:12px; background:rgba(4,120,87,.07); color:var(--ink,#1a2230); }
   .t26-build-report { max-width:900px; margin:1rem auto; padding:1rem; border:1px solid #047857; border-radius:12px; background:rgba(4,120,87,.07); color:var(--ink,#1a2230); }
@@ -1007,5 +1131,5 @@ const T26_CSS = `
   .t26-repeat__instruction { font-size:.9rem; margin:.6rem 0; }
   .t26-repeat__target { font-size:1.05rem; font-weight:600; margin-top:.5rem; padding:.6rem .9rem; background:rgba(10,86,196,.06); border-radius:8px; }
   @media (max-width:420px) { .t26-word .ielts-form__body { line-height:2.8; overflow-wrap:normal; } }
-  @media (prefers-reduced-motion:reduce) { .t26-word *, .t26-technical { transition-duration:.01ms!important; animation-duration:.01ms!important; scroll-behavior:auto!important; } }
+  @media (prefers-reduced-motion:reduce) { .t26-word *, .t26-technical, .t26-audio-blocked { transition-duration:.01ms!important; animation-duration:.01ms!important; scroll-behavior:auto!important; } }
 `;

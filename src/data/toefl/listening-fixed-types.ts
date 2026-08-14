@@ -2,6 +2,14 @@ export const TOEFL_FIXED_LISTENING_VERSION = '2026-08-14.fixed-v1';
 export const TOEFL_FIXED_LISTENING_DISCLOSURE =
   'Práctica fija WeLearn basada en la composición publicada del TOEFL iBT 2026. No es adaptativa, no replica el banco ETS y no produce una puntuación oficial.';
 
+export function legacyFixedListeningItemId(legacyId: string) {
+  return `item:${legacyId}-fixed-v1`;
+}
+
+export function fixedListeningOptionId(itemId: string, optionIndex: number) {
+  return `${itemId}:option-${String.fromCharCode(97 + optionIndex)}`;
+}
+
 export type ToeflListeningTask = 'choose-response' | 'conversation' | 'announcement' | 'academic-talk';
 export type ToeflListeningVoiceRole = 'woman' | 'man' | 'student' | 'professor' | 'announcer' | 'narrator';
 
@@ -69,7 +77,7 @@ export function fixedListeningItem(
     alignment: 'official-family-pilot',
     options: options.map((text, index) => {
       const label = String.fromCharCode(65 + index);
-      return { id: `${id}:option-${label.toLowerCase()}`, label, text };
+      return { id: fixedListeningOptionId(id, index), label, text };
     }),
   };
 }

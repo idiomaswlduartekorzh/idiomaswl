@@ -3410,3 +3410,25 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
   preview, voces/costo, medios aprobados y runtime forward-only.
 - Estado visible sigue 17/34 y cero audio fue abierto, reproducido, transcrito,
   generado, normalizado o modificado.
+
+### Composición fija Listening 34/34 y scoring privado — 2026-08-14
+
+- Los veinte mocks usan ahora una capa reversible que compone Listening M1 18 y M2 16:
+  16 Choose, 6 Conversation, 4 Announcement y 8 Academic por set.
+- De las 34 preguntas, quince reutilizan los MP3 existentes y diecinueve se muestran
+  como `script-ready-audio-blocked`. Las bloqueadas no abren una URL inexistente, no
+  aceptan respuesta y no entran al denominador provisional.
+- La tercera pregunta heredada de Announcement y la quinta de Academic siguen en las
+  fuentes como suplementos. La Conversation heredada conserva por ahora un MP3 con
+  cuatro preguntas; sus posibles cortes requieren escucha posterior autorizada.
+- Las claves heredadas ya no viajan en el payload fijo. Un registro `server-only`
+  ensambla 34 claves por set y el endpoint Listening valida y cierra sólo los IDs
+  realmente presentados. Son 680 claves privadas en los veinte sets.
+- Evidencia: checker fijo PASS, unit 3/3, TypeScript, ESLint dirigido y diff-check PASS;
+  build completo PASS con guardianes, 480 lecciones de escucha preservadas y 1.365
+  rutas. Cero audio abierto, reproducido, transcrito, generado o modificado.
+- Estado: Listening queda 34/34 escrito y compuesto, pero sólo 15/34 tiene medio listo
+  por set. El simulacro completo alcanza 95/97 interacciones compuestas; faltan dos
+  Repeat, forward-only, clocks/cierres, resultados honestos y preview editorial.
+  Evidencia detallada en
+  `docs/toefl-2026-listening-fixed-runtime-audit-2026-08-14.md`.

@@ -132,3 +132,15 @@ TypeScript, ESLint dirigido, build con guardianes y 1.364/1.364 rutas, y Chromiu
 
 Evidencia editorial y fuentes:
 `docs/toefl-2026-reading-module2-sets16-20-factual-audit-2026-08-14.md`.
+
+## Avance posterior — Listening fijo Sets 1–20
+
+Los veinte simulacros componen ahora Listening 18 + 16 = 34. Quince preguntas por set
+reutilizan medios existentes y diecinueve permanecen explícitamente bloqueadas hasta
+la aprobación de audio; ninguna bloqueada se presenta al scoring ni cuenta como error.
+Las claves de los 34 ítems se resuelven en servidor y ya no viajan en el payload fijo.
+
+El total compuesto por set queda en 95/97: Reading 40, Listening 34, Writing 12 y
+Speaking 9. No es producto terminado: faltan dos Repeat, navegación, relojes, resultados
+y gates de preview/audio. Evidencia y límites en
+`docs/toefl-2026-listening-fixed-runtime-audit-2026-08-14.md`.

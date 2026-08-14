@@ -13,7 +13,8 @@ export type QuestionType =
   | 'sentencebuild'
   | 'repeat'
   | 'toefl-reading-single'
-  | 'toefl-reading-multi';
+  | 'toefl-reading-multi'
+  | 'toefl-listening-single';
 
 // ── Existing types ────────────────────────────────────────────────────────────
 
@@ -145,6 +146,25 @@ export interface ToeflReadingMultiQuestion {
   selectCount: number;
 }
 
+// TOEFL iBT 2026 Listening item. The answer key is intentionally absent from
+// the public mock payload and is resolved by the server-only scoring registry.
+export interface ToeflListeningSingleQuestion {
+  type: 'toefl-listening-single';
+  id: string;
+  sourceItemId: string;
+  objectId: string;
+  contentVersion: string;
+  serverScoring: 'toefl-listening';
+  alignment: 'official-family-pilot';
+  task: 'choose-response' | 'conversation' | 'announcement' | 'academic-talk';
+  part: number;
+  text: string;
+  options: Array<{ id: string; label: string; text: string }>;
+  mediaId: string;
+  mediaStatus: 'ready-existing' | 'script-ready-audio-blocked';
+  audioUrl?: string;
+}
+
 // Each item has a question number and matches to one of the lettered endings.
 export interface MatchingItem {
   num: number;
@@ -243,7 +263,8 @@ export type Question =
   | ToeflBuildSentenceQuestion
   | RepeatQuestion
   | ToeflReadingSingleQuestion
-  | ToeflReadingMultiQuestion;
+  | ToeflReadingMultiQuestion
+  | ToeflListeningSingleQuestion;
 
 // ── Section & exam ────────────────────────────────────────────────────────────
 
@@ -256,6 +277,8 @@ export interface MockSection {
   sectionNote?: string;    // e.g. word bank shown above Part 2 questions
   transcript?: string;
   audioUrl?: string;       // URL to audio file (if available)
+  mediaId?: string;        // stable Listening stimulus identity
+  mediaStatus?: 'ready-existing' | 'script-ready-audio-blocked';
   comingSoon?: boolean;    // disables the tab, shows "En Construcción" badge
   questions: Question[];
   // TOEFL 2026 fixed-route practice metadata. The official test is adaptive;
