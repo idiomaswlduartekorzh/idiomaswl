@@ -149,8 +149,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't15-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You signed up for a gym membership, but your circumstances have changed and you need to cancel it. You want to ask how to cancel and whether you will be charged any fee.\n\nWrite an email to the gym's membership office.`,
-          text: 'In your email: explain your situation, ask your questions clearly, and keep a polite tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: explain your situation, ask your questions clearly, and keep a polite tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +160,7 @@ const mock: MockExam = {
         { type: 'write', id: 't15-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on cities. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Larsen: Some cities are banning cars from their central areas to reduce pollution and make streets safer for pedestrians. Do you think banning cars from city centers is a good idea? Why or why not?\n\nStudent (Ines): I think it's a great idea. It reduces pollution, encourages walking and cycling, and makes city centers more pleasant. For example, since my city closed its center to cars, the main square has become full of cafés and people instead of parked vehicles.\n\nStudent (Karl): I'm not convinced. Many people, including the elderly and those with disabilities, depend on cars. A total ban could make city centers hard to reach for them. For example, my grandmother relies on her car to reach the pharmacy in the city center, and a full ban would leave her with no easy alternative.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

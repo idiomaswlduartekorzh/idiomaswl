@@ -149,8 +149,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't16-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You lent your notes to a classmate before an important exam, but they have not returned them and the exam is in two days. You want to politely ask for them back as soon as possible.\n\nWrite an email to your classmate.`,
-          text: 'In your email: remind them, explain why you need the notes, and make your request clearly and politely. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: remind them, explain why you need the notes, and make your request clearly and politely. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +160,7 @@ const mock: MockExam = {
         { type: 'write', id: 't16-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on the workplace. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Dubois: Some companies have introduced a four-day working week without reducing pay, hoping to improve productivity and well-being. Do you think a four-day working week is a good idea? Why or why not?\n\nStudent (Leo): I think it's a great idea. People are often more focused and productive when they have more rest, and a shorter week improves work-life balance. For example, a company that switched to a four-day week reported that employees returned on Mondays feeling noticeably less exhausted.\n\nStudent (Amina): I'm not so sure. Some jobs, like healthcare, need people every day, and companies might just expect the same work in less time, adding stress. For example, a nurse still has to cover the same number of shifts regardless of how the office staff's schedule changes.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

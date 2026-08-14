@@ -149,8 +149,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't3-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You attended a training course, but you did not receive the certificate you were promised at the end. You want to ask when you will receive it and how it will be sent.\n\nWrite an email to the course administrator.`,
-          text: 'In your email: explain the situation, ask your questions clearly, and keep a polite tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: explain the situation, ask your questions clearly, and keep a polite tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +160,7 @@ const mock: MockExam = {
         { type: 'write', id: 't3-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on the environment. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Haruki: Some people believe that protecting the environment is mainly the responsibility of governments, while others believe individuals must change their own behavior. Which do you think matters more, and why?\n\nStudent (Lucia): I think individual action matters most. If millions of people reduce waste, save energy, and use less water, the combined effect is huge. For example, when my neighborhood started a recycling initiative, participation grew simply because people saw their neighbors doing it.\n\nStudent (Ben): I disagree. Individuals can only do so much; real change requires governments to pass laws and control big polluters. For example, no amount of individual recycling can offset the emissions of a single large factory that ignores environmental regulations.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

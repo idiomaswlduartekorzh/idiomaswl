@@ -149,8 +149,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't8-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You borrowed a book from a friend, but you have accidentally spilled coffee on it and damaged some pages. You want to apologize and offer to replace it with a new copy.\n\nWrite an email to your friend.`,
-          text: 'In your email: explain what happened, apologize, and make your offer clearly, using an appropriate tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: explain what happened, apologize, and make your offer clearly, using an appropriate tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +160,7 @@ const mock: MockExam = {
         { type: 'write', id: 't8-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on public health. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Nakamura: Some cities have introduced a tax on sugary drinks to reduce their consumption and improve public health. Do you think such a tax is a good idea? Why or why not?\n\nStudent (Sara): I support the tax. Drinking too much sugar causes serious health problems, and a higher price encourages people to choose healthier options. For example, after a similar tax was introduced in another country, sales of sugary drinks dropped noticeably within the first year.\n\nStudent (Omar): I'm not sure it's fair. The tax affects lower-income people the most, and people should be free to decide what they drink. For example, a family already struggling financially ends up paying more for the same drink, while wealthier people barely notice the extra cost.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

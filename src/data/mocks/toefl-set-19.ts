@@ -149,8 +149,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't19-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You signed up for a weekend cooking class, but you have realized you are allergic to nuts. You want to check whether the recipes will contain nuts and ask what options you have.\n\nWrite an email to the cooking-class organizer.`,
-          text: 'In your email: explain your situation, ask your questions clearly, and keep a polite tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: explain your situation, ask your questions clearly, and keep a polite tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +160,7 @@ const mock: MockExam = {
         { type: 'write', id: 't19-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on communication. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Novak: Some people believe that learning a second language should be required for all university students, while others think it should be optional. What is your view, and why?\n\nStudent (Yuki): I think it should be required. Knowing another language broadens your thinking, improves job prospects, and helps you understand other cultures. For example, learning Spanish completely changed how I understood a documentary about Latin America that I had watched years earlier in translation.\n\nStudent (Sam): I disagree. Students already have heavy workloads, and not everyone needs a second language for their career. It should be a personal choice. For example, a friend studying computer science barely has time for his major classes, let alone an additional language requirement.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

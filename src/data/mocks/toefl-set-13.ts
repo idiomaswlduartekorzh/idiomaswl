@@ -149,8 +149,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't13-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You bought a pair of headphones online, but when they arrived, one side did not work. You want to explain the problem and ask for either a replacement or a refund.\n\nWrite an email to the online store's customer service.`,
-          text: 'In your email: describe the problem, make your request clearly, and keep a polite tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: describe the problem, make your request clearly, and keep a polite tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +160,7 @@ const mock: MockExam = {
         { type: 'write', id: 't13-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on tourism. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Costa: Tourism brings money and jobs to many places, but it can also damage the environment and local culture. In your view, does tourism do more good or more harm? Why?\n\nStudent (Ella): I think it does more good. Tourism creates jobs, supports small businesses, and encourages countries to protect their heritage sites. For example, a small coastal town near where I live now thrives economically because visitors come specifically to see its restored historic center.\n\nStudent (Rashid): I disagree. Mass tourism often pollutes natural areas, raises local prices, and turns unique cultures into performances for visitors. For example, a beach near my hometown has become so crowded with tourists that local fishermen can barely use it anymore.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

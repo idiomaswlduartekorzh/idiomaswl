@@ -149,8 +149,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't11-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You applied for a part-time job at the campus library and were invited to an interview, but the proposed time clashes with a class you cannot miss. You want to ask whether the interview could be moved to another time.\n\nWrite an email to the library hiring manager.`,
-          text: 'In your email: explain the conflict, request an alternative time, and keep a polite, professional tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: explain the conflict, request an alternative time, and keep a polite, professional tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +160,7 @@ const mock: MockExam = {
         { type: 'write', id: 't11-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on media. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Silva: Some people think social media has mostly a positive effect on society, while others think it is mostly harmful. What is your view, and why?\n\nStudent (Nadia): I think it's mostly positive. Social media helps people stay connected, share information quickly, and organize for good causes. For example, during a recent natural disaster, social media was one of the fastest ways for volunteers to organize donations and support.\n\nStudent (Ben): I disagree. It spreads misinformation, harms mental health, and often replaces real face-to-face relationships. For example, I've seen false health information spread quickly online, and some people believed it simply because many others had shared it.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

@@ -149,8 +149,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't20-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You are a member of a local library. You have found a book on the shelf that has several pages torn out. You want to report the damaged book so it can be repaired or replaced, and to make clear it was already damaged when you found it.\n\nWrite an email to the library staff.`,
-          text: 'In your email: describe the problem, make clear you did not cause the damage, and suggest what should happen next, using a polite tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: describe the problem, make clear you did not cause the damage, and suggest what should happen next, using a polite tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +160,7 @@ const mock: MockExam = {
         { type: 'write', id: 't20-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on the environment and daily life. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Andersson: Some cities charge a fee for single-use plastic bags to reduce plastic waste. Do you think charging for plastic bags is an effective way to protect the environment? Why or why not?\n\nStudent (Wei): I think it's effective. Even a small charge makes people bring their own reusable bags, which noticeably reduces plastic waste. For example, after my city introduced the fee, I started keeping a reusable bag in my backpack and rarely buy a plastic one anymore.\n\nStudent (Julia): I'm not so sure. The fee is so small that many people just pay it, and reusable bags have their own environmental costs to produce. For example, I've seen people buy a reusable bag every single week simply because they keep forgetting to bring the one they already own.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

@@ -149,8 +149,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't12-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You reserved a study room at the library for a group project, but when you arrived, another group was using it and would not leave. You want to report what happened and ask the library to confirm your reservation for next week.\n\nWrite an email to the library front desk.`,
-          text: 'In your email: explain what happened, make your request clearly, and keep a polite tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: explain what happened, make your request clearly, and keep a polite tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +160,7 @@ const mock: MockExam = {
         { type: 'write', id: 't12-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on society and technology. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Haddad: Some schools have started teaching computer programming to all students from a young age. Do you think programming should be a required subject for all children? Why or why not?\n\nStudent (Yuki): I think it should be required. Technology is part of every job now, and learning to code teaches logical thinking. For example, even students who study biology or art benefit from coding when they need to organize data or build a simple project website.\n\nStudent (Pablo): I'm not so sure. Not everyone will work in technology, and schools already have a full timetable. Maybe it should be optional. For example, my school already struggles to fit in music and art classes, so adding another required subject could push those out entirely.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

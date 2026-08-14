@@ -149,8 +149,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't2-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You ordered a birthday cake from a bakery for this Saturday, but you now need it for Friday instead. You want to ask whether the date can be changed and confirm the details of your order.\n\nWrite an email to the bakery.`,
-          text: 'In your email: explain the change you need, confirm your order details, and keep a polite tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: explain the change you need, confirm your order details, and keep a polite tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +160,7 @@ const mock: MockExam = {
         { type: 'write', id: 't2-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on society. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Owens: Some people think that volunteering should be a required part of every student's education, while others believe it should remain a personal choice. What is your view, and why?\n\nStudent (Amara): I think it should be required. Volunteering builds empathy, teaches responsibility, and connects students with their communities. For example, when my class volunteered at a local shelter, several students who had never considered social work discovered a genuine interest in it.\n\nStudent (Kenji): I disagree. Volunteering only has real value when it comes from genuine willingness. If it is forced, students may do it half-heartedly, and it loses its meaning. For example, a friend of mine was required to volunteer at a nursing home and resented every visit, which likely did more harm than good.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

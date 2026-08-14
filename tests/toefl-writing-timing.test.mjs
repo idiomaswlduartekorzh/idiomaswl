@@ -15,6 +15,28 @@ test('Email has no invented word minimum and Discussion preserves recommended 10
   assert.equal(discussion.recommendedMinimumWords, 100);
 });
 
+test('Sets 2–20 preserve the same honest Email and Discussion timing policies', async () => {
+  for (let setNumber = 2; setNumber <= 20; setNumber += 1) {
+    const moduleUrl = new URL(`../src/data/mocks/toefl-set-${setNumber}.ts`, import.meta.url);
+    const set = (await import(moduleUrl)).default;
+    const [email, discussion] = set.sections
+      .flatMap((section) => section.questions)
+      .filter((question) => question.type === 'write');
+
+    assert.deepEqual(
+      [email.timeLimitSeconds, email.minWords, email.minimumWordsPolicy],
+      [420, 0, 'none-published'],
+      `Set ${setNumber} Email policy`,
+    );
+    assert.ok(!email.text.includes('80–120'), `Set ${setNumber} Email range`);
+    assert.deepEqual(
+      [discussion.timeLimitSeconds, discussion.minWords, discussion.minimumWordsPolicy],
+      [600, 100, 'recommended-100'],
+      `Set ${setNumber} Discussion policy`,
+    );
+  }
+});
+
 test('remaining time is derived from the durable deadline and rounds up', () => {
   assert.equal(remainingWritingSeconds(10_001, 10_000), 1);
   assert.equal(remainingWritingSeconds(11_001, 10_000), 2);

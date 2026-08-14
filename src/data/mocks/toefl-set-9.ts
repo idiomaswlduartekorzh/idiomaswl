@@ -149,8 +149,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't9-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You recently attended an online course, but you were charged twice for the same registration. You want to explain the mistake and ask for a refund of the extra payment.\n\nWrite an email to the course's billing department.`,
-          text: 'In your email: explain the problem, make your request clearly, and use a polite tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: explain the problem, make your request clearly, and use a polite tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +160,7 @@ const mock: MockExam = {
         { type: 'write', id: 't9-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on the environment. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Adeyemi: Some people believe individuals should focus on changing their own habits to protect the environment, while others believe only governments and large companies can make a real difference. Where should the main responsibility lie? Why?\n\nStudent (Ravi): I think individuals matter most. If everyone reduces waste and saves energy, the combined effect is enormous. For example, when my community organized a plastic-free week, the amount of waste collected dropped noticeably compared to a normal week.\n\nStudent (Chloe): I disagree. Individual actions are small compared to industrial pollution. Only government regulation of big companies can create real change. For example, a single large factory can produce more pollution in a day than thousands of households do in a year.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

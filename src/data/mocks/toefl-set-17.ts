@@ -149,8 +149,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't17-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You booked a table at a restaurant for a group of six to celebrate a friend's birthday, but two more people now want to come. You want to ask if the booking can be changed to eight people.\n\nWrite an email to the restaurant.`,
-          text: 'In your email: explain the situation, make your request clearly, and keep a polite tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: explain the situation, make your request clearly, and keep a polite tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +160,7 @@ const mock: MockExam = {
         { type: 'write', id: 't17-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on the arts. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Meyer: Some governments spend public money to support the arts, such as museums, theatres, and concerts. Others argue this money should be spent on things like healthcare and education instead. Should governments fund the arts? Why or why not?\n\nStudent (Sofia): I think governments should fund the arts. They enrich people's lives, preserve culture, and attract tourists who bring money to the economy. For example, a free public museum in my city introduced thousands of children to art who would otherwise never have had the chance to visit one.\n\nStudent (Ahmed): I disagree. With limited budgets, essentials like hospitals and schools should come first. The arts can be supported by private donations. For example, a hospital in my region recently had to postpone equipment upgrades, which makes funding a theater instead hard to justify.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

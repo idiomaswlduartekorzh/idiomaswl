@@ -149,8 +149,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't4-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You are a member of a sports club. You have injured your ankle and cannot take part for about a month. You want to ask whether your membership can be paused so you do not pay for the weeks you will miss.\n\nWrite an email to the sports club office.`,
-          text: 'In your email: explain your situation, make your request clearly, and keep a polite tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: explain your situation, make your request clearly, and keep a polite tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +160,7 @@ const mock: MockExam = {
         { type: 'write', id: 't4-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on learning. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Grant: Some people believe that making mistakes is one of the best ways to learn, while others think mistakes should be avoided as much as possible. What is your view, and why?\n\nStudent (Priya): I think making mistakes is essential to learning. When we get something wrong and understand why, the lesson sticks with us far better than simply being told the right answer. For example, I once solved a math problem incorrectly for weeks, but the moment I finally understood my error, I never made that mistake again.\n\nStudent (Marco): I partly agree, but too many mistakes can be discouraging and waste time. It is better to learn from clear examples first and make mistakes carefully. For example, when I was learning to drive, repeating the same mistake over and over just made me more nervous instead of helping me improve.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

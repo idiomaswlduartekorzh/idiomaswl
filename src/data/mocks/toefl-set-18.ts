@@ -149,8 +149,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't18-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You joined an online course, but the videos keep stopping and you cannot complete the lessons. You have already tried a different device and a different internet connection. You want to report the problem and ask for help.\n\nWrite an email to the course's technical support team.`,
-          text: 'In your email: describe the problem and what you have already tried, make your request clearly, and keep a polite tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: describe the problem and what you have already tried, make your request clearly, and keep a polite tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +160,7 @@ const mock: MockExam = {
         { type: 'write', id: 't18-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on education. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Tanaka: Some people believe that students learn best when they study a wide range of subjects, while others believe they should specialize early in one area. Which approach do you think is better, and why?\n\nStudent (Marco): I think a broad education is better. It helps students discover their interests and become well-rounded thinkers who can connect ideas across fields. For example, I only discovered my interest in economics after taking an elective class that had nothing to do with my intended major.\n\nStudent (Fatima): I disagree. Specializing early lets students go deeper and become truly skilled in one area, which employers often value. For example, a friend who focused entirely on engineering from an early age was able to start advanced research long before classmates with broader schedules.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

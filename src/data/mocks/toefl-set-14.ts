@@ -149,8 +149,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't14-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You are part of a volunteer group that meets on Saturdays. You will be away for the next two Saturdays and want to let the coordinator know, and ask whether you can help in another way during that time.\n\nWrite an email to the volunteer coordinator.`,
-          text: 'In your email: explain your absence, offer to help another way, and keep a friendly, polite tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: explain your absence, offer to help another way, and keep a friendly, polite tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +160,7 @@ const mock: MockExam = {
         { type: 'write', id: 't14-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on health and lifestyle. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Ivanov: Some experts argue that schools should require students to do at least one hour of physical activity every day. Do you agree that daily exercise should be required in schools? Why or why not?\n\nStudent (Grace): I agree. Regular exercise improves health, helps students concentrate, and reduces stress. For example, after our school added a short exercise break, teachers noticed students paying attention longer during afternoon classes.\n\nStudent (Hassan): I'm not sure it should be required. Some students are very busy with studies, and forcing exercise might make them dislike it. Maybe it should be encouraged instead. For example, a friend who already trains for competitive swimming outside school found the extra required activity exhausting rather than helpful.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

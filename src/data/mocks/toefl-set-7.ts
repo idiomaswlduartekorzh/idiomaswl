@@ -149,8 +149,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't7-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You are a member of a university club. The club is planning its end-of-year trip, but the proposed date is during your final exams. You want to suggest a different date and offer to help organize the trip.\n\nWrite an email to the club president.`,
-          text: 'In your email: explain the problem with the date, make your suggestion clearly, and offer your help, using a polite tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: explain the problem with the date, make your suggestion clearly, and offer your help, using a polite tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +160,7 @@ const mock: MockExam = {
         { type: 'write', id: 't7-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on education. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Bello: Some universities are considering whether to make attendance at lectures optional, since recordings are available online. Do you think lecture attendance should be required? Why or why not?\n\nStudent (Mei): I think attendance should be optional. Students learn in different ways, and some concentrate better watching recordings at their own pace. For example, I focus much better watching a recorded lecture at double speed late at night than sitting in a crowded hall in the morning.\n\nStudent (Diego): I disagree. Being physically present keeps students engaged and allows them to ask questions and interact with classmates, which recordings cannot replace. For example, in my seminar, the best discussions happen when a classmate asks an unexpected question that the recording could never anticipate.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

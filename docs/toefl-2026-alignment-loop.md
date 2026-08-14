@@ -3015,3 +3015,30 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
 - Gate: **T17 permanece `[~]`** únicamente hasta la aprobación manual de VoiceOver
   T17. T16 conserva su VoiceOver propio pendiente. No hubo commit, push, deploy,
   publicación, cambio de remotos ni uso de secretos/API.
+
+### Expansión no-audio Sets 2–20 — inventario y lote W1 — 2026-08-14
+
+- Decisión de secuencia: por instrucción del owner, audio continúa al final. Mientras
+  T16/T17 esperan VoiceOver humano, la expansión avanza sólo sobre contenido no-audio
+  sin declarar cerradas T14/T15/T18/T19 ni T26.
+- Inventario reproducible: `docs/toefl-2026-non-audio-sets-2-20-inventory-2026-08-14.tsv`
+  registra los 19 sets y confirma un patrón común anterior al lote W1:
+  - 12 huecos CTW frente a 10 por texto oficial; dos textos, incluido uno personal;
+  - Daily Life ya tiene 3+2 preguntas y cada texto está dentro de 15–150 palabras;
+  - Academic tiene cinco MCQ útiles más un multiselect complementario, pero los
+    pasajes miden 263–342 palabras frente a aproximadamente 200;
+  - Build a Sentence tiene 6 unidades sin intercambio contextual y una ya ordenada;
+  - Email tenía 80–120 palabras inventadas y carecía de 420 s;
+  - Discussion conservaba 100 palabras, pero carecía de 600 s.
+- Lote W1 implementado: Sets 2–20 eliminan `80–120`, usan `minWords: 0`, 420 s y
+  policy `none-published` para Email; Discussion usa 600 s, recomendación 100 y policy
+  `recommended-100`. Ambas tareas declaran `not_evaluated` y no producen banda ETS.
+- Guardián: `check:toefl-writing` ahora inspecciona los 20 sets; PASS. Unit Writing
+  añade recorrido dinámico de Sets 2–20; PASS 8/8.
+- Pendientes no-audio por set: reparar/derivar un CTW académico de 70–100 palabras con
+  diez mitades alternas y clave server-only; comprimir Academic preservando cinco
+  respuestas; expandir Build a Sentence a diez intercambios con distractor y clave
+  server-only. Se ejecutarán en lotes editoriales pequeños, empezando por Sets 2–5.
+- Preservación: los textos personales, fuentes v1 y ejercicios anteriores no se borran;
+  pasan a suplemento o fuente server-only cuando el reemplazo oficial-family esté
+  aprobado. Cero cambios de MP3, transcripción, TTS o ElevenLabs.

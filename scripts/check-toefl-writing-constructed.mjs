@@ -34,4 +34,26 @@ assert.match(mock, /timeLimitSeconds/, 'Set 1 data must retain task deadlines.')
 assert.match(client, /Continuar sin inventar score/, 'Constructed Writing must not become a self-awarded band.');
 assert.match(client, /not_evaluated/, 'Constructed Writing must report its honest outcome.');
 
-console.log('✓ TOEFL 2026 Writing T17: 7/10-minute deadlines, local persistence, honest rubric and no invented Writing band verified.');
+for (let setNumber = 2; setNumber <= 20; setNumber += 1) {
+  const moduleUrl = new URL(`../src/data/mocks/toefl-set-${setNumber}.ts`, import.meta.url);
+  const set = (await import(moduleUrl)).default;
+  const tasks = set.sections.flatMap((section) => section.questions).filter((question) => question.type === 'write');
+  const [setEmail, setDiscussion] = tasks;
+
+  assert.equal(tasks.length, 2, `Set ${setNumber} needs exactly Email and Discussion.`);
+  assert.equal(setEmail.taskNumber, 1, `Set ${setNumber} Email must be task 1.`);
+  assert.equal(setEmail.timeLimitSeconds, 420, `Set ${setNumber} Email needs 420 seconds.`);
+  assert.equal(setEmail.minWords, 0, `Set ${setNumber} Email cannot invent a word minimum.`);
+  assert.equal(setEmail.minimumWordsPolicy, 'none-published');
+  assert.ok(!setEmail.text.includes('80–120'), `Set ${setNumber} still exposes the invented Email range.`);
+  assert.match(setEmail.text, /complete sentences/i);
+  assert.match(setEmail.evaluationDisclosure ?? '', /not_evaluated/);
+
+  assert.equal(setDiscussion.taskNumber, 2, `Set ${setNumber} Discussion must be task 2.`);
+  assert.equal(setDiscussion.timeLimitSeconds, 600, `Set ${setNumber} Discussion needs 600 seconds.`);
+  assert.equal(setDiscussion.minWords, 100, `Set ${setNumber} Discussion needs the recommended 100 words.`);
+  assert.equal(setDiscussion.minimumWordsPolicy, 'recommended-100');
+  assert.match(setDiscussion.evaluationDisclosure ?? '', /not_evaluated/);
+}
+
+console.log('✓ TOEFL 2026 Writing T17+: all 20 sets use 7/10-minute references, honest word policies and no invented Writing band.');

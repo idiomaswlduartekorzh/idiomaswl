@@ -149,8 +149,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't10-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: Your neighbor has been playing loud music late at night, making it hard for you to sleep before your morning classes. You want to politely explain the problem and ask them to lower the volume after 10 p.m.\n\nWrite an email to your neighbor.`,
-          text: 'In your email: explain the problem, make your request clearly, and keep a polite, friendly tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: explain the problem, make your request clearly, and keep a polite, friendly tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +160,7 @@ const mock: MockExam = {
         { type: 'write', id: 't10-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on work and society. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Weber: Many companies now allow employees to work from home some or all of the time. Do you think working from home is better or worse than working in an office? Why?\n\nStudent (Aisha): I think working from home is better. It saves commuting time, reduces stress, and lets people focus without office distractions. For example, without a daily commute, I have more time to exercise in the morning and start work feeling more energized.\n\nStudent (Tomás): I see the appeal, but I think the office is better for teamwork. It's easier to solve problems face to face, and people can feel isolated working alone at home. For example, my last group project moved much faster once we could sketch ideas together on a whiteboard instead of explaining them over video calls.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
