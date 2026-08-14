@@ -3237,3 +3237,23 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
   paso es la auditoría transversal de composición, tiempos, scoring, navegación y
   accesibilidad de los 20 simulacros. VoiceOver T16/T17 sigue pendiente como gate
   humano. Cero audio abierto, reproducido, transcrito, generado o modificado.
+
+### Auditoría transversal de composición — hallazgo que supersede “completo” — 2026-08-14
+
+- Hallazgo: W2–W7 cerró correctamente un módulo escrito por set, no una forma fija
+  completa. “Completo dentro del alcance no-audio” en los lotes anteriores debe leerse
+  como “Módulo 1 no-audio completo”.
+- Contraste: ETS publica hasta 50/47/12/11 y dos etapas adaptativas en Reading y
+  Listening. Su Practice Test 1 alineado con 2026 contiene 40 Reading, 34 Listening,
+  12 Writing y 11 Speaking en una forma de dos módulos.
+- Inventario actual por Set 2–20: 20 official-family Reading, 17 Listening, 12 Writing
+  y 9 Speaking; Set 1 tiene el mismo núcleo más un CTW heredado visible. La brecha fija
+  elegida es +20 Reading, +17 Listening y +2 Repeat por set.
+- Runtime pendiente: clocks por módulo/tarea, cierre de etapas, Listening forward-only,
+  retirar notas de preparación oral, dejar Speaking not_evaluated, impedir overall
+  parcial e incorporar claves Daily/Listening al límite server-only.
+- Decisión: preservar el trabajo actual como Módulo 1 y construir Módulo 2 original.
+  La experiencia se rotulará forma fija WeLearn; no fingirá adaptatividad ETS.
+- Evidencia: docs/toefl-2026-full-composition-audit-2026-08-14.md y TSV asociado.
+  Cero audio tocado; primero se preparan guiones/manifiesto y el owner aprueba voces,
+  muestras y costo antes de generar.
