@@ -1,0 +1,109 @@
+import assert from 'node:assert/strict';
+import { execFileSync } from 'node:child_process';
+import { readFile } from 'node:fs/promises';
+import { TOEFL_FIXED_LISTENING_SETS_1_TO_5 } from '../src/data/toefl/listening-fixed-sets-1-5.ts';
+
+const root = new URL('../', import.meta.url);
+const read = (path) => readFile(new URL(path, root), 'utf8');
+const words = (text) => text.match(/[A-Za-z]+(?:'[A-Za-z]+)?/g) ?? [];
+
+const [publicSource, privateSource, contractSource] = await Promise.all([
+  read('src/data/toefl/listening-fixed-sets-1-5.ts'),
+  read('src/server/toefl/listening-fixed-sets-1-5.ts'),
+  read('docs/toefl-2026-listening-expansion-contract-2026-08-14.md'),
+]);
+
+assert.doesNotMatch(publicSource, /correctOptionId|KEY_LABELS|\banswer\s*:/, 'public fixed Listening data contains no answer keys');
+assert.match(privateSource, /import 'server-only'/, 'fixed Listening keys have an explicit server-only boundary');
+assert.match(contractSource, /\| 1 \| 8 \| 4 \(dos estímulos × 2\) \| 2 \| 4 \| 18 \|/, 'contract records official-practice Module 1 shape');
+assert.match(contractSource, /\| 2 \| 8 \| 2 \(un estímulo × 2\) \| 2 \| 4 \| 16 \|/, 'contract records official-practice Module 2 shape');
+
+const labelsBySet = new Map();
+const keyBlock = privateSource.slice(privateSource.indexOf('const KEY_LABELS'), privateSource.indexOf('function orderedItems'));
+for (const match of keyBlock.matchAll(/^\s*(\d+): \[([^\]]+)\]/gm)) {
+  labelsBySet.set(Number(match[1]), [...match[2].matchAll(/'([^']+)'/g)].map((entry) => entry[1]));
+}
+
+const itemIds = [];
+const mediaIds = [];
+const plannedUrls = [];
+const lengthClues = [];
+assert.equal(TOEFL_FIXED_LISTENING_SETS_1_TO_5.length, 5, 'first fixed Listening batch has five sets');
+
+for (const set of TOEFL_FIXED_LISTENING_SETS_1_TO_5) {
+  assert.equal(set.module1ChooseAdditions.length, 3, `Set ${set.setNumber} adds three Module 1 Choose items`);
+  assert.equal(set.module2.choose.length, 8, `Set ${set.setNumber} Module 2 has eight Choose items`);
+  assert.equal(set.module2.conversation.items.length, 2, `Set ${set.setNumber} Module 2 Conversation has two questions`);
+  assert.equal(set.module2.announcement.items.length, 2, `Set ${set.setNumber} Module 2 Announcement has two questions`);
+  assert.equal(set.module2.academic.items.length, 4, `Set ${set.setNumber} Module 2 Academic Talk has four questions`);
+
+  const choose = [...set.module1ChooseAdditions, ...set.module2.choose];
+  const long = [set.module2.conversation, set.module2.announcement, set.module2.academic];
+  const orderedItems = [
+    ...set.module1ChooseAdditions.map((entry) => entry.item),
+    ...set.module2.choose.map((entry) => entry.item),
+    ...set.module2.conversation.items,
+    ...set.module2.announcement.items,
+    ...set.module2.academic.items,
+  ];
+  assert.equal(orderedItems.length, 19, `Set ${set.setNumber} has 19 new written interactions`);
+
+  for (const entry of choose) {
+    const count = words(entry.script).length;
+    assert.ok(count >= 4 && count <= 18, `${entry.mediaId} Choose script stays within 4–18 words (got ${count})`);
+  }
+  const expectedRanges = [[45, 100], [50, 100], [140, 210]];
+  long.forEach((entry, index) => {
+    const count = words(entry.script).length;
+    const [min, max] = expectedRanges[index];
+    assert.ok(count >= min && count <= max, `${entry.mediaId} script stays within ${min}–${max} words (got ${count})`);
+  });
+
+  const labels = labelsBySet.get(set.setNumber) ?? [];
+  assert.equal(labels.length, 19, `Set ${set.setNumber} has 19 private labels`);
+  orderedItems.forEach((entry, index) => {
+    itemIds.push(entry.id);
+    assert.equal(entry.options.length, 4, `${entry.id} has four options`);
+    assert.deepEqual(entry.options.map((option) => option.label), ['A', 'B', 'C', 'D'], `${entry.id} labels A–D`);
+    assert.equal(new Set(entry.options.map((option) => option.id)).size, 4, `${entry.id} option ids are unique`);
+    assert.ok(entry.options.some((option) => option.id.endsWith(`option-${labels[index]?.toLowerCase()}`)), `${entry.id} private key names a public option`);
+    const correctIndex = labels[index]?.charCodeAt(0) - 65;
+    const optionLengths = entry.options.map((option) => words(option.text).length);
+    const correctLength = optionLengths[correctIndex];
+    const distractorMean = optionLengths
+      .filter((_, optionIndex) => optionIndex !== correctIndex)
+      .reduce((sum, length) => sum + length, 0) / 3;
+    if (correctLength / distractorMean >= 2 && correctLength - distractorMean >= 3) {
+      lengthClues.push(`${entry.id} (${correctLength} vs ${distractorMean.toFixed(1)})`);
+    }
+  });
+
+  for (const entry of [...choose, ...long]) {
+    mediaIds.push(entry.mediaId);
+    plannedUrls.push(entry.plannedAudioUrl);
+    assert.equal(entry.mediaStatus, 'script-ready-audio-blocked', `${entry.mediaId} remains blocked from generation`);
+    assert.ok(entry.script.trim(), `${entry.mediaId} has a canonical script`);
+    assert.ok(entry.voiceRoles.length >= 1, `${entry.mediaId} has a planned voice role`);
+  }
+  assert.equal(choose.length + long.length, 14, `Set ${set.setNumber} plans fourteen new TTS assets`);
+}
+
+assert.equal(new Set(itemIds).size, itemIds.length, 'new fixed Listening item ids are globally unique');
+assert.equal(new Set(mediaIds).size, mediaIds.length, 'new fixed Listening media ids are globally unique');
+assert.equal(new Set(plannedUrls).size, plannedUrls.length, 'new fixed Listening planned URLs are globally unique');
+assert.deepEqual(lengthClues, [], `correct options must not reveal themselves through a large length advantage: ${lengthClues.join(', ')}`);
+const allScripts = TOEFL_FIXED_LISTENING_SETS_1_TO_5.flatMap((set) => [
+  ...set.module1ChooseAdditions,
+  ...set.module2.choose,
+  set.module2.conversation,
+  set.module2.announcement,
+  set.module2.academic,
+]).map((entry) => entry.script.trim().toLowerCase());
+assert.equal(new Set(allScripts).size, allScripts.length, 'all planned scripts in the batch are distinct');
+
+const changedPaths = execFileSync('git', ['diff', '--name-only', 'HEAD'], {
+  cwd: new URL('.', root), encoding: 'utf8',
+}).trim().split('\n').filter(Boolean);
+assert.ok(changedPaths.every((path) => !path.startsWith('public/audio/') && !/\.(mp3|wav|m4a|ogg)$/i.test(path)), 'Listening script work changes no audio asset');
+
+console.log('✓ TOEFL fixed Listening scripts Sets 1–5: 19 new items/set, 14 blocked media/set, private keys, and no audio changes');

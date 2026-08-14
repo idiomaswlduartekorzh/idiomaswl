@@ -3334,3 +3334,22 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
 - Estado de producto: Reading 40/40 en los 20 sets y 78/97 total. Siguen faltando 17
   Listening, dos Repeat, clocks/navegación y gates finales. VoiceOver T16/T17 sigue
   pendiente. Cero audio abierto, reproducido, transcrito, generado o modificado.
+
+### Expansión Listening escrita — contrato y guiones Sets 1–5 — 2026-08-14
+
+- Se fijó la composición reproducible de la práctica ETS: Listening M1 18 y M2 16;
+  total por familias 16 Choose, 6 Conversation, 4 Announcement y 8 Academic Talk.
+- Preservación: cinco Choose y los tres estímulos largos existentes por set se
+  reutilizan. La pregunta 3 de Announcement y la 5 de Academic quedan como suplemento,
+  no se borran. Las Conversations se evaluaron por guion antes de decidir cortes.
+- Sets 1–5 ya tienen 19 interacciones nuevas escritas por set: tres Choose para M1 y
+  un M2 completo 8 + 2 + 2 + 4. Son 95 ítems públicos sin claves y 70 medios marcados
+  `script-ready-audio-blocked`; claves en módulo `server-only`.
+- Editorial: 55 Choose de 4–18 palabras, Conversation 73–91, Announcement 59–72 y
+  Academic 181–205. Ocho pistas de longitud se detectaron y corrigieron antes del
+  cierre. Auditoría factual con NOAA, NIH, EPA, NPS y USGS en
+  `docs/toefl-2026-listening-scripts-sets1-5-audit-2026-08-14.md`.
+- Evidencia: checker Listening fijo PASS, unit 3/3 y TypeScript PASS.
+- Estado de producto no cambia: estos guiones aún no se sirven en el examen y Listening
+  sigue 17/34. Faltan Sets 6–20, privacidad/API del bloque completo, preview editorial,
+  aprobación de voces/costo, medios y runtime forward-only. Cero audio tocado.
