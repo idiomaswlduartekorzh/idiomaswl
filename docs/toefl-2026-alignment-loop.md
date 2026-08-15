@@ -3494,3 +3494,12 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
   hasta autorización explícita del owner.
 - Evidencia: `docs/toefl-2026-sets1-20-release-audit-2026-08-14.md` y
   `npm run check:toefl-fixed-preview -- <base-url>`.
+- Sync canónico: después de `git fetch origin`, `origin/main` `189897da` ya era
+  ancestro de la rama (22 ahead, 0 behind). Catálogo y TypeScript pasaron. El build
+  exacto ejecutó todos los guardianes y Turbopack se detuvo sólo por el symlink externo
+  de `node_modules` del worktree temporal; `npm run build -- --webpack` completó
+  1.365/1.365 páginas.
+- El primer preview Vercel fue bloqueado antes de compilar porque el commit heredó un
+  correo local de macOS no reconocido por el equipo. La corrección operativa es crear
+  el siguiente commit con el correo del owner ya presente en el historial; no se
+  desactiva la protección de Vercel ni se publica producción.

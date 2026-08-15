@@ -102,7 +102,10 @@ se conservan como evidencia.
 - sesión fija: checker PASS y unit 3/3;
 - CTW 8/8, Reading 8/8, Build 9/9 y Writing 8/8;
 - TypeScript PASS, ESLint dirigido PASS y `git diff --check` PASS;
-- build Webpack de producción PASS, 1.365/1.365 rutas;
+- build Webpack de producción PASS, 1.365/1.365 rutas. El `npm run build` exacto
+  ejecutó primero todos los guardianes y después Turbopack rechazó únicamente el
+  symlink externo de `node_modules` propio de este worktree temporal; no reportó una
+  falla de aplicación. La repetición oficial con `--webpack` compiló completa;
 - smoke HTML del build: 20/20 rutas PASS;
 - guardianes globales PASS: catálogo 465, escritura 480, 24 series y 480 MP3 de
   práctica auditiva ajenos a TOEFL preservados;
@@ -116,8 +119,8 @@ se conservan como evidencia.
 | Runner, clocks y resultados honestos | CERRADO | Pruebas y build pasan. |
 | Producción local de las 20 rutas | CERRADO | Smoke 20/20 pasa. |
 | VoiceOver T16/T17 | ABIERTO | Revisión humana del owner en Build, Email y Discussion. |
-| Rama contra `origin/main` | ABIERTO | Actualizar, repetir guardianes y comprobar que no se perdió trabajo nuevo. |
-| Preview Vercel | ABIERTO | Publicar rama limpia y verificar las 20 rutas en la URL real. |
+| Rama contra `origin/main` | CERRADO | `origin/main` `189897da` es ancestro; 0 commits pendientes, catálogo y TypeScript PASS, build Webpack PASS. |
+| Preview Vercel | ABIERTO | El primer intento fue bloqueado antes de build por un correo local no reconocido en la firma Git; reintentar con la identidad ya usada por el owner en el repositorio. |
 | Aprobación de audio | ABIERTO | Manifiesto exacto, voces, muestra y costo; requiere autorización explícita. |
 | Generación y QA de audio | BLOQUEADO | Crear sólo el lote aprobado y luego revisar técnica, texto/voz y experiencia. |
 | Producción | BLOQUEADO | Requiere cierre de todos los gates anteriores y autorización separada. |
