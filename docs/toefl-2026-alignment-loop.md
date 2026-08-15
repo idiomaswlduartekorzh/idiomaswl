@@ -3436,16 +3436,19 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
 ### Expansión Speaking 7 Repeat + 4 Interview — 2026-08-14
 
 - Los veinte sets conservan cinco Repeat y cuatro Interview y reciben dos Repeat
-  nuevos: 40 guiones agregados, sin editar los 100 MP3 Repeat existentes.
+  nuevos: 40 guiones agregados, sin editar los 100 MP3 Repeat existentes. La auditoría
+  oficial también registra como faltantes los 80 audios de prompt Interview, antes
+  omitidos del inventario.
 - Item 6 tiene 15–16 palabras y Item 7 18–22 en el lote final. Los cuarenta guiones,
   IDs, media IDs y rutas son únicos; cada set alterna roles `woman` y `man`.
-- Los nuevos medios permanecen `script-ready-audio-blocked`. La UI no intenta abrir
+- Los 40 Repeat y 80 Interview pendientes permanecen `script-ready-audio-blocked`. La UI no intenta abrir
   sus rutas, los muestra como revisión editorial y los excluye de progreso y
   autoevaluación hasta que exista un audio aprobado.
 - Evidencia: checker Speaking fijo PASS Sets 1–20, unit 2/2, TypeScript y ESLint
   dirigido PASS. Cero audio abierto, reproducido, transcrito, generado o modificado.
 - Estado: los veinte simulacros alcanzan 97/97 interacciones escritas y compuestas.
-  No son producto terminado: hay 320 nuevos MP3 potenciales bloqueados, más decisiones
+  No son producto terminado: hay 400 nuevos MP3 potenciales bloqueados (280 Listening,
+  40 Repeat y 80 Interview), más decisiones
   sobre cortes; faltan clocks, cierres, forward-only, resultados honestos, preview y
   gates humanos. Evidencia en
   `docs/toefl-2026-speaking-fixed-expansion-audit-2026-08-14.md`.

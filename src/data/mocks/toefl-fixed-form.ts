@@ -4,6 +4,7 @@ import type {
   MockSection,
   Question,
   RepeatQuestion,
+  SpeakQuestion,
   ToeflListeningSingleQuestion,
 } from './types';
 import { toToeflCompleteWordsQuestion } from './toefl-complete-words-adapter';
@@ -28,6 +29,7 @@ import {
 } from '@/data/toefl/listening-fixed-types';
 import {
   TOEFL_FIXED_REPEAT_BY_SET,
+  TOEFL_RELEASED_FIXED_INTERVIEW_MEDIA_IDS,
   TOEFL_RELEASED_FIXED_REPEAT_MEDIA_IDS,
 } from '@/data/toefl/speaking-fixed-repeat';
 
@@ -380,7 +382,25 @@ export function withToefl2026FixedSpeaking(mock: MockExam): MockExam {
   const sections = mock.sections.map((section): MockSection => {
     if (section.skill !== 'speaking') return section;
     const repeats = section.questions.filter((question): question is RepeatQuestion => question.type === 'repeat');
-    if (repeats.length === 0) return { ...section, moduleId: 'speaking' };
+    if (repeats.length === 0) {
+      return {
+        ...section,
+        moduleId: 'speaking',
+        sectionNote: 'Las cuatro preguntas forman Take an Interview. Sus guiones se conservan, pero los prompts de audio siguen bloqueados hasta aprobación del owner.',
+        questions: section.questions.map((question): Question => {
+          if (question.type !== 'speak') return question;
+          const interview = question as SpeakQuestion;
+          const mediaId = `media:toefl:set-${setNumber}:speaking-interview-${interview.partNumber}`;
+          const released = TOEFL_RELEASED_FIXED_INTERVIEW_MEDIA_IDS.has(mediaId);
+          return {
+            ...interview,
+            audioUrl: released ? `/audio/toefl/set-${setNumber}/interview-${interview.partNumber}.mp3` : undefined,
+            mediaId,
+            mediaStatus: released ? 'ready-existing' : 'script-ready-audio-blocked',
+          };
+        }),
+      };
+    }
 
     const existing = repeats.slice(0, 5).map<RepeatQuestion>((question) => ({
       ...question,

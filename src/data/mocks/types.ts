@@ -64,6 +64,9 @@ export interface SpeakQuestion {
   part: number;
   partNumber: 1 | 2 | 3 | 4;
   text: string;
+  audioUrl?: string;
+  mediaId?: string;
+  mediaStatus?: 'ready-existing' | 'script-ready-audio-blocked';
   cueCard?: string;
   followUp?: string[];
   imageUrls?: string[];

@@ -4,6 +4,7 @@ import { readFile } from 'node:fs/promises';
 import {
   TOEFL_FIXED_REPEAT_BY_SET,
   TOEFL_FIXED_REPEAT_EXPANSIONS,
+  TOEFL_RELEASED_FIXED_INTERVIEW_MEDIA_IDS,
   TOEFL_RELEASED_FIXED_REPEAT_MEDIA_IDS,
 } from '../src/data/toefl/speaking-fixed-repeat.ts';
 
@@ -13,6 +14,7 @@ const words = (text) => text.match(/[A-Za-z]+(?:[’'][A-Za-z]+)?/g) ?? [];
 
 assert.equal(TOEFL_FIXED_REPEAT_EXPANSIONS.length, 40, 'twenty sets have two new Repeat scripts each');
 assert.equal(TOEFL_RELEASED_FIXED_REPEAT_MEDIA_IDS.size, 0, 'no new Repeat media is released before owner approval');
+assert.equal(TOEFL_RELEASED_FIXED_INTERVIEW_MEDIA_IDS.size, 0, 'no Interview prompt media is released before owner approval');
 
 const ids = [];
 const mediaIds = [];
@@ -50,8 +52,9 @@ const [fixedFormSource, clientSource] = await Promise.all([
 assert.match(fixedFormSource, /withToefl2026FixedSpeaking/, 'the fixed form composes Speaking');
 assert.match(fixedFormSource, /repeats\.slice\(0, 5\)/, 'the composer preserves five existing Repeat items');
 assert.match(fixedFormSource, /additions\.map<RepeatQuestion>/, 'the composer appends the two planned Repeat items');
-assert.match(clientSource, /question\.type === 'toefl-listening-single' \|\| question\.type === 'repeat'/, 'the preview counts blocked Listening and Repeat media');
-assert.match(clientSource, /question\.type !== 'repeat' \|\| question\.mediaStatus !== 'script-ready-audio-blocked'/, 'blocked Repeat items are excluded from self-assessment');
+assert.match(fixedFormSource, /speaking-interview-\$\{interview\.partNumber\}/, 'the composer registers all Interview prompts as media');
+assert.match(clientSource, /question\.type === 'toefl-listening-single' \|\| question\.type === 'repeat' \|\| question\.type === 'speak'/, 'the preview counts blocked Listening, Repeat and Interview media');
+assert.match(clientSource, /question\.type !== 'repeat' && question\.type !== 'speak'/, 'blocked Repeat and Interview items are excluded from self-assessment');
 
 const changedPaths = execFileSync('git', ['status', '--porcelain=v1', '--untracked-files=all'], {
   cwd: new URL('.', root), encoding: 'utf8',
@@ -61,4 +64,4 @@ const changedPaths = execFileSync('git', ['status', '--porcelain=v1', '--untrack
 });
 assert.ok(changedPaths.every((path) => !path.startsWith('public/audio/') && !/\.(mp3|wav|m4a|ogg)$/i.test(path)), 'Repeat expansion changes no audio asset');
 
-console.log('✓ TOEFL fixed Speaking Sets 1–20: 7 Repeat + 4 Interview, 40 blocked new media, no audio changes');
+console.log('✓ TOEFL fixed Speaking Sets 1–20: 7 Repeat + 4 Interview, 120 blocked new media, no audio changes');

@@ -3,6 +3,8 @@ import test from 'node:test';
 import {
   TOEFL_FIXED_REPEAT_BY_SET,
   TOEFL_FIXED_REPEAT_EXPANSIONS,
+  TOEFL_RELEASED_FIXED_INTERVIEW_MEDIA_IDS,
+  TOEFL_RELEASED_FIXED_REPEAT_MEDIA_IDS,
 } from '../src/data/toefl/speaking-fixed-repeat.ts';
 
 test('Sets 1–20 expose exactly Repeat items 6 and 7 as blocked media', () => {
@@ -13,6 +15,8 @@ test('Sets 1–20 expose exactly Repeat items 6 and 7 as blocked media', () => {
     assert.ok(entries.every((entry) => entry.mediaStatus === 'script-ready-audio-blocked'));
   }
   assert.equal(TOEFL_FIXED_REPEAT_EXPANSIONS.length, 40);
+  assert.equal(TOEFL_RELEASED_FIXED_REPEAT_MEDIA_IDS.size, 0);
+  assert.equal(TOEFL_RELEASED_FIXED_INTERVIEW_MEDIA_IDS.size, 0);
 });
 
 test('planned Repeat IDs, media and scripts are unique', () => {

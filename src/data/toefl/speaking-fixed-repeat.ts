@@ -82,3 +82,4 @@ export const TOEFL_FIXED_REPEAT_BY_SET = Object.fromEntries(
 // Filled only after owner approval, generation, ASR comparison, technical QA,
 // and human listening review of the corresponding media IDs.
 export const TOEFL_RELEASED_FIXED_REPEAT_MEDIA_IDS = new Set<string>();
+export const TOEFL_RELEASED_FIXED_INTERVIEW_MEDIA_IDS = new Set<string>();

@@ -297,11 +297,18 @@ function RepeatView({ q }: { q: RepeatQuestion }) {
 // ── Take an Interview (Speaking) ────────────────────────────────────────────────
 
 function InterviewView({ q, notes, onNotes }: { q: SpeakQuestion; notes: string; onNotes: (v: string) => void }) {
+  const blocked = q.mediaStatus === 'script-ready-audio-blocked';
   return (
-    <div className="ielts-speak">
+    <div className="ielts-speak" data-media-status={q.mediaStatus}>
       <div className="ielts-group__label">
         <span className="ielts-group__range">Take an Interview — Question {q.partNumber}</span>
       </div>
+      {q.audioUrl && <AudioPlayer src={q.audioUrl} label={`Interview question ${q.partNumber}`} />}
+      {blocked && (
+        <p className="t26-audio-blocked" role="status">
+          Audio del entrevistador pendiente de aprobación. El guion se incluye para revisión editorial y esta pregunta no se evalúa todavía.
+        </p>
+      )}
       {q.text.split('\n\n').map((p, i) => <p key={i} className="ielts-speak__prompt">{p}</p>)}
       <p className="ielts-write__prompt" style={{ marginTop: '1rem' }}>Notas de preparación (opcional):</p>
       <textarea
@@ -794,7 +801,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
         else if (q.type === 'sentencebuild') { total++; if ((ans.build[q.id] ?? []).length) done++; }
         else if (q.type === 'toefl-build-sentence') { total++; if ((ans.buildV2[q.id] ?? []).length === q.blankCount) done++; }
         else if (q.type === 'write') { total++; if ((ans.write[q.id] ?? '').trim()) done++; }
-        else if (q.type === 'speak') { total++; if ((ans.speak[q.id] ?? '').trim()) done++; }
+        else if (q.type === 'speak' && q.mediaStatus !== 'script-ready-audio-blocked') { total++; if ((ans.speak[q.id] ?? '').trim()) done++; }
         else if (q.type === 'repeat' && q.mediaStatus !== 'script-ready-audio-blocked') { total++; done++; }
       }
     }
@@ -803,7 +810,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
   const totalAnswered = Object.values(progressMap).reduce((a, p) => a + p.done, 0);
   const totalQs = Object.values(progressMap).reduce((a, p) => a + p.total, 0);
   const blockedAudioItems = mock.sections.flatMap((section) => section.questions)
-    .filter((question) => (question.type === 'toefl-listening-single' || question.type === 'repeat')
+    .filter((question) => (question.type === 'toefl-listening-single' || question.type === 'repeat' || question.type === 'speak')
       && question.mediaStatus === 'script-ready-audio-blocked').length;
   const blueprintItems = totalQs + blockedAudioItems;
 
@@ -990,7 +997,8 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
   }
   if (phase === 'assess-speak') {
     const rows = getSkillSections(mock, 'speaking').flatMap(s => s.questions)
-      .filter((question) => question.type !== 'repeat' || question.mediaStatus !== 'script-ready-audio-blocked')
+      .filter((question) => (question.type !== 'repeat' && question.type !== 'speak')
+        || question.mediaStatus !== 'script-ready-audio-blocked')
       .map(q => {
         if (q.type === 'repeat') return { key: q.id, label: `Listen and Repeat — Item ${(q as RepeatQuestion).itemNumber}` };
         return { key: q.id, label: `Take an Interview — Q${(q as SpeakQuestion).partNumber}` };
@@ -1023,7 +1031,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
             <div className="prac-intro__stat"><span className="prac-intro__stat-val">{blueprintItems}</span><span className="prac-intro__stat-lbl">Ítems del blueprint</span></div>
             <div className="prac-intro__stat"><span className="prac-intro__stat-val">{mock.timeMinutes}</span><span className="prac-intro__stat-lbl">Minutos</span></div>
             <div className="prac-intro__stat"><span className="prac-intro__stat-val">1–6</span><span className="prac-intro__stat-lbl">Escala</span></div>
-            {blockedAudioItems > 0 && <div className="prac-intro__stat"><span className="prac-intro__stat-val">{blockedAudioItems}</span><span className="prac-intro__stat-lbl">Audios pendientes</span></div>}
+            {blockedAudioItems > 0 && <div className="prac-intro__stat"><span className="prac-intro__stat-val">{blockedAudioItems}</span><span className="prac-intro__stat-lbl">Ítems con audio pendiente</span></div>}
           </div>
           <div className="prac-intro__tips">
             <p className="prac-intro__tips-title">Formato oficial vigente (act. enero 2026)</p>

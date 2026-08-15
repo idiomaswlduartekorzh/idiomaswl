@@ -2,7 +2,7 @@
 
 Fecha: 14 de agosto de 2026
 
-Estado: composición escrita 11/11 integrada; cuarenta audios nuevos bloqueados
+Estado: composición escrita 11/11 integrada; ciento veinte audios nuevos bloqueados
 
 ## Resultado
 
@@ -12,8 +12,10 @@ Cada simulacro contiene ahora la composición reproducible elegida para Speaking
 - cuatro Take an Interview;
 - once interacciones totales por set.
 
-Los cinco Repeat y cuatro Interview existentes se conservan sin editar. Se añadieron
-únicamente Repeat 6 y 7: cuarenta guiones nuevos para los veinte sets.
+Los cinco Repeat y cuatro guiones Interview existentes se conservan sin editar. Se
+añadieron únicamente Repeat 6 y 7: cuarenta guiones nuevos para los veinte sets. La
+auditoría oficial corrigió además una omisión del inventario: las cuatro preguntas de
+Interview son estímulos hablados y requieren ochenta audios de entrevistador en total.
 
 ## Diseño editorial
 
@@ -29,8 +31,10 @@ no contienen afirmaciones académicas externas que requieran atribución factual
 
 ## Medios y runtime
 
-Los cuarenta medios usan rutas planeadas `repeat-6.mp3` y `repeat-7.mp3`, pero su estado
-es `script-ready-audio-blocked`. El manifiesto de liberación está vacío. La interfaz:
+Los cuarenta Repeat nuevos usan rutas planeadas `repeat-6.mp3` y `repeat-7.mp3`. Los
+ochenta prompts Interview usan `interview-1.mp3` a `interview-4.mp3`. Los ciento veinte
+medios están `script-ready-audio-blocked` y ambos manifiestos de liberación están
+vacíos. La interfaz:
 
 - no intenta reproducir una ruta inexistente;
 - rotula el ítem como revisión editorial;
@@ -39,8 +43,8 @@ es `script-ready-audio-blocked`. El manifiesto de liberación está vacío. La i
 - no lo incluye en la autoevaluación oral mientras falte el audio.
 
 Los cien MP3 Repeat existentes permanecen intactos. La brecha total que deberá presentar
-el gate de audio pasa a 320 piezas TTS nuevas: 280 Listening + 40 Speaking, más cualquier
-corte derivado de Conversation que se apruebe sin TTS.
+el gate de audio pasa a 400 piezas TTS nuevas: 280 Listening + 40 Repeat + 80 Interview,
+más cualquier corte derivado de Conversation que se apruebe sin TTS.
 
 ## Evidencia
 
@@ -48,13 +52,14 @@ corte derivado de Conversation que se apruebe sin TTS.
 - `test:toefl-fixed-speaking`: 2/2 PASS;
 - TypeScript: PASS;
 - ESLint dirigido: PASS;
-- 40/40 IDs, media IDs, rutas y guiones únicos;
+- 40/40 Repeat con IDs, media IDs, rutas y guiones únicos;
+- 80/80 prompts Interview registrados con media ID y ruta planeada;
 - ningún MP3, WAV, M4A u OGG modificado.
 
 ## Estado de producto
 
 La composición escrita alcanza 97/97 en cada set: Reading 40, Listening 34, Writing 12
-y Speaking 11. Esto todavía no significa producto terminado. Siguen pendientes los 21
-medios nuevos por set, los posibles cortes de Conversation, navegación Listening
+y Speaking 11. Esto todavía no significa producto terminado. Siguen pendientes los 20
+medios TTS nuevos por set, los posibles cortes de Conversation, navegación Listening
 forward-only, cierres y relojes por módulo/tarea, captura/evaluación oral honesta,
 resultados sin banda inventada, preview editorial y VoiceOver T16/T17.
