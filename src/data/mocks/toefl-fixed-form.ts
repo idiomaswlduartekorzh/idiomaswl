@@ -361,12 +361,14 @@ export function withToefl2026FixedListening(mock: MockExam): MockExam {
       sourceAsOf: '2026-08-14',
       targetInteractions: { reading: 40, listening: 34, writing: 12, speaking: 11 },
       modules: [
-        { id: 'reading-1', skill: 'reading', interactionCount: 20, timeLimitSeconds: 1260, navigation: 'within-module' },
-        { id: 'reading-2', skill: 'reading', interactionCount: 20, timeLimitSeconds: 540, navigation: 'within-module' },
-        { id: 'listening-1', skill: 'listening', interactionCount: 18, timeLimitSeconds: 1080, navigation: 'forward-only' },
-        { id: 'listening-2', skill: 'listening', interactionCount: 16, timeLimitSeconds: 660, navigation: 'forward-only' },
-        { id: 'writing', skill: 'writing', interactionCount: 12, timeLimitSeconds: 1380, navigation: 'within-module' },
-        { id: 'speaking', skill: 'speaking', interactionCount: 11, timeLimitSeconds: 480, navigation: 'forward-only' },
+        { id: 'reading-1', skill: 'reading', interactionCount: 20, timeLimitSeconds: 1260, timingSource: 'official-practice-clock', navigation: 'within-module' },
+        { id: 'reading-2', skill: 'reading', interactionCount: 20, timeLimitSeconds: 540, timingSource: 'official-practice-clock', navigation: 'within-module' },
+        { id: 'listening-1', skill: 'listening', interactionCount: 18, timingSource: 'not-public-per-item', navigation: 'forward-only' },
+        { id: 'listening-2', skill: 'listening', interactionCount: 16, timingSource: 'not-public-per-item', navigation: 'forward-only' },
+        { id: 'writing-build', skill: 'writing', interactionCount: 10, timeLimitSeconds: 360, timingSource: 'welearn-derived-clock', navigation: 'within-module' },
+        { id: 'writing-email', skill: 'writing', interactionCount: 1, timeLimitSeconds: 420, timingSource: 'official-task-clock', navigation: 'within-module' },
+        { id: 'writing-discussion', skill: 'writing', interactionCount: 1, timeLimitSeconds: 600, timingSource: 'official-task-clock', navigation: 'within-module' },
+        { id: 'speaking', skill: 'speaking', interactionCount: 11, timingSource: 'not-public-per-item', navigation: 'forward-only' },
       ],
     },
     sections: renumberSections([...reading, ...listening, ...remaining]),
@@ -386,6 +388,7 @@ export function withToefl2026FixedSpeaking(mock: MockExam): MockExam {
       return {
         ...section,
         moduleId: 'speaking',
+        instructions: 'Listen to each interviewer question once and answer immediately in English. There is no preparation time.',
         sectionNote: 'Las cuatro preguntas forman Take an Interview. Sus guiones se conservan, pero los prompts de audio siguen bloqueados hasta aprobación del owner.',
         questions: section.questions.map((question): Question => {
           if (question.type !== 'speak') return question;

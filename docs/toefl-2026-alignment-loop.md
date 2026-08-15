@@ -3452,3 +3452,45 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
   sobre cortes; faltan clocks, cierres, forward-only, resultados honestos, preview y
   gates humanos. Evidencia en
   `docs/toefl-2026-speaking-fixed-expansion-audit-2026-08-14.md`.
+
+### Runtime fijo secuencial y resultados honestos — 2026-08-14
+
+- La sesión completa queda dividida en ocho bloques irreversibles: Reading M1/M2,
+  Listening M1/M2, Build, Email, Discussion y Speaking; total 97 interacciones por set.
+- Se retiraron tabs libres, Back entre bloques, reloj global, notas de preparación de
+  Interview, autoevaluación oral, overall parcial y conversión estimada `/120`.
+- Listening y Speaking muestran un ítem a la vez. Los estímulos listos son de una sola
+  reproducción; opciones y avance se bloquean hasta terminar el audio. El estado local
+  v4 restaura bloque, ítem, deadline y consumo de medios después de recargar.
+- Reading aplica 21/9 minutos; Email 7 y Discussion 10. Build muestra 6 minutos como
+  derivación WeLearn. Listening y Speaking no inventan segundos exactos no publicados.
+- Speaking incorpora captura local real por micrófono, sin upload ni score, más fallback
+  explícito cuando se niega el permiso. La respuesta queda `not_evaluated`.
+- La corrección de inventario distingue 25 interacciones bloqueadas por set de 20
+  archivos TTS faltantes por set. Brecha total: 400 archivos, más decisiones sobre
+  cortes reutilizables.
+- Evidencia: unit de sesión 3/3, checker PASS, TypeScript y ESLint PASS; Chromium Set 1
+  verificó cierre Reading M1→M2, reloj 21→9, Listening ítem 1/18 bloqueado antes del
+  audio, restauración tras recarga y 320×900 sin overflow de página. Build de producción
+  PASS con 1.365/1.365 páginas y guardianes globales. No se reprodujo ni abrió audio.
+- Estado: runner principal alineado en rama, pero producto aún no terminado. Faltan
+  auditoría consolidada 20/20, VoiceOver T16/T17, sync con main,
+  preview Vercel y gate de audio. Evidencia detallada en
+  `docs/toefl-2026-fixed-session-runtime-audit-2026-08-14.md`.
+
+### Acta consolidada Sets 1–20 y gate pre-audio — 2026-08-14
+
+- Se revalidaron las fuentes ETS vigentes: el examen operacional publica una base
+  aproximada 50/47/12/11 y ruta adaptativa; la práctica oficial alineada, que no es
+  réplica exacta, sustenta la forma fija WeLearn 40/34/12/11.
+- El smoke del build de producción solicitó por separado las veinte rutas. Sets 1–20
+  devolvieron HTTP 200 y mostraron título, 97 interacciones, 8 etapas, 25 bloqueos y
+  disclosure de ruta fija: 20/20 PASS.
+- La matriz set por set consolida composición, scoring, medios y evidencia. El estado
+  correcto es **listo para preview pre-audio**, no producto terminado ni producción.
+- El gate escrito y de runtime queda cerrado. Permanecen abiertos VoiceOver T16/T17,
+  actualización contra `origin/main`, preview real de Vercel y aprobación de
+  manifiesto/voces/muestra/costo. Generación y QA de los 400 audios siguen bloqueados
+  hasta autorización explícita del owner.
+- Evidencia: `docs/toefl-2026-sets1-20-release-audit-2026-08-14.md` y
+  `npm run check:toefl-fixed-preview -- <base-url>`.

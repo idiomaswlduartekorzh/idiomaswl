@@ -324,10 +324,11 @@ export interface MockExam {
       speaking: 11;
     };
     modules: readonly {
-      id: 'reading-1' | 'reading-2' | 'listening-1' | 'listening-2' | 'writing' | 'speaking';
+      id: 'reading-1' | 'reading-2' | 'listening-1' | 'listening-2' | 'writing-build' | 'writing-email' | 'writing-discussion' | 'speaking';
       skill: 'reading' | 'listening' | 'writing' | 'speaking';
       interactionCount: number;
-      timeLimitSeconds: number;
+      timeLimitSeconds?: number;
+      timingSource: 'official-practice-clock' | 'official-task-clock' | 'welearn-derived-clock' | 'not-public-per-item';
       navigation: 'within-module' | 'forward-only';
     }[];
   };

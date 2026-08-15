@@ -54,7 +54,9 @@ assert.match(fixedFormSource, /repeats\.slice\(0, 5\)/, 'the composer preserves 
 assert.match(fixedFormSource, /additions\.map<RepeatQuestion>/, 'the composer appends the two planned Repeat items');
 assert.match(fixedFormSource, /speaking-interview-\$\{interview\.partNumber\}/, 'the composer registers all Interview prompts as media');
 assert.match(clientSource, /question\.type === 'toefl-listening-single' \|\| question\.type === 'repeat' \|\| question\.type === 'speak'/, 'the preview counts blocked Listening, Repeat and Interview media');
-assert.match(clientSource, /question\.type !== 'repeat' && question\.type !== 'speak'/, 'blocked Repeat and Interview items are excluded from self-assessment');
+assert.match(clientSource, /currentForwardBlocked[\s\S]*script-ready-audio-blocked/, 'blocked Repeat and Interview items advance without entering evaluation');
+assert.doesNotMatch(clientSource, /SelfAssessModal|speakBands/, 'Speaking cannot become a self-awarded score');
+assert.match(clientSource, /new MediaRecorder\(stream\)/, 'ready Speaking items capture a real local response');
 
 const changedPaths = execFileSync('git', ['status', '--porcelain=v1', '--untracked-files=all'], {
   cwd: new URL('.', root), encoding: 'utf8',

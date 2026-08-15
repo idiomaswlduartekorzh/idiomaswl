@@ -31,7 +31,8 @@ assert.match(emailPage, /TimedWritingTask/, 'Email route must expose the timed p
 assert.match(discussionPage, /TimedWritingTask/, 'Discussion route must expose the timed pilot.');
 assert.ok(!mock.includes('80–120'), 'Email must not invent an official 80–120 word target.');
 assert.match(mock, /timeLimitSeconds/, 'Set 1 data must retain task deadlines.');
-assert.match(client, /Continuar sin inventar score/, 'Constructed Writing must not become a self-awarded band.');
+assert.doesNotMatch(client, /SelfAssessModal|speakBands|wBand/, 'Constructed Writing must not become a self-awarded band.');
+assert.match(client, /No se calculó banda 1–6/, 'The final report must disclose that no Writing band was calculated.');
 assert.match(client, /not_evaluated/, 'Constructed Writing must report its honest outcome.');
 
 for (let setNumber = 2; setNumber <= 20; setNumber += 1) {
