@@ -269,7 +269,7 @@ export default function ContextualInput003({ onComplete }: Props) {
   if (phase === 'intro') {
     return (
       <section style={{ maxWidth: 640, margin: '0 auto', padding: '2.5rem 1rem' }}>
-        <p style={{ margin: '0 0 6px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6c63ff', fontWeight: 700 }}>
+        <p style={{ margin: '0 0 6px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700 }}>
           ETAPA 05 DE 11
         </p>
         <h3 style={{ margin: '0 0 12px', fontSize: 22, fontWeight: 800, color: 'var(--ink)' }}>
@@ -281,7 +281,7 @@ export default function ContextualInput003({ onComplete }: Props) {
 
         {/* How it works */}
         <div style={{ background: 'rgba(108,99,255,0.05)', border: '1px solid rgba(108,99,255,0.18)', borderRadius: 14, padding: '16px 20px', marginBottom: 24 }}>
-          <p style={{ margin: '0 0 12px', fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#6c63ff' }}>
+          <p style={{ margin: '0 0 12px', fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--wl-on-panel-link, #6c63ff)' }}>
             Cómo funciona
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 9 }}>
@@ -311,7 +311,7 @@ export default function ContextualInput003({ onComplete }: Props) {
           <div style={{ flex: 1, display: 'flex', alignItems: 'center', gap: 10, background: 'rgba(108,99,255,0.06)', border: '1px solid rgba(108,99,255,0.22)', borderRadius: 12, padding: '12px 14px' }}>
             <span style={{ fontSize: 24 }}>👩</span>
             <div>
-              <p style={{ margin: '0 0 2px', fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.06em', color: '#6c63ff' }}>Haeun</p>
+              <p style={{ margin: '0 0 2px', fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--wl-on-panel-link, #6c63ff)' }}>Haeun</p>
               <p style={{ margin: 0, fontSize: 11, color: 'var(--ink)' }}>Lado derecho</p>
             </div>
           </div>
@@ -400,7 +400,7 @@ export default function ContextualInput003({ onComplete }: Props) {
           padding: '4px 13px',
           fontSize: 11,
           fontWeight: 800,
-          color: '#6c63ff',
+          color: 'var(--wl-on-panel-link, #6c63ff)',
           letterSpacing: '0.03em',
         }}>
           {revealed} / {CONVERSATION.length}
@@ -494,7 +494,7 @@ export default function ContextualInput003({ onComplete }: Props) {
                           width: 28, height: 28, borderRadius: '50%',
                           background: 'rgba(108,99,255,0.15)',
                           border: '1px solid rgba(108,99,255,0.35)',
-                          color: '#6c63ff', fontSize: 12, cursor: 'pointer',
+                          color: 'var(--wl-on-panel-link, #6c63ff)', fontSize: 12, cursor: 'pointer',
                           display: 'flex', alignItems: 'center', justifyContent: 'center',
                         }}
                       >
@@ -561,7 +561,7 @@ export default function ContextualInput003({ onComplete }: Props) {
                               fontFamily: "'Noto Sans KR', sans-serif",
                               fontWeight: 700,
                               fontSize: 13.5,
-                              color: '#6c63ff',
+                              color: 'var(--wl-on-panel-link, #6c63ff)',
                               minWidth: 90,
                               flexShrink: 0,
                             }}>
@@ -597,7 +597,7 @@ export default function ContextualInput003({ onComplete }: Props) {
         {!isAllRevealed && revealed > 0 && (
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, paddingLeft: 10 }}>
             <span style={{ fontSize: 11, color: 'var(--muted)' }}>Siguiente frase lista</span>
-            <span style={{ fontSize: 14, color: '#6c63ff' }}>→</span>
+            <span style={{ fontSize: 14, color: 'var(--wl-on-panel-link, #6c63ff)' }}>→</span>
           </div>
         )}
 

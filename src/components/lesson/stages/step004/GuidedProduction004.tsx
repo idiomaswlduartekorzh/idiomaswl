@@ -10,10 +10,10 @@ interface ChoiceEx { type: 'choice'; prompt: string; options: string[]; correct:
 type Exercise = BuildEx | ChoiceEx;
 
 const TILE_COLORS: Record<Tile['role'], { bg: string; border: string; color: string }> = {
-  subject:  { bg: 'rgba(59,130,246,0.12)',  border: 'rgba(59,130,246,0.4)',  color: '#3b82f6' },
-  object:   { bg: 'rgba(245,158,11,0.12)',  border: 'rgba(245,158,11,0.4)',  color: '#d97706' },
+  subject:  { bg: 'rgba(59,130,246,0.12)',  border: 'rgba(59,130,246,0.4)',  color: 'var(--wl-on-panel-link, #3b82f6)' },
+  object:   { bg: 'rgba(245,158,11,0.12)',  border: 'rgba(245,158,11,0.4)',  color: 'var(--wl-on-panel-warn, #d97706)' },
   verb:     { bg: 'rgba(34,197,94,0.12)',   border: 'rgba(34,197,94,0.4)',   color: '#22c55e' },
-  particle: { bg: 'rgba(139,92,246,0.12)',  border: 'rgba(139,92,246,0.4)', color: '#8b5cf6' },
+  particle: { bg: 'rgba(139,92,246,0.12)',  border: 'rgba(139,92,246,0.4)', color: 'var(--wl-on-panel-link, #8b5cf6)' },
 };
 
 const EXERCISES: Exercise[] = [
@@ -220,7 +220,7 @@ export default function GuidedProduction004({ onComplete }: Props) {
                 <div style={{ background: 'rgba(239,68,68,0.08)', border: '1px solid #ef4444', borderRadius: 10, padding: '10px 14px', marginBottom: 12 }}>
                   <p style={{ margin: 0, fontSize: 13 }}>❌ Orden incorrecto. Respuesta: <strong style={{ fontFamily: "'Noto Sans KR',sans-serif" }}>{e.correctOrder.join(' ')}</strong></p>
                 </div>
-                <button onClick={() => initBuild(e)} style={{ marginBottom: 8, width: '100%', background: 'var(--bg-2,#f5f5f7)', border: '1px solid var(--line-soft)', borderRadius: 10, padding: '10px', fontSize: 13, cursor: 'pointer' }}>Intentar de nuevo</button>
+                <button onClick={() => initBuild(e)} style={{ marginBottom: 8, width: '100%', background: 'var(--bg-2,var(--wl-panel-raised, #f5f5f7))', border: '1px solid var(--line-soft)', borderRadius: 10, padding: '10px', fontSize: 13, cursor: 'pointer' }}>Intentar de nuevo</button>
                 <button onClick={next} style={{ width: '100%', background: '#6c63ff', color: '#fff', border: 'none', borderRadius: 10, padding: '10px', fontSize: 13, cursor: 'pointer' }}>Siguiente →</button>
               </div>
             )}

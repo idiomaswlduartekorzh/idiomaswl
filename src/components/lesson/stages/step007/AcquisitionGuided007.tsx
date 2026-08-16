@@ -91,7 +91,7 @@ export default function AcquisitionGuided007({ onComplete }: Props) {
 
         {/* Content */}
         <div style={{ padding: '20px 20px 16px' }}>
-          <p style={{ margin: '0 0 4px', fontSize: 48, fontWeight: 700, color: '#6c63ff', fontFamily: "'Noto Sans KR', sans-serif", lineHeight: 1.1 }}>
+          <p style={{ margin: '0 0 4px', fontSize: 48, fontWeight: 700, color: 'var(--wl-on-panel-link, #6c63ff)', fontFamily: "'Noto Sans KR', sans-serif", lineHeight: 1.1 }}>
             {card.kr}
           </p>
           <p style={{ margin: '0 0 6px', fontSize: 13, color: 'var(--muted-foreground)', fontFamily: 'monospace' }}>
@@ -109,7 +109,7 @@ export default function AcquisitionGuided007({ onComplete }: Props) {
             <button
               type="button"
               onClick={() => playAudio(card.audio, 1)}
-              style={{ background: 'rgba(108,99,255,0.08)', border: '1px solid rgba(108,99,255,0.25)', borderRadius: 100, padding: '6px 14px', fontSize: 13, color: '#6c63ff', cursor: 'pointer', fontWeight: 600 }}
+              style={{ background: 'rgba(108,99,255,0.08)', border: '1px solid rgba(108,99,255,0.25)', borderRadius: 100, padding: '6px 14px', fontSize: 13, color: 'var(--wl-on-panel-link, #6c63ff)', cursor: 'pointer', fontWeight: 600 }}
             >
               🔊 Escuchar
             </button>
@@ -152,7 +152,7 @@ export default function AcquisitionGuided007({ onComplete }: Props) {
       {/* Complete CTA */}
       {allSeen && (
         <div style={{ background: 'rgba(108,99,255,0.06)', border: '1px solid rgba(108,99,255,0.2)', borderRadius: 14, padding: '20px', textAlign: 'center' }}>
-          <p style={{ margin: '0 0 4px', fontSize: 18, fontWeight: 800, color: '#6c63ff' }}>¡Vocabulario activado!</p>
+          <p style={{ margin: '0 0 4px', fontSize: 18, fontWeight: 800, color: 'var(--wl-on-panel-link, #6c63ff)' }}>¡Vocabulario activado!</p>
           <p style={{ margin: '0 0 16px', fontSize: 13, color: 'var(--muted-foreground)' }}>
             Has visto las {VOCAB.length} tarjetas del step007.
           </p>

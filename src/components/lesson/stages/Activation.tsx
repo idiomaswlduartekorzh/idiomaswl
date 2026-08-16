@@ -23,17 +23,17 @@ interface ExerciseItem {
 }
 
 const VOCAB_TIMELINE: VocabItem[] = [
-  { id: 'V1', at: 122, hangul: '학교', romanization: 'hak-gyo', translation: 'escuela', color: '#6c63ff', img: KR_IMG.school },
-  { id: 'V2', at: 215, hangul: '저는', romanization: 'jeo-neun', translation: 'yo (formal)', color: '#ff6b6b', img: KR_IMG.iFormal },
+  { id: 'V1', at: 122, hangul: '학교', romanization: 'hak-gyo', translation: 'escuela', color: 'var(--wl-on-panel-link, #6c63ff)', img: KR_IMG.school },
+  { id: 'V2', at: 215, hangul: '저는', romanization: 'jeo-neun', translation: 'yo (formal)', color: 'var(--wl-on-panel-alert, #ff6b6b)', img: KR_IMG.iFormal },
   { id: 'V3', at: 217, hangul: '학교에', romanization: 'hak-gyo-e', translation: 'escuela → hacia', color: '#fbbf24', img: KR_IMG.going },
   { id: 'V4', at: 222, hangul: '가요', romanization: 'ga-yo', translation: 'voy / vas / va', color: '#34d399', img: KR_IMG.going },
   { id: 'V5', at: 245, hangul: '대학교', romanization: 'dae-hak-gyo', translation: 'universidad', color: '#60a5fa', img: KR_IMG.university },
-  { id: 'V6', at: 255, hangul: '대학교에', romanization: 'dae-hak-gyo-e', translation: 'universidad → hacia', color: '#a78bfa', img: KR_IMG.university },
+  { id: 'V6', at: 255, hangul: '대학교에', romanization: 'dae-hak-gyo-e', translation: 'universidad → hacia', color: 'var(--wl-on-panel-link, #a78bfa)', img: KR_IMG.university },
 ];
 
 const CONCEPT_TIMELINE: ConceptItem[] = [
-  { id: 'C1', at: 60, icon: '📌', color: '#6c63ff', title: 'El verbo siempre al final', body: 'En coreano el verbo cierra la oración. Siempre. Sin excepciones. No sabes qué está pasando hasta que llega la última palabra.', example: { es: 'Yo a la escuela voy.', kr: '저는 학교에 가요.' } },
-  { id: 'C2', at: 111, icon: '✂️', color: '#ff6b6b', title: 'Los artículos desaparecen', body: 'En coreano no existe "la", "el", "una" ni "un". El sustantivo va solo. El contexto hace el trabajo.', example: { es: 'la escuela → escuela', kr: '학교' } },
+  { id: 'C1', at: 60, icon: '📌', color: 'var(--wl-on-panel-link, #6c63ff)', title: 'El verbo siempre al final', body: 'En coreano el verbo cierra la oración. Siempre. Sin excepciones. No sabes qué está pasando hasta que llega la última palabra.', example: { es: 'Yo a la escuela voy.', kr: '저는 학교에 가요.' } },
+  { id: 'C2', at: 111, icon: '✂️', color: 'var(--wl-on-panel-alert, #ff6b6b)', title: 'Los artículos desaparecen', body: 'En coreano no existe "la", "el", "una" ni "un". El sustantivo va solo. El contexto hace el trabajo.', example: { es: 'la escuela → escuela', kr: '학교' } },
   { id: 'C4', at: 152, icon: '🧠', color: '#fbbf24', title: 'Idioma de alto contexto', body: 'Si la situación ya indica de qué escuela se habla, agregar artículos es redundante. El coreano confía en que el oyente está prestando atención.', example: { es: '¿Cuál escuela? — El contexto lo sabe.', kr: '학교 (sin artículo)' } },
   { id: 'C3', at: 176, icon: '🔗', color: '#34d399', title: 'La partícula 에 — el rastreador GPS', body: 'En español la preposición "a" va ANTES. En coreano la partícula 에 va DESPUÉS, pegada al sustantivo. Es como un pequeño rastreador de dirección.', example: { es: 'a la escuela', kr: '학교에 (escuela-hacia)' } },
 ];
@@ -76,16 +76,16 @@ function tts(text: string, rate = 1) {
 
 function VocabCard({ item, isNew, onSpeak }: { item: VocabItem; isNew: boolean; onSpeak: (t: string) => void }) {
   return (
-    <article style={{ background: '#fff', border: '1px solid #e9ecef', borderRadius: 12, overflow: 'hidden' }}>
-      <div style={{ height: 110, background: '#f1f3f5', position: 'relative', overflow: 'hidden' }}>
+    <article style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 12, overflow: 'hidden' }}>
+      <div style={{ height: 110, background: 'var(--wl-panel-raised, #f1f3f5)', position: 'relative', overflow: 'hidden' }}>
         <span style={{ position: 'absolute', left: 12, top: 6, fontSize: 52, fontWeight: 700, opacity: 0.06, color: item.color, zIndex: 1 }}>{item.hangul}</span>
         <img src={item.img} alt={item.translation} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }} />
         {isNew && <span style={{ position: 'absolute', top: 8, right: 8, fontSize: 9, fontWeight: 700, padding: '2px 8px', borderRadius: 100, color: '#fff', background: item.color, textTransform: 'uppercase', letterSpacing: '0.1em' }}>New</span>}
       </div>
       <div style={{ padding: '12px 14px 14px' }}>
         <p style={{ margin: 0, fontSize: 22, fontWeight: 700, color: item.color }}>{item.hangul}</p>
-        <p style={{ margin: '2px 0 0', fontFamily: 'var(--mono)', fontSize: 11, color: '#6c757d' }}>{item.romanization}</p>
-        <p style={{ margin: '6px 0 0', fontSize: 13, color: '#1a1a2e' }}>{item.translation}</p>
+        <p style={{ margin: '2px 0 0', fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--wl-on-panel-soft, #6c757d)' }}>{item.romanization}</p>
+        <p style={{ margin: '6px 0 0', fontSize: 13, color: 'var(--wl-on-panel, #1a1a2e)' }}>{item.translation}</p>
         <button type="button" onClick={() => onSpeak(item.hangul)} style={{ marginTop: 10, display: 'inline-flex', alignItems: 'center', gap: 5, background: `${item.color}18`, border: `1px solid ${item.color}35`, borderRadius: 100, padding: '4px 10px', color: item.color, fontSize: 11, cursor: 'pointer' }}>
           <Volume2 size={12} /> Escuchar
         </button>
@@ -96,15 +96,15 @@ function VocabCard({ item, isNew, onSpeak }: { item: VocabItem; isNew: boolean; 
 
 function ConceptCard({ item }: { item: ConceptItem }) {
   return (
-    <article style={{ background: '#fff', borderLeft: `3px solid ${item.color}`, border: '1px solid #e9ecef', borderRadius: '0 12px 12px 0', padding: '14px 16px' }}>
+    <article style={{ background: 'var(--wl-panel-raised, #fff)', borderLeft: `3px solid ${item.color}`, border: '1px solid #e9ecef', borderRadius: '0 12px 12px 0', padding: '14px 16px' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
         <span style={{ fontSize: 18 }}>{item.icon}</span>
         <h4 style={{ margin: 0, fontSize: 12, fontWeight: 600, color: item.color }}>{item.title}</h4>
       </div>
-      <p style={{ margin: '0 0 10px', fontSize: 12, color: '#6c757d', lineHeight: 1.65 }}>{item.body}</p>
+      <p style={{ margin: '0 0 10px', fontSize: 12, color: 'var(--wl-on-panel-soft, #6c757d)', lineHeight: 1.65 }}>{item.body}</p>
       {item.example && (
         <div style={{ background: `${item.color}10`, borderRadius: 8, padding: '8px 10px' }}>
-          <p style={{ margin: 0, fontSize: 11, color: '#6c757d' }}>{item.example.es}</p>
+          <p style={{ margin: 0, fontSize: 11, color: 'var(--wl-on-panel-soft, #6c757d)' }}>{item.example.es}</p>
           <p style={{ margin: '4px 0 0', fontSize: 14, color: item.color }}>{item.example.kr}</p>
         </div>
       )}
@@ -131,15 +131,15 @@ function DragExercise({ item, onSpeak, onComplete, isCompleted }: { item: Exerci
 
   return (
     <>
-      <p style={{ margin: '0 0 12px', fontSize: 13, color: '#1a1a2e', lineHeight: 1.6 }}>{item.question}</p>
-      {item.source && <span style={{ display: 'block', fontSize: 13, fontWeight: 600, color: '#6c63ff', marginBottom: 8 }}>{item.source}</span>}
+      <p style={{ margin: '0 0 12px', fontSize: 13, color: 'var(--wl-on-panel, #1a1a2e)', lineHeight: 1.6 }}>{item.question}</p>
+      {item.source && <span style={{ display: 'block', fontSize: 13, fontWeight: 600, color: 'var(--wl-on-panel-link, #6c63ff)', marginBottom: 8 }}>{item.source}</span>}
       {item.hint && <p style={{ margin: '0 0 12px', fontSize: 11, color: '#adb5bd' }}>{item.hint}</p>}
       {item.speak && (
-        <button type="button" onClick={() => onSpeak(item.speak!)} style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(108,99,255,0.06)', border: '1px solid rgba(108,99,255,0.2)', borderRadius: 100, padding: '6px 14px', color: '#6c63ff', fontSize: 12, cursor: 'pointer', marginBottom: 14 }}>
+        <button type="button" onClick={() => onSpeak(item.speak!)} style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(108,99,255,0.06)', border: '1px solid rgba(108,99,255,0.2)', borderRadius: 100, padding: '6px 14px', color: 'var(--wl-on-panel-link, #6c63ff)', fontSize: 12, cursor: 'pointer', marginBottom: 14 }}>
           <Volume2 size={14} /> Escuchar frase
         </button>
       )}
-      <div style={{ minHeight: 48, background: '#f8f9fa', border: '2px dashed #e9ecef', borderRadius: 10, padding: 8, display: 'flex', flexWrap: 'wrap', gap: 8, alignItems: 'center', marginBottom: 10 }}>
+      <div style={{ minHeight: 48, background: 'var(--wl-panel-raised, #f8f9fa)', border: '2px dashed #e9ecef', borderRadius: 10, padding: 8, display: 'flex', flexWrap: 'wrap', gap: 8, alignItems: 'center', marginBottom: 10 }}>
         {placed.length === 0 ? <span style={{ fontSize: 12, color: '#adb5bd' }}>Arrastra aquí las palabras en orden</span> : placed.map(chip => (
           <button key={`placed-${chip.idx}`} type="button" onClick={() => remove(chip)} style={{ padding: '6px 12px', background: isCompleted ? 'rgba(45,155,78,0.08)' : 'rgba(108,99,255,0.08)', border: `1px solid ${isCompleted ? 'rgba(45,155,78,0.3)' : 'rgba(108,99,255,0.25)'}`, borderRadius: 8, fontSize: 13, cursor: isCompleted ? 'default' : 'pointer', display: 'flex', alignItems: 'center', gap: 6, color: isCompleted ? '#2d9b4e' : '#1a1a2e' }}>
             {chip.word}{!isCompleted && <X size={12} />}
@@ -156,9 +156,9 @@ function DragExercise({ item, onSpeak, onComplete, isCompleted }: { item: Exerci
       {feedback && <div style={{ background: feedback === item.feedback.ok ? 'rgba(45,155,78,0.06)' : 'rgba(220,53,69,0.05)', border: `1px solid ${feedback === item.feedback.ok ? 'rgba(45,155,78,0.2)' : 'rgba(220,53,69,0.15)'}`, borderRadius: 8, padding: '10px 12px', fontSize: 12, color: feedback === item.feedback.ok ? '#2d9b4e' : '#dc3545', lineHeight: 1.6, marginBottom: 10 }}>{feedback}</div>}
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
         <button type="button" onClick={validate} disabled={placed.length !== (item.correctOrder?.length ?? 0) || isCompleted} style={{ padding: '10px', background: placed.length !== (item.correctOrder?.length ?? 0) || isCompleted ? '#f1f3f5' : '#6c63ff', border: 'none', borderRadius: 10, color: placed.length !== (item.correctOrder?.length ?? 0) || isCompleted ? '#adb5bd' : '#fff', fontSize: 13, fontWeight: 600, cursor: 'pointer' }}>Validar orden</button>
-        <button type="button" onClick={clear} style={{ padding: '10px', background: '#fff', border: '1px solid #e9ecef', borderRadius: 10, color: '#6c757d', fontSize: 13, fontWeight: 600, cursor: 'pointer' }}>Limpiar</button>
+        <button type="button" onClick={clear} style={{ padding: '10px', background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 10, color: 'var(--wl-on-panel-soft, #6c757d)', fontSize: 13, fontWeight: 600, cursor: 'pointer' }}>Limpiar</button>
       </div>
-      {isCompleted && <p style={{ margin: '8px 0 0', textAlign: 'center', fontSize: 12, color: '#2d9b4e', fontWeight: 600, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 6 }}><Check size={14} /> Completado</p>}
+      {isCompleted && <p style={{ margin: '8px 0 0', textAlign: 'center', fontSize: 12, color: 'var(--wl-on-panel-ok, #2d9b4e)', fontWeight: 600, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 6 }}><Check size={14} /> Completado</p>}
     </>
   );
 }
@@ -278,7 +278,7 @@ export default function Activation({ onComplete }: { onComplete?: () => void }) 
       {/* LEFT SIDEBAR */}
       <aside style={{ borderRight: '1px solid var(--line-soft)', padding: '1.5rem 1.25rem', overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: 16 }}>
         <div>
-          <p style={{ margin: '0 0 4px', fontSize: 11, color: '#6c63ff', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.12em' }}>Sección 1 de 11</p>
+          <p style={{ margin: '0 0 4px', fontSize: 11, color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.12em' }}>Sección 1 de 11</p>
           <h2 style={{ margin: '0 0 6px', fontSize: 20, lineHeight: 1.2, color: 'var(--ink)' }}>¿Por qué el verbo va al final?</h2>
           <p style={{ margin: 0, fontSize: 12, lineHeight: 1.7, color: 'var(--muted)' }}>Sofía y Carlos decodifican el secreto más importante del coreano. Escucha y completa los ejercicios cuando aparezcan.</p>
           <p style={{ margin: '10px 0 0', fontSize: 11, color: 'var(--muted)' }}>Progreso: {completedExercises.size}/5 ejercicios</p>
@@ -287,7 +287,7 @@ export default function Activation({ onComplete }: { onComplete?: () => void }) 
         {/* Player */}
         <article style={{ background: 'var(--bg-2)', border: '1px solid var(--line-soft)', borderRadius: 12, padding: '1rem' }}>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 10 }}>
-            {['Sofía (S)', 'Carlos (C)'].map(n => <span key={n} style={{ background: '#fff', border: '1px solid #e9ecef', borderRadius: 100, padding: '3px 10px', fontSize: 11, color: 'var(--muted)' }}>{n}</span>)}
+            {['Sofía (S)', 'Carlos (C)'].map(n => <span key={n} style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 100, padding: '3px 10px', fontSize: 11, color: 'var(--muted)' }}>{n}</span>)}
           </div>
 
           {/* Waveform viz */}
@@ -315,7 +315,7 @@ export default function Activation({ onComplete }: { onComplete?: () => void }) 
             <button type="button" onClick={() => { if (wavesurfer && isReady) wavesurfer.playPause(); }} style={{ width: 36, height: 36, borderRadius: '50%', background: '#6c63ff', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff' }}>
               {isPlaying ? <Pause size={16} /> : <Play size={16} style={{ marginLeft: 1 }} />}
             </button>
-            <button type="button" onClick={() => setRate(r => r === 1 ? 1.5 : r === 1.5 ? 0.75 : 1)} style={{ background: '#fff', border: '1px solid #e9ecef', borderRadius: 6, padding: '3px 8px', fontSize: 11, color: 'var(--muted)', cursor: 'pointer' }}>{rate}x</button>
+            <button type="button" onClick={() => setRate(r => r === 1 ? 1.5 : r === 1.5 ? 0.75 : 1)} style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 6, padding: '3px 8px', fontSize: 11, color: 'var(--muted)', cursor: 'pointer' }}>{rate}x</button>
           </div>
         </article>
 
@@ -342,7 +342,7 @@ export default function Activation({ onComplete }: { onComplete?: () => void }) 
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', textAlign: 'center', gap: 12, padding: 48, color: 'var(--muted)' }}>
             <p style={{ fontSize: 40, margin: 0 }}>🎧</p>
             <p style={{ margin: 0, fontSize: 14, lineHeight: 1.6 }}>El vocabulario, conceptos y ejercicios aparecerán aquí mientras escuchas el podcast.</p>
-            <button type="button" onClick={unlockAll} style={{ background: '#fff', border: '1px solid var(--line-soft)', borderRadius: 8, padding: '8px 16px', fontSize: 12, color: 'var(--muted)', cursor: 'pointer', marginTop: 8 }}>
+            <button type="button" onClick={unlockAll} style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid var(--line-soft)', borderRadius: 8, padding: '8px 16px', fontSize: 12, color: 'var(--muted)', cursor: 'pointer', marginTop: 8 }}>
               🛠 Vista previa — mostrar todo
             </button>
           </div>
@@ -356,7 +356,7 @@ export default function Activation({ onComplete }: { onComplete?: () => void }) 
                       <span style={{ width: 3, height: 12, borderRadius: 2, background: (item as VocabItem).color }} />
                       <span style={{ fontSize: 9, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: (item as VocabItem).color }}>Vocabulario</span>
                       <span style={{ fontFamily: 'var(--mono)', fontSize: 9, color: '#adb5bd' }}>{fmt(item.at)}</span>
-                      <span style={{ flex: 1, height: 1, background: '#e9ecef' }} />
+                      <span style={{ flex: 1, height: 1, background: 'var(--wl-panel-raised, #e9ecef)' }} />
                     </div>
                     <VocabCard item={item as VocabItem} isNew={newVocab.has(item.id)} onSpeak={speak} />
                   </div>
@@ -369,7 +369,7 @@ export default function Activation({ onComplete }: { onComplete?: () => void }) 
                       <span style={{ width: 3, height: 12, borderRadius: 2, background: (item as ConceptItem).color }} />
                       <span style={{ fontSize: 9, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: (item as ConceptItem).color }}>Concepto</span>
                       <span style={{ fontFamily: 'var(--mono)', fontSize: 9, color: '#adb5bd' }}>{fmt(item.at)}</span>
-                      <span style={{ flex: 1, height: 1, background: '#e9ecef' }} />
+                      <span style={{ flex: 1, height: 1, background: 'var(--wl-panel-raised, #e9ecef)' }} />
                     </div>
                     <ConceptCard item={item as ConceptItem} />
                   </div>
@@ -386,16 +386,16 @@ export default function Activation({ onComplete }: { onComplete?: () => void }) 
                       <span style={{ width: 3, height: 12, borderRadius: 2, background: isDone ? '#2d9b4e' : '#e6930a' }} />
                       <span style={{ fontSize: 9, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: isDone ? '#2d9b4e' : '#e6930a' }}>Ejercicio</span>
                       <span style={{ fontFamily: 'var(--mono)', fontSize: 9, color: '#adb5bd' }}>{fmt(ex.at)}</span>
-                      <span style={{ flex: 1, height: 1, background: '#e9ecef' }} />
+                      <span style={{ flex: 1, height: 1, background: 'var(--wl-panel-raised, #e9ecef)' }} />
                     </div>
-                    <article style={{ background: '#fff', border: '1px solid #e9ecef', borderLeft: `3px solid ${isDone ? '#2d9b4e' : '#e6930a'}`, borderRadius: 12, padding: 16 }}>
+                    <article style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderLeft: `3px solid ${isDone ? '#2d9b4e' : '#e6930a'}`, borderRadius: 12, padding: 16 }}>
                       <header style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
                         <p style={{ margin: 0, fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: isDone ? '#2d9b4e' : '#e6930a' }}>{ex.title}</p>
-                        {isDone && <span style={{ fontSize: 10, fontWeight: 600, color: '#2d9b4e' }}>Completado</span>}
+                        {isDone && <span style={{ fontSize: 10, fontWeight: 600, color: 'var(--wl-on-panel-ok, #2d9b4e)' }}>Completado</span>}
                       </header>
                       {ex.type === 'choice' ? (
                         <>
-                          <p style={{ margin: '0 0 12px', fontSize: 13, color: '#1a1a2e', lineHeight: 1.6 }}>{ex.question}</p>
+                          <p style={{ margin: '0 0 12px', fontSize: 13, color: 'var(--wl-on-panel, #1a1a2e)', lineHeight: 1.6 }}>{ex.question}</p>
                           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8, marginBottom: 12 }}>
                             {ex.choices?.map(c => {
                               const sel = choiceAnswers[ex.id] === c.label;
@@ -404,7 +404,7 @@ export default function Activation({ onComplete }: { onComplete?: () => void }) 
                               return (
                                 <button key={c.label} type="button" onClick={() => handleChoice(ex, c.label)} style={{ padding: '10px 12px', background: showOk ? 'rgba(45,155,78,0.06)' : showErr ? 'rgba(220,53,69,0.05)' : sel ? 'rgba(108,99,255,0.06)' : '#fff', border: `1px solid ${showOk ? '#2d9b4e' : showErr ? '#dc3545' : sel ? '#6c63ff' : '#e9ecef'}`, borderRadius: 10, fontSize: 13, textAlign: 'left', cursor: 'pointer', lineHeight: 1.5, color: showOk ? '#2d9b4e' : showErr ? '#dc3545' : '#1a1a2e' }}>
                                   <span style={c.kr ? { fontFamily: 'sans-serif', fontSize: 15 } : undefined}>{c.label}</span>
-                                  {c.note && <span style={{ display: 'block', fontSize: 10, color: '#6c757d', marginTop: 2 }}>{c.note}</span>}
+                                  {c.note && <span style={{ display: 'block', fontSize: 10, color: 'var(--wl-on-panel-soft, #6c757d)', marginTop: 2 }}>{c.note}</span>}
                                 </button>
                               );
                             })}
@@ -422,11 +422,11 @@ export default function Activation({ onComplete }: { onComplete?: () => void }) 
             })}
 
             {completedExercises.size === 5 && (
-              <article style={{ background: 'linear-gradient(135deg, rgba(108,99,255,0.06), #fff)', border: '1px solid rgba(108,99,255,0.15)', borderRadius: 16, padding: 32, textAlign: 'center', marginTop: 8 }}>
+              <article style={{ background: 'linear-gradient(135deg, rgba(108,99,255,0.06), var(--wl-panel-raised, #fff))', border: '1px solid rgba(108,99,255,0.15)', borderRadius: 16, padding: 32, textAlign: 'center', marginTop: 8 }}>
                 <p style={{ fontSize: 36, margin: '0 0 12px' }}>🎯</p>
-                <h3 style={{ margin: '0 0 8px', fontSize: 18, fontWeight: 700, color: '#1a1a2e' }}>¡Ya piensas en coreano!</h3>
-                <p style={{ margin: '0 0 16px', fontSize: 13, color: '#6c757d', lineHeight: 1.7 }}>Terminaste los 5 ejercicios de activación. Mantén el patrón SOV activo y sigue al siguiente bloque.</p>
-                <span style={{ display: 'block', marginBottom: 4, fontSize: 22, color: '#6c63ff' }}>저는 학교에 가요</span>
+                <h3 style={{ margin: '0 0 8px', fontSize: 18, fontWeight: 700, color: 'var(--wl-on-panel, #1a1a2e)' }}>¡Ya piensas en coreano!</h3>
+                <p style={{ margin: '0 0 16px', fontSize: 13, color: 'var(--wl-on-panel-soft, #6c757d)', lineHeight: 1.7 }}>Terminaste los 5 ejercicios de activación. Mantén el patrón SOV activo y sigue al siguiente bloque.</p>
+                <span style={{ display: 'block', marginBottom: 4, fontSize: 22, color: 'var(--wl-on-panel-link, #6c63ff)' }}>저는 학교에 가요</span>
                 <p style={{ margin: 0, fontSize: 11, color: '#adb5bd' }}>Yo a la escuela voy.</p>
                 {onComplete && <button type="button" onClick={onComplete} style={{ marginTop: 24, width: '100%', padding: '10px', background: '#2d9b4e', border: 'none', borderRadius: 10, color: '#fff', fontSize: 13, fontWeight: 600, cursor: 'pointer' }}>Continuar →</button>}
               </article>

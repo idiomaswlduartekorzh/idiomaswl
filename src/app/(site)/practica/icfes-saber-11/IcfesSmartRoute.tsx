@@ -766,8 +766,8 @@ export default function IcfesSmartRoute({ onBack }: IcfesSmartRouteProps) {
               <ArrowLeft size={16} /> Volver
             </button>
             <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-              <StatPill icon={<BookOpenCheck size={15} />} label="Banco" value={`${ICFES_SMART_BANK_SUMMARY.total} preguntas`} color="#0f3d8c" />
-              <StatPill icon={<Target size={15} />} label="Niveles" value="6" color="#dc2626" />
+              <StatPill icon={<BookOpenCheck size={15} />} label="Banco" value={`${ICFES_SMART_BANK_SUMMARY.total} preguntas`} color="var(--wl-on-panel-link, #0f3d8c)" />
+              <StatPill icon={<Target size={15} />} label="Niveles" value="6" color="var(--wl-on-panel-alert, #dc2626)" />
             </div>
           </div>
         </div>

@@ -14,10 +14,10 @@ const ACCENT = '#6c63ff';
 
 /* ─── Data ───────────────────────────────────────────────────────────────── */
 const INTRO_CHIPS = [
-  { ko: '이 대학교에서 공부해요', audio: '이 대학교에서 공부해요', color: '#8b5cf6', bg: 'rgba(139,92,246,0.12)', border: 'rgba(139,92,246,0.35)', highlight: '에서' },
-  { ko: '카페에서 일해요',       audio: '카페에서 일해요',        color: '#8b5cf6', bg: 'rgba(139,92,246,0.12)', border: 'rgba(139,92,246,0.35)', highlight: '에서' },
-  { ko: '매일 카페에 가요',      audio: '매일 카페에 가요',       color: '#3b82f6', bg: 'rgba(59,130,246,0.12)',  border: 'rgba(59,130,246,0.35)',  highlight: '에' },
-  { ko: '한국 좋아해요',         audio: '한국 좋아해요',          color: '#ec4899', bg: 'rgba(236,72,153,0.12)', border: 'rgba(236,72,153,0.35)', highlight: '' },
+  { ko: '이 대학교에서 공부해요', audio: '이 대학교에서 공부해요', color: 'var(--wl-on-panel-link, #8b5cf6)', bg: 'rgba(139,92,246,0.12)', border: 'rgba(139,92,246,0.35)', highlight: '에서' },
+  { ko: '카페에서 일해요',       audio: '카페에서 일해요',        color: 'var(--wl-on-panel-link, #8b5cf6)', bg: 'rgba(139,92,246,0.12)', border: 'rgba(139,92,246,0.35)', highlight: '에서' },
+  { ko: '매일 카페에 가요',      audio: '매일 카페에 가요',       color: 'var(--wl-on-panel-link, #3b82f6)', bg: 'rgba(59,130,246,0.12)',  border: 'rgba(59,130,246,0.35)',  highlight: '에' },
+  { ko: '한국 좋아해요',         audio: '한국 좋아해요',          color: 'var(--wl-on-panel-alert, #ec4899)', bg: 'rgba(236,72,153,0.12)', border: 'rgba(236,72,153,0.35)', highlight: '' },
 ];
 
 const P1_CARDS = [

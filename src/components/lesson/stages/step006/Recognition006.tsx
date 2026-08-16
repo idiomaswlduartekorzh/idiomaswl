@@ -310,7 +310,7 @@ export default function Recognition006({ onComplete }: Props) {
         <div style={{ maxWidth: 560, margin: '0 auto' }}>
           <article style={{ background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 16, padding: '2.5rem 2rem', textAlign: 'center' }}>
             <div style={{ fontSize: 48, marginBottom: 8 }}>🎬</div>
-            <p style={{ margin: '0 0 4px', fontSize: 36, fontWeight: 800, color: '#6c63ff' }}>{score}/{total}</p>
+            <p style={{ margin: '0 0 4px', fontSize: 36, fontWeight: 800, color: 'var(--wl-on-panel-link, #6c63ff)' }}>{score}/{total}</p>
             <p style={{ margin: '0 0 20px', fontSize: 14, color: 'var(--muted)', lineHeight: 1.7 }}>
               {tierMsg}
             </p>
@@ -319,7 +319,7 @@ export default function Recognition006({ onComplete }: Props) {
                 <span key={v.id} style={{
                   background: 'rgba(108,99,255,0.08)', border: '1px solid rgba(108,99,255,0.15)',
                   borderRadius: 100, padding: '4px 12px', fontFamily: "'Noto Sans KR', sans-serif",
-                  color: '#6c63ff', fontSize: 14,
+                  color: 'var(--wl-on-panel-link, #6c63ff)', fontSize: 14,
                 }}>
                   {v.hangul}
                 </span>
@@ -366,7 +366,7 @@ export default function Recognition006({ onComplete }: Props) {
           <span style={{ fontSize: 11, color: 'var(--muted)' }}>
             {questionIndex + 1} de {total}
           </span>
-          <span style={{ fontSize: 11, fontWeight: 700, color: '#6c63ff', background: 'rgba(108,99,255,0.08)', border: '1px solid rgba(108,99,255,0.15)', borderRadius: 100, padding: '2px 10px' }}>
+          <span style={{ fontSize: 11, fontWeight: 700, color: 'var(--wl-on-panel-link, #6c63ff)', background: 'rgba(108,99,255,0.08)', border: '1px solid rgba(108,99,255,0.15)', borderRadius: 100, padding: '2px 10px' }}>
             {score} correctas
           </span>
         </div>
@@ -387,7 +387,7 @@ export default function Recognition006({ onComplete }: Props) {
                 Nuevo
               </span>
             ) : (
-              <span style={{ display: 'inline-block', marginBottom: 10, fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#2d9b4e', background: 'rgba(45,155,78,0.1)', border: '1px solid rgba(45,155,78,0.25)', borderRadius: 100, padding: '3px 10px' }}>
+              <span style={{ display: 'inline-block', marginBottom: 10, fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--wl-on-panel-ok, #2d9b4e)', background: 'rgba(45,155,78,0.1)', border: '1px solid rgba(45,155,78,0.25)', borderRadius: 100, padding: '3px 10px' }}>
                 Reciclado
               </span>
             )}
@@ -448,7 +448,7 @@ export default function Recognition006({ onComplete }: Props) {
 
             {/* Feedback */}
             {isChecked && selectedOption === question.correct && (
-              <div style={{ marginTop: 12, padding: '10px 14px', borderRadius: 8, fontSize: 12, lineHeight: 1.6, background: 'rgba(45,155,78,0.06)', border: '1px solid rgba(45,155,78,0.2)', color: '#2d9b4e' }}>
+              <div style={{ marginTop: 12, padding: '10px 14px', borderRadius: 8, fontSize: 12, lineHeight: 1.6, background: 'rgba(45,155,78,0.06)', border: '1px solid rgba(45,155,78,0.2)', color: 'var(--wl-on-panel-ok, #2d9b4e)' }}>
                 ✅ ¡Correcto! — {question.vocab.romanization}
               </div>
             )}

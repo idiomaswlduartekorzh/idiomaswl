@@ -81,10 +81,10 @@ export default function AcquisitionGuided002({ onComplete }: Props) {
           ETAPA 2 DE 11 · Adquisición guiada
         </p>
         <div style={{ display: 'flex', gap: 6 }}>
-          <span style={{ fontSize: 10, padding: '2px 8px', borderRadius: 100, background: 'rgba(108,99,255,0.1)', color: '#6c63ff', fontWeight: 600 }}>
+          <span style={{ fontSize: 10, padding: '2px 8px', borderRadius: 100, background: 'rgba(108,99,255,0.1)', color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 600 }}>
             {reviewCount} repaso
           </span>
-          <span style={{ fontSize: 10, padding: '2px 8px', borderRadius: 100, background: 'rgba(52,211,153,0.12)', color: '#059669', fontWeight: 600 }}>
+          <span style={{ fontSize: 10, padding: '2px 8px', borderRadius: 100, background: 'rgba(52,211,153,0.12)', color: 'var(--wl-on-panel-ok, #059669)', fontWeight: 600 }}>
             {newCount} nuevas NUEVO
           </span>
         </div>
@@ -116,12 +116,12 @@ export default function AcquisitionGuided002({ onComplete }: Props) {
         {/* New badge */}
         {card.isNew && (
           <div style={{ background: 'rgba(52,211,153,0.12)', borderBottom: '1px solid rgba(52,211,153,0.2)', padding: '5px 16px', display: 'flex', alignItems: 'center', gap: 6 }}>
-            <span style={{ fontSize: 10, fontWeight: 700, color: '#059669', textTransform: 'uppercase', letterSpacing: '0.1em' }}>NUEVO — Vocabulario nuevo — Día 2</span>
+            <span style={{ fontSize: 10, fontWeight: 700, color: 'var(--wl-on-panel-ok, #059669)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>NUEVO — Vocabulario nuevo — Día 2</span>
           </div>
         )}
 
         {/* Image */}
-        <div style={{ position: 'relative', aspectRatio: '4/3', overflow: 'hidden', background: '#f1f3f5' }}>
+        <div style={{ position: 'relative', aspectRatio: '4/3', overflow: 'hidden', background: 'var(--wl-panel-raised, #f1f3f5)' }}>
           <img
             src={card.img}
             alt={card.translation}

@@ -70,7 +70,7 @@ export default function GrammarDeep002() {
           Cada bloque del Hangul representa exactamente una sílaba. La estructura básica es <strong>consonante inicial + vocal</strong>. Opcionalmente, puede añadirse una consonante final (llamada 받침, batchim). Esta consonante final cambia el sonido de toda la sílaba.
         </p>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 10, marginBottom: 14 }}>
-          {[{ struct: 'C + V', example: '가', meaning: 'ㄱ + 아 = ga', color: '#6c63ff' }, { struct: 'C + V + C', example: '학', meaning: 'ㅎ + 아 + ㄱ = hak', color: accent }, { struct: 'O + V', example: '아', meaning: 'ㅇ(mudo) + 아 = a', color: '#22c55e' }].map(b => (
+          {[{ struct: 'C + V', example: '가', meaning: 'ㄱ + 아 = ga', color: 'var(--wl-on-panel-link, #6c63ff)' }, { struct: 'C + V + C', example: '학', meaning: 'ㅎ + 아 + ㄱ = hak', color: accent }, { struct: 'O + V', example: '아', meaning: 'ㅇ(mudo) + 아 = a', color: '#22c55e' }].map(b => (
             <div key={b.struct} style={{ background: 'var(--bg-2)', border: `2px solid ${b.color}25`, borderRadius: 10, padding: '14px', textAlign: 'center' }}>
               <p style={{ margin: '0 0 4px', fontSize: 11, fontWeight: 700, color: b.color, textTransform: 'uppercase', letterSpacing: '0.08em' }}>{b.struct}</p>
               <p style={{ margin: '0 0 6px', fontSize: 36, fontFamily: "'Noto Sans KR',sans-serif", fontWeight: 800, color: b.color, lineHeight: 1 }}>{b.example}</p>

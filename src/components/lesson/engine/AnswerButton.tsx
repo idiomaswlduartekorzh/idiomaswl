@@ -72,12 +72,12 @@ export default function AnswerButton({
     correct: {
       background: 'rgba(5,150,105,0.12)',
       border: '1.5px solid #059669',
-      color: '#059669',
+      color: 'var(--wl-on-panel-ok, #059669)',
     },
     wrong: {
       background: 'rgba(220,38,38,0.08)',
       border: '1.5px solid #dc2626',
-      color: '#dc2626',
+      color: 'var(--wl-on-panel-alert, #dc2626)',
     },
     disabled: {
       background: 'var(--bg-2)',

@@ -114,11 +114,11 @@ export default function Recognition004({ onComplete }: Props) {
         <div style={{ height: '100%', width: `${(qIndex / sequence.length) * 100}%`, background: '#6c63ff', borderRadius: 3, transition: 'width 0.3s' }} />
       </div>
 
-      <div style={{ background: 'var(--bg-2,#f5f5f7)', borderRadius: 14, padding: '24px', marginBottom: 20, textAlign: 'center' }}>
+      <div style={{ background: 'var(--bg-2,var(--wl-panel-raised, #f5f5f7))', borderRadius: 14, padding: '24px', marginBottom: 20, textAlign: 'center' }}>
         <span style={{ fontSize: 10, letterSpacing: '0.1em', color: 'var(--muted)', display: 'block', marginBottom: 8 }}>
           {mode === 'kr→es' ? '🇰🇷 → 🌎 ¿Qué significa?' : '🌎 → 🇰🇷 ¿Cómo se dice en coreano?'}
         </span>
-        {!item.isNew && <span style={{ fontSize: 10, color: '#2d9b4e', fontWeight: 700 }}>♻️ Ya la conoces</span>}
+        {!item.isNew && <span style={{ fontSize: 10, color: 'var(--wl-on-panel-ok, #2d9b4e)', fontWeight: 700 }}>♻️ Ya la conoces</span>}
         <p style={{ margin: '8px 0 0', fontSize: mode === 'kr→es' ? 36 : 20, fontWeight: 700, fontFamily: mode === 'kr→es' ? "'Noto Sans KR', sans-serif" : 'inherit' }}>
           {mode === 'kr→es' ? item.hangul : item.translation}
         </p>

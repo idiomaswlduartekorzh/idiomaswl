@@ -160,7 +160,7 @@ export default function Recognition007({ onComplete }: Props) {
         <div style={{ fontSize: 52, marginBottom: 12 }}>
           {correctCount === total ? '🏆' : correctCount >= total * 0.8 ? '🎯' : '📚'}
         </div>
-        <h2 style={{ margin: '0 0 6px', fontSize: 28, fontWeight: 800, color: '#6366f1' }}>
+        <h2 style={{ margin: '0 0 6px', fontSize: 28, fontWeight: 800, color: 'var(--wl-on-panel-link, #6366f1)' }}>
           {correctCount}/{total}
         </h2>
         <p style={{ margin: '0 0 6px', fontSize: 13, color: 'var(--muted-foreground)', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase' }}>
@@ -180,7 +180,7 @@ export default function Recognition007({ onComplete }: Props) {
             <p style={{ margin: 0, fontSize: 11, color: 'var(--muted-foreground)', textTransform: 'uppercase', letterSpacing: '0.07em' }}>correctas</p>
           </div>
           <div style={{ background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.2)', borderRadius: 12, padding: '14px 28px' }}>
-            <p style={{ margin: '0 0 2px', fontSize: 24, fontWeight: 800, color: '#ef4444' }}>{wrongCount}</p>
+            <p style={{ margin: '0 0 2px', fontSize: 24, fontWeight: 800, color: 'var(--wl-on-panel-alert, #ef4444)' }}>{wrongCount}</p>
             <p style={{ margin: 0, fontSize: 11, color: 'var(--muted-foreground)', textTransform: 'uppercase', letterSpacing: '0.07em' }}>incorrectas</p>
           </div>
         </div>
@@ -214,7 +214,7 @@ export default function Recognition007({ onComplete }: Props) {
         <p style={{ margin: 0, fontSize: 11, color: 'var(--muted-foreground)', fontWeight: 600 }}>
           <span style={{ color: '#22c55e', fontWeight: 700 }}>✓ {correctCount}</span>
           {' '}
-          <span style={{ color: '#ef4444', fontWeight: 700 }}>✗ {wrongCount}</span>
+          <span style={{ color: 'var(--wl-on-panel-alert, #ef4444)', fontWeight: 700 }}>✗ {wrongCount}</span>
         </p>
       </div>
 
@@ -295,7 +295,7 @@ export default function Recognition007({ onComplete }: Props) {
                 cursor: 'pointer',
                 fontSize: 12,
                 fontWeight: 600,
-                color: '#6366f1',
+                color: 'var(--wl-on-panel-link, #6366f1)',
                 background: 'rgba(99,102,241,0.08)',
                 border: '1px solid rgba(99,102,241,0.25)',
               }}
@@ -330,7 +330,7 @@ export default function Recognition007({ onComplete }: Props) {
                 cursor: 'pointer',
                 fontSize: 12,
                 fontWeight: 600,
-                color: '#6366f1',
+                color: 'var(--wl-on-panel-link, #6366f1)',
                 background: 'rgba(99,102,241,0.08)',
                 border: '1px solid rgba(99,102,241,0.25)',
                 marginBottom: selected !== null ? 12 : 0,
@@ -430,7 +430,7 @@ export default function Recognition007({ onComplete }: Props) {
                     padding: '2px 6px',
                     borderRadius: 100,
                     background: 'rgba(99,102,241,0.1)',
-                    color: '#6366f1',
+                    color: 'var(--wl-on-panel-link, #6366f1)',
                     userSelect: 'none',
                   }}
                 >

@@ -215,7 +215,7 @@ export default function Recognition002({ onComplete }: Props) {
     }
     return (
       <section style={{ maxWidth: 560, margin: '0 auto', padding: '2rem 1rem', textAlign: 'center' }}>
-        <p style={{ margin: '0 0 4px', fontSize: 48, fontWeight: 700, color: '#6c63ff' }}>{score}/{VOCAB.length}</p>
+        <p style={{ margin: '0 0 4px', fontSize: 48, fontWeight: 700, color: 'var(--wl-on-panel-link, #6c63ff)' }}>{score}/{VOCAB.length}</p>
         <p style={{ margin: '0 0 20px', fontSize: 14, color: 'var(--muted)' }}>{passed ? '¡Bien! Sigue al siguiente modo.' : 'Un poco más de práctica.'}</p>
         {passed
           ? <button type="button" onClick={advanceLevel} style={{ width: '100%', background: '#6c63ff', color: '#fff', border: 'none', borderRadius: 8, padding: '12px 20px', fontSize: 13, fontWeight: 600, cursor: 'pointer' }}>Siguiente modo →</button>
@@ -254,14 +254,14 @@ export default function Recognition002({ onComplete }: Props) {
         <span style={{ fontSize: 11, color: 'var(--muted)', fontFamily: 'var(--mono)' }}>{idx + 1} / {VOCAB.length}</span>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
           <StreakBar streak={streak} />
-          {vocab.isNew && <span style={{ fontSize: 10, padding: '2px 8px', borderRadius: 100, background: 'rgba(52,211,153,0.1)', color: '#059669', fontWeight: 600 }}>Nueva</span>}
+          {vocab.isNew && <span style={{ fontSize: 10, padding: '2px 8px', borderRadius: 100, background: 'rgba(52,211,153,0.1)', color: 'var(--wl-on-panel-ok, #059669)', fontWeight: 600 }}>Nueva</span>}
         </div>
       </div>
 
       {/* Card — typography-only, no images */}
       <article style={{ background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 16, padding: '32px 24px 24px', marginBottom: 16, textAlign: 'center' }}>
         {/* Large Hangul character — always visible */}
-        <p style={{ margin: '0 0 6px', fontSize: 64, fontWeight: 800, lineHeight: 1, color: '#6c63ff', fontFamily: "'Noto Sans KR', sans-serif" }}>
+        <p style={{ margin: '0 0 6px', fontSize: 64, fontWeight: 800, lineHeight: 1, color: 'var(--wl-on-panel-link, #6c63ff)', fontFamily: "'Noto Sans KR', sans-serif" }}>
           {vocab.hangul}
         </p>
 
@@ -279,7 +279,7 @@ export default function Recognition002({ onComplete }: Props) {
         {level === 3 && (
           <div style={{ marginBottom: 20 }}>
             <p style={{ margin: '0 0 12px', fontSize: 12, color: 'var(--muted)' }}>Identifica el carácter que escuchas</p>
-            <button type="button" onClick={() => playWord(vocab.audio, 0.85)} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(108,99,255,0.08)', border: '1px solid rgba(108,99,255,0.2)', borderRadius: 100, padding: '10px 20px', color: '#6c63ff', fontSize: 12, fontWeight: 600, cursor: 'pointer' }}>
+            <button type="button" onClick={() => playWord(vocab.audio, 0.85)} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(108,99,255,0.08)', border: '1px solid rgba(108,99,255,0.2)', borderRadius: 100, padding: '10px 20px', color: 'var(--wl-on-panel-link, #6c63ff)', fontSize: 12, fontWeight: 600, cursor: 'pointer' }}>
               Escuchar de nuevo
             </button>
           </div>

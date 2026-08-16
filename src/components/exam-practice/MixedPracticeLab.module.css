@@ -5,7 +5,7 @@
   --mixed-ink: var(--wl-on-panel, #173c62);
   --mixed-teal: var(--wl-on-panel-teal, #087e8b);
   --mixed-cyan: #67d6df;
-  --mixed-red: #c8182c;
+  --mixed-red: var(--wl-on-panel-alert, #c8182c);
   --mixed-line: var(--wl-panel-line, #c7dbe3);
   --mixed-soft: var(--wl-panel-raised, #eef8fa);
   background: var(--wl-panel-raised, #fff);
@@ -389,7 +389,7 @@
   margin: 0;
 }
 
-.feedbackGrid div { background: rgba(255, 255, 255, 0.62); padding: 0.65rem; }
+.feedbackGrid div { background: var(--wl-panel-raised, rgba(255, 255, 255, 0.62)); padding: 0.65rem; }
 .feedbackGrid dt { color: var(--mixed-navy); font-size: 0.69rem; font-weight: 900; text-transform: uppercase; }
 .feedbackGrid dd { color: var(--wl-on-panel-teal, #496477); font-size: 0.8rem; line-height: 1.52; margin: 0.25rem 0 0; }
 
@@ -438,7 +438,7 @@
 .securityNote {
   align-items: flex-start;
   background: var(--wl-panel-raised, #fff7e8);
-  border-top: 1px solid #edcf93;
+  border-top: 1px solid var(--wl-panel-line, #edcf93);
   color: var(--wl-on-panel-warn, #6a5220);
   display: flex;
   font-size: 0.78rem;

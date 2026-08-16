@@ -79,7 +79,7 @@ export default function GrammarDeep003() {
           El agradecimiento en coreano cambia según el nivel de formalidad. Usar el nivel incorrecto puede sonar irrespetuoso (informal con extraños) o artificialmente rígido (formal con amigos).
         </p>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 10, marginBottom: 14 }}>
-          {[{ kr: '감사합니다', rom: 'gam-sa-ham-ni-da', level: 'Formal', when: 'Tiendas, servicios, personas mayores', color: '#6c63ff' }, { kr: '고마워요', rom: 'go-ma-wo-yo', level: 'Educado', when: 'Conocidos, compañeros, vecinos', color: '#22c55e' }, { kr: '고마워', rom: 'go-ma-wo', level: 'Casual', when: 'Solo amigos íntimos y familia', color: '#f59e0b' }].map(g => (
+          {[{ kr: '감사합니다', rom: 'gam-sa-ham-ni-da', level: 'Formal', when: 'Tiendas, servicios, personas mayores', color: 'var(--wl-on-panel-link, #6c63ff)' }, { kr: '고마워요', rom: 'go-ma-wo-yo', level: 'Educado', when: 'Conocidos, compañeros, vecinos', color: '#22c55e' }, { kr: '고마워', rom: 'go-ma-wo', level: 'Casual', when: 'Solo amigos íntimos y familia', color: '#f59e0b' }].map(g => (
             <div key={g.kr} style={{ background: 'var(--bg-2)', border: `2px solid ${g.color}25`, borderRadius: 10, padding: '14px', textAlign: 'center' }}>
               <p style={{ margin: '0 0 2px', fontSize: 20, fontFamily: "'Noto Sans KR',sans-serif", fontWeight: 800, color: g.color }}>{g.kr}</p>
               <p style={{ margin: '0 0 6px', fontSize: 10, fontFamily: 'var(--mono)', color: 'var(--muted)' }}>{g.rom}</p>

@@ -11,7 +11,7 @@
 
 .shell {
   --reading-navy: var(--wl-on-panel, #101f59);
-  --reading-blue: #225be7;
+  --reading-blue: var(--wl-on-panel-link, #225be7);
   --reading-blue-soft: var(--bg-2);
   --reading-lavender: #f6f4ff;
   --reading-ink: var(--ink);
@@ -113,7 +113,7 @@
 .glossPopover { position: absolute; left: 50%; bottom: calc(100% + 8px); z-index: 4; display: grid; min-width: 130px; padding: 10px 12px; border: 1px solid var(--line-soft); border-radius: 11px; color: var(--reading-navy); background: var(--surface); box-shadow: 0 12px 30px rgba(23, 45, 108, .16); font-size: 12px; line-height: 1.3; transform: translateX(-50%); }
 .glossPopover em { margin-top: 3px; color: var(--reading-muted); }
 .secondaryButton, .completedButton { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 14px; border: 1px solid var(--line-soft); border-radius: 11px; color: var(--reading-blue); background: var(--surface); font-weight: 700; cursor: pointer; }
-.completedButton { color: var(--wl-on-panel-ok, #16744a); border-color: #b6dfcc; background: var(--wl-panel-raised, #effaf5); }
+.completedButton { color: var(--wl-on-panel-ok, #16744a); border-color: var(--wl-panel-line, #b6dfcc); background: var(--wl-panel-raised, #effaf5); }
 
 .recorder { display: grid; gap: 14px; margin-top: 22px; padding: 18px; border: 1px solid var(--line-soft); border-radius: 16px; background: linear-gradient(135deg, var(--bg-2), var(--bg-2)); }
 .recorderHeading { display: flex; gap: 12px; align-items: flex-start; }
@@ -179,7 +179,7 @@
 .supportContent ul { margin: 0; padding-left: 18px; }
 .supportContent details { padding: 10px 0; border-top: 1px solid var(--reading-line); }
 .supportContent summary { color: var(--reading-navy); cursor: pointer; font-size: 12px; font-weight: 700; }
-.reviewNotice { display: flex; gap: 10px; align-items: center; margin-top: 18px; padding: 14px 16px; border: 1px solid #eed6a9; border-radius: 13px; color: var(--wl-on-panel-warn, #76511c); background: var(--wl-panel-raised, #fff8e9); font-size: 12px; }
+.reviewNotice { display: flex; gap: 10px; align-items: center; margin-top: 18px; padding: 14px 16px; border: 1px solid var(--wl-panel-line, #eed6a9); border-radius: 13px; color: var(--wl-on-panel-warn, #76511c); background: var(--wl-panel-raised, #fff8e9); font-size: 12px; }
 .nextLink { margin-top: 20px; }
 
 .localeSwitch:hover, .primaryLink:hover, .nextLink:hover, .secondaryButton:hover, .glossWord:hover { filter: brightness(.96); }

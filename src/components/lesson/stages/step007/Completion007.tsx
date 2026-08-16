@@ -8,7 +8,7 @@ const SKILLS = [
   {
     icon: '📍',
     title: '에서 — Donde vive la acción',
-    color: '#8b5cf6',
+    color: 'var(--wl-on-panel-link, #8b5cf6)',
     items: [
       '대학교에서 공부해요',
       '카페에서 일해요',
@@ -19,7 +19,7 @@ const SKILLS = [
   {
     icon: '🚶',
     title: '에 — Destino del movimiento',
-    color: '#3b82f6',
+    color: 'var(--wl-on-panel-link, #3b82f6)',
     items: [
       '매일 카페에 가요',
       '에 + 가다/오다',
@@ -41,7 +41,7 @@ const SKILLS = [
   {
     icon: '💡',
     title: '좋아요 vs 좋아해요',
-    color: '#ec4899',
+    color: 'var(--wl-on-panel-alert, #ec4899)',
     items: [
       '좋아해요 = me gusta (verbo)',
       '좋아요 = está bien (adjetivo)',
@@ -162,7 +162,7 @@ export default function Completion007({ onComplete }: Props) {
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'center', animation: 'cl5-in 0.4s 0.1s ease both' }}>
           {[
             { label: `${elapsed} min`, sub: 'invertidos',      icon: '⏱️', color: '#06b6d4' },
-            { label: 'に/에서/에',      sub: 'dominado',         icon: '📍', color: '#8b5cf6' },
+            { label: 'に/에서/에',      sub: 'dominado',         icon: '📍', color: 'var(--wl-on-panel-link, #8b5cf6)' },
             { label: '4 verbos',       sub: '하다 activos',      icon: '⚙️', color: '#10b981' },
             { label: 'Steps 001–007',  sub: 'integrados',        icon: '🔄', color: '#f59e0b' },
           ].map(({ label, sub, icon, color }) => (
@@ -186,7 +186,7 @@ export default function Completion007({ onComplete }: Props) {
           ].map((badge, i) => (
             <span key={i} style={{
               fontSize: 11, fontWeight: 700, padding: '5px 13px', borderRadius: 100,
-              background: 'rgba(34,197,94,0.1)', border: '1px solid rgba(34,197,94,0.3)', color: '#16a34a',
+              background: 'rgba(34,197,94,0.1)', border: '1px solid rgba(34,197,94,0.3)', color: 'var(--wl-on-panel-ok, #16a34a)',
             }}>
               ✓ {badge}
             </span>
@@ -246,7 +246,7 @@ export default function Completion007({ onComplete }: Props) {
       {/* 9 — Step006 preview */}
       {visible >= 9 && (
         <div style={{ background: 'rgba(108,99,255,0.06)', border: '1px solid rgba(108,99,255,0.22)', borderRadius: 16, padding: '16px', animation: 'cl5-in 0.4s ease both' }}>
-          <p style={{ margin: '0 0 3px', fontSize: 10, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.09em', color: '#6c63ff' }}>Próximamente</p>
+          <p style={{ margin: '0 0 3px', fontSize: 10, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.09em', color: 'var(--wl-on-panel-link, #6c63ff)' }}>Próximamente</p>
           <p style={{ margin: '0 0 10px', fontSize: 16, fontWeight: 800, color: 'var(--foreground)' }}>Step 006 — Tiempo y planes</p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
             {['내일', '어제', '언제', '지금', '나중에'].map(item => (

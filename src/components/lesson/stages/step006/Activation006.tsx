@@ -90,7 +90,7 @@ export default function Activation006({ onComplete }: Props) {
                 }} />
               ))}
             </div>
-            <span style={{ fontFamily: 'var(--mono)', fontSize: 9, color: '#6c63ff', fontWeight: 700, letterSpacing: '0.12em' }}>
+            <span style={{ fontFamily: 'var(--mono)', fontSize: 9, color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700, letterSpacing: '0.12em' }}>
               PODCAST · STEP 006
             </span>
           </div>

@@ -142,7 +142,7 @@ function WordChip({ w }: { w: Word }) {
   return (
     <div style={{ display:'flex', flexDirection:'column', gap:2, padding:'8px 10px', borderRadius:10, background:'rgba(108,99,255,0.06)', border:'1px solid rgba(108,99,255,0.18)' }}>
       <span style={{ fontSize:16, fontWeight:800, fontFamily:'"Noto Sans KR",sans-serif', color:'var(--foreground)' }}>{w.kr}</span>
-      <span style={{ fontSize:10, color:'#a78bfa', fontFamily:'var(--mono)' }}>{w.rom}</span>
+      <span style={{ fontSize:10, color:'var(--wl-on-panel-link, #a78bfa)', fontFamily:'var(--mono)' }}>{w.rom}</span>
       <span style={{ fontSize:12, color:'var(--muted-foreground)', fontWeight:600 }}>{w.es}</span>
       {w.note && <span style={{ fontSize:10, color:'var(--muted-foreground)', lineHeight:1.4, marginTop:2 }}>{w.note}</span>}
     </div>
@@ -369,7 +369,7 @@ export default function ContextualInput005({ onComplete }: Props) {
             <div style={{ display:'flex', flexWrap:'wrap', gap:6 }}>
               {scene.bubbles.map(b => (
                 <button key={b.id} type="button" onClick={() => playAudio(b.audio)}
-                  style={{ padding:'5px 12px', borderRadius:100, cursor:'pointer', fontSize:13, fontFamily:'"Noto Sans KR",sans-serif', fontWeight:700, color:'#16a34a', background:'rgba(34,197,94,0.1)', border:'1px solid rgba(34,197,94,0.3)' }}>
+                  style={{ padding:'5px 12px', borderRadius:100, cursor:'pointer', fontSize:13, fontFamily:'"Noto Sans KR",sans-serif', fontWeight:700, color:'var(--wl-on-panel-ok, #16a34a)', background:'rgba(34,197,94,0.1)', border:'1px solid rgba(34,197,94,0.3)' }}>
                   {b.ko}
                 </button>
               ))}

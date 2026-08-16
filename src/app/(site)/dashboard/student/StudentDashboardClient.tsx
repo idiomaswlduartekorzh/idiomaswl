@@ -979,7 +979,7 @@ export default function StudentDashboardClient({ name, plan, streak, stats, rece
           display: block;
           width: 20px;
           height: 2px;
-          background: var(--ink);
+          background: var(--ink-bg);
           border-radius: 1px;
         }
         .std-topbar__title {
@@ -1029,9 +1029,9 @@ export default function StudentDashboardClient({ name, plan, streak, stats, rece
         }
         .std-greeting__cta {
           white-space: nowrap;
-          background: var(--ink);
+          background: var(--ink-bg);
           color: #fff;
-          border-color: var(--ink);
+          border-color: var(--ink-bg);
         }
 
         /* ── KPI strip ── */

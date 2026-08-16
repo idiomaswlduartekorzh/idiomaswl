@@ -135,7 +135,7 @@ export default function ReactiveInteraction002({ onComplete }: Props) {
     return (
       <section style={{ maxWidth: 480, margin: '0 auto', padding: '2rem 1rem', textAlign: 'center' }}>
         <div style={{ fontSize: 52, marginBottom: 8 }}>{emoji}</div>
-        <p style={{ margin: '0 0 4px', fontSize: 52, fontWeight: 800, color: '#6c63ff', lineHeight: 1 }}>
+        <p style={{ margin: '0 0 4px', fontSize: 52, fontWeight: 800, color: 'var(--wl-on-panel-link, #6c63ff)', lineHeight: 1 }}>
           {score}<span style={{ fontSize: 24, color: 'var(--muted)' }}>/{CARDS.length}</span>
         </p>
         <p style={{ margin: '0 0 24px', fontSize: 15, color: 'var(--muted)', lineHeight: 1.5 }}>{msg}</p>
@@ -180,7 +180,7 @@ export default function ReactiveInteraction002({ onComplete }: Props) {
         <span style={{ fontSize: 11, color: 'var(--muted)', opacity: 0.7 }}>🔊 toca para escuchar</span>
         {card.hint && (
           <div style={{ marginTop: 8 }}>
-            <span style={{ fontSize: 11, padding: '2px 10px', borderRadius: 100, background: 'rgba(45,155,78,0.1)', color: '#2d9b4e', fontWeight: 600 }}>{card.hint}</span>
+            <span style={{ fontSize: 11, padding: '2px 10px', borderRadius: 100, background: 'rgba(45,155,78,0.1)', color: 'var(--wl-on-panel-ok, #2d9b4e)', fontWeight: 600 }}>{card.hint}</span>
           </div>
         )}
       </button>

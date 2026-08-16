@@ -27,7 +27,7 @@
   border-radius: 8px;
   padding: 0.68rem 1rem;
   min-height: 42px;
-  background: var(--ink);
+  background: var(--ink-bg);
   color: var(--surface);
   font-size: 0.9rem;
   font-weight: 850;
@@ -716,7 +716,7 @@
   height: 23px;
   margin: 0 0.18rem;
   border-radius: 6px;
-  background: var(--ink);
+  background: var(--ink-bg);
   color: var(--surface);
   font-family: var(--mono);
   font-size: 0.7rem;
@@ -869,7 +869,7 @@ input.blank-field:focus,
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
-.review-index { background: var(--ink); color: var(--surface); }
+.review-index { background: var(--ink-bg); color: var(--surface); }
 .review-status { border: 1px solid var(--line-soft); color: var(--muted); background: var(--surface); }
 .review-card.good .review-status { border-color: color-mix(in srgb, var(--good) 35%, transparent); color: var(--good); background: color-mix(in srgb, var(--good) 9%, transparent); }
 .review-card.bad .review-status { border-color: color-mix(in srgb, var(--bad) 35%, transparent); color: var(--bad); background: color-mix(in srgb, var(--bad) 8%, transparent); }

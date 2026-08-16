@@ -158,8 +158,8 @@
   z-index: 1;
   margin: 0 clamp(1.4rem, 4vw, 2.4rem);
   padding: 1rem 1.1rem;
-  border-right: 1px solid #d5dce9;
-  border-left: 1px solid #d5dce9;
+  border-right: 1px solid var(--wl-panel-line, #d5dce9);
+  border-left: 1px solid var(--wl-panel-line, #d5dce9);
   background: var(--wl-panel-raised, #fff);
 }
 
@@ -247,7 +247,7 @@
   display: flex;
   align-items: flex-start;
   gap: 0.9rem;
-  border-left: 1px solid #cdded5;
+  border-left: 1px solid var(--wl-panel-line, #cdded5);
   background: var(--wl-panel-raised, #edf4f0);
 }
 
@@ -343,7 +343,7 @@
   .sequenceGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .studyGrid { grid-template-columns: 1fr; }
   .podcastBody { grid-template-columns: 1fr; }
-  .editorialNote { border-top: 1px solid #cdded5; border-left: 0; }
+  .editorialNote { border-top: 1px solid var(--wl-panel-line, #cdded5); border-left: 0; }
 }
 
 @media (max-width: 620px) {

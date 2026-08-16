@@ -246,8 +246,8 @@
 
 .playerShell {
   background: var(--wl-panel-raised, #fff);
-  border-left: 1px solid #d5dce9;
-  border-right: 1px solid #d5dce9;
+  border-left: 1px solid var(--wl-panel-line, #d5dce9);
+  border-right: 1px solid var(--wl-panel-line, #d5dce9);
   margin: 0 clamp(1.4rem, 4vw, 2.4rem);
   padding: 1rem 1.1rem;
   position: relative;
@@ -341,7 +341,7 @@
 .editorialNote {
   align-items: flex-start;
   background: var(--wl-panel-raised, #edf4f0);
-  border-left: 1px solid #cdded5;
+  border-left: 1px solid var(--wl-panel-line, #cdded5);
   display: flex;
   gap: 0.9rem;
 }
@@ -484,7 +484,7 @@
 
 .trap {
   background: var(--wl-panel-raised, #fff5f5);
-  border: 1px solid #edc8cd;
+  border: 1px solid var(--wl-panel-line, #edc8cd);
   border-radius: 6px;
   color: var(--wl-on-panel-alert, #7d1c2a);
   line-height: 1.55;
@@ -982,7 +982,7 @@
    Pintarlo de verde afirmaba un acierto que nadie había comprobado. */
 .feedbackNeutral { background: var(--wl-panel-raised, #f2f6ff); color: var(--wl-on-panel, #23325e); }
 .compareList { margin: .55rem 0; padding-left: 1.1rem; display: grid; gap: .3rem; font-size: .92rem; }
-.modelReveal { margin: .55rem 0 .35rem; padding: .6rem .75rem; border-radius: 8px; background: rgba(255, 255, 255, .6); font-size: .92rem; }
+.modelReveal { margin: .55rem 0 .35rem; padding: .6rem .75rem; border-radius: 8px; background: var(--wl-panel-raised, rgba(255, 255, 255, .6)); font-size: .92rem; }
 
 .exerciseActions {
   align-items: center;
@@ -1208,7 +1208,7 @@
   .studyGrid { grid-template-columns: 1fr; }
   .sequenceGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .podcastBody { grid-template-columns: 1fr; }
-  .editorialNote { border-left: 0; border-top: 1px solid #cdded5; }
+  .editorialNote { border-left: 0; border-top: 1px solid var(--wl-panel-line, #cdded5); }
   .decodeGrid,
   .modelMap,
   .workedStepGrid { grid-template-columns: 1fr; }

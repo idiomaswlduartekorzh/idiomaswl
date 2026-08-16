@@ -7,7 +7,7 @@ import { playAudio } from '@/lib/storage';
 const SKILLS = [
   { icon:'☕', title:'Conversación real en el café',     color:'#f59e0b',
     items:['어서 오세요 → responde con 안녕하세요','Pedir: [producto] + [tamaño] + 주세요','Tu nombre: 저는 [nombre]이에요/예요','Recibir: 여기 있습니다 → 감사합니다'] },
-  { icon:'🔤', title:'이다 — verbo de identidad',          color:'#6c63ff',
+  { icon:'🔤', title:'이다 — verbo de identidad',          color:'var(--wl-on-panel-link, #6c63ff)',
     items:['Vocal final → 예요 (카페예요)','Consonante final → 이에요 (학생이에요)','Formal → 입니다 (entrevistas)','Negativo → 아니에요 (≠ 없어요)'] },
   { icon:'📍', title:'있다/없다 — existencia',             color:'#22c55e',
     items:['있어요 = hay / está / tengo','없어요 = no hay / no está / no tengo','Formal: 있습니다 / 없습니다','¿Hay X? → [X] 있어요?'] },
@@ -142,7 +142,7 @@ export default function Completion003({ onComplete }: Props) {
         <div style={{ display:'flex', flexWrap:'wrap', gap:7, justifyContent:'center', animation:'cl-in 0.4s 0.12s ease both' }}>
           {['☕ Café desbloqueado','🔤 이다 dominado','📍 있다/없다 claro','🏗️ SOV integrado'].map((badge, i) => (
             <span key={i} style={{ fontSize:11, fontWeight:700, padding:'5px 13px', borderRadius:100,
-              background:'rgba(34,197,94,0.1)', border:'1px solid rgba(34,197,94,0.3)', color:'#16a34a' }}>
+              background:'rgba(34,197,94,0.1)', border:'1px solid rgba(34,197,94,0.3)', color:'var(--wl-on-panel-ok, #16a34a)' }}>
               ✓ {badge}
             </span>
           ))}
@@ -199,7 +199,7 @@ export default function Completion003({ onComplete }: Props) {
       {visible >= 9 && (
         <div style={{ background:'rgba(108,99,255,0.06)', border:'1px solid rgba(108,99,255,0.22)',
           borderRadius:16, padding:'16px', animation:'cl-in 0.4s ease both' }}>
-          <p style={{ margin:'0 0 3px', fontSize:10, fontWeight:800, textTransform:'uppercase', letterSpacing:'0.09em', color:'#6c63ff' }}>Próximamente</p>
+          <p style={{ margin:'0 0 3px', fontSize:10, fontWeight:800, textTransform:'uppercase', letterSpacing:'0.09em', color:'var(--wl-on-panel-link, #6c63ff)' }}>Próximamente</p>
           <p style={{ margin:'0 0 10px', fontSize:16, fontWeight:800, color:'var(--foreground)' }}>🚇 Step 004 — En el metro de Seúl</p>
           <div style={{ display:'flex', flexWrap:'wrap', gap:6 }}>
             {['지하철 (metro)','어떻게 가요?','얼마예요?','Verbos de movimiento'].map(item => (

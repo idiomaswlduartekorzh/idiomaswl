@@ -139,7 +139,7 @@ export default function LessonRuntime({ langName, langFlag, langSlug, dayNumber,
             {topics && topics.length > 0 && (
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, margin: '10px 0 6px' }}>
                 {topics.map(t => (
-                  <span key={t} style={{ fontSize: 11, fontWeight: 700, padding: '3px 10px', borderRadius: 100, background: 'rgba(108,99,255,0.1)', color: '#6c63ff', border: '1px solid rgba(108,99,255,0.2)' }}>
+                  <span key={t} style={{ fontSize: 11, fontWeight: 700, padding: '3px 10px', borderRadius: 100, background: 'rgba(108,99,255,0.1)', color: 'var(--wl-on-panel-link, #6c63ff)', border: '1px solid rgba(108,99,255,0.2)' }}>
                     {t}
                   </span>
                 ))}

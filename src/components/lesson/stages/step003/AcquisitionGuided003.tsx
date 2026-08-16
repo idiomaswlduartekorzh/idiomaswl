@@ -78,7 +78,7 @@ export default function AcquisitionGuided003({ onComplete }: Props) {
       <article style={{ background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 16, overflow: 'hidden', marginBottom: 16, position: 'relative' }}>
         {/* Recycled badge */}
         {card.recycled && (
-          <div style={{ position: 'absolute', top: 12, right: 12, zIndex: 10, background: 'rgba(45,155,78,0.12)', border: '1px solid rgba(45,155,78,0.3)', borderRadius: 100, padding: '3px 10px', fontSize: 10, fontWeight: 700, color: '#2d9b4e', letterSpacing: '0.04em' }}>
+          <div style={{ position: 'absolute', top: 12, right: 12, zIndex: 10, background: 'rgba(45,155,78,0.12)', border: '1px solid rgba(45,155,78,0.3)', borderRadius: 100, padding: '3px 10px', fontSize: 10, fontWeight: 700, color: 'var(--wl-on-panel-ok, #2d9b4e)', letterSpacing: '0.04em' }}>
             Ya conoces esta
           </div>
         )}

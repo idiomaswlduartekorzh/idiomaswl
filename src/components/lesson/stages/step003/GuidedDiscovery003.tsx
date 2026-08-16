@@ -199,7 +199,7 @@ export default function GuidedDiscovery003({ onComplete }: Props) {
             Descubre el patrón
           </h2>
           <p style={{ margin: 0, fontSize: 14, color: 'var(--muted-foreground)', lineHeight: 1.65, maxWidth: 320, marginInline: 'auto' }}>
-            En el café escuchaste <strong style={{ color: '#6c63ff', fontFamily: '"Noto Sans KR",sans-serif' }}>이에요</strong> y <strong style={{ color: '#22c55e', fontFamily: '"Noto Sans KR",sans-serif' }}>예요</strong> varias veces. Hay una sola regla detrás de cuándo se usa cada uno — y la vas a descubrir tú mismo.
+            En el café escuchaste <strong style={{ color: 'var(--wl-on-panel-link, #6c63ff)', fontFamily: '"Noto Sans KR",sans-serif' }}>이에요</strong> y <strong style={{ color: '#22c55e', fontFamily: '"Noto Sans KR",sans-serif' }}>예요</strong> varias veces. Hay una sola regla detrás de cuándo se usa cada uno — y la vas a descubrir tú mismo.
           </p>
         </div>
 
@@ -225,7 +225,7 @@ export default function GuidedDiscovery003({ onComplete }: Props) {
         <button type="button" className="gd-btn" onClick={() => setPhase('discover')}
           style={{ padding: '15px', borderRadius: 14, cursor: 'pointer', width: '100%',
             background: 'rgba(108,99,255,0.14)', border: '1px solid rgba(108,99,255,0.4)',
-            fontSize: 14, fontWeight: 800, color: '#6c63ff', animation: 'gd-in 0.4s 0.3s ease both' }}>
+            fontSize: 14, fontWeight: 800, color: 'var(--wl-on-panel-link, #6c63ff)', animation: 'gd-in 0.4s 0.3s ease both' }}>
           Empezar a descubrir →
         </button>
       </div>
@@ -352,7 +352,7 @@ export default function GuidedDiscovery003({ onComplete }: Props) {
         </div>
 
         <div>
-          <p style={{ margin: 0, fontSize: 11, fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6c63ff' }}>
+          <p style={{ margin: 0, fontSize: 11, fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--wl-on-panel-link, #6c63ff)' }}>
             Aplica lo que descubriste · {quizIdx + 1} de {QUIZ.length}
           </p>
         </div>
@@ -409,7 +409,7 @@ export default function GuidedDiscovery003({ onComplete }: Props) {
           <button type="button" className="gd-btn" onClick={nextQuiz}
             style={{ padding: '13px', borderRadius: 14, width: '100%', cursor: 'pointer',
               background: 'rgba(108,99,255,0.14)', border: '1px solid rgba(108,99,255,0.4)',
-              fontSize: 13, fontWeight: 800, color: '#6c63ff' }}>
+              fontSize: 13, fontWeight: 800, color: 'var(--wl-on-panel-link, #6c63ff)' }}>
             {quizIdx === QUIZ.length - 1 ? '🎯 ¡Lo tengo! Ver resumen →' : 'Siguiente pregunta →'}
           </button>
         )}

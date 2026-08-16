@@ -20,9 +20,9 @@ const CHIP_STYLE_BASE: React.CSSProperties = {
 };
 
 function chipStyle(state: 'idle' | 'selected' | 'correct' | 'wrong'): React.CSSProperties {
-  if (state === 'selected') return { ...CHIP_STYLE_BASE, borderColor: '#6c63ff', background: 'rgba(108,99,255,0.08)', color: '#6c63ff' };
-  if (state === 'correct') return { ...CHIP_STYLE_BASE, borderColor: '#2d9b4e', background: 'rgba(45,155,78,0.08)', color: '#2d9b4e' };
-  if (state === 'wrong') return { ...CHIP_STYLE_BASE, borderColor: '#dc3545', background: 'rgba(220,53,69,0.06)', color: '#dc3545' };
+  if (state === 'selected') return { ...CHIP_STYLE_BASE, borderColor: '#6c63ff', background: 'rgba(108,99,255,0.08)', color: 'var(--wl-on-panel-link, #6c63ff)' };
+  if (state === 'correct') return { ...CHIP_STYLE_BASE, borderColor: '#2d9b4e', background: 'rgba(45,155,78,0.08)', color: 'var(--wl-on-panel-ok, #2d9b4e)' };
+  if (state === 'wrong') return { ...CHIP_STYLE_BASE, borderColor: '#dc3545', background: 'rgba(220,53,69,0.06)', color: 'var(--wl-on-panel-alert, #dc3545)' };
   return CHIP_STYLE_BASE;
 }
 
@@ -63,7 +63,7 @@ function Ex1({ onDone }: { onDone: () => void }) {
 
   return (
     <article style={{ background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 14, padding: 20 }}>
-      <p style={{ margin: '0 0 6px', fontSize: 11, fontWeight: 700, color: '#6c63ff', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Ejercicio 1 · Reordena la frase</p>
+      <p style={{ margin: '0 0 6px', fontSize: 11, fontWeight: 700, color: 'var(--wl-on-panel-link, #6c63ff)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Ejercicio 1 · Reordena la frase</p>
       <p style={{ margin: '0 0 14px', fontSize: 13, color: 'var(--muted)', lineHeight: 1.7 }}>
         Tu amigo te pregunta: <em>"¿Cuándo vas a la escuela?"</em><br />
         Pon las palabras en orden correcto (coreano SOV):
@@ -105,20 +105,20 @@ function Ex1({ onDone }: { onDone: () => void }) {
 
       {isWrong && (
         <div style={{ marginTop: 10, padding: '12px 14px', background: 'rgba(220,53,69,0.06)', border: '1px solid rgba(220,53,69,0.2)', borderRadius: 10, marginBottom: 8 }}>
-          <p style={{ margin: '0 0 8px', fontSize: 12, color: '#dc3545' }}>No es exactamente eso — el orden coreano es: Sujeto → Tiempo → Lugar → Verbo</p>
+          <p style={{ margin: '0 0 8px', fontSize: 12, color: 'var(--wl-on-panel-alert, #dc3545)' }}>No es exactamente eso — el orden coreano es: Sujeto → Tiempo → Lugar → Verbo</p>
           <button type="button" onClick={reset} style={{ padding: '8px 16px', background: '#6c63ff', border: 'none', borderRadius: 8, color: '#fff', fontSize: 12, fontWeight: 600, cursor: 'pointer' }}>Intentar de nuevo</button>
         </div>
       )}
 
       {isCorrect && (
         <div style={{ marginTop: 10, padding: '14px', background: 'rgba(45,155,78,0.06)', border: '1px solid rgba(45,155,78,0.2)', borderRadius: 10, marginBottom: 10 }}>
-          <p style={{ margin: '0 0 6px', fontSize: 13, fontWeight: 700, color: '#2d9b4e' }}>✅ ¡Perfecto!</p>
+          <p style={{ margin: '0 0 6px', fontSize: 13, fontWeight: 700, color: 'var(--wl-on-panel-ok, #2d9b4e)' }}>✅ ¡Perfecto!</p>
           <p style={{ margin: '0 0 6px', fontSize: 13, color: 'var(--ink)', lineHeight: 1.6 }}>
             저는 오늘 학교에 가요<br />
             <span style={{ fontSize: 11, color: 'var(--muted)' }}>Yo hoy a la escuela voy → Hoy voy a la escuela</span>
           </p>
           <div style={{ padding: '8px 12px', background: 'rgba(108,99,255,0.06)', borderRadius: 8, marginTop: 8 }}>
-            <span style={{ fontSize: 11, color: '#6c63ff' }}>
+            <span style={{ fontSize: 11, color: 'var(--wl-on-panel-link, #6c63ff)' }}>
               💡 <strong>오늘</strong> (hoy) es de tu nuevo vocabulario del Día 2 — ¡ya lo puedes usar!
             </span>
           </div>
@@ -144,7 +144,7 @@ function Ex2({ onDone }: { onDone: () => void }) {
 
   return (
     <article style={{ background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 14, padding: 20 }}>
-      <p style={{ margin: '0 0 6px', fontSize: 11, fontWeight: 700, color: '#6c63ff', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Ejercicio 2 · Completa la frase</p>
+      <p style={{ margin: '0 0 6px', fontSize: 11, fontWeight: 700, color: 'var(--wl-on-panel-link, #6c63ff)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Ejercicio 2 · Completa la frase</p>
       <p style={{ margin: '0 0 14px', fontSize: 13, color: 'var(--muted)', lineHeight: 1.7 }}>
         Alguien dice esta frase del video. ¿Qué palabra falta?
       </p>
@@ -181,14 +181,14 @@ function Ex2({ onDone }: { onDone: () => void }) {
 
       {checked && !isCorrect && (
         <div style={{ marginTop: 10, padding: '12px 14px', background: 'rgba(220,53,69,0.06)', border: '1px solid rgba(220,53,69,0.2)', borderRadius: 10, marginBottom: 8 }}>
-          <p style={{ margin: '0 0 8px', fontSize: 12, color: '#dc3545' }}>No es esa. Piensa: ¿qué verbo significa "se ve"?</p>
+          <p style={{ margin: '0 0 8px', fontSize: 12, color: 'var(--wl-on-panel-alert, #dc3545)' }}>No es esa. Piensa: ¿qué verbo significa "se ve"?</p>
           <button type="button" onClick={() => { setSelected(null); setChecked(false); }} style={{ padding: '8px 16px', background: '#6c63ff', border: 'none', borderRadius: 8, color: '#fff', fontSize: 12, fontWeight: 600, cursor: 'pointer' }}>Intentar de nuevo</button>
         </div>
       )}
 
       {isCorrect && (
         <div style={{ marginTop: 10, padding: '14px', background: 'rgba(45,155,78,0.06)', border: '1px solid rgba(45,155,78,0.2)', borderRadius: 10, marginBottom: 10 }}>
-          <p style={{ margin: '0 0 6px', fontSize: 13, fontWeight: 700, color: '#2d9b4e' }}>✅ ¡Esta es exactamente la frase del video de David!</p>
+          <p style={{ margin: '0 0 6px', fontSize: 13, fontWeight: 700, color: 'var(--wl-on-panel-ok, #2d9b4e)' }}>✅ ¡Esta es exactamente la frase del video de David!</p>
           <p style={{ margin: '0 0 10px', fontSize: 13, color: 'var(--ink)', lineHeight: 1.7 }}>
             "Ahora las letras se ven un poco"
           </p>
@@ -200,7 +200,7 @@ function Ex2({ onDone }: { onDone: () => void }) {
               { kr: '조금', es: 'un poco' },
               { kr: '보여요', es: 'se ven' },
             ].map(item => (
-              <span key={item.kr} style={{ fontSize: 11, padding: '3px 10px', borderRadius: 100, background: 'rgba(108,99,255,0.08)', color: '#6c63ff', fontWeight: 600 }}>
+              <span key={item.kr} style={{ fontSize: 11, padding: '3px 10px', borderRadius: 100, background: 'rgba(108,99,255,0.08)', color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 600 }}>
                 <span style={{ fontFamily: "'Noto Sans KR', sans-serif" }}>{item.kr}</span>({item.es})
               </span>
             ))}
@@ -271,7 +271,7 @@ function SyllableBuilder({
     <div style={{ marginBottom: 20 }}>
       <p style={{ margin: '0 0 10px', fontSize: 13, color: 'var(--ink)', lineHeight: 1.7 }}>
         Toca la consonante inicial y luego la vocal para construir{' '}
-        <strong style={{ fontFamily: "'Noto Sans KR', sans-serif", fontSize: 17, color: '#6c63ff' }}>{target}</strong>{' '}
+        <strong style={{ fontFamily: "'Noto Sans KR', sans-serif", fontSize: 17, color: 'var(--wl-on-panel-link, #6c63ff)' }}>{target}</strong>{' '}
         <span style={{ color: 'var(--muted)' }}>({meaning})</span>
       </p>
 
@@ -279,14 +279,14 @@ function SyllableBuilder({
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12, marginBottom: 16 }}>
         <div style={{ width: 80, height: 80, display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: 12, border: `2px solid ${assembled ? '#2d9b4e' : wrong ? '#dc3545' : 'var(--line-soft)'}`, background: assembled ? 'rgba(45,155,78,0.06)' : wrong ? 'rgba(220,53,69,0.06)' : 'var(--bg-2)', transition: 'all 0.3s' }}>
           {assembled
-            ? <span style={{ fontSize: 44, fontFamily: "'Noto Sans KR', sans-serif", color: '#2d9b4e', fontWeight: 900 }}>{target}</span>
+            ? <span style={{ fontSize: 44, fontFamily: "'Noto Sans KR', sans-serif", color: 'var(--wl-on-panel-ok, #2d9b4e)', fontWeight: 900 }}>{target}</span>
             : <span style={{ fontSize: 36, fontFamily: "'Noto Sans KR', sans-serif", color: wrong ? '#dc3545' : 'var(--muted)' }}>
                 {consonant && !vowel ? consonant : consonant && vowel ? `${consonant}${vowel}` : '?'}
               </span>
           }
         </div>
         {assembled && (
-          <div style={{ fontSize: 13, color: '#2d9b4e', lineHeight: 1.6 }}>
+          <div style={{ fontSize: 13, color: 'var(--wl-on-panel-ok, #2d9b4e)', lineHeight: 1.6 }}>
             <strong style={{ fontFamily: "'Noto Sans KR', sans-serif", fontSize: 20 }}>{target}</strong> = {correctConsonant} + {correctVowel}<br />
             <span style={{ color: 'var(--muted)', fontSize: 12 }}>Significa: <strong>"{meaning}"</strong></span>
           </div>
@@ -315,7 +315,7 @@ function SyllableBuilder({
         </div>
       )}
 
-      {wrong && <p style={{ textAlign: 'center', marginTop: 8, fontSize: 12, color: '#dc3545' }}>Combinación incorrecta — intenta de nuevo</p>}
+      {wrong && <p style={{ textAlign: 'center', marginTop: 8, fontSize: 12, color: 'var(--wl-on-panel-alert, #dc3545)' }}>Combinación incorrecta — intenta de nuevo</p>}
 
       {assembled && (
         <button type="button" onClick={onDone} style={{ width: '100%', marginTop: 14, padding: '12px', background: '#2d9b4e', border: 'none', borderRadius: 10, color: '#fff', fontSize: 13, fontWeight: 600, cursor: 'pointer' }}>
@@ -331,7 +331,7 @@ function Ex3({ onDone }: { onDone: () => void }) {
 
   return (
     <article style={{ background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 14, padding: 20 }}>
-      <p style={{ margin: '0 0 6px', fontSize: 11, fontWeight: 700, color: '#6c63ff', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Ejercicio 3 · Construye un bloque Hangul</p>
+      <p style={{ margin: '0 0 6px', fontSize: 11, fontWeight: 700, color: 'var(--wl-on-panel-link, #6c63ff)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Ejercicio 3 · Construye un bloque Hangul</p>
       <p style={{ margin: '0 0 16px', fontSize: 13, color: 'var(--muted)', lineHeight: 1.7 }}>
         Cada sílaba coreana es un bloque cuadrado. Vamos a construir dos bloques del vocabulario de hoy.
       </p>
@@ -373,14 +373,14 @@ function Ex3({ onDone }: { onDone: () => void }) {
 
       {step === 'done' && (
         <div style={{ padding: '14px', background: 'rgba(45,155,78,0.06)', border: '1px solid rgba(45,155,78,0.2)', borderRadius: 10 }}>
-          <p style={{ margin: '0 0 10px', fontSize: 14, fontWeight: 700, color: '#2d9b4e' }}>¡Construiste tus primeros bloques Hangul!</p>
+          <p style={{ margin: '0 0 10px', fontSize: 14, fontWeight: 700, color: 'var(--wl-on-panel-ok, #2d9b4e)' }}>¡Construiste tus primeros bloques Hangul!</p>
           <div style={{ display: 'flex', gap: 14, marginBottom: 14 }}>
             {[
               { syl: '나', roman: 'na', es: 'yo (informal)', parts: 'ㄴ + ㅏ' },
               { syl: '너', roman: 'neo', es: 'tú', parts: 'ㄴ + ㅓ' },
             ].map(item => (
               <div key={item.syl} style={{ flex: 1, textAlign: 'center', padding: '12px', background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 10 }}>
-                <p style={{ margin: '0 0 4px', fontSize: 40, fontFamily: "'Noto Sans KR', sans-serif", color: '#6c63ff', fontWeight: 900 }}>{item.syl}</p>
+                <p style={{ margin: '0 0 4px', fontSize: 40, fontFamily: "'Noto Sans KR', sans-serif", color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 900 }}>{item.syl}</p>
                 <p style={{ margin: '0 0 2px', fontSize: 11, color: 'var(--muted)', fontFamily: 'var(--mono)' }}>{item.parts}</p>
                 <p style={{ margin: '0 0 2px', fontSize: 11, color: 'var(--muted)' }}>[{item.roman}]</p>
                 <p style={{ margin: 0, fontSize: 12, fontWeight: 600, color: 'var(--ink)' }}>{item.es}</p>
@@ -417,7 +417,7 @@ export default function GuidedProduction002({ onComplete }: Props) {
   return (
     <section style={{ maxWidth: 620, margin: '0 auto', padding: '1.5rem 1rem' }}>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 6 }}>
-        <p style={{ margin: 0, fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6c63ff', fontWeight: 700 }}>PRODUCCIÓN GUIADA</p>
+        <p style={{ margin: 0, fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700 }}>PRODUCCIÓN GUIADA</p>
         <StreakBar streak={streak} />
       </div>
       <h3 style={{ margin: '0 0 6px', fontSize: 22, fontWeight: 700, color: 'var(--ink)' }}>Usa lo que sabes</h3>

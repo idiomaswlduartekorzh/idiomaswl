@@ -8,7 +8,7 @@ const SKILLS = [
   {
     icon: '🆕',
     title: '새로 왔어요? — Primeras palabras',
-    color: '#6c63ff',
+    color: 'var(--wl-on-panel-link, #6c63ff)',
     items: [
       '새로 = nuevo/recién llegado',
       '반갑습니다 = encantado',
@@ -186,7 +186,7 @@ export default function Completion006({ onComplete }: Props) {
           ].map((badge, i) => (
             <span key={i} style={{
               fontSize: 11, fontWeight: 700, padding: '5px 13px', borderRadius: 100,
-              background: 'rgba(34,197,94,0.1)', border: '1px solid rgba(34,197,94,0.3)', color: '#16a34a',
+              background: 'rgba(34,197,94,0.1)', border: '1px solid rgba(34,197,94,0.3)', color: 'var(--wl-on-panel-ok, #16a34a)',
             }}>
               ✓ {badge}
             </span>
@@ -248,7 +248,7 @@ export default function Completion006({ onComplete }: Props) {
       {/* 9 — Step005 preview */}
       {visible >= 9 && (
         <div style={{ background: 'rgba(108,99,255,0.06)', border: '1px solid rgba(108,99,255,0.22)', borderRadius: 16, padding: '16px', animation: 'cl4-in 0.4s ease both' }}>
-          <p style={{ margin: '0 0 3px', fontSize: 10, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.09em', color: '#6c63ff' }}>Próximamente</p>
+          <p style={{ margin: '0 0 3px', fontSize: 10, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.09em', color: 'var(--wl-on-panel-link, #6c63ff)' }}>Próximamente</p>
           <p style={{ margin: '0 0 10px', fontSize: 16, fontWeight: 800, color: 'var(--foreground)' }}>🗓️ Step 005 — La semana universitaria</p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
             {['도서관', '시험', '바빠요', '내일 만나요', '쉬어요'].map(item => (

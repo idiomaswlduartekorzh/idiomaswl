@@ -379,7 +379,7 @@ function StepRead({ text, onNext }: { text: CycleText; onNext: () => void }) {
                 {activeVocab === seg.vocabIdx && (
                   <span style={{
                     position:'absolute', bottom:'calc(100% + 6px)', left:'50%', transform:'translateX(-50%)',
-                    background:'var(--ink)', color:'var(--bg)', fontSize:'0.72rem', fontWeight:700,
+                    background:'var(--ink-bg)', color:'var(--bg)', fontSize:'0.72rem', fontWeight:700,
                     padding:'0.3rem 0.6rem', borderRadius:8, whiteSpace:'nowrap', zIndex:10,
                     fontFamily:'var(--mono)',
                     boxShadow:'0 4px 12px rgba(0,0,0,0.2)',

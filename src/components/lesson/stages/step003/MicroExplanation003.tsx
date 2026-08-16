@@ -180,7 +180,7 @@ export default function MicroExplanation003({ onComplete }: Props) {
         <p style={{ margin:0, fontSize:13, color:'var(--muted-foreground)', lineHeight:1.5 }}>Misma palabra (커피), verbo diferente — significado completamente distinto.</p>
       </div>
 
-      {[{ verb:'이다', ko:'이것은 커피예요', es:'Esto ES café', why:'이다 clasifica e identifica. "Esto pertenece a la categoría café."', color:'#6c63ff' },
+      {[{ verb:'이다', ko:'이것은 커피예요', es:'Esto ES café', why:'이다 clasifica e identifica. "Esto pertenece a la categoría café."', color:'var(--wl-on-panel-link, #6c63ff)' },
         { verb:'있다', ko:'커피가 있어요', es:'HAY café / Tengo café', why:'있다 dice que algo existe o se posee. "El café está disponible / lo tenemos."', color:'#f59e0b' },
       ].map((item,i)=>(
         <div key={i} style={{ background:'var(--card)', border:`1px solid ${item.color}35`, borderRadius:18, padding:'18px', animation:`me-in 0.4s ${i*0.1}s ease both` }}>
@@ -194,7 +194,7 @@ export default function MicroExplanation003({ onComplete }: Props) {
       <div style={{ padding:'16px', borderRadius:14, background:'rgba(232,121,249,0.08)', border:'1px solid rgba(232,121,249,0.28)' }}>
         <p style={{ margin:'0 0 6px', fontSize:11, fontWeight:800, textTransform:'uppercase', letterSpacing:'0.07em', color:'#e879f9' }}>🧠 Regla de oro</p>
         <p style={{ margin:0, fontSize:13.5, color:'var(--foreground)', lineHeight:1.65 }}>
-          ¿Estás <strong>clasificando</strong> algo? → <strong style={{ color:'#6c63ff' }}>이다</strong> &nbsp;|&nbsp; ¿Estás diciendo que algo <strong>existe / está / tienes</strong>? → <strong style={{ color:'#f59e0b' }}>있다</strong>
+          ¿Estás <strong>clasificando</strong> algo? → <strong style={{ color:'var(--wl-on-panel-link, #6c63ff)' }}>이다</strong> &nbsp;|&nbsp; ¿Estás diciendo que algo <strong>existe / está / tienes</strong>? → <strong style={{ color:'#f59e0b' }}>있다</strong>
         </p>
       </div>
 

@@ -291,7 +291,7 @@ export default function Recognition003({ onComplete }: Props) {
               <span key={v.id} style={{
                 background: 'rgba(108,99,255,0.08)', border: '1px solid rgba(108,99,255,0.15)',
                 borderRadius: 100, padding: '4px 12px', fontFamily: "'Noto Sans KR', sans-serif",
-                color: '#6c63ff', fontSize: 14,
+                color: 'var(--wl-on-panel-link, #6c63ff)', fontSize: 14,
               }}>
                 {v.hangul}
               </span>
@@ -307,7 +307,7 @@ export default function Recognition003({ onComplete }: Props) {
     const passed = currentScore >= Math.ceil(total * 0.6);
     return (
       <article style={{ background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 16, padding: '2.5rem 2rem', textAlign: 'center' }}>
-        <p style={{ margin: 0, fontSize: 48, fontWeight: 800, color: '#6c63ff' }}>{currentScore}/{total}</p>
+        <p style={{ margin: 0, fontSize: 48, fontWeight: 800, color: 'var(--wl-on-panel-link, #6c63ff)' }}>{currentScore}/{total}</p>
         <p style={{ margin: '8px 0 24px', fontSize: 14, color: 'var(--muted)' }}>
           {passed ? '¡Buen resultado! Puedes continuar.' : 'Repasemos un poco más.'}
         </p>
@@ -421,7 +421,7 @@ export default function Recognition003({ onComplete }: Props) {
               {/* ── L4: Korean phrase → pick romanization ──────────────────── */}
               {vocab && isL4 && (
                 <div style={{ padding: '2rem 2rem 0', textAlign: 'center', background: 'var(--bg-2)' }}>
-                  <p style={{ margin: '0 0 4px', fontSize: 36, fontWeight: 700, fontFamily: "'Noto Sans KR', sans-serif", color: '#6c63ff', lineHeight: 1.3 }}>
+                  <p style={{ margin: '0 0 4px', fontSize: 36, fontWeight: 700, fontFamily: "'Noto Sans KR', sans-serif", color: 'var(--wl-on-panel-link, #6c63ff)', lineHeight: 1.3 }}>
                     {vocab.hangul}
                   </p>
                 </div>

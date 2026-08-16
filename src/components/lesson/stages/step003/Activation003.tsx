@@ -36,7 +36,7 @@ const TIMELINE: TimelineItem[] = [
     kr: '레이더 사회',
     title: 'El radar social invisible',
     body: 'Antes de pronunciar una sola sílaba, los coreanos procesan: ¿cuántos años tiene esta persona? ¿cuál es su estatus? ¿qué relación tenemos? El idioma cambia completamente según esa respuesta. No es intuición — es un sistema automático integrado en el lenguaje.',
-    color: '#6c63ff',
+    color: 'var(--wl-on-panel-link, #6c63ff)',
     examples: [
       { kr: '안녕하세요', es: 'a un desconocido / persona mayor', lit: 'nivel formal-educado' },
       { kr: '안녕', es: 'a un amigo íntimo / niño', lit: 'nivel casual' },
@@ -84,7 +84,7 @@ const TIMELINE: TimelineItem[] = [
     kr: '7 단계',
     title: 'Los 7 niveles de formalidad del coreano',
     body: 'El coreano tiene 7 registros formales distintos. En la práctica moderna se usan principalmente 3. Usar el nivel incorrecto no es un error gramatical — es una señal social que el otro registra inmediatamente.',
-    color: '#8b5cf6',
+    color: 'var(--wl-on-panel-link, #8b5cf6)',
     table: {
       headers: ['Nivel', 'Sufijo', 'Cuándo usarlo'],
       rows: [
@@ -101,7 +101,7 @@ const TIMELINE: TimelineItem[] = [
     rom: 'a-me-ri-ka-no han jan ju-se-yo',
     title: 'Un americano, por favor',
     body: 'Este pedido tiene estructura de fórmula: [bebida] + [cantidad] + 주세요. Domina la fórmula y puedes pedir cualquier cosa en cualquier negocio de Corea. No necesitas más.',
-    color: '#3b82f6',
+    color: 'var(--wl-on-panel-link, #3b82f6)',
     audioKey: '아메리카노 한 잔 주세요',
     breakdown: [
       { kr: '아메리카노', es: 'americano (préstamo del inglés)' },
@@ -120,7 +120,7 @@ const TIMELINE: TimelineItem[] = [
     rom: 'ju-se-yo',
     title: 'La palabra más útil del viaje',
     body: '주세요 viene de 주다 (dar) + 세요 (imperativo honorífico). Pega cualquier sustantivo delante y tienes un pedido educado y correcto al 100%. Es la navaja suiza del coreano de supervivencia.',
-    color: '#ec4899',
+    color: 'var(--wl-on-panel-alert, #ec4899)',
     audioKey: '주세요',
     examples: [
       { kr: '물 주세요', es: 'Agua, por favor' },
@@ -152,7 +152,7 @@ const TIMELINE: TimelineItem[] = [
     rom: 'sa-i-jeu mwo-ro deu-ril-kka-yo',
     title: '¿Qué tamaño le pongo?',
     body: 'Estructura ultra-cortés de pregunta de servicio. -드릴까요 es la forma más formal de preguntar mientras se ofrece algo. Lo escucharás en todo tipo de comercios coreanos.',
-    color: '#f97316',
+    color: 'var(--wl-on-panel-warn, #f97316)',
     audioKey: '사이즈 뭐로 드릴까요',
     breakdown: [
       { kr: '사이즈', es: 'tamaño (del inglés "size")' },
@@ -167,7 +167,7 @@ const TIMELINE: TimelineItem[] = [
     rom: 'seu-mol · mi-di-eom · la-ji',
     title: 'El inglés transformado por la fonética coreana',
     body: 'El coreano adopta miles de palabras extranjeras y las adapta a su sistema silábico. Esto se llama 외래어 (loanwords). No siempre suenan como el original — pero ya conoces cientos de palabras sin haberlas estudiado.',
-    color: '#6366f1',
+    color: 'var(--wl-on-panel-link, #6366f1)',
     examples: [
       { kr: '스몰', es: 'small → S', lit: 'seu-mol' },
       { kr: '미디엄', es: 'medium → M', lit: 'mi-di-eom' },
@@ -199,7 +199,7 @@ const TIMELINE: TimelineItem[] = [
     rom: 'i-reu-mi mwo-ye-yo',
     title: '¿Cómo te llamas?',
     body: 'Estructura copula: [sustantivo] + 이/가 + 뭐예요. Literalmente "El nombre, ¿qué es?". Esta estructura volverá en docenas de contextos del STEP 007 — ya la tienes lista.',
-    color: '#f43f5e',
+    color: 'var(--wl-on-panel-alert, #f43f5e)',
     audioKey: '이름이 뭐예요',
     breakdown: [
       { kr: '이름', es: 'nombre' },
@@ -218,7 +218,7 @@ const TIMELINE: TimelineItem[] = [
     rom: 'yeo-gi it-seum-ni-da',
     title: 'Aquí tiene — la entrega formal',
     body: '여기 있습니다 es el protocolo de entrega. El personal lo dice mientras pasa el objeto con ambas manos. El gesto de dos manos es tan importante como las palabras — completa el mensaje de respeto.',
-    color: '#0ea5e9',
+    color: 'var(--wl-on-panel-teal, #0ea5e9)',
     audioKey: '여기 있습니다',
     breakdown: [
       { kr: '여기', es: 'aquí' },
@@ -235,7 +235,7 @@ const TIMELINE: TimelineItem[] = [
     rom: 'gam-sa-ham-ni-da',
     title: 'Gracias — con reverencia de 15°',
     body: 'La forma más formal de agradecer. Siempre acompañada de una reverencia mínima. Recibir algo con dos manos + decir 감사합니다 + ligera reverencia = nivel máximo de cortesía coreana en un intercambio cotidiano.',
-    color: '#a855f7',
+    color: 'var(--wl-on-panel-purple, #a855f7)',
     audioKey: '감사합니다',
     breakdown: [
       { kr: '감사', es: 'gratitud / agradecimiento' },
@@ -253,7 +253,7 @@ const TIMELINE: TimelineItem[] = [
     rom: 'yeo-gi-yo / jeo-gi-yo',
     title: 'Llama al mesero — no es grosero',
     body: 'En Corea, llamar al personal con 여기요 o 저기요 es perfectamente normal y correcto. No hay campanas en todos los lugares. Alza la mano, di claramente, y el personal responde.',
-    color: '#d97706',
+    color: 'var(--wl-on-panel-warn, #d97706)',
     examples: [
       { kr: '여기요!', es: '¡Oiga! / ¡Aquí! (personal cercano)' },
       { kr: '저기요!', es: '¡Oiga! / ¡Disculpe! (personal lejano)', lit: '저기 = allá' },
@@ -299,7 +299,7 @@ const TIMELINE: TimelineItem[] = [
     rom: 'jeo-neun oe-gug-i-ni-e-yo',
     title: 'Soy extranjero/a — la frase salvavidas',
     body: 'Al decirla, toda la tensión social desaparece. Los coreanos simplifican su lenguaje automáticamente, hablan más despacio, o cambian al inglés. Es el código universal que resetea el radar social a tu favor.',
-    color: '#64748b',
+    color: 'var(--wl-on-panel-soft, #64748b)',
     recycled: 'STEP 001 (저는)',
     breakdown: [
       { kr: '저는', es: 'yo (formal) — del STEP 001 ✓' },
@@ -313,7 +313,7 @@ const TIMELINE: TimelineItem[] = [
     kr: '사회적 언어',
     title: 'El idioma que lee la sociedad',
     body: 'El coreano no es solo vocabulario y gramática — es un sistema social codificado en sílabas. Cada sufijo lleva información sobre jerarquía. Cada partícula define la relación. Aprender coreano es aprender a leer ese radar invisible que los coreanos usan en cada conversación.',
-    color: '#6c63ff',
+    color: 'var(--wl-on-panel-link, #6c63ff)',
     tip: 'Ya tienes la primera señal activa. El STEP 004 pondrá todo esto en movimiento.',
   },
 ];
@@ -389,7 +389,7 @@ function TimelineCard({ item, isLatest, onAudio }: {
           <span style={{
             marginLeft: 'auto', fontSize: 9, fontWeight: 700,
             background: 'rgba(45,155,78,0.12)', border: '1px solid rgba(45,155,78,0.3)',
-            color: '#2d9b4e', borderRadius: 100, padding: '2px 8px',
+            color: 'var(--wl-on-panel-ok, #2d9b4e)', borderRadius: 100, padding: '2px 8px',
           }}>
             ♻ reciclado · {item.recycled}
           </span>
@@ -668,7 +668,7 @@ export default function Activation003({ onComplete }: Props) {
   if (phase === 'intro') {
     return (
       <section style={{ maxWidth: 560, margin: '0 auto', padding: '2.5rem 1rem' }}>
-        <p style={{ margin: '0 0 6px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6c63ff', fontWeight: 700 }}>
+        <p style={{ margin: '0 0 6px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700 }}>
           ETAPA 01 DE 11 · Activación
         </p>
         <h2 style={{ margin: '0 0 12px', fontSize: 24, fontWeight: 800, color: 'var(--ink)', lineHeight: 1.2 }}>
@@ -678,7 +678,7 @@ export default function Activation003({ onComplete }: Props) {
           En Corea, la cortesía no es opcional — está integrada en cada frase. Escucha este podcast desde una cafetería en Seúl y activa tu radar social desde la primera sílaba.
         </p>
         <div style={{ background: 'rgba(108,99,255,0.05)', border: '1px solid rgba(108,99,255,0.18)', borderRadius: 12, padding: '16px 20px', marginBottom: 24 }}>
-          <p style={{ margin: '0 0 10px', fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#6c63ff' }}>
+          <p style={{ margin: '0 0 10px', fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--wl-on-panel-link, #6c63ff)' }}>
             Cómo funciona
           </p>
           <ol style={{ margin: 0, paddingLeft: 18, display: 'flex', flexDirection: 'column', gap: 8 }}>
@@ -742,7 +742,7 @@ export default function Activation003({ onComplete }: Props) {
                   }} />
                 ))}
               </div>
-              <span style={{ fontFamily: 'var(--mono)', fontSize: 9, color: '#6c63ff', fontWeight: 700, letterSpacing: '0.12em' }}>
+              <span style={{ fontFamily: 'var(--mono)', fontSize: 9, color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700, letterSpacing: '0.12em' }}>
                 PODCAST · STEP 003
               </span>
             </div>
@@ -858,7 +858,7 @@ export default function Activation003({ onComplete }: Props) {
   if (phase === 'questions') {
     return (
       <section style={{ maxWidth: 560, margin: '0 auto', padding: '1.5rem 1rem' }}>
-        <p style={{ margin: '0 0 6px', fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#6c63ff' }}>
+        <p style={{ margin: '0 0 6px', fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--wl-on-panel-link, #6c63ff)' }}>
           Comprensión global
         </p>
         <p style={{ margin: '0 0 20px', fontSize: 13, color: 'var(--muted)', lineHeight: 1.6 }}>

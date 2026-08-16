@@ -10,7 +10,7 @@ const PRIMARY_TASKS = [
     time: '20 minutes · 150+ words',
     description: 'Turn graphs, tables, maps and process diagrams into a selective, accurate report. Practise the response structure and every major visual family.',
     href: '/practica/ielts/academic/writing/task1',
-    accent: '#176b87',
+    accent: 'var(--wl-on-panel-teal, #176b87)',
   },
   {
     id: 'task2',
@@ -19,7 +19,7 @@ const PRIMARY_TASKS = [
     time: '40 minutes · 250+ words',
     description: 'Build a clear position, develop relevant ideas and answer opinion, discussion, problem-solution, advantages-disadvantages and direct-question prompts.',
     href: '/practica/ielts/academic/writing/task2',
-    accent: '#b42332',
+    accent: 'var(--wl-on-panel-alert, #b42332)',
   },
 ];
 
@@ -101,7 +101,7 @@ export default function IELTSWritingPage() {
           <Link
             href="/practica/ielts/academic/writing/rubrica"
             className={styles.rubricCard}
-            style={{ '--card-accent': '#102e6f' } as CSSProperties}
+            style={{ '--card-accent': 'var(--wl-on-panel, #102e6f)' } as CSSProperties}
           >
             <div>
               <h3>Writing review rubric</h3>

@@ -31,7 +31,7 @@ function Visual1() {
         <p style={{ margin: '0 0 6px', fontSize: 11, color: 'var(--muted)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em' }}>Coreano</p>
         <div style={{ display: 'flex', gap: 6 }}>
           {['가', '사'].map((ch, i) => (
-            <span key={i} style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 44, height: 44, border: '2px solid rgba(108,99,255,0.35)', borderRadius: 8, fontSize: 26, fontWeight: 700, color: '#6c63ff', fontFamily: "'Noto Sans KR', sans-serif", background: 'rgba(108,99,255,0.05)' }}>{ch}</span>
+            <span key={i} style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 44, height: 44, border: '2px solid rgba(108,99,255,0.35)', borderRadius: 8, fontSize: 26, fontWeight: 700, color: 'var(--wl-on-panel-link, #6c63ff)', fontFamily: "'Noto Sans KR', sans-serif", background: 'rgba(108,99,255,0.05)' }}>{ch}</span>
           ))}
         </div>
         <p style={{ margin: '4px 0 0', fontSize: 11, color: 'var(--muted)' }}>bloques cuadrados</p>
@@ -100,9 +100,9 @@ function Visual4() {
     <div style={{ display: 'flex', flexDirection: 'column', gap: 6, margin: '12px 0' }}>
       {items.map(({ combo, note }) => (
         <div key={combo} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '8px 12px', borderRadius: 8, background: 'rgba(45,155,78,0.04)', border: '1px solid rgba(45,155,78,0.15)' }}>
-          <span style={{ fontSize: 17, fontWeight: 700, color: '#2d9b4e', fontFamily: "'Noto Sans KR', sans-serif" }}>{combo}</span>
+          <span style={{ fontSize: 17, fontWeight: 700, color: 'var(--wl-on-panel-ok, #2d9b4e)', fontFamily: "'Noto Sans KR', sans-serif" }}>{combo}</span>
           <span style={{ fontSize: 12, color: 'var(--ink)', lineHeight: 1.5 }}>{note}</span>
-          <span style={{ marginLeft: 'auto', fontSize: 11, fontWeight: 700, color: '#2d9b4e' }}>OK</span>
+          <span style={{ marginLeft: 'auto', fontSize: 11, fontWeight: 700, color: 'var(--wl-on-panel-ok, #2d9b4e)' }}>OK</span>
         </div>
       ))}
     </div>
@@ -115,8 +115,8 @@ function Visual5() {
       <div style={{ textAlign: 'center' }}>
         <p style={{ margin: '0 0 6px', fontSize: 11, color: 'var(--muted)', fontWeight: 600 }}>CV — sin batchim</p>
         <div style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', border: '2px solid rgba(108,99,255,0.3)', borderRadius: 8, padding: '6px 14px', background: 'rgba(108,99,255,0.04)' }}>
-          <div style={{ display: 'flex', gap: 2, fontSize: 13, color: '#0ea5e9', fontFamily: "'Noto Sans KR', sans-serif" }}>
-            <span>ㄱ</span><span style={{ color: '#6c63ff' }}>ㅏ</span>
+          <div style={{ display: 'flex', gap: 2, fontSize: 13, color: 'var(--wl-on-panel-teal, #0ea5e9)', fontFamily: "'Noto Sans KR', sans-serif" }}>
+            <span>ㄱ</span><span style={{ color: 'var(--wl-on-panel-link, #6c63ff)' }}>ㅏ</span>
           </div>
           <span style={{ fontSize: 28, fontWeight: 800, color: 'var(--ink)', fontFamily: "'Noto Sans KR', sans-serif" }}>가</span>
         </div>
@@ -126,10 +126,10 @@ function Visual5() {
       <div style={{ textAlign: 'center' }}>
         <p style={{ margin: '0 0 6px', fontSize: 11, color: 'var(--muted)', fontWeight: 600 }}>CVC — con batchim</p>
         <div style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', border: '2px solid rgba(239,68,68,0.3)', borderRadius: 8, padding: '6px 14px', background: 'rgba(239,68,68,0.04)' }}>
-          <div style={{ display: 'flex', gap: 2, fontSize: 13, color: '#0ea5e9', fontFamily: "'Noto Sans KR', sans-serif" }}>
-            <span>ㄱ</span><span style={{ color: '#6c63ff' }}>ㅏ</span>
+          <div style={{ display: 'flex', gap: 2, fontSize: 13, color: 'var(--wl-on-panel-teal, #0ea5e9)', fontFamily: "'Noto Sans KR', sans-serif" }}>
+            <span>ㄱ</span><span style={{ color: 'var(--wl-on-panel-link, #6c63ff)' }}>ㅏ</span>
           </div>
-          <span style={{ fontSize: 13, color: '#ef4444', fontFamily: "'Noto Sans KR', sans-serif" }}>ㄱ</span>
+          <span style={{ fontSize: 13, color: 'var(--wl-on-panel-alert, #ef4444)', fontFamily: "'Noto Sans KR', sans-serif" }}>ㄱ</span>
           <span style={{ fontSize: 28, fontWeight: 800, color: 'var(--ink)', fontFamily: "'Noto Sans KR', sans-serif" }}>각</span>
         </div>
         <p style={{ margin: '4px 0 0', fontSize: 10, color: 'var(--muted)' }}>ㄱ+ㅏ+ㄱ (abajo)</p>
@@ -137,7 +137,7 @@ function Visual5() {
       <div style={{ width: '100%', display: 'flex', gap: 10, justifyContent: 'center', marginTop: 4 }}>
         {[['글', 'ㄱ+ㅡ+ㄹ'], ['늘', 'ㄴ+ㅡ+ㄹ'], ['금', 'ㄱ+ㅡ+ㅁ']].map(([ch, parts]) => (
           <div key={ch} style={{ textAlign: 'center', padding: '6px 10px', borderRadius: 8, background: 'var(--bg-2)', border: '1px solid var(--line-soft)' }}>
-            <span style={{ display: 'block', fontSize: 22, fontWeight: 700, color: '#6c63ff', fontFamily: "'Noto Sans KR', sans-serif" }}>{ch}</span>
+            <span style={{ display: 'block', fontSize: 22, fontWeight: 700, color: 'var(--wl-on-panel-link, #6c63ff)', fontFamily: "'Noto Sans KR', sans-serif" }}>{ch}</span>
             <span style={{ fontSize: 10, color: 'var(--muted)' }}>{parts}</span>
           </div>
         ))}

@@ -8,7 +8,7 @@ const SKILLS = [
   {
     icon: '🎩',
     title: '-습니다 formal — nivel de servicio profesional',
-    color: '#6c63ff',
+    color: 'var(--wl-on-panel-link, #6c63ff)',
     items: [
       '-습니다 = formal / profesional',
       '-어요 = casual / cotidiano',
@@ -19,7 +19,7 @@ const SKILLS = [
   {
     icon: '🍽',
     title: '맛있게 드세요 — protocolo de mesa',
-    color: '#8b5cf6',
+    color: 'var(--wl-on-panel-link, #8b5cf6)',
     items: [
       'Se dice ANTES de comer',
       '드세요 = honorífico de 먹어요',
@@ -164,7 +164,7 @@ export default function Completion005({ onComplete }: Props) {
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'center', animation: 'cl5-in 0.4s 0.1s ease both' }}>
           {[
             { label: `${elapsed} min`, sub: 'invertidos',   icon: '⏱️', color: '#06b6d4' },
-            { label: '-습니다',         sub: 'nivel formal',  icon: '🎩', color: '#6c63ff' },
+            { label: '-습니다',         sub: 'nivel formal',  icon: '🎩', color: 'var(--wl-on-panel-link, #6c63ff)' },
             { label: '칠천 원',         sub: 'sino-coreano', icon: '🔢', color: '#f59e0b' },
             { label: 'Steps 001–005',  sub: 'integrados',   icon: '🔄', color: '#22c55e' },
           ].map(({ label, sub, icon, color }) => (
@@ -189,7 +189,7 @@ export default function Completion005({ onComplete }: Props) {
           ].map((badge, i) => (
             <span key={i} style={{
               fontSize: 11, fontWeight: 700, padding: '5px 13px', borderRadius: 100,
-              background: 'rgba(34,197,94,0.1)', border: '1px solid rgba(34,197,94,0.3)', color: '#16a34a',
+              background: 'rgba(34,197,94,0.1)', border: '1px solid rgba(34,197,94,0.3)', color: 'var(--wl-on-panel-ok, #16a34a)',
             }}>
               ✓ {badge}
             </span>
@@ -249,7 +249,7 @@ export default function Completion005({ onComplete }: Props) {
       {/* 9 — Step006 preview */}
       {visible >= 9 && (
         <div style={{ background: 'rgba(108,99,255,0.06)', border: '1px solid rgba(108,99,255,0.22)', borderRadius: 16, padding: '16px', animation: 'cl5-in 0.4s ease both' }}>
-          <p style={{ margin: '0 0 3px', fontSize: 10, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.09em', color: '#6c63ff' }}>Próximamente</p>
+          <p style={{ margin: '0 0 3px', fontSize: 10, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.09em', color: 'var(--wl-on-panel-link, #6c63ff)' }}>Próximamente</p>
           <p style={{ margin: '0 0 4px', fontSize: 16, fontWeight: 800, color: 'var(--foreground)' }}>Step 006 — La universidad</p>
           <p style={{ margin: '0 0 10px', fontSize: 12, color: 'var(--muted)' }}>David llega a la universidad. Nuevas situaciones: preguntar por aulas, horarios y compañeros.</p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>

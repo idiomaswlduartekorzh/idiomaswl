@@ -136,13 +136,13 @@ export default function AdminSessionClient({ session: init, set, initialParticip
             )}
             {status === 'locked' && (
               <button onClick={() => act('reveal')} disabled={loading}
-                style={{ padding:'8px 20px', borderRadius:8, border:'none', background:'var(--ink)', color:'var(--bg)', fontSize:13, fontWeight:700, cursor:'pointer', opacity:loading?0.5:1 }}>
+                style={{ padding:'8px 20px', borderRadius:8, border:'none', background:'var(--ink-bg)', color:'var(--bg)', fontSize:13, fontWeight:700, cursor:'pointer', opacity:loading?0.5:1 }}>
                 👁 Revelar respuesta
               </button>
             )}
             {status === 'reveal' && !isLast && (
               <button onClick={() => act('question',qIndex+1)} disabled={loading}
-                style={{ padding:'8px 20px', borderRadius:8, border:'none', background:'var(--ink)', color:'var(--bg)', fontSize:13, fontWeight:700, cursor:'pointer', opacity:loading?0.5:1 }}>
+                style={{ padding:'8px 20px', borderRadius:8, border:'none', background:'var(--ink-bg)', color:'var(--bg)', fontSize:13, fontWeight:700, cursor:'pointer', opacity:loading?0.5:1 }}>
                 → Siguiente pregunta
               </button>
             )}

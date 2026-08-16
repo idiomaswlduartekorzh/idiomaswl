@@ -14,7 +14,7 @@ interface Sentence {
 const SENTENCES: Sentence[] = [
   {
     kr: '이거 뭐예요?', audio: '이거 뭐예요?', es: '¿Qué es esto?',
-    highlight: '이거', color: '#6c63ff',
+    highlight: '이거', color: 'var(--wl-on-panel-link, #6c63ff)',
     question: 'El cliente usa 이거. ¿Qué crees que significa?',
     options: ['algo cercano al hablante', 'algo lejano a todos', 'cualquier objeto sin especificar'],
     correct: 'algo cercano al hablante',
@@ -22,7 +22,7 @@ const SENTENCES: Sentence[] = [
   },
   {
     kr: '그거는 호떡이에요', audio: '호떡', es: 'Eso es hodduk',
-    highlight: '그거', color: '#8b5cf6',
+    highlight: '그거', color: 'var(--wl-on-panel-link, #8b5cf6)',
     question: 'David usa 그거 para el MISMO objeto. ¿Por qué cambia?',
     options: ['Porque para David está más lejos', 'Porque 그거 es más educado', 'Por error — deberían ser iguales'],
     correct: 'Porque para David está más lejos',
@@ -112,7 +112,7 @@ export default function ContextualInput004({ onComplete }: Props) {
       </div>
 
       {/* Sentence card */}
-      <div style={{ background: 'var(--bg-2,#f5f5f7)', borderRadius: 14, padding: '24px', marginBottom: 16, textAlign: 'center' }}>
+      <div style={{ background: 'var(--bg-2,var(--wl-panel-raised, #f5f5f7))', borderRadius: 14, padding: '24px', marginBottom: 16, textAlign: 'center' }}>
         <button onClick={() => playAudio(s.audio)} style={{ background: 'none', border: 'none', cursor: 'pointer', display: 'block', margin: '0 auto 8px' }}>
           <p style={{ margin: 0, fontSize: 32, fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 700 }}>
             {highlightLine(s.kr, s.highlight, s.color)}
