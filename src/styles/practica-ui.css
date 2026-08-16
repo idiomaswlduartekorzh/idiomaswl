@@ -56,6 +56,9 @@
   --wlp-accent-habla: #a84f08;
   --wlp-accent-vocabulario: #b42332;
   --wlp-accent-escucha: #176b87;
+  /* Historias no es una destreza: es un formato que cruza lectura y escucha, y por eso
+     tiene acento propio en vez de tomar prestado el de alguna de las dos. */
+  --wlp-accent-historias: #9d2d6b;
 
   /* Roles de corrección. Verde y rojo aquí significan «acertaste» y «no»,
      no «escritura» y «vocabulario», aunque compartan matiz. */
@@ -78,6 +81,7 @@
   --wlp-accent-habla: #f2b65a;
   --wlp-accent-vocabulario: #ff8f99;
   --wlp-accent-escucha: #6fd0e8;
+  --wlp-accent-historias: #f19ac6;
 
   --wlp-ok: #45c88a;
   --wlp-alert: #ff8f99;
