@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 import { ArrowRight, Clock3, Headphones, ShieldCheck } from 'lucide-react';
+import task1Transcript from '@/data/practica/podcasts/mastering-academic-writing-task-1';
+import PodcastTranscript from '@/components/practica/PodcastTranscript';
 import Task1ChartTypeGuide from './Task1ChartTypeGuide';
 import styles from './Task1Hub.module.css';
 
@@ -238,6 +240,16 @@ export default function Task1HubPage() {
                 </div>
               </aside>
             </div>
+
+            <PodcastTranscript
+              paragraphs={task1Transcript}
+              tone={{
+                accent: 'var(--task-red)',
+                ink: 'var(--task-ink)',
+                muted: 'var(--task-muted)',
+                line: 'var(--task-line)',
+              }}
+            />
           </div>
         </section>
 
