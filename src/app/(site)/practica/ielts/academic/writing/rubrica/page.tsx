@@ -180,7 +180,7 @@ export default function Page() {
               marginBottom: '2rem',
             }}
           >
-            <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: 'var(--wl-panel-raised, #fff)' }}>
+            <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: 'var(--wl-surface-card)' }}>
               <h2 id="official-vs-welearn" style={{ marginTop: 0, fontSize: '1.05rem' }}>
                 Formato oficial vs estrategia WeLearn
               </h2>
@@ -250,7 +250,7 @@ export default function Page() {
                 ['5. Control', '¿Puedo leer el texto sin perder el hilo por errores gramaticales?'],
                 ['6. Tiempo', '¿Task 1 quedó cerca de 20 minutos y Task 2 cerca de 40?'],
               ].map(([title, body]) => (
-                <article key={title} style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: 'var(--wl-panel-raised, #fff)' }}>
+                <article key={title} style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: 'var(--wl-surface-card)' }}>
                   <h3 style={{ marginTop: 0, fontSize: '1rem' }}>{title}</h3>
                   <p style={{ color: 'var(--muted)', lineHeight: 1.6, marginBottom: 0 }}>{body}</p>
                 </article>
@@ -265,7 +265,7 @@ export default function Page() {
             </p>
             <div style={{ display: 'grid', gap: '1rem' }}>
               {diagnostics.map((item, index) => (
-                <article key={item.prompt} style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: 'var(--wl-panel-raised, #fff)' }}>
+                <article key={item.prompt} style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: 'var(--wl-surface-card)' }}>
                   <p style={{ marginTop: 0, fontWeight: 800 }}>Caso {index + 1}</p>
                   <p style={{ lineHeight: 1.65 }}>{item.prompt}</p>
                   <p style={{ marginBottom: '0.35rem' }}>
@@ -295,7 +295,7 @@ export default function Page() {
                     border: '1px solid var(--line-soft)',
                     borderRadius: 8,
                     padding: '1rem',
-                    background: 'var(--wl-panel-raised, #fff)',
+                    background: 'var(--wl-surface-card)',
                     textDecoration: 'none',
                     color: 'var(--ink)',
                     fontWeight: 800,

@@ -2586,7 +2586,7 @@ button {
   flex-shrink: 0;
 }
 .prac-nav__dot--answered { background: var(--ink-bg); }
-.prac-nav__dot--flagged { background: var(--wl-panel-raised, #fff); border: 1.5px solid var(--line-soft); box-shadow: 0 0 0 2px #d4a017; }
+.prac-nav__dot--flagged { background: var(--wl-surface-card); border: 1.5px solid var(--line-soft); box-shadow: 0 0 0 2px #d4a017; }
 .prac-nav__dot--unanswered { background: var(--bg-2); border: 1px solid var(--line-soft); }
 
 .prac-sidebar__submit {
@@ -2649,7 +2649,7 @@ button {
 }
 
 .prac-results__sections {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border-radius: 14px;
   border: 1px solid var(--line-soft);
   padding: 1.5rem;
@@ -2789,7 +2789,7 @@ button {
   border-radius: 100px;
 }
 .prac-review-item__badge--ok { background: var(--wl-panel-tint-ok, #d1fae5); color: var(--wl-on-panel-ok, #065f46); }
-.prac-review-item__badge--err { background: var(--wl-panel-tint-alert, #fee2e2); color: var(--wl-on-panel-alert, #991b1b); }
+.prac-review-item__badge--err { background: var(--wl-tint-alert); color: var(--wl-on-panel-alert, #991b1b); }
 .prac-review-item__stimulus {
   font-family: var(--mono);
   font-size: 0.75rem;
@@ -2829,7 +2829,7 @@ button {
   border-color: var(--wl-panel-line, #6ee7b7);
 }
 .prac-review-opt--wrong {
-  background: var(--wl-panel-tint-alert, #fee2e2);
+  background: var(--wl-tint-alert);
   color: var(--wl-on-panel-alert, #991b1b);
   border-color: #fca5a5;
 }
@@ -2861,7 +2861,7 @@ button {
 }
 
 .prac-lead-gate__card {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border-radius: 20px;
   padding: 2.5rem 2rem;
   max-width: 460px;
@@ -2961,7 +2961,7 @@ button {
 
 /* ── ICFES notice/sign stimulus ──────────────────────────────────────────── */
 .prac-notice-box {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid #444;
   border-radius: 4px;
   padding: 1rem 1.3rem;
@@ -3029,8 +3029,8 @@ button {
 
 /* ── ICFES shared passage (Parts 4–7) ────────────────────────────────────── */
 .prac-passage-box {
-  background: var(--wl-panel-raised, #fafafa);
-  border: 1px solid var(--wl-panel-line, #dde1ea);
+  background: var(--wl-surface-card);
+  border: 1px solid var(--wl-rule);
   border-radius: 4px;
   padding: 1rem 1.4rem;
   margin-bottom: 1.4rem;
@@ -3157,7 +3157,7 @@ button {
   user-select: none;
 }
 .mg__row:last-child { border-bottom: none; }
-.mg__row:hover:not(.mg__row--act) { background: var(--wl-panel-raised, #fafafa); }
+.mg__row:hover:not(.mg__row--act) { background: var(--wl-surface-card); }
 .mg__row--act  { background: var(--wl-panel-raised, #fffbf0); }
 .mg__row--done .mg__row-n { color: var(--wl-on-panel-ok, #15803d); }
 
@@ -3502,7 +3502,7 @@ button {
   min-width: 0;
 }
 .dg__scene-bubble {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1.5px solid #ccc;
   border-radius: 10px 10px 10px 3px;
   padding: 0.55rem 0.85rem;
@@ -3520,7 +3520,7 @@ button {
   width: 100%;
 }
 .dg__scene-exopt {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1.5px solid #bbb;
   border-radius: 5px;
   padding: 0.28rem 0.65rem;
@@ -5148,8 +5148,8 @@ button {
 }
 .lang-opt:hover { border-color: var(--accent); }
 .lang-opt--selected { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, var(--bg)); }
-.lang-opt--correct { border-color: #16a34a !important; background: var(--wl-panel-tint-ok, #dcfce7) !important; }
-.lang-opt--wrong { border-color: #dc2626 !important; background: var(--wl-panel-tint-alert, #fee2e2) !important; }
+.lang-opt--correct { border-color: #16a34a !important; background: var(--wl-tint-ok) !important; }
+.lang-opt--wrong { border-color: #dc2626 !important; background: var(--wl-tint-alert) !important; }
 .lang-opt__letter {
   font-size: 0.78rem;
   font-weight: 800;
@@ -5508,8 +5508,8 @@ button {
   height: 1px;
   background: var(--border);
 }
-.auth-error { background: var(--wl-panel-tint-alert, #fee2e2); color: var(--wl-on-panel-alert, #dc2626); border-radius: 8px; padding: 0.65rem 0.9rem; font-size: 0.88rem; margin-bottom: 1rem; }
-.auth-success { background: var(--wl-panel-tint-ok, #dcfce7); color: var(--wl-on-panel-ok, #16a34a); border-radius: 8px; padding: 0.65rem 0.9rem; font-size: 0.88rem; margin-bottom: 1rem; }
+.auth-error { background: var(--wl-tint-alert); color: var(--wl-on-panel-alert, #dc2626); border-radius: 8px; padding: 0.65rem 0.9rem; font-size: 0.88rem; margin-bottom: 1rem; }
+.auth-success { background: var(--wl-tint-ok); color: var(--wl-on-panel-ok, #16a34a); border-radius: 8px; padding: 0.65rem 0.9rem; font-size: 0.88rem; margin-bottom: 1rem; }
 .auth-form { display: flex; flex-direction: column; gap: 1rem; }
 .auth-field { display: flex; flex-direction: column; gap: 0.35rem; }
 .auth-label { font-size: 0.85rem; font-weight: 600; color: var(--fg); }
@@ -7449,7 +7449,7 @@ body {
 .wt1-progress__step { flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px; padding: 0.6rem; font-size: 12px; font-weight: 500; color: var(--muted); background: var(--bg-1); transition: all 0.2s; border-right: 1px solid var(--line-soft); }
 .wt1-progress__step:last-child { border-right: none; }
 .wt1-progress__step--active { background: #0f3d8c; color: #fff; }
-.wt1-progress__step--done { background: var(--wl-panel-tint-ok, #dcfce7); color: var(--wl-on-panel-ok, #166534); }
+.wt1-progress__step--done { background: var(--wl-tint-ok); color: var(--wl-on-panel-ok, #166534); }
 .wt1-progress__num { width: 20px; height: 20px; border-radius: 50%; background: currentColor; color: inherit; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; opacity: 0.3; }
 .wt1-progress__step--active .wt1-progress__num { background: rgba(255,255,255,0.3); opacity: 1; color: #fff; }
 .wt1-progress__step--done .wt1-progress__num { opacity: 1; background: #166534; color: #fff; }
@@ -7475,10 +7475,10 @@ body {
 /* Sentence cards (bank) */
 .wt1-card { display: flex; gap: 10px; align-items: flex-start; padding: 0.75rem; border: 2px solid var(--line-soft); border-radius: 10px; background: var(--bg-0); cursor: pointer; transition: all 0.15s; margin-bottom: 0.5rem; }
 .wt1-card:hover { border-color: #0f3d8c; background: var(--wl-panel-raised, #eff6ff); }
-.wt1-card--selected { border-color: #0f3d8c; background: var(--wl-panel-tint-info, #dbeafe); box-shadow: 0 0 0 3px rgba(15,61,140,0.15); }
+.wt1-card--selected { border-color: #0f3d8c; background: var(--wl-tint-info); box-shadow: 0 0 0 3px rgba(15,61,140,0.15); }
 .wt1-card__id { flex-shrink: 0; width: 24px; height: 24px; border-radius: 6px; background: #0f3d8c; color: #fff; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
 .wt1-card__text { font-size: 13.5px; color: var(--ink); margin: 0; line-height: 1.5; }
-.wt1-bank__empty { font-size: 13px; color: var(--wl-on-panel-ok, #166534); font-weight: 600; padding: 0.75rem; background: var(--wl-panel-tint-ok, #dcfce7); border-radius: 10px; margin: 0; }
+.wt1-bank__empty { font-size: 13px; color: var(--wl-on-panel-ok, #166534); font-weight: 600; padding: 0.75rem; background: var(--wl-tint-ok); border-radius: 10px; margin: 0; }
 
 /* Slots */
 .wt1-slot { display: flex; align-items: flex-start; gap: 10px; padding: 0.6rem 0.75rem; border: 2px dashed var(--line-soft); border-radius: 10px; margin-bottom: 0.4rem; cursor: pointer; min-height: 44px; transition: all 0.15s; }
@@ -7489,7 +7489,7 @@ body {
 .wt1-slot__num { flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%; background: var(--bg-2); color: var(--muted); font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
 .wt1-slot--filled .wt1-slot__num { background: #0f3d8c; color: #fff; }
 .wt1-slot__content { flex: 1; display: flex; align-items: flex-start; gap: 6px; }
-.wt1-slot__badge { flex-shrink: 0; font-size: 10px; font-weight: 700; color: var(--wl-on-panel-link, #0f3d8c); background: var(--wl-panel-tint-info, #dbeafe); border-radius: 4px; padding: 1px 5px; }
+.wt1-slot__badge { flex-shrink: 0; font-size: 10px; font-weight: 700; color: var(--wl-on-panel-link, #0f3d8c); background: var(--wl-tint-info); border-radius: 4px; padding: 1px 5px; }
 .wt1-slot__text { font-size: 12.5px; color: var(--ink); margin: 0; line-height: 1.4; flex: 1; }
 .wt1-slot__remove { flex-shrink: 0; color: var(--muted); font-size: 16px; line-height: 1; opacity: 0.5; }
 .wt1-slot:hover .wt1-slot__remove { opacity: 1; color: var(--wl-on-panel-alert, #dc2626); }
@@ -7526,11 +7526,11 @@ body {
 .wt1-scorebox { flex: 1; min-width: 100px; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 1rem; background: var(--bg-1); border: 1px solid var(--line-soft); border-radius: 14px; text-align: center; }
 .wt1-scorebox__n { font-size: 2rem; font-weight: 800; color: var(--ink); font-family: var(--mono); }
 .wt1-scorebox__l { font-size: 11px; color: var(--muted); font-weight: 500; }
-.wt1-scorebox--good { background: var(--wl-panel-tint-ok, #dcfce7); border-color: var(--wl-panel-line, #86efac); }
+.wt1-scorebox--good { background: var(--wl-tint-ok); border-color: var(--wl-panel-line, #86efac); }
 .wt1-scorebox--good .wt1-scorebox__n { color: var(--wl-on-panel-ok, #166534); }
 .wt1-scorebox--ok { background: var(--wl-panel-tint-warn, #fef9c3); border-color: var(--wl-panel-line, #fde047); }
 .wt1-scorebox--ok .wt1-scorebox__n { color: var(--wl-on-panel-warn, #713f12); }
-.wt1-scorebox--low { background: var(--wl-panel-tint-alert, #fee2e2); border-color: #fca5a5; }
+.wt1-scorebox--low { background: var(--wl-tint-alert); border-color: #fca5a5; }
 .wt1-scorebox--low .wt1-scorebox__n { color: var(--wl-on-panel-alert, #991b1b); }
 .wt1-scorebox--band .wt1-scorebox__l { font-weight: 700; font-size: 13px; }
 
@@ -8266,22 +8266,65 @@ body {
 :root[data-wl-surface="editorial"][data-theme="dark"] .prac-lead-gate__card { background: var(--wl-surface); }
 
 /* ===========================================================================
-   LEGACY PANEL BRIDGE
+   STRUCTURAL COLOUR TOKENS
+
+   These carry no brand: they name a position in the hierarchy — the card above
+   the page, the rule between rows, the ink on top. One name, one value per
+   theme, written once. Anything painted with these needs no bridge and no
+   fallback, because the token itself knows both answers.
+
+   Everything the practice pages painted with a solid colour within ΔE 2 of
+   these (below what the eye separates) now points here instead of carrying its
+   own literal. What stayed on the bridge below did so because it is a
+   genuinely different colour, not a duplicate.
+   ========================================================================== */
+:root {
+  --wl-surface-card: #ffffff;
+  --wl-rule: #dbe3ee;
+  --wl-ink: #1a1a2e;
+  --wl-ink-soft: #6c757d;
+  --wl-tint-ok: #dcfce7;
+  --wl-tint-alert: #fee2e2;
+  --wl-tint-info: #dbeafe;
+  --wl-tint-warn: #fff3c4;
+}
+
+:root[data-wl-surface="editorial"][data-theme="dark"] {
+  --wl-surface-card: var(--wl-surface);
+  --wl-rule: var(--wl-border);
+  --wl-ink: var(--wl-text);
+  --wl-ink-soft: var(--wl-text-soft);
+  --wl-tint-ok: #142a20;
+  --wl-tint-alert: #2c191d;
+  --wl-tint-info: #12242b;
+  --wl-tint-warn: #2a2113;
+}
+
+/* ===========================================================================
+   LEGACY PANEL BRIDGE  —  apaño con fecha de caducidad
 
    The IELTS/ICFES/TOEFL practice modules predate the token system: they paint
    panels with literal light hexes while their text comes from tokens (or the
    reverse). Dark mode flips one side only, so the two collide — white text on
    a white panel, navy text on a near-black one.
 
-   Rather than restyle every page, those modules now wrap each literal in
+   Rather than restyle every page, those modules wrap each literal in
    `var(--wl-panel-*, <original hex>)`. The roles below exist ONLY inside the
    dark scope, so light mode falls back to the original hex and renders exactly
-   as before. Retire a role by migrating its module to the semantic tokens.
+   as before.
+
+   What is left here is what a script cannot decide: colours that look alike in
+   dark but are different brands in light. #6c63ff is the Korean lesson's
+   purple and #0f3d8c is the IELTS navy — both read as one link blue at night,
+   and merging them would repaint two products in daylight. Retiring those is a
+   design call, made page by page: give the page its own named accent, point it
+   at a structural token above, and delete the role once nobody asks for it.
+
+   Do not build new design on these roles. `npm run check:color-tokens` keeps
+   new hardcoded colours out; it does not stop the bridge from spreading.
    ========================================================================== */
 :root[data-wl-surface="editorial"][data-theme="dark"] {
   /* Surfaces */
-  --wl-panel-canvas: var(--wl-canvas);
-  --wl-panel-card: var(--wl-surface);
   --wl-panel-raised: var(--wl-surface-raised);
   --wl-panel-line: var(--wl-border);
   /* The navy these modules use for text is the same navy they fill their

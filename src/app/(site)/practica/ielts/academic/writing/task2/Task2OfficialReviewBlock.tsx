@@ -42,7 +42,7 @@ export default function Task2OfficialReviewBlock({
         margin: '0 0 1.5rem',
       }}
     >
-      <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: 'var(--wl-panel-raised, #fff)' }}>
+      <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: 'var(--wl-surface-card)' }}>
         <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Official format versus WeLearn strategy</h2>
         <p style={{ margin: '0 0 0.65rem', color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.86rem' }}>
           <strong style={{ color: 'var(--ink)' }}>Official format:</strong> {officialFormat}

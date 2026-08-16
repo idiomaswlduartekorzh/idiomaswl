@@ -35,14 +35,14 @@
   display: grid;
   gap: 1.5rem;
   padding: 1.5rem 0 2.25rem;
-  border-bottom: 1px solid var(--wl-panel-line, #d9deea);
+  border-bottom: 1px solid var(--wl-rule);
 }
 
 .card,
 .example,
 .faqCard,
 .sourceCard {
-  border: 1px solid var(--wl-panel-line, #d9deea);
+  border: 1px solid var(--wl-rule);
   border-radius: 6px;
   background: var(--bg);
 }
@@ -123,9 +123,9 @@
   align-items: start;
   margin-top: 0.75rem;
   padding: 0.85rem 1rem;
-  border: 1px solid var(--wl-panel-line, #d9deea);
+  border: 1px solid var(--wl-rule);
   border-radius: 6px;
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
 }
 
 .practiceScope strong {
@@ -150,7 +150,7 @@
   gap: 0.55rem;
   margin-top: 1rem;
   padding: 0.75rem;
-  border: 1px solid var(--wl-panel-line, #d9deea);
+  border: 1px solid var(--wl-rule);
   border-radius: 6px;
   background: color-mix(in srgb, var(--wl-panel-raised, #f7f8fc) 94%, transparent);
   box-shadow: 0 8px 22px rgba(16, 46, 111, 0.08);
@@ -176,9 +176,9 @@
   flex: 0 0 auto;
   min-height: 42px;
   padding: 0.65rem 0.8rem;
-  border: 1px solid var(--wl-panel-line, #d9deea);
+  border: 1px solid var(--wl-rule);
   border-radius: 6px;
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   color: var(--wl-on-panel, #102e6f);
   font-size: 0.79rem;
   font-weight: 800;

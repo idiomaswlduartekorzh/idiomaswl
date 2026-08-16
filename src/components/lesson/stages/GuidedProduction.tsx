@@ -410,7 +410,7 @@ export default function GuidedProduction({ onComplete }: Props) {
     const percent = totalItems > 0 ? ((currentItem + 1) / totalItems) * 100 : 0;
     return (
       <>
-        <p style={{ margin: '0 0 4px', fontSize: 11, color: 'var(--wl-on-panel-soft, #6c757d)', textAlign: 'right' }}>{`${currentItem + 1} de ${totalItems}`}</p>
+        <p style={{ margin: '0 0 4px', fontSize: 11, color: 'var(--wl-ink-soft)', textAlign: 'right' }}>{`${currentItem + 1} de ${totalItems}`}</p>
         <div style={{ height: 2, background: 'var(--wl-panel-raised, #e9ecef)', borderRadius: 1, marginBottom: 16 }}>
           <div style={{ width: `${percent}%`, height: '100%', background: '#6c63ff', borderRadius: 1, transition: 'width 0.2s' }} />
         </div>
@@ -421,7 +421,7 @@ export default function GuidedProduction({ onComplete }: Props) {
   function renderDragArea(promptHint?: string) {
     return (
       <>
-        {promptHint ? <p style={{ margin: '0 0 10px', fontSize: 11, color: 'var(--wl-on-panel-soft, #6c757d)', textAlign: 'center' }}>{promptHint}</p> : null}
+        {promptHint ? <p style={{ margin: '0 0 10px', fontSize: 11, color: 'var(--wl-ink-soft)', textAlign: 'center' }}>{promptHint}</p> : null}
         <div style={{ minHeight: 56, background: 'var(--wl-panel-raised, #f8f9fa)', border: '2px dashed #e9ecef', borderRadius: 10, padding: 8, display: 'flex', flexWrap: 'wrap', gap: 8, alignItems: 'center', marginBottom: 10 }}>
           {placed.length === 0 ? <span style={{ fontSize: 12, color: '#adb5bd' }}>← toca las palabras en orden</span> : null}
           {placed.map((word, index) => (
@@ -442,7 +442,7 @@ export default function GuidedProduction({ onComplete }: Props) {
               key={`${word}-bank-${index}`}
               type="button"
               onClick={() => handleAddFromBank(word)}
-              style={{ padding: '8px 14px', borderRadius: 8, border: `1px solid ${getRoleColor(word)}44`, background: 'var(--wl-panel-raised, #fff)', color: getRoleColor(word), fontFamily: "'Noto Sans KR', sans-serif", fontSize: 18, cursor: isChecked ? 'default' : 'pointer', transition: 'transform 0.1s' }}
+              style={{ padding: '8px 14px', borderRadius: 8, border: `1px solid ${getRoleColor(word)}44`, background: 'var(--wl-surface-card)', color: getRoleColor(word), fontFamily: "'Noto Sans KR', sans-serif", fontSize: 18, cursor: isChecked ? 'default' : 'pointer', transition: 'transform 0.1s' }}
               disabled={isChecked}
             >
               {word}
@@ -457,10 +457,10 @@ export default function GuidedProduction({ onComplete }: Props) {
     const message = roundMessage(totalItems, roundScore);
     const lastRound = currentRound === 4;
     return (
-      <article style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 16, padding: '2rem', textAlign: 'center', marginBottom: 16 }}>
-        <h4 style={{ margin: '0 0 4px', fontSize: 18, fontWeight: 700, color: 'var(--wl-on-panel, #1a1a2e)' }}>{`Ronda ${currentRound} completada`}</h4>
+      <article style={{ background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 16, padding: '2rem', textAlign: 'center', marginBottom: 16 }}>
+        <h4 style={{ margin: '0 0 4px', fontSize: 18, fontWeight: 700, color: 'var(--wl-ink)' }}>{`Ronda ${currentRound} completada`}</h4>
         <p style={{ margin: '0 0 8px', fontSize: 48, fontWeight: 700, color: 'var(--wl-on-panel-link, #6c63ff)' }}>{`${roundScore}/${totalItems}`}</p>
-        <p style={{ margin: '0 0 16px', fontSize: 13, color: 'var(--wl-on-panel-soft, #6c757d)' }}>{message}</p>
+        <p style={{ margin: '0 0 16px', fontSize: 13, color: 'var(--wl-ink-soft)' }}>{message}</p>
         <button
           type="button"
           onClick={() => {
@@ -485,11 +485,11 @@ export default function GuidedProduction({ onComplete }: Props) {
   function renderRoundContent() {
     if (!item) return null;
     return (
-      <article style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 14, padding: 16 }}>
+      <article style={{ background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 14, padding: 16 }}>
         {roundConfig.type === 'drag' ? (
           <>
-            <p style={{ margin: '0 0 10px', fontSize: 14, color: 'var(--wl-on-panel, #1a1a2e)', fontWeight: 600 }}>{(item as Round1Item).prompt}</p>
-            <button type="button" onClick={() => playAudio((item as Round1Item).audio, 1)} style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 100, padding: '4px 12px', fontSize: 12, color: 'var(--wl-on-panel-soft, #6c757d)', cursor: 'pointer', marginBottom: 12 }}>
+            <p style={{ margin: '0 0 10px', fontSize: 14, color: 'var(--wl-ink)', fontWeight: 600 }}>{(item as Round1Item).prompt}</p>
+            <button type="button" onClick={() => playAudio((item as Round1Item).audio, 1)} style={{ background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 100, padding: '4px 12px', fontSize: 12, color: 'var(--wl-ink-soft)', cursor: 'pointer', marginBottom: 12 }}>
               🔊 Escuchar la frase
             </button>
             {renderDragArea((item as Round1Item).hint)}
@@ -498,14 +498,14 @@ export default function GuidedProduction({ onComplete }: Props) {
 
         {roundConfig.type === 'blank' ? (
           <>
-            <p style={{ margin: '0 0 20px', fontFamily: "'Noto Sans KR', sans-serif", fontSize: 28, fontWeight: 700, textAlign: 'center', color: 'var(--wl-on-panel, #1a1a2e)' }}>
+            <p style={{ margin: '0 0 20px', fontFamily: "'Noto Sans KR', sans-serif", fontSize: 28, fontWeight: 700, textAlign: 'center', color: 'var(--wl-ink)' }}>
               {(item as Round2Item).prompt.split('____')[0]}
               <span style={{ display: 'inline-block', margin: '0 6px', padding: '4px 16px', borderRadius: 6, border: '2px dashed #e9ecef', background: 'var(--wl-panel-raised, #f1f3f5)', color: selectedAnswer ? getRoleColor(selectedAnswer) : '#adb5bd', minWidth: 92 }}>
                 {selectedAnswer || '____'}
               </span>
               {(item as Round2Item).prompt.split('____')[1]}
             </p>
-            <p style={{ margin: '0 0 14px', fontSize: 11, color: 'var(--wl-on-panel-soft, #6c757d)', textAlign: 'center' }}>{(item as Round2Item).explanation}</p>
+            <p style={{ margin: '0 0 14px', fontSize: 11, color: 'var(--wl-ink-soft)', textAlign: 'center' }}>{(item as Round2Item).explanation}</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginBottom: 12 }}>
               {roundOptions.map((option) => {
                 const selected = selectedAnswer === option;
@@ -540,12 +540,12 @@ export default function GuidedProduction({ onComplete }: Props) {
         {roundConfig.type === 'drag-register' ? (
           <>
             <img src={(item as Round3Item).img} alt={(item as Round3Item).spanish} style={{ width: '100%', height: 180, objectFit: 'cover', borderRadius: 12, marginBottom: 16 }} />
-            <p style={{ margin: '0 0 6px', fontSize: 9, color: 'var(--wl-on-panel-soft, #6c757d)', textTransform: 'uppercase', letterSpacing: '0.12em', textAlign: 'center' }}>Construye en coreano:</p>
-            <p style={{ margin: '0 0 6px', background: 'var(--wl-panel-raised, #f8f9fa)', border: '1px solid #e9ecef', borderRadius: 10, padding: '10px 14px', fontSize: 14, color: 'var(--wl-on-panel-soft, #6c757d)', textAlign: 'center' }}>{(item as Round3Item).spanish}</p>
+            <p style={{ margin: '0 0 6px', fontSize: 9, color: 'var(--wl-ink-soft)', textTransform: 'uppercase', letterSpacing: '0.12em', textAlign: 'center' }}>Construye en coreano:</p>
+            <p style={{ margin: '0 0 6px', background: 'var(--wl-panel-raised, #f8f9fa)', border: '1px solid #e9ecef', borderRadius: 10, padding: '10px 14px', fontSize: 14, color: 'var(--wl-ink-soft)', textAlign: 'center' }}>{(item as Round3Item).spanish}</p>
             <div style={{ textAlign: 'center', marginBottom: 14 }}>
               <span style={{ background: (item as Round3Item).register === 'formal' ? 'rgba(108,99,255,0.08)' : 'rgba(230,147,10,0.08)', color: (item as Round3Item).register === 'formal' ? '#6c63ff' : '#e6930a', borderRadius: 100, padding: '3px 10px', fontSize: 11, display: 'inline-block' }}>{(item as Round3Item).register_note}</span>
             </div>
-            <button type="button" onClick={() => playAudio((item as Round3Item).audio, 1)} style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 100, padding: '4px 12px', fontSize: 12, color: 'var(--wl-on-panel-soft, #6c757d)', cursor: 'pointer', marginBottom: 12 }}>
+            <button type="button" onClick={() => playAudio((item as Round3Item).audio, 1)} style={{ background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 100, padding: '4px 12px', fontSize: 12, color: 'var(--wl-ink-soft)', cursor: 'pointer', marginBottom: 12 }}>
               🔊 Escuchar la frase
             </button>
             {renderDragArea()}
@@ -560,16 +560,16 @@ export default function GuidedProduction({ onComplete }: Props) {
               style={{ width: '100%', background: 'var(--wl-panel-raised, #f8f9fa)', border: '2px solid #e9ecef', borderRadius: 16, padding: '2rem', textAlign: 'center', marginBottom: 20, cursor: 'pointer' }}
             >
               <p style={{ margin: '0 0 8px', fontSize: 48 }}>🔊</p>
-              <p style={{ margin: 0, fontSize: 13, color: 'var(--wl-on-panel-soft, #6c757d)' }}>Toca para escuchar</p>
+              <p style={{ margin: 0, fontSize: 13, color: 'var(--wl-ink-soft)' }}>Toca para escuchar</p>
             </button>
 
             {hasPlayed ? (
               <div style={{ animation: 'fadeIn 0.3s ease' }}>
                 <div style={{ display: 'flex', gap: 8, justifyContent: 'center', marginBottom: 10 }}>
-                  <button type="button" onClick={() => playAudio((item as Round4Item).audio, 1)} style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 100, padding: '4px 12px', fontSize: 12, color: 'var(--wl-on-panel-soft, #6c757d)', cursor: 'pointer' }}>🔁 Repetir</button>
-                  <button type="button" onClick={() => playAudio((item as Round4Item).audio, 0.6)} style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 100, padding: '4px 12px', fontSize: 12, color: 'var(--wl-on-panel-soft, #6c757d)', cursor: 'pointer' }}>🐢 Lento</button>
+                  <button type="button" onClick={() => playAudio((item as Round4Item).audio, 1)} style={{ background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 100, padding: '4px 12px', fontSize: 12, color: 'var(--wl-ink-soft)', cursor: 'pointer' }}>🔁 Repetir</button>
+                  <button type="button" onClick={() => playAudio((item as Round4Item).audio, 0.6)} style={{ background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 100, padding: '4px 12px', fontSize: 12, color: 'var(--wl-ink-soft)', cursor: 'pointer' }}>🐢 Lento</button>
                 </div>
-                <p style={{ margin: '0 0 12px', fontSize: 11, color: 'var(--wl-on-panel-soft, #6c757d)', textAlign: 'center' }}>{(item as Round4Item).hint}</p>
+                <p style={{ margin: '0 0 12px', fontSize: 11, color: 'var(--wl-ink-soft)', textAlign: 'center' }}>{(item as Round4Item).hint}</p>
                 {renderDragArea()}
               </div>
             ) : null}
@@ -606,10 +606,10 @@ export default function GuidedProduction({ onComplete }: Props) {
 
   function renderFinalComplete() {
     return (
-      <article style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 16, padding: '2rem', textAlign: 'center' }}>
+      <article style={{ background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 16, padding: '2rem', textAlign: 'center' }}>
         <p style={{ margin: '0 0 8px', fontSize: 48 }}>🏆</p>
-        <h3 style={{ margin: '0 0 8px', fontSize: 22, fontWeight: 700, color: 'var(--wl-on-panel, #1a1a2e)' }}>¡Producción completada!</h3>
-        <p style={{ margin: '0 0 24px', fontSize: 14, color: 'var(--wl-on-panel-soft, #6c757d)', lineHeight: 1.7 }}>
+        <h3 style={{ margin: '0 0 8px', fontSize: 22, fontWeight: 700, color: 'var(--wl-ink)' }}>¡Producción completada!</h3>
+        <p style={{ margin: '0 0 24px', fontSize: 14, color: 'var(--wl-ink-soft)', lineHeight: 1.7 }}>
           Construiste frases en coreano desde cero. Eso ya es hablar coreano.
         </p>
         <p style={{ margin: '0 0 20px', fontSize: 16, color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 600 }}>{`${totalCorrect} de ${totalAttempts} correctas`}</p>
@@ -618,8 +618,8 @@ export default function GuidedProduction({ onComplete }: Props) {
           {FINAL_RECAP.map((row) => (
             <div key={`${row.kr}-${row.es}`} style={{ background: 'var(--wl-panel-raised, #f8f9fa)', border: '1px solid #e9ecef', borderRadius: 8, padding: '10px 14px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 10 }}>
               <div>
-                <p style={{ margin: 0, fontFamily: "'Noto Sans KR', sans-serif", fontSize: 15, color: 'var(--wl-on-panel, #1a1a2e)' }}>{row.kr}</p>
-                <p style={{ margin: '2px 0 0', fontSize: 11, color: 'var(--wl-on-panel-soft, #6c757d)' }}>{row.es}</p>
+                <p style={{ margin: 0, fontFamily: "'Noto Sans KR', sans-serif", fontSize: 15, color: 'var(--wl-ink)' }}>{row.kr}</p>
+                <p style={{ margin: '2px 0 0', fontSize: 11, color: 'var(--wl-ink-soft)' }}>{row.es}</p>
               </div>
               <button type="button" onClick={() => playAudio(row.audio, 1)} style={{ border: 'none', background: 'transparent', color: 'var(--wl-on-panel-link, #6c63ff)', fontSize: 14, cursor: 'pointer' }}>▶</button>
             </div>
@@ -639,8 +639,8 @@ export default function GuidedProduction({ onComplete }: Props) {
       <p style={{ margin: '0 0 8px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700 }}>
         SECCIÓN 8 DE 11
       </p>
-      <h3 style={{ margin: '0 0 8px', fontSize: 24, fontWeight: 700, color: 'var(--wl-on-panel, #1a1a2e)' }}>Producción guiada</h3>
-      <p style={{ margin: '0 0 20px', fontSize: 13, color: 'var(--wl-on-panel-soft, #6c757d)', lineHeight: 1.7 }}>
+      <h3 style={{ margin: '0 0 8px', fontSize: 24, fontWeight: 700, color: 'var(--wl-ink)' }}>Producción guiada</h3>
+      <p style={{ margin: '0 0 20px', fontSize: 13, color: 'var(--wl-ink-soft)', lineHeight: 1.7 }}>
         Ahora vas a construir frases usando bloques de frase. No estás inventando desde cero: estás ensamblando piezas que ya viste.
       </p>
 

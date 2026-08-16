@@ -5,7 +5,7 @@
   --task-teal: var(--wl-on-panel-teal, #176b87);
   --task-ink: var(--wl-on-panel, #14244f);
   --task-muted: var(--wl-on-panel-soft, #5c6680);
-  --task-line: var(--wl-panel-line, #d9deea);
+  --task-line: var(--wl-rule);
   min-height: 100vh;
   background: var(--wl-panel-raised, #f7f8fc);
   color: var(--task-ink);
@@ -117,7 +117,7 @@
 }
 .courseGroup a:hover,
 .courseGroup a:focus-visible { border-color: var(--wl-panel-line, #fff); color: #fff; background: rgba(255, 255, 255, 0.08); }
-.courseGroup .activeRoute { border-color: var(--wl-panel-line, #fff); background: var(--wl-panel-raised, #fff); color: var(--task-navy); }
+.courseGroup .activeRoute { border-color: var(--wl-panel-line, #fff); background: var(--wl-surface-card); color: var(--task-navy); }
 
 .sequenceNav {
   display: grid;

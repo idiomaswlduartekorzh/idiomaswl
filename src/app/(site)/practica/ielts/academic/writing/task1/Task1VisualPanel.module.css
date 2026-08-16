@@ -3,7 +3,7 @@
   margin: 1.25rem 0 1.75rem;
   border: 1px solid #bfc9de;
   border-radius: 14px;
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   box-shadow: 0 22px 54px rgba(16, 46, 111, 0.12);
 }
 
@@ -61,7 +61,7 @@
   background:
     linear-gradient(rgba(16, 46, 111, 0.025) 1px, transparent 1px),
     linear-gradient(90deg, rgba(16, 46, 111, 0.025) 1px, transparent 1px),
-    var(--wl-panel-raised, #fbfcff);
+    var(--wl-surface-card);
   background-size: 24px 24px;
 }
 

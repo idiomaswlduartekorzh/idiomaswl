@@ -247,7 +247,7 @@ function segIdx(t: number) {
 // ─── Sub-components ───────────────────────────────────────────────────────────
 function VocabCard({ item, isNew }: { item: VocabItem; isNew: boolean }) {
   return (
-    <article style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 12, overflow: 'hidden' }}>
+    <article style={{ background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 12, overflow: 'hidden' }}>
       <div style={{ height: 100, background: 'var(--wl-panel-raised, #f1f3f5)', position: 'relative', overflow: 'hidden' }}>
         <span style={{ position: 'absolute', left: 10, top: 4, fontSize: 44, fontWeight: 700, opacity: 0.07, color: item.color }}>{item.hangul}</span>
         <img src={item.img} alt={item.translation} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} onError={e => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }} />
@@ -255,8 +255,8 @@ function VocabCard({ item, isNew }: { item: VocabItem; isNew: boolean }) {
       </div>
       <div style={{ padding: '10px 12px 12px' }}>
         <p style={{ margin: 0, fontSize: 20, fontWeight: 700, color: item.color }}>{item.hangul}</p>
-        <p style={{ margin: '1px 0 0', fontFamily: 'var(--mono)', fontSize: 10, color: 'var(--wl-on-panel-soft, #6c757d)' }}>{item.romanization}</p>
-        <p style={{ margin: '4px 0 0', fontSize: 12, color: 'var(--wl-on-panel, #1a1a2e)' }}>{item.translation}</p>
+        <p style={{ margin: '1px 0 0', fontFamily: 'var(--mono)', fontSize: 10, color: 'var(--wl-ink-soft)' }}>{item.romanization}</p>
+        <p style={{ margin: '4px 0 0', fontSize: 12, color: 'var(--wl-ink)' }}>{item.translation}</p>
         <button type="button" onClick={() => speak002(item.hangul)} style={{ marginTop: 8, display: 'inline-flex', alignItems: 'center', gap: 4, background: `${item.color}18`, border: `1px solid ${item.color}35`, borderRadius: 100, padding: '3px 8px', color: item.color, fontSize: 10, cursor: 'pointer' }}>
           <Volume2 size={11} /> Escuchar
         </button>
@@ -267,12 +267,12 @@ function VocabCard({ item, isNew }: { item: VocabItem; isNew: boolean }) {
 
 function ConceptCard({ item }: { item: ConceptItem }) {
   return (
-    <article style={{ background: 'var(--wl-panel-raised, #fff)', borderLeft: `3px solid ${item.color}`, border: '1px solid #e9ecef', borderRadius: '0 12px 12px 0', padding: '12px 14px' }}>
+    <article style={{ background: 'var(--wl-surface-card)', borderLeft: `3px solid ${item.color}`, border: '1px solid #e9ecef', borderRadius: '0 12px 12px 0', padding: '12px 14px' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 7, marginBottom: 7 }}>
         <span style={{ fontSize: 16 }}>{item.icon}</span>
         <h4 style={{ margin: 0, fontSize: 11, fontWeight: 600, color: item.color }}>{item.title}</h4>
       </div>
-      <p style={{ margin: '0 0 8px', fontSize: 12, color: 'var(--wl-on-panel-soft, #6c757d)', lineHeight: 1.6 }}>{item.body}</p>
+      <p style={{ margin: '0 0 8px', fontSize: 12, color: 'var(--wl-ink-soft)', lineHeight: 1.6 }}>{item.body}</p>
 
       {/* Example with special label */}
       {item.example && (
@@ -281,7 +281,7 @@ function ConceptCard({ item }: { item: ConceptItem }) {
           {item.example.items.map(ex => (
             <div key={ex.kr} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
               <span style={{ fontSize: 16, fontWeight: 700, color: item.color }}>{ex.kr}</span>
-              <span style={{ fontFamily: 'var(--mono)', fontSize: 10, color: 'var(--wl-on-panel-soft, #6c757d)' }}>{ex.rom}</span>
+              <span style={{ fontFamily: 'var(--mono)', fontSize: 10, color: 'var(--wl-ink-soft)' }}>{ex.rom}</span>
               <span style={{ fontSize: 10, color: '#adb5bd' }}>— {ex.note}</span>
             </div>
           ))}
@@ -294,7 +294,7 @@ function ConceptCard({ item }: { item: ConceptItem }) {
           {item.grid.map(g => (
             <div key={g.kr} style={{ background: `${item.color}0d`, border: `1px solid ${item.color}25`, borderRadius: 8, padding: '6px 8px', textAlign: 'center' }}>
               <span style={{ display: 'block', fontSize: 20, fontWeight: 700, color: item.color }}>{g.kr}</span>
-              <span style={{ display: 'block', fontFamily: 'var(--mono)', fontSize: 10, color: 'var(--wl-on-panel-soft, #6c757d)' }}>{g.rom}</span>
+              <span style={{ display: 'block', fontFamily: 'var(--mono)', fontSize: 10, color: 'var(--wl-ink-soft)' }}>{g.rom}</span>
               {g.note && <span style={{ display: 'block', fontSize: 9, color: '#adb5bd', marginTop: 1 }}>{g.note}</span>}
             </div>
           ))}
@@ -309,7 +309,7 @@ function ConceptCard({ item }: { item: ConceptItem }) {
             {item.block.parts.map(p => (
               <div key={p.kr} style={{ textAlign: 'center' }}>
                 <span style={{ fontSize: 22, fontWeight: 700, color: item.color }}>{p.kr}</span>
-                <p style={{ margin: '2px 0 0', fontSize: 9, color: 'var(--wl-on-panel-soft, #6c757d)' }}>{p.role}</p>
+                <p style={{ margin: '2px 0 0', fontSize: 9, color: 'var(--wl-ink-soft)' }}>{p.role}</p>
               </div>
             ))}
           </div>
@@ -338,7 +338,7 @@ function MatchExercise({ item, onComplete, isCompleted }: { item: ExerciseItem; 
 
   return (
     <>
-      <p style={{ margin: '0 0 12px', fontSize: 13, color: 'var(--wl-on-panel, #1a1a2e)', lineHeight: 1.6 }}>{item.question}</p>
+      <p style={{ margin: '0 0 12px', fontSize: 13, color: 'var(--wl-ink)', lineHeight: 1.6 }}>{item.question}</p>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 12 }}>
         {pairs.map(p => (
           <div key={p.kr} style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
@@ -397,7 +397,7 @@ function DragExercise({ item, onComplete, isCompleted }: { item: ExerciseItem; o
   }
   return (
     <>
-      <p style={{ margin: '0 0 10px', fontSize: 13, color: 'var(--wl-on-panel, #1a1a2e)', lineHeight: 1.6 }}>{item.question}</p>
+      <p style={{ margin: '0 0 10px', fontSize: 13, color: 'var(--wl-ink)', lineHeight: 1.6 }}>{item.question}</p>
       {item.source && <span style={{ display: 'block', fontSize: 13, fontWeight: 600, color: 'var(--wl-on-panel-link, #6c63ff)', marginBottom: 6 }}>{item.source}</span>}
       {item.hint && <p style={{ margin: '0 0 10px', fontSize: 11, color: '#adb5bd' }}>{item.hint}</p>}
       {item.speak && <button type="button" onClick={() => speak002(item.speak!)} style={{ display: 'inline-flex', alignItems: 'center', gap: 5, background: 'rgba(108,99,255,0.06)', border: '1px solid rgba(108,99,255,0.2)', borderRadius: 100, padding: '5px 12px', color: 'var(--wl-on-panel-link, #6c63ff)', fontSize: 11, cursor: 'pointer', marginBottom: 12 }}><Volume2 size={13} /> Escuchar</button>}
@@ -420,7 +420,7 @@ function DragExercise({ item, onComplete, isCompleted }: { item: ExerciseItem; o
       {feedback && <div style={{ background: feedback === item.feedback.ok ? 'rgba(45,155,78,0.06)' : 'rgba(220,53,69,0.05)', border: `1px solid ${feedback === item.feedback.ok ? 'rgba(45,155,78,0.2)' : 'rgba(220,53,69,0.15)'}`, borderRadius: 8, padding: '9px 11px', fontSize: 11, color: feedback === item.feedback.ok ? '#2d9b4e' : '#dc3545', lineHeight: 1.6, marginBottom: 8 }}>{feedback}</div>}
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 6 }}>
         <button type="button" onClick={validate} disabled={placed.length !== (item.correctOrder?.length ?? 0) || isCompleted} style={{ padding: 9, background: placed.length !== (item.correctOrder?.length ?? 0) || isCompleted ? '#f1f3f5' : '#6c63ff', border: 'none', borderRadius: 10, color: placed.length !== (item.correctOrder?.length ?? 0) || isCompleted ? '#adb5bd' : '#fff', fontSize: 12, fontWeight: 600, cursor: 'pointer' }}>Validar</button>
-        <button type="button" onClick={() => { setPlaced([]); setBank(item.chips ?? []); setFeedback(''); }} style={{ padding: 9, background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 10, color: 'var(--wl-on-panel-soft, #6c757d)', fontSize: 12, fontWeight: 600, cursor: 'pointer' }}>Limpiar</button>
+        <button type="button" onClick={() => { setPlaced([]); setBank(item.chips ?? []); setFeedback(''); }} style={{ padding: 9, background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 10, color: 'var(--wl-ink-soft)', fontSize: 12, fontWeight: 600, cursor: 'pointer' }}>Limpiar</button>
       </div>
       {isCompleted && <p style={{ margin: '6px 0 0', textAlign: 'center', fontSize: 11, color: 'var(--wl-on-panel-ok, #2d9b4e)', fontWeight: 600, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 5 }}><Check size={13} /> Completado</p>}
     </>
@@ -439,7 +439,7 @@ function ChoiceExercise({ item, onComplete, isCompleted }: { item: ExerciseItem;
   }
   return (
     <>
-      <p style={{ margin: '0 0 10px', fontSize: 13, color: 'var(--wl-on-panel, #1a1a2e)', lineHeight: 1.6 }}>{item.question}</p>
+      <p style={{ margin: '0 0 10px', fontSize: 13, color: 'var(--wl-ink)', lineHeight: 1.6 }}>{item.question}</p>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 6, marginBottom: 10 }}>
         {item.choices?.map(c => {
           const chosen = picked === c.label;
@@ -636,7 +636,7 @@ export default function Activation002({ onComplete }: { onComplete?: () => void 
             <div style={{ marginTop: 8, borderRadius: 10, overflow: 'hidden', border: '1px solid #e9ecef' }}>
               <video src={KR_VIDEO_002} controls playsInline style={{ width: '100%', display: 'block', maxHeight: 200, background: '#000' }} />
               <div style={{ padding: '8px 10px', background: 'var(--wl-panel-raised, #f8f9fa)' }}>
-                <p style={{ margin: 0, fontSize: 10, color: 'var(--wl-on-panel-soft, #6c757d)' }}>
+                <p style={{ margin: 0, fontSize: 10, color: 'var(--wl-ink-soft)' }}>
                   0:01 — 어제 (ayer) · 0:04 — 글자 (letras) · 0:18 — vocales flotantes · 0:24 — frase final
                 </p>
               </div>
@@ -648,7 +648,7 @@ export default function Activation002({ onComplete }: { onComplete?: () => void 
         <button
           type="button"
           onClick={unlockAll}
-          style={{ padding: '8px 12px', background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 10, fontSize: 11, color: 'var(--wl-on-panel-soft, #6c757d)', cursor: 'pointer' }}
+          style={{ padding: '8px 12px', background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 10, fontSize: 11, color: 'var(--wl-ink-soft)', cursor: 'pointer' }}
         >
           👁 Revelar todo sin escuchar
         </button>
@@ -710,7 +710,7 @@ export default function Activation002({ onComplete }: { onComplete?: () => void 
             const ex = item as ExerciseItem;
             const done = completedExercises.has(ex.id);
             return (
-              <div key={ex.id} style={{ background: 'var(--wl-panel-raised, #fff)', border: `1px solid ${done ? 'rgba(45,155,78,0.2)' : '#e9ecef'}`, borderRadius: 12, padding: '14px 16px' }}>
+              <div key={ex.id} style={{ background: 'var(--wl-surface-card)', border: `1px solid ${done ? 'rgba(45,155,78,0.2)' : '#e9ecef'}`, borderRadius: 12, padding: '14px 16px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
                   <span style={{ fontSize: 9, fontFamily: 'var(--mono)', color: done ? '#2d9b4e' : '#6c757d', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', background: done ? 'rgba(45,155,78,0.08)' : '#f1f3f5', padding: '2px 8px', borderRadius: 100 }}>
                     {fmt(ex.at)} · {ex.title}
@@ -731,7 +731,7 @@ export default function Activation002({ onComplete }: { onComplete?: () => void 
           <div style={{ background: 'rgba(45,155,78,0.06)', border: '1px solid rgba(45,155,78,0.2)', borderRadius: 12, padding: '20px 24px', textAlign: 'center' }}>
             <span style={{ fontSize: 28, display: 'block', marginBottom: 8 }}>🎉</span>
             <p style={{ margin: '0 0 4px', fontWeight: 700, color: 'var(--wl-on-panel-ok, #2d9b4e)', fontSize: 15 }}>¡Activación completada!</p>
-            <p style={{ margin: '0 0 14px', fontSize: 12, color: 'var(--wl-on-panel-soft, #6c757d)' }}>Ya tienes las bases del Hangul. Sigue al siguiente paso.</p>
+            <p style={{ margin: '0 0 14px', fontSize: 12, color: 'var(--wl-ink-soft)' }}>Ya tienes las bases del Hangul. Sigue al siguiente paso.</p>
             {onComplete && (
               <button type="button" onClick={onComplete} style={{ padding: '10px 20px', background: '#2d9b4e', border: 'none', borderRadius: 100, color: '#fff', fontSize: 13, fontWeight: 600, cursor: 'pointer' }}>
                 Siguiente etapa →

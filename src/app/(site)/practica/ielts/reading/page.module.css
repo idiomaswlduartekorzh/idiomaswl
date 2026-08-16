@@ -9,7 +9,7 @@
   --reading-muted: var(--wl-on-panel-soft, #526579);
   --reading-line: var(--wl-panel-line, #d6e1e8);
   --reading-soft: var(--wl-panel-raised, #eaf3f6);
-  --reading-surface: var(--wl-panel-raised, #ffffff);
+  --reading-surface: var(--wl-surface-card);
   background: var(--wl-panel-raised, #f5f8fa);
   color: var(--reading-ink);
   min-height: 100vh;
@@ -115,7 +115,7 @@
 
 .secondaryAction,
 .finalActions a:last-child {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   color: var(--reading-navy);
 }
 
@@ -270,7 +270,7 @@
 }
 
 .playerShell {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border-left: 1px solid var(--wl-panel-line, #d5dce9);
   border-right: 1px solid var(--wl-panel-line, #d5dce9);
   margin: 0 clamp(1.4rem, 4vw, 2.4rem);
@@ -501,7 +501,7 @@
 }
 
 .systemCard {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--reading-line);
   color: inherit;
   display: grid;
@@ -569,7 +569,7 @@
 }
 
 .typeFamily {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--reading-line);
   display: grid;
   gap: 1.1rem;
@@ -640,7 +640,7 @@
 }
 
 .skillCard {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--reading-line);
   color: inherit;
   display: flex;
@@ -776,7 +776,7 @@
 
 .transferAction {
   align-items: center;
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--wl-panel-line, #fff);
   border-radius: 6px;
   color: var(--reading-navy);
@@ -824,7 +824,7 @@
 }
 
 .faqGrid article {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--reading-line);
   padding: 1rem;
 }
@@ -846,7 +846,7 @@
 .finalCta .kicker { color: #9fd9e5; }
 .finalCta h2 { color: #fff; margin: 0; }
 .finalActions { margin-top: 0; }
-.finalActions a:first-child { background: var(--wl-panel-raised, #fff); border-color: var(--wl-panel-line, #fff); color: var(--reading-navy); }
+.finalActions a:first-child { background: var(--wl-surface-card); border-color: var(--wl-panel-line, #fff); color: var(--reading-navy); }
 .finalActions a:last-child { background: transparent; border-color: rgba(255, 255, 255, 0.5); color: #fff; }
 
 @media (max-width: 900px) {
