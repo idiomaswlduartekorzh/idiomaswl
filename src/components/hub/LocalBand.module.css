@@ -108,3 +108,5 @@
 .napLink:hover { text-decoration: underline; }
 
 .cta { margin-top: 2rem; }
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .band { --lb-accent: var(--wl-accent) !important; }

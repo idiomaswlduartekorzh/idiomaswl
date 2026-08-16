@@ -5,6 +5,34 @@
   overflow-x: hidden;
 }
 
+/* Route-scoped bridge to the shared graphite/red dark theme. */
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .page :is(
+  .accent, .eyebrow, .sectionEyebrow, .levelBadge, .levelTag, .blogCat,
+  .goetheName, .delfName, .celpeName, .examName, .practicaTitle, .faqQ::after
+) { color: var(--wl-accent) !important; }
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .page :is(
+  .hero, .sectionDark, .proofStrip, .ctaSection
+) { background: var(--wl-inverse); }
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .page :is(.heroPhrase, .ctaPhrase, .goetheLevel, .heroCardSub) {
+  color: rgba(255,255,255,.68);
+}
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .page :is(
+  .heroSub, .sectionDark .sectionSub, .proofItem, .goetheDesc, .delfDesc,
+  .celpeDesc, .examDesc, .faqA, .ctaSub
+) { color: rgba(255,255,255,.74); }
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .page :is(
+  .levelBadge, .levelTag, .goetheCard, .delfCard, .celpeCard, .examCard,
+  .practicaBadge
+) {
+  border-color: var(--wl-border);
+  background: var(--wl-surface-raised);
+}
+
+
 .wrap {
   max-width: 1100px;
   margin: 0 auto;
@@ -66,6 +94,7 @@
 .sectionDark .h2 { color: #fff; }
 .sectionDark .sectionEyebrow { color: #7b93ff; }
 .sectionDark .sectionSub { color: rgba(255,255,255,0.6); }
+.sectionDark .levelTitle { color: #fff; }
 
 /* ─── Hero ──────────────────────────────────────────────────────────────────── */
 .hero {

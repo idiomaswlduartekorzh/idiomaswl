@@ -111,14 +111,14 @@ export default function ExamInfoGraphic({ exam }: Props) {
       </div>
 
       {/* ── Section breakdown ── */}
-      <section className="wl-section" style={{ background: 'var(--ink)', color: '#fff' }}>
+      <section className="wl-section" style={{ background: 'var(--ink-bg)', color: 'var(--wl-on-inverse, #fff)' }}>
         <div className="wrap">
           <motion.p
-            className="eyebrow"
+            className="eyebrow wl-exam-readable-accent"
             style={{ color: exam.color, marginBottom: '0.5rem' }}
             initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}
           >
-            <span style={{ display: 'inline-block', height: 1, width: 28, background: exam.color, verticalAlign: 'middle', marginRight: 12 }} />
+            <span className="wl-exam-readable-accent-bg" style={{ display: 'inline-block', height: 1, width: 28, background: exam.color, verticalAlign: 'middle', marginRight: 12 }} />
             Estructura del examen
           </motion.p>
           <motion.h2
@@ -198,7 +198,7 @@ export default function ExamInfoGraphic({ exam }: Props) {
             <div className="wl-score-bar__labels">
               <span>0</span>
               {exam.passing && (
-                <span style={{ color: exam.color, fontWeight: 600 }}>
+                <span className="wl-exam-readable-accent" style={{ color: exam.color, fontWeight: 600 }}>
                   ✓ Aprobado: {exam.passing}
                 </span>
               )}
@@ -230,7 +230,7 @@ export default function ExamInfoGraphic({ exam }: Props) {
             <p className="eyebrow" style={{ marginBottom: '1rem' }}><span className="ink-line" />Reconocido por</p>
             {exam.recognized.map(r => (
               <div key={r} className="wl-recognized__item">
-                <span style={{ color: exam.color }}>✓</span> {r}
+                <span className="wl-exam-readable-accent" style={{ color: exam.color }}>✓</span> {r}
               </div>
             ))}
           </div>

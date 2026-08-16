@@ -146,7 +146,7 @@ export default function MetodoClient() {
 
       {/* ── HERO ────────────────────────────────────────────────────────────── */}
       <section style={{
-        background: 'var(--ink)',
+        background: 'var(--ink-bg)',
         color: '#fff',
         padding: 'clamp(5rem, 12vw, 9rem) 1.5rem clamp(4rem, 8vw, 7rem)',
         textAlign: 'center',
@@ -217,7 +217,7 @@ export default function MetodoClient() {
               style={{
                 display: 'inline-flex', alignItems: 'center', gap: '0.4rem',
                 padding: '0.8rem 2rem', borderRadius: 12,
-                background: 'var(--accent)', color: '#fff',
+                background: 'var(--accent-action)', color: '#fff',
                 fontWeight: 800, fontSize: 15, textDecoration: 'none',
                 letterSpacing: '0.01em',
               }}
@@ -242,7 +242,7 @@ export default function MetodoClient() {
 
       {/* ── STATS ───────────────────────────────────────────────────────────── */}
       <section style={{
-        background: '#fff',
+        background: 'var(--surface)',
         borderBottom: '1px solid var(--line-soft)',
         padding: 'clamp(2.5rem, 5vw, 4rem) 1.5rem',
       }}>
@@ -310,7 +310,7 @@ export default function MetodoClient() {
                   width: 'clamp(140px, 22vw, 200px)',
                   height: 'clamp(140px, 22vw, 200px)',
                   borderRadius: '50%',
-                  background: 'linear-gradient(135deg, var(--ink) 0%, #2c3870 100%)',
+                  background: 'linear-gradient(135deg, var(--ink-bg) 0%, #25344a 100%)',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
                   fontSize: 'clamp(3rem, 6vw, 5rem)',
                   boxShadow: '0 16px 48px rgba(20,33,92,0.22)',
@@ -324,7 +324,7 @@ export default function MetodoClient() {
 
               {/* PhD badge */}
               <div style={{
-                background: 'var(--accent)',
+                background: 'var(--accent-action)',
                 color: '#fff',
                 padding: '0.4rem 1.1rem',
                 borderRadius: 100,
@@ -386,7 +386,7 @@ export default function MetodoClient() {
               }}>
                 {['PhD Filología', 'Lingüística aplicada', '10+ años experiencia', 'Adquisición L2', 'Ex-docente universitaria'].map(tag => (
                   <span key={tag} style={{
-                    background: 'var(--ink)', color: '#fff',
+                    background: 'var(--ink-bg)', color: '#fff',
                     padding: '0.35rem 0.9rem', borderRadius: 100,
                     fontSize: 12, fontWeight: 700,
                   }}>
@@ -401,7 +401,7 @@ export default function MetodoClient() {
 
       {/* ── 11 STEPS ────────────────────────────────────────────────────────── */}
       <section style={{
-        background: '#fff',
+        background: 'var(--bg)',
         padding: 'clamp(4rem, 8vw, 7rem) 1.5rem',
       }}>
         <div style={{ maxWidth: 960, margin: '0 auto' }}>
@@ -446,7 +446,7 @@ export default function MetodoClient() {
                 viewport={{ once: true, margin: '-30px' }}
                 transition={{ duration: 0.45, delay: (i % 4) * 0.06, ease: EASE }}
                 style={{
-                  background: '#fff',
+                  background: 'var(--surface)',
                   border: '1.5px solid var(--line-soft)',
                   borderRadius: 16,
                   padding: '1.4rem 1.5rem',
@@ -462,7 +462,7 @@ export default function MetodoClient() {
                   background: i < 3
                     ? 'var(--accent)'
                     : i < 7
-                    ? 'var(--ink)'
+                    ? 'var(--ink-bg)'
                     : '#2c6e49',
                   borderRadius: '16px 0 0 16px',
                 }} />
@@ -512,7 +512,7 @@ export default function MetodoClient() {
 
       {/* ── WHY IT WORKS ────────────────────────────────────────────────────── */}
       <section style={{
-        background: 'var(--ink)',
+        background: 'var(--ink-bg)',
         padding: 'clamp(4rem, 8vw, 7rem) 1.5rem',
         color: '#fff',
       }}>
@@ -625,7 +625,7 @@ export default function MetodoClient() {
                 viewport={{ once: true, margin: '-20px' }}
                 transition={{ duration: 0.5, delay: (i % 3) * 0.09, ease: EASE }}
                 style={{
-                  background: '#fff',
+                  background: 'var(--surface)',
                   borderRadius: 18,
                   padding: '1.6rem',
                   border: '1px solid var(--line-soft)',
@@ -652,7 +652,7 @@ export default function MetodoClient() {
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                   <div style={{
                     width: 40, height: 40, borderRadius: '50%',
-                    background: t.color,
+                    background: 'var(--ink-bg)',
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
                     fontSize: 13, fontWeight: 800, color: '#fff',
                     flexShrink: 0,
@@ -664,7 +664,7 @@ export default function MetodoClient() {
                       {t.name}
                     </div>
                     <div style={{ fontSize: '0.78rem', color: 'var(--muted)', marginTop: 1 }}>
-                      {t.city} · <span style={{ color: t.color, fontWeight: 700 }}>{t.cert}</span>
+                      {t.city} · <span style={{ color: 'var(--accent)', fontWeight: 700 }}>{t.cert}</span>
                     </div>
                   </div>
                 </div>
@@ -676,7 +676,7 @@ export default function MetodoClient() {
 
       {/* ── CERTIFICATIONS BAR ──────────────────────────────────────────────── */}
       <section style={{
-        background: '#fff',
+        background: 'var(--surface)',
         borderTop: '1px solid var(--line-soft)',
         borderBottom: '1px solid var(--line-soft)',
         padding: 'clamp(2rem, 4vw, 3rem) 1.5rem',
@@ -719,12 +719,12 @@ export default function MetodoClient() {
             <h2 style={{ fontSize: 'clamp(1.5rem, 3.5vw, 2.1rem)', fontWeight: 800, color: 'var(--ink)', marginBottom: '1.5rem' }}>Aprende más sobre el método</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(270px, 1fr))', gap: '0.85rem' }}>
               {[
-                { cat: 'Método', color: '#7c3aed', title: 'Cómo aprender un idioma más rápido: lo que la ciencia dice', slug: 'como-aprender-un-idioma-mas-rapido' },
-                { cat: 'Método', color: '#7c3aed', title: 'Aprender idiomas con series y películas: cómo hacerlo bien', slug: 'aprender-idiomas-con-series-y-peliculas' },
-                { cat: 'Inglés', color: '#1a4fcc', title: 'Por qué te bloqueas al hablar inglés y cómo superarlo', slug: 'como-mejorar-el-ingles-hablado' },
+                { cat: 'Método', color: 'var(--accent)', title: 'Cómo aprender un idioma más rápido: lo que la ciencia dice', slug: 'como-aprender-un-idioma-mas-rapido' },
+                { cat: 'Método', color: 'var(--accent)', title: 'Aprender idiomas con series y películas: cómo hacerlo bien', slug: 'aprender-idiomas-con-series-y-peliculas' },
+                { cat: 'Inglés', color: 'var(--accent)', title: 'Por qué te bloqueas al hablar inglés y cómo superarlo', slug: 'como-mejorar-el-ingles-hablado' },
               ].map(a => (
                 <Link key={a.slug} href={`/blog/${a.slug}`} style={{ display: 'block', padding: '1rem 1.1rem', borderRadius: 10, border: '1px solid var(--line-soft)', background: 'var(--bg)', textDecoration: 'none' }}>
-                  <span style={{ display: 'inline-block', fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: a.color, background: a.color + '18', padding: '2px 8px', borderRadius: 100, marginBottom: '0.55rem' }}>{a.cat}</span>
+                  <span style={{ display: 'inline-block', fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: a.color, background: 'var(--bg-2)', padding: '2px 8px', borderRadius: 100, marginBottom: '0.55rem' }}>{a.cat}</span>
                   <p style={{ fontSize: '0.9rem', fontWeight: 600, lineHeight: 1.4, color: 'var(--ink)', margin: 0 }}>{a.title} →</p>
                 </Link>
               ))}
@@ -735,7 +735,7 @@ export default function MetodoClient() {
 
       {/* ── FINAL CTA ───────────────────────────────────────────────────────── */}
       <section style={{
-        background: 'var(--accent)',
+        background: 'var(--accent-action)',
         padding: 'clamp(4.5rem, 9vw, 7rem) 1.5rem',
         textAlign: 'center',
       }}>
@@ -763,7 +763,7 @@ export default function MetodoClient() {
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
                   padding: '0.95rem 2.6rem', borderRadius: 14,
-                  background: '#fff', color: 'var(--accent)',
+                  background: '#fff', color: 'var(--accent-action)',
                   fontWeight: 900, fontSize: 17, textDecoration: 'none',
                   boxShadow: '0 8px 28px rgba(0,0,0,0.2)',
                   letterSpacing: '-0.01em',

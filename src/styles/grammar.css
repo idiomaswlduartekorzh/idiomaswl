@@ -1180,3 +1180,19 @@ input.blank-field:focus,
   .grammar-table__row span { border-left: 0; border-top: 1px solid var(--line-soft); }
   .grammar-table__row span:first-child { border-top: 0; }
 }
+
+/* Topic colours come from content data. On graphite they become a readable
+   text accent; filled controls use the darker action role for white labels. */
+:root[data-wl-surface="editorial"][data-theme="dark"] .gram-page {
+  --topic-color: var(--wl-accent) !important;
+}
+:root[data-wl-surface="editorial"][data-theme="dark"] .gram-page :is(
+  .gram-btn.accent, .hero-brief span, .lab-step__number, .pattern-step__number,
+  .journey-step__number, .visual-node > span, .flow-step > span, .journey-step > span
+) {
+  color: #fff;
+  background: var(--wl-accent-action);
+}
+:root[data-wl-surface="editorial"][data-theme="dark"] .gram-page nav span:last-child {
+  color: var(--wl-accent) !important;
+}

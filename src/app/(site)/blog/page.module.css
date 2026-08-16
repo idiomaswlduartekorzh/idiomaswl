@@ -48,8 +48,8 @@
 
 .catBtn:hover,
 .catBtnActive {
-  background: var(--accent);
-  border-color: var(--accent);
+  background: var(--accent-action, var(--accent));
+  border-color: var(--accent-action, var(--accent));
   color: #fff !important;
 }
 

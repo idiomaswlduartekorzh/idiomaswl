@@ -188,7 +188,7 @@ function AvailableDays() {
     <section style={{ background: 'var(--bg-2)', borderTop: '1px solid var(--line-soft)', borderBottom: '1px solid var(--line-soft)', padding: '3rem 0' }}>
       <div className="wrap">
         <div style={{ marginBottom: 24 }}>
-          <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6c63ff' }}>
+          <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--accent)' }}>
             DISPONIBLE AHORA
           </span>
           <h2 style={{ margin: '6px 0 6px', fontSize: 26, fontWeight: 800, letterSpacing: '-0.02em', color: 'var(--ink)' }}>
@@ -221,7 +221,7 @@ function AvailableDays() {
               >
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                   <span style={{ fontSize: 22 }}>{d.flag}</span>
-                  <span style={{ fontSize: 11, padding: '3px 10px', borderRadius: 100, background: 'rgba(108,99,255,0.1)', color: '#6c63ff', fontWeight: 700 }}>
+                  <span style={{ fontSize: 11, padding: '3px 10px', borderRadius: 100, background: 'var(--bg-2)', color: 'var(--accent)', fontWeight: 700 }}>
                     Día {d.day}
                   </span>
                 </div>
@@ -237,7 +237,7 @@ function AvailableDays() {
                   </div>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
-                  <span style={{ fontSize: 13, color: '#6c63ff', fontWeight: 600 }}>
+                  <span style={{ fontSize: 13, color: 'var(--accent)', fontWeight: 600 }}>
                     Ir a la lección →
                   </span>
                 </div>

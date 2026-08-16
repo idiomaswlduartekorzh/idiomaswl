@@ -593,3 +593,155 @@
 @media (prefers-reduced-motion: reduce) {
   .hubPage *, .hubPage *::before, .hubPage *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
 }
+
+/* Theme bridge: this learning system predates the shared semantic palette. */
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .learningPage,
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .hubPage {
+  --navy: var(--wl-text);
+  --cta: var(--wl-accent);
+  --part-color: var(--wl-accent) !important;
+  --part-soft: var(--wl-surface-raised) !important;
+  --success: #45c88a;
+  --warning: #f2b65a;
+  --danger: #ff7b85;
+  min-height: 100vh;
+  color: var(--wl-text);
+  background: radial-gradient(circle at 8% 8%, color-mix(in srgb, var(--wl-accent) 10%, transparent), transparent 24rem), var(--wl-canvas);
+}
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .learningPage :is(h1, h2, h3, h4, strong),
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .hubPage :is(h1, h2, h3, h4, strong) { color: var(--wl-text); }
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .learningPage :is(p, small, .breadcrumbs, .heroAnswer),
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .hubPage :is(p, small, .breadcrumbs) { color: var(--wl-text-soft); }
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .learningPage .sourceSection span {
+  color: var(--wl-text-soft);
+}
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .learningPage :is(.breadcrumbs a, .textLink, .kicker),
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .hubPage :is(.hubKicker, .textLink) { color: var(--wl-accent); }
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .learningPage :is(
+  .partHero, .strategySteps li, .lessonRoadmap, .officialStrategyGrid article,
+  .anatomyWordBank, .examplePanel, .examplePicker, .exampleWalkthrough,
+  .clueToolkit, .answerContract, .questionGrid, .questionPrompt, .evidenceBox,
+  .methodFlow, .feedbackCard, .miniLesson, .practiceShell, .practiceIntro,
+  .reviewCard, .reviewHero, .reviewLesson, .reviewSummary, .resultCard,
+  .diagnosticEngine, .engineIdentity, .stagePanel, .structuredQuestion,
+  .guidedModeCard, .planBuilder, .planControls, .planResult, .planNext,
+  .progressHero, .progressOverview, .masteryGrid, .sessionList,
+  .vocabCard, .vocabLesson, .vocabPractice, .noticeCard, .resumeNotice,
+  .continuityLinks a, .sourceSection, .sourceSection > div, .truthStrip,
+  .workbookMap, .workbookMap li, .practiceMeta span
+),
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .hubPage :is(
+  .hubHero, .partCard, .hubPlanCta, .hubSource > div, .progressiveEngine,
+  .modeGrid a, .howItWorks, .workbookMap, .dailyHero
+) {
+  color: var(--wl-text);
+  border-color: var(--wl-border) !important;
+  background: var(--wl-surface) !important;
+  box-shadow: 0 22px 58px rgba(0, 0, 0, .24);
+}
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .learningPage :is(
+  .questionAnatomy, .anatomyWordBank strong, .skillPills span, .strategySteps li span,
+  .lessonRoadmap a:hover, .lessonOptions, .optionButton, .exampleTabs,
+  .exampleWordBank, .feedbackColumns, .feedbackFlow div, .distractorList li,
+  .practiceMeta, .reviewEvidence, .reviewAnswerGrid, .reviewQueue,
+  .diagnosticMap, .stageTabs, .structuredAnatomy, .structuredReason,
+  .modeGrid article, .planTimeline, .planResultHeader, .progressTrack,
+  .vocabFilters, .vocabStats, .practiceEmpty, .reviewEmpty, .progressEmpty
+),
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .hubPage :is(
+  .partsSection, .partCardTop, .partCardSkills span, .hubMap,
+  .hubMapNode, .hubMapCenter, .legacyTools, .feedbackFlow div
+) {
+  color: var(--wl-text);
+  border-color: var(--wl-border) !important;
+  background: var(--wl-surface-raised) !important;
+}
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .learningPage :is(input, select, textarea, button:not(.primaryButton):not(.secondaryButton):not(.partCardCta)) {
+  color: var(--wl-text);
+  border-color: var(--wl-border);
+}
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .learningPage :is(
+  .heroVisualCard, .officialStrategyGrid article:nth-child(3), .lessonStimulus,
+  .stimulusPanel, .feedbackTitle, .diagnosticHero, .guidedHero, .planHero,
+  .reviewCardTop, .vocabHero, .practiceSection
+),
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .hubPage .hubMapCenter {
+  color: #fff;
+  border-color: var(--wl-border) !important;
+  background: var(--wl-inverse) !important;
+}
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .learningPage :is(
+  .heroVisualCard, .officialStrategyGrid article:nth-child(3), .lessonStimulus,
+  .stimulusPanel, .feedbackTitle, .diagnosticHero, .guidedHero, .planHero,
+  .reviewCardTop, .vocabHero, .practiceSection
+) :is(h1, h2, h3, h4, strong, p, small, span),
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .hubPage .hubMapCenter :is(strong, span) { color: inherit; }
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .learningPage :is(.primaryButton, .partCardCta, .actionRow button, .vocabActions button, .reviewActions button, .planNext, .practiceIntroIcon),
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .hubPage :is(.primaryButton, .partCardCta) {
+  color: #fff;
+  border-color: var(--wl-accent-action) !important;
+  background: var(--wl-accent-action) !important;
+}
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .learningPage .secondaryButton,
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .hubPage .secondaryButton {
+  color: var(--wl-text);
+  border-color: var(--wl-border);
+  background: var(--wl-surface-raised);
+}
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .hubPage :is(.hubMapNode, .dailyHero) {
+  background: linear-gradient(145deg, var(--wl-surface-raised), color-mix(in srgb, var(--wl-accent) 11%, var(--wl-surface))) !important;
+}
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .hubPage .partCard {
+  --card-color: var(--wl-accent) !important;
+  --card-soft: color-mix(in srgb, var(--wl-accent) 12%, var(--wl-surface-raised)) !important;
+}
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .learningPage :is(.lessonRoadmap span, .feedbackFlow span),
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .hubPage :is(.partCardIcon, .feedbackFlow span, .modeGrid > a > span) {
+  color: #fff;
+  background: var(--wl-accent-action) !important;
+}
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .hubPage .hubPlanCta span { color: var(--wl-accent); }
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .learningPage :is(.progressTrack, .masteryBar) { background: var(--wl-surface-raised); }
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .learningPage :is(.resultScore, .exampleAnswer, .practiceMeta strong) { color: var(--wl-accent); }
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .learningPage .workbookMap li {
+  --map-color: var(--wl-accent) !important;
+}
+
+/* Dynamic ICFES level colours are data, not theme roles. On graphite, map
+   text to accessible status/accent roles and keep the original light theme. */
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .learningPage :is(
+  [style^="color: rgb(15, 61, 140)"], [style*="; color: rgb(15, 61, 140)"],
+  [style^="color: rgb(37, 99, 235)"], [style*="; color: rgb(37, 99, 235)"],
+  [style^="color: rgb(83, 74, 183)"], [style*="; color: rgb(83, 74, 183)"],
+  [style^="color: rgb(124, 58, 237)"], [style*="; color: rgb(124, 58, 237)"]
+) { color: var(--wl-accent) !important; }
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .learningPage :is(
+  [style^="color: rgb(5, 150, 105)"], [style*="; color: rgb(5, 150, 105)"],
+  [style^="color: rgb(15, 118, 110)"], [style*="; color: rgb(15, 118, 110)"]
+) { color: #45c88a !important; }
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .learningPage :is(
+  [style^="color: rgb(220, 38, 38)"], [style*="; color: rgb(220, 38, 38)"]
+) { color: #ff7b85 !important; }
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .learningPage :is(
+  [style^="color: rgb(245, 158, 11)"], [style*="; color: rgb(245, 158, 11)"]
+) { color: #f2b65a !important; }

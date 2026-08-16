@@ -83,6 +83,10 @@
   flex-shrink: 0;
 }
 
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .authorAvatar {
+  background: var(--wl-accent-action);
+}
+
 /* ── Article body ───────────────────────────────────────────────────────── */
 .body {
   font-size: 1.05rem;

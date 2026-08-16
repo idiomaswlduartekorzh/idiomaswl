@@ -194,7 +194,7 @@ export default function LecturaCreanoB1() {
         </div>
 
         {!checked ? (
-          <button onClick={checkAnswers} disabled={Object.keys(answers).filter(k => k.startsWith(`${activeIdx}-`)).length < text.questions.length} style={{ padding: '0.65rem 1.5rem', borderRadius: 12, background: COLOR, color: '#fff', border: 'none', fontWeight: 700, fontSize: '0.9rem', cursor: 'pointer', opacity: Object.keys(answers).filter(k => k.startsWith(`${activeIdx}-`)).length < text.questions.length ? 0.5 : 1 }}>
+          <button className="wl-language-accent-action" onClick={checkAnswers} disabled={Object.keys(answers).filter(k => k.startsWith(`${activeIdx}-`)).length < text.questions.length} style={{ padding: '0.65rem 1.5rem', borderRadius: 12, background: COLOR, color: '#fff', border: 'none', fontWeight: 700, fontSize: '0.9rem', cursor: 'pointer', opacity: Object.keys(answers).filter(k => k.startsWith(`${activeIdx}-`)).length < text.questions.length ? 0.5 : 1 }}>
             Comprobar respuestas
           </button>
         ) : (

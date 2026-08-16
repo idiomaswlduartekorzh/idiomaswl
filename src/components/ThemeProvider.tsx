@@ -24,15 +24,21 @@ export function useTheme() {
 
 const STORAGE_KEY = 'wl-theme';
 
-function getSystemPreference(): 'light' | 'dark' {
-  if (typeof window === 'undefined') return 'light';
-  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+/**
+ * Dark mode is opt-in, never inherited from the OS.
+ *
+ * Following prefers-color-scheme shipped dark styling to visitors who never
+ * asked for it, and any surface still carrying a hardcoded light background
+ * rendered near-white text on near-white paint — unreadable. Until every
+ * surface is token-driven, an unset preference resolves to light.
+ */
+function resolveTheme(theme: Theme): 'light' | 'dark' {
+  return theme === 'dark' ? 'dark' : 'light';
 }
 
 function applyTheme(theme: Theme) {
-  const resolved = theme === 'system' ? getSystemPreference() : theme;
   const html = document.documentElement;
-  html.setAttribute('data-theme', resolved);
+  html.setAttribute('data-theme', resolveTheme(theme));
   if (theme === 'system') {
     localStorage.removeItem(STORAGE_KEY);
   } else {
@@ -49,34 +55,22 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     const stored = localStorage.getItem(STORAGE_KEY) as Theme | null;
     const initial = stored === 'light' || stored === 'dark' ? stored : 'system';
     setThemeState(initial);
-    const resolved = initial === 'system' ? getSystemPreference() : initial;
+    const resolved = resolveTheme(initial);
     setResolvedTheme(resolved);
-
-    // Listen for OS preference changes when in system mode
-    const mq = window.matchMedia('(prefers-color-scheme: dark)');
-    const handler = () => {
-      if (initial === 'system') {
-        const r = mq.matches ? 'dark' : 'light';
-        setResolvedTheme(r);
-        document.documentElement.setAttribute('data-theme', r);
-      }
-    };
-    mq.addEventListener('change', handler);
-    return () => mq.removeEventListener('change', handler);
+    // Hydration may reconcile attributes added by the blocking head script.
+    // Re-assert the resolved theme once React owns the document.
+    document.documentElement.setAttribute('data-theme', resolved);
   }, []);
 
   const setTheme = useCallback((t: Theme) => {
     setThemeState(t);
-    const resolved = t === 'system' ? getSystemPreference() : t;
-    setResolvedTheme(resolved);
+    setResolvedTheme(resolveTheme(t));
     applyTheme(t);
   }, []);
 
   const toggle = useCallback(() => {
     setThemeState(prev => {
-      const next = prev === 'dark' || (prev === 'system' && getSystemPreference() === 'dark')
-        ? 'light'
-        : 'dark';
+      const next = resolveTheme(prev) === 'dark' ? 'light' : 'dark';
       setResolvedTheme(next);
       applyTheme(next);
       return next;

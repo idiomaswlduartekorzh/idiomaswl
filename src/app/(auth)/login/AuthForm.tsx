@@ -9,11 +9,12 @@ import { createClient } from '@/lib/supabase/client';
 type Mode = 'login' | 'register';
 
 // ── Palette ────────────────────────────────────────────────────────────────────
-const A      = '#c87941';   // warm orange accent
-const DARK   = '#0f0e0a';   // deep background
-const CARD   = '#ffffff';
-const MUTED  = '#9ca3af';
-const BORDER = '#e5e7eb';
+const A      = 'var(--accent)';
+const ACTION = 'var(--accent-action)';
+const DARK   = 'var(--ink-bg)';
+const CARD   = 'var(--surface)';
+const MUTED  = 'var(--muted)';
+const BORDER = 'var(--line-soft)';
 
 // ── Language flags shown on the left panel ────────────────────────────────────
 const LANGS = [
@@ -110,7 +111,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
         flexDirection: 'column',
         justifyContent: 'space-between',
         padding: '3rem 3rem 2.5rem',
-        background: `linear-gradient(160deg, #1a1208 0%, #0f0e0a 60%, #1a0e05 100%)`,
+        background: 'linear-gradient(155deg, #141c28 0%, var(--ink-bg) 58%, #101722 100%)',
         position: 'relative',
         overflow: 'hidden',
       }} className="auth-left-panel">
@@ -121,7 +122,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
           top: -80, right: -80,
           width: 320, height: 320,
           borderRadius: '50%',
-          background: `radial-gradient(circle, ${A}22 0%, transparent 70%)`,
+          background: 'radial-gradient(circle, rgba(233,104,114,0.16) 0%, transparent 70%)',
           pointerEvents: 'none',
         }} />
         <div style={{
@@ -129,7 +130,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
           bottom: 60, left: -60,
           width: 240, height: 240,
           borderRadius: '50%',
-          background: `radial-gradient(circle, ${A}18 0%, transparent 70%)`,
+          background: 'radial-gradient(circle, rgba(233,104,114,0.1) 0%, transparent 70%)',
           pointerEvents: 'none',
         }} />
 
@@ -145,7 +146,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
               priority
             />
           </div>
-          <p style={{ fontSize: 12, color: `${A}bb`, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase' }}>
+          <p style={{ fontSize: 12, color: A, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase' }}>
             Idiomas WeLearn
           </p>
         </div>
@@ -162,14 +163,14 @@ export default function AuthForm({ mode }: { mode: Mode }) {
             Aprende idiomas<br />
             <span style={{ color: A }}>de forma natural</span>
           </h2>
-          <p style={{ fontSize: 15, color: '#ffffff88', lineHeight: 1.6, maxWidth: 280 }}>
+          <p style={{ fontSize: 15, color: 'rgba(255,255,255,0.72)', lineHeight: 1.6, maxWidth: 280 }}>
             Lecciones diseñadas por expertos, adaptadas a tu ritmo y nivel.
           </p>
         </div>
 
         {/* Language bubbles */}
         <div>
-          <p style={{ fontSize: 11, color: '#ffffff44', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '1rem', fontWeight: 600 }}>
+          <p style={{ fontSize: 11, color: 'rgba(255,255,255,0.68)', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '1rem', fontWeight: 600 }}>
             Idiomas disponibles
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
@@ -191,7 +192,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
         </div>
 
         {/* Footer note */}
-        <p style={{ fontSize: 12, color: '#ffffff33' }}>
+        <p style={{ fontSize: 12, color: 'rgba(255,255,255,0.62)' }}>
           © 2026 Idiomas WeLearn
         </p>
       </div>
@@ -203,7 +204,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
         alignItems: 'center',
         justifyContent: 'center',
         padding: '2rem 1.5rem',
-        background: '#f9f8f6',
+        background: 'var(--bg)',
       }}>
         <div style={{
           width: '100%',
@@ -214,7 +215,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
             <h1 style={{
               fontSize: '1.65rem',
               fontWeight: 800,
-              color: '#111',
+              color: 'var(--ink)',
               marginBottom: '0.4rem',
             }}>
               {mode === 'login' ? 'Bienvenido de vuelta' : 'Crea tu cuenta'}
@@ -243,7 +244,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
               fontSize: 14,
               fontWeight: 600,
               cursor: 'pointer',
-              color: '#111',
+              color: 'var(--ink)',
               boxShadow: '0 1px 4px rgba(0,0,0,0.06)',
               transition: 'box-shadow 0.15s, border-color 0.15s',
               marginBottom: '1.25rem',
@@ -348,7 +349,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
               style={{
                 width: '100%',
                 padding: '0.85rem',
-                background: loading ? '#d1a97a' : A,
+                background: loading ? 'var(--muted)' : ACTION,
                 color: '#fff',
                 border: 'none',
                 borderRadius: 12,
@@ -357,7 +358,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
                 cursor: loading ? 'not-allowed' : 'pointer',
                 marginTop: '0.25rem',
                 transition: 'background 0.15s, transform 0.1s',
-                boxShadow: `0 4px 14px ${A}44`,
+                boxShadow: '0 4px 14px rgba(167,25,39,0.3)',
               }}
             >
               {loading ? 'Cargando...' : mode === 'login' ? 'Iniciar sesión' : 'Crear cuenta'}
@@ -411,7 +412,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
 function Field({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
-      <label style={{ fontSize: 13, fontWeight: 600, color: '#374151' }}>{label}</label>
+      <label style={{ fontSize: 13, fontWeight: 600, color: 'var(--ink)' }}>{label}</label>
       {children}
     </div>
   );
@@ -419,11 +420,11 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
 
 const inputStyle: React.CSSProperties = {
   padding: '0.7rem 0.9rem',
-  border: '1.5px solid #e5e7eb',
+  border: '1.5px solid var(--line-soft)',
   borderRadius: 10,
   fontSize: 14,
-  background: '#fff',
-  color: '#111',
+  background: 'var(--surface)',
+  color: 'var(--ink)',
   outline: 'none',
   transition: 'border-color 0.15s, box-shadow 0.15s',
   width: '100%',
@@ -431,10 +432,10 @@ const inputStyle: React.CSSProperties = {
 };
 
 function focusIn(e: React.FocusEvent<HTMLInputElement>) {
-  e.currentTarget.style.borderColor = '#c87941';
-  e.currentTarget.style.boxShadow = '0 0 0 3px rgba(200,121,65,0.12)';
+  e.currentTarget.style.borderColor = 'var(--accent)';
+  e.currentTarget.style.boxShadow = '0 0 0 3px rgba(233,104,114,0.15)';
 }
 function focusOut(e: React.FocusEvent<HTMLInputElement>) {
-  e.currentTarget.style.borderColor = '#e5e7eb';
+  e.currentTarget.style.borderColor = 'var(--line-soft)';
   e.currentTarget.style.boxShadow = 'none';
 }

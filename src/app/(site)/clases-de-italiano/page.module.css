@@ -16,6 +16,7 @@
 .sectionDark .h2 { color: #fff; }
 .sectionDark .sectionEyebrow { color: #4dde96; }
 .sectionDark .sectionSub { color: rgba(255,255,255,0.6); }
+.sectionDark .levelTitle { color: #fff; }
 
 /* ─── Hero ──────────────────────────────────────────────────────────────────── */
 .hero { background: linear-gradient(135deg, #030d08 0%, #071a10 60%, #030d08 100%); padding: 5rem 1.5rem 4rem; overflow: hidden; }
@@ -111,6 +112,34 @@
   .examGrid { grid-template-columns: 1fr; }
   .blogGrid { grid-template-columns: 1fr; }
 }
+
+/* Route-scoped bridge to the shared graphite/red dark theme. */
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .page :is(
+  .accent, .eyebrow, .sectionEyebrow, .levelBadge, .levelTag, .blogCat,
+  .goetheName, .delfName, .celpeName, .examName, .practicaTitle, .faqQ::after
+) { color: var(--wl-accent) !important; }
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .page :is(
+  .hero, .sectionDark, .proofStrip, .ctaSection
+) { background: var(--wl-inverse); }
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .page :is(.heroPhrase, .ctaPhrase, .goetheLevel, .heroCardSub) {
+  color: rgba(255,255,255,.68);
+}
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .page :is(
+  .heroSub, .sectionDark .sectionSub, .proofItem, .goetheDesc, .delfDesc,
+  .celpeDesc, .examDesc, .examRange, .faqA, .ctaSub
+) { color: rgba(255,255,255,.74); }
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .page :is(
+  .levelBadge, .levelTag, .goetheCard, .delfCard, .celpeCard, .examCard,
+  .practicaBadge
+) {
+  border-color: var(--wl-border);
+  background: var(--wl-surface-raised);
+}
+
 @media (max-width: 560px) {
   .hero { padding: 3.5rem 1.25rem 3rem; }
   .whyGrid { grid-template-columns: 1fr; }

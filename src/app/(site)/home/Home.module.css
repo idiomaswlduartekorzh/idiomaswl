@@ -2550,7 +2550,9 @@
   border: 1px solid var(--line);
   grid-template-columns: 120px minmax(0, 1fr);
   gap: 1.4rem;
-  background: rgba(4, 10, 29, 0.52);
+  /* The panel carries light text, so it has to stay dark on its own. At 0.52
+     the light canvas showed through and washed the label out to ~1.4:1. */
+  background: rgba(4, 10, 29, 0.94);
 }
 
 .resultsPrivacy strong {

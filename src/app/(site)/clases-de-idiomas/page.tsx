@@ -207,7 +207,7 @@ const jsonLd = {
 
 export default function ClasesDeIdiomasPage() {
   return (
-    <main style={{ background: 'var(--bg)', color: 'var(--ink)' }}>
+    <main className="wl-language-catalog-page" style={{ background: 'var(--bg)', color: 'var(--ink)' }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -327,12 +327,12 @@ export default function ClasesDeIdiomasPage() {
                   flexDirection: 'column',
                 }}
               >
-                <div style={{ padding: '1.5rem 1.5rem 1rem', background: lang.bgColor }}>
+                <div className="wl-language-accent-surface" style={{ padding: '1.5rem 1.5rem 1rem', background: lang.bgColor }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
                     <span style={{ fontSize: '2rem', lineHeight: 1 }}>{lang.flag}</span>
                     <div>
                       <p style={{ fontSize: '1.25rem', fontWeight: 900, lineHeight: 1, color: 'var(--ink)' }}>{lang.name}</p>
-                      <p style={{ fontSize: '0.85rem', color: lang.color, fontWeight: 600 }}>{lang.native} · {lang.levels}</p>
+                      <p className="wl-language-accent-text" style={{ fontSize: '0.85rem', color: lang.color, fontWeight: 600 }}>{lang.native} · {lang.levels}</p>
                     </div>
                   </div>
                   <p style={{ fontSize: '0.88rem', color: 'var(--muted)', lineHeight: 1.55 }}>{lang.description}</p>
@@ -342,7 +342,7 @@ export default function ClasesDeIdiomasPage() {
                   <p style={{ fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.07em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: '0.5rem' }}>Certificaciones</p>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem', marginBottom: '1.1rem' }}>
                     {lang.exams.map(e => (
-                      <span key={e} style={{ fontSize: '0.73rem', fontWeight: 700, padding: '2px 8px', borderRadius: 100, background: lang.bgColor, color: lang.color }}>
+                      <span key={e} className="wl-language-accent-text wl-language-accent-surface" style={{ fontSize: '0.73rem', fontWeight: 700, padding: '2px 8px', borderRadius: 100, background: lang.bgColor, color: lang.color }}>
                         {e}
                       </span>
                     ))}
@@ -350,6 +350,7 @@ export default function ClasesDeIdiomasPage() {
                   <div style={{ display: 'flex', gap: '0.6rem' }}>
                     <Link
                       href={lang.href}
+                      className="wl-language-accent-action"
                       style={{ flex: 1, textAlign: 'center', padding: '0.6rem', borderRadius: 7, background: lang.color, color: '#fff', fontWeight: 700, textDecoration: 'none', fontSize: '0.85rem' }}
                     >
                       Ver clases →
@@ -398,7 +399,7 @@ export default function ClasesDeIdiomasPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1.25rem' }}>
             {CERTIFICADOS.map(grupo => (
               <div key={grupo.idioma} style={{ border: '1px solid var(--line-soft)', borderRadius: 14, padding: '1.4rem', background: 'var(--bg)' }}>
-                <p style={{ fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.05em', textTransform: 'uppercase', color: grupo.color, marginBottom: '1rem' }}>
+                <p className="wl-language-accent-text" style={{ fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.05em', textTransform: 'uppercase', color: grupo.color, marginBottom: '1rem' }}>
                   <span style={{ marginRight: 6 }}>{grupo.flag}</span>{grupo.idioma}
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
@@ -409,7 +410,7 @@ export default function ClasesDeIdiomasPage() {
                       style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}
                     >
                       <p style={{ fontSize: '0.97rem', fontWeight: 700, color: 'var(--ink)', marginBottom: 2 }}>
-                        {ex.name} <span style={{ color: grupo.color }}>→</span>
+                        {ex.name} <span className="wl-language-accent-text" style={{ color: grupo.color }}>→</span>
                       </p>
                       <p style={{ fontSize: '0.83rem', color: 'var(--muted)', lineHeight: 1.5 }}>{ex.desc}</p>
                     </Link>

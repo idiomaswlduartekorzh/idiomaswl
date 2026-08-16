@@ -14,7 +14,7 @@ export default function HistoriasHub({ lang }: { lang: HistoriaLang }) {
   const base = `/practica/${lang}`;
 
   return (
-    <section className="wl-section">
+    <section className="wl-section wl-stories-hub">
       <div className="wrap" style={{ maxWidth: 840 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
           <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
@@ -60,7 +60,7 @@ export default function HistoriasHub({ lang }: { lang: HistoriaLang }) {
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.55rem', marginBottom: '0.2rem', flexWrap: 'wrap' }}>
                       <span style={{ fontSize: '1.05rem', fontWeight: 800, color: 'var(--ink)' }}>{h.title}</span>
-                      <span style={{ fontSize: '0.6rem', fontWeight: 800, background: h.color, color: '#fff', borderRadius: 5, padding: '0.1rem 0.4rem', fontFamily: 'var(--mono)' }}>{h.level}</span>
+                      <span className="wl-story-level-chip" style={{ fontSize: '0.6rem', fontWeight: 800, background: h.color, color: '#fff', borderRadius: 5, padding: '0.1rem 0.4rem', fontFamily: 'var(--mono)' }}>{h.level}</span>
                       {!ready && (
                         <span style={{ fontSize: '0.6rem', fontWeight: 800, background: 'rgba(245,158,11,0.14)', color: '#d97706', border: '1px solid rgba(245,158,11,0.4)', borderRadius: 5, padding: '0.1rem 0.4rem', fontFamily: 'var(--mono)' }}>AUDIO EN GRABACIÓN</span>
                       )}

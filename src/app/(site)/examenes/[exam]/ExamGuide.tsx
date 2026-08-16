@@ -24,7 +24,7 @@ export default function ExamGuideBlock({
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
-      <section style={{ padding: '3.5rem 1.25rem', background: 'var(--bg)' }}>
+      <section className="wl-exam-guide" style={{ padding: '3.5rem 1.25rem', background: 'var(--bg)' }}>
         <div style={{ maxWidth: 760, margin: '0 auto' }}>
 
           {/* Respuesta directa — lo primero que lee una persona y lo que citan los motores de IA */}

@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 :root {
   color-scheme: light;
   --bg: #ffffff;
@@ -7065,7 +7067,7 @@ body {
   font-family: var(--mono);
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  background: var(--accent);
+  background: var(--accent-action, var(--accent));
   color: #fff;
   padding: 2px 6px;
   border-radius: 4px;
@@ -7096,9 +7098,9 @@ body {
 }
 .wlp-lang-tab:hover { color: var(--ink); border-color: var(--ink); }
 .wlp-lang-tab.is-active {
-  background: var(--ink);
+  background: var(--ink-bg);
   color: #fff;
-  border-color: var(--ink);
+  border-color: var(--ink-bg);
   box-shadow: 0 2px 12px rgba(20,33,92,0.18);
 }
 .wlp-lang-tab__flag { font-size: 1.1rem; line-height: 1; }
@@ -7986,3 +7988,279 @@ body {
 .writing-integrated__comparison p { margin:0; line-height:1.75; white-space:pre-wrap; }
 .writing-integrated__actions { display:flex; flex-wrap:wrap; gap:.65rem; margin-top:1rem; }
 @media (max-width:720px) { .writing-integrated__hero, .writing-integrated__read-layout, .writing-integrated__writing-layout, .writing-integrated__comparison { grid-template-columns:1fr; } .writing-integrated__steps { grid-template-columns:repeat(2,minmax(0,1fr)); } .writing-integrated__read-footer { align-items:flex-start; flex-direction:column; } }
+
+/* ===========================================================================
+   NON-HOME THEME FOUNDATION
+
+   Home intentionally keeps the legacy visual system. Every other route gets
+   semantic surface/text roles so a text token can never invert a background.
+   ========================================================================== */
+:root[data-wl-surface="editorial"] {
+  --wl-canvas: #ffffff;
+  --wl-surface: #ffffff;
+  --wl-surface-raised: #f4f4f6;
+  --wl-text: #14215c;
+  --wl-text-soft: #4d5878;
+  --wl-border: rgba(20, 33, 92, 0.14);
+  --wl-inverse: #14215c;
+  --wl-on-inverse: #ffffff;
+  --wl-accent: #c8202e;
+  --wl-accent-action: #a71927;
+
+  --bg: var(--wl-canvas);
+  --bg-2: var(--wl-surface-raised);
+  --surface: var(--wl-surface);
+  --ink: var(--wl-text);
+  --ink-2: var(--wl-text-soft);
+  --fg: var(--wl-text);
+  --muted: var(--wl-text-soft);
+  --line: var(--wl-text);
+  --line-soft: var(--wl-border);
+  --border: var(--wl-border);
+  --ink-bg: var(--wl-inverse);
+  --accent-action: var(--wl-accent-action);
+}
+
+:root[data-wl-surface="editorial"][data-theme="dark"] {
+  --wl-canvas: #0b0f17;
+  --wl-surface: #131a24;
+  --wl-surface-raised: #1c2633;
+  --wl-text: #f4f7fb;
+  --wl-text-soft: #a8b2c2;
+  --wl-border: #2b3747;
+  --wl-inverse: #101722;
+  --wl-on-inverse: #f4f7fb;
+  --wl-accent: #e96872;
+  --wl-accent-action: #a71927;
+
+  --accent: var(--wl-accent);
+  --accent-2: #c83f4a;
+  --accent-ink: #ffffff;
+  --glass-bg: rgba(19, 26, 36, 0.9);
+  --glass-border: rgba(168, 178, 194, 0.18);
+  --glass-shadow: 0 18px 48px rgba(0, 0, 0, 0.32), inset 0 1px 0 rgba(244, 247, 251, 0.05);
+  --glass-shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(244, 247, 251, 0.06);
+  --glass-blur: blur(18px) saturate(1.15);
+}
+
+:root[data-wl-surface="editorial"][data-theme="dark"] body {
+  background-color: var(--wl-canvas) !important;
+  background-image:
+    radial-gradient(ellipse at 10% 0%, rgba(233, 104, 114, 0.09) 0%, transparent 34rem),
+    radial-gradient(ellipse at 92% 4%, rgba(20, 33, 92, 0.18) 0%, transparent 38rem) !important;
+  color: var(--wl-text);
+}
+
+:root[data-wl-surface="editorial"][data-theme="dark"] .wl-site-nav {
+  background: rgba(11, 15, 23, 0.88) !important;
+  border-bottom-color: var(--wl-border) !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.24) !important;
+  backdrop-filter: blur(18px) saturate(1.15) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(1.15) !important;
+}
+
+:root[data-wl-surface="editorial"][data-theme="dark"] :where(select, option) {
+  background-color: var(--wl-surface);
+  color: var(--wl-text);
+}
+
+:root[data-wl-surface="editorial"][data-theme="dark"] .wl-catalog-card {
+  --exam-color: var(--wl-accent) !important;
+  background: var(--wl-surface);
+  border-color: var(--wl-border);
+}
+
+:root[data-wl-surface="editorial"][data-theme="dark"] .wl-catalog-card__bar { background: var(--wl-accent-action); }
+
+:root[data-wl-surface="editorial"][data-theme="dark"] :where(.wl-catalog-card__badge, .wl-catalog-card__cta, .icfes-theme-accent-text) {
+  color: var(--wl-accent) !important;
+}
+
+:root[data-wl-surface="editorial"][data-theme="dark"] :where(.wl-catalog-card__badge, .icfes-theme-chip, .icfes-theme-accent-surface) {
+  color: var(--wl-accent) !important;
+  background: var(--wl-surface-raised) !important;
+  border-color: var(--wl-border) !important;
+}
+
+:root[data-wl-surface="editorial"][data-theme="dark"] a[href*="wa.me"] {
+  color: #fff !important;
+  background: #087a3d !important;
+  border-color: #087a3d !important;
+}
+
+:root[data-wl-surface="editorial"][data-theme="dark"] a[href^="/blog/"] > span {
+  color: var(--wl-accent) !important;
+  background: var(--wl-surface-raised) !important;
+  border-color: var(--wl-border) !important;
+}
+
+:root[data-wl-surface="editorial"][data-theme="dark"] :where(.wl-route-accent-text, .wl-language-accent-text) { color: var(--wl-accent) !important; }
+:root[data-wl-surface="editorial"][data-theme="dark"] .wl-language-accent-surface { background: var(--wl-surface-raised) !important; }
+:root[data-wl-surface="editorial"][data-theme="dark"] .wl-language-accent-action {
+  color: #fff !important;
+  background: var(--wl-accent-action) !important;
+}
+
+:root[data-wl-surface="editorial"][data-theme="dark"] :where(.btn, .wl-lesson-tab--active, .prac-nav__btn--answered) {
+  color: #fff !important;
+  background: var(--wl-accent-action) !important;
+  border-color: var(--wl-accent-action) !important;
+}
+
+:root[data-wl-surface="editorial"][data-theme="dark"] :where(.prac-nav__dot--answered, .brand-mark) { background: var(--wl-accent-action) !important; }
+:root[data-wl-surface="editorial"][data-theme="dark"] :where(.lec-tab--active, .lec-word-card__face--back) {
+  color: #fff;
+  background: var(--wl-accent-action);
+  border-color: var(--wl-accent-action);
+}
+:root[data-wl-surface="editorial"][data-theme="dark"] .lec-locked-step__cta { color: var(--wl-accent); border-color: var(--wl-accent); }
+:root[data-wl-surface="editorial"][data-theme="dark"] .lec-word-card__native-sm { color: rgba(255, 255, 255, .82); }
+
+:root[data-wl-surface="editorial"][data-theme="dark"] :where(.wl-exam-readable-accent, .wl-exam-guide a) { color: var(--wl-accent) !important; }
+:root[data-wl-surface="editorial"][data-theme="dark"] .wl-exam-readable-accent-bg { background: var(--wl-accent) !important; }
+:root[data-wl-surface="editorial"][data-theme="dark"] :where(.wl-exam-hero__pill-lbl, .wl-section-card__meta) { color: rgba(255, 255, 255, .68); }
+:root[data-wl-surface="editorial"][data-theme="dark"] .wl-score-chip {
+  color: var(--wl-accent) !important;
+  background: var(--wl-surface-raised) !important;
+  border-color: var(--wl-border) !important;
+}
+:root[data-wl-surface="editorial"][data-theme="dark"] .wl-action-on-light { color: var(--wl-accent-action) !important; }
+
+:root[data-wl-surface="editorial"][data-theme="dark"] .wl-korean-compounds-page :is(
+  [style*="color: rgb(83, 74, 183)"],
+  [style*="color: rgb(225, 29, 72)"],
+  [style*="color:rgb(83, 74, 183)"],
+  [style*="color:rgb(225, 29, 72)"],
+  [style*="color: #534ab7" i],
+  [style*="color: #e11d48" i],
+  [style*="color:#534ab7" i],
+  [style*="color:#e11d48" i],
+  [style*="color: #059669" i],
+  [style*="color:#059669" i]
+) { color: var(--wl-accent) !important; }
+:root[data-wl-surface="editorial"][data-theme="dark"] .wl-korean-compounds-page :is(
+  [style*="background: rgb(5, 150, 105);"],
+  [style*="background:rgb(5, 150, 105);"],
+  [style*="background: #059669;" i],
+  [style*="background:#059669;" i]
+) {
+  color: #fff !important;
+  background: #047857 !important;
+}
+:root[data-wl-surface="editorial"][data-theme="dark"] .wl-korean-compounds-page :is(
+  [style*="background: #534ab7;" i],
+  [style*="background:#534ab7;" i],
+  [style*="background: rgb(83, 74, 183);"],
+  [style*="background:rgb(83, 74, 183);"]
+) { background: var(--wl-accent-action) !important; }
+
+:root[data-wl-surface="editorial"] :where(a, button, input, textarea, select, [tabindex]):focus-visible {
+  outline: 3px solid #f2c748;
+  outline-offset: 3px;
+}
+
+/* Inline language colours are content data. Map values that fail against
+   graphite to the semantic accent without changing their light-mode identity. */
+:root[data-wl-surface="editorial"][data-theme="dark"] :is(
+  [style^="color:#003189" i], [style^="color: #003189" i], [style*=";color:#003189" i], [style*="; color: #003189" i],
+  [style^="color:#534ab7" i], [style^="color: #534ab7" i], [style*=";color:#534ab7" i], [style*="; color: #534ab7" i],
+  [style^="color:#6c63ff" i], [style^="color: #6c63ff" i], [style*=";color:#6c63ff" i], [style*="; color: #6c63ff" i],
+  [style^="color:#dd0000" i], [style^="color: #dd0000" i], [style*=";color:#dd0000" i], [style*="; color: #dd0000" i],
+  [style^="color:#bc002d" i], [style^="color: #bc002d" i], [style*=";color:#bc002d" i], [style*="; color: #bc002d" i],
+  [style^="color: rgb(0, 49, 137)"], [style*="; color: rgb(0, 49, 137)"],
+  [style^="color: rgb(83, 74, 183)"], [style*="; color: rgb(83, 74, 183)"],
+  [style^="color: rgb(108, 99, 255)"], [style*="; color: rgb(108, 99, 255)"],
+  [style^="color: rgb(221, 0, 0)"], [style*="; color: rgb(221, 0, 0)"],
+  [style^="color: rgb(188, 0, 45)"], [style*="; color: rgb(188, 0, 45)"]
+) { color: var(--wl-accent) !important; }
+
+:root[data-wl-surface="editorial"][data-theme="dark"] .wl-stories-hub :is(
+  [style*="color:#d97706" i], [style*="color: #d97706" i]
+) { color: #f2b65a !important; }
+:root[data-wl-surface="editorial"][data-theme="dark"] .wl-story-level-chip {
+  color: #fff !important;
+  background: #047857 !important;
+}
+
+/* Korean lesson runtime: legacy stages use a standalone light palette in
+   inline styles. Normalize surfaces and roles inside the runtime only. */
+:root[data-wl-surface="editorial"][data-theme="dark"] .wl-korean-runtime-page :is(
+  [style*="background:#fff;" i], [style*="background: #fff;" i],
+  [style*="background: rgb(255, 255, 255)"]
+) { background: var(--wl-surface) !important; }
+:root[data-wl-surface="editorial"][data-theme="dark"] .wl-korean-runtime-page :is(
+  [style*="background:#f8f9fa;" i], [style*="background: #f8f9fa;" i],
+  [style*="background:#e9ecef;" i], [style*="background: #e9ecef;" i],
+  [style*="background: rgb(248, 249, 250)"], [style*="background: rgb(233, 236, 239)"],
+  [style*="background:rgba(108,99,255" i], [style*="background: rgba(108,99,255" i],
+  [style*="background: rgba(108, 99, 255"]
+) { background: var(--wl-surface-raised) !important; }
+:root[data-wl-surface="editorial"][data-theme="dark"] .wl-korean-runtime-page :is(
+  [style^="color:#1a1a2e" i], [style*=";color:#1a1a2e" i], [style*="; color: #1a1a2e" i],
+  [style^="color: rgb(26, 26, 46)"], [style*="; color: rgb(26, 26, 46)"]
+) { color: var(--wl-text) !important; }
+:root[data-wl-surface="editorial"][data-theme="dark"] .wl-korean-runtime-page :is(
+  [style^="color:#6c757d" i], [style*=";color:#6c757d" i], [style*="; color: #6c757d" i],
+  [style^="color:#adb5bd" i], [style*=";color:#adb5bd" i], [style*="; color: #adb5bd" i],
+  [style^="color: rgb(108, 117, 125)"], [style*="; color: rgb(108, 117, 125)"],
+  [style^="color: rgb(173, 181, 189)"], [style*="; color: rgb(173, 181, 189)"]
+) { color: var(--wl-text-soft) !important; }
+:root[data-wl-surface="editorial"][data-theme="dark"] .wl-korean-runtime-page :is(
+  [style^="color:#6c63ff" i], [style*=";color:#6c63ff" i], [style*="; color: #6c63ff" i],
+  [style^="color:#8b5cf6" i], [style*=";color:#8b5cf6" i], [style*="; color: #8b5cf6" i],
+  [style^="color:#0ea5e9" i], [style*=";color:#0ea5e9" i], [style*="; color: #0ea5e9" i],
+  [style^="color:#f97316" i], [style*=";color:#f97316" i], [style*="; color: #f97316" i],
+  [style^="color:#e6930a" i], [style*=";color:#e6930a" i], [style*="; color: #e6930a" i],
+  [style^="color: rgb(108, 99, 255)"], [style*="; color: rgb(108, 99, 255)"],
+  [style^="color: rgb(139, 92, 246)"], [style*="; color: rgb(139, 92, 246)"],
+  [style^="color: rgb(14, 165, 233)"], [style*="; color: rgb(14, 165, 233)"],
+  [style^="color: rgb(249, 115, 22)"], [style*="; color: rgb(249, 115, 22)"],
+  [style^="color: rgb(230, 147, 10)"], [style*="; color: rgb(230, 147, 10)"]
+) { color: var(--wl-accent) !important; }
+:root[data-wl-surface="editorial"][data-theme="dark"] .wl-korean-runtime-page :is(
+  [style^="color:#22c55e" i], [style*=";color:#22c55e" i], [style*="; color: #22c55e" i],
+  [style^="color:#2d9b4e" i], [style*=";color:#2d9b4e" i], [style*="; color: #2d9b4e" i],
+  [style^="color:#059669" i], [style*=";color:#059669" i], [style*="; color: #059669" i],
+  [style^="color: rgb(45, 155, 78)"], [style*="; color: rgb(45, 155, 78)"],
+  [style^="color: rgb(5, 150, 105)"], [style*="; color: rgb(5, 150, 105)"]
+) { color: #45c88a !important; }
+:root[data-wl-surface="editorial"][data-theme="dark"] .wl-korean-runtime-page :is(
+  [style^="color:#dc3545" i], [style*=";color:#dc3545" i], [style*="; color: #dc3545" i],
+  [style^="color:#dc2626" i], [style*=";color:#dc2626" i], [style*="; color: #dc2626" i],
+  [style^="color: rgb(220, 53, 69)"], [style*="; color: rgb(220, 53, 69)"],
+  [style^="color: rgb(220, 38, 38)"], [style*="; color: rgb(220, 38, 38)"]
+) { color: #ff7b85 !important; }
+:root[data-wl-surface="editorial"][data-theme="dark"] .wl-korean-runtime-page :is(
+  [style*="background:#6c63ff;" i], [style*="background: #6c63ff;" i],
+  [style*="background:#8b5cf6;" i], [style*="background: #8b5cf6;" i],
+  [style*="background:#0ea5e9;" i], [style*="background: #0ea5e9;" i],
+  [style*="background:#f97316;" i], [style*="background: #f97316;" i],
+  [style*="background: rgb(108, 99, 255)"], [style*="background: rgb(139, 92, 246)"],
+  [style*="background: rgb(14, 165, 233)"], [style*="background: rgb(249, 115, 22)"]
+) { color: #fff !important; background: var(--wl-accent-action) !important; }
+:root[data-wl-surface="editorial"][data-theme="dark"] .wl-korean-runtime-page :is(
+  [style*="background:#2d9b4e;" i], [style*="background: #2d9b4e;" i],
+  [style*="background: rgb(45, 155, 78)"]
+) { color: #fff !important; background: #087a3d !important; }
+:root[data-wl-surface="editorial"][data-theme="dark"] .wl-korean-runtime-page :is(
+  [style*="opacity: 0.3"], [style*="opacity:0.3"]
+) {
+  opacity: .75 !important;
+}
+
+/* Exam colours keep their identity in light mode. Dark mode separates the
+   readable text accent from filled actions. */
+:root[data-wl-surface="editorial"][data-theme="dark"] :is(.wl-exam-hero, .prac-shell, .prac-intro, .prac-topbar) {
+  --exam-color: var(--wl-accent) !important;
+  --exam-color-dark: var(--wl-accent-action) !important;
+}
+:root[data-wl-surface="editorial"][data-theme="dark"] :is(.wl-level-chip, .prac-lead-gate__btn) {
+  color: #fff !important;
+  background: var(--wl-accent-action) !important;
+}
+:root[data-wl-surface="editorial"][data-theme="dark"] .wl-exam-status-chip {
+  color: var(--wl-accent) !important;
+  background: color-mix(in srgb, var(--wl-accent) 12%, var(--wl-surface)) !important;
+  border-color: color-mix(in srgb, var(--wl-accent) 36%, var(--wl-border)) !important;
+}
+:root[data-wl-surface="editorial"][data-theme="dark"] .prac-lead-gate__card { background: var(--wl-surface); }

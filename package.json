@@ -14,6 +14,7 @@
     "check:practica-catalog": "node scripts/check-practica-catalog.mjs",
     "check:seo-snippets": "node --experimental-strip-types --no-warnings scripts/check-seo-snippets.mjs",
     "audit:writing-curriculum": "node scripts/audit-writing-curriculum.mjs",
+    "audit:dark-mode": "node scripts/audit-dark-mode.mjs",
     "check:reading-content": "node scripts/check-reading-content.mjs",
     "check:listening-series": "node scripts/validate-listening-series.mjs",
     "test:reading": "node --test tests/reading-content.test.mjs",

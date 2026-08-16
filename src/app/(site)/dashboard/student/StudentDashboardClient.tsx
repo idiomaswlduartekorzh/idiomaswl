@@ -907,7 +907,7 @@ export default function StudentDashboardClient({ name, plan, streak, stats, rece
           font-weight: 600;
         }
         @media (prefers-color-scheme: dark) {
-          .std-nav-item--active { background: rgba(200,32,46,0.12); }
+          :root:not([data-theme="light"]) .std-nav-item--active { background: rgba(200,32,46,0.12); }
         }
         .std-nav-item__icon { font-size: 14px; width: 18px; text-align: center; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
         .std-sidebar__footer {

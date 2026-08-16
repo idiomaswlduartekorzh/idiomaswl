@@ -215,7 +215,7 @@ export default function TOEFLHubClient() {
             {/* Score scale */}
             <div style={{ display: 'flex', gap: '0.4rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
               {[['0-41','Básico','#dc2626'],['42-71','Intermedio','#f59e0b'],['72-94','Avanzado','#1a4fcc'],['95-120','Superior','#059669']].map(([score,label,color]) => (
-                <span key={score} style={{ fontSize: '0.72rem', padding: '0.2rem 0.65rem', borderRadius: 20, background: `${color}15`, color, border: `1px solid ${color}40`, fontFamily: 'var(--mono)', fontWeight: 700 }}>
+                <span key={score} className="wl-score-chip" style={{ fontSize: '0.72rem', padding: '0.2rem 0.65rem', borderRadius: 20, background: `${color}15`, color, border: `1px solid ${color}40`, fontFamily: 'var(--mono)', fontWeight: 700 }}>
                   {score} — {label}
                 </span>
               ))}
