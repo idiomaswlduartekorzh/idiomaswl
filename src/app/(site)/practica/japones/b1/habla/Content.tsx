@@ -1,8 +1,5 @@
-'use client';
-import { useState } from 'react';
-import Link from 'next/link';
-
-const COLOR = '#d97706';
+import Link from 'next/link'
+import SpeakingPractice from '@/components/practica/SpeakingPractice'
 
 interface Phrase {
   id: number;
@@ -41,103 +38,32 @@ const PHRASES: Phrase[] = [
 const CATEGORIES = ['Todos', 'Opiniones', 'Acuerdo/Desacuerdo', 'Clarificación', 'Sugerencias', 'Registro formal', 'Frases de debate'];
 
 export default function HablaJaponesB1() {
-  const [filter, setFilter] = useState('Todos');
-  const [practiced, setPracticed] = useState<Set<number>>(new Set());
-  const [expanded, setExpanded] = useState<number | null>(null);
-  const [showTranslit, setShowTranslit] = useState(true);
-
-  const shown = filter === 'Todos' ? PHRASES : PHRASES.filter(p => p.category === filter);
-  const pct = Math.round((practiced.size / PHRASES.length) * 100);
-
-  function mark(id: number) {
-    setPracticed(prev => {
-      const next = new Set(prev);
-      next.has(id) ? next.delete(id) : next.add(id);
-      return next;
-    });
-  }
-
   return (
-    <section className="wl-section">
-      <div className="wrap" style={{ maxWidth: 780 }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
-          <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
-          <span>/</span>
-          <Link href="/practica/japones/b1" style={{ color: 'var(--muted)', textDecoration: 'none' }}>🇯🇵 Japonés B1</Link>
-          <span>/</span>
-          <span style={{ color: COLOR, fontWeight: 800 }}>🗣 Habla</span>
-        </div>
-
-        <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />話す練習 · Japonés B1</p>
-        <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: '0 0 0.5rem', fontWeight: 700 }}>Expresión oral B1</h1>
-        <p style={{ color: 'var(--muted)', fontSize: '1rem', maxWidth: 560, margin: '0 0 2rem' }}>
-          20 expresiones B1 para debates, reuniones y conversaciones formales en japonés. Incluye romaji y pronunciación.
-        </p>
-
-        <div style={{ marginBottom: '1.5rem' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.4rem' }}>
-            <span style={{ fontSize: '0.8rem', color: 'var(--muted)', fontFamily: 'var(--mono)' }}>Progreso: {practiced.size}/{PHRASES.length} practicadas</span>
-            <span style={{ fontSize: '0.8rem', fontWeight: 700, color: COLOR, fontFamily: 'var(--mono)' }}>{pct}%</span>
-          </div>
-          <div style={{ height: 6, borderRadius: 99, background: 'var(--line-soft)', overflow: 'hidden' }}>
-            <div style={{ height: '100%', width: `${pct}%`, background: COLOR, borderRadius: 99, transition: 'width 0.3s' }} />
-          </div>
-        </div>
-
-        <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '1.5rem', alignItems: 'center' }}>
-          <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', flex: 1 }}>
-            {CATEGORIES.map(cat => (
-              <button key={cat} onClick={() => setFilter(cat)} style={{ fontSize: '0.75rem', padding: '0.3rem 0.7rem', borderRadius: 20, border: `1.5px solid ${filter === cat ? COLOR : 'var(--line-soft)'}`, background: filter === cat ? COLOR : 'transparent', color: filter === cat ? '#fff' : 'var(--muted)', fontWeight: 600, cursor: 'pointer', transition: 'all 0.15s' }}>
-                {cat}
-              </button>
-            ))}
-          </div>
-          <button onClick={() => setShowTranslit(v => !v)} style={{ fontSize: '0.75rem', padding: '0.3rem 0.8rem', borderRadius: 20, border: `1.5px solid var(--line-soft)`, background: showTranslit ? 'var(--line-soft)' : 'transparent', color: 'var(--muted)', fontWeight: 600, cursor: 'pointer', whiteSpace: 'nowrap' }}>
-            {showTranslit ? '▲ Ocultar romaji' : '▼ Ver romaji'}
-          </button>
-        </div>
-
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-          {shown.map(p => (
-            <div key={p.id} style={{ border: `1.5px solid ${practiced.has(p.id) ? COLOR : 'var(--line-soft)'}`, borderRadius: 14, overflow: 'hidden', transition: 'border-color 0.2s' }}>
-              <div style={{ padding: '1rem 1.25rem', display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
-                <button onClick={() => mark(p.id)} style={{ width: 28, height: 28, borderRadius: 8, border: `2px solid ${practiced.has(p.id) ? COLOR : 'var(--line-soft)'}`, background: practiced.has(p.id) ? COLOR : 'transparent', color: '#fff', fontSize: '0.85rem', cursor: 'pointer', flexShrink: 0, marginTop: 2, display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'all 0.2s' }}>
-                  {practiced.has(p.id) ? '✓' : ''}
-                </button>
-                <div style={{ flex: 1 }}>
-                  <div style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--ink)', marginBottom: '0.2rem' }}>{p.phrase}</div>
-                  {showTranslit && (
-                    <>
-                      <div style={{ fontSize: '0.82rem', color: 'var(--wl-on-panel-ok, #059669)', marginBottom: '0.1rem', fontFamily: 'var(--mono)' }}>{p.romaji}</div>
-                      <div style={{ fontSize: '0.78rem', color: 'var(--wl-on-panel-warn, #d97706)', marginBottom: '0.2rem', fontStyle: 'italic' }}>{p.phonetic}</div>
-                    </>
-                  )}
-                  <div style={{ fontSize: '0.85rem', color: 'var(--muted)', marginBottom: '0.3rem' }}>{p.es}</div>
-                  <div style={{ fontSize: '0.75rem', color: 'var(--muted)', fontStyle: 'italic' }}>{p.context}</div>
-                </div>
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '0.4rem' }}>
-                  <span style={{ fontSize: '0.65rem', padding: '0.15rem 0.5rem', borderRadius: 6, background: 'rgba(217,119,6,0.1)', color: COLOR, fontFamily: 'var(--mono)', fontWeight: 600, whiteSpace: 'nowrap' }}>{p.category}</span>
-                  <button onClick={() => setExpanded(expanded === p.id ? null : p.id)} style={{ fontSize: '0.72rem', color: COLOR, background: 'none', border: 'none', cursor: 'pointer', fontWeight: 600 }}>
-                    {expanded === p.id ? '▲ menos' : '▼ nota'}
-                  </button>
-                </div>
-              </div>
-              {expanded === p.id && (
-                <div style={{ padding: '0.75rem 1.25rem', borderTop: '1px solid var(--line-soft)', background: 'rgba(217,119,6,0.04)', fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-                  💡 {p.note}
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-
-        <div style={{ marginTop: '2rem', padding: '1.1rem 1.3rem', borderRadius: 14, background: 'rgba(217,119,6,0.06)', border: '1px solid rgba(217,119,6,0.18)', fontSize: '0.84rem', lineHeight: 1.6, color: 'var(--muted)' }}>
-          <strong style={{ color: 'var(--ink)' }}>¿Quieres seguir practicando?</strong> Refuerza tu vocabulario en{' '}
-          <Link href="/practica/japones/b1/vocabulario" style={{ color: COLOR, fontWeight: 700 }}>Vocabulario B1</Link>{' '}
+    <SpeakingPractice
+      hubHref="/practica/japones/b1"
+      hubLabel="🇯🇵 Japonés B1"
+      eyebrow="話す練習 · Japonés B1"
+      title="Expresión oral B1"
+      lead="20 expresiones B1 para debates, reuniones y conversaciones formales en japonés. Incluye romaji y pronunciación."
+      categories={CATEGORIES.slice(1)}
+      phrases={PHRASES.map((p) => ({
+          id: p.id,
+          phrase: p.phrase,
+          script: p.romaji,
+          phonetic: p.phonetic,
+          es: p.es,
+          context: p.context,
+          note: p.note,
+          category: p.category,
+      }))}
+      footer={
+        <>
+          <strong>¿Quieres seguir practicando?</strong> Refuerza tu vocabulario en{' '}
+          <Link href="/practica/japones/b1/vocabulario">Vocabulario B1</Link>{' '}
           o practica la comprensión escrita en{' '}
-          <Link href="/practica/japones/b1/lectura" style={{ color: COLOR, fontWeight: 700 }}>Lectura B1</Link>.
-        </div>
-      </div>
-    </section>
-  );
+          <Link href="/practica/japones/b1/lectura">Lectura B1</Link>.
+        </>
+      }
+    />
+  )
 }
