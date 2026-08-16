@@ -2,13 +2,19 @@
 // Va encima de la lista de niveles A1/A2/B1… porque las historias no son un
 // nivel: son un formato aparte que cruza lectura y escucha. La misma tarjeta en
 // los ocho idiomas, para que se reconozca al cambiar de idioma.
+//
+// Comparte forma con las filas de nivel de LanguageHub —chapa, texto, flecha—
+// para que la excepción no parezca un pegote. Lo que la distingue es su acento
+// propio, no una geometría distinta.
 
 import Link from 'next/link';
 import type { HistoriaLang } from '@/data/practica/historias/types';
 import { hasAudio } from '@/data/practica/historias/types';
 import { getHistorias } from '@/data/practica/historias';
+import s from './LanguageHub.module.css';
 
-const COLOR = '#be185d';
+/** El rosa de Historias. Es el único formato que no es una destreza, y se le nota. */
+const ACENTO = 'var(--wlp-accent-historias)';
 
 export default function HistoriasCard({ lang }: { lang: HistoriaLang }) {
   const historias = getHistorias(lang);
@@ -24,31 +30,25 @@ export default function HistoriasCard({ lang }: { lang: HistoriaLang }) {
         : `${historias.length} historias · texto completo · audios en grabación`;
 
   return (
-    <Link href={`/practica/${lang}/historias`} style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
-      <div style={{
-        display: 'flex', alignItems: 'center', gap: '1.25rem',
-        padding: '1.2rem 1.5rem',
-        border: `1.5px solid ${COLOR}47`,
-        borderRadius: 16,
-        background: `linear-gradient(135deg, ${COLOR}0f 0%, transparent 100%)`,
-      }}>
-        <div style={{
-          width: 58, height: 58, borderRadius: 14, flexShrink: 0,
-          background: COLOR, color: '#fff',
-          display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem',
-        }}>🎧</div>
-        <div style={{ flex: 1, minWidth: 0 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.55rem', marginBottom: '0.2rem', flexWrap: 'wrap' }}>
-            <span style={{ fontSize: '1.05rem', fontWeight: 800, color: 'var(--ink)' }}>Historias</span>
-            <span style={{ fontSize: '0.6rem', fontWeight: 800, background: COLOR, color: '#fff', borderRadius: 5, padding: '0.1rem 0.4rem', fontFamily: 'var(--mono)' }}>{nivel}</span>
+    <Link
+      href={`/practica/${lang}/historias`}
+      className="wlp-card wlp-card--path"
+      style={{ '--wlp-accent': ACENTO } as React.CSSProperties}
+    >
+      <div className={s.row}>
+        <span className={s.badge} aria-hidden="true">{nivel}</span>
+        <div className={s.body}>
+          <div className={s.titleRow}>
+            <span className={s.name}>Historias</span>
+            <span className={s.tag}>FORMATO</span>
           </div>
-          <p style={{ margin: 0, fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.5 }}>
+          <p className={s.desc}>
             Un conflicto real contado por las dos personas que lo vivieron. Lees, escuchas las dos
             notas de voz y decides tú quién tiene razón.
           </p>
-          <p style={{ margin: '0.4rem 0 0', fontSize: '0.73rem', color: COLOR, fontFamily: 'var(--mono)', fontWeight: 700 }}>{meta}</p>
+          <p className={s.count}>{meta}</p>
         </div>
-        <span style={{ fontSize: '1.2rem', color: COLOR, fontWeight: 700, flexShrink: 0 }}>→</span>
+        <span className={s.arrow} aria-hidden="true">→</span>
       </div>
     </Link>
   );
