@@ -40,7 +40,7 @@ export default function Image() {
         <div style={{ fontSize: 54, fontWeight: 800, color: '#fff', lineHeight: 1.1, letterSpacing: '-0.03em', flex: 1 }}>
           Práctica de
           <br />
-          <span style={{ color: '#5b8cff' }}>Conectores IELTS</span>
+          <span style={{ color: 'var(--wl-on-panel-link, #5b8cff)' }}>Conectores IELTS</span>
         </div>
 
         <div style={{ display: 'flex', gap: 12, marginBottom: 28 }}>

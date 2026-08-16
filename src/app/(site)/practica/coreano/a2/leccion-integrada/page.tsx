@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function LeccionIntegradaPage() {
   return (
-    <section style={{ width: '100%', minHeight: '100vh', background: '#f5f7fb' }}>
+    <section style={{ width: '100%', minHeight: '100vh', background: 'var(--wl-panel-raised, #f5f7fb)' }}>
       <LeccionIntegradaClient />
     </section>
   );

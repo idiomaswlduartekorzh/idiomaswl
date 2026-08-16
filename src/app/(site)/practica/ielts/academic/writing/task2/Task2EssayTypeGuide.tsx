@@ -73,7 +73,7 @@ export default function Task2EssayTypeGuide() {
           </p>
         </div>
         <div style={{ padding: '1rem 1.15rem', borderBottom: '1px solid var(--line-soft)', background: 'var(--bg-2)' }}>
-          <p style={{ margin: '0 0 0.7rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase' }}>Visual architecture: choose the right essay skeleton</p>
+          <p style={{ margin: '0 0 0.7rem', color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase' }}>Visual architecture: choose the right essay skeleton</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '0.75rem' }}>
             {TASK2_ESSAY_TYPES.map((type) => (
               <div key={type.name} style={{ padding: '0.65rem', border: '1px solid var(--line-soft)', borderRadius: 8, background: 'var(--bg)' }}>
@@ -86,7 +86,7 @@ export default function Task2EssayTypeGuide() {
           {TASK2_ESSAY_TYPES.map((type) => (
             <article key={type.name} style={{ padding: '1rem', borderRight: '1px solid var(--line-soft)', borderBottom: '1px solid var(--line-soft)' }}>
               <h3 style={{ margin: '0 0 0.25rem', fontSize: '0.98rem' }}>{type.name}</h3>
-              <p style={{ margin: '0 0 0.45rem', color: '#0f3d8c', fontWeight: 800, fontSize: '0.76rem', fontFamily: 'var(--mono)', lineHeight: 1.45 }}>
+              <p style={{ margin: '0 0 0.45rem', color: 'var(--wl-on-panel-link, #0f3d8c)', fontWeight: 800, fontSize: '0.76rem', fontFamily: 'var(--mono)', lineHeight: 1.45 }}>
                 {type.signal}
               </p>
               <p style={{ margin: '0 0 0.55rem', color: 'var(--ink-2)', lineHeight: 1.55, fontSize: '0.84rem' }}>
@@ -95,10 +95,10 @@ export default function Task2EssayTypeGuide() {
               <ol style={{ margin: '0 0 0.6rem', paddingLeft: '1.05rem', color: 'var(--ink-2)', fontSize: '0.78rem', lineHeight: 1.5 }}>
                 {type.lego.map((block) => <li key={block}>{block}</li>)}
               </ol>
-              <p style={{ margin: '0 0 0.55rem', color: '#dc2626', lineHeight: 1.45, fontSize: '0.78rem' }}>
+              <p style={{ margin: '0 0 0.55rem', color: 'var(--wl-on-panel-alert, #dc2626)', lineHeight: 1.45, fontSize: '0.78rem' }}>
                 <strong>Common trap:</strong> {type.trap}
               </p>
-              <Link href={type.route} style={{ color: '#0f3d8c', fontWeight: 800, fontSize: '0.82rem', textDecoration: 'none' }}>
+              <Link href={type.route} style={{ color: 'var(--wl-on-panel-link, #0f3d8c)', fontWeight: 800, fontSize: '0.82rem', textDecoration: 'none' }}>
                 Practise this question type →
               </Link>
             </article>

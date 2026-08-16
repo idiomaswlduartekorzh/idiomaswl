@@ -27,7 +27,7 @@
 
 .hero aside {
   align-content: center;
-  background: var(--reading-navy);
+  background: var(--reading-navy-panel);
   color: #fff;
   display: grid;
   padding: 1.4rem;
@@ -57,8 +57,8 @@
   touch-action: manipulation;
 }
 
-.heroActions a:first-child { background: var(--reading-navy); color: #fff; }
-.heroActions a:last-child { background: #fff; color: var(--reading-navy); }
+.heroActions a:first-child { background: var(--reading-navy-panel); color: #fff; }
+.heroActions a:last-child { background: var(--wl-panel-card, #fff); color: var(--reading-navy); }
 .heroActions a:hover,
 .heroActions a:focus-visible { box-shadow: 0 0 0 3px rgba(15, 111, 141, 0.18); }
 
@@ -76,7 +76,7 @@
 }
 
 .methodGrid article {
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid var(--reading-line);
   border-top: 4px solid var(--reading-blue);
   display: flex;
@@ -96,9 +96,9 @@
 .practiceSection > section { border-radius: 0 !important; }
 
 .bankBoundary {
-  background: #fff7e8;
+  background: var(--wl-panel-raised, #fff7e8);
   border: 1px solid #e7c77f;
-  color: #654d1e;
+  color: var(--wl-on-panel-warn, #654d1e);
   font-size: 0.82rem;
   line-height: 1.6;
   margin: 0.8rem 0 0;
@@ -113,7 +113,7 @@
 }
 
 .nextGrid a {
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid var(--reading-line);
   color: var(--reading-navy);
   display: grid;

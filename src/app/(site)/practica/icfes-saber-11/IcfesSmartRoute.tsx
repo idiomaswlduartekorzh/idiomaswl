@@ -397,11 +397,11 @@ function ProgressPanel({ progress, queueIndex, queueLength, mode }: {
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.6rem', marginTop: '1rem' }}>
         <div style={{ border: '1px solid rgba(5,150,105,0.18)', background: 'rgba(5,150,105,0.06)', borderRadius: 12, padding: '0.7rem' }}>
-          <span style={{ display: 'block', fontSize: '0.68rem', color: '#059669', fontFamily: 'var(--mono)', fontWeight: 800 }}>Fuertes</span>
+          <span style={{ display: 'block', fontSize: '0.68rem', color: 'var(--wl-on-panel-ok, #059669)', fontFamily: 'var(--mono)', fontWeight: 800 }}>Fuertes</span>
           <strong style={{ color: 'var(--ink)' }}>{progress.strengths.length}</strong>
         </div>
         <div style={{ border: '1px solid rgba(220,38,38,0.18)', background: 'rgba(220,38,38,0.06)', borderRadius: 12, padding: '0.7rem' }}>
-          <span style={{ display: 'block', fontSize: '0.68rem', color: '#dc2626', fontFamily: 'var(--mono)', fontWeight: 800 }}>Débiles</span>
+          <span style={{ display: 'block', fontSize: '0.68rem', color: 'var(--wl-on-panel-alert, #dc2626)', fontFamily: 'var(--mono)', fontWeight: 800 }}>Débiles</span>
           <strong style={{ color: 'var(--ink)' }}>{progress.weaknesses.length}</strong>
         </div>
       </div>
@@ -452,7 +452,7 @@ function FeedbackPanel({ feedback, question }: { feedback: FeedbackState; questi
         </p>
       )}
       {paceMessage && (
-        <div style={{ display: 'flex', gap: '0.45rem', alignItems: 'flex-start', color: '#92400e', background: 'rgba(245,158,11,0.1)', border: '1px solid rgba(245,158,11,0.24)', borderRadius: 10, padding: '0.65rem 0.75rem', fontSize: '0.82rem', lineHeight: 1.45 }}>
+        <div style={{ display: 'flex', gap: '0.45rem', alignItems: 'flex-start', color: 'var(--wl-on-panel-warn, #92400e)', background: 'rgba(245,158,11,0.1)', border: '1px solid rgba(245,158,11,0.24)', borderRadius: 10, padding: '0.65rem 0.75rem', fontSize: '0.82rem', lineHeight: 1.45 }}>
           <Gauge size={16} style={{ flexShrink: 0, marginTop: 1 }} />
           <span>{paceMessage}</span>
         </div>
@@ -850,13 +850,13 @@ export default function IcfesSmartRoute({ onBack }: IcfesSmartRouteProps) {
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))', gap: '0.85rem', marginBottom: '1.35rem' }}>
           <div style={{ border: '1px solid rgba(5,150,105,0.2)', background: 'rgba(5,150,105,0.06)', borderRadius: 14, padding: '1rem' }}>
-            <strong style={{ color: '#059669' }}>Puntos fuertes</strong>
+            <strong style={{ color: 'var(--wl-on-panel-ok, #059669)' }}>Puntos fuertes</strong>
             <p style={{ margin: '0.45rem 0 0', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.88rem' }}>
               {diagnosticResult.strengths.length ? diagnosticResult.strengths.map((skill) => ICFES_SKILL_LABELS[skill]).join(', ') : 'Aún no hay fortalezas estables; se formarán con más respuestas.'}
             </p>
           </div>
           <div style={{ border: '1px solid rgba(220,38,38,0.2)', background: 'rgba(220,38,38,0.06)', borderRadius: 14, padding: '1rem' }}>
-            <strong style={{ color: '#dc2626' }}>Prioridad de refuerzo</strong>
+            <strong style={{ color: 'var(--wl-on-panel-alert, #dc2626)' }}>Prioridad de refuerzo</strong>
             <p style={{ margin: '0.45rem 0 0', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.88rem' }}>
               {diagnosticResult.weaknesses.length ? diagnosticResult.weaknesses.map((skill) => ICFES_SKILL_LABELS[skill]).join(', ') : 'La primera sesión medirá con más detalle tus habilidades débiles.'}
             </p>
@@ -890,7 +890,7 @@ export default function IcfesSmartRoute({ onBack }: IcfesSmartRouteProps) {
             <p style={{ margin: '0.45rem 0 0', color: 'var(--muted)', lineHeight: 1.6 }}>{guide.explanation}</p>
           </div>
           <div style={{ border: '1px solid rgba(15,61,140,0.16)', borderRadius: 14, padding: '1rem', background: 'rgba(15,61,140,0.05)' }}>
-            <strong style={{ color: '#0f3d8c' }}>Ejemplo resuelto</strong>
+            <strong style={{ color: 'var(--wl-on-panel-link, #0f3d8c)' }}>Ejemplo resuelto</strong>
             <p style={{ margin: '0.45rem 0 0', color: 'var(--muted)', lineHeight: 1.6 }}>{guide.example}</p>
           </div>
         </div>
@@ -921,13 +921,13 @@ export default function IcfesSmartRoute({ onBack }: IcfesSmartRouteProps) {
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(230px, 1fr))', gap: '0.9rem', marginBottom: '1.25rem' }}>
           <div style={{ border: '1px solid rgba(5,150,105,0.2)', background: 'rgba(5,150,105,0.06)', borderRadius: 14, padding: '1rem' }}>
-            <strong style={{ color: '#059669' }}>Puntos fuertes</strong>
+            <strong style={{ color: 'var(--wl-on-panel-ok, #059669)' }}>Puntos fuertes</strong>
             <p style={{ margin: '0.45rem 0 0', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.88rem' }}>
               {lastReport.strengths.length ? lastReport.strengths.map((skill) => ICFES_SKILL_LABELS[skill]).join(', ') : 'Aún no hay fortalezas estables en este nivel.'}
             </p>
           </div>
           <div style={{ border: '1px solid rgba(220,38,38,0.2)', background: 'rgba(220,38,38,0.06)', borderRadius: 14, padding: '1rem' }}>
-            <strong style={{ color: '#dc2626' }}>Puntos débiles</strong>
+            <strong style={{ color: 'var(--wl-on-panel-alert, #dc2626)' }}>Puntos débiles</strong>
             <p style={{ margin: '0.45rem 0 0', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.88rem' }}>
               {lastReport.weaknesses.length ? lastReport.weaknesses.map((skill) => ICFES_SKILL_LABELS[skill]).join(', ') : 'No apareció una debilidad crítica.'}
             </p>

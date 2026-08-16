@@ -99,7 +99,7 @@ export default function InglesB2Page() {
         </div>
 
         <div style={{ marginTop: '2rem', padding: '0.9rem 1.2rem', borderRadius: 12, background: 'rgba(3,105,161,0.06)', border: '1px solid rgba(3,105,161,0.15)', fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-          💡 <strong style={{ color: 'var(--ink)' }}>Consejo:</strong> Empieza por <strong style={{ color: '#0369a1' }}>Use of English</strong> — es la sección donde más estudiantes pierden puntos en el FCE y en el ICFES. Los errores en cloze y formación de palabras son los más sistemáticos y los más fáciles de corregir con práctica dirigida.
+          💡 <strong style={{ color: 'var(--ink)' }}>Consejo:</strong> Empieza por <strong style={{ color: 'var(--wl-on-panel-teal, #0369a1)' }}>Use of English</strong> — es la sección donde más estudiantes pierden puntos en el FCE y en el ICFES. Los errores en cloze y formación de palabras son los más sistemáticos y los más fáciles de corregir con práctica dirigida.
         </div>
       </div>
     </section>

@@ -88,7 +88,7 @@ export default function HablaCoreanoA1() {
                   <div style={{ flex: 1 }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.3rem', flexWrap: 'wrap' }}>
                       <span style={{ fontSize: '0.6rem', fontFamily: 'var(--mono)', fontWeight: 700, color: COLOR, textTransform: 'uppercase' }}>{p.category}</span>
-                      {isPracticed && <span style={{ fontSize: '0.6rem', color: '#059669', fontWeight: 700 }}>✓ practicada</span>}
+                      {isPracticed && <span style={{ fontSize: '0.6rem', color: 'var(--wl-on-panel-ok, #059669)', fontWeight: 700 }}>✓ practicada</span>}
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '1.2rem', color: 'var(--ink)', marginBottom: '0.2rem', lineHeight: 1.4 }}>{p.hangul}</div>
                     <div style={{ fontSize: '0.84rem', color: COLOR, fontWeight: 600, marginBottom: '0.1rem', fontStyle: 'italic' }}>{p.romanization}</div>

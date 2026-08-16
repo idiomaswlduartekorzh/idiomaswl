@@ -34,7 +34,7 @@ export default function GrammarIndexPage() {
             <span>/</span>
             <Link href="/practica/frances/a2" style={{ color: 'var(--muted)', textDecoration: 'none' }}>A2</Link>
             <span>/</span>
-            <span style={{ color: '#1a2ecc', fontWeight: 800 }}>Gramática</span>
+            <span style={{ color: 'var(--wl-on-panel-link, #1a2ecc)', fontWeight: 800 }}>Gramática</span>
           </nav>
 
           <section className="topic-hero" style={{ paddingBottom: '1.5rem' }}>

@@ -121,19 +121,19 @@ function shuffleOptions(korean: string, distractors: string[]): string[] {
 function getLevelInfo(correct: number, total: number) {
   const pct = correct / total;
   if (pct >= 0.85) return {
-    level: 'A2', emoji: '⭐', color: '#2563eb',
+    level: 'A2', emoji: '⭐', color: 'var(--wl-on-panel-link, #2563eb)',
     title: 'Excelente — Nivel A2',
     desc: 'Reconoces el vocabulario esencial con fluidez. Tienes una base sólida del coreano básico y estás listo para avanzar a gramática y frases completas.',
     next: 'Con un método estructurado puedes llegar a A2 consolidado en 2–3 meses.',
   };
   if (pct >= 0.5) return {
-    level: 'A1', emoji: '🌱', color: '#059669',
+    level: 'A1', emoji: '🌱', color: 'var(--wl-on-panel-ok, #059669)',
     title: 'Bien — Nivel A1',
     desc: 'Reconoces vocabulario elemental del coreano. Ya tienes una base inicial. Con práctica constante puedes consolidar el A1 rápidamente.',
     next: 'Enfócate en los primeros 5 pasos del método WeLearn para consolidar tu A1.',
   };
   return {
-    level: 'Principiante', emoji: '🔰', color: '#c8202e',
+    level: 'Principiante', emoji: '🔰', color: 'var(--wl-on-panel-alert, #c8202e)',
     title: 'Principiante',
     desc: 'Estás en la etapa inicial. El coreano es diferente al español, ¡pero con el método correcto avanzas rápido!',
     next: 'Empieza con el Hangul (alfabeto) en el Paso 1 del método WeLearn — en 2 días ya lees coreano.',

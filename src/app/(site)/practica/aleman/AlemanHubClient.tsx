@@ -236,7 +236,7 @@ function EscrituraA1() {
   if (submitted) return (
     <div className="wl-card" style={{ padding:'1.75rem', textAlign:'center' }}>
       <div style={{ fontSize:'2.5rem', marginBottom:'0.75rem' }}>✅</div>
-      <h2 style={{ margin:'0 0 0.5rem', color:'#059669' }}>¡Text gesendet!</h2>
+      <h2 style={{ margin:'0 0 0.5rem', color:'var(--wl-on-panel-ok, #059669)' }}>¡Text gesendet!</h2>
       <p style={{ color:'var(--muted)', fontSize:'0.9rem', margin:'0 0 1rem', maxWidth:420, marginLeft:'auto', marginRight:'auto' }}>Tu texto fue registrado. Un profesor de WeLearn lo revisará pronto.</p>
       <div style={{ padding:'1rem 1.25rem', borderRadius:12, background:'var(--bg-2)', border:'1px solid var(--line-soft)', marginBottom:'1.25rem', textAlign:'left', maxWidth:440, margin:'0 auto 1.25rem' }}><p style={{ margin:0, fontSize:'0.88rem', color:'var(--ink-2)', lineHeight:1.7, whiteSpace:'pre-wrap' }}>{text}</p></div>
       <button className="btn btn-ghost btn-sm" onClick={() => { setText(''); setSubmitted(false); }}>Einen anderen Text schreiben</button>
@@ -275,7 +275,7 @@ function HablaA1() {
       <div className="wl-card" style={{ padding:'1.5rem' }}>
         <p className="eyebrow" style={{ marginBottom:'0.5rem' }}><span className="ink-line" />Überlebensphrasen A1</p>
         <p style={{ margin:0, fontSize:'0.9rem', color:'var(--muted)', lineHeight:1.65 }}>Lee cada frase en voz alta. Usa la guía fonética. Marca si lo lograste o necesitas más práctica.</p>
-        {done>0&&<div style={{ marginTop:'0.75rem', display:'flex', alignItems:'center', gap:'0.75rem' }}><div style={{ flex:1, height:6, background:'var(--line-soft)', borderRadius:4 }}><div style={{ height:'100%', width:`${(done/PHRASES.length)*100}%`, background:'#059669', borderRadius:4, transition:'width 0.5s' }}/></div><span style={{ fontSize:'0.78rem', fontFamily:'var(--mono)', color:'#059669' }}>{done}/{PHRASES.length}</span></div>}
+        {done>0&&<div style={{ marginTop:'0.75rem', display:'flex', alignItems:'center', gap:'0.75rem' }}><div style={{ flex:1, height:6, background:'var(--line-soft)', borderRadius:4 }}><div style={{ height:'100%', width:`${(done/PHRASES.length)*100}%`, background:'#059669', borderRadius:4, transition:'width 0.5s' }}/></div><span style={{ fontSize:'0.78rem', fontFamily:'var(--mono)', color:'var(--wl-on-panel-ok, #059669)' }}>{done}/{PHRASES.length}</span></div>}
       </div>
       {PHRASES.map((p,i)=>{
         const s=status[i];
@@ -287,8 +287,8 @@ function HablaA1() {
               <div style={{ fontSize:'0.88rem', color:'var(--muted)' }}>{p.es}</div>
             </div>
             {!s?<div style={{ display:'flex', gap:'0.5rem', flexWrap:'wrap' }}>
-              <button onClick={() => setStatus(p=>({...p,[i]:'done'}))} style={{ padding:'0.45rem 1rem', borderRadius:8, border:'1.5px solid #059669', background:'rgba(5,150,105,0.08)', color:'#059669', fontSize:'0.85rem', fontWeight:700, cursor:'pointer', fontFamily:'inherit' }}>✓ Lo logré</button>
-              <button onClick={() => setStatus(p=>({...p,[i]:'retry'}))} style={{ padding:'0.45rem 1rem', borderRadius:8, border:'1.5px solid #f59e0b', background:'rgba(245,158,11,0.08)', color:'#d97706', fontSize:'0.85rem', fontWeight:700, cursor:'pointer', fontFamily:'inherit' }}>🔁 Necesito practicar</button>
+              <button onClick={() => setStatus(p=>({...p,[i]:'done'}))} style={{ padding:'0.45rem 1rem', borderRadius:8, border:'1.5px solid #059669', background:'rgba(5,150,105,0.08)', color:'var(--wl-on-panel-ok, #059669)', fontSize:'0.85rem', fontWeight:700, cursor:'pointer', fontFamily:'inherit' }}>✓ Lo logré</button>
+              <button onClick={() => setStatus(p=>({...p,[i]:'retry'}))} style={{ padding:'0.45rem 1rem', borderRadius:8, border:'1.5px solid #f59e0b', background:'rgba(245,158,11,0.08)', color:'var(--wl-on-panel-warn, #d97706)', fontSize:'0.85rem', fontWeight:700, cursor:'pointer', fontFamily:'inherit' }}>🔁 Necesito practicar</button>
             </div>:<div style={{ display:'flex', alignItems:'center', gap:'0.65rem' }}>
               <span style={{ fontSize:'0.85rem', fontWeight:700, color:s==='done'?'#059669':'#d97706' }}>{s==='done'?'✓ Completado':'🔁 Para practicar'}</span>
               <button onClick={() => setStatus(p=>{ const n={...p}; delete n[i]; return n; })} style={{ fontSize:'0.75rem', color:'var(--muted)', background:'none', border:'none', cursor:'pointer', textDecoration:'underline', fontFamily:'inherit' }}>Cambiar</button>
@@ -296,7 +296,7 @@ function HablaA1() {
           </div>
         );
       })}
-      {done===PHRASES.length&&<div className="wl-card" style={{ padding:'1.25rem', textAlign:'center', background:'rgba(5,150,105,0.07)', border:'1.5px solid #059669' }}><div style={{ fontSize:'2rem', marginBottom:'0.4rem' }}>🎉</div><p style={{ margin:0, fontWeight:700, color:'#059669' }}>¡Ausgezeichnet! Dominas las frases esenciales en alemán.</p></div>}
+      {done===PHRASES.length&&<div className="wl-card" style={{ padding:'1.25rem', textAlign:'center', background:'rgba(5,150,105,0.07)', border:'1.5px solid #059669' }}><div style={{ fontSize:'2rem', marginBottom:'0.4rem' }}>🎉</div><p style={{ margin:0, fontWeight:700, color:'var(--wl-on-panel-ok, #059669)' }}>¡Ausgezeichnet! Dominas las frases esenciales en alemán.</p></div>}
     </div>
   );
 }

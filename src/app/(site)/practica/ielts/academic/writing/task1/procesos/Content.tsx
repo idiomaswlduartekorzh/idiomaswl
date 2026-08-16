@@ -150,14 +150,14 @@ export default function ProcesosPage() {
           </div>
 
           <div id="process-example-panel" role="tabpanel" className="wl-card" style={{ padding: '1rem', marginBottom: '1.25rem', background: 'var(--bg-2)', overflowX: 'auto' }}>
-            <p style={{ margin: '0 0 0.55rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 900, textTransform: 'uppercase' }}>IELTS-style visual reference</p>
+            <p style={{ margin: '0 0 0.55rem', color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 900, textTransform: 'uppercase' }}>IELTS-style visual reference</p>
             <Task1ApprovedProcessVisual variant={ex.variant} />
           </div>
 
           {/* Grammar box */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '0.75rem', marginBottom: '1.5rem' }}>
             <div style={{ padding: '0.9rem', borderRadius: 10, background: 'rgba(15,61,140,0.05)', border: '1px solid rgba(15,61,140,0.15)' }}>
-              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Passive voice</p>
+              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Passive voice</p>
               <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--ink-2)', lineHeight: 1.65 }}>
                 Subject + <strong>is/are</strong> + past participle<br />
                 &ldquo;The material <strong>is heated</strong>&rdquo;<br />
@@ -165,7 +165,7 @@ export default function ProcesosPage() {
               </p>
             </div>
             <div style={{ padding: '0.9rem', borderRadius: 10, background: 'rgba(124,58,237,0.05)', border: '1px solid rgba(124,58,237,0.15)' }}>
-              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#7c3aed', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Sequencers</p>
+              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: 'var(--wl-on-panel-purple, #7c3aed)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Sequencers</p>
               <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--ink-2)', lineHeight: 1.65 }}>
                 First · Then · Next · After that · Subsequently · Once · Before · Finally
               </p>
@@ -181,7 +181,7 @@ export default function ProcesosPage() {
           </div>
 
           <div className="wl-card" style={{ padding: '1.25rem', borderLeft: '4px solid #0f3d8c', marginBottom: '1.25rem' }}>
-            <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.35rem' }}>Process</p>
+            <p style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.35rem' }}>Process</p>
             <p style={{ margin: 0, fontWeight: 700, fontSize: '1rem', color: 'var(--ink)' }}>{ex.title}</p>
           </div>
 
@@ -192,7 +192,7 @@ export default function ProcesosPage() {
               return (
                 <div key={step.n} className="wl-card" style={{ padding: '1.1rem' }}>
                   <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start', flexWrap: 'wrap' }}>
-                    <span style={{ fontFamily: 'var(--mono)', fontWeight: 800, fontSize: '0.9rem', color: '#0f3d8c', minWidth: 20 }}>{step.n}.</span>
+                    <span style={{ fontFamily: 'var(--mono)', fontWeight: 800, fontSize: '0.9rem', color: 'var(--wl-on-panel-link, #0f3d8c)', minWidth: 20 }}>{step.n}.</span>
                     <div style={{ flex: 1 }}>
                       <p style={{ margin: '0 0 0.5rem', fontSize: '0.85rem', color: 'var(--muted)' }}>
                         Active: <em style={{ color: 'var(--ink-2)' }}>{step.active}</em>
@@ -209,7 +209,7 @@ export default function ProcesosPage() {
                         </select>
                       </div>
                       {revealed && (
-                        <div style={{ marginTop: '0.5rem', padding: '0.5rem 0.75rem', borderRadius: 8, background: 'rgba(15,61,140,0.05)', fontSize: '0.85rem', color: '#0f3d8c', lineHeight: 1.6 }}>
+                        <div style={{ marginTop: '0.5rem', padding: '0.5rem 0.75rem', borderRadius: 8, background: 'rgba(15,61,140,0.05)', fontSize: '0.85rem', color: 'var(--wl-on-panel-link, #0f3d8c)', lineHeight: 1.6 }}>
                           <strong>{step.sequencer}</strong> {step.passive}
                         </div>
                       )}
@@ -229,7 +229,7 @@ export default function ProcesosPage() {
           {revealed && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               <div className="wl-card" style={{ padding: '1.25rem', borderLeft: '3px solid #059669' }}>
-                <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.5rem' }}>Complete model paragraph</p>
+                <p style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--wl-on-panel-ok, #059669)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.5rem' }}>Complete model paragraph</p>
                 <p style={{ margin: 0, fontSize: '0.92rem', lineHeight: 1.8, color: 'var(--ink)' }}>{ex.modelParagraph}</p>
               </div>
               <button className="btn btn-sm" onClick={next} style={{ alignSelf: 'flex-start' }}>

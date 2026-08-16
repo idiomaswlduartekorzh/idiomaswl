@@ -131,7 +131,7 @@ export default function CoreanoA2Page() {
         </div>
 
         <div style={{ marginTop: '2rem', padding: '0.9rem 1.2rem', borderRadius: 12, background: 'rgba(83,74,183,0.06)', border: '1px solid rgba(83,74,183,0.15)', fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-          💡 <strong style={{ color: 'var(--ink)' }}>팁 (tip):</strong> Empieza por <strong style={{ color: '#7c3aed' }}>문법 · Gramática</strong> para dominar el pasado 았/었어요, luego practica con <strong style={{ color: COLOR }}>읽기 · Lectura</strong> usando textos reales. El vocabulario de <strong style={{ color: '#e11d48' }}>어휘</strong> consolidará todo.
+          💡 <strong style={{ color: 'var(--ink)' }}>팁 (tip):</strong> Empieza por <strong style={{ color: 'var(--wl-on-panel-purple, #7c3aed)' }}>문법 · Gramática</strong> para dominar el pasado 았/었어요, luego practica con <strong style={{ color: COLOR }}>읽기 · Lectura</strong> usando textos reales. El vocabulario de <strong style={{ color: 'var(--wl-on-panel-alert, #e11d48)' }}>어휘</strong> consolidará todo.
         </div>
       </div>
     </section>

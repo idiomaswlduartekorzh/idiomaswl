@@ -129,7 +129,7 @@ export default function InglesB1Page() {
 
         {/* Tip */}
         <div style={{ marginTop: '2rem', padding: '0.9rem 1.2rem', borderRadius: 12, background: 'rgba(0,102,204,0.06)', border: '1px solid rgba(0,102,204,0.15)', fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-          💡 <strong style={{ color: 'var(--ink)' }}>Consejo:</strong> Empieza por <strong style={{ color: '#7c3aed' }}>Gramática</strong> para dominar el Present Perfect, luego aplícalo en <strong style={{ color: COLOR }}>Lectura</strong> y <strong style={{ color: '#059669' }}>Escritura</strong>.
+          💡 <strong style={{ color: 'var(--ink)' }}>Consejo:</strong> Empieza por <strong style={{ color: 'var(--wl-on-panel-purple, #7c3aed)' }}>Gramática</strong> para dominar el Present Perfect, luego aplícalo en <strong style={{ color: COLOR }}>Lectura</strong> y <strong style={{ color: 'var(--wl-on-panel-ok, #059669)' }}>Escritura</strong>.
         </div>
       </div>
     </section>

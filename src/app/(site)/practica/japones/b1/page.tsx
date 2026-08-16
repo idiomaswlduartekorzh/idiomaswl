@@ -125,7 +125,7 @@ export default function JaponesB1Page() {
         </div>
 
         <div style={{ marginTop: '2rem', padding: '0.9rem 1.2rem', borderRadius: 12, background: 'rgba(188,0,45,0.06)', border: '1px solid rgba(188,0,45,0.15)', fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-          💡 <strong style={{ color: 'var(--ink)' }}>ヒント (consejo):</strong> Empieza con <strong style={{ color: '#7c3aed' }}>文法 · Gramática</strong> para dominar la <strong style={{ color: COLOR }}>受身形 (voz pasiva)</strong>, luego practica en <strong style={{ color: COLOR }}>読む · Lectura</strong> y <strong style={{ color: '#d97706' }}>話す · Habla</strong>.
+          💡 <strong style={{ color: 'var(--ink)' }}>ヒント (consejo):</strong> Empieza con <strong style={{ color: 'var(--wl-on-panel-purple, #7c3aed)' }}>文法 · Gramática</strong> para dominar la <strong style={{ color: COLOR }}>受身形 (voz pasiva)</strong>, luego practica en <strong style={{ color: COLOR }}>読む · Lectura</strong> y <strong style={{ color: 'var(--wl-on-panel-warn, #d97706)' }}>話す · Habla</strong>.
         </div>
       </div>
     </section>

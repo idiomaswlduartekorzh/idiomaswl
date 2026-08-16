@@ -108,8 +108,8 @@ export default function HablaJaponesB1() {
                   <div style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--ink)', marginBottom: '0.2rem' }}>{p.phrase}</div>
                   {showTranslit && (
                     <>
-                      <div style={{ fontSize: '0.82rem', color: '#059669', marginBottom: '0.1rem', fontFamily: 'var(--mono)' }}>{p.romaji}</div>
-                      <div style={{ fontSize: '0.78rem', color: '#d97706', marginBottom: '0.2rem', fontStyle: 'italic' }}>{p.phonetic}</div>
+                      <div style={{ fontSize: '0.82rem', color: 'var(--wl-on-panel-ok, #059669)', marginBottom: '0.1rem', fontFamily: 'var(--mono)' }}>{p.romaji}</div>
+                      <div style={{ fontSize: '0.78rem', color: 'var(--wl-on-panel-warn, #d97706)', marginBottom: '0.2rem', fontStyle: 'italic' }}>{p.phonetic}</div>
                     </>
                   )}
                   <div style={{ fontSize: '0.85rem', color: 'var(--muted)', marginBottom: '0.3rem' }}>{p.es}</div>

@@ -125,7 +125,7 @@ export default function JaponesA2Page() {
         </div>
 
         <div style={{ marginTop: '2rem', padding: '0.9rem 1.2rem', borderRadius: 12, background: 'rgba(188,0,45,0.06)', border: '1px solid rgba(188,0,45,0.15)', fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-          💡 <strong style={{ color: 'var(--ink)' }}>ヒント (consejo):</strong> Empieza por <strong style={{ color: '#7c3aed' }}>文法 · Gramática</strong> para aprender la て-form — la llave de la gramática A2. Luego combínala con <strong style={{ color: COLOR }}>読む · Lectura</strong> para textos reales.
+          💡 <strong style={{ color: 'var(--ink)' }}>ヒント (consejo):</strong> Empieza por <strong style={{ color: 'var(--wl-on-panel-purple, #7c3aed)' }}>文法 · Gramática</strong> para aprender la て-form — la llave de la gramática A2. Luego combínala con <strong style={{ color: COLOR }}>読む · Lectura</strong> para textos reales.
         </div>
       </div>
     </section>

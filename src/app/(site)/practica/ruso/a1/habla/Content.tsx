@@ -87,10 +87,10 @@ export default function HablaRusoA1() {
                   <div style={{ flex: 1 }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.25rem', flexWrap: 'wrap' }}>
                       <span style={{ fontSize: '0.6rem', fontFamily: 'var(--mono)', fontWeight: 700, color: COLOR, textTransform: 'uppercase' }}>{p.category}</span>
-                      {isPracticed && <span style={{ fontSize: '0.6rem', color: '#059669', fontWeight: 700 }}>✓ practicada</span>}
+                      {isPracticed && <span style={{ fontSize: '0.6rem', color: 'var(--wl-on-panel-ok, #059669)', fontWeight: 700 }}>✓ practicada</span>}
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--ink)', marginBottom: '0.1rem' }}>{p.phrase}</div>
-                    <div style={{ fontSize: '0.82rem', color: '#cc0000', fontWeight: 700, marginBottom: '0.1rem' }}>{p.translit}</div>
+                    <div style={{ fontSize: '0.82rem', color: 'var(--wl-on-panel-alert, #cc0000)', fontWeight: 700, marginBottom: '0.1rem' }}>{p.translit}</div>
                     <div style={{ fontSize: '0.75rem', color: COLOR, fontFamily: 'var(--mono)', fontWeight: 600, marginBottom: '0.15rem' }}>{p.phonetic}</div>
                     <div style={{ fontSize: '0.84rem', color: 'var(--muted)' }}>{p.es}</div>
                   </div>

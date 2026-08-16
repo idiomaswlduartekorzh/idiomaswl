@@ -251,7 +251,7 @@ export default function Page() {
               marginBottom: '2rem',
             }}
           >
-            <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: '#fff' }}>
+            <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: 'var(--wl-panel-raised, #fff)' }}>
               <h2 id="official-vs-welearn" style={{ marginTop: 0, fontSize: '1.05rem' }}>
                 Formato oficial vs estrategia WeLearn
               </h2>
@@ -261,7 +261,7 @@ export default function Page() {
                 progresión de párrafos, ejemplos y revisión.
               </p>
             </article>
-            <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: '#f8fafc' }}>
+            <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: 'var(--wl-panel-raised, #f8fafc)' }}>
               <h2 style={{ marginTop: 0, fontSize: '1.05rem' }}>Respuesta explicada</h2>
               <p style={{ color: 'var(--muted)', lineHeight: 1.65, marginBottom: 0 }}>
                 Cada prompt del banco incluye objetivo, plan, tesis posible, lenguaje útil, trampa común y apertura
@@ -347,7 +347,7 @@ export default function Page() {
             </p>
             <div style={{ display: 'grid', gap: '1rem' }}>
               {GT_TASK2_ESSAY_PROMPTS.map((prompt, index) => (
-                <article key={prompt.id} style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: '#fff' }}>
+                <article key={prompt.id} style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: 'var(--wl-panel-raised, #fff)' }}>
                   <p style={{ margin: '0 0 0.35rem', color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.78rem' }}>
                     PROMPT {index + 1} · {prompt.category.toUpperCase()} · {prompt.id}
                   </p>

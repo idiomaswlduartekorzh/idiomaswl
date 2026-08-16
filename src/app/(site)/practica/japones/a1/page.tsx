@@ -79,7 +79,7 @@ export default function JaponesA1Page() {
           })}
         </div>
         <div style={{ marginTop: '2rem', padding: '0.9rem 1.2rem', borderRadius: 12, background: 'rgba(188,0,45,0.06)', border: '1px solid rgba(188,0,45,0.15)', fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-          💡 <strong style={{ color: 'var(--ink)' }}>ヒント (hinto — consejo):</strong> Empieza por <strong style={{ color: '#7c3aed' }}>文法 · Gramática</strong> para aprender ひらがな primero. Luego usa <strong style={{ color: COLOR }}>読む · Lectura</strong> para textos reales. El vocabulario sin ひらがな es aprendizaje a medias.
+          💡 <strong style={{ color: 'var(--ink)' }}>ヒント (hinto — consejo):</strong> Empieza por <strong style={{ color: 'var(--wl-on-panel-purple, #7c3aed)' }}>文法 · Gramática</strong> para aprender ひらがな primero. Luego usa <strong style={{ color: COLOR }}>読む · Lectura</strong> para textos reales. El vocabulario sin ひらがな es aprendizaje a medias.
         </div>
       </div>
     </section>

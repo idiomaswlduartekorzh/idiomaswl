@@ -8264,3 +8264,138 @@ body {
   border-color: color-mix(in srgb, var(--wl-accent) 36%, var(--wl-border)) !important;
 }
 :root[data-wl-surface="editorial"][data-theme="dark"] .prac-lead-gate__card { background: var(--wl-surface); }
+
+/* ===========================================================================
+   LEGACY PANEL BRIDGE
+
+   The IELTS/ICFES/TOEFL practice modules predate the token system: they paint
+   panels with literal light hexes while their text comes from tokens (or the
+   reverse). Dark mode flips one side only, so the two collide — white text on
+   a white panel, navy text on a near-black one.
+
+   Rather than restyle every page, those modules now wrap each literal in
+   `var(--wl-panel-*, <original hex>)`. The roles below exist ONLY inside the
+   dark scope, so light mode falls back to the original hex and renders exactly
+   as before. Retire a role by migrating its module to the semantic tokens.
+   ========================================================================== */
+:root[data-wl-surface="editorial"][data-theme="dark"] {
+  /* Surfaces */
+  --wl-panel-canvas: var(--wl-canvas);
+  --wl-panel-card: var(--wl-surface);
+  --wl-panel-raised: var(--wl-surface-raised);
+  --wl-panel-line: var(--wl-border);
+  /* The navy these modules use for text is the same navy they fill their
+     inverted panels with. As a fill it must stay dark, so it gets its own
+     role — mapping both to --wl-on-panel turns those panels inside out. */
+  --wl-panel-inverse: var(--wl-inverse);
+
+  /* Tinted callouts. The hue carries meaning in these lessons — a green box is
+     the model answer, a pink one the mistake — so each keeps its own dark
+     tint instead of collapsing into the neutral raised surface. */
+  --wl-panel-tint-ok: #142a20;
+  --wl-panel-tint-alert: #2c191d;
+  --wl-panel-tint-info: #12242b;
+  --wl-panel-tint-warn: #2a2113;
+  --wl-panel-tint-purple: #201a2e;
+
+  /* Text on those surfaces */
+  --wl-on-panel: var(--wl-text);
+  --wl-on-panel-soft: var(--wl-text-soft);
+  --wl-on-panel-link: #86b4ff;
+  --wl-on-panel-teal: #6fd0e8;
+  --wl-on-panel-ok: #45c88a;
+  --wl-on-panel-alert: #ff8f99;
+  --wl-on-panel-warn: #f2b65a;
+  --wl-on-panel-purple: #b79bea;
+}
+
+/* Inline styles can't reference the roles above, and the values are spread
+   across ~50 page files, so the recurring literals are mapped here instead. */
+:root[data-wl-surface="editorial"][data-theme="dark"] :is(
+  [style*="background:#fff;" i], [style*="background: #fff;" i],
+  [style*="background:#ffffff;" i], [style*="background: #ffffff;" i],
+  [style*="background: rgb(255, 255, 255)"]
+) { background: var(--wl-surface) !important; }
+
+:root[data-wl-surface="editorial"][data-theme="dark"] :is(
+  [style*="background:#f7f8fc" i], [style*="background: #f7f8fc" i],
+  [style*="background:#f8fafc" i], [style*="background: #f8fafc" i],
+  [style*="background:#edf1f9" i], [style*="background: #edf1f9" i],
+  [style*="background:#eef4ff" i], [style*="background: #eef4ff" i],
+  [style*="background:#f2f6ff" i], [style*="background: #f2f6ff" i],
+  [style*="background:#eef2f7" i], [style*="background: #eef2f7" i],
+  [style*="background:#f5f2f0" i], [style*="background: #f5f2f0" i],
+  [style*="background:#f1effb" i], [style*="background: #f1effb" i]
+) { background: var(--wl-surface-raised) !important; }
+
+:root[data-wl-surface="editorial"][data-theme="dark"] :is(
+  [style*="color:#0f3d8c" i], [style*="color: #0f3d8c" i],
+  [style*="color:#1a4fcc" i], [style*="color: #1a4fcc" i],
+  [style*="color:#0369a1" i], [style*="color: #0369a1" i]
+) { color: #86b4ff !important; }
+
+:root[data-wl-surface="editorial"][data-theme="dark"] :is(
+  [style*="color:#102e6f" i], [style*="color: #102e6f" i],
+  [style*="color:#14244f" i], [style*="color: #14244f" i],
+  [style*="color:#23325e" i], [style*="color: #23325e" i]
+) { color: var(--wl-text) !important; }
+
+:root[data-wl-surface="editorial"][data-theme="dark"] :is(
+  [style*="color:#047857" i], [style*="color: #047857" i],
+  [style*="color:#18794e" i], [style*="color: #18794e" i]
+) { color: #45c88a !important; }
+
+/* Second sweep: the tinted callout fills and the remaining accent texts that
+   pages set inline. Same contract as above — dark scope only. */
+:root[data-wl-surface="editorial"][data-theme="dark"] :is(
+  [style*="background:#effaf4" i], [style*="background: #effaf4" i],
+  [style*="background:#eaf8f2" i], [style*="background: #eaf8f2" i],
+  [style*="background:#ecfdf5" i], [style*="background: #ecfdf5" i]
+) { background: var(--wl-panel-tint-ok) !important; }
+
+:root[data-wl-surface="editorial"][data-theme="dark"] :is(
+  [style*="background:#fff0f1" i], [style*="background: #fff0f1" i],
+  [style*="background:#fef2f2" i], [style*="background: #fef2f2" i]
+) { background: var(--wl-panel-tint-alert) !important; }
+
+:root[data-wl-surface="editorial"][data-theme="dark"] :is(
+  [style*="background:#edf9fb" i], [style*="background: #edf9fb" i],
+  [style*="background:#edf2ff" i], [style*="background: #edf2ff" i],
+  [style*="background:#f1f4fa" i], [style*="background: #f1f4fa" i],
+  [style*="background:#f8f9fc" i], [style*="background: #f8f9fc" i],
+  [style*="background:#f3f4f7" i], [style*="background: #f3f4f7" i],
+  [style*="background:#f5f8fa" i], [style*="background: #f5f8fa" i],
+  [style*="background:#f8fafb" i], [style*="background: #f8fafb" i]
+) { background: var(--wl-surface-raised) !important; }
+
+:root[data-wl-surface="editorial"][data-theme="dark"] :is(
+  [style*="background:#fff7eb" i], [style*="background: #fff7eb" i],
+  [style*="background:#fffbeb" i], [style*="background: #fffbeb" i]
+) { background: var(--wl-panel-tint-warn) !important; }
+
+:root[data-wl-surface="editorial"][data-theme="dark"] :is(
+  [style*="background:#f7f1ff" i], [style*="background: #f7f1ff" i],
+  [style*="background:#f1effb" i], [style*="background: #f1effb" i]
+) { background: var(--wl-panel-tint-purple) !important; }
+
+:root[data-wl-surface="editorial"][data-theme="dark"] :is(
+  [style*="color:#dc2626" i], [style*="color: #dc2626" i],
+  [style*="color:#cc0000" i], [style*="color: #cc0000" i],
+  [style*="color:#e11d48" i], [style*="color: #e11d48" i],
+  [style*="color:#a63745" i], [style*="color: #a63745" i]
+) { color: #ff8f99 !important; }
+
+:root[data-wl-surface="editorial"][data-theme="dark"] :is(
+  [style*="color:#059669" i], [style*="color: #059669" i],
+  [style*="color:#0f766e" i], [style*="color: #0f766e" i]
+) { color: var(--wl-on-panel-ok) !important; }
+
+:root[data-wl-surface="editorial"][data-theme="dark"] :is(
+  [style*="color:#0066cc" i], [style*="color: #0066cc" i],
+  [style*="color:#0f6f8d" i], [style*="color: #0f6f8d" i],
+  [style*="color:#087e8b" i], [style*="color: #087e8b" i]
+) { color: var(--wl-on-panel-teal) !important; }
+
+:root[data-wl-surface="editorial"][data-theme="dark"] :is(
+  [style*="color:#7c3aed" i], [style*="color: #7c3aed" i]
+) { color: var(--wl-on-panel-purple) !important; }

@@ -1,15 +1,15 @@
 .page {
-  --ielts-navy: #102e6f;
-  --ielts-red: #b42332;
-  --ielts-teal: #176b87;
-  --ielts-green: #18794e;
-  --ielts-purple: #6941a5;
-  --ielts-ink: #14244f;
-  --ielts-muted: #5c6680;
-  --ielts-line: #d9deea;
+  --ielts-navy: var(--wl-on-panel, #102e6f);
+  --ielts-red: var(--wl-on-panel-alert, #b42332);
+  --ielts-teal: var(--wl-on-panel-teal, #176b87);
+  --ielts-green: var(--wl-on-panel-ok, #18794e);
+  --ielts-purple: var(--wl-on-panel-purple, #6941a5);
+  --ielts-ink: var(--wl-on-panel, #14244f);
+  --ielts-muted: var(--wl-on-panel-soft, #5c6680);
+  --ielts-line: var(--wl-panel-line, #d9deea);
   min-height: 100vh;
   padding: 2rem 1.25rem 5rem;
-  background: #f7f8fc;
+  background: var(--wl-panel-canvas, #f7f8fc);
   color: var(--ielts-ink);
 }
 
@@ -25,7 +25,7 @@
 .heroLead { max-width: 820px; margin: 1.15rem 0 0; color: var(--ielts-muted); font-size: 1.1rem; line-height: 1.75; }
 
 .factGrid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; margin-top: 2rem; overflow: hidden; }
-.fact { min-height: 112px; padding: 1.1rem; background: #edf1f9; }
+.fact { min-height: 112px; padding: 1.1rem; background: var(--wl-panel-raised, #edf1f9); }
 .fact strong { display: block; margin-bottom: 0.35rem; color: var(--ielts-navy); font-size: 1.35rem; }
 .fact span { color: var(--ielts-muted); font-size: 0.86rem; line-height: 1.45; }
 
@@ -47,7 +47,7 @@
   padding: 1.25rem;
   border: 1px solid var(--ielts-line);
   border-radius: 7px;
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   color: var(--ielts-ink);
 }
 .pathCard,
@@ -68,7 +68,7 @@
 .skillCard,
 .comingCard { display: flex; min-height: 250px; flex-direction: column; gap: 0.75rem; border-top: 4px solid var(--ielts-teal); }
 .skillCard:nth-child(2) { border-top-color: var(--ielts-navy); }
-.skillIcon { display: grid; width: 42px; height: 42px; place-items: center; border-radius: 6px; background: #edf1f9; color: var(--ielts-navy); }
+.skillIcon { display: grid; width: 42px; height: 42px; place-items: center; border-radius: 6px; background: var(--wl-panel-raised, #edf1f9); color: var(--ielts-navy); }
 .skillCard strong { display: inline-flex; align-items: center; gap: 0.35rem; margin-top: auto; color: var(--ielts-teal); font-size: 0.84rem; }
 .skillCard:hover,
 .skillCard:focus-visible,
@@ -77,9 +77,9 @@
 
 .comingGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1rem; }
 .comingCard { min-height: auto; opacity: 0.72; border-top-color: var(--ielts-line); }
-.comingBadge { padding: 0.25rem 0.45rem; border-radius: 4px; background: #edf1f9; color: var(--ielts-muted); font: 800 0.66rem/1.2 var(--mono, ui-monospace, monospace); text-transform: uppercase; }
+.comingBadge { padding: 0.25rem 0.45rem; border-radius: 4px; background: var(--wl-panel-raised, #edf1f9); color: var(--ielts-muted); font: 800 0.66rem/1.2 var(--mono, ui-monospace, monospace); text-transform: uppercase; }
 
-.routeNote { margin-top: 1.25rem; padding: 1rem 1.1rem; border-left: 4px solid var(--ielts-teal); background: #edf1f9; color: var(--ielts-muted); line-height: 1.65; }
+.routeNote { margin-top: 1.25rem; padding: 1rem 1.1rem; border-left: 4px solid var(--ielts-teal); background: var(--wl-panel-raised, #edf1f9); color: var(--ielts-muted); line-height: 1.65; }
 .routeNote strong { color: var(--ielts-navy); }
 
 @media (max-width: 820px) {

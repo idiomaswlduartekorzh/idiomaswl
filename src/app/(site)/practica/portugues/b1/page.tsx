@@ -83,7 +83,7 @@ export default function PortuguesB1Page() {
           })}
         </div>
         <div style={{ marginTop: '2rem', padding: '1rem 1.25rem', borderRadius: 14, background: `${COLOR}08`, border: `1px solid ${COLOR}22`, fontSize: '0.88rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-          💡 <strong style={{ color: 'var(--ink)' }}>Dica de estudo:</strong> Comece pela <strong style={{ color: '#7c3aed' }}>Gramática</strong> para dominar o subjuntivo, depois pratique com <strong style={{ color: COLOR }}>Leitura</strong> e <strong style={{ color: '#059669' }}>Escrita</strong>.
+          💡 <strong style={{ color: 'var(--ink)' }}>Dica de estudo:</strong> Comece pela <strong style={{ color: 'var(--wl-on-panel-purple, #7c3aed)' }}>Gramática</strong> para dominar o subjuntivo, depois pratique com <strong style={{ color: COLOR }}>Leitura</strong> e <strong style={{ color: 'var(--wl-on-panel-ok, #059669)' }}>Escrita</strong>.
         </div>
       </div>
     </section>

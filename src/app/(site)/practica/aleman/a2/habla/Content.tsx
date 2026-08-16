@@ -259,7 +259,7 @@ export default function HablaAlemanA2() {
                     <p style={{ margin: '0 0 0.5rem', fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.55 }}>{p.note}</p>
                     {(p.formal || p.informal) && (
                       <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginTop: '0.4rem' }}>
-                        {p.formal && <span style={{ fontSize: '0.7rem', padding: '0.15rem 0.5rem', borderRadius: 5, background: 'rgba(37,99,235,0.1)', color: '#2563eb', fontFamily: 'var(--mono)', fontWeight: 600 }}>Formal: {p.formal}</span>}
+                        {p.formal && <span style={{ fontSize: '0.7rem', padding: '0.15rem 0.5rem', borderRadius: 5, background: 'rgba(37,99,235,0.1)', color: 'var(--wl-on-panel-link, #2563eb)', fontFamily: 'var(--mono)', fontWeight: 600 }}>Formal: {p.formal}</span>}
                         {p.informal && <span style={{ fontSize: '0.7rem', padding: '0.15rem 0.5rem', borderRadius: 5, background: `${COLOR}12`, color: COLOR, fontFamily: 'var(--mono)', fontWeight: 600 }}>Informal: {p.informal}</span>}
                       </div>
                     )}

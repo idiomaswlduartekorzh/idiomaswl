@@ -320,7 +320,7 @@ function ReadingLesson({ t, onBack }: { t: ReadingText; onBack: () => void }) {
             );
           })}
           <div className="wl-card" style={{ padding: '1.25rem' }}>
-            <div style={{ fontSize: '0.65rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', marginBottom: '0.5rem' }}>자유 쓰기 — Producción libre</div>
+            <div style={{ fontSize: '0.65rem', fontWeight: 800, color: 'var(--wl-on-panel-ok, #059669)', fontFamily: 'var(--mono)', textTransform: 'uppercase', marginBottom: '0.5rem' }}>자유 쓰기 — Producción libre</div>
             <p style={{ margin: '0 0 0.25rem', fontWeight: 600, color: 'var(--ink)', fontSize: '0.97rem' }}>{t.openQ}</p>
             <p style={{ margin: '0 0 0.85rem', fontSize: '0.8rem', color: 'var(--muted)', fontStyle: 'italic' }}>💡 {t.production}</p>
             <textarea value={openAns} onChange={e => setOpenAns(e.target.value)} rows={4} placeholder="한국어로 써요... (o en romanización)" style={{ width: '100%', padding: '0.75rem 1rem', borderRadius: 10, resize: 'vertical', border: '1.5px solid var(--line-soft)', background: 'var(--bg)', color: 'var(--ink)', fontSize: '0.95rem', fontFamily: 'inherit', boxSizing: 'border-box' }} />

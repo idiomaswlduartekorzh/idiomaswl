@@ -124,7 +124,7 @@ export default function Page() {
                   </div>
                   <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.88rem' }}>{task.description}</p>
                   {task.note && (
-                    <p style={{ margin: '0.65rem 0 0', color: '#92400e', lineHeight: 1.5, fontSize: '0.82rem' }}>{task.note}</p>
+                    <p style={{ margin: '0.65rem 0 0', color: 'var(--wl-on-panel-warn, #92400e)', lineHeight: 1.5, fontSize: '0.82rem' }}>{task.note}</p>
                   )}
                 </article>
               );

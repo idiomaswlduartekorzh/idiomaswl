@@ -287,7 +287,7 @@ function ReadingLesson({ t, onBack }: { t: ReadingText; onBack: () => void }) {
             }} />
           ))}
           <div className="wl-card" style={{ padding: '1.25rem' }}>
-            <div style={{ fontSize: '0.65rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.5rem' }}>Produzione libera</div>
+            <div style={{ fontSize: '0.65rem', fontWeight: 800, color: 'var(--wl-on-panel-ok, #059669)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.5rem' }}>Produzione libera</div>
             <p style={{ margin: '0 0 0.25rem', fontWeight: 600, color: 'var(--ink)', fontSize: '0.97rem' }}>{t.openQ}</p>
             <p style={{ margin: '0 0 0.85rem', fontSize: '0.8rem', color: 'var(--muted)', fontStyle: 'italic' }}>💡 {t.production}</p>
             <textarea value={openAns} onChange={e => setOpenAns(e.target.value)} rows={4}
@@ -309,7 +309,7 @@ function ReadingLesson({ t, onBack }: { t: ReadingText; onBack: () => void }) {
           </p>
           {openAns && (
             <div style={{ padding: '1rem', borderRadius: 12, background: 'rgba(5,150,105,0.07)', border: '1px solid rgba(5,150,105,0.2)', marginBottom: '1.25rem', textAlign: 'left' }}>
-              <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', marginBottom: '0.4rem' }}>LA TUA PRODUZIONE LIBERA</div>
+              <div style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--wl-on-panel-ok, #059669)', fontFamily: 'var(--mono)', marginBottom: '0.4rem' }}>LA TUA PRODUZIONE LIBERA</div>
               <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--ink)', lineHeight: 1.65, whiteSpace: 'pre-wrap' }}>{openAns}</p>
             </div>
           )}

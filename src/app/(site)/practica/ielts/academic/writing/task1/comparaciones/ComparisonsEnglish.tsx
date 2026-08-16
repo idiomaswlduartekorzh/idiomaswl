@@ -126,11 +126,11 @@ export default function ComparisonsEnglish() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem', alignItems: 'start', padding: '1rem', borderRadius: 8, border: '1px solid var(--line-soft)', background: 'var(--bg-2)' }}>
               <div style={{ padding: '0.7rem', borderRadius: 8, background: 'var(--bg)', border: '1px solid var(--line-soft)', overflow: 'hidden' }}><Chart variant={visual.examples[exampleIndex].variant} /></div>
               <div>
-                <p style={{ margin: '0 0 0.35rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 900 }}>{visual.examples[exampleIndex].title.toUpperCase()}</p>
+                <p style={{ margin: '0 0 0.35rem', color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 900 }}>{visual.examples[exampleIndex].title.toUpperCase()}</p>
                 <h3 style={{ margin: '0 0 0.55rem', color: 'var(--ink)', fontSize: '1.05rem' }}>{visual.examples[exampleIndex].focus}</h3>
                 <p style={{ margin: '0 0 0.8rem', color: 'var(--ink-2)', lineHeight: 1.65 }}>The comparison must be visible in this graphic. Name both sides of the relationship, then choose the amount of detail that makes the contrast clear.</p>
                 <div style={{ padding: '0.8rem', borderRadius: 8, border: '1px solid rgba(5,150,105,0.24)', background: 'rgba(5,150,105,0.06)' }}>
-                  <p style={{ margin: '0 0 0.28rem', color: '#047857', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 900 }}>MODEL COMPARISON</p>
+                  <p style={{ margin: '0 0 0.28rem', color: 'var(--wl-on-panel-ok, #047857)', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 900 }}>MODEL COMPARISON</p>
                   <p style={{ margin: 0, color: 'var(--ink)', lineHeight: 1.65 }}>{visual.examples[exampleIndex].model}</p>
                 </div>
               </div>

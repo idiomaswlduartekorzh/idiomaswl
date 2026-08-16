@@ -6,10 +6,10 @@ export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
 const TOOLS = [
-  { icon: '한', label: 'Lector Hangul',      color: '#c8202e' },
-  { icon: 'ㅂ',  label: 'Reglas Batchim',    color: '#c8202e' },
-  { icon: '📖', label: 'Textos A1–B1',       color: '#8b1c1c' },
-  { icon: '🎙', label: 'Pronunciación',       color: '#c8202e' },
+  { icon: '한', label: 'Lector Hangul',      color: 'var(--wl-on-panel-alert, #c8202e)' },
+  { icon: 'ㅂ',  label: 'Reglas Batchim',    color: 'var(--wl-on-panel-alert, #c8202e)' },
+  { icon: '📖', label: 'Textos A1–B1',       color: 'var(--wl-on-panel-alert, #8b1c1c)' },
+  { icon: '🎙', label: 'Pronunciación',       color: 'var(--wl-on-panel-alert, #c8202e)' },
 ];
 
 export default function Image() {
@@ -34,7 +34,7 @@ export default function Image() {
 
         {/* Label */}
         <div style={{ display: 'flex', gap: 10, marginBottom: 32 }}>
-          <div style={{ background: 'rgba(200,32,46,0.15)', border: '1px solid rgba(200,32,46,0.3)', color: '#f87171', fontSize: 13, fontWeight: 700, padding: '5px 14px', borderRadius: 999, letterSpacing: '0.04em' }}>
+          <div style={{ background: 'rgba(200,32,46,0.15)', border: '1px solid rgba(200,32,46,0.3)', color: 'var(--wl-on-panel-alert, #f87171)', fontSize: 13, fontWeight: 700, padding: '5px 14px', borderRadius: 999, letterSpacing: '0.04em' }}>
             PRÁCTICA INTERACTIVA · COREANO
           </div>
         </div>
@@ -42,7 +42,7 @@ export default function Image() {
         {/* Headline */}
         <div style={{ display: 'flex', flexDirection: 'column', fontSize: 58, fontWeight: 800, color: '#fff', lineHeight: 1.1, letterSpacing: '-0.03em', flex: 1 }}>
           Practica coreano
-          <span style={{ color: '#f87171' }}>en tiempo real.</span>
+          <span style={{ color: 'var(--wl-on-panel-alert, #f87171)' }}>en tiempo real.</span>
         </div>
 
         {/* Tool pills */}

@@ -125,7 +125,7 @@ export default function ItalianoA2Page() {
         </div>
 
         <div style={{ marginTop: '2rem', padding: '0.9rem 1.2rem', borderRadius: 12, background: 'rgba(0,146,70,0.06)', border: '1px solid rgba(0,146,70,0.15)', fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-          💡 <strong style={{ color: 'var(--ink)' }}>Consiglio:</strong> Inizia con <strong style={{ color: '#7c3aed' }}>Gramática</strong> per padroneggiare il passato prossimo, poi esercitati con <strong style={{ color: COLOR }}>Lettura</strong> usando testi autentici.
+          💡 <strong style={{ color: 'var(--ink)' }}>Consiglio:</strong> Inizia con <strong style={{ color: 'var(--wl-on-panel-purple, #7c3aed)' }}>Gramática</strong> per padroneggiare il passato prossimo, poi esercitati con <strong style={{ color: COLOR }}>Lettura</strong> usando testi autentici.
         </div>
       </div>
     </section>

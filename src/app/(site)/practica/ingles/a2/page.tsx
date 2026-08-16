@@ -123,7 +123,7 @@ export default function InglesA2Page() {
 
         {/* Tip */}
         <div style={{ marginTop: '2rem', padding: '0.9rem 1.2rem', borderRadius: 12, background: 'rgba(0,102,204,0.06)', border: '1px solid rgba(0,102,204,0.15)', fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-          💡 <strong style={{ color: 'var(--ink)' }}>Consejo:</strong> Empieza por <strong style={{ color: '#7c3aed' }}>Gramática</strong> para entender el pasado simple, luego practica con <strong style={{ color: COLOR }}>Lectura</strong> usando textos del mundo real.
+          💡 <strong style={{ color: 'var(--ink)' }}>Consejo:</strong> Empieza por <strong style={{ color: 'var(--wl-on-panel-purple, #7c3aed)' }}>Gramática</strong> para entender el pasado simple, luego practica con <strong style={{ color: COLOR }}>Lectura</strong> usando textos del mundo real.
         </div>
       </div>
     </section>

@@ -258,11 +258,11 @@ export default function ToeflGrammarForWritingClient({ faqs }: { faqs: Faq[] }) 
           <div className="wl-card" style={{ padding: '1rem', borderRadius: 16 }}>
             <div style={{ display: 'grid', gap: '0.75rem', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))' }}>
               <div style={{ border: '1px solid rgba(185,28,28,0.22)', borderRadius: 10, padding: '0.85rem', background: 'rgba(185,28,28,0.05)' }}>
-                <p style={{ margin: '0 0 0.35rem', color: '#991b1b', fontWeight: 900, fontSize: '0.78rem' }}>Débil</p>
+                <p style={{ margin: '0 0 0.35rem', color: 'var(--wl-on-panel-alert, #991b1b)', fontWeight: 900, fontSize: '0.78rem' }}>Débil</p>
                 <p style={{ margin: 0, color: 'var(--ink)', lineHeight: 1.6, fontSize: '0.88rem' }}>{exercise.weak}</p>
               </div>
               <div style={{ border: '1px solid rgba(4,120,87,0.25)', borderRadius: 10, padding: '0.85rem', background: 'rgba(4,120,87,0.06)' }}>
-                <p style={{ margin: '0 0 0.35rem', color: '#047857', fontWeight: 900, fontSize: '0.78rem' }}>Fuerte</p>
+                <p style={{ margin: '0 0 0.35rem', color: 'var(--wl-on-panel-ok, #047857)', fontWeight: 900, fontSize: '0.78rem' }}>Fuerte</p>
                 <p style={{ margin: 0, color: 'var(--ink)', lineHeight: 1.6, fontSize: '0.88rem' }}>{exercise.stronger}</p>
               </div>
             </div>

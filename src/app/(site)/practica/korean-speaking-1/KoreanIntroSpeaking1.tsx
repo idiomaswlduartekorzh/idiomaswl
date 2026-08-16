@@ -91,13 +91,13 @@ function buildPresentation(form: PersonalForm): string[] {
 // ─── Step config ──────────────────────────────────────────────────────────────
 
 const STEPS = [
-  { id: 0, label: 'Supervivencia', icon: '🆘', color: '#534AB7' },
-  { id: 1, label: 'Presentación', icon: '📜', color: '#059669' },
-  { id: 2, label: 'Vocabulario', icon: '📚', color: '#d97706' },
-  { id: 3, label: 'Personalizar', icon: '✏️', color: '#e11d48' },
-  { id: 4, label: 'Construir', icon: '🧩', color: '#0891b2' },
-  { id: 5, label: 'Hablar', icon: '🗣️', color: '#7c3aed' },
-  { id: 6, label: 'Presentación final', icon: '🎤', color: '#c8202e' },
+  { id: 0, label: 'Supervivencia', icon: '🆘', color: 'var(--wl-on-panel-link, #534AB7)' },
+  { id: 1, label: 'Presentación', icon: '📜', color: 'var(--wl-on-panel-ok, #059669)' },
+  { id: 2, label: 'Vocabulario', icon: '📚', color: 'var(--wl-on-panel-warn, #d97706)' },
+  { id: 3, label: 'Personalizar', icon: '✏️', color: 'var(--wl-on-panel-alert, #e11d48)' },
+  { id: 4, label: 'Construir', icon: '🧩', color: 'var(--wl-on-panel-teal, #0891b2)' },
+  { id: 5, label: 'Hablar', icon: '🗣️', color: 'var(--wl-on-panel-purple, #7c3aed)' },
+  { id: 6, label: 'Presentación final', icon: '🎤', color: 'var(--wl-on-panel-alert, #c8202e)' },
 ];
 
 const fade = { initial: { opacity: 0, y: 10 }, animate: { opacity: 1, y: 0 }, exit: { opacity: 0, y: -8 } };
@@ -130,7 +130,7 @@ function TeacherNote({ text }: { text: string }) {
       fontSize: '0.82rem',
       color: 'var(--ink-2)',
     }}>
-      <span style={{ fontWeight: 700, color: '#d97706', marginRight: '0.4rem', fontFamily: 'var(--mono)', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Docente</span>
+      <span style={{ fontWeight: 700, color: 'var(--wl-on-panel-warn, #d97706)', marginRight: '0.4rem', fontFamily: 'var(--mono)', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Docente</span>
       {text}
     </div>
   );
@@ -189,7 +189,7 @@ function Step1Survival({ teacherMode }: { teacherMode: boolean }) {
             <Card key={expr.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                 <div>
-                  <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#534AB7', lineHeight: 1.2 }}>{expr.korean}</div>
+                  <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--wl-on-panel-link, #534AB7)', lineHeight: 1.2 }}>{expr.korean}</div>
                   <div style={{ fontSize: '0.78rem', color: 'var(--muted)', fontFamily: 'var(--mono)', marginTop: '0.15rem' }}>{expr.romanization}</div>
                   <div style={{ fontSize: '0.9rem', color: 'var(--ink-2)', marginTop: '0.15rem' }}>{expr.spanish}</div>
                 </div>
@@ -325,7 +325,7 @@ function Step2Model({ teacherMode }: { teacherMode: boolean }) {
           <div style={{ fontSize: '0.72rem', fontFamily: 'var(--mono)', color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '1.25rem' }}>
             Frase {currentLine + 1} de {MODEL_PRESENTATION.length}
           </div>
-          <div style={{ fontSize: '2rem', fontWeight: 800, color: '#059669', lineHeight: 1.3, marginBottom: '0.5rem' }}>
+          <div style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--wl-on-panel-ok, #059669)', lineHeight: 1.3, marginBottom: '0.5rem' }}>
             {MODEL_PRESENTATION[currentLine].korean}
           </div>
           {showRom && <div style={{ fontSize: '0.9rem', color: 'var(--muted)', fontFamily: 'var(--mono)', marginBottom: '0.3rem' }}>{MODEL_PRESENTATION[currentLine].romanization}</div>}
@@ -348,7 +348,7 @@ function Step2Model({ teacherMode }: { teacherMode: boolean }) {
             <Card key={line.id} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '1rem 1.25rem', opacity: practiced.has(line.id) ? 0.6 : 1, transition: 'opacity 0.2s' }}>
               <div style={{ fontSize: '0.72rem', fontFamily: 'var(--mono)', color: 'var(--muted)', fontWeight: 700, minWidth: 22, paddingTop: '0.35rem' }}>{i + 1}</div>
               <div style={{ flex: 1 }}>
-                <div style={{ fontSize: '1.25rem', fontWeight: 700, color: '#059669', lineHeight: 1.3 }}>{line.korean}</div>
+                <div style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--wl-on-panel-ok, #059669)', lineHeight: 1.3 }}>{line.korean}</div>
                 {showRom && <div style={{ fontSize: '0.78rem', color: 'var(--muted)', fontFamily: 'var(--mono)' }}>{line.romanization}</div>}
                 {showEs  && <div style={{ fontSize: '0.88rem', color: 'var(--ink-2)' }}>{line.spanish}</div>}
               </div>
@@ -564,7 +564,7 @@ function Step4Personalize({ teacherMode, onGenerate }: { teacherMode: boolean; o
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
           <Card style={{ border: '1.5px solid rgba(225,29,72,0.25)', background: 'rgba(225,29,72,0.03)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
-              <div style={{ fontSize: '0.72rem', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#e11d48', fontWeight: 700 }}>Tu presentación en coreano</div>
+              <div style={{ fontSize: '0.72rem', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--wl-on-panel-alert, #e11d48)', fontWeight: 700 }}>Tu presentación en coreano</div>
               <div style={{ display: 'flex', gap: '0.4rem' }}>
                 <button onClick={() => setShowRom(v => !v)} className={`btn btn-ghost btn-sm`} style={{ fontSize: '0.75rem' }}>
                   {showRom ? 'Ocultar' : 'Ver'} romanización
@@ -574,7 +574,7 @@ function Step4Personalize({ teacherMode, onGenerate }: { teacherMode: boolean; o
             </div>
             {lines.map((line, i) => (
               <div key={i} style={{ marginBottom: '0.5rem' }}>
-                <div style={{ fontSize: '1.2rem', fontWeight: 700, color: '#e11d48', lineHeight: 1.3 }}>{line}</div>
+                <div style={{ fontSize: '1.2rem', fontWeight: 700, color: 'var(--wl-on-panel-alert, #e11d48)', lineHeight: 1.3 }}>{line}</div>
                 {showRom && <div style={{ fontSize: '0.78rem', fontFamily: 'var(--mono)', color: 'var(--muted)' }}>{MODEL_ROM[i] || ''}</div>}
               </div>
             ))}
@@ -663,7 +663,7 @@ function Step5Builder({ teacherMode }: { teacherMode: boolean }) {
         {/* Activity header */}
         <div style={{ marginBottom: '1rem' }}>
           <div style={{ fontSize: '0.72rem', fontFamily: 'var(--mono)', color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.3rem' }}>Patrón</div>
-          <div style={{ fontSize: '1rem', fontWeight: 700, color: '#0891b2', fontFamily: 'var(--mono)' }}>{activity.patternHint}</div>
+          <div style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--wl-on-panel-teal, #0891b2)', fontFamily: 'var(--mono)' }}>{activity.patternHint}</div>
         </div>
 
         {/* Answer area */}
@@ -701,12 +701,12 @@ function Step5Builder({ teacherMode }: { teacherMode: boolean }) {
 
         {/* Feedback */}
         {result === 'correct' && (
-          <div style={{ padding: '0.75rem 1rem', borderRadius: 9, background: 'rgba(5,150,105,0.1)', border: '1px solid rgba(5,150,105,0.25)', color: '#059669', fontWeight: 600, fontSize: '0.9rem' }}>
+          <div style={{ padding: '0.75rem 1rem', borderRadius: 9, background: 'rgba(5,150,105,0.1)', border: '1px solid rgba(5,150,105,0.25)', color: 'var(--wl-on-panel-ok, #059669)', fontWeight: 600, fontSize: '0.9rem' }}>
             ✓ {activity.successMsg}
           </div>
         )}
         {result === 'incorrect' && (
-          <div style={{ padding: '0.75rem 1rem', borderRadius: 9, background: 'rgba(225,29,72,0.07)', border: '1px solid rgba(225,29,72,0.2)', color: '#e11d48', fontSize: '0.88rem' }}>
+          <div style={{ padding: '0.75rem 1rem', borderRadius: 9, background: 'rgba(225,29,72,0.07)', border: '1px solid rgba(225,29,72,0.2)', color: 'var(--wl-on-panel-alert, #e11d48)', fontSize: '0.88rem' }}>
             <span style={{ fontWeight: 700 }}>Casi.</span> En coreano el orden es: Sujeto + Objeto/Lugar + Verbo. La respuesta correcta: <span style={{ fontFamily: 'var(--mono)', fontWeight: 700 }}>{activity.correct.join(' ')}</span>
           </div>
         )}
@@ -808,16 +808,16 @@ function Step6Ladder({ teacherMode }: { teacherMode: boolean }) {
             {TEACHER_QUESTIONS.map((q, i) => (
               <Card key={q.id} style={{ border: `1.5px solid rgba(124,58,237,0.2)`, background: 'rgba(124,58,237,0.03)' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.5rem' }}>
-                  <div style={{ fontSize: '0.62rem', fontFamily: 'var(--mono)', color: '#7c3aed', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em' }}>Docente — Pregunta {i + 1}</div>
-                  <button onClick={() => speak(q.question)} style={{ background: 'rgba(124,58,237,0.1)', border: 'none', borderRadius: 6, padding: '0.3rem 0.65rem', cursor: 'pointer', fontSize: '0.78rem', color: '#7c3aed' }}>▶</button>
+                  <div style={{ fontSize: '0.62rem', fontFamily: 'var(--mono)', color: 'var(--wl-on-panel-purple, #7c3aed)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em' }}>Docente — Pregunta {i + 1}</div>
+                  <button onClick={() => speak(q.question)} style={{ background: 'rgba(124,58,237,0.1)', border: 'none', borderRadius: 6, padding: '0.3rem 0.65rem', cursor: 'pointer', fontSize: '0.78rem', color: 'var(--wl-on-panel-purple, #7c3aed)' }}>▶</button>
                 </div>
-                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#7c3aed', marginBottom: '0.2rem' }}>{q.question}</div>
+                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--wl-on-panel-purple, #7c3aed)', marginBottom: '0.2rem' }}>{q.question}</div>
                 {showRom && <div style={{ fontSize: '0.8rem', fontFamily: 'var(--mono)', color: 'var(--muted)', marginBottom: '0.15rem' }}>{q.romanization}</div>}
                 {showEs  && <div style={{ fontSize: '0.9rem', color: 'var(--ink-2)', marginBottom: '0.75rem' }}>{q.spanish}</div>}
                 {(teacherMode || revealed.has(q.id)) ? (
                   <div style={{ borderTop: '1px solid rgba(124,58,237,0.15)', paddingTop: '0.6rem' }}>
                     <div style={{ fontSize: '0.72rem', fontFamily: 'var(--mono)', color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.25rem' }}>Respuesta esperada</div>
-                    <div style={{ fontSize: '1rem', fontWeight: 700, color: '#059669', fontFamily: 'var(--mono)' }}>{q.answerPattern}</div>
+                    <div style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--wl-on-panel-ok, #059669)', fontFamily: 'var(--mono)' }}>{q.answerPattern}</div>
                     <div style={{ fontSize: '0.82rem', color: 'var(--muted)' }}>{q.answerPatternEs}</div>
                   </div>
                 ) : (
@@ -883,7 +883,7 @@ function Step7Final({ presentation, teacherMode }: { presentation: string[]; tea
         {/* Presentation text */}
         <Card style={{ border: '1.5px solid rgba(200,32,46,0.2)' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
-            <div style={{ fontSize: '0.72rem', fontFamily: 'var(--mono)', color: '#c8202e', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+            <div style={{ fontSize: '0.72rem', fontFamily: 'var(--mono)', color: 'var(--wl-on-panel-alert, #c8202e)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em' }}>
               {presentation.length > 0 ? 'Tu presentación' : 'Plantilla'}
             </div>
             <div style={{ display: 'flex', gap: '0.4rem' }}>
@@ -894,7 +894,7 @@ function Step7Final({ presentation, teacherMode }: { presentation: string[]; tea
             </div>
           </div>
           {displayLines.map((line, i) => (
-            <div key={i} style={{ marginBottom: '0.5rem', fontSize: '1.1rem', fontWeight: 700, color: '#c8202e', lineHeight: 1.35 }}>
+            <div key={i} style={{ marginBottom: '0.5rem', fontSize: '1.1rem', fontWeight: 700, color: 'var(--wl-on-panel-alert, #c8202e)', lineHeight: 1.35 }}>
               {line}
             </div>
           ))}
@@ -920,7 +920,7 @@ function Step7Final({ presentation, teacherMode }: { presentation: string[]; tea
               </button>
             ))}
             {checked.size === FINAL_CHECKLIST.length && (
-              <div style={{ marginTop: '1rem', padding: '0.75rem', borderRadius: 9, background: 'rgba(5,150,105,0.1)', border: '1px solid rgba(5,150,105,0.25)', textAlign: 'center', color: '#059669', fontWeight: 700 }}>
+              <div style={{ marginTop: '1rem', padding: '0.75rem', borderRadius: 9, background: 'rgba(5,150,105,0.1)', border: '1px solid rgba(5,150,105,0.25)', textAlign: 'center', color: 'var(--wl-on-panel-ok, #059669)', fontWeight: 700 }}>
                 🎉 ¡Presentación completa!
               </div>
             )}
@@ -928,7 +928,7 @@ function Step7Final({ presentation, teacherMode }: { presentation: string[]; tea
 
           {/* Recording placeholder */}
           <Card style={{ marginTop: '0.85rem', background: 'rgba(83,74,183,0.04)', border: '1px dashed rgba(83,74,183,0.3)' }}>
-            <div style={{ fontSize: '0.72rem', fontFamily: 'var(--mono)', color: '#534AB7', textTransform: 'uppercase', letterSpacing: '0.1em', fontWeight: 700, marginBottom: '0.4rem' }}>🎙 Grabación</div>
+            <div style={{ fontSize: '0.72rem', fontFamily: 'var(--mono)', color: 'var(--wl-on-panel-link, #534AB7)', textTransform: 'uppercase', letterSpacing: '0.1em', fontWeight: 700, marginBottom: '0.4rem' }}>🎙 Grabación</div>
             <p style={{ fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.55 }}>
               Grábate con WhatsApp o notas de voz y envía el audio a tu profesor/a para retroalimentación.
             </p>

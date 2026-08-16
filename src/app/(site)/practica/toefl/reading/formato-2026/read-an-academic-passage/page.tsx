@@ -135,7 +135,7 @@ export default function Page() {
               {PASSAGES.flatMap((passage) =>
                 passage.questions.map((question, index) => (
                   <article key={question.id} style={{ display: 'grid', gridTemplateColumns: '24px 1fr', gap: '0.6rem', alignItems: 'start' }}>
-                    <CheckCircle2 size={18} style={{ color: '#047857', marginTop: 2 }} />
+                    <CheckCircle2 size={18} style={{ color: 'var(--wl-on-panel-ok, #047857)', marginTop: 2 }} />
                     <div>
                       <h3 style={{ margin: '0 0 0.25rem', fontSize: '1rem', color: 'var(--ink)' }}>
                         {passage.title} · Ítem {index + 1}: {String.fromCharCode(65 + question.answer)}

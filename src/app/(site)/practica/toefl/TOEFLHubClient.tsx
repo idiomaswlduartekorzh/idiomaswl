@@ -113,7 +113,7 @@ function TOEFLReadingExercise() {
 
       {/* Instructions */}
       <div style={{ padding: '0.9rem 1.1rem', borderRadius: 12, background: 'rgba(26,79,204,0.07)', border: '1px solid rgba(26,79,204,0.2)', fontSize: '0.87rem', color: 'var(--ink-2)', lineHeight: 1.65 }}>
-        <strong style={{ color: '#1a4fcc' }}>Instrucciones:</strong> Para cada pregunta, elige la mejor respuesta basada en la información del pasaje. El tiempo en TOEFL iBT para Reading es de ~18 min por pasaje.
+        <strong style={{ color: 'var(--wl-on-panel-link, #1a4fcc)' }}>Instrucciones:</strong> Para cada pregunta, elige la mejor respuesta basada en la información del pasaje. El tiempo en TOEFL iBT para Reading es de ~18 min por pasaje.
       </div>
 
       {/* Progress */}
@@ -132,7 +132,7 @@ function TOEFLReadingExercise() {
         const isDone = ans !== undefined;
         return (
           <div key={qi} className="wl-card" style={{ padding: '1.25rem' }}>
-            <div style={{ fontSize: '0.68rem', fontWeight: 800, color: '#1a4fcc', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.5rem' }}>
+            <div style={{ fontSize: '0.68rem', fontWeight: 800, color: 'var(--wl-on-panel-link, #1a4fcc)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.5rem' }}>
               Question {qi + 1} of {QUESTIONS.length}
             </div>
             <p style={{ margin: '0 0 0.85rem', fontWeight: 600, color: 'var(--ink)', fontSize: '0.97rem', lineHeight: 1.65 }}>{q.question}</p>

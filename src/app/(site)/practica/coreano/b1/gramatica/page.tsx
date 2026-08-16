@@ -34,7 +34,7 @@ export default function GrammarIndexPage() {
             <span>/</span>
             <Link href="/practica/coreano/b1" style={{ color: 'var(--muted)', textDecoration: 'none' }}>B1</Link>
             <span>/</span>
-            <span style={{ color: '#c60c30', fontWeight: 800 }}>Gramática</span>
+            <span style={{ color: 'var(--wl-on-panel-alert, #c60c30)', fontWeight: 800 }}>Gramática</span>
           </nav>
 
           <section className="topic-hero" style={{ paddingBottom: '1.5rem' }}>

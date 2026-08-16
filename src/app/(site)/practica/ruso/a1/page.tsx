@@ -79,7 +79,7 @@ export default function RusoA1Page() {
           })}
         </div>
         <div style={{ marginTop: '2rem', padding: '0.9rem 1.2rem', borderRadius: 12, background: 'rgba(204,0,0,0.06)', border: '1px solid rgba(204,0,0,0.15)', fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-          💡 <strong style={{ color: 'var(--ink)' }}>Совет (Soviet — consejo):</strong> Empieza por <strong style={{ color: COLOR }}>Грамматика · Gramática</strong> para aprender el alfabeto cirílico primero. Luego usa <strong style={{ color: '#cc0000' }}>Чтение · Lectura</strong> para practicar textos reales.
+          💡 <strong style={{ color: 'var(--ink)' }}>Совет (Soviet — consejo):</strong> Empieza por <strong style={{ color: COLOR }}>Грамматика · Gramática</strong> para aprender el alfabeto cirílico primero. Luego usa <strong style={{ color: 'var(--wl-on-panel-alert, #cc0000)' }}>Чтение · Lectura</strong> para practicar textos reales.
         </div>
       </div>
     </section>

@@ -125,7 +125,7 @@ export default function RusoA2Page() {
         </div>
 
         <div style={{ marginTop: '2rem', padding: '0.9rem 1.2rem', borderRadius: 12, background: 'rgba(204,0,0,0.06)', border: '1px solid rgba(204,0,0,0.15)', fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-          💡 <strong style={{ color: 'var(--ink)' }}>Совет (Sovet — consejo):</strong> Empieza por <strong style={{ color: '#7c3aed' }}>Грамматика · Gramática</strong> para dominar el <strong>прошедшее время</strong> (pasado), luego practica con <strong style={{ color: COLOR }}>Чтение · Lectura</strong> usando textos reales.
+          💡 <strong style={{ color: 'var(--ink)' }}>Совет (Sovet — consejo):</strong> Empieza por <strong style={{ color: 'var(--wl-on-panel-purple, #7c3aed)' }}>Грамматика · Gramática</strong> para dominar el <strong>прошедшее время</strong> (pasado), luego practica con <strong style={{ color: COLOR }}>Чтение · Lectura</strong> usando textos reales.
         </div>
       </div>
     </section>

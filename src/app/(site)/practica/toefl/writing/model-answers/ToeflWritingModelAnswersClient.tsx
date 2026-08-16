@@ -106,7 +106,7 @@ export default function ToeflWritingModelAnswersClient({
                           </ul>
                         </section>
                         <section style={{ border: '1px solid rgba(4,120,87,0.25)', borderRadius: 8, padding: '0.85rem', background: 'rgba(4,120,87,0.06)' }}>
-                          <h4 style={{ margin: '0 0 0.35rem', color: '#047857', fontSize: '0.9rem' }}>Siguiente revisión</h4>
+                          <h4 style={{ margin: '0 0 0.35rem', color: 'var(--wl-on-panel-ok, #047857)', fontSize: '0.9rem' }}>Siguiente revisión</h4>
                           <p style={{ margin: 0, color: 'var(--ink)', lineHeight: 1.6, fontSize: '0.88rem' }}>{variant.upgradeMove}</p>
                         </section>
                         <fieldset style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '0.85rem', margin: 0 }}>

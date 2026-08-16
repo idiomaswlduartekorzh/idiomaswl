@@ -345,9 +345,9 @@ interface Difficulty {
 }
 
 const DIFFICULTIES: Difficulty[] = [
-  { id:'easy',   label:'Fácil',   emoji:'🟢', seconds:30, openRate:0,    sessionSize:10, color:'#059669', desc:'30 s · Solo opción múltiple · 10 preguntas' },
-  { id:'medium', label:'Medio',   emoji:'🟡', seconds:20, openRate:0.25, sessionSize:15, color:'#d97706', desc:'20 s · 25 % escritura libre · 15 preguntas' },
-  { id:'hard',   label:'Difícil', emoji:'🔴', seconds:12, openRate:0.5,  sessionSize:20, color:'#dc2626', desc:'12 s · 50 % escritura libre · 20 preguntas' },
+  { id:'easy',   label:'Fácil',   emoji:'🟢', seconds:30, openRate:0,    sessionSize:10, color:'var(--wl-on-panel-ok, #059669)', desc:'30 s · Solo opción múltiple · 10 preguntas' },
+  { id:'medium', label:'Medio',   emoji:'🟡', seconds:20, openRate:0.25, sessionSize:15, color:'var(--wl-on-panel-warn, #d97706)', desc:'20 s · 25 % escritura libre · 15 preguntas' },
+  { id:'hard',   label:'Difícil', emoji:'🔴', seconds:12, openRate:0.5,  sessionSize:20, color:'var(--wl-on-panel-alert, #dc2626)', desc:'12 s · 50 % escritura libre · 20 preguntas' },
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -393,10 +393,10 @@ function buildSession(difficulty: Difficulty): SessionQuestion[] {
 // ─────────────────────────────────────────────────────────────────────────────
 
 const CAT_META: Record<QCategory, { label: string; color: string; emoji: string }> = {
-  vocabulary: { label: 'Vocabulario', color: '#534AB7', emoji: '📝' },
-  grammar:    { label: 'Gramática',   color: '#2563eb', emoji: '🔤' },
-  dialog:     { label: 'Diálogo',     color: '#059669', emoji: '💬' },
-  reading:    { label: 'Lectura',     color: '#d97706', emoji: '📖' },
+  vocabulary: { label: 'Vocabulario', color: 'var(--wl-on-panel-link, #534AB7)', emoji: '📝' },
+  grammar:    { label: 'Gramática',   color: 'var(--wl-on-panel-link, #2563eb)', emoji: '🔤' },
+  dialog:     { label: 'Diálogo',     color: 'var(--wl-on-panel-ok, #059669)', emoji: '💬' },
+  reading:    { label: 'Lectura',     color: 'var(--wl-on-panel-warn, #d97706)', emoji: '📖' },
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -659,8 +659,8 @@ export default function IcfesStressPractice() {
         {/* Stats grid */}
         <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:'0.6rem' }}>
           {[
-            { label:'Mejor racha', value:`${maxStreak} 🔥`, color:'#d97706' },
-            { label:'Tiempo promedio', value:`${avgTime}s`, color:'#534AB7' },
+            { label:'Mejor racha', value:`${maxStreak} 🔥`, color:'var(--wl-on-panel-warn, #d97706)' },
+            { label:'Tiempo promedio', value:`${avgTime}s`, color:'var(--wl-on-panel-link, #534AB7)' },
             { label:'Dificultad', value:difficulty.label, color:difficulty.color },
           ].map(s => (
             <div key={s.label} style={{
@@ -794,7 +794,7 @@ export default function IcfesStressPractice() {
                 {rec.timedOut ? '(sin respuesta)' : rec.typedRaw || '(vacío)'}
               </span>
               <span style={{ color:'var(--muted)', marginLeft:'0.5rem' }}>→ correcta: </span>
-              <span style={{ color:'#059669', fontWeight:700 }}>{correctText}</span>
+              <span style={{ color:'var(--wl-on-panel-ok, #059669)', fontWeight:700 }}>{correctText}</span>
             </div>
           )}
         </div>
@@ -816,11 +816,11 @@ export default function IcfesStressPractice() {
             {idx + 1} / {session.length}
           </span>
           {streak >= 2 && (
-            <span style={{ fontSize:'0.72rem', fontWeight:700, color:'#d97706', fontFamily:'var(--mono)', background:'rgba(217,119,6,0.1)', border:'1px solid rgba(217,119,6,0.25)', borderRadius:6, padding:'0.15rem 0.5rem' }}>
+            <span style={{ fontSize:'0.72rem', fontWeight:700, color:'var(--wl-on-panel-warn, #d97706)', fontFamily:'var(--mono)', background:'rgba(217,119,6,0.1)', border:'1px solid rgba(217,119,6,0.25)', borderRadius:6, padding:'0.15rem 0.5rem' }}>
               {streak} 🔥
             </span>
           )}
-          <span style={{ fontSize:'0.72rem', fontWeight:700, color:'#059669', fontFamily:'var(--mono)', background:'rgba(5,150,105,0.08)', border:'1px solid rgba(5,150,105,0.2)', borderRadius:6, padding:'0.15rem 0.5rem' }}>
+          <span style={{ fontSize:'0.72rem', fontWeight:700, color:'var(--wl-on-panel-ok, #059669)', fontFamily:'var(--mono)', background:'rgba(5,150,105,0.08)', border:'1px solid rgba(5,150,105,0.2)', borderRadius:6, padding:'0.15rem 0.5rem' }}>
             {correctCount} ✓
           </span>
         </div>
@@ -858,7 +858,7 @@ export default function IcfesStressPractice() {
             </span>
           )}
           {isOpen && !submitted && (
-            <span style={{ fontSize:'0.7rem', fontWeight:700, padding:'0.2rem 0.65rem', borderRadius:20, fontFamily:'var(--mono)', background:'rgba(83,74,183,0.1)', color:'#534AB7', border:'1px solid rgba(83,74,183,0.25)' }}>
+            <span style={{ fontSize:'0.7rem', fontWeight:700, padding:'0.2rem 0.65rem', borderRadius:20, fontFamily:'var(--mono)', background:'rgba(83,74,183,0.1)', color:'var(--wl-on-panel-link, #534AB7)', border:'1px solid rgba(83,74,183,0.25)' }}>
               ✍️ Escribe la respuesta
             </span>
           )}
@@ -959,7 +959,7 @@ export default function IcfesStressPractice() {
             <div style={{
               padding:'0.85rem 1rem', borderRadius:12,
               background:'rgba(5,150,105,0.08)', border:'1.5px solid #05966933',
-              fontSize:'0.9rem', color:'#059669', fontWeight:700,
+              fontSize:'0.9rem', color:'var(--wl-on-panel-ok, #059669)', fontWeight:700,
             }}>
               ✓ Respuesta correcta: <strong>{sq.q.options[sq.q.answer]}</strong>
             </div>
@@ -968,7 +968,7 @@ export default function IcfesStressPractice() {
 
         {/* Timed out notice */}
         {submitted && records[records.length-1]?.timedOut && (
-          <div style={{ marginTop:'0.75rem', padding:'0.75rem 1rem', borderRadius:10, background:'rgba(220,38,38,0.07)', border:'1px solid #dc262633', fontSize:'0.85rem', color:'#dc2626', fontWeight:600 }}>
+          <div style={{ marginTop:'0.75rem', padding:'0.75rem 1rem', borderRadius:10, background:'rgba(220,38,38,0.07)', border:'1px solid #dc262633', fontSize:'0.85rem', color:'var(--wl-on-panel-alert, #dc2626)', fontWeight:600 }}>
             ⏰ Tiempo agotado — la respuesta correcta era <strong>{sq.q.options[sq.q.answer]}</strong>.
           </div>
         )}

@@ -107,7 +107,7 @@ export default function HablaRusoA2() {
                   <div style={{ width: 32, height: 32, borderRadius: 8, background: done ? COLOR : 'var(--line-soft)', color: done ? '#fff' : 'var(--muted)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.8rem', fontWeight: 900, fontFamily: 'var(--mono)', flexShrink: 0 }}>{p.id}</div>
                   <div style={{ flex: 1 }}>
                     <div style={{ fontWeight: 800, color: 'var(--ink)', fontSize: '0.97rem', marginBottom: '0.12rem' }}>{p.phrase}</div>
-                    <div style={{ fontSize: '0.78rem', color: '#059669', fontFamily: 'var(--mono)', marginBottom: '0.08rem' }}>{p.translit}</div>
+                    <div style={{ fontSize: '0.78rem', color: 'var(--wl-on-panel-ok, #059669)', fontFamily: 'var(--mono)', marginBottom: '0.08rem' }}>{p.translit}</div>
                     <div style={{ fontSize: '0.78rem', color: COLOR, fontFamily: 'var(--mono)', fontStyle: 'italic', marginBottom: '0.12rem' }}>{p.phonetic}</div>
                     <div style={{ fontSize: '0.78rem', color: 'var(--muted)' }}>{p.es}</div>
                   </div>

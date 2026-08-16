@@ -249,7 +249,7 @@ function TextExercise({ data, onBack }: { data: TextData; onBack: () => void }) 
           <p style={{ margin: '0 0 1rem', fontSize: '0.82rem', color: 'var(--muted)', fontStyle: 'italic' }}>{data.subtitle}</p>
           <div style={{ display: 'flex', gap: '0.45rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
             <span style={{ fontSize: '0.68rem', padding: '0.18rem 0.55rem', borderRadius: 6, background: `${COLOR}12`, color: COLOR, fontFamily: 'var(--mono)', fontWeight: 700 }}>{data.topic}</span>
-            <span style={{ fontSize: '0.68rem', padding: '0.18rem 0.55rem', borderRadius: 6, background: 'rgba(124,58,237,0.1)', color: '#7c3aed', fontFamily: 'var(--mono)', fontWeight: 700 }}>Grammatik: {data.grammar}</span>
+            <span style={{ fontSize: '0.68rem', padding: '0.18rem 0.55rem', borderRadius: 6, background: 'rgba(124,58,237,0.1)', color: 'var(--wl-on-panel-purple, #7c3aed)', fontFamily: 'var(--mono)', fontWeight: 700 }}>Grammatik: {data.grammar}</span>
           </div>
           <div style={{ padding: '1.1rem 1.3rem', borderRadius: 14, background: `${COLOR}08`, border: `1.5px solid ${COLOR}25`, marginBottom: '1.25rem' }}>
             <div style={{ fontSize: '0.65rem', fontWeight: 800, color: COLOR, fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.4rem' }}>Pregunta de activación</div>
@@ -322,7 +322,7 @@ function TextExercise({ data, onBack }: { data: TextData; onBack: () => void }) 
             ))}
           </div>
           <div style={{ padding: '1rem 1.2rem', borderRadius: 12, background: 'rgba(5,150,105,0.06)', border: '1px solid rgba(5,150,105,0.2)', marginBottom: '1.25rem' }}>
-            <div style={{ fontSize: '0.65rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.4rem' }}>Produktion — Schreib auf Deutsch</div>
+            <div style={{ fontSize: '0.65rem', fontWeight: 800, color: 'var(--wl-on-panel-ok, #059669)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.4rem' }}>Produktion — Schreib auf Deutsch</div>
             <p style={{ margin: '0 0 0.65rem', fontSize: '0.88rem', color: 'var(--ink)', fontWeight: 600 }}>{data.production}</p>
             <textarea value={prodText} onChange={e => setProdText(e.target.value)} rows={4} placeholder="Dein Text auf Deutsch..."
               style={{ width: '100%', padding: '0.7rem 0.9rem', borderRadius: 9, border: '1.5px solid rgba(5,150,105,0.3)', background: 'var(--bg)', color: 'var(--ink)', fontSize: '0.9rem', fontFamily: 'inherit', boxSizing: 'border-box', resize: 'vertical', lineHeight: 1.6 }} />
@@ -385,7 +385,7 @@ export default function LecturaAlemanB1() {
                   <p style={{ margin: '0 0 0.25rem', fontSize: '0.8rem', color: 'var(--muted)' }}>{t.subtitle} · {t.mcqs.length} Fragen</p>
                   <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
                     <span style={{ fontSize: '0.65rem', padding: '0.1rem 0.4rem', borderRadius: 5, background: `${COLOR}10`, color: COLOR, fontFamily: 'var(--mono)', fontWeight: 700 }}>{t.topic}</span>
-                    <span style={{ fontSize: '0.65rem', padding: '0.1rem 0.4rem', borderRadius: 5, background: 'rgba(124,58,237,0.1)', color: '#7c3aed', fontFamily: 'var(--mono)', fontWeight: 700 }}>{t.grammar}</span>
+                    <span style={{ fontSize: '0.65rem', padding: '0.1rem 0.4rem', borderRadius: 5, background: 'rgba(124,58,237,0.1)', color: 'var(--wl-on-panel-purple, #7c3aed)', fontFamily: 'var(--mono)', fontWeight: 700 }}>{t.grammar}</span>
                   </div>
                 </div>
                 <span style={{ color: COLOR, fontSize: '1.1rem', fontWeight: 700, flexShrink: 0 }}>→</span>

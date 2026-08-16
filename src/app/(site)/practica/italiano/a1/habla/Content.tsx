@@ -87,7 +87,7 @@ export default function HablaItalianoA1() {
                   <div style={{ flex: 1 }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.2rem', flexWrap: 'wrap' }}>
                       <span style={{ fontSize: '0.6rem', fontFamily: 'var(--mono)', fontWeight: 700, color: COLOR, textTransform: 'uppercase' }}>{p.category}</span>
-                      {isPracticed && <span style={{ fontSize: '0.6rem', color: '#059669', fontWeight: 700 }}>✓ practicata</span>}
+                      {isPracticed && <span style={{ fontSize: '0.6rem', color: 'var(--wl-on-panel-ok, #059669)', fontWeight: 700 }}>✓ practicata</span>}
                     </div>
                     <div style={{ fontWeight: 800, fontSize: '1.05rem', color: 'var(--ink)', marginBottom: '0.15rem' }}>{p.phrase}</div>
                     <div style={{ fontSize: '0.78rem', color: COLOR, fontFamily: 'var(--mono)', fontWeight: 600, marginBottom: '0.15rem' }}>{p.phonetic}</div>

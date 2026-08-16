@@ -180,7 +180,7 @@ export default function IELTSGeneralTrainingPage() {
                 border: '1px solid var(--line-soft)',
                 borderRadius: 8,
                 padding: '1rem',
-                background: '#fff',
+                background: 'var(--wl-panel-raised, #fff)',
               }}
             >
               <h2 id="official-vs-welearn" style={{ marginTop: 0, fontSize: '1.05rem' }}>
@@ -197,7 +197,7 @@ export default function IELTSGeneralTrainingPage() {
                 border: '1px solid var(--line-soft)',
                 borderRadius: 8,
                 padding: '1rem',
-                background: '#f8fafc',
+                background: 'var(--wl-panel-raised, #f8fafc)',
               }}
             >
               <h2 style={{ marginTop: 0, fontSize: '1.05rem' }}>Cómo lo entrenamos aquí</h2>
@@ -259,7 +259,7 @@ export default function IELTSGeneralTrainingPage() {
               {pathways.map((pathway) => (
                 <article
                   key={pathway.title}
-                  style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: '#fff' }}
+                  style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: 'var(--wl-panel-raised, #fff)' }}
                 >
                   <h3 style={{ marginTop: 0 }}>{pathway.title}</h3>
                   <p style={{ color: 'var(--muted)', lineHeight: 1.6 }}>
@@ -290,7 +290,7 @@ export default function IELTSGeneralTrainingPage() {
               {practiceItems.map((item, index) => (
                 <article
                   key={item.prompt}
-                  style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: '#fff' }}
+                  style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: 'var(--wl-panel-raised, #fff)' }}
                 >
                   <p style={{ marginTop: 0, fontWeight: 800 }}>Ejercicio {index + 1}</p>
                   <p style={{ lineHeight: 1.65 }}>{item.prompt}</p>

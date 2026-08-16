@@ -109,7 +109,7 @@ function EmailCard({ prompt, featured = false }: { prompt: EmailPromptBankItem; 
 
         {showModel && (
           <section style={{ padding: '0.95rem', borderRadius: 14, background: 'rgba(4,120,87,0.07)', border: '1px solid rgba(4,120,87,0.2)' }}>
-            <p style={{ margin: '0 0 0.4rem', color: '#047857', fontFamily: 'var(--mono)', fontWeight: 900, fontSize: '0.72rem', textTransform: 'uppercase' }}>
+            <p style={{ margin: '0 0 0.4rem', color: 'var(--wl-on-panel-ok, #047857)', fontFamily: 'var(--mono)', fontWeight: 900, fontSize: '0.72rem', textTransform: 'uppercase' }}>
               Modelo WeLearn original
             </p>
             <p style={{ margin: '0 0 0.65rem', color: 'var(--ink-2)', lineHeight: 1.68, whiteSpace: 'pre-line' }}>{prompt.modelEmail}</p>

@@ -222,7 +222,7 @@ export default function OverviewPage() {
           </div>
 
           <div className="wl-card" style={{ padding: '1.25rem', marginBottom: '1.25rem', borderTop: '3px solid #0f3d8c' }}>
-            <p style={{ margin: '0 0 0.5rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 900, textTransform: 'uppercase' }}>
+            <p style={{ margin: '0 0 0.5rem', color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 900, textTransform: 'uppercase' }}>
               IELTS Academic — {lesson.label}
             </p>
             <p style={{ margin: '0 0 1rem', color: 'var(--ink)', fontStyle: 'italic', lineHeight: 1.6 }}>
@@ -234,7 +234,7 @@ export default function OverviewPage() {
             <h2 style={{ margin: '0 0 0.45rem', fontSize: '1.08rem', letterSpacing: 0 }}>{lesson.question}</h2>
             <div style={{ display: 'flex', gap: '0.45rem', flexWrap: 'wrap' }}>
               {lesson.whatToLookFor.map((item) => (
-                <span key={item} style={{ padding: '0.2rem 0.55rem', borderRadius: 999, background: 'rgba(15,61,140,0.07)', color: '#0f3d8c', border: '1px solid rgba(15,61,140,0.16)', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 800 }}>
+                <span key={item} style={{ padding: '0.2rem 0.55rem', borderRadius: 999, background: 'rgba(15,61,140,0.07)', color: 'var(--wl-on-panel-link, #0f3d8c)', border: '1px solid rgba(15,61,140,0.16)', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 800 }}>
                   {item}
                 </span>
               ))}
@@ -262,7 +262,7 @@ export default function OverviewPage() {
                 <article role="tabpanel" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem', alignItems: 'start', marginTop: '0.85rem', padding: '1rem', border: '1px solid var(--line-soft)', borderRadius: 8, background: 'var(--bg-2)' }}>
                   <div style={{ padding: '0.7rem', borderRadius: 8, background: 'var(--bg)', border: '1px solid var(--line-soft)', overflow: 'hidden' }}><ExampleChart variant={example.variant} /></div>
                   <div>
-                    <p style={{ margin: '0 0 0.3rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 900 }}>{example.title}</p>
+                    <p style={{ margin: '0 0 0.3rem', color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 900 }}>{example.title}</p>
                     <p style={{ margin: '0 0 0.7rem', color: 'var(--ink)', fontWeight: 800 }}>{example.insight}</p>
                     <p style={{ margin: 0, color: 'var(--ink-2)', lineHeight: 1.65, fontStyle: 'italic' }}>“{example.overview}”</p>
                     <p style={{ margin: '0.8rem 0 0', color: 'var(--muted)', fontSize: '0.82rem', lineHeight: 1.55 }}>Study the visual first: the overview summarises this story, not every figure.</p>

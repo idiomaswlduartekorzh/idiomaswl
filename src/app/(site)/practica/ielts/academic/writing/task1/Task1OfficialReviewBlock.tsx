@@ -68,7 +68,7 @@ export default function Task1OfficialReviewBlock({
             style={{
               border: '1px solid var(--line-soft)',
               borderRadius: 999,
-              color: '#0f3d8c',
+              color: 'var(--wl-on-panel-link, #0f3d8c)',
               fontFamily: 'var(--mono)',
               fontSize: '0.72rem',
               fontWeight: 800,
@@ -85,7 +85,7 @@ export default function Task1OfficialReviewBlock({
             style={{
               border: '1px solid var(--line-soft)',
               borderRadius: 999,
-              color: '#0f3d8c',
+              color: 'var(--wl-on-panel-link, #0f3d8c)',
               fontFamily: 'var(--mono)',
               fontSize: '0.72rem',
               fontWeight: 800,
@@ -102,7 +102,7 @@ export default function Task1OfficialReviewBlock({
               style={{
                 border: '1px solid var(--line-soft)',
                 borderRadius: 999,
-                color: '#0f3d8c',
+                color: 'var(--wl-on-panel-link, #0f3d8c)',
                 fontFamily: 'var(--mono)',
                 fontSize: '0.72rem',
                 fontWeight: 800,

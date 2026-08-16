@@ -203,7 +203,7 @@ export default function VocabularioJaponesA1() {
                   <div>
                     <div style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--ink)' }}>{w.word}</div>
                     <div style={{ fontSize: '0.72rem', color: COLOR, fontWeight: 700, fontStyle: 'italic' }}>{w.romaji}</div>
-                    <div style={{ fontSize: '0.85rem', color: '#bc002d', fontWeight: 700 }}>{w.es}</div>
+                    <div style={{ fontSize: '0.85rem', color: 'var(--wl-on-panel-alert, #bc002d)', fontWeight: 700 }}>{w.es}</div>
                   </div>
                 </div>
                 <p style={{ margin: '0.3rem 0 0.1rem', fontSize: '0.9rem', color: 'var(--ink)' }}>{w.example}</p>

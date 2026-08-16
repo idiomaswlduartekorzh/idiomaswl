@@ -222,7 +222,7 @@ export default function VocabularioCoreanoA1() {
                   <div>
                     <div style={{ fontWeight: 800, fontSize: '1.15rem', color: 'var(--ink)' }}>{w.word}</div>
                     <div style={{ fontSize: '0.72rem', color: COLOR, fontWeight: 700, fontStyle: 'italic' }}>{w.romanization}</div>
-                    <div style={{ fontSize: '0.85rem', color: '#7c3aed', fontWeight: 700 }}>{w.es}</div>
+                    <div style={{ fontSize: '0.85rem', color: 'var(--wl-on-panel-purple, #7c3aed)', fontWeight: 700 }}>{w.es}</div>
                   </div>
                 </div>
                 <p style={{ margin: '0.35rem 0 0.1rem', fontSize: '0.9rem', color: 'var(--ink)' }}>{w.example}</p>
@@ -246,7 +246,7 @@ export default function VocabularioCoreanoA1() {
                 </>
               ) : (
                 <>
-                  <span style={{ fontSize: '1.8rem', fontWeight: 800, color: '#7c3aed' }}>{currentSet.words[cardIdx].es}</span>
+                  <span style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--wl-on-panel-purple, #7c3aed)' }}>{currentSet.words[cardIdx].es}</span>
                   <p style={{ margin: 0, fontSize: '0.87rem', color: 'var(--ink)', maxWidth: 340 }}>{currentSet.words[cardIdx].example}</p>
                   <p style={{ margin: 0, fontSize: '0.75rem', color: COLOR, fontStyle: 'italic', maxWidth: 340 }}>{currentSet.words[cardIdx].exampleRom}</p>
                 </>

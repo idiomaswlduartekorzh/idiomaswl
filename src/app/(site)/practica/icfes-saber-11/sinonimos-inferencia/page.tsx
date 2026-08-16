@@ -136,7 +136,7 @@ export default function Page() {
               {[
                 { label: 'preguntas', value: ICFES_SYNONYMS_INFERENCE_SUMMARY.total, color: ICFES_COLOR },
                 { label: 'de vocabulario', value: ICFES_SYNONYMS_INFERENCE_SUMMARY.synonymLike, color: SMART_COLOR },
-                { label: 'de inferencia', value: ICFES_SYNONYMS_INFERENCE_SUMMARY.inference, color: '#059669' },
+                { label: 'de inferencia', value: ICFES_SYNONYMS_INFERENCE_SUMMARY.inference, color: 'var(--wl-on-panel-ok, #059669)' },
               ].map((item) => (
                 <div key={item.label} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '0.75rem', border: '1px solid var(--line-soft)', borderRadius: 12, padding: '0.8rem', background: 'var(--bg-2)' }}>
                   <span style={{ color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.06em' }}>{item.label}</span>

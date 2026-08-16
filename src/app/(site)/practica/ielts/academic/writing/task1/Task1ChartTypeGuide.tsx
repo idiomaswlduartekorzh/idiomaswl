@@ -82,7 +82,7 @@ export default function Task1ChartTypeGuide() {
           {CHART_TYPES.map((type) => (
             <article key={type.name} style={{ padding: '1rem', borderRight: '1px solid var(--line-soft)', borderBottom: '1px solid var(--line-soft)' }}>
               <h3 style={{ margin: '0 0 0.25rem', fontSize: '0.98rem' }}>{type.name}</h3>
-              <p style={{ margin: '0 0 0.55rem', color: '#0f3d8c', fontWeight: 800, fontSize: '0.78rem', fontFamily: 'var(--mono)' }}>
+              <p style={{ margin: '0 0 0.55rem', color: 'var(--wl-on-panel-link, #0f3d8c)', fontWeight: 800, fontSize: '0.78rem', fontFamily: 'var(--mono)' }}>
                 {type.useFor}
               </p>
               <p style={{ margin: '0 0 0.4rem', color: 'var(--ink-2)', lineHeight: 1.55, fontSize: '0.84rem' }}>
@@ -94,7 +94,7 @@ export default function Task1ChartTypeGuide() {
               <p style={{ margin: '0 0 0.65rem', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.78rem', fontFamily: 'var(--mono)' }}>
                 {type.language}
               </p>
-              <Link href={type.route} style={{ color: '#0f3d8c', fontWeight: 800, fontSize: '0.82rem', textDecoration: 'none' }}>
+              <Link href={type.route} style={{ color: 'var(--wl-on-panel-link, #0f3d8c)', fontWeight: 800, fontSize: '0.82rem', textDecoration: 'none' }}>
                 Practise this visual type →
               </Link>
             </article>

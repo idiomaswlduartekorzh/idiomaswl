@@ -1,12 +1,12 @@
 .page {
-  --writing-navy: #102e6f;
-  --writing-red: #b42332;
-  --writing-teal: #176b87;
-  --writing-ink: #14244f;
-  --writing-muted: #5d6782;
+  --writing-navy: var(--wl-on-panel, #102e6f);
+  --writing-red: var(--wl-on-panel-alert, #b42332);
+  --writing-teal: var(--wl-on-panel-teal, #176b87);
+  --writing-ink: var(--wl-on-panel, #14244f);
+  --writing-muted: var(--wl-on-panel-soft, #5d6782);
   min-height: 100vh;
   padding: clamp(2.5rem, 6vw, 5.5rem) 1.25rem 6rem;
-  background: #f7f8fc;
+  background: var(--wl-panel-canvas, #f7f8fc);
   color: var(--writing-ink);
 }
 

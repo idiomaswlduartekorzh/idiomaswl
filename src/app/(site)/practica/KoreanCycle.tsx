@@ -14,9 +14,9 @@ const STEP_COLORS = {
 } as const;
 
 const NIVEL_INFO: Record<Nivel, { desc: string; emoji: string; color: string; bg: string }> = {
-  A1: { desc: 'Principiante absoluto. Frases simples, vocabulario básico.', emoji: '🌱', color: '#059669', bg: 'rgba(5,150,105,0.08)' },
-  A2: { desc: 'Básico. Situaciones cotidianas, presente y futuro sencillo.', emoji: '🌿', color: '#534AB7', bg: 'rgba(83,74,183,0.08)' },
-  B1: { desc: 'Intermedio. Textos más largos, pasado, comparaciones.', emoji: '🌳', color: '#d97706', bg: 'rgba(217,119,6,0.08)' },
+  A1: { desc: 'Principiante absoluto. Frases simples, vocabulario básico.', emoji: '🌱', color: 'var(--wl-on-panel-ok, #059669)', bg: 'rgba(5,150,105,0.08)' },
+  A2: { desc: 'Básico. Situaciones cotidianas, presente y futuro sencillo.', emoji: '🌿', color: 'var(--wl-on-panel-link, #534AB7)', bg: 'rgba(83,74,183,0.08)' },
+  B1: { desc: 'Intermedio. Textos más largos, pasado, comparaciones.', emoji: '🌳', color: 'var(--wl-on-panel-warn, #d97706)', bg: 'rgba(217,119,6,0.08)' },
 };
 
 type CyclePhase = 'level' | 'text' | 'step1' | 'step2' | 'step3' | 'step4' | 'done';
@@ -149,7 +149,7 @@ export default function KoreanCycle({ addXp }: { addXp: (n: number) => void }) {
             ))}
           </div>
           <p style={{ margin:'0.75rem 0 0', fontSize:'0.8rem', color:'var(--muted)', lineHeight:1.55 }}>
-            Elige un texto, léelo, escúchalo, responde preguntas y graba tu voz. Al completar el ciclo ganas <strong style={{ color:'#534AB7' }}>+50 XP</strong>.
+            Elige un texto, léelo, escúchalo, responde preguntas y graba tu voz. Al completar el ciclo ganas <strong style={{ color:'var(--wl-on-panel-link, #534AB7)' }}>+50 XP</strong>.
           </p>
         </motion.div>
       )}
@@ -988,7 +988,7 @@ function StepProduccion({
         <h3 style={{ fontWeight:900, fontSize:'1.4rem', color: c.main, margin:'0 0 0.5rem' }}>¡Audio enviado!</h3>
         <p style={{ color:'var(--muted)', margin:0 }}>Gracias <strong style={{ color:'var(--ink)' }}>{username}</strong>. Nuestro equipo revisará tu pronunciación.</p>
         <div style={{ marginTop:'1rem', padding:'0.75rem', borderRadius:10, background:'rgba(83,74,183,0.08)', border:'1px solid rgba(83,74,183,0.2)' }}>
-          <span style={{ color:'#534AB7', fontWeight:800, fontSize:'1.1rem' }}>+50 XP desbloqueados</span>
+          <span style={{ color:'var(--wl-on-panel-link, #534AB7)', fontWeight:800, fontSize:'1.1rem' }}>+50 XP desbloqueados</span>
         </div>
       </motion.div>
     );
@@ -1020,7 +1020,7 @@ function StepProduccion({
 
         {/* Recording UI */}
         {micError && (
-          <div style={{ padding:'0.75rem', borderRadius:10, background:'rgba(220,38,38,0.08)', border:'1px solid rgba(220,38,38,0.25)', fontSize:'0.85rem', color:'#dc2626', marginBottom:'0.85rem' }}>
+          <div style={{ padding:'0.75rem', borderRadius:10, background:'rgba(220,38,38,0.08)', border:'1px solid rgba(220,38,38,0.25)', fontSize:'0.85rem', color:'var(--wl-on-panel-alert, #dc2626)', marginBottom:'0.85rem' }}>
             {micError}
           </div>
         )}
@@ -1098,7 +1098,7 @@ function StepProduccion({
         )}
 
         {error && (
-          <p style={{ margin:'0.75rem 0 0', fontSize:'0.85rem', color:'#dc2626', fontWeight:600 }}>
+          <p style={{ margin:'0.75rem 0 0', fontSize:'0.85rem', color:'var(--wl-on-panel-alert, #dc2626)', fontWeight:600 }}>
             Error: {error}
           </p>
         )}
@@ -1120,11 +1120,11 @@ function CompletionScreen({ text, score, onRestart }: { text: CycleText; score: 
       </p>
       <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.75rem', maxWidth:400, margin:'0 auto', width:'100%' }}>
         <div style={{ padding:'1rem', borderRadius:14, background:'rgba(83,74,183,0.08)', border:'1px solid rgba(83,74,183,0.2)' }}>
-          <div style={{ fontSize:'2rem', fontWeight:900, color:'#534AB7' }}>+50</div>
+          <div style={{ fontSize:'2rem', fontWeight:900, color:'var(--wl-on-panel-link, #534AB7)' }}>+50</div>
           <div style={{ fontSize:'0.78rem', color:'var(--muted)', fontFamily:'var(--mono)' }}>XP GANADOS</div>
         </div>
         <div style={{ padding:'1rem', borderRadius:14, background:'rgba(5,150,105,0.08)', border:'1px solid rgba(5,150,105,0.2)' }}>
-          <div style={{ fontSize:'2rem', fontWeight:900, color:'#059669' }}>{score}/4</div>
+          <div style={{ fontSize:'2rem', fontWeight:900, color:'var(--wl-on-panel-ok, #059669)' }}>{score}/4</div>
           <div style={{ fontSize:'0.78rem', color:'var(--muted)', fontFamily:'var(--mono)' }}>COMPRENSIÓN</div>
         </div>
       </div>

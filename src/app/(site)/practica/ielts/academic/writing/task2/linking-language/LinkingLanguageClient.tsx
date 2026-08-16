@@ -5,13 +5,13 @@ import Task2OfficialReviewBlock from '../Task2OfficialReviewBlock';
 import { placeOption } from '@/lib/practica/shuffle-options';
 
 const BANK = [
-  { cat: 'Addition', color: '#0f3d8c', bg: 'rgba(15,61,140,0.08)', items: ['Furthermore', 'Moreover', 'In addition', 'Additionally', 'What is more', 'Not only... but also'] },
-  { cat: 'Contrast', color: '#7c3aed', bg: 'rgba(124,58,237,0.08)', items: ['However', 'Nevertheless', 'On the other hand', 'In contrast', 'Whereas', 'Conversely', 'Despite this'] },
-  { cat: 'Cause and effect', color: '#059669', bg: 'rgba(5,150,105,0.08)', items: ['As a result', 'Therefore', 'Consequently', 'Hence', 'This means that', 'This has led to', 'Due to this'] },
-  { cat: 'Example', color: '#d97706', bg: 'rgba(217,119,6,0.08)', items: ['For example', 'For instance', 'In particular', 'A case in point is', 'This is illustrated by', 'Such as'] },
-  { cat: 'Concession', color: '#dc2626', bg: 'rgba(220,38,38,0.08)', items: ['Admittedly', 'While this may be true', 'It is true that', 'Although', 'Despite the fact that', 'Even though'] },
-  { cat: 'Comparison', color: '#0891b2', bg: 'rgba(8,145,178,0.08)', items: ['Similarly', 'Likewise', 'In the same way', 'By comparison', 'Compared to'] },
-  { cat: 'Conclusion', color: '#6b7280', bg: 'rgba(107,114,128,0.08)', items: ['In conclusion', 'To conclude', 'In summary', 'To summarise', 'Overall', 'To sum up'] },
+  { cat: 'Addition', color: 'var(--wl-on-panel-link, #0f3d8c)', bg: 'rgba(15,61,140,0.08)', items: ['Furthermore', 'Moreover', 'In addition', 'Additionally', 'What is more', 'Not only... but also'] },
+  { cat: 'Contrast', color: 'var(--wl-on-panel-purple, #7c3aed)', bg: 'rgba(124,58,237,0.08)', items: ['However', 'Nevertheless', 'On the other hand', 'In contrast', 'Whereas', 'Conversely', 'Despite this'] },
+  { cat: 'Cause and effect', color: 'var(--wl-on-panel-ok, #059669)', bg: 'rgba(5,150,105,0.08)', items: ['As a result', 'Therefore', 'Consequently', 'Hence', 'This means that', 'This has led to', 'Due to this'] },
+  { cat: 'Example', color: 'var(--wl-on-panel-warn, #d97706)', bg: 'rgba(217,119,6,0.08)', items: ['For example', 'For instance', 'In particular', 'A case in point is', 'This is illustrated by', 'Such as'] },
+  { cat: 'Concession', color: 'var(--wl-on-panel-alert, #dc2626)', bg: 'rgba(220,38,38,0.08)', items: ['Admittedly', 'While this may be true', 'It is true that', 'Although', 'Despite the fact that', 'Even though'] },
+  { cat: 'Comparison', color: 'var(--wl-on-panel-teal, #0891b2)', bg: 'rgba(8,145,178,0.08)', items: ['Similarly', 'Likewise', 'In the same way', 'By comparison', 'Compared to'] },
+  { cat: 'Conclusion', color: 'var(--wl-on-panel, #6b7280)', bg: 'rgba(107,114,128,0.08)', items: ['In conclusion', 'To conclude', 'In summary', 'To summarise', 'Overall', 'To sum up'] },
 ];
 
 interface Ex {
@@ -168,7 +168,7 @@ export default function LinkingLanguageClient() {
   if (finished) return (
     <section className="wl-section"><div className="wrap"><div style={{ maxWidth: 720, margin: '0 auto' }}>
       <div className="wl-card" style={{ padding: '2rem', textAlign: 'center', borderTop: '4px solid #0f3d8c' }}>
-        <p style={{ fontSize: '0.75rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.08em', margin: '0 0 0.5rem' }}>Final score</p>
+        <p style={{ fontSize: '0.75rem', fontWeight: 800, color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.08em', margin: '0 0 0.5rem' }}>Final score</p>
         <p style={{ fontSize: '3rem', fontWeight: 800, fontFamily: 'var(--mono)', color: 'var(--ink)', margin: '0 0 0.2rem', lineHeight: 1 }}>{score}/{EXERCISES.length * 2}</p>
         <p style={{ fontSize: '0.9rem', color: 'var(--muted)', margin: '0 0 1.5rem' }}>
           {score >= 14 ? 'You picked the right relationship almost every time. Eight connectors is not a band score — it is one skill, and this one is solid.' : score >= 10 ? 'Solid. Go back to the categories you missed and read what each connector actually signals.' : 'Work through the connector bank by category before trying again.'}
@@ -193,7 +193,7 @@ export default function LinkingLanguageClient() {
         This paragraph has five serious linking errors. Click each one to see what is wrong and how to repair it.
       </p>
       <div className="wl-card" style={{ padding: '1.25rem', borderLeft: '4px solid #dc2626', marginBottom: '1.25rem' }}>
-        <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#dc2626', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.5rem' }}>Draft with errors</p>
+        <p style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--wl-on-panel-alert, #dc2626)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.5rem' }}>Draft with errors</p>
         <p style={{ margin: 0, fontSize: '0.93rem', lineHeight: 1.85, color: 'var(--ink)', fontStyle: 'italic' }}>&ldquo;{FIX_PARA.original}&rdquo;</p>
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.25rem' }}>
@@ -207,7 +207,7 @@ export default function LinkingLanguageClient() {
       </div>
       {fixFound.every(Boolean) && (
         <div style={{ padding: '1rem 1.25rem', borderRadius: 12, background: 'rgba(5,150,105,0.07)', border: '1px solid rgba(5,150,105,0.25)', marginBottom: '1rem' }}>
-          <p style={{ margin: '0 0 0.35rem', fontSize: '0.85rem', fontWeight: 700, color: '#059669' }}>All five found.</p>
+          <p style={{ margin: '0 0 0.35rem', fontSize: '0.85rem', fontWeight: 700, color: 'var(--wl-on-panel-ok, #059669)' }}>All five found.</p>
           <p style={{ margin: 0, fontSize: '0.83rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>Repaired version: <em>&ldquo;Technology has undeniably transformed the way people communicate. Social media platforms, for instance, allow individuals to maintain relationships across vast distances with unprecedented ease. However, some researchers argue that this convenience comes at the cost of communication depth, with face-to-face interactions becoming increasingly rare in daily life. The implications of this shift for social cohesion require careful consideration.&rdquo;</em></p>
         </div>
       )}
@@ -270,13 +270,13 @@ export default function LinkingLanguageClient() {
           </div>
 
           <div className="wl-card" style={{ padding: '1.5rem', borderLeft: '4px solid #0f3d8c', marginBottom: '1.25rem' }}>
-            <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.75rem' }}>Complete the sentence</p>
+            <p style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.75rem' }}>Complete the sentence</p>
             <p style={{ margin: 0, fontSize: '1rem', lineHeight: 1.85, color: 'var(--ink)' }}>
               {q.before}
               {selected !== null ? (
                 <span style={{ fontWeight: 800, color: isCorrect ? '#059669' : '#dc2626', margin: '0 0.2rem' }}> {selected}</span>
               ) : (
-                <span style={{ display: 'inline-block', minWidth: 120, borderBottom: '2px dashed #0f3d8c', margin: '0 0.3rem', verticalAlign: 'bottom', textAlign: 'center', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.85rem' }}>?</span>
+                <span style={{ display: 'inline-block', minWidth: 120, borderBottom: '2px dashed #0f3d8c', margin: '0 0.3rem', verticalAlign: 'bottom', textAlign: 'center', color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)', fontSize: '0.85rem' }}>?</span>
               )}
               {q.after}
             </p>
@@ -302,7 +302,7 @@ export default function LinkingLanguageClient() {
 
           {showHint && (
             <div style={{ padding: '0.85rem 1.1rem', borderRadius: 10, background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.3)', marginBottom: '0.85rem' }}>
-              <p style={{ margin: '0 0 0.3rem', fontSize: '0.78rem', fontWeight: 800, color: '#d97706', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.07em' }}>Hint</p>
+              <p style={{ margin: '0 0 0.3rem', fontSize: '0.78rem', fontWeight: 800, color: 'var(--wl-on-panel-warn, #d97706)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.07em' }}>Hint</p>
               <p style={{ margin: '0 0 0.5rem', fontSize: '0.85rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>Think about the relationship between the two clauses. Does the second one ADD to the first, CONTRAST with it, FOLLOW FROM it, or ILLUSTRATE it?</p>
               {canRetry && <button className="btn btn-sm" onClick={retry}>Try again →</button>}
             </div>

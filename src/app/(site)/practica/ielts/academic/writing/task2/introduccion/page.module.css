@@ -1,15 +1,16 @@
 .page {
-  --intro-navy: #102e6f;
-  --intro-red: #b42332;
-  --intro-green: #18794e;
+  --intro-navy: var(--wl-on-panel, #102e6f);
+  --intro-navy-panel: var(--wl-panel-inverse, #102e6f);
+  --intro-red: var(--wl-on-panel-alert, #b42332);
+  --intro-green: var(--wl-on-panel-ok, #18794e);
   --intro-orange: #a84f08;
-  --intro-purple: #6941a5;
-  --intro-link: #176b87;
-  --intro-ink: #14244f;
-  --intro-muted: #5c6680;
-  --intro-line: #d9deea;
-  --intro-surface: #ffffff;
-  background: #f7f8fc;
+  --intro-purple: var(--wl-on-panel-purple, #6941a5);
+  --intro-link: var(--wl-on-panel-teal, #176b87);
+  --intro-ink: var(--wl-on-panel, #14244f);
+  --intro-muted: var(--wl-on-panel-soft, #5c6680);
+  --intro-line: var(--wl-panel-line, #d9deea);
+  --intro-surface: var(--wl-panel-card, #ffffff);
+  background: var(--wl-panel-canvas, #f7f8fc);
   color: var(--intro-ink);
   min-height: 100vh;
   padding: 2rem 1.25rem 5rem;
@@ -96,7 +97,7 @@
 }
 
 .fact {
-  background: #edf1f9;
+  background: var(--wl-panel-raised, #edf1f9);
   min-height: 112px;
   padding: 1.1rem;
 }
@@ -123,7 +124,7 @@
 
 .heroActions a {
   align-items: center;
-  background: var(--intro-navy);
+  background: var(--intro-navy-panel);
   border: 1px solid var(--intro-navy);
   border-radius: 6px;
   color: #fff;
@@ -137,7 +138,7 @@
 }
 
 .heroActions a + a {
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   color: var(--intro-navy);
 }
 
@@ -174,7 +175,7 @@
 }
 
 .podcastPanel {
-  background: var(--intro-navy);
+  background: var(--intro-navy-panel);
   border-radius: 12px;
   border-top: 5px solid var(--intro-red);
   box-shadow: 0 18px 45px rgba(16, 46, 111, 0.14);
@@ -244,7 +245,7 @@
 }
 
 .playerShell {
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border-left: 1px solid #d5dce9;
   border-right: 1px solid #d5dce9;
   margin: 0 clamp(1.4rem, 4vw, 2.4rem);
@@ -278,7 +279,7 @@
 }
 
 .podcastBody {
-  background: #f8f9fc;
+  background: var(--wl-panel-raised, #f8f9fc);
   display: grid;
   gap: 0;
   grid-template-columns: minmax(0, 1.12fr) minmax(320px, 0.88fr);
@@ -339,7 +340,7 @@
 
 .editorialNote {
   align-items: flex-start;
-  background: #edf4f0;
+  background: var(--wl-panel-raised, #edf4f0);
   border-left: 1px solid #cdded5;
   display: flex;
   gap: 0.9rem;
@@ -357,7 +358,7 @@
 }
 
 .editorialNote p:last-child {
-  color: #3f5d4f;
+  color: var(--wl-on-panel-ok, #3f5d4f);
   font-size: 0.87rem;
   line-height: 1.65;
   margin: 0;
@@ -409,7 +410,7 @@
 .exampleTab,
 .sentenceTab,
 .levelTabs button {
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   color: var(--intro-ink);
@@ -426,7 +427,7 @@
 .exampleTabActive,
 .sentenceTabActive,
 .levelActive {
-  background: var(--intro-navy) !important;
+  background: var(--intro-navy-panel) !important;
   border-color: var(--intro-navy) !important;
   color: #fff !important;
 }
@@ -458,7 +459,7 @@
 }
 
 .signal {
-  background: #f1f4fa;
+  background: var(--wl-panel-raised, #f1f4fa);
   border-left: 4px solid var(--intro-navy);
   color: var(--intro-ink);
   line-height: 1.55;
@@ -482,10 +483,10 @@
 }
 
 .trap {
-  background: #fff5f5;
+  background: var(--wl-panel-raised, #fff5f5);
   border: 1px solid #edc8cd;
   border-radius: 6px;
-  color: #7d1c2a;
+  color: var(--wl-on-panel-alert, #7d1c2a);
   line-height: 1.55;
   margin: 0;
   padding: 1rem;
@@ -523,16 +524,16 @@
 /* El hook es la conclusión del silogismo, así que lleva color propio: no es la paráfrasis
    ni la postura, es la afirmación que el ensayo entero desarrolla y que la conclusión
    recoge. Ámbar, para que se distinga del azul de la paráfrasis y del rojo de la postura. */
-.hook { background: #fff6e5; color: #8a5300; }
-.prompt { background: #f4f5f8; color: #4f596e; }
-.paraphrase { background: #eef4ff; color: var(--intro-navy); }
-.claim { background: #fff0f1; color: var(--intro-red); }
-.development { background: #effaf4; color: var(--intro-green); }
-.evidence { background: #fff7eb; color: var(--intro-orange); }
-.contrast { background: #f7f1ff; color: var(--intro-purple); }
-.link { background: #edf9fb; color: var(--intro-link); }
-.review { background: #f3f4f7; color: #475467; }
-.example { background: #fff7eb; color: var(--intro-orange); }
+.hook { background: var(--wl-panel-tint-warn, #fff6e5); color: var(--wl-on-panel-warn, #8a5300); }
+.prompt { background: var(--wl-panel-raised, #f4f5f8); color: var(--wl-on-panel-link, #4f596e); }
+.paraphrase { background: var(--wl-panel-raised, #eef4ff); color: var(--intro-navy); }
+.claim { background: var(--wl-panel-tint-alert, #fff0f1); color: var(--intro-red); }
+.development { background: var(--wl-panel-tint-ok, #effaf4); color: var(--intro-green); }
+.evidence { background: var(--wl-panel-tint-warn, #fff7eb); color: var(--intro-orange); }
+.contrast { background: var(--wl-panel-tint-purple, #f7f1ff); color: var(--intro-purple); }
+.link { background: var(--wl-panel-tint-info, #edf9fb); color: var(--intro-link); }
+.review { background: var(--wl-panel-raised, #f3f4f7); color: var(--wl-on-panel-link, #475467); }
+.example { background: var(--wl-panel-tint-warn, #fff7eb); color: var(--intro-orange); }
 
 .examplePanel {
   padding: clamp(1.1rem, 3vw, 2rem);
@@ -569,14 +570,14 @@
 }
 
 .whyList {
-  background: #effaf4;
+  background: var(--wl-panel-tint-ok, #effaf4);
   border-left: 4px solid var(--intro-green);
   margin: 1rem 0 0;
   padding: 0.8rem 1rem 0.8rem 2rem;
 }
 
 .whyList li {
-  color: #245e44;
+  color: var(--wl-on-panel-ok, #245e44);
   line-height: 1.55;
   margin: 0.3rem 0;
 }
@@ -590,7 +591,7 @@
 .workedExample { display: grid; gap: 1rem; }
 .workedBadge {
   align-self: start;
-  background: var(--intro-navy);
+  background: var(--intro-navy-panel);
   border-radius: 4px;
   color: #fff;
   font-family: var(--mono, ui-monospace, monospace);
@@ -608,7 +609,7 @@
 }
 
 .workedStepGrid > div {
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid var(--intro-line);
   border-top: 4px solid var(--intro-navy);
   border-radius: 6px;
@@ -656,7 +657,7 @@
 
 .iconButton {
   align-items: center;
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   color: var(--intro-navy);
@@ -668,7 +669,7 @@
 }
 
 .workshopStep {
-  background: #f8f9fc;
+  background: var(--wl-panel-raised, #f8f9fc);
   border: 1px solid var(--intro-line);
   border-radius: 7px;
   padding: clamp(1rem, 3vw, 1.5rem);
@@ -682,14 +683,14 @@
 }
 
 .stepLabel strong {
-  background: var(--intro-navy);
+  background: var(--intro-navy-panel);
   border-radius: 4px;
   color: #fff;
   padding: 0.3rem 0.5rem;
 }
 
 .stepLabel span { color: var(--intro-muted); }
-.stepLocked { background: #f3f4f7; opacity: 0.78; }
+.stepLocked { background: var(--wl-panel-raised, #f3f4f7); opacity: 0.78; }
 
 .decodeGrid,
 .planGrid,
@@ -702,7 +703,7 @@
 .planGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 1rem; }
 
 .guidedField {
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   display: flex;
@@ -715,7 +716,7 @@
 .guidedField > strong { color: var(--intro-navy); }
 .guidedField > span { color: var(--intro-muted); font-size: 0.82rem; line-height: 1.45; }
 .guidedField textarea {
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid #b8c1d5;
   border-radius: 5px;
   color: var(--intro-ink);
@@ -727,7 +728,7 @@
   width: 100%;
 }
 
-.guidedField textarea:focus { border-color: var(--intro-navy); outline: 3px solid #dbe5ff; }
+.guidedField textarea:focus { border-color: var(--intro-navy); outline: 3px solid var(--wl-panel-line, #dbe5ff); }
 .guidedField small { font-size: 0.76rem; font-weight: 700; line-height: 1.4; }
 .matchGood { color: var(--intro-green); }
 .matchReview { color: var(--intro-orange); }
@@ -739,7 +740,7 @@
 .workshopActions a,
 .workshopActions button {
   align-items: center;
-  background: var(--intro-navy);
+  background: var(--intro-navy-panel);
   border: 1px solid var(--intro-navy);
   border-radius: 6px;
   color: #fff;
@@ -756,7 +757,7 @@
 .workshopActions button:disabled { cursor: not-allowed; opacity: 0.45; }
 
 .modelMap {
-  background: #eef4ff;
+  background: var(--wl-panel-raised, #eef4ff);
   border-left: 4px solid var(--intro-navy);
   grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-top: 1rem;
@@ -771,7 +772,7 @@
 .decisionOptions { display: flex; flex-wrap: wrap; gap: 0.65rem; }
 .decisionOptions label {
   align-items: center;
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   cursor: pointer;
@@ -781,19 +782,19 @@
   padding: 0.7rem 0.85rem;
 }
 .decisionOptions input { accent-color: var(--intro-navy); }
-.decisionSelected { background: #eef4ff !important; border-color: var(--intro-navy) !important; box-shadow: 0 0 0 2px #dbe5ff; }
+.decisionSelected { background: var(--wl-panel-raised, #eef4ff) !important; border-color: var(--intro-navy) !important; box-shadow: 0 0 0 2px #dbe5ff; }
 .unlockHint { color: var(--intro-muted); font-style: italic; }
 
 .planReveal {
-  background: #effaf4;
+  background: var(--wl-panel-tint-ok, #effaf4);
   border-left: 4px solid var(--intro-green);
-  color: #245e44;
+  color: var(--wl-on-panel-ok, #245e44);
   display: grid;
   gap: 0.75rem;
   margin-top: 1rem;
   padding: 1rem;
 }
-.planReveal div { background: #fff; border: 1px solid #cce5d6; padding: 0.75rem; }
+.planReveal div { background: var(--wl-panel-card, #fff); border: 1px solid var(--wl-panel-line, #cce5d6); padding: 0.75rem; }
 .planReveal p { line-height: 1.5; margin: 0.25rem 0 0; }
 
 .sentenceGrid {
@@ -804,7 +805,7 @@
 }
 
 .sentenceMini {
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   padding: 1rem;
@@ -839,7 +840,7 @@
 }
 
 .frame {
-  background: #f1f4fa;
+  background: var(--wl-panel-raised, #f1f4fa);
   border-left: 4px solid var(--intro-purple);
   color: var(--intro-purple) !important;
   font-family: var(--mono, ui-monospace, monospace);
@@ -860,13 +861,13 @@
   padding: 0.9rem;
 }
 
-.weak { background: #fff2f2; color: #8a2230 !important; }
-.strong { background: #effaf4; color: #245e44 !important; }
+.weak { background: var(--wl-panel-raised, #fff2f2); color: var(--wl-on-panel-alert, #8a2230) !important; }
+.strong { background: var(--wl-panel-tint-ok, #effaf4); color: var(--wl-on-panel-ok, #245e44) !important; }
 /* El enunciado encabeza el par en neutro: no es ni el error ni el acierto, es de dónde
    salen los dos. Sin él, las dos versiones no se pueden comparar con nada. */
-.sourcePrompt { background: var(--bg-2, #f4f4f6); color: var(--ink) !important; border-left: 3px solid var(--intro-blue, #0f3d8c); }
+.sourcePrompt { background: var(--bg-2, var(--wl-panel-raised, #f4f4f6)); color: var(--ink) !important; border-left: 3px solid var(--intro-blue, #0f3d8c); }
 .transferList { display: grid; gap: .3rem; margin: 0; font-size: .88rem; }
-.transferList dt { font-weight: 700; color: var(--intro-blue, #0f3d8c); }
+.transferList dt { font-weight: 700; color: var(--intro-blue, var(--wl-on-panel-link, #0f3d8c)); }
 .transferList dd { margin: 0 0 .45rem; color: var(--ink); line-height: 1.5; }
 
 .practiceSection {
@@ -878,7 +879,7 @@
    redondea ahora la propia cabecera. */
 .engineHeader {
   align-items: center;
-  background: var(--intro-navy);
+  background: var(--intro-navy-panel);
   border-radius: 8px 8px 0 0;
   color: #fff;
   display: flex;
@@ -901,7 +902,7 @@
 }
 
 .typeTag {
-  background: #edf1f9;
+  background: var(--wl-panel-raised, #edf1f9);
   border-radius: 4px;
   color: var(--intro-navy);
   display: inline-block;
@@ -935,7 +936,7 @@
 .option,
 .blockChoices button {
   align-items: flex-start;
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   color: var(--intro-ink);
@@ -950,7 +951,7 @@
 
 .option > span {
   align-items: center;
-  background: #edf1f9;
+  background: var(--wl-panel-raised, #edf1f9);
   border-radius: 50%;
   color: var(--intro-navy);
   display: inline-flex;
@@ -962,8 +963,8 @@
 }
 
 .selected { border-color: var(--intro-navy); box-shadow: 0 0 0 2px #dbe5ff; }
-.correct { background: #effaf4; border-color: var(--intro-green); }
-.incorrect { background: #fff2f2; border-color: var(--intro-red); }
+.correct { background: var(--wl-panel-tint-ok, #effaf4); border-color: var(--intro-green); }
+.incorrect { background: var(--wl-panel-raised, #fff2f2); border-color: var(--intro-red); }
 
 .feedback {
   align-items: flex-start;
@@ -975,11 +976,11 @@
 }
 
 .feedback p { line-height: 1.55; margin: 0.3rem 0 0; }
-.feedbackCorrect { background: #effaf4; color: #245e44; }
-.feedbackIncorrect { background: #fff2f2; color: #8a2230; }
+.feedbackCorrect { background: var(--wl-panel-tint-ok, #effaf4); color: var(--wl-on-panel-ok, #245e44); }
+.feedbackIncorrect { background: var(--wl-panel-raised, #fff2f2); color: var(--wl-on-panel-alert, #8a2230); }
 /* Ni verde ni rojo: un texto libre no se ha corregido, se ha puesto al lado del modelo.
    Pintarlo de verde afirmaba un acierto que nadie había comprobado. */
-.feedbackNeutral { background: #f2f6ff; color: #23325e; }
+.feedbackNeutral { background: var(--wl-panel-raised, #f2f6ff); color: var(--wl-on-panel, #23325e); }
 .compareList { margin: .55rem 0; padding-left: 1.1rem; display: grid; gap: .3rem; font-size: .92rem; }
 .modelReveal { margin: .55rem 0 .35rem; padding: .6rem .75rem; border-radius: 8px; background: rgba(255, 255, 255, .6); font-size: .92rem; }
 
@@ -999,7 +1000,7 @@
 }
 
 .assembly {
-  background: #f7f8fc;
+  background: var(--wl-panel-canvas, #f7f8fc);
   border: 1px dashed #b8c1d5;
   border-radius: 6px;
   display: grid;
@@ -1011,7 +1012,7 @@
 
 .assemblyBlock {
   align-items: flex-start;
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border-left: 4px solid var(--intro-link);
   display: flex;
   gap: 0.65rem;
@@ -1023,7 +1024,7 @@
 
 .writer,
 .essayWriter {
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid #b8c1d5;
   border-radius: 6px;
   color: var(--intro-ink);
@@ -1039,7 +1040,7 @@
 .writer:focus,
 .essayWriter:focus {
   border-color: var(--intro-navy);
-  outline: 3px solid #dbe5ff;
+  outline: 3px solid var(--wl-panel-line, #dbe5ff);
 }
 
 .writerMeta,
@@ -1082,7 +1083,7 @@
 
 .modelReveal,
 .orientationNote {
-  background: #f1f4fa;
+  background: var(--wl-panel-raised, #f1f4fa);
   border-radius: 6px;
   color: var(--intro-muted);
   line-height: 1.55;
@@ -1127,7 +1128,7 @@
 }
 
 .nextLinks a {
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   color: var(--intro-navy);
@@ -1147,7 +1148,7 @@
 .pathCard,
 .studyCard,
 .sequenceCard {
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 7px;
   color: var(--intro-ink);
@@ -1249,14 +1250,14 @@
 }
 
 .bodyFormula span {
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 5px;
   padding: 0.55rem 0.7rem;
 }
 
 .paragraphJob {
-  background: #eef4ff;
+  background: var(--wl-panel-raised, #eef4ff);
   border-left: 4px solid var(--intro-navy);
   color: var(--intro-navy);
   line-height: 1.6;
@@ -1289,7 +1290,7 @@
 .modelBlockGrid small { display: block; line-height: 1.45; margin-top: 0.65rem; opacity: 0.78; }
 
 .completeParagraph {
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   color: var(--intro-ink);
@@ -1321,7 +1322,7 @@
 /* Aviso de copia literal en la paráfrasis. Es lo único que el taller comprueba solo, y por
    eso se distingue del contador neutro que tiene al lado. */
 .copyWarning {
-  color: #8a2230 !important;
+  color: var(--wl-on-panel-alert, #8a2230) !important;
   font-weight: 600;
 }
 
@@ -1329,7 +1330,7 @@
    ensayo real, con sus fallos— y no como una advertencia: el trabajo del alumno es
    encontrar el problema, así que la caja no puede adelantarle que hay uno. */
 .reviewDraft {
-  background: var(--bg-2, #f4f4f6);
+  background: var(--bg-2, var(--wl-panel-raised, #f4f4f6));
   border-left: 3px solid var(--intro-blue, #0f3d8c);
   border-radius: 6px;
   font-size: 0.98rem;
@@ -1355,16 +1356,16 @@
 }
 
 .mistakeNote {
-  background: #f3f4f7;
+  background: var(--wl-panel-raised, #f3f4f7);
   border-left: 4px solid #667085;
-  color: #475467;
+  color: var(--wl-on-panel-link, #475467);
   line-height: 1.6;
   margin: 1rem 0 0;
   padding: 0.85rem 1rem;
 }
 
 .bodyModelReveal {
-  background: #f8fafc;
+  background: var(--wl-panel-canvas, #f8fafc);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   margin-top: 1rem;
@@ -1390,7 +1391,7 @@
 
 .levelButton {
   align-items: center;
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   color: var(--intro-navy);
@@ -1404,7 +1405,7 @@
 
 .levelButton span {
   align-items: center;
-  background: #edf1f9;
+  background: var(--wl-panel-raised, #edf1f9);
   border-radius: 50%;
   display: inline-flex;
   flex: 0 0 28px;
@@ -1414,10 +1415,10 @@
 
 .levelButton strong { font-size: 0.78rem; line-height: 1.3; }
 .levelButtonActive { border-color: var(--intro-navy); box-shadow: 0 0 0 2px #dbe5ff; }
-.levelButtonDone span { background: #dff5e8; color: var(--intro-green); }
+.levelButtonDone span { background: var(--wl-panel-raised, #dff5e8); color: var(--intro-green); }
 
 .assemblyWorkspace {
-  background: #f7f8fc;
+  background: var(--wl-panel-canvas, #f7f8fc);
   border: 1px dashed #aebbd4;
   border-radius: 6px;
   display: grid;
@@ -1429,7 +1430,7 @@
 
 .assemblyWorkspace button {
   align-items: center;
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid var(--intro-line);
   border-left: 4px solid var(--intro-link);
   color: var(--intro-ink);
@@ -1445,7 +1446,7 @@
 
 .engineTextarea,
 .paragraphBuilder textarea {
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid #b8c1d5;
   border-radius: 6px;
   color: var(--intro-ink);
@@ -1457,7 +1458,7 @@
 }
 
 .engineTextarea:focus,
-.paragraphBuilder textarea:focus { border-color: var(--intro-navy); outline: 3px solid #dbe5ff; }
+.paragraphBuilder textarea:focus { border-color: var(--intro-navy); outline: 3px solid var(--wl-panel-line, #dbe5ff); }
 
 .wordMeter { color: var(--intro-muted); font-size: 0.8rem; margin: 0.55rem 0 0; }
 
@@ -1483,7 +1484,7 @@
 .paragraphBuilder label:last-child { grid-column: 1 / -1; }
 
 .transferBridge {
-  background: #f7f9ff;
+  background: var(--wl-panel-raised, #f7f9ff);
   border: 1px solid #b9c9ef;
   border-left: 5px solid var(--intro-navy);
   border-radius: 6px;
@@ -1506,7 +1507,7 @@
 .transferBridge ul { margin: 0.8rem 0 1rem; padding-left: 1.2rem; }
 .transferBridge a {
   align-items: center;
-  background: var(--intro-navy);
+  background: var(--intro-navy-panel);
   border-radius: 5px;
   color: #fff;
   display: inline-flex;
@@ -1517,7 +1518,7 @@
 }
 
 .secondaryButton {
-  background: #fff !important;
+  background: var(--wl-panel-card, #fff) !important;
   border: 1px solid var(--intro-line) !important;
   color: var(--intro-navy) !important;
 }
@@ -1533,7 +1534,7 @@
 .engineNav button,
 .timerRow button {
   align-items: center;
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 5px;
   color: var(--intro-navy);
@@ -1578,7 +1579,7 @@
    que son exactamente las tres cosas que la conclusión tiene que recoger. Aparece al
    acertar, no antes, porque antes sería la respuesta. */
 .essaySoFar {
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 8px;
   margin: 0 0 1.15rem;
@@ -1603,7 +1604,7 @@
 
 /* `box-decoration-break: clone` para que el fondo no se rompa al saltar de línea. */
 .essayHighlight {
-  background: #fff3c4;
+  background: var(--wl-panel-tint-warn, #fff3c4);
   border-bottom: 2px solid #b7791f;
   border-radius: 3px;
   box-decoration-break: clone;
@@ -1634,14 +1635,14 @@
   line-height: 1;
 }
 
-.examTimerCalm { color: #1f7a4d; }
-.examTimerNear { color: #a4671a; }
-.examTimerLow { color: #a32b3a; }
+.examTimerCalm { color: var(--wl-on-panel-ok, #1f7a4d); }
+.examTimerNear { color: var(--wl-on-panel-warn, #a4671a); }
+.examTimerLow { color: var(--wl-on-panel-alert, #a32b3a); }
 
 /* Fichas del selector: mismo trato que `.exampleTab`, pero en bloque, porque aquí el texto
    es un enunciado entero y no cabe en una pestaña. */
 .promptChoice {
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 8px;
   cursor: pointer;
@@ -1662,7 +1663,7 @@
 
 /* El plan, plegado, mientras corre el reloj. */
 .planRecall {
-  background: #f7f9fd;
+  background: var(--wl-panel-raised, #f7f9fd);
   border: 1px solid var(--intro-line);
   border-radius: 8px;
   margin-bottom: 0.9rem;
@@ -1675,7 +1676,7 @@
 .bandRow { display: flex; flex-wrap: wrap; gap: 0.3rem; }
 
 .bandButton {
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 5px;
   cursor: pointer;
@@ -1684,7 +1685,7 @@
   width: 34px;
 }
 
-.bandButtonOn { background: #eef4ff; border-color: var(--intro-navy); color: var(--intro-navy); font-weight: 700; }
+.bandButtonOn { background: var(--wl-panel-raised, #eef4ff); border-color: var(--intro-navy); color: var(--intro-navy); font-weight: 700; }
 
 @media (max-width: 720px) {
   .examTimer { font-size: 1.7rem; }
@@ -1696,7 +1697,7 @@
    las dos, dicho sin jerga. Los colores son los mismos que usa el resto del curso para
    distinguir funciones dentro de un párrafo. */
 .mechanic {
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 8px;
   display: grid;
@@ -1730,16 +1731,16 @@
 }
 
 .mechanicHinge span {
-  background: #fff3c4;
+  background: var(--wl-panel-tint-warn, #fff3c4);
   border: 1px solid #b7791f;
   border-radius: 999px;
-  color: #7a4f10;
+  color: var(--wl-on-panel-warn, #7a4f10);
   font-weight: 700;
   padding: 0.3rem 0.9rem;
 }
 
 .mechanicPlain {
-  background: #eef4ff;
+  background: var(--wl-panel-raised, #eef4ff);
   border-radius: 6px;
   color: var(--intro-navy);
   line-height: 1.7;
@@ -1758,10 +1759,10 @@
 .gapWrap { display: inline-block; position: relative; }
 
 .gapButton {
-  background: #fff8e1;
+  background: var(--wl-panel-tint-warn, #fff8e1);
   border: none;
   border-bottom: 2px dashed #b7791f;
-  color: #7a4f10;
+  color: var(--wl-on-panel-warn, #7a4f10);
   cursor: pointer;
   font: inherit;
   font-weight: 700;
@@ -1770,16 +1771,16 @@
   text-align: center;
 }
 
-.gapButton:hover { background: #fff3c4; }
-.gapOpen { background: #fff3c4; box-shadow: 0 0 0 2px #f0c86a; }
-.gapRight { background: #e6f6ec; border-bottom-color: var(--intro-green); color: var(--intro-green); }
-.gapWrong { background: #fdecee; border-bottom-color: var(--intro-red); color: var(--intro-red); }
+.gapButton:hover { background: var(--wl-panel-tint-warn, #fff3c4); }
+.gapOpen { background: var(--wl-panel-tint-warn, #fff3c4); box-shadow: 0 0 0 2px #f0c86a; }
+.gapRight { background: var(--wl-panel-raised, #e6f6ec); border-bottom-color: var(--intro-green); color: var(--intro-green); }
+.gapWrong { background: var(--wl-panel-raised, #fdecee); border-bottom-color: var(--intro-red); color: var(--intro-red); }
 
 /* En el nivel 5 TODOS los conectores se ven igual: decir cuáles están mal es dar la
    respuesta. Era lo que pasaba —los rotos en amarillo, el bueno en azul— y el ejercicio
    se resolvía sin leer. */
 .gapNeutral {
-  background: #eef1f7;
+  background: var(--wl-panel-raised, #eef1f7);
   border-bottom-color: #97a2ba;
   color: var(--intro-ink);
   font-weight: 600;
@@ -1787,7 +1788,7 @@
 }
 
 .gapPopover {
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 8px;
   box-shadow: 0 8px 24px rgb(20 36 79 / 14%);
@@ -1801,7 +1802,7 @@
 }
 
 .gapChoice {
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 5px;
   cursor: pointer;
@@ -1813,7 +1814,7 @@
   width: 100%;
 }
 
-.gapChoice:hover { background: #eef4ff; border-color: var(--intro-navy); }
+.gapChoice:hover { background: var(--wl-panel-raised, #eef4ff); border-color: var(--intro-navy); }
 
 /* El hueco que se escribe es un `input` dentro del propio párrafo: al pulsarlo no se
    despliega nada, se teclea ahí. Hereda el aspecto de `.gapButton` para que el hueco de
@@ -1824,9 +1825,9 @@
   outline: none;
 }
 
-.gapField:focus { background: #fff3c4; box-shadow: 0 0 0 2px #f0c86a; }
-.gapField.gapNeutral:focus { background: #e3e8f2; box-shadow: 0 0 0 2px #97a2ba; }
-.gapField::placeholder { color: #b7791f; opacity: 0.75; }
+.gapField:focus { background: var(--wl-panel-tint-warn, #fff3c4); box-shadow: 0 0 0 2px #f0c86a; }
+.gapField.gapNeutral:focus { background: var(--wl-panel-raised, #e3e8f2); box-shadow: 0 0 0 2px #97a2ba; }
+.gapField::placeholder { color: var(--wl-on-panel-warn, #b7791f); opacity: 0.75; }
 
 /* El párrafo del ejercicio: interlineado alto para que los huecos no se peguen. */
 .gappedText {
@@ -1854,7 +1855,7 @@
 }
 
 .promptInstruction {
-  background: #fff3c4;
+  background: var(--wl-panel-tint-warn, #fff3c4);
   border-bottom: 2px solid #b7791f;
   color: var(--intro-ink);
   font-weight: 700;
@@ -1880,7 +1881,7 @@
 .readingMethod { display: grid; gap: 0.9rem; margin: 1rem 0; }
 
 .readingStep {
-  background: #f8f9fc;
+  background: var(--wl-panel-raised, #f8f9fc);
   border: 1px solid var(--intro-line);
   border-left: 3px solid var(--intro-navy);
   border-radius: 6px;
@@ -1895,7 +1896,7 @@
 }
 
 .readingAsk span {
-  background: var(--intro-navy);
+  background: var(--intro-navy-panel);
   border-radius: 4px;
   color: #fff;
   flex: 0 0 auto;
@@ -1916,7 +1917,7 @@
 }
 
 .readingAnswer p {
-  background: #fff;
+  background: var(--wl-panel-card, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 5px;
   line-height: 1.6;

@@ -300,7 +300,7 @@ export default function TablasContent({ faqs }: { faqs: Faq[] }) {
                 ['4', 'Reduce the density', 'Do not mention every cell: choose figures that prove your comparisons.'],
               ].map(([step, title, copy]) => (
                 <article key={step} className="wl-card" style={{ padding: '0.95rem', borderRadius: 8 }}>
-                  <span style={{ display: 'inline-flex', width: 28, height: 28, alignItems: 'center', justifyContent: 'center', borderRadius: 6, background: 'rgba(15,61,140,0.09)', color: '#0f3d8c', fontWeight: 800, fontFamily: 'var(--mono)', marginBottom: '0.55rem' }}>
+                  <span style={{ display: 'inline-flex', width: 28, height: 28, alignItems: 'center', justifyContent: 'center', borderRadius: 6, background: 'rgba(15,61,140,0.09)', color: 'var(--wl-on-panel-link, #0f3d8c)', fontWeight: 800, fontFamily: 'var(--mono)', marginBottom: '0.55rem' }}>
                     {step}
                   </span>
                   <h3 style={{ margin: '0 0 0.35rem', fontSize: '0.98rem' }}>{title}</h3>
@@ -377,7 +377,7 @@ export default function TablasContent({ faqs }: { faqs: Faq[] }) {
             <div style={{ display: 'grid', gap: '0.75rem' }}>
               {MODEL_ANSWER.map((part) => (
                 <article key={part.label} className="wl-card" style={{ padding: '1rem', borderRadius: 8 }}>
-                  <h3 style={{ margin: '0 0 0.45rem', fontSize: '0.95rem', color: '#0f3d8c' }}>{part.label}</h3>
+                  <h3 style={{ margin: '0 0 0.45rem', fontSize: '0.95rem', color: 'var(--wl-on-panel-link, #0f3d8c)' }}>{part.label}</h3>
                   <p style={{ margin: '0 0 0.6rem', color: 'var(--ink)', lineHeight: 1.65, fontSize: '0.92rem' }}>{part.text}</p>
                   <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.82rem' }}>
                     <strong style={{ color: 'var(--ink)' }}>Why it works:</strong> {part.note}

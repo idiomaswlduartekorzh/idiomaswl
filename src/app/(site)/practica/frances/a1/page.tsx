@@ -79,7 +79,7 @@ export default function FrancesA1Page() {
           })}
         </div>
         <div style={{ marginTop: '2rem', padding: '0.9rem 1.2rem', borderRadius: 12, background: 'rgba(0,49,137,0.06)', border: '1px solid rgba(0,49,137,0.15)', fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-          💡 <strong style={{ color: 'var(--ink)' }}>Conseil:</strong> Commence par <strong style={{ color: COLOR }}>Lecture</strong> pour activer le vocabulaire, puis renforce avec <strong style={{ color: '#7c3aed' }}>Grammaire</strong>. Les <strong style={{ color: '#e11d48' }}>flashcards Vocabulaire</strong> consolident ce que tu as lu.
+          💡 <strong style={{ color: 'var(--ink)' }}>Conseil:</strong> Commence par <strong style={{ color: COLOR }}>Lecture</strong> pour activer le vocabulaire, puis renforce avec <strong style={{ color: 'var(--wl-on-panel-purple, #7c3aed)' }}>Grammaire</strong>. Les <strong style={{ color: 'var(--wl-on-panel-alert, #e11d48)' }}>flashcards Vocabulaire</strong> consolident ce que tu as lu.
         </div>
       </div>
     </section>

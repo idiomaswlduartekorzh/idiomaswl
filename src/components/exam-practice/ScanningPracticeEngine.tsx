@@ -103,7 +103,7 @@ export default function ScanningPracticeEngine({
 
               {isRevealed && (
                 <div style={{ marginTop: '0.75rem', display: 'grid', gap: '0.65rem' }}>
-                  <div style={{ display: 'grid', gridTemplateColumns: '24px 1fr', gap: '0.55rem', alignItems: 'start', color: '#047857', background: 'rgba(5,150,105,0.08)', borderRadius: 12, padding: '0.7rem', fontSize: '0.88rem', lineHeight: 1.55 }}>
+                  <div style={{ display: 'grid', gridTemplateColumns: '24px 1fr', gap: '0.55rem', alignItems: 'start', color: 'var(--wl-on-panel-ok, #047857)', background: 'rgba(5,150,105,0.08)', borderRadius: 12, padding: '0.7rem', fontSize: '0.88rem', lineHeight: 1.55 }}>
                     <CheckCircle2 size={18} />
                     <span>
                       <strong>Answer: {target.answer}.</strong> Evidence: “{target.evidence}”.

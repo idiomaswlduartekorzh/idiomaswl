@@ -163,7 +163,7 @@ export default function LecturaJaponesB1() {
           <div style={{ padding: '1.25rem 1.5rem' }}>
             <p style={{ margin: 0, fontSize: '0.93rem', color: 'var(--ink)', lineHeight: 1.85 }}>{text.text}</p>
             {showRomaji && (
-              <p style={{ margin: '0.8rem 0 0', fontSize: '0.78rem', color: '#059669', lineHeight: 1.7, fontFamily: 'var(--mono)', borderTop: '1px solid var(--line-soft)', paddingTop: '0.75rem' }}>{text.textRomaji}</p>
+              <p style={{ margin: '0.8rem 0 0', fontSize: '0.78rem', color: 'var(--wl-on-panel-ok, #059669)', lineHeight: 1.7, fontFamily: 'var(--mono)', borderTop: '1px solid var(--line-soft)', paddingTop: '0.75rem' }}>{text.textRomaji}</p>
             )}
           </div>
         </div>

@@ -180,7 +180,7 @@ export default function AcademicDiscussionWorkbench({
         </div>
 
         {completed === prompt.checklist.length && words >= 100 && (
-          <div style={{ display: 'grid', gridTemplateColumns: '24px 1fr', gap: '0.55rem', alignItems: 'start', color: '#047857', background: 'rgba(5,150,105,0.08)', borderRadius: 12, padding: '0.75rem', lineHeight: 1.55 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '24px 1fr', gap: '0.55rem', alignItems: 'start', color: 'var(--wl-on-panel-ok, #047857)', background: 'rgba(5,150,105,0.08)', borderRadius: 12, padding: '0.75rem', lineHeight: 1.55 }}>
             <CheckCircle2 size={18} />
             <span>
               Tu respuesta ya tiene una base completa. El siguiente paso es revisar precisión gramatical, variedad de conectores y si el ejemplo realmente prueba tu postura.
