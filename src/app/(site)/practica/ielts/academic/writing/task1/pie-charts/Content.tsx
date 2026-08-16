@@ -35,7 +35,7 @@ const SEGMENTS: Segment[] = [
   { label: 'Transport', value: 15, color: 'var(--wl-on-panel-warn, #b45309)' },
   { label: 'Leisure', value: 14, color: 'var(--wl-on-panel-purple, #7c3aed)' },
   { label: 'Savings', value: 8, color: 'var(--wl-on-panel-alert, #be123c)' },
-  { label: 'Other', value: 5, color: 'var(--wl-on-panel-link, #475569)' },
+  { label: 'Other', value: 5, color: 'var(--wl-on-panel-soft, #475569)' },
 ];
 
 const OVERVIEWS: OverviewOption[] = [

@@ -9,8 +9,8 @@
   --intro-ink: var(--wl-on-panel, #14244f);
   --intro-muted: var(--wl-on-panel-soft, #5c6680);
   --intro-line: var(--wl-panel-line, #d9deea);
-  --intro-surface: var(--wl-panel-card, #ffffff);
-  background: var(--wl-panel-canvas, #f7f8fc);
+  --intro-surface: var(--wl-panel-raised, #ffffff);
+  background: var(--wl-panel-raised, #f7f8fc);
   color: var(--intro-ink);
   min-height: 100vh;
   padding: 2rem 1.25rem 5rem;
@@ -138,7 +138,7 @@
 }
 
 .heroActions a + a {
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   color: var(--intro-navy);
 }
 
@@ -245,7 +245,7 @@
 }
 
 .playerShell {
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border-left: 1px solid #d5dce9;
   border-right: 1px solid #d5dce9;
   margin: 0 clamp(1.4rem, 4vw, 2.4rem);
@@ -358,7 +358,7 @@
 }
 
 .editorialNote p:last-child {
-  color: var(--wl-on-panel-ok, #3f5d4f);
+  color: var(--wl-on-panel-soft, #3f5d4f);
   font-size: 0.87rem;
   line-height: 1.65;
   margin: 0;
@@ -410,7 +410,7 @@
 .exampleTab,
 .sentenceTab,
 .levelTabs button {
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   color: var(--intro-ink);
@@ -525,15 +525,15 @@
    ni la postura, es la afirmación que el ensayo entero desarrolla y que la conclusión
    recoge. Ámbar, para que se distinga del azul de la paráfrasis y del rojo de la postura. */
 .hook { background: var(--wl-panel-tint-warn, #fff6e5); color: var(--wl-on-panel-warn, #8a5300); }
-.prompt { background: var(--wl-panel-raised, #f4f5f8); color: var(--wl-on-panel-link, #4f596e); }
+.prompt { background: var(--wl-panel-raised, #f4f5f8); color: var(--wl-on-panel-soft, #4f596e); }
 .paraphrase { background: var(--wl-panel-raised, #eef4ff); color: var(--intro-navy); }
-.claim { background: var(--wl-panel-tint-alert, #fff0f1); color: var(--intro-red); }
-.development { background: var(--wl-panel-tint-ok, #effaf4); color: var(--intro-green); }
-.evidence { background: var(--wl-panel-tint-warn, #fff7eb); color: var(--intro-orange); }
-.contrast { background: var(--wl-panel-tint-purple, #f7f1ff); color: var(--intro-purple); }
-.link { background: var(--wl-panel-tint-info, #edf9fb); color: var(--intro-link); }
-.review { background: var(--wl-panel-raised, #f3f4f7); color: var(--wl-on-panel-link, #475467); }
-.example { background: var(--wl-panel-tint-warn, #fff7eb); color: var(--intro-orange); }
+.claim { background: var(--wl-panel-raised, #fff0f1); color: var(--intro-red); }
+.development { background: var(--wl-panel-raised, #effaf4); color: var(--intro-green); }
+.evidence { background: var(--wl-panel-raised, #fff7eb); color: var(--intro-orange); }
+.contrast { background: var(--wl-panel-raised, #f7f1ff); color: var(--intro-purple); }
+.link { background: var(--wl-panel-raised, #edf9fb); color: var(--intro-link); }
+.review { background: var(--wl-panel-raised, #f3f4f7); color: var(--wl-on-panel-soft, #475467); }
+.example { background: var(--wl-panel-raised, #fff7eb); color: var(--intro-orange); }
 
 .examplePanel {
   padding: clamp(1.1rem, 3vw, 2rem);
@@ -570,7 +570,7 @@
 }
 
 .whyList {
-  background: var(--wl-panel-tint-ok, #effaf4);
+  background: var(--wl-panel-raised, #effaf4);
   border-left: 4px solid var(--intro-green);
   margin: 1rem 0 0;
   padding: 0.8rem 1rem 0.8rem 2rem;
@@ -609,7 +609,7 @@
 }
 
 .workedStepGrid > div {
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid var(--intro-line);
   border-top: 4px solid var(--intro-navy);
   border-radius: 6px;
@@ -657,7 +657,7 @@
 
 .iconButton {
   align-items: center;
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   color: var(--intro-navy);
@@ -703,7 +703,7 @@
 .planGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 1rem; }
 
 .guidedField {
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   display: flex;
@@ -716,7 +716,7 @@
 .guidedField > strong { color: var(--intro-navy); }
 .guidedField > span { color: var(--intro-muted); font-size: 0.82rem; line-height: 1.45; }
 .guidedField textarea {
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid #b8c1d5;
   border-radius: 5px;
   color: var(--intro-ink);
@@ -772,7 +772,7 @@
 .decisionOptions { display: flex; flex-wrap: wrap; gap: 0.65rem; }
 .decisionOptions label {
   align-items: center;
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   cursor: pointer;
@@ -786,7 +786,7 @@
 .unlockHint { color: var(--intro-muted); font-style: italic; }
 
 .planReveal {
-  background: var(--wl-panel-tint-ok, #effaf4);
+  background: var(--wl-panel-raised, #effaf4);
   border-left: 4px solid var(--intro-green);
   color: var(--wl-on-panel-ok, #245e44);
   display: grid;
@@ -794,7 +794,7 @@
   margin-top: 1rem;
   padding: 1rem;
 }
-.planReveal div { background: var(--wl-panel-card, #fff); border: 1px solid var(--wl-panel-line, #cce5d6); padding: 0.75rem; }
+.planReveal div { background: var(--wl-panel-raised, #fff); border: 1px solid var(--wl-panel-line, #cce5d6); padding: 0.75rem; }
 .planReveal p { line-height: 1.5; margin: 0.25rem 0 0; }
 
 .sentenceGrid {
@@ -805,7 +805,7 @@
 }
 
 .sentenceMini {
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   padding: 1rem;
@@ -862,7 +862,7 @@
 }
 
 .weak { background: var(--wl-panel-raised, #fff2f2); color: var(--wl-on-panel-alert, #8a2230) !important; }
-.strong { background: var(--wl-panel-tint-ok, #effaf4); color: var(--wl-on-panel-ok, #245e44) !important; }
+.strong { background: var(--wl-panel-raised, #effaf4); color: var(--wl-on-panel-ok, #245e44) !important; }
 /* El enunciado encabeza el par en neutro: no es ni el error ni el acierto, es de dónde
    salen los dos. Sin él, las dos versiones no se pueden comparar con nada. */
 .sourcePrompt { background: var(--bg-2, var(--wl-panel-raised, #f4f4f6)); color: var(--ink) !important; border-left: 3px solid var(--intro-blue, #0f3d8c); }
@@ -936,7 +936,7 @@
 .option,
 .blockChoices button {
   align-items: flex-start;
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   color: var(--intro-ink);
@@ -963,7 +963,7 @@
 }
 
 .selected { border-color: var(--intro-navy); box-shadow: 0 0 0 2px #dbe5ff; }
-.correct { background: var(--wl-panel-tint-ok, #effaf4); border-color: var(--intro-green); }
+.correct { background: var(--wl-panel-raised, #effaf4); border-color: var(--intro-green); }
 .incorrect { background: var(--wl-panel-raised, #fff2f2); border-color: var(--intro-red); }
 
 .feedback {
@@ -976,7 +976,7 @@
 }
 
 .feedback p { line-height: 1.55; margin: 0.3rem 0 0; }
-.feedbackCorrect { background: var(--wl-panel-tint-ok, #effaf4); color: var(--wl-on-panel-ok, #245e44); }
+.feedbackCorrect { background: var(--wl-panel-raised, #effaf4); color: var(--wl-on-panel-ok, #245e44); }
 .feedbackIncorrect { background: var(--wl-panel-raised, #fff2f2); color: var(--wl-on-panel-alert, #8a2230); }
 /* Ni verde ni rojo: un texto libre no se ha corregido, se ha puesto al lado del modelo.
    Pintarlo de verde afirmaba un acierto que nadie había comprobado. */
@@ -1000,7 +1000,7 @@
 }
 
 .assembly {
-  background: var(--wl-panel-canvas, #f7f8fc);
+  background: var(--wl-panel-raised, #f7f8fc);
   border: 1px dashed #b8c1d5;
   border-radius: 6px;
   display: grid;
@@ -1012,7 +1012,7 @@
 
 .assemblyBlock {
   align-items: flex-start;
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border-left: 4px solid var(--intro-link);
   display: flex;
   gap: 0.65rem;
@@ -1024,7 +1024,7 @@
 
 .writer,
 .essayWriter {
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid #b8c1d5;
   border-radius: 6px;
   color: var(--intro-ink);
@@ -1128,7 +1128,7 @@
 }
 
 .nextLinks a {
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   color: var(--intro-navy);
@@ -1148,7 +1148,7 @@
 .pathCard,
 .studyCard,
 .sequenceCard {
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 7px;
   color: var(--intro-ink);
@@ -1250,7 +1250,7 @@
 }
 
 .bodyFormula span {
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 5px;
   padding: 0.55rem 0.7rem;
@@ -1290,7 +1290,7 @@
 .modelBlockGrid small { display: block; line-height: 1.45; margin-top: 0.65rem; opacity: 0.78; }
 
 .completeParagraph {
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   color: var(--intro-ink);
@@ -1358,14 +1358,14 @@
 .mistakeNote {
   background: var(--wl-panel-raised, #f3f4f7);
   border-left: 4px solid #667085;
-  color: var(--wl-on-panel-link, #475467);
+  color: var(--wl-on-panel-soft, #475467);
   line-height: 1.6;
   margin: 1rem 0 0;
   padding: 0.85rem 1rem;
 }
 
 .bodyModelReveal {
-  background: var(--wl-panel-canvas, #f8fafc);
+  background: var(--wl-panel-raised, #f8fafc);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   margin-top: 1rem;
@@ -1391,7 +1391,7 @@
 
 .levelButton {
   align-items: center;
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   color: var(--intro-navy);
@@ -1418,7 +1418,7 @@
 .levelButtonDone span { background: var(--wl-panel-raised, #dff5e8); color: var(--intro-green); }
 
 .assemblyWorkspace {
-  background: var(--wl-panel-canvas, #f7f8fc);
+  background: var(--wl-panel-raised, #f7f8fc);
   border: 1px dashed #aebbd4;
   border-radius: 6px;
   display: grid;
@@ -1430,7 +1430,7 @@
 
 .assemblyWorkspace button {
   align-items: center;
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid var(--intro-line);
   border-left: 4px solid var(--intro-link);
   color: var(--intro-ink);
@@ -1446,7 +1446,7 @@
 
 .engineTextarea,
 .paragraphBuilder textarea {
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid #b8c1d5;
   border-radius: 6px;
   color: var(--intro-ink);
@@ -1518,7 +1518,7 @@
 }
 
 .secondaryButton {
-  background: var(--wl-panel-card, #fff) !important;
+  background: var(--wl-panel-raised, #fff) !important;
   border: 1px solid var(--intro-line) !important;
   color: var(--intro-navy) !important;
 }
@@ -1534,7 +1534,7 @@
 .engineNav button,
 .timerRow button {
   align-items: center;
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 5px;
   color: var(--intro-navy);
@@ -1579,7 +1579,7 @@
    que son exactamente las tres cosas que la conclusión tiene que recoger. Aparece al
    acertar, no antes, porque antes sería la respuesta. */
 .essaySoFar {
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 8px;
   margin: 0 0 1.15rem;
@@ -1642,7 +1642,7 @@
 /* Fichas del selector: mismo trato que `.exampleTab`, pero en bloque, porque aquí el texto
    es un enunciado entero y no cabe en una pestaña. */
 .promptChoice {
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 8px;
   cursor: pointer;
@@ -1676,7 +1676,7 @@
 .bandRow { display: flex; flex-wrap: wrap; gap: 0.3rem; }
 
 .bandButton {
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 5px;
   cursor: pointer;
@@ -1697,7 +1697,7 @@
    las dos, dicho sin jerga. Los colores son los mismos que usa el resto del curso para
    distinguir funciones dentro de un párrafo. */
 .mechanic {
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 8px;
   display: grid;
@@ -1788,7 +1788,7 @@
 }
 
 .gapPopover {
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 8px;
   box-shadow: 0 8px 24px rgb(20 36 79 / 14%);
@@ -1802,7 +1802,7 @@
 }
 
 .gapChoice {
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 5px;
   cursor: pointer;
@@ -1917,7 +1917,7 @@
 }
 
 .readingAnswer p {
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid var(--intro-line);
   border-radius: 5px;
   line-height: 1.6;

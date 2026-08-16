@@ -10,7 +10,7 @@
   --task-line: var(--wl-panel-line, #d9deea);
   min-height: 100vh;
   padding: 2rem 1.25rem 5rem;
-  background: var(--wl-panel-canvas, #f7f8fc);
+  background: var(--wl-panel-raised, #f7f8fc);
   color: var(--task-ink);
 }
 
@@ -160,7 +160,7 @@
   padding: 1rem 1.1rem;
   border-right: 1px solid #d5dce9;
   border-left: 1px solid #d5dce9;
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
 }
 
 .nowPlaying {
@@ -264,7 +264,7 @@
 
 .editorialNote p:last-child {
   margin: 0;
-  color: var(--wl-on-panel-ok, #3f5d4f);
+  color: var(--wl-on-panel-soft, #3f5d4f);
   font-size: 0.87rem;
   line-height: 1.65;
 }
@@ -283,7 +283,7 @@
   padding: 1.2rem;
   border: 1px solid var(--task-line);
   border-radius: 7px;
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   color: var(--task-ink);
 }
 

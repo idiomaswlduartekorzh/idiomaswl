@@ -3,7 +3,7 @@
   margin: 1.25rem 0 1.75rem;
   border: 1px solid #bfc9de;
   border-radius: 14px;
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   box-shadow: 0 22px 54px rgba(16, 46, 111, 0.12);
 }
 

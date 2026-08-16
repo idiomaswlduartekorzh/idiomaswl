@@ -179,7 +179,7 @@ function ReadingA1() {
             const ans = answers[qi]; const done = ans !== undefined;
             return (
               <div key={qi} className="wl-card" style={{ padding:'1.25rem' }}>
-                <div style={{ fontSize:'0.68rem', fontWeight:800, color:'var(--wl-on-panel-link, #003189)', fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.06em', marginBottom:'0.5rem' }}>
+                <div style={{ fontSize:'0.68rem', fontWeight:800, color:'var(--wl-on-panel, #003189)', fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.06em', marginBottom:'0.5rem' }}>
                   {qi < 2 ? 'Vocabulaire' : 'Compréhension'} · Question {qi+1}
                 </div>
                 <p style={{ margin:'0 0 0.85rem', fontWeight:600, color:'var(--ink)', fontSize:'0.98rem' }}>{q.q}</p>
@@ -205,7 +205,7 @@ function ReadingA1() {
             );
           })}
           <div className="wl-card" style={{ padding:'1.25rem' }}>
-            <div style={{ fontSize:'0.68rem', fontWeight:800, color:'var(--wl-on-panel-link, #003189)', fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.06em', marginBottom:'0.5rem' }}>Question ouverte</div>
+            <div style={{ fontSize:'0.68rem', fontWeight:800, color:'var(--wl-on-panel, #003189)', fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.06em', marginBottom:'0.5rem' }}>Question ouverte</div>
             <p style={{ margin:'0 0 0.85rem', fontWeight:600, color:'var(--ink)', fontSize:'0.98rem' }}>{OPEN_Q}</p>
             <textarea value={openAns} onChange={e => setOpenAns(e.target.value)} placeholder="Écris ta réponse ici..." rows={3}
               style={{ width:'100%', padding:'0.75rem 1rem', borderRadius:10, resize:'vertical', border:'1.5px solid var(--line-soft)', background:'var(--bg)', color:'var(--ink)', fontSize:'0.95rem', fontFamily:'inherit', boxSizing:'border-box' }} />
@@ -357,7 +357,7 @@ function EscrituraA1() {
         <div style={{ display:'flex', gap:'0.45rem', flexWrap:'wrap' }}>
           {VOCAB_BANK.map(v => (
             <button key={v} onClick={() => setText(p => p ? `${p} ${v}` : v)}
-              style={{ fontSize:'0.82rem', padding:'0.3rem 0.7rem', borderRadius:8, border:'1px solid rgba(0,49,137,0.25)', background:'rgba(0,49,137,0.06)', color:'var(--wl-on-panel-link, #003189)', cursor:'pointer', fontFamily:'inherit' }}>{v}</button>
+              style={{ fontSize:'0.82rem', padding:'0.3rem 0.7rem', borderRadius:8, border:'1px solid rgba(0,49,137,0.25)', background:'rgba(0,49,137,0.06)', color:'var(--wl-on-panel, #003189)', cursor:'pointer', fontFamily:'inherit' }}>{v}</button>
           ))}
         </div>
       </div>
@@ -389,7 +389,7 @@ function HablaA1() {
           <div key={i} className="wl-card" style={{ padding:'1.25rem', borderLeft:`3px solid ${s==='done'?'#059669':s==='retry'?'#f59e0b':'var(--line-soft)'}`, transition:'border-color 0.3s' }}>
             <div style={{ marginBottom:'0.75rem' }}>
               <div style={{ fontSize:'1.25rem', fontWeight:800, color:'var(--ink)', marginBottom:'0.25rem' }}>{p.phrase}</div>
-              <div style={{ fontSize:'0.85rem', color:'var(--wl-on-panel-link, #003189)', fontFamily:'var(--mono)', marginBottom:'0.2rem' }}>{p.phonetic}</div>
+              <div style={{ fontSize:'0.85rem', color:'var(--wl-on-panel, #003189)', fontFamily:'var(--mono)', marginBottom:'0.2rem' }}>{p.phonetic}</div>
               <div style={{ fontSize:'0.88rem', color:'var(--muted)' }}>{p.es}</div>
             </div>
             {!s ? (
@@ -426,7 +426,7 @@ function EscuchaA1() {
         <p style={{ color:'var(--muted)', fontSize:'0.92rem', maxWidth:400, margin:'0 auto 1.25rem', lineHeight:1.65 }}>Los ejercicios de escucha estarán disponibles muy pronto con diálogos reales en francés de nivel A1.</p>
         <div style={{ display:'flex', gap:'0.5rem', justifyContent:'center', flexWrap:'wrap' }}>
           {['🗣️ Dialogues A1','📝 Compléter le texte','🔊 Expressions courantes','🎯 Vrai / Faux'].map(tag=>(
-            <span key={tag} style={{ fontSize:'0.78rem', padding:'0.25rem 0.65rem', borderRadius:20, background:'rgba(0,49,137,0.08)', color:'var(--wl-on-panel-link, #003189)', border:'1px solid rgba(0,49,137,0.2)', fontFamily:'var(--mono)', fontWeight:600 }}>{tag}</span>
+            <span key={tag} style={{ fontSize:'0.78rem', padding:'0.25rem 0.65rem', borderRadius:20, background:'rgba(0,49,137,0.08)', color:'var(--wl-on-panel, #003189)', border:'1px solid rgba(0,49,137,0.2)', fontFamily:'var(--mono)', fontWeight:600 }}>{tag}</span>
           ))}
         </div>
       </div>

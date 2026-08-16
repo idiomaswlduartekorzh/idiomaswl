@@ -11,7 +11,7 @@ const BANK = [
   { cat: 'Example', color: 'var(--wl-on-panel-warn, #d97706)', bg: 'rgba(217,119,6,0.08)', items: ['For example', 'For instance', 'In particular', 'A case in point is', 'This is illustrated by', 'Such as'] },
   { cat: 'Concession', color: 'var(--wl-on-panel-alert, #dc2626)', bg: 'rgba(220,38,38,0.08)', items: ['Admittedly', 'While this may be true', 'It is true that', 'Although', 'Despite the fact that', 'Even though'] },
   { cat: 'Comparison', color: 'var(--wl-on-panel-teal, #0891b2)', bg: 'rgba(8,145,178,0.08)', items: ['Similarly', 'Likewise', 'In the same way', 'By comparison', 'Compared to'] },
-  { cat: 'Conclusion', color: 'var(--wl-on-panel, #6b7280)', bg: 'rgba(107,114,128,0.08)', items: ['In conclusion', 'To conclude', 'In summary', 'To summarise', 'Overall', 'To sum up'] },
+  { cat: 'Conclusion', color: 'var(--wl-on-panel-soft, #6b7280)', bg: 'rgba(107,114,128,0.08)', items: ['In conclusion', 'To conclude', 'In summary', 'To summarise', 'Overall', 'To sum up'] },
 ];
 
 interface Ex {

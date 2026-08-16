@@ -7,7 +7,7 @@
   --task-muted: var(--wl-on-panel-soft, #5c6680);
   --task-line: var(--wl-panel-line, #d9deea);
   min-height: 100vh;
-  background: var(--wl-panel-canvas, #f7f8fc);
+  background: var(--wl-panel-raised, #f7f8fc);
   color: var(--task-ink);
 }
 
@@ -117,7 +117,7 @@
 }
 .courseGroup a:hover,
 .courseGroup a:focus-visible { border-color: var(--wl-panel-line, #fff); color: #fff; background: rgba(255, 255, 255, 0.08); }
-.courseGroup .activeRoute { border-color: var(--wl-panel-line, #fff); background: var(--wl-panel-card, #fff); color: var(--task-navy); }
+.courseGroup .activeRoute { border-color: var(--wl-panel-line, #fff); background: var(--wl-panel-raised, #fff); color: var(--task-navy); }
 
 .sequenceNav {
   display: grid;

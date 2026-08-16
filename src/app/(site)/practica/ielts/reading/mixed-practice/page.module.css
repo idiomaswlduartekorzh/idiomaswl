@@ -58,7 +58,7 @@
 }
 
 .heroActions a:first-child { background: var(--reading-navy-panel); color: #fff; }
-.heroActions a:last-child { background: var(--wl-panel-card, #fff); color: var(--reading-navy); }
+.heroActions a:last-child { background: var(--wl-panel-raised, #fff); color: var(--reading-navy); }
 .heroActions a:hover,
 .heroActions a:focus-visible { box-shadow: 0 0 0 3px rgba(15, 111, 141, 0.18); }
 
@@ -76,7 +76,7 @@
 }
 
 .methodGrid article {
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid var(--reading-line);
   border-top: 4px solid var(--reading-blue);
   display: flex;
@@ -113,7 +113,7 @@
 }
 
 .nextGrid a {
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   border: 1px solid var(--reading-line);
   color: var(--reading-navy);
   display: grid;

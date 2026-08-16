@@ -6,7 +6,7 @@
   --writing-muted: var(--wl-on-panel-soft, #5d6782);
   min-height: 100vh;
   padding: clamp(2.5rem, 6vw, 5.5rem) 1.25rem 6rem;
-  background: var(--wl-panel-canvas, #f7f8fc);
+  background: var(--wl-panel-raised, #f7f8fc);
   color: var(--writing-ink);
 }
 

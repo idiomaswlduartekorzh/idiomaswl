@@ -1,7 +1,7 @@
 .page {
   min-height: 100vh;
   padding: 2rem 1.25rem 5rem;
-  background: var(--wl-panel-canvas, #f7f8fc);
+  background: var(--wl-panel-raised, #f7f8fc);
 }
 
 .shell {
@@ -125,7 +125,7 @@
   padding: 0.85rem 1rem;
   border: 1px solid var(--wl-panel-line, #d9deea);
   border-radius: 6px;
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
 }
 
 .practiceScope strong {
@@ -152,7 +152,7 @@
   padding: 0.75rem;
   border: 1px solid var(--wl-panel-line, #d9deea);
   border-radius: 6px;
-  background: color-mix(in srgb, var(--wl-panel-canvas, #f7f8fc) 94%, transparent);
+  background: color-mix(in srgb, var(--wl-panel-raised, #f7f8fc) 94%, transparent);
   box-shadow: 0 8px 22px rgba(16, 46, 111, 0.08);
   backdrop-filter: blur(14px);
 }
@@ -178,7 +178,7 @@
   padding: 0.65rem 0.8rem;
   border: 1px solid var(--wl-panel-line, #d9deea);
   border-radius: 6px;
-  background: var(--wl-panel-card, #fff);
+  background: var(--wl-panel-raised, #fff);
   color: var(--wl-on-panel, #102e6f);
   font-size: 0.79rem;
   font-weight: 800;
@@ -343,7 +343,7 @@
 
 .choiceButton:focus-visible,
 .actions a:focus-visible {
-  outline: 3px solid color-mix(in srgb, var(--skill-accent) 65%, white);
+  outline: 3px solid color-mix(in srgb, var(--skill-accent) 65%, var(--wl-panel-line, white));
   outline-offset: 3px;
 }
 

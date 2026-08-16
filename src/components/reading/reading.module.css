@@ -3,19 +3,19 @@
   --reading-ink: var(--ink);
   --reading-muted: var(--muted);
   --reading-line: var(--line-soft);
-  --reading-blue: var(--wl-on-panel-teal, #0066cc);
+  --reading-blue: var(--wl-on-panel-link, #0066cc);
   --reading-blue-soft: color-mix(in srgb, #0066cc 12%, transparent);
   --reading-lavender: transparent;
   color: var(--ink);
 }
 
 .shell {
-  --reading-navy: var(--wl-on-panel-link, #101f59);
+  --reading-navy: var(--wl-on-panel, #101f59);
   --reading-blue: #225be7;
   --reading-blue-soft: var(--bg-2);
   --reading-lavender: #f6f4ff;
   --reading-ink: var(--ink);
-  --reading-muted: var(--wl-on-panel-link, #66708c);
+  --reading-muted: var(--wl-on-panel-soft, #66708c);
   --reading-line: var(--wl-panel-line, #dce3f5);
   min-height: 100vh;
   color: var(--reading-ink);
@@ -140,12 +140,12 @@
 .option { display: flex; align-items: center; gap: 10px; min-height: 42px; padding: 9px 11px; border: 1px solid var(--line-soft); border-radius: 10px; color: var(--ink-2); background: var(--bg-2); cursor: pointer; font-size: 13px; }
 .option input { accent-color: var(--reading-blue); }
 .option svg { margin-left: auto; color: var(--wl-on-panel-ok, #15975f); }
-.optionCorrect, .optionAnswer { border-color: #9bd9bb; background: var(--wl-panel-tint-ok, #effaf4); }
+.optionCorrect, .optionAnswer { border-color: #9bd9bb; background: var(--wl-panel-raised, #effaf4); }
 .optionWrong { border-color: #f0aaa7; background: var(--wl-panel-raised, #fff3f2); }
 .feedback { display: grid; gap: 7px; margin-top: 12px; padding: 12px; border-radius: 11px; font-size: 12px; line-height: 1.45; }
 .feedback span { display: flex; align-items: flex-start; gap: 7px; }
 .feedback svg { flex: 0 0 auto; margin-top: 1px; }
-.feedbackCorrect { color: var(--wl-on-panel-ok, #11613e); background: var(--wl-panel-tint-ok, #effaf4); }
+.feedbackCorrect { color: var(--wl-on-panel-ok, #11613e); background: var(--wl-panel-raised, #effaf4); }
 .feedbackWrong { color: var(--wl-on-panel-alert, #8a302e); background: var(--wl-panel-raised, #fff2f1); }
 .questionHelp { color: var(--reading-muted); font-size: 12px; }
 .orderList { display: grid; gap: 7px; padding: 0; list-style: none; }
