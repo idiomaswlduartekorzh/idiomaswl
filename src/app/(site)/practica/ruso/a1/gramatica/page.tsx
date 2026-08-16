@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { generateGrammarIndexMetadata } from '@/lib/grammar-metadata'
 import { getTopicsByLevel } from '@/data/grammar/registry'
+import { SKILL_ACCENT } from '@/data/practica/skill-accents'
 
 export const metadata: Metadata = generateGrammarIndexMetadata('ruso', 'a1')
 
@@ -28,7 +29,7 @@ export default function GrammarIndexPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <div className="gram-page" style={{ '--topic-color': '#1a2ecc' } as React.CSSProperties}>
+      <div className="gram-page" style={{ '--topic-color': SKILL_ACCENT.gramatica.var } as React.CSSProperties}>
         <div className="wrap">
           <nav
             aria-label="breadcrumb"

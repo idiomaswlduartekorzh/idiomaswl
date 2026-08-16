@@ -1,14 +1,13 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import Link from 'next/link'
+import SkillHub from '@/components/practica/SkillHub'
 import ProgressBar from '@/components/practica/ProgressBar'
 import SkillCompletionBadge from '@/components/practica/SkillCompletionBadge'
 import XPStreak from '@/components/practica/XPStreak'
 import { getSkillProgress } from '@/lib/progress'
 import { listeningCard } from '@/data/practica/series/page-copy'
 
-const COLOR = '#0066cc'
 
 const HABILIDADES = [
   {
@@ -43,11 +42,6 @@ const HABILIDADES = [
   },
 ]
 
-const COLORS: Record<string, string> = {
-  lectura: '#0066cc', gramatica: '#7c3aed', escritura: '#059669',
-  habla: '#d97706', vocabulario: '#e11d48', escucha: '#0369a1',
-}
-
 export default function InglesA1Client() {
   const [completedCount, setCompletedCount] = useState(0)
 
@@ -59,81 +53,34 @@ export default function InglesA1Client() {
   }, [])
 
   return (
-    <section className="wl-section">
-      <div className="wrap" style={{ maxWidth: 900 }}>
-        {/* Breadcrumb */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
-          <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
-          <span>/</span>
-          <Link href="/practica/ingles" style={{ color: 'var(--muted)', textDecoration: 'none' }}>🇬🇧 Inglés</Link>
-          <span>/</span>
-          <span style={{ color: COLOR, fontWeight: 800 }}>A1</span>
-        </div>
-
-        {/* Header */}
-        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem', marginBottom: '0.5rem' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-            <div style={{ width: 56, height: 56, borderRadius: 14, background: COLOR, color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.3rem', fontWeight: 900, fontFamily: 'var(--mono)', flexShrink: 0 }}>A1</div>
-            <div>
-              <p className="eyebrow" style={{ marginBottom: '0.2rem' }}><span className="ink-line" />Inglés A1 — Principiante</p>
-              <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: 0, fontWeight: 700 }}>Elige una habilidad</h1>
-            </div>
-          </div>
-          <XPStreak showMotivation />
-        </div>
-
-        {/* Level progress */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', margin: '0.75rem 0 2rem', flexWrap: 'wrap' }}>
-          <ProgressBar completed={completedCount} total={HABILIDADES.length} color={COLOR} />
-          <span style={{ fontSize: '0.82rem', color: 'var(--muted)' }}>
+    <SkillHub
+      langHref="/practica/ingles"
+      langLabel="🇬🇧 Inglés"
+      levelLabel="A1"
+      eyebrow="Inglés A1 — Principiante"
+      title="Elige una habilidad"
+      lead="Seis habilidades para empezar de cero en inglés. Cada una con ejercicios interactivos y corrección inmediata."
+      accent="#0066cc"
+      skills={HABILIDADES}
+      headerAside={<XPStreak showMotivation />}
+      beforeGrid={
+        <>
+          <ProgressBar completed={completedCount} total={HABILIDADES.length} color="var(--wlp-accent)" />
+          <span>
             {completedCount === 0
               ? 'Ninguna habilidad completada todavía'
               : completedCount === HABILIDADES.length
               ? '¡Nivel A1 completado!'
               : `${completedCount} de ${HABILIDADES.length} habilidades completadas`}
           </span>
-        </div>
-
-        {/* Habilidad grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1rem' }}>
-          {HABILIDADES.map(h => {
-            const c = COLORS[h.id] ?? COLOR
-            return (
-              <Link key={h.id} href={h.href} style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
-                <div style={{
-                  padding: '1.4rem 1.5rem',
-                  border: `1.5px solid ${c}33`,
-                  borderRadius: 18,
-                  background: `linear-gradient(135deg, ${c}0a 0%, transparent 100%)`,
-                  borderTop: `3px solid ${c}`,
-                  height: '100%', boxSizing: 'border-box',
-                  display: 'flex', flexDirection: 'column', gap: '0.6rem',
-                  transition: 'box-shadow 0.18s, border-color 0.18s',
-                }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
-                    <span style={{ fontSize: '1.8rem' }}>{h.emoji}</span>
-                    <div style={{ flex: 1 }}>
-                      <div style={{ fontSize: '1rem', fontWeight: 800, color: 'var(--ink)' }}>{h.name}</div>
-                      <div style={{ fontSize: '0.72rem', color: c, fontFamily: 'var(--mono)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>{h.eng}</div>
-                    </div>
-                    <SkillCompletionBadge lang="ingles" level="a1" skill={h.id} color={c} />
-                  </div>
-                  <p style={{ margin: 0, fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.55, flex: 1 }}>{h.desc}</p>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 'auto' }}>
-                    <span style={{ fontSize: '0.7rem', color: c, fontFamily: 'var(--mono)', fontWeight: 700 }}>{h.count}</span>
-                    <span style={{ fontSize: '1rem', color: c, fontWeight: 700 }}>→</span>
-                  </div>
-                </div>
-              </Link>
-            )
-          })}
-        </div>
-
-        {/* Tip */}
-        <div style={{ marginTop: '2rem', padding: '0.9rem 1.2rem', borderRadius: 12, background: 'rgba(0,102,204,0.06)', border: '1px solid rgba(0,102,204,0.15)', fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-          💡 <strong style={{ color: 'var(--ink)' }}>Consejo:</strong> Empieza por <strong style={{ color: COLOR }}>Lectura</strong> para activar vocabulario, luego refuerza con <strong style={{ color: 'var(--wl-on-panel-purple, #7c3aed)' }}>Gramática</strong>. Usa <strong style={{ color: 'var(--wl-on-panel-alert, #e11d48)' }}>Vocabulario</strong> para repasar las palabras del texto en flashcards.
-        </div>
-      </div>
-    </section>
+        </>
+      }
+      cardBadge={h => <SkillCompletionBadge lang="ingles" level="a1" skill={h.id} color="var(--wlp-accent)" />}
+      tip={
+        <>
+          <strong>Consejo:</strong> Empieza por Lectura para activar vocabulario, luego refuerza con Gramática. Usa Vocabulario para repasar las palabras del texto en flashcards.
+        </>
+      }
+    />
   )
 }
