@@ -1,0 +1,140 @@
+/* Lo propio del hub de nivel: la chapa del nivel, la rejilla de habilidades y el pie de la
+   tarjeta. El resto —lienzo, migajero, encabezado, tarjeta— sale de practica-ui.css.
+
+   Sin hex: todo se pide a las variables que declara .wlp-page. */
+
+.head {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.identity {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* La chapa del nivel. Antes era un cuadrado relleno del color del idioma con la esquina muy
+   redondeada; ahora es una chapa con filete, que es como la sección marca las cosas. */
+.level {
+  align-items: center;
+  border: 1px solid var(--wlp-accent);
+  border-radius: var(--wlp-r);
+  color: var(--wlp-accent);
+  display: flex;
+  flex-shrink: 0;
+  font-family: var(--mono);
+  font-size: 1.15rem;
+  font-weight: 900;
+  height: 52px;
+  justify-content: center;
+  letter-spacing: 0.02em;
+  width: 52px;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  list-style: none;
+  margin: 2.5rem 0 0;
+  padding: 0;
+}
+
+.grid > li {
+  min-width: 0;
+}
+
+/* La tarjeta hereda .wlp-card y .wlp-card--path; aquí solo la altura y el reparto vertical,
+   para que el pie quede abajo aunque las descripciones midan distinto. */
+.card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  height: 100%;
+}
+
+.cardTop {
+  align-items: flex-start;
+  display: flex;
+  gap: 0.65rem;
+  justify-content: space-between;
+}
+
+.name {
+  color: var(--wlp-ink);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.desc {
+  color: var(--wlp-muted);
+  flex: 1;
+  font-size: 0.84rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.cardFoot {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.count {
+  color: var(--wlp-accent);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.arrow {
+  color: var(--wlp-accent);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Una habilidad aún sin construir: se apaga, no se pinta de color. */
+.soon {
+  border-top-color: var(--wlp-line);
+  opacity: 0.62;
+}
+
+.soon .count,
+.soon .arrow {
+  color: var(--wlp-muted);
+}
+
+.progress {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.25rem 0 0;
+}
+
+.progressLabel {
+  color: var(--wlp-muted);
+  font-size: 0.82rem;
+}
+
+.tip {
+  background: var(--wlp-raised);
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r);
+  color: var(--wlp-muted);
+  font-size: 0.84rem;
+  line-height: 1.6;
+  margin-top: 2rem;
+  padding: 0.9rem 1.2rem;
+}
+
+.tip strong {
+  color: var(--wlp-ink);
+}
