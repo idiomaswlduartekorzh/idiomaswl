@@ -1,0 +1,53 @@
+/* Lo poco que el hub de Historias necesita además de las primitivas: las etiquetas de
+   destrezas que cruza, el aviso de audio pendiente y la nota del pie. Sin hex. */
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  list-style: none;
+  margin: 1.75rem 0 0;
+  padding: 0;
+}
+
+.tag {
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r-sm);
+  color: var(--wlp-muted);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+}
+
+/* «Audio en grabación» no es un error ni un aviso: es un estado normal del catálogo, así
+   que se pinta con el tono de aviso, no con el de alarma. */
+.pending {
+  background: var(--wlp-tint-info);
+  border: 1px solid color-mix(in srgb, var(--wlp-info) 34%, transparent);
+  border-radius: var(--wlp-r-sm);
+  color: var(--wlp-info);
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 0.1rem 0.4rem;
+}
+
+.note {
+  background: var(--wlp-raised);
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r);
+  color: var(--wlp-muted);
+  font-size: 0.85rem;
+  line-height: 1.65;
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+}
+
+.note strong {
+  color: var(--wlp-ink);
+}
+
+.back {
+  margin-top: 2rem;
+}
