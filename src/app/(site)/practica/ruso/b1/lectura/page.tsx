@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Lectura de Ruso B1 — Textos interactivos"
-        url="https://idiomaswl.com/practica/ruso/b1/lectura"
+        url="https://www.idiomaswl.com/practica/ruso/b1/lectura"
         description="5 textos de Ruso B1 con transliteración, vocabulario interactivo y 6 preguntas cada uno."
       />
       <Content />

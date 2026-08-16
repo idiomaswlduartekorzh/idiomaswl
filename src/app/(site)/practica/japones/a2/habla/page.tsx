@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Expresión oral en Japonés A2 — Frases esenciales"
-        url="https://idiomaswl.com/practica/japones/a2/habla"
+        url="https://www.idiomaswl.com/practica/japones/a2/habla"
         description="20 frases esenciales de Japonés A2 con pronunciación, romaji y contexto situacional para hispanohablantes."
       />
       <Content />

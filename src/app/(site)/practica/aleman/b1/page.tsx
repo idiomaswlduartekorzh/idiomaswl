@@ -7,7 +7,7 @@ import { listeningCard } from '@/data/practica/series/page-copy';
 export const metadata: Metadata = {
   title: 'Alemán B1 — Elige una habilidad',
   description: 'Alemán B1: Konjunktiv II, Relativsätze, Passiv, temporale Konjunktionen e Indirekte Rede. 6 habilidades interactivas.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/aleman/b1' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/aleman/b1' },
 };
 
 const COLOR = '#dd0000';
@@ -29,7 +29,7 @@ export default function AlemanB1Page() {
     <CourseSchema
       name="Alemán B1 — Lectura, Gramática, Vocabulario y más"
       description="Practica Alemán nivel B1: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
-      url="https://idiomaswl.com/practica/aleman/b1"
+      url="https://www.idiomaswl.com/practica/aleman/b1"
       educationalLevel="B1"
       teaches="Alemán, habilidades MCER"
       inLanguage="al"

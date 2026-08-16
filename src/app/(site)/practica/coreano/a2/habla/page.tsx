@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Expresión oral en Coreano A2 — Frases esenciales"
-        url="https://idiomaswl.com/practica/coreano/a2/habla"
+        url="https://www.idiomaswl.com/practica/coreano/a2/habla"
         description="20 frases esenciales de Coreano A2 con Hangul, romanización y guía de pronunciación para hispanohablantes."
       />
       <Content />

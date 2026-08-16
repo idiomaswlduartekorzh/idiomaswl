@@ -13,7 +13,7 @@ const ESCUCHA = listeningCard(
 export const metadata: Metadata = {
   title: 'Portugués B1 — Elige una habilidad',
   description: 'Portugués B1: o subjuntivo, o condicional, a voz passiva, pronomes relativos e discurso indireto. Exercícios interativos para o nível intermediário.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/portugues/b1' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/portugues/b1' },
 };
 
 const COLOR = '#009c3b';
@@ -35,7 +35,7 @@ export default function PortuguesB1Page() {
     <CourseSchema
       name="Portugués B1 — Lectura, Gramática, Vocabulario y más"
       description="Practica Portugués nivel B1: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato para el nivel intermedio."
-      url="https://idiomaswl.com/practica/portugues/b1"
+      url="https://www.idiomaswl.com/practica/portugues/b1"
       educationalLevel="B1"
       teaches="Portugués, habilidades MCER"
       inLanguage="po"

@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Lettura Italiano B1 — Testi con vocabolario interattivo"
-        url="https://idiomaswl.com/practica/italiano/b1/lectura"
+        url="https://www.idiomaswl.com/practica/italiano/b1/lectura"
         description="5 testi B1 de italiano (120-150 palabras) con vocabulario clickeable, 6 preguntas MCQ y producción libre."
       />
       <Content />

@@ -13,7 +13,7 @@ const ESCUCHA = listeningCard(
 export const metadata: Metadata = {
   title: 'Japonés B1 — Elige una habilidad',
   description: 'Japonés B1: voz pasiva, causativa, condicional 〜たら, 〜のに y permisos/prohibiciones. Lectura, gramática, vocabulario, escritura, habla y escucha.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/japones/b1' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/japones/b1' },
 };
 
 const COLOR = '#bc002d';
@@ -62,7 +62,7 @@ export default function JaponesB1Page() {
     <CourseSchema
       name="Japonés B1 — Lectura, Gramática, Vocabulario y más"
       description="Practica Japonés nivel B1: lectura, gramática, vocabulario, escritura, habla y escucha. Voz pasiva, causativa, condicional y más."
-      url="https://idiomaswl.com/practica/japones/b1"
+      url="https://www.idiomaswl.com/practica/japones/b1"
       educationalLevel="B1"
       teaches="Japonés, habilidades MCER"
       inLanguage="ja"

@@ -13,7 +13,7 @@ const ESCUCHA = listeningCard(
 export const metadata: Metadata = {
   title: 'Ruso A2 — Elige una habilidad',
   description: 'Ruso A2: pasado, futuro, verbos de movimiento, casos dativo e instrumental y verbos reflexivos, en seis habilidades interactivas.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/ruso/a2' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/ruso/a2' },
 };
 
 const COLOR = '#cc0000';
@@ -62,7 +62,7 @@ export default function RusoA2Page() {
     <CourseSchema
       name="Ruso A2 — Lectura, Gramática, Vocabulario y más"
       description="Practica Ruso nivel A2: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
-      url="https://idiomaswl.com/practica/ruso/a2"
+      url="https://www.idiomaswl.com/practica/ruso/a2"
       educationalLevel="A2"
       teaches="Ruso, habilidades MCER"
       inLanguage="ru"

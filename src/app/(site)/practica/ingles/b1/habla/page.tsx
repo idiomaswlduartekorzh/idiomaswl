@@ -8,7 +8,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Expresión oral en Inglés B1 — Frases esenciales"
-        url="https://idiomaswl.com/practica/ingles/b1/habla"
+        url="https://www.idiomaswl.com/practica/ingles/b1/habla"
         description="20 frases esenciales de Inglés B1 para debates, opiniones y situaciones formales e informales."
       />
       <Content />

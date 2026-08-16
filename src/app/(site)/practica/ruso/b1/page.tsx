@@ -13,7 +13,7 @@ const ESCUCHA = listeningCard(
 export const metadata: Metadata = {
   title: 'Ruso B1 — Elige una habilidad',
   description: 'Ruso B1: aspectos verbales (совершенный/несовершенный), caso instrumental, genitivo plural, condicionales con бы y participios. 6 habilidades interactivas.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/ruso/b1' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/ruso/b1' },
 };
 
 const COLOR = '#cc0000';
@@ -62,7 +62,7 @@ export default function RusoB1Page() {
     <CourseSchema
       name="Ruso B1 — Lectura, Gramática, Vocabulario y más"
       description="Practica Ruso nivel B1: lectura, gramática, vocabulario, escritura, habla y escucha. Aspectos verbales, caso instrumental y oraciones condicionales con feedback inmediato."
-      url="https://idiomaswl.com/practica/ruso/b1"
+      url="https://www.idiomaswl.com/practica/ruso/b1"
       educationalLevel="B1"
       teaches="Ruso, habilidades MCER"
       inLanguage="ru"

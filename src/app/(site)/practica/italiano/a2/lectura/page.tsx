@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Lectura en Italiano A2 — Ejercicios interactivos"
-        url="https://idiomaswl.com/practica/italiano/a2/lectura"
+        url="https://www.idiomaswl.com/practica/italiano/a2/lectura"
         description="Ejercicios de comprensión lectora de Italiano nivel A2 con vocabulario interactivo y preguntas adaptativas."
       />
       <Content />

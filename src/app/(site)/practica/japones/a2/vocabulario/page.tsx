@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Vocabulario de Japonés A2 — Ejercicios interactivos"
-        url="https://idiomaswl.com/practica/japones/a2/vocabulario"
+        url="https://www.idiomaswl.com/practica/japones/a2/vocabulario"
         description="Ejercicios de vocabulario de Japonés nivel A2: tarjetas, listas temáticas y práctica activa."
       />
       <Content />

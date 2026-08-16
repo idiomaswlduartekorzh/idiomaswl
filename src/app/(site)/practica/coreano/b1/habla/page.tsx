@@ -8,7 +8,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Expresión oral en Coreano B1 — Frases esenciales"
-        url="https://idiomaswl.com/practica/coreano/b1/habla"
+        url="https://www.idiomaswl.com/practica/coreano/b1/habla"
         description="20 frases esenciales de Coreano B1 con Hangul, romaja y fonética para debates y situaciones formales."
       />
       <Content />

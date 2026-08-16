@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Expresión oral en Ruso A2 — Frases esenciales"
-        url="https://idiomaswl.com/practica/ruso/a2/habla"
+        url="https://www.idiomaswl.com/practica/ruso/a2/habla"
         description="20 frases esenciales de Ruso A2 con cirílico, transliteración y guía de pronunciación para hispanohablantes."
       />
       <Content />

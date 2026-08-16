@@ -13,7 +13,7 @@ const ESCUCHA = listeningCard(
 export const metadata: Metadata = {
   title: 'Italiano A2 — Elige una habilidad',
   description: 'Italiano A2: passato prossimo, imperfetto, futuro semplice, pronomi e comparativi. Lectura, gramática, vocabulario, escritura, habla y escucha.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/italiano/a2' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/italiano/a2' },
 };
 
 const COLOR = '#009246';
@@ -62,7 +62,7 @@ export default function ItalianoA2Page() {
     <CourseSchema
       name="Italiano A2 — Lectura, Gramática, Vocabulario y más"
       description="Practica Italiano nivel A2: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
-      url="https://idiomaswl.com/practica/italiano/a2"
+      url="https://www.idiomaswl.com/practica/italiano/a2"
       educationalLevel="A2"
       teaches="Italiano, habilidades MCER"
       inLanguage="it"

@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Expresión oral en Italiano A2 — Frases esenciales"
-        url="https://idiomaswl.com/practica/italiano/a2/habla"
+        url="https://www.idiomaswl.com/practica/italiano/a2/habla"
         description="20 frases esenciales de Italiano A2 con pronunciación, contexto situacional y variantes formal/informal."
       />
       <Content />
