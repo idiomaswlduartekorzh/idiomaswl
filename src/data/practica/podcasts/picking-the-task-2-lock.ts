@@ -1,47 +1,131 @@
+import type { EpisodeSection } from '@/components/practica/EpisodeNotes';
+
 /**
- * Transcript of "Picking the IELTS Task 2 Lock" (/practica/ielts/academic/writing/task2).
+ * Written companion to "Picking the IELTS Task 2 Lock".
  *
- * Produced from the published mp3 with whisper.cpp small.en, transcribed in
- * silence-aligned chunks so no line is lost at a window boundary, then reflowed
- * into paragraphs. Exam terminology and the WeLearn name were corrected by hand;
- * nothing else was reworded. See docs/podcast-transcripciones.md.
- *
- * 33 paragraphs · 3794 words.
+ * Same ground as the audio, same order. The four-paragraph plan, the five
+ * question families and the 5/30/5 clock are all labelled as WeLearn study
+ * defaults, matching the clarification printed above the player.
  */
-const paragraphs: string[] = [
-  "You know, those scenes in heist movies where the thief pulls out a single glowing skeleton key and they just slide it into this massive vault door, give it a twist, and the whole thing just clicks open. Oh, yeah. It is deeply satisfying to watch. And, you know, completely fictional. Right. I mean, real lockpicking is so much more tedious. A professional locksmith, they don't carry a magic key. They carry a toolkit. Yeah. Yeah, that makes sense. They have to insert a tension wrench, carefully feel out the specific binding order of the time tiny pins inside that exact lock and, you know, set them one by one.",
-  "It's a process. And if you are listening to us today, there is a very good chance you are a student preparing for the IELTS Academic Writing Task Two. You know, you're probably aiming for that band six or seven. Right. And I bring up the whole locksmith thing because when it comes to task two, an overwhelming number of candidates are just desperately searching the Internet for that movie magic skeleton key. Oh, absolutely. They're looking for the universal essay templates. huge widespread misconception that if you just, well, memorize a rigid structure, stuff your paper with a list of really rare, complex vocabulary words, and sort of glue it all together with these robotic transition phrases, you can trick the examiner.",
-  "Like trick them into giving you a high band score no matter what the question actually asks. Exactly, but it doesn't work. So we are going to completely dismantle that myth today. The mission for this deep dive is to totally demystify task two, and give you a concrete, practical roadmap for improvement. Because, you know, if this test isn't about reciting a memorized template, we really need to know what the examiner is actually grading. Well, the examiner is looking for a demonstration of discipline thinking under time pressure. Task two is it's a time sequence of very precise decisions that must answer one exact prompt. You have to read the lock in front of you.",
-  "Yes. Perfectly said. So before we even begin to strategize about how to pick the lock, we have to know the official rules Let's look at the basic parameters. So the Academic Writing test gives you 60 minutes in total to complete two distinct tasks. Task two will present you with a point of view, an argument, or a problem. And you are required to write at least 250 words. Minimum, right. And the general advice is to spend about 40 minutes on it. Yes, and those 250 words, they must be connected full sentence text. Meaning no bullet points. Exactly. You cannot use bullet points or shorthand text. notes and the tone, well, it must be in an academic or neutral style.",
-  "Now, here is a detail I really want to underline for you listening. Task two carries twice the weight of task one in your final writing score. Double the weight. Yes. Which makes it the absolute anchor of your result. I mean, you cannot afford to brush past it or just hope your task one graph description will somehow save you. No, you really can't, which means we need to understand how that anchor is actually graded. Right. Let's get into that. The assessment comes down to four official criteria. [BLANK_AUDIO] First up is Task Response. This essentially asks, \"Did you answer the exact prompt you were given and did you develop your ideas to support your position?\"",
-  "Okay, so answering the actual question. All right. Second is Coherence and Cohesion. This evaluates if your essay is logical and if the ideas connect smoothly from one sentence to the next. Okay. And then we have the third criterion, which is Lexical Resource, basically your vocabulary usage. And finally, Grammatical Range and Accuracy, which looks at your sentence variety and how well you control grammatical errors. Exactly. Now, let me pause on that third one, Lexical Resource, because I see a lot of advice out there telling candidates to memorize these lists of obscure ten dollar words. Like if I just throw plethora and myriad into every single paragraph, won't that impress the examiner?",
-  "It generally does the exact opposite, actually. Yeah. Precision matters far more than just deploying big words. Think of it like putting Ferrari tires on a bicycle. The tires might be expensive. and look impressive on their own, but when you attach them to the wrong vehicle, they don't make the bicycle go faster. - You just look ridiculous. - Right, they just highlight that the underlying machine is structurally confused. If you try to decorate a weak, off-topic argument with rare vocabulary, the examiner will see right through it. Relevance and idea development are the actual foundation. - That makes a lot of sense. So, okay, if we abandon the idea of a magic template and we stop memorizing dictionaries, pages.",
-  "How do we actually train for this? Because when you look at the whole essay at once, it feels, you know, incredibly overwhelming. It does, which is why we need to separate the macro structure from the micro mechanics. A really useful way to conceptualize this is through a master learning model developed by an organization called We Learn. And we are referencing their framework here purely because it offers just a brilliant way to break the test down into trainable pieces. Right. So we can actually practice it step by step. They divide the preparation into a three part distinction. First, there's the architecture, which is how you build the response in order.",
-  "Second, the question families, which is how you adapt that architecture to these specific instruction. And third, the transferable skills, which are the specific mechanical skills operating inside every single paragraph. And separating your preparation into these three buckets is incredibly powerful for diagnosing where you are actually losing marks. Because otherwise you're just guessing. Exactly. I mean, if you just write full essays over and over and keep getting a Band 5.5, you have no idea what to fix. Are you failing to answer the prompt or are your sentences just grammatically incorrect? Right. Diagnosing those issues requires completely different exercises. So let's tackle that first bucket, the architecture of the essay.",
-  "We need a reliable way to build the response in a logical order every single time we sit down to write. Yeah, so a highly effective, flexible default sequence for your training is to start with prompt analysis, then write your introduction, write body paragraph one, write body paragraph two, write your conclusion, and then perform a final review. - Okay, I want to be very careful here and offer a crucial caveat for you listening, because I see people arguing online all the time that IELTS strictly requires a four paragraph essay. - Oh yeah, that is a total myth. - Right, a four paragraph structure is never an official IELTS rule.",
-  "It is simply a very safe, reliable training guardrail. It keeps you focused. You can absolutely write a third body paragraph, but you should usually only do that if you have a completely distinct third idea that genuinely needs full development and, you know, you actually have the time to do it properly. Well, what happens if I try to just squeeze in a third body paragraph to show off more ideas, but I only have, like, five minutes left? You end up with a very shallow list of leftover thoughts. That makes sense. Yeah. Two deeply developed body paragraphs will always score higher than three shallow, rushed ones. The examiner really rewards depth of reasoning, not just the sure quantity of points you can brainstorm.",
-  "Okay, which brings us perfectly to the second part of the learning model, adapting to the question. Having a default four-paragraph structure is a great starting point, but the moment you sit down in the test center, you are hit with a specific question. So how do you know what those two middle body paragraphs are actually supposed to do? Well, that depends entirely on the instruction attached to the topic. In teaching circles, we often group prompts into five pedagogical families to help students plan. OK, what are they? They are opinion, discussion, problem solution, advantages, disadvantages, and direct questions. And again, just to be totally clear, those are teaching categories, not official terminology from the test maker.",
-  "Correct. The golden rule you really need to internalize here is that the instruction, not the topic label, determines each paragraph's job. Let's run a scenario to see how that works in practice. the topic on my test paper is international tourism. Now, I might have memorized 20 great facts about international tourism, but my essay is going to look completely different depending on the specific instruction at the very end of the prompt. Yes. Let's compare two different instructions for that exact same topic. Yeah. Scenario one, the prompt asks, what are the advantages and disadvantages of international tourism? In this case, your thesis in the introduction simply outlines what those points are.",
-  "Got it. Body paragraph one, will describe the advantages and body paragraph two will describe the disadvantages. You are basically just explaining the landscape. - But what if scenario two asks, do the advantages of international tourism outweigh the disadvantages? - Then everything changes. Now, your thesis must make a clear definitive verdict. - You have to actually pick a side. - You have to take a position on which side is heavier. And your body paragraphs cannot just list the good and bad points anymore. They must actively compare their weight. - I see. If you write the essay from scenario one for the prompt in scenario two, you could write a grammatically flawless paper and still severely damage your Task Response score.",
-  "Because you literally didn't answer the specific question they asked. Exactly. You brought the wrong tool for the lock. Okay, so we understand the four paragraph architecture and we know that the specific instruction tells us what jobs those paragraphs have. Now we have to actually write the sentences. Right. This is the third bucket of our framework, the transferable skills. So let's unpack the most critical sub skills, starting with the very first thing you do in the introduction, which is paraphrasing the prompt. Yeah. So say it in your own words is probably the most common advice given for paraphrasing. And it is also the least helpful. Definitely.",
-  "True paraphrasing relies on five concrete mechanical moves. You can use synonyms, you can change the word order, change the word form, like, you know, turning a noun into an adjective, change the voice from active to passive or alter the overall sentence structure. this because I think a lot of students just rely on synonym swapping, you know, just finding words in a thesaurus. Let's say the prompt is about government spending money on space exploration. Okay. If I just swap out words, I might write, \"Regimes squander currency on cosmic voyages.\" I mean, I've changed the words, but it sounds completely bizarre. It sounds bizarre, and worse, it changes the fundamental meaning.",
-  "How so? Well, squander implies wasting money, which is an opinion the original prompt did not actually state. And regimes often has this negative authoritarian connotation that governments simply does not. Precision is paramount here, a paraphrase that reads beautifully but accidentally shifts the core logic of the prompt while that will directly hurt your score. So it is much, much safer to change the grammatical structure, maybe turn spending money into the allocation of funds than to just hunt for fancy synonyms. Definitely. It's so much safer. And once you have accurately introduced the topic, you need to state your position. Your thesis must be arguable. Yeah. If no reasonable person could possibly disagree with your thesis, you haven't written a position.",
-  "You've just stated a fact. And that clear position needs to be visible in your introduction, defended throughout your body paragraphs, and restated in your conclusion. OK, but I often see students write things like, I agree with this statement for two main reasons. I would highly advise against that. When you preview your exact body reasons in the thesis, you are essentially spinning your body paragraphs before you even get to them. State your overarching position clearly, sure, but save the specific development for the body paragraphs where they actually belong. work for you. A topic sentence has one specific job. It must name the single distinct claim that the entire paragraph exists to support.",
-  "It acts as a signpost for the examiner. OK, so I write a strong, specific topic sentence. Now I have the rest of the paragraph to fill. And I'll be honest, my instinct is to show the examiner how knowledgeable I am. Right. Like, if the topic is public transport, I want to write public transport is cheap. It reduces pollution. It eases traffic congestion. it is safer than driving. Boom. That's four great points. That is a classic trap and it is genuinely one of the main reasons candidates get stuck at a band six. Wait, really? Yes. What you just described is a list. A list of four true claims demonstrates zero reasoning.",
-  "The examiner doesn't want to see a pile of stones. They want to see you build a bridge. Build a bridge. I like that. So how do I actually do that? By creating a logical chain. After you make your initial claim in the topic sentence, you must ask yourself, so what follows from that? Okay, let's build that chain right now. Instead of listing cheap, grain, and safe, let's just take the first idea, which is cost. My topic sentence is, \"Public transport offers a significantly cheaper alternative to private vehicle ownership.\" Now I ask, \"So what follows from that?\" And then I ask, \"So what?\" Again, turn. grants these individuals wider access to employment opportunities and education hubs that would otherwise be inaccessible.",
-  "Yes. Now you are showing real critical thinking. Three developed linked sentences prove your ability to construct a logical argument. Whereas five isolating claims just prove I can memorize random facts. Exactly. Always build the chain. And part of building that chain is using relevant examples to ground these abstract ideas in reality. Yeah. But I see so many candidates inventing fake statistics. confidently right. A recent 2023 study by Oxford University found that 83% of people prefer buses. Yeah, please don't do that. The examiner knows you don't have access to an academic database in the exam room. You do not need to invent fake numbers. So what should we do instead?",
-  "You make abstract claims concrete by illustrating the mechanism of how a real world scenario actually works. You can just explain that in densely populated cities, designated bus lanes allow commuters to bypass rush hour traffic, making it a more efficient choice. It's just about illustrating the how. Got it. Now, as we're linking all these ideas together, we have to talk about cohesion. We mentioned earlier that those robotic transition phrases are a bad idea, but I still need to connect my sentences somehow, right? You do, but you should choose your connectors based on their logical function, things like addition, contrast, or cause and effect. A connector is a claim about how two ideas relate to each other.",
-  "Okay. Don't just throw in \"furthermore\" because you haven't used it yet. Only use it if you are actually adding a parallel point. Now, one of the most sophisticated logical functions is contrast and concession. What does a genuinely good concession actually sound like? So, a concession is when you acknowledge a valid point from the opposing view before explaining why your main position is still stronger. Showing you've thought about both sides. Exactly. It shows the examiner you have critically examined the whole topic, not just your side. For example, you could write, of building a subway system, the long-term economic benefits far outweigh the initial debt. don't require it, although already establishes the contrast by adding \"but\" you are announcing the relationship twice, which causes a grammatical error.",
-  "It's redundant. Yes, it should simply be, although the scheme was expensive, it went ahead. Okay, so we are rounding out our transferable skills here. We also need purposeful sentence variety. So, using simple, compound, and complex sentences for an actual reason. A short, simple sentence can be incredibly punchy for concluding thought, while a complex sentence is perfect for showing cause and effect. And finally, the last sub-skill is the critical final review. That review is your absolute last line of defense. It is where you check your Task Response, verify your logic chains, ensure your position hasn't drifted off topic, and catch basic language errors. Okay, so we have our four paragraph architecture.",
-  "We know how to adapt to the prompt families, and we thoroughly understand the micro-skills, like building chains and paraphrasing. Now we have to actually execute all of this against the clock. Let's look at the 40-minute Yes. A very practical time management strategy we can borrow from the WeLearn training material is the 535 target. 535. And again, this is just a practice target to aim for, not an official IELTS time allocation. Right. So it breaks down like this. You spend a flexible five minutes decoding the prompt, determining the instruction, and planning your paragraph jobs. Then you spend about 30 minutes actually writing the essay, and you reserve the final five minutes for that critical review we just discussed.",
-  "Let me throw a really common nightmare scenario at you. - Okay, I'm ready. - I do my five minutes of planning, my 30 minutes of writing, and I get to my review. I count my words, and I am sitting at 230 words. I am under the 250 word minimum, and I only have three minutes left. Should I just quickly write a couple of filler sentences, maybe summarizing my conclusion again, just to hit the count? - No, absolutely do not add fluff. Empty filler will immediately hurt your Coherence and Cohesion score. - So what do I do? - Go back into your body paragraphs, Identify the least developed point in your argument and extend its reasoning purposefully.",
-  "Add one more link to your chain. - Ah, I see. - Just ask, so what follows from that one more time and write a compound sentence explaining the outcome. You will easily hit your word count and you will actually improve your Task Response score in the process. - Wow, that is a much smarter strategy. Okay, so knowing this 535 routine is incredibly helpful, but how does a listener actually get better at it week over week? Like, if someone's test is in two months, What should they do when they sit down at their desk tomorrow? They need to build a concrete weekly improvement loop. Writing full 40-minute essays every single day is exhausting and honestly, it's pretty inefficient.",
-  "Yeah, that sounds like a fast track to burn out. Exactly. So here is a highly actionable cycle you can use. Step one, write a timed baseline essay to see where you currently stand. Okay. Step two is to diagnose it. But I shouldn't just read it once and give myself a guess at a band score, should I? Oh, definitely not. You should diagnose it four separate times, looking through the lens of a different official criterion each time. Oh, interesting. Yeah. Read it once, solely asking, \"Did I answer the prompt?\" Read it a second time, only looking at how your sentences connect. Then read it again just for vocabulary, and then a fourth time just for grammar.",
-  "That perfectly isolates the problems. Yeah. Okay, step three. Pick one week subskill. Right. Let's say during your diagnosis, you realize your concession sentences are always clumsy and ungrammatical. For step four, you are going to practice that single skill. You don't write a full essay. You pull up five different prompt families and you just write five concession sentences. Oh, I love this. You are treating it like a drill in sports. You don't play a full match to fix your free throw. You just stand at the line and shoot 50 free throws. Precisely. Then for step five, you go back to your baseline essay and rewrite the section that contained the error, but this time using your newly sharpened skill.",
-  "OK. Step six is to transfer that skill into a brand new full-timed essay. You will find that the muscle memory carries over beautifully. And the final step in the loop is maintaining an error log. Keep a simple notebook tracking your recurring mistakes so you know exactly what to drill the following week. It is incredibly surgical. Write, diagnose, isolate, drill, apply. Breaking a massive intimidating exam down into trainable, manageable pieces, well, it removes the anxiety and replaces it with a very clear sense of progression. Let's bring all of this together. away we want you to leave with today is that task two is not a memory test.",
-  "The examiner is not looking for a candidate who has swallowed a dictionary or memorized a rigid one-size-fits-all template. Not at all. True mastery of this exam and of Academic Writing in general is the ability to repeatedly read the exact instruction in front of you and decode it. Right. It is the ability to choose a defensible position, assign every single paragraph a specific job, and develop those ideas with clear, logical chains of reasoning. You don't need a magic skeleton key when you know how to read the lock. You have the toolkit now. You know the official criteria, the flexible architecture, and the mechanics of building an argument.",
-  "So, and everyone listening, thank you for joining us on this deep dive. We really wish you the absolute best in your IELTS preparation. And as you continue studying this week, keep this final thought in mind. We have spent all this time analyzing how to answer the exact prompt provided over the next few days. days as you read opinion pieces in the news or you know listen to politicians debate on TV, ask yourself are they actually answering the specific question they were asked or are they just reciting a pre-memorized template of talking points? That is a great question. You might be surprised how often professional real-world arguments would completely fail the IELTS Task Response test.",
-  "Keep analyzing the logic out there and your own writing will naturally improve.",
+const sections: EpisodeSection[] = [
+  {
+    heading: 'There is no skeleton key',
+    body: [
+      'In heist films the thief slides one glowing key into the vault and it clicks open. Real locksmiths carry a toolkit: a tension wrench, and the patience to feel out the binding order of the pins in that particular lock.',
+      'Most Task 2 preparation is a search for the skeleton key — a memorised template, a list of rare words, a set of transition phrases to glue it together. It does not work, because the examiner is not grading decoration. They are grading disciplined thinking under time pressure, aimed at one exact prompt. You have to read the lock in front of you.',
+    ],
+  },
+  {
+    heading: 'The rules of the game',
+    body: [
+      'The Academic Writing test gives you 60 minutes for two tasks. Task 2 presents a point of view, an argument or a problem, and asks for at least 250 words. The usual working split is about 40 minutes on Task 2.',
+      'It must be continuous prose — no bullet points, no shorthand — in an academic or neutral register. And it carries twice the weight of Task 1 in your Writing band, which makes it the anchor of the result. A strong graph description will not rescue a weak essay.',
+    ],
+  },
+  {
+    heading: 'The four criteria, and the one people misread',
+    body: [
+      'Task Response asks whether you answered the exact prompt and developed ideas that support your position. Coherence and Cohesion asks whether the essay is logically organised and whether the ideas connect. Lexical Resource covers vocabulary. Grammatical Range and Accuracy covers sentence variety and control.',
+      'Lexical Resource is the one that gets misread. The common advice is to memorise rare words and deploy them everywhere, but precision beats rarity every time. Rare vocabulary bolted onto a weak or off-topic argument is Ferrari tyres on a bicycle: expensive, conspicuous, and no faster. Relevance and idea development are the foundation; vocabulary decorates a structure that already stands.',
+    ],
+  },
+  {
+    heading: 'Three buckets, so you can tell what is broken',
+    body: [
+      'Writing whole essays over and over and staying at Band 5.5 tells you nothing, because you cannot see which part failed. Are you missing the prompt, or are your sentences ungrammatical? Those need completely different exercises.',
+      'WeLearn separates preparation into three trainable buckets: the architecture (how you build the response, in order), the question families (how you adapt that architecture to the specific instruction), and the transferable skills (the mechanics operating inside every paragraph). Diagnosis gets much easier once the three are apart.',
+    ],
+  },
+  {
+    heading: 'The architecture, and the four-paragraph caveat',
+    body: [
+      'A dependable working sequence: analyse the prompt, write the introduction, write body one, write body two, write the conclusion, then review.',
+      'People argue online that IELTS requires four paragraphs. It does not — there is no official paragraph count. Four is a training guardrail that keeps you focused, nothing more.',
+      'You can write a third body paragraph, but only when you have a genuinely distinct third idea and the time to develop it properly. Squeezing one in with five minutes left produces a shallow list of leftovers, and two deeply developed paragraphs will always outscore three rushed ones. The test rewards depth of reasoning, not the number of points you can brainstorm.',
+    ],
+  },
+  {
+    heading: 'The instruction, not the topic, sets each paragraph’s job',
+    body: [
+      'For planning purposes, prompts are often grouped into five teaching families: opinion, discussion, problem–solution, advantages–disadvantages, and direct questions. Those are teaching categories, not official test terminology.',
+      'The rule underneath them is what matters. Take international tourism as a topic. Asked to discuss the advantages and the disadvantages, you are describing a landscape. Asked whether the advantages outweigh the disadvantages, everything changes: your thesis now needs a definitive verdict, you have to take a side, and the body paragraphs have to weigh the two against each other rather than list them.',
+      'Write the first essay in answer to the second prompt and you can produce something grammatically clean that still damages your Task Response score — because you brought the wrong tool for that lock.',
+    ],
+  },
+  {
+    heading: 'Paraphrasing is five mechanical moves',
+    body: [
+      '"Say it in your own words" is the most common advice about paraphrasing and the least useful. There are five concrete moves: swap synonyms, change word order, change word form (a noun into an adjective), change the voice, or restructure the sentence.',
+      'Relying only on synonym swapping is where it goes wrong. Turn "the government spends money on space exploration" into "regimes squander currency on cosmic voyages" and you have changed the meaning: "squander" asserts waste, which the prompt never claimed, and "regimes" carries a political charge that "government" does not.',
+      'A paraphrase that reads beautifully but shifts the logic of the prompt costs you marks. Changing the grammatical structure — "spending money" becoming "the allocation of funds" — is far safer than hunting for impressive synonyms.',
+    ],
+  },
+  {
+    heading: 'A thesis has to be arguable',
+    body: [
+      'If no reasonable person could disagree with your position, you have not stated a position — you have stated a fact. The position then needs to be visible in the introduction, defended through the body, and restated in the conclusion.',
+      'Avoid previewing your exact reasons in the thesis ("I agree for two reasons, cost and time"). It locks your body paragraphs into a promise made before you had time to think, and leaves nothing for them to develop.',
+    ],
+  },
+  {
+    heading: 'Build a chain, not a list',
+    body: [
+      'This is the single most common reason candidates stall at Band 6. Asked about public transport, the instinct is to show breadth: it is cheap, it reduces pollution, it eases congestion, it is safer than driving. Four true claims — and zero reasoning. A pile of stones is not a bridge.',
+      'Instead, make one claim and keep asking what follows from it. "Public transport offers a significantly cheaper alternative to private vehicle ownership." So what? "Because the cost per journey is lower, it puts daily mobility within financial reach of lower-income households." So what? "That mobility grants access to employment and education that would otherwise be out of reach."',
+      'Three linked sentences demonstrate the ability to construct an argument. Five isolated claims demonstrate that you can remember facts.',
+    ],
+  },
+  {
+    heading: 'Do not invent evidence',
+    body: [
+      'Candidates write things like "a 2023 Oxford study found that 83% of people prefer buses". The examiner knows there is no academic database in the exam room, and the invented precision helps nothing.',
+      'Ground an abstract claim by explaining the mechanism instead: in densely populated cities, dedicated bus lanes let commuters bypass rush-hour traffic, which is what makes the option efficient. Illustrate how it works rather than fabricating how many.',
+    ],
+  },
+  {
+    heading: 'Connectors are claims about logic',
+    body: [
+      'Choose linking words by their function — addition, contrast, cause and effect — not by which ones you have not used yet. A connector asserts a relationship between two ideas, so "furthermore" belongs only where you are genuinely adding a parallel point.',
+      'The most valuable function is concession: acknowledging a real point from the other side before showing your position still holds. "Despite the high initial cost of building a subway system, the long-term economic benefits far outweigh the initial debt." That shows you examined the whole topic rather than only your half.',
+      'One grammar trap lives here. "Although the scheme was expensive, but it went ahead" announces the contrast twice. "Although" has already done the work; the "but" is redundant. Write "Although the scheme was expensive, it went ahead."',
+    ],
+  },
+  {
+    heading: 'Sentence variety with a purpose, and a real review',
+    body: [
+      'Mix simple, compound and complex sentences for a reason rather than for the mixture. A short sentence lands a concluding thought; a complex one carries cause and effect.',
+      'The final review is your last line of defence: check that you answered the prompt, that the logic chains hold, that your position has not drifted, and that basic language errors are caught.',
+    ],
+  },
+  {
+    heading: 'The 5/30/5 clock',
+    body: [
+      'A practical way to spend the 40 minutes: about five minutes decoding the prompt and assigning each paragraph its job, about 30 minutes writing, and the final five on the review. This is a WeLearn practice target, not an official IELTS allocation.',
+      'The scenario worth rehearsing: you reach the review at 230 words with three minutes left. Do not add filler — empty summarising sentences damage Coherence and Cohesion immediately. Go back to the least developed point in your argument and add one more link to its chain. Ask what follows from it one more time and write the outcome. You clear the word count and improve Task Response in the same move.',
+    ],
+  },
+  {
+    heading: 'A weekly loop that is not just writing more essays',
+    body: [
+      'A timed 40-minute essay every day is exhausting and inefficient. This cycle is more surgical.',
+    ],
+    bullets: [
+      'Write one timed baseline essay to see where you stand.',
+      'Diagnose it four times, once through each official criterion. Read it asking only "did I answer the prompt?", then only for how sentences connect, then only for vocabulary, then only for grammar.',
+      'Pick one weak sub-skill from that diagnosis — say, clumsy concession sentences.',
+      'Drill that skill alone. Pull five prompts from different families and write five concession sentences. You do not fix a free throw by playing another match.',
+      'Rewrite the section of your baseline essay that contained the error, using the sharpened skill.',
+      'Transfer it into a new full timed essay.',
+      'Keep an error log, so next week you know exactly what to drill.',
+    ],
+  },
+  {
+    heading: 'The takeaway',
+    body: [
+      'Task 2 is not a memory test. Nobody is looking for a candidate who swallowed a dictionary or memorised a one-size-fits-all template.',
+      'What it measures is the ability to read the exact instruction in front of you, choose a defensible position, give every paragraph a specific job, and develop it in clear chains of reasoning. You do not need a skeleton key when you can read the lock.',
+    ],
+  },
 ];
 
-export default paragraphs;
+export default sections;

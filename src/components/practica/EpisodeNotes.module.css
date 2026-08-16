@@ -1,5 +1,5 @@
 .wrapper {
-  border-top: 1px solid var(--pt-line, rgba(15, 45, 72, 0.16));
+  border-top: 1px solid var(--en-line, rgba(15, 45, 72, 0.16));
   position: relative;
   z-index: 1;
 }
@@ -17,15 +17,15 @@
 
 .summary::-webkit-details-marker { display: none; }
 
-.summary:hover { background: var(--pt-hover, rgba(15, 45, 72, 0.04)); }
+.summary:hover { background: rgba(15, 45, 72, 0.04); }
 
 .summary:focus-visible {
-  outline: 2px solid var(--pt-accent, #b3202c);
+  outline: 2px solid var(--en-accent, #b3202c);
   outline-offset: -2px;
 }
 
 .summaryLabel {
-  color: var(--pt-ink, #12314a);
+  color: var(--en-ink, #12314a);
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
@@ -38,14 +38,14 @@
 }
 
 .summaryMeta {
-  color: var(--pt-muted, #5b7183);
+  color: var(--en-muted, #5b7183);
   font-family: var(--mono, ui-monospace, monospace);
   font-size: 0.72rem;
   text-transform: uppercase;
 }
 
 .chevron {
-  color: var(--pt-accent, #b3202c);
+  color: var(--en-accent, #b3202c);
   flex: 0 0 auto;
   transition: transform 180ms ease;
 }
@@ -53,39 +53,54 @@
 .wrapper[open] .chevron { transform: rotate(180deg); }
 
 .body {
-  border-top: 1px solid var(--pt-line, rgba(15, 45, 72, 0.16));
+  border-top: 1px solid var(--en-line, rgba(15, 45, 72, 0.16));
   padding: clamp(1.35rem, 4vw, 2rem);
 }
 
 .intro {
-  color: var(--pt-muted, #5b7183);
+  color: var(--en-muted, #5b7183);
   font-size: 0.85rem;
   line-height: 1.6;
-  margin: 0 0 1.1rem;
+  margin: 0 0 1.6rem;
   max-width: 62ch;
 }
 
-.scroll {
-  max-height: 62vh;
-  overflow-y: auto;
-  padding-right: 0.85rem;
+.section + .section {
+  border-top: 1px solid var(--en-line, rgba(15, 45, 72, 0.16));
+  margin-top: 1.6rem;
+  padding-top: 1.6rem;
 }
 
-.scroll p {
-  color: var(--pt-ink, #12314a);
+.section h3 {
+  color: var(--en-ink, #12314a);
+  font-size: 1.05rem;
+  line-height: 1.3;
+  margin: 0 0 0.7rem;
+  max-width: 46ch;
+}
+
+.section p {
+  color: var(--en-ink, #12314a);
   font-size: 0.94rem;
   line-height: 1.75;
-  margin: 0 0 0.95rem;
+  margin: 0 0 0.85rem;
   max-width: 72ch;
 }
 
-.scroll p:last-child { margin-bottom: 0; }
+.section p:last-child { margin-bottom: 0; }
+
+.section ul {
+  color: var(--en-ink, #12314a);
+  font-size: 0.94rem;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 72ch;
+  padding-left: 1.15rem;
+}
+
+.section li + li { margin-top: 0.4rem; }
 
 @media (prefers-reduced-motion: reduce) {
   .chevron,
   .summary { transition: none; }
-}
-
-@media (max-width: 640px) {
-  .scroll { max-height: none; padding-right: 0; }
 }

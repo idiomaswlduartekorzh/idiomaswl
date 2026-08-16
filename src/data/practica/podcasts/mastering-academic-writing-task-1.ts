@@ -1,45 +1,131 @@
+import type { EpisodeSection } from '@/components/practica/EpisodeNotes';
+
 /**
- * Transcript of "Mastering IELTS Academic Writing Task 1" (/practica/ielts/academic/writing/task1).
+ * Written companion to "Mastering IELTS Academic Writing Task 1".
  *
- * Produced from the published mp3 with whisper.cpp small.en, transcribed in
- * silence-aligned chunks so no line is lost at a window boundary, then reflowed
- * into paragraphs. Exam terminology and the WeLearn name were corrected by hand;
- * nothing else was reworded. See docs/podcast-transcripciones.md.
- *
- * 31 paragraphs · 3532 words.
+ * Same ground as the audio, same order. Every structural suggestion is labelled
+ * as a WeLearn default rather than an IELTS rule, matching the clarification
+ * printed above the player.
  */
-const paragraphs: string[] = [
-  "Picture this, uh, high-stakes scenario. You are sitting in a heavily monitored room, right? You turn over a piece of paper, and you are immediately confronted with this completely chaotic tangled line graph. Or, I don't know, maybe it's a dense table of numbers that looks like a spreadsheet just exploded. Oh, the absolute worst feeling. Right. And the clock starts. You have exactly 20 minutes to decipher what on earth this visual puzzle means, and you have to write a minimum of 150 words explaining it. It sounds incredibly stressful, but it really doesn't have to be. No, it doesn't. But, you know, it only feels like a nightmare if you go in without a strategy.",
-  "That ticking clock can easily short circuit your analytical brain if you don't know exactly what to look for the second you flip that paper over. Exactly. So welcome to today's deep dive. Our mission today is entirely focused on conquering IELTS Academic Writing task one. We've gathered a stack of crucial sources for this, like official IELTS examiner notes, grading rubrics, and a massive pile of both high-scoring and low-scoring sample responses. There is a lot of great data in those sources. Yeah, there really is. And we are going to extract the exact framework you need to turn a confusing jumble of data into a clear, high-scoring report.",
-  "OK, let's unpack this. The secret decoding ring you need for literally any visual they throw at you comes down to a central framework. Four steps-- read, select, group, and report. That is the core of it. Yeah. You read the visual. You select the main features. You group related information and you report it with accurate evidence. That framework is your anchor. Yeah. But before we explore how to actually execute those four steps, we have to clear away a massive misconception that trips up thousands of test takers right out of the gate. Oh, the essay myth. Yes. Task one is strictly an information transfer task. You are writing a report or a response.",
-  "You are absolutely not writing an essay. So we aren't offering speculative explanations. Like if I see a graph showing that physical book sales dropped over a 10-year period, I'm not writing sales likely dropped because everyone bought e-readers. Zero speculation. None. You are strictly the reporter here. You simply convey the factual data presented to you without injecting any personal bias or outside knowledge or, you know, guesses about why a trend happened. You are just observing the reality of the ink on the page. Okay, so before you can win any game, you have to understand exactly how the referees are keeping score. Let's talk about the official format.",
-  "We mentioned the 20-minute time frame and the 150-word minimum. Why is sticking to that 20-minute limit so strictly non-negotiable? Well, it's because of how the entire writing section is weighted. You have 60 minutes total for the whole test. Task two, which is the argumentative response we aren't covering today, actually carries twice the weight of task one in your final score. Oh, wow. So task two is the heavy hitter. Exactly. So if you spend, say, 35 minutes agonizing over a bar chart in task one, You might write a total masterpiece, but you are actively sabotaging your overall grade by stealing precious time from the much heavier task, too.",
-  "That is a brutal reality check on time management. Okay, so assuming we stick to the 20 minutes, how are those examiners actually grading this 150-word report? The sources outline four specific, equally weighted criteria, and they're each 25% of the score. Right. Let's break down those official evaluation criteria so you know exactly what they want. Let's do it. The first one is Task Achievement. Yeah. So Task Achievement essentially asks, did you do what the prompt demanded? It means you covered all parts of the visual. You made relevant comparisons rather than just like listing data in isolation. And crucially, you included a clear overview of the main trends.",
-  "If you miss that overview, your Task Achievement score just plummets. Good to know. The second criterion is Coherence and Cohesion. My beginner instinct is that this is about flow, right? You can't just use bullet points. It has to be written as full text. Exactly. No bullet points. Coherence is about your underlying logic. Did you organize the information into clear paragraphs that actually make sense to the reader? Like in cohesion? Cohesion is the surface level. Did you use appropriate linking devices and reference pronouns to connect your thoughts so the text glides rather than reading like a series of robotic disconnected sentences? Like building a bridge between islands of data rather than just pointing at the islands one by one.",
-  "Love that. Then we have Lexical Resource, which obviously evaluates vocabulary. I imagine this isn't just about using big fancy words, right? No, not at all. It's entirely about accuracy and flexibility. Are you mechanically repeating the exact phrasing from the prompt? Or can you paraphrase effectively? Like, can you describe an upward trend in three different ways naturally? Right, showing some range. And the final 25% is Grammatical Range and Accuracy. Yeah, this is where the examiner is looking for a mix of simple and complex sentence structures used accurately and with minimal errors. It's not about forcing incredibly convoluted sentences, just showing you have control over different grammatical tools.",
-  "You know, if we connect this to the bigger picture, these four criteria, Task Achievement, coherence, Lexical Resource, and grammatical range, they aren't just arbitrary hoops for an exam. They are the actual foundation of effective academic and professional communication. They really are. Whether you are writing a university research paper or summarizing an earnings report in a boardroom, conveying data logically and accurately is just a massive life skill. That is the perfect way to look at it. It's training for reality. OK, so we know the rules and the scoring. How do we structure the actual report to deliver on those criteria? Let's take that read, select, group, report framework and build a physical structure.",
-  "The source is heavily point toward a four paragraph strategy. You know, introduction, overview, body one and body two. Yes. And I really need to establish a critical factual control right here. This four-paragraph structure is a highly useful default strategy for studying and organizing your thoughts. It is not an official IELTS requirement. Wait, really? It's not mandatory. Not at all. IELTS does not dictate a specific number of paragraphs or word counts per paragraph. There is no official rule saying a five-paragraph response will be penalized, for example. But for the sake of clarity and time management, the four-paragraph model just keeps you incredibly focused. That makes total sense.",
-  "Let's walk through that model. introduction. This is brief, maybe 20 to 30 words. You just paraphrase the prompt. You tell the reader what the visual shows, but you do not report any actual findings or data yet. Correct. You are just setting the stage. Then you move to paragraph two, the overview. I cannot stress this enough. This is the most important paragraph in your entire response. The make or break moment. Exactly. It's usually around 25 to 40 words. And this is where you state the main visual story. What is the major trend, the hierarchy, the overall transformation. And this brings up a massive internet rumor I see everywhere in test prep forums.",
-  "People claim that you will be strictly penalized or that it's an official rule violation to include numbers or percentages in your overview paragraph. Is that true? That is a complete myth. Never let anyone tell you that numbers or percentages are officially prohibited in an overview. You won't be penalized just because a number appears. So where did that come from? Well, strategically speaking, your overview should prioritize the Big Picture Story. Detailed figures are usually far more useful as evidence in your detailed paragraphs. Ah, so the myth exists because weak writers were turning their overviews into chaotic data dumps and missing the big picture entirely. Precisely. If you clutter your overview with hyper-specific numbers, you risk burying the main trend.",
-  "So as a strategy, rely on broad observations in the overview, but don't panic if a broad percentage slips in. It's not illegal. Good to clear that up. Okay, so after the big picture overview, body one and body two. This is where we report the specifics, but let me ask a beginner-minded question here. If I'm a beginner looking at a chart with five different categories, my instinct is to just list everything from left to right. I want to describe bar one, then bar two, all the way to bar five. Why shouldn't I do that? Because mechanically reading a chart from left to right does not demonstrate analysis.",
-  "I mean, any basic software script can read a chart from left to right. Fair point. IELTS is testing your ability to select and group data. If you have five categories and two show massive growth while three decline, you shouldn't list them randomly based on where they physically sit on the page. You should group the two growing categories in body one and the three declining categories in body two. So grouping shows the examiner that you actually understand the underlying relationship between the data points. You see the matrix, you aren't just like reading the code. Exactly. It fulfills that make relevant comparisons requirement we talked about in Task Achievement.",
-  "Awesome. So we have our blueprint. Now we need to apply this to the different types of visuals. Let's look at how data actually moves and relates. Let's start with line graphs. is all the way to 88% and it stays the highest the entire time. Region C starts at 6% and ends at 57%, staying the lowest throughout the entire two decades. So if you're approaching that correctly, your main feature isn't the tiny, like 2% dip region A had in 2005. The main feature is the broader story. All regions experience significant growth, but region A maintained dominance while region C remained the lowest. Basically, you're not reporting on the day-to-day weather, you're reporting on the climate shift.",
-  "That's a perfect analogy. Now contrast that movement with bar charts. Bar charts are generally static comparisons of different categories. You want to find the leaders, the laggards, and the significant gaps between groups. Here's where it gets really interesting, because how you group the data completely changes the quality of your report. The sources give a fascinating example of a bar chart comparing the percentage of campus-based students versus online students across five different subjects. If you analyze the data, business was chosen by 74% of campus students, but only 52% of online students. students. Engineering shows a very similar pattern, 68% campus, 41% online. Right. So rather than just going left to right, you found a pattern.",
-  "You group business and engineering into Body One because they share that distinct characteristic. They are highly preferred on campus, less so online. Then you look for the contrast for Body Two. Yeah. So languages had 31% on campus, but a massive 70% online. Design was similar. So Body Two becomes the contrasting group where online learning heavily dominated. And you've just taken five disconnected bars. and woven them into a cohesive, analytical narrative that is exactly how you score highly in Task Achievement and coherence. Okay, so bar charts visualize the data. But what about tables? They are essentially the raw, unvisualized version of that data. They can look incredibly intimidating, honestly, just walls of rows and columns.",
-  "Oh, they definitely can. The cardinal rule for tables is do not attempt to copy the table cell by cell into your sentences. It will ruin your score. You have to mentally visualize the data data, scan those dense rows, and turn them into two logical groups. Look for the extremes, the absolute highest and lowest numbers across a column, and look for clear exceptions to a general pattern. Group the rows by similarity, just like you did with the bar chart. Got it. It's all about finding the narrative hidden in the spreadsheet. Next up, we have pie charts. Now, we all know pie charts represent parts of a whole, but the sources point out a massive trap here regarding time.",
-  "Yes, the trap with pie charts isn't the slices, it's the timeline. If you're given a static pie chart, meaning it just shows a single moment in time, like the city's budget for the year 2024, you strictly need to use proportional language. You use phrases like \"accounted for,\" \"made up,\" or \"represented the smallest share.\" But if they give you two pie charts, say, one from 2010 and one from 2020, you can't just use static proportional language anymore, right? Exactly. Because the charts represent different years, you are now looking at change over time. You have to use the language of change to describe how a slice grew, shrank, or remains stable over that decade.",
-  "Okay, and sometimes the prompt throws a mixed visual at you, like a line graph and a pie chart sitting right next to each other. That always feels like a trick. It does, and the biggest mistake here is treating them as two entirely separate tasks. You shouldn't write a disconnected report for the graph, and then a completely separate report for the pie chart. Your goal is to find the shared relationship between them. Can you give an example of that? Sure. Perhaps the line graph shows an overall increase in university funding over a decade, and the pie chart shows exactly which departments received that funding in the final year.",
-  "You have to connect those concepts in your overview to show you understand how the two visuals interact. That makes a lot of sense. Now, let's talk about lexical precision for a second, specifically regarding numbers. Sometimes test takers use approximation, right, the right, just under 50% instead of writing 48.9%. I've actually seen advice claiming that doing this improves your cohesion score because it makes the text flow better. we need to correct that immediately. Do not claim that approximation improves your cohesion score. It fundamentally doesn't. It doesn't. No. Cohesion is about your linking words, reference pronouns, and logical flow between ideas. However, appropriate approximation like using just under 50% is still highly valuable.",
-  "Why is that? Because it supports accurate reporting and lexical precision. It demonstrates that you have a flexible vocabulary and can describe raw data naturally. It is a vocabulary skill, not a cohesion tool. Okay, that distinction is crucial. So we've mapped out the ecosystem of numbers, but not all visuals involve numbers. Sometimes you turn over the paper and there is a map of the town center, or a diagram showing the stages of how plastic bottles are recycled. These feel like entirely different animals. They do require a shift in perspective, but the framework is exactly the same. Let's take maps and plans. With maps, you are almost always looking for spatial changes over a period of time, like a town of 1990 versus today.",
-  "for expansions, reductions, or replacements. So the vocabulary shifts. Right. Your vocabulary has to shift away from increasing and decreasing to location language. Phrases like adjacent to or to the north of and change language like was demolished, was converted into, or was replaced by. And what about process diagrams, like our plastic bottle recycling example? For processes, your focus shifts to production stages or natural cycles. The first thing you do is physically count the total number of stages. Then, note if the process is linear with a clear start and end, or cyclical, meaning it repeats in a continuous loop. Your vocabulary here relies heavily on sequencing language.",
-  "First, following this, subsequently, finally. This brings us to a huge point of debate. Whenever process diagrams or maps come up, people immediately talk about the passive voice, like the bottles are collected, they are washed. There is a widespread assumption that you absolutely must write in the passive voice to pass this specific section. I am so glad you brought that up because the misinformation around this is staggering. I want to be perfectly clear. The passive voice is never mandatory. It is not an official rule and it is not directly rewarded on its own just because you managed to shoehorn it into a sentence. So why do teachers hammer it into students' heads for process diagrams?",
-  "Well, this raises an important question about how grammar actually functions in Academic Writing. Remember those four criteria. IELTS rewards grammatical range, accuracy, and appropriacy. Passive voice is often the most appropriate choice for processes like our bottle recycling and for maps because the object being acted upon or the change itself is vastly more important than the agent. Right okay so if the map shows a town's renovation saying the old cinema was demolished keeps the focus on the town's geography that is vastly more appropriate Academic Writing than saying a crew of construction workers demolished the old cinema we don't care about the workers we care about the cinema.",
-  "Exactly you care that the bottle was crushed You don't care that Bob from the recycling plant crushed the bottle. You use the passive voice not to check some imaginary mandatory box, but because it is the most precise, appropriate tool in your grammatical toolbox to describe that specific visual. So what does this all mean? We've covered the strict constraints, the structural strategy, how to group data for various charts, and the grammatical nuances of maps and processes. Success here really isn't about memorizing fancy words, is it? It is fundamentally about clear, logical observations. It is about looking at chaos and confidently finding the order. But, you know, knowing the theory isn't enough, you have to build the muscle memory.",
-  "Right. If you are listening to this right now and feeling a bit overwhelmed by all these different visual types and criteria, how do you actually practice this without burning out, especially as a beginner? The sources outline a complete 10-step practice pathway, but how do we approach it practically? The secret here is micro-drilling. A great tip for beginner students is you do not want to just sit down and write full 20-minute reports over and over again from day one. You will exhaust yourself. It's all brain fried. Exactly. You need to build the skills incrementally. Step one is to analyze visuals without writing a single word. Just look at a dozen graphs and practice mentally finding the main trends and logical groups.",
-  "Train the eye before you train the hand. What's step two? Then you isolate the paragraphs. Step two, practice writing just your introductions, focusing solely on paraphrasing the prompt. Step three, practice writing just overviews. [BLANK_AUDIO] Challenge yourself to distill an entire complex visual into one or two sentences of big picture story. Step four, practice feature selection and grouping. Map out what goes into body one and body two without actually writing the full paragraphs. So you are breaking the four paragraph structure into isolated drills. That makes it so much less daunting. Exactly. Then you isolate the vocabulary. Step five is practicing the specific language of trends and comparisons for your graphs and charts.",
-  "Step six is practicing the spatial and sequencing language for Okay, so steps one through seven are all micro drills. You haven't written a full report yet. Right. But once those micro skills are sharp, you move to step eight, which is complete a full timed response. Give yourself exactly 20 minutes, no exceptions. Step nine, review your completed response strictly against those four official criteria we discussed. Be your own harsh examiner. And finally, step four, Step 10, return to your weakest micro-skill. If your logic fell apart, go back to practicing grouping. If your senses were repetitive, go back to vocabulary drills. Analyze. Break it into pieces. Micro-drill the pieces.",
-  "Put it all together under the clock. Evaluate and refine. It's incredibly systematic. If you follow that pathway, that 20-minute ticking clock we talked about at the beginning won't feel like a nightmare anymore. It really won't. It'll just feel like a routine execution of a well-practiced plan. You're no longer intimidated by the data. You are in total control of it which leaves me with a final thought for you to mull over today if you can truly master this specific framework the ability to look at a chaotic complex set of data instantly find the underlying story and Communicate it clearly without injecting your own bias. How much more effective will you be in the real world?",
-  "Think about your future university seminars or standing up to give a presentation to your team at work because at the end of the day whether it's an IELTS exam or a global business meeting, data is just noise until you give it a voice.",
+const sections: EpisodeSection[] = [
+  {
+    heading: 'Twenty minutes, 150 words, one visual',
+    body: [
+      'You turn the paper over and meet a tangled line graph, or a table that looks like a spreadsheet exploded. The clock starts. You have about 20 minutes to work out what the visual says and at least 150 words to say it in.',
+      'The panic is real and it is also avoidable. What makes the clock dangerous is not the data, it is going in without a procedure — deciding what matters while the seconds run. With a procedure, the twenty minutes stop being a countdown and become a routine.',
+    ],
+  },
+  {
+    heading: 'Task 1 is a report, not an essay',
+    body: [
+      'This is the misconception that costs marks before a single sentence is written. Task 1 is an information-transfer task. You describe what the visual shows; you do not explain why.',
+      'If a graph shows physical book sales falling across a decade, you report the fall. You do not write that sales likely dropped because readers moved to e-readers. That is speculation, it draws on outside knowledge, and it is not what the task asks for. You are the reporter, not the analyst.',
+    ],
+  },
+  {
+    heading: 'Why the twenty minutes are not negotiable',
+    body: [
+      'You get 60 minutes for the whole Writing test, and Task 2 carries twice the weight of Task 1 in your Writing band.',
+      'So spending 35 minutes perfecting a bar chart description is not diligence, it is self-sabotage: you produce a strong answer to the lighter question and then run out of time on the heavier one. Twenty minutes is a budget, not a target to beat.',
+    ],
+  },
+  {
+    heading: 'The four assessment criteria',
+    body: [
+      'Writing is assessed on four criteria, each carrying equal weight — a quarter of the mark apiece. Knowing what each one actually looks at tells you what to fix when a score stalls.',
+    ],
+    bullets: [
+      'Task Achievement — did you do what the prompt asked? That means covering all parts of the visual, making relevant comparisons rather than listing figures in isolation, and including a clear overview of the main trends. A missing overview hits this criterion hard.',
+      'Coherence and Cohesion — coherence is the underlying logic and paragraphing; cohesion is the surface joinery of linking words and reference pronouns. It must be continuous prose: no bullet points.',
+      'Lexical Resource — accuracy and flexibility, not rarity. Can you describe an upward trend three different ways, or do you recycle the prompt’s exact phrasing?',
+      'Grammatical Range and Accuracy — a mix of simple and complex structures used accurately. The point is control, not convolution.',
+    ],
+  },
+  {
+    heading: 'Read, select, group, report',
+    body: [
+      'One framework handles every visual they can hand you. Read the visual. Select the main features. Group related information. Report it with accurate evidence.',
+      'The two steps people skip are the middle ones, and they are the two the examiner is actually looking for. Selecting means deciding what matters. Grouping means deciding what belongs together.',
+    ],
+  },
+  {
+    heading: 'A four-paragraph default — and it is a default',
+    body: [
+      'A reliable working structure is introduction, overview, body one, body two. State this plainly: that is a WeLearn study default, not an IELTS requirement. IELTS does not prescribe a paragraph count or where the overview must sit.',
+      'The introduction is short, roughly 20 to 30 words, and does one job: paraphrase the prompt so the reader knows what the visual shows. No findings yet.',
+      'The overview is the paragraph that matters most, usually 25 to 40 words. It states the main story — the dominant trend, the hierarchy, the overall transformation. It is the difference between a report and a list.',
+    ],
+  },
+  {
+    heading: 'The myth about numbers in the overview',
+    body: [
+      'You will read in forums that including figures or percentages in the overview is penalised, or breaks an official rule. It does not. No rule prohibits numbers there, and no mark is deducted just because one appears.',
+      'The advice exists for a strategic reason that got flattened into a prohibition. An overview crowded with specific figures buries the big picture, and detailed numbers do more work as evidence down in the body paragraphs. So lead with broad observations — but if a rounded percentage helps the sentence, it is not a violation.',
+    ],
+  },
+  {
+    heading: 'Why left-to-right reporting caps your score',
+    body: [
+      'Faced with five categories, the instinct is to describe bar one, then bar two, and so on. The problem is that reading a chart in physical order demonstrates no analysis — a script could do it.',
+      'Take a chart comparing campus-based and online students across five subjects. Business runs 74% on campus against 52% online; engineering, 68% against 41%. Languages inverts it: 31% on campus against 70% online, and design behaves similarly.',
+      'Grouped by behaviour rather than position, body one becomes the subjects that skew to campus and body two the subjects that skew online. Same five bars, but now they form an argument — which is exactly the "relevant comparisons" that Task Achievement asks for.',
+    ],
+  },
+  {
+    heading: 'What to look for in each kind of visual',
+    body: [
+      'The framework does not change. What changes is which features are worth selecting, and which vocabulary reports them.',
+    ],
+    bullets: [
+      'Line graphs show movement over time. Look for the dominant trend, the peaks and troughs, and where lines cross. Ignore the small zigzags — you are reporting the climate, not the daily weather.',
+      'Bar charts are static comparisons. Look for the leaders, the laggards, and the significant gaps between groups.',
+      'Tables are the same data without the picture. Scan each column for its highest and lowest values and for clear exceptions to the pattern, then group rows by similarity.',
+      'Pie charts show parts of a whole. One chart calls for proportional language — accounted for, made up, represented the smallest share. Two charts from different years are a change-over-time task, so the language has to describe growth, decline and stability instead.',
+      'Mixed visuals should not become two disconnected reports. Find the relationship: if a line graph shows funding rising across a decade and a pie chart shows which departments received it in the final year, the overview is where you connect them.',
+      'Maps and plans are spatial change over time — expansions, reductions, replacements. Vocabulary shifts to location (adjacent to, to the north of) and to change (was demolished, was converted into, was replaced by).',
+      'Process diagrams are stages or cycles. Count the stages first, note whether the process is linear or repeats in a loop, and report it with sequencing language: first, following this, subsequently, finally.',
+    ],
+  },
+  {
+    heading: 'Approximation is vocabulary, not cohesion',
+    body: [
+      'Writing "just under 50%" instead of "48.9%" is often good practice. It is not, however, a cohesion device, and any advice claiming it improves your Coherence and Cohesion score has the criterion wrong.',
+      'Cohesion is about linking words, reference pronouns and logical flow between ideas. Sensible approximation supports accurate reporting and shows flexible vocabulary — it belongs to Lexical Resource. Knowing which criterion a technique serves is how you fix the right thing when a score stalls.',
+    ],
+  },
+  {
+    heading: 'The passive voice is a tool, never a requirement',
+    body: [
+      'The belief that process diagrams and maps must be written in the passive is widespread and wrong. The passive is not mandatory, and no mark is awarded for inserting one.',
+      'It is, however, often the most appropriate choice — and appropriacy is what the grammar criterion rewards. In a process, what happens to the bottle matters and who crushed it does not. In a map, "the old cinema was demolished" keeps the focus on the town; "a construction crew demolished the old cinema" drags in an agent nobody asked about.',
+      'Use it because it is the precise tool for that visual, not to tick a box you imagined.',
+    ],
+  },
+  {
+    heading: 'A ten-step way to practise without burning out',
+    body: [
+      'The first seven steps are micro-drills. You do not write a full report until step eight, and that is the point: isolated skills are far easier to fix than a whole essay.',
+    ],
+    bullets: [
+      'Analyse visuals without writing anything — find the main trends and the logical groups in a dozen graphs. Train the eye before the hand.',
+      'Practise introductions alone, focusing only on paraphrasing the prompt.',
+      'Practise overviews alone: distil an entire complex visual into one or two sentences of big-picture story.',
+      'Practise selection and grouping: map what would go in body one and body two without writing the paragraphs.',
+      'Drill the language of trends and comparisons for graphs and charts.',
+      'Drill spatial and sequencing language for maps and processes.',
+      'Practise embedding that vocabulary in accurate sentences, watching the grammar.',
+      'Write one full response in exactly 20 minutes, no exceptions.',
+      'Review it against the four official criteria, one pass each. Be a harsh examiner.',
+      'Return to your weakest micro-skill and drill that. If the logic collapsed, go back to grouping; if the sentences repeated, go back to vocabulary.',
+    ],
+  },
+  {
+    heading: 'The takeaway',
+    body: [
+      'Success here is not fancy vocabulary. It is clear, logical observation: looking at chaos and finding the order in it, then reporting that order without adding your own guesses.',
+      'It is also a skill that outlives the exam. Whether it is a university seminar or a meeting at work, data stays noise until somebody gives it a voice.',
+    ],
+  },
 ];
 
-export default paragraphs;
+export default sections;

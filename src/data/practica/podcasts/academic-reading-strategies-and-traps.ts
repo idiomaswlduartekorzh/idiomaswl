@@ -1,42 +1,155 @@
+import type { EpisodeSection } from '@/components/practica/EpisodeNotes';
+
 /**
- * Transcript of "IELTS Academic Reading: Strategies and Traps" (/practica/ielts/reading).
+ * Written companion to "IELTS Academic Reading: Strategies and Traps".
  *
- * Produced from the published mp3 with whisper.cpp small.en, transcribed in
- * silence-aligned chunks so no line is lost at a window boundary, then reflowed
- * into paragraphs. Exam terminology and the WeLearn name were corrected by hand;
- * nothing else was reworded. See docs/podcast-transcripciones.md.
- *
- * 28 paragraphs · 3131 words.
+ * Covers the same ground as the audio, in the same order. Where the episode is
+ * imprecise — the clarifications listed above the player — this text states the
+ * official position instead of repeating the slip.
  */
-const paragraphs: string[] = [
-  "You know that instinct you get when you first sit down to take a reading test? Oh, yeah. The panic. Right. The voice in your head is just screaming at you to read every single word on the page as fast as humanly possible. Like your eyes are literally on fire. Yes. Ignore it. Seriously. It's a complete trap. Today, we are entirely dismantling the IELTS Academic Reading test in this deep dive. Absolutely. Because especially if you are sitting somewhere in that B1 to B2 beginner range and you're feeling totally overwhelmed by the sheer wall of text you're expected to conquer, you are in the exact right place.",
-  "Yeah, that instinct to speed read is incredibly common. And honestly, it is exactly what the test designers are counting on. Really? They want you to do that. Oh, for sure. If you try to frantically read and memorize a, you know, a 900 word passage, you're going to exhaust your working memory by minute 20. Ouch. Yeah, that makes sense. You just end up playing the wrong game entirely. Success in IELTS reading is, well, it's absolutely not bad. about speed reading or having some sort of photographic memory. But I mean it's a reading test, right? Right. So if I don't read the whole thing, how on earth do I answer the question?",
-  "Are you saying I should just guess? No, no, not at all. It is a highly strategic procedural process. Okay. Think of Academic Reading, not as this chore where you must absorb every single fact, but as a specialized detective mission. A detective mission. I like that. Yeah. Imagine you are an investigator walking into a massive corporate building and you have a very specific warrant. Okay. A warrant. Right. You do not care about the architecture of the whole building. You don't care what's like in the lobby or the cafeteria. Right. I'm on a mission. Exactly. You just need to navigate to the correct room, find the specific safe, extract the right file, verify the signature and get out.",
-  "Oh, I love that. I have a warrant. I get the file and I leave. Yeah. Okay. So if that's the mindset, we really need to understand the boundaries of this building we're walking into, you know? Absolutely. game board. Yeah. So what is the strict reality of the official format? Like what am I actually facing? Well, the reality is a 60 minute gauntlet. A gauntlet. And I mean one continuous 60 minute section. A lot of test takers assume there is a reading task one and then maybe a short breather and then task two and so on. Right. Like it's structured break. But there is no break.",
-  "None. You face three long texts and those total anywhere from two thousand one hundred and fifty to two thousand seven hundred fifty words. exactly 40 questions. - Wait, 60 minutes for the reading and the questions. But what about the answer sheet? - What do you mean? - Like if my 60 minutes is up, do they give me a few extra minutes to cleanly copy my answers over to the official sheet? - Zero. - Wait, really, zero? - There is absolutely no extra transfer time given at the end, none at all. That 60 minutes includes the time it takes to physically transfer your answers to the official sheet.",
-  "- Wow, let me make sure I'm hearing the reality of this. Let's say I panic. - Okay. - It's minute 59. I know the correct answer in my head, I actually found the evidence, but I'm rushing the transfer. Right. My handwriting is sloppy or I misspell a basic word in the rush. Do I get partial credit if the examiner knows what I meant? No, you do not. Not even a little. Not at all. This is a brutal truth of the test. The reading section has no writing style rubric. Your answers are strictly correct or incorrect. Wow. Wow. Spelling matters immensely. Grammar matters when you are completing a sentence.",
-  "And the instructions, specifically the word limits, are absolute Laws. Like laws you cannot break. Exactly. If the instruction says no more than two words and you rate three, even if the core information is completely scientifically accurate, the answer is marked incorrect. That is incredibly unforgiving. It is. So if they are that strict, what exactly are we reading? I know there's an academic version and a general training version, right? Yes. Why does that distinction matter? It matters mainly because of the source material and the complexity. Academic texts are drawn from published sources like books, journals, magazines, and newspapers. - Okay, so heavy stuff. - Right. They are written for a non-specialist audience, but they feature varied styles and crucially logical structured arguments.",
-  "- And general training. - General training texts focus much more on everyday social and workplace survival skills. - Got it. And are they graded the same way? - The foundation is exactly the same. Both tests are graded on a one to nine band scale, where one mark equals exactly one correct answer. - Okay, simple enough. However, the exact boundaries for those bands do vary slightly between the test versions. Usually, general training requires a higher number of correct answers to achieve the same band score. Why is that? Because the academic texts feature significantly more complex vocabulary and a much denser structural style. It's just a harder read.",
-  "Okay, so if it's not just testing my ability to read fast and it's full of this complex vocabulary, what is the Academic Reading test actually measuring? It is testing a whole spectrum of abilities. Like what? Well, the test makers want to see if you can find the general sense of a text. Okay, that sounds like a lot. Paraphrase recognition. words express the exact same idea. Right. Okay, so if paraphrase recognition is the engine, we really need to know what the chassis of the car looks like, you know. Good analogy. Let's map out the exact question formats. Because looking at a practice test for the first time can feel like walking into a maze of endless question types.",
-  "It certainly can. It's overwhelming. Officially, IELTS presents 11 numbered question types. 11. 11. But rather than just throwing a dizzying list at you, let's group them by what your brain is actually being asked to do. Okay, that sounds better. Just to be super clear for you listening, these families aren't official IELTS categories, right? Correct. They are purely flexible study strategies. Just a way to organize your practice. Perfect. So what's the first family? The first family is evidence and viewpoints. Okay, I have to stop you there because false versus Not Given is my absolute nightmare. It's a common nightmare. If the text doesn't explicitly confirm the statement, it's false, right?",
-  "See, that is a massive trap and a primary reason people lose marks. Here is the strict rule. Okay, lay it on me. False or no requires an explicit contradiction. the passage must actively state the opposite of the claim or provide information that makes the claim logically impossible. Oh, wow. OK. Not Given simply means the text doesn't resolve the claim. It doesn't say yes and it doesn't say no. So if the question asks, did the scientist wear a blue hat and the text just says the scientist wore a hat, that's Not Given. Exactly. Because it doesn't contradict the blue hat. It just doesn't specify the color.",
-  "Spot on. The text is just shrugging at shoulders. You cannot confirm it and you cannot deny it. Man, that makes so much more sense. - More sense. - Good. What's the second WeLearn family? The second family is matching and organization. This includes the official types of Matching Information, Matching Headings, Matching Features, and Matching Sentence Endings. You know, Matching Headings and Matching Information sound identical to me. You're just connecting a prompt to a paragraph, aren't you? They sound similar, but they require completely different physical actions with your eyes. Really? How so? Think of Matching Headings as zooming out to look at the whole forest. You have to find the overarching main idea that encapsulates the entire paragraph.",
-  "- Okay, the big picture. - Right. Matching Information is zooming in with a magnifying glass. You are hunting for a specific detail, a reason, an example, an outcome that is buried somewhere inside the paragraph. - Zooming in versus zooming out, I really like that. And the final family. - Completion from the passage. This groups together Sentence Completion, summary, note table, or flow chart completion, diagram label completion, and short answer questions. - I should note here, sometimes those completion formats actually supply you with a list of words to choose from, right? Rather than making you draw the exact words directly from the passage. - Yes, that's a very important distinction.",
-  "Now, the WeLearn system actually breaks their practice down into 14 focused routes. - Wait, 14? I thought you said there were 11 official types. - Yes. The 14 routes are simply because that big official type nine, the summary, note, table, and flowchart completion, represents four very different visual layouts that require different reading approaches. But never call these 14 routes official types. The official test always has 11. Got it. Okay, so if we know the families and we know we're zooming in and out like detectives, we need a standard operating procedure, a repeatable system to solve these. Exactly. Without a system, you are just reading and hoping.",
-  "And we don't want to just hope. No, we use a precise four-step reading loop. Okay, step one. Wait, skim? I thought you said we shouldn't read the whole thing. Oh, back to the detective analogy. I get it. scan the text to find them. - And then? - Once found, you carefully read that specific evidence window. - Okay, step three is where I've seen some intense jargon in test prep guides. - Oh boy. - It's compare the meaning. People talk about checking the scope and the polarity of a sentence. As a learner, if someone tells me to check the polarity, I'm thinking about like car batteries, not reading tests.",
-  "- Huh, let's translate that jargon then. Testing the polarity just means asking. - Yeah. - Is the sentence smiling or frowning? Morning. Is it framed positively or negatively? Smiling or frowning? That's easier. Does it say the new policy helped? Or does it say it caused problems? That's polarity. And what about scope? Scope is about absolute words. Does the text say all oak trees or just some oak trees? You also test for paraphrase, contrast, and reference. Okay. And finally, step four, control the answer. Check the instruction. Does it fit the answer form? Is the spelling perfect? Is the grammar correct? for a Sentence Completion, and does it obey the exact word limit?",
-  "Exactly. Let's test this loop with a short, original micro-example. Imagine you have a passage, and one sentence says, \"Urban planters discovered that planting oak trees significantly lowered summer street temperatures.\" Okay, holding that in my head. Your question is a one-word completion task. Oak trees reduced summer blank. Walk me through your loop. Okay, step one, map. I've already mapped the tag, so I know paragraph three talks about urban planting in trees. Good. I scan paragraph three for my anchors, which are oak trees and summer. I find them. Step three, compare meaning. The text says lowered, but the question says reduced. That's a paraphrase, so meaning matches perfectly.",
-  "- Exactly right. - Step four, control the answer. The instruction is exactly one word. If I write street temperatures, that's two words and I fail. So I write exactly one word, temperatures. - Flawless execution. - Ooh. And this is a massive butt. That four-step loop only works if you don't fall into the psychological traps the test sets for you. - Oh, right, the traps. - Executing the loop requires six transferable sub-skills. These are raw abilities, not official question types. - What are the six sub-skills? - First, skimming, which builds your passage maps. Second, scanning, which locates your anchors. - Got it. - Third, paraphrase recognition, which allows you to compare meaning.",
-  "Fourth, inference, which is your ability to reject conclusions that aren't actually supported by the text. - Okay, that's four. Fifth, word limit control, producing the smallest grammatical answer permitted. And sixth, time management, controlling when you solve, skip and return. Time management is huge, but I want to talk about the traps because I have personally fallen for them. Which one? There is a specific trap that I think is driven by pure biology. The dopamine hit. Ah, you mean lexical echoes. Yes, lexical echoes. I call it the mirage in the desert. That's a great way to put it. You know, you are panicking. The clock is ticking.",
-  "You read a question that features a massive complicated word like photosynthesis. Right. You scan the text and boom. There's the word photosynthesis. Your brain releases dopamine. You feel like a genius. Yeah. You circle the answer next to it and move on and you are completely spectacularly wrong. It is a brilliant psychological trap. Lexical echoes prey on your desire for a quick match. It's so mean. The test designers will put the exact juicy keyword from the question right into the text, but they will will completely change the meaning of the surrounding sentence. Remember the golden rule. Repeated words are never proof of a correct answer. Paraphrase meaning is proof.",
-  "Write that down. Repeated words are not proof. Another trap I've fallen into is using outside knowledge. Oh, yeah. I once read a practice text about a historical event I was sort of obsessed with. I didn't even read the paragraph. I just answered the question based on a documentary I saw three years ago. And you likely got it wrong. Oh, I totally got it wrong. Because the text is your only universe. If the specific fact isn't printed on that page, it does not exist for the purpose of the test. Makes sense. Another insidious trap is selecting a detail that is entirely true according to the text, but completely irrelevant to the specific question asked.",
-  "Oh, yes, that's true, but nobody asked you, Trap. Precisely. We also see test takers choosing a matching heading based on one striking, memorable detail, rather than the overarching main idea. Right, zooming in when they should zoom out. Exactly. reuse instructions like when a prompt explicitly says you may use any letter more than once. Oh, I hate that one. And structurally, a huge trap is assuming every single question format follows the chronological order of the text. Wait, they don't. Most do. But tasks like Matching Information or Matching Headings absolutely do not. Which leads right to the pacing trap, you know, getting stuck. Yes. If I spend seven minutes staring at a Matching Information question, my score is effectively dead.",
-  "Right. [BLANK_AUDIO] How do we actually manage time? You must remember that the only fixed total is the 60 minutes. Right. Any pacing split you hear about, like budgeting exactly 20 minutes per passage, is purely a flexible study strategy. It is not a rule. Because some are harder than others. Exactly. Some passages are harder, some are easier. The golden rule for pacing is this. You should only add timing constraints after your accuracy has stabilized. Okay, so don't rush. Do not rush to beat the clock if your four-step loop is still broken. So if you're listening, I want to sit down at your desk tomorrow and fix your loop.",
-  "How do you practice this? We need a master study plan. You mentioned the WeLearn philosophy earlier. How does that apply to daily study? The WeLearn philosophy is based on isolation before integration. Isolation before integration. What does that mean? Question type practice isolates the specific decisions and unique traps of a format. Reading skill practice isolates your raw abilities like scanning. Okay. And mixed practice trains your brain to switch between these methods. on the fly demanding exact evidence. - So it's a phased roadmap, let's break it down. Phase one, foundation. - In foundation, you practice skimming, scanning, and paraphrase recognition completely untimed. You are simply training your eyes to navigate the architecture of academic text.",
-  "- Untimed, I like that. Phase two, accuracy. - Here, you choose your weakest question family. You log the exact evidence you found in the text, you log the paraphrase used, And crucially, if you get it wrong, you log the exact trap you fell for. - I have to push back on this. Log every single mistake? - Yes. - Like in a spreadsheet. That sounds incredibly tedious for a B1 beginner. Why can't I just look at the answer key, say, \"Oh, right, it was false,\" and move on to the next test? - Because saying, \"Oh, right,\" does not rewire your brain. - Okay. - If you don't psychoanalyze your mistake, you will fall for the exact same dopamine hit of a lexical echo tomorrow.",
-  "You must become a ruthless auditor of your own errors. Oof. It hurts because it's true. Yeah. Okay. Phase three, control. Okay. with a specific sentence or clause from the passage. - Physical justification, I love it. And only then do we hit phase five, timing. - Exactly. Only when the first four phases are rock solid do you introduce the 60 minute test conditions. - Makes total sense. - And when you review your time test, classify your errors objectively. Was it a mapping error? Location, meaning inference, instruction, or was it purely a pacing error where you ran out of time? - That is the biggest takeaway for me.",
-  "Do not just take random full tests over and over over. blindly hoping your score will magically increase. It won't. You have to find the weakest link in your chain and repeatedly train that specific skill. It is the only way to improve. As you begin your preparation, hold on to that mindset. You are not a student trying to memorize a textbook. Right. You are an investigator. You have a warrant. Navigate the building, locate the safe, extract the file, verify the evidence and get out. I have my warrant and I know exactly what I'm looking for. Thank you for joining us on this deep dive into IELTS Academic Reading.",
-  "Remember, your success comes down to your system. Map the passage. Locate the evidence. Compare the meaning. Control the answer.",
+const sections: EpisodeSection[] = [
+  {
+    heading: 'The instinct to read everything is the trap',
+    body: [
+      'The first thing most candidates feel when the passage appears is the urge to read every word as fast as possible. That urge is exactly what the format punishes. Frantically reading and memorising a long passage exhausts your working memory well before the hour is up, and it answers no questions.',
+      'Academic Reading does not reward speed reading or a photographic memory. It rewards a procedure. The useful mental model is an investigator with a warrant: you are not there to admire the building, you are there to reach one room, open one safe, take one file, check it is the right one, and leave.',
+    ],
+  },
+  {
+    heading: 'The format you are actually facing',
+    body: [
+      'One continuous 60-minute section. There is no break between passages and no separate reading time. You face three long texts totalling roughly 2,150 to 2,750 words, and exactly 40 questions.',
+      'On the paper test, the 60 minutes includes copying your answers onto the answer sheet — no extra transfer time is given at the end. On the computer-delivered test you type your answers on screen, so nothing has to be copied across, but the hour is the same and there is no extra time either way.',
+    ],
+  },
+  {
+    heading: 'How it is marked, and why that is unforgiving',
+    body: [
+      'One mark per question, 40 marks in total, converted to a band score. There is no writing-style rubric in Reading: an answer is correct or it is not, and there is no partial credit for an examiner who can tell what you meant.',
+      'That has three consequences worth internalising before you practise anything else.',
+    ],
+    bullets: [
+      'Spelling counts. A misspelt word taken from the passage is wrong, however rushed you were.',
+      'Grammar counts wherever you complete a sentence: the answer has to fit the sentence it lands in.',
+      'Word limits are absolute. If the instruction says no more than two words and you write three, the answer is marked wrong even when the information is perfectly accurate.',
+    ],
+  },
+  {
+    heading: 'Academic and General Training are not the same read',
+    body: [
+      'Both versions have 40 questions and 60 minutes, and both are marked out of 40. The difference is the source material: Academic passages are drawn from denser, more specialised writing, with heavier vocabulary and more complex structure.',
+      'Because of that, the raw score needed for a given band is not identical across versions — General Training typically requires more correct answers to reach the same band, precisely because its texts are an easier read.',
+    ],
+  },
+  {
+    heading: 'What the test is really measuring',
+    body: [
+      'The stated abilities are broad: getting the general sense of a text, identifying main ideas, locating detail, drawing logical inferences, recognising a writer’s viewpoint or purpose, and following how an argument develops.',
+      'Underneath almost all of it sits one engine — recognising meaning through paraphrase. You are rarely matching identical words between question and passage. You are deciding whether two different sets of words carry the same idea. Every technique below exists to serve that one judgement.',
+    ],
+  },
+  {
+    heading: 'The question formats, grouped by what your brain has to do',
+    body: [
+      'IELTS defines 11 numbered Academic Reading question-type categories. An individual test paper uses a selection of them, not all eleven, and the selection varies.',
+      'Eleven labels is a lot to hold in your head, so WeLearn groups them into three teaching families. These families are a study aid, not official IELTS categories — useful for organising practice, never something to quote as test terminology.',
+    ],
+    bullets: [
+      'Evidence and viewpoints: Multiple Choice, identifying information (True / False / Not Given), and identifying a writer’s views or claims (Yes / No / Not Given).',
+      'Matching and organisation: Matching Information, Matching Headings, Matching Features, and Matching Sentence Endings.',
+      'Completion from the passage: sentence, summary, note, table and flow-chart completion, diagram label completion, and short-answer questions. Some completion tasks give you a list of words to choose from rather than making you take words from the text — read the instruction before you start.',
+    ],
+  },
+  {
+    heading: 'False versus Not Given, the distinction that costs most marks',
+    body: [
+      'The common and expensive assumption is that a claim the text does not confirm must be False. It must not.',
+      'False — or No, in the writer-view format — requires an explicit contradiction. The passage has to state the opposite of the claim, or say something that makes the claim logically impossible. Not Given means the passage simply does not resolve it: it neither confirms nor denies.',
+      'If the question asks whether the scientist wore a blue hat and the passage says only that the scientist wore a hat, the answer is Not Given. Nothing contradicts the blue hat; the colour is never specified. The text is shrugging, and a shrug is not a denial.',
+    ],
+  },
+  {
+    heading: 'Zooming out versus zooming in',
+    body: [
+      'Matching Headings and Matching Information look like the same task — connect a prompt to a paragraph — but they demand opposite eye movements.',
+      'Matching Headings is zooming out: you need the overarching idea that covers the whole paragraph. Matching Information is zooming in with a magnifying glass: you are hunting one specific detail, reason, example or outcome buried somewhere inside it. Treating either like the other is a reliable way to lose marks.',
+    ],
+  },
+  {
+    heading: 'The four-step loop',
+    body: [
+      'Without a repeatable procedure you are reading and hoping. The loop has four steps and never changes.',
+    ],
+    bullets: [
+      'Map. Skim for structure, not content — what each paragraph is broadly for. This is the opposite of reading everything: it is building the floor plan before you enter a room.',
+      'Locate. Pull the distinctive anchors out of the question — names, numbers, dates, technical terms — and scan for them. Once found, read that evidence window properly.',
+      'Compare meaning. Check the paraphrase, and check two things people get wrong: polarity (is the sentence positive or negative — did the policy help, or cause problems?) and scope (does the text say all oak trees, or some oak trees?).',
+      'Control the answer. Is the spelling right? Does it fit the grammar of the sentence? Does it obey the exact word limit?',
+    ],
+  },
+  {
+    heading: 'The loop on one sentence',
+    body: [
+      'Say the passage contains: "Urban planners discovered that planting oak trees significantly lowered summer street temperatures." The question is a one-word completion: "Oak trees reduced summer ______."',
+      'Map tells you which paragraph deals with planting and trees. Locate finds the anchors — oak trees, summer. Compare meaning confirms that the passage’s "lowered" and the question’s "reduced" are the same idea. Control decides the answer: the instruction says exactly one word, so "street temperatures" fails and "temperatures" is correct.',
+    ],
+  },
+  {
+    heading: 'The six sub-skills the loop runs on',
+    body: [
+      'These are transferable abilities, not question types. When your score stalls, the cause is almost always one of these six rather than a whole format you cannot do.',
+    ],
+    bullets: [
+      'Skimming, which builds the passage map.',
+      'Scanning, which locates the anchors.',
+      'Paraphrase recognition, which drives the meaning comparison.',
+      'Inference, which is mostly the discipline to reject conclusions the text does not support.',
+      'Word-limit control, producing the shortest grammatical answer the instruction allows.',
+      'Time management, deciding when to solve, when to skip, and when to come back.',
+    ],
+  },
+  {
+    heading: 'The traps',
+    body: [
+      'Most lost marks are not vocabulary problems. They are one of these.',
+    ],
+    bullets: [
+      'Lexical echoes. You spot the exact keyword from the question sitting in the passage and feel a rush of certainty. Test writers plant that word and change the meaning of the sentence around it. Repeated words are never proof; matching meaning is proof.',
+      'Outside knowledge. If the fact is not printed on the page, it does not exist for this test — however well you know the subject.',
+      'True but irrelevant. The option is accurate according to the passage and answers a question nobody asked.',
+      'A striking detail chosen as a heading. Memorable is not the same as main idea.',
+      'Ignoring reuse instructions, such as a prompt that says an option may be used more than once.',
+      'Assuming every task follows the order of the text. Most do; Matching Information and Matching Headings do not.',
+      'Getting stuck. Seven minutes on one matching question does more damage than the question was ever worth.',
+    ],
+  },
+  {
+    heading: 'Pacing is a strategy, not a rule',
+    body: [
+      'The only fixed number is 60 minutes for the whole section. Splits you hear quoted — twenty minutes per passage, say — are study conventions, not requirements, and passages genuinely differ in difficulty.',
+      'The rule that matters: add timing pressure only after your accuracy has stabilised. Rushing a loop that is still broken makes you faster at being wrong.',
+    ],
+  },
+  {
+    heading: 'How to practise: isolation before integration',
+    body: [
+      'Taking full timed tests over and over, hoping the score climbs, is the least efficient thing you can do. Find the weakest link and train that. The phases run in order.',
+    ],
+    bullets: [
+      'Foundation. Untimed. Learn what each format is actually asking.',
+      'Accuracy. Log every question: the evidence you found, the paraphrase that carried it, and — when you get it wrong — the specific trap you fell for. "Oh right, it was False" changes nothing; naming the failure does.',
+      'Control. Train inference and word-limit control deliberately. This phase is about precision.',
+      'Transfer. Mixed practice — several question types on one passage — and justify every answer out loud with the exact sentence that proves it.',
+      'Timing. Only once the first four are solid do you add the 60-minute conditions.',
+    ],
+  },
+  {
+    heading: 'The takeaway',
+    body: [
+      'When you review a timed test, classify each error honestly: was it mapping, locating, meaning, inference, an instruction you broke, or simply running out of time? Those five need five different remedies.',
+      'You are not memorising a textbook. You have a warrant. Map the passage, locate the evidence, compare the meaning, control the answer, and get out.',
+    ],
+  },
 ];
 
-export default paragraphs;
+export default sections;

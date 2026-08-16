@@ -2,8 +2,8 @@
 
 import Link from 'next/link';
 import { ArrowRight, Clock3, Headphones, ShieldCheck } from 'lucide-react';
-import task1Transcript from '@/data/practica/podcasts/mastering-academic-writing-task-1';
-import PodcastTranscript from '@/components/practica/PodcastTranscript';
+import task1Notes from '@/data/practica/podcasts/mastering-academic-writing-task-1';
+import EpisodeNotes from '@/components/practica/EpisodeNotes';
 import Task1ChartTypeGuide from './Task1ChartTypeGuide';
 import styles from './Task1Hub.module.css';
 
@@ -241,8 +241,8 @@ export default function Task1HubPage() {
               </aside>
             </div>
 
-            <PodcastTranscript
-              paragraphs={task1Transcript}
+            <EpisodeNotes
+              sections={task1Notes}
               tone={{
                 accent: 'var(--task-red)',
                 ink: 'var(--task-ink)',

@@ -2,8 +2,8 @@
 
 import Link from 'next/link';
 import { ArrowRight, BookOpen, Braces, CheckCircle2, Clock3, FilePenLine, Headphones, Layers3, Route, Search, ShieldCheck, Wrench } from 'lucide-react';
-import task2Transcript from '@/data/practica/podcasts/picking-the-task-2-lock';
-import PodcastTranscript from '@/components/practica/PodcastTranscript';
+import task2Notes from '@/data/practica/podcasts/picking-the-task-2-lock';
+import EpisodeNotes from '@/components/practica/EpisodeNotes';
 import styles from './introduccion/page.module.css';
 
 const BUILD_PATH = [
@@ -108,8 +108,8 @@ export default function Task2HubPage() {
               </aside>
             </div>
 
-            <PodcastTranscript
-              paragraphs={task2Transcript}
+            <EpisodeNotes
+              sections={task2Notes}
               tone={{
                 accent: 'var(--intro-red)',
                 ink: 'var(--intro-ink)',

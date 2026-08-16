@@ -22,8 +22,8 @@ import {
   IELTS_READING_SKILLS,
   IELTS_READING_TYPES,
 } from '@/data/practica-exams/seo-catalog';
-import readingTranscript from '@/data/practica/podcasts/academic-reading-strategies-and-traps';
-import PodcastTranscript from '@/components/practica/PodcastTranscript';
+import readingNotes from '@/data/practica/podcasts/academic-reading-strategies-and-traps';
+import EpisodeNotes from '@/components/practica/EpisodeNotes';
 import styles from './page.module.css';
 
 const QUESTION_TYPE_FAMILIES = [
@@ -283,8 +283,8 @@ export default function IELTSReadingHub() {
               </aside>
             </div>
 
-            <PodcastTranscript
-              paragraphs={readingTranscript}
+            <EpisodeNotes
+              sections={readingNotes}
               tone={{
                 accent: 'var(--reading-red)',
                 ink: 'var(--reading-ink)',
