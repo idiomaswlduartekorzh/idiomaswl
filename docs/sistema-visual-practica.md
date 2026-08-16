@@ -288,9 +288,40 @@ para nada.
 Verificado: `tsc`, `check:practica-catalog` (465 temas) y `build` en verde, más el
 verificador de datos sobre los 24 archivos.
 
-### Fase 2 — Los 28 hubs de nivel
-Aquí se aplica la sección 5 (fuera emoji, fuera degradados, esquinas a 6 px) y se conecta el
-contrato de acento. Es la fase que hace visible el cambio de tono.
+### Fase 2 — Los hubs de nivel `[HECHA — 16 ago 2026]`
+
+Son **26**, no 28: el recuento anterior colaba un `.bak` suelto y el laboratorio de Task 2.
+Uno nuevo —`src/components/practica/SkillHub.tsx`— y los 26 hubs reescritos para llamarlo.
+`HABILIDADES` y `metadata` intactos byte a byte, verificado archivo por archivo.
+
+`ingles/a1` es el único distinto: lleva racha, barra de nivel e insignias de habilidad
+terminada. `SkillHub` los admite como huecos opcionales (`headerAside`, `beforeGrid`,
+`cardBadge`), así que no se quedó fuera.
+
+Se aplicó la sección 5 entera: fuera emoji (los sustituye el nombre de la destreza en el
+idioma meta, que además enseña algo), fuera degradados, esquinas 18 px → 6 px, y la chapa
+del nivel pasa de cuadrado relleno a chapa con filete.
+
+**El contrato de color se cerró también por el otro lado**, aunque el plan lo dejaba para la
+fase 5. Las 24 páginas de aterrizaje de gramática leen ya `SKILL_ACCENT.gramatica`. Sin eso
+esta fase prometía algo que no cumplía: la tarjeta habría dejado de mentir y la página de
+destino habría seguido mintiendo.
+
+Queda fuera y sigue sin cerrar:
+
+- **Escucha.** Su acento (`--listen-accent`) vive en `globals.css`, que otra sesión estaba
+  editando en ese momento. Un contrato a medias es mejor que un conflicto en el archivo más
+  grande del proyecto.
+- **Las páginas de tema de gramática** (`gramatica/[slug]`), que se colorean por tema y no
+  por destreza. Eso es deliberado y quizá deba quedarse.
+- **El campo `emoji`** sigue en los datos de los 26 hubs sin que nadie lo pinte. Retirarlo
+  son 156 ediciones sobre archivos de contenido a cambio de nada; se limpia cuando toque los
+  catálogos.
+- **El color del idioma** (`accent`) se sigue escribiendo a mano en cada hub. Es el último
+  color literal que queda en la sección y el candidato natural a consolidarse después.
+
+Verificado: `tsc`, `check:practica-catalog` (465 temas) y `build` en verde, con las 26 rutas
+de hub, las 24 de gramática y las 24 de habla generadas.
 
 ### Fase 3 — Escritura y escucha
 Baratas: ya usan clases globales con tokens. Sustituir sus primitivas propias por las
