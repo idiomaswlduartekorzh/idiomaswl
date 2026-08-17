@@ -76,6 +76,17 @@ import koKeopiAnMasyeoyo from '@/data/reading/exercises/ko-a1-keopireul-an-masye
 import koJinanJumal from '@/data/reading/exercises/ko-a1-jinan-jumal.json'
 import koJilmuniManheunAi from '@/data/reading/exercises/ko-a1-jilmuni-manheun-ai.json'
 import koHagoSipeunIl from '@/data/reading/exercises/ko-a1-hago-sipeun-il.json'
+// Coreano A2 — generadas desde `src/data/reading/source/ko-a2.mjs`.
+import koA2CheoeumInsa from '@/data/reading/exercises/ko-a2-cheoeum-insa.json'
+import koA2GeseuteuhauseuGyuchik from '@/data/reading/exercises/ko-a2-geseuteuhauseu-gyuchik.json'
+import koA2GireulIreobeorimyeon from '@/data/reading/exercises/ko-a2-gireul-ireobeorimyeon.json'
+import koA2IsaJeonhwaHu from '@/data/reading/exercises/ko-a2-isa-jeonhwa-hu.json'
+import koA2JalAnhaneunKape from '@/data/reading/exercises/ko-a2-jal-anhaneun-kape.json'
+import koA2JegaHanSilsu from '@/data/reading/exercises/ko-a2-jega-han-silsu.json'
+import koA2JongiChaegmanIlgeoyo from '@/data/reading/exercises/ko-a2-jongi-chaegman-ilgeoyo.json'
+import koA2SumureulBaeugoItsseoyo from '@/data/reading/exercises/ko-a2-sumureul-baeugo-itsseoyo.json'
+import koA2UisagaHanMal from '@/data/reading/exercises/ko-a2-uisaga-han-mal.json'
+import koA2YeohaengGyehoek from '@/data/reading/exercises/ko-a2-yeohaeng-gyehoek.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -151,6 +162,16 @@ const RAW_EXERCISES: unknown[] = [
   koJinanJumal,
   koJilmuniManheunAi,
   koHagoSipeunIl,
+  koA2CheoeumInsa,
+  koA2GeseuteuhauseuGyuchik,
+  koA2GireulIreobeorimyeon,
+  koA2IsaJeonhwaHu,
+  koA2JalAnhaneunKape,
+  koA2JegaHanSilsu,
+  koA2JongiChaegmanIlgeoyo,
+  koA2SumureulBaeugoItsseoyo,
+  koA2UisagaHanMal,
+  koA2YeohaengGyehoek,
 ]
 
 export const READING_EXERCISES: ReadingExercise[] = RAW_EXERCISES.map((candidate) => {

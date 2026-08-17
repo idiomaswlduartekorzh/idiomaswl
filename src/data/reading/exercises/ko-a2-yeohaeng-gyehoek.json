@@ -1,0 +1,473 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-a2-yeohaeng-gyehoek",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Coreano A2",
+    "topik": 2,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. A2 se sitúa alrededor del TOPIK I nivel 2, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "yeohaeng-gyehoek",
+  "series": {
+    "id": "coreano-a2-lectura-10",
+    "episode": 2,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-a2-jega-han-silsu",
+    "nextExerciseId": "ko-a2-gireul-ireobeorimyeon"
+  },
+  "classification": {
+    "genre": "mensajes de grupo",
+    "topic": "organizar un viaje entre amigos",
+    "intent": "learning",
+    "tags": [
+      "coreano a2",
+      "lectura",
+      "futuro ㄹ 거예요",
+      "intención 려고 하다"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El plan de viaje"
+    },
+    "intro": {
+      "es": "Cuatro amigos, un fin de semana en Gyeongju y una discusión sobre a qué hora salir. Lectura de coreano A2 con el futuro y la intención."
+    },
+    "mission": {
+      "es": "Averigua qué decide el grupo al final y quién cede."
+    },
+    "targetText": "민수: 다음 주 토요일에 경주에 갈 거예요. 같이 가고 싶은 사람? 지영: 저요! 몇 시에 출발할 거예요? 민수: 아침 여섯 시에 출발하려고 해요. 그러면 열 시쯤 도착할 거예요. 지영: 여섯 시는 너무 일러요. 저는 여덟 시에 만나려고 해요. 태호: 저도 여덟 시가 좋아요. 여섯 시에는 일어날 수 없어요. 민수: 하지만 늦게 가면 불국사에서 사람이 많을 거예요. 사진을 못 찍어요. 지영: 그럼 이렇게 해요. 저는 여섯 시에 갈 거예요. 태호는 여덟 시 기차로 오면 돼요. 태호: 저 혼자요? 지영: 아니요, 유진이도 여덟 시에 올 거예요. 유진: 네, 저는 금요일에 일이 늦게 끝나요. 그래서 아침에 일찍 못 일어나요. 민수: 좋아요. 그럼 우리는 불국사에서 열두 시에 만날 거예요. 태호: 알겠어요. 그런데 민수 씨, 사진은 몇 장 찍으려고 해요? 민수: 삼백 장쯤이요. 태호: 그럼 저는 정말 여덟 시에 갈게요.",
+    "wordCount": 125,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Formar el futuro con ㄹ/을 거예요 para planes y previsiones."
+      },
+      {
+        "es": "Expresar intención con 려고 하다 y distinguirla del futuro simple."
+      },
+      {
+        "es": "Seguir una conversación de cuatro personas y saber qué acuerda cada una."
+      }
+    ],
+    "grammarFocus": [
+      "futuro-rl-geoyeyo-a2",
+      "intencion-ryogo-hada-a2",
+      "haeyo-presente"
+    ],
+    "vocabulary": [
+      {
+        "surface": "출발할",
+        "lemma": "출발하다",
+        "reading": "chulbalhal",
+        "glosses": {
+          "es": "salir, partir"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "일러요",
+        "lemma": "이르다",
+        "reading": "illeoyo",
+        "glosses": {
+          "es": "es temprano"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "기차",
+        "lemma": "기차",
+        "reading": "gicha",
+        "glosses": {
+          "es": "tren"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "혼자",
+        "lemma": "혼자",
+        "reading": "honja",
+        "glosses": {
+          "es": "solo, sin compañía"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "찍으려고",
+        "lemma": "찍다",
+        "reading": "jjigeuryeogo",
+        "glosses": {
+          "es": "hacer (una foto)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "장",
+        "lemma": "장",
+        "reading": "jang",
+        "glosses": {
+          "es": "contador para hojas y fotos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "알겠어요",
+        "lemma": "알다",
+        "reading": "algesseoyo",
+        "glosses": {
+          "es": "entendido, de acuerdo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "쯤",
+        "lemma": "쯤",
+        "reading": "jjeum",
+        "glosses": {
+          "es": "aproximadamente, sobre"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Gyeongju fue capital del reino de Silla y su templo Bulguksa es Patrimonio de la Humanidad. Ir de madrugada para evitar las aglomeraciones es una estrategia real de los aficionados a la fotografía."
+    },
+    "spanishSpeakerNote": {
+      "es": "ㄹ 거예요 anuncia un hecho futuro; 려고 하다 expresa la intención de quien habla, y por eso suena más negociable. En 여섯 시에 출발하려고 해요 se oye «tengo intención de salir a las seis», que es distinto de «saldré a las seis»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en coreano sobre hechos pasados y planes, entender quién dice qué en estilo indirecto, y reconocer a quién se trata con respeto."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas",
+      "antes-despues-a2",
+      "capacidad-rl-su-itda-a2",
+      "clausulas-relativas-a2",
+      "condicional-eumyeon-a2",
+      "conector-aseo-a2",
+      "cuanto-eolmana-a2",
+      "discurso-reportado-a2",
+      "durante-neun-dongane-a2",
+      "futuro-rl-geoyeyo-a2",
+      "honorificos-a2",
+      "intencion-ryogo-hada-a2",
+      "negacion-ji-anta-a2",
+      "obligacion-aya-hada-a2",
+      "parecer-neun-geot-gatda-a2",
+      "particulas-recipiente-a2",
+      "progresivo-go-itda-a2",
+      "razon-gittaemune-a2",
+      "razon-niikka-a2",
+      "solo-tambien-man-do-a2",
+      "verbos-irregulares-pasado-a2"
+    ],
+    "disallowedGrammar": [
+      "voz pasiva avanzada",
+      "nominalización compleja",
+      "estilo literario"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 5,
+      "maxSentenceWords": 8,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativa",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Pasado irregular, cláusulas de relativo y honoríficos permitidos. Sin voz pasiva avanzada ni registro literario. Inferencia ligera."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cómo se resuelve la discusión?",
+      "options": [
+        {
+          "id": "dividen",
+          "text": "Salen en dos grupos a horas distintas y se ven en el templo"
+        },
+        {
+          "id": "seis",
+          "text": "Todos aceptan salir a las seis de la mañana"
+        },
+        {
+          "id": "cancelan",
+          "text": "Deciden aplazar el viaje a otro fin de semana"
+        }
+      ],
+      "answer": "dividen",
+      "evidence": "저는 여섯 시에 갈 거예요. 태호는 여덟 시 기차로 오면 돼요 … 우리는 불국사에서 열두 시에 만날 거예요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La solución la propone Jiyeong: dos horarios y un punto de encuentro a las doce."
+        },
+        "incorrect": {
+          "es": "Nadie cancela y no todos madrugan. Busca la propuesta que empieza con 그럼 이렇게 해요."
+        },
+        "strategy": {
+          "es": "En una negociación por mensajes, busca la frase que empieza con «entonces hagamos así». Ahí está el acuerdo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿A qué hora quedan en el templo de Bulguksa?",
+      "options": [
+        {
+          "id": "doce",
+          "text": "A las doce"
+        },
+        {
+          "id": "diez",
+          "text": "A las diez"
+        },
+        {
+          "id": "ocho",
+          "text": "A las ocho"
+        }
+      ],
+      "answer": "doce",
+      "evidence": "우리는 불국사에서 열두 시에 만날 거예요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: 열두 시, las doce. Las diez es cuando llegaría Minsu, y las ocho, la salida del segundo grupo."
+        },
+        "incorrect": {
+          "es": "En la conversación aparecen varias horas y cada una es de una cosa. Busca la que va con 만날 거예요."
+        },
+        "strategy": {
+          "es": "Con muchas horas en juego, empareja cada una con su verbo: salir, llegar, quedar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Taeho pregunta 사진은 몇 장 찍으려고 해요? ¿Qué es 장 aquí?",
+      "options": [
+        {
+          "id": "contador",
+          "text": "El contador que se usa para fotos y hojas"
+        },
+        {
+          "id": "lugar",
+          "text": "Un lugar donde se hacen fotos"
+        },
+        {
+          "id": "tiempo",
+          "text": "Una medida de tiempo"
+        }
+      ],
+      "answer": "contador",
+      "evidence": "사진은 몇 장 찍으려고 해요? 삼백 장쯤이요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Va detrás de 몇 (cuántos) y luego de 삼백 (trescientos): es un contador."
+        },
+        "incorrect": {
+          "es": "Fíjate en su posición: detrás de un número. Y en la respuesta: 삼백 장, trescientas."
+        },
+        "strategy": {
+          "es": "Si una sílaba aparece siempre detrás de un número, es un contador. Aquí se repite dos veces seguidas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué Taeho confirma al final que irá a las ocho?",
+      "options": [
+        {
+          "id": "fotos",
+          "text": "Porque trescientas fotos le parecen demasiadas para acompañarlo"
+        },
+        {
+          "id": "trabajo",
+          "text": "Porque tiene que trabajar el sábado por la mañana"
+        },
+        {
+          "id": "tren",
+          "text": "Porque no hay tren más temprano"
+        }
+      ],
+      "answer": "fotos",
+      "evidence": "삼백 장쯤이요. 태호: 그럼 저는 정말 여덟 시에 갈게요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y ahí está la broma: el 정말 («de verdad») aparece justo después de oír el número."
+        },
+        "incorrect": {
+          "es": "Quien trabaja hasta tarde es Yujin, no Taeho. Y sí hay tren a las seis. Fíjate en lo que acaba de oír."
+        },
+        "strategy": {
+          "es": "En una conversación, una decisión que llega justo después de un dato está causada por ese dato."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: Yujin no puede madrugar porque el viernes acaba de trabajar tarde.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "저는 금요일에 일이 늦게 끝나요. 그래서 아침에 일찍 못 일어나요.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y lo explica ella misma con 그래서: el viernes acaba tarde, así que no puede madrugar."
+        },
+        "incorrect": {
+          "es": "Busca el turno de Yujin. Da su razón en dos frases unidas por 그래서."
+        },
+        "strategy": {
+          "es": "Cuando alguien justifica su horario, la razón va unida con 그래서 o 니까. Localiza el conector."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "reference",
+      "skill": "reference",
+      "prompt": "Cuando Jiyeong dice 저 혼자요? no es ella quien lo dice. ¿Quién pregunta eso?",
+      "options": [
+        {
+          "id": "taeho",
+          "text": "Taeho"
+        },
+        {
+          "id": "minsu",
+          "text": "Minsu"
+        },
+        {
+          "id": "yujin",
+          "text": "Yujin"
+        }
+      ],
+      "answer": "taeho",
+      "evidence": "태호는 여덟 시 기차로 오면 돼요. 태호: 저 혼자요?",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El nombre va delante de cada turno, y ese lo firma Taeho, justo después de que lo asignen al tren de las ocho."
+        },
+        "incorrect": {
+          "es": "Fíjate en el nombre que precede a esa frase. En una conversación escrita, cada turno lleva su autor delante."
+        },
+        "strategy": {
+          "es": "En un diálogo con nombres, comprueba siempre el nombre inmediatamente anterior a la frase."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en coreano organizando un viaje o una salida con amigos. Usa ㄹ 거예요 tres veces y 려고 하다 dos veces."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "다음 주에 …에 갈 거예요.",
+      "몇 시에 출발할 거예요?",
+      "저는 … 만나려고 해요.",
+      "그럼 우리는 …에서 만날 거예요."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente — Zhanna Korzh",
+    "pedagogyReviewer": "Pendiente — Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. El coreano NO ha sido revisado por hablante nativa. Bloqueante para publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano A2: El plan de viaje | WeLearn"
+    },
+    "description": {
+      "es": "Lee una conversación de grupo en coreano A2 y practica el futuro ㄹ 거예요 y la intención con 려고 하다. Con seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/coreano/a2/lectura/yeohaeng-gyehoek",
+    "indexable": false,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-a2-jega-han-silsu",
+      "ko-a2-gireul-ireobeorimyeon"
+    ]
+  }
+}

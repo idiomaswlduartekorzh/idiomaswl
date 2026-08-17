@@ -1,0 +1,472 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-a2-jongi-chaegman-ilgeoyo",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Coreano A2",
+    "topik": 2,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. A2 se sitúa alrededor del TOPIK I nivel 2, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "jongi-chaegman-ilgeoyo",
+  "series": {
+    "id": "coreano-a2-lectura-10",
+    "episode": 10,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-a2-isa-jeonhwa-hu",
+    "nextExerciseId": null
+  },
+  "classification": {
+    "genre": "columna corta",
+    "topic": "leer en papel o en pantalla",
+    "intent": "learning",
+    "tags": [
+      "coreano a2",
+      "lectura",
+      "razón 기 때문에",
+      "solo y también 만/도"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Solo leo en papel"
+    },
+    "intro": {
+      "es": "Alguien que compró un lector electrónico, lo usó dos meses y volvió al papel por una razón que no esperaba. Lectura de coreano A2."
+    },
+    "mission": {
+      "es": "Averigua la razón real, que no es la que la gente supone."
+    },
+    "targetText": "저는 종이 책만 읽어요. 이년 전에 전자책 리더를 하나 샀어요. 두 달 동안 썼어요. 그다음에 서랍에 넣었어요. 지금도 그 서랍에 그대로 있어요. 배터리는 아마 없을 거예요. 사람들은 제가 오래된 사람이기 때문에 그렇다고 생각해요. 아니에요. 저도 휴대폰으로 뉴스를 읽어요. 문제는 다른 것이었어요. 전자책에서는 제가 어디에 있는지 몰랐어요. 화면에 삼십사 퍼센트라고 나와요. 하지만 그 숫자는 아무 느낌이 없어요. 종이 책은 손이 알아요. 오른쪽이 얇아지기 때문에 끝이 가까워지는 것을 느껴요. 저에게 그게 중요해요. 그리고 하나 더 있어요. 저는 책에 줄을 많이 그어요. 전자책에서도 줄을 그을 수 있어요. 하지만 육 개월 후에 저는 그 줄을 한 번도 안 봤어요. 종이 책에서는 옛날 줄을 자주 다시 봐요. 왜냐하면 책을 열면 바로 보이기 때문이에요. 지금 제 책장에는 책이 이백 권쯤 있어요. 전자책 리더에는 사백 권이 있어요. 저는 이백 권만 읽었어요.",
+    "wordCount": 124,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Dar razones con 기 때문에 y con 왜냐하면 … 때문이다."
+      },
+      {
+        "es": "Usar 만 (solo) y 도 (también) y notar cómo cambian el sentido de la frase."
+      },
+      {
+        "es": "Contar libros con su contador propio, 권."
+      }
+    ],
+    "grammarFocus": [
+      "razon-gittaemune-a2",
+      "solo-tambien-man-do-a2",
+      "numeros-nativos-contadores"
+    ],
+    "vocabulary": [
+      {
+        "surface": "전자책",
+        "lemma": "전자책",
+        "reading": "jeonjachaek",
+        "glosses": {
+          "es": "libro electrónico"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "서랍",
+        "lemma": "서랍",
+        "reading": "seorap",
+        "glosses": {
+          "es": "cajón"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "화면",
+        "lemma": "화면",
+        "reading": "hwamyeon",
+        "glosses": {
+          "es": "pantalla"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "느낌",
+        "lemma": "느낌",
+        "reading": "neukkim",
+        "glosses": {
+          "es": "sensación"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "얇아지기",
+        "lemma": "얇아지다",
+        "reading": "yalbajigi",
+        "glosses": {
+          "es": "irse volviendo fino"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "줄",
+        "lemma": "줄",
+        "reading": "jul",
+        "glosses": {
+          "es": "línea, raya (aquí, subrayado)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "책장",
+        "lemma": "책장",
+        "reading": "chaekjang",
+        "glosses": {
+          "es": "estantería de libros"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "권",
+        "lemma": "권",
+        "reading": "gwon",
+        "glosses": {
+          "es": "contador para libros"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Corea tiene una de las tasas de lectura digital más altas de Asia y a la vez una cultura de librería física muy viva, con locales enormes en el centro de Seúl."
+    },
+    "spanishSpeakerNote": {
+      "es": "Dos partículas que cambian todo: 만 significa «solo» y 도 significa «también». Compara 저는 종이 책만 읽어요 («solo leo en papel») con 저도 휴대폰으로 뉴스를 읽어요 («yo también leo noticias en el móvil»). Y ojo con 권: los libros no se cuentan con 개."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en coreano sobre hechos pasados y planes, entender quién dice qué en estilo indirecto, y reconocer a quién se trata con respeto."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas",
+      "antes-despues-a2",
+      "capacidad-rl-su-itda-a2",
+      "clausulas-relativas-a2",
+      "condicional-eumyeon-a2",
+      "conector-aseo-a2",
+      "cuanto-eolmana-a2",
+      "discurso-reportado-a2",
+      "durante-neun-dongane-a2",
+      "futuro-rl-geoyeyo-a2",
+      "honorificos-a2",
+      "intencion-ryogo-hada-a2",
+      "negacion-ji-anta-a2",
+      "obligacion-aya-hada-a2",
+      "parecer-neun-geot-gatda-a2",
+      "particulas-recipiente-a2",
+      "progresivo-go-itda-a2",
+      "razon-gittaemune-a2",
+      "razon-niikka-a2",
+      "solo-tambien-man-do-a2",
+      "verbos-irregulares-pasado-a2"
+    ],
+    "disallowedGrammar": [
+      "voz pasiva avanzada",
+      "nominalización compleja",
+      "estilo literario"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 5,
+      "maxSentenceWords": 11,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativa",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Pasado irregular, cláusulas de relativo y honoríficos permitidos. Sin voz pasiva avanzada ni registro literario. Inferencia ligera."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es la razón principal que da el autor?",
+      "options": [
+        {
+          "id": "tacto",
+          "text": "Que en papel la mano le dice cuánto le queda, y en pantalla no"
+        },
+        {
+          "id": "vista",
+          "text": "Que la pantalla le cansa la vista"
+        },
+        {
+          "id": "precio",
+          "text": "Que los libros electrónicos son más caros"
+        }
+      ],
+      "answer": "tacto",
+      "evidence": "종이 책은 손이 알아요. 오른쪽이 얇아지기 때문에 끝이 가까워지는 것을 느껴요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. 손이 알아요, «la mano lo sabe»: es una razón física, no de gusto ni de precio."
+        },
+        "incorrect": {
+          "es": "No menciona la vista ni el precio. Busca la frase 종이 책은 손이 알아요."
+        },
+        "strategy": {
+          "es": "Si un texto rechaza las explicaciones habituales, su razón verdadera viene después. Busca 문제는 다른 것이었어요."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántos libros tiene en su estantería física?",
+      "options": [
+        {
+          "id": "200",
+          "text": "Unos doscientos"
+        },
+        {
+          "id": "400",
+          "text": "Unos cuatrocientos"
+        },
+        {
+          "id": "34",
+          "text": "Treinta y cuatro"
+        }
+      ],
+      "answer": "200",
+      "evidence": "지금 제 책장에는 책이 이백 권쯤 있어요. 전자책 리더에는 사백 권이 있어요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: 이백 권, doscientos. Los cuatrocientos están en el lector, y el treinta y cuatro era un porcentaje."
+        },
+        "incorrect": {
+          "es": "El texto da dos cantidades de libros y un porcentaje. Busca la que va con 책장, estantería."
+        },
+        "strategy": {
+          "es": "Empareja cada cifra con su sitio: estantería, lector, pantalla. Solo una responde."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice 저는 책에 줄을 많이 그어요. ¿Qué hace con los libros?",
+      "options": [
+        {
+          "id": "subrayar",
+          "text": "Los subraya"
+        },
+        {
+          "id": "ordenar",
+          "text": "Los ordena por temas"
+        },
+        {
+          "id": "regalar",
+          "text": "Los regala"
+        }
+      ],
+      "answer": "subrayar",
+      "evidence": "저는 책에 줄을 많이 그어요. 전자책에서도 줄을 그을 수 있어요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Y lo confirma la frase siguiente: en el libro electrónico también se pueden hacer esas líneas."
+        },
+        "incorrect": {
+          "es": "La frase siguiente dice que en el libro electrónico también se puede hacer. Eso descarta ordenar y regalar."
+        },
+        "strategy": {
+          "es": "Si una acción se puede hacer en papel y en pantalla, piensa qué acciones comparten los dos formatos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué vuelve a ver los subrayados antiguos solo en papel?",
+      "options": [
+        {
+          "id": "visible",
+          "text": "Porque al abrir el libro aparecen solos, sin buscarlos"
+        },
+        {
+          "id": "bonitos",
+          "text": "Porque en papel quedan más bonitos"
+        },
+        {
+          "id": "perdidos",
+          "text": "Porque el lector electrónico los borró"
+        }
+      ],
+      "answer": "visible",
+      "evidence": "왜냐하면 책을 열면 바로 보이기 때문이에요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo explica con la fórmula completa: 왜냐하면 … 때문이에요."
+        },
+        "incorrect": {
+          "es": "No dice que se borraran ni habla de estética. Busca la frase que empieza con 왜냐하면."
+        },
+        "strategy": {
+          "es": "La fórmula 왜냐하면 … 때문이에요 anuncia una razón explícita. Si la ves, ahí está la respuesta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el autor no usa ninguna pantalla para leer.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "저도 휴대폰으로 뉴스를 읽어요.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: lee noticias en el móvil. La partícula 도 lo marca, y sirve para desmontar el prejuicio."
+        },
+        "incorrect": {
+          "es": "Busca la frase con 휴대폰, móvil. La partícula 도 es la clave."
+        },
+        "strategy": {
+          "es": "La partícula 도 («también») suele introducir una excepción a lo que se acaba de afirmar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué termina diciendo 저는 이백 권만 읽었어요?",
+      "options": [
+        {
+          "id": "comparar",
+          "text": "Para señalar que tener libros y leerlos no es lo mismo"
+        },
+        {
+          "id": "presumir",
+          "text": "Para presumir de cuántos libros posee"
+        },
+        {
+          "id": "comprar",
+          "text": "Para animar a comprar más libros en papel"
+        }
+      ],
+      "answer": "comparar",
+      "evidence": "전자책 리더에는 사백 권이 있어요. 저는 이백 권만 읽었어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Tiene cuatrocientos en el lector y doscientos en papel, y la partícula 만 dice cuáles leyó."
+        },
+        "incorrect": {
+          "es": "Difícilmente presume si admite haber leído la mitad de lo que tiene. Fíjate en la partícula 만."
+        },
+        "strategy": {
+          "es": "La partícula 만 acota. Cuando cierra un texto después de dos cifras, está haciendo una resta implícita."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en coreano defendiendo una costumbre tuya que la gente encuentra rara. Usa 기 때문에 dos veces y las partículas 만 y 도."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "저는 …만 …요.",
+      "사람들은 … 생각해요. 아니에요.",
+      "… 때문에 …",
+      "왜냐하면 … 때문이에요."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente — Zhanna Korzh",
+    "pedagogyReviewer": "Pendiente — Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. El coreano NO ha sido revisado por hablante nativa. Bloqueante para publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano A2: Solo leo en papel | WeLearn"
+    },
+    "description": {
+      "es": "Lee una columna corta en coreano A2 y practica 기 때문에 (razón) y las partículas 만 y 도. Con vocabulario romanizado y seis preguntas."
+    },
+    "canonicalPath": "/practica/coreano/a2/lectura/jongi-chaegman-ilgeoyo",
+    "indexable": false,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-a2-isa-jeonhwa-hu"
+    ]
+  }
+}
