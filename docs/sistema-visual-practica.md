@@ -323,10 +323,37 @@ Queda fuera y sigue sin cerrar:
 Verificado: `tsc`, `check:practica-catalog` (465 temas) y `build` en verde, con las 26 rutas
 de hub, las 24 de gramática y las 24 de habla generadas.
 
-### Fase 3 — Escritura y escucha
-Baratas: ya usan clases globales con tokens. Sustituir sus primitivas propias por las
-compartidas, conservando su comportamiento. **Escucha ya tiene modo oscuro resuelto — no
-regresarlo.**
+### Fase 3 — Escucha y lectura: contrato cerrado `[PARCIAL — 16 ago 2026]`
+
+Hecho el acento de **escucha** y **lectura**, que eran las dos que seguían contradiciendo a
+su tarjeta. Las dos leen ya `skill-accents.ts`. Con eso el contrato queda cerrado en **cinco
+de las seis** destrezas.
+
+Dos cosas que salieron al tirar del hilo:
+
+- Lectura leía su azul de `--wl-on-panel-link`, el puente heredado. Ya no; sus usos del
+  puente bajan de 20 a 15.
+- El bloque `.listen-shell` respondía a `prefers-color-scheme` mientras el resto de la
+  sección solo responde a `[data-theme="dark"]`. Un usuario con el SO en oscuro y el
+  interruptor sin tocar veía la página blanca con las píldoras en paleta de noche. Ahora
+  comparten ámbito. Contraste de la tinta sobre el acento: 5,57:1 → **6,02:1** en claro,
+  **10,78:1** en oscuro.
+
+Fuera también el código muerto que estaba señalado: `ReadingLocaleShell` (cabecera de sitio
+propia, marca «W», pie) y `LocaleSwitchLink`, más 18 líneas de CSS. Cero usos vivos,
+verificado clase por clase.
+
+**Lo que NO se hizo de esta fase:** sustituir las primitivas propias de escritura y escucha
+por las compartidas. Sigue pendiente, y con ello el grueso de `writing-integrated__*` y
+`listen-*` en `globals.css`.
+
+Dos apuntes sobre el contrato, para quien lo termine:
+
+- **Vocabulario** promete `#b42332` y usa `#e11d48`. Es territorio de otra sesión
+  (ver la nota de `feedback-nunca-git-add-todo`); coordinar antes de tocarlo.
+- **Escritura no tiene acento que corregir.** Su tarjeta promete verde, pero esa pantalla se
+  pinta entera con los neutros del sitio: nunca usó ese verde. Dárselo es diseño nuevo, no
+  una corrección, y es decisión de David.
 
 ### Fase 4 — Vocabulario e historias
 96 y 132 estilos en línea a clases. Ojo: `StoryEngine.tsx` tiene hex crudos
