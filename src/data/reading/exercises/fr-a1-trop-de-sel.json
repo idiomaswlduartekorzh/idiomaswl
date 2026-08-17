@@ -1,0 +1,441 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-a1-trop-de-sel",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Francés A1"
+  },
+  "slug": "trop-de-sel",
+  "series": {
+    "id": "frances-a1-lectura-10",
+    "episode": 9,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-a1-une-lettre-de-dakar",
+    "nextExerciseId": "fr-a1-le-premier-jour"
+  },
+  "classification": {
+    "genre": "reseña",
+    "topic": "restaurante de barrio",
+    "intent": "learning",
+    "tags": [
+      "frances a1",
+      "lectura",
+      "adjetivos",
+      "verbo avoir"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Demasiada sal"
+    },
+    "intro": {
+      "es": "Tres estrellas, no dos. Una reseña de restaurante donde todo está bien menos una cosa. Lectura de francés A1 con adjetivos y el verbo avoir."
+    },
+    "mission": {
+      "es": "Averigua qué falla exactamente y por qué el cliente no lo dice en el restaurante."
+    },
+    "targetText": "★★★☆☆ — Le Petit Comptoir, rue Gambetta. Le service est rapide et le serveur est vraiment gentil. La salle est jolie: des murs bleus, des tables en bois, une lumière chaude. Ce n’est pas un endroit prétentieux. Les prix sont corrects: un plat coûte quatorze euros. Le problème, c’est le sel. Je commande le poulet. Le poulet a une belle couleur, une peau croustillante, une odeur excellente. Mais il a trop de sel. Beaucoup trop. Ma sœur prend le poisson. Même problème. Nous ne finissons pas nos assiettes. Nous n’avons pas envie de mentir au serveur, alors nous ne disons rien. Trois étoiles, pas deux. Parce que tout le reste est bon, et parce que le sel, ça se corrige. Je reviens dans six mois.",
+    "wordCount": 123,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Usar adjetivos para valorar: rapide, gentil, jolie, croustillante, prétentieux."
+      },
+      {
+        "es": "Manejar avoir para describir cualidades y cantidades: il a une belle couleur, il a trop de sel."
+      },
+      {
+        "es": "Distinguir la crítica del rechazo: negar algo sin descalificar el conjunto."
+      }
+    ],
+    "grammarFocus": [
+      "adjectifs-qualificatifs",
+      "verbe-avoir",
+      "negation-ne-pas"
+    ],
+    "vocabulary": [
+      {
+        "surface": "serveur",
+        "lemma": "serveur",
+        "glosses": {
+          "es": "camarero"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "salle",
+        "lemma": "salle",
+        "glosses": {
+          "es": "sala, comedor del restaurante"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "croustillante",
+        "lemma": "croustillant",
+        "glosses": {
+          "es": "crujiente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "prétentieux",
+        "lemma": "prétentieux",
+        "glosses": {
+          "es": "pretencioso, con ínfulas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "assiettes",
+        "lemma": "assiette",
+        "glosses": {
+          "es": "platos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "mentir",
+        "lemma": "mentir",
+        "glosses": {
+          "es": "decir algo que no es verdad"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "étoiles",
+        "lemma": "étoile",
+        "glosses": {
+          "es": "estrellas (de una valoración)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "odeur",
+        "lemma": "odeur",
+        "glosses": {
+          "es": "olor"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En Francia decir que un sitio «n’est pas prétentieux» es un elogio claro: significa que la comida se toma en serio a sí misma sin que el local se dé importancia."
+    },
+    "spanishSpeakerNote": {
+      "es": "El adjetivo francés suele ir detrás del nombre («une peau croustillante»), pero unos pocos van delante y son muy frecuentes: beau, bon, grand, petit, joli. Por eso se dice «une belle couleur» y no «une couleur belle»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto corto en presente sobre la vida cotidiana, localizar quién hace cada cosa y justificar tu respuesta con una frase del texto."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers"
+    ],
+    "disallowedGrammar": [
+      "passé composé",
+      "imparfait",
+      "subjonctif",
+      "conditionnel",
+      "voix passive"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 7.2,
+      "maxSentenceWords": 15,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Texto original en presente. Sin tiempos compuestos. Inferencia limitada a unir dos datos explícitos."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es el juicio global de esta reseña?",
+      "options": [
+        {
+          "id": "reparable",
+          "text": "Un buen restaurante con un defecto concreto que tiene arreglo"
+        },
+        {
+          "id": "malo",
+          "text": "Un mal restaurante que no merece la pena visitar"
+        },
+        {
+          "id": "caro",
+          "text": "Un restaurante correcto pero demasiado caro para lo que ofrece"
+        }
+      ],
+      "answer": "reparable",
+      "evidence": "Parce que tout le reste est bon, et parce que le sel, ça se corrige.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La última parte lo explica: la nota no es un castigo, es una apuesta a que lo arreglen."
+        },
+        "incorrect": {
+          "es": "Los precios le parecen correctos y todo lo demás le gusta. Lee la frase que justifica las tres estrellas."
+        },
+        "strategy": {
+          "es": "En una reseña, la justificación de la nota suele ir al final. Es ahí donde el autor dice lo que piensa de verdad."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué pide la hermana del narrador?",
+      "options": [
+        {
+          "id": "poisson",
+          "text": "El pescado"
+        },
+        {
+          "id": "poulet",
+          "text": "El pollo"
+        },
+        {
+          "id": "salade",
+          "text": "Una ensalada"
+        }
+      ],
+      "answer": "poisson",
+      "evidence": "Ma sœur prend le poisson. Même problème.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El pollo lo pide el narrador. Y a los dos platos les pasa lo mismo, que es lo que confirma el problema."
+        },
+        "incorrect": {
+          "es": "En el texto hay dos platos y dos personas. «Je commande le poulet» es uno; busca el otro."
+        },
+        "strategy": {
+          "es": "Cuando hay dos comensales, apunta quién pide qué. El texto lo usa para demostrar que no fue mala suerte."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El pollo tiene «une peau croustillante». ¿Qué quiere decir «croustillante»?",
+      "options": [
+        {
+          "id": "crujiente",
+          "text": "Crujiente"
+        },
+        {
+          "id": "blanda",
+          "text": "Blanda y jugosa"
+        },
+        {
+          "id": "quemada",
+          "text": "Quemada"
+        }
+      ],
+      "answer": "crujiente",
+      "evidence": "Le poulet a une belle couleur, une peau croustillante, une odeur excellente.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Está en una lista de tres elogios, así que tenía que ser algo bueno."
+        },
+        "incorrect": {
+          "es": "Fíjate en la compañía: va entre «une belle couleur» y «une odeur excellente». Las tres cosas van en la misma dirección."
+        },
+        "strategy": {
+          "es": "Si una palabra aparece en una lista, las de al lado te dicen si es buena o mala. Úsalas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué no le dicen nada al camarero?",
+      "options": [
+        {
+          "id": "mentir",
+          "text": "Porque tendrían que mentir para no ser desagradables, y prefieren callarse"
+        },
+        {
+          "id": "idioma",
+          "text": "Porque no hablan bien francés y no saben cómo decirlo"
+        },
+        {
+          "id": "prisa",
+          "text": "Porque tienen prisa y se van antes de que llegue"
+        }
+      ],
+      "answer": "mentir",
+      "evidence": "Nous n’avons pas envie de mentir au serveur, alors nous ne disons rien.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y es un detalle muy humano: callar les parece menos falso que decir que todo estaba bien."
+        },
+        "incorrect": {
+          "es": "El texto da la razón de forma explícita, unida con «alors». Busca esa palabra y lee lo que hay antes."
+        },
+        "strategy": {
+          "es": "La palabra «alors» une una causa con su consecuencia. Si la encuentras, tienes las dos mitades del razonamiento."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: al narrador le parecen correctos los precios y, aun así, no termina su plato.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Les prix sont corrects … Nous ne finissons pas nos assiettes.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y las dos mitades están lejos una de otra en el texto. Los precios le parecen bien; lo que falla es la sal."
+        },
+        "incorrect": {
+          "es": "Comprueba las dos partes por separado: qué dice de los precios, y si terminan o no los platos."
+        },
+        "strategy": {
+          "es": "Cuando una afirmación une dos datos distantes, localiza cada uno antes de decidir. No basta con encontrar el primero."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué sirve la última frase, «Je reviens dans six mois»?",
+      "options": [
+        {
+          "id": "abierta",
+          "text": "Para dejar claro que el juicio no es definitivo y da una segunda oportunidad"
+        },
+        {
+          "id": "reserva",
+          "text": "Para avisar de que ya ha reservado mesa otra vez"
+        },
+        {
+          "id": "despedida",
+          "text": "Para despedirse de los lectores de la reseña"
+        }
+      ],
+      "answer": "abierta",
+      "evidence": "le sel, ça se corrige. Je reviens dans six mois.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Encaja con la frase anterior: si el defecto tiene arreglo, tiene sentido volver a comprobarlo."
+        },
+        "incorrect": {
+          "es": "No está reservando nada ni despidiéndose. Léela junto con la frase de antes, la del sal que se corrige."
+        },
+        "strategy": {
+          "es": "La última frase de una reseña suele fijar la actitud del autor. Pregúntate si cierra la puerta o la deja abierta."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe una reseña de 5–7 frases en francés sobre un restaurante o una cafetería. Usa al menos cinco adjetivos distintos y una crítica con ne… pas."
+    },
+    "minWords": 35,
+    "maxWords": 80,
+    "hints": [
+      "Le service est…",
+      "La salle est…",
+      "Le plat a…",
+      "Mais il / elle a trop de…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés A1: Demasiada sal | WeLearn"
+    },
+    "description": {
+      "es": "Lee una reseña de restaurante en francés A1 y practica los adjetivos, el verbo avoir y la negación. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/frances/a1/lectura/trop-de-sel",
+    "indexable": false,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-a1-une-lettre-de-dakar",
+      "fr-a1-le-premier-jour"
+    ]
+  }
+}

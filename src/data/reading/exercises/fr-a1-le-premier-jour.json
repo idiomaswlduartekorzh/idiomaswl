@@ -1,0 +1,449 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-a1-le-premier-jour",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Francés A1"
+  },
+  "slug": "le-premier-jour",
+  "series": {
+    "id": "frances-a1-lectura-10",
+    "episode": 10,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-a1-trop-de-sel",
+    "nextExerciseId": null
+  },
+  "classification": {
+    "genre": "relato en primera persona",
+    "topic": "primer día de trabajo",
+    "intent": "learning",
+    "tags": [
+      "frances a1",
+      "lectura",
+      "verbos irregulares",
+      "futur proche"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El primer día"
+    },
+    "intro": {
+      "es": "Un ordenador que no está listo, una silla sin respaldo y un café que no quería. Lectura de francés A1 con los verbos irregulares más usados."
+    },
+    "mission": {
+      "es": "Fíjate en lo que sale mal el primer día y en lo que, aun así, sale bien."
+    },
+    "targetText": "Il est huit heures moins dix et je ne sais pas où est mon bureau. Une femme sort de l’ascenseur avec deux cafés. Elle me voit et elle sourit. «Tu es la nouvelle?» «Oui. Est-ce que vous savez où je dois aller?» «Troisième étage. Et on se dit tu, ici.» Elle me donne un café. Je ne bois pas de café. Je le prends quand même. Au troisième étage, personne ne sait qui je suis. Mon ordinateur n’est pas prêt. Ma chaise n’a pas de dossier. À midi, la femme de l’ascenseur revient. Elle dit: «On va manger? Je vais te présenter à tout le monde.» Ce jour-là, je ne fais rien d’utile. Mais je comprends une chose: ici, les gens sont bons.",
+    "wordCount": 123,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Reconocer en presente los verbos irregulares más frecuentes: être, savoir, voir, prendre, devoir, faire, dire."
+      },
+      {
+        "es": "Usar el futur proche para anunciar lo que va a pasar enseguida."
+      },
+      {
+        "es": "Distinguir una pregunta directa de una con est-ce que, y notar el paso de vous a tu."
+      }
+    ],
+    "grammarFocus": [
+      "verbes-irreguliers",
+      "futur-proche",
+      "questions"
+    ],
+    "vocabulary": [
+      {
+        "surface": "bureau",
+        "lemma": "bureau",
+        "glosses": {
+          "es": "escritorio; también despacho u oficina"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ascenseur",
+        "lemma": "ascenseur",
+        "glosses": {
+          "es": "ascensor"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sourit",
+        "lemma": "sourire",
+        "glosses": {
+          "es": "sonríe"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "prêt",
+        "lemma": "prêt",
+        "glosses": {
+          "es": "listo, preparado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dossier",
+        "lemma": "dossier",
+        "glosses": {
+          "es": "respaldo (de una silla). ¡No es un dosier ni un expediente!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "présenter",
+        "lemma": "présenter",
+        "glosses": {
+          "es": "presentar (a alguien)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "nouvelle",
+        "lemma": "nouveau",
+        "glosses": {
+          "es": "la nueva (la persona recién llegada)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "chaise",
+        "lemma": "chaise",
+        "glosses": {
+          "es": "silla"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Pasar de «vous» a «tu» es un gesto social con peso en Francia. Que alguien te diga «on se dit tu, ici» el primer día es una bienvenida, no una falta de respeto."
+    },
+    "spanishSpeakerNote": {
+      "es": "Cuidado con «dossier»: en francés corriente es el respaldo de una silla o una carpeta, no el «dosier» de información del español. Y «bureau» es el escritorio antes que la oficina."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto corto en presente sobre la vida cotidiana, localizar quién hace cada cosa y justificar tu respuesta con una frase del texto."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers"
+    ],
+    "disallowedGrammar": [
+      "passé composé",
+      "imparfait",
+      "subjonctif",
+      "conditionnel",
+      "voix passive"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 8.2,
+      "maxSentenceWords": 15,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Texto original en presente. Sin tiempos compuestos. Inferencia limitada a unir dos datos explícitos."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta este relato?",
+      "options": [
+        {
+          "id": "acogida",
+          "text": "Un primer día lleno de fallos donde lo que salva la jornada son las personas"
+        },
+        {
+          "id": "despido",
+          "text": "Un primer día tan malo que la narradora decide no volver"
+        },
+        {
+          "id": "ascenso",
+          "text": "Un primer día en el que la narradora consigue un buen puesto"
+        }
+      ],
+      "answer": "acogida",
+      "evidence": "Ce jour-là, je ne fais rien d’utile. Mais je comprends une chose: ici, les gens sont bons.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Todo lo material falla —el ordenador, la silla, el sitio— y aun así la conclusión es positiva."
+        },
+        "incorrect": {
+          "es": "La última frase es la clave y no es negativa. Léela entera, después del «mais»."
+        },
+        "strategy": {
+          "es": "Cuando un texto acumula problemas y termina con «mais», la conclusión está en lo que sigue a esa palabra."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿En qué planta está su puesto de trabajo?",
+      "options": [
+        {
+          "id": "troisieme",
+          "text": "En la tercera"
+        },
+        {
+          "id": "premiere",
+          "text": "En la primera"
+        },
+        {
+          "id": "quatrieme",
+          "text": "En la cuarta"
+        }
+      ],
+      "answer": "troisieme",
+      "evidence": "Troisième étage. Et on se dit tu, ici.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Se lo dice la mujer del ascensor, en una respuesta de dos palabras."
+        },
+        "incorrect": {
+          "es": "La respuesta la da otra persona en el diálogo, justo después de la pregunta de la narradora."
+        },
+        "strategy": {
+          "es": "En un diálogo, la información suele estar en la réplica, no en la pregunta. Lee siempre el turno siguiente."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «Ma chaise n’a pas de dossier». ¿Qué significa aquí «dossier»?",
+      "options": [
+        {
+          "id": "respaldo",
+          "text": "El respaldo de la silla"
+        },
+        {
+          "id": "expediente",
+          "text": "Un expediente con documentos"
+        },
+        {
+          "id": "ruedas",
+          "text": "Las ruedas de la silla"
+        }
+      ],
+      "answer": "respaldo",
+      "evidence": "Ma chaise n’a pas de dossier.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y es un falso amigo de manual: en español «dosier» son papeles; en francés, la parte donde apoyas la espalda."
+        },
+        "incorrect": {
+          "es": "La palabra se parece al español, y por eso engaña. Fíjate en de qué objeto se está hablando: una silla."
+        },
+        "strategy": {
+          "es": "Ante una palabra que se parece al español, comprueba siempre de qué objeto habla la frase. Ahí se destapan los falsos amigos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "La narradora no bebe café, pero acepta el que le ofrecen. ¿Por qué?",
+      "options": [
+        {
+          "id": "gesto",
+          "text": "Porque rechazarlo sería rechazar el gesto de acogida"
+        },
+        {
+          "id": "sed",
+          "text": "Porque tiene mucha sed y no hay otra cosa"
+        },
+        {
+          "id": "obligacion",
+          "text": "Porque en la empresa es obligatorio tomar café por la mañana"
+        }
+      ],
+      "answer": "gesto",
+      "evidence": "Elle me donne un café. Je ne bois pas de café. Je le prends quand même.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El texto no lo explica: lo deja en ese «quand même», que carga con toda la razón sin decirla."
+        },
+        "incorrect": {
+          "es": "El texto no habla de sed ni de ninguna obligación. Piensa qué significaría decir que no a alguien que acaba de ayudarte."
+        },
+        "strategy": {
+          "es": "Cuando alguien hace algo que contradice lo que acaba de decir de sí mismo, la razón es social, no práctica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: en esta empresa los compañeros se tutean, y a la narradora se lo dicen el primer día.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Et on se dit tu, ici.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero. Y fíjate en el detalle: la narradora pregunta de usted («vous savez») y le corrigen en la misma respuesta."
+        },
+        "incorrect": {
+          "es": "La narradora empieza usando «vous», pero le responden algo sobre cómo se tratan allí. Busca esa frase."
+        },
+        "strategy": {
+          "es": "En un diálogo, fíjate en si alguien corrige la forma de hablar del otro. Ese detalle dice mucho del sitio."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena lo que ocurre durante el día.",
+      "options": [
+        {
+          "id": "paso-1",
+          "text": "La narradora no encuentra su puesto y se cruza con una mujer en el ascensor"
+        },
+        {
+          "id": "paso-2",
+          "text": "Sube a la tercera planta y descubre que nada está preparado"
+        },
+        {
+          "id": "paso-3",
+          "text": "A mediodía, la mujer vuelve y propone ir a comer"
+        },
+        {
+          "id": "paso-4",
+          "text": "La narradora concluye que la gente de allí es buena"
+        }
+      ],
+      "answer": [
+        "paso-1",
+        "paso-2",
+        "paso-3",
+        "paso-4"
+      ],
+      "evidence": "Il est huit heures moins dix … Au troisième étage … À midi, la femme de l’ascenseur revient … Mais je comprends une chose",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El relato avanza con las horas: menos diez, luego la tercera planta, luego mediodía, y al final la conclusión."
+        },
+        "incorrect": {
+          "es": "Guíate por las marcas de hora del texto: «huit heures moins dix» y «à midi». Ellas ordenan todo lo demás."
+        },
+        "strategy": {
+          "es": "En un relato de un día, busca primero las horas. Son el esqueleto sobre el que cuelga todo lo que pasa."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Cuenta en 5–7 frases en francés tu primer día en un sitio nuevo: un trabajo, una clase, una ciudad. Usa el futur proche una vez y al menos cuatro verbos irregulares."
+    },
+    "minWords": 35,
+    "maxWords": 80,
+    "hints": [
+      "Il est… heures et je ne sais pas…",
+      "Une personne me dit…",
+      "Je vais…",
+      "Mais je comprends une chose:…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés A1: El primer día | WeLearn"
+    },
+    "description": {
+      "es": "Lee un relato en francés A1 sobre un primer día de trabajo y practica los verbos irregulares en presente y el futur proche. Con vocabulario y seis preguntas."
+    },
+    "canonicalPath": "/practica/frances/a1/lectura/le-premier-jour",
+    "indexable": false,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-a1-trop-de-sel"
+    ]
+  }
+}

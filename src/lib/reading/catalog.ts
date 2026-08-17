@@ -29,6 +29,18 @@ import remoteWorkPilot from '@/data/reading/exercises/en-b1-remote-work-pilot.js
 import urbanTreePlan from '@/data/reading/exercises/en-b1-urban-tree-plan.json'
 import workplaceMentoring from '@/data/reading/exercises/en-b1-workplace-mentoring.json'
 import koreanCafe from '@/data/reading/exercises/ko-a1-cafe-order.json'
+// Francés A1 — blueprint 1.1.0. Generadas desde `src/data/reading/source/fr-a1.mjs`,
+// en borrador hasta que pasen revisión de lengua y de pedagogía. Se ven con READING_PREVIEW=1.
+import frChatTroisiemeEtage from '@/data/reading/exercises/fr-a1-le-chat-du-troisieme-etage.json'
+import frMarcheDuSamedi from '@/data/reading/exercises/fr-a1-le-marche-du-samedi.json'
+import frTroisMessages from '@/data/reading/exercises/fr-a1-trois-messages-et-un-retard.json'
+import frChambreDeYasmine from '@/data/reading/exercises/fr-a1-la-chambre-de-yasmine.json'
+import frColocataireCherche from '@/data/reading/exercises/fr-a1-colocataire-cherche.json'
+import frRecetteMamieAicha from '@/data/reading/exercises/fr-a1-la-recette-de-mamie-aicha.json'
+import frBus712 from '@/data/reading/exercises/fr-a1-le-bus-de-7h12.json'
+import frLettreDeDakar from '@/data/reading/exercises/fr-a1-une-lettre-de-dakar.json'
+import frTropDeSel from '@/data/reading/exercises/fr-a1-trop-de-sel.json'
+import frPremierJour from '@/data/reading/exercises/fr-a1-le-premier-jour.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -64,6 +76,16 @@ const RAW_EXERCISES: unknown[] = [
   workplaceMentoring,
   publicTransportFareChange,
   koreanCafe,
+  frChatTroisiemeEtage,
+  frMarcheDuSamedi,
+  frTroisMessages,
+  frChambreDeYasmine,
+  frColocataireCherche,
+  frRecetteMamieAicha,
+  frBus712,
+  frLettreDeDakar,
+  frTropDeSel,
+  frPremierJour,
 ]
 
 export const READING_EXERCISES: ReadingExercise[] = RAW_EXERCISES.map((candidate) => {

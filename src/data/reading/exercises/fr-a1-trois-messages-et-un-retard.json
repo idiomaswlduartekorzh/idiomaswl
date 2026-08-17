@@ -1,0 +1,441 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-a1-trois-messages-et-un-retard",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Francés A1"
+  },
+  "slug": "trois-messages-et-un-retard",
+  "series": {
+    "id": "frances-a1-lectura-10",
+    "episode": 3,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-a1-le-marche-du-samedi",
+    "nextExerciseId": "fr-a1-la-chambre-de-yasmine"
+  },
+  "classification": {
+    "genre": "mensajes de móvil",
+    "topic": "quedar con amigos",
+    "intent": "learning",
+    "tags": [
+      "frances a1",
+      "lectura",
+      "futur proche",
+      "preposiciones de tiempo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Tres mensajes y un retraso"
+    },
+    "intro": {
+      "es": "Cinco mensajes, un autobús parado y una película que ya ha empezado. Lectura de francés A1 con el futuro próximo y las horas."
+    },
+    "mission": {
+      "es": "Sigue la hora de cada mensaje y averigua por qué Karim no se enfada."
+    },
+    "targetText": "18h02 — Karim: Salut! On va au cinéma ce soir? Le film commence à vingt heures quarante. Je vais acheter les billets maintenant, ils sont moins chers avant dix-neuf heures. 18h05 — Léa: Oui! Mais je vais finir le travail vers dix-neuf heures trente. Tu peux prendre mon billet? Je vais te payer demain. 18h06 — Karim: D’accord. On se retrouve devant le cinéma à vingt heures vingt? 19h58 — Léa: Karim, je suis désolée. Mon bus ne bouge pas depuis quinze minutes. Il y a un accident sur le pont. Je vais arriver en retard. 20h01 — Karim: Ne cours pas. Le film commence toujours avec dix minutes de publicité. Je t’attends à l’intérieur, rangée douze.",
+    "wordCount": 112,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Reconocer el futur proche (aller + infinitivo) y entender que habla de algo inmediato."
+      },
+      {
+        "es": "Leer horas en formato francés de 24 horas y ordenarlas."
+      },
+      {
+        "es": "Identificar a quién se refiere cada pronombre en una conversación de dos personas."
+      }
+    ],
+    "grammarFocus": [
+      "futur-proche",
+      "prepositions-temps",
+      "pronoms-sujet"
+    ],
+    "vocabulary": [
+      {
+        "surface": "billets",
+        "lemma": "billet",
+        "glosses": {
+          "es": "entradas (de cine); también billetes"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "retard",
+        "lemma": "retard",
+        "glosses": {
+          "es": "retraso. «En retard» = con retraso, tarde"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rangée",
+        "lemma": "rangée",
+        "glosses": {
+          "es": "fila (de asientos)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "bouge",
+        "lemma": "bouger",
+        "glosses": {
+          "es": "se mueve"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "désolée",
+        "lemma": "désolée",
+        "glosses": {
+          "es": "lo siento (dicho por una mujer)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "publicité",
+        "lemma": "publicité",
+        "glosses": {
+          "es": "publicidad, anuncios"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pont",
+        "lemma": "pont",
+        "glosses": {
+          "es": "puente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "se retrouve",
+        "lemma": "se retrouver",
+        "glosses": {
+          "es": "quedamos, nos encontramos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En Francia las horas se dicen casi siempre en formato de 24 horas: «vingt heures quarante» son las 20:40. En el cine, la hora del cartel incluye los anuncios."
+    },
+    "spanishSpeakerNote": {
+      "es": "El futur proche se construye igual que en español: «je vais acheter» = «voy a comprar». Es la buena noticia del nivel A1. La trampa está en «vers dix-neuf heures trente»: «vers» significa «hacia, sobre las», no «verso»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto corto en presente sobre la vida cotidiana, localizar quién hace cada cosa y justificar tu respuesta con una frase del texto."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers"
+    ],
+    "disallowedGrammar": [
+      "passé composé",
+      "imparfait",
+      "subjonctif",
+      "conditionnel",
+      "voix passive"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 6.6,
+      "maxSentenceWords": 13,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Texto original en presente. Sin tiempos compuestos. Inferencia limitada a unir dos datos explícitos."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué pasa a lo largo de esta conversación?",
+      "options": [
+        {
+          "id": "plan",
+          "text": "Quedan para el cine, ella se retrasa y él la tranquiliza"
+        },
+        {
+          "id": "discuten",
+          "text": "Quedan para el cine y acaban discutiendo por el retraso"
+        },
+        {
+          "id": "cancelan",
+          "text": "Quedan para el cine y al final cancelan el plan"
+        }
+      ],
+      "answer": "plan",
+      "evidence": "Ne cours pas. Le film commence toujours avec dix minutes de publicité.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El último mensaje cambia el tono de todo: no hay reproche, hay un asiento guardado."
+        },
+        "incorrect": {
+          "es": "Nadie cancela nada y nadie discute. Lee el último mensaje de Karim: ahí está la respuesta."
+        },
+        "strategy": {
+          "es": "En una conversación, el último mensaje suele decidir el sentido de todos los anteriores. Léelo antes de elegir."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿A qué hora empieza la película?",
+      "options": [
+        {
+          "id": "2040",
+          "text": "A las 20:40"
+        },
+        {
+          "id": "2020",
+          "text": "A las 20:20"
+        },
+        {
+          "id": "1930",
+          "text": "A las 19:30"
+        }
+      ],
+      "answer": "2040",
+      "evidence": "Le film commence à vingt heures quarante.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Las 20:20 son la hora de quedar, y las 19:30 son cuando Léa termina de trabajar."
+        },
+        "incorrect": {
+          "es": "En el texto hay tres horas distintas y cada una es de una cosa. Busca la que va justo detrás de «Le film commence à»."
+        },
+        "strategy": {
+          "es": "Cuando un texto tiene varias horas, apunta al lado de cada una a qué se refiere antes de contestar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Léa escribe «Je vais arriver en retard». ¿Qué significa «en retard»?",
+      "options": [
+        {
+          "id": "tarde",
+          "text": "Con retraso, más tarde de la hora acordada"
+        },
+        {
+          "id": "pronto",
+          "text": "Antes de la hora"
+        },
+        {
+          "id": "andando",
+          "text": "Andando, a pie"
+        }
+      ],
+      "answer": "tarde",
+      "evidence": "Mon bus ne bouge pas depuis quinze minutes … Je vais arriver en retard.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Y fíjate en la causa, que está en la frase de antes: el autobús lleva quince minutos parado."
+        },
+        "incorrect": {
+          "es": "Mira qué acaba de contar Léa: su autobús no se mueve y hay un accidente. Eso no la hace llegar antes."
+        },
+        "strategy": {
+          "es": "Si dudas de una expresión, busca la causa que el texto acaba de dar. La causa te dice el sentido."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué Karim quiere comprar las entradas antes de las siete de la tarde?",
+      "options": [
+        {
+          "id": "baratas",
+          "text": "Porque antes de esa hora son más baratas"
+        },
+        {
+          "id": "agotadas",
+          "text": "Porque después de esa hora ya no quedan entradas"
+        },
+        {
+          "id": "cierra",
+          "text": "Porque la taquilla del cine cierra a las siete"
+        }
+      ],
+      "answer": "baratas",
+      "evidence": "Je vais acheter les billets maintenant, ils sont moins chers avant dix-neuf heures.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. «Moins chers» es «menos caros». Es un detalle pequeño que explica la prisa del primer mensaje."
+        },
+        "incorrect": {
+          "es": "El texto no dice que se agoten ni que cierre la taquilla. Relee el primer mensaje hasta el final, después de la coma."
+        },
+        "strategy": {
+          "es": "La razón de una prisa suele estar en la misma frase, después de una coma. No te pares en el primer punto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: Karim le dice a Léa que no corra, porque la película empieza con diez minutos de anuncios.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Ne cours pas. Le film commence toujours avec dix minutes de publicité.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero. Las dos partes están en el último mensaje: la orden en negativo y la razón que la justifica."
+        },
+        "incorrect": {
+          "es": "Fíjate en las dos piezas de la negación: «ne cours pas» significa «no corras». Y la frase siguiente da el motivo."
+        },
+        "strategy": {
+          "es": "En francés el «ne» va antes del verbo y el «pas» después. Si solo lees hasta el verbo, entiendes justo lo contrario."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "reference",
+      "skill": "reference",
+      "prompt": "En «Je t’attends à l’intérieur», ¿a quién se refiere «t’»?",
+      "options": [
+        {
+          "id": "lea",
+          "text": "A Léa"
+        },
+        {
+          "id": "karim",
+          "text": "A Karim"
+        },
+        {
+          "id": "acomodador",
+          "text": "Al acomodador del cine"
+        }
+      ],
+      "answer": "lea",
+      "evidence": "Je t’attends à l’intérieur, rangée douze.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Escribe Karim, así que «je» es él y «t’» es la persona a la que escribe: Léa."
+        },
+        "incorrect": {
+          "es": "Mira quién firma ese mensaje. Si «je» es Karim, «t’» tiene que ser la otra persona de la conversación."
+        },
+        "strategy": {
+          "es": "Con los pronombres, primero identifica quién habla. Todo lo demás se ordena a partir de ahí."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 4–6 mensajes cortos en francés para quedar con alguien. Usa el futur proche dos veces (je vais + infinitivo) y di al menos dos horas concretas."
+    },
+    "minWords": 30,
+    "maxWords": 70,
+    "hints": [
+      "On va… ce soir?",
+      "Je vais…",
+      "On se retrouve à… heures?",
+      "Je vais arriver en retard."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés A1: Tres mensajes y un retraso | WeLearn"
+    },
+    "description": {
+      "es": "Lee una conversación de móvil en francés A1 y practica el futur proche (je vais + infinitivo) y las expresiones de hora. Con vocabulario y seis preguntas."
+    },
+    "canonicalPath": "/practica/frances/a1/lectura/trois-messages-et-un-retard",
+    "indexable": false,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-a1-le-marche-du-samedi",
+      "fr-a1-la-chambre-de-yasmine"
+    ]
+  }
+}

@@ -1,0 +1,441 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-a1-une-lettre-de-dakar",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Francés A1"
+  },
+  "slug": "une-lettre-de-dakar",
+  "series": {
+    "id": "frances-a1-lectura-10",
+    "episode": 8,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-a1-le-bus-de-7h12",
+    "nextExerciseId": "fr-a1-trop-de-sel"
+  },
+  "classification": {
+    "genre": "carta personal",
+    "topic": "vivir lejos de casa",
+    "intent": "learning",
+    "tags": [
+      "frances a1",
+      "lectura",
+      "pronombres sujeto",
+      "género de los nombres"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Una carta desde Dakar"
+    },
+    "intro": {
+      "es": "Por la mañana es extranjero, por la noche es vecino. Una carta breve desde Senegal, en francés A1, con los pronombres sujeto."
+    },
+    "mission": {
+      "es": "Averigua qué cambia entre la mañana y la noche, y por qué Julien no tiene prisa."
+    },
+    "targetText": "Dakar, le 3 avril. Chère Mireille, tu me demandes si je suis heureux ici. La réponse est oui, mais elle est compliquée. Le matin, je suis étranger. Les enfants du quartier me regardent, ils rient, ils crient un mot que je ne comprends pas encore. Ce n’est pas méchant. C’est juste vrai. Le soir, je suis voisin. Madame Fall m’appelle quand le thé est prêt. Nous sommes six autour du plateau, et elle raconte des histoires. Je ne comprends pas tout. Elle le sait. Elle raconte quand même. Ici, la maison n’est pas un lieu privé. C’est une rue avec un toit. Tu me manques. Mais je ne suis pas pressé de rentrer. Julien.",
+    "wordCount": 114,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Identificar quién es cada pronombre sujeto: je, tu, il, elle, ils, nous."
+      },
+      {
+        "es": "Reconocer el género de un nombre por el pronombre que lo sustituye (la réponse → elle)."
+      },
+      {
+        "es": "Entender una carta personal donde lo importante no se dice de forma directa."
+      }
+    ],
+    "grammarFocus": [
+      "pronoms-sujet",
+      "genre-noms",
+      "verbe-etre"
+    ],
+    "vocabulary": [
+      {
+        "surface": "étranger",
+        "lemma": "étranger",
+        "glosses": {
+          "es": "extranjero, forastero"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "méchant",
+        "lemma": "méchant",
+        "glosses": {
+          "es": "malintencionado, con mala idea"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "plateau",
+        "lemma": "plateau",
+        "glosses": {
+          "es": "bandeja (aquí, la del té)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "toit",
+        "lemma": "toit",
+        "glosses": {
+          "es": "tejado, techo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pressé",
+        "lemma": "pressé",
+        "glosses": {
+          "es": "con prisa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "quand même",
+        "lemma": "quand même",
+        "glosses": {
+          "es": "aun así, de todos modos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "crient",
+        "lemma": "crier",
+        "glosses": {
+          "es": "gritan"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "heureux",
+        "lemma": "heureux",
+        "glosses": {
+          "es": "feliz"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En Senegal el té («ataya») se sirve en varias rondas y puede durar horas. La invitación no es al té: es a quedarse. Por eso Julien dice que la casa es una calle con techo."
+    },
+    "spanishSpeakerNote": {
+      "es": "«Tu me manques» significa «te echo de menos», pero está construido al revés: el sujeto es la persona ausente. Si dices «je te manque» estás diciendo que el otro te echa de menos a ti. Es el error clásico del hispanohablante."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto corto en presente sobre la vida cotidiana, localizar quién hace cada cosa y justificar tu respuesta con una frase del texto."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers"
+    ],
+    "disallowedGrammar": [
+      "passé composé",
+      "imparfait",
+      "subjonctif",
+      "conditionnel",
+      "voix passive"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 6.3,
+      "maxSentenceWords": 18,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Texto original en presente. Sin tiempos compuestos. Inferencia limitada a unir dos datos explícitos."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué contesta Julien a la pregunta de si es feliz allí?",
+      "options": [
+        {
+          "id": "matices",
+          "text": "Que sí, pero que la respuesta tiene matices según la hora del día"
+        },
+        {
+          "id": "no",
+          "text": "Que no, y por eso quiere volver pronto a Francia"
+        },
+        {
+          "id": "idioma",
+          "text": "Que no puede saberlo hasta que aprenda bien el idioma"
+        }
+      ],
+      "answer": "matices",
+      "evidence": "La réponse est oui, mais elle est compliquée.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Lo anuncia en la segunda línea y luego lo demuestra con la mañana y la noche."
+        },
+        "incorrect": {
+          "es": "La respuesta literal está en la segunda frase de la carta. Búscala y fíjate en lo que viene después del «mais»."
+        },
+        "strategy": {
+          "es": "Cuando una carta responde a una pregunta, la respuesta suele estar al principio. Lo demás es la explicación."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Quién avisa a Julien cuando el té está listo?",
+      "options": [
+        {
+          "id": "fall",
+          "text": "Madame Fall"
+        },
+        {
+          "id": "mireille",
+          "text": "Mireille"
+        },
+        {
+          "id": "enfants",
+          "text": "Los niños del barrio"
+        }
+      ],
+      "answer": "fall",
+      "evidence": "Madame Fall m’appelle quand le thé est prêt.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Mireille es quien recibe la carta, en Francia; no está allí."
+        },
+        "incorrect": {
+          "es": "Mireille es la destinataria de la carta, no una vecina. Busca el nombre que aparece junto al té."
+        },
+        "strategy": {
+          "es": "En una carta, distingue siempre entre quien escribe, quien la recibe y quien aparece contado dentro."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Julien escribe: «Je ne comprends pas tout. Elle le sait. Elle raconte quand même». ¿Qué significa «quand même»?",
+      "options": [
+        {
+          "id": "aunasi",
+          "text": "Aun así, de todos modos"
+        },
+        {
+          "id": "cuando",
+          "text": "Al mismo tiempo, a la vez"
+        },
+        {
+          "id": "nunca",
+          "text": "Nunca, en ningún caso"
+        }
+      ],
+      "answer": "aunasi",
+      "evidence": "Je ne comprends pas tout. Elle le sait. Elle raconte quand même.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Y ahí está el gesto: ella sabe que él no lo entiende todo, y cuenta igualmente. Eso es tratarlo como vecino."
+        },
+        "incorrect": {
+          "es": "Las tres frases van encadenadas: no entiende / ella lo sabe / ella sigue. Busca la expresión que une un obstáculo con una decisión."
+        },
+        "strategy": {
+          "es": "Las expresiones de dos palabras rara vez se traducen palabra por palabra. Mira la relación entre las frases que unen."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Qué quiere decir Julien con «C’est une rue avec un toit»?",
+      "options": [
+        {
+          "id": "abierta",
+          "text": "Que la casa está siempre abierta y llena de gente, como una calle"
+        },
+        {
+          "id": "pobre",
+          "text": "Que la casa está mal construida y se llueve"
+        },
+        {
+          "id": "ruidosa",
+          "text": "Que la casa da a una calle muy ruidosa"
+        }
+      ],
+      "answer": "abierta",
+      "evidence": "Ici, la maison n’est pas un lieu privé. C’est une rue avec un toit.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La frase anterior lo dice sin imagen: la casa no es un lugar privado. La metáfora solo lo repite mejor."
+        },
+        "incorrect": {
+          "es": "La frase de antes explica la metáfora: «la maison n’est pas un lieu privé». No habla de goteras ni de ruido."
+        },
+        "strategy": {
+          "es": "Una metáfora casi nunca llega sola: la frase de al lado suele decir lo mismo en lenguaje llano. Búscala."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: Julien echa de menos a Mireille y tiene prisa por volver a Francia.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Tu me manques. Mais je ne suis pas pressé de rentrer.",
+      "feedback": {
+        "correct": {
+          "es": "Falso, y solo por la segunda mitad: la echa de menos, sí, pero dice expresamente que no tiene prisa."
+        },
+        "incorrect": {
+          "es": "La primera parte de la afirmación es cierta. Lee la última frase de la carta y comprueba la segunda."
+        },
+        "strategy": {
+          "es": "En una afirmación con «y», las dos mitades tienen que ser verdad. Comprueba siempre la segunda."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "reference",
+      "skill": "reference",
+      "prompt": "En «Elle le sait», ¿a qué se refiere «le»?",
+      "options": [
+        {
+          "id": "nocomprende",
+          "text": "A que Julien no lo entiende todo"
+        },
+        {
+          "id": "te",
+          "text": "Al té que está preparando"
+        },
+        {
+          "id": "carta",
+          "text": "A la carta que Julien está escribiendo"
+        }
+      ],
+      "answer": "nocomprende",
+      "evidence": "Je ne comprends pas tout. Elle le sait.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Ese «le» no sustituye a una cosa, sino a la frase entera de antes. Es un uso muy francés."
+        },
+        "incorrect": {
+          "es": "Mira la frase inmediatamente anterior. El «le» está recogiendo lo que se acaba de decir, no un objeto."
+        },
+        "strategy": {
+          "es": "Un pronombre puede sustituir a una idea completa, no solo a un objeto. Si no encuentras la cosa, prueba con la frase anterior."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe una carta corta de 5–7 frases en francés a alguien que esté lejos. Cuenta cómo es un día tuyo y usa al menos cinco pronombres sujeto distintos."
+    },
+    "minWords": 35,
+    "maxWords": 80,
+    "hints": [
+      "Chère / Cher…",
+      "Le matin, je suis…",
+      "Nous sommes…",
+      "Tu me manques."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés A1: Una carta desde Dakar | WeLearn"
+    },
+    "description": {
+      "es": "Lee una carta personal en francés A1 desde Senegal y practica los pronombres sujeto y el verbo être. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/frances/a1/lectura/une-lettre-de-dakar",
+    "indexable": false,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-a1-le-bus-de-7h12",
+      "fr-a1-trop-de-sel"
+    ]
+  }
+}

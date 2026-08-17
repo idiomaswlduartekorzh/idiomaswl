@@ -58,6 +58,23 @@ for (const [key, group] of [...byLevel].sort()) {
     }
   }
 
+  // Sesgo de respuesta en los verdadero/falso. Barajar las opciones no lo arregla: si la
+  // respuesta correcta es siempre «falso», se acierta todo contestando falso sin leer.
+  // Es el mismo defecto que se midió en las series de Escucha, y solo se ve en el conjunto.
+  const verdicts = group
+    .flatMap(({ exercise }) => exercise.questions ?? [])
+    .filter((question) => question.type === 'true-false' || question.type === 'true-false-not-given')
+    .map((question) => String(question.answer))
+  if (verdicts.length >= 4) {
+    const tally = verdicts.reduce((counts, verdict) => ({ ...counts, [verdict]: (counts[verdict] ?? 0) + 1 }), {})
+    const [leader, count] = Object.entries(tally).sort((a, b) => b[1] - a[1])[0]
+    if (count / verdicts.length > 0.75) {
+      failed = true
+      console.error(`✗ ${key}: ${count} de ${verdicts.length} verdadero/falso se responden "${leader}"`)
+      console.error('  - contestando siempre lo mismo se aprueba sin leer; reparte las respuestas')
+    }
+  }
+
   const [language, cefr] = key.split('/')
   const coverage = grammarCoverage(language, cefr, group.map((item) => item.exercise))
   const percent = coverage.total ? Math.round((coverage.touched / coverage.total) * 100) : 0
