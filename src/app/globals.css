@@ -4020,7 +4020,10 @@ button {
    colgadas de los tokens del sitio y una sola línea que las corrige de noche.
 ────────────────────────────────────────────────────────────────────────────── */
 .listen-shell {
-  --listen-accent: #0066cc;
+  /* El acento sale del contrato de destrezas, no de aquí: la tarjeta del hub y esta
+     página tienen que pintar el mismo color, y antes no lo hacían —la tarjeta anunciaba
+     azul petróleo y por dentro era azul brillante—. Ver src/data/practica/skill-accents.ts. */
+  --listen-accent: var(--wlp-accent-escucha, #176b87);
   --listen-accent-ink: #ffffff;
   --listen-soft: color-mix(in srgb, var(--listen-accent) 10%, transparent);
   --listen-edge: color-mix(in srgb, var(--listen-accent) 24%, transparent);
@@ -4028,8 +4031,14 @@ button {
   --listen-no: #b91c1c;
   display:grid; grid-template-columns:265px minmax(0,1fr); gap:2rem; align-items:start;
 }
-:root:not([data-theme="light"]) .listen-shell { --listen-accent:#5b9dff; --listen-accent-ink:#0d0f1a; --listen-ok:#4ade80; --listen-no:#fca5a5; }
-@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) .listen-shell { --listen-accent:#0066cc; --listen-accent-ink:#ffffff; --listen-ok:#15803d; --listen-no:#b91c1c; } }
+/* El acento ya no se toca aquí: lo gobierna el contrato, que trae su propio par claro y
+   oscuro. Solo quedan la tinta que va encima y los dos colores de corrección.
+
+   Y el ámbito pasa a ser el explícito, el mismo que usan los tokens del sitio. Antes esto
+   respondía a la preferencia del sistema operativo, así que un usuario con el SO en oscuro
+   y el interruptor sin tocar veía la página blanca pero estas píldoras con la paleta de
+   noche. El oscuro de este sitio lo enciende el interruptor. */
+:root[data-wl-surface="editorial"][data-theme="dark"] .listen-shell { --listen-accent-ink:#0d0f1a; --listen-ok:#4ade80; --listen-no:#fca5a5; }
 .listen-catalog { position:sticky; top:1rem; border:1px solid var(--line-soft); border-radius:16px; padding:.85rem; background:var(--bg-2); max-height:calc(100vh - 2rem); overflow:auto; }
 .listen-catalog__head { display:flex; justify-content:space-between; padding:.25rem .35rem .75rem; color:var(--listen-accent); font:700 .72rem var(--mono); text-transform:uppercase; }
 .listen-block { margin:.75rem 0; }.listen-block h2 { margin:.4rem .35rem; font:700 .7rem var(--mono); color:var(--muted); text-transform:uppercase; }

@@ -3,36 +3,18 @@
   --reading-ink: var(--ink);
   --reading-muted: var(--muted);
   --reading-line: var(--line-soft);
-  --reading-blue: var(--wl-on-panel-link, #0066cc);
-  --reading-blue-soft: color-mix(in srgb, #0066cc 12%, transparent);
+  /* El acento sale del contrato de destrezas: la tarjeta del hub y esta página tienen que
+     pintar el mismo color. Antes la tarjeta anunciaba el color de la bandera del idioma y
+     aquí siempre era el mismo azul.
+
+     De paso deja de leer `--wl-on-panel-link`, que es el puente heredado que globals.css
+     pide jubilar y que además solo existe en oscuro. Ver skill-accents.ts. */
+  --reading-blue: var(--wlp-accent-lectura, #1c4b9c);
+  --reading-blue-soft: color-mix(in srgb, var(--reading-blue) 12%, transparent);
   --reading-lavender: transparent;
   color: var(--ink);
 }
 
-.shell {
-  --reading-navy: var(--wl-on-panel, #101f59);
-  --reading-blue: var(--wl-on-panel-link, #225be7);
-  --reading-blue-soft: var(--bg-2);
-  --reading-lavender: #f6f4ff;
-  --reading-ink: var(--ink);
-  --reading-muted: var(--wl-on-panel-soft, #66708c);
-  --reading-line: var(--wl-panel-line, #dce3f5);
-  min-height: 100vh;
-  color: var(--reading-ink);
-  background:
-    radial-gradient(circle at 85% 8%, rgba(134, 154, 255, 0.18), transparent 30rem),
-    linear-gradient(180deg, var(--wl-panel-raised, #fbfbff) 0%, var(--reading-lavender) 72%, var(--wl-surface-card) 100%);
-}
-
-.siteHeader { position: sticky; top: 0; z-index: 30; border-bottom: 1px solid rgba(188, 199, 231, 0.7); background: var(--surface); backdrop-filter: blur(18px); }
-.headerInner { width: min(1180px, calc(100% - 32px)); min-height: 68px; margin: 0 auto; display: flex; align-items: center; gap: 26px; }
-.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--reading-navy); font-weight: 780; text-decoration: none; letter-spacing: -0.02em; }
-.brandMark { display: grid; place-items: center; width: 36px; height: 36px; border: 1px solid var(--line-soft); border-radius: 10px; color: var(--reading-blue); font-size: 20px; font-weight: 850; font-style: italic; box-shadow: 0 5px 16px rgba(32, 74, 178, 0.1); }
-.headerContext { display: flex; align-items: center; gap: 8px; color: var(--reading-muted); font-size: 14px; }
-.headerInner > a:last-child { margin-left: auto; text-decoration: none; }
-.localeSwitch { display: inline-flex; align-items: center; gap: 8px; padding: 9px 13px; border: 1px solid var(--reading-line); border-radius: 999px; color: var(--reading-navy); background: var(--surface); font-size: 13px; font-weight: 700; }
-.main { min-height: calc(100vh - 116px); }
-.footer { padding: 30px 20px 36px; color: var(--reading-muted); text-align: center; font-size: 12px; }
 .pageWidth { width: 100%; margin: 0 auto; padding: 26px 0 64px; }
 
 .breadcrumbs { display: flex; gap: 9px; align-items: center; flex-wrap: wrap; margin-bottom: 30px; color: var(--reading-muted); font-size: 12px; }
