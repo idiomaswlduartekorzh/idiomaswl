@@ -7920,11 +7920,20 @@ body {
 }
 
 /* Escritura integrada */
-.writing-integrated { max-width: 980px; }
+/* Escritura era la única destreza cuya tarjeta prometía un color que la página no usaba:
+   esta pantalla se pintaba entera con los neutros del sitio. Se le da el acento del
+   contrato en vez de quitarle la promesa a la tarjeta, porque cinco de las seis destrezas
+   ya lo cumplen y romper el patrón en una sola crea una excepción que hay que recordar
+   para siempre. Además, en una rejilla de seis, la única tarjeta sin color se lee como
+   rota, no como distinta. Ver src/data/practica/skill-accents.ts. */
+.writing-integrated {
+  --wlp-accent: var(--wlp-accent-escritura, #18794e);
+  max-width: 980px;
+}
 .writing-integrated__crumbs { display:flex; gap:.5rem; flex-wrap:wrap; margin-bottom:1.25rem; color:var(--muted); font-family:var(--mono); font-size:.8rem; }
 .writing-integrated__crumbs a { color:var(--muted); }
 .writing-integrated__hero, .writing-integrated__panel { border:1px solid var(--line-soft); border-radius:8px; background:var(--surface); }
-.writing-integrated__hero { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:1rem; align-items:start; padding:1.5rem; border-top:4px solid; }
+.writing-integrated__hero { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:1rem; align-items:start; padding:1.5rem; border-top:4px solid var(--wlp-accent); }
 .writing-integrated__hero h1 { margin:0 0 .5rem; font-size:2rem; line-height:1.12; letter-spacing:0; }
 .writing-integrated__hero p, .writing-integrated__intro, .writing-integrated__read-footer p { color:var(--muted); line-height:1.55; }
 .writing-integrated__meter { min-width:128px; padding:.8rem; border:1px solid var(--line-soft); border-radius:8px; background:var(--bg-2); text-align:center; }
@@ -7937,7 +7946,7 @@ body {
 .writing-integrated__steps em { overflow:hidden; font-size:.82rem; font-style:normal; text-overflow:ellipsis; white-space:nowrap; }
 .writing-integrated__steps .is-current, .writing-integrated__steps .is-done { color:var(--ink); border-color:var(--ink); }
 .writing-integrated__panel { padding:1.35rem; }
-.writing-integrated__kicker { margin:0 0 .35rem; color:var(--muted); font-weight:800; text-transform:uppercase; }
+.writing-integrated__kicker { margin:0 0 .35rem; color:var(--wlp-accent); font-weight:800; text-transform:uppercase; }
 .writing-integrated__panel h2 { margin:0 0 1rem; font-size:1.35rem; line-height:1.25; letter-spacing:0; }
 .writing-integrated__read-layout, .writing-integrated__writing-layout { display:grid; grid-template-columns:minmax(0,1.3fr) minmax(270px,.7fr); gap:1rem; align-items:start; }
 .writing-integrated__reading { padding:1.1rem 1.2rem; border:1px solid var(--line-soft); border-left:3px solid var(--ink); border-radius:8px; background:var(--bg-2); line-height:1.8; white-space:pre-wrap; }
