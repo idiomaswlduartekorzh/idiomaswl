@@ -13,12 +13,12 @@ export const metadata: Metadata = {
 const AUDIO_LISTO = audioReady('japones');
 
 const HABILIDADES = [
-  { id: 'lectura', emoji: '📖', name: '読む (Yomu)', eng: 'Lectura', desc: '5 textos A1 en japonés con romaji y vocabulario interactivo. はじめまして！Familia, casa, comida.', count: '5 textos · 25 preguntas', href: '/practica/japones/a1/lectura' },
-  { id: 'gramatica', emoji: '📐', name: '文法 (Bunpō)', eng: 'Gramática', desc: 'Hiragana y Katakana, ～は～です, partículas (は が を に で の), あります/います, verbos ～ます, números, adjetivos い・な, negación y pasado. Con romaji.', count: '15 temas · 180+ ejercicios', href: '/practica/japones/a1/gramatica' },
-  { id: 'escritura', emoji: '✍️', name: '書く (Kaku)', eng: 'Escritura', desc: '5 tareas guiadas: presentarse, describir objetos, la familia, el horario y los gustos.', count: '5 prompts guiados', href: '/practica/japones/a1/escritura' },
-  { id: 'habla', emoji: '🗣️', name: '話す (Hanasu)', eng: 'Expresión oral', desc: '12 frases de supervivencia en japonés: script + romaji + guía de pronunciación para hispanohablantes.', count: '12 frases esenciales', href: '/practica/japones/a1/habla' },
-  { id: 'vocabulario', emoji: '📚', name: '語彙 (Goi)', eng: 'Vocabulario', desc: '6 sets temáticos: 家族, 色, 食べ物, 曜日, 体, 数字. Script japonés + romaji + español.', count: '6 sets · 60+ palabras', href: '/practica/japones/a1/vocabulario' },
-  { id: 'escucha', emoji: '🎧', name: '聞く (Kiku)', eng: 'Escucha', desc: `20 episodios narrativos A1: «青い手帳のスタンプ». Guion dialogado con romaji, vocabulario, preguntas y transcripción bilingüe.${AUDIO_LISTO ? '' : ' Audio en producción.'}`, count: AUDIO_LISTO ? '20 episodios · 100 preguntas' : '20 episodios · audio en producción', href: '/practica/japones/a1/escucha' },
+  { id: 'lectura', emoji: '📖', name: 'Lectura', eng: '読む (Yomu)', desc: '5 textos A1 en japonés con romaji y vocabulario interactivo. はじめまして！Familia, casa, comida.', count: '5 textos · 25 preguntas', href: '/practica/japones/a1/lectura' },
+  { id: 'gramatica', emoji: '📐', name: 'Gramática', eng: '文法 (Bunpō)', desc: 'Hiragana y Katakana, ～は～です, partículas (は が を に で の), あります/います, verbos ～ます, números, adjetivos い・な, negación y pasado. Con romaji.', count: '15 temas · 180+ ejercicios', href: '/practica/japones/a1/gramatica' },
+  { id: 'escritura', emoji: '✍️', name: 'Escritura', eng: '書く (Kaku)', desc: '5 tareas guiadas: presentarse, describir objetos, la familia, el horario y los gustos.', count: '5 prompts guiados', href: '/practica/japones/a1/escritura' },
+  { id: 'habla', emoji: '🗣️', name: 'Expresión oral', eng: '話す (Hanasu)', desc: '12 frases de supervivencia en japonés: script + romaji + guía de pronunciación para hispanohablantes.', count: '12 frases esenciales', href: '/practica/japones/a1/habla' },
+  { id: 'vocabulario', emoji: '📚', name: 'Vocabulario', eng: '語彙 (Goi)', desc: '6 sets temáticos: 家族, 色, 食べ物, 曜日, 体, 数字. Script japonés + romaji + español.', count: '6 sets · 60+ palabras', href: '/practica/japones/a1/vocabulario' },
+  { id: 'escucha', emoji: '🎧', name: 'Escucha', eng: '聞く (Kiku)', desc: `20 episodios narrativos A1: «青い手帳のスタンプ». Guion dialogado con romaji, vocabulario, preguntas y transcripción bilingüe.${AUDIO_LISTO ? '' : ' Audio en producción.'}`, count: AUDIO_LISTO ? '20 episodios · 100 preguntas' : '20 episodios · audio en producción', href: '/practica/japones/a1/escucha' },
 ];
 
 export default function JaponesA1Page() {

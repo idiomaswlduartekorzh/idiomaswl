@@ -18,12 +18,12 @@ const HABILIDADES = [
     count: 'Próximamente', href: '#', available: false,
   },
   {
-    id: 'writing', emoji: '✍️', name: 'Writing', eng: 'Escritura',
+    id: 'writing', emoji: '✍️', name: 'Escritura', eng: 'Writing',
     desc: 'Essays, reports y formal letters al estilo FCE con criterios de evaluación y modelo. Próximamente.',
     count: 'Próximamente', href: '#', available: false,
   },
   {
-    id: 'listening', emoji: '🎧', name: 'Listening', eng: 'Comprensión auditiva',
+    id: 'listening', emoji: '🎧', name: 'Comprensión auditiva', eng: 'Listening',
     desc: 'Multiple matching, sentence completion y multiple choice al estilo FCE. Próximamente.',
     count: 'Próximamente', href: '#', available: false,
   },

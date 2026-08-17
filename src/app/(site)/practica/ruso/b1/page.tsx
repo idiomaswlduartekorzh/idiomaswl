@@ -18,32 +18,32 @@ export const metadata: Metadata = {
 
 const HABILIDADES = [
   {
-    id: 'lectura', emoji: '📖', name: 'Чтение (Chteniye)', eng: 'Lectura',
+    id: 'lectura', emoji: '📖', name: 'Lectura', eng: 'Чтение (Chteniye)',
     desc: '5 textos B1 (120-150 palabras): actualidad, cultura, ciencia. Aspectos verbales y casos en contexto.',
     count: '5 textos · 30 preguntas', href: '/practica/ruso/b1/lectura', available: true,
   },
   {
-    id: 'gramatica', emoji: '📐', name: 'Грамматика (Grammatika)', eng: 'Gramática',
+    id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Грамматика (Grammatika)',
     desc: 'Виды глагола (aspectos), Творительный падеж, Родительный мн.ч., Условные предложения y Причастия.',
     count: '5 temas · 50+ ejercicios', href: '/practica/ruso/b1/gramatica', available: true,
   },
   {
-    id: 'escritura', emoji: '✍️', name: 'Письмо (Pismo)', eng: 'Escritura',
+    id: 'escritura', emoji: '✍️', name: 'Escritura', eng: 'Письмо (Pismo)',
     desc: '5 tareas B1 con cirílico + transliteración: cartas, opiniones, comparaciones.',
     count: '5 prompts guiados', href: '/practica/ruso/b1/escritura', available: true,
   },
   {
-    id: 'habla', emoji: '🗣️', name: 'Разговор (Razgovor)', eng: 'Expresión oral',
+    id: 'habla', emoji: '🗣️', name: 'Expresión oral', eng: 'Разговор (Razgovor)',
     desc: '20 frases B1 con cirílico, transliteración y fonética para debates y situaciones formales.',
     count: '20 frases esenciales', href: '/practica/ruso/b1/habla', available: true,
   },
   {
-    id: 'vocabulario', emoji: '📚', name: 'Словарь (Slovar)', eng: 'Vocabulario',
+    id: 'vocabulario', emoji: '📚', name: 'Vocabulario', eng: 'Словарь (Slovar)',
     desc: '8 sets temáticos × 10 palabras con transliteración. Flashcard, MCQ y escritura.',
     count: '8 sets · 80+ palabras', href: '/practica/ruso/b1/vocabulario', available: true,
   },
   {
-    id: 'escucha', emoji: '🎧', name: 'Аудирование (Audirovaniye)', eng: 'Escucha',
+    id: 'escucha', emoji: '🎧', name: 'Escucha', eng: 'Аудирование (Audirovaniye)',
     desc: ESCUCHA.desc,
     count: ESCUCHA.count, href: '/practica/ruso/b1/escucha', available: true,
   },

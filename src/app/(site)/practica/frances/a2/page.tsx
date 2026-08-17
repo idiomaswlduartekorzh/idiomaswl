@@ -17,12 +17,12 @@ export const metadata: Metadata = {
 };
 
 const HABILIDADES = [
-  { id: 'lectura', emoji: '📖', name: 'Lecture', eng: 'Lectura', desc: '5 textos A2 (80-120 mots) sur les voyages, le travail, les opinions. Vocabulaire cliquable, 6 questions par texte.', count: '5 textes · 30 questions', href: '/practica/frances/a2/lectura' },
-  { id: 'gramatica', emoji: '📐', name: 'Grammaire', eng: 'Gramática', desc: 'Passé composé, imparfait, pronoms COD/COI, comparatif/superlatif, futur proche vs futur simple. 10 exercices par thème.', count: '5 thèmes · 50+ exercices', href: '/practica/frances/a2/gramatica' },
-  { id: 'escritura', emoji: '✍️', name: 'Écriture', eng: 'Escritura', desc: "5 tâches d'écriture A2 avec grammaire intégrée, modèle et liste de vérification.", count: '5 rédactions guidées', href: '/practica/frances/a2/escritura' },
-  { id: 'habla', emoji: '🗣️', name: 'Expression orale', eng: 'Habla', desc: '20 expressions A2 avec contexte situationnel, prononciation et variantes formelles/informelles.', count: '20 expressions essentielles', href: '/practica/frances/a2/habla' },
-  { id: 'vocabulario', emoji: '📚', name: 'Vocabulaire', eng: 'Vocabulario', desc: '8 thèmes × 10 mots. 3 modes de pratique : flashcards, QCM et écriture.', count: '8 thèmes · 80+ mots', href: '/practica/frances/a2/vocabulario' },
-  { id: 'escucha', emoji: '🎧', name: 'Compréhension orale', eng: 'Escucha', ...ESCUCHA, href: '/practica/frances/a2/escucha' },
+  { id: 'lectura', emoji: '📖', name: 'Lectura', eng: 'Lecture', desc: '5 textos A2 (80-120 mots) sur les voyages, le travail, les opinions. Vocabulaire cliquable, 6 questions par texte.', count: '5 textes · 30 questions', href: '/practica/frances/a2/lectura' },
+  { id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Grammaire', desc: 'Passé composé, imparfait, pronoms COD/COI, comparatif/superlatif, futur proche vs futur simple. 10 exercices par thème.', count: '5 thèmes · 50+ exercices', href: '/practica/frances/a2/gramatica' },
+  { id: 'escritura', emoji: '✍️', name: 'Escritura', eng: 'Écriture', desc: "5 tâches d'écriture A2 avec grammaire intégrée, modèle et liste de vérification.", count: '5 rédactions guidées', href: '/practica/frances/a2/escritura' },
+  { id: 'habla', emoji: '🗣️', name: 'Habla', eng: 'Expression orale', desc: '20 expressions A2 avec contexte situationnel, prononciation et variantes formelles/informelles.', count: '20 expressions essentielles', href: '/practica/frances/a2/habla' },
+  { id: 'vocabulario', emoji: '📚', name: 'Vocabulario', eng: 'Vocabulaire', desc: '8 thèmes × 10 mots. 3 modes de pratique : flashcards, QCM et écriture.', count: '8 thèmes · 80+ mots', href: '/practica/frances/a2/vocabulario' },
+  { id: 'escucha', emoji: '🎧', name: 'Escucha', eng: 'Compréhension orale', ...ESCUCHA, href: '/practica/frances/a2/escucha' },
 ];
 
 export default function FrancesA2Page() {

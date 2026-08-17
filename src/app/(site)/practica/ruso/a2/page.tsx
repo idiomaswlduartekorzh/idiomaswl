@@ -18,32 +18,32 @@ export const metadata: Metadata = {
 
 const HABILIDADES = [
   {
-    id: 'lectura', emoji: '📖', name: 'Чтение (Chteniye)', eng: 'Lectura',
+    id: 'lectura', emoji: '📖', name: 'Lectura', eng: 'Чтение (Chteniye)',
     desc: '5 textos A2 en cirílico (80-120 palabras) con transliteración. Vocabulario interactivo, 6 вопросов por texto.',
     count: '5 textos · 30 вопросов', href: '/practica/ruso/a2/lectura', available: true,
   },
   {
-    id: 'gramatica', emoji: '📐', name: 'Грамматика (Grammatika)', eng: 'Gramática',
+    id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Грамматика (Grammatika)',
     desc: 'Прошедшее время, будущее время, глаголы движения (идти/ехать), дательный падеж y возвратные глаголы (-ся/-сь).',
     count: '5 тем · 50+ упражнений', href: '/practica/ruso/a2/gramatica', available: true,
   },
   {
-    id: 'escritura', emoji: '✍️', name: 'Письмо (Pisʹmo)', eng: 'Escritura',
+    id: 'escritura', emoji: '✍️', name: 'Escritura', eng: 'Письмо (Pisʹmo)',
     desc: '5 tareas A2 guiadas: correos, relatos, descripciones. Acepta cirílico o transliteración.',
     count: '5 prompts guiados', href: '/practica/ruso/a2/escritura', available: true,
   },
   {
-    id: 'habla', emoji: '🗣️', name: 'Разговор (Razgovor)', eng: 'Expresión oral',
+    id: 'habla', emoji: '🗣️', name: 'Expresión oral', eng: 'Разговор (Razgovor)',
     desc: '20 frases A2 con contexto situacional: cirílico + transliteración + guía de pronunciación.',
     count: '20 frases esenciales', href: '/practica/ruso/a2/habla', available: true,
   },
   {
-    id: 'vocabulario', emoji: '📚', name: 'Словарь (Slovarʹ)', eng: 'Vocabulario',
+    id: 'vocabulario', emoji: '📚', name: 'Vocabulario', eng: 'Словарь (Slovarʹ)',
     desc: '8 sets temáticos × 10 palabras. Cirílico + transliteración + español. 3 modos de práctica.',
     count: '8 sets · 80+ слов', href: '/practica/ruso/a2/vocabulario', available: true,
   },
   {
-    id: 'escucha', emoji: '🎧', name: 'Аудирование (Audirovaniye)', eng: 'Escucha',
+    id: 'escucha', emoji: '🎧', name: 'Escucha', eng: 'Аудирование (Audirovaniye)',
     desc: ESCUCHA.desc,
     count: ESCUCHA.count, href: '/practica/ruso/a2/escucha', available: true,
   },

@@ -11,12 +11,12 @@ export const metadata: Metadata = {
 };
 
 const HABILIDADES = [
-  { id: 'lectura', emoji: '📖', name: 'Lesen', eng: 'Lectura', desc: '5 Texte A1: Anna in Berlin, die Familie, das Haus, das Essen, die Schule. Jedes Wort klickbar.', count: '5 Texte · 25 Fragen', href: '/practica/aleman/a1/lectura' },
-  { id: 'gramatica', emoji: '📐', name: 'Grammatik', eng: 'Gramática', desc: 'Los 15 temas del A1: artículos (der/die/das), kein, plural, sein/haben, orden de palabras (verbo en 2), acusativo, modales, verbos separables, es gibt y más. Con explicación, tablas y contraste español→alemán.', count: '15 temas · 200+ ejercicios', href: '/practica/aleman/a1/gramatica' },
-  { id: 'escritura', emoji: '✍️', name: 'Schreiben', eng: 'Escritura', desc: '5 geführte Schreibaufgaben: sich vorstellen, Familie, Wohnung, Aktivitäten, Vorlieben.', count: '5 geführte Aufgaben', href: '/practica/aleman/a1/escritura' },
-  { id: 'habla', emoji: '🗣️', name: 'Sprechen', eng: 'Expresión oral', desc: '15 Überlebensphrasen auf Deutsch mit detaillierter Aussprache für spanischsprachige Lerner.', count: '15 Grundphrasen', href: '/practica/aleman/a1/habla' },
-  { id: 'vocabulario', emoji: '📚', name: 'Vokabular', eng: 'Vocabulario', desc: '6 Themensets: Familie, Farben, Essen, Wochentage, Körper, Zahlen. Lernkarten + 3 Modi.', count: '6 Sets · 60+ Wörter', href: '/practica/aleman/a1/vocabulario' },
-  { id: 'escucha', emoji: '🎧', name: 'Hören', eng: 'Escucha', ...listeningCard('aleman', 'a1', '«Ein Zimmer in Berlin»: Emma kommt mit vierzehn Kartons an und lernt in einem Jahr, allein U-Bahn zu fahren und ein Café aufzuschließen.'), href: '/practica/aleman/a1/escucha' },
+  { id: 'lectura', emoji: '📖', name: 'Lectura', eng: 'Lesen', desc: '5 Texte A1: Anna in Berlin, die Familie, das Haus, das Essen, die Schule. Jedes Wort klickbar.', count: '5 Texte · 25 Fragen', href: '/practica/aleman/a1/lectura' },
+  { id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Grammatik', desc: 'Los 15 temas del A1: artículos (der/die/das), kein, plural, sein/haben, orden de palabras (verbo en 2), acusativo, modales, verbos separables, es gibt y más. Con explicación, tablas y contraste español→alemán.', count: '15 temas · 200+ ejercicios', href: '/practica/aleman/a1/gramatica' },
+  { id: 'escritura', emoji: '✍️', name: 'Escritura', eng: 'Schreiben', desc: '5 geführte Schreibaufgaben: sich vorstellen, Familie, Wohnung, Aktivitäten, Vorlieben.', count: '5 geführte Aufgaben', href: '/practica/aleman/a1/escritura' },
+  { id: 'habla', emoji: '🗣️', name: 'Expresión oral', eng: 'Sprechen', desc: '15 Überlebensphrasen auf Deutsch mit detaillierter Aussprache für spanischsprachige Lerner.', count: '15 Grundphrasen', href: '/practica/aleman/a1/habla' },
+  { id: 'vocabulario', emoji: '📚', name: 'Vocabulario', eng: 'Vokabular', desc: '6 Themensets: Familie, Farben, Essen, Wochentage, Körper, Zahlen. Lernkarten + 3 Modi.', count: '6 Sets · 60+ Wörter', href: '/practica/aleman/a1/vocabulario' },
+  { id: 'escucha', emoji: '🎧', name: 'Escucha', eng: 'Hören', ...listeningCard('aleman', 'a1', '«Ein Zimmer in Berlin»: Emma kommt mit vierzehn Kartons an und lernt in einem Jahr, allein U-Bahn zu fahren und ein Café aufzuschließen.'), href: '/practica/aleman/a1/escucha' },
 ];
 
 export default function AlemanA1Page() {

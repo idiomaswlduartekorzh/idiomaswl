@@ -17,12 +17,12 @@ export const metadata: Metadata = {
 };
 
 const HABILIDADES = [
-  { id: 'lectura', emoji: '📖', name: 'Lecture', eng: 'Lectura', desc: '5 textos B1 (120-150 palabras): actualidad, cultura y ciencia. Subjonctif y conditionnel en contexto.', count: '5 textes · 30 questions', href: '/practica/frances/b1/lectura' },
-  { id: 'gramatica', emoji: '📐', name: 'Grammaire', eng: 'Gramática', desc: 'Subjonctif présent, Conditionnel, Pronoms relatifs, Plus-que-parfait y Discours indirect.', count: '5 thèmes · 50+ exercices', href: '/practica/frances/b1/gramatica' },
-  { id: 'escritura', emoji: '✍️', name: 'Écriture', eng: 'Escritura', desc: "5 tareas B1: emails formales, essais d'opinion, descriptions.", count: '5 prompts guidés', href: '/practica/frances/b1/escritura' },
-  { id: 'habla', emoji: '🗣️', name: 'Expression orale', eng: 'Habla', desc: '20 phrases B1 pour débats, opinions et conversations formelles.', count: '20 phrases essentielles', href: '/practica/frances/b1/habla' },
-  { id: 'vocabulario', emoji: '📚', name: 'Vocabulaire', eng: 'Vocabulario', desc: '8 sets thématiques × 10 mots. Flashcard, QCM et écriture.', count: '8 sets · 80+ mots', href: '/practica/frances/b1/vocabulario' },
-  { id: 'escucha', emoji: '🎧', name: 'Compréhension orale', eng: 'Escucha', ...ESCUCHA, href: '/practica/frances/b1/escucha' },
+  { id: 'lectura', emoji: '📖', name: 'Lectura', eng: 'Lecture', desc: '5 textos B1 (120-150 palabras): actualidad, cultura y ciencia. Subjonctif y conditionnel en contexto.', count: '5 textes · 30 questions', href: '/practica/frances/b1/lectura' },
+  { id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Grammaire', desc: 'Subjonctif présent, Conditionnel, Pronoms relatifs, Plus-que-parfait y Discours indirect.', count: '5 thèmes · 50+ exercices', href: '/practica/frances/b1/gramatica' },
+  { id: 'escritura', emoji: '✍️', name: 'Escritura', eng: 'Écriture', desc: "5 tareas B1: emails formales, essais d'opinion, descriptions.", count: '5 prompts guidés', href: '/practica/frances/b1/escritura' },
+  { id: 'habla', emoji: '🗣️', name: 'Habla', eng: 'Expression orale', desc: '20 phrases B1 pour débats, opinions et conversations formelles.', count: '20 phrases essentielles', href: '/practica/frances/b1/habla' },
+  { id: 'vocabulario', emoji: '📚', name: 'Vocabulario', eng: 'Vocabulaire', desc: '8 sets thématiques × 10 mots. Flashcard, QCM et écriture.', count: '8 sets · 80+ mots', href: '/practica/frances/b1/vocabulario' },
+  { id: 'escucha', emoji: '🎧', name: 'Escucha', eng: 'Compréhension orale', ...ESCUCHA, href: '/practica/frances/b1/escucha' },
 ];
 
 export default function FrancesB1Page() {

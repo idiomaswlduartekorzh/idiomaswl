@@ -13,12 +13,12 @@ export const metadata: Metadata = {
 const AUDIO_LISTO = audioReady('frances');
 
 const HABILIDADES = [
-  { id: 'lectura', emoji: '📖', name: 'Lecture', eng: 'Lectura', desc: '5 textos A1 con vocabulario clickeable. Sophie à Paris, la famille, la maison, les repas, l\'école.', count: '5 textos · 25 preguntas', href: '/practica/frances/a1/lectura' },
-  { id: 'gramatica', emoji: '📐', name: 'Grammaire', eng: 'Gramática', desc: 'Los 15 temas del A1: artículos, être, avoir, verbos -ER, negación, partitivos, posesivos, futuro próximo y más. Cada tema con explicación, tablas, contraste español→francés y ejercicios.', count: '15 temas · 200+ ejercicios', href: '/practica/frances/a1/gramatica' },
-  { id: 'escritura', emoji: '✍️', name: 'Écriture', eng: 'Escritura', desc: '5 tareas guiadas con modelo: presentarse, describir la familia, la casa, las actividades y los gustos.', count: '5 prompts guiados', href: '/practica/frances/a1/escritura' },
-  { id: 'habla', emoji: '🗣️', name: 'Expression orale', eng: 'Expresión oral', desc: '15 frases de supervivencia en francés con pronunciación detallada para hispanohablantes.', count: '15 frases esenciales', href: '/practica/frances/a1/habla' },
-  { id: 'vocabulario', emoji: '📚', name: 'Vocabulaire', eng: 'Vocabulario', desc: '6 sets temáticos: la famille, les couleurs, la nourriture, les jours, le corps, les chiffres.', count: '6 sets · 60+ palabras', href: '/practica/frances/a1/vocabulario' },
-  { id: 'escucha', emoji: '🎧', name: 'Compréhension orale', eng: 'Escucha', desc: `20 episodios narrativos A1: «Le carnet rouge». Guion dialogado, vocabulario previo, preguntas y transcripción bilingüe.${AUDIO_LISTO ? '' : ' Audio en producción.'}`, count: AUDIO_LISTO ? '20 episodios · 100 preguntas' : '20 episodios · audio en producción', href: '/practica/frances/a1/escucha' },
+  { id: 'lectura', emoji: '📖', name: 'Lectura', eng: 'Lecture', desc: '5 textos A1 con vocabulario clickeable. Sophie à Paris, la famille, la maison, les repas, l\'école.', count: '5 textos · 25 preguntas', href: '/practica/frances/a1/lectura' },
+  { id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Grammaire', desc: 'Los 15 temas del A1: artículos, être, avoir, verbos -ER, negación, partitivos, posesivos, futuro próximo y más. Cada tema con explicación, tablas, contraste español→francés y ejercicios.', count: '15 temas · 200+ ejercicios', href: '/practica/frances/a1/gramatica' },
+  { id: 'escritura', emoji: '✍️', name: 'Escritura', eng: 'Écriture', desc: '5 tareas guiadas con modelo: presentarse, describir la familia, la casa, las actividades y los gustos.', count: '5 prompts guiados', href: '/practica/frances/a1/escritura' },
+  { id: 'habla', emoji: '🗣️', name: 'Expresión oral', eng: 'Expression orale', desc: '15 frases de supervivencia en francés con pronunciación detallada para hispanohablantes.', count: '15 frases esenciales', href: '/practica/frances/a1/habla' },
+  { id: 'vocabulario', emoji: '📚', name: 'Vocabulario', eng: 'Vocabulaire', desc: '6 sets temáticos: la famille, les couleurs, la nourriture, les jours, le corps, les chiffres.', count: '6 sets · 60+ palabras', href: '/practica/frances/a1/vocabulario' },
+  { id: 'escucha', emoji: '🎧', name: 'Escucha', eng: 'Compréhension orale', desc: `20 episodios narrativos A1: «Le carnet rouge». Guion dialogado, vocabulario previo, preguntas y transcripción bilingüe.${AUDIO_LISTO ? '' : ' Audio en producción.'}`, count: AUDIO_LISTO ? '20 episodios · 100 preguntas' : '20 episodios · audio en producción', href: '/practica/frances/a1/escucha' },
 ];
 
 export default function FrancesA1Page() {
