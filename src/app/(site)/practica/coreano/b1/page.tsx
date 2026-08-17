@@ -18,32 +18,32 @@ export const metadata: Metadata = {
 
 const HABILIDADES = [
   {
-    id: 'lectura', emoji: '📖', name: '읽기 (Ilgi)', eng: 'Lectura',
+    id: 'lectura', emoji: '📖', name: 'Lectura', eng: '읽기 (Ilgi)',
     desc: '5 textos B1 (120-150 palabras): noticias, cultura, sociedad. Condicionales y expresiones complejas en contexto.',
     count: '5 textos · 30 preguntas', href: '/practica/coreano/b1/lectura', available: true,
   },
   {
-    id: 'gramatica', emoji: '📐', name: '문법 (Munbeop)', eng: 'Gramática',
+    id: 'gramatica', emoji: '📐', name: 'Gramática', eng: '문법 (Munbeop)',
     desc: '-(으)면, -아/어야 하다, -(으)ㄹ 수 있다, -기 때문에, -는데. 10 ejercicios por tema.',
     count: '5 temas · 50+ ejercicios', href: '/practica/coreano/b1/gramatica', available: true,
   },
   {
-    id: 'escritura', emoji: '✍️', name: '쓰기 (Sseugi)', eng: 'Escritura',
+    id: 'escritura', emoji: '✍️', name: 'Escritura', eng: '쓰기 (Sseugi)',
     desc: '5 tareas B1 con Hangul + romanización: cartas, opiniones, comparaciones.',
     count: '5 prompts guiados', href: '/practica/coreano/b1/escritura', available: true,
   },
   {
-    id: 'habla', emoji: '🗣️', name: '말하기 (Malhagi)', eng: 'Expresión oral',
+    id: 'habla', emoji: '🗣️', name: 'Expresión oral', eng: '말하기 (Malhagi)',
     desc: '20 frases B1 con Hangul, romaja y fonética para debates y situaciones formales.',
     count: '20 frases esenciales', href: '/practica/coreano/b1/habla', available: true,
   },
   {
-    id: 'vocabulario', emoji: '📚', name: '어휘 (Eohwi)', eng: 'Vocabulario',
+    id: 'vocabulario', emoji: '📚', name: 'Vocabulario', eng: '어휘 (Eohwi)',
     desc: '8 sets temáticos × 10 palabras con romaja. Flashcard, MCQ y escritura.',
     count: '8 sets · 80+ palabras', href: '/practica/coreano/b1/vocabulario', available: true,
   },
   {
-    id: 'escucha', emoji: '🎧', name: '듣기 (Deutgi)', eng: 'Escucha',
+    id: 'escucha', emoji: '🎧', name: 'Escucha', eng: '듣기 (Deutgi)',
     desc: ESCUCHA.desc,
     count: ESCUCHA.count, href: '/practica/coreano/b1/escucha', available: true,
   },

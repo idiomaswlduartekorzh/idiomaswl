@@ -18,32 +18,32 @@ export const metadata: Metadata = {
 
 const HABILIDADES = [
   {
-    id: 'lectura', emoji: '📖', name: '読む (Yomu)', eng: 'Lectura',
+    id: 'lectura', emoji: '📖', name: 'Lectura', eng: '読む (Yomu)',
     desc: '5 textos B1 (120-150 palabras): noticias, cultura, sociedad. Pasiva y causativa en contexto.',
     count: '5 textos · 30 preguntas', href: '/practica/japones/b1/lectura', available: true,
   },
   {
-    id: 'gramatica', emoji: '📐', name: '文法 (Bunpō)', eng: 'Gramática',
+    id: 'gramatica', emoji: '📐', name: 'Gramática', eng: '文法 (Bunpō)',
     desc: '〜てもいい/〜てはいけない, 受身形, 使役形, 〜たら y 〜のに. 10 ejercicios por tema.',
     count: '5 temas · 50+ ejercicios', href: '/practica/japones/b1/gramatica', available: true,
   },
   {
-    id: 'escritura', emoji: '✍️', name: '書く (Kaku)', eng: 'Escritura',
+    id: 'escritura', emoji: '✍️', name: 'Escritura', eng: '書く (Kaku)',
     desc: '5 tareas B1 con kanji + romaji: cartas, opiniones, comparaciones.',
     count: '5 prompts guiados', href: '/practica/japones/b1/escritura', available: true,
   },
   {
-    id: 'habla', emoji: '🗣️', name: '話す (Hanasu)', eng: 'Expresión oral',
+    id: 'habla', emoji: '🗣️', name: 'Expresión oral', eng: '話す (Hanasu)',
     desc: '20 frases B1 con kanji, romaji y fonética para debates y situaciones formales.',
     count: '20 frases esenciales', href: '/practica/japones/b1/habla', available: true,
   },
   {
-    id: 'vocabulario', emoji: '📚', name: '語彙 (Goi)', eng: 'Vocabulario',
+    id: 'vocabulario', emoji: '📚', name: 'Vocabulario', eng: '語彙 (Goi)',
     desc: '8 sets temáticos × 10 palabras con romaji. Flashcard, MCQ y escritura.',
     count: '8 sets · 80+ palabras', href: '/practica/japones/b1/vocabulario', available: true,
   },
   {
-    id: 'escucha', emoji: '🎧', name: '聞く (Kiku)', eng: 'Escucha',
+    id: 'escucha', emoji: '🎧', name: 'Escucha', eng: '聞く (Kiku)',
     desc: ESCUCHA.desc,
     count: ESCUCHA.count, href: '/practica/japones/b1/escucha', available: true,
   },

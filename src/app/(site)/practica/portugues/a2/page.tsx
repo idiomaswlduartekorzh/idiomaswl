@@ -17,12 +17,12 @@ export const metadata: Metadata = {
 };
 
 const HABILIDADES = [
-  { id: 'lectura', emoji: '📖', name: 'Leitura', eng: 'Lectura', desc: '5 textos A2 (80-120 palavras) sobre viagens, trabalho, opiniões. Vocabulário clicável, 6 perguntas por texto.', count: '5 textos · 30 perguntas', href: '/practica/portugues/a2/lectura' },
+  { id: 'lectura', emoji: '📖', name: 'Lectura', eng: 'Leitura', desc: '5 textos A2 (80-120 palavras) sobre viagens, trabalho, opiniões. Vocabulário clicável, 6 perguntas por texto.', count: '5 textos · 30 perguntas', href: '/practica/portugues/a2/lectura' },
   { id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Gramática', desc: 'Pretérito perfeito vs imperfeito, pronomes oblíquos, ser vs estar, comparativo e futuro. 10 exercícios por tema.', count: '5 temas · 50+ exercícios', href: '/practica/portugues/a2/gramatica' },
-  { id: 'escritura', emoji: '✍️', name: 'Escrita', eng: 'Escritura', desc: '5 tarefas de escrita A2 com gramática integrada, modelo e lista de verificação.', count: '5 redações guiadas', href: '/practica/portugues/a2/escritura' },
-  { id: 'habla', emoji: '🗣️', name: 'Expressão oral', eng: 'Expresión oral', desc: '20 expressões A2 com contexto situacional, pronúncia e variantes formais/informais.', count: '20 expressões essenciais', href: '/practica/portugues/a2/habla' },
-  { id: 'vocabulario', emoji: '📚', name: 'Vocabulário', eng: 'Vocabulario', desc: '8 temas × 10 palavras. 3 modos de prática: flashcard, QCM e escrita.', count: '8 temas · 80+ palavras', href: '/practica/portugues/a2/vocabulario' },
-  { id: 'escucha', emoji: '🎧', name: 'Compreensão auditiva', eng: 'Escucha', ...ESCUCHA, href: '/practica/portugues/a2/escucha' },
+  { id: 'escritura', emoji: '✍️', name: 'Escritura', eng: 'Escrita', desc: '5 tarefas de escrita A2 com gramática integrada, modelo e lista de verificação.', count: '5 redações guiadas', href: '/practica/portugues/a2/escritura' },
+  { id: 'habla', emoji: '🗣️', name: 'Expresión oral', eng: 'Expressão oral', desc: '20 expressões A2 com contexto situacional, pronúncia e variantes formais/informais.', count: '20 expressões essenciais', href: '/practica/portugues/a2/habla' },
+  { id: 'vocabulario', emoji: '📚', name: 'Vocabulario', eng: 'Vocabulário', desc: '8 temas × 10 palavras. 3 modos de prática: flashcard, QCM e escrita.', count: '8 temas · 80+ palavras', href: '/practica/portugues/a2/vocabulario' },
+  { id: 'escucha', emoji: '🎧', name: 'Escucha', eng: 'Compreensão auditiva', ...ESCUCHA, href: '/practica/portugues/a2/escucha' },
 ];
 
 export default function PortuguesA2Page() {

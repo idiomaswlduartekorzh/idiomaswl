@@ -13,12 +13,12 @@ export const metadata: Metadata = {
 const AUDIO_LISTO = audioReady('portugues');
 
 const HABILIDADES = [
-  { id: 'lectura', emoji: '📖', name: 'Leitura', eng: 'Lectura', desc: '5 textos A1: Carlos em São Paulo, a família, a casa, a comida e a escola. Cada palavra com tradução ao clique.', count: '5 textos · 25 perguntas', href: '/practica/portugues/a1/lectura' },
+  { id: 'lectura', emoji: '📖', name: 'Lectura', eng: 'Leitura', desc: '5 textos A1: Carlos em São Paulo, a família, a casa, a comida e a escola. Cada palavra com tradução ao clique.', count: '5 textos · 25 perguntas', href: '/practica/portugues/a1/lectura' },
   { id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Gramática', desc: 'Los 15 temas del A1: artículos, ser, estar, ter, verbos -ar/-er/-ir, você, negación, contracciones (do/no/ao), posesivos, há/tem y más. Con explicación, tablas y contraste español→portugués.', count: '15 temas · 200+ ejercicios', href: '/practica/portugues/a1/gramatica' },
-  { id: 'escritura', emoji: '✍️', name: 'Escrita', eng: 'Escritura', desc: '5 tarefas guiadas: apresentar-se, descrever a família, a casa, as atividades e as preferências.', count: '5 prompts guiados', href: '/practica/portugues/a1/escritura' },
-  { id: 'habla', emoji: '🗣️', name: 'Expressão oral', eng: 'Expresión oral', desc: '15 frases de sobrevivência em português com pronúncia e notas para hispanohablantes.', count: '15 frases esenciales', href: '/practica/portugues/a1/habla' },
-  { id: 'vocabulario', emoji: '📚', name: 'Vocabulário', eng: 'Vocabulario', desc: '6 conjuntos temáticos: família, cores, comida, dias, corpo, números. Flashcards + 3 modos.', count: '6 sets · 60+ palabras', href: '/practica/portugues/a1/vocabulario' },
-  { id: 'escucha', emoji: '🎧', name: 'Compreensão auditiva', eng: 'Escucha', desc: `20 episódios narrativos A1: «O áudio no grupo errado». Roteiro dialogado, vocabulário, perguntas e transcrição bilíngue.${AUDIO_LISTO ? '' : ' Áudio em produção.'}`, count: AUDIO_LISTO ? '20 episódios · 100 perguntas' : '20 episódios · áudio em produção', href: '/practica/portugues/a1/escucha' },
+  { id: 'escritura', emoji: '✍️', name: 'Escritura', eng: 'Escrita', desc: '5 tarefas guiadas: apresentar-se, descrever a família, a casa, as atividades e as preferências.', count: '5 prompts guiados', href: '/practica/portugues/a1/escritura' },
+  { id: 'habla', emoji: '🗣️', name: 'Expresión oral', eng: 'Expressão oral', desc: '15 frases de sobrevivência em português com pronúncia e notas para hispanohablantes.', count: '15 frases esenciales', href: '/practica/portugues/a1/habla' },
+  { id: 'vocabulario', emoji: '📚', name: 'Vocabulario', eng: 'Vocabulário', desc: '6 conjuntos temáticos: família, cores, comida, dias, corpo, números. Flashcards + 3 modos.', count: '6 sets · 60+ palabras', href: '/practica/portugues/a1/vocabulario' },
+  { id: 'escucha', emoji: '🎧', name: 'Escucha', eng: 'Compreensão auditiva', desc: `20 episódios narrativos A1: «O áudio no grupo errado». Roteiro dialogado, vocabulário, perguntas e transcrição bilíngue.${AUDIO_LISTO ? '' : ' Áudio em produção.'}`, count: AUDIO_LISTO ? '20 episódios · 100 perguntas' : '20 episódios · áudio em produção', href: '/practica/portugues/a1/escucha' },
 ];
 
 export default function PortuguesA1Page() {

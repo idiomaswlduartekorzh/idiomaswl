@@ -18,32 +18,32 @@ export const metadata: Metadata = {
 
 const HABILIDADES = [
   {
-    id: 'lectura', emoji: '📖', name: '読む (Yomu)', eng: 'Lectura',
+    id: 'lectura', emoji: '📖', name: 'Lectura', eng: '読む (Yomu)',
     desc: '5 textos A2 en japonés (80-120 palabras) con romaji. Vocabulario interactivo clickeable, 6 preguntas por texto.',
     count: '5 textos · 30 preguntas', href: '/practica/japones/a2/lectura', available: true,
   },
   {
-    id: 'gramatica', emoji: '📐', name: '文法 (Bunpō)', eng: 'Gramática',
+    id: 'gramatica', emoji: '📐', name: 'Gramática', eng: '文法 (Bunpō)',
     desc: 'て-form, た-form (pasado), ～ています, ～たいです (querer), ～ことができます (poder) y ～なければなりません (deber).',
     count: '5 temas · 50+ ejercicios', href: '/practica/japones/a2/gramatica', available: true,
   },
   {
-    id: 'escritura', emoji: '✍️', name: '書く (Kaku)', eng: 'Escritura',
+    id: 'escritura', emoji: '✍️', name: 'Escritura', eng: '書く (Kaku)',
     desc: '5 tareas A2 guiadas: emails, relatos, comparaciones. Acepta romaji o hiragana/katakana.',
     count: '5 prompts guiados', href: '/practica/japones/a2/escritura', available: true,
   },
   {
-    id: 'habla', emoji: '🗣️', name: '話す (Hanasu)', eng: 'Expresión oral',
+    id: 'habla', emoji: '🗣️', name: 'Expresión oral', eng: '話す (Hanasu)',
     desc: '20 frases A2 con contexto situacional, romaji y guía de pronunciación para hispanohablantes.',
     count: '20 frases esenciales', href: '/practica/japones/a2/habla', available: true,
   },
   {
-    id: 'vocabulario', emoji: '📚', name: '語彙 (Goi)', eng: 'Vocabulario',
+    id: 'vocabulario', emoji: '📚', name: 'Vocabulario', eng: '語彙 (Goi)',
     desc: '8 sets temáticos × 10 palabras. Script japonés + romaji + español. 3 modos de práctica.',
     count: '8 sets · 80+ palabras', href: '/practica/japones/a2/vocabulario', available: true,
   },
   {
-    id: 'escucha', emoji: '🎧', name: '聞く (Kiku)', eng: 'Escucha',
+    id: 'escucha', emoji: '🎧', name: 'Escucha', eng: '聞く (Kiku)',
     desc: ESCUCHA.desc,
     count: ESCUCHA.count, href: '/practica/japones/a2/escucha', available: true,
   },

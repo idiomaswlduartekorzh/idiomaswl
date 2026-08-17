@@ -11,12 +11,12 @@ export const metadata: Metadata = {
 };
 
 const HABILIDADES = [
-  { id: 'lectura', emoji: '📖', name: 'Lesen', eng: 'Lectura', desc: '5 Texte B1 (120-150 Wörter): Alltag, Kultur, Umwelt. Konjunktiv II y Passiv en contexto.', count: '5 Texte · 30 Fragen', href: '/practica/aleman/b1/lectura' },
-  { id: 'gramatica', emoji: '📐', name: 'Grammatik', eng: 'Gramática', desc: 'Konjunktiv II, Relativsätze, Passiv Präsens, temporale Konjunktionen y Indirekte Rede.', count: '5 Themen · 50+ Übungen', href: '/practica/aleman/b1/gramatica' },
-  { id: 'escritura', emoji: '✍️', name: 'Schreiben', eng: 'Escritura', desc: '5 Aufgaben B1: formelle Briefe, Meinungsaufsätze, Vergleiche.', count: '5 geleitete Aufgaben', href: '/practica/aleman/b1/escritura' },
-  { id: 'habla', emoji: '🗣️', name: 'Sprechen', eng: 'Expresión oral', desc: '20 Ausdrücke B1 für Diskussionen, Meinungen y formelle Gespräche.', count: '20 wesentliche Ausdrücke', href: '/practica/aleman/b1/habla' },
-  { id: 'vocabulario', emoji: '📚', name: 'Vokabular', eng: 'Vocabulario', desc: '8 Themenbereiche × 10 Wörter. Lernkarten, MCQ y Schreiben.', count: '8 Sets · 80+ Wörter', href: '/practica/aleman/b1/vocabulario' },
-  { id: 'escucha', emoji: '🎧', name: 'Hören', eng: 'Escucha', ...listeningCard('aleman', 'b1', '«Der Brief ohne Absender»: ein Brief ohne Absender, ein altes Foto und zwei Partner, die seit dreißig Jahren nicht miteinander sprechen.'), href: '/practica/aleman/b1/escucha' },
+  { id: 'lectura', emoji: '📖', name: 'Lectura', eng: 'Lesen', desc: '5 Texte B1 (120-150 Wörter): Alltag, Kultur, Umwelt. Konjunktiv II y Passiv en contexto.', count: '5 Texte · 30 Fragen', href: '/practica/aleman/b1/lectura' },
+  { id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Grammatik', desc: 'Konjunktiv II, Relativsätze, Passiv Präsens, temporale Konjunktionen y Indirekte Rede.', count: '5 Themen · 50+ Übungen', href: '/practica/aleman/b1/gramatica' },
+  { id: 'escritura', emoji: '✍️', name: 'Escritura', eng: 'Schreiben', desc: '5 Aufgaben B1: formelle Briefe, Meinungsaufsätze, Vergleiche.', count: '5 geleitete Aufgaben', href: '/practica/aleman/b1/escritura' },
+  { id: 'habla', emoji: '🗣️', name: 'Expresión oral', eng: 'Sprechen', desc: '20 Ausdrücke B1 für Diskussionen, Meinungen y formelle Gespräche.', count: '20 wesentliche Ausdrücke', href: '/practica/aleman/b1/habla' },
+  { id: 'vocabulario', emoji: '📚', name: 'Vocabulario', eng: 'Vokabular', desc: '8 Themenbereiche × 10 Wörter. Lernkarten, MCQ y Schreiben.', count: '8 Sets · 80+ Wörter', href: '/practica/aleman/b1/vocabulario' },
+  { id: 'escucha', emoji: '🎧', name: 'Escucha', eng: 'Hören', ...listeningCard('aleman', 'b1', '«Der Brief ohne Absender»: ein Brief ohne Absender, ein altes Foto und zwei Partner, die seit dreißig Jahren nicht miteinander sprechen.'), href: '/practica/aleman/b1/escucha' },
 ];
 
 export default function AlemanB1Page() {
