@@ -87,6 +87,17 @@ import koA2JongiChaegmanIlgeoyo from '@/data/reading/exercises/ko-a2-jongi-chaeg
 import koA2SumureulBaeugoItsseoyo from '@/data/reading/exercises/ko-a2-sumureul-baeugo-itsseoyo.json'
 import koA2UisagaHanMal from '@/data/reading/exercises/ko-a2-uisaga-han-mal.json'
 import koA2YeohaengGyehoek from '@/data/reading/exercises/ko-a2-yeohaeng-gyehoek.json'
+// Coreano B1 — generadas desde `src/data/reading/source/ko-b1.mjs`.
+import koB1AbeojiWaCheonjangyiMun from '@/data/reading/exercises/ko-b1-abeoji-wa-cheonjangyi-mun.json'
+import koB1AniRagoMalhaneunYeonseup from '@/data/reading/exercises/ko-b1-ani-rago-malhaneun-yeonseup.json'
+import koB1BamGeunmu from '@/data/reading/exercises/ko-b1-bam-geunmu.json'
+import koB1DoraonJeolmeuniDeul from '@/data/reading/exercises/ko-b1-doraon-jeolmeuni-deul.json'
+import koB1GateunNoraeuiDuBeonjeon from '@/data/reading/exercises/ko-b1-gateun-noraeui-du-beonjeon.json'
+import koB1GyedaniYeoseotGae from '@/data/reading/exercises/ko-b1-gyedani-yeoseot-gae.json'
+import koB1IjeHangugeoroMalhagiroHaesseoyo from '@/data/reading/exercises/ko-b1-ije-hangugeoro-malhagiro-haesseoyo.json'
+import koB1JeokhijiAnheunGyuchik from '@/data/reading/exercises/ko-b1-jeokhiji-anheun-gyuchik.json'
+import koB1SijangiNamgeDoenIyu from '@/data/reading/exercises/ko-b1-sijangi-namge-doen-iyu.json'
+import koB1TongyeoksaUiHanabeon from '@/data/reading/exercises/ko-b1-tongyeoksa-ui-hanabeon.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -172,6 +183,16 @@ const RAW_EXERCISES: unknown[] = [
   koA2SumureulBaeugoItsseoyo,
   koA2UisagaHanMal,
   koA2YeohaengGyehoek,
+  koB1AbeojiWaCheonjangyiMun,
+  koB1AniRagoMalhaneunYeonseup,
+  koB1BamGeunmu,
+  koB1DoraonJeolmeuniDeul,
+  koB1GateunNoraeuiDuBeonjeon,
+  koB1GyedaniYeoseotGae,
+  koB1IjeHangugeoroMalhagiroHaesseoyo,
+  koB1JeokhijiAnheunGyuchik,
+  koB1SijangiNamgeDoenIyu,
+  koB1TongyeoksaUiHanabeon,
 ]
 
 export const READING_EXERCISES: ReadingExercise[] = RAW_EXERCISES.map((candidate) => {

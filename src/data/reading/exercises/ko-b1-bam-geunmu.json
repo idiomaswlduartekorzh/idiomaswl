@@ -1,0 +1,493 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-b1-bam-geunmu",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Coreano B1",
+    "topik": 3,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. B1 se sitúa alrededor del TOPIK II nivel 3, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "bam-geunmu",
+  "series": {
+    "id": "coreano-b1-lectura-10",
+    "episode": 4,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-b1-ani-rago-malhaneun-yeonseup",
+    "nextExerciseId": "ko-b1-ije-hangugeoro-malhagiro-haesseoyo"
+  },
+  "classification": {
+    "genre": "crónica personal",
+    "topic": "trabajar de noche",
+    "intent": "learning",
+    "tags": [
+      "coreano b1",
+      "lectura",
+      "simultáneo 으면서",
+      "inmediato 자마자"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El turno de noche"
+    },
+    "intro": {
+      "es": "Once años de turno de noche en una fábrica, y una hora entre las cuatro y las cinco que el narrador llama suya. Lectura de coreano B1."
+    },
+    "mission": {
+      "es": "Averigua qué gana y qué pierde con ese horario, según él mismo."
+    },
+    "targetText": "저는 십일 년 동안 밤에 일하고 있어요. 인쇄 공장이에요. 저녁 여덟 시에 시작해서 아침 여섯 시에 끝나요. 집에 도착하자마자 씻고 잠을 자요. 보통 일곱 시에 눕고 오후 두 시에 일어나요. 사람들이 자주 물어요. 힘들지 않아요? 힘들어요. 하지만 제가 생각하는 어려움은 사람들이 생각하는 것과 달라요. 잠은 문제가 아니에요. 십일 년이면 몸이 적응해요. 진짜 어려움은 다른 거예요. 제 딸이 학교에서 상을 받았을 때 저는 자고 있었어요. 아내가 사진을 보내 줬어요. 저는 그 사진을 저녁에 밥을 먹으면서 봤어요. 딸은 이미 자고 있었어요. 그런 일이 십일 년 동안 여러 번 있었어요. 그게 어려운 거예요. 딸이 여덟 살일 때 저에게 물었어요. 아빠는 왜 밤에만 일해요? 저는 돈 때문이라고 말하려고 했어요. 하지만 그건 정확하지 않아요. 밤 근무가 돈을 조금 더 주기는 해요. 하지만 진짜 이유는 다른 거예요. 십일 년 전에 저는 낮 근무에서 실수를 했어요. 그 후에 밤으로 옮겨졌어요. 그리고 옮긴 채로 십일 년이 지났어요. 아무도 저를 다시 부르지 않았어요. 저도 다시 신청하지 않았어요. 하지만 좋은 것도 있어요. 새벽 네 시하고 다섯 시 사이에 공장이 아주 조용해져요. 기계는 돌아가고 있지만 사람들은 말을 안 해요. 저는 그 시간에 커피를 마시면서 창밖을 봐요. 도시에 불이 하나씩 켜져요. 그 한 시간은 제 시간이에요. 아무도 저에게 전화하지 않아요. 회사도, 가족도, 은행도요. 낮에 일하는 사람들은 그런 시간이 없을 거예요. 내년에 저는 낮 근무로 바꿀 수 있어요. 신청서를 이미 받았어요. 아직 안 냈어요. 딸이 고등학교에 들어가기 때문에 바꿔야 해요. 바꿀 거예요. 하지만 그 한 시간은 그리울 것 같아요.",
+    "wordCount": 226,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Usar 으면서 para dos acciones simultáneas del mismo sujeto."
+      },
+      {
+        "es": "Usar 자마자 para lo que ocurre inmediatamente después."
+      },
+      {
+        "es": "Distinguir la dificultad que el narrador nombra de la que los demás le suponen."
+      }
+    ],
+    "grammarFocus": [
+      "simultaneo-eumyeonseo-b1",
+      "inmediato-jamaja-b1",
+      "progresivo-go-itda-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "인쇄",
+        "lemma": "인쇄",
+        "reading": "inswae",
+        "glosses": {
+          "es": "imprenta, impresión"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "공장",
+        "lemma": "공장",
+        "reading": "gongjang",
+        "glosses": {
+          "es": "fábrica"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "적응해요",
+        "lemma": "적응하다",
+        "reading": "jeogeunghaeyo",
+        "glosses": {
+          "es": "se adapta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "상",
+        "lemma": "상",
+        "reading": "sang",
+        "glosses": {
+          "es": "premio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "새벽",
+        "lemma": "새벽",
+        "reading": "saebyeok",
+        "glosses": {
+          "es": "madrugada"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "창밖",
+        "lemma": "창밖",
+        "reading": "changbak",
+        "glosses": {
+          "es": "fuera de la ventana"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "신청서",
+        "lemma": "신청서",
+        "reading": "sincheongseo",
+        "glosses": {
+          "es": "formulario de solicitud"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "그리울",
+        "lemma": "그립다",
+        "reading": "geuriul",
+        "glosses": {
+          "es": "echar de menos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El trabajo por turnos en fábricas coreanas suele organizarse en ciclos de doce horas, y cambiar de turno requiere solicitud formal. Muchos padres lo piden cuando los hijos entran en el instituto."
+    },
+    "spanishSpeakerNote": {
+      "es": "으면서 exige que las dos acciones sean del mismo sujeto: 커피를 마시면서 창밖을 봐요, «miro por la ventana mientras tomo café». Y 자마자 es inmediatez sin pausa: 도착하자마자, «en cuanto llego»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo en coreano que desarrolla una idea y cambia de dirección, distinguir el hecho de la interpretación, y justificar una inferencia cruzando dos pasajes separados."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas",
+      "antes-despues-a2",
+      "capacidad-rl-su-itda-a2",
+      "clausulas-relativas-a2",
+      "condicional-eumyeon-a2",
+      "conector-aseo-a2",
+      "cuanto-eolmana-a2",
+      "discurso-reportado-a2",
+      "durante-neun-dongane-a2",
+      "futuro-rl-geoyeyo-a2",
+      "honorificos-a2",
+      "intencion-ryogo-hada-a2",
+      "negacion-ji-anta-a2",
+      "obligacion-aya-hada-a2",
+      "parecer-neun-geot-gatda-a2",
+      "particulas-recipiente-a2",
+      "progresivo-go-itda-a2",
+      "razon-gittaemune-a2",
+      "razon-niikka-a2",
+      "solo-tambien-man-do-a2",
+      "verbos-irregulares-pasado-a2",
+      "alternativa-geona-b1",
+      "causal-gi-ttaemune-b1",
+      "causativa-shichang-b1",
+      "condicional-erado-eurely-b1",
+      "despues-gona-seo-b1",
+      "estado-mantener-chae-b1",
+      "forzosidad-subakkeneopsda-b1",
+      "futuro-intencion-b1",
+      "ge-doeda-b1",
+      "inmediato-jamaja-b1",
+      "kiro-hada-b1",
+      "obligacion-eoyahada-b1",
+      "observacion-neyo-b1",
+      "oportunidad-gime-b1",
+      "pasiva-jeosudo-b1",
+      "passado-reminiscencia-b1",
+      "posibilidad-su-itda-b1",
+      "proporcion-euttorok-b1",
+      "proposito-dorok-b1",
+      "simultaneo-eumyeonseo-b1"
+    ],
+    "disallowedGrammar": [
+      "registro literario",
+      "hanja sin glosa",
+      "dialecto regional"
+    ],
+    "maxOutOfLevelVocabularyPercent": 7,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 5.1,
+      "maxSentenceWords": 9,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativa",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Prosa B1 con 더라/던, 게 되다, 채, 을수록 y pasiva. Sin registro literario ni hanja sin glosar. Inferencia moderada: exige cruzar dos pasajes."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué corrige el narrador sobre su trabajo?",
+      "options": [
+        {
+          "id": "dificultad",
+          "text": "Que lo difícil no es el sueño, sino perderse momentos de su hija"
+        },
+        {
+          "id": "sueno",
+          "text": "Que dormir de día es lo más duro de todo"
+        },
+        {
+          "id": "dinero",
+          "text": "Que el turno de noche se paga mejor"
+        }
+      ],
+      "answer": "dificultad",
+      "evidence": "잠은 문제가 아니에요 … 제 딸이 학교에서 상을 받았을 때 저는 자고 있었어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo anuncia antes: la dificultad que él ve no es la que la gente le supone."
+        },
+        "incorrect": {
+          "es": "Dice expresamente que el sueño no es el problema, y no habla de dinero. Busca 잠은 문제가 아니에요."
+        },
+        "strategy": {
+          "es": "Cuando un texto dice «lo que yo pienso es distinto de lo que piensan», lo que sigue es su tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿A qué hora termina su turno?",
+      "options": [
+        {
+          "id": "seis",
+          "text": "A las seis de la mañana"
+        },
+        {
+          "id": "ocho",
+          "text": "A las ocho de la tarde"
+        },
+        {
+          "id": "dos",
+          "text": "A las dos de la tarde"
+        }
+      ],
+      "answer": "seis",
+      "evidence": "저녁 여덟 시에 시작해서 아침 여섯 시에 끝나요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Las ocho es cuando empieza y las dos, cuando se levanta."
+        },
+        "incorrect": {
+          "es": "La frase da entrada y salida juntas. Fíjate en la que va con 끝나요, terminar."
+        },
+        "strategy": {
+          "es": "Cuando una frase da dos horas con 시작해서 y 끝나요, empareja cada una con su verbo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice 집에 도착하자마자 씻고 잠을 자요. ¿Qué indica 자마자?",
+      "options": [
+        {
+          "id": "inmediato",
+          "text": "Que lo hace justo al llegar, sin pausa"
+        },
+        {
+          "id": "antes",
+          "text": "Que lo hace antes de llegar a casa"
+        },
+        {
+          "id": "aveces",
+          "text": "Que a veces lo hace y a veces no"
+        }
+      ],
+      "answer": "inmediato",
+      "evidence": "집에 도착하자마자 씻고 잠을 자요. 보통 일곱 시에 눕고 오후 두 시에 일어나요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Sale a las seis y a las siete ya está acostado: no hay hueco entre las dos cosas."
+        },
+        "incorrect": {
+          "es": "La frase siguiente da las horas y confirma que no hay pausa: sale a las seis, se acuesta a las siete."
+        },
+        "strategy": {
+          "es": "Si dudas de una terminación temporal, comprueba las horas que el texto da alrededor. Ellas lo confirman."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué no ha entregado todavía la solicitud de cambio de turno?",
+      "options": [
+        {
+          "id": "hora",
+          "text": "Porque le cuesta renunciar a esa hora de silencio"
+        },
+        {
+          "id": "dinero",
+          "text": "Porque el turno de día se paga menos"
+        },
+        {
+          "id": "plazo",
+          "text": "Porque el plazo se abre el año que viene"
+        }
+      ],
+      "answer": "hora",
+      "evidence": "아직 안 냈어요 … 바꿀 거예요. 하지만 그 한 시간은 그리울 것 같아요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Va a cambiar —lo dice— pero la última frase explica la demora sin nombrarla."
+        },
+        "incorrect": {
+          "es": "No habla de sueldo, y ya tiene el formulario en la mano. Lee la última frase del texto."
+        },
+        "strategy": {
+          "es": "Cuando alguien dice que hará algo y aun así no lo hace, el motivo está en la frase con 하지만."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: entre las cuatro y las cinco las máquinas de la fábrica están paradas.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "기계는 돌아가고 있지만 사람들은 말을 안 해요.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: las máquinas siguen funcionando. Lo que se calla son las personas."
+        },
+        "incorrect": {
+          "es": "Busca la frase con 기계, máquina. El 지만 marca el contraste con lo que sí se detiene."
+        },
+        "strategy": {
+          "es": "La partícula 지만 opone dos hechos. Si solo lees la segunda mitad, entiendes lo contrario."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué enumera 회사도, 가족도, 은행도요?",
+      "options": [
+        {
+          "id": "nadie",
+          "text": "Para subrayar que en esa hora nadie puede alcanzarlo"
+        },
+        {
+          "id": "deudas",
+          "text": "Para explicar que tiene deudas con el banco"
+        },
+        {
+          "id": "trabajo",
+          "text": "Para quejarse de que lo llaman a todas horas"
+        }
+      ],
+      "answer": "nadie",
+      "evidence": "아무도 저에게 전화하지 않아요. 회사도, 가족도, 은행도요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La enumeración con 도 refuerza el 아무도 anterior: ni unos ni otros."
+        },
+        "incorrect": {
+          "es": "No habla de deudas ni se queja. Fíjate en la frase inmediatamente anterior, con 아무도."
+        },
+        "strategy": {
+          "es": "Una lista con 도 repetido amplifica lo dicho justo antes. Busca la frase que la introduce."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en coreano sobre un horario de trabajo o estudio poco habitual. Usa 으면서 dos veces y 자마자 una vez."
+    },
+    "minWords": 60,
+    "maxWords": 120,
+    "hints": [
+      "저는 … 동안 …고 있어요.",
+      "…자마자 …",
+      "커피를 마시면서 …",
+      "하지만 …은 그리울 것 같아요."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente — Zhanna Korzh",
+    "pedagogyReviewer": "Pendiente — Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. El coreano NO ha sido revisado por hablante nativa. Bloqueante para publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano B1: El turno de noche | WeLearn"
+    },
+    "description": {
+      "es": "Lee una crónica en coreano B1 y practica 으면서 (simultaneidad) y 자마자 (inmediatez). Con vocabulario romanizado y seis preguntas."
+    },
+    "canonicalPath": "/practica/coreano/b1/lectura/bam-geunmu",
+    "indexable": false,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-b1-ani-rago-malhaneun-yeonseup",
+      "ko-b1-ije-hangugeoro-malhagiro-haesseoyo"
+    ]
+  }
+}

@@ -1,0 +1,492 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-b1-gateun-noraeui-du-beonjeon",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Coreano B1",
+    "topik": 3,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. B1 se sitúa alrededor del TOPIK II nivel 3, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "gateun-noraeui-du-beonjeon",
+  "series": {
+    "id": "coreano-b1-lectura-10",
+    "episode": 10,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-b1-doraon-jeolmeuni-deul",
+    "nextExerciseId": null
+  },
+  "classification": {
+    "genre": "crítica musical",
+    "topic": "dos versiones de una canción",
+    "intent": "learning",
+    "tags": [
+      "coreano b1",
+      "lectura",
+      "observación 네요",
+      "proporción 을수록"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La misma canción, dos veces"
+    },
+    "intro": {
+      "es": "Una canción de 1978 y su versión de 2024. La antigua tiene peor sonido y la nueva es la que se olvida. Lectura de coreano B1."
+    },
+    "mission": {
+      "es": "Averigua qué le falta a la versión nueva, según el crítico."
+    },
+    "targetText": "천구백칠십팔 년에 나온 노래가 있어요. 제목은 겨울 편지예요. 가수는 그때 스물세 살이었어요. 녹음은 하루 만에 끝났어요. 소리가 깨끗하지 않아요. 기타 줄 소리가 들리고, 두 번째 절에서 가수가 숨을 크게 쉬는 것도 들려요. 이천이십사 년에 어떤 젊은 가수가 이 노래를 다시 불렀어요. 녹음에 넉 달이 걸렸어요. 소리는 아주 좋네요. 목소리도 훨씬 정확해요. 저는 두 버전을 하루에 열 번씩 들어 봤어요. 처음 다섯 번은 새 버전이 더 좋았어요. 소리가 좋으니까 당연했어요. 열 번째쯤부터 느낌이 바뀌었어요. 그다음 날에는 옛 버전만 다시 들었어요. 저는 왜 그런지 알고 싶었어요. 그래서 두 녹음을 같은 부분에서 멈추고 비교했어요. 첫 번째 절은 거의 똑같아요. 차이는 두 번째 절에서 시작해요. 그 차이는 아주 작아요. 하지만 전부예요. 저는 이 부분을 다시 확인하기 위해 헤드폰을 바꿨어요. 결과는 같았어요. 그리고 이상한 것을 발견했어요. 새 버전은 들을수록 지루해졌어요. 옛 버전은 들을수록 좋아졌어요. 왜 그럴까요? 처음에는 소리 때문이라고 생각했어요. 하지만 아닌 것 같아요. 진짜 이유는 숨이에요. 옛 버전에서 가수는 세 번째 줄을 부르기 전에 숨을 쉬어요. 그 숨이 조금 늦어요. 그래서 다음 말이 급하게 나와요. 그 급한 느낌이 노래의 뜻하고 맞아요. 가사가 이래요. 아직 못 보낸 편지가 있어요. 급하게 말하는 사람 같네요. 새 버전에서는 그 숨이 없어요. 아마 지웠을 거예요. 소리가 깨끗해졌지만 급한 느낌도 같이 사라졌어요. 완벽한 소리가 노래를 조용하게 만들었어요. 저는 새 가수를 나쁘게 말하고 싶지 않아요. 그 사람은 노래를 훨씬 잘해요. 문제는 노래가 아니에요. 지운 것이 문제예요. 어떤 노래에서는 실수가 내용이에요. 그것을 지우면 내용이 없어져요.",
+    "wordCount": 223,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Usar 네요 para una observación que uno acaba de hacer."
+      },
+      {
+        "es": "Usar 을수록 para expresar que algo crece a medida que otra cosa crece."
+      },
+      {
+        "es": "Distinguir la calidad técnica de lo que hace funcionar una obra."
+      }
+    ],
+    "grammarFocus": [
+      "observacion-neyo-b1",
+      "proporcion-euttorok-b1",
+      "parecer-neun-geot-gatda-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "녹음",
+        "lemma": "녹음",
+        "reading": "nogeum",
+        "glosses": {
+          "es": "grabación"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "깨끗하지",
+        "lemma": "깨끗하다",
+        "reading": "kkaekkeuthaji",
+        "glosses": {
+          "es": "estar limpio, nítido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "절",
+        "lemma": "절",
+        "reading": "jeol",
+        "glosses": {
+          "es": "estrofa de una canción"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "정확해요",
+        "lemma": "정확하다",
+        "reading": "jeonghwakhaeyo",
+        "glosses": {
+          "es": "es preciso, afinado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "지루해졌어요",
+        "lemma": "지루하다",
+        "reading": "jiruhaejyeosseoyo",
+        "glosses": {
+          "es": "se volvió aburrido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "급하게",
+        "lemma": "급하다",
+        "reading": "geuphage",
+        "glosses": {
+          "es": "con prisa, apresuradamente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "가사",
+        "lemma": "가사",
+        "reading": "gasa",
+        "glosses": {
+          "es": "letra de una canción"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "사라졌어요",
+        "lemma": "사라지다",
+        "reading": "sarajyeosseoyo",
+        "glosses": {
+          "es": "desapareció"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Las regrabaciones de clásicos de los setenta y ochenta son un formato habitual en la televisión musical coreana, y suelen abrir el debate entre fidelidad técnica y carácter del original."
+    },
+    "spanishSpeakerNote": {
+      "es": "네요 expresa algo que uno nota en el momento: 소리는 아주 좋네요, «pues el sonido es muy bueno». Y 을수록 es «cuanto más…»: 들을수록 좋아졌어요, «cuanto más lo escuchaba, más me gustaba»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo en coreano que desarrolla una idea y cambia de dirección, distinguir el hecho de la interpretación, y justificar una inferencia cruzando dos pasajes separados."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas",
+      "antes-despues-a2",
+      "capacidad-rl-su-itda-a2",
+      "clausulas-relativas-a2",
+      "condicional-eumyeon-a2",
+      "conector-aseo-a2",
+      "cuanto-eolmana-a2",
+      "discurso-reportado-a2",
+      "durante-neun-dongane-a2",
+      "futuro-rl-geoyeyo-a2",
+      "honorificos-a2",
+      "intencion-ryogo-hada-a2",
+      "negacion-ji-anta-a2",
+      "obligacion-aya-hada-a2",
+      "parecer-neun-geot-gatda-a2",
+      "particulas-recipiente-a2",
+      "progresivo-go-itda-a2",
+      "razon-gittaemune-a2",
+      "razon-niikka-a2",
+      "solo-tambien-man-do-a2",
+      "verbos-irregulares-pasado-a2",
+      "alternativa-geona-b1",
+      "causal-gi-ttaemune-b1",
+      "causativa-shichang-b1",
+      "condicional-erado-eurely-b1",
+      "despues-gona-seo-b1",
+      "estado-mantener-chae-b1",
+      "forzosidad-subakkeneopsda-b1",
+      "futuro-intencion-b1",
+      "ge-doeda-b1",
+      "inmediato-jamaja-b1",
+      "kiro-hada-b1",
+      "obligacion-eoyahada-b1",
+      "observacion-neyo-b1",
+      "oportunidad-gime-b1",
+      "pasiva-jeosudo-b1",
+      "passado-reminiscencia-b1",
+      "posibilidad-su-itda-b1",
+      "proporcion-euttorok-b1",
+      "proposito-dorok-b1",
+      "simultaneo-eumyeonseo-b1"
+    ],
+    "disallowedGrammar": [
+      "registro literario",
+      "hanja sin glosa",
+      "dialecto regional"
+    ],
+    "maxOutOfLevelVocabularyPercent": 7,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 4.7,
+      "maxSentenceWords": 13,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativa",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Prosa B1 con 더라/던, 게 되다, 채, 을수록 y pasiva. Sin registro literario ni hanja sin glosar. Inferencia moderada: exige cruzar dos pasajes."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué sostiene la crítica?",
+      "options": [
+        {
+          "id": "error",
+          "text": "Que en algunas canciones el defecto es parte del contenido, y borrarlo lo vacía"
+        },
+        {
+          "id": "antiguo",
+          "text": "Que las grabaciones antiguas siempre son mejores"
+        },
+        {
+          "id": "cantante",
+          "text": "Que la cantante nueva no sabe cantar"
+        }
+      ],
+      "answer": "error",
+      "evidence": "어떤 노래에서는 실수가 내용이에요. 그것을 지우면 내용이 없어져요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y se cuida de acotarlo: «어떤 노래에서는», en algunas canciones, no en todas."
+        },
+        "incorrect": {
+          "es": "Dice expresamente que la cantante nueva canta mucho mejor, y no generaliza por épocas. Lee las dos últimas frases."
+        },
+        "strategy": {
+          "es": "Fíjate en si el autor acota su tesis con expresiones como «어떤» (algunas). Eso evita atribuirle más de lo que dice."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto duró cada grabación?",
+      "options": [
+        {
+          "id": "undia",
+          "text": "Un día la antigua y cuatro meses la nueva"
+        },
+        {
+          "id": "cuatro",
+          "text": "Cuatro meses las dos"
+        },
+        {
+          "id": "diez",
+          "text": "Diez días la antigua y un mes la nueva"
+        }
+      ],
+      "answer": "undia",
+      "evidence": "녹음은 하루 만에 끝났어요 … 녹음에 넉 달이 걸렸어요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: un día frente a cuatro meses. Ese contraste sostiene todo el argumento."
+        },
+        "incorrect": {
+          "es": "El texto da las dos duraciones en párrafos distintos. Busca 하루 만에 y 넉 달."
+        },
+        "strategy": {
+          "es": "Cuando un texto compara dos obras, cada dato aparece en su párrafo. Empareja antes de responder."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El crítico escribe 새 버전은 들을수록 지루해졌어요. ¿Qué expresa 을수록?",
+      "options": [
+        {
+          "id": "proporcion",
+          "text": "Que cuanto más la escuchaba, más aburrida le resultaba"
+        },
+        {
+          "id": "condicion",
+          "text": "Que si la escuchaba, se aburría"
+        },
+        {
+          "id": "pasado",
+          "text": "Que antes le aburría y ahora no"
+        }
+      ],
+      "answer": "proporcion",
+      "evidence": "새 버전은 들을수록 지루해졌어요. 옛 버전은 들을수록 좋아졌어요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Y la frase siguiente usa la misma estructura al revés, lo que confirma la lectura."
+        },
+        "incorrect": {
+          "es": "No es una simple condición: expresa que el efecto crece con la repetición. Compara las dos frases seguidas."
+        },
+        "strategy": {
+          "es": "Si dos frases seguidas repiten la misma terminación con resultados opuestos, están midiendo una progresión."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué funciona la respiración tardía de la versión antigua?",
+      "options": [
+        {
+          "id": "sentido",
+          "text": "Porque la prisa que provoca coincide con lo que dice la letra"
+        },
+        {
+          "id": "tecnica",
+          "text": "Porque demuestra la técnica vocal de la cantante"
+        },
+        {
+          "id": "error",
+          "text": "Porque los oyentes de los setenta lo esperaban"
+        }
+      ],
+      "answer": "sentido",
+      "evidence": "그 급한 느낌이 노래의 뜻하고 맞아요. 가사가 이래요. 아직 못 보낸 편지가 있어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y cita la letra para probarlo: alguien que aún no ha enviado una carta habla con prisa."
+        },
+        "incorrect": {
+          "es": "El texto no lo presenta como técnica ni como costumbre de época. Fíjate en la letra que cita."
+        },
+        "strategy": {
+          "es": "Cuando una crítica cita la letra justo después de un detalle sonoro, está uniendo forma y contenido."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el crítico considera que la cantante nueva canta peor que la original.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "저는 새 가수를 나쁘게 말하고 싶지 않아요. 그 사람은 노래를 훨씬 잘해요.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: dice que canta mucho mejor. Su crítica va contra una decisión de producción, no contra la voz."
+        },
+        "incorrect": {
+          "es": "Busca la frase donde habla de la cantante nueva. Es más generosa de lo que parece."
+        },
+        "strategy": {
+          "es": "Separa la crítica a una decisión de la crítica a una persona. Un texto puede elogiar a quien canta y objetar la mezcla."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué dice 완벽한 소리가 노래를 조용하게 만들었어요?",
+      "options": [
+        {
+          "id": "paradoja",
+          "text": "Para nombrar la paradoja: mejorar el sonido apagó la canción"
+        },
+        {
+          "id": "volumen",
+          "text": "Para señalar que la nueva versión suena a menos volumen"
+        },
+        {
+          "id": "estudio",
+          "text": "Para criticar el estudio de grabación"
+        }
+      ],
+      "answer": "paradoja",
+      "evidence": "소리가 깨끗해졌지만 급한 느낌도 같이 사라졌어요. 완벽한 소리가 노래를 조용하게 만들었어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. 조용하게 aquí no es volumen: es que la canción dejó de decir algo. La frase anterior lo explica."
+        },
+        "incorrect": {
+          "es": "No habla de decibelios ni del estudio. Lee la frase anterior, sobre lo que desapareció con la limpieza."
+        },
+        "strategy": {
+          "es": "Cuando una palabra corriente aparece en una conclusión, comprueba si va en sentido figurado. La frase previa lo dirá."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en coreano comparando dos versiones de una canción, una película o un plato. Usa 을수록 dos veces y 네요 dos veces."
+    },
+    "minWords": 60,
+    "maxWords": 120,
+    "hints": [
+      "…년에 나온 …이 있어요.",
+      "소리는 아주 좋네요.",
+      "들을수록 …아졌어요.",
+      "문제는 …이 아니에요."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente — Zhanna Korzh",
+    "pedagogyReviewer": "Pendiente — Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. El coreano NO ha sido revisado por hablante nativa. Bloqueante para publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano B1: La misma canción, dos veces | WeLearn"
+    },
+    "description": {
+      "es": "Lee una crítica musical en coreano B1 y practica 네요 para la observación y 을수록 para la proporción. Con vocabulario romanizado y seis preguntas."
+    },
+    "canonicalPath": "/practica/coreano/b1/lectura/gateun-noraeui-du-beonjeon",
+    "indexable": false,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-b1-doraon-jeolmeuni-deul"
+    ]
+  }
+}
