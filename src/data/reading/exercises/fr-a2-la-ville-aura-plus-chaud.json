@@ -1,0 +1,460 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-a2-la-ville-aura-plus-chaud",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Francés A2"
+  },
+  "slug": "la-ville-aura-plus-chaud",
+  "series": {
+    "id": "frances-a2-lectura-10",
+    "episode": 3,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-a2-les-etes-de-sete",
+    "nextExerciseId": "fr-a2-trois-velos-un-budget"
+  },
+  "classification": {
+    "genre": "artículo divulgativo",
+    "topic": "clima urbano",
+    "intent": "learning",
+    "tags": [
+      "frances a2",
+      "lectura",
+      "futur simple",
+      "si condicional"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La ciudad tendrá más calor"
+    },
+    "intro": {
+      "es": "Cuarenta y dos grados en el asfalto y treinta y uno bajo un plátano. Lectura de francés A2 con el futuro simple y las frases con si."
+    },
+    "mission": {
+      "es": "Averigua qué propone el plan y qué pasará si no se hace nada."
+    },
+    "targetText": "Si rien ne change, notre ville connaîtra dix jours de canicule par an en 2050, contre trois aujourd’hui. Ce chiffre vient du rapport municipal publié en mars. La cause principale n’est pas seulement le climat: c’est le sol. Le béton et l’asphalte gardent la chaleur du jour et la relâchent pendant la nuit. Résultat: la température ne descend jamais assez. Un thermomètre posé sur le parking de la mairie a marqué quarante-deux degrés en juillet dernier. À vingt mètres de là, sous un platane, il en marquait trente et un. Onze degrés d’écart, pour le même quartier et la même heure. Les nuits sont le vrai problème. Quand la température ne descend pas sous vingt-cinq degrés, le corps ne récupère pas et le sommeil devient mauvais. Les médecins du quartier disent qu’ils voient chaque été plus de personnes âgées fatiguées, et pas seulement les jours de grande chaleur. La mairie va donc planter six cents arbres en trois ans, et elle remplacera l’asphalte de quatre cours d’école par de la terre et de l’herbe. Si le plan fonctionne, les enfants joueront dehors même en juillet. Si nous attendons dix ans de plus, il faudra climatiser les écoles, et cela coûtera beaucoup plus cher. Les arbres, eux, ne consomment rien.",
+    "wordCount": 209,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Reconocer el futur simple y distinguirlo del futur proche."
+      },
+      {
+        "es": "Entender la estructura «si + presente, futuro» para hablar de consecuencias."
+      },
+      {
+        "es": "Leer cifras dentro de un texto y compararlas correctamente."
+      }
+    ],
+    "grammarFocus": [
+      "futur-simple",
+      "si-conditionnel",
+      "futur-proche"
+    ],
+    "vocabulary": [
+      {
+        "surface": "canicule",
+        "lemma": "canicule",
+        "glosses": {
+          "es": "ola de calor"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "béton",
+        "lemma": "béton",
+        "glosses": {
+          "es": "hormigón"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "relâchent",
+        "lemma": "relâcher",
+        "glosses": {
+          "es": "sueltan, liberan"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "platane",
+        "lemma": "platane",
+        "glosses": {
+          "es": "plátano de sombra (el árbol)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "écart",
+        "lemma": "écart",
+        "glosses": {
+          "es": "diferencia, distancia entre dos cifras"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cours d’école",
+        "lemma": "cours d’école",
+        "glosses": {
+          "es": "patios de colegio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "herbe",
+        "lemma": "herbe",
+        "glosses": {
+          "es": "hierba, césped"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "climatiser",
+        "lemma": "climatiser",
+        "glosses": {
+          "es": "poner aire acondicionado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Convertir patios de asfalto en «cours oasis» con tierra y árboles es una política real en varias ciudades francesas desde finales de los 2010, empezando por París."
+    },
+    "spanishSpeakerNote": {
+      "es": "Fíjate en la estructura: «Si le plan fonctionne, les enfants joueront». En francés, igual que en español, después de «si» va presente, nunca futuro. Decir «si le plan fonctionnera» es un error que delata al principiante."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo sobre hechos pasados y planes futuros, distinguir quién dice qué, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers",
+      "accord-participe-passe",
+      "cause-consequence",
+      "comparatifs",
+      "conditionnel-present",
+      "connecteurs",
+      "discours-indirect",
+      "dont-relatif",
+      "futur-simple",
+      "gerondif",
+      "imparfait",
+      "negation-avancee",
+      "passe-compose-avoir",
+      "passe-compose-etre",
+      "passe-compose-vs-imparfait",
+      "pronoms-coi",
+      "pronoms-y-en",
+      "si-conditionnel",
+      "subjonctif-present",
+      "superlatifs",
+      "verbes-pronominaux"
+    ],
+    "disallowedGrammar": [
+      "plus-que-parfait",
+      "voix passive",
+      "participe présent",
+      "futur antérieur"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 13.9,
+      "maxSentenceWords": 26,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Pasado narrativo (passé composé e imparfait) permitido. Sin plus-que-parfait ni voz pasiva. Inferencia ligera: unir dos datos separados por varios párrafos."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es el argumento central del artículo?",
+      "options": [
+        {
+          "id": "suelo",
+          "text": "Que el suelo de la ciudad agrava el calor, y que se puede cambiar"
+        },
+        {
+          "id": "inevitable",
+          "text": "Que el calor es inevitable y hay que acostumbrarse"
+        },
+        {
+          "id": "aire",
+          "text": "Que hay que instalar aire acondicionado en todos los colegios"
+        }
+      ],
+      "answer": "suelo",
+      "evidence": "La cause principale n’est pas seulement le climat: c’est le sol.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El texto lo dice pronto y luego lo demuestra con los once grados de diferencia."
+        },
+        "incorrect": {
+          "es": "El aire acondicionado aparece, pero como la alternativa cara que el artículo quiere evitar. Busca la frase sobre la causa."
+        },
+        "strategy": {
+          "es": "Cuando un texto corrige una idea esperada («no es solo X: es Y»), esa corrección suele ser su tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántos grados de diferencia se midieron entre el aparcamiento y el árbol?",
+      "options": [
+        {
+          "id": "once",
+          "text": "Once grados"
+        },
+        {
+          "id": "tres",
+          "text": "Tres grados"
+        },
+        {
+          "id": "cuarentaydos",
+          "text": "Cuarenta y dos grados"
+        }
+      ],
+      "answer": "once",
+      "evidence": "Onze degrés d’écart, pour le même quartier et la même heure.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: 42 en el asfalto y 31 bajo el plátano. El texto hasta hace la resta por ti."
+        },
+        "incorrect": {
+          "es": "En el texto hay varias cifras y cada una mide algo distinto. Busca la palabra «écart», diferencia."
+        },
+        "strategy": {
+          "es": "Ante un texto con muchos números, anota al lado de cada uno qué mide. Solo uno responde a la pregunta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que el hormigón «relâche» el calor durante la noche. ¿Qué significa?",
+      "options": [
+        {
+          "id": "suelta",
+          "text": "Lo suelta, lo devuelve al aire"
+        },
+        {
+          "id": "absorbe",
+          "text": "Lo absorbe y lo guarda"
+        },
+        {
+          "id": "bloquea",
+          "text": "Lo bloquea y no lo deja pasar"
+        }
+      ],
+      "answer": "suelta",
+      "evidence": "Le béton et l’asphalte gardent la chaleur du jour et la relâchent pendant la nuit.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y va en pareja con «gardent»: primero lo guardan de día, luego lo sueltan de noche."
+        },
+        "incorrect": {
+          "es": "La frase tiene dos verbos unidos por «et», y significan cosas opuestas. Si el primero es guardar, el segundo no puede ser absorber."
+        },
+        "strategy": {
+          "es": "Dos verbos unidos por «et» en una misma frase suelen describir dos fases seguidas. Si conoces una, deduces la otra."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué termina el artículo diciendo «Les arbres, eux, ne consomment rien»?",
+      "options": [
+        {
+          "id": "comparar",
+          "text": "Para contraponerlos al aire acondicionado, que sí gasta"
+        },
+        {
+          "id": "regar",
+          "text": "Para señalar que los árboles no necesitan riego"
+        },
+        {
+          "id": "barato",
+          "text": "Para decir que plantar árboles no cuesta dinero"
+        }
+      ],
+      "answer": "comparar",
+      "evidence": "il faudra climatiser les écoles, et cela coûtera beaucoup plus cher. Les arbres, eux, ne consomment rien.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Esa frase final cierra la comparación que la anterior había abierto: dos soluciones, una gasta y la otra no."
+        },
+        "incorrect": {
+          "es": "El texto no dice nada del riego, y plantar seiscientos árboles evidentemente cuesta dinero. Lee la frase inmediatamente anterior."
+        },
+        "strategy": {
+          "es": "Una frase final corta suele responder a la anterior. Léelas siempre en pareja antes de interpretarla."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: hoy la ciudad ya sufre diez días de ola de calor al año.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "dix jours de canicule par an en 2050, contra trois aujourd’hui",
+      "feedback": {
+        "correct": {
+          "es": "Falso: hoy son tres. Los diez son la previsión para 2050 si nada cambia."
+        },
+        "incorrect": {
+          "es": "La primera frase contiene dos cifras y dos fechas. Fíjate en cuál va con «aujourd’hui»."
+        },
+        "strategy": {
+          "es": "Cuando una frase compara presente y futuro, separa las dos cifras antes de responder. Es fácil quedarse con la primera."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué sirve el dato del termómetro del aparcamiento?",
+      "options": [
+        {
+          "id": "probar",
+          "text": "Para demostrar con una medida concreta que el suelo cambia la temperatura"
+        },
+        {
+          "id": "criticar",
+          "text": "Para criticar al ayuntamiento por el estado de su aparcamiento"
+        },
+        {
+          "id": "fecha",
+          "text": "Para fechar el momento en que empezó la ola de calor"
+        }
+      ],
+      "answer": "probar",
+      "evidence": "Un thermomètre posé sur le parking de la mairie a marqué quarante-deux degrés … sous un platane, il en marquait trente et un.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El artículo afirma algo y luego lo prueba con una medición del mismo barrio y la misma hora."
+        },
+        "incorrect": {
+          "es": "No hay crítica a nadie, y la fecha es secundaria. Pregúntate qué afirmación acababa de hacer el texto justo antes."
+        },
+        "strategy": {
+          "es": "Un dato concreto casi siempre está al servicio de la afirmación que lo precede. Lee hacia arriba para encontrarla."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en francés sobre un cambio que necesita tu ciudad. Usa dos frases con «si + presente, futuro» y al menos tres verbos en futur simple."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "Si rien ne change,…",
+      "La mairie devra…",
+      "Si le plan fonctionne,…",
+      "Cela coûtera…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés A2: La ciudad tendrá más calor | WeLearn"
+    },
+    "description": {
+      "es": "Lee un artículo divulgativo en francés A2 y practica el futur simple y las frases condicionales con si. Vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/frances/a2/lectura/la-ville-aura-plus-chaud",
+    "indexable": false,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-a2-les-etes-de-sete",
+      "fr-a2-trois-velos-un-budget"
+    ]
+  }
+}

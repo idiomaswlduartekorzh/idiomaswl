@@ -41,6 +41,17 @@ import frBus712 from '@/data/reading/exercises/fr-a1-le-bus-de-7h12.json'
 import frLettreDeDakar from '@/data/reading/exercises/fr-a1-une-lettre-de-dakar.json'
 import frTropDeSel from '@/data/reading/exercises/fr-a1-trop-de-sel.json'
 import frPremierJour from '@/data/reading/exercises/fr-a1-le-premier-jour.json'
+// Francés A2 — generadas desde `src/data/reading/source/fr-a2.mjs`.
+import frQuaranteSecondes from '@/data/reading/exercises/fr-a2-quarante-secondes.json'
+import frEtesDeSete from '@/data/reading/exercises/fr-a2-les-etes-de-sete.json'
+import frVillePlusChaud from '@/data/reading/exercises/fr-a2-la-ville-aura-plus-chaud.json'
+import frTroisVelos from '@/data/reading/exercises/fr-a2-trois-velos-un-budget.json'
+import frRepartitionTaches from '@/data/reading/exercises/fr-a2-repartition-des-taches.json'
+import frLibrairieResiste from '@/data/reading/exercises/fr-a2-la-librairie-qui-resiste.json'
+import frQuatreHeures from '@/data/reading/exercises/fr-a2-quatre-heures-du-matin.json'
+import frPisteCyclable from '@/data/reading/exercises/fr-a2-a-propos-de-la-piste-cyclable.json'
+import frReunionVoisins from '@/data/reading/exercises/fr-a2-reunion-des-voisins.json'
+import frEauMontee from '@/data/reading/exercises/fr-a2-l-eau-est-montee-en-vingt-minutes.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -86,6 +97,16 @@ const RAW_EXERCISES: unknown[] = [
   frLettreDeDakar,
   frTropDeSel,
   frPremierJour,
+  frQuaranteSecondes,
+  frEtesDeSete,
+  frVillePlusChaud,
+  frTroisVelos,
+  frRepartitionTaches,
+  frLibrairieResiste,
+  frQuatreHeures,
+  frPisteCyclable,
+  frReunionVoisins,
+  frEauMontee,
 ]
 
 export const READING_EXERCISES: ReadingExercise[] = RAW_EXERCISES.map((candidate) => {

@@ -1,0 +1,460 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-a2-la-librairie-qui-resiste",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Francés A2"
+  },
+  "slug": "la-librairie-qui-resiste",
+  "series": {
+    "id": "frances-a2-lectura-10",
+    "episode": 6,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-a2-repartition-des-taches",
+    "nextExerciseId": "fr-a2-quatre-heures-du-matin"
+  },
+  "classification": {
+    "genre": "reportaje breve",
+    "topic": "comercio de barrio",
+    "intent": "learning",
+    "tags": [
+      "frances a2",
+      "lectura",
+      "relativos dont",
+      "conectores"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La librería que resiste"
+    },
+    "intro": {
+      "es": "Una librería de veinte metros cuadrados rodeada de tres cadenas. Lectura de francés A2 con los relativos y los conectores del discurso."
+    },
+    "mission": {
+      "es": "Averigua qué hace esta librería que las grandes no pueden hacer."
+    },
+    "targetText": "Rue Saint-Jean, il y a une librairie de vingt mètres carrés dont le propriétaire connaît le nom de trois cents clients. Elle s’appelle Le Fil. Autour d’elle, en dix ans, trois grandes enseignes ont ouvert et deux ont fermé. Le Fil, lui, est toujours là. Comment? D’abord, parce qu’il ne vend pas ce que vendent les autres. Vincent, le libraire dont je parle, refuse les piles de best-sellers à l’entrée. Ensuite, parce qu’il lit. Vraiment. Il lit environ cent livres par an, et il n’en recommande que ceux qu’il a aimés. Quand un client lui demande un titre dont tout le monde parle, il le commande sans discuter, mais il ne le met pas en vitrine. C’est un commerce où l’on entre pour acheter un roman et où l’on ressort avec un autre, celui que le libraire a mis dans la main du client en disant deux phrases. Enfin, parce que le lieu sert à autre chose qu’à vendre. Le mardi soir, des adolescents dont les parents travaillent tard font leurs devoirs au fond du magasin. Vincent ne leur vend rien. Il dit que ce n’est pas de la générosité: dans quinze ans, ces adolescents achèteront des livres quelque part. Autant que ce soit ici.",
+    "wordCount": 205,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Usar los relativos qui, que, où y sobre todo «dont», que sustituye a un complemento con «de»."
+      },
+      {
+        "es": "Reconocer los conectores que ordenan un argumento: d’abord, ensuite, enfin."
+      },
+      {
+        "es": "Seguir un razonamiento con tres razones encadenadas."
+      }
+    ],
+    "grammarFocus": [
+      "dont-relatif",
+      "connecteurs",
+      "articles"
+    ],
+    "vocabulary": [
+      {
+        "surface": "libraire",
+        "lemma": "libraire",
+        "glosses": {
+          "es": "librero (persona). ¡No es «librería»!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "enseignes",
+        "lemma": "enseigne",
+        "glosses": {
+          "es": "cadenas comerciales, marcas con tiendas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "piles",
+        "lemma": "pile",
+        "glosses": {
+          "es": "pilas, montones (de libros)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ressort",
+        "lemma": "ressortir",
+        "glosses": {
+          "es": "vuelve a salir"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "au fond",
+        "lemma": "au fond",
+        "glosses": {
+          "es": "al fondo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "devoirs",
+        "lemma": "devoirs",
+        "glosses": {
+          "es": "deberes (del colegio)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "générosité",
+        "lemma": "générosité",
+        "glosses": {
+          "es": "generosidad"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Autant que",
+        "lemma": "Autant que",
+        "glosses": {
+          "es": "más vale que, ya que va a pasar, mejor que"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En Francia el precio del libro está fijado por ley desde 1981, así que una librería pequeña no puede competir por precio. Solo puede competir por criterio, que es justo lo que cuenta el reportaje."
+    },
+    "spanishSpeakerNote": {
+      "es": "Ojo con «librairie» y «libraire»: la primera es la tienda, el segundo es la persona. Y «librairie» no es «biblioteca» —eso es «bibliothèque»—, un falso amigo que confunde a casi todos los hispanohablantes."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo sobre hechos pasados y planes futuros, distinguir quién dice qué, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers",
+      "accord-participe-passe",
+      "cause-consequence",
+      "comparatifs",
+      "conditionnel-present",
+      "connecteurs",
+      "discours-indirect",
+      "dont-relatif",
+      "futur-simple",
+      "gerondif",
+      "imparfait",
+      "negation-avancee",
+      "passe-compose-avoir",
+      "passe-compose-etre",
+      "passe-compose-vs-imparfait",
+      "pronoms-coi",
+      "pronoms-y-en",
+      "si-conditionnel",
+      "subjonctif-present",
+      "superlatifs",
+      "verbes-pronominaux"
+    ],
+    "disallowedGrammar": [
+      "plus-que-parfait",
+      "voix passive",
+      "participe présent",
+      "futur antérieur"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 12.1,
+      "maxSentenceWords": 32,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Pasado narrativo (passé composé e imparfait) permitido. Sin plus-que-parfait ni voz pasiva. Inferencia ligera: unir dos datos separados por varios párrafos."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cómo explica el reportaje la supervivencia de Le Fil?",
+      "options": [
+        {
+          "id": "criterio",
+          "text": "Por el criterio del librero y por ser algo más que una tienda"
+        },
+        {
+          "id": "precio",
+          "text": "Por vender más barato que las grandes cadenas"
+        },
+        {
+          "id": "ayuda",
+          "text": "Por una subvención municipal al comercio de barrio"
+        }
+      ],
+      "answer": "criterio",
+      "evidence": "D’abord, parce qu’il ne vend pas ce que vendent les autres … Enfin, parce que le lieu sert à autre chose qu’à vendre.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El texto da tres razones encadenadas y ninguna es el precio."
+        },
+        "incorrect": {
+          "es": "El texto no menciona ni precios más bajos ni ninguna ayuda pública. Busca los tres conectores: d’abord, ensuite, enfin."
+        },
+        "strategy": {
+          "es": "Si un texto anuncia «¿Cómo?» y luego encadena d’abord / ensuite / enfin, la respuesta es la suma de las tres."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántos libros lee Vincent al año, según el texto?",
+      "options": [
+        {
+          "id": "cien",
+          "text": "Unos cien"
+        },
+        {
+          "id": "trescientos",
+          "text": "Unos trescientos"
+        },
+        {
+          "id": "veinte",
+          "text": "Unos veinte"
+        }
+      ],
+      "answer": "cien",
+      "evidence": "Il lit environ cent livres par an",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Los trescientos son clientes cuyo nombre conoce, y los veinte, los metros cuadrados de la tienda."
+        },
+        "incorrect": {
+          "es": "En el texto hay tres cifras y cada una mide algo distinto: metros, clientes y libros. Busca la que va con «par an»."
+        },
+        "strategy": {
+          "es": "Cuando varias cifras conviven en un texto, fíjate en la unidad que las acompaña. Ella dice qué mide cada una."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto habla de «le libraire dont je parle». ¿Qué es un «libraire»?",
+      "options": [
+        {
+          "id": "persona",
+          "text": "La persona que atiende y elige los libros"
+        },
+        {
+          "id": "tienda",
+          "text": "La tienda donde se venden libros"
+        },
+        {
+          "id": "biblioteca",
+          "text": "La biblioteca pública del barrio"
+        }
+      ],
+      "answer": "persona",
+      "evidence": "Vincent, le libraire dont je parle, refuse les piles de best-sellers",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. La tienda es «la librairie»; la persona, «le libraire». Y aquí lleva delante un nombre propio, Vincent."
+        },
+        "incorrect": {
+          "es": "Fíjate en que va precedido de un nombre propio y seguido de un verbo de acción, «refuse». Una tienda no rechaza nada por sí sola."
+        },
+        "strategy": {
+          "es": "Si una palabra aparece en aposición junto a un nombre propio, designa a una persona, no a un lugar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Vincent dice que dejar estudiar a los adolescentes «no es generosidad». ¿Qué es entonces?",
+      "options": [
+        {
+          "id": "inversion",
+          "text": "Una inversión a quince años vista"
+        },
+        {
+          "id": "obligacion",
+          "text": "Una obligación que le impone el ayuntamiento"
+        },
+        {
+          "id": "costumbre",
+          "text": "Una costumbre heredada del anterior dueño"
+        }
+      ],
+      "answer": "inversion",
+      "evidence": "dans quinze ans, ces adolescents achèteront des livres quelque part. Autant que ce soit ici.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Él mismo lo explica en futuro: esos chavales comprarán libros en algún sitio, y prefiere que sea el suyo."
+        },
+        "incorrect": {
+          "es": "Nadie le obliga y no se habla de ningún dueño anterior. Lee la frase que él mismo dice después de negar la generosidad."
+        },
+        "strategy": {
+          "es": "Cuando alguien niega un motivo («no es X»), la frase siguiente casi siempre da el motivo verdadero."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: alrededor de Le Fil abrieron tres grandes cadenas y todas siguen abiertas.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "trois grandes enseignes ont ouvert et deux ont fermé",
+      "feedback": {
+        "correct": {
+          "es": "Falso: abrieron tres, pero dos cerraron. Ese contraste es justo lo que hace notable el caso de Le Fil."
+        },
+        "incorrect": {
+          "es": "La frase tiene dos verbos, «ont ouvert» y «ont fermé», con cifras distintas. Léela entera."
+        },
+        "strategy": {
+          "es": "En una frase con dos cifras y dos verbos opuestos, no te quedes con la primera mitad. El sentido está en la resta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "reference",
+      "skill": "reference",
+      "prompt": "En «des adolescents dont les parents travaillent tard», ¿qué relación marca «dont»?",
+      "options": [
+        {
+          "id": "posesion",
+          "text": "Posesión: son los padres de esos adolescentes"
+        },
+        {
+          "id": "lugar",
+          "text": "Lugar: el sitio donde trabajan los padres"
+        },
+        {
+          "id": "tiempo",
+          "text": "Tiempo: el momento en que trabajan los padres"
+        }
+      ],
+      "answer": "posesion",
+      "evidence": "des adolescents dont les parents travaillent tard",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. «Dont» equivale aquí a «cuyos»: los adolescentes cuyos padres trabajan hasta tarde."
+        },
+        "incorrect": {
+          "es": "Para el lugar se usaría «où». Fíjate en qué palabra viene justo detrás de «dont»: «les parents»."
+        },
+        "strategy": {
+          "es": "«Dont» sustituye a un complemento con «de». Si detrás va un sustantivo con artículo, casi siempre equivale a «cuyo»."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Describe en 6–8 frases en francés un comercio de tu barrio que te guste. Usa «dont» una vez y ordena tus razones con d’abord, ensuite y enfin."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "Il y a un / une … dont…",
+      "D’abord, parce que…",
+      "Ensuite,…",
+      "Enfin,…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés A2: La librería que resiste | WeLearn"
+    },
+    "description": {
+      "es": "Lee un reportaje en francés A2 y practica los pronombres relativos qui, que, où, dont y los conectores del discurso. Con seis preguntas."
+    },
+    "canonicalPath": "/practica/frances/a2/lectura/la-librairie-qui-resiste",
+    "indexable": false,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-a2-repartition-des-taches",
+      "fr-a2-quatre-heures-du-matin"
+    ]
+  }
+}

@@ -1,0 +1,460 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-a2-a-propos-de-la-piste-cyclable",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Francés A2"
+  },
+  "slug": "a-propos-de-la-piste-cyclable",
+  "series": {
+    "id": "frances-a2-lectura-10",
+    "episode": 8,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-a2-quatre-heures-du-matin",
+    "nextExerciseId": "fr-a2-reunion-des-voisins"
+  },
+  "classification": {
+    "genre": "carta al director",
+    "topic": "debate municipal",
+    "intent": "learning",
+    "tags": [
+      "frances a2",
+      "lectura",
+      "subjuntivo",
+      "condicional"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Sobre el carril bici"
+    },
+    "intro": {
+      "es": "Una carta al periódico que empieza dándole la razón al contrario. Lectura de francés A2 con el subjuntivo y el condicional."
+    },
+    "mission": {
+      "es": "Averigua qué concede el autor y en qué punto deja de ceder."
+    },
+    "targetText": "Madame, Monsieur, je vous écris au sujet de la lettre publiée mardi contre la nouvelle piste cyclable. Je voudrais commencer par dire que son auteur a raison sur un point: les travaux ont été mal organisés. Il faut que la mairie le reconnaisse. Pendant six mois, les commerçants de la rue ont perdu des clients, et personne ne les a prévenus à temps. Cela dit, je ne suis pas d’accord avec le reste. L’auteur écrit qu’il faudrait supprimer la piste. Je pense au contraire qu’il faut qu’on la prolonge. Pourquoi? Parce que le problème n’était pas la piste: c’était le chantier. Aujourd’hui, les travaux sont finis. Le lundi matin, je compte les vélos depuis ma fenêtre: il y en a environ deux cents entre huit et neuf heures. Avant, il y en avait trente. J’ai compté aussi les voitures: il y en a moins qu’avant, mais elles roulent plus vite, et cela mériterait sans doute une autre lettre. Ces gens-là ne sont pas venus en voiture, et ils achètent le pain comme tout le monde. Je souhaite simplement que la prochaine fois, la mairie prévienne les commerçants avant de commencer, et non trois jours après. Ce serait la moindre des choses.",
+    "wordCount": 201,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Reconocer el subjuntivo después de expresiones como «il faut que» o «je souhaite que»."
+      },
+      {
+        "es": "Usar el condicional para proponer y para matizar: je voudrais, il faudrait, ce serait."
+      },
+      {
+        "es": "Distinguir en una carta de opinión lo que se concede de lo que se rebate."
+      }
+    ],
+    "grammarFocus": [
+      "subjonctif-present",
+      "conditionnel-present",
+      "questions"
+    ],
+    "vocabulary": [
+      {
+        "surface": "au sujet de",
+        "lemma": "au sujet de",
+        "glosses": {
+          "es": "a propósito de, sobre"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "piste cyclable",
+        "lemma": "piste cyclable",
+        "glosses": {
+          "es": "carril bici"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "travaux",
+        "lemma": "travaux",
+        "glosses": {
+          "es": "obras"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "commerçants",
+        "lemma": "commerçant",
+        "glosses": {
+          "es": "comerciantes"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "prévenus",
+        "lemma": "prévenir",
+        "glosses": {
+          "es": "avisados"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "supprimer",
+        "lemma": "supprimer",
+        "glosses": {
+          "es": "eliminar, quitar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "prolonge",
+        "lemma": "prolonger",
+        "glosses": {
+          "es": "prolongue, alargue"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "chantier",
+        "lemma": "chantier",
+        "glosses": {
+          "es": "la obra en curso, el tajo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La «lettre au courrier des lecteurs» sigue siendo un género vivo en la prensa local francesa, y los debates sobre carriles bici son de los que más cartas generan."
+    },
+    "spanishSpeakerNote": {
+      "es": "Detrás de «il faut que» y «je souhaite que» el francés exige subjuntivo, igual que el español: «il faut qu’on la prolonge» = «hace falta que la prolonguen». La construcción es paralela, así que aquí el español ayuda en vez de estorbar."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo sobre hechos pasados y planes futuros, distinguir quién dice qué, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers",
+      "accord-participe-passe",
+      "cause-consequence",
+      "comparatifs",
+      "conditionnel-present",
+      "connecteurs",
+      "discours-indirect",
+      "dont-relatif",
+      "futur-simple",
+      "gerondif",
+      "imparfait",
+      "negation-avancee",
+      "passe-compose-avoir",
+      "passe-compose-etre",
+      "passe-compose-vs-imparfait",
+      "pronoms-coi",
+      "pronoms-y-en",
+      "si-conditionnel",
+      "subjonctif-present",
+      "superlatifs",
+      "verbes-pronominaux"
+    ],
+    "disallowedGrammar": [
+      "plus-que-parfait",
+      "voix passive",
+      "participe présent",
+      "futur antérieur"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 12.6,
+      "maxSentenceWords": 24,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Pasado narrativo (passé composé e imparfait) permitido. Sin plus-que-parfait ni voz pasiva. Inferencia ligera: unir dos datos separados por varios párrafos."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es la postura del autor de la carta?",
+      "options": [
+        {
+          "id": "prolongar",
+          "text": "Que el carril debe mantenerse y ampliarse, aunque las obras se hicieran mal"
+        },
+        {
+          "id": "suprimir",
+          "text": "Que el carril debe eliminarse porque perjudicó al comercio"
+        },
+        {
+          "id": "neutral",
+          "text": "Que no tiene opinión formada y pide más estudios"
+        }
+      ],
+      "answer": "prolongar",
+      "evidence": "Je pense au contraire qu’il faut qu’on la prolonge.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Concede el error de las obras, pero separa el problema (la obra) de la solución (el carril)."
+        },
+        "incorrect": {
+          "es": "Suprimir el carril es lo que propone la otra carta, la del martes. Busca «au contraire»."
+        },
+        "strategy": {
+          "es": "En una carta de réplica, distingue siempre qué opina el autor y qué está citando del contrario."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántas bicis cuenta el autor entre las ocho y las nueve?",
+      "options": [
+        {
+          "id": "200",
+          "text": "Unas doscientas"
+        },
+        {
+          "id": "30",
+          "text": "Unas treinta"
+        },
+        {
+          "id": "6",
+          "text": "Seis"
+        }
+      ],
+      "answer": "200",
+      "evidence": "il y en a environ deux cents entre huit et neuf heures. Avant, il y en avait trente.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Las treinta son las de antes de la obra, y el seis son los meses que duraron los trabajos."
+        },
+        "incorrect": {
+          "es": "El texto compara dos cifras, antes y ahora. Fíjate en cuál va en presente."
+        },
+        "strategy": {
+          "es": "Cuando un texto compara antes y ahora, el tiempo verbal te dice qué cifra es la actual."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El autor dice que el problema «c’était le chantier». ¿Qué es un «chantier»?",
+      "options": [
+        {
+          "id": "obra",
+          "text": "La obra mientras se está ejecutando"
+        },
+        {
+          "id": "cantero",
+          "text": "Un cantero, el que trabaja la piedra"
+        },
+        {
+          "id": "carril",
+          "text": "El carril bici terminado"
+        }
+      ],
+      "answer": "obra",
+      "evidence": "le problème n’était pas la piste: c’était le chantier. Aujourd’hui, les travaux sont finis.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Y la frase siguiente lo confirma: hoy las obras han terminado, así que el problema desapareció."
+        },
+        "incorrect": {
+          "es": "El texto opone «la piste» a «le chantier», así que no pueden ser lo mismo. Lee la frase siguiente."
+        },
+        "strategy": {
+          "es": "Si un texto contrapone dos palabras con «no era X, era Y», significan cosas distintas. Ahí tienes media definición."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué menciona que los ciclistas «compran el pan como todo el mundo»?",
+      "options": [
+        {
+          "id": "clientes",
+          "text": "Para rebatir que el carril haya ahuyentado a los clientes del comercio"
+        },
+        {
+          "id": "panaderia",
+          "text": "Para recomendar la panadería de la calle"
+        },
+        {
+          "id": "dieta",
+          "text": "Para señalar que quienes van en bici comen mejor"
+        }
+      ],
+      "answer": "clientes",
+      "evidence": "Ces gens-là ne sont pas venus en voiture, et ils achètent le pain comme tout le monde.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Es la respuesta directa al argumento comercial: doscientos ciclistas también son doscientos clientes posibles."
+        },
+        "incorrect": {
+          "es": "No recomienda ningún comercio ni habla de dieta. Recuerda cuál era la queja de la carta del martes."
+        },
+        "strategy": {
+          "es": "En una réplica, cada dato responde a una queja concreta del contrario. Pregúntate a cuál responde este."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el autor admite que el ayuntamiento organizó mal las obras.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "son auteur a raison sur un point: les travaux ont été mal organisés. Il faut que la mairie le reconnaisse.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y lo dice en el segundo párrafo, antes de rebatir nada. Empieza dando la razón al contrario."
+        },
+        "incorrect": {
+          "es": "Busca la frase «a raison sur un point». Ahí está lo que el autor concede antes de discrepar."
+        },
+        "strategy": {
+          "es": "En una carta de opinión, la concesión suele ir al principio. Encontrarla te dice dónde empieza el desacuerdo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué empieza el autor dándole la razón a su adversario?",
+      "options": [
+        {
+          "id": "credibilidad",
+          "text": "Para ganar credibilidad y que su desacuerdo pese más"
+        },
+        {
+          "id": "disculpa",
+          "text": "Para disculparse por escribir al periódico"
+        },
+        {
+          "id": "acuerdo",
+          "text": "Porque en realidad está de acuerdo con toda la carta del martes"
+        }
+      ],
+      "answer": "credibilidad",
+      "evidence": "Je voudrais commencer par dire que son auteur a raison sur un point … Cela dit, je ne suis pas d’accord avec le reste.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El «Cela dit» marca el giro: primero concede, luego rebate, y lo segundo suena más sólido por lo primero."
+        },
+        "incorrect": {
+          "es": "No está de acuerdo con el resto —lo dice literalmente— ni se disculpa. Fíjate en cómo encadena las dos ideas."
+        },
+        "strategy": {
+          "es": "Conceder algo al principio es una estrategia de argumentación, no una duda. Mira qué viene después del giro."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe una carta de opinión de 6–8 frases en francés sobre un cambio en tu ciudad. Concede algo al principio y usa dos subjuntivos con «il faut que» o «je souhaite que»."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "Je vous écris au sujet de…",
+      "… a raison sur un point:…",
+      "Cela dit, je ne suis pas d’accord…",
+      "Il faut que la mairie…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés A2: Sobre el carril bici | WeLearn"
+    },
+    "description": {
+      "es": "Lee una carta al director en francés A2 y practica el subjuntivo presente y el condicional. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/frances/a2/lectura/a-propos-de-la-piste-cyclable",
+    "indexable": false,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-a2-quatre-heures-du-matin",
+      "fr-a2-reunion-des-voisins"
+    ]
+  }
+}

@@ -1,0 +1,460 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-a2-trois-velos-un-budget",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Francés A2"
+  },
+  "slug": "trois-velos-un-budget",
+  "series": {
+    "id": "frances-a2-lectura-10",
+    "episode": 4,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-a2-la-ville-aura-plus-chaud",
+    "nextExerciseId": "fr-a2-repartition-des-taches"
+  },
+  "classification": {
+    "genre": "comparativa de producto",
+    "topic": "elegir una bicicleta",
+    "intent": "learning",
+    "tags": [
+      "frances a2",
+      "lectura",
+      "comparativos",
+      "superlativos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Tres bicis, un presupuesto"
+    },
+    "intro": {
+      "es": "La más barata, la más ligera y la que nadie recomienda pero todo el mundo compra. Lectura de francés A2 con comparativos y superlativos."
+    },
+    "mission": {
+      "es": "Compara las tres bicis y averigua cuál recomienda el texto, y para quién."
+    },
+    "targetText": "Nous avons testé trois vélos de ville à moins de six cents euros. La Vélorette est la moins chère des trois: deux cent quatre-vingts euros. Elle est aussi la plus lourde, presque dix-huit kilos. Pour un immeuble sans ascenseur, c’est un vrai problème. En revanche, elle est plus solide que les deux autres et son cadre en acier se répare partout. La Brise coûte quatre cent vingt euros. Elle est plus légère que la Vélorette de cinq kilos et elle roule mieux en montée. Son guidon se règle en hauteur sans outil, ce qui est pratique si deux personnes se partagent le vélo. Mais ses pièces sont moins faciles à trouver, et le vendeur nous a dit qu’il fallait attendre trois semaines pour un dérailleur. La Cormoran est la plus chère et la plus légère: cinq cent quatre-vingt-dix euros, treize kilos. C’est aussi la plus confortable sur les pavés. Alors, laquelle acheter? Si vous habitez au sixième étage, prenez la Cormoran. Si vous roulez surtout sur du plat et que vous voulez réparer vous-même, la Vélorette est le meilleur choix. La Brise, elle, est la plus jolie des trois. C’est la seule raison de l’acheter, et beaucoup de gens l’achètent quand même.",
+    "wordCount": 202,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Construir comparaciones: plus / moins / aussi… que."
+      },
+      {
+        "es": "Formar superlativos con le / la plus y le / la moins."
+      },
+      {
+        "es": "Contrastar tres opciones y extraer una recomendación condicionada."
+      }
+    ],
+    "grammarFocus": [
+      "comparatifs",
+      "superlatifs",
+      "adjectifs-qualificatifs"
+    ],
+    "vocabulary": [
+      {
+        "surface": "lourde",
+        "lemma": "lourd",
+        "glosses": {
+          "es": "pesada"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cadre",
+        "lemma": "cadre",
+        "glosses": {
+          "es": "cuadro (el armazón de la bici)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "acier",
+        "lemma": "acier",
+        "glosses": {
+          "es": "acero"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "légère",
+        "lemma": "léger",
+        "glosses": {
+          "es": "ligera"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "montée",
+        "lemma": "montée",
+        "glosses": {
+          "es": "subida, cuesta arriba"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dérailleur",
+        "lemma": "dérailleur",
+        "glosses": {
+          "es": "cambio de marchas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pavés",
+        "lemma": "pavé",
+        "glosses": {
+          "es": "adoquines"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "plat",
+        "lemma": "plat",
+        "glosses": {
+          "es": "llano, terreno sin cuestas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Los «pavés», los adoquines, siguen cubriendo calles enteras en muchas ciudades francesas, y son un criterio real a la hora de comprar bici."
+    },
+    "spanishSpeakerNote": {
+      "es": "El superlativo francés repite el artículo: «la plus chère», literalmente «la más cara». Y «meilleur» es la forma irregular de «bon»: no se dice «plus bon», igual que en español no se dice «más bueno» sino «mejor»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo sobre hechos pasados y planes futuros, distinguir quién dice qué, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers",
+      "accord-participe-passe",
+      "cause-consequence",
+      "comparatifs",
+      "conditionnel-present",
+      "connecteurs",
+      "discours-indirect",
+      "dont-relatif",
+      "futur-simple",
+      "gerondif",
+      "imparfait",
+      "negation-avancee",
+      "passe-compose-avoir",
+      "passe-compose-etre",
+      "passe-compose-vs-imparfait",
+      "pronoms-coi",
+      "pronoms-y-en",
+      "si-conditionnel",
+      "subjonctif-present",
+      "superlatifs",
+      "verbes-pronominaux"
+    ],
+    "disallowedGrammar": [
+      "plus-que-parfait",
+      "voix passive",
+      "participe présent",
+      "futur antérieur"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 12.6,
+      "maxSentenceWords": 22,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Pasado narrativo (passé composé e imparfait) permitido. Sin plus-que-parfait ni voz pasiva. Inferencia ligera: unir dos datos separados por varios párrafos."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué conclusión ofrece la comparativa?",
+      "options": [
+        {
+          "id": "depende",
+          "text": "Que la mejor bici depende de dónde vives y de cómo circulas"
+        },
+        {
+          "id": "cara",
+          "text": "Que la más cara es siempre la mejor compra"
+        },
+        {
+          "id": "barata",
+          "text": "Que la más barata es la mejor para todo el mundo"
+        }
+      ],
+      "answer": "depende",
+      "evidence": "Si vous habitez au sixième étage, prenez la Cormoran. Si vous roulez surtout sur du plat … la Vélorette est le meilleur choix.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. No da un ganador único: da dos recomendaciones, cada una con su condición."
+        },
+        "incorrect": {
+          "es": "El texto recomienda dos bicis distintas según el caso. Busca las dos frases que empiezan por «Si vous»."
+        },
+        "strategy": {
+          "es": "Si un texto comparativo termina con varias frases condicionales, es que su respuesta es «depende». Lee las condiciones."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuál de las tres es la más pesada?",
+      "options": [
+        {
+          "id": "velorette",
+          "text": "La Vélorette"
+        },
+        {
+          "id": "brise",
+          "text": "La Brise"
+        },
+        {
+          "id": "cormoran",
+          "text": "La Cormoran"
+        }
+      ],
+      "answer": "velorette",
+      "evidence": "Elle est aussi la plus lourde, presque dix-huit kilos.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: dieciocho kilos, cinco más que la Cormoran. Es también la más barata."
+        },
+        "incorrect": {
+          "es": "La Cormoran es «la plus légère», la más ligera. Busca cuál lleva «la plus lourde»."
+        },
+        "strategy": {
+          "es": "Con tres opciones, haz una tabla mental de dos columnas: precio y peso. Casi todas las preguntas caen ahí."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que la Cormoran es la más cómoda «sur les pavés». ¿Qué son los «pavés»?",
+      "options": [
+        {
+          "id": "adoquines",
+          "text": "Los adoquines de la calzada"
+        },
+        {
+          "id": "pedales",
+          "text": "Los pedales"
+        },
+        {
+          "id": "paseos",
+          "text": "Los paseos junto al río"
+        }
+      ],
+      "answer": "adoquines",
+      "evidence": "C’est aussi la plus confortable sur les pavés.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Una calle de adoquines vibra mucho, y por eso la comodidad se nota justo ahí."
+        },
+        "incorrect": {
+          "es": "La preposición «sur» indica una superficie por la que se circula. Eso descarta los pedales."
+        },
+        "strategy": {
+          "es": "Cuando una palabra va detrás de «sur», suele ser una superficie o un terreno. Ese detalle acota mucho."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué desaconseja la Vélorette a quien vive en un piso alto sin ascensor?",
+      "options": [
+        {
+          "id": "peso",
+          "text": "Porque con dieciocho kilos hay que subirla a mano"
+        },
+        {
+          "id": "robo",
+          "text": "Porque es la que más se roban"
+        },
+        {
+          "id": "tamano",
+          "text": "Porque no cabe en el hueco de la escalera"
+        }
+      ],
+      "answer": "peso",
+      "evidence": "Elle est aussi la plus lourde, presque dix-huit kilos. Pour un immeuble sans ascenseur, c’est un vrai problème.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El texto une las dos ideas en frases seguidas: el peso primero, la consecuencia después."
+        },
+        "incorrect": {
+          "es": "El texto no habla de robos ni de tamaño. Lee la frase que sigue inmediatamente al dato de los kilos."
+        },
+        "strategy": {
+          "es": "Un dato numérico seguido de un juicio («c’est un vrai problème») siempre están conectados. Léelos juntos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: conseguir piezas de recambio para la Brise es más difícil que para las otras dos.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "ses pièces sont moins faciles à trouver, et le vendeur nous a dit qu’il fallait attendre trois semaines",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y el texto da la prueba: tres semanas de espera para un cambio de marchas."
+        },
+        "incorrect": {
+          "es": "Busca qué dice el texto de las piezas de la Brise, justo después del «Mais»."
+        },
+        "strategy": {
+          "es": "«Moins facile à trouver» es una comparación en negativo. Traducirla mal invierte el sentido; léela despacio."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "¿Qué actitud muestra la frase final sobre la Brise?",
+      "options": [
+        {
+          "id": "ironia",
+          "text": "Ironía: reconoce que la gente compra por estética aunque no convenga"
+        },
+        {
+          "id": "entusiasmo",
+          "text": "Entusiasmo: es su bici favorita de las tres"
+        },
+        {
+          "id": "enfado",
+          "text": "Enfado: reprocha al fabricante la calidad del producto"
+        }
+      ],
+      "answer": "ironia",
+      "evidence": "C’est la seule raison de l’acheter, et beaucoup de gens l’achètent quand même.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El «quand même» final es lo que hace la ironía: sabe que su consejo no se va a seguir."
+        },
+        "incorrect": {
+          "es": "Difícilmente es entusiasmo si dice que la única razón para comprarla es que es bonita. Fíjate en «quand même»."
+        },
+        "strategy": {
+          "es": "La ironía suele estar en una pequeña expresión al final («quand même», «bien sûr»). Detectarla cambia todo el sentido."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Compara en 6–8 frases en francés tres objetos que hayas tenido que elegir. Usa tres comparativos (plus / moins / aussi… que) y dos superlativos."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "Le / La … est le / la moins cher(ère).",
+      "Il / Elle est plus … que…",
+      "C’est le / la plus…",
+      "Si vous…, prenez…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés A2: Tres bicis, un presupuesto | WeLearn"
+    },
+    "description": {
+      "es": "Lee una comparativa en francés A2 y practica los comparativos (plus/moins que) y los superlativos (le plus/le moins). Con seis preguntas y vocabulario."
+    },
+    "canonicalPath": "/practica/frances/a2/lectura/trois-velos-un-budget",
+    "indexable": false,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-a2-la-ville-aura-plus-chaud",
+      "fr-a2-repartition-des-taches"
+    ]
+  }
+}

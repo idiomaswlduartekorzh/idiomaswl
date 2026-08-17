@@ -1,0 +1,460 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-a2-les-etes-de-sete",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Francés A2"
+  },
+  "slug": "les-etes-de-sete",
+  "series": {
+    "id": "frances-a2-lectura-10",
+    "episode": 2,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-a2-quarante-secondes",
+    "nextExerciseId": "fr-a2-la-ville-aura-plus-chaud"
+  },
+  "classification": {
+    "genre": "memoria de infancia",
+    "topic": "la casa de la abuela",
+    "intent": "learning",
+    "tags": [
+      "frances a2",
+      "lectura",
+      "imparfait",
+      "passé composé"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Los veranos de Sète"
+    },
+    "intro": {
+      "es": "Veranos que se repetían siempre igual, hasta el día que no. Lectura de francés A2 sobre la diferencia entre el imperfecto y el passé composé."
+    },
+    "mission": {
+      "es": "Fíjate en qué se cuenta en imperfecto y qué en passé composé, y por qué."
+    },
+    "targetText": "Quand j’étais petite, nous passions tous les étés à Sète, chez ma grand-mère. La maison était étroite et haute, avec un escalier qui craquait à la quatrième marche. Il y avait toujours du linge sur le balcon et une odeur de melon dans la cuisine. Les journées se ressemblaient. Le matin, ma grand-mère descendait au port acheter du poisson. L’après-midi, elle fermait les volets et nous obligeait à dormir, même quand nous n’avions pas sommeil. Le soir, elle sortait deux chaises sur le trottoir et elle parlait avec la voisine pendant des heures. Nous, nous jouions dans la rue jusqu’à la nuit. Personne ne nous appelait pour rentrer: quand la voisine repliait sa chaise et disait bonne nuit, nous savions tous que c’était fini pour aujourd’hui. Et puis, un été, elle n’est pas descendue au port. Elle est restée assise dans la cuisine, avec son café froid. Ma mère a téléphoné à un médecin. Personne ne nous a rien expliqué, mais nous avons compris tout de suite: cet été-là, les volets sont restés ouverts l’après-midi, et nous n’avons pas dormi. Aujourd’hui, la maison appartient à quelqu’un d’autre. Je suis passée devant l’année dernière. L’escalier craque sûrement encore à la quatrième marche.",
+    "wordCount": 201,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Usar el imparfait para lo que se repetía y el passé composé para lo que ocurrió una vez."
+      },
+      {
+        "es": "Notar el momento exacto en que un relato cambia de tiempo verbal, y entender por qué."
+      },
+      {
+        "es": "Describir lugares y costumbres con adjetivos precisos."
+      }
+    ],
+    "grammarFocus": [
+      "imparfait",
+      "passe-compose-vs-imparfait",
+      "adjectifs-qualificatifs"
+    ],
+    "vocabulary": [
+      {
+        "surface": "craquait",
+        "lemma": "craquer",
+        "glosses": {
+          "es": "crujía"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "marche",
+        "lemma": "marche",
+        "glosses": {
+          "es": "escalón"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "linge",
+        "lemma": "linge",
+        "glosses": {
+          "es": "ropa tendida, colada"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "volets",
+        "lemma": "volet",
+        "glosses": {
+          "es": "contraventanas, postigos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "trottoir",
+        "lemma": "trottoir",
+        "glosses": {
+          "es": "acera"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sommeil",
+        "lemma": "sommeil",
+        "glosses": {
+          "es": "sueño (ganas de dormir)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "se ressemblaient",
+        "lemma": "se ressembler",
+        "glosses": {
+          "es": "se parecían entre sí"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "appartient",
+        "lemma": "appartenir",
+        "glosses": {
+          "es": "pertenece"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Sète es un puerto pesquero del sur de Francia. Sacar dos sillas a la acera al anochecer y hablar con la vecina es una costumbre mediterránea que el texto retrata sin explicarla."
+    },
+    "spanishSpeakerNote": {
+      "es": "La diferencia entre imparfait y passé composé es casi la misma que entre «bajaba» y «bajó» en español. El imperfecto pinta el decorado y la costumbre; el passé composé mete el hecho que rompe la costumbre."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo sobre hechos pasados y planes futuros, distinguir quién dice qué, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers",
+      "accord-participe-passe",
+      "cause-consequence",
+      "comparatifs",
+      "conditionnel-present",
+      "connecteurs",
+      "discours-indirect",
+      "dont-relatif",
+      "futur-simple",
+      "gerondif",
+      "imparfait",
+      "negation-avancee",
+      "passe-compose-avoir",
+      "passe-compose-etre",
+      "passe-compose-vs-imparfait",
+      "pronoms-coi",
+      "pronoms-y-en",
+      "si-conditionnel",
+      "subjonctif-present",
+      "superlatifs",
+      "verbes-pronominaux"
+    ],
+    "disallowedGrammar": [
+      "plus-que-parfait",
+      "voix passive",
+      "participe présent",
+      "futur antérieur"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 12.6,
+      "maxSentenceWords": 26,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Pasado narrativo (passé composé e imparfait) permitido. Sin plus-que-parfait ni voz pasiva. Inferencia ligera: unir dos datos separados por varios párrafos."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué articula el texto de principio a fin?",
+      "options": [
+        {
+          "id": "ruptura",
+          "text": "Una rutina de veranos idénticos y el verano que la rompió"
+        },
+        {
+          "id": "mudanza",
+          "text": "La mudanza de una familia a la ciudad de Sète"
+        },
+        {
+          "id": "reforma",
+          "text": "La reforma de una casa antigua junto al puerto"
+        }
+      ],
+      "answer": "ruptura",
+      "evidence": "Les journées se ressemblaient … Et puis, un été, elle n’est pas descendue au port.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el cambio de tiempo verbal lo marca: mientras todo se repite, imperfecto; cuando algo pasa una vez, passé composé."
+        },
+        "incorrect": {
+          "es": "No hay mudanza ni reforma. Busca la frase que empieza con «Et puis»: ahí gira el texto entero."
+        },
+        "strategy": {
+          "es": "En un recuerdo, localiza dónde cambia el tiempo verbal. Ese punto suele ser el corazón del texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué hacía la abuela cada tarde antes de la siesta?",
+      "options": [
+        {
+          "id": "volets",
+          "text": "Cerraba las contraventanas"
+        },
+        {
+          "id": "port",
+          "text": "Bajaba al puerto a por pescado"
+        },
+        {
+          "id": "chaises",
+          "text": "Sacaba dos sillas a la acera"
+        }
+      ],
+      "answer": "volets",
+      "evidence": "L’après-midi, elle fermait les volets et nous obligeait à dormir",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Lo del puerto era por la mañana y lo de las sillas, al anochecer."
+        },
+        "incorrect": {
+          "es": "El texto organiza el día en tres momentos: le matin, l’après-midi, le soir. Busca el de la tarde."
+        },
+        "strategy": {
+          "es": "Cuando un texto reparte la rutina por momentos del día, usa esas marcas para localizar el dato."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "La casa tenía «un escalier qui craquait à la quatrième marche». ¿Qué es una «marche» aquí?",
+      "options": [
+        {
+          "id": "escalon",
+          "text": "Un escalón"
+        },
+        {
+          "id": "caminata",
+          "text": "Una caminata"
+        },
+        {
+          "id": "marcha",
+          "text": "Una marcha, una manifestación"
+        }
+      ],
+      "answer": "escalon",
+      "evidence": "un escalier qui craquait à la quatrième marche",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Y fíjate en que el texto vuelve a esa cuarta marche en la última frase: no era un detalle cualquiera."
+        },
+        "incorrect": {
+          "es": "La palabra va justo después de «escalier», escalera, y lleva un número ordinal delante. Eso descarta las otras dos."
+        },
+        "strategy": {
+          "es": "Un número ordinal delante de una palabra («la quatrième…») te dice que forma parte de una serie contable."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Nadie les explicó nada, pero los niños «comprendieron enseguida». ¿Qué comprendieron?",
+      "options": [
+        {
+          "id": "enferma",
+          "text": "Que la abuela estaba enferma"
+        },
+        {
+          "id": "mudar",
+          "text": "Que la familia iba a mudarse de casa"
+        },
+        {
+          "id": "vender",
+          "text": "Que la casa se iba a vender ese mismo verano"
+        }
+      ],
+      "answer": "enferma",
+      "evidence": "Elle est restée assise dans la cuisine, avec son café froid. Ma mère a téléphoné à un médecin.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El texto nunca dice la palabra: la deduces del café frío, del médico y de las contraventanas que ya nadie cierra."
+        },
+        "incorrect": {
+          "es": "La venta de la casa se menciona mucho después, y en presente. Fíjate en a quién llama la madre."
+        },
+        "strategy": {
+          "es": "Cuando un texto dice «no nos explicaron nada», es que la información está en los detalles. Búscalos justo antes."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la narradora sigue siendo la dueña de la casa de Sète.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Aujourd’hui, la maison appartient à quelqu’un d’autre.",
+      "feedback": {
+        "correct": {
+          "es": "Falso. Pasó por delante el año pasado, pero desde fuera: la casa es de otra gente."
+        },
+        "incorrect": {
+          "es": "La penúltima parte del texto dice de quién es la casa hoy. Busca el verbo «appartient»."
+        },
+        "strategy": {
+          "es": "Cuando un relato salta al presente al final, ahí está la situación actual. No la deduzcas del pasado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "¿Qué efecto busca la última frase, «L’escalier craque sûrement encore à la quatrième marche»?",
+      "options": [
+        {
+          "id": "permanencia",
+          "text": "Sugerir que algo de aquello sigue ahí, aunque ya no le pertenezca"
+        },
+        {
+          "id": "queja",
+          "text": "Quejarse de que los nuevos dueños no han arreglado la casa"
+        },
+        {
+          "id": "duda",
+          "text": "Poner en duda que sus recuerdos sean exactos"
+        }
+      ],
+      "answer": "permanencia",
+      "evidence": "L’escalier craque sûrement encore à la quatrième marche.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Ese «sûrement» es una suposición cariñosa, no una queja ni una duda: quiere que siga siendo verdad."
+        },
+        "incorrect": {
+          "es": "No hay reproche a nadie. Fíjate en que el detalle del cuarto escalón ya salió al principio del texto."
+        },
+        "strategy": {
+          "es": "Si un detalle del principio reaparece al final, el autor lo está usando para cerrar. Pregúntate qué significa esa vuelta."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en francés sobre un sitio de tu infancia. Usa el imparfait para lo que se repetía y el passé composé para un hecho que ocurrió una sola vez."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "Quand j’étais petit(e)…",
+      "Il y avait toujours…",
+      "Le matin, nous…",
+      "Et puis, un jour…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés A2: Los veranos de Sète | WeLearn"
+    },
+    "description": {
+      "es": "Lee un recuerdo de infancia en francés A2 y aprende a distinguir el imparfait del passé composé. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/frances/a2/lectura/les-etes-de-sete",
+    "indexable": false,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-a2-quarante-secondes",
+      "fr-a2-la-ville-aura-plus-chaud"
+    ]
+  }
+}

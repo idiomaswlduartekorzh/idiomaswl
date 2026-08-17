@@ -1,0 +1,460 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-a2-reunion-des-voisins",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Francés A2"
+  },
+  "slug": "reunion-des-voisins",
+  "series": {
+    "id": "frances-a2-lectura-10",
+    "episode": 9,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-a2-a-propos-de-la-piste-cyclable",
+    "nextExerciseId": "fr-a2-l-eau-est-montee-en-vingt-minutes"
+  },
+  "classification": {
+    "genre": "acta de reunión",
+    "topic": "asociación vecinal",
+    "intent": "learning",
+    "tags": [
+      "frances a2",
+      "lectura",
+      "estilo indirecto",
+      "negación avanzada"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Reunión de vecinos"
+    },
+    "intro": {
+      "es": "Un acta que recoge quién dijo qué, y una propuesta que no gustó a nadie hasta que se explicó bien. Lectura de francés A2."
+    },
+    "mission": {
+      "es": "Sigue quién dijo cada cosa y averigua qué se decidió al final."
+    },
+    "targetText": "Réunion du 12 mai, dix-huit participants. Madame Roux a ouvert la séance en disant que le local du rez-de-chaussée ne servait plus à rien depuis deux ans. Elle a proposé de le transformer en salle commune. Monsieur Delatour a répondu qu’il n’était pas d’accord et que personne ne l’utiliserait. Il a ajouté qu’aucun immeuble du quartier n’avait ce genre de salle. Madame Roux a demandé pourquoi cela devrait nous empêcher d’essayer. Il n’a rien répondu. Deux voisines ont expliqué qu’elles gardaient leurs petits-enfants le mercredi et qu’elles n’avaient nulle part où les installer. Un étudiant du quatrième a dit qu’il ne travaillait plus chez lui parce que sa chambre était trop petite. À ce moment-là, Monsieur Delatour a repris la parole. Il a dit qu’il avait mal compris: il croyait qu’on voulait faire une salle de fêtes, avec du bruit jusqu’à minuit. Il a précisé qu’il ne s’opposait à rien du tout, à condition que la salle ferme à vingt et une heures. Madame Roux a alors proposé que la salle ouvre d’abord pendant six mois, à titre d’essai. Le vote a donné dix-sept voix pour et aucune contre. Une abstention: Monsieur Delatour, qui a dit qu’il préférait voir avant de décider.",
+    "wordCount": 202,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Transformar y reconocer el estilo indirecto: il a dit que, elle a demandé pourquoi."
+      },
+      {
+        "es": "Manejar las negaciones avanzadas: ne… plus, ne… personne, ne… aucun, ne… nulle part, ne… rien."
+      },
+      {
+        "es": "Seguir un debate donde una postura cambia a mitad de camino."
+      }
+    ],
+    "grammarFocus": [
+      "discours-indirect",
+      "negation-avancee",
+      "negation-ne-pas"
+    ],
+    "vocabulary": [
+      {
+        "surface": "séance",
+        "lemma": "séance",
+        "glosses": {
+          "es": "sesión, reunión"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rez-de-chaussée",
+        "lemma": "rez-de-chaussée",
+        "glosses": {
+          "es": "planta baja"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "salle commune",
+        "lemma": "salle commune",
+        "glosses": {
+          "es": "sala común, local vecinal"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "empêcher",
+        "lemma": "empêcher",
+        "glosses": {
+          "es": "impedir"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "nulle part",
+        "lemma": "nulle part",
+        "glosses": {
+          "es": "en ningún sitio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "repris la parole",
+        "lemma": "reprendre la parole",
+        "glosses": {
+          "es": "volvió a tomar la palabra"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "précisé",
+        "lemma": "préciser",
+        "glosses": {
+          "es": "puntualizó, aclaró"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "abstention",
+        "lemma": "abstention",
+        "glosses": {
+          "es": "abstención"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Las asambleas de comunidad son obligatorias por ley en Francia y se levanta acta de cada una. Ese registro escrito es el que da valor a lo que cada vecino dijo."
+    },
+    "spanishSpeakerNote": {
+      "es": "La negación avanzada cambia solo la segunda pieza: ne… plus (ya no), ne… personne (nadie), ne… rien (nada), ne… aucun (ningún), ne… nulle part (en ninguna parte). El «ne» no se mueve; lo que cambia es lo que va detrás del verbo."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo sobre hechos pasados y planes futuros, distinguir quién dice qué, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers",
+      "accord-participe-passe",
+      "cause-consequence",
+      "comparatifs",
+      "conditionnel-present",
+      "connecteurs",
+      "discours-indirect",
+      "dont-relatif",
+      "futur-simple",
+      "gerondif",
+      "imparfait",
+      "negation-avancee",
+      "passe-compose-avoir",
+      "passe-compose-etre",
+      "passe-compose-vs-imparfait",
+      "pronoms-coi",
+      "pronoms-y-en",
+      "si-conditionnel",
+      "subjonctif-present",
+      "superlatifs",
+      "verbes-pronominaux"
+    ],
+    "disallowedGrammar": [
+      "plus-que-parfait",
+      "voix passive",
+      "participe présent",
+      "futur antérieur"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 13.5,
+      "maxSentenceWords": 21,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Pasado narrativo (passé composé e imparfait) permitido. Sin plus-que-parfait ni voz pasiva. Inferencia ligera: unir dos datos separados por varios párrafos."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta el acta?",
+      "options": [
+        {
+          "id": "malentendido",
+          "text": "Cómo una oposición firme se deshizo al aclararse un malentendido"
+        },
+        {
+          "id": "rechazo",
+          "text": "Cómo los vecinos rechazaron la propuesta de la señora Roux"
+        },
+        {
+          "id": "obras",
+          "text": "Cómo se repartió el coste de unas obras en el edificio"
+        }
+      ],
+      "answer": "malentendido",
+      "evidence": "Il a dit qu’il avait mal compris: il croyait qu’on voulait faire une salle de fêtes",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El acta registra el momento exacto en que Delatour explica de qué se había opuesto en realidad."
+        },
+        "incorrect": {
+          "es": "La propuesta salió adelante con diecisiete votos. Busca la frase donde Delatour vuelve a tomar la palabra."
+        },
+        "strategy": {
+          "es": "En un acta, busca el punto donde alguien cambia de postura. Ahí está lo que de verdad pasó en la reunión."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuál fue el resultado de la votación?",
+      "options": [
+        {
+          "id": "17",
+          "text": "Diecisiete a favor, ninguno en contra y una abstención"
+        },
+        {
+          "id": "18",
+          "text": "Dieciocho a favor por unanimidad"
+        },
+        {
+          "id": "empate",
+          "text": "Empate, así que se aplazó la decisión"
+        }
+      ],
+      "answer": "17",
+      "evidence": "dix-sept voix pour et aucune contre. Une abstention",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y las cuentas cuadran: diecisiete más una abstención son los dieciocho asistentes."
+        },
+        "incorrect": {
+          "es": "No fue unánime: hubo una abstención. Busca la penúltima frase del acta."
+        },
+        "strategy": {
+          "es": "En una votación, comprueba que las cifras sumen el total de asistentes. Si no suman, te falta un dato."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Dos vecinas dicen que no tienen «nulle part où les installer». ¿Qué significa «nulle part»?",
+      "options": [
+        {
+          "id": "ningunsitio",
+          "text": "En ningún sitio"
+        },
+        {
+          "id": "pocotiempo",
+          "text": "Poco tiempo"
+        },
+        {
+          "id": "nadiequeayude",
+          "text": "Nadie que las ayude"
+        }
+      ],
+      "answer": "ningunsitio",
+      "evidence": "elles n’avaient nulle part où les installer",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Y justo por eso la sala común les resolvería el problema: es una cuestión de espacio."
+        },
+        "incorrect": {
+          "es": "Fíjate en la palabra que va detrás, «où», que introduce un lugar. Eso descarta el tiempo y las personas."
+        },
+        "strategy": {
+          "es": "Si detrás de una expresión negativa aparece «où», lo que falta es un lugar. La palabra «part» ya apunta a sitio."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué se oponía en realidad Monsieur Delatour?",
+      "options": [
+        {
+          "id": "ruido",
+          "text": "Porque creía que sería una sala de fiestas con ruido hasta medianoche"
+        },
+        {
+          "id": "dinero",
+          "text": "Porque no quería pagar la reforma del local"
+        },
+        {
+          "id": "roux",
+          "text": "Porque tenía un conflicto personal con la señora Roux"
+        }
+      ],
+      "answer": "ruido",
+      "evidence": "il croyait qu’on voulait faire une salle de fêtes, avec du bruit jusqu’à minuit",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo demuestra su condición: acepta todo siempre que la sala cierre a las nueve."
+        },
+        "incorrect": {
+          "es": "El acta no menciona dinero ni ningún conflicto personal. Lee lo que él mismo dice al retomar la palabra."
+        },
+        "strategy": {
+          "es": "Cuando alguien dice que «había entendido mal», lo que viene después es su verdadero motivo. No lo saltes."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el local de la planta baja llevaba dos años sin uso.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "le local du rez-de-chaussée ne servait plus à rien depuis deux ans",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero. «Ne servait plus à rien depuis deux ans»: ya no servía para nada desde hacía dos años."
+        },
+        "incorrect": {
+          "es": "Está en la primera frase del acta. Fíjate en la negación «ne… plus» y en el «depuis»."
+        },
+        "strategy": {
+          "es": "«Depuis» indica desde cuándo dura una situación. Combinado con «ne… plus», te da el momento en que algo dejó de pasar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "reference",
+      "skill": "reference",
+      "prompt": "En «elle n’avaient nulle part où les installer», ¿a quién se refiere «les»?",
+      "options": [
+        {
+          "id": "nietos",
+          "text": "A los nietos"
+        },
+        {
+          "id": "vecinas",
+          "text": "A las dos vecinas"
+        },
+        {
+          "id": "sillas",
+          "text": "A las sillas de la sala"
+        }
+      ],
+      "answer": "nietos",
+      "evidence": "elles gardaient leurs petits-enfants le mercredi et qu’elles n’avaient nulle part où les installer",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. «Les» recoge «leurs petits-enfants», que es lo que se ha nombrado justo antes."
+        },
+        "incorrect": {
+          "es": "Las vecinas son el sujeto («elles»), así que no pueden ser a la vez el complemento. Mira qué hay antes del «et»."
+        },
+        "strategy": {
+          "es": "Si el sujeto ya está marcado por «elles», el pronombre de complemento tiene que referirse a otra cosa. Búscala antes."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe el acta de una reunión en 6–8 frases en francés. Usa el estilo indirecto cuatro veces («il a dit que…») y tres negaciones distintas (ne… plus, ne… personne, ne… rien)."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "… a ouvert la séance en disant que…",
+      "Il / Elle a répondu que…",
+      "Personne ne…",
+      "Le vote a donné…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés A2: Reunión de vecinos | WeLearn"
+    },
+    "description": {
+      "es": "Lee un acta de reunión en francés A2 y practica el estilo indirecto y la negación avanzada (ne… plus, ne… personne, ne… aucun)."
+    },
+    "canonicalPath": "/practica/frances/a2/lectura/reunion-des-voisins",
+    "indexable": false,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-a2-a-propos-de-la-piste-cyclable",
+      "fr-a2-l-eau-est-montee-en-vingt-minutes"
+    ]
+  }
+}
