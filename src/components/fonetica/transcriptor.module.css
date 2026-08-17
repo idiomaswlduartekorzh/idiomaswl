@@ -217,8 +217,11 @@
   display: inline-block;
   border: 0;
   /* El área táctil mínima de WCAG 2.2 son 24 px; en línea se quedaba en la altura de la
-     fuente, unos 20. */
-  padding: 0.15em 0.3em;
+     fuente, unos 20. El relleno da esa altura, y el margen negativo lo compensa a los
+     lados: sin él, la palabra pulsable empujaba la puntuación y `ˈθɜːzˌdeɪ .` salía con
+     un hueco antes del punto. */
+  padding: 0.22em 0.14em;
+  margin: 0 -0.14em;
   background: color-mix(in srgb, var(--wlp-accent) 10%, transparent);
   border-radius: var(--wlp-r-sm);
   /* Mezclado con la tinta: el acento puro sobre su propio tinte se quedaba en 4,25:1,
