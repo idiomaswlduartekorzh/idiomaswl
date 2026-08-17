@@ -8163,9 +8163,18 @@ body {
   [style*="background:rgb(83, 74, 183);"]
 ) { background: var(--wl-accent-action) !important; }
 
+/* El anillo de foco es lo único que le dice a quien navega con teclado dónde está.
+   El amarillo solo funcionaba de noche: sobre blanco daba 1,61:1 y sobre una tarjeta
+   1,47:1, cuando el mínimo para un elemento de interfaz es 3:1. De día era casi invisible.
+
+   Se conserva el amarillo, que es la identidad, y se le añade un filete oscuro pegado al
+   elemento. En claro ese filete hace el trabajo (12:1 contra el papel); en oscuro
+   desaparece contra el fondo y el amarillo sigue haciendo el suyo (11,9:1). El anillo se
+   ve siempre, se mire como se mire. */
 :root[data-wl-surface="editorial"] :where(a, button, input, textarea, select, [tabindex]):focus-visible {
   outline: 3px solid #f2c748;
   outline-offset: 3px;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--wl-text) 60%, transparent);
 }
 
 /* Inline language colours are content data. Map values that fail against
