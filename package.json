@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "npm run check:practica-catalog && npm run check:reading-content && npm run audit:writing-curriculum && npm run check:listening-series && npm run check:ielts-task1 && npm run check:ielts-task2 && npm run check:vocabulario && npm run check:historias && npm run check:seo-snippets",
+    "prebuild": "npm run check:practica-catalog && npm run check:reading-content && npm run audit:writing-curriculum && npm run check:listening-series && npm run check:ielts-task1 && npm run check:ielts-task2 && npm run check:vocabulario && npm run check:historias && npm run check:seo-snippets && npm run check:fonetica && npm run check:fonetica-coreano",
     "dev": "NODE_OPTIONS='--max-old-space-size=3072' next dev",
     "dev:audit": "NODE_OPTIONS='--max-old-space-size=3072' next dev --webpack",
     "dev:safe": "node scripts/safe-dev.js",
@@ -13,6 +13,8 @@
     "lint": "eslint",
     "check:practica-catalog": "node scripts/check-practica-catalog.mjs",
     "check:seo-snippets": "node --experimental-strip-types --no-warnings scripts/check-seo-snippets.mjs",
+    "check:fonetica": "node --experimental-strip-types --no-warnings scripts/check-fonetica.mjs",
+    "check:fonetica-coreano": "node --experimental-strip-types --no-warnings scripts/check-fonetica-coreano.mjs",
     "audit:writing-curriculum": "node scripts/audit-writing-curriculum.mjs",
     "audit:dark-mode": "node scripts/audit-dark-mode.mjs",
     "check:reading-content": "node scripts/check-reading-content.mjs",

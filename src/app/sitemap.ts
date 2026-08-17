@@ -8,6 +8,7 @@ import { SIMULACROS } from '@/data/mocks/icfes-simulacros';
 import { GUIDED_MOCK_IDS, GUIDED_WORKBOOK_IDS } from '@/data/icfes/guided-registry';
 import { getVocabLevels } from '@/data/practica/vocabulario/registry';
 import { HISTORIA_LANG_KEYS, getHistorias } from '@/data/practica/historias';
+import { IDIOMAS_PUBLICADOS } from '@/data/fonetica/idiomas';
 
 // www es el dominio canónico (idiomaswl.com hace 307 → www.idiomaswl.com).
 // Las URLs del sitemap deben ser las canónicas finales, no redirecciones.
@@ -39,6 +40,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/leccion`,         lastModified: now, changeFrequency: 'weekly',  priority: 0.85 },
     { url: `${BASE}/practica`,                  lastModified: now, changeFrequency: 'weekly',  priority: 0.85 },
     { url: `${BASE}/nivel-radar`,     lastModified: now, changeFrequency: 'monthly', priority: 0.85 },
+
+    // ── Herramientas gratuitas ────────────────────────────────────────────────
+    // Una URL por idioma a propósito: «transcripción fonética inglés» y «cómo se
+    // pronuncia en coreano» son búsquedas distintas y no comparten página.
+    // Los idiomas salen del registro, no de una lista a mano: así añadir uno no puede
+    // dejarlo fuera del sitemap.
+    { url: `${BASE}/herramientas`,                        lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/herramientas/transcripcion-fonetica`, lastModified: now, changeFrequency: 'monthly', priority: 0.75 },
+    ...IDIOMAS_PUBLICADOS.map((idioma) => ({
+      url: `${BASE}/herramientas/transcripcion-fonetica/${idioma.slug}`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })),
+
     { url: `${BASE}/precios`,         lastModified: now, changeFrequency: 'monthly', priority: 0.7  },
 
     // ── High-intent landing pages ──────────────────────────────────────────────
