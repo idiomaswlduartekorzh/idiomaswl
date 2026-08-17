@@ -7,7 +7,7 @@ const PLACEHOLDER_REVIEWER = /(pending|pendiente|replace|por asignar)/i
 export function validateReadingExercise(exercise) {
   const errors = []
   if (!exercise || typeof exercise !== 'object') return ['exercise must be an object']
-  if (exercise.schemaVersion !== '1.0.0') errors.push('schemaVersion must be 1.0.0')
+  if (!['1.0.0', '1.1.0'].includes(exercise.schemaVersion)) errors.push('schemaVersion must be 1.0.0 or 1.1.0')
   if (!/^[a-z0-9][a-z0-9-]{5,80}$/.test(exercise.id ?? '')) errors.push('id has an invalid format')
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(exercise.slug ?? '')) errors.push('slug has an invalid format')
   if (!Array.isArray(exercise.tutorLocales) || exercise.tutorLocales.length === 0) errors.push('at least one tutor locale is required')
