@@ -1,0 +1,462 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-a1-halmeoni-achim",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Coreano A1",
+    "topik": 1,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. A1 se sitúa alrededor del TOPIK I nivel 1, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "halmeoni-achim",
+  "series": {
+    "id": "coreano-a1-lectura-10",
+    "episode": 4,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-a1-uri-dongne-e-eopneun-geot",
+    "nextExerciseId": "ko-a1-beoseu-siganpyo"
+  },
+  "classification": {
+    "genre": "retrato familiar",
+    "topic": "la rutina de la abuela",
+    "intent": "learning",
+    "tags": [
+      "coreano a1",
+      "lectura",
+      "presente 해요",
+      "partícula 을/를"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La mañana de la abuela"
+    },
+    "intro": {
+      "es": "Una abuela que enciende la radio y no la televisión, y que mete kimchi en la fiambrera todos los días aunque sepa que a su nieto no le gusta."
+    },
+    "mission": {
+      "es": "Fíjate en el orden de la mañana y en por qué el kimchi vuelve cada día."
+    },
+    "targetText": "우리 할머니는 아침에 바빠요. 여섯 시에 일어나요. 먼저 문을 열어요. 그리고 라디오를 켜요. 뉴스를 들어요. 하지만 뉴스를 안 봐요. 할머니는 라디오를 좋아해요. 텔레비전을 안 좋아해요. 다음에 물을 끓여요. 차를 만들어요. 그리고 신문을 읽어요. 일곱 시에 저를 깨워요. 저는 학교에 가요. 할머니는 저에게 도시락을 줘요. 도시락에 김치가 있어요. 저는 김치를 안 좋아해요. 할머니도 알아요. 하지만 할머니는 매일 김치를 넣어요. 저도 매일 김치를 먹어요. 우리는 이 게임을 좋아해요. 할머니는 웃어요. 저도 웃어요. 김치는 여전히 매워요.",
+    "wordCount": 73,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Conjugar verbos en presente 해요 y reconocerlos al final de la frase."
+      },
+      {
+        "es": "Marcar el objeto directo con 을/를 y distinguirlo del sujeto."
+      },
+      {
+        "es": "Seguir una rutina ordenada por horas y por conectores."
+      }
+    ],
+    "grammarFocus": [
+      "haeyo-presente",
+      "marcador-objeto"
+    ],
+    "vocabulary": [
+      {
+        "surface": "일어나요",
+        "lemma": "일어나다",
+        "reading": "ireonayo",
+        "glosses": {
+          "es": "se levanta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "켜요",
+        "lemma": "켜다",
+        "reading": "kyeoyo",
+        "glosses": {
+          "es": "enciende (un aparato)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "신문",
+        "lemma": "신문",
+        "reading": "sinmun",
+        "glosses": {
+          "es": "periódico"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "깨워요",
+        "lemma": "깨우다",
+        "reading": "kkaewoyo",
+        "glosses": {
+          "es": "despierta (a alguien)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "도시락",
+        "lemma": "도시락",
+        "reading": "dosirak",
+        "glosses": {
+          "es": "fiambrera, comida para llevar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "넣어요",
+        "lemma": "넣다",
+        "reading": "neoheoyo",
+        "glosses": {
+          "es": "mete, pone dentro"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "여전히",
+        "lemma": "여전히",
+        "reading": "yeojeonhi",
+        "glosses": {
+          "es": "sigue siendo, todavía"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "매워요",
+        "lemma": "맵다",
+        "reading": "maewoyo",
+        "glosses": {
+          "es": "está picante"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El 도시락 casero sigue siendo habitual en Corea, y el kimchi es casi obligatorio dentro. Que la abuela lo meta cada día no es descuido: es una forma de insistir."
+    },
+    "spanishSpeakerNote": {
+      "es": "La partícula 을/를 marca el objeto y no tiene equivalente en español, donde el orden ya lo indica. Aquí es imprescindible, porque el coreano pone el verbo al final: 김치를 먹어요, «kimchi + [objeto] + como»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en 해요체 sobre la vida cotidiana, identificar de quién se habla gracias a las partículas de tema y de objeto, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas"
+    ],
+    "disallowedGrammar": [
+      "clausulas-relativas",
+      "discurso-reportado",
+      "honorificos-avanzados",
+      "voz pasiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 3.2,
+      "maxSentenceWords": 5,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativa",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Todo en 해요체 salvo la lectura 10 (합니다체, carta formal). Sin cláusulas de relativo ni discurso indirecto. Romanización disponible como apoyo opcional."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué retrata el texto además de una rutina?",
+      "options": [
+        {
+          "id": "juego",
+          "text": "Una costumbre compartida entre abuela y nieto que los dos aceptan"
+        },
+        {
+          "id": "pelea",
+          "text": "Una discusión diaria por la comida"
+        },
+        {
+          "id": "enferma",
+          "text": "Que la abuela está mayor y necesita ayuda"
+        }
+      ],
+      "answer": "juego",
+      "evidence": "우리는 이 게임을 좋아해요. 할머니는 웃어요. 저도 웃어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La palabra 게임, juego, cambia el sentido de todo: no es un conflicto, es un ritual."
+        },
+        "incorrect": {
+          "es": "Nadie discute y la abuela no necesita ayuda: es ella quien lo despierta y le prepara la comida. Busca la palabra 게임."
+        },
+        "strategy": {
+          "es": "Una sola palabra puede reinterpretar todo un texto. Si algo parece un conflicto, comprueba cómo lo nombra el autor."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿A qué hora despierta la abuela al nieto?",
+      "options": [
+        {
+          "id": "siete",
+          "text": "A las siete"
+        },
+        {
+          "id": "seis",
+          "text": "A las seis"
+        },
+        {
+          "id": "ocho",
+          "text": "A las ocho"
+        }
+      ],
+      "answer": "siete",
+      "evidence": "일곱 시에 저를 깨워요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: 일곱 시, las siete. Las seis es cuando se levanta ella."
+        },
+        "incorrect": {
+          "es": "En el texto hay dos horas y cada una es de una persona. Busca la que va con 깨워요, despertar."
+        },
+        "strategy": {
+          "es": "Empareja cada hora con su verbo. 일어나요 es levantarse uno mismo; 깨워요 es despertar a otro."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice 할머니는 매일 김치를 넣어요. ¿Qué significa 넣어요?",
+      "options": [
+        {
+          "id": "meter",
+          "text": "Lo mete dentro"
+        },
+        {
+          "id": "comprar",
+          "text": "Lo compra"
+        },
+        {
+          "id": "cocinar",
+          "text": "Lo cocina"
+        }
+      ],
+      "answer": "meter",
+      "evidence": "할머니는 저에게 도시락을 줘요. 도시락에 김치가 있어요 … 할머니는 매일 김치를 넣어요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. El texto ya ha dicho que en la fiambrera hay kimchi; este verbo cuenta cómo llega ahí."
+        },
+        "incorrect": {
+          "es": "Piensa en la fiambrera que aparece antes. La acción es la que explica que el kimchi esté dentro."
+        },
+        "strategy": {
+          "es": "Si un verbo aparece después de describir un resultado, suele ser la acción que lo produce."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué sigue el nieto comiéndose el kimchi si no le gusta?",
+      "options": [
+        {
+          "id": "ritual",
+          "text": "Porque forma parte del juego entre los dos"
+        },
+        {
+          "id": "hambre",
+          "text": "Porque tiene mucha hambre en el colegio"
+        },
+        {
+          "id": "miedo",
+          "text": "Porque teme que la abuela se enfade"
+        }
+      ],
+      "answer": "ritual",
+      "evidence": "저도 매일 김치를 먹어요. 우리는 이 게임을 좋아해요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Las dos frases van seguidas: se lo come y a los dos les gusta el juego. No hay obligación."
+        },
+        "incorrect": {
+          "es": "No hay miedo ni se habla de hambre. Lee la frase que viene justo después de que dice que se lo come."
+        },
+        "strategy": {
+          "es": "Si un texto explica un comportamiento raro, la explicación suele estar en la frase siguiente, no antes."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la abuela ve las noticias en la televisión mientras desayuna.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "뉴스를 들어요. 하지만 뉴스를 안 봐요 … 텔레비전을 안 좋아해요.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: las escucha por la radio. El texto distingue a propósito 들어요, escuchar, de 봐요, ver."
+        },
+        "incorrect": {
+          "es": "Fíjate en dos verbos casi seguidos: 들어요 y 안 봐요. Uno es escuchar y el otro, no ver."
+        },
+        "strategy": {
+          "es": "Cuando dos frases usan verbos de sentidos distintos con la misma palabra, la diferencia es intencionada."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena lo que hace la abuela por la mañana.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Abre la puerta y enciende la radio"
+        },
+        {
+          "id": "p2",
+          "text": "Hierve agua y prepara el té"
+        },
+        {
+          "id": "p3",
+          "text": "Lee el periódico"
+        },
+        {
+          "id": "p4",
+          "text": "Despierta al nieto y le da la fiambrera"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "먼저 문을 열어요 … 다음에 물을 끓여요 … 그리고 신문을 읽어요 … 일곱 시에 저를 깨워요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el texto lo señala con marcadores: 먼저, 그리고, 다음에."
+        },
+        "incorrect": {
+          "es": "Busca las palabras que ordenan: 먼저 (primero), 다음에 (después), 그리고 (y luego)."
+        },
+        "strategy": {
+          "es": "Los marcadores de secuencia son la clave de cualquier rutina. Localízalos antes de ordenar."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en coreano sobre la mañana de alguien de tu familia. Usa el presente en 해요 y la partícula 을/를 al menos cuatro veces."
+    },
+    "minWords": 25,
+    "maxWords": 60,
+    "hints": [
+      "우리 …는 아침에 …",
+      "먼저 …를 …요.",
+      "그리고 …",
+      "저는 …를 안 좋아해요."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente — Zhanna Korzh",
+    "pedagogyReviewer": "Pendiente — Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. El coreano NO ha sido revisado por hablante nativa. Bloqueante para publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano A1: La mañana de la abuela | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto en coreano A1 y practica el presente en 해요 y la partícula de objeto 을/를. Con vocabulario romanizado y seis preguntas."
+    },
+    "canonicalPath": "/practica/coreano/a1/lectura/halmeoni-achim",
+    "indexable": false,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-a1-uri-dongne-e-eopneun-geot",
+      "ko-a1-beoseu-siganpyo"
+    ]
+  }
+}

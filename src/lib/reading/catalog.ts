@@ -63,6 +63,19 @@ import frVillage2040 from '@/data/reading/exercises/fr-b1-le-village-en-2040.jso
 import frApprendreSeTrompant from '@/data/reading/exercises/fr-b1-apprendre-en-se-trompant.json'
 import frDeuxFoisRoman from '@/data/reading/exercises/fr-b1-deux-fois-le-meme-roman.json'
 import frClubNeGagneJamais from '@/data/reading/exercises/fr-b1-le-club-qui-ne-gagne-jamais.json'
+// Coreano A1 — generadas desde `src/data/reading/source/ko-a1.mjs`.
+// El coreano lleva banda de longitud propia (eojeol, no palabras) y romanización en cada
+// entrada de vocabulario. Ninguna puede publicarse sin revisión de hablante nativa.
+import koIreumiDuGae from '@/data/reading/exercises/ko-a1-ireumi-du-gae.json'
+import koDoseogwanGoyangi from '@/data/reading/exercises/ko-a1-doseogwan-goyangi.json'
+import koDongneEopneunGeot from '@/data/reading/exercises/ko-a1-uri-dongne-e-eopneun-geot.json'
+import koHalmeoniAchim from '@/data/reading/exercises/ko-a1-halmeoni-achim.json'
+import koBeoseuSiganpyo from '@/data/reading/exercises/ko-a1-beoseu-siganpyo.json'
+import koSijangEseo from '@/data/reading/exercises/ko-a1-sijang-eseo.json'
+import koKeopiAnMasyeoyo from '@/data/reading/exercises/ko-a1-keopireul-an-masyeoyo.json'
+import koJinanJumal from '@/data/reading/exercises/ko-a1-jinan-jumal.json'
+import koJilmuniManheunAi from '@/data/reading/exercises/ko-a1-jilmuni-manheun-ai.json'
+import koHagoSipeunIl from '@/data/reading/exercises/ko-a1-hago-sipeun-il.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -128,6 +141,16 @@ const RAW_EXERCISES: unknown[] = [
   frApprendreSeTrompant,
   frDeuxFoisRoman,
   frClubNeGagneJamais,
+  koIreumiDuGae,
+  koDoseogwanGoyangi,
+  koDongneEopneunGeot,
+  koHalmeoniAchim,
+  koBeoseuSiganpyo,
+  koSijangEseo,
+  koKeopiAnMasyeoyo,
+  koJinanJumal,
+  koJilmuniManheunAi,
+  koHagoSipeunIl,
 ]
 
 export const READING_EXERCISES: ReadingExercise[] = RAW_EXERCISES.map((candidate) => {

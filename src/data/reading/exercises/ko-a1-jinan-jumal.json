@@ -1,0 +1,462 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-a1-jinan-jumal",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Coreano A1",
+    "topik": 1,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. A1 se sitúa alrededor del TOPIK I nivel 1, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "jinan-jumal",
+  "series": {
+    "id": "coreano-a1-lectura-10",
+    "episode": 8,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-a1-keopireul-an-masyeoyo",
+    "nextExerciseId": "ko-a1-jilmuni-manheun-ai"
+  },
+  "classification": {
+    "genre": "diario de fin de semana",
+    "topic": "descansar sin hacer nada",
+    "intent": "learning",
+    "tags": [
+      "coreano a1",
+      "lectura",
+      "pasado 았어요/었어요",
+      "conjunción 하고"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El fin de semana pasado"
+    },
+    "intro": {
+      "es": "Un fin de semana en el que no pasó absolutamente nada, y una madre que contesta 잘했어요. Lectura de coreano A1 con el pasado."
+    },
+    "mission": {
+      "es": "Fíjate en todo lo que el narrador no hizo, y en por qué acaba diciendo que le hacía falta."
+    },
+    "targetText": "지난 주말에 저는 아무것도 안 했어요. 정말 아무것도 안 했어요. 토요일 아침에 늦게 일어났어요. 열한 시였어요. 밥하고 김을 먹었어요. 그리고 다시 누웠어요. 오후에 친구가 전화했어요. 영화 보러 갈까요? 저는 안 갔어요. 피곤했어요. 저녁에 어머니하고 통화했어요. 삼십 분 이야기했어요. 어머니는 물었어요. 주말에 뭐 했어요? 저는 대답했어요. 아무것도 안 했어요. 어머니는 웃었어요. 그리고 말했어요. 잘했어요. 일요일에도 똑같았어요. 책하고 차만 있었어요. 월요일 아침에 저는 기분이 아주 좋았어요. 이번 주에 일이 많았어요. 하지만 괜찮았어요. 그 주말이 필요했어요.",
+    "wordCount": 73,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Formar el pasado con 았어요/었어요 y reconocerlo al final de la frase."
+      },
+      {
+        "es": "Unir dos nombres con 하고 y distinguirlo de la conjunción entre frases."
+      },
+      {
+        "es": "Entender un texto cuyo asunto es una ausencia de acciones."
+      }
+    ],
+    "grammarFocus": [
+      "pasado-asseoyo",
+      "conjuncion-hago"
+    ],
+    "vocabulary": [
+      {
+        "surface": "아무것도",
+        "lemma": "아무것도",
+        "reading": "amugeotdo",
+        "glosses": {
+          "es": "nada (con verbo en negativo)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "늦게",
+        "lemma": "늦게",
+        "reading": "neutge",
+        "glosses": {
+          "es": "tarde"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "누웠어요",
+        "lemma": "눕다",
+        "reading": "nuwosseoyo",
+        "glosses": {
+          "es": "se tumbó"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "피곤했어요",
+        "lemma": "피곤하다",
+        "reading": "pigonhaesseoyo",
+        "glosses": {
+          "es": "estaba cansado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "통화했어요",
+        "lemma": "통화하다",
+        "reading": "tonghwahaesseoyo",
+        "glosses": {
+          "es": "habló por teléfono"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "똑같았어요",
+        "lemma": "똑같다",
+        "reading": "ttokgataesseoyo",
+        "glosses": {
+          "es": "fue exactamente igual"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "기분",
+        "lemma": "기분",
+        "reading": "gibun",
+        "glosses": {
+          "es": "ánimo, estado de humor"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "필요했어요",
+        "lemma": "필요하다",
+        "reading": "piryohaesseoyo",
+        "glosses": {
+          "es": "hacía falta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En Corea la cultura del trabajo intenso convive con un concepto muy valorado de descanso deliberado. Que una madre responda 잘했어요 —«has hecho bien»— a un fin de semana vacío no es una ironía."
+    },
+    "spanishSpeakerNote": {
+      "es": "하고 une dos nombres: 밥하고 김, «arroz y alga». Para unir frases se usan otras piezas, como 그리고. Y ojo con 아무것도: exige verbo en negativo, igual que 아무도."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en 해요체 sobre la vida cotidiana, identificar de quién se habla gracias a las partículas de tema y de objeto, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas"
+    ],
+    "disallowedGrammar": [
+      "clausulas-relativas",
+      "discurso-reportado",
+      "honorificos-avanzados",
+      "voz pasiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 2.9,
+      "maxSentenceWords": 6,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativa",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Todo en 해요체 salvo la lectura 10 (합니다체, carta formal). Sin cláusulas de relativo ni discurso indirecto. Romanización disponible como apoyo opcional."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué defiende el texto?",
+      "options": [
+        {
+          "id": "descanso",
+          "text": "Que un fin de semana vacío puede ser exactamente lo necesario"
+        },
+        {
+          "id": "pereza",
+          "text": "Que el narrador se arrepiente de haber perdido el fin de semana"
+        },
+        {
+          "id": "enfermo",
+          "text": "Que estuvo enfermo y no pudo salir"
+        }
+      ],
+      "answer": "descanso",
+      "evidence": "그 주말이 필요했어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la última frase lo dice sin adornos: aquel fin de semana hacía falta."
+        },
+        "incorrect": {
+          "es": "No se arrepiente —el lunes estaba de buen humor— ni dice que estuviera enfermo, solo cansado. Lee la última frase."
+        },
+        "strategy": {
+          "es": "En un texto en pasado, la última frase suele contener el juicio del autor sobre lo contado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿A qué hora se levantó el sábado?",
+      "options": [
+        {
+          "id": "once",
+          "text": "A las once"
+        },
+        {
+          "id": "nueve",
+          "text": "A las nueve"
+        },
+        {
+          "id": "mediodia",
+          "text": "A mediodía"
+        }
+      ],
+      "answer": "once",
+      "evidence": "토요일 아침에 늦게 일어났어요. 열한 시였어요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: 열한 시, las once. El texto lo dice en una frase corta justo después."
+        },
+        "incorrect": {
+          "es": "La hora va en una frase aparte, después de decir que se levantó tarde. Busca 열한 시."
+        },
+        "strategy": {
+          "es": "Cuando un texto dice «tarde» y luego pone una frase corta, esa frase suele dar la hora exacta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice 일요일에도 똑같았어요. ¿Qué significa 똑같았어요?",
+      "options": [
+        {
+          "id": "igual",
+          "text": "Fue exactamente igual"
+        },
+        {
+          "id": "peor",
+          "text": "Fue peor"
+        },
+        {
+          "id": "distinto",
+          "text": "Fue distinto"
+        }
+      ],
+      "answer": "igual",
+      "evidence": "일요일에도 똑같았어요. 책하고 차만 있었어요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y la frase siguiente lo demuestra: solo hubo libros y té, igual que el sábado."
+        },
+        "incorrect": {
+          "es": "La partícula 도 (también) ya te avisa de que el domingo repite lo del sábado. Y la frase siguiente lo detalla."
+        },
+        "strategy": {
+          "es": "La partícula 도 anuncia repetición. Si la ves, busca con qué se está comparando."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué se ríe la madre y dice 잘했어요?",
+      "options": [
+        {
+          "id": "aprueba",
+          "text": "Porque le parece bien que haya descansado de verdad"
+        },
+        {
+          "id": "burla",
+          "text": "Porque se burla de que su hijo sea perezoso"
+        },
+        {
+          "id": "sorpresa",
+          "text": "Porque no se cree que no haya hecho nada"
+        }
+      ],
+      "answer": "aprueba",
+      "evidence": "어머니는 웃었어요. 그리고 말했어요. 잘했어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. 잘했어요 significa «has hecho bien», y el texto no da ninguna señal de ironía."
+        },
+        "incorrect": {
+          "es": "Nada indica burla ni incredulidad. Fíjate en el significado literal de 잘했어요."
+        },
+        "strategy": {
+          "es": "No añadas ironía donde el texto no la marca. Si la reacción es risa y una aprobación, es aprobación."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el narrador salió al cine con su amigo el sábado por la tarde.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "오후에 친구가 전화했어요. 영화 보러 갈까요? 저는 안 갔어요. 피곤했어요.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: el amigo lo propuso y él no fue. La invitación existió; la salida, no."
+        },
+        "incorrect": {
+          "es": "El cine se menciona, pero fíjate en la respuesta: 저는 안 갔어요, no fui."
+        },
+        "strategy": {
+          "es": "Distingue una propuesta de lo que ocurrió. Un texto puede contar las dos cosas en frases seguidas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena lo que pasó ese fin de semana.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Se levanta tarde el sábado y desayuna arroz con alga"
+        },
+        {
+          "id": "p2",
+          "text": "Un amigo lo llama para ir al cine y él no va"
+        },
+        {
+          "id": "p3",
+          "text": "Habla media hora por teléfono con su madre"
+        },
+        {
+          "id": "p4",
+          "text": "El lunes por la mañana se siente muy bien"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "토요일 아침에 … 오후에 친구가 전화했어요 … 저녁에 어머니하고 통화했어요 … 월요일 아침에 …",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El texto va marcando los momentos: 토요일 아침, 오후, 저녁, 월요일 아침."
+        },
+        "incorrect": {
+          "es": "Guíate por las marcas de tiempo: mañana del sábado, tarde, noche, lunes por la mañana."
+        },
+        "strategy": {
+          "es": "En un diario, las marcas temporales son el esqueleto. Localízalas antes de ordenar los hechos."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en coreano sobre tu fin de semana pasado. Usa el pasado en 았어요/었어요 al menos cinco veces y 하고 dos veces."
+    },
+    "minWords": 25,
+    "maxWords": 60,
+    "hints": [
+      "지난 주말에 저는 …",
+      "토요일 아침에 …",
+      "…하고 …를 먹었어요.",
+      "그 주말이 …"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente — Zhanna Korzh",
+    "pedagogyReviewer": "Pendiente — Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. El coreano NO ha sido revisado por hablante nativa. Bloqueante para publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano A1: El fin de semana pasado | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto en coreano A1 y practica el pasado en 았어요/었어요 y la conjunción 하고. Con vocabulario romanizado y seis preguntas."
+    },
+    "canonicalPath": "/practica/coreano/a1/lectura/jinan-jumal",
+    "indexable": false,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-a1-keopireul-an-masyeoyo",
+      "ko-a1-jilmuni-manheun-ai"
+    ]
+  }
+}

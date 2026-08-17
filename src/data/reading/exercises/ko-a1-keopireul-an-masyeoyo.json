@@ -1,0 +1,453 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-a1-keopireul-an-masyeoyo",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Coreano A1",
+    "topik": 1,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. A1 se sitúa alrededor del TOPIK I nivel 1, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "keopireul-an-masyeoyo",
+  "series": {
+    "id": "coreano-a1-lectura-10",
+    "episode": 7,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-a1-sijang-eseo",
+    "nextExerciseId": "ko-a1-jinan-jumal"
+  },
+  "classification": {
+    "genre": "relato de oficina",
+    "topic": "costumbres de un grupo",
+    "intent": "learning",
+    "tags": [
+      "coreano a1",
+      "lectura",
+      "negación 안",
+      "adverbios de tiempo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Yo no bebo café"
+    },
+    "intro": {
+      "es": "El único de la oficina que no bebe café, y que acabó siendo el que nunca falta a la pausa del café. Lectura de coreano A1."
+    },
+    "mission": {
+      "es": "Fíjate en las horas del café y en qué cambió cuando dejaron de preguntarle."
+    },
+    "targetText": "우리 회사 사람들은 커피를 아주 좋아해요. 아침에 커피를 마셔요. 점심 후에 또 마셔요. 오후 세 시에 다시 마셔요. 저는 커피를 안 마셔요. 한 번도 안 마셔요. 커피 맛을 안 좋아해요. 처음에는 사람들이 자주 물어요. 왜 커피를 안 마셔요? 저는 대답해요. 그냥 안 좋아해요. 지금은 아무도 안 물어요. 대신 이상한 일이 있어요. 사람들이 오후에 저를 불러요. 커피 마시러 가요? 저는 커피를 안 마셔요. 하지만 항상 같이 가요. 저는 물을 마셔요. 사람들은 커피를 마셔요. 우리는 이십 분 동안 이야기해요. 사실 저는 그 커피 시간을 제일 좋아해요.",
+    "wordCount": 84,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Negar con 안 delante del verbo y reconocer 한 번도 안 como negación reforzada."
+      },
+      {
+        "es": "Situar acciones con adverbios de tiempo: 아침에, 점심 후에, 오후, 처음에는, 지금은."
+      },
+      {
+        "es": "Distinguir lo que alguien rechaza de lo que en realidad busca."
+      }
+    ],
+    "grammarFocus": [
+      "negacion",
+      "adverbios-tiempo"
+    ],
+    "vocabulary": [
+      {
+        "surface": "회사",
+        "lemma": "회사",
+        "reading": "hoesa",
+        "glosses": {
+          "es": "empresa, oficina"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "마셔요",
+        "lemma": "마시다",
+        "reading": "masyeoyo",
+        "glosses": {
+          "es": "bebe"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "맛",
+        "lemma": "맛",
+        "reading": "mat",
+        "glosses": {
+          "es": "sabor"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "그냥",
+        "lemma": "그냥",
+        "reading": "geunyang",
+        "glosses": {
+          "es": "simplemente, sin más"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "아무도",
+        "lemma": "아무도",
+        "reading": "amudo",
+        "glosses": {
+          "es": "nadie (con verbo en negativo)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "대신",
+        "lemma": "대신",
+        "reading": "daesin",
+        "glosses": {
+          "es": "en cambio, en su lugar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "이상한",
+        "lemma": "이상하다",
+        "reading": "isanghan",
+        "glosses": {
+          "es": "raro, extraño"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "사실",
+        "lemma": "사실",
+        "reading": "sasil",
+        "glosses": {
+          "es": "en realidad, la verdad es que"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La pausa del café después de comer es una rutina social muy marcada en las oficinas coreanas: se sale en grupo y el rato importa más que la bebida."
+    },
+    "spanishSpeakerNote": {
+      "es": "La negación 안 va justo delante del verbo: 안 마셔요, «no bebo». Y palabras como 아무도 (nadie) o 한 번도 (ni una vez) exigen que el verbo vaya también en negativo: 아무도 안 물어요, literalmente «nadie no pregunta»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en 해요체 sobre la vida cotidiana, identificar de quién se habla gracias a las partículas de tema y de objeto, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas"
+    ],
+    "disallowedGrammar": [
+      "clausulas-relativas",
+      "discurso-reportado",
+      "honorificos-avanzados",
+      "voz pasiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 4,
+      "maxSentenceWords": 7,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativa",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Todo en 해요체 salvo la lectura 10 (합니다체, carta formal). Sin cláusulas de relativo ni discurso indirecto. Romanización disponible como apoyo opcional."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué descubre el narrador sobre sí mismo?",
+      "options": [
+        {
+          "id": "compania",
+          "text": "Que lo que le gusta de la pausa del café no es el café, sino el rato con la gente"
+        },
+        {
+          "id": "cambio",
+          "text": "Que ha empezado a beber café por presión del grupo"
+        },
+        {
+          "id": "soledad",
+          "text": "Que prefiere quedarse solo en su mesa"
+        }
+      ],
+      "answer": "compania",
+      "evidence": "사실 저는 그 커피 시간을 제일 좋아해요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La palabra 사실 (en realidad) anuncia la confesión: sigue sin beber café y aun así es su rato favorito."
+        },
+        "incorrect": {
+          "es": "Nunca llega a beber café —lo repite tres veces— y va siempre con el grupo. Busca la última frase."
+        },
+        "strategy": {
+          "es": "La palabra 사실 introduce algo que corrige la impresión anterior. Cuando la veas, lo que sigue es la clave."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿A qué hora toma la oficina el tercer café del día?",
+      "options": [
+        {
+          "id": "tres",
+          "text": "A las tres de la tarde"
+        },
+        {
+          "id": "dos",
+          "text": "A las dos"
+        },
+        {
+          "id": "manana",
+          "text": "Solo por la mañana"
+        }
+      ],
+      "answer": "tres",
+      "evidence": "오후 세 시에 다시 마셔요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: 오후 세 시, las tres de la tarde. Es el tercero, después del de la mañana y el de después de comer."
+        },
+        "incorrect": {
+          "es": "El texto enumera tres momentos distintos. Busca el que lleva 다시, otra vez."
+        },
+        "strategy": {
+          "es": "Cuando un texto enumera momentos del día, cuéntalos en orden: 아침에, 점심 후에, 오후 세 시에."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice 지금은 아무도 안 물어요. ¿Qué significa 아무도?",
+      "options": [
+        {
+          "id": "nadie",
+          "text": "Nadie"
+        },
+        {
+          "id": "todos",
+          "text": "Todos"
+        },
+        {
+          "id": "alguien",
+          "text": "Alguien"
+        }
+      ],
+      "answer": "nadie",
+      "evidence": "처음에는 사람들이 자주 물어요 … 지금은 아무도 안 물어요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y el contraste lo confirma: antes preguntaban a menudo, ahora ya nadie."
+        },
+        "incorrect": {
+          "es": "Compara con la frase de antes: 처음에는 preguntaban mucho. Esta frase dice lo contrario."
+        },
+        "strategy": {
+          "es": "Las parejas 처음에는 / 지금은 marcan un antes y un después. La segunda frase suele invertir la primera."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Qué es lo «raro» que ocurre según el narrador?",
+      "options": [
+        {
+          "id": "invitan",
+          "text": "Que lo siguen invitando al café aunque saben que no bebe"
+        },
+        {
+          "id": "obligan",
+          "text": "Que lo obligan a beber café en las reuniones"
+        },
+        {
+          "id": "excluyen",
+          "text": "Que han dejado de invitarlo a la pausa"
+        }
+      ],
+      "answer": "invitan",
+      "evidence": "대신 이상한 일이 있어요. 사람들이 오후에 저를 불러요. 커피 마시러 가요?",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Lo llaman al café precisamente él, que no lo bebe. Y va siempre."
+        },
+        "incorrect": {
+          "es": "Nadie lo obliga ni lo excluye: al contrario, lo llaman. Lee las frases que siguen a 이상한 일이 있어요."
+        },
+        "strategy": {
+          "es": "Cuando un texto anuncia que va a contar algo raro, lo que viene inmediatamente después es ese algo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el narrador dice que nunca en su vida ha bebido café.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "저는 커피를 안 마셔요. 한 번도 안 마셔요.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero: 한 번도 안 마셔요, ni una sola vez. Es una negación reforzada, no una preferencia."
+        },
+        "incorrect": {
+          "es": "Busca la expresión 한 번도 y mira qué añade a la negación anterior."
+        },
+        "strategy": {
+          "es": "한 번도 + verbo en negativo equivale a «ni una vez». Es más fuerte que un simple 안."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué cuenta que en la pausa él bebe agua y los demás café?",
+      "options": [
+        {
+          "id": "irrelevante",
+          "text": "Para mostrar que la bebida no es lo que importa de ese rato"
+        },
+        {
+          "id": "salud",
+          "text": "Para recomendar beber agua en vez de café"
+        },
+        {
+          "id": "dinero",
+          "text": "Para señalar que así se ahorra dinero"
+        }
+      ],
+      "answer": "irrelevante",
+      "evidence": "저는 물을 마셔요. 사람들은 커피를 마셔요. 우리는 이십 분 동안 이야기해요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Las tres frases seguidas lo dejan claro: lo que comparten no es la bebida, son los veinte minutos."
+        },
+        "incorrect": {
+          "es": "No da consejos de salud ni habla de dinero. Fíjate en la frase que cierra el grupo de tres."
+        },
+        "strategy": {
+          "es": "Si dos frases marcan una diferencia y la tercera algo común, lo común es el punto del autor."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en coreano sobre una costumbre de tu grupo o trabajo que tú no compartes. Usa la negación 안 cuatro veces y tres adverbios de tiempo."
+    },
+    "minWords": 25,
+    "maxWords": 60,
+    "hints": [
+      "우리 회사 사람들은 …",
+      "저는 … 안 …요.",
+      "처음에는 …",
+      "사실 저는 …를 좋아해요."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente — Zhanna Korzh",
+    "pedagogyReviewer": "Pendiente — Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. El coreano NO ha sido revisado por hablante nativa. Bloqueante para publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano A1: Yo no bebo café | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto en coreano A1 y practica la negación con 안 y los adverbios de tiempo y frecuencia. Con vocabulario romanizado y seis preguntas."
+    },
+    "canonicalPath": "/practica/coreano/a1/lectura/keopireul-an-masyeoyo",
+    "indexable": false,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-a1-sijang-eseo",
+      "ko-a1-jinan-jumal"
+    ]
+  }
+}

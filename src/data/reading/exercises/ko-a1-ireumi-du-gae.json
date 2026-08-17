@@ -1,0 +1,461 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-a1-ireumi-du-gae",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Coreano A1",
+    "topik": 1,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. A1 se sitúa alrededor del TOPIK I nivel 1, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "ireumi-du-gae",
+  "series": {
+    "id": "coreano-a1-lectura-10",
+    "episode": 1,
+    "totalEpisodes": 10,
+    "previousExerciseId": null,
+    "nextExerciseId": "ko-a1-doseogwan-goyangi"
+  },
+  "classification": {
+    "genre": "relato en primera persona",
+    "topic": "identidad y familia mixta",
+    "intent": "learning",
+    "tags": [
+      "coreano a1",
+      "lectura",
+      "이에요/예요",
+      "hangul"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Tengo dos nombres"
+    },
+    "intro": {
+      "es": "Un niño con nombre coreano y nombre colombiano, y una respuesta para quien le pregunta cuál es el de verdad. Lectura de coreano A1."
+    },
+    "mission": {
+      "es": "Averigua quién lo llama por cada nombre, y qué contesta él cuando le preguntan el auténtico."
+    },
+    "targetText": "저는 이름이 두 개예요. 한국 이름은 지호예요. 콜롬비아 이름은 다니엘이에요. 학교에서는 다니엘이에요. 집에서는 지호예요. 우리 엄마는 한국 사람이에요. 우리 아빠는 콜롬비아 사람이에요. 엄마는 저를 지호라고 불러요. 아빠는 저를 다니엘이라고 불러요. 친구들은 둘 다 알아요. 그래서 친구들은 지호다니엘이라고 불러요. 지호는 한국어 이름이에요. 다니엘은 할아버지 이름이에요. 두 이름 다 뜻이 있어요. 사람들이 자주 물어요. 진짜 이름이 뭐예요? 저는 대답해요. 둘 다 진짜예요. 가끔 조금 힘들어요. 서류에는 이름이 하나만 있어요. 그래서 서류에는 다니엘이에요. 하지만 저는 서류가 아니에요.",
+    "wordCount": 74,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Usar 이에요 y 예요 según la palabra termine en consonante o en vocal."
+      },
+      {
+        "es": "Leer hangul con soltura en palabras y nombres propios."
+      },
+      {
+        "es": "Localizar quién hace qué gracias a la partícula de tema 은/는."
+      }
+    ],
+    "grammarFocus": [
+      "ieoyo-yeyo",
+      "hangul-basico"
+    ],
+    "vocabulary": [
+      {
+        "surface": "이름",
+        "lemma": "이름",
+        "reading": "ireum",
+        "glosses": {
+          "es": "nombre"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "개",
+        "lemma": "개",
+        "reading": "gae",
+        "glosses": {
+          "es": "unidad; contador general de cosas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "불러요",
+        "lemma": "부르다",
+        "reading": "bulleoyo",
+        "glosses": {
+          "es": "llama, llaman (por un nombre)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "뜻",
+        "lemma": "뜻",
+        "reading": "tteut",
+        "glosses": {
+          "es": "significado, sentido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "진짜",
+        "lemma": "진짜",
+        "reading": "jinjja",
+        "glosses": {
+          "es": "de verdad, auténtico"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "서류",
+        "lemma": "서류",
+        "reading": "seoryu",
+        "glosses": {
+          "es": "documento, papeleo oficial"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "가끔",
+        "lemma": "가끔",
+        "reading": "gakkeum",
+        "glosses": {
+          "es": "a veces"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "할아버지",
+        "lemma": "할아버지",
+        "reading": "harabeoji",
+        "glosses": {
+          "es": "abuelo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Muchos niños coreanos nacidos en el extranjero llevan dos nombres registrados y usan uno en casa y otro fuera. No es un apodo: los dos son suyos."
+    },
+    "spanishSpeakerNote": {
+      "es": "La elección entre 이에요 y 예요 depende del sonido final de la palabra anterior: 다니엘 acaba en consonante y lleva 이에요; 지호 acaba en vocal y lleva 예요. Es la misma lógica que el «a/an» del inglés, pero al final en vez de al principio."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en 해요체 sobre la vida cotidiana, identificar de quién se habla gracias a las partículas de tema y de objeto, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas"
+    ],
+    "disallowedGrammar": [
+      "clausulas-relativas",
+      "discurso-reportado",
+      "honorificos-avanzados",
+      "voz pasiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 3.4,
+      "maxSentenceWords": 5,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativa",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Todo en 해요체 salvo la lectura 10 (합니다체, carta formal). Sin cláusulas de relativo ni discurso indirecto. Romanización disponible como apoyo opcional."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué defiende el niño en este texto?",
+      "options": [
+        {
+          "id": "dos",
+          "text": "Que sus dos nombres son igual de auténticos"
+        },
+        {
+          "id": "coreano",
+          "text": "Que prefiere que lo llamen solo por su nombre coreano"
+        },
+        {
+          "id": "cambiar",
+          "text": "Que quiere cambiarse el nombre en los documentos"
+        }
+      ],
+      "answer": "dos",
+      "evidence": "저는 대답해요. 둘 다 진짜예요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo dice literalmente cuando le preguntan: 둘 다 진짜예요, los dos son de verdad."
+        },
+        "incorrect": {
+          "es": "No pide cambiar nada ni prefiere uno. Busca qué contesta cuando le preguntan por el nombre auténtico."
+        },
+        "strategy": {
+          "es": "Cuando un texto contiene una pregunta y su respuesta, la respuesta suele ser la tesis. Localiza 대답해요."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué nombre usa en el colegio?",
+      "options": [
+        {
+          "id": "daniel",
+          "text": "Daniel"
+        },
+        {
+          "id": "jiho",
+          "text": "Jiho"
+        },
+        {
+          "id": "ambos",
+          "text": "Los dos a la vez"
+        }
+      ],
+      "answer": "daniel",
+      "evidence": "학교에서는 다니엘이에요. 집에서는 지호예요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. 학교에서는 marca el lugar: en el colegio. En casa (집에서는) es Jiho."
+        },
+        "incorrect": {
+          "es": "Las dos frases son casi iguales y solo cambia el lugar. Busca 학교, colegio."
+        },
+        "strategy": {
+          "es": "La partícula 에서는 marca el sitio donde ocurre algo. Localízala y sabrás a qué lugar se refiere cada frase."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice 두 이름 다 뜻이 있어요. ¿Qué significa 뜻?",
+      "options": [
+        {
+          "id": "significado",
+          "text": "Significado"
+        },
+        {
+          "id": "sonido",
+          "text": "Sonido"
+        },
+        {
+          "id": "longitud",
+          "text": "Longitud"
+        }
+      ],
+      "answer": "significado",
+      "evidence": "지호는 한국어 이름이에요. 다니엘은 할아버지 이름이에요. 두 이름 다 뜻이 있어요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Y las dos frases anteriores lo demuestran: uno es coreano, el otro viene del abuelo."
+        },
+        "incorrect": {
+          "es": "Fíjate en las dos frases anteriores: cada una explica de dónde viene un nombre. Eso es lo que la palabra recoge."
+        },
+        "strategy": {
+          "es": "Si una palabra resume dos frases anteriores, esas frases son su definición. Léelas antes de traducir."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "El texto termina con 하지만 저는 서류가 아니에요. ¿Qué quiere decir con eso?",
+      "options": [
+        {
+          "id": "persona",
+          "text": "Que él es más que lo que cabe en un formulario"
+        },
+        {
+          "id": "perdido",
+          "text": "Que ha perdido sus documentos"
+        },
+        {
+          "id": "falso",
+          "text": "Que sus documentos están mal hechos"
+        }
+      ],
+      "answer": "persona",
+      "evidence": "서류에는 이름이 하나만 있어요. 그래서 서류에는 다니엘이에요. 하지만 저는 서류가 아니에요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El documento solo admite un nombre; él dice que ese límite es del papel, no suyo."
+        },
+        "incorrect": {
+          "es": "No ha perdido nada y no dice que estén mal. Lee las dos frases anteriores, sobre lo que cabe en un documento."
+        },
+        "strategy": {
+          "es": "Una frase final con 하지만 (pero) corrige lo que se acaba de decir. Léelas juntas o se pierde el sentido."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: sus amigos lo llaman juntando los dos nombres en uno.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "친구들은 둘 다 알아요. 그래서 친구들은 지호다니엘이라고 불러요.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero: 지호다니엘. Los amigos son los únicos que no eligen."
+        },
+        "incorrect": {
+          "es": "Busca la frase con 친구들, amigos, y mira cómo lo llaman exactamente."
+        },
+        "strategy": {
+          "es": "La partícula 이라고 delante de 불러요 introduce el nombre con el que alguien llama a otro. Ahí está el dato."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena las ideas según aparecen en el texto.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Tiene dos nombres, uno coreano y uno colombiano"
+        },
+        {
+          "id": "p2",
+          "text": "Cada padre lo llama por un nombre distinto"
+        },
+        {
+          "id": "p3",
+          "text": "Los dos nombres tienen un significado propio"
+        },
+        {
+          "id": "p4",
+          "text": "En los documentos solo cabe uno, pero él no es un documento"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "저는 이름이 두 개예요 … 엄마는 저를 지호라고 불러요 … 두 이름 다 뜻이 있어요 … 하지만 저는 서류가 아니에요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El texto va de lo concreto —los nombres— a lo que significan y a lo que no cabe en un papel."
+        },
+        "incorrect": {
+          "es": "Sigue el hilo: primero presenta los nombres, luego a la familia, luego los significados y al final los documentos."
+        },
+        "strategy": {
+          "es": "En un texto en primera persona, el orden suele ir de los hechos a la conclusión. Busca la frase con 하지만: casi siempre cierra."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en coreano presentándote. Di tu nombre, de dónde eres y quién eres para tu familia. Usa 이에요/예요 al menos cuatro veces."
+    },
+    "minWords": 25,
+    "maxWords": 60,
+    "hints": [
+      "저는 …이에요/예요.",
+      "우리 엄마는 …이에요.",
+      "학교에서는 …",
+      "제 이름은 뜻이 있어요."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente — Zhanna Korzh",
+    "pedagogyReviewer": "Pendiente — Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. El coreano NO ha sido revisado por hablante nativa. Bloqueante para publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano A1: Tengo dos nombres | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto corto en coreano A1 y practica 이에요/예요 y la lectura de hangul. Con vocabulario romanizado, glosas en español y seis preguntas."
+    },
+    "canonicalPath": "/practica/coreano/a1/lectura/ireumi-du-gae",
+    "indexable": false,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-a1-doseogwan-goyangi"
+    ]
+  }
+}

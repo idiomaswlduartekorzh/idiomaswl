@@ -27,11 +27,49 @@ export const BLUEPRINT_SCHEMA_VERSION = '1.1.0'
 
 // Suelo y techo por nivel. El techo es el del validador de siempre; el suelo es nuevo y
 // es la respuesta a que los textos de inglés se quedaron todos en el mínimo.
-export const WORD_TARGETS = {
+//
+// Estas bandas valen para las lenguas donde una palabra es una palabra: inglés, francés,
+// italiano, alemán, portugués, ruso.
+const WORD_TARGETS_DEFAULT = {
   A1: { min: 110, max: 140 },
   A2: { min: 200, max: 240 },
   B1: { min: 380, max: 450 },
 }
+
+// El coreano necesita su propia banda, y no por comodidad.
+//
+// En coreano las partículas y las terminaciones verbales se pegan a la palabra: `학교에서`
+// es una sola unidad —un *eojeol*— y significa «en la escuela». Contar eojeol y contar
+// palabras francesas no mide lo mismo, así que aplicar la banda de arriba produciría textos
+// de nivel TOPIK II etiquetados como A1.
+//
+// La banda se fija con tres referencias, no a ojo:
+//   1. Lo que WeLearn ya publica en coreano: A1 22-36 eojeol, A2 38-46, B1 67-85.
+//   2. Las lecturas reales de TOPIK: TOPIK I (≈A1-A2) va de 20 a 80 eojeol;
+//      TOPIK II (≈B1 y arriba), de 150 a 250.
+//   3. La densidad: un eojeol carga en torno a 1,6-1,7 palabras de una lengua romance.
+//
+// El resultado sigue siendo una subida fuerte respecto a lo publicado —entre 2,4 y 3 veces
+// más largo, igual que le subió al francés— pero se queda dentro de lo que un TOPIK del
+// nivel correspondiente pone delante de un alumno.
+//
+// PENDIENTE: esta banda la propuso el editor, no una revisora de coreano. Zhanna tiene que
+// confirmarla antes de que cualquier lectura coreana pase de borrador a publicada.
+// Las tres bandas caen además dentro de los límites del validador antiguo (A1 40-140,
+// A2 120-240, B1 220-450), para que las dos capas de comprobación no se contradigan.
+const WORD_TARGETS_KO = {
+  A1: { min: 65, max: 85 },
+  A2: { min: 120, max: 145 },
+  B1: { min: 220, max: 270 },
+}
+
+const WORD_TARGETS_BY_LANGUAGE = { ko: WORD_TARGETS_KO }
+
+export function wordTargetFor(language, cefr) {
+  return (WORD_TARGETS_BY_LANGUAGE[language] ?? WORD_TARGETS_DEFAULT)[cefr]
+}
+
+export const WORD_TARGETS = WORD_TARGETS_DEFAULT
 
 const LEVEL_ORDER = ['a1', 'a2', 'b1']
 
@@ -105,10 +143,11 @@ export function validateBlueprintExercise(exercise) {
   }
 
   // --- 3. Longitud ----------------------------------------------------------------
-  const target = WORD_TARGETS[cefr]
+  const target = wordTargetFor(language, cefr)
   const wordCount = exercise.content?.wordCount ?? 0
   if (wordCount < target.min || wordCount > target.max) {
-    errors.push(`wordCount ${wordCount}: en ${cefr} el blueprint pide entre ${target.min} y ${target.max} palabras`)
+    const unit = language === 'ko' ? 'eojeol' : 'palabras'
+    errors.push(`wordCount ${wordCount}: en ${cefr} de ${language} el blueprint pide entre ${target.min} y ${target.max} ${unit}`)
   }
 
   // --- 4. Que no aburra -----------------------------------------------------------
