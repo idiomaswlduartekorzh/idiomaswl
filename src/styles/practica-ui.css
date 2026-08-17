@@ -262,13 +262,12 @@
    cuanto una tarjeta envuelve su cabecera en un div —y SkillHub lo hace, para
    poder poner el distintivo a la derecha—, el selector de hijo directo deja de
    casar y el antetítulo sale como texto pelado. */
-.wlp-card-eyebrow {
-  color: var(--wlp-accent);
-  font-family: var(--mono);
+.wlp-eyebrow--card {
   font-size: 0.72rem;
-  font-weight: 800;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
+  /* El antetítulo de página deja aire debajo; dentro de una tarjeta ese aire separa el
+     antetítulo de su propio título. */
+  margin: 0;
 }
 
 .wlp-card strong {
@@ -338,7 +337,7 @@
   border-color: var(--wlp-ok);
 }
 
-.wlp-option--wrong {
+.wlp-option--alert {
   background: var(--wlp-tint-alert);
   border-color: var(--wlp-alert);
 }
@@ -422,6 +421,11 @@
   width: 42px;
 }
 
+/* La fila de acciones al pie de un ejercicio.
+   `.wlp-btn-row` es el nombre viejo y sigue funcionando: lo usa el transcriptor fonético,
+   que es de otra sesión. Se retira cuando ese componente migre — no antes, y no sin
+   avisar a quien lo mantiene. */
+.wlp-actions,
 .wlp-btn-row {
   align-items: center;
   display: flex;
@@ -492,7 +496,7 @@
   line-height: 1.3;
 }
 
-.wlp-level-btn--active {
+.wlp-level-btn--selected {
   border-color: var(--wlp-accent);
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--wlp-accent) 28%, transparent);
 }
@@ -562,10 +566,12 @@
     grid-template-columns: 1fr;
   }
 
+  .wlp-actions,
   .wlp-btn-row {
     justify-content: stretch;
   }
 
+  .wlp-actions > .wlp-btn,
   .wlp-btn-row > .wlp-btn {
     flex: 1 1 auto;
   }

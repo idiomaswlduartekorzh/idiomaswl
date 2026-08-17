@@ -115,7 +115,7 @@ export default function SkillHub({
                 >
                   <div className={s.cardTop}>
                     <div>
-                      <span className="wlp-card-eyebrow">{h.eng}</span>
+                      <span className="wlp-eyebrow wlp-eyebrow--card">{h.eng}</span>
                       <div className={s.name}>{h.name}</div>
                     </div>
                     {cardBadge?.(h)}
