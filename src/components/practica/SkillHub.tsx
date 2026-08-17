@@ -115,7 +115,13 @@ export default function SkillHub({
                 >
                   <div className={s.cardTop}>
                     <div>
-                      <span className="wlp-eyebrow wlp-eyebrow--card">{h.eng}</span>
+                      {/* Hay idiomas donde la destreza se llama igual que en español
+                          —«Gramática» en portugués— y entonces la tarjeta decía la misma
+                          palabra dos veces. Se calla el antetítulo en vez de arreglar los
+                          datos, porque volverá a pasar con el próximo idioma. */}
+                      {h.eng.trim().toLowerCase() === h.name.trim().toLowerCase() ? null : (
+                        <span className="wlp-eyebrow wlp-eyebrow--card">{h.eng}</span>
+                      )}
                       <div className={s.name}>{h.name}</div>
                     </div>
                     {cardBadge?.(h)}
