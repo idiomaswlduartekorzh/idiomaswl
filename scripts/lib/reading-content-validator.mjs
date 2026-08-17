@@ -16,7 +16,15 @@ export function validateReadingExercise(exercise) {
 
   const limits = WORD_LIMITS[exercise.level?.cefr]
   if (!limits) errors.push('CEFR level is invalid')
-  else if (exercise.content?.wordCount < limits[0] || exercise.content?.wordCount > limits[1]) {
+  // Estas bandas están pensadas para palabras de una lengua europea, y no valen para todos
+  // los idiomas: el coreano se mide en eojeol y el japonés en caracteres, así que un A1
+  // japonés de 200 caracteres las incumpliría siendo correcto. Para el esquema 1.1.0 la
+  // comprobación de longitud la hace `reading-blueprint.mjs`, que sí sabe de qué idioma
+  // habla. Las 31 lecturas de 1.0.0 siguen validándose aquí.
+  else if (
+    exercise.schemaVersion === '1.0.0' &&
+    (exercise.content?.wordCount < limits[0] || exercise.content?.wordCount > limits[1])
+  ) {
     errors.push(`${exercise.level.cefr} wordCount must be between ${limits[0]} and ${limits[1]}`)
   }
 
@@ -38,11 +46,16 @@ export function validateReadingExercise(exercise) {
     if (exercise.language === 'ko' && !item.reading) errors.push(`Korean vocabulary requires an optional-support reading: ${item.surface}`)
   }
 
-  if (exercise.status === 'published') {
+  // «Aprobado» y «publicado» exigen los mismos revisores con nombre: si no, cualquiera
+  // podría marcar una lectura como aprobada sin que conste quién la aprobó.
+  if (exercise.status === 'approved' || exercise.status === 'published') {
     const reviewers = [exercise.review?.author, exercise.review?.languageReviewer, exercise.review?.pedagogyReviewer]
-    if (reviewers.some((reviewer) => !reviewer || PLACEHOLDER_REVIEWER.test(reviewer))) errors.push('published exercises require identified human reviewers')
-    if (exercise.review?.languageDecision !== 'approved' || exercise.review?.pedagogyDecision !== 'approved') errors.push('published exercises require approved language and pedagogy decisions')
-    if (!exercise.seo?.indexable) errors.push('published exercises must be indexable')
+    if (reviewers.some((reviewer) => !reviewer || PLACEHOLDER_REVIEWER.test(reviewer))) errors.push(`${exercise.status} exercises require identified human reviewers`)
+    if (exercise.review?.languageDecision !== 'approved' || exercise.review?.pedagogyDecision !== 'approved') errors.push(`${exercise.status} exercises require approved language and pedagogy decisions`)
+  }
+  // Solo lo publicado entra al sitemap, y solo lo indexable puede estar publicado.
+  if (exercise.status === 'published' && !exercise.seo?.indexable) {
+    errors.push('published exercises must be indexable')
   }
 
   const questionIds = new Set()

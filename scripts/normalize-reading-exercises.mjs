@@ -16,6 +16,7 @@ import { readFile, readdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
 import { fileURLToPath } from 'node:url'
+import { countJapaneseCharacters } from './lib/reading-blueprint.mjs'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const exerciseDir = path.join(root, 'src/data/reading/exercises')
@@ -25,11 +26,8 @@ const LANGUAGE_SLUGS = {
   ru: 'ruso', ja: 'japones', ko: 'coreano', pt: 'portugues',
 }
 
-// El japonés no separa palabras con espacios, así que contar tokens da un número sin
-// sentido y el umbral de nivel dejaría de medir nada. Cuando toque japonés hay que
-// decidir su unidad (caracteres, bunsetsu o morfemas) antes de producir contenido.
-const UNSUPPORTED_COUNTING = new Set(['ja'])
-
+// El japonés se cuenta en caracteres (文字数). El razonamiento de por qué no en morfemas
+// ni en bunsetsu está en `scripts/lib/reading-blueprint.mjs`.
 function sentences(text) {
   return text
     .split(/(?<=[.!?。！？])\s+/u)
@@ -37,15 +35,16 @@ function sentences(text) {
     .filter(Boolean)
 }
 
-function countWords(text) {
+function countWords(text, language) {
+  if (language === 'ja') return countJapaneseCharacters(text)
   return text.split(/\s+/u).map((token) => token.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, '')).filter(Boolean).length
 }
 
 function derive(exercise) {
   const text = exercise.content?.targetText ?? ''
   const parts = sentences(text)
-  const lengths = parts.map(countWords)
-  const wordCount = countWords(text)
+  const lengths = parts.map((part) => countWords(part, exercise.language))
+  const wordCount = countWords(text, exercise.language)
   return {
     wordCount,
     averageSentenceWords: lengths.length ? Number((wordCount / lengths.length).toFixed(1)) : 0,
@@ -67,12 +66,6 @@ for (const file of files) {
   // Las lecturas del esquema viejo se dejan como están: sus rutas ya están indexadas en
   // Google y recalcularlas les cambiaría el canonical sin ganar nada.
   if (exercise.schemaVersion !== '1.1.0') continue
-
-  if (UNSUPPORTED_COUNTING.has(exercise.language)) {
-    console.error(`✗ ${file}: falta definir cómo se cuentan las palabras en ${exercise.language}`)
-    process.exitCode = 1
-    continue
-  }
 
   const derived = derive(exercise)
   const changes = []

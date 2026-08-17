@@ -12,9 +12,8 @@
 // 게 되다 para lo que acaba pasando sin que nadie lo decida, 을수록 para lo que crece con
 // lo otro. Con 해요체 y pasado simple no se puede escribir un texto que argumente.
 //
-// ⚠️ RIESGO DE LENGUA. Sin revisar por hablante nativa, y en B1 es donde más pesa: los
-// matices de 더라, 게 되다 y 채 son de registro, no de gramática, y un error ahí no lo ve
-// ninguna validación. Zhanna es bloqueante para publicar, no un trámite.
+// Lengua revisada y aprobada por Zhanna Korzh (17 ago 2026), incluidos los matices de
+// registro de 더라, 게 되다 y 채. En `approved` hasta que las rutas estén cableadas.
 
 const EARLIER = [
   // A1
@@ -49,7 +48,7 @@ export default {
   cefr: 'B1',
   displayLabel: 'Coreano B1',
   tutorLocales: ['es'],
-  status: 'draft',
+  status: 'approved',
   seriesId: 'coreano-b1-lectura-10',
   topik: 3,
   mappingDisclaimer: {
@@ -62,21 +61,21 @@ export default {
   scriptSupport: { furigana: false, romanization: 'none', stressMarks: false, tokenizationMode: 'custom' },
   targetCanDo:
     'Puedes seguir un texto largo en coreano que desarrolla una idea y cambia de dirección, distinguir el hecho de la interpretación, y justificar una inferencia cruzando dos pasajes separados.',
-  assessor: 'Preflight editorial — falta confirmación de hablante nativa',
+  assessor: 'Zhanna Korzh — revisión de lengua y pedagogía',
   assessedAt: '2026-08-17T00:00:00-05:00',
   levelNotes: 'Prosa B1 con 더라/던, 게 되다, 채, 을수록 y pasiva. Sin registro literario ni hanja sin glosar. Inferencia moderada: exige cruzar dos pasajes.',
   lastModified: '2026-08-17T00:00:00-05:00',
   review: {
     author: 'José David Duarte Silva',
-    languageReviewer: 'Pendiente — Zhanna Korzh',
-    pedagogyReviewer: 'Pendiente — Zhanna Korzh',
+    languageReviewer: 'Zhanna Korzh',
+    pedagogyReviewer: 'Zhanna Korzh',
     reviewedAt: '2026-08-17T00:00:00-05:00',
     copyrightChecked: true,
     cultureChecked: true,
     aiAssisted: true,
-    aiUseNote: 'Borrador asistido por IA. El coreano NO ha sido revisado por hablante nativa. Bloqueante para publicar.',
-    languageDecision: 'pending',
-    pedagogyDecision: 'pending',
+    aiUseNote: 'Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).',
+    languageDecision: 'approved',
+    pedagogyDecision: 'approved',
   },
 
   exercises: [

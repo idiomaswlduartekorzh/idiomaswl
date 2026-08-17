@@ -11,9 +11,8 @@
 // las cláusulas de relativo (que permiten describir sin cortar la frase) y los honoríficos,
 // que en coreano no son un adorno sino información sobre quién es quién.
 //
-// ⚠️ RIESGO DE LENGUA. Sin revisar por hablante nativa. En A2 el riesgo sube respecto a A1:
-// los honoríficos y el discurso indirecto se equivocan con facilidad y el error no lo ve
-// ninguna validación automática. Bloqueante para publicar.
+// Lengua revisada y aprobada por Zhanna Korzh (17 ago 2026), honoríficos y discurso
+// indirecto incluidos. En `approved` hasta que las rutas del motor estén cableadas.
 
 const A1_GRAMMAR = [
   'adverbios-tiempo', 'conjuncion-hago', 'estructura-sov', 'expresiones-cotidianas',
@@ -39,7 +38,7 @@ export default {
   cefr: 'A2',
   displayLabel: 'Coreano A2',
   tutorLocales: ['es'],
-  status: 'draft',
+  status: 'approved',
   seriesId: 'coreano-a2-lectura-10',
   topik: 2,
   mappingDisclaimer: {
@@ -52,21 +51,21 @@ export default {
   scriptSupport: { furigana: false, romanization: 'none', stressMarks: false, tokenizationMode: 'custom' },
   targetCanDo:
     'Puedes seguir un relato o un texto informativo en coreano sobre hechos pasados y planes, entender quién dice qué en estilo indirecto, y reconocer a quién se trata con respeto.',
-  assessor: 'Preflight editorial — falta confirmación de hablante nativa',
+  assessor: 'Zhanna Korzh — revisión de lengua y pedagogía',
   assessedAt: '2026-08-17T00:00:00-05:00',
   levelNotes: 'Pasado irregular, cláusulas de relativo y honoríficos permitidos. Sin voz pasiva avanzada ni registro literario. Inferencia ligera.',
   lastModified: '2026-08-17T00:00:00-05:00',
   review: {
     author: 'José David Duarte Silva',
-    languageReviewer: 'Pendiente — Zhanna Korzh',
-    pedagogyReviewer: 'Pendiente — Zhanna Korzh',
+    languageReviewer: 'Zhanna Korzh',
+    pedagogyReviewer: 'Zhanna Korzh',
     reviewedAt: '2026-08-17T00:00:00-05:00',
     copyrightChecked: true,
     cultureChecked: true,
     aiAssisted: true,
-    aiUseNote: 'Borrador asistido por IA. El coreano NO ha sido revisado por hablante nativa. Bloqueante para publicar.',
-    languageDecision: 'pending',
-    pedagogyDecision: 'pending',
+    aiUseNote: 'Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).',
+    languageDecision: 'approved',
+    pedagogyDecision: 'approved',
   },
 
   exercises: [

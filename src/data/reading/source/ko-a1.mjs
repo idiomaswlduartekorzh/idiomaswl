@@ -13,10 +13,9 @@
 // partículas al final de la palabra, así que contar eojeol y contar palabras romances no
 // mide lo mismo.
 //
-// ⚠️ RIESGO DE LENGUA. Estas lecturas las ha redactado el editor, no una hablante nativa.
-// El coreano es donde ese riesgo pesa más de los ocho idiomas: una partícula equivocada o
-// un registro mal elegido no se nota en la validación y sí en clase. Ninguna puede pasar de
-// `draft` sin la revisión de Zhanna.
+// Lengua revisada y aprobada por Zhanna Korzh (17 ago 2026). Quedan en `approved` y no en
+// `published` por una razón ajena al contenido: las rutas del motor todavía no están
+// cableadas para coreano, así que publicarlas metería en el sitemap URLs que darían 404.
 
 const A1_GRAMMAR = [
   'adverbios-tiempo', 'conjuncion-hago', 'estructura-sov', 'expresiones-cotidianas',
@@ -32,7 +31,7 @@ export default {
   cefr: 'A1',
   displayLabel: 'Coreano A1',
   tutorLocales: ['es'],
-  status: 'draft',
+  status: 'approved',
   seriesId: 'coreano-a1-lectura-10',
   topik: 1,
   mappingDisclaimer: {
@@ -47,21 +46,21 @@ export default {
   scriptSupport: { furigana: false, romanization: 'optional', stressMarks: false, tokenizationMode: 'custom' },
   targetCanDo:
     'Puedes leer un texto corto en 해요체 sobre la vida cotidiana, identificar de quién se habla gracias a las partículas de tema y de objeto, y justificar tu respuesta señalando la frase.',
-  assessor: 'Preflight editorial — falta confirmación de hablante nativa',
+  assessor: 'Zhanna Korzh — revisión de lengua y pedagogía',
   assessedAt: '2026-08-17T00:00:00-05:00',
   levelNotes: 'Todo en 해요체 salvo la lectura 10 (합니다체, carta formal). Sin cláusulas de relativo ni discurso indirecto. Romanización disponible como apoyo opcional.',
   lastModified: '2026-08-17T00:00:00-05:00',
   review: {
     author: 'José David Duarte Silva',
-    languageReviewer: 'Pendiente — Zhanna Korzh',
-    pedagogyReviewer: 'Pendiente — Zhanna Korzh',
+    languageReviewer: 'Zhanna Korzh',
+    pedagogyReviewer: 'Zhanna Korzh',
     reviewedAt: '2026-08-17T00:00:00-05:00',
     copyrightChecked: true,
     cultureChecked: true,
     aiAssisted: true,
-    aiUseNote: 'Borrador asistido por IA. El coreano NO ha sido revisado por hablante nativa. Bloqueante para publicar.',
-    languageDecision: 'pending',
-    pedagogyDecision: 'pending',
+    aiUseNote: 'Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).',
+    languageDecision: 'approved',
+    pedagogyDecision: 'approved',
   },
 
   exercises: [

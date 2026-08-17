@@ -53,8 +53,7 @@ const WORD_TARGETS_DEFAULT = {
 // más largo, igual que le subió al francés— pero se queda dentro de lo que un TOPIK del
 // nivel correspondiente pone delante de un alumno.
 //
-// PENDIENTE: esta banda la propuso el editor, no una revisora de coreano. Zhanna tiene que
-// confirmarla antes de que cualquier lectura coreana pase de borrador a publicada.
+// Confirmada por Zhanna Korzh el 17 de agosto de 2026.
 // Las tres bandas caen además dentro de los límites del validador antiguo (A1 40-140,
 // A2 120-240, B1 220-450), para que las dos capas de comprobación no se contradigan.
 const WORD_TARGETS_KO = {
@@ -63,10 +62,69 @@ const WORD_TARGETS_KO = {
   B1: { min: 220, max: 270 },
 }
 
-const WORD_TARGETS_BY_LANGUAGE = { ko: WORD_TARGETS_KO }
+// El japonés se mide en CARACTERES (文字数), no en palabras ni en morfemas.
+//
+// El problema: el japonés no separa palabras con espacios, así que no hay nada que contar
+// por ahí. Había tres candidatos y esta es la razón de la elección:
+//
+//   1. Morfemas con un analizador (MeCab, Kuromoji). Es el más "exacto", y es el que se
+//      descarta: su resultado depende del diccionario, y cuando el diccionario se actualiza
+//      el recuento cambia solo. El guardián acabaría validando un número distinto para el
+//      mismo texto sin que nadie tocara nada. Eso es peor que ser aproximado.
+//   2. Bunsetsu (unidades sintagmáticas). Conceptualmente es el equivalente del eojeol
+//      coreano, pero también exige análisis y arrastra el mismo problema.
+//   3. Caracteres. Es la medida nativa —la educación y la edición japonesas cuentan
+//      文字数—, es determinista, no depende de ninguna librería y una persona puede
+//      comprobarla a mano. Gana por eso, no por ser la más fina.
+//
+// Pero contar caracteres NO basta para fijar el nivel, y aquí está lo importante: 250
+// caracteres en hiragana y 250 con un 45 % de kanji son dos textos completamente distintos.
+// En japonés la dificultad la marca la densidad de kanji, no la longitud. Así que la banda
+// de caracteres va acompañada de una banda de kanji obligatoria, y el guardián comprueba
+// las dos. Sin la segunda, la primera mediría humo.
+//
+// Las bandas salen de lo que WeLearn ya publica en japonés (A1 90-130 caracteres con 0 % de
+// kanji, A2 150-204 con 23-39 %, B1 241-269 con 33-45 %), con la misma subida de en torno al
+// doble que se aplicó al francés y al coreano, y comprobadas contra las lecturas del JLPT
+// (N5 hasta ~200 caracteres, N4 200-400, N3 400-700).
+const WORD_TARGETS_JA = {
+  A1: { min: 160, max: 240 },
+  A2: { min: 300, max: 400 },
+  B1: { min: 500, max: 650 },
+}
+
+// Porcentaje de kanji sobre el total de caracteres japoneses del texto.
+const KANJI_TARGETS_JA = {
+  A1: { min: 0, max: 12 },
+  A2: { min: 12, max: 30 },
+  B1: { min: 28, max: 45 },
+}
+
+const WORD_TARGETS_BY_LANGUAGE = { ko: WORD_TARGETS_KO, ja: WORD_TARGETS_JA }
 
 export function wordTargetFor(language, cefr) {
   return (WORD_TARGETS_BY_LANGUAGE[language] ?? WORD_TARGETS_DEFAULT)[cefr]
+}
+
+/** Unidad en la que se mide cada idioma, para que los mensajes de error no engañen. */
+export function countUnitFor(language) {
+  if (language === 'ko') return 'eojeol'
+  if (language === 'ja') return 'caracteres'
+  return 'palabras'
+}
+
+const JAPANESE_CHAR = /[ぁ-ヿ一-鿿々〆]/gu
+const KANJI_CHAR = /[一-鿿]/gu
+
+/** Cuenta caracteres japoneses reales: sin espacios, sin puntuación, sin cifras latinas. */
+export function countJapaneseCharacters(text) {
+  return (text.match(JAPANESE_CHAR) ?? []).length
+}
+
+export function kanjiPercent(text) {
+  const total = countJapaneseCharacters(text)
+  if (!total) return 0
+  return Math.round(((text.match(KANJI_CHAR) ?? []).length / total) * 100)
 }
 
 export const WORD_TARGETS = WORD_TARGETS_DEFAULT
@@ -146,8 +204,26 @@ export function validateBlueprintExercise(exercise) {
   const target = wordTargetFor(language, cefr)
   const wordCount = exercise.content?.wordCount ?? 0
   if (wordCount < target.min || wordCount > target.max) {
-    const unit = language === 'ko' ? 'eojeol' : 'palabras'
-    errors.push(`wordCount ${wordCount}: en ${cefr} de ${language} el blueprint pide entre ${target.min} y ${target.max} ${unit}`)
+    errors.push(
+      `wordCount ${wordCount}: en ${cefr} de ${language} el blueprint pide entre ${target.min} y ${target.max} ${countUnitFor(language)}`,
+    )
+  }
+
+  // El japonés lleva una segunda medida obligatoria: la densidad de kanji. Sin ella, la
+  // longitud en caracteres no dice nada del nivel.
+  if (language === 'ja') {
+    const kanjiBand = KANJI_TARGETS_JA[cefr]
+    const percent = kanjiPercent(exercise.content?.targetText ?? '')
+    if (percent < kanjiBand.min || percent > kanjiBand.max) {
+      errors.push(
+        `kanji ${percent} %: en ${cefr} el blueprint pide entre ${kanjiBand.min} y ${kanjiBand.max} %. ` +
+          'La longitud en caracteres sola no fija el nivel en japonés; la densidad de kanji sí.',
+      )
+    }
+    // En A1 y A2 el kanji sin lectura encima es otra tarea, no la misma más difícil.
+    if ((cefr === 'A1' || cefr === 'A2') && exercise.scriptSupport?.furigana !== true) {
+      errors.push(`en ${cefr} de japonés hace falta scriptSupport.furigana: true`)
+    }
   }
 
   // --- 4. Que no aburra -----------------------------------------------------------

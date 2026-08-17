@@ -21,6 +21,7 @@ import { readFile, readdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
 import { fileURLToPath, pathToFileURL } from 'node:url'
+import { countJapaneseCharacters } from './lib/reading-blueprint.mjs'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const sourceDir = path.join(root, 'src/data/reading/source')
@@ -31,13 +32,14 @@ const LANGUAGE_SLUGS = {
   ru: 'ruso', ja: 'japones', ko: 'coreano', pt: 'portugues',
 }
 
-const UNSUPPORTED_COUNTING = new Set(['ja'])
-
+// El japonés se cuenta en caracteres y no en palabras: el por qué está razonado en
+// `scripts/lib/reading-blueprint.mjs`. Los demás idiomas se parten por espacios.
 function sentences(text) {
   return text.split(/(?<=[.!?。！？])\s+/u).map((part) => part.trim()).filter(Boolean)
 }
 
-function countWords(text) {
+function countWords(text, language) {
+  if (language === 'ja') return countJapaneseCharacters(text)
   return text
     .split(/\s+/u)
     .map((token) => token.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, ''))
@@ -47,8 +49,8 @@ function countWords(text) {
 function buildExercise(level, entry, index, all) {
   const id = `${level.language}-${level.cefr.toLowerCase()}-${entry.slug}`
   const text = entry.text.trim()
-  const lengths = sentences(text).map(countWords)
-  const wordCount = countWords(text)
+  const lengths = sentences(text).map((part) => countWords(part, level.language))
+  const wordCount = countWords(text, level.language)
 
   const previous = all[index - 1]
   const next = all[index + 1]
@@ -118,7 +120,7 @@ function buildExercise(level, entry, index, all) {
         averageSentenceWords: lengths.length ? Number((wordCount / lengths.length).toFixed(1)) : 0,
         maxSentenceWords: lengths.length ? Math.max(...lengths) : 0,
         outOfLevelVocabularyPercent: Math.round(
-          (entry.vocabulary.filter((item) => item.outOfLevel).length / Math.max(1, countWords(text))) * 100,
+          (entry.vocabulary.filter((item) => item.outOfLevel).length / Math.max(1, wordCount)) * 100,
         ),
         glossedOutOfLevelItems: entry.vocabulary.filter((item) => item.outOfLevel).length,
       },
@@ -172,12 +174,6 @@ let built = 0
 for (const file of sourceFiles) {
   const module = await import(pathToFileURL(path.join(sourceDir, file)).href)
   const level = module.default
-
-  if (UNSUPPORTED_COUNTING.has(level.language)) {
-    console.error(`✗ ${file}: falta definir cómo se cuentan las palabras en ${level.language}`)
-    process.exitCode = 1
-    continue
-  }
 
   const slugs = new Set()
   for (const entry of level.exercises) {

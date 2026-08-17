@@ -60,10 +60,50 @@ palabras cuando el rango permitía 140). El blueprint sube el suelo:
 lección que dejó Escucha con la duración de los mp3 — un número inventado hace que el
 guardián valide una mentira.
 
-> **Pendiente para japonés.** El japonés no separa palabras con espacios, así que contar
-> tokens no significa nada. El normalizador se niega a procesarlo hasta que se decida su
-> unidad de medida (caracteres, *bunsetsu* o morfemas). Hay que resolverlo antes de
-> producir contenido japonés, no después.
+### La banda no es la misma para todos los idiomas
+
+Una palabra no significa lo mismo en cada lengua, así que la banda tampoco puede ser la
+misma. Hay tres medidas, y cada una está razonada en `scripts/lib/reading-blueprint.mjs`.
+
+| Idiomas | Unidad | A1 | A2 | B1 |
+|---|---|---|---|---|
+| inglés, francés, italiano, alemán, portugués, ruso | palabras | 110–140 | 200–240 | 380–450 |
+| coreano | *eojeol* | 65–85 | 120–145 | 220–270 |
+| japonés | caracteres (文字数) | 160–240 | 300–400 | 500–650 |
+
+**Coreano.** Las partículas y las terminaciones se pegan a la palabra: `학교에서` es una
+sola unidad y significa «en la escuela». La banda se fijó con lo que WeLearn ya publicaba
+(A1 22–36 eojeol), las lecturas reales de TOPIK y una densidad de 1,6–1,7 palabras romances
+por eojeol. Confirmada por Zhanna Korzh el 17 ago 2026.
+
+**Japonés.** No hay espacios, así que había tres candidatos:
+
+1. **Morfemas** con un analizador (MeCab, Kuromoji). El más exacto, y el descartado: su
+   resultado depende del diccionario, y cuando el diccionario se actualiza el recuento
+   cambia solo. El guardián validaría un número distinto para el mismo texto sin que nadie
+   tocara nada. Eso es peor que ser aproximado.
+2. **Bunsetsu**, el equivalente conceptual del eojeol. Mismo problema: exige análisis.
+3. **Caracteres.** Es la medida nativa —la educación y la edición japonesas cuentan
+   文字数—, es determinista, no depende de ninguna librería y se puede comprobar a mano.
+
+Se eligió la tercera. Pero contar caracteres **no basta**, y esto es lo importante: 250
+caracteres en hiragana y 250 con un 45 % de kanji son dos textos completamente distintos.
+En japonés la dificultad la marca la densidad de kanji, no la longitud. Así que la banda de
+caracteres va acompañada de una **banda de kanji obligatoria** que el guardián comprueba
+aparte: A1 ≤ 12 %, A2 12–30 %, B1 28–45 %. Sin la segunda, la primera mediría humo.
+
+Además, en A1 y A2 el japonés exige `scriptSupport.furigana: true`: kanji sin lectura encima
+no es lo mismo un poco más difícil, es otra tarea.
+
+Las bandas japonesas salen de lo publicado por WeLearn (A1 90–130 caracteres con 0 % de
+kanji, A2 150–204 con 23–39 %, B1 241–269 con 33–45 %), con la misma subida de en torno al
+doble que se aplicó al francés y al coreano, y comprobadas contra las lecturas del JLPT
+(N5 hasta ~200 caracteres, N4 200–400, N3 400–700).
+
+> Como consecuencia, la comprobación de longitud del validador antiguo
+> (`reading-content-validator.mjs`) **solo se aplica al esquema 1.0.0**. Sus bandas están
+> pensadas para palabras europeas y un A1 japonés correcto de 200 caracteres las
+> incumpliría. Para 1.1.0 la longitud la valida el blueprint, que sí sabe de qué idioma habla.
 
 ### 4. Que no aburra
 
@@ -108,9 +148,30 @@ Están en producción. Migrarlas es parte del trabajo pendiente, no de este blue
 
 La pieza de referencia es `fr-a1-le-chat-du-troisieme-etage.json`.
 
-## Estado
+## Estado (17 ago 2026)
 
 - Andamiaje: hecho y enganchado al `prebuild`.
-- Piloto francés A1: 1 lectura de 30.
-- Los otros 6 idiomas: sin empezar.
+- **Francés: 30 lecturas, los tres niveles, 100 % del currículo de gramática cubierto.**
+- **Coreano: 30 lecturas, los tres niveles, 100 % del currículo cubierto.**
+- Las 60 están **aprobadas** por Zhanna Korzh (lengua y pedagogía), no publicadas.
+- Faltan alemán, italiano, portugués, ruso y japonés, más la migración de las 31 de inglés.
 - Audio: aplazado a propósito hasta que el contenido esté cerrado.
+
+### Por qué `approved` y no `published`
+
+Zhanna aprobó el contenido, pero **las rutas del motor todavía no están cableadas** para
+francés ni coreano: esos idiomas siguen servidos por sus `Content.tsx` antiguos. Publicar
+metería en el sitemap sesenta URLs que darían 404, que es exactamente el daño que se evitó
+al unificar el direccionamiento en agosto.
+
+`approved` significa: contenido revisado y listo, esperando ruta. El paso a `published` es
+una línea por archivo de autoría (`status: 'published'`) y hay que darlo **el mismo día**
+que se cableen las rutas, no antes. El guardián exige revisores con nombre para las dos
+situaciones, así que nadie puede marcar una lectura como aprobada sin que conste quién la
+aprobó.
+
+### Italiano B1, aviso
+
+El currículo de gramática de italiano B1 tiene **6 temas**, no 20 como el resto. La regla de
+cobertura del 50 % se cumpliría con 3, pero el nivel no puede sostener 10 lecturas variadas
+con tan poco repertorio. Hay que completar ese currículo antes de producir italiano B1.
