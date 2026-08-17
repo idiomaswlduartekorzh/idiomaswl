@@ -1,4 +1,11 @@
+/*
+ * This block sits inside the dark navy podcast panel, so it has to paint its own
+ * light surface — the same one the episode map above it uses. Without it the
+ * wrapper inherits the inverse panel while the text keeps using the ink meant for
+ * light surfaces, and the whole article renders navy on navy.
+ */
 .wrapper {
+  background: var(--wl-panel-raised, #f8fafb);
   border-top: 1px solid var(--en-line, rgba(15, 45, 72, 0.16));
   position: relative;
   z-index: 1;
