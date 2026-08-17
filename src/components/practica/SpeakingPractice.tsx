@@ -170,9 +170,11 @@ export default function SpeakingPractice({
                   </span>
 
                   <div className={s.body}>
-                    <div className={s.phrase} lang="und">
-                      {p.phrase}
-                    </div>
+                    {/* Sin `lang`: declararlo mal es peor que no declararlo. Aquí no llega
+                        el código del idioma, y poner `und` le dice al lector de pantalla
+                        que se dé por vencido. Cuando el componente reciba el idioma como
+                        dato, este es el sitio. */}
+                    <div className={s.phrase}>{p.phrase}</div>
                     {p.script ? <div className={s.script}>{p.script}</div> : null}
                     {p.phonetic ? <div className={s.phonetic}>{p.phonetic}</div> : null}
                     <div className={s.es}>{p.es}</div>

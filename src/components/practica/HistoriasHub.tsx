@@ -66,9 +66,11 @@ export default function HistoriasHub({ lang }: { lang: HistoriaLang }) {
                   <div className={lh.row}>
                     <span className={lh.badge} aria-hidden="true">{h.level}</span>
                     <div className={lh.body}>
+                      {/* El nivel lo dice ya la chapa de la izquierda. Antes ahí iba el
+                          emoji de la historia, así que la etiqueta de nivel no repetía;
+                          ahora sí, y sobra. */}
                       <div className={lh.titleRow}>
                         <span className={lh.name}>{h.title}</span>
-                        <span className={`${lh.tag} wl-story-level-chip`}>{h.level}</span>
                         {ready ? null : <span className={s.pending}>AUDIO EN GRABACIÓN</span>}
                       </div>
                       <p className={lh.desc}>{h.tagline}</p>

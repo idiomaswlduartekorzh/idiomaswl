@@ -256,8 +256,13 @@
 }
 
 /* El antetítulo de la tarjeta: mono, mayúsculas, en el acento. Aquí es donde
-   vive el nombre en el idioma meta —READING, ASCOLTO— que antes era un emoji. */
-.wlp-card > span {
+   vive el nombre en el idioma meta —READING, ASCOLTO— que antes era un emoji.
+
+   Va por clase y no por `.wlp-card > span`, que es lo que tenía al principio: en
+   cuanto una tarjeta envuelve su cabecera en un div —y SkillHub lo hace, para
+   poder poner el distintivo a la derecha—, el selector de hijo directo deja de
+   casar y el antetítulo sale como texto pelado. */
+.wlp-card-eyebrow {
   color: var(--wlp-accent);
   font-family: var(--mono);
   font-size: 0.72rem;
