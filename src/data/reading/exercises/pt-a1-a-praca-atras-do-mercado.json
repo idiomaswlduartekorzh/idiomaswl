@@ -1,0 +1,439 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-a1-a-praca-atras-do-mercado",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Portugués A1"
+  },
+  "slug": "a-praca-atras-do-mercado",
+  "series": {
+    "id": "portugues-a1-lectura-10",
+    "episode": 3,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-a1-feira-da-praca",
+    "nextExerciseId": "pt-a1-cento-e-oito-copos"
+  },
+  "classification": {
+    "genre": "presentación de un lugar",
+    "topic": "una plaza de barrio",
+    "intent": "learning",
+    "tags": [
+      "portugues a1",
+      "lectura",
+      "há / tem / existe",
+      "preposiciones de lugar"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La plaza de detrás del mercado"
+    },
+    "intro": {
+      "es": "Una plaza sin nombre en el mapa, con un banco roto que nadie arregla porque así cabe más gente. Lectura de portugués A1."
+    },
+    "mission": {
+      "es": "Sitúa cada cosa en la plaza y averigua por qué el banco sigue roto."
+    },
+    "targetText": "Atrás do mercado municipal tem uma praça pequena. No mapa ela não tem nome. As pessoas do bairro chamam ela de praça do banco quebrado. Há três árvores grandes na praça. Debaixo das árvores há sempre sombra. No meio da praça existe uma fonte, mas a fonte não funciona há muitos anos. As crianças brincam dentro dela. Ao lado da fonte tem um banco de madeira. Esse banco está quebrado no meio. Uma tábua não existe mais. Então o banco tem dois lados separados. A prefeitura já mandou dois avisos. Ninguém do bairro responde. O motivo é simples: no banco quebrado cabem seis pessoas. No banco inteiro cabiam quatro. Perto da entrada há um carrinho de cachorro-quente. O dono se chama Wilson. Ele trabalha ali há dezenove anos e conhece o nome de todo mundo.",
+    "wordCount": 135,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Usar «tem», «há» y «existe» para decir lo que hay en un lugar."
+      },
+      {
+        "es": "Situar objetos con preposiciones: atrás de, debaixo de, no meio de, ao lado de, perto de."
+      },
+      {
+        "es": "Reconstruir un espacio a partir de una descripción escrita."
+      }
+    ],
+    "grammarFocus": [
+      "ha-tem-existe",
+      "preposicoes-lugar"
+    ],
+    "vocabulary": [
+      {
+        "surface": "bairro",
+        "lemma": "bairro",
+        "glosses": {
+          "es": "barrio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "quebrado",
+        "lemma": "quebrar",
+        "glosses": {
+          "es": "roto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dono",
+        "lemma": "dono",
+        "glosses": {
+          "es": "dueño, propietario"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fonte",
+        "lemma": "fonte",
+        "glosses": {
+          "es": "fuente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tábua",
+        "lemma": "tábua",
+        "glosses": {
+          "es": "tabla, listón de madera"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "prefeitura",
+        "lemma": "prefeitura",
+        "glosses": {
+          "es": "ayuntamiento (en Brasil)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cabem",
+        "lemma": "caber",
+        "glosses": {
+          "es": "caben"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "carrinho",
+        "lemma": "carrinho",
+        "glosses": {
+          "es": "carrito, puesto ambulante"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La «prefeitura» es el ayuntamiento brasileño. Y el carrito de «cachorro-quente» —perrito caliente— es un negocio de plaza muy común, con clientela fija de años."
+    },
+    "spanishSpeakerNote": {
+      "es": "Tres formas de decir «hay»: «tem» (la más hablada en Brasil), «há» (más escrita) y «existe». Ojo: «tem» también es «tiene», así que el contexto decide. Y «prefeitura» no es una prefectura de policía: es el ayuntamiento."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en portugués de Brasil sobre la vida cotidiana, distinguir ser de estar, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares"
+    ],
+    "disallowedGrammar": [
+      "pretérito perfeito",
+      "imperfeito",
+      "subjuntivo",
+      "voz passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 7.5,
+      "maxSentenceWords": 15,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Presente de indicativo y futuro con ir. Sin tiempos del pasado ni subjuntivo. Falso amigo glosado en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué retrata el texto?",
+      "options": [
+        {
+          "id": "plaza",
+          "text": "Una plaza de barrio y la lógica propia de quienes la usan"
+        },
+        {
+          "id": "obra",
+          "text": "Una obra municipal que va con retraso"
+        },
+        {
+          "id": "negocio",
+          "text": "El negocio de un vendedor de perritos calientes"
+        }
+      ],
+      "answer": "plaza",
+      "evidence": "no banco quebrado cabem seis pessoas. No banco inteiro cabiam quatro.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el banco roto lo resume: el barrio no lo arregla porque roto sirve mejor."
+        },
+        "incorrect": {
+          "es": "No hay obra en marcha, y Wilson aparece al final como un dato de la plaza. Busca la frase de los seis y los cuatro."
+        },
+        "strategy": {
+          "es": "Cuando un texto explica una decisión rara del vecindario, esa explicación es su asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Dónde está el carrito de perritos calientes?",
+      "options": [
+        {
+          "id": "entrada",
+          "text": "Cerca de la entrada"
+        },
+        {
+          "id": "fuente",
+          "text": "Al lado de la fuente"
+        },
+        {
+          "id": "arboles",
+          "text": "Debajo de los árboles"
+        }
+      ],
+      "answer": "entrada",
+      "evidence": "Perto da entrada há um carrinho de cachorro-quente.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Al lado de la fuente está el banco, y debajo de los árboles hay sombra."
+        },
+        "incorrect": {
+          "es": "El texto coloca varias cosas en la plaza. Busca la que va con «carrinho»."
+        },
+        "strategy": {
+          "es": "Con una descripción de un espacio, dibuja un plano rápido. Cada preposición coloca una cosa."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que «a prefeitura já mandou dois avisos». ¿Qué es la «prefeitura»?",
+      "options": [
+        {
+          "id": "ayuntamiento",
+          "text": "El ayuntamiento"
+        },
+        {
+          "id": "policia",
+          "text": "Una comisaría"
+        },
+        {
+          "id": "vecinos",
+          "text": "La asociación de vecinos"
+        }
+      ],
+      "answer": "ayuntamiento",
+      "evidence": "A prefeitura já mandou dois avisos sobre o banco. Ninguém do bairro responde.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Es un falso amigo: en Brasil «prefeitura» es el ayuntamiento, no una prefectura."
+        },
+        "incorrect": {
+          "es": "La frase siguiente distingue a la prefeitura de la gente del barrio, así que no son los vecinos."
+        },
+        "strategy": {
+          "es": "Si un texto contrapone dos actores en frases seguidas, no pueden ser el mismo. Úsalo para acotar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué nadie del barrio responde a los avisos?",
+      "options": [
+        {
+          "id": "mejor",
+          "text": "Porque roto caben seis personas y entero cabían cuatro"
+        },
+        {
+          "id": "dinero",
+          "text": "Porque arreglarlo costaría dinero a los vecinos"
+        },
+        {
+          "id": "olvido",
+          "text": "Porque nadie lee los avisos de la prefeitura"
+        }
+      ],
+      "answer": "mejor",
+      "evidence": "O motivo é simples: no banco quebrado cabem seis pessoas. No banco inteiro cabiam quatro.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo presenta como una lógica, no como una dejadez: «o motivo é simples»."
+        },
+        "incorrect": {
+          "es": "El texto no habla de dinero ni de descuido. Busca la frase que empieza con «O motivo é simples»."
+        },
+        "strategy": {
+          "es": "Cuando un texto anuncia «el motivo es simple», la razón viene justo después. No la deduzcas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la fuente de la plaza funciona solo en verano.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "existe uma fonte, mas a fonte não funciona há muitos anos. As crianças brincam dentro dela.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: no funciona desde hace años, y por eso los niños juegan dentro."
+        },
+        "incorrect": {
+          "es": "El texto dice desde cuándo no funciona. Busca «não funciona há muitos anos»."
+        },
+        "strategy": {
+          "es": "La estructura «não + verbo + há + tiempo» dice cuánto lleva sin ocurrir algo. Es clave para fechar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "reference",
+      "skill": "reference",
+      "prompt": "En «As crianças brincam dentro dela», ¿dentro de qué juegan?",
+      "options": [
+        {
+          "id": "fuente",
+          "text": "De la fuente"
+        },
+        {
+          "id": "plaza",
+          "text": "De la plaza"
+        },
+        {
+          "id": "mercado",
+          "text": "Del mercado"
+        }
+      ],
+      "answer": "fuente",
+      "evidence": "existe uma fonte, mas a fonte não funciona há muitos anos. As crianças brincam dentro dela.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. «Dela» es femenino singular y recoge «a fonte», nombrada dos veces justo antes."
+        },
+        "incorrect": {
+          "es": "El pronombre «dela» remite al último nombre femenino singular. Mira la frase anterior."
+        },
+        "strategy": {
+          "es": "Para resolver «dele/dela», busca el nombre más cercano que coincida en género y número."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Describe en 5–7 frases en portugués una plaza o una calle de tu barrio. Usa «tem» o «há» cuatro veces y cuatro preposiciones de lugar distintas."
+    },
+    "minWords": 30,
+    "maxWords": 70,
+    "hints": [
+      "Atrás de… tem…",
+      "No meio da praça há…",
+      "Ao lado de…",
+      "Perto da entrada…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de portugués brasileño y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués A1: La plaza de detrás del mercado | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto en portugués de Brasil A1 y practica há, tem y existe, más las preposiciones de lugar. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/a1/lectura/a-praca-atras-do-mercado",
+    "indexable": false,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-a1-feira-da-praca",
+      "pt-a1-cento-e-oito-copos"
+    ]
+  }
+}

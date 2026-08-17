@@ -1,0 +1,439 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-a1-o-que-voce-vende-mais",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Portugués A1"
+  },
+  "slug": "o-que-voce-vende-mais",
+  "series": {
+    "id": "portugues-a1-lectura-10",
+    "episode": 9,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-a1-o-jogo-da-rua-quinze",
+    "nextExerciseId": "pt-a1-cartao-de-belem"
+  },
+  "classification": {
+    "genre": "entrevista breve",
+    "topic": "un puesto de postres",
+    "intent": "learning",
+    "tags": [
+      "portugues a1",
+      "lectura",
+      "preguntas",
+      "adjetivos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Qué es lo que más vende"
+    },
+    "intro": {
+      "es": "Un vendedor de postres que responde con datos exactos y una pregunta que no esperaba. Lectura de portugués A1 con las interrogativas."
+    },
+    "mission": {
+      "es": "Fíjate en cuál es la pregunta que le cuesta contestar."
+    },
+    "targetText": "— O que você vende aqui? — Sobremesa. Só sobremesa. Pudim, brigadeiro e bolo de cenoura. — Qual vende mais? — Brigadeiro. Sempre brigadeiro. Umas duzentas unidades por dia. — Quando você começa? — Cinco da manhã. O bolo precisa de tempo. — Onde você faz? — Na cozinha da minha casa. Aqui eu só vendo. — Quantas pessoas trabalham com você? — Duas. Minha filha e um rapaz do bairro. — Por que só sobremesa? — Porque salgado tem muita concorrência. Sobremesa é diferente. As pessoas compram sobremesa quando estão felizes ou quando estão tristes. Salgado elas compram com fome. Fome passa. — Como você sabe isso? — Vinte e dois anos aqui. — E qual é a sua sobremesa preferida? — O vendedor ficou quieto. Ele pensou um tempo. Depois ele disse: eu não como doce. Eu não gosto. Nunca gostei. E ele riu muito.",
+    "wordCount": 131,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Reconocer y usar las interrogativas: o que, qual, quando, onde, quantas, por que, como."
+      },
+      {
+        "es": "Usar adjetivos para valorar: felizes, tristes, diferente, preferida."
+      },
+      {
+        "es": "Leer una entrevista y distinguir la pregunta de la respuesta."
+      }
+    ],
+    "grammarFocus": [
+      "perguntas-interrogativas",
+      "adjetivos-qualificativos"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Sobremesa",
+        "lemma": "sobremesa",
+        "glosses": {
+          "es": "postre. ¡No es la «sobremesa» española!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Pudim",
+        "lemma": "pudim",
+        "glosses": {
+          "es": "flan"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "brigadeiro",
+        "lemma": "brigadeiro",
+        "glosses": {
+          "es": "dulce brasileño de chocolate, en forma de bola"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cenoura",
+        "lemma": "cenoura",
+        "glosses": {
+          "es": "zanahoria"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rapaz",
+        "lemma": "rapaz",
+        "glosses": {
+          "es": "chico, muchacho"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "salgado",
+        "lemma": "salgado",
+        "glosses": {
+          "es": "salado; en Brasil, aperitivo salado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "concorrência",
+        "lemma": "concorrência",
+        "glosses": {
+          "es": "competencia (comercial)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "quieto",
+        "lemma": "quieto",
+        "glosses": {
+          "es": "callado, en silencio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El brigadeiro es el dulce brasileño más popular y aparece en cualquier cumpleaños. Y «salgado» designa toda la familia de aperitivos salados —coxinha, pastel, empada— que compite con el dulce en la calle."
+    },
+    "spanishSpeakerNote": {
+      "es": "«Sobremesa» en portugués es el postre, no el rato de charla después de comer. Es uno de los falsos amigos más frecuentes en un restaurante. Y «quieto» significa callado, no inmóvil."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en portugués de Brasil sobre la vida cotidiana, distinguir ser de estar, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares"
+    ],
+    "disallowedGrammar": [
+      "pretérito perfeito",
+      "imperfeito",
+      "subjuntivo",
+      "voz passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 4.1,
+      "maxSentenceWords": 11,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Presente de indicativo y futuro con ir. Sin tiempos del pasado ni subjuntivo. Falso amigo glosado en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué revela la entrevista al final?",
+      "options": [
+        {
+          "id": "nocome",
+          "text": "Que el vendedor no come dulce y nunca le ha gustado"
+        },
+        {
+          "id": "cerrar",
+          "text": "Que va a cerrar el puesto después de veintidós años"
+        },
+        {
+          "id": "ampliar",
+          "text": "Que quiere empezar a vender salados"
+        }
+      ],
+      "answer": "nocome",
+      "evidence": "eu não como doce. Eu não gosto. Nunca gostei.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y es la única pregunta que le hace dudar: se queda callado antes de contestar."
+        },
+        "incorrect": {
+          "es": "No dice nada de cerrar, y descarta los salados por la competencia. Lee su última respuesta."
+        },
+        "strategy": {
+          "es": "En una entrevista, la respuesta que llega después de un silencio suele ser la más reveladora."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántas unidades del más vendido despacha al día?",
+      "options": [
+        {
+          "id": "200",
+          "text": "Unas doscientas"
+        },
+        {
+          "id": "22",
+          "text": "Veintidós"
+        },
+        {
+          "id": "5",
+          "text": "Cinco"
+        }
+      ],
+      "answer": "200",
+      "evidence": "Umas duzentas unidades por dia.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Los veintidós son los años que lleva y el cinco, la hora a la que empieza."
+        },
+        "incorrect": {
+          "es": "La entrevista da tres cifras y cada una mide algo distinto. Busca la que va con «unidades»."
+        },
+        "strategy": {
+          "es": "Con varias cifras, fíjate en la unidad que las acompaña: unidades, años, horas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "A la pregunta «O que você vende aqui?» responde «Sobremesa». ¿Qué vende?",
+      "options": [
+        {
+          "id": "postres",
+          "text": "Postres"
+        },
+        {
+          "id": "charla",
+          "text": "Nada: es el rato de charla tras la comida"
+        },
+        {
+          "id": "mantel",
+          "text": "Manteles de mesa"
+        }
+      ],
+      "answer": "postres",
+      "evidence": "Sobremesa. Só sobremesa. Pudim, brigadeiro e bolo de cenoura.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y la propia frase lo enumera: flan, brigadeiro y bizcocho de zanahoria."
+        },
+        "incorrect": {
+          "es": "La frase siguiente da tres ejemplos concretos. Míralos: son todos dulces."
+        },
+        "strategy": {
+          "es": "Cuando un falso amigo va seguido de ejemplos, los ejemplos lo definen. No hace falta el diccionario."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué vende solo dulce y no salado?",
+      "options": [
+        {
+          "id": "competencia",
+          "text": "Porque el salado tiene mucha competencia y el dulce se compra por emoción"
+        },
+        {
+          "id": "facil",
+          "text": "Porque el dulce es más fácil de preparar"
+        },
+        {
+          "id": "precio",
+          "text": "Porque el dulce se vende más caro"
+        }
+      ],
+      "answer": "competencia",
+      "evidence": "Porque salgado tem muita concorrência … As pessoas compram sobremesa quando estão felizes ou quando estão tristes … Fome passa.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y remata con una frase corta: el hambre pasa; la alegría y la tristeza compran igual."
+        },
+        "incorrect": {
+          "es": "No habla de precios ni de facilidad. Lee su respuesta a «Por que só sobremesa?»."
+        },
+        "strategy": {
+          "es": "Cuando alguien da dos razones seguidas, la segunda suele ser la buena. No te pares en la primera."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: cocina en su casa y en el puesto solo vende.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Na cozinha da minha casa. Aqui eu só vendo.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero: cocina en su casa y en el puesto solo vende. Lo separa expresamente con un «só»."
+        },
+        "incorrect": {
+          "es": "Busca su respuesta a «Onde você faz?». Distingue dos sitios."
+        },
+        "strategy": {
+          "es": "La palabra «só» (solo) limita lo que ocurre en un sitio. Si la ves, hay otro lugar implicado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "¿Qué efecto tiene que el vendedor se ría mucho al final?",
+      "options": [
+        {
+          "id": "gracia",
+          "text": "Le hace gracia la contradicción de vivir de algo que no le gusta"
+        },
+        {
+          "id": "incomodo",
+          "text": "Está incómodo y quiere cambiar de tema"
+        },
+        {
+          "id": "enfado",
+          "text": "Se molesta por la pregunta personal"
+        }
+      ],
+      "answer": "gracia",
+      "evidence": "Nunca gostei. E ele riu muito.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Se queda callado porque no lo esperaba, y se ríe porque la contradicción le parece buena."
+        },
+        "incorrect": {
+          "es": "No esquiva la pregunta: la contesta con detalle. Y no se molesta. Fíjate en el orden: contesta y luego se ríe."
+        },
+        "strategy": {
+          "es": "Si alguien primero contesta con franqueza y luego se ríe, la risa acompaña la confesión, no la evita."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe una entrevista de 6–8 líneas en portugués a alguien que trabaje en la calle. Usa cinco interrogativas distintas (o que, qual, quando, onde, por que, como)."
+    },
+    "minWords": 30,
+    "maxWords": 70,
+    "hints": [
+      "— O que você vende aqui?",
+      "— Qual vende mais?",
+      "— Quando você começa?",
+      "— Como você sabe isso?"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de portugués brasileño y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués A1: Qué es lo que más vende | WeLearn"
+    },
+    "description": {
+      "es": "Lee una entrevista breve en portugués de Brasil A1 y practica las palabras interrogativas y los adjetivos. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/a1/lectura/o-que-voce-vende-mais",
+    "indexable": false,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-a1-o-jogo-da-rua-quinze",
+      "pt-a1-cartao-de-belem"
+    ]
+  }
+}

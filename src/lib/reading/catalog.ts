@@ -98,6 +98,17 @@ import koB1IjeHangugeoroMalhagiroHaesseoyo from '@/data/reading/exercises/ko-b1-
 import koB1JeokhijiAnheunGyuchik from '@/data/reading/exercises/ko-b1-jeokhiji-anheun-gyuchik.json'
 import koB1SijangiNamgeDoenIyu from '@/data/reading/exercises/ko-b1-sijangi-namge-doen-iyu.json'
 import koB1TongyeoksaUiHanabeon from '@/data/reading/exercises/ko-b1-tongyeoksa-ui-hanabeon.json'
+// Portugués (Brasil) A1 — generadas desde `src/data/reading/source/pt-a1.mjs`.
+import ptA1AListaDaMudanca from '@/data/reading/exercises/pt-a1-a-lista-da-mudanca.json'
+import ptA1APracaAtrasDoMercado from '@/data/reading/exercises/pt-a1-a-praca-atras-do-mercado.json'
+import ptA1CartaoDeBelem from '@/data/reading/exercises/pt-a1-cartao-de-belem.json'
+import ptA1CentoEOitoCopos from '@/data/reading/exercises/pt-a1-cento-e-oito-copos.json'
+import ptA1EuNaoEstouBravo from '@/data/reading/exercises/pt-a1-eu-nao-estou-bravo.json'
+import ptA1EuNaoVendoNada from '@/data/reading/exercises/pt-a1-eu-nao-vendo-nada.json'
+import ptA1FeiraDaPraca from '@/data/reading/exercises/pt-a1-feira-da-praca.json'
+import ptA1MensagensSobreOSofa from '@/data/reading/exercises/pt-a1-mensagens-sobre-o-sofa.json'
+import ptA1OJogoDaRuaQuinze from '@/data/reading/exercises/pt-a1-o-jogo-da-rua-quinze.json'
+import ptA1OQueVoceVendeMais from '@/data/reading/exercises/pt-a1-o-que-voce-vende-mais.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -193,6 +204,16 @@ const RAW_EXERCISES: unknown[] = [
   koB1JeokhijiAnheunGyuchik,
   koB1SijangiNamgeDoenIyu,
   koB1TongyeoksaUiHanabeon,
+  ptA1AListaDaMudanca,
+  ptA1APracaAtrasDoMercado,
+  ptA1CartaoDeBelem,
+  ptA1CentoEOitoCopos,
+  ptA1EuNaoEstouBravo,
+  ptA1EuNaoVendoNada,
+  ptA1FeiraDaPraca,
+  ptA1MensagensSobreOSofa,
+  ptA1OJogoDaRuaQuinze,
+  ptA1OQueVoceVendeMais,
 ]
 
 export const READING_EXERCISES: ReadingExercise[] = RAW_EXERCISES.map((candidate) => {
