@@ -52,6 +52,17 @@ import frQuatreHeures from '@/data/reading/exercises/fr-a2-quatre-heures-du-mati
 import frPisteCyclable from '@/data/reading/exercises/fr-a2-a-propos-de-la-piste-cyclable.json'
 import frReunionVoisins from '@/data/reading/exercises/fr-a2-reunion-des-voisins.json'
 import frEauMontee from '@/data/reading/exercises/fr-a2-l-eau-est-montee-en-vingt-minutes.json'
+// Francés B1 — generadas desde `src/data/reading/source/fr-b1.mjs`.
+import frLettreJamaisEnvoyee from '@/data/reading/exercises/fr-b1-la-lettre-jamais-envoyee.json'
+import frUsineLaisse from '@/data/reading/exercises/fr-b1-ce-que-l-usine-a-laisse.json'
+import frTravaillaitMoins from '@/data/reading/exercises/fr-b1-si-on-travaillait-moins.json'
+import frDernierAccordeur from '@/data/reading/exercises/fr-b1-le-dernier-accordeur.json'
+import frRumeurGymnase from '@/data/reading/exercises/fr-b1-la-rumeur-du-gymnase.json'
+import frAttention from '@/data/reading/exercises/fr-b1-ce-que-nous-appelons-l-attention.json'
+import frVillage2040 from '@/data/reading/exercises/fr-b1-le-village-en-2040.json'
+import frApprendreSeTrompant from '@/data/reading/exercises/fr-b1-apprendre-en-se-trompant.json'
+import frDeuxFoisRoman from '@/data/reading/exercises/fr-b1-deux-fois-le-meme-roman.json'
+import frClubNeGagneJamais from '@/data/reading/exercises/fr-b1-le-club-qui-ne-gagne-jamais.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -107,6 +118,16 @@ const RAW_EXERCISES: unknown[] = [
   frPisteCyclable,
   frReunionVoisins,
   frEauMontee,
+  frLettreJamaisEnvoyee,
+  frUsineLaisse,
+  frTravaillaitMoins,
+  frDernierAccordeur,
+  frRumeurGymnase,
+  frAttention,
+  frVillage2040,
+  frApprendreSeTrompant,
+  frDeuxFoisRoman,
+  frClubNeGagneJamais,
 ]
 
 export const READING_EXERCISES: ReadingExercise[] = RAW_EXERCISES.map((candidate) => {

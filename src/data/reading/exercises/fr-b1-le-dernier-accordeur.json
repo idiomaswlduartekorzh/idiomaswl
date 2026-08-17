@@ -1,0 +1,479 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-b1-le-dernier-accordeur",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Francés B1"
+  },
+  "slug": "le-dernier-accordeur",
+  "series": {
+    "id": "frances-b1-lectura-10",
+    "episode": 4,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-b1-si-on-travaillait-moins",
+    "nextExerciseId": "fr-b1-la-rumeur-du-gymnase"
+  },
+  "classification": {
+    "genre": "retrato",
+    "topic": "un oficio que desaparece",
+    "intent": "learning",
+    "tags": [
+      "frances b1",
+      "lectura",
+      "pronombres relativos",
+      "participio presente"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El último afinador"
+    },
+    "intro": {
+      "es": "Un afinador de pianos que sabe, mirando los macillos, qué notas amaba la dueña. Lectura de francés B1 con los relativos y el participio presente."
+    },
+    "mission": {
+      "es": "Averigua qué sabe hacer él que una aplicación no puede hacer."
+    },
+    "targetText": "Il y a quarante ans, la ville comptait onze accordeurs de pianos. Aujourd’hui, il en reste un: Serge Vidal, soixante-neuf ans, qui travaille encore cinq jours par semaine et qui refuse de parler de retraite. Je l’ai accompagné un mardi matin chez une cliente dont le piano n’avait pas été accordé depuis quinze ans. C’est un droit des années trente, hérité d’une grand-mère, occupant un quart du salon et ne servant plus à personne depuis la mort du mari. Vidal a ouvert l’instrument, a regardé à l’intérieur pendant une minute entière sans rien toucher, puis il a dit une phrase que je n’ai pas comprise sur le moment: «Celui-ci a été joué.» Je lui ai demandé comment il le savait. Il m’a montré les marteaux, ces petites pièces de feutre frappant les cordes: certains étaient creusés, d’autres presque neufs. «Les notes usées, ce sont celles qu’elle aimait», a-t-il dit. Un piano dont personne ne s’est jamais servi s’use de manière régulière. Un piano qu’on a vraiment joué porte la trace des morceaux qu’on y a répétés pendant des années. Le métier, qui exige une oreille entraînée et beaucoup de patience, n’attire plus. Vidal a formé quatre apprentis en trente ans. Trois ont arrêté avant la fin. Le quatrième travaille aujourd’hui dans une entreprise de logiciels, ce qui le fait rire plutôt que l’attrister. Il ne se plaint pas non plus des applications permettant d’accorder un piano avec un téléphone. Il dit qu’elles font correctement ce qu’elles prétendent faire, et qu’un piano de salon accordé par une application sonnera juste. Ce qu’elles ne font pas, c’est tout le reste: entendre qu’un feutre est mort, qu’une table d’harmonie a bougé, qu’un instrument mérite ou non l’argent d’une réparation. En partant, la cliente lui a demandé si le piano valait quelque chose. Vidal a répondu que non, pas grand-chose, et qu’elle ne le vendrait jamais au prix qu’elle imaginait. Puis il a ajouté qu’elle devrait quand même le faire accorder une fois par an, même sans en jouer, parce qu’un piano abandonné se dérègle beaucoup plus vite qu’un piano utilisé. Dans l’escalier, je lui ai fait remarquer qu’il venait de se garantir une cliente pour dix ans. Il m’a regardé, l’air sincèrement surpris, et il a dit qu’il n’y avait pas pensé une seule seconde. Je crois que c’était vrai.",
+    "wordCount": 387,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Encadenar relativos: qui, que, dont, ce qui, ce que."
+      },
+      {
+        "es": "Reconocer el participio presente como forma que describe (occupant, frappant, permettant)."
+      },
+      {
+        "es": "Separar lo que un profesional dice de lo que el narrador interpreta."
+      }
+    ],
+    "grammarFocus": [
+      "pronoms-relatifs-b1",
+      "participe-present-b1",
+      "dont-relatif"
+    ],
+    "vocabulary": [
+      {
+        "surface": "accordeurs",
+        "lemma": "accordeur",
+        "glosses": {
+          "es": "afinadores (de instrumentos)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "marteaux",
+        "lemma": "marteau",
+        "glosses": {
+          "es": "macillos, las piezas que golpean las cuerdas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "feutre",
+        "lemma": "feutre",
+        "glosses": {
+          "es": "fieltro"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "creusés",
+        "lemma": "creuser",
+        "glosses": {
+          "es": "ahuecados, con un hueco por el desgaste"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "usées",
+        "lemma": "user",
+        "glosses": {
+          "es": "gastadas, desgastadas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "apprentis",
+        "lemma": "apprenti",
+        "glosses": {
+          "es": "aprendices"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "table d’harmonie",
+        "lemma": "table d’harmonie",
+        "glosses": {
+          "es": "tabla armónica, la madera que amplifica el sonido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "se dérègle",
+        "lemma": "se dérégler",
+        "glosses": {
+          "es": "se desafina, se descompensa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El aprendizaje por «apprentissage», con un maestro que forma a un aprendiz durante años, sigue siendo el camino oficial de muchos oficios artesanos en Francia."
+    },
+    "spanishSpeakerNote": {
+      "es": "El participio presente («occupant», «frappant», «permettant») describe y equivale a una relativa: «occupant un quart du salon» es «que ocupa un cuarto del salón». No confundirlo con el gérondif, que lleva «en» delante y expresa simultaneidad."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo que desarrolla una idea, cambia de dirección y se cierra; distinguir el hecho de la interpretación; y justificar una inferencia señalando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers",
+      "accord-participe-passe",
+      "cause-consequence",
+      "comparatifs",
+      "conditionnel-present",
+      "connecteurs",
+      "discours-indirect",
+      "dont-relatif",
+      "futur-simple",
+      "gerondif",
+      "imparfait",
+      "negation-avancee",
+      "passe-compose-avoir",
+      "passe-compose-etre",
+      "passe-compose-vs-imparfait",
+      "pronoms-coi",
+      "pronoms-y-en",
+      "si-conditionnel",
+      "subjonctif-present",
+      "superlatifs",
+      "verbes-pronominaux",
+      "accord-participe-passe-b1",
+      "comparatif-superlatif-b1",
+      "conditionnel-present-b1",
+      "connecteurs-logiques-b1",
+      "discours-indirect-b1",
+      "expressions-temporelles-b1",
+      "futur-simple-b1",
+      "gerondif-b1",
+      "hypothese-si-b1",
+      "imperatif-b1",
+      "negation-avancee-b1",
+      "nominalisation-b1",
+      "participe-present-b1",
+      "passe-compose-vs-imparfait-b1",
+      "plus-que-parfait-b1",
+      "pronoms-relatifs-b1",
+      "pronoms-y-en-b1",
+      "questions-indirectes-b1",
+      "subjonctif-present-b1",
+      "voix-passive-b1"
+    ],
+    "disallowedGrammar": [
+      "passé simple",
+      "subjonctif imparfait",
+      "passé antérieur"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 17.6,
+      "maxSentenceWords": 41,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Prosa B1 con plus-que-parfait, voz pasiva y subjuntivo. Sin passé simple. Inferencia moderada: exige cruzar dos pasajes separados."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué distingue el trabajo de Vidal, según el reportaje?",
+      "options": [
+        {
+          "id": "diagnostico",
+          "text": "Que sabe diagnosticar el estado y el valor de un instrumento, no solo afinarlo"
+        },
+        {
+          "id": "precio",
+          "text": "Que cobra menos que cualquier aplicación"
+        },
+        {
+          "id": "rapidez",
+          "text": "Que afina un piano más rápido que nadie en la ciudad"
+        }
+      ],
+      "answer": "diagnostico",
+      "evidence": "Ce qu’elles ne font pas, c’est tout le reste: entendre qu’un feutre est mort, qu’une table d’harmonie a bougé",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Él mismo concede que las aplicaciones afinan bien; lo que reivindica es el juicio sobre el instrumento entero."
+        },
+        "incorrect": {
+          "es": "El texto no habla de precios ni de velocidad. Busca la frase que empieza con «Ce qu’elles ne font pas»."
+        },
+        "strategy": {
+          "es": "Cuando alguien concede algo al rival, lo que reivindica viene justo después. Ahí está la tesis del retrato."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántos aprendices formó Vidal y cuántos terminaron?",
+      "options": [
+        {
+          "id": "4y1",
+          "text": "Formó cuatro y solo uno terminó"
+        },
+        {
+          "id": "11y4",
+          "text": "Formó once y terminaron cuatro"
+        },
+        {
+          "id": "3y3",
+          "text": "Formó tres y terminaron los tres"
+        }
+      ],
+      "answer": "4y1",
+      "evidence": "Vidal a formé quatre apprentis en trente ans. Trois ont arrêté avant la fin.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: cuatro menos tres que abandonaron. El once son los afinadores que había en la ciudad hace cuarenta años."
+        },
+        "incorrect": {
+          "es": "El texto da los dos datos en frases seguidas, y hay que restar. Cuidado con el once, que mide otra cosa."
+        },
+        "strategy": {
+          "es": "Cuando un texto da un total y una baja, la respuesta es la resta. No busques la cifra final escrita."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Vidal enseña los «marteaux», de los cuales unos están «creusés». ¿Qué son los marteaux de un piano?",
+      "options": [
+        {
+          "id": "macillos",
+          "text": "Las piezas de fieltro que golpean las cuerdas"
+        },
+        {
+          "id": "herramienta",
+          "text": "Los martillos con los que trabaja el afinador"
+        },
+        {
+          "id": "pedales",
+          "text": "Los pedales del instrumento"
+        }
+      ],
+      "answer": "macillos",
+      "evidence": "Il m’a montré les marteaux, ces petites pièces de feutre frappant les cordes",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. El propio texto lo define en aposición, sin necesidad de diccionario."
+        },
+        "incorrect": {
+          "es": "La palabra se parece a «martillo», pero el texto la define inmediatamente después de la coma. Léelo."
+        },
+        "strategy": {
+          "es": "Cuando un texto técnico introduce un término, suele definirlo en la misma frase tras una coma. Es una aposición."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el narrador cierra diciendo «Je crois que c’était vrai»?",
+      "options": [
+        {
+          "id": "sincero",
+          "text": "Para dejar claro que la sorpresa de Vidal no era fingida ni comercial"
+        },
+        {
+          "id": "duda",
+          "text": "Para poner en duda todo lo que Vidal le ha contado"
+        },
+        {
+          "id": "error",
+          "text": "Para corregir un dato erróneo que ha dado antes"
+        }
+      ],
+      "answer": "sincero",
+      "evidence": "il a dit qu’il n’y avait pas pensé une seule seconde. Je crois que c’était vrai.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El narrador le había insinuado que se estaba asegurando una clienta; con esa frase retira la insinuación."
+        },
+        "incorrect": {
+          "es": "No corrige ningún dato ni desconfía del conjunto: la frase se refiere solo a lo que acaba de decir Vidal."
+        },
+        "strategy": {
+          "es": "Una frase final de una sola línea suele juzgar únicamente lo inmediatamente anterior, no todo el texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: Vidal reconoce que las aplicaciones para afinar hacen bien aquello para lo que sirven.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Il dit qu’elles font correctement ce qu’elles prétendent faire",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y eso hace más creíble su crítica: no descalifica la herramienta, delimita su alcance."
+        },
+        "incorrect": {
+          "es": "Busca el párrafo sobre las aplicaciones. Lo que dice de ellas es más matizado de lo que parece."
+        },
+        "strategy": {
+          "es": "No supongas que un artesano rechaza la tecnología. Comprueba qué dice exactamente antes de responder."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "reference",
+      "skill": "reference",
+      "prompt": "En «Les notes usées, ce sont celles qu’elle aimait», ¿a quién se refiere «elle»?",
+      "options": [
+        {
+          "id": "abuela",
+          "text": "A la abuela que tocaba aquel piano"
+        },
+        {
+          "id": "clienta",
+          "text": "A la clienta actual, que no toca"
+        },
+        {
+          "id": "nota",
+          "text": "A una nota concreta del teclado"
+        }
+      ],
+      "answer": "abuela",
+      "evidence": "C’est un droit des années trente, hérité d’une grand-mère … Un piano qu’on a vraiment joué porte la trace des morceaux qu’on y a répétés",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El piano es heredado de la abuela y lleva quince años sin afinar: el desgaste es de quien lo tocaba antes."
+        },
+        "incorrect": {
+          "es": "La clienta no toca —el piano lleva años en desuso—, así que el desgaste no puede ser suyo. Busca de quién lo heredó."
+        },
+        "strategy": {
+          "es": "Para resolver un pronombre alejado, busca a la persona compatible con lo que se afirma, no la más cercana."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Describe en 8–10 frases en francés a alguien que domine un oficio manual. Usa cuatro relativos distintos (qui, que, dont, ce qui) y un participio presente."
+    },
+    "minWords": 70,
+    "maxWords": 130,
+    "hints": [
+      "Il y a … ans, la ville comptait…",
+      "… dont le métier…",
+      "Ce qu’il fait, c’est…",
+      "Un objet qu’on a vraiment utilisé…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés B1: El último afinador | WeLearn"
+    },
+    "description": {
+      "es": "Lee un retrato en francés B1 y practica los pronombres relativos (qui, que, dont, ce qui) y el participio presente. Con seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/frances/b1/lectura/le-dernier-accordeur",
+    "indexable": false,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-b1-si-on-travaillait-moins",
+      "fr-b1-la-rumeur-du-gymnase"
+    ]
+  }
+}

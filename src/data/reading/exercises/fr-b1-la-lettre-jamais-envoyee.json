@@ -1,0 +1,487 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-b1-la-lettre-jamais-envoyee",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Francés B1"
+  },
+  "slug": "la-lettre-jamais-envoyee",
+  "series": {
+    "id": "frances-b1-lectura-10",
+    "episode": 1,
+    "totalEpisodes": 10,
+    "previousExerciseId": null,
+    "nextExerciseId": "fr-b1-ce-que-l-usine-a-laisse"
+  },
+  "classification": {
+    "genre": "relato retrospectivo",
+    "topic": "un secreto familiar",
+    "intent": "learning",
+    "tags": [
+      "frances b1",
+      "lectura",
+      "plus-que-parfait",
+      "narración"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La carta que nunca envió"
+    },
+    "intro": {
+      "es": "Una carta de disculpa escrita en 1987 y nunca enviada, encontrada al vaciar un despacho. Lectura de francés B1 con el plus-que-parfait."
+    },
+    "mission": {
+      "es": "Reconstruye el orden real de los hechos, que no es el orden en que se cuentan."
+    },
+    "targetText": "Quand mon père est mort, nous avons vidé son bureau en deux jours. Ma sœur voulait tout garder; moi, je voulais en finir. Nous avons trouvé la lettre au fond du troisième tiroir, dans une enveloppe qui n’avait jamais été fermée. Elle était adressée à un certain Antoine Béchard, à Nantes, et elle datait de mars 1987. Mon père l’avait écrite à la main, sans une seule rature, ce qui ne lui ressemblait pas: il avait toujours détesté écrire. Dans cette lettre, il présentait des excuses. Il expliquait qu’il s’était trompé, qu’il avait accusé un collègue sans la moindre preuve, et qu’un homme avait perdu son emploi à cause de lui. Il écrivait qu’il avait attendu trois ans avant de comprendre ce qu’il avait fait, et qu’il comprenait aussi que trois ans, c’était déjà trop tard. Ma sœur a voulu chercher Antoine Béchard. Moi, j’ai dit non. Nous nous sommes disputés dans la cuisine, entourés de cartons, avec exactement la même intensité que lorsque nous avions douze ans. Elle a fini par le retrouver. Il était mort en 2011. Mais il avait eu deux enfants, et l’une des deux, une femme de mon âge, a accepté de nous rencontrer. Nous nous sommes vus dans un café près de la gare. Ma sœur avait apporté la lettre dans une pochette en plastique, comme s’il s’agissait d’un document officiel. La femme l’a lue lentement, deux fois. Puis elle nous a dit une chose que je n’avais pas prévue: son père n’avait jamais parlé de cette histoire. Jamais. Elle ignorait qu’il avait été accusé de quoi que ce soit, et elle ignorait qu’il avait perdu un emploi en 1984. Elle nous a demandé si nous étions vraiment sûrs qu’il s’agissait de lui. Nous sommes rentrés sans réponse. Dans le train du retour, ma sœur a relu la lettre à voix basse, comme si elle cherchait une phrase qu’elle aurait manquée. Elle n’en a trouvé aucune. Depuis, je pense souvent à ces deux hommes qui avaient décidé, chacun de son côté, de ne rien dire. L’un avait écrit et n’avait pas envoyé. L’autre avait vécu quarante ans sans en parler à ses enfants. Ma sœur a gardé la lettre. Elle dit qu’elle l’enverra un jour, à personne en particulier. Je crois que je commence seulement maintenant à comprendre ce qu’elle veut dire.",
+    "wordCount": 388,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Usar el plus-que-parfait para situar un hecho anterior a otro hecho pasado."
+      },
+      {
+        "es": "Separar el orden del relato del orden real de los acontecimientos."
+      },
+      {
+        "es": "Distinguir lo que el texto afirma de lo que solo sugiere."
+      }
+    ],
+    "grammarFocus": [
+      "plus-que-parfait-b1",
+      "passe-compose-vs-imparfait-b1",
+      "imparfait"
+    ],
+    "vocabulary": [
+      {
+        "surface": "tiroir",
+        "lemma": "tiroir",
+        "glosses": {
+          "es": "cajón"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rature",
+        "lemma": "rature",
+        "glosses": {
+          "es": "tachón, palabra tachada"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "preuve",
+        "lemma": "preuve",
+        "glosses": {
+          "es": "prueba"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "emploi",
+        "lemma": "emploi",
+        "glosses": {
+          "es": "empleo, puesto de trabajo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cartons",
+        "lemma": "carton",
+        "glosses": {
+          "es": "cajas de cartón"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pochette",
+        "lemma": "pochette",
+        "glosses": {
+          "es": "funda, sobre de plástico"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ignorait",
+        "lemma": "ignorer",
+        "glosses": {
+          "es": "desconocía, no sabía"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "s’agissait",
+        "lemma": "s’agir",
+        "glosses": {
+          "es": "se trataba"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Vaciar la casa de un fallecido en pocos días es habitual en Francia por los plazos de sucesión y de alquiler, y explica la prisa que el narrador confiesa al principio."
+    },
+    "spanishSpeakerNote": {
+      "es": "El plus-que-parfait («il avait écrit») es el pluscuamperfecto español («había escrito»): marca lo anterior a otro pasado. En un relato como este es la herramienta que permite contar hacia atrás sin perder al lector."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo que desarrolla una idea, cambia de dirección y se cierra; distinguir el hecho de la interpretación; y justificar una inferencia señalando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers",
+      "accord-participe-passe",
+      "cause-consequence",
+      "comparatifs",
+      "conditionnel-present",
+      "connecteurs",
+      "discours-indirect",
+      "dont-relatif",
+      "futur-simple",
+      "gerondif",
+      "imparfait",
+      "negation-avancee",
+      "passe-compose-avoir",
+      "passe-compose-etre",
+      "passe-compose-vs-imparfait",
+      "pronoms-coi",
+      "pronoms-y-en",
+      "si-conditionnel",
+      "subjonctif-present",
+      "superlatifs",
+      "verbes-pronominaux",
+      "accord-participe-passe-b1",
+      "comparatif-superlatif-b1",
+      "conditionnel-present-b1",
+      "connecteurs-logiques-b1",
+      "discours-indirect-b1",
+      "expressions-temporelles-b1",
+      "futur-simple-b1",
+      "gerondif-b1",
+      "hypothese-si-b1",
+      "imperatif-b1",
+      "negation-avancee-b1",
+      "nominalisation-b1",
+      "participe-present-b1",
+      "passe-compose-vs-imparfait-b1",
+      "plus-que-parfait-b1",
+      "pronoms-relatifs-b1",
+      "pronoms-y-en-b1",
+      "questions-indirectes-b1",
+      "subjonctif-present-b1",
+      "voix-passive-b1"
+    ],
+    "disallowedGrammar": [
+      "passé simple",
+      "subjonctif imparfait",
+      "passé antérieur"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 12.9,
+      "maxSentenceWords": 25,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Prosa B1 con plus-que-parfait, voz pasiva y subjuntivo. Sin passé simple. Inferencia moderada: exige cruzar dos pasajes separados."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Sobre qué reflexiona el narrador al final del relato?",
+      "options": [
+        {
+          "id": "silencio",
+          "text": "Sobre dos hombres que, cada uno por su lado, eligieron callar"
+        },
+        {
+          "id": "herencia",
+          "text": "Sobre el reparto de la herencia entre él y su hermana"
+        },
+        {
+          "id": "justicia",
+          "text": "Sobre cómo reparar legalmente el despido injusto de 1984"
+        }
+      ],
+      "answer": "silencio",
+      "evidence": "je pense souvent à ces deux hommes qui avaient décidé, chacun de son côté, de ne rien dire",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El paralelo es exacto: uno escribió sin enviar, el otro vivió cuarenta años sin contarlo."
+        },
+        "incorrect": {
+          "es": "No hay herencia ni proceso legal en el texto. Lee el penúltimo párrafo, el que empieza con «Depuis»."
+        },
+        "strategy": {
+          "es": "En un relato en primera persona, la reflexión final suele estar introducida por un marcador temporal como «depuis». Búscalo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿En qué año perdió el empleo Antoine Béchard?",
+      "options": [
+        {
+          "id": "1984",
+          "text": "En 1984"
+        },
+        {
+          "id": "1987",
+          "text": "En 1987"
+        },
+        {
+          "id": "2011",
+          "text": "En 2011"
+        }
+      ],
+      "answer": "1984",
+      "evidence": "elle ignorait qu’il avait perdu un emploi en 1984",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. 1987 es la fecha de la carta y 2011, la de su muerte. Los tres años que el padre dice haber esperado cuadran."
+        },
+        "incorrect": {
+          "es": "El texto da tres fechas y cada una corresponde a un hecho distinto. Busca la que va con «perdu un emploi»."
+        },
+        "strategy": {
+          "es": "Con varias fechas en juego, empareja cada una con su verbo. Aquí además las fechas se confirman entre sí."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "La carta estaba escrita «sans une seule rature». ¿Qué significa «rature»?",
+      "options": [
+        {
+          "id": "tachon",
+          "text": "Una palabra tachada o corregida"
+        },
+        {
+          "id": "firma",
+          "text": "Una firma al pie"
+        },
+        {
+          "id": "mancha",
+          "text": "Una mancha de tinta"
+        }
+      ],
+      "answer": "tachon",
+      "evidence": "Mon père l’avait écrite à la main, sans une seule rature, ce qui ne lui ressemblait pas: il avait toujours détesté écrire.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Y el detalle importa: escribir a mano sin corregir nada supone haberla pensado mucho antes."
+        },
+        "incorrect": {
+          "es": "Fíjate en por qué el narrador lo encuentra raro: su padre odiaba escribir. ¿Qué haría alguien así al redactar a mano?"
+        },
+        "strategy": {
+          "es": "Cuando un detalle va seguido de «ce qui ne lui ressemblait pas», el texto te está diciendo que ese detalle significa algo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué la hija de Béchard les pregunta si están seguros de que se trata de su padre?",
+      "options": [
+        {
+          "id": "desconocia",
+          "text": "Porque nunca oyó hablar de esa acusación ni de ese despido"
+        },
+        {
+          "id": "nombre",
+          "text": "Porque su padre se llamaba en realidad de otra manera"
+        },
+        {
+          "id": "dinero",
+          "text": "Porque sospecha que buscan una indemnización"
+        }
+      ],
+      "answer": "desconocia",
+      "evidence": "son père n’avait jamais parlé de cette histoire. Jamais … elle ignorait qu’il avait perdu un emploi en 1984.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Para ella el relato no encaja con el padre que conoció, y su duda es sincera, no defensiva."
+        },
+        "incorrect": {
+          "es": "El nombre coincide y nadie pide dinero. La razón está en lo que ella acaba de contarles sobre el silencio de su padre."
+        },
+        "strategy": {
+          "es": "Una pregunta de un personaje suele nacer de lo que acaba de decir. Lee las dos frases anteriores antes de interpretarla."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el sobre que contenía la carta estaba cerrado y sellado desde 1987.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "dans une enveloppe qui n’avait jamais été fermée",
+      "feedback": {
+        "correct": {
+          "es": "Falso: el sobre nunca llegó a cerrarse. Es el primer indicio de que la carta jamás iba a salir de ese cajón."
+        },
+        "incorrect": {
+          "es": "La primera descripción del hallazgo dice algo sobre el sobre. Fíjate en la negación «n’avait jamais été fermée»."
+        },
+        "strategy": {
+          "es": "Los detalles físicos al principio de un relato suelen anticipar el desenlace. No los leas como decorado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena los hechos según ocurrieron en la realidad, no según los cuenta el texto.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Béchard es acusado sin pruebas y pierde su empleo"
+        },
+        {
+          "id": "p2",
+          "text": "El padre escribe la carta de disculpa y no la envía"
+        },
+        {
+          "id": "p3",
+          "text": "Béchard muere sin haber contado nunca la historia"
+        },
+        {
+          "id": "p4",
+          "text": "Los hermanos encuentran la carta al vaciar el despacho"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "un emploi en 1984 … elle datait de mars 1987 … Il était mort en 2011",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y las fechas lo confirman: 1984, 1987, 2011 y el presente del relato."
+        },
+        "incorrect": {
+          "es": "El relato empieza por el final. Ordénalo con las fechas que da: 1984, 1987 y 2011."
+        },
+        "strategy": {
+          "es": "Cuando un texto usa mucho plus-que-parfait, el orden del relato no es el de los hechos. Reconstrúyelo con las fechas."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en francés contando algo que descubriste tarde sobre alguien de tu familia. Usa el plus-que-parfait al menos cuatro veces."
+    },
+    "minWords": 70,
+    "maxWords": 130,
+    "hints": [
+      "Quand… nous avons trouvé…",
+      "Il / Elle l’avait écrit(e)…",
+      "Je n’avais pas prévu que…",
+      "Depuis, je pense souvent à…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés B1: La carta que nunca envió | WeLearn"
+    },
+    "description": {
+      "es": "Lee un relato en francés B1 y practica el plus-que-parfait y su contraste con el passé composé y el imparfait. Con vocabulario y seis preguntas."
+    },
+    "canonicalPath": "/practica/frances/b1/lectura/la-lettre-jamais-envoyee",
+    "indexable": false,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-b1-ce-que-l-usine-a-laisse"
+    ]
+  }
+}
