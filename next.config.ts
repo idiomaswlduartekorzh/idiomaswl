@@ -121,6 +121,10 @@ const nextConfig: NextConfig = {
 
   // Route handlers read these standalone class assets at runtime on Vercel.
   outputFileTracingIncludes: {
+    // El diccionario de pronunciación inglesa (3,45 MB) lo lee la ruta con `fs`, así que
+    // tiene que viajar dentro de la función. Sin esta línea funciona en local —donde el
+    // repositorio entero está en disco— y devuelve 500 en producción.
+    '/api/fonetica': ['src/data/fonetica/en-cmudict.txt'],
     '/clase-claude': ['src/content/clase-claude/publico.html'],
     '/dashboard/admin/clase-claude': [
       'src/content/clase-claude/instructor.html',

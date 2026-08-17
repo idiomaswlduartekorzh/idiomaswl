@@ -625,6 +625,7 @@ export default function ClasesDeInglesPage() {
           { href: '/examenes/ielts', title: 'Simulacros IELTS', desc: 'Listening, Reading y Writing con formato real e informe de desempeño por sección.' },
           { href: '/examenes/toefl', title: 'Simulacros TOEFL', desc: 'Reading, Listening, Speaking y Writing al estilo del iBT, con retroalimentación.' },
           { href: '/examenes/icfes', title: 'Simulacro ICFES', desc: 'La sección de inglés del Saber 11, con el nivel estimado según la escala del examen.' },
+          { href: '/herramientas/transcripcion-fonetica/ingles', title: 'Transcripción fonética', desc: 'Pega cualquier texto y léelo en alfabeto fonético, en británico o americano, con el acento tónico donde va.' },
           { href: '/nivel-radar', title: 'Descubre tu nivel real', desc: 'Si no sabes por dónde empezar, el diagnóstico te ubica en el MCER antes de la primera clase.' },
         ]}
       />

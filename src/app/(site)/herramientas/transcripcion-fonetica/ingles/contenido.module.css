@@ -1,0 +1,56 @@
+/* Prosa y preguntas frecuentes de la página de inglés.
+   Lo demás —el transcriptor entero— vive en src/components/fonetica/, que es
+   compartido por todos los idiomas. */
+
+/* ── Texto explicativo ───────────────────────────────────────────────────── */
+
+.prose {
+  max-width: 46rem;
+  color: var(--wl-text);
+  line-height: 1.75;
+}
+
+.prose p { margin: 0 0 1rem; }
+.prose h3 { margin: 1.75rem 0 0.6rem; font-size: 1.15rem; }
+
+.prose code {
+  font-family: var(--mono, ui-monospace, monospace);
+  background: var(--wl-surface-raised);
+  border-radius: var(--wlp-r-sm);
+  padding: 0.1em 0.35em;
+}
+
+/* ── Preguntas frecuentes ────────────────────────────────────────────────── */
+
+.faq {
+  max-width: 46rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.faq details {
+  border: 1px solid var(--wl-border);
+  border-radius: var(--wlp-r);
+  background: var(--wl-surface);
+  padding: 0.9rem 1.1rem;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 650;
+  color: var(--wl-text);
+  line-height: 1.5;
+}
+
+.faq details[open] summary {
+  margin-bottom: 0.6rem;
+  color: var(--wlp-accent);
+}
+
+.faq p {
+  margin: 0;
+  color: var(--wl-text-soft);
+  line-height: 1.7;
+}
+

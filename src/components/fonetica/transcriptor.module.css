@@ -1,0 +1,515 @@
+/* Transcriptor fonético.
+   Todo el color se pide prestado a los tokens del sitio (--wl-*) y al acento de la
+   página (--wlp-accent), así que el modo oscuro sale solo. Ni un hex suelto: ver la
+   regla 1 de src/styles/practica-ui.css. */
+
+.input {
+  width: 100%;
+  min-height: 9rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--wl-border);
+  border-radius: var(--wlp-r);
+  background: var(--wl-surface);
+  color: var(--wl-text);
+  font-family: inherit;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  resize: vertical;
+}
+
+.input::placeholder {
+  color: var(--wl-text-soft);
+}
+
+.input:focus-visible {
+  outline: 2px solid var(--wlp-accent);
+  outline-offset: 1px;
+  border-color: var(--wlp-accent);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.9rem;
+}
+
+.hint {
+  font-size: 0.85rem;
+  color: var(--wl-text-soft);
+  margin-left: auto;
+}
+
+/* ── Controles del resultado ─────────────────────────────────────────────── */
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2rem;
+  align-items: flex-start;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--wl-border);
+}
+
+.group {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+.legend {
+  padding: 0;
+  font-family: var(--mono, ui-monospace, monospace);
+  font-size: 0.72rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--wl-text-soft);
+  margin-bottom: 0.5rem;
+}
+
+.toggle {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  max-width: 24rem;
+  cursor: pointer;
+  font-size: 0.92rem;
+  color: var(--wl-text);
+}
+
+.toggle input {
+  margin-top: 0.25rem;
+  accent-color: var(--wlp-accent);
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.toggle small {
+  display: block;
+  color: var(--wl-text-soft);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  margin-top: 0.15rem;
+}
+
+/* ── Salida ──────────────────────────────────────────────────────────────── */
+
+/* Sin `overflow`, y es deliberado.
+   Llevaba `overflow-x: auto`, pero por especificación CSS basta con que un eje deje de
+   ser `visible` para que el otro pase a `auto`. Eso recortaba el desplegable de variantes
+   —la función diferencial de la herramienta— justo en la última línea del resultado, que
+   es donde más se usa. El texto ya envuelve solo; para una palabra larguísima está
+   `overflow-wrap` en `.ipa`. */
+.output {
+  border: 1px solid var(--wl-border);
+  border-radius: var(--wlp-r);
+  background: var(--wl-surface-raised);
+  padding: 1.25rem 1.4rem;
+}
+
+/* El botón primario del sistema pinta el acento de fondo con `--wl-on-inverse` encima.
+   En oscuro el acento de habla es un ámbar claro (#f2b65a) y esa tinta es casi blanca:
+   1,6:1 de contraste, el botón principal ilegible. Aquí se le da tinta oscura, que es lo
+   que piden los seis acentos oscuros del sistema. Corregirlo en `practica-ui.css` sería
+   lo correcto, pero esa hoja la está tocando otra sesión. */
+:root[data-theme='dark'] .actions :global(.wlp-btn:not(.wlp-btn--secondary)) {
+  color: #0b0f17;
+}
+
+.ipa {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 2.1;
+  color: var(--wl-text);
+  overflow-wrap: anywhere;
+  /* El AFI necesita una fuente que traiga los símbolos; si no, el navegador
+     los sustituye de cualquier familia y la línea baila. */
+  font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Lucida Grande', 'Segoe UI', serif;
+}
+
+.lineBlock {
+  display: inline;
+}
+
+.original {
+  margin: 0;
+  color: var(--wl-text-soft);
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.sideBySide {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sideRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.sideRow + .sideRow {
+  border-top: 1px solid var(--wl-border);
+  padding-top: 1rem;
+}
+
+@media (max-width: 720px) {
+  .sideRow { grid-template-columns: 1fr; gap: 0.35rem; }
+}
+
+.stacked {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.stackedRow + .stackedRow {
+  border-top: 1px solid var(--wl-border);
+  padding-top: 1.1rem;
+}
+
+/* ── Palabras ────────────────────────────────────────────────────────────── */
+
+.word {
+  white-space: nowrap;
+}
+
+/* Forma débil: en cursiva, como la marcan los manuales de fonética. */
+.weak {
+  font-style: italic;
+  color: var(--wl-text-soft);
+}
+
+/* Deducida de su raíz: subrayado discreto, pero visible.
+   Llevaba `--wl-border`, que es color de filete estructural, no de tinta: daba 1,2:1 de
+   contraste y no se veía en ninguno de los dos modos. La leyenda decía que se distinguía
+   y no era verdad, justo sobre el dato que dice si fiarse de esa transcripción. */
+.derived {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--wl-text-soft);
+  text-underline-offset: 0.25em;
+}
+
+/* Fuera del diccionario. Se deja la palabra original, marcada. */
+.unknown {
+  color: var(--wlp-alert);
+  background: color-mix(in srgb, var(--wlp-alert) 10%, var(--wl-surface));
+  border-radius: var(--wlp-r-sm);
+  padding: 0 0.25em;
+  white-space: nowrap;
+}
+
+/* Con más de una pronunciación: pulsable. */
+.choiceWrap {
+  position: relative;
+  display: inline-block;
+}
+
+.choice {
+  display: inline-block;
+  border: 0;
+  /* El área táctil mínima de WCAG 2.2 son 24 px; en línea se quedaba en la altura de la
+     fuente, unos 20. */
+  padding: 0.15em 0.3em;
+  background: color-mix(in srgb, var(--wlp-accent) 10%, transparent);
+  border-radius: var(--wlp-r-sm);
+  /* Mezclado con la tinta: el acento puro sobre su propio tinte se quedaba en 4,25:1,
+     por debajo del mínimo para texto de este tamaño. */
+  color: color-mix(in srgb, var(--wlp-accent) 85%, var(--wl-text));
+  font: inherit;
+  cursor: pointer;
+  border-bottom: 1px dashed var(--wlp-accent);
+}
+
+.choice:hover,
+.choice:focus-visible {
+  background: color-mix(in srgb, var(--wlp-accent) 22%, transparent);
+}
+
+.menu {
+  position: absolute;
+  top: calc(100% + 0.35rem);
+  left: 0;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  min-width: 9rem;
+  /* Sin tope, una palabra cerca del borde derecho abría el menú fuera de la pantalla en
+     un móvil de 360 px. */
+  max-width: min(14rem, calc(100vw - 2rem));
+  padding: 0.35rem;
+  border: 1px solid var(--wl-border);
+  border-radius: var(--wlp-r);
+  /* `--wl-surface` es MÁS oscuro que el panel en modo oscuro, así que el desplegable
+     parecía hundido en vez de elevado. */
+  background: var(--wl-surface-raised);
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--wl-inverse) 22%, transparent);
+}
+
+/* Volteo cuando la palabra está en el tercio derecho: lo pone el componente. */
+.menuRight {
+  left: auto;
+  right: 0;
+}
+
+.menuTitle {
+  padding: 0.25rem 0.5rem 0.4rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--wl-text-soft);
+  border-bottom: 1px solid var(--wl-border);
+  margin-bottom: 0.3rem;
+}
+
+.menuItem,
+.menuItemActive {
+  text-align: left;
+  padding: 0.4rem 0.5rem;
+  border: 0;
+  border-radius: var(--wlp-r-sm);
+  background: transparent;
+  color: var(--wl-text);
+  font: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.menuItem:hover,
+.menuItemActive:hover {
+  background: color-mix(in srgb, var(--wlp-accent) 14%, transparent);
+}
+
+.menuItemActive {
+  background: color-mix(in srgb, var(--wlp-accent) 18%, transparent);
+  color: var(--wlp-accent);
+}
+
+/* ── Pie del resultado ───────────────────────────────────────────────────── */
+
+.resultBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.1rem;
+}
+
+.stats {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--wl-text-soft);
+}
+
+.legendList {
+  list-style: none;
+  margin: 1.25rem 0 0;
+  padding: 0.9rem 0 0;
+  border-top: 1px solid var(--wl-border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.75rem;
+  font-size: 0.86rem;
+  color: var(--wl-text-soft);
+}
+
+.legendList li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Los ejemplos de la leyenda no son pulsables: no deben parecerlo. */
+.swatch {
+  font-size: 0.95rem;
+  cursor: default;
+}
+
+/* ── Texto explicativo ───────────────────────────────────────────────────── */
+
+.prose {
+  max-width: 46rem;
+  color: var(--wl-text);
+  line-height: 1.75;
+}
+
+.prose p { margin: 0 0 1rem; }
+.prose h3 { margin: 1.75rem 0 0.6rem; font-size: 1.15rem; }
+
+.prose code {
+  font-family: var(--mono, ui-monospace, monospace);
+  background: var(--wl-surface-raised);
+  border-radius: var(--wlp-r-sm);
+  padding: 0.1em 0.35em;
+}
+
+/* Texto solo para lectores de pantalla. El atributo `title` no llega ni en táctil ni por
+   teclado, y era la única explicación de por qué una palabra está marcada. */
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Preguntas frecuentes ────────────────────────────────────────────────── */
+
+.faq {
+  max-width: 46rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.faq details {
+  border: 1px solid var(--wl-border);
+  border-radius: var(--wlp-r);
+  background: var(--wl-surface);
+  padding: 0.9rem 1.1rem;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 650;
+  color: var(--wl-text);
+  line-height: 1.5;
+}
+
+.faq details[open] summary {
+  margin-bottom: 0.6rem;
+  color: var(--wlp-accent);
+}
+
+.faq p {
+  margin: 0;
+  color: var(--wl-text-soft);
+  line-height: 1.7;
+}
+
+/* ── Pronunciación en la escritura original ──────────────────────────────── */
+
+/* El coreano enseña tres capas: cómo se escribe, cómo se pronuncia EN HANGUL, y el AFI.
+   La de en medio es media clase de fonética: ver que 학교 se dice 학꾜 explica la regla
+   sin necesidad de nombrarla. */
+.spokenRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.6rem;
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px dashed var(--wl-border);
+  font-size: 1.05rem;
+  color: var(--wl-text);
+}
+
+.spokenPair {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.3rem;
+}
+
+.spokenPair b {
+  font-weight: 650;
+}
+
+.spokenPair span {
+  color: var(--wl-text-soft);
+  font-size: 0.9em;
+}
+
+/* Aviso para un sistema que no dice cómo suena (la romanización). */
+.notPronunciation {
+  margin: 0.75rem 0 0;
+  font-size: 0.86rem;
+  color: var(--wl-text-soft);
+  border-left: 3px solid var(--wlp-accent);
+  padding-left: 0.75rem;
+  line-height: 1.6;
+}
+
+/* ── Leyenda de símbolos ─────────────────────────────────────────────────── */
+
+.symbols {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.symbolCard {
+  border: 1px solid var(--wl-border);
+  border-left: 3px solid var(--wlp-accent);
+  border-radius: var(--wlp-r);
+  background: var(--wl-surface);
+  padding: 0.8rem 0.95rem;
+}
+
+.symbolHead {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.symbolHead b {
+  font-size: 1.1rem;
+  color: var(--wlp-accent);
+  font-family: 'Gentium Plus', 'Charis SIL', 'Lucida Grande', serif;
+}
+
+.symbolHead span {
+  font-size: 0.85rem;
+  color: var(--wl-text-soft);
+}
+
+.symbolCard p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--wl-text);
+}
+
+.symbolError {
+  margin-top: 0.45rem !important;
+  color: var(--wl-text-soft) !important;
+  font-size: 0.85rem !important;
+}
+
+/* Procedencia de los símbolos. Un estudiante que ve `k͈` por primera vez duda con razón de
+   si se lo han inventado: viene del AFI Extendido, y decirlo cuesta una línea y evita la
+   desconfianza sobre todo lo demás. */
+.symbolsIntro {
+  max-width: 46rem;
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--wl-text-soft);
+}
+
+.symbolAlso {
+  margin-top: 0.45rem !important;
+  font-size: 0.82rem !important;
+  color: var(--wl-text-soft) !important;
+}
+
+.symbolSource {
+  margin-top: 0.45rem !important;
+  padding-top: 0.4rem;
+  border-top: 1px dashed var(--wl-border);
+  font-size: 0.78rem !important;
+  color: var(--wl-text-soft) !important;
+}
