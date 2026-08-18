@@ -60,6 +60,19 @@ export const HOME_VOICES: readonly HomeVoice[] = [
     },
   },
   {
+    id: 'andersson-celpe',
+    name: 'Andersson Arias',
+    result: 'Celpe-Bras Avançado',
+    context: 'Portugués · el nivel más alto que otorga el examen',
+    quote:
+      'Excelente academia de idiomas. Los docentes 10/10 y su forma de enseñar muy práctica.',
+    evidence: {
+      image: '/images/home/results/celpe-01.webp',
+      alt: 'Fragmento de un certificado Celpe-Bras que acredita el nivel Avançado',
+      caption: 'Celpe-Bras · nível Avançado · diciembre de 2019',
+    },
+  },
+  {
     id: 'norman-maestria',
     name: 'Norman Gamboa',
     result: 'Admitido a la maestría',
