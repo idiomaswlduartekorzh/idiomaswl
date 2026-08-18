@@ -48,7 +48,7 @@ export default {
   cefr: 'B1',
   displayLabel: 'Italiano B1',
   tutorLocales: ['es'],
-  status: 'approved',
+  status: 'published',
   seriesId: 'italiano-b1-lectura-10',
   allowedGrammar: [...EARLIER, ...B1_GRAMMAR],
   disallowedGrammar: ['passato remoto', 'trapassato remoto', 'infinito sostantivato letterario', 'costruzioni participiali estese'],

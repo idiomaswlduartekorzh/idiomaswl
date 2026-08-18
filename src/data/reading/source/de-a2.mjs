@@ -37,7 +37,7 @@ export default {
   cefr: 'A2',
   displayLabel: 'Alemán A2',
   tutorLocales: ['es'],
-  status: 'approved',
+  status: 'published',
   seriesId: 'aleman-a2-lectura-10',
   allowedGrammar: [...A1_GRAMMAR, ...A2_GRAMMAR],
   disallowedGrammar: ['Konjunktiv I', 'Plusquamperfekt', 'Partizip I', 'Nominalstil'],

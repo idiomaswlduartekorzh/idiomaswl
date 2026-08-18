@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "ko-a1-jinan-jumal",
-  "status": "approved",
+  "status": "published",
   "language": "ko",
   "variant": "ko-KR",
   "tutorLocales": [
@@ -452,7 +452,7 @@
       "es": "Lee un texto en coreano A1 y practica el pasado en 았어요/었어요 y la conjunción 하고. Con vocabulario romanizado y seis preguntas."
     },
     "canonicalPath": "/practica/coreano/a1/lectura/jinan-jumal",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-17T00:00:00-05:00",
     "relatedExerciseIds": [
       "ko-a1-keopireul-an-masyeoyo",

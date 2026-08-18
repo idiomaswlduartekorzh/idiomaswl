@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "it-b1-il-negozio-che-ha-aperto-troppo-tardi",
-  "status": "approved",
+  "status": "published",
   "language": "it",
   "variant": "it-IT",
   "tutorLocales": [
@@ -465,7 +465,7 @@
       "es": "Lee un artículo de opinión en italiano B1 y practica el periodo ipotetico y los comparativos. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/italiano/b1/lectura/il-negozio-che-ha-aperto-troppo-tardi",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "it-b1-nessuno-ha-applaudito",

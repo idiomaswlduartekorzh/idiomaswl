@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "pt-a1-cento-e-oito-copos",
-  "status": "approved",
+  "status": "published",
   "language": "pt",
   "variant": "pt-BR",
   "tutorLocales": [
@@ -429,7 +429,7 @@
       "es": "Lee un retrato familiar en portugués de Brasil A1 y practica el verbo ter y los adjetivos posesivos. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/portugues/a1/lectura/cento-e-oito-copos",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-17T00:00:00-05:00",
     "relatedExerciseIds": [
       "pt-a1-a-praca-atras-do-mercado",

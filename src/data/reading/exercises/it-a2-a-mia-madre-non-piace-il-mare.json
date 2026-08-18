@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "it-a2-a-mia-madre-non-piace-il-mare",
-  "status": "approved",
+  "status": "published",
   "language": "it",
   "variant": "it-IT",
   "tutorLocales": [
@@ -459,7 +459,7 @@
       "es": "Lee un retrato en italiano A2 y practica el verbo piacere y los pronombres relativos. Con vocabulario glosado y seis preguntas de comprensión."
     },
     "canonicalPath": "/practica/italiano/a2/lectura/a-mia-madre-non-piace-il-mare",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "it-a2-mi-sveglio-alle-quattro-e-venti",

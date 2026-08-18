@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "pt-a1-mensagens-sobre-o-sofa",
-  "status": "approved",
+  "status": "published",
   "language": "pt",
   "variant": "pt-BR",
   "tutorLocales": [
@@ -429,7 +429,7 @@
       "es": "Lee una conversación de móvil en portugués de Brasil A1 y practica las contracciones (no, na, do, da, ao) y los adjetivos. Seis preguntas."
     },
     "canonicalPath": "/practica/portugues/a1/lectura/mensagens-sobre-o-sofa",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-17T00:00:00-05:00",
     "relatedExerciseIds": [
       "pt-a1-a-lista-da-mudanca",

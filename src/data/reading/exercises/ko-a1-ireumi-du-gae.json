@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "ko-a1-ireumi-du-gae",
-  "status": "approved",
+  "status": "published",
   "language": "ko",
   "variant": "ko-KR",
   "tutorLocales": [
@@ -452,7 +452,7 @@
       "es": "Lee un texto corto en coreano A1 y practica 이에요/예요 y la lectura de hangul. Con vocabulario romanizado, glosas en español y seis preguntas."
     },
     "canonicalPath": "/practica/coreano/a1/lectura/ireumi-du-gae",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-17T00:00:00-05:00",
     "relatedExerciseIds": [
       "ko-a1-doseogwan-goyangi"

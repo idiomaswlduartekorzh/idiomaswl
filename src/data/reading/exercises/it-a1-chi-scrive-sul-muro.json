@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "it-a1-chi-scrive-sul-muro",
-  "status": "approved",
+  "status": "published",
   "language": "it",
   "variant": "it-IT",
   "tutorLocales": [
@@ -439,7 +439,7 @@
       "es": "Lee un texto corto en italiano A1 y practica el presente de los verbos en -ere e -ire y los artículos. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/italiano/a1/lectura/chi-scrive-sul-muro",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "it-a1-il-portiere-sa-tutto",

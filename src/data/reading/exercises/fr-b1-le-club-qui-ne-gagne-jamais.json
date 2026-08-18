@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "fr-b1-le-club-qui-ne-gagne-jamais",
-  "status": "approved",
+  "status": "published",
   "language": "fr",
   "variant": "fr-FR",
   "tutorLocales": [
@@ -469,7 +469,7 @@
       "es": "Lee una crónica social en francés B1 y practica los pronombres y / en y los conectores lógicos (or, donc, cependant, en effet)."
     },
     "canonicalPath": "/practica/frances/b1/lectura/le-club-qui-ne-gagne-jamais",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-16T00:00:00-05:00",
     "relatedExerciseIds": [
       "fr-b1-deux-fois-le-meme-roman"

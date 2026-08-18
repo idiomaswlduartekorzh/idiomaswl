@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "fr-a1-colocataire-cherche",
-  "status": "approved",
+  "status": "published",
   "language": "fr",
   "variant": "fr-FR",
   "tutorLocales": [
@@ -431,7 +431,7 @@
       "es": "Lee un anuncio de piso compartido en francés A1 y practica las preguntas con est-ce que y el verbo avoir. Con vocabulario glosado y seis preguntas de comprensión."
     },
     "canonicalPath": "/practica/frances/a1/lectura/colocataire-cherche",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-16T00:00:00-05:00",
     "relatedExerciseIds": [
       "fr-a1-la-chambre-de-yasmine",

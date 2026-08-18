@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "ko-a2-jega-han-silsu",
-  "status": "approved",
+  "status": "published",
   "language": "ko",
   "variant": "ko-KR",
   "tutorLocales": [
@@ -472,7 +472,7 @@
       "es": "Lee un relato en coreano A2 y practica los verbos irregulares en pasado y la negación con 지 않다. Con vocabulario romanizado y seis preguntas."
     },
     "canonicalPath": "/practica/coreano/a2/lectura/jega-han-silsu",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-17T00:00:00-05:00",
     "relatedExerciseIds": [
       "ko-a2-yeohaeng-gyehoek"

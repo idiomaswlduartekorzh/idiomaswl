@@ -40,7 +40,7 @@ export default {
   cefr: 'A2',
   displayLabel: 'Italiano A2',
   tutorLocales: ['es'],
-  status: 'approved',
+  status: 'published',
   seriesId: 'italiano-a2-lectura-10',
   allowedGrammar: [...A1_GRAMMAR, ...A2_GRAMMAR],
   disallowedGrammar: ['congiuntivo', 'passato remoto', 'periodo ipotetico irreale', 'forma passiva'],

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "pt-a1-a-praca-atras-do-mercado",
-  "status": "approved",
+  "status": "published",
   "language": "pt",
   "variant": "pt-BR",
   "tutorLocales": [
@@ -429,7 +429,7 @@
       "es": "Lee un texto en portugués de Brasil A1 y practica há, tem y existe, más las preposiciones de lugar. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/portugues/a1/lectura/a-praca-atras-do-mercado",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-17T00:00:00-05:00",
     "relatedExerciseIds": [
       "pt-a1-feira-da-praca",

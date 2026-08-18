@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "fr-a1-le-bus-de-7h12",
-  "status": "approved",
+  "status": "published",
   "language": "fr",
   "variant": "fr-FR",
   "tutorLocales": [
@@ -431,7 +431,7 @@
       "es": "Lee una crónica breve en francés A1 y practica los adverbios de frecuencia (toujours, jamais, souvent, rarement) y los verbos irregulares. Seis preguntas y vocabulario."
     },
     "canonicalPath": "/practica/frances/a1/lectura/le-bus-de-7h12",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-16T00:00:00-05:00",
     "relatedExerciseIds": [
       "fr-a1-la-recette-de-mamie-aicha",

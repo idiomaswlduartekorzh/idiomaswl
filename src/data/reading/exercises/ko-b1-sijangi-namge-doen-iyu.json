@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "ko-b1-sijangi-namge-doen-iyu",
-  "status": "approved",
+  "status": "published",
   "language": "ko",
   "variant": "ko-KR",
   "tutorLocales": [
@@ -483,7 +483,7 @@
       "es": "Lee un reportaje en coreano B1 y practica la pasiva y 게 되다 para lo que acaba ocurriendo. Con vocabulario romanizado y seis preguntas."
     },
     "canonicalPath": "/practica/coreano/b1/lectura/sijangi-namge-doen-iyu",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-17T00:00:00-05:00",
     "relatedExerciseIds": [
       "ko-b1-gyedani-yeoseot-gae",

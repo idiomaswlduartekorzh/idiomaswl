@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "ko-a2-sumureul-baeugo-itsseoyo",
-  "status": "approved",
+  "status": "published",
   "language": "ko",
   "variant": "ko-KR",
   "tutorLocales": [
@@ -463,7 +463,7 @@
       "es": "Lee una crónica en coreano A2 y practica el progresivo 고 있다 y las expresiones de duración con 동안. Con seis preguntas de comprensión."
     },
     "canonicalPath": "/practica/coreano/a2/lectura/sumureul-baeugo-itsseoyo",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-17T00:00:00-05:00",
     "relatedExerciseIds": [
       "ko-a2-jal-anhaneun-kape",

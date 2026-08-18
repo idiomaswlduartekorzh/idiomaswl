@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "de-b1-obwohl-sie-wieder-verloren",
-  "status": "approved",
+  "status": "published",
   "language": "de",
   "variant": "de-DE",
   "tutorLocales": [
@@ -481,7 +481,7 @@
       "es": "Lee un reportaje en alemán B1 y practica las oraciones causales y concesivas (weil, da, obwohl, trotzdem) y las subordinadas. Con seis preguntas."
     },
     "canonicalPath": "/practica/aleman/b1/lectura/obwohl-sie-wieder-verloren",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "de-b1-die-haltestelle-die-es-nicht-gibt",

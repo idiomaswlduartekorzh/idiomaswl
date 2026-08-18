@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "it-b1-quando-avrai-letto-questa-lettera",
-  "status": "approved",
+  "status": "published",
   "language": "it",
   "variant": "it-IT",
   "tutorLocales": [
@@ -465,7 +465,7 @@
       "es": "Lee una carta en italiano B1 y practica el futuro anteriore y el trapassato prossimo. Con vocabulario glosado y seis preguntas de comprensión."
     },
     "canonicalPath": "/practica/italiano/b1/lectura/quando-avrai-letto-questa-lettera",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "it-b1-sei-contro-sei",

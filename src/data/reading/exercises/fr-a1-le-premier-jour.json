@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "fr-a1-le-premier-jour",
-  "status": "approved",
+  "status": "published",
   "language": "fr",
   "variant": "fr-FR",
   "tutorLocales": [
@@ -440,7 +440,7 @@
       "es": "Lee un relato en francés A1 sobre un primer día de trabajo y practica los verbos irregulares en presente y el futur proche. Con vocabulario y seis preguntas."
     },
     "canonicalPath": "/practica/frances/a1/lectura/le-premier-jour",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-16T00:00:00-05:00",
     "relatedExerciseIds": [
       "fr-a1-trop-de-sel"

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "de-a1-was-machst-du-eigentlich",
-  "status": "approved",
+  "status": "published",
   "language": "de",
   "variant": "de-DE",
   "tutorLocales": [
@@ -432,7 +432,7 @@
       "es": "Lee una conversación en alemán A1 y practica el presente regular y las preguntas con W (wo, was, wie, warum). Con seis preguntas de comprensión."
     },
     "canonicalPath": "/practica/aleman/a1/lectura/was-machst-du-eigentlich",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "de-a1-die-waschkueche",

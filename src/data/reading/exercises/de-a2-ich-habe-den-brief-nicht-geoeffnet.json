@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "de-a2-ich-habe-den-brief-nicht-geoeffnet",
-  "status": "approved",
+  "status": "published",
   "language": "de",
   "variant": "de-DE",
   "tutorLocales": [
@@ -461,7 +461,7 @@
       "es": "Lee un relato en alemán A2 y practica el Perfekt con haben y con sein. Con vocabulario glosado y seis preguntas de comprensión."
     },
     "canonicalPath": "/practica/aleman/a2/lectura/ich-habe-den-brief-nicht-geoeffnet",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "de-a2-damals-durfte-man-nicht"

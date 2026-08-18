@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "fr-b1-le-dernier-accordeur",
-  "status": "approved",
+  "status": "published",
   "language": "fr",
   "variant": "fr-FR",
   "tutorLocales": [
@@ -469,7 +469,7 @@
       "es": "Lee un retrato en francés B1 y practica los pronombres relativos (qui, que, dont, ce qui) y el participio presente. Con seis preguntas de comprensión."
     },
     "canonicalPath": "/practica/frances/b1/lectura/le-dernier-accordeur",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-16T00:00:00-05:00",
     "relatedExerciseIds": [
       "fr-b1-si-on-travaillait-moins",

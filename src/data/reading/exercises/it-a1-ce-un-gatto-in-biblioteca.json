@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "it-a1-ce-un-gatto-in-biblioteca",
-  "status": "approved",
+  "status": "published",
   "language": "it",
   "variant": "it-IT",
   "tutorLocales": [
@@ -439,7 +439,7 @@
       "es": "Lee una crónica breve en italiano A1 y practica c'è / ci sono y las preposiciones simples. Con vocabulario glosado y seis preguntas de comprensión."
     },
     "canonicalPath": "/practica/italiano/a1/lectura/ce-un-gatto-in-biblioteca",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "it-a1-non-vado-mai-in-centro",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "fr-a2-la-ville-aura-plus-chaud",
-  "status": "approved",
+  "status": "published",
   "language": "fr",
   "variant": "fr-FR",
   "tutorLocales": [
@@ -450,7 +450,7 @@
       "es": "Lee un artículo divulgativo en francés A2 y practica el futur simple y las frases condicionales con si. Vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/frances/a2/lectura/la-ville-aura-plus-chaud",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-16T00:00:00-05:00",
     "relatedExerciseIds": [
       "fr-a2-les-etes-de-sete",

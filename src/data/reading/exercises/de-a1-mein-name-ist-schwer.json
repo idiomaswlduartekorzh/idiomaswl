@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "de-a1-mein-name-ist-schwer",
-  "status": "approved",
+  "status": "published",
   "language": "de",
   "variant": "de-DE",
   "tutorLocales": [
@@ -441,7 +441,7 @@
       "es": "Lee un texto corto en alemán A1 y practica el verbo sein y los pronombres personales. Con vocabulario glosado y seis preguntas de comprensión."
     },
     "canonicalPath": "/practica/aleman/a1/lectura/mein-name-ist-schwer",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "de-a1-die-waschkueche"

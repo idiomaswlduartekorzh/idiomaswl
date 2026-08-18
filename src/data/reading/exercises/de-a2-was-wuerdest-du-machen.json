@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "de-a2-was-wuerdest-du-machen",
-  "status": "approved",
+  "status": "published",
   "language": "de",
   "variant": "de-DE",
   "tutorLocales": [
@@ -452,7 +452,7 @@
       "es": "Lee una conversación en alemán A2 y practica el Konjunktiv II con würde y el Futur I. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/aleman/a2/lectura/was-wuerdest-du-machen",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "de-a2-auf-dem-tisch-oder-auf-den-tisch",

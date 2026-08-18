@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "pt-a2-a-cozinheira-das-cinco",
-  "status": "approved",
+  "status": "published",
   "language": "pt",
   "variant": "pt-BR",
   "tutorLocales": [
@@ -449,7 +449,7 @@
       "es": "Lee una entrevista en portugués de Brasil A2 y practica el gerundio y las expresiones de tiempo. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/portugues/a2/lectura/a-cozinheira-das-cinco",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "pt-a2-tres-bairros-um-aluguel",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "fr-b1-le-village-en-2040",
-  "status": "approved",
+  "status": "published",
   "language": "fr",
   "variant": "fr-FR",
   "tutorLocales": [
@@ -469,7 +469,7 @@
       "es": "Lee un informe prospectivo en francés B1 y practica el futur simple y las expresiones temporales (d’ici, dans, depuis, à partir de)."
     },
     "canonicalPath": "/practica/frances/b1/lectura/le-village-en-2040",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-16T00:00:00-05:00",
     "relatedExerciseIds": [
       "fr-b1-ce-que-nous-appelons-l-attention",

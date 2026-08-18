@@ -35,7 +35,7 @@ export default {
   cefr: 'A2',
   displayLabel: 'Portugués A2',
   tutorLocales: ['es'],
-  status: 'approved',
+  status: 'published',
   seriesId: 'portugues-a2-lectura-10',
   allowedGrammar: [...A1_GRAMMAR, ...A2_GRAMMAR],
   disallowedGrammar: ['mais-que-perfeito composto', 'futuro do subjuntivo', 'registro literario'],

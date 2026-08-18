@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "de-a2-damals-durfte-man-nicht",
-  "status": "approved",
+  "status": "published",
   "language": "de",
   "variant": "de-DE",
   "tutorLocales": [
@@ -452,7 +452,7 @@
       "es": "Lee una memoria familiar en alemán A2 y practica el Präteritum y los verbos modales en pasado. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/aleman/a2/lectura/damals-durfte-man-nicht",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "de-a2-ich-habe-den-brief-nicht-geoeffnet",

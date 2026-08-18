@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "ko-b1-abeoji-wa-cheonjangyi-mun",
-  "status": "approved",
+  "status": "published",
   "language": "ko",
   "variant": "ko-KR",
   "tutorLocales": [
@@ -483,7 +483,7 @@
       "es": "Lee un diario de cuidados en coreano B1 y practica la causativa 시키다 y el estado con 채. Con vocabulario romanizado y seis preguntas."
     },
     "canonicalPath": "/practica/coreano/b1/lectura/abeoji-wa-cheonjangyi-mun",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-17T00:00:00-05:00",
     "relatedExerciseIds": [
       "ko-b1-jeokhiji-anheun-gyuchik",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "pt-a1-feira-da-praca",
-  "status": "approved",
+  "status": "published",
   "language": "pt",
   "variant": "pt-BR",
   "tutorLocales": [
@@ -429,7 +429,7 @@
       "es": "Lee un cartel en portugués de Brasil A1 y practica el presente de los verbos en -AR y los adverbios de frecuencia. Con seis preguntas."
     },
     "canonicalPath": "/practica/portugues/a1/lectura/feira-da-praca",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-17T00:00:00-05:00",
     "relatedExerciseIds": [
       "pt-a1-eu-nao-estou-bravo",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "fr-a2-l-eau-est-montee-en-vingt-minutes",
-  "status": "approved",
+  "status": "published",
   "language": "fr",
   "variant": "fr-FR",
   "tutorLocales": [
@@ -459,7 +459,7 @@
       "es": "Lee una noticia local en francés A2 y practica la causa y la consecuencia (parce que, donc, à cause de) y la concordancia del participio pasado."
     },
     "canonicalPath": "/practica/frances/a2/lectura/l-eau-est-montee-en-vingt-minutes",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-16T00:00:00-05:00",
     "relatedExerciseIds": [
       "fr-a2-reunion-des-voisins"

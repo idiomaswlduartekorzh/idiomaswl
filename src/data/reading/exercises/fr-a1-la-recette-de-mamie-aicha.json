@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "fr-a1-la-recette-de-mamie-aicha",
-  "status": "approved",
+  "status": "published",
   "language": "fr",
   "variant": "fr-FR",
   "tutorLocales": [
@@ -440,7 +440,7 @@
       "es": "Lee una receta en francés A1 y practica los verbos en -IR (choisir, finir, remplir, réussir) y el imperativo. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/frances/a1/lectura/la-recette-de-mamie-aicha",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-16T00:00:00-05:00",
     "relatedExerciseIds": [
       "fr-a1-colocataire-cherche",

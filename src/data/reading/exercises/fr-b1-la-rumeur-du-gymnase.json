@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "fr-b1-la-rumeur-du-gymnase",
-  "status": "approved",
+  "status": "published",
   "language": "fr",
   "variant": "fr-FR",
   "tutorLocales": [
@@ -478,7 +478,7 @@
       "es": "Lee un reportaje en francés B1 y practica el estilo indirecto y las preguntas indirectas (il a demandé si, elle voulait savoir pourquoi)."
     },
     "canonicalPath": "/practica/frances/b1/lectura/la-rumeur-du-gymnase",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-16T00:00:00-05:00",
     "relatedExerciseIds": [
       "fr-b1-le-dernier-accordeur",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "fr-b1-la-lettre-jamais-envoyee",
-  "status": "approved",
+  "status": "published",
   "language": "fr",
   "variant": "fr-FR",
   "tutorLocales": [
@@ -478,7 +478,7 @@
       "es": "Lee un relato en francés B1 y practica el plus-que-parfait y su contraste con el passé composé y el imparfait. Con vocabulario y seis preguntas."
     },
     "canonicalPath": "/practica/frances/b1/lectura/la-lettre-jamais-envoyee",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-16T00:00:00-05:00",
     "relatedExerciseIds": [
       "fr-b1-ce-que-l-usine-a-laisse"

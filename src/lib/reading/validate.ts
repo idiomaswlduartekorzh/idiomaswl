@@ -23,9 +23,21 @@ export function validateReadingExercise(candidate: unknown): asserts candidate i
   if (!exercise.questions?.length || exercise.questions.length < 3) errors.push('at least three questions are required')
   if (!exercise.review?.copyrightChecked || !exercise.review?.cultureChecked) errors.push('copyright and culture checks must pass')
 
+  // Estas bandas están pensadas para palabras de una lengua europea y no valen para todos los
+  // idiomas: el coreano se mide en eojeol y el japonés en caracteres, así que un A1 japonés de
+  // 200 caracteres las incumpliría siendo correcto. En el esquema 1.1.0 la longitud la
+  // comprueba `scripts/lib/reading-blueprint.mjs`, que sí sabe de qué idioma habla, y lo hace
+  // en prebuild. Aquí solo se validan las lecturas que siguen en 1.0.0.
+  //
+  // Ojo al tocar esto: la misma regla existe en `scripts/lib/reading-content-validator.mjs`.
+  // Son dos copias del mismo validador —una para el guardián y otra para el runtime— y esta
+  // se quedó atrás una vez. Si cambias una, cambia la otra.
   const limits = WORD_LIMITS[exercise.level?.cefr]
   if (!limits) errors.push('CEFR level is invalid')
-  else if (exercise.content.wordCount < limits[0] || exercise.content.wordCount > limits[1]) {
+  else if (
+    exercise.schemaVersion === '1.0.0' &&
+    (exercise.content.wordCount < limits[0] || exercise.content.wordCount > limits[1])
+  ) {
     errors.push(`${exercise.level.cefr} wordCount must be between ${limits[0]} and ${limits[1]}`)
   }
 

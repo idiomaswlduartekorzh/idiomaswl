@@ -28,7 +28,7 @@ export default {
   cefr: 'A1',
   displayLabel: 'Alemán A1',
   tutorLocales: ['es'],
-  status: 'approved',
+  status: 'published',
   seriesId: 'aleman-a1-lectura-10',
   allowedGrammar: A1_GRAMMAR,
   disallowedGrammar: ['Perfekt', 'Präteritum', 'Konjunktiv', 'Passiv', 'Genitiv'],

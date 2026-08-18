@@ -34,7 +34,7 @@ export default {
   cefr: 'A2',
   displayLabel: 'Francés A2',
   tutorLocales: ['es'],
-  status: 'approved',
+  status: 'published',
   seriesId: 'frances-a2-lectura-10',
   allowedGrammar: [...A1_GRAMMAR, ...A2_GRAMMAR],
   disallowedGrammar: ['plus-que-parfait', 'voix passive', 'participe présent', 'futur antérieur'],

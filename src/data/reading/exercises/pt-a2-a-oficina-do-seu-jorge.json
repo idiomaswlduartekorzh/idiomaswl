@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "pt-a2-a-oficina-do-seu-jorge",
-  "status": "approved",
+  "status": "published",
   "language": "pt",
   "variant": "pt-BR",
   "tutorLocales": [
@@ -449,7 +449,7 @@
       "es": "Lee un reportaje en portugués de Brasil A2 y practica los pronombres oblicuos y los relativos. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/portugues/a2/lectura/a-oficina-do-seu-jorge",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "pt-a2-carta-sobre-o-recreio",

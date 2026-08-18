@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "ko-a2-jongi-chaegman-ilgeoyo",
-  "status": "approved",
+  "status": "published",
   "language": "ko",
   "variant": "ko-KR",
   "tutorLocales": [
@@ -463,7 +463,7 @@
       "es": "Lee una columna corta en coreano A2 y practica 기 때문에 (razón) y las partículas 만 y 도. Con vocabulario romanizado y seis preguntas."
     },
     "canonicalPath": "/practica/coreano/a2/lectura/jongi-chaegman-ilgeoyo",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-17T00:00:00-05:00",
     "relatedExerciseIds": [
       "ko-a2-isa-jeonhwa-hu"

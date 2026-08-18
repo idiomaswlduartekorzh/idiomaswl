@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "pt-a2-como-usar-o-onibus",
-  "status": "approved",
+  "status": "published",
   "language": "pt",
   "variant": "pt-BR",
   "tutorLocales": [
@@ -449,7 +449,7 @@
       "es": "Lee una guía práctica en portugués de Brasil A2 y practica la diferencia entre para y por, y las expresiones con fazer. Seis preguntas y vocabulario."
     },
     "canonicalPath": "/practica/portugues/a2/lectura/como-usar-o-onibus",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "pt-a2-a-biblioteca-do-predio",

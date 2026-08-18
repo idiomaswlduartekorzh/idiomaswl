@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "de-a2-ich-habe-mich-verlaufen",
-  "status": "approved",
+  "status": "published",
   "language": "de",
   "variant": "de-DE",
   "tutorLocales": [
@@ -461,7 +461,7 @@
       "es": "Lee una anécdota en alemán A2 y practica los verbos reflexivos y los separables en pasado. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/aleman/a2/lectura/ich-habe-mich-verlaufen",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "de-a2-was-wuerdest-du-machen",

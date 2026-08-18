@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "ko-b1-jeokhiji-anheun-gyuchik",
-  "status": "approved",
+  "status": "published",
   "language": "ko",
   "variant": "ko-KR",
   "tutorLocales": [
@@ -483,7 +483,7 @@
       "es": "Lee una columna en coreano B1 y practica 어야 하다 para la obligación y 수 있다 para la posibilidad. Con vocabulario romanizado y seis preguntas."
     },
     "canonicalPath": "/practica/coreano/b1/lectura/jeokhiji-anheun-gyuchik",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-17T00:00:00-05:00",
     "relatedExerciseIds": [
       "ko-b1-tongyeoksa-ui-hanabeon",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "ko-a2-geseuteuhauseu-gyuchik",
-  "status": "approved",
+  "status": "published",
   "language": "ko",
   "variant": "ko-KR",
   "tutorLocales": [
@@ -463,7 +463,7 @@
       "es": "Lee un reglamento comentado en coreano A2 y practica la obligación con 아야 하다 y la capacidad con ㄹ 수 있다. Seis preguntas y vocabulario."
     },
     "canonicalPath": "/practica/coreano/a2/lectura/geseuteuhauseu-gyuchik",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-17T00:00:00-05:00",
     "relatedExerciseIds": [
       "ko-a2-sumureul-baeugo-itsseoyo",

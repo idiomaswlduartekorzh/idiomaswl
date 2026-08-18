@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "de-a2-das-brot-wird-nachts-gebacken",
-  "status": "approved",
+  "status": "published",
   "language": "de",
   "variant": "de-DE",
   "tutorLocales": [
@@ -452,7 +452,7 @@
       "es": "Lee un reportaje en alemán A2 y practica la pasiva en presente y el participio usado como adjetivo. Con vocabulario y seis preguntas."
     },
     "canonicalPath": "/practica/aleman/a2/lectura/das-brot-wird-nachts-gebacken",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "de-a2-ich-habe-mich-verlaufen",

@@ -49,7 +49,7 @@ export default {
   cefr: 'B1',
   displayLabel: 'Alemán B1',
   tutorLocales: ['es'],
-  status: 'approved',
+  status: 'published',
   seriesId: 'aleman-b1-lectura-10',
   allowedGrammar: [...EARLIER, ...B1_GRAMMAR],
   disallowedGrammar: ['Futur II', 'erweitertes Partizipialattribut', 'Nominalstil amtlich', 'Konjunktiv I seltener Verben'],

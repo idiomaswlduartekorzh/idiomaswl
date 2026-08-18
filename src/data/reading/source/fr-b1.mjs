@@ -44,7 +44,7 @@ export default {
   cefr: 'B1',
   displayLabel: 'Francés B1',
   tutorLocales: ['es'],
-  status: 'approved',
+  status: 'published',
   seriesId: 'frances-b1-lectura-10',
   allowedGrammar: [...EARLIER, ...B1_GRAMMAR],
   disallowedGrammar: ['passé simple', 'subjonctif imparfait', 'passé antérieur'],

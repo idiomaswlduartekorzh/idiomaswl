@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "pt-b1-como-dar-uma-noticia-ruim",
-  "status": "approved",
+  "status": "published",
   "language": "pt",
   "variant": "pt-BR",
   "tutorLocales": [
@@ -469,7 +469,7 @@
       "es": "Lee una guía razonada en portugués de Brasil B1 y practica el subjuntivo presente y el imperativo. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/portugues/b1/lectura/como-dar-uma-noticia-ruim",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "pt-b1-o-melhor-cafe-nao-e-o-mais-caro",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "pt-b1-a-preposicao-que-mudou-o-contrato",
-  "status": "approved",
+  "status": "published",
   "language": "pt",
   "variant": "pt-BR",
   "tutorLocales": [
@@ -469,7 +469,7 @@
       "es": "Lee una crónica profesional en portugués de Brasil B1 y practica la regencia verbal y las preposiciones. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/portugues/b1/lectura/a-preposicao-que-mudou-o-contrato",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "pt-b1-a-rotina-que-eu-nao-escolhi",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "it-a2-ero-arrivato-due-ore-prima",
-  "status": "approved",
+  "status": "published",
   "language": "it",
   "variant": "it-IT",
   "tutorLocales": [
@@ -459,7 +459,7 @@
       "es": "Lee una anécdota en italiano A2 y practica el trapassato prossimo y «da + presente». Con vocabulario glosado y seis preguntas de comprensión."
     },
     "canonicalPath": "/practica/italiano/a2/lectura/ero-arrivato-due-ore-prima",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "it-a2-se-piove-non-si-gioca"

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "fr-a2-reunion-des-voisins",
-  "status": "approved",
+  "status": "published",
   "language": "fr",
   "variant": "fr-FR",
   "tutorLocales": [
@@ -450,7 +450,7 @@
       "es": "Lee un acta de reunión en francés A2 y practica el estilo indirecto y la negación avanzada (ne… plus, ne… personne, ne… aucun)."
     },
     "canonicalPath": "/practica/frances/a2/lectura/reunion-des-voisins",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-16T00:00:00-05:00",
     "relatedExerciseIds": [
       "fr-a2-a-propos-de-la-piste-cyclable",

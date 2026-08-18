@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "pt-b1-o-predio-que-foi-tombado",
-  "status": "approved",
+  "status": "published",
   "language": "pt",
   "variant": "pt-BR",
   "tutorLocales": [
@@ -469,7 +469,7 @@
       "es": "Lee un reportaje en portugués de Brasil B1 y practica la voz pasiva y el participio pasado. Con vocabulario glosado y seis preguntas de comprensión."
     },
     "canonicalPath": "/practica/portugues/b1/lectura/o-predio-que-foi-tombado",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "pt-b1-o-caderno-que-ninguem-tinha-aberto",

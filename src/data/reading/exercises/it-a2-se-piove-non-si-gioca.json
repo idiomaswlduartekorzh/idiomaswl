@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "it-a2-se-piove-non-si-gioca",
-  "status": "approved",
+  "status": "published",
   "language": "it",
   "variant": "it-IT",
   "tutorLocales": [
@@ -459,7 +459,7 @@
       "es": "Lee un reglamento comentado en italiano A2 y practica el periodo ipotetico reale y ci vuole / ci vogliono. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/italiano/a2/lectura/se-piove-non-si-gioca",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "it-a2-a-mia-madre-non-piace-il-mare",

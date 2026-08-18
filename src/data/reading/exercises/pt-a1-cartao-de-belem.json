@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "pt-a1-cartao-de-belem",
-  "status": "approved",
+  "status": "published",
   "language": "pt",
   "variant": "pt-BR",
   "tutorLocales": [
@@ -438,7 +438,7 @@
       "es": "Lee una postal en portugués de Brasil A1 y practica el futuro con ir y los verbos irregulares. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/portugues/a1/lectura/cartao-de-belem",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-17T00:00:00-05:00",
     "relatedExerciseIds": [
       "pt-a1-o-que-voce-vende-mais"

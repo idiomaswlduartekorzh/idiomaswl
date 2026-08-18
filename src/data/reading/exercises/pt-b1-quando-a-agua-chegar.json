@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "pt-b1-quando-a-agua-chegar",
-  "status": "approved",
+  "status": "published",
   "language": "pt",
   "variant": "pt-BR",
   "tutorLocales": [
@@ -469,7 +469,7 @@
       "es": "Lee un informe prospectivo en portugués de Brasil B1 y practica el futuro do subjuntivo y el futuro do presente. Con vocabulario y seis preguntas."
     },
     "canonicalPath": "/practica/portugues/b1/lectura/quando-a-agua-chegar",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "pt-b1-o-que-a-testemunha-disse",

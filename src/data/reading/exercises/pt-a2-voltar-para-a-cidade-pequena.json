@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "pt-a2-voltar-para-a-cidade-pequena",
-  "status": "approved",
+  "status": "published",
   "language": "pt",
   "variant": "pt-BR",
   "tutorLocales": [
@@ -449,7 +449,7 @@
       "es": "Lee una crónica en portugués de Brasil A2 y practica el verbo ficar en sus varios sentidos y la diferencia ser / estar. Seis preguntas y vocabulario."
     },
     "canonicalPath": "/practica/portugues/a2/lectura/voltar-para-a-cidade-pequena",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "pt-a2-a-oficina-do-seu-jorge",

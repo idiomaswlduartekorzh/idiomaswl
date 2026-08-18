@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "pt-a1-o-jogo-da-rua-quinze",
-  "status": "approved",
+  "status": "published",
   "language": "pt",
   "variant": "pt-BR",
   "tutorLocales": [
@@ -429,7 +429,7 @@
       "es": "Lee una crónica de barrio en portugués de Brasil A1 y practica estar + gerundio y los verbos irregulares. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/portugues/a1/lectura/o-jogo-da-rua-quinze",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-17T00:00:00-05:00",
     "relatedExerciseIds": [
       "pt-a1-eu-nao-vendo-nada",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "ko-a1-sijang-eseo",
-  "status": "approved",
+  "status": "published",
   "language": "ko",
   "variant": "ko-KR",
   "tutorLocales": [
@@ -443,7 +443,7 @@
       "es": "Lee un texto en coreano A1 y practica los números nativos con sus contadores (개, 마리, 모) y la partícula de lugar 에서."
     },
     "canonicalPath": "/practica/coreano/a1/lectura/sijang-eseo",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-17T00:00:00-05:00",
     "relatedExerciseIds": [
       "ko-a1-beoseu-siganpyo",

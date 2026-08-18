@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "de-b1-sie-hat-nie-fahren-wollen",
-  "status": "approved",
+  "status": "published",
   "language": "de",
   "variant": "de-DE",
   "tutorLocales": [
@@ -481,7 +481,7 @@
       "es": "Lee un relato familiar en alemán B1 y practica los verbos modales en pasado y el Perfekt con haben y sein. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/aleman/b1/lectura/sie-hat-nie-fahren-wollen",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "de-b1-die-tuer-des-schrankes",

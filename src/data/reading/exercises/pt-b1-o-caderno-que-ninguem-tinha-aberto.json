@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "pt-b1-o-caderno-que-ninguem-tinha-aberto",
-  "status": "approved",
+  "status": "published",
   "language": "pt",
   "variant": "pt-BR",
   "tutorLocales": [
@@ -469,7 +469,7 @@
       "es": "Lee un relato en portugués de Brasil B1 y practica los tiempos compuestos y el contraste entre perfeito e imperfeito. Con vocabulario y seis preguntas."
     },
     "canonicalPath": "/practica/portugues/b1/lectura/o-caderno-que-ninguem-tinha-aberto",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "pt-b1-o-predio-que-foi-tombado"

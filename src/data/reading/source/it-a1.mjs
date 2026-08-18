@@ -32,7 +32,7 @@ export default {
   cefr: 'A1',
   displayLabel: 'Italiano A1',
   tutorLocales: ['es'],
-  status: 'approved',
+  status: 'published',
   seriesId: 'italiano-a1-lectura-10',
   allowedGrammar: A1_GRAMMAR,
   disallowedGrammar: ['passato prossimo', 'imperfetto', 'congiuntivo', 'condizionale', 'voce passiva'],

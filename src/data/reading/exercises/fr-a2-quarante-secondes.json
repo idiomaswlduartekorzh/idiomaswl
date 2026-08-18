@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "fr-a2-quarante-secondes",
-  "status": "approved",
+  "status": "published",
   "language": "fr",
   "variant": "fr-FR",
   "tutorLocales": [
@@ -459,7 +459,7 @@
       "es": "Lee una crónica de viaje en francés A2 y practica el passé composé con avoir y con être. Vocabulario glosado y seis preguntas de comprensión."
     },
     "canonicalPath": "/practica/frances/a2/lectura/quarante-secondes",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-16T00:00:00-05:00",
     "relatedExerciseIds": [
       "fr-a2-les-etes-de-sete"

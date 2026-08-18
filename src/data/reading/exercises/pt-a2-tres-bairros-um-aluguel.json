@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "pt-a2-tres-bairros-um-aluguel",
-  "status": "approved",
+  "status": "published",
   "language": "pt",
   "variant": "pt-BR",
   "tutorLocales": [
@@ -449,7 +449,7 @@
       "es": "Lee una comparativa en portugués de Brasil A2 y practica los comparativos, los superlativos y los diminutivos. Con vocabulario y seis preguntas."
     },
     "canonicalPath": "/practica/portugues/a2/lectura/tres-bairros-um-aluguel",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "pt-a2-voltar-para-a-cidade-pequena",

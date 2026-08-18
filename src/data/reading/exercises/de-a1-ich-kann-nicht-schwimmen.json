@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "de-a1-ich-kann-nicht-schwimmen",
-  "status": "approved",
+  "status": "published",
   "language": "de",
   "variant": "de-DE",
   "tutorLocales": [
@@ -432,7 +432,7 @@
       "es": "Lee un texto en alemán A1 y practica los verbos modales (können, müssen, wollen) y la negación con nicht y kein. Con seis preguntas."
     },
     "canonicalPath": "/practica/aleman/a1/lectura/ich-kann-nicht-schwimmen",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "de-a1-der-weg-zur-arbeit",

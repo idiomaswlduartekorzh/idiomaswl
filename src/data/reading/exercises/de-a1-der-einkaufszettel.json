@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "de-a1-der-einkaufszettel",
-  "status": "approved",
+  "status": "published",
   "language": "de",
   "variant": "de-DE",
   "tutorLocales": [
@@ -432,7 +432,7 @@
       "es": "Lee una lista comentada en alemán A1 y practica el acusativo y el plural de los sustantivos. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/aleman/a1/lectura/der-einkaufszettel",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "de-a1-was-machst-du-eigentlich",

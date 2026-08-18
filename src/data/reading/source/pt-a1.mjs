@@ -28,7 +28,7 @@ export default {
   cefr: 'A1',
   displayLabel: 'Portugués A1',
   tutorLocales: ['es'],
-  status: 'approved',
+  status: 'published',
   seriesId: 'portugues-a1-lectura-10',
   allowedGrammar: A1_GRAMMAR,
   disallowedGrammar: ['pretérito perfeito', 'imperfeito', 'subjuntivo', 'voz passiva'],

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "de-a1-der-zug-faehrt-ab",
-  "status": "approved",
+  "status": "published",
   "language": "de",
   "variant": "de-DE",
   "tutorLocales": [
@@ -432,7 +432,7 @@
       "es": "Lee una crónica en alemán A1 y practica los verbos separables (abfahren, ankommen, einsteigen) y el presente irregular. Con seis preguntas."
     },
     "canonicalPath": "/practica/aleman/a1/lectura/der-zug-faehrt-ab",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "de-a1-ich-kann-nicht-schwimmen",

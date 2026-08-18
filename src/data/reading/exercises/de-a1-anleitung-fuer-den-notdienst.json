@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "de-a1-anleitung-fuer-den-notdienst",
-  "status": "approved",
+  "status": "published",
   "language": "de",
   "variant": "de-DE",
   "tutorLocales": [
@@ -432,7 +432,7 @@
       "es": "Lee unas instrucciones en alemán A1 y practica el imperativo y las preposiciones de tiempo (um, ab, vor, nach). Con seis preguntas."
     },
     "canonicalPath": "/practica/aleman/a1/lectura/anleitung-fuer-den-notdienst",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "de-a1-unser-tisch",

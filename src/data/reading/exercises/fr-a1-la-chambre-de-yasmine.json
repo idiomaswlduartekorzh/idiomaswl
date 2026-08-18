@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "fr-a1-la-chambre-de-yasmine",
-  "status": "approved",
+  "status": "published",
   "language": "fr",
   "variant": "fr-FR",
   "tutorLocales": [
@@ -431,7 +431,7 @@
       "es": "Lee una entrada de diario en francés A1 y practica el verbo être, los adjetivos y el género de los nombres. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/frances/a1/lectura/la-chambre-de-yasmine",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-16T00:00:00-05:00",
     "relatedExerciseIds": [
       "fr-a1-trois-messages-et-un-retard",

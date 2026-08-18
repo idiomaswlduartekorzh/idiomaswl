@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "ko-a1-hago-sipeun-il",
-  "status": "approved",
+  "status": "published",
   "language": "ko",
   "variant": "ko-KR",
   "tutorLocales": [
@@ -443,7 +443,7 @@
       "es": "Lee una carta formal en coreano A1 y practica 고 싶다 (querer) y la forma formal 합니다. Con vocabulario romanizado y seis preguntas."
     },
     "canonicalPath": "/practica/coreano/a1/lectura/hago-sipeun-il",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-17T00:00:00-05:00",
     "relatedExerciseIds": [
       "ko-a1-jilmuni-manheun-ai"

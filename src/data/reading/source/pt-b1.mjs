@@ -41,7 +41,7 @@ export default {
   cefr: 'B1',
   displayLabel: 'Portugués B1',
   tutorLocales: ['es'],
-  status: 'approved',
+  status: 'published',
   seriesId: 'portugues-b1-lectura-10',
   allowedGrammar: [...EARLIER, ...B1_GRAMMAR],
   disallowedGrammar: ['registro literario', 'mesóclise', 'português europeu'],

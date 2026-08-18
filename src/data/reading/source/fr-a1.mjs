@@ -42,7 +42,7 @@ export default {
   cefr: 'A1',
   displayLabel: 'Francés A1',
   tutorLocales: ['es'],
-  status: 'approved',
+  status: 'published',
   seriesId: 'frances-a1-lectura-10',
   allowedGrammar: A1_GRAMMAR,
   disallowedGrammar: ['passé composé', 'imparfait', 'subjonctif', 'conditionnel', 'voix passive'],

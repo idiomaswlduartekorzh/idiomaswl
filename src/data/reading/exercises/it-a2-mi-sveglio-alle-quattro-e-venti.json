@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "it-a2-mi-sveglio-alle-quattro-e-venti",
-  "status": "approved",
+  "status": "published",
   "language": "it",
   "variant": "it-IT",
   "tutorLocales": [
@@ -459,7 +459,7 @@
       "es": "Lee un diario de oficio en italiano A2 y practica los verbos reflexivos y stare per + infinitivo. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/italiano/a2/lectura/mi-sveglio-alle-quattro-e-venti",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "it-a2-il-piu-vecchio-non-e-il-piu-lento",

@@ -31,7 +31,7 @@ export default {
   cefr: 'A1',
   displayLabel: 'Coreano A1',
   tutorLocales: ['es'],
-  status: 'approved',
+  status: 'published',
   seriesId: 'coreano-a1-lectura-10',
   topik: 1,
   mappingDisclaimer: {

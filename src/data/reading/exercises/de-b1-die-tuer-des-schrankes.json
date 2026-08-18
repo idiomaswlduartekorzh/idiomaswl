@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "de-b1-die-tuer-des-schrankes",
-  "status": "approved",
+  "status": "published",
   "language": "de",
   "variant": "de-DE",
   "tutorLocales": [
@@ -481,7 +481,7 @@
       "es": "Lee un relato de oficio en alemán B1 y practica la formación de palabras compuestas y el genitivo. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/aleman/b1/lectura/die-tuer-des-schrankes",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "de-b1-ich-freue-mich-auf-nichts",

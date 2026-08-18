@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "de-b1-der-konjunktiv-der-nachbarn",
-  "status": "approved",
+  "status": "published",
   "language": "de",
   "variant": "de-DE",
   "tutorLocales": [
@@ -481,7 +481,7 @@
       "es": "Lee una crónica en alemán B1 y practica el Konjunktiv y el estilo indirecto. Con vocabulario glosado y seis preguntas de comprensión."
     },
     "canonicalPath": "/practica/aleman/b1/lectura/der-konjunktiv-der-nachbarn",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "de-b1-was-alles-repariert-wurde"

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "ko-b1-ani-rago-malhaneun-yeonseup",
-  "status": "approved",
+  "status": "published",
   "language": "ko",
   "variant": "ko-KR",
   "tutorLocales": [
@@ -483,7 +483,7 @@
       "es": "Lee un ensayo breve en coreano B1 y practica el concesivo 어도 y 수밖에 없다 para la inevitabilidad. Con seis preguntas de comprensión."
     },
     "canonicalPath": "/practica/coreano/b1/lectura/ani-rago-malhaneun-yeonseup",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-17T00:00:00-05:00",
     "relatedExerciseIds": [
       "ko-b1-sijangi-namge-doen-iyu",

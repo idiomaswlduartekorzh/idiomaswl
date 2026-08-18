@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "de-b1-ich-freue-mich-auf-nichts",
-  "status": "approved",
+  "status": "published",
   "language": "de",
   "variant": "de-DE",
   "tutorLocales": [
@@ -481,7 +481,7 @@
       "es": "Lee un diario profesional en alemán B1 y practica los verbos con preposición fija y los reflexivos. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/aleman/b1/lectura/ich-freue-mich-auf-nichts",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "de-b1-der-zug-um-sechs-uhr-zwoelf",

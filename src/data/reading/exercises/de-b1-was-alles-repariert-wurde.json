@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "de-b1-was-alles-repariert-wurde",
-  "status": "approved",
+  "status": "published",
   "language": "de",
   "variant": "de-DE",
   "tutorLocales": [
@@ -481,7 +481,7 @@
       "es": "Lee un reportaje en alemán B1 y practica la voz pasiva y el participio usado como adjetivo. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/aleman/b1/lectura/was-alles-repariert-wurde",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "de-b1-der-konjunktiv-der-nachbarn",

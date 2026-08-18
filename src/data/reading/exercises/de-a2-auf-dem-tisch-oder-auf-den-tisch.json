@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "de-a2-auf-dem-tisch-oder-auf-den-tisch",
-  "status": "approved",
+  "status": "published",
   "language": "de",
   "variant": "de-DE",
   "tutorLocales": [
@@ -452,7 +452,7 @@
       "es": "Lee una escena en alemán A2 y practica las preposiciones mixtas (Wechselpräpositionen) y el dativo. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/aleman/a2/lectura/auf-dem-tisch-oder-auf-den-tisch",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "de-a2-die-frau-die-den-schluessel-hat",

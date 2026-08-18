@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "fr-b1-apprendre-en-se-trompant",
-  "status": "approved",
+  "status": "published",
   "language": "fr",
   "variant": "fr-FR",
   "tutorLocales": [
@@ -469,7 +469,7 @@
       "es": "Lee una guía razonada en francés B1 y practica el gérondif (en faisant) y el imperativo. Con vocabulario glosado y seis preguntas de comprensión."
     },
     "canonicalPath": "/practica/frances/b1/lectura/apprendre-en-se-trompant",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-16T00:00:00-05:00",
     "relatedExerciseIds": [
       "fr-b1-le-village-en-2040",

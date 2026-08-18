@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "ko-a1-keopireul-an-masyeoyo",
-  "status": "approved",
+  "status": "published",
   "language": "ko",
   "variant": "ko-KR",
   "tutorLocales": [
@@ -443,7 +443,7 @@
       "es": "Lee un texto en coreano A1 y practica la negación con 안 y los adverbios de tiempo y frecuencia. Con vocabulario romanizado y seis preguntas."
     },
     "canonicalPath": "/practica/coreano/a1/lectura/keopireul-an-masyeoyo",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-17T00:00:00-05:00",
     "relatedExerciseIds": [
       "ko-a1-sijang-eseo",

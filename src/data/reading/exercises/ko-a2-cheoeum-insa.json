@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "ko-a2-cheoeum-insa",
-  "status": "approved",
+  "status": "published",
   "language": "ko",
   "variant": "ko-KR",
   "tutorLocales": [
@@ -463,7 +463,7 @@
       "es": "Lee una escena familiar en coreano A2 y practica los honoríficos (드리다, 계시다, 께) y las partículas de receptor. Con seis preguntas."
     },
     "canonicalPath": "/practica/coreano/a2/lectura/cheoeum-insa",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-17T00:00:00-05:00",
     "relatedExerciseIds": [
       "ko-a2-gireul-ireobeorimyeon",

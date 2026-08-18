@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "pt-a1-o-que-voce-vende-mais",
-  "status": "approved",
+  "status": "published",
   "language": "pt",
   "variant": "pt-BR",
   "tutorLocales": [
@@ -429,7 +429,7 @@
       "es": "Lee una entrevista breve en portugués de Brasil A1 y practica las palabras interrogativas y los adjetivos. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/portugues/a1/lectura/o-que-voce-vende-mais",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-17T00:00:00-05:00",
     "relatedExerciseIds": [
       "pt-a1-o-jogo-da-rua-quinze",

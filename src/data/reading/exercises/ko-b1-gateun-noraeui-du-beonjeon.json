@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "ko-b1-gateun-noraeui-du-beonjeon",
-  "status": "approved",
+  "status": "published",
   "language": "ko",
   "variant": "ko-KR",
   "tutorLocales": [
@@ -483,7 +483,7 @@
       "es": "Lee una crítica musical en coreano B1 y practica 네요 para la observación y 을수록 para la proporción. Con vocabulario romanizado y seis preguntas."
     },
     "canonicalPath": "/practica/coreano/b1/lectura/gateun-noraeui-du-beonjeon",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-17T00:00:00-05:00",
     "relatedExerciseIds": [
       "ko-b1-doraon-jeolmeuni-deul"

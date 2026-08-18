@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "it-a1-non-vado-mai-in-centro",
-  "status": "approved",
+  "status": "published",
   "language": "it",
   "variant": "it-IT",
   "tutorLocales": [
@@ -439,7 +439,7 @@
       "es": "Lee un testimonio en italiano A1 y practica los verbos irregulares y la negación (non… mai, non… più). Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/italiano/a1/lectura/non-vado-mai-in-centro",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "it-a1-chi-scrive-sul-muro",

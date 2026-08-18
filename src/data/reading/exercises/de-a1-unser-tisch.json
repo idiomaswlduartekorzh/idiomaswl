@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "de-a1-unser-tisch",
-  "status": "approved",
+  "status": "published",
   "language": "de",
   "variant": "de-DE",
   "tutorLocales": [
@@ -432,7 +432,7 @@
       "es": "Lee un retrato de objeto en alemán A1 y practica los posesivos y los pronombres personales en acusativo. Con vocabulario y seis preguntas."
     },
     "canonicalPath": "/practica/aleman/a1/lectura/unser-tisch",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "de-a1-der-zug-faehrt-ab",

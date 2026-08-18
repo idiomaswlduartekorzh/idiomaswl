@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "fr-b1-ce-que-nous-appelons-l-attention",
-  "status": "approved",
+  "status": "published",
   "language": "fr",
   "variant": "fr-FR",
   "tutorLocales": [
@@ -469,7 +469,7 @@
       "es": "Lee una columna de opinión en francés B1 y practica el subjuntivo presente y las negaciones avanzadas. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/frances/b1/lectura/ce-que-nous-appelons-l-attention",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-16T00:00:00-05:00",
     "relatedExerciseIds": [
       "fr-b1-la-rumeur-du-gymnase",

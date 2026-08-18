@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "de-b1-stell-den-stuhl-ans-fenster",
-  "status": "approved",
+  "status": "published",
   "language": "de",
   "variant": "de-DE",
   "tutorLocales": [
@@ -481,7 +481,7 @@
       "es": "Lee una escena de taller en alemán B1 y practica las Wechselpräpositionen (acusativo o dativo) y el imperativo. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/aleman/b1/lectura/stell-den-stuhl-ans-fenster",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "de-b1-sie-hat-nie-fahren-wollen",

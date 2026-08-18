@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "it-b1-la-casa-di-vent-anni",
-  "status": "approved",
+  "status": "published",
   "language": "it",
   "variant": "it-IT",
   "tutorLocales": [
@@ -465,7 +465,7 @@
       "es": "Lee un reportaje familiar en italiano B1 y practica el futuro anteriore y el periodo ipotetico. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/italiano/b1/lectura/la-casa-di-vent-anni",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "it-b1-mi-dica-lei-cosa-devo-fare"

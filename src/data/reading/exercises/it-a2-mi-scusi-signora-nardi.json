@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "it-a2-mi-scusi-signora-nardi",
-  "status": "approved",
+  "status": "published",
   "language": "it",
   "variant": "it-IT",
   "tutorLocales": [
@@ -459,7 +459,7 @@
       "es": "Lee una escena en italiano A2 y practica el condizionale presente y la forma de cortesía con Lei. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/italiano/a2/lectura/mi-scusi-signora-nardi",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "it-a2-il-messaggio-che-non-ho-mandato",

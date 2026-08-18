@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "it-b1-la-farmacia-che-apre-di-notte",
-  "status": "approved",
+  "status": "published",
   "language": "it",
   "variant": "it-IT",
   "tutorLocales": [
@@ -465,7 +465,7 @@
       "es": "Lee un diario de guardia en italiano B1 y practica el congiuntivo presente y el periodo ipotetico. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/italiano/b1/lectura/la-farmacia-che-apre-di-notte",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "it-b1-quando-avrai-letto-questa-lettera",

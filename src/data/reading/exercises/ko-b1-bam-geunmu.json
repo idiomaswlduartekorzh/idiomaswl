@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "ko-b1-bam-geunmu",
-  "status": "approved",
+  "status": "published",
   "language": "ko",
   "variant": "ko-KR",
   "tutorLocales": [
@@ -483,7 +483,7 @@
       "es": "Lee una crónica en coreano B1 y practica 으면서 (simultaneidad) y 자마자 (inmediatez). Con vocabulario romanizado y seis preguntas."
     },
     "canonicalPath": "/practica/coreano/b1/lectura/bam-geunmu",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-17T00:00:00-05:00",
     "relatedExerciseIds": [
       "ko-b1-ani-rago-malhaneun-yeonseup",

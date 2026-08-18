@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "fr-a1-le-chat-du-troisieme-etage",
-  "status": "approved",
+  "status": "published",
   "language": "fr",
   "variant": "fr-FR",
   "tutorLocales": [
@@ -441,7 +441,7 @@
       "es": "Lee un relato corto en francés A1 sobre dos vecinos y un gato con dos casas. Con vocabulario glosado, seis preguntas de comprensión y práctica de la negación ne… pas."
     },
     "canonicalPath": "/practica/frances/a1/lectura/le-chat-du-troisieme-etage",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-16T00:00:00-05:00",
     "relatedExerciseIds": [
       "fr-a1-le-marche-du-samedi"
