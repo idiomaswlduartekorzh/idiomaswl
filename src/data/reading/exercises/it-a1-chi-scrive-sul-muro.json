@@ -1,0 +1,449 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-a1-chi-scrive-sul-muro",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Italiano A1"
+  },
+  "slug": "chi-scrive-sul-muro",
+  "series": {
+    "id": "italiano-a1-lectura-10",
+    "episode": 4,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-a1-il-portiere-sa-tutto",
+    "nextExerciseId": "it-a1-non-vado-mai-in-centro"
+  },
+  "classification": {
+    "genre": "nota de vecinos",
+    "topic": "una hoja pegada en el ascensor",
+    "intent": "learning",
+    "tags": [
+      "italiano a1",
+      "lectura",
+      "presente de -ere e -ire",
+      "artículos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Quién escribe en el ascensor"
+    },
+    "intro": {
+      "es": "Una hoja pegada en el ascensor, nueve frases y ningún nombre. Nadie firma y nadie la quita. Lectura de italiano A1."
+    },
+    "mission": {
+      "es": "Averigua qué hace el narrador con esa hoja cada día."
+    },
+    "targetText": "Nell'ascensore del mio palazzo c'è un foglio. Qualcuno scrive: «Chi mette la spazzatura nel posto sbagliato non rispetta i vicini». Sotto, un'altra persona scrive: «Chi scrive sull'ascensore non rispetta l'ascensore». Sotto ancora: «Io non scrivo, io rispondo». Il foglio è pieno. Adesso ci sono nove frasi e nessun nome. Ogni giorno leggo l'ascensore come un giornale. Il portiere non dice niente. Secondo me anche lui legge e ride. Il problema della spazzatura non finisce, ma le frasi sono divertenti. Oggi qualcuno scrive una frase nuova: «Il vero problema è l'ascensore, non noi». Sotto, con un'altra penna: «Sono d'accordo». Nessuno pulisce il foglio. Io non scrivo niente, ma leggo tutto. E ogni sera, quando apro la porta, vedo se c'è una frase in più.",
+    "wordCount": 123,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Conjugar los verbos en -ere e -ire: scrive, legge, mette, finisce, apro."
+      },
+      {
+        "es": "Elegir el artículo correcto: il, lo, l', un, un', i, le."
+      },
+      {
+        "es": "Reconocer una discusión escrita entre personas que no se identifican."
+      }
+    ],
+    "grammarFocus": [
+      "presente-verbi-ere-ire",
+      "articoli"
+    ],
+    "vocabulary": [
+      {
+        "surface": "ascensore",
+        "lemma": "ascensore",
+        "glosses": {
+          "es": "ascensor"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "foglio",
+        "lemma": "foglio",
+        "glosses": {
+          "es": "hoja de papel"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "spazzatura",
+        "lemma": "spazzatura",
+        "glosses": {
+          "es": "basura"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sbagliato",
+        "lemma": "sbagliato",
+        "glosses": {
+          "es": "equivocado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vicini",
+        "lemma": "vicino",
+        "glosses": {
+          "es": "los vecinos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pieno",
+        "lemma": "pieno",
+        "glosses": {
+          "es": "lleno"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "divertenti",
+        "lemma": "divertente",
+        "glosses": {
+          "es": "graciosas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "penna",
+        "lemma": "penna",
+        "glosses": {
+          "es": "bolígrafo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La nota anónima en el ascensor es un género propio de los bloques italianos: se discute por escrito, en tercera persona y sin firmar, sobre la basura, el ruido y las bicicletas del portal."
+    },
+    "spanishSpeakerNote": {
+      "es": "El artículo italiano cambia con el sonido siguiente: «il foglio» pero «lo stesso», «l'ascensore» pero «un'altra». No es capricho: depende de la letra con la que empieza la palabra."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en italiano sobre la vida cotidiana, distinguir un falso amigo de una palabra transparente, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere"
+    ],
+    "disallowedGrammar": [
+      "passato prossimo",
+      "imperfetto",
+      "congiuntivo",
+      "condizionale",
+      "voce passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 8.2,
+      "maxSentenceWords": 14,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo, imperativo y stare + gerundio. Sin tiempos del pasado ni congiuntivo. Falso amigo glosado en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta el texto?",
+      "options": [
+        {
+          "id": "discusion",
+          "text": "Una discusión anónima por escrito que se ha vuelto entretenimiento del edificio"
+        },
+        {
+          "id": "obras",
+          "text": "Que el ascensor está averiado y nadie lo arregla"
+        },
+        {
+          "id": "multa",
+          "text": "Que el conserje multa a quien tira mal la basura"
+        }
+      ],
+      "answer": "discusion",
+      "evidence": "Adesso ci sono nove frasi e nessun nome … Il problema della spazzatura non finisce, ma le frasi sono divertenti.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El problema no se resuelve, pero la hoja se ha convertido en lectura diaria."
+        },
+        "incorrect": {
+          "es": "No hay avería ni multas. Fíjate en cuántas frases hay y en qué dice de ellas el narrador."
+        },
+        "strategy": {
+          "es": "Si un texto dice que el problema no se resuelve pero algo sí cambia, ese algo es el asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántas frases hay ya en la hoja?",
+      "options": [
+        {
+          "id": "nueve",
+          "text": "Nueve"
+        },
+        {
+          "id": "tres",
+          "text": "Tres"
+        },
+        {
+          "id": "ninguna",
+          "text": "Ninguna, porque el conserje la limpia"
+        }
+      ],
+      "answer": "nueve",
+      "evidence": "Il foglio è pieno. Adesso ci sono nove frasi e nessun nome.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y ninguna lleva nombre."
+        },
+        "incorrect": {
+          "es": "El texto dice expresamente que nadie limpia la hoja. Busca la cifra junto a «frasi»."
+        },
+        "strategy": {
+          "es": "Los datos numéricos suelen ir justo después de una frase corta como «Il foglio è pieno»."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "La primera nota habla de «la spazzatura». ¿Qué es?",
+      "options": [
+        {
+          "id": "basura",
+          "text": "La basura"
+        },
+        {
+          "id": "escoba",
+          "text": "Una escoba"
+        },
+        {
+          "id": "limpieza",
+          "text": "La empresa de limpieza"
+        }
+      ],
+      "answer": "basura",
+      "evidence": "Chi mette la spazzatura nel posto sbagliato non rispetta i vicini.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: alguien la deja en el sitio equivocado y de ahí viene la discusión."
+        },
+        "incorrect": {
+          "es": "La frase habla de algo que se pone en un sitio equivocado, no de una herramienta ni de una empresa."
+        },
+        "strategy": {
+          "es": "Fíjate en el verbo que acompaña: «mettere» pide un objeto que se deja en algún sitio."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el narrador cree que el conserje también lee la hoja?",
+      "options": [
+        {
+          "id": "calla",
+          "text": "Porque no dice nada y tampoco la quita, lo que sugiere que le divierte"
+        },
+        {
+          "id": "escribe",
+          "text": "Porque una de las frases es suya"
+        },
+        {
+          "id": "limpia",
+          "text": "Porque la limpia cada mañana"
+        }
+      ],
+      "answer": "calla",
+      "evidence": "Il portiere non dice niente. Secondo me anche lui legge e ride … Nessuno pulisce il foglio.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el narrador lo marca como opinión suya: «secondo me»."
+        },
+        "incorrect": {
+          "es": "Nadie limpia la hoja y no se dice que él escriba. Une su silencio con el hecho de que la hoja siga ahí."
+        },
+        "strategy": {
+          "es": "La expresión «secondo me» avisa de que lo que viene es una suposición, no un hecho."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el narrador también escribe frases en la hoja del ascensor.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Io non scrivo niente, ma leggo tutto.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: lo dice en la penúltima frase, y marca el contraste con «ma leggo tutto»."
+        },
+        "incorrect": {
+          "es": "Busca la frase donde el narrador habla de sí mismo con «Io non…»."
+        },
+        "strategy": {
+          "es": "Cuando el narrador dice «Io non…», está separándose de lo que hacen los demás."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena las frases de la hoja según el texto.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Quien deja mal la basura no respeta a los vecinos"
+        },
+        {
+          "id": "p2",
+          "text": "Quien escribe en el ascensor no respeta el ascensor"
+        },
+        {
+          "id": "p3",
+          "text": "Yo no escribo, yo contesto"
+        },
+        {
+          "id": "p4",
+          "text": "El verdadero problema es el ascensor, no nosotros"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Qualcuno scrive: «Chi mette la spazzatura…» Sotto, un'altra persona scrive… Sotto ancora… Oggi qualcuno scrive una frase nuova…",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La palabra «sotto» marca el orden en el papel."
+        },
+        "incorrect": {
+          "es": "Guíate por «Sotto», «Sotto ancora» y «Oggi»."
+        },
+        "strategy": {
+          "es": "En un texto que reproduce notas, las palabras de posición («sotto») dan el orden."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en italiano sobre una discusión de vecinos en tu edificio o tu calle. Usa cinco verbos en -ere o -ire y cuatro artículos distintos."
+    },
+    "minWords": 30,
+    "maxWords": 60,
+    "hints": [
+      "Nell'ascensore c'è…",
+      "Qualcuno scrive…",
+      "Io non scrivo niente.",
+      "Ogni giorno leggo…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de italiano y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano A1: quién escribe en el ascensor | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto corto en italiano A1 y practica el presente de los verbos en -ere e -ire y los artículos. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/italiano/a1/lectura/chi-scrive-sul-muro",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-a1-il-portiere-sa-tutto",
+      "it-a1-non-vado-mai-in-centro"
+    ]
+  }
+}

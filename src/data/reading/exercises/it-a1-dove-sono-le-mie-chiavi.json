@@ -1,0 +1,449 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-a1-dove-sono-le-mie-chiavi",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Italiano A1"
+  },
+  "slug": "dove-sono-le-mie-chiavi",
+  "series": {
+    "id": "italiano-a1-lectura-10",
+    "episode": 8,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-a1-il-mercato-del-sabato",
+    "nextExerciseId": "it-a1-guarda-sta-piovendo"
+  },
+  "classification": {
+    "genre": "escena doméstica",
+    "topic": "unas llaves que nunca están en su sitio",
+    "intent": "learning",
+    "tags": [
+      "italiano a1",
+      "lectura",
+      "posesivos",
+      "interrogativos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "¿Dónde están mis llaves?"
+    },
+    "intro": {
+      "es": "Doce sitios distintos, una vez dentro de la nevera, y una hija de nueve años con la solución. Lectura de italiano A1."
+    },
+    "mission": {
+      "es": "Averigua para quién funciona el plato azul de la entrada y para quién no."
+    },
+    "targetText": "Dove sono le mie chiavi? Questa è la domanda di ogni mattina in casa nostra. Mio marito dice: perché non usi sempre lo stesso posto? Io rispondo: quale posto? Lui dice: il tuo posto. Il problema è che io non ho un posto mio. Le sue chiavi sono sempre nella sua tasca. Le mie chiavi sono in dodici posti diversi: nella mia borsa, sul tavolo, nel cappotto, in cucina, una volta nel frigorifero. Nostra figlia ha nove anni e ha una soluzione: un piatto blu all'entrata. Chi entra mette le chiavi nel piatto. Funziona per lei. Funziona per lui. Non funziona per me. Oggi mia figlia mi domanda: mamma, dov'è il tuo cervello? Buona domanda.",
+    "wordCount": 115,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Usar los posesivos con artículo: le mie chiavi, la sua tasca, nostra figlia."
+      },
+      {
+        "es": "Formular preguntas con dove, perché, quale, chi."
+      },
+      {
+        "es": "Leer una escena cómica sin que la broma final necesite explicación."
+      }
+    ],
+    "grammarFocus": [
+      "aggettivi-possessivi",
+      "domande-interrogativi"
+    ],
+    "vocabulary": [
+      {
+        "surface": "chiavi",
+        "lemma": "chiave",
+        "glosses": {
+          "es": "llaves"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tasca",
+        "lemma": "tasca",
+        "glosses": {
+          "es": "bolsillo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "borsa",
+        "lemma": "borsa",
+        "glosses": {
+          "es": "bolso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cappotto",
+        "lemma": "cappotto",
+        "glosses": {
+          "es": "abrigo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "frigorifero",
+        "lemma": "frigorifero",
+        "glosses": {
+          "es": "nevera"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "piatto",
+        "lemma": "piatto",
+        "glosses": {
+          "es": "plato"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cervello",
+        "lemma": "cervello",
+        "glosses": {
+          "es": "cabeza, seso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "domanda",
+        "lemma": "domanda",
+        "glosses": {
+          "es": "pregunta. ¡No es una «demanda»!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El plato o cuenco de la entrada para las llaves es un mueble reconocible en muchas casas italianas, y suele aparecer cuando en la familia hay alguien que las pierde siempre."
+    },
+    "spanishSpeakerNote": {
+      "es": "El posesivo italiano lleva artículo delante: «le mie chiavi», «il tuo posto». La excepción son los parientes en singular: «mio marito», «nostra figlia», sin artículo."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en italiano sobre la vida cotidiana, distinguir un falso amigo de una palabra transparente, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere"
+    ],
+    "disallowedGrammar": [
+      "passato prossimo",
+      "imperfetto",
+      "congiuntivo",
+      "condizionale",
+      "voce passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 7.7,
+      "maxSentenceWords": 21,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo, imperativo y stare + gerundio. Sin tiempos del pasado ni congiuntivo. Falso amigo glosado en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿De qué trata la escena?",
+      "options": [
+        {
+          "id": "sitio",
+          "text": "De que ella no tiene un sitio fijo para las llaves y la solución familiar no le sirve"
+        },
+        {
+          "id": "discusion",
+          "text": "De una discusión grave entre marido y mujer"
+        },
+        {
+          "id": "nevera",
+          "text": "De que las llaves aparecieron dentro de la nevera"
+        }
+      ],
+      "answer": "sitio",
+      "evidence": "Il problema è che io non ho un posto mio … Funziona per lei. Funziona per lui. Non funziona per me.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y las tres frases cortas del final lo dejan claro sin explicarlo."
+        },
+        "incorrect": {
+          "es": "La nevera es un ejemplo de la lista y no hay discusión grave. Busca la frase que empieza por «Il problema è»."
+        },
+        "strategy": {
+          "es": "Tres frases cortas seguidas y paralelas suelen contener la conclusión."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuál es la solución que propone la hija?",
+      "options": [
+        {
+          "id": "plato",
+          "text": "Un plato azul en la entrada donde deja las llaves quien entra"
+        },
+        {
+          "id": "bolsillo",
+          "text": "Llevarlas siempre en el bolsillo"
+        },
+        {
+          "id": "copia",
+          "text": "Hacer una copia de las llaves"
+        }
+      ],
+      "answer": "plato",
+      "evidence": "Nostra figlia ha nove anni e ha una soluzione: un piatto blu all'entrata. Chi entra mette le chiavi nel piatto.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y funciona para dos de los tres miembros de la casa."
+        },
+        "incorrect": {
+          "es": "El bolsillo es lo que hace el marido por su cuenta, y no se habla de copias. Busca lo que propone la hija."
+        },
+        "strategy": {
+          "es": "Cuando el texto anuncia «una soluzione:», lo que viene después de los dos puntos es la respuesta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "La hija le hace una «domanda». ¿Qué significa?",
+      "options": [
+        {
+          "id": "pregunta",
+          "text": "Una pregunta"
+        },
+        {
+          "id": "demanda",
+          "text": "Una demanda judicial"
+        },
+        {
+          "id": "peticion",
+          "text": "Una petición de dinero"
+        }
+      ],
+      "answer": "pregunta",
+      "evidence": "Oggi mia figlia mi domanda: mamma, dov'è il tuo cervello? Buona domanda.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y va seguida de la pregunta misma: «dov'è il tuo cervello?»."
+        },
+        "incorrect": {
+          "es": "Se parece a «demanda» pero no lo es. Fíjate en que después vienen dos puntos y una pregunta."
+        },
+        "strategy": {
+          "es": "Si tras la palabra vienen dos puntos y una frase con signo de interrogación, es una pregunta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué la madre contesta «buona domanda» a su hija?",
+      "options": [
+        {
+          "id": "razon",
+          "text": "Porque le da la razón: ella misma no sabe por qué no lo consigue"
+        },
+        {
+          "id": "enfado",
+          "text": "Porque le molesta que la hija se burle"
+        },
+        {
+          "id": "premio",
+          "text": "Porque quiere premiar la curiosidad de la niña"
+        }
+      ],
+      "answer": "razon",
+      "evidence": "Non funziona per me. Oggi mia figlia mi domanda: mamma, dov'è il tuo cervello? Buona domanda.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y va justo después de admitir que el sistema con ella no funciona."
+        },
+        "incorrect": {
+          "es": "No hay enfado ni intención pedagógica. Une la respuesta con la frase «Non funziona per me»."
+        },
+        "strategy": {
+          "es": "Un remate de dos palabras al final se entiende mirando la frase anterior, no la broma en sí."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el marido guarda siempre sus llaves en el bolsillo.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Le sue chiavi sono sempre nella sua tasca.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y es justo lo contrario de lo que le pasa a ella."
+        },
+        "incorrect": {
+          "es": "Busca la frase con el posesivo «le sue» y el adverbio «sempre»."
+        },
+        "strategy": {
+          "es": "Los posesivos te dicen de quién se habla: «le sue» frente a «le mie»."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la escena.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "La pregunta de cada mañana"
+        },
+        {
+          "id": "p2",
+          "text": "El marido propone usar siempre el mismo sitio"
+        },
+        {
+          "id": "p3",
+          "text": "La lista de los doce sitios donde acaban las llaves"
+        },
+        {
+          "id": "p4",
+          "text": "La hija propone el plato azul"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Dove sono le mie chiavi? … Mio marito dice: perché non usi sempre lo stesso posto? … Le mie chiavi sono in dodici posti diversi … Nostra figlia ha nove anni e ha una soluzione.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: pregunta, reproche, evidencia y solución."
+        },
+        "incorrect": {
+          "es": "Fíjate en quién habla en cada momento: primero ella, luego el marido, luego la hija."
+        },
+        "strategy": {
+          "es": "En una escena con varias voces, ordena por quién habla y en qué momento."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en italiano sobre algo que pierdes siempre en casa. Usa cinco posesivos y cuatro palabras interrogativas distintas."
+    },
+    "minWords": 30,
+    "maxWords": 60,
+    "hints": [
+      "Dove sono le mie…?",
+      "Mio marito dice…",
+      "Le sue chiavi sono sempre…",
+      "Perché non usi lo stesso posto?"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de italiano y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano A1: ¿dónde están mis llaves? | WeLearn"
+    },
+    "description": {
+      "es": "Lee una escena doméstica en italiano A1 y practica los adjetivos posesivos y los interrogativos. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/italiano/a1/lectura/dove-sono-le-mie-chiavi",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-a1-il-mercato-del-sabato",
+      "it-a1-guarda-sta-piovendo"
+    ]
+  }
+}

@@ -1,0 +1,448 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-a1-il-burro-non-e-un-asino",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Italiano A1"
+  },
+  "slug": "il-burro-non-e-un-asino",
+  "series": {
+    "id": "italiano-a1-lectura-10",
+    "episode": 10,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-a1-guarda-sta-piovendo",
+    "nextExerciseId": null
+  },
+  "classification": {
+    "genre": "cuaderno de estudiante",
+    "topic": "un cuaderno de falsos amigos",
+    "intent": "learning",
+    "tags": [
+      "italiano a1",
+      "lectura",
+      "presente de -ere e -ire",
+      "verbo essere"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El burro no es un burro"
+    },
+    "intro": {
+      "es": "Un cuaderno que no es de gramática: es de palabras que parecen españolas y no lo son. Sesenta ya, y la favorita es «imbarazzo». Lectura de italiano A1."
+    },
+    "mission": {
+      "es": "Averigua por qué su profesor dice que ese cuaderno sirve más que el libro."
+    },
+    "targetText": "Studio italiano da otto mesi e ho un quaderno speciale. Non è per la grammatica. È per le parole che sembrano spagnole e non sono spagnole. Sulla prima pagina scrivo: burro. In spagnolo il burro è un animale. In italiano il burro è quello che metti sul pane. Poi: salire. In spagnolo è uscire; in italiano è andare su. Poi: aceto. Non è olio, è quello acido per l'insalata. Poi: negozio. Non è un affare, è il posto dove tu compri le scarpe. La mia parola preferita è imbarazzo. Non è una donna incinta: è quando tu non sai dove mettere gli occhi. Il mio quaderno ha già sessanta parole. Il mio professore dice che questo quaderno è più utile del libro. Sono d'accordo.",
+    "wordCount": 124,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Conjugar los verbos en -ere e -ire: scrivo, metti, compri, sembrano."
+      },
+      {
+        "es": "Usar essere para definir: «il burro è quello che…»."
+      },
+      {
+        "es": "Reconocer un falso amigo y saber por qué es peligroso."
+      }
+    ],
+    "grammarFocus": [
+      "presente-verbi-ere-ire",
+      "verbo-essere"
+    ],
+    "vocabulary": [
+      {
+        "surface": "quaderno",
+        "lemma": "quaderno",
+        "glosses": {
+          "es": "cuaderno"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "burro",
+        "lemma": "burro",
+        "glosses": {
+          "es": "mantequilla. ¡No es el animal!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "aceto",
+        "lemma": "aceto",
+        "glosses": {
+          "es": "vinagre. ¡No es «aceite»!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "olio",
+        "lemma": "olio",
+        "glosses": {
+          "es": "aceite"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "scarpe",
+        "lemma": "scarpa",
+        "glosses": {
+          "es": "zapatos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "imbarazzo",
+        "lemma": "imbarazzo",
+        "glosses": {
+          "es": "apuro, vergüenza. ¡No es «embarazo»!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "incinta",
+        "lemma": "incinta",
+        "glosses": {
+          "es": "embarazada"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "affare",
+        "lemma": "affare",
+        "glosses": {
+          "es": "negocio, trato"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El italiano y el español comparten cerca del ochenta por ciento del vocabulario escrito, y ese parecido es justo lo que produce los errores que se quedan: nadie comprueba una palabra que cree que ya sabe."
+    },
+    "spanishSpeakerNote": {
+      "es": "Aquí tienes cinco de los falsos amigos más caros: burro (mantequilla), salire (subir), aceto (vinagre), negozio (tienda) e imbarazzo (apuro). Apúntalos como hace el narrador: en su propia lista, no entre el vocabulario normal."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en italiano sobre la vida cotidiana, distinguir un falso amigo de una palabra transparente, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere"
+    ],
+    "disallowedGrammar": [
+      "passato prossimo",
+      "imperfetto",
+      "congiuntivo",
+      "condizionale",
+      "voce passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 7.3,
+      "maxSentenceWords": 14,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo, imperativo y stare + gerundio. Sin tiempos del pasado ni congiuntivo. Falso amigo glosado en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Para qué sirve el cuaderno del narrador?",
+      "options": [
+        {
+          "id": "falsos",
+          "text": "Para anotar palabras que parecen españolas y significan otra cosa"
+        },
+        {
+          "id": "gramatica",
+          "text": "Para estudiar la gramática italiana"
+        },
+        {
+          "id": "comida",
+          "text": "Para apuntar recetas italianas"
+        }
+      ],
+      "answer": "falsos",
+      "evidence": "Non è per la grammatica. È per le parole che sembrano spagnole e non sono spagnole.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo dice descartando primero lo que no es."
+        },
+        "incorrect": {
+          "es": "El texto niega expresamente que sea de gramática. Busca la frase que empieza por «È per le parole»."
+        },
+        "strategy": {
+          "es": "Cuando un texto dice primero lo que algo NO es, la definición viene justo después."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué es «aceto» en italiano?",
+      "options": [
+        {
+          "id": "vinagre",
+          "text": "Vinagre"
+        },
+        {
+          "id": "aceite",
+          "text": "Aceite"
+        },
+        {
+          "id": "aceituna",
+          "text": "Aceituna"
+        }
+      ],
+      "answer": "vinagre",
+      "evidence": "Poi: aceto. Non è olio, è quello acido per l'insalata.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el texto lo distingue del aceite en la misma frase."
+        },
+        "incorrect": {
+          "es": "El aceite es «olio», y el texto lo dice expresamente. Fíjate en la palabra «acido»."
+        },
+        "strategy": {
+          "es": "Cuando el texto define por oposición («non è… è…»), lee las dos mitades."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Según el texto, ¿qué es «imbarazzo»?",
+      "options": [
+        {
+          "id": "apuro",
+          "text": "La sensación de no saber dónde mirar"
+        },
+        {
+          "id": "embarazo",
+          "text": "El estado de una mujer que espera un hijo"
+        },
+        {
+          "id": "enfado",
+          "text": "Un enfado fuerte"
+        }
+      ],
+      "answer": "apuro",
+      "evidence": "Non è una donna incinta: è quando tu non sai dove mettere gli occhi.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y el texto descarta expresamente la traducción falsa."
+        },
+        "incorrect": {
+          "es": "El texto niega esa lectura en la misma frase: «Non è una donna incinta»."
+        },
+        "strategy": {
+          "es": "Si el texto se molesta en negar un sentido, es porque es el error que esperaba de ti."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el profesor dice que el cuaderno es más útil que el libro?",
+      "options": [
+        {
+          "id": "errores",
+          "text": "Porque recoge los errores propios del alumno, y el libro no puede saber cuáles son"
+        },
+        {
+          "id": "largo",
+          "text": "Porque el cuaderno tiene más páginas que el libro"
+        },
+        {
+          "id": "barato",
+          "text": "Porque el cuaderno es más barato"
+        }
+      ],
+      "answer": "errores",
+      "evidence": "È per le parole che sembrano spagnole e non sono spagnole … Il mio quaderno ha già sessanta parole. Il mio professore dice che questo quaderno è più utile del libro.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Son sesenta palabras elegidas por él, no por un manual."
+        },
+        "incorrect": {
+          "es": "No se comparan páginas ni precios. Une el contenido del cuaderno con la frase del profesor."
+        },
+        "strategy": {
+          "es": "Para inferir por qué algo es útil, mira qué contiene exactamente según el texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el cuaderno tiene ya sesenta palabras apuntadas.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Il mio quaderno ha già sessanta parole.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y el «già» indica que le parecen muchas para ocho meses."
+        },
+        "incorrect": {
+          "es": "La cifra está en la penúltima parte del texto, junto a la palabra «già»."
+        },
+        "strategy": {
+          "es": "Cuando una pregunta da una cifra, búscala tal cual en el texto: aparece una sola vez."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena las palabras según el orden del cuaderno.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "burro"
+        },
+        {
+          "id": "p2",
+          "text": "salire"
+        },
+        {
+          "id": "p3",
+          "text": "aceto"
+        },
+        {
+          "id": "p4",
+          "text": "negozio"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Sulla prima pagina scrivo: burro … Poi: salire … Poi: aceto … Poi: negozio.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La palabra «poi» va marcando cada entrada nueva."
+        },
+        "incorrect": {
+          "es": "Guíate por «Sulla prima pagina» y por los tres «Poi» siguientes."
+        },
+        "strategy": {
+          "es": "En una lista, la palabra que se repite antes de cada elemento («poi») da el orden."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en italiano definiendo cuatro palabras que te engañaron al principio. Usa essere para definir y cuatro verbos en -ere o -ire."
+    },
+    "minWords": 30,
+    "maxWords": 60,
+    "hints": [
+      "Ho un quaderno speciale.",
+      "In italiano il burro è…",
+      "Non è… è…",
+      "La mia parola preferita è…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de italiano y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano A1: el burro no es un burro | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto en italiano A1 sobre falsos amigos y practica el presente de -ere e -ire y el verbo essere. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/italiano/a1/lectura/il-burro-non-e-un-asino",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-a1-guarda-sta-piovendo"
+    ]
+  }
+}

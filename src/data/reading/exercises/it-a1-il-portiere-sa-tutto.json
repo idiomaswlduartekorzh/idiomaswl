@@ -1,0 +1,449 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-a1-il-portiere-sa-tutto",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Italiano A1"
+  },
+  "slug": "il-portiere-sa-tutto",
+  "series": {
+    "id": "italiano-a1-lectura-10",
+    "episode": 3,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-a1-ho-due-nonne-e-una-ricetta",
+    "nextExerciseId": "it-a1-chi-scrive-sul-muro"
+  },
+  "classification": {
+    "genre": "escena de barrio",
+    "topic": "el conserje del edificio",
+    "intent": "learning",
+    "tags": [
+      "italiano a1",
+      "lectura",
+      "presente de -are",
+      "adverbios de frecuencia"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El conserje lo sabe todo"
+    },
+    "intro": {
+      "es": "Diecinueve años en la misma portería: sabe a qué hora vuelve cada vecino y no lo cuenta nunca. Lectura de italiano A1."
+    },
+    "mission": {
+      "es": "Averigua por qué el narrador acaba dándole la razón a su madre."
+    },
+    "targetText": "Il portiere del mio palazzo si chiama Ciro. Lavora qui da diciannove anni. Ciro non domanda niente, ma sa tutto. Sa che al terzo piano la signora Bruni parla al telefono ogni sera alle nove. Sa che il ragazzo del quinto piano torna sempre tardi il venerdì. Sa che io non cucino mai e ordino spesso la pizza. Non racconta niente a nessuno. Questo è importante: Ciro sa tutto e non parla mai. Una volta al mese pulisce le scale. Due volte all'anno lava le finestre del portone. Ogni mattina alle sette apre la porta e saluta. Io lavoro in un ufficio con quaranta persone e nessuno mi saluta così. Adesso capisco perché mia madre dice sempre che il portiere è la persona più importante del palazzo.",
+    "wordCount": 127,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Conjugar los verbos en -are en presente: lavora, parla, cucino, ordino, saluta."
+      },
+      {
+        "es": "Colocar los adverbios de frecuencia: sempre, mai, spesso, ogni, una volta al mese."
+      },
+      {
+        "es": "Entender un elogio que el texto nunca formula directamente."
+      }
+    ],
+    "grammarFocus": [
+      "presente-verbi-are",
+      "avverbi-frequenza"
+    ],
+    "vocabulary": [
+      {
+        "surface": "portiere",
+        "lemma": "portiere",
+        "glosses": {
+          "es": "conserje, portero de un edificio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "palazzo",
+        "lemma": "palazzo",
+        "glosses": {
+          "es": "edificio de viviendas. ¡No es un «palacio»!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "scale",
+        "lemma": "scala",
+        "glosses": {
+          "es": "escaleras"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "portone",
+        "lemma": "portone",
+        "glosses": {
+          "es": "portal de la calle"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "saluta",
+        "lemma": "salutare",
+        "glosses": {
+          "es": "saluda"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ufficio",
+        "lemma": "ufficio",
+        "glosses": {
+          "es": "oficina"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "racconta",
+        "lemma": "raccontare",
+        "glosses": {
+          "es": "cuenta, relata"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "spesso",
+        "lemma": "spesso",
+        "glosses": {
+          "es": "a menudo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La figura del portiere está en retirada en Italia: muchos edificios la han sustituido por empresas de limpieza y videoportero. Donde queda, sigue siendo quien conoce de verdad la vida del bloque."
+    },
+    "spanishSpeakerNote": {
+      "es": "«Palazzo» es simplemente un edificio de pisos, no un palacio. Y fíjate en dónde van los adverbios: «non cucino mai», «torna sempre tardi» — el italiano los coloca después del verbo, como el español, pero «mai» exige el «non» delante."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en italiano sobre la vida cotidiana, distinguir un falso amigo de una palabra transparente, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere"
+    ],
+    "disallowedGrammar": [
+      "passato prossimo",
+      "imperfetto",
+      "congiuntivo",
+      "condizionale",
+      "voce passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 9.8,
+      "maxSentenceWords": 17,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo, imperativo y stare + gerundio. Sin tiempos del pasado ni congiuntivo. Falso amigo glosado en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué quiere decir el texto sobre Ciro?",
+      "options": [
+        {
+          "id": "discrecion",
+          "text": "Que su valor está en saberlo todo y no contarlo, además de saludar cada mañana"
+        },
+        {
+          "id": "curioso",
+          "text": "Que es un vecino curioso que espía a los demás"
+        },
+        {
+          "id": "limpieza",
+          "text": "Que su trabajo consiste sobre todo en limpiar el edificio"
+        }
+      ],
+      "answer": "discrecion",
+      "evidence": "Questo è importante: Ciro sa tutto e non parla mai … Ogni mattina alle sette apre la porta e saluta.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo marca con un «Questo è importante» para que no se te escape."
+        },
+        "incorrect": {
+          "es": "La limpieza aparece, pero como tarea menor, y el texto no lo presenta como cotilla. Busca la frase que empieza por «Questo è importante»."
+        },
+        "strategy": {
+          "es": "Cuando un texto dice «esto es importante», subráyalo: ahí está la tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cada cuánto limpia las escaleras?",
+      "options": [
+        {
+          "id": "mes",
+          "text": "Una vez al mes"
+        },
+        {
+          "id": "ano",
+          "text": "Dos veces al año"
+        },
+        {
+          "id": "dia",
+          "text": "Todas las mañanas"
+        }
+      ],
+      "answer": "mes",
+      "evidence": "Una volta al mese pulisce le scale. Due volte all'anno lava le finestre del portone.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Las dos veces al año son para las ventanas del portal."
+        },
+        "incorrect": {
+          "es": "Cada mañana abre la puerta y saluda; eso es otra tarea. Empareja cada frecuencia con su tarea."
+        },
+        "strategy": {
+          "es": "Cuando hay varias frecuencias seguidas, une cada una con su verbo antes de contestar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto habla de «il mio palazzo». ¿Qué significa aquí «palazzo»?",
+      "options": [
+        {
+          "id": "edificio",
+          "text": "El edificio de viviendas donde vive"
+        },
+        {
+          "id": "palacio",
+          "text": "Un palacio histórico"
+        },
+        {
+          "id": "plaza",
+          "text": "Una plaza del barrio"
+        }
+      ],
+      "answer": "edificio",
+      "evidence": "Il portiere del mio palazzo si chiama Ciro … al terzo piano la signora Bruni.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y el texto lo confirma al hablar de pisos y de vecinos."
+        },
+        "incorrect": {
+          "es": "Tiene tercer piso, quinto piso y portero: es un bloque de vecinos, no un monumento."
+        },
+        "strategy": {
+          "es": "Si el texto menciona plantas y vecinos, la palabra que las contiene es «edificio»."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué compara la portería con su oficina de cuarenta personas?",
+      "options": [
+        {
+          "id": "saludo",
+          "text": "Para mostrar que allí nadie le saluda, y por eso valora el saludo de Ciro"
+        },
+        {
+          "id": "ruido",
+          "text": "Porque su oficina es más ruidosa que el edificio"
+        },
+        {
+          "id": "trabajo",
+          "text": "Porque quiere cambiar de trabajo y ser conserje"
+        }
+      ],
+      "answer": "saludo",
+      "evidence": "Io lavoro in un ufficio con quaranta persone e nessuno mi saluta così.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La comparación no es sobre el trabajo, es sobre el saludo."
+        },
+        "incorrect": {
+          "es": "No habla de ruido ni de cambiar de empleo. Fíjate en el verbo que cierra esa frase."
+        },
+        "strategy": {
+          "es": "En una comparación, mira qué verbo se repite: ahí está el punto de contacto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: Ciro le cuenta a los vecinos lo que sabe de los demás.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Non racconta niente a nessuno … Ciro sa tutto e non parla mai.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: el texto lo dice dos veces, con dos frases distintas."
+        },
+        "incorrect": {
+          "es": "Busca las dos frases con doble negación: «niente a nessuno» y «non parla mai»."
+        },
+        "strategy": {
+          "es": "Si una idea aparece dos veces con palabras distintas, el autor quiere que quede clara."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena cómo se presenta la información.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Quién es Ciro y cuánto tiempo lleva ahí"
+        },
+        {
+          "id": "p2",
+          "text": "Lo que sabe de cada vecino"
+        },
+        {
+          "id": "p3",
+          "text": "Sus tareas y su horario"
+        },
+        {
+          "id": "p4",
+          "text": "La comparación con la oficina y la frase de su madre"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Il portiere del mio palazzo si chiama Ciro. Lavora qui da diciannove anni … Sa che al terzo piano … Una volta al mese pulisce le scale … Io lavoro in un ufficio con quaranta persone.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: quién es, qué sabe, qué hace y qué significa."
+        },
+        "incorrect": {
+          "es": "Fíjate en las tres frases seguidas que empiezan por «Sa che»: van en el segundo bloque."
+        },
+        "strategy": {
+          "es": "Cuando varias frases empiezan igual, forman un bloque: trátalas como una sola pieza."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en italiano sobre alguien de tu barrio que hace su trabajo desde hace años. Usa cuatro verbos en -are y cuatro adverbios de frecuencia distintos."
+    },
+    "minWords": 30,
+    "maxWords": 60,
+    "hints": [
+      "Lavora qui da… anni.",
+      "Ogni mattina apre…",
+      "Non parla mai.",
+      "Una volta al mese pulisce…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de italiano y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano A1: el conserje lo sabe todo | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto corto en italiano A1 y practica el presente de los verbos en -are y los adverbios de frecuencia. Con seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/italiano/a1/lectura/il-portiere-sa-tutto",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-a1-ho-due-nonne-e-una-ricetta",
+      "it-a1-chi-scrive-sul-muro"
+    ]
+  }
+}

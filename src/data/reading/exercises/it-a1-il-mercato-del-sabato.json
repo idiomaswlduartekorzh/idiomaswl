@@ -1,0 +1,449 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-a1-il-mercato-del-sabato",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Italiano A1"
+  },
+  "slug": "il-mercato-del-sabato",
+  "series": {
+    "id": "italiano-a1-lectura-10",
+    "episode": 7,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-a1-ce-un-gatto-in-biblioteca",
+    "nextExerciseId": "it-a1-dove-sono-le-mie-chiavi"
+  },
+  "classification": {
+    "genre": "descripción de un lugar",
+    "topic": "la fruta fea y la fruta bonita",
+    "intent": "learning",
+    "tags": [
+      "italiano a1",
+      "lectura",
+      "preposiciones articuladas",
+      "adjetivos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El mercado del sábado"
+    },
+    "intro": {
+      "es": "Cuarenta y dos puestos, el del pescado en la entrada por el hielo, y una fruta pequeña y con manchas que sabe mejor. Lectura de italiano A1."
+    },
+    "mission": {
+      "es": "Averigua a qué hora conviene llegar al mercado y por qué."
+    },
+    "targetText": "Il sabato mattina vado al mercato di piazza Grande. Comincia alle sette e finisce all'una. Nel mercato ci sono quarantadue banchi. Il banco del pesce è il primo, all'entrata, perché il pesce ha bisogno del ghiaccio. Il banco della frutta è nell'angolo, sotto il tetto verde. Dal fruttivendolo la frutta non è bella: è piccola, con macchie, un po' brutta. Ma è dolce. Nel supermercato la frutta è grande, rossa, perfetta, e non sa di niente. Mia madre dice: la frutta bella è per gli occhi, la frutta buona è per la bocca. Alle dodici e mezza i prezzi cambiano. I venditori vendono tutto a metà prezzo, perché nel pomeriggio il mercato è chiuso. Le persone intelligenti arrivano a quell'ora.",
+    "wordCount": 120,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Formar las preposiciones articuladas: al, del, nel, della, dal, all', nell'."
+      },
+      {
+        "es": "Concordar el adjetivo con el sustantivo: piccola, brutta, rossa, verde, chiuso."
+      },
+      {
+        "es": "Seguir una descripción organizada por lugares dentro de un espacio."
+      }
+    ],
+    "grammarFocus": [
+      "preposizioni-articolate",
+      "aggettivi-qualificativi"
+    ],
+    "vocabulary": [
+      {
+        "surface": "banchi",
+        "lemma": "banco",
+        "glosses": {
+          "es": "puestos de mercado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ghiaccio",
+        "lemma": "ghiaccio",
+        "glosses": {
+          "es": "hielo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "angolo",
+        "lemma": "angolo",
+        "glosses": {
+          "es": "rincón, esquina"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tetto",
+        "lemma": "tetto",
+        "glosses": {
+          "es": "tejado, techo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fruttivendolo",
+        "lemma": "fruttivendolo",
+        "glosses": {
+          "es": "frutero"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "macchie",
+        "lemma": "macchia",
+        "glosses": {
+          "es": "manchas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "brutta",
+        "lemma": "brutto",
+        "glosses": {
+          "es": "fea. ¡No significa «bruta»!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "venditori",
+        "lemma": "venditore",
+        "glosses": {
+          "es": "vendedores"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Los mercados de plaza italianos cierran a mediodía y no vuelven a abrir, así que la última media hora es la de las rebajas. Quien va a esa hora paga menos pero elige menos."
+    },
+    "spanishSpeakerNote": {
+      "es": "El español contrae solo «de+el» y «a+el». El italiano contrae también in, su, da y con: nel, sul, dal, col. Y ojo: «brutto» es feo, no bruto. Es uno de los falsos amigos que más caros salen."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en italiano sobre la vida cotidiana, distinguir un falso amigo de una palabra transparente, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere"
+    ],
+    "disallowedGrammar": [
+      "passato prossimo",
+      "imperfetto",
+      "congiuntivo",
+      "condizionale",
+      "voce passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 10,
+      "maxSentenceWords": 17,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo, imperativo y stare + gerundio. Sin tiempos del pasado ni congiuntivo. Falso amigo glosado en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué idea defiende el texto?",
+      "options": [
+        {
+          "id": "sabor",
+          "text": "Que la fruta fea del mercado sabe mejor que la fruta perfecta del supermercado"
+        },
+        {
+          "id": "precio",
+          "text": "Que el mercado es siempre más barato que el supermercado"
+        },
+        {
+          "id": "pescado",
+          "text": "Que el pescado debe estar en la entrada por el hielo"
+        }
+      ],
+      "answer": "sabor",
+      "evidence": "la frutta non è bella: è piccola, con macchie, un po' brutta. Ma è dolce … Nel supermercato la frutta è grande, rossa, perfetta, e non sa di niente.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la madre lo resume: la bonita es para los ojos, la buena para la boca."
+        },
+        "incorrect": {
+          "es": "Lo del pescado es un detalle de organización, y el precio solo baja al final. Compara las dos frutas."
+        },
+        "strategy": {
+          "es": "Cuando un texto describe dos versiones de la misma cosa, la comparación es la tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Por qué el puesto de pescado está en la entrada?",
+      "options": [
+        {
+          "id": "hielo",
+          "text": "Porque el pescado necesita hielo"
+        },
+        {
+          "id": "olor",
+          "text": "Porque huele demasiado"
+        },
+        {
+          "id": "primero",
+          "text": "Porque es el puesto más antiguo"
+        }
+      ],
+      "answer": "hielo",
+      "evidence": "Il banco del pesce è il primo, all'entrata, perché il pesce ha bisogno del ghiaccio.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el texto lo explica con un «perché» en la misma frase."
+        },
+        "incorrect": {
+          "es": "No se habla de olor ni de antigüedad. Busca la explicación después de «perché»."
+        },
+        "strategy": {
+          "es": "Una explicación con «perché» es literal: no hay que deducir nada."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que la fruta es «un po' brutta». ¿Qué significa «brutta»?",
+      "options": [
+        {
+          "id": "fea",
+          "text": "Fea, de mal aspecto"
+        },
+        {
+          "id": "bruta",
+          "text": "Bruta, tosca"
+        },
+        {
+          "id": "dura",
+          "text": "Dura, poco madura"
+        }
+      ],
+      "answer": "fea",
+      "evidence": "la frutta non è bella: è piccola, con macchie, un po' brutta. Ma è dolce.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y se opone a «bella» en la misma frase."
+        },
+        "incorrect": {
+          "es": "Se opone a «bella» y va con «macchie»: habla del aspecto, no del carácter ni de la textura."
+        },
+        "strategy": {
+          "es": "Si una palabra se opone directamente a otra que conoces, ya tienes su sentido."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué llama «intelligenti» a quienes llegan a las doce y media?",
+      "options": [
+        {
+          "id": "mitad",
+          "text": "Porque a esa hora todo se vende a mitad de precio"
+        },
+        {
+          "id": "fresco",
+          "text": "Porque a esa hora la fruta está más fresca"
+        },
+        {
+          "id": "vacio",
+          "text": "Porque a esa hora no hay cola"
+        }
+      ],
+      "answer": "mitad",
+      "evidence": "Alle dodici e mezza i prezzi cambiano. I venditori vendono tutto a metà prezzo … Le persone intelligenti arrivano a quell'ora.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la razón está en la frase anterior: el mercado cierra por la tarde."
+        },
+        "incorrect": {
+          "es": "La frescura no mejora al final de la mañana y no se menciona ninguna cola. Lee la frase anterior."
+        },
+        "strategy": {
+          "es": "Cuando el texto llama listo a alguien, la razón está siempre en la frase de antes."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el mercado empieza a las siete de la mañana y termina a la una.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Comincia alle sette e finisce all'una.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y por eso a las doce y media ya se remata el género."
+        },
+        "incorrect": {
+          "es": "El horario está en la segunda frase del texto, con «comincia» y «finisce»."
+        },
+        "strategy": {
+          "es": "Los horarios suelen ir al principio de una descripción: búscalos ahí primero."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el recorrido que describe el texto.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "El horario y el número de puestos"
+        },
+        {
+          "id": "p2",
+          "text": "El puesto del pescado en la entrada"
+        },
+        {
+          "id": "p3",
+          "text": "El de la fruta en el rincón, bajo el tejado verde"
+        },
+        {
+          "id": "p4",
+          "text": "El cambio de precios de las doce y media"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Comincia alle sette … Il banco del pesce è il primo, all'entrata … Il banco della frutta è nell'angolo … Alle dodici e mezza i prezzi cambiano.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: el texto entra por la puerta y avanza hacia dentro y hacia el final de la mañana."
+        },
+        "incorrect": {
+          "es": "Fíjate en las preposiciones de lugar: «all'entrata» va antes que «nell'angolo»."
+        },
+        "strategy": {
+          "es": "En una descripción de un espacio, las preposiciones de lugar marcan el recorrido."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en italiano describiendo un mercado o una tienda que conoces. Usa cinco preposiciones articuladas distintas y cinco adjetivos."
+    },
+    "minWords": 30,
+    "maxWords": 60,
+    "hints": [
+      "Vado al mercato di…",
+      "Nel mercato ci sono…",
+      "Il banco della frutta è nell'angolo.",
+      "La frutta è piccola ma dolce."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de italiano y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano A1: el mercado del sábado | WeLearn"
+    },
+    "description": {
+      "es": "Lee una descripción en italiano A1 y practica las preposiciones articuladas (al, nel, della) y los adjetivos. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/italiano/a1/lectura/il-mercato-del-sabato",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-a1-ce-un-gatto-in-biblioteca",
+      "it-a1-dove-sono-le-mie-chiavi"
+    ]
+  }
+}

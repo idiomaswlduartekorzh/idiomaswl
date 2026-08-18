@@ -165,6 +165,18 @@ import deB1DieTuerDesSchrankes from '@/data/reading/exercises/de-b1-die-tuer-des
 import deB1SieHatNieFahrenWollen from '@/data/reading/exercises/de-b1-sie-hat-nie-fahren-wollen.json'
 import deB1StellDenStuhlAnsFenster from '@/data/reading/exercises/de-b1-stell-den-stuhl-ans-fenster.json'
 import deB1EntwederJetztOderNie from '@/data/reading/exercises/de-b1-entweder-jetzt-oder-nie.json'
+
+// Italiano A1 — generadas desde `src/data/reading/source/it-a1.mjs`. Nivel completo.
+import itA1IlCaffeSiBeveInPiedi from '@/data/reading/exercises/it-a1-il-caffe-si-beve-in-piedi.json'
+import itA1HoDueNonneEUnaRicetta from '@/data/reading/exercises/it-a1-ho-due-nonne-e-una-ricetta.json'
+import itA1IlPortiereSaTutto from '@/data/reading/exercises/it-a1-il-portiere-sa-tutto.json'
+import itA1ChiScriveSulMuro from '@/data/reading/exercises/it-a1-chi-scrive-sul-muro.json'
+import itA1NonVadoMaiInCentro from '@/data/reading/exercises/it-a1-non-vado-mai-in-centro.json'
+import itA1CeUnGattoInBiblioteca from '@/data/reading/exercises/it-a1-ce-un-gatto-in-biblioteca.json'
+import itA1IlMercatoDelSabato from '@/data/reading/exercises/it-a1-il-mercato-del-sabato.json'
+import itA1DoveSonoLeMieChiavi from '@/data/reading/exercises/it-a1-dove-sono-le-mie-chiavi.json'
+import itA1GuardaStaPiovendo from '@/data/reading/exercises/it-a1-guarda-sta-piovendo.json'
+import itA1IlBurroNonEUnAsino from '@/data/reading/exercises/it-a1-il-burro-non-e-un-asino.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -320,6 +332,16 @@ const RAW_EXERCISES: unknown[] = [
   deB1SieHatNieFahrenWollen,
   deB1StellDenStuhlAnsFenster,
   deB1EntwederJetztOderNie,
+  itA1IlCaffeSiBeveInPiedi,
+  itA1HoDueNonneEUnaRicetta,
+  itA1IlPortiereSaTutto,
+  itA1ChiScriveSulMuro,
+  itA1NonVadoMaiInCentro,
+  itA1CeUnGattoInBiblioteca,
+  itA1IlMercatoDelSabato,
+  itA1DoveSonoLeMieChiavi,
+  itA1GuardaStaPiovendo,
+  itA1IlBurroNonEUnAsino,
 ]
 
 export const READING_EXERCISES: ReadingExercise[] = RAW_EXERCISES.map((candidate) => {
