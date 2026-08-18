@@ -1,0 +1,450 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-a1-mein-name-ist-schwer",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Alemán A1"
+  },
+  "slug": "mein-name-ist-schwer",
+  "series": {
+    "id": "aleman-a1-lectura-10",
+    "episode": 1,
+    "totalEpisodes": 5,
+    "previousExerciseId": null,
+    "nextExerciseId": "de-a1-die-waschkueche"
+  },
+  "classification": {
+    "genre": "relato en primera persona",
+    "topic": "el nombre propio",
+    "intent": "learning",
+    "tags": [
+      "aleman a1",
+      "lectura",
+      "verbo sein",
+      "pronombres personales"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Mi nombre es difícil"
+    },
+    "intro": {
+      "es": "Un colombiano en Leipzig cuyo apellido nadie pronuncia, y la solución que encontró con una panadera. Lectura de alemán A1 con el verbo sein."
+    },
+    "mission": {
+      "es": "Averigua qué hace ahora cuando alguien le pregunta el nombre."
+    },
+    "targetText": "Ich bin Colombianer und ich wohne in Leipzig. Mein Name ist Duarte. Das ist nicht schwer. Aber mein Vorname ist Jesús. Das ist schwer. Die Leute hier sagen Jesus, wie in der Kirche. Sie sind nicht unhöflich. Sie sind nur unsicher. Im Büro bin ich Jay. Das ist kurz und praktisch. Meine Kollegen sind zufrieden und ich bin auch zufrieden. Nur eine Person sagt meinen Namen richtig. Sie ist Bäckerin und sie ist aus Portugal. Sie sagt Jesús, mit dem Akzent. Ich kaufe dort Brot. Das Brot ist teuer. Ich kaufe es trotzdem. Meine Frau fragt mich: Warum dieses Brot? Ich sage: Es ist gut. Das ist die Wahrheit, aber es ist nicht die ganze Wahrheit.",
+    "wordCount": 116,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Conjugar el verbo sein en presente y reconocerlo en segunda posición."
+      },
+      {
+        "es": "Identificar los pronombres personales: ich, du, er, sie, wir."
+      },
+      {
+        "es": "Distinguir lo que el narrador dice de lo que calla."
+      }
+    ],
+    "grammarFocus": [
+      "verb-sein",
+      "personalpronomen"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Vorname",
+        "lemma": "Vorname",
+        "glosses": {
+          "es": "nombre de pila"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "schwer",
+        "lemma": "schwer",
+        "glosses": {
+          "es": "difícil; también pesado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "unhöflich",
+        "lemma": "unhöflich",
+        "glosses": {
+          "es": "maleducado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "unsicher",
+        "lemma": "unsicher",
+        "glosses": {
+          "es": "inseguro, dudoso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Bäckerin",
+        "lemma": "Bäckerin",
+        "glosses": {
+          "es": "panadera"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "teuer",
+        "lemma": "teuer",
+        "glosses": {
+          "es": "caro"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "trotzdem",
+        "lemma": "trotzdem",
+        "glosses": {
+          "es": "aun así, a pesar de eso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Wahrheit",
+        "lemma": "Wahrheit",
+        "glosses": {
+          "es": "verdad"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En Alemania es habitual adoptar una forma corta del nombre en el trabajo cuando el original resulta difícil. No se considera una renuncia, sino una comodidad práctica."
+    },
+    "spanishSpeakerNote": {
+      "es": "El verbo va SEGUNDO en la frase principal, siempre: «Im Büro bin ich Jay», no «Im Büro ich bin». Si algo distinto del sujeto abre la frase, el sujeto pasa detrás del verbo. Es el error número uno del hispanohablante."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en alemán sobre la vida cotidiana, encontrar el verbo aunque esté partido o al final, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens"
+    ],
+    "disallowedGrammar": [
+      "Perfekt",
+      "Präteritum",
+      "Konjunktiv",
+      "Passiv",
+      "Genitiv"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 5.8,
+      "maxSentenceWords": 11,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo y futuro con presente. Sin Perfekt, Präteritum ni pasiva. Verbos separables y orden de la frase trabajados en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta el texto?",
+      "options": [
+        {
+          "id": "nombre",
+          "text": "Que usa un nombre corto en el trabajo y valora a quien dice el suyo bien"
+        },
+        {
+          "id": "pan",
+          "text": "Que busca la mejor panadería de Leipzig"
+        },
+        {
+          "id": "idioma",
+          "text": "Que le cuesta aprender alemán"
+        }
+      ],
+      "answer": "nombre",
+      "evidence": "Nur eine Person sagt meinen Namen richtig … Das ist die Wahrheit, aber es ist nicht die ganze Wahrheit.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El pan caro es la excusa; la razón verdadera es cómo lo llama esa mujer."
+        },
+        "incorrect": {
+          "es": "El pan es un detalle del final, y no se habla de aprender el idioma. Busca la frase sobre la panadera."
+        },
+        "strategy": {
+          "es": "Cuando un texto dice «no es toda la verdad», lo que falta está antes. Búscalo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cómo lo llaman en la oficina?",
+      "options": [
+        {
+          "id": "jay",
+          "text": "Jay"
+        },
+        {
+          "id": "jesus",
+          "text": "Jesus"
+        },
+        {
+          "id": "duarte",
+          "text": "Duarte"
+        }
+      ],
+      "answer": "jay",
+      "evidence": "Im Büro bin ich Jay.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Jesus es como lo dicen fuera, y Duarte es su apellido."
+        },
+        "incorrect": {
+          "es": "El texto distingue tres nombres. Busca el que va con «Im Büro»."
+        },
+        "strategy": {
+          "es": "Cuando un texto asigna nombres a contextos distintos, empareja cada uno con su lugar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «Sie sind nicht unhöflich. Sie sind nur unsicher». ¿Qué significa «unsicher»?",
+      "options": [
+        {
+          "id": "inseguros",
+          "text": "Inseguros, no saben cómo decirlo"
+        },
+        {
+          "id": "groseros",
+          "text": "Groseros"
+        },
+        {
+          "id": "sordos",
+          "text": "No oyen bien"
+        }
+      ],
+      "answer": "inseguros",
+      "evidence": "Sie sind nicht unhöflich. Sie sind nur unsicher.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y va en oposición a «unhöflich»: no es mala educación, es duda."
+        },
+        "incorrect": {
+          "es": "La frase anterior descarta precisamente la grosería. La palabra tiene que decir otra cosa."
+        },
+        "strategy": {
+          "es": "Si una frase niega algo y la siguiente afirma otra cosa, las dos se oponen. Úsalo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué compra el pan caro?",
+      "options": [
+        {
+          "id": "nombre",
+          "text": "Porque allí una persona pronuncia su nombre bien"
+        },
+        {
+          "id": "calidad",
+          "text": "Porque es el mejor pan de la ciudad"
+        },
+        {
+          "id": "cerca",
+          "text": "Porque la panadería está cerca de su casa"
+        }
+      ],
+      "answer": "nombre",
+      "evidence": "Sie sagt Jesús, mit dem Akzent. Ich kaufe dort Brot … es ist nicht die ganze Wahrheit.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Dice a su mujer que el pan es bueno, y admite que esa no es toda la razón."
+        },
+        "incorrect": {
+          "es": "El texto no dice que sea el mejor ni habla de distancia. Cruza la frase de la panadera con la última."
+        },
+        "strategy": {
+          "es": "Para inferir, cruza dos frases separadas. Aquí la de la panadera y la del final."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: sus compañeros de oficina están molestos con el nombre corto.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Meine Kollegen sind zufrieden und ich bin auch zufrieden.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: están contentos, y él también. El texto lo dice en una sola frase."
+        },
+        "incorrect": {
+          "es": "Busca la frase con «Kollegen». Dice exactamente cómo están."
+        },
+        "strategy": {
+          "es": "Antes de suponer un conflicto, comprueba si el texto lo confirma. Aquí lo niega."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena las ideas del texto.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Presenta su nombre y dice cuál es la parte difícil"
+        },
+        {
+          "id": "p2",
+          "text": "Explica que en la oficina lo llaman Jay"
+        },
+        {
+          "id": "p3",
+          "text": "Cuenta que una panadera lo pronuncia bien"
+        },
+        {
+          "id": "p4",
+          "text": "Admite que la razón del pan no es solo el pan"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Mein Name ist Duarte … Im Büro bin ich Jay … Sie ist Bäckerin … es ist nicht die ganze Wahrheit.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El texto va de lo general a lo personal, y guarda lo importante para el final."
+        },
+        "incorrect": {
+          "es": "Sigue el hilo: primero el nombre, luego la oficina, luego la panadería, y al final la confesión."
+        },
+        "strategy": {
+          "es": "En un texto en primera persona, lo más personal suele ir al final. Búscalo allí."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en alemán presentándote: de dónde eres, dónde vives y cómo te llaman. Usa el verbo sein cinco veces, con el verbo en segunda posición."
+    },
+    "minWords": 25,
+    "maxWords": 60,
+    "hints": [
+      "Ich bin… und ich wohne in…",
+      "Mein Name ist…",
+      "Im Büro bin ich…",
+      "Das ist nicht schwer."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de alemán y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán A1: Mi nombre es difícil | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto corto en alemán A1 y practica el verbo sein y los pronombres personales. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/aleman/a1/lectura/mein-name-ist-schwer",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-a1-die-waschkueche"
+    ]
+  }
+}

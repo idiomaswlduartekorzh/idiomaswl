@@ -100,7 +100,29 @@ const KANJI_TARGETS_JA = {
   B1: { min: 28, max: 45 },
 }
 
-const WORD_TARGETS_BY_LANGUAGE = { ko: WORD_TARGETS_KO, ja: WORD_TARGETS_JA }
+// El alemán también necesita banda propia, y por la misma razón de fondo que el coreano:
+// la unidad «palabra» no carga lo mismo en todas las lenguas.
+//
+// El alemán compone. `Krankenversicherung` es una palabra y son tres en español. Medido
+// sobre los textos que WeLearn ya publica, la longitud media de palabra sube con el nivel:
+// 4,6 letras en A1, 5,6 en A2 y 6,7 en B1, frente a unas 5,0 estables en las lenguas
+// romances. En B1 eso significa que cada palabra alemana carga en torno a un tercio más,
+// así que 400 palabras de alemán no son 400 palabras de francés: son bastante más texto.
+//
+// La banda se fija con las mismas tres referencias de siempre:
+//   1. Lo publicado por WeLearn en alemán: A1 50-69 palabras, A2 91-108, B1 88-103.
+//   2. Las lecturas del Goethe-Zertifikat: A1 hasta ~100 palabras, A2 150-250, B1 200-400.
+//   3. La densidad medida arriba, que corrige la banda romance a la baja según el nivel.
+//
+// Nota sobre el B1 publicado: sus textos apenas superan a los de A2, lo que es una anomalía
+// de ese contenido y no una referencia. Por eso la subida en B1 es mayor que en A1 y A2.
+const WORD_TARGETS_DE = {
+  A1: { min: 95, max: 125 },
+  A2: { min: 165, max: 205 },
+  B1: { min: 300, max: 360 },
+}
+
+const WORD_TARGETS_BY_LANGUAGE = { ko: WORD_TARGETS_KO, ja: WORD_TARGETS_JA, de: WORD_TARGETS_DE }
 
 export function wordTargetFor(language, cefr) {
   return (WORD_TARGETS_BY_LANGUAGE[language] ?? WORD_TARGETS_DEFAULT)[cefr]

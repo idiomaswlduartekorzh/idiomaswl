@@ -131,6 +131,12 @@ import ptB1ElaNaoEstaProfessoraElaE from '@/data/reading/exercises/pt-b1-ela-nao
 import ptB1OMelhorCafeNaoEOMaisCaro from '@/data/reading/exercises/pt-b1-o-melhor-cafe-nao-e-o-mais-caro.json'
 import ptB1OQueATestemunhaDisse from '@/data/reading/exercises/pt-b1-o-que-a-testemunha-disse.json'
 import ptB1QuandoAAguaChegar from '@/data/reading/exercises/pt-b1-quando-a-agua-chegar.json'
+// Alemán A1 — generadas desde `src/data/reading/source/de-a1.mjs`. Nivel en curso.
+import deA1DerEinkaufszettel from '@/data/reading/exercises/de-a1-der-einkaufszettel.json'
+import deA1DerWegZurArbeit from '@/data/reading/exercises/de-a1-der-weg-zur-arbeit.json'
+import deA1DieWaschkueche from '@/data/reading/exercises/de-a1-die-waschkueche.json'
+import deA1MeinNameIstSchwer from '@/data/reading/exercises/de-a1-mein-name-ist-schwer.json'
+import deA1WasMachstDuEigentlich from '@/data/reading/exercises/de-a1-was-machst-du-eigentlich.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -256,6 +262,11 @@ const RAW_EXERCISES: unknown[] = [
   ptB1OMelhorCafeNaoEOMaisCaro,
   ptB1OQueATestemunhaDisse,
   ptB1QuandoAAguaChegar,
+  deA1DerEinkaufszettel,
+  deA1DerWegZurArbeit,
+  deA1DieWaschkueche,
+  deA1MeinNameIstSchwer,
+  deA1WasMachstDuEigentlich,
 ]
 
 export const READING_EXERCISES: ReadingExercise[] = RAW_EXERCISES.map((candidate) => {
