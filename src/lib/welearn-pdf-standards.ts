@@ -1,5 +1,5 @@
 // Fuente única de los datos de marca y del texto legal que llevan los PDFs
-// descargables de WeLearn. Lo usan tanto la plantilla (src/lib/pdfDocument.ts)
+// descargables de WeLearn. Lo usan tanto la plantilla (src/lib/pdf/brandedDoc.ts)
 // como las páginas web que ofrecen la descarga, para que el aviso de propiedad
 // diga exactamente lo mismo en los dos sitios.
 

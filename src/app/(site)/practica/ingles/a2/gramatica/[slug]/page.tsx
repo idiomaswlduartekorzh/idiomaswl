@@ -6,6 +6,7 @@ import { getWritingExercisesForGrammar } from '@/data/practica/writing-integrate
 import { generateGrammarMetadata } from '@/lib/grammar-metadata'
 import GrammarTopicClient from '@/components/grammar/GrammarTopicClient'
 import TopicNav from '@/components/grammar/TopicNav'
+import IrregularVerbsReference from '@/components/practica/IrregularVerbsReference'
 
 const IDIOMA = 'ingles'
 const NIVEL = 'a2'
@@ -148,6 +149,12 @@ export default async function GrammarTopicPage({ params }: Props) {
           </article>
 
           <GrammarTopicClient topic={topic} idioma={IDIOMA} nivel={NIVEL} relatedWritingExercises={getWritingExercisesForGrammar(IDIOMA, NIVEL, topic.slug)} />
+
+          {/* La lista de los 100 verbos irregulares vive dentro del tema al que
+              pertenece, no en una página aparte: quien llega buscando el past
+              simple irregular ya está aquí. Server component, así que la tabla
+              entera es rastreable. */}
+          {topic.slug === 'past-simple-irregular' && <IrregularVerbsReference color={topic.color} />}
 
           <TopicNav idioma={IDIOMA} nivel={NIVEL} slug={topic.slug} indexLabel="Gramática A2" />
         </div>
