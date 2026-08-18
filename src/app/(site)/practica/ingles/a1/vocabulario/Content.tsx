@@ -21,7 +21,7 @@ export default function VocabularioInglesA1() {
       nivel="a1"
       etiqueta="🇬🇧 Inglés A1"
       titulo="Vocabulario A1"
-      color="#e11d48"
+      color="var(--wlp-accent-vocabulario)"
     />
   )
 }

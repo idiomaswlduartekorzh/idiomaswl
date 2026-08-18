@@ -3,7 +3,10 @@
 import { useState, useCallback } from 'react';
 import Link from 'next/link';
 
-const COLOR = '#e11d48';
+const COLOR = 'var(--wlp-accent-vocabulario)';
+/** El color al N % de opacidad. Antes se escribía pegando la transparencia en
+    hexadecimal (`${COLOR}14`), que con una variable CSS no se puede. */
+const COLORMix = (p: number) => `color-mix(in srgb, ${COLOR} ${p}%, transparent)`;
 
 interface VocabWord { id: number; en: string; phonetic: string; es: string; }
 interface VocabSet { id: string; name: string; nameEs: string; emoji: string; words: VocabWord[]; }
@@ -141,8 +144,8 @@ function Flashcard({ word, onNext, onPrev, idx, total }: {
       <div style={{ fontSize: '0.78rem', fontFamily: 'var(--mono)', color: 'var(--muted)' }}>{idx + 1} / {total}</div>
       <button onClick={() => setFlipped(f => !f)} style={{
         width: '100%', maxWidth: 420, minHeight: 220,
-        border: `2px solid ${COLOR}33`, borderRadius: 20,
-        background: flipped ? `${COLOR}0d` : 'var(--bg)',
+        border: `2px solid ${COLORMix(20.0)}`, borderRadius: 20,
+        background: flipped ? `${COLORMix(5.1)}` : 'var(--bg)',
         cursor: 'pointer', fontFamily: 'inherit', color: 'inherit',
         padding: '2rem 1.5rem', display: 'flex', flexDirection: 'column',
         alignItems: 'center', justifyContent: 'center', gap: '0.75rem',
@@ -356,7 +359,7 @@ export default function VocabularioInglesB1() {
                   { id: 'mcq' as const, emoji: '🎯', name: 'Opción múltiple', desc: 'Ve la palabra y elige la traducción correcta entre 4 opciones.' },
                   { id: 'fill' as const, emoji: '✏️', name: 'Escribir', desc: 'Ve la traducción en español y escribe la palabra en inglés.' },
                 ].map(m => (
-                  <button key={m.id} onClick={() => startMode(m.id)} style={{ textAlign: 'left', padding: '1.25rem', borderRadius: 14, border: `1.5px solid ${COLOR}33`, background: `${COLOR}08`, cursor: 'pointer', fontFamily: 'inherit', color: 'inherit', transition: 'all 0.15s' }}>
+                  <button key={m.id} onClick={() => startMode(m.id)} style={{ textAlign: 'left', padding: '1.25rem', borderRadius: 14, border: `1.5px solid ${COLORMix(20.0)}`, background: `${COLORMix(3.1)}`, cursor: 'pointer', fontFamily: 'inherit', color: 'inherit', transition: 'all 0.15s' }}>
                     <div style={{ fontSize: '1.8rem', marginBottom: '0.4rem' }}>{m.emoji}</div>
                     <div style={{ fontWeight: 800, color: 'var(--ink)', marginBottom: '0.25rem' }}>{m.name}</div>
                     <div style={{ fontSize: '0.78rem', color: 'var(--muted)', lineHeight: 1.4 }}>{m.desc}</div>
@@ -365,7 +368,7 @@ export default function VocabularioInglesB1() {
               </div>
               <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
                 {currentSet.words.map(w => (
-                  <div key={w.en} style={{ padding: '0.35rem 0.75rem', borderRadius: 8, border: `1px solid ${COLOR}22`, background: `${COLOR}06`, fontSize: '0.85rem' }}>
+                  <div key={w.en} style={{ padding: '0.35rem 0.75rem', borderRadius: 8, border: `1px solid ${COLORMix(13.3)}`, background: `${COLORMix(2.4)}`, fontSize: '0.85rem' }}>
                     {w.en}
                   </div>
                 ))}
@@ -406,15 +409,15 @@ export default function VocabularioInglesB1() {
           {SETS.map(s => (
             <button key={s.id} onClick={() => setSetId(s.id)}
               style={{ textAlign: 'left', appearance: 'none', background: 'none', border: 'none', padding: 0, cursor: 'pointer', color: 'inherit', font: 'inherit' }}>
-              <div style={{ padding: '1.3rem 1.4rem', border: `1.5px solid ${COLOR}22`, borderRadius: 16, background: `${COLOR}06`, transition: 'all 0.18s', height: '100%', boxSizing: 'border-box' }}
-                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = `0 4px 20px ${COLOR}20`; (e.currentTarget as HTMLElement).style.borderColor = `${COLOR}55`; }}
-                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = 'none'; (e.currentTarget as HTMLElement).style.borderColor = `${COLOR}22`; }}>
+              <div style={{ padding: '1.3rem 1.4rem', border: `1.5px solid ${COLORMix(13.3)}`, borderRadius: 16, background: `${COLORMix(2.4)}`, transition: 'all 0.18s', height: '100%', boxSizing: 'border-box' }}
+                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = `0 4px 20px ${COLORMix(12.5)}`; (e.currentTarget as HTMLElement).style.borderColor = `${COLORMix(33.3)}`; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = 'none'; (e.currentTarget as HTMLElement).style.borderColor = `${COLORMix(13.3)}`; }}>
                 <span style={{ fontSize: '2.2rem', display: 'block', marginBottom: '0.6rem' }}>{s.emoji}</span>
                 <div style={{ fontWeight: 800, color: 'var(--ink)', marginBottom: '0.2rem' }}>{s.nameEs}</div>
                 <div style={{ fontSize: '0.78rem', color: COLOR, fontFamily: 'var(--mono)', marginBottom: '0.5rem' }}>{s.name} · {s.words.length} palabras</div>
                 <div style={{ display: 'flex', gap: '0.35rem', flexWrap: 'wrap' }}>
                   {s.words.slice(0, 4).map(w => (
-                    <span key={w.en} style={{ fontSize: '0.7rem', padding: '0.15rem 0.45rem', borderRadius: 5, background: `${COLOR}10`, color: COLOR, fontFamily: 'var(--mono)' }}>{w.en}</span>
+                    <span key={w.en} style={{ fontSize: '0.7rem', padding: '0.15rem 0.45rem', borderRadius: 5, background: `${COLORMix(6.3)}`, color: COLOR, fontFamily: 'var(--mono)' }}>{w.en}</span>
                   ))}
                   <span style={{ fontSize: '0.7rem', color: 'var(--muted)', fontFamily: 'var(--mono)' }}>+{s.words.length - 4}</span>
                 </div>

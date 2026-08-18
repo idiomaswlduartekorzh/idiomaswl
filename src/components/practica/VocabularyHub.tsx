@@ -28,6 +28,9 @@ type Props = {
 }
 
 export default function VocabularyHub({ idioma, nivel, etiqueta, titulo, color }: Props) {
+  /** El color al N % de opacidad; antes se pegaba la transparencia en hexadecimal. */
+  const colorMix = (p: number) => `color-mix(in srgb, ${color} ${p}%, transparent)`
+
   const datos = getVocabLevel(idioma, nivel)
   const bloques = getVocabBlocks(idioma, nivel)
   const total = bloques.reduce((n, b) => n + b.entradas.length, 0)
@@ -78,9 +81,9 @@ export default function VocabularyHub({ idioma, nivel, etiqueta, titulo, color }
         <div
           style={{
             padding: '1.1rem 1.3rem',
-            border: `1.5px solid ${color}22`,
-            borderRadius: 14,
-            background: `${color}06`,
+            border: `1.5px solid ${colorMix(13.3)}`,
+            borderRadius: 'var(--wlp-r)',
+            background: `${colorMix(2.4)}`,
             marginBottom: '2rem',
           }}
         >
@@ -125,9 +128,9 @@ export default function VocabularyHub({ idioma, nivel, etiqueta, titulo, color }
                 <div
                   style={{
                     padding: '1.3rem 1.4rem',
-                    border: `1.5px solid ${color}22`,
-                    borderRadius: 16,
-                    background: `${color}06`,
+                    border: `1.5px solid ${colorMix(13.3)}`,
+                    borderRadius: 'var(--wlp-r)',
+                    background: `${colorMix(2.4)}`,
                     height: '100%',
                     boxSizing: 'border-box',
                   }}
@@ -155,8 +158,8 @@ export default function VocabularyHub({ idioma, nivel, etiqueta, titulo, color }
                         style={{
                           fontSize: '0.7rem',
                           padding: '0.15rem 0.45rem',
-                          borderRadius: 5,
-                          background: `${color}10`,
+                          borderRadius: 'var(--wlp-r-sm)',
+                          background: `${colorMix(6.3)}`,
                           color,
                           fontFamily: 'var(--mono)',
                         }}
