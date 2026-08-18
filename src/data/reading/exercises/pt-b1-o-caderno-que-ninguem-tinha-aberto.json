@@ -1,0 +1,478 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-b1-o-caderno-que-ninguem-tinha-aberto",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Portugués B1"
+  },
+  "slug": "o-caderno-que-ninguem-tinha-aberto",
+  "series": {
+    "id": "portugues-b1-lectura-10",
+    "episode": 1,
+    "totalEpisodes": 3,
+    "previousExerciseId": null,
+    "nextExerciseId": "pt-b1-o-predio-que-foi-tombado"
+  },
+  "classification": {
+    "genre": "relato retrospectivo",
+    "topic": "un hallazgo familiar",
+    "intent": "learning",
+    "tags": [
+      "portugues b1",
+      "lectura",
+      "tiempos compuestos",
+      "perfeito vs imperfeito"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El cuaderno que nadie había abierto"
+    },
+    "intro": {
+      "es": "Un cuaderno de cuentas de 1978 encontrado al vaciar una casa, y una columna de números que no cuadraba con nada. Lectura de portugués B1."
+    },
+    "mission": {
+      "es": "Averigua qué anotaba el abuelo en esa columna, y por qué nadie lo supo hasta ahora."
+    },
+    "targetText": "Quando meu avô morreu, em fevereiro, nós tivemos que esvaziar a casa em duas semanas. O contrato de aluguel terminava no fim do mês e ninguém da família tinha condições de renovar. Foi assim que encontramos o caderno. Estava dentro de uma caixa de ferramentas, embaixo de chaves inglesas que ele não usava havia anos. Era um caderno de contabilidade comum, desses de capa dura verde, e estava preenchido até a metade. As primeiras páginas não tinham nada de estranho. Meu avô havia trabalhado quarenta anos como encanador autônomo, e ali estavam os serviços: a data, o endereço, o nome do cliente, o valor cobrado. Tudo em letra pequena e reta. O que chamou a atenção da minha tia foi a última coluna. Era uma coluna de valores, mas os números não fechavam com nada. Não eram descontos. Não eram gastos com material, porque esses estavam anotados em outra página. Minha tia passou duas noites conferindo. Ela tinha sido contadora antes de se aposentar e não conseguia deixar aquilo em paz. Na terceira noite ela entendeu. A última coluna era o valor que ele não tinha cobrado. Cada linha era um serviço feito e não faturado. Ao lado de algumas linhas havia uma letra: V de viúva, D de desempregado, I de igreja. Somando tudo, dava quase dois anos de trabalho. Nós nunca soubemos disso. Ele nunca tinha falado do assunto, nem para a minha avó, que já havia morrido em 2011. Ele reclamava de dinheiro. Reclamava sempre. Dizia que os clientes demoravam para pagar e que a profissão não valia mais a pena. Tudo isso era verdade e ao mesmo tempo não era. Minha tia quis levar o caderno para casa. Meu tio achou que devia ser doado para o sindicato dos encanadores. Discutimos por três dias, o que agora me parece ridículo. No fim ficou comigo, porque eu fui o último a sair da casa e ninguém veio buscar. Ele está na minha estante, entre livros que eu já li. Meu filho perguntou outro dia o que era aquilo. Eu expliquei em duas frases e ele voltou para o jogo dele, o que me pareceu justo: ele nunca conheceu o meu avô e um caderno de contas não é uma boa história para uma criança de nove anos. Eu abro de vez em quando. Não para conferir as contas. Para ver a letra.",
+    "wordCount": 395,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Usar los tiempos compuestos: tinha trabalhado, havia morrido, tinha sido."
+      },
+      {
+        "es": "Distinguir el perfeito del imperfeito en un mismo relato."
+      },
+      {
+        "es": "Separar lo que el abuelo decía de lo que el cuaderno demuestra."
+      }
+    ],
+    "grammarFocus": [
+      "tempos-compostos-b1",
+      "preterito-perfeito-vs-imperfeito-b1",
+      "preterito-imperfeito-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "esvaziar",
+        "lemma": "esvaziar",
+        "glosses": {
+          "es": "vaciar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "chaves inglesas",
+        "lemma": "chaves inglesas",
+        "glosses": {
+          "es": "llaves inglesas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "encanador",
+        "lemma": "encanador",
+        "glosses": {
+          "es": "fontanero"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "valor",
+        "lemma": "valor",
+        "glosses": {
+          "es": "importe, cantidad de dinero"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "contadora",
+        "lemma": "contadora",
+        "glosses": {
+          "es": "contable. ¡No es una «contadora» de cuentos!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "aposentar",
+        "lemma": "aposentar-se",
+        "glosses": {
+          "es": "jubilarse"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "faturado",
+        "lemma": "faturar",
+        "glosses": {
+          "es": "facturado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "viúva",
+        "lemma": "viúva",
+        "glosses": {
+          "es": "viuda"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El «encanador autônomo» es una figura muy común en Brasil: trabajador por cuenta propia sin empresa detrás, que cobra por servicio y lleva sus cuentas a mano."
+    },
+    "spanishSpeakerNote": {
+      "es": "Los tiempos compuestos portugueses admiten dos auxiliares: «tinha trabalhado» y «havia trabalhado» significan lo mismo, aunque «ter» es mucho más frecuente en Brasil. Y «contadora» es contable, no narradora."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo en portugués que desarrolla una idea y cambia de dirección, distinguir el hecho de la interpretación, y justificar una inferencia cruzando dos pasajes."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares",
+      "comparativos-superlativos-a2",
+      "condicional-a2",
+      "conjuncoes-logicas-a2",
+      "diminutivos-aumentativos-a2",
+      "expressoes-com-fazer-a2",
+      "expressoes-tempo-a2",
+      "futuro-do-presente-a2",
+      "gerundio-a2",
+      "ha-faz-tempo-a2",
+      "para-vs-por-a2",
+      "preterito-imperfeito-a2",
+      "preterito-perfeito-irregular-a2",
+      "pronomes-obliquos-a2",
+      "pronomes-relativos-a2",
+      "ser-vs-estar-a2",
+      "subjuntivo-presente-a2",
+      "verbo-ficar-a2",
+      "verbos-modais-a2",
+      "verbos-reflexivos-a2",
+      "voz-passiva-a2",
+      "comparativos-superlativos-b1",
+      "condicional-b1",
+      "conectivos-b1",
+      "conjuntivo-imperfeito-b1",
+      "discurso-indireto-b1",
+      "futuro-conjuntivo-b1",
+      "futuro-presente-b1",
+      "gerundio-b1",
+      "imperativo-b1",
+      "participio-passado-b1",
+      "periodo-hipotico-b1",
+      "preposicoes-b1",
+      "preterito-perfeito-vs-imperfeito-b1",
+      "pronomes-obliquos-b1",
+      "regencia-verbal-b1",
+      "ser-vs-estar-b1",
+      "subjuntivo-presente-b1",
+      "tempos-compostos-b1",
+      "verbos-reflexos-b1",
+      "voz-passiva-b1"
+    ],
+    "disallowedGrammar": [
+      "registro literario",
+      "mesóclise",
+      "português europeu"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 11.3,
+      "maxSentenceWords": 39,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Prosa B1 con tiempos compuestos, futuro do subjuntivo y período hipotético. Sin mesóclise ni norma europea. Inferencia moderada."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué revela el cuaderno?",
+      "options": [
+        {
+          "id": "nocobro",
+          "text": "Que el abuelo dejó de cobrar casi dos años de trabajo, y nunca lo contó"
+        },
+        {
+          "id": "deudas",
+          "text": "Que el abuelo tenía deudas ocultas con sus clientes"
+        },
+        {
+          "id": "fraude",
+          "text": "Que el abuelo llevaba una contabilidad falsa"
+        }
+      ],
+      "answer": "nocobro",
+      "evidence": "A última coluna era o valor que ele não tinha cobrado … Somando tudo, dava quase dois anos de trabalho.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y las letras al lado de las líneas explican a quién: viudas, desempleados, la iglesia."
+        },
+        "incorrect": {
+          "es": "No hay deudas ni fraude: al contrario, es dinero que él decidió no cobrar. Busca lo que entendió la tía."
+        },
+        "strategy": {
+          "es": "Cuando un texto plantea un enigma y alguien lo resuelve, la solución es la tesis. Busca «ela entendeu»."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántas noches tardó la tía en entender la columna?",
+      "options": [
+        {
+          "id": "tres",
+          "text": "Tres"
+        },
+        {
+          "id": "dos",
+          "text": "Dos"
+        },
+        {
+          "id": "cuarenta",
+          "text": "Cuarenta"
+        }
+      ],
+      "answer": "tres",
+      "evidence": "Minha tia passou duas noites conferindo … Na terceira noite ela entendeu.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: dos noches revisando y en la tercera lo entendió. Los cuarenta son los años de oficio del abuelo."
+        },
+        "incorrect": {
+          "es": "Las dos noches son las que pasó revisando sin entender. Busca cuándo lo entendió."
+        },
+        "strategy": {
+          "es": "Si un texto da un plazo y luego un momento, súmalos: el segundo suele incluir al primero."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que la tía «tinha sido contadora antes de se aposentar». ¿Qué era?",
+      "options": [
+        {
+          "id": "contable",
+          "text": "Contable, llevaba cuentas"
+        },
+        {
+          "id": "narradora",
+          "text": "Narradora de cuentos"
+        },
+        {
+          "id": "cajera",
+          "text": "Cajera de un banco"
+        }
+      ],
+      "answer": "contable",
+      "evidence": "Ela tinha sido contadora antes de se aposentar e não conseguia deixar aquilo em paz.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y explica por qué ella y no otro descubrió lo que significaba la columna."
+        },
+        "incorrect": {
+          "es": "Es un falso amigo. Fíjate en qué está haciendo con el cuaderno: revisar números durante dos noches."
+        },
+        "strategy": {
+          "es": "Si una profesión explica la acción del personaje, esa relación te da el significado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice que lo que el abuelo se quejaba «era verdad y al mismo tiempo no era»?",
+      "options": [
+        {
+          "id": "ambas",
+          "text": "Porque le pagaban tarde, pero además él mismo renunciaba a cobrar"
+        },
+        {
+          "id": "mentira",
+          "text": "Porque en realidad ganaba mucho dinero"
+        },
+        {
+          "id": "exagerado",
+          "text": "Porque exageraba para dar pena a la familia"
+        }
+      ],
+      "answer": "ambas",
+      "evidence": "Dizia que os clientes demoravam para pagar e que a profissão não valia mais a pena. Tudo isso era verdade e ao mesmo tempo não era.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Las quejas eran ciertas, pero ocultaban que parte del problema era una decisión suya."
+        },
+        "incorrect": {
+          "es": "El texto no dice que ganara mucho ni que exagerara. Cruza sus quejas con lo que revela la columna."
+        },
+        "strategy": {
+          "es": "Una paradoja se resuelve cruzando dos pasajes distintos. Busca cuáles se contradicen."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la abuela conocía lo que había en la última columna.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Ele nunca tinha falado do assunto, nem para a minha avó, que já havia morrido em 2011.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: el texto lo descarta expresamente, y la abuela además había muerto en 2011."
+        },
+        "incorrect": {
+          "es": "Busca la frase con «nem para a minha avó». Es una negación reforzada."
+        },
+        "strategy": {
+          "es": "La construcción «nem para…» amplía una negación anterior. Si la ves, nadie queda excluido."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué termina diciendo «Não para conferir as contas. Para ver a letra»?",
+      "options": [
+        {
+          "id": "persona",
+          "text": "Para separar el valor documental del afectivo: le importa quién lo escribió"
+        },
+        {
+          "id": "duda",
+          "text": "Para admitir que aún duda de las cifras"
+        },
+        {
+          "id": "ahorro",
+          "text": "Para explicar que sigue usando el cuaderno para sus gastos"
+        }
+      ],
+      "answer": "persona",
+      "evidence": "Eu abro de vez em quando. Não para conferir as contas. Para ver a letra.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Descarta el uso práctico y deja el otro: la caligrafía es lo que queda de él."
+        },
+        "incorrect": {
+          "es": "No duda de las cifras ni lo usa para sus cuentas. Fíjate en qué descarta y qué afirma."
+        },
+        "strategy": {
+          "es": "La estructura «no para X. Para Y» separa dos motivos. El segundo es el que el autor defiende."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en portugués sobre un objeto que encontraste y que cambió lo que sabías de alguien. Usa cuatro tiempos compuestos y contrasta perfeito e imperfeito."
+    },
+    "minWords": 70,
+    "maxWords": 140,
+    "hints": [
+      "Quando… morreu, nós tivemos que…",
+      "Ele havia trabalhado…",
+      "Ele nunca tinha falado do assunto.",
+      "Eu abro de vez em quando."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de portugués brasileño y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués B1: El cuaderno que nadie había abierto | WeLearn"
+    },
+    "description": {
+      "es": "Lee un relato en portugués de Brasil B1 y practica los tiempos compuestos y el contraste entre perfeito e imperfeito. Con vocabulario y seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/b1/lectura/o-caderno-que-ninguem-tinha-aberto",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-b1-o-predio-que-foi-tombado"
+    ]
+  }
+}

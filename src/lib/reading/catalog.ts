@@ -120,6 +120,10 @@ import ptA2FazTempoQueEuNaoParo from '@/data/reading/exercises/pt-a2-faz-tempo-q
 import ptA2OErroDeTrintaMil from '@/data/reading/exercises/pt-a2-o-erro-de-trinta-mil.json'
 import ptA2TresBairrosUmAluguel from '@/data/reading/exercises/pt-a2-tres-bairros-um-aluguel.json'
 import ptA2VoltarParaACidadePequena from '@/data/reading/exercises/pt-a2-voltar-para-a-cidade-pequena.json'
+// Portugués (Brasil) B1 — generadas desde `src/data/reading/source/pt-b1.mjs`. Nivel en curso.
+import ptB1OCadernoQueNinguemTinhaAberto from '@/data/reading/exercises/pt-b1-o-caderno-que-ninguem-tinha-aberto.json'
+import ptB1OPredioQueFoiTombado from '@/data/reading/exercises/pt-b1-o-predio-que-foi-tombado.json'
+import ptB1SeEuTivesseDitoNao from '@/data/reading/exercises/pt-b1-se-eu-tivesse-dito-nao.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -235,6 +239,9 @@ const RAW_EXERCISES: unknown[] = [
   ptA2OErroDeTrintaMil,
   ptA2TresBairrosUmAluguel,
   ptA2VoltarParaACidadePequena,
+  ptB1OCadernoQueNinguemTinhaAberto,
+  ptB1OPredioQueFoiTombado,
+  ptB1SeEuTivesseDitoNao,
 ]
 
 export const READING_EXERCISES: ReadingExercise[] = RAW_EXERCISES.map((candidate) => {

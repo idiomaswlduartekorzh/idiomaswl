@@ -1,0 +1,479 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-b1-o-predio-que-foi-tombado",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Portugués B1"
+  },
+  "slug": "o-predio-que-foi-tombado",
+  "series": {
+    "id": "portugues-b1-lectura-10",
+    "episode": 2,
+    "totalEpisodes": 3,
+    "previousExerciseId": "pt-b1-o-caderno-que-ninguem-tinha-aberto",
+    "nextExerciseId": "pt-b1-se-eu-tivesse-dito-nao"
+  },
+  "classification": {
+    "genre": "reportaje",
+    "topic": "patrimonio y vivienda",
+    "intent": "learning",
+    "tags": [
+      "portugues b1",
+      "lectura",
+      "voz pasiva",
+      "participio"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El edificio que fue protegido"
+    },
+    "intro": {
+      "es": "Un edificio protegido por su fachada y habitado por catorce familias que no pueden reformar nada. Lectura de portugués B1 con la voz pasiva."
+    },
+    "mission": {
+      "es": "Averigua qué protege la ley y qué queda fuera de esa protección."
+    },
+    "targetText": "O edifício Miramar foi construído em 1936 e foi tombado pelo município em 2008. O tombamento protege a fachada, as janelas originais e a escadaria de mármore do hall de entrada. Não protege nada mais. Isso não é um detalhe técnico: é a origem de tudo o que aconteceu depois. Quando o prédio foi tombado, moravam ali dezoito famílias, quase todas de aluguel antigo. Hoje são quatorze. As quatro que saíram não foram expulsas por ninguém. Foram embora porque não puderam consertar o que estava quebrado. A regra é simples e brutal: qualquer obra que altere a aparência externa precisa ser aprovada pelo conselho de patrimônio, e o processo leva em média onze meses. Uma janela apodrecida não pode ser trocada por outra de alumínio. Tem que ser refeita em madeira, no modelo original, por um marceneiro aprovado. Custa seis vezes mais. Dona Iolanda, que mora no terceiro andar desde 1971, teve a janela do quarto interditada em 2019 por risco de queda. O pedido de reforma foi protocolado em março daquele ano. Foi aprovado em fevereiro do ano seguinte. O orçamento foi feito, mas ela não tinha o dinheiro. A janela continua fechada com madeira compensada até hoje. O caso dela foi documentado por um grupo de estudantes de arquitetura, que publicou um relatório em 2024. O relatório não pede o fim do tombamento. Pede outra coisa: que exista uma linha de crédito específica, porque a proteção foi criada pensando no prédio e não em quem mora nele. A prefeitura respondeu que o assunto está sendo estudado. Enquanto isso, dois apartamentos foram desocupados este ano. Um deles foi comprado por um escritório de advocacia, que não precisa de janela no quarto porque não vai dormir ali. Os estudantes calcularam também o custo médio de manter um apartamento em dia com as exigências do conselho: cerca de onze mil reais por década, sem contar as janelas. Para uma aposentada que paga aluguel antigo, isso é mais do que a renda de um ano inteiro. Para um escritório, é uma linha de despesa entre outras. A norma é a mesma para os dois, e é justamente aí que ela deixa de ser neutra. E aí está o problema que o relatório descreve em uma frase: o tombamento está sendo cumprido perfeitamente, e o prédio está sendo esvaziado do mesmo jeito. As duas coisas acontecem ao mesmo tempo e ninguém está infringindo a lei.",
+    "wordCount": 402,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Formar la voz pasiva con ser + participio en varios tiempos."
+      },
+      {
+        "es": "Reconocer el participio pasado como adjetivo: apodrecida, interditada, protocolado."
+      },
+      {
+        "es": "Distinguir lo que una norma protege de lo que deja fuera."
+      }
+    ],
+    "grammarFocus": [
+      "voz-passiva-b1",
+      "participio-passado-b1",
+      "voz-passiva-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "tombado",
+        "lemma": "tombar",
+        "glosses": {
+          "es": "declarado bien protegido por patrimonio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "orçamento",
+        "lemma": "orçamento",
+        "glosses": {
+          "es": "presupuesto de una obra"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "escadaria",
+        "lemma": "escadaria",
+        "glosses": {
+          "es": "escalinata, escalera principal"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "apodrecida",
+        "lemma": "apodrecer",
+        "glosses": {
+          "es": "podrida"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "marceneiro",
+        "lemma": "marceneiro",
+        "glosses": {
+          "es": "carpintero de muebles"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "interditada",
+        "lemma": "interditar",
+        "glosses": {
+          "es": "clausurada, prohibida su utilización"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "protocolado",
+        "lemma": "protocolar",
+        "glosses": {
+          "es": "registrado oficialmente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "compensada",
+        "lemma": "compensada",
+        "glosses": {
+          "es": "contrachapada; madeira compensada = madera contrachapada"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El «tombamento» es la figura brasileña de protección patrimonial. Puede recaer solo sobre elementos concretos —la fachada, una escalera— y no sobre el conjunto del inmueble."
+    },
+    "spanishSpeakerNote": {
+      "es": "Ojo con «tombar»: aquí no es tumbar ni derribar, sino todo lo contrario: proteger legalmente. Y fíjate en la doble pasiva del final: «está sendo cumprido» y «está sendo esvaziado» comparten estructura para subrayar la contradicción."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo en portugués que desarrolla una idea y cambia de dirección, distinguir el hecho de la interpretación, y justificar una inferencia cruzando dos pasajes."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares",
+      "comparativos-superlativos-a2",
+      "condicional-a2",
+      "conjuncoes-logicas-a2",
+      "diminutivos-aumentativos-a2",
+      "expressoes-com-fazer-a2",
+      "expressoes-tempo-a2",
+      "futuro-do-presente-a2",
+      "gerundio-a2",
+      "ha-faz-tempo-a2",
+      "para-vs-por-a2",
+      "preterito-imperfeito-a2",
+      "preterito-perfeito-irregular-a2",
+      "pronomes-obliquos-a2",
+      "pronomes-relativos-a2",
+      "ser-vs-estar-a2",
+      "subjuntivo-presente-a2",
+      "verbo-ficar-a2",
+      "verbos-modais-a2",
+      "verbos-reflexivos-a2",
+      "voz-passiva-a2",
+      "comparativos-superlativos-b1",
+      "condicional-b1",
+      "conectivos-b1",
+      "conjuntivo-imperfeito-b1",
+      "discurso-indireto-b1",
+      "futuro-conjuntivo-b1",
+      "futuro-presente-b1",
+      "gerundio-b1",
+      "imperativo-b1",
+      "participio-passado-b1",
+      "periodo-hipotico-b1",
+      "preposicoes-b1",
+      "preterito-perfeito-vs-imperfeito-b1",
+      "pronomes-obliquos-b1",
+      "regencia-verbal-b1",
+      "ser-vs-estar-b1",
+      "subjuntivo-presente-b1",
+      "tempos-compostos-b1",
+      "verbos-reflexos-b1",
+      "voz-passiva-b1"
+    ],
+    "disallowedGrammar": [
+      "registro literario",
+      "mesóclise",
+      "português europeu"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 13.9,
+      "maxSentenceWords": 29,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Prosa B1 con tiempos compuestos, futuro do subjuntivo y período hipotético. Sin mesóclise ni norma europea. Inferencia moderada."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es la contradicción que describe el reportaje?",
+      "options": [
+        {
+          "id": "ambos",
+          "text": "Que la norma se cumple perfectamente y el edificio se vacía a la vez"
+        },
+        {
+          "id": "ilegal",
+          "text": "Que los vecinos hacen obras ilegales"
+        },
+        {
+          "id": "derribo",
+          "text": "Que el ayuntamiento quiere derribar el edificio"
+        }
+      ],
+      "answer": "ambos",
+      "evidence": "o tombamento está sendo cumprido perfeitamente, e o prédio está sendo esvaziado do mesmo jeito",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y remata diciendo que nadie está infringiendo la ley. Ese es el problema."
+        },
+        "incorrect": {
+          "es": "Nadie incumple nada ni se plantea derribar: el edificio está protegido. Busca la frase final."
+        },
+        "strategy": {
+          "es": "Cuando dos frases con la misma estructura dicen cosas opuestas, ahí está la tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto tarda de media la aprobación de una obra?",
+      "options": [
+        {
+          "id": "once",
+          "text": "Once meses"
+        },
+        {
+          "id": "seis",
+          "text": "Seis meses"
+        },
+        {
+          "id": "dos",
+          "text": "Dos años"
+        }
+      ],
+      "answer": "once",
+      "evidence": "o processo leva em média onze meses",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El seis es cuántas veces más cuesta la ventana de madera."
+        },
+        "incorrect": {
+          "es": "El seis se refiere al coste, no al plazo. Busca la cifra que va con «em média»."
+        },
+        "strategy": {
+          "es": "Empareja cada cifra con su unidad: meses, veces, familias. Solo una responde."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que el edificio «foi tombado pelo município». ¿Qué significa?",
+      "options": [
+        {
+          "id": "protegido",
+          "text": "Que fue declarado patrimonio protegido"
+        },
+        {
+          "id": "derribado",
+          "text": "Que fue derribado"
+        },
+        {
+          "id": "expropiado",
+          "text": "Que fue expropiado por el ayuntamiento"
+        }
+      ],
+      "answer": "protegido",
+      "evidence": "O tombamento protege a fachada, as janelas originais e a escadaria de mármore",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. La frase siguiente lo define: dice exactamente qué protege."
+        },
+        "incorrect": {
+          "es": "Un edificio derribado no tendría catorce familias viviendo dentro. La frase siguiente lo define."
+        },
+        "strategy": {
+          "es": "Si una palabra desconocida reaparece como sustantivo con un verbo que la explica, ahí tienes la definición."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué se fueron las cuatro familias?",
+      "options": [
+        {
+          "id": "coste",
+          "text": "Porque no pudieron pagar las reformas que la norma exige"
+        },
+        {
+          "id": "expulsion",
+          "text": "Porque el ayuntamiento las expulsó"
+        },
+        {
+          "id": "venta",
+          "text": "Porque vendieron sus pisos a buen precio"
+        }
+      ],
+      "answer": "coste",
+      "evidence": "As quatro que saíram não foram expulsas por ninguém. Foram embora porque não puderam consertar o que estava quebrado.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto descarta expresamente la expulsión antes de dar la razón."
+        },
+        "incorrect": {
+          "es": "El texto niega la expulsión en la frase anterior, y eran inquilinos de alquiler antiguo, no propietarios."
+        },
+        "strategy": {
+          "es": "Cuando un texto descarta una explicación y da otra en la frase siguiente, la segunda es la buena."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el informe de los estudiantes pide que se retire la protección del edificio.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "O relatório não pede o fim do tombamento. Pede outra coisa: que exista uma linha de crédito específica",
+      "feedback": {
+        "correct": {
+          "es": "Falso: pide una línea de crédito, no que se retire la protección. La distinción es deliberada."
+        },
+        "incorrect": {
+          "es": "Busca la frase que empieza con «O relatório não pede». Ahí lo aclara."
+        },
+        "strategy": {
+          "es": "Una negación explícita descarta la lectura fácil. Léela antes de suponer qué pide un informe."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué menciona el despacho de abogados que compró un piso?",
+      "options": [
+        {
+          "id": "ejemplo",
+          "text": "Para mostrar quién sí puede permitirse las restricciones: quien no vive allí"
+        },
+        {
+          "id": "critica",
+          "text": "Para criticar a los abogados por especular"
+        },
+        {
+          "id": "dato",
+          "text": "Como un dato administrativo sin relación con el argumento"
+        }
+      ],
+      "answer": "ejemplo",
+      "evidence": "que não precisa de janela no quarto porque não vai dormir ali",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El detalle de la ventana es el argumento entero: la norma pesa distinto según el uso."
+        },
+        "incorrect": {
+          "es": "No hay acusación de especular ni es un dato suelto: la explicación de la ventana lo conecta con todo."
+        },
+        "strategy": {
+          "es": "Si un dato viene con una explicación irónica, esa explicación revela su función en el texto."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en portugués sobre una norma que protege algo y perjudica a alguien. Usa cinco construcciones en voz pasiva y tres participios como adjetivo."
+    },
+    "minWords": 70,
+    "maxWords": 140,
+    "hints": [
+      "O edifício foi construído em…",
+      "O… protege… Não protege nada mais.",
+      "foi aprovado em…",
+      "está sendo cumprido…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de portugués brasileño y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués B1: El edificio que fue protegido | WeLearn"
+    },
+    "description": {
+      "es": "Lee un reportaje en portugués de Brasil B1 y practica la voz pasiva y el participio pasado. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/portugues/b1/lectura/o-predio-que-foi-tombado",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-b1-o-caderno-que-ninguem-tinha-aberto",
+      "pt-b1-se-eu-tivesse-dito-nao"
+    ]
+  }
+}
