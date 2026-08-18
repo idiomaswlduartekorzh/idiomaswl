@@ -1,0 +1,462 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ja-a1-basu-de-ikimasu",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Japonés A1",
+    "jlpt": "N5",
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el JLPT es aproximada: son dos escalas distintas, con exámenes distintos. A1 se sitúa alrededor del N5, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "basu-de-ikimasu",
+  "series": {
+    "id": "japones-a1-lectura-10",
+    "episode": 7,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ja-a1-dare-mo-shirimasen",
+    "nextExerciseId": "ja-a1-katakana-wa-muzukashii"
+  },
+  "classification": {
+    "genre": "instrucciones",
+    "topic": "cómo llegar a una casa sin dirección clara",
+    "intent": "learning",
+    "tags": [
+      "japones a1",
+      "lectura",
+      "partículas で y へ",
+      "orden de la frase"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Voy en autobús"
+    },
+    "intro": {
+      "es": "Su casa no tiene un número fácil de encontrar, así que escribió las instrucciones y las manda a todo el mundo. Lectura de japonés A1."
+    },
+    "mission": {
+      "es": "Averigua cuál es la última referencia que da."
+    },
+    "targetText": "わたしの うちは わかりにくいです。 ですから、 せつめいを かきました。\n\nまず、 えきから バスで いきます。 十二ばんの バスです。\n\nつぎに、 「みなみこうえん」で おります。 バスていから こうえんへ あるきます。 五分ぐらいです。\n\nこうえんの まえに 白い ビルが あります。 わたしの うちでは ありません。\n\nビルの よこの ちいさい みちを 入ります。 その みちには なまえが ありません。\n\nみちの おわりに あおい ドアが あります。 それが わたしの うちです。\n\nみんな この せつめいで きます。 でも みんな 「ちいさい みち」で でんわを かけます。",
+    "wordCount": 212,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Usar で para el medio de transporte y へ para la dirección."
+      },
+      {
+        "es": "Ordenar la frase japonesa: sujeto, complementos con partícula y verbo al final."
+      },
+      {
+        "es": "Seguir un itinerario paso a paso."
+      }
+    ],
+    "grammarFocus": [
+      "particula-de-e",
+      "estructura-sov-particulas"
+    ],
+    "vocabulary": [
+      {
+        "surface": "わかりにくい",
+        "lemma": "わかりにくい",
+        "reading": "わかりにくい",
+        "glosses": {
+          "es": "difícil de encontrar o de entender"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "せつめい",
+        "lemma": "せつめい",
+        "reading": "せつめい",
+        "glosses": {
+          "es": "explicación, instrucciones"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "まず",
+        "lemma": "まず",
+        "reading": "まず",
+        "glosses": {
+          "es": "primero, en primer lugar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "おります",
+        "lemma": "おります",
+        "reading": "おります",
+        "glosses": {
+          "es": "me bajo (de un transporte)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "こうえん",
+        "lemma": "こうえん",
+        "reading": "こうえん",
+        "glosses": {
+          "es": "parque"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ビル",
+        "lemma": "ビル",
+        "reading": "ビル",
+        "glosses": {
+          "es": "edificio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "よこ",
+        "lemma": "よこ",
+        "reading": "よこ",
+        "glosses": {
+          "es": "al lado de"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "おわり",
+        "lemma": "おわり",
+        "reading": "おわり",
+        "glosses": {
+          "es": "final"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Las direcciones japonesas no se basan en el nombre de la calle sino en distritos y bloques, así que explicar cómo llegar con referencias visuales es lo normal, no una excentricidad."
+    },
+    "spanishSpeakerNote": {
+      "es": "で marca el medio: バスで いきます, «voy en autobús». へ marca la dirección: こうえんへ あるきます, «camino hacia el parque». Y el verbo va siempre al final de la frase."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": true,
+    "romanization": "a0-only",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en japonés escrito casi todo en kana, identificar de quién o de qué se habla gracias a las partículas, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adverbios-frecuencia",
+      "arimasu-imasu",
+      "conjunciones",
+      "desu-masu",
+      "estructura-sov-particulas",
+      "expresiones-cotidianas",
+      "hiragana-basico",
+      "i-keiyoshi",
+      "interrogativos-ka",
+      "jikan-tiempo",
+      "katakana-basico",
+      "masu-kei-conjugacion",
+      "na-keiyoshi",
+      "negacion-completa",
+      "numeros-contadores",
+      "particula-de-e",
+      "particula-wa-ga",
+      "particula-wo-ni",
+      "tai-form",
+      "te-form-permission"
+    ],
+    "disallowedGrammar": [
+      "forma llana (辞書形) en oración principal",
+      "keigo",
+      "condicionales",
+      "voz pasiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 14.1,
+      "maxSentenceWords": 20,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Forma です／ます, partículas básicas, adjetivos i y na. Kanji por debajo del 12 %, con espacios entre palabras. Furigana declarado pero no implementado en el runner: el apoyo lo dan las lecturas en kana del vocabulario."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Para qué escribió las instrucciones?",
+      "options": [
+        {
+          "id": "dificil",
+          "text": "Porque su casa es difícil de encontrar y así se lo manda a todo el mundo"
+        },
+        {
+          "id": "mudanza",
+          "text": "Porque acaba de mudarse"
+        },
+        {
+          "id": "fiesta",
+          "text": "Porque va a dar una fiesta"
+        }
+      ],
+      "answer": "dificil",
+      "evidence": "わたしの うちは わかりにくいです。 ですから、 せつめいを かきました。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo dice en las dos primeras frases con ですから."
+        },
+        "incorrect": {
+          "es": "No se habla de mudanza ni de fiesta. Lee las dos primeras frases."
+        },
+        "strategy": {
+          "es": "La conjunción ですから (por eso) une una causa con su consecuencia."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué número de autobús hay que coger?",
+      "options": [
+        {
+          "id": "doce",
+          "text": "El doce"
+        },
+        {
+          "id": "cinco",
+          "text": "El cinco"
+        },
+        {
+          "id": "dos",
+          "text": "El dos"
+        }
+      ],
+      "answer": "doce",
+      "evidence": "十二ばんの バスです。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: el contador ばん marca el número de línea."
+        },
+        "incorrect": {
+          "es": "Los cinco son minutos andando. Busca el contador ばん."
+        },
+        "strategy": {
+          "es": "El contador ばん indica número de orden: línea, planta, puesto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué significa おります?",
+      "options": [
+        {
+          "id": "bajarse",
+          "text": "Bajarse del autobús"
+        },
+        {
+          "id": "subirse",
+          "text": "Subirse al autobús"
+        },
+        {
+          "id": "esperar",
+          "text": "Esperar el autobús"
+        }
+      ],
+      "answer": "bajarse",
+      "evidence": "「みなみこうえん」で おります。 バスていから こうえんへ あるきます。",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: después ya camina desde la parada."
+        },
+        "incorrect": {
+          "es": "La frase siguiente dice que camina desde la parada, así que ya no va en el autobús."
+        },
+        "strategy": {
+          "es": "Si después del verbo la persona camina, el verbo anterior era bajarse."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué todo el mundo llama por teléfono en la calle pequeña?",
+      "options": [
+        {
+          "id": "sinnombre",
+          "text": "Porque esa calle no tiene nombre y ahí se pierde la referencia"
+        },
+        {
+          "id": "lejos",
+          "text": "Porque está demasiado lejos del parque"
+        },
+        {
+          "id": "cerrada",
+          "text": "Porque la calle está cortada"
+        }
+      ],
+      "answer": "sinnombre",
+      "evidence": "その みちには なまえが ありません … でも みんな 「ちいさい みち」で でんわを かけます。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y es el único punto del itinerario sin nombre propio."
+        },
+        "incorrect": {
+          "es": "La calle no está cortada y el parque queda a cinco minutos. Fíjate en qué le falta a esa calle."
+        },
+        "strategy": {
+          "es": "Si el texto señala una carencia y luego un problema, están conectados."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el edificio blanco frente al parque es su casa.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "こうえんの まえに 白い ビルが あります。 わたしの うちでは ありません。",
+      "feedback": {
+        "correct": {
+          "es": "Falso: lo aclara expresamente en la frase siguiente."
+        },
+        "incorrect": {
+          "es": "Busca la frase justo después del edificio blanco: es una negación."
+        },
+        "strategy": {
+          "es": "Si tras describir algo viene …では ありません, el texto está descartándolo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el itinerario.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Coger el autobús doce en la estación"
+        },
+        {
+          "id": "p2",
+          "text": "Bajarse en «Minami-kōen» y andar al parque"
+        },
+        {
+          "id": "p3",
+          "text": "Entrar por la calle pequeña junto al edificio blanco"
+        },
+        {
+          "id": "p4",
+          "text": "La puerta azul al final de la calle"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "まず、 えきから バスで いきます … つぎに、 「みなみこうえん」で おります … ビルの よこの ちいさい みちを 入ります … みちの おわりに あおい ドアが あります。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el texto lo marca con まず y つぎに."
+        },
+        "incorrect": {
+          "es": "Guíate por まず (primero) y つぎに (después)."
+        },
+        "strategy": {
+          "es": "Las palabras まず y つぎに ordenan cualquier instrucción japonesa."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en japonés explicando cómo llegar a tu casa. Usa で para el transporte y へ para la dirección."
+    },
+    "minWords": 60,
+    "maxWords": 160,
+    "hints": [
+      "まず、 えきから バスで いきます。",
+      "つぎに、 …で おります。",
+      "こうえんへ あるきます。",
+      "それが わたしの うちです。"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de japonés y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de japonés A1: voy en autobús | WeLearn"
+    },
+    "description": {
+      "es": "Lee unas instrucciones en japonés A1 y practica las partículas で y へ y el orden de la frase. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/japones/a1/lectura/basu-de-ikimasu",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ja-a1-dare-mo-shirimasen",
+      "ja-a1-katakana-wa-muzukashii"
+    ]
+  }
+}

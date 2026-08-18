@@ -237,6 +237,18 @@ import ruB1NetKassyNetProblem from '@/data/reading/exercises/ru-b1-net-kassy-net
 import ruB1OnaNeDoshla from '@/data/reading/exercises/ru-b1-ona-ne-doshla.json'
 import ruB1Minutochku from '@/data/reading/exercises/ru-b1-minutochku.json'
 import ruB1ChemKholodneeTemLuchshe from '@/data/reading/exercises/ru-b1-chem-kholodnee-tem-luchshe.json'
+
+// Japonés A1 — generadas desde `src/data/reading/source/ja-a1.mjs`. Nivel completo.
+import jaA1HoSanToYobimasu from '@/data/reading/exercises/ja-a1-ho-san-to-yobimasu.json'
+import jaA1NekoGaImasu from '@/data/reading/exercises/ja-a1-neko-ga-imasu.json'
+import jaA1MaiasaRokuJiNiOkimasu from '@/data/reading/exercises/ja-a1-maiasa-roku-ji-ni-okimasu.json'
+import jaA1AtarashiiJitensha from '@/data/reading/exercises/ja-a1-atarashii-jitensha.json'
+import jaA1HachiJiJuuGoFunNoBasu from '@/data/reading/exercises/ja-a1-hachi-ji-juu-go-fun-no-basu.json'
+import jaA1DareMoShirimasen from '@/data/reading/exercises/ja-a1-dare-mo-shirimasen.json'
+import jaA1BasuDeIkimasu from '@/data/reading/exercises/ja-a1-basu-de-ikimasu.json'
+import jaA1KatakanaWaMuzukashii from '@/data/reading/exercises/ja-a1-katakana-wa-muzukashii.json'
+import jaA1TabeteMoIiDesuKa from '@/data/reading/exercises/ja-a1-tabete-mo-ii-desu-ka.json'
+import jaA1Itadakimasu from '@/data/reading/exercises/ja-a1-itadakimasu.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -452,6 +464,16 @@ const RAW_EXERCISES: unknown[] = [
   ruB1OnaNeDoshla,
   ruB1Minutochku,
   ruB1ChemKholodneeTemLuchshe,
+  jaA1HoSanToYobimasu,
+  jaA1NekoGaImasu,
+  jaA1MaiasaRokuJiNiOkimasu,
+  jaA1AtarashiiJitensha,
+  jaA1HachiJiJuuGoFunNoBasu,
+  jaA1DareMoShirimasen,
+  jaA1BasuDeIkimasu,
+  jaA1KatakanaWaMuzukashii,
+  jaA1TabeteMoIiDesuKa,
+  jaA1Itadakimasu,
 ]
 
 export const READING_EXERCISES: ReadingExercise[] = RAW_EXERCISES.map((candidate) => {

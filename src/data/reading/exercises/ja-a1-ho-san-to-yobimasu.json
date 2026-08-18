@@ -1,0 +1,461 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ja-a1-ho-san-to-yobimasu",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Japonés A1",
+    "jlpt": "N5",
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el JLPT es aproximada: son dos escalas distintas, con exámenes distintos. A1 se sitúa alrededor del N5, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "ho-san-to-yobimasu",
+  "series": {
+    "id": "japones-a1-lectura-10",
+    "episode": 1,
+    "totalEpisodes": 10,
+    "previousExerciseId": null,
+    "nextExerciseId": "ja-a1-neko-ga-imasu"
+  },
+  "classification": {
+    "genre": "presentación personal",
+    "topic": "un nombre que nadie puede pronunciar",
+    "intent": "learning",
+    "tags": [
+      "japones a1",
+      "lectura",
+      "です／ます",
+      "partículas は y が"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Me llaman señor Ho"
+    },
+    "intro": {
+      "es": "Su apellido es imposible en japonés, así que en la empresa le pusieron otro. Al principio le pareció raro. Lectura de japonés A1."
+    },
+    "mission": {
+      "es": "Averigua qué piensa ahora de su nombre japonés."
+    },
+    "targetText": "わたしの なまえは ホセ・ドゥアルテです。コロンビアから きました。\n\n日本人の ともだちは 「ホセ」が だいじょうぶです。でも 「ドゥアルテ」は とても むずかしいです。\n\nかいしゃの 人は わたしを 「ホーさん」と よびます。\n\nはじめは へんでした。わたしの なまえでは ありませんから、へんじが とても おそかったです。でも 今は すきです。とても すきです。\n\n「ホーさん」は 日本の わたしです。コロンビアの わたしと ちがいますが、これも わたしです。\n\nははは でんわで 「ホーさん」と いいました。とても おもしろかったです。",
+    "wordCount": 207,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Usar la forma です／ます en frases afirmativas y negativas."
+      },
+      {
+        "es": "Distinguir la partícula は (tema) de が (sujeto que se destaca)."
+      },
+      {
+        "es": "Leer un texto escrito casi todo en hiragana y katakana."
+      }
+    ],
+    "grammarFocus": [
+      "desu-masu",
+      "particula-wa-ga"
+    ],
+    "vocabulary": [
+      {
+        "surface": "なまえ",
+        "lemma": "なまえ",
+        "reading": "なまえ",
+        "glosses": {
+          "es": "nombre"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ともだち",
+        "lemma": "ともだち",
+        "reading": "ともだち",
+        "glosses": {
+          "es": "amigo, amiga"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "むずかしい",
+        "lemma": "むずかしい",
+        "reading": "むずかしい",
+        "glosses": {
+          "es": "difícil"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "かいしゃ",
+        "lemma": "かいしゃ",
+        "reading": "かいしゃ",
+        "glosses": {
+          "es": "empresa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "よびます",
+        "lemma": "よびます",
+        "reading": "よびます",
+        "glosses": {
+          "es": "llaman (a alguien por un nombre)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "へん",
+        "lemma": "へん",
+        "reading": "へん",
+        "glosses": {
+          "es": "raro, extraño"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ちがいます",
+        "lemma": "ちがいます",
+        "reading": "ちがいます",
+        "glosses": {
+          "es": "es distinto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "でんわ",
+        "lemma": "でんわ",
+        "reading": "でんわ",
+        "glosses": {
+          "es": "teléfono"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En las empresas japonesas es habitual acortar los nombres extranjeros hasta una forma pronunciable y añadirle さん. No es una falta de respeto: さん es precisamente la marca de respeto."
+    },
+    "spanishSpeakerNote": {
+      "es": "は marca el tema («de mí, mi nombre es…») y が destaca el sujeto («“ホセ” sí es fácil»). En «「ホセ」が だいじょうぶです» el が señala cuál de los dos nombres no da problema."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": true,
+    "romanization": "a0-only",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en japonés escrito casi todo en kana, identificar de quién o de qué se habla gracias a las partículas, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adverbios-frecuencia",
+      "arimasu-imasu",
+      "conjunciones",
+      "desu-masu",
+      "estructura-sov-particulas",
+      "expresiones-cotidianas",
+      "hiragana-basico",
+      "i-keiyoshi",
+      "interrogativos-ka",
+      "jikan-tiempo",
+      "katakana-basico",
+      "masu-kei-conjugacion",
+      "na-keiyoshi",
+      "negacion-completa",
+      "numeros-contadores",
+      "particula-de-e",
+      "particula-wa-ga",
+      "particula-wo-ni",
+      "tai-form",
+      "te-form-permission"
+    ],
+    "disallowedGrammar": [
+      "forma llana (辞書形) en oración principal",
+      "keigo",
+      "condicionales",
+      "voz pasiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 34.5,
+      "maxSentenceWords": 54,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Forma です／ます, partículas básicas, adjetivos i y na. Kanji por debajo del 12 %, con espacios entre palabras. Furigana declarado pero no implementado en el runner: el apoyo lo dan las lecturas en kana del vocabulario."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿De qué trata el texto?",
+      "options": [
+        {
+          "id": "nombre",
+          "text": "De cómo acabó aceptando el nombre japonés que le pusieron en el trabajo"
+        },
+        {
+          "id": "trabajo",
+          "text": "De las dificultades de encontrar trabajo en Japón"
+        },
+        {
+          "id": "familia",
+          "text": "De una discusión con su madre por teléfono"
+        }
+      ],
+      "answer": "nombre",
+      "evidence": "はじめは へんでした … でも 今は すきです。",
+      "feedback": {
+        "correct": {
+          "es": "Sí: primero le pareció raro y ahora le gusta."
+        },
+        "incorrect": {
+          "es": "No se habla de buscar trabajo, y con su madre no discute. Busca las frases con はじめは y 今は."
+        },
+        "strategy": {
+          "es": "Cuando un texto contrapone はじめは (al principio) y 今は (ahora), el cambio es el asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué parte de su nombre resulta difícil en japonés?",
+      "options": [
+        {
+          "id": "duarte",
+          "text": "«ドゥアルテ»"
+        },
+        {
+          "id": "jose",
+          "text": "«ホセ»"
+        },
+        {
+          "id": "ambos",
+          "text": "Las dos partes por igual"
+        }
+      ],
+      "answer": "duarte",
+      "evidence": "「ホセ」が だいじょうぶです。でも 「ドゥアルテ」は とても むずかしいです。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: «ホセ» no da problema, el apellido sí."
+        },
+        "incorrect": {
+          "es": "El texto dice expresamente que una de las dos está bien. Fíjate en la partícula が."
+        },
+        "strategy": {
+          "es": "La partícula が destaca justo el elemento que se está contrastando."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «はじめは へんでした». ¿Qué significa へん?",
+      "options": [
+        {
+          "id": "raro",
+          "text": "Raro, extraño"
+        },
+        {
+          "id": "facil",
+          "text": "Fácil"
+        },
+        {
+          "id": "bonito",
+          "text": "Bonito"
+        }
+      ],
+      "answer": "raro",
+      "evidence": "はじめは へんでした。わたしの なまえでは ありません。",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y la frase siguiente lo explica: no era su nombre."
+        },
+        "incorrect": {
+          "es": "La frase siguiente aclara por qué lo sentía así: no era su nombre."
+        },
+        "strategy": {
+          "es": "Si la frase siguiente da la razón, úsala para deducir la palabra anterior."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué le hizo gracia que su madre dijera «ホーさん»?",
+      "options": [
+        {
+          "id": "dos",
+          "text": "Porque su nombre japonés llegó hasta Colombia, donde no hacía falta"
+        },
+        {
+          "id": "error",
+          "text": "Porque su madre se equivocó de nombre"
+        },
+        {
+          "id": "enfado",
+          "text": "Porque a su madre no le gustó el nombre"
+        }
+      ],
+      "answer": "dos",
+      "evidence": "「ホーさん」は 日本の わたしです … ははは でんわで 「ホーさん」と いいました。とても おもしろかったです。",
+      "feedback": {
+        "correct": {
+          "es": "Sí: el nombre era el de su vida japonesa y apareció en una llamada familiar."
+        },
+        "incorrect": {
+          "es": "No hay error ni enfado: dice que le pareció muy divertido. Cruza las dos frases."
+        },
+        "strategy": {
+          "es": "Para inferir, une el final con la frase donde se define qué es ese nombre."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: en la empresa le llaman por su apellido completo.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "かいしゃの 人は わたしを 「ホーさん」と よびます。",
+      "feedback": {
+        "correct": {
+          "es": "Falso: le llaman «ホーさん», que no es su apellido."
+        },
+        "incorrect": {
+          "es": "Busca la frase con かいしゃの 人は. Dice cómo le llaman."
+        },
+        "strategy": {
+          "es": "La estructura 「…」と よびます indica exactamente con qué nombre se dirigen a alguien."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el texto.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Se presenta y dice de dónde viene"
+        },
+        {
+          "id": "p2",
+          "text": "Explica qué parte del nombre es difícil"
+        },
+        {
+          "id": "p3",
+          "text": "En la empresa le llaman «ホーさん»"
+        },
+        {
+          "id": "p4",
+          "text": "Su madre lo usa por teléfono"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "わたしの なまえは ホセ・ドゥアルテです … 「ドゥアルテ」は とても むずかしいです … かいしゃの 人は … ははは でんわで …",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: presentación, problema, solución y remate."
+        },
+        "incorrect": {
+          "es": "Fíjate en el orden de los párrafos: primero quién es, luego el problema."
+        },
+        "strategy": {
+          "es": "Una presentación personal empieza siempre por el nombre y el origen."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en japonés presentándote y contando algo de tu nombre. Usa です／ます y las partículas は y が."
+    },
+    "minWords": 60,
+    "maxWords": 160,
+    "hints": [
+      "わたしの なまえは …です。",
+      "…から きました。",
+      "…は むずかしいです。",
+      "今は すきです。"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de japonés y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de japonés A1: me llaman señor Ho | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto corto en japonés A1 y practica la forma です／ます y las partículas は y が. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/japones/a1/lectura/ho-san-to-yobimasu",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ja-a1-neko-ga-imasu"
+    ]
+  }
+}

@@ -1,0 +1,462 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ja-a1-atarashii-jitensha",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Japonés A1",
+    "jlpt": "N5",
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el JLPT es aproximada: son dos escalas distintas, con exámenes distintos. A1 se sitúa alrededor del N5, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "atarashii-jitensha",
+  "series": {
+    "id": "japones-a1-lectura-10",
+    "episode": 4,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ja-a1-maiasa-roku-ji-ni-okimasu",
+    "nextExerciseId": "ja-a1-hachi-ji-juu-go-fun-no-basu"
+  },
+  "classification": {
+    "genre": "relato breve",
+    "topic": "una bicicleta de segunda mano",
+    "intent": "learning",
+    "tags": [
+      "japones a1",
+      "lectura",
+      "adjetivos i",
+      "adjetivos na"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Una bicicleta nueva"
+    },
+    "intro": {
+      "es": "La compró vieja, sucia y barata. Pero para él es nueva, y la palabra importa. Lectura de japonés A1."
+    },
+    "mission": {
+      "es": "Averigua por qué dice que su bicicleta es nueva."
+    },
+    "targetText": "せんしゅう じてんしゃを かいました。 やすかったです。 さんぜんえんでした。\n\nあたらしい じてんしゃでは ありません。 ふるい じてんしゃです。 いろは あおですが、 きたない あおです。\n\nでも わたしには あたらしいです。 わたしの はじめての じてんしゃですから。\n\nブレーキは あまり よくないです。 タイヤも しずかでは ありません。 うるさいです。\n\nでも べんりです。 えきまで ごふんです。 まえは にじゅっぷんでした。\n\nともだちは 「ふるいね」と いいました。 わたしは 「あたらしいよ」と いいました。 ふたりとも ただしいです。",
+    "wordCount": 211,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Conjugar los adjetivos i: やすい, ふるい, きたない, うるさい."
+      },
+      {
+        "es": "Usar los adjetivos na: しずか, べんり."
+      },
+      {
+        "es": "Distinguir un dato objetivo de lo que significa para alguien."
+      }
+    ],
+    "grammarFocus": [
+      "i-keiyoshi",
+      "na-keiyoshi"
+    ],
+    "vocabulary": [
+      {
+        "surface": "じてんしゃ",
+        "lemma": "じてんしゃ",
+        "reading": "じてんしゃ",
+        "glosses": {
+          "es": "bicicleta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ふるい",
+        "lemma": "ふるい",
+        "reading": "ふるい",
+        "glosses": {
+          "es": "viejo, usado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "きたない",
+        "lemma": "きたない",
+        "reading": "きたない",
+        "glosses": {
+          "es": "sucio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "はじめて",
+        "lemma": "はじめて",
+        "reading": "はじめて",
+        "glosses": {
+          "es": "por primera vez"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "しずか",
+        "lemma": "しずか",
+        "reading": "しずか",
+        "glosses": {
+          "es": "silencioso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "うるさい",
+        "lemma": "うるさい",
+        "reading": "うるさい",
+        "glosses": {
+          "es": "ruidoso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "べんり",
+        "lemma": "べんり",
+        "reading": "べんり",
+        "glosses": {
+          "es": "práctico, cómodo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ただしい",
+        "lemma": "ただしい",
+        "reading": "ただしい",
+        "glosses": {
+          "es": "correcto, tiene razón"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La bicicleta de segunda mano es el medio de transporte estándar hasta la estación en las ciudades japonesas, y hay aparcamientos de pago pensados solo para eso."
+    },
+    "spanishSpeakerNote": {
+      "es": "Hay dos clases de adjetivos: los i (ふるい, やすい) cambian ellos mismos —ふるくない, やすかった— y los na (しずか, べんり) necesitan です y no cambian: しずかでは ありません."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": true,
+    "romanization": "a0-only",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en japonés escrito casi todo en kana, identificar de quién o de qué se habla gracias a las partículas, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adverbios-frecuencia",
+      "arimasu-imasu",
+      "conjunciones",
+      "desu-masu",
+      "estructura-sov-particulas",
+      "expresiones-cotidianas",
+      "hiragana-basico",
+      "i-keiyoshi",
+      "interrogativos-ka",
+      "jikan-tiempo",
+      "katakana-basico",
+      "masu-kei-conjugacion",
+      "na-keiyoshi",
+      "negacion-completa",
+      "numeros-contadores",
+      "particula-de-e",
+      "particula-wa-ga",
+      "particula-wo-ni",
+      "tai-form",
+      "te-form-permission"
+    ],
+    "disallowedGrammar": [
+      "forma llana (辞書形) en oración principal",
+      "keigo",
+      "condicionales",
+      "voz pasiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 12.4,
+      "maxSentenceWords": 18,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Forma です／ます, partículas básicas, adjetivos i y na. Kanji por debajo del 12 %, con espacios entre palabras. Furigana declarado pero no implementado en el runner: el apoyo lo dan las lecturas en kana del vocabulario."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué explica el texto?",
+      "options": [
+        {
+          "id": "nueva",
+          "text": "Que la bicicleta es vieja de hecho, pero nueva para él porque es la primera que tiene"
+        },
+        {
+          "id": "cara",
+          "text": "Que le costó demasiado dinero"
+        },
+        {
+          "id": "rota",
+          "text": "Que la bicicleta está estropeada y no la puede usar"
+        }
+      ],
+      "answer": "nueva",
+      "evidence": "でも わたしには あたらしいです。 わたしの はじめての じてんしゃですから。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la razón va con から al final de la frase."
+        },
+        "incorrect": {
+          "es": "Costó tres mil yenes y la usa a diario. Busca la frase con わたしには."
+        },
+        "strategy": {
+          "es": "La partícula には señala «para mí», y suele introducir un punto de vista propio."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto tarda ahora hasta la estación?",
+      "options": [
+        {
+          "id": "cinco",
+          "text": "Cinco minutos"
+        },
+        {
+          "id": "veinte",
+          "text": "Veinte minutos"
+        },
+        {
+          "id": "tres",
+          "text": "Tres minutos"
+        }
+      ],
+      "answer": "cinco",
+      "evidence": "えきまで ごふんです。 まえは にじゅっぷんでした。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: los veinte minutos eran antes."
+        },
+        "incorrect": {
+          "es": "Los veinte son lo de antes y los tres mil son yenes, no minutos."
+        },
+        "strategy": {
+          "es": "まえは introduce lo de antes: compáralo con lo de ahora."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué significa べんり?",
+      "options": [
+        {
+          "id": "practico",
+          "text": "Práctico, cómodo"
+        },
+        {
+          "id": "barato",
+          "text": "Barato"
+        },
+        {
+          "id": "bonito",
+          "text": "Bonito"
+        }
+      ],
+      "answer": "practico",
+      "evidence": "でも べんりです。 えきまで ごふんです。 まえは にじゅっぷんでした。",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: lo justifica con el ahorro de tiempo."
+        },
+        "incorrect": {
+          "es": "Lo barato ya lo dijo antes con やすい. Fíjate en la razón que da a continuación."
+        },
+        "strategy": {
+          "es": "Si la frase siguiente da una ventaja de tiempo, el adjetivo habla de utilidad."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice que los dos tienen razón?",
+      "options": [
+        {
+          "id": "dos",
+          "text": "Porque «vieja» describe el objeto y «nueva» describe lo que es para él"
+        },
+        {
+          "id": "broma",
+          "text": "Porque su amigo estaba bromeando"
+        },
+        {
+          "id": "error",
+          "text": "Porque los dos se equivocaron de bicicleta"
+        }
+      ],
+      "answer": "dos",
+      "evidence": "ともだちは 「ふるいね」と いいました。 わたしは 「あたらしいよ」と いいました。 ふたりとも ただしいです。",
+      "feedback": {
+        "correct": {
+          "es": "Sí: son dos afirmaciones sobre cosas distintas."
+        },
+        "incorrect": {
+          "es": "No hay broma ni confusión: cada uno describe algo diferente."
+        },
+        "strategy": {
+          "es": "Si dos personas se contradicen y el texto dice que ambas aciertan, hablan de planos distintos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la bicicleta hace ruido al rodar.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "タイヤも しずかでは ありません。 うるさいです。",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y lo dice dos veces: no es silenciosa, es ruidosa."
+        },
+        "incorrect": {
+          "es": "Busca la frase sobre las ruedas. Usa dos adjetivos seguidos."
+        },
+        "strategy": {
+          "es": "Si un adjetivo se niega y el contrario se afirma, la idea queda doblemente clara."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el relato.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "La compró la semana pasada por tres mil yenes"
+        },
+        {
+          "id": "p2",
+          "text": "Describe su estado: vieja, azul, sucia"
+        },
+        {
+          "id": "p3",
+          "text": "Lo que no funciona bien: frenos y ruedas"
+        },
+        {
+          "id": "p4",
+          "text": "La conversación con su amigo"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "せんしゅう じてんしゃを かいました … ふるい じてんしゃです … ブレーキは あまり よくないです … ともだちは 「ふるいね」と いいました。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: compra, estado, defectos y diálogo."
+        },
+        "incorrect": {
+          "es": "Fíjate en dónde aparecen los frenos y dónde el amigo."
+        },
+        "strategy": {
+          "es": "Un relato breve suele acabar con la frase que le da sentido."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en japonés describiendo algo tuyo de segunda mano. Usa tres adjetivos i y dos adjetivos na."
+    },
+    "minWords": 60,
+    "maxWords": 160,
+    "hints": [
+      "せんしゅう …を かいました。",
+      "ふるい …です。",
+      "べんりです。",
+      "わたしには あたらしいです。"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de japonés y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de japonés A1: una bicicleta nueva | WeLearn"
+    },
+    "description": {
+      "es": "Lee un relato en japonés A1 y practica los adjetivos i y los adjetivos na. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/japones/a1/lectura/atarashii-jitensha",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ja-a1-maiasa-roku-ji-ni-okimasu",
+      "ja-a1-hachi-ji-juu-go-fun-no-basu"
+    ]
+  }
+}

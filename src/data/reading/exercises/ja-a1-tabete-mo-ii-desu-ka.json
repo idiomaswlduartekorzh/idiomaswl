@@ -1,0 +1,462 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ja-a1-tabete-mo-ii-desu-ka",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Japonés A1",
+    "jlpt": "N5",
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el JLPT es aproximada: son dos escalas distintas, con exámenes distintos. A1 se sitúa alrededor del N5, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "tabete-mo-ii-desu-ka",
+  "series": {
+    "id": "japones-a1-lectura-10",
+    "episode": 9,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ja-a1-katakana-wa-muzukashii",
+    "nextExerciseId": "ja-a1-itadakimasu"
+  },
+  "classification": {
+    "genre": "escena de trabajo",
+    "topic": "una caja de dulces en la oficina",
+    "intent": "learning",
+    "tags": [
+      "japones a1",
+      "lectura",
+      "forma たい",
+      "てもいい"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "¿Puedo comerlo?"
+    },
+    "intro": {
+      "es": "Una caja abierta encima de la mesa común. Nadie dice de quién es y nadie la toca. Lectura de japonés A1."
+    },
+    "mission": {
+      "es": "Averigua qué pasó cuando por fin preguntó."
+    },
+    "targetText": "かいしゃの つくえの 上に はこが あります。 中に おかしが あります。\n\nたべたいです。 とても たべたいです。 でも、 たべても いいですか。 わかりません。\n\nはこには かみが ありません。 なまえも ありません。\n\n三日 まちました。 だれも たべませんでした。 みんな 見ましたが、 だれも 手を 出しませんでした。\n\n四日め、 わたしは 田中さんに ききました。 「これ、 たべても いいですか。」\n\n田中さんは わらいました。 「どうぞ。 わたしが かいました。 みんなに 『どうぞ』と いいたかったですが、 はずかしかったです。」\n\nその日、 はこは からに なりました。\n\nいまは かならず かみを つけます。 「たべても いいです」と かきます。",
+    "wordCount": 238,
+    "estimatedMinutes": 10,
+    "objectives": [
+      {
+        "es": "Usar la forma たい para expresar deseo: たべたいです."
+      },
+      {
+        "es": "Pedir permiso con ても いいですか."
+      },
+      {
+        "es": "Leer una situación donde nadie pregunta y todos esperan."
+      }
+    ],
+    "grammarFocus": [
+      "tai-form",
+      "te-form-permission"
+    ],
+    "vocabulary": [
+      {
+        "surface": "つくえ",
+        "lemma": "つくえ",
+        "reading": "つくえ",
+        "glosses": {
+          "es": "mesa de trabajo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "はこ",
+        "lemma": "はこ",
+        "reading": "はこ",
+        "glosses": {
+          "es": "caja"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "おかし",
+        "lemma": "おかし",
+        "reading": "おかし",
+        "glosses": {
+          "es": "dulces"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "かみ",
+        "lemma": "かみ",
+        "reading": "かみ",
+        "glosses": {
+          "es": "papel, nota"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "まちました",
+        "lemma": "まちました",
+        "reading": "まちました",
+        "glosses": {
+          "es": "esperé"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "わらいました",
+        "lemma": "わらいました",
+        "reading": "わらいました",
+        "glosses": {
+          "es": "se rió"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "はずかしかった",
+        "lemma": "はずかしかった",
+        "reading": "はずかしかった",
+        "glosses": {
+          "es": "me daba vergüenza"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "から",
+        "lemma": "から",
+        "reading": "から",
+        "glosses": {
+          "es": "vacío"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Llevar dulces a la oficina al volver de un viaje es una costumbre firme en Japón. Suelen dejarse en una mesa común, y quien los trae no siempre lo anuncia."
+    },
+    "spanishSpeakerNote": {
+      "es": "たい expresa lo que uno quiere hacer: たべたいです. Y ても いいですか pide permiso: たべても いいですか, «¿puedo comerlo?». Las dos se construyen sobre la forma del verbo, no con un verbo aparte."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": true,
+    "romanization": "a0-only",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en japonés escrito casi todo en kana, identificar de quién o de qué se habla gracias a las partículas, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adverbios-frecuencia",
+      "arimasu-imasu",
+      "conjunciones",
+      "desu-masu",
+      "estructura-sov-particulas",
+      "expresiones-cotidianas",
+      "hiragana-basico",
+      "i-keiyoshi",
+      "interrogativos-ka",
+      "jikan-tiempo",
+      "katakana-basico",
+      "masu-kei-conjugacion",
+      "na-keiyoshi",
+      "negacion-completa",
+      "numeros-contadores",
+      "particula-de-e",
+      "particula-wa-ga",
+      "particula-wo-ni",
+      "tai-form",
+      "te-form-permission"
+    ],
+    "disallowedGrammar": [
+      "forma llana (辞書形) en oración principal",
+      "keigo",
+      "condicionales",
+      "voz pasiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 13.2,
+      "maxSentenceWords": 40,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Forma です／ます, partículas básicas, adjetivos i y na. Kanji por debajo del 12 %, con espacios entre palabras. Furigana declarado pero no implementado en el runner: el apoyo lo dan las lecturas en kana del vocabulario."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta el texto?",
+      "options": [
+        {
+          "id": "nadie",
+          "text": "Que nadie tocó los dulces tres días porque nadie preguntó, y quien los trajo tampoco lo dijo"
+        },
+        {
+          "id": "robo",
+          "text": "Que alguien se comió los dulces de otro"
+        },
+        {
+          "id": "regalo",
+          "text": "Que le regalaron una caja de dulces por su cumpleaños"
+        }
+      ],
+      "answer": "nadie",
+      "evidence": "三日 まちました。 だれも たべませんでした … 「みんなに 『どうぞ』と いいたかったですが、 はずかしかったです。」",
+      "feedback": {
+        "correct": {
+          "es": "Sí: el silencio venía de los dos lados."
+        },
+        "incorrect": {
+          "es": "No hay robo ni cumpleaños. Cruza los tres días de espera con lo que dice Tanaka."
+        },
+        "strategy": {
+          "es": "Si dos personajes callan por la misma razón, ese silencio compartido es el tema."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántos días esperó antes de preguntar?",
+      "options": [
+        {
+          "id": "tres",
+          "text": "Tres días; preguntó al cuarto"
+        },
+        {
+          "id": "uno",
+          "text": "Un día"
+        },
+        {
+          "id": "siete",
+          "text": "Una semana"
+        }
+      ],
+      "answer": "tres",
+      "evidence": "三日 まちました … 四日め、 わたしは 田中さんに ききました。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: esperó tres y preguntó el cuarto."
+        },
+        "incorrect": {
+          "es": "Busca las dos frases con 三日 y 四日め."
+        },
+        "strategy": {
+          "es": "El sufijo め convierte un número en ordinal: 四日め es «el cuarto día»."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué significa はずかしかった?",
+      "options": [
+        {
+          "id": "verguenza",
+          "text": "Le daba vergüenza"
+        },
+        {
+          "id": "alegria",
+          "text": "Estaba contento"
+        },
+        {
+          "id": "enfado",
+          "text": "Estaba enfadado"
+        }
+      ],
+      "answer": "verguenza",
+      "evidence": "「みんなに 『どうぞ』と いいたかったですが、 はずかしかったです。」",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: quería decirlo y no se atrevió."
+        },
+        "incorrect": {
+          "es": "Va después de un が que contrasta con «quería decirlo»: es lo que se lo impidió."
+        },
+        "strategy": {
+          "es": "La partícula が en medio de la frase opone el deseo y lo que lo frenó."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué ahora pone siempre una nota?",
+      "options": [
+        {
+          "id": "permiso",
+          "text": "Para que nadie tenga que preguntar ni esperar tres días"
+        },
+        {
+          "id": "limpieza",
+          "text": "Para que no ensucien la mesa"
+        },
+        {
+          "id": "nombre",
+          "text": "Para que sepan quién los ha traído"
+        }
+      ],
+      "answer": "permiso",
+      "evidence": "いまは かならず かみを つけます。 「たべても いいです」と かきます。",
+      "feedback": {
+        "correct": {
+          "es": "Sí: la nota dice exactamente el permiso que faltaba."
+        },
+        "incorrect": {
+          "es": "La nota no lleva su nombre ni habla de limpieza: dice que se puede comer."
+        },
+        "strategy": {
+          "es": "Si el texto cita lo que pone la nota, esa cita explica para qué sirve."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la caja llevaba una nota con el nombre de quien la trajo.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "はこには かみが ありません。 なまえも ありません。",
+      "feedback": {
+        "correct": {
+          "es": "Falso: ni nota ni nombre, y de ahí viene todo."
+        },
+        "incorrect": {
+          "es": "Busca las dos frases cortas sobre la caja. Las dos son negativas."
+        },
+        "strategy": {
+          "es": "Dos negaciones seguidas describen lo que falta, y suele ser la causa del problema."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la escena.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Aparece la caja en la mesa común"
+        },
+        {
+          "id": "p2",
+          "text": "Tres días sin que nadie la toque"
+        },
+        {
+          "id": "p3",
+          "text": "Pregunta a Tanaka y él se ríe"
+        },
+        {
+          "id": "p4",
+          "text": "Ese día la caja se vacía"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "かいしゃの つくえの 上に はこが あります … 三日 まちました … 四日め、 わたしは 田中さんに ききました … その日、 はこは からに なりました。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: aparición, espera, pregunta y desenlace."
+        },
+        "incorrect": {
+          "es": "Guíate por 三日, 四日め y その日."
+        },
+        "strategy": {
+          "es": "Los días numerados ordenan la escena sin necesidad de interpretar."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en japonés sobre algo que querías hacer y no sabías si podías. Usa dos veces たい y dos veces ても いいですか."
+    },
+    "minWords": 60,
+    "maxWords": 160,
+    "hints": [
+      "たべたいです。",
+      "たべても いいですか。",
+      "三日 まちました。",
+      "いまは かみを つけます。"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de japonés y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de japonés A1: ¿puedo comerlo? | WeLearn"
+    },
+    "description": {
+      "es": "Lee una escena en japonés A1 y practica la forma たい y la construcción てもいい. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/japones/a1/lectura/tabete-mo-ii-desu-ka",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ja-a1-katakana-wa-muzukashii",
+      "ja-a1-itadakimasu"
+    ]
+  }
+}

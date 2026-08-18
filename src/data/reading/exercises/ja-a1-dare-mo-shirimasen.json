@@ -1,0 +1,462 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ja-a1-dare-mo-shirimasen",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Japonés A1",
+    "jlpt": "N5",
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el JLPT es aproximada: son dos escalas distintas, con exámenes distintos. A1 se sitúa alrededor del N5, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "dare-mo-shirimasen",
+  "series": {
+    "id": "japones-a1-lectura-10",
+    "episode": 6,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ja-a1-hachi-ji-juu-go-fun-no-basu",
+    "nextExerciseId": "ja-a1-basu-de-ikimasu"
+  },
+  "classification": {
+    "genre": "misterio de barrio",
+    "topic": "una puerta que nunca se abre",
+    "intent": "learning",
+    "tags": [
+      "japones a1",
+      "lectura",
+      "interrogativos",
+      "negación"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Nadie lo sabe"
+    },
+    "intro": {
+      "es": "Una puerta azul en la calle. Ni tienda, ni casa, ni nombre. Y nadie del barrio sabe qué hay dentro. Lectura de japonés A1."
+    },
+    "mission": {
+      "es": "Averigua qué decidió hacer el narrador al final."
+    },
+    "targetText": "うちの となりに あおい ドアが あります。\n\nなんの ドアですか。 わかりません。 みせでは ありません。 うちでも ありません。 なまえも ありません。\n\nだれが 入りますか。 だれも 入りません。 一年 見ましたが、 一かいも あきませんでした。\n\nおとなりの 山田さんに ききました。 山田さんは 「しりません」と いいました。 パンやさんも しりません。 だれも しりません。\n\nいつ あきますか。 どうして あかないですか。 わからないです。\n\nわたしは かんがえました。 わかりたいですが、 きかないほうが いいです。\n\nこの まちに ひとつ ぐらい なぞが あっても いいです。",
+    "wordCount": 220,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Formular preguntas con なん, だれ, いつ, どうして + か."
+      },
+      {
+        "es": "Negar por completo con だれも, 一かいも, なにも + verbo negativo."
+      },
+      {
+        "es": "Leer una decisión que el narrador toma sin explicarla del todo."
+      }
+    ],
+    "grammarFocus": [
+      "interrogativos-ka",
+      "negacion-completa"
+    ],
+    "vocabulary": [
+      {
+        "surface": "となり",
+        "lemma": "となり",
+        "reading": "となり",
+        "glosses": {
+          "es": "al lado, contiguo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "わかりません",
+        "lemma": "わかりません",
+        "reading": "わかりません",
+        "glosses": {
+          "es": "no lo sé, no lo entiendo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "あきません",
+        "lemma": "あきません",
+        "reading": "あきません",
+        "glosses": {
+          "es": "no se abre"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ききました",
+        "lemma": "ききました",
+        "reading": "ききました",
+        "glosses": {
+          "es": "pregunté"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "パンやさん",
+        "lemma": "パンやさん",
+        "reading": "パンやさん",
+        "glosses": {
+          "es": "el panadero, la panadería"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "かんがえました",
+        "lemma": "かんがえました",
+        "reading": "かんがえました",
+        "glosses": {
+          "es": "pensé, reflexioné"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "まち",
+        "lemma": "まち",
+        "reading": "まち",
+        "glosses": {
+          "es": "ciudad, barrio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "なぞ",
+        "lemma": "なぞ",
+        "reading": "なぞ",
+        "glosses": {
+          "es": "misterio, enigma"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En los barrios japoneses la relación con los vecinos inmediatos —おとなりさん— es cercana y estable, así que una puerta de la que nadie sabe nada llama mucho la atención."
+    },
+    "spanishSpeakerNote": {
+      "es": "La negación completa se forma con un interrogativo + も + verbo negativo: だれも 入りません («no entra nadie»), 一かいも あきませんでした («no se abrió ni una vez»)."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": true,
+    "romanization": "a0-only",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en japonés escrito casi todo en kana, identificar de quién o de qué se habla gracias a las partículas, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adverbios-frecuencia",
+      "arimasu-imasu",
+      "conjunciones",
+      "desu-masu",
+      "estructura-sov-particulas",
+      "expresiones-cotidianas",
+      "hiragana-basico",
+      "i-keiyoshi",
+      "interrogativos-ka",
+      "jikan-tiempo",
+      "katakana-basico",
+      "masu-kei-conjugacion",
+      "na-keiyoshi",
+      "negacion-completa",
+      "numeros-contadores",
+      "particula-de-e",
+      "particula-wa-ga",
+      "particula-wo-ni",
+      "tai-form",
+      "te-form-permission"
+    ],
+    "disallowedGrammar": [
+      "forma llana (辞書形) en oración principal",
+      "keigo",
+      "condicionales",
+      "voz pasiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 11.6,
+      "maxSentenceWords": 22,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Forma です／ます, partículas básicas, adjetivos i y na. Kanji por debajo del 12 %, con espacios entre palabras. Furigana declarado pero no implementado en el runner: el apoyo lo dan las lecturas en kana del vocabulario."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué decide el narrador?",
+      "options": [
+        {
+          "id": "nopreguntar",
+          "text": "Que prefiere no averiguarlo: le parece bien que el barrio tenga un misterio"
+        },
+        {
+          "id": "abrir",
+          "text": "Que va a abrir la puerta él mismo"
+        },
+        {
+          "id": "mudarse",
+          "text": "Que se va a mudar de barrio"
+        }
+      ],
+      "answer": "nopreguntar",
+      "evidence": "わかりたいですが、 きかないほうが いいです。 この まちに ひとつ ぐらい なぞが あっても いいです。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y reconoce a la vez que sí querría saberlo."
+        },
+        "incorrect": {
+          "es": "No abre nada ni se muda. Lee las dos frases finales."
+        },
+        "strategy": {
+          "es": "La estructura …が、…ほうが いいです plantea un deseo y la decisión contraria."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto tiempo lleva observando la puerta?",
+      "options": [
+        {
+          "id": "ano",
+          "text": "Un año"
+        },
+        {
+          "id": "mes",
+          "text": "Un mes"
+        },
+        {
+          "id": "semana",
+          "text": "Una semana"
+        }
+      ],
+      "answer": "ano",
+      "evidence": "一年 見ましたが、 一かいも あきませんでした。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y en todo ese tiempo no se abrió ni una vez."
+        },
+        "incorrect": {
+          "es": "Busca la frase con 一年. Va seguida de 一かいも."
+        },
+        "strategy": {
+          "es": "El contador 年 cuenta años; 一かい cuenta veces. No los confundas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué significa なぞ?",
+      "options": [
+        {
+          "id": "misterio",
+          "text": "Misterio, enigma"
+        },
+        {
+          "id": "problema",
+          "text": "Problema grave"
+        },
+        {
+          "id": "secreto",
+          "text": "Un secreto de familia"
+        }
+      ],
+      "answer": "misterio",
+      "evidence": "この まちに ひとつ ぐらい なぞが あっても いいです。",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: dice que no está mal que en el barrio haya uno."
+        },
+        "incorrect": {
+          "es": "No lo presenta como un problema ni como algo familiar: le parece bien que exista."
+        },
+        "strategy": {
+          "es": "Si el narrador dice que está bien que eso exista, no es un problema."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué no pregunta más?",
+      "options": [
+        {
+          "id": "valor",
+          "text": "Porque para él el misterio vale más sin resolver"
+        },
+        {
+          "id": "miedo",
+          "text": "Porque tiene miedo de la respuesta"
+        },
+        {
+          "id": "prohibido",
+          "text": "Porque los vecinos le han pedido que no pregunte"
+        }
+      ],
+      "answer": "valor",
+      "evidence": "わかりたいですが、 きかないほうが いいです。 この まちに ひとつ ぐらい なぞが あっても いいです。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y él mismo lo formula así en la última frase."
+        },
+        "incorrect": {
+          "es": "Nadie le prohíbe nada y no habla de miedo. Lee la última frase."
+        },
+        "strategy": {
+          "es": "La última frase de un texto corto suele explicar la decisión anterior."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el vecino Yamada sí sabe qué hay detrás de la puerta.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "山田さんは 「しりません」と いいました。 パンやさんも しりません。 だれも しりません。",
+      "feedback": {
+        "correct": {
+          "es": "Falso: ni él, ni el panadero, ni nadie."
+        },
+        "incorrect": {
+          "es": "Busca la respuesta de Yamada. Está entrecomillada."
+        },
+        "strategy": {
+          "es": "Una cita entre 「」 reproduce literalmente lo que alguien dijo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el texto.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Describe la puerta azul y lo que no es"
+        },
+        {
+          "id": "p2",
+          "text": "Un año observando sin que se abra"
+        },
+        {
+          "id": "p3",
+          "text": "Pregunta a los vecinos y nadie sabe"
+        },
+        {
+          "id": "p4",
+          "text": "Decide no averiguarlo"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "うちの となりに あおい ドアが あります … 一年 見ましたが … おとなりの 山田さんに ききました … きかないほうが いいです。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: el objeto, la observación, la búsqueda y la decisión."
+        },
+        "incorrect": {
+          "es": "Fíjate en dónde pregunta a Yamada y dónde toma la decisión."
+        },
+        "strategy": {
+          "es": "Un texto de misterio suele acabar con lo que el narrador decide hacer."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en japonés sobre algo de tu barrio que no entiendes. Usa tres preguntas con か y dos negaciones completas."
+    },
+    "minWords": 60,
+    "maxWords": 160,
+    "hints": [
+      "うちの となりに …が あります。",
+      "なんの …ですか。",
+      "だれも しりません。",
+      "わかりたいですが…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de japonés y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de japonés A1: nadie lo sabe | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto en japonés A1 y practica los interrogativos y la negación completa. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/japones/a1/lectura/dare-mo-shirimasen",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ja-a1-hachi-ji-juu-go-fun-no-basu",
+      "ja-a1-basu-de-ikimasu"
+    ]
+  }
+}
