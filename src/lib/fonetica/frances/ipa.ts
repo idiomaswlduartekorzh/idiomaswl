@@ -89,6 +89,15 @@ interface Rule {
   readonly ipa: string | ((context: Context) => string)
   /** Si falla, se prueba la regla siguiente. */
   readonly when?: (context: Context) => boolean
+  /**
+   * Cuántas letras del final del `match` no suenan.
+   *
+   * Hace falta porque una regla larga se traga letras mudas sin dejar rastro: `eux` emite
+   * /ø/ de una vez, así que la `x` nunca llega a marcarse y en pantalla `deux` salía sin
+   * ninguna letra atenuada. El AFI era correcto; lo que fallaba era justo lo que esta
+   * herramienta promete enseñar.
+   */
+  readonly silentTail?: number
 }
 
 /** La consonante final suena si es una de CaReFuL. */
@@ -102,9 +111,9 @@ const finalSounds = (letter: string) => SOUNDED_FINALS.includes(letter)
  */
 const RULES: Rule[] = [
   /* ── Cuatro y tres letras ─────────────────────────────────────────────── */
-  { match: 'eaux', ipa: 'o' },
-  { match: 'aient', ipa: 'ɛ', when: (c) => c.atEnd },   // verbos: ils avaient
-  { match: 'eux', ipa: 'ø', when: (c) => c.atEnd },
+  { match: 'eaux', ipa: 'o', silentTail: 1 },
+  { match: 'aient', ipa: 'ɛ', when: (c) => c.atEnd, silentTail: 3 },   // verbos: ils avaient
+  { match: 'eux', ipa: 'ø', when: (c) => c.atEnd, silentTail: 1 },
   { match: 'eau', ipa: 'o' },
   { match: 'œur', ipa: 'œʁ' },
   { match: 'eur', ipa: 'œʁ', when: (c) => c.atEnd },
@@ -131,19 +140,19 @@ const RULES: Rule[] = [
   { match: 'ai', ipa: 'e', when: (c) => c.atEnd },
   // `-er` final es /e/ y no /ɛʁ/: parler, alger, boulanger. Es la terminación más
   // frecuente del francés y sin ella fallaban 3.453 palabras.
-  { match: 'ier', ipa: 'je', when: (c) => c.atEnd },
+  { match: 'ier', ipa: 'je', when: (c) => c.atEnd, silentTail: 1 },
   { match: 'ers', ipa: 'ɛʁ', when: (c) => c.atEnd },
   // Una `s` final muda arrastra a la consonante que la precede: `desprets` es /dɛspʁɛ/.
   { match: 'ts', ipa: '', when: (c) => c.atEnd },
   { match: 'ds', ipa: '', when: (c) => c.atEnd },
   { match: 'ps', ipa: '', when: (c) => c.atEnd },
   { match: 'xs', ipa: '', when: (c) => c.atEnd },
-  { match: 'er', ipa: 'e', when: (c) => c.atEnd && !ER_KEEPS_R.has(c.word) },
-  { match: 'ez', ipa: 'e', when: (c) => c.atEnd },
+  { match: 'er', ipa: 'e', when: (c) => c.atEnd && !ER_KEEPS_R.has(c.word), silentTail: 1 },
+  { match: 'ez', ipa: 'e', when: (c) => c.atEnd, silentTail: 1 },
   // `-es` final calla entera: actes /akt/, femmes /fam/.
   // …pero no en los monosílabos: `les` es /le/, `des` /de/, `ces` /se/. Solo calla
   // cuando hay una raíz de verdad delante.
-  { match: 'es', ipa: 'e', when: (c) => c.atEnd && c.index === 1 },
+  { match: 'es', ipa: 'e', when: (c) => c.atEnd && c.index === 1, silentTail: 1 },
   { match: 'es', ipa: '', when: (c) => c.atEnd },
   // `ti` ante vocal suena /sj/: nation, patience. Salvo tras s o x, donde se queda /tj/:
   // question, mixtion.
@@ -360,13 +369,60 @@ const LIAISON_SOUNDS: Record<string, string> = {
   n: 'n', p: 'p', r: 'ʁ', g: 'k',
 }
 
+/**
+ * Palabras que ninguna regla predice.
+ *
+ * Lista cerrada y corta a propósito. No está aquí todo lo que el motor falla —para eso
+ * está la medición— sino lo que falla **y** es de uso diario, que es donde el error se
+ * nota. `est` es la forma verbal más frecuente del idioma: darla como /ɛs/ ensucia casi
+ * cualquier frase de ejemplo.
+ *
+ * Crece midiendo, no a ojo: si una palabra entra aquí sin que la medición la señale,
+ * probablemente lo que falta es arreglar una regla y esto lo está tapando.
+ *
+ * `silent` va en índices de letra, para que la pantalla pueda atenuarlas igual que en las
+ * palabras regulares. La liaison NO se escribe: se sigue calculando sobre la letra final.
+ */
+const IRREGULARES: Record<string, { ipa: string; silent: number[] }> = {
+  est: { ipa: 'ɛ', silent: [1, 2] },              // el verbo; el punto cardinal es /ɛst/
+  vingt: { ipa: 'vɛ̃', silent: [3, 4] },
+  doigt: { ipa: 'dwa', silent: [3, 4] },
+  tabac: { ipa: 'taba', silent: [4] },            // la c final calla, contra CaReFuL
+  estomac: { ipa: 'ɛstɔma', silent: [6] },
+  fusil: { ipa: 'fyzi', silent: [4] },            // la l final calla, contra CaReFuL
+  outil: { ipa: 'uti', silent: [4] },
+  gentil: { ipa: 'ʒɑ̃ti', silent: [5] },
+  nerf: { ipa: 'nɛʁ', silent: [3] },
+  clef: { ipa: 'kle', silent: [3] },
+  sept: { ipa: 'sɛt', silent: [2] },              // la p calla; la t, no
+  fils: { ipa: 'fis', silent: [2] },              // hijo: calla la l y suena la s
+  femme: { ipa: 'fam', silent: [4] },             // la única `e` que suena /a/
+  femmes: { ipa: 'fam', silent: [4, 5] },
+  automne: { ipa: 'otɔn', silent: [4, 6] },
+  second: { ipa: 'səɡɔ̃', silent: [5] },          // la c suena /ɡ/
+  seconde: { ipa: 'səɡɔ̃d', silent: [6] },
+  monsieur: { ipa: 'məsjø', silent: [7] },
+  messieurs: { ipa: 'mesjø', silent: [7, 8] },
+  pays: { ipa: 'pei', silent: [3] },
+  oeil: { ipa: 'œj', silent: [] },
+  'œil': { ipa: 'œj', silent: [] },
+  oeuf: { ipa: 'œf', silent: [] },
+  'œuf': { ipa: 'œf', silent: [] },
+  oeufs: { ipa: 'ø', silent: [3, 4] },            // en plural calla hasta la f
+  'œufs': { ipa: 'ø', silent: [2, 3] },
+  boeufs: { ipa: 'bø', silent: [4, 5] },
+  'bœufs': { ipa: 'bø', silent: [3, 4] },
+}
+
 export function transcribeFrench(raw: string): FrenchReading | null {
   const word = raw.toLowerCase()
   if (!/^[a-zà-öø-ÿœæ'-]+$/i.test(word)) return null
 
-  let ipa = ''
-  const silent: number[] = []
-  let index = 0
+  const irregular = Object.hasOwn(IRREGULARES, word) ? IRREGULARES[word] : undefined
+
+  let ipa = irregular ? irregular.ipa : ''
+  const silent: number[] = irregular ? [...irregular.silent] : []
+  let index = irregular ? word.length : 0
 
   while (index < word.length) {
     const rest = word.slice(index)
@@ -398,6 +454,8 @@ export function transcribeFrench(raw: string): FrenchReading | null {
         for (let k = index; k < end; k++) silent.push(k)
       } else {
         ipa += sound
+        // La regla sonó, pero puede haberse tragado letras mudas por el camino.
+        for (let k = end - (rule.silentTail ?? 0); k < end; k++) silent.push(k)
       }
 
       index = end

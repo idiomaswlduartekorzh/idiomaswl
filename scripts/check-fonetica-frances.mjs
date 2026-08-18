@@ -73,6 +73,37 @@ const CASES = [
   ['étudiant', 'etydjɑ̃', 'i ante vocal es semiconsonante'],
   ['moment', 'mɔmɑ̃', '-ment suena (medido: 98 %)'],
   ['parlent', 'paʁl', '-ent de verbo calla (medido: 94-97 %)'],
+
+  /* Lista cerrada de irregulares. Si una de estas falla, alguien tocó IRREGULARES. */
+  ['est', 'ɛ', 'el verbo más frecuente del idioma: NO es /ɛs/'],
+  ['vingt', 'vɛ̃', 'la g no suena'],
+  ['femme', 'fam', 'la única e que suena /a/'],
+  ['monsieur', 'məsjø', 'irregular de arriba abajo'],
+  ['fils', 'fis', 'calla la l y suena la s: al revés de lo normal'],
+  ['second', 'səɡɔ̃', 'la c suena /ɡ/'],
+  ['tabac', 'taba', 'c final muda, contra CaReFuL'],
+  ['gentil', 'ʒɑ̃ti', 'l final muda, contra CaReFuL'],
+  ['sept', 'sɛt', 'calla la p, no la t'],
+]
+
+/**
+ * [palabra, cómo se pinta con las mudas entre corchetes, qué vigila]
+ *
+ * Vigila algo que el AFI solo NO detecta: una regla larga puede tragarse una letra muda
+ * sin marcarla. `deux` sonaba /dø/ —correcto— pero salía en pantalla sin una sola letra
+ * atenuada, que es justo lo que esta herramienta promete enseñar.
+ */
+const MUDAS = [
+  ['deux', 'deu[x]', 'la x que se traga la regla de -eux'],
+  ['nez', 'ne[z]', 'la z que se traga la regla de -ez'],
+  ['parler', 'parle[r]', 'la r del infinitivo'],
+  ['premier', 'premie[r]', 'la r de -ier'],
+  ['tableaux', 'tableau[x]', 'la x de -eaux'],
+  ['beaucoup', 'beaucou[p]', 'consonante final normal: el camino de siempre'],
+  ['homme', '[h]omm[e]', 'la h inicial y la e final, agrupadas aparte'],
+  ['parlent', 'parl[ent]', 'las tres letras seguidas van en un solo corchete'],
+  ['est', 'e[st]', 'las mudas de un irregular se pintan igual'],
+  ['mer', 'mer', 'la r SÍ suena aquí: ni un corchete'],
 ]
 
 /** [frase, AFI con enlaces, qué vigila] */
@@ -107,6 +138,14 @@ for (const [phrase, expected, rule] of PHRASES) {
   if (actual !== expected) failures.push(`«${phrase}»: esperaba «${expected}» y salió «${actual}»  — ${rule}`)
 }
 
+for (const [word, expected, rule] of MUDAS) {
+  const token = transcribeFrenchText(word).find((t) => t.kind === 'word')
+  const actual = token?.spoken ?? token?.text ?? '(nada)'
+  if (actual !== expected) {
+    failures.push(`${word}: esperaba «${expected}» y salió «${actual}»  — ${rule}`)
+  }
+}
+
 for (const notFrench of ['', '123', '한국어']) {
   if (transcribeFrench(notFrench) !== null) failures.push(`«${notFrench}» debería devolver null`)
 }
@@ -119,4 +158,4 @@ if (failures.length > 0) {
   process.exit(1)
 }
 
-console.log(`Francés íntegro: ${CASES.length} palabras y ${PHRASES.length} frases con liaison comprobadas.`)
+console.log(`Francés íntegro: ${CASES.length} palabras, ${MUDAS.length} juegos de letras mudas y ${PHRASES.length} frases con liaison comprobadas.`)
