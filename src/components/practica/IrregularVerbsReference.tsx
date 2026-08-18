@@ -1,5 +1,5 @@
 import { IRREGULAR_VERBS_100, TOTAL_VERBS } from '@/data/practica/recursos/verbos-irregulares-100'
-import VerbsResourcePdfButton from '@/components/practica/VerbsResourcePdfButton'
+import IrregularVerbsPdfButton from '@/components/practica/IrregularVerbsPdfButton'
 
 // Recurso de referencia embebido DENTRO del tema al que pertenece (en vez de
 // una página aparte): la lista completa de los 100 verbos irregulares, con
@@ -11,7 +11,7 @@ export default function IrregularVerbsReference({ color }: { color: string }) {
         <h2 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--ink)', margin: 0, letterSpacing: '-0.02em' }}>
           📋 Los {TOTAL_VERBS} verbos irregulares más comunes (lista completa)
         </h2>
-        <VerbsResourcePdfButton color={color} />
+        <IrregularVerbsPdfButton color={color} />
       </div>
       <p style={{ color: 'var(--muted)', fontSize: '0.94rem', maxWidth: 640, margin: '0 0 1.5rem', lineHeight: 1.65 }}>
         Organizados por <strong style={{ color: 'var(--ink)' }}>patrón de sonido</strong> —no alfabéticamente— para
