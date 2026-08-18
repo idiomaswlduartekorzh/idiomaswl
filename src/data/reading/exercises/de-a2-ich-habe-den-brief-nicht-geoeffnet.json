@@ -1,0 +1,470 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-a2-ich-habe-den-brief-nicht-geoeffnet",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Alemán A2"
+  },
+  "slug": "ich-habe-den-brief-nicht-geoeffnet",
+  "series": {
+    "id": "aleman-a2-lectura-10",
+    "episode": 1,
+    "totalEpisodes": 3,
+    "previousExerciseId": null,
+    "nextExerciseId": "de-a2-damals-durfte-man-nicht"
+  },
+  "classification": {
+    "genre": "relato en primera persona",
+    "topic": "una carta sin abrir",
+    "intent": "learning",
+    "tags": [
+      "aleman a2",
+      "lectura",
+      "Perfekt con haben",
+      "Perfekt con sein"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "No abrí la carta"
+    },
+    "intro": {
+      "es": "Una carta de la oficina de extranjería que estuvo once días sobre la mesa sin abrir. Lectura de alemán A2 con el Perfekt."
+    },
+    "mission": {
+      "es": "Averigua qué decía la carta y por qué él tardó tanto."
+    },
+    "targetText": "Der Brief ist an einem Dienstag gekommen. Ich habe ihn aus dem Briefkasten genommen und auf den Tisch gelegt. Oben links stand: Ausländerbehörde. Ich habe ihn nicht geöffnet. Am Mittwoch habe ich ihn auch nicht geöffnet. Elf Tage lang ist der Brief auf dem Tisch geblieben. Meine Mitbewohnerin hat mich zweimal gefragt. Ich habe gesagt, ich mache das später. Sie ist nicht dumm. Sie hat nichts mehr gefragt. Am zwölften Tag bin ich nach Hause gekommen und der Brief war offen. Sie hatte ihn geöffnet. Auf dem Tisch lag ein Zettel: Verlängerung genehmigt. Drei Jahre. Ich bin auf den Stuhl gefallen und habe eine Minute lang nichts gemacht. Dann bin ich in die Küche gegangen. Sie hat Kaffee gekocht und nichts gesagt. Ich habe auch nichts gesagt. Wir haben zusammen Kaffee getrunken. Am Abend habe ich meiner Mutter geschrieben. Sie hat sofort geantwortet und gefragt, warum ich elf Tage gewartet habe. Ich habe keine gute Antwort gefunden. Ich habe nur geschrieben: weil ein geschlossener Brief noch alles sein kann. Später habe ich ihr gedankt. Sie hat geantwortet: Ich habe elf Tage gewartet. Das war genug.",
+    "wordCount": 185,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Formar el Perfekt con haben y con sein según el verbo."
+      },
+      {
+        "es": "Colocar el participio al final de la frase."
+      },
+      {
+        "es": "Distinguir lo que el narrador cuenta de lo que calla."
+      }
+    ],
+    "grammarFocus": [
+      "perfekt-haben-a2",
+      "perfekt-sein-a2",
+      "prasens-regelmaessig"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Briefkasten",
+        "lemma": "Briefkasten",
+        "glosses": {
+          "es": "buzón"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Ausländerbehörde",
+        "lemma": "Ausländerbehörde",
+        "glosses": {
+          "es": "oficina de extranjería"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Mitbewohnerin",
+        "lemma": "Mitbewohnerin",
+        "glosses": {
+          "es": "compañera de piso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Zettel",
+        "lemma": "Zettel",
+        "glosses": {
+          "es": "nota, papelito"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Verlängerung",
+        "lemma": "Verlängerung",
+        "glosses": {
+          "es": "prórroga, renovación"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "genehmigt",
+        "lemma": "genehmigen",
+        "glosses": {
+          "es": "aprobada, concedida"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gedankt",
+        "lemma": "danken",
+        "glosses": {
+          "es": "dado las gracias"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "genug",
+        "lemma": "genug",
+        "glosses": {
+          "es": "suficiente, bastante"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La Ausländerbehörde gestiona los permisos de residencia en Alemania, y sus cartas deciden si alguien puede quedarse. Abrirlas o no es una escena reconocible para cualquier extranjero allí."
+    },
+    "spanishSpeakerNote": {
+      "es": "El Perfekt elige auxiliar: «haben» para casi todo, pero «sein» para verbos de movimiento y cambio de estado (kommen, gehen, bleiben, fallen). Y el participio va SIEMPRE al final: «Ich habe ihn nicht geöffnet»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en alemán sobre hechos pasados, encontrar el verbo al final de una subordinada, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens",
+      "adjektivdeklination-a2",
+      "da-hin-her-a2",
+      "dativ-a2",
+      "futur-i-a2",
+      "genitiv-a2",
+      "infinitiv-zu-a2",
+      "komparativ-superlativ-a2",
+      "konjunktionen-a2",
+      "konjunktiv-ii-wurden-a2",
+      "modalverben-praeteritum-a2",
+      "partizip-als-adjektiv-a2",
+      "passiv-praesens-a2",
+      "perfekt-haben-a2",
+      "perfekt-sein-a2",
+      "praeteritum-basic-a2",
+      "reflexivverben-a2",
+      "relativsaetze-a2",
+      "trennbare-verben-praeteritum-a2",
+      "wechselpraepositionen-a2",
+      "zweiteilige-konnektoren-a2"
+    ],
+    "disallowedGrammar": [
+      "Konjunktiv I",
+      "Plusquamperfekt",
+      "Partizip I",
+      "Nominalstil"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 7.1,
+      "maxSentenceWords": 13,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Perfekt y Präteritum con su reparto de uso. Konjunktiv II solo en formas hechas (würde, wäre, hätte). Sin Plusquamperfekt ni Konjunktiv I."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta el texto?",
+      "options": [
+        {
+          "id": "miedo",
+          "text": "Que tuvo tanto miedo de la respuesta que no abrió la carta, y otra persona lo hizo"
+        },
+        {
+          "id": "perdida",
+          "text": "Que perdió la carta y tuvo que pedir otra"
+        },
+        {
+          "id": "rechazo",
+          "text": "Que le rechazaron el permiso de residencia"
+        }
+      ],
+      "answer": "miedo",
+      "evidence": "Elf Tage lang ist der Brief auf dem Tisch geblieben … Sie hatte ihn geöffnet.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Y el desenlace es doble: la prórroga estaba concedida y él no lo sabía por miedo."
+        },
+        "incorrect": {
+          "es": "La carta estuvo siempre a la vista y la respuesta era favorable. Busca cuántos días pasaron."
+        },
+        "strategy": {
+          "es": "Si un texto insiste en contar los días que pasan sin que ocurra nada, esa espera es el asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué decía la carta?",
+      "options": [
+        {
+          "id": "tres",
+          "text": "Que le concedían la prórroga por tres años"
+        },
+        {
+          "id": "cita",
+          "text": "Que tenía que pedir cita presencial"
+        },
+        {
+          "id": "papeles",
+          "text": "Que faltaban documentos"
+        }
+      ],
+      "answer": "tres",
+      "evidence": "Auf dem Tisch lag ein Zettel: Verlängerung genehmigt. Drei Jahre.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y ella lo dejó resumido en una nota de tres palabras."
+        },
+        "incorrect": {
+          "es": "No se piden documentos ni cita. Busca lo que estaba escrito en el Zettel."
+        },
+        "strategy": {
+          "es": "Cuando un texto reproduce un documento, la respuesta está en la cita literal."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "La nota decía «Verlängerung genehmigt». ¿Qué significa «Verlängerung»?",
+      "options": [
+        {
+          "id": "prorroga",
+          "text": "Prórroga del permiso"
+        },
+        {
+          "id": "retraso",
+          "text": "Retraso en la resolución"
+        },
+        {
+          "id": "multa",
+          "text": "Una multa"
+        }
+      ],
+      "answer": "prorroga",
+      "evidence": "Verlängerung genehmigt. Drei Jahre.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y va con «genehmigt», concedida, y con un plazo de tres años."
+        },
+        "incorrect": {
+          "es": "Un retraso o una multa no se conceden por tres años. Fíjate en lo que la acompaña."
+        },
+        "strategy": {
+          "es": "Si una palabra va con un plazo y con «concedido», es algo que se otorga, no un problema."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué la compañera dejó de preguntar después de dos veces?",
+      "options": [
+        {
+          "id": "entendio",
+          "text": "Porque entendió lo que pasaba y decidió esperar"
+        },
+        {
+          "id": "enfado",
+          "text": "Porque se enfadó con él"
+        },
+        {
+          "id": "olvido",
+          "text": "Porque se olvidó de la carta"
+        }
+      ],
+      "answer": "entendio",
+      "evidence": "Sie ist nicht dumm. Sie hat nichts mehr gefragt … Ich habe elf Tage gewartet. Das war genug.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y ella misma lo confirma al final: esperó once días a propósito."
+        },
+        "incorrect": {
+          "es": "No se olvidó —abrió la carta— ni se enfadó. Cruza «Sie ist nicht dumm» con su frase final."
+        },
+        "strategy": {
+          "es": "Para inferir, cruza un comentario del narrador con lo que el personaje dice después."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: cuando entró en la cocina, los dos hablaron largamente del asunto.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Sie hat Kaffee gekocht und nichts gesagt. Ich habe auch nichts gesagt.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: ninguno de los dos dijo nada. Solo tomaron café juntos."
+        },
+        "incorrect": {
+          "es": "Busca las dos frases seguidas sobre la cocina. Las dos terminan igual."
+        },
+        "strategy": {
+          "es": "Dos frases seguidas que repiten «nichts gesagt» describen un silencio compartido, no una conversación."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena los hechos del relato.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Recoge la carta del buzón y la deja sobre la mesa"
+        },
+        {
+          "id": "p2",
+          "text": "La compañera pregunta dos veces y luego calla"
+        },
+        {
+          "id": "p3",
+          "text": "Al duodécimo día la encuentra abierta"
+        },
+        {
+          "id": "p4",
+          "text": "Toman café juntos sin decir nada"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Der Brief ist an einem Dienstag gekommen … Meine Mitbewohnerin hat mich zweimal gefragt … Am zwölften Tag … Wir haben zusammen Kaffee getrunken.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El relato avanza contando los días: martes, miércoles, once días, el duodécimo."
+        },
+        "incorrect": {
+          "es": "Guíate por las marcas de día: «an einem Dienstag», «am Mittwoch», «elf Tage», «am zwölften Tag»."
+        },
+        "strategy": {
+          "es": "Si un relato numera los días, esos números dan el orden sin más."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en alemán sobre algo que aplazaste por miedo. Usa seis verbos en Perfekt, al menos dos con sein."
+    },
+    "minWords": 40,
+    "maxWords": 85,
+    "hints": [
+      "Der Brief ist… gekommen.",
+      "Ich habe ihn nicht geöffnet.",
+      "Am… Tag bin ich…",
+      "Später habe ich ihr gedankt."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de alemán y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán A2: No abrí la carta | WeLearn"
+    },
+    "description": {
+      "es": "Lee un relato en alemán A2 y practica el Perfekt con haben y con sein. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/aleman/a2/lectura/ich-habe-den-brief-nicht-geoeffnet",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-a2-damals-durfte-man-nicht"
+    ]
+  }
+}

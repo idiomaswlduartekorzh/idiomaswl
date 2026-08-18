@@ -142,6 +142,10 @@ import deA1DerZugFaehrtAb from '@/data/reading/exercises/de-a1-der-zug-faehrt-ab
 import deA1IchKannNichtSchwimmen from '@/data/reading/exercises/de-a1-ich-kann-nicht-schwimmen.json'
 import deA1NaechstesJahrWirdAllesAnders from '@/data/reading/exercises/de-a1-naechstes-jahr-wird-alles-anders.json'
 import deA1UnserTisch from '@/data/reading/exercises/de-a1-unser-tisch.json'
+// Alemán A2 — generadas desde `src/data/reading/source/de-a2.mjs`. Nivel en curso.
+import deA2DamalsDurfteManNicht from '@/data/reading/exercises/de-a2-damals-durfte-man-nicht.json'
+import deA2DieFrauDieDenSchluesselHat from '@/data/reading/exercises/de-a2-die-frau-die-den-schluessel-hat.json'
+import deA2IchHabeDenBriefNichtGeoeffnet from '@/data/reading/exercises/de-a2-ich-habe-den-brief-nicht-geoeffnet.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -277,6 +281,9 @@ const RAW_EXERCISES: unknown[] = [
   deA1IchKannNichtSchwimmen,
   deA1NaechstesJahrWirdAllesAnders,
   deA1UnserTisch,
+  deA2DamalsDurfteManNicht,
+  deA2DieFrauDieDenSchluesselHat,
+  deA2IchHabeDenBriefNichtGeoeffnet,
 ]
 
 export const READING_EXERCISES: ReadingExercise[] = RAW_EXERCISES.map((candidate) => {
