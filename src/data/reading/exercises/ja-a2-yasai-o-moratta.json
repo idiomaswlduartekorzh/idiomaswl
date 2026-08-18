@@ -1,0 +1,483 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ja-a2-yasai-o-moratta",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Japonés A2",
+    "jlpt": "N4",
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el JLPT es aproximada: son dos escalas distintas, con exámenes distintos. A2 se sitúa alrededor del N4, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "yasai-o-moratta",
+  "series": {
+    "id": "japones-a2-lectura-10",
+    "episode": 5,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ja-a2-onigiri-bakari",
+    "nextExerciseId": "ja-a2-naze-nihongo-o-benkyou-suru-n-desu-ka"
+  },
+  "classification": {
+    "genre": "escena de vecindad",
+    "topic": "bolsas de verdura en la puerta",
+    "intent": "learning",
+    "tags": [
+      "japones a2",
+      "lectura",
+      "あげる・もらう・くれる",
+      "てもいい"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Me dieron verduras"
+    },
+    "intro": {
+      "es": "Aparecían en la puerta sin nota y sin nombre. Tardó siete meses en averiguar de quién eran. Lectura de japonés A2."
+    },
+    "mission": {
+      "es": "Averigua qué hace ahora él con lo que le sobra."
+    },
+    "targetText": "去年の六月、うちのドアの前に袋があった。中に野菜が入っていた。名前も手紙もなかった。\n\n次の週も、その次の週もあった。だれがくれたか分からなかった。\n\n七か月後、やっと分かった。上の階の佐藤さんだ。畑を持っていて、夏はきゅうりとトマトが多すぎるそうだ。\n\n私は佐藤さんに「ありがとうございます」と言った。佐藤さんは困った顔をした。\n\n「知られたくなかったんです」と佐藤さんは言った。「お礼を言われると、次から置けなくなりますから。」\n\nそれで私は考えた。何かをあげたいが、佐藤さんは受け取らないだろう。\n\nだから、私は別のことをした。私も多すぎるとき、下の階の学生に置くことにした。名前は書かない。\n\n先月、その学生が階段で私に聞いた。「あの野菜、食べてもいいんですか。」\n\n私は「知りません」と答えた。嘘だが、いい嘘だと思う。\n\n佐藤さんは今も置いてくれる。私も置く。だれも何も言わない。",
+    "wordCount": 332,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Distinguir あげる (yo doy), もらう (yo recibo) y くれる (me dan a mí)."
+      },
+      {
+        "es": "Pedir y dar permiso con てもいい."
+      },
+      {
+        "es": "Leer una cadena de favores que nadie nombra."
+      }
+    ],
+    "grammarFocus": [
+      "ageru-morau-kureru-a2",
+      "te-mo-ii-a2",
+      "particula-wo-ni"
+    ],
+    "vocabulary": [
+      {
+        "surface": "野菜",
+        "lemma": "野菜",
+        "reading": "やさい",
+        "glosses": {
+          "es": "verdura"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "階",
+        "lemma": "階",
+        "reading": "かい",
+        "glosses": {
+          "es": "planta de un edificio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "畑",
+        "lemma": "畑",
+        "reading": "はたけ",
+        "glosses": {
+          "es": "huerto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "きゅうり",
+        "lemma": "きゅうり",
+        "reading": "きゅうり",
+        "glosses": {
+          "es": "pepino"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "お礼",
+        "lemma": "お礼",
+        "reading": "おれい",
+        "glosses": {
+          "es": "agradecimiento"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "受け取らない",
+        "lemma": "受け取らない",
+        "reading": "うけとらない",
+        "glosses": {
+          "es": "no lo acepta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "階段",
+        "lemma": "階段",
+        "reading": "かいだん",
+        "glosses": {
+          "es": "escalera"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "嘘",
+        "lemma": "嘘",
+        "reading": "うそ",
+        "glosses": {
+          "es": "mentira"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Repartir el excedente de un huerto entre vecinos es habitual en Japón, y a menudo se hace sin identificarse para que quien lo recibe no se sienta obligado a devolver el favor."
+    },
+    "spanishSpeakerNote": {
+      "es": "El japonés marca la dirección del regalo: あげる es dar yo, もらう es recibir yo, y くれる es que alguien me da a mí. «佐藤さんは置いてくれる» lleva くれる porque el beneficio viene hacia el narrador."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": true,
+    "romanization": "a0-only",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto japonés escrito sin espacios, encadenar lo que ocurre con la forma て, distinguir un estado de una acción, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adverbios-frecuencia",
+      "arimasu-imasu",
+      "conjunciones",
+      "desu-masu",
+      "estructura-sov-particulas",
+      "expresiones-cotidianas",
+      "hiragana-basico",
+      "i-keiyoshi",
+      "interrogativos-ka",
+      "jikan-tiempo",
+      "katakana-basico",
+      "masu-kei-conjugacion",
+      "na-keiyoshi",
+      "negacion-completa",
+      "numeros-contadores",
+      "particula-de-e",
+      "particula-wa-ga",
+      "particula-wo-ni",
+      "tai-form",
+      "te-form-permission",
+      "ageru-morau-kureru-a2",
+      "dake-shika-bakari-a2",
+      "deshou-a2",
+      "hikaku-a2",
+      "kamoshirenai-a2",
+      "kanoukei-a2",
+      "mae-ni-ato-de-a2",
+      "n-desu-a2",
+      "nagara-a2",
+      "nakereba-naranai-a2",
+      "noun-modification-a2",
+      "ta-koto-ga-aru-a2",
+      "tara-condicional-a2",
+      "tari-tari-a2",
+      "te-form-sequence-a2",
+      "te-iru-a2",
+      "te-mo-ii-a2",
+      "to-condicional-a2",
+      "to-omoimasu-a2",
+      "ukemi-a2"
+    ],
+    "disallowedGrammar": [
+      "keigo (尊敬語・謙譲語)",
+      "causativo-pasivo",
+      "japonés clásico",
+      "registro periodístico nominal"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 41.5,
+      "maxSentenceWords": 72,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Forma て y sus usos, ている, condicionales たら y と, comparativos, pasiva sencilla. Sin keigo ni causativo-pasivo. Sin espacios: el kanji segmenta. Furigana declarado pero no implementado en el runner."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué hace el narrador al final?",
+      "options": [
+        {
+          "id": "cadena",
+          "text": "Repetir el mismo gesto con otro vecino, también sin decir quién es"
+        },
+        {
+          "id": "pagar",
+          "text": "Pagarle las verduras a Satō"
+        },
+        {
+          "id": "rechazar",
+          "text": "Dejar de aceptar las bolsas"
+        }
+      ],
+      "answer": "cadena",
+      "evidence": "私も多すぎるとき、下の階の学生に置くことにした。名前は書かない。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y mantiene la regla de Satō: sin nombre."
+        },
+        "incorrect": {
+          "es": "No paga ni rechaza nada: sigue recibiendo. Busca qué decidió hacer él."
+        },
+        "strategy": {
+          "es": "La expresión …ことにした marca una decisión propia: ahí está lo que hace el narrador."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto tardó en descubrir quién dejaba las bolsas?",
+      "options": [
+        {
+          "id": "siete",
+          "text": "Siete meses"
+        },
+        {
+          "id": "seis",
+          "text": "Seis semanas"
+        },
+        {
+          "id": "ano",
+          "text": "Un año"
+        }
+      ],
+      "answer": "siete",
+      "evidence": "七か月後、やっと分かった。上の階の佐藤さんだ。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el やっと indica que costó."
+        },
+        "incorrect": {
+          "es": "Junio es cuando empezó, no cuánto tardó. Busca la frase con 七か月後."
+        },
+        "strategy": {
+          "es": "El contador か月 cuenta meses: localízalo antes de responder."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué significa 受け取らない?",
+      "options": [
+        {
+          "id": "aceptar",
+          "text": "Que no lo aceptaría"
+        },
+        {
+          "id": "entender",
+          "text": "Que no lo entendería"
+        },
+        {
+          "id": "recordar",
+          "text": "Que no lo recordaría"
+        }
+      ],
+      "answer": "aceptar",
+      "evidence": "何かをあげたいが、佐藤さんは受け取らないだろう。",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: por eso busca otra forma de devolver el gesto."
+        },
+        "incorrect": {
+          "es": "La frase habla de darle algo a Satō: lo que no haría es quedárselo."
+        },
+        "strategy": {
+          "es": "Si la frase anterior habla de dar algo, el verbo negado es el de recibir."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué contesta «no sé» al estudiante?",
+      "options": [
+        {
+          "id": "regla",
+          "text": "Para que el estudiante no se sienta en deuda, igual que hizo Satō con él"
+        },
+        {
+          "id": "seguro",
+          "text": "Porque no está seguro de que sean suyas"
+        },
+        {
+          "id": "broma",
+          "text": "Porque quiere gastarle una broma"
+        }
+      ],
+      "answer": "regla",
+      "evidence": "「知りません」と答えた。嘘だが、いい嘘だと思う … 「お礼を言われると、次から置けなくなりますから。」",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la razón está en la frase de Satō, varios párrafos antes."
+        },
+        "incorrect": {
+          "es": "Sabe perfectamente que son suyas: las puso él. Cruza su mentira con lo que dijo Satō."
+        },
+        "strategy": {
+          "es": "Para inferir, busca la regla que otro personaje formuló antes en el texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: Satō dejó de poner bolsas cuando el narrador le dio las gracias.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "佐藤さんは今も置いてくれる。私も置く。だれも何も言わない。",
+      "feedback": {
+        "correct": {
+          "es": "Falso: sigue poniéndolas, y ahora los dos lo hacen."
+        },
+        "incorrect": {
+          "es": "Busca la última línea del texto: dice qué pasa ahora."
+        },
+        "strategy": {
+          "es": "El adverbio 今も (todavía ahora) indica que algo continúa."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la escena.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Aparecen bolsas sin nombre en la puerta"
+        },
+        {
+          "id": "p2",
+          "text": "Siete meses después descubre que es Satō"
+        },
+        {
+          "id": "p3",
+          "text": "Satō le explica por qué no quería que se supiera"
+        },
+        {
+          "id": "p4",
+          "text": "Él empieza a dejar bolsas al estudiante de abajo"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "去年の六月、うちのドアの前に袋があった… 七か月後、やっと分かった… 「知られたくなかったんです」… 下の階の学生に置くことにした。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: misterio, descubrimiento, explicación y continuación."
+        },
+        "incorrect": {
+          "es": "Guíate por 去年の六月 y 七か月後."
+        },
+        "strategy": {
+          "es": "Las marcas de tiempo iniciales de cada párrafo ordenan el relato."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en japonés sobre algo que alguien te dio o que tú diste. Usa あげる, もらう y くれる al menos una vez cada uno."
+    },
+    "minWords": 110,
+    "maxWords": 260,
+    "hints": [
+      "ドアの前に袋があった。",
+      "だれがくれたか分からなかった。",
+      "何かをあげたいが…",
+      "佐藤さんは今も置いてくれる。"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de japonés y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de japonés A2: me dieron verduras | WeLearn"
+    },
+    "description": {
+      "es": "Lee una escena en japonés A2 y practica あげる, もらう y くれる y la construcción てもいい. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/japones/a2/lectura/yasai-o-moratta",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ja-a2-onigiri-bakari",
+      "ja-a2-naze-nihongo-o-benkyou-suru-n-desu-ka"
+    ]
+  }
+}

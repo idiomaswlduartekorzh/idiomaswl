@@ -249,6 +249,18 @@ import jaA1BasuDeIkimasu from '@/data/reading/exercises/ja-a1-basu-de-ikimasu.js
 import jaA1KatakanaWaMuzukashii from '@/data/reading/exercises/ja-a1-katakana-wa-muzukashii.json'
 import jaA1TabeteMoIiDesuKa from '@/data/reading/exercises/ja-a1-tabete-mo-ii-desu-ka.json'
 import jaA1Itadakimasu from '@/data/reading/exercises/ja-a1-itadakimasu.json'
+
+// Japonés A2 — generadas desde `src/data/reading/source/ja-a2.mjs`. Nivel completo.
+import jaA2ShinbunOToriNiIku from '@/data/reading/exercises/ja-a2-shinbun-o-tori-ni-iku.json'
+import jaA2FujiSanNiNobottaKotoGaAru from '@/data/reading/exercises/ja-a2-fuji-san-ni-nobotta-koto-ga-aru.json'
+import jaA2AmeGaFuruTo from '@/data/reading/exercises/ja-a2-ame-ga-furu-to.json'
+import jaA2OnigiriBakari from '@/data/reading/exercises/ja-a2-onigiri-bakari.json'
+import jaA2YasaiOMoratta from '@/data/reading/exercises/ja-a2-yasai-o-moratta.json'
+import jaA2NazeNihongoOBenkyouSuruNDesuKa from '@/data/reading/exercises/ja-a2-naze-nihongo-o-benkyou-suru-n-desu-ka.json'
+import jaA2HankoOMotteKonakerebaNaranai from '@/data/reading/exercises/ja-a2-hanko-o-motte-konakereba-naranai.json'
+import jaA2AshitaWaYukiDeshou from '@/data/reading/exercises/ja-a2-ashita-wa-yuki-deshou.json'
+import jaA2NagaraBenkyouShitari from '@/data/reading/exercises/ja-a2-nagara-benkyou-shitari.json'
+import jaA2KabeNiKakaretaE from '@/data/reading/exercises/ja-a2-kabe-ni-kakareta-e.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -474,6 +486,16 @@ const RAW_EXERCISES: unknown[] = [
   jaA1KatakanaWaMuzukashii,
   jaA1TabeteMoIiDesuKa,
   jaA1Itadakimasu,
+  jaA2ShinbunOToriNiIku,
+  jaA2FujiSanNiNobottaKotoGaAru,
+  jaA2AmeGaFuruTo,
+  jaA2OnigiriBakari,
+  jaA2YasaiOMoratta,
+  jaA2NazeNihongoOBenkyouSuruNDesuKa,
+  jaA2HankoOMotteKonakerebaNaranai,
+  jaA2AshitaWaYukiDeshou,
+  jaA2NagaraBenkyouShitari,
+  jaA2KabeNiKakaretaE,
 ]
 
 export const READING_EXERCISES: ReadingExercise[] = RAW_EXERCISES.map((candidate) => {

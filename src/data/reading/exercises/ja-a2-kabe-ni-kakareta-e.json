@@ -1,0 +1,482 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ja-a2-kabe-ni-kakareta-e",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Japonés A2",
+    "jlpt": "N4",
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el JLPT es aproximada: son dos escalas distintas, con exámenes distintos. A2 se sitúa alrededor del N4, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "kabe-ni-kakareta-e",
+  "series": {
+    "id": "japones-a2-lectura-10",
+    "episode": 10,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ja-a2-nagara-benkyou-shitari",
+    "nextExerciseId": null
+  },
+  "classification": {
+    "genre": "crónica de barrio",
+    "topic": "una pintada que nadie borra",
+    "intent": "learning",
+    "tags": [
+      "japones a2",
+      "lectura",
+      "pasiva",
+      "modificación de sustantivo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El dibujo pintado en la pared"
+    },
+    "intro": {
+      "es": "Una pintada apareció una noche en la pared de la escuela. Nadie sabe quién la hizo y nadie la ha borrado en seis años. Lectura de japonés A2."
+    },
+    "mission": {
+      "es": "Averigua qué decidió el colegio en la reunión de padres."
+    },
+    "targetText": "六年前、小学校の壁に絵が描かれた。夜のうちに描かれたので、だれが描いたか分からない。\n\n絵は大きくない。子どもが二人と、犬が一匹。青と白だけで描かれた絵だ。\n\n次の日、校長先生は消そうとした。でも、そこでもんだいが起きた。\n\nその絵を見た子どもたちが、消さないでほしいと言ったのだ。\n\n保護者の会議が開かれた。二時間はなし合われた。いけんは二つに分かれた。\n\n消すべきだと言う人のりゆうはかんたんだ。学校の壁に勝手に描くのは、いいことではない。\n\n消さないでほしいと言う人のりゆうもかんたんだ。あの絵は子どもに好かれている。\n\n会議で決まったことは、すこしかわっている。絵は消さない。でも、学校は「いい絵だ」とも言わない。何も言わない。\n\n六年たった。絵はまだある。色はすこし落ちたが、まだ見える。\n\n去年、その壁の前で写真を撮る子が増えた。だれが描いたかは、今も知られていない。",
+    "wordCount": 334,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Formar la pasiva: 描かれた, 開かれた, 好かれている, 知られていない."
+      },
+      {
+        "es": "Modificar sustantivos con una oración: その絵を見た子どもたち."
+      },
+      {
+        "es": "Leer una decisión que consiste en no decidir."
+      }
+    ],
+    "grammarFocus": [
+      "ukemi-a2",
+      "noun-modification-a2",
+      "estructura-sov-particulas"
+    ],
+    "vocabulary": [
+      {
+        "surface": "壁",
+        "lemma": "壁",
+        "reading": "かべ",
+        "glosses": {
+          "es": "pared"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "描かれた",
+        "lemma": "描かれた",
+        "reading": "かかれた",
+        "glosses": {
+          "es": "fue pintado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "校長",
+        "lemma": "校長",
+        "reading": "こうちょう",
+        "glosses": {
+          "es": "director del colegio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "消そう",
+        "lemma": "消そう",
+        "reading": "けそう",
+        "glosses": {
+          "es": "intentar borrar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "保護者",
+        "lemma": "保護者",
+        "reading": "ほごしゃ",
+        "glosses": {
+          "es": "padres y tutores"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "会議",
+        "lemma": "会議",
+        "reading": "かいぎ",
+        "glosses": {
+          "es": "reunión"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "勝手に",
+        "lemma": "勝手に",
+        "reading": "かってに",
+        "glosses": {
+          "es": "por su cuenta, sin permiso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "増えた",
+        "lemma": "増えた",
+        "reading": "ふえた",
+        "glosses": {
+          "es": "aumentó"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Las reuniones de 保護者会 tienen peso real en las escuelas japonesas y sus acuerdos se aplican. Una decisión de «no decidir» es una salida reconocible cuando el consenso es imposible."
+    },
+    "spanishSpeakerNote": {
+      "es": "La pasiva japonesa se usa muchísimo más que la española: 描かれた, 開かれた, 知られていない. Y para describir un sustantivo se le pone delante una oración entera: その絵を見た子どもたち, «los niños que vieron ese dibujo»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": true,
+    "romanization": "a0-only",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto japonés escrito sin espacios, encadenar lo que ocurre con la forma て, distinguir un estado de una acción, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adverbios-frecuencia",
+      "arimasu-imasu",
+      "conjunciones",
+      "desu-masu",
+      "estructura-sov-particulas",
+      "expresiones-cotidianas",
+      "hiragana-basico",
+      "i-keiyoshi",
+      "interrogativos-ka",
+      "jikan-tiempo",
+      "katakana-basico",
+      "masu-kei-conjugacion",
+      "na-keiyoshi",
+      "negacion-completa",
+      "numeros-contadores",
+      "particula-de-e",
+      "particula-wa-ga",
+      "particula-wo-ni",
+      "tai-form",
+      "te-form-permission",
+      "ageru-morau-kureru-a2",
+      "dake-shika-bakari-a2",
+      "deshou-a2",
+      "hikaku-a2",
+      "kamoshirenai-a2",
+      "kanoukei-a2",
+      "mae-ni-ato-de-a2",
+      "n-desu-a2",
+      "nagara-a2",
+      "nakereba-naranai-a2",
+      "noun-modification-a2",
+      "ta-koto-ga-aru-a2",
+      "tara-condicional-a2",
+      "tari-tari-a2",
+      "te-form-sequence-a2",
+      "te-iru-a2",
+      "te-mo-ii-a2",
+      "to-condicional-a2",
+      "to-omoimasu-a2",
+      "ukemi-a2"
+    ],
+    "disallowedGrammar": [
+      "keigo (尊敬語・謙譲語)",
+      "causativo-pasivo",
+      "japonés clásico",
+      "registro periodístico nominal"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 33.4,
+      "maxSentenceWords": 46,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Forma て y sus usos, ている, condicionales たら y と, comparativos, pasiva sencilla. Sin keigo ni causativo-pasivo. Sin espacios: el kanji segmenta. Furigana declarado pero no implementado en el runner."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué decidió la reunión?",
+      "options": [
+        {
+          "id": "nada",
+          "text": "No borrarlo, pero tampoco aprobarlo: no decir nada"
+        },
+        {
+          "id": "borrar",
+          "text": "Borrarlo cuanto antes"
+        },
+        {
+          "id": "premiar",
+          "text": "Premiar a quien lo pintó"
+        }
+      ],
+      "answer": "nada",
+      "evidence": "絵は消さない。でも、学校は「いい絵だ」とも言わない。何も言わない。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo llama «un poco raro»."
+        },
+        "incorrect": {
+          "es": "No se borra y no se sabe quién lo hizo. Busca las tres frases del acuerdo."
+        },
+        "strategy": {
+          "es": "Si un acuerdo se describe con dos negaciones, la decisión es no pronunciarse."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué hay pintado en la pared?",
+      "options": [
+        {
+          "id": "ninos",
+          "text": "Dos niños y un perro, en azul y blanco"
+        },
+        {
+          "id": "escuela",
+          "text": "El edificio de la escuela"
+        },
+        {
+          "id": "nombre",
+          "text": "El nombre de quien lo pintó"
+        }
+      ],
+      "answer": "ninos",
+      "evidence": "子どもが二人と、犬が一匹。青と白だけで描かれた絵だ。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y con solo dos colores."
+        },
+        "incorrect": {
+          "es": "No hay ningún nombre: precisamente nadie sabe quién fue."
+        },
+        "strategy": {
+          "es": "Los contadores 人 y 匹 cuentan personas y animales: úsalos para leer la descripción."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué significa 勝手に?",
+      "options": [
+        {
+          "id": "sinpermiso",
+          "text": "Por su cuenta, sin pedir permiso"
+        },
+        {
+          "id": "deprisa",
+          "text": "Muy deprisa"
+        },
+        {
+          "id": "denoche",
+          "text": "De noche"
+        }
+      ],
+      "answer": "sinpermiso",
+      "evidence": "学校の壁に勝手に描くのは、いいことではない。",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: ese es el argumento de quienes querían borrarlo."
+        },
+        "incorrect": {
+          "es": "Lo de la noche se dice con 夜のうちに, en otra frase. Aquí se habla del permiso."
+        },
+        "strategy": {
+          "es": "Si la frase da un argumento contra algo, la palabra señala lo que se reprocha."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el colegio no dice que el dibujo es bueno?",
+      "options": [
+        {
+          "id": "norma",
+          "text": "Porque aprobarlo sería autorizar que se pinte sin permiso"
+        },
+        {
+          "id": "feo",
+          "text": "Porque a los profesores no les gusta"
+        },
+        {
+          "id": "ley",
+          "text": "Porque la ley se lo prohíbe"
+        }
+      ],
+      "answer": "norma",
+      "evidence": "学校の壁に勝手に描くのは、いいことではない … 学校は「いい絵だ」とも言わない。何も言わない。",
+      "feedback": {
+        "correct": {
+          "es": "Sí: callar es la única forma de no borrarlo y no autorizarlo a la vez."
+        },
+        "incorrect": {
+          "es": "No se dice que no guste, ni se menciona ninguna ley. Cruza el argumento con el acuerdo."
+        },
+        "strategy": {
+          "es": "Para inferir, une la objeción de un grupo con la forma del acuerdo final."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: hoy ya se sabe quién pintó el dibujo.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "だれが描いたかは、今も知られていない。",
+      "feedback": {
+        "correct": {
+          "es": "Falso: sigue sin saberse, y el texto lo dice en pasiva."
+        },
+        "incorrect": {
+          "es": "Busca la última frase del texto. Termina en pasiva negativa."
+        },
+        "strategy": {
+          "es": "La pasiva 知られていない dice que algo sigue sin conocerse."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la crónica.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Aparece el dibujo una noche hace seis años"
+        },
+        {
+          "id": "p2",
+          "text": "El director intenta borrarlo y los niños protestan"
+        },
+        {
+          "id": "p3",
+          "text": "La reunión de padres y el acuerdo"
+        },
+        {
+          "id": "p4",
+          "text": "Seis años después, se hacen fotos delante"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "六年前、小学校の壁に絵が描かれた… 校長先生は消そうとした… 保護者の会議が開かれた… 去年、その壁の前で写真を撮る子が増えた。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: aparición, conflicto, acuerdo y presente."
+        },
+        "incorrect": {
+          "es": "Guíate por 六年前, 次の日 y 去年."
+        },
+        "strategy": {
+          "es": "Las marcas temporales ordenan la crónica de principio a fin."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en japonés sobre algo que apareció en tu barrio sin que nadie supiera quién lo hizo. Usa cuatro pasivas y dos oraciones que modifiquen un sustantivo."
+    },
+    "minWords": 110,
+    "maxWords": 260,
+    "hints": [
+      "壁に絵が描かれた。",
+      "だれが描いたか分からない。",
+      "会議が開かれた。",
+      "今も知られていない。"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de japonés y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de japonés A2: el dibujo pintado en la pared | WeLearn"
+    },
+    "description": {
+      "es": "Lee una crónica en japonés A2 y practica la voz pasiva y la modificación de sustantivos. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/japones/a2/lectura/kabe-ni-kakareta-e",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ja-a2-nagara-benkyou-shitari"
+    ]
+  }
+}

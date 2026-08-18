@@ -1,0 +1,483 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ja-a2-onigiri-bakari",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Japonés A2",
+    "jlpt": "N4",
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el JLPT es aproximada: son dos escalas distintas, con exámenes distintos. A2 se sitúa alrededor del N4, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "onigiri-bakari",
+  "series": {
+    "id": "japones-a2-lectura-10",
+    "episode": 4,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ja-a2-ame-ga-furu-to",
+    "nextExerciseId": "ja-a2-yasai-o-moratta"
+  },
+  "classification": {
+    "genre": "escena de tienda",
+    "topic": "un estudiante que compra siempre lo mismo",
+    "intent": "learning",
+    "tags": [
+      "japones a2",
+      "lectura",
+      "comparación",
+      "だけ・しか・ばかり"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Solo bolas de arroz"
+    },
+    "intro": {
+      "es": "Ciento cuarenta días comprando lo mismo a la misma hora. La dependienta lo notó antes que él. Lectura de japonés A2."
+    },
+    "mission": {
+      "es": "Averigua qué le puso un día en la bolsa."
+    },
+    "targetText": "大学の近くのコンビニで、毎晩十時におにぎりを二つ買っていた。はんとし、それだけだった。\n\n安いからだ。おにぎりは百二十円で、弁当は五百八十円だ。弁当の方がおいしいが、四ばいいじょう高い。\n\n私は奨学金しかない。だから、おにぎりばかり食べていた。\n\n店員さんは五十歳ぐらいの女の人だった。何も言わなかった。毎晩「ありがとうございました」だけ言った。\n\nある夜、袋の中におにぎりが三つ入っていた。私は二つしか買っていない。\n\nつぎの日、店員さんに言った。「一つ多かったです。」\n\n店員さんは言った。「知っています。期限が近いものです。捨てるより、いいでしょう。」\n\nそれから週に二回ぐらい、袋の中に一つ多く入っていた。いつも期限が近いものだった。\n\n三月に大学を卒業して、その町を出た。さいごの夜、店員さんに手紙をわたした。\n\n店員さんは読まないで、ポケットに入れた。そして言った。「今日は四つ入れました。」",
+    "wordCount": 339,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Comparar con より y con 方が: 弁当の方がおいしい."
+      },
+      {
+        "es": "Distinguir だけ, しか…ない y ばかり."
+      },
+      {
+        "es": "Leer un gesto repetido que nadie nombra."
+      }
+    ],
+    "grammarFocus": [
+      "hikaku-a2",
+      "dake-shika-bakari-a2",
+      "i-keiyoshi"
+    ],
+    "vocabulary": [
+      {
+        "surface": "おにぎり",
+        "lemma": "おにぎり",
+        "reading": "おにぎり",
+        "glosses": {
+          "es": "bola de arroz"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "弁当",
+        "lemma": "弁当",
+        "reading": "べんとう",
+        "glosses": {
+          "es": "comida preparada en caja"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "奨学金",
+        "lemma": "奨学金",
+        "reading": "しょうがくきん",
+        "glosses": {
+          "es": "beca"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "店員",
+        "lemma": "店員",
+        "reading": "てんいん",
+        "glosses": {
+          "es": "dependiente, dependienta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "袋",
+        "lemma": "袋",
+        "reading": "ふくろ",
+        "glosses": {
+          "es": "bolsa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "期限",
+        "lemma": "期限",
+        "reading": "きげん",
+        "glosses": {
+          "es": "fecha de caducidad"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "捨てる",
+        "lemma": "捨てる",
+        "reading": "すてる",
+        "glosses": {
+          "es": "tirar a la basura"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "卒業",
+        "lemma": "卒業",
+        "reading": "そつぎょう",
+        "glosses": {
+          "es": "graduación"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Los konbini japoneses retiran la comida poco antes de su hora de caducidad y la tiran. Que un dependiente la regale no está permitido oficialmente, y por eso nunca se dice en voz alta."
+    },
+    "spanishSpeakerNote": {
+      "es": "Tres formas de decir «solo»: だけ es neutro (二つだけ), しか exige verbo negativo y suena a escasez (奨学金しかない), y ばかり sugiere que es demasiado siempre lo mismo (おにぎりばかり)."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": true,
+    "romanization": "a0-only",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto japonés escrito sin espacios, encadenar lo que ocurre con la forma て, distinguir un estado de una acción, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adverbios-frecuencia",
+      "arimasu-imasu",
+      "conjunciones",
+      "desu-masu",
+      "estructura-sov-particulas",
+      "expresiones-cotidianas",
+      "hiragana-basico",
+      "i-keiyoshi",
+      "interrogativos-ka",
+      "jikan-tiempo",
+      "katakana-basico",
+      "masu-kei-conjugacion",
+      "na-keiyoshi",
+      "negacion-completa",
+      "numeros-contadores",
+      "particula-de-e",
+      "particula-wa-ga",
+      "particula-wo-ni",
+      "tai-form",
+      "te-form-permission",
+      "ageru-morau-kureru-a2",
+      "dake-shika-bakari-a2",
+      "deshou-a2",
+      "hikaku-a2",
+      "kamoshirenai-a2",
+      "kanoukei-a2",
+      "mae-ni-ato-de-a2",
+      "n-desu-a2",
+      "nagara-a2",
+      "nakereba-naranai-a2",
+      "noun-modification-a2",
+      "ta-koto-ga-aru-a2",
+      "tara-condicional-a2",
+      "tari-tari-a2",
+      "te-form-sequence-a2",
+      "te-iru-a2",
+      "te-mo-ii-a2",
+      "to-condicional-a2",
+      "to-omoimasu-a2",
+      "ukemi-a2"
+    ],
+    "disallowedGrammar": [
+      "keigo (尊敬語・謙譲語)",
+      "causativo-pasivo",
+      "japonés clásico",
+      "registro periodístico nominal"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 42.4,
+      "maxSentenceWords": 91,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Forma て y sus usos, ている, condicionales たら y と, comparativos, pasiva sencilla. Sin keigo ni causativo-pasivo. Sin espacios: el kanji segmenta. Furigana declarado pero no implementado en el runner."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta el texto?",
+      "options": [
+        {
+          "id": "ayuda",
+          "text": "Que la dependienta le fue añadiendo comida sin decirlo nunca abiertamente"
+        },
+        {
+          "id": "robo",
+          "text": "Que él se llevaba comida sin pagar"
+        },
+        {
+          "id": "precio",
+          "text": "Que los precios del konbini son abusivos"
+        }
+      ],
+      "answer": "ayuda",
+      "evidence": "「期限が近いものです。捨てるより、いいでしょう。」… それから週に二回ぐらい、袋の中に一つ多く入っていた。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la explicación de la caducidad es la forma de no llamarlo regalo."
+        },
+        "incorrect": {
+          "es": "Él paga siempre, y no se critican los precios. Busca lo que dice la dependienta."
+        },
+        "strategy": {
+          "es": "Si un personaje justifica un gesto con una razón práctica, la razón es la excusa."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto cuesta un bentō frente a una bola de arroz?",
+      "options": [
+        {
+          "id": "580",
+          "text": "580 yenes frente a 120"
+        },
+        {
+          "id": "120",
+          "text": "120 yenes frente a 580"
+        },
+        {
+          "id": "igual",
+          "text": "Cuestan lo mismo"
+        }
+      ],
+      "answer": "580",
+      "evidence": "おにぎりは百二十円で、弁当は五百八十円だ … 四倍以上高い。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el texto añade que es más de cuatro veces más caro."
+        },
+        "incorrect": {
+          "es": "Los 120 son la bola de arroz. Busca la frase con las dos cifras."
+        },
+        "strategy": {
+          "es": "Cuando el texto da dos precios seguidos, empareja cada uno con su producto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué significa 期限が近い?",
+      "options": [
+        {
+          "id": "caducar",
+          "text": "Que está a punto de caducar"
+        },
+        {
+          "id": "nuevo",
+          "text": "Que acaba de llegar"
+        },
+        {
+          "id": "barato",
+          "text": "Que está rebajado"
+        }
+      ],
+      "answer": "caducar",
+      "evidence": "「期限が近いものです。捨てるより、いいでしょう。」",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y por eso dice que es mejor que tirarlo."
+        },
+        "incorrect": {
+          "es": "La frase siguiente habla de tirarlo a la basura: no es novedad ni rebaja."
+        },
+        "strategy": {
+          "es": "Si lo siguiente es «mejor que tirarlo», el producto está por caducar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué la dependienta guardó la carta sin leerla?",
+      "options": [
+        {
+          "id": "despues",
+          "text": "Para leerla luego a solas y no romper el trato discreto de siempre"
+        },
+        {
+          "id": "no",
+          "text": "Porque no sabía leer"
+        },
+        {
+          "id": "prisa",
+          "text": "Porque tenía mucha prisa"
+        }
+      ],
+      "answer": "despues",
+      "evidence": "店員さんは読まないで、ポケットに入れた。そして言った。「今日は四つ入れました。」",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo remata con la misma discreción: cuatro en vez de tres."
+        },
+        "incorrect": {
+          "es": "No hay prisa ni problema de lectura. Fíjate en lo que dice justo después."
+        },
+        "strategy": {
+          "es": "Si tras un gesto viene una frase en el mismo tono, el gesto es coherente con el trato de siempre."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: descubrió la bola de arroz de más al abrir la bolsa y preguntó al día siguiente.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "ある夜、袋の中におにぎりが三つ入っていた … 次の日、店員さんに言った。「一つ多かったです。」",
+      "feedback": {
+        "correct": {
+          "es": "Falso: él lo descubrió al abrir la bolsa y tuvo que preguntar al día siguiente."
+        },
+        "incorrect": {
+          "es": "Busca la noche en que aparecieron tres. La explicación llega después."
+        },
+        "strategy": {
+          "es": "Si el narrador tiene que preguntar, es que no se lo habían dicho antes."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la escena.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Medio año comprando dos bolas de arroz cada noche"
+        },
+        {
+          "id": "p2",
+          "text": "Una noche aparecen tres en la bolsa"
+        },
+        {
+          "id": "p3",
+          "text": "Ella le explica lo de la caducidad"
+        },
+        {
+          "id": "p4",
+          "text": "La última noche, la carta y las cuatro"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "毎晩十時におにぎりを二つ買っていた… ある夜、袋の中におにぎりが三つ入っていた… 「期限が近いものです」… 最後の夜、店員さんに手紙を渡した。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: rutina, anomalía, explicación y despedida."
+        },
+        "incorrect": {
+          "es": "Guíate por ある夜, 次の日 y 最後の夜."
+        },
+        "strategy": {
+          "es": "Las marcas de noche ordenan el relato sin ambigüedad."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en japonés comparando dos cosas que compras. Usa より y 方が, y una vez cada uno de だけ, しか y ばかり."
+    },
+    "minWords": 110,
+    "maxWords": 260,
+    "hints": [
+      "おにぎりは百二十円で、弁当は五百八十円だ。",
+      "弁当の方がおいしい。",
+      "奨学金しかない。",
+      "おにぎりばかり食べていた。"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de japonés y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de japonés A2: solo bolas de arroz | WeLearn"
+    },
+    "description": {
+      "es": "Lee una escena en japonés A2 y practica la comparación y las partículas だけ, しか y ばかり. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/japones/a2/lectura/onigiri-bakari",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ja-a2-ame-ga-furu-to",
+      "ja-a2-yasai-o-moratta"
+    ]
+  }
+}

@@ -1,0 +1,483 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ja-a2-hanko-o-motte-konakereba-naranai",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Japonés A2",
+    "jlpt": "N4",
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el JLPT es aproximada: son dos escalas distintas, con exámenes distintos. A2 se sitúa alrededor del N4, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "hanko-o-motte-konakereba-naranai",
+  "series": {
+    "id": "japones-a2-lectura-10",
+    "episode": 7,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ja-a2-naze-nihongo-o-benkyou-suru-n-desu-ka",
+    "nextExerciseId": "ja-a2-ashita-wa-yuki-deshou"
+  },
+  "classification": {
+    "genre": "trámite",
+    "topic": "un sello personal para abrir una cuenta",
+    "intent": "learning",
+    "tags": [
+      "japones a2",
+      "lectura",
+      "なければならない",
+      "potencial"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Hay que traer el sello"
+    },
+    "intro": {
+      "es": "Cuatro visitas al banco por un sello de madera de trescientos yenes. Y una cosa que sí pudo hacer sola. Lectura de japonés A2."
+    },
+    "mission": {
+      "es": "Averigua qué le dijo la empleada la cuarta vez."
+    },
+    "targetText": "日本で銀行の口座を作るには、判子がなければならない。サインではだめだ。\n\n私はそれを知らなかった。\n\n一かいめ、パスポートだけ持って行った。「判子を持って来なければなりません」と言われた。\n\n二かいめ、判子を買って持って行った。三百円の木の判子だ。でも住所の証明が足りなかった。\n\n三かいめ、ぜんぶ持って行った。こんどは名前の字がちがった。判子は「ドゥアルテ」だが、カードは「ドゥアルテ・シルバ」だった。\n\n四かいめ、私はもう何も言えなかった。書類を出して、黙って待った。\n\n窓口の人は五十歳ぐらいの女の人だった。書類を見て、少し考えて、こう言った。\n\n「私が直します。もう来なくていいです。」\n\nそして自分でカードの名前を短くして、判子と同じにした。\n\n私は「できるんですか」と聞いた。その人は答えた。「できます。だれもやらないだけです。」\n\n今、私はその銀行しか使わない。ほかの銀行の方が近いが、行かない。",
+    "wordCount": 337,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Expresar obligación con なければならない."
+      },
+      {
+        "es": "Formar el potencial: 言えない, できる, 使える."
+      },
+      {
+        "es": "Distinguir lo que no se puede hacer de lo que nadie hace."
+      }
+    ],
+    "grammarFocus": [
+      "nakereba-naranai-a2",
+      "kanoukei-a2",
+      "negacion-completa"
+    ],
+    "vocabulary": [
+      {
+        "surface": "口座",
+        "lemma": "口座",
+        "reading": "こうざ",
+        "glosses": {
+          "es": "cuenta bancaria"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "判子",
+        "lemma": "判子",
+        "reading": "はんこ",
+        "glosses": {
+          "es": "sello personal"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "住所",
+        "lemma": "住所",
+        "reading": "じゅうしょ",
+        "glosses": {
+          "es": "domicilio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "証明",
+        "lemma": "証明",
+        "reading": "しょうめい",
+        "glosses": {
+          "es": "justificante, prueba"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "書類",
+        "lemma": "書類",
+        "reading": "しょるい",
+        "glosses": {
+          "es": "documentación"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "窓口",
+        "lemma": "窓口",
+        "reading": "まどぐち",
+        "glosses": {
+          "es": "ventanilla"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "直します",
+        "lemma": "直します",
+        "reading": "なおします",
+        "glosses": {
+          "es": "lo corrijo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "短く",
+        "lemma": "短く",
+        "reading": "みじかく",
+        "glosses": {
+          "es": "más corto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El 判子 —sello personal tallado— sustituye a la firma en la mayoría de trámites japoneses. Para un extranjero, el problema no es comprarlo: es que el nombre del sello coincida exactamente con el del documento."
+    },
+    "spanishSpeakerNote": {
+      "es": "なければならない es la obligación: 判子がなければならない, «hace falta sello». Y el potencial dice lo que se puede: できます es «se puede», frente a だれもやらない, «nadie lo hace». No es lo mismo."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": true,
+    "romanization": "a0-only",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto japonés escrito sin espacios, encadenar lo que ocurre con la forma て, distinguir un estado de una acción, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adverbios-frecuencia",
+      "arimasu-imasu",
+      "conjunciones",
+      "desu-masu",
+      "estructura-sov-particulas",
+      "expresiones-cotidianas",
+      "hiragana-basico",
+      "i-keiyoshi",
+      "interrogativos-ka",
+      "jikan-tiempo",
+      "katakana-basico",
+      "masu-kei-conjugacion",
+      "na-keiyoshi",
+      "negacion-completa",
+      "numeros-contadores",
+      "particula-de-e",
+      "particula-wa-ga",
+      "particula-wo-ni",
+      "tai-form",
+      "te-form-permission",
+      "ageru-morau-kureru-a2",
+      "dake-shika-bakari-a2",
+      "deshou-a2",
+      "hikaku-a2",
+      "kamoshirenai-a2",
+      "kanoukei-a2",
+      "mae-ni-ato-de-a2",
+      "n-desu-a2",
+      "nagara-a2",
+      "nakereba-naranai-a2",
+      "noun-modification-a2",
+      "ta-koto-ga-aru-a2",
+      "tara-condicional-a2",
+      "tari-tari-a2",
+      "te-form-sequence-a2",
+      "te-iru-a2",
+      "te-mo-ii-a2",
+      "to-condicional-a2",
+      "to-omoimasu-a2",
+      "ukemi-a2"
+    ],
+    "disallowedGrammar": [
+      "keigo (尊敬語・謙譲語)",
+      "causativo-pasivo",
+      "japonés clásico",
+      "registro periodístico nominal"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 37.4,
+      "maxSentenceWords": 63,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Forma て y sus usos, ている, condicionales たら y と, comparativos, pasiva sencilla. Sin keigo ni causativo-pasivo. Sin espacios: el kanji segmenta. Furigana declarado pero no implementado en el runner."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué revela la cuarta visita?",
+      "options": [
+        {
+          "id": "podia",
+          "text": "Que el problema se podía resolver desde el principio, pero nadie lo hacía"
+        },
+        {
+          "id": "error",
+          "text": "Que el banco se había equivocado con su nombre"
+        },
+        {
+          "id": "ley",
+          "text": "Que la ley cambió ese año"
+        }
+      ],
+      "answer": "podia",
+      "evidence": "「できます。だれもやらないだけです。」",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y esa frase es el remate del texto."
+        },
+        "incorrect": {
+          "es": "No hubo error del banco ni cambio de ley. Busca la respuesta de la empleada."
+        },
+        "strategy": {
+          "es": "Cuando alguien distingue «se puede» de «nadie lo hace», ahí está la tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué faltó en la segunda visita?",
+      "options": [
+        {
+          "id": "direccion",
+          "text": "El justificante de domicilio"
+        },
+        {
+          "id": "sello",
+          "text": "El sello"
+        },
+        {
+          "id": "pasaporte",
+          "text": "El pasaporte"
+        }
+      ],
+      "answer": "direccion",
+      "evidence": "二かいめ、判子を買って持って行った … でも住所の証明が足りなかった。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: el sello ya lo llevaba."
+        },
+        "incorrect": {
+          "es": "El sello es lo que faltó la primera vez. Busca la frase de la segunda visita."
+        },
+        "strategy": {
+          "es": "Los ordinales 一回目, 二回目 organizan el texto: ve directo al que se pregunta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué es un 判子?",
+      "options": [
+        {
+          "id": "sello",
+          "text": "Un sello personal que sustituye a la firma"
+        },
+        {
+          "id": "carnet",
+          "text": "Un carnet de identidad"
+        },
+        {
+          "id": "formulario",
+          "text": "Un formulario del banco"
+        }
+      ],
+      "answer": "sello",
+      "evidence": "判子がなければならない。サインではだめだ … 三百円の木の判子だ。",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: se opone a la firma y es de madera."
+        },
+        "incorrect": {
+          "es": "El texto lo opone expresamente a la firma y dice que es de madera."
+        },
+        "strategy": {
+          "es": "Si el texto opone la palabra a «firma», es lo que la sustituye."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué sigue usando ese banco aunque haya otros más cerca?",
+      "options": [
+        {
+          "id": "gesto",
+          "text": "Por lo que hizo aquella empleada: alguien que resolvió en vez de repetir la norma"
+        },
+        {
+          "id": "comision",
+          "text": "Porque cobra menos comisiones"
+        },
+        {
+          "id": "idioma",
+          "text": "Porque allí hablan español"
+        }
+      ],
+      "answer": "gesto",
+      "evidence": "「私が直します。もう来なくていいです。」… 今、私はその銀行しか使わない。ほかの銀行の方が近いが、行かない。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo deja implícito poniendo las dos cosas al final."
+        },
+        "incorrect": {
+          "es": "No se habla de comisiones ni de idiomas. Cruza lo que hizo la empleada con la última frase."
+        },
+        "strategy": {
+          "es": "Si el texto termina con una fidelidad sin explicarla, la causa está en la escena anterior."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el sello le costó trescientos yenes y era de madera.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "判子を買って持って行った。三百円の木の判子だ。",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y el precio bajo contrasta con las cuatro visitas que costó usarlo."
+        },
+        "incorrect": {
+          "es": "Busca la frase de la segunda visita: da precio y material."
+        },
+        "strategy": {
+          "es": "Los datos de un objeto suelen ir en la frase donde aparece por primera vez."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena las visitas.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Solo con el pasaporte"
+        },
+        {
+          "id": "p2",
+          "text": "Con el sello, pero sin justificante de domicilio"
+        },
+        {
+          "id": "p3",
+          "text": "Con todo, pero el nombre no coincide"
+        },
+        {
+          "id": "p4",
+          "text": "La empleada lo arregla ella misma"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "一かいめ、パスポートだけ持って行った… 二かいめ、判子を買って… 三回目、全部持って行った… 四かいめ、私はもう何も言えなかった。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: el texto numera las cuatro visitas."
+        },
+        "incorrect": {
+          "es": "Sigue los ordinales 一回目 a 四回目."
+        },
+        "strategy": {
+          "es": "Si el texto numera sus partes, el orden ya está dado."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en japonés sobre un trámite que te costó varias visitas. Usa tres veces なければならない y tres formas potenciales."
+    },
+    "minWords": 110,
+    "maxWords": 260,
+    "hints": [
+      "判子がなければならない。",
+      "一回目、…を持って行った。",
+      "私はもう何も言えなかった。",
+      "「できます。だれもやらないだけです。」"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de japonés y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de japonés A2: hay que traer el sello | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto sobre trámites en japonés A2 y practica なければならない y la forma potencial. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/japones/a2/lectura/hanko-o-motte-konakereba-naranai",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ja-a2-naze-nihongo-o-benkyou-suru-n-desu-ka",
+      "ja-a2-ashita-wa-yuki-deshou"
+    ]
+  }
+}

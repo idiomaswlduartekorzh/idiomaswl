@@ -1,0 +1,483 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ja-a2-ame-ga-furu-to",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Japonés A2",
+    "jlpt": "N4",
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el JLPT es aproximada: son dos escalas distintas, con exámenes distintos. A2 se sitúa alrededor del N4, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "ame-ga-furu-to",
+  "series": {
+    "id": "japones-a2-lectura-10",
+    "episode": 3,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ja-a2-fuji-san-ni-nobotta-koto-ga-aru",
+    "nextExerciseId": "ja-a2-onigiri-bakari"
+  },
+  "classification": {
+    "genre": "escena de trabajo",
+    "topic": "un restaurante que se llena los días de lluvia",
+    "intent": "learning",
+    "tags": [
+      "japones a2",
+      "lectura",
+      "condicional たら",
+      "condicional と"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Cuando llueve"
+    },
+    "intro": {
+      "es": "Si llueve, el restaurante se llena. La dueña lo sabe desde hace once años y ha organizado la cocina en torno a eso. Lectura de japonés A2."
+    },
+    "mission": {
+      "es": "Averigua qué prepara los días de lluvia y por qué."
+    },
+    "targetText": "駅の近くに小さい食堂がある。店長は田口さんという女の人で、十一年ここで働いている。\n\n雨が降ると、店が混む。晴れの日より、ずっと混む。\n\nりゆうはかんたんだ。雨の日は、みんなとおくまで行かない。近い店に入る。\n\n田口さんはそれを知っているので、朝天気予報を見る。雨だったら、ご飯を多く炊く。晴れだったら、少なくする。\n\n十一年間、このやり方でやっている。\n\n「むずかしくないですよ」と田口さんは言う。「天気を見れば、その日のお客さんのかずが分かります。」\n\nでも、一つだけむずかしいことがあるそうだ。\n\n雨がきゅうに降ると、困る。朝晴れていて、昼から雨が降ったら、ご飯が足りなくなる。そういう日は、パンを出す。\n\n「日本の食堂でパンを出すと、お客さんは驚きます」と田口さんは笑った。「でも、何もないよりいいでしょう。」\n\n先月、そういう日が三回あった。田口さんはもう慣れている。\n\n「雨の日にパンが出たら、天気予報が外れた日です」とお客さんが言った。店の中でみんな笑った。",
+    "wordCount": 365,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguir el condicional と (consecuencia automática) del condicional たら (supuesto)."
+      },
+      {
+        "es": "Usar los conectores ので, でも, そういう."
+      },
+      {
+        "es": "Leer una decisión de trabajo tomada a partir de un dato repetido."
+      }
+    ],
+    "grammarFocus": [
+      "tara-condicional-a2",
+      "to-condicional-a2",
+      "conjunciones"
+    ],
+    "vocabulary": [
+      {
+        "surface": "食堂",
+        "lemma": "食堂",
+        "reading": "しょくどう",
+        "glosses": {
+          "es": "comedor, restaurante sencillo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "店長",
+        "lemma": "店長",
+        "reading": "てんちょう",
+        "glosses": {
+          "es": "encargado, dueño del local"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "混む",
+        "lemma": "混む",
+        "reading": "こむ",
+        "glosses": {
+          "es": "llenarse de gente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "天気予報",
+        "lemma": "天気予報",
+        "reading": "てんきよほう",
+        "glosses": {
+          "es": "previsión del tiempo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "炊く",
+        "lemma": "炊く",
+        "reading": "たく",
+        "glosses": {
+          "es": "cocer arroz"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "足りなく",
+        "lemma": "足りなく",
+        "reading": "たりなく",
+        "glosses": {
+          "es": "no ser suficiente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "驚きます",
+        "lemma": "驚きます",
+        "reading": "おどろきます",
+        "glosses": {
+          "es": "se sorprenden"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "外れた",
+        "lemma": "外れた",
+        "reading": "はずれた",
+        "glosses": {
+          "es": "falló, no acertó"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El 食堂 es el comedor de barrio japonés, con menú corto y arroz cocido cada mañana en cantidad calculada. Sacar pan en un sitio así es una improvisación visible para cualquier cliente."
+    },
+    "spanishSpeakerNote": {
+      "es": "と introduce una consecuencia que siempre ocurre: 雨が降ると、店が混む («cuando llueve, se llena»). たら plantea un supuesto concreto: 雨だったら、ご飯を多く炊く («si es día de lluvia, cuece más arroz»)."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": true,
+    "romanization": "a0-only",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto japonés escrito sin espacios, encadenar lo que ocurre con la forma て, distinguir un estado de una acción, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adverbios-frecuencia",
+      "arimasu-imasu",
+      "conjunciones",
+      "desu-masu",
+      "estructura-sov-particulas",
+      "expresiones-cotidianas",
+      "hiragana-basico",
+      "i-keiyoshi",
+      "interrogativos-ka",
+      "jikan-tiempo",
+      "katakana-basico",
+      "masu-kei-conjugacion",
+      "na-keiyoshi",
+      "negacion-completa",
+      "numeros-contadores",
+      "particula-de-e",
+      "particula-wa-ga",
+      "particula-wo-ni",
+      "tai-form",
+      "te-form-permission",
+      "ageru-morau-kureru-a2",
+      "dake-shika-bakari-a2",
+      "deshou-a2",
+      "hikaku-a2",
+      "kamoshirenai-a2",
+      "kanoukei-a2",
+      "mae-ni-ato-de-a2",
+      "n-desu-a2",
+      "nagara-a2",
+      "nakereba-naranai-a2",
+      "noun-modification-a2",
+      "ta-koto-ga-aru-a2",
+      "tara-condicional-a2",
+      "tari-tari-a2",
+      "te-form-sequence-a2",
+      "te-iru-a2",
+      "te-mo-ii-a2",
+      "to-condicional-a2",
+      "to-omoimasu-a2",
+      "ukemi-a2"
+    ],
+    "disallowedGrammar": [
+      "keigo (尊敬語・謙譲語)",
+      "causativo-pasivo",
+      "japonés clásico",
+      "registro periodístico nominal"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 40.6,
+      "maxSentenceWords": 69,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Forma て y sus usos, ている, condicionales たら y と, comparativos, pasiva sencilla. Sin keigo ni causativo-pasivo. Sin espacios: el kanji segmenta. Furigana declarado pero no implementado en el runner."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué explica el texto?",
+      "options": [
+        {
+          "id": "prevision",
+          "text": "Que la dueña calcula el arroz según la previsión del tiempo, porque la lluvia le llena el local"
+        },
+        {
+          "id": "cierre",
+          "text": "Que el restaurante pierde clientes cuando llueve"
+        },
+        {
+          "id": "pan",
+          "text": "Que quiere cambiar el menú y servir pan"
+        }
+      ],
+      "answer": "prevision",
+      "evidence": "雨が降ると、店が混む … 雨だったら、ご飯を多く炊く。晴れだったら、少なくする。",
+      "feedback": {
+        "correct": {
+          "es": "Sí: la lluvia llena el local y por eso el arroz se calcula con la previsión."
+        },
+        "incorrect": {
+          "es": "Con lluvia se llena, no se vacía, y el pan es un recurso de emergencia. Busca las frases con 雨だったら."
+        },
+        "strategy": {
+          "es": "Si un texto une un fenómeno y una decisión repetida, esa relación es el asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué hace cuando la lluvia llega por sorpresa a mediodía?",
+      "options": [
+        {
+          "id": "pan",
+          "text": "Sacar pan porque el arroz no llega"
+        },
+        {
+          "id": "cerrar",
+          "text": "Cerrar antes de tiempo"
+        },
+        {
+          "id": "pedir",
+          "text": "Pedir más arroz a otro local"
+        }
+      ],
+      "answer": "pan",
+      "evidence": "朝晴れていて、昼から雨が降ったら、ご飯が足りなくなる。そういう日は、パンを出す。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y admite que a los clientes les sorprende."
+        },
+        "incorrect": {
+          "es": "No cierra ni pide fuera. Busca la frase con そういう日は."
+        },
+        "strategy": {
+          "es": "La expresión そういう日は remite al caso que se acaba de describir."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué significa 混む?",
+      "options": [
+        {
+          "id": "llenarse",
+          "text": "Llenarse de gente"
+        },
+        {
+          "id": "cerrar",
+          "text": "Cerrar"
+        },
+        {
+          "id": "ensuciarse",
+          "text": "Ensuciarse"
+        }
+      ],
+      "answer": "llenarse",
+      "evidence": "雨が降ると、店が混む。晴れの日より、ずっと混む。",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y se compara con los días de sol usando より."
+        },
+        "incorrect": {
+          "es": "Se compara con los días de sol y explica por qué la gente entra: habla de clientes."
+        },
+        "strategy": {
+          "es": "Si la frase siguiente explica que la gente entra, el verbo describe afluencia."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué se ríen todos con el comentario del cliente?",
+      "options": [
+        {
+          "id": "prevision",
+          "text": "Porque el pan delata que la previsión del tiempo falló ese día"
+        },
+        {
+          "id": "malo",
+          "text": "Porque el pan está malo"
+        },
+        {
+          "id": "nuevo",
+          "text": "Porque es un cliente nuevo"
+        }
+      ],
+      "answer": "prevision",
+      "evidence": "「雨の日にパンが出たら、天気予報が外れた日です」とお客さんが言った。",
+      "feedback": {
+        "correct": {
+          "es": "Sí: el cliente ha entendido el sistema entero de la cocina."
+        },
+        "incorrect": {
+          "es": "No se dice nada del sabor ni de quién es el cliente. Fíjate en qué deduce de ver pan."
+        },
+        "strategy": {
+          "es": "Si un personaje deduce algo a partir de un detalle, el chiste está en esa deducción."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: Taguchi lleva once años trabajando en ese local.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "店長は田口さんという女の人で、十一年ここで働いている。",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y el mismo método lo lleva usando esos once años."
+        },
+        "incorrect": {
+          "es": "Busca la primera frase larga del texto, donde se presenta a la dueña."
+        },
+        "strategy": {
+          "es": "Los datos de una persona van en la frase donde se la presenta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el texto.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "El local, la dueña y sus once años"
+        },
+        {
+          "id": "p2",
+          "text": "Cuando llueve, se llena, y por qué"
+        },
+        {
+          "id": "p3",
+          "text": "El cálculo del arroz según la previsión"
+        },
+        {
+          "id": "p4",
+          "text": "Los días de lluvia imprevista y el pan"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "駅の近くに小さい食堂がある… 雨が降ると、店が混む… 雨だったら、ご飯を多く炊く… そういう日は、パンを出す。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: el sitio, el fenómeno, el método y la excepción."
+        },
+        "incorrect": {
+          "es": "Fíjate en dónde se explica el cálculo y dónde aparece el pan."
+        },
+        "strategy": {
+          "es": "Un texto que explica un método deja la excepción para el final."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en japonés sobre algo que cambia según el tiempo o el día. Usa tres veces と y tres veces たら."
+    },
+    "minWords": 110,
+    "maxWords": 260,
+    "hints": [
+      "雨が降ると、店が混む。",
+      "雨だったら、…する。",
+      "晴れだったら、…する。",
+      "そういう日は、…を出す。"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de japonés y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de japonés A2: cuando llueve | WeLearn"
+    },
+    "description": {
+      "es": "Lee una escena en japonés A2 y practica los condicionales たら y と. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/japones/a2/lectura/ame-ga-furu-to",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ja-a2-fuji-san-ni-nobotta-koto-ga-aru",
+      "ja-a2-onigiri-bakari"
+    ]
+  }
+}
