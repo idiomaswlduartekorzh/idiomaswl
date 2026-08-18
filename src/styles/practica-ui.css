@@ -65,6 +65,7 @@
   --wlp-ok: #18794e;
   --wlp-alert: #b42332;
   --wlp-info: #176b87;
+  --wlp-warn: #7b4d13;
 }
 
 /* El único bloque de modo oscuro del archivo, y solo para los acentos. Si
@@ -86,6 +87,7 @@
   --wlp-ok: #45c88a;
   --wlp-alert: #ff8f99;
   --wlp-info: #6fd0e8;
+  --wlp-warn: #f2b65a;
 }
 
 /* ── Lienzo ────────────────────────────────────────────────────────────────
@@ -108,6 +110,7 @@
   --wlp-tint-ok: color-mix(in srgb, var(--wlp-ok) 12%, var(--wl-surface));
   --wlp-tint-alert: color-mix(in srgb, var(--wlp-alert) 12%, var(--wl-surface));
   --wlp-tint-info: color-mix(in srgb, var(--wlp-info) 12%, var(--wl-surface));
+  --wlp-tint-warn: color-mix(in srgb, var(--wlp-warn) 12%, var(--wl-surface));
 
   background: var(--wl-canvas);
   color: var(--wlp-ink);
