@@ -3,6 +3,7 @@ import { NextResponse } from 'next/server'
 import { getDictionary } from '@/lib/fonetica/dictionary'
 import { transcribe } from '@/lib/fonetica/transcribe'
 import { transcribeKoreanText } from '@/lib/fonetica/coreano/transcribe'
+import { transcribeFrenchText } from '@/lib/fonetica/frances/transcribe'
 
 /**
  * Transcripción fonética de un texto en inglés.
@@ -124,7 +125,7 @@ export async function POST(request: Request) {
 
   const body = payload as { text?: unknown; acronyms?: unknown; lang?: unknown }
   // El idioma decide el motor. Por defecto inglés, que es el que ya existía.
-  const lang = body.lang === 'coreano' ? 'coreano' : 'ingles'
+  const lang = body.lang === 'coreano' || body.lang === 'frances' ? body.lang : 'ingles'
 
   if (typeof body.text !== 'string') {
     return json({ error: 'Falta el texto que transcribir.' }, 400)
@@ -140,8 +141,8 @@ export async function POST(request: Request) {
   try {
     // El coreano no lleva diccionario: son reglas. Por eso no carga nada de disco y su
     // arranque en frío es inmediato.
-    const tokens = lang === 'coreano'
-      ? transcribeKoreanText(body.text)
+    const tokens = lang === 'coreano' ? transcribeKoreanText(body.text)
+      : lang === 'frances' ? transcribeFrenchText(body.text)
       : transcribe(body.text, await getDictionary(), { acronyms: body.acronyms !== false })
     const words = tokens.filter((token) => token.kind === 'word')
 

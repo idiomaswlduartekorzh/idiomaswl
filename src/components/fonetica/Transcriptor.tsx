@@ -49,8 +49,9 @@ function formOf(token: WordToken, system: string, variant: number, weak: boolean
   if (weak && token.weak?.[system]) return token.weak[system]
   const forms = token.forms[system] ?? []
   const chosen = forms[variant] ?? forms[0] ?? ''
-  const links = token.linking?.[system]?.[variant] ?? token.linking?.[system]?.[0] ?? false
-  return links && token.followedByVowel ? `${chosen}r` : chosen
+  // El sonido de enlace lo pone el idioma: /r/ en inglés, /z/ /t/ /n/ en francés.
+  const link = token.linking?.[system]?.[variant] ?? token.linking?.[system]?.[0] ?? null
+  return link && token.followedByVowel ? `${chosen}${link}` : chosen
 }
 
 /** Variantes distintas para el sistema que se está viendo. Ver el comentario del inglés. */
