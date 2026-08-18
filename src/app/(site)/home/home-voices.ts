@@ -9,14 +9,23 @@
  * Las citas van literales, con la ortografía de quien las escribió.
  */
 
+export type HomeVoiceEvidence = {
+  /** Recorte ya publicado en el archivo anónimo: solo el bloque de puntuación. */
+  image: string;
+  alt: string;
+  caption: string;
+};
+
 export type HomeVoice = {
   id: string;
   /** Tal como firma la persona su reseña pública en Google. */
   name: string;
-  /** El dato, tal como lo cuenta quien lo consiguió. */
+  /** El dato: el del documento cuando lo hay, y si no, el que cuenta la persona. */
   result: string;
   context: string;
   quote: string;
+  /** El papel. Solo cuando se ha verificado de quién es. */
+  evidence?: HomeVoiceEvidence;
 };
 
 /** Formato de enlace a ficha que Google documenta y no se rompe al cambiar la URL del mapa. */
@@ -27,18 +36,28 @@ export const HOME_VOICES: readonly HomeVoice[] = [
   {
     id: 'norma-c1',
     name: 'Norma Juliana Rocha Núñez',
-    result: 'Certificado C1',
-    context: 'Inglés intensivo previo al IELTS',
+    result: 'IELTS 8.0 · C1',
+    context: 'Inglés intensivo previo al IELTS · octubre de 2019',
     quote:
       'Al final del curso obtuve mi certificado C1. Mi papá tomó un curso intensivo de Alemán y en menos de 3 meses obtuvo su certificado A1 para trámite de visa.',
+    evidence: {
+      image: '/images/home/results/ielts-01.webp',
+      alt: 'Bloque de resultados de un Test Report Form del IELTS Academic con banda global 8.0 y nivel C1',
+      caption: 'IELTS Academic · Overall Band 8.0 · CEFR C1',
+    },
   },
   {
     id: 'daniel-toefl',
     name: 'Daniel Zuluaga',
-    result: 'TOEFL 90+',
-    context: 'Estudiante desde 2017 · después, Celpe-Bras',
+    result: 'TOEFL 95 / 120',
+    context: 'Estudiante desde 2017 · después, portugués y Celpe-Bras',
     quote:
       'Comencé con ellos preparándome para presentar el TOEFL y, gracias a su acompañamiento, logré obtener la nota que necesitaba (90+). Más adelante, empecé a aprender portugués y, un año después, presenté el CELPE-Bras.',
+    evidence: {
+      image: '/images/home/results/toefl-02.webp',
+      alt: 'Tabla de puntuaciones de un TOEFL iBT Test Taker Score Report con puntaje total 95',
+      caption: 'TOEFL iBT · 95 / 120 · junio de 2017',
+    },
   },
   {
     id: 'norman-maestria',
