@@ -1,0 +1,461 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-a2-das-brot-wird-nachts-gebacken",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Alemán A2"
+  },
+  "slug": "das-brot-wird-nachts-gebacken",
+  "series": {
+    "id": "aleman-a2-lectura-10",
+    "episode": 7,
+    "totalEpisodes": 7,
+    "previousExerciseId": "de-a2-ich-habe-mich-verlaufen",
+    "nextExerciseId": null
+  },
+  "classification": {
+    "genre": "reportaje breve",
+    "topic": "una panadería que no cambia el horario",
+    "intent": "learning",
+    "tags": [
+      "aleman a2",
+      "lectura",
+      "pasiva en presente",
+      "participio como adjetivo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El pan se hace de noche"
+    },
+    "intro": {
+      "es": "Una panadería donde el pan se amasa a mano desde 1954 y nadie ha conseguido convencerles de cambiar. Lectura de alemán A2 con la pasiva."
+    },
+    "mission": {
+      "es": "Averigua qué propuso la cadena y por qué dijeron que no."
+    },
+    "targetText": "In der Bäckerei Hoffmann wird das Brot nachts gebacken. Der Teig wird um halb eins angesetzt und um vier Uhr wird er von Hand geformt. Es gibt keine Maschine dafür. Das gebackene Brot kommt um sechs in den Laden. Um halb zehn ist das meiste verkauft. Die Bäckerei wurde 1954 eröffnet und wird heute von der Enkelin geführt. Vor zwei Jahren kam ein Angebot von einer Kette. Die Kette wollte den Namen kaufen. Das Brot würde dann in einer Fabrik hergestellt und in die Filialen geliefert. Der Name Hoffmann würde bleiben. Frau Hoffmann hat abgelehnt. Sie erklärt es so: Der Name gehört nicht mir allein. Er gehört auch den Leuten, die hier seit vierzig Jahren kaufen. Ein verkaufter Name ist kein Name mehr. Die Bäckerei ist klein und der Gewinn ist klein. Aber die Enkelin sagt, das war nie das Ziel. Im Laden hängt kein Schild mit Preisen aus Papier. Die Preise stehen mit Kreide an einer Tafel, und sie werden jede Woche neu geschrieben. Das Ziel war, dass die Tür morgens aufgeht.",
+    "wordCount": 173,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Formar la pasiva en presente con werden + participio."
+      },
+      {
+        "es": "Usar el participio como adjetivo: das gebackene Brot, ein verkaufter Name."
+      },
+      {
+        "es": "Distinguir la oferta rechazada de la razón para rechazarla."
+      }
+    ],
+    "grammarFocus": [
+      "passiv-praesens-a2",
+      "partizip-als-adjektiv-a2",
+      "artikel"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Teig",
+        "lemma": "Teig",
+        "glosses": {
+          "es": "masa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "angesetzt",
+        "lemma": "ansetzen",
+        "glosses": {
+          "es": "preparada, puesta a fermentar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "geformt",
+        "lemma": "formen",
+        "glosses": {
+          "es": "moldeado, formado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Enkelin",
+        "lemma": "Enkelin",
+        "glosses": {
+          "es": "nieta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Kette",
+        "lemma": "Kette",
+        "glosses": {
+          "es": "cadena comercial"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Filialen",
+        "lemma": "Filiale",
+        "glosses": {
+          "es": "sucursales"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "abgelehnt",
+        "lemma": "ablehnen",
+        "glosses": {
+          "es": "rechazado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Gewinn",
+        "lemma": "Gewinn",
+        "glosses": {
+          "es": "beneficio, ganancia"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Las panaderías artesanas alemanas están reguladas: solo puede llamarse Bäckerei quien elabora en el propio local. De ahí que el nombre tenga valor comercial para una cadena."
+    },
+    "spanishSpeakerNote": {
+      "es": "La pasiva alemana usa «werden», no «sein»: «das Brot wird gebacken» es «el pan se hace». Y el participio puede ir delante del sustantivo como adjetivo, con su terminación: «das gebackene Brot»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en alemán sobre hechos pasados, encontrar el verbo al final de una subordinada, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens",
+      "adjektivdeklination-a2",
+      "da-hin-her-a2",
+      "dativ-a2",
+      "futur-i-a2",
+      "genitiv-a2",
+      "infinitiv-zu-a2",
+      "komparativ-superlativ-a2",
+      "konjunktionen-a2",
+      "konjunktiv-ii-wurden-a2",
+      "modalverben-praeteritum-a2",
+      "partizip-als-adjektiv-a2",
+      "passiv-praesens-a2",
+      "perfekt-haben-a2",
+      "perfekt-sein-a2",
+      "praeteritum-basic-a2",
+      "reflexivverben-a2",
+      "relativsaetze-a2",
+      "trennbare-verben-praeteritum-a2",
+      "wechselpraepositionen-a2",
+      "zweiteilige-konnektoren-a2"
+    ],
+    "disallowedGrammar": [
+      "Konjunktiv I",
+      "Plusquamperfekt",
+      "Partizip I",
+      "Nominalstil"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 9.1,
+      "maxSentenceWords": 16,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Perfekt y Präteritum con su reparto de uso. Konjunktiv II solo en formas hechas (würde, wäre, hätte). Sin Plusquamperfekt ni Konjunktiv I."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta el reportaje?",
+      "options": [
+        {
+          "id": "rechazo",
+          "text": "Que rechazaron vender el nombre porque también pertenece a los clientes"
+        },
+        {
+          "id": "cierre",
+          "text": "Que la panadería va a cerrar por falta de beneficio"
+        },
+        {
+          "id": "fabrica",
+          "text": "Que la panadería ha empezado a producir en fábrica"
+        }
+      ],
+      "answer": "rechazo",
+      "evidence": "Frau Hoffmann hat abgelehnt … Er gehört auch den Leuten, die hier seit vierzig Jahren kaufen.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo remata con una frase corta: un nombre vendido ya no es un nombre."
+        },
+        "incorrect": {
+          "es": "No cierra ni cambia a fábrica: eso es lo que rechazó. Busca «hat abgelehnt»."
+        },
+        "strategy": {
+          "es": "Si un texto plantea una oferta y una respuesta, la razón de la respuesta es su tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿A qué hora llega el pan a la tienda?",
+      "options": [
+        {
+          "id": "seis",
+          "text": "A las seis"
+        },
+        {
+          "id": "cuatro",
+          "text": "A las cuatro"
+        },
+        {
+          "id": "nueve",
+          "text": "A las nueve y media"
+        }
+      ],
+      "answer": "seis",
+      "evidence": "Das gebackene Brot kommt um sechs in den Laden.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. A las cuatro se moldea y a las nueve y media ya casi está vendido."
+        },
+        "incorrect": {
+          "es": "El texto da tres horas y cada una marca un paso. Busca la que va con «in den Laden»."
+        },
+        "strategy": {
+          "es": "En un proceso con horas, empareja cada una con su etapa antes de responder."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «Ein verkaufter Name ist kein Name mehr». ¿Qué significa «verkaufter»?",
+      "options": [
+        {
+          "id": "vendido",
+          "text": "Vendido"
+        },
+        {
+          "id": "famoso",
+          "text": "Famoso"
+        },
+        {
+          "id": "antiguo",
+          "text": "Antiguo"
+        }
+      ],
+      "answer": "vendido",
+      "evidence": "Die Kette wollte den Namen kaufen … Ein verkaufter Name ist kein Name mehr.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Es el participio de «verkaufen», vender, usado como adjetivo."
+        },
+        "incorrect": {
+          "es": "La palabra viene del verbo que aparece antes: «kaufen». Con el prefijo ver- es vender."
+        },
+        "strategy": {
+          "es": "Un participio usado como adjetivo conserva el verbo de origen. Búscalo en el texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice que el nombre no le pertenece solo a ella?",
+      "options": [
+        {
+          "id": "clientes",
+          "text": "Porque también es de quienes llevan cuarenta años comprando allí"
+        },
+        {
+          "id": "familia",
+          "text": "Porque es de toda su familia"
+        },
+        {
+          "id": "marca",
+          "text": "Porque está registrado a nombre de la cadena"
+        }
+      ],
+      "answer": "clientes",
+      "evidence": "Er gehört auch den Leuten, die hier seit vierzig Jahren kaufen.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y esa es la razón que da para no venderlo, no un motivo legal ni familiar."
+        },
+        "incorrect": {
+          "es": "La cadena quería comprarlo, así que no es suyo. Y la familia no se menciona como argumento."
+        },
+        "strategy": {
+          "es": "Cuando alguien explica su negativa con una frase que empieza por «gehört auch», ahí está el motivo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la masa se moldea a máquina.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "um vier Uhr wird er von Hand geformt. Es gibt keine Maschine dafür.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: se moldea a mano, y el texto añade que no hay máquina para eso."
+        },
+        "incorrect": {
+          "es": "Busca la frase con «von Hand». La siguiente lo confirma con una negación."
+        },
+        "strategy": {
+          "es": "La expresión «von Hand» significa a mano. Si la ves, descarta cualquier automatización."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué termina con «Das Ziel war, dass die Tür morgens aufgeht»?",
+      "options": [
+        {
+          "id": "criterio",
+          "text": "Para explicar que el objetivo nunca fue el beneficio, sino seguir abriendo"
+        },
+        {
+          "id": "horario",
+          "text": "Para informar del horario de apertura"
+        },
+        {
+          "id": "queja",
+          "text": "Para quejarse de que ganan poco"
+        }
+      ],
+      "answer": "criterio",
+      "evidence": "Die Bäckerei ist klein und der Gewinn ist klein. Aber die Enkelin sagt, das war nie das Ziel.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Reconoce que ganan poco y responde que ese no era el criterio."
+        },
+        "incorrect": {
+          "es": "No es un horario ni una queja: es la respuesta a la mención del beneficio pequeño."
+        },
+        "strategy": {
+          "es": "Una frase final introducida por «aber» responde a lo dicho justo antes. Léelas juntas."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en alemán sobre cómo se elabora algo en un negocio pequeño. Usa cuatro pasivas con werden y dos participios como adjetivo."
+    },
+    "minWords": 40,
+    "maxWords": 85,
+    "hints": [
+      "In der… wird das Brot nachts gebacken.",
+      "Der Teig wird um… angesetzt.",
+      "Das gebackene Brot…",
+      "Das Ziel war…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de alemán y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán A2: El pan se hace de noche | WeLearn"
+    },
+    "description": {
+      "es": "Lee un reportaje en alemán A2 y practica la pasiva en presente y el participio usado como adjetivo. Con vocabulario y seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/a2/lectura/das-brot-wird-nachts-gebacken",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-a2-ich-habe-mich-verlaufen"
+    ]
+  }
+}

@@ -1,0 +1,471 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-a2-ich-habe-mich-verlaufen",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Alemán A2"
+  },
+  "slug": "ich-habe-mich-verlaufen",
+  "series": {
+    "id": "aleman-a2-lectura-10",
+    "episode": 6,
+    "totalEpisodes": 7,
+    "previousExerciseId": "de-a2-was-wuerdest-du-machen",
+    "nextExerciseId": "de-a2-das-brot-wird-nachts-gebacken"
+  },
+  "classification": {
+    "genre": "anécdota",
+    "topic": "perderse en el bosque",
+    "intent": "learning",
+    "tags": [
+      "aleman a2",
+      "lectura",
+      "verbos reflexivos",
+      "separables en pasado"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Me perdí"
+    },
+    "intro": {
+      "es": "Un paseo de una hora que duró cinco, y una lección sobre las señales del bosque. Lectura de alemán A2 con los verbos reflexivos."
+    },
+    "mission": {
+      "es": "Averigua qué error cometió al principio."
+    },
+    "targetText": "Im Oktober habe ich mich im Wald verlaufen. Ich wollte eine Stunde spazieren gehen. Es wurden fünf Stunden. Ich ging um zwei Uhr los. Das Wetter war gut und ich freute mich auf den Nachmittag. Nach vierzig Minuten kam ich an eine Kreuzung. Dort standen drei Schilder. Ich schaute sie an und wählte den Weg nach rechts, weil er breiter war. Das war mein Fehler. Ich habe mich auf die Breite verlassen und nicht auf die Farbe. Im deutschen Wald bedeuten die Farben etwas. Der rote Strich war links. Um halb vier merkte ich, dass ich mich verirrt hatte. Ich setzte mich auf einen Stein und atmete durch. Mein Handy hatte kein Netz. Ich zog die Jacke an, weil es kalt wurde, und ging zurück. Um sieben kam ich am Parkplatz an. Ein Mann wartete dort neben einem Kleinbus. Er arbeitete für die Gemeinde und kontrollierte die Wege. Er sah mich an und lachte nicht. Er sagte: Sie sind der Dritte diese Woche. Alle nehmen rechts. Dann gab er mir eine Karte und zeigte mir den roten Strich darauf.",
+    "wordCount": 179,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Usar los verbos reflexivos: sich verlaufen, sich freuen, sich setzen, sich verlassen auf."
+      },
+      {
+        "es": "Formar el pasado de los separables: ging los, schaute an, zog an, kam an."
+      },
+      {
+        "es": "Distinguir el error del narrador de la mala suerte."
+      }
+    ],
+    "grammarFocus": [
+      "reflexivverben-a2",
+      "trennbare-verben-praeteritum-a2",
+      "trennbare-verben"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Wald",
+        "lemma": "Wald",
+        "glosses": {
+          "es": "bosque"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Kreuzung",
+        "lemma": "Kreuzung",
+        "glosses": {
+          "es": "cruce de caminos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Schilder",
+        "lemma": "Schild",
+        "glosses": {
+          "es": "señales, carteles"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "breiter",
+        "lemma": "breit",
+        "glosses": {
+          "es": "más ancho"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Fehler",
+        "lemma": "Fehler",
+        "glosses": {
+          "es": "error"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Strich",
+        "lemma": "Strich",
+        "glosses": {
+          "es": "raya, trazo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "verirrt",
+        "lemma": "sich verirren",
+        "glosses": {
+          "es": "perdido, extraviado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Netz",
+        "lemma": "Netz",
+        "glosses": {
+          "es": "cobertura de móvil; también red"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Los senderos alemanes se señalizan con marcas de color pintadas en árboles y postes, no con flechas. Seguir el camino más ancho en vez de la marca es el error clásico del visitante."
+    },
+    "spanishSpeakerNote": {
+      "es": "Los reflexivos alemanes llevan el pronombre en acusativo o dativo según el verbo: «ich habe mich verlaufen». Y ojo con «sich verlassen auf», que significa fiarse de, no abandonar."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en alemán sobre hechos pasados, encontrar el verbo al final de una subordinada, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens",
+      "adjektivdeklination-a2",
+      "da-hin-her-a2",
+      "dativ-a2",
+      "futur-i-a2",
+      "genitiv-a2",
+      "infinitiv-zu-a2",
+      "komparativ-superlativ-a2",
+      "konjunktionen-a2",
+      "konjunktiv-ii-wurden-a2",
+      "modalverben-praeteritum-a2",
+      "partizip-als-adjektiv-a2",
+      "passiv-praesens-a2",
+      "perfekt-haben-a2",
+      "perfekt-sein-a2",
+      "praeteritum-basic-a2",
+      "reflexivverben-a2",
+      "relativsaetze-a2",
+      "trennbare-verben-praeteritum-a2",
+      "wechselpraepositionen-a2",
+      "zweiteilige-konnektoren-a2"
+    ],
+    "disallowedGrammar": [
+      "Konjunktiv I",
+      "Plusquamperfekt",
+      "Partizip I",
+      "Nominalstil"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 7.8,
+      "maxSentenceWords": 14,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Perfekt y Präteritum con su reparto de uso. Konjunktiv II solo en formas hechas (würde, wäre, hätte). Sin Plusquamperfekt ni Konjunktiv I."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta la anécdota?",
+      "options": [
+        {
+          "id": "senal",
+          "text": "Que se perdió por fiarse de la anchura del camino y no de la marca de color"
+        },
+        {
+          "id": "clima",
+          "text": "Que el mal tiempo le hizo perder el rumbo"
+        },
+        {
+          "id": "movil",
+          "text": "Que se perdió porque el móvil se quedó sin batería"
+        }
+      ],
+      "answer": "senal",
+      "evidence": "Ich habe mich auf die Breite verlassen und nicht auf die Farbe … Der rote Strich war links.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y él mismo lo llama su error antes de explicarlo."
+        },
+        "incorrect": {
+          "es": "El tiempo era bueno y el problema del móvil fue la cobertura, no la batería. Busca «mein Fehler»."
+        },
+        "strategy": {
+          "es": "Cuando un narrador dice «ese fue mi error», la frase siguiente lo explica. Léela."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto duró el paseo en total?",
+      "options": [
+        {
+          "id": "cinco",
+          "text": "Cinco horas"
+        },
+        {
+          "id": "una",
+          "text": "Una hora"
+        },
+        {
+          "id": "tres",
+          "text": "Tres horas"
+        }
+      ],
+      "answer": "cinco",
+      "evidence": "Ich wollte eine Stunde spazieren gehen. Es wurden fünf Stunden.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: salió a las dos y llegó a las siete. Una hora era el plan."
+        },
+        "incorrect": {
+          "es": "La hora era la intención, no lo que pasó. Compara las dos frases seguidas."
+        },
+        "strategy": {
+          "es": "Cuando un texto contrapone plan y realidad, la segunda frase da el dato real."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «Mein Handy hatte kein Netz». ¿Qué significa aquí «Netz»?",
+      "options": [
+        {
+          "id": "cobertura",
+          "text": "Cobertura de móvil"
+        },
+        {
+          "id": "red",
+          "text": "Una red de pescar"
+        },
+        {
+          "id": "bateria",
+          "text": "Batería"
+        }
+      ],
+      "answer": "cobertura",
+      "evidence": "Mein Handy hatte kein Netz.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Aplicado a un móvil, «Netz» es la cobertura."
+        },
+        "incorrect": {
+          "es": "La palabra significa red en general, pero va con «Handy». El contexto decide."
+        },
+        "strategy": {
+          "es": "Una palabra polisémica se acota por el objeto que la acompaña. Aquí, el móvil."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Qué revela lo que dice el hombre del aparcamiento?",
+      "options": [
+        {
+          "id": "comun",
+          "text": "Que el mismo error lo comete mucha gente esa semana"
+        },
+        {
+          "id": "culpa",
+          "text": "Que la culpa es de la señalización"
+        },
+        {
+          "id": "peligro",
+          "text": "Que el bosque es peligroso"
+        }
+      ],
+      "answer": "comun",
+      "evidence": "Sie sind der Dritte diese Woche. Alle nehmen rechts.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y eso convierte el error personal en un patrón: todos giran a la derecha."
+        },
+        "incorrect": {
+          "es": "El hombre no culpa a la señalización ni habla de peligro: constata una repetición."
+        },
+        "strategy": {
+          "es": "Una frase final dicha por un tercero suele ampliar el caso particular a algo general."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: en el cruce había tres señales.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Dort standen drei Schilder. Ich schaute sie an und wählte den Weg nach rechts.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y las miró: el problema no fue no verlas, fue elegir mal el criterio."
+        },
+        "incorrect": {
+          "es": "Busca la frase con «Kreuzung». La siguiente dice cuántas señales había."
+        },
+        "strategy": {
+          "es": "Distingue no ver una señal de verla y no interpretarla. El texto marca la diferencia."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena lo que ocurrió.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Sale a caminar a las dos con buen tiempo"
+        },
+        {
+          "id": "p2",
+          "text": "Llega a un cruce y toma el camino más ancho"
+        },
+        {
+          "id": "p3",
+          "text": "A las tres y media se da cuenta de que está perdido"
+        },
+        {
+          "id": "p4",
+          "text": "Llega al aparcamiento a las siete y le habla un hombre"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Ich ging um zwei Uhr los … Nach vierzig Minuten kam ich an eine Kreuzung … Um halb vier merkte ich … Um sieben kam ich am Parkplatz an.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Las horas ordenan el relato entero: las dos, las tres y media, las siete."
+        },
+        "incorrect": {
+          "es": "Guíate por las horas: «um zwei», «um halb vier», «um sieben»."
+        },
+        "strategy": {
+          "es": "En un relato con horas explícitas, el orden ya está dado. Solo hay que leerlas."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en alemán sobre una vez que te perdiste. Usa cuatro verbos reflexivos y tres separables en pasado."
+    },
+    "minWords": 40,
+    "maxWords": 85,
+    "hints": [
+      "Im… habe ich mich verlaufen.",
+      "Ich ging um… los.",
+      "Das war mein Fehler.",
+      "Um… kam ich… an."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de alemán y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán A2: Me perdí | WeLearn"
+    },
+    "description": {
+      "es": "Lee una anécdota en alemán A2 y practica los verbos reflexivos y los separables en pasado. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/a2/lectura/ich-habe-mich-verlaufen",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-a2-was-wuerdest-du-machen",
+      "de-a2-das-brot-wird-nachts-gebacken"
+    ]
+  }
+}

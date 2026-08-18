@@ -1,0 +1,462 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-a2-was-wuerdest-du-machen",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Alemán A2"
+  },
+  "slug": "was-wuerdest-du-machen",
+  "series": {
+    "id": "aleman-a2-lectura-10",
+    "episode": 5,
+    "totalEpisodes": 7,
+    "previousExerciseId": "de-a2-auf-dem-tisch-oder-auf-den-tisch",
+    "nextExerciseId": "de-a2-ich-habe-mich-verlaufen"
+  },
+  "classification": {
+    "genre": "conversación",
+    "topic": "una decisión difícil",
+    "intent": "learning",
+    "tags": [
+      "aleman a2",
+      "lectura",
+      "Konjunktiv II con würde",
+      "futuro I"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "¿Tú qué harías?"
+    },
+    "intro": {
+      "es": "Dos compañeras hablan de una oferta de trabajo en otra ciudad, y la pregunta clave llega al final. Lectura de alemán A2 con würde."
+    },
+    "mission": {
+      "es": "Averigua qué decide ella y qué la ayuda a decidir."
+    },
+    "targetText": "— Ich habe ein Angebot aus München. Mehr Geld, bessere Stelle. — Und? Wirst du es annehmen? — Ich weiß nicht. Was würdest du machen? — Das ist deine Entscheidung, nicht meine. — Ich weiß. Aber ich frage trotzdem. — Also gut. Ich würde bleiben. — Warum? — Weil du hier Leute hast. In München wirst du am Anfang niemanden kennen. Das wird hart sein. — Ich würde neue Leute kennenlernen. — Sicher. Aber das dauert Jahre, nicht Wochen. Ich bin vor sechs Jahren hierhergezogen. Ich hätte gern gewusst, wie lang das dauert. Niemand hat es mir gesagt. — Also soll ich absagen? — Nein. Ich würde bleiben. Du bist nicht ich. — Was würde ich denn machen? — Das weiß nur eine Person, und die sitzt mir gegenüber. — Ich glaube, ich werde zusagen. — Wann fängst du an? — Im Januar. Sie geben mir sechs Wochen für den Umzug. — Dann hast du es also schon entschieden, bevor du mich gefragt hast. — Vielleicht. Ich wollte nur hören, dass es keine dumme Idee ist. — Es ist keine dumme Idee. Es wird nur schwer. Das ist nicht dasselbe. — Siehst du? Du hast es schon gewusst.",
+    "wordCount": 177,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Formar el Konjunktiv II con würde para hipótesis y consejos."
+      },
+      {
+        "es": "Usar el Futur I con werden para lo que se prevé."
+      },
+      {
+        "es": "Distinguir un consejo de una decisión."
+      }
+    ],
+    "grammarFocus": [
+      "konjunktiv-ii-wurden-a2",
+      "futur-i-a2",
+      "zukunft-prasens"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Angebot",
+        "lemma": "Angebot",
+        "glosses": {
+          "es": "oferta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "annehmen",
+        "lemma": "annehmen",
+        "glosses": {
+          "es": "aceptar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Entscheidung",
+        "lemma": "Entscheidung",
+        "glosses": {
+          "es": "decisión"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "hart",
+        "lemma": "hart",
+        "glosses": {
+          "es": "duro"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "kennenlernen",
+        "lemma": "kennenlernen",
+        "glosses": {
+          "es": "conocer gente nueva"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "hierhergezogen",
+        "lemma": "hierherziehen",
+        "glosses": {
+          "es": "mudado aquí"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "absagen",
+        "lemma": "absagen",
+        "glosses": {
+          "es": "rechazar, decir que no"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "zusagen",
+        "lemma": "zusagen",
+        "glosses": {
+          "es": "aceptar, decir que sí"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Mudarse a otra ciudad por trabajo es habitual en Alemania por la dispersión de los centros económicos, y el aislamiento inicial es un tema reconocido."
+    },
+    "spanishSpeakerNote": {
+      "es": "Fíjate en la pareja: «würde» es el condicional («yo me quedaría») y «wird» es el futuro («será duro»). Se parecen mucho al leer y dicen cosas distintas. El contexto y el infinitivo final los separan."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en alemán sobre hechos pasados, encontrar el verbo al final de una subordinada, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens",
+      "adjektivdeklination-a2",
+      "da-hin-her-a2",
+      "dativ-a2",
+      "futur-i-a2",
+      "genitiv-a2",
+      "infinitiv-zu-a2",
+      "komparativ-superlativ-a2",
+      "konjunktionen-a2",
+      "konjunktiv-ii-wurden-a2",
+      "modalverben-praeteritum-a2",
+      "partizip-als-adjektiv-a2",
+      "passiv-praesens-a2",
+      "perfekt-haben-a2",
+      "perfekt-sein-a2",
+      "praeteritum-basic-a2",
+      "reflexivverben-a2",
+      "relativsaetze-a2",
+      "trennbare-verben-praeteritum-a2",
+      "wechselpraepositionen-a2",
+      "zweiteilige-konnektoren-a2"
+    ],
+    "disallowedGrammar": [
+      "Konjunktiv I",
+      "Plusquamperfekt",
+      "Partizip I",
+      "Nominalstil"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 4.5,
+      "maxSentenceWords": 12,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Perfekt y Präteritum con su reparto de uso. Konjunktiv II solo en formas hechas (würde, wäre, hätte). Sin Plusquamperfekt ni Konjunktiv I."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué ocurre en la conversación?",
+      "options": [
+        {
+          "id": "sabia",
+          "text": "Que ella ya tenía la decisión tomada y la conversación se lo revela"
+        },
+        {
+          "id": "convence",
+          "text": "Que su compañera la convence de quedarse"
+        },
+        {
+          "id": "discuten",
+          "text": "Que discuten y no llegan a nada"
+        }
+      ],
+      "answer": "sabia",
+      "evidence": "— Ich glaube, ich werde zusagen. — Siehst du? Du hast es schon gewusst.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la última frase lo dice: ya lo sabía. La conversación solo lo saca a la luz."
+        },
+        "incorrect": {
+          "es": "La compañera aconseja quedarse y ella decide lo contrario. No hay discusión."
+        },
+        "strategy": {
+          "es": "En un diálogo, la última réplica suele decir de qué iba realmente la conversación."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué le aconseja su compañera?",
+      "options": [
+        {
+          "id": "quedarse",
+          "text": "Quedarse"
+        },
+        {
+          "id": "irse",
+          "text": "Aceptar y mudarse"
+        },
+        {
+          "id": "esperar",
+          "text": "Esperar otra oferta"
+        }
+      ],
+      "answer": "quedarse",
+      "evidence": "Also gut. Ich würde bleiben.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y lo repite más adelante añadiendo «Du bist nicht ich»."
+        },
+        "incorrect": {
+          "es": "Ella dice «Ich würde bleiben» dos veces. Búscalo."
+        },
+        "strategy": {
+          "es": "Cuando alguien repite su consejo, esa repetición confirma cuál es. Localízala."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Al final dice «ich werde zusagen». ¿Qué decide?",
+      "options": [
+        {
+          "id": "aceptar",
+          "text": "Aceptar la oferta"
+        },
+        {
+          "id": "rechazar",
+          "text": "Rechazarla"
+        },
+        {
+          "id": "pensar",
+          "text": "Pensárselo más"
+        }
+      ],
+      "answer": "aceptar",
+      "evidence": "— Also soll ich absagen? — Nein … — Ich glaube, ich werde zusagen.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. «Zusagen» es aceptar, y se opone a «absagen», que aparece antes."
+        },
+        "incorrect": {
+          "es": "El texto usa las dos palabras: «absagen» es rechazar y «zusagen» es lo contrario."
+        },
+        "strategy": {
+          "es": "Si dos palabras casi iguales aparecen en el mismo texto, contrástalas. Los prefijos ab- y zu- se oponen."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué la compañera menciona sus propios seis años en la ciudad?",
+      "options": [
+        {
+          "id": "experiencia",
+          "text": "Porque ella pasó por lo mismo y sabe cuánto tarda"
+        },
+        {
+          "id": "nostalgia",
+          "text": "Porque echa de menos su ciudad anterior"
+        },
+        {
+          "id": "tiempo",
+          "text": "Porque quiere decir que lleva más tiempo en la empresa"
+        }
+      ],
+      "answer": "experiencia",
+      "evidence": "Ich bin vor sechs Jahren hierhergezogen. Ich hätte gern gewusst, wie lang das dauert. Niemand hat es mir gesagt.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y añade que a ella nadie se lo dijo. Por eso se lo dice ahora."
+        },
+        "incorrect": {
+          "es": "No habla de la empresa ni de nostalgia. Lee las tres frases seguidas."
+        },
+        "strategy": {
+          "es": "Cuando alguien cuenta su propia experiencia en un consejo, esa experiencia es el argumento."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la compañera insiste en que la decisión no es suya.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Das ist deine Entscheidung, nicht meine … Du bist nicht ich.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y lo dice dos veces con palabras distintas."
+        },
+        "incorrect": {
+          "es": "Busca la primera respuesta que da y la que da después de repetir su consejo."
+        },
+        "strategy": {
+          "es": "Si una idea aparece dos veces formulada de otro modo, es deliberada. Búscala en los dos sitios."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "reference",
+      "skill": "reference",
+      "prompt": "En «Das weiß nur eine Person, und die sitzt mir gegenüber», ¿a quién se refiere?",
+      "options": [
+        {
+          "id": "ella",
+          "text": "A la mujer que ha recibido la oferta"
+        },
+        {
+          "id": "companera",
+          "text": "A la propia compañera que habla"
+        },
+        {
+          "id": "jefe",
+          "text": "Al jefe que hizo la oferta"
+        }
+      ],
+      "answer": "ella",
+      "evidence": "— Was würde ich denn machen? — Das weiß nur eine Person, und die sitzt mir gegenüber.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Está sentada enfrente de quien habla, es decir, la que ha preguntado."
+        },
+        "incorrect": {
+          "es": "Quien habla no está enfrente de sí misma, y el jefe no está en la conversación."
+        },
+        "strategy": {
+          "es": "Una referencia espacial («sitzt mir gegenüber») señala a la otra persona del diálogo."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe un diálogo de 8–10 líneas en alemán sobre una decisión difícil. Usa cuatro veces «würde» y dos veces el futuro con «werden»."
+    },
+    "minWords": 40,
+    "maxWords": 85,
+    "hints": [
+      "— Ich habe ein Angebot aus…",
+      "— Was würdest du machen?",
+      "— Ich würde bleiben.",
+      "— Ich glaube, ich werde…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de alemán y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán A2: ¿Tú qué harías? | WeLearn"
+    },
+    "description": {
+      "es": "Lee una conversación en alemán A2 y practica el Konjunktiv II con würde y el Futur I. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/a2/lectura/was-wuerdest-du-machen",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-a2-auf-dem-tisch-oder-auf-den-tisch",
+      "de-a2-ich-habe-mich-verlaufen"
+    ]
+  }
+}
