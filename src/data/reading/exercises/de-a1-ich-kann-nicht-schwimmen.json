@@ -1,0 +1,442 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-a1-ich-kann-nicht-schwimmen",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Alemán A1"
+  },
+  "slug": "ich-kann-nicht-schwimmen",
+  "series": {
+    "id": "aleman-a1-lectura-10",
+    "episode": 6,
+    "totalEpisodes": 10,
+    "previousExerciseId": "de-a1-der-weg-zur-arbeit",
+    "nextExerciseId": "de-a1-der-zug-faehrt-ab"
+  },
+  "classification": {
+    "genre": "relato en primera persona",
+    "topic": "una carencia que se calla",
+    "intent": "learning",
+    "tags": [
+      "aleman a1",
+      "lectura",
+      "verbos modales",
+      "negación"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "No sé nadar"
+    },
+    "intro": {
+      "es": "Un adulto de treinta y ocho años que no sabe nadar y se ha pasado veinte veranos inventando excusas. Lectura de alemán A1 con los modales."
+    },
+    "mission": {
+      "es": "Averigua qué decidió hacer al final, y con quién."
+    },
+    "targetText": "Ich kann nicht schwimmen. Ich bin achtunddreißig Jahre alt. Das ist kein Geheimnis, aber ich sage es nicht gern. Im Sommer gehen meine Freunde an den See. Ich gehe auch mit. Ich muss dann eine Ausrede finden. Ich sage: Ich will heute nicht ins Wasser. Oder: Ich darf nicht, mein Ohr ist krank. Das ist nicht wahr. Zwanzig Sommer, zwanzig Ausreden. Meine Tochter ist sechs. Sie kann schon schwimmen. Sie fragt mich immer: Papa, warum kommst du nicht? Ich kann ihr nicht antworten. Also gehe ich jetzt in einen Kurs. Nicht in einen Kinderkurs. Es gibt Kurse für Erwachsene. Wir sind neun Personen und niemand lacht. Ich kann noch nicht schwimmen. Aber ich kann es sagen.",
+    "wordCount": 116,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Conjugar los modales können, müssen, wollen, dürfen y colocar el infinitivo al final."
+      },
+      {
+        "es": "Negar con nicht y con kein según lo que se niegue."
+      },
+      {
+        "es": "Distinguir la excusa del motivo real."
+      }
+    ],
+    "grammarFocus": [
+      "modalverben",
+      "verneinung"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Geheimnis",
+        "lemma": "Geheimnis",
+        "glosses": {
+          "es": "secreto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "See",
+        "lemma": "See",
+        "glosses": {
+          "es": "lago"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Ausrede",
+        "lemma": "Ausrede",
+        "glosses": {
+          "es": "excusa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Ohr",
+        "lemma": "Ohr",
+        "glosses": {
+          "es": "oído, oreja"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "wahr",
+        "lemma": "wahr",
+        "glosses": {
+          "es": "cierto, verdadero"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Kurs",
+        "lemma": "Kurs",
+        "glosses": {
+          "es": "curso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Erwachsene",
+        "lemma": "Erwachsene",
+        "glosses": {
+          "es": "adultos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "lacht",
+        "lemma": "lachen",
+        "glosses": {
+          "es": "se ríe"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Los cursos de natación para adultos son habituales en las piscinas municipales alemanas, y muchas ciudades los ofrecen con horario específico para principiantes."
+    },
+    "spanishSpeakerNote": {
+      "es": "Con un modal, el segundo verbo va al FINAL en infinitivo: «Ich kann nicht schwimmen», no «Ich kann nicht nadar aquí». Y ojo con la negación: «nicht» niega verbos y frases; «kein» niega sustantivos con artículo indefinido."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en alemán sobre la vida cotidiana, encontrar el verbo aunque esté partido o al final, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens"
+    ],
+    "disallowedGrammar": [
+      "Perfekt",
+      "Präteritum",
+      "Konjunktiv",
+      "Passiv",
+      "Genitiv"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 5.8,
+      "maxSentenceWords": 10,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo y futuro con presente. Sin Perfekt, Präteritum ni pasiva. Verbos separables y orden de la frase trabajados en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué decide el narrador?",
+      "options": [
+        {
+          "id": "curso",
+          "text": "Apuntarse a un curso de natación para adultos"
+        },
+        {
+          "id": "dejar",
+          "text": "Dejar de ir al lago con sus amigos"
+        },
+        {
+          "id": "hija",
+          "text": "Que su hija le enseñe a nadar"
+        }
+      ],
+      "answer": "curso",
+      "evidence": "Also gehe ich jetzt in einen Kurs. Nicht in einen Kinderkurs. Es gibt Kurse für Erwachsene.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y aclara que es un curso de adultos, no infantil."
+        },
+        "incorrect": {
+          "es": "Sigue yendo al lago y la hija no le enseña: solo le hace la pregunta. Busca «Also gehe ich jetzt»."
+        },
+        "strategy": {
+          "es": "La palabra «also» introduce la decisión que sigue a un problema. Localízala."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántas personas hay en el curso?",
+      "options": [
+        {
+          "id": "nueve",
+          "text": "Nueve"
+        },
+        {
+          "id": "seis",
+          "text": "Seis"
+        },
+        {
+          "id": "veinte",
+          "text": "Veinte"
+        }
+      ],
+      "answer": "nueve",
+      "evidence": "Wir sind neun Personen und niemand lacht.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El seis son los años de su hija y el veinte, los veranos de excusas."
+        },
+        "incorrect": {
+          "es": "El texto tiene varias cifras y cada una mide algo distinto. Busca la que va con «Personen»."
+        },
+        "strategy": {
+          "es": "Empareja cada número con su sustantivo: personas, años, veranos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «Ich muss dann eine Ausrede finden». ¿Qué es una «Ausrede»?",
+      "options": [
+        {
+          "id": "excusa",
+          "text": "Una excusa"
+        },
+        {
+          "id": "salida",
+          "text": "Una salida del agua"
+        },
+        {
+          "id": "charla",
+          "text": "Una conversación"
+        }
+      ],
+      "answer": "excusa",
+      "evidence": "Ich muss dann eine Ausrede finden. Ich sage: Ich will heute nicht ins Wasser … Das ist nicht wahr.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y el texto da dos ejemplos justo después, más la confesión de que no son ciertos."
+        },
+        "incorrect": {
+          "es": "Las dos frases siguientes son ejemplos de lo que dice, y luego admite que no son verdad."
+        },
+        "strategy": {
+          "es": "Si una palabra va seguida de ejemplos, esos ejemplos la definen. No hace falta más."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Qué le empuja a apuntarse al curso?",
+      "options": [
+        {
+          "id": "hija",
+          "text": "La pregunta de su hija, que él no sabe responder"
+        },
+        {
+          "id": "amigos",
+          "text": "Que sus amigos se burlan de él"
+        },
+        {
+          "id": "salud",
+          "text": "Que el médico se lo ha recomendado"
+        }
+      ],
+      "answer": "hija",
+      "evidence": "Sie fragt mich immer: Papa, warum kommst du nicht? Ich kann ihr nicht antworten. Also gehe ich jetzt in einen Kurs.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el «Also» une directamente la pregunta sin respuesta con la decisión."
+        },
+        "incorrect": {
+          "es": "Los amigos no se burlan, y no hay médico. Lee las tres frases seguidas antes de «Also»."
+        },
+        "strategy": {
+          "es": "Cuando una decisión llega justo después de una pregunta sin respuesta, esa pregunta es la causa."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: su hija ya sabe nadar.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Meine Tochter ist sechs. Sie kann schon schwimmen.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y el contraste con él es justamente lo que da fuerza al texto."
+        },
+        "incorrect": {
+          "es": "Busca la frase sobre la hija. La palabra «schon» (ya) es la clave."
+        },
+        "strategy": {
+          "es": "El adverbio «schon» significa «ya» y confirma que algo se ha logrado. No lo pases por alto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "¿Qué efecto tiene la frase final, «Ich kann noch nicht schwimmen. Aber ich kann es sagen»?",
+      "options": [
+        {
+          "id": "avance",
+          "text": "Marca un avance: lo que ha cambiado es poder decirlo en voz alta"
+        },
+        {
+          "id": "fracaso",
+          "text": "Reconoce que el curso no ha servido de nada"
+        },
+        {
+          "id": "broma",
+          "text": "Es una broma sobre lo difícil que es nadar"
+        }
+      ],
+      "answer": "avance",
+      "evidence": "Das ist kein Geheimnis, aber ich sage es nicht gern … Aber ich kann es sagen.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y responde a la primera frase del texto: al principio no le gustaba decirlo."
+        },
+        "incorrect": {
+          "es": "Acaba de empezar el curso, así que no puede haber fracasado. Compara con la segunda frase del texto."
+        },
+        "strategy": {
+          "es": "Si una frase final repite un verbo del principio con signo distinto, está cerrando un arco."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en alemán sobre algo que no sabes hacer y te gustaría aprender. Usa cuatro verbos modales y tres negaciones con nicht o kein."
+    },
+    "minWords": 25,
+    "maxWords": 60,
+    "hints": [
+      "Ich kann nicht…",
+      "Ich muss… finden.",
+      "Das ist nicht wahr.",
+      "Also gehe ich jetzt…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de alemán y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán A1: No sé nadar | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto en alemán A1 y practica los verbos modales (können, müssen, wollen) y la negación con nicht y kein. Con seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/a1/lectura/ich-kann-nicht-schwimmen",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-a1-der-weg-zur-arbeit",
+      "de-a1-der-zug-faehrt-ab"
+    ]
+  }
+}

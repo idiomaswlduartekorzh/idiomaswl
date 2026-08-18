@@ -1,0 +1,442 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-a1-der-zug-faehrt-ab",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Alemán A1"
+  },
+  "slug": "der-zug-faehrt-ab",
+  "series": {
+    "id": "aleman-a1-lectura-10",
+    "episode": 7,
+    "totalEpisodes": 10,
+    "previousExerciseId": "de-a1-ich-kann-nicht-schwimmen",
+    "nextExerciseId": "de-a1-unser-tisch"
+  },
+  "classification": {
+    "genre": "crónica de andén",
+    "topic": "una despedida en la estación",
+    "intent": "learning",
+    "tags": [
+      "aleman a1",
+      "lectura",
+      "verbos separables",
+      "presente irregular"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El tren sale"
+    },
+    "intro": {
+      "es": "Una madre que acompaña a su hijo al andén cada domingo y no se va hasta que el tren desaparece. Lectura de alemán A1 con los verbos separables."
+    },
+    "mission": {
+      "es": "Fíjate en lo que hace ella cuando el tren ya no se ve."
+    },
+    "targetText": "Jeden Sonntag fährt mein Sohn nach Hamburg zurück. Der Zug fährt um 18 Uhr 12 ab. Wir kommen immer viel zu früh an, meistens um halb sechs. Er nimmt seinen Rucksack und wir gehen zum Gleis 4. Dort stehen wir und sprechen wenig. Er sieht auf sein Handy. Ich sehe auf die Anzeige. Um zehn nach steigt er ein. Er winkt durch das Fenster. Der Zug fährt langsam ab. Und dann passiert jedes Mal dasselbe: Ich gehe nicht sofort weg. Ich bleibe stehen und ich schaue dem Zug nach, bis er ganz weg ist. Das dauert vielleicht vierzig Sekunden. Mein Mann versteht das nicht. Er sagt, der Junge sieht mich sowieso nicht mehr. Er hat recht. Aber ich sehe den Zug noch.",
+    "wordCount": 122,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Reconocer los verbos separables y su prefijo al final: fährt … ab, kommen … an, steigt … ein."
+      },
+      {
+        "es": "Conjugar irregulares frecuentes: fahren, nehmen, sehen, sprechen."
+      },
+      {
+        "es": "Distinguir el hecho de su significado para quien lo cuenta."
+      }
+    ],
+    "grammarFocus": [
+      "trennbare-verben",
+      "prasens-unregelmaessig"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Rucksack",
+        "lemma": "Rucksack",
+        "glosses": {
+          "es": "mochila"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Gleis",
+        "lemma": "Gleis",
+        "glosses": {
+          "es": "vía, andén"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Handy",
+        "lemma": "Handy",
+        "glosses": {
+          "es": "teléfono móvil (palabra alemana, no inglesa)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Anzeige",
+        "lemma": "Anzeige",
+        "glosses": {
+          "es": "panel de información"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "winkt",
+        "lemma": "winken",
+        "glosses": {
+          "es": "saluda con la mano"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dauert",
+        "lemma": "dauern",
+        "glosses": {
+          "es": "dura"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sowieso",
+        "lemma": "sowieso",
+        "glosses": {
+          "es": "de todos modos, igualmente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "recht",
+        "lemma": "recht",
+        "glosses": {
+          "es": "razón; recht haben = tener razón"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En Alemania los andenes se numeran como «Gleis» y el panel indica la vía con poca antelación. Acompañar hasta el andén y no solo hasta la entrada es un gesto habitual de despedida."
+    },
+    "spanishSpeakerNote": {
+      "es": "El verbo separable parte en dos: «abfahren» se convierte en «fährt … ab», con el prefijo al final de la frase. Si lees solo hasta el verbo conjugado, te pierdes la mitad del significado. Y ojo: «Handy» es el móvil, aunque suene inglés."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en alemán sobre la vida cotidiana, encontrar el verbo aunque esté partido o al final, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens"
+    ],
+    "disallowedGrammar": [
+      "Perfekt",
+      "Präteritum",
+      "Konjunktiv",
+      "Passiv",
+      "Genitiv"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 7.2,
+      "maxSentenceWords": 14,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo y futuro con presente. Sin Perfekt, Präteritum ni pasiva. Verbos separables y orden de la frase trabajados en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué retrata el texto?",
+      "options": [
+        {
+          "id": "despedida",
+          "text": "Un ritual de despedida semanal y lo que significa para la madre"
+        },
+        {
+          "id": "viaje",
+          "text": "Los horarios de tren entre dos ciudades"
+        },
+        {
+          "id": "mudanza",
+          "text": "Que el hijo se muda a Hamburgo"
+        }
+      ],
+      "answer": "despedida",
+      "evidence": "Ich bleibe stehen und ich schaue dem Zug nach, bis er ganz weg ist.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Los horarios están al servicio de esos cuarenta segundos finales."
+        },
+        "incorrect": {
+          "es": "El hijo ya vive allí: vuelve cada domingo. Y los horarios son el decorado. Busca qué hace ella al final."
+        },
+        "strategy": {
+          "es": "Si un texto describe una rutina y se detiene en un solo gesto, ese gesto es el asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿A qué hora sale el tren?",
+      "options": [
+        {
+          "id": "1812",
+          "text": "A las 18:12"
+        },
+        {
+          "id": "1730",
+          "text": "A las 17:30"
+        },
+        {
+          "id": "1810",
+          "text": "A las 18:10"
+        }
+      ],
+      "answer": "1812",
+      "evidence": "Der Zug fährt um 18 Uhr 12 ab.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Las 17:30 es cuando llegan y las 18:10, cuando él sube al tren."
+        },
+        "incorrect": {
+          "es": "El texto da tres horas distintas y cada una es de una cosa. Busca la que va con «fährt … ab»."
+        },
+        "strategy": {
+          "es": "En un texto con varias horas, empareja cada una con su verbo: llegar, subir, salir."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «Um zehn nach steigt er ein». ¿Qué hace el hijo?",
+      "options": [
+        {
+          "id": "subir",
+          "text": "Sube al tren"
+        },
+        {
+          "id": "bajar",
+          "text": "Baja del tren"
+        },
+        {
+          "id": "comprar",
+          "text": "Compra el billete"
+        }
+      ],
+      "answer": "subir",
+      "evidence": "Um zehn nach steigt er ein. Er winkt durch das Fenster.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Y la frase siguiente lo confirma: saluda desde la ventanilla."
+        },
+        "incorrect": {
+          "es": "La frase siguiente dice que saluda por la ventana, así que ya está dentro."
+        },
+        "strategy": {
+          "es": "Con un verbo separable, lee hasta el final de la frase. El prefijo «ein» indica entrar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué se queda mirando el tren si su hijo ya no la ve?",
+      "options": [
+        {
+          "id": "ella",
+          "text": "Porque el gesto es para ella, no para que él lo vea"
+        },
+        {
+          "id": "seguridad",
+          "text": "Para comprobar que el tren sale sin problemas"
+        },
+        {
+          "id": "costumbre",
+          "text": "Porque su marido se lo pide"
+        }
+      ],
+      "answer": "ella",
+      "evidence": "Er sagt, der Junge sieht mich sowieso nicht mehr. Er hat recht. Aber ich sehe den Zug noch.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Concede que su marido tiene razón y aun así da la vuelta al argumento en cinco palabras."
+        },
+        "incorrect": {
+          "es": "El marido no lo entiende, así que no se lo pide. Y no hay preocupación por la seguridad."
+        },
+        "strategy": {
+          "es": "Cuando alguien concede un punto y añade un «aber», lo importante está después del «aber»."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: llegan a la estación justo a tiempo, con pocos minutos de margen.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Wir kommen immer viel zu früh an, meistens um halb sechs.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: llegan muy pronto, sobre las cinco y media, para un tren de las 18:12."
+        },
+        "incorrect": {
+          "es": "Busca la frase con «zu früh». Y compara las dos horas."
+        },
+        "strategy": {
+          "es": "La expresión «zu früh» significa demasiado pronto. Compárala con la hora de salida."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué dice el texto que hablan poco en el andén?",
+      "options": [
+        {
+          "id": "silencio",
+          "text": "Para mostrar que el rito no está en las palabras"
+        },
+        {
+          "id": "enfado",
+          "text": "Para indicar que están enfadados"
+        },
+        {
+          "id": "ruido",
+          "text": "Porque hay mucho ruido en la estación"
+        }
+      ],
+      "answer": "silencio",
+      "evidence": "Dort stehen wir und sprechen wenig. Er sieht auf sein Handy. Ich sehe auf die Anzeige.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Cada uno mira a un sitio y aun así están juntos: eso es lo que el texto quiere mostrar."
+        },
+        "incorrect": {
+          "es": "No hay enfado ni se menciona ruido. Fíjate en lo que hace cada uno mientras esperan."
+        },
+        "strategy": {
+          "es": "Si un texto describe silencio y luego dos gestos paralelos, está retratando una forma de estar juntos."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en alemán sobre una despedida que se repite. Usa cuatro verbos separables con el prefijo al final y tres verbos irregulares."
+    },
+    "minWords": 25,
+    "maxWords": 60,
+    "hints": [
+      "Jeden Sonntag fährt… zurück.",
+      "Der Zug fährt um… ab.",
+      "Wir kommen… an.",
+      "Ich bleibe stehen."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de alemán y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán A1: El tren sale | WeLearn"
+    },
+    "description": {
+      "es": "Lee una crónica en alemán A1 y practica los verbos separables (abfahren, ankommen, einsteigen) y el presente irregular. Con seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/a1/lectura/der-zug-faehrt-ab",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-a1-ich-kann-nicht-schwimmen",
+      "de-a1-unser-tisch"
+    ]
+  }
+}

@@ -1,0 +1,441 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-a1-naechstes-jahr-wird-alles-anders",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Alemán A1"
+  },
+  "slug": "naechstes-jahr-wird-alles-anders",
+  "series": {
+    "id": "aleman-a1-lectura-10",
+    "episode": 10,
+    "totalEpisodes": 10,
+    "previousExerciseId": "de-a1-anleitung-fuer-den-notdienst",
+    "nextExerciseId": null
+  },
+  "classification": {
+    "genre": "plan de año nuevo",
+    "topic": "los propósitos que se repiten",
+    "intent": "learning",
+    "tags": [
+      "aleman a1",
+      "lectura",
+      "futuro con presente",
+      "adjetivos predicativos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El año que viene todo será distinto"
+    },
+    "intro": {
+      "es": "Una lista de propósitos de siete años seguidos, comparada consigo misma. Lectura de alemán A1 con el futuro expresado en presente."
+    },
+    "mission": {
+      "es": "Averigua qué propósito cambió y cuál se repite siempre."
+    },
+    "targetText": "Ich schreibe jedes Jahr eine Liste. Nächstes Jahr lerne ich Klavier. Nächstes Jahr rauche ich nicht mehr. Nächstes Jahr rufe ich meine Schwester öfter an. Die Liste von 2020 ist fast gleich. Die Liste von 2021 auch. Ich habe sieben Listen. Sechs Punkte sind immer gleich. Nur ein Punkt ist neu: Klavier. Der Punkt mit der Schwester steht auf allen sieben Listen. Das ist traurig und es ist auch komisch. Meine Schwester wohnt zwanzig Minuten weg. Sie ist nicht böse. Sie schreibt keine Listen. Sie ruft einfach an. Dieses Jahr mache ich es anders. Die Liste ist kurz. Nur ein Punkt: heute anrufen. Ich rufe sie gleich an. Dann ist die Liste fertig.",
+    "wordCount": 113,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Expresar el futuro con presente más marca temporal: nächstes Jahr lerne ich."
+      },
+      {
+        "es": "Usar adjetivos predicativos sin declinación: ist traurig, ist komisch, ist kurz."
+      },
+      {
+        "es": "Comparar varias versiones de una misma lista."
+      }
+    ],
+    "grammarFocus": [
+      "zukunft-prasens",
+      "adjektive-pradikativ"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Klavier",
+        "lemma": "Klavier",
+        "glosses": {
+          "es": "piano"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rauche",
+        "lemma": "rauchen",
+        "glosses": {
+          "es": "fumo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "öfter",
+        "lemma": "öfter",
+        "glosses": {
+          "es": "más a menudo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gleich",
+        "lemma": "gleich",
+        "glosses": {
+          "es": "igual; también enseguida"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "traurig",
+        "lemma": "traurig",
+        "glosses": {
+          "es": "triste"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "komisch",
+        "lemma": "komisch",
+        "glosses": {
+          "es": "raro, curioso. ¡No es solo cómico!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "böse",
+        "lemma": "böse",
+        "glosses": {
+          "es": "enfadada"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fertig",
+        "lemma": "fertig",
+        "glosses": {
+          "es": "terminada, lista"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Las listas de «gute Vorsätze» de fin de año son tan habituales en Alemania como en el resto de Europa, y su incumplimiento es un tema recurrente de conversación en enero."
+    },
+    "spanishSpeakerNote": {
+      "es": "El alemán no necesita futuro para hablar del futuro: basta el presente con una marca temporal. «Nächstes Jahr lerne ich Klavier» es «el año que viene aprenderé piano». Y ojo con «gleich»: significa igual y también enseguida, según el contexto."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en alemán sobre la vida cotidiana, encontrar el verbo aunque esté partido o al final, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens"
+    ],
+    "disallowedGrammar": [
+      "Perfekt",
+      "Präteritum",
+      "Konjunktiv",
+      "Passiv",
+      "Genitiv"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 5.7,
+      "maxSentenceWords": 10,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo y futuro con presente. Sin Perfekt, Präteritum ni pasiva. Verbos separables y orden de la frase trabajados en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué hace el narrador al final?",
+      "options": [
+        {
+          "id": "llamar",
+          "text": "Reduce la lista a un punto y llama a su hermana en ese momento"
+        },
+        {
+          "id": "piano",
+          "text": "Se apunta por fin a clases de piano"
+        },
+        {
+          "id": "dejar",
+          "text": "Deja de escribir listas para siempre"
+        }
+      ],
+      "answer": "llamar",
+      "evidence": "Nur ein Punkt: heute anrufen. Ich rufe sie gleich an. Dann ist die Liste fertig.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la palabra «gleich» aquí significa enseguida: lo hace en el acto."
+        },
+        "incorrect": {
+          "es": "El piano queda pendiente y sigue escribiendo lista, solo que de un punto. Lee las tres frases finales."
+        },
+        "strategy": {
+          "es": "Cuando un texto acaba con una acción concreta y breve, esa acción es el desenlace."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántas listas tiene guardadas?",
+      "options": [
+        {
+          "id": "siete",
+          "text": "Siete"
+        },
+        {
+          "id": "seis",
+          "text": "Seis"
+        },
+        {
+          "id": "veinte",
+          "text": "Veinte"
+        }
+      ],
+      "answer": "siete",
+      "evidence": "Ich habe sieben Listen.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El seis son los puntos que se repiten y el veinte, los minutos hasta casa de su hermana."
+        },
+        "incorrect": {
+          "es": "El texto maneja varias cifras. Busca la que va con «Listen»."
+        },
+        "strategy": {
+          "es": "Empareja cada número con su sustantivo: listas, puntos, minutos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «Das ist traurig und es ist auch komisch». ¿Qué significa «komisch» aquí?",
+      "options": [
+        {
+          "id": "raro",
+          "text": "Raro, curioso"
+        },
+        {
+          "id": "divertido",
+          "text": "Muy divertido"
+        },
+        {
+          "id": "falso",
+          "text": "Falso"
+        }
+      ],
+      "answer": "raro",
+      "evidence": "Der Punkt mit der Schwester steht auf allen sieben Listen. Das ist traurig und es ist auch komisch.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Va junto a «traurig», triste, así que no puede ser simplemente cómico."
+        },
+        "incorrect": {
+          "es": "Se parece a «cómico», pero va emparejado con «triste». La combinación pide el sentido de raro."
+        },
+        "strategy": {
+          "es": "Si un adjetivo va unido a otro por «und», los dos deben poder describir lo mismo. Úsalo para acotar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Qué hace la hermana que él no hace?",
+      "options": [
+        {
+          "id": "llama",
+          "text": "Llamar sin más, sin escribir listas"
+        },
+        {
+          "id": "visita",
+          "text": "Visitarlo cada semana"
+        },
+        {
+          "id": "recuerda",
+          "text": "Recordarle sus propósitos"
+        }
+      ],
+      "answer": "llama",
+      "evidence": "Sie schreibt keine Listen. Sie ruft einfach an.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el contraste es el punto del texto: ella actúa, él planifica."
+        },
+        "incorrect": {
+          "es": "El texto no habla de visitas ni de recordatorios. Lee las dos frases seguidas sobre ella."
+        },
+        "strategy": {
+          "es": "Cuando dos frases cortas describen a otra persona, suelen construir un contraste con el narrador."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el propósito de llamar a su hermana aparece en las siete listas.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Der Punkt mit der Schwester steht auf allen sieben Listen.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y eso es lo que el narrador encuentra triste y raro a la vez."
+        },
+        "incorrect": {
+          "es": "Busca la frase con «allen sieben Listen». Lo dice de forma literal."
+        },
+        "strategy": {
+          "es": "La palabra «allen» (todas) no admite excepción. Si la ves, la afirmación es total."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué menciona que su hermana vive a veinte minutos?",
+      "options": [
+        {
+          "id": "absurdo",
+          "text": "Para subrayar lo absurdo de llevar siete años proponiéndose llamarla"
+        },
+        {
+          "id": "mudanza",
+          "text": "Para explicar por qué se ven poco"
+        },
+        {
+          "id": "transporte",
+          "text": "Para justificar que el trayecto es incómodo"
+        }
+      ],
+      "answer": "absurdo",
+      "evidence": "Meine Schwester wohnt zwanzig Minuten weg. Sie ist nicht böse.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Veinte minutos y siete años de lista: el dato está ahí para que la contradicción se note."
+        },
+        "incorrect": {
+          "es": "Veinte minutos no justifica nada: es justamente lo contrario. Y ella no está enfadada."
+        },
+        "strategy": {
+          "es": "Un dato de distancia corta en un texto sobre postergación suele servir para agravar la contradicción."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en alemán sobre tus propósitos para el año que viene. Usa el presente con marca temporal cuatro veces y tres adjetivos predicativos."
+    },
+    "minWords": 25,
+    "maxWords": 60,
+    "hints": [
+      "Ich schreibe jedes Jahr eine Liste.",
+      "Nächstes Jahr lerne ich…",
+      "Das ist traurig und komisch.",
+      "Dieses Jahr mache ich es anders."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de alemán y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán A1: El año que viene todo será distinto | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto en alemán A1 y practica el futuro expresado con presente y los adjetivos predicativos. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/a1/lectura/naechstes-jahr-wird-alles-anders",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-a1-anleitung-fuer-den-notdienst"
+    ]
+  }
+}

@@ -15,9 +15,9 @@
   "series": {
     "id": "aleman-a1-lectura-10",
     "episode": 5,
-    "totalEpisodes": 5,
+    "totalEpisodes": 10,
     "previousExerciseId": "de-a1-der-einkaufszettel",
-    "nextExerciseId": null
+    "nextExerciseId": "de-a1-ich-kann-nicht-schwimmen"
   },
   "classification": {
     "genre": "descripción de un trayecto",
@@ -444,7 +444,8 @@
     "indexable": false,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
-      "de-a1-der-einkaufszettel"
+      "de-a1-der-einkaufszettel",
+      "de-a1-ich-kann-nicht-schwimmen"
     ]
   }
 }

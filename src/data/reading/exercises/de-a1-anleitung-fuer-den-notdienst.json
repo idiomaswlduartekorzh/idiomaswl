@@ -1,0 +1,442 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-a1-anleitung-fuer-den-notdienst",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Alemán A1"
+  },
+  "slug": "anleitung-fuer-den-notdienst",
+  "series": {
+    "id": "aleman-a1-lectura-10",
+    "episode": 9,
+    "totalEpisodes": 10,
+    "previousExerciseId": "de-a1-unser-tisch",
+    "nextExerciseId": "de-a1-naechstes-jahr-wird-alles-anders"
+  },
+  "classification": {
+    "genre": "instrucciones de trabajo",
+    "topic": "el turno de guardia de una residencia",
+    "intent": "learning",
+    "tags": [
+      "aleman a1",
+      "lectura",
+      "imperativo",
+      "preposiciones de tiempo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Instrucciones para la guardia"
+    },
+    "intro": {
+      "es": "Seis instrucciones para quien haga la guardia de noche, y una que no está en el protocolo oficial. Lectura de alemán A1 con el imperativo."
+    },
+    "mission": {
+      "es": "Averigua cuál de las instrucciones no viene del protocolo."
+    },
+    "targetText": "Für den Nachtdienst. Bitte lies das vor deiner ersten Schicht. Komm um 21 Uhr 45, nicht um 22 Uhr. Die Kollegin vom Spätdienst braucht fünfzehn Minuten für die Übergabe. Mach um 22 Uhr den ersten Rundgang. Schau in jedes Zimmer, aber mach kein Licht an. Kontrolliere ab Mitternacht alle zwei Stunden. Notiere alles sofort. Schreib nicht am Morgen aus dem Kopf. Nach dem Rundgang um 4 Uhr kannst du eine Pause machen. Und jetzt etwas, das nicht im Protokoll steht. Frau Kaminski wacht fast jede Nacht um 3 Uhr auf. Sie hat Angst. Setz dich fünf Minuten zu ihr. Sag nichts Besonderes. Das steht in keinem Protokoll, aber es funktioniert.",
+    "wordCount": 110,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Formar el imperativo en la forma du: komm, mach, schau, notiere, setz dich."
+      },
+      {
+        "es": "Usar las preposiciones de tiempo: um, vor, ab, nach."
+      },
+      {
+        "es": "Distinguir la norma escrita del consejo de quien tiene experiencia."
+      }
+    ],
+    "grammarFocus": [
+      "imperativ",
+      "praepositionen-zeit"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Nachtdienst",
+        "lemma": "Nachtdienst",
+        "glosses": {
+          "es": "turno de noche"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Schicht",
+        "lemma": "Schicht",
+        "glosses": {
+          "es": "turno de trabajo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Übergabe",
+        "lemma": "Übergabe",
+        "glosses": {
+          "es": "relevo, traspaso de turno"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Rundgang",
+        "lemma": "Rundgang",
+        "glosses": {
+          "es": "ronda, recorrido de vigilancia"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Notiere",
+        "lemma": "notieren",
+        "glosses": {
+          "es": "anota"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Kopf",
+        "lemma": "Kopf",
+        "glosses": {
+          "es": "cabeza; aus dem Kopf = de memoria"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Angst",
+        "lemma": "Angst",
+        "glosses": {
+          "es": "miedo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Protokoll",
+        "lemma": "Protokoll",
+        "glosses": {
+          "es": "protocolo, procedimiento escrito"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En las residencias alemanas el relevo de turno («Übergabe») es un procedimiento formal con tiempo asignado, y saltárselo se considera una falta profesional."
+    },
+    "spanishSpeakerNote": {
+      "es": "El imperativo informal se forma quitando la terminación: «du kommst» pasa a «komm». Y ojo con las preposiciones de tiempo: «um» para la hora exacta, «ab» para «a partir de», «vor» y «nach» para antes y después."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en alemán sobre la vida cotidiana, encontrar el verbo aunque esté partido o al final, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens"
+    ],
+    "disallowedGrammar": [
+      "Perfekt",
+      "Präteritum",
+      "Konjunktiv",
+      "Passiv",
+      "Genitiv"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 6.9,
+      "maxSentenceWords": 11,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo y futuro con presente. Sin Perfekt, Präteritum ni pasiva. Verbos separables y orden de la frase trabajados en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué contiene el texto?",
+      "options": [
+        {
+          "id": "ambas",
+          "text": "Instrucciones del protocolo y un consejo que no está en él"
+        },
+        {
+          "id": "queja",
+          "text": "Una queja sobre las condiciones del turno de noche"
+        },
+        {
+          "id": "horario",
+          "text": "El horario de todos los turnos de la residencia"
+        }
+      ],
+      "answer": "ambas",
+      "evidence": "Und jetzt etwas, das nicht im Protokoll steht … Das steht in keinem Protokoll, aber es funktioniert.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el propio texto marca la frontera con una frase de transición."
+        },
+        "incorrect": {
+          "es": "No hay queja, y solo se describe el turno de noche. Busca la frase que anuncia el cambio."
+        },
+        "strategy": {
+          "es": "Cuando un texto avisa de que lo siguiente no está en la norma, ahí separa sus dos partes."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿A qué hora hay que llegar?",
+      "options": [
+        {
+          "id": "2145",
+          "text": "A las 21:45"
+        },
+        {
+          "id": "2200",
+          "text": "A las 22:00"
+        },
+        {
+          "id": "2400",
+          "text": "A medianoche"
+        }
+      ],
+      "answer": "2145",
+      "evidence": "Komm um 21 Uhr 45, nicht um 22 Uhr.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y explica por qué: el relevo necesita quince minutos."
+        },
+        "incorrect": {
+          "es": "Las 22:00 es justamente la hora que el texto descarta. Lee la frase entera."
+        },
+        "strategy": {
+          "es": "Si una instrucción incluye una negación con otra hora, la buena es la primera."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «Schreib nicht am Morgen aus dem Kopf». ¿Qué prohíbe?",
+      "options": [
+        {
+          "id": "memoria",
+          "text": "Anotar por la mañana de memoria"
+        },
+        {
+          "id": "mano",
+          "text": "Escribir a mano"
+        },
+        {
+          "id": "ordenador",
+          "text": "Usar el ordenador"
+        }
+      ],
+      "answer": "memoria",
+      "evidence": "Notiere alles sofort. Schreib nicht am Morgen aus dem Kopf.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. La expresión «aus dem Kopf» significa de memoria, y por eso pide anotar en el momento."
+        },
+        "incorrect": {
+          "es": "No se habla de a mano ni de ordenador. Fíjate en la instrucción anterior: anotar enseguida."
+        },
+        "strategy": {
+          "es": "Una prohibición suele reforzar la instrucción anterior. Léelas como pareja."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué pide sentarse cinco minutos con Frau Kaminski?",
+      "options": [
+        {
+          "id": "miedo",
+          "text": "Porque se despierta con miedo casi cada noche"
+        },
+        {
+          "id": "medicacion",
+          "text": "Porque hay que darle la medicación a esa hora"
+        },
+        {
+          "id": "ronda",
+          "text": "Porque es parte de la ronda de las tres"
+        }
+      ],
+      "answer": "miedo",
+      "evidence": "Frau Kaminski wacht fast jede Nacht um 3 Uhr auf. Sie hat Angst. Setz dich fünf Minuten zu ihr.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto añade que no hace falta decir nada especial."
+        },
+        "incorrect": {
+          "es": "No se menciona medicación, y el texto dice expresamente que esto no está en el protocolo."
+        },
+        "strategy": {
+          "es": "Cuando una instrucción va precedida de un dato sobre una persona, ese dato es el motivo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: durante la primera ronda hay que encender la luz de cada habitación.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Schau in jedes Zimmer, aber mach kein Licht an.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: hay que mirar, pero sin encender la luz. El «aber» marca el límite."
+        },
+        "incorrect": {
+          "es": "Busca la instrucción de la primera ronda. Tiene dos partes y la segunda es una prohibición."
+        },
+        "strategy": {
+          "es": "Si una instrucción lleva «aber», la segunda mitad acota la primera. No leas solo el principio."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué termina diciendo «aber es funktioniert»?",
+      "options": [
+        {
+          "id": "justificar",
+          "text": "Para justificar un consejo que no tiene respaldo oficial"
+        },
+        {
+          "id": "criticar",
+          "text": "Para criticar el protocolo por incompleto"
+        },
+        {
+          "id": "obligar",
+          "text": "Para convertirlo en una obligación más"
+        }
+      ],
+      "answer": "justificar",
+      "evidence": "Das steht in keinem Protokoll, aber es funktioniert.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Admite que no tiene respaldo escrito y ofrece la única prueba que tiene: que funciona."
+        },
+        "incorrect": {
+          "es": "No critica el protocolo ni lo presenta como obligatorio. Es un consejo, y lo dice así."
+        },
+        "strategy": {
+          "es": "Cuando alguien reconoce que algo no está en la norma y lo recomienda igual, está apelando a la experiencia."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe unas instrucciones de 5–7 frases en alemán para alguien que empieza en tu trabajo. Usa cinco imperativos y cuatro preposiciones de tiempo distintas."
+    },
+    "minWords": 25,
+    "maxWords": 60,
+    "hints": [
+      "Bitte lies das vor…",
+      "Komm um… Uhr.",
+      "Mach um… den ersten…",
+      "Das steht in keinem Protokoll, aber…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de alemán y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán A1: Instrucciones para la guardia | WeLearn"
+    },
+    "description": {
+      "es": "Lee unas instrucciones en alemán A1 y practica el imperativo y las preposiciones de tiempo (um, ab, vor, nach). Con seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/a1/lectura/anleitung-fuer-den-notdienst",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-a1-unser-tisch",
+      "de-a1-naechstes-jahr-wird-alles-anders"
+    ]
+  }
+}
