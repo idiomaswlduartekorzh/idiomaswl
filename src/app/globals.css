@@ -8419,3 +8419,20 @@ body {
 :root[data-wl-surface="editorial"][data-theme="dark"] :is(
   [style*="color:#7c3aed" i], [style*="color: #7c3aed" i]
 ) { color: var(--wl-on-panel-purple) !important; }
+
+
+/* Barra de descarga en PDF — gramática, lectura, vocabulario e historias.
+   El material descargable sale membretado desde src/lib/pdf/. */
+.topic-download {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0 0.5rem;
+}
+.topic-download > span {
+  font-size: 0.82rem;
+  color: var(--muted);
+  max-width: 42ch;
+  line-height: 1.4;
+}

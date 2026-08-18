@@ -18,6 +18,8 @@ import {
   MIN_PALABRAS_USADAS,
   progresoEscritura,
 } from '@/data/practica/vocabulario/ejercicios'
+import PdfDownloadButton from '@/components/practica/PdfDownloadButton'
+import { canRenderPdf } from '@/lib/pdf/languages'
 
 /**
  * Motor único de vocabulario para los ocho idiomas.
@@ -839,6 +841,20 @@ export default function VocabularyJourney({ bloque, nivel, idiomaLabel, nivelLab
 
   return (
     <section style={{ display: 'grid', gap: '1.6rem' }}>
+      {/* Descarga: la lista completa del nivel, no solo la de este bloque */}
+      {canRenderPdf(nivel.lang) && (
+        <div className="topic-download no-print" style={{ margin: 0 }}>
+          <PdfDownloadButton
+            label={`Descargar el vocabulario de ${idiomaLabel} ${nivelLabel} en PDF`}
+            generate={async () => {
+              const { generateVocabularyPdf } = await import('@/lib/pdf/generateVocabularyPdf')
+              await generateVocabularyPdf(nivel)
+            }}
+          />
+          <span>Todas las palabras del nivel, por bloques, con su ejemplo y lo que hay que saber de cada una.</span>
+        </div>
+      )}
+
       {/* Cómo funciona: la escalera, explicada antes de empezar */}
       <div
         style={{

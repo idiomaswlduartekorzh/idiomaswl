@@ -13,6 +13,8 @@ import type {
   Blank,
 } from '@/data/grammar/types'
 import { useGrammarProgress } from '@/components/grammar/useGrammarProgress'
+import PdfDownloadButton from '@/components/practica/PdfDownloadButton'
+import { canRenderPdf } from '@/lib/pdf/languages'
 
 type RelatedWritingExercise = {
   id: string
@@ -660,6 +662,21 @@ export default function GrammarTopicClient({
 
   return (
     <>
+      {/* ── Descarga ───────────────────────────────────────────────────────── */}
+      {canRenderPdf(idioma) && (
+        <div className="topic-download no-print">
+          <PdfDownloadButton
+            color={topic.color}
+            label="Descargar este tema en PDF"
+            generate={async () => {
+              const { generateGrammarPdf } = await import('@/lib/pdf/generateGrammarPdf')
+              await generateGrammarPdf(topic, idioma, nivel)
+            }}
+          />
+          <span>Explicación, tabla y ejercicios con las soluciones. Para imprimir y resolver a mano.</span>
+        </div>
+      )}
+
       {/* ── Visual Brief ───────────────────────────────────────────────────── */}
       <div className="visual-brief">
         <div className="visual-brief__header">
