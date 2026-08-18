@@ -9744,6 +9744,616 @@ And explain whether you would recommend it to others.</em>
 <p>Lee también: <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS</a> y <a href="/blog/ielts-academic-vs-general-training-cual-elegir">IELTS Academic vs General Training: cuál debes tomar</a>.</p>
     `,
   },
+  // ── Article 127 ────────────────────────────────────────────────────────────
+  {
+    slug: 'clases-de-ruso-online-colombia',
+    title: 'Clases de ruso online en Colombia: guía para elegir bien',
+    description:
+      'Cómo elegir clases de ruso online en Colombia: qué distingue a un programa serio, cuánto tiempo toma de verdad llegar al B1 y por qué el alfabeto cirílico es la parte fácil.',
+    metaTitle: 'Clases de ruso online en Colombia: cómo elegir',
+    metaDescription:
+      'Qué distingue un programa serio de uno genérico, cuánto se tarda de verdad en llegar al B1 y qué debe incluir una clase de ruso online.',
+    date: '2026-08-18',
+    readTime: 7,
+    category: 'Ruso',
+    tags: ['clases de ruso online Colombia', 'academia de ruso Colombia', 'aprender ruso Colombia', 'ruso desde cero', 'TORFL Colombia'],
+    body: `
+<h2>El ruso no es difícil por donde crees</h2>
+<p>Casi todo el mundo que se plantea aprender ruso se detiene en el alfabeto. Es el miedo equivocado. El cirílico tiene 33 letras y se aprende a leer en unas dos semanas de práctica constante: es un alfabeto fonético, cada letra suena casi siempre igual, y unas cuantas ya las conoces porque coinciden con el latino o con el griego que viste en clase de matemáticas.</p>
+<p>Lo que de verdad cuesta viene después, y son dos cosas. La primera son los <strong>seis casos</strong>: en ruso la terminación de un sustantivo cambia según la función que cumple en la frase, así que «Moscú» se dice de seis formas distintas según si vas a Moscú, vives en Moscú o hablas de Moscú. La segunda es el <strong>aspecto verbal</strong>: para casi cada verbo español existen dos verbos rusos, uno para la acción en curso y otro para la acción terminada, y elegir mal cambia el sentido de la frase.</p>
+<p>Esto importa al elegir un curso, porque un programa que te vende «lee cirílico en 3 días» te está vendiendo la parte fácil y callando la difícil.</p>
+
+<h2>Cuánto tiempo toma de verdad</h2>
+<p>El ruso está entre los idiomas más exigentes para un hispanohablante — muy por encima del italiano o el portugués, comparable al que más. Las estimaciones serias hablan de unas 1.100 horas de estudio para un nivel profesional, frente a unas 600 del francés o el italiano.</p>
+<table>
+  <thead><tr><th>Meta</th><th>Qué te permite</th><th>Tiempo con 2 clases semanales</th></tr></thead>
+  <tbody>
+    <tr><td>A1</td><td>Leer cirílico con soltura, presentarte, sobrevivir en situaciones básicas</td><td>4–6 meses</td></tr>
+    <tr><td>A2</td><td>Conversación cotidiana simple, manejar tres o cuatro casos con seguridad</td><td>10–14 meses</td></tr>
+    <tr><td>B1 (TORFL-I)</td><td>Nivel que suelen pedir las universidades rusas para entrar a carrera</td><td>18–26 meses</td></tr>
+    <tr><td>B2</td><td>Trabajo, estudio avanzado, conversación sin bloqueos</td><td>30–40 meses</td></tr>
+  </tbody>
+</table>
+<p>Cualquiera que te prometa B1 en seis meses no está contando las horas. Con dedicación intensiva se puede acelerar, pero el orden de magnitud es este.</p>
+
+<h2>Qué distingue a un buen programa de ruso</h2>
+
+<h3>1. Los casos se enseñan por función, no por lista</h3>
+<p>El error clásico es hacer memorizar las seis tablas de declinación antes de usarlas. Un buen programa introduce un caso cuando lo necesitas para decir algo: el prepositivo cuando hablas de dónde estás, el acusativo cuando hablas de a dónde vas, el genitivo cuando dices que algo no hay. Aprendes la tabla porque te hace falta, no antes.</p>
+
+<h3>2. El aspecto verbal se trabaja desde el principio</h3>
+<p>Es la diferencia entre un estudiante que suena raro y uno que suena ruso. Si un programa deja el aspecto «para el nivel avanzado», estás construyendo dos años de hábitos que luego hay que deshacer.</p>
+
+<h3>3. Pronunciación y acento tónico desde la primera clase</h3>
+<p>En ruso el acento tónico no se escribe y cambia la vocal: una «о» átona se pronuncia como «a». Sin trabajo fonético temprano acabas leyendo bien y hablando mal, y un ruso te entiende con esfuerzo.</p>
+
+<h3>4. Un tutor que domine el idioma de verdad</h3>
+<p>Con el ruso este punto pesa más que con otros idiomas, porque los errores de caso y de aspecto necesitan corrección inmediata y precisa. En WeLearn la dirección académica está a cargo de <strong>Zhanna Korzh, lingüista rusa nativa, profesora universitaria titulada en Rusia y con estudios doctorales en idiomas germánicos</strong>, que enseña desde 2011. No es un detalle de marketing: es quien fija el criterio con el que se corrige.</p>
+
+<h2>Señales de alerta</h2>
+<ul>
+  <li><strong>«Ruso conversacional sin gramática»:</strong> en un idioma con seis casos, esto produce un techo en A2 del que no se sale.</li>
+  <li><strong>Transliteración en lugar de cirílico:</strong> si el material escribe «privet» en vez de «привет», estás aprendiendo un idioma que no existe. El cirílico va desde la primera clase.</li>
+  <li><strong>Grupos grandes para nivel inicial:</strong> las terminaciones de caso necesitan corrección individual; en un grupo de quince, nadie te corrige.</li>
+  <li><strong>Promesas de nivel con fecha corta:</strong> ver la tabla de arriba.</li>
+</ul>
+
+<h2>Presencial en Bucaramanga u online desde cualquier ciudad</h2>
+<p>WeLearn tiene sede física en Bucaramanga, en el barrio Sotomayor, y también da clases por videollamada a estudiantes de Bogotá, Medellín, Cali, Barranquilla y del exterior. En los dos formatos el material de práctica de la plataforma va incluido: gramática de ruso A1 a B1, lecturas, escucha con audio a velocidad real y vocabulario.</p>
+<p>Puedes probar la práctica de ruso <a href="/practica/ruso">sin registrarte y gratis</a> antes de hablar con nadie. Es la forma más rápida de saber si el idioma te engancha.</p>
+
+<h2>Empieza con un diagnóstico</h2>
+<p>La primera sesión es un diagnóstico gratuito: vemos de dónde partes, para qué quieres el ruso y cuánto tiempo real necesitas. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20ruso%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o mira la <a href="/clases-de-ruso">página de clases de ruso</a>.</p>
+<p>Lee también: <a href="/blog/aprender-ruso-desde-cero-alfabeto-cirilico">Aprender ruso desde cero: el alfabeto cirílico en dos semanas</a> y <a href="/blog/cuanto-cuesta-aprender-ruso-colombia-2026">¿Cuánto cuesta aprender ruso en Colombia en 2026?</a>.</p>
+    `,
+  },
+  // ── Article 128 ────────────────────────────────────────────────────────────
+  {
+    slug: 'cuanto-cuesta-aprender-ruso-colombia-2026',
+    title: '¿Cuánto cuesta aprender ruso en Colombia en 2026? Guía de precios',
+    description:
+      'Precios reales de clases de ruso en Colombia en 2026: apps, tutores online, academias y preparación TORFL. Cuánto hay que invertir por nivel y qué opción rinde más.',
+    metaTitle: 'Cuánto cuesta aprender ruso en Colombia en 2026',
+    metaDescription:
+      'Precios reales de apps, tutores online, academias y preparación TORFL, y cuánto hay que invertir para llegar a cada nivel de ruso.',
+    date: '2026-08-18',
+    readTime: 6,
+    category: 'Ruso',
+    tags: ['cuánto cuesta aprender ruso Colombia', 'precio clases de ruso', 'clases de ruso Bucaramanga', 'TORFL costo', 'aprender ruso 2026'],
+    body: `
+<h2>Por qué el ruso se cotiza distinto</h2>
+<p>El ruso tiene en Colombia un problema de oferta, no de demanda: hay pocos profesores. No existe un equivalente al Instituto Cervantes o la Alianza Francesa con sedes en varias ciudades, y la mayoría de quienes lo enseñan son hablantes nativos que llegaron por vía personal. Eso hace que el precio varíe mucho más que en inglés o francés, y que la diferencia de calidad entre dos tutores al mismo precio sea enorme.</p>
+<p>También significa que quien aprende ruso compite con muy poca gente. Es un idioma con pocos hablantes en el mercado laboral colombiano y con demanda concreta en comercio exterior, energía, ingeniería y traducción.</p>
+
+<h2>Comparación de opciones</h2>
+<table>
+  <thead><tr><th>Opción</th><th>Costo mensual (COP)</th><th>A favor</th><th>En contra</th></tr></thead>
+  <tbody>
+    <tr><td>Apps (Duolingo, Busuu)</td><td>$0–$60.000</td><td>Cirílico y vocabulario suelto</td><td>No enseña casos ni aspecto verbal; techo en A1</td></tr>
+    <tr><td>YouTube y recursos libres</td><td>$0</td><td>Mucho material bueno en inglés</td><td>Sin progresión ni corrección; nadie te dice que declinas mal</td></tr>
+    <tr><td>Intercambio de idiomas</td><td>$0</td><td>Práctica oral real</td><td>Un nativo no es profesor: sabe que suena mal, no sabe explicarte por qué</td></tr>
+    <tr><td>Tutor particular online</td><td>$200.000–$550.000</td><td>Ritmo propio</td><td>Calidad muy dispar; pocos con formación pedagógica</td></tr>
+    <tr><td>WeLearn (1:1 especializado)</td><td>Según intensidad · diagnóstico gratis</td><td>Plan personalizado, dirección académica rusa nativa, plataforma incluida</td><td>Exige práctica diaria por tu cuenta</td></tr>
+  </tbody>
+</table>
+
+<h2>Inversión total por nivel</h2>
+<table>
+  <thead><tr><th>Meta</th><th>Inversión total estimada</th><th>Tiempo con 2 clases/semana</th></tr></thead>
+  <tbody>
+    <tr><td>A2 (conversación básica)</td><td>$3M–$6M COP</td><td>10–14 meses</td></tr>
+    <tr><td>B1 / TORFL-I (universidad rusa)</td><td>$6M–$12M COP</td><td>18–26 meses</td></tr>
+    <tr><td>B2 (trabajo y estudio avanzado)</td><td>$11M–$20M COP</td><td>30–40 meses</td></tr>
+  </tbody>
+</table>
+<p>Son rangos, no tarifas: dependen de la intensidad, de cuánto practiques por tu cuenta y de si partes de cero absoluto. Un estudiante que dedica media hora diaria entre clases llega a B1 en la mitad de tiempo que uno que solo aparece a clase.</p>
+
+<h2>El costo del examen</h2>
+<p>El certificado oficial de ruso es el <strong>TORFL</strong> (ТРКИ en ruso), emitido por universidades rusas. En Colombia no hay una red de centros de examen comparable a la del DELF o el Goethe, así que muchos candidatos lo presentan en Rusia o en centros autorizados de otros países. Antes de planificar gastos conviene confirmar la sede y la fecha vigentes con el centro ruso de ciencia y cultura o directamente con la universidad examinadora, porque esto cambia de un año a otro.</p>
+<p>Si tu objetivo es entrar a una universidad rusa, ten en cuenta que muchas ofrecen un año de <em>facultad preparatoria</em> en el que estudias ruso a tiempo completo antes de empezar la carrera. Eso puede sustituir buena parte de la preparación previa, pero no toda: llegar con un A2 sólido cambia por completo cómo aprovechas ese año.</p>
+
+<h2>Qué rinde más</h2>
+<p>Para el ruso, la respuesta es menos ambigua que en otros idiomas: <strong>clases individuales con corrección constante</strong>. En un idioma donde cada sustantivo cambia de forma seis veces, aprender sin nadie que te corrija produce errores que se fosilizan y que después cuestan más tiempo de desmontar que lo que ahorraste. Las apps sirven de complemento para el cirílico y el vocabulario; no sustituyen al profesor.</p>
+
+<h2>Clases de ruso en WeLearn</h2>
+<p>Damos clases de ruso 1:1, presenciales en Bucaramanga u online a cualquier ciudad, con la plataforma de práctica incluida. La primera sesión de diagnóstico es gratis. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20ruso%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o mira la <a href="/clases-de-ruso">página de clases de ruso</a> y nuestros <a href="/precios">precios</a>.</p>
+<p>Lee también: <a href="/blog/clases-de-ruso-online-colombia">Clases de ruso online en Colombia: guía para elegir bien</a> y <a href="/blog/estudiar-en-rusia-becas-y-nivel-de-ruso">Estudiar en Rusia: becas y nivel de ruso que piden</a>.</p>
+    `,
+  },
+  // ── Article 129 ────────────────────────────────────────────────────────────
+  {
+    slug: 'aprender-ruso-desde-cero-alfabeto-cirilico',
+    title: 'Aprender ruso desde cero: el alfabeto cirílico en dos semanas',
+    description:
+      'El cirílico es la parte fácil del ruso y se aprende en dos semanas. Cómo abordarlo por grupos de letras, qué trampas tiene y qué viene después.',
+    metaTitle: 'Aprender ruso desde cero: el cirílico en dos semanas',
+    metaDescription:
+      'El cirílico se aprende en dos semanas si lo abordas por grupos de letras. Las trampas, el plan día a día y qué viene después.',
+    date: '2026-08-18',
+    readTime: 7,
+    category: 'Ruso',
+    tags: ['aprender ruso desde cero', 'alfabeto cirílico', 'ruso A1', 'cómo aprender ruso', 'ruso para hispanohablantes'],
+    body: `
+<h2>Empieza por donde parece imposible</h2>
+<p>El cirílico asusta en la foto y se desmonta en la práctica. Son 33 letras y la mayoría de estudiantes lee palabras completas —despacio, pero las lee— dentro de la primera semana. La clave está en no atacarlas como una lista alfabética, sino por grupos según cuánto te van a engañar.</p>
+
+<h3>Grupo 1: las que ya sabes leer</h3>
+<p>А, К, М, О, Т suenan prácticamente como en español y se escriben igual. Es regalo: con ellas ya lees <em>кот</em> (gato) y <em>там</em> (allí).</p>
+
+<h3>Grupo 2: las falsas amigas — el grupo peligroso</h3>
+<p>Aquí está el 80 % de los errores de principiante, porque son letras que conoces con otro sonido:</p>
+<ul>
+  <li><strong>В</strong> suena «v», no «b».</li>
+  <li><strong>Н</strong> suena «n», no «h».</li>
+  <li><strong>Р</strong> suena «r», no «p».</li>
+  <li><strong>С</strong> suena «s», no «k».</li>
+  <li><strong>У</strong> suena «u», no «y».</li>
+  <li><strong>Х</strong> suena como la «j» española, no «x».</li>
+</ul>
+<p>Con estas seis, la palabra <em>ресторан</em> deja de ser un jeroglífico y se lee «restarán». Merece la pena dedicarles dos o tres días solo a ellas.</p>
+
+<h3>Grupo 3: las prestadas del griego</h3>
+<p>Г (g), Д (d), Л (l), П (p), Ф (f), Э (e) te resultarán familiares si viste letras griegas alguna vez. No engañan: solo hay que memorizarlas.</p>
+
+<h3>Grupo 4: las genuinamente nuevas</h3>
+<p>Ж, Ц, Ч, Ш, Щ, Ы, Ь, Ъ, Ю, Я. Son las que no se parecen a nada. La buena noticia es que casi todas tienen un sonido único y estable, así que una vez aprendidas no vuelven a darte problemas. Las dos que más cuestan son la <strong>Ы</strong>, un sonido que no existe en español y hay que oír mucho antes de producir, y el <strong>Ь</strong> (signo blando), que no suena por sí mismo pero cambia la consonante anterior.</p>
+
+<h2>Un plan de dos semanas</h2>
+<table>
+  <thead><tr><th>Días</th><th>Qué haces</th></tr></thead>
+  <tbody>
+    <tr><td>1–2</td><td>Grupo 1 y grupo 3. Leer palabras cortas en voz alta.</td></tr>
+    <tr><td>3–5</td><td>Grupo 2, las falsas amigas. Es el bloque que hay que sobreaprender.</td></tr>
+    <tr><td>6–9</td><td>Grupo 4, letra a letra, con audio.</td></tr>
+    <tr><td>10–14</td><td>Leer rótulos, nombres de ciudades y menús. Sin traducir: solo descifrar.</td></tr>
+  </tbody>
+</table>
+<p>El ejercicio que más rinde en esta fase es leer nombres propios: los nombres de estaciones del metro de Moscú, marcas internacionales escritas en cirílico, títulos de películas. Como ya sabes qué dicen, tu cerebro se concentra en el sistema de escritura y no en el significado.</p>
+
+<h2>La trampa que casi nadie te avisa: el acento tónico</h2>
+<p>En ruso el acento no se marca por escrito y no es fijo. Y cuando una <strong>о</strong> queda fuera del acento, se pronuncia como una «a». Por eso <em>молоко</em> (leche) no se dice «moloko» sino algo parecido a «malakó». Esto significa que <strong>saber leer no es saber pronunciar</strong>: cada palabra nueva hay que aprenderla con su acento, igual que en alemán se aprende el artículo con el sustantivo.</p>
+<p>Por eso conviene aprender el alfabeto con audio desde el primer día, y no solo con tarjetas visuales.</p>
+
+<h2>Qué viene después del alfabeto</h2>
+<p>Aquí empieza el ruso de verdad, y conviene saberlo para no desanimarse al llegar:</p>
+<ul>
+  <li><strong>Los seis casos.</strong> El sustantivo cambia de terminación según su función en la frase. Se aprenden de uno en uno, por uso.</li>
+  <li><strong>El género.</strong> Tres géneros —masculino, femenino y neutro—, deducibles casi siempre por la terminación.</li>
+  <li><strong>El aspecto verbal.</strong> Dos verbos por cada acción, según esté en curso o terminada. Es lo que más tarda en volverse intuitivo.</li>
+  <li><strong>Los verbos de movimiento.</strong> «Ir» se dice de formas distintas según vayas a pie o en vehículo, y según sea un viaje de ida o algo habitual.</li>
+</ul>
+<p>Ninguna de las cuatro es imposible; todas necesitan corrección de alguien que sepa. Es la razón por la que el ruso autodidacta se estanca tan a menudo en A2.</p>
+
+<h2>Practica el cirílico ahora, gratis</h2>
+<p>Tenemos el alfabeto cirílico como ejercicio interactivo, con audio y corrección inmediata, sin registro: <a href="/practica/ruso/a1/gramatica/alfabeto-cirilico">practicar el alfabeto cirílico</a>. Y si quieres seguir, toda la <a href="/practica/ruso">práctica de ruso de A1 a B1</a> está abierta.</p>
+<p>Cuando quieras que alguien te corrija de verdad, la primera clase de diagnóstico es gratis: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20ruso%20desde%20cero%20en%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o mira las <a href="/clases-de-ruso">clases de ruso</a>.</p>
+    `,
+  },
+  // ── Article 130 ────────────────────────────────────────────────────────────
+  {
+    slug: 'torfl-certificacion-ruso-colombia',
+    title: 'TORFL: la certificación oficial de ruso explicada para colombianos',
+    description:
+      'Qué es el TORFL (ТРКИ), qué mide cada nivel, cuál necesitas para estudiar o trabajar en Rusia y cómo prepararlo desde Colombia.',
+    metaTitle: 'TORFL: la certificación oficial de ruso, explicada',
+    metaDescription:
+      'Qué mide cada nivel del TORFL (ТРКИ), cuál te piden para universidad o trabajo en Rusia y cómo prepararlo desde Colombia.',
+    date: '2026-08-18',
+    readTime: 6,
+    category: 'Ruso',
+    tags: ['TORFL', 'ТРКИ', 'certificado de ruso', 'examen de ruso', 'estudiar en Rusia'],
+    body: `
+<h2>Qué es el TORFL</h2>
+<p>El TORFL —<em>Test of Russian as a Foreign Language</em>, ТРКИ en ruso— es el sistema oficial de certificación de ruso para extranjeros. Lo administran universidades rusas acreditadas por el Ministerio de Educación de Rusia, y es el certificado que reconocen las universidades y las instituciones oficiales del país.</p>
+<p>Es al ruso lo que el DELF al francés o el Goethe al alemán: un examen de estado, con niveles alineados al Marco Común Europeo, y con un diploma que no caduca.</p>
+
+<h2>Los niveles</h2>
+<table>
+  <thead><tr><th>Nivel TORFL</th><th>Nombre ruso</th><th>Marco Europeo</th><th>Para qué sirve</th></tr></thead>
+  <tbody>
+    <tr><td>Elemental</td><td>ТЭУ</td><td>A1</td><td>Supervivencia básica. Primer hito, no sirve para trámites.</td></tr>
+    <tr><td>Básico</td><td>ТБУ</td><td>A2</td><td>Conversación cotidiana simple.</td></tr>
+    <tr><td>TORFL-I</td><td>ТРКИ-I</td><td>B1</td><td>El más pedido: admisión a carrera en universidades rusas.</td></tr>
+    <tr><td>TORFL-II</td><td>ТРКИ-II</td><td>B2</td><td>Trabajo profesional; algunos posgrados.</td></tr>
+    <tr><td>TORFL-III</td><td>ТРКИ-III</td><td>C1</td><td>Trabajo cualificado, filología, traducción.</td></tr>
+    <tr><td>TORFL-IV</td><td>ТРКИ-IV</td><td>C2</td><td>Nivel casi nativo. Docencia universitaria de ruso.</td></tr>
+  </tbody>
+</table>
+<p>Los requisitos concretos cambian según la universidad y el programa, y también según el tipo de trámite migratorio. Antes de fijar un nivel objetivo conviene pedir por escrito el requisito a la institución de destino: es el error más caro que se comete con este examen.</p>
+
+<h2>Cómo es el examen</h2>
+<p>Cada nivel se divide en cinco pruebas, y hay que aprobarlas todas:</p>
+<ul>
+  <li><strong>Vocabulario y gramática</strong> — la parte más temida, donde se juega el dominio de los casos y del aspecto verbal.</li>
+  <li><strong>Comprensión lectora</strong></li>
+  <li><strong>Comprensión auditiva</strong></li>
+  <li><strong>Expresión escrita</strong></li>
+  <li><strong>Expresión oral</strong></li>
+</ul>
+<p>Se suele exigir alrededor del 66 % en cada una. Suspender una sola prueba obliga a repetir esa parte, no todo el examen, dentro de un plazo determinado — otro punto que conviene confirmar con el centro examinador, porque varía.</p>
+
+<h2>Presentarlo desde Colombia</h2>
+<p>Aquí toca ser honesto: el ruso no tiene en Colombia la red de centros de examen que tienen el francés o el alemán. Muchos candidatos terminan presentándolo en Rusia —a menudo al final del año de facultad preparatoria— o en centros autorizados de otros países. La sede y el calendario cambian de un año a otro, así que el paso previo obligatorio es confirmarlo con el centro ruso de ciencia y cultura o con la universidad examinadora.</p>
+<p>Esto tiene una consecuencia práctica: si tu meta es estudiar en Rusia, en muchos casos no necesitas el TORFL <em>antes</em> de salir. Necesitas nivel suficiente para aprovechar el año preparatorio y presentar el examen allí. Preparar el B1 desde Colombia sigue siendo la mejor inversión, pero el certificado en mano no siempre es el requisito de partida.</p>
+
+<h2>Cómo se prepara</h2>
+<p>El TORFL premia dos cosas que no se improvisan: precisión gramatical y velocidad de lectura. En la práctica, prepararlo bien significa:</p>
+<ol>
+  <li><strong>Cerrar el sistema de casos.</strong> No basta con reconocerlos: hay que producirlos sin pensar. Es lo que separa un B1 real de un A2 con vocabulario.</li>
+  <li><strong>Dominar el aspecto verbal.</strong> Es el criterio que más penaliza en la parte escrita y oral.</li>
+  <li><strong>Escuchar ruso a velocidad real.</strong> El audio del examen no está ralentizado.</li>
+  <li><strong>Escribir con corrección.</strong> La expresión escrita se evalúa con criterios formales; errores que no impiden entender igualmente restan.</li>
+</ol>
+
+<h2>Preparación TORFL en WeLearn</h2>
+<p>Preparamos ruso de A1 a B1 con plan personalizado y orientación al TORFL, presencial en Bucaramanga u online. La dirección académica está a cargo de una lingüista rusa nativa con formación universitaria en Rusia. La primera sesión de diagnóstico es gratis: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20TORFL%20de%20ruso%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o mira las <a href="/clases-de-ruso">clases de ruso</a>.</p>
+<p>Lee también: <a href="/blog/estudiar-en-rusia-becas-y-nivel-de-ruso">Estudiar en Rusia: becas y nivel de ruso que piden</a> y <a href="/blog/clases-de-ruso-online-colombia">Clases de ruso online en Colombia</a>.</p>
+    `,
+  },
+  // ── Article 131 ────────────────────────────────────────────────────────────
+  {
+    slug: 'estudiar-en-rusia-becas-y-nivel-de-ruso',
+    title: 'Estudiar en Rusia: becas, requisitos y nivel de ruso que piden',
+    description:
+      'Cómo funciona la cuota de becas del gobierno ruso, qué nivel de ruso necesitas, qué es la facultad preparatoria y cuánto cuesta estudiar en Rusia siendo colombiano.',
+    metaTitle: 'Estudiar en Rusia: becas y nivel de ruso que piden',
+    metaDescription:
+      'La cuota de becas del gobierno ruso, el año de facultad preparatoria, el nivel de ruso exigido y los costos reales para un colombiano.',
+    date: '2026-08-18',
+    readTime: 7,
+    category: 'Ruso',
+    tags: ['estudiar en Rusia', 'becas Rusia colombianos', 'facultad preparatoria', 'universidad rusa', 'nivel de ruso'],
+    body: `
+<h2>Por qué Rusia aparece en el radar</h2>
+<p>Rusia tiene una tradición universitaria fuerte en áreas concretas —medicina, ingeniería, física, matemáticas, música— y un costo de matrícula muy por debajo del de Europa occidental o Norteamérica, incluso pagando la carrera completa. A eso se suma una cuota anual de becas del gobierno ruso para estudiantes extranjeros, Colombia incluida.</p>
+<p>Es una vía real, pero con un requisito que mucha gente descubre tarde: <strong>buena parte de los programas se imparten en ruso</strong>.</p>
+
+<h2>La cuota de becas del gobierno ruso</h2>
+<p>El gobierno ruso asigna cada año un número de plazas becadas por país, gestionadas a través de sus representaciones diplomáticas y de la plataforma oficial de admisión de estudiantes extranjeros. La beca típicamente cubre la matrícula y una asignación mensual, y en muchos casos incluye el año de facultad preparatoria.</p>
+<p>Lo que la beca normalmente <strong>no</strong> cubre son los tiquetes aéreos, el seguro médico y la manutención completa. El número de plazas, los plazos y las condiciones cambian cada convocatoria, así que la fuente que vale es la representación oficial rusa en Colombia, no los blogs de terceros — este incluido.</p>
+
+<h2>La facultad preparatoria: la pieza clave</h2>
+<p>Es el mecanismo que hace viable todo lo anterior. Si no tienes nivel de ruso, la mayoría de universidades te admiten a un año de <em>подготовительный факультет</em> (facultad preparatoria): un curso intensivo de ruso a tiempo completo, más asignaturas de base de tu futura carrera en ruso — química y biología si vas a medicina, matemáticas y física si vas a ingeniería.</p>
+<p>Al terminar ese año presentas un examen y, si lo apruebas, entras a primer curso. En la práctica es el año en que muchos estudiantes obtienen su TORFL-I.</p>
+
+<h2>¿Con cuánto ruso hay que llegar?</h2>
+<table>
+  <thead><tr><th>Situación</th><th>Nivel de ruso al llegar</th><th>Qué implica</th></tr></thead>
+  <tbody>
+    <tr><td>Vas a facultad preparatoria</td><td>Cero es admisible; A1–A2 lo cambia todo</td><td>Aprovechas el año en vez de sobrevivirlo</td></tr>
+    <tr><td>Entras directo a carrera en ruso</td><td>B1 (TORFL-I) o superior</td><td>Es el requisito habitual de admisión</td></tr>
+    <tr><td>Programa impartido en inglés</td><td>No exigen ruso</td><td>Pero lo necesitarás para vivir fuera del campus</td></tr>
+  </tbody>
+</table>
+<p>Merece la pena detenerse en la primera fila. Formalmente puedes llegar sin una palabra de ruso; el año preparatorio existe justo para eso. Pero hay una diferencia enorme entre pasar los primeros tres meses aprendiendo a leer el alfabeto y llegar leyendo con soltura y con dos o tres casos ya interiorizados. Los estudiantes que llegan con un A2 no van «adelantados»: van en condiciones de aprender química en ruso, que es lo que en realidad les van a exigir.</p>
+<p>Y si tu programa es en inglés, sigue siendo cierto que el trámite del banco, el médico, el arriendo y la vida diaria ocurren en ruso.</p>
+
+<h2>Cuánto cuesta</h2>
+<p>Sin beca, las matrículas de universidades rusas suelen situarse muy por debajo de sus equivalentes en Estados Unidos o Europa occidental, y el costo de vida varía muchísimo entre Moscú o San Petersburgo y las ciudades de provincia, que son bastante más baratas. Como los precios y el tipo de cambio se mueven, no tiene sentido dar cifras cerradas aquí: pide el costo directamente a la universidad y súmale alojamiento, seguro y tiquetes.</p>
+
+<h2>Los trámites que conviene prever</h2>
+<ul>
+  <li><strong>Homologación del título de bachillerato</strong> y de las notas.</li>
+  <li><strong>Apostilla y traducción jurada al ruso</strong> de todos los documentos. Esto toma tiempo y es la causa más común de perder una convocatoria.</li>
+  <li><strong>Visa de estudiante</strong>, que se tramita con la carta de invitación de la universidad.</li>
+  <li><strong>Examen médico</strong> con requisitos específicos.</li>
+</ul>
+<p>Los plazos de las convocatorias suelen cerrarse con varios meses de antelación al inicio del curso. Si el ruso te va a hacer falta, ese es justamente el tiempo que puedes usar para llegar con A2 en vez de con cero.</p>
+
+<h2>Prepara el ruso antes de irte</h2>
+<p>En WeLearn damos clases de ruso 1:1 orientadas a este objetivo, presenciales en Bucaramanga u online a cualquier ciudad, con dirección académica de una lingüista rusa nativa. La primera sesión es un diagnóstico gratuito: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20estudiar%20en%20Rusia%20y%20necesito%20prepararme%20en%20ruso." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o mira las <a href="/clases-de-ruso">clases de ruso</a>.</p>
+<p>Lee también: <a href="/blog/torfl-certificacion-ruso-colombia">TORFL: la certificación oficial de ruso explicada</a> y <a href="/blog/aprender-ruso-desde-cero-alfabeto-cirilico">Aprender ruso desde cero: el cirílico en dos semanas</a>.</p>
+    `,
+  },
+  // ── Article 132 ────────────────────────────────────────────────────────────
+  {
+    slug: 'clases-de-japones-online-colombia',
+    title: 'Clases de japonés online en Colombia: guía para elegir bien',
+    description:
+      'Cómo elegir clases de japonés online en Colombia: qué debe incluir un programa serio, cuánto tiempo toma de verdad llegar al JLPT y por qué los kanji no son el problema que crees.',
+    metaTitle: 'Clases de japonés online en Colombia: cómo elegir',
+    metaDescription:
+      'Qué debe incluir un programa serio de japonés, cuánto se tarda de verdad en cada nivel del JLPT y las señales de alerta al elegir.',
+    date: '2026-08-18',
+    readTime: 7,
+    category: 'Japonés',
+    tags: ['clases de japonés online Colombia', 'academia de japonés Colombia', 'aprender japonés Colombia', 'JLPT Colombia', 'japonés desde cero'],
+    body: `
+<h2>El japonés es difícil, pero no por donde se dice</h2>
+<p>El japonés tiene fama de imposible y esa fama es a medias merecida. Vale la pena separar qué es realmente duro de qué solo lo parece, porque de eso depende que elijas bien un curso.</p>
+<p><strong>Lo que es más fácil de lo que crees:</strong> la pronunciación. El japonés tiene cinco vocales que suenan casi exactamente como las españolas y una estructura silábica simple. Un colombiano suena decente en japonés mucho antes que un angloparlante. Tampoco hay género gramatical, ni artículos, ni concordancia de número, ni conjugación por persona: el verbo no cambia según quién hable.</p>
+<p><strong>Lo que es realmente duro:</strong> el orden de la frase, que pone el verbo al final y funciona con partículas en vez de con posición; los niveles de cortesía, que obligan a decir la misma frase de tres o cuatro maneras según con quién hables; y el volumen puro de escritura, con tres sistemas conviviendo en la misma línea.</p>
+<p>Un curso que te vende «japonés en 3 meses» está ignorando la segunda lista.</p>
+
+<h2>Cuánto tiempo toma de verdad</h2>
+<p>El japonés está en la categoría más exigente para un hispanohablante, junto al chino, el coreano y el árabe: se estiman más de 2.000 horas de estudio para un nivel profesional. Es entre tres y cuatro veces lo que cuesta el italiano.</p>
+<table>
+  <thead><tr><th>Meta</th><th>Qué implica</th><th>Tiempo con 2 clases semanales</th></tr></thead>
+  <tbody>
+    <tr><td>JLPT N5</td><td>~100 kanji, ~800 palabras. Frases básicas.</td><td>8–12 meses</td></tr>
+    <tr><td>JLPT N4</td><td>~300 kanji, ~1.500 palabras. Conversación cotidiana.</td><td>16–24 meses</td></tr>
+    <tr><td>JLPT N3</td><td>~650 kanji. El puente hacia el japonés real.</td><td>2,5–3,5 años</td></tr>
+    <tr><td>JLPT N2</td><td>~1.000 kanji. Nivel que suelen pedir para trabajar.</td><td>4–5 años</td></tr>
+    <tr><td>JLPT N1</td><td>~2.000 kanji. Trabajo cualificado, universidad.</td><td>6+ años</td></tr>
+  </tbody>
+</table>
+<p>Estos plazos asumen práctica diaria por tu cuenta entre clases. Sin ella, se alargan bastante. El japonés castiga la irregularidad más que ningún otro idioma que enseñemos: dos semanas sin tocar kanji y se te caen.</p>
+
+<h2>Qué distingue a un buen programa de japonés</h2>
+
+<h3>1. Hiragana y katakana desde el primer mes, sin rōmaji</h3>
+<p>El <em>rōmaji</em> —el japonés escrito con letras latinas— es una muleta que se convierte en trampa. Si a los dos meses sigues leyendo «arigatou» en vez de ありがとう, tu progreso se va a detener en seco cuando llegue el material real. Los dos silabarios se aprenden en cuatro a seis semanas y deben estar cerrados antes de avanzar.</p>
+
+<h3>2. Kanji por componentes, no por repetición bruta</h3>
+<p>Los kanji no son dibujos arbitrarios: están hechos de piezas que se repiten. Un buen programa te enseña a descomponerlos y a asociar lecturas, en vez de mandarte a copiar cada carácter cien veces. La diferencia entre los dos enfoques es de años.</p>
+
+<h3>3. Cortesía enseñada como sistema, no como lista de frases</h3>
+<p>En japonés no eliges solo las palabras: eliges el registro. Hablar con un amigo, con un profesor y con un cliente exige tres formas verbales distintas de decir lo mismo. Un programa que solo enseña la forma <em>-masu</em> te deja sin poder hablar con nadie de confianza ni con nadie de rango superior.</p>
+
+<h3>4. Escucha desde el principio</h3>
+<p>El japonés hablado va rápido y contrae mucho. Como el JLPT tiene una sección entera de escucha —y la vida real, más—, un programa sin audio constante produce estudiantes que leen bien y no entienden nada hablado.</p>
+
+<h2>Señales de alerta</h2>
+<ul>
+  <li><strong>Rōmaji más allá de las primeras semanas.</strong> Es el indicador más fiable de un curso flojo.</li>
+  <li><strong>«Aprende japonés con anime» como método único.</strong> El anime es buen combustible de motivación y mal libro de texto: el registro que usa es informal, masculino o directamente inventado, y te enseña a hablar de una forma que en la calle suena mal.</li>
+  <li><strong>Kanji pospuestos «para más adelante».</strong> Si empiezan tarde, nunca se recupera el retraso.</li>
+  <li><strong>Grupos grandes en nivel inicial.</strong> La pronunciación y el trazo de los caracteres necesitan corrección individual.</li>
+</ul>
+
+<h2>Presencial en Bucaramanga u online</h2>
+<p>WeLearn tiene sede física en Bucaramanga, barrio Sotomayor, y da clases por videollamada a estudiantes de Bogotá, Medellín, Cali, Barranquilla y del exterior. En ambos formatos va incluida la plataforma: gramática de japonés de A1 a B1, lecturas, escucha con audio a velocidad real y vocabulario.</p>
+<p>Puedes probar la <a href="/practica/japones">práctica de japonés</a> gratis y sin registro antes de hablar con nadie.</p>
+
+<h2>Empieza con un diagnóstico</h2>
+<p>La primera sesión es un diagnóstico gratuito donde vemos tu punto de partida, tu objetivo y el tiempo real que necesitas. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20japon%C3%A9s%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o mira la <a href="/clases-de-japones">página de clases de japonés</a>.</p>
+<p>Lee también: <a href="/blog/aprender-japones-desde-cero-hiragana-katakana">Aprender japonés desde cero: hiragana y katakana</a> y <a href="/blog/jlpt-niveles-n5-a-n1-guia-colombia">JLPT: guía de los niveles N5 a N1</a>.</p>
+    `,
+  },
+  // ── Article 133 ────────────────────────────────────────────────────────────
+  {
+    slug: 'cuanto-cuesta-aprender-japones-colombia-2026',
+    title: '¿Cuánto cuesta aprender japonés en Colombia en 2026? Guía de precios',
+    description:
+      'Precios reales de clases de japonés en Colombia en 2026: apps, academias, tutores online y preparación JLPT. Cuánto invertir por nivel y qué opción rinde más.',
+    metaTitle: 'Cuánto cuesta aprender japonés en Colombia en 2026',
+    metaDescription:
+      'Precios reales de apps, academias, tutores online y preparación JLPT, y cuánto hay que invertir para llegar a cada nivel.',
+    date: '2026-08-18',
+    readTime: 6,
+    category: 'Japonés',
+    tags: ['cuánto cuesta aprender japonés Colombia', 'precio clases de japonés', 'clases de japonés Bucaramanga', 'JLPT costo', 'aprender japonés 2026'],
+    body: `
+<h2>Por qué conviene mirar el costo por año, no por mes</h2>
+<p>Con el inglés o el italiano, la pregunta «cuánto cuesta» se responde con una mensualidad. Con el japonés esa cifra engaña, porque el factor que determina el gasto total no es el precio de la clase sino <strong>cuántos años vas a necesitar</strong>. Una clase barata que te haga tardar el doble sale más cara.</p>
+<p>Por eso en este artículo la tabla que importa es la segunda, no la primera.</p>
+
+<h2>Comparación de opciones</h2>
+<table>
+  <thead><tr><th>Opción</th><th>Costo mensual (COP)</th><th>A favor</th><th>En contra</th></tr></thead>
+  <tbody>
+    <tr><td>Apps (Duolingo, Busuu)</td><td>$0–$60.000</td><td>Silabarios y vocabulario suelto</td><td>No enseña cortesía ni estructura; techo bajo</td></tr>
+    <tr><td>Apps de kanji (Anki, WaniKani)</td><td>$0–$40.000</td><td>Excelentes para memorizar kanji</td><td>Son un complemento, no un curso</td></tr>
+    <tr><td>YouTube y recursos libres</td><td>$0</td><td>Mucho material bueno</td><td>Sin progresión ni corrección</td></tr>
+    <tr><td>Academia grupal</td><td>$180.000–$400.000</td><td>Estructura y compañeros</td><td>Grupos grandes, poca producción oral por estudiante</td></tr>
+    <tr><td>Tutor particular online</td><td>$250.000–$600.000</td><td>Ritmo propio</td><td>Calidad dispar; pocos preparan JLPT específicamente</td></tr>
+    <tr><td>WeLearn (1:1 especializado)</td><td>Según intensidad · diagnóstico gratis</td><td>Plan personalizado, orientación JLPT, plataforma incluida</td><td>Exige práctica diaria por tu cuenta</td></tr>
+  </tbody>
+</table>
+
+<h2>Inversión total por nivel</h2>
+<table>
+  <thead><tr><th>Meta</th><th>Inversión total estimada</th><th>Tiempo con 2 clases/semana</th></tr></thead>
+  <tbody>
+    <tr><td>JLPT N5</td><td>$2,5M–$5M COP</td><td>8–12 meses</td></tr>
+    <tr><td>JLPT N4</td><td>$5M–$10M COP</td><td>16–24 meses</td></tr>
+    <tr><td>JLPT N3</td><td>$9M–$16M COP</td><td>2,5–3,5 años</td></tr>
+    <tr><td>JLPT N2 (trabajo en Japón)</td><td>$15M–$26M COP</td><td>4–5 años</td></tr>
+  </tbody>
+</table>
+<p>La variable que más mueve estos números no es el precio por hora: es cuánto estudias entre clases. Un estudiante que hace veinte minutos de kanji al día llega a N4 en la mitad de tiempo que uno que no toca nada entre sesiones, y por tanto paga la mitad.</p>
+
+<h2>El costo del examen</h2>
+<p>El <strong>JLPT</strong> (Japanese-Language Proficiency Test) se aplica dos veces al año, normalmente en julio y en diciembre, y en Colombia se ha venido presentando en Bogotá. No todos los niveles se ofrecen siempre en todas las sedes, y tanto la sede como las fechas de inscripción cambian de una convocatoria a otra: confírmalo con la embajada de Japón en Colombia o con la asociación que organice la aplicación ese año.</p>
+<p>Dos cosas que conviene saber para presupuestar: la inscripción cierra con bastante antelación al examen —quedarse fuera por eso es muy común— y el diploma del JLPT no caduca.</p>
+
+<h2>Qué rinde más según tu objetivo</h2>
+<ul>
+  <li><strong>Curiosidad y cultura, sin fecha límite:</strong> apps más recursos libres puede bastarte un tiempo. Llegarás a un techo, pero el techo tardará.</li>
+  <li><strong>Quieres llegar a N5 o N4 con certificado:</strong> conviene un curso estructurado. Es donde se decide si los kanji se te vuelven un hábito o un muro.</li>
+  <li><strong>Trabajo en Japón, universidad o beca:</strong> clases individuales con orientación al examen. En este tramo el costo de equivocarse de método se mide en años.</li>
+</ul>
+
+<h2>Clases de japonés en WeLearn</h2>
+<p>Damos clases de japonés 1:1, presenciales en Bucaramanga u online a cualquier ciudad, con plataforma de práctica incluida y plan orientado al JLPT si ese es tu objetivo. La primera sesión de diagnóstico es gratis: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20japon%C3%A9s%20en%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o mira la <a href="/clases-de-japones">página de clases de japonés</a> y los <a href="/precios">precios</a>.</p>
+<p>Lee también: <a href="/blog/jlpt-niveles-n5-a-n1-guia-colombia">JLPT: guía de los niveles N5 a N1</a> y <a href="/blog/clases-de-japones-online-colombia">Clases de japonés online en Colombia</a>.</p>
+    `,
+  },
+  // ── Article 134 ────────────────────────────────────────────────────────────
+  {
+    slug: 'aprender-japones-desde-cero-hiragana-katakana',
+    title: 'Aprender japonés desde cero: hiragana y katakana en seis semanas',
+    description:
+      'Por qué el japonés usa tres sistemas de escritura, cómo aprender hiragana y katakana en seis semanas y por qué el rōmaji te frena más de lo que te ayuda.',
+    metaTitle: 'Japonés desde cero: hiragana y katakana en 6 semanas',
+    metaDescription:
+      'Los tres sistemas de escritura del japonés, un plan de seis semanas para los dos silabarios y por qué el rōmaji te frena.',
+    date: '2026-08-18',
+    readTime: 7,
+    category: 'Japonés',
+    tags: ['aprender japonés desde cero', 'hiragana', 'katakana', 'kanji', 'japonés A1'],
+    body: `
+<h2>Tres sistemas en la misma línea</h2>
+<p>Lo primero que descoloca del japonés escrito es que no usa un sistema, sino tres a la vez, y cada uno tiene un trabajo distinto:</p>
+<ul>
+  <li><strong>Hiragana</strong> (ひらがな) — 46 caracteres básicos. Es la escritura nativa: sirve para las palabras japonesas y, sobre todo, para las terminaciones gramaticales y las partículas. Es el primero que se aprende.</li>
+  <li><strong>Katakana</strong> (カタカナ) — otros 46, con los mismos sonidos que el hiragana pero forma distinta. Se usa para palabras extranjeras, nombres propios de fuera, onomatopeyas y énfasis. Tu propio nombre se escribirá en katakana.</li>
+  <li><strong>Kanji</strong> (漢字) — caracteres de origen chino que representan significados. El japonés de uso general maneja unos 2.136 de uso común.</li>
+</ul>
+<p>Una frase normal mezcla los tres. Suena caótico y no lo es: como el japonés no separa las palabras con espacios, la alternancia entre kanji y hiragana es justamente lo que te indica dónde empieza y termina cada palabra.</p>
+
+<h2>Por qué el rōmaji te frena</h2>
+<p>El <em>rōmaji</em> es el japonés escrito con nuestro alfabeto. Es cómodo la primera semana y perjudicial a partir de la tercera, por tres razones concretas: te ata a la pronunciación española de esas letras, te impide leer absolutamente cualquier material real, y te crea la ilusión de avanzar mientras la deuda crece. Todo lo que aprendas en rōmaji hay que volver a aprenderlo después.</p>
+<p>La regla práctica: el rōmaji solo para las primeras clases, y fuera del cuaderno antes del segundo mes.</p>
+
+<h2>Un plan de seis semanas</h2>
+<table>
+  <thead><tr><th>Semana</th><th>Qué haces</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Hiragana, filas あ a た. Trazo a mano y audio.</td></tr>
+    <tr><td>2</td><td>Hiragana, filas な a ん. Leer palabras de dos y tres sílabas.</td></tr>
+    <tr><td>3</td><td>Marcas y combinaciones: が/ざ/だ/ば/ぱ, ゃゅょ, y la doble consonante っ.</td></tr>
+    <tr><td>4</td><td>Katakana, primera mitad. Comparar con su hiragana equivalente.</td></tr>
+    <tr><td>5</td><td>Katakana, segunda mitad. Leer marcas y menús: コーヒー, レストラン.</td></tr>
+    <tr><td>6</td><td>Lectura mixta y primeros 20 kanji de números y días.</td></tr>
+  </tbody>
+</table>
+<p>El ejercicio que más rinde en katakana es leer préstamos del inglés: como ya sabes qué dicen, te concentras en descifrar el sistema. コーヒー es «coffee», テレビ es «televisión», アイスクリーム es «ice cream». Es casi un juego y consolida rapidísimo.</p>
+
+<h2>Las trampas de los silabarios</h2>
+<ul>
+  <li><strong>Parejas que se confunden.</strong> En hiragana, さ/ち y は/ほ y ぬ/め. En katakana, ソ/ン y シ/ツ, que se distinguen solo por el ángulo del trazo. Hay que verlas juntas a propósito, no evitarlas.</li>
+  <li><strong>La vocal larga cambia el significado.</strong> おばさん es «señora» y おばあさん es «abuela». No es un matiz: es otra palabra.</li>
+  <li><strong>La っ pequeña.</strong> Marca una pausa que también cambia significados.</li>
+  <li><strong>Escribir a mano importa.</strong> Aunque luego escribas todo en teclado, trazar a mano fija la forma de un modo que el reconocimiento visual no consigue.</li>
+</ul>
+
+<h2>Y entonces llegan los kanji</h2>
+<p>Aquí es donde la mayoría abandona, casi siempre por el método y no por el idioma. Copiar cien veces un carácter es la peor forma de aprenderlo. Lo que funciona es:</p>
+<ol>
+  <li><strong>Descomponer.</strong> 休 (descanso) es 人 (persona) al lado de 木 (árbol): una persona apoyada en un árbol. Casi todos los kanji son combinaciones de piezas que se repiten.</li>
+  <li><strong>Aprenderlos en palabras, no sueltos.</strong> Un kanji aislado tiene varias lecturas posibles; dentro de una palabra tiene una.</li>
+  <li><strong>Repaso espaciado.</strong> Repasar justo antes de olvidar es lo que convierte 20 kanji en 200.</li>
+  <li><strong>Poco y todos los días.</strong> Cinco kanji diarios son 1.800 al año. Cuarenta el domingo son cero el martes.</li>
+</ol>
+
+<h2>Practica ahora, gratis</h2>
+<p>Tenemos hiragana y katakana como ejercicios interactivos con audio y corrección inmediata, sin registro: <a href="/practica/japones/a1/gramatica/hiragana-basico">hiragana básico</a> y <a href="/practica/japones/a1/gramatica/katakana-basico">katakana básico</a>. Toda la <a href="/practica/japones">práctica de japonés de A1 a B1</a> está abierta.</p>
+<p>Cuando quieras corrección de verdad, la primera clase de diagnóstico es gratis: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20japon%C3%A9s%20desde%20cero%20en%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o mira las <a href="/clases-de-japones">clases de japonés</a>.</p>
+    `,
+  },
+  // ── Article 135 ────────────────────────────────────────────────────────────
+  {
+    slug: 'jlpt-niveles-n5-a-n1-guia-colombia',
+    title: 'JLPT: guía de los niveles N5 a N1 para colombianos',
+    description:
+      'Qué mide el JLPT, cuántos kanji y palabras pide cada nivel, por qué no evalúa hablar ni escribir y cuál necesitas para trabajar o estudiar en Japón.',
+    metaTitle: 'JLPT: guía de los niveles N5 a N1 para colombianos',
+    metaDescription:
+      'Qué mide cada nivel del JLPT, cuántos kanji pide, por qué no evalúa hablar ni escribir y cuál te exigen en Japón.',
+    date: '2026-08-18',
+    readTime: 7,
+    category: 'Japonés',
+    tags: ['JLPT', 'JLPT N5', 'JLPT N2', 'examen de japonés', 'certificado de japonés Colombia'],
+    body: `
+<h2>Qué es el JLPT</h2>
+<p>El JLPT (<em>Japanese-Language Proficiency Test</em>, 日本語能力試験) es la certificación oficial de japonés para extranjeros, organizada por la Fundación Japón y una agencia de servicios educativos japonesa. Es el certificado que piden universidades, empleadores y algunos trámites migratorios japoneses, y el diploma no caduca.</p>
+<p>Se aplica dos veces al año, típicamente en julio y en diciembre. En Colombia se ha venido presentando en Bogotá, aunque la sede, los niveles ofrecidos y las fechas de inscripción cambian de una convocatoria a otra: hay que confirmarlo cada año con la embajada de Japón en Colombia o con la entidad organizadora. La inscripción cierra con meses de antelación y perderla es el tropiezo más frecuente.</p>
+
+<h2>Lo que más sorprende: no evalúa hablar ni escribir</h2>
+<p>Esto hay que decirlo pronto porque cambia cómo se prepara. El JLPT es <strong>enteramente de opción múltiple</strong> y tiene tres bloques:</p>
+<ul>
+  <li><strong>言語知識</strong> — conocimiento del idioma: vocabulario, kanji y gramática.</li>
+  <li><strong>読解</strong> — comprensión lectora.</li>
+  <li><strong>聴解</strong> — comprensión auditiva.</li>
+</ul>
+<p>No hay redacción ni entrevista oral. La consecuencia práctica es doble. Por un lado, se puede aprobar un JLPT alto sin ser capaz de sostener una conversación — y pasa. Por otro, si tu objetivo real es vivir o trabajar en Japón, preparar <em>solo</em> para el examen te deja cojo justo en lo que más vas a usar. Un buen programa prepara el examen y la producción oral en paralelo, aunque el examen no la mida.</p>
+
+<h2>Los cinco niveles</h2>
+<table>
+  <thead><tr><th>Nivel</th><th>Kanji aprox.</th><th>Vocabulario aprox.</th><th>Qué te permite</th></tr></thead>
+  <tbody>
+    <tr><td>N5</td><td>~100</td><td>~800</td><td>Frases básicas, presentarte, leer hiragana y katakana con soltura</td></tr>
+    <tr><td>N4</td><td>~300</td><td>~1.500</td><td>Conversación cotidiana sencilla, japonés de aula</td></tr>
+    <tr><td>N3</td><td>~650</td><td>~3.700</td><td>El puente: japonés real a velocidad moderada</td></tr>
+    <tr><td>N2</td><td>~1.000</td><td>~6.000</td><td>Nivel habitual para trabajar en Japón; prensa y televisión</td></tr>
+    <tr><td>N1</td><td>~2.000</td><td>~10.000</td><td>Trabajo cualificado, universidad, textos abstractos</td></tr>
+  </tbody>
+</table>
+<p>Los saltos no son parejos. De N5 a N4 hay un escalón; de N3 a N2 hay un abismo. N3 es el nivel donde más gente se atasca, porque es donde el japonés deja de ser «material para estudiantes» y empieza a ser japonés de verdad.</p>
+
+<h2>Cómo se aprueba</h2>
+<p>El JLPT no se aprueba solo con el puntaje total: hay que superar también un mínimo en cada sección por separado. Es decir, no puedes compensar una escucha desastrosa con una lectura brillante. Quien se prepara solo leyendo suele descubrirlo el día del examen.</p>
+
+<h2>Qué nivel necesitas de verdad</h2>
+<ul>
+  <li><strong>Interés personal, viajes:</strong> N5 o N4 ya te da una experiencia distinta en Japón.</li>
+  <li><strong>Universidad japonesa en japonés:</strong> normalmente N2 o N1, según el programa.</li>
+  <li><strong>Trabajar en Japón:</strong> N2 es la referencia habitual para la mayoría de puestos con trato con clientes o compañeros. Algunos empleos técnicos y del sector IT aceptan N3 si el equipo trabaja en inglés.</li>
+  <li><strong>Traducción o docencia:</strong> N1, y aun así el N1 es un piso, no un techo.</li>
+</ul>
+<p>Como siempre, el requisito que vale es el que te dé por escrito la universidad o la empresa concreta, no la regla general.</p>
+
+<h2>Cómo prepararlo desde Colombia</h2>
+<ol>
+  <li><strong>Kanji todos los días, con repaso espaciado.</strong> Es el músculo que decide el resultado en dos de los tres bloques.</li>
+  <li><strong>Escucha a velocidad real desde el primer nivel.</strong> El audio del examen no está ralentizado y la sección de escucha no se puede volver a oír.</li>
+  <li><strong>Gramática en contexto.</strong> El bloque de conocimiento del idioma pregunta por matices entre estructuras parecidas; memorizar listas no basta.</li>
+  <li><strong>Simulacros cronometrados.</strong> El tiempo es una dificultad real del JLPT, sobre todo en lectura de N2 y N1.</li>
+</ol>
+
+<h2>Preparación JLPT en WeLearn</h2>
+<p>Preparamos japonés de A1 a B1 con plan personalizado y orientación al JLPT, presencial en Bucaramanga u online a cualquier ciudad, trabajando también la producción oral que el examen no mide pero la vida sí. La primera sesión de diagnóstico es gratis: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20JLPT%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o mira las <a href="/clases-de-japones">clases de japonés</a>.</p>
+<p>Lee también: <a href="/blog/becas-mext-estudiar-en-japon-nivel-japones">Becas MEXT: estudiar en Japón y el nivel de japonés que piden</a> y <a href="/blog/aprender-japones-desde-cero-hiragana-katakana">Aprender japonés desde cero</a>.</p>
+    `,
+  },
+  // ── Article 136 ────────────────────────────────────────────────────────────
+  {
+    slug: 'becas-mext-estudiar-en-japon-nivel-japones',
+    title: 'Becas MEXT: estudiar en Japón y el nivel de japonés que piden',
+    description:
+      'Cómo funciona la beca del gobierno japonés MEXT, qué modalidades hay, qué nivel de japonés exige cada una y cómo prepararte desde Colombia.',
+    metaTitle: 'Becas MEXT: estudiar en Japón y el japonés que piden',
+    metaDescription:
+      'Modalidades de la beca MEXT, el año de japonés preparatorio, qué nivel exige cada vía y cómo prepararte desde Colombia.',
+    date: '2026-08-18',
+    readTime: 7,
+    category: 'Japonés',
+    tags: ['becas MEXT', 'estudiar en Japón', 'Monbukagakusho', 'beca gobierno japonés', 'nivel de japonés'],
+    body: `
+<h2>Qué es la MEXT</h2>
+<p>La MEXT —también llamada Monbukagakusho, por el ministerio japonés que la otorga— es la beca del gobierno de Japón para estudiantes extranjeros. Es de las más completas que existen: suele cubrir matrícula, una asignación mensual de manutención y los tiquetes aéreos, sin exigir devolución.</p>
+<p>Colombia participa en la convocatoria a través de la embajada de Japón. Las condiciones, los cupos y el calendario cambian cada año, así que la única fuente que vale para decidir es la convocatoria oficial publicada por la embajada.</p>
+
+<h2>Las modalidades</h2>
+<table>
+  <thead><tr><th>Modalidad</th><th>Para quién</th><th>Duración típica</th></tr></thead>
+  <tbody>
+    <tr><td>Investigación (posgrado)</td><td>Graduados universitarios que quieren maestría o doctorado</td><td>2–4 años, con periodo inicial como estudiante de investigación</td></tr>
+    <tr><td>Pregrado</td><td>Bachilleres</td><td>5 años, incluido 1 año de japonés preparatorio</td></tr>
+    <tr><td>Colegio técnico (KOSEN)</td><td>Bachilleres orientados a ingeniería técnica</td><td>4 años, con año preparatorio</td></tr>
+    <tr><td>Formación especializada</td><td>Bachilleres hacia carreras técnicas</td><td>3 años, con año preparatorio</td></tr>
+  </tbody>
+</table>
+<p>Hay además dos rutas de postulación: por <strong>recomendación de la embajada</strong>, que es la vía habitual desde Colombia y la que tiene convocatoria pública anual, y por <strong>recomendación de universidad</strong>, en la que la universidad japonesa te postula directamente. Los requisitos y los plazos no son los mismos.</p>
+
+<h2>El nivel de japonés que piden de verdad</h2>
+<p>Esta es la pregunta que más se malinterpreta, porque la respuesta depende de la modalidad:</p>
+<ul>
+  <li><strong>Pregrado y modalidades técnicas:</strong> no se exige japonés previo, porque la beca incluye un año completo de japonés intensivo antes de empezar la carrera. Pero después estudias tu carrera en japonés, así que ese año no es un extra: es el cuello de botella del que depende todo lo demás.</li>
+  <li><strong>Investigación (posgrado):</strong> hay programas que se cursan íntegramente en inglés, sobre todo en ciencias e ingeniería, y ahí el japonés no es requisito formal. En otros el laboratorio y el seminario funcionan en japonés.</li>
+</ul>
+<p>Ahora, el matiz que importa: aunque no sea requisito, <strong>el japonés pesa en la selección</strong>. El proceso incluye examen escrito y entrevista, y demostrar que ya empezaste el idioma comunica algo que ninguna carta de motivación comunica igual — que la intención es seria y que el año preparatorio no se va a desperdiciar. Entre dos candidatos equivalentes, es una diferencia real.</p>
+<p>Y si entras a pregrado con un N5 o N4 ya cerrado, ese año preparatorio deja de ser una carrera por sobrevivir y se convierte en el año en que consolidas kanji y llegas a la carrera en condiciones.</p>
+
+<h2>Cómo es el proceso</h2>
+<ol>
+  <li><strong>Convocatoria de la embajada</strong>, normalmente varios meses antes del inicio del curso japonés.</li>
+  <li><strong>Documentación:</strong> notas, títulos, certificados, plan de investigación en el caso de posgrado. Todo con traducción y, según el documento, apostilla. Es la fase que más gente subestima.</li>
+  <li><strong>Exámenes escritos</strong>, cuyo contenido depende de la modalidad — suelen incluir matemáticas, inglés y, en algunos casos, japonés.</li>
+  <li><strong>Entrevista</strong> en la embajada.</li>
+  <li><strong>Selección final en Japón</strong> y asignación de universidad.</li>
+</ol>
+<p>Entre la convocatoria y el viaje pasa cerca de un año. Ese año es exactamente el tiempo que hace falta para llegar con N5 en vez de con cero.</p>
+
+<h2>Más allá de la MEXT</h2>
+<p>La MEXT no es la única vía. Hay universidades japonesas con becas propias para extranjeros, programas de intercambio entre universidades colombianas y japonesas, y fundaciones privadas japonesas con convocatorias abiertas. En casi todas, el nivel de japonés es un factor de peso en la selección aunque el programa se dicte en inglés.</p>
+
+<h2>Prepara el japonés mientras preparas la postulación</h2>
+<p>En WeLearn damos clases de japonés 1:1 orientadas a este objetivo, presenciales en Bucaramanga u online a cualquier ciudad, con plataforma de práctica incluida. La primera sesión es un diagnóstico gratuito: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20postular%20a%20una%20beca%20para%20Jap%C3%B3n%20y%20necesito%20japon%C3%A9s." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o mira las <a href="/clases-de-japones">clases de japonés</a>.</p>
+<p>Lee también: <a href="/blog/jlpt-niveles-n5-a-n1-guia-colombia">JLPT: guía de los niveles N5 a N1</a> y <a href="/blog/cuanto-cuesta-aprender-japones-colombia-2026">¿Cuánto cuesta aprender japonés en Colombia en 2026?</a>.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {

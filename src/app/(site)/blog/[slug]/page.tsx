@@ -121,6 +121,20 @@ const CTA_BY_CATEGORY: Record<string, CtaConfig> = {
     pageLink: '/clases-de-italiano',
     pageLinkLabel: 'Ver clases de italiano',
   },
+  Ruso: {
+    title: '¿Quieres aprender ruso o preparar el TORFL?',
+    desc: 'Clases de ruso online o presenciales en Bucaramanga, con dirección académica de una lingüista rusa nativa. Del alfabeto cirílico al B1. Clase diagnóstico gratis.',
+    msg: 'Hola, leí el artículo de WeLearn sobre el ruso y quiero saber más sobre las clases de ruso.',
+    pageLink: '/clases-de-ruso',
+    pageLinkLabel: 'Ver clases de ruso',
+  },
+  Japonés: {
+    title: '¿Quieres aprender japonés o preparar el JLPT?',
+    desc: 'Clases de japonés online o presenciales en Bucaramanga. Del hiragana al JLPT, con plan personalizado según tu nivel y objetivo. Clase diagnóstico gratis.',
+    msg: 'Hola, leí el artículo de WeLearn sobre el japonés y quiero saber más sobre las clases de japonés.',
+    pageLink: '/clases-de-japones',
+    pageLinkLabel: 'Ver clases de japonés',
+  },
   Método: {
     title: '¿Listo para aprender un idioma con método?',
     desc: 'Conoce el método WeLearn de 17 pasos, diseñado para hispanohablantes que quieren hablar idiomas, no solo aprenderlos.',

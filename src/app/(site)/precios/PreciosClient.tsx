@@ -18,6 +18,8 @@ const LANGUAGES = [
   { slug: 'aleman',    flag: '🇩🇪', name: 'Alemán',    exams: ['Goethe A1', 'Goethe B1', 'Goethe C1'],   landing: '/clases-de-aleman' },
   { slug: 'italiano',  flag: '🇮🇹', name: 'Italiano',  exams: ['CILS', 'CELI'],                          landing: '/clases-de-italiano' },
   { slug: 'portugues', flag: '🇧🇷', name: 'Portugués', exams: ['CELPE-Bras'],                            landing: '/clases-de-portugues' },
+  { slug: 'japones',   flag: '🇯🇵', name: 'Japonés',   exams: ['JLPT N5–N1'],                            landing: '/clases-de-japones' },
+  { slug: 'ruso',      flag: '🇷🇺', name: 'Ruso',      exams: ['TORFL / ТРКИ'],                          landing: '/clases-de-ruso' },
 ];
 
 function formatCOP(n: number) {
@@ -58,6 +60,18 @@ const BLOG_BY_LANG: Record<string, BlogArticle[]> = {
     { cat: 'Portugués', color: '#166534', title: 'Portugués para negocios con Brasil: nivel y guía práctica', slug: 'portugues-para-negocios-con-brasil-nivel-recomendado' },
     { cat: 'Portugués', color: '#166534', title: 'Celpe-Bras: qué es, requisitos y cómo prepararse desde Colombia', slug: 'celpe-bras-que-es-como-prepararse' },
     { cat: 'Portugués', color: '#166534', title: 'Portugués europeo vs. brasileño: cuál aprender según tu objetivo', slug: 'portugues-europeo-vs-brasileno-para-aprender' },
+  ],
+  japones: [
+    { cat: 'Japonés', color: '#BC002D', title: 'JLPT: guía de los niveles N5 a N1 para colombianos', slug: 'jlpt-niveles-n5-a-n1-guia-colombia' },
+    { cat: 'Japonés', color: '#BC002D', title: 'Becas MEXT: estudiar en Japón y el nivel de japonés que piden', slug: 'becas-mext-estudiar-en-japon-nivel-japones' },
+    { cat: 'Japonés', color: '#BC002D', title: 'Aprender japonés desde cero: hiragana y katakana en seis semanas', slug: 'aprender-japones-desde-cero-hiragana-katakana' },
+    { cat: 'Japonés', color: '#BC002D', title: '¿Cuánto cuesta aprender japonés en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-japones-colombia-2026' },
+  ],
+  ruso: [
+    { cat: 'Ruso', color: '#0039A6', title: 'TORFL: la certificación oficial de ruso explicada', slug: 'torfl-certificacion-ruso-colombia' },
+    { cat: 'Ruso', color: '#0039A6', title: 'Estudiar en Rusia: becas, requisitos y nivel de ruso', slug: 'estudiar-en-rusia-becas-y-nivel-de-ruso' },
+    { cat: 'Ruso', color: '#0039A6', title: 'Aprender ruso desde cero: el alfabeto cirílico en dos semanas', slug: 'aprender-ruso-desde-cero-alfabeto-cirilico' },
+    { cat: 'Ruso', color: '#0039A6', title: '¿Cuánto cuesta aprender ruso en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-ruso-colombia-2026' },
   ],
 };
 
