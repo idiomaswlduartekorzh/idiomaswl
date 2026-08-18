@@ -1,0 +1,488 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-b1-vsyo-chto-zdes-sdelano",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Ruso B1"
+  },
+  "slug": "vsyo-chto-zdes-sdelano",
+  "series": {
+    "id": "ruso-b1-lectura-10",
+    "episode": 1,
+    "totalEpisodes": 10,
+    "previousExerciseId": null,
+    "nextExerciseId": "ru-b1-govorya-v-mikrofon-v-tri-nochi"
+  },
+  "classification": {
+    "genre": "crónica de un edificio",
+    "topic": "una segunda placa puesta por los vecinos",
+    "intent": "learning",
+    "tags": [
+      "ruso b1",
+      "lectura",
+      "participios pasivos",
+      "participios adjetivales"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Todo lo que aquí se hizo"
+    },
+    "intro": {
+      "es": "La placa oficial dice quién construyó la casa en 1957. Al lado hay otra, más grande, que dice todo lo demás. Lectura de ruso B1."
+    },
+    "mission": {
+      "es": "Averigua qué frase de Tamara Petrovna hizo callar a todo el mundo."
+    },
+    "targetText": "Наш дом на улице Кирова построен в 1957 году. На стене у входа висит табличка, где написано: «Дом построен в 1957 году. Архитектор — В. П. Смирнов».\n\nТабличка не врёт, но она рассказывает не всё.\n\nТри года назад мы, жильцы, сделали свою табличку. Она висит рядом и намного больше. На ней написано вот что.\n\n«Скамейка у второго подъезда сделана Николаем Ивановым в 1974 году».\n\n«Детская площадка построена родителями в 1981 году. Песок привезён Виктором Гуровым».\n\n«Полка для писем сделана из старой двери в 1993 году. Дверь найдена на чердаке».\n\n«Дорожка к мусорным бакам залита цементом в 1998 году. Цемент куплен вскладчину».\n\n«Деревья у дома посажены в 2003 году. Восемь из одиннадцати живы».\n\n«Домофон установлен в 2011 году. Оплачен четырнадцатью квартирами из двадцати четырёх».\n\n«Козырёк над первым подъездом переделан в 1988 году, потому что старый упал. Никто не пострадал».\n\n«Стекло в двери вставлено одиннадцать раз. Последний раз — в 2019 году».\n\n«Лампочка на четвёртом этаже меняется Тамарой Петровной с 1974 года».\n\nПоследняя строчка — единственная, написанная в настоящем времени. Мы обсуждали её долго и оставили как есть.\n\nИдея была не моя. Идея была Тамары Петровны, которой сейчас восемьдесят шесть лет и которая живёт здесь с 1957 года. Она сказала одну фразу, и мы все замолчали: «Дом построен архитектором один раз. Всё остальное здесь сделано нами, и об этом не написано нигде».\n\nНекоторые соседи были против. Они говорили, что это выглядит как жалоба на государство. Тамара Петровна ответила, что это не жалоба, а список.\n\nТабличка сделана из железа. Её сварил сын Николая Иванова — того самого, который сделал скамейку в 1974 году. Он не взял денег.\n\nСейчас люди останавливаются у входа и читают. Иногда читают долго. Один раз я видел мужчину лет пятидесяти, который прочитал всё, постоял и спросил меня, где живёт Тамара Петровна. Он оказался внуком Виктора Гурова — того, который привёз песок.\n\nЯ живу здесь двенадцать лет и до этой таблички не знал, кто посадил деревья под моим окном. Теперь знаю. Их посадил человек, которого я никогда не видел.\n\nНовую строчку мы добавим в этом году. Дверь в подвал наконец покрашена.",
+    "wordCount": 336,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Reconocer el participio pasivo pasado: построен, сделана, привезён, посажены."
+      },
+      {
+        "es": "Distinguir la forma corta (сделано) de la larga (сделанный) y su función."
+      },
+      {
+        "es": "Leer una lista y ver qué añade a un documento oficial."
+      }
+    ],
+    "grammarFocus": [
+      "participios-pasivos-b1",
+      "participios-adjetivales-b1",
+      "pasado-verbos"
+    ],
+    "vocabulary": [
+      {
+        "surface": "табличка",
+        "lemma": "табличка",
+        "glosses": {
+          "es": "placa, letrero"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "жильцы",
+        "lemma": "жилец",
+        "glosses": {
+          "es": "vecinos, inquilinos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "подъезда",
+        "lemma": "подъезд",
+        "glosses": {
+          "es": "portal, escalera del edificio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "песок",
+        "lemma": "песок",
+        "glosses": {
+          "es": "arena"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "чердаке",
+        "lemma": "чердак",
+        "glosses": {
+          "es": "desván"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "вскладчину",
+        "lemma": "вскладчину",
+        "glosses": {
+          "es": "a escote, entre todos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "сварил",
+        "lemma": "сварить",
+        "glosses": {
+          "es": "soldó"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "подвал",
+        "lemma": "подвал",
+        "glosses": {
+          "es": "sótano"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En los bloques soviéticos casi todo lo que hay fuera del edificio —bancos, columpios, caminos, árboles— lo pusieron los propios vecinos por su cuenta a lo largo de décadas. No consta en ningún registro."
+    },
+    "spanishSpeakerNote": {
+      "es": "El participio pasivo corto funciona como el español «está hecho»: «дом построен», «песок привезён», «дверь покрашена». Concuerda en género y número pero no se declina, y es la forma con la que el ruso escrito dice quién hizo algo, en instrumental: «сделана Николаем Ивановым»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto ruso largo con participios y gerundios, distinguir lo que alguien afirma de lo que solo dice que intentará, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento",
+      "acusativo-movimiento",
+      "adverbios-tiempo",
+      "aspecto-verbal",
+      "comparativos",
+      "condicional",
+      "dativo-uso",
+      "futuro-imperfectivo",
+      "futuro-perfectivo",
+      "genitivo-cantidad",
+      "instrumental-uso",
+      "oraciones-subordinadas",
+      "pasado-verbos",
+      "plurales-irregulares",
+      "prepositivo-avanzado",
+      "pronombres-reflexivos",
+      "pronombres-relativos",
+      "superlativos",
+      "verbos-prefijados",
+      "adverbios-circunstanciales-b1",
+      "aspecto-perfectivo-imperfectivo-b1",
+      "comparativos-superlativos-b1",
+      "condicional-subjuntivo-b1",
+      "dativo-b1",
+      "deeprichastiya-b1",
+      "diminutivos-aumentativos-b1",
+      "discurso-indirecto-b1",
+      "futuro-perfectivo-b1",
+      "genitivo-negacion-b1",
+      "impersonales-modales-b1",
+      "instrumental-b1",
+      "oraciones-subordinadas-b1",
+      "participios-activos-b1",
+      "participios-adjetivales-b1",
+      "participios-pasivos-b1",
+      "prefijos-verbos-b1",
+      "preposiciones-casos-b1",
+      "verbos-movimiento-prefijados-b1",
+      "verbos-reflexivos-b1"
+    ],
+    "disallowedGrammar": [
+      "participios de registro literario raro",
+      "sintaxis nominal administrativa",
+      "arcaísmos",
+      "jerga profesional cerrada"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 7.3,
+      "maxSentenceWords": 18,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Participios activos, pasivos y adjetivales; деепричастия de los dos aspectos; condicional con бы; impersonales modales. Acento sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Para qué pusieron los vecinos la segunda placa?",
+      "options": [
+        {
+          "id": "registro",
+          "text": "Para dejar constancia de todo lo que hicieron ellos y que no figura en ningún sitio"
+        },
+        {
+          "id": "queja",
+          "text": "Para presentar una queja formal contra el Estado"
+        },
+        {
+          "id": "turismo",
+          "text": "Para atraer visitantes al edificio"
+        }
+      ],
+      "answer": "registro",
+      "evidence": "Всё остальное здесь сделано нами, и об этом не написано нигде … это не жалоба, а список.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y Tamara Petrovna lo aclara ella misma: es una lista, no una queja."
+        },
+        "incorrect": {
+          "es": "El texto descarta expresamente la queja, y no busca visitantes. Busca su respuesta a los vecinos que se oponían."
+        },
+        "strategy": {
+          "es": "Cuando un personaje corrige la interpretación de otros, esa corrección es la tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántos de los once árboles plantados siguen vivos?",
+      "options": [
+        {
+          "id": "ocho",
+          "text": "Ocho"
+        },
+        {
+          "id": "once",
+          "text": "Los once"
+        },
+        {
+          "id": "catorce",
+          "text": "Catorce"
+        }
+      ],
+      "answer": "ocho",
+      "evidence": "«Деревья у дома посажены в 2003 году. Восемь из одиннадцати живы».",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y la placa lo dice sin adornar: ocho de once."
+        },
+        "incorrect": {
+          "es": "Los catorce son los pisos que pagaron el portero automático. Busca la línea de los árboles."
+        },
+        "strategy": {
+          "es": "Cada línea de la placa lleva sus propias cifras: localiza la línea antes que el número."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El cemento fue comprado «вскладчину». ¿Qué significa?",
+      "options": [
+        {
+          "id": "escote",
+          "text": "Pagándolo entre todos"
+        },
+        {
+          "id": "credito",
+          "text": "A crédito"
+        },
+        {
+          "id": "rebajado",
+          "text": "Con descuento"
+        }
+      ],
+      "answer": "escote",
+      "evidence": "«Дорожка к мусорным бакам залита цементом в 1998 году. Цемент куплен вскладчину».",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y encaja con la línea del portero automático, pagado por catorce pisos."
+        },
+        "incorrect": {
+          "es": "No se habla de crédito ni de descuentos. Compárala con la línea del domofón."
+        },
+        "strategy": {
+          "es": "Si otra línea del texto describe el mismo tipo de pago, úsala para deducir."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el nieto de Víktor Gúrov preguntó dónde vivía Tamara Petrovna?",
+      "options": [
+        {
+          "id": "gracias",
+          "text": "Porque reconoció el nombre de su abuelo en la placa y quiso agradecerlo"
+        },
+        {
+          "id": "queja",
+          "text": "Porque quería que quitaran el nombre de su abuelo"
+        },
+        {
+          "id": "casa",
+          "text": "Porque buscaba comprar un piso en el edificio"
+        }
+      ],
+      "answer": "gracias",
+      "evidence": "который прочитал всё, постоял и спросил меня, где живёт Тамара Петровна. Он оказался внуком Виктора Гурова — того, который привёз песок.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo deja implícito: leyó todo, se quedó parado y luego preguntó."
+        },
+        "incorrect": {
+          "es": "No pide quitar nada ni busca piso. Fíjate en la secuencia: leyó, se quedó parado, preguntó."
+        },
+        "strategy": {
+          "es": "Cuando el texto describe una pausa antes de una pregunta, la pausa es la emoción."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: todos los vecinos estuvieron de acuerdo con poner la segunda placa.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Некоторые соседи были против. Они говорили, что это выглядит как жалоба на государство.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: algunos se opusieron por miedo a que pareciera una queja."
+        },
+        "incorrect": {
+          "es": "Busca el párrafo que empieza por «Некоторые соседи»."
+        },
+        "strategy": {
+          "es": "La palabra «некоторые» (algunos) avisa de que no hubo unanimidad."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la crónica.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "La placa oficial de 1957"
+        },
+        {
+          "id": "p2",
+          "text": "Las líneas de la placa de los vecinos"
+        },
+        {
+          "id": "p3",
+          "text": "La frase de Tamara Petrovna y la oposición de algunos"
+        },
+        {
+          "id": "p4",
+          "text": "El nieto que reconoce el nombre de su abuelo"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "На стене у входа висит табличка … «Скамейка у второго подъезда сделана…» … Она сказала одну фразу … Он оказался внуком Виктора Гурова.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: la placa oficial, la lista, el origen y el efecto."
+        },
+        "incorrect": {
+          "es": "Fíjate en dónde aparece la frase de Tamara y dónde el hombre de cincuenta años."
+        },
+        "strategy": {
+          "es": "Una crónica suele terminar con el efecto de lo que ha contado antes."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 12–15 frases en ruso describiendo lo que se hizo en un lugar que conoces y quién lo hizo. Usa seis participios pasivos cortos."
+    },
+    "minWords": 65,
+    "maxWords": 120,
+    "hints": [
+      "Дом построен в … году.",
+      "Скамейка сделана Николаем в 1974 году.",
+      "Цемент куплен вскладчину.",
+      "Об этом не написано нигде."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de ruso —imprescindible por los participios y los gerundios— y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso B1: todo lo que aquí se hizo | WeLearn"
+    },
+    "description": {
+      "es": "Lee una crónica en ruso B1 y practica los participios pasivos y las formas cortas adjetivales. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/b1/lectura/vsyo-chto-zdes-sdelano",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-b1-govorya-v-mikrofon-v-tri-nochi"
+    ]
+  }
+}

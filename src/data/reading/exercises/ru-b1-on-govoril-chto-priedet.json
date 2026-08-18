@@ -1,0 +1,489 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-b1-on-govoril-chto-priedet",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Ruso B1"
+  },
+  "slug": "on-govoril-chto-priedet",
+  "series": {
+    "id": "ruso-b1-lectura-10",
+    "episode": 3,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-b1-govorya-v-mikrofon-v-tri-nochi",
+    "nextExerciseId": "ru-b1-chitalnyy-zal-kotoryy-ne-zakryvaetsya"
+  },
+  "classification": {
+    "genre": "relato familiar",
+    "topic": "nueve años de una visita anunciada",
+    "intent": "learning",
+    "tags": [
+      "ruso b1",
+      "lectura",
+      "estilo indirecto",
+      "subordinadas"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Decía que vendría"
+    },
+    "intro": {
+      "es": "Nueve años diciendo que vendría. Y la mujer del narrador fue la primera en notar qué palabra usaba en realidad. Lectura de ruso B1."
+    },
+    "mission": {
+      "es": "Averigua qué frase fue la primera en nueve años que contenía un hecho terminado."
+    },
+    "targetText": "Мой отец девять лет говорил, что приедет.\n\nОн живёт в Одессе, я в Екатеринбурге. Это далеко, но не так далеко, чтобы девять лет.\n\nКаждый год в январе он звонил и говорил, что приедет летом. Каждый год в мае он звонил и говорил, что приедет осенью. Каждый год в октябре он говорил, что зимой билеты дорогие, и что приедет летом.\n\nМоя жена первая заметила разницу. Она сказала, что я слышу не то, что он говорит. Она была права.\n\nОтец никогда не говорил: «Я приеду». Он говорил: «Я постараюсь приехать». Или: «Я думаю приехать». Или: «Надо бы приехать». Девять лет я слышал первое, а он девять лет говорил второе.\n\nКогда я это понял, я не обиделся. Мне стало легче. Я перестал ждать в июне и в сентябре, и это освободило мне два месяца в году.\n\nВ прошлом августе он позвонил и сказал: «Я купил билет». Он не сказал, что приедет. Он сказал, что купил билет. Это было первое предложение за девять лет, в котором был законченный факт.\n\nОн приехал на одиннадцать дней. Мы почти не разговаривали о том, почему он не приезжал раньше. Один раз он начал, сказав, что сначала были деньги, потом здоровье, потом опять деньги. Я ответил, что я знаю. Он посмотрел на меня и сказал, что я вырос.\n\nМне сорок четыре года. Я вырос давно, но он этого не видел, и это не его вина и не моя.\n\nМоя дочь, которой двенадцать, спросила один раз, почему дедушка не приезжает. Я не знал, что ответить, и сказал правду: что он хочет, но не решается. Она подумала и сказала, что это разные вещи — хотеть и собираться. Ей двенадцать лет, и на это ей понадобилось четыре секунды. Мне понадобилось девять лет. Я не рассказал ей, что она права.\n\nУезжая, он сказал в аэропорту, что приедет в следующем году. Я ответил: «Купи билет, и тогда скажешь мне».\n\nОн засмеялся. Он понял, что я понял.\n\nБилет он пока не купил. Но он звонит по субботам, а раньше звонил три раза в год. Это тоже что-то значит.",
+    "wordCount": 332,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Reproducir en estilo indirecto lo que otro dijo: он сказал, что…"
+      },
+      {
+        "es": "Encadenar subordinadas con что, потому что, чтобы, в котором."
+      },
+      {
+        "es": "Distinguir una promesa de una intención declarada."
+      }
+    ],
+    "grammarFocus": [
+      "discurso-indirecto-b1",
+      "oraciones-subordinadas-b1",
+      "pronombres-relativos"
+    ],
+    "vocabulary": [
+      {
+        "surface": "заметила",
+        "lemma": "заметить",
+        "glosses": {
+          "es": "notó, se dio cuenta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "постараюсь",
+        "lemma": "постараться",
+        "glosses": {
+          "es": "intentaré"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "обиделся",
+        "lemma": "обидеться",
+        "glosses": {
+          "es": "me ofendí"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "освободило",
+        "lemma": "освободить",
+        "glosses": {
+          "es": "liberó, dejó libre"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "билет",
+        "lemma": "билет",
+        "glosses": {
+          "es": "billete de viaje"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "предложение",
+        "lemma": "предложение",
+        "glosses": {
+          "es": "frase, oración. ¡No es una «proposición»!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "законченный",
+        "lemma": "законченный",
+        "glosses": {
+          "es": "terminado, cerrado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "вина",
+        "lemma": "вина",
+        "glosses": {
+          "es": "culpa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Odesa y Ekaterimburgo están a más de dos mil kilómetros y, desde 2022, sin conexión directa. El viaje entre las dos ciudades dejó de ser una cuestión solo de dinero."
+    },
+    "spanishSpeakerNote": {
+      "es": "El ruso no cambia el tiempo del verbo en estilo indirecto: «он сказал, что приедет» mantiene el futuro, donde el español pondría «dijo que vendría». Lo que hay que oír es el verbo elegido: «приеду» frente a «постараюсь приехать»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto ruso largo con participios y gerundios, distinguir lo que alguien afirma de lo que solo dice que intentará, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento",
+      "acusativo-movimiento",
+      "adverbios-tiempo",
+      "aspecto-verbal",
+      "comparativos",
+      "condicional",
+      "dativo-uso",
+      "futuro-imperfectivo",
+      "futuro-perfectivo",
+      "genitivo-cantidad",
+      "instrumental-uso",
+      "oraciones-subordinadas",
+      "pasado-verbos",
+      "plurales-irregulares",
+      "prepositivo-avanzado",
+      "pronombres-reflexivos",
+      "pronombres-relativos",
+      "superlativos",
+      "verbos-prefijados",
+      "adverbios-circunstanciales-b1",
+      "aspecto-perfectivo-imperfectivo-b1",
+      "comparativos-superlativos-b1",
+      "condicional-subjuntivo-b1",
+      "dativo-b1",
+      "deeprichastiya-b1",
+      "diminutivos-aumentativos-b1",
+      "discurso-indirecto-b1",
+      "futuro-perfectivo-b1",
+      "genitivo-negacion-b1",
+      "impersonales-modales-b1",
+      "instrumental-b1",
+      "oraciones-subordinadas-b1",
+      "participios-activos-b1",
+      "participios-adjetivales-b1",
+      "participios-pasivos-b1",
+      "prefijos-verbos-b1",
+      "preposiciones-casos-b1",
+      "verbos-movimiento-prefijados-b1",
+      "verbos-reflexivos-b1"
+    ],
+    "disallowedGrammar": [
+      "participios de registro literario raro",
+      "sintaxis nominal administrativa",
+      "arcaísmos",
+      "jerga profesional cerrada"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 8.1,
+      "maxSentenceWords": 16,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Participios activos, pasivos y adjetivales; деепричастия de los dos aspectos; condicional con бы; impersonales modales. Acento sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué comprende el narrador?",
+      "options": [
+        {
+          "id": "verbo",
+          "text": "Que su padre nunca prometió venir: dijo que lo intentaría, y él oyó otra cosa"
+        },
+        {
+          "id": "dinero",
+          "text": "Que su padre no venía por falta de dinero"
+        },
+        {
+          "id": "enfado",
+          "text": "Que su padre no quería verlo"
+        }
+      ],
+      "answer": "verbo",
+      "evidence": "Отец никогда не говорил: «Я приеду». Он говорил: «Я постараюсь приехать» … Девять лет я слышал первое, а он девять лет говорил второе.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la frase final del párrafo lo resume: uno decía una cosa y el otro oía otra."
+        },
+        "incorrect": {
+          "es": "El dinero es una de las razones que el padre menciona, pero no es lo que el narrador comprende. Y no hay rechazo."
+        },
+        "strategy": {
+          "es": "Si el texto contrapone dos formas verbales entre comillas, la diferencia entre ellas es el asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántos días se quedó el padre cuando por fin vino?",
+      "options": [
+        {
+          "id": "once",
+          "text": "Once días"
+        },
+        {
+          "id": "nueve",
+          "text": "Nueve días"
+        },
+        {
+          "id": "dos",
+          "text": "Dos meses"
+        }
+      ],
+      "answer": "once",
+      "evidence": "Он приехал на одиннадцать дней. Мы почти не разговаривали о том, почему он не приезжал раньше.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y en esos once días apenas hablaron del asunto."
+        },
+        "incorrect": {
+          "es": "Los nueve son años y los dos meses son lo que el narrador dejó de pasar esperando."
+        },
+        "strategy": {
+          "es": "Empareja cada cifra con su unidad: años de espera, días de visita, meses liberados."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El narrador dice que fue la primera «предложение» en nueve años con un hecho cerrado. ¿Qué significa?",
+      "options": [
+        {
+          "id": "frase",
+          "text": "Una frase, una oración"
+        },
+        {
+          "id": "propuesta",
+          "text": "Una propuesta de negocio"
+        },
+        {
+          "id": "oferta",
+          "text": "Una oferta de viaje"
+        }
+      ],
+      "answer": "frase",
+      "evidence": "Это было первое предложение за девять лет, в котором был законченный факт.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Se refiere a la frase «я купил билет», no a ninguna propuesta."
+        },
+        "incorrect": {
+          "es": "Se refiere a lo que su padre acababa de decir: «he comprado el billete». Es una frase."
+        },
+        "strategy": {
+          "es": "Si la palabra se refiere a algo que alguien acaba de decir, es una frase, no una oferta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué contesta «compra el billete y entonces me lo dices»?",
+      "options": [
+        {
+          "id": "aprendido",
+          "text": "Porque ya distingue una intención de un hecho y no quiere volver a esperar"
+        },
+        {
+          "id": "enfado",
+          "text": "Porque está enfadado y le habla con dureza"
+        },
+        {
+          "id": "dinero",
+          "text": "Porque quiere que su padre pague el viaje él mismo"
+        }
+      ],
+      "answer": "aprendido",
+      "evidence": "Уезжая, он сказал … что приедет в следующем году. Я ответил: «Купи билет, и тогда скажешь мне». Он засмеялся. Он понял, что я понял.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la reacción del padre lo confirma: se ríe porque entiende."
+        },
+        "incorrect": {
+          "es": "El padre se ríe, así que no fue dureza, y el dinero no está en juego ahí. Fíjate en la reacción."
+        },
+        "strategy": {
+          "es": "Si el otro personaje se ríe en vez de ofenderse, la frase no era un reproche."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: cuando el narrador entendió la diferencia, se ofendió con su padre.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Когда я это понял, я не обиделся. Мне стало легче.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: dice expresamente que no se ofendió, y que le alivió."
+        },
+        "incorrect": {
+          "es": "Busca la frase que empieza por «Когда я это понял». Es una negación."
+        },
+        "strategy": {
+          "es": "Si el narrador niega una reacción esperable, esa negación es la respuesta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el relato.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Nueve años de anuncios en enero, mayo y octubre"
+        },
+        {
+          "id": "p2",
+          "text": "Su mujer nota qué verbo usa el padre en realidad"
+        },
+        {
+          "id": "p3",
+          "text": "La llamada de agosto: «he comprado el billete»"
+        },
+        {
+          "id": "p4",
+          "text": "Los once días y la despedida en el aeropuerto"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Каждый год в январе он звонил … Моя жена первая заметила разницу … В прошлом августе он позвонил и сказал: «Я купил билет» … Уезжая, он сказал в аэропорту…",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: el patrón, el hallazgo, el cambio y la despedida."
+        },
+        "incorrect": {
+          "es": "Guíate por «Каждый год», «В прошлом августе» y «Уезжая»."
+        },
+        "strategy": {
+          "es": "El gerundio «уезжая» sitúa la escena en el momento de la marcha: va al final."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 12–15 frases en ruso contando lo que alguien te dijo que haría y qué pasó. Usa seis frases en estilo indirecto con «сказал, что»."
+    },
+    "minWords": 65,
+    "maxWords": 120,
+    "hints": [
+      "Он говорил, что приедет летом.",
+      "Он никогда не говорил: «Я приеду».",
+      "Она сказала, что я слышу не то.",
+      "Он понял, что я понял."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de ruso —imprescindible por los participios y los gerundios— y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso B1: decía que vendría | WeLearn"
+    },
+    "description": {
+      "es": "Lee un relato familiar en ruso B1 y practica el estilo indirecto y las oraciones subordinadas. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/b1/lectura/on-govoril-chto-priedet",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-b1-govorya-v-mikrofon-v-tri-nochi",
+      "ru-b1-chitalnyy-zal-kotoryy-ne-zakryvaetsya"
+    ]
+  }
+}

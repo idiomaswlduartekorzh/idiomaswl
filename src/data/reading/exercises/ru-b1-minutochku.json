@@ -1,0 +1,489 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-b1-minutochku",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Ruso B1"
+  },
+  "slug": "minutochku",
+  "series": {
+    "id": "ruso-b1-lectura-10",
+    "episode": 9,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-b1-ona-ne-doshla",
+    "nextExerciseId": "ru-b1-chem-kholodnee-tem-luchshe"
+  },
+  "classification": {
+    "genre": "cuaderno de estudiante",
+    "topic": "para qué sirven los diminutivos rusos",
+    "intent": "learning",
+    "tags": [
+      "ruso b1",
+      "lectura",
+      "diminutivos",
+      "adverbios circunstanciales"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Un minutito"
+    },
+    "intro": {
+      "es": "Tardó tres años en entender por qué el ruso lo empequeñece todo. La respuesta se la dio una cajera sin querer. Lectura de ruso B1."
+    },
+    "mission": {
+      "es": "Averigua qué hace pequeño en realidad un diminutivo, según el texto."
+    },
+    "targetText": "«Минуточку» — так говорят, когда просят подождать. Не «минуту», а «минуточку». Разница между этими двумя словами — это половина русской вежливости.\n\nЯ живу в России девять лет и первые три года не понимал, зачем всё уменьшают. Сумочка, денежки, водичка, тихонько, стаканчик, соседушка.\n\nСначала я думал, что это про размер. Стаканчик — маленький стакан. Это неправильно: стаканчик может быть большой.\n\nПотом я думал, что это детский язык. Тоже неправильно: так говорят мужчины пятидесяти лет в автосервисе.\n\nПравильный ответ мне дала кассирша в магазине, совершенно случайно. Она сказала женщине впереди меня: «Подождите секундочку, у меня чек застрял». Женщина, которая до этого стояла злая, сразу успокоилась.\n\nУменьшительное слово не делает вещь маленькой. Оно делает просьбу маленькой.\n\n«Подождите минуту» — это распоряжение. «Подождите минуточку» — это просьба, которую легко выполнить, потому что она сама себя объявила крошечной.\n\nТо же самое с деньгами. «Дай денег» звучит тяжело. «Дай денежек» звучит легко, и поэтому этой формой пользуются осторожно: она может звучать фальшиво.\n\nЕсть и обратная сторона. Врач, который говорит «сейчас будет укольчик», иногда преувеличивает в другую сторону. Начальник, который просит «задержаться на часок», обычно имеет в виду три.\n\nМой сосед Игорь объяснил это лучше всех. Он сказал: «Уменьшительное — это когда я прошу тебя о чём-то и заранее извиняюсь, ещё не начав просить».\n\nЕсть ещё одна вещь, которую я понял поздно. Уменьшительное работает лучше всего тогда, когда его говорят тебе. Когда ты говоришь его сам, ты рискуешь.\n\nРусский, который просит «секундочку», ничем не рискует. Иностранец, который просит «секундочку» с акцентом, звучит либо очень мило, либо очень странно, и заранее ты не знаешь, как получится.\n\nЯ решил эту проблему просто. Я использую уменьшительные только с теми, кого знаю больше года. С остальными я говорю «минуту» и живу с этим.\n\nТеперь я тоже так говорю. Не всегда правильно. Один раз я сказал коллеге «принеси документики», и она смеялась минут пять. Документы уменьшать нельзя. Почему — я до сих пор не знаю, и никто мне так и не объяснил.",
+    "wordCount": 313,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Reconocer los sufijos diminutivos: -очк-, -ечк-, -ик, -чик, -ушк-."
+      },
+      {
+        "es": "Colocar los adverbios circunstanciales: сначала, потом, совершенно случайно, сразу, заранее, осторожно."
+      },
+      {
+        "es": "Entender un recurso de cortesía que no tiene equivalente directo en español."
+      }
+    ],
+    "grammarFocus": [
+      "diminutivos-aumentativos-b1",
+      "adverbios-circunstanciales-b1",
+      "adverbios-tiempo"
+    ],
+    "vocabulary": [
+      {
+        "surface": "уменьшают",
+        "lemma": "уменьшать",
+        "glosses": {
+          "es": "empequeñecen, reducen"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "вежливости",
+        "lemma": "вежливость",
+        "glosses": {
+          "es": "cortesía"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "кассирша",
+        "lemma": "кассирша",
+        "glosses": {
+          "es": "cajera"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "застрял",
+        "lemma": "застрять",
+        "glosses": {
+          "es": "se atascó"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "успокоилась",
+        "lemma": "успокоиться",
+        "glosses": {
+          "es": "se calmó"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "распоряжение",
+        "lemma": "распоряжение",
+        "glosses": {
+          "es": "orden, instrucción"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "крошечной",
+        "lemma": "крошечный",
+        "glosses": {
+          "es": "diminuta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "укольчик",
+        "lemma": "укол",
+        "glosses": {
+          "es": "pinchacito, inyección"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El diminutivo ruso no se limita al lenguaje afectivo: aparece en el trato comercial, en la consulta médica y entre desconocidos. Es un recurso de cortesía cotidiano, no un rasgo infantil."
+    },
+    "spanishSpeakerNote": {
+      "es": "El español también tiene diminutivos de cortesía («un momentito»), pero el ruso los usa mucho más y en más contextos. Y hay límites que nadie explica: «документики» hace reír, y no hay regla que lo prediga."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto ruso largo con participios y gerundios, distinguir lo que alguien afirma de lo que solo dice que intentará, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento",
+      "acusativo-movimiento",
+      "adverbios-tiempo",
+      "aspecto-verbal",
+      "comparativos",
+      "condicional",
+      "dativo-uso",
+      "futuro-imperfectivo",
+      "futuro-perfectivo",
+      "genitivo-cantidad",
+      "instrumental-uso",
+      "oraciones-subordinadas",
+      "pasado-verbos",
+      "plurales-irregulares",
+      "prepositivo-avanzado",
+      "pronombres-reflexivos",
+      "pronombres-relativos",
+      "superlativos",
+      "verbos-prefijados",
+      "adverbios-circunstanciales-b1",
+      "aspecto-perfectivo-imperfectivo-b1",
+      "comparativos-superlativos-b1",
+      "condicional-subjuntivo-b1",
+      "dativo-b1",
+      "deeprichastiya-b1",
+      "diminutivos-aumentativos-b1",
+      "discurso-indirecto-b1",
+      "futuro-perfectivo-b1",
+      "genitivo-negacion-b1",
+      "impersonales-modales-b1",
+      "instrumental-b1",
+      "oraciones-subordinadas-b1",
+      "participios-activos-b1",
+      "participios-adjetivales-b1",
+      "participios-pasivos-b1",
+      "prefijos-verbos-b1",
+      "preposiciones-casos-b1",
+      "verbos-movimiento-prefijados-b1",
+      "verbos-reflexivos-b1"
+    ],
+    "disallowedGrammar": [
+      "participios de registro literario raro",
+      "sintaxis nominal administrativa",
+      "arcaísmos",
+      "jerga profesional cerrada"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 8.2,
+      "maxSentenceWords": 20,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Participios activos, pasivos y adjetivales; деепричастия de los dos aspectos; condicional con бы; impersonales modales. Acento sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué concluye el texto sobre los diminutivos?",
+      "options": [
+        {
+          "id": "peticion",
+          "text": "Que no empequeñecen la cosa: empequeñecen la petición"
+        },
+        {
+          "id": "tamano",
+          "text": "Que sirven para hablar de objetos pequeños"
+        },
+        {
+          "id": "infantil",
+          "text": "Que son lenguaje infantil que los adultos deberían evitar"
+        }
+      ],
+      "answer": "peticion",
+      "evidence": "Уменьшительное слово не делает вещь маленькой. Оно делает просьбу маленькой.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto descarta antes las dos hipótesis equivocadas del propio narrador."
+        },
+        "incorrect": {
+          "es": "El texto descarta expresamente lo del tamaño y lo del lenguaje infantil. Busca las dos frases seguidas."
+        },
+        "strategy": {
+          "es": "Cuando el narrador cuenta dos hipótesis erróneas suyas, la tercera es la buena."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué dijo la cajera?",
+      "options": [
+        {
+          "id": "secundochku",
+          "text": "«Espere un segundito, se me ha atascado el tique»"
+        },
+        {
+          "id": "minutu",
+          "text": "«Espere un minuto»"
+        },
+        {
+          "id": "dengi",
+          "text": "«Deme el dinero justo»"
+        }
+      ],
+      "answer": "secundochku",
+      "evidence": "Она сказала женщине впереди меня: «Подождите секундочку, у меня чек застрял».",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y la mujer que estaba enfadada se calmó al instante."
+        },
+        "incorrect": {
+          "es": "«Подождите минуту» es el ejemplo que el texto usa después para comparar. Busca la cita de la cajera."
+        },
+        "strategy": {
+          "es": "Distingue la cita real de los ejemplos que el texto construye para comparar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que la petición «сама себя объявила крошечной». ¿Qué significa «крошечный»?",
+      "options": [
+        {
+          "id": "diminuto",
+          "text": "Diminuto, minúsculo"
+        },
+        {
+          "id": "urgente",
+          "text": "Urgente"
+        },
+        {
+          "id": "educado",
+          "text": "Educado"
+        }
+      ],
+      "answer": "diminuto",
+      "evidence": "это просьба, которую легко выполнить, потому что она сама себя объявила крошечной",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: la petición se presenta a sí misma como mínima, y por eso es fácil aceptarla."
+        },
+        "incorrect": {
+          "es": "El texto habla del tamaño que la petición se atribuye, no de su urgencia ni de su tono."
+        },
+        "strategy": {
+          "es": "Si el adjetivo describe el efecto de un diminutivo, tendrá que ver con el tamaño."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice que «дай денежек» hay que usarlo con cuidado?",
+      "options": [
+        {
+          "id": "falso",
+          "text": "Porque suavizar una petición de dinero puede sonar falso"
+        },
+        {
+          "id": "grosero",
+          "text": "Porque es una forma grosera"
+        },
+        {
+          "id": "antiguo",
+          "text": "Porque ya nadie lo dice"
+        }
+      ],
+      "answer": "falso",
+      "evidence": "«Дай денежек» звучит легко, и поэтому этой формой пользуются осторожно: она может звучать фальшиво.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el propio texto lo explica tras los dos puntos."
+        },
+        "incorrect": {
+          "es": "No dice que sea grosero ni que esté en desuso. Lee lo que viene después de los dos puntos."
+        },
+        "strategy": {
+          "es": "Después de dos puntos suele venir la razón de la advertencia anterior."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el narrador entendió el uso de los diminutivos en su primer año en Rusia.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Я живу в России девять лет и первые три года не понимал, зачем всё уменьшают.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: tardó al menos tres años, y la respuesta le llegó por casualidad."
+        },
+        "incorrect": {
+          "es": "Busca la segunda frase del texto: da los años que tardó."
+        },
+        "strategy": {
+          "es": "Cuando el texto da un plazo de aprendizaje, compáralo con el de la pregunta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el razonamiento.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Primera hipótesis: es cuestión de tamaño"
+        },
+        {
+          "id": "p2",
+          "text": "Segunda hipótesis: es lenguaje infantil"
+        },
+        {
+          "id": "p3",
+          "text": "La escena de la cajera y la conclusión"
+        },
+        {
+          "id": "p4",
+          "text": "Los límites: «документики» hace reír"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Сначала я думал, что это про размер … Потом я думал, что это детский язык … Правильный ответ мне дала кассирша … Один раз я сказал коллеге «принеси документики».",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: dos errores, la respuesta y el límite."
+        },
+        "incorrect": {
+          "es": "Guíate por «Сначала», «Потом», «Правильный ответ» y «Один раз»."
+        },
+        "strategy": {
+          "es": "Los adverbios «сначала» y «потом» ordenan el razonamiento del narrador."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 12–15 frases en ruso sobre una forma de cortesía de tu idioma que a un extranjero le costaría entender. Usa cinco diminutivos rusos y cuatro adverbios circunstanciales."
+    },
+    "minWords": 65,
+    "maxWords": 120,
+    "hints": [
+      "«Минуточку» — так говорят, когда просят подождать.",
+      "Сначала я думал, что это про размер.",
+      "Оно делает просьбу маленькой.",
+      "Документы уменьшать нельзя."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de ruso —imprescindible por los participios y los gerundios— y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso B1: un minutito | WeLearn"
+    },
+    "description": {
+      "es": "Lee un cuaderno de estudiante en ruso B1 y practica los diminutivos y los adverbios circunstanciales. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/b1/lectura/minutochku",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-b1-ona-ne-doshla",
+      "ru-b1-chem-kholodnee-tem-luchshe"
+    ]
+  }
+}

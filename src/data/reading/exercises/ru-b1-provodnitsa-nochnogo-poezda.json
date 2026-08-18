@@ -1,0 +1,489 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-b1-provodnitsa-nochnogo-poezda",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Ruso B1"
+  },
+  "slug": "provodnitsa-nochnogo-poezda",
+  "series": {
+    "id": "ruso-b1-lectura-10",
+    "episode": 6,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-b1-chto-ya-sdelayu-v-subbotu",
+    "nextExerciseId": "ru-b1-net-kassy-net-problem"
+  },
+  "classification": {
+    "genre": "retrato de oficio",
+    "topic": "treinta y cinco horas de Moscú a Múrmansk",
+    "intent": "learning",
+    "tags": [
+      "ruso b1",
+      "lectura",
+      "caso instrumental",
+      "caso dativo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Auxiliar de un tren nocturno"
+    },
+    "intro": {
+      "es": "Treinta y seis personas en el vagón y tres que no duermen. Siempre tres. En nueve años esa regla no ha fallado. Lectura de ruso B1."
+    },
+    "mission": {
+      "es": "Averigua qué le preguntó la mujer que viajaba a un entierro."
+    },
+    "targetText": "Я работаю проводницей в поезде Москва — Мурманск. Тридцать пять часов в одну сторону.\n\nПассажирам я нужна не как проводница. Я нужна им как человек, который знает расписание, где кипяток и когда в вагоне будет тихо.\n\nМоя работа делится на три части. Первая — бельё, чай, билеты. Это два часа. Вторая — отвечать на вопросы. Это шесть часов. Третья — ночь.\n\nНочью в вагоне тридцать шесть человек, и трое из них не спят. Всегда трое, редко четверо. Я не знаю, почему всегда трое, но за девять лет это правило не нарушалось ни разу.\n\nОдин из них выходит в тамбур курить, хотя курить нельзя. Второй сидит в коридоре с телефоном. Третий приходит ко мне.\n\nТому, кто приходит ко мне, я даю чай. Мужчинам обычно чай, женщинам чаще воду. Детям — печенье, если оно есть.\n\nЛюди в поезде рассказывают вещи, которые не рассказывают дома. Я думаю, это из-за двух причин. Первая: меня они больше никогда не увидят. Вторая: за окном темно и ничего не происходит.\n\nМне рассказывали о разводах, о долгах, о болезнях, об одном убийстве в 1996 году. Я не рассказываю никому. Я не рассказываю даже мужу, и он этим недоволен.\n\nЛетом работать легче. Летом на севере светло всю ночь, и людям не так страшно. Зимой, когда за окном темно с трёх часов дня, разговоров больше. Я считала: зимой ко мне приходят почти в два раза чаще, чем летом. Это не моё впечатление, это записано у меня в тетради за девять лет. Тетрадь я никому не показываю. В ней нет имён — только даты и одно слово: «приходил» или «приходила».\n\nОдин раз женщина лет шестидесяти ехала в Мурманск на похороны брата, с которым не разговаривала одиннадцать лет. Она спросила меня, что ей сказать на похоронах. Я ответила, что не знаю. Она сказала: «Я тоже не знаю. Но я хотела спросить у кого-нибудь, кто не знал его».\n\nМы молчали двадцать минут, глядя в окно. Потом она пошла спать.\n\nЯ работаю проводницей девять лет. Мне сорок один год. Я не буду делать это до пенсии, но пока я не нашла ничего, что делало бы меня настолько нужной кому-то в четыре часа ночи.",
+    "wordCount": 343,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Usar el instrumental del oficio y del medio: работаю проводницей, ехать поездом."
+      },
+      {
+        "es": "Usar el dativo del beneficiario: пассажирам, мужчинам, детям, кому-то."
+      },
+      {
+        "es": "Distinguir la función oficial de un puesto de la función real."
+      }
+    ],
+    "grammarFocus": [
+      "instrumental-b1",
+      "dativo-b1",
+      "instrumental-uso"
+    ],
+    "vocabulary": [
+      {
+        "surface": "проводницей",
+        "lemma": "проводница",
+        "glosses": {
+          "es": "auxiliar de coche en un tren ruso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "расписание",
+        "lemma": "расписание",
+        "glosses": {
+          "es": "horario de trenes"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "бельё",
+        "lemma": "бельё",
+        "glosses": {
+          "es": "ropa de cama"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "вагоне",
+        "lemma": "вагон",
+        "glosses": {
+          "es": "vagón"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "тамбур",
+        "lemma": "тамбур",
+        "glosses": {
+          "es": "plataforma entre vagones"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "нарушалось",
+        "lemma": "нарушаться",
+        "glosses": {
+          "es": "se incumplía"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "разводах",
+        "lemma": "развод",
+        "glosses": {
+          "es": "divorcios"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "похороны",
+        "lemma": "похороны",
+        "glosses": {
+          "es": "entierro, funeral"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La проводница es la responsable de un vagón entero en los trenes de largo recorrido rusos: reparte la ropa de cama, sirve el té y no se baja del vagón durante todo el trayecto."
+    },
+    "spanishSpeakerNote": {
+      "es": "El dativo marca a quién le hace falta algo o para quién es: «пассажирам я нужна» es literalmente «a los pasajeros yo (les) soy necesaria». El español lo dice al revés: «los pasajeros me necesitan»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto ruso largo con participios y gerundios, distinguir lo que alguien afirma de lo que solo dice que intentará, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento",
+      "acusativo-movimiento",
+      "adverbios-tiempo",
+      "aspecto-verbal",
+      "comparativos",
+      "condicional",
+      "dativo-uso",
+      "futuro-imperfectivo",
+      "futuro-perfectivo",
+      "genitivo-cantidad",
+      "instrumental-uso",
+      "oraciones-subordinadas",
+      "pasado-verbos",
+      "plurales-irregulares",
+      "prepositivo-avanzado",
+      "pronombres-reflexivos",
+      "pronombres-relativos",
+      "superlativos",
+      "verbos-prefijados",
+      "adverbios-circunstanciales-b1",
+      "aspecto-perfectivo-imperfectivo-b1",
+      "comparativos-superlativos-b1",
+      "condicional-subjuntivo-b1",
+      "dativo-b1",
+      "deeprichastiya-b1",
+      "diminutivos-aumentativos-b1",
+      "discurso-indirecto-b1",
+      "futuro-perfectivo-b1",
+      "genitivo-negacion-b1",
+      "impersonales-modales-b1",
+      "instrumental-b1",
+      "oraciones-subordinadas-b1",
+      "participios-activos-b1",
+      "participios-adjetivales-b1",
+      "participios-pasivos-b1",
+      "prefijos-verbos-b1",
+      "preposiciones-casos-b1",
+      "verbos-movimiento-prefijados-b1",
+      "verbos-reflexivos-b1"
+    ],
+    "disallowedGrammar": [
+      "participios de registro literario raro",
+      "sintaxis nominal administrativa",
+      "arcaísmos",
+      "jerga profesional cerrada"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 8,
+      "maxSentenceWords": 24,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Participios activos, pasivos y adjetivales; деепричастия de los dos aspectos; condicional con бы; impersonales modales. Acento sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué explica el retrato?",
+      "options": [
+        {
+          "id": "necesaria",
+          "text": "Que su función real no es servir té: es estar disponible a las cuatro de la mañana"
+        },
+        {
+          "id": "sueldo",
+          "text": "Que el trabajo está mal pagado para las horas que son"
+        },
+        {
+          "id": "seguridad",
+          "text": "Que fumar en el tren es un problema de seguridad"
+        }
+      ],
+      "answer": "necesaria",
+      "evidence": "Пассажирам я нужна не как проводница … пока я не нашла ничего, что делало бы меня настолько нужной кому-то в четыре часа ночи.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto abre y cierra con la misma idea."
+        },
+        "incorrect": {
+          "es": "No se habla de sueldo, y el tabaco es un detalle. Compara la primera frase del segundo párrafo con la última del texto."
+        },
+        "strategy": {
+          "es": "Si la idea del principio reaparece al final, es la tesis del texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿En cuántas partes divide su trabajo?",
+      "options": [
+        {
+          "id": "tres",
+          "text": "Tres: ropa y té, preguntas, y la noche"
+        },
+        {
+          "id": "dos",
+          "text": "Dos: el día y la noche"
+        },
+        {
+          "id": "cuatro",
+          "text": "Cuatro turnos de nueve horas"
+        }
+      ],
+      "answer": "tres",
+      "evidence": "Моя работа делится на три части. Первая — бельё, чай, билеты … Вторая — отвечать на вопросы … Третья — ночь.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y da la duración de las dos primeras."
+        },
+        "incorrect": {
+          "es": "El texto dice expresamente «на три части». Busca esa frase."
+        },
+        "strategy": {
+          "es": "Si el texto anuncia cuántas partes hay, cuéntalas en las frases siguientes."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Uno de los pasajeros sale al «тамбур» a fumar. ¿Qué es?",
+      "options": [
+        {
+          "id": "plataforma",
+          "text": "La plataforma entre dos vagones"
+        },
+        {
+          "id": "anden",
+          "text": "El andén de la estación"
+        },
+        {
+          "id": "baño",
+          "text": "El aseo del vagón"
+        }
+      ],
+      "answer": "plataforma",
+      "evidence": "Один из них выходит в тамбур курить, хотя курить нельзя.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: es el sitio donde se sale a fumar sin bajarse del tren."
+        },
+        "incorrect": {
+          "es": "El tren está en marcha por la noche: no puede ser el andén. Y no es el aseo."
+        },
+        "strategy": {
+          "es": "Si la acción ocurre con el tren en marcha, descarta cualquier lugar fuera del tren."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué la mujer quería preguntar a alguien que no conocía a su hermano?",
+      "options": [
+        {
+          "id": "neutral",
+          "text": "Porque necesitaba una respuesta sin historia familiar detrás"
+        },
+        {
+          "id": "experta",
+          "text": "Porque creía que la auxiliar sabría qué decir en un funeral"
+        },
+        {
+          "id": "idioma",
+          "text": "Porque no sabía cómo decirlo en ruso"
+        }
+      ],
+      "answer": "neutral",
+      "evidence": "Она спросила меня, что ей сказать на похоронах. Я ответила, что не знаю. Она сказала: «Я тоже не знаю. Но я хотела спросить у кого-нибудь, кто не знал его».",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y ella misma lo dice: buscaba a alguien ajeno, no a una experta."
+        },
+        "incorrect": {
+          "es": "La auxiliar contesta que no sabe, y la mujer acepta eso. No buscaba una experta."
+        },
+        "strategy": {
+          "es": "Si un personaje explica su propia pregunta, esa explicación es la respuesta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: no le cuenta a su marido lo que oye en el tren, y a él le molesta.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Я не рассказываю никому. Я не рассказываю даже мужу, и он этим недоволен.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y el texto añade el detalle del malestar de él."
+        },
+        "incorrect": {
+          "es": "Busca el párrafo donde enumera lo que le cuentan los pasajeros."
+        },
+        "strategy": {
+          "es": "La palabra «даже» (incluso) amplía una negación al caso más difícil."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el retrato.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "El trayecto y para qué la necesitan los pasajeros"
+        },
+        {
+          "id": "p2",
+          "text": "Las tres partes del trabajo"
+        },
+        {
+          "id": "p3",
+          "text": "Los tres que no duermen cada noche"
+        },
+        {
+          "id": "p4",
+          "text": "La mujer que iba a un entierro"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Я работаю проводницей в поезде Москва — Мурманск … Моя работа делится на три части … Ночью в вагоне тридцать шесть человек … Один раз женщина лет шестидесяти…",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: contexto, estructura, patrón y caso."
+        },
+        "incorrect": {
+          "es": "Fíjate en dónde entra la división en tres partes y dónde la mujer de sesenta años."
+        },
+        "strategy": {
+          "es": "Un retrato de oficio suele acabar con el caso que resume el trabajo."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 12–15 frases en ruso sobre un trabajo de atención a personas. Usa tres instrumentales de oficio y cinco dativos."
+    },
+    "minWords": 65,
+    "maxWords": 120,
+    "hints": [
+      "Я работаю проводницей.",
+      "Пассажирам я нужна как человек, который…",
+      "Мужчинам обычно чай, женщинам воду.",
+      "Детям — печенье, если оно есть."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de ruso —imprescindible por los participios y los gerundios— y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso B1: auxiliar de un tren nocturno | WeLearn"
+    },
+    "description": {
+      "es": "Lee un retrato de oficio en ruso B1 y practica el caso instrumental y el dativo. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/ruso/b1/lectura/provodnitsa-nochnogo-poezda",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-b1-chto-ya-sdelayu-v-subbotu",
+      "ru-b1-net-kassy-net-problem"
+    ]
+  }
+}

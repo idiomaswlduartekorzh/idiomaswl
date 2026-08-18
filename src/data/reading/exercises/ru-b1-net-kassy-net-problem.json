@@ -1,0 +1,489 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-b1-net-kassy-net-problem",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Ruso B1"
+  },
+  "slug": "net-kassy-net-problem",
+  "series": {
+    "id": "ruso-b1-lectura-10",
+    "episode": 7,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-b1-provodnitsa-nochnogo-poezda",
+    "nextExerciseId": "ru-b1-ona-ne-doshla"
+  },
+  "classification": {
+    "genre": "reportaje",
+    "topic": "un taller de bicicletas que no cobra dinero",
+    "intent": "learning",
+    "tags": [
+      "ruso b1",
+      "lectura",
+      "genitivo de negación",
+      "preposiciones y casos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "No hay caja, no hay problemas"
+    },
+    "intro": {
+      "es": "Sin rótulo, sin caja, sin precios. Se paga con mermelada, con clavos o con una hora de trabajo. Lectura de ruso B1."
+    },
+    "mission": {
+      "es": "Averigua por qué no trabaja así los doce meses del año."
+    },
+    "targetText": "В городе Кимры есть мастерская, у которой нет вывески.\n\nВнутри чинят велосипеды. Мастера зовут Артём, ему пятьдесят два года, и у него нет кассы, нет терминала и нет цен.\n\nДенег он не берёт. Это не благотворительность и не идея. Это система, которую он придумал в 2016 году, когда у него не было денег на аренду.\n\nРаботает это так. Ты приносишь велосипед. Артём его чинит. Ты приносишь ему что-нибудь: банку варенья, старый ключ на семнадцать, пакет гвоздей, час работы у него в мастерской, помощь с переездом.\n\nУ него нет прайса, но есть представление о справедливости, и это представление знает весь город.\n\nЯ спросил, не обманывают ли его. Он сказал, что обманывают, но редко — примерно один человек из тридцати. И добавил: «У меня нет бухгалтера, поэтому у меня нет и проблем с бухгалтером».\n\nВ мастерской нет отопления, поэтому в декабре и январе он не работает. В эти два месяца он ездит к брату в Тверь и работает там на стройке, за деньги, потому что за квартиру платить всё равно надо.\n\nЯ спросил, почему он не делает так круглый год: на стройке платят больше. Он ответил, что на стройке никто не приносит ему варенье.\n\nЗа девять лет у него не было ни одного конфликта, ни одной жалобы и ни одной проверки. Проверять нечего: нет кассы, нет чеков, нет оборота.\n\nОдин раз в мастерскую пришёл человек из налоговой. Не по работе — с велосипедом дочери. Артём починил колесо. Человек принёс ему на следующий день коробку конфет и больше не приходил.\n\nЯ спросил, что он будет делать, когда не сможет работать руками. Он сказал, что не думал об этом. Потом подумал и добавил, что в городе живёт около сорока человек, которым он чинил велосипеды больше пяти раз, и что кто-нибудь из них, наверное, придёт. Он сказал это не как надежду, а как расчёт.\n\nУ Артёма нет ни машины, ни сбережений, ни отпуска. Он говорит, что у него нет и долгов, и что для него это важнее.",
+    "wordCount": 320,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Formar el genitivo de negación: нет кассы, нет цен, не было денег."
+      },
+      {
+        "es": "Elegir el caso que pide cada preposición: у него, на стройке, за квартиру, с велосипедом."
+      },
+      {
+        "es": "Distinguir una postura ideológica de una solución práctica."
+      }
+    ],
+    "grammarFocus": [
+      "genitivo-negacion-b1",
+      "preposiciones-casos-b1",
+      "genitivo-cantidad"
+    ],
+    "vocabulary": [
+      {
+        "surface": "вывески",
+        "lemma": "вывеска",
+        "glosses": {
+          "es": "rótulo de un local"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "кассы",
+        "lemma": "касса",
+        "glosses": {
+          "es": "caja registradora"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "варенья",
+        "lemma": "варенье",
+        "glosses": {
+          "es": "mermelada casera"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "гвоздей",
+        "lemma": "гвоздь",
+        "glosses": {
+          "es": "clavos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "справедливости",
+        "lemma": "справедливость",
+        "glosses": {
+          "es": "justicia, equidad"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "отопления",
+        "lemma": "отопление",
+        "glosses": {
+          "es": "calefacción"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "стройке",
+        "lemma": "стройка",
+        "glosses": {
+          "es": "obra de construcción"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "сбережений",
+        "lemma": "сбережения",
+        "glosses": {
+          "es": "ahorros"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El trueque de servicios sigue vivo en las ciudades pequeñas rusas, sobre todo desde los años noventa. No es una moda alternativa: nació de la falta de dinero en circulación."
+    },
+    "spanishSpeakerNote": {
+      "es": "La negación de existencia pide genitivo: «нет кассы», «нет цен», «не было денег». Y con «ни… ни…» se refuerza: «нет ни машины, ни сбережений». El español dice «no hay caja» sin cambiar la palabra."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto ruso largo con participios y gerundios, distinguir lo que alguien afirma de lo que solo dice que intentará, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento",
+      "acusativo-movimiento",
+      "adverbios-tiempo",
+      "aspecto-verbal",
+      "comparativos",
+      "condicional",
+      "dativo-uso",
+      "futuro-imperfectivo",
+      "futuro-perfectivo",
+      "genitivo-cantidad",
+      "instrumental-uso",
+      "oraciones-subordinadas",
+      "pasado-verbos",
+      "plurales-irregulares",
+      "prepositivo-avanzado",
+      "pronombres-reflexivos",
+      "pronombres-relativos",
+      "superlativos",
+      "verbos-prefijados",
+      "adverbios-circunstanciales-b1",
+      "aspecto-perfectivo-imperfectivo-b1",
+      "comparativos-superlativos-b1",
+      "condicional-subjuntivo-b1",
+      "dativo-b1",
+      "deeprichastiya-b1",
+      "diminutivos-aumentativos-b1",
+      "discurso-indirecto-b1",
+      "futuro-perfectivo-b1",
+      "genitivo-negacion-b1",
+      "impersonales-modales-b1",
+      "instrumental-b1",
+      "oraciones-subordinadas-b1",
+      "participios-activos-b1",
+      "participios-adjetivales-b1",
+      "participios-pasivos-b1",
+      "prefijos-verbos-b1",
+      "preposiciones-casos-b1",
+      "verbos-movimiento-prefijados-b1",
+      "verbos-reflexivos-b1"
+    ],
+    "disallowedGrammar": [
+      "participios de registro literario raro",
+      "sintaxis nominal administrativa",
+      "arcaísmos",
+      "jerga profesional cerrada"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 10.7,
+      "maxSentenceWords": 25,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Participios activos, pasivos y adjetivales; деепричастия de los dos aspectos; condicional con бы; impersonales modales. Acento sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cómo presenta el texto el sistema de Artiom?",
+      "options": [
+        {
+          "id": "practico",
+          "text": "Como una solución práctica que nació de no tener dinero, no como una idea alternativa"
+        },
+        {
+          "id": "ideologia",
+          "text": "Como una crítica ideológica al dinero"
+        },
+        {
+          "id": "caridad",
+          "text": "Como una obra de caridad para gente sin recursos"
+        }
+      ],
+      "answer": "practico",
+      "evidence": "Это не благотворительность и не идея. Это система, которую он придумал в 2016 году, когда у него не было денег на аренду.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto descarta las dos lecturas fáciles en una sola frase."
+        },
+        "incorrect": {
+          "es": "El texto niega expresamente que sea caridad o una idea. Busca esa frase."
+        },
+        "strategy": {
+          "es": "Cuando un texto descarta dos interpretaciones seguidas, la buena viene después."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Con qué frecuencia calcula Artiom que le engañan?",
+      "options": [
+        {
+          "id": "treinta",
+          "text": "Una persona de cada treinta"
+        },
+        {
+          "id": "nunca",
+          "text": "Nunca"
+        },
+        {
+          "id": "mitad",
+          "text": "Aproximadamente la mitad"
+        }
+      ],
+      "answer": "treinta",
+      "evidence": "Он сказал, что обманывают, но редко — примерно один человек из тридцати.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y lo dice sin dramatizarlo."
+        },
+        "incorrect": {
+          "es": "Dice expresamente que sí le engañan, aunque poco. Busca la cifra que sigue a «редко»."
+        },
+        "strategy": {
+          "es": "Cuando el narrador pregunta algo, la cifra suele venir en la respuesta inmediata."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El taller no tiene «вывеска». ¿Qué es?",
+      "options": [
+        {
+          "id": "rotulo",
+          "text": "El rótulo con el nombre del local"
+        },
+        {
+          "id": "licencia",
+          "text": "La licencia de actividad"
+        },
+        {
+          "id": "escaparate",
+          "text": "El escaparate"
+        }
+      ],
+      "answer": "rotulo",
+      "evidence": "В городе Кимры есть мастерская, у которой нет вывески. Внутри чинят велосипеды.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: desde fuera no se sabe qué hay, aunque dentro se arreglan bicicletas."
+        },
+        "incorrect": {
+          "es": "La palabra va en la frase que describe el local por fuera, no sus papeles."
+        },
+        "strategy": {
+          "es": "Si la palabra aparece antes de decir qué hay dentro, describe el exterior."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué no trabaja en la obra todo el año, si pagan más?",
+      "options": [
+        {
+          "id": "mermelada",
+          "text": "Porque en la obra nadie le lleva mermelada: lo que recibe en el taller no es solo pago"
+        },
+        {
+          "id": "salud",
+          "text": "Porque el trabajo de obra es demasiado duro para su edad"
+        },
+        {
+          "id": "ciudad",
+          "text": "Porque su hermano vive en otra ciudad y no quiere mudarse"
+        }
+      ],
+      "answer": "mermelada",
+      "evidence": "Я спросил, почему он не делает так круглый год: на стройке платят больше. Он ответил, что на стройке никто не приносит ему варенье.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y su respuesta es literal: la mermelada es lo que la obra no paga."
+        },
+        "incorrect": {
+          "es": "Sí trabaja en la obra dos meses al año, así que ni la edad ni la ciudad lo impiden."
+        },
+        "strategy": {
+          "es": "Si la respuesta a un «por qué» parece una anécdota, es una metáfora concreta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el hombre de Hacienda fue al taller a hacer una inspección.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Один раз в мастерскую пришёл человек из налоговой. Не по работе — с велосипедом дочери.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: fue con la bicicleta de su hija, no por trabajo."
+        },
+        "incorrect": {
+          "es": "Busca la frase con «не по работе». Aclara a qué fue."
+        },
+        "strategy": {
+          "es": "La fórmula «не по работе» descarta expresamente el motivo profesional."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el reportaje.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "El taller sin rótulo, sin caja y sin precios"
+        },
+        {
+          "id": "p2",
+          "text": "Cómo funciona el pago en especie"
+        },
+        {
+          "id": "p3",
+          "text": "Los dos meses de invierno en la obra"
+        },
+        {
+          "id": "p4",
+          "text": "El hombre de Hacienda y la caja de bombones"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "есть мастерская, у которой нет вывески … Работает это так. Ты приносишь велосипед … В мастерской нет отопления … Один раз в мастерскую пришёл человек из налоговой.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: el local, el sistema, la excepción del invierno y la anécdota."
+        },
+        "incorrect": {
+          "es": "Fíjate en dónde se explica el sistema y dónde aparecen diciembre y enero."
+        },
+        "strategy": {
+          "es": "Un reportaje suele dejar la anécdota más redonda para el final."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 12–15 frases en ruso sobre alguien que hace las cosas fuera del sistema habitual. Usa seis genitivos de negación con нет."
+    },
+    "minWords": 65,
+    "maxWords": 120,
+    "hints": [
+      "У него нет вывески.",
+      "У меня нет кассы, нет цен.",
+      "Денег он не берёт.",
+      "У него нет ни машины, ни сбережений."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de ruso —imprescindible por los participios y los gerundios— y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso B1: no hay caja, no hay problemas | WeLearn"
+    },
+    "description": {
+      "es": "Lee un reportaje en ruso B1 y practica el genitivo de negación y el uso de preposiciones con caso. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/b1/lectura/net-kassy-net-problem",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-b1-provodnitsa-nochnogo-poezda",
+      "ru-b1-ona-ne-doshla"
+    ]
+  }
+}

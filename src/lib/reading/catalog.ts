@@ -225,6 +225,18 @@ import ruA2EsliByYaNachalaRanshe from '@/data/reading/exercises/ru-a2-esli-by-ya
 import ruA2SkolkoLyudeyPrikhodit from '@/data/reading/exercises/ru-a2-skolko-lyudey-prikhodit.json'
 import ruA2VDerevnyuIVDerevne from '@/data/reading/exercises/ru-a2-v-derevnyu-i-v-derevne.json'
 import ruA2NikogdaNeVykhodiSMokrymiVolosami from '@/data/reading/exercises/ru-a2-nikogda-ne-vykhodi-s-mokrymi-volosami.json'
+
+// Ruso B1 — generadas desde `src/data/reading/source/ru-b1.mjs`. Nivel completo.
+import ruB1VsyoChtoZdesSdelano from '@/data/reading/exercises/ru-b1-vsyo-chto-zdes-sdelano.json'
+import ruB1GovoryaVMikrofonVTriNochi from '@/data/reading/exercises/ru-b1-govorya-v-mikrofon-v-tri-nochi.json'
+import ruB1OnGovorilChtoPriedet from '@/data/reading/exercises/ru-b1-on-govoril-chto-priedet.json'
+import ruB1ChitalnyyZalKotoryyNeZakryvaetsya from '@/data/reading/exercises/ru-b1-chitalnyy-zal-kotoryy-ne-zakryvaetsya.json'
+import ruB1ChtoYaSdelayuVSubbotu from '@/data/reading/exercises/ru-b1-chto-ya-sdelayu-v-subbotu.json'
+import ruB1ProvodnitsaNochnogoPoezda from '@/data/reading/exercises/ru-b1-provodnitsa-nochnogo-poezda.json'
+import ruB1NetKassyNetProblem from '@/data/reading/exercises/ru-b1-net-kassy-net-problem.json'
+import ruB1OnaNeDoshla from '@/data/reading/exercises/ru-b1-ona-ne-doshla.json'
+import ruB1Minutochku from '@/data/reading/exercises/ru-b1-minutochku.json'
+import ruB1ChemKholodneeTemLuchshe from '@/data/reading/exercises/ru-b1-chem-kholodnee-tem-luchshe.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -430,6 +442,16 @@ const RAW_EXERCISES: unknown[] = [
   ruA2SkolkoLyudeyPrikhodit,
   ruA2VDerevnyuIVDerevne,
   ruA2NikogdaNeVykhodiSMokrymiVolosami,
+  ruB1VsyoChtoZdesSdelano,
+  ruB1GovoryaVMikrofonVTriNochi,
+  ruB1OnGovorilChtoPriedet,
+  ruB1ChitalnyyZalKotoryyNeZakryvaetsya,
+  ruB1ChtoYaSdelayuVSubbotu,
+  ruB1ProvodnitsaNochnogoPoezda,
+  ruB1NetKassyNetProblem,
+  ruB1OnaNeDoshla,
+  ruB1Minutochku,
+  ruB1ChemKholodneeTemLuchshe,
 ]
 
 export const READING_EXERCISES: ReadingExercise[] = RAW_EXERCISES.map((candidate) => {

@@ -1,0 +1,489 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-b1-govorya-v-mikrofon-v-tri-nochi",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Ruso B1"
+  },
+  "slug": "govorya-v-mikrofon-v-tri-nochi",
+  "series": {
+    "id": "ruso-b1-lectura-10",
+    "episode": 2,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-b1-vsyo-chto-zdes-sdelano",
+    "nextExerciseId": "ru-b1-on-govoril-chto-priedet"
+  },
+  "classification": {
+    "genre": "diario de oficio",
+    "topic": "un programa de radio de dos a seis de la mañana",
+    "intent": "learning",
+    "tags": [
+      "ruso b1",
+      "lectura",
+      "gerundios (деепричастия)",
+      "participios activos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Hablando al micrófono a las tres"
+    },
+    "intro": {
+      "es": "Creía que de noche llamaban los solitarios. Después de cuatro años sabe que no es así. Lectura de ruso B1."
+    },
+    "mission": {
+      "es": "Averigua qué le agradeció la madre del chico en su carta."
+    },
+    "targetText": "Я работаю на радио в Челябинске. Ночной эфир: с двух до шести утра. Программа называется «Не спится».\n\nГоворя в микрофон в три часа ночи, ты не знаешь, кто тебя слушает. Это главное отличие от дневного радио. Днём слушают люди, едущие на работу. Ночью слушают люди, которые не спят, и это совсем другие люди.\n\nНачав работать здесь, я думал, что ночью звонят одинокие. Проработав четыре года, я знаю, что это не так.\n\nНочью звонят работающие: охранники, водители дальних рейсов, медсёстры, пекари. Люди, делающие ночью то, что днём делают другие. Они не одинокие. Они просто не спят, потому что им нельзя.\n\nЕсть постоянные. Женщина по имени Люба звонит каждую пятницу, слушая программу из машины: она развозит хлеб. Мужчина, работающий на насосной станции, звонит два раза в месяц и всегда говорит про футбол.\n\nОдин раз, в феврале, позвонил мальчик. Голос лет тринадцати. Он сказал, что не может спать, потому что утром экзамен. Я спросил, знают ли родители, что он звонит на радио в четыре утра. Он ответил: «Мама спит. Она встаёт в пять».\n\nЯ говорил с ним восемь минут в прямом эфире. Не про экзамен. Про то, что в четыре утра всё кажется хуже, чем оно есть, и что это свойство четырёх утра, а не свойство экзамена.\n\nЧерез неделю пришло письмо от его матери. Она написала, что услышала передачу, выйдя на кухню за водой, и что узнала голос сына.\n\nОна не была злой. Она написала так: «Спасибо, что не сказали ему, что всё будет хорошо. Он бы не поверил, и он бы больше вам не позвонил».\n\nСамое трудное в ночном эфире — не темы, а тишина. Днём, если ведущий молчит три секунды, это ошибка. Ночью три секунды тишины — это нормально, и иногда это лучше, чем слова. Я научился этому не сразу, слушая записи своих первых передач и слыша, как я говорю слишком много. Мой редактор считал это ленью. Потом он послушал цифры звонков и перестал считать.\n\nЗаканчивая смену в шесть, я выхожу на улицу. Зимой в шесть ещё темно. Мне это нравится: город, ещё не начавший день.",
+    "wordCount": 333,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Formar el gerundio imperfectivo (говоря, слушая) y el perfectivo (начав, выйдя)."
+      },
+      {
+        "es": "Reconocer el participio activo: едущие, работающие, делающие, начавший."
+      },
+      {
+        "es": "Distinguir la suposición de partida de lo comprobado con los años."
+      }
+    ],
+    "grammarFocus": [
+      "deeprichastiya-b1",
+      "participios-activos-b1",
+      "aspecto-verbal"
+    ],
+    "vocabulary": [
+      {
+        "surface": "эфир",
+        "lemma": "эфир",
+        "glosses": {
+          "es": "emisión; «в прямом эфире» es en directo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "отличие",
+        "lemma": "отличие",
+        "glosses": {
+          "es": "diferencia"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "охранники",
+        "lemma": "охранник",
+        "glosses": {
+          "es": "vigilantes de seguridad"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "рейсов",
+        "lemma": "рейс",
+        "glosses": {
+          "es": "trayectos; «дальние рейсы» son las rutas largas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "пекари",
+        "lemma": "пекарь",
+        "glosses": {
+          "es": "panaderos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "развозит",
+        "lemma": "развозить",
+        "glosses": {
+          "es": "reparte, lleva a varios sitios"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "передачу",
+        "lemma": "передача",
+        "glosses": {
+          "es": "programa de radio o televisión"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "свойство",
+        "lemma": "свойство",
+        "glosses": {
+          "es": "propiedad, característica de algo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La radio nocturna con llamadas en directo sigue siendo popular en las ciudades rusas industriales, donde muchísima gente trabaja en turnos de noche: no es un formato para insomnes, es para trabajadores."
+    },
+    "spanishSpeakerNote": {
+      "es": "El деепричастие condensa una oración entera: «выйдя на кухню» es «al salir a la cocina», y «проработав четыре года» es «después de trabajar cuatro años». El imperfectivo (говоря) es acción simultánea; el perfectivo (начав, выйдя) es acción previa."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto ruso largo con participios y gerundios, distinguir lo que alguien afirma de lo que solo dice que intentará, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento",
+      "acusativo-movimiento",
+      "adverbios-tiempo",
+      "aspecto-verbal",
+      "comparativos",
+      "condicional",
+      "dativo-uso",
+      "futuro-imperfectivo",
+      "futuro-perfectivo",
+      "genitivo-cantidad",
+      "instrumental-uso",
+      "oraciones-subordinadas",
+      "pasado-verbos",
+      "plurales-irregulares",
+      "prepositivo-avanzado",
+      "pronombres-reflexivos",
+      "pronombres-relativos",
+      "superlativos",
+      "verbos-prefijados",
+      "adverbios-circunstanciales-b1",
+      "aspecto-perfectivo-imperfectivo-b1",
+      "comparativos-superlativos-b1",
+      "condicional-subjuntivo-b1",
+      "dativo-b1",
+      "deeprichastiya-b1",
+      "diminutivos-aumentativos-b1",
+      "discurso-indirecto-b1",
+      "futuro-perfectivo-b1",
+      "genitivo-negacion-b1",
+      "impersonales-modales-b1",
+      "instrumental-b1",
+      "oraciones-subordinadas-b1",
+      "participios-activos-b1",
+      "participios-adjetivales-b1",
+      "participios-pasivos-b1",
+      "prefijos-verbos-b1",
+      "preposiciones-casos-b1",
+      "verbos-movimiento-prefijados-b1",
+      "verbos-reflexivos-b1"
+    ],
+    "disallowedGrammar": [
+      "participios de registro literario raro",
+      "sintaxis nominal administrativa",
+      "arcaísmos",
+      "jerga profesional cerrada"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 8.5,
+      "maxSentenceWords": 22,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Participios activos, pasivos y adjetivales; деепричастия de los dos aspectos; condicional con бы; impersonales modales. Acento sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué descubrió el locutor con los años?",
+      "options": [
+        {
+          "id": "trabajan",
+          "text": "Que de noche llaman personas que trabajan, no personas solas"
+        },
+        {
+          "id": "audiencia",
+          "text": "Que la audiencia nocturna es más pequeña de lo que creía"
+        },
+        {
+          "id": "insomnio",
+          "text": "Que el insomnio es un problema de salud extendido"
+        }
+      ],
+      "answer": "trabajan",
+      "evidence": "Начав работать здесь, я думал, что ночью звонят одинокие. Проработав четыре года, я знаю, что это не так … Они просто не спят, потому что им нельзя.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo construye con dos gerundios opuestos: al empezar y después de cuatro años."
+        },
+        "incorrect": {
+          "es": "No se habla del tamaño de la audiencia ni del insomnio como enfermedad. Compara los dos gerundios."
+        },
+        "strategy": {
+          "es": "Si dos gerundios contraponen el antes y el después del narrador, ahí está el hallazgo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto habló en directo con el chico?",
+      "options": [
+        {
+          "id": "ocho",
+          "text": "Ocho minutos"
+        },
+        {
+          "id": "cuatro",
+          "text": "Cuatro horas"
+        },
+        {
+          "id": "dos",
+          "text": "Dos minutos"
+        }
+      ],
+      "answer": "ocho",
+      "evidence": "Я говорил с ним восемь минут в прямом эфире. Не про экзамен.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y aclara de qué no hablaron: del examen."
+        },
+        "incorrect": {
+          "es": "Las cuatro son los años trabajados. Busca la frase con «в прямом эфире»."
+        },
+        "strategy": {
+          "es": "Empareja cada cifra con lo que mide: minutos de conversación, años de oficio, horas de turno."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que eso es un «свойство четырёх утра». ¿Qué significa?",
+      "options": [
+        {
+          "id": "propiedad",
+          "text": "Una propiedad, algo característico de esa hora"
+        },
+        {
+          "id": "problema",
+          "text": "Un problema de esa hora"
+        },
+        {
+          "id": "horario",
+          "text": "Un horario fijo"
+        }
+      ],
+      "answer": "propiedad",
+      "evidence": "в четыре утра всё кажется хуже, чем оно есть, и что это свойство четырёх утра, а не свойство экзамена",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. La frase la usa dos veces para contraponer la hora y el examen."
+        },
+        "incorrect": {
+          "es": "La palabra se repite en la misma frase aplicada a dos cosas: habla de a qué pertenece el efecto."
+        },
+        "strategy": {
+          "es": "Si una palabra se repite en la misma frase con dos complementos, está atribuyendo algo a uno y no al otro."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué la madre le da las gracias por lo que NO dijo?",
+      "options": [
+        {
+          "id": "creible",
+          "text": "Porque una promesa de que todo iría bien le habría parecido falsa y no habría vuelto a llamar"
+        },
+        {
+          "id": "examen",
+          "text": "Porque no quería que hablaran del examen"
+        },
+        {
+          "id": "nombre",
+          "text": "Porque no dijo el nombre de su hijo en directo"
+        }
+      ],
+      "answer": "creible",
+      "evidence": "«Спасибо, что не сказали ему, что всё будет хорошо. Он бы не поверил, и он бы больше вам не позвонил».",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y ella misma añade la consecuencia con un condicional."
+        },
+        "incorrect": {
+          "es": "No menciona el nombre ni pide evitar el tema. Lee su frase entera, incluida la segunda mitad."
+        },
+        "strategy": {
+          "es": "Cuando alguien da las gracias por una omisión, la razón viene en la misma frase."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: una de las oyentes habituales llama mientras reparte pan en coche.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Женщина по имени Люба звонит каждую пятницу, слушая программу из машины: она развозит хлеб.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y el gerundio «слушая» dice que lo hace a la vez."
+        },
+        "incorrect": {
+          "es": "Busca el párrafo de los oyentes habituales: hay dos, una mujer y un hombre."
+        },
+        "strategy": {
+          "es": "Un gerundio imperfectivo («слушая») indica que las dos acciones son simultáneas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el diario.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "El horario del programa y la diferencia con el día"
+        },
+        {
+          "id": "p2",
+          "text": "Quién llama de noche: gente que trabaja"
+        },
+        {
+          "id": "p3",
+          "text": "La llamada del chico de trece años"
+        },
+        {
+          "id": "p4",
+          "text": "La carta de su madre y la salida a las seis"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Ночной эфир: с двух до шести утра … Ночью звонят работающие … Один раз, в феврале, позвонил мальчик … Через неделю пришло письмо от его матери.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: contexto, hallazgo, caso y consecuencia."
+        },
+        "incorrect": {
+          "es": "Guíate por «Один раз, в феврале» y por «Через неделю»."
+        },
+        "strategy": {
+          "es": "Un diario de oficio suele pasar del patrón general a un caso concreto."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 12–15 frases en ruso sobre un trabajo de noche o de madrugada. Usa cuatro gerundios (dos imperfectivos y dos perfectivos) y tres participios activos."
+    },
+    "minWords": 65,
+    "maxWords": 120,
+    "hints": [
+      "Говоря в микрофон в три часа ночи…",
+      "Начав работать здесь, я думал…",
+      "Проработав четыре года, я знаю…",
+      "Заканчивая смену в шесть, я выхожу."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de ruso —imprescindible por los participios y los gerundios— y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso B1: hablando al micrófono a las tres | WeLearn"
+    },
+    "description": {
+      "es": "Lee un diario de oficio en ruso B1 y practica los деепричастия y los participios activos. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/b1/lectura/govorya-v-mikrofon-v-tri-nochi",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-b1-vsyo-chto-zdes-sdelano",
+      "ru-b1-on-govoril-chto-priedet"
+    ]
+  }
+}

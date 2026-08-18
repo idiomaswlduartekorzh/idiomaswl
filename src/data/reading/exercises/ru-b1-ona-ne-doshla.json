@@ -1,0 +1,489 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-b1-ona-ne-doshla",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Ruso B1"
+  },
+  "slug": "ona-ne-doshla",
+  "series": {
+    "id": "ruso-b1-lectura-10",
+    "episode": 8,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-b1-net-kassy-net-problem",
+    "nextExerciseId": "ru-b1-minutochku"
+  },
+  "classification": {
+    "genre": "reportaje rural",
+    "topic": "una cartera que recorre catorce kilómetros diarios",
+    "intent": "learning",
+    "tags": [
+      "ruso b1",
+      "lectura",
+      "verbos de movimiento con prefijo",
+      "prefijos verbales"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Aquel día no llegó"
+    },
+    "intro": {
+      "es": "Cuatro aldeas, catorce kilómetros al día y un río que en invierno hay que rodear. Un día de febrero no llegó. Lectura de ruso B1."
+    },
+    "mission": {
+      "es": "Averigua qué contestó cuando le preguntaron por qué volvió al día siguiente."
+    },
+    "targetText": "Валентина Сергеевна разносит почту в четырёх деревнях под Костромой. Ей пятьдесят девять лет. Зимой она проходит около четырнадцати километров в день.\n\nМаршрут выглядит так. Она выезжает из Судиславля на автобусе в семь двадцать, доезжает до поворота, сходит и дальше идёт пешком.\n\nСначала она обходит Гридино — двадцать два дома, из них жилых одиннадцать. Потом переходит поле и заходит в Малое Ивановское: девять домов, жилых четыре.\n\nПотом самое трудное. От Малого Ивановского до Заречья надо перейти реку. Летом есть мостик. Зимой мостик подо льдом, и она обходит по дороге — это лишних три километра.\n\nВ Заречье живут четыре человека. Все старше восьмидесяти.\n\nОна приносит им пенсию, газеты, лекарства из аптеки и хлеб, если попросят. Хлеб не входит в её обязанности. Она всё равно приносит.\n\nЯ спросил, что будет, когда она уйдёт на пенсию. Она сказала, что не знает. Молодые не идут: зарплата маленькая, а идти надо в любую погоду.\n\nОдин раз, в феврале 2021 года, она не дошла. Была метель, она заблудилась между Малым Ивановским и Заречьем и просидела в снегу четыре часа. Её нашли около восьми вечера. Она отошла от дороги всего на восемьсот метров.\n\nНа следующий день она вышла на маршрут.\n\nЯ спросил, зачем. Она посмотрела на меня как на человека, который задаёт глупые вопросы, и ответила: «Там четыре человека ждут пенсию».\n\nЯ прошёл с ней один день, в марте. Мы вышли из автобуса в семь сорок и вернулись в Судиславль в шестом часу вечера. За день она сказала мне, наверное, двадцать фраз, а с жителями деревень разговаривала у каждой двери по пять-десять минут.\n\nВ Заречье нас ждали. Не почту ждали — её. Чайник стоял уже горячий, и это было видно. Я насчитал за день девять чашек чая. Она выпила три и семь раз объяснила, что больше не может.\n\nТеперь у неё в кармане всегда свисток. Его купил ей почтальон из соседнего района. Она говорит, что свисток не нужен, и носит его каждый день.",
+    "wordCount": 312,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguir los prefijos de movimiento: вы-, до-, с-, об-, пере-, за-, от-, при-."
+      },
+      {
+        "es": "Reconstruir una ruta a partir de los verbos prefijados."
+      },
+      {
+        "es": "Separar lo que entra en un trabajo de lo que se hace igualmente."
+      }
+    ],
+    "grammarFocus": [
+      "verbos-movimiento-prefijados-b1",
+      "prefijos-verbos-b1",
+      "verbos-prefijados"
+    ],
+    "vocabulary": [
+      {
+        "surface": "разносит",
+        "lemma": "разносить",
+        "glosses": {
+          "es": "reparte a domicilio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "маршрут",
+        "lemma": "маршрут",
+        "glosses": {
+          "es": "ruta, recorrido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "жилых",
+        "lemma": "жилой",
+        "glosses": {
+          "es": "habitadas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "мостик",
+        "lemma": "мост",
+        "glosses": {
+          "es": "puentecillo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "метель",
+        "lemma": "метель",
+        "glosses": {
+          "es": "ventisca de nieve"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "заблудилась",
+        "lemma": "заблудиться",
+        "glosses": {
+          "es": "se perdió"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "свисток",
+        "lemma": "свисток",
+        "glosses": {
+          "es": "silbato"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "обязанности",
+        "lemma": "обязанность",
+        "glosses": {
+          "es": "obligaciones del puesto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En la Rusia rural el cartero entrega la pensión en mano: en aldeas sin banco ni cajero, la visita del cartero es el único acceso al dinero para la gente mayor."
+    },
+    "spanishSpeakerNote": {
+      "es": "Cada prefijo cambia el trayecto: выехать (salir de), доехать (llegar hasta), сойти (bajarse), обойти (rodear o recorrer), перейти (cruzar), зайти (entrar un momento), отойти (apartarse), дойти (llegar a pie). La raíz es siempre идти o ехать."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto ruso largo con participios y gerundios, distinguir lo que alguien afirma de lo que solo dice que intentará, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento",
+      "acusativo-movimiento",
+      "adverbios-tiempo",
+      "aspecto-verbal",
+      "comparativos",
+      "condicional",
+      "dativo-uso",
+      "futuro-imperfectivo",
+      "futuro-perfectivo",
+      "genitivo-cantidad",
+      "instrumental-uso",
+      "oraciones-subordinadas",
+      "pasado-verbos",
+      "plurales-irregulares",
+      "prepositivo-avanzado",
+      "pronombres-reflexivos",
+      "pronombres-relativos",
+      "superlativos",
+      "verbos-prefijados",
+      "adverbios-circunstanciales-b1",
+      "aspecto-perfectivo-imperfectivo-b1",
+      "comparativos-superlativos-b1",
+      "condicional-subjuntivo-b1",
+      "dativo-b1",
+      "deeprichastiya-b1",
+      "diminutivos-aumentativos-b1",
+      "discurso-indirecto-b1",
+      "futuro-perfectivo-b1",
+      "genitivo-negacion-b1",
+      "impersonales-modales-b1",
+      "instrumental-b1",
+      "oraciones-subordinadas-b1",
+      "participios-activos-b1",
+      "participios-adjetivales-b1",
+      "participios-pasivos-b1",
+      "prefijos-verbos-b1",
+      "preposiciones-casos-b1",
+      "verbos-movimiento-prefijados-b1",
+      "verbos-reflexivos-b1"
+    ],
+    "disallowedGrammar": [
+      "participios de registro literario raro",
+      "sintaxis nominal administrativa",
+      "arcaísmos",
+      "jerga profesional cerrada"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 8.4,
+      "maxSentenceWords": 19,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Participios activos, pasivos y adjetivales; деепричастия de los dos aspectos; condicional con бы; impersonales modales. Acento sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué retrata el reportaje?",
+      "options": [
+        {
+          "id": "pension",
+          "text": "Un trabajo que sostiene a cuatro personas mayores y que nadie quiere heredar"
+        },
+        {
+          "id": "nieve",
+          "text": "Los peligros de la nieve en la región de Kostromá"
+        },
+        {
+          "id": "correos",
+          "text": "La mala gestión del servicio de correos"
+        }
+      ],
+      "answer": "pension",
+      "evidence": "Молодые не идут: зарплата маленькая, а идти надо в любую погоду … «Там четыре человека ждут пенсию».",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y las dos frases juntas son el reportaje entero."
+        },
+        "incorrect": {
+          "es": "La ventisca es un episodio y no se critica la gestión. Cruza lo que dice de los jóvenes con su respuesta final."
+        },
+        "strategy": {
+          "es": "Si el texto plantea qué pasará cuando alguien falte, ahí está su preocupación."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántos kilómetros de más supone rodear el río en invierno?",
+      "options": [
+        {
+          "id": "tres",
+          "text": "Tres kilómetros"
+        },
+        {
+          "id": "catorce",
+          "text": "Catorce kilómetros"
+        },
+        {
+          "id": "ocho",
+          "text": "Ochocientos metros"
+        }
+      ],
+      "answer": "tres",
+      "evidence": "Зимой мостик подо льдом, и она обходит по дороге — это лишних три километра.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: los catorce son el total del día."
+        },
+        "incorrect": {
+          "es": "Los catorce son la jornada entera y los ochocientos metros, lo que se apartó al perderse."
+        },
+        "strategy": {
+          "es": "Empareja cada distancia con lo que mide: la jornada, el rodeo, el extravío."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que en febrero «она не дошла». ¿Qué significa?",
+      "options": [
+        {
+          "id": "llegar",
+          "text": "Que no llegó a su destino"
+        },
+        {
+          "id": "salir",
+          "text": "Que no salió de casa"
+        },
+        {
+          "id": "entregar",
+          "text": "Que no entregó la pensión a tiempo"
+        }
+      ],
+      "answer": "llegar",
+      "evidence": "Один раз, в феврале 2021 года, она не дошла. Была метель, она заблудилась.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: el prefijo до- marca llegar hasta el final del trayecto."
+        },
+        "incorrect": {
+          "es": "Sí salió, y el problema no fue el horario: se perdió en la ventisca. Fíjate en el prefijo до-."
+        },
+        "strategy": {
+          "es": "El prefijo до- añade siempre la idea de llegar hasta el final."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué lleva el silbato todos los días si dice que no hace falta?",
+      "options": [
+        {
+          "id": "regalo",
+          "text": "Porque se lo regaló un compañero y llevarlo es aceptar el gesto"
+        },
+        {
+          "id": "norma",
+          "text": "Porque la oficina se lo exige desde el accidente"
+        },
+        {
+          "id": "miedo",
+          "text": "Porque en el fondo tiene miedo de volver a perderse"
+        }
+      ],
+      "answer": "regalo",
+      "evidence": "Его купил ей почтальон из соседнего района. Она говорит, что свисток не нужен, и носит его каждый день.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo deja en esa contradicción sin explicarla."
+        },
+        "incorrect": {
+          "es": "No se menciona ninguna norma, y ella niega el miedo. Fíjate en quién se lo compró."
+        },
+        "strategy": {
+          "es": "Cuando alguien dice que algo no sirve y aun así lo usa a diario, mira de dónde vino."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: llevar el pan no entra en sus funciones y aun así lo lleva.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Хлеб не входит в её обязанности. Она всё равно приносит.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y el texto lo dice en dos frases muy cortas y seguidas."
+        },
+        "incorrect": {
+          "es": "Busca las dos frases sobre el pan: una dice la norma y la otra lo que hace."
+        },
+        "strategy": {
+          "es": "Dos frases cortas seguidas que se contradicen suelen ser un rasgo de carácter."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la ruta.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Sale en autobús y se baja en el cruce"
+        },
+        {
+          "id": "p2",
+          "text": "Recorre Gridino y cruza el campo hasta Máloye Ivánovskoye"
+        },
+        {
+          "id": "p3",
+          "text": "Rodea el río por la carretera hasta Zaréchie"
+        },
+        {
+          "id": "p4",
+          "text": "Entrega pensiones, periódicos, medicinas y pan"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Она выезжает из Судиславля на автобусе … Сначала она обходит Гридино … Зимой мостик подо льдом, и она обходит по дороге … Она приносит им пенсию, газеты, лекарства.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: los prefijos marcan cada tramo del recorrido."
+        },
+        "incorrect": {
+          "es": "Sigue los verbos: выезжает, доезжает, обходит, переходит, обходит по дороге."
+        },
+        "strategy": {
+          "es": "En un texto de ruta, los verbos de movimiento son el mapa."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 12–15 frases en ruso describiendo un recorrido que haces a menudo. Usa seis verbos de movimiento con prefijos distintos."
+    },
+    "minWords": 65,
+    "maxWords": 120,
+    "hints": [
+      "Я выезжаю из дома в семь двадцать.",
+      "Доезжаю до поворота и схожу.",
+      "Обхожу площадь и захожу в магазин.",
+      "Дохожу до работы за сорок минут."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de ruso —imprescindible por los participios y los gerundios— y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso B1: aquel día no llegó | WeLearn"
+    },
+    "description": {
+      "es": "Lee un reportaje rural en ruso B1 y practica los verbos de movimiento con prefijo. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/ruso/b1/lectura/ona-ne-doshla",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-b1-net-kassy-net-problem",
+      "ru-b1-minutochku"
+    ]
+  }
+}
