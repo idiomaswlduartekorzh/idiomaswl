@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Home.module.css';
 import { HOME_RESULT_FAMILIES, HOME_RESULTS, type HomeResultFamily } from './home-results';
+import { GOOGLE_REVIEWS_URL, HOME_VOICES } from './home-voices';
 
 type ResultFilter = HomeResultFamily | 'all';
 
@@ -51,6 +52,35 @@ export default function HomeResultsArchive() {
             <span>evidencias publicables en cuatro familias de certificación</span>
           </div>
         </div>
+      </div>
+
+      <div className={styles.resultsVoices}>
+        <p className={styles.resultsVoicesLead}>
+          Tres de estos resultados tienen nombre: los contaron ellos mismos, en público,
+          en las reseñas de Google del centro.
+        </p>
+
+        <ul className={styles.resultsVoicesList}>
+          {HOME_VOICES.map((voice) => (
+            <li className={styles.resultsVoice} key={voice.id}>
+              <p className={styles.resultsVoiceResult}>{voice.result}</p>
+              <blockquote>{voice.quote}</blockquote>
+              <footer>
+                <strong>{voice.name}</strong>
+                <span>{voice.context}</span>
+              </footer>
+            </li>
+          ))}
+        </ul>
+
+        <a
+          className={styles.resultsVoicesLink}
+          href={GOOGLE_REVIEWS_URL}
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
+          Leer las reseñas en Google <ArrowIcon />
+        </a>
       </div>
 
       <div className={styles.resultsFan} aria-label="Selección de resultados reales">
