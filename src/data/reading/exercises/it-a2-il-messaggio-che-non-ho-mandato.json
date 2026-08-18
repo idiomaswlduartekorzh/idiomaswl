@@ -1,0 +1,469 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-a2-il-messaggio-che-non-ho-mandato",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Italiano A2"
+  },
+  "slug": "il-messaggio-che-non-ho-mandato",
+  "series": {
+    "id": "italiano-a2-lectura-10",
+    "episode": 3,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-a2-mio-padre-non-parlava-al-telefono",
+    "nextExerciseId": "it-a2-mi-scusi-signora-nardi"
+  },
+  "classification": {
+    "genre": "confesión escrita",
+    "topic": "dos hermanas que no se hablan",
+    "intent": "learning",
+    "tags": [
+      "italiano a2",
+      "lectura",
+      "pronombres directos",
+      "pronombres indirectos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El mensaje que no mandé"
+    },
+    "intro": {
+      "es": "Escribió el mismo mensaje cuatro veces en dos años y lo borró cuatro veces. Al final no hizo falta mandarlo. Lectura de italiano A2."
+    },
+    "mission": {
+      "es": "Averigua para qué sirvieron esas cuatro veces, si nunca llegó a enviarlo."
+    },
+    "targetText": "Non parlo con mia sorella da due anni. La ragione è stupida e non la voglio raccontare qui, perché se la racconto sembra ancora più stupida.\n\nIl mese scorso ho scritto un messaggio. L'ho scritto in dieci minuti e l'ho letto venti volte. Poi l'ho cancellato. La settimana dopo l'ho scritto di nuovo, con parole diverse, e l'ho cancellato ancora.\n\nNel messaggio non le chiedevo scusa. Le dicevo solo una cosa: mamma ha un controllo in ospedale il quattordici e ci vado io. Niente altro. Nessun sentimento, nessuna spiegazione. Un'informazione.\n\nIl tredici sera mi ha scritto lei. Il messaggio diceva: domani vieni tu in ospedale o vado io? Le ho risposto dopo un minuto: vengo io, ma se vuoi venire ci vediamo là.\n\nIl giorno dopo l'ho vista davanti all'ascensore del secondo piano. Non ci siamo abbracciate. Le ho dato un caffè della macchinetta e lei mi ha detto grazie. Poi siamo entrate insieme.\n\nMamma non ha capito niente di quello che era successo tra noi. Ci ha guardate e ha detto solo questo: bene, siete venute tutte e due.\n\nIn due anni ho scritto quel messaggio quattro volte e non l'ho mandato mai. Alla fine non è servito a niente. Ma penso una cosa: sono state quelle quattro volte a prepararmi per il tredici sera. Quando lei ha scritto, io avevo già la risposta pronta.",
+    "wordCount": 226,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Usar los pronombres directos lo, la, li, le y su forma elidida l'."
+      },
+      {
+        "es": "Usar los indirectos mi, ti, le, gli, ci con verbos de decir y dar."
+      },
+      {
+        "es": "Seguir un relato donde lo importante es lo que no se dijo."
+      }
+    ],
+    "grammarFocus": [
+      "pronomi-diretti-a2",
+      "pronomi-indiretti-a2",
+      "pronomi-soggetto"
+    ],
+    "vocabulary": [
+      {
+        "surface": "cancellato",
+        "lemma": "cancellare",
+        "glosses": {
+          "es": "borrado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "scusa",
+        "lemma": "scusa",
+        "glosses": {
+          "es": "perdón; «chiedere scusa» es pedir perdón"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "controllo",
+        "lemma": "controllo",
+        "glosses": {
+          "es": "revisión médica"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "macchinetta",
+        "lemma": "macchinetta",
+        "glosses": {
+          "es": "máquina de café"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "abbracciate",
+        "lemma": "abbracciarsi",
+        "glosses": {
+          "es": "abrazadas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "davanti",
+        "lemma": "davanti",
+        "glosses": {
+          "es": "delante de"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "stupida",
+        "lemma": "stupido",
+        "glosses": {
+          "es": "tonta, sin importancia"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "servito",
+        "lemma": "servire",
+        "glosses": {
+          "es": "servido, valido para algo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En Italia acompañar a un padre o una madre a una cita médica se reparte entre los hijos y se negocia por mensaje. Es una de las conversaciones que obligan a hablarse aunque no se quiera."
+    },
+    "spanishSpeakerNote": {
+      "es": "El pronombre directo se apoya en el verbo y se acorta delante de vocal: «l'ho scritto», «l'ho cancellato». El indirecto no se acorta: «le ho risposto», «mi ha scritto». Confundirlos cambia quién hace qué."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato en italiano sobre hechos pasados, distinguir el passato prossimo del imperfetto, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere",
+      "avverbi-frequenza-modo-a2",
+      "ci-vuole-vogliono-a2",
+      "comparativi-a2",
+      "condizionale-presente-a2",
+      "congiunzioni-logiche-a2",
+      "da-presente-a2",
+      "forma-cortesia-a2",
+      "futuro-probabilita-a2",
+      "futuro-semplice-a2",
+      "imperfetto-a2",
+      "passato-prossimo-avere-a2",
+      "passato-prossimo-essere-a2",
+      "periodo-ipotetico-reale-a2",
+      "piacere-verbi-simili-a2",
+      "pronomi-diretti-a2",
+      "pronomi-indiretti-a2",
+      "pronomi-relativi-a2",
+      "stare-per-a2",
+      "trapassato-prossimo-a2",
+      "verbi-riflessivi-a2"
+    ],
+    "disallowedGrammar": [
+      "congiuntivo",
+      "passato remoto",
+      "periodo ipotetico irreale",
+      "forma passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 9.4,
+      "maxSentenceWords": 18,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Passato prossimo con avere y essere, imperfetto, futuro, condizionale y forma di cortesia. Sin congiuntivo ni passato remoto."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es la idea del texto?",
+      "options": [
+        {
+          "id": "preparo",
+          "text": "Que escribir el mensaje cuatro veces la preparó para contestar cuando llegó el momento"
+        },
+        {
+          "id": "perdon",
+          "text": "Que pidió perdón a su hermana por escrito"
+        },
+        {
+          "id": "madre",
+          "text": "Que su madre las reconcilió a propósito"
+        }
+      ],
+      "answer": "preparo",
+      "evidence": "sono state quelle quattro volte a prepararmi per il tredici sera. Quando lei ha scritto, io avevo già la risposta pronta.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo dice justo al final, después de admitir que el mensaje no sirvió."
+        },
+        "incorrect": {
+          "es": "El texto dice expresamente que en el mensaje no pedía perdón, y la madre no entiende nada. Lee las dos últimas frases."
+        },
+        "strategy": {
+          "es": "Cuando un texto dice «no sirvió de nada, pero…», lo que viene después del «pero» es la tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Quién escribió primero, al final?",
+      "options": [
+        {
+          "id": "hermana",
+          "text": "La hermana, la noche del trece"
+        },
+        {
+          "id": "narradora",
+          "text": "La narradora, después de cuatro intentos"
+        },
+        {
+          "id": "madre",
+          "text": "La madre, desde el hospital"
+        }
+      ],
+      "answer": "hermana",
+      "evidence": "Il tredici sera mi ha scritto lei. Il messaggio diceva: domani vieni tu in ospedale o vado io?",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y por eso los cuatro borradores nunca se enviaron."
+        },
+        "incorrect": {
+          "es": "La narradora borró los cuatro mensajes y la madre no escribe a nadie. Busca la frase con «Il tredici sera»."
+        },
+        "strategy": {
+          "es": "Fíjate en el pronombre sujeto «lei» al final de la frase: el italiano lo pone ahí para destacarlo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «l'ho cancellato». ¿Qué significa el verbo?",
+      "options": [
+        {
+          "id": "borrar",
+          "text": "Borrarlo"
+        },
+        {
+          "id": "cancelar",
+          "text": "Cancelar una cita"
+        },
+        {
+          "id": "enviar",
+          "text": "Enviarlo"
+        }
+      ],
+      "answer": "borrar",
+      "evidence": "L'ho scritto in dieci minuti e l'ho letto venti volte. Poi l'ho cancellato.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Lo escribe, lo lee y lo borra: es la secuencia del texto."
+        },
+        "incorrect": {
+          "es": "No se cancela ninguna cita, y el envío nunca ocurre. Fíjate en qué hace antes y después."
+        },
+        "strategy": {
+          "es": "Un verbo dentro de una secuencia se entiende por lo que viene antes y después."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué no se abrazaron delante del ascensor?",
+      "options": [
+        {
+          "id": "gradual",
+          "text": "Porque después de dos años el reencuentro empieza por gestos pequeños, como un café"
+        },
+        {
+          "id": "enfado",
+          "text": "Porque seguían enfadadas y no querían verse"
+        },
+        {
+          "id": "prisa",
+          "text": "Porque llegaban tarde a la cita médica"
+        }
+      ],
+      "answer": "gradual",
+      "evidence": "Non ci siamo abbracciate. Le ho dato un caffè della macchinetta e lei mi ha detto grazie. Poi siamo entrate insieme.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El texto pone el abrazo que no hubo junto al café que sí hubo: eso es el reencuentro."
+        },
+        "incorrect": {
+          "es": "Entraron juntas y no hay prisa en el texto. Fíjate en lo que sí ocurrió entre las dos frases."
+        },
+        "strategy": {
+          "es": "Cuando un texto dice qué no pasó y a continuación qué sí pasó, compara las dos cosas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: en el mensaje que escribía le pedía perdón a su hermana.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Nel messaggio non le chiedevo scusa. Le dicevo solo una cosa … Un'informazione.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: lo niega expresamente y describe el mensaje como pura información."
+        },
+        "incorrect": {
+          "es": "El párrafo del mensaje empieza justamente negando eso. Búscalo."
+        },
+        "strategy": {
+          "es": "Si un párrafo empieza con «non», está descartando la lectura más obvia."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena los hechos.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Escribe el mensaje y lo borra, dos veces"
+        },
+        {
+          "id": "p2",
+          "text": "La noche del trece la hermana escribe primero"
+        },
+        {
+          "id": "p3",
+          "text": "Se encuentran ante el ascensor y comparten un café"
+        },
+        {
+          "id": "p4",
+          "text": "La madre dice que han venido las dos"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Il mese scorso ho scritto un messaggio … Il tredici sera mi ha scritto lei … Il giorno dopo l'ho vista davanti all'ascensore … Ci ha guardate e ha detto solo questo.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: los borradores, el mensaje de ella, el encuentro y la frase de la madre."
+        },
+        "incorrect": {
+          "es": "Guíate por «Il mese scorso», «Il tredici sera» e «Il giorno dopo»."
+        },
+        "strategy": {
+          "es": "Las marcas de tiempo al principio de párrafo son la escalera del relato."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en italiano sobre un mensaje que escribiste y no enviaste. Usa cuatro pronombres directos y cuatro indirectos."
+    },
+    "minWords": 60,
+    "maxWords": 110,
+    "hints": [
+      "L'ho scritto e l'ho cancellato.",
+      "Non le chiedevo scusa.",
+      "Le ho risposto dopo un minuto.",
+      "Mi ha scritto lei."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de italiano y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano A2: el mensaje que no mandé | WeLearn"
+    },
+    "description": {
+      "es": "Lee una confesión en italiano A2 y practica los pronombres directos e indirectos. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/italiano/a2/lectura/il-messaggio-che-non-ho-mandato",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-a2-mio-padre-non-parlava-al-telefono",
+      "it-a2-mi-scusi-signora-nardi"
+    ]
+  }
+}

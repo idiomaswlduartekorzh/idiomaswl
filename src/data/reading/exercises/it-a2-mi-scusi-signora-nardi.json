@@ -1,0 +1,469 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-a2-mi-scusi-signora-nardi",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Italiano A2"
+  },
+  "slug": "mi-scusi-signora-nardi",
+  "series": {
+    "id": "italiano-a2-lectura-10",
+    "episode": 4,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-a2-il-messaggio-che-non-ho-mandato",
+    "nextExerciseId": "it-a2-la-scuola-con-sei-bambini"
+  },
+  "classification": {
+    "genre": "escena de ventanilla",
+    "topic": "el trato de usted en una oficina pública",
+    "intent": "learning",
+    "tags": [
+      "italiano a2",
+      "lectura",
+      "condizionale presente",
+      "forma de cortesía"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Perdone, señora Nardi"
+    },
+    "intro": {
+      "es": "La misma ley, el mismo formulario y dos ventanillas. En una la tutean deprisa; en la otra le hablan de usted. Lectura de italiano A2."
+    },
+    "mission": {
+      "es": "Averigua qué cambió con el «Lei», si la ley era la misma."
+    },
+    "targetText": "All'anagrafe di Prato c'è uno sportello, il numero quattro, e dietro lo sportello c'è la signora Nardi.\n\nIo sono colombiana e a Prato vivo da tre anni. La prima volta che sono andata all'anagrafe non capivo niente. Un impiegato mi ha detto: devi portare il documento originale, non la copia. Mi ha parlato con il tu, veloce, senza guardarmi.\n\nLa seconda volta sono capitata allo sportello quattro. La signora Nardi mi ha detto: buongiorno, mi dica. Poi: mi scusi, Lei ha già la residenza? Io le ho risposto sì. Lei ha detto: allora Lei avrebbe bisogno del modulo B, non del modulo A. Vorrebbe compilarlo qui o preferirebbe portarlo a casa?\n\nNon è cambiata la legge. È cambiato tutto il resto.\n\nCon il Lei io capivo meglio. Non è che il Lei è più facile: capivo meglio perché lei parlava più lentamente e mi guardava mentre parlava. Il Lei in italiano non è solo educazione. È una distanza che ti dà spazio.\n\nAdesso, quando devo andare all'anagrafe, guardo la fila dello sportello quattro. Se è lunga, aspetto. Una volta ho aspettato cinquanta minuti.\n\nUn giorno le ho detto: signora Nardi, Lei mi tratta bene. Lei ha risposto: io tratto tutti così, altrimenti non potrei venire a lavorare la mattina.",
+    "wordCount": 209,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Formar el condizionale presente: avrebbe, vorrebbe, preferirebbe, potrei."
+      },
+      {
+        "es": "Usar la forma de cortesía con Lei y su imperativo: mi dica, mi scusi."
+      },
+      {
+        "es": "Distinguir el trato de la información en una gestión administrativa."
+      }
+    ],
+    "grammarFocus": [
+      "condizionale-presente-a2",
+      "forma-cortesia-a2",
+      "imperativo"
+    ],
+    "vocabulary": [
+      {
+        "surface": "anagrafe",
+        "lemma": "anagrafe",
+        "glosses": {
+          "es": "registro civil del ayuntamiento"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sportello",
+        "lemma": "sportello",
+        "glosses": {
+          "es": "ventanilla"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "impiegato",
+        "lemma": "impiegato",
+        "glosses": {
+          "es": "funcionario, empleado público"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "modulo",
+        "lemma": "modulo",
+        "glosses": {
+          "es": "formulario"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "compilarlo",
+        "lemma": "compilare",
+        "glosses": {
+          "es": "rellenarlo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fila",
+        "lemma": "fila",
+        "glosses": {
+          "es": "cola de gente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "altrimenti",
+        "lemma": "altrimenti",
+        "glosses": {
+          "es": "si no, de lo contrario"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "educazione",
+        "lemma": "educazione",
+        "glosses": {
+          "es": "buenos modales, cortesía"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Prato tiene una de las comunidades extranjeras más grandes de Italia en proporción a su población, y su anagrafe atiende cada día a gente que se juega la residencia en una ventanilla."
+    },
+    "spanishSpeakerNote": {
+      "es": "El «Lei» italiano es el usted, y se conjuga en tercera persona: «Lei ha», «Lei avrebbe». Su imperativo es distinto del de tú: «mi dica» y «mi scusi», no «dimmi» y «scusa»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato en italiano sobre hechos pasados, distinguir el passato prossimo del imperfetto, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere",
+      "avverbi-frequenza-modo-a2",
+      "ci-vuole-vogliono-a2",
+      "comparativi-a2",
+      "condizionale-presente-a2",
+      "congiunzioni-logiche-a2",
+      "da-presente-a2",
+      "forma-cortesia-a2",
+      "futuro-probabilita-a2",
+      "futuro-semplice-a2",
+      "imperfetto-a2",
+      "passato-prossimo-avere-a2",
+      "passato-prossimo-essere-a2",
+      "periodo-ipotetico-reale-a2",
+      "piacere-verbi-simili-a2",
+      "pronomi-diretti-a2",
+      "pronomi-indiretti-a2",
+      "pronomi-relativi-a2",
+      "stare-per-a2",
+      "trapassato-prossimo-a2",
+      "verbi-riflessivi-a2"
+    ],
+    "disallowedGrammar": [
+      "congiuntivo",
+      "passato remoto",
+      "periodo ipotetico irreale",
+      "forma passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 9.5,
+      "maxSentenceWords": 20,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Passato prossimo con avere y essere, imperfetto, futuro, condizionale y forma di cortesia. Sin congiuntivo ni passato remoto."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué defiende el texto?",
+      "options": [
+        {
+          "id": "trato",
+          "text": "Que el trato de usted, con calma y mirando a la cara, le hizo entender lo mismo mejor"
+        },
+        {
+          "id": "ley",
+          "text": "Que la ley de residencia cambió y ahora es más fácil"
+        },
+        {
+          "id": "idioma",
+          "text": "Que su italiano mejoró en tres años"
+        }
+      ],
+      "answer": "trato",
+      "evidence": "Non è cambiata la legge. È cambiato tutto il resto … capivo meglio perché lei parlava più lentamente e mi guardava mentre parlava.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo dice con dos frases cortas y seguidas."
+        },
+        "incorrect": {
+          "es": "El texto dice expresamente que la ley no cambió. Busca las dos frases que empiezan por «Non è cambiata»."
+        },
+        "strategy": {
+          "es": "Dos frases cortas y contrapuestas suelen ser la tesis de un texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué formulario necesitaba en realidad?",
+      "options": [
+        {
+          "id": "b",
+          "text": "El módulo B, no el A"
+        },
+        {
+          "id": "a",
+          "text": "El módulo A"
+        },
+        {
+          "id": "copia",
+          "text": "Una copia del documento original"
+        }
+      ],
+      "answer": "b",
+      "evidence": "allora Lei avrebbe bisogno del modulo B, non del modulo A",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y la señora Nardi lo dice después de preguntar si ya tiene la residencia."
+        },
+        "incorrect": {
+          "es": "La copia es lo que le dijo el primer funcionario sobre el documento. Busca la frase con «modulo»."
+        },
+        "strategy": {
+          "es": "La fórmula «X, non Y» te da la respuesta y el error más probable en la misma frase."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué es «lo sportello» en este texto?",
+      "options": [
+        {
+          "id": "ventanilla",
+          "text": "La ventanilla de atención al público"
+        },
+        {
+          "id": "puerta",
+          "text": "La puerta de entrada del edificio"
+        },
+        {
+          "id": "deporte",
+          "text": "Un centro deportivo"
+        }
+      ],
+      "answer": "ventanilla",
+      "evidence": "c'è uno sportello, il numero quattro, e dietro lo sportello c'è la signora Nardi",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Tiene número y detrás hay una persona que atiende."
+        },
+        "incorrect": {
+          "es": "Tiene número, y detrás hay una funcionaria: no es una puerta ni tiene que ver con el deporte."
+        },
+        "strategy": {
+          "es": "Si algo tiene número y alguien detrás, es un puesto de atención al público."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Qué quiere decir la señora Nardi con su última frase?",
+      "options": [
+        {
+          "id": "sostener",
+          "text": "Que tratar bien a todos es lo que le permite aguantar su propio trabajo"
+        },
+        {
+          "id": "norma",
+          "text": "Que hay una norma interna que le obliga a hablar de usted"
+        },
+        {
+          "id": "favor",
+          "text": "Que le hace un favor especial porque es extranjera"
+        }
+      ],
+      "answer": "sostener",
+      "evidence": "io tratto tutti così, altrimenti non potrei venire a lavorare la mattina",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y empieza descartando lo del favor: trata igual a todo el mundo."
+        },
+        "incorrect": {
+          "es": "Dice «tratto tutti così», así que no es un favor, y no menciona ninguna norma. Fíjate en el «altrimenti»."
+        },
+        "strategy": {
+          "es": "La palabra «altrimenti» (si no) introduce la consecuencia que explica la frase entera."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la narradora llega a esperar cincuenta minutos para que la atienda esa ventanilla.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Se è lunga, aspetto. Una volta ho aspettato cinquanta minuti.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y esa espera voluntaria es la prueba de todo lo que dice el texto."
+        },
+        "incorrect": {
+          "es": "Busca el párrafo que empieza por «Adesso»: dice qué hace cuando la cola es larga."
+        },
+        "strategy": {
+          "es": "Un dato numérico suelto al final de un párrafo suele ser la prueba de lo que se acaba de afirmar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la escena.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "La primera vez: la tutean deprisa y no entiende nada"
+        },
+        {
+          "id": "p2",
+          "text": "La segunda vez: le hablan de usted y le ofrecen dos opciones"
+        },
+        {
+          "id": "p3",
+          "text": "La reflexión: la ley no cambió, cambió el resto"
+        },
+        {
+          "id": "p4",
+          "text": "Ahora espera lo que haga falta por esa ventanilla"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "La prima volta che sono andata all'anagrafe non capivo niente … La seconda volta sono capitata allo sportello quattro … Non è cambiata la legge … Adesso, quando devo andare all'anagrafe…",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: primera vez, segunda vez, conclusión y presente."
+        },
+        "incorrect": {
+          "es": "Guíate por «La prima volta», «La seconda volta» y «Adesso»."
+        },
+        "strategy": {
+          "es": "Los ordinales («la prima», «la seconda») ordenan el texto sin más."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en italiano sobre una gestión administrativa que hiciste. Usa cuatro verbos en condizionale y trata de usted a quien te atiende."
+    },
+    "minWords": 60,
+    "maxWords": 110,
+    "hints": [
+      "Buongiorno, mi dica.",
+      "Lei avrebbe bisogno del modulo…",
+      "Vorrei compilarlo qui.",
+      "Mi scusi, Lei ha già…?"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de italiano y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano A2: perdone, señora Nardi | WeLearn"
+    },
+    "description": {
+      "es": "Lee una escena en italiano A2 y practica el condizionale presente y la forma de cortesía con Lei. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/italiano/a2/lectura/mi-scusi-signora-nardi",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-a2-il-messaggio-che-non-ho-mandato",
+      "it-a2-la-scuola-con-sei-bambini"
+    ]
+  }
+}

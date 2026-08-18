@@ -1,0 +1,469 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-a2-la-scuola-con-sei-bambini",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Italiano A2"
+  },
+  "slug": "la-scuola-con-sei-bambini",
+  "series": {
+    "id": "italiano-a2-lectura-10",
+    "episode": 5,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-a2-mi-scusi-signora-nardi",
+    "nextExerciseId": "it-a2-il-piu-vecchio-non-e-il-piu-lento"
+  },
+  "classification": {
+    "genre": "reportaje de pueblo",
+    "topic": "una escuela rural que va a cerrar",
+    "intent": "learning",
+    "tags": [
+      "italiano a2",
+      "lectura",
+      "futuro semplice",
+      "futuro de probabilidad"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La escuela de seis niños"
+    },
+    "intro": {
+      "es": "Seis alumnos en total, dos maestras y un aula. Las otras dos llevan ocho años cerradas. Lectura de italiano A2 sobre el futuro."
+    },
+    "mission": {
+      "es": "Averigua qué es lo que, según el texto, nadie calcula."
+    },
+    "targetText": "La scuola elementare di Roccalta ha sei alunni. Non sei per classe: sei in tutto. Ci sono due maestre e un'aula sola, perché le altre due aule sono chiuse da otto anni.\n\nIl sindaco dice che la scuola resterà aperta. Il provveditorato dice che con sei bambini sarà difficile. Le due frasi non si contraddicono: entrambe sono vere, e per questo il problema non si risolve.\n\nNel 2040 il bambino più piccolo di Roccalta avrà venticinque anni. Probabilmente non sarà qui. Sarà a Torino o a Bologna, avrà un lavoro e tornerà a Natale. I suoi genitori avranno sessant'anni e diranno che il paese è cambiato.\n\nQuesto non è pessimismo, è aritmetica. In dieci anni sono nati nove bambini in tutto il comune.\n\nPerò c'è una cosa che nessuno calcola. Le due maestre conoscono i sei alunni uno per uno. Sanno chi legge bene e chi ha paura di leggere ad alta voce. In una classe di venticinque non lo saprebbero.\n\nUna delle maestre mi ha detto una frase che non dimenticherò: questi sei bambini avranno molte difficoltà nella vita, ma non diranno mai che nessuno li ha guardati.\n\nLa scuola chiuderà, probabilmente. I sei alunni finiranno le elementari altrove, in un istituto più grande, a venti chilometri. Ma tra vent'anni saranno sei adulti che sanno cosa vuol dire essere visti.",
+    "wordCount": 221,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Formar el futuro semplice, incluidos los irregulares: sarà, avrà, dirà, resterà."
+      },
+      {
+        "es": "Reconocer el futuro de probabilidad: «probabilmente non sarà qui»."
+      },
+      {
+        "es": "Separar un dato demográfico de su interpretación."
+      }
+    ],
+    "grammarFocus": [
+      "futuro-semplice-a2",
+      "futuro-probabilita-a2",
+      "verbi-irregolari"
+    ],
+    "vocabulary": [
+      {
+        "surface": "alunni",
+        "lemma": "alunno",
+        "glosses": {
+          "es": "alumnos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sindaco",
+        "lemma": "sindaco",
+        "glosses": {
+          "es": "alcalde"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "provveditorato",
+        "lemma": "provveditorato",
+        "glosses": {
+          "es": "delegación provincial de educación"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "entrambe",
+        "lemma": "entrambe",
+        "glosses": {
+          "es": "las dos, ambas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "voce",
+        "lemma": "voce",
+        "glosses": {
+          "es": "voz; «ad alta voce» es en voz alta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "altrove",
+        "lemma": "altrove",
+        "glosses": {
+          "es": "en otro sitio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "nati",
+        "lemma": "nascere",
+        "glosses": {
+          "es": "nacidos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "paese",
+        "lemma": "paese",
+        "glosses": {
+          "es": "pueblo (también país; aquí es pueblo)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Italia tiene cientos de «pluriclassi»: aulas rurales donde niños de edades distintas comparten maestra. El Estado las cierra por número de alumnos, y cada cierre se discute entre el alcalde y la delegación de educación."
+    },
+    "spanishSpeakerNote": {
+      "es": "El futuro italiano sirve también para suponer: «avrà sessant'anni» puede ser «tendrá sesenta años» en el sentido de «rondará los sesenta». El español hace lo mismo, así que aquí reconoces el uso de entrada."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato en italiano sobre hechos pasados, distinguir el passato prossimo del imperfetto, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere",
+      "avverbi-frequenza-modo-a2",
+      "ci-vuole-vogliono-a2",
+      "comparativi-a2",
+      "condizionale-presente-a2",
+      "congiunzioni-logiche-a2",
+      "da-presente-a2",
+      "forma-cortesia-a2",
+      "futuro-probabilita-a2",
+      "futuro-semplice-a2",
+      "imperfetto-a2",
+      "passato-prossimo-avere-a2",
+      "passato-prossimo-essere-a2",
+      "periodo-ipotetico-reale-a2",
+      "piacere-verbi-simili-a2",
+      "pronomi-diretti-a2",
+      "pronomi-indiretti-a2",
+      "pronomi-relativi-a2",
+      "stare-per-a2",
+      "trapassato-prossimo-a2",
+      "verbi-riflessivi-a2"
+    ],
+    "disallowedGrammar": [
+      "congiuntivo",
+      "passato remoto",
+      "periodo ipotetico irreale",
+      "forma passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 11.1,
+      "maxSentenceWords": 28,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Passato prossimo con avere y essere, imperfetto, futuro, condizionale y forma di cortesia. Sin congiuntivo ni passato remoto."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es la idea central del reportaje?",
+      "options": [
+        {
+          "id": "visto",
+          "text": "Que la escuela cerrará por aritmética, pero esos seis niños se saben mirados uno por uno"
+        },
+        {
+          "id": "salvar",
+          "text": "Que el alcalde conseguirá salvar la escuela"
+        },
+        {
+          "id": "maestras",
+          "text": "Que las dos maestras van a jubilarse pronto"
+        }
+      ],
+      "answer": "visto",
+      "evidence": "La scuola chiuderà, probabilmente … Ma tra vent'anni saranno sei adulti che sanno cosa vuol dire essere visti.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El texto no discute el cierre: discute qué queda después."
+        },
+        "incorrect": {
+          "es": "El texto da el cierre por probable y no habla de jubilaciones. Lee la última frase."
+        },
+        "strategy": {
+          "es": "Cuando un texto acepta la mala noticia y sigue con un «ma», ahí está su tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántos niños han nacido en diez años en todo el municipio?",
+      "options": [
+        {
+          "id": "nueve",
+          "text": "Nueve"
+        },
+        {
+          "id": "seis",
+          "text": "Seis"
+        },
+        {
+          "id": "veinticinco",
+          "text": "Veinticinco"
+        }
+      ],
+      "answer": "nueve",
+      "evidence": "In dieci anni sono nati nove bambini in tutto il comune.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y de ahí sale lo que el texto llama aritmética."
+        },
+        "incorrect": {
+          "es": "Los seis son los alumnos actuales y los veinticinco, el tamaño de una clase normal. Busca la cifra con «nati»."
+        },
+        "strategy": {
+          "es": "Empareja cada cifra con lo que cuenta: alumnos, nacimientos, edad."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que los padres dirán que «il paese è cambiato». ¿Qué es «il paese» aquí?",
+      "options": [
+        {
+          "id": "pueblo",
+          "text": "El pueblo, la localidad"
+        },
+        {
+          "id": "pais",
+          "text": "El país, Italia entera"
+        },
+        {
+          "id": "paisaje",
+          "text": "El paisaje de la zona"
+        }
+      ],
+      "answer": "pueblo",
+      "evidence": "I suoi genitori avranno sessant'anni e diranno che il paese è cambiato.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Todo el texto habla de Roccalta, no de Italia."
+        },
+        "incorrect": {
+          "es": "«Paese» puede ser país, pero aquí el texto habla de una sola localidad y de su escuela."
+        },
+        "strategy": {
+          "es": "Cuando una palabra tiene dos sentidos, decide por el tamaño de lo que se está contando."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice que las dos frases del alcalde y de la delegación «no se contradicen»?",
+      "options": [
+        {
+          "id": "ambas",
+          "text": "Porque una habla de voluntad y la otra de dificultad: las dos pueden ser verdad a la vez"
+        },
+        {
+          "id": "acuerdo",
+          "text": "Porque los dos quieren cerrar la escuela"
+        },
+        {
+          "id": "error",
+          "text": "Porque uno de los dos se equivoca en las cifras"
+        }
+      ],
+      "answer": "ambas",
+      "evidence": "Il sindaco dice che la scuola resterà aperta. Il provveditorato dice che con sei bambini sarà difficile … entrambe sono vere, e per questo il problema non si risolve.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto añade la consecuencia: por eso el problema no se resuelve."
+        },
+        "incorrect": {
+          "es": "El alcalde quiere mantenerla abierta y nadie discute las cifras. Lee la frase que empieza por «Le due frasi»."
+        },
+        "strategy": {
+          "es": "Si un texto dice que dos afirmaciones opuestas son ciertas, busca en qué plano lo es cada una."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: en la escuela hay dos aulas en uso y una cerrada desde hace ocho años.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Ci sono due maestre e un'aula sola, perché le altre due aule sono chiuse da otto anni.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: es al contrario. Un aula en uso y dos cerradas."
+        },
+        "incorrect": {
+          "es": "Cuenta bien: el texto dice cuántas maestras, cuántas aulas en uso y cuántas cerradas."
+        },
+        "strategy": {
+          "es": "Cuando una pregunta invierte dos cifras, vuelve a la frase original y cuéntalas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena cómo avanza el reportaje.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Los datos: seis alumnos, dos maestras, un aula"
+        },
+        {
+          "id": "p2",
+          "text": "Las dos posturas: alcalde y delegación"
+        },
+        {
+          "id": "p3",
+          "text": "La proyección al año 2040"
+        },
+        {
+          "id": "p4",
+          "text": "Lo que nadie calcula y la frase de la maestra"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "La scuola elementare di Roccalta ha sei alunni … Il sindaco dice che la scuola resterà aperta … Nel 2040 il bambino più piccolo … Però c'è una cosa che nessuno calcola.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: datos, posturas, proyección y contrapunto."
+        },
+        "incorrect": {
+          "es": "Fíjate en dónde entra el año 2040 y dónde el «Però»."
+        },
+        "strategy": {
+          "es": "La palabra «però» marca el giro: lo que viene después contradice lo anterior."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en italiano sobre cómo será tu ciudad o tu barrio en 2040. Usa ocho verbos en futuro, dos de ellos con valor de suposición."
+    },
+    "minWords": 60,
+    "maxWords": 110,
+    "hints": [
+      "Nel 2040 avrò… anni.",
+      "Probabilmente non sarò qui.",
+      "La scuola chiuderà.",
+      "I miei genitori diranno che…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de italiano y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano A2: la escuela de seis niños | WeLearn"
+    },
+    "description": {
+      "es": "Lee un reportaje en italiano A2 y practica el futuro semplice y el futuro de probabilidad. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/italiano/a2/lectura/la-scuola-con-sei-bambini",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-a2-mi-scusi-signora-nardi",
+      "it-a2-il-piu-vecchio-non-e-il-piu-lento"
+    ]
+  }
+}

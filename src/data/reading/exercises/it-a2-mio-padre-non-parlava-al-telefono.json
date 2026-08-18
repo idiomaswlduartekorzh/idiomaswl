@@ -1,0 +1,469 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-a2-mio-padre-non-parlava-al-telefono",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Italiano A2"
+  },
+  "slug": "mio-padre-non-parlava-al-telefono",
+  "series": {
+    "id": "italiano-a2-lectura-10",
+    "episode": 2,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-a2-il-treno-che-non-ho-preso",
+    "nextExerciseId": "it-a2-il-messaggio-che-non-ho-mandato"
+  },
+  "classification": {
+    "genre": "memoria familiar",
+    "topic": "el teléfono negro de la cocina",
+    "intent": "learning",
+    "tags": [
+      "italiano a2",
+      "lectura",
+      "imperfetto",
+      "conjunciones lógicas"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Mi padre no hablaba por teléfono"
+    },
+    "intro": {
+      "es": "Un solo teléfono en casa, colgado en la pared de la cocina, y un padre que decía siempre la misma frase: ahora te la paso. Lectura de italiano A2."
+    },
+    "mission": {
+      "es": "Averigua qué razón dio él, y qué hizo su mujer durante veinte años."
+    },
+    "targetText": "Quando ero piccolo, in casa nostra c'era un solo telefono. Era nero, stava in cucina attaccato al muro e aveva un filo lungo due metri. Mia madre parlava molto al telefono. Mia zia parlava ancora di più. Mio padre non parlava mai.\n\nNon era timido, perché in officina parlava tutto il giorno con i clienti. Non era freddo, perché a tavola raccontava storie lunghissime. Ma quando il telefono suonava e la chiamata era per lui, diceva sempre la stessa frase: adesso te la passo.\n\nPoi passava il telefono a mia madre e usciva dalla cucina.\n\nMia madre allora ascoltava, diceva sì, sì, certo, e alla fine spiegava a mio padre cosa aveva detto la persona all'altro capo. Lui rispondeva a lei, e lei rispondeva al telefono. Funzionava così da vent'anni.\n\nUna volta gli ho chiesto perché. Mi ha detto: al telefono non vedo la faccia. E poi ha aggiunto: se non vedo la faccia, non so se la persona dice la verità.\n\nAdesso ha ottantuno anni e ha uno smartphone, quindi il problema è finito: fa le videochiamate. Parla venti minuti con mia sorella e le fa vedere il giardino, i pomodori, il cane.\n\nMia madre dice che è ingiusto, perché lei ha passato vent'anni a fare la traduttrice in casa propria e nessuno la ringrazia. Ha ragione anche questa volta.",
+    "wordCount": 221,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Usar el imperfetto para lo que duraba o se repetía: era, stava, parlava, diceva."
+      },
+      {
+        "es": "Encadenar conjunciones lógicas: perché, ma, quando, se, quindi, allora."
+      },
+      {
+        "es": "Distinguir la costumbre del pasado del estado actual."
+      }
+    ],
+    "grammarFocus": [
+      "imperfetto-a2",
+      "congiunzioni-logiche-a2",
+      "verbo-essere"
+    ],
+    "vocabulary": [
+      {
+        "surface": "filo",
+        "lemma": "filo",
+        "glosses": {
+          "es": "cable"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "officina",
+        "lemma": "officina",
+        "glosses": {
+          "es": "taller mecánico. ¡No es una «oficina»!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "suonava",
+        "lemma": "suonare",
+        "glosses": {
+          "es": "sonaba"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "capo",
+        "lemma": "capo",
+        "glosses": {
+          "es": "extremo; «all'altro capo» es al otro lado de la línea"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "aggiunto",
+        "lemma": "aggiungere",
+        "glosses": {
+          "es": "añadido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ingiusto",
+        "lemma": "ingiusto",
+        "glosses": {
+          "es": "poco justo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ringrazia",
+        "lemma": "ringraziare",
+        "glosses": {
+          "es": "da las gracias"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "videochiamate",
+        "lemma": "videochiamate",
+        "glosses": {
+          "es": "videollamadas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Hasta los años noventa lo normal en una casa italiana era un solo teléfono fijo, en la cocina o en el recibidor, con cable. La llamada era un acto compartido por toda la familia, no privado."
+    },
+    "spanishSpeakerNote": {
+      "es": "«Officina» es un taller, no una oficina: para eso el italiano dice «ufficio». Y fíjate en el imperfetto: «parlava», «era», «stava» — es exactamente el imperfecto español, así que aquí juegas con ventaja."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato en italiano sobre hechos pasados, distinguir el passato prossimo del imperfetto, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere",
+      "avverbi-frequenza-modo-a2",
+      "ci-vuole-vogliono-a2",
+      "comparativi-a2",
+      "condizionale-presente-a2",
+      "congiunzioni-logiche-a2",
+      "da-presente-a2",
+      "forma-cortesia-a2",
+      "futuro-probabilita-a2",
+      "futuro-semplice-a2",
+      "imperfetto-a2",
+      "passato-prossimo-avere-a2",
+      "passato-prossimo-essere-a2",
+      "periodo-ipotetico-reale-a2",
+      "piacere-verbi-simili-a2",
+      "pronomi-diretti-a2",
+      "pronomi-indiretti-a2",
+      "pronomi-relativi-a2",
+      "stare-per-a2",
+      "trapassato-prossimo-a2",
+      "verbi-riflessivi-a2"
+    ],
+    "disallowedGrammar": [
+      "congiuntivo",
+      "passato remoto",
+      "periodo ipotetico irreale",
+      "forma passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 11.6,
+      "maxSentenceWords": 22,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Passato prossimo con avere y essere, imperfetto, futuro, condizionale y forma di cortesia. Sin congiuntivo ni passato remoto."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta el texto?",
+      "options": [
+        {
+          "id": "intermediaria",
+          "text": "Que el padre no hablaba por teléfono y la madre hizo de intermediaria veinte años"
+        },
+        {
+          "id": "pobreza",
+          "text": "Que en su casa no podían pagar un segundo teléfono"
+        },
+        {
+          "id": "timidez",
+          "text": "Que su padre era una persona tímida y callada"
+        }
+      ],
+      "answer": "intermediaria",
+      "evidence": "Lui rispondeva a lei, e lei rispondeva al telefono. Funzionava così da vent'anni.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto descarta expresamente la timidez con dos «perché»."
+        },
+        "incorrect": {
+          "es": "El texto niega que fuera tímido o frío, y no habla de dinero. Busca cómo funcionaba la conversación."
+        },
+        "strategy": {
+          "es": "Si un texto descarta dos explicaciones con «non era… perché», la verdadera es otra."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué frase decía el padre cuando la llamada era para él?",
+      "options": [
+        {
+          "id": "passo",
+          "text": "«Adesso te la passo»"
+        },
+        {
+          "id": "dopo",
+          "text": "«Richiamo io più tardi»"
+        },
+        {
+          "id": "no",
+          "text": "«Non ci sono»"
+        }
+      ],
+      "answer": "passo",
+      "evidence": "diceva sempre la stessa frase: adesso te la passo.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y después salía de la cocina."
+        },
+        "incorrect": {
+          "es": "No pedía devolver la llamada ni mentía. Busca la frase que el texto llama «la stessa frase»."
+        },
+        "strategy": {
+          "es": "Cuando el texto anuncia «la misma frase», lo que viene después de los dos puntos es la cita."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que en la «officina» hablaba todo el día. ¿Qué es una «officina»?",
+      "options": [
+        {
+          "id": "taller",
+          "text": "Un taller mecánico"
+        },
+        {
+          "id": "oficina",
+          "text": "Una oficina con escritorios"
+        },
+        {
+          "id": "fabrica",
+          "text": "Una fábrica grande"
+        }
+      ],
+      "answer": "taller",
+      "evidence": "Non era timido, perché in officina parlava tutto il giorno con i clienti.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y es un falso amigo clásico: para oficina el italiano dice «ufficio»."
+        },
+        "incorrect": {
+          "es": "Se parece a «oficina» pero no lo es. Fíjate en que allí atiende clientes cara a cara."
+        },
+        "strategy": {
+          "es": "Ante una palabra casi idéntica al español, comprueba si el resto de la frase la contradice."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué la madre dice ahora que es injusto?",
+      "options": [
+        {
+          "id": "gracias",
+          "text": "Porque ella hizo el trabajo durante veinte años y nadie se lo agradece"
+        },
+        {
+          "id": "telefono",
+          "text": "Porque no sabe usar el smartphone"
+        },
+        {
+          "id": "jardin",
+          "text": "Porque el padre solo habla del jardín"
+        }
+      ],
+      "answer": "gracias",
+      "evidence": "lei ha passato vent'anni a fare la traduttrice in casa propria e nessuno la ringrazia",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el narrador le da la razón en la última frase."
+        },
+        "incorrect": {
+          "es": "No se dice que no sepa usar el móvil, y el jardín es un detalle de las videollamadas. Lee la penúltima frase."
+        },
+        "strategy": {
+          "es": "La queja de un personaje suele venir explicada en la misma frase, tras un «perché»."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: ahora el padre habla veinte minutos por videollamada con su hija.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "fa le videochiamate. Parla venti minuti con mia sorella e le fa vedere il giardino, i pomodori, il cane.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y encaja con su razón de antes: ahora sí ve la cara."
+        },
+        "incorrect": {
+          "es": "Busca el párrafo que empieza por «Adesso ha ottantuno anni»."
+        },
+        "strategy": {
+          "es": "La palabra «adesso» separa el pasado del presente: busca ahí lo que ha cambiado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la memoria familiar.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Describe el teléfono negro de la cocina"
+        },
+        {
+          "id": "p2",
+          "text": "Explica que el padre nunca hablaba y por qué no era timidez"
+        },
+        {
+          "id": "p3",
+          "text": "Cuenta la razón que le dio: no ver la cara"
+        },
+        {
+          "id": "p4",
+          "text": "Hoy hace videollamadas y la madre protesta"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Era nero, stava in cucina attaccato al muro … Non era timido, perché in officina parlava … Mi ha detto: al telefono non vedo la faccia … Adesso ha ottantuno anni e ha uno smartphone.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: objeto, costumbre, explicación y presente."
+        },
+        "incorrect": {
+          "es": "Fíjate en cuándo aparece la pregunta del narrador y cuándo entra el «Adesso»."
+        },
+        "strategy": {
+          "es": "Una memoria familiar suele ir del recuerdo al presente: busca la palabra que marca el corte."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en italiano sobre una costumbre de tu casa cuando eras pequeño. Usa ocho verbos en imperfetto y cuatro conjunciones distintas."
+    },
+    "minWords": 60,
+    "maxWords": 110,
+    "hints": [
+      "Quando ero piccolo, c'era…",
+      "Mia madre parlava molto, ma…",
+      "Non era timido, perché…",
+      "Adesso il problema è finito."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de italiano y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano A2: mi padre no hablaba por teléfono | WeLearn"
+    },
+    "description": {
+      "es": "Lee una memoria familiar en italiano A2 y practica el imperfetto y las conjunciones lógicas. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/italiano/a2/lectura/mio-padre-non-parlava-al-telefono",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-a2-il-treno-che-non-ho-preso",
+      "it-a2-il-messaggio-che-non-ho-mandato"
+    ]
+  }
+}

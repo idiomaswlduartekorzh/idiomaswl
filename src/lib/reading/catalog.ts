@@ -177,6 +177,18 @@ import itA1IlMercatoDelSabato from '@/data/reading/exercises/it-a1-il-mercato-de
 import itA1DoveSonoLeMieChiavi from '@/data/reading/exercises/it-a1-dove-sono-le-mie-chiavi.json'
 import itA1GuardaStaPiovendo from '@/data/reading/exercises/it-a1-guarda-sta-piovendo.json'
 import itA1IlBurroNonEUnAsino from '@/data/reading/exercises/it-a1-il-burro-non-e-un-asino.json'
+
+// Italiano A2 — generadas desde `src/data/reading/source/it-a2.mjs`. Nivel completo.
+import itA2IlTrenoCheNonHoPreso from '@/data/reading/exercises/it-a2-il-treno-che-non-ho-preso.json'
+import itA2MioPadreNonParlavaAlTelefono from '@/data/reading/exercises/it-a2-mio-padre-non-parlava-al-telefono.json'
+import itA2IlMessaggioCheNonHoMandato from '@/data/reading/exercises/it-a2-il-messaggio-che-non-ho-mandato.json'
+import itA2MiScusiSignoraNardi from '@/data/reading/exercises/it-a2-mi-scusi-signora-nardi.json'
+import itA2LaScuolaConSeiBambini from '@/data/reading/exercises/it-a2-la-scuola-con-sei-bambini.json'
+import itA2IlPiuVecchioNonEIlPiuLento from '@/data/reading/exercises/it-a2-il-piu-vecchio-non-e-il-piu-lento.json'
+import itA2MiSveglioAlleQuattroEVenti from '@/data/reading/exercises/it-a2-mi-sveglio-alle-quattro-e-venti.json'
+import itA2AMiaMadreNonPiaceIlMare from '@/data/reading/exercises/it-a2-a-mia-madre-non-piace-il-mare.json'
+import itA2SePioveNonSiGioca from '@/data/reading/exercises/it-a2-se-piove-non-si-gioca.json'
+import itA2EroArrivatoDueOrePrima from '@/data/reading/exercises/it-a2-ero-arrivato-due-ore-prima.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -342,6 +354,16 @@ const RAW_EXERCISES: unknown[] = [
   itA1DoveSonoLeMieChiavi,
   itA1GuardaStaPiovendo,
   itA1IlBurroNonEUnAsino,
+  itA2IlTrenoCheNonHoPreso,
+  itA2MioPadreNonParlavaAlTelefono,
+  itA2IlMessaggioCheNonHoMandato,
+  itA2MiScusiSignoraNardi,
+  itA2LaScuolaConSeiBambini,
+  itA2IlPiuVecchioNonEIlPiuLento,
+  itA2MiSveglioAlleQuattroEVenti,
+  itA2AMiaMadreNonPiaceIlMare,
+  itA2SePioveNonSiGioca,
+  itA2EroArrivatoDueOrePrima,
 ]
 
 export const READING_EXERCISES: ReadingExercise[] = RAW_EXERCISES.map((candidate) => {

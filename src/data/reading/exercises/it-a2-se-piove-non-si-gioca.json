@@ -1,0 +1,469 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-a2-se-piove-non-si-gioca",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Italiano A2"
+  },
+  "slug": "se-piove-non-si-gioca",
+  "series": {
+    "id": "italiano-a2-lectura-10",
+    "episode": 9,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-a2-a-mia-madre-non-piace-il-mare",
+    "nextExerciseId": "it-a2-ero-arrivato-due-ore-prima"
+  },
+  "classification": {
+    "genre": "reglamento comentado",
+    "topic": "las cuatro reglas de un torneo de barrio",
+    "intent": "learning",
+    "tags": [
+      "italiano a2",
+      "lectura",
+      "periodo ipotetico reale",
+      "ci vuole / ci vogliono"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Si llueve, no se juega"
+    },
+    "intro": {
+      "es": "Un reglamento de una página escrito a mano en 1998 y nunca cambiado. La cuarta regla existe por una rodilla de 1997. Lectura de italiano A2."
+    },
+    "mission": {
+      "es": "Averigua por qué la cuarta regla exige un familiar y no un entrenador."
+    },
+    "targetText": "Il torneo di calcio del quartiere ha un regolamento di una pagina, scritto a mano nel 1998 e mai cambiato.\n\nRegola uno: se piove, non si gioca. Non c'è discussione. Se piove poco, decide l'arbitro; se piove molto, si rimanda.\n\nRegola due: per iscrivere una squadra ci vogliono otto giocatori e venti euro. Non ci vuole il certificato medico, e questo è illegale, ma nessuno lo dice ad alta voce.\n\nRegola tre: se una squadra arriva con meno di sei giocatori, perde a tavolino. Se arriva con sette, si gioca in sette contro sette.\n\nRegola quattro, la più importante: se un giocatore ha meno di sedici anni, gioca solo se c'è un adulto della sua famiglia sul campo. Non un allenatore: un familiare.\n\nHo chiesto a Peppe, che organizza il torneo da ventisei anni, perché esiste questa regola. Mi ha spiegato che nel 1997 un ragazzo si è fatto male al ginocchio e nessuno della sua famiglia era lì per decidere. L'ambulanza è arrivata e ha chiesto una firma. Non c'era nessuno che poteva firmare.\n\nPoi ha aggiunto: ci vuole poco per organizzare un torneo. Ci vuole molto per non avere problemi.\n\nQuest'anno si sono iscritte quattordici squadre. Nove partite sono state rimandate per pioggia, perché a maggio qui piove sempre. Il regolamento non cambia: se piove, non si gioca. E se non si gioca, si gioca la settimana dopo.",
+    "wordCount": 230,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Construir el periodo hipotético real: se + presente, presente."
+      },
+      {
+        "es": "Distinguir ci vuole de ci vogliono según el número."
+      },
+      {
+        "es": "Leer un reglamento y encontrar la historia que hay detrás de una regla."
+      }
+    ],
+    "grammarFocus": [
+      "periodo-ipotetico-reale-a2",
+      "ci-vuole-vogliono-a2",
+      "negazione"
+    ],
+    "vocabulary": [
+      {
+        "surface": "regolamento",
+        "lemma": "regolamento",
+        "glosses": {
+          "es": "reglamento"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "iscrivere",
+        "lemma": "iscrivere",
+        "glosses": {
+          "es": "inscribir, apuntar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tavolino",
+        "lemma": "tavolino",
+        "glosses": {
+          "es": "mesita; «perdere a tavolino» es perder por incomparecencia"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "allenatore",
+        "lemma": "allenatore",
+        "glosses": {
+          "es": "entrenador"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ginocchio",
+        "lemma": "ginocchio",
+        "glosses": {
+          "es": "rodilla"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rimandate",
+        "lemma": "rimandare",
+        "glosses": {
+          "es": "aplazadas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "squadre",
+        "lemma": "squadra",
+        "glosses": {
+          "es": "equipos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "familiare",
+        "lemma": "familiare",
+        "glosses": {
+          "es": "pariente, miembro de la familia"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Los torneos de barrio italianos funcionan al margen de la federación, y el certificado médico deportivo, obligatorio por ley, es justo el papel que casi nadie presenta. Se sabe y se calla."
+    },
+    "spanishSpeakerNote": {
+      "es": "«Ci vuole» y «ci vogliono» son «hace falta» y «hacen falta»: el verbo concuerda con lo que se necesita, no con quien lo necesita. «Ci vogliono otto giocatori», «ci vuole il certificato»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato en italiano sobre hechos pasados, distinguir el passato prossimo del imperfetto, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere",
+      "avverbi-frequenza-modo-a2",
+      "ci-vuole-vogliono-a2",
+      "comparativi-a2",
+      "condizionale-presente-a2",
+      "congiunzioni-logiche-a2",
+      "da-presente-a2",
+      "forma-cortesia-a2",
+      "futuro-probabilita-a2",
+      "futuro-semplice-a2",
+      "imperfetto-a2",
+      "passato-prossimo-avere-a2",
+      "passato-prossimo-essere-a2",
+      "periodo-ipotetico-reale-a2",
+      "piacere-verbi-simili-a2",
+      "pronomi-diretti-a2",
+      "pronomi-indiretti-a2",
+      "pronomi-relativi-a2",
+      "stare-per-a2",
+      "trapassato-prossimo-a2",
+      "verbi-riflessivi-a2"
+    ],
+    "disallowedGrammar": [
+      "congiuntivo",
+      "passato remoto",
+      "periodo ipotetico irreale",
+      "forma passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 11.5,
+      "maxSentenceWords": 24,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Passato prossimo con avere y essere, imperfetto, futuro, condizionale y forma di cortesia. Sin congiuntivo ni passato remoto."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué muestra el texto?",
+      "options": [
+        {
+          "id": "origen",
+          "text": "Que cada regla del torneo tiene detrás un problema que ya ocurrió"
+        },
+        {
+          "id": "ilegal",
+          "text": "Que el torneo debería suspenderse por ser ilegal"
+        },
+        {
+          "id": "lluvia",
+          "text": "Que en mayo llueve demasiado para jugar al fútbol"
+        }
+      ],
+      "answer": "origen",
+      "evidence": "perché esiste questa regola. Mi ha spiegato che nel 1997 un ragazzo si è fatto male al ginocchio … Ci vuole molto per non avere problemi.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la frase de Peppe lo resume: organizar es fácil, evitar problemas no."
+        },
+        "incorrect": {
+          "es": "El texto menciona la ilegalidad de pasada y la lluvia es un dato. Busca de dónde viene la regla cuatro."
+        },
+        "strategy": {
+          "es": "Cuando alguien pregunta por qué existe una norma, la respuesta es la tesis del texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué hace falta para inscribir un equipo?",
+      "options": [
+        {
+          "id": "ocho",
+          "text": "Ocho jugadores y veinte euros"
+        },
+        {
+          "id": "seis",
+          "text": "Seis jugadores y el certificado médico"
+        },
+        {
+          "id": "catorce",
+          "text": "Catorce jugadores"
+        }
+      ],
+      "answer": "ocho",
+      "evidence": "per iscrivere una squadra ci vogliono otto giocatori e venti euro. Non ci vuole il certificato medico.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el certificado médico expresamente no hace falta."
+        },
+        "incorrect": {
+          "es": "Los seis son el mínimo para no perder por incomparecencia, y catorce son los equipos de este año."
+        },
+        "strategy": {
+          "es": "Si una cifra aparece varias veces en un texto, comprueba a qué se refiere cada una."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Un equipo con menos de seis jugadores «perde a tavolino». ¿Qué significa?",
+      "options": [
+        {
+          "id": "incomparecencia",
+          "text": "Pierde por incomparecencia, sin jugar"
+        },
+        {
+          "id": "mesa",
+          "text": "Pierde en un sorteo hecho sobre una mesa"
+        },
+        {
+          "id": "penaltis",
+          "text": "Pierde en la tanda de penaltis"
+        }
+      ],
+      "answer": "incomparecencia",
+      "evidence": "se una squadra arriva con meno di sei giocatori, perde a tavolino. Se arriva con sette, si gioca in sette contro sette.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y la frase siguiente muestra el caso contrario: con siete sí se juega."
+        },
+        "incorrect": {
+          "es": "La frase siguiente aclara cuándo sí se juega. Si con seis no, es que el partido no se disputa."
+        },
+        "strategy": {
+          "es": "Compara la regla con la excepción que viene justo después: la diferencia te da el sentido."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué la regla exige un familiar y no vale un entrenador?",
+      "options": [
+        {
+          "id": "firma",
+          "text": "Porque en una urgencia médica hace falta alguien de la familia que pueda firmar"
+        },
+        {
+          "id": "confianza",
+          "text": "Porque no confían en los entrenadores del barrio"
+        },
+        {
+          "id": "coste",
+          "text": "Porque contratar entrenadores costaría dinero"
+        }
+      ],
+      "answer": "firma",
+      "evidence": "nessuno della sua famiglia era lì per decidere. L'ambulanza è arrivata e ha chiesto una firma. Non c'era nessuno che poteva firmare.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la historia de 1997 lo explica entero: la ambulancia pidió una firma."
+        },
+        "incorrect": {
+          "es": "No se desconfía de nadie ni se habla de costes. Lee lo que ocurrió en 1997."
+        },
+        "strategy": {
+          "es": "Cuando una regla parece arbitraria, busca el episodio concreto que la originó."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el reglamento se ha modificado varias veces desde 1998.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "un regolamento di una pagina, scritto a mano nel 1998 e mai cambiato … Il regolamento non cambia.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: el texto lo dice al principio y lo repite al final."
+        },
+        "incorrect": {
+          "es": "Busca la primera frase del texto y la penúltima: dicen lo mismo."
+        },
+        "strategy": {
+          "es": "Si un dato aparece al principio y al final, el autor lo está subrayando."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena las cuatro reglas según el texto.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Si llueve, no se juega"
+        },
+        {
+          "id": "p2",
+          "text": "Hacen falta ocho jugadores y veinte euros"
+        },
+        {
+          "id": "p3",
+          "text": "Con menos de seis, se pierde sin jugar"
+        },
+        {
+          "id": "p4",
+          "text": "Los menores de dieciséis, solo con un familiar en el campo"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Regola uno: se piove, non si gioca … Regola due: per iscrivere una squadra ci vogliono otto giocatori … Regola tre … Regola quattro, la più importante…",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: el texto las numera él mismo."
+        },
+        "incorrect": {
+          "es": "El texto numera las reglas de uno a cuatro: sigue esos números."
+        },
+        "strategy": {
+          "es": "Si el texto numera sus partes, el orden ya está resuelto."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en italiano con las reglas de una actividad que conoces. Usa cinco veces «se + presente» y tres veces ci vuole o ci vogliono."
+    },
+    "minWords": 60,
+    "maxWords": 110,
+    "hints": [
+      "Se piove, non si gioca.",
+      "Ci vogliono otto giocatori.",
+      "Non ci vuole il certificato.",
+      "Se arriva tardi, non gioca."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de italiano y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano A2: si llueve, no se juega | WeLearn"
+    },
+    "description": {
+      "es": "Lee un reglamento comentado en italiano A2 y practica el periodo ipotetico reale y ci vuole / ci vogliono. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/italiano/a2/lectura/se-piove-non-si-gioca",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-a2-a-mia-madre-non-piace-il-mare",
+      "it-a2-ero-arrivato-due-ore-prima"
+    ]
+  }
+}

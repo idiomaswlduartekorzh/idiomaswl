@@ -1,0 +1,469 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-a2-mi-sveglio-alle-quattro-e-venti",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Italiano A2"
+  },
+  "slug": "mi-sveglio-alle-quattro-e-venti",
+  "series": {
+    "id": "italiano-a2-lectura-10",
+    "episode": 7,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-a2-il-piu-vecchio-non-e-il-piu-lento",
+    "nextExerciseId": "it-a2-a-mia-madre-non-piace-il-mare"
+  },
+  "classification": {
+    "genre": "diario de oficio",
+    "topic": "limpiar trenes antes del primer servicio",
+    "intent": "learning",
+    "tags": [
+      "italiano a2",
+      "lectura",
+      "verbos reflexivos",
+      "stare per"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Me despierto a las cuatro y veinte"
+    },
+    "intro": {
+      "es": "Once años despertándose dos minutos antes del despertador, sin despertador. Veinte minutos por vagón y un violín en el asiento. Lectura de italiano A2."
+    },
+    "mission": {
+      "es": "Averigua qué distingue aburrirse de preocuparse, según ella."
+    },
+    "targetText": "Mi sveglio alle quattro e venti, sette giorni su sette, da undici anni. Non uso la sveglia del telefono: mi sveglio da sola, due minuti prima. Il corpo si abitua a tutto.\n\nLavoro alla pulizia dei treni regionali. Il mio turno comincia alle cinque e mezza e finisce alle undici. Quando arrivo, il primo treno sta per partire e l'ultimo della notte è appena arrivato. Devo pulire quello che sta fermo. Ho venti minuti: alle sei e dodici quel treno riparte.\n\nMi metto i guanti, mi lego i capelli e comincio dal fondo. Trovo di tutto: giornali, bottiglie, una volta un violino. Il violino l'ho portato all'ufficio oggetti smarriti e dopo tre giorni un ragazzo si è presentato a ritirarlo. Non si è arrabbiato con nessuno, ma piangeva.\n\nI passeggeri non ci vedono: noi finiamo e poi loro salgono.\n\nMia figlia mi chiede sempre se mi annoio. Non mi annoio. Mi preoccupo, che è diverso. Quando un treno sta per partire e io non ho finito, il cuore va veloce.\n\nAlle undici torno a casa e mi addormento sul divano per un'ora. Poi mi alzo e comincia l'altra giornata, quella normale.\n\nUndici anni così. Non mi lamento e non mi vanto. È un lavoro: qualcuno lo deve fare, e quel qualcuno si sveglia alle quattro e venti.",
+    "wordCount": 217,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Conjugar los verbos reflexivos: mi sveglio, mi metto, si abitua, mi addormento."
+      },
+      {
+        "es": "Usar stare per + infinitivo para lo que está a punto de ocurrir."
+      },
+      {
+        "es": "Distinguir dos estados parecidos que el texto separa a propósito."
+      }
+    ],
+    "grammarFocus": [
+      "verbi-riflessivi-a2",
+      "stare-per-a2",
+      "presente-verbi-ere-ire"
+    ],
+    "vocabulary": [
+      {
+        "surface": "sveglia",
+        "lemma": "sveglia",
+        "glosses": {
+          "es": "despertador"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "guanti",
+        "lemma": "guanto",
+        "glosses": {
+          "es": "guantes"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "lego",
+        "lemma": "legarsi",
+        "glosses": {
+          "es": "me recojo (el pelo)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "smarriti",
+        "lemma": "smarrito",
+        "glosses": {
+          "es": "perdidos; «oggetti smarriti» es objetos perdidos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ritirarlo",
+        "lemma": "ritirare",
+        "glosses": {
+          "es": "recogerlo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "arrabbiato",
+        "lemma": "arrabbiarsi",
+        "glosses": {
+          "es": "enfadado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "annoio",
+        "lemma": "annoiarsi",
+        "glosses": {
+          "es": "me aburro"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vanto",
+        "lemma": "vantarsi",
+        "glosses": {
+          "es": "presumo, me jacto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La limpieza de los trenes regionales italianos se hace en la propia estación, en las ventanas de veinte o treinta minutos entre el último servicio nocturno y el primero de la mañana. El turno empieza antes de que abra la taquilla."
+    },
+    "spanishSpeakerNote": {
+      "es": "El reflexivo italiano va delante del verbo conjugado y pegado al infinitivo: «mi sveglio» pero «devo svegliarmi». Y «stare per» + infinitivo es «estar a punto de»: «sta per partire»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato en italiano sobre hechos pasados, distinguir el passato prossimo del imperfetto, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere",
+      "avverbi-frequenza-modo-a2",
+      "ci-vuole-vogliono-a2",
+      "comparativi-a2",
+      "condizionale-presente-a2",
+      "congiunzioni-logiche-a2",
+      "da-presente-a2",
+      "forma-cortesia-a2",
+      "futuro-probabilita-a2",
+      "futuro-semplice-a2",
+      "imperfetto-a2",
+      "passato-prossimo-avere-a2",
+      "passato-prossimo-essere-a2",
+      "periodo-ipotetico-reale-a2",
+      "piacere-verbi-simili-a2",
+      "pronomi-diretti-a2",
+      "pronomi-indiretti-a2",
+      "pronomi-relativi-a2",
+      "stare-per-a2",
+      "trapassato-prossimo-a2",
+      "verbi-riflessivi-a2"
+    ],
+    "disallowedGrammar": [
+      "congiuntivo",
+      "passato remoto",
+      "periodo ipotetico irreale",
+      "forma passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 9.9,
+      "maxSentenceWords": 18,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Passato prossimo con avere y essere, imperfetto, futuro, condizionale y forma di cortesia. Sin congiuntivo ni passato remoto."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué transmite el diario?",
+      "options": [
+        {
+          "id": "dignidad",
+          "text": "Un trabajo invisible contado sin queja y sin orgullo, con sus veinte minutos de tensión real"
+        },
+        {
+          "id": "queja",
+          "text": "Una queja por el horario y el sueldo"
+        },
+        {
+          "id": "violin",
+          "text": "La historia del violín perdido y su dueño"
+        }
+      ],
+      "answer": "dignidad",
+      "evidence": "Non mi lamento e non mi vanto. È un lavoro: qualcuno lo deve fare.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la propia narradora descarta las dos lecturas fáciles en una frase."
+        },
+        "incorrect": {
+          "es": "El violín es un episodio y no hay queja: el texto la niega expresamente. Lee la última frase."
+        },
+        "strategy": {
+          "es": "Cuando el narrador dice qué NO está haciendo, te está dando la clave del tono."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto tiempo tiene para limpiar el tren parado?",
+      "options": [
+        {
+          "id": "veinte",
+          "text": "Veinte minutos"
+        },
+        {
+          "id": "hora",
+          "text": "Una hora"
+        },
+        {
+          "id": "media",
+          "text": "Media hora"
+        }
+      ],
+      "answer": "veinte",
+      "evidence": "Devo pulire quello che sta fermo. Ho venti minuti: alle sei e dodici quel treno riparte.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y de ahí viene lo que ella llama preocupación."
+        },
+        "incorrect": {
+          "es": "La hora es lo que duerme en el sofá al volver. Busca la frase con «Ho venti minuti»."
+        },
+        "strategy": {
+          "es": "Empareja cada duración con su actividad: turno, limpieza, siesta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Llevó el violín a «l'ufficio oggetti smarriti». ¿Qué es?",
+      "options": [
+        {
+          "id": "perdidos",
+          "text": "La oficina de objetos perdidos"
+        },
+        {
+          "id": "reparacion",
+          "text": "Un taller de reparación de instrumentos"
+        },
+        {
+          "id": "aduana",
+          "text": "La aduana de la estación"
+        }
+      ],
+      "answer": "perdidos",
+      "evidence": "Il violino l'ho portato all'ufficio oggetti smarriti e dopo tre giorni un ragazzo si è presentato a ritirarlo.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y el dueño apareció tres días después a recogerlo."
+        },
+        "incorrect": {
+          "es": "Alguien va a recogerlo tres días después: es donde se guarda lo que aparece, no donde se arregla."
+        },
+        "strategy": {
+          "es": "Si alguien va a recuperar el objeto a ese sitio, es un depósito, no un taller."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué distingue aburrirse de preocuparse?",
+      "options": [
+        {
+          "id": "tension",
+          "text": "Porque su trabajo no es monótono: tiene un límite de tiempo real que puede no cumplir"
+        },
+        {
+          "id": "salud",
+          "text": "Porque el aburrimiento no afecta a la salud y la preocupación sí"
+        },
+        {
+          "id": "hija",
+          "text": "Porque quiere tranquilizar a su hija"
+        }
+      ],
+      "answer": "tension",
+      "evidence": "Non mi annoio. Mi preoccupo, che è diverso. Quando un treno sta per partire e io non ho finito, il cuore va veloce.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la frase siguiente da el ejemplo exacto: el tren que sale sin que ella haya acabado."
+        },
+        "incorrect": {
+          "es": "No habla de salud ni intenta tranquilizar a nadie. Lee la frase que viene después."
+        },
+        "strategy": {
+          "es": "Cuando alguien corrige una palabra por otra, la razón está en el ejemplo que da a continuación."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: usa el despertador del teléfono para levantarse a las cuatro y veinte.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Non uso la sveglia del telefono: mi sveglio da sola, due minuti prima.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: se despierta sola, y hasta dos minutos antes."
+        },
+        "incorrect": {
+          "es": "La respuesta está en la segunda frase del texto, justo después de la hora."
+        },
+        "strategy": {
+          "es": "Si una pregunta menciona un objeto concreto, búscalo en el texto: suele aparecer una sola vez."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la jornada que describe.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Se despierta sola a las cuatro y veinte"
+        },
+        {
+          "id": "p2",
+          "text": "Llega y limpia el tren parado en veinte minutos"
+        },
+        {
+          "id": "p3",
+          "text": "Los pasajeros suben cuando ellas ya han terminado"
+        },
+        {
+          "id": "p4",
+          "text": "A las once vuelve a casa y duerme una hora"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Mi sveglio alle quattro e venti … Devo pulire quello che sta fermo. Ho venti minuti … I passeggeri non ci vedono: noi finiamo e poi loro salgono … Alle undici torno a casa.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: el texto sigue el reloj de principio a fin."
+        },
+        "incorrect": {
+          "es": "Guíate por las horas: cuatro y veinte, cinco y media, seis y doce, once."
+        },
+        "strategy": {
+          "es": "Un diario de oficio suele estar ordenado por el reloj: sigue las horas."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en italiano sobre tu primera hora del día. Usa seis verbos reflexivos y dos veces stare per + infinitivo."
+    },
+    "minWords": 60,
+    "maxWords": 110,
+    "hints": [
+      "Mi sveglio alle…",
+      "Mi metto le scarpe e…",
+      "Il treno sta per partire.",
+      "Non mi lamento."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de italiano y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano A2: me despierto a las cuatro y veinte | WeLearn"
+    },
+    "description": {
+      "es": "Lee un diario de oficio en italiano A2 y practica los verbos reflexivos y stare per + infinitivo. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/italiano/a2/lectura/mi-sveglio-alle-quattro-e-venti",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-a2-il-piu-vecchio-non-e-il-piu-lento",
+      "it-a2-a-mia-madre-non-piace-il-mare"
+    ]
+  }
+}

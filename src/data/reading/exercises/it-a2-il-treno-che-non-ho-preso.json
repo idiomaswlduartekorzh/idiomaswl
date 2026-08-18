@@ -1,0 +1,468 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-a2-il-treno-che-non-ho-preso",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Italiano A2"
+  },
+  "slug": "il-treno-che-non-ho-preso",
+  "series": {
+    "id": "italiano-a2-lectura-10",
+    "episode": 1,
+    "totalEpisodes": 10,
+    "previousExerciseId": null,
+    "nextExerciseId": "it-a2-mio-padre-non-parlava-al-telefono"
+  },
+  "classification": {
+    "genre": "relato en primera persona",
+    "topic": "dejar pasar un tren a propósito",
+    "intent": "learning",
+    "tags": [
+      "italiano a2",
+      "lectura",
+      "passato prossimo con avere",
+      "passato prossimo con essere"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El tren que no cogí"
+    },
+    "intro": {
+      "es": "Tenía el billete, la maleta cerrada y un trabajo esperando en Milán. Se quedó sentado en el banco del andén tres. Lectura de italiano A2."
+    },
+    "mission": {
+      "es": "Averigua qué encontró en esas dos horas y diez minutos."
+    },
+    "targetText": "Non ho preso il treno delle sette e quaranta. Avevo il biglietto in tasca, la valigia era chiusa e il lavoro a Milano cominciava il lunedì dopo. Sono arrivato in stazione con venti minuti di anticipo, ho comprato un caffè e mi sono seduto sulla panchina del binario tre.\n\nIl treno è arrivato. Le porte si sono aperte. Le persone sono salite. Le porte si sono chiuse. Io sono rimasto sulla panchina con il caffè in mano.\n\nNon ho una spiegazione elegante. Non avevo paura di Milano e non volevo tornare a casa. Semplicemente non mi sono alzato.\n\nUn uomo delle pulizie mi ha guardato e mi ha fatto una domanda: ha perso il treno? Ho risposto che sì. Lui ha detto: succede. Poi ha continuato a pulire.\n\nHo aspettato due ore e dieci minuti. In quelle due ore non ho telefonato a nessuno, non ho scritto a nessuno e nessuno sapeva dove ero. Ho pensato che era la prima volta nella mia vita.\n\nHo preso il treno delle nove e cinquanta. A Milano ho detto che il primo treno era in ritardo. Nessuno ha controllato niente, perché a nessuno interessava.\n\nHo lavorato in quell'azienda quattro anni e non ho mai raccontato questa storia. La racconto adesso perché ho capito una cosa: quelle due ore non sono state un errore. Sono state le uniche due ore della mia vita in cui nessuno mi cercava.",
+    "wordCount": 234,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Elegir el auxiliar del passato prossimo: avere para casi todo, essere para movimiento y verbos reflexivos."
+      },
+      {
+        "es": "Concordar el participio con essere: sono salite, sono state."
+      },
+      {
+        "es": "Distinguir un hecho puntual de una situación de fondo en imperfetto."
+      }
+    ],
+    "grammarFocus": [
+      "passato-prossimo-avere-a2",
+      "passato-prossimo-essere-a2",
+      "presente-verbi-are"
+    ],
+    "vocabulary": [
+      {
+        "surface": "biglietto",
+        "lemma": "biglietto",
+        "glosses": {
+          "es": "billete"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "valigia",
+        "lemma": "valigia",
+        "glosses": {
+          "es": "maleta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "panchina",
+        "lemma": "panchina",
+        "glosses": {
+          "es": "banco para sentarse"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "binario",
+        "lemma": "binario",
+        "glosses": {
+          "es": "vía, andén"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "anticipo",
+        "lemma": "anticipo",
+        "glosses": {
+          "es": "adelanto; «con anticipo» es con tiempo de sobra"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pulizie",
+        "lemma": "pulizie",
+        "glosses": {
+          "es": "limpieza; «uomo delle pulizie» es limpiador"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ritardo",
+        "lemma": "ritardo",
+        "glosses": {
+          "es": "retraso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "azienda",
+        "lemma": "azienda",
+        "glosses": {
+          "es": "empresa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En Italia el andén se llama «binario» y es el número que se anuncia, no la vía. Perder un tren regional no es grave: los siguientes salen cada una o dos horas."
+    },
+    "spanishSpeakerNote": {
+      "es": "El passato prossimo elige auxiliar igual que el francés o el alemán: «ho preso» pero «sono arrivato». Con essere el participio concuerda: «le porte si sono aperte», «le persone sono salite». El español no hace nada de esto."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato en italiano sobre hechos pasados, distinguir el passato prossimo del imperfetto, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere",
+      "avverbi-frequenza-modo-a2",
+      "ci-vuole-vogliono-a2",
+      "comparativi-a2",
+      "condizionale-presente-a2",
+      "congiunzioni-logiche-a2",
+      "da-presente-a2",
+      "forma-cortesia-a2",
+      "futuro-probabilita-a2",
+      "futuro-semplice-a2",
+      "imperfetto-a2",
+      "passato-prossimo-avere-a2",
+      "passato-prossimo-essere-a2",
+      "periodo-ipotetico-reale-a2",
+      "piacere-verbi-simili-a2",
+      "pronomi-diretti-a2",
+      "pronomi-indiretti-a2",
+      "pronomi-relativi-a2",
+      "stare-per-a2",
+      "trapassato-prossimo-a2",
+      "verbi-riflessivi-a2"
+    ],
+    "disallowedGrammar": [
+      "congiuntivo",
+      "passato remoto",
+      "periodo ipotetico irreale",
+      "forma passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 9.8,
+      "maxSentenceWords": 22,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Passato prossimo con avere y essere, imperfetto, futuro, condizionale y forma di cortesia. Sin congiuntivo ni passato remoto."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué descubrió el narrador al perder el tren?",
+      "options": [
+        {
+          "id": "solo",
+          "text": "Que fueron las únicas dos horas de su vida en que nadie sabía dónde estaba"
+        },
+        {
+          "id": "trabajo",
+          "text": "Que en realidad no quería aquel trabajo en Milán"
+        },
+        {
+          "id": "tarde",
+          "text": "Que llegar tarde no tiene consecuencias"
+        }
+      ],
+      "answer": "solo",
+      "evidence": "Sono state le uniche due ore della mia vita in cui nessuno mi cercava.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y por eso lo cuenta veinte años después: no fue un error."
+        },
+        "incorrect": {
+          "es": "Trabajó allí cuatro años, y lo de llegar tarde es un detalle. Lee la última frase."
+        },
+        "strategy": {
+          "es": "Cuando alguien cuenta algo que calló durante años, la razón para contarlo está al final."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué le dijo el hombre de la limpieza?",
+      "options": [
+        {
+          "id": "succede",
+          "text": "Le preguntó si había perdido el tren y luego dijo «pasa»"
+        },
+        {
+          "id": "ayuda",
+          "text": "Le ofreció ayuda para cambiar el billete"
+        },
+        {
+          "id": "nada",
+          "text": "No le dijo nada y siguió limpiando"
+        }
+      ],
+      "answer": "succede",
+      "evidence": "mi ha fatto una domanda: ha perso il treno? Ho risposto che sì. Lui ha detto: succede.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y después siguió limpiando sin añadir nada."
+        },
+        "incorrect": {
+          "es": "Sí que habló, y no ofreció ayuda. Busca la frase con «ha perso il treno?»."
+        },
+        "strategy": {
+          "es": "Cuando un texto reproduce un diálogo corto, la respuesta está en la cita literal."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Dice que llegó «con venti minuti di anticipo». ¿Qué significa «anticipo»?",
+      "options": [
+        {
+          "id": "adelanto",
+          "text": "Con veinte minutos de adelanto"
+        },
+        {
+          "id": "retraso",
+          "text": "Con veinte minutos de retraso"
+        },
+        {
+          "id": "pago",
+          "text": "Con un pago adelantado"
+        }
+      ],
+      "answer": "adelanto",
+      "evidence": "Sono arrivato in stazione con venti minuti di anticipo, ho comprato un caffè e mi sono seduto.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Le sobró tiempo, y con él se compró un café."
+        },
+        "incorrect": {
+          "es": "Si hubiera llegado tarde no habría podido ver salir el tren. El retraso en el texto es «ritardo»."
+        },
+        "strategy": {
+          "es": "El italiano opone «anticipo» a «ritardo»: si ves los dos en un texto, uno te define el otro."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué en Milán nadie comprobó su versión?",
+      "options": [
+        {
+          "id": "indiferencia",
+          "text": "Porque a nadie le importaba: llegó y punto"
+        },
+        {
+          "id": "prueba",
+          "text": "Porque presentó un justificante de la compañía"
+        },
+        {
+          "id": "jefe",
+          "text": "Porque su jefe también había perdido el tren"
+        }
+      ],
+      "answer": "indiferencia",
+      "evidence": "Nessuno ha controllato niente, perché a nessuno interessava.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo dice con un «perché»: no había interés, no había justificante."
+        },
+        "incorrect": {
+          "es": "No aparece ningún justificante ni ningún jefe. Lee la explicación tras el «perché»."
+        },
+        "strategy": {
+          "es": "Una explicación con «perché» es literal: no hace falta deducir."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: durante esas dos horas llamó por teléfono a su familia para avisar.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "non ho telefonato a nessuno, non ho scritto a nessuno e nessuno sapeva dove ero",
+      "feedback": {
+        "correct": {
+          "es": "Falso, y es el punto del texto: precisamente nadie sabía dónde estaba."
+        },
+        "incorrect": {
+          "es": "Busca la frase con tres negaciones seguidas. Ahí está la respuesta."
+        },
+        "strategy": {
+          "es": "Tres negaciones seguidas en una frase son una afirmación fuerte: léela entera."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena los hechos del relato.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Llega con adelanto y se sienta con un café"
+        },
+        {
+          "id": "p2",
+          "text": "El tren se va y él no se levanta"
+        },
+        {
+          "id": "p3",
+          "text": "El limpiador le pregunta si lo ha perdido"
+        },
+        {
+          "id": "p4",
+          "text": "Coge el de las 9:50 y en Milán dice que hubo retraso"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Sono arrivato in stazione con venti minuti di anticipo … Io sono rimasto sulla panchina … Un uomo delle pulizie mi ha guardato … Ho preso il treno delle nove e cinquanta.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El relato va en orden, sin saltos."
+        },
+        "incorrect": {
+          "es": "Guíate por los horarios: primero las 7:40, luego el limpiador, después las 9:50."
+        },
+        "strategy": {
+          "es": "Si el relato menciona horas concretas, esas horas ordenan los hechos."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en italiano sobre algo que dejaste pasar a propósito. Usa seis verbos en passato prossimo, al menos dos con essere."
+    },
+    "minWords": 60,
+    "maxWords": 110,
+    "hints": [
+      "Non ho preso…",
+      "Sono arrivato con anticipo.",
+      "Mi sono seduto e ho aspettato.",
+      "Non ho raccontato questa storia a nessuno."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de italiano y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano A2: el tren que no cogí | WeLearn"
+    },
+    "description": {
+      "es": "Lee un relato en italiano A2 y practica el passato prossimo con avere y con essere. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/italiano/a2/lectura/il-treno-che-non-ho-preso",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-a2-mio-padre-non-parlava-al-telefono"
+    ]
+  }
+}
