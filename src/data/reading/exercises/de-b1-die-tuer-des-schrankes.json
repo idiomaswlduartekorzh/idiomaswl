@@ -1,0 +1,491 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-b1-die-tuer-des-schrankes",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Alemán B1"
+  },
+  "slug": "die-tuer-des-schrankes",
+  "series": {
+    "id": "aleman-b1-lectura-10",
+    "episode": 7,
+    "totalEpisodes": 10,
+    "previousExerciseId": "de-b1-ich-freue-mich-auf-nichts",
+    "nextExerciseId": "de-b1-sie-hat-nie-fahren-wollen"
+  },
+  "classification": {
+    "genre": "relato de oficio",
+    "topic": "palabras compuestas en una tienda de muebles",
+    "intent": "learning",
+    "tags": [
+      "aleman b1",
+      "lectura",
+      "formación de palabras",
+      "genitivo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La puerta del armario"
+    },
+    "intro": {
+      "es": "Un vendedor de Medellín en una tienda de muebles de Dortmund descubre que el alemán tiene dos maneras de decir lo mismo, y que no son intercambiables. Lectura de alemán B1."
+    },
+    "mission": {
+      "es": "Averigua el truco para leer una palabra alemana de cuarenta letras sin asustarse."
+    },
+    "targetText": "Ich verkaufe seit drei Jahren Möbel in einem großen Möbelhaus in Dortmund. Ich komme aus Medellín, und mein erstes Jahr hier war eine einzige lange Auseinandersetzung mit langen Wörtern.\n\nAm dritten Arbeitstag gab mir mein Chef eine Liste. Darauf stand: Schrankinnenbeleuchtungsschalter. Ich dachte, das sei ein Scherz für den Neuen. Es war keiner. Es gibt dieses Ding, es kostet vierzehn Euro, und der Name beschreibt es vollständig: der Schalter der Beleuchtung des Innenraums des Schrankes.\n\nDas ist der Punkt, den ich erst nach Monaten verstanden habe. Das Deutsche hat zwei Wege für dieselbe Sache. Man kann sagen: die Tür des Schrankes. Oder man kann sagen: die Schranktür. Der erste Weg ist der Genitiv und klingt ordentlich, fast amtlich. Der zweite Weg klebt die Wörter einfach zusammen und ist das, was die Leute tatsächlich sagen.\n\nKunden benutzen den zweiten Weg. Verträge benutzen den ersten.\n\nWenn ich also lese, dass die Lieferung des Schrankes innerhalb der nächsten Woche erfolgt, dann bin ich in der Sprache des Vertrages. Wenn eine Kundin fragt, ob die Schranktür links oder rechts aufgeht, bin ich in der Sprache des Ladens. Beide Sätze meinen dasselbe Möbelstück.\n\nMeine Kollegin Ayşe hat mir einen Trick beigebracht, der besser ist als jede Regel. Bei einem langen Wort liest man von hinten. Das letzte Stück sagt, was das Ding ist. Alles davor sagt nur, welches. Schrankinnenbeleuchtungsschalter: ein Schalter. Der ganze Rest ist Adresse.\n\nSeitdem habe ich vor keinem Wort mehr Angst. Die Unfreundlichkeit eines Wortes hat nichts mit seiner Länge zu tun.\n\nLetzte Woche kam ein Mann und fragte nach einem Ding, dessen Namen er selbst nicht wusste. Er beschrieb es mit den Händen: das kleine Teil unten an der Tür des Kühlschranks, das den Schmutz aufhält.\n\nIch wusste sofort, was er meinte, und ich wusste auch, dass ich das Wort dafür nie gehört hatte. Wir haben es gemeinsam gebaut, Stück für Stück: Kühlschranktürdichtung. Er hat gelacht und gesagt, das sei bestimmt richtig. Es war richtig.",
+    "wordCount": 324,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Descomponer una palabra compuesta empezando por el final."
+      },
+      {
+        "es": "Alternar entre genitivo y palabra compuesta según el registro."
+      },
+      {
+        "es": "Reconocer el registro administrativo frente al registro hablado."
+      }
+    ],
+    "grammarFocus": [
+      "wortbildung-b1",
+      "genitiv-b1",
+      "genitiv-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Auseinandersetzung",
+        "lemma": "Auseinandersetzung",
+        "glosses": {
+          "es": "pelea, enfrentamiento prolongado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Scherz",
+        "lemma": "Scherz",
+        "glosses": {
+          "es": "broma"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Beleuchtung",
+        "lemma": "Beleuchtung",
+        "glosses": {
+          "es": "iluminación"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "amtlich",
+        "lemma": "amtlich",
+        "glosses": {
+          "es": "oficial, de administración"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Lieferung",
+        "lemma": "Lieferung",
+        "glosses": {
+          "es": "entrega de un pedido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "beigebracht",
+        "lemma": "beibringen",
+        "glosses": {
+          "es": "enseñado a alguien"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Unfreundlichkeit",
+        "lemma": "Unfreundlichkeit",
+        "glosses": {
+          "es": "antipatía, aspereza"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Schmutz",
+        "lemma": "Schmutz",
+        "glosses": {
+          "es": "suciedad"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La palabra compuesta alemana no tiene límite gramatical de longitud: se forma sobre la marcha y no hace falta que exista en el diccionario para que todo el mundo la entienda a la primera."
+    },
+    "spanishSpeakerNote": {
+      "es": "Donde el español encadena «de»: «el interruptor de la luz del interior del armario», el alemán tiene dos opciones: el genitivo, que suena a contrato, o la palabra pegada, que es lo que se habla. Empieza a leerla por el final y deja de darte miedo."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto alemán largo que desarrolla una idea y cambia de dirección, separar lo que ocurrió de lo que alguien dice que ocurrió, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens",
+      "adjektivdeklination-a2",
+      "da-hin-her-a2",
+      "dativ-a2",
+      "futur-i-a2",
+      "genitiv-a2",
+      "infinitiv-zu-a2",
+      "komparativ-superlativ-a2",
+      "konjunktionen-a2",
+      "konjunktiv-ii-wurden-a2",
+      "modalverben-praeteritum-a2",
+      "partizip-als-adjektiv-a2",
+      "passiv-praesens-a2",
+      "perfekt-haben-a2",
+      "perfekt-sein-a2",
+      "praeteritum-basic-a2",
+      "reflexivverben-a2",
+      "relativsaetze-a2",
+      "trennbare-verben-praeteritum-a2",
+      "wechselpraepositionen-a2",
+      "zweiteilige-konnektoren-a2",
+      "adjektivdeklination-b1",
+      "genitiv-b1",
+      "imperativ-b1",
+      "indirekte-rede-b1",
+      "infinitiv-zu-b1",
+      "kausale-konzessive-satze-b1",
+      "konjunktiv-ii-b1",
+      "modalverben-prateritum-b1",
+      "nebensatze-b1",
+      "partizip-als-adjektiv-b1",
+      "passiv-b1",
+      "perfekt-haben-sein-b1",
+      "prateritum-starke-verben-b1",
+      "reflexive-verben-b1",
+      "relativsatze-b1",
+      "temporale-prapositionen-b1",
+      "verben-mit-prapositionen-b1",
+      "wechselprapositionen-b1",
+      "wortbildung-b1",
+      "zweiteilige-konnektoren-b1"
+    ],
+    "disallowedGrammar": [
+      "Futur II",
+      "erweitertes Partizipialattribut",
+      "Nominalstil amtlich",
+      "Konjunktiv I seltener Verben"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 10.1,
+      "maxSentenceWords": 22,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Prosa B1 con Konjunktiv II, indirekte Rede, pasiva y subordinadas encadenadas. Konjunktiv I solo en verbos frecuentes (sei, habe, wolle). Inferencia moderada: exige cruzar dos pasajes separados."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué aprende el narrador a lo largo del texto?",
+      "options": [
+        {
+          "id": "dos",
+          "text": "Que el alemán tiene dos formas para la misma relación, y que cada una pertenece a un registro"
+        },
+        {
+          "id": "diccionario",
+          "text": "Que hay que memorizar el diccionario de muebles para vender"
+        },
+        {
+          "id": "dialecto",
+          "text": "Que en Dortmund se habla un dialecto difícil de entender"
+        }
+      ],
+      "answer": "dos",
+      "evidence": "Das Deutsche hat zwei Wege für dieselbe Sache … Kunden benutzen den zweiten Weg. Verträge benutzen den ersten.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo cierra con el ejemplo del cliente: la palabra la construyen los dos juntos."
+        },
+        "incorrect": {
+          "es": "No se habla de dialecto ni de memorizar listas. Busca la frase que dice cuántos caminos hay."
+        },
+        "strategy": {
+          "es": "Cuando un texto dice «hay dos maneras», la comparación entre ambas suele ser el asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿En qué consiste el truco que le enseña Ayşe?",
+      "options": [
+        {
+          "id": "final",
+          "text": "Leer la palabra desde el final: el último trozo dice qué cosa es"
+        },
+        {
+          "id": "articulo",
+          "text": "Buscar el artículo para saber el género"
+        },
+        {
+          "id": "dividir",
+          "text": "Dividir la palabra siempre en dos mitades iguales"
+        }
+      ],
+      "answer": "final",
+      "evidence": "Bei einem langen Wort liest man von hinten. Das letzte Stück sagt, was das Ding ist. Alles davor sagt nur, welches.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el propio texto lo aplica al interruptor: lo demás es dirección."
+        },
+        "incorrect": {
+          "es": "El truco no tiene que ver con el género ni con partir por la mitad. Busca el párrafo de Ayşe."
+        },
+        "strategy": {
+          "es": "Cuando un texto atribuye un truco a un personaje, ese truco viene explicado justo después."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El narrador dice que el genitivo suena «amtlich». ¿Qué quiere decir?",
+      "options": [
+        {
+          "id": "oficial",
+          "text": "Que suena a documento oficial"
+        },
+        {
+          "id": "anticuado",
+          "text": "Que suena antiguo y ya nadie lo usa"
+        },
+        {
+          "id": "grosero",
+          "text": "Que suena grosero"
+        }
+      ],
+      "answer": "oficial",
+      "evidence": "Der erste Weg ist der Genitiv und klingt ordentlich, fast amtlich … Verträge benutzen den ersten.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y la frase siguiente lo confirma con los contratos."
+        },
+        "incorrect": {
+          "es": "El texto no dice que nadie lo use: dice quién lo usa. Sigue leyendo dos frases más."
+        },
+        "strategy": {
+          "es": "Si no entiendes un adjetivo, busca quién o qué lo usa según el texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el episodio final del cliente cierra el texto?",
+      "options": [
+        {
+          "id": "aplica",
+          "text": "Porque demuestra que ya no necesita conocer la palabra: sabe fabricarla"
+        },
+        {
+          "id": "venta",
+          "text": "Porque logró vender un frigorífico caro"
+        },
+        {
+          "id": "error",
+          "text": "Porque el narrador se equivocó y tuvo que consultar a Ayşe"
+        }
+      ],
+      "answer": "aplica",
+      "evidence": "Wir haben es gemeinsam gebaut, Stück für Stück: Kühlschranktürdichtung … Es war richtig.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Pasa de sufrir palabras largas a construirlas con un desconocido, y acierta."
+        },
+        "incorrect": {
+          "es": "No hay venta ni consulta a nadie: la palabra la inventan entre los dos. Fíjate en el verbo «gebaut»."
+        },
+        "strategy": {
+          "es": "Un final que repite en acción lo que el texto explicó antes en teoría es una demostración, no una anécdota."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la lista que le dio el jefe el tercer día era una broma para el empleado nuevo.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Ich dachte, das sei ein Scherz für den Neuen. Es war keiner. Es gibt dieses Ding, es kostet vierzehn Euro.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: él lo creyó, pero el texto lo desmiente en la frase siguiente y hasta da el precio."
+        },
+        "incorrect": {
+          "es": "Distingue lo que el narrador pensó de lo que el texto afirma. Van en frases seguidas."
+        },
+        "strategy": {
+          "es": "Después de «Ich dachte» casi siempre viene una corrección: no te quedes en la primera frase."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena los pasos del relato.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "El jefe le entrega la lista con la palabra imposible"
+        },
+        {
+          "id": "p2",
+          "text": "Descubre que hay dos caminos: genitivo y palabra compuesta"
+        },
+        {
+          "id": "p3",
+          "text": "Ayşe le enseña a leer desde el final"
+        },
+        {
+          "id": "p4",
+          "text": "Con un cliente construye una palabra que no había oído nunca"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Am dritten Arbeitstag gab mir mein Chef eine Liste … Das Deutsche hat zwei Wege … Meine Kollegin Ayşe hat mir einen Trick beigebracht … Letzte Woche kam ein Mann …",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: susto, regla, truco y aplicación."
+        },
+        "incorrect": {
+          "es": "Guíate por «Am dritten Arbeitstag», «erst nach Monaten», el párrafo de Ayşe y «Letzte Woche»."
+        },
+        "strategy": {
+          "es": "Un relato de aprendizaje suele ir del problema a la regla y de la regla al uso."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en alemán explicando un objeto de tu trabajo o tu casa. Usa tres palabras compuestas y tres construcciones con genitivo (des/der)."
+    },
+    "minWords": 70,
+    "maxWords": 130,
+    "hints": [
+      "Die Tür des Schrankes …",
+      "Die Schranktür …",
+      "Das letzte Stück sagt, was es ist.",
+      "Ich habe vor langen Wörtern keine Angst mehr."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de alemán y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán B1: la puerta del armario | WeLearn"
+    },
+    "description": {
+      "es": "Lee un relato de oficio en alemán B1 y practica la formación de palabras compuestas y el genitivo. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/b1/lectura/die-tuer-des-schrankes",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-b1-ich-freue-mich-auf-nichts",
+      "de-b1-sie-hat-nie-fahren-wollen"
+    ]
+  }
+}

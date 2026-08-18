@@ -1,0 +1,490 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-b1-der-konjunktiv-der-nachbarn",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Alemán B1"
+  },
+  "slug": "der-konjunktiv-der-nachbarn",
+  "series": {
+    "id": "aleman-b1-lectura-10",
+    "episode": 1,
+    "totalEpisodes": 10,
+    "previousExerciseId": null,
+    "nextExerciseId": "de-b1-was-alles-repariert-wurde"
+  },
+  "classification": {
+    "genre": "crónica de pueblo",
+    "topic": "un rumor que se sostiene solo con la gramática",
+    "intent": "learning",
+    "tags": [
+      "aleman b1",
+      "lectura",
+      "Konjunktiv II",
+      "estilo indirecto"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El subjuntivo de los vecinos"
+    },
+    "intro": {
+      "es": "Un pueblo entero habla durante tres semanas de una mujer recién llegada, y ni una sola frase está en indicativo. Lectura de alemán B1."
+    },
+    "mission": {
+      "es": "Averigua qué revela la forma verbal que usan los vecinos, aunque nadie lo diga."
+    },
+    "targetText": "Als Frau Kessler die alte Werkstatt in der Mühlenstraße mietete, wusste im Dorf niemand etwas über sie. Zwei Wochen später wusste jeder alles.\n\nSie sei aus Hamburg, hieß es. Sie habe dort eine Firma gehabt, und die sei pleite gegangen. Sie wolle hier höchstens ein Jahr bleiben. Ihr Mann sei in Hamburg geblieben, oder es habe nie einen Mann gegeben; da war man sich nicht einig. Mein Vater sagte, sie hätte bestimmt Schulden. Meine Tante sagte, an ihrer Stelle wäre sie längst zurückgefahren.\n\nMir fiel etwas anderes auf. Alle diese Sätze standen im Konjunktiv. Sie sei, sie habe, sie wolle. Im Deutschen ist das kein Zufall: Wer so spricht, gibt damit zu, dass er es nur gehört hat. Die Grammatik selbst sagte also die ganze Zeit, dass niemand nachgefragt hatte. Ein ganzes Dorf redete drei Wochen lang über eine Frau, und kein einziger Satz stand im Indikativ.\n\nIm Oktober brachte ich mein Rad in die Werkstatt, weil die Gangschaltung klemmte und ich keine Lust hatte, bis nach Waldheim zu fahren. Frau Kessler drehte das Rad um, sah zwanzig Sekunden lang hin und sagte: Der Zug ist ausgeleiert, das kostet acht Euro. Dann fragte sie, ob ich Kaffee wolle.\n\nIch fragte sie, warum sie hergekommen sei. Im selben Moment merkte ich, dass ich es auch im Konjunktiv fragte, und das war mir unangenehm.\n\nSie lachte und sagte: Weil die Miete hier vierhundert Euro kostet und in Hamburg zweitausend. Das ist alles. Es gibt keine Geschichte.\n\nIch erzählte das zu Hause. Mein Vater hörte zu, kaute weiter und sagte dann: Na ja. Das sagt sie.\n\nDa verstand ich, dass es nie um Informationen gegangen war. Wer wollte, konnte jede Antwort wieder in den Konjunktiv setzen und sie damit unschädlich machen. Die Wahrheit hätte das Gerede beendet, aber niemand im Dorf wollte, dass es endete.\n\nFrau Kessler ist immer noch da. Sie repariert Räder, sie nimmt acht Euro, und man sagt weiterhin, sie sei aus Hamburg. Das stimmt sogar.",
+    "wordCount": 326,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Reconocer el Konjunktiv como marca de que quien habla no responde de lo que dice."
+      },
+      {
+        "es": "Reproducir en estilo indirecto lo que un tercero afirmó."
+      },
+      {
+        "es": "Separar el hecho comprobado de la versión que circula."
+      }
+    ],
+    "grammarFocus": [
+      "konjunktiv-ii-b1",
+      "indirekte-rede-b1",
+      "praeteritum-basic-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Werkstatt",
+        "lemma": "Werkstatt",
+        "glosses": {
+          "es": "taller"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pleite",
+        "lemma": "pleite",
+        "glosses": {
+          "es": "en quiebra, arruinado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Schulden",
+        "lemma": "Schulden",
+        "glosses": {
+          "es": "deudas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Gangschaltung",
+        "lemma": "Gangschaltung",
+        "glosses": {
+          "es": "cambio de marchas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ausgeleiert",
+        "lemma": "ausleiern",
+        "glosses": {
+          "es": "dado de sí, desgastado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Gerede",
+        "lemma": "Gerede",
+        "glosses": {
+          "es": "habladurías"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "unschädlich",
+        "lemma": "unschädlich",
+        "glosses": {
+          "es": "inofensivo, sin efecto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Miete",
+        "lemma": "Miete",
+        "glosses": {
+          "es": "alquiler"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El alemán tiene una forma verbal reservada para citar sin responder de lo citado. La prensa la usa a diario: «der Minister habe gesagt» no compromete al periódico con lo dicho."
+    },
+    "spanishSpeakerNote": {
+      "es": "El español marca el rumor con palabras («dicen que», «al parecer»); el alemán lo marca con la forma del verbo. Por eso «sie sei aus Hamburg» ya lleva dentro el «según dicen», sin añadir nada."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto alemán largo que desarrolla una idea y cambia de dirección, separar lo que ocurrió de lo que alguien dice que ocurrió, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens",
+      "adjektivdeklination-a2",
+      "da-hin-her-a2",
+      "dativ-a2",
+      "futur-i-a2",
+      "genitiv-a2",
+      "infinitiv-zu-a2",
+      "komparativ-superlativ-a2",
+      "konjunktionen-a2",
+      "konjunktiv-ii-wurden-a2",
+      "modalverben-praeteritum-a2",
+      "partizip-als-adjektiv-a2",
+      "passiv-praesens-a2",
+      "perfekt-haben-a2",
+      "perfekt-sein-a2",
+      "praeteritum-basic-a2",
+      "reflexivverben-a2",
+      "relativsaetze-a2",
+      "trennbare-verben-praeteritum-a2",
+      "wechselpraepositionen-a2",
+      "zweiteilige-konnektoren-a2",
+      "adjektivdeklination-b1",
+      "genitiv-b1",
+      "imperativ-b1",
+      "indirekte-rede-b1",
+      "infinitiv-zu-b1",
+      "kausale-konzessive-satze-b1",
+      "konjunktiv-ii-b1",
+      "modalverben-prateritum-b1",
+      "nebensatze-b1",
+      "partizip-als-adjektiv-b1",
+      "passiv-b1",
+      "perfekt-haben-sein-b1",
+      "prateritum-starke-verben-b1",
+      "reflexive-verben-b1",
+      "relativsatze-b1",
+      "temporale-prapositionen-b1",
+      "verben-mit-prapositionen-b1",
+      "wechselprapositionen-b1",
+      "wortbildung-b1",
+      "zweiteilige-konnektoren-b1"
+    ],
+    "disallowedGrammar": [
+      "Futur II",
+      "erweitertes Partizipialattribut",
+      "Nominalstil amtlich",
+      "Konjunktiv I seltener Verben"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 10.5,
+      "maxSentenceWords": 23,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Prosa B1 con Konjunktiv II, indirekte Rede, pasiva y subordinadas encadenadas. Konjunktiv I solo en verbos frecuentes (sei, habe, wolle). Inferencia moderada: exige cruzar dos pasajes separados."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es el asunto del texto?",
+      "options": [
+        {
+          "id": "forma",
+          "text": "Que la forma verbal del pueblo delataba que nadie había preguntado nada"
+        },
+        {
+          "id": "pasado",
+          "text": "Que la recién llegada escondía un pasado grave"
+        },
+        {
+          "id": "taller",
+          "text": "Que el taller de bicicletas iba mal económicamente"
+        }
+      ],
+      "answer": "forma",
+      "evidence": "Alle diese Sätze standen im Konjunktiv … Die Grammatik selbst sagte also die ganze Zeit, dass niemand nachgefragt hatte.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El narrador no descubre un secreto: descubre que la gramática ya lo confesaba todo."
+        },
+        "incorrect": {
+          "es": "El texto no confirma ningún pasado grave y el taller funciona. Fíjate en qué observa el narrador de las frases del pueblo."
+        },
+        "strategy": {
+          "es": "Cuando el narrador comenta cómo se dice algo y no qué se dice, la forma es el tema."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué razón da ella para haberse mudado?",
+      "options": [
+        {
+          "id": "alquiler",
+          "text": "Que el alquiler aquí cuesta cuatrocientos euros y en Hamburgo dos mil"
+        },
+        {
+          "id": "familia",
+          "text": "Que su marido se quedó en Hamburgo y ella quería alejarse"
+        },
+        {
+          "id": "deudas",
+          "text": "Que tenía deudas y huía de sus acreedores"
+        }
+      ],
+      "answer": "alquiler",
+      "evidence": "Weil die Miete hier vierhundert Euro kostet und in Hamburg zweitausend. Das ist alles.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y ella misma añade que no hay ninguna historia detrás."
+        },
+        "incorrect": {
+          "es": "Lo del marido y lo de las deudas son versiones del pueblo, no respuestas suyas. Busca lo que ella contesta."
+        },
+        "strategy": {
+          "es": "Distingue lo que dice el personaje de lo que dicen sobre el personaje: suelen estar en frases distintas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto habla de «das Gerede». ¿Qué significa aquí?",
+      "options": [
+        {
+          "id": "rumores",
+          "text": "El conjunto de rumores que circulan"
+        },
+        {
+          "id": "discurso",
+          "text": "Un discurso público en el ayuntamiento"
+        },
+        {
+          "id": "acuerdo",
+          "text": "Un acuerdo entre vecinos"
+        }
+      ],
+      "answer": "rumores",
+      "evidence": "Die Wahrheit hätte das Gerede beendet, aber niemand im Dorf wollte, dass es endete.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Y la frase añade lo importante: la verdad lo habría terminado, y por eso no la querían."
+        },
+        "incorrect": {
+          "es": "Nada de esto ocurre en un acto público ni es un pacto. Fíjate en qué es lo que la verdad habría terminado."
+        },
+        "strategy": {
+          "es": "Si algo «se acabaría con la verdad», es algo que vive de no ser verificado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el padre responde «Na ja. Das sagt sie»?",
+      "options": [
+        {
+          "id": "sostener",
+          "text": "Porque devolver la respuesta al terreno de lo no verificado permite seguir hablando del tema"
+        },
+        {
+          "id": "sordo",
+          "text": "Porque no había entendido bien lo que el narrador le contó"
+        },
+        {
+          "id": "pruebas",
+          "text": "Porque conocía pruebas de que ella mentía"
+        }
+      ],
+      "answer": "sostener",
+      "evidence": "Wer wollte, konnte jede Antwort wieder in den Konjunktiv setzen und sie damit unschädlich machen … niemand im Dorf wollte, dass es endete.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el narrador lo formula justo después: bastaba con devolverlo todo al condicional."
+        },
+        "incorrect": {
+          "es": "El padre entiende perfectamente y no aporta ninguna prueba. Cruza su frase con el párrafo siguiente."
+        },
+        "strategy": {
+          "es": "Para inferir, cruza una réplica de un personaje con la explicación que el narrador da a continuación."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el narrador consiguió que en el pueblo dejaran de repetir la versión de Hamburgo.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Sie repariert Räder, sie nimmt acht Euro, und man sagt weiterhin, sie sei aus Hamburg.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: al final del texto se sigue diciendo exactamente lo mismo, en la misma forma verbal."
+        },
+        "incorrect": {
+          "es": "Lee el último párrafo entero. El adverbio «weiterhin» decide la respuesta."
+        },
+        "strategy": {
+          "es": "Un final que repite la frase del principio suele indicar que nada cambió."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena lo que ocurre en el relato.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Ella alquila el taller y el pueblo empieza a hablar"
+        },
+        {
+          "id": "p2",
+          "text": "El narrador nota que ninguna frase está en indicativo"
+        },
+        {
+          "id": "p3",
+          "text": "Lleva la bicicleta y le pregunta directamente"
+        },
+        {
+          "id": "p4",
+          "text": "En casa, la respuesta vuelve a convertirse en rumor"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Als Frau Kessler die alte Werkstatt … mietete … Mir fiel etwas anderes auf … Im Oktober brachte ich mein Rad in die Werkstatt … Ich erzählte das zu Hause.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El relato va del rumor a la pregunta directa, y de ahí de vuelta al rumor."
+        },
+        "incorrect": {
+          "es": "Guíate por las marcas de tiempo: «Als… mietete», «Zwei Wochen später», «Im Oktober», «zu Hause»."
+        },
+        "strategy": {
+          "es": "En un relato con marcas temporales explícitas, esas marcas dan el orden sin necesidad de interpretar."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en alemán contando un rumor que oíste sobre alguien y qué pasó cuando preguntaste. Usa al menos cuatro verbos en Konjunktiv (sei, habe, wolle, hätte)."
+    },
+    "minWords": 70,
+    "maxWords": 130,
+    "hints": [
+      "Man sagte, er sei…",
+      "Meine Nachbarin sagte, sie habe…",
+      "Ich fragte ihn, warum er…",
+      "Die Wahrheit war viel einfacher."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de alemán y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán B1: el subjuntivo de los vecinos | WeLearn"
+    },
+    "description": {
+      "es": "Lee una crónica en alemán B1 y practica el Konjunktiv y el estilo indirecto. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/aleman/b1/lectura/der-konjunktiv-der-nachbarn",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-b1-was-alles-repariert-wurde"
+    ]
+  }
+}

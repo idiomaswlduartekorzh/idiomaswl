@@ -1,0 +1,491 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-b1-ich-freue-mich-auf-nichts",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Alemán B1"
+  },
+  "slug": "ich-freue-mich-auf-nichts",
+  "series": {
+    "id": "aleman-b1-lectura-10",
+    "episode": 6,
+    "totalEpisodes": 10,
+    "previousExerciseId": "de-b1-der-zug-um-sechs-uhr-zwoelf",
+    "nextExerciseId": "de-b1-die-tuer-des-schrankes"
+  },
+  "classification": {
+    "genre": "diario profesional",
+    "topic": "una residencia de mayores y una preposición",
+    "intent": "learning",
+    "tags": [
+      "aleman b1",
+      "lectura",
+      "verbos con preposición",
+      "verbos reflexivos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Ya no me alegro de nada"
+    },
+    "intro": {
+      "es": "Una auxiliar colombiana oye una frase en la cena y lo primero que nota es la preposición. Lo segundo cambia su forma de trabajar. Lectura de alemán B1."
+    },
+    "mission": {
+      "es": "Averigua qué diferencia hay entre «sich freuen auf» y «sich freuen über», y por qué importa aquí."
+    },
+    "targetText": "In dem Pflegeheim, in dem ich arbeite, wohnt seit acht Monaten Herr Sander. Er ist neunundachtzig, war Elektriker und beschwert sich über nichts, was in einem Heim ungewöhnlich ist.\n\nIm Februar sagte er beim Abendessen einen Satz, an den ich mich wahrscheinlich noch in zwanzig Jahren erinnern werde: Ich freue mich auf nichts mehr.\n\nIch komme aus Kolumbien und lerne seit sechs Jahren Deutsch. Wahrscheinlich habe ich deshalb zuerst auf die Grammatik geachtet und nicht auf den Inhalt. Im Deutschen muss man sich nämlich entscheiden: Man freut sich auf etwas, das noch kommt, und man freut sich über etwas, das schon da ist. Zwei Präpositionen, zwei verschiedene Richtungen der Zeit.\n\nIch fragte ihn also: Und über etwas?\n\nEr sah mich an, als hätte ich ihn beim Kartenspielen erwischt. Dann sagte er: Über den Kaffee heute Morgen. Der war gut.\n\nWir haben danach eine halbe Stunde geredet. Er hat sich an einen Sommer erinnert, in dem er auf einem Dach in Kassel gearbeitet hat, und er hat sich über seinen Bruder geärgert, der 1994 gestorben ist. Das hielt ich zuerst für einen Fehler und später nicht mehr.\n\nSeitdem mache ich etwas, worüber ich mit niemandem im Team gesprochen habe. Wenn jemand sagt, er freue sich auf nichts, frage ich nach dem über.\n\nEs funktioniert nicht immer. Frau Petrov hat mir geantwortet, ich solle mich um meine eigenen Angelegenheiten kümmern, und damit hatte sie recht.\n\nAber oft funktioniert es. Die meisten Menschen hier warten auf nichts mehr, das stimmt. Auf ein Datum, auf eine Nachricht, auf ein Enkelkind, das kommen soll — damit ist es vorbei. Über etwas freuen können sich fast alle noch, und zwar über Dinge, die so klein sind, dass man sie einem gesunden Menschen nicht erzählen kann, ohne dass er lächelt.\n\nHerr Sander sagt inzwischen manchmal, er freue sich auf den Donnerstag. Donnerstags kommt der Friseur. Ich habe ihn nie gefragt, ob er das für mich sagt.",
+    "wordCount": 318,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Elegir la preposición fija correcta: sich freuen auf/über, sich ärgern über, warten auf, sich erinnern an."
+      },
+      {
+        "es": "Colocar el pronombre reflexivo en el lugar que le toca en la frase."
+      },
+      {
+        "es": "Leer una decisión profesional que el texto no formula como norma."
+      }
+    ],
+    "grammarFocus": [
+      "verben-mit-prapositionen-b1",
+      "reflexive-verben-b1",
+      "reflexivverben-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Pflegeheim",
+        "lemma": "Pflegeheim",
+        "glosses": {
+          "es": "residencia de mayores"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Elektriker",
+        "lemma": "Elektriker",
+        "glosses": {
+          "es": "electricista"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ungewöhnlich",
+        "lemma": "ungewöhnlich",
+        "glosses": {
+          "es": "poco habitual"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "erwischt",
+        "lemma": "erwischen",
+        "glosses": {
+          "es": "pillado, sorprendido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "geärgert",
+        "lemma": "sich ärgern",
+        "glosses": {
+          "es": "enfadado, molestado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Angelegenheiten",
+        "lemma": "Angelegenheit",
+        "glosses": {
+          "es": "asuntos propios"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Enkelkind",
+        "lemma": "Enkelkind",
+        "glosses": {
+          "es": "nieto o nieta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Friseur",
+        "lemma": "Friseur",
+        "glosses": {
+          "es": "peluquero"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En las residencias alemanas trabaja mucho personal extranjero, y a menudo son ellos quienes notan matices de la lengua que a un nativo se le pasan por evidentes."
+    },
+    "spanishSpeakerNote": {
+      "es": "El español dice «alegrarse de» para todo. El alemán obliga a elegir dirección temporal: «auf» apunta a lo que viene, «über» a lo que ya ocurrió. No es un adorno: cambia lo que estás diciendo."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto alemán largo que desarrolla una idea y cambia de dirección, separar lo que ocurrió de lo que alguien dice que ocurrió, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens",
+      "adjektivdeklination-a2",
+      "da-hin-her-a2",
+      "dativ-a2",
+      "futur-i-a2",
+      "genitiv-a2",
+      "infinitiv-zu-a2",
+      "komparativ-superlativ-a2",
+      "konjunktionen-a2",
+      "konjunktiv-ii-wurden-a2",
+      "modalverben-praeteritum-a2",
+      "partizip-als-adjektiv-a2",
+      "passiv-praesens-a2",
+      "perfekt-haben-a2",
+      "perfekt-sein-a2",
+      "praeteritum-basic-a2",
+      "reflexivverben-a2",
+      "relativsaetze-a2",
+      "trennbare-verben-praeteritum-a2",
+      "wechselpraepositionen-a2",
+      "zweiteilige-konnektoren-a2",
+      "adjektivdeklination-b1",
+      "genitiv-b1",
+      "imperativ-b1",
+      "indirekte-rede-b1",
+      "infinitiv-zu-b1",
+      "kausale-konzessive-satze-b1",
+      "konjunktiv-ii-b1",
+      "modalverben-prateritum-b1",
+      "nebensatze-b1",
+      "partizip-als-adjektiv-b1",
+      "passiv-b1",
+      "perfekt-haben-sein-b1",
+      "prateritum-starke-verben-b1",
+      "reflexive-verben-b1",
+      "relativsatze-b1",
+      "temporale-prapositionen-b1",
+      "verben-mit-prapositionen-b1",
+      "wechselprapositionen-b1",
+      "wortbildung-b1",
+      "zweiteilige-konnektoren-b1"
+    ],
+    "disallowedGrammar": [
+      "Futur II",
+      "erweitertes Partizipialattribut",
+      "Nominalstil amtlich",
+      "Konjunktiv I seltener Verben"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 12.7,
+      "maxSentenceWords": 29,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Prosa B1 con Konjunktiv II, indirekte Rede, pasiva y subordinadas encadenadas. Konjunktiv I solo en verbos frecuentes (sei, habe, wolle). Inferencia moderada: exige cruzar dos pasajes separados."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué descubre la narradora?",
+      "options": [
+        {
+          "id": "distincion",
+          "text": "Que la distinción entre auf y über le da una manera de responder a quien dice que ya no espera nada"
+        },
+        {
+          "id": "idioma",
+          "text": "Que su alemán es mejor que el de sus compañeros de equipo"
+        },
+        {
+          "id": "diagnostico",
+          "text": "Que Herr Sander tiene una depresión sin diagnosticar"
+        }
+      ],
+      "answer": "distincion",
+      "evidence": "Wenn jemand sagt, er freue sich auf nichts, frage ich nach dem über.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo convierte en método de trabajo sin llamarlo así ni contárselo a nadie."
+        },
+        "incorrect": {
+          "es": "El texto no compara niveles de alemán ni da diagnósticos médicos. Fíjate en qué hace ella desde entonces."
+        },
+        "strategy": {
+          "es": "Si la narradora describe un hábito nuevo que adoptó, ese hábito suele ser la conclusión del texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué contesta Herr Sander cuando ella le pregunta por el «über»?",
+      "options": [
+        {
+          "id": "cafe",
+          "text": "Que se alegró del café de esa mañana"
+        },
+        {
+          "id": "jueves",
+          "text": "Que se alegra de que venga el peluquero"
+        },
+        {
+          "id": "hermano",
+          "text": "Que se acuerda de su hermano"
+        }
+      ],
+      "answer": "cafe",
+      "evidence": "Dann sagte er: Über den Kaffee heute Morgen. Der war gut.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y es una respuesta mínima que abre media hora de conversación."
+        },
+        "incorrect": {
+          "es": "Lo del jueves llega mucho más tarde y lo del hermano es otro momento. Busca su respuesta inmediata."
+        },
+        "strategy": {
+          "es": "Localiza primero la pregunta y lee solo lo que viene justo después."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Frau Petrov le dice que se ocupe de sus «Angelegenheiten». ¿Qué significa?",
+      "options": [
+        {
+          "id": "asuntos",
+          "text": "Sus propios asuntos"
+        },
+        {
+          "id": "pacientes",
+          "text": "Los pacientes que tiene asignados"
+        },
+        {
+          "id": "turnos",
+          "text": "Sus turnos de trabajo"
+        }
+      ],
+      "answer": "asuntos",
+      "evidence": "Frau Petrov hat mir geantwortet, ich solle mich um meine eigenen Angelegenheiten kümmern, und damit hatte sie recht.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Es la manera alemana de decir «no te metas donde no te llaman»."
+        },
+        "incorrect": {
+          "es": "La frase es un reproche personal, no una instrucción de trabajo. Fíjate en el adjetivo «eigenen»."
+        },
+        "strategy": {
+          "es": "El adjetivo «eigen» (propio) marca que la frase habla del terreno privado de alguien."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué la narradora no ha preguntado nunca a Herr Sander si lo del jueves lo dice por ella?",
+      "options": [
+        {
+          "id": "preferir",
+          "text": "Porque prefiere no comprobarlo: la respuesta podría estropear lo que ha conseguido"
+        },
+        {
+          "id": "tiempo",
+          "text": "Porque no coincide con él los jueves"
+        },
+        {
+          "id": "prohibido",
+          "text": "Porque el equipo le ha prohibido hacer preguntas personales"
+        }
+      ],
+      "answer": "preferir",
+      "evidence": "Seitdem mache ich etwas, worüber ich mit niemandem im Team gesprochen habe … Ich habe ihn nie gefragt, ob er das für mich sagt.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Es coherente con lo anterior: guarda para sí lo que funciona en vez de someterlo a prueba."
+        },
+        "incorrect": {
+          "es": "Nadie le ha prohibido nada y sí coincide con él. Cruza la última frase con lo que dice del equipo."
+        },
+        "strategy": {
+          "es": "Para inferir un motivo, busca otra decisión del mismo personaje que apunte en la misma dirección."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la narradora ha comentado con su equipo el método que empezó a usar.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Seitdem mache ich etwas, worüber ich mit niemandem im Team gesprochen habe.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: lo dice expresamente, no lo ha hablado con nadie del equipo."
+        },
+        "incorrect": {
+          "es": "La respuesta está en la frase que abre el párrafo del método, y es literal."
+        },
+        "strategy": {
+          "es": "Un pronombre como «worüber» anuncia que viene información sobre el hábito recién mencionado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena lo que ocurre en el diario.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "La frase de Herr Sander en la cena de febrero"
+        },
+        {
+          "id": "p2",
+          "text": "Ella pregunta por la otra preposición"
+        },
+        {
+          "id": "p3",
+          "text": "Media hora de conversación sobre Kassel y el hermano"
+        },
+        {
+          "id": "p4",
+          "text": "El método aplicado a otros residentes"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Im Februar sagte er beim Abendessen einen Satz … Ich fragte ihn also: Und über etwas? … Wir haben danach eine halbe Stunde geredet … Seitdem mache ich etwas …",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: la frase, la pregunta, la conversación y la costumbre que nace de ahí."
+        },
+        "incorrect": {
+          "es": "Guíate por «Im Februar», «Ich fragte ihn also», «danach» y «Seitdem»."
+        },
+        "strategy": {
+          "es": "Los adverbios «danach» y «seitdem» ordenan el relato sin necesidad de fechas."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en alemán sobre algo que esperas y algo de lo que ya te alegraste. Usa sich freuen auf, sich freuen über, warten auf, sich erinnern an y sich ärgern über."
+    },
+    "minWords": 70,
+    "maxWords": 130,
+    "hints": [
+      "Ich freue mich auf …",
+      "Ich habe mich über … gefreut.",
+      "Ich erinnere mich an einen Sommer, in dem …",
+      "Ich warte nicht mehr auf …"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de alemán y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán B1: ya no me alegro de nada | WeLearn"
+    },
+    "description": {
+      "es": "Lee un diario profesional en alemán B1 y practica los verbos con preposición fija y los reflexivos. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/b1/lectura/ich-freue-mich-auf-nichts",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-b1-der-zug-um-sechs-uhr-zwoelf",
+      "de-b1-die-tuer-des-schrankes"
+    ]
+  }
+}

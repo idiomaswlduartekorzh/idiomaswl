@@ -153,6 +153,18 @@ import deA2WasWuerdestDuMachen from '@/data/reading/exercises/de-a2-was-wuerdest
 import deA2DasFahrradMeinesVaters from '@/data/reading/exercises/de-a2-das-fahrrad-meines-vaters.json'
 import deA2KommMalHer from '@/data/reading/exercises/de-a2-komm-mal-her.json'
 import deA2WederLautNochLeise from '@/data/reading/exercises/de-a2-weder-laut-noch-leise.json'
+
+// Alemán B1 — generadas desde `src/data/reading/source/de-b1.mjs`. Nivel completo.
+import deB1DerKonjunktivDerNachbarn from '@/data/reading/exercises/de-b1-der-konjunktiv-der-nachbarn.json'
+import deB1WasAllesRepariertWurde from '@/data/reading/exercises/de-b1-was-alles-repariert-wurde.json'
+import deB1DieHaltestelleDieEsNichtGibt from '@/data/reading/exercises/de-b1-die-haltestelle-die-es-nicht-gibt.json'
+import deB1ObwohlSieWiederVerloren from '@/data/reading/exercises/de-b1-obwohl-sie-wieder-verloren.json'
+import deB1DerZugUmSechsUhrZwoelf from '@/data/reading/exercises/de-b1-der-zug-um-sechs-uhr-zwoelf.json'
+import deB1IchFreueMichAufNichts from '@/data/reading/exercises/de-b1-ich-freue-mich-auf-nichts.json'
+import deB1DieTuerDesSchrankes from '@/data/reading/exercises/de-b1-die-tuer-des-schrankes.json'
+import deB1SieHatNieFahrenWollen from '@/data/reading/exercises/de-b1-sie-hat-nie-fahren-wollen.json'
+import deB1StellDenStuhlAnsFenster from '@/data/reading/exercises/de-b1-stell-den-stuhl-ans-fenster.json'
+import deB1EntwederJetztOderNie from '@/data/reading/exercises/de-b1-entweder-jetzt-oder-nie.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -298,6 +310,16 @@ const RAW_EXERCISES: unknown[] = [
   deA2DasFahrradMeinesVaters,
   deA2KommMalHer,
   deA2WederLautNochLeise,
+  deB1DerKonjunktivDerNachbarn,
+  deB1WasAllesRepariertWurde,
+  deB1DieHaltestelleDieEsNichtGibt,
+  deB1ObwohlSieWiederVerloren,
+  deB1DerZugUmSechsUhrZwoelf,
+  deB1IchFreueMichAufNichts,
+  deB1DieTuerDesSchrankes,
+  deB1SieHatNieFahrenWollen,
+  deB1StellDenStuhlAnsFenster,
+  deB1EntwederJetztOderNie,
 ]
 
 export const READING_EXERCISES: ReadingExercise[] = RAW_EXERCISES.map((candidate) => {

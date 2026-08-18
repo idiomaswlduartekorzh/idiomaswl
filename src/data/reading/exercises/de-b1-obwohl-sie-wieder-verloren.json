@@ -1,0 +1,491 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-b1-obwohl-sie-wieder-verloren",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Alemán B1"
+  },
+  "slug": "obwohl-sie-wieder-verloren",
+  "series": {
+    "id": "aleman-b1-lectura-10",
+    "episode": 4,
+    "totalEpisodes": 10,
+    "previousExerciseId": "de-b1-die-haltestelle-die-es-nicht-gibt",
+    "nextExerciseId": "de-b1-der-zug-um-sechs-uhr-zwoelf"
+  },
+  "classification": {
+    "genre": "reportaje deportivo",
+    "topic": "un club de fútbol que no gana nunca",
+    "intent": "learning",
+    "tags": [
+      "aleman b1",
+      "lectura",
+      "causales y concesivas",
+      "subordinadas"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Aunque perdieron otra vez"
+    },
+    "intro": {
+      "es": "Veintidós partidos, ninguna victoria, y el estadio más lleno que la temporada anterior. Lectura de alemán B1 con weil, obwohl, deshalb y trotzdem."
+    },
+    "mission": {
+      "es": "Averigua qué cambió en el club cuando dejó de poder ganar."
+    },
+    "targetText": "Der SV Kirchhorst hat in der Saison 2024/25 kein einziges Spiel gewonnen. Zweiundzwanzig Spiele, zwei Unentschieden, zwanzig Niederlagen, 19:88 Tore. Trotzdem war das Stadion voller als in der Saison davor.\n\nDas klingt wie ein Fehler in der Statistik, ist aber keiner. Ich bin hingefahren, weil ich es nicht glauben wollte.\n\nDer Platz liegt hinter einer Gärtnerei. Es gibt eine Tribüne mit vier Reihen, einen niedrigen Zaun und einen Container, in dem Bratwurst verkauft wird. Am Sonntag standen dort etwa dreihundert Leute, obwohl es den ganzen Nachmittag regnete und obwohl jeder wusste, wie das Spiel ausgehen würde.\n\nIch fragte einen Mann in der zweiten Reihe, warum er komme. Er sagte: Weil mein Sohn spielt. Das war eine ehrliche Antwort, aber sie erklärte nur ihn.\n\nEine Frau neben ihm sagte etwas Besseres. Sie sagte, früher seien sie gekommen, um zu gewinnen, und das habe nur an guten Tagen funktioniert. Jetzt kämen sie, um dabei zu sein, und das funktioniere jeden Sonntag.\n\nDa der Verein sportlich nichts mehr zu bieten hatte, hat er etwas anderes gemacht. Der Eintritt ist seit zwei Jahren frei. Die Bratwurst kostet zwei Euro, denn sie soll nicht der Grund sein, warum jemand nicht kommt. Nach dem Spiel bleibt die Kabine offen, und wer will, geht hinein und sagt den Spielern etwas. Der Vorsitzende sagte mir, das sei am Anfang allen unangenehm gewesen, deshalb hätten sie es beibehalten.\n\nKirchhorst verlor an diesem Sonntag 1:4. Das Tor fiel in der 88. Minute, und es war ein Eigentor des Gegners. Die dreihundert Leute jubelten, als wäre es ein Pokalsieg, obwohl allen klar war, wie lächerlich das ist. Genau deshalb war es schön.\n\nAuf der Rückfahrt dachte ich an einen Satz des Trainers. Er sagte ihn ohne jede Bitterkeit: Wir sind der einzige Verein hier, bei dem niemand Angst hat abzusteigen, weil es tiefer nicht mehr geht. Deshalb sind wir entspannt. Ich weiß, dass das kein sportliches Argument ist.",
+    "wordCount": 317,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Distinguir weil y da (verbo al final) de denn (no mueve el verbo)."
+      },
+      {
+        "es": "Usar obwohl, trotzdem y deshalb con el orden correcto."
+      },
+      {
+        "es": "Separar la explicación individual de la explicación general."
+      }
+    ],
+    "grammarFocus": [
+      "kausale-konzessive-satze-b1",
+      "nebensatze-b1",
+      "konjunktionen-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Unentschieden",
+        "lemma": "Unentschieden",
+        "glosses": {
+          "es": "empates"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Niederlagen",
+        "lemma": "Niederlage",
+        "glosses": {
+          "es": "derrotas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Gärtnerei",
+        "lemma": "Gärtnerei",
+        "glosses": {
+          "es": "vivero de plantas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Tribüne",
+        "lemma": "Tribüne",
+        "glosses": {
+          "es": "grada"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Kabine",
+        "lemma": "Kabine",
+        "glosses": {
+          "es": "vestuario"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Eigentor",
+        "lemma": "Eigentor",
+        "glosses": {
+          "es": "gol en propia meta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "lächerlich",
+        "lemma": "lächerlich",
+        "glosses": {
+          "es": "ridículo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "abzusteigen",
+        "lemma": "absteigen",
+        "glosses": {
+          "es": "descender de categoría"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En el fútbol alemán de aficionados el club suele ser una asociación de socios (Verein) con presidente elegido, no una empresa. Por eso decisiones como suprimir la entrada las toma la propia gente que va."
+    },
+    "spanishSpeakerNote": {
+      "es": "Tres palabras españolas («porque», «por eso», «aunque») se reparten aquí en tres estructuras distintas: weil y obwohl mandan el verbo al final, denn lo deja donde está, y deshalb y trotzdem invierten sujeto y verbo. La conjunción decide el orden."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto alemán largo que desarrolla una idea y cambia de dirección, separar lo que ocurrió de lo que alguien dice que ocurrió, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens",
+      "adjektivdeklination-a2",
+      "da-hin-her-a2",
+      "dativ-a2",
+      "futur-i-a2",
+      "genitiv-a2",
+      "infinitiv-zu-a2",
+      "komparativ-superlativ-a2",
+      "konjunktionen-a2",
+      "konjunktiv-ii-wurden-a2",
+      "modalverben-praeteritum-a2",
+      "partizip-als-adjektiv-a2",
+      "passiv-praesens-a2",
+      "perfekt-haben-a2",
+      "perfekt-sein-a2",
+      "praeteritum-basic-a2",
+      "reflexivverben-a2",
+      "relativsaetze-a2",
+      "trennbare-verben-praeteritum-a2",
+      "wechselpraepositionen-a2",
+      "zweiteilige-konnektoren-a2",
+      "adjektivdeklination-b1",
+      "genitiv-b1",
+      "imperativ-b1",
+      "indirekte-rede-b1",
+      "infinitiv-zu-b1",
+      "kausale-konzessive-satze-b1",
+      "konjunktiv-ii-b1",
+      "modalverben-prateritum-b1",
+      "nebensatze-b1",
+      "partizip-als-adjektiv-b1",
+      "passiv-b1",
+      "perfekt-haben-sein-b1",
+      "prateritum-starke-verben-b1",
+      "reflexive-verben-b1",
+      "relativsatze-b1",
+      "temporale-prapositionen-b1",
+      "verben-mit-prapositionen-b1",
+      "wechselprapositionen-b1",
+      "wortbildung-b1",
+      "zweiteilige-konnektoren-b1"
+    ],
+    "disallowedGrammar": [
+      "Futur II",
+      "erweitertes Partizipialattribut",
+      "Nominalstil amtlich",
+      "Konjunktiv I seltener Verben"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 11.3,
+      "maxSentenceWords": 24,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Prosa B1 con Konjunktiv II, indirekte Rede, pasiva y subordinadas encadenadas. Konjunktiv I solo en verbos frecuentes (sei, habe, wolle). Inferencia moderada: exige cruzar dos pasajes separados."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es la idea central del reportaje?",
+      "options": [
+        {
+          "id": "pertenencia",
+          "text": "Que al no poder ofrecer victorias el club pasó a ofrecer pertenencia, y por eso va más gente"
+        },
+        {
+          "id": "ascenso",
+          "text": "Que el club prepara su ascenso para la próxima temporada"
+        },
+        {
+          "id": "dinero",
+          "text": "Que el club se salvó gracias a un patrocinador nuevo"
+        }
+      ],
+      "answer": "pertenencia",
+      "evidence": "Da der Verein sportlich nichts mehr zu bieten hatte, hat er etwas anderes gemacht … Jetzt kämen sie, um dabei zu sein, und das funktioniere jeden Sonntag.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El cambio no es deportivo: es de qué se ofrece a quien va."
+        },
+        "incorrect": {
+          "es": "No hay patrocinador ni ascenso; el club está en el fondo de la tabla. Busca qué hizo al no poder ganar."
+        },
+        "strategy": {
+          "es": "Cuando una frase empieza por «da» (puesto que), lo que sigue es la tesis del texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cómo llegó el único gol de Kirchhorst ese domingo?",
+      "options": [
+        {
+          "id": "propia",
+          "text": "Fue un gol en propia meta del rival, en el minuto 88"
+        },
+        {
+          "id": "penalti",
+          "text": "Fue un penalti al final del partido"
+        },
+        {
+          "id": "hijo",
+          "text": "Lo marcó el hijo del hombre de la segunda fila"
+        }
+      ],
+      "answer": "propia",
+      "evidence": "Das Tor fiel in der 88. Minute, und es war ein Eigentor des Gegners.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y por eso la celebración resulta ridícula y a la vez conmovedora."
+        },
+        "incorrect": {
+          "es": "No se menciona ningún penalti ni quién juega en ese momento. Busca la palabra «Eigentor»."
+        },
+        "strategy": {
+          "es": "Una palabra compuesta como «Eigentor» se lee por partes: propio + gol."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El entrenador dice que nadie tiene miedo de «absteigen». ¿Qué significa?",
+      "options": [
+        {
+          "id": "bajar",
+          "text": "Bajar de categoría al final de la temporada"
+        },
+        {
+          "id": "renunciar",
+          "text": "Renunciar al cargo de entrenador"
+        },
+        {
+          "id": "viajar",
+          "text": "Viajar a otro estadio"
+        }
+      ],
+      "answer": "bajar",
+      "evidence": "bei dem niemand Angst hat abzusteigen, weil es tiefer nicht mehr geht",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y él mismo lo explica: más abajo ya no hay nada."
+        },
+        "incorrect": {
+          "es": "La frase habla de la posición del club, no de personas ni de viajes. Fíjate en la explicación con «tiefer»."
+        },
+        "strategy": {
+          "es": "Cuando el propio hablante añade una explicación en la misma frase, esa explicación define la palabra."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el presidente mantiene la costumbre de dejar el vestuario abierto?",
+      "options": [
+        {
+          "id": "incomodo",
+          "text": "Precisamente porque al principio incomodaba a todos"
+        },
+        {
+          "id": "obligacion",
+          "text": "Porque el reglamento de la liga lo exige"
+        },
+        {
+          "id": "espacio",
+          "text": "Porque no hay otro sitio donde reunir a la gente"
+        }
+      ],
+      "answer": "incomodo",
+      "evidence": "das sei am Anfang allen unangenehm gewesen, deshalb hätten sie es beibehalten",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el «deshalb» es lo que sorprende: mantienen la costumbre por la incomodidad, no a pesar de ella."
+        },
+        "incorrect": {
+          "es": "No se cita ningún reglamento ni falta de espacio. Lee entera la frase del presidente."
+        },
+        "strategy": {
+          "es": "Si un «deshalb» une una causa negativa con una decisión de mantenerla, ahí hay una intención deliberada."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la entrada al campo lleva dos años siendo gratuita para el público.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Der Eintritt ist seit zwei Jahren frei.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y la salchicha a dos euros va en la misma lógica: que el dinero no sea el motivo de quedarse en casa."
+        },
+        "incorrect": {
+          "es": "Busca la frase corta que empieza por «Der Eintritt». Está en el párrafo de las medidas del club."
+        },
+        "strategy": {
+          "es": "Los datos de precios suelen ir en frases cortas y aisladas: son fáciles de localizar por su forma."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena cómo avanza el reportaje.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Las cifras de la temporada y la contradicción con el público"
+        },
+        {
+          "id": "p2",
+          "text": "La descripción del campo y la gente bajo la lluvia"
+        },
+        {
+          "id": "p3",
+          "text": "Lo que hizo el club al no poder ganar"
+        },
+        {
+          "id": "p4",
+          "text": "El partido, el gol y la frase del entrenador"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Der SV Kirchhorst hat … kein einziges Spiel gewonnen … Der Platz liegt hinter einer Gärtnerei … Da der Verein sportlich nichts mehr zu bieten hatte … Kirchhorst verlor an diesem Sonntag 1:4.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: dato, escena, explicación y cierre."
+        },
+        "incorrect": {
+          "es": "Fíjate en dónde aparecen por primera vez las cifras, el campo, las medidas del club y el resultado."
+        },
+        "strategy": {
+          "es": "Un reportaje que abre con una contradicción suele dedicar la parte central a explicarla."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en alemán sobre algo que sigues haciendo aunque no funcione. Usa weil, obwohl, deshalb y trotzdem al menos una vez cada uno."
+    },
+    "minWords": 70,
+    "maxWords": 130,
+    "hints": [
+      "Ich mache das, obwohl …",
+      "Weil es nie funktioniert hat, …",
+      "Trotzdem gehe ich jeden …",
+      "Deshalb bin ich entspannt."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de alemán y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán B1: aunque perdieron otra vez | WeLearn"
+    },
+    "description": {
+      "es": "Lee un reportaje en alemán B1 y practica las oraciones causales y concesivas (weil, da, obwohl, trotzdem) y las subordinadas. Con seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/b1/lectura/obwohl-sie-wieder-verloren",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-b1-die-haltestelle-die-es-nicht-gibt",
+      "de-b1-der-zug-um-sechs-uhr-zwoelf"
+    ]
+  }
+}

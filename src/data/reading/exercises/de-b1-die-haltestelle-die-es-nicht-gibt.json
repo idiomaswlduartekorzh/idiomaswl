@@ -1,0 +1,491 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-b1-die-haltestelle-die-es-nicht-gibt",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Alemán B1"
+  },
+  "slug": "die-haltestelle-die-es-nicht-gibt",
+  "series": {
+    "id": "aleman-b1-lectura-10",
+    "episode": 3,
+    "totalEpisodes": 10,
+    "previousExerciseId": "de-b1-was-alles-repariert-wurde",
+    "nextExerciseId": "de-b1-obwohl-sie-wieder-verloren"
+  },
+  "classification": {
+    "genre": "retrato urbano",
+    "topic": "una parada de autobús suprimida",
+    "intent": "learning",
+    "tags": [
+      "aleman b1",
+      "lectura",
+      "oraciones de relativo",
+      "declinación del adjetivo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La parada que ya no existe"
+    },
+    "intro": {
+      "es": "Un cartel amarillo que hace cuatro años que no significa nada, una mujer de ochenta y uno y doce segundos. Lectura de alemán B1."
+    },
+    "mission": {
+      "es": "Averigua por qué los conductores siguen parando en una parada que no está en ningún plano."
+    },
+    "targetText": "An der Ecke Lindenweg steht ein Schild, das seit vier Jahren nichts mehr bedeutet. Die Linie 7, die dort früher hielt, fährt eine andere Strecke. Das alte gelbe Schild wurde nie abmontiert, weil die Firma, die dafür zuständig war, den Auftrag verloren hat, und weil die neue Firma nur Schilder aufstellt, die im Plan stehen.\n\nFrau Adamczyk, die im Haus gegenüber wohnt, ist einundachtzig. Sie geht jeden Werktag um zwanzig nach zehn zu diesem Schild und wartet dort etwa eine Viertelstunde. Sie weiß, dass kein Bus mehr hält. Sie hat mir das selbst gesagt, in einem ruhigen Satz, der keine Erklärung enthielt: Ich weiß es, junger Mann.\n\nWas sie nicht weiß, ist, dass die Fahrer es auch wissen.\n\nDer Erste, der anhielt, war ein Fahrer namens Demir. Er sah eine alte Frau an einer Haltestelle, die auf keinem seiner Pläne stand, und tat das Naheliegende: Er öffnete die Tür. Sie stieg nicht ein. Sie sagte guten Morgen, er sagte guten Morgen, und dann fuhr er weiter.\n\nAm nächsten Tag hielt er wieder. Nach zwei Wochen erzählte er es den Kollegen. Heute halten alle, die auf dieser Strecke fahren, an einem Schild, das offiziell nicht existiert. Es kostet sie zwölf Sekunden.\n\nEinen Fahrer, den ich gefragt habe, warum sie das machen, hat mit den Schultern gezuckt und geantwortet: Zwölf Sekunden holt man in der Bahnhofstraße wieder rein. Das ist die Art von Antwort, die man in dieser Stadt bekommt, wenn man nach Gefühlen fragt.\n\nIm Frühjahr kam ein Brief vom Verkehrsbetrieb, in dem stand, dass alle Schilder, die nicht mehr benötigt werden, im Juni abgebaut werden. Die Fahrer haben einen Antrag geschrieben, den vierzig Leute unterschrieben haben. Der Antrag hatte einen einzigen Satz und eine falsche Begründung: Die Haltestelle Lindenweg wird weiterhin genutzt.\n\nDas Schild steht noch. Frau Adamczyk steht um zwanzig nach zehn davor. Der Bus hält. Sie steigt nicht ein, und niemand hat ihr je erklärt, warum er trotzdem anhält.",
+    "wordCount": 321,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Encadenar oraciones de relativo con el verbo al final."
+      },
+      {
+        "es": "Declinar el adjetivo delante del sustantivo según el artículo."
+      },
+      {
+        "es": "Reconocer una mentira administrativa escrita a propósito."
+      }
+    ],
+    "grammarFocus": [
+      "relativsatze-b1",
+      "adjektivdeklination-b1",
+      "akkusativ"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Schild",
+        "lemma": "Schild",
+        "glosses": {
+          "es": "cartel, señal"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "abmontiert",
+        "lemma": "abmontieren",
+        "glosses": {
+          "es": "desmontado, retirado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "zuständig",
+        "lemma": "zuständig",
+        "glosses": {
+          "es": "competente, encargado de algo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Werktag",
+        "lemma": "Werktag",
+        "glosses": {
+          "es": "día laborable"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Naheliegende",
+        "lemma": "naheliegend",
+        "glosses": {
+          "es": "lo más obvio, lo que salta a la vista"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gezuckt",
+        "lemma": "zucken",
+        "glosses": {
+          "es": "encogido (los hombros)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Antrag",
+        "lemma": "Antrag",
+        "glosses": {
+          "es": "solicitud formal"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Begründung",
+        "lemma": "Begründung",
+        "glosses": {
+          "es": "motivación, justificación"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En Alemania una parada solo existe si figura en el plan de la empresa de transporte. Que un cartel siga colgado no la hace real, y que cuarenta personas firmen tampoco."
+    },
+    "spanishSpeakerNote": {
+      "es": "En la oración de relativo alemana el verbo se va al final: «ein Schild, das seit vier Jahren nichts mehr bedeutet». Si traduces mentalmente en el orden español, pierdes el verbo. Léela hasta el punto y luego colócalo."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto alemán largo que desarrolla una idea y cambia de dirección, separar lo que ocurrió de lo que alguien dice que ocurrió, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens",
+      "adjektivdeklination-a2",
+      "da-hin-her-a2",
+      "dativ-a2",
+      "futur-i-a2",
+      "genitiv-a2",
+      "infinitiv-zu-a2",
+      "komparativ-superlativ-a2",
+      "konjunktionen-a2",
+      "konjunktiv-ii-wurden-a2",
+      "modalverben-praeteritum-a2",
+      "partizip-als-adjektiv-a2",
+      "passiv-praesens-a2",
+      "perfekt-haben-a2",
+      "perfekt-sein-a2",
+      "praeteritum-basic-a2",
+      "reflexivverben-a2",
+      "relativsaetze-a2",
+      "trennbare-verben-praeteritum-a2",
+      "wechselpraepositionen-a2",
+      "zweiteilige-konnektoren-a2",
+      "adjektivdeklination-b1",
+      "genitiv-b1",
+      "imperativ-b1",
+      "indirekte-rede-b1",
+      "infinitiv-zu-b1",
+      "kausale-konzessive-satze-b1",
+      "konjunktiv-ii-b1",
+      "modalverben-prateritum-b1",
+      "nebensatze-b1",
+      "partizip-als-adjektiv-b1",
+      "passiv-b1",
+      "perfekt-haben-sein-b1",
+      "prateritum-starke-verben-b1",
+      "reflexive-verben-b1",
+      "relativsatze-b1",
+      "temporale-prapositionen-b1",
+      "verben-mit-prapositionen-b1",
+      "wechselprapositionen-b1",
+      "wortbildung-b1",
+      "zweiteilige-konnektoren-b1"
+    ],
+    "disallowedGrammar": [
+      "Futur II",
+      "erweitertes Partizipialattribut",
+      "Nominalstil amtlich",
+      "Konjunktiv I seltener Verben"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 12.8,
+      "maxSentenceWords": 30,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Prosa B1 con Konjunktiv II, indirekte Rede, pasiva y subordinadas encadenadas. Konjunktiv I solo en verbos frecuentes (sei, habe, wolle). Inferencia moderada: exige cruzar dos pasajes separados."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta este retrato?",
+      "options": [
+        {
+          "id": "acuerdo",
+          "text": "Que los conductores mantienen por su cuenta una parada suprimida, sin decírselo a la mujer"
+        },
+        {
+          "id": "error",
+          "text": "Que la empresa de transporte cometió un error de planificación"
+        },
+        {
+          "id": "protesta",
+          "text": "Que los vecinos organizaron una protesta para recuperar la línea 7"
+        }
+      ],
+      "answer": "acuerdo",
+      "evidence": "Heute halten alle, die auf dieser Strecke fahren, an einem Schild, das offiziell nicht existiert … niemand hat ihr je erklärt, warum er trotzdem anhält.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el detalle que lo sostiene todo es que ella nunca lo ha sabido."
+        },
+        "incorrect": {
+          "es": "No hay protesta vecinal y la supresión de la línea no se presenta como error. Fíjate en qué hacen los conductores."
+        },
+        "strategy": {
+          "es": "Si un texto repite que alguien «no lo sabe», ese desconocimiento es parte del asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto tiempo les cuesta la parada a los conductores?",
+      "options": [
+        {
+          "id": "doce",
+          "text": "Doce segundos"
+        },
+        {
+          "id": "cuarto",
+          "text": "Un cuarto de hora"
+        },
+        {
+          "id": "cuatro",
+          "text": "Cuatro minutos"
+        }
+      ],
+      "answer": "doce",
+      "evidence": "Es kostet sie zwölf Sekunden … Zwölf Sekunden holt man in der Bahnhofstraße wieder rein.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y la cifra se repite en la respuesta del conductor."
+        },
+        "incorrect": {
+          "es": "El cuarto de hora es lo que espera ella; los cuatro son años sin línea. Busca la cifra con «Sekunden»."
+        },
+        "strategy": {
+          "es": "Empareja cada número con su unidad antes de responder: años, minutos, segundos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "La carta menciona los carteles que ya no se «benötigen». ¿Qué significa el verbo?",
+      "options": [
+        {
+          "id": "necesitar",
+          "text": "Necesitar, hacer falta"
+        },
+        {
+          "id": "pintar",
+          "text": "Pintar de nuevo"
+        },
+        {
+          "id": "pagar",
+          "text": "Pagar una tasa"
+        }
+      ],
+      "answer": "necesitar",
+      "evidence": "dass alle Schilder, die nicht mehr benötigt werden, im Juni abgebaut werden",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: lo que ya no hace falta se desmonta en junio."
+        },
+        "incorrect": {
+          "es": "La frase habla de retirar carteles, no de pintarlos ni de cobrarlos. Fíjate en qué les ocurre en junio."
+        },
+        "strategy": {
+          "es": "Si un verbo va seguido de una consecuencia («por eso se retiran»), esa consecuencia lo define."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué la solicitud contenía una justificación falsa?",
+      "options": [
+        {
+          "id": "unica",
+          "text": "Porque la razón verdadera no cuenta como argumento administrativo y esta sí"
+        },
+        {
+          "id": "error",
+          "text": "Porque los conductores se equivocaron al redactarla deprisa"
+        },
+        {
+          "id": "ordenaron",
+          "text": "Porque la empresa les ordenó escribir eso"
+        }
+      ],
+      "answer": "unica",
+      "evidence": "Der Antrag hatte einen einzigen Satz und eine falsche Begründung: Die Haltestelle Lindenweg wird weiterhin genutzt … Das ist die Art von Antwort, die man in dieser Stadt bekommt, wenn man nach Gefühlen fragt.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. En un formulario no cabe «hay una señora que espera»; sí cabe «la parada se sigue usando»."
+        },
+        "incorrect": {
+          "es": "El texto llama a la justificación «falsa», no equivocada, y nadie se lo ordenó. Cruza la frase de la solicitud con la del conductor."
+        },
+        "strategy": {
+          "es": "Cuando el texto califica algo de falso y no de erróneo, la falsedad es deliberada."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: Frau Adamczyk sube al autobús cuando este se detiene ante el cartel.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Sie stieg nicht ein … Der Bus hält. Sie steigt nicht ein.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: no sube nunca, ni la primera vez ni al final del texto."
+        },
+        "incorrect": {
+          "es": "La misma frase aparece dos veces, al principio del episodio de Demir y en el último párrafo."
+        },
+        "strategy": {
+          "es": "Una frase repetida al principio y al final del texto es una afirmación que el autor quiere que no se te escape."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena los hechos según el texto.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Suprimen la línea 7 y el cartel se queda colgado"
+        },
+        {
+          "id": "p2",
+          "text": "Demir para por primera vez y abre la puerta"
+        },
+        {
+          "id": "p3",
+          "text": "Los demás conductores empiezan a parar también"
+        },
+        {
+          "id": "p4",
+          "text": "Llega la carta y los conductores redactan la solicitud"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Die Linie 7, die dort früher hielt, fährt eine andere Strecke … Der Erste, der anhielt, war ein Fahrer namens Demir … Nach zwei Wochen erzählte er es den Kollegen … Im Frühjahr kam ein Brief vom Verkehrsbetrieb.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Empieza con el cartel huérfano y termina con el intento de salvarlo."
+        },
+        "incorrect": {
+          "es": "Guíate por «früher», «Der Erste», «Nach zwei Wochen» e «Im Frühjahr»."
+        },
+        "strategy": {
+          "es": "Los ordinales y las expresiones de tiempo son la escalera del texto: súbela en orden."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en alemán sobre un lugar de tu ciudad que ya no sirve para lo que fue. Usa al menos cinco oraciones de relativo (der/die/das) con el verbo al final."
+    },
+    "minWords": 70,
+    "maxWords": 130,
+    "hints": [
+      "An der Ecke … steht ein Haus, das …",
+      "Die Frau, die dort wohnt, …",
+      "Der Mann, den ich gefragt habe, …",
+      "Es kostet niemanden etwas."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de alemán y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán B1: la parada que ya no existe | WeLearn"
+    },
+    "description": {
+      "es": "Lee un retrato urbano en alemán B1 y practica las oraciones de relativo y la declinación del adjetivo. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/b1/lectura/die-haltestelle-die-es-nicht-gibt",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-b1-was-alles-repariert-wurde",
+      "de-b1-obwohl-sie-wieder-verloren"
+    ]
+  }
+}

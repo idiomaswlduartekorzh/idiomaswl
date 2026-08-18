@@ -1,0 +1,490 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-b1-entweder-jetzt-oder-nie",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Alemán B1"
+  },
+  "slug": "entweder-jetzt-oder-nie",
+  "series": {
+    "id": "aleman-b1-lectura-10",
+    "episode": 10,
+    "totalEpisodes": 10,
+    "previousExerciseId": "de-b1-stell-den-stuhl-ans-fenster",
+    "nextExerciseId": null
+  },
+  "classification": {
+    "genre": "testimonio en primera persona",
+    "topic": "el relevo en una panadería familiar",
+    "intent": "learning",
+    "tags": [
+      "aleman b1",
+      "lectura",
+      "infinitivo con zu",
+      "conectores dobles"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O ahora o nunca"
+    },
+    "intro": {
+      "es": "Una panadería de 1961, unas cifras sobre la mesa y una decisión que a los treinta y cinco ya no se puede tomar. Lectura de alemán B1."
+    },
+    "mission": {
+      "es": "Averigua por qué acepta, si dice que no lo quería especialmente."
+    },
+    "targetText": "Die Bäckerei meiner Familie gibt es seit 1961. Mein Großvater hat sie aufgemacht, mein Vater hat sie übernommen, und im Januar hat mein Vater mir gesagt, dass er sie entweder verkaufen oder schließen muss.\n\nIch hatte nicht vor, Bäckerin zu werden. Ich hatte angefangen, Betriebswirtschaft zu studieren, und ich war ziemlich gut darin, das frühe Aufstehen zu vermeiden.\n\nMein Vater hat mich nicht gefragt, ob ich die Bäckerei will. Das ist wichtig. Er hat mir nur die Zahlen auf den Tisch gelegt und gesagt: Ich zeige dir das nicht, um dich unter Druck zu setzen, sondern damit du es weißt.\n\nDie Zahlen waren weder gut noch katastrophal. Der Umsatz sinkt seit sechs Jahren langsam. Je mehr Filialen die großen Ketten aufmachen, desto weniger Leute kommen wegen des Brotes, und desto mehr kommen wegen des Kaffees. Wir hatten keinen Kaffee.\n\nIch habe drei Wochen gebraucht, um zu verstehen, dass es hier gar nicht ums Brot ging. Es ging darum, ob ich mit fünfundzwanzig eine Entscheidung treffen will, die man mit fünfunddreißig nicht mehr treffen kann, weil man dann eine Wohnung, einen Vertrag und weniger Mut hat.\n\nSowohl mein Freund als auch meine beste Freundin haben mir abgeraten, und ihre Argumente waren richtig. Nicht nur die Arbeitszeiten sind hart, sondern auch die Marge ist klein, und in dieser Branche wird niemand schnell reich.\n\nIm März habe ich zugesagt. Nicht, weil ich es unbedingt wollte, sondern weil mir klar wurde, dass ich es später bereuen würde, es nicht versucht zu haben. Das ist keine schöne Begründung, aber es ist eine ehrliche.\n\nWir haben jetzt Kaffee. Wir machen um halb sechs auf statt um sechs, und wir schließen sonntags, was mein Großvater nie getan hätte. Mein Vater steht immer noch jeden Morgen um vier in der Backstube, obwohl das längst nicht mehr seine Aufgabe ist.\n\nEr sagt, er komme nur, um zu sehen, ob ich es richtig mache. Ich glaube, er kommt, um noch da zu sein.",
+    "wordCount": 323,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Construir infinitivos con zu, incluidos um zu, ohne zu y statt zu."
+      },
+      {
+        "es": "Usar los conectores dobles: entweder…oder, weder…noch, sowohl…als auch, nicht nur…sondern auch, je…desto."
+      },
+      {
+        "es": "Distinguir la razón declarada de la razón real de una decisión."
+      }
+    ],
+    "grammarFocus": [
+      "infinitiv-zu-b1",
+      "zweiteilige-konnektoren-b1",
+      "infinitiv-zu-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "übernommen",
+        "lemma": "übernehmen",
+        "glosses": {
+          "es": "tomado el relevo de un negocio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Betriebswirtschaft",
+        "lemma": "Betriebswirtschaft",
+        "glosses": {
+          "es": "administración de empresas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Umsatz",
+        "lemma": "Umsatz",
+        "glosses": {
+          "es": "facturación"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Filialen",
+        "lemma": "Filiale",
+        "glosses": {
+          "es": "sucursales"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "abgeraten",
+        "lemma": "abraten",
+        "glosses": {
+          "es": "desaconsejado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Marge",
+        "lemma": "Marge",
+        "glosses": {
+          "es": "margen de beneficio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "bereuen",
+        "lemma": "bereuen",
+        "glosses": {
+          "es": "arrepentirse de algo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Backstube",
+        "lemma": "Backstube",
+        "glosses": {
+          "es": "obrador de una panadería"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Alemania ha perdido más de la mitad de sus panaderías artesanales desde el año 2000. El relevo generacional suele decidirse en enero, cuando se cierran las cuentas del año anterior."
+    },
+    "spanishSpeakerNote": {
+      "es": "El infinitivo con zu va al final y arrastra todo lo demás: «um dich unter Druck zu setzen». Si el verbo es separable, el zu se mete dentro: «aufzumachen», no «zu aufmachen»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto alemán largo que desarrolla una idea y cambia de dirección, separar lo que ocurrió de lo que alguien dice que ocurrió, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens",
+      "adjektivdeklination-a2",
+      "da-hin-her-a2",
+      "dativ-a2",
+      "futur-i-a2",
+      "genitiv-a2",
+      "infinitiv-zu-a2",
+      "komparativ-superlativ-a2",
+      "konjunktionen-a2",
+      "konjunktiv-ii-wurden-a2",
+      "modalverben-praeteritum-a2",
+      "partizip-als-adjektiv-a2",
+      "passiv-praesens-a2",
+      "perfekt-haben-a2",
+      "perfekt-sein-a2",
+      "praeteritum-basic-a2",
+      "reflexivverben-a2",
+      "relativsaetze-a2",
+      "trennbare-verben-praeteritum-a2",
+      "wechselpraepositionen-a2",
+      "zweiteilige-konnektoren-a2",
+      "adjektivdeklination-b1",
+      "genitiv-b1",
+      "imperativ-b1",
+      "indirekte-rede-b1",
+      "infinitiv-zu-b1",
+      "kausale-konzessive-satze-b1",
+      "konjunktiv-ii-b1",
+      "modalverben-prateritum-b1",
+      "nebensatze-b1",
+      "partizip-als-adjektiv-b1",
+      "passiv-b1",
+      "perfekt-haben-sein-b1",
+      "prateritum-starke-verben-b1",
+      "reflexive-verben-b1",
+      "relativsatze-b1",
+      "temporale-prapositionen-b1",
+      "verben-mit-prapositionen-b1",
+      "wechselprapositionen-b1",
+      "wortbildung-b1",
+      "zweiteilige-konnektoren-b1"
+    ],
+    "disallowedGrammar": [
+      "Futur II",
+      "erweitertes Partizipialattribut",
+      "Nominalstil amtlich",
+      "Konjunktiv I seltener Verben"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 14,
+      "maxSentenceWords": 30,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Prosa B1 con Konjunktiv II, indirekte Rede, pasiva y subordinadas encadenadas. Konjunktiv I solo en verbos frecuentes (sei, habe, wolle). Inferencia moderada: exige cruzar dos pasajes separados."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Por qué acepta finalmente la narradora?",
+      "options": [
+        {
+          "id": "arrepentir",
+          "text": "Porque comprendió que se arrepentiría de no haberlo intentado"
+        },
+        {
+          "id": "vocacion",
+          "text": "Porque siempre había querido ser panadera"
+        },
+        {
+          "id": "dinero",
+          "text": "Porque las cuentas eran mejores de lo que parecía"
+        }
+      ],
+      "answer": "arrepentir",
+      "evidence": "Nicht, weil ich es unbedingt wollte, sondern weil mir klar wurde, dass ich es später bereuen würde, es nicht versucht zu haben.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y ella misma dice que no es una razón bonita, solo honesta."
+        },
+        "incorrect": {
+          "es": "Dice expresamente que no quería serlo, y las cifras no eran buenas. Busca la frase con «nicht… sondern»."
+        },
+        "strategy": {
+          "es": "La estructura «nicht A, sondern B» descarta la razón falsa y da la verdadera en la misma frase."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué dice el padre al poner las cifras sobre la mesa?",
+      "options": [
+        {
+          "id": "saber",
+          "text": "Que no se las enseña para presionarla, sino para que lo sepa"
+        },
+        {
+          "id": "vender",
+          "text": "Que ya ha encontrado un comprador para el negocio"
+        },
+        {
+          "id": "pedir",
+          "text": "Que le pide que se haga cargo cuanto antes"
+        }
+      ],
+      "answer": "saber",
+      "evidence": "Ich zeige dir das nicht, um dich unter Druck zu setzen, sondern damit du es weißt.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el texto marca antes que no le preguntó si la quería: «Das ist wichtig»."
+        },
+        "incorrect": {
+          "es": "No hay comprador ni petición. Busca la frase entrecomillada del padre."
+        },
+        "strategy": {
+          "es": "Cuando el narrador dice «esto es importante», la frase siguiente suele ser una cita literal decisiva."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que el «Umsatz» baja desde hace seis años. ¿Qué es?",
+      "options": [
+        {
+          "id": "facturacion",
+          "text": "La facturación del negocio"
+        },
+        {
+          "id": "alquiler",
+          "text": "El alquiler del local"
+        },
+        {
+          "id": "personal",
+          "text": "El número de empleados"
+        }
+      ],
+      "answer": "facturacion",
+      "evidence": "Der Umsatz sinkt seit sechs Jahren langsam. Je mehr Filialen die großen Ketten aufmachen, desto weniger Leute kommen wegen des Brotes.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y la frase siguiente explica por qué: se van a las cadenas."
+        },
+        "incorrect": {
+          "es": "La explicación habla de clientes que dejan de venir, no de local ni de plantilla. Sigue leyendo una frase más."
+        },
+        "strategy": {
+          "es": "Si la frase siguiente explica una causa, esa causa te dice de qué magnitud se hablaba."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el padre sigue yendo al obrador a las cuatro de la mañana?",
+      "options": [
+        {
+          "id": "presencia",
+          "text": "Para seguir formando parte del negocio, aunque diga que va a supervisar"
+        },
+        {
+          "id": "desconfia",
+          "text": "Porque desconfía de la formación de su hija"
+        },
+        {
+          "id": "deudas",
+          "text": "Porque todavía es él quien responde de las deudas"
+        }
+      ],
+      "answer": "presencia",
+      "evidence": "Er sagt, er komme nur, um zu sehen, ob ich es richtig mache. Ich glaube, er kommt, um noch da zu sein.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la narradora marca la diferencia entre lo que él dice y lo que ella cree."
+        },
+        "incorrect": {
+          "es": "No se habla de deudas, y ella no interpreta desconfianza. Compara las dos últimas frases entre sí."
+        },
+        "strategy": {
+          "es": "Cuando un texto pone «er sagt» y «ich glaube» en frases seguidas, contrapone versión y lectura."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la panadería ahora abre media hora antes y cierra los domingos.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Wir machen um halb sechs auf statt um sechs, und wir schließen sonntags, was mein Großvater nie getan hätte.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y el texto añade que el abuelo no lo habría hecho nunca."
+        },
+        "incorrect": {
+          "es": "Los cambios están todos en el penúltimo párrafo, junto con el café."
+        },
+        "strategy": {
+          "es": "Los cambios de un negocio suelen ir enumerados juntos: localiza esa lista y compárala con la pregunta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena las etapas de la decisión.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "En enero el padre plantea vender o cerrar"
+        },
+        {
+          "id": "p2",
+          "text": "Le enseña las cifras sin pedirle nada"
+        },
+        {
+          "id": "p3",
+          "text": "Tres semanas para entender de qué iba realmente"
+        },
+        {
+          "id": "p4",
+          "text": "En marzo acepta y cambian los horarios"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "im Januar hat mein Vater mir gesagt … Er hat mir nur die Zahlen auf den Tisch gelegt … Ich habe drei Wochen gebraucht … Im März habe ich zugesagt.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: planteamiento, datos, reflexión y decisión."
+        },
+        "incorrect": {
+          "es": "Guíate por «im Januar», las cifras sobre la mesa, «drei Wochen» e «Im März»."
+        },
+        "strategy": {
+          "es": "Un texto sobre una decisión suele estar ordenado por el calendario: busca los meses."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en alemán sobre una decisión difícil que tomaste o que evitaste. Usa entweder…oder, weder…noch, nicht nur…sondern auch y dos infinitivos con um zu."
+    },
+    "minWords": 70,
+    "maxWords": 130,
+    "hints": [
+      "Ich musste entweder … oder …",
+      "Die Lage war weder gut noch …",
+      "Ich habe drei Wochen gebraucht, um zu verstehen, dass …",
+      "Nicht nur …, sondern auch …"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de alemán y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán B1: o ahora o nunca | WeLearn"
+    },
+    "description": {
+      "es": "Lee un testimonio en alemán B1 y practica el infinitivo con zu y los conectores dobles (entweder…oder, weder…noch, je…desto). Con seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/b1/lectura/entweder-jetzt-oder-nie",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-b1-stell-den-stuhl-ans-fenster"
+    ]
+  }
+}
