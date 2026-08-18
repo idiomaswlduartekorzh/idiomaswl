@@ -2380,6 +2380,32 @@
 .resultsVoice blockquote::before { content: '\201C'; }
 .resultsVoice blockquote::after { content: '\201D'; }
 
+.resultsVoiceEvidence {
+  margin: 0.25rem 0 0;
+}
+
+.resultsVoiceEvidence > div {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  aspect-ratio: 16 / 9;
+  background: #fff;
+}
+
+.resultsVoiceEvidence img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.resultsVoiceEvidence figcaption {
+  margin-top: 0.5rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  line-height: 1.35;
+}
+
 .resultsVoice footer {
   display: flex;
   margin-top: auto;

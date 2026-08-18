@@ -65,6 +65,22 @@ export default function HomeResultsArchive() {
             <li className={styles.resultsVoice} key={voice.id}>
               <p className={styles.resultsVoiceResult}>{voice.result}</p>
               <blockquote>{voice.quote}</blockquote>
+
+              {voice.evidence ? (
+                <figure className={styles.resultsVoiceEvidence}>
+                  <div>
+                    <Image
+                      src={voice.evidence.image}
+                      alt={voice.evidence.alt}
+                      fill
+                      loading="lazy"
+                      sizes="(max-width: 760px) calc(100vw - 56px), 33vw"
+                    />
+                  </div>
+                  <figcaption>{voice.evidence.caption}</figcaption>
+                </figure>
+              ) : null}
+
               <footer>
                 <strong>{voice.name}</strong>
                 <span>{voice.context}</span>
