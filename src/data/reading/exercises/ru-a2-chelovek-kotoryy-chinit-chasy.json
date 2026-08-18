@@ -1,0 +1,471 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-a2-chelovek-kotoryy-chinit-chasy",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Ruso A2"
+  },
+  "slug": "chelovek-kotoryy-chinit-chasy",
+  "series": {
+    "id": "ruso-a2-lectura-10",
+    "episode": 6,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-a2-prishel-ushel-vernulsya",
+    "nextExerciseId": "ru-a2-esli-by-ya-nachala-ranshe"
+  },
+  "classification": {
+    "genre": "retrato de oficio",
+    "topic": "un relojero que hace siempre la misma pregunta",
+    "intent": "learning",
+    "tags": [
+      "ruso a2",
+      "lectura",
+      "oraciones subordinadas",
+      "pronombres relativos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El hombre que arregla relojes"
+    },
+    "intro": {
+      "es": "Un taller en Kazán desde 1987, y una pregunta que en realidad son dos: ¿que anden, o que estén enteros? Lectura de ruso A2."
+    },
+    "mission": {
+      "es": "Averigua qué contestan los mayores de sesenta y qué los jóvenes."
+    },
+    "targetText": "На улице Баумана в Казани есть маленькая мастерская, где один человек чинит часы. Его зовут Рустам, ему шестьдесят три года, и он работает здесь с 1987 года.\n\nЛюди, которые приносят ему часы, обычно приносят не часы. Они приносят историю. Часы, которые остановились в день, когда умер отец. Часы, которые бабушка носила сорок лет. Часы, которые муж подарил на свадьбу и которые больше никто не носит.\n\nРустам говорит, что он понял это не сразу. Первые десять лет он думал, что его работа — механизм. Потом он понял, что механизм — это только половина.\n\nОн всегда спрашивает одно: «Вам нужно, чтобы часы шли, или вам нужно, чтобы они были целые?» Это не один вопрос, а два. Иногда человек хочет носить часы. Иногда человек хочет только, чтобы они лежали в ящике и были целые.\n\nЕсли человек отвечает «чтобы шли», Рустам ставит новый механизм. Если человек отвечает «чтобы были целые», Рустам чинит старый — дольше и дороже.\n\nЯ спросил, что выбирают чаще. Он ответил: «Молодые говорят — чтобы шли. Те, кому больше шестидесяти, говорят — чтобы были целые».\n\nМои часы стоят в ящике уже четыре года. Я знаю, что я скажу, когда пойду к нему.",
+    "wordCount": 186,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Encadenar subordinadas con что, если, когда, чтобы, потому что."
+      },
+      {
+        "es": "Declinar el relativo который según su función en la subordinada."
+      },
+      {
+        "es": "Distinguir dos preguntas que suenan como una sola."
+      }
+    ],
+    "grammarFocus": [
+      "oraciones-subordinadas",
+      "pronombres-relativos",
+      "preguntas-vopros"
+    ],
+    "vocabulary": [
+      {
+        "surface": "мастерская",
+        "lemma": "мастерская",
+        "glosses": {
+          "es": "taller"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "чинит",
+        "lemma": "чинить",
+        "glosses": {
+          "es": "arregla, repara"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "приносят",
+        "lemma": "приносить",
+        "glosses": {
+          "es": "traen"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "остановились",
+        "lemma": "остановиться",
+        "glosses": {
+          "es": "se pararon"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "свадьбу",
+        "lemma": "свадьба",
+        "glosses": {
+          "es": "boda"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "целые",
+        "lemma": "целый",
+        "glosses": {
+          "es": "enteros, intactos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ящике",
+        "lemma": "ящик",
+        "glosses": {
+          "es": "cajón"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "дороже",
+        "lemma": "дорогой",
+        "glosses": {
+          "es": "más caro"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Los relojes mecánicos soviéticos —Rakéta, Poliot, Vostok— se heredan mucho en Rusia, y su valor es casi siempre sentimental: repararlos cuesta más de lo que valen."
+    },
+    "spanishSpeakerNote": {
+      "es": "El relativo который se declina según lo que hace en su frase: «часы, которые остановились» (sujeto) frente a «те, кому больше шестидесяти» (dativo). El español usa «que» y «a quienes» sin cambiar la palabra."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato en ruso sobre hechos pasados, distinguir el aspecto imperfectivo del perfectivo, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento",
+      "acusativo-movimiento",
+      "adverbios-tiempo",
+      "aspecto-verbal",
+      "comparativos",
+      "condicional",
+      "dativo-uso",
+      "futuro-imperfectivo",
+      "futuro-perfectivo",
+      "genitivo-cantidad",
+      "imperativo",
+      "instrumental-uso",
+      "oraciones-subordinadas",
+      "pasado-verbos",
+      "plurales-irregulares",
+      "prepositivo-avanzado",
+      "pronombres-reflexivos",
+      "pronombres-relativos",
+      "superlativos",
+      "verbos-movimiento",
+      "verbos-prefijados"
+    ],
+    "disallowedGrammar": [
+      "participios (причастия)",
+      "gerundios (деепричастия)",
+      "discurso indirecto complejo",
+      "voz pasiva con -ся literaria"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 9.3,
+      "maxSentenceWords": 22,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Pasado y futuro con los dos aspectos, instrumental, condicional con бы, verbos prefijados de movimiento. Sin participios ni gerundios. Acento sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué entendió Rustam con los años?",
+      "options": [
+        {
+          "id": "historia",
+          "text": "Que la gente no le trae relojes sino historias, y que hay dos maneras distintas de arreglarlos"
+        },
+        {
+          "id": "negocio",
+          "text": "Que reparar relojes ya no es rentable"
+        },
+        {
+          "id": "nuevos",
+          "text": "Que es mejor vender relojes nuevos"
+        }
+      ],
+      "answer": "historia",
+      "evidence": "Люди, которые приносят ему часы, обычно приносят не часы. Они приносят историю … механизм — это только половина.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y de ahí sale su pregunta doble."
+        },
+        "incorrect": {
+          "es": "No habla de rentabilidad ni de vender. Busca la frase «приносят не часы»."
+        },
+        "strategy": {
+          "es": "Cuando el texto dice «no traen X, traen Y», ahí empieza la tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Desde cuándo trabaja Rustam en ese taller?",
+      "options": [
+        {
+          "id": "1987",
+          "text": "Desde 1987"
+        },
+        {
+          "id": "1961",
+          "text": "Desde 1961"
+        },
+        {
+          "id": "diez",
+          "text": "Desde hace diez años"
+        }
+      ],
+      "answer": "1987",
+      "evidence": "Его зовут Рустам, ему шестьдесят три года, и он работает здесь с 1987 года.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y los diez años son los primeros, cuando aún creía que el oficio era el mecanismo."
+        },
+        "incorrect": {
+          "es": "Los diez años son el periodo en que pensaba otra cosa. Busca la fecha con «с»."
+        },
+        "strategy": {
+          "es": "La preposición «с» + año indica el punto de partida de algo que sigue."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Los clientes piden a veces que el reloj esté «целый». ¿Qué significa?",
+      "options": [
+        {
+          "id": "entero",
+          "text": "Entero, completo, sin piezas cambiadas"
+        },
+        {
+          "id": "limpio",
+          "text": "Limpio por dentro"
+        },
+        {
+          "id": "caro",
+          "text": "De valor"
+        }
+      ],
+      "answer": "entero",
+      "evidence": "Если человек отвечает «чтобы были целые», Рустам чинит старый — дольше и дороже.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: se opone a poner un mecanismo nuevo, y por eso cuesta más."
+        },
+        "incorrect": {
+          "es": "Se opone a «новый механизм»: no habla de limpieza ni de precio, aunque salga más caro."
+        },
+        "strategy": {
+          "es": "Si una opción se opone a otra en el texto, defínela por contraste."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué los mayores de sesenta piden que el reloj esté entero y no que ande?",
+      "options": [
+        {
+          "id": "objeto",
+          "text": "Porque para ellos el reloj vale como objeto heredado, no como aparato de uso"
+        },
+        {
+          "id": "dinero",
+          "text": "Porque la reparación entera es más barata"
+        },
+        {
+          "id": "vista",
+          "text": "Porque ya no ven bien la hora"
+        }
+      ],
+      "answer": "objeto",
+      "evidence": "Иногда человек хочет только, чтобы они лежали в ящике и были целые … «Те, кому больше шестидесяти, говорят — чтобы были целые».",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el propio texto lo dice antes: hay quien solo quiere que esté en el cajón."
+        },
+        "incorrect": {
+          "es": "El texto dice que esa opción es más cara, y no se habla de la vista. Cruza las dos frases."
+        },
+        "strategy": {
+          "es": "Para inferir, cruza la respuesta de un personaje con una explicación anterior del narrador."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el narrador tiene un reloj guardado en un cajón desde hace cuatro años.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Мои часы стоят в ящике уже четыре года. Я знаю, что я скажу, когда пойду к нему.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y la frase siguiente insinúa qué va a pedir."
+        },
+        "incorrect": {
+          "es": "Busca la penúltima frase del texto: habla de sus propios relojes."
+        },
+        "strategy": {
+          "es": "Cuando el narrador aparece al final hablando de sí mismo, ahí hay un dato concreto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el retrato.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "El taller, el nombre y los años de oficio"
+        },
+        {
+          "id": "p2",
+          "text": "Que la gente trae historias, no relojes"
+        },
+        {
+          "id": "p3",
+          "text": "La pregunta doble y las dos formas de arreglar"
+        },
+        {
+          "id": "p4",
+          "text": "Qué contestan los jóvenes y qué los mayores"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "На улице Баумана в Казани есть маленькая мастерская … Люди, которые приносят ему часы … Он всегда спрашивает одно … Я спросил, что выбирают чаще.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: lugar, hallazgo, método y datos."
+        },
+        "incorrect": {
+          "es": "Fíjate en dónde aparece la pregunta doble y dónde la comparación por edades."
+        },
+        "strategy": {
+          "es": "Un retrato de oficio suele acabar con lo que el oficio enseña sobre la gente."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en ruso sobre alguien que arregla o hace algo con las manos. Usa cuatro oraciones con который y tres subordinadas con что o если."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "Есть мастерская, где…",
+      "Люди, которые приносят часы…",
+      "Он всегда спрашивает, нужно ли…",
+      "Если человек отвечает…, он…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de ruso —imprescindible por el aspecto y los casos— y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso A2: el hombre que arregla relojes | WeLearn"
+    },
+    "description": {
+      "es": "Lee un retrato de oficio en ruso A2 y practica las oraciones subordinadas y los pronombres relativos. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/a2/lectura/chelovek-kotoryy-chinit-chasy",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-a2-prishel-ushel-vernulsya",
+      "ru-a2-esli-by-ya-nachala-ranshe"
+    ]
+  }
+}

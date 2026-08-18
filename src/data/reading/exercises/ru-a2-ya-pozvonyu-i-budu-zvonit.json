@@ -1,0 +1,471 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-a2-ya-pozvonyu-i-budu-zvonit",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Ruso A2"
+  },
+  "slug": "ya-pozvonyu-i-budu-zvonit",
+  "series": {
+    "id": "ruso-a2-lectura-10",
+    "episode": 2,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-a2-odinnadtsat-dney-ya-krasil-dver",
+    "nextExerciseId": "ru-a2-ya-rabotayu-perevodchikom"
+  },
+  "classification": {
+    "genre": "memoria familiar",
+    "topic": "dos promesas distintas con el mismo verbo",
+    "intent": "learning",
+    "tags": [
+      "ruso a2",
+      "lectura",
+      "futuro imperfectivo",
+      "futuro perfectivo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Llamaré e iré llamando"
+    },
+    "intro": {
+      "es": "En el aeropuerto acordaron dos cosas, y las dos eran «llamar». Una madre oye perfectamente la diferencia. Lectura de ruso A2."
+    },
+    "mission": {
+      "es": "Averigua por qué ella decidió no llamar primero."
+    },
+    "targetText": "В августе мой сын уехал в Иркутск. Это четыре тысячи километров и пять часов разницы.\n\nВ аэропорту мы договорились о двух вещах.\n\nПервая: он позвонит, когда приедет. Один звонок, один раз, чтобы я знала, что всё хорошо. «Позвонит» — это законченное действие.\n\nВторая: он будет звонить каждое воскресенье. «Будет звонить» — это не один звонок, а привычка. В русском языке это два разных будущих, и мать слышит разницу очень хорошо.\n\nОн позвонил через шестнадцать часов. Я не спала. Он сказал четыре слова: «Мама, я на месте».\n\nПотом началось воскресенье. Первое воскресенье он позвонил. Второе тоже. Третье — нет.\n\nЯ не звонила ему. Я решила, что не буду звонить первой: это его обещание, не моё.\n\nЧетвёртое воскресенье он позвонил и сказал: «Мама, извини. Я забыл».\n\nЯ ответила: «Я знаю. Я буду ждать каждое воскресенье».\n\nМой муж говорил, что я слишком много думаю о словах. Может быть. Но я тридцать лет работала в школе и знаю одну вещь: если человек обещает один звонок, он обещает мало. Если он обещает привычку, он обещает много.\n\nТеперь он звонит каждое воскресенье, уже год. Иногда мы говорим две минуты, иногда сорок. Это не важно.\n\nВажно другое: я никогда не спрашиваю, почему он звонит. Я спрашиваю только: как ты.",
+    "wordCount": 199,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Formar el futuro imperfectivo con буду + infinitivo para la costumbre."
+      },
+      {
+        "es": "Formar el futuro perfectivo para una acción única que se completa."
+      },
+      {
+        "es": "Leer una decisión que el texto explica en una sola frase."
+      }
+    ],
+    "grammarFocus": [
+      "futuro-imperfectivo",
+      "futuro-perfectivo",
+      "futuro-byt"
+    ],
+    "vocabulary": [
+      {
+        "surface": "разницы",
+        "lemma": "разница",
+        "glosses": {
+          "es": "diferencia; aquí, de horario"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "договорились",
+        "lemma": "договориться",
+        "glosses": {
+          "es": "nos pusimos de acuerdo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "законченное",
+        "lemma": "законченный",
+        "glosses": {
+          "es": "acabado, completo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "привычка",
+        "lemma": "привычка",
+        "glosses": {
+          "es": "costumbre, hábito"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "месте",
+        "lemma": "место",
+        "glosses": {
+          "es": "sitio; «я на месте» es ya he llegado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "обещание",
+        "lemma": "обещание",
+        "glosses": {
+          "es": "promesa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "забыл",
+        "lemma": "забыть",
+        "glosses": {
+          "es": "olvidé"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ждать",
+        "lemma": "ждать",
+        "glosses": {
+          "es": "esperar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Irkutsk está a cuatro mil kilómetros de Moscú y a cinco husos horarios: la llamada del domingo se hace a una hora que a alguien de los dos siempre le viene mal."
+    },
+    "spanishSpeakerNote": {
+      "es": "El ruso tiene dos futuros y la diferencia no es de tiempo, es de aspecto. «Позвоню» es una llamada que se completa; «буду звонить» es la costumbre de llamar. El español usa «llamaré» para las dos y pierde la distinción."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato en ruso sobre hechos pasados, distinguir el aspecto imperfectivo del perfectivo, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento",
+      "acusativo-movimiento",
+      "adverbios-tiempo",
+      "aspecto-verbal",
+      "comparativos",
+      "condicional",
+      "dativo-uso",
+      "futuro-imperfectivo",
+      "futuro-perfectivo",
+      "genitivo-cantidad",
+      "imperativo",
+      "instrumental-uso",
+      "oraciones-subordinadas",
+      "pasado-verbos",
+      "plurales-irregulares",
+      "prepositivo-avanzado",
+      "pronombres-reflexivos",
+      "pronombres-relativos",
+      "superlativos",
+      "verbos-movimiento",
+      "verbos-prefijados"
+    ],
+    "disallowedGrammar": [
+      "participios (причастия)",
+      "gerundios (деепричастия)",
+      "discurso indirecto complejo",
+      "voz pasiva con -ся literaria"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 6.4,
+      "maxSentenceWords": 19,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Pasado y futuro con los dos aspectos, instrumental, condicional con бы, verbos prefijados de movimiento. Sin participios ni gerundios. Acento sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es el asunto del texto?",
+      "options": [
+        {
+          "id": "promesas",
+          "text": "Que las dos promesas del aeropuerto eran distintas, y ella respetó cuál le tocaba a cada uno"
+        },
+        {
+          "id": "distancia",
+          "text": "Que Irkutsk está demasiado lejos para mantener el contacto"
+        },
+        {
+          "id": "enfado",
+          "text": "Que la madre se enfadó cuando el hijo falló un domingo"
+        }
+      ],
+      "answer": "promesas",
+      "evidence": "Я решила, что не буду звонить первой: это его обещание, не моё.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y esa frase es la decisión que sostiene todo el texto."
+        },
+        "incorrect": {
+          "es": "No hay enfado —ella no llama— y el contacto se mantiene un año. Busca la frase con «обещание»."
+        },
+        "strategy": {
+          "es": "Si el narrador cuenta una decisión propia con «я решила», ahí está el centro del texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto tardó el hijo en hacer la primera llamada?",
+      "options": [
+        {
+          "id": "dieciseis",
+          "text": "Dieciséis horas"
+        },
+        {
+          "id": "cinco",
+          "text": "Cinco horas"
+        },
+        {
+          "id": "semana",
+          "text": "Una semana"
+        }
+      ],
+      "answer": "dieciseis",
+      "evidence": "Он позвонил через шестнадцать часов. Я не спала.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y ella no durmió en ese tiempo."
+        },
+        "incorrect": {
+          "es": "Las cinco horas son la diferencia de husos. Busca la frase con «через»."
+        },
+        "strategy": {
+          "es": "La estructura «через + tiempo» indica al cabo de cuánto ocurrió algo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Dice que llamar cada domingo es una «привычка». ¿Qué significa?",
+      "options": [
+        {
+          "id": "costumbre",
+          "text": "Una costumbre, un hábito"
+        },
+        {
+          "id": "obligacion",
+          "text": "Una obligación impuesta"
+        },
+        {
+          "id": "favor",
+          "text": "Un favor"
+        }
+      ],
+      "answer": "costumbre",
+      "evidence": "«Будет звонить» — это не один звонок, а привычка.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y se opone en la misma frase a «un solo telefonazo»."
+        },
+        "incorrect": {
+          "es": "Se opone a «один звонок»: habla de repetición, no de obligación ni de favor."
+        },
+        "strategy": {
+          "es": "La estructura «не A, а B» te da el sentido de B por contraste con A."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué al final solo pregunta «cómo estás» y no por qué llama?",
+      "options": [
+        {
+          "id": "libre",
+          "text": "Porque quiere que la llamada siga siendo suya y no una cuenta que rendir"
+        },
+        {
+          "id": "idioma",
+          "text": "Porque no sabe cómo formular la otra pregunta"
+        },
+        {
+          "id": "tiempo",
+          "text": "Porque las llamadas son demasiado cortas"
+        }
+      ],
+      "answer": "libre",
+      "evidence": "Иногда мы говорим две минуты, иногда сорок. Это не важно. Важно другое: я никогда не спрашиваю, почему он звонит.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y encaja con su decisión anterior de no llamar ella primero."
+        },
+        "incorrect": {
+          "es": "El texto dice que la duración no importa. Une esta frase con su decisión de no llamar primero."
+        },
+        "strategy": {
+          "es": "Cuando el texto dice «это не важно. Важно другое», lo que sigue es la conclusión."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el hijo se saltó el tercer domingo y no llamó.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Первое воскресенье он позвонил. Второе тоже. Третье — нет.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y el cuarto domingo llamó para disculparse."
+        },
+        "incorrect": {
+          "es": "Busca la enumeración de los domingos. Está en tres frases muy cortas."
+        },
+        "strategy": {
+          "es": "Tres frases cortas seguidas con ordinales son una lista: léelas juntas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena los hechos.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "El acuerdo del aeropuerto: dos promesas"
+        },
+        {
+          "id": "p2",
+          "text": "La llamada a las dieciséis horas"
+        },
+        {
+          "id": "p3",
+          "text": "El tercer domingo sin llamada, y ella no llama"
+        },
+        {
+          "id": "p4",
+          "text": "Un año llamando cada domingo"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "В аэропорту мы договорились о двух вещах … Он позвонил через шестнадцать часов … Третье — нет … Теперь он звонит каждое воскресенье, уже год.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: acuerdo, primera llamada, fallo y presente."
+        },
+        "incorrect": {
+          "es": "Guíate por «В аэропорту», «через шестнадцать часов» y «Теперь»."
+        },
+        "strategy": {
+          "es": "La palabra «теперь» marca el presente: lo que va con ella cierra el relato."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en ruso sobre un acuerdo que tienes con alguien de tu familia. Usa tres futuros con буду y tres futuros perfectivos."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "Он позвонит, когда приедет.",
+      "Он будет звонить каждое воскресенье.",
+      "Я не буду звонить первой.",
+      "Я буду ждать."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de ruso —imprescindible por el aspecto y los casos— y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso A2: llamaré e iré llamando | WeLearn"
+    },
+    "description": {
+      "es": "Lee una memoria familiar en ruso A2 y practica los dos futuros: imperfectivo y perfectivo. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/a2/lectura/ya-pozvonyu-i-budu-zvonit",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-a2-odinnadtsat-dney-ya-krasil-dver",
+      "ru-a2-ya-rabotayu-perevodchikom"
+    ]
+  }
+}

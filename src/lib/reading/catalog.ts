@@ -213,6 +213,18 @@ import ruA1KomuDedushkaPishet from '@/data/reading/exercises/ru-a1-komu-dedushka
 import ruA1VoditelKotoryyNeSprashivaet from '@/data/reading/exercises/ru-a1-voditel-kotoryy-ne-sprashivaet.json'
 import ruA1PrikhoditeVSem from '@/data/reading/exercises/ru-a1-prikhodite-v-sem.json'
 import ruA1BukvyObmanyvayut from '@/data/reading/exercises/ru-a1-bukvy-obmanyvayut.json'
+
+// Ruso A2 — generadas desde `src/data/reading/source/ru-a2.mjs`. Nivel completo.
+import ruA2OdinnadtsatDneyYaKrasilDver from '@/data/reading/exercises/ru-a2-odinnadtsat-dney-ya-krasil-dver.json'
+import ruA2YaPozvonyuIBuduZvonit from '@/data/reading/exercises/ru-a2-ya-pozvonyu-i-budu-zvonit.json'
+import ruA2YaRabotayuPerevodchikom from '@/data/reading/exercises/ru-a2-ya-rabotayu-perevodchikom.json'
+import ruA2SamyyKorotkiyPut from '@/data/reading/exercises/ru-a2-samyy-korotkiy-put.json'
+import ruA2PrishelUshelVernulsya from '@/data/reading/exercises/ru-a2-prishel-ushel-vernulsya.json'
+import ruA2ChelovekKotoryyChinitChasy from '@/data/reading/exercises/ru-a2-chelovek-kotoryy-chinit-chasy.json'
+import ruA2EsliByYaNachalaRanshe from '@/data/reading/exercises/ru-a2-esli-by-ya-nachala-ranshe.json'
+import ruA2SkolkoLyudeyPrikhodit from '@/data/reading/exercises/ru-a2-skolko-lyudey-prikhodit.json'
+import ruA2VDerevnyuIVDerevne from '@/data/reading/exercises/ru-a2-v-derevnyu-i-v-derevne.json'
+import ruA2NikogdaNeVykhodiSMokrymiVolosami from '@/data/reading/exercises/ru-a2-nikogda-ne-vykhodi-s-mokrymi-volosami.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -408,6 +420,16 @@ const RAW_EXERCISES: unknown[] = [
   ruA1VoditelKotoryyNeSprashivaet,
   ruA1PrikhoditeVSem,
   ruA1BukvyObmanyvayut,
+  ruA2OdinnadtsatDneyYaKrasilDver,
+  ruA2YaPozvonyuIBuduZvonit,
+  ruA2YaRabotayuPerevodchikom,
+  ruA2SamyyKorotkiyPut,
+  ruA2PrishelUshelVernulsya,
+  ruA2ChelovekKotoryyChinitChasy,
+  ruA2EsliByYaNachalaRanshe,
+  ruA2SkolkoLyudeyPrikhodit,
+  ruA2VDerevnyuIVDerevne,
+  ruA2NikogdaNeVykhodiSMokrymiVolosami,
 ]
 
 export const READING_EXERCISES: ReadingExercise[] = RAW_EXERCISES.map((candidate) => {

@@ -1,0 +1,471 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-a2-samyy-korotkiy-put",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Ruso A2"
+  },
+  "slug": "samyy-korotkiy-put",
+  "series": {
+    "id": "ruso-a2-lectura-10",
+    "episode": 4,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-a2-ya-rabotayu-perevodchikom",
+    "nextExerciseId": "ru-a2-prishel-ushel-vernulsya"
+  },
+  "classification": {
+    "genre": "investigación doméstica",
+    "topic": "un año midiendo seis rutas al trabajo",
+    "intent": "learning",
+    "tags": [
+      "ruso a2",
+      "lectura",
+      "comparativos",
+      "superlativos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El camino más corto"
+    },
+    "intro": {
+      "es": "Seis kilómetros, seis rutas y un año apuntando tiempos. El resultado no es el que esperaba. Lectura de ruso A2."
+    },
+    "mission": {
+      "es": "Averigua qué ruta eligió al final, y por qué no fue la más rápida."
+    },
+    "targetText": "Я живу в Новосибирске и работаю в центре. От дома до работы шесть километров.\n\nГод назад я решил найти самый быстрый путь. Я проверил шесть вариантов и записывал время каждый день.\n\nМетро: тридцать одна минута. Автобус: сорок две минуты, а зимой дольше. Пешком: час двадцать. Велосипед: двадцать шесть минут — самый быстрый вариант, но только пять месяцев в году.\n\nСамый короткий путь — не самый быстрый. Пешком через парк короче на километр, но там нет асфальта, и весной там грязь.\n\nСамый дешёвый — велосипед. Самый дорогой — такси, конечно.\n\nНо интересно другое. Метро быстрее автобуса на одиннадцать минут, а автобус приятнее метро на сто процентов. В автобусе есть окно. В метро окна нет.\n\nЧерез год я выбрал автобус. Не самый быстрый, не самый дешёвый. Просто утром я смотрю в окно двадцать минут, и это лучше, чем смотреть в телефон.\n\nЖена спросила, зачем я записывал время каждый день, если разница такая маленькая. Я ответил, что заранее я этого не знал. Именно поэтому я и записывал. Она сказала: «Логично». Это самое доброе слово, которое она говорит о моих проектах.\n\nМоя жена говорит, что я потратил год на глупость. Может быть. Но теперь я знаю точно, и я больше не думаю об этом каждое утро. Это тоже время.",
+    "wordCount": 201,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Formar el comparativo con -ее y con «чем»: быстрее, короче, приятнее."
+      },
+      {
+        "es": "Formar el superlativo con «самый»: самый быстрый, самый дешёвый."
+      },
+      {
+        "es": "Distinguir la mejor opción medida de la mejor opción elegida."
+      }
+    ],
+    "grammarFocus": [
+      "comparativos",
+      "superlativos",
+      "adjetivos-concordancia"
+    ],
+    "vocabulary": [
+      {
+        "surface": "путь",
+        "lemma": "путь",
+        "glosses": {
+          "es": "camino, trayecto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "проверил",
+        "lemma": "проверить",
+        "glosses": {
+          "es": "comprobé, probé"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "записывал",
+        "lemma": "записывать",
+        "glosses": {
+          "es": "apuntaba"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "грязь",
+        "lemma": "грязь",
+        "glosses": {
+          "es": "barro, lodo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "дешёвый",
+        "lemma": "дешёвый",
+        "glosses": {
+          "es": "barato"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "приятнее",
+        "lemma": "приятный",
+        "glosses": {
+          "es": "más agradable"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "потратил",
+        "lemma": "потратить",
+        "glosses": {
+          "es": "gasté"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "глупость",
+        "lemma": "глупость",
+        "glosses": {
+          "es": "tontería"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Novosibirsk tiene metro pero también inviernos de treinta grados bajo cero: la bicicleta solo sirve unos cinco meses al año, y eso cambia cualquier cálculo de rutas."
+    },
+    "spanishSpeakerNote": {
+      "es": "El comparativo ruso se forma con -ее o -е y no necesita «más»: «быстрее» ya es «más rápido». Y la comparación admite dos formas: «быстрее автобуса» (genitivo) o «быстрее, чем автобус»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato en ruso sobre hechos pasados, distinguir el aspecto imperfectivo del perfectivo, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento",
+      "acusativo-movimiento",
+      "adverbios-tiempo",
+      "aspecto-verbal",
+      "comparativos",
+      "condicional",
+      "dativo-uso",
+      "futuro-imperfectivo",
+      "futuro-perfectivo",
+      "genitivo-cantidad",
+      "imperativo",
+      "instrumental-uso",
+      "oraciones-subordinadas",
+      "pasado-verbos",
+      "plurales-irregulares",
+      "prepositivo-avanzado",
+      "pronombres-reflexivos",
+      "pronombres-relativos",
+      "superlativos",
+      "verbos-movimiento",
+      "verbos-prefijados"
+    ],
+    "disallowedGrammar": [
+      "participios (причастия)",
+      "gerundios (деепричастия)",
+      "discurso indirecto complejo",
+      "voz pasiva con -ся literaria"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 7.2,
+      "maxSentenceWords": 15,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Pasado y futuro con los dos aspectos, instrumental, condicional con бы, verbos prefijados de movimiento. Sin participios ni gerundios. Acento sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué concluye el narrador?",
+      "options": [
+        {
+          "id": "ventana",
+          "text": "Que eligió el autobús por la ventana, no por el tiempo ni por el precio"
+        },
+        {
+          "id": "bici",
+          "text": "Que la bicicleta es la mejor opción del año"
+        },
+        {
+          "id": "metro",
+          "text": "Que el metro es lo más razonable"
+        }
+      ],
+      "answer": "ventana",
+      "evidence": "Через год я выбрал автобус. Не самый быстрый, не самый дешёвый … я смотрю в окно двадцать минут.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo dice descartando expresamente los dos superlativos."
+        },
+        "incorrect": {
+          "es": "La bici solo sirve cinco meses y el metro no tiene ventana. Busca qué eligió al final."
+        },
+        "strategy": {
+          "es": "Si el texto niega dos superlativos seguidos, la razón real viene después."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto tarda en metro?",
+      "options": [
+        {
+          "id": "31",
+          "text": "Treinta y un minutos"
+        },
+        {
+          "id": "26",
+          "text": "Veintiséis minutos"
+        },
+        {
+          "id": "42",
+          "text": "Cuarenta y dos minutos"
+        }
+      ],
+      "answer": "31",
+      "evidence": "Метро: тридцать одна минута. Автобус: сорок две минуты … Велосипед: двадцать шесть минут.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: los 26 son en bici y los 42 en autobús."
+        },
+        "incorrect": {
+          "es": "Empareja cada tiempo con su medio de transporte: están en la misma lista."
+        },
+        "strategy": {
+          "es": "Cuando el texto da una lista de tiempos, localiza el medio antes que la cifra."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Dice que en primavera en el parque hay «грязь». ¿Qué significa?",
+      "options": [
+        {
+          "id": "barro",
+          "text": "Barro"
+        },
+        {
+          "id": "hielo",
+          "text": "Hielo"
+        },
+        {
+          "id": "gente",
+          "text": "Mucha gente"
+        }
+      ],
+      "answer": "barro",
+      "evidence": "там нет асфальта, и весной там грязь",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y la razón va antes: no hay asfalto."
+        },
+        "incorrect": {
+          "es": "La frase anterior dice que no hay asfalto: es lo que pasa en primavera sin asfalto."
+        },
+        "strategy": {
+          "es": "Si la frase anterior da la causa, la palabra que sigue es su consecuencia."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice que el año no fue perdido, aunque su mujer piense que sí?",
+      "options": [
+        {
+          "id": "dejar",
+          "text": "Porque ahora lo sabe con certeza y ha dejado de decidirlo cada mañana"
+        },
+        {
+          "id": "salud",
+          "text": "Porque andar tanto le mejoró la salud"
+        },
+        {
+          "id": "dinero",
+          "text": "Porque acabó ahorrando dinero"
+        }
+      ],
+      "answer": "dejar",
+      "evidence": "теперь я знаю точно, и я больше не думаю об этом каждое утро. Это тоже время.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y su argumento final es que eso también es tiempo ganado."
+        },
+        "incorrect": {
+          "es": "No habla de salud ni de ahorro: el autobús no es el más barato. Lee la última frase."
+        },
+        "strategy": {
+          "es": "La frase final de un texto de opinión suele contener el argumento de cierre."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el camino más corto en distancia es también el más rápido.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Самый короткий путь — не самый быстрый. Пешком через парк короче на километр, но там нет асфальта.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: el texto lo dice con una frase entera dedicada a eso."
+        },
+        "incorrect": {
+          "es": "Busca la frase que compara «короткий» con «быстрый». Es corta y está sola."
+        },
+        "strategy": {
+          "es": "Cuando dos superlativos se enfrentan en una frase, esa frase es la respuesta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la investigación.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Decide buscar la ruta más rápida y apunta tiempos"
+        },
+        {
+          "id": "p2",
+          "text": "Los tiempos de cada medio de transporte"
+        },
+        {
+          "id": "p3",
+          "text": "La comparación entre metro y autobús"
+        },
+        {
+          "id": "p4",
+          "text": "La elección final y la opinión de su mujer"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Год назад я решил найти самый быстрый путь … Метро: тридцать одна минута … Метро быстрее автобуса на одиннадцать минут … Через год я выбрал автобус.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: método, datos, comparación y decisión."
+        },
+        "incorrect": {
+          "es": "Guíate por «Год назад» y por «Через год»."
+        },
+        "strategy": {
+          "es": "Un texto de investigación suele terminar con la decisión que se toma con los datos."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en ruso comparando dos o tres formas de ir a un sitio. Usa cuatro comparativos y tres superlativos con «самый»."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "От дома до работы шесть километров.",
+      "Метро быстрее автобуса.",
+      "Самый дешёвый — велосипед.",
+      "Это лучше, чем смотреть в телефон."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de ruso —imprescindible por el aspecto y los casos— y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso A2: el camino más corto | WeLearn"
+    },
+    "description": {
+      "es": "Lee una investigación doméstica en ruso A2 y practica los comparativos y superlativos. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/a2/lectura/samyy-korotkiy-put",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-a2-ya-rabotayu-perevodchikom",
+      "ru-a2-prishel-ushel-vernulsya"
+    ]
+  }
+}

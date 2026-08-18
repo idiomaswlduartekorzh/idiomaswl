@@ -1,0 +1,471 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-a2-skolko-lyudey-prikhodit",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Ruso A2"
+  },
+  "slug": "skolko-lyudey-prikhodit",
+  "series": {
+    "id": "ruso-a2-lectura-10",
+    "episode": 8,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-a2-esli-by-ya-nachala-ranshe",
+    "nextExerciseId": "ru-a2-v-derevnyu-i-v-derevne"
+  },
+  "classification": {
+    "genre": "reportaje breve",
+    "topic": "un comedor gratuito y veintiocho sillas",
+    "intent": "learning",
+    "tags": [
+      "ruso a2",
+      "lectura",
+      "genitivo de cantidad",
+      "plurales irregulares"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Cuánta gente viene"
+    },
+    "intro": {
+      "es": "En septiembre vienen treinta personas; en enero, ciento cuarenta. Y hay veintiocho sillas. Lectura de ruso A2."
+    },
+    "mission": {
+      "es": "Averigua qué es lo más difícil, y no es la comida."
+    },
+    "targetText": "В нашем приходе на юге Москвы четыре раза в неделю работает бесплатная столовая. Я вожу туда хлеб по вторникам.\n\nСколько людей приходит? Это зависит от месяца.\n\nВ сентябре приходит мало людей: тридцать, сорок. В январе приходит много: сто двадцать, сто сорок. В феврале ещё больше.\n\nПриходят разные люди. Есть несколько стариков, которые приходят каждый раз. Есть матери с детьми — обычно две или три женщины и четверо детей. Есть мужчины лет тридцати, которые приходят один раз и больше не приходят никогда: они стесняются.\n\nЕсть друзья, которые приходят вместе, потому что вдвоём легче войти в дверь.\n\nМы даём суп, второе и чай. Иногда есть немного мяса. Хлеба всегда достаточно, потому что хлеб дают три пекарни.\n\nСамое трудное — не еда. Самое трудное — стулья. У нас двадцать восемь стульев, а зимой приходит сто человек. Люди стоят и ждут, и это стыдно.\n\nВ прошлом году мы попросили денег на стулья. Нам дали денег на еду. Это тоже хорошо, но стульев по-прежнему двадцать восемь.\n\nЯ вожу хлеб уже два года. Я не знаю имён почти никого, и никто не знает моего. Так проще для всех.",
+    "wordCount": 179,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Usar el genitivo tras cuantificadores: много людей, мало денег, несколько стариков."
+      },
+      {
+        "es": "Formar los plurales irregulares: люди, дети, друзья, матери, стулья."
+      },
+      {
+        "es": "Distinguir el problema declarado del problema real de un servicio."
+      }
+    ],
+    "grammarFocus": [
+      "genitivo-cantidad",
+      "plurales-irregulares",
+      "numeros"
+    ],
+    "vocabulary": [
+      {
+        "surface": "приходе",
+        "lemma": "приход",
+        "glosses": {
+          "es": "parroquia"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "столовая",
+        "lemma": "столовая",
+        "glosses": {
+          "es": "comedor"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "вожу",
+        "lemma": "возить",
+        "glosses": {
+          "es": "llevo (en coche, habitualmente)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "зависит",
+        "lemma": "зависеть",
+        "glosses": {
+          "es": "depende"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "стесняются",
+        "lemma": "стесняться",
+        "glosses": {
+          "es": "les da apuro, se cortan"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "вдвоём",
+        "lemma": "вдвоём",
+        "glosses": {
+          "es": "entre dos, los dos juntos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "пекарни",
+        "lemma": "пекарня",
+        "glosses": {
+          "es": "panaderías"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "стульев",
+        "lemma": "стул",
+        "glosses": {
+          "es": "sillas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Muchos comedores gratuitos rusos los llevan parroquias con voluntarios y donaciones de panaderías del barrio. Las ayudas suelen concederse para comida y casi nunca para mobiliario."
+    },
+    "spanishSpeakerNote": {
+      "es": "Las palabras de cantidad piden genitivo plural: «много людей», «мало денег», «несколько стариков». Y varios plurales son irregulares: человек hace люди, ребёнок hace дети, друг hace друзья."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato en ruso sobre hechos pasados, distinguir el aspecto imperfectivo del perfectivo, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento",
+      "acusativo-movimiento",
+      "adverbios-tiempo",
+      "aspecto-verbal",
+      "comparativos",
+      "condicional",
+      "dativo-uso",
+      "futuro-imperfectivo",
+      "futuro-perfectivo",
+      "genitivo-cantidad",
+      "imperativo",
+      "instrumental-uso",
+      "oraciones-subordinadas",
+      "pasado-verbos",
+      "plurales-irregulares",
+      "prepositivo-avanzado",
+      "pronombres-reflexivos",
+      "pronombres-relativos",
+      "superlativos",
+      "verbos-movimiento",
+      "verbos-prefijados"
+    ],
+    "disallowedGrammar": [
+      "participios (причастия)",
+      "gerundios (деепричастия)",
+      "discurso indirecto complejo",
+      "voz pasiva con -ся literaria"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 7.2,
+      "maxSentenceWords": 15,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Pasado y futuro con los dos aspectos, instrumental, condicional con бы, verbos prefijados de movimiento. Sin participios ni gerundios. Acento sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es el problema real del comedor?",
+      "options": [
+        {
+          "id": "sillas",
+          "text": "Que hay veintiocho sillas para cien personas y la gente come de pie"
+        },
+        {
+          "id": "comida",
+          "text": "Que falta comida en invierno"
+        },
+        {
+          "id": "voluntarios",
+          "text": "Que no hay suficientes voluntarios"
+        }
+      ],
+      "answer": "sillas",
+      "evidence": "Самое трудное — не еда. Самое трудное — стулья … Люди стоят и ждут, и это стыдно.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto descarta expresamente la comida."
+        },
+        "incorrect": {
+          "es": "El texto dice que de pan hay siempre bastante, y no habla de voluntarios. Busca las dos frases con «самое трудное»."
+        },
+        "strategy": {
+          "es": "Cuando un texto repite «lo más difícil» dos veces, la segunda es la verdadera."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánta gente viene en enero?",
+      "options": [
+        {
+          "id": "120140",
+          "text": "Entre ciento veinte y ciento cuarenta"
+        },
+        {
+          "id": "3040",
+          "text": "Entre treinta y cuarenta"
+        },
+        {
+          "id": "28",
+          "text": "Veintiocho"
+        }
+      ],
+      "answer": "120140",
+      "evidence": "В сентябре приходит мало людей: тридцать, сорок. В январе приходит много: сто двадцать, сто сорок.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: las treinta o cuarenta son de septiembre."
+        },
+        "incorrect": {
+          "es": "Los veintiocho son las sillas, y treinta o cuarenta es septiembre. Empareja cada cifra con su mes."
+        },
+        "strategy": {
+          "es": "Empareja cada número con lo que cuenta: personas, meses, sillas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Los hombres de treinta años vienen una vez porque «стесняются». ¿Qué significa?",
+      "options": [
+        {
+          "id": "apuro",
+          "text": "Les da apuro, se cortan"
+        },
+        {
+          "id": "enfado",
+          "text": "Se enfadan"
+        },
+        {
+          "id": "prisa",
+          "text": "Tienen prisa"
+        }
+      ],
+      "answer": "apuro",
+      "evidence": "Есть мужчины лет тридцати, которые приходят один раз и больше не приходят никогда: они стесняются.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y encaja con la frase siguiente sobre entrar por la puerta entre dos."
+        },
+        "incorrect": {
+          "es": "No hay enfado ni prisa: el texto explica por qué no vuelven. Fíjate en la frase siguiente."
+        },
+        "strategy": {
+          "es": "Si la frase siguiente habla de lo difícil que es entrar, la palabra anterior habla de pudor."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice que es mejor no saberse los nombres?",
+      "options": [
+        {
+          "id": "pudor",
+          "text": "Porque el anonimato le quita apuro a quien viene a comer"
+        },
+        {
+          "id": "memoria",
+          "text": "Porque son demasiados para recordarlos"
+        },
+        {
+          "id": "norma",
+          "text": "Porque la parroquia lo prohíbe"
+        }
+      ],
+      "answer": "pudor",
+      "evidence": "они стесняются … Я не знаю имён почти никого, и никто не знает моего. Так проще для всех.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y encaja con lo que dijo antes de los hombres que no vuelven."
+        },
+        "incorrect": {
+          "es": "No hay ninguna norma, y la razón que da es «así es más fácil para todos». Cruza esa frase con la del pudor."
+        },
+        "strategy": {
+          "es": "Para inferir, une la frase final con la explicación de por qué alguien no vuelve."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: pidieron dinero para sillas y les dieron dinero para comida.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "В прошлом году мы попросили денег на стулья. Нам дали денег на еду. Это тоже хорошо, но стульев по-прежнему двадцать восемь.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y el narrador lo cuenta sin reprochar nada: «это тоже хорошо»."
+        },
+        "incorrect": {
+          "es": "Busca las dos frases del penúltimo párrafo: una pide y la otra concede."
+        },
+        "strategy": {
+          "es": "Dos frases consecutivas con «попросили» y «дали» cuentan una petición y su respuesta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el reportaje.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Qué es el comedor y cuándo abre"
+        },
+        {
+          "id": "p2",
+          "text": "Cuánta gente viene según el mes"
+        },
+        {
+          "id": "p3",
+          "text": "Quiénes vienen: mayores, madres, hombres jóvenes"
+        },
+        {
+          "id": "p4",
+          "text": "Las veintiocho sillas y la ayuda del año pasado"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "В нашем приходе … работает бесплатная столовая … В сентябре приходит мало людей … Приходят разные люди … У нас двадцать восемь стульев.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: qué es, cuánta gente, quiénes y el problema."
+        },
+        "incorrect": {
+          "es": "Fíjate en dónde entran las cifras por mes y dónde aparecen las sillas."
+        },
+        "strategy": {
+          "es": "Un reportaje breve va de los datos generales al problema concreto."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en ruso sobre un sitio de tu ciudad donde se ayuda a alguien. Usa cuatro cuantificadores con genitivo y tres plurales irregulares."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "В сентябре приходит мало людей.",
+      "В январе приходит много.",
+      "Есть несколько стариков.",
+      "У нас двадцать восемь стульев."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de ruso —imprescindible por el aspecto y los casos— y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso A2: cuánta gente viene | WeLearn"
+    },
+    "description": {
+      "es": "Lee un reportaje breve en ruso A2 y practica el genitivo de cantidad y los plurales irregulares. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/a2/lectura/skolko-lyudey-prikhodit",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-a2-esli-by-ya-nachala-ranshe",
+      "ru-a2-v-derevnyu-i-v-derevne"
+    ]
+  }
+}

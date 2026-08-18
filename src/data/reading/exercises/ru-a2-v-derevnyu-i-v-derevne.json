@@ -1,0 +1,471 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-a2-v-derevnyu-i-v-derevne",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Ruso A2"
+  },
+  "slug": "v-derevnyu-i-v-derevne",
+  "series": {
+    "id": "ruso-a2-lectura-10",
+    "episode": 9,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-a2-skolko-lyudey-prikhodit",
+    "nextExerciseId": "ru-a2-nikogda-ne-vykhodi-s-mokrymi-volosami"
+  },
+  "classification": {
+    "genre": "memoria de verano",
+    "topic": "una aldea de cuatro habitantes en invierno",
+    "intent": "learning",
+    "tags": [
+      "ruso a2",
+      "lectura",
+      "prepositivo avanzado",
+      "acusativo de dirección"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A la aldea y en la aldea"
+    },
+    "intro": {
+      "es": "Cuatro habitantes en invierno, veintidós en verano, y una tía que se aburre en julio. Lectura de ruso A2."
+    },
+    "mission": {
+      "es": "Averigua qué contesta la tía cuando le preguntan si se aburre en invierno."
+    },
+    "targetText": "Каждое лето я езжу в деревню под Вологдой. Не «на дачу» — в деревню. Это разные вещи, и русские слышат разницу.\n\nВ деревне живёт моя тётя, одна, в доме, который построил её отец в 1961 году. Зимой в деревне живут четыре человека. Летом — двадцать два.\n\nКогда я в Москве, я думаю о деревне. Когда я в деревне, я не думаю о Москве. Об этом я никому не рассказываю, потому что это звучит как реклама.\n\nВ деревне нет магазина. Магазин — в соседнем селе, в шести километрах. К нам приезжает автолавка по средам и по субботам. В среду покупают хлеб. В субботу покупают всё.\n\nВ доме нет интернета, и это самое лучшее и самое трудное. Первые три дня я думаю о работе. На четвёртый день перестаю.\n\nМоя тётя работала в школе тридцать восемь лет. Она говорит о своих учениках так, как будто им до сих пор двенадцать лет. Некоторым из них уже шестьдесят.\n\nЯ спросил её, не скучно ли ей зимой, когда в деревне четыре человека. Она подумала и ответила: «Мне скучно в июле, когда двадцать два».",
+    "wordCount": 174,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguir в + prepositivo (lugar) de в + acusativo (dirección): в деревне frente a в деревню."
+      },
+      {
+        "es": "Usar о + prepositivo para el tema: думаю о деревне, говорит о своих учениках."
+      },
+      {
+        "es": "Leer una respuesta que invierte la pregunta."
+      }
+    ],
+    "grammarFocus": [
+      "prepositivo-avanzado",
+      "acusativo-movimiento",
+      "preposiciones-lugar-v-na"
+    ],
+    "vocabulary": [
+      {
+        "surface": "деревню",
+        "lemma": "деревня",
+        "glosses": {
+          "es": "aldea, pueblo pequeño"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "дачу",
+        "lemma": "дача",
+        "glosses": {
+          "es": "casa de campo de fin de semana"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "построил",
+        "lemma": "построить",
+        "glosses": {
+          "es": "construyó"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "селе",
+        "lemma": "село",
+        "glosses": {
+          "es": "pueblo mayor, con iglesia"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "автолавка",
+        "lemma": "автолавка",
+        "glosses": {
+          "es": "tienda ambulante en camioneta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "перестаю",
+        "lemma": "перестать",
+        "glosses": {
+          "es": "dejo de hacerlo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "скучно",
+        "lemma": "скучно",
+        "glosses": {
+          "es": "aburrido; «мне скучно» es me aburro"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "учениках",
+        "lemma": "ученик",
+        "glosses": {
+          "es": "alumnos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La деревня es la aldea pequeña de casas de madera, y la дача es la segunda vivienda de fin de semana de la gente de ciudad. Decir una por la otra cambia por completo de qué se está hablando."
+    },
+    "spanishSpeakerNote": {
+      "es": "La misma preposición cambia de caso según lugar o dirección: «я езжу в деревню» (voy hacia allí, acusativo) y «в деревне живёт моя тётя» (allí vive, prepositivo). Y para el tema de que se habla va о + prepositivo: «думаю о деревне»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato en ruso sobre hechos pasados, distinguir el aspecto imperfectivo del perfectivo, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento",
+      "acusativo-movimiento",
+      "adverbios-tiempo",
+      "aspecto-verbal",
+      "comparativos",
+      "condicional",
+      "dativo-uso",
+      "futuro-imperfectivo",
+      "futuro-perfectivo",
+      "genitivo-cantidad",
+      "imperativo",
+      "instrumental-uso",
+      "oraciones-subordinadas",
+      "pasado-verbos",
+      "plurales-irregulares",
+      "prepositivo-avanzado",
+      "pronombres-reflexivos",
+      "pronombres-relativos",
+      "superlativos",
+      "verbos-movimiento",
+      "verbos-prefijados"
+    ],
+    "disallowedGrammar": [
+      "participios (причастия)",
+      "gerundios (деепричастия)",
+      "discurso indirecto complejo",
+      "voz pasiva con -ся literaria"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 7.9,
+      "maxSentenceWords": 15,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Pasado y futuro con los dos aspectos, instrumental, condicional con бы, verbos prefijados de movimiento. Sin participios ni gerundios. Acento sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta el texto?",
+      "options": [
+        {
+          "id": "aldea",
+          "text": "Una aldea casi vacía en invierno donde el narrador desconecta, y una tía que prefiere el invierno"
+        },
+        {
+          "id": "dacha",
+          "text": "Que quiere comprarse una casa de campo"
+        },
+        {
+          "id": "internet",
+          "text": "Que hace falta llevar internet a las aldeas"
+        }
+      ],
+      "answer": "aldea",
+      "evidence": "Зимой в деревне живут четыре человека. Летом — двадцать два … «Мне скучно в июле, когда двадцать два».",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la respuesta final de la tía es el remate."
+        },
+        "incorrect": {
+          "es": "No quiere comprar nada y la falta de internet la valora. Compara las cifras de invierno y verano."
+        },
+        "strategy": {
+          "es": "Si el texto abre con dos cifras opuestas y cierra con ellas, ahí está el asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuándo pasa la tienda ambulante?",
+      "options": [
+        {
+          "id": "mierc",
+          "text": "Los miércoles y los sábados"
+        },
+        {
+          "id": "diario",
+          "text": "Todos los días"
+        },
+        {
+          "id": "nunca",
+          "text": "No pasa: hay que ir al pueblo de al lado"
+        }
+      ],
+      "answer": "mierc",
+      "evidence": "Автолавка приезжает по средам и по субботам. В среду покупают хлеб. В субботу покупают всё.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y cada día se compra una cosa distinta."
+        },
+        "incorrect": {
+          "es": "Sí pasa, y el pueblo de al lado es donde está la tienda fija. Busca la frase con «по средам»."
+        },
+        "strategy": {
+          "es": "La estructura «по + dativo plural» indica los días en que algo se repite."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «Не \"на дачу\" — в деревню». ¿Qué es una «дача»?",
+      "options": [
+        {
+          "id": "casa",
+          "text": "Una casa de campo de fin de semana"
+        },
+        {
+          "id": "aldea",
+          "text": "Una aldea de casas de madera"
+        },
+        {
+          "id": "huerta",
+          "text": "Una huerta comunal"
+        }
+      ],
+      "answer": "casa",
+      "evidence": "Каждое лето я езжу в деревню под Вологдой. Не «на дачу» — в деревню. Это разные вещи.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y el texto insiste en que no es lo mismo que una aldea."
+        },
+        "incorrect": {
+          "es": "La aldea es «деревня», la otra palabra de la frase. El texto las opone precisamente."
+        },
+        "strategy": {
+          "es": "Si el texto opone dos palabras, cada una define a la otra por contraste."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Qué quiere decir la tía con su respuesta final?",
+      "options": [
+        {
+          "id": "invierno",
+          "text": "Que el invierno con cuatro personas le sienta mejor que el verano con veintidós"
+        },
+        {
+          "id": "visitas",
+          "text": "Que quiere que la visiten más en invierno"
+        },
+        {
+          "id": "calor",
+          "text": "Que en julio hace demasiado calor"
+        }
+      ],
+      "answer": "invierno",
+      "evidence": "Я спросил её, не скучно ли ей зимой … Она подумала и ответила: «Мне скучно в июле, когда двадцать два».",
+      "feedback": {
+        "correct": {
+          "es": "Sí: invierte la pregunta y coloca el aburrimiento justo en el mes contrario."
+        },
+        "incorrect": {
+          "es": "No pide visitas y no habla del calor. Fíjate en qué mes menciona ella."
+        },
+        "strategy": {
+          "es": "Si un personaje contesta con el mes contrario al de la pregunta, está invirtiendo la premisa."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: en la aldea hay una tienda.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "В деревне нет магазина. Магазин — в соседнем селе, в шести километрах.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: la tienda está en el pueblo de al lado, a seis kilómetros."
+        },
+        "incorrect": {
+          "es": "Busca la frase con «нет магазина». Va seguida de dónde sí está."
+        },
+        "strategy": {
+          "es": "La palabra «нет» + genitivo niega la existencia: localízala y tendrás la respuesta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la información.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "La distinción entre ir a la aldea y a la dacha"
+        },
+        {
+          "id": "p2",
+          "text": "Cuánta gente vive allí en invierno y en verano"
+        },
+        {
+          "id": "p3",
+          "text": "La tienda ambulante y la falta de internet"
+        },
+        {
+          "id": "p4",
+          "text": "La tía, sus alumnos y su respuesta final"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Не «на дачу» — в деревню … Зимой в деревне живут четыре человека … Автолавка приезжает по средам … Моя тётя работала в школе тридцать восемь лет.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: la distinción, los datos, la vida práctica y la persona."
+        },
+        "incorrect": {
+          "es": "Fíjate en dónde aparece la tienda ambulante y dónde entra la tía como protagonista."
+        },
+        "strategy": {
+          "es": "Una memoria suele dejar a la persona más importante para el final."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en ruso sobre un sitio al que vuelves cada año. Usa tres veces в + prepositivo (estar) y tres veces в + acusativo (ir)."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "Каждое лето я езжу в деревню.",
+      "В деревне живёт моя тётя.",
+      "Когда я в Москве, я думаю о деревне.",
+      "В деревне нет магазина."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de ruso —imprescindible por el aspecto y los casos— y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso A2: a la aldea y en la aldea | WeLearn"
+    },
+    "description": {
+      "es": "Lee una memoria de verano en ruso A2 y practica el prepositivo y el acusativo de dirección. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/a2/lectura/v-derevnyu-i-v-derevne",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-a2-skolko-lyudey-prikhodit",
+      "ru-a2-nikogda-ne-vykhodi-s-mokrymi-volosami"
+    ]
+  }
+}
