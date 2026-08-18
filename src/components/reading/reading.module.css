@@ -3,8 +3,9 @@
   --reading-ink: var(--ink);
   --reading-muted: var(--muted);
   --reading-line: var(--line-soft);
-  --reading-blue: var(--wl-on-panel-link, #0066cc);
-  --reading-blue-soft: color-mix(in srgb, #0066cc 12%, transparent);
+  /* El acento sale del contrato; y deja de leer el puente heredado. */
+  --reading-blue: var(--wlp-accent-lectura, #1c4b9c);
+  --reading-blue-soft: color-mix(in srgb, var(--reading-blue) 12%, transparent);
   --reading-lavender: transparent;
   color: var(--ink);
 }
