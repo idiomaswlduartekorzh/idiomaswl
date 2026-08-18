@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "it-b1-mi-dica-lei-cosa-devo-fare",
-  "status": "draft",
+  "status": "approved",
   "language": "it",
   "variant": "it-IT",
   "tutorLocales": [
@@ -215,7 +215,7 @@
     "independentAssessment": {
       "estimatedLevel": "B1",
       "passed": true,
-      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
       "assessedAt": "2026-08-18T00:00:00-05:00",
       "notes": "Congiuntivo presente y passato, condizionale passato, futuro anteriore, trapassato prossimo y las tres condicionales. El congiuntivo imperfetto aparece solo dentro del periodo ipotetico dell'impossibilità, que es el propio tema del nivel. Sin passato remoto."
     }
@@ -447,15 +447,15 @@
   },
   "review": {
     "author": "José David Duarte Silva",
-    "languageReviewer": "Pendiente",
-    "pedagogyReviewer": "Pendiente",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
     "reviewedAt": "2026-08-18T00:00:00-05:00",
     "copyrightChecked": true,
     "cultureChecked": true,
     "aiAssisted": true,
-    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de italiano y revisión pedagógica antes de publicar.",
-    "languageDecision": "pending",
-    "pedagogyDecision": "pending"
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
   },
   "seo": {
     "title": {

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "it-a2-mi-scusi-signora-nardi",
-  "status": "draft",
+  "status": "approved",
   "language": "it",
   "variant": "it-IT",
   "tutorLocales": [
@@ -209,7 +209,7 @@
     "independentAssessment": {
       "estimatedLevel": "A2",
       "passed": true,
-      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
       "assessedAt": "2026-08-18T00:00:00-05:00",
       "notes": "Passato prossimo con avere y essere, imperfetto, futuro, condizionale y forma di cortesia. Sin congiuntivo ni passato remoto."
     }
@@ -441,15 +441,15 @@
   },
   "review": {
     "author": "José David Duarte Silva",
-    "languageReviewer": "Pendiente",
-    "pedagogyReviewer": "Pendiente",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
     "reviewedAt": "2026-08-18T00:00:00-05:00",
     "copyrightChecked": true,
     "cultureChecked": true,
     "aiAssisted": true,
-    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de italiano y revisión pedagógica antes de publicar.",
-    "languageDecision": "pending",
-    "pedagogyDecision": "pending"
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
   },
   "seo": {
     "title": {
