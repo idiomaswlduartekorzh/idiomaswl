@@ -1,0 +1,459 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-a2-carta-sobre-o-recreio",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Portugués A2"
+  },
+  "slug": "carta-sobre-o-recreio",
+  "series": {
+    "id": "portugues-a2-lectura-10",
+    "episode": 3,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-a2-a-agua-que-vem-de-longe",
+    "nextExerciseId": "pt-a2-a-oficina-do-seu-jorge"
+  },
+  "classification": {
+    "genre": "carta al director",
+    "topic": "el patio de una escuela",
+    "intent": "learning",
+    "tags": [
+      "portugues a2",
+      "lectura",
+      "subjuntivo presente",
+      "verbos modales"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Carta sobre el recreo"
+    },
+    "intro": {
+      "es": "Una madre pide que no acorten el recreo, y empieza dándole la razón a la dirección. Lectura de portugués A2 con el subjuntivo."
+    },
+    "mission": {
+      "es": "Averigua qué concede la autora y en qué punto deja de ceder."
+    },
+    "targetText": "Prezada direção, escrevo sobre a proposta de reduzir o recreio de trinta para quinze minutos. Quero começar reconhecendo que a senhora tem razão em um ponto: os alunos do nono ano estão atrasados em matemática. Isso é verdade e ninguém deve negar. Também é verdade que faltam horas no calendário. Dito isso, não concordo com a solução. Peço que a direção considere três coisas antes de decidir. Primeira: as crianças não descansam quando ficam sentadas. Elas descansam quando correm. Uma pausa de quinze minutos não permite que elas saiam, joguem e voltem. Elas vão passar os quinze minutos na fila do banheiro. Segunda: os professores também precisam desse tempo. Ontem eu conversei com dois deles. Eles disseram que os quinze minutos extras não vão render nada se os alunos entrarem cansados. Terceira, e essa é a mais importante: no ano passado a escola já tentou isso. Foram dois meses. As notas não subiram. Ninguém publicou esse resultado, mas os pais lembram. Eu não peço que a escola ignore o problema de matemática. Peço que procure a solução em outro lugar. Talvez nas duas horas de aula que se perdem toda semana com avisos e recados. Ninguém fala dessas horas. Atenciosamente, Renata Alves.",
+    "wordCount": 202,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Usar el subjuntivo tras verbos de petición: peço que considere, peço que procure."
+      },
+      {
+        "es": "Manejar los verbos modales: dever, precisar, poder, permitir."
+      },
+      {
+        "es": "Distinguir en una carta lo que se concede de lo que se rebate."
+      }
+    ],
+    "grammarFocus": [
+      "subjuntivo-presente-a2",
+      "verbos-modais-a2",
+      "negacao"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Prezada",
+        "lemma": "prezado",
+        "glosses": {
+          "es": "estimada (fórmula de carta formal)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "recreio",
+        "lemma": "recreio",
+        "glosses": {
+          "es": "recreo. ¡No es «recreo» como diversión: es la pausa escolar!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "atrasados",
+        "lemma": "atrasado",
+        "glosses": {
+          "es": "retrasados, por detrás del nivel"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "banheiro",
+        "lemma": "banheiro",
+        "glosses": {
+          "es": "baño, servicios"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "render",
+        "lemma": "render",
+        "glosses": {
+          "es": "rendir, dar resultado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "notas",
+        "lemma": "notas",
+        "glosses": {
+          "es": "calificaciones"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "recados",
+        "lemma": "recado",
+        "glosses": {
+          "es": "avisos, mensajes"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Atenciosamente",
+        "lemma": "Atenciosamente",
+        "glosses": {
+          "es": "atentamente (despedida formal)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La «carta à direção» es un canal habitual en las escuelas brasileñas, y las asociaciones de padres la usan como vía formal antes de escalar a la secretaría de educación."
+    },
+    "spanishSpeakerNote": {
+      "es": "Tras «peço que» el portugués exige subjuntivo, igual que el español: «peço que considere». Y cuidado con «render»: aquí es rendir en el sentido de dar resultado, no de rendirse."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en portugués sobre hechos pasados y planes, distinguir el perfeito del imperfeito, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares",
+      "comparativos-superlativos-a2",
+      "condicional-a2",
+      "conjuncoes-logicas-a2",
+      "diminutivos-aumentativos-a2",
+      "expressoes-com-fazer-a2",
+      "expressoes-tempo-a2",
+      "futuro-do-presente-a2",
+      "gerundio-a2",
+      "ha-faz-tempo-a2",
+      "para-vs-por-a2",
+      "preterito-imperfeito-a2",
+      "preterito-perfeito-irregular-a2",
+      "pronomes-obliquos-a2",
+      "pronomes-relativos-a2",
+      "ser-vs-estar-a2",
+      "subjuntivo-presente-a2",
+      "verbo-ficar-a2",
+      "verbos-modais-a2",
+      "verbos-reflexivos-a2",
+      "voz-passiva-a2"
+    ],
+    "disallowedGrammar": [
+      "mais-que-perfeito composto",
+      "futuro do subjuntivo",
+      "registro literario"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 9.2,
+      "maxSentenceWords": 20,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Pasado narrativo (perfeito e imperfeito) y subjuntivo presente permitidos. Sin mais-que-perfeito compuesto ni futuro de subjuntivo. Inferencia ligera."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué pide la carta?",
+      "options": [
+        {
+          "id": "otrolado",
+          "text": "Que se busque el tiempo en otro sitio, no en el recreo"
+        },
+        {
+          "id": "ignorar",
+          "text": "Que se ignore el problema de matemáticas"
+        },
+        {
+          "id": "ampliar",
+          "text": "Que se amplíe el recreo a cuarenta y cinco minutos"
+        }
+      ],
+      "answer": "otrolado",
+      "evidence": "Eu não peço que a escola ignore o problema de matemática. Peço que procure a solução em outro lugar.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo formula descartando primero lo que no pide. Esa precisión es la clave de la carta."
+        },
+        "incorrect": {
+          "es": "Dice expresamente que no pide ignorar el problema, y no propone ampliar nada. Lee las dos frases con «peço»."
+        },
+        "strategy": {
+          "es": "Cuando alguien dice «no pido X, pido Y», la petición real es Y. Busca esa pareja."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué pasó cuando la escuela ya probó esto el año pasado?",
+      "options": [
+        {
+          "id": "nosubieron",
+          "text": "Las notas no subieron"
+        },
+        {
+          "id": "subieron",
+          "text": "Las notas subieron mucho"
+        },
+        {
+          "id": "noprobo",
+          "text": "Nunca llegó a probarse"
+        }
+      ],
+      "answer": "nosubieron",
+      "evidence": "no ano passado a escola já tentou isso. Foram dois meses. As notas não subiram.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y la autora añade que nadie publicó ese resultado pero los padres lo recuerdan."
+        },
+        "incorrect": {
+          "es": "El texto dice que sí se probó, durante dos meses. Busca la tercera razón de la carta."
+        },
+        "strategy": {
+          "es": "Un precedente citado en una carta suele traer su resultado pegado. Léelos juntos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "La carta dice que los alumnos «estão atrasados em matemática». ¿Qué significa?",
+      "options": [
+        {
+          "id": "nivel",
+          "text": "Que van por detrás del nivel que les corresponde"
+        },
+        {
+          "id": "tarde",
+          "text": "Que llegan tarde a la clase de matemáticas"
+        },
+        {
+          "id": "lentos",
+          "text": "Que hacen los exámenes despacio"
+        }
+      ],
+      "answer": "nivel",
+      "evidence": "os alunos do nono ano estão atrasados em matemática. Isso é verdade e ninguém deve negar.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Va seguido de la propuesta de dar más horas de clase: el retraso es de contenido, no de horario."
+        },
+        "incorrect": {
+          "es": "Si fuera llegar tarde, quitar recreo no serviría de nada. Fíjate en qué solución se plantea."
+        },
+        "strategy": {
+          "es": "Comprueba que tu interpretación explique la medida que el texto discute. Si no encaja, no es esa."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice que quince minutos no bastan para descansar?",
+      "options": [
+        {
+          "id": "cola",
+          "text": "Porque se irían en la cola del baño, sin salir ni jugar"
+        },
+        {
+          "id": "corto",
+          "text": "Porque los niños tardan quince minutos en salir del aula"
+        },
+        {
+          "id": "comida",
+          "text": "Porque no daría tiempo a comer"
+        }
+      ],
+      "answer": "cola",
+      "evidence": "Uma pausa de quinze minutos não permite que elas saiam, joguem e voltem. Elas vão passar os quinze minutos na fila do banheiro.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la imagen es concreta: la pausa entera se consume en la cola."
+        },
+        "incorrect": {
+          "es": "El texto no habla de comida ni de salir del aula. Lee la frase que sigue a «não permite»."
+        },
+        "strategy": {
+          "es": "Cuando un argumento se apoya en una imagen concreta, esa imagen es la prueba. Búscala."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la autora niega que los alumnos vayan retrasados en matemáticas.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "a senhora tem razão em um ponto: os alunos do nono ano estão atrasados em matemática. Isso é verdade e ninguém deve negar.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: lo reconoce en el segundo párrafo, antes de discrepar en nada."
+        },
+        "incorrect": {
+          "es": "Busca cómo empieza la carta después del saludo. Concede algo antes de rebatir."
+        },
+        "strategy": {
+          "es": "En una carta de réplica, la concesión suele ir al principio. Encontrarla evita malinterpretar el resto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué menciona las dos horas semanales que se pierden en avisos?",
+      "options": [
+        {
+          "id": "alternativa",
+          "text": "Para ofrecer de dónde sacar el tiempo sin tocar el recreo"
+        },
+        {
+          "id": "critica",
+          "text": "Para criticar a los profesores por hablar demasiado"
+        },
+        {
+          "id": "relleno",
+          "text": "Como un dato secundario sin relación con su petición"
+        }
+      ],
+      "answer": "alternativa",
+      "evidence": "Peço que procure a solução em outro lugar. Talvez nas duas horas de aula que se perdem toda semana com avisos e recados.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. No se limita a oponerse: propone dónde buscar, que es lo que hace fuerte la carta."
+        },
+        "incorrect": {
+          "es": "No señala a los profesores —de hecho los cita a favor— ni es un dato suelto. Lee la frase anterior."
+        },
+        "strategy": {
+          "es": "Una objeción se vuelve propuesta cuando ofrece una alternativa. Busca si el texto da una."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe una carta de 8–10 frases en portugués pidiendo un cambio en tu escuela o trabajo. Concede algo al principio y usa tres subjuntivos con «peço que»."
+    },
+    "minWords": 45,
+    "maxWords": 95,
+    "hints": [
+      "Prezada direção, escrevo sobre…",
+      "A senhora tem razão em um ponto:…",
+      "Dito isso, não concordo…",
+      "Peço que… considere…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de portugués brasileño y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués A2: Carta sobre el recreo | WeLearn"
+    },
+    "description": {
+      "es": "Lee una carta al director en portugués de Brasil A2 y practica el subjuntivo presente y los verbos modales. Con vocabulario y seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/a2/lectura/carta-sobre-o-recreio",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-a2-a-agua-que-vem-de-longe",
+      "pt-a2-a-oficina-do-seu-jorge"
+    ]
+  }
+}

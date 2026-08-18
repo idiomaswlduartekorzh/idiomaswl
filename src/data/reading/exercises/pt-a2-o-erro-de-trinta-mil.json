@@ -1,0 +1,467 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-a2-o-erro-de-trinta-mil",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Portugués A2"
+  },
+  "slug": "o-erro-de-trinta-mil",
+  "series": {
+    "id": "portugues-a2-lectura-10",
+    "episode": 1,
+    "totalEpisodes": 10,
+    "previousExerciseId": null,
+    "nextExerciseId": "pt-a2-a-agua-que-vem-de-longe"
+  },
+  "classification": {
+    "genre": "relato de trabajo",
+    "topic": "un error de facturación",
+    "intent": "learning",
+    "tags": [
+      "portugues a2",
+      "lectura",
+      "pretérito perfeito irregular",
+      "imperfeito"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El error de treinta mil"
+    },
+    "intro": {
+      "es": "Una factura emitida al cliente equivocado por dos cifras cambiadas, y una jefa que solo hizo una pregunta. Lectura de portugués A2."
+    },
+    "mission": {
+      "es": "Averigua qué pregunta hizo la jefa y por qué era la única que importaba."
+    },
+    "targetText": "Em maio do ano passado eu fiz um erro de trinta mil reais. Eu trabalhava no setor de faturamento de uma empresa de transporte. Todo mês eu emitia as notas fiscais dos clientes grandes. Era um trabalho repetitivo e eu já fazia isso havia dois anos. Naquele mês eu tinha pressa. Eu quis terminar antes das seis. Eu troquei dois números do CNPJ e a nota saiu no nome errado. Não era um cliente qualquer: era o maior de todos. Eu soube do erro na quinta-feira seguinte. O telefone tocou às oito da manhã. Era a Márcia, do financeiro do cliente. Ela não gritou. Ela disse apenas: acho que essa nota não é nossa. Eu fui falar com a minha chefe. Eu estava tremendo. Ela ouviu tudo e não disse nada por uns dez segundos. Depois ela pôs a mão na mesa e perguntou uma coisa só: você me contou hoje ou o cliente me contou? Eu respondi que eu tinha contado. Ela disse que isso era a única coisa que importava. Nós refizemos a nota juntas naquela manhã. Levou quarenta minutos. Hoje eu ainda trabalho lá. E eu ainda tenho pressa. Mas eu confiro o CNPJ duas vezes, sempre.",
+    "wordCount": 200,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Reconocer los pretéritos irregulares: fiz, quis, soube, disse, pôs, fui."
+      },
+      {
+        "es": "Usar el imperfeito para lo que se repetía: trabalhava, emitia, fazia."
+      },
+      {
+        "es": "Distinguir el hecho puntual del contexto en que ocurrió."
+      }
+    ],
+    "grammarFocus": [
+      "preterito-perfeito-irregular-a2",
+      "preterito-imperfeito-a2",
+      "presente-verbos-ar"
+    ],
+    "vocabulary": [
+      {
+        "surface": "faturamento",
+        "lemma": "faturamento",
+        "glosses": {
+          "es": "facturación"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "notas fiscais",
+        "lemma": "notas fiscais",
+        "glosses": {
+          "es": "facturas oficiales"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "CNPJ",
+        "lemma": "CNPJ",
+        "glosses": {
+          "es": "número fiscal de empresa en Brasil"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pressa",
+        "lemma": "pressa",
+        "glosses": {
+          "es": "prisa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tremendo",
+        "lemma": "tremer",
+        "glosses": {
+          "es": "temblando"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "refizemos",
+        "lemma": "refazer",
+        "glosses": {
+          "es": "rehicimos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "confiro",
+        "lemma": "conferir",
+        "glosses": {
+          "es": "compruebo, verifico"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "chefe",
+        "lemma": "chefe",
+        "glosses": {
+          "es": "jefa, jefe"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El CNPJ es el número de identificación fiscal de las empresas brasileñas, y aparece en cada factura. Un dígito cambiado emite el documento a otra compañía."
+    },
+    "spanishSpeakerNote": {
+      "es": "Ojo con «conferir»: en portugués significa comprobar, no conferir ni otorgar. Y fíjate en la pareja de pasados: «eu trabalhava» describe la rutina; «eu fiz um erro» cuenta el hecho que la rompió."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en portugués sobre hechos pasados y planes, distinguir el perfeito del imperfeito, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares",
+      "comparativos-superlativos-a2",
+      "condicional-a2",
+      "conjuncoes-logicas-a2",
+      "diminutivos-aumentativos-a2",
+      "expressoes-com-fazer-a2",
+      "expressoes-tempo-a2",
+      "futuro-do-presente-a2",
+      "gerundio-a2",
+      "ha-faz-tempo-a2",
+      "para-vs-por-a2",
+      "preterito-imperfeito-a2",
+      "preterito-perfeito-irregular-a2",
+      "pronomes-obliquos-a2",
+      "pronomes-relativos-a2",
+      "ser-vs-estar-a2",
+      "subjuntivo-presente-a2",
+      "verbo-ficar-a2",
+      "verbos-modais-a2",
+      "verbos-reflexivos-a2",
+      "voz-passiva-a2"
+    ],
+    "disallowedGrammar": [
+      "mais-que-perfeito composto",
+      "futuro do subjuntivo",
+      "registro literario"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 8.3,
+      "maxSentenceWords": 21,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Pasado narrativo (perfeito e imperfeito) y subjuntivo presente permitidos. Sin mais-que-perfeito compuesto ni futuro de subjuntivo. Inferencia ligera."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es la idea que sostiene el relato?",
+      "options": [
+        {
+          "id": "avisar",
+          "text": "Que lo decisivo no fue el error, sino quién dio la noticia primero"
+        },
+        {
+          "id": "despido",
+          "text": "Que un error así cuesta el puesto"
+        },
+        {
+          "id": "sistema",
+          "text": "Que el sistema de facturación de la empresa es malo"
+        }
+      ],
+      "answer": "avisar",
+      "evidence": "você me contou hoje ou o cliente me contou? … Ela disse que isso era a única coisa que importava.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La jefa hace una sola pregunta, y con ella define qué se juzga."
+        },
+        "incorrect": {
+          "es": "Sigue trabajando allí y no se critica el sistema. Busca la pregunta que hace la jefa."
+        },
+        "strategy": {
+          "es": "Cuando un personaje con autoridad hace una sola pregunta, esa pregunta es la tesis del texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué provocó el error exactamente?",
+      "options": [
+        {
+          "id": "numeros",
+          "text": "Cambió dos cifras del CNPJ"
+        },
+        {
+          "id": "fecha",
+          "text": "Puso una fecha equivocada"
+        },
+        {
+          "id": "valor",
+          "text": "Escribió mal el importe"
+        }
+      ],
+      "answer": "numeros",
+      "evidence": "Eu troquei dois números do CNPJ e a nota saiu no nome errado.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y por eso la factura salió a nombre de otra empresa."
+        },
+        "incorrect": {
+          "es": "El importe y la fecha no se mencionan como causa. Busca el verbo «troquei»."
+        },
+        "strategy": {
+          "es": "La causa de un error suele ir en la misma frase que su consecuencia, unida por «e»."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto termina con «eu confiro o CNPJ duas vezes». ¿Qué significa «conferir»?",
+      "options": [
+        {
+          "id": "comprobar",
+          "text": "Comprobar, verificar"
+        },
+        {
+          "id": "otorgar",
+          "text": "Otorgar, conceder"
+        },
+        {
+          "id": "comparar",
+          "text": "Comparar dos empresas"
+        }
+      ],
+      "answer": "comprobar",
+      "evidence": "Mas eu confiro o CNPJ duas vezes, sempre.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y es un falso amigo: en portugués «conferir» es comprobar, no conceder."
+        },
+        "incorrect": {
+          "es": "Piensa en qué cambió después del error. Nadie concede un número fiscal dos veces."
+        },
+        "strategy": {
+          "es": "Cuando un verbo cierra un relato de aprendizaje, describe la corrección adoptada. Eso lo acota."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué la jefa se quedó callada diez segundos antes de hablar?",
+      "options": [
+        {
+          "id": "decidir",
+          "text": "Porque estaba decidiendo cómo tratar el asunto"
+        },
+        {
+          "id": "enfado",
+          "text": "Porque estaba conteniendo un grito"
+        },
+        {
+          "id": "telefono",
+          "text": "Porque estaba escuchando otra llamada"
+        }
+      ],
+      "answer": "decidir",
+      "evidence": "Ela ouviu tudo e não disse nada por uns dez segundos. Depois ela pôs a mão na mesa e perguntou uma coisa só.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Lo que sigue al silencio es una pregunta muy medida, no una reacción."
+        },
+        "incorrect": {
+          "es": "No grita en ningún momento, ni hay otra llamada. Fíjate en qué hace justo después del silencio."
+        },
+        "strategy": {
+          "es": "Un silencio en un relato se interpreta por lo que viene después. Lee la frase siguiente."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la persona del cliente que llamó gritó por teléfono.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Ela não gritou. Ela disse apenas: acho que essa nota não é nossa.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: no gritó. Y su frase es casi una disculpa, no una reclamación."
+        },
+        "incorrect": {
+          "es": "Busca la frase sobre Márcia. El texto dice expresamente qué no hizo."
+        },
+        "strategy": {
+          "es": "Cuando un texto niega una reacción esperada, ese detalle es deliberado. No lo pases por alto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena los hechos del relato.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Emite la factura con dos cifras cambiadas del CNPJ"
+        },
+        {
+          "id": "p2",
+          "text": "El jueves siguiente llama Márcia, del cliente"
+        },
+        {
+          "id": "p3",
+          "text": "Habla con su jefa y le cuenta todo"
+        },
+        {
+          "id": "p4",
+          "text": "Rehacen la factura juntas en cuarenta minutos"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Eu troquei dois números … Eu soube do erro na quinta-feira seguinte … Eu fui falar com a minha chefe … Nós refizemos a nota juntas",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El relato encadena los hechos con marcas de tiempo claras."
+        },
+        "incorrect": {
+          "es": "Guíate por «na quinta-feira seguinte» y «naquela manhã». Ordenan todo lo demás."
+        },
+        "strategy": {
+          "es": "En un relato laboral, las marcas de día y hora son el esqueleto. Localízalas primero."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en portugués sobre un error que cometiste en el trabajo o los estudios. Usa cuatro pretéritos irregulares y tres verbos en imperfeito."
+    },
+    "minWords": 45,
+    "maxWords": 95,
+    "hints": [
+      "Em… do ano passado eu fiz…",
+      "Eu trabalhava em…",
+      "Eu soube do erro…",
+      "Hoje eu ainda…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de portugués brasileño y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués A2: El error de treinta mil | WeLearn"
+    },
+    "description": {
+      "es": "Lee un relato en portugués de Brasil A2 y practica el pretérito perfeito irregular y el imperfeito. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/a2/lectura/o-erro-de-trinta-mil",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-a2-a-agua-que-vem-de-longe"
+    ]
+  }
+}

@@ -1,0 +1,459 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-a2-voltar-para-a-cidade-pequena",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Portugués A2"
+  },
+  "slug": "voltar-para-a-cidade-pequena",
+  "series": {
+    "id": "portugues-a2-lectura-10",
+    "episode": 5,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-a2-a-oficina-do-seu-jorge",
+    "nextExerciseId": "pt-a2-tres-bairros-um-aluguel"
+  },
+  "classification": {
+    "genre": "crónica personal",
+    "topic": "regresar a la ciudad natal",
+    "intent": "learning",
+    "tags": [
+      "portugues a2",
+      "lectura",
+      "verbo ficar",
+      "ser vs estar"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Volver al pueblo"
+    },
+    "intro": {
+      "es": "Volvió a su ciudad natal por seis meses y lleva cuatro años. Lectura de portugués A2 con el verbo ficar y la pareja ser / estar."
+    },
+    "mission": {
+      "es": "Averigua qué le hizo quedarse, y qué reconoce que no ha resuelto."
+    },
+    "targetText": "Eu voltei para Bragança em 2022. Era para ficar seis meses. Fiquei quatro anos. Eu tinha saído aos dezoito para estudar em Belo Horizonte e fiquei doze anos lá. Quando eu voltei, a cidade estava diferente e eu também estava. As duas coisas são verdade e não é fácil separar uma da outra. No começo eu ficava irritado com tudo. O mercado fechava às seis. Não existia cinema. Meus amigos de escola falavam dos mesmos assuntos de sempre. Eu pensava: eu não sou mais daqui. E era verdade. Mas aconteceu uma coisa que eu não esperava. Eu comecei a trabalhar de casa, e o trabalho ficou igual: as mesmas reuniões, os mesmos prazos. O que mudou foi o resto. Em Belo Horizonte eu ficava duas horas por dia no trânsito. Aqui eu fico dez minutos. Isso são quase quinhentas horas por ano. Eu não sabia o que fazer com esse tempo no primeiro ano. Agora eu sei. Eu não vou dizer que estou feliz o tempo todo, porque não é verdade. Tem dias em que a cidade fica pequena demais. Mas eu fiquei. E quando alguém me pergunta se eu sou de Bragança, hoje eu respondo que sim. Antes eu hesitava antes de responder.",
+    "wordCount": 204,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Manejar «ficar» en sus sentidos: quedarse, ponerse, volverse, permanecer."
+      },
+      {
+        "es": "Distinguir ser (identidad) de estar (situación) en frases seguidas."
+      },
+      {
+        "es": "Separar el cambio del lugar del cambio de la persona."
+      }
+    ],
+    "grammarFocus": [
+      "verbo-ficar-a2",
+      "ser-vs-estar-a2",
+      "ser-e-estar"
+    ],
+    "vocabulary": [
+      {
+        "surface": "irritado",
+        "lemma": "irritado",
+        "glosses": {
+          "es": "molesto, irritado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "assuntos",
+        "lemma": "assunto",
+        "glosses": {
+          "es": "temas de conversación"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "prazos",
+        "lemma": "prazo",
+        "glosses": {
+          "es": "plazos de entrega"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "trânsito",
+        "lemma": "trânsito",
+        "glosses": {
+          "es": "tráfico. ¡No es un «tránsito»!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "demais",
+        "lemma": "demais",
+        "glosses": {
+          "es": "demasiado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "esperava",
+        "lemma": "esperar",
+        "glosses": {
+          "es": "esperaba"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "mudou",
+        "lemma": "mudar",
+        "glosses": {
+          "es": "cambió. ¡No es «mudarse de casa» aquí!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "começo",
+        "lemma": "começo",
+        "glosses": {
+          "es": "principio, comienzo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El regreso de profesionales urbanos a ciudades pequeñas del interior se aceleró en Brasil tras la generalización del trabajo remoto, y ha cambiado la demografía de muchos municipios medianos."
+    },
+    "spanishSpeakerNote": {
+      "es": "Dos avisos. «Trânsito» es el tráfico, no un tránsito. Y «mudar» significa cambiar: mudarse de casa es «se mudar», con pronombre. El verbo «ficar» aparece aquí con cuatro sentidos distintos; búscalos."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en portugués sobre hechos pasados y planes, distinguir el perfeito del imperfeito, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares",
+      "comparativos-superlativos-a2",
+      "condicional-a2",
+      "conjuncoes-logicas-a2",
+      "diminutivos-aumentativos-a2",
+      "expressoes-com-fazer-a2",
+      "expressoes-tempo-a2",
+      "futuro-do-presente-a2",
+      "gerundio-a2",
+      "ha-faz-tempo-a2",
+      "para-vs-por-a2",
+      "preterito-imperfeito-a2",
+      "preterito-perfeito-irregular-a2",
+      "pronomes-obliquos-a2",
+      "pronomes-relativos-a2",
+      "ser-vs-estar-a2",
+      "subjuntivo-presente-a2",
+      "verbo-ficar-a2",
+      "verbos-modais-a2",
+      "verbos-reflexivos-a2",
+      "voz-passiva-a2"
+    ],
+    "disallowedGrammar": [
+      "mais-que-perfeito composto",
+      "futuro do subjuntivo",
+      "registro literario"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 8.2,
+      "maxSentenceWords": 17,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Pasado narrativo (perfeito e imperfeito) y subjuntivo presente permitidos. Sin mais-que-perfeito compuesto ni futuro de subjuntivo. Inferencia ligera."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta la crónica?",
+      "options": [
+        {
+          "id": "tiempo",
+          "text": "Que se quedó porque ganó tiempo, aunque la ciudad siga siendo pequeña"
+        },
+        {
+          "id": "nostalgia",
+          "text": "Que volvió por nostalgia de su infancia"
+        },
+        {
+          "id": "fracaso",
+          "text": "Que volvió porque le fue mal en la ciudad grande"
+        }
+      ],
+      "answer": "tiempo",
+      "evidence": "Em Belo Horizonte eu ficava duas horas por dia no trânsito. Aqui eu fico dez minutos. Isso são quase quinhentas horas por ano.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y a la vez admite que hay días en que la ciudad se le queda pequeña. Las dos cosas conviven."
+        },
+        "incorrect": {
+          "es": "No hay nostalgia ni fracaso: el trabajo siguió igual. Busca el cálculo de las horas."
+        },
+        "strategy": {
+          "es": "Cuando un texto hace una cuenta concreta, esa cuenta suele ser el argumento central."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto tiempo pensaba quedarse al volver?",
+      "options": [
+        {
+          "id": "seis",
+          "text": "Seis meses"
+        },
+        {
+          "id": "cuatro",
+          "text": "Cuatro años"
+        },
+        {
+          "id": "doce",
+          "text": "Doce años"
+        }
+      ],
+      "answer": "seis",
+      "evidence": "Era para ficar seis meses. Fiquei quatro anos.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Los cuatro años son lo que lleva, y los doce, los que pasó en Belo Horizonte."
+        },
+        "incorrect": {
+          "es": "El texto contrapone el plan con la realidad en dos frases seguidas. Busca la primera."
+        },
+        "strategy": {
+          "es": "Cuando dos frases cortas seguidas dan dos duraciones, la primera es el plan y la segunda el hecho."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «No começo eu ficava irritado com tudo». ¿Qué significa «ficar» aquí?",
+      "options": [
+        {
+          "id": "ponerse",
+          "text": "Ponerse, volverse (un estado)"
+        },
+        {
+          "id": "quedarse",
+          "text": "Quedarse en un lugar"
+        },
+        {
+          "id": "sobrar",
+          "text": "Sobrar, quedar de resto"
+        }
+      ],
+      "answer": "ponerse",
+      "evidence": "No começo eu ficava irritado com tudo.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. «Ficar + adjetivo» expresa un cambio de estado: ponerse irritado."
+        },
+        "incorrect": {
+          "es": "Aquí no hay lugar ni resto: va seguido de un adjetivo. Compáralo con «Fiquei quatro anos», que sí es permanencia."
+        },
+        "strategy": {
+          "es": "El sentido de «ficar» lo decide lo que va detrás: adjetivo = ponerse; tiempo o lugar = quedarse."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice que no es fácil separar las dos cosas?",
+      "options": [
+        {
+          "id": "ambos",
+          "text": "Porque cambiaron la ciudad y él a la vez, y no sabe cuánto es de cada uno"
+        },
+        {
+          "id": "memoria",
+          "text": "Porque no recuerda bien cómo era la ciudad antes"
+        },
+        {
+          "id": "gente",
+          "text": "Porque sus amigos le cuentan versiones distintas"
+        }
+      ],
+      "answer": "ambos",
+      "evidence": "a cidade estava diferente e eu também estava. As duas coisas são verdade e não é fácil separar uma da outra.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y es una observación honesta: no atribuye el cambio solo al lugar."
+        },
+        "incorrect": {
+          "es": "No se habla de memoria ni de versiones ajenas. Lee la frase inmediatamente anterior."
+        },
+        "strategy": {
+          "es": "Si una frase dice «las dos cosas son verdad», busca cuáles son las dos en la frase de antes."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: dice que es feliz todo el tiempo desde que volvió.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Eu não vou dizer que estou feliz o tempo todo, porque não é verdade. Tem dias em que a cidade fica pequena demais.",
+      "feedback": {
+        "correct": {
+          "es": "Falso, y lo niega él mismo. Esa honestidad es lo que hace creíble el resto."
+        },
+        "incorrect": {
+          "es": "Busca el penúltimo tramo del texto. Se adelanta a esa lectura y la descarta."
+        },
+        "strategy": {
+          "es": "Cuando un narrador dice «no voy a decir que…», está negando esa idea. Léelo entero."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "¿Qué efecto tiene la última frase, sobre responder que sí es de Bragança?",
+      "options": [
+        {
+          "id": "reconciliacion",
+          "text": "Cierra una reconciliación: al principio pensaba que ya no era de allí"
+        },
+        {
+          "id": "orgullo",
+          "text": "Muestra orgullo local desde el principio"
+        },
+        {
+          "id": "resignacion",
+          "text": "Muestra resignación por no poder irse"
+        }
+      ],
+      "answer": "reconciliacion",
+      "evidence": "Eu pensava: eu não sou mais daqui. E era verdade … hoje eu respondo que sim.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La frase final responde exactamente a lo que pensaba al principio, y lo invierte."
+        },
+        "incorrect": {
+          "es": "Al principio pensaba justo lo contrario, y no hay resignación: podría irse. Compara con «eu não sou mais daqui»."
+        },
+        "strategy": {
+          "es": "Si una frase final contradice una del principio, el texto está cerrando un arco. Compáralas."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en portugués sobre volver a un sitio donde viviste. Usa «ficar» con tres sentidos distintos y contrasta ser y estar dos veces."
+    },
+    "minWords": 45,
+    "maxWords": 95,
+    "hints": [
+      "Eu voltei para… em…",
+      "Era para ficar…",
+      "No começo eu ficava…",
+      "Hoje eu respondo que sim."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de portugués brasileño y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués A2: Volver al pueblo | WeLearn"
+    },
+    "description": {
+      "es": "Lee una crónica en portugués de Brasil A2 y practica el verbo ficar en sus varios sentidos y la diferencia ser / estar. Seis preguntas y vocabulario."
+    },
+    "canonicalPath": "/practica/portugues/a2/lectura/voltar-para-a-cidade-pequena",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-a2-a-oficina-do-seu-jorge",
+      "pt-a2-tres-bairros-um-aluguel"
+    ]
+  }
+}

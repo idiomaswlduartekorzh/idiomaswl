@@ -1,0 +1,459 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-a2-tres-bairros-um-aluguel",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Portugués A2"
+  },
+  "slug": "tres-bairros-um-aluguel",
+  "series": {
+    "id": "portugues-a2-lectura-10",
+    "episode": 6,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-a2-voltar-para-a-cidade-pequena",
+    "nextExerciseId": "pt-a2-a-cozinheira-das-cinco"
+  },
+  "classification": {
+    "genre": "comparativa",
+    "topic": "elegir dónde vivir",
+    "intent": "learning",
+    "tags": [
+      "portugues a2",
+      "lectura",
+      "comparativos y superlativos",
+      "diminutivos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Tres barrios, un alquiler"
+    },
+    "intro": {
+      "es": "El barrio más barato es el peor comunicado y el más bonito es el más ruidoso. Lectura de portugués A2 con comparativos y diminutivos."
+    },
+    "mission": {
+      "es": "Compara los tres barrios y averigua cuál recomienda el texto, y para quién."
+    },
+    "targetText": "Eu procurei apartamento em três bairros durante dois meses. O aluguel no centro estava fora do meu alcance. Os três ficam na zona leste e custam menos que o centro. Mas são muito diferentes entre si. O Jardim Aurora é o mais barato dos três: mil e duzentos reais por um apartamento de dois quartos. É também o mais longe. Da estação de trem até lá são vinte e cinco minutos de ônibus, e o ônibus passa a cada meia hora. As ruas são larguinhas e tem uma pracinha bonita no meio. Vila Serena custa mil e oitocentos. Fica a dez minutos da estação, andando. É o bairro mais bonito dos três, com casinhas antigas e árvores grandes. O problema é o barulho: tem dois bares que ficam abertos até as três da manhã, e eles são bem barulhentos nos fins de semana. Parque Norte custa mil e seiscentos. Não é o mais barato nem o mais bonito, mas é o mais equilibrado. Fica a quinze minutos da estação e o ônibus passa a cada dez. Eu escolhi Parque Norte. Se eu trabalhasse de casa, escolheria o Jardim Aurora sem pensar. Mas eu saio todo dia às sete, e meia hora de espera é muito tempo às sete da manhã.",
+    "wordCount": 210,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Construir comparativos y superlativos: mais barato, menos que, o mais longe."
+      },
+      {
+        "es": "Reconocer diminutivos y aumentativos: larguinhas, pracinha, casinhas, barulhentos."
+      },
+      {
+        "es": "Comparar tres opciones y seguir una recomendación condicionada."
+      }
+    ],
+    "grammarFocus": [
+      "comparativos-superlativos-a2",
+      "diminutivos-aumentativos-a2",
+      "adjetivos-qualificativos"
+    ],
+    "vocabulary": [
+      {
+        "surface": "aluguel",
+        "lemma": "aluguel",
+        "glosses": {
+          "es": "alquiler"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "quartos",
+        "lemma": "quarto",
+        "glosses": {
+          "es": "habitaciones, dormitorios"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ônibus",
+        "lemma": "ônibus",
+        "glosses": {
+          "es": "autobús"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "larguinhas",
+        "lemma": "largo",
+        "glosses": {
+          "es": "anchitas (diminutivo de ancho)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pracinha",
+        "lemma": "praça",
+        "glosses": {
+          "es": "placita"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "barulho",
+        "lemma": "barulho",
+        "glosses": {
+          "es": "ruido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "barulhentos",
+        "lemma": "barulhento",
+        "glosses": {
+          "es": "ruidosos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "equilibrado",
+        "lemma": "equilibrado",
+        "glosses": {
+          "es": "equilibrado, compensado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El diminutivo en -inho es constante en el portugués de Brasil y no siempre indica tamaño: suaviza, da cariño o quita importancia. «Pracinha» no es solo una plaza pequeña."
+    },
+    "spanishSpeakerNote": {
+      "es": "Recuerda que «largo» es ancho: «ruas larguinhas» son calles anchitas, no largas. Y fíjate en cómo el diminutivo cambia el tono: «casinhas antigas» suena cariñoso, no despectivo."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en portugués sobre hechos pasados y planes, distinguir el perfeito del imperfeito, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares",
+      "comparativos-superlativos-a2",
+      "condicional-a2",
+      "conjuncoes-logicas-a2",
+      "diminutivos-aumentativos-a2",
+      "expressoes-com-fazer-a2",
+      "expressoes-tempo-a2",
+      "futuro-do-presente-a2",
+      "gerundio-a2",
+      "ha-faz-tempo-a2",
+      "para-vs-por-a2",
+      "preterito-imperfeito-a2",
+      "preterito-perfeito-irregular-a2",
+      "pronomes-obliquos-a2",
+      "pronomes-relativos-a2",
+      "ser-vs-estar-a2",
+      "subjuntivo-presente-a2",
+      "verbo-ficar-a2",
+      "verbos-modais-a2",
+      "verbos-reflexivos-a2",
+      "voz-passiva-a2"
+    ],
+    "disallowedGrammar": [
+      "mais-que-perfeito composto",
+      "futuro do subjuntivo",
+      "registro literario"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 11.7,
+      "maxSentenceWords": 25,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Pasado narrativo (perfeito e imperfeito) y subjuntivo presente permitidos. Sin mais-que-perfeito compuesto ni futuro de subjuntivo. Inferencia ligera."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué conclusión ofrece la comparativa?",
+      "options": [
+        {
+          "id": "depende",
+          "text": "Que la elección depende del horario y de si se trabaja fuera de casa"
+        },
+        {
+          "id": "barato",
+          "text": "Que siempre conviene el barrio más barato"
+        },
+        {
+          "id": "bonito",
+          "text": "Que el barrio más bonito compensa el ruido"
+        }
+      ],
+      "answer": "depende",
+      "evidence": "Se eu trabalhasse de casa, escolheria o Jardim Aurora sem pensar. Mas eu saio todo dia às sete.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Elige uno pero admite que con otro horario elegiría otro. La recomendación está condicionada."
+        },
+        "incorrect": {
+          "es": "No elige ni el más barato ni el más bonito. Lee las dos frases finales, la del condicional."
+        },
+        "strategy": {
+          "es": "Si un texto comparativo acaba con una hipótesis en condicional, su respuesta es «depende». Lee la condición."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuál es el barrio más barato y cuánto cuesta?",
+      "options": [
+        {
+          "id": "aurora",
+          "text": "Jardim Aurora, mil doscientos"
+        },
+        {
+          "id": "serena",
+          "text": "Vila Serena, mil ochocientos"
+        },
+        {
+          "id": "norte",
+          "text": "Parque Norte, mil seiscientos"
+        }
+      ],
+      "answer": "aurora",
+      "evidence": "O Jardim Aurora é o mais barato dos três: mil e duzentos reais",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Vila Serena es el más caro y Parque Norte queda en medio."
+        },
+        "incorrect": {
+          "es": "El texto da tres precios. Busca el que va con «o mais barato»."
+        },
+        "strategy": {
+          "es": "Con tres opciones y tres precios, ordénalos antes de responder. El superlativo te da el extremo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que en Jardim Aurora «as ruas são larguinhas». ¿Qué significa?",
+      "options": [
+        {
+          "id": "anchitas",
+          "text": "Que son bastante anchas"
+        },
+        {
+          "id": "largas",
+          "text": "Que son muy largas"
+        },
+        {
+          "id": "estrechas",
+          "text": "Que son estrechas"
+        }
+      ],
+      "answer": "anchitas",
+      "evidence": "As ruas são larguinhas e tem uma pracinha bonita no meio.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: «largo» es ancho, y el diminutivo aquí suaviza, no reduce. Son calles agradablemente anchas."
+        },
+        "incorrect": {
+          "es": "Cuidado con el falso amigo: «largo» en portugués es ancho. Y el diminutivo no lo convierte en estrecho."
+        },
+        "strategy": {
+          "es": "Traduce primero la raíz y luego decide qué hace el diminutivo. Son dos pasos, no uno."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué descarta Jardim Aurora pese a ser el más barato?",
+      "options": [
+        {
+          "id": "espera",
+          "text": "Porque el autobús pasa cada media hora y él sale a las siete"
+        },
+        {
+          "id": "peligro",
+          "text": "Porque es el barrio menos seguro"
+        },
+        {
+          "id": "tamano",
+          "text": "Porque los apartamentos son demasiado pequeños"
+        }
+      ],
+      "answer": "espera",
+      "evidence": "o ônibus passa a cada meia hora … meia hora de espera é muito tempo às sete da manhã",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo cierra con esa frase: media hora es mucho a esa hora del día."
+        },
+        "incorrect": {
+          "es": "No se habla de seguridad, y los pisos son de dos habitaciones. Busca la frecuencia del autobús."
+        },
+        "strategy": {
+          "es": "Cuando un dato del principio reaparece al final, es el que decide. Compara las dos apariciones."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: Vila Serena es el barrio más bonito de los tres pero también el más ruidoso.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "É o bairro mais bonito dos três … O problema é o barulho: tem dois bares que ficam abertos até as três da manhã",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y las dos cosas van seguidas: el elogio y el problema."
+        },
+        "incorrect": {
+          "es": "Busca el párrafo de Vila Serena. Tiene una parte buena y una mala."
+        },
+        "strategy": {
+          "es": "En una comparativa, cada opción suele traer una ventaja y un inconveniente. Léelos como pareja."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué describe Parque Norte como «o mais equilibrado»?",
+      "options": [
+        {
+          "id": "medio",
+          "text": "Para justificar su elección: no gana en nada pero no falla en nada"
+        },
+        {
+          "id": "barato",
+          "text": "Para señalar que es el más barato de los tres"
+        },
+        {
+          "id": "bonito",
+          "text": "Para decir que es el más agradable para vivir"
+        }
+      ],
+      "answer": "medio",
+      "evidence": "Não é o mais barato nem o mais bonito, mas é o mais equilibrado. Eu escolhi Parque Norte.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo dice negando los dos superlativos antes de afirmar el suyo."
+        },
+        "incorrect": {
+          "es": "El texto niega expresamente que sea el más barato o el más bonito. Lee la frase entera."
+        },
+        "strategy": {
+          "es": "La estructura «no es X ni Y, pero es Z» define por descarte. Z es la razón de la elección."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Compara en 8–10 frases en portugués tres barrios o tres sitios donde podrías vivir. Usa tres comparativos, dos superlativos y dos diminutivos."
+    },
+    "minWords": 45,
+    "maxWords": 95,
+    "hints": [
+      "Eu procurei… em três bairros.",
+      "… é o mais barato dos três.",
+      "Custa menos que…",
+      "Se eu…, escolheria…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de portugués brasileño y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués A2: Tres barrios, un alquiler | WeLearn"
+    },
+    "description": {
+      "es": "Lee una comparativa en portugués de Brasil A2 y practica los comparativos, los superlativos y los diminutivos. Con vocabulario y seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/a2/lectura/tres-bairros-um-aluguel",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-a2-voltar-para-a-cidade-pequena",
+      "pt-a2-a-cozinheira-das-cinco"
+    ]
+  }
+}

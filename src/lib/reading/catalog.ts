@@ -109,6 +109,17 @@ import ptA1FeiraDaPraca from '@/data/reading/exercises/pt-a1-feira-da-praca.json
 import ptA1MensagensSobreOSofa from '@/data/reading/exercises/pt-a1-mensagens-sobre-o-sofa.json'
 import ptA1OJogoDaRuaQuinze from '@/data/reading/exercises/pt-a1-o-jogo-da-rua-quinze.json'
 import ptA1OQueVoceVendeMais from '@/data/reading/exercises/pt-a1-o-que-voce-vende-mais.json'
+// Portugués (Brasil) A2 — generadas desde `src/data/reading/source/pt-a2.mjs`.
+import ptA2AAguaQueVemDeLonge from '@/data/reading/exercises/pt-a2-a-agua-que-vem-de-longe.json'
+import ptA2ABibliotecaDoPredio from '@/data/reading/exercises/pt-a2-a-biblioteca-do-predio.json'
+import ptA2ACozinheiraDasCinco from '@/data/reading/exercises/pt-a2-a-cozinheira-das-cinco.json'
+import ptA2AOficinaDoSeuJorge from '@/data/reading/exercises/pt-a2-a-oficina-do-seu-jorge.json'
+import ptA2CartaSobreORecreio from '@/data/reading/exercises/pt-a2-carta-sobre-o-recreio.json'
+import ptA2ComoUsarOOnibus from '@/data/reading/exercises/pt-a2-como-usar-o-onibus.json'
+import ptA2FazTempoQueEuNaoParo from '@/data/reading/exercises/pt-a2-faz-tempo-que-eu-nao-paro.json'
+import ptA2OErroDeTrintaMil from '@/data/reading/exercises/pt-a2-o-erro-de-trinta-mil.json'
+import ptA2TresBairrosUmAluguel from '@/data/reading/exercises/pt-a2-tres-bairros-um-aluguel.json'
+import ptA2VoltarParaACidadePequena from '@/data/reading/exercises/pt-a2-voltar-para-a-cidade-pequena.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -214,6 +225,16 @@ const RAW_EXERCISES: unknown[] = [
   ptA1MensagensSobreOSofa,
   ptA1OJogoDaRuaQuinze,
   ptA1OQueVoceVendeMais,
+  ptA2AAguaQueVemDeLonge,
+  ptA2ABibliotecaDoPredio,
+  ptA2ACozinheiraDasCinco,
+  ptA2AOficinaDoSeuJorge,
+  ptA2CartaSobreORecreio,
+  ptA2ComoUsarOOnibus,
+  ptA2FazTempoQueEuNaoParo,
+  ptA2OErroDeTrintaMil,
+  ptA2TresBairrosUmAluguel,
+  ptA2VoltarParaACidadePequena,
 ]
 
 export const READING_EXERCISES: ReadingExercise[] = RAW_EXERCISES.map((candidate) => {
