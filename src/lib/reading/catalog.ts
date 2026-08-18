@@ -150,6 +150,9 @@ import deA2AufDemTischOderAufDenTisch from '@/data/reading/exercises/de-a2-auf-d
 import deA2DasBrotWirdNachtsGebacken from '@/data/reading/exercises/de-a2-das-brot-wird-nachts-gebacken.json'
 import deA2IchHabeMichVerlaufen from '@/data/reading/exercises/de-a2-ich-habe-mich-verlaufen.json'
 import deA2WasWuerdestDuMachen from '@/data/reading/exercises/de-a2-was-wuerdest-du-machen.json'
+import deA2DasFahrradMeinesVaters from '@/data/reading/exercises/de-a2-das-fahrrad-meines-vaters.json'
+import deA2KommMalHer from '@/data/reading/exercises/de-a2-komm-mal-her.json'
+import deA2WederLautNochLeise from '@/data/reading/exercises/de-a2-weder-laut-noch-leise.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -292,6 +295,9 @@ const RAW_EXERCISES: unknown[] = [
   deA2DasBrotWirdNachtsGebacken,
   deA2IchHabeMichVerlaufen,
   deA2WasWuerdestDuMachen,
+  deA2DasFahrradMeinesVaters,
+  deA2KommMalHer,
+  deA2WederLautNochLeise,
 ]
 
 export const READING_EXERCISES: ReadingExercise[] = RAW_EXERCISES.map((candidate) => {
