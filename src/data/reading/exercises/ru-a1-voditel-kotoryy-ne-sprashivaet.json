@@ -1,0 +1,451 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-a1-voditel-kotoryy-ne-sprashivaet",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Ruso A1"
+  },
+  "slug": "voditel-kotoryy-ne-sprashivaet",
+  "series": {
+    "id": "ruso-a1-lectura-10",
+    "episode": 8,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-a1-komu-dedushka-pishet",
+    "nextExerciseId": "ru-a1-prikhodite-v-sem"
+  },
+  "classification": {
+    "genre": "escena de taxi",
+    "topic": "un taxista que no hace preguntas",
+    "intent": "learning",
+    "tags": [
+      "ruso a1",
+      "lectura",
+      "interrogativos",
+      "negación"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El conductor que no pregunta"
+    },
+    "intro": {
+      "es": "Todos los taxistas preguntan de dónde eres y si te gusta Rusia. Uno no pregunta nada, nunca. Lectura de ruso A1."
+    },
+    "mission": {
+      "es": "Averigua qué razón da Serguéi para no preguntar."
+    },
+    "targetText": "Я часто езжу на такси в Нижнем Новгороде. Здесь водители обычно спрашивают всё: откуда я, сколько мне лет, почему я здесь, где моя семья, нравится ли мне Россия.\n\nНо есть один водитель, Сергей. Он не спрашивает ничего. Никогда.\n\nСначала я думаю: он не любит людей. Это не так.\n\nОн говорит «здравствуйте», он говорит «спасибо», он не слушает радио, потому что я не люблю радио. Он помнит это.\n\nИ однажды я спрашиваю его: «Почему вы не задаёте вопросы?»\n\nОн отвечает: «Вы весь день отвечаете на вопросы. В машине можно не отвечать».\n\nИ больше я его ни о чём не спрашиваю. Это мой способ сказать спасибо.",
+    "wordCount": 104,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Reconocer los interrogativos: откуда, сколько, почему, где, ли."
+      },
+      {
+        "es": "Construir la negación con не, ничего, никогда, ни о чём."
+      },
+      {
+        "es": "Distinguir el desinterés del respeto."
+      }
+    ],
+    "grammarFocus": [
+      "preguntas-vopros",
+      "negacion-ne"
+    ],
+    "vocabulary": [
+      {
+        "surface": "водители",
+        "lemma": "водитель",
+        "glosses": {
+          "es": "conductores"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "обычно",
+        "lemma": "обычно",
+        "glosses": {
+          "es": "normalmente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "нравится",
+        "lemma": "нравиться",
+        "glosses": {
+          "es": "gusta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "помнит",
+        "lemma": "помнить",
+        "glosses": {
+          "es": "recuerda"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "однажды",
+        "lemma": "однажды",
+        "glosses": {
+          "es": "una vez, un día"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "задаёте",
+        "lemma": "задавать",
+        "glosses": {
+          "es": "planteáis; «задавать вопросы» es hacer preguntas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "способ",
+        "lemma": "способ",
+        "glosses": {
+          "es": "manera, modo de hacer algo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "больше",
+        "lemma": "больше",
+        "glosses": {
+          "es": "más; «больше не» es ya no"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La conversación con el taxista es una costumbre firme en Rusia, y a un extranjero se le hacen casi siempre las mismas preguntas. Un conductor que no pregunta nada llama la atención."
+    },
+    "spanishSpeakerNote": {
+      "es": "La negación rusa acumula palabras negativas sin anularse: «он не спрашивает ничего», «я ни о чём не спрашиваю». Donde el español dice «no pregunta nada», el ruso pone el «не» además del «ничего»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en ruso sobre la vida cotidiana, reconocer las letras cirílicas que se parecen a las latinas sin serlo, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento"
+    ],
+    "disallowedGrammar": [
+      "pasado verbal",
+      "aspecto perfectivo",
+      "participios",
+      "gerundios (деепричастия)",
+      "condicional"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 8,
+      "maxSentenceWords": 20,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo, imperativo y futuro con быть. Sin pasado, sin aspecto y sin participios. Acento (ударение) sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué descubre el narrador sobre Serguéi?",
+      "options": [
+        {
+          "id": "descanso",
+          "text": "Que no pregunta por respeto: le ofrece un rato sin tener que responder"
+        },
+        {
+          "id": "antipatico",
+          "text": "Que es antipático y no le gustan las personas"
+        },
+        {
+          "id": "idioma",
+          "text": "Que no habla bien ruso"
+        }
+      ],
+      "answer": "descanso",
+      "evidence": "Вы весь день отвечаете на вопросы. В машине можно не отвечать.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto descarta expresamente la otra lectura: «Это не так»."
+        },
+        "incorrect": {
+          "es": "El texto dice literalmente que no es que no le gusten las personas. Busca su respuesta."
+        },
+        "strategy": {
+          "es": "Cuando el texto dice «это не так», está descartando la explicación fácil."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Por qué no pone la radio?",
+      "options": [
+        {
+          "id": "recuerda",
+          "text": "Porque recuerda que al narrador no le gusta"
+        },
+        {
+          "id": "rota",
+          "text": "Porque la radio está estropeada"
+        },
+        {
+          "id": "ruido",
+          "text": "Porque no soporta el ruido"
+        }
+      ],
+      "answer": "recuerda",
+      "evidence": "он не слушает радио, потому что я не люблю радио. Он помнит это.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el texto lo remata con dos palabras: «Он помнит это»."
+        },
+        "incorrect": {
+          "es": "No hay avería y no se habla de su gusto personal. Busca la explicación tras «потому что»."
+        },
+        "strategy": {
+          "es": "Una explicación con «потому что» es literal: no hay que deducir."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué significa «задавать вопросы»?",
+      "options": [
+        {
+          "id": "preguntar",
+          "text": "Hacer preguntas"
+        },
+        {
+          "id": "responder",
+          "text": "Responder preguntas"
+        },
+        {
+          "id": "escribir",
+          "text": "Escribir un formulario"
+        }
+      ],
+      "answer": "preguntar",
+      "evidence": "«Почему вы не задаёте вопросы?» Он отвечает: «Вы весь день отвечаете на вопросы».",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y la respuesta usa el verbo contrario: «отвечать», responder."
+        },
+        "incorrect": {
+          "es": "La respuesta del conductor usa el verbo opuesto en la frase siguiente. Compáralos."
+        },
+        "strategy": {
+          "es": "Si en la frase siguiente aparece el verbo contrario, uno te define el otro."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el narrador deja de preguntarle también a él?",
+      "options": [
+        {
+          "id": "devolver",
+          "text": "Porque le devuelve el mismo silencio como forma de agradecérselo"
+        },
+        {
+          "id": "enfado",
+          "text": "Porque se ha enfadado con la respuesta"
+        },
+        {
+          "id": "miedo",
+          "text": "Porque le da vergüenza hablar ruso"
+        }
+      ],
+      "answer": "devolver",
+      "evidence": "И больше я его ни о чём не спрашиваю. Это мой способ сказать спасибо.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el propio texto lo llama así: su manera de dar las gracias."
+        },
+        "incorrect": {
+          "es": "No hay enfado ni vergüenza. Lee la última frase, que explica la anterior."
+        },
+        "strategy": {
+          "es": "La última frase de un texto corto suele explicar la penúltima."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: los demás taxistas le preguntan de dónde es y si le gusta Rusia.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Водители обычно спрашивают всё: откуда я, сколько мне лет, почему я здесь, где моя семья, нравится ли мне Россия.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero: son las dos primeras y la última de la lista."
+        },
+        "incorrect": {
+          "es": "Busca la lista de preguntas del primer párrafo, después de los dos puntos."
+        },
+        "strategy": {
+          "es": "Cuando el texto da una lista tras dos puntos, compárala entera con la pregunta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la escena.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Las preguntas que hacen todos los taxistas"
+        },
+        {
+          "id": "p2",
+          "text": "Serguéi, que no pregunta nada nunca"
+        },
+        {
+          "id": "p3",
+          "text": "La radio apagada porque lo recuerda"
+        },
+        {
+          "id": "p4",
+          "text": "La pregunta del narrador y su respuesta"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Водители обычно спрашивают всё … Но есть один водитель, Сергей … он не слушает радио … Однажды я спрашиваю его.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: la norma, la excepción, el detalle y el diálogo."
+        },
+        "incorrect": {
+          "es": "Guíate por «Но есть один водитель» y por «Однажды»."
+        },
+        "strategy": {
+          "es": "La palabra «однажды» (una vez) marca la escena concreta dentro de lo habitual."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en ruso sobre alguien que hace su trabajo de forma distinta a los demás. Usa cuatro interrogativos y tres negaciones."
+    },
+    "minWords": 25,
+    "maxWords": 55,
+    "hints": [
+      "Водители обычно спрашивают всё.",
+      "Он не спрашивает ничего.",
+      "Почему вы не задаёте вопросы?",
+      "Больше я не спрашиваю."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de ruso —imprescindible aquí, por los casos y por el acento— y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso A1: el conductor que no pregunta | WeLearn"
+    },
+    "description": {
+      "es": "Lee una escena en ruso A1 y practica los interrogativos y la negación con не, ничего y никогда. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/a1/lectura/voditel-kotoryy-ne-sprashivaet",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-a1-komu-dedushka-pishet",
+      "ru-a1-prikhodite-v-sem"
+    ]
+  }
+}

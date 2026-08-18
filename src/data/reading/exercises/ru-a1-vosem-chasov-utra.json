@@ -1,0 +1,451 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-a1-vosem-chasov-utra",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Ruso A1"
+  },
+  "slug": "vosem-chasov-utra",
+  "series": {
+    "id": "ruso-a1-lectura-10",
+    "episode": 3,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-a1-pyat-dverey-pyat-tsvetov",
+    "nextExerciseId": "ru-a1-kuryer-timur"
+  },
+  "classification": {
+    "genre": "escena doméstica",
+    "topic": "una familia de cuatro y un gato",
+    "intent": "learning",
+    "tags": [
+      "ruso a1",
+      "lectura",
+      "presente de indicativo",
+      "verbos irregulares"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Las ocho de la mañana"
+    },
+    "intro": {
+      "es": "Cuatro personas, un piso pequeño y quince minutos en los que todos se van. A las ocho y veinte solo queda el gato. Lectura de ruso A1."
+    },
+    "mission": {
+      "es": "Averigua por qué el narrador escribe en la cocina."
+    },
+    "targetText": "Восемь часов утра. Наша семья — это четыре человека и одна маленькая квартира.\n\nМой отец пьёт кофе и читает новости в телефоне. Он ничего не говорит утром. Это правило.\n\nМоя мать уже едет на работу. Она врач и работает в поликлинике.\n\nМой брат хочет спать. Он всегда хочет спать. Он не может встать, но он встаёт.\n\nЯ пишу это в кухне, потому что в кухне тепло.\n\nВ восемь пятнадцать все идут: отец идёт в школу (он учитель), брат идёт в университет, я иду на автобус.\n\nВ восемь двадцать в квартире никого нет. Только кот. Кот спит на моей кровати, потому что она тёплая. Кот не работает и не учится. Кот — умный.",
+    "wordCount": 110,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Conjugar en presente los irregulares frecuentes: пить, ехать, хотеть, мочь, идти, писать."
+      },
+      {
+        "es": "Distinguir идти de ехать según se vaya a pie o en vehículo."
+      },
+      {
+        "es": "Leer una escena construida sobre un horario."
+      }
+    ],
+    "grammarFocus": [
+      "presente-verbos",
+      "verbos-irregulares-basicos"
+    ],
+    "vocabulary": [
+      {
+        "surface": "правило",
+        "lemma": "правило",
+        "glosses": {
+          "es": "regla, norma"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "поликлинике",
+        "lemma": "поликлиника",
+        "glosses": {
+          "es": "centro de salud público"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "встать",
+        "lemma": "встать",
+        "glosses": {
+          "es": "levantarse"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "тепло",
+        "lemma": "тепло",
+        "glosses": {
+          "es": "calor; «в кухне тепло» es en la cocina hace calor"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "учитель",
+        "lemma": "учитель",
+        "glosses": {
+          "es": "maestro"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "кровати",
+        "lemma": "кровать",
+        "glosses": {
+          "es": "cama"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "тёплая",
+        "lemma": "тёплый",
+        "glosses": {
+          "es": "templada, calentita"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "умный",
+        "lemma": "умный",
+        "glosses": {
+          "es": "listo, inteligente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La поликлиника es el centro de salud público ruso de barrio, donde trabajan los médicos generales y los especialistas de zona. No es un hospital."
+    },
+    "spanishSpeakerNote": {
+      "es": "El ruso tiene dos verbos para «ir»: идти si vas a pie y ехать si vas en algo con ruedas. «Отец идёт в школу» va andando; «мать едет на работу» va en transporte. El español no distingue."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en ruso sobre la vida cotidiana, reconocer las letras cirílicas que se parecen a las latinas sin serlo, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento"
+    ],
+    "disallowedGrammar": [
+      "pasado verbal",
+      "aspecto perfectivo",
+      "participios",
+      "gerundios (деепричастия)",
+      "condicional"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 6.5,
+      "maxSentenceWords": 19,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo, imperativo y futuro con быть. Sin pasado, sin aspecto y sin participios. Acento (ударение) sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué muestra la escena?",
+      "options": [
+        {
+          "id": "quince",
+          "text": "Cómo una familia de cuatro se vacía del piso en quince minutos"
+        },
+        {
+          "id": "pelea",
+          "text": "Una discusión familiar por el cuarto de baño"
+        },
+        {
+          "id": "gato",
+          "text": "Que quieren regalar el gato"
+        }
+      ],
+      "answer": "quince",
+      "evidence": "В восемь пятнадцать все идут … В восемь двадцать в квартире никого нет.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo mide con el reloj: a las ocho veinte no queda nadie."
+        },
+        "incorrect": {
+          "es": "No hay discusión y el gato se queda. Fíjate en las dos horas del final."
+        },
+        "strategy": {
+          "es": "Si un texto da dos horas muy cercanas, lo que pasa entre ellas es el asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuál es el oficio del padre?",
+      "options": [
+        {
+          "id": "maestro",
+          "text": "Maestro"
+        },
+        {
+          "id": "medico",
+          "text": "Médico"
+        },
+        {
+          "id": "estudiante",
+          "text": "Estudiante"
+        }
+      ],
+      "answer": "maestro",
+      "evidence": "отец идёт в школу (он учитель), брат идёт в университет",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el texto lo aclara entre paréntesis para que no confundas escuela con alumno."
+        },
+        "incorrect": {
+          "es": "La médica es la madre y el estudiante, el hermano. Busca el paréntesis."
+        },
+        "strategy": {
+          "es": "Un paréntesis suele estar puesto justamente para evitar el malentendido que temes."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «в кухне тепло». ¿Qué significa?",
+      "options": [
+        {
+          "id": "calor",
+          "text": "En la cocina hace calor"
+        },
+        {
+          "id": "despacio",
+          "text": "En la cocina se está despacio"
+        },
+        {
+          "id": "limpio",
+          "text": "La cocina está limpia"
+        }
+      ],
+      "answer": "calor",
+      "evidence": "Я пишу это в кухне, потому что в кухне тепло.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y es la razón por la que escribe ahí."
+        },
+        "incorrect": {
+          "es": "La palabra reaparece al final con la cama: «она тёплая». Es temperatura."
+        },
+        "strategy": {
+          "es": "Si la misma raíz aparece dos veces en el texto, compara los dos usos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el texto acaba diciendo que el gato es «умный»?",
+      "options": [
+        {
+          "id": "broma",
+          "text": "Porque es el único que se queda en el sitio caliente sin tener que irse"
+        },
+        {
+          "id": "listo",
+          "text": "Porque el gato entiende ruso"
+        },
+        {
+          "id": "trabajo",
+          "text": "Porque el gato ayuda en casa"
+        }
+      ],
+      "answer": "broma",
+      "evidence": "Кот спит на моей кровати, потому что она тёплая. Кот не работает и не учится. Кот — умный.",
+      "feedback": {
+        "correct": {
+          "es": "Sí: las tres frases van seguidas y el chiste está en el orden."
+        },
+        "incorrect": {
+          "es": "El gato no hace nada, y eso es justamente la gracia. Lee las tres frases finales juntas."
+        },
+        "strategy": {
+          "es": "Tres frases cortas seguidas al final de un texto suelen ser un remate: léelas como una sola."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: por la mañana el padre habla mucho con toda la familia.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Он ничего не говорит утром. Это правило.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: no dice nada por la mañana, y el texto lo llama regla."
+        },
+        "incorrect": {
+          "es": "Busca la frase con «ничего не говорит». Está en el segundo párrafo."
+        },
+        "strategy": {
+          "es": "La doble negación rusa («ничего не») es una negación normal, no una afirmación."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la escena.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "El padre toma café y no habla"
+        },
+        {
+          "id": "p2",
+          "text": "La madre ya va camino del trabajo"
+        },
+        {
+          "id": "p3",
+          "text": "A las ocho y cuarto se van todos"
+        },
+        {
+          "id": "p4",
+          "text": "A las ocho y veinte solo queda el gato"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Мой отец пьёт кофе … Моя мать уже едет на работу … В восемь пятнадцать все идут … В восемь двадцать в квартире никого нет.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: el texto sigue el reloj."
+        },
+        "incorrect": {
+          "es": "Guíate por las horas: ocho, ocho quince, ocho veinte."
+        },
+        "strategy": {
+          "es": "Si el texto marca horas, esas horas dan el orden sin más."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en ruso sobre las ocho de la mañana en tu casa. Usa cinco verbos en presente, dos de ellos irregulares, y distingue идти de ехать."
+    },
+    "minWords": 25,
+    "maxWords": 55,
+    "hints": [
+      "Восемь часов утра.",
+      "Мой отец пьёт кофе.",
+      "Моя мать едет на работу.",
+      "Я иду на автобус."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de ruso —imprescindible aquí, por los casos y por el acento— y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso A1: las ocho de la mañana | WeLearn"
+    },
+    "description": {
+      "es": "Lee una escena doméstica en ruso A1 y practica el presente y los verbos irregulares frecuentes. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/a1/lectura/vosem-chasov-utra",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-a1-pyat-dverey-pyat-tsvetov",
+      "ru-a1-kuryer-timur"
+    ]
+  }
+}

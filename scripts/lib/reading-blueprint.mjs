@@ -122,7 +122,31 @@ const WORD_TARGETS_DE = {
   B1: { min: 300, max: 360 },
 }
 
-const WORD_TARGETS_BY_LANGUAGE = { ko: WORD_TARGETS_KO, ja: WORD_TARGETS_JA, de: WORD_TARGETS_DE }
+// El ruso necesita banda propia por una razón distinta de la del alemán: no compone
+// palabras largas, las ECONOMIZA. El ruso no tiene artículos, no usa verbo copulativo en
+// presente —«Он врач» es una frase completa, «él (es) médico»— y sustituye muchas
+// preposiciones por terminaciones de caso. El mismo contenido cabe en bastantes menos
+// palabras que en español, y esa diferencia no se ve contando letras.
+//
+// Encima, la longitud de palabra sí sube con el nivel, igual que en alemán. Medido sobre los
+// textos que WeLearn ya publica en ruso: 4,78 letras por palabra en A1, 5,08 en A2 y 6,47 en
+// B1, frente a unas 5,0 estables en las lenguas romances. En B1 se juntan las dos cosas —
+// menos palabras para lo mismo, y cada palabra más larga.
+//
+// La banda se fija con las tres referencias de siempre:
+//   1. Lo publicado por WeLearn en ruso: A1 35-51 palabras, A2 72-84, B1 82-107.
+//   2. La compacidad estructural descrita arriba, que corrige la banda romance a la baja.
+//   3. La densidad medida por nivel, que la corrige más en B1 que en A1.
+//
+// El resultado coincide con la banda del alemán, y eso no es casualidad: las dos son lenguas
+// de flexión con palabras largas en B1. Coincidir por el mismo motivo no es copiar.
+const WORD_TARGETS_RU = {
+  A1: { min: 95, max: 125 },
+  A2: { min: 170, max: 210 },
+  B1: { min: 300, max: 360 },
+}
+
+const WORD_TARGETS_BY_LANGUAGE = { ko: WORD_TARGETS_KO, ja: WORD_TARGETS_JA, de: WORD_TARGETS_DE, ru: WORD_TARGETS_RU }
 
 export function wordTargetFor(language, cefr) {
   return (WORD_TARGETS_BY_LANGUAGE[language] ?? WORD_TARGETS_DEFAULT)[cefr]

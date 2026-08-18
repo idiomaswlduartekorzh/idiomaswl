@@ -1,0 +1,451 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-a1-prikhodite-v-sem",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Ruso A1"
+  },
+  "slug": "prikhodite-v-sem",
+  "series": {
+    "id": "ruso-a1-lectura-10",
+    "episode": 9,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-a1-voditel-kotoryy-ne-sprashivaet",
+    "nextExerciseId": "ru-a1-bukvy-obmanyvayut"
+  },
+  "classification": {
+    "genre": "instrucciones habladas",
+    "topic": "las normas de una casa de baños",
+    "intent": "learning",
+    "tags": [
+      "ruso a1",
+      "lectura",
+      "imperativo",
+      "expresiones de tiempo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Venga a las siete"
+    },
+    "intro": {
+      "es": "Nikolái Petróvich habla solo en imperativo, y todas sus órdenes acaban teniendo razón. Lectura de ruso A1."
+    },
+    "mission": {
+      "es": "Averigua por qué insiste tanto en las siete."
+    },
+    "targetText": "В нашей бане на улице Лесной работает Николай Петрович. Он говорит только императивами.\n\n«Приходите в семь. Не в восемь, в семь».\n\n«Сначала мойтесь. Потом идите в парилку».\n\n«Не сидите двадцать минут. Пять минут, потом выходите».\n\n«Пейте воду. Не пейте пиво».\n\n«В четверг не приходите: в четверг женский день».\n\nЯ прихожу каждую субботу в семь утра. В семь там три человека. В девять там сорок человек.\n\nНиколай Петрович говорит: «Вот почему я говорю: приходите в семь».\n\nОднажды я прихожу в девять. Он ничего не говорит. Он только смотрит на часы, потом на меня. И больше я так не делаю.",
+    "wordCount": 98,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Formar el imperativo de usted: приходите, мойтесь, идите, выходите, пейте."
+      },
+      {
+        "es": "Usar expresiones de tiempo: в семь, каждую субботу, в четверг, потом."
+      },
+      {
+        "es": "Entender una advertencia que nadie formula con palabras."
+      }
+    ],
+    "grammarFocus": [
+      "imperativo",
+      "tiempo-expresiones"
+    ],
+    "vocabulary": [
+      {
+        "surface": "бане",
+        "lemma": "баня",
+        "glosses": {
+          "es": "casa de baños de vapor rusa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "императивами",
+        "lemma": "императив",
+        "glosses": {
+          "es": "imperativos, órdenes"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "мойтесь",
+        "lemma": "мыться",
+        "glosses": {
+          "es": "lávese, dúchese"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "парилку",
+        "lemma": "парилка",
+        "glosses": {
+          "es": "sala de vapor"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "выходите",
+        "lemma": "выходить",
+        "glosses": {
+          "es": "salga"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "четверг",
+        "lemma": "четверг",
+        "glosses": {
+          "es": "jueves"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "женский",
+        "lemma": "женский",
+        "glosses": {
+          "es": "de mujeres"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "часы",
+        "lemma": "часы",
+        "glosses": {
+          "es": "reloj"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La баня rusa tiene reglas de orden —lavarse antes de entrar al vapor, salir cada pocos minutos, beber agua— y días separados para hombres y mujeres. Quien las gestiona las repite en voz alta todo el día."
+    },
+    "spanishSpeakerNote": {
+      "es": "El imperativo de usted se forma con -ите: «приходите», «идите», «выходите». Y para prohibir se le pone «не» delante: «не сидите», «не пейте». Es exactamente el «no se siente» español."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en ruso sobre la vida cotidiana, reconocer las letras cirílicas que se parecen a las latinas sin serlo, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento"
+    ],
+    "disallowedGrammar": [
+      "pasado verbal",
+      "aspecto perfectivo",
+      "participios",
+      "gerundios (деепричастия)",
+      "condicional"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 5.2,
+      "maxSentenceWords": 10,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo, imperativo y futuro con быть. Sin pasado, sin aspecto y sin participios. Acento (ударение) sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué explica el texto?",
+      "options": [
+        {
+          "id": "siete",
+          "text": "Que a las siete hay tres personas y a las nueve cuarenta, y por eso la orden tiene sentido"
+        },
+        {
+          "id": "mal",
+          "text": "Que Nikolái Petróvich trata mal a los clientes"
+        },
+        {
+          "id": "cerrar",
+          "text": "Que la casa de baños va a cerrar"
+        }
+      ],
+      "answer": "siete",
+      "evidence": "В семь там три человека. В девять там сорок человек … «Вот почему я говорю: приходите в семь».",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y él mismo cierra el argumento con esas dos cifras."
+        },
+        "incorrect": {
+          "es": "No hay mal trato ni cierre. Compara las dos cifras de personas."
+        },
+        "strategy": {
+          "es": "Cuando un personaje dice «por eso digo…», la razón está en las frases anteriores."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántos minutos dice que hay que estar en la sala de vapor?",
+      "options": [
+        {
+          "id": "cinco",
+          "text": "Cinco"
+        },
+        {
+          "id": "veinte",
+          "text": "Veinte"
+        },
+        {
+          "id": "siete",
+          "text": "Siete"
+        }
+      ],
+      "answer": "cinco",
+      "evidence": "«Не сидите двадцать минут. Пять минут, потом выходите».",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: los veinte son justamente lo que prohíbe."
+        },
+        "incorrect": {
+          "es": "Los veinte van con «не сидите» y las siete son una hora, no minutos."
+        },
+        "strategy": {
+          "es": "Cuando una orden lleva «не», la cifra que la sigue es la prohibida, no la recomendada."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué es «парилка»?",
+      "options": [
+        {
+          "id": "vapor",
+          "text": "La sala de vapor"
+        },
+        {
+          "id": "ducha",
+          "text": "La ducha"
+        },
+        {
+          "id": "vestuario",
+          "text": "El vestuario"
+        }
+      ],
+      "answer": "vapor",
+      "evidence": "«Сначала мойтесь. Потом идите в парилку». «Не сидите двадцать минут. Пять минут, потом выходите».",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: se entra después de lavarse y solo se aguantan unos minutos."
+        },
+        "incorrect": {
+          "es": "Lavarse es antes y en otro sitio. Fíjate en que solo se puede estar cinco minutos."
+        },
+        "strategy": {
+          "es": "Si en un sitio solo puedes estar cinco minutos, no es donde te lavas ni te cambias."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Qué quiere decir que mire el reloj y luego al narrador sin hablar?",
+      "options": [
+        {
+          "id": "reproche",
+          "text": "Que le está recordando la orden sin necesidad de repetirla"
+        },
+        {
+          "id": "hora",
+          "text": "Que la casa de baños está cerrando"
+        },
+        {
+          "id": "saludo",
+          "text": "Que se alegra de verlo"
+        }
+      ],
+      "answer": "reproche",
+      "evidence": "Однажды я прихожу в девять. Он ничего не говорит. Он только смотрит на часы, потом на меня. И больше я так не делаю.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la prueba es la frase final: no vuelve a hacerlo."
+        },
+        "incorrect": {
+          "es": "A las nueve la casa está llena, no cerrando, y no es un saludo. Fíjate en la última frase."
+        },
+        "strategy": {
+          "es": "Si tras un gesto el narrador cambia de conducta, el gesto era un reproche."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: según Nikolái Petróvich se puede ir cualquier día de la semana.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "«В четверг не приходите: в четверг женский день».",
+      "feedback": {
+        "correct": {
+          "es": "Falso: el jueves no, porque es el día de las mujeres."
+        },
+        "incorrect": {
+          "es": "Hay una de sus órdenes que menciona un día concreto de la semana. Búscala."
+        },
+        "strategy": {
+          "es": "Después de dos puntos suele venir la razón de la orden anterior."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena las órdenes según el texto.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Venga a las siete, no a las ocho"
+        },
+        {
+          "id": "p2",
+          "text": "Lávese primero y luego pase al vapor"
+        },
+        {
+          "id": "p3",
+          "text": "Cinco minutos y salga"
+        },
+        {
+          "id": "p4",
+          "text": "Beba agua, no cerveza"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "«Приходите в семь…» «Сначала мойтесь. Потом идите в парилку». «Не сидите двадцать минут…» «Пейте воду. Не пейте пиво».",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: el texto pone cada orden en su propio párrafo."
+        },
+        "incorrect": {
+          "es": "Cada orden va en una línea distinta: sigue ese orden."
+        },
+        "strategy": {
+          "es": "Si el texto separa las frases en líneas, el orden ya está dado."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en ruso con las normas de un sitio que conoces. Usa cinco imperativos de usted, dos de ellos en negativo, y tres expresiones de tiempo."
+    },
+    "minWords": 25,
+    "maxWords": 55,
+    "hints": [
+      "Приходите в семь.",
+      "Сначала мойтесь, потом идите…",
+      "Не сидите двадцать минут.",
+      "В четверг не приходите."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de ruso —imprescindible aquí, por los casos y por el acento— y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso A1: venga a las siete | WeLearn"
+    },
+    "description": {
+      "es": "Lee unas instrucciones en ruso A1 y practica el imperativo y las expresiones de tiempo. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/a1/lectura/prikhodite-v-sem",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-a1-voditel-kotoryy-ne-sprashivaet",
+      "ru-a1-bukvy-obmanyvayut"
+    ]
+  }
+}

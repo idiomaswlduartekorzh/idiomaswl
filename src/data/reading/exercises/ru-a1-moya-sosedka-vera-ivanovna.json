@@ -1,0 +1,450 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-a1-moya-sosedka-vera-ivanovna",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Ruso A1"
+  },
+  "slug": "moya-sosedka-vera-ivanovna",
+  "series": {
+    "id": "ruso-a1-lectura-10",
+    "episode": 1,
+    "totalEpisodes": 10,
+    "previousExerciseId": null,
+    "nextExerciseId": "ru-a1-pyat-dverey-pyat-tsvetov"
+  },
+  "classification": {
+    "genre": "relato en primera persona",
+    "topic": "un televisor que suena todo el día",
+    "intent": "learning",
+    "tags": [
+      "ruso a1",
+      "lectura",
+      "caso nominativo",
+      "pronombres personales"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Mi vecina Vera Ivánovna"
+    },
+    "intro": {
+      "es": "Un televisor encendido de la mañana a la noche al otro lado de la pared, y lo que resulta ser en realidad. Lectura de ruso A1."
+    },
+    "mission": {
+      "es": "Averigua por qué el narrador deja de enfadarse."
+    },
+    "targetText": "Меня зовут Хосе. Я из Колумбии. Я живу в Москве, в старом доме на улице Гиляровского.\n\nМоя соседка — Вера Ивановна. Она русская, она учительница. Сейчас она не работает: она на пенсии.\n\nВера Ивановна очень громкая. Её телевизор работает весь день. Я слышу всё: новости, музыку, футбол.\n\nЭто проблема? Сначала — да. Я плохо сплю.\n\nНо потом я понимаю одну вещь. Она живёт одна. Её телевизор — это не телевизор. Это голос в квартире.\n\nТеперь я не сержусь. Мы иногда пьём чай. Она говорит, я слушаю. Я понимаю половину, но это нормально.\n\nОна говорит: «Ты хороший мальчик». Мне тридцать четыре года. Я не мальчик. Но я не спорю.",
+    "wordCount": 105,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Reconocer el caso nominativo como forma del sujeto y del atributo."
+      },
+      {
+        "es": "Identificar los pronombres personales: я, ты, она, мы, её, мне."
+      },
+      {
+        "es": "Leer una frase rusa sin verbo «ser», con guion en su lugar."
+      }
+    ],
+    "grammarFocus": [
+      "caso-nominativo",
+      "pronombres-personales"
+    ],
+    "vocabulary": [
+      {
+        "surface": "соседка",
+        "lemma": "соседка",
+        "glosses": {
+          "es": "vecina"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "учительница",
+        "lemma": "учительница",
+        "glosses": {
+          "es": "maestra"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "пенсии",
+        "lemma": "пенсия",
+        "glosses": {
+          "es": "jubilación; «на пенсии» es jubilada"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "громкая",
+        "lemma": "громкая",
+        "glosses": {
+          "es": "ruidosa, que hace mucho ruido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "слышу",
+        "lemma": "слышать",
+        "glosses": {
+          "es": "oigo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "сплю",
+        "lemma": "спать",
+        "glosses": {
+          "es": "duermo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "сержусь",
+        "lemma": "сердиться",
+        "glosses": {
+          "es": "me enfado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "спорю",
+        "lemma": "спорить",
+        "glosses": {
+          "es": "discuto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El nombre y el patronímico juntos —Вера Ивановна, «Vera hija de Iván»— es la forma respetuosa de dirigirse a una persona mayor en Rusia. Usar solo el nombre sería demasiado familiar."
+    },
+    "spanishSpeakerNote": {
+      "es": "El ruso no tiene «ser» en presente. «Она учительница» es «ella (es) maestra», sin verbo. Cuando los dos elementos son sustantivos, se escribe un guion: «Её телевизор — это не телевизор». Ese guion es el verbo que falta."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en ruso sobre la vida cotidiana, reconocer las letras cirílicas que se parecen a las latinas sin serlo, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento"
+    ],
+    "disallowedGrammar": [
+      "pasado verbal",
+      "aspecto perfectivo",
+      "participios",
+      "gerundios (деепричастия)",
+      "condicional"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 4.4,
+      "maxSentenceWords": 10,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo, imperativo y futuro con быть. Sin pasado, sin aspecto y sin participios. Acento (ударение) sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿De qué trata el texto?",
+      "options": [
+        {
+          "id": "voz",
+          "text": "De que el ruido del televisor resulta ser la compañía de una mujer que vive sola"
+        },
+        {
+          "id": "queja",
+          "text": "De una queja contra la vecina por el ruido"
+        },
+        {
+          "id": "mudanza",
+          "text": "De que el narrador quiere cambiar de piso"
+        }
+      ],
+      "answer": "voz",
+      "evidence": "Она живёт одна. Её телевизор — это не телевизор. Это голос в квартире.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y esas tres frases son el giro del texto."
+        },
+        "incorrect": {
+          "es": "No hay queja ni mudanza: el narrador deja de enfadarse. Busca las frases sobre el televisor."
+        },
+        "strategy": {
+          "es": "Cuando un texto dice «X no es X», está a punto de decirte qué es en realidad."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿A qué se dedicaba Vera Ivánovna?",
+      "options": [
+        {
+          "id": "maestra",
+          "text": "Era maestra y ahora está jubilada"
+        },
+        {
+          "id": "medica",
+          "text": "Es médica y sigue trabajando"
+        },
+        {
+          "id": "nunca",
+          "text": "Nunca ha trabajado"
+        }
+      ],
+      "answer": "maestra",
+      "evidence": "Она русская, она учительница. Сейчас она не работает: она на пенсии.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el texto lo dice en dos frases seguidas."
+        },
+        "incorrect": {
+          "es": "El texto dice que ahora no trabaja, pero sí dice cuál es su oficio. Busca la palabra «учительница»."
+        },
+        "strategy": {
+          "es": "Los datos de una persona suelen ir agrupados en la frase donde se la presenta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «она на пенсии». ¿Qué significa?",
+      "options": [
+        {
+          "id": "jubilada",
+          "text": "Que está jubilada"
+        },
+        {
+          "id": "pension",
+          "text": "Que vive en una pensión"
+        },
+        {
+          "id": "baja",
+          "text": "Que está de baja médica"
+        }
+      ],
+      "answer": "jubilada",
+      "evidence": "Сейчас она не работает: она на пенсии.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y va justo después de «ahora no trabaja»."
+        },
+        "incorrect": {
+          "es": "La frase anterior dice que ya no trabaja: no es un alojamiento ni una situación temporal."
+        },
+        "strategy": {
+          "es": "Los dos puntos anuncian una explicación de lo que se acaba de decir."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el narrador no discute cuando ella le llama «мальчик»?",
+      "options": [
+        {
+          "id": "relacion",
+          "text": "Porque la relación le importa más que la palabra"
+        },
+        {
+          "id": "idioma",
+          "text": "Porque no entiende lo que significa"
+        },
+        {
+          "id": "edad",
+          "text": "Porque en realidad sí es muy joven"
+        }
+      ],
+      "answer": "relacion",
+      "evidence": "Мне тридцать четыре года. Я не мальчик. Но я не спорю.",
+      "feedback": {
+        "correct": {
+          "es": "Sí: reconoce que no es cierto y aun así lo deja pasar. Ese «но» lo dice todo."
+        },
+        "incorrect": {
+          "es": "Tiene treinta y cuatro años y entiende perfectamente la palabra. Fíjate en el «но» final."
+        },
+        "strategy": {
+          "es": "La conjunción «но» (pero) señala que lo importante viene después."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el narrador entiende todo lo que le cuenta su vecina cuando toman té.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Она говорит, я слушаю. Я понимаю половину, но это нормально.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: entiende la mitad, y dice que le parece normal."
+        },
+        "incorrect": {
+          "es": "Busca la frase donde habla de escuchar. Da una proporción exacta."
+        },
+        "strategy": {
+          "es": "Si el texto da una fracción («половину»), la respuesta absoluta suele ser falsa."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena lo que ocurre en el texto.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Se presenta y dice dónde vive"
+        },
+        {
+          "id": "p2",
+          "text": "Describe el televisor encendido todo el día"
+        },
+        {
+          "id": "p3",
+          "text": "Comprende que ella vive sola"
+        },
+        {
+          "id": "p4",
+          "text": "Ahora toman té y ella le llama «chico»"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Меня зовут Хосе … Её телевизор работает весь день … Она живёт одна … Теперь я не сержусь. Мы иногда пьём чай.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: presentación, problema, comprensión y presente."
+        },
+        "incorrect": {
+          "es": "Guíate por «Сначала», «потом» y «Теперь»."
+        },
+        "strategy": {
+          "es": "Las palabras «сначала», «потом» y «теперь» ordenan el texto: antes, después y ahora."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en ruso sobre un vecino tuyo. Usa cinco frases sin verbo «ser», con o sin guion."
+    },
+    "minWords": 25,
+    "maxWords": 55,
+    "hints": [
+      "Меня зовут…",
+      "Моя соседка — …",
+      "Она учительница.",
+      "Теперь я не сержусь."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de ruso —imprescindible aquí, por los casos y por el acento— y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso A1: mi vecina Vera Ivánovna | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto corto en ruso A1 y practica el caso nominativo y los pronombres personales. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/a1/lectura/moya-sosedka-vera-ivanovna",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-a1-pyat-dverey-pyat-tsvetov"
+    ]
+  }
+}

@@ -1,0 +1,451 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-a1-skolko-stoit-khleb",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Ruso A1"
+  },
+  "slug": "skolko-stoit-khleb",
+  "series": {
+    "id": "ruso-a1-lectura-10",
+    "episode": 6,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-a1-v-shkole-no-na-rabote",
+    "nextExerciseId": "ru-a1-komu-dedushka-pishet"
+  },
+  "classification": {
+    "genre": "retrato familiar",
+    "topic": "trece rublos de diferencia y veinte minutos a pie",
+    "intent": "learning",
+    "tags": [
+      "ruso a1",
+      "lectura",
+      "caso genitivo",
+      "números"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Cuánto cuesta el pan"
+    },
+    "intro": {
+      "es": "Cuatro tiendas en el barrio, cuatro precios del pan y una abuela que anda veinte minutos por trece rublos. Lectura de ruso A1."
+    },
+    "mission": {
+      "es": "Averigua qué contesta la abuela cuando le preguntan para qué."
+    },
+    "targetText": "В нашем районе четыре магазина. Я знаю цену хлеба во всех четырёх.\n\nВ первом магазине хлеб стоит сорок пять рублей. Во втором — тридцать девять. В третьем — пятьдесят два рубля, но там хороший хлеб. В четвёртом после семи вечера хлеба нет.\n\nМоя бабушка ходит в третий магазин. Это далеко: двадцать минут пешком. Я говорю: «Бабушка, зачем? Там разница — тринадцать рублей».\n\nОна отвечает: «Тринадцать рублей — это тринадцать рублей».\n\nУ неё нет машины. У неё мало денег. Но у неё есть время и сильные ноги.\n\nСейчас ей семьдесят восемь лет. Она ходит туда три раза в неделю. Я думаю: у меня нет её характера.",
+    "wordCount": 101,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Formar el genitivo tras números y tras «нет»: четыре магазина, хлеба нет."
+      },
+      {
+        "es": "Leer y decir números con la terminación correcta: сорок пять рублей, пятьдесят два рубля."
+      },
+      {
+        "es": "Distinguir el cálculo económico de la razón de fondo."
+      }
+    ],
+    "grammarFocus": [
+      "caso-genitivo",
+      "numeros"
+    ],
+    "vocabulary": [
+      {
+        "surface": "районе",
+        "lemma": "район",
+        "glosses": {
+          "es": "barrio, distrito"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "цену",
+        "lemma": "цена",
+        "glosses": {
+          "es": "precio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "стоит",
+        "lemma": "стоить",
+        "glosses": {
+          "es": "cuesta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "далеко",
+        "lemma": "далеко",
+        "glosses": {
+          "es": "lejos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "зачем",
+        "lemma": "зачем",
+        "glosses": {
+          "es": "para qué"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "разница",
+        "lemma": "разница",
+        "glosses": {
+          "es": "diferencia"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "сильные",
+        "lemma": "сильный",
+        "glosses": {
+          "es": "fuertes"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "характера",
+        "lemma": "характер",
+        "glosses": {
+          "es": "carácter"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El pan negro de centeno es un producto básico con precio muy vigilado en Rusia, y las diferencias de unos rublos entre tiendas del mismo barrio son habituales y conocidas por los vecinos."
+    },
+    "spanishSpeakerNote": {
+      "es": "Los números rusos mandan el caso: con 2, 3 y 4 va genitivo singular («пятьдесят два рубля»), con 5 y más va genitivo plural («сорок пять рублей»). Y «нет» siempre pide genitivo: «хлеба нет»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en ruso sobre la vida cotidiana, reconocer las letras cirílicas que se parecen a las latinas sin serlo, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento"
+    ],
+    "disallowedGrammar": [
+      "pasado verbal",
+      "aspecto perfectivo",
+      "participios",
+      "gerundios (деепричастия)",
+      "condicional"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 5.9,
+      "maxSentenceWords": 9,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo, imperativo y futuro con быть. Sin pasado, sin aspecto y sin participios. Acento (ударение) sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué muestra el texto?",
+      "options": [
+        {
+          "id": "caracter",
+          "text": "Que la abuela camina veinte minutos por trece rublos, y que el narrador admira eso"
+        },
+        {
+          "id": "precio",
+          "text": "Que el pan es demasiado caro en el barrio"
+        },
+        {
+          "id": "tienda",
+          "text": "Que la cuarta tienda debería cerrar"
+        }
+      ],
+      "answer": "caracter",
+      "evidence": "Я думаю: у меня нет её характера.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la frase final lo dice del modo más corto posible."
+        },
+        "incorrect": {
+          "es": "El texto no se queja del precio ni habla de cerrar nada. Lee la última frase."
+        },
+        "strategy": {
+          "es": "Si el narrador se compara consigo mismo al final, ahí está el asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto cuesta el pan en la tercera tienda?",
+      "options": [
+        {
+          "id": "52",
+          "text": "Cincuenta y dos rublos"
+        },
+        {
+          "id": "39",
+          "text": "Treinta y nueve rublos"
+        },
+        {
+          "id": "45",
+          "text": "Cuarenta y cinco rublos"
+        }
+      ],
+      "answer": "52",
+      "evidence": "В третьем — пятьдесят два рубля, но там хороший хлеб.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: es la más cara y es a la que va la abuela."
+        },
+        "incorrect": {
+          "es": "Los 45 son la primera tienda y los 39, la segunda. Cuenta el orden."
+        },
+        "strategy": {
+          "es": "Cuando el texto enumera «в первом, во втором, в третьем», cuenta antes de responder."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El narrador pregunta «зачем?». ¿Qué significa?",
+      "options": [
+        {
+          "id": "paraque",
+          "text": "¿Para qué?"
+        },
+        {
+          "id": "cuando",
+          "text": "¿Cuándo?"
+        },
+        {
+          "id": "donde",
+          "text": "¿Dónde?"
+        }
+      ],
+      "answer": "paraque",
+      "evidence": "Я говорю: «Бабушка, зачем? Разница — тринадцать рублей».",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: pregunta por la finalidad, y por eso menciona la diferencia de precio."
+        },
+        "incorrect": {
+          "es": "No pregunta por tiempo ni por lugar: acompaña la pregunta con una cifra de dinero."
+        },
+        "strategy": {
+          "es": "Si tras la pregunta viene un argumento, la pregunta era por el motivo o la finalidad."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Qué significa la respuesta «trece rublos son trece rublos»?",
+      "options": [
+        {
+          "id": "valor",
+          "text": "Que para ella ese dinero tiene valor y no hay más que discutir"
+        },
+        {
+          "id": "broma",
+          "text": "Que no ha entendido la pregunta"
+        },
+        {
+          "id": "pan",
+          "text": "Que el pan de allí no le gusta"
+        }
+      ],
+      "answer": "valor",
+      "evidence": "Она отвечает: «Тринадцать рублей — это тринадцать рублей». У неё нет машины. У неё мало денег.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y las dos frases siguientes lo explican: poco dinero, mucho tiempo."
+        },
+        "incorrect": {
+          "es": "El texto dice que allí el pan es bueno, y ella entiende perfectamente. Lee las dos frases siguientes."
+        },
+        "strategy": {
+          "es": "Cuando alguien repite la misma cifra dos veces, está diciendo que no la considera pequeña."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: en la cuarta tienda no queda pan después de las siete de la tarde.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "В четвёртом после семи вечера хлеба нет.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y fíjate en el genitivo que exige «нет»: хлеба, no хлеб."
+        },
+        "incorrect": {
+          "es": "Busca la frase de la cuarta tienda: es la única que no da precio."
+        },
+        "strategy": {
+          "es": "La palabra «нет» va siempre con genitivo: localízala y tendrás la frase."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el texto.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Hay cuatro tiendas y él sabe los cuatro precios"
+        },
+        {
+          "id": "p2",
+          "text": "Los precios uno por uno"
+        },
+        {
+          "id": "p3",
+          "text": "La abuela va a la tercera, a veinte minutos"
+        },
+        {
+          "id": "p4",
+          "text": "Lo que ella tiene y lo que él no tiene"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "В нашем районе четыре магазина … В первом магазине хлеб стоит сорок пять рублей … Моя бабушка ходит в третий магазин … у меня нет её характера.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: dato, precios, costumbre y conclusión."
+        },
+        "incorrect": {
+          "es": "Fíjate en dónde aparecen los precios y dónde entra la abuela."
+        },
+        "strategy": {
+          "es": "Un texto que empieza con una cifra suele desglosarla justo después."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en ruso comparando precios de algo en tu barrio. Usa cuatro números con su terminación y dos frases con «нет» + genitivo."
+    },
+    "minWords": 25,
+    "maxWords": 55,
+    "hints": [
+      "В нашем районе четыре магазина.",
+      "Хлеб стоит сорок пять рублей.",
+      "У неё нет машины.",
+      "После семи хлеба нет."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de ruso —imprescindible aquí, por los casos y por el acento— y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso A1: cuánto cuesta el pan | WeLearn"
+    },
+    "description": {
+      "es": "Lee un retrato familiar en ruso A1 y practica el caso genitivo y los números. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/ruso/a1/lectura/skolko-stoit-khleb",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-a1-v-shkole-no-na-rabote",
+      "ru-a1-komu-dedushka-pishet"
+    ]
+  }
+}

@@ -201,6 +201,18 @@ import itB1IlNegozioCheHaApertoTroppoTardi from '@/data/reading/exercises/it-b1-
 import itB1LaNonnaLoAvevaDetto from '@/data/reading/exercises/it-b1-la-nonna-lo-aveva-detto.json'
 import itB1MiDicaLeiCosaDevoFare from '@/data/reading/exercises/it-b1-mi-dica-lei-cosa-devo-fare.json'
 import itB1LaCasaDiVentAnni from '@/data/reading/exercises/it-b1-la-casa-di-vent-anni.json'
+
+// Ruso A1 — generadas desde `src/data/reading/source/ru-a1.mjs`. Nivel completo.
+import ruA1MoyaSosedkaVeraIvanovna from '@/data/reading/exercises/ru-a1-moya-sosedka-vera-ivanovna.json'
+import ruA1PyatDvereyPyatTsvetov from '@/data/reading/exercises/ru-a1-pyat-dverey-pyat-tsvetov.json'
+import ruA1VosemChasovUtra from '@/data/reading/exercises/ru-a1-vosem-chasov-utra.json'
+import ruA1KuryerTimur from '@/data/reading/exercises/ru-a1-kuryer-timur.json'
+import ruA1VShkoleNoNaRabote from '@/data/reading/exercises/ru-a1-v-shkole-no-na-rabote.json'
+import ruA1SkolkoStoitKhleb from '@/data/reading/exercises/ru-a1-skolko-stoit-khleb.json'
+import ruA1KomuDedushkaPishet from '@/data/reading/exercises/ru-a1-komu-dedushka-pishet.json'
+import ruA1VoditelKotoryyNeSprashivaet from '@/data/reading/exercises/ru-a1-voditel-kotoryy-ne-sprashivaet.json'
+import ruA1PrikhoditeVSem from '@/data/reading/exercises/ru-a1-prikhodite-v-sem.json'
+import ruA1BukvyObmanyvayut from '@/data/reading/exercises/ru-a1-bukvy-obmanyvayut.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -386,6 +398,16 @@ const RAW_EXERCISES: unknown[] = [
   itB1LaNonnaLoAvevaDetto,
   itB1MiDicaLeiCosaDevoFare,
   itB1LaCasaDiVentAnni,
+  ruA1MoyaSosedkaVeraIvanovna,
+  ruA1PyatDvereyPyatTsvetov,
+  ruA1VosemChasovUtra,
+  ruA1KuryerTimur,
+  ruA1VShkoleNoNaRabote,
+  ruA1SkolkoStoitKhleb,
+  ruA1KomuDedushkaPishet,
+  ruA1VoditelKotoryyNeSprashivaet,
+  ruA1PrikhoditeVSem,
+  ruA1BukvyObmanyvayut,
 ]
 
 export const READING_EXERCISES: ReadingExercise[] = RAW_EXERCISES.map((candidate) => {
