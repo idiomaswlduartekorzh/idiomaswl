@@ -261,6 +261,18 @@ import jaA2HankoOMotteKonakerebaNaranai from '@/data/reading/exercises/ja-a2-han
 import jaA2AshitaWaYukiDeshou from '@/data/reading/exercises/ja-a2-ashita-wa-yuki-deshou.json'
 import jaA2NagaraBenkyouShitari from '@/data/reading/exercises/ja-a2-nagara-benkyou-shitari.json'
 import jaA2KabeNiKakaretaE from '@/data/reading/exercises/ja-a2-kabe-ni-kakareta-e.json'
+
+// Japonés B1 — generadas desde `src/data/reading/source/ja-b1.mjs`. Nivel completo.
+import jaB1SuteteShimattaTegami from '@/data/reading/exercises/ja-b1-sutete-shimatta-tegami.json'
+import jaB1SumimasenOKazoeteMita from '@/data/reading/exercises/ja-b1-sumimasen-o-kazoete-mita.json'
+import jaB1KareWaKonaiHazuDatta from '@/data/reading/exercises/ja-b1-kare-wa-konai-hazu-datta.json'
+import jaB1SorobanONarawasareta from '@/data/reading/exercises/ja-b1-soroban-o-narawasareta.json'
+import jaB1JibunNoSoubetsukaiNiOkureta from '@/data/reading/exercises/ja-b1-jibun-no-soubetsukai-ni-okureta.json'
+import jaB1YomeruYouNiSuruTameNi from '@/data/reading/exercises/ja-b1-yomeru-you-ni-suru-tame-ni.json'
+import jaB1PuuruONokosuBekiKa from '@/data/reading/exercises/ja-b1-puuru-o-nokosu-beki-ka.json'
+import jaB1KyuujuppunNarabuHodoKa from '@/data/reading/exercises/ja-b1-kyuujuppun-narabu-hodo-ka.json'
+import jaB1KieteitsutsuaruKotoba from '@/data/reading/exercises/ja-b1-kieteitsutsuaru-kotoba.json'
+import jaB1AkisouDeAkanaiMise from '@/data/reading/exercises/ja-b1-akisou-de-akanai-mise.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -496,6 +508,16 @@ const RAW_EXERCISES: unknown[] = [
   jaA2AshitaWaYukiDeshou,
   jaA2NagaraBenkyouShitari,
   jaA2KabeNiKakaretaE,
+  jaB1SuteteShimattaTegami,
+  jaB1SumimasenOKazoeteMita,
+  jaB1KareWaKonaiHazuDatta,
+  jaB1SorobanONarawasareta,
+  jaB1JibunNoSoubetsukaiNiOkureta,
+  jaB1YomeruYouNiSuruTameNi,
+  jaB1PuuruONokosuBekiKa,
+  jaB1KyuujuppunNarabuHodoKa,
+  jaB1KieteitsutsuaruKotoba,
+  jaB1AkisouDeAkanaiMise,
 ]
 
 export const READING_EXERCISES: ReadingExercise[] = RAW_EXERCISES.map((candidate) => {

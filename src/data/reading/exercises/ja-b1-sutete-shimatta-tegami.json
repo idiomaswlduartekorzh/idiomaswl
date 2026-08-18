@@ -1,0 +1,502 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ja-b1-sutete-shimatta-tegami",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Japonés B1",
+    "jlpt": "N3",
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el JLPT es aproximada: son dos escalas distintas, con exámenes distintos. B1 se sitúa alrededor del N3, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "sutete-shimatta-tegami",
+  "series": {
+    "id": "japones-b1-lectura-10",
+    "episode": 1,
+    "totalEpisodes": 10,
+    "previousExerciseId": null,
+    "nextExerciseId": "ja-b1-sumimasen-o-kazoete-mita"
+  },
+  "classification": {
+    "genre": "relato familiar",
+    "topic": "tres cajas confundidas en una mudanza",
+    "intent": "learning",
+    "tags": [
+      "japones b1",
+      "lectura",
+      "てしまう",
+      "わけだ"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Las cartas que tiré"
+    },
+    "intro": {
+      "es": "Cuarenta cajas y tres marcadas «papel viejo». No las abrió. Su madre tampoco se enfadó, y eso fue lo peor. Lectura de japonés B1."
+    },
+    "mission": {
+      "es": "Averigua qué le enseñó su madre tres meses después."
+    },
+    "targetText": "引っ越しの日、私は父の手紙を捨ててしまった。\n\n段ボールが四十個あって、そのうち三個に「古い紙」と書かれていた。中身を確認しないで、業者に渡してしまった。二日後、母に聞かれて気づいた。\n\n「お父さんの手紙、どこにあるの。」\n\n私は答えられなかった。\n\n父は十一年前に亡くなった。手紙は三十通ぐらいあったはずだ。母が結婚する前に、父が書いたものだ。母はそれを一度も私に見せなかったが、捨てるつもりもなかったわけだ。\n\nすぐに業者に電話した。もう処分されていた。\n\n母は怒らなかった。それが一番つらかった。怒られたほうが、ずっと楽だっただろう。母はただ「そう」と言って、台所に行った。それから二週間、その話は一度も出なかった。\n\n三か月後、母が私に一枚の紙を見せた。父の字だった。\n\n「一通だけ、財布に入れていたの」と母は言った。「三十年入れていたから、ぼろぼろになってしまったけど。」\n\n紙は本当にぼろぼろだった。折り目のところが切れて、二つに分かれていた。読める字は半分ぐらいしか残っていない。\n\n私はそれを見て、初めて泣いた。捨てた日ではなく、その日に泣いたわけだ。\n\n母は言った。「あなたが捨てたのは紙よ。手紙じゃない。手紙はもう私の中にある。」\n\nなぐさめだと思う。母は私を楽にするためにそう言ったのだろう。\n\nでも、なぐさめでも言葉は言葉だ。私は今もその言葉を覚えているし、たぶん一生覚えているだろう。",
+    "wordCount": 515,
+    "estimatedMinutes": 21,
+    "objectives": [
+      {
+        "es": "Usar てしまう para lo irreversible y lamentado: 捨ててしまった."
+      },
+      {
+        "es": "Usar わけだ para presentar una conclusión lógica de lo dicho antes."
+      },
+      {
+        "es": "Distinguir el momento del daño del momento en que se siente."
+      }
+    ],
+    "grammarFocus": [
+      "te-shimau-b1",
+      "wake-da-b1",
+      "te-iru-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "引っ越し",
+        "lemma": "引っ越し",
+        "reading": "ひっこし",
+        "glosses": {
+          "es": "mudanza"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "段ボール",
+        "lemma": "段ボール",
+        "reading": "だんボール",
+        "glosses": {
+          "es": "caja de cartón"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "中身",
+        "lemma": "中身",
+        "reading": "なかみ",
+        "glosses": {
+          "es": "contenido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "業者",
+        "lemma": "業者",
+        "reading": "ぎょうしゃ",
+        "glosses": {
+          "es": "empresa de servicios, transportista"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "処分",
+        "lemma": "処分",
+        "reading": "しょぶん",
+        "glosses": {
+          "es": "eliminación, destrucción"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "財布",
+        "lemma": "財布",
+        "reading": "さいふ",
+        "glosses": {
+          "es": "cartera, billetera"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "折り目",
+        "lemma": "折り目",
+        "reading": "おりめ",
+        "glosses": {
+          "es": "doblez"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "なぐさめ",
+        "lemma": "なぐさめ",
+        "reading": "なぐさめ",
+        "glosses": {
+          "es": "consuelo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Las empresas de mudanzas japonesas ofrecen retirar y destruir lo que se marque como desecho, y lo hacen en las cuarenta y ocho horas siguientes. No hay margen para rectificar."
+    },
+    "spanishSpeakerNote": {
+      "es": "てしまう añade que algo se completó y que pesa: 捨ててしまった no es solo «tiré», es «acabé tirando y ya no tiene arreglo». Y わけだ presenta una conclusión: 泣いたわけだ es «así que fue ese día cuando lloré»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto japonés largo escrito con kanji al uso normal, distinguir lo que alguien afirma de lo que deduce, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adverbios-frecuencia",
+      "arimasu-imasu",
+      "conjunciones",
+      "desu-masu",
+      "estructura-sov-particulas",
+      "expresiones-cotidianas",
+      "hiragana-basico",
+      "i-keiyoshi",
+      "interrogativos-ka",
+      "jikan-tiempo",
+      "katakana-basico",
+      "masu-kei-conjugacion",
+      "na-keiyoshi",
+      "negacion-completa",
+      "numeros-contadores",
+      "particula-de-e",
+      "particula-wa-ga",
+      "particula-wo-ni",
+      "tai-form",
+      "te-form-permission",
+      "ageru-morau-kureru-a2",
+      "dake-shika-bakari-a2",
+      "deshou-a2",
+      "hikaku-a2",
+      "kamoshirenai-a2",
+      "kanoukei-a2",
+      "mae-ni-ato-de-a2",
+      "n-desu-a2",
+      "nagara-a2",
+      "nakereba-naranai-a2",
+      "noun-modification-a2",
+      "ta-koto-ga-aru-a2",
+      "tara-condicional-a2",
+      "tari-tari-a2",
+      "te-form-sequence-a2",
+      "te-iru-a2",
+      "te-mo-ii-a2",
+      "to-condicional-a2",
+      "to-omoimasu-a2",
+      "ukemi-a2",
+      "bakari-b1",
+      "beki-b1",
+      "hazu-da-b1",
+      "hodo-b1",
+      "kamo-b1",
+      "koto-ni-suru-naru-b1",
+      "monokara-b1",
+      "nakerebanaranai-b1",
+      "ni-chigainai-b1",
+      "noni-b1",
+      "shieki-saseru-b1",
+      "sou-b1",
+      "tameni-b1",
+      "te-shimau-b1",
+      "tokoro-b1",
+      "toutsutsuaru-b1",
+      "ukemi-rareru-b1",
+      "wake-da-b1",
+      "yooni-b1",
+      "you-ni-naru-b1"
+    ],
+    "disallowedGrammar": [
+      "keigo completo (尊敬語・謙譲語 sistemático)",
+      "japonés clásico",
+      "registro jurídico",
+      "dialectos regionales cerrados"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 46.8,
+      "maxSentenceWords": 93,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Causativo させる, pasivo de perjuicio られる, matices de certeza (はず, にちがいない, そう, かも, わけだ), てしまう, ようになる. Sin keigo sistemático. Furigana no obligatorio en B1."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta el relato?",
+      "options": [
+        {
+          "id": "tarde",
+          "text": "Que tiró las cartas de su padre y el golpe le llegó tres meses después, con la que sobrevivió"
+        },
+        {
+          "id": "pelea",
+          "text": "Una discusión con su madre por la mudanza"
+        },
+        {
+          "id": "empresa",
+          "text": "Un error de la empresa de mudanzas"
+        }
+      ],
+      "answer": "tarde",
+      "evidence": "私はそれを見て、初めて泣いた。捨てた日ではなく、その日に泣いたわけだ。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el わけだ señala justamente ese desfase."
+        },
+        "incorrect": {
+          "es": "Su madre no se enfadó y el error fue suyo, no de la empresa. Busca cuándo lloró."
+        },
+        "strategy": {
+          "es": "La forma わけだ cierra una deducción: lo que va delante es lo que el texto quiere que veas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántas cajas iban marcadas como «papel viejo»?",
+      "options": [
+        {
+          "id": "tres",
+          "text": "Tres de cuarenta"
+        },
+        {
+          "id": "cuarenta",
+          "text": "Las cuarenta"
+        },
+        {
+          "id": "treinta",
+          "text": "Treinta"
+        }
+      ],
+      "answer": "tres",
+      "evidence": "段ボールが四十個あって、そのうち三個に「古い紙」と書かれていた。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y ese そのうち es lo que hace el error tan pequeño y tan grave."
+        },
+        "incorrect": {
+          "es": "Las cuarenta son el total y las treinta, las cartas. Busca la frase con そのうち."
+        },
+        "strategy": {
+          "es": "La expresión そのうち introduce una parte del total: lee las dos cifras juntas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué significa 処分されていた?",
+      "options": [
+        {
+          "id": "destruido",
+          "text": "Que ya lo habían destruido"
+        },
+        {
+          "id": "guardado",
+          "text": "Que lo tenían guardado"
+        },
+        {
+          "id": "vendido",
+          "text": "Que lo habían vendido"
+        }
+      ],
+      "answer": "destruido",
+      "evidence": "すぐに業者に電話した。もう処分されていた。",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y el もう indica que ya era tarde."
+        },
+        "incorrect": {
+          "es": "Llama para recuperarlas y no puede. El adverbio もう marca que ya no hay vuelta atrás."
+        },
+        "strategy": {
+          "es": "El adverbio もう con pasiva indica que la acción ya está consumada."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice que lo peor fue que su madre no se enfadara?",
+      "options": [
+        {
+          "id": "culpa",
+          "text": "Porque el enfado le habría aliviado la culpa y el silencio se la dejó entera"
+        },
+        {
+          "id": "sorda",
+          "text": "Porque su madre no se enteró bien"
+        },
+        {
+          "id": "tarde",
+          "text": "Porque se enfadó más tarde"
+        }
+      ],
+      "answer": "culpa",
+      "evidence": "母は怒らなかった。それが一番つらかった。怒られたほうが、ずっと楽だっただろう。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y él mismo lo dice con un condicional: haberle regañado habría sido más llevadero."
+        },
+        "incorrect": {
+          "es": "Su madre pregunta directamente por las cartas y nunca se enfada. Lee las tres frases seguidas."
+        },
+        "strategy": {
+          "es": "La construcción …ほうが楽だっただろう compara con una situación que no ocurrió."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: su madre le había enseñado esas cartas alguna vez antes de la mudanza.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "母はそれを一度も私に見せなかったが、捨てるつもりもなかったわけだ。",
+      "feedback": {
+        "correct": {
+          "es": "Falso: ni una sola vez, aunque tampoco pensaba tirarlas."
+        },
+        "incorrect": {
+          "es": "Busca la frase con 一度も. Es una negación reforzada."
+        },
+        "strategy": {
+          "es": "La expresión 一度も…ない niega por completo: ni una vez."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el relato.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "La mudanza y las tres cajas entregadas sin abrir"
+        },
+        {
+          "id": "p2",
+          "text": "La pregunta de su madre dos días después"
+        },
+        {
+          "id": "p3",
+          "text": "Llama a la empresa y ya está todo destruido"
+        },
+        {
+          "id": "p4",
+          "text": "Tres meses después, la carta de la cartera"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "引っ越しの日、私は父の手紙を捨ててしまった… 二日後、母に聞かれて気づいた… すぐに業者に電話した… 三か月後、母が私に一枚の紙を見せた。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: error, descubrimiento, confirmación y desenlace."
+        },
+        "incorrect": {
+          "es": "Guíate por 二日後 y 三か月後."
+        },
+        "strategy": {
+          "es": "Las marcas …後 sitúan cada escena respecto a la anterior."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 12–15 frases en japonés sobre algo que perdiste o rompiste sin querer. Usa cuatro veces てしまう y dos veces わけだ."
+    },
+    "minWords": 180,
+    "maxWords": 420,
+    "hints": [
+      "引っ越しの日、…を捨ててしまった。",
+      "中身を確認しないで渡してしまった。",
+      "母は怒らなかった。",
+      "…わけだ。"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de japonés y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de japonés B1: las cartas que tiré | WeLearn"
+    },
+    "description": {
+      "es": "Lee un relato en japonés B1 y practica てしまう y わけだ. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/japones/b1/lectura/sutete-shimatta-tegami",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ja-b1-sumimasen-o-kazoete-mita"
+    ]
+  }
+}

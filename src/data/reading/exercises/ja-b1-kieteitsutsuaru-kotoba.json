@@ -1,0 +1,503 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ja-b1-kieteitsutsuaru-kotoba",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Japonés B1",
+    "jlpt": "N3",
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el JLPT es aproximada: son dos escalas distintas, con exámenes distintos. B1 se sitúa alrededor del N3, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "kieteitsutsuaru-kotoba",
+  "series": {
+    "id": "japones-b1-lectura-10",
+    "episode": 9,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ja-b1-kyuujuppun-narabu-hodo-ka",
+    "nextExerciseId": "ja-b1-akisou-de-akanai-mise"
+  },
+  "classification": {
+    "genre": "proyecto de documentación",
+    "topic": "grabar el habla de una abuela antes de que se pierda",
+    "intent": "learning",
+    "tags": [
+      "japones b1",
+      "lectura",
+      "ところ",
+      "つつある"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Palabras que se están yendo"
+    },
+    "intro": {
+      "es": "Empezó a grabar a su abuela para conservar el dialecto. Acabó grabando otra cosa. Lectura de japonés B1."
+    },
+    "mission": {
+      "es": "Averigua qué es lo que de verdad está guardando."
+    },
+    "targetText": "祖母は青森の小さい村で生まれた。今、八十九歳で、私の家に住んでいる。\n\n二年前、私は祖母の話し方を録音し始めた。津軽弁が消えつつあるからだ。\n\n村では、七十歳以上の人しかその言葉を使わない。私の母は聞いて分かるが、話せない。私は半分も分からない。\n\n最初は、単語を集めるつもりだった。ノートを作って、「この言葉はどういう意味？」と聞きながら、書いていた。\n\nでも三か月でやめた。\n\n祖母は単語だけ言うのが苦手だった。「わがんね」と聞くと、「わがんねって、たとえば、雨が降ってきて、洗濯物を入れるところなのに手が離せないときね」と、話が始まってしまう。\n\nつまり、単語を聞いているのに、物語が返ってくる。\n\nそこで方法を変えた。今は、ただ祖母に話してもらっている。台所で、料理をしながら。私は録音ボタンを押すだけだ。\n\n二年で百四十時間になった。\n\n先月、大学の先生に見せた。先生は「言語の記録としても価値がありますが」と言って、少し止まった。そして続けた。「それより、これは生活の記録です。」\n\nそのとおりだと思う。\n\n私が録音しているのは、消えつつある言葉ではない。消えつつある人だ。\n\n祖母は先週、風邪をひいた。今は良くなったところだ。でも、私は録音のペースを上げた。\n\n百四十時間のうち、私が聞き返したのは百回もない。内容は半分ぐらい同じ話の繰り返しだ。それでいいと思っている。\n\n一日三十分。多いときは一時間。祖母は「また？」と言いながら、いつも話してくれる。",
+    "wordCount": 533,
+    "estimatedMinutes": 21,
+    "objectives": [
+      {
+        "es": "Usar ところ para el momento justo: 入れるところなのに, 良くなったところだ."
+      },
+      {
+        "es": "Usar つつある para un proceso en curso: 消えつつある."
+      },
+      {
+        "es": "Distinguir el objetivo declarado de un proyecto del real."
+      }
+    ],
+    "grammarFocus": [
+      "tokoro-b1",
+      "toutsutsuaru-b1",
+      "nagara-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "祖母",
+        "lemma": "祖母",
+        "reading": "そぼ",
+        "glosses": {
+          "es": "abuela"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "録音",
+        "lemma": "録音",
+        "reading": "ろくおん",
+        "glosses": {
+          "es": "grabación de audio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "津軽弁",
+        "lemma": "津軽弁",
+        "reading": "つがるべん",
+        "glosses": {
+          "es": "dialecto de la región de Tsugaru"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "単語",
+        "lemma": "単語",
+        "reading": "たんご",
+        "glosses": {
+          "es": "palabra suelta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "苦手",
+        "lemma": "苦手",
+        "reading": "にがて",
+        "glosses": {
+          "es": "que se le da mal"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "洗濯物",
+        "lemma": "洗濯物",
+        "reading": "せんたくもの",
+        "glosses": {
+          "es": "ropa tendida"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "価値",
+        "lemma": "価値",
+        "reading": "かち",
+        "glosses": {
+          "es": "valor"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "風邪",
+        "lemma": "風邪",
+        "reading": "かぜ",
+        "glosses": {
+          "es": "resfriado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El 津軽弁 de Aomori es uno de los dialectos japoneses menos comprensibles fuera de su región, hasta el punto de que la televisión japonesa lo subtitula. Su transmisión se cortó en una generación."
+    },
+    "spanishSpeakerNote": {
+      "es": "ところ marca el momento exacto: 入れるところ es «justo cuando iba a meterla» y 良くなったところ es «acaba de mejorar». Y つつある describe un proceso en marcha: 消えつつある, «está desapareciendo»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto japonés largo escrito con kanji al uso normal, distinguir lo que alguien afirma de lo que deduce, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adverbios-frecuencia",
+      "arimasu-imasu",
+      "conjunciones",
+      "desu-masu",
+      "estructura-sov-particulas",
+      "expresiones-cotidianas",
+      "hiragana-basico",
+      "i-keiyoshi",
+      "interrogativos-ka",
+      "jikan-tiempo",
+      "katakana-basico",
+      "masu-kei-conjugacion",
+      "na-keiyoshi",
+      "negacion-completa",
+      "numeros-contadores",
+      "particula-de-e",
+      "particula-wa-ga",
+      "particula-wo-ni",
+      "tai-form",
+      "te-form-permission",
+      "ageru-morau-kureru-a2",
+      "dake-shika-bakari-a2",
+      "deshou-a2",
+      "hikaku-a2",
+      "kamoshirenai-a2",
+      "kanoukei-a2",
+      "mae-ni-ato-de-a2",
+      "n-desu-a2",
+      "nagara-a2",
+      "nakereba-naranai-a2",
+      "noun-modification-a2",
+      "ta-koto-ga-aru-a2",
+      "tara-condicional-a2",
+      "tari-tari-a2",
+      "te-form-sequence-a2",
+      "te-iru-a2",
+      "te-mo-ii-a2",
+      "to-condicional-a2",
+      "to-omoimasu-a2",
+      "ukemi-a2",
+      "bakari-b1",
+      "beki-b1",
+      "hazu-da-b1",
+      "hodo-b1",
+      "kamo-b1",
+      "koto-ni-suru-naru-b1",
+      "monokara-b1",
+      "nakerebanaranai-b1",
+      "ni-chigainai-b1",
+      "noni-b1",
+      "shieki-saseru-b1",
+      "sou-b1",
+      "tameni-b1",
+      "te-shimau-b1",
+      "tokoro-b1",
+      "toutsutsuaru-b1",
+      "ukemi-rareru-b1",
+      "wake-da-b1",
+      "yooni-b1",
+      "you-ni-naru-b1"
+    ],
+    "disallowedGrammar": [
+      "keigo completo (尊敬語・謙譲語 sistemático)",
+      "japonés clásico",
+      "registro jurídico",
+      "dialectos regionales cerrados"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 38.1,
+      "maxSentenceWords": 73,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Causativo させる, pasivo de perjuicio られる, matices de certeza (はず, にちがいない, そう, かも, わけだ), てしまう, ようになる. Sin keigo sistemático. Furigana no obligatorio en B1."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué descubre el narrador sobre su proyecto?",
+      "options": [
+        {
+          "id": "persona",
+          "text": "Que no está grabando un dialecto que se pierde, sino a una persona que se va"
+        },
+        {
+          "id": "dialecto",
+          "text": "Que el dialecto puede salvarse si se documenta bien"
+        },
+        {
+          "id": "universidad",
+          "text": "Que la universidad quiere financiar su trabajo"
+        }
+      ],
+      "answer": "persona",
+      "evidence": "私が録音しているのは、消えつつある言葉ではない。消えつつある人だ。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y son dos frases paralelas con una sola palabra cambiada."
+        },
+        "incorrect": {
+          "es": "No se habla de financiación ni de salvar el dialecto. Busca las dos frases con 消えつつある."
+        },
+        "strategy": {
+          "es": "Dos frases idénticas salvo una palabra señalan exactamente el cambio de idea."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Por qué abandonó el método de las palabras sueltas?",
+      "options": [
+        {
+          "id": "historias",
+          "text": "Porque su abuela no sabía dar definiciones y contestaba con historias"
+        },
+        {
+          "id": "tiempo",
+          "text": "Porque le llevaba demasiado tiempo"
+        },
+        {
+          "id": "sordera",
+          "text": "Porque su abuela no oía bien"
+        }
+      ],
+      "answer": "historias",
+      "evidence": "祖母は単語だけ言うのが苦手だった … つまり、単語を聞いているのに、物語が返ってくる。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el ejemplo de わがんね lo demuestra."
+        },
+        "incorrect": {
+          "es": "No se menciona ni el tiempo ni el oído. Busca la frase con 苦手."
+        },
+        "strategy": {
+          "es": "La conjunción つまり resume lo dicho antes: úsala para localizar la razón."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué significa 消えつつある?",
+      "options": [
+        {
+          "id": "desapareciendo",
+          "text": "Que está desapareciendo poco a poco"
+        },
+        {
+          "id": "desaparecido",
+          "text": "Que ya ha desaparecido"
+        },
+        {
+          "id": "volviendo",
+          "text": "Que está volviendo"
+        }
+      ],
+      "answer": "desapareciendo",
+      "evidence": "津軽弁が消えつつあるからだ … 村では、七十歳以上の人しかその言葉を使わない。",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: aún se usa, pero solo entre los mayores de setenta."
+        },
+        "incorrect": {
+          "es": "Todavía hay quien lo habla, así que no ha desaparecido del todo."
+        },
+        "strategy": {
+          "es": "つつある describe un proceso en marcha, no un hecho consumado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué subió el ritmo de grabación tras el resfriado?",
+      "options": [
+        {
+          "id": "tiempo",
+          "text": "Porque el resfriado le recordó que el tiempo con su abuela es limitado"
+        },
+        {
+          "id": "audio",
+          "text": "Porque la voz le había cambiado"
+        },
+        {
+          "id": "profesor",
+          "text": "Porque el profesor se lo pidió"
+        }
+      ],
+      "answer": "tiempo",
+      "evidence": "祖母は先週、風邪をひいた。今は良くなったところだ。でも、私は録音のペースを上げた。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el でも es la clave: aunque ya está bien, él acelera."
+        },
+        "incorrect": {
+          "es": "No se dice nada de la voz, y el profesor no le pide nada. Fíjate en el でも."
+        },
+        "strategy": {
+          "es": "Si alguien acelera aunque el peligro haya pasado, el motivo es lo que el susto le recordó."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la madre del narrador habla el dialecto con fluidez.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "私の母は聞いて分かるが、話せない。私は半分も分からない。",
+      "feedback": {
+        "correct": {
+          "es": "Falso: lo entiende, pero no lo habla."
+        },
+        "incorrect": {
+          "es": "Busca la frase sobre los tres niveles de la familia: abuela, madre y narrador."
+        },
+        "strategy": {
+          "es": "La estructura …が、…ない separa lo que sí puede de lo que no."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el proyecto.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Empieza a grabar porque el dialecto se pierde"
+        },
+        {
+          "id": "p2",
+          "text": "El método de las palabras sueltas y su fracaso"
+        },
+        {
+          "id": "p3",
+          "text": "Cambia a dejarla hablar en la cocina"
+        },
+        {
+          "id": "p4",
+          "text": "El profesor le dice qué es en realidad la grabación"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "二年前、私は祖母の話し方を録音し始めた… 最初は、単語を集めるつもりだった… そこで方法を変えた… 先月、大学の先生に見せた。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: motivo, método fallido, método nuevo y reinterpretación."
+        },
+        "incorrect": {
+          "es": "Guíate por 二年前, 最初は, そこで y 先月."
+        },
+        "strategy": {
+          "es": "Un texto de proyecto suele contar el método que no funcionó antes del que sí."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 12–15 frases en japonés sobre algo de tu familia que se está perdiendo. Usa dos veces つつある y tres veces ところ."
+    },
+    "minWords": 180,
+    "maxWords": 420,
+    "hints": [
+      "津軽弁が消えつつある。",
+      "単語を集めるつもりだった。",
+      "今は良くなったところだ。",
+      "料理をしながら話してもらっている。"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de japonés y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de japonés B1: palabras que se están yendo | WeLearn"
+    },
+    "description": {
+      "es": "Lee un proyecto de documentación en japonés B1 y practica ところ y つつある. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/japones/b1/lectura/kieteitsutsuaru-kotoba",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ja-b1-kyuujuppun-narabu-hodo-ka",
+      "ja-b1-akisou-de-akanai-mise"
+    ]
+  }
+}

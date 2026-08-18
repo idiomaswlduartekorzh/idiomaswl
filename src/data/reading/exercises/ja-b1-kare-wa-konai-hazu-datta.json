@@ -1,0 +1,503 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ja-b1-kare-wa-konai-hazu-datta",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Japonés B1",
+    "jlpt": "N3",
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el JLPT es aproximada: son dos escalas distintas, con exámenes distintos. B1 se sitúa alrededor del N3, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "kare-wa-konai-hazu-datta",
+  "series": {
+    "id": "japones-b1-lectura-10",
+    "episode": 3,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ja-b1-sumimasen-o-kazoete-mita",
+    "nextExerciseId": "ja-b1-soroban-o-narawasareta"
+  },
+  "classification": {
+    "genre": "escena de oficina",
+    "topic": "un compañero que deja de ir a comer",
+    "intent": "learning",
+    "tags": [
+      "japones b1",
+      "lectura",
+      "はずだ",
+      "にちがいない"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "No tenía que haber venido"
+    },
+    "intro": {
+      "es": "Dejó de comer con ellos y todos dedujeron algo distinto. Las tres deducciones eran razonables y las tres estaban mal. Lectura de japonés B1."
+    },
+    "mission": {
+      "es": "Averigua cuál era la razón real y quién la supo."
+    },
+    "targetText": "中村さんは四年間、毎日私たちと昼ご飯を食べていた。去年の九月から、急に来なくなった。\n\n理由は言わなかった。だれも聞かなかった。\n\n私たちは勝手に考えた。\n\n田中さんは「転職するにちがいない」と言った。転職活動をしている人は、昼休みに面接の電話をするからだ。ありそうな話だった。\n\n森さんは「奥さんと何かあったはずだ」と言った。中村さんは前は毎日弁当を持って来ていたのに、九月からコンビニになったからだ。これもありそうだった。\n\n私は「体の調子が悪いにちがいない」と思った。九月に十分ぐらい早く帰る日が三回あったからだ。\n\n三人とも自信があった。三人とも間違っていた。\n\n十二月の忘年会で、中村さんが自分から話した。\n\n去年の八月、近くの高校の前を通ったとき、生徒が三人、道に座って弁当を食べていた。中村さんはそれを見て、自分が高校生のとき、昼休みに一人で食べていたことを思い出したそうだ。\n\nそれで、九月から一人で公園に行くことにした。理由はそれだけだ。\n\n「一人で食べたかったんです。だれも嫌いじゃないです」と中村さんは言った。「でも、そう言うと、みんな心配するでしょう。だから言いませんでした。」\n\nそのとおりだった。私たちは心配したはずだ。そして、たぶん理由を聞き続けただろう。\n\n今、中村さんは週に二回、私たちと食べる。ほかの三日は公園にいる。\n\nだれも聞かない。それでいいわけだ。",
+    "wordCount": 513,
+    "estimatedMinutes": 21,
+    "objectives": [
+      {
+        "es": "Usar はずだ para lo que debería ser según lo que se sabe."
+      },
+      {
+        "es": "Usar にちがいない para una deducción con casi certeza."
+      },
+      {
+        "es": "Comprobar que una deducción razonable puede estar equivocada."
+      }
+    ],
+    "grammarFocus": [
+      "hazu-da-b1",
+      "ni-chigainai-b1",
+      "deshou-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "転職",
+        "lemma": "転職",
+        "reading": "てんしょく",
+        "glosses": {
+          "es": "cambio de empleo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "面接",
+        "lemma": "面接",
+        "reading": "めんせつ",
+        "glosses": {
+          "es": "entrevista de trabajo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "調子",
+        "lemma": "調子",
+        "reading": "ちょうし",
+        "glosses": {
+          "es": "estado, forma física"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "自信",
+        "lemma": "自信",
+        "reading": "じしん",
+        "glosses": {
+          "es": "seguridad en uno mismo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "忘年会",
+        "lemma": "忘年会",
+        "reading": "ぼうねんかい",
+        "glosses": {
+          "es": "cena de fin de año de la empresa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "生徒",
+        "lemma": "生徒",
+        "reading": "せいと",
+        "glosses": {
+          "es": "alumno de instituto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "思い出した",
+        "lemma": "思い出した",
+        "reading": "おもいだした",
+        "glosses": {
+          "es": "recordó"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "心配",
+        "lemma": "心配",
+        "reading": "しんぱい",
+        "glosses": {
+          "es": "preocupación"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Comer con los compañeros es la norma en muchas oficinas japonesas, y salirse de ella se interpreta como una señal. El 忘年会 de diciembre es, en cambio, el momento en que se dicen cosas que no se dicen el resto del año."
+    },
+    "spanishSpeakerNote": {
+      "es": "はずだ y にちがいない no son lo mismo: はずだ es «debería ser, según lo que sé», y にちがいない es «no puede ser otra cosa». El texto usa las dos para deducciones que resultan falsas."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto japonés largo escrito con kanji al uso normal, distinguir lo que alguien afirma de lo que deduce, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adverbios-frecuencia",
+      "arimasu-imasu",
+      "conjunciones",
+      "desu-masu",
+      "estructura-sov-particulas",
+      "expresiones-cotidianas",
+      "hiragana-basico",
+      "i-keiyoshi",
+      "interrogativos-ka",
+      "jikan-tiempo",
+      "katakana-basico",
+      "masu-kei-conjugacion",
+      "na-keiyoshi",
+      "negacion-completa",
+      "numeros-contadores",
+      "particula-de-e",
+      "particula-wa-ga",
+      "particula-wo-ni",
+      "tai-form",
+      "te-form-permission",
+      "ageru-morau-kureru-a2",
+      "dake-shika-bakari-a2",
+      "deshou-a2",
+      "hikaku-a2",
+      "kamoshirenai-a2",
+      "kanoukei-a2",
+      "mae-ni-ato-de-a2",
+      "n-desu-a2",
+      "nagara-a2",
+      "nakereba-naranai-a2",
+      "noun-modification-a2",
+      "ta-koto-ga-aru-a2",
+      "tara-condicional-a2",
+      "tari-tari-a2",
+      "te-form-sequence-a2",
+      "te-iru-a2",
+      "te-mo-ii-a2",
+      "to-condicional-a2",
+      "to-omoimasu-a2",
+      "ukemi-a2",
+      "bakari-b1",
+      "beki-b1",
+      "hazu-da-b1",
+      "hodo-b1",
+      "kamo-b1",
+      "koto-ni-suru-naru-b1",
+      "monokara-b1",
+      "nakerebanaranai-b1",
+      "ni-chigainai-b1",
+      "noni-b1",
+      "shieki-saseru-b1",
+      "sou-b1",
+      "tameni-b1",
+      "te-shimau-b1",
+      "tokoro-b1",
+      "toutsutsuaru-b1",
+      "ukemi-rareru-b1",
+      "wake-da-b1",
+      "yooni-b1",
+      "you-ni-naru-b1"
+    ],
+    "disallowedGrammar": [
+      "keigo completo (尊敬語・謙譲語 sistemático)",
+      "japonés clásico",
+      "registro jurídico",
+      "dialectos regionales cerrados"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 39.5,
+      "maxSentenceWords": 97,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Causativo させる, pasivo de perjuicio られる, matices de certeza (はず, にちがいない, そう, かも, わけだ), てしまう, ようになる. Sin keigo sistemático. Furigana no obligatorio en B1."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué muestra la escena?",
+      "options": [
+        {
+          "id": "equivocadas",
+          "text": "Que tres deducciones razonables pueden fallar todas, y que la razón real era mucho más simple"
+        },
+        {
+          "id": "enfermedad",
+          "text": "Que Nakamura estaba enfermo"
+        },
+        {
+          "id": "trabajo",
+          "text": "Que Nakamura buscaba otro empleo"
+        }
+      ],
+      "answer": "equivocadas",
+      "evidence": "三人とも自信があった。三人とも間違っていた … 「一人で食べたかったんです。」",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y las dos frases paralelas lo dicen sin adornos."
+        },
+        "incorrect": {
+          "es": "Ni enfermedad ni cambio de empleo: las dos son hipótesis descartadas. Busca las dos frases con 三人とも."
+        },
+        "strategy": {
+          "es": "Dos frases paralelas con el mismo sujeto y sentido opuesto son la clave del texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿En qué se basó Mori para su deducción?",
+      "options": [
+        {
+          "id": "bento",
+          "text": "En que dejó de traer fiambrera y pasó a comprar en el konbini"
+        },
+        {
+          "id": "telefono",
+          "text": "En que hacía llamadas al mediodía"
+        },
+        {
+          "id": "salidas",
+          "text": "En que salía antes del trabajo"
+        }
+      ],
+      "answer": "bento",
+      "evidence": "中村さんは前は毎日弁当を持って来ていたのに、九月からコンビニになったからだ。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: de ahí dedujo un problema en casa."
+        },
+        "incorrect": {
+          "es": "Lo del teléfono es de Tanaka y lo de salir antes, del narrador. Busca la frase de Mori."
+        },
+        "strategy": {
+          "es": "Cada personaje da su propia prueba: localiza quién habla antes de leer el dato."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué es un 忘年会?",
+      "options": [
+        {
+          "id": "cena",
+          "text": "La cena de fin de año de la empresa"
+        },
+        {
+          "id": "reunion",
+          "text": "Una reunión de trabajo"
+        },
+        {
+          "id": "despedida",
+          "text": "Una despedida de un compañero"
+        }
+      ],
+      "answer": "cena",
+      "evidence": "十二月の忘年会で、中村さんが自分から話した。",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: es en diciembre y es donde por fin se cuenta lo que no se dice."
+        },
+        "incorrect": {
+          "es": "Es en diciembre y nadie se va de la empresa: Nakamura sigue comiendo con ellos."
+        },
+        "strategy": {
+          "es": "Si el texto sitúa algo en diciembre y con toda la oficina, es la cena de fin de año."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué Nakamura no explicó su razón en septiembre?",
+      "options": [
+        {
+          "id": "preocupar",
+          "text": "Porque decirlo habría preocupado a todos y le habrían seguido preguntando"
+        },
+        {
+          "id": "verguenza",
+          "text": "Porque le daba vergüenza su recuerdo del instituto"
+        },
+        {
+          "id": "prohibido",
+          "text": "Porque la empresa no permite comer fuera"
+        }
+      ],
+      "answer": "preocupar",
+      "evidence": "「でも、そう言うと、みんな心配するでしょう。だから言いませんでした。」 … 私たちは心配したはずだ。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el narrador lo confirma después: habrían insistido."
+        },
+        "incorrect": {
+          "es": "No habla de vergüenza ni de normas: come en el parque sin problema. Lee su explicación."
+        },
+        "strategy": {
+          "es": "Si el narrador confirma la hipótesis del otro personaje, esa es la razón buena."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: ahora Nakamura come todos los días solo en el parque.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "今、中村さんは週に二回、私たちと食べる。ほかの三日は公園にいる。",
+      "feedback": {
+        "correct": {
+          "es": "Falso: dos días con ellos y tres en el parque."
+        },
+        "incorrect": {
+          "es": "Busca el penúltimo párrafo: reparte los cinco días de la semana."
+        },
+        "strategy": {
+          "es": "Si el texto reparte una semana, cuenta los días antes de responder."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la escena.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "En septiembre deja de comer con ellos"
+        },
+        {
+          "id": "p2",
+          "text": "Las tres hipótesis de los compañeros"
+        },
+        {
+          "id": "p3",
+          "text": "En la cena de diciembre lo cuenta él"
+        },
+        {
+          "id": "p4",
+          "text": "Ahora reparte la semana y nadie pregunta"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "去年の九月から、急に来なくなった… 田中さんは「転職するにちがいない」と言った… 十二月の忘年会で… 今、中村さんは週に二回、私たちと食べる。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: el hecho, las hipótesis, la explicación y el presente."
+        },
+        "incorrect": {
+          "es": "Guíate por 九月, 十二月 y 今."
+        },
+        "strategy": {
+          "es": "Los meses ordenan la escena de principio a fin."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 12–15 frases en japonés sobre algo que dedujiste de alguien y resultó falso. Usa tres veces はずだ y tres veces にちがいない."
+    },
+    "minWords": 180,
+    "maxWords": 420,
+    "hints": [
+      "「転職するにちがいない」と言った。",
+      "「奥さんと何かあったはずだ」と言った。",
+      "三人とも間違っていた。",
+      "それでいいわけだ。"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de japonés y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de japonés B1: no tenía que haber venido | WeLearn"
+    },
+    "description": {
+      "es": "Lee una escena de oficina en japonés B1 y practica はずだ y にちがいない. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/japones/b1/lectura/kare-wa-konai-hazu-datta",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ja-b1-sumimasen-o-kazoete-mita",
+      "ja-b1-soroban-o-narawasareta"
+    ]
+  }
+}
