@@ -1,0 +1,474 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-b1-la-casa-di-vent-anni",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Italiano B1"
+  },
+  "slug": "la-casa-di-vent-anni",
+  "series": {
+    "id": "italiano-b1-lectura-10",
+    "episode": 10,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-b1-mi-dica-lei-cosa-devo-fare",
+    "nextExerciseId": null
+  },
+  "classification": {
+    "genre": "reportaje familiar",
+    "topic": "una casa que se construye por tramos",
+    "intent": "learning",
+    "tags": [
+      "italiano b1",
+      "lectura",
+      "futuro anteriore",
+      "periodo ipotetico"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La casa de veinte años"
+    },
+    "intro": {
+      "es": "Empezada en 2003 y sin terminar, con gente viviendo dentro desde hace diecinueve años. Dos habitaciones tardaron diecinueve años; las puertas, cuatro meses. Lectura de italiano B1."
+    },
+    "mission": {
+      "es": "Averigua por qué la casa se terminó justo cuando se terminó."
+    },
+    "targetText": "La casa dei miei genitori, a Cerignola, è cominciata nel 2003 e non è ancora finita. Non è un cantiere abbandonato: ci abitano dentro da diciannove anni.\n\nFunziona così. Nel 2003 hanno costruito il piano terra: due stanze, un bagno, la cucina. Nel 2007, con il primo pezzo di eredità di mio nonno, hanno alzato le pareti del primo piano. Nel 2011 hanno messo le finestre. Nel 2016 il pavimento. Il primo piano ha ancora due stanze senza porte, e in una di quelle stanze mia madre stende i panni quando piove.\n\nSe qualcuno guarda quella casa da fuori, pensa che sia una casa non finita. Se ci entra, capisce che è una casa che si sta finendo.\n\nMio padre ha una frase che ripete da vent'anni: quando avremo finito il primo piano, faremo la scala esterna. Io ho trentaquattro anni e l'ho sentita per tutta la mia vita adulta. Ho smesso di crederci verso i venticinque, e a trentadue ho capito che non era una promessa: era un modo di alzarsi la mattina.\n\nHo una foto del 2009 in cui io e mio fratello siamo in piedi al primo piano, tra le pareti alzate e senza tetto, con le braccia aperte. Sembra la foto di una casa bombardata. Per noi quello era il posto migliore del paese: da lassù si vedeva tutta la strada e non c'era nessun adulto.\n\nMia madre la pensa diversamente. Lei dice: se avessimo aspettato di avere tutti i soldi, non ci saremmo mai trasferiti, e voi tre sareste cresciuti in affitto. Ha ragione, e i conti lo dimostrano: in diciannove anni hanno pagato zero euro di affitto.\n\nAdesso c'è una cosa nuova. Mio fratello si è sposato in aprile e vivrà al primo piano. Quando si sarà sposato tuo fratello, dicevano da anni, il primo piano si finirà. Il matrimonio è stato in aprile, e a luglio le porte c'erano.\n\nDiciannove anni per due stanze, e quattro mesi quando è servito davvero.\n\nNon lo dico come critica. Lo dico perché mi sono accorto di una cosa: quella casa non si è mai finita perché non c'era nessuno che avesse bisogno che fosse finita. Le case si finiscono quando qualcuno ci deve entrare, non quando c'è il denaro.\n\nQuando avrò dei figli, non so se costruirò così. Ma so che se dovessi scegliere tra vent'anni in una casa mia non finita e vent'anni in una casa finita di qualcun altro, sceglierei la prima, e non per i soldi.",
+    "wordCount": 413,
+    "estimatedMinutes": 17,
+    "objectives": [
+      {
+        "es": "Usar el futuro anteriore: quando avremo finito, quando si sarà sposato."
+      },
+      {
+        "es": "Combinar las tres condicionales, incluida la imposible con consecuencia pasada."
+      },
+      {
+        "es": "Leer una reconstrucción cronológica con años sueltos."
+      }
+    ],
+    "grammarFocus": [
+      "futuro-anteriore-b1",
+      "periodo-ipotetico-b1",
+      "verbi-riflessivi-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "cantiere",
+        "lemma": "cantiere",
+        "glosses": {
+          "es": "obra en construcción"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "eredità",
+        "lemma": "eredità",
+        "glosses": {
+          "es": "herencia"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pareti",
+        "lemma": "parete",
+        "glosses": {
+          "es": "paredes interiores"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pavimento",
+        "lemma": "pavimento",
+        "glosses": {
+          "es": "suelo de una habitación. ¡No es el pavimento de la calle!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "stende",
+        "lemma": "stendere",
+        "glosses": {
+          "es": "tiende; «stendere i panni» es tender la ropa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "panni",
+        "lemma": "panno",
+        "glosses": {
+          "es": "ropa lavada"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "affitto",
+        "lemma": "affitto",
+        "glosses": {
+          "es": "alquiler"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "accorto",
+        "lemma": "accorgersi",
+        "glosses": {
+          "es": "dado cuenta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Construir la casa por tramos, según entra el dinero, es habitual en el sur de Italia, y muchas viviendas se habitan sin estar terminadas. La planta alta suele reservarse para un hijo que se casará."
+    },
+    "spanishSpeakerNote": {
+      "es": "«Quando avremo finito» y «quando si sarà sposato» son futuro anteriore: lo que estará hecho antes de otro momento futuro. El español pone ahí subjuntivo: «cuando hayamos terminado», «cuando se haya casado»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto italiano largo que desarrolla una idea y cambia de dirección, distinguir el hecho de la opinión por la forma del verbo, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere",
+      "avverbi-frequenza-modo-a2",
+      "ci-vuole-vogliono-a2",
+      "comparativi-a2",
+      "condizionale-presente-a2",
+      "congiunzioni-logiche-a2",
+      "da-presente-a2",
+      "forma-cortesia-a2",
+      "futuro-probabilita-a2",
+      "futuro-semplice-a2",
+      "imperfetto-a2",
+      "passato-prossimo-avere-a2",
+      "passato-prossimo-essere-a2",
+      "periodo-ipotetico-reale-a2",
+      "piacere-verbi-simili-a2",
+      "pronomi-diretti-a2",
+      "pronomi-indiretti-a2",
+      "pronomi-relativi-a2",
+      "stare-per-a2",
+      "trapassato-prossimo-a2",
+      "verbi-riflessivi-a2",
+      "condizionale-passato-b1",
+      "congiuntivo-passato-b1",
+      "congiuntivo-presente-b1",
+      "futuro-anteriore-b1",
+      "periodo-ipotetico-b1",
+      "trapassato-prossimo-b1"
+    ],
+    "disallowedGrammar": [
+      "passato remoto",
+      "trapassato remoto",
+      "infinito sostantivato letterario",
+      "costruzioni participiali estese"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 14.2,
+      "maxSentenceWords": 31,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Congiuntivo presente y passato, condizionale passato, futuro anteriore, trapassato prossimo y las tres condicionales. El congiuntivo imperfetto aparece solo dentro del periodo ipotetico dell'impossibilità, que es el propio tema del nivel. Sin passato remoto."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué conclusión saca el narrador?",
+      "options": [
+        {
+          "id": "necesidad",
+          "text": "Que las casas se terminan cuando alguien tiene que entrar, no cuando aparece el dinero"
+        },
+        {
+          "id": "pobreza",
+          "text": "Que su familia era demasiado pobre para construir bien"
+        },
+        {
+          "id": "padre",
+          "text": "Que su padre nunca tuvo intención de terminar la casa"
+        }
+      ],
+      "answer": "necesidad",
+      "evidence": "Le case si finiscono quando qualcuno ci deve entrare, non quando c'è il denaro.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo demuestra con la prueba de los cuatro meses tras la boda."
+        },
+        "incorrect": {
+          "es": "El texto dice expresamente que no lo cuenta como crítica al padre, y las cuentas del alquiler le dan la razón a la madre."
+        },
+        "strategy": {
+          "es": "Cuando un texto formula una regla general al final, esa regla es la conclusión."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué se hizo en 2007?",
+      "options": [
+        {
+          "id": "paredes",
+          "text": "Se levantaron las paredes de la primera planta"
+        },
+        {
+          "id": "ventanas",
+          "text": "Se pusieron las ventanas"
+        },
+        {
+          "id": "suelo",
+          "text": "Se puso el suelo"
+        }
+      ],
+      "answer": "paredes",
+      "evidence": "Nel 2007, con il primo pezzo di eredità di mio nonno, hanno alzato le pareti del primo piano. Nel 2011 hanno messo le finestre. Nel 2016 il pavimento.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y con dinero de una herencia."
+        },
+        "incorrect": {
+          "es": "Las ventanas son de 2011 y el suelo de 2016. Empareja cada año con su obra."
+        },
+        "strategy": {
+          "es": "Cuando un texto da una lista de años, léela entera antes de responder."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que en 2016 pusieron «il pavimento». ¿Qué es?",
+      "options": [
+        {
+          "id": "suelo",
+          "text": "El suelo de las habitaciones"
+        },
+        {
+          "id": "calle",
+          "text": "El asfalto de la calle de delante"
+        },
+        {
+          "id": "tejado",
+          "text": "El tejado de la casa"
+        }
+      ],
+      "answer": "suelo",
+      "evidence": "Nel 2011 hanno messo le finestre. Nel 2016 il pavimento. Il primo piano ha ancora due stanze senza porte.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Va en la lista de obras interiores: paredes, ventanas, suelo, puertas."
+        },
+        "incorrect": {
+          "es": "Se parece al «pavimento» de la calle, pero aquí va entre ventanas y puertas: es obra interior."
+        },
+        "strategy": {
+          "es": "En una enumeración de obras, la posición de la palabra te dice de qué parte de la casa habla."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice que la frase de su padre no era una promesa?",
+      "options": [
+        {
+          "id": "motor",
+          "text": "Porque le servía para levantarse cada mañana con algo por delante"
+        },
+        {
+          "id": "mentira",
+          "text": "Porque era una mentira para tranquilizar a la familia"
+        },
+        {
+          "id": "plazo",
+          "text": "Porque tenía un plazo imposible de cumplir"
+        }
+      ],
+      "answer": "motor",
+      "evidence": "a trentadue ho capito che non era una promessa: era un modo di alzarsi la mattina",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo dice sin reproche: es una lectura, no una acusación."
+        },
+        "incorrect": {
+          "es": "El texto no la llama mentira ni habla de plazos. Lee lo que entendió a los treinta y dos."
+        },
+        "strategy": {
+          "es": "Después de dos puntos suele venir la reinterpretación de lo que se acaba de negar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: las puertas de la primera planta se colocaron a los cuatro meses de la boda del hermano.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Il matrimonio è stato in aprile, e a luglio le porte c'erano … Diciannove anni per due stanze, e quattro mesi quando è servito davvero.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y esa desproporción es la prueba de toda la tesis del texto."
+        },
+        "incorrect": {
+          "es": "Busca las dos fechas seguidas: abril y julio, y la frase que las resume."
+        },
+        "strategy": {
+          "es": "Si el texto resume dos fechas en una cifra, comprueba las fechas y luego la cifra."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la construcción según el texto.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "La planta baja, en 2003"
+        },
+        {
+          "id": "p2",
+          "text": "Las paredes de arriba, en 2007"
+        },
+        {
+          "id": "p3",
+          "text": "Las ventanas en 2011 y el suelo en 2016"
+        },
+        {
+          "id": "p4",
+          "text": "Las puertas, después de la boda de abril"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Nel 2003 hanno costruito il piano terra … Nel 2007 … hanno alzato le pareti … Nel 2011 hanno messo le finestre. Nel 2016 il pavimento … a luglio le porte c'erano.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: la cronología está dada por los años."
+        },
+        "incorrect": {
+          "es": "Sigue los años en orden: 2003, 2007, 2011, 2016 y por último la boda."
+        },
+        "strategy": {
+          "es": "Cuando el texto da fechas explícitas, la cronología ya está resuelta."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 12–15 frases en italiano sobre algo que en tu familia se hizo por tramos, según entraba el dinero. Usa dos futuros anteriori y dos condicionales imposibles."
+    },
+    "minWords": 80,
+    "maxWords": 140,
+    "hints": [
+      "Quando avremo finito il primo piano…",
+      "Se avessimo aspettato…, non ci saremmo mai trasferiti.",
+      "Mi sono accorto di una cosa.",
+      "Se dovessi scegliere, sceglierei…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de italiano y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano B1: la casa de veinte años | WeLearn"
+    },
+    "description": {
+      "es": "Lee un reportaje familiar en italiano B1 y practica el futuro anteriore y el periodo ipotetico. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/italiano/b1/lectura/la-casa-di-vent-anni",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-b1-mi-dica-lei-cosa-devo-fare"
+    ]
+  }
+}

@@ -1,0 +1,475 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-b1-sei-contro-sei",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Italiano B1"
+  },
+  "slug": "sei-contro-sei",
+  "series": {
+    "id": "italiano-b1-lectura-10",
+    "episode": 2,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-b1-il-preventivo-che-non-ho-fatto",
+    "nextExerciseId": "it-b1-quando-avrai-letto-questa-lettera"
+  },
+  "classification": {
+    "genre": "crónica de asamblea",
+    "topic": "la votación del ascensor",
+    "intent": "learning",
+    "tags": [
+      "italiano b1",
+      "lectura",
+      "congiuntivo presente",
+      "congiuntivo passato"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Seis contra seis"
+    },
+    "intro": {
+      "es": "Tres horas y veinte minutos para decidir si se pone ascensor. Empate a seis, y el voto que lo desempata es del bajo. Lectura de italiano B1."
+    },
+    "mission": {
+      "es": "Averigua por qué votó a favor alguien que no va a usarlo nunca."
+    },
+    "targetText": "L'assemblea di condominio del 14 marzo è durata tre ore e venti minuti per decidere una cosa che si decide in cinque: se mettere l'ascensore o no.\n\nIl palazzo ha cinque piani e non ha ascensore. È del 1961. Ci sono dodici appartamenti e dodici voti.\n\nIl signor Baldi, quinto piano, ha parlato per primo: credo che sia una questione di dignità. Ha settantanove anni e sale novantadue scalini. Nessuno in quella stanza pensava che avesse torto.\n\nLa signora Curti, primo piano, ha risposto: penso che l'ascensore sia giusto, ma non credo che sia giusto che lo paghi anche chi non lo usa. Anche lei ha ragione, e qui comincia il problema: la legge dice che si paga in base ai millesimi e all'altezza del piano, quindi il quinto paga più del primo, ma il primo paga.\n\nPoi ha parlato l'ingegnere che aveva preparato il progetto. Ha spiegato che il vano scala è abbastanza largo, che i lavori durerebbero quattro mesi e che il costo sarebbe di sessantamila euro. Sembra che il preventivo sia stato aggiornato due volte dal 2022, sempre al rialzo.\n\nPrima votazione: sei favorevoli, sei contrari.\n\nHo guardato la lista con calma. I sei favorevoli erano il terzo, il quarto e il quinto piano. I sei contrari erano il piano terra, il primo e il secondo. Non era una divisione politica né una questione di carattere. Era una scala.\n\nAlla seconda votazione una persona ha cambiato voto: il signor Espinoza, piano terra, che non userebbe quell'ascensore neanche una volta in vita sua. Ha detto la frase che ha chiuso l'assemblea: mia madre ha ottantasei anni, vive in Perù, al quarto piano, senza ascensore. Non credo che qualcuno lì voti per lei. Voto io per il signor Baldi.\n\nSette a cinque. L'ascensore si farà.\n\nAll'uscita la signora Curti gli ha detto che era stato generoso. Lui ha risposto che non era generosità: una volta aveva portato su sua madre in braccio, e certe cose non si dimenticano.\n\nSei mesi dopo l'assemblea i lavori non erano ancora cominciati, perché mancava un'autorizzazione per la facciata. Baldi ha compiuto ottant'anni sul pianerottolo del quinto piano, con la torta portata su da due nipoti. Il signor Espinoza è salito anche lui, novantadue scalini, e di quella sera non ha detto niente.\n\nDubito che il verbale dell'assemblea contenga questa frase. I verbali registrano i voti, non le ragioni. E però le ragioni sono l'unica cosa che ha cambiato un voto quella sera.",
+    "wordCount": 409,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Usar el congiuntivo presente tras credo che, penso che, sembra che, dubito che."
+      },
+      {
+        "es": "Formar el congiuntivo passato para opinar sobre algo ya ocurrido."
+      },
+      {
+        "es": "Separar el resultado de una votación de las razones que la explican."
+      }
+    ],
+    "grammarFocus": [
+      "congiuntivo-presente-b1",
+      "congiuntivo-passato-b1",
+      "congiunzioni-logiche-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "condominio",
+        "lemma": "condominio",
+        "glosses": {
+          "es": "comunidad de vecinos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "scalini",
+        "lemma": "scalino",
+        "glosses": {
+          "es": "escalones"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "millesimi",
+        "lemma": "millesimi",
+        "glosses": {
+          "es": "milésimas: cuota de participación de cada piso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vano",
+        "lemma": "vano",
+        "glosses": {
+          "es": "hueco; «vano scala» es el hueco de la escalera"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rialzo",
+        "lemma": "rialzo",
+        "glosses": {
+          "es": "subida; «al rialzo» es al alza"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "verbale",
+        "lemma": "verbale",
+        "glosses": {
+          "es": "acta de una reunión. ¡No es un adjetivo aquí!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "braccio",
+        "lemma": "braccio",
+        "glosses": {
+          "es": "brazo; «in braccio» es en brazos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "favorevoli",
+        "lemma": "favorevole",
+        "glosses": {
+          "es": "a favor"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En Italia el gasto del ascensor se reparte por millesimi y por altura del piso, así que los bajos pagan aunque no lo usen. Es la razón por la que muchas asambleas de edificios antiguos acaban en empate."
+    },
+    "spanishSpeakerNote": {
+      "es": "Aquí está el desajuste que más cuesta: «credo che sia», «penso che sia», «sembra che sia stato», «dubito che contenga». El español pone indicativo tras «creo que»; el italiano exige congiuntivo. La forma del verbo te dice si quien habla afirma o solo opina."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto italiano largo que desarrolla una idea y cambia de dirección, distinguir el hecho de la opinión por la forma del verbo, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere",
+      "avverbi-frequenza-modo-a2",
+      "ci-vuole-vogliono-a2",
+      "comparativi-a2",
+      "condizionale-presente-a2",
+      "congiunzioni-logiche-a2",
+      "da-presente-a2",
+      "forma-cortesia-a2",
+      "futuro-probabilita-a2",
+      "futuro-semplice-a2",
+      "imperfetto-a2",
+      "passato-prossimo-avere-a2",
+      "passato-prossimo-essere-a2",
+      "periodo-ipotetico-reale-a2",
+      "piacere-verbi-simili-a2",
+      "pronomi-diretti-a2",
+      "pronomi-indiretti-a2",
+      "pronomi-relativi-a2",
+      "stare-per-a2",
+      "trapassato-prossimo-a2",
+      "verbi-riflessivi-a2",
+      "condizionale-passato-b1",
+      "congiuntivo-passato-b1",
+      "congiuntivo-presente-b1",
+      "futuro-anteriore-b1",
+      "periodo-ipotetico-b1",
+      "trapassato-prossimo-b1"
+    ],
+    "disallowedGrammar": [
+      "passato remoto",
+      "trapassato remoto",
+      "infinito sostantivato letterario",
+      "costruzioni participiali estese"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 12.8,
+      "maxSentenceWords": 34,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Congiuntivo presente y passato, condizionale passato, futuro anteriore, trapassato prossimo y las tres condicionales. El congiuntivo imperfetto aparece solo dentro del periodo ipotetico dell'impossibilità, que es el propio tema del nivel. Sin passato remoto."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué muestra la crónica?",
+      "options": [
+        {
+          "id": "razon",
+          "text": "Que el voto no lo cambió un argumento económico sino una razón personal que no consta en el acta"
+        },
+        {
+          "id": "ley",
+          "text": "Que la ley del reparto por millesimi es injusta"
+        },
+        {
+          "id": "coste",
+          "text": "Que el presupuesto de sesenta mil euros era demasiado alto"
+        }
+      ],
+      "answer": "razon",
+      "evidence": "Dubito che il verbale dell'assemblea contenga questa frase. I verbali registrano i voti, non le ragioni. E però le ragioni sono l'unica cosa che ha cambiato un voto quella sera.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo dice justo al final, con un «però» que le da la vuelta a todo."
+        },
+        "incorrect": {
+          "es": "El texto explica la ley sin condenarla y no discute el precio. Lee el último párrafo."
+        },
+        "strategy": {
+          "es": "Cuando un texto termina con «però», lo que viene después es su conclusión."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cómo se repartieron los votos en la primera votación?",
+      "options": [
+        {
+          "id": "piso",
+          "text": "Seis a favor (pisos tercero a quinto) y seis en contra (bajo a segundo)"
+        },
+        {
+          "id": "siete",
+          "text": "Siete a favor y cinco en contra"
+        },
+        {
+          "id": "unanime",
+          "text": "Por unanimidad a favor"
+        }
+      ],
+      "answer": "piso",
+      "evidence": "Prima votazione: sei favorevoli, sei contrari … I sei favorevoli erano il terzo, il quarto e il quinto piano.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el narrador lo resume: no era política, era una escalera."
+        },
+        "incorrect": {
+          "es": "El siete a cinco es la segunda votación. Busca el reparto de la primera."
+        },
+        "strategy": {
+          "es": "Cuando hay dos votaciones, comprueba de cuál habla la pregunta antes de contar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto habla de «il verbale dell'assemblea». ¿Qué es?",
+      "options": [
+        {
+          "id": "acta",
+          "text": "El acta escrita de la reunión"
+        },
+        {
+          "id": "oral",
+          "text": "La parte oral del debate"
+        },
+        {
+          "id": "convocatoria",
+          "text": "La convocatoria de la asamblea"
+        }
+      ],
+      "answer": "acta",
+      "evidence": "Dubito che il verbale dell'assemblea contenga questa frase. I verbali registrano i voti, non le ragioni.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y la frase siguiente dice qué recoge: los votos."
+        },
+        "incorrect": {
+          "es": "Se parece a «verbal» pero es un sustantivo: el documento. Fíjate en qué se dice que registra."
+        },
+        "strategy": {
+          "es": "Si el texto explica qué registra un documento, esa explicación lo define."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué rechaza Espinoza que su voto fuera generosidad?",
+      "options": [
+        {
+          "id": "propio",
+          "text": "Porque para él es una deuda propia: subió a su madre en brazos y no lo olvida"
+        },
+        {
+          "id": "interes",
+          "text": "Porque en realidad el ascensor subirá el valor de su piso"
+        },
+        {
+          "id": "presion",
+          "text": "Porque los vecinos del quinto le presionaron"
+        }
+      ],
+      "answer": "propio",
+      "evidence": "Lui ha risposto che non era generosità: una volta aveva portato su sua madre in braccio, e certe cose non si dimenticano.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y encaja con lo que dijo al votar: nadie en Perú vota por su madre."
+        },
+        "incorrect": {
+          "es": "No se menciona el valor del piso ni ninguna presión. Lee su respuesta al salir."
+        },
+        "strategy": {
+          "es": "Cuando alguien rechaza un elogio, su motivo suele estar en la misma frase, tras los dos puntos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el presupuesto de la obra se ha actualizado dos veces desde 2022, siempre subiendo.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Sembra che il preventivo sia stato aggiornato due volte dal 2022, sempre al rialzo.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y el «sembra che» avisa de que es información de segunda mano."
+        },
+        "incorrect": {
+          "es": "Está en el párrafo del ingeniero, en la última frase."
+        },
+        "strategy": {
+          "es": "La fórmula «sembra che» marca un dato que el narrador no da por comprobado, pero lo da."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la asamblea.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Baldi habla de dignidad y de noventa y dos escalones"
+        },
+        {
+          "id": "p2",
+          "text": "Curti acepta el ascensor pero no el reparto del gasto"
+        },
+        {
+          "id": "p3",
+          "text": "El ingeniero da plazos y coste"
+        },
+        {
+          "id": "p4",
+          "text": "Empate a seis y cambio de voto de Espinoza"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Il signor Baldi, quinto piano, ha parlato per primo … La signora Curti, primo piano, ha risposto … Poi ha parlato l'ingegnere … Alla seconda votazione una persona ha cambiato voto.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: el texto sigue el turno de palabra."
+        },
+        "incorrect": {
+          "es": "Fíjate en «ha parlato per primo», «ha risposto», «Poi ha parlato»."
+        },
+        "strategy": {
+          "es": "En una crónica de reunión, los verbos de habla marcan el orden."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 12–15 frases en italiano dando tu opinión sobre una decisión de tu comunidad o tu trabajo. Usa seis veces el congiuntivo presente y dos el passato."
+    },
+    "minWords": 80,
+    "maxWords": 140,
+    "hints": [
+      "Credo che sia una questione di…",
+      "Non penso che sia giusto che…",
+      "Sembra che il preventivo sia stato…",
+      "Dubito che il verbale contenga…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de italiano y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano B1: seis contra seis | WeLearn"
+    },
+    "description": {
+      "es": "Lee una crónica de asamblea en italiano B1 y practica el congiuntivo presente y passato. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/italiano/b1/lectura/sei-contro-sei",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-b1-il-preventivo-che-non-ho-fatto",
+      "it-b1-quando-avrai-letto-questa-lettera"
+    ]
+  }
+}

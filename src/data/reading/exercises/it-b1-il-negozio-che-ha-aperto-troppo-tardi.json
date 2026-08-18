@@ -1,0 +1,475 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-b1-il-negozio-che-ha-aperto-troppo-tardi",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Italiano B1"
+  },
+  "slug": "il-negozio-che-ha-aperto-troppo-tardi",
+  "series": {
+    "id": "italiano-b1-lectura-10",
+    "episode": 7,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-b1-nessuno-ha-applaudito",
+    "nextExerciseId": "it-b1-la-nonna-lo-aveva-detto"
+  },
+  "classification": {
+    "genre": "artículo de opinión",
+    "topic": "un taller de reparación que duró catorce meses",
+    "intent": "learning",
+    "tags": [
+      "italiano b1",
+      "lectura",
+      "periodo ipotetico",
+      "comparativos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La tienda que abrió demasiado tarde"
+    },
+    "intro": {
+      "es": "Abrió en marzo de 2024 y cerró en mayo de 2025. Era mejor que el anterior en todo, y aun así cerró. Lectura de italiano B1."
+    },
+    "mission": {
+      "es": "Averigua qué escribió Yusuf en el papel del escaparate el último día."
+    },
+    "targetText": "In via Sanzio, al numero 12, c'era un negozio di riparazione di elettrodomestici che ha aperto nel marzo del 2024 e ha chiuso nel maggio del 2025. Quattordici mesi.\n\nIl proprietario si chiama Yusuf, ha quarantatré anni e ha fatto lo stesso lavoro per undici anni come dipendente, in un'azienda più grande e molto meno interessante.\n\nIl suo negozio era migliore di quello che c'era prima nella stessa strada. I prezzi erano più bassi, l'orario era più lungo e Yusuf spiegava sempre cosa aveva rotto l'apparecchio, con l'apparecchio aperto sul banco. Non ho mai visto nessuno spiegare una lavatrice meglio di lui.\n\nSe avesse aperto nel 2004, quel negozio esisterebbe ancora. Ne sono convinto, e non è nostalgia: è che nel 2004 riparare costava molto meno che comprare.\n\nAdesso non è più così. Un forno nuovo costa centonovanta euro. La riparazione di un forno costa tra settanta e centoventi, più l'uscita del tecnico. Se la riparazione costa il sessanta per cento del nuovo, la gente compra il nuovo, e fa un calcolo che è sbagliato solo se guardi cinque anni avanti invece di uno.\n\nYusuf lo sapeva. Me lo ha detto la seconda volta che sono andato da lui: credo che questo mestiere abbia dieci anni davanti, non trenta.\n\nAllora perché ha aperto?\n\nHa risposto così: perché avevo quarantadue anni, e se non lo avessi fatto allora non lo avrei fatto mai. E poi ha aggiunto una cosa che mi è rimasta in testa: undici anni a riparare le cose degli altri per qualcun altro sono più lunghi di quattordici mesi a riparare le cose degli altri per me.\n\nNei quattordici mesi gli ho portato tre cose: un tostapane, un aspirapolvere e la lavatrice. Il tostapane non era riparabile e non me lo ha fatto pagare. L'aspirapolvere era un filtro da otto euro. La lavatrice l'ha tenuta due giorni e me l'ha riportata a casa lui, con la sua macchina, senza chiedere niente per il trasporto.\n\nL'ultimo giorno ha attaccato sulla vetrina un foglio A4 scritto a mano. Non diceva «cessata attività». Diceva: grazie a chi ha portato qui una cosa rotta invece di buttarla.\n\nOggi al numero 12 c'è un negozio di telefonia. Vende cover. Non credo che chiuda, e questo non è un buon segno per nessuno di noi.\n\nSe qualcuno mi chiedesse se Yusuf ha sbagliato, risponderei che ha sbagliato i conti, e che non ha sbagliato niente altro.",
+    "wordCount": 402,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Combinar la condicional imposible con consecuencia presente: se avesse aperto, esisterebbe ancora."
+      },
+      {
+        "es": "Formar comparativos de superioridad e inferioridad: migliore di, più lungo, meno che."
+      },
+      {
+        "es": "Distinguir un error de cálculo de un error de decisión."
+      }
+    ],
+    "grammarFocus": [
+      "periodo-ipotetico-b1",
+      "congiuntivo-presente-b1",
+      "comparativi-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "dipendente",
+        "lemma": "dipendente",
+        "glosses": {
+          "es": "empleado por cuenta ajena"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "lavatrice",
+        "lemma": "lavatrice",
+        "glosses": {
+          "es": "lavadora"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "forno",
+        "lemma": "forno",
+        "glosses": {
+          "es": "horno"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vetrina",
+        "lemma": "vetrina",
+        "glosses": {
+          "es": "escaparate"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cessata",
+        "lemma": "cessare",
+        "glosses": {
+          "es": "cesada; «cessata attività» es cierre del negocio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "buttarla",
+        "lemma": "buttare",
+        "glosses": {
+          "es": "tirarla a la basura"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cover",
+        "lemma": "cover",
+        "glosses": {
+          "es": "fundas de móvil"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "conti",
+        "lemma": "conto",
+        "glosses": {
+          "es": "cuentas, cálculos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Italia aprobó ayudas fiscales a la reparación de electrodomésticos, pero el margen real depende del precio del aparato nuevo. Por debajo de los doscientos euros, reparar casi nunca sale a cuenta para el cliente."
+    },
+    "spanishSpeakerNote": {
+      "es": "Fíjate en la mixta: «se avesse aperto nel 2004, quel negozio esisterebbe ancora» —condición imposible en el pasado, consecuencia en el presente. El español la construye igual: «si hubiera abierto…, existiría todavía»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto italiano largo que desarrolla una idea y cambia de dirección, distinguir el hecho de la opinión por la forma del verbo, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere",
+      "avverbi-frequenza-modo-a2",
+      "ci-vuole-vogliono-a2",
+      "comparativi-a2",
+      "condizionale-presente-a2",
+      "congiunzioni-logiche-a2",
+      "da-presente-a2",
+      "forma-cortesia-a2",
+      "futuro-probabilita-a2",
+      "futuro-semplice-a2",
+      "imperfetto-a2",
+      "passato-prossimo-avere-a2",
+      "passato-prossimo-essere-a2",
+      "periodo-ipotetico-reale-a2",
+      "piacere-verbi-simili-a2",
+      "pronomi-diretti-a2",
+      "pronomi-indiretti-a2",
+      "pronomi-relativi-a2",
+      "stare-per-a2",
+      "trapassato-prossimo-a2",
+      "verbi-riflessivi-a2",
+      "condizionale-passato-b1",
+      "congiuntivo-passato-b1",
+      "congiuntivo-presente-b1",
+      "futuro-anteriore-b1",
+      "periodo-ipotetico-b1",
+      "trapassato-prossimo-b1"
+    ],
+    "disallowedGrammar": [
+      "passato remoto",
+      "trapassato remoto",
+      "infinito sostantivato letterario",
+      "costruzioni participiali estese"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 14.4,
+      "maxSentenceWords": 37,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Congiuntivo presente y passato, condizionale passato, futuro anteriore, trapassato prossimo y las tres condicionales. El congiuntivo imperfetto aparece solo dentro del periodo ipotetico dell'impossibilità, que es el propio tema del nivel. Sin passato remoto."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué sostiene el artículo?",
+      "options": [
+        {
+          "id": "cuentas",
+          "text": "Que Yusuf se equivocó en los números y en nada más, y que su cierre dice algo del resto de nosotros"
+        },
+        {
+          "id": "malo",
+          "text": "Que su tienda estaba mal montada y por eso cerró"
+        },
+        {
+          "id": "ayudas",
+          "text": "Que hacen falta más ayudas públicas a la reparación"
+        }
+      ],
+      "answer": "cuentas",
+      "evidence": "risponderei che ha sbagliato i conti, e che non ha sbagliato niente altro … Non credo che chiuda, e questo non è un buon segno per nessuno di noi.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la frase sobre la tienda de fundas es la que amplía el asunto a todos."
+        },
+        "incorrect": {
+          "es": "El texto dice que la tienda era mejor que la anterior en todo, y no pide ayudas. Lee la última frase."
+        },
+        "strategy": {
+          "es": "Cuando un artículo termina con una hipótesis («si alguien me preguntara»), esa respuesta es su tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto cuesta reparar un horno según el texto?",
+      "options": [
+        {
+          "id": "70120",
+          "text": "Entre setenta y ciento veinte euros, más el desplazamiento"
+        },
+        {
+          "id": "190",
+          "text": "Ciento noventa euros"
+        },
+        {
+          "id": "60",
+          "text": "Sesenta euros"
+        }
+      ],
+      "answer": "70120",
+      "evidence": "Un forno nuovo costa centonovanta euro. La riparazione di un forno costa tra settanta e centoventi, più l'uscita del tecnico.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y los ciento noventa son el precio del horno nuevo."
+        },
+        "incorrect": {
+          "es": "Los 190 son el aparato nuevo y el 60 es un porcentaje, no euros."
+        },
+        "strategy": {
+          "es": "Distingue los precios de los porcentajes antes de elegir."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El cartel no decía «cessata attività». ¿Qué significa esa expresión?",
+      "options": [
+        {
+          "id": "cierre",
+          "text": "Cierre del negocio"
+        },
+        {
+          "id": "vacaciones",
+          "text": "Cerrado por vacaciones"
+        },
+        {
+          "id": "traslado",
+          "text": "Traslado a otra dirección"
+        }
+      ],
+      "answer": "cierre",
+      "evidence": "L'ultimo giorno ha attaccato sulla vetrina un foglio A4 scritto a mano. Non diceva «cessata attività».",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: es la fórmula habitual del último día, y él eligió no usarla."
+        },
+        "incorrect": {
+          "es": "No hay traslado ni vacaciones: es el último día del negocio. Fíjate en el contexto de la frase."
+        },
+        "strategy": {
+          "es": "Si el texto dice qué fórmula NO usó alguien, esa fórmula es la esperable en esa situación."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué abrió sabiendo que el oficio tenía diez años por delante?",
+      "options": [
+        {
+          "id": "edad",
+          "text": "Porque a los cuarenta y dos, si no lo hacía entonces, no lo iba a hacer nunca"
+        },
+        {
+          "id": "dinero",
+          "text": "Porque esperaba ganar mucho dinero en poco tiempo"
+        },
+        {
+          "id": "ayuda",
+          "text": "Porque contaba con una subvención pública"
+        }
+      ],
+      "answer": "edad",
+      "evidence": "perché avevo quarantadue anni, e se non lo avessi fatto allora non lo avrei fatto mai",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo completa con la comparación entre los once años y los catorce meses."
+        },
+        "incorrect": {
+          "es": "No habla de ganar dinero rápido ni de subvenciones. Lee su respuesta a la pregunta directa."
+        },
+        "strategy": {
+          "es": "Cuando el texto formula una pregunta directa, la respuesta viene inmediatamente después."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: antes de abrir su tienda, Yusuf no había trabajado nunca en reparación.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "ha fatto lo stesso lavoro per undici anni come dipendente, in un'azienda più grande e molto meno interessante",
+      "feedback": {
+        "correct": {
+          "es": "Falso: llevaba once años en el mismo oficio, pero por cuenta ajena."
+        },
+        "incorrect": {
+          "es": "La respuesta está en el segundo párrafo, donde se presenta a Yusuf."
+        },
+        "strategy": {
+          "es": "Cuando un texto presenta a alguien, ahí están sus datos profesionales."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el artículo.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Las fechas de apertura y cierre: catorce meses"
+        },
+        {
+          "id": "p2",
+          "text": "Por qué su tienda era mejor que la anterior"
+        },
+        {
+          "id": "p3",
+          "text": "La cuenta de reparar frente a comprar"
+        },
+        {
+          "id": "p4",
+          "text": "El cartel del último día y la tienda de fundas"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "ha aperto nel marzo del 2024 e ha chiuso nel maggio del 2025 … Il suo negozio era migliore di quello che c'era prima … Un forno nuovo costa centonovanta euro … L'ultimo giorno ha attaccato sulla vetrina un foglio A4.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: dato, valoración, explicación económica y cierre."
+        },
+        "incorrect": {
+          "es": "Fíjate en dónde aparecen los precios y dónde el cartel del escaparate."
+        },
+        "strategy": {
+          "es": "Un artículo de opinión suele dejar la imagen final para el último tramo."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 12–15 frases en italiano sobre un negocio de tu barrio que cerró o aguantó. Usa dos condicionales imposibles, una posible y cinco comparativos."
+    },
+    "minWords": 80,
+    "maxWords": 140,
+    "hints": [
+      "Se avesse aperto nel 2004, esisterebbe ancora.",
+      "Era migliore di quello di prima.",
+      "Credo che questo mestiere abbia…",
+      "Se qualcuno mi chiedesse…, risponderei che…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de italiano y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano B1: la tienda que abrió demasiado tarde | WeLearn"
+    },
+    "description": {
+      "es": "Lee un artículo de opinión en italiano B1 y practica el periodo ipotetico y los comparativos. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/italiano/b1/lectura/il-negozio-che-ha-aperto-troppo-tardi",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-b1-nessuno-ha-applaudito",
+      "it-b1-la-nonna-lo-aveva-detto"
+    ]
+  }
+}

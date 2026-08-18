@@ -1,0 +1,475 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-b1-mi-dica-lei-cosa-devo-fare",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Italiano B1"
+  },
+  "slug": "mi-dica-lei-cosa-devo-fare",
+  "series": {
+    "id": "italiano-b1-lectura-10",
+    "episode": 9,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-b1-la-nonna-lo-aveva-detto",
+    "nextExerciseId": "it-b1-la-casa-di-vent-anni"
+  },
+  "classification": {
+    "genre": "escena de consulta",
+    "topic": "un médico que devuelve la pregunta",
+    "intent": "learning",
+    "tags": [
+      "italiano b1",
+      "lectura",
+      "congiuntivo presente",
+      "forma de cortesía"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Dígame usted qué debo hacer"
+    },
+    "intro": {
+      "es": "Un cronómetro sobre la mesa que el médico usa consigo mismo, dos opciones para una rodilla y una pregunta que se niega a contestar. Lectura de italiano B1."
+    },
+    "mission": {
+      "es": "Averigua qué dos preguntas dice el médico que la gente confunde."
+    },
+    "targetText": "Il dottor Ferrante è ortopedico e ha una cosa che nessun altro medico che ho conosciuto ha: un cronometro sul tavolo. Non lo usa per me. Lo usa per sé.\n\nSono andato da lui per il ginocchio sinistro. Ho quarantanove anni, gioco a calcetto il giovedì e da otto mesi non riesco a scendere le scale senza pensarci prima.\n\nHa guardato la risonanza per quattro minuti senza parlare. Poi ha detto: Lei ha due strade. La prima è l'operazione: tre mesi, e le probabilità che vada bene sono alte ma non sono il cento per cento. La seconda è la fisioterapia: sei mesi, tre volte alla settimana, e forse alla fine il ginocchio starà come adesso.\n\nGli ho fatto la domanda che gli fanno tutti: mi dica Lei cosa devo fare.\n\nHa risposto: no.\n\nNon lo ha detto in modo antipatico. Ha spiegato: se le dico io cosa fare, Lei farà quello che dico, e poi, se non funziona, penserà che sia colpa mia. E avrà ragione a pensarlo, perché io non gioco a calcetto il giovedì e non so quanto le importa.\n\nGli ho detto che mi sembra strano che un medico non decida. Ha risposto una cosa che non mi aspettavo: credo che la gente confonda due domande diverse. La prima è che cosa sia più sicuro, e a quella rispondo io, perché è medicina. La seconda è che cosa valga la pena, e a quella non posso rispondere io, perché non è una domanda medica.\n\nPoi mi ha chiesto lui: quanto le importa giocare il giovedì?\n\nNon lo sapevo. Non ci avevo mai pensato in quei termini. Ci ho messo undici giorni a rispondere, e in quegli undici giorni ho capito che la risposta non era il calcetto: era scendere le scale con mia figlia senza fermarmi a metà.\n\nSono tornato e ho scelto l'operazione. Lui ha annuito e ha detto: bene, adesso la decisione è Sua e io lavoro per Lei, non al posto Suo.\n\nIl cronometro, mi ha spiegato all'uscita, serve per costringersi a stare in silenzio quattro minuti guardando le immagini. Dice che prima parlava troppo presto e che sbagliava più spesso.\n\nNon credo che tutti i medici debbano fare così. Ma credo che questo sia stato il primo che mi ha trattato come un adulto.",
+    "wordCount": 382,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Usar el congiuntivo presente en interrogativas indirectas: che cosa sia, che cosa valga."
+      },
+      {
+        "es": "Tratar de usted con Lei y sus posesivos: la decisione è Sua, lavoro per Lei."
+      },
+      {
+        "es": "Distinguir una pregunta técnica de una pregunta de valores."
+      }
+    ],
+    "grammarFocus": [
+      "congiuntivo-presente-b1",
+      "congiuntivo-passato-b1",
+      "forma-cortesia-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "calcetto",
+        "lemma": "calcetto",
+        "glosses": {
+          "es": "fútbol sala entre amigos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "risonanza",
+        "lemma": "risonanza",
+        "glosses": {
+          "es": "resonancia magnética"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "scendere",
+        "lemma": "scendere",
+        "glosses": {
+          "es": "bajar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "annuito",
+        "lemma": "annuire",
+        "glosses": {
+          "es": "asentido con la cabeza"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "costringersi",
+        "lemma": "costringersi",
+        "glosses": {
+          "es": "obligarse a algo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pena",
+        "lemma": "pena",
+        "glosses": {
+          "es": "pena; «valere la pena» es merecer la pena"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "strade",
+        "lemma": "strada",
+        "glosses": {
+          "es": "calles; aquí, caminos u opciones"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "importa",
+        "lemma": "importare",
+        "glosses": {
+          "es": "importa, tiene valor para alguien"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El consentimiento informado italiano obliga al médico a explicar alternativas y riesgos, pero no a elegir por el paciente. Muchos pacientes siguen esperando que decida el médico, y ahí empieza el malentendido."
+    },
+    "spanishSpeakerNote": {
+      "es": "Con «Lei» todo va en tercera persona, incluidos los posesivos con mayúscula: «la decisione è Sua», «al posto Suo». Y fíjate en las interrogativas indirectas: «che cosa sia più sicuro» lleva congiuntivo donde el español pone indicativo."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto italiano largo que desarrolla una idea y cambia de dirección, distinguir el hecho de la opinión por la forma del verbo, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere",
+      "avverbi-frequenza-modo-a2",
+      "ci-vuole-vogliono-a2",
+      "comparativi-a2",
+      "condizionale-presente-a2",
+      "congiunzioni-logiche-a2",
+      "da-presente-a2",
+      "forma-cortesia-a2",
+      "futuro-probabilita-a2",
+      "futuro-semplice-a2",
+      "imperfetto-a2",
+      "passato-prossimo-avere-a2",
+      "passato-prossimo-essere-a2",
+      "periodo-ipotetico-reale-a2",
+      "piacere-verbi-simili-a2",
+      "pronomi-diretti-a2",
+      "pronomi-indiretti-a2",
+      "pronomi-relativi-a2",
+      "stare-per-a2",
+      "trapassato-prossimo-a2",
+      "verbi-riflessivi-a2",
+      "condizionale-passato-b1",
+      "congiuntivo-passato-b1",
+      "congiuntivo-presente-b1",
+      "futuro-anteriore-b1",
+      "periodo-ipotetico-b1",
+      "trapassato-prossimo-b1"
+    ],
+    "disallowedGrammar": [
+      "passato remoto",
+      "trapassato remoto",
+      "infinito sostantivato letterario",
+      "costruzioni participiali estese"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 13.6,
+      "maxSentenceWords": 32,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Congiuntivo presente y passato, condizionale passato, futuro anteriore, trapassato prossimo y las tres condicionales. El congiuntivo imperfetto aparece solo dentro del periodo ipotetico dell'impossibilità, que es el propio tema del nivel. Sin passato remoto."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es el asunto de la escena?",
+      "options": [
+        {
+          "id": "dos",
+          "text": "Que el médico separa lo que es más seguro, que le toca a él, de lo que merece la pena, que le toca al paciente"
+        },
+        {
+          "id": "operacion",
+          "text": "Que la operación de rodilla es la mejor opción en todos los casos"
+        },
+        {
+          "id": "cronometro",
+          "text": "Que los médicos deberían usar cronómetro en la consulta"
+        }
+      ],
+      "answer": "dos",
+      "evidence": "credo che la gente confonda due domande diverse. La prima è che cosa sia più sicuro … La seconda è che cosa valga la pena.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el propio médico dice de la segunda que no es una pregunta médica."
+        },
+        "incorrect": {
+          "es": "El texto dice expresamente que no cree que todos los médicos deban hacer así, y no recomienda una opción universal."
+        },
+        "strategy": {
+          "es": "Cuando un personaje distingue dos preguntas y reparte quién contesta cada una, ahí está la tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto tardó el paciente en contestar a la pregunta del médico?",
+      "options": [
+        {
+          "id": "once",
+          "text": "Once días"
+        },
+        {
+          "id": "cuatro",
+          "text": "Cuatro minutos"
+        },
+        {
+          "id": "ocho",
+          "text": "Ocho meses"
+        }
+      ],
+      "answer": "once",
+      "evidence": "Ci ho messo undici giorni a rispondere, e in quegli undici giorni ho capito che la risposta non era il calcetto.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y en esos días cambió lo que él creía que estaba en juego."
+        },
+        "incorrect": {
+          "es": "Los cuatro minutos son el silencio del médico y los ocho meses, el dolor previo."
+        },
+        "strategy": {
+          "es": "Empareja cada duración con lo que mide: silencio, dolor, reflexión."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El médico dice «Lei ha due strade». ¿Qué significa aquí «strade»?",
+      "options": [
+        {
+          "id": "opciones",
+          "text": "Dos opciones, dos caminos posibles"
+        },
+        {
+          "id": "calles",
+          "text": "Dos calles de la ciudad"
+        },
+        {
+          "id": "recetas",
+          "text": "Dos recetas médicas"
+        }
+      ],
+      "answer": "opciones",
+      "evidence": "Lei ha due strade. La prima è l'operazione … La seconda è la fisioterapia.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y las dos frases siguientes las enumeran."
+        },
+        "incorrect": {
+          "es": "Lo que sigue son dos tratamientos, no dos direcciones ni dos prescripciones."
+        },
+        "strategy": {
+          "es": "Si tras la palabra vienen «la prima» y «la seconda», está introduciendo alternativas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Para qué usa el médico el cronómetro?",
+      "options": [
+        {
+          "id": "silencio",
+          "text": "Para obligarse a callar cuatro minutos mirando las imágenes antes de hablar"
+        },
+        {
+          "id": "paciente",
+          "text": "Para limitar el tiempo de cada paciente"
+        },
+        {
+          "id": "operacion",
+          "text": "Para medir la duración de sus operaciones"
+        }
+      ],
+      "answer": "silencio",
+      "evidence": "serve per costringersi a stare in silenzio quattro minuti guardando le immagini. Dice che prima parlava troppo presto e che sbagliava più spesso.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo anticipa en la primera frase: no lo usa para el paciente, lo usa para sí."
+        },
+        "incorrect": {
+          "es": "La primera frase del texto descarta que sea para el paciente. Busca la explicación de la salida."
+        },
+        "strategy": {
+          "es": "Si el texto adelanta un detalle al principio y lo explica al final, une las dos frases."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el médico le recomendó finalmente la fisioterapia antes de operar.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Gli ho fatto la domanda che gli fanno tutti: mi dica Lei cosa devo fare. Ha risposto: no … Sono tornato e ho scelto l'operazione.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: se negó a recomendar nada, y la operación la eligió el paciente."
+        },
+        "incorrect": {
+          "es": "Busca la respuesta del médico a la pregunta directa. Son dos letras."
+        },
+        "strategy": {
+          "es": "Una respuesta de una sola palabra en medio de un texto largo es siempre importante."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la escena.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Cuatro minutos de silencio mirando la resonancia"
+        },
+        {
+          "id": "p2",
+          "text": "Expone las dos opciones y se niega a elegir"
+        },
+        {
+          "id": "p3",
+          "text": "Le devuelve la pregunta: cuánto le importa el jueves"
+        },
+        {
+          "id": "p4",
+          "text": "Once días después vuelve y elige operarse"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Ha guardato la risonanza per quattro minuti senza parlare … Lei ha due strade … Poi mi ha chiesto lui: quanto le importa giocare il giovedì? … Sono tornato e ho scelto l'operazione.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: silencio, opciones, contrapregunta y decisión."
+        },
+        "incorrect": {
+          "es": "Fíjate en cuándo el médico pregunta él y cuándo el paciente vuelve."
+        },
+        "strategy": {
+          "es": "En una escena de consulta, sigue el turno de palabra: quién habla y en qué orden."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 12–15 frases en italiano sobre una decisión que alguien te dejó tomar a ti. Trata de usted a la otra persona y usa cinco veces el congiuntivo."
+    },
+    "minWords": 80,
+    "maxWords": 140,
+    "hints": [
+      "Mi dica Lei cosa devo fare.",
+      "Credo che la gente confonda due domande.",
+      "Non è una domanda medica.",
+      "Adesso la decisione è Sua."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de italiano y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano B1: dígame usted qué debo hacer | WeLearn"
+    },
+    "description": {
+      "es": "Lee una escena de consulta en italiano B1 y practica el congiuntivo presente y la forma de cortesía con Lei. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/italiano/b1/lectura/mi-dica-lei-cosa-devo-fare",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-b1-la-nonna-lo-aveva-detto",
+      "it-b1-la-casa-di-vent-anni"
+    ]
+  }
+}

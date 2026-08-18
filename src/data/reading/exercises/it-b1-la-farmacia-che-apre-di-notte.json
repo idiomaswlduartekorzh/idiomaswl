@@ -1,0 +1,475 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-b1-la-farmacia-che-apre-di-notte",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Italiano B1"
+  },
+  "slug": "la-farmacia-che-apre-di-notte",
+  "series": {
+    "id": "italiano-b1-lectura-10",
+    "episode": 4,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-b1-quando-avrai-letto-questa-lettera",
+    "nextExerciseId": "it-b1-avrei-dovuto-chiamare"
+  },
+  "classification": {
+    "genre": "diario de guardia",
+    "topic": "quién entra en una farmacia a las tres de la madrugada",
+    "intent": "learning",
+    "tags": [
+      "italiano b1",
+      "lectura",
+      "congiuntivo presente",
+      "periodo ipotetico"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La farmacia que abre de noche"
+    },
+    "intro": {
+      "es": "Cuatro peticiones se repiten toda la noche. Y a las tres y veinte entra alguien que no necesita nada. Lectura de italiano B1."
+    },
+    "mission": {
+      "es": "Averigua por qué no dijo nada inteligente cuando aquel hombre le habló de su mujer."
+    },
+    "targetText": "Faccio il turno di notte in farmacia due volte al mese, dalle venti alle otto del mattino. La farmacia è in una strada che di giorno è piena di uffici e di notte è completamente vuota.\n\nChi crede che di notte non venga nessuno si sbaglia. Vengono tra le venti e le due, poi c'è un buco di tre ore, poi ricominciano verso le cinque.\n\nLe richieste sono sempre le stesse quattro: antidolorifici, termometri, test di gravidanza e gocce per le orecchie dei bambini. Se dovessi indovinare a occhi chiusi, indovinerei nove volte su dieci.\n\nMa non è per questo che scrivo.\n\nVerso le tre e venti, quasi ogni notte, arriva qualcuno che non ha bisogno di niente. Entra, guarda gli scaffali, chiede una cosa che potrebbe comprare domani mattina a due strade da qui. Paga, mette il resto nel portafoglio molto lentamente, e poi dice una frase su qualcosa che non c'entra niente: il tempo, il traffico, una partita.\n\nAll'inizio pensavo che fossero persone che non dormono. Adesso credo che sia un'altra cosa. Credo che a quell'ora una farmacia sia l'unico posto illuminato dove qualcuno ti risponde e non ti chiede perché sei lì.\n\nC'è un uomo che è venuto quattordici volte in un anno, sempre tra le tre e le quattro, sempre per lo sciroppo per la tosse. Quattordici sciroppi in dodici mesi. Non credo che abbia tossito una volta sola in vita sua.\n\nUna notte gli ho chiesto se stava bene. Ha risposto che sì. Poi è rimasto in silenzio quaranta secondi, che dietro un banco di farmacia sono lunghissimi. Poi ha detto: mia moglie è morta a marzo e in casa non c'è nessuno che parli.\n\nSe in quel momento io avessi risposto qualcosa di intelligente, probabilmente l'avrei perso. Non ho detto niente di intelligente. Ho preso lo sciroppo, l'ho messo nel sacchetto e ho chiesto: quello di sempre?\n\nÈ tornato il mese dopo.\n\nIl collega che fa i turni con me dice che sono romantica e che quelle persone comprano soltanto sciroppo. Può darsi. Ma lui alle tre e mezza di notte è in magazzino, e io sono al banco.\n\nQuesto non è assistenza sanitaria e non è amicizia. È un banco, una luce accesa e una persona sveglia. Se tutte le farmacie di notte chiudessero, si risparmierebbe molto denaro pubblico e nessuno saprebbe mai che cosa si è perso, perché queste cose non entrano in nessuna statistica e non le chiede nessun questionario.",
+    "wordCount": 409,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Usar el congiuntivo presente tras chi crede che, credo che, non credo che."
+      },
+      {
+        "es": "Combinar las tres condicionales: real, posible e imposible."
+      },
+      {
+        "es": "Reconocer una función social que el propio texto se niega a exagerar."
+      }
+    ],
+    "grammarFocus": [
+      "congiuntivo-presente-b1",
+      "periodo-ipotetico-b1",
+      "pronomi-relativi-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "scaffali",
+        "lemma": "scaffale",
+        "glosses": {
+          "es": "estanterías"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "resto",
+        "lemma": "resto",
+        "glosses": {
+          "es": "cambio, vuelta de un pago"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "portafoglio",
+        "lemma": "portafoglio",
+        "glosses": {
+          "es": "cartera, billetera"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sciroppo",
+        "lemma": "sciroppo",
+        "glosses": {
+          "es": "jarabe"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tosse",
+        "lemma": "tosse",
+        "glosses": {
+          "es": "tos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sacchetto",
+        "lemma": "sacchetto",
+        "glosses": {
+          "es": "bolsa pequeña"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gocce",
+        "lemma": "goccia",
+        "glosses": {
+          "es": "gotas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "risparmierebbe",
+        "lemma": "risparmiare",
+        "glosses": {
+          "es": "se ahorraría"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Las farmacias italianas de guardia nocturna se organizan por turnos obligatorios entre los establecimientos de una zona, y su rentabilidad es baja. Cada cierre se discute como un ahorro de gasto público."
+    },
+    "spanishSpeakerNote": {
+      "es": "Aquí tienes las tres condicionales seguidas: real («se la riparazione costa…, la gente compra»), posible («se dovessi indovinare, indovinerei») e imposible («se avessi risposto, l'avrei perso»). El español las hace igual; lo que cambia es la forma del verbo italiano."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto italiano largo que desarrolla una idea y cambia de dirección, distinguir el hecho de la opinión por la forma del verbo, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere",
+      "avverbi-frequenza-modo-a2",
+      "ci-vuole-vogliono-a2",
+      "comparativi-a2",
+      "condizionale-presente-a2",
+      "congiunzioni-logiche-a2",
+      "da-presente-a2",
+      "forma-cortesia-a2",
+      "futuro-probabilita-a2",
+      "futuro-semplice-a2",
+      "imperfetto-a2",
+      "passato-prossimo-avere-a2",
+      "passato-prossimo-essere-a2",
+      "periodo-ipotetico-reale-a2",
+      "piacere-verbi-simili-a2",
+      "pronomi-diretti-a2",
+      "pronomi-indiretti-a2",
+      "pronomi-relativi-a2",
+      "stare-per-a2",
+      "trapassato-prossimo-a2",
+      "verbi-riflessivi-a2",
+      "condizionale-passato-b1",
+      "congiuntivo-passato-b1",
+      "congiuntivo-presente-b1",
+      "futuro-anteriore-b1",
+      "periodo-ipotetico-b1",
+      "trapassato-prossimo-b1"
+    ],
+    "disallowedGrammar": [
+      "passato remoto",
+      "trapassato remoto",
+      "infinito sostantivato letterario",
+      "costruzioni participiali estese"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 13.6,
+      "maxSentenceWords": 35,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Congiuntivo presente y passato, condizionale passato, futuro anteriore, trapassato prossimo y las tres condicionales. El congiuntivo imperfetto aparece solo dentro del periodo ipotetico dell'impossibilità, que es el propio tema del nivel. Sin passato remoto."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué defiende el texto?",
+      "options": [
+        {
+          "id": "presencia",
+          "text": "Que una farmacia abierta de noche cumple una función que no aparece en ninguna estadística"
+        },
+        {
+          "id": "medicinas",
+          "text": "Que de noche hace falta vender más medicamentos"
+        },
+        {
+          "id": "sueldo",
+          "text": "Que los turnos de noche deberían pagarse mejor"
+        }
+      ],
+      "answer": "presencia",
+      "evidence": "È un banco, una luce accesa e una persona sveglia … queste cose non entrano in nessuna statistica e non le chiede nessun questionario.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto se cuida de no exagerar: dice antes que no es sanidad ni amistad."
+        },
+        "incorrect": {
+          "es": "No se pide más venta ni se habla de sueldos. Lee el último párrafo."
+        },
+        "strategy": {
+          "es": "Cuando un texto dice qué NO es algo antes de decir qué es, la definición está después."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántas veces vino aquel hombre en un año?",
+      "options": [
+        {
+          "id": "catorce",
+          "text": "Catorce"
+        },
+        {
+          "id": "cuatro",
+          "text": "Cuatro"
+        },
+        {
+          "id": "cuarenta",
+          "text": "Cuarenta"
+        }
+      ],
+      "answer": "catorce",
+      "evidence": "C'è un uomo che è venuto quattordici volte in un anno … Quattordici sciroppi in dodici mesi.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el texto repite la cifra con los jarabes."
+        },
+        "incorrect": {
+          "es": "Las cuatro son las peticiones que se repiten y los cuarenta, los segundos de silencio."
+        },
+        "strategy": {
+          "es": "Empareja cada cifra con lo que cuenta: visitas, productos, segundos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El hombre venía siempre por «lo sciroppo per la tosse». ¿Qué es?",
+      "options": [
+        {
+          "id": "jarabe",
+          "text": "Jarabe para la tos"
+        },
+        {
+          "id": "pastillas",
+          "text": "Pastillas para dormir"
+        },
+        {
+          "id": "gotas",
+          "text": "Gotas para los oídos"
+        }
+      ],
+      "answer": "jarabe",
+      "evidence": "sempre per lo sciroppo per la tosse … Non credo che abbia tossito una volta sola in vita sua.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y la frase siguiente sugiere que nunca lo necesitó."
+        },
+        "incorrect": {
+          "es": "Las gotas para los oídos son otra de las cuatro peticiones habituales. Fíjate en la palabra «tosse»."
+        },
+        "strategy": {
+          "es": "Si el producto y el síntoma van en la misma expresión, uno te define el otro."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice que si hubiera contestado algo inteligente lo habría perdido?",
+      "options": [
+        {
+          "id": "normal",
+          "text": "Porque el hombre necesitaba que la escena siguiera siendo normal, no convertirse en un caso"
+        },
+        {
+          "id": "sordo",
+          "text": "Porque el hombre no la habría oído bien"
+        },
+        {
+          "id": "prisa",
+          "text": "Porque no había tiempo de conversar a esa hora"
+        }
+      ],
+      "answer": "normal",
+      "evidence": "Non ho detto niente di intelligente. Ho preso lo sciroppo, l'ho messo nel sacchetto e ho chiesto: quello di sempre? È tornato il mese dopo.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la prueba es la frase de después: volvió al mes siguiente."
+        },
+        "incorrect": {
+          "es": "No hay problema de oído ni de prisa: hubo cuarenta segundos de silencio. Fíjate en lo que sí hizo."
+        },
+        "strategy": {
+          "es": "Si el texto pone una consecuencia («volvió») justo después, esa consecuencia es la prueba."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: entre las dos y las cinco de la madrugada casi no entra nadie en la farmacia.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Vengono tra le venti e le due, poi c'è un buco di tre ore, poi ricominciano verso le cinque.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero: el texto lo llama «un buco di tre ore»."
+        },
+        "incorrect": {
+          "es": "Busca la frase con los tres tramos horarios, en el segundo párrafo."
+        },
+        "strategy": {
+          "es": "Cuando un texto divide la noche en tramos, cuenta las horas de cada uno."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el diario.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "El horario del turno y los tramos de la noche"
+        },
+        {
+          "id": "p2",
+          "text": "Las cuatro peticiones que se repiten siempre"
+        },
+        {
+          "id": "p3",
+          "text": "Quien entra a las tres y veinte sin necesitar nada"
+        },
+        {
+          "id": "p4",
+          "text": "El hombre de los catorce jarabes y su frase"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Faccio il turno di notte … Le richieste sono sempre le stesse quattro … Verso le tre e venti, quasi ogni notte, arriva qualcuno … C'è un uomo che è venuto quattordici volte.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: contexto, rutina, patrón y caso."
+        },
+        "incorrect": {
+          "es": "Fíjate en el orden: primero el horario, después las peticiones, después las tres y veinte."
+        },
+        "strategy": {
+          "es": "Un diario profesional va de lo general al caso concreto."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 12–15 frases en italiano sobre un sitio abierto a horas raras y quién va allí. Usa cuatro veces el congiuntivo presente y las tres condicionales."
+    },
+    "minWords": 80,
+    "maxWords": 140,
+    "hints": [
+      "Chi crede che non venga nessuno si sbaglia.",
+      "Credo che sia l'unico posto…",
+      "Se dovessi indovinare, indovinerei…",
+      "Se avessi risposto…, l'avrei perso."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de italiano y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano B1: la farmacia que abre de noche | WeLearn"
+    },
+    "description": {
+      "es": "Lee un diario de guardia en italiano B1 y practica el congiuntivo presente y el periodo ipotetico. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/italiano/b1/lectura/la-farmacia-che-apre-di-notte",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-b1-quando-avrai-letto-questa-lettera",
+      "it-b1-avrei-dovuto-chiamare"
+    ]
+  }
+}

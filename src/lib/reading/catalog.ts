@@ -189,6 +189,18 @@ import itA2MiSveglioAlleQuattroEVenti from '@/data/reading/exercises/it-a2-mi-sv
 import itA2AMiaMadreNonPiaceIlMare from '@/data/reading/exercises/it-a2-a-mia-madre-non-piace-il-mare.json'
 import itA2SePioveNonSiGioca from '@/data/reading/exercises/it-a2-se-piove-non-si-gioca.json'
 import itA2EroArrivatoDueOrePrima from '@/data/reading/exercises/it-a2-ero-arrivato-due-ore-prima.json'
+
+// Italiano B1 — generadas desde `src/data/reading/source/it-b1.mjs`. Nivel completo.
+import itB1IlPreventivoCheNonHoFatto from '@/data/reading/exercises/it-b1-il-preventivo-che-non-ho-fatto.json'
+import itB1SeiControSei from '@/data/reading/exercises/it-b1-sei-contro-sei.json'
+import itB1QuandoAvraiLettoQuestaLettera from '@/data/reading/exercises/it-b1-quando-avrai-letto-questa-lettera.json'
+import itB1LaFarmaciaCheApreDiNotte from '@/data/reading/exercises/it-b1-la-farmacia-che-apre-di-notte.json'
+import itB1AvreiDovutoChiamare from '@/data/reading/exercises/it-b1-avrei-dovuto-chiamare.json'
+import itB1NessunoHaApplaudito from '@/data/reading/exercises/it-b1-nessuno-ha-applaudito.json'
+import itB1IlNegozioCheHaApertoTroppoTardi from '@/data/reading/exercises/it-b1-il-negozio-che-ha-aperto-troppo-tardi.json'
+import itB1LaNonnaLoAvevaDetto from '@/data/reading/exercises/it-b1-la-nonna-lo-aveva-detto.json'
+import itB1MiDicaLeiCosaDevoFare from '@/data/reading/exercises/it-b1-mi-dica-lei-cosa-devo-fare.json'
+import itB1LaCasaDiVentAnni from '@/data/reading/exercises/it-b1-la-casa-di-vent-anni.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -364,6 +376,16 @@ const RAW_EXERCISES: unknown[] = [
   itA2AMiaMadreNonPiaceIlMare,
   itA2SePioveNonSiGioca,
   itA2EroArrivatoDueOrePrima,
+  itB1IlPreventivoCheNonHoFatto,
+  itB1SeiControSei,
+  itB1QuandoAvraiLettoQuestaLettera,
+  itB1LaFarmaciaCheApreDiNotte,
+  itB1AvreiDovutoChiamare,
+  itB1NessunoHaApplaudito,
+  itB1IlNegozioCheHaApertoTroppoTardi,
+  itB1LaNonnaLoAvevaDetto,
+  itB1MiDicaLeiCosaDevoFare,
+  itB1LaCasaDiVentAnni,
 ]
 
 export const READING_EXERCISES: ReadingExercise[] = RAW_EXERCISES.map((candidate) => {
