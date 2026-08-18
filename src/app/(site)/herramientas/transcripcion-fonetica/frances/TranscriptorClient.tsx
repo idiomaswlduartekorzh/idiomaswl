@@ -13,6 +13,8 @@ const CONFIG: TranscriptorConfig = {
   systems: FRENCH_SYSTEMS,
   speechLang: 'fr-FR',
   showSpoken: true,
+  spokenLabel: '→',
+  spokenIntro: 'Lo que va entre corchetes no se pronuncia:',
   breadcrumb: 'Francés',
   title: 'Transcripción fonética del francés',
   lead:

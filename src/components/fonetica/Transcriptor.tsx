@@ -34,6 +34,13 @@ export interface TranscriptorConfig {
   readonly weakForms?: boolean
   /** Enseñar cómo se escribiría la pronunciación real: `학교` → `학꾜`. */
   readonly showSpoken?: boolean
+  /**
+   * El conector entre la palabra y su forma real. Va entre CADA par, así que tiene que
+   * ser corto: «se dice» en coreano, «→» en francés.
+   */
+  readonly spokenLabel?: string
+  /** Frase que explica la fila, una sola vez encima. */
+  readonly spokenIntro?: string
   /** Enseñar la leyenda de símbolos del AFI coreano. */
   readonly showKoreanSymbols?: boolean
   readonly breadcrumb: string
@@ -403,15 +410,19 @@ export default function Transcriptor({
 
             {/* Coreano: la capa de en medio, que es donde se ve la regla. */}
             {config.showSpoken && words.some((w) => w.spoken && w.spoken !== w.text) && (
+              <>
+              {config.spokenIntro && <p className={styles.spokenIntro}>{config.spokenIntro}</p>}
               <p className={styles.spokenRow}>
-                {words.filter((w) => w.spoken).map((w, i) => (
+                {/* Solo las que cambian: repetir la palabra idéntica a sí misma era ruido. */}
+                {words.filter((w) => w.spoken && w.spoken !== w.text).map((w, i) => (
                   <span key={i} className={styles.spokenPair}>
                     <b>{w.text}</b>
-                    <span>se dice</span>
+                    <span>{config.spokenLabel ?? 'se dice'}</span>
                     <b>{w.spoken}</b>
                   </span>
                 ))}
               </p>
+              </>
             )}
 
             <div className={styles.output} ref={outputRef}>

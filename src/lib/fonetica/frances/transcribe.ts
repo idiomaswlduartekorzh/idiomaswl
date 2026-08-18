@@ -116,11 +116,26 @@ export function transcribeFrenchText(text: string): Token[] {
   return applyLiaison(tokens, text)
 }
 
-/** `beaucoup` → `beauc̶o̶u̶p̶`… no: se devuelve la palabra con las mudas en minúscula fina. */
+/**
+ * Devuelve la palabra con las letras mudas entre corchetes: `beaucou[p]`, `[h]omm[e]`.
+ *
+ * Se probó con puntos —`beaucou·`— y no se entendía: `homme` salía `·omm·` y parecía un
+ * error de codificación. Los corchetes se leen solos, y agrupan las mudas seguidas, que
+ * es como el estudiante las percibe: `parl[ent]`, no `parl[e][n][t]`.
+ */
 function renderSilence(word: string, silent: number[]): string {
   if (silent.length === 0) return word
   const set = new Set(silent)
-  return [...word].map((ch, i) => (set.has(i) ? '·' : ch)).join('')
+  let out = ''
+  let inside = false
+  for (let i = 0; i < word.length; i++) {
+    const isSilent = set.has(i)
+    if (isSilent && !inside) { out += '['; inside = true }
+    if (!isSilent && inside) { out += ']'; inside = false }
+    out += word[i]
+  }
+  if (inside) out += ']'
+  return out
 }
 
 /**

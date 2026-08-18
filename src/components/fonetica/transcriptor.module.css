@@ -516,3 +516,11 @@
   font-size: 0.78rem !important;
   color: var(--wl-text-soft) !important;
 }
+
+/* Explicación de la fila de pronunciación real. Va una vez encima, no en cada palabra:
+   repetirla por par convertía la fila en un muro ilegible. */
+.spokenIntro {
+  margin: 0 0 0.4rem;
+  font-size: 0.85rem;
+  color: var(--wl-text-soft);
+}
