@@ -1,0 +1,478 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-b1-ela-nao-esta-professora-ela-e",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Portugués B1"
+  },
+  "slug": "ela-nao-esta-professora-ela-e",
+  "series": {
+    "id": "portugues-b1-lectura-10",
+    "episode": 10,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-b1-a-preposicao-que-mudou-o-contrato",
+    "nextExerciseId": null
+  },
+  "classification": {
+    "genre": "perfil",
+    "topic": "cambiar de oficio a los cincuenta",
+    "intent": "learning",
+    "tags": [
+      "portugues b1",
+      "lectura",
+      "ser vs estar",
+      "condicional"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "No está de profesora: lo es"
+    },
+    "intro": {
+      "es": "Dejó la abogacía a los cincuenta y dos para dar clases, y corrige a quien dice que «está» de profesora. Lectura de portugués B1."
+    },
+    "mission": {
+      "es": "Averigua por qué esa corrección le importa tanto."
+    },
+    "targetText": "Cristina Vilar foi advogada durante vinte e sete anos. Hoje é professora de português para adultos numa escola pública de periferia, e ganha menos de um terço do que ganhava. Quando alguém diz que ela está professora, ela corrige na hora. Não estou professora. Sou professora. A correção parece uma implicância e não é. Ela explica assim: quem está numa profissão pode sair amanhã sem que nada se perca, e foi exatamente assim que ela viveu os últimos oito anos na advocacia. Estava advogada. Ia ao escritório, cumpria prazos, era competente e não era ninguém ali dentro. Eu perguntei se ela se arrependeria caso a escola fechasse ou caso ela perdesse o concurso. Ela respondeu que não voltaria para o direito nem que a escola fechasse no mês que vem. Disse que procuraria outra escola, e se não achasse, daria aula em qualquer lugar, até de graça, porque a essa altura não seria mais uma questão de emprego. A frase pode soar romântica. Convém olhar os números antes de decidir isso. Ela vendeu o apartamento em que morava e mudou-se para um menor, no bairro onde dá aula. Fez as contas de quanto precisaria por mês para viver sem o salário antigo e chegou a um valor que ela chama de suficiente. Não é uma pessoa que ignorou a matemática: é uma pessoa que fez a matemática primeiro e decidiu depois. Perguntei também o que ela responderia a quem dissesse que jogou fora vinte e sete anos de carreira. Ela riu e disse que ninguém joga fora nada: que a advocacia lhe ensinou a ler um texto com atenção, a organizar um argumento e a aguentar prazo, e que essas três coisas ela usa todos os dias na sala de aula, só que com adolescentes em vez de juízes. Acrescentou que os adolescentes são mais difíceis, porque um juiz é obrigado a ouvir. Perguntei se ela recomendaria isso a alguém. Ela disse que não recomendaria a ninguém, e que essa é a única resposta honesta. Explicou que a maior parte das pessoas que mudam de vida aos cinquenta não estão fugindo de um emprego ruim, e sim de uma sensação, e que trocar de emprego não resolve sensação nenhuma. No caso dela, disse, não era sensação. Era um cálculo que ela tinha adiado durante quase uma década. Quando finalmente fez a conta, o resultado foi tão claro que a decisão levou três dias.",
+    "wordCount": 403,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Distinguir ser de estar aplicado a profesiones e identidad."
+      },
+      {
+        "es": "Usar el condicional para hipótesis y para respuestas matizadas: voltaria, procuraria, recomendaria."
+      },
+      {
+        "es": "Separar el relato emocional del cálculo que lo sostiene."
+      }
+    ],
+    "grammarFocus": [
+      "ser-vs-estar-b1",
+      "condicional-b1",
+      "ser-vs-estar-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "advogada",
+        "lemma": "advogada",
+        "glosses": {
+          "es": "abogada"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "periferia",
+        "lemma": "periferia",
+        "glosses": {
+          "es": "extrarradio, barrios periféricos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "implicância",
+        "lemma": "implicância",
+        "glosses": {
+          "es": "manía, ganas de incordiar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "prazos",
+        "lemma": "prazo",
+        "glosses": {
+          "es": "plazos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "concurso",
+        "lemma": "concurso",
+        "glosses": {
+          "es": "oposición para plaza pública"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "de graça",
+        "lemma": "de graça",
+        "glosses": {
+          "es": "gratis"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "adiado",
+        "lemma": "adiar",
+        "glosses": {
+          "es": "aplazado, postergado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fugindo",
+        "lemma": "fugir",
+        "glosses": {
+          "es": "huyendo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Las escuelas públicas de periferia brasileñas tienen dificultad para cubrir plazas, y la entrada por concurso de profesionales de otros sectores es una vía real aunque poco frecuente."
+    },
+    "spanishSpeakerNote": {
+      "es": "La distinción ser/estar con profesiones existe igual en español: «está de profesora» sugiere provisionalidad; «es profesora» habla de identidad. Lo que el texto añade es que ella la usa como argumento, no como matiz gramatical."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo en portugués que desarrolla una idea y cambia de dirección, distinguir el hecho de la interpretación, y justificar una inferencia cruzando dos pasajes."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares",
+      "comparativos-superlativos-a2",
+      "condicional-a2",
+      "conjuncoes-logicas-a2",
+      "diminutivos-aumentativos-a2",
+      "expressoes-com-fazer-a2",
+      "expressoes-tempo-a2",
+      "futuro-do-presente-a2",
+      "gerundio-a2",
+      "ha-faz-tempo-a2",
+      "para-vs-por-a2",
+      "preterito-imperfeito-a2",
+      "preterito-perfeito-irregular-a2",
+      "pronomes-obliquos-a2",
+      "pronomes-relativos-a2",
+      "ser-vs-estar-a2",
+      "subjuntivo-presente-a2",
+      "verbo-ficar-a2",
+      "verbos-modais-a2",
+      "verbos-reflexivos-a2",
+      "voz-passiva-a2",
+      "comparativos-superlativos-b1",
+      "condicional-b1",
+      "conectivos-b1",
+      "conjuntivo-imperfeito-b1",
+      "discurso-indireto-b1",
+      "futuro-conjuntivo-b1",
+      "futuro-presente-b1",
+      "gerundio-b1",
+      "imperativo-b1",
+      "participio-passado-b1",
+      "periodo-hipotico-b1",
+      "preposicoes-b1",
+      "preterito-perfeito-vs-imperfeito-b1",
+      "pronomes-obliquos-b1",
+      "regencia-verbal-b1",
+      "ser-vs-estar-b1",
+      "subjuntivo-presente-b1",
+      "tempos-compostos-b1",
+      "verbos-reflexos-b1",
+      "voz-passiva-b1"
+    ],
+    "disallowedGrammar": [
+      "registro literario",
+      "mesóclise",
+      "português europeu"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 15.5,
+      "maxSentenceWords": 50,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Prosa B1 con tiempos compuestos, futuro do subjuntivo y período hipotético. Sin mesóclise ni norma europea. Inferencia moderada."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué distingue a este perfil de una historia de cambio de vida corriente?",
+      "options": [
+        {
+          "id": "calculo",
+          "text": "Que ella hizo primero las cuentas y decidió después, y no recomienda hacerlo"
+        },
+        {
+          "id": "romantica",
+          "text": "Que presenta el cambio como un impulso romántico"
+        },
+        {
+          "id": "fracaso",
+          "text": "Que dejó la abogacía porque le iba mal"
+        }
+      ],
+      "answer": "calculo",
+      "evidence": "é uma pessoa que fez a matemática primeiro e decidiu depois … Ela disse que não recomendaria a ninguém.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto avisa expresamente contra la lectura romántica antes de dar los números."
+        },
+        "incorrect": {
+          "es": "Era competente y cumplía plazos, así que no le iba mal. Y el texto rechaza la lectura romántica."
+        },
+        "strategy": {
+          "es": "Si un texto advierte «conviene mirar los números antes de decidir eso», lo que sigue es su argumento."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto tiempo ejerció como abogada?",
+      "options": [
+        {
+          "id": "27",
+          "text": "Veintisiete años"
+        },
+        {
+          "id": "8",
+          "text": "Ocho años"
+        },
+        {
+          "id": "52",
+          "text": "Cincuenta y dos años"
+        }
+      ],
+      "answer": "27",
+      "evidence": "Cristina Vilar foi advogada durante vinte e sete anos.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Los ocho son los últimos años, en los que dice que «estaba» abogada."
+        },
+        "incorrect": {
+          "es": "Los ocho años son un tramo dentro de los veintisiete. Busca la primera frase."
+        },
+        "strategy": {
+          "es": "Distingue el total de la carrera del tramo final. El texto usa los dos datos con sentidos distintos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que la corrección «parece uma implicância e não é». ¿Qué es una «implicância»?",
+      "options": [
+        {
+          "id": "mania",
+          "text": "Una manía de corregir por corregir"
+        },
+        {
+          "id": "implicacion",
+          "text": "Una implicación legal"
+        },
+        {
+          "id": "queja",
+          "text": "Una queja formal"
+        }
+      ],
+      "answer": "mania",
+      "evidence": "A correção parece uma implicância e não é. Ela explica assim…",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. El texto lo desmiente enseguida y da la razón de fondo."
+        },
+        "incorrect": {
+          "es": "Es un falso amigo: no tiene que ver con implicaciones legales. Fíjate en que se refiere a corregir a alguien."
+        },
+        "strategy": {
+          "es": "Si un texto dice «parece X y no lo es», lo que sigue explica qué es en realidad. Úsalo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice que en los últimos ocho años «estaba abogada»?",
+      "options": [
+        {
+          "id": "ausente",
+          "text": "Porque cumplía sin que aquello formara parte de quién era"
+        },
+        {
+          "id": "temporal",
+          "text": "Porque tenía un contrato temporal"
+        },
+        {
+          "id": "baja",
+          "text": "Porque estaba de baja médica"
+        }
+      ],
+      "answer": "ausente",
+      "evidence": "Estava advogada. Ia ao escritório, cumpria prazos, era competente e não era ninguém ali dentro.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el remate lo dice: era competente y no era nadie allí dentro."
+        },
+        "incorrect": {
+          "es": "No hay contrato temporal ni baja: iba al despacho y cumplía. Lee la enumeración completa."
+        },
+        "strategy": {
+          "es": "Cuando un texto enumera lo que alguien hacía y termina con una negación, esa negación es el punto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: vendió su piso y se mudó a otro más pequeño en el barrio donde da clase.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Ela vendeu o apartamento em que morava e mudou-se para um menor, no bairro onde dá aula.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y ese dato es parte del cálculo que el texto quiere que veamos."
+        },
+        "incorrect": {
+          "es": "Busca la frase que empieza con «Ela vendeu». Es literal."
+        },
+        "strategy": {
+          "es": "En un perfil, los datos materiales sostienen la interpretación. No los leas por encima."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué dice que no se lo recomendaría a nadie?",
+      "options": [
+        {
+          "id": "sensacion",
+          "text": "Porque distingue su caso de quien huye de una sensación, no de un problema real"
+        },
+        {
+          "id": "modestia",
+          "text": "Por modestia, para no dar consejos"
+        },
+        {
+          "id": "riesgo",
+          "text": "Porque cree que es demasiado arriesgado en general"
+        }
+      ],
+      "answer": "sensacion",
+      "evidence": "a maior parte das pessoas que mudam de vida aos cinquenta não estão fugindo de um emprego ruim, e sim de uma sensação, e que trocar de emprego não resolve sensação nenhuma",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y añade que en su caso no era una sensación sino un cálculo aplazado."
+        },
+        "incorrect": {
+          "es": "No es modestia ni una advertencia general sobre el riesgo. Lee su explicación completa."
+        },
+        "strategy": {
+          "es": "Cuando alguien se niega a recomendar algo que hizo, la razón suele ser una distinción entre su caso y el resto."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en portugués sobre alguien que cambió de oficio. Usa la oposición ser/estar tres veces y cuatro verbos en condicional."
+    },
+    "minWords": 70,
+    "maxWords": 140,
+    "hints": [
+      "… foi… durante… anos.",
+      "Não estou… Sou…",
+      "Ela respondeu que não voltaria…",
+      "Fez as contas de quanto precisaria…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de portugués brasileño y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués B1: No está de profesora, lo es | WeLearn"
+    },
+    "description": {
+      "es": "Lee un perfil en portugués de Brasil B1 y practica la diferencia entre ser y estar y el uso del condicional. Con vocabulario y seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/b1/lectura/ela-nao-esta-professora-ela-e",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-b1-a-preposicao-que-mudou-o-contrato"
+    ]
+  }
+}

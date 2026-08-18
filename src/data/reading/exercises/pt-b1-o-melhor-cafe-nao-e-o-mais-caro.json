@@ -1,0 +1,479 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-b1-o-melhor-cafe-nao-e-o-mais-caro",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Portugués B1"
+  },
+  "slug": "o-melhor-cafe-nao-e-o-mais-caro",
+  "series": {
+    "id": "portugues-b1-lectura-10",
+    "episode": 6,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-b1-quando-a-agua-chegar",
+    "nextExerciseId": "pt-b1-como-dar-uma-noticia-ruim"
+  },
+  "classification": {
+    "genre": "comparativa razonada",
+    "topic": "cómo se valora un producto",
+    "intent": "learning",
+    "tags": [
+      "portugues b1",
+      "lectura",
+      "comparativos y superlativos",
+      "conectivos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El mejor café no es el más caro"
+    },
+    "intro": {
+      "es": "Una cata a ciegas con nueve cafés donde el más caro quedó séptimo, y por qué eso no significa lo que parece. Lectura de portugués B1."
+    },
+    "mission": {
+      "es": "Averigua qué explica el resultado, según el texto."
+    },
+    "targetText": "Uma associação de consumidores organizou uma prova cega com nove cafés vendidos em supermercado. Participaram cinquenta e dois provadores, nenhum deles profissional. O café mais caro da amostra, que custa quarenta e nove reais o pacote, ficou em sétimo lugar. O vencedor custa dezoito. À primeira vista, o resultado parece provar que preço e qualidade não têm relação. Contudo, ler assim é ir rápido demais. O que a prova mediu foi preferência, e preferência não é o mesmo que qualidade técnica. Os cafés mais caros da amostra eram torras claras, com acidez alta e notas de fruta. Esse perfil é considerado superior por quem avalia café profissionalmente, porém é justamente o que agrada menos a quem está acostumado com o café brasileiro tradicional, de torra escura. Ou seja: o resultado não diz que o café caro seja pior. Diz que ele é mais diferente do hábito de quem provou. A diferença é sutil e muda tudo. Ainda assim, há uma conclusão prática que se sustenta. Entre os quatro primeiros colocados, três custam menos de vinte e dois reais. Portanto, quem quer um café que agrade à maioria das pessoas em casa não precisa gastar mais do que isso. Pagar quarenta e nove reais faz sentido para quem já desenvolveu o gosto pela torra clara, e não faz sentido nenhum para quem não desenvolveu. Convém abrir um parêntese sobre o método. Cinquenta e dois provadores é uma amostra pequena, e a associação reconhece isso na primeira página. Ninguém deveria trocar de marca por causa desta prova. O que a prova serve para mostrar não é qual café é melhor, e sim que a relação entre preço e agrado é muito mais fraca do que a publicidade sugere. O relatório da associação acrescenta um dado que quase ninguém comenta. A variação dentro de uma mesma marca, entre lotes diferentes, foi maior do que a variação entre marcas na faixa dos vinte reais. Isso significa que comprar sempre a mesma marca barata não garante o mesmo café. Já a marca de quarenta e nove reais apresentou a menor variação entre lotes de toda a amostra. Talvez seja isso o que se paga. Não um sabor melhor, mas um sabor igual todas as vezes. E essa, para muita gente, é a única qualidade que importa de verdade.",
+    "wordCount": 383,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Construir comparativos y superlativos, incluidos los irregulares: melhor, pior, maior, menor."
+      },
+      {
+        "es": "Encadenar argumentos con conectivos: contudo, porém, ou seja, portanto, ainda assim."
+      },
+      {
+        "es": "Distinguir preferencia de calidad técnica."
+      }
+    ],
+    "grammarFocus": [
+      "comparativos-superlativos-b1",
+      "conectivos-b1",
+      "comparativos-superlativos-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "prova cega",
+        "lemma": "prova cega",
+        "glosses": {
+          "es": "cata a ciegas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "provadores",
+        "lemma": "provador",
+        "glosses": {
+          "es": "catadores"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "amostra",
+        "lemma": "amostra",
+        "glosses": {
+          "es": "muestra"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "torras",
+        "lemma": "torra",
+        "glosses": {
+          "es": "tuestes"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vencedor",
+        "lemma": "vencedor",
+        "glosses": {
+          "es": "ganador"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sutil",
+        "lemma": "sutil",
+        "glosses": {
+          "es": "sutil, poco perceptible"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "lotes",
+        "lemma": "lote",
+        "glosses": {
+          "es": "lotes de producción"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "faixa",
+        "lemma": "faixa",
+        "glosses": {
+          "es": "franja, rango de precios"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El café brasileño de supermercado es tradicionalmente de tueste oscuro, y el paladar mayoritario está formado en ese perfil. Los cafés de tueste claro llegaron al retail hace poco."
+    },
+    "spanishSpeakerNote": {
+      "es": "Fíjate en la cadena de conectivos: «contudo» y «porém» son «sin embargo»; «ou seja» es «es decir»; «portanto» es «por lo tanto». Manejarlos es lo que separa un texto de A2 de uno de B1."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo en portugués que desarrolla una idea y cambia de dirección, distinguir el hecho de la interpretación, y justificar una inferencia cruzando dos pasajes."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares",
+      "comparativos-superlativos-a2",
+      "condicional-a2",
+      "conjuncoes-logicas-a2",
+      "diminutivos-aumentativos-a2",
+      "expressoes-com-fazer-a2",
+      "expressoes-tempo-a2",
+      "futuro-do-presente-a2",
+      "gerundio-a2",
+      "ha-faz-tempo-a2",
+      "para-vs-por-a2",
+      "preterito-imperfeito-a2",
+      "preterito-perfeito-irregular-a2",
+      "pronomes-obliquos-a2",
+      "pronomes-relativos-a2",
+      "ser-vs-estar-a2",
+      "subjuntivo-presente-a2",
+      "verbo-ficar-a2",
+      "verbos-modais-a2",
+      "verbos-reflexivos-a2",
+      "voz-passiva-a2",
+      "comparativos-superlativos-b1",
+      "condicional-b1",
+      "conectivos-b1",
+      "conjuntivo-imperfeito-b1",
+      "discurso-indireto-b1",
+      "futuro-conjuntivo-b1",
+      "futuro-presente-b1",
+      "gerundio-b1",
+      "imperativo-b1",
+      "participio-passado-b1",
+      "periodo-hipotico-b1",
+      "preposicoes-b1",
+      "preterito-perfeito-vs-imperfeito-b1",
+      "pronomes-obliquos-b1",
+      "regencia-verbal-b1",
+      "ser-vs-estar-b1",
+      "subjuntivo-presente-b1",
+      "tempos-compostos-b1",
+      "verbos-reflexos-b1",
+      "voz-passiva-b1"
+    ],
+    "disallowedGrammar": [
+      "registro literario",
+      "mesóclise",
+      "português europeu"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 14.2,
+      "maxSentenceWords": 31,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Prosa B1 con tiempos compuestos, futuro do subjuntivo y período hipotético. Sin mesóclise ni norma europea. Inferencia moderada."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué concluye el texto?",
+      "options": [
+        {
+          "id": "constancia",
+          "text": "Que el café caro no sabe mejor, pero sabe igual siempre, y eso es lo que se paga"
+        },
+        {
+          "id": "estafa",
+          "text": "Que el café caro es una estafa"
+        },
+        {
+          "id": "profesional",
+          "text": "Que solo los catadores profesionales saben elegir café"
+        }
+      ],
+      "answer": "constancia",
+      "evidence": "Não um sabor melhor, mas um sabor igual todas as vezes.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y llega ahí por el dato de la variación entre lotes, no por el precio."
+        },
+        "incorrect": {
+          "es": "El texto rechaza expresamente la lectura fácil de que el caro sea peor. Lee las dos últimas frases."
+        },
+        "strategy": {
+          "es": "Cuando un texto avisa de que una lectura «va demasiado rápido», su conclusión está más adelante."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿En qué puesto quedó el café más caro?",
+      "options": [
+        {
+          "id": "septimo",
+          "text": "Séptimo"
+        },
+        {
+          "id": "primero",
+          "text": "Primero"
+        },
+        {
+          "id": "cuarto",
+          "text": "Cuarto"
+        }
+      ],
+      "answer": "septimo",
+      "evidence": "O café mais caro da amostra, que custa quarenta e nove reais o pacote, ficou em sétimo lugar.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El ganador cuesta dieciocho reales."
+        },
+        "incorrect": {
+          "es": "El cuarto puesto aparece al hablar de los cuatro primeros. Busca el que va con «mais caro»."
+        },
+        "strategy": {
+          "es": "En una comparativa con posiciones, empareja cada puesto con su producto antes de responder."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto habla de «torras claras» frente a «torra escura». ¿Qué es la «torra»?",
+      "options": [
+        {
+          "id": "tueste",
+          "text": "El tueste del grano"
+        },
+        {
+          "id": "taza",
+          "text": "El tamaño de la taza"
+        },
+        {
+          "id": "marca",
+          "text": "La marca del café"
+        }
+      ],
+      "answer": "tueste",
+      "evidence": "Os cafés mais caros da amostra eram torras claras, com acidez alta e notas de fruta.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Va acompañado de acidez y notas de fruta, que son características del grano tostado."
+        },
+        "incorrect": {
+          "es": "El tamaño y la marca no se describen con acidez ni notas de fruta. Fíjate en lo que acompaña a la palabra."
+        },
+        "strategy": {
+          "es": "Un término técnico se define por los atributos que lo acompañan. Aquí, acidez y aroma."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el café caro gustó menos a los catadores?",
+      "options": [
+        {
+          "id": "costumbre",
+          "text": "Porque su perfil se aleja del café al que están acostumbrados"
+        },
+        {
+          "id": "viejo",
+          "text": "Porque el paquete estaba caducado"
+        },
+        {
+          "id": "fuerte",
+          "text": "Porque era demasiado fuerte"
+        }
+      ],
+      "answer": "costumbre",
+      "evidence": "é justamente o que agrada menos a quem está acostumado com o café brasileiro tradicional, de torra escura",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo remata: no es peor, es más distinto de la costumbre."
+        },
+        "incorrect": {
+          "es": "No se menciona caducidad, y el tueste claro es más suave, no más fuerte. Busca «acostumado»."
+        },
+        "strategy": {
+          "es": "Cuando un resultado sorprende, el texto suele explicarlo por el perfil de quien juzga, no del producto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: tres de los cuatro primeros cafés cuestan menos de veintidós reales.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Entre os quatro primeiros colocados, três custam menos de vinte e dois reais.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y de ahí sale el consejo práctico del texto."
+        },
+        "incorrect": {
+          "es": "Busca la frase que empieza con «Entre os quatro primeiros». Da la cifra exacta."
+        },
+        "strategy": {
+          "es": "Cuando un texto ofrece un consejo práctico, el dato que lo sostiene está justo antes."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué introduce el dato de la variación entre lotes?",
+      "options": [
+        {
+          "id": "giro",
+          "text": "Para dar la vuelta a la conclusión fácil y explicar qué se paga de verdad"
+        },
+        {
+          "id": "relleno",
+          "text": "Como un dato curioso sin relación con el resto"
+        },
+        {
+          "id": "marca",
+          "text": "Para recomendar una marca concreta"
+        }
+      ],
+      "answer": "giro",
+      "evidence": "A variação dentro de uma mesma marca, entre lotes diferentes, foi maior do que a variação entre marcas na faixa dos vinte reais.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Ese dato es el que permite la conclusión final sobre la constancia del sabor."
+        },
+        "incorrect": {
+          "es": "No recomienda ninguna marca por nombre, y el dato sostiene toda la conclusión. Lee lo que viene después."
+        },
+        "strategy": {
+          "es": "Un dato presentado como «lo que casi nadie comenta» suele ser el que cambia la conclusión."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en portugués comparando tres productos que hayas probado. Usa tres comparativos, dos superlativos irregulares y cuatro conectivos distintos."
+    },
+    "minWords": 70,
+    "maxWords": 140,
+    "hints": [
+      "O mais caro ficou em… lugar.",
+      "Contudo, ler assim é ir rápido demais.",
+      "Ou seja:…",
+      "Portanto, quem quer… não precisa…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de portugués brasileño y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués B1: El mejor café no es el más caro | WeLearn"
+    },
+    "description": {
+      "es": "Lee una comparativa razonada en portugués de Brasil B1 y practica los comparativos, superlativos y conectivos. Con vocabulario y seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/b1/lectura/o-melhor-cafe-nao-e-o-mais-caro",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-b1-quando-a-agua-chegar",
+      "pt-b1-como-dar-uma-noticia-ruim"
+    ]
+  }
+}

@@ -1,0 +1,479 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-b1-como-dar-uma-noticia-ruim",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Portugués B1"
+  },
+  "slug": "como-dar-uma-noticia-ruim",
+  "series": {
+    "id": "portugues-b1-lectura-10",
+    "episode": 7,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-b1-o-melhor-cafe-nao-e-o-mais-caro",
+    "nextExerciseId": "pt-b1-a-rotina-que-eu-nao-escolhi"
+  },
+  "classification": {
+    "genre": "guía razonada",
+    "topic": "comunicar algo difícil",
+    "intent": "learning",
+    "tags": [
+      "portugues b1",
+      "lectura",
+      "subjuntivo",
+      "imperativo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Cómo dar una mala noticia"
+    },
+    "intro": {
+      "es": "Cinco reglas de un médico con treinta años de oficio para dar una noticia difícil, y la que él considera más importante. Lectura de portugués B1."
+    },
+    "mission": {
+      "es": "Averigua qué recomienda hacer con el silencio."
+    },
+    "targetText": "Estas cinco regras não são minhas. Elas vêm de um protocolo usado em hospitais desde os anos noventa, e eu só acrescentei o que trinta anos de consultório me ensinaram. Primeira: prepare o ambiente antes de abrir a boca. Sente-se. Desligue o celular. Não dê a notícia de pé, no corredor, com a mão na maçaneta. Isso parece óbvio e é o erro mais comum que eu vejo. Segunda: descubra o que a pessoa já sabe antes de contar qualquer coisa. Pergunte. Talvez ela já tenha entendido tudo e esteja esperando que alguém confirme. Talvez não saiba nada. São situações completamente diferentes e exigem conversas diferentes. Terceira: avise que vem uma notícia difícil. Uma frase basta. Diga que os exames trouxeram um resultado que precisa ser conversado com calma. Isso dá à pessoa dois ou três segundos para se preparar, e esses segundos importam mais do que parece. Quarta: use palavras simples e não use eufemismo. Se for câncer, diga câncer. Espera-se que o médico suavize, e é justamente a suavização que faz a pessoa sair do consultório sem entender o que tem. Já vi pacientes acharem que estavam curados porque ninguém disse a palavra. Quinta, e essa é a que quase ninguém segue: depois de dar a notícia, cale-se. Não explique o tratamento. Não fale de estatística. Não tente consolar. Fique em silêncio e espere que a pessoa fale primeiro. O silêncio vai parecer longo demais para você e não vai parecer longo para ela. É provável que ela chore, ou que faça uma pergunta prática e estranha, do tipo se pode viajar em dezembro. Deixe. Essa pergunta estranha é o começo do processamento, e interrompê-la com informação técnica só atrasa tudo. Vale acrescentar uma coisa sobre a terceira regra, o aviso. Alguns colegas acham que avisar aumenta a angústia, porque estica o momento ruim. A pesquisa aponta o contrário, e a minha experiência também. Uma notícia grave dita sem aviso costuma não ser ouvida: a pessoa registra as três primeiras palavras e depois desliga, e duas semanas depois volta ao consultório perguntando coisas que já foram explicadas. Não é desatenção nem negação. É o que o corpo faz diante de um susto. O aviso não reduz a dor, mas mantém a pessoa presente na conversa, e uma conversa em que só um dos dois está presente não serve para nada. Eu levei dez anos para aprender a quinta regra. Antes disso eu falava sem parar, porque o silêncio me incomodava. Demorei a entender que aquele silêncio não era meu.",
+    "wordCount": 421,
+    "estimatedMinutes": 17,
+    "objectives": [
+      {
+        "es": "Usar el imperativo, afirmativo y negativo: sente-se, não dê, cale-se, deixe."
+      },
+      {
+        "es": "Reconocer el subjuntivo tras expresiones impersonales: espera-se que, é provável que, talvez."
+      },
+      {
+        "es": "Separar la regla de la justificación en un texto de instrucciones."
+      }
+    ],
+    "grammarFocus": [
+      "subjuntivo-presente-b1",
+      "imperativo-b1",
+      "subjuntivo-presente-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "consultório",
+        "lemma": "consultório",
+        "glosses": {
+          "es": "consulta médica"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "maçaneta",
+        "lemma": "maçaneta",
+        "glosses": {
+          "es": "picaporte, manilla de la puerta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "exames",
+        "lemma": "exame",
+        "glosses": {
+          "es": "pruebas médicas, analíticas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "corredor",
+        "lemma": "corredor",
+        "glosses": {
+          "es": "pasillo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "suavize",
+        "lemma": "suavizar",
+        "glosses": {
+          "es": "suavice, endulce"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "chore",
+        "lemma": "chorar",
+        "glosses": {
+          "es": "llore"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "processamento",
+        "lemma": "processamento",
+        "glosses": {
+          "es": "asimilación, procesamiento de la noticia"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "incomodava",
+        "lemma": "incomodar",
+        "glosses": {
+          "es": "me molestaba, me resultaba incómodo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El protocolo al que alude el texto se enseña en las facultades de medicina desde los años noventa y estructura la comunicación de diagnósticos graves en seis pasos."
+    },
+    "spanishSpeakerNote": {
+      "es": "Fíjate en el imperativo con pronombre: «sente-se» y «cale-se» llevan el pronombre detrás con guion, algo que en español haríamos igual («siéntese»). Pero en negativo el portugués lo pone delante: «não se sente»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo en portugués que desarrolla una idea y cambia de dirección, distinguir el hecho de la interpretación, y justificar una inferencia cruzando dos pasajes."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares",
+      "comparativos-superlativos-a2",
+      "condicional-a2",
+      "conjuncoes-logicas-a2",
+      "diminutivos-aumentativos-a2",
+      "expressoes-com-fazer-a2",
+      "expressoes-tempo-a2",
+      "futuro-do-presente-a2",
+      "gerundio-a2",
+      "ha-faz-tempo-a2",
+      "para-vs-por-a2",
+      "preterito-imperfeito-a2",
+      "preterito-perfeito-irregular-a2",
+      "pronomes-obliquos-a2",
+      "pronomes-relativos-a2",
+      "ser-vs-estar-a2",
+      "subjuntivo-presente-a2",
+      "verbo-ficar-a2",
+      "verbos-modais-a2",
+      "verbos-reflexivos-a2",
+      "voz-passiva-a2",
+      "comparativos-superlativos-b1",
+      "condicional-b1",
+      "conectivos-b1",
+      "conjuntivo-imperfeito-b1",
+      "discurso-indireto-b1",
+      "futuro-conjuntivo-b1",
+      "futuro-presente-b1",
+      "gerundio-b1",
+      "imperativo-b1",
+      "participio-passado-b1",
+      "periodo-hipotico-b1",
+      "preposicoes-b1",
+      "preterito-perfeito-vs-imperfeito-b1",
+      "pronomes-obliquos-b1",
+      "regencia-verbal-b1",
+      "ser-vs-estar-b1",
+      "subjuntivo-presente-b1",
+      "tempos-compostos-b1",
+      "verbos-reflexos-b1",
+      "voz-passiva-b1"
+    ],
+    "disallowedGrammar": [
+      "registro literario",
+      "mesóclise",
+      "português europeu"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 10.8,
+      "maxSentenceWords": 33,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Prosa B1 con tiempos compuestos, futuro do subjuntivo y período hipotético. Sin mesóclise ni norma europea. Inferencia moderada."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es la regla que el autor destaca por encima de las demás?",
+      "options": [
+        {
+          "id": "silencio",
+          "text": "Callarse después de dar la noticia y dejar que el otro hable primero"
+        },
+        {
+          "id": "ambiente",
+          "text": "Preparar el ambiente antes de hablar"
+        },
+        {
+          "id": "eufemismo",
+          "text": "Evitar los eufemismos"
+        }
+      ],
+      "answer": "silencio",
+      "evidence": "Quinta, e essa é a que quase ninguém segue: depois de dar a notícia, cale-se.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y él mismo dice que tardó diez años en aprenderla."
+        },
+        "incorrect": {
+          "es": "Las otras dos son reglas suyas también, pero solo una lleva la marca «quase ninguém segue»."
+        },
+        "strategy": {
+          "es": "Si un autor señala una regla como la que casi nadie sigue, esa es la que quiere defender."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué recomienda hacer antes de contar nada?",
+      "options": [
+        {
+          "id": "preguntar",
+          "text": "Averiguar qué sabe ya la persona"
+        },
+        {
+          "id": "tratamiento",
+          "text": "Explicar el tratamiento disponible"
+        },
+        {
+          "id": "familia",
+          "text": "Llamar a un familiar"
+        }
+      ],
+      "answer": "preguntar",
+      "evidence": "Segunda: descubra o que a pessoa já sabe antes de contar qualquer coisa. Pergunte.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y explica por qué: puede que ya lo haya entendido todo o que no sepa nada."
+        },
+        "incorrect": {
+          "es": "El tratamiento es justo lo que pide no explicar de inmediato. Busca la segunda regla."
+        },
+        "strategy": {
+          "es": "En una guía numerada, localiza el número que se pide antes de leer el contenido."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «não dê a notícia de pé, no corredor, com a mão na maçaneta». ¿Qué es la «maçaneta»?",
+      "options": [
+        {
+          "id": "picaporte",
+          "text": "El picaporte de la puerta"
+        },
+        {
+          "id": "carpeta",
+          "text": "La carpeta con el historial"
+        },
+        {
+          "id": "bata",
+          "text": "El bolsillo de la bata"
+        }
+      ],
+      "answer": "picaporte",
+      "evidence": "Não dê a notícia de pé, no corredor, com a mão na maçaneta.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. La imagen es de alguien a punto de salir: de pie, en el pasillo, con la mano en la puerta."
+        },
+        "incorrect": {
+          "es": "Fíjate en la escena completa: de pie, en el pasillo. Es la postura de quien ya se va."
+        },
+        "strategy": {
+          "es": "Cuando una palabra forma parte de una imagen, reconstruye la escena entera. La imagen la define."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué desaconseja los eufemismos?",
+      "options": [
+        {
+          "id": "entender",
+          "text": "Porque el paciente puede salir sin entender lo que tiene"
+        },
+        {
+          "id": "tiempo",
+          "text": "Porque alargan mucho la consulta"
+        },
+        {
+          "id": "ley",
+          "text": "Porque la ley obliga a decir el diagnóstico exacto"
+        }
+      ],
+      "answer": "entender",
+      "evidence": "é justamente a suavização que faz a pessoa sair do consultório sem entender o que tem. Já vi pacientes acharem que estavam curados porque ninguém disse a palavra.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo apoya con un ejemplo suyo: pacientes que creyeron estar curados."
+        },
+        "incorrect": {
+          "es": "No menciona ninguna ley ni el tiempo de consulta. Busca la frase sobre «a suavização»."
+        },
+        "strategy": {
+          "es": "Cuando un consejo va seguido de un ejemplo propio del autor, ese ejemplo es la justificación."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: aconseja explicar el tratamiento inmediatamente después de dar la noticia.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "depois de dar a notícia, cale-se. Não explique o tratamento. Não fale de estatística.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: dice exactamente lo contrario, y con tres imperativos negativos seguidos."
+        },
+        "incorrect": {
+          "es": "Busca la quinta regla. Empieza con «cale-se» y sigue con tres prohibiciones."
+        },
+        "strategy": {
+          "es": "Tres imperativos negativos seguidos marcan una prohibición firme. Si los ves, no hay matiz."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "¿Qué efecto tiene la última frase, «aquele silêncio não era meu»?",
+      "options": [
+        {
+          "id": "reconocer",
+          "text": "Reconoce que llenaba el silencio por incomodidad propia, no por el paciente"
+        },
+        {
+          "id": "queja",
+          "text": "Se queja de que los pacientes no hablan"
+        },
+        {
+          "id": "orgullo",
+          "text": "Presume de haber dominado la técnica desde el principio"
+        }
+      ],
+      "answer": "reconocer",
+      "evidence": "Antes disso eu falava sem parar, porque o silêncio me incomodava. Demorei a entender que aquele silêncio não era meu.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Admite que el problema era suyo, y eso es lo que da autoridad a la regla."
+        },
+        "incorrect": {
+          "es": "Dice que tardó diez años en aprenderlo, así que no presume. Y no culpa al paciente."
+        },
+        "strategy": {
+          "es": "Si un autor confiesa su propio error al final de una guía, el tono es de reconocimiento, no de reproche."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe una guía de 10–12 frases en portugués para una conversación difícil. Usa cinco imperativos, dos de ellos negativos, y tres subjuntivos."
+    },
+    "minWords": 70,
+    "maxWords": 140,
+    "hints": [
+      "Primeira: prepare…",
+      "Não dê…",
+      "Talvez ela já tenha…",
+      "É provável que…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de portugués brasileño y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués B1: Cómo dar una mala noticia | WeLearn"
+    },
+    "description": {
+      "es": "Lee una guía razonada en portugués de Brasil B1 y practica el subjuntivo presente y el imperativo. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/b1/lectura/como-dar-uma-noticia-ruim",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-b1-o-melhor-cafe-nao-e-o-mais-caro",
+      "pt-b1-a-rotina-que-eu-nao-escolhi"
+    ]
+  }
+}

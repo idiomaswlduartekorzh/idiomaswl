@@ -1,0 +1,479 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-b1-o-que-a-testemunha-disse",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Portugués B1"
+  },
+  "slug": "o-que-a-testemunha-disse",
+  "series": {
+    "id": "portugues-b1-lectura-10",
+    "episode": 4,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-b1-se-eu-tivesse-dito-nao",
+    "nextExerciseId": "pt-b1-quando-a-agua-chegar"
+  },
+  "classification": {
+    "genre": "reportaje de investigación",
+    "topic": "cómo se deforma un testimonio",
+    "intent": "learning",
+    "tags": [
+      "portugues b1",
+      "lectura",
+      "discurso indirecto",
+      "pronombres oblicuos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Lo que dijo el testigo"
+    },
+    "intro": {
+      "es": "Un testigo declaró tres veces en cinco años y las tres versiones son distintas, sin que él mintiera ninguna vez. Lectura de portugués B1."
+    },
+    "mission": {
+      "es": "Averigua qué cambió entre las tres declaraciones y quién lo provocó."
+    },
+    "targetText": "Em 2019, um homem de sessenta e dois anos viu um acidente na esquina da avenida Brasil com a rua Piauí. Ele foi a única testemunha e prestou depoimento três vezes: em 2019, em 2021 e em 2024. As três versões estão no processo, e as três são diferentes. Ele não mentiu em nenhuma delas. Isso é o que torna o caso interessante para quem estuda memória. Na primeira vez, poucas horas depois do acidente, ele disse que tinha ouvido uma freada e que, quando olhou, o carro branco já estava sobre a calçada. Não afirmou nada sobre a cor do semáforo. O escrivão perguntou-lhe se o sinal estava aberto e ele respondeu que não sabia. Em 2021, durante a audiência, o advogado do motorista perguntou-lhe se ele se lembrava de ter visto o semáforo vermelho. Note-se a forma da pergunta. Ele respondeu que achava que sim. Em 2024, na última audiência, ele afirmou com segurança que o semáforo estava vermelho e que o outro carro tinha avançado. Ninguém o pressionou nessa última vez. Ele já contava a história assim havia três anos. O relatório psicológico anexado ao processo explica o mecanismo sem acusar ninguém. Uma pergunta que sugere um detalhe pode inserir esse detalhe na memória de quem responde. Depois, cada vez que a pessoa conta o episódio, ela reforça a versão nova. Em poucos anos, a lembrança inventada fica indistinguível da original. O texto do relatório diz uma frase que vale a pena reproduzir: a testemunha não está mentindo, está lembrando de uma coisa que ela mesma construiu. O relatório cita um experimento clássico em que se mostrou a mesma filmagem a dois grupos. A um deles perguntaram a que velocidade os carros se chocaram; ao outro, a que velocidade se espatifaram. O segundo grupo estimou uma velocidade maior e, uma semana depois, muitos deles afirmaram ter visto vidro quebrado na cena. Não havia vidro quebrado nenhum. A juíza aceitou o argumento e considerou apenas o primeiro depoimento. O advogado recorreu, alegando que não existe critério objetivo para decidir qual versão vale. Ele tem razão nesse ponto, e é justamente isso o que torna o problema difícil. Não se trata de descobrir quem mente. Trata-se de admitir que perguntar mal estraga a prova, e que o estrago não deixa marca visível em lugar nenhum.",
+    "wordCount": 386,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Transformar el estilo directo en indirecto: disse que tinha ouvido, perguntou-lhe se."
+      },
+      {
+        "es": "Colocar los pronombres oblicuos: perguntou-lhe, ninguém o pressionou."
+      },
+      {
+        "es": "Distinguir la mentira del error de memoria inducido."
+      }
+    ],
+    "grammarFocus": [
+      "discurso-indireto-b1",
+      "pronomes-obliquos-b1",
+      "pronomes-obliquos-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "testemunha",
+        "lemma": "testemunha",
+        "glosses": {
+          "es": "testigo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "depoimento",
+        "lemma": "depoimento",
+        "glosses": {
+          "es": "declaración ante la justicia"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "freada",
+        "lemma": "freada",
+        "glosses": {
+          "es": "frenazo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "escrivão",
+        "lemma": "escrivão",
+        "glosses": {
+          "es": "secretario judicial"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "audiência",
+        "lemma": "audiência",
+        "glosses": {
+          "es": "vista judicial"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "lembrança",
+        "lemma": "lembrança",
+        "glosses": {
+          "es": "recuerdo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "juíza",
+        "lemma": "juíza",
+        "glosses": {
+          "es": "jueza"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "estraga",
+        "lemma": "estragar",
+        "glosses": {
+          "es": "estropea, echa a perder"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En el proceso brasileño el testigo puede declarar varias veces a lo largo de los años, y todas las versiones quedan en el expediente. Eso permite comparar lo que se dijo en cada momento."
+    },
+    "spanishSpeakerNote": {
+      "es": "La colocación del pronombre cambia el registro: «perguntou-lhe» es la forma escrita y formal; en Brasil se habla diciendo «perguntou para ele». En un texto judicial verás siempre la primera."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo en portugués que desarrolla una idea y cambia de dirección, distinguir el hecho de la interpretación, y justificar una inferencia cruzando dos pasajes."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares",
+      "comparativos-superlativos-a2",
+      "condicional-a2",
+      "conjuncoes-logicas-a2",
+      "diminutivos-aumentativos-a2",
+      "expressoes-com-fazer-a2",
+      "expressoes-tempo-a2",
+      "futuro-do-presente-a2",
+      "gerundio-a2",
+      "ha-faz-tempo-a2",
+      "para-vs-por-a2",
+      "preterito-imperfeito-a2",
+      "preterito-perfeito-irregular-a2",
+      "pronomes-obliquos-a2",
+      "pronomes-relativos-a2",
+      "ser-vs-estar-a2",
+      "subjuntivo-presente-a2",
+      "verbo-ficar-a2",
+      "verbos-modais-a2",
+      "verbos-reflexivos-a2",
+      "voz-passiva-a2",
+      "comparativos-superlativos-b1",
+      "condicional-b1",
+      "conectivos-b1",
+      "conjuntivo-imperfeito-b1",
+      "discurso-indireto-b1",
+      "futuro-conjuntivo-b1",
+      "futuro-presente-b1",
+      "gerundio-b1",
+      "imperativo-b1",
+      "participio-passado-b1",
+      "periodo-hipotico-b1",
+      "preposicoes-b1",
+      "preterito-perfeito-vs-imperfeito-b1",
+      "pronomes-obliquos-b1",
+      "regencia-verbal-b1",
+      "ser-vs-estar-b1",
+      "subjuntivo-presente-b1",
+      "tempos-compostos-b1",
+      "verbos-reflexos-b1",
+      "voz-passiva-b1"
+    ],
+    "disallowedGrammar": [
+      "registro literario",
+      "mesóclise",
+      "português europeu"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 13.8,
+      "maxSentenceWords": 27,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Prosa B1 con tiempos compuestos, futuro do subjuntivo y período hipotético. Sin mesóclise ni norma europea. Inferencia moderada."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es la tesis del reportaje?",
+      "options": [
+        {
+          "id": "preguntar",
+          "text": "Que preguntar mal contamina la prueba y el daño no deja rastro"
+        },
+        {
+          "id": "mentira",
+          "text": "Que el testigo mintió para favorecer al conductor"
+        },
+        {
+          "id": "juicio",
+          "text": "Que la jueza se equivocó al aceptar el primer testimonio"
+        }
+      ],
+      "answer": "preguntar",
+      "evidence": "Trata-se de admitir que perguntar mal estraga a prova, e que o estrago não deixa marca visível em lugar nenhum.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la última frase lo formula entero. Todo lo anterior es la demostración."
+        },
+        "incorrect": {
+          "es": "El texto insiste en que no mintió, y no critica a la jueza. Busca la última frase."
+        },
+        "strategy": {
+          "es": "En un reportaje de investigación, la última frase suele condensar la tesis. Empieza por ahí."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué dijo el testigo sobre el semáforo en su primera declaración?",
+      "options": [
+        {
+          "id": "nosabia",
+          "text": "Que no sabía"
+        },
+        {
+          "id": "rojo",
+          "text": "Que estaba en rojo"
+        },
+        {
+          "id": "verde",
+          "text": "Que estaba en verde"
+        }
+      ],
+      "answer": "nosabia",
+      "evidence": "O escrivão perguntou-lhe se o sinal estava aberto e ele respondeu que não sabia.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La certeza sobre el rojo aparece cinco años después, en 2024."
+        },
+        "incorrect": {
+          "es": "El rojo aparece en las declaraciones posteriores. Busca la de 2019, pocas horas después."
+        },
+        "strategy": {
+          "es": "Cuando un texto compara versiones fechadas, empareja cada afirmación con su año."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «perguntar mal estraga a prova». ¿Qué significa «estragar»?",
+      "options": [
+        {
+          "id": "estropear",
+          "text": "Estropear, echar a perder"
+        },
+        {
+          "id": "alargar",
+          "text": "Alargar el proceso"
+        },
+        {
+          "id": "presentar",
+          "text": "Presentar la prueba en el juicio"
+        }
+      ],
+      "answer": "estropear",
+      "evidence": "perguntar mal estraga a prova, e que o estrago não deixa marca visível",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y la misma frase repite la raíz en el sustantivo «estrago», el daño causado."
+        },
+        "incorrect": {
+          "es": "La frase habla de un daño que no deja marca, así que no es presentar ni alargar nada."
+        },
+        "strategy": {
+          "es": "Si un verbo reaparece como sustantivo en la misma frase, esa repetición confirma el sentido."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el texto pide fijarse en la forma de la pregunta del abogado en 2021?",
+      "options": [
+        {
+          "id": "sugiere",
+          "text": "Porque la pregunta ya contenía el detalle del semáforo rojo"
+        },
+        {
+          "id": "grosera",
+          "text": "Porque el abogado fue grosero con el testigo"
+        },
+        {
+          "id": "repetida",
+          "text": "Porque era la misma pregunta de 2019"
+        }
+      ],
+      "answer": "sugiere",
+      "evidence": "perguntou-lhe se ele se lembrava de ter visto o semáforo vermelho. Note-se a forma da pergunta.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La pregunta introduce el color que el testigo no había mencionado nunca."
+        },
+        "incorrect": {
+          "es": "En 2019 le preguntaron si el semáforo estaba abierto, sin sugerir color. Compara las dos preguntas."
+        },
+        "strategy": {
+          "es": "Cuando un texto te pide fijarte en algo, compáralo con su equivalente anterior. La diferencia es el punto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la jueza decidió tener en cuenta solo la primera declaración.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "A juíza aceitou o argumento e considerou apenas o primeiro depoimento.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y por eso el abogado recurrió alegando que no hay criterio objetivo."
+        },
+        "incorrect": {
+          "es": "Busca qué hizo la jueza con el informe psicológico. La frase es corta y directa."
+        },
+        "strategy": {
+          "es": "La palabra «apenas» limita el alcance de una decisión. Si la ves, algo quedó excluido."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué reconoce el texto que el abogado «tiene razón en ese punto»?",
+      "options": [
+        {
+          "id": "dificultad",
+          "text": "Para mostrar que el problema no tiene solución fácil, y no es de mala fe"
+        },
+        {
+          "id": "apoyo",
+          "text": "Para apoyar el recurso del abogado"
+        },
+        {
+          "id": "critica",
+          "text": "Para criticar a la jueza por decidir sin criterio"
+        }
+      ],
+      "answer": "dificultad",
+      "evidence": "Ele tem razão nesse ponto, e é justamente isso o que torna o problema difícil.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Conceder ese punto es lo que le permite plantear el problema en serio."
+        },
+        "incorrect": {
+          "es": "No se posiciona a favor del recurso ni critica a la jueza. Lee lo que sigue a la concesión."
+        },
+        "strategy": {
+          "es": "Cuando un texto concede algo al contrario, comprueba qué hace con esa concesión después."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en portugués contando algo que alguien te dijo y cómo cambió al repetirse. Usa el discurso indirecto cinco veces y tres pronombres oblicuos."
+    },
+    "minWords": 70,
+    "maxWords": 140,
+    "hints": [
+      "Ele disse que tinha…",
+      "Perguntou-lhe se…",
+      "Ele respondeu que…",
+      "Não se trata de… Trata-se de…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de portugués brasileño y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués B1: Lo que dijo el testigo | WeLearn"
+    },
+    "description": {
+      "es": "Lee un reportaje en portugués de Brasil B1 y practica el discurso indirecto y los pronombres oblicuos. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/b1/lectura/o-que-a-testemunha-disse",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-b1-se-eu-tivesse-dito-nao",
+      "pt-b1-quando-a-agua-chegar"
+    ]
+  }
+}

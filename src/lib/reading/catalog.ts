@@ -124,6 +124,13 @@ import ptA2VoltarParaACidadePequena from '@/data/reading/exercises/pt-a2-voltar-
 import ptB1OCadernoQueNinguemTinhaAberto from '@/data/reading/exercises/pt-b1-o-caderno-que-ninguem-tinha-aberto.json'
 import ptB1OPredioQueFoiTombado from '@/data/reading/exercises/pt-b1-o-predio-que-foi-tombado.json'
 import ptB1SeEuTivesseDitoNao from '@/data/reading/exercises/pt-b1-se-eu-tivesse-dito-nao.json'
+import ptB1APreposicaoQueMudouOContrato from '@/data/reading/exercises/pt-b1-a-preposicao-que-mudou-o-contrato.json'
+import ptB1ARotinaQueEuNaoEscolhi from '@/data/reading/exercises/pt-b1-a-rotina-que-eu-nao-escolhi.json'
+import ptB1ComoDarUmaNoticiaRuim from '@/data/reading/exercises/pt-b1-como-dar-uma-noticia-ruim.json'
+import ptB1ElaNaoEstaProfessoraElaE from '@/data/reading/exercises/pt-b1-ela-nao-esta-professora-ela-e.json'
+import ptB1OMelhorCafeNaoEOMaisCaro from '@/data/reading/exercises/pt-b1-o-melhor-cafe-nao-e-o-mais-caro.json'
+import ptB1OQueATestemunhaDisse from '@/data/reading/exercises/pt-b1-o-que-a-testemunha-disse.json'
+import ptB1QuandoAAguaChegar from '@/data/reading/exercises/pt-b1-quando-a-agua-chegar.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -242,6 +249,13 @@ const RAW_EXERCISES: unknown[] = [
   ptB1OCadernoQueNinguemTinhaAberto,
   ptB1OPredioQueFoiTombado,
   ptB1SeEuTivesseDitoNao,
+  ptB1APreposicaoQueMudouOContrato,
+  ptB1ARotinaQueEuNaoEscolhi,
+  ptB1ComoDarUmaNoticiaRuim,
+  ptB1ElaNaoEstaProfessoraElaE,
+  ptB1OMelhorCafeNaoEOMaisCaro,
+  ptB1OQueATestemunhaDisse,
+  ptB1QuandoAAguaChegar,
 ]
 
 export const READING_EXERCISES: ReadingExercise[] = RAW_EXERCISES.map((candidate) => {

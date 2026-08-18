@@ -15,9 +15,9 @@
   "series": {
     "id": "portugues-b1-lectura-10",
     "episode": 3,
-    "totalEpisodes": 3,
+    "totalEpisodes": 10,
     "previousExerciseId": "pt-b1-o-predio-que-foi-tombado",
-    "nextExerciseId": null
+    "nextExerciseId": "pt-b1-o-que-a-testemunha-disse"
   },
   "classification": {
     "genre": "ensayo breve",
@@ -472,7 +472,8 @@
     "indexable": false,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
-      "pt-b1-o-predio-que-foi-tombado"
+      "pt-b1-o-predio-que-foi-tombado",
+      "pt-b1-o-que-a-testemunha-disse"
     ]
   }
 }

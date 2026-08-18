@@ -1,0 +1,479 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-b1-quando-a-agua-chegar",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Portugués B1"
+  },
+  "slug": "quando-a-agua-chegar",
+  "series": {
+    "id": "portugues-b1-lectura-10",
+    "episode": 5,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-b1-o-que-a-testemunha-disse",
+    "nextExerciseId": "pt-b1-o-melhor-cafe-nao-e-o-mais-caro"
+  },
+  "classification": {
+    "genre": "informe prospectivo",
+    "topic": "una ciudad costera y el mar",
+    "intent": "learning",
+    "tags": [
+      "portugues b1",
+      "lectura",
+      "futuro do subjuntivo",
+      "futuro do presente"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Cuando llegue el agua"
+    },
+    "intro": {
+      "es": "Un informe que no discute si el mar subirá, sino qué se hará el día que llegue a la primera calle. Lectura de portugués B1."
+    },
+    "mission": {
+      "es": "Distingue lo que el informe da por seguro de lo que deja abierto."
+    },
+    "targetText": "Este relatório não discute se o mar vai subir. Isso já está medido: na estação maregráfica do porto, o nível médio subiu dezenove centímetros desde 1960. A discussão é outra. Quando a água chegar à rua Beira-Mar, o que a prefeitura fará? Hoje não existe resposta escrita para essa pergunta. A rua Beira-Mar tem quatrocentos e doze imóveis. Se a projeção intermediária se confirmar, a maré alta de sizígia alcançará a calçada em algum momento entre 2041 e 2049. Não será uma inundação súbita. Será uma frequência: primeiro duas vezes por ano, depois doze, depois quarenta. As casas não ficarão debaixo d'água. Ficarão inhabitáveis muito antes disso, porque o sal destrói a fiação elétrica e a estrutura, e porque nenhuma seguradora renovará as apólices quando o risco for previsível. Esse é o ponto que o relatório insiste em repetir: o imóvel morre economicamente uma ou duas décadas antes de morrer fisicamente. Quem vender cedo receberá o valor de mercado. Quem esperar receberá muito pouco, e quem esperar demais não venderá. Como o mercado sabe disso e a população não, já existe uma transferência silenciosa em curso. Trinta e um imóveis da rua mudaram de dono nos últimos quatro anos. Vinte e dois foram comprados por três empresas. Vale dizer que o relatório não atribui má-fé a essas empresas. Comprar um imóvel barato numa rua com risco conhecido é uma operação legal e previsível. O problema não está em quem compra sabendo, e sim em quem vende sem saber. Nenhuma norma obriga hoje a informar o comprador nem o vendedor sobre a projeção de maré. O relatório recomenda três medidas. Primeira: publicar o mapa de risco, mesmo que ele derrube o preço dos imóveis, porque quem compra hoje merece saber. Segunda: criar um programa de recompra escalonada, para que as famílias que quiserem sair possam sair enquanto o imóvel ainda vale alguma coisa. Terceira: proibir novas construções abaixo da cota de três metros. Essa última é a mais barata e a única que ainda não foi aprovada. Se nada for feito, o relatório prevê o que chama de cenário conhecido: a rua se esvaziará sozinha, os últimos moradores serão os que tiverem menos dinheiro, e o custo público chegará de qualquer maneira, só que trinta anos depois e sem que ninguém possa ser responsabilizado.",
+    "wordCount": 383,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Formar el futuro do subjuntivo, que el español no tiene: quando chegar, se confirmar, quem esperar."
+      },
+      {
+        "es": "Distinguirlo del futuro do presente: fará, alcançará, receberá."
+      },
+      {
+        "es": "Separar lo medido de lo proyectado dentro de un informe."
+      }
+    ],
+    "grammarFocus": [
+      "futuro-conjuntivo-b1",
+      "futuro-presente-b1",
+      "futuro-do-presente-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "maregráfica",
+        "lemma": "maregráfica",
+        "glosses": {
+          "es": "mareográfica, que mide el nivel del mar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "imóveis",
+        "lemma": "imóvel",
+        "glosses": {
+          "es": "inmuebles, viviendas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sizígia",
+        "lemma": "sizígia",
+        "glosses": {
+          "es": "sicigia; maré de sizígia = marea viva"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fiação",
+        "lemma": "fiação",
+        "glosses": {
+          "es": "instalación eléctrica"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "seguradora",
+        "lemma": "seguradora",
+        "glosses": {
+          "es": "compañía de seguros"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "apólices",
+        "lemma": "apólice",
+        "glosses": {
+          "es": "pólizas de seguro"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "recompra",
+        "lemma": "recompra",
+        "glosses": {
+          "es": "recompra pública de inmuebles"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cota",
+        "lemma": "cota",
+        "glosses": {
+          "es": "cota, altura sobre el nivel del mar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Varias ciudades costeras brasileñas han empezado a publicar mapas de riesgo por subida del mar, y el debate sobre si publicarlos —porque hunden el precio del suelo— es real y político."
+    },
+    "spanishSpeakerNote": {
+      "es": "El futuro do subjuntivo no existe en español y es la gran dificultad de este nivel: «quando a água chegar» es «cuando el agua llegue»; «se nada for feito» es «si no se hace nada». El español usa presente de subjuntivo donde el portugués usa esta forma."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo en portugués que desarrolla una idea y cambia de dirección, distinguir el hecho de la interpretación, y justificar una inferencia cruzando dos pasajes."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares",
+      "comparativos-superlativos-a2",
+      "condicional-a2",
+      "conjuncoes-logicas-a2",
+      "diminutivos-aumentativos-a2",
+      "expressoes-com-fazer-a2",
+      "expressoes-tempo-a2",
+      "futuro-do-presente-a2",
+      "gerundio-a2",
+      "ha-faz-tempo-a2",
+      "para-vs-por-a2",
+      "preterito-imperfeito-a2",
+      "preterito-perfeito-irregular-a2",
+      "pronomes-obliquos-a2",
+      "pronomes-relativos-a2",
+      "ser-vs-estar-a2",
+      "subjuntivo-presente-a2",
+      "verbo-ficar-a2",
+      "verbos-modais-a2",
+      "verbos-reflexivos-a2",
+      "voz-passiva-a2",
+      "comparativos-superlativos-b1",
+      "condicional-b1",
+      "conectivos-b1",
+      "conjuntivo-imperfeito-b1",
+      "discurso-indireto-b1",
+      "futuro-conjuntivo-b1",
+      "futuro-presente-b1",
+      "gerundio-b1",
+      "imperativo-b1",
+      "participio-passado-b1",
+      "periodo-hipotico-b1",
+      "preposicoes-b1",
+      "preterito-perfeito-vs-imperfeito-b1",
+      "pronomes-obliquos-b1",
+      "regencia-verbal-b1",
+      "ser-vs-estar-b1",
+      "subjuntivo-presente-b1",
+      "tempos-compostos-b1",
+      "verbos-reflexos-b1",
+      "voz-passiva-b1"
+    ],
+    "disallowedGrammar": [
+      "registro literario",
+      "mesóclise",
+      "português europeu"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 14.2,
+      "maxSentenceWords": 47,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Prosa B1 con tiempos compuestos, futuro do subjuntivo y período hipotético. Sin mesóclise ni norma europea. Inferencia moderada."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué plantea el informe?",
+      "options": [
+        {
+          "id": "antes",
+          "text": "Que las casas dejarán de valer mucho antes de inundarse, y hay que decidir ya"
+        },
+        {
+          "id": "negacion",
+          "text": "Que la subida del mar no está demostrada"
+        },
+        {
+          "id": "muro",
+          "text": "Que hay que construir un muro de contención"
+        }
+      ],
+      "answer": "antes",
+      "evidence": "o imóvel morre economicamente uma ou duas décadas antes de morrer fisicamente",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el informe dice que insiste en repetirlo. Es el eje de todo el documento."
+        },
+        "incorrect": {
+          "es": "La primera frase deja fuera la discusión sobre si el mar sube, y no se propone ningún muro."
+        },
+        "strategy": {
+          "es": "Si un informe señala qué punto «insiste en repetir», ahí está su tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántos inmuebles de la calle cambiaron de dueño en cuatro años?",
+      "options": [
+        {
+          "id": "31",
+          "text": "Treinta y uno"
+        },
+        {
+          "id": "412",
+          "text": "Cuatrocientos doce"
+        },
+        {
+          "id": "22",
+          "text": "Veintidós"
+        }
+      ],
+      "answer": "31",
+      "evidence": "Trinta e um imóveis da rua mudaram de dono nos últimos quatro anos. Vinte e dois foram comprados por três empresas.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. De esos treinta y uno, veintidós fueron a tres empresas. Los 412 son el total de la calle."
+        },
+        "incorrect": {
+          "es": "Los veintidós son un subconjunto de los que cambiaron de dueño. Busca la cifra total."
+        },
+        "strategy": {
+          "es": "Cuando un texto da un total y una parte, comprueba cuál incluye a cuál antes de responder."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que ninguna aseguradora «renovará as apólices». ¿Qué son las «apólices»?",
+      "options": [
+        {
+          "id": "polizas",
+          "text": "Las pólizas de seguro"
+        },
+        {
+          "id": "licencias",
+          "text": "Las licencias de obra"
+        },
+        {
+          "id": "facturas",
+          "text": "Las facturas de la luz"
+        }
+      ],
+      "answer": "polizas",
+      "evidence": "nenhuma seguradora renovará as apólices quando o risco for previsível",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Va junto a «seguradora», la compañía de seguros, en la misma frase."
+        },
+        "incorrect": {
+          "es": "La palabra va con «seguradora». Eso descarta licencias y facturas."
+        },
+        "strategy": {
+          "es": "Un término técnico se acota por el actor que lo maneja. Aquí es una aseguradora."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el informe llama «transferencia silenciosa» a lo que ocurre?",
+      "options": [
+        {
+          "id": "asimetria",
+          "text": "Porque el mercado conoce el riesgo y quien vende no"
+        },
+        {
+          "id": "ilegal",
+          "text": "Porque las compras se hacen de forma ilegal"
+        },
+        {
+          "id": "nocturna",
+          "text": "Porque las operaciones se firman de noche"
+        }
+      ],
+      "answer": "asimetria",
+      "evidence": "Como o mercado sabe disso e a população não, já existe uma transferência silenciosa em curso.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el «como» inicial da la causa: la asimetría de información."
+        },
+        "incorrect": {
+          "es": "No dice que sea ilegal. Lee la frase entera: empieza explicando quién sabe qué."
+        },
+        "strategy": {
+          "es": "Una frase que empieza con «como» está dando la causa de lo que afirma después."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: prohibir construir por debajo de la cota de tres metros es la medida más barata y aún no está aprobada.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Terceira: proibir novas construções abaixo da cota de três metros. Essa última é a mais barata e a única que ainda não foi aprovada.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y el contraste es deliberado: la más barata es justamente la que falta."
+        },
+        "incorrect": {
+          "es": "Busca la tercera medida y la frase que la valora justo después."
+        },
+        "strategy": {
+          "es": "Cuando un texto enumera medidas y añade un juicio al final, ese juicio suele señalar la contradicción."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué describe el «escenario conocido» al final?",
+      "options": [
+        {
+          "id": "inevitable",
+          "text": "Para mostrar que el coste llegará igual, solo que más tarde y sin responsables"
+        },
+        {
+          "id": "tranquilizar",
+          "text": "Para tranquilizar diciendo que aún queda tiempo"
+        },
+        {
+          "id": "culpar",
+          "text": "Para culpar a los últimos vecinos que se queden"
+        }
+      ],
+      "answer": "inevitable",
+      "evidence": "o custo público chegará de qualquer maneira, só que trinta anos depois e sem que ninguém possa ser responsabilizado",
+      "feedback": {
+        "correct": {
+          "es": "Sí. No plantea evitar el coste, sino elegir cuándo y con qué reparto."
+        },
+        "incorrect": {
+          "es": "No tranquiliza ni culpa a los vecinos: dice que serán los que menos dinero tengan."
+        },
+        "strategy": {
+          "es": "Un escenario descrito al final de un informe suele ser el argumento para actuar ahora."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en portugués sobre un riesgo previsible en tu ciudad. Usa cuatro futuros do subjuntivo («quando…ar», «se…er») y cuatro futuros do presente."
+    },
+    "minWords": 70,
+    "maxWords": 140,
+    "hints": [
+      "Este relatório não discute se…",
+      "Quando a água chegar,…",
+      "Se nada for feito,…",
+      "Quem esperar receberá…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Pendiente",
+    "pedagogyReviewer": "Pendiente",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de portugués brasileño y revisión pedagógica antes de publicar.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués B1: Cuando llegue el agua | WeLearn"
+    },
+    "description": {
+      "es": "Lee un informe prospectivo en portugués de Brasil B1 y practica el futuro do subjuntivo y el futuro do presente. Con vocabulario y seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/b1/lectura/quando-a-agua-chegar",
+    "indexable": false,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-b1-o-que-a-testemunha-disse",
+      "pt-b1-o-melhor-cafe-nao-e-o-mais-caro"
+    ]
+  }
+}
