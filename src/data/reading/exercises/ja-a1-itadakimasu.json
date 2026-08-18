@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "ja-a1-itadakimasu",
-  "status": "draft",
+  "status": "published",
   "language": "ja",
   "variant": "ja-JP",
   "tutorLocales": [
@@ -202,7 +202,7 @@
     "independentAssessment": {
       "estimatedLevel": "A1",
       "passed": true,
-      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
       "assessedAt": "2026-08-18T00:00:00-05:00",
       "notes": "Forma です／ます, partículas básicas, adjetivos i y na. Kanji por debajo del 12 %, con espacios entre palabras. Furigana declarado pero no implementado en el runner: el apoyo lo dan las lecturas en kana del vocabulario."
     }
@@ -434,15 +434,15 @@
   },
   "review": {
     "author": "José David Duarte Silva",
-    "languageReviewer": "Pendiente",
-    "pedagogyReviewer": "Pendiente",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
     "reviewedAt": "2026-08-18T00:00:00-05:00",
     "copyrightChecked": true,
     "cultureChecked": true,
     "aiAssisted": true,
-    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de japonés y revisión pedagógica antes de publicar.",
-    "languageDecision": "pending",
-    "pedagogyDecision": "pending"
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
   },
   "seo": {
     "title": {
@@ -452,7 +452,7 @@
       "es": "Lee una reflexión en japonés A1 y practica las conjunciones y las expresiones cotidianas. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/japones/a1/lectura/itadakimasu",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "ja-a1-tabete-mo-ii-desu-ka"

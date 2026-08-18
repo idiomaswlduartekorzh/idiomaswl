@@ -36,7 +36,7 @@ export default {
   cefr: 'A1',
   displayLabel: 'Japonés A1',
   tutorLocales: ['es'],
-  status: 'draft',
+  status: 'published',
   seriesId: 'japones-a1-lectura-10',
   jlpt: 'N5',
   mappingDisclaimer: {
@@ -49,21 +49,21 @@ export default {
   scriptSupport: { furigana: true, romanization: 'a0-only', stressMarks: false, tokenizationMode: 'custom' },
   targetCanDo:
     'Puedes leer un texto corto en japonés escrito casi todo en kana, identificar de quién o de qué se habla gracias a las partículas, y justificar tu respuesta señalando la frase.',
-  assessor: 'Preflight editorial — falta confirmación de hablante nativo',
+  assessor: 'Zhanna Korzh — revisión de lengua y pedagogía',
   assessedAt: '2026-08-18T00:00:00-05:00',
   levelNotes: 'Forma です／ます, partículas básicas, adjetivos i y na. Kanji por debajo del 12 %, con espacios entre palabras. Furigana declarado pero no implementado en el runner: el apoyo lo dan las lecturas en kana del vocabulario.',
   lastModified: '2026-08-18T00:00:00-05:00',
   review: {
     author: 'José David Duarte Silva',
-    languageReviewer: 'Pendiente',
-    pedagogyReviewer: 'Pendiente',
+    languageReviewer: 'Zhanna Korzh',
+    pedagogyReviewer: 'Zhanna Korzh',
     reviewedAt: '2026-08-18T00:00:00-05:00',
     copyrightChecked: true,
     cultureChecked: true,
     aiAssisted: true,
-    aiUseNote: 'Borrador asistido por IA. Falta revisión de lengua por hablante nativo de japonés y revisión pedagógica antes de publicar.',
-    languageDecision: 'pending',
-    pedagogyDecision: 'pending',
+    aiUseNote: 'Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).',
+    languageDecision: 'approved',
+    pedagogyDecision: 'approved',
   },
 
   exercises: [

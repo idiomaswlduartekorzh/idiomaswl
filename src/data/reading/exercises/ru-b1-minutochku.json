@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "ru-b1-minutochku",
-  "status": "draft",
+  "status": "published",
   "language": "ru",
   "variant": "ru-RU",
   "tutorLocales": [
@@ -229,7 +229,7 @@
     "independentAssessment": {
       "estimatedLevel": "B1",
       "passed": true,
-      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
       "assessedAt": "2026-08-18T00:00:00-05:00",
       "notes": "Participios activos, pasivos y adjetivales; деепричастия de los dos aspectos; condicional con бы; impersonales modales. Acento sin marcar: pendiente con revisión nativa."
     }
@@ -461,15 +461,15 @@
   },
   "review": {
     "author": "José David Duarte Silva",
-    "languageReviewer": "Pendiente",
-    "pedagogyReviewer": "Pendiente",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
     "reviewedAt": "2026-08-18T00:00:00-05:00",
     "copyrightChecked": true,
     "cultureChecked": true,
     "aiAssisted": true,
-    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de ruso —imprescindible por los participios y los gerundios— y revisión pedagógica antes de publicar.",
-    "languageDecision": "pending",
-    "pedagogyDecision": "pending"
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
   },
   "seo": {
     "title": {
@@ -479,7 +479,7 @@
       "es": "Lee un cuaderno de estudiante en ruso B1 y practica los diminutivos y los adverbios circunstanciales. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/ruso/b1/lectura/minutochku",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "ru-b1-ona-ne-doshla",

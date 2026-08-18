@@ -1,19 +1,12 @@
 import type { Metadata } from 'next'
-import { practicaMetadata } from '@/lib/practica-metadata'
-import Content from './Content'
-import { QuizSchema } from '@/components/practica/EducationSchema';
+import { buildHubMetadata, HubPage, resolveHubForRoute } from '@/components/reading/ReadingPageServer'
 
-export const metadata: Metadata = practicaMetadata('ruso', 'b1', 'lectura')
+export function generateMetadata(): Metadata {
+  const r = resolveHubForRoute('es', 'ruso', 'b1')
+  return buildHubMetadata('es', r.language, r.level, r.exercises)
+}
 
 export default function Page() {
-  return (
-    <>
-      <QuizSchema
-        name="Lectura de Ruso B1 — Textos interactivos"
-        url="https://idiomaswl.com/practica/ruso/b1/lectura"
-        description="5 textos de Ruso B1 con transliteración, vocabulario interactivo y 6 preguntas cada uno."
-      />
-      <Content />
-    </>
-  )
+  const r = resolveHubForRoute('es', 'ruso', 'b1')
+  return <HubPage locale="es" {...r} />
 }

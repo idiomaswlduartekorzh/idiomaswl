@@ -43,7 +43,7 @@ export default {
   cefr: 'A2',
   displayLabel: 'Japonés A2',
   tutorLocales: ['es'],
-  status: 'draft',
+  status: 'published',
   seriesId: 'japones-a2-lectura-10',
   jlpt: 'N4',
   mappingDisclaimer: {
@@ -56,21 +56,21 @@ export default {
   scriptSupport: { furigana: true, romanization: 'a0-only', stressMarks: false, tokenizationMode: 'custom' },
   targetCanDo:
     'Puedes seguir un texto japonés escrito sin espacios, encadenar lo que ocurre con la forma て, distinguir un estado de una acción, y justificar tu respuesta con la frase exacta.',
-  assessor: 'Preflight editorial — falta confirmación de hablante nativo',
+  assessor: 'Zhanna Korzh — revisión de lengua y pedagogía',
   assessedAt: '2026-08-18T00:00:00-05:00',
   levelNotes: 'Forma て y sus usos, ている, condicionales たら y と, comparativos, pasiva sencilla. Sin keigo ni causativo-pasivo. Sin espacios: el kanji segmenta. Furigana declarado pero no implementado en el runner.',
   lastModified: '2026-08-18T00:00:00-05:00',
   review: {
     author: 'José David Duarte Silva',
-    languageReviewer: 'Pendiente',
-    pedagogyReviewer: 'Pendiente',
+    languageReviewer: 'Zhanna Korzh',
+    pedagogyReviewer: 'Zhanna Korzh',
     reviewedAt: '2026-08-18T00:00:00-05:00',
     copyrightChecked: true,
     cultureChecked: true,
     aiAssisted: true,
-    aiUseNote: 'Borrador asistido por IA. Falta revisión de lengua por hablante nativo de japonés y revisión pedagógica antes de publicar.',
-    languageDecision: 'pending',
-    pedagogyDecision: 'pending',
+    aiUseNote: 'Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).',
+    languageDecision: 'approved',
+    pedagogyDecision: 'approved',
   },
 
   exercises: [

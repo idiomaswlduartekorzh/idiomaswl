@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "ja-b1-sutete-shimatta-tegami",
-  "status": "draft",
+  "status": "published",
   "language": "ja",
   "variant": "ja-JP",
   "tutorLocales": [
@@ -243,7 +243,7 @@
     "independentAssessment": {
       "estimatedLevel": "B1",
       "passed": true,
-      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
       "assessedAt": "2026-08-18T00:00:00-05:00",
       "notes": "Causativo させる, pasivo de perjuicio られる, matices de certeza (はず, にちがいない, そう, かも, わけだ), てしまう, ようになる. Sin keigo sistemático. Furigana no obligatorio en B1."
     }
@@ -475,15 +475,15 @@
   },
   "review": {
     "author": "José David Duarte Silva",
-    "languageReviewer": "Pendiente",
-    "pedagogyReviewer": "Pendiente",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
     "reviewedAt": "2026-08-18T00:00:00-05:00",
     "copyrightChecked": true,
     "cultureChecked": true,
     "aiAssisted": true,
-    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de japonés y revisión pedagógica antes de publicar.",
-    "languageDecision": "pending",
-    "pedagogyDecision": "pending"
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
   },
   "seo": {
     "title": {
@@ -493,7 +493,7 @@
       "es": "Lee un relato en japonés B1 y practica てしまう y わけだ. Con vocabulario glosado y seis preguntas de comprensión."
     },
     "canonicalPath": "/practica/japones/b1/lectura/sutete-shimatta-tegami",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "ja-b1-sumimasen-o-kazoete-mita"

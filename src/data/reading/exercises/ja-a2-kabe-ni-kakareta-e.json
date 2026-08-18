@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "ja-a2-kabe-ni-kakareta-e",
-  "status": "draft",
+  "status": "published",
   "language": "ja",
   "variant": "ja-JP",
   "tutorLocales": [
@@ -223,7 +223,7 @@
     "independentAssessment": {
       "estimatedLevel": "A2",
       "passed": true,
-      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
       "assessedAt": "2026-08-18T00:00:00-05:00",
       "notes": "Forma て y sus usos, ている, condicionales たら y と, comparativos, pasiva sencilla. Sin keigo ni causativo-pasivo. Sin espacios: el kanji segmenta. Furigana declarado pero no implementado en el runner."
     }
@@ -455,15 +455,15 @@
   },
   "review": {
     "author": "José David Duarte Silva",
-    "languageReviewer": "Pendiente",
-    "pedagogyReviewer": "Pendiente",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
     "reviewedAt": "2026-08-18T00:00:00-05:00",
     "copyrightChecked": true,
     "cultureChecked": true,
     "aiAssisted": true,
-    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de japonés y revisión pedagógica antes de publicar.",
-    "languageDecision": "pending",
-    "pedagogyDecision": "pending"
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
   },
   "seo": {
     "title": {
@@ -473,7 +473,7 @@
       "es": "Lee una crónica en japonés A2 y practica la voz pasiva y la modificación de sustantivos. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/japones/a2/lectura/kabe-ni-kakareta-e",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "ja-a2-nagara-benkyou-shitari"

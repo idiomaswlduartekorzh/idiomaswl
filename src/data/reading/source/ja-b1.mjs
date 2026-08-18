@@ -47,7 +47,7 @@ export default {
   cefr: 'B1',
   displayLabel: 'Japonés B1',
   tutorLocales: ['es'],
-  status: 'draft',
+  status: 'published',
   seriesId: 'japones-b1-lectura-10',
   jlpt: 'N3',
   mappingDisclaimer: {
@@ -60,21 +60,21 @@ export default {
   scriptSupport: { furigana: false, romanization: 'none', stressMarks: false, tokenizationMode: 'custom' },
   targetCanDo:
     'Puedes seguir un texto japonés largo escrito con kanji al uso normal, distinguir lo que alguien afirma de lo que deduce, y justificar una inferencia cruzando dos pasajes distintos.',
-  assessor: 'Preflight editorial — falta confirmación de hablante nativo',
+  assessor: 'Zhanna Korzh — revisión de lengua y pedagogía',
   assessedAt: '2026-08-18T00:00:00-05:00',
   levelNotes: 'Causativo させる, pasivo de perjuicio られる, matices de certeza (はず, にちがいない, そう, かも, わけだ), てしまう, ようになる. Sin keigo sistemático. Furigana no obligatorio en B1.',
   lastModified: '2026-08-18T00:00:00-05:00',
   review: {
     author: 'José David Duarte Silva',
-    languageReviewer: 'Pendiente',
-    pedagogyReviewer: 'Pendiente',
+    languageReviewer: 'Zhanna Korzh',
+    pedagogyReviewer: 'Zhanna Korzh',
     reviewedAt: '2026-08-18T00:00:00-05:00',
     copyrightChecked: true,
     cultureChecked: true,
     aiAssisted: true,
-    aiUseNote: 'Borrador asistido por IA. Falta revisión de lengua por hablante nativo de japonés y revisión pedagógica antes de publicar.',
-    languageDecision: 'pending',
-    pedagogyDecision: 'pending',
+    aiUseNote: 'Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).',
+    languageDecision: 'approved',
+    pedagogyDecision: 'approved',
   },
 
   exercises: [

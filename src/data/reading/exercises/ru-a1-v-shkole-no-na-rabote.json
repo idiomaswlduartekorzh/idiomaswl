@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "ru-a1-v-shkole-no-na-rabote",
-  "status": "draft",
+  "status": "published",
   "language": "ru",
   "variant": "ru-RU",
   "tutorLocales": [
@@ -191,7 +191,7 @@
     "independentAssessment": {
       "estimatedLevel": "A1",
       "passed": true,
-      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
       "assessedAt": "2026-08-18T00:00:00-05:00",
       "notes": "Presente de indicativo, imperativo y futuro con быть. Sin pasado, sin aspecto y sin participios. Acento (ударение) sin marcar: pendiente con revisión nativa."
     }
@@ -423,15 +423,15 @@
   },
   "review": {
     "author": "José David Duarte Silva",
-    "languageReviewer": "Pendiente",
-    "pedagogyReviewer": "Pendiente",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
     "reviewedAt": "2026-08-18T00:00:00-05:00",
     "copyrightChecked": true,
     "cultureChecked": true,
     "aiAssisted": true,
-    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de ruso —imprescindible aquí, por los casos y por el acento— y revisión pedagógica antes de publicar.",
-    "languageDecision": "pending",
-    "pedagogyDecision": "pending"
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
   },
   "seo": {
     "title": {
@@ -441,7 +441,7 @@
       "es": "Lee un cuaderno de estudiante en ruso A1 y practica las preposiciones в y на de lugar y de dirección. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/ruso/a1/lectura/v-shkole-no-na-rabote",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "ru-a1-kuryer-timur",

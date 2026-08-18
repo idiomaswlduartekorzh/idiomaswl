@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "id": "ru-a2-v-derevnyu-i-v-derevne",
-  "status": "draft",
+  "status": "published",
   "language": "ru",
   "variant": "ru-RU",
   "tutorLocales": [
@@ -211,7 +211,7 @@
     "independentAssessment": {
       "estimatedLevel": "A2",
       "passed": true,
-      "assessor": "Preflight editorial — falta confirmación de hablante nativo",
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
       "assessedAt": "2026-08-18T00:00:00-05:00",
       "notes": "Pasado y futuro con los dos aspectos, instrumental, condicional con бы, verbos prefijados de movimiento. Sin participios ni gerundios. Acento sin marcar: pendiente con revisión nativa."
     }
@@ -443,15 +443,15 @@
   },
   "review": {
     "author": "José David Duarte Silva",
-    "languageReviewer": "Pendiente",
-    "pedagogyReviewer": "Pendiente",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
     "reviewedAt": "2026-08-18T00:00:00-05:00",
     "copyrightChecked": true,
     "cultureChecked": true,
     "aiAssisted": true,
-    "aiUseNote": "Borrador asistido por IA. Falta revisión de lengua por hablante nativo de ruso —imprescindible por el aspecto y los casos— y revisión pedagógica antes de publicar.",
-    "languageDecision": "pending",
-    "pedagogyDecision": "pending"
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
   },
   "seo": {
     "title": {
@@ -461,7 +461,7 @@
       "es": "Lee una memoria de verano en ruso A2 y practica el prepositivo y el acusativo de dirección. Con vocabulario glosado y seis preguntas."
     },
     "canonicalPath": "/practica/ruso/a2/lectura/v-derevnyu-i-v-derevne",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-08-18T00:00:00-05:00",
     "relatedExerciseIds": [
       "ru-a2-skolko-lyudey-prikhodit",
