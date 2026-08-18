@@ -46,8 +46,6 @@ export const TRANSCRIPTOR_IDIOMAS: TranscriptorIdioma[] = [
     color: '#1c4b9c',
     publicado: true,
   },
-  // Los siguientes están estudiados pero no escritos. No se listan hasta que existan:
-  // anunciar lo que no está es la forma más barata de perder la confianza de quien busca.
   {
     slug: 'frances',
     nombre: 'Francés',
@@ -56,8 +54,10 @@ export const TRANSCRIPTOR_IDIOMAS: TranscriptorIdioma[] = [
       'Media palabra no se pronuncia, y la que no se pronunciaba reaparece cuando la siguiente empieza por vocal.',
     variantes: 'Liaison y letras mudas',
     color: '#6941a5',
-    publicado: false,
+    publicado: true,
   },
+  // Los siguientes están estudiados pero no escritos. No se listan hasta que existan:
+  // anunciar lo que no está es la forma más barata de perder la confianza de quien busca.
   {
     slug: 'ruso',
     nombre: 'Ruso',
