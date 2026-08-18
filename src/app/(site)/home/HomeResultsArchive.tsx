@@ -56,8 +56,8 @@ export default function HomeResultsArchive() {
 
       <div className={styles.resultsVoices}>
         <p className={styles.resultsVoicesLead}>
-          Tres de estos resultados tienen nombre: los contaron ellos mismos, en público,
-          en las reseñas de Google del centro.
+          Cuatro de estos resultados tienen nombre: son estudiantes que contaron su
+          experiencia, en público, en las reseñas de Google del centro.
         </p>
 
         <ul className={styles.resultsVoicesList}>
