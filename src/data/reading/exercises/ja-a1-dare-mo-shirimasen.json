@@ -348,7 +348,7 @@
       "id": "q-5",
       "type": "true-false",
       "skill": "detail",
-      "prompt": "Verdadero o falso: el vecino Yamada sí sabe qué hay detrás de la puerta.",
+      "prompt": "Verdadero o falso: ni Yamada ni el panadero saben qué hay detrás de la puerta.",
       "options": [
         {
           "id": "vrai",
@@ -359,14 +359,14 @@
           "text": "Falso"
         }
       ],
-      "answer": "faux",
+      "answer": "vrai",
       "evidence": "山田さんは 「しりません」と いいました。 パンやさんも しりません。 だれも しりません。",
       "feedback": {
         "correct": {
-          "es": "Falso: ni él, ni el panadero, ni nadie."
+          "es": "Verdadero: el texto lo dice tres veces seguidas, y acaba en «だれも しりません»."
         },
         "incorrect": {
-          "es": "Busca la respuesta de Yamada. Está entrecomillada."
+          "es": "Busca la respuesta de Yamada, entrecomillada, y las dos frases siguientes."
         },
         "strategy": {
           "es": "Una cita entre 「」 reproduce literalmente lo que alguien dijo."
