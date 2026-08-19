@@ -300,6 +300,30 @@ aproximada, misma relación aparente con el texto— y solo entonces decidir cu�
 cuatro sostiene el texto. Si al terminar puedes decir cuál es la clave mirando solo la
 lista, vuelve a empezar.
 
+### R9 · La clave no puede ser la lectura más interesante
+
+**Lo enseñó la ronda 2 de R8**, midiendo. R8 igualó la forma de las opciones y el panel
+cayó de 68,5 % a 48,1 %: nueve ítems se arreglaron del todo (q01 pasó de 7 aciertos a
+ciegas sobre 8 a 0; q07 y q20, de 8 a 1). Pero ocho no se movieron, y en los ocho el panel
+converge en la clave con mayoría abrumadora aunque las cuatro opciones tengan ya la misma
+forma, la misma longitud y el mismo alcance.
+
+Lo que queda cuando la forma ya está igualada es el **registro intelectual**. Un
+solucionador entrenado en exámenes elige la opción que suena a *lectura sofisticada*: la
+que enuncia un giro conceptual en vez de un hecho, la que suena a lo que diría un profesor.
+Y como quien escribe el ítem redacta la clave pensando en lo que el texto de verdad hace,
+la clave sale siendo sistemáticamente la más interesante de las cuatro.
+
+**La regla:** los tres distractores tienen que ser lecturas **igual de atractivas** —igual
+de sofisticadas, igual de plausibles como interpretación culta— y ser falsas solo por lo
+que dice el texto. Si al leer las cuatro una suena más «de examen» que las otras, esa es la
+respuesta y el ítem no mide lectura.
+
+Corolario que la ronda 2 también dejó claro: **el enunciado filtra tanto como las
+opciones**. Un enunciado que declara la conclusión, o que nombra la relación que hay que
+encontrar, permite deducir la clave sin el texto. El enunciado no es material protegido:
+se puede y se debe recortar.
+
 ### R2 · Arreglar un ítem lo convierte en un ítem nuevo
 
 Las tres versiones de q02 pasaron cada una por auditoría, y cada arreglo introdujo un
@@ -330,6 +354,16 @@ node scripts/sat-blind-test.mjs --module sat-set-1-m1 --panel /tmp/panel.json
 El panel toma las respuestas de varios solucionadores y devuelve la media **y el desglose
 por ítem**. La media dice si el examen está roto; el desglose dice **cuál** rehacer, que es
 lo único accionable.
+
+### Serie de mediciones del módulo `sat-set-1-m1`
+
+| Ronda | Qué se hizo | Panel | Ítems que filtran |
+|---|---|---|---|
+| 1 | Escritura normal + dos rondas de corrección ítem por ítem | **68,5 %** | 17 de 27 |
+| 2 | Rediseño R8 de los 17 juegos de opciones | **48,1 %** | 8 de 27 |
+
+Veinte puntos en una ronda de R8, contra siete puntos por ronda arreglando ítem a ítem. El
+método vale casi tres veces más que el esfuerzo. Techo: 35 %.
 
 ### La calibración del 19 ago 2026, y la hipótesis que mató
 
