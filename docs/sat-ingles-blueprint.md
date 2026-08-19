@@ -195,7 +195,7 @@ un fallo, no una presunción de inocencia.
 | 3 | Solape léxico, **por las dos caras** | La clave no puede ser la que más repite palabras del texto en > 40 % de los ítems, **ni la que menos** en > 40 % | Por arriba se acierta emparejando; por abajo, descartando lo que se parece al texto. Ver R4 |
 | 4 | Clave única | Cero ítems con dos opciones defendibles | Un ítem con dos claves no mide nada |
 | 5 | Distractores vivos | Cada distractor lleva escrito qué error del estudiante representa | Un distractor que nadie elegiría convierte un ítem de 4 en uno de 3 |
-| 6 | Prueba a ciegas | Un solucionador que no ve el texto no pasa del 35 % | Azar = 25 %. Por encima de 35 % el ítem se resuelve sin leer |
+| 6 | Prueba a ciegas | Un solucionador que no ve el texto no pasa del 35 % | Azar = 25 %. Por encima de 35 % el ítem se resuelve sin leer. **Es la puerta que más cuesta pasar y la que decide el producto**: ver R8 |
 | 7 | Longitud del texto | 25–150 palabras **de 6 caracteres** (caracteres totales ÷ 6, ver §2) | Parámetro oficial del examen, verificado 2026-08-18 |
 | 8 | Mezcla de dominios | Exactamente 8 C&S / 7 I&I / 7 SEC / 5 EoI por módulo (§2) | Un simulacro desbalanceado da un diagnóstico falso |
 | 9 | Curva de dificultad | Agrupado por tipo de ítem y, dentro del grupo, de menos a más; Standard English Conventions de menos a más sin agrupar (§2) | Es como está construido el examen real |
@@ -265,6 +265,40 @@ noche de producción:
 **La comprobación es siempre la misma:** tapa el texto. Si con solo mirar la forma de las
 cuatro opciones puedes eliminar una, el ítem no está terminado. Al menos dos distractores
 tienen que compartir la forma definitoria de la clave y ser falsos por razones distintas.
+
+### R6 · La falsedad de un distractor no puede vivir en la marca que lo delata
+
+**Lo enseñaron los cuatro bloques del M1 a la vez.** El patrón: un distractor es falso
+*porque* es absoluto («never», «cannot»), o *porque* habla del periodo equivocado, o
+*porque* es un detalle en vez de una tesis. Pero eso mismo es lo que lo señala desde
+fuera. Quien poda por esa marca **poda siempre bien**, sin leer una palabra.
+
+Dicho al revés: si el rasgo que hace falsa a una opción es visible sin el texto, ese rasgo
+es la respuesta. Hay que repartirlo — que alguna opción con forma de clave sea falsa, y
+que alguna con forma de distractor sea verdadera pero no responda.
+
+### R7 · Cada opción tiene que ser coherente consigo misma
+
+**Lo enseñó Standard English Conventions.** Tres de las cinco podas del bloque eran de la
+misma especie: una opción que se cae por su propio dibujo, sin necesidad del párrafo
+—«minor however,», «which are:», «; which …;»—. Que una opción sea falsa **lo tiene que
+decidir el párrafo, no la opción misma**.
+
+### R8 · El juego de opciones se diseña antes de decidir cuál es la clave
+
+Es la conclusión de las dos rondas de reescritura, y la que cambia el proceso, no el ítem.
+
+Escribiendo como escribimos —sacar la clave del texto y después inventarle tres
+distractores— la clave sale siempre siendo la opción «con forma de verdad», y las tres
+falsas comparten un aire de familia que las delata. Por eso una reescritura completa del
+bloque Information and Ideas solo bajó la prueba a ciegas del 71 % al 64 %: se arreglaron
+los ítems uno a uno y el sesgo estaba en el método.
+
+Lo que hay que hacer: **diseñar primero las cuatro opciones como cuatro objetos
+indistinguibles entre sí** —misma forma, mismo alcance, mismo régimen, misma longitud
+aproximada, misma relación aparente con el texto— y solo entonces decidir cuál de las
+cuatro sostiene el texto. Si al terminar puedes decir cuál es la clave mirando solo la
+lista, vuelve a empezar.
 
 ### R2 · Arreglar un ítem lo convierte en un ítem nuevo
 

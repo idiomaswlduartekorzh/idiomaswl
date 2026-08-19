@@ -201,8 +201,14 @@ function checkModule(mod) {
     const solapes = q.options.map((o) => contentWords(o).filter((w) => fuente.has(w)).length)
     const clave = solapes[q.answer]
     const distractores = solapes.filter((_, i) => i !== q.answer)
-    if (clave > Math.max(...distractores)) claveGana++
-    if (clave < Math.min(...distractores)) clavePierde++
+    // Empatar en el extremo cuenta como estar en el extremo. Con desigualdad estricta,
+    // un bloque con la clave en el mínimo por empate de un punto en 5 de 7 ítems marcaba
+    // 0 %: el estudiante que cuenta coincidencias y descarta las que más se parecen al
+    // texto sigue acertando, y la puerta no veía nada. Se exige además que haya variación
+    // entre las cuatro opciones: si las cuatro empatan, no hay pista que explotar.
+    const hayVariacion = Math.max(...solapes) > Math.min(...solapes)
+    if (hayVariacion && clave >= Math.max(...distractores)) claveGana++
+    if (hayVariacion && clave <= Math.min(...distractores)) clavePierde++
     if (clave - Math.max(...distractores) >= 3) {
       fail(id, '3 solape léxico', `${q.id}: la clave repite ${clave} palabras del texto y el mejor distractor ${Math.max(...distractores)}; se acierta emparejando`)
     }
