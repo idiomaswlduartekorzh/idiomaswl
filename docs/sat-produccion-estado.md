@@ -5,8 +5,8 @@ Las reglas están en `docs/sat-loop-nocturno.md`; los parámetros y umbrales, en
 `docs/sat-ingles-blueprint.md`.
 
 - **Rama:** `feat/red-agentes-sat-ingles`
-- **Última vuelta:** 19 · 19 ago 2026 · **27,3 % con 16 jueces** (azar 25 %). Quedan 3 ítems marcando
-- **Siguiente tarea:** última pasada sobre q03, q13 y q14; luego firmar el acta, montar el set y publicar
+- **Última vuelta:** 21 · 19 ago 2026 · **26,4 %.** Contenido terminado. Faltan 3 auditorías y media para poder firmar
+- **Siguiente tarea:** correr **equidad, originalidad, dificultad y lengua completa**; luego acta, set y hub
 
 ---
 
@@ -60,6 +60,7 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
 
 | Vuelta | Tarea | Resultado | Commit |
 |---|---|---|---|
+| 21 | D2 · cierre del contenido | ✅ **26,4 %** (azar 25 %). q03 12/16 → **1/16**, q13 12/16 → **2/16**. Se para porque q24 subió sin que nadie lo tocara: a este nivel es ruido. **Pero el acta no se puede firmar**: de las siete auditorías, tres no se han hecho nunca —equidad, originalidad y dificultad— y lengua solo pasó por convenciones | `43e3a6c1` |
 | 19 | D2 · ronda 4 (R10) | ✅ **27,3 %** con 16 jueces, contra un azar del 25 %. `q09` 15/16 → **0/16** y `q15` 16/16 → **0/16**. Quedan q03, q13 y q14 en 12/16 | `c3ac27d6` |
 | 16 | D2 · ronda 3 (R9) | ✅ **34,7 %** — la puerta 6 pasa por primera vez. Cinco ítems a cero aciertos sin leer (q01, q02, q04, q05, q07). Quedan 3 marcando en rojo, pero el recuento por ítem con 8 jueces es ruidoso: se confirma con 16 antes de tocar nada | `80b2b1e7` |
 | 14 | D2 · rediseño R8, ronda 1 | ✅ **68,5 % → 48,1 %** con el mismo panel. Ítems que filtran: 17 → 8. Nueve arreglados del todo (q01 7→0, q07 8→1, q20 8→1, q12 8→2). Cero textos y cero claves tocados. Sale **R9**: cuando la forma ya está igualada, lo que delata a la clave es que suena a la lectura más inteligente | `a368c9a2` |
@@ -177,6 +178,24 @@ R4 y R5 del blueprint §4 bis.
 - `q23` · un distractor tiene que compartir la forma definitoria de la clave.
 - `q24` · falta un distractor comparativo **en forma** que compare el par equivocado.
 - `q25`, `q26`, `q27` (transitions) · APTO por las dos lentes. No se tocan.
+
+## Lo que la puerta 6 nos hizo olvidar
+
+Absorbidos por la prueba a ciegas, tres auditorías de las siete que exige el acta no han
+corrido nunca:
+
+| Auditoría | Estado |
+|---|---|
+| Clave (`sat-key-auditor`) | ✅ 27/27 a ciegas, cero dobles claves |
+| Sesgo (`sat-bias-auditor`) | ✅ guardián + panel de 16: 26,4 % |
+| Simulación (`sat-student-simulator`) | ✅ el panel de 16 la sustituye, y es más estricta |
+| Lengua (`sat-language-auditor`) | ⚠️ solo pasó por el bloque de convenciones |
+| **Equidad** (`sat-fairness-auditor`) | ❌ nunca |
+| **Originalidad** (`sat-originality-auditor`) | ❌ nunca — y es **eliminatoria** |
+| **Dificultad** (`sat-difficulty-calibrator`) | ❌ nunca |
+
+Originalidad protege de un problema legal, no pedagógico: es la única que no admite
+umbral. Nada se firma ni se publica hasta que las cuatro estén hechas.
 
 ## Deuda anotada
 

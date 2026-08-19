@@ -390,6 +390,15 @@ lo único accionable.
 | 3 | R9 sobre los 8 que resistieron: registro igualado y enunciados recortados | **34,7 %** ✅ | 3 de 27 |
 | 3 bis | La misma ronda 3, remedida con **16 jueces** en vez de 8 | **34,3 %** ✅ | 4 de 27 |
 | 4 | R10 sobre los 4 deducibles (16 jueces) | **27,3 %** ✅ | 3 de 27 |
+| 5 | Última pasada sobre q03, q13 y q14 (16 jueces) | **26,4 %** ✅ | 3 de 27 |
+
+**Dónde se para.** En 26,4 % contra un azar de 25 %, el examen ya no se puede resolver sin
+leerlo. Y hay una señal clara de que seguir es perseguir ruido: `q24` subió de 9/16 a 14/16
+**sin que nadie lo tocara** entre dos mediciones. A este nivel las diferencias por ítem son
+ruido; la media, que es lo que la puerta mide, lleva cinco mediciones bajando.
+
+Los tres que más se acercan a resolverse sin leer, anotados para una pasada futura:
+`q06` (12/16), `q14` (13/16) y `q24` (14/16).
 
 Con el azar puro en 25 %, un 27,3 % significa que el examen **ya casi no se puede resolver
 sin leerlo**. Dos ítems que estaban rotos del todo quedaron limpios: `q09` pasó de 15/16 a
