@@ -11,17 +11,37 @@ import type { SatItemMeta } from '../module-types'
  * Este bloque no funciona como los otros tres. El texto no es el objeto de la pregunta
  * sino el soporte: el enunciado es siempre el mismo y lo que se examina es la norma del
  * inglés escrito estadounidense. De ahí que aquí —y solo aquí— los distractores sean
- * agramaticales: la regla examinada *es* lo que los tumba.
+ * agramaticales o falsos contra el párrafo: la regla examinada *es* lo que los tumba.
  *
- * Claves del plan, que no se negocian ítem a ítem: D, B, A, C, D, A, B. El orden va de
- * fácil a difícil sin agrupar por tipo (boundaries y form-structure-sense alternan), que
- * es la excepción verificada de College Board y está escrita así en el plan.
+ * **El orden del array no es el orden de los ids, y es a propósito.** SEC va de fácil a
+ * difícil sin agrupar por tipo (boundaries y form-structure-sense alternan), que es la
+ * excepción verificada de College Board. El calibrador de dificultad (19 ago 2026,
+ * bloqueante B1) midió una caída de dos puntos y de banda en la posición 5 de 7 y devolvió
+ * el bloque: `q19` medía 9 y `q20`, detrás, 7. Se intercambiaron los dos **de posición, no
+ * de identificador**, porque SEC es el único bloque donde reordenar es legal. El array va
+ * hoy así:
+ *
+ *   q16 · q17 · q18 · **q20** · **q19** · q21 · q22
+ *
+ * y con él las claves quedan D · B · A · D · C · A · B (sin tres iguales seguidas, sin
+ * chocar con q15 (B) por delante ni con q23 (C) por detrás), los temas historia ·
+ * humanidades · ciencia · humanidades · historia · ciencia · historia (ninguno dos veces
+ * seguidas) y las etiquetas de dificultad 1 · 1 · 2 · 2 · 2 · 3 · 3, no decrecientes, que
+ * es lo que mira la puerta 9. `meta` va reordenado en paralelo por legibilidad: el
+ * guardián lo empareja por `id`, no por posición, pero quien lea el archivo no.
  *
  * q16, q20 y q22 se rehicieron el 19 de agosto de 2026 por el método R8 (blueprint §4 bis).
  * Los tres se resolvían sin el texto delante —7/8, 8/8 y 7/8 solucionadores a ciegas— porque
  * su juego de opciones era el dibujo canónico de un ejercicio de manual: «; however,», los
  * dos puntos delante de una lista y el inciso entre dos comas. La clave de cada uno sigue en
  * su letra (D, D, B); lo que cambió es el mecanismo, y con él la `regla` de q16 y de q22.
+ *
+ * q22 se volvió a escribir el 19 de agosto de 2026 por el bloqueante B2 del mismo
+ * calibrador: ningún ítem de SEC llegaba a la banda difícil (techo 10/15, media 7,57 frente
+ * a 11,00 de Craft and Structure) porque q22 había perdido en la reescritura R8 la segunda
+ * decisión que le encargaba la fila 22 del plan y examinaba una sola —predicado compuesto—.
+ * La versión de hoy vuelve a pedir dos decisiones en la misma oración y sube por localización
+ * y por complejidad del texto, **no** por el enunciado, que en SEC es fijo y no se toca.
  *
  * Condiciones de clave única que hay que vigilar al editar:
  *
@@ -32,9 +52,14 @@ import type { SatItemMeta } from '../module-types'
  *   el signo (el modelo es q18, que resistió la prueba a ciegas). No se puede añadir una
  *   raya: tras oración completa, la raya presenta una enumeración igual de bien que los dos
  *   puntos, y el ítem pasaría a tener dos claves.
- * - q22: la clave es la opción sin ningún signo, y lo es porque «filled» es verbo conjugado y
- *   comparte sujeto con «opened». Si el tramo del hueco deja de tener verbo conjugado, el par
- *   de comas del inciso vuelve a ser correcto.
+ * - q22: sostiene dos fronteras a la vez y las cuatro opciones son la matriz completa de las
+ *   dos decisiones (identifica/comenta × punto y coma/coma), con las mismas palabras en las
+ *   cuatro. Lo que hace esencial al modificador es que el párrafo tiene **dos** canales vivos
+ *   y solo dice de dónde salió el dinero de uno: si alguien deja un solo canal en el texto, o
+ *   nombra explícitamente al otro como el de la suscripción local, el modificador pasa a
+ *   comentar y la opción del par de comas se vuelve una segunda clave. Y lo que fija el punto
+ *   y coma es que detrás del hueco haya una oración con sujeto y verbo propios y sin
+ *   conjunción: si se le añade un «and», la coma pasa a ser correcta y el ítem se cae.
  */
 
 export const items: MCQQuestion[] = [
@@ -87,22 +112,6 @@ export const items: MCQQuestion[] = [
     answer: 0,
   },
   {
-    id: 'q19',
-    type: 'mcq',
-    part: 1,
-    stimulus:
-      "Accounts of the Argentine wheat boom usually begin with the railway, and the emphasis is not misplaced. The line that crossed the district in 1883 cut the cost of moving a sack of grain to the port by more than half, and land that had been worth little sold within a year for six times its old price. But the farms that filled those wagons were not new. By the time the first train arrived, families in the district ______ wheat for more than thirty years, selling what they could to carts bound for the river. The railway did not create an agriculture; it found one and made it pay.",
-    text:
-      "Which choice completes the text so that it conforms to the conventions of Standard English?",
-    options: [
-      "are growing",
-      "have been growing",
-      "had been growing",
-      "grew",
-    ],
-    answer: 2,
-  },
-  {
     id: 'q20',
     type: 'mcq',
     part: 1,
@@ -117,6 +126,22 @@ export const items: MCQQuestion[] = [
       "the same recipe:",
     ],
     answer: 3,
+  },
+  {
+    id: 'q19',
+    type: 'mcq',
+    part: 1,
+    stimulus:
+      "Accounts of the Argentine wheat boom usually begin with the railway, and the emphasis is not misplaced. The line that crossed the district in 1883 cut the cost of moving a sack of grain to the port by more than half, and land that had been worth little sold within a year for six times its old price. But the farms that filled those wagons were not new. By the time the first train arrived, families in the district ______ wheat for more than thirty years, selling what they could to carts bound for the river. The railway did not create an agriculture; it found one and made it pay.",
+    text:
+      "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    options: [
+      "are growing",
+      "have been growing",
+      "had been growing",
+      "grew",
+    ],
+    answer: 2,
   },
   {
     id: 'q21',
@@ -139,14 +164,14 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "The case for the canal had been made in the language of freight since the 1790s: one barge could move in a single trip what forty carts moved in a day, and the mills of the upper valley could then sell flour beyond the county line. Digging began in 1825, in rock that the surveyors had promised would be soft. The finished ______ opened in the spring of 1836 to a crowd the county paper counted at four thousand. Within fifteen years a railway ran along the same valley floor, and the tolls the canal collected never covered the debt its investors had signed for.",
+      "Two canals were cut through the same range of hills within forty years of each other, and what separated them in the end was not the engineering but the direction the money came from. The older line had been dug in the 1790s with money from merchants in the capital, none of whom ever saw the hills they had paid to cut through. Digging on the second began in 1825, in rock that the surveyors had called soft, and the estimate had doubled before the crews were halfway through. The two lines ended at the same river landing, and the county spent thirty years measuring the receipts of one against the receipts of the other. The ______ the tolls it collected never covered the debt its investors had signed for. Within fifteen years a railway ran along the same valley floor, and both companies sold their works for whatever the stone was worth.",
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
-      "canal, filled with water that winter, and",
-      "canal filled with water that winter and",
-      "canal filled with water that winter; and",
-      "canal filled with water that winter, and",
+      "canal, built with money raised in the valley itself, opened in 1836;",
+      "canal built with money raised in the valley itself opened in 1836;",
+      "canal built with money raised in the valley itself opened in 1836,",
+      "canal, built with money raised in the valley itself, opened in 1836,",
     ],
     answer: 1,
   },
@@ -217,27 +242,6 @@ export const meta: SatItemMeta[] = [
       "Ecología marina de manual: la nutria marina como especie clave de los bosques de kelp del Pacífico norte. Comparación de peso propia, sin cifras, sin unidades imperiales y sin nombres propios.",
   },
   {
-    id: 'q19',
-    domain: 'SEC',
-    tipo: 'form-structure-sense',
-    dificultad: 2,
-    tema: 'historia',
-    regla:
-      "Tiempo verbal fijado por el marcador temporal de la oración: acción anterior a un punto del pasado y prolongada hasta él (pluscuamperfecto).",
-    razones: {
-      A:
-        "Presente progresivo en una oración anclada en el pasado por «By the time the first train arrived»: sitúa la siembra en el momento de la lectura, no en los años previos a la llegada del tren.",
-      B:
-        "Ancla el tiempo en la oración vecina y no en el marcador. El texto abre en presente —«Accounts … usually begin with the railway»— y quien se apoya en eso elige el presente perfecto, que arrastra la acción hasta hoy y no hasta 1883.",
-      C:
-        "Correcta: la oración trae dos marcadores que piden lo mismo. «By the time the first train arrived» fija un punto en el pasado y «for more than thirty years» mide la duración que termina en ese punto, y eso es pluscuamperfecto.",
-      D:
-        "Pretérito simple: presenta la siembra como un hecho cerrado y suelto, sin la anterioridad respecto de la llegada del tren que «By the time … arrived» exige de la forma verbal.",
-    },
-    fuenteHecho:
-      "Historia económica argentina, hecho libre: las colonias del litoral ya sembraban trigo décadas antes del ferrocarril. Distrito, 1883, la caída de costo y el precio de la tierra son invención propia.",
-  },
-  {
     id: 'q20',
     domain: 'SEC',
     tipo: 'boundaries',
@@ -257,6 +261,27 @@ export const meta: SatItemMeta[] = [
     },
     fuenteHecho:
       "Historia material de la pintura, hecho libre: pigmento molido, aceite y resina en el taller hasta que el tubo metálico permitió comprar el color hecho. Sin taller, pintor ni patente concretos.",
+  },
+  {
+    id: 'q19',
+    domain: 'SEC',
+    tipo: 'form-structure-sense',
+    dificultad: 2,
+    tema: 'historia',
+    regla:
+      "Tiempo verbal fijado por el marcador temporal de la oración: acción anterior a un punto del pasado y prolongada hasta él (pluscuamperfecto).",
+    razones: {
+      A:
+        "Presente progresivo en una oración anclada en el pasado por «By the time the first train arrived»: sitúa la siembra en el momento de la lectura, no en los años previos a la llegada del tren.",
+      B:
+        "Ancla el tiempo en la oración vecina y no en el marcador. El texto abre en presente —«Accounts … usually begin with the railway»— y quien se apoya en eso elige el presente perfecto, que arrastra la acción hasta hoy y no hasta 1883.",
+      C:
+        "Correcta: la oración trae dos marcadores que piden lo mismo. «By the time the first train arrived» fija un punto en el pasado y «for more than thirty years» mide la duración que termina en ese punto, y eso es pluscuamperfecto.",
+      D:
+        "Pretérito simple: presenta la siembra como un hecho cerrado y suelto, sin la anterioridad respecto de la llegada del tren que «By the time … arrived» exige de la forma verbal.",
+    },
+    fuenteHecho:
+      "Historia económica argentina, hecho libre: las colonias del litoral ya sembraban trigo décadas antes del ferrocarril. Distrito, 1883, la caída de costo y el precio de la tierra son invención propia.",
   },
   {
     id: 'q21',
@@ -286,18 +311,18 @@ export const meta: SatItemMeta[] = [
     dificultad: 3,
     tema: 'historia',
     regla:
-      "Predicado compuesto: dos verbos conjugados que comparten sujeto no se separan con coma ni con punto y coma delante de la conjunción, y el primero tampoco puede aislarse entre comas como si fuera un inciso.",
+      "Dos fronteras en la misma oración, y ninguna opción acierta las dos por casualidad. (1) Elemento esencial frente a no esencial: el tramo que dice de cuál de los dos canales se habla identifica, y lo que identifica no se separa con comas; entre comas solo va lo que comenta. (2) Frontera entre oraciones independientes sin conjunción coordinante: dos oraciones con sujeto y verbo propios se separan con punto y coma, nunca con coma.",
     razones: {
       A:
-        "Encierra «filled with water that winter» entre comas, o sea lo lee como inciso prescindible. Al hacerlo degrada a participio el único verbo conjugado que hay antes de «and», y la oración se queda sin verbo principal: «The finished canal, filled with water that winter, and opened in the spring of 1836…» ya no tiene con qué coordinar ese «and». Por dentro la opción es impecable —un par de comas que abre y cierra—; la tumba el párrafo, que no le da a «The finished canal» ningún otro verbo.",
+        "Acierta la frontera de la derecha y falla la de la izquierda. Al encerrar «built with money raised in the valley itself» entre comas, ese tramo deja de identificar y pasa a comentar, y el párrafo llega hasta el final con los dos canales vivos —«Two canals were cut through the same range of hills», «The two lines ended at the same river landing»—, así que «The canal» se queda sin decir cuál de los dos abrió en 1836. Y si el lector lo resuelve por proximidad, la única línea de la que el texto dice de dónde salió el dinero es la de la década de 1790, pagada «with money from merchants in the capital»: la oración afirmaría entonces de ella justo lo contrario de lo que el texto dice. Es el error de quien encierra entre comas toda frase de participio que sigue al sujeto sin preguntarse si distingue o solo añade.",
       B:
-        "Correcta: «filled» y «opened» son dos verbos conjugados que comparten un mismo sujeto, «The finished canal», y un predicado compuesto no lleva ningún signo delante de la conjunción. El propio texto enseña el contraste en su última oración, donde la coma delante de «and» sí aparece —«a railway ran along the same valley floor, and the tolls the canal collected never covered the debt»— porque allí lo que se une son dos oraciones con sujeto propio cada una.",
+        "Correcta: resuelve las dos fronteras. La de la izquierda, porque el modificador identifica: el texto abre con dos canales y solo dice de dónde salió el dinero de uno —«merchants in the capital» para la línea vieja—, de modo que «built with money raised in the valley itself» es lo único que señala al otro, y lo que identifica va sin comas. La de la derecha, porque detrás del hueco viene «the tolls it collected never covered the debt its investors had signed for», una oración con sujeto y verbo propios y sin conjunción que la coordine: entre dos oraciones independientes sin conjunción la norma pide punto y coma. El texto enseña el caso contrario en su última línea, donde la coma sí aparece delante de «and».",
       C:
-        "El punto y coma exige oración independiente a los dos lados y a su derecha solo hay «and opened in the spring of 1836 to a crowd…», la segunda mitad de un predicado, sin sujeto propio. Es el error de quien recurre al punto y coma cuando la frase se le hace larga, como si fuera una pausa mayor y no una frontera entre oraciones.",
+        "Acierta la frontera de la izquierda y falla la de la derecha. Deja el modificador sin comas, que es lo que corresponde a un tramo que identifica, pero junta con una sola coma «The canal … opened in 1836» y «the tolls it collected never covered the debt…», dos oraciones independientes sin nada que las coordine: empalme de comas. Es el error de quien puntúa por el oído —donde oye la pausa, pone coma— y no comprueba si lo que viene detrás se sostiene solo.",
       D:
-        "Traslada al predicado compuesto la regla de la coma delante de «and», que solo rige cuando detrás viene una oración con su propio sujeto. Aquí «opened» no lo tiene: lo comparte con «filled», y la coma acaba separando al sujeto de su segundo verbo.",
+        "Falla las dos fronteras con un mismo gesto: pone coma allí donde la oración respira. Encierra entre comas el tramo que el párrafo necesita para decir cuál de los dos canales abrió en 1836 y después pega con otra coma una segunda oración completa, de manera que la frase termina con tres comas haciendo tres trabajos distintos y sin ninguna frontera de verdad. Es la opción del estudiante que nota que ahí falta algo y reparte comas hasta que le suena bien.",
     },
     fuenteHecho:
-      "Historia del transporte del siglo XIX, hecho libre: canales justificados por el flete y desplazados por el ferrocarril, con peajes que no cubrieron la deuda. Valle, condado, 1825, 1836, el periódico, los cuatro mil y los cuarenta carros son invención propia.",
+      "Historia del transporte del siglo XIX, hecho libre: valles con un canal antiguo financiado desde fuera y otro pagado por suscripción de los propios vecinos, ambos desplazados por el ferrocarril y con peajes que no cubrieron la deuda de construcción. Los dos canales, el valle, el condado, la década de 1790, 1825, 1836 y el sobrecosto de la roca son invención propia y no describen ningún canal concreto.",
   },
 ]

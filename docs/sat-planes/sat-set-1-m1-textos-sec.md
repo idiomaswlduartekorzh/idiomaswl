@@ -51,11 +51,15 @@ un párrafo con un hueco no tiene longitud media de oración.
 | q19 | form-structure-sense | historia | 2 | tiempo verbal por marcador temporal | 583 | 97,2 | 5 | 22,4 |
 | q20 | boundaries | humanidades | 2 | dos puntos tras oración completa | 616 | 102,7 | 5 | 23,4 |
 | q21 | form-structure-sense | ciencia | 3 | modificador inicial colgado | 511 | 85,2 | 4 | 25,0 |
-| q22 | boundaries | historia | 3 | dos fronteras en la misma oración | 563 | 93,8 | 4 | 28,0 |
+| q22 | boundaries | historia | 3 | dos fronteras en la misma oración | 844 | 140,7 | 6 | 27,3 |
 
-Los siete caben entre 150 y 900 caracteres, con margen amplio por los dos lados: el más largo
-es q20 (616 = 102,7 palabras-SAT) y el más corto q17 (463 = 77,2). La longitud media de
-oración sube a lo largo del bloque —16,6 → 28,0— acompañando la curva de dificultad que exige
+Los siete caben entre 150 y 900 caracteres, con margen por los dos lados: el más largo es q22
+(844 = 140,7 palabras-SAT, cincuenta y seis caracteres por debajo del tope, que es el precio
+de que su sintaxis sea la más densa del bloque) y el más corto q17 (463 = 77,2). La tabla va por identificador, que **ya no es el orden en que se responden**: el
+calibrador de dificultad devolvió el bloque el 19 de agosto de 2026 y `q19` y `q20` se
+intercambiaron de posición sin cambiar de identificador, así que la secuencia publicada es
+**q16 · q17 · q18 · q20 · q19 · q21 · q22**. En ese orden la longitud media de oración sube
+—18,4 · 16,6 · 23,0 · 23,4 · 22,4 · 25,0 · 27,3—, acompañando la curva de dificultad que exige
 la puerta 9, aunque en SEC quien manda es la regla, no el texto.
 
 ---
@@ -303,69 +307,96 @@ alguno, y no da ninguna cifra de composición del aire.
 
 ### q22 · boundaries · historia · dificultad 3
 
-**Texto** (563 caracteres = 93,8 palabras-SAT)
+**Reescrito entero el 19 de agosto de 2026, y es la segunda vez.** Esta sección documentaba una
+relativa explicativa intercalada (*canal, which had taken eleven years to dig,*); el método R8
+la retiró porque 7 de 8 solucionadores la acertaban sin ver el texto —el inciso entre dos comas
+es el dibujo canónico de un ejercicio de manual—, y la sustituyó por un predicado compuesto.
+Aquella sustitución arregló la prueba a ciegas y **perdió por el camino la segunda decisión**
+que la fila 22 del plan encarga, con lo que el ítem se quedó en 9 sobre 15 y el bloque entero
+sin un solo ítem en la banda difícil (bloqueante B2 del calibrador de dificultad). El texto de
+abajo es el tercero, y devuelve las dos decisiones subiendo por localización y por complejidad
+del texto: el enunciado de SEC es fijo y no participa.
 
-> The case for the canal had been made in the language of freight since the 1790s: one barge could move in a single trip what forty carts moved in a day, and the mills of the upper valley could then sell flour beyond the county line. Digging began in 1825, in rock that the surveyors had promised would be soft. The finished ______ opened in the spring of 1836 to a crowd the county paper counted at four thousand. Within fifteen years a railway ran along the same valley floor, and the tolls the canal collected never covered the debt its investors had signed for.
+**Texto** (844 caracteres = 140,7 palabras-SAT)
 
-**Métricas**: 4 oraciones · longitud media de oración 28,0 palabras · léxico exigente: freight, barge, surveyors, tolls, investors
+> Two canals were cut through the same range of hills within forty years of each other, and what separated them in the end was not the engineering but the direction the money came from. The older line had been dug in the 1790s with money from merchants in the capital, none of whom ever saw the hills they had paid to cut through. Digging on the second began in 1825, in rock that the surveyors had called soft, and the estimate had doubled before the crews were halfway through. The two lines ended at the same river landing, and the county spent thirty years measuring the receipts of one against the receipts of the other. The ______ the tolls it collected never covered the debt its investors had signed for. Within fifteen years a railway ran along the same valley floor, and both companies sold their works for whatever the stone was worth.
 
-**Regla que examina**: **dos fronteras en la misma oración** — una subordinada de relativo
-intercalada que es elemento no esencial y que, por serlo, exige coma de apertura *y* coma de
-cierre. Ninguna opción puede acertar las dos por casualidad.
+**Métricas**: 6 oraciones · longitud media de oración 27,3 palabras (la más alta del bloque)
+· 13 palabras de ocho letras o más · léxico exigente: engineering, merchants in the capital,
+surveyors, estimate, river landing, tolls, investors, works
 
-**Qué tramo sustituye el hueco**: `canal, which had taken eleven years to dig,` — el núcleo del
-sujeto más la relativa entera con sus dos comas. Con la clave dentro: «The finished canal,
-which had taken eleven years to dig, opened in the spring of 1836 to a crowd the county paper
-counted at four thousand.»
+**Regla que examina**: **dos fronteras en la misma oración**, y ninguna opción acierta las dos
+por casualidad.
 
-**Por qué la regla decide sola**: la relativa no restringe nada. En el párrafo hay un solo
-canal y ya viene identificado por *The finished*, así que la información que añade la relativa
-es prescindible y va entre comas por los dos lados; encima empieza por *which*, que en la
-norma estadounidense marca relativa explicativa (la restrictiva usa *that* y va sin comas). Y
-el dato que da la relativa —once años— es el que el propio texto ya permite calcular con 1825
-y 1836, que es la comprobación de que no restringe: no identifica, comenta.
+1. **Elemento esencial frente a no esencial.** El tramo que dice de cuál de los dos canales se
+   habla identifica, y lo que identifica no se separa con comas; entre comas solo va lo que
+   comenta.
+2. **Frontera entre oraciones independientes sin conjunción coordinante.** Dos oraciones con
+   sujeto y verbo propios, sin *and* ni *but* que las una, se separan con punto y coma, nunca
+   con coma.
 
-**Aviso al redactor de opciones**: el ítem nace de dos decisiones independientes —marcar la
-apertura del inciso y marcar su cierre—, y esa es su razón de ser: quien acierta una frontera
-y falla la otra tiene dónde caer. Las celdas candidatas son cuatro —abre y cierra / solo abre
-/ solo cierra / ninguna—, pero **no se publican las cuatro tal cual**, por lo que dice la
-cautela 1. Tres cautelas.
-1. **La celda «ninguna» no es opcional (R5).** La primera redacción publicada dejó fuera la
-   opción sin comas y montó las otras tres sobre signos desemparejados —coma solo al cerrar,
-   punto y coma al abrir y coma al cerrar—. Resultado: la clave era **la única opción
-   internamente coherente en puntuación**, y se acertaba emparejando signos sin leer una
-   palabra del texto. Cada opción tiene que ser consistente consigo misma; que sea falsa lo
-   tiene que decidir el párrafo, no su propio dibujo.
-2. **Puerta 2.** La opción con las dos comas es, por construcción, dos caracteres más larga
-   que la de sin comas, y si la clave es «la más larga» el ítem gasta cupo. Se neutraliza con
-   el **par de punto y coma** (…*canal; which had taken eleven years to dig;*): 43 caracteres,
-   exactamente los mismos que la clave, error distinto y perfectamente vivo —marcar el inciso
-   a los dos lados con el signo que exige oración independiente a cada lado, cortando el
-   sujeto de su verbo—.
-3. **No cambies *which* por *that* en ninguna opción.** Sería un segundo eje de decisión
-   —restrictiva contra explicativa— y el ítem dejaría de medir fronteras para medir dos cosas
-   a la vez con una sola clave.
+**Qué tramo sustituye el hueco**: `canal built with money raised in the valley itself opened in
+1836;` — el núcleo del sujeto, el modificador entero, el verbo de la principal y la frontera
+con la oración siguiente. Con la clave dentro: «The canal built with money raised in the valley
+itself opened in 1836; the tolls it collected never covered the debt its investors had signed
+for.»
 
-**La matriz que se publica** (19 de agosto de 2026), con la clave en la segunda posición que
-fija el plan:
+**Por qué la regla decide sola**: por el párrafo, y hacen falta tres tramos suyos para
+resolverlo.
 
-| opción | forma | por qué es coherente consigo misma | qué la descarta |
+- La primera oración pone **dos** canales en circulación y dice que lo que los separó fue «the
+  direction the money came from». La segunda dice de dónde salió el dinero de uno solo:
+  *merchants in the capital*. Del otro no lo dice nadie, así que «built with money raised in
+  the valley itself» es lo único en toda la oración del hueco que señala a cuál de los dos se
+  refiere: identifica, y por eso va sin comas. La exclusión es obligatoria y es lo que sube el
+  eje de localización: el texto **nunca** dice que el segundo canal se pagara con dinero de la
+  comarca, hay que deducirlo cruzando esas dos oraciones.
+- La oración inmediatamente anterior al hueco —«The two lines ended at the same river landing,
+  and the county spent thirty years measuring the receipts of one against the receipts of the
+  other»— deja los dos canales igual de vivos y **termina nombrando a los dos**, no a uno, para
+  que «The canal» a secas no pueda resolverse por proximidad ni por anáfora. Si esa oración
+  acabara señalando a uno solo, la opción del par de comas pasaría a ser defendible y el ítem
+  tendría dos claves.
+- A la derecha del hueco, «the tolls it collected never covered the debt its investors had
+  signed for» es oración con sujeto y verbo propios y no trae conjunción: punto y coma. La
+  última oración del texto enseña el otro caso, con la coma delante de *and*.
+
+**Por qué no se puede resolver sin el texto**: las cuatro opciones llevan **las mismas
+palabras** y se diferencian solo en dos signos, que es el modelo de q18 y q20. La matriz es
+completa —las dos decisiones cruzadas— y ninguna opción es incoherente consigo misma: lo que
+tumba a cada una es el párrafo, no su propio dibujo (R7).
+
+| opción | decisión 1 · el modificador | decisión 2 · la frontera | |
 |---|---|---|---|
-| `canal which had taken eleven years to dig` | sin signos | ningún signo a ninguno de los dos lados | el párrafo: un solo canal, ya identificado por *The finished*, y los once años ya se deducen de 1825 y 1836 → la relativa no restringe |
-| `canal, which had taken eleven years to dig,` | par de comas — **clave** | mismo signo al abrir y al cerrar | — |
-| `canal; which had taken eleven years to dig;` | par de punto y coma | mismo signo al abrir y al cerrar | el punto y coma exige oración independiente a los dos lados y aquí corta sujeto y verbo |
-| `canal, which had taken eleven years to dig` | solo apertura | un solo signo, y la opción termina ahí: nada dentro de la cadena delata el fallo | el párrafo: la oración sigue con *opened in the spring of 1836*, que sin la coma de cierre queda dentro de la relativa |
+| `canal, built with money raised in the valley itself, opened in 1836;` | comenta | punto y coma | media |
+| `canal built with money raised in the valley itself opened in 1836;` | identifica | punto y coma | **clave** |
+| `canal built with money raised in the valley itself opened in 1836,` | identifica | coma | media |
+| `canal, built with money raised in the valley itself, opened in 1836,` | comenta | coma | ninguna |
 
-La celda que se retiró es **solo cierre** (…*canal which had taken eleven years to dig,*):
-una coma de cierre sin apertura se ve mal desde dentro de la propia opción, sin mirar el
-texto, y por eso era la que regalaba la poda.
+Las dos heurísticas de quien no lee apuntan fuera de la clave: la de «un participio detrás del
+sujeto es un inciso, va entre comas» lleva a la primera o a la cuarta, y la de «cuantas menos
+comas, mejor» lleva a la tercera. La clave es la combinación mixta, y solo el párrafo la elige.
 
-**Hecho real usado**: Historia del transporte del siglo XIX, hecho libre: los canales se
-justificaron durante décadas por el abaratamiento del flete frente al acarreo por carretera y
-quedaron desplazados por el ferrocarril pocos años después de abrirse, con peajes que a menudo
-no cubrieron la deuda de construcción. El valle, el condado, las fechas de 1825 y 1836, el
-periódico, la multitud de cuatro mil y la proporción «una barcaza contra cuarenta carros» son
-invención mía y no describen ningún canal concreto.
+**Aviso al redactor de opciones**: tres cautelas, y las tres son condiciones de clave única.
+
+1. **No dejes un solo canal en el texto**, ni digas en ninguna oración que el segundo se pagó
+   por suscripción local. Cualquiera de las dos cosas convierte el modificador en un comentario
+   y la opción del par de comas pasa a ser correcta: el ítem tendría dos claves.
+2. **No pongas conjunción detrás del hueco.** Si «the tolls it collected…» llegara precedido de
+   *and*, la coma sería correcta y la mitad derecha del ítem se caería.
+3. **Ni *which* ni *that* en ninguna opción.** Una relativa explícita marcaría por sí sola si el
+   tramo comenta o identifica y regalaría la primera decisión sin leer el párrafo, que es
+   exactamente lo que hundió la primera versión de este ítem. El participio no marca nada: sirve
+   igual de bien para las dos lecturas, y esa es su gracia.
+
+**Hecho real usado**: Historia del transporte del siglo XIX, hecho libre: en muchos valles
+convivieron un canal antiguo financiado desde fuera y otro pagado por suscripción de los
+propios vecinos, los dos justificados por el abaratamiento del flete frente al acarreo y los
+dos desplazados por el ferrocarril pocos años después, con peajes que no cubrieron la deuda de
+construcción. Los dos canales, el valle, el condado, la década de 1790, 1825, 1836, el
+sobrecosto de la roca y el embarcadero son invención mía y no describen ningún canal concreto.
+Sin nombres propios y sin unidades imperiales.
+
 
 ---
 
@@ -374,15 +405,19 @@ invención mía y no describen ningún canal concreto.
 **Regla nombrable en los siete (requisito del bloque).** Ninguna clave depende de una
 preferencia de estilo: empalme de comas (q16), concordancia con interpuesto (q17), par de
 comas del inciso (q18), tiempo por marcador temporal (q19), dos puntos tras oración completa
-(q20), modificador colgado (q21) y doble frontera del inciso intercalado (q22). Los siete
-nombres pasan tal cual al campo `regla` del `SatItemMeta`. **Terreno en disputa evitado**: no
+(q20), modificador colgado (q21) y, en q22, doble frontera: esencial frente a no esencial, y
+punto y coma entre oraciones independientes. Los siete nombres pasan tal cual al campo `regla`
+del `SatItemMeta`. **Terreno en disputa evitado**: no
 hay *who/whom*, ni *they* singular, ni preposición final, ni concordancia de nombre colectivo,
 ni *than I/than me*.
 
 **Norma estadounidense.** Coma de Oxford en las dos enumeraciones del lote (q18 *fish, crabs,
 and young seals*; q20 los tres ingredientes), *toward* sin *s* en q18, ortografía y puntuación
-de EE. UU. en todo el bloque, *traveled* con una ele en q16, y la distinción *which*
-explicativa / *that* restrictiva sosteniendo q22.
+de EE. UU. en todo el bloque, y *traveled* con una ele en q16. La distinción *which*
+explicativa / *that* restrictiva **ya no interviene en ninguna parte del bloque**: sostenía la
+primera versión de q22 y se retiró con ella, porque un relativizador explícito decide por sí
+solo si el tramo comenta o identifica y deja la primera de las dos decisiones resuelta sin leer
+el párrafo.
 
 **Equidad (puerta 10).** Ningún texto pide un dato que el estudiante de Bucaramanga no tenga
 dentro: no hay sistema escolar estadounidense, ni deporte escolar, ni festividad, ni medida
@@ -396,17 +431,24 @@ resuelve sin ella.
 como especie clave, ferrocarril y trigo en la Argentina de 1880, tubo de pintura metálico,
 burbujas de aire en el hielo antártico, canales desplazados por el ferrocarril— el hecho es
 libre y la formulación es propia. Todas las cifras concretas que acompañan a esos hechos
-(1883, seis veces el precio de la tierra, cuatro mil personas, once años, cuarenta carros) son
-inventadas a propósito, para no acercarse a ninguna serie publicada.
+(1883, seis veces el precio de la tierra, los dos canales de q22, la década de 1790, 1825,
+1836 y el estimado que se dobla) son inventadas a propósito, para no acercarse a ninguna serie
+publicada.
 
-**Curva de dificultad (puerta 9).** El bloque va 1-1-2-2-2-3-3 **sin agrupar por tipo**:
-boundaries y form-structure-sense se alternan (B, F, B, F, B, F, B), que es la excepción
-verificada de College Board y está escrita así en el plan. Los temas tampoco se repiten en
-posiciones contiguas: historia, humanidades, ciencia, historia, humanidades, ciencia, historia
-—y el empalme con los bloques vecinos también aguanta (q15 ciencia → q16 historia; q22
-historia → q23 humanidades)—.
+**Curva de dificultad (puerta 9).** En el orden publicado —**q16 · q17 · q18 · q20 · q19 · q21
+· q22**, con `q19` y `q20` intercambiados de posición el 19 de agosto de 2026— el bloque va
+1-1-2-2-2-3-3 **sin agrupar por tipo**, que es la excepción verificada de College Board y está
+escrita así en el plan. Los tipos quedan B, F, B, B, F, F, B: ya no alternan uno a uno, y no
+tienen por qué, porque en SEC lo que manda es la dificultad creciente y no la agrupación. Los
+temas siguen sin repetirse en posiciones contiguas: historia, humanidades, ciencia,
+humanidades, historia, ciencia, historia —y el empalme con los bloques vecinos también aguanta
+(q15 ciencia → q16 historia; q22 historia → q23 humanidades)—. Las claves, en ese mismo orden:
+D · B · A · D · C · A · B.
 
-**Riesgos vivos que quedan anotados, no corregidos.** Uno solo, y es de q16: la clave única
+**Riesgos vivos que quedan anotados, no corregidos.** Dos, y los dos son condiciones de clave
+única que hay que releer antes de tocar nada. El de q22 va escrito en su sección: el ítem se
+sostiene sobre que el párrafo tenga **dos** canales y calle de dónde salió el dinero del
+segundo, y sobre que detrás del hueco no haya conjunción. El de q16: la clave única
 depende de que *however* siga **dentro del tramo del hueco**. Mientras esté ahí, los dos
 puntos son indefendibles y solo el punto y coma sostiene la frontera; el día que se saque,
 punto y coma y dos puntos se defienden los dos y el ítem tiene dos claves. No es un defecto
