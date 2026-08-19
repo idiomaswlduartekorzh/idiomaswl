@@ -58,6 +58,11 @@ Ninguna se ve leyendo la ficha de un rol por separado. Todas se ven al simular l
 
 1. **Colapso en tres turnos.** B puede decir «sí» a la primera. *Cura:* B tiene una razón
    concreta para negarse, y **una condición** bajo la cual acepta. Esa condición es el juego.
+   **Y el reverso, que se olvida siempre:** blindar el «sí» no basta. Si decir «no» —o
+   levantarse e irse— cierra la conversación sin coste, el que quiere salir del paso gana en
+   dos turnos sin romper una sola regla. Los dos jugadores tienen que perder algo si se van
+   sin acuerdo. Medido en la simulación de agosto de 2026: el atajista ganaba 4 de 8
+   escenarios, y todos por esta puerta.
 2. **El monólogo.** Un rol pide y el otro solo juzga. *Cura:* el que tiene el poder también
    necesita algo del otro (una fecha, un compromiso, una explicación que le sirva).
 3. **El ping-pong.** Preguntas cerradas y respuestas de una palabra. *Cura:* al menos dos
@@ -104,8 +109,14 @@ El guardián no publica un set que falle una sola.
 2. **Zona de acuerdo** — existe una salida que los dos aceptarían, y no es obvia.
 3. **Cero español calcable** — ninguna ficha trae la frase que hay que decir.
 4. **Andamiaje** — 6 a 10 exponentes por rol, en el idioma meta, con uso y registro; ninguno resuelve la conversación entero.
-5. **Carga** — ningún rol por debajo del 40 % de los turnos previstos.
-6. **Complicación colocada** — entra entre el turno 3 y el 6 según nivel, y va a un solo rol.
+5. **Carga** — ningún rol por debajo del 40 % de la conversación, medido en **palabras**, no
+   en turnos. Un «Mm» cuenta como turno: hubo simulaciones con el 50 % de los turnos y el
+   10 % de las palabras que pasaban esta puerta con las dos manos atadas. Se cuenta sobre la
+   simulación, no sobre el previsto.
+6. **Complicación colocada** — entra entre el turno **global** 3 y 6, y va a un solo rol.
+   Cuidado con el enunciado: «ábrela al terminar tu cuarto turno» suena a lo mismo y no lo
+   es —el cuarto turno de un rol es el turno global 7 u 8, o sea después del final útil—.
+   El disparador se escribe siempre en turnos globales.
 7. **Cierre** — escrito, idéntico en las dos fichas.
 8. **Nivel** — cada acto y cada exponente existen en el nivel, anclados al registro de gramática.
 9. **Registro** — está dicho quién trata a quién de usted, y el idioma lo soporta.
@@ -165,3 +176,13 @@ Se dice, no se disimula:
   automática, ni progreso guardado.
 - **No hay emparejador.** Si el estudiante no tiene con quién, este modo no le sirve: se va
   a «habla solo».
+
+## 9. La carta va en su propia pantalla
+
+No es un detalle de maquetación. En las simulaciones, la carta impresa debajo del andamiaje
+se leyó sola: es justo la zona que el estudiante flojo consulta cada dos turnos. Y verla
+antes no solo estropea la sorpresa —en un escenario **hacía salir mejor**, porque se cumplía
+el objetivo antes y más limpio. Un incentivo que premia mirar antes enseña a mirar antes.
+
+La carta vive detrás de un botón, en su propia vista, con el turno global escrito encima.
+Nunca en la misma página que el andamiaje. Va en el encargo de `habla-integracion`.
