@@ -203,6 +203,49 @@ un fallo, no una presunción de inocencia.
 | 11 | Originalidad | Cero secuencias de 8+ palabras que coincidan con material publicado | Ni copiamos College Board ni fuentes con derechos |
 | 12 | Variedad temática | Ningún tema (ciencia, humanidades, historia, literatura) por encima del 40 % de un módulo | El examen real reparte |
 
+## 4 bis. Reglas de escritura que descubrió la producción
+
+No estaban en ninguna especificación. Salieron de ítems que hubo que rehacer, y cada una
+lleva el ítem que la enseñó.
+
+### R1 · Un words-in-context solo funciona si las cuatro opciones comparten régimen
+
+**Lo enseñó q02 de `sat-set-1-m1`, tres versiones seguidas.** Si dos opciones no pueden
+ocupar sintácticamente el lugar de la palabra en su propia oración, el estudiante que
+parsea la frase las descarta sin entender nada, y un ítem de cuatro opciones se convierte
+en uno de dos: el azar sube del 25 % al 50 %.
+
+- v1 examinaba *carried*: dos opciones transitivas en un hueco intransitivo.
+- v2 cambió los distractores: dos dejaron de ser acepciones de *carry*, y se podaban con
+  solo saber inglés.
+- v3 movió la palabra a *called*: las cuatro son acepciones de manual, pero el hueco lleva
+  una subordinada con *that*, y *named* y *summoned* exigen sintagma nominal. Mismo defecto
+  que v1, con otras palabras.
+
+**La regla:** elige la palabra examinada de forma que las cuatro acepciones candidatas
+compartan la misma subcategorización —el mismo tipo de complemento— en esa oración
+concreta. Después comprueba la sustitución una por una: las cuatro tienen que producir una
+frase gramatical. El modelo bueno es **q01** del mismo bloque: *support* → Props up ·
+Sustains · Endorses · Tolerates, cuatro verbos transitivos con objeto nominal, ninguno
+podable sin leer.
+
+Corolario práctico: los verbos con muchas acepciones suelen tener también muchos regímenes,
+que es justo lo que rompe el ítem. Adjetivos y sustantivos polisémicos dan menos guerra.
+
+### R2 · Arreglar un ítem lo convierte en un ítem nuevo
+
+Las tres versiones de q02 pasaron cada una por auditoría, y cada arreglo introdujo un
+defecto distinto de la misma familia. Un ítem corregido vuelve a la cola de auditoría
+entero: no se revisa «solo lo que cambió».
+
+### R3 · La lente que más rinde es la del estudiante que no lee
+
+De las cuatro lentes que se pasaron a q02 v3, dos dieron APTO y dos lo devolvieron. Las
+dos que lo devolvieron —el tramposo y la lingüística— llegaron por caminos distintos al
+mismo hecho comprobable. Y las dos que lo aprobaron **describían ese mismo hecho en su
+argumento**, dándolo por bueno. Cuando las lentes discrepan, gana el hecho verificable,
+no el recuento de votos.
+
 ## 5. Lo que no se hace, nunca
 
 - **No se copian ítems ni textos oficiales de College Board**, ni traducidos, ni

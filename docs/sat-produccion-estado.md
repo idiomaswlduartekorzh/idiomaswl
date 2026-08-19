@@ -5,8 +5,8 @@ Las reglas están en `docs/sat-loop-nocturno.md`; los parámetros y umbrales, en
 `docs/sat-ingles-blueprint.md`.
 
 - **Rama:** `feat/red-agentes-sat-ingles`
-- **Última vuelta:** 5 · 19 ago 2026 · B1a: q04 APTO por unanimidad, q02 en segunda ronda
-- **Siguiente tarea:** cerrar **B1a** — recoger el q02 de la segunda ronda y pasarle la lente del tramposo
+- **Última vuelta:** 6 · 19 ago 2026 · B1a cerrado 7/8 · q02 BLOQUEADO tras tres versiones
+- **Siguiente tarea:** **B1b** — bloque Information and Ideas (7 ítems). q02 se reescribe después, con la regla R1 en la mano
 
 ---
 
@@ -22,11 +22,11 @@ Se coge la primera sin marcar. Una por vuelta.
 
 ### Fase B — Rebanada vertical
 
-- [ ] **B1a** · M1 · bloque Craft and Structure (13–15 ítems) hasta APTO
-- [ ] **B1b** · M1 · bloque Information and Ideas (12–14 ítems) hasta APTO
-- [ ] **B1c** · M1 · bloque Standard English Conventions (11–15 ítems) hasta APTO
-- [ ] **B1d** · M1 · bloque Expression of Ideas (8–12 ítems) hasta APTO
-- [ ] **B1e** · M1 completo: auditorías de conjunto (sesgo, dificultad, simulación) + veredicto
+- [x] **B1a** · M1 · bloque Craft and Structure — **7 de 8 APTO**; q02 bloqueado (ver abajo)
+- [ ] **B1b** · M1 · bloque Information and Ideas (**7 ítems**, no 12–14) hasta APTO
+- [ ] **B1c** · M1 · bloque Standard English Conventions (**7 ítems**) hasta APTO
+- [ ] **B1d** · M1 · bloque Expression of Ideas (**5 ítems**) hasta APTO
+- [ ] **B1e** · (incluye reescribir q02 con la regla R1) · M1 completo: auditorías de conjunto (sesgo, dificultad, simulación) + veredicto
 - [ ] **B2** · `sat-integration`: `src/data/mocks/sat-set-1.ts` + registro + ruta servible
 - [ ] **B3** · Hub `/examenes/sat` con SEO completo (ver playbook)
 - [ ] **B4** · `npx tsc --noEmit` + `npm run build`, una vez
@@ -47,6 +47,7 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
 
 | Vuelta | Tarea | Resultado | Commit |
 |---|---|---|---|
+| 6 | B1a · cierre | ✅ **7 de 8 ítems APTO.** q02 devuelto por tercera vez y **bloqueado** según la regla de las tres rondas del playbook. De ahí salió la regla R1, escrita en el blueprint §4 bis: un words-in-context solo funciona si las cuatro opciones comparten régimen sintáctico | `86a9db4c`+ |
 | 5 | B1a · reauditoría a 3 lentes | 🔄 q04 **APTO por unanimidad** de tres auditores independientes. q02 vuelve por un defecto **nuevo**: el arreglo cambió una pista sintáctica por una semántica y se sigue podando sin leer. Notas del plan y del documento de textos corregidas | `8870e7fb`+ |
 | 4 | B1a · bloque Craft and Structure | 🔄 Plan del módulo (27 filas, verificado a máquina) + 8 textos originales + 8 ítems. El auditor coincidió **8 de 8** en la clave, pero devuelve **q04** (dos claves defendibles) y marca **q02** (dos distractores agramaticales: se resuelve sin leer). En corrección | (pendiente) |
 | 3 | A3 · contrato | ✅ Ficha `sat` en `exams.ts` (`available: false`), `buildSatMock()`, y `stimulusStyle: 'passage'` para que los textos largos se pinten como prosa. `/examenes/sat` ya se prerenderiza. `tsc` + `build` en verde | `feat(sat): el examen ya tiene sitio…` |
@@ -118,6 +119,7 @@ Lo que no se pudo hacer y por qué. Vacío es buena señal.
 
 | Qué | Por qué | Qué haría falta |
 |---|---|---|
+| **q02 del M1** — tres versiones, tres devoluciones | v1: dos opciones transitivas en hueco intransitivo. v2: dos opciones que no eran acepciones de *carry*. v3: palabra movida a *called*, pero *named* y *summoned* no admiten subordinada con *that* — mismo defecto que v1 con otras palabras | Reescribirlo aplicando **R1** (blueprint §4 bis): elegir la palabra examinada de modo que las cuatro acepciones compartan régimen y las cuatro sustituciones sean gramaticales. Se hace en B1e, no ahora: el playbook manda no gastar la noche en un solo ítem |
 | Orden de los tipos de ítem dentro de un dominio | College Board dice que ordena «por elemento de destreza y luego por dificultad», pero no publica cuál es esa secuencia | Nada bloqueante: se reordena un módulo terminado sin reescribir ítems. Convención provisional: el orden en que los lista la tabla oficial |
 
 ---

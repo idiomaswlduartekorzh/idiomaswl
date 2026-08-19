@@ -59,11 +59,13 @@ q02 con 415, sobra por casi el triple del mínimo.
 
 **Métricas**: 6 oraciones · longitud media de oración 13,3 palabras · léxico exigente: brass, loaves, lanes, leaned
 
-**Palabra que se examina**: **carried**, en «Her voice carried farther than the bell did».
+**Palabra que se examina**: **called**, en «Then she leaned out and called that the first loaves were ready».
 
-**Cómo lo fija el contexto**: Uso intransitivo con un comparativo de distancia frente a la campana, y la oración siguiente confirma el efecto: quienes no ven la panadería la oyen. El sentido es «llegar lejos, oírse a distancia».
+> ⚠️ **Corrección (19 ago 2026).** Era *carried*. Se movió en la tercera versión del ítem: con *carried* en ese hueco solo caben dos familias de acepción intransitiva —el sonido que se propaga y la moción que se aprueba—, y con dos acepciones no se hacen cuatro opciones sin inventar glosas que el estudiante pueda podar sin leer. *Called* tiene cuatro acepciones de manual (telefonear · nombrar · convocar · decir en voz alta) y el pasaje no hubo que tocarlo: la palabra ya estaba dentro. *carried* sigue en el texto como prosa y es lo que sostiene la clave desde la oración siguiente.
 
-> ⚠️ **Corrección (19 ago 2026).** Aquí decía que la estructura de la frase descarta «de golpe» las acepciones que piden complemento directo, «sin necesidad de matizar». Eso resultó ser el defecto, no la virtud: dos auditores independientes comprobaron que con esas opciones el ítem se resuelve sin leer el pasaje, que es justo lo que castiga la puerta 6. Las cuatro opciones tienen que encajar en el hueco y fallar por **sentido**. El modelo bueno es q01 de este mismo bloque.
+**Cómo lo fija el contexto**: Lo decide el **complemento**: detrás del verbo va una noticia («that the first loaves were ready»), no una persona a la que marcar, ni un nombre, ni alguien a quien hacer venir. Solo la acepción vocal la admite, y las dos oraciones siguientes la rematan —la voz llega más lejos que la campana, y la oyen quienes no ven la panadería—.
+
+> ⚠️ **Corrección (19 ago 2026).** Este apartado describía el diseño con *carried*, y decía que la estructura de la frase descartaba «de golpe» las acepciones con complemento directo, «sin necesidad de matizar». Eso resultó ser el defecto: el ítem se resolvía sin leer el pasaje, que es lo que castiga la puerta 6. La diferencia con el diseño actual, y es la que hay que entender antes de escribir el próximo words-in-context: **la poda por complemento vale si obliga a mirar el texto, y no vale si se puede hacer con solo conocer la palabra**. El modelo bueno es q01 de este mismo bloque.
 
 **Hecho real usado**: Ninguno, es ficción. Prosa narrativa original.
 
