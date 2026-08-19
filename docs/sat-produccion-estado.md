@@ -5,8 +5,8 @@ Las reglas están en `docs/sat-loop-nocturno.md`; los parámetros y umbrales, en
 `docs/sat-ingles-blueprint.md`.
 
 - **Rama:** `feat/red-agentes-sat-ingles`
-- **Última vuelta:** 14 · 19 ago 2026 · D2 ronda 1: **68,5 % → 48,1 %**. Quedan 8 ítems y una regla nueva (R9)
-- **Siguiente tarea:** ronda 3 sobre los 8 ítems que resisten, aplicando **R9** (registro) y recortando enunciados
+- **Última vuelta:** 16 · 19 ago 2026 · **34,7 %: la puerta 6 pasa.** Confirmando con panel de 16
+- **Siguiente tarea:** confirmar con panel de 16, arreglar los ítems que filtren de verdad, firmar el acta y publicar
 
 ---
 
@@ -60,6 +60,7 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
 
 | Vuelta | Tarea | Resultado | Commit |
 |---|---|---|---|
+| 16 | D2 · ronda 3 (R9) | ✅ **34,7 %** — la puerta 6 pasa por primera vez. Cinco ítems a cero aciertos sin leer (q01, q02, q04, q05, q07). Quedan 3 marcando en rojo, pero el recuento por ítem con 8 jueces es ruidoso: se confirma con 16 antes de tocar nada | `80b2b1e7` |
 | 14 | D2 · rediseño R8, ronda 1 | ✅ **68,5 % → 48,1 %** con el mismo panel. Ítems que filtran: 17 → 8. Nueve arreglados del todo (q01 7→0, q07 8→1, q20 8→1, q12 8→2). Cero textos y cero claves tocados. Sale **R9**: cuando la forma ya está igualada, lo que delata a la clave es que suena a la lectura más inteligente | `a368c9a2` |
 | 12 | D1 · calibración de la puerta 6 | ✅ **La hipótesis del auditor sobrehumano era falsa, y al revés**: el modelo pequeño saca 65 % y el intermedio 74 % sin leer los textos (panel 68,5 %). Las pistas son gruesas, no sutiles. **17 de 27 ítems filtran**; 8 de ellos los aciertan 8 de 8. El mejor ítem del examen es q02, el que costó cuatro versiones: 0 de 8 | `feat(sat): un modelo barato…` |
 | 10 | Reauditoría de los cuatro bloques | ⚠️ **Ninguno APTO.** Prueba a ciegas: CS 70 % · II 64 % · SEC 55 % · EOI 45 %, contra un techo de 35 %. Las 27 claves siguen confirmadas. q02 pasó por fin a la cuarta versión. Salieron R6, R7 y R8, y un fallo más del guardián: la puerta 3 no contaba los empates (11 % → 37 %) | `fa581882` |

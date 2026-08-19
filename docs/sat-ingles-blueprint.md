@@ -361,9 +361,17 @@ lo único accionable.
 |---|---|---|---|
 | 1 | Escritura normal + dos rondas de corrección ítem por ítem | **68,5 %** | 17 de 27 |
 | 2 | Rediseño R8 de los 17 juegos de opciones | **48,1 %** | 8 de 27 |
+| 3 | R9 sobre los 8 que resistieron: registro igualado y enunciados recortados | **34,7 %** ✅ | 3 de 27 |
 
-Veinte puntos en una ronda de R8, contra siete puntos por ronda arreglando ítem a ítem. El
-método vale casi tres veces más que el esfuerzo. Techo: 35 %.
+Veinte puntos en una ronda de R8 y trece más en la de R9, contra siete puntos por ronda
+arreglando ítem a ítem. El método vale casi tres veces más que el esfuerzo. Techo: 35 %.
+
+**Aviso sobre el ruido, que costó entenderlo.** Con ocho solucionadores la media es
+estable, pero el recuento por ítem no lo es: `q06` marcó 8/8, luego 5/8, luego 8/8 otra vez
+**sin que nadie lo tocara** entre la segunda y la tercera medición. Actuar sobre un ítem por
+un 8/8 que puede ser ruido es perseguir fantasmas; no tocarlo por un 5/8 que puede ser
+suerte es dejar pasar uno roto. Para decidir sobre un ítem concreto hace falta un panel
+mayor; ocho bastan para la media.
 
 ### La calibración del 19 ago 2026, y la hipótesis que mató
 
