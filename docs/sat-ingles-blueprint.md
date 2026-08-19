@@ -389,6 +389,11 @@ lo único accionable.
 | 2 | Rediseño R8 de los 17 juegos de opciones | **48,1 %** | 8 de 27 |
 | 3 | R9 sobre los 8 que resistieron: registro igualado y enunciados recortados | **34,7 %** ✅ | 3 de 27 |
 | 3 bis | La misma ronda 3, remedida con **16 jueces** en vez de 8 | **34,3 %** ✅ | 4 de 27 |
+| 4 | R10 sobre los 4 deducibles (16 jueces) | **27,3 %** ✅ | 3 de 27 |
+
+Con el azar puro en 25 %, un 27,3 % significa que el examen **ya casi no se puede resolver
+sin leerlo**. Dos ítems que estaban rotos del todo quedaron limpios: `q09` pasó de 15/16 a
+**0/16** y `q15` de 16/16 a **0/16**.
 
 Veinte puntos en una ronda de R8 y trece más en la de R9, contra siete puntos por ronda
 arreglando ítem a ítem. El método vale casi tres veces más que el esfuerzo. Techo: 35 %.
