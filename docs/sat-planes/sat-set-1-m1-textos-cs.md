@@ -79,9 +79,11 @@ q02 con 415, sobra por casi el triple del mínimo.
 
 **Métricas**: 4 oraciones · longitud media de oración 24,8 palabras · léxico exigente: filtration, settling basin, endorsement, clog, upstream
 
-**Palabra que se examina**: **qualified**, en «Their support was qualified, and the council knew it».
+**Palabra que se examina**: **cloudy**, en «beds of sand would remove most of what made the river water cloudy».
 
-**Cómo lo fija el contexto**: La oración que la contiene no da ninguna pista: hay que haber leído antes que los ingenieros pusieron una condición y se negaron a firmar sin ella, y que leer el informe como un respaldo llano «pierde su tono». Sentido: «limitado, con reservas». Quien lea solo la línea cae en la acepción de diccionario más frecuente («competente, con credenciales»), que además encaja gramaticalmente.
+> ⚠️ **Nota de diseño (19 ago 2026).** Se examinaba antes **qualified**, en «Their support was qualified». Se cambió porque el ítem se resolvía sin el pasaje (12 de 16 jueces a ciegas): dos de las cuatro opciones no eran acepciones de *qualified* y se podaban sabiendo inglés, y entre las dos que quedaban la colocación célebre —*qualified support*— tiene por glosa canónica «conditional», que era la clave. El texto no se ha tocado; se ha movido la palabra.
+
+**Cómo lo fija el contexto**: Las cuatro opciones son acepciones reales de *cloudy* —cielo cubierto, líquido turbio, idea confusa, veteado— y ninguna se poda por gramática: las cuatro caben en «made the river water ___». Decide el párrafo: el sustantivo del que cuelga el adjetivo es «the river water», y lo que la enturbia es algo que unos «beds of sand» pueden retirar, que los «clog within a year» y que obliga a una «settling basin upstream». Sentido: «turbia, sin transparencia». La acepción que se trae de memoria («cielo cubierto») y la que suena a lectura sofisticada («confusa») son ambas distractores.
 
 **Hecho real usado**: Hecho libre de historia de la ingeniería sanitaria: los filtros lentos de arena eran la técnica municipal habitual para clarificar agua de río a finales del siglo XIX, y se colmatan si el agua llega con demasiado sedimento (de ahí la balsa de decantación previa). Elmsford, el año 1889 y los tres ingenieros son invención mía: no hay ciudad ni informe reales detrás.
 

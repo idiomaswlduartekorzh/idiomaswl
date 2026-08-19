@@ -11,6 +11,36 @@ import type { SatItemMeta } from '../module-types'
  * Cuando un ítem pedía otra letra se movió el contenido de las opciones, nunca la clave:
  * el reparto se defiende a nivel de módulo y aquí solo se ve un cuarto del examen.
  *
+ * SEXTA VERSIÓN, solo de q13 y q14 (19 ago 2026). Con el examen ya por debajo de la
+ * puerta —27,3 % a ciegas contra un techo del 35 %—, estos dos eran los últimos que
+ * seguían marcándose sin el texto: 12 de 16 jueces cada uno. En ninguno fallaba el
+ * contenido; fallaba la superficie.
+ *
+ * - q13: el 2×2 de los valores está bien y no se toca —cada cifra sale exactamente dos
+ *   veces, así que contar repeticiones no delata nada—, pero las cuatro opciones eran la
+ *   misma cadena de 130 caracteres con dos dígitos cambiados. Ante cuatro clones se marca
+ *   el primero, y el primero era la clave. Ahora cada opción lleva otra sintaxis con los
+ *   mismos números: la clave abre por la especie plana; B da el rango y después los
+ *   extremos; C abre por el tramo de distancias; D da dos lecturas puntuales y cierra con
+ *   una negación invertida. Las estructuras se repartieron para que ninguna coincida con
+ *   un par de valores: B y D son las dos que abren por el gris y no comparten ni la cifra
+ *   gris ni la banda naranja, de modo que la forma no agrupa lo que agrupan las cifras.
+ * - q14: R9 en estado puro. La clave era la lectura narrativamente más redonda —el
+ *   reconocimiento inmediato y callado—, que es justo la que elige quien sabe cómo
+ *   terminan las historias sin haber leído esta. Ahora las cuatro son finales igual de
+ *   satisfactorios y las cuatro dan por hecho que acabó sabiendo quién era: lo que cambia
+ *   es cuándo lo supo y qué hizo con ello. La más bonita ya no es la clave, sino A, que
+ *   añade el motivo —callar para ahorrarle la explicación de once años— y por eso se lleva
+ *   el voto de quien decide por gusto narrativo. Cada distractor lo tumba una frase
+ *   distinta y ninguna sirve para dos: A, el comentario sobre la familia; B, la habitación
+ *   que él eligió antes de subir; D, el té que ya estaba servido cuando ella bajó.
+ *
+ * Medido sobre los dos: en q13 las cuatro opciones vuelven a empatar en solape —9 palabras
+ * cada una, así que la puerta 3 no ve variación que explotar— y quedan en 133/135/127/127
+ * caracteres, con la clave en segundo lugar. En q14 el solape es 5/2/4/5 con la clave en 4,
+ * ni la que más ni la que menos, y las longitudes son 122/122/121/119, con la clave
+ * tercera. Los `stimulus`, las claves y los cinco ítems restantes no se tocaron.
+ *
  * QUINTA VERSIÓN, solo de q09, q13 y q15 (19 ago 2026). Remedido el examen con dieciséis
  * jueces en vez de ocho, tres ítems de este bloque seguían acertándose a ciegas —q09 15/16,
  * q13 13/16, q15 16/16— mientras q10 y q12 caían a 1/16 y q11 a 4/16. En los tres, la forma
@@ -243,10 +273,10 @@ export const items: MCQQuestion[] = [
       'Lichens have no roots: whatever they need reaches them from the air, and so does whatever the air is carrying. That is why surveyors treat them as a gauge of local pollution. To measure the effect of vehicle exhaust, a team recorded the share of stone wall covered by two lichens—a bushy gray species and a flat orange one—at four distances from a busy highway. Each figure below is the average of ten walls.\n\nDistance from highway · bushy gray cover · flat orange cover\n20 m · 3% · 28%\n100 m · 8% · 33%\n400 m · 22% · 31%\n1,000 m · 30% · 29%',
     text: 'A researcher claims that only one of the two lichens is sensitive to vehicle exhaust. Which choice best describes data from the study that support that claim?',
     options: [
-      'Bushy gray cover rose from 3% at 20 m to 30% at 1,000 m, while flat orange cover stayed between 28% and 33% at all four distances.',
-      'Bushy gray cover rose from 3% at 20 m to 30% at 1,000 m, while flat orange cover stayed between 29% and 33% at all four distances.',
-      'Bushy gray cover rose from 3% at 20 m to 22% at 1,000 m, while flat orange cover stayed between 28% and 33% at all four distances.',
-      'Bushy gray cover rose from 3% at 20 m to 22% at 1,000 m, while flat orange cover stayed between 29% and 33% at all four distances.',
+      'Flat orange cover stayed between 28% and 33% at all four distances, while bushy gray cover climbed from 3% at 20 m to 30% at 1,000 m.',
+      'Bushy gray cover ran from 3% to 30% over the four distances, low at 20 m and high at 1,000 m, and flat orange cover never left 29%-33%.',
+      'Between 20 m and 1,000 m, bushy gray cover went up from 3% to 22%, and flat orange cover kept to 29%-33% at all four distances.',
+      'Bushy gray cover measured 3% at 20 m and 22% at 1,000 m; at no distance did flat orange cover fall below 28% or rise above 33%.',
     ],
     answer: 0,
   },
@@ -258,10 +288,10 @@ export const items: MCQQuestion[] = [
       'Nadia had been away for eleven years, and the innkeeper looked at her the way he would have looked at any traveler off the evening bus. He asked her to spell her name, and then asked again while he wrote it in the register. He remarked that no family by that name had lived in the village for a long time. Then he carried her bag up to the room she had slept in as a girl, which she had not asked for. When she came down at six, a pot of the bitter mountain tea her grandmother used to make was waiting on the table, and she had not mentioned that either.',
     text: 'Based on the text, what can most reasonably be inferred about the innkeeper?',
     options: [
-      "He had taken her for a traveler who had stayed there years before, and gave her that traveler's room and that traveler's tea without saying so.",
-      'He had placed her only when she came down at six, and the tea he made then was all he ever said about it.',
-      'He had placed her the moment she stepped off the bus, and gave no sign of it while he wrote her name in the register.',
-      'He had been told of her coming by a family in the village, and had the room open and the bitter tea waiting without letting on that he knew.',
+      'He had known her from the moment she got off the bus, and said nothing of her family to spare her explaining eleven years.',
+      'He did not know her at the desk, and it was the room upstairs, the one she used to sleep in, that brought her back to him.',
+      'He knew who she was before he picked up her bag, and nothing he said while he wrote her name in the register let it show.',
+      'He worked out who she was only when she came down at six, and the tea he made then was as near as he came to saying it.',
     ],
     answer: 2,
   },
@@ -366,13 +396,13 @@ export const meta: SatItemMeta[] = [
     tema: 'ciencia',
     razones: {
       A:
-        'Correcta: es la única lectura que sobrevive a recorrer las dos columnas enteras. El gris va de 3 % a los 20 m a 30 % a los 1.000 —la última fila, no la penúltima— y el naranja, fila por fila, da 28, 33, 31 y 29, de modo que cabe entero en 28-33 % y no se mueve con la distancia. Una serie que se multiplica por diez junto a otra que se queda quieta es el contraste que señala a una sola especie.',
+        'Correcta: es la única que aguanta si se recorren las dos columnas enteras. El naranja, fila por fila, da 28, 33, 31 y 29, así que cabe justo en 28-33 % y no se mueve con la distancia; el gris va de 3 % a los 20 m a 30 % a los 1.000, que es la última fila y no la penúltima. Una serie que se multiplica por diez junto a otra que se queda quieta es el contraste que señala a una sola especie.',
       B:
-        'Sube el suelo de la banda naranja una fila. A los 20 m el naranja está en 28 %, justo la distancia donde el efecto tendría que verse, y sin esa cifra la especie plana parece todavía más plana: por eso esta opción se lee como la evidencia más fuerte de las cuatro y es la más tentadora. Es el error de quien gasta la primera fila en la mitad gris y empieza a leer la columna naranja en la segunda.',
+        'Sube el suelo de la banda naranja una fila. A los 20 m el naranja marca 28 %, justo la distancia donde el efecto tendría que verse, y sin esa cifra la especie plana parece todavía más plana: por eso «never left 29%-33%» se lee como la evidencia más fuerte de las cuatro y es la opción más tentadora de las tres falsas. Es el error de quien gasta la primera fila en la mitad gris y empieza a leer la columna naranja en la segunda.',
       C:
-        'El 22 % existe, pero es la fila de los 400 m; a los 1.000 m el gris llega al 30 %. Todo lo demás de la opción es exacto, así que solo la descarta quien baja la columna gris hasta la última línea en vez de pararse en la penúltima, donde el salto de 8 % a 22 % ya parece contar la historia entera.',
+        'Recorta las dos columnas a la vez. Lee la gris de arriba abajo y se para cuando la subida ya se ve —22 % a los 400 m—, y la naranja de abajo arriba y se para también antes de tiempo —29, 31, 33—: se le escapan las dos filas que deciden, la de los 1.000 m y la de los 20 m. Ninguna de las dos columnas se lee entera y las dos mitades salen mal.',
       D:
-        'Hace los dos recortes a la vez. Lee la columna gris de arriba abajo y se detiene cuando la subida ya se ve (22 % a los 400 m), y la naranja de abajo arriba y se detiene también antes de tiempo (29, 31, 33): se le escapan las dos filas que deciden, la de los 1.000 m y la de los 20 m. Ninguna de las dos columnas se lee entera y las dos mitades salen mal.',
+        'La mitad naranja es exacta —28 % es el suelo real, y está en la fila de los 20 m—, así que la opción se sostiene hasta el punto y coma. El 22 % también existe, pero es la fila de los 400 m: a los 1.000 m el gris llega a 30 %. Solo la descarta quien baja la columna gris hasta la última línea en vez de pararse en la penúltima, donde el salto de 8 % a 22 % ya parece contar la historia entera.',
     },
     fuenteHecho:
       'Uso real de los líquenes como bioindicadores de calidad del aire; distancias, número de muros y los ocho porcentajes son inventados, y las especies van sin nombre científico.',
@@ -385,13 +415,13 @@ export const meta: SatItemMeta[] = [
     tema: 'literatura',
     razones: {
       A:
-        'Explica el acierto con una confusión de identidad, y la confusión no da lo que hay que explicar: la habitación es la que Nadia ocupó de niña y la infusión es la que hacía su abuela. Ningún huésped anterior deja esas dos costumbres. Quien la elige busca una causa que no obligue a que el posadero la conozca.',
+        'Le atribuye una delicadeza que una sola línea del texto desmiente: «He remarked that no family by that name had lived in the village for a long time». Sí habló de su familia, y lo hizo para negarla, no para ahorrarle la explicación de once años. Es la lectura más redonda de las cuatro —el reconocimiento inmediato convertido en tacto— y por eso la marca quien elige por gusto narrativo en lugar de por el texto.',
       B:
-        'Invierte el orden de la escena. A las seis el té ya estaba servido y la maleta llevaba rato en la habitación de su infancia: lo que el posadero sabía, lo sabía antes de que ella bajara. Atrae a quien lee la última imagen como el momento en que él la reconoce.',
+        'Hace del cuarto el disparador del recuerdo, y el cuarto ya estaba elegido antes de subir: «he carried her bag up to the room she had slept in as a girl, which she had not asked for». Para llevar la maleta a esa habitación y no a otra hay que saber ya quién es ella, de modo que la habitación no puede ser a la vez la prueba y la causa del reconocimiento. Es el error de quien busca un instante visible donde el texto solo deja conducta.',
       C:
-        'Correcta: hace de desconocido —le pide el nombre deletreado, y dos veces— y a la vez acierta la habitación en la que ella dormía de niña y el té de su abuela sin que ella pida ninguna de las dos cosas. Lo único que junta ambas conductas es que la reconoció y calló.',
+        'Correcta: hace de desconocido —le pide el nombre deletreado, y otra vez mientras lo escribe— y aun así sube la maleta a la habitación en la que ella dormía de niña, que ella no pidió. Elegir ese cuarto es anterior a cargar con la maleta, así que ya sabía quién era mientras estaba en el registro, y nada de lo que dijo allí lo dejó ver.',
       D:
-        'Traslada el conocimiento a un tercero para no atribuírselo al posadero. El texto no da rastro de ningún aviso previo, y la escena lo desmiente: a quien le han anunciado la llegada de Nadia no necesita hacerle deletrear su nombre dos veces para escribirlo.',
+        'Coloca el reconocimiento en la última escena, y es la última escena la que lo desmiente: cuando ella baja a las seis, la infusión «was waiting on the table», ya hecha. Lo que estaba servido a esa hora se preparó antes, igual que la habitación. Atrae a quien lee el té como respuesta —lo más cerca que él estuvo de decirlo en voz alta— y no comprueba a qué hora se puso al fuego.',
     },
     fuenteHecho: 'Ficción original; la infusión de montaña queda explicada por su función en la escena.',
   },

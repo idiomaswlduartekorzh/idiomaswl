@@ -49,12 +49,12 @@ export const items: MCQQuestion[] = [
     part: 1,
     stimulus:
       "When the council of the river port of Elmsford met in 1889 to consider a filtration plant, the three engineers it had hired did not simply approve the design. They agreed that beds of sand would remove most of what made the river water cloudy, but they warned that those beds would clog within a year unless the town also built a settling basin upstream, and they declined to sign until the basin appeared in the budget. Historians who read the engineers' report as an endorsement therefore miss its tone. Their support was qualified, and the council knew it.",
-    text: 'As used in the text, what does the word "qualified" most nearly mean?',
+    text: 'As used in the text, what does the word "cloudy" most nearly mean?',
     options: [
-      'Conditional',
-      'Credentialed',
-      'Enthusiastic',
-      'Unanimous',
+      'Murky',
+      'Overcast',
+      'Vague',
+      'Mottled',
     ],
     answer: 0,
   },
@@ -182,13 +182,13 @@ export const meta: SatItemMeta[] = [
     tema: 'historia',
     razones: {
       A:
-        'Correcta: los ingenieros pusieron una condición —la balsa de decantación— y «declined to sign until the basin appeared in the budget»; el apoyo iba con reservas.',
+        'Correcta: lo que está cloudy es «the river water», y el párrafo dice qué lo produce y cómo se quita. Unos «beds of sand» «would remove most of what made the river water cloudy» y por eso mismo «would clog within a year»: lo que enturbia el río va en suspensión, se queda en la arena y hay que decantarlo antes. Cloudy nombra aquí esa falta de transparencia del agua.',
       B:
-        'Acepción de diccionario más frecuente, titulado o competente, que además encaja en la frase; pero describiría a los ingenieros, y el sujeto de la oración es su apoyo.',
+        'Aplica la acepción primera del adjetivo, la del cielo cubierto, que es la que se trae de memoria sin mirar de qué se predica. En el pasaje no hay tiempo atmosférico de ninguna clase: el adjetivo cuelga de «the river water», y lo que lo pone así se retira con lechos de arena.',
       C:
-        'Se queda con la primera mitad del párrafo, donde los filtros de arena sí funcionan, e ignora la advertencia y el aviso de que leerlo como respaldo pierde el tono.',
+        'Toma la acepción figurada, la de una idea o una redacción poco claras, y el párrafo la invita porque termina en cómo leen los historiadores un informe y cómo pierden «its tone». Pero cloudy no califica al informe ni a nadie que piense: su sustantivo es el agua del río, y lo que la arena retira no es una confusión, es materia.',
       D:
-        'La proposición es verdadera: el texto sostiene que los tres coincidieron —«They agreed… they warned… they declined»—, y quien la elige la reconoce en el pasaje. Falla como glosa de la palabra: «qualified» dice de qué clase era el apoyo, no cuántos lo suscribían.',
+        'Lee cloudy como «veteado, con manchas», la acepción del mármol o del ámbar con nubes dentro, y se imagina el río a parches. El texto no describe ningún dibujo sobre el agua: describe algo repartido dentro de ella que los lechos «remove», que los atasca en un año y que obliga a «a settling basin upstream» para que sedimente antes de llegar.',
     },
     fuenteHecho:
       'Hecho libre de historia de la ingeniería sanitaria (filtros lentos de arena, siglo XIX); ciudad, fecha e informe inventados.',
