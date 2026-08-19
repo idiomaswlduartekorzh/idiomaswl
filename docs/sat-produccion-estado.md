@@ -5,8 +5,8 @@ Las reglas están en `docs/sat-loop-nocturno.md`; los parámetros y umbrales, en
 `docs/sat-ingles-blueprint.md`.
 
 - **Rama:** `feat/red-agentes-sat-ingles`
-- **Última vuelta:** —
-- **Siguiente tarea:** **A1**
+- **Última vuelta:** 1 · 18 ago 2026 · A1 hecha
+- **Siguiente tarea:** **A2** (guardián `check-sat-exam.mjs`)
 
 ---
 
@@ -16,7 +16,7 @@ Se coge la primera sin marcar. Una por vuelta.
 
 ### Fase A — Cimientos
 
-- [ ] **A1** · `sat-blueprint` verifica los parámetros contra College Board y quita los ⚠️ de `docs/sat-ingles-blueprint.md` §2
+- [x] **A1** · `sat-blueprint` verifica los parámetros contra College Board y quita los ⚠️ de `docs/sat-ingles-blueprint.md` §2
 - [ ] **A2** · `scripts/check-sat-exam.mjs` con las doce puertas de §4 + `npm run check:sat`
 - [ ] **A3** · Contrato: entrada `sat` en `src/data/exams.ts` + forma del set + ruta `/examenes/sat/practica/[id]`
 
@@ -47,9 +47,28 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
 
 | Vuelta | Tarea | Resultado | Commit |
 |---|---|---|---|
-| — | — | (todavía no ha corrido) | — |
+| 1 | A1 · verificar parámetros | ✅ Los 8 parámetros verificados contra 3 PDF oficiales de College Board. **Un error grave corregido** (ver abajo). Solo queda ⚠️ el orden de los tipos dentro de un dominio: College Board no lo publica | `f019620f` |
 
 ---
+
+## Lo aprendido que cambia el trabajo (leer antes de escribir ítems)
+
+1. **El reparto por módulo es 8 C&S / 7 I&I / 7 SEC / 5 EoI.** Los rangos 13–15 / 12–14 /
+   11–15 / 8–12 que teníamos son **del examen completo** (50 ítems operativos de los dos
+   módulos), no de un módulo. Un redactor que use los rangos viejos mete el doble de Craft
+   and Structure del que toca. Cualquier plan que proponga otro reparto se rechaza.
+2. **«Palabra» son 6 caracteres.** El rango 25–150 se mide dividiendo los caracteres
+   totales entre 6, no contando palabras separadas por espacios. El guardián (A2) tiene que
+   contar así.
+3. **Cada módulo lleva 27 ítems todos puntuables.** El examen real mete 25 operativas + 2
+   de prueba; nosotros no hacemos pretest.
+4. **Orden entre dominios, fijo e igual en los dos módulos:** C&S → I&I → SEC → EoI. Dentro
+   del dominio se agrupa por tipo de ítem y luego de fácil a difícil, **salvo SEC**, que va
+   de fácil a difícil sin agrupar.
+5. **M2-difícil también lleva ítems fáciles.** Lo que cambia entre M2-fácil y M2-difícil es
+   la media, no la desaparición de los fáciles.
+6. **Caducidad:** parámetros del ciclo 2026-27. Reverificar si se produce después de
+   agosto de 2027.
 
 ## Bloqueos
 
@@ -57,7 +76,7 @@ Lo que no se pudo hacer y por qué. Vacío es buena señal.
 
 | Qué | Por qué | Qué haría falta |
 |---|---|---|
-| — | — | — |
+| Orden de los tipos de ítem dentro de un dominio | College Board dice que ordena «por elemento de destreza y luego por dificultad», pero no publica cuál es esa secuencia | Nada bloqueante: se reordena un módulo terminado sin reescribir ítems. Convención provisional: el orden en que los lista la tabla oficial |
 
 ---
 
