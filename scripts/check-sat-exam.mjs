@@ -64,20 +64,42 @@ function fail(mod, gate, msg) { failures.push({ mod, gate, msg }) }
 function warn(mod, gate, msg) { warnings.push({ mod, gate, msg }) }
 
 // ── carga ────────────────────────────────────────────────────────────────────
+//
+// Un módulo se compone de sus bloques (`import { items } from './blocks/…'`), así que el
+// cargador tiene que resolver imports relativos entre archivos .ts. Sin esto, el guardián
+// no podía leer un módulo montado — y lo peor: lo decía como «no hay nada que comprobar».
+const cache = new Map()
+
 function loadTs(file) {
-  const out = ts.transpileModule(fs.readFileSync(file, 'utf8'), {
+  const resolved = path.resolve(file)
+  if (cache.has(resolved)) return cache.get(resolved)
+
+  const out = ts.transpileModule(fs.readFileSync(resolved, 'utf8'), {
     compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
   }).outputText
-  const sandbox = { exports: {}, module: { exports: {} }, require, console }
+
+  const localRequire = (spec) => {
+    if (!spec.startsWith('.')) return require(spec)
+    const base = path.resolve(path.dirname(resolved), spec)
+    for (const candidate of [base, `${base}.ts`, path.join(base, 'index.ts')]) {
+      if (fs.existsSync(candidate) && fs.statSync(candidate).isFile()) return loadTs(candidate)
+    }
+    // Solo quedan los imports de tipos, que el transpilador ya borró; si llega aquí uno
+    // de verdad, es mejor un objeto vacío que una excepción que pare el guardián entero.
+    return {}
+  }
+
+  const sandbox = { exports: {}, module: { exports: {} }, require: localRequire, console }
   sandbox.module.exports = sandbox.exports
-  vm.runInNewContext(out, sandbox, { filename: file })
+  vm.runInNewContext(out, sandbox, { filename: resolved })
+  cache.set(resolved, sandbox.exports)
   return sandbox.exports
 }
 
 function collectModules() {
   if (!fs.existsSync(satDir)) return
   for (const f of fs.readdirSync(satDir).sort()) {
-    if (!f.endsWith('.ts') || f === 'module-types.ts') continue
+    if (!f.endsWith('.ts') || f === 'module-types.ts' || f === 'build-sat-mock.ts') continue
     let exported
     try {
       exported = loadTs(path.join(satDir, f))
@@ -320,6 +342,15 @@ function checkModule(mod) {
 collectModules()
 
 if (!modules.length) {
+  // Un guardián que dice «nada que comprobar» cuando en realidad reventó al cargar es
+  // peor que no tener guardián: da luz verde por error. Los fallos mandan sobre el
+  // silencio.
+  if (failures.length) {
+    console.error(`\n❌ check:sat — no se pudo cargar el contenido SAT:\n`)
+    for (const f of failures) console.error(`   · ${f.mod}: ${f.msg}`)
+    console.error('')
+    process.exit(1)
+  }
   const msg = onlyModule ? `no existe el módulo «${onlyModule}»` : 'todavía no hay módulos SAT escritos'
   console.log(`ℹ️  check:sat — ${msg}. Nada que comprobar.`)
   process.exit(onlyModule ? 1 : 0)
