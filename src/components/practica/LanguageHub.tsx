@@ -43,6 +43,8 @@ export type LanguageHubProps = {
   toolsEyebrow?: string
   /** Va sobre la lista de niveles. Es donde entra la tarjeta de Historias. */
   beforeLevels?: React.ReactNode
+  /** Añadido bajo la descripción de cada nivel. Inglés lo usa para su barra de progreso. */
+  levelExtra?: (nivel: HubLevel) => React.ReactNode
 }
 
 export default function LanguageHub({
@@ -55,6 +57,7 @@ export default function LanguageHub({
   tools,
   toolsEyebrow = 'Herramientas adicionales',
   beforeLevels,
+  levelExtra,
 }: LanguageHubProps) {
   return (
     <div className="wlp-page" style={{ '--wlp-accent': accent } as React.CSSProperties}>
@@ -88,6 +91,7 @@ export default function LanguageHub({
                   </div>
                   <p className={s.desc}>{n.desc}</p>
                   {n.count && abierto ? <p className={s.count}>{n.count}</p> : null}
+                  {levelExtra?.(n)}
                 </div>
                 {abierto ? <span className={s.arrow} aria-hidden="true">→</span> : null}
               </div>
