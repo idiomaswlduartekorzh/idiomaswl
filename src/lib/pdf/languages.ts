@@ -1,14 +1,14 @@
-// Qué idiomas pueden salir hoy en PDF, y por qué los demás no.
+// Qué alfabeto necesita cada idioma para salir en PDF.
 //
-// Los PDF se escriben con Helvetica, la fuente estándar del formato, que solo
-// cubre el alfabeto latino (WinAnsi/CP1252). El coreano, el japonés y el ruso
-// no se pierden: se corrompen, salen como basura ilegible.
+// Helvetica, la fuente que trae el formato PDF, solo escribe latino. Los otros
+// tres alfabetos no se pierden: se corrompen. Por eso el coreano, el japonés y
+// el ruso llevan su tipografía incrustada dentro del archivo.
 //
-// Arreglarlo exige incrustar una fuente con esos alfabetos en el propio PDF:
-// para el ruso bastaría con ~400 KB de una Noto con cirílico; para el hangul y
-// el kana hacen falta varios MB, porque son miles de glifos. Es una decisión de
-// producto (peso de la descarga) y de licencia, no un despiste: hasta que se
-// tome, esas rutas no ofrecen botón de descarga en vez de entregar un PDF roto.
+// No son las Noto completas —la coreana sola son 10 MB— sino un recorte a los
+// caracteres que nuestro contenido usa de verdad: 209 KB el coreano, 491 KB el
+// japonés, 78 KB el ruso. Se generan con `scripts/build-pdf-fonts.mjs` y las
+// vigila `npm run check:pdf-fonts`, que falla si el contenido estrena un
+// carácter que el recorte no trae.
 
 export const IDIOMA_LABELS: Record<string, string> = {
   ingles: 'Inglés',
@@ -21,16 +21,31 @@ export const IDIOMA_LABELS: Record<string, string> = {
   coreano: 'Coreano',
 }
 
-/** Idiomas cuyo contenido se escribe en alfabeto latino y ya se puede imprimir. */
-const LATIN_SCRIPT = new Set(['ingles', 'aleman', 'frances', 'italiano', 'portugues'])
+/**
+ * Idiomas que necesitan una fuente incrustada, y cuál. Los que no están aquí se
+ * escriben con Helvetica, que ya sabe latino.
+ */
+const FUENTE_POR_IDIOMA: Record<string, 'ko' | 'ja' | 'ru'> = {
+  coreano: 'ko',
+  japones: 'ja',
+  ruso: 'ru',
+}
+
+/** El alfabeto que hay que incrustar para este idioma, si necesita alguno. */
+export function scriptFontDe(idioma: string): 'ko' | 'ja' | 'ru' | undefined {
+  return FUENTE_POR_IDIOMA[idioma]
+}
 
 export function idiomaLabel(idioma: string): string {
   return IDIOMA_LABELS[idioma] ?? idioma
 }
 
-/** ¿Se puede generar hoy un PDF legible de este idioma? */
+/**
+ * ¿Se puede generar un PDF legible de este idioma? Hoy los ocho: los latinos con
+ * Helvetica y los otros tres con su fuente recortada.
+ */
 export function canRenderPdf(idioma: string): boolean {
-  return LATIN_SCRIPT.has(idioma)
+  return idioma in IDIOMA_LABELS
 }
 
 /** Etiqueta de membrete: "Inglés A2". */

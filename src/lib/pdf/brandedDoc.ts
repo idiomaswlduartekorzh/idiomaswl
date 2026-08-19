@@ -25,6 +25,7 @@
 // generador no controla cuándo se parte una tabla. Como el membrete vive en los
 // márgenes y el contenido nunca entra ahí, dibujarlo encima no tapa nada.
 
+import { sanitize, pierdeCaracteres, type ScriptFont } from '@/lib/pdf/sanitize'
 import {
   WELEARN_BRAND,
   WELEARN_LOGO_BLUE,
@@ -61,51 +62,15 @@ const ORN = 90 / 100
 const WEDGE_SHORT = 21 * ORN    // 18,9 mm — cateto corto del triángulo
 const WEDGE_LONG = 36 * ORN     // 32,4 mm — cateto largo
 
-// ---- Saneado de texto -------------------------------------------------------
-// Las fuentes estándar de PDF (Helvetica) escriben en WinAnsi/CP1252. Lo que no
-// entra ahí NO se pierde: se corrompe. Comprobado generando un PDF de prueba:
-// "→" sale como !', "✓" como ', "❌" como 'L y la fonética AFI como "ÈkYÐ".
-// Por eso cada símbolo del contenido se traduce a mano a algo que sí existe.
-//
-// Ojo con lo que NO hay que tocar: CP1252 incluye la œ francesa, las comillas
-// curvas, la raya larga, los puntos suspensivos y el bolo. Filtrar por "> 255"
-// se los llevaba por delante y escribía mal el francés.
-const CP1252_EXTRA = new Set([...'€‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’“”•–—˜™š›œžŸ'])
+// El saneado vive en `./sanitize`, compartido con los guiones que recortan las
+// tipografías: si el recorte y el saneado no salieran del mismo sitio,
+// discreparían, y la discrepancia se ve como un hueco en el PDF del estudiante.
 
-const TYPOGRAPHIC: Array<[RegExp, string]> = [
-  [/→/g, ' -> '], [/←/g, ' <- '], [/↔/g, ' <-> '],
-  [/↑/g, ' (sube) '], [/↓/g, ' (baja) '], [/↗/g, ' (sube) '], [/↘/g, ' (baja) '],
-  [/[≈∼]/g, '~'], [/≠/g, ' =/= '], [/[−]/g, '-'], [/∞/g, 'infinito'],
-  [/[✓✔✅]/g, '[OK]'], [/[✗✘❌]/g, '[MAL]'], [/⚡/g, ''],
-]
+/** Saneado con la fuente por defecto (Helvetica). Dentro de un documento, usa su `S`. */
+export const S = (text: string) => sanitize(text)
 
-// La transcripción fonética es lo único que no se puede degradar: media
-// transcripción es peor que ninguna, porque enseña una pronunciación falsa. Si
-// dentro de /…/ o […] hay símbolos AFI, se quita el grupo entero.
-const IPA = /[ɐ-ʯʰ-˿̀-ͯ]/
-const IPA_GROUP = /[/[]([^/[\]]{0,40})[/\]]/g
-
-export function S(text: string): string {
-  if (!text) return text ?? ''
-  let out = text
-  for (const [re, to] of TYPOGRAPHIC) out = out.replace(re, to)
-  out = out.replace(IPA_GROUP, (whole, inner) => (IPA.test(inner) ? '' : whole))
-  out = [...out].filter((ch) => ch.codePointAt(0)! <= 0xff || CP1252_EXTRA.has(ch)).join('')
-  return out.replace(/ {2,}/g, ' ').trim()
-}
-
-/**
- * ¿Este texto lleva alfabetos que Helvetica no puede pintar (hangul, kana,
- * cirílico…)? Sirve para que un generador se niegue a entregar un PDF medio
- * vacío en vez de dárselo roto al estudiante.
- */
-export function hasUnsupportedScript(text: string): boolean {
-  if (!text) return false
-  let out = text
-  for (const [re, to] of TYPOGRAPHIC) out = out.replace(re, to)
-  out = out.replace(IPA_GROUP, (whole, inner) => (IPA.test(inner) ? '' : whole))
-  return [...out].some((ch) => ch.codePointAt(0)! > 0xff && !CP1252_EXTRA.has(ch))
-}
+/** ¿Lleva alfabetos que la fuente del documento no dibuja? */
+export const hasUnsupportedScript = (text: string, script?: ScriptFont) => pierdeCaracteres(text, script)
 
 // ---- Logo -------------------------------------------------------------------
 // Se pide una sola vez por sesión: un tema de gramática y una lectura seguidas
@@ -130,6 +95,42 @@ async function loadMark(): Promise<string | null> {
   return markCache
 }
 
+// ---- Fuentes de alfabetos no latinos ---------------------------------------
+// Helvetica, la fuente que trae el formato PDF, solo escribe latino. Para el
+// coreano, el japonés y el ruso hay que meter la tipografía DENTRO del archivo.
+//
+// Las de `public/fonts/` no son las Noto completas: están recortadas a los
+// caracteres que nuestro contenido usa de verdad (`scripts/build-pdf-fonts.mjs`).
+// Sin ese recorte, la coreana entera son 10 MB en cada hoja de gramática.
+export type { ScriptFont }
+
+const FONT_FAMILY = 'WLScript'
+const PESOS: Array<['normal' | 'bold', number]> = [['normal', 400], ['bold', 700]]
+
+// Una vez por sesión y peso: bajar dos veces la misma fuente para dos PDF
+// seguidos del mismo idioma sería tirar el ancho de banda del estudiante.
+const fontCache = new Map<string, string | null>()
+
+async function loadFontBase64(script: ScriptFont, peso: number): Promise<string | null> {
+  const key = `${script}-${peso}`
+  if (fontCache.has(key)) return fontCache.get(key)!
+  try {
+    const res = await fetch(`/fonts/welearn-${key}.ttf`)
+    if (!res.ok) throw new Error(String(res.status))
+    const buf = await res.arrayBuffer()
+    // base64 sin desbordar la pila: los .apply con arrays grandes revientan.
+    const bytes = new Uint8Array(buf)
+    let bin = ''
+    for (let i = 0; i < bytes.length; i += 0x8000) {
+      bin += String.fromCharCode(...bytes.subarray(i, i + 0x8000))
+    }
+    fontCache.set(key, btoa(bin))
+  } catch {
+    fontCache.set(key, null)
+  }
+  return fontCache.get(key)!
+}
+
 // ---- Metadatos del documento ------------------------------------------------
 export interface BrandedDocMeta {
   /** Etiqueta izquierda del membrete: "Inglés A2", "Recurso". */
@@ -143,6 +144,11 @@ export interface BrandedDocMeta {
   keywords?: string[]
   /** URL de la página viva de la que sale este material. */
   sourceUrl?: string
+  /**
+   * Alfabeto que hay que incrustar. Sin esto, el coreano, el japonés y el ruso
+   * no salen en blanco: salen corrompidos.
+   */
+  scriptFont?: ScriptFont
 }
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -156,6 +162,37 @@ export async function createBrandedDoc(meta: BrandedDocMeta) {
   const state = { y: HEADER_H }
 
   const mark = await loadMark()
+
+  // ---- tipografía del documento ----
+  // Si el material está en un alfabeto que Helvetica no escribe, se incrusta la
+  // fuente recortada de ese idioma y se usa para TODO el documento (también el
+  // membrete y el español), no solo para las palabras en lengua meta: partir
+  // cada línea en trozos por alfabeto es frágil y se nota en el interletraje.
+  let familia = 'helvetica'
+  if (meta.scriptFont) {
+    const cargadas = await Promise.all(
+      PESOS.map(async ([, peso]) => loadFontBase64(meta.scriptFont!, peso))
+    )
+    if (cargadas.every(Boolean)) {
+      PESOS.forEach(([estilo, peso], i) => {
+        const archivo = `welearn-${meta.scriptFont}-${peso}.ttf`
+        doc.addFileToVFS(archivo, cargadas[i])
+        doc.addFont(archivo, FONT_FAMILY, estilo)
+      })
+      familia = FONT_FAMILY
+    }
+    // Si la descarga falla nos quedamos en Helvetica: el PDF saldrá sin el
+    // alfabeto, pero saldrá. El generador ya avisa dentro del documento.
+  }
+
+  // Noto no trae cursiva y jsPDF no la finge: la cursiva cae a redonda.
+  const F = (estilo: 'normal' | 'bold' | 'italic' = 'normal') =>
+    doc.setFont(familia, familia === 'helvetica' ? estilo : estilo === 'italic' ? 'normal' : estilo)
+
+  // Sombrea la `S` del módulo a propósito: dentro de este documento el saneado
+  // sabe si hay una fuente que escribe el alfabeto, así que no lo filtra.
+  const conFuente = familia !== 'helvetica'
+  const S = (text: string) => sanitize(text, conFuente ? meta.scriptFont : undefined)
 
   doc.setProperties({
     title: S(meta.title),
@@ -228,11 +265,11 @@ export async function createBrandedDoc(meta: BrandedDocMeta) {
         // el mismo alias en todas las páginas: jsPDF incrusta el PNG una sola vez
         try { doc.addImage(mark, 'PNG', PAGE_W - M - logoW, 12, logoW, logoH, 'wl-mark', 'FAST') } catch { /* sin logo */ }
       } else {
-        doc.setFont('helvetica', 'bold').setFontSize(15).setTextColor(...NAVY)
+        F('bold').setFontSize(15).setTextColor(...NAVY)
         doc.text(WELEARN_BRAND.name, PAGE_W - M, 20, { align: 'right' })
       }
 
-      doc.setFont('helvetica', 'bold').setFontSize(8).setTextColor(...RED)
+      F('bold').setFontSize(8).setTextColor(...RED)
       doc.text(label, PAGE_W - M, 12 + logoH + 4.5, { align: 'right' })
 
       // regla del membrete: azul de lado a lado, con el arranque en rojo (los dos
@@ -242,9 +279,9 @@ export async function createBrandedDoc(meta: BrandedDocMeta) {
 
       // pie
       doc.setDrawColor(...SOFT).setLineWidth(0.3).line(M, PAGE_H - 16, PAGE_W - M, PAGE_H - 16)
-      doc.setFont('helvetica', 'bold').setFontSize(7.5).setTextColor(...NAVY)
+      F('bold').setFontSize(7.5).setTextColor(...NAVY)
       doc.text(S(`${copyright} · ${WELEARN_BRAND.site}`), M, PAGE_H - 11)
-      doc.setFont('helvetica', 'normal').setTextColor(...GRAY)
+      F('normal').setTextColor(...GRAY)
       doc.text(`Página ${p} de ${pages}`, PAGE_W - M, PAGE_H - 11, { align: 'right' })
       doc.setFontSize(6.4)
       doc.text(S(WELEARN_PDF_LICENSE), M, PAGE_H - 7)
@@ -261,11 +298,11 @@ export async function createBrandedDoc(meta: BrandedDocMeta) {
     if (state.y + space > FOOTER_TOP) addPage()
   }
 
-  function paragraph(text: string, opts: { size?: number; color?: RGB; gap?: number; lh?: number; style?: string; indent?: number } = {}) {
+  function paragraph(text: string, opts: { size?: number; color?: RGB; gap?: number; lh?: number; style?: 'normal' | 'bold' | 'italic'; indent?: number } = {}) {
     const size = opts.size ?? 10
     const lh = opts.lh ?? 4.9
     const indent = opts.indent ?? 0
-    doc.setFont('helvetica', opts.style ?? 'normal').setFontSize(size).setTextColor(...(opts.color ?? INK))
+    F(opts.style ?? 'normal').setFontSize(size).setTextColor(...(opts.color ?? INK))
     const lines = doc.splitTextToSize(S(text), contentW - indent) as string[]
     for (const line of lines) {
       ensure(lh)
@@ -279,7 +316,7 @@ export async function createBrandedDoc(meta: BrandedDocMeta) {
     state.y += opts.gapTop ?? 4
     ensure(10)
     const size = opts.size ?? 12
-    doc.setFont('helvetica', 'bold').setFontSize(size).setTextColor(...(opts.color ?? NAVY))
+    F('bold').setFontSize(size).setTextColor(...(opts.color ?? NAVY))
     const lines = doc.splitTextToSize(S(text), contentW) as string[]
     const step = size * 0.48 + 1.4
     let lastBaseline = state.y
@@ -296,12 +333,12 @@ export async function createBrandedDoc(meta: BrandedDocMeta) {
   /** Título grande de la primera página. */
   function title(text: string, kicker?: string) {
     if (kicker) {
-      doc.setFont('helvetica', 'bold').setFontSize(8).setTextColor(...RED)
+      F('bold').setFontSize(8).setTextColor(...RED)
       ensure(5)
       doc.text(S(kicker).toUpperCase(), M, state.y)
       state.y += 5.5
     }
-    doc.setFont('helvetica', 'bold').setFontSize(20).setTextColor(...NAVY)
+    F('bold').setFontSize(20).setTextColor(...NAVY)
     const lines = doc.splitTextToSize(S(text), contentW) as string[]
     for (const line of lines) { ensure(10); doc.text(line, M, state.y); state.y += 8.6 }
     state.y += 1.5
@@ -309,7 +346,7 @@ export async function createBrandedDoc(meta: BrandedDocMeta) {
 
   function bullet(text: string, opts: { color?: RGB; size?: number } = {}) {
     const size = opts.size ?? 10
-    doc.setFont('helvetica', 'normal').setFontSize(size)
+    F('normal').setFontSize(size)
     const lines = doc.splitTextToSize(S(text), contentW - 6) as string[]
     ensure(lines.length * 4.9)
     doc.setFillColor(...(opts.color ?? RED))
@@ -321,7 +358,7 @@ export async function createBrandedDoc(meta: BrandedDocMeta) {
 
   /** Recuadro de color para trucos, avisos y respuestas. */
   function callout(label: string, body: string, tint: RGB, accent: RGB) {
-    doc.setFont('helvetica', 'normal').setFontSize(9.2)
+    F('normal').setFontSize(9.2)
     const lines = doc.splitTextToSize(S(body), contentW - 10) as string[]
     const boxH = lines.length * 4.6 + 11
 
@@ -337,9 +374,9 @@ export async function createBrandedDoc(meta: BrandedDocMeta) {
     ensure(boxH + 2)
     doc.setFillColor(...tint).roundedRect(M, state.y, contentW, boxH, 2, 2, 'F')
     doc.setFillColor(...accent).rect(M, state.y, 1.6, boxH, 'F')
-    doc.setFont('helvetica', 'bold').setFontSize(8).setTextColor(...accent)
+    F('bold').setFontSize(8).setTextColor(...accent)
     doc.text(S(label).toUpperCase(), M + 5, state.y + 5.5)
-    doc.setFont('helvetica', 'normal').setFontSize(9.2).setTextColor(...INK)
+    F('normal').setFontSize(9.2).setTextColor(...INK)
     let ty = state.y + 10.5
     for (const line of lines) { doc.text(line, M + 5, ty); ty += 4.6 }
     state.y += boxH + 3.5
@@ -355,9 +392,9 @@ export async function createBrandedDoc(meta: BrandedDocMeta) {
       ensure(14)
       state.y += 2
       doc.setDrawColor(...SOFT).setLineWidth(0.3).roundedRect(M, state.y, contentW, 12, 2, 2, 'S')
-      doc.setFont('helvetica', 'bold').setFontSize(8).setTextColor(...NAVY)
+      F('bold').setFontSize(8).setTextColor(...NAVY)
       doc.text('Versión viva de este material, con ejercicios interactivos:', M + 4, state.y + 5)
-      doc.setFont('helvetica', 'normal').setFontSize(8).setTextColor(...GRAY)
+      F('normal').setFontSize(8).setTextColor(...GRAY)
       doc.text(S(meta.sourceUrl.replace(/^https?:\/\//, '')), M + 4, state.y + 9.2)
       state.y += 15
     }
@@ -368,6 +405,12 @@ export async function createBrandedDoc(meta: BrandedDocMeta) {
   return {
     doc, M, contentW, pageW: PAGE_W, pageH: PAGE_H, state, tableMargin,
     ensure, addPage, paragraph, heading, title, bullet, callout, save,
+    /** Saneado consciente de la fuente de este documento. Úsalo, no el `S` del módulo. */
+    S,
+    /** Fija la tipografía del documento con el estilo pedido. Devuelve el `doc` para encadenar. */
+    F,
+    /** Nombre de familia en uso: 'helvetica' o la fuente incrustada. */
+    familia,
     get y() { return state.y }, set y(v: number) { state.y = v },
   }
 }

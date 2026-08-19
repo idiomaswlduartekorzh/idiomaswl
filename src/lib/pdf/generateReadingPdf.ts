@@ -4,7 +4,7 @@
 
 import type { ReadingExercise, ReadingQuestion, TutorLocale, LocalizedText } from '@/lib/reading/types'
 import { createBrandedDoc, GRAY, GREEN, INK, NAVY, RED, SOFT } from '@/lib/pdf/brandedDoc'
-import { canRenderPdf, idiomaLabel, pdfFilename } from '@/lib/pdf/languages'
+import { canRenderPdf, idiomaLabel, pdfFilename, scriptFontDe } from '@/lib/pdf/languages'
 import { WELEARN_PDF_BASE_URL } from '@/lib/welearn-pdf-standards'
 
 // Los códigos del esquema de lectura no son los slugs de las rutas.
@@ -46,8 +46,9 @@ export async function generateReadingPdf(exercise: ReadingExercise, locale: Tuto
     subject: t(exercise.content.mission, locale),
     keywords: [exercise.classification.topic, exercise.classification.genre, `lectura ${idiomaLabel(idioma)}`],
     sourceUrl: `${WELEARN_PDF_BASE_URL}/practica/${idioma}/${nivel}/lectura/${exercise.slug}`,
+    scriptFont: scriptFontDe(idioma),
   })
-  const { doc, M, contentW, state, paragraph, heading, title, bullet, callout, ensure, tableMargin } = api
+  const { doc, M, contentW, state, paragraph, heading, title, bullet, callout, ensure, tableMargin , S, F, familia } = api
   const autoTable = (await import('jspdf-autotable')).default
 
   title(titulo, `Lectura · ${exercise.classification.genre} · ${exercise.level.displayLabel}`)
@@ -76,8 +77,8 @@ export async function generateReadingPdf(exercise: ReadingExercise, locale: Tuto
       head: [['Palabra', 'Significado']],
       body: exercise.content.vocabulary.map((v) => [v.surface, t(v.glosses, locale)]),
       margin: tableMargin,
-      styles: { fontSize: 8.8, cellPadding: 2, textColor: INK, lineColor: SOFT, lineWidth: 0.1, overflow: 'linebreak' },
-      headStyles: { fillColor: NAVY, textColor: [255, 255, 255], fontStyle: 'bold' },
+      styles: { font: familia, fontSize: 8.8, cellPadding: 2, textColor: INK, lineColor: SOFT, lineWidth: 0.1, overflow: 'linebreak' },
+      headStyles: { font: familia, fillColor: NAVY, textColor: [255, 255, 255], fontStyle: 'bold' },
       alternateRowStyles: { fillColor: [248, 249, 252] },
       columnStyles: { 0: { cellWidth: 45, fontStyle: 'bold' } },
     })
@@ -137,7 +138,7 @@ export async function generateReadingPdf(exercise: ReadingExercise, locale: Tuto
   })
   exercise.questions.forEach((q, i) => {
     ensure(14)
-    doc.setFont('helvetica', 'bold').setFontSize(9.5).setTextColor(...GREEN)
+    F('bold').setFontSize(9.5).setTextColor(...GREEN)
     doc.text(`${i + 1}. ${answerText(q)}`.slice(0, 120), M, state.y)
     state.y += 4.8
     const strategy = t(q.feedback?.strategy, locale)

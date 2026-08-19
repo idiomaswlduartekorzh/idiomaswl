@@ -18,7 +18,7 @@ export async function generateVerbsResourcePdf() {
     keywords: ['verbos irregulares', 'inglés', 'past simple', 'participio'],
     sourceUrl: `${WELEARN_PDF_BASE_URL}/practica/ingles/a2/gramatica/past-simple-irregular`,
   })
-  const { doc, state, contentW, paragraph, heading, title, tableMargin } = api
+  const { doc, state, contentW, paragraph, heading, title, tableMargin, familia } = api
   const autoTable = (await import('jspdf-autotable')).default
 
   title(
@@ -38,8 +38,8 @@ export async function generateVerbsResourcePdf() {
       head: [['Base', 'Pasado', 'Participio', 'Español']],
       body: group.verbs.map((v) => [v.base, v.past, v.participle, v.es + (v.note ? ` (${v.note})` : '')]),
       margin: tableMargin,
-      styles: { fontSize: 8.6, cellPadding: 1.9, textColor: INK, lineColor: SOFT, lineWidth: 0.1, overflow: 'linebreak' },
-      headStyles: { fillColor: NAVY, textColor: [255, 255, 255], fontStyle: 'bold' },
+      styles: { font: familia, fontSize: 8.6, cellPadding: 1.9, textColor: INK, lineColor: SOFT, lineWidth: 0.1, overflow: 'linebreak' },
+      headStyles: { font: familia, fillColor: NAVY, textColor: [255, 255, 255], fontStyle: 'bold' },
       alternateRowStyles: { fillColor: [248, 249, 252] },
       columnStyles: { 3: { cellWidth: contentW * 0.4 } },
     })

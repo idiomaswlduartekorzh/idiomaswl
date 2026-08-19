@@ -10,8 +10,8 @@
 // al final, para que se pueda imprimir y resolver a mano.
 
 import type { GrammarTopic, Level } from '@/data/grammar/types'
-import { createBrandedDoc, hasUnsupportedScript, S, GRAY, INK, NAVY, RED, SOFT, PURPLE, GREEN } from '@/lib/pdf/brandedDoc'
-import { canRenderPdf, idiomaLabel, levelLabel, pdfFilename } from '@/lib/pdf/languages'
+import { createBrandedDoc, hasUnsupportedScript, GRAY, INK, NAVY, RED, SOFT, PURPLE, GREEN } from '@/lib/pdf/brandedDoc'
+import { canRenderPdf, idiomaLabel, levelLabel, pdfFilename, scriptFontDe } from '@/lib/pdf/languages'
 import { WELEARN_PDF_BASE_URL } from '@/lib/welearn-pdf-standards'
 
 /** Un hueco `[[0]]` del texto se convierte en una raya numerada que se puede rellenar a mano. */
@@ -51,18 +51,22 @@ export async function generateGrammarPdf(topic: GrammarTopic, idioma: string, ni
     subject: topic.description,
     keywords: [topic.shortTitle, topic.category, `gramática ${idiomaLabel(idioma)}`],
     sourceUrl: url,
+    scriptFont: scriptFontDe(idioma),
   })
-  const { doc, M, contentW, state, paragraph, heading, title, bullet, callout, ensure, tableMargin } = api
+  const { doc, M, contentW, state, paragraph, heading, title, bullet, callout, ensure, tableMargin, S, F, familia } = api
   const autoTable = (await import('jspdf-autotable')).default
 
+  // `font: familia` no es redundante: jspdf-autotable no hereda la tipografía
+  // del documento, elige la suya. Sin esto, el cuerpo del PDF coreano sale bien
+  // y sus TABLAS salen como basura, que es justo lo que costó descubrir.
   const table = (head: string[], body: string[][], columnStyles?: Record<number, object>) => {
     autoTable(doc, {
       startY: state.y,
-      head: [head.map(S)],
-      body: body.map((r) => r.map(S)),
+      head: [head.map((c) => S(c))],
+      body: body.map((r) => r.map((c) => S(c))),
       margin: tableMargin,
-      styles: { fontSize: 8.8, cellPadding: 2, textColor: INK, lineColor: SOFT, lineWidth: 0.1, overflow: 'linebreak' },
-      headStyles: { fillColor: NAVY, textColor: [255, 255, 255], fontStyle: 'bold' },
+      styles: { font: familia, fontSize: 8.8, cellPadding: 2, textColor: INK, lineColor: SOFT, lineWidth: 0.1, overflow: 'linebreak' },
+      headStyles: { font: familia, fillColor: NAVY, textColor: [255, 255, 255], fontStyle: 'bold' },
       alternateRowStyles: { fillColor: [248, 249, 252] },
       columnStyles,
     })
@@ -77,10 +81,10 @@ export async function generateGrammarPdf(topic: GrammarTopic, idioma: string, ni
   callout('Objetivo', topic.guide.goal, [240, 245, 255], NAVY)
   state.y += 2.5
   ensure(20)
-  doc.setFont('helvetica', 'bold').setFontSize(9).setTextColor(...NAVY)
+  F('bold').setFontSize(9).setTextColor(...NAVY)
   doc.text('Fórmula', M, state.y); state.y += 4.8
   paragraph(topic.guide.formula, { size: 10, style: 'bold', gap: 2.5 })
-  doc.setFont('helvetica', 'bold').setFontSize(9).setTextColor(...NAVY)
+  F('bold').setFontSize(9).setTextColor(...NAVY)
   ensure(6); doc.text('Modelo', M, state.y); state.y += 4.8
   paragraph(topic.guide.model, { size: 10, color: INK, gap: 3 })
 
@@ -122,12 +126,12 @@ export async function generateGrammarPdf(topic: GrammarTopic, idioma: string, ni
     if (section.examples?.length) {
       section.examples.forEach((ex) => {
         ensure(6)
-        doc.setFont('helvetica', 'bold').setFontSize(9.5).setTextColor(...NAVY)
+        F('bold').setFontSize(9.5).setTextColor(...NAVY)
         const first = S(ex[0] ?? '')
         doc.text(first, M, state.y)
         const w = doc.getTextWidth(first)
         if (ex[1]) {
-          doc.setFont('helvetica', 'italic').setTextColor(...GRAY)
+          F('italic').setTextColor(...GRAY)
           doc.text(S(` — ${ex.slice(1).join(' · ')}`), M + w, state.y)
         }
         state.y += 5.2
@@ -195,21 +199,28 @@ export async function generateGrammarPdf(topic: GrammarTopic, idioma: string, ni
     levelsWithAnswers.forEach((level, li) => {
       const answers = answersOf(level)
       ensure(12)
-      doc.setFont('helvetica', 'bold').setFontSize(9.5).setTextColor(...NAVY)
+      F('bold').setFontSize(9.5).setTextColor(...NAVY)
       doc.text(S(`${li + 1}. ${level.title}`), M, state.y)
       state.y += 5
       paragraph(answers.map((a, i) => `${i + 1}. ${a}`).join('   ·   '), { size: 9.5, color: GREEN, indent: 4, gap: 3 })
     })
   }
 
-  // Aviso: si algún trozo del contenido traía un alfabeto que la fuente no
-  // cubre, se ha perdido al escribirlo. Mejor decirlo dentro del propio PDF que
-  // dejar al estudiante con un hueco que no sabe explicar.
-  const allText = [topic.title, topic.lead, topic.description, ...(topic.outcomes ?? [])].join(' ')
-  if (hasUnsupportedScript(allText)) {
+  // Aviso: si algo del contenido no cabía en la fuente de este documento, se ha
+  // caído al escribirlo. Pasa, por ejemplo, en la lección de japonés que compara
+  // con el coreano: la fuente japonesa no trae hangul, y servir esos kanji con
+  // la coreana le daría al estudiante formas de trazo equivocadas. Se prefiere
+  // perder el ejemplo y DECIRLO, antes que dejar un hueco mudo en la frase.
+  const allText = [
+    topic.title, topic.lead, topic.description,
+    ...(topic.outcomes ?? []),
+    ...(topic.guide?.decisions ?? []),
+    ...(topic.seo ?? []).flatMap((sec) => [sec.heading, ...sec.paragraphs]),
+  ].join(' ')
+  if (hasUnsupportedScript(allText, scriptFontDe(idioma))) {
     callout(
       'Nota',
-      'Parte del texto original usa caracteres que esta versión imprimible no puede representar. La versión completa está en la página del tema.',
+      'Parte del texto original usa un alfabeto que esta versión imprimible no puede escribir, y se ha omitido. La versión completa está en la página del tema.',
       [253, 242, 243], RED
     )
   }

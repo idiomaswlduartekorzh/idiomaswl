@@ -4,7 +4,7 @@
 
 import type { Historia, StoryQuestion } from '@/data/practica/historias/types'
 import { createBrandedDoc, GRAY, GREEN, INK, NAVY, RED, SOFT } from '@/lib/pdf/brandedDoc'
-import { canRenderPdf, idiomaLabel, pdfFilename } from '@/lib/pdf/languages'
+import { canRenderPdf, idiomaLabel, pdfFilename, scriptFontDe } from '@/lib/pdf/languages'
 import { WELEARN_PDF_BASE_URL } from '@/lib/welearn-pdf-standards'
 
 export async function generateStoryPdf(historia: Historia) {
@@ -22,8 +22,9 @@ export async function generateStoryPdf(historia: Historia) {
     subject: historia.metaDescription,
     keywords: ['comprensión', 'historia', idiomaLabel(idioma)],
     sourceUrl: `${WELEARN_PDF_BASE_URL}/practica/${idioma}/historias/${historia.slug}`,
+    scriptFont: scriptFontDe(idioma),
   })
-  const { doc, M, contentW, state, paragraph, heading, title, callout, ensure } = api
+  const { doc, M, contentW, state, paragraph, heading, title, callout, ensure , S, F } = api
 
   // Numeración corrida de las preguntas: el solucionario tiene que poder
   // referirse a ellas sin ambigüedad aunque estén repartidas en cinco secciones.
@@ -82,11 +83,11 @@ export async function generateStoryPdf(historia: Historia) {
     heading('Lengua que te llevas', { gapTop: 6 })
     historia.keyLanguage.forEach((k) => {
       ensure(8)
-      doc.setFont('helvetica', 'bold').setFontSize(9.8).setTextColor(...NAVY)
+      F('bold').setFontSize(9.8).setTextColor(...NAVY)
       const phrase = `${k.phrase}`
       doc.text(phrase, M, state.y)
       const w = doc.getTextWidth(phrase)
-      doc.setFont('helvetica', 'normal').setTextColor(...GRAY)
+      F('normal').setTextColor(...GRAY)
       doc.text(` — ${k.meaning}`, M + w, state.y)
       state.y += 5.2
     })
@@ -118,7 +119,7 @@ export async function generateStoryPdf(historia: Historia) {
   })
   key.forEach((k) => {
     ensure(12)
-    doc.setFont('helvetica', 'bold').setFontSize(9.5).setTextColor(...GREEN)
+    F('bold').setFontSize(9.5).setTextColor(...GREEN)
     const head = `${k.n}. ${k.answer}`
     const headLines = doc.splitTextToSize(head, contentW) as string[]
     headLines.forEach((l: string) => { ensure(5); doc.text(l, M, state.y); state.y += 4.8 })

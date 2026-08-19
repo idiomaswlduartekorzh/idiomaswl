@@ -7,7 +7,7 @@
 
 import type { VocabEntry, VocabLevel } from '@/data/practica/vocabulario/schema'
 import { createBrandedDoc, GRAY, INK, NAVY, SOFT } from '@/lib/pdf/brandedDoc'
-import { canRenderPdf, idiomaLabel, pdfFilename } from '@/lib/pdf/languages'
+import { canRenderPdf, idiomaLabel, pdfFilename, scriptFontDe } from '@/lib/pdf/languages'
 import { WELEARN_PDF_BASE_URL } from '@/lib/welearn-pdf-standards'
 
 // Cada idioma declara su `extra` como unión discriminada, y además por clase de
@@ -47,8 +47,9 @@ export async function generateVocabularyPdf(level: VocabLevel) {
     subject: `${total} palabras organizadas por ${level.eje}`,
     keywords: ['vocabulario', idiomaLabel(idioma), level.nivel],
     sourceUrl: `${WELEARN_PDF_BASE_URL}/practica/${idioma}/${level.nivel}/vocabulario`,
+    scriptFont: scriptFontDe(idioma),
   })
-  const { doc, state, paragraph, heading, title, callout, tableMargin, contentW } = api
+  const { doc, state, paragraph, heading, title, callout, tableMargin, contentW, familia } = api
   const autoTable = (await import('jspdf-autotable')).default
 
   title(
@@ -82,8 +83,8 @@ export async function generateVocabularyPdf(level: VocabLevel) {
       head: [['Palabra', 'Español', 'Clase', 'Hay que saber también', 'Ejemplo']],
       body: bloque.entradas.map((e) => [e.lemma, e.es, e.pos, anclaje(e), `${e.ejemplo.target} — ${e.ejemplo.es}`]),
       margin: tableMargin,
-      styles: { fontSize: 8, cellPadding: 1.8, textColor: INK, lineColor: SOFT, lineWidth: 0.1, overflow: 'linebreak' },
-      headStyles: { fillColor: NAVY, textColor: [255, 255, 255], fontStyle: 'bold', fontSize: 8 },
+      styles: { font: familia, fontSize: 8, cellPadding: 1.8, textColor: INK, lineColor: SOFT, lineWidth: 0.1, overflow: 'linebreak' },
+      headStyles: { font: familia, fillColor: NAVY, textColor: [255, 255, 255], fontStyle: 'bold', fontSize: 8 },
       alternateRowStyles: { fillColor: [248, 249, 252] },
       columnStyles: {
         0: { cellWidth: contentW * 0.14, fontStyle: 'bold' },
