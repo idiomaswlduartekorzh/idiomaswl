@@ -214,6 +214,62 @@ function IELTSPendingPanel({ items }: { items: import('./JoseDashboardServer').E
   )
 }
 
+// ─── Leads de simulacros ──────────────────────────────────────────────────────
+// El panel recibe leads de TODOS los simulacros (ICFES, SAT, IELTS, TOPIK...).
+// Sin la columna «Examen» un «63/100» del SAT se lee como un puntaje ICFES.
+const LEAD_EXAM_UNKNOWN = 'Sin identificar'
+
+// Las claves son los `name` de src/data/exams.ts, que es de donde sale la
+// etiqueta. Un examen sin color aquí se pinta gris: se ve, no se rompe.
+const LEAD_EXAM_COLORS: Record<string, string> = {
+  ICFES:                '#14215c',
+  SAT:                  '#6d28d9',
+  IELTS:                '#c8202e',
+  'TOEFL iBT':          '#2563eb',
+  'TOPIK I':            '#0f766e',
+  'Cambridge B2 First': '#b45309',
+  'Goethe-Zertifikat':  '#d4a017',
+  'DELF / DALF':        '#1a2ecc',
+  'CILS / CELI':        '#166534',
+  'CELPE-BRAS':         '#15803d',
+}
+
+function leadExamName(lead: LeadRow): string {
+  return lead.exam_label ?? LEAD_EXAM_UNKNOWN
+}
+
+function leadExamColor(lead: LeadRow): string {
+  return LEAD_EXAM_COLORS[leadExamName(lead)] ?? '#6b7280'
+}
+
+/** El mensaje de WhatsApp nombra el examen que hizo el lead. Antes le decía
+ *  «simulacro ICFES» a todo el mundo, incluido quien había hecho el SAT. */
+function leadWaHref(lead: LeadRow): string | null {
+  const digits = (lead.whatsapp ?? '').replace(/\D/g, '')
+  if (!digits) return null
+  const saludo = lead.name ? `Hola ${lead.name}` : 'Hola'
+  const examen = lead.exam_label ? `el simulacro ${lead.exam_label}` : 'un simulacro'
+  const msg = `${saludo}, vi que completaste ${examen} en WeLearn. ¿Te puedo ayudar a prepararte?`
+  return `https://wa.me/${digits}?text=${encodeURIComponent(msg)}`
+}
+
+function csvCell(v: string): string {
+  return `"${v.replace(/"/g, '""')}"`
+}
+
+function leadsCsv(leads: LeadRow[]): string {
+  const head = ['Nombre', 'WhatsApp', 'Email', 'Examen', 'Puntaje', 'Fecha']
+  const rows = leads.map(l => [
+    l.name ?? '',
+    l.whatsapp ?? '',
+    l.email ?? '',
+    leadExamName(l),
+    l.exam_score ?? '',
+    new Date(l.created_at).toLocaleString('es-CO'),
+  ])
+  return [head, ...rows].map(r => r.map(csvCell).join(',')).join('\n')
+}
+
 // ─── Main ─────────────────────────────────────────────────────────────────────
 type Tab = 'overview' | 'students' | 'leads'
 
@@ -230,6 +286,20 @@ const SIDEBAR_ITEMS: { Icon: React.ElementType; tab: Tab | null }[] = [
 
 export default function JoseDashboard({ data }: { data: DashboardData }) {
   const [activeTab, setActiveTab] = useState<Tab>('overview')
+  const [leadExam, setLeadExam] = useState<string>('todos')
+
+  // Exámenes presentes en los leads, de más a menos. Se calcula de los datos:
+  // cuando entre un examen nuevo aparece solo, sin tocar este archivo.
+  const leadExamOptions = Array.from(
+    data.leads.reduce(
+      (m, l) => m.set(leadExamName(l), (m.get(leadExamName(l)) ?? 0) + 1),
+      new Map<string, number>(),
+    ),
+  ).sort((a, b) => b[1] - a[1])
+
+  const visibleLeads = leadExam === 'todos'
+    ? data.leads
+    : data.leads.filter(l => leadExamName(l) === leadExam)
 
   const now = new Date()
   const dateStr = now.toLocaleDateString('es-ES', {
@@ -291,7 +361,7 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
             <button
               onClick={() => setActiveTab('leads')}
               style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, border: 'none', background: activeTab === 'leads' ? '#14215c' : 'transparent', color: activeTab === 'leads' ? '#fff' : MUTED, fontSize: 12, fontWeight: 600, cursor: 'pointer', flexShrink: 0 }}>
-              <MessageCircle size={13} /> Leads ICFES {data.icfesLeads.length > 0 && <span style={{ background: A, color: '#fff', borderRadius: 10, fontSize: 10, fontWeight: 800, padding: '1px 6px', marginLeft: 2 }}>{data.icfesLeads.length}</span>}
+              <MessageCircle size={13} /> Leads {data.leads.length > 0 && <span style={{ background: A, color: '#fff', borderRadius: 10, fontSize: 10, fontWeight: 800, padding: '1px 6px', marginLeft: 2 }}>{data.leads.length}</span>}
             </button>
             <Link
               href="/dashboard/admin/live/create"
@@ -349,53 +419,66 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
             </div>
           )}
 
-          {/* ── LEADS ICFES TAB ── */}
+          {/* ── LEADS TAB (todos los simulacros: ICFES, SAT, IELTS, TOPIK...) ── */}
           {activeTab === 'leads' && (
             <div>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16 }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16, gap: 12, flexWrap: 'wrap' }}>
                 <h1 style={{ margin: 0, fontSize: 22, fontWeight: 800, color: TEXT, letterSpacing: '-0.03em' }}>
-                  Leads ICFES 🇨🇴
+                  Leads de simulacros
                 </h1>
-                <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
-                  <span style={{ fontSize: 12, color: MUTED }}>{data.icfesLeads.length} registros</span>
+                <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>
+                  {leadExamOptions.length > 1 && (
+                    <select
+                      value={leadExam}
+                      onChange={e => setLeadExam(e.target.value)}
+                      aria-label="Filtrar leads por examen"
+                      style={{ padding: '6px 10px', borderRadius: 8, border: `1px solid ${BORDER}`, background: CARD, fontSize: 11, color: TEXT, fontWeight: 600, cursor: 'pointer' }}>
+                      <option value="todos">Todos los exámenes ({data.leads.length})</option>
+                      {leadExamOptions.map(([name, count]) => (
+                        <option key={name} value={name}>{name} ({count})</option>
+                      ))}
+                    </select>
+                  )}
+                  <span style={{ fontSize: 12, color: MUTED }}>{visibleLeads.length} registros</span>
                   <a
-                    href={`data:text/csv;charset=utf-8,${encodeURIComponent(
-                      ['Nombre', 'WhatsApp', 'Email', 'Puntaje', 'Fecha'].join(',') + '\n' +
-                      data.icfesLeads.map((l: LeadRow) =>
-                        [l.name ?? '', l.whatsapp ?? '', l.email ?? '', l.exam_score ?? '', new Date(l.created_at).toLocaleString('es-CO')].map(v => `"${v}"`).join(',')
-                      ).join('\n')
-                    )}`}
-                    download="leads-icfes.csv"
+                    href={`data:text/csv;charset=utf-8,${encodeURIComponent(leadsCsv(visibleLeads))}`}
+                    download={leadExam === 'todos' ? 'leads-simulacros.csv' : `leads-${leadExam.toLowerCase().replace(/[^a-z0-9]+/g, '-')}.csv`}
                     style={{ display: 'flex', alignItems: 'center', gap: 5, padding: '6px 12px', borderRadius: 8, border: `1px solid ${BORDER}`, background: CARD, fontSize: 11, color: TEXT, textDecoration: 'none', fontWeight: 600 }}>
                     <Download size={12} /> Exportar CSV
                   </a>
                 </div>
               </div>
               <Card>
-                {data.icfesLeads.length === 0 ? (
+                {visibleLeads.length === 0 ? (
                   <div style={{ padding: '3rem', textAlign: 'center' }}>
                     <p style={{ fontSize: 32, marginBottom: 8 }}>📋</p>
-                    <p style={{ color: MUTED, fontSize: 14 }}>Aún no hay leads. Cuando alguien complete un simulacro ICFES y deje sus datos, aparecerán aquí.</p>
+                    <p style={{ color: MUTED, fontSize: 14 }}>
+                      {data.leads.length === 0
+                        ? 'Aún no hay leads. Cuando alguien complete un simulacro y deje sus datos, aparecerán aquí.'
+                        : `Ningún lead de ${leadExam} por ahora.`}
+                    </p>
                   </div>
                 ) : (
                   <div style={{ overflowX: 'auto' }}>
                     <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
                       <thead>
                         <tr style={{ borderBottom: `2px solid ${BORDER}` }}>
-                          {['Nombre', 'WhatsApp', 'Email', 'Puntaje', 'Fecha'].map(h => (
+                          {['Nombre', 'WhatsApp', 'Email', 'Examen', 'Puntaje', 'Fecha'].map(h => (
                             <th key={h} style={{ padding: '8px 12px', textAlign: 'left', fontSize: 11, fontWeight: 700, color: MUTED, textTransform: 'uppercase', letterSpacing: '0.05em', whiteSpace: 'nowrap' }}>{h}</th>
                           ))}
                           <th style={{ padding: '8px 12px' }} />
                         </tr>
                       </thead>
                       <tbody>
-                        {data.icfesLeads.map((lead: LeadRow, i: number) => (
+                        {visibleLeads.map((lead: LeadRow, i: number) => {
+                          const waHref = leadWaHref(lead)
+                          return (
                           <tr key={lead.id} style={{ borderBottom: `1px solid ${BORDER}`, background: i % 2 === 0 ? CARD : BG, transition: 'background 0.1s' }}>
                             <td style={{ padding: '10px 12px', fontWeight: 600, color: TEXT }}>{lead.name ?? <span style={{ color: MUTED }}>—</span>}</td>
                             <td style={{ padding: '10px 12px' }}>
-                              {lead.whatsapp ? (
+                              {waHref ? (
                                 <a
-                                  href={`https://wa.me/${lead.whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent(`Hola ${lead.name ?? ''}, vi que completaste el simulacro ICFES en WeLearn. ¿Te puedo ayudar a prepararte?`)}`}
+                                  href={waHref}
                                   target="_blank" rel="noopener noreferrer"
                                   style={{ color: '#16a34a', fontWeight: 700, textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 4 }}>
                                   💬 {lead.whatsapp}
@@ -403,6 +486,11 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
                               ) : <span style={{ color: MUTED }}>—</span>}
                             </td>
                             <td style={{ padding: '10px 12px', color: MUTED, fontSize: 12 }}>{lead.email ?? '—'}</td>
+                            <td style={{ padding: '10px 12px' }}>
+                              <span style={{ display: 'inline-block', padding: '3px 9px', borderRadius: 20, background: `${leadExamColor(lead)}1a`, color: leadExamColor(lead), fontSize: 11, fontWeight: 800, whiteSpace: 'nowrap' }}>
+                                {leadExamName(lead)}
+                              </span>
+                            </td>
                             <td style={{ padding: '10px 12px' }}>
                               {lead.exam_score ? (
                                 <span style={{ fontWeight: 700, color: A, fontSize: 13 }}>{lead.exam_score}</span>
@@ -412,15 +500,18 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
                               {new Date(lead.created_at).toLocaleString('es-CO', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' })}
                             </td>
                             <td style={{ padding: '10px 12px' }}>
-                              <a
-                                href={`https://wa.me/${(lead.whatsapp ?? '').replace(/\D/g, '')}?text=${encodeURIComponent(`Hola ${lead.name ?? ''}, vi que completaste el simulacro ICFES en WeLearn. ¿Te puedo ayudar a prepararte?`)}`}
-                                target="_blank" rel="noopener noreferrer"
-                                style={{ display: 'inline-flex', alignItems: 'center', gap: 4, padding: '4px 10px', borderRadius: 8, background: '#dcfce7', color: '#16a34a', fontSize: 11, fontWeight: 700, textDecoration: 'none', whiteSpace: 'nowrap' }}>
-                                Escribir →
-                              </a>
+                              {waHref ? (
+                                <a
+                                  href={waHref}
+                                  target="_blank" rel="noopener noreferrer"
+                                  style={{ display: 'inline-flex', alignItems: 'center', gap: 4, padding: '4px 10px', borderRadius: 8, background: '#dcfce7', color: '#16a34a', fontSize: 11, fontWeight: 700, textDecoration: 'none', whiteSpace: 'nowrap' }}>
+                                  Escribir →
+                                </a>
+                              ) : <span style={{ color: MUTED, fontSize: 11 }}>Sin WhatsApp</span>}
                             </td>
                           </tr>
-                        ))}
+                          )
+                        })}
                       </tbody>
                     </table>
                   </div>

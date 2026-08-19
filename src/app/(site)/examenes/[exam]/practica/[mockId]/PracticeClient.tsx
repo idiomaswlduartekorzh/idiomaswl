@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { saveExamResult } from '@/lib/actions/saveExamResult';
 import { saveLead } from '@/lib/actions/saveLead';
 import type { Exam } from '@/data/exams';
-import type { MockExam, MCQQuestion, MockSection } from '@/data/mocks/types';
+import type { MockExam, MCQQuestion, MockSection, QuestionInsight } from '@/data/mocks/types';
 import { hasGuidedMock } from '@/data/icfes/guided-registry';
 
 // ── Notices grid (ICFES Parte 1) ─────────────────────────────────────────────
@@ -545,6 +545,34 @@ function calcResults(mock: MockExam, answers: Record<string, number>) {
   return { sections, totalCorrect, totalQuestions, score };
 }
 
+// Desglose por dominio, para los simulacros cuyas secciones traen `insights` con `domain`
+// (hoy, solo el SAT). Devuelve null cuando no hay dominios: entonces la pantalla usa el
+// desglose por parte de siempre, que es lo que ven ICFES, IELTS, TOEFL y los de idiomas.
+//
+// Existe porque un simulacro de una sola sección no tiene nada que desglosar por parte:
+// una barra que dice «Parte 1: 19/27» repite el número de arriba y no enseña nada.
+function calcDomainResults(mock: MockExam, answers: Record<string, number>) {
+  const rows: { key: string; label: string; correct: number; total: number }[] = [];
+  const byKey = new Map<string, (typeof rows)[number]>();
+  for (const sec of mock.sections) {
+    if (!sec.insights) continue;
+    const qs = sec.questions.filter(q => q.type === 'mcq' || q.type === 'dialog') as MCQQuestion[];
+    for (const q of qs) {
+      const domain = sec.insights[q.id]?.domain;
+      if (!domain) continue;
+      let row = byKey.get(domain);
+      if (!row) {
+        row = { key: domain, label: sec.insights[q.id]?.domainLabel ?? domain, correct: 0, total: 0 };
+        byKey.set(domain, row);
+        rows.push(row);   // primer ítem de cada dominio: conserva el orden del examen
+      }
+      row.total += 1;
+      if (answers[q.id] === q.answer) row.correct += 1;
+    }
+  }
+  return rows.length ? rows : null;
+}
+
 // ── Sub-components ────────────────────────────────────────────────────────────
 
 function Timer({ totalSecs, onExpire }: { totalSecs: number; onExpire: () => void }) {
@@ -637,7 +665,7 @@ function StimulusBox({ question }: { question: MCQQuestion }) {
     // SAT: cada ítem lleva su propio texto. Reutiliza la caja de lectura de sección —
     // el <pre> monoespaciado del estilo por defecto es ilegible para 150 palabras de prosa.
     return (
-      <div className="prac-passage-box">
+      <div className="prac-passage-box prac-passage-box--item">
         {question.stimulusLabel && <p className="prac-passage-box__label">{question.stimulusLabel}</p>}
         <p className="prac-passage-box__text">{question.stimulus}</p>
       </div>
@@ -780,6 +808,76 @@ function SectionTabs({
   );
 }
 
+// Las explicaciones del ítem, en la pantalla de revisión.
+//
+// Siempre la de la clave —también cuando se acertó, porque acertar por descarte no es
+// haber entendido— y, si se falló, la de la opción que se eligió: ahí está el error
+// concreto que hay que dejar de cometer. Sin `insight` no pinta nada, que es lo que les
+// pasa a los exámenes que todavía no traen razones escritas.
+function AnswerRationale({
+  insight,
+  answerIdx,
+  userAnsIdx,
+  accent,
+}: {
+  insight?: QuestionInsight;
+  answerIdx: number;
+  userAnsIdx: number | undefined;
+  accent: string;
+}) {
+  const rationales = insight?.rationales;
+  if (!rationales) return null;
+
+  const keyLetter = String.fromCharCode(65 + answerIdx);
+  // Los redactores del SAT abren la razón de la clave con «Correcta:», que aquí ya lo
+  // dice el rótulo. Se quita solo esa etiqueta inicial; si algún día dejan de ponerla,
+  // la expresión no encuentra nada y el texto sale entero.
+  const keyWhyRaw = rationales[keyLetter]?.replace(/^\s*Correcta\s*[:.—-]\s*/i, '');
+  const keyWhy = keyWhyRaw ? keyWhyRaw.charAt(0).toUpperCase() + keyWhyRaw.slice(1) : undefined;
+  const chosenLetter = userAnsIdx !== undefined ? String.fromCharCode(65 + userAnsIdx) : null;
+  const chosenWhy =
+    chosenLetter && userAnsIdx !== answerIdx ? rationales[chosenLetter] : undefined;
+  if (!keyWhy && !chosenWhy) return null;
+
+  const box = (border: string): React.CSSProperties => ({
+    background: 'var(--bg-2)',
+    borderLeft: `3px solid ${border}`,
+    borderRadius: 8,
+    padding: '0.7rem 0.85rem',
+  });
+  const label: React.CSSProperties = {
+    fontSize: '0.66rem',
+    fontWeight: 700,
+    textTransform: 'uppercase',
+    letterSpacing: '0.08em',
+    color: 'var(--muted)',
+    margin: '0 0 0.35rem',
+  };
+  const body: React.CSSProperties = {
+    fontSize: '0.86rem',
+    lineHeight: 1.65,
+    color: 'var(--ink)',
+    margin: 0,
+  };
+
+  return (
+    <div style={{ marginTop: '0.8rem', display: 'flex', flexDirection: 'column', gap: '0.55rem' }}>
+      {keyWhy && (
+        <div style={box(accent)}>
+          <p style={label}>Por qué {keyLetter} es la correcta</p>
+          <p style={body}>{keyWhy}</p>
+        </div>
+      )}
+      {chosenWhy && (
+        <div style={box('var(--line-soft)')}>
+          <p style={label}>Por qué {chosenLetter}, la que elegiste, no lo es</p>
+          <p style={body}>{chosenWhy}</p>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function ResultsView({
   mock,
   exam,
@@ -793,6 +891,12 @@ function ResultsView({
 }) {
   const results = calcResults(mock, answers);
   const allQuestions = getAllQuestions(mock) as MCQQuestion[];
+  // El SAT no se puntúa de 0 a 100: su escala oficial va de 200 a 800 y sale de una tabla
+  // de conversión que cambia en cada examen. Enseñar aquí un porcentaje con el rótulo
+  // «sobre 100 puntos» sería inventarle una escala que no existe, así que se muestran
+  // aciertos y se dice, debajo del número, qué no es esto.
+  const isSat = exam.slug === 'sat';
+  const domainResults = calcDomainResults(mock, answers);
   const weakestSection = results.sections.reduce((weakest, section) => {
     const sectionRate = section.total ? section.correct / section.total : 0;
     const weakestRate = weakest.total ? weakest.correct / weakest.total : 0;
@@ -802,32 +906,63 @@ function ResultsView({
   return (
     <div className="prac-results">
       <div className="prac-results__hero" style={{ '--exam-color': exam.color } as React.CSSProperties}>
-        <p className="prac-results__label">{exam.slug === 'icfes' ? 'Porcentaje de aciertos' : 'Resultado final'}</p>
-        <div className="prac-results__score">{results.score}</div>
-        <p className="prac-results__score-sub">{exam.slug === 'icfes' ? '% de esta práctica' : 'sobre 100 puntos'}</p>
-        <p className="prac-results__fraction">{results.totalCorrect} / {results.totalQuestions} correctas</p>
+        <p className="prac-results__label">
+          {isSat ? 'Aciertos' : exam.slug === 'icfes' ? 'Porcentaje de aciertos' : 'Resultado final'}
+        </p>
+        <div className="prac-results__score">{isSat ? results.totalCorrect : results.score}</div>
+        <p className="prac-results__score-sub">
+          {isSat
+            ? `de ${results.totalQuestions} preguntas`
+            : exam.slug === 'icfes' ? '% de esta práctica' : 'sobre 100 puntos'}
+        </p>
+        <p className="prac-results__fraction">
+          {isSat ? `${results.score}% de aciertos` : `${results.totalCorrect} / ${results.totalQuestions} correctas`}
+        </p>
         {exam.slug === 'icfes' && (
           <p style={{ maxWidth: 560, margin: '0.8rem auto 0', lineHeight: 1.55, opacity: 0.82 }}>
             Esta práctica propia abreviada no reproduce la extensión estándar 2026-2 ni predice tu puntaje oficial ICFES.
           </p>
         )}
+        {isSat && (
+          <p style={{ maxWidth: 580, margin: '0.8rem auto 0', lineHeight: 1.55, opacity: 0.82 }}>
+            Esto <strong>no es un puntaje de 200 a 800</strong>. La escala oficial del SAT sale de una tabla
+            de conversión que cambia en cada examen, así que aquí ves aciertos sobre el total, que es lo
+            honesto. Y es el <strong>módulo 1 de los 2</strong> que tiene Reading and Writing: la sección
+            completa son 54 preguntas.
+          </p>
+        )}
       </div>
 
       <div className="prac-results__sections">
-        {results.sections.map(sec => {
-          const pct = Math.round((sec.correct / sec.total) * 100);
-          return (
-            <div key={sec.part} className="prac-results__sec">
-              <div className="prac-results__sec-header">
-                <span>Parte {sec.part}</span>
-                <span style={{ color: exam.color, fontWeight: 700 }}>{sec.correct}/{sec.total}</span>
-              </div>
-              <div className="prac-results__bar">
-                <div className="prac-results__bar-fill" style={{ width: `${pct}%`, background: exam.color }} />
-              </div>
-            </div>
-          );
-        })}
+        {domainResults
+          ? domainResults.map(row => {
+              const pct = row.total ? Math.round((row.correct / row.total) * 100) : 0;
+              return (
+                <div key={row.key} className="prac-results__sec">
+                  <div className="prac-results__sec-header">
+                    <span>{row.label}</span>
+                    <span style={{ color: exam.color, fontWeight: 700 }}>{row.correct}/{row.total}</span>
+                  </div>
+                  <div className="prac-results__bar">
+                    <div className="prac-results__bar-fill" style={{ width: `${pct}%`, background: exam.color }} />
+                  </div>
+                </div>
+              );
+            })
+          : results.sections.map(sec => {
+              const pct = Math.round((sec.correct / sec.total) * 100);
+              return (
+                <div key={sec.part} className="prac-results__sec">
+                  <div className="prac-results__sec-header">
+                    <span>Parte {sec.part}</span>
+                    <span style={{ color: exam.color, fontWeight: 700 }}>{sec.correct}/{sec.total}</span>
+                  </div>
+                  <div className="prac-results__bar">
+                    <div className="prac-results__bar-fill" style={{ width: `${pct}%`, background: exam.color }} />
+                  </div>
+                </div>
+              );
+            })}
       </div>
 
       <div className="prac-results__review">
@@ -850,7 +985,17 @@ function ResultsView({
                       </span>
                     </div>
                     {q.stimulus && (
-                      <pre className="prac-review-item__stimulus">{q.stimulus}</pre>
+                      // Un texto de 150 palabras en monoespaciado de 12 px no se lee, y la
+                      // revisión es justo donde el estudiante vuelve a leer para aprender.
+                      // Misma caja de prosa que ya usa la pantalla de examen.
+                      q.stimulusStyle === 'passage' ? (
+                        <div className="prac-passage-box prac-passage-box--item">
+                          {q.stimulusLabel && <p className="prac-passage-box__label">{q.stimulusLabel}</p>}
+                          <p className="prac-passage-box__text">{q.stimulus}</p>
+                        </div>
+                      ) : (
+                        <pre className="prac-review-item__stimulus">{q.stimulus}</pre>
+                      )
                     )}
                     <p className="prac-review-item__q">{q.text}</p>
                     <div className="prac-review-item__opts">
@@ -864,6 +1009,12 @@ function ResultsView({
                         </div>
                       ))}
                     </div>
+                    <AnswerRationale
+                      insight={sec.insights?.[q.id]}
+                      answerIdx={q.answer}
+                      userAnsIdx={userAns}
+                      accent={exam.color}
+                    />
                   </div>
                 );
               })}
@@ -898,9 +1049,13 @@ type Phase = 'intro' | 'exam' | 'lead' | 'results';
 // ── Lead gate (shown after exam, before results) ───────────────────────────────
 function LeadGateView({
   exam,
+  breakdownLabel,
   onSubmit,
 }: {
   exam: Exam;
+  // Qué desglose se promete antes de pedir los datos. Tiene que ser el que la pantalla
+  // de resultados enseña de verdad: el SAT lo da por dominio, los demás por parte.
+  breakdownLabel: string;
   onSubmit: (lead: { name: string; email: string; whatsapp: string }) => Promise<void>;
 }) {
   const [name, setName] = useState('');
@@ -926,7 +1081,7 @@ function LeadGateView({
         <div className="prac-lead-gate__icon">🎯</div>
         <h2 className="prac-lead-gate__title">¡Tu simulacro está listo!</h2>
         <p className="prac-lead-gate__sub">
-          Déjanos tus datos y te mostramos tu resultado, análisis por parte y respuestas correctas.
+          Déjanos tus datos y te mostramos tu resultado, {breakdownLabel} y respuestas correctas.
           También te enviaremos consejos personalizados para mejorar tu puntaje.
         </p>
         <form onSubmit={handleSubmit} className="prac-lead-gate__form">
@@ -1051,15 +1206,23 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
         whatsapp: lead.whatsapp,
         email: lead.email,
         examSlug: exam.slug,
-        examScore: `${score}/100 (${correct}/${total} correctas)`,
-        source: 'icfes-practica',
+        // El SAT no tiene escala de 100: guardar «63/100» ahí hace que en el panel se lea
+        // como un puntaje ICFES, que sí va de 0 a 100. Para el SAT va el bruto y nada más.
+        examScore: exam.slug === 'sat' ? `${correct}/${total} correctas` : `${score}/100 (${correct}/${total} correctas)`,
+        // El balde del lead es el del examen que acaba de hacer. Estuvo fijo en
+        // 'icfes-practica' hasta el 19 ago 2026, así que todo aspirante al SAT caía en la
+        // lista del ICFES. Para el ICFES el valor no cambia (su slug es 'icfes').
+        source: `${exam.slug}-practica`,
       }),
       saveExamResult({
         examSlug: exam.slug,
         examName: exam.name,
         mockTitle: mock.title,
-        totalScore: score,
-        totalMax: 100,
+        // Mismo motivo: el panel del estudiante enseñaba «48/100» para un simulacro cuya
+        // pantalla de resultados dice «13 aciertos de 27». Dos cifras distintas del mismo
+        // examen es peor que no tener ninguna.
+        totalScore: exam.slug === 'sat' ? correct : score,
+        totalMax: exam.slug === 'sat' ? total : 100,
         totalLabel: `${correct}/${total} correctas`,
         skills: mock.sections.map(sec => {
           const sqs = sec.questions.filter(q => q.type === 'mcq') as MCQQuestion[];
@@ -1079,9 +1242,18 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
   }, []);
 
   if (phase === 'lead') {
+    // Se promete el desglose que la pantalla de resultados va a enseñar de verdad. Con
+    // un simulacro de una sola sección, «análisis por parte» era una barra que repetía
+    // el marcador; el SAT lo da por dominio porque sus ítems traen dominio.
+    const hasDomains = mock.sections.some(s => s.insights &&
+      s.questions.some(q => s.insights?.[q.id]?.domain));
     return (
       <div className="prac-shell">
-        <LeadGateView exam={exam} onSubmit={handleLeadSubmit} />
+        <LeadGateView
+          exam={exam}
+          breakdownLabel={hasDomains ? 'análisis por dominio' : 'análisis por parte'}
+          onSubmit={handleLeadSubmit}
+        />
       </div>
     );
   }
@@ -1106,7 +1278,7 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
           <div className="prac-intro__stats">
             <div className="prac-intro__stat">
               <span className="prac-intro__stat-val">{mock.sections.length}</span>
-              <span className="prac-intro__stat-lbl">Partes</span>
+              <span className="prac-intro__stat-lbl">{mock.sections.length === 1 ? 'Parte' : 'Partes'}</span>
             </div>
             <div className="prac-intro__stat">
               <span className="prac-intro__stat-val">{totalQ}</span>

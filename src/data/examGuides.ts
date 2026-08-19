@@ -89,6 +89,23 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
         ],
       },
       {
+        h: 'Qué pasa cuando le das a empezar',
+        body: [
+          'Lo contamos aquí para que no descubras nada a mitad de camino. Antes de arrancar hay una pantalla con las reglas y <strong>el cronómetro todavía no corre</strong>: empieza cuando pulsas «Empezar examen». Desde ahí tienes 32 minutos para las 27 preguntas, te mueves entre ellas libremente, puedes marcar las dudosas para volver y puedes entregar antes de tiempo. Si el reloj llega a cero, se entrega solo con lo que llevas.',
+          'Al entregar aparece <strong>un formulario con nombre, correo y WhatsApp, y va antes de las respuestas</strong>, no después. No se crea cuenta ni contraseña y no se pide tarjeta: el simulacro es gratis, y esos datos son la contrapartida. Preferimos que lo sepas ahora y no cuando ya invertiste media hora.',
+          'En cuanto lo envías, el resultado sale en pantalla —no llega por correo ni hay que esperar nada—: cuántas acertaste de 27, <strong>un desglose por los cuatro dominios</strong>, que es lo que de verdad te dice si el problema es de gramática o de lectura, y las 27 preguntas una a una con la respuesta correcta, la que marcaste y <strong>por qué esa opción era la buena y por qué la tuya no</strong>. Puedes repetir el módulo las veces que quieras. Tus datos quedan en WeLearn, que es por donde te escribimos si quieres preparación, y no se comparten con terceros.',
+        ],
+      },
+      {
+        h: 'Qué hacer con el resultado del simulacro',
+        body: [
+          'El porcentaje solo no sirve para nada. Lo que sirve es el desglose por dominio, porque cada uno se arregla de una manera distinta y con plazos distintos.',
+          'Si los errores se concentraron en <strong>Standard English Conventions</strong>, tienes la mejora más barata del examen: son reglas cerradas —límites de oración, comas, punto y coma, concordancia, tiempos verbales, modificadores— y se estudian como se estudia una tabla. <strong>Craft and Structure</strong> es lo contrario: vocabulario en contexto no se arregla con listas de palabras, se arregla leyendo no ficción en inglés y fijándote en qué trabajo hace cada palabra dentro de la frase. Es lento, y es el dominio con más peso.',
+          '<strong>Information and Ideas</strong> casi siempre falla por lo mismo: elegir la opción que suena verdadera en vez de la que el texto sostiene. Vuelve a cada error y busca la línea exacta que probaba la respuesta correcta; si no aparece, ahí estaba el problema. <strong>Expression of Ideas</strong> son pocas preguntas y se recuperan en un rato: es la lógica del conector —contraste, causa, ejemplo, consecuencia— y la síntesis de notas.',
+          'Y si acertaste bastante pero no te alcanzó el tiempo, lo que falla no es el inglés, es el ritmo. Repite el módulo cronometrado hasta que los 32 minutos te sobren, porque en el examen real nadie te los devuelve.',
+        ],
+      },
+      {
         h: 'Cómo prepararte desde Colombia o Latinoamérica',
         body: [
           'La preparación del SAT no es preparación de inglés general. Un estudiante con nivel B2 o C1 puede sacar un puntaje mediocre si no conoce el formato, y un B2 bien entrenado supera a un C1 que llega en frío.',
@@ -96,11 +113,36 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
           'Y el cronómetro. Un minuto y once segundos por pregunta se siente muy distinto en casa que el día del examen: haz al menos un simulacro cronometrado de verdad antes de presentarte.',
         ],
       },
+      {
+        h: 'Fechas, inscripción y costo: dónde se consulta cada cosa',
+        body: [
+          'En esta guía no vas a encontrar ni una fecha ni un precio escritos a mano, y es a propósito: <strong>College Board rehace el calendario y las tarifas cada año escolar</strong>. Una cifra vieja en una página como esta te haría planear mal algo que se decide con meses de antelación. Lo que sí podemos darte es el sitio exacto donde está cada dato y qué vas a encontrar cuando llegues.',
+          '<strong>Fechas.</strong> College Board publica un calendario anual con los sábados de examen y el cierre de inscripción de cada uno; en el ciclo 2026-27 son ocho, entre agosto y junio. Y un detalle que casi nadie sabe: <strong>las mismas fechas valen dentro y fuera de Estados Unidos</strong> — la página oficial dice que aplican a todos los estudiantes, de EE. UU. e internacionales. Míralas en el <a href="https://satsuite.collegeboard.org/sat/dates-deadlines" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline; text-underline-offset: 3px">calendario oficial de fechas y cierres</a> y apunta el cierre, no solo el día del examen.',
+          '<strong>Costo.</strong> Quien presenta fuera de Estados Unidos paga la inscripción más un recargo internacional, y en algunas sedes un cargo adicional del centro. La tabla oficial lleva impresa su propia fecha de vigencia, así que se consulta antes de presupuestar: <a href="https://satsuite.collegeboard.org/sat/registration/international-testing/fees" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline; text-underline-offset: 3px">tarifas para quienes presentan fuera de EE. UU.</a>. Existen <a href="https://satsuite.collegeboard.org/sat/registration/fee-waivers/fee-waiver-eligibility" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline; text-underline-offset: 3px">exenciones de pago</a>, pero conviene saber para quién son antes de contar con ellas: College Board las reserva a estudiantes de grados 11 y 12 con bajos ingresos que estén en Estados Unidos o sus territorios, y a ciudadanos estadounidenses que viven fuera. Si presentas desde Colombia sin esa ciudadanía, presupuesta la tarifa completa.',
+          '<strong>Sedes.</strong> No publicamos una lista de ciudades porque los centros abren y cierran de una convocatoria a otra. El <a href="https://satsuite.collegeboard.org/sat/test-center-search" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline; text-underline-offset: 3px">buscador oficial de centros</a> te dice qué centros hay disponibles para la fecha que te interesa. Míralo antes de elegir fecha, no después.',
+        ],
+      },
     ],
     faqs: [
       {
         q: '¿El SAT se puede presentar en Colombia?',
-        a: 'Sí. El SAT se aplica en sedes internacionales, incluida Colombia, varias veces al año. Las fechas y sedes exactas se publican en la web de College Board y conviene consultarlas ahí porque cambian cada año escolar.',
+        a: 'Sí. El SAT se aplica en sedes internacionales, incluida Colombia, varias veces al año, y las fechas de examen son las mismas dentro y fuera de Estados Unidos. Qué centros abren cambia de una convocatoria a otra, así que la sede se comprueba en el buscador de centros de College Board para la fecha que te interesa. El enlace está al final de esta guía.',
+      },
+      {
+        q: '¿Cuándo se presenta el SAT y cuánto cuesta?',
+        a: 'Las fechas y las tarifas cambian cada año escolar, así que no las escribimos aquí: una cifra vieja hace más daño que no tenerla. College Board publica el calendario de sábados de examen con su cierre de inscripción, y la tabla de tarifas internacionales con su propia fecha de vigencia. Quien presenta fuera de Estados Unidos paga la inscripción más un recargo internacional, y en algunas sedes un cargo del centro. Los dos enlaces están al final de esta guía.',
+      },
+      {
+        q: '¿El SAT sirve para becas?',
+        a: 'Sí, además de para la admisión. Al registrarte puedes elegir universidades y programas de beca a los que enviar tu puntaje, y muchas universidades usan ese mismo puntaje para decidir su ayuda por mérito. Lo que no existe es un puntaje que dé una beca por sí solo: cada convocatoria pone sus requisitos y hay que leerlos uno por uno, porque suelen pesar también otras cosas, como el promedio del colegio o la situación económica.',
+      },
+      {
+        q: '¿El simulacro tiene 27 preguntas o 54?',
+        a: '27, porque es un módulo. La sección de Reading and Writing del SAT real son 54 preguntas repartidas en dos módulos de 27, y el segundo se adapta a cómo te fue en el primero. Nuestro simulacro es un módulo completo, con los cuatro dominios en la proporción del examen. No servimos un segundo módulo porque sin esa adaptación no sería el segundo módulo: sería relleno.',
+      },
+      {
+        q: '¿Tengo que registrarme para hacer el simulacro?',
+        a: 'No hay que crear cuenta ni contraseña, y no se pide tarjeta: es gratis. Lo que sí hay es un formulario con nombre, correo y WhatsApp cuando terminas las 27 preguntas, antes de ver las respuestas. Al enviarlo aparece el resultado completo en la misma pantalla, con el desglose por dominio y la explicación de cada pregunta; no llega nada por correo. Tus datos quedan en WeLearn y no se comparten con terceros.',
       },
       {
         q: '¿Cuántas veces puedo presentar el SAT?',
@@ -127,8 +169,13 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
       { label: 'College Board — Cómo está estructurado el SAT', url: 'https://satsuite.collegeboard.org/sat/whats-on-the-test/structure' },
       { label: 'College Board — La sección de Reading and Writing', url: 'https://satsuite.collegeboard.org/sat/whats-on-the-test/reading-writing' },
       { label: 'College Board — Assessment Framework de la SAT Suite (PDF)', url: 'https://satsuite.collegeboard.org/media/pdf/assessment-framework-for-digital-sat-suite.pdf' },
+      { label: 'College Board — Fechas de examen y cierres de inscripción', url: 'https://satsuite.collegeboard.org/sat/dates-deadlines' },
+      { label: 'College Board — Tarifas para quienes presentan fuera de EE. UU.', url: 'https://satsuite.collegeboard.org/sat/registration/international-testing/fees' },
+      { label: 'College Board — Buscador de centros de examen', url: 'https://satsuite.collegeboard.org/sat/test-center-search' },
+      { label: 'College Board — Envío de puntajes a universidades y programas de beca', url: 'https://satsuite.collegeboard.org/scores/sending-sat-scores' },
     ],
     related: [
+      { href: '/examenes/sat/practica/set-1', label: 'Simulacro SAT · Reading and Writing', note: 'Un módulo de verdad: 27 de las 54 preguntas de la sección, cronometrado en 32 minutos.' },
       { href: '/clases-de-ingles', label: 'Clases de inglés con preparación de exámenes', note: 'El SAT premia precisión de lectura; se entrena.' },
       { href: '/examenes/toefl', label: 'TOEFL iBT', note: 'El examen de idioma que muchas universidades piden además del SAT.' },
       { href: '/examenes/ielts', label: 'IELTS', note: 'La alternativa al TOEFL, aceptada por la mayoría de universidades de EE. UU.' },

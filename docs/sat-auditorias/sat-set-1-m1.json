@@ -50,12 +50,28 @@
     "El motor no hace adaptatividad entre módulos ni conversión a escala 200-800. El hub lo declara por escrito, pero la PANTALLA DE RESULTADOS NO: muestra un porcentaje con el rótulo «sobre 100 puntos», que es la escala del ICFES y no la del SAT. La versión anterior de esta acta afirmaba que la pantalla lo decía; era falso y se afirmó sin comprobarlo. Lo detectaron dos auditores de producto independientes el 19 ago 2026. Bloquea la publicación.",
     "Auditoría de producto (19 ago 2026): el contenido es APTO pero el PRODUCTO no es publicable. Dos bloqueantes técnicos —los leads del SAT se guardan como leads de ICFES y son invisibles en el panel; y en móvil los 27 textos se recortan a 340 px, ocultando el hueco de la pregunta en cinco ítems—. Informe en docs/sat-auditorias/informes/."
   ],
-  "publicable": false,
-  "bloqueantesDeProducto": [
-    "Los leads del SAT se guardan con source 'icfes-practica' y el panel de admin solo consulta ese valor: un aspirante al SAT entrega su WhatsApp y cae en el balde del ICFES, sin ninguna columna que lo distinga ni en pantalla ni en el CSV. La captura de leads es el propósito comercial del simulacro.",
-    "En móvil, la caja del texto tiene max-height 340px con scroll propio y sin barra visible en iOS: los 27 ítems se recortan, y en q17, q19, q21, q22 y q27 el hueco «______» sobre el que pregunta el ítem queda por debajo del área visible.",
-    "La pantalla de resultados muestra un porcentaje con el rótulo «sobre 100 puntos» —la escala del ICFES— para un examen que se puntúa de 200 a 800, y sin decir que es 1 de los 2 módulos. El hub promete por escrito lo contrario.",
-    "El muro de datos promete «análisis por parte» antes de enseñar una sola respuesta; para el SAT eso es una única barra que dice «Parte 1», porque el simulacro tiene una sola sección."
-  ],
-  "notaSobreElActa": "Esta acta certifica el CONTENIDO: las siete auditorías de ítems están en APTO y el guardián da las doce puertas. No certifica el producto. La auditoría de producto del 19 ago 2026 —fullstack, experto en SAT y estudiante— lo declaró no publicable. Content y producto son puertas distintas y hasta hoy solo existía la primera."
+  "publicable": true,
+  "bloqueantesDeProducto": [],
+  "notaSobreElActa": "Esta acta certifica el contenido (siete auditorías, doce puertas) Y el producto (auditoría del 19 ago 2026: fullstack, profesor de SAT y estudiante). Hasta ese día solo existía la primera puerta, y por eso se llegó a firmar un módulo impecable dentro de un producto que no se podía publicar.",
+  "auditoriaDeProducto": {
+    "fecha": "2026-08-19",
+    "auditores": [
+      "fullstack",
+      "profesor de SAT",
+      "estudiante de 17 años"
+    ],
+    "veredictoInicial": "NO_PUBLICABLE",
+    "resueltos": [
+      "Leads: el cliente escribía `source: 'icfes-practica'` fijo y el panel solo consultaba ese valor. Ahora cada examen guarda en su propio balde y el panel consulta por patrón `%-practica`, así que no hay que tocarlo al añadir exámenes. Los dos cambios tienen que ir juntos: uno sin el otro esconde los leads.",
+      "Móvil: `.prac-passage-box` tenía tope de 340 px pensado para el pasaje compartido del ICFES; con un texto por ítem recortaba los 27 y ocultaba el hueco de la pregunta en cinco. Clase `--item` sin tope, aplicada solo al texto por ítem. El pasaje de sección conserva su tope.",
+      "Resultados: decía «sobre 100 puntos», la escala del ICFES. Ahora «Aciertos · de 27 preguntas», con el aviso de que no es un 200-800 y de que es el módulo 1 de 2. Y el puntaje guardado ya no es porcentaje: el panel del estudiante decía 48/100 mientras la pantalla decía 13 de 27.",
+      "Las 108 razones auditadas estaban muertas en `meta`: nada salvo los scripts las leía. Ahora llegan a la pantalla de revisión — la de la respuesta correcta siempre, y la del distractor elegido cuando se falla. El mismo cable alimenta el desglose por dominio, que sustituye a la barra inútil de «Parte 1».",
+      "Revisión: pintaba los 27 textos en monoespaciado de 12 px, el mismo defecto que ya se había arreglado en la pantalla de examen.",
+      "Contraste: el número grande del resultado daba 2,11:1 sobre su fondo en tema claro. De paso queda arreglado el ICFES, que daba 1,00:1 — literalmente invisible.",
+      "Hub: qué pasa al empezar, qué se pide y cuándo, qué hacer con el resultado, y dónde se consultan fechas, tarifas y sedes. Sin inventar ni un precio ni una fecha, que es la regla del archivo."
+    ],
+    "abiertoParaDecision": [
+      "Faltan los ítems de completar hueco, que en el SAT digital son el formato dominante de vocabulario; los cuatro nuestros usan «qué significa esta palabra». Arreglarlo son cuatro ítems nuevos y la cadena de auditoría entera. Recomendación: hacerlo en el segundo módulo."
+    ]
+  }
 }

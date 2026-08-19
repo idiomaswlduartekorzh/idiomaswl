@@ -1,5 +1,5 @@
-import type { MCQQuestion, MockExam, MockSection } from '../types'
-import type { SatModule } from './module-types'
+import type { MCQQuestion, MockExam, MockSection, QuestionInsight } from '../types'
+import type { SatDomain, SatModule } from './module-types'
 
 /**
  * Compone un simulacro SAT a partir de dos módulos escritos.
@@ -10,10 +10,42 @@ import type { SatModule } from './module-types'
  * 2026 —menos ítems y mejor construidos antes que un examen completo con ítems flojos—.
  * Cuando existan las variantes de M2, se pasan aquí y el set pasa a tener dos secciones.
  *
- * El builder es también el sitio donde se fuerzan dos cosas para que ningún redactor
- * tenga que acordarse de ellas: el `part` de cada ítem y el `stimulusStyle: 'passage'`,
- * sin el cual un texto de 150 palabras se pinta en monoespaciado y no hay quien lo lea.
+ * El builder es también el sitio donde se fuerzan tres cosas para que ningún redactor
+ * tenga que acordarse de ellas: el `part` de cada ítem, el `stimulusStyle: 'passage'`,
+ * sin el cual un texto de 150 palabras se pinta en monoespaciado y no hay quien lo lea, y
+ * el paso de `mod.meta` a `section.insights`.
+ *
+ * Ese tercer punto no es cosmético. Cada ítem lleva cuatro explicaciones escritas y
+ * auditadas —por qué la clave lo es y qué error comete quien elige cada distractor—, y
+ * hasta que este mapeo existió se quedaban en `meta`, donde solo las leían los scripts de
+ * validación. El estudiante no veía ninguna. Si algún día se quitan de aquí, se apagan las
+ * explicaciones de la pantalla de revisión sin que nada falle en el build: es un cable,
+ * no un adorno.
  */
+
+/** Nombre legible de cada dominio. Es el rótulo del desglose de resultados. */
+const DOMAIN_LABEL: Record<SatDomain, string> = {
+  CS: 'Craft and Structure',
+  II: 'Information and Ideas',
+  SEC: 'Standard English Conventions',
+  EOI: 'Expression of Ideas',
+}
+
+const asInsights = (mod: SatModule): Record<string, QuestionInsight> => {
+  const out: Record<string, QuestionInsight> = {}
+  for (const m of mod.meta) {
+    // Se copia letra a letra en vez de pasar `m.razones` tal cual: así el día que un
+    // ítem tenga cinco opciones esto sigue funcionando sin tocar nada.
+    const rationales: Record<string, string> = {}
+    for (const [letter, why] of Object.entries(m.razones)) rationales[letter] = why
+    out[m.id] = {
+      domain: m.domain,
+      domainLabel: DOMAIN_LABEL[m.domain] ?? m.domain,
+      rationales,
+    }
+  }
+  return out
+}
 
 const asSection = (mod: SatModule, part: number, title: string): MockSection => ({
   part,
@@ -25,6 +57,7 @@ const asSection = (mod: SatModule, part: number, title: string): MockSection => 
   questions: mod.items.map(
     (q): MCQQuestion => ({ ...q, part, stimulusStyle: q.stimulusStyle ?? 'passage' }),
   ),
+  insights: asInsights(mod),
 })
 
 export function buildSatMock(args: {

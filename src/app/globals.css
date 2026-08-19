@@ -2631,7 +2631,20 @@ button {
 .prac-results__score {
   font-size: clamp(4rem, 10vw, 6rem);
   font-weight: 900;
-  color: var(--exam-color, var(--accent));
+  /* Este número se pinta sobre .prac-results__hero, cuyo fondo es --ink-bg
+     (#14215c en claro, #101722 en oscuro). El acento del examen en crudo NO es
+     legible ahí: 2,11:1 el morado del SAT (#6d28d9), 1,26:1 el azul del TOPIK y
+     1,00:1 el azul marino del ICFES —literalmente el mismo color que el fondo—.
+     Seis de los ocho exámenes quedaban por debajo del mínimo de 3:1 que pide un
+     texto grande, y el remapeo de modo oscuro de más abajo no los rescata,
+     porque el hero declara su propio --exam-color en línea y ese gana sobre el
+     de .prac-shell.
+     Se conserva la identidad del examen subiendo su acento hacia la tinta que
+     el sistema ya define para superficies inversas (--wl-on-inverse). Peor caso
+     tras la mezcla, el ICFES: 5,45:1 en claro y 6,20:1 en oscuro.
+     Si el navegador no entiende color-mix, la declaración se descarta y el
+     número hereda el #fff del hero, que también es legible. */
+  color: color-mix(in srgb, var(--exam-color, var(--accent)) 45%, var(--wl-on-inverse, #fff));
   letter-spacing: -0.05em;
   line-height: 1;
   margin-bottom: 0.2rem;
@@ -3027,7 +3040,27 @@ button {
   letter-spacing: 0.01em;
 }
 
-/* ── ICFES shared passage (Parts 4–7) ────────────────────────────────────── */
+/* ── Caja de pasaje ───────────────────────────────────────────────────────
+   La misma caja sirve a dos cosas distintas, y solo una aguanta un tope de alto:
+
+   1) Pasaje COMPARTIDO de sección (ICFES, Partes 4–7): un único texto sirve a
+      varias preguntas. Ahí el tope de 340 px es correcto — sin él, el texto
+      empuja la pregunta fuera de la pantalla en cada ítem de esa parte.
+
+   2) Texto PROPIO del ítem (SAT: cada pregunta trae el suyo, de 25 a 156
+      palabras, con stimulusStyle: 'passage'). Ahí el tope esconde justo aquello
+      por lo que se pregunta: medidos los 27 ítems del set 1 a 375 px de ancho,
+      los 27 se recortan y en 8 de ellos el hueco `______` cae por debajo del
+      área visible. Y el scroll anidado no pinta barra en iOS, así que el
+      estudiante ni siquiera sabe que hay más texto debajo.
+
+   Para el caso (2) el componente debe pintar la caja con LAS DOS clases:
+
+       className="prac-passage-box prac-passage-box--item"
+
+   (StimulusBox, en src/app/(site)/examenes/[exam]/practica/[mockId]/
+   PracticeClient.tsx, rama `style === 'passage'`.)
+   El nombre exacto del modificador es: prac-passage-box--item */
 .prac-passage-box {
   background: var(--wl-surface-card);
   border: 1px solid var(--wl-rule);
@@ -3036,6 +3069,22 @@ button {
   margin-bottom: 1.4rem;
   max-height: 340px;
   overflow-y: auto;
+}
+
+/* Red de seguridad para el pasaje compartido: en un teléfono, 340 px son unas
+   10 líneas. Se sube el tope sin bajar nunca del de escritorio — max() protege
+   el móvil en horizontal, donde 68vh sería menos que 340 px. */
+@media (max-width: 768px) {
+  .prac-passage-box { max-height: max(340px, 68vh); }
+}
+
+/* El texto que pertenece al ítem no se recorta nunca: sin tope y sin scroll
+   anidado. El selector va doblado a propósito, para que gane sobre cualquier
+   regla de una sola clase esté donde esté en el archivo — incluida la media
+   query de aquí arriba, que si no la sobrescribiría en móvil. */
+.prac-passage-box.prac-passage-box--item {
+  max-height: none;
+  overflow-y: visible;
 }
 .prac-passage-box__label {
   font-size: 0.68rem;
@@ -8469,3 +8518,19 @@ body {
 :root[data-wl-surface="editorial"][data-theme="dark"] :is(
   [style*="color:#7c3aed" i], [style*="color: #7c3aed" i]
 ) { color: var(--wl-on-panel-purple) !important; }
+
+/* Barra de descarga en PDF — gramática, lectura, vocabulario e historias.
+   El material descargable sale membretado desde src/lib/pdf/. */
+.topic-download {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0 0.5rem;
+}
+.topic-download > span {
+  font-size: 0.82rem;
+  color: var(--muted);
+  max-width: 42ch;
+  line-height: 1.4;
+}

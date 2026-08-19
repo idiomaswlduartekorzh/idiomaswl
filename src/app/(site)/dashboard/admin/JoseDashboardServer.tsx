@@ -3,6 +3,7 @@ import JoseDashboard from './JoseDashboard'
 import type { StudentRow } from './StudentList'
 import type { StudentPlan } from '@/lib/actions/assignPlan'
 import type { StudentSubject } from '@/lib/actions/inviteStudent'
+import { EXAMS } from '@/data/exams'
 
 export interface ExamSubmission {
   id: string
@@ -38,6 +39,9 @@ export interface LeadRow {
   exam_score: string | null
   source: string | null
   created_at: string
+  /** Nombre legible del examen ('ICFES', 'SAT', 'IELTS'...). Se resuelve en el
+   *  servidor para no arrastrar todo `EXAMS` al bundle del cliente. */
+  exam_label: string | null
 }
 
 export interface DashboardData {
@@ -50,7 +54,36 @@ export interface DashboardData {
   topUsers: { user_email: string; count: number }[]
   pendingIelts: ExamSubmission[]
   students: StudentRow[]
-  icfesLeads: LeadRow[]
+  /** Leads de TODOS los simulacros (ICFES, SAT, IELTS, TOPIK...), no solo ICFES. */
+  leads: LeadRow[]
+}
+
+// ── Resolución del examen de un lead ─────────────────────────────────────────
+// Los leads de simulacro llegan por dos rutas y hay que reconocer las dos:
+//   · PracticeClient  → source '<examen>-practica'  (icfes-practica, sat-practica…)
+//   · LeadCaptureModal→ source 'simulacro'          (IELTS, TOPIK…)
+// El source 'blog' queda fuera a propósito: no es un simulacro y su `exam_score`
+// guarda una categoría de blog, no un puntaje.
+const LEADS_SOURCE_FILTER = 'source.like.*-practica,source.eq.simulacro'
+const PRACTICA_SUFFIX = /-practica$/
+
+/** El slug del examen: primero el campo propio; si falta, se deduce del source. */
+function leadExamSlug(examSlug: string | null, source: string | null): string | null {
+  const own = examSlug?.trim()
+  if (own) return own
+  if (source && PRACTICA_SUFFIX.test(source)) {
+    const derived = source.replace(PRACTICA_SUFFIX, '').trim()
+    if (derived) return derived
+  }
+  return null
+}
+
+/** Nombre legible del examen. Si el slug no está en EXAMS, se muestra en crudo
+ *  antes que mentir: un examen nuevo se ve raro, pero se ve. */
+function leadExamLabel(examSlug: string | null, source: string | null): string | null {
+  const slug = leadExamSlug(examSlug, source)
+  if (!slug) return null
+  return EXAMS[slug]?.name ?? slug.toUpperCase()
 }
 
 export default async function JoseDashboardServer() {
@@ -141,15 +174,28 @@ export default async function JoseDashboardServer() {
     last_active:     lastActiveMap.get(p.id) ?? null,
   }))
 
-  // ── ICFES leads (from lead-gate form) ───────────────────────────────────────
-  const { data: leadsData } = await supabase
+  // ── Leads de simulacros (formulario de captura) ─────────────────────────────
+  // NO filtrar por un examen concreto: el patrón '<examen>-practica' cubre a los
+  // que vengan (SAT ya, y los siguientes) sin tener que volver a tocar esto.
+  const leadsSelect = () => supabase
     .from('leads')
     .select('id, name, whatsapp, email, exam_slug, exam_score, source, created_at')
-    .eq('source', 'icfes-practica')
     .order('created_at', { ascending: false })
-    .limit(200)
+    .limit(300)
 
-  const icfesLeads: LeadRow[] = (leadsData ?? []) as LeadRow[]
+  let { data: leadsData } = await leadsSelect().or(LEADS_SOURCE_FILTER)
+
+  if (!leadsData) {
+    // Red de seguridad: si el filtro compuesto falla, el panel de David no se
+    // queda en blanco — al menos salen los leads de simulacro de tipo '-practica'.
+    const fallback = await leadsSelect().like('source', '%-practica')
+    leadsData = fallback.data
+  }
+
+  const leads: LeadRow[] = ((leadsData ?? []) as Omit<LeadRow, 'exam_label'>[]).map(l => ({
+    ...l,
+    exam_label: leadExamLabel(l.exam_slug, l.source),
+  }))
 
   const dashboardData: DashboardData = {
     submissions: rows,
@@ -161,7 +207,7 @@ export default async function JoseDashboardServer() {
     topUsers,
     pendingIelts,
     students,
-    icfesLeads,
+    leads,
   }
 
   return <JoseDashboard data={dashboardData} />

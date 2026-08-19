@@ -190,6 +190,27 @@ export type Question =
 
 // ── Section & exam ────────────────────────────────────────────────────────────
 
+/**
+ * Lo que la pantalla de revisión sabe de un ítem además de su clave: a qué área
+ * pertenece y por qué cada opción es o no es la respuesta.
+ *
+ * Va colgado de la sección y no de la pregunta, y todo es opcional, a propósito: así
+ * `MCQQuestion` no cambia de forma y los cinco exámenes ya publicados (ICFES, IELTS,
+ * TOEFL y los de idiomas) siguen compilando y renderizando exactamente igual. Hoy solo
+ * lo llena el SAT, desde `SatItemMeta` (`domain` + `razones`).
+ */
+export interface QuestionInsight {
+  /** Código corto del área evaluada, p. ej. 'CS'. Agrupa el desglose de resultados. */
+  domain?: string;
+  /** Nombre legible del área, p. ej. 'Craft and Structure'. */
+  domainLabel?: string;
+  /**
+   * Por qué la clave es la clave y qué error concreto comete quien elige cada
+   * distractor, indexado por letra de opción ('A', 'B', 'C', 'D'…).
+   */
+  rationales?: Record<string, string>;
+}
+
 export interface MockSection {
   part: number;
   title: string;
@@ -201,6 +222,11 @@ export interface MockSection {
   audioUrl?: string;       // URL to audio file (if available)
   comingSoon?: boolean;    // disables the tab, shows "En Construcción" badge
   questions: Question[];
+  /**
+   * Explicaciones y dominio por ítem, indexado por `Question['id']`. Opcional: una
+   * sección sin esto se revisa como siempre (clave marcada en verde y nada más).
+   */
+  insights?: Record<string, QuestionInsight>;
   // ── Section layout variants ──────────────────────────────────────────────
   sectionStyle?: 'matching-grid' | 'notices-grid' | 'dialogs-grid' | 'cloze-text' | 'reading';
   passageTitle?: string;  // shown as heading above the reading passage
