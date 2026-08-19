@@ -355,7 +355,7 @@ export function ReadingLesson({ exercise, locale, siblings = [] }: { exercise: R
       <article className={`listen-work ${styles.lessonWork}`}>
         <Link href={hubHref} className="listen-back"><ArrowLeft size={14} /> {copy.back}</Link>
         <p className="eyebrow"><span className="ink-line" />{copy.eyebrowLabel} · {exercise.level.cefr} · {copy.textWord} {currentIndex + 1} {copy.of} {siblings.length || 1}</p>
-        <h1>📖 {localized(exercise.content.title, locale)}</h1>
+        <h1>{localized(exercise.content.title, locale)}</h1>
         <p className="listen-objective">{localized(exercise.content.intro, locale)}</p>
         <div className="listen-tags">
           <span>{exercise.classification.topic}</span>
