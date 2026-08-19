@@ -47,7 +47,7 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
 
 | Vuelta | Tarea | Resultado | Commit |
 |---|---|---|---|
-| 1 | A1 · verificar parámetros | ✅ Los 8 parámetros verificados contra 3 PDF oficiales de College Board. **Un error grave corregido** (ver abajo). Solo queda ⚠️ el orden de los tipos dentro de un dominio: College Board no lo publica | `f019620f` |
+| 1 | A1 · verificar parámetros | ✅ Los 8 parámetros verificados contra 3 PDF oficiales de College Board. **Un error grave corregido** (ver abajo). Solo queda ⚠️ el orden de los tipos dentro de un dominio: College Board no lo publica | `1fe76594` |
 
 ---
 
