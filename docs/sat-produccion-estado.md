@@ -5,8 +5,8 @@ Las reglas están en `docs/sat-loop-nocturno.md`; los parámetros y umbrales, en
 `docs/sat-ingles-blueprint.md`.
 
 - **Rama:** `feat/red-agentes-sat-ingles`
-- **Última vuelta:** 21 · 19 ago 2026 · **26,4 %.** Contenido terminado. Faltan 3 auditorías y media para poder firmar
-- **Siguiente tarea:** correr **equidad, originalidad, dificultad y lengua completa**; luego acta, set y hub
+- **Última vuelta:** 25 · 19 ago 2026 · **25,5 %** (= azar). Set y hub publicados en la rama. **Acta bloqueada: q22 tiene dos claves**
+- **Siguiente tarea:** arreglar q22 (dos claves), reverificar, firmar el acta y correr el guardián
 
 ---
 
@@ -60,6 +60,7 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
 
 | Vuelta | Tarea | Resultado | Commit |
 |---|---|---|---|
+| 25 | Publicación + verificación | ⚠️ **25,5 %** con 16 jueces, igual que el azar. Set servible en `/examenes/sat/practica/set-1` y hub en `/examenes/sat`, build en verde. Dificultad **APTO**. Lengua confirma su arreglo **pero encuentra que q22, reescrito ayer, tiene DOS CLAVES**: puerta eliminatoria. No se firma | `01d7f358` |
 | 21 | D2 · cierre del contenido | ✅ **26,4 %** (azar 25 %). q03 12/16 → **1/16**, q13 12/16 → **2/16**. Se para porque q24 subió sin que nadie lo tocara: a este nivel es ruido. **Pero el acta no se puede firmar**: de las siete auditorías, tres no se han hecho nunca —equidad, originalidad y dificultad— y lengua solo pasó por convenciones | `43e3a6c1` |
 | 19 | D2 · ronda 4 (R10) | ✅ **27,3 %** con 16 jueces, contra un azar del 25 %. `q09` 15/16 → **0/16** y `q15` 16/16 → **0/16**. Quedan q03, q13 y q14 en 12/16 | `c3ac27d6` |
 | 16 | D2 · ronda 3 (R9) | ✅ **34,7 %** — la puerta 6 pasa por primera vez. Cinco ítems a cero aciertos sin leer (q01, q02, q04, q05, q07). Quedan 3 marcando en rojo, pero el recuento por ítem con 8 jueces es ruidoso: se confirma con 16 antes de tocar nada | `80b2b1e7` |
@@ -178,6 +179,21 @@ R4 y R5 del blueprint §4 bis.
 - `q23` · un distractor tiene que compartir la forma definitoria de la clave.
 - `q24` · falta un distractor comparativo **en forma** que compare el par equivocado.
 - `q25`, `q26`, `q27` (transitions) · APTO por las dos lentes. No se tocan.
+
+## R2, por tercera vez: el arreglo de ayer trajo un defecto nuevo
+
+q22 se reescribió ayer para darle la banda difícil que le faltaba al bloque de
+convenciones. El arreglo funcionó —sube de 9 a 12 y por los ejes correctos—, pero introdujo
+**dos claves**, y esa puerta es eliminatoria.
+
+El ítem examina dos decisiones. La segunda está bien. La primera —esencial frente a no
+esencial— se apoyaba en que «built with money raised in the valley itself» fuera lo único
+que identifica de cuál de los dos canales se habla. No lo es: «The canal opened in 1836»
+identifica solo, porque el otro «had been dug in the 1790s». El modificador comenta, así
+que el par de comas de la opción A también es correcto.
+
+Es la tercera vez esta operación que un arreglo introduce un defecto de otra familia
+(q02 v1→v2→v3, q13 tras R8, y ahora q22). **R2 no es una precaución: es el patrón.**
 
 ## Lo que la puerta 6 nos hizo olvidar
 
