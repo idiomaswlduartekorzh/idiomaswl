@@ -5,8 +5,8 @@ Las reglas están en `docs/sat-loop-nocturno.md`; los parámetros y umbrales, en
 `docs/sat-ingles-blueprint.md`.
 
 - **Rama:** `feat/red-agentes-sat-ingles`
-- **Última vuelta:** 10 · 19 ago 2026 · los cuatro bloques reauditados. **Ningún bloque APTO.** Loop detenido para decisión de David
-- **Siguiente tarea:** **decisión de David** (ver «Resumen para la mañana»). El trabajo técnico siguiente sería reescribir los juegos de opciones aplicando R8
+- **Última vuelta:** 11 · 19 ago 2026 · David decidió las tres vías. Loop reanudado
+- **Siguiente tarea:** **D1** (calibración, en curso), luego **D2** bloque por bloque
 
 ---
 
@@ -31,13 +31,26 @@ Se coge la primera sin marcar. Una por vuelta.
 - [ ] **B3** · Hub `/examenes/sat` con SEO completo (ver playbook)
 - [ ] **B4** · `npx tsc --noEmit` + `npm run build`, una vez
 
-### Fase C — Escala
+### Fase D — Las tres decisiones de David (19 ago 2026)
 
-- [ ] **C0** · `docs/sat-fabrica.md`: la receta real del M1, con costes y atascos medidos
-- [ ] **C1** · M2-fácil del set 1
-- [ ] **C2** · M2-difícil del set 1 → primer examen completo (81 ítems)
-- [ ] **C3** · Set 2 (los tres módulos)
-- [ ] **C4** · Set 3, y así hasta que se acabe la noche o el presupuesto
+Sustituyen a la fase C. David aprobó las tres vías y pidió hacerlas en este orden.
+
+- [ ] **D1 · Recalibrar la prueba a ciegas.** `scripts/sat-blind-test.mjs` extrae el examen
+  **sin los textos** y puntúa las respuestas. Antes esto era una promesa («tapa el texto
+  mentalmente»); ahora es un control: el solucionador no puede verlos. Se responde con
+  haiku y con sonnet para separar el defecto real del auditor sobrehumano.
+- [ ] **D2 · Rediseñar los juegos de opciones aplicando R8.** Se conservan los 27 textos y
+  las 27 claves —están confirmadas—; se rehacen las opciones. Cuatro objetos
+  indistinguibles primero, y solo después se decide cuál sostiene el texto.
+- [x] **D3 · Menos ítems, mejor construidos.** Decidido: **un solo módulo de 27 ítems**
+  hecho bien, en vez de los tres módulos (M1 + M2-fácil + M2-difícil) que pide el examen
+  completo. Se publica como simulacro lineal de 27 y así se llama en pantalla.
+- [ ] **D4** · Firmar el acta y publicar el set + el hub.
+
+### Fase C — Escala (aplazada hasta que D2 dé un módulo APTO)
+
+- [ ] **C0** · `docs/sat-fabrica.md`: la receta real, con costes y atascos medidos
+- [ ] **C1** · Segundo módulo, ya con el método R8 desde el principio
 
 ---
 
