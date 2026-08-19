@@ -163,8 +163,10 @@ export const EXAMS: Record<string, Exam> = {
       { name: 'Módulo 1', icon: '📖', time: '32 min', questions: 27, color: '#6d28d9', types: ['Craft and Structure', 'Information and Ideas', 'Standard English Conventions', 'Expression of Ideas'] },
       { name: 'Módulo 2', icon: '📈', time: '32 min', questions: 27, color: '#8b5cf6', types: ['Se ajusta a tu resultado del módulo 1', 'Mismos cuatro dominios', 'Mismo formato, distinta exigencia'] },
     ],
-    mocks: [],
-    available: false,
+    mocks: [
+      { id: 'set-1', title: 'SAT · Reading and Writing — Módulo 1', subtitle: '27 preguntas · 32 minutos · los cuatro dominios del examen digital', free: true, parts: 1, questions: 27 },
+    ],
+    available: true,
   },
   icfes: {
     slug: 'icfes',

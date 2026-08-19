@@ -1,4 +1,5 @@
 import type { MockExam } from './types';
+import satSet1 from './sat/sat-set-1';
 import { normalizeIcfesMock } from './normalize-icfes-mock';
 import icfesMock01 from './icfes-mock-01';
 import icfesMock02 from './icfes-mock-02';
@@ -345,6 +346,7 @@ const MOCK_REGISTRY: Record<string, MockExam> = {
   'cambridge-b2:set-8': cambridgeB2Set8,
   'cambridge-b2:set-9': cambridgeB2Set9,
   'cambridge-b2:set-10': cambridgeB2Set10,
+  'sat:set-1': satSet1,
 };
 
 export function getMock(examSlug: string, mockId: string): MockExam | null {

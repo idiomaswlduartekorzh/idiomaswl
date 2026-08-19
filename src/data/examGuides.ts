@@ -50,6 +50,93 @@ export type ExamGuide = {
 
 export const EXAM_GUIDES: Record<string, ExamGuide> = {
 
+  sat: {
+    title: 'SAT en español: qué es, cómo se puntúa y simulacro gratis',
+    description: 'El examen de admisión a universidades de EE. UU., explicado para latinoamericanos: cómo es el formato digital, qué puntaje piden y simulacro gratis.',
+    lead:
+      'El <strong>SAT</strong> es el examen que piden la mayoría de universidades de Estados Unidos para entrar a pregrado. Desde 2024 es <strong>digital y adaptativo</strong>: dura unas dos horas y cuarto, se puntúa de 400 a 1600, y ya no hay preguntas sueltas de vocabulario ni textos larguísimos — cada pregunta trae su propio texto corto, de 25 a 150 palabras.',
+    sections: [
+      {
+        h: 'Qué cambió con el SAT digital',
+        body: [
+          'El examen que hacían tus primos mayores ya no existe. El formato digital, obligatorio en todo el mundo desde 2024, es <strong>más corto</strong> (unas 2h 14m en vez de 3 horas), se hace en computador con una aplicación propia de College Board, y permite calculadora en toda la sección de matemáticas.',
+          'El cambio que más afecta a cómo se estudia: <strong>cada pregunta de lectura tiene su propio texto</strong>. Antes eran cinco pasajes largos con diez preguntas cada uno; ahora son textos de un párrafo, uno por pregunta. Eso premia leer con precisión más que leer rápido.',
+          'Y es <strong>adaptativo por etapas</strong>: cada sección va en dos módulos, y el segundo cambia de dificultad según cómo te fue en el primero. No puedes volver al módulo anterior una vez lo entregas.',
+        ],
+      },
+      {
+        h: 'Cómo es la sección de Reading and Writing',
+        body: [
+          'Son <strong>54 preguntas en 64 minutos</strong>, repartidas en dos módulos de 27 preguntas y 32 minutos cada uno. Eso da algo más de un minuto por pregunta, que es la presión real del examen.',
+          'Las preguntas se agrupan siempre en el mismo orden por dominio: <strong>Craft and Structure</strong> (vocabulario en contexto, propósito y estructura del texto, relación entre dos textos), <strong>Information and Ideas</strong> (idea central, evidencia textual y con datos, inferencias), <strong>Standard English Conventions</strong> (puntuación y gramática) y <strong>Expression of Ideas</strong> (transiciones y síntesis de notas). Dentro de cada dominio van de menos a más difícil.',
+          'Todas son de opción múltiple con cuatro respuestas y una sola correcta. No se penaliza el error: si no sabes, marca igual.',
+        ],
+      },
+      {
+        h: 'Cómo se puntúa',
+        body: [
+          'Cada sección —Reading and Writing por un lado, Math por otro— se puntúa de <strong>200 a 800</strong>, en intervalos de 10. El total va de <strong>400 a 1600</strong>.',
+          'No hay nota de aprobado: cada universidad fija lo que pide. Como orientación general, las universidades más competitivas de Estados Unidos suelen moverse por encima de 1400, y muchas universidades estatales aceptan desde 1100. Lo que decide es el rango publicado por cada institución, no una cifra universal.',
+          'Ojo con una cosa que confunde: el puntaje que ves al terminar un simulacro <strong>no es un puntaje oficial</strong> mientras no venga de una tabla de conversión calibrada. El nuestro te da respuestas correctas sobre el total, que es lo honesto.',
+        ],
+      },
+      {
+        h: 'Cómo es nuestro simulacro, y qué no es',
+        body: [
+          'Te damos <strong>un módulo completo: 27 preguntas en 32 minutos</strong>, con los cuatro dominios en la proporción real del examen y textos originales escritos para esto.',
+          'No es un examen completo, y preferimos decirlo: el SAT real tiene dos módulos por sección y el segundo se adapta a cómo te fue en el primero. Servirte dos módulos seguidos sin esa adaptación sería imitar la forma y perder lo que la forma significa. Un módulo bien hecho te dice más que un examen completo fingido.',
+          'Lo que sí garantizamos, y lo hemos medido: <strong>no se puede acertar sin leer los textos</strong>. Sometimos el simulacro a dieciséis solucionadores automáticos a los que les quitamos los pasajes, dejándoles solo las preguntas y las opciones. Acertaron el 25,5 %, que es exactamente lo que da tirar una moneda de cuatro caras. Si un simulacro se puede resolver por astucia, te da un diagnóstico falso justo cuando más lo necesitas.',
+        ],
+      },
+      {
+        h: 'Cómo prepararte desde Colombia o Latinoamérica',
+        body: [
+          'La preparación del SAT no es preparación de inglés general. Un estudiante con nivel B2 o C1 puede sacar un puntaje mediocre si no conoce el formato, y un B2 bien entrenado supera a un C1 que llega en frío.',
+          'Lo que más rinde, en este orden: <strong>vocabulario en contexto</strong> (el dominio con más preguntas), <strong>puntuación inglesa</strong> —el punto y coma, la coma en incisos y los límites de oración valen una cuarta parte del examen y son reglas cerradas que se aprenden—, y <strong>lectura de datos</strong>, porque varias preguntas traen una tabla o una gráfica.',
+          'Y el cronómetro. Un minuto y diecinueve segundos por pregunta se siente muy distinto en casa que el día del examen: haz al menos un simulacro cronometrado de verdad antes de presentarte.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: '¿El SAT se puede presentar en Colombia?',
+        a: 'Sí. El SAT se aplica en sedes internacionales, incluida Colombia, varias veces al año. Las fechas y sedes exactas se publican en la web de College Board y conviene consultarlas ahí porque cambian cada año escolar.',
+      },
+      {
+        q: '¿Cuántas veces puedo presentar el SAT?',
+        a: 'No hay un límite fijo. Muchos estudiantes lo presentan dos o tres veces, y la mayoría de universidades aceptan el mejor puntaje o combinan lo mejor de cada sección. Presentarlo más de tres veces rara vez mejora el resultado.',
+      },
+      {
+        q: '¿Qué nivel de inglés necesito para el SAT?',
+        a: 'El SAT no mide inglés como lengua extranjera: da por hecho que lees en inglés y mide comprensión y redacción a nivel de bachillerato estadounidense. En la práctica se necesita un B2 sólido para competir, y con C1 el trabajo se concentra en el formato más que en el idioma.',
+      },
+      {
+        q: '¿El SAT reemplaza al TOEFL o al IELTS?',
+        a: 'No. Son cosas distintas y muchas universidades piden las dos: el SAT como examen de admisión y el TOEFL o el IELTS como prueba de dominio del inglés para estudiantes internacionales. Conviene revisar los requisitos de cada universidad, porque algunas eximen del examen de idioma si el puntaje de Reading and Writing es alto.',
+      },
+      {
+        q: '¿Cuánto dura el SAT digital?',
+        a: 'Unas 2 horas y 14 minutos de examen: 64 minutos de Reading and Writing y 70 de Math, con un descanso entre las dos secciones.',
+      },
+      {
+        q: '¿Puedo volver a una pregunta que ya respondí?',
+        a: 'Dentro del módulo en el que estás, sí: puedes moverte libremente y marcar preguntas para revisarlas. Una vez pasas al segundo módulo, no puedes volver al primero.',
+      },
+    ],
+    sources: [
+      { label: 'College Board — Cómo está estructurado el SAT', url: 'https://satsuite.collegeboard.org/sat/whats-on-the-test/structure' },
+      { label: 'College Board — La sección de Reading and Writing', url: 'https://satsuite.collegeboard.org/sat/whats-on-the-test/reading-writing' },
+      { label: 'College Board — Assessment Framework de la SAT Suite (PDF)', url: 'https://satsuite.collegeboard.org/media/pdf/assessment-framework-for-digital-sat-suite.pdf' },
+    ],
+    related: [
+      { href: '/clases-de-ingles', label: 'Clases de inglés con preparación de exámenes', note: 'El SAT premia precisión de lectura; se entrena.' },
+      { href: '/examenes/toefl', label: 'TOEFL iBT', note: 'El examen de idioma que muchas universidades piden además del SAT.' },
+      { href: '/examenes/ielts', label: 'IELTS', note: 'La alternativa al TOEFL, aceptada por la mayoría de universidades de EE. UU.' },
+      { href: '/practica/ingles/b1/lectura', label: 'Práctica de lectura en inglés', note: 'Lecturas cortas con preguntas, gratis y sin registro.' },
+    ],
+    checked: '19 de agosto de 2026',
+  },
+
   'celpe-bras': {
     title: 'Celpe-Bras en Bucaramanga: el examen oficial de portugués',
     description: 'La única certificación oficial de portugués de Brasil, y se aplica en Bucaramanga. Cómo funciona y por qué no se aprueba ni se reprueba.',
