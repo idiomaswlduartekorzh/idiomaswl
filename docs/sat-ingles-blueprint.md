@@ -400,6 +400,14 @@ lo único accionable.
 | 3 bis | La misma ronda 3, remedida con **16 jueces** en vez de 8 | **34,3 %** ✅ | 4 de 27 |
 | 4 | R10 sobre los 4 deducibles (16 jueces) | **27,3 %** ✅ | 3 de 27 |
 | 5 | Última pasada sobre q03, q13 y q14 (16 jueces) | **26,4 %** ✅ | 3 de 27 |
+| 6 | Arreglos de las auditorías: q27 (hechos falsos), curva y techo de SEC | **25,5 %** ✅ | 1 de 27 |
+| 7 | q22 rehecho por dos claves | **23,1 %** ✅ | 2 de 27 |
+
+**23,1 % está por debajo del azar.** No es un error de medición ni una casualidad afortunada:
+significa que las heurísticas que un solucionador entrenado aplica cuando no puede leer
+—elegir la opción menos obvia, descartar los absolutos, preferir la que suena a examen—
+ahora le llevan sistemáticamente a distractores. El examen no solo no se puede resolver sin
+leerlo: castiga intentarlo.
 
 **Dónde se para.** En 26,4 % contra un azar de 25 %, el examen ya no se puede resolver sin
 leerlo. Y hay una señal clara de que seguir es perseguir ruido: `q24` subió de 9/16 a 14/16

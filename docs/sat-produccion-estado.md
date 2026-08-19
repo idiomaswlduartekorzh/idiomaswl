@@ -5,8 +5,8 @@ Las reglas están en `docs/sat-loop-nocturno.md`; los parámetros y umbrales, en
 `docs/sat-ingles-blueprint.md`.
 
 - **Rama:** `feat/red-agentes-sat-ingles`
-- **Última vuelta:** 25 · 19 ago 2026 · **25,5 %** (= azar). Set y hub publicados en la rama. **Acta bloqueada: q22 tiene dos claves**
-- **Siguiente tarea:** arreglar q22 (dos claves), reverificar, firmar el acta y correr el guardián
+- **Última vuelta:** 28 · 19 ago 2026 · **23,1 %: por debajo del azar.** Última auditoría de clave única en curso antes de firmar
+- **Siguiente tarea:** recoger la auditoría de clave única, firmar el acta y correr el guardián
 
 ---
 
@@ -60,6 +60,7 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
 
 | Vuelta | Tarea | Resultado | Commit |
 |---|---|---|---|
+| 28 | q22 resuelto + medición definitiva | ✅ Los dos auditores que tumbaron q22 confirman el arreglo: el de lengua rehízo la prueba de supresión y revisó **cinco** escondites, uno más de los que le pedí. Panel: **23,1 %, por debajo del azar del 25 %**. Antes de firmar, se audita clave única sobre los 27 en su forma de hoy: once se han reescrito desde la última pasada completa | `a2744d72` |
 | 25 | Publicación + verificación | ⚠️ **25,5 %** con 16 jueces, igual que el azar. Set servible en `/examenes/sat/practica/set-1` y hub en `/examenes/sat`, build en verde. Dificultad **APTO**. Lengua confirma su arreglo **pero encuentra que q22, reescrito ayer, tiene DOS CLAVES**: puerta eliminatoria. No se firma | `01d7f358` |
 | 21 | D2 · cierre del contenido | ✅ **26,4 %** (azar 25 %). q03 12/16 → **1/16**, q13 12/16 → **2/16**. Se para porque q24 subió sin que nadie lo tocara: a este nivel es ruido. **Pero el acta no se puede firmar**: de las siete auditorías, tres no se han hecho nunca —equidad, originalidad y dificultad— y lengua solo pasó por convenciones | `43e3a6c1` |
 | 19 | D2 · ronda 4 (R10) | ✅ **27,3 %** con 16 jueces, contra un azar del 25 %. `q09` 15/16 → **0/16** y `q15` 16/16 → **0/16**. Quedan q03, q13 y q14 en 12/16 | `c3ac27d6` |
