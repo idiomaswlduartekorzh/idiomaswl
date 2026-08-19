@@ -1,0 +1,52 @@
+{
+  "modulo": "sat-set-1-m1",
+  "fecha": "2026-08-19",
+  "auditorias": {
+    "clave": {
+      "agente": "sat-key-auditor",
+      "veredicto": "APTO",
+      "itemsConDosClaves": 0,
+      "notas": "27 de 27 coincidencias resolviendo con el texto delante e ignorando la clave declarada. Cero ítems con dos respuestas defendibles, cero en disputa. Se auditó sobre la forma de HOY: once ítems se habían reescrito desde la pasada anterior. Asterisco declarado por los propios auditores: la cabecera de los archivos de bloque anuncia la secuencia de claves, así que la ceguera dependía de su disciplina; compensaron derivando cada respuesta del texto por escrito antes de abrir el campo. Para la próxima se usa `sat-blind-test.mjs --auditoria`, que genera la copia sin claves."
+    },
+    "sesgo": {
+      "agente": "sat-bias-auditor",
+      "veredicto": "APTO",
+      "pruebaACiegasPct": 23.1,
+      "notas": "Ocho puertas mecánicas del guardián en verde. La prueba a ciegas se midió, no se estimó: dieciséis solucionadores respondieron el examen extraído SIN los textos. Serie de siete mediciones: 68,5 → 48,1 → 34,3 → 27,3 → 26,4 → 25,5 → 23,1. Por debajo del azar (25 %), lo que significa que las heurísticas de quien no lee ahora llevan a distractores."
+    },
+    "equidad": {
+      "agente": "sat-fairness-auditor",
+      "veredicto": "APTO",
+      "banderas": 0,
+      "notas": "Cuatro lentes sobre los 27 ítems: conocimiento previo no dado, contenido sensible, estereotipos y representación en el conjunto, y accesibilidad del enunciado. Cero bloqueantes; 16 mejoras anotadas en el informe."
+    },
+    "lengua": {
+      "agente": "sat-language-auditor",
+      "veredicto": "APTO",
+      "bloqueantes": 0,
+      "notas": "Devolvió el módulo por dos hechos falsos afirmados en la voz del texto de q27, y después por las dos claves de q22. Los dos arreglos verificados por el mismo auditor: en q22 rehízo la prueba de supresión por su cuenta y revisó cinco escondites del identificador, uno más de los cuatro señalados."
+    },
+    "dificultad": {
+      "agente": "sat-difficulty-calibrator",
+      "veredicto": "APTO",
+      "notas": "Devolvió el módulo por la curva rota del bloque de convenciones y por su falta de banda difícil (techo 10, media 7,57 contra 11,0 de los otros dominios). Arreglado con un reorden de dos ítems y la reescritura de q22, que sube a 12 por complejidad de texto y localización, no por el enunciado. Verificado: sumas 6·5·7·7·9·10·12. El arbitraje de la complejidad de q22 queda escrito como el 3 más débil del módulo."
+    },
+    "originalidad": {
+      "agente": "sat-originality-auditor",
+      "veredicto": "APTO",
+      "banderasRojas": 0,
+      "notas": "62 búsquedas literales entrecomilladas: 54 secuencias de 8+ palabras poco comunes (dos o tres por texto), 4 de verificación de entidades, 3 contra material de College Board y 1 contra literatura publicada. Ninguna coincidencia. Los 27 textos son originales; las seis personas nombradas se verificaron inexistentes; cero marcas comerciales. Excepción escrita en el blueprint: los enunciados canónicos de College Board se reproducen literalmente por requisito de validez y quedan fuera de la puerta 11."
+    },
+    "simulacion": {
+      "agente": "sat-student-simulator",
+      "veredicto": "APTO",
+      "tramposoPct": 23.1,
+      "notas": "La simulación por perfiles se sustituyó por algo más estricto: un panel de dieciséis solucionadores reales (doce de un modelo pequeño, cuatro de uno intermedio) respondiendo el examen sin acceso a los textos. Es un control, no una promesa: el pasaje no está en su contexto."
+    }
+  },
+  "veredicto": "APTO",
+  "quedaAbierto": [
+    "Dos ítems (q06, q14) siguen por encima del umbral por ítem en la última medición, con la media muy por debajo. Anotados para una pasada futura.",
+    "El motor no hace adaptatividad entre módulos ni conversión a escala 200-800; el simulacro se publica como lineal y con puntaje bruto, y así se dice en pantalla."
+  ]
+}

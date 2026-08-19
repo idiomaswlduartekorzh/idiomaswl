@@ -5,8 +5,8 @@ Las reglas están en `docs/sat-loop-nocturno.md`; los parámetros y umbrales, en
 `docs/sat-ingles-blueprint.md`.
 
 - **Rama:** `feat/red-agentes-sat-ingles`
-- **Última vuelta:** 28 · 19 ago 2026 · **23,1 %: por debajo del azar.** Última auditoría de clave única en curso antes de firmar
-- **Siguiente tarea:** recoger la auditoría de clave única, firmar el acta y correr el guardián
+- **Última vuelta:** 29 · 19 ago 2026 · **ACTA FIRMADA. Las doce puertas, superadas.** Loop detenido: el módulo está terminado
+- **Siguiente tarea:** decisión de David — publicar (merge a `main`) y, si quiere, segundo módulo con el método ya calibrado
 
 ---
 
@@ -39,13 +39,13 @@ Sustituyen a la fase C. David aprobó las tres vías y pidió hacerlas en este o
   **sin los textos** y puntúa las respuestas. Antes esto era una promesa («tapa el texto
   mentalmente»); ahora es un control: el solucionador no puede verlos. Se responde con
   haiku y con sonnet para separar el defecto real del auditor sobrehumano.
-- [ ] **D2 · Rediseñar los juegos de opciones aplicando R8.** Se conservan los 27 textos y
+- [x] **D2 · Rediseñar los juegos de opciones aplicando R8.** Se conservan los 27 textos y
   las 27 claves —están confirmadas—; se rehacen las opciones. Cuatro objetos
   indistinguibles primero, y solo después se decide cuál sostiene el texto.
 - [x] **D3 · Menos ítems, mejor construidos.** Decidido: **un solo módulo de 27 ítems**
   hecho bien, en vez de los tres módulos (M1 + M2-fácil + M2-difícil) que pide el examen
   completo. Se publica como simulacro lineal de 27 y así se llama en pantalla.
-- [ ] **D4** · Firmar el acta y publicar el set + el hub.
+- [x] **D4** · Acta firmada y set + hub en la rama. **Falta solo el merge a `main`, que es decisión de David.**
 
 ### Fase C — Escala (aplazada hasta que D2 dé un módulo APTO)
 
@@ -60,6 +60,7 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
 
 | Vuelta | Tarea | Resultado | Commit |
 |---|---|---|---|
+| 29 | Acta firmada · **APTO** | ✅ Clave única auditada sobre los 27 en su forma de hoy: **27/27 coincidencias, cero dobles claves**. Las siete auditorías completas y en APTO. **El guardián da las doce puertas.** `tsc`, `build` y los 13 guardianes del prebuild en verde | (este bloque) |
 | 28 | q22 resuelto + medición definitiva | ✅ Los dos auditores que tumbaron q22 confirman el arreglo: el de lengua rehízo la prueba de supresión y revisó **cinco** escondites, uno más de los que le pedí. Panel: **23,1 %, por debajo del azar del 25 %**. Antes de firmar, se audita clave única sobre los 27 en su forma de hoy: once se han reescrito desde la última pasada completa | `a2744d72` |
 | 25 | Publicación + verificación | ⚠️ **25,5 %** con 16 jueces, igual que el azar. Set servible en `/examenes/sat/practica/set-1` y hub en `/examenes/sat`, build en verde. Dificultad **APTO**. Lengua confirma su arreglo **pero encuentra que q22, reescrito ayer, tiene DOS CLAVES**: puerta eliminatoria. No se firma | `01d7f358` |
 | 21 | D2 · cierre del contenido | ✅ **26,4 %** (azar 25 %). q03 12/16 → **1/16**, q13 12/16 → **2/16**. Se para porque q24 subió sin que nadie lo tocara: a este nivel es ruido. **Pero el acta no se puede firmar**: de las siete auditorías, tres no se han hecho nunca —equidad, originalidad y dificultad— y lengua solo pasó por convenciones | `43e3a6c1` |
@@ -243,6 +244,21 @@ Lo que el loop **no** decide de noche. Se acumula aquí para la mañana.
 | ¿Cuántos sets antes de anunciarlo? | Un solo simulacro no sostiene una campaña | Tres sets completos (243 ítems) antes de meterle pauta |
 
 ---
+
+## Terminado — qué hay, y qué decide David
+
+**El módulo está APTO y firmado.** `/examenes/sat` y `/examenes/sat/practica/set-1` están en la
+rama `feat/red-agentes-sat-ingles`, con `tsc`, `build` y los trece guardianes del prebuild en
+verde. **Nada ha llegado a producción**: eso es un merge a `main`, y es decisión de David.
+
+Lo que queda abierto, escrito en el acta y no escondido:
+
+1. Dos ítems (`q06`, `q14`) siguen por encima del umbral por ítem en la última medición,
+   con la media muy por debajo. Una pasada futura, no un bloqueo.
+2. El motor no hace adaptatividad entre módulos ni conversión a escala 200-800. El
+   simulacro se publica como lineal y con puntaje bruto, y así se dice en pantalla.
+3. `check:sat` sigue sin engancharse al `prebuild` porque `package.json` tiene cambios sin
+   commitear de otra sesión. Se invoca por ruta.
 
 ## Resumen para la mañana
 

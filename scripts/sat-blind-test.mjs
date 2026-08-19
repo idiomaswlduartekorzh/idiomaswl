@@ -33,6 +33,7 @@ const moduleId = val('--module')
 const outPath = val('--out')
 const scoreRaw = val('--score')
 const panelPath = val('--panel')
+const paraAuditor = args.includes('--auditoria')
 const etiqueta = val('--etiqueta') || 'anónimo'
 
 const cache = new Map()
@@ -142,6 +143,34 @@ if (panelPath) {
   })
   console.log(`\n   filtran (≥75 % del panel acierta sin leer): ${filtran.length}/${mod.items.length} → ${filtran.join(' ') || 'ninguno'}\n`)
   process.exit(filtran.length || media > 35 ? 1 : 0)
+}
+
+// ── modo copia para el auditor ──
+//
+// Lo pidieron los propios auditores de clave única: la lectura a ciegas es imposible sobre
+// los archivos de bloque, porque la cabecera declara la secuencia completa de claves y el
+// `answer` está cuatro líneas bajo cada opción. Compensaban derivando del texto antes de
+// mirar, pero eso es disciplina, no un control. Esta copia lleva los textos —que el auditor
+// SÍ necesita, a diferencia del panel— y ni las claves ni las razones.
+if (paraAuditor) {
+  const out = [
+    `# ${moduleId} — copia para auditoría de clave`,
+    '',
+    'Los textos completos, sin las claves ni las razones declaradas. Resuelve cada ítem y',
+    'escribe tu respuesta ANTES de abrir el archivo original para comparar.',
+    '',
+  ]
+  mod.items.forEach((q, i) => {
+    out.push(`## ${i + 1} · ${q.id}`, '', q.stimulus, '', `**${q.text}**`, '')
+    q.options.forEach((o, k) => out.push(`${LETTERS[k]}. ${o}`))
+    out.push('')
+  })
+  const texto = out.join('\n')
+  if (outPath) {
+    fs.writeFileSync(outPath, texto)
+    console.log(`Copia para auditoría escrita en ${outPath} (${mod.items.length} ítems con sus textos, sin claves).`)
+  } else console.log(texto)
+  process.exit(0)
 }
 
 // ── modo extraer ──
