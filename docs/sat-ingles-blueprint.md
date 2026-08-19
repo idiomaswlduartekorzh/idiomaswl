@@ -172,9 +172,15 @@ SAT es un simulacro lineal con puntaje bruto, y así hay que llamarlo en pantall
 
 ## 4. Puertas de calidad
 
-Umbrales medidos sobre el conjunto, no ítem por ítem. Son los que implementará
-`scripts/check-sat-exam.mjs` (todavía no escrito) y los que aplican los auditores a mano
-mientras tanto.
+Umbrales medidos sobre el conjunto, no ítem por ítem. Los implementa
+`scripts/check-sat-exam.mjs` (✅ escrito el 18 ago 2026, probado contra nueve defectos
+sembrados).
+
+Ocho puertas son mecánicas y las mide el script. Cuatro —**4 clave única, 6 prueba a
+ciegas, 10 equidad y 11 originalidad**— exigen criterio y no se pueden contar. Para esas,
+el guardián no comprueba el contenido: comprueba que **el auditor pasó y firmó**, leyendo
+`docs/sat-auditorias/<modulo>.json` (plantilla en esa misma carpeta). Un acta que falta es
+un fallo, no una presunción de inocencia.
 
 | # | Puerta | Umbral | Por qué |
 |---|---|---|---|

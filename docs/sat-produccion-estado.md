@@ -5,8 +5,8 @@ Las reglas están en `docs/sat-loop-nocturno.md`; los parámetros y umbrales, en
 `docs/sat-ingles-blueprint.md`.
 
 - **Rama:** `feat/red-agentes-sat-ingles`
-- **Última vuelta:** 1 · 18 ago 2026 · A1 hecha
-- **Siguiente tarea:** **A2** (guardián `check-sat-exam.mjs`)
+- **Última vuelta:** 2 · 18 ago 2026 · A2 hecha
+- **Siguiente tarea:** **A3** (contrato: `exams.ts` + ruta)
 
 ---
 
@@ -17,7 +17,7 @@ Se coge la primera sin marcar. Una por vuelta.
 ### Fase A — Cimientos
 
 - [x] **A1** · `sat-blueprint` verifica los parámetros contra College Board y quita los ⚠️ de `docs/sat-ingles-blueprint.md` §2
-- [ ] **A2** · `scripts/check-sat-exam.mjs` con las doce puertas de §4 + `npm run check:sat`
+- [x] **A2** · `scripts/check-sat-exam.mjs` con las doce puertas de §4 + `npm run check:sat`
 - [ ] **A3** · Contrato: entrada `sat` en `src/data/exams.ts` + forma del set + ruta `/examenes/sat/practica/[id]`
 
 ### Fase B — Rebanada vertical
@@ -47,6 +47,7 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
 
 | Vuelta | Tarea | Resultado | Commit |
 |---|---|---|---|
+| 2 | A2 · guardián | ✅ `scripts/check-sat-exam.mjs` con las doce puertas. Ocho se miden; las otras cuatro exigen acta firmada del auditor. **Probado contra 9 defectos sembrados: los 9 detectados.** `tsc` limpio | `docs(sat): un guardián que nunca ha fallado…` |
 | 1 | A1 · verificar parámetros | ✅ Los 8 parámetros verificados contra 3 PDF oficiales de College Board. **Un error grave corregido** (ver abajo). Solo queda ⚠️ el orden de los tipos dentro de un dominio: College Board no lo publica | `1fe76594` |
 
 ---
@@ -69,6 +70,12 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
    la media, no la desaparición de los fáciles.
 6. **Caducidad:** parámetros del ciclo 2026-27. Reverificar si se produce después de
    agosto de 2027.
+
+## Deuda anotada
+
+| Qué | Por qué no se hizo | Cuándo |
+|---|---|---|
+| Añadir `check:sat` a `package.json` y al `prebuild` | `package.json` tiene cambios sin commitear de otra sesión (`check:color-tokens`, `check:landings-locales`). Tocarlo significaría commitear trabajo ajeno | Cuando esa sesión commitee lo suyo. Mientras tanto se invoca por ruta: `node scripts/check-sat-exam.mjs` |
 
 ## Bloqueos
 

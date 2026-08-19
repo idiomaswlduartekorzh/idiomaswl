@@ -1,0 +1,14 @@
+{
+  "modulo": "sat-set-1-m1",
+  "fecha": "2026-08-18",
+  "auditorias": {
+    "clave": { "agente": "sat-key-auditor", "veredicto": "APTO", "itemsConDosClaves": 0, "notas": "" },
+    "sesgo": { "agente": "sat-bias-auditor", "veredicto": "APTO", "pruebaACiegasPct": 0, "notas": "" },
+    "equidad": { "agente": "sat-fairness-auditor", "veredicto": "APTO", "banderas": 0, "notas": "" },
+    "lengua": { "agente": "sat-language-auditor", "veredicto": "APTO", "bloqueantes": 0, "notas": "" },
+    "dificultad": { "agente": "sat-difficulty-calibrator", "veredicto": "APTO", "notas": "" },
+    "originalidad": { "agente": "sat-originality-auditor", "veredicto": "APTO", "banderasRojas": 0, "notas": "" },
+    "simulacion": { "agente": "sat-student-simulator", "veredicto": "APTO", "tramposoPct": 0, "notas": "" }
+  },
+  "veredicto": "APTO"
+}
