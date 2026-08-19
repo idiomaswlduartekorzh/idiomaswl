@@ -35,8 +35,27 @@ import type { SatItemMeta } from '../module-types'
  * R4 (reparto del solape léxico): la clave de q23 repite vocabulario de las notas a
  * propósito —13 palabras de contenido, frente a 16, 12 y 11 de los distractores— para que
  * el bloque no premie la estrategia de contar coincidencias y quedarse con la opción que
- * menos tiene. En q24 la clave y su espejo empatan; ninguna clave del bloque es la más
- * alta ni la más baja.
+ * menos tiene. En q24 las cuatro opciones repiten exactamente las mismas once palabras de
+ * las notas, así que el ítem no cuenta para ninguna de las dos caras de la puerta 3;
+ * antes contaba para la cara baja.
+ *
+ * Segunda corrección de agosto de 2026, tras medir la prueba a ciegas con panel
+ * (`scripts/sat-blind-test.mjs`): ocho solucionadores que solo veían enunciados y opciones
+ * eligieron la clave de q24 siete veces y la de q26 seis, contra un techo del 35 %. Los dos
+ * juegos se rehicieron por R8 —primero las cuatro opciones como cuatro objetos
+ * indistinguibles, después cuál de ellas sostiene el texto—:
+ *
+ * - **q24**: las cuatro comparan ahora la cobertura de los dos métodos con cifras, mismo
+ *   molde y misma longitud. Se van las dos opciones que se podaban sin leer las notas —la
+ *   que comparaba procedimientos sin dar resultados y la que cruzaba cobertura con horas de
+ *   trabajo—, que reducían el ítem a un cara o cruz entre la clave y su espejo. Tres de las
+ *   cuatro dan la victoria al trasplante, para que el saber previo (el método más laborioso
+ *   rinde más) tampoco señale la clave.
+ * - **q26**: el conector de consecuencia era el único de su familia, así que se acertaba
+ *   eligiendo «el de causa» sin leer una palabra. Ahora «After all» ocupa también terreno
+ *   causal —con la flecha invertida: presenta lo que sigue como razón de lo anterior— y el
+ *   contraste lo lleva «However», que es la opción con más tirón para quien responde a
+ *   ciegas.
  */
 
 export const items: MCQQuestion[] = [
@@ -65,8 +84,8 @@ export const items: MCQQuestion[] = [
     options: [
       'Transplanted plots covered 46 percent of the seabed after three years, while seeded plots covered 31 percent.',
       'Seeded plots covered 46 percent of the seabed after three years, while transplanted plots covered 31 percent.',
-      'Seeded plots covered 31 percent of the seabed after three years, while transplanting took about four times as many working hours per plot as seeding.',
-      'Divers transplanted adult shoots taken from a healthy meadow nearby, while volunteers scattered seeds gathered from flowering plants.',
+      'Transplanted plots covered 46 percent of the seabed after three years, while seeded plots covered 12 percent.',
+      'Transplanted plots covered 46 percent of the seabed, while seeded plots covered 31 percent three years later.',
     ],
     answer: 0,
   },
@@ -93,10 +112,10 @@ export const items: MCQQuestion[] = [
       'The wheat harvest failed across the highland districts in 1846, and within a single season the price of bread in the provincial capitals doubled. Newspapers recorded the shortage in unusual detail: three of them printed weekly tables of grain prices, and a fourth sent a correspondent through the affected villages. ______ thousands of families left the highlands for work in the coastal ports during the two years that followed, and the census of 1850 found several hamlets standing empty.',
     text: 'Which choice completes the text with the most logical transition?',
     options: [
-      'Moreover,',
+      'After all,',
       'As a result,',
-      'For instance,',
-      'Nevertheless,',
+      'For example,',
+      'However,',
     ],
     answer: 1,
   },
@@ -145,13 +164,13 @@ export const meta: SatItemMeta[] = [
     tema: 'ciencia',
     razones: {
       A:
-        'Correcta: mide a los dos métodos con la misma vara y en el mismo momento —cobertura del lecho marino a los tres años— y da a cada uno su cifra, el 46 % al trasplante y el 31 % a la siembra (nota 5). Es la única que compara lo que consiguió cada método.',
+        'Correcta: es la única de las cuatro que reproduce sin tocar nada el único par de datos comparables de las notas —46 % al trasplante y 31 % a la siembra (nota 5)—, cada método con su cifra, medidos ambos con la misma vara (cobertura del lecho marino) y en el mismo corte (a los tres años).',
       B:
-        'Falsa: intercambia las dos cifras de la nota 5. Es el molde de la clave palabra por palabra, de modo que por la forma no se descarta y hay que volver a la viñeta. El camino hasta aquí es real y doble: reconstruir de memoria qué número era de quién, o dar por supuesto que ganó la siembra porque la nota 6 la presenta como la barata.',
+        'Falsa: intercambia las dos cifras de la nota 5 y hace ganar a la siembra. El camino es doble y real: reconstruir de memoria qué número era de quién, o suponer que ganó la siembra porque la nota 6 la presenta como la que exige cuatro veces menos trabajo, y de ahí concluir que el método barato fue además el mejor.',
       C:
-        'Cierta y con las varas cruzadas: mide la siembra por su resultado (31 %) y el trasplante por su coste (cuatro veces más horas por parcela, nota 6). Son dos cifras que no se pueden poner una frente a otra. Quien la elige compara el par correcto en la dimensión equivocada y sale de ahí tomando el método más barato por el más exitoso.',
+        'Falsa por la cifra de la siembra: el 12 % no está en ninguna viñeta. Sale de trasladar la proporción de la nota 6 —el trasplante costó unas cuatro veces más horas por parcela— al resultado, como si cuatro veces más trabajo tuviera que dar cuatro veces más lecho cubierto. Confunde lo que cuesta un método con lo que consigue.',
       D:
-        'Cierta y sin resultados: compara los dos procedimientos (notas 3 y 4) —quién hizo cada cosa y con qué material— y se detiene justo antes de la viñeta que trae las cifras. Responde a cómo se hizo, no a cómo salió. Es lo que escribe quien busca en las notas las dos que hablan de los métodos y no relee el objetivo.',
+        'Falsa por el momento de la medición: la nota 5 da las dos cifras en el mismo corte, a los tres años, y aquí la de la siembra se separa tres años de la del trasplante, que además queda sin fecha. Es lo que escribe quien coteja los números y no las fechas, o quien da por hecho que la siembra, al ser más lenta, se midió después: acaba comparando dos mediciones que nunca se tomaron a la vez.',
     },
     fuenteHecho:
       'Hecho libre de restauración de praderas marinas: trasplante de haces adultos frente a siembra de semillas, con mayor prendimiento y mucho más trabajo por superficie en el trasplante. Bahía, tormenta, años y porcentajes inventados.',
@@ -183,13 +202,13 @@ export const meta: SatItemMeta[] = [
     tema: 'historia',
     razones: {
       A:
-        'El error que el texto está construido para provocar: leída solo la oración anterior, «los periódicos lo documentaron con detalle» más «además, se marcharon miles de familias» encaja sin roce. La marcha no es un dato más de la cobertura, es el efecto de la carestía de dos oraciones antes.',
+        'Invierte la flecha causal: da la marcha de las familias como la razón de que los periódicos dedicaran tanto espacio a la carestía. La cronología lo impide —la salida ocupa los dos años siguientes y los caseríos vacíos aparecen en el censo de 1850, después de esa cobertura—, así que no puede explicarla. Es el camino de quien toma la oración de los periódicos por la afirmación central del párrafo y lee la última como su justificación.',
       B:
-        'Correcta: la causa está dos oraciones más arriba —cosecha perdida y pan al doble en una sola temporada—, y la salida de miles de familias y los caseríos vacíos del censo de 1850 son su consecuencia.',
+        'Correcta: la causa está dos oraciones más arriba —cosecha perdida y pan al doble en una sola temporada—, y la salida de miles de familias hacia los puertos y los caseríos vacíos del censo de 1850 son su consecuencia. La oración de los periódicos es un paréntesis sobre cómo quedó registrada la carestía, no un eslabón de la cadena.',
       C:
-        'Toma la emigración por un ejemplo de la escasez que los periódicos registraron. Las ilustraciones de esa cobertura ya están dadas en la oración anterior: las tablas semanales y el corresponsal.',
+        'Toma la emigración por un ejemplo de la cobertura minuciosa que acaba de describirse. Los ejemplos de esa cobertura ya están dados en la misma oración —las tablas semanales de tres periódicos y el corresponsal del cuarto—, y marcharse a los puertos no es una manera de registrar una escasez.',
       D:
-        'Supone que la cobertura de la prensa debería haber frenado la marcha, y por eso la marca como algo que ocurre a pesar de ella. El texto no atribuye a los periódicos ninguna influencia sobre lo que hicieron las familias.',
+        'Marca la marcha como algo que ocurre en contra de lo esperado, pero el texto no levanta ninguna expectativa que contradecir: en ningún punto dice que la atención de la prensa aliviara la carestía ni que retuviera a nadie. Es el camino de quien lee la cobertura como un intento de remediar la crisis y necesita un «pese a ello» para lo que vino después.',
     },
     fuenteHecho:
       'Patrón histórico libre: cosecha fallida, encarecimiento del pan, emigración de montaña hacia los puertos y despoblamiento en el censo siguiente. Sin país, región ni periódicos reales; 1846 solo fecha una serie inventada.',

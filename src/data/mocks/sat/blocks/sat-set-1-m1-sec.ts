@@ -17,11 +17,24 @@ import type { SatItemMeta } from '../module-types'
  * fácil a difícil sin agrupar por tipo (boundaries y form-structure-sense alternan), que
  * es la excepción verificada de College Board y está escrita así en el plan.
  *
- * Condición de clave única que hay que vigilar al editar (queda escrita también en el
- * documento de textos, bloque q16): el `however` de q16 forma parte del tramo del hueco y
- * es lo único que hace indefendible la opción con dos puntos. Si alguna vez se saca del
- * tramo, el punto y coma y los dos puntos se defienden los dos y q16 pasa a tener dos
- * claves. No es un defecto actual: es la condición que lo mantiene sano.
+ * q16, q20 y q22 se rehicieron el 19 de agosto de 2026 por el método R8 (blueprint §4 bis).
+ * Los tres se resolvían sin el texto delante —7/8, 8/8 y 7/8 solucionadores a ciegas— porque
+ * su juego de opciones era el dibujo canónico de un ejercicio de manual: «; however,», los
+ * dos puntos delante de una lista y el inciso entre dos comas. La clave de cada uno sigue en
+ * su letra (D, D, B); lo que cambió es el mecanismo, y con él la `regla` de q16 y de q22.
+ *
+ * Condiciones de clave única que hay que vigilar al editar:
+ *
+ * - q16: la segunda oración deja de ser independiente solo porque «though» la subordina. Si
+ *   alguna opción vuelve a traer un adverbio conjuntivo con punto y coma, o un punto seguido
+ *   de sujeto, esa opción será también correcta y el ítem tendrá dos claves.
+ * - q20: las cuatro opciones llevan a propósito las mismas palabras y lo único que cambia es
+ *   el signo (el modelo es q18, que resistió la prueba a ciegas). No se puede añadir una
+ *   raya: tras oración completa, la raya presenta una enumeración igual de bien que los dos
+ *   puntos, y el ítem pasaría a tener dos claves.
+ * - q22: la clave es la opción sin ningún signo, y lo es porque «filled» es verbo conjugado y
+ *   comparte sujeto con «opened». Si el tramo del hueco deja de tener verbo conjugado, el par
+ *   de comas del inciso vuelve a ser correcto.
  */
 
 export const items: MCQQuestion[] = [
@@ -34,10 +47,10 @@ export const items: MCQQuestion[] = [
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
+      "minor; although",
+      "minor. Although",
       "minor, however,",
-      "minor however,",
-      "minor: however,",
-      "minor; however,",
+      "minor, though",
     ],
     answer: 3,
   },
@@ -98,10 +111,10 @@ export const items: MCQQuestion[] = [
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
-      "the same three ingredients",
-      "three ingredients, which are:",
-      "the same three ingredients;",
-      "the same three ingredients:",
+      "the same recipe;",
+      "the same recipe",
+      "the same recipe,",
+      "the same recipe:",
     ],
     answer: 3,
   },
@@ -130,10 +143,10 @@ export const items: MCQQuestion[] = [
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
-      "canal which had taken eleven years to dig",
-      "canal, which had taken eleven years to dig,",
-      "canal; which had taken eleven years to dig;",
-      "canal, which had taken eleven years to dig",
+      "canal, filled with water that winter, and",
+      "canal filled with water that winter and",
+      "canal filled with water that winter; and",
+      "canal filled with water that winter, and",
     ],
     answer: 1,
   },
@@ -147,16 +160,16 @@ export const meta: SatItemMeta[] = [
     dificultad: 1,
     tema: 'historia',
     regla:
-      "Empalme de comas: frontera entre dos oraciones independientes cuando la segunda abre con un adverbio conjuntivo.",
+      "Frontera entre las dos oraciones del período: la segunda solo puede unirse con una coma si un subordinante la vuelve dependiente; ni la coma sola con adverbio conjuntivo, ni el punto y coma o el punto delante de una subordinada.",
     razones: {
       A:
-        "Empalme de comas: une con una coma sola dos oraciones independientes —«The change looked minor» y «it decided who in Britain could afford to write at all»—, y «however» es adverbio, no conjunción, así que no puede sostener esa unión.",
+        "El punto y coma exige oración independiente a los dos lados, y a su derecha «although it decided who in Britain could afford to write at all» ya no lo es: «although» la subordina, y detrás no viene ninguna principal que la recoja, porque la frase termina ahí. Es el error de quien ha aprendido que el punto y coma une dos ideas largas y lo pone sin mirar con qué clase de palabra abre la segunda.",
       B:
-        "Frase seguida: deja las dos oraciones independientes pegadas sin signo alguno, de modo que la frontera no se marca ni mal ni bien; es el error de quien puntúa de oído y no oye pausa.",
+        "Corta la oración donde el lector haría la pausa y deja «Although it decided who in Britain could afford to write at all.» sola entre punto y punto: una subordinada sin principal, es decir, un fragmento. La opción no se delata a sí misma —una oración puede empezar por «Although»—; la delata que el párrafo sigue con «Ten years later…» y no con la principal que faltaba.",
       C:
-        "Los dos puntos anuncian que lo que viene explica o desarrolla lo anterior, pero lo que viene abre con «however» y anuncia contraste: el signo contradice la relación que la propia frase declara.",
+        "Empalme de comas: «The change looked minor» y «it decided who in Britain could afford to write at all» son dos oraciones independientes, y «however» es adverbio, no conjunción, así que la coma sola no puede unirlas por mucho que el adverbio suene a bisagra. Es el error de quien puntúa por el oído: donde oye pausa, pone coma.",
       D:
-        "Correcta: dos oraciones independientes completas a los dos lados, separadas por punto y coma, con el adverbio conjuntivo «however» abriendo la segunda y su coma detrás. Es el único signo que marca la frontera sin imponer una relación que el texto no tiene.",
+        "Correcta: «though» es conjunción subordinante y, antepuesta a la segunda oración, la convierte en subordinada concesiva; con una principal y una subordinada detrás, la coma es el único signo que hace falta —y el que la norma pide cuando la concesiva va pospuesta—. La concesión es además la relación que el párrafo sostiene: la reforma «looked minor» y a la vez decidió quién podía escribir.",
     },
     fuenteHecho:
       "Historia postal británica, hecho de manual (reforma de 1840: el porte pasa al remitente con tarifa única); redacción propia y sin cifras exactas.",
@@ -234,13 +247,13 @@ export const meta: SatItemMeta[] = [
       "Dos puntos tras oración completa para introducir una enumeración explicativa.",
     razones: {
       A:
-        "No pone signo alguno: la enumeración se pega al complemento y «finds the same three ingredients an earth or a mineral ground to powder for color» deja al lector sin frontera entre lo que se anuncia y lo que se detalla.",
+        "El punto y coma pide oración independiente a los dos lados y a su derecha solo hay tres sintagmas nominales —«an earth…», «an oil…», «and a tree resin…»—, que no forman oración. Es el error de quien usa el punto y coma como una coma reforzada para anunciar una lista.",
       B:
-        "Coloca los dos puntos tras oración incompleta: lo que precede al signo termina en «which are», que no se sostiene solo. Es el error de quien cree que los dos puntos anuncian una lista, en vez de rematar una oración.",
+        "Deja el complemento y su enumeración pegados sin signo: «finds the same recipe an earth or a mineral ground to powder for color» obliga a leer dos sintagmas nominales seguidos sin frontera entre lo que se anuncia y lo que se detalla. Es el error de quien da por hecho que, si el sentido se entiende, el signo sobra.",
       C:
-        "El punto y coma pide oración independiente a los dos lados, y a la derecha solo hay tres sintagmas nominales enumerados, no una oración.",
+        "La enumeración que sigue ya separa sus tres miembros con comas —«…for color, an oil…, and a tree resin…»—, así que una coma delante de «an earth» no anuncia nada: mete «the same recipe» dentro de la serie y el lector cuenta cuatro cosas donde el texto nombra una y la desglosa en tres. La coma no puede a la vez presentar la lista y separar sus miembros.",
       D:
-        "Correcta: «A conservator who opens a paint box from any workshop of that decade finds the same three ingredients» es oración completa, que es lo único que los dos puntos exigen delante, y lo que sigue es la enumeración que la desarrolla.",
+        "Correcta: «A conservator who opens a paint box from any workshop of that decade finds the same recipe» es oración completa, que es lo único que los dos puntos exigen delante, y lo que sigue es la enumeración que desarrolla esa receta. El párrafo la retoma dos líneas después con «What changed after 1840 was not the recipe but who prepared it».",
     },
     fuenteHecho:
       "Historia material de la pintura, hecho libre: pigmento molido, aceite y resina en el taller hasta que el tubo metálico permitió comprar el color hecho. Sin taller, pintor ni patente concretos.",
@@ -273,16 +286,16 @@ export const meta: SatItemMeta[] = [
     dificultad: 3,
     tema: 'historia',
     regla:
-      "Dos fronteras en la misma oración: la relativa explicativa intercalada exige coma de apertura y coma de cierre.",
+      "Predicado compuesto: dos verbos conjugados que comparten sujeto no se separan con coma ni con punto y coma delante de la conjunción, y el primero tampoco puede aislarse entre comas como si fuera un inciso.",
     razones: {
       A:
-        "Deja la relativa sin marcar por ningún lado, o sea la lee como especificativa: «which had taken eleven years to dig» pasaría a servir para distinguir este canal de otros, y en el párrafo solo hay uno, ya identificado por «The finished». Es el error de quien aprendió que las comas «cortan la frase» y las evita: internamente la opción es consistente —ningún signo a ninguno de los dos lados—, así que solo el texto la descarta.",
+        "Encierra «filled with water that winter» entre comas, o sea lo lee como inciso prescindible. Al hacerlo degrada a participio el único verbo conjugado que hay antes de «and», y la oración se queda sin verbo principal: «The finished canal, filled with water that winter, and opened in the spring of 1836…» ya no tiene con qué coordinar ese «and». Por dentro la opción es impecable —un par de comas que abre y cierra—; la tumba el párrafo, que no le da a «The finished canal» ningún otro verbo.",
       B:
-        "Correcta: la relativa no identifica nada —hay un solo canal y «The finished» ya lo señala— y el dato que aporta, los once años, el propio texto ya permite calcularlo con 1825 y 1836. Al no restringir, es elemento no esencial y va marcado a los dos lados con el mismo signo, la coma, que además devuelve el sujeto «The finished canal» a su verbo «opened».",
+        "Correcta: «filled» y «opened» son dos verbos conjugados que comparten un mismo sujeto, «The finished canal», y un predicado compuesto no lleva ningún signo delante de la conjunción. El propio texto enseña el contraste en su última oración, donde la coma delante de «and» sí aparece —«a railway ran along the same valley floor, and the tolls the canal collected never covered the debt»— porque allí lo que se une son dos oraciones con sujeto propio cada una.",
       C:
-        "Marca el inciso a los dos lados y con el mismo signo, que es la forma correcta, pero elige el signo que no puede hacerlo: el punto y coma exige oración independiente a izquierda y derecha, y aquí encuentra un sujeto sin verbo delante y una relativa detrás. Corta la oración dos veces entre «The finished canal» y «opened». Es el error de quien usa el punto y coma como una coma más fuerte.",
+        "El punto y coma exige oración independiente a los dos lados y a su derecha solo hay «and opened in the spring of 1836 to a crowd…», la segunda mitad de un predicado, sin sujeto propio. Es el error de quien recurre al punto y coma cuando la frase se le hace larga, como si fuera una pausa mayor y no una frontera entre oraciones.",
       D:
-        "Abre el inciso y no lo cierra: sin la coma de cierre, «opened in the spring of 1836 to a crowd…» queda absorbido por la relativa y la oración principal se queda sin su verbo. Es el error de quien marca dónde empieza la información añadida y no vuelve a mirar dónde termina.",
+        "Traslada al predicado compuesto la regla de la coma delante de «and», que solo rige cuando detrás viene una oración con su propio sujeto. Aquí «opened» no lo tiene: lo comparte con «filled», y la coma acaba separando al sujeto de su segundo verbo.",
     },
     fuenteHecho:
       "Historia del transporte del siglo XIX, hecho libre: canales justificados por el flete y desplazados por el ferrocarril, con peajes que no cubrieron la deuda. Valle, condado, 1825, 1836, el periódico, los cuatro mil y los cuarenta carros son invención propia.",
