@@ -140,6 +140,32 @@ export const EXAMS: Record<string, Exam> = {
     available: true,
   },
 
+  // SAT digital — WeLearn cubre por ahora la sección Reading and Writing. Los parámetros
+  // salen del Assessment Framework de College Board, verificados el 18 ago 2026
+  // (docs/sat-ingles-blueprint.md §2). No se declara nada de Math: no está verificado.
+  sat: {
+    slug: 'sat',
+    name: 'SAT',
+    fullName: 'SAT (digital) — sección Reading and Writing',
+    flag: '🇺🇸',
+    language: 'Inglés',
+    color: '#6d28d9',
+    colorDark: '#4c1d95',
+    tagline: 'La puerta de entrada al pregrado en Estados Unidos.',
+    description: 'El SAT es el examen de admisión al pregrado en universidades de Estados Unidos. Desde 2024 es digital y adaptativo: la sección de Reading and Writing son dos módulos de 27 preguntas y 32 minutos cada uno, y el segundo módulo se ajusta a cómo te fue en el primero. Cada pregunta trae su propio texto corto —entre 25 y 150 palabras— y cuatro opciones. WeLearn prepara la sección de Reading and Writing.',
+    totalTime: '64 min (Reading and Writing)',
+    totalQuestions: 54,
+    scoreRange: '200 – 800 (sección)',
+    scoreName: 'Puntaje de sección',
+    passing: 'No hay nota de corte: cada universidad fija la suya. Para admisión competitiva en EE. UU. se suele hablar de 600+ en la sección.',
+    recognized: ['Universidades de pregrado en Estados Unidos', 'Becas y ayuda financiera basadas en mérito', 'Programas internacionales que aceptan SAT en lugar de examen propio'],
+    sections: [
+      { name: 'Módulo 1', icon: '📖', time: '32 min', questions: 27, color: '#6d28d9', types: ['Craft and Structure', 'Information and Ideas', 'Standard English Conventions', 'Expression of Ideas'] },
+      { name: 'Módulo 2', icon: '📈', time: '32 min', questions: 27, color: '#8b5cf6', types: ['Se ajusta a tu resultado del módulo 1', 'Mismos cuatro dominios', 'Mismo formato, distinta exigencia'] },
+    ],
+    mocks: [],
+    available: false,
+  },
   icfes: {
     slug: 'icfes',
     name: 'ICFES',

@@ -5,8 +5,8 @@ Las reglas están en `docs/sat-loop-nocturno.md`; los parámetros y umbrales, en
 `docs/sat-ingles-blueprint.md`.
 
 - **Rama:** `feat/red-agentes-sat-ingles`
-- **Última vuelta:** 2 · 18 ago 2026 · A2 hecha
-- **Siguiente tarea:** **A3** (contrato: `exams.ts` + ruta)
+- **Última vuelta:** 3 · 18 ago 2026 · A3 hecha — fase A cerrada
+- **Siguiente tarea:** **B1a** (primer bloque de ítems: Craft and Structure)
 
 ---
 
@@ -18,7 +18,7 @@ Se coge la primera sin marcar. Una por vuelta.
 
 - [x] **A1** · `sat-blueprint` verifica los parámetros contra College Board y quita los ⚠️ de `docs/sat-ingles-blueprint.md` §2
 - [x] **A2** · `scripts/check-sat-exam.mjs` con las doce puertas de §4 + `npm run check:sat`
-- [ ] **A3** · Contrato: entrada `sat` en `src/data/exams.ts` + forma del set + ruta `/examenes/sat/practica/[id]`
+- [x] **A3** · Contrato: entrada `sat` en `src/data/exams.ts` + forma del set + ruta `/examenes/sat/practica/[id]`
 
 ### Fase B — Rebanada vertical
 
@@ -47,6 +47,7 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
 
 | Vuelta | Tarea | Resultado | Commit |
 |---|---|---|---|
+| 3 | A3 · contrato | ✅ Ficha `sat` en `exams.ts` (`available: false`), `buildSatMock()`, y `stimulusStyle: 'passage'` para que los textos largos se pinten como prosa. `/examenes/sat` ya se prerenderiza. `tsc` + `build` en verde | `feat(sat): el examen ya tiene sitio…` |
 | 2 | A2 · guardián | ✅ `scripts/check-sat-exam.mjs` con las doce puertas. Ocho se miden; las otras cuatro exigen acta firmada del auditor. **Probado contra 9 defectos sembrados: los 9 detectados.** `tsc` limpio | `docs(sat): un guardián que nunca ha fallado…` |
 | 1 | A1 · verificar parámetros | ✅ Los 8 parámetros verificados contra 3 PDF oficiales de College Board. **Un error grave corregido** (ver abajo). Solo queda ⚠️ el orden de los tipos dentro de un dominio: College Board no lo publica | `1fe76594` |
 
@@ -70,6 +71,17 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
    la media, no la desaparición de los fáciles.
 6. **Caducidad:** parámetros del ciclo 2026-27. Reverificar si se produce después de
    agosto de 2027.
+
+## Hallazgo que ahorra trabajo en B3
+
+El hub **no hay que construirlo de cero**. `src/data/examGuides.ts` ya es el sistema de
+contenido de las páginas de examen: `lead`, `sections`, `faqs`, `sources`, `related` y
+`checked`, y el FAQPage del schema sale del **mismo** arreglo de `faqs` que se pinta en
+pantalla. B3 es escribir `EXAM_GUIDES.sat` y poner `available: true`, no una página nueva.
+
+Las reglas que ese archivo se impone a sí mismo y que B3 hereda: las preguntas salen de
+consultas reales de Search Console, `lead` responde en la primera frase, y nada sin fuente
+oficial verificable (ni precios, ni sedes, ni fechas).
 
 ## Deuda anotada
 

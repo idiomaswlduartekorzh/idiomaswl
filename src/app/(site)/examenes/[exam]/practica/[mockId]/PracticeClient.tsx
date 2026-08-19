@@ -633,6 +633,16 @@ function StimulusBox({ question }: { question: MCQQuestion }) {
       </div>
     );
   }
+  if (style === 'passage') {
+    // SAT: cada ítem lleva su propio texto. Reutiliza la caja de lectura de sección —
+    // el <pre> monoespaciado del estilo por defecto es ilegible para 150 palabras de prosa.
+    return (
+      <div className="prac-passage-box">
+        {question.stimulusLabel && <p className="prac-passage-box__label">{question.stimulusLabel}</p>}
+        <p className="prac-passage-box__text">{question.stimulus}</p>
+      </div>
+    );
+  }
   if (style === 'dialog-box') {
     return (
       <div className="prac-dialog-box">

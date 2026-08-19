@@ -162,7 +162,13 @@ El SAT reutiliza lo que ya existe; no se inventa un motor nuevo.
 - Tipos: `src/data/mocks/types.ts` — los ítems son `MCQQuestion` (`type: 'mcq'`,
   `options: string[]`, `answer` 0-indexed), agrupados en `MockSection` (una por módulo).
 - Ficha del examen: `src/data/exams.ts` → nueva entrada `sat` en `EXAMS`.
-- Sets: `src/data/mocks/sat-set-N.ts`, registrados en `src/data/mocks/index.ts`.
+- Módulos: `src/data/mocks/sat/sat-set-N-<variante>.ts`, con la forma `SatModule` de
+  `src/data/mocks/sat/module-types.ts` (27 ítems + 27 metadatos emparejados por `id`).
+- Sets: se componen con `buildSatMock()` de `src/data/mocks/sat/build-sat-mock.ts` —
+  M1 + una variante de M2— y se registran en `MOCK_REGISTRY` de `src/data/mocks/index.ts`
+  con la clave `sat:<id>`.
+- El builder pone solo el `part` y el `stimulusStyle: 'passage'`; sin ese estilo un texto
+  de 150 palabras se pinta en monoespaciado y no hay quien lo lea.
 - Ruta: `/examenes/sat/practica/[id]`, igual que IELTS y TOEFL.
 - El texto de cada ítem va en `stimulus`; la pregunta en `text`.
 
@@ -214,6 +220,6 @@ un fallo, no una presunción de inocencia.
 | Agentes (`.claude/agents/sat-*.md`) | ✅ escritos |
 | Skill de creación (`crear-examen-sat`) | ✅ escrita |
 | Skill de auditoría (`auditar-examen-sat`) | ✅ escrita |
-| Guardián (`scripts/check-sat-exam.mjs`) | ⬜ pendiente — spec en §4 |
-| Ficha `sat` en `exams.ts` + ruta | ⬜ pendiente |
+| Guardián (`scripts/check-sat-exam.mjs`) | ✅ 18 ago 2026 — probado contra 9 defectos sembrados |
+| Ficha `sat` en `exams.ts` + ruta | ✅ 18 ago 2026 — `available: false` hasta que haya contenido |
 | Primer set piloto | ⬜ pendiente |
