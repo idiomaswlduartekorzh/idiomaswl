@@ -200,7 +200,16 @@ un fallo, no una presunción de inocencia.
 | 8 | Mezcla de dominios | Exactamente 8 C&S / 7 I&I / 7 SEC / 5 EoI por módulo (§2) | Un simulacro desbalanceado da un diagnóstico falso |
 | 9 | Curva de dificultad | Agrupado por tipo de ítem y, dentro del grupo, de menos a más; Standard English Conventions de menos a más sin agrupar (§2) | Es como está construido el examen real |
 | 10 | Equidad | Cero ítems que exijan conocimiento cultural, regional o económico no dado en el texto | El estudiante es colombiano; el examen no puede medirle su geografía |
-| 11 | Originalidad | Cero secuencias de 8+ palabras que coincidan con material publicado | Ni copiamos College Board ni fuentes con derechos |
+| 11 | Originalidad | Cero secuencias de 8+ palabras que coincidan con material publicado, **salvo los enunciados canónicos** (ver abajo) | Ni copiamos College Board ni fuentes con derechos |
+
+**Excepción de la puerta 11, escrita porque casi detiene un lote entero.** Los enunciados
+fijos de cada tipo de ítem —«Which choice completes the text so that it conforms to the
+conventions of Standard English?», «As used in the text, what does the word … most nearly
+mean?», «While researching a topic, a student has taken the following notes:»— se
+reproducen **literalmente** por requisito de validez: un simulacro que pregunta con otras
+palabras deja de parecerse al examen. Son frases funcionales cortas, hay fusión (no hay
+otra manera de dar esa instrucción) y toda la industria las imprime igual. La puerta 11 se
+aplica a los `stimulus` y a las `options`, que es donde vive el contenido.
 | 12 | Variedad temática | Ningún tema (ciencia, humanidades, historia, literatura) por encima del 40 % de un módulo | El examen real reparte |
 
 ## 4 bis. Reglas de escritura que descubrió la producción

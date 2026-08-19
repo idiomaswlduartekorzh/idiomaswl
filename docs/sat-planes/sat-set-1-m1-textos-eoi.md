@@ -215,7 +215,7 @@ inventada, no para aludir a ninguna crisis concreta.
 
 **Texto** (701 caracteres = 116,8 palabras-SAT)
 
-> Historians of the first decade of photography often describe the medium as pure recording: the camera took down whatever stood in front of it, and the operator chose nothing. The description is not baseless: exposures lasted several minutes, the apparatus was too heavy to move from room to room, and anyone who shifted position during that time ruined the picture. ______ the portraits that survive from those years are far from uniform. One operator lit a face from a single side and left the other half in shadow; another arranged a room so that the subject appeared to have been interrupted at work. The conditions narrowed the range of choices open to the photographer; they did not eliminate it.
+> Historians of the first decade of photography often describe the medium as pure recording: the camera took down whatever stood in front of it, and the operator chose nothing. The description is not baseless: exposures ran to minutes in the earliest years, the apparatus was heavy and slow to set up, and anyone who shifted position during that time ruined the picture. ______ the portraits that survive from those years are far from uniform. One operator lit a face from a single side and left the other half in shadow; another arranged a room so that the subject appeared to have been interrupted at work. The conditions narrowed the range of choices open to the photographer; they did not eliminate it.
 
 **Métricas**: 5 oraciones · 23,8 palabras por oración · léxico exigente: medium, pure
 recording, apparatus, exposures, uniform, narrowed
