@@ -47,6 +47,15 @@
   "veredicto": "APTO",
   "quedaAbierto": [
     "Dos ítems (q06, q14) siguen por encima del umbral por ítem en la última medición, con la media muy por debajo. Anotados para una pasada futura.",
-    "El motor no hace adaptatividad entre módulos ni conversión a escala 200-800; el simulacro se publica como lineal y con puntaje bruto, y así se dice en pantalla."
-  ]
+    "El motor no hace adaptatividad entre módulos ni conversión a escala 200-800. El hub lo declara por escrito, pero la PANTALLA DE RESULTADOS NO: muestra un porcentaje con el rótulo «sobre 100 puntos», que es la escala del ICFES y no la del SAT. La versión anterior de esta acta afirmaba que la pantalla lo decía; era falso y se afirmó sin comprobarlo. Lo detectaron dos auditores de producto independientes el 19 ago 2026. Bloquea la publicación.",
+    "Auditoría de producto (19 ago 2026): el contenido es APTO pero el PRODUCTO no es publicable. Dos bloqueantes técnicos —los leads del SAT se guardan como leads de ICFES y son invisibles en el panel; y en móvil los 27 textos se recortan a 340 px, ocultando el hueco de la pregunta en cinco ítems—. Informe en docs/sat-auditorias/informes/."
+  ],
+  "publicable": false,
+  "bloqueantesDeProducto": [
+    "Los leads del SAT se guardan con source 'icfes-practica' y el panel de admin solo consulta ese valor: un aspirante al SAT entrega su WhatsApp y cae en el balde del ICFES, sin ninguna columna que lo distinga ni en pantalla ni en el CSV. La captura de leads es el propósito comercial del simulacro.",
+    "En móvil, la caja del texto tiene max-height 340px con scroll propio y sin barra visible en iOS: los 27 ítems se recortan, y en q17, q19, q21, q22 y q27 el hueco «______» sobre el que pregunta el ítem queda por debajo del área visible.",
+    "La pantalla de resultados muestra un porcentaje con el rótulo «sobre 100 puntos» —la escala del ICFES— para un examen que se puntúa de 200 a 800, y sin decir que es 1 de los 2 módulos. El hub promete por escrito lo contrario.",
+    "El muro de datos promete «análisis por parte» antes de enseñar una sola respuesta; para el SAT eso es una única barra que dice «Parte 1», porque el simulacro tiene una sola sección."
+  ],
+  "notaSobreElActa": "Esta acta certifica el CONTENIDO: las siete auditorías de ítems están en APTO y el guardián da las doce puertas. No certifica el producto. La auditoría de producto del 19 ago 2026 —fullstack, experto en SAT y estudiante— lo declaró no publicable. Content y producto son puertas distintas y hasta hoy solo existía la primera."
 }

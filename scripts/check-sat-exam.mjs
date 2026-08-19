@@ -338,6 +338,14 @@ function checkModule(mod) {
       if (e && e.banderas > 0) fail(id, '10 equidad', `${e.banderas} banderas de equidad sin resolver`)
       if (o && o.banderasRojas > 0) fail(id, '11 originalidad', `${o.banderasRojas} banderas rojas de originalidad; esto detiene el lote entero`)
       if (a.veredicto !== 'APTO') fail(id, 'veredicto', `el acta dice ${a.veredicto}`)
+      // El acta certifica el CONTENIDO. Que el producto se pueda publicar es otra puerta, y
+      // la enseñó una auditoría de producto que encontró el embudo de leads roto y los textos
+      // recortados en móvil con el contenido ya en APTO. Un módulo impecable dentro de un
+      // producto roto sigue siendo un producto roto.
+      if (a.publicable === false) {
+        fail(id, 'producto', `el contenido es APTO pero el acta declara el producto NO publicable (${(a.bloqueantesDeProducto || []).length} bloqueantes de producto)`)
+        for (const b of a.bloqueantesDeProducto || []) warn(id, 'producto', b)
+      }
     }
   }
 

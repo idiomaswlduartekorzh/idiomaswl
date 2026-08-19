@@ -54,12 +54,12 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
     title: 'SAT en español: qué es, cómo se puntúa y simulacro gratis',
     description: 'El examen de admisión a universidades de EE. UU., explicado para latinoamericanos: cómo es el formato digital, qué puntaje piden y simulacro gratis.',
     lead:
-      'El <strong>SAT</strong> es el examen que piden la mayoría de universidades de Estados Unidos para entrar a pregrado. Desde 2024 es <strong>digital y adaptativo</strong>: dura unas dos horas y cuarto, se puntúa de 400 a 1600, y ya no hay preguntas sueltas de vocabulario ni textos larguísimos — cada pregunta trae su propio texto corto, de 25 a 150 palabras.',
+      'El <strong>SAT</strong> es el examen que piden la mayoría de universidades de Estados Unidos para entrar a pregrado. Desde marzo de 2023 para quienes lo presentan fuera de Estados Unidos —Colombia incluida— es <strong>digital y adaptativo</strong>: dura unas dos horas y cuarto, se puntúa de 400 a 1600, y ya no hay preguntas sueltas de vocabulario ni textos larguísimos — cada pregunta trae su propio texto corto, de 25 a 150 palabras.',
     sections: [
       {
         h: 'Qué cambió con el SAT digital',
         body: [
-          'El examen que hacían tus primos mayores ya no existe. El formato digital, obligatorio en todo el mundo desde 2024, es <strong>más corto</strong> (unas 2h 14m en vez de 3 horas), se hace en computador con una aplicación propia de College Board, y permite calculadora en toda la sección de matemáticas.',
+          'El examen que hacían tus primos mayores ya no existe. El formato digital es el único desde marzo de 2023 para los estudiantes internacionales, y desde marzo de 2024 también dentro de Estados Unidos. Es es <strong>más corto</strong> (unas 2h 14m en vez de 3 horas), se hace en computador con una aplicación propia de College Board, y permite calculadora en toda la sección de matemáticas.',
           'El cambio que más afecta a cómo se estudia: <strong>cada pregunta de lectura tiene su propio texto</strong>. Antes eran cinco pasajes largos con diez preguntas cada uno; ahora son textos de un párrafo, uno por pregunta. Eso premia leer con precisión más que leer rápido.',
           'Y es <strong>adaptativo por etapas</strong>: cada sección va en dos módulos, y el segundo cambia de dificultad según cómo te fue en el primero. No puedes volver al módulo anterior una vez lo entregas.',
         ],
@@ -92,8 +92,8 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
         h: 'Cómo prepararte desde Colombia o Latinoamérica',
         body: [
           'La preparación del SAT no es preparación de inglés general. Un estudiante con nivel B2 o C1 puede sacar un puntaje mediocre si no conoce el formato, y un B2 bien entrenado supera a un C1 que llega en frío.',
-          'Lo que más rinde, en este orden: <strong>vocabulario en contexto</strong> (el dominio con más preguntas), <strong>puntuación inglesa</strong> —el punto y coma, la coma en incisos y los límites de oración valen una cuarta parte del examen y son reglas cerradas que se aprenden—, y <strong>lectura de datos</strong>, porque varias preguntas traen una tabla o una gráfica.',
-          'Y el cronómetro. Un minuto y diecinueve segundos por pregunta se siente muy distinto en casa que el día del examen: haz al menos un simulacro cronometrado de verdad antes de presentarte.',
+          'Lo que más rinde, en este orden: <strong>vocabulario en contexto</strong> (el dominio con más preguntas), <strong>puntuación y gramática</strong> —Standard English Conventions es una cuarta parte de esta sección, repartida entre los límites de oración y la puntuación por un lado, y concordancia, tiempos verbales y modificadores por otro; son reglas cerradas, de las que se aprenden—, y <strong>lectura de datos</strong>, porque varias preguntas traen una tabla o una gráfica.',
+          'Y el cronómetro. Un minuto y once segundos por pregunta se siente muy distinto en casa que el día del examen: haz al menos un simulacro cronometrado de verdad antes de presentarte.',
         ],
       },
     ],
