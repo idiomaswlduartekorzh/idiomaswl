@@ -43,6 +43,17 @@ import type { SatItemMeta } from '../module-types'
  * La versión de hoy vuelve a pedir dos decisiones en la misma oración y sube por localización
  * y por complejidad del texto, **no** por el enunciado, que en SEC es fijo y no se toca.
  *
+ * Esa versión duró unas horas: el auditor lingüístico la devolvió la misma tarde con **dos
+ * claves**. La segunda decisión estaba bien; la primera no, porque el predicado del hueco decía
+ * «opened in 1836» y eso identificaba por su cuenta —la línea vieja «had been dug in the 1790s»
+ * y del segundo canal el texto decía «Digging on the second began in 1825»—, de modo que el
+ * modificador comentaba y el par de comas era tan defendible como la clave. El arreglo del 19
+ * de agosto por la tarde quita el identificador rival sin tocar la clave ni el tipo de discurso:
+ * el predicado pasa a «carried the heavier traffic» (sin fecha, y el texto nunca dice cuál de
+ * los dos llevó más tráfico) y la última oración deja de colgar del año 1836 —«Within fifteen
+ * years» se quedaba sin ancla— y pasa a decir que **ninguna** de las dos compañías saldó su
+ * deuda, con lo que tampoco «the tolls it collected never covered the debt» señala a uno.
+ *
  * Condiciones de clave única que hay que vigilar al editar:
  *
  * - q16: la segunda oración deja de ser independiente solo porque «though» la subordina. Si
@@ -54,12 +65,22 @@ import type { SatItemMeta } from '../module-types'
  *   puntos, y el ítem pasaría a tener dos claves.
  * - q22: sostiene dos fronteras a la vez y las cuatro opciones son la matriz completa de las
  *   dos decisiones (identifica/comenta × punto y coma/coma), con las mismas palabras en las
- *   cuatro. Lo que hace esencial al modificador es que el párrafo tiene **dos** canales vivos
- *   y solo dice de dónde salió el dinero de uno: si alguien deja un solo canal en el texto, o
- *   nombra explícitamente al otro como el de la suscripción local, el modificador pasa a
- *   comentar y la opción del par de comas se vuelve una segunda clave. Y lo que fija el punto
- *   y coma es que detrás del hueco haya una oración con sujeto y verbo propios y sin
- *   conjunción: si se le añade un «and», la coma pasa a ser correcta y el ítem se cae.
+ *   cuatro. Lo que hace esencial al modificador son **dos** cosas, y hay que vigilar las dos,
+ *   porque la segunda ya se rompió una vez:
+ *   (a) que el párrafo tenga **dos** canales vivos y solo diga de dónde salió el dinero de uno.
+ *   Si alguien deja un solo canal, o nombra al segundo como el de la suscripción local, el
+ *   modificador pasa a comentar y el par de comas se vuelve una segunda clave.
+ *   (b) que en la oración del hueco **no quede ningún otro dato que identifique**. La versión
+ *   de la mañana del 19 de agosto decía «opened in 1836» y con eso bastaba para saber cuál era
+ *   —la vieja se había cavado en la década de 1790—: dos claves. Por eso hoy el predicado no
+ *   lleva fecha, el texto no dice cuál de los dos llevó más tráfico y la última oración dice
+ *   que ninguna de las dos compañías saldó su deuda. Prueba antes de publicar cualquier cambio:
+ *   tapa el modificador y lee «The canal carried the heavier traffic; the tolls it collected
+ *   never covered the debt its investors had signed for». Si con el párrafo delante se puede
+ *   decir cuál de los dos es, el ítem tiene dos claves otra vez.
+ *   Y lo que fija el punto y coma es que detrás del hueco haya una oración con sujeto y verbo
+ *   propios y sin conjunción: si se le añade un «and», la coma pasa a ser correcta y el ítem
+ *   se cae.
  */
 
 export const items: MCQQuestion[] = [
@@ -164,14 +185,14 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "Two canals were cut through the same range of hills within forty years of each other, and what separated them in the end was not the engineering but the direction the money came from. The older line had been dug in the 1790s with money from merchants in the capital, none of whom ever saw the hills they had paid to cut through. Digging on the second began in 1825, in rock that the surveyors had called soft, and the estimate had doubled before the crews were halfway through. The two lines ended at the same river landing, and the county spent thirty years measuring the receipts of one against the receipts of the other. The ______ the tolls it collected never covered the debt its investors had signed for. Within fifteen years a railway ran along the same valley floor, and both companies sold their works for whatever the stone was worth.",
+      "Two canals were cut through the same range of hills within forty years of each other, and what separated them in the end was not the engineering but the direction the money came from. The older line had been dug in the 1790s with money from merchants in the capital, none of whom ever saw the hills they had paid to cut through. Digging on the second began in 1825, in rock that the surveyors had called soft, and the estimate had doubled before the crews were halfway through. The two lines ended at the same river landing, and the county spent thirty years measuring the receipts of one against the receipts of the other. The ______ the tolls it collected never covered the debt its investors had signed for. A railway ran along the same valley floor before either company had cleared its debt, and both sold their works for whatever the stone was worth.",
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
-      "canal, built with money raised in the valley itself, opened in 1836;",
-      "canal built with money raised in the valley itself opened in 1836;",
-      "canal built with money raised in the valley itself opened in 1836,",
-      "canal, built with money raised in the valley itself, opened in 1836,",
+      "canal, built with money raised in the valley itself, carried the heavier traffic;",
+      "canal built with money raised in the valley itself carried the heavier traffic;",
+      "canal built with money raised in the valley itself carried the heavier traffic,",
+      "canal, built with money raised in the valley itself, carried the heavier traffic,",
     ],
     answer: 1,
   },
@@ -311,18 +332,18 @@ export const meta: SatItemMeta[] = [
     dificultad: 3,
     tema: 'historia',
     regla:
-      "Dos fronteras en la misma oración, y ninguna opción acierta las dos por casualidad. (1) Elemento esencial frente a no esencial: el tramo que dice de cuál de los dos canales se habla identifica, y lo que identifica no se separa con comas; entre comas solo va lo que comenta. (2) Frontera entre oraciones independientes sin conjunción coordinante: dos oraciones con sujeto y verbo propios se separan con punto y coma, nunca con coma.",
+      "Dos fronteras en la misma oración, y ninguna opción acierta las dos por casualidad. (1) Elemento esencial frente a no esencial: el párrafo mantiene dos canales vivos y la oración del hueco no da ningún otro dato que separe uno del otro, así que el tramo del dinero identifica, y lo que identifica no se separa con comas; entre comas solo va lo que comenta. (2) Frontera entre oraciones independientes sin conjunción coordinante: dos oraciones con sujeto y verbo propios se separan con punto y coma, nunca con coma.",
     razones: {
       A:
-        "Acierta la frontera de la derecha y falla la de la izquierda. Al encerrar «built with money raised in the valley itself» entre comas, ese tramo deja de identificar y pasa a comentar, y el párrafo llega hasta el final con los dos canales vivos —«Two canals were cut through the same range of hills», «The two lines ended at the same river landing»—, así que «The canal» se queda sin decir cuál de los dos abrió en 1836. Y si el lector lo resuelve por proximidad, la única línea de la que el texto dice de dónde salió el dinero es la de la década de 1790, pagada «with money from merchants in the capital»: la oración afirmaría entonces de ella justo lo contrario de lo que el texto dice. Es el error de quien encierra entre comas toda frase de participio que sigue al sujeto sin preguntarse si distingue o solo añade.",
+        "Acierta la frontera de la derecha y falla la de la izquierda. El par de comas convierte «built with money raised in the valley itself» en un comentario, y un comentario solo cabe cuando el sujeto ya está identificado sin él. Aquí no lo está: el párrafo llega con los dos canales vivos hasta la oración inmediatamente anterior —«measuring the receipts of one against the receipts of the other»— y en la oración del hueco no queda un solo dato que separe uno del otro. Hecha la prueba de supresión, «The canal carried the heavier traffic; the tolls it collected never covered the debt its investors had signed for» no se puede resolver: no hay fecha, el texto nunca dice cuál de los dos llevó más tráfico y la última línea aclara que ninguna de las dos compañías saldó su deuda. Es el error de quien encierra entre comas toda frase de participio que sigue al sujeto sin preguntarse si distingue o solo añade.",
       B:
-        "Correcta: resuelve las dos fronteras. La de la izquierda, porque el modificador identifica: el texto abre con dos canales y solo dice de dónde salió el dinero de uno —«merchants in the capital» para la línea vieja—, de modo que «built with money raised in the valley itself» es lo único que señala al otro, y lo que identifica va sin comas. La de la derecha, porque detrás del hueco viene «the tolls it collected never covered the debt its investors had signed for», una oración con sujeto y verbo propios y sin conjunción que la coordine: entre dos oraciones independientes sin conjunción la norma pide punto y coma. El texto enseña el caso contrario en su última línea, donde la coma sí aparece delante de «and».",
+        "Correcta: resuelve las dos fronteras. La de la izquierda, porque el modificador identifica y lo que identifica va sin comas: el texto abre con dos canales, dice de dónde salió el dinero de uno solo —«money from merchants in the capital», la línea vieja— y no ofrece ningún otro dato que distinga al sujeto de esta oración, de modo que «built with money raised in the valley itself» es lo único que señala al segundo. La de la derecha, porque detrás del hueco viene «the tolls it collected never covered the debt its investors had signed for», una oración con sujeto y verbo propios y sin conjunción que la coordine: entre dos oraciones independientes sin conjunción la norma pide punto y coma. El texto enseña el caso contrario en su última línea, donde la coma sí aparece delante de «and».",
       C:
-        "Acierta la frontera de la izquierda y falla la de la derecha. Deja el modificador sin comas, que es lo que corresponde a un tramo que identifica, pero junta con una sola coma «The canal … opened in 1836» y «the tolls it collected never covered the debt…», dos oraciones independientes sin nada que las coordine: empalme de comas. Es el error de quien puntúa por el oído —donde oye la pausa, pone coma— y no comprueba si lo que viene detrás se sostiene solo.",
+        "Acierta la frontera de la izquierda y falla la de la derecha. Deja el modificador sin comas, que es lo que corresponde a un tramo que identifica, pero junta con una sola coma «The canal … carried the heavier traffic» y «the tolls it collected never covered the debt…», dos oraciones independientes sin nada que las coordine: empalme de comas. Es el error de quien puntúa por el oído —donde oye la pausa, pone coma— y no comprueba si lo que viene detrás se sostiene solo.",
       D:
-        "Falla las dos fronteras con un mismo gesto: pone coma allí donde la oración respira. Encierra entre comas el tramo que el párrafo necesita para decir cuál de los dos canales abrió en 1836 y después pega con otra coma una segunda oración completa, de manera que la frase termina con tres comas haciendo tres trabajos distintos y sin ninguna frontera de verdad. Es la opción del estudiante que nota que ahí falta algo y reparte comas hasta que le suena bien.",
+        "Falla las dos fronteras con un mismo gesto: pone coma allí donde la oración respira. Encierra entre comas el único tramo que dice de cuál de los dos canales se habla y después pega con otra coma una segunda oración completa, de manera que la frase termina con tres comas haciendo tres trabajos distintos y sin ninguna frontera de verdad. Es la opción del estudiante que nota que ahí falta algo y reparte comas hasta que le suena bien.",
     },
     fuenteHecho:
-      "Historia del transporte del siglo XIX, hecho libre: valles con un canal antiguo financiado desde fuera y otro pagado por suscripción de los propios vecinos, ambos desplazados por el ferrocarril y con peajes que no cubrieron la deuda de construcción. Los dos canales, el valle, el condado, la década de 1790, 1825, 1836 y el sobrecosto de la roca son invención propia y no describen ningún canal concreto.",
+      "Historia del transporte del siglo XIX, hecho libre: valles con un canal antiguo financiado desde fuera y otro pagado por suscripción de los propios vecinos, ambos desplazados por el ferrocarril y con peajes que no cubrieron la deuda de construcción. Los dos canales, el valle, el condado, la década de 1790, 1825, el sobrecosto de la roca y el reparto del tráfico son invención propia y no describen ningún canal concreto.",
   },
 ]
