@@ -368,6 +368,15 @@ for (const mod of modules) {
   for (const e of errs) console.log(`   · [${e.gate}] ${e.msg}`)
 }
 
+// Fallos que no pertenecen a ningún módulo cargado: si no se imprimen aquí, se cuentan
+// en el total y nadie sabe de dónde salieron. Un guardián tiene que decir qué le pasó.
+const idsCargados = new Set(modules.map((m) => m.id))
+const huerfanos = failures.filter((f) => !idsCargados.has(f.mod))
+if (huerfanos.length) {
+  console.log('')
+  for (const f of huerfanos) console.log(`❌ ${f.mod} · ${f.msg}`)
+}
+
 for (const w of warnings) console.log(`⚠️  ${w.mod} · ${w.msg}`)
 
 if (failures.length) {

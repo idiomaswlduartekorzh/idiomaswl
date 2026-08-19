@@ -5,8 +5,8 @@ Las reglas están en `docs/sat-loop-nocturno.md`; los parámetros y umbrales, en
 `docs/sat-ingles-blueprint.md`.
 
 - **Rama:** `feat/red-agentes-sat-ingles`
-- **Última vuelta:** 8 · 19 ago 2026 · los tres bloques escritos y auditados; los tres DEVUELTOS por la puerta 6
-- **Siguiente tarea:** corregir los tres bloques con **R4 y R5** en la mano (los textos y las claves se salvan; se reescriben opciones), luego **B1e**
+- **Última vuelta:** 9 · 19 ago 2026 · módulo M1 montado y midiéndose entero; cuatro bloques en corrección
+- **Siguiente tarea:** recoger las cuatro correcciones y su reauditoría; si salen APTO, firmar el acta y montar el set
 
 ---
 
@@ -47,6 +47,7 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
 
 | Vuelta | Tarea | Resultado | Commit |
 |---|---|---|---|
+| 9 | Montaje del M1 + dos fallos del guardián | ✅ `sat-set-1-m1.ts` compone los cuatro bloques. Al montarlo salieron dos bugs del propio guardián: no sabía leer módulos compuestos, y —el grave— **daba luz verde cuando no podía cargar**. Arreglados y probados. El módulo pasa las once puertas mecánicas; lo único que lo deja NO APTO es que no hay acta firmada | `514c4e3f` |
 | 8 | R4 y R5 + guardián de dos caras | ✅ La puerta 3 pasa a medir las dos caras y se prueba con un defecto sembrado. Sobre el material real: II 57 % (tumbado), CS 38 %, SEC 0 %, EOI 0 % | `feat(sat): la puerta que arreglamos…` |
 | 7 | B1b+B1c+B1d · producción paralela | ⚠️ 19 ítems escritos. **Las 19 claves coinciden** con las que eligieron los auditores a ciegas: cero en disputa, cero dobles claves. Pero **los tres bloques vuelven por la puerta 6**: II 71 % a ciegas, EOI 55 %, SEC 2 ítems. Textos y claves se salvan; se reescriben opciones | `af37529a` |
 | 6 | B1a · cierre | ✅ **7 de 8 ítems APTO.** q02 devuelto por tercera vez y **bloqueado** según la regla de las tres rondas del playbook. De ahí salió la regla R1, escrita en el blueprint §4 bis: un words-in-context solo funciona si las cuatro opciones comparten régimen sintáctico | `86a9db4c`+ |
@@ -92,6 +93,10 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
   no se salta: un ítem corregido es un ítem nuevo.
 - **La lente que más rinde es la del estudiante que no lee.** De las tres, es la única que
   encontró algo en la segunda vuelta; las otras dos dieron APTO a los dos ítems.
+- **El guardián también hay que auditarlo.** Tenía dos fallos que solo aparecieron al
+  usarlo de verdad: no leía módulos compuestos, y cuando reventaba al cargar decía «nada
+  que comprobar» y salía en verde. Confundir «no encontré nada malo» con «no pude mirar»
+  es el peor fallo posible en una herramienta cuyo trabajo es tranquilizar.
 - **Los defectos del ítem estaban escritos en el plan.** Las dos notas que provocaron q02 y
   q04 pedían literalmente lo que las puertas castigan. Corregir el ítem sin corregir la
   nota garantiza repetirlo en los tres bloques que faltan.
