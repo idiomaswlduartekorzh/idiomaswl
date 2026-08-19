@@ -5,8 +5,8 @@ Las reglas están en `docs/sat-loop-nocturno.md`; los parámetros y umbrales, en
 `docs/sat-ingles-blueprint.md`.
 
 - **Rama:** `feat/red-agentes-sat-ingles`
-- **Última vuelta:** 3 · 18 ago 2026 · A3 hecha — fase A cerrada
-- **Siguiente tarea:** **B1a** (primer bloque de ítems: Craft and Structure)
+- **Última vuelta:** 4 · 18-19 ago 2026 · B1a en curso (q04 y q02 devueltos al redactor)
+- **Siguiente tarea:** cerrar **B1a** — recoger el arreglo de q04/q02 y reauditar solo esos dos
 
 ---
 
@@ -47,6 +47,7 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
 
 | Vuelta | Tarea | Resultado | Commit |
 |---|---|---|---|
+| 4 | B1a · bloque Craft and Structure | 🔄 Plan del módulo (27 filas, verificado a máquina) + 8 textos originales + 8 ítems. El auditor coincidió **8 de 8** en la clave, pero devuelve **q04** (dos claves defendibles) y marca **q02** (dos distractores agramaticales: se resuelve sin leer). En corrección | (pendiente) |
 | 3 | A3 · contrato | ✅ Ficha `sat` en `exams.ts` (`available: false`), `buildSatMock()`, y `stimulusStyle: 'passage'` para que los textos largos se pinten como prosa. `/examenes/sat` ya se prerenderiza. `tsc` + `build` en verde | `feat(sat): el examen ya tiene sitio…` |
 | 2 | A2 · guardián | ✅ `scripts/check-sat-exam.mjs` con las doce puertas. Ocho se miden; las otras cuatro exigen acta firmada del auditor. **Probado contra 9 defectos sembrados: los 9 detectados.** `tsc` limpio | `docs(sat): un guardián que nunca ha fallado…` |
 | 1 | A1 · verificar parámetros | ✅ Los 8 parámetros verificados contra 3 PDF oficiales de College Board. **Un error grave corregido** (ver abajo). Solo queda ⚠️ el orden de los tipos dentro de un dominio: College Board no lo publica | `1fe76594` |
@@ -71,6 +72,18 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
    la media, no la desaparición de los fáciles.
 6. **Caducidad:** parámetros del ciclo 2026-27. Reverificar si se produce después de
    agosto de 2027.
+
+## Lo que enseñó el primer bloque (para C0, la receta)
+
+- **Un bloque de 8 ítems = 4 pasadas de agente** (plan, textos, ítems, auditoría) ≈ 25 min,
+  más las correcciones. A 27 ítems por módulo, un M1 son ~4 bloques.
+- **El auditor a ciegas coincidió 8/8 en la clave** y aun así devolvió 2 ítems. El valor no
+  estuvo en discutir claves, sino en encontrar que un distractor era una segunda clave y
+  que otro ítem se resolvía por sintaxis sin leer el texto.
+- **El sesgo que más cuesta evitar mientras escribes** es el par de sinónimos parciales:
+  en q04 el plan pedía «dos sinónimos y el matiz decide», llegó el par y no llegó el matiz.
+- **Las medidas mecánicas salieron bien a la primera** (claves del plan respetadas, clave
+  más larga 2/8, solape 0/8). Lo que falla es siempre lo que exige criterio.
 
 ## Hallazgo que ahorra trabajo en B3
 
