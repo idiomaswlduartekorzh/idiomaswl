@@ -17,8 +17,26 @@ import type { SatItemMeta } from '../module-types'
  *   (trampa 1 del plan).
  * - **rhetorical-synthesis** (q23-q24): el `stimulus` no es prosa, son las notas del
  *   estudiante, y el encabezado y las viñetas cuentan para la longitud. Las cuatro
- *   opciones son **verdaderas** respecto de las notas: ninguna falla por ser falsa,
- *   todas fallan por cumplir otro objetivo que el declarado en el enunciado.
+ *   opciones comparten el molde de la clave (R5 del blueprint §4 bis): en q23 las cuatro
+ *   son definiciones con la forma «[modificador antepuesto], the ghazal is a poetic
+ *   form…»; en q24 las cuatro comparan con la forma «X, while Y». Tapando las notas no se
+ *   poda ninguna.
+ *
+ * Corrección de agosto de 2026, tras la auditoría de forma. Queda **derogada** la regla
+ * anterior de este bloque —«las cuatro opciones son verdaderas y solo fallan por
+ * objetivo»—: con ella la clave era la única con forma de definición en q23 y la única que
+ * comparaba en q24, así que se encontraba sin leer las notas. Ahora cada ítem lleva
+ * distractores con el molde exacto de la clave y **falsos** por un dato comprobable de las
+ * notas (q23 A por la nota 5 y B por la nota 4; q24 B, con las cifras de la nota 5
+ * intercambiadas); los demás son ciertos y sirven a otro objetivo. Esto diverge de
+ * `docs/sat-planes/sat-set-1-m1-textos-eoi.md`, que en «Trampa 1 del plan» pide que todas
+ * las opciones sean verdaderas: manda R5.
+ *
+ * R4 (reparto del solape léxico): la clave de q23 repite vocabulario de las notas a
+ * propósito —13 palabras de contenido, frente a 16, 12 y 11 de los distractores— para que
+ * el bloque no premie la estrategia de contar coincidencias y quedarse con la opción que
+ * menos tiene. En q24 la clave y su espejo empatan; ninguna clave del bloque es la más
+ * alta ni la más baja.
  */
 
 export const items: MCQQuestion[] = [
@@ -30,10 +48,10 @@ export const items: MCQQuestion[] = [
       'While researching a topic, a student has taken the following notes:\n\n• The ghazal is a poetic form that has been written for more than a thousand years, first in Arabic and Persian and later in Urdu.\n• A ghazal is built from couplets, or pairs of lines.\n• Each couplet is meant to stand on its own, and readers often quote one by itself.\n• In a ghazal, every couplet ends with the same repeated word or phrase.\n• Poets writing in English have adapted the form, some keeping the repeated ending and some dropping it.',
     text: 'The student wants to introduce the ghazal to an audience unfamiliar with the form. Which choice most effectively uses relevant information from the notes to accomplish this goal?',
     options: [
-      'In a ghazal, every couplet must close on the same word or phrase, and the poet repeats it without variation.',
-      'Because each couplet in a ghazal is meant to stand on its own, readers often quote a single one away from the rest.',
-      'Written for over a millennium in Arabic, Persian, and Urdu, the ghazal is a poem made up of two-line units.',
-      'Poets writing in English have adapted the ghazal, some keeping its repeated ending and some dropping it.',
+      'First written in Arabic and Persian and later in Urdu, the ghazal is a poetic form that poets writing in English have adapted without dropping its repeated ending.',
+      'Built from couplets, or pairs of lines, each of which ends on a repeated word of its own, the ghazal is a poetic form more than a thousand years old.',
+      'Written for more than a thousand years in Arabic, Persian, and Urdu, the ghazal is a poetic form built from couplets, or pairs of lines.',
+      'Adapted by poets writing in English, the ghazal is a poetic form whose couplets readers often quote one at a time, away from the rest.',
     ],
     answer: 2,
   },
@@ -45,10 +63,10 @@ export const items: MCQQuestion[] = [
       'While researching a topic, a student has taken the following notes:\n\n• Seagrass meadows are beds of flowering plants that grow underwater and shelter young fish.\n• A storm destroyed most of the meadow in one shallow bay, and researchers tried two ways of restoring it.\n• Method 1: divers transplanted adult shoots taken from a healthy meadow nearby.\n• Method 2: volunteers scattered seeds gathered from flowering plants.\n• After three years, transplanted plots covered 46 percent of the seabed and seeded plots covered 31 percent.\n• Transplanting took about four times as many working hours per plot as seeding.',
     text: 'The student wants to compare how successful the two restoration methods were. Which choice most effectively uses relevant information from the notes to accomplish this goal?',
     options: [
-      'Transplanted plots covered 46 percent of the seabed after three years; seeded plots covered 31 percent.',
-      'Seeding took roughly a quarter of the working hours per plot that transplanting required of the divers.',
-      'Divers moved adult shoots from a healthy meadow nearby, while volunteers scattered seeds gathered from flowering plants.',
-      'Of the two ways researchers tried in the bay, transplanting covered 46 percent of the seabed after three years.',
+      'Transplanted plots covered 46 percent of the seabed after three years, while seeded plots covered 31 percent.',
+      'Seeded plots covered 46 percent of the seabed after three years, while transplanted plots covered 31 percent.',
+      'Seeded plots covered 31 percent of the seabed after three years, while transplanting took about four times as many working hours per plot as seeding.',
+      'Divers transplanted adult shoots taken from a healthy meadow nearby, while volunteers scattered seeds gathered from flowering plants.',
     ],
     answer: 0,
   },
@@ -108,13 +126,13 @@ export const meta: SatItemMeta[] = [
     tema: 'humanidades',
     razones: {
       A:
-        'Cierta (nota 4) y escrita para un objetivo técnico: explica un recurso interno —el final repetido— a quien todavía no sabe de qué está hecho un ghazal. Da por sabido «couplet», que es justo lo que el lector nuevo no tiene.',
+        'Falsa por media nota. La quinta dice que unos poetas en inglés conservan el final repetido y otros lo suprimen; aquí la adaptación se cuenta «without dropping its repeated ending». Es lo que escribe quien lee «some keeping the repeated ending» y da la viñeta por terminada. Lleva el molde de definición de la clave y abre con la misma nota de origen, así que solo cae al releer la nota 5 entera.',
       B:
-        'Cierta (nota 3) y de recepción: cuenta cómo se lee y se cita un ghazal, no qué es. Sirve a quien ya conoce la forma y quiere saber qué se hace con ella.',
+        'Falsa por un dato comprobable. La nota 4 dice que todos los pareados terminan con la MISMA palabra o frase repetida; aquí cada uno termina con una propia. Es el error de quien arrastra la nota 3 —cada pareado se sostiene solo— hasta la 4 y concluye que también el final va por libre en cada pareado. Es la opción más cercana a la clave: mismas dos notas, mismo molde con las mitades invertidas; sin comprobar la nota 4 no hay manera de separarlas.',
       C:
-        'Correcta: junta las dos únicas notas que responden a lo que se pregunta quien no conoce la forma —qué es y desde cuándo (nota 1) y de qué está hecha (nota 2)—, y traduce «couplets» a «two-line units» para no apoyarse en un término que el lector nuevo aún no maneja.',
+        'Correcta: responde a las dos preguntas de quien no conoce la forma —qué es y desde cuándo (nota 1) y de qué está hecha (nota 2)— y se trae el glosario de la propia nota, «couplets, or pairs of lines», para no dejar al lector nuevo con un término que no maneja. Es la única que dice de qué está construido un ghazal sin decir a la vez algo falso sobre ello.',
       D:
-        'Cierta (nota 5) y de objetivo histórico: cuenta qué le ha pasado a la forma últimamente. Es la opción que más repite el vocabulario de las notas y no presenta nada a nadie.',
+        'Cierta (notas 5 y 3) y escrita para otro objetivo. Sus dos afirmaciones —qué han hecho con la forma los poetas en inglés y cómo la citan los lectores— presuponen que ya se sabe qué es un ghazal: nombra los pareados sin decir que la forma esté construida con ellos y sin traducirlos. Quien la elige confunde presentar la forma con contar qué se hace hoy con ella.',
     },
     fuenteHecho:
       'Hecho libre de historia literaria: origen árabe del ghazal, desarrollo en persa y urdu, pareados autónomos con final repetido. Redacción original; sin fechas de adopción al inglés, que son discutidas.',
@@ -127,13 +145,13 @@ export const meta: SatItemMeta[] = [
     tema: 'ciencia',
     razones: {
       A:
-        'Correcta: pone los dos resultados uno frente al otro —46 % del lecho marino contra 31 % a los tres años, nota 5—, que es la única manera de comparar lo que consiguió cada método.',
+        'Correcta: mide a los dos métodos con la misma vara y en el mismo momento —cobertura del lecho marino a los tres años— y da a cada uno su cifra, el 46 % al trasplante y el 31 % a la siembra (nota 5). Es la única que compara lo que consiguió cada método.',
       B:
-        'Compara los dos métodos, pero por horas de trabajo (nota 6): esa es la dimensión del esfuerzo, no la del éxito. Quien la elige toma el método más barato por el más eficaz.',
+        'Falsa: intercambia las dos cifras de la nota 5. Es el molde de la clave palabra por palabra, de modo que por la forma no se descarta y hay que volver a la viñeta. El camino hasta aquí es real y doble: reconstruir de memoria qué número era de quién, o dar por supuesto que ganó la siembra porque la nota 6 la presenta como la barata.',
       C:
-        'Describe los dos procedimientos (notas 3 y 4) y se detiene antes de cualquier resultado: cuenta cómo se hizo, no cómo salió.',
+        'Cierta y con las varas cruzadas: mide la siembra por su resultado (31 %) y el trasplante por su coste (cuatro veces más horas por parcela, nota 6). Son dos cifras que no se pueden poner una frente a otra. Quien la elige compara el par correcto en la dimensión equivocada y sale de ahí tomando el método más barato por el más exitoso.',
       D:
-        'Cumple la mitad del encargo. Nombra los dos métodos, pero solo da la cifra de uno: es lo que escribe quien lee las viñetas y no el objetivo, y sin la segunda cifra no hay comparación.',
+        'Cierta y sin resultados: compara los dos procedimientos (notas 3 y 4) —quién hizo cada cosa y con qué material— y se detiene justo antes de la viñeta que trae las cifras. Responde a cómo se hizo, no a cómo salió. Es lo que escribe quien busca en las notas las dos que hablan de los métodos y no relee el objetivo.',
     },
     fuenteHecho:
       'Hecho libre de restauración de praderas marinas: trasplante de haces adultos frente a siembra de semillas, con mayor prendimiento y mucho más trabajo por superficie en el trasplante. Bahía, tormenta, años y porcentajes inventados.',

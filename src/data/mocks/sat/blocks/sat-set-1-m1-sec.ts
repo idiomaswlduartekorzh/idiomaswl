@@ -16,6 +16,12 @@ import type { SatItemMeta } from '../module-types'
  * Claves del plan, que no se negocian ítem a ítem: D, B, A, C, D, A, B. El orden va de
  * fácil a difícil sin agrupar por tipo (boundaries y form-structure-sense alternan), que
  * es la excepción verificada de College Board y está escrita así en el plan.
+ *
+ * Condición de clave única que hay que vigilar al editar (queda escrita también en el
+ * documento de textos, bloque q16): el `however` de q16 forma parte del tramo del hueco y
+ * es lo único que hace indefendible la opción con dos puntos. Si alguna vez se saca del
+ * tramo, el punto y coma y los dos puntos se defienden los dos y q16 pasa a tener dos
+ * claves. No es un defecto actual: es la condición que lo mantiene sano.
  */
 
 export const items: MCQQuestion[] = [
@@ -56,7 +62,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "Along the northern Pacific coast, kelp grows from the seafloor toward the light in stands thick enough to shelter fish, crabs, and young seals. Sea urchins feed on the base of the kelp, and where nothing feeds on the urchins their numbers climb until the stand is stripped to bare rock. The sea otter, an animal lighter than most adult ______ eats enough urchins in a day to hold the forest in place. Ecologists reserve the word keystone for a species of that kind: remove it, and the structure around it falls.",
+      "Along the northern Pacific coast, kelp grows from the seafloor toward the light in stands thick enough to shelter fish, crabs, and young seals. Sea urchins feed on the base of the kelp, and where nothing feeds on the urchins, their numbers climb until the stand is stripped to bare rock. The sea otter, an animal lighter than most adult ______ eats enough urchins in a day to hold the forest in place. Ecologists reserve the word keystone for a species of that kind: remove it, and the structure around it falls.",
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
@@ -124,9 +130,9 @@ export const items: MCQQuestion[] = [
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
-      "canal which had taken eleven years to dig,",
+      "canal which had taken eleven years to dig",
       "canal, which had taken eleven years to dig,",
-      "canal; which had taken eleven years to dig,",
+      "canal; which had taken eleven years to dig;",
       "canal, which had taken eleven years to dig",
     ],
     answer: 1,
@@ -270,13 +276,13 @@ export const meta: SatItemMeta[] = [
       "Dos fronteras en la misma oración: la relativa explicativa intercalada exige coma de apertura y coma de cierre.",
     razones: {
       A:
-        "Cierra un par que nunca abrió: pone la coma final y se salta la de apertura, con lo que «which had taken eleven years to dig» se lee como si sirviera para identificar de qué canal se habla, y en el párrafo solo hay uno.",
+        "Deja la relativa sin marcar por ningún lado, o sea la lee como especificativa: «which had taken eleven years to dig» pasaría a servir para distinguir este canal de otros, y en el párrafo solo hay uno, ya identificado por «The finished». Es el error de quien aprendió que las comas «cortan la frase» y las evita: internamente la opción es consistente —ningún signo a ninguno de los dos lados—, así que solo el texto la descarta.",
       B:
-        "Correcta: la relativa no identifica nada —hay un solo canal y «The finished» ya lo señala— y el dato que aporta, los once años, el propio texto ya permite calcularlo con 1825 y 1836. Al no restringir, va entre comas por los dos lados.",
+        "Correcta: la relativa no identifica nada —hay un solo canal y «The finished» ya lo señala— y el dato que aporta, los once años, el propio texto ya permite calcularlo con 1825 y 1836. Al no restringir, es elemento no esencial y va marcado a los dos lados con el mismo signo, la coma, que además devuelve el sujeto «The finished canal» a su verbo «opened».",
       C:
-        "Corta la oración entre el sujeto y su verbo «opened» con un punto y coma, que exige oración independiente detrás y aquí solo encuentra una relativa; acierta que hay que marcar la apertura y se equivoca de signo.",
+        "Marca el inciso a los dos lados y con el mismo signo, que es la forma correcta, pero elige el signo que no puede hacerlo: el punto y coma exige oración independiente a izquierda y derecha, y aquí encuentra un sujeto sin verbo delante y una relativa detrás. Corta la oración dos veces entre «The finished canal» y «opened». Es el error de quien usa el punto y coma como una coma más fuerte.",
       D:
-        "Abre el inciso y no lo cierra: sin la coma de cierre, «opened in the spring of 1836» queda absorbido por la relativa y la oración principal se queda sin su verbo.",
+        "Abre el inciso y no lo cierra: sin la coma de cierre, «opened in the spring of 1836 to a crowd…» queda absorbido por la relativa y la oración principal se queda sin su verbo. Es el error de quien marca dónde empieza la información añadida y no vuelve a mirar dónde termina.",
     },
     fuenteHecho:
       "Historia del transporte del siglo XIX, hecho libre: canales justificados por el flete y desplazados por el ferrocarril, con peajes que no cubrieron la deuda. Valle, condado, 1825, 1836, el periódico, los cuatro mil y los cuarenta carros son invención propia.",

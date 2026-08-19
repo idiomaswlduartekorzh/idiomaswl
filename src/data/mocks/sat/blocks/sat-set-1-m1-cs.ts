@@ -34,12 +34,12 @@ export const items: MCQQuestion[] = [
     part: 1,
     stimulus:
       'The bakery stood at the top of the hill. From its door Rosalía could see the whole town. Each morning at six she rang the brass bell above the counter, though the bell was not really needed. Then she leaned out and called that the first loaves were ready. Her voice carried farther than the bell did. Families in the lanes below could not see the bakery, but they heard her, and one by one they started up the hill.',
-    text: 'As used in the text, what does the word "called" most nearly mean?',
+    text: 'As used in the text, what does the word "stood" most nearly mean?',
     options: [
-      'Telephoned',
-      'Named',
-      'Summoned',
-      'Shouted',
+      'Towered',
+      'Ranked',
+      'Remained',
+      'Perched',
     ],
     answer: 3,
   },
@@ -163,13 +163,13 @@ export const meta: SatItemMeta[] = [
     tema: 'literatura',
     razones: {
       A:
-        'Acepción dominante de call en el inglés de hoy, la del teléfono, y por eso es la que un estudiante trae puesta antes de leer. Con el texto delante se cae: ella se asoma a la puerta, y lo que sigue al verbo es una noticia, no una persona a la que marcar.',
+        'Lee stood como «alzarse»: la panadería descollaría sobre el pueblo. Es la acepción física más vistosa del verbo, y el texto no la sostiene —no da al edificio ni una línea de altura ni de tamaño—: lo alto es el cerro, y lo único que se levanta por encima del pueblo es su voz, que «carried farther than the bell did».',
       B:
-        'Acepción de poner nombre, la segunda que se aprende («what do you call this?»). Aquí no hay nada que nombrar: detrás del verbo va «that the first loaves were ready», el contenido de lo que dice, no un nombre.',
+        'Procesa la colocación «stood at the top of», la de las clasificaciones —«she stood at the top of her class»—, y lee un puesto donde hay un sitio. Detrás de la preposición va «the hill», un lugar que el pasaje mide en distancia y en cuesta: las familias quedan «below» y suben, no figuran por debajo en una lista.',
       C:
-        'Confunde el efecto con el acto. Las familias suben la cuesta, cierto, pero eso pasa dos oraciones más allá y porque «they heard her»; summon además pediría a alguien como complemento, y lo que el verbo lleva detrás es una noticia.',
+        'Acepción de seguir en pie, la de «the offer still stands», y en español la que empuja «la panadería seguía en pie»: el verbo hablaría de permanencia. Para eso el texto tendría que medir tiempo, y su único reloj es una rutina de un día —«Each morning at six»—; nadie dice cuánto lleva el local ahí ni que algo lo amenace.',
       D:
-        'Correcta: se asoma («leaned out») para anunciar en voz alta que el primer pan está listo, y las dos oraciones siguientes lo confirman —la voz llega más lejos que la campana y la oyen incluso quienes no ven la panadería.',
+        'Correcta: stood aquí sitúa, y el pasaje entero depende de dónde está la panadería —desde su puerta se ve «the whole town», las familias de «the lanes below» no la ven, y para llegar «they started up the hill»—. El verbo dice que ocupaba ese punto en lo alto del cerro, nada más.',
     },
     fuenteHecho:
       'Ficción original; ningún hecho real implicado.',

@@ -23,7 +23,7 @@ de datos **cuenta**: va dentro del mismo `stimulus`.
 |---|---|---|---|---|---|---|---|
 | q09 | central-ideas-details | humanidades | 1 | 533 | 88,8 | 6 | 16,0 |
 | q10 | central-ideas-details | ciencia | 2 | 611 | 101,8 | 6 | 18,2 |
-| q11 | command-of-evidence-textual | literatura | 2 | 566 | 94,3 | 6 | 19,5 |
+| q11 | command-of-evidence-textual | literatura | 2 | 564 | 94,0 | 6 | 19,5 |
 | q12 | command-of-evidence-textual | historia | 3 | 709 | 118,2 | 5 | 23,8 |
 | q13 | command-of-evidence-quantitative | ciencia | 2 | 541 | 90,2 | 4 + tabla | 18,5 |
 | q14 | inferences | literatura | 2 | 555 | 92,5 | 5 | 22,6 |
@@ -55,9 +55,13 @@ central): las cuatrocientas piezas de la colección; la sala más visitada no ti
 cartel con las herramientas y la madera; los niños se quedan más rato y vuelven. Tres de ellos
 son cuantificables y por eso atraen al estudiante que busca «el dato».
 
-**Cuidado al escribir opciones**: la idea central no puede formularse repitiendo *hands*,
-*alive* ni *workshop* del cierre (puerta 3, solape léxico). Hay que decirla con otras
-palabras: cuidado continuo, oficio, conservación como parte de la colección.
+**Cuidado al escribir opciones**: esta nota decía antes que la idea central no podía
+formularse repitiendo *hands*, *alive* ni *workshop* del cierre. Cumplirla a rajatabla en los
+siete ítems es lo que produjo el defecto que devolvió el bloque: la clave pasó a ser la opción
+que **menos** vocabulario del texto repetía, y contar coincidencias bastaba para acertar (ver
+R4 del blueprint §4 bis). La regla buena es de conjunto: la clave puede repetir vocabulario
+del cierre siempre que un distractor repita otro tanto, y ningún ítem se pase de +3 palabras
+respecto al mejor distractor.
 
 **Hecho real usado**: Práctica museística real y de dominio general: hay museos que colocan
 el taller de conservación o restauración a la vista del público, tras un cristal, en vez de
@@ -95,11 +99,17 @@ concretos a propósito: no hay ninguna serie publicada detrás.
 
 ### q11 · command-of-evidence-textual · literatura · dificultad 2
 
-**Texto** (566 caracteres = 94,3 palabras-SAT)
+**Texto** (564 caracteres = 94,0 palabras-SAT)
 
-> My uncle Teodoro mended fishing nets on the dock, and for three summers I sat beside him and did nothing useful. He never once asked me to help. He would hold a torn section up against the light, find where the line had given way, and close it so evenly that afterward I could not say where the damage had been. At home I untied his knots with a length of cord of my own and never got a single one right. The afternoon he held out the wooden needle to me, I said the light was going, which was not true, and he put it back in the box without a word. I kept the cord.
+> My uncle Teodoro mended fishing nets on the dock, and for three summers I sat beside him and did nothing useful. He never once asked me to help. He would hold a torn section up against the light, find where the line had given way, and close it so evenly that afterward I could not say where the damage had been. At home I tied his knots with a length of cord of my own and never got a single one right. The afternoon he held out the wooden needle to me, I said the light was going, which was not true, and he put it back in the box without a word. I kept the cord.
 
 **Métricas**: 6 oraciones · longitud media de oración 19,5 palabras · léxico exigente: mended, dock, given way, evenly, cord
+
+**Corrección (19 ago 2026, auditoría del bloque)**: el texto decía «At home I *untied* his
+knots with a length of cord of my own», que no significa nada —no se deshacen los nudos de
+otro con un cordel propio— y dejaba defendible la opción de apertura. Dice *tied*. Son dos
+caracteres menos: 566 → 564, y el ítem `q11` de
+`src/data/mocks/sat/blocks/sat-set-1-m1-ii.ts` lleva ya la misma frase.
 
 **Formato del ítem**: el enunciado afirma algo sobre la actitud del narrador y pide **qué cita
 del texto la ilustra**. Las cuatro opciones son citas literales; el texto tiene que contener
@@ -113,7 +123,7 @@ tres son reales y cada uno sostiene media afirmación o ninguna:
 | detalle citable | qué sostiene |
 |---|---|
 | «close it so evenly that afterward I could not say where the damage had been» | solo la admiración |
-| «At home I untied his knots with a length of cord of my own and never got a single one right» | **las dos mitades** |
+| «At home I tied his knots with a length of cord of my own and never got a single one right» | **las dos mitades** |
 | «I said the light was going, which was not true» | solo la evitación |
 | «He never once asked me to help» | nada: es una conducta del tío, no del narrador |
 
@@ -169,12 +179,19 @@ ninguno).
 > Lichens have no roots: whatever they need reaches them from the air, and so does whatever the air is carrying. That is why surveyors treat them as a gauge of local pollution. To measure the effect of vehicle exhaust, a team recorded the share of stone wall covered by two lichens—a bushy gray species and a flat orange one—at four distances from a busy highway. Each figure below is the average of ten walls.
 >
 > Distance from highway · bushy gray cover · flat orange cover
-> 20 m · 3% · 34%
-> 100 m · 8% · 30%
-> 400 m · 22% · 27%
-> 1,000 m · 30% · 26%
+> 20 m · 3% · 28%
+> 100 m · 8% · 33%
+> 400 m · 22% · 31%
+> 1,000 m · 30% · 29%
 
 **Métricas**: 4 oraciones de prosa + cabecera y 4 filas de datos · longitud media de oración 18,5 palabras · léxico exigente: lichens, surveyors, gauge, exhaust, share (de superficie)
+
+**Corrección (19 ago 2026, auditoría del bloque)**: la columna naranja era 34 → 30 → 27 → 26 %,
+un descenso monótono con la distancia. Eso *es* un gradiente: la serie respondía a la
+carretera y contradecía el enunciado del ítem («only one of the two lichens is sensitive»).
+Se sustituyó por 28 → 33 → 31 → 29 %, que no sigue la distancia. Los cuatro valores tienen el
+mismo número de dígitos, así que el `stimulus` sigue midiendo 541 caracteres y la puerta 7 no
+cambia.
 
 **Cómo va el gráfico**: en el examen real este ítem lleva tabla o barras. Nuestro motor solo
 pinta texto en `stimulus`, así que **los datos van dentro del texto como tabla de texto plano**,
@@ -183,16 +200,17 @@ imagen y no hay que añadir ninguna. Los 131 caracteres de la tabla **cuentan** 
 y ya están en el total de 541.
 
 **Las dos series**: cobertura del liquen gris ramificado (3 → 8 → 22 → 30 %, sube al alejarse
-de la carretera) y del liquen naranja plano (34 → 30 → 27 → 26 %, prácticamente plano, con un
-leve máximo junto a la carretera). Están construidas para que **haya que comparar**: solo una
-de las dos responde al gradiente de contaminación, y eso no se ve leyendo una sola columna.
+de la carretera) y del liquen naranja plano (28 → 33 → 31 → 29 %, va y viene en cinco puntos y
+acaba donde empezó, sin relación con la distancia). Están construidas para que **haya que
+comparar**: solo una de las dos responde al gradiente de contaminación, y eso no se ve leyendo
+una sola columna.
 
 **El distractor obligatorio** (nota del plan): un dato **leído correctamente que no responde**
 —por ejemplo, que el liquen gris cubría el 30 % de los muros a 1.000 m—. Es cierto, sale de la
 tabla y no compara nada. Otros dos huecos disponibles: invertir cuál especie es cuál, y
-convertir la comparación en una afirmación causal que la tabla no autoriza (que el tráfico
-*beneficia* al naranja; la tabla da 34 % frente a 26 %, y eso es una diferencia, no un
-mecanismo).
+y comparar niveles en vez de tendencias (que el naranja cubre más muro que el gris en casi
+todas las filas; es cierto en tres de las cuatro y no dice nada sobre sensibilidad, porque una
+diferencia de nivel no es una respuesta al gradiente).
 
 **Hecho real usado**: Hecho libre y de dominio general en biología ambiental: los líquenes se
 usan como bioindicadores de calidad del aire porque, al no tener raíces, absorben agua y

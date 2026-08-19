@@ -47,7 +47,7 @@ un párrafo con un hueco no tiene longitud media de oración.
 |---|---|---|---|---|---|---|---|---|
 | q16 | boundaries | historia | 1 | empalme de comas | 490 | 81,7 | 5 | 18,4 |
 | q17 | form-structure-sense | humanidades | 1 | concordancia con frase interpuesta | 463 | 77,2 | 5 | 16,6 |
-| q18 | boundaries | ciencia | 2 | par de comas del inciso | 511 | 85,2 | 4 | 23,0 |
+| q18 | boundaries | ciencia | 2 | par de comas del inciso | 512 | 85,3 | 4 | 23,0 |
 | q19 | form-structure-sense | historia | 2 | tiempo verbal por marcador temporal | 583 | 97,2 | 5 | 22,4 |
 | q20 | boundaries | humanidades | 2 | dos puntos tras oración completa | 616 | 102,7 | 5 | 23,4 |
 | q21 | form-structure-sense | ciencia | 3 | modificador inicial colgado | 511 | 85,2 | 4 | 25,0 |
@@ -82,10 +82,19 @@ de puntuación (frase seguida).
 
 **Aviso al redactor de opciones**: el *colon* está a un paso de ser defendible en cualquier
 par de oraciones donde la segunda explique a la primera. Aquí no lo es —*however* anuncia
-contraste y los dos puntos anuncian explicación—, y por eso el texto lo lleva puesto. **No
-retires *however* del tramo del hueco**: sin él, dos puntos y punto y coma se defienden los
-dos y el ítem tiene dos claves. Tampoco ofrezcas ninguna opción con conjunción coordinante
-(*but*, *and*): con dos oraciones independientes, una coma más conjunción siempre es correcta.
+contraste y los dos puntos anuncian explicación—, y por eso el texto lo lleva puesto. Tampoco
+ofrezcas ninguna opción con conjunción coordinante (*but*, *and*): con dos oraciones
+independientes, una coma más conjunción siempre es correcta.
+
+> **Condición de clave única — vigilar en cada edición, no hay nada que arreglar.**
+> Confirmado el 19 de agosto de 2026: tal como está publicado, q16 tiene una sola clave, y
+> quien la sostiene es *however*. El adverbio va **dentro del tramo del hueco** —las cuatro
+> opciones lo llevan— y es lo único que hace indefendibles los dos puntos, porque anuncia
+> contraste donde los dos puntos anunciarían explicación. **Si alguien lo saca del tramo**
+> (moviéndolo al texto fijo, sustituyéndolo por otro conector o dejando las opciones con solo
+> el signo), el punto y coma y los dos puntos pasan a defenderse los dos y el ítem queda con
+> dos claves. El aviso vale para cualquier reescritura futura del ítem, no solo para la
+> primera: está repetido en la cabecera de `src/data/mocks/sat/blocks/sat-set-1-m1-sec.ts`.
 
 **Hecho real usado**: Historia postal británica, hecho libre y de manual: hasta 1840 el porte
 lo pagaba el destinatario y la tarifa dependía de la distancia; la reforma de ese año trasladó
@@ -131,9 +140,9 @@ social network») está para que el ítem no dependa de saber español ni de con
 
 ### q18 · boundaries · ciencia · dificultad 2
 
-**Texto** (511 caracteres = 85,2 palabras-SAT)
+**Texto** (512 caracteres = 85,3 palabras-SAT)
 
-> Along the northern Pacific coast, kelp grows from the seafloor toward the light in stands thick enough to shelter fish, crabs, and young seals. Sea urchins feed on the base of the kelp, and where nothing feeds on the urchins their numbers climb until the stand is stripped to bare rock. The sea otter, an animal lighter than most adult ______ eats enough urchins in a day to hold the forest in place. Ecologists reserve the word keystone for a species of that kind: remove it, and the structure around it falls.
+> Along the northern Pacific coast, kelp grows from the seafloor toward the light in stands thick enough to shelter fish, crabs, and young seals. Sea urchins feed on the base of the kelp, and where nothing feeds on the urchins, their numbers climb until the stand is stripped to bare rock. The sea otter, an animal lighter than most adult ______ eats enough urchins in a day to hold the forest in place. Ecologists reserve the word keystone for a species of that kind: remove it, and the structure around it falls.
 
 **Métricas**: 4 oraciones · longitud media de oración 23,0 palabras · léxico exigente: kelp, stands, stripped, keystone, reserve
 
@@ -156,6 +165,13 @@ y la única razón por la que falla es que el par no puede mezclar signos. Ese e
 estudiante que sabe que el inciso va marcado pero no mira con qué se abrió. No ofrezcas una
 opción con coma *y* raya: sería doblemente mala por una razón distinta y el distractor deja
 de estar vivo (puerta 5).
+
+**Corregido el 19 de agosto de 2026**: el texto decía *…and where nothing feeds on the
+urchins their numbers climb…*, sin la coma que cierra la subordinada antepuesta. Un ítem que
+examina el par de comas del inciso no puede saltarse una coma obligatoria en su propio
+párrafo, y además contradecía a q20 (*Once color could be bought sealed in a metal tube,*) y
+a q21 (*as the layers beneath are pressed into solid ice,*) del mismo lote, que sí la ponen.
+La coma añadida sube el recuento de 511 a 512 caracteres y no toca ninguna otra métrica.
 
 **Hecho real usado**: Ecología marina de manual: la nutria marina controla las poblaciones de
 erizo y su desaparición convierte los bosques de kelp del Pacífico norte en fondos pelados; es
@@ -309,17 +325,40 @@ norma estadounidense marca relativa explicativa (la restrictiva usa *that* y va 
 el dato que da la relativa —once años— es el que el propio texto ya permite calcular con 1825
 y 1836, que es la comprobación de que no restringe: no identifica, comenta.
 
-**Aviso al redactor de opciones**: el reparto de las cuatro opciones es una matriz de dos
-decisiones —abre y cierra / solo abre / solo cierra / ninguna—, y esa es la razón de ser del
-ítem: quien acierta una frontera y falla la otra tiene tres opciones donde caer. Dos cautelas.
-1. **Puerta 2.** La opción con las dos comas es, por construcción, dos caracteres más larga
-   que las demás, y si la clave es «la más larga» el ítem gasta cupo. Se neutraliza escribiendo
-   uno de los distractores con **punto y coma en la posición de apertura** (…*canal; which had
-   taken eleven years to dig,*): mismo número de caracteres que la clave, error distinto y
-   perfectamente vivo —cortar la oración entre sujeto y verbo—.
-2. **No cambies *which* por *that* en ninguna opción.** Sería un segundo eje de decisión
+**Aviso al redactor de opciones**: el ítem nace de dos decisiones independientes —marcar la
+apertura del inciso y marcar su cierre—, y esa es su razón de ser: quien acierta una frontera
+y falla la otra tiene dónde caer. Las celdas candidatas son cuatro —abre y cierra / solo abre
+/ solo cierra / ninguna—, pero **no se publican las cuatro tal cual**, por lo que dice la
+cautela 1. Tres cautelas.
+1. **La celda «ninguna» no es opcional (R5).** La primera redacción publicada dejó fuera la
+   opción sin comas y montó las otras tres sobre signos desemparejados —coma solo al cerrar,
+   punto y coma al abrir y coma al cerrar—. Resultado: la clave era **la única opción
+   internamente coherente en puntuación**, y se acertaba emparejando signos sin leer una
+   palabra del texto. Cada opción tiene que ser consistente consigo misma; que sea falsa lo
+   tiene que decidir el párrafo, no su propio dibujo.
+2. **Puerta 2.** La opción con las dos comas es, por construcción, dos caracteres más larga
+   que la de sin comas, y si la clave es «la más larga» el ítem gasta cupo. Se neutraliza con
+   el **par de punto y coma** (…*canal; which had taken eleven years to dig;*): 43 caracteres,
+   exactamente los mismos que la clave, error distinto y perfectamente vivo —marcar el inciso
+   a los dos lados con el signo que exige oración independiente a cada lado, cortando el
+   sujeto de su verbo—.
+3. **No cambies *which* por *that* en ninguna opción.** Sería un segundo eje de decisión
    —restrictiva contra explicativa— y el ítem dejaría de medir fronteras para medir dos cosas
    a la vez con una sola clave.
+
+**La matriz que se publica** (19 de agosto de 2026), con la clave en la segunda posición que
+fija el plan:
+
+| opción | forma | por qué es coherente consigo misma | qué la descarta |
+|---|---|---|---|
+| `canal which had taken eleven years to dig` | sin signos | ningún signo a ninguno de los dos lados | el párrafo: un solo canal, ya identificado por *The finished*, y los once años ya se deducen de 1825 y 1836 → la relativa no restringe |
+| `canal, which had taken eleven years to dig,` | par de comas — **clave** | mismo signo al abrir y al cerrar | — |
+| `canal; which had taken eleven years to dig;` | par de punto y coma | mismo signo al abrir y al cerrar | el punto y coma exige oración independiente a los dos lados y aquí corta sujeto y verbo |
+| `canal, which had taken eleven years to dig` | solo apertura | un solo signo, y la opción termina ahí: nada dentro de la cadena delata el fallo | el párrafo: la oración sigue con *opened in the spring of 1836*, que sin la coma de cierre queda dentro de la relativa |
+
+La celda que se retiró es **solo cierre** (…*canal which had taken eleven years to dig,*):
+una coma de cierre sin apertura se ve mal desde dentro de la propia opción, sin mirar el
+texto, y por eso era la que regalaba la poda.
 
 **Hecho real usado**: Historia del transporte del siglo XIX, hecho libre: los canales se
 justificaron durante décadas por el abaratamiento del flete frente al acarreo por carretera y
@@ -366,6 +405,13 @@ verificada de College Board y está escrita así en el plan. Los temas tampoco s
 posiciones contiguas: historia, humanidades, ciencia, historia, humanidades, ciencia, historia
 —y el empalme con los bloques vecinos también aguanta (q15 ciencia → q16 historia; q22
 historia → q23 humanidades)—.
+
+**Riesgos vivos que quedan anotados, no corregidos.** Uno solo, y es de q16: la clave única
+depende de que *however* siga **dentro del tramo del hueco**. Mientras esté ahí, los dos
+puntos son indefendibles y solo el punto y coma sostiene la frontera; el día que se saque,
+punto y coma y dos puntos se defienden los dos y el ítem tiene dos claves. No es un defecto
+del ítem publicado: es la condición que lo mantiene sano, y por eso se escribe aquí y en la
+cabecera del bloque en código.
 
 **Lo que falta y no es de este puesto**: enunciados, opciones, claves y el registro de qué
 error representa cada distractor (puerta 5). Los textos están escritos para admitir la clave

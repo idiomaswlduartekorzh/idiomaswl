@@ -5,8 +5,8 @@ Las reglas están en `docs/sat-loop-nocturno.md`; los parámetros y umbrales, en
 `docs/sat-ingles-blueprint.md`.
 
 - **Rama:** `feat/red-agentes-sat-ingles`
-- **Última vuelta:** 9 · 19 ago 2026 · módulo M1 montado y midiéndose entero; cuatro bloques en corrección
-- **Siguiente tarea:** recoger las cuatro correcciones y su reauditoría; si salen APTO, firmar el acta y montar el set
+- **Última vuelta:** 10 · 19 ago 2026 · los cuatro bloques reauditados. **Ningún bloque APTO.** Loop detenido para decisión de David
+- **Siguiente tarea:** **decisión de David** (ver «Resumen para la mañana»). El trabajo técnico siguiente sería reescribir los juegos de opciones aplicando R8
 
 ---
 
@@ -47,6 +47,7 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
 
 | Vuelta | Tarea | Resultado | Commit |
 |---|---|---|---|
+| 10 | Reauditoría de los cuatro bloques | ⚠️ **Ninguno APTO.** Prueba a ciegas: CS 70 % · II 64 % · SEC 55 % · EOI 45 %, contra un techo de 35 %. Las 27 claves siguen confirmadas. q02 pasó por fin a la cuarta versión. Salieron R6, R7 y R8, y un fallo más del guardián: la puerta 3 no contaba los empates (11 % → 37 %) | `fa581882` |
 | 9 | Montaje del M1 + dos fallos del guardián | ✅ `sat-set-1-m1.ts` compone los cuatro bloques. Al montarlo salieron dos bugs del propio guardián: no sabía leer módulos compuestos, y —el grave— **daba luz verde cuando no podía cargar**. Arreglados y probados. El módulo pasa las once puertas mecánicas; lo único que lo deja NO APTO es que no hay acta firmada | `514c4e3f` |
 | 8 | R4 y R5 + guardián de dos caras | ✅ La puerta 3 pasa a medir las dos caras y se prueba con un defecto sembrado. Sobre el material real: II 57 % (tumbado), CS 38 %, SEC 0 %, EOI 0 % | `feat(sat): la puerta que arreglamos…` |
 | 7 | B1b+B1c+B1d · producción paralela | ⚠️ 19 ítems escritos. **Las 19 claves coinciden** con las que eligieron los auditores a ciegas: cero en disputa, cero dobles claves. Pero **los tres bloques vuelven por la puerta 6**: II 71 % a ciegas, EOI 55 %, SEC 2 ítems. Textos y claves se salvan; se reescriben opciones | `af37529a` |
@@ -192,6 +193,36 @@ Lo que el loop **no** decide de noche. Se acumula aquí para la mañana.
 
 ## Resumen para la mañana
 
-Lo escribe el loop al final. En español llano: qué hay hecho, en qué URL se ve, qué falta.
+**Lo primero, sin rodeos: no hay un simulacro que puedas abrir esta mañana.** Hay 27 ítems
+escritos, montados y medidos, pero ninguno de los cuatro bloques pasó la auditoría, así que
+nada se publicó y `/examenes/sat` sigue marcado «en desarrollo». Era lo correcto: publicar
+esto habría sido darle a un estudiante un diagnóstico falso.
 
-> (vacío)
+**Lo que sí quedó, y vale más de lo que parece:**
+
+1. **Los cimientos, terminados y probados.** Parámetros verificados contra College Board
+   —con una corrección que habría estropeado cada módulo—, guardián de doce puertas
+   probado contra defectos sembrados, ficha del examen y ruta en pie, y el módulo M1
+   montado a partir de sus cuatro bloques.
+2. **27 ítems con sus 27 claves confirmadas** por auditores independientes que resolvieron
+   a ciegas. Cero claves en disputa en todo el módulo. Los textos son originales y están
+   dentro de los parámetros oficiales.
+3. **Ocho reglas de escritura (blueprint §4 bis)** que no están en ninguna especificación
+   de College Board. Salieron de escribir ítems, romperlos y verlos volver.
+4. **Cuatro fallos del propio guardián**, encontrados al usarlo: no leía módulos
+   compuestos; daba luz verde cuando no podía cargar; contaba fallos sin decir cuáles; y
+   no contaba los empates en la puerta del solape. Los cuatro arreglados y probados.
+
+**Dónde está el muro, medido:** la puerta que no pasamos es la prueba a ciegas — un
+solucionador que no lee los textos acierta el 45–70 % según el bloque, contra un techo del
+35 %. Y el dato que decide: **reescribir un bloque entero solo bajó su cifra del 71 % al
+64 %**. Siete puntos por ronda. Para llegar a 35 no hacen falta más rondas: hace falta
+cambiar el método, y eso es R8 —diseñar las cuatro opciones como objetos indistinguibles
+antes de decidir cuál es la clave, en vez de sacar la clave del texto y luego inventarle
+tres distractores—.
+
+**Un aviso de calibración, y no es una excusa para bajar el listón.** Quien hace la prueba
+a ciegas es un modelo muy fuerte con tiempo ilimitado, no un estudiante de 17 años bajo
+cronómetro. Las pistas que encuentra son reales y hay que cerrarlas, pero la cifra
+probablemente sea más dura que la realidad. Si quieres un número comparable con el mundo,
+la prueba a ciegas debería correrla también un modelo pequeño.
