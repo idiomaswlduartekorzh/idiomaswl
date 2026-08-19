@@ -61,7 +61,9 @@ q02 con 415, sobra por casi el triple del mínimo.
 
 **Palabra que se examina**: **carried**, en «Her voice carried farther than the bell did».
 
-**Cómo lo fija el contexto**: Uso intransitivo con un comparativo de distancia frente a la campana, y la oración siguiente confirma el efecto: quienes no ven la panadería la oyen. El sentido es «llegar lejos, oírse a distancia». La estructura descarta de golpe cualquier acepción que exija complemento directo (transportar algo, llevar encima), sin necesidad de matizar.
+**Cómo lo fija el contexto**: Uso intransitivo con un comparativo de distancia frente a la campana, y la oración siguiente confirma el efecto: quienes no ven la panadería la oyen. El sentido es «llegar lejos, oírse a distancia».
+
+> ⚠️ **Corrección (19 ago 2026).** Aquí decía que la estructura de la frase descarta «de golpe» las acepciones que piden complemento directo, «sin necesidad de matizar». Eso resultó ser el defecto, no la virtud: dos auditores independientes comprobaron que con esas opciones el ítem se resuelve sin leer el pasaje, que es justo lo que castiga la puerta 6. Las cuatro opciones tienen que encajar en el hueco y fallar por **sentido**. El modelo bueno es q01 de este mismo bloque.
 
 **Hecho real usado**: Ninguno, es ficción. Prosa narrativa original.
 
@@ -93,7 +95,9 @@ q02 con 415, sobra por casi el triple del mínimo.
 
 **Palabra que se examina**: **economy**, en «Critics who praise the economy of Hanne Lindqvist's late woodcuts…».
 
-**Cómo lo fija el contexto**: Sentido: «parquedad de medios» —decir con cuatro líneas lo que antes pedía treinta—. El texto incluye a propósito el discriminador que deja una sola respuesta defendible: «This was not a matter of working faster» más los cuatro meses por estampa cierran la puerta a *eficiencia* y a *rapidez*, que son sinónimos parciales entre sí y el par de distractores más peligroso. Ojo al redactar opciones: la palabra «restraint» se retiró del texto para que la clave no esté escrita dentro (puerta 3, solape léxico).
+**Cómo lo fija el contexto**: Sentido: «parquedad de medios» —decir con cuatro líneas lo que antes pedía treinta—. El texto incluye a propósito el discriminador que deja una sola respuesta defendible: «This was not a matter of working faster» más los cuatro meses por estampa cierran la puerta a *rapidez*.
+
+> ⚠️ **Corrección (19 ago 2026).** Aquí se daba por hecho que ese mismo discriminador cerraba también la puerta a *efficiency*. No la cierra: los cuatro meses solo muerden si *economy* se lee como propiedad del proceso, y el enunciado la predica de las estampas. *Efficiency* era una segunda clave defendible y hubo que sustituirla. Con este texto, **todo sinónimo parcial de *restraint* es una segunda clave**: las cuatro opciones tienen que abrir dimensiones distintas (quedaron: ritmo de trabajo · disposición de las partes · parquedad de medios · precio). Ojo al redactar opciones: la palabra «restraint» se retiró del texto para que la clave no esté escrita dentro (puerta 3, solape léxico).
 
 **Hecho real usado**: Ninguno, es ficción. Hanne Lindqvist es una grabadora inventada; el vocabulario de la xilografía (planchas, líneas, marcas que se retiran) es de dominio general y el texto lo explica solo. Ninguna afirmación se atribuye a una persona real.
 

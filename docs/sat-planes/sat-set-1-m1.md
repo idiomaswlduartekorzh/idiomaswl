@@ -12,6 +12,24 @@ Base: `docs/sat-ingles-blueprint.md` §2 (verificado contra College Board el 18 
 `src/data/mocks/sat/module-types.ts` (de donde salen los identificadores de tipo, en
 kebab-case, y los cuatro temas).
 
+## Dos trampas que este plan ya provocó una vez
+
+Las detectó el auditor de clave sobre el bloque de Craft and Structure ya escrito, y las dos
+venían de la nota del plan, no del redactor. Quien escriba Information and Ideas, Standard
+English Conventions y Expression of Ideas no debe repetir el patrón:
+
+1. **Una opción que se cae por gramática se cae sin leer el texto** (era `q02`): si la
+   sintaxis del hueco descarta dos opciones, el ítem mide dos opciones, no cuatro, y eso es
+   justo lo que castiga la puerta 6 de §4.
+2. **Un sinónimo parcial de la clave es una segunda clave** (era `q04`): el matiz no se
+   defiende ante una reclamación, así que cada opción tiene que abrir una dimensión de
+   significado distinta y la dificultad tiene que venir del texto, no de acercar el
+   distractor a la clave.
+
+En SEC la primera regla se aplica al revés y es la excepción: ahí la regla examinada *es* lo
+que hace agramaticales a los distractores. En II y EOI vale tal cual — un distractor solo
+puede fallar por contenido.
+
 ## Antes de escribir un solo ítem
 
 - **27 ítems, todos puntuables.** No hay pretest.
@@ -54,9 +72,9 @@ form-structure-sense van intercalados. Es la excepción, y es deliberada.
 | nº | id | dominio | tipo | tema | dificultad | clave | nota para el redactor |
 |---|---|---|---|---|---|---|---|
 | 1 | q01 | CS | words-in-context | ciencia | 1 | B | Palabra frecuente cuyo sentido lo fija la oración que la contiene; el distractor más cercano es la acepción de diccionario más común. |
-| 2 | q02 | CS | words-in-context | literatura | 1 | D | Verbo corriente en prosa narrativa; la estructura de la frase (qué complemento admite) debe descartar dos opciones sin necesidad de matizar. |
+| 2 | q02 | CS | words-in-context | literatura | 1 | D | Verbo corriente en prosa narrativa. **Las cuatro opciones tienen que encajar gramaticalmente en el hueco**: mismo régimen, mismo tipo de complemento, ninguna descartable por sintaxis sin leer el texto (puerta 6). Los tres distractores fallan por **sentido**, no por estructura: describen una acción que la oración anterior contradice. La facilidad la da el texto —frases cortas, la pista en la misma oración—, no que sobren opciones. |
 | 3 | q03 | CS | words-in-context | historia | 2 | A | La pista está una oración antes de la palabra, no en la misma; obliga a leer el párrafo, no la línea. |
-| 4 | q04 | CS | words-in-context | humanidades | 3 | C | Palabra polisémica de registro académico con dos opciones que son sinónimos parciales entre sí; solo el matiz de la frase decide. |
+| 4 | q04 | CS | words-in-context | humanidades | 3 | C | Palabra polisémica de registro académico. **Prohibidos los sinónimos parciales entre opciones**: con este texto, cualquier sinónimo parcial de la clave (*restraint*) se vuelve una segunda clave defendible. Las cuatro abren **dimensiones distintas** — ritmo de trabajo, disposición de las partes, parquedad de medios (clave) y precio —, de modo que cada una es descartable por una razón propia. La dificultad la sostienen dos cosas: la acepción académica de la palabra, alejada de la de diccionario, y que la clave **exige el párrafo entero** (el contraste que lo cierra), no una sola línea. |
 | 5 | q05 | CS | text-structure-purpose | literatura | 1 | A | Función de una oración señalada dentro de un párrafo con un giro claro; la clave nombra qué hace la oración, no qué dice. |
 | 6 | q06 | CS | text-structure-purpose | ciencia | 2 | B | Estructura global observación → hipótesis → prueba; los distractores describen bien una sola parte del texto y por eso fallan. |
 | 7 | q07 | CS | text-structure-purpose | historia | 3 | D | El texto debe presentar dos posturas para que la pregunta de propósito tenga sentido; la clave describe qué hace el autor con la segunda. |

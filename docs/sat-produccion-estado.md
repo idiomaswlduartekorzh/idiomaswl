@@ -5,8 +5,8 @@ Las reglas están en `docs/sat-loop-nocturno.md`; los parámetros y umbrales, en
 `docs/sat-ingles-blueprint.md`.
 
 - **Rama:** `feat/red-agentes-sat-ingles`
-- **Última vuelta:** 4 · 18-19 ago 2026 · B1a en curso (q04 y q02 devueltos al redactor)
-- **Siguiente tarea:** cerrar **B1a** — recoger el arreglo de q04/q02 y reauditar solo esos dos
+- **Última vuelta:** 5 · 19 ago 2026 · B1a: q04 APTO por unanimidad, q02 en segunda ronda
+- **Siguiente tarea:** cerrar **B1a** — recoger el q02 de la segunda ronda y pasarle la lente del tramposo
 
 ---
 
@@ -47,6 +47,7 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
 
 | Vuelta | Tarea | Resultado | Commit |
 |---|---|---|---|
+| 5 | B1a · reauditoría a 3 lentes | 🔄 q04 **APTO por unanimidad** de tres auditores independientes. q02 vuelve por un defecto **nuevo**: el arreglo cambió una pista sintáctica por una semántica y se sigue podando sin leer. Notas del plan y del documento de textos corregidas | `8870e7fb`+ |
 | 4 | B1a · bloque Craft and Structure | 🔄 Plan del módulo (27 filas, verificado a máquina) + 8 textos originales + 8 ítems. El auditor coincidió **8 de 8** en la clave, pero devuelve **q04** (dos claves defendibles) y marca **q02** (dos distractores agramaticales: se resuelve sin leer). En corrección | (pendiente) |
 | 3 | A3 · contrato | ✅ Ficha `sat` en `exams.ts` (`available: false`), `buildSatMock()`, y `stimulusStyle: 'passage'` para que los textos largos se pinten como prosa. `/examenes/sat` ya se prerenderiza. `tsc` + `build` en verde | `feat(sat): el examen ya tiene sitio…` |
 | 2 | A2 · guardián | ✅ `scripts/check-sat-exam.mjs` con las doce puertas. Ocho se miden; las otras cuatro exigen acta firmada del auditor. **Probado contra 9 defectos sembrados: los 9 detectados.** `tsc` limpio | `docs(sat): un guardián que nunca ha fallado…` |
@@ -82,6 +83,15 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
   que otro ítem se resolvía por sintaxis sin leer el texto.
 - **El sesgo que más cuesta evitar mientras escribes** es el par de sinónimos parciales:
   en q04 el plan pedía «dos sinónimos y el matiz decide», llegó el par y no llegó el matiz.
+- **Arreglar un ítem puede meter un defecto nuevo de la misma familia.** q02 pasó de una
+  pista sintáctica (dos opciones agramaticales) a una semántica (dos opciones que no son
+  acepciones de la palabra examinada). Las dos se podan sin leer. Por eso la reauditoría
+  no se salta: un ítem corregido es un ítem nuevo.
+- **La lente que más rinde es la del estudiante que no lee.** De las tres, es la única que
+  encontró algo en la segunda vuelta; las otras dos dieron APTO a los dos ítems.
+- **Los defectos del ítem estaban escritos en el plan.** Las dos notas que provocaron q02 y
+  q04 pedían literalmente lo que las puertas castigan. Corregir el ítem sin corregir la
+  nota garantiza repetirlo en los tres bloques que faltan.
 - **Las medidas mecánicas salieron bien a la primera** (claves del plan respetadas, clave
   más larga 2/8, solape 0/8). Lo que falla es siempre lo que exige criterio.
 
