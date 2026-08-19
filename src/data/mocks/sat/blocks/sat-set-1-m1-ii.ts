@@ -11,6 +11,53 @@ import type { SatItemMeta } from '../module-types'
  * Cuando un ítem pedía otra letra se movió el contenido de las opciones, nunca la clave:
  * el reparto se defiende a nivel de módulo y aquí solo se ve un cuarto del examen.
  *
+ * QUINTA VERSIÓN, solo de q09, q13 y q15 (19 ago 2026). Remedido el examen con dieciséis
+ * jueces en vez de ocho, tres ítems de este bloque seguían acertándose a ciegas —q09 15/16,
+ * q13 13/16, q15 16/16— mientras q10 y q12 caían a 1/16 y q11 a 4/16. En los tres, la forma
+ * y el registro ya estaban igualados, así que lo que quedaba no era una pista superficial:
+ * la respuesta se DEDUCÍA razonando con lo visible (R10). Textos y claves siguen intactos;
+ * cambian `text` y `options` de los tres, y sus `razones`.
+ *
+ * - q09: preguntaba por la idea central, y la idea central de este texto es la práctica
+ *   museística que cualquiera reconoce —el taller de restauración a la vista del público—,
+ *   de modo que la clave era la única opción que la describía y se marcaba sin leer. Ahora
+ *   pregunta qué distingue a la sala más visitada, y las cuatro opciones son prácticas de
+ *   museo igual de reales: tocar las piezas, dejarlas manipular, repararlas a la vista y
+ *   construir una nueva delante del público. El sentido común, si se usa, apunta a la sala
+ *   donde suenan los instrumentos, que es un distractor; reparar y construir a la vista son
+ *   imagen especular y solo «mend the museum's violins and guitars» decide entre las dos.
+ * - q13: los cuatro juegos de cifras se resolvían por triangulación. Cada distractor salía
+ *   de perturbar un número de la clave, así que los valores de la clave aparecían en dos o
+ *   tres opciones y los falsos en una: el 30 % y la banda 28-33 se votaban solos, sin mirar
+ *   la tabla. Ahora las opciones son un 2×2 exacto —extremo gris 30 % o 22 %, suelo naranja
+ *   28 % o 29 %—, cada valor aparece dos veces y no hay mayoría que desempate. Además las
+ *   heurísticas se cruzan: el mayor contraste del gris apunta a la clave, pero la banda
+ *   naranja más estrecha —29-33, la que parece mejor prueba de que esa especie no
+ *   responde— apunta a un distractor.
+ * - q15: el enunciado señalaba un intervalo y solo una opción decía «más cálido que hoy»,
+ *   que es la inferencia paleoclimática de manual; las otras tres eran variantes
+ *   contrarias y se podaban por raras. Ahora las cuatro afirman un clima más templado y se
+ *   reparten en 2×2 los dos hechos que solo el texto da: la profundidad del deshielo (por
+ *   debajo del primer metro o no) y su continuidad (en todos esos milenios o a tramos). El
+ *   enunciado ya no habla de «the site» ni del suelo sobre la cueva, sino del suelo a esa
+ *   latitud, para no regalar el mecanismo —el agua que tiene que atravesar la roca— que es
+ *   justo lo que permite deducir que lo que importa es la profundidad y no la estación.
+ *
+ * Tercera divergencia con el plan, además de las dos que ya se anotan más abajo. El plan
+ * pedía en q09 una idea central enunciada en el cierre del texto, con distractores que
+ * fueran detalles verdaderos pero secundarios. Esa idea central —el instrumento como cosa
+ * que unas manos mantienen viva, y por eso el taller a la vista— es exactamente la práctica
+ * museística que el lector culto ya conoce, así que la clave se deducía del mundo y no del
+ * texto: 15 de 16 jueces la marcaron a ciegas. El ítem pregunta ahora por el rasgo de la
+ * sala —sigue dentro de `central-ideas-details`, por el lado de los detalles— y la idea
+ * central del cierre pasa a ser lo que hay que leer para descartar las otras tres salas.
+ *
+ * Medido sobre los tres reescritos: la clave no es la opción más larga en solitario en
+ * ninguno (q09 122/116/112/116, q13 cuatro opciones de 130 caracteres, q15 114/113/120/115)
+ * y en solape léxico con el texto no es ni la que más repite ni la que menos (q09 6/5/6/7
+ * con la clave en 6; q15 4/6/7/6 con la clave en 6; en q13 las cuatro empatan en 9, así que
+ * no hay coincidencias que contar y la puerta no ve nada que explotar).
+ *
  * CUARTA VERSIÓN, solo de q09, q10, q13 y q15 (19 ago 2026). Tras R8 el panel de ocho
  * solucionadores los seguía acertando a ciegas —6, 7, 7 y 7 de 8—, mientras q11, q12 y q14
  * de este mismo bloque caían a 2, 2 y 5. La forma ya estaba igualada en los cuatro: lo que
@@ -134,12 +181,12 @@ export const items: MCQQuestion[] = [
     part: 1,
     stimulus:
       "The Ferreira Museum owns four hundred stringed instruments, but its most visited room holds no display case. It is a workshop behind a glass wall. Inside, two repairers mend the museum's violins and guitars while visitors watch from a bench. A sign names the tools on the table and the wood being used that week. Children stay longest, and many come back a second time. The director explains the room in one line: an instrument is not an object to be looked at, but something kept alive by hands, and the public should see the hands.",
-    text: 'Which choice best states the main idea of the text?',
+    text: "According to the text, what sets the museum's busiest room apart from the rest of the museum?",
     options: [
-      'For the museum, an instrument is the work of the hands that built it, and so the public should be shown the wood and the tools, not the object alone.',
-      'For the museum, an instrument is only furniture until someone plays it, and so the public should be shown violins that sound, not violins that sit.',
-      'For the museum, an instrument is a thing that hands keep usable, and so the public should be shown those hands at work, not the object alone.',
-      'For the museum, an instrument is a trade before it is an object, and so the public should be shown a trade it might take up, not one it has lost.',
+      'It is the room where the violins and guitars are played aloud, and visitors listen from a bench instead of reading a sign.',
+      'It is the room where the violins and guitars are put into the hands of children, who may try the strings themselves.',
+      'It is the room where the violins and guitars are mended, and visitors sit on a bench to watch the work close up.',
+      'It is the room where a new instrument is built from raw wood, and visitors watch the tools on the table as it grows.',
     ],
     answer: 2,
   },
@@ -197,9 +244,9 @@ export const items: MCQQuestion[] = [
     text: 'A researcher claims that only one of the two lichens is sensitive to vehicle exhaust. Which choice best describes data from the study that support that claim?',
     options: [
       'Bushy gray cover rose from 3% at 20 m to 30% at 1,000 m, while flat orange cover stayed between 28% and 33% at all four distances.',
-      'Bushy gray cover rose from 3% at 20 m to 30% at 1,000 m, while flat orange cover stayed between 28% and 31% at all four distances.',
-      'Flat orange cover rose from 28% at 20 m to 33% at 1,000 m, while bushy gray cover stayed between 3% and 8% at all four distances.',
+      'Bushy gray cover rose from 3% at 20 m to 30% at 1,000 m, while flat orange cover stayed between 29% and 33% at all four distances.',
       'Bushy gray cover rose from 3% at 20 m to 22% at 1,000 m, while flat orange cover stayed between 28% and 33% at all four distances.',
+      'Bushy gray cover rose from 3% at 20 m to 22% at 1,000 m, while flat orange cover stayed between 29% and 33% at all four distances.',
     ],
     answer: 0,
   },
@@ -224,12 +271,12 @@ export const items: MCQQuestion[] = [
     part: 1,
     stimulus:
       'A stalagmite grows only while water moves through the rock above it, dissolving carbonate on the way down and leaving a thin film of it behind at every drip; ground that stays frozen the year round shuts the process off, and the column stops. Caves in the far north of Siberia therefore hold an unusual archive. In one of them, at a latitude where the soil today never thaws below the first meter, a team dated the growth bands of a single column and found that deposition ran without interruption from about 402,000 to 381,000 years ago, and then ceased for the hundred thousand years that followed.',
-    text: 'Based on the text, what can most reasonably be inferred about the site from about 402,000 to 381,000 years ago?',
+    text: "Based on the text, what can most reasonably be inferred about the soil at the cave's latitude from about 402,000 to 381,000 years ago?",
     options: [
-      'The ground thawed below the first meter in scattered centuries, so those millennia were a run of warm spells with frozen ones in between.',
-      'The ground thawed below the first meter for part of each year, so those millennia were warmer at that latitude than the present is.',
-      'The ground thawed no deeper than the first meter, so those millennia were wetter at that latitude than the present is, rather than warmer.',
-      'The ground thawed no deeper than the first meter, so those millennia opened a way down through the rock that has since closed again.',
+      'It thawed below the first meter in some of those millennia and stayed frozen that deep for long spells in between.',
+      'It thawed below the first meter in every one of those millennia and never stayed frozen that deep in any of them.',
+      'It thawed earlier in the year than it does now in every one of those millennia, but never below the first meter of soil.',
+      'It thawed earlier in the year than it does now in some of those millennia, but never below the first meter of soil.',
     ],
     answer: 1,
   },
@@ -244,13 +291,13 @@ export const meta: SatItemMeta[] = [
     tema: 'humanidades',
     razones: {
       A:
-        'Le pone a las manos el dueño equivocado y asciende el cartel a tesis. Las manos que el director manda mirar son las dos que están reparando esta semana, no las del artesano que construyó la pieza —en esa sala no se fabrica nada, se remienda—, y que el cartel nombre las herramientas y la madera de la semana es un recurso de la sala, no lo que el museo sostiene que un instrumento es. Es la opción de quien acierta el término del que depende la idea central y falla en de quién es.',
+        'Convierte la sala en un auditorio. En ella no suena nada: los dos que están dentro cosen los violines y las guitarras, y del público el texto dice que mira desde un banco. La demostración con instrumentos tocados es una práctica de museo corriente, y por eso esta opción es la que primero se le ocurre a quien busca por qué una sala sería la más visitada; lo que no tiene es una sola línea del texto detrás.',
       B:
-        'Trae de fuera la idea de que un instrumento existe para sonar. En el texto nadie toca: los dos reparadores cosen los violines y las guitarras, y el director pide que el público vea, no que oiga. Atrae a quien lee «not an object to be looked at» como una queja contra el silencio de las vitrinas y termina la frase por su cuenta.',
+        'Le cambia el dueño a las manos. Las que el director manda ver son las de los dos reparadores —«something kept alive by hands, and the public should see the hands»—, y al público el texto lo sienta en un banco al otro lado de un cristal, sin darle nada que tocar. Es la sala de manipulación que muchos museos tienen, traída aquí por quien lee «hands» y supone que son las suyas.',
       C:
-        'Correcta: es el cierre del director dicho con otras palabras y con sus dos mitades —qué es un instrumento y qué se sigue de ello para el público—: «an instrument is not an object to be looked at, but something kept alive by hands, and the public should see the hands».',
+        "Correcta: es lo que el texto describe línea por línea. «Its most visited room holds no display case. It is a workshop behind a glass wall. Inside, two repairers mend the museum's violins and guitars while visitors watch from a bench.»",
       D:
-        'Convierte una observación en la razón de ser de la sala. El texto anota que los niños se quedan más rato y que muchos vuelven, pero en ninguna línea el museo se propone que el visitante herede el oficio: lo que pide del público es que mire, no que releve a los dos que están en la mesa.',
+        "Cambia remendar por construir. Dentro se arreglan piezas que el museo ya tiene —«mend the museum's violins and guitars»— y la madera que el cartel nombra es la que se está usando esa semana para arreglarlas, no la de un instrumento nuevo. El taller de luthier a la vista del público existe en otros museos, y quien elige esta opción retiene «tools» y «wood» y monta con ellos el taller que conoce.",
     },
     fuenteHecho:
       'Práctica museística real y de dominio general (talleres de restauración a la vista del público); museo, colección y cita del director inventados.',
@@ -319,13 +366,13 @@ export const meta: SatItemMeta[] = [
     tema: 'ciencia',
     razones: {
       A:
-        'Correcta: las dos mitades resisten la tabla entera. El gris multiplica por diez su cobertura al alejarse (3 % a los 20 m, 30 % a los 1.000) y el naranja se queda dentro de 28-33 % en las cuatro filas —28, 33, 31, 29—, que es exactamente el contraste que hace falta para señalar a una sola especie.',
+        'Correcta: es la única lectura que sobrevive a recorrer las dos columnas enteras. El gris va de 3 % a los 20 m a 30 % a los 1.000 —la última fila, no la penúltima— y el naranja, fila por fila, da 28, 33, 31 y 29, de modo que cabe entero en 28-33 % y no se mueve con la distancia. Una serie que se multiplica por diez junto a otra que se queda quieta es el contraste que señala a una sola especie.',
       B:
-        'La banda naranja está mal por una fila. El naranja llega al 33 % a los 100 m, así que no cabe en 28-31 %. Es el error de quien comprueba la primera, la tercera y la cuarta fila —28, 31, 29—, ve que el margen es estrecho y da la columna por leída sin volver a la segunda.',
+        'Sube el suelo de la banda naranja una fila. A los 20 m el naranja está en 28 %, justo la distancia donde el efecto tendría que verse, y sin esa cifra la especie plana parece todavía más plana: por eso esta opción se lee como la evidencia más fuerte de las cuatro y es la más tentadora. Es el error de quien gasta la primera fila en la mitad gris y empieza a leer la columna naranja en la segunda.',
       C:
-        'Cambia las dos columnas de sitio. Ni el naranja sube al alejarse (28, 33, 31 y 29, y termina en 29, no en 33) ni el gris se queda en 3-8 % (a los 400 m ya va por 22 %). Atrae a quien da por supuesto que la especie que más superficie cubre es la que está respondiendo al tráfico, y lee la tabla con esa expectativa puesta.',
+        'El 22 % existe, pero es la fila de los 400 m; a los 1.000 m el gris llega al 30 %. Todo lo demás de la opción es exacto, así que solo la descarta quien baja la columna gris hasta la última línea en vez de pararse en la penúltima, donde el salto de 8 % a 22 % ya parece contar la historia entera.',
       D:
-        'El 22 % existe, pero es la fila de los 400 m, no la de los 1.000, donde el gris llega al 30 %. Todo lo demás de la opción es exacto, y por eso solo la descarta quien lee la columna gris hasta el final en vez de dar el salto de la primera fila a la última.',
+        'Hace los dos recortes a la vez. Lee la columna gris de arriba abajo y se detiene cuando la subida ya se ve (22 % a los 400 m), y la naranja de abajo arriba y se detiene también antes de tiempo (29, 31, 33): se le escapan las dos filas que deciden, la de los 1.000 m y la de los 20 m. Ninguna de las dos columnas se lee entera y las dos mitades salen mal.',
     },
     fuenteHecho:
       'Uso real de los líquenes como bioindicadores de calidad del aire; distancias, número de muros y los ocho porcentajes son inventados, y las especies van sin nombre científico.',
@@ -356,13 +403,13 @@ export const meta: SatItemMeta[] = [
     tema: 'ciencia',
     razones: {
       A:
-        'Rompe la continuidad que el texto afirma. El depósito corrió «without interruption» durante veintiún mil años, y un siglo de suelo helado lo habría cortado: dentro del intervalo no caben tramos congelados. Atrae a quien ve «growth bands» y toma las bandas por episodios sueltos de crecimiento.',
+        'Rompe la continuidad que el texto afirma. El depósito corrió «without interruption» durante los veintiún mil años, y un tramo con el suelo helado a esa profundidad lo habría cortado y habría dejado un hueco entre las bandas. Es el error de quien ve «growth bands» y toma las bandas por episodios sueltos de crecimiento, que es además la imagen que uno tiene de un clima glacial: encendido y apagado.',
       B:
-        'Correcta: sale de cruzar la regla de la primera oración —sin agua líquida que atraviese la roca no hay depósito— con el caso de la tercera, una cueva cuyo suelo hoy no se deshiela por debajo del primer metro y que sin embargo registró depósito continuo. Para que el agua bajara, el deshielo tuvo que llegar más hondo que hoy.',
+        'Correcta: hay que cruzar tres cosas y ninguna basta sola. La regla —«a stalagmite grows only while water moves through the rock above it»—, el suelo de hoy, que «never thaws below the first meter», y el hecho de que el depósito corriera «without interruption» entre las dos fechas. Para que el agua bajara, el deshielo tuvo que pasar de ese primer metro; para que no se interrumpiera, tuvo que hacerlo en todos esos milenios.',
       C:
-        'Cambia la temperatura por la lluvia. Con el deshielo detenido en el primer metro el agua no atraviesa la roca por mucha que caiga —«ground that stays frozen the year round shuts the process off»—, y la precipitación no aparece en ninguna línea del texto. Es el error de quien conserva el frío del sitio y mueve la variable más fácil de imaginar.',
+        'Paga el cambio de clima con la estación en vez de con la profundidad. Un deshielo que empieza antes pero se detiene en el primer metro deja el terreno de debajo helado todo el año, y eso «shuts the process off»: con esa descripción no se habría depositado nada, y hubo depósito seguido durante veintiún mil años. Es el error de quien retiene «más templado que hoy» y mueve la variable que no abre el paso al agua.',
       D:
-        'Busca una cañería donde el texto pone un clima. El crecimiento está condicionado a que el agua atraviese la roca de encima, y el suelo helado es el interruptor del proceso, así que una vía abierta a través de terreno permanentemente helado es justo lo que la primera oración excluye; ni esa vía ni su cierre posterior están en el texto.',
+        'Junta los dos fallos anteriores: mantiene el metro de hoy como techo del deshielo y además reparte el calor en tramos. Cualquiera de las dos mitades por separado ya impediría que la columna creciera —o no crece nunca, o deja de crecer en los tramos helados—, y el texto dice que creció sin interrupción entre las dos fechas. Es el error de quien imagina el pasado remoto como el presente con algunos veranos mejores.',
     },
     fuenteHecho:
       'Método real de paleoclimatología (los espeleotemas solo crecen con agua de infiltración líquida, y su crecimiento indica retroceso del permafrost); cueva, equipo y fechas inventados.',

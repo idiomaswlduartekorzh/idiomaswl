@@ -324,6 +324,32 @@ opciones**. Un enunciado que declara la conclusión, o que nombra la relación q
 encontrar, permite deducir la clave sin el texto. El enunciado no es material protegido:
 se puede y se debe recortar.
 
+### R10 · La respuesta no puede ser deducible sin el texto
+
+Es la última pista, la que queda cuando ya no queda ninguna de forma. **Lo enseñaron cuatro
+ítems** que, con la forma igualada y el registro repartido, seguían siendo acertados por 13,
+15 y hasta **16 de 16** solucionadores que no veían el texto.
+
+Cuando el acierto es tan unánime, la pista no es superficial: la respuesta **se deduce
+razonando** con lo visible. El enunciado plantea una situación y solo una opción es
+coherente con el mundo, o con la lógica del propio enunciado, o con lo que cualquiera
+esperaría de un texto así. El pasaje sobra.
+
+**La regla:** al menos dos opciones tienen que ser igual de coherentes con todo lo visible,
+y solo el texto puede decidir entre ellas.
+
+Dos soluciones que funcionaron, y que valen como patrón:
+
+- **El diseño factorial, en ítems con datos.** En `q13` los distractores salían de
+  perturbar un número de la clave, así que los valores buenos aparecían dos o tres veces y
+  los malos una: **la clave se votaba sola**. Se rehízo como un 2×2 exacto —cada valor
+  aparece dos veces— y el recuento deja de decir nada. Es el mismo defecto de conjunto de
+  siempre, escondido dentro de un solo ítem.
+- **Que el mundo apunte a un distractor.** En `q09` la pregunta pedía la idea central, y la
+  idea central de ese texto era la tesis museística de manual: se marcaba desde el
+  conocimiento general. Reformulada, quien razona desde el mundo aterriza ahora en una
+  opción falsa.
+
 ### R2 · Arreglar un ítem lo convierte en un ítem nuevo
 
 Las tres versiones de q02 pasaron cada una por auditoría, y cada arreglo introdujo un

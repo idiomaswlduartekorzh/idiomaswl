@@ -96,10 +96,10 @@ export const items: MCQQuestion[] = [
       'For part of each year, rain turns wide stretches of the Amazon lowlands into flooded forest, and the water stands deep enough for fish to swim among the trunks. Botanists working there noticed that seedlings of one palm were rising far from any adult tree, on ground that no current could have reached. Drifting fruit could not explain the pattern, so the team proposed that fish were eating the fruit and depositing the seeds elsewhere. To test the idea, they netted fish during the flood, examined the stomachs of more than four hundred, and planted every intact seed they recovered. Roughly a quarter of those seeds sprouted.',
     text: 'Which choice best describes the overall structure of the text?',
     options: [
-      'It describes a flooded forest, names the animals that live there, and explains what they do.',
-      'It reports a pattern no one had explained, proposes a cause, and describes how it was tested.',
-      'It sets out the fieldwork the botanists did, counts the seeds they planted, and questions the result.',
-      'It reviews an accepted explanation, presents the evidence against it, and offers a replacement.',
+      'It describes a habitat, reports a pattern found there, sets out two causes for it, and ends with the one the evidence favors.',
+      'It describes a habitat, reports a pattern found there, sets out a cause proposed for it, and ends with a test of that cause.',
+      'It describes a habitat, reports a pattern found there, sets out the fieldwork that followed, and ends with the cause it points to.',
+      'It describes a habitat, reports a pattern found there, sets out the fieldwork that followed, and ends with how often the pattern occurs.',
     ],
     answer: 1,
   },
@@ -239,13 +239,13 @@ export const meta: SatItemMeta[] = [
     tema: 'ciencia',
     razones: {
       A:
-        'Se queda en la primera oración, la del bosque inundado, y toma el escenario por el asunto. El texto no cataloga fauna: el único animal que aparece son los peces, y aparecen como transportistas de semillas, no como habitantes que se enumeren.',
+        'Toma el inciso de la fruta a la deriva —«Drifting fruit could not explain the pattern»— por la primera de dos causas sopesadas, y el trabajo de campo por el árbitro entre las dos. El texto descarta esa idea antes de recoger un solo dato y por un argumento, no por una prueba: las plántulas salían «on ground that no current could have reached». Las redes, los cuatrocientos estómagos y la siembra examinan solo la hipótesis de los peces, así que nunca hay dos causas compareciendo ante la misma evidencia.',
       B:
-        'Correcta: plántulas donde ninguna corriente llega y una fruta a la deriva que no explica nada, hipótesis de los peces, y comprobación con redes, cuatrocientos estómagos y un cuarto de las semillas germinadas. En ese orden.',
+        'Correcta: el texto va del bosque inundado a lo que los botánicos observan allí —plántulas «far from any adult tree»—, de ahí a la causa que el equipo propone —«the team proposed that fish were eating the fruit and depositing the seeds elsewhere»— y acaba en la comprobación que esa causa pide: «To test the idea, they netted fish during the flood…», con los estómagos examinados y el cuarto de semillas germinadas.',
       C:
-        'Describe con exactitud las dos últimas oraciones —redes, estómagos, siembra— y las presenta como el texto entero, dejando fuera el enigma y la hipótesis que las provocaron; y nadie pone en duda el resultado: las semillas germinaron y ahí acaba.',
+        'Invierte los dos últimos movimientos y coloca el trabajo de campo antes que la hipótesis, como si la idea de los peces fuese la conclusión que dejaron las redes. El texto la sitúa antes y convierte el campo en su prueba: «so the team proposed…» y después «To test the idea». Además el texto no termina en una causa, sino en un dato —«Roughly a quarter of those seeds sprouted»—.',
       D:
-        'Infla un inciso —la fruta a la deriva no explicaba el patrón— hasta volverlo una explicación asentada con partidarios. Nadie defiende esa idea en el texto, no se aporta prueba en contra y no hay a quién refutar.',
+        'Lee el «roughly a quarter» como una medida de con qué frecuencia ocurre el fenómeno, y de paso adelanta el trabajo de campo al puesto de la hipótesis. Esa cuarta parte no cuenta cuántas veces los peces dispersan semillas: es la proporción de las semillas recuperadas de los estómagos que germinó una vez sembrada, el resultado de la prueba y no un censo del patrón.',
     },
     fuenteHecho:
       'Hecho libre y documentado: ictiocoria en la llanura amazónica inundable; palmera, equipo y cifras inventados.',
