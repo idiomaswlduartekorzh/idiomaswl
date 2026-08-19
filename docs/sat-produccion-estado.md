@@ -5,8 +5,8 @@ Las reglas están en `docs/sat-loop-nocturno.md`; los parámetros y umbrales, en
 `docs/sat-ingles-blueprint.md`.
 
 - **Rama:** `feat/red-agentes-sat-ingles`
-- **Última vuelta:** 7 · 19 ago 2026 · B1b + B1c + B1d en producción paralela
-- **Siguiente tarea:** recoger los tres bloques y corregir lo devuelto; luego **B1e** (montaje del módulo + reescritura de q02)
+- **Última vuelta:** 8 · 19 ago 2026 · los tres bloques escritos y auditados; los tres DEVUELTOS por la puerta 6
+- **Siguiente tarea:** corregir los tres bloques con **R4 y R5** en la mano (los textos y las claves se salvan; se reescriben opciones), luego **B1e**
 
 ---
 
@@ -47,7 +47,8 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
 
 | Vuelta | Tarea | Resultado | Commit |
 |---|---|---|---|
-| 7 | B1b+B1c+B1d · producción paralela | 🔄 **Desvío deliberado del playbook**: tres bloques a la vez en lugar de uno por vuelta. Son independientes —el reparto de claves ya está fijado en el plan— y la noche es finita. 12 agentes: un redactor de textos y uno de ítems por bloque, más dos lentes de auditoría cada uno | (en curso) |
+| 8 | R4 y R5 + guardián de dos caras | ✅ La puerta 3 pasa a medir las dos caras y se prueba con un defecto sembrado. Sobre el material real: II 57 % (tumbado), CS 38 %, SEC 0 %, EOI 0 % | `feat(sat): la puerta que arreglamos…` |
+| 7 | B1b+B1c+B1d · producción paralela | ⚠️ 19 ítems escritos. **Las 19 claves coinciden** con las que eligieron los auditores a ciegas: cero en disputa, cero dobles claves. Pero **los tres bloques vuelven por la puerta 6**: II 71 % a ciegas, EOI 55 %, SEC 2 ítems. Textos y claves se salvan; se reescriben opciones | `af37529a` |
 | 6 | B1a · cierre | ✅ **7 de 8 ítems APTO.** q02 devuelto por tercera vez y **bloqueado** según la regla de las tres rondas del playbook. De ahí salió la regla R1, escrita en el blueprint §4 bis: un words-in-context solo funciona si las cuatro opciones comparten régimen sintáctico | `86a9db4c`+ |
 | 5 | B1a · reauditoría a 3 lentes | 🔄 q04 **APTO por unanimidad** de tres auditores independientes. q02 vuelve por un defecto **nuevo**: el arreglo cambió una pista sintáctica por una semántica y se sigue podando sin leer. Notas del plan y del documento de textos corregidas | `8870e7fb`+ |
 | 4 | B1a · bloque Craft and Structure | 🔄 Plan del módulo (27 filas, verificado a máquina) + 8 textos originales + 8 ítems. El auditor coincidió **8 de 8** en la clave, pero devuelve **q04** (dos claves defendibles) y marca **q02** (dos distractores agramaticales: se resuelve sin leer). En corrección | (pendiente) |
@@ -119,6 +120,40 @@ lugar, porque ahí lo que puede tumbar un ítem es la gramática, no la estrateg
 
 Si esto sale bien, la receta de escalado (C0) debería recomendar producir por bloques en
 paralelo y auditar en serie, no lo contrario.
+
+## Lo que hay que corregir en cada bloque (la próxima vuelta)
+
+**No se rehace nada desde cero.** Los 19 textos son válidos y las 19 claves están
+confirmadas por auditores independientes. Lo que se reescribe son **opciones**, aplicando
+R4 y R5 del blueprint §4 bis.
+
+### Information and Ideas (q09–q15) — el más tocado, 7 de 7
+- Defecto de conjunto: la clave es la que menos repite el texto en 4 de 7 (57 %).
+- `q09` · A, B y D son copias de oraciones sueltas y C es la única con forma de tesis y con
+  *because*. Hacen falta al menos dos distractores **con forma de tesis**, falsos por
+  razones distintas.
+- `q10` · D es absoluta («cannot be foreseen»), C es estrecha; la clave es la única síntesis.
+- `q11` · **error de contenido en el texto**: «untied his knots with a length of cord of my
+  own» debería ser *tied*. Mientras siga así, A es defendible. Y C se poda por ser la única
+  cita en tercera persona.
+- `q12` · el enunciado entrega la conclusión entera: el pasaje sobra.
+- `q13` · el mejor del bloque, pero la serie naranja (34-30-27-26) es monótona y contradice
+  el «only one is sensitive» del enunciado.
+- `q14` · B es distractor muerto («the same room» para todos).
+- `q15` · C responde por el periodo equivocado y D sobregeneraliza: quedan dos.
+
+### Standard English Conventions (q16–q22) — 2 de 7, y las 7 claves resisten
+- `q18` · **falta una coma tras la subordinada antepuesta en el propio texto** de un ítem que
+  examina comas. Incoherente con q20 y q21 del mismo lote.
+- `q22` · B es la única opción internamente coherente: se acierta emparejando signos sin leer.
+  Falta la celda «sin comas» que la propia matriz del documento de textos declara.
+- Aviso heredado para el futuro: en `q16`, si alguna vez se saca *however* del tramo del
+  hueco, punto y coma y dos puntos se defienden los dos y el ítem pasa a tener dos claves.
+
+### Expression of Ideas (q23–q27) — 2 de 5; las tres de *transitions* están limpias
+- `q23` · un distractor tiene que compartir la forma definitoria de la clave.
+- `q24` · falta un distractor comparativo **en forma** que compare el par equivocado.
+- `q25`, `q26`, `q27` (transitions) · APTO por las dos lentes. No se tocan.
 
 ## Deuda anotada
 

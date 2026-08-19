@@ -192,7 +192,7 @@ un fallo, no una presunción de inocencia.
 |---|---|---|---|
 | 1 | Reparto de la clave | Cada letra 20–30 % por módulo; nunca 3 iguales seguidas | Cinco series de este repo salieron con la correcta en A el 100 % de las veces |
 | 2 | Longitud de la clave | La correcta es la opción más larga en ≤ 30 % de los ítems | Es la pista más explotada por quien no sabe la respuesta |
-| 3 | Solape léxico | La correcta no repite literalmente más palabras del texto que la media de los distractores | Se acierta emparejando palabras, no leyendo |
+| 3 | Solape léxico, **por las dos caras** | La clave no puede ser la que más repite palabras del texto en > 40 % de los ítems, **ni la que menos** en > 40 % | Por arriba se acierta emparejando; por abajo, descartando lo que se parece al texto. Ver R4 |
 | 4 | Clave única | Cero ítems con dos opciones defendibles | Un ítem con dos claves no mide nada |
 | 5 | Distractores vivos | Cada distractor lleva escrito qué error del estudiante representa | Un distractor que nadie elegiría convierte un ítem de 4 en uno de 3 |
 | 6 | Prueba a ciegas | Un solucionador que no ve el texto no pasa del 35 % | Azar = 25 %. Por encima de 35 % el ítem se resuelve sin leer |
@@ -231,6 +231,40 @@ podable sin leer.
 
 Corolario práctico: los verbos con muchas acepciones suelen tener también muchos regímenes,
 que es justo lo que rompe el ítem. Adjetivos y sustantivos polisémicos dan menos guerra.
+
+### R4 · La puerta del solape léxico tiene dos caras, y arreglar una abre la otra
+
+**Lo enseñó el bloque Information and Ideas de `sat-set-1-m1`, entero.** La instrucción
+«parafrasea la clave y deja que un distractor repita el vocabulario visible» se cumplió a
+rajatabla, y el resultado fue que la clave pasó a ser **la opción que menos palabras del
+texto repite**, sistemáticamente: en 5 de 6 ítems. Un estudiante que no entienda una sola
+palabra y solo cuente coincidencias con el texto acierta 5 de 6.
+
+Es el mismo defecto que la puerta pretendía evitar, con el signo cambiado. Y no se ve ítem
+por ítem: cada uno estaba bien. Solo se ve contando el conjunto, que es justo la lección
+que este repositorio ya había pagado una vez con las cinco series cuya respuesta correcta
+estaba siempre en la A.
+
+`scripts/check-sat-exam.mjs` mide ahora las dos caras. Medido sobre los cuatro bloques del
+M1 el día que se descubrió: Information and Ideas 57 % (falla), Craft and Structure 38 %
+(pasa raspando), Standard English Conventions 0 %, Expression of Ideas 0 %.
+
+### R5 · Los distractores tienen que compartir la FORMA de la clave
+
+R1 dicho en general. No es solo la sintaxis: es **cualquier rasgo formal que permita
+separar la clave del resto sin entender el contenido**. Los que aparecieron en una sola
+noche de producción:
+
+- La clave es la única con forma de tesis y las tres falsas son citas o detalles.
+- La clave es la única que contiene un conector causal (*because*).
+- La clave es la única no absoluta, y las falsas dicen *never*, *cannot*, *all*.
+- La clave es la única que compara dos cosas, cuando el objetivo declarado pide comparar.
+- La clave es la única cita en primera persona y la falsa en tercera.
+- La clave es la única opción internamente coherente en puntuación (en convenciones).
+
+**La comprobación es siempre la misma:** tapa el texto. Si con solo mirar la forma de las
+cuatro opciones puedes eliminar una, el ítem no está terminado. Al menos dos distractores
+tienen que compartir la forma definitoria de la clave y ser falsos por razones distintas.
 
 ### R2 · Arreglar un ítem lo convierte en un ítem nuevo
 

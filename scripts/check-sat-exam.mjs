@@ -164,21 +164,34 @@ function checkModule(mod) {
     fail(id, '2 longitud de la clave', `la correcta es la más larga en ${masLarga}/${items.length} (${fmt(stats.masLargaPct)} %), máximo 30 %`)
   }
 
-  // ── 3 · solape léxico con el texto ──
+  // ── 3 · solape léxico con el texto, POR LAS DOS CARAS ──
+  //
+  // La segunda cara la enseñó el bloque Information and Ideas del primer módulo. Al
+  // cumplir a rajatabla «parafrasea la clave y deja que un distractor repita el
+  // vocabulario», la clave se volvió sistemáticamente la opción que MENOS palabras del
+  // texto repite: en 5 de 6 ítems. Un estudiante que no entienda una sola palabra y solo
+  // cuente coincidencias acierta 5 de 6. Arreglar la puerta por un lado abrió la misma
+  // puerta por el otro, y ítem por ítem no se ve: solo se ve contando el conjunto.
   let claveGana = 0
+  let clavePierde = 0
   for (const q of items) {
     const fuente = new Set(contentWords(q.stimulus))
     const solapes = q.options.map((o) => contentWords(o).filter((w) => fuente.has(w)).length)
     const clave = solapes[q.answer]
     const distractores = solapes.filter((_, i) => i !== q.answer)
     if (clave > Math.max(...distractores)) claveGana++
+    if (clave < Math.min(...distractores)) clavePierde++
     if (clave - Math.max(...distractores) >= 3) {
       fail(id, '3 solape léxico', `${q.id}: la clave repite ${clave} palabras del texto y el mejor distractor ${Math.max(...distractores)}; se acierta emparejando`)
     }
   }
   stats.solapePct = pct(claveGana, items.length)
+  stats.solapeBajoPct = pct(clavePierde, items.length)
   if (stats.solapePct > 40) {
     fail(id, '3 solape léxico', `la clave es la que más repite palabras del texto en ${claveGana}/${items.length} (${fmt(stats.solapePct)} %), máximo 40 %`)
+  }
+  if (stats.solapeBajoPct > 40) {
+    fail(id, '3 solape léxico (cara inversa)', `la clave es la que MENOS repite palabras del texto en ${clavePierde}/${items.length} (${fmt(stats.solapeBajoPct)} %), máximo 40 %. Se acierta contando coincidencias y eligiendo la que menos tiene`)
   }
 
   // ── 5 · distractores vivos ──
@@ -318,7 +331,7 @@ for (const mod of modules) {
   const errs = failures.filter((f) => f.mod === mod.id)
   console.log(`${errs.length ? '❌' : '✅'} ${mod.id} · ${mod.variant} · ${mod.items.length} ítems`)
   if (verbose && s.letras) {
-    console.log(`   claves ${LETTERS.map((l) => `${l}:${s.letras[l]}`).join(' ')} · clave más larga ${fmt(s.masLargaPct)} % · solape ${fmt(s.solapePct)} %`)
+    console.log(`   claves ${LETTERS.map((l) => `${l}:${s.letras[l]}`).join(' ')} · clave más larga ${fmt(s.masLargaPct)} % · solape alto ${fmt(s.solapePct)} % · solape bajo ${fmt(s.solapeBajoPct)} %`)
     console.log(`   dominios ${DOMAIN_ORDER.map((d) => `${d}:${s.dominios?.[d] ?? 0}`).join(' ')} · temas ${Object.entries(s.temas || {}).map(([t, n]) => `${t}:${n}`).join(' ')}`)
   }
   for (const e of errs) console.log(`   · [${e.gate}] ${e.msg}`)
