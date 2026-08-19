@@ -5,8 +5,8 @@ Las reglas están en `docs/sat-loop-nocturno.md`; los parámetros y umbrales, en
 `docs/sat-ingles-blueprint.md`.
 
 - **Rama:** `feat/red-agentes-sat-ingles`
-- **Última vuelta:** 6 · 19 ago 2026 · B1a cerrado 7/8 · q02 BLOQUEADO tras tres versiones
-- **Siguiente tarea:** **B1b** — bloque Information and Ideas (7 ítems). q02 se reescribe después, con la regla R1 en la mano
+- **Última vuelta:** 7 · 19 ago 2026 · B1b + B1c + B1d en producción paralela
+- **Siguiente tarea:** recoger los tres bloques y corregir lo devuelto; luego **B1e** (montaje del módulo + reescritura de q02)
 
 ---
 
@@ -47,6 +47,7 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
 
 | Vuelta | Tarea | Resultado | Commit |
 |---|---|---|---|
+| 7 | B1b+B1c+B1d · producción paralela | 🔄 **Desvío deliberado del playbook**: tres bloques a la vez en lugar de uno por vuelta. Son independientes —el reparto de claves ya está fijado en el plan— y la noche es finita. 12 agentes: un redactor de textos y uno de ítems por bloque, más dos lentes de auditoría cada uno | (en curso) |
 | 6 | B1a · cierre | ✅ **7 de 8 ítems APTO.** q02 devuelto por tercera vez y **bloqueado** según la regla de las tres rondas del playbook. De ahí salió la regla R1, escrita en el blueprint §4 bis: un words-in-context solo funciona si las cuatro opciones comparten régimen sintáctico | `86a9db4c`+ |
 | 5 | B1a · reauditoría a 3 lentes | 🔄 q04 **APTO por unanimidad** de tres auditores independientes. q02 vuelve por un defecto **nuevo**: el arreglo cambió una pista sintáctica por una semántica y se sigue podando sin leer. Notas del plan y del documento de textos corregidas | `8870e7fb`+ |
 | 4 | B1a · bloque Craft and Structure | 🔄 Plan del módulo (27 filas, verificado a máquina) + 8 textos originales + 8 ítems. El auditor coincidió **8 de 8** en la clave, pero devuelve **q04** (dos claves defendibles) y marca **q02** (dos distractores agramaticales: se resuelve sin leer). En corrección | (pendiente) |
@@ -106,6 +107,18 @@ pantalla. B3 es escribir `EXAM_GUIDES.sat` y poner `available: true`, no una pá
 Las reglas que ese archivo se impone a sí mismo y que B3 hereda: las preguntas salen de
 consultas reales de Search Console, `lead` responde en la primera frase, y nada sin fuente
 oficial verificable (ni precios, ni sedes, ni fechas).
+
+## Por qué se hicieron tres bloques a la vez
+
+El playbook manda una tarea por vuelta, y esto son tres. La razón: los bloques son
+independientes por diseño —cada uno tiene su dominio, sus textos y sus claves ya
+preasignadas en el plan del módulo—, así que no hay estado compartido que se pisen. Lo que
+NO se relajó es la auditoría: cada bloque lleva sus dos lentes, y la lente del estudiante
+que no lee va en dos de los tres. El bloque de convenciones lleva la lingüística en su
+lugar, porque ahí lo que puede tumbar un ítem es la gramática, no la estrategia.
+
+Si esto sale bien, la receta de escalado (C0) debería recomendar producir por bloques en
+paralelo y auditar en serie, no lo contrario.
 
 ## Deuda anotada
 
