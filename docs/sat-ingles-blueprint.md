@@ -314,6 +314,52 @@ mismo hecho comprobable. Y las dos que lo aprobaron **describían ese mismo hech
 argumento**, dándolo por bueno. Cuando las lentes discrepan, gana el hecho verificable,
 no el recuento de votos.
 
+## 4 ter. Cómo se mide la puerta 6 (y qué salió al medirla en serio)
+
+Durante toda la primera noche, la prueba a ciegas se hizo pidiéndole a un auditor que
+«tapara mentalmente el texto». Eso no es un control: el pasaje seguía en su contexto, y la
+cifra dependía de su disciplina.
+
+`scripts/sat-blind-test.mjs` lo convierte en medición:
+
+```bash
+node scripts/sat-blind-test.mjs --module sat-set-1-m1 --out /tmp/ciego.md   # examen SIN los textos
+node scripts/sat-blind-test.mjs --module sat-set-1-m1 --panel /tmp/panel.json
+```
+
+El panel toma las respuestas de varios solucionadores y devuelve la media **y el desglose
+por ítem**. La media dice si el examen está roto; el desglose dice **cuál** rehacer, que es
+lo único accionable.
+
+### La calibración del 19 ago 2026, y la hipótesis que mató
+
+Se sospechaba que el 64 % que medían los auditores fuese un artefacto: un modelo muy fuerte
+con tiempo ilimitado no es un chico de 17 años con cronómetro. Se comprobó con ocho
+solucionadores sin acceso a los textos.
+
+| Solucionador | Media a ciegas |
+|---|---|
+| Modelo pequeño (5 intentos) | **65,2 %** |
+| Modelo intermedio (3 intentos) | **74,1 %** |
+| **Panel completo** | **68,5 %** |
+
+**La hipótesis era falsa y en la dirección contraria.** No hacía falta un auditor
+sobrehumano: un modelo barato, sin leer un solo texto, acertaba dos de cada tres. Las
+pistas no eran sutiles, eran gruesas.
+
+Desglose: **17 de 27 ítems** los acertaban 6 o más de los 8 solucionadores. Ocho de ellos,
+los 8 de 8 — ítems que no medían absolutamente nada. Por dominio: Information and Ideas
+80 %, Craft and Structure 75 %, Standard English Conventions 62 %, Expression of Ideas 50 %.
+
+**El ítem modelo es `q02`**, el que costó cuatro versiones y llegó a estar bloqueado:
+**0 de 8** lo acertaron sin leer. Cuatro verbos del mismo régimen, misma longitud, y la
+única heurística de forma disponible apunta a un distractor. Es lo que R8 pide, y salió de
+rehacerlo cuatro veces.
+
+**Corolario para el proceso:** la puerta 6 no se audita, se mide. Un panel de ocho
+solucionadores baratos cuesta una fracción de una auditoría y da un número que no admite
+discusión, más la lista exacta de ítems a rehacer.
+
 ## 5. Lo que no se hace, nunca
 
 - **No se copian ítems ni textos oficiales de College Board**, ni traducidos, ni

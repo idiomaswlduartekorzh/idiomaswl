@@ -32,6 +32,7 @@ const val = (f) => (args.includes(f) ? args[args.indexOf(f) + 1] : null)
 const moduleId = val('--module')
 const outPath = val('--out')
 const scoreRaw = val('--score')
+const panelPath = val('--panel')
 const etiqueta = val('--etiqueta') || 'anónimo'
 
 const cache = new Map()
@@ -110,6 +111,37 @@ if (scoreRaw) {
   const fallados = mod.items.map((q, i) => (String(respuestas[i]).trim().toUpperCase() === clave[i] ? q.id : null)).filter(Boolean)
   console.log(`   acertados sin leer: ${fallados.join(' ') || 'ninguno'}\n`)
   process.exit(0)
+}
+
+// ── modo panel: varios solucionadores a la vez, y qué ítem filtra ──
+//
+// Es el modo que importa para trabajar. La media dice si el examen está roto; el desglose
+// por ítem dice CUÁL hay que rehacer, que es lo único accionable. Un ítem que aciertan 8
+// de 8 sin leer no mide nada: es un regalo de puntos que además le miente al estudiante.
+if (panelPath) {
+  const panel = JSON.parse(fs.readFileSync(panelPath, 'utf8'))
+  const metaById = new Map((mod.meta || []).map((m) => [m.id, m]))
+  const n = panel.length
+  console.log(`\n🕶  Prueba a ciegas · ${moduleId} · panel de ${n} solucionadores\n`)
+
+  const pcts = panel.map((p) => {
+    const ok = p.respuestas.filter((r, i) => String(r).toUpperCase() === clave[i]).length
+    console.log(`   ${String(p.etiqueta).padEnd(12)} ${ok}/${clave.length} = ${((100 * ok) / clave.length).toFixed(1)} %`)
+    return (100 * ok) / clave.length
+  })
+  const media = pcts.reduce((a, b) => a + b, 0) / n
+  console.log(`\n   media ${media.toFixed(1)} %  ·  azar 25 %  ·  techo 35 %  →  ${media <= 35 ? '✅' : `❌ +${(media - 35).toFixed(1)}`}\n`)
+
+  const filtran = []
+  console.log(`   ítem   dom   clave   aciertan sin leer`)
+  mod.items.forEach((q, i) => {
+    const ok = panel.filter((p) => String(p.respuestas[i]).toUpperCase() === clave[i]).length
+    const marca = ok >= Math.ceil(0.75 * n) ? '🔴 filtra' : ok >= Math.ceil(0.5 * n) ? '🟠' : '✅'
+    if (ok >= Math.ceil(0.75 * n)) filtran.push(q.id)
+    console.log(`   ${q.id.padEnd(6)} ${(metaById.get(q.id)?.domain || '?').padEnd(5)} ${clave[i].padEnd(7)} ${String(ok).padStart(2)}/${n}  ${marca}`)
+  })
+  console.log(`\n   filtran (≥75 % del panel acierta sin leer): ${filtran.length}/${mod.items.length} → ${filtran.join(' ') || 'ninguno'}\n`)
+  process.exit(filtran.length || media > 35 ? 1 : 0)
 }
 
 // ── modo extraer ──

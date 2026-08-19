@@ -5,8 +5,8 @@ Las reglas están en `docs/sat-loop-nocturno.md`; los parámetros y umbrales, en
 `docs/sat-ingles-blueprint.md`.
 
 - **Rama:** `feat/red-agentes-sat-ingles`
-- **Última vuelta:** 11 · 19 ago 2026 · David decidió las tres vías. Loop reanudado
-- **Siguiente tarea:** **D1** (calibración, en curso), luego **D2** bloque por bloque
+- **Última vuelta:** 12 · 19 ago 2026 · D1 hecha: la calibración mató la hipótesis. D2 (R8) en curso
+- **Siguiente tarea:** recoger el rediseño R8 y **volver a medir con el panel** (no auditar: medir)
 
 ---
 
@@ -35,7 +35,7 @@ Se coge la primera sin marcar. Una por vuelta.
 
 Sustituyen a la fase C. David aprobó las tres vías y pidió hacerlas en este orden.
 
-- [ ] **D1 · Recalibrar la prueba a ciegas.** `scripts/sat-blind-test.mjs` extrae el examen
+- [x] **D1 · Recalibrar la prueba a ciegas.** `scripts/sat-blind-test.mjs` extrae el examen
   **sin los textos** y puntúa las respuestas. Antes esto era una promesa («tapa el texto
   mentalmente»); ahora es un control: el solucionador no puede verlos. Se responde con
   haiku y con sonnet para separar el defecto real del auditor sobrehumano.
@@ -60,6 +60,7 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
 
 | Vuelta | Tarea | Resultado | Commit |
 |---|---|---|---|
+| 12 | D1 · calibración de la puerta 6 | ✅ **La hipótesis del auditor sobrehumano era falsa, y al revés**: el modelo pequeño saca 65 % y el intermedio 74 % sin leer los textos (panel 68,5 %). Las pistas son gruesas, no sutiles. **17 de 27 ítems filtran**; 8 de ellos los aciertan 8 de 8. El mejor ítem del examen es q02, el que costó cuatro versiones: 0 de 8 | `feat(sat): un modelo barato…` |
 | 10 | Reauditoría de los cuatro bloques | ⚠️ **Ninguno APTO.** Prueba a ciegas: CS 70 % · II 64 % · SEC 55 % · EOI 45 %, contra un techo de 35 %. Las 27 claves siguen confirmadas. q02 pasó por fin a la cuarta versión. Salieron R6, R7 y R8, y un fallo más del guardián: la puerta 3 no contaba los empates (11 % → 37 %) | `fa581882` |
 | 9 | Montaje del M1 + dos fallos del guardián | ✅ `sat-set-1-m1.ts` compone los cuatro bloques. Al montarlo salieron dos bugs del propio guardián: no sabía leer módulos compuestos, y —el grave— **daba luz verde cuando no podía cargar**. Arreglados y probados. El módulo pasa las once puertas mecánicas; lo único que lo deja NO APTO es que no hay acta firmada | `514c4e3f` |
 | 8 | R4 y R5 + guardián de dos caras | ✅ La puerta 3 pasa a medir las dos caras y se prueba con un defecto sembrado. Sobre el material real: II 57 % (tumbado), CS 38 %, SEC 0 %, EOI 0 % | `feat(sat): la puerta que arreglamos…` |
