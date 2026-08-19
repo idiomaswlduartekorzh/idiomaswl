@@ -11,6 +11,52 @@ import type { SatItemMeta } from '../module-types'
  * Cuando un ítem pedía otra letra se movió el contenido de las opciones, nunca la clave:
  * el reparto se defiende a nivel de módulo y aquí solo se ve un cuarto del examen.
  *
+ * CUARTA VERSIÓN, solo de q09, q10, q13 y q15 (19 ago 2026). Tras R8 el panel de ocho
+ * solucionadores los seguía acertando a ciegas —6, 7, 7 y 7 de 8—, mientras q11, q12 y q14
+ * de este mismo bloque caían a 2, 2 y 5. La forma ya estaba igualada en los cuatro: lo que
+ * quedaba delatando la clave era el REGISTRO (R9) y, en dos de ellos, el enunciado. Textos
+ * y claves siguen intactos; cambian `options`, `razones` y, en q10 y q15, el enunciado.
+ *
+ * - q09: solo la clave llevaba conector inferencial («therefore») y solo ella era una
+ *   redefinición general del instrumento; las otras tres eran un detalle (la madera y las
+ *   herramientas del cartel) y una observación (los niños). Ahora las cuatro redefinen el
+ *   instrumento con un giro del mismo calibre —obra de las manos que lo hicieron, mueble
+ *   hasta que suena, cosa que unas manos mantienen usable, oficio antes que objeto— y A y C
+ *   son imagen especular: las mismas manos, construyendo o manteniendo.
+ * - q10: se resolvía con conocimiento previo y no con el texto. «Sílice» es la respuesta de
+ *   manual a qué decide el estilo eruptivo, y era la única opción que lo nombraba en el
+ *   magma. El enunciado pregunta ahora por qué un mismo conducto cambia de estilo —lo que el
+ *   texto contesta en su última oración— y las cuatro opciones son factores que cualquiera
+ *   con nociones de volcanología encuentra igual de creíbles: rigidez variable, sílice
+ *   variable, gas acumulado en el reposo, roca de encima debilitada. Saber volcanología ya
+ *   no separa la clave; separa solo haber leído la última oración.
+ * - q13: el enunciado da la afirmación («solo una de las dos especies es sensible») y antes
+ *   solo la clave describía una serie que se mueve junto a otra plana, de modo que la lógica
+ *   de la afirmación bastaba sin mirar la tabla. Ahora las cuatro describen ese mismo patrón
+ *   y difieren únicamente en los números: banda naranja 28-33 o 28-31, columnas
+ *   intercambiadas, y el 22 % puesto en la fila que no es.
+ * - q15: la clave era la única que afirmaba un cambio respecto de hoy, y una inferencia
+ *   paleoclimática se adivina por ahí. Ahora las cuatro afirman un cambio —más cálido, más
+ *   húmedo, cálido a rachas, una vía abierta y luego cerrada— y se reparten dos a dos la
+ *   misma premisa sobre la profundidad del deshielo. El enunciado ya no dice «cuando la
+ *   columna estaba creciendo»: da las fechas y deja que sea el lector quien las una con el
+ *   depósito.
+ *
+ * Dos divergencias con la nota del plan, deliberadas y para que el auditor no las tome por
+ * descuido. En q10 el plan pedía una idea central que hubiera que sintetizar; sintetizada,
+ * la clave era «el sílice decide el estilo eruptivo», que es la respuesta de manual y se
+ * marca sin leer, así que el ítem pregunta ahora por el detalle de la última oración —sigue
+ * dentro de `central-ideas-details`—. En q13 el plan pedía un distractor con datos bien
+ * leídos que no respondieran a la pregunta; ese distractor describe por fuerza las dos
+ * series moviéndose, lo que contradice a simple vista la afirmación del enunciado y se poda
+ * sin mirar la tabla: era una de las tres podas que dejaban la clave sola. Se sustituye por
+ * tres lecturas que sí sostienen la afirmación y solo la tabla desmiente.
+ *
+ * Medido tras esta cuarta versión sobre los siete ítems del bloque: la clave no es la opción
+ * más larga en ninguno (puerta 2), no es la que más repite palabras del texto en ninguno y
+ * es la que menos solo en q12, por empate (puerta 3, 14,3 %, máximo 40 %). En q13 las cuatro
+ * opciones empatan en solape y quedan a un carácter de longitud entre sí.
+ *
  * TERCERA VERSIÓN de las opciones (19 ago 2026). La segunda no bastó: extraído el examen
  * sin los textos, ocho solucionadores respondieron a ciegas y este bloque se cayó entero
  * —q09, q12 y q13 acertados 8 de 8; q13 y q15, 6 y 7 de 8—, contra el techo del 35 % de la
@@ -90,10 +136,10 @@ export const items: MCQQuestion[] = [
       "The Ferreira Museum owns four hundred stringed instruments, but its most visited room holds no display case. It is a workshop behind a glass wall. Inside, two repairers mend the museum's violins and guitars while visitors watch from a bench. A sign names the tools on the table and the wood being used that week. Children stay longest, and many come back a second time. The director explains the room in one line: an instrument is not an object to be looked at, but something kept alive by hands, and the public should see the hands.",
     text: 'Which choice best states the main idea of the text?',
     options: [
-      'The museum shows the repair work because it holds that an instrument carries the hands that first built it, and that those hands are what the visitors come to see.',
-      'The museum shows the repair work because it holds that an instrument is the wood and the tools inside it, and that a visitor should be shown both of them.',
-      'The museum shows the repair work because it holds that an instrument is a thing hands keep usable, and that the public should therefore see those hands at work.',
-      'The museum shows the repair work because it holds that an instrument is a trade before it is an object, and that the young keep a trade alive by watching.',
+      'For the museum, an instrument is the work of the hands that built it, and so the public should be shown the wood and the tools, not the object alone.',
+      'For the museum, an instrument is only furniture until someone plays it, and so the public should be shown violins that sound, not violins that sit.',
+      'For the museum, an instrument is a thing that hands keep usable, and so the public should be shown those hands at work, not the object alone.',
+      'For the museum, an instrument is a trade before it is an object, and so the public should be shown a trade it might take up, not one it has lost.',
     ],
     answer: 2,
   },
@@ -103,12 +149,12 @@ export const items: MCQQuestion[] = [
     part: 1,
     stimulus:
       'The same volcano can erupt in ways that look unrelated. Sometimes lava runs downhill in slow sheets for weeks; other times ash is thrown kilometers upward in a single afternoon. Neither behavior depends on how much magma is involved. Magma rich in silica is stiff, so the gas bubbles that form inside it cannot rise, and pressure grows until the rock above gives way. Magma poor in silica is runnier, and the same gas leaks out steadily as the magma climbs. Temperature and dissolved water change how stiff a magma is, which is why the output of one vent can shift from one style to the other between eruptions.',
-    text: 'Which choice best states the main idea of the text?',
+    text: 'According to the text, why can a single vent erupt in both styles?',
     options: [
-      'Whether an eruption runs or bursts depends on how much silica the magma carries, since the stiffer it gets the less easily its gas bubbles rise.',
-      'Whether an eruption runs or bursts depends on how much silica the rock above holds, since a stiff lid pens the gas in until the pressure breaks it.',
-      'Whether an eruption runs or bursts depends on how much gas the magma carries, since the bubbles stiffen a body that would otherwise run downhill.',
-      'Whether an eruption runs or bursts depends on how much magma the vent delivers, since a large body cools on the way up and stiffens before it arrives.',
+      'The magma reaching it is not equally stiff each time: heat and dissolved water leave one batch runnier than the one before.',
+      'The magma reaching it does not carry equal silica each time: one batch comes up rich in it and stiff, the next poor in it and runnier.',
+      'The magma reaching it does not give up its gas at one rate: gas gathers while the vent rests and then leaves all at once.',
+      'The rock above it is not equally sound each time: every eruption cracks it further, and the next one meets a weaker lid.',
     ],
     answer: 0,
   },
@@ -150,10 +196,10 @@ export const items: MCQQuestion[] = [
       'Lichens have no roots: whatever they need reaches them from the air, and so does whatever the air is carrying. That is why surveyors treat them as a gauge of local pollution. To measure the effect of vehicle exhaust, a team recorded the share of stone wall covered by two lichens—a bushy gray species and a flat orange one—at four distances from a busy highway. Each figure below is the average of ten walls.\n\nDistance from highway · bushy gray cover · flat orange cover\n20 m · 3% · 28%\n100 m · 8% · 33%\n400 m · 22% · 31%\n1,000 m · 30% · 29%',
     text: 'A researcher claims that only one of the two lichens is sensitive to vehicle exhaust. Which choice best describes data from the study that support that claim?',
     options: [
-      'Bushy gray cover rose from 3% at 20 m to 30% at 1,000 m, while flat orange cover never left the 28-33% band at any distance.',
-      'Bushy gray cover rose from 3% at 20 m to 8% at 100 m, while flat orange cover rose from 28% to 33% over that same stretch.',
-      'Bushy gray cover rose from 3% at 20 m to 30% at 1,000 m, while flat orange cover fell from 33% to 28% over that same stretch.',
-      'Bushy gray cover rose from 3% at 20 m to 30% at 1,000 m, while flat orange cover stayed above bushy gray at all four distances.',
+      'Bushy gray cover rose from 3% at 20 m to 30% at 1,000 m, while flat orange cover stayed between 28% and 33% at all four distances.',
+      'Bushy gray cover rose from 3% at 20 m to 30% at 1,000 m, while flat orange cover stayed between 28% and 31% at all four distances.',
+      'Flat orange cover rose from 28% at 20 m to 33% at 1,000 m, while bushy gray cover stayed between 3% and 8% at all four distances.',
+      'Bushy gray cover rose from 3% at 20 m to 22% at 1,000 m, while flat orange cover stayed between 28% and 33% at all four distances.',
     ],
     answer: 0,
   },
@@ -178,12 +224,12 @@ export const items: MCQQuestion[] = [
     part: 1,
     stimulus:
       'A stalagmite grows only while water moves through the rock above it, dissolving carbonate on the way down and leaving a thin film of it behind at every drip; ground that stays frozen the year round shuts the process off, and the column stops. Caves in the far north of Siberia therefore hold an unusual archive. In one of them, at a latitude where the soil today never thaws below the first meter, a team dated the growth bands of a single column and found that deposition ran without interruption from about 402,000 to 381,000 years ago, and then ceased for the hundred thousand years that followed.',
-    text: 'Based on the text, what can most reasonably be inferred about the ground above the cave during the interval when the column was growing?',
+    text: 'Based on the text, what can most reasonably be inferred about the site from about 402,000 to 381,000 years ago?',
     options: [
-      'It stayed frozen the year round, and the water that fed the column ran in cracks below the frozen layer.',
-      'It thawed below the first meter for part of each year, which makes the site milder then than it is today.',
-      'It thawed no deeper than it does now, and the water came from rain heavier than any the region sees today.',
-      'It thawed in scattered warm years only, which makes the interval a run of milder spells broken by frozen ones.',
+      'The ground thawed below the first meter in scattered centuries, so those millennia were a run of warm spells with frozen ones in between.',
+      'The ground thawed below the first meter for part of each year, so those millennia were warmer at that latitude than the present is.',
+      'The ground thawed no deeper than the first meter, so those millennia were wetter at that latitude than the present is, rather than warmer.',
+      'The ground thawed no deeper than the first meter, so those millennia opened a way down through the rock that has since closed again.',
     ],
     answer: 1,
   },
@@ -198,13 +244,13 @@ export const meta: SatItemMeta[] = [
     tema: 'humanidades',
     razones: {
       A:
-        'Se queda con la palabra del cierre —«hands»— y le pone el dueño equivocado: las manos que el director manda mirar son las dos que están reparando ahora, no las del artesano que construyó el instrumento. Quien la elige identifica bien el término del que depende la idea central y falla en de quién es.',
+        'Le pone a las manos el dueño equivocado y asciende el cartel a tesis. Las manos que el director manda mirar son las dos que están reparando esta semana, no las del artesano que construyó la pieza —en esa sala no se fabrica nada, se remienda—, y que el cartel nombre las herramientas y la madera de la semana es un recurso de la sala, no lo que el museo sostiene que un instrumento es. Es la opción de quien acierta el término del que depende la idea central y falla en de quién es.',
       B:
-        'Asciende el cartel a tesis del museo. Que la sala nombre las herramientas y la madera de la semana es un recurso suyo, y en ninguna línea dice el texto que un instrumento sea la madera y las herramientas que lleva dentro. Es el error de quien se ancla en el único dato concreto del párrafo.',
+        'Trae de fuera la idea de que un instrumento existe para sonar. En el texto nadie toca: los dos reparadores cosen los violines y las guitarras, y el director pide que el público vea, no que oiga. Atrae a quien lee «not an object to be looked at» como una queja contra el silencio de las vitrinas y termina la frase por su cuenta.',
       C:
         'Correcta: es el cierre del director dicho con otras palabras y con sus dos mitades —qué es un instrumento y qué se sigue de ello para el público—: «an instrument is not an object to be looked at, but something kept alive by hands, and the public should see the hands».',
       D:
-        'Convierte una observación en la razón de ser de la sala. El texto anota que los niños se quedan más rato y que muchos vuelven, pero no dice que la sala exista para que el oficio se transmita, ni llama oficio al instrumento: el oficio es de los dos reparadores, no de la pieza.',
+        'Convierte una observación en la razón de ser de la sala. El texto anota que los niños se quedan más rato y que muchos vuelven, pero en ninguna línea el museo se propone que el visitante herede el oficio: lo que pide del público es que mire, no que releve a los dos que están en la mesa.',
     },
     fuenteHecho:
       'Práctica museística real y de dominio general (talleres de restauración a la vista del público); museo, colección y cita del director inventados.',
@@ -217,13 +263,13 @@ export const meta: SatItemMeta[] = [
     tema: 'ciencia',
     razones: {
       A:
-        'Correcta: es la síntesis que ninguna oración da entera. El sílice endurece el magma, el magma rígido no deja subir las burbujas y la presión acaba rompiendo la roca; con poco sílice el mismo gas se escapa según el magma sube. Las dos ramas del texto caen bajo una sola propiedad, y es esta.',
+        'Correcta: es lo que contesta la última oración, y es la única que responde a la pregunta que se hace. La rigidez no es un rasgo fijo del magma de un conducto —la temperatura y el agua disuelta la cambian—, «which is why the output of one vent can shift from one style to the other between eruptions».',
       B:
-        'Traslada la rigidez del magma a la roca que tiene encima. El texto solo llama rígido al magma rico en sílice, y la roca aparece como lo que cede al final de una de las dos ramas, nunca como la propiedad que decide el estilo. Es el error de quien retiene «stiff» y pierde de qué se dice.',
+        'Contesta con el mecanismo general del pasaje a la única pregunta que el pasaje contesta de otro modo, y por eso es el gemelo de la clave: dice lo mismo sobre la rigidez y le pone otra causa. El sílice explica por qué un magma es rígido y otro no, pero el texto no dice en ninguna línea que la carga de sílice de un mismo conducto varíe de una erupción a otra: lo que atribuye a esa variación son la temperatura y el agua disuelta. Es el error de quien reconoce la explicación principal y no comprueba de qué es explicación.',
       C:
-        'Cambia la movilidad del gas por su cantidad. El texto pone «the same gas» en los dos casos: lo que varía no es cuánto gas hay, sino si puede salir, y la rigidez que aquí se atribuye a las burbujas el texto se la atribuye al sílice. Es el error de quien trae de fuera que más gas equivale a más explosión.',
+        'Cambia la movilidad del gas por su acumulación. El texto pone «the same gas» en las dos ramas: lo que decide es si puede salir del magma, no cuánto se haya juntado mientras el conducto estaba callado, y el reposo entre erupciones no aparece en el texto. Es el error de quien trae de fuera que cuanto más espera un volcán, peor sale.',
       D:
-        'Cuelga del volumen un factor que el texto sí reconoce. La temperatura cambia la rigidez —lo dice la última oración—, pero el tamaño del cuerpo de magma no decide nada: «Neither behavior depends on how much magma is involved». Es el error de quien acepta media línea verdadera y no comprueba de qué la cuelga.',
+        'Traslada la explicación a la roca de encima. Esa roca sale una sola vez y como lo que cede al final de una de las dos ramas, nunca como la propiedad que decide el estilo, y el texto no dice que se debilite de una erupción a la siguiente. Es el error de quien retiene el último eslabón del mecanismo y lo toma por la causa.',
     },
     fuenteHecho:
       'Volcanología básica de dominio público (la viscosidad del magma, gobernada por el contenido de sílice, decide el estilo eruptivo); sin volcán, fecha ni serie concretos.',
@@ -273,13 +319,13 @@ export const meta: SatItemMeta[] = [
     tema: 'ciencia',
     razones: {
       A:
-        'Correcta: es la única lectura que recorre las cuatro distancias y encuentra una sola serie que responda. El gris multiplica por diez su cobertura al alejarse (3 % → 30 %) y el naranja no sale de la banda 28-33 % en ninguna fila; sin ese contraste completo no hay manera de señalar a una especie sola.',
+        'Correcta: las dos mitades resisten la tabla entera. El gris multiplica por diez su cobertura al alejarse (3 % a los 20 m, 30 % a los 1.000) y el naranja se queda dentro de 28-33 % en las cuatro filas —28, 33, 31, 29—, que es exactamente el contraste que hace falta para señalar a una sola especie.',
       B:
-        'Los cuatro números son correctos y aun así no responden: entre los 20 y los 100 m suben las dos series, de modo que ese tramo no distingue una especie de la otra. Es el error de quien se queda en las dos primeras filas y da la tabla por leída.',
+        'La banda naranja está mal por una fila. El naranja llega al 33 % a los 100 m, así que no cabe en 28-31 %. Es el error de quien comprueba la primera, la tercera y la cuarta fila —28, 31, 29—, ve que el margen es estrecho y da la columna por leída sin volver a la segunda.',
       C:
-        'La mitad gris es exacta y la naranja va al revés: de los 20 a los 1.000 m el naranja recorre 28, 33, 31 y 29, así que ni empieza en 33 ni termina en 28. Quien la elige toma el máximo y el mínimo de la columna y los ordena para fabricar la tendencia espejo que espera encontrar, porque da por hecho que si una serie sube la otra tiene que bajar.',
+        'Cambia las dos columnas de sitio. Ni el naranja sube al alejarse (28, 33, 31 y 29, y termina en 29, no en 33) ni el gris se queda en 3-8 % (a los 400 m ya va por 22 %). Atrae a quien da por supuesto que la especie que más superficie cubre es la que está respondiendo al tráfico, y lee la tabla con esa expectativa puesta.',
       D:
-        'Empieza bien y añade una comparación que la tabla desmiente: a 1.000 m el gris cubre el 30 % y el naranja el 29 %, así que el naranja no está por encima en las cuatro distancias. Es el error de quien deja de comprobar en cuanto el patrón le parece claro y no llega a la última fila.',
+        'El 22 % existe, pero es la fila de los 400 m, no la de los 1.000, donde el gris llega al 30 %. Todo lo demás de la opción es exacto, y por eso solo la descarta quien lee la columna gris hasta el final en vez de dar el salto de la primera fila a la última.',
     },
     fuenteHecho:
       'Uso real de los líquenes como bioindicadores de calidad del aire; distancias, número de muros y los ocho porcentajes son inventados, y las especies van sin nombre científico.',
@@ -310,13 +356,13 @@ export const meta: SatItemMeta[] = [
     tema: 'ciencia',
     razones: {
       A:
-        'Aplica la regla al revés y luego le busca una salida. Si el suelo hubiera seguido helado todo el año el proceso estaría cortado —«ground that stays frozen the year round shuts the process off»— y no habría 21.000 años de depósito seguido; la ruta por grietas bajo la capa helada no está en el texto, se añade para tapar la contradicción.',
+        'Rompe la continuidad que el texto afirma. El depósito corrió «without interruption» durante veintiún mil años, y un siglo de suelo helado lo habría cortado: dentro del intervalo no caben tramos congelados. Atrae a quien ve «growth bands» y toma las bandas por episodios sueltos de crecimiento.',
       B:
-        'Correcta: sale de cruzar la regla de la primera oración —sin agua líquida que atraviese la roca no hay depósito— con el caso de la tercera, una cueva cuyo suelo hoy no se deshiela por debajo del primer metro y que sin embargo registró depósito continuo.',
+        'Correcta: sale de cruzar la regla de la primera oración —sin agua líquida que atraviese la roca no hay depósito— con el caso de la tercera, una cueva cuyo suelo hoy no se deshiela por debajo del primer metro y que sin embargo registró depósito continuo. Para que el agua bajara, el deshielo tuvo que llegar más hondo que hoy.',
       C:
-        'Deja el suelo como está hoy y busca el agua en otra parte. Con el deshielo detenido en el primer metro la lluvia no atraviesa la roca por mucho que aumente, y la precipitación no aparece en ninguna línea del texto: es el error de quien cambia la variable más fácil de imaginar.',
+        'Cambia la temperatura por la lluvia. Con el deshielo detenido en el primer metro el agua no atraviesa la roca por mucha que caiga —«ground that stays frozen the year round shuts the process off»—, y la precipitación no aparece en ninguna línea del texto. Es el error de quien conserva el frío del sitio y mueve la variable más fácil de imaginar.',
       D:
-        'Rompe la continuidad que el texto afirma: el depósito corrió «without interruption» de hace 402.000 a 381.000 años, así que el deshielo no fue cosa de años sueltos. Atrae a quien ve «growth bands» y toma las bandas por episodios separados de crecimiento.',
+        'Busca una cañería donde el texto pone un clima. El crecimiento está condicionado a que el agua atraviese la roca de encima, y el suelo helado es el interruptor del proceso, así que una vía abierta a través de terreno permanentemente helado es justo lo que la primera oración excluye; ni esa vía ni su cierre posterior están en el texto.',
     },
     fuenteHecho:
       'Método real de paleoclimatología (los espeleotemas solo crecen con agua de infiltración líquida, y su crecimiento indica retroceso del permafrost); cueva, equipo y fechas inventados.',

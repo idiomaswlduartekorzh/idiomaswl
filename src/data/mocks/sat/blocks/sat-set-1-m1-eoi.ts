@@ -35,9 +35,9 @@ import type { SatItemMeta } from '../module-types'
  * R4 (reparto del solape léxico): la clave de q23 repite vocabulario de las notas a
  * propósito —13 palabras de contenido, frente a 16, 12 y 11 de los distractores— para que
  * el bloque no premie la estrategia de contar coincidencias y quedarse con la opción que
- * menos tiene. En q24 las cuatro opciones repiten exactamente las mismas once palabras de
- * las notas, así que el ítem no cuenta para ninguna de las dos caras de la puerta 3;
- * antes contaba para la cara baja.
+ * menos tiene. En q24 la clave repite once palabras de las notas y los distractores nueve,
+ * doce y diez: queda estrictamente entre el máximo y el mínimo, así que el ítem no cuenta
+ * para ninguna de las dos caras de la puerta 3; antes contaba para la cara baja.
  *
  * Segunda corrección de agosto de 2026, tras medir la prueba a ciegas con panel
  * (`scripts/sat-blind-test.mjs`): ocho solucionadores que solo veían enunciados y opciones
@@ -56,6 +56,30 @@ import type { SatItemMeta } from '../module-types'
  *   causal —con la flecha invertida: presenta lo que sigue como razón de lo anterior— y el
  *   contraste lo lleva «However», que es la opción con más tirón para quien responde a
  *   ciegas.
+ *
+ * Tercera corrección de agosto de 2026 (R9), tras el segundo panel: q26 bajó a 3 de 8, pero
+ * **q24 subió de 7 a 8 de 8**. Con las cuatro opciones ya iguales en forma, longitud y
+ * alcance, lo que seguía delatando la clave era que las tres falsas llevaban la falsedad
+ * puesta por fuera: una intercambiaba las cifras —y el saber previo sabe que trasplantar
+ * haces adultos rinde más que sembrar—, otra metía un 12 % que no cuadraba con el 31 % de
+ * las demás, y la tercera colgaba el «three years later» de la segunda mitad. La clave era
+ * la única frase bien construida del juego, y eso se ve sin las notas.
+ *
+ * Ahora las cuatro dan 46 al trasplante y 31 a la siembra, a los tres años, en el mismo
+ * molde de dos cláusulas coordinadas, con 12 caracteres entre la más corta y la más larga y
+ * el mismo verbo repetido en las dos mitades. Lo único que las separa es **qué miden esos
+ * porcentajes**: lecho marino cubierto (clave), pradera arrasada que se devolvió, parcelas
+ * en las que el método prendió, densidad alcanzada frente a la pradera sana. Las cuatro
+ * magnitudes son medidas de restauración que un ecólogo publicaría; cuál de ellas está en
+ * las notas no se puede saber sin las notas, que es justamente lo que pide R9. Ninguna
+ * opción se cae por su propio dibujo (R7) y ninguna es podable por saber previo: las cuatro
+ * dan la victoria al trasplante.
+ *
+ * El enunciado también filtraba y se recortó. Decía «compare how successful the two
+ * restoration methods were»: al nombrar el éxito, apuntaba al par de cifras de resultado y
+ * dejaba fuera cualquier otra magnitud. Ahora dice solo «compare the two restoration
+ * methods», que no anticipa en qué consiste la comparación buscada. La clave sigue siendo
+ * única: las otras tres son falsas por las notas, no peores que la clave.
  */
 
 export const items: MCQQuestion[] = [
@@ -80,12 +104,12 @@ export const items: MCQQuestion[] = [
     part: 1,
     stimulus:
       'While researching a topic, a student has taken the following notes:\n\n• Seagrass meadows are beds of flowering plants that grow underwater and shelter young fish.\n• A storm destroyed most of the meadow in one shallow bay, and researchers tried two ways of restoring it.\n• Method 1: divers transplanted adult shoots taken from a healthy meadow nearby.\n• Method 2: volunteers scattered seeds gathered from flowering plants.\n• After three years, transplanted plots covered 46 percent of the seabed and seeded plots covered 31 percent.\n• Transplanting took about four times as many working hours per plot as seeding.',
-    text: 'The student wants to compare how successful the two restoration methods were. Which choice most effectively uses relevant information from the notes to accomplish this goal?',
+    text: 'The student wants to compare the two restoration methods. Which choice most effectively uses relevant information from the notes to accomplish this goal?',
     options: [
-      'Transplanted plots covered 46 percent of the seabed after three years, while seeded plots covered 31 percent.',
-      'Seeded plots covered 46 percent of the seabed after three years, while transplanted plots covered 31 percent.',
-      'Transplanted plots covered 46 percent of the seabed after three years, while seeded plots covered 12 percent.',
-      'Transplanted plots covered 46 percent of the seabed, while seeded plots covered 31 percent three years later.',
+      'After three years, the plots restored by transplanting covered 46 percent of the seabed, and the plots restored by seeding covered 31 percent.',
+      'After three years, transplanting had restored 46 percent of the meadow that the storm destroyed, and seeding had restored 31 percent.',
+      'After three years, the transplanted adult shoots had taken hold in 46 percent of the plots, and the scattered seeds had taken hold in 31 percent.',
+      'After three years, the transplanted plots were 46 percent as dense as the healthy meadow, and the seeded plots were 31 percent as dense.',
     ],
     answer: 0,
   },
@@ -164,13 +188,13 @@ export const meta: SatItemMeta[] = [
     tema: 'ciencia',
     razones: {
       A:
-        'Correcta: es la única de las cuatro que reproduce sin tocar nada el único par de datos comparables de las notas —46 % al trasplante y 31 % a la siembra (nota 5)—, cada método con su cifra, medidos ambos con la misma vara (cobertura del lecho marino) y en el mismo corte (a los tres años).',
+        'Correcta: las notas miden una sola cosa en los dos métodos, con la misma vara y en el mismo corte —cuánto lecho marino llegaron a cubrir las parcelas de cada uno a los tres años, 46 % y 31 % (nota 5)—, y eso es exactamente lo que esta opción afirma, sin añadirle nada. Las otras tres trasladan ese mismo par de cifras a una magnitud que ninguna viñeta registra.',
       B:
-        'Falsa: intercambia las dos cifras de la nota 5 y hace ganar a la siembra. El camino es doble y real: reconstruir de memoria qué número era de quién, o suponer que ganó la siembra porque la nota 6 la presenta como la que exige cuatro veces menos trabajo, y de ahí concluir que el método barato fue además el mejor.',
+        'Falsa por el denominador. El 46 % y el 31 % son lo que cubrieron las parcelas de cada método (nota 5), no la parte de la pradera arrasada que cada método devolvió: las notas no dan ninguna cifra de la bahía entera, y la nota 2 dice que la tormenta se llevó «most of the meadow», no el 77 % que saldría de sumar estas dos. Es el camino de quien lee el resultado de unas parcelas como si fuera el balance de la bahía y convierte una cobertura en un porcentaje de recuperación.',
       C:
-        'Falsa por la cifra de la siembra: el 12 % no está en ninguna viñeta. Sale de trasladar la proporción de la nota 6 —el trasplante costó unas cuatro veces más horas por parcela— al resultado, como si cuatro veces más trabajo tuviera que dar cuatro veces más lecho cubierto. Confunde lo que cuesta un método con lo que consigue.',
+        'Falsa por la unidad de medida. La nota 5 da el porcentaje de lecho marino que quedó cubierto, no la proporción de parcelas en las que el método prendió: cubrir el 46 % del fondo no es haber prendido en 46 de cada 100 parcelas, y una misma cobertura media es compatible con cualquier reparto entre parcelas. Es el error de quien convierte una medida de superficie en la tasa de éxito por parcela con que suelen resumirse los ensayos, y de paso atribuye a los haces y a las semillas un resultado que se midió sobre el fondo.',
       D:
-        'Falsa por el momento de la medición: la nota 5 da las dos cifras en el mismo corte, a los tres años, y aquí la de la siembra se separa tres años de la del trasplante, que además queda sin fecha. Es lo que escribe quien coteja los números y no las fechas, o quien da por hecho que la siembra, al ser más lenta, se midió después: acaba comparando dos mediciones que nunca se tomaron a la vez.',
+        'Falsa por el punto de comparación. Las notas enfrentan un método con el otro, no cada método con la pradera sana: esa pradera aparece solo como el sitio de donde los buzos sacaron los haces (nota 3), y ninguna viñeta mide densidad —lo medido es cuánto lecho quedó cubierto—. Es el camino de quien espera que un estudio de restauración lleve una pradera de referencia y da por hecho que las dos cifras están expresadas respecto a ella.',
     },
     fuenteHecho:
       'Hecho libre de restauración de praderas marinas: trasplante de haces adultos frente a siembra de semillas, con mayor prendimiento y mucho más trabajo por superficie en el trasplante. Bahía, tormenta, años y porcentajes inventados.',

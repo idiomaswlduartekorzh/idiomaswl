@@ -64,12 +64,12 @@ export const items: MCQQuestion[] = [
     part: 1,
     stimulus:
       "Critics who praise the economy of Hanne Lindqvist's late woodcuts often mistake what they are praising. Her final prints contain a fraction of the lines of the crowded harbor scenes that made her name: a gull, a mast, and the edge of a wave may be all that remains, and yet the scene reads at once. This was not a matter of working faster. Her notebooks record that one late print occupied her for four months, most of that time spent deciding which of thirty marks to cut away. She would not state what the eye could be trusted to supply.",
-    text: 'As used in the text, what does the word "economy" most nearly mean?',
+    text: 'As used in the text, what does the word "state" most nearly mean?',
     options: [
-      'Dispatch',
-      'Proportion',
-      'Restraint',
-      'Commerce',
+      'Declare',
+      'Concede',
+      'Render',
+      'Report',
     ],
     answer: 2,
   },
@@ -79,12 +79,12 @@ export const items: MCQQuestion[] = [
     part: 1,
     stimulus:
       'Amara had planned the walk to the lighthouse the way she planned everything, on paper and well in advance. She knew the distance, the hours of the tide, and the time the keeper unlocked the door for visitors. She had even packed a second pair of socks. Then the path ended at a stream that no map of hers showed. For a long minute she stood on the bank with the tide table in her hand, and the paper told her nothing at all. She put it away and looked, for the first time that morning, at the land itself.',
-    text: 'Which choice best states the function of the sentence "Then the path ended at a stream that no map of hers showed." in the text as a whole?',
+    text: 'Which choice best states the function of the sentence "She had even packed a second pair of socks." in the text?',
     options: [
-      'It marks the point where everything Amara planned on paper stops being of use.',
-      "It marks the point where Amara's walk to the lighthouse comes to an end.",
-      'It explains why Amara had packed a second pair of socks before setting out.',
-      'It reveals the mistake Amara made in reading the tide table she carried in her hand.',
+      "It adds to Amara's preparations one she packed rather than looked up.",
+      'It shows Amara providing in advance for the crossing that lay ahead.',
+      'It admits a first note of doubt into a morning Amara had settled in advance.',
+      "It turns Amara's planning from the hours of the day to the weather.",
     ],
     answer: 0,
   },
@@ -124,12 +124,12 @@ export const items: MCQQuestion[] = [
     part: 1,
     stimulus:
       'Text 1\n\nSongbirds in cities sing at a higher pitch than members of the same species in nearby woodland. Traffic noise sits at low frequencies, so a song pitched above it carries through the din unmasked. Having tracked one urban population for thirty years, researchers argue that the shift is an adaptation: males whose songs rise clear of the traffic are the ones that attract mates, and the population has changed accordingly.\n\nText 2\n\nThat city birds sing higher is not in doubt; the explanation is. Birds raise their volume in noise, and in songbirds pitch and loudness come from the same set of muscles, so lifting one lifts the other. The urban songs on record are also the loudest, and their added pitch is about what that mechanical link predicts. Nothing needs to evolve to produce a change a bird can make within an afternoon.',
-    text: 'Based on the texts, how would the author of Text 2 most likely respond to the claim in Text 1 that the higher pitch of urban song is an adaptation?',
+    text: 'Based on the texts, how would the author of Text 2 most likely respond to the explanation offered in Text 1 for the higher pitch of urban song?',
     options: [
-      'By accepting the pattern but crediting the higher pitch to selection acting on loudness.',
-      'By accepting the pattern but crediting the higher pitch to young birds copying loud neighbors.',
-      'By accepting the pattern but crediting the higher pitch to louder singing in noise.',
-      'By accepting the pattern but crediting the higher pitch to bias in which songs were recorded.',
+      'By accepting the pattern but crediting the higher pitch to birds lifting their songs clear of the traffic.',
+      'By accepting the pattern but crediting the higher pitch to young birds copying the loudest singers nearby.',
+      'By accepting the pattern but crediting the higher pitch to the extra volume that noise draws from them.',
+      'By accepting the pattern but crediting the higher pitch to the loudest songs being the ones on record.',
     ],
     answer: 2,
   },
@@ -201,13 +201,13 @@ export const meta: SatItemMeta[] = [
     tema: 'humanidades',
     razones: {
       A:
-        'Lee economy como la prontitud con que se ejecuta la obra, la acepción de economía de esfuerzo; el texto la desmiente con todas las letras —«This was not a matter of working faster»— y añade los cuatro meses que le ocupó una sola estampa.',
+        'Aplica la acepción de diccionario, la de anunciar o afirmar en voz alta. Pide una proposición detrás del verbo, y lo que va detrás es «what the eye could be trusted to supply», las marcas que la artista retira: en el pasaje nadie declara nada, se decide «which of thirty marks to cut away».',
       B:
-        'Acepción crítica real de economy, la disposición y el equilibrio de las partes de una obra, y la refuerza la lista «a gull, a mast, and the edge of a wave»; pero el texto cuenta cuántas de las treinta marcas retira, no dónde reparte las que deja.',
+        'Trae el pleito de la primera oración —los críticos que «mistake what they are praising»— y convierte la negativa en una postura de debate: no les daría la razón. Conceder exige disputa e interlocutor, y esta oración no mira a los críticos, mira la plancha.',
       C:
-        'Correcta: de treinta marcas retira las que el ojo puede suplir y la escena aún «reads at once»; «She would not state what the eye could be trusted to supply» nombra exactamente eso, lo que la artista se niega a poner.',
+        'Correcta: state nombra aquí el acto de ponerlo en la estampa. De treinta marcas retira las que «the eye could be trusted to supply», y con «a gull, a mast, and the edge of a wave» la escena todavía «reads at once»: lo que se niega a hacer es representar eso que el ojo pone solo.',
       D:
-        'Toma la acepción más frecuente del sustantivo suelto —la economía como comercio, el mercado de las estampas—, que además es la primera que ofrece el español «economía». En el pasaje no hay precios ni compradores: solo marcas sobre la plancha y la decisión de retirarlas.',
+        'Le pasa al verbo el trabajo que en el pasaje hacen los cuadernos —«Her notebooks record that…»—, el de dar cuenta de un hecho. Report supone destinatario y noticia que transmitir; aquí no hay dato que comunicar, sino un trazo que se talla o se deja fuera.',
     },
     fuenteHecho:
       'Ficción original; la grabadora Hanne Lindqvist es inventada y el vocabulario de la xilografía se explica dentro del texto.',
@@ -220,13 +220,13 @@ export const meta: SatItemMeta[] = [
     tema: 'literatura',
     razones: {
       A:
-        'Correcta: es el giro. Antes, tres oraciones de preparación —la distancia, las horas de la marea, los calcetines de repuesto—; a partir de esta, «the paper told her nothing at all» y Amara mira «the land itself».',
+        'Correcta: la oración cierra el inventario de lo que Amara había dispuesto y le añade algo de otra especie. Lo anterior lo sabe —«She knew the distance, the hours of the tide, and the time the keeper unlocked the door for visitors»—; los calcetines no se saben, se empacan, y con ellos la previsión pasa del dato al equipaje.',
       B:
-        'Toma «the path ended» al pie de la letra y da por terminada la caminata. Lo que se acaba es el sendero, no el paseo: Amara guarda el papel y se pone a mirar el terreno, que es lo que hace quien sigue buscando por dónde pasar.',
+        'Lee la oración hacia adelante y la vuelve anuncio del arroyo: los calcetines serían para el vadeo. El texto lo impide dos veces: el arroyo no salía en ningún mapa suyo, así que no pudo preverlo, y nadie cruza nada —guarda el papel y se pone a mirar el terreno—.',
       C:
-        'Confunde función con causa, y además la busca hacia atrás. Los calcetines de repuesto están en el texto, pero se empacaron antes y esta oración no explica por qué: la pregunta es qué hace la oración, no qué motivó lo anterior.',
+        'Toma el «even» por una grieta en la seguridad de Amara y le atribuye una duda. Hasta el arroyo el texto la muestra fiándose del papel sin reservas, «on paper and well in advance»; la única vacilación llega después, «for a long minute», ya en la orilla.',
       D:
-        'Traslada el fallo a Amara: habría leído mal la tabla de mareas. No hay ningún error de lectura —lo que falta es el arroyo en el mapa—, y por eso el papel, correcto y todo, deja de servirle.',
+        'Salta de los calcetines al clima, como si la previsión cambiara de asunto. En el pasaje no hay tiempo atmosférico de ninguna clase: lo que se enumera antes son la distancia, las horas de la marea y la hora en que el farero abre la puerta.',
     },
     fuenteHecho:
       'Ficción original; la tabla de mareas queda explicada dentro del texto.',
@@ -277,13 +277,13 @@ export const meta: SatItemMeta[] = [
     tema: 'ciencia',
     razones: {
       A:
-        'Conserva la selección natural y solo le cambia el rasgo: actuaría sobre el volumen en vez de sobre el tono. El texto 2 cierra negando toda evolución —«Nothing needs to evolve to produce a change a bird can make within an afternoon»—, sea cual sea el rasgo.',
+        'Se queda con la lógica del texto 1 —un canto por encima del tráfico «carries through the din unmasked»— y la convierte en un ajuste deliberado del ave: subiría el tono para librarse del ruido. El texto 2 no dice que apunte más alto, dice que sube el volumen y que el tono va detrás, «so lifting one lifts the other»: el tono no se busca, se arrastra.',
       B:
-        'Sustituye el mecanismo por aprendizaje cultural —los jóvenes copiarían a los vecinos más ruidosos—, que es la explicación que el estudiante trae de fuera. El texto 2 no habla de imitación sino de anatomía: «pitch and loudness come from the same set of muscles».',
+        'Sustituye el mecanismo por aprendizaje: los jóvenes copiarían a los vecinos más ruidosos. Es la explicación cultural que el estudiante trae de fuera; el texto 2 se apoya en anatomía —«pitch and loudness come from the same set of muscles»— y no menciona imitación ni modelo del que aprender.',
       C:
-        'Correcta: concede el hecho —«That city birds sing higher is not in doubt»— y lo atribuye a que en el ruido las aves cantan más fuerte; como tono y volumen salen de la misma musculatura, el tono sube con el volumen, y el aumento medido «is about what that mechanical link predicts».',
+        'Correcta: concede el hecho —«That city birds sing higher is not in doubt»— y lo carga al volumen. En el ruido las aves cantan más fuerte, y como tono y volumen salen de la misma musculatura el tono sube con él; por eso «the urban songs on record are also the loudest» y el tono añadido «is about what that mechanical link predicts».',
       D:
-        'Se agarra a «The urban songs on record» y convierte las grabaciones en un sesgo de muestreo. El texto 2 las usa como prueba a favor de su propia explicación —son las más fuertes y su tono es el que predice el vínculo mecánico—, no como un artefacto que invalide la medición.',
+        'Convierte en sesgo de muestreo lo que el texto 2 usa como prueba a favor: las grabaciones urbanas le sirven precisamente porque son las más fuertes y su tono es el que predice el vínculo mecánico. Si fueran un artefacto de la muestra, se quedaría sin el dato que sostiene su explicación.',
     },
     fuenteHecho:
       'Debate científico real: canto agudo urbano como adaptación frente al efecto Lombard; treinta años de seguimiento y redacción originales.',
