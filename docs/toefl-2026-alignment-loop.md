@@ -3646,3 +3646,36 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
 - Resultado: queda cerrado el último gate no-audio. La siguiente unidad permitida es
   preparar para aprobación separada el manifiesto exacto, voces, muestra y costo de
   los 400 audios; **no** autoriza todavía generarlos ni publicar en producción.
+
+### Paquete de decisión de los 400 audios — 2026-08-20
+
+- `scripts/build-toefl-missing-audio-manifest.mjs` deriva el inventario directamente
+  de los guiones canónicos y de las 80 preguntas Interview. Su modo normal sólo audita;
+  `--write` reconstruye el TSV y no llama proveedores ni lee secretos.
+- El manifiesto `2026-08-20.v1` contiene 400 IDs/rutas únicos, 68.890 caracteres
+  facturables, 11.190 palabras y 460 segmentos TTS; su SHA-256 es
+  `a11ed6a310f316c622df9741fbb6616d3bce5ecff7bd252ecb46e985fa20fd94`.
+- Se propone un piloto de diez archivos que cubre las diez voces de casting. Con las
+  tarifas públicas ElevenAPI del 20 de agosto, cuesta aproximadamente USD 0,29 en
+  Multilingual v2; una pasada completa, USD 6,89. Se recomienda un techo de USD 25
+  antes de impuestos para piloto, lote y correcciones selectivas.
+- Evidencia y gate completo:
+  `docs/toefl-2026-missing-audio-release-plan-2026-08-20.md` y
+  `docs/toefl-2026-missing-audio-manifest-2026-08-20.tsv`.
+- La consulta sólo lectura de la cuenta encontró 80 voces y fijó diez candidatas 1×.
+  La clave se usó sólo en memoria, no se mostró, copió ni versionó. No se llamó el
+  endpoint TTS ni se generó/modificó audio.
+- La cuenta Creator tiene 30.171 créditos disponibles y no admite extensión automática:
+  el piloto de 2.845 cabe; el lote de 68.890 en Multilingual v2 no. El saldo reinicia
+  el 5 de septiembre de 2026 a las 6:13 p. m. COT. Flash también supera el saldo actual
+  por 4.274 créditos antes del piloto.
+- Estado: manifiesto, costo y voces propuestas listos; falta la aprobación explícita del
+  piloto. El lote completo requerirá reinicio/upgrade además de una segunda aprobación.
+- `scripts/generate-toefl-2026-audio.mjs` quedó preparado con factura seca por defecto,
+  casting propuesto sin aprobación, hash obligatorio, techo USD, doble confirmación
+  para 400 archivos y destino temporal fuera de `public/`. La prueba negativa rechazó
+  `--sample --generate`
+  sin aprobación antes de leer secretos o abrir la red.
+- Verificación posterior: manifiesto 400/400, factura seca, ESLint dirigido, catálogo
+  465, TypeScript y guardianes fijos Listening/Speaking/sesión PASS. Con hash y techo
+  correctos, la prueba negativa todavía se detuvo en el estado humano de las diez voces.

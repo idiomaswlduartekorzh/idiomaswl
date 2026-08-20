@@ -224,7 +224,7 @@ se conservan como evidencia.
 | Rama contra `origin/main` | CERRADO | `origin/main` `a6707877` está incorporado en `50d1ba6f`; 0 commits detrás, catálogo, TypeScript, build y guardianes TOEFL PASS. |
 | Build del preview Vercel | CERRADO | `dpl_Ch1VKomZPfWwTLSk8xCa75RNLaD2`, commit `1dd7b7e`, está `READY`; 1.834/1.834 páginas y Set 1 autenticado 200. El alias protegido apunta al artefacto. |
 | Revisión funcional y accesible del preview | CERRADO | Espaciado CTW y VoiceOver T16/T17 aprobados por el owner. Playwright confirmó Listening 1→2, reproductor reiniciado y omisión explícita 6→7 sin reproducir audio. La protección SSO no se debilitó. |
-| Aprobación de audio | ABIERTO | Manifiesto exacto, voces, muestra y costo; requiere autorización explícita. |
+| Aprobación de audio | ABIERTO | Manifiesto/costo listos y diez voces 1× propuestas: 400 archivos, 68.890 caracteres; piloto 10 archivos/2.845 créditos cabe. La cuenta sólo tiene 30.171 créditos y reinicia 2026-09-05 18:13 COT, por lo que el lote completo no cabe todavía. Falta autorización explícita del piloto. |
 | Generación y QA de audio | BLOQUEADO | Crear sólo el lote aprobado y luego revisar técnica, texto/voz y experiencia. |
 | Producción | BLOQUEADO | Requiere cierre de todos los gates anteriores y autorización separada. |
 

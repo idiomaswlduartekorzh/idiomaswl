@@ -1,0 +1,90 @@
+{
+  "manifest_sha256": "a11ed6a310f316c622df9741fbb6616d3bce5ecff7bd252ecb46e985fa20fd94",
+  "model_id": "eleven_multilingual_v2",
+  "api_price_usd_per_1000_characters": 0.1,
+  "target": {
+    "intermediate_output_format": "mp3_44100_128",
+    "final_sample_rate_hz": 44100,
+    "final_channels": 1,
+    "final_bitrate": "64k",
+    "silence_between_conversation_turns_seconds": 0.35
+  },
+  "voice_settings": {
+    "stability": 0.55,
+    "similarity_boost": 0.75,
+    "style": 0.1,
+    "use_speaker_boost": true
+  },
+  "profiles": {
+    "woman_a": {
+      "voice_id": "cgSgspJ2msm6clMCkdW9",
+      "voice_name": "Jessica - Playful, Bright, Warm",
+      "credit_multiplier": 1,
+      "purpose": "Choose y Repeat en sets impares",
+      "approval": "proposed_pending_owner_pilot_approval"
+    },
+    "woman_b": {
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "voice_name": "Sarah - Mature, Reassuring, Confident",
+      "credit_multiplier": 1,
+      "purpose": "Choose y Repeat en sets pares",
+      "approval": "proposed_pending_owner_pilot_approval"
+    },
+    "man_a": {
+      "voice_id": "bIHbv24MWmeRgasZH58o",
+      "voice_name": "Will - Relaxed Optimist",
+      "credit_multiplier": 1,
+      "purpose": "Choose y Repeat en sets impares",
+      "approval": "proposed_pending_owner_pilot_approval"
+    },
+    "man_b": {
+      "voice_id": "iP95p4xoKVk53GoZ742B",
+      "voice_name": "Chris - Charming, Down-to-Earth",
+      "credit_multiplier": 1,
+      "purpose": "Choose y Repeat en sets pares",
+      "approval": "proposed_pending_owner_pilot_approval"
+    },
+    "student_woman": {
+      "voice_id": "PBjLN8WJmwHEGB1u1UzI",
+      "voice_name": "WL en · Maya",
+      "credit_multiplier": 1,
+      "purpose": "Student en Conversation de sets impares",
+      "approval": "proposed_pending_owner_pilot_approval"
+    },
+    "student_man": {
+      "voice_id": "mWRBtRP92mUXZzi4RZ0Y",
+      "voice_name": "WL en · Leo",
+      "credit_multiplier": 1,
+      "purpose": "Student en Conversation de sets pares",
+      "approval": "proposed_pending_owner_pilot_approval"
+    },
+    "staff": {
+      "voice_id": "cjVigY5qzO86Huf0OWal",
+      "voice_name": "Eric - Smooth, Trustworthy",
+      "credit_multiplier": 1,
+      "purpose": "Staff, adviser, coordinator, librarian y technician",
+      "approval": "proposed_pending_owner_pilot_approval"
+    },
+    "announcer": {
+      "voice_id": "onwK4e9ZLuTAKqWW03F9",
+      "voice_name": "Daniel - Steady Broadcaster",
+      "credit_multiplier": 1,
+      "purpose": "Announcement",
+      "approval": "proposed_pending_owner_pilot_approval"
+    },
+    "professor": {
+      "voice_id": "XrExE9yKIg1WjnnlVkGX",
+      "voice_name": "Matilda - Knowledgable, Professional",
+      "credit_multiplier": 1,
+      "purpose": "Professor e instructor académico",
+      "approval": "proposed_pending_owner_pilot_approval"
+    },
+    "interviewer": {
+      "voice_id": "SAz9YHcvj6GT2YYXdXww",
+      "voice_name": "River - Relaxed, Neutral, Informative",
+      "credit_multiplier": 1,
+      "purpose": "Take an Interview",
+      "approval": "proposed_pending_owner_pilot_approval"
+    }
+  }
+}
