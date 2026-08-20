@@ -35,6 +35,13 @@ export const providers = {
   gemini: {
     key:      process.env.GEMINI_API_KEY ?? '',
     model:    'gemini-flash-latest',
+    /**
+     * Respaldo con visión y JSON estructurado. La cuota gratuita de Gemini se
+     * aplica por modelo, así que este segundo Flash mantiene Task 1 disponible
+     * cuando el alias principal agota su cupo diario. No usar aquí motores de
+     * solo texto: Task Achievement exige contrastar el ensayo con la gráfica.
+     */
+    fallbackModels: ['gemini-flash-lite-latest'],
     endpoint: 'https://generativelanguage.googleapis.com/v1beta/models',
     /** Free tier: 1.500 req/día, 10 req/min. Ver docs/blueprint-labs-ia.md */
     freeTierRpd: 1500,
