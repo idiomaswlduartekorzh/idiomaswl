@@ -3503,3 +3503,31 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
   correo local de macOS no reconocido por el equipo. La corrección operativa es crear
   el siguiente commit con el correo del owner ya presente en el historial; no se
   desactiva la protección de Vercel ni se publica producción.
+
+### Reconciliación con `main` y preview protegido — 2026-08-20
+
+- El worktree temporal anterior había sido eliminado por macOS. La rama estaba segura
+  en `origin`, se reconstruyó en `/private/tmp/idiomaswl-toefl-2026` y no se usó el
+  worktree principal, que contiene trabajo ajeno sin terminar.
+- Se incorporó el `origin/main` canónico `16b80b03` en el merge `b32d25da`. El único
+  conflicto estaba en Complete the Words: se conservó la interacción 2026 correcta de
+  escribir letras faltantes y no el banco estático de escoger una palabra.
+- `main` añadió un MP3 de otro producto. Cinco guardianes que rechazaban cualquier
+  cambio bajo `public/audio/` se acotaron a `public/audio/toefl/`. No se bajó ningún
+  umbral: los audios TOEFL siguen inmutables y el guardián global conserva las 24
+  series y los 480 MP3 de escucha ajenos a TOEFL.
+- Después del merge pasaron catálogo, TypeScript, ESLint dirigido, los ocho guardianes
+  TOEFL y 44/44 pruebas unitarias. No quedaron conflictos ni marcadores de merge.
+- El push del merge creó el preview Vercel
+  `dpl_DhWVcV8HmU2uBUVcbevP92mTEbjy` para el commit `b32d25da`. El `npm run build`
+  exacto pasó con Turbopack y Node 24: compilación, TypeScript y 1.822/1.822 páginas
+  estáticas. El despliegue quedó `READY` en el alias protegido
+  `https://idiomaswl-git-codex-toefl-7012a5-idiomaswlduartekorzhs-projects.vercel.app`.
+- La protección Vercel SSO permanece activa y una petición anónima recibe redirección
+  al login. Por ello, `READY` cierra el gate técnico del preview, pero no reemplaza la
+  revisión humana: José David Duarte Silva debe entrar con su cuenta, recorrer el
+  simulacro y aprobar VoiceOver T16/T17.
+- Producción y `main` no se tocaron. Ningún audio fue abierto, reproducido, transcrito,
+  generado ni modificado. El siguiente gate es la aprobación humana del preview; sólo
+  después se presenta para autorización separada el manifiesto, voces, muestra y costo
+  de los 400 audios faltantes.

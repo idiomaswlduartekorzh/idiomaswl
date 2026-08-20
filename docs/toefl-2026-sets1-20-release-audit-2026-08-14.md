@@ -2,10 +2,12 @@
 
 Fecha: 14 de agosto de 2026
 
+Revalidación de rama y preview: 20 de agosto de 2026
+
 Owner y firma de derechos: José David Duarte Silva
 
-Dictamen: **apto para continuar hacia un preview pre-audio; no apto todavía para
-producción ni para venderse como producto terminado**.
+Dictamen actualizado: **preview técnico pre-audio listo para revisión humana; no apto
+todavía para producción ni para venderse como producto terminado**.
 
 ## Qué significa el dictamen
 
@@ -101,7 +103,7 @@ se conservan como evidencia.
 - Speaking fijo: checker PASS y unit 2/2;
 - sesión fija: checker PASS y unit 3/3;
 - CTW 8/8, Reading 8/8, Build 9/9 y Writing 8/8;
-- TypeScript PASS, ESLint dirigido PASS y `git diff --check` PASS;
+- TypeScript PASS, ESLint dirigido PASS y diff dirigido TOEFL sin errores;
 - build Webpack de producción PASS, 1.365/1.365 rutas. El `npm run build` exacto
   ejecutó primero todos los guardianes y después Turbopack rechazó únicamente el
   symlink externo de `node_modules` propio de este worktree temporal; no reportó una
@@ -109,6 +111,17 @@ se conservan como evidencia.
 - smoke HTML del build: 20/20 rutas PASS;
 - guardianes globales PASS: catálogo 465, escritura 480, 24 series y 480 MP3 de
   práctica auditiva ajenos a TOEFL preservados;
+- después de incorporar `origin/main` `16b80b03`, los ocho guardianes TOEFL y sus 44
+  pruebas unitarias volvieron a pasar. Los guardianes de inmutabilidad de audio se
+  limitaron correctamente a `public/audio/toefl/`: siguen bloqueando cualquier cambio
+  de audio TOEFL, pero no confunden un MP3 nuevo de otro producto traído por `main` con
+  una regresión TOEFL;
+- el preview Vercel del merge `b32d25da` ejecutó el `npm run build` exacto con
+  Turbopack y Node 24: guardianes PASS, compilación PASS, TypeScript PASS y
+  1.822/1.822 páginas estáticas generadas. El despliegue
+  `dpl_DhWVcV8HmU2uBUVcbevP92mTEbjy` quedó `READY` y asociado al alias protegido de
+  la rama. Su manifiesto de outputs contiene la ruta
+  `examenes/[exam]/practica/[mockId]` usada por los veinte sets;
 - ningún audio fue abierto, reproducido, transcrito, generado ni modificado.
 
 ## Gates para declarar “producto terminado”
@@ -119,12 +132,15 @@ se conservan como evidencia.
 | Runner, clocks y resultados honestos | CERRADO | Pruebas y build pasan. |
 | Producción local de las 20 rutas | CERRADO | Smoke 20/20 pasa. |
 | VoiceOver T16/T17 | ABIERTO | Revisión humana del owner en Build, Email y Discussion. |
-| Rama contra `origin/main` | CERRADO | `origin/main` `189897da` es ancestro; 0 commits pendientes, catálogo y TypeScript PASS, build Webpack PASS. |
-| Preview Vercel | ABIERTO | El primer intento fue bloqueado antes de build por un correo local no reconocido en la firma Git; reintentar con la identidad ya usada por el owner en el repositorio. |
+| Rama contra `origin/main` | CERRADO | `origin/main` `16b80b03` está incorporado en `b32d25da`; 0 commits detrás, catálogo, TypeScript y guardianes TOEFL PASS. |
+| Build del preview Vercel | CERRADO | `dpl_DhWVcV8HmU2uBUVcbevP92mTEbjy` está `READY`; build exacto PASS y alias protegido asignado. |
+| Revisión humana del preview | ABIERTO | El owner debe entrar con su cuenta Vercel, recorrer el simulacro y aprobar T16/T17 con VoiceOver. La protección SSO no se debilitó. |
 | Aprobación de audio | ABIERTO | Manifiesto exacto, voces, muestra y costo; requiere autorización explícita. |
 | Generación y QA de audio | BLOQUEADO | Crear sólo el lote aprobado y luego revisar técnica, texto/voz y experiencia. |
 | Producción | BLOQUEADO | Requiere cierre de todos los gates anteriores y autorización separada. |
 
-Conclusión: los 20 simulacros están **listos para el siguiente paso, que es el preview
-pre-audio en Vercel**. Todavía no están listos para venderse o desplegarse en producción
-como producto terminado.
+Conclusión: los 20 simulacros están **desplegados en un preview técnico pre-audio listo
+para revisión del owner**. Todavía no están listos para venderse o desplegarse en
+producción como producto terminado: faltan la aprobación humana del preview y de
+VoiceOver T16/T17, y después el gate separado de manifiesto, voces, muestra, costo,
+generación y QA de los 400 audios.
