@@ -5,8 +5,8 @@ Las reglas están en `docs/sat-loop-nocturno.md`; los parámetros y umbrales, en
 `docs/sat-ingles-blueprint.md`.
 
 - **Rama:** `feat/red-agentes-sat-ingles`
-- **Última vuelta:** 33 · 20 ago 2026 · **Espinazo terminado (6 páginas) + guardián del clúster.** Encontró cinco fallos en su primera pasada
-- **Siguiente tarea:** E8 · artículo de blog «qué puntaje de SAT necesitas, por tipo de universidad»
+- **Última vuelta:** 34 · 20 ago 2026 · **Nueve páginas en el clúster.** Las ramas se movieron del blog al espinazo, y E10 se aplaza por falta de fuente
+- **Siguiente tarea:** cierre de la Fase E — enlazar el clúster desde el hub `/examenes/sat` y desde `/examenes`
 
 ---
 
@@ -79,12 +79,12 @@ Espinazo, en `/examenes/sat/guia/<slug>`:
 - [x] **E6** · `expression-of-ideas`
 - [x] **E7** · `como-estudiar-sat-desde-cero` — plan por semanas
 
-Ramas, en `/blog/<slug>`:
+Ramas — **movidas al espinazo el 20 ago 2026**, ver el porqué en el plan:
 
-- [ ] **E8** · Qué puntaje de SAT necesitas, por tipo de universidad
-- [ ] **E9** · El SAT desde Colombia: sedes, fechas, inscripción
-- [ ] **E10** · SAT o ACT: cuál presentar
-- [ ] **E11** · SAT y TOEFL/IELTS: por qué te piden los dos
+- [x] **E8** · `puntaje-sat-universidades`
+- [x] **E9** · `sat-desde-colombia`
+- [ ] **E10** · ⏸️ SAT o ACT — **aplazada**: el ACT cambió de formato y no tenemos sus datos verificados contra `act.org`
+- [x] **E11** · `sat-toefl-ielts-diferencias`
 
 Cierre:
 
@@ -100,6 +100,7 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
 
 | Vuelta | Tarea | Resultado | Commit |
 |---|---|---|---|
+| 34 | E8, E9, E11 | ✅ Nueve páginas en el clúster, las nueve en el sitemap y verificadas sobre el HTML. **Dos decisiones que cambian el plan:** las ramas van al espinazo y no al blog —`blog.ts` tiene trabajo sin commitear de otra sesión, y además concentrar todo bajo `/examenes/sat/` es mejor para un superhub—; y **E10 (SAT o ACT) se aplaza** porque el ACT cambió de formato y no tenemos sus datos verificados. El guardián volvió a cazar dos descripciones pasadas de 155 | (este bloque) |
 | 33 | E7 + E12 + E13 | ✅ Espinazo cerrado: seis páginas. El desglose por dominio del simulacro ya enlaza a la guía de ese dominio —y el mapa vive en `module-types.ts`, no en `satGuides.ts`, para no meter el texto de seis páginas en el paquete del navegador; **comprobado que no viaja**. **El guardián nuevo encontró cinco fallos en su primera pasada**: cinco descripciones pasadas de 155 caracteres que `check:seo-snippets` no mira. Vigila también que el sitemap siga derivando la lista de exámenes | (este bloque) |
 | 32 | E3–E6 · los cuatro dominios | ✅ Las cuatro páginas de dominio, en una sola vuelta porque cada `build` cuesta 5-7 min y compilar cuatro veces lo mismo es tiempo tirado. Verificadas a máquina las cinco del espinazo: preguntas visibles == preguntas en el `FAQPage`, `canonical`, los tres tipos de marcado y **cero enlaces a guías que no existen**. Lo que las separa de la competencia no es el temario sino el procedimiento: tapar las opciones antes de leerlas, la comprobación del *comma splice*, los falsos amigos en las transiciones | (este bloque) |
 | 31 | E2 · página madre del espinazo | ✅ `/examenes/sat/guia/reading-and-writing` con migas, `LearningResource`, `FAQPage` (8 preguntas, las mismas visibles que en el marcado) y `canonical`. **Fallo anterior descubierto al conectarla: la lista de exámenes del sitemap se escribía a mano y no tenía `sat` — el hub existía y Google no lo sabía.** Ahora se deriva de `EXAMS`. Los enlaces del clúster se filtran contra las páginas que existen, así que E3–E7 no generan 404 mientras no estén escritas | (este bloque) |

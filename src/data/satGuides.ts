@@ -153,7 +153,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
         a: 'Sí. Algunos textos vienen acompañados de una tabla, una gráfica de barras o una de líneas, y hay que leerla para responder. Aparecen sobre todo en Information and Ideas, en las preguntas de evidencia cuantitativa. No exigen matemáticas: exigen leer un dato y comprobar si sostiene lo que dice la opción.',
       },
     ],
-    relatedSlugs: ['craft-and-structure', 'information-and-ideas', 'standard-english-conventions', 'expression-of-ideas', 'como-estudiar-sat-desde-cero'],
+    relatedSlugs: ['craft-and-structure', 'information-and-ideas', 'standard-english-conventions', 'expression-of-ideas', 'como-estudiar-sat-desde-cero', 'puntaje-sat-universidades', 'sat-desde-colombia', 'sat-toefl-ielts-diferencias'],
     related: [
       { href: '/examenes/sat/practica/set-1', label: 'Simulacro SAT · un módulo real', note: '27 preguntas en 32 minutos, con los cuatro dominios en la proporción del examen.' },
       { href: '/examenes/sat', label: 'Guía general del SAT', note: 'Qué es, cómo se puntúa, y dónde se consultan fechas y tarifas.' },
@@ -570,6 +570,258 @@ export const SAT_GUIDES: SatGuidePage[] = [
     related: [
       { href: '/examenes/sat/practica/set-1', label: 'Empieza midiendo · simulacro SAT', note: 'Un módulo cronometrado de 27 preguntas con desglose por dominio. Gratis, sin crear cuenta.' },
       { href: '/clases-de-ingles', label: 'Preparación con profesor', note: 'Si tu nivel todavía no llega a B2, esto va antes que el formato.' },
+    ],
+    sources: FUENTES_BASE,
+    checked: '20 de agosto de 2026',
+    checkedISO: '2026-08-20',
+  },
+
+
+  {
+    slug: 'puntaje-sat-universidades',
+    title: 'Qué puntaje de SAT necesitas: cómo leer el de tu universidad',
+    description: 'El SAT no tiene nota de aprobado. Cómo funciona la escala 400-1600, qué es el rango del 50 % central y dónde consultar lo que pide cada universidad.',
+    h1: 'Qué puntaje de SAT necesitas',
+    eyebrow: 'Guía SAT · puntajes',
+    lead:
+      'El <strong>SAT no tiene nota de aprobado</strong>. Se puntúa de <strong>200 a 800 por sección</strong> —Reading and Writing por un lado, Math por otro— y de <strong>400 a 1600</strong> en total, en intervalos de diez puntos; lo que decide si tu puntaje sirve es lo que publica cada universidad, no una cifra universal. Por eso esta página no te da una tabla de números: te enseña a leer la de la universidad que te interesa, que es lo único que no caduca.',
+    sections: [
+      {
+        h: 'Por qué aquí no vas a encontrar una tabla de puntajes',
+        body: [
+          'Casi todas las páginas en español sobre el <strong>SAT</strong> traen una tabla del tipo «Harvard: 1500, universidad estatal: 1200». Ese dato envejece cada año y, peor, se malinterpreta: no es un requisito, es una descripción de a quién admitieron el año pasado. Una cifra vieja te hace descartar universidades a las que sí podrías entrar, o confiarte con otras a las que no.',
+          'Lo que sí es estable es <strong>dónde mirar y cómo leerlo</strong>. Cada universidad estadounidense publica el perfil de puntajes de su clase admitida, y College Board mantiene un buscador —BigFuture— donde ese dato aparece junto al resto de requisitos. Aprender a leer esa ficha te sirve para las diez universidades de tu lista y para el año que presentes.',
+        ],
+      },
+      {
+        h: 'Cómo se lee el rango del 50 % central',
+        body: [
+          'El número que publican las universidades es un <strong>rango, no un mínimo</strong>: suele darse como el intervalo donde cae el 50 % central de los admitidos —lo que en inglés llaman <em>middle 50 %</em>. Si una universidad publica 1250-1430, significa que una cuarta parte de sus admitidos entró por debajo de 1250 y otra cuarta parte por encima de 1430.',
+          'De ahí salen dos lecturas útiles. Estar por debajo del extremo inferior <strong>no te descalifica</strong>: uno de cada cuatro admitidos estaba ahí, normalmente porque algo más en su solicitud pesó más. Y estar por encima del extremo superior <strong>no te admite</strong>: el <strong>SAT</strong> es una parte de la solicitud, junto al promedio del colegio, los ensayos, las cartas y las actividades. Trata el rango como un termómetro de a qué distancia estás, no como una puerta.',
+        ],
+      },
+      {
+        h: 'Test-optional: comprobarlo cada año, sin excepción',
+        body: [
+          'Muchas universidades estadounidenses dejaron de exigir el <strong>SAT</strong> y algunas han vuelto a pedirlo. Es una política que cambia de un ciclo de admisión al siguiente y por universidad, así que <strong>no hay una respuesta general válida</strong>: hay que mirar la página de admisiones de cada una para el ciclo en el que vas a presentar.',
+          'Aun cuando sea opcional, conviene hacer una cuenta antes de decidir. Un puntaje que cae dentro o por encima del rango de la universidad casi siempre suma; uno muy por debajo puede restar, y ahí no enviarlo es razonable. Y para ayuda financiera por mérito o para becas concretas el examen a veces sigue siendo obligatorio aunque la admisión sea opcional: son dos decisiones distintas que suelen leerse como una sola.',
+        ],
+      },
+      {
+        h: 'Cómo llegan tus puntajes a las universidades',
+        body: [
+          'Al inscribirte en el <strong>SAT</strong> puedes elegir a qué universidades y programas de beca enviar el puntaje, y después puedes añadir destinatarios o cambiar los que elegiste. Cada institución tiene un código, y College Board mantiene el buscador para localizarlo.',
+          'Dos cosas conviene decidir antes que después. Primero, si vas a presentarte más de una vez —muchos estudiantes lo hacen dos o tres veces—, piensa qué política sigue cada universidad de tu lista con los intentos múltiples, porque varias combinan lo mejor de cada sección. Segundo, revisa los plazos: el puntaje tiene que llegar dentro del calendario de admisiones de cada universidad, y eso se cuenta hacia atrás desde su fecha límite, no desde el día del examen.',
+        ],
+      },
+      {
+        h: 'Qué significa tu puntaje de Reading and Writing por separado',
+        body: [
+          'El total de 400 a 1600 esconde información que a ti te sirve más que a la universidad. Un 1200 hecho de 500 en Reading and Writing y 700 en Math no es el mismo estudiante que un 1200 de 650 y 550, y el plan de estudio de cada uno es distinto.',
+          'Si tu punto débil es <strong>Reading and Writing</strong>, la buena noticia es que es la sección con la mejora más ordenada: Standard English Conventions son reglas cerradas que se aprenden enteras, Expression of Ideas son dos procedimientos, y solo Craft and Structure exige tiempo largo. Antes de fijarte una meta en la escala 400-1600, mira en qué dominio se te van los puntos — es lo que hace nuestro simulacro.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: '¿Cuál es un buen puntaje de SAT?',
+        a: 'Depende por completo de a dónde apliques: el SAT no tiene nota de aprobado. La escala va de 400 a 1600, con 200 a 800 por sección. Lo que decide es el rango que publica cada universidad para su clase admitida, y ese dato se consulta en la página de admisiones de la universidad o en el buscador BigFuture de College Board.',
+      },
+      {
+        q: '¿Qué significa el rango de puntajes que publica una universidad?',
+        a: 'Es el intervalo donde cae el 50 % central de los admitidos, no un mínimo. Si publica 1250-1430, una cuarta parte de sus admitidos entró por debajo de 1250. Estar por debajo no te descalifica y estar por encima no te admite: el SAT es una parte de la solicitud, junto al promedio, los ensayos y las cartas.',
+      },
+      {
+        q: '¿Sigue siendo obligatorio el SAT en Estados Unidos?',
+        a: 'Depende de la universidad y del año. Muchas dejaron de exigirlo y algunas han vuelto a pedirlo, así que no hay una respuesta general: hay que comprobarlo en la página de admisiones de cada universidad para el ciclo en el que vas a presentar. Y ojo, porque la admisión y las becas por mérito pueden tener políticas distintas.',
+      },
+      {
+        q: 'Si es opcional, ¿me conviene enviar el puntaje?',
+        a: 'Si cae dentro o por encima del rango que publica esa universidad, casi siempre suma. Si queda muy por debajo, no enviarlo es una decisión razonable. Comprueba además si la beca que te interesa lo exige aunque la admisión no lo haga: son dos decisiones distintas que se suelen confundir.',
+      },
+      {
+        q: '¿Qué puntaje de SAT piden para una beca?',
+        a: 'No existe un puntaje que dé una beca por sí solo. Al inscribirte puedes elegir programas de beca a los que enviar tu puntaje, y muchas universidades usan el mismo puntaje para decidir su ayuda por mérito, pero cada convocatoria pone sus requisitos y suelen pesar también el promedio del colegio y la situación económica.',
+      },
+      {
+        q: '¿Importa cómo se reparte mi puntaje entre las dos secciones?',
+        a: 'A ti, mucho. Un 1200 hecho de 500 en Reading and Writing y 700 en Math necesita un plan distinto que un 1200 de 650 y 550. Antes de fijarte una meta en la escala total, mira en qué dominio se te van los puntos dentro de Reading and Writing: es lo que arregla o no arregla tu preparación.',
+      },
+    ],
+    relatedSlugs: ['reading-and-writing', 'como-estudiar-sat-desde-cero', 'sat-desde-colombia'],
+    related: [
+      { href: '/examenes/sat/practica/set-1', label: 'Mide antes de fijarte una meta', note: 'Un módulo cronometrado con desglose por dominio. Gratis y sin crear cuenta.' },
+    ],
+    sources: [
+      ...FUENTES_BASE,
+      { label: 'College Board — Envío de puntajes a universidades y programas de beca', url: 'https://satsuite.collegeboard.org/scores/sending-sat-scores' },
+      { label: 'College Board — BigFuture, buscador de universidades', url: 'https://bigfuture.collegeboard.org/college-search' },
+    ],
+    checked: '20 de agosto de 2026',
+    checkedISO: '2026-08-20',
+  },
+
+  {
+    slug: 'sat-desde-colombia',
+    title: 'El SAT desde Colombia: inscripción, sedes y qué esperar',
+    description: 'Cómo se presenta el SAT desde Colombia: la inscripción internacional, dónde se consultan sedes y fechas, y la exención de pago que no te aplica.',
+    h1: 'Presentar el SAT desde Colombia',
+    eyebrow: 'Guía SAT · Colombia y Latinoamérica',
+    lead:
+      'El <strong>SAT</strong> se presenta en Colombia con normalidad: quien lo hace fuera de Estados Unidos se inscribe en línea como estudiante internacional, y <strong>las fechas de examen son las mismas dentro y fuera del país</strong>. Lo que cambia es lo administrativo — un recargo internacional sobre la inscripción, sedes que abren y cierran de una convocatoria a otra, y unas exenciones de pago que, conviene saberlo antes, no aplican a un colombiano sin ciudadanía estadounidense.',
+    sections: [
+      {
+        h: 'Las fechas son las mismas: el cierre no',
+        body: [
+          'Un dato que sorprende a casi todo el mundo: <strong>College Board publica un único calendario de fechas de examen y aplica dentro y fuera de Estados Unidos</strong>. No hay convocatorias «internacionales» aparte. En su página oficial de fechas y cierres están los sábados de examen del ciclo con su fecha límite de inscripción.',
+          'Lo que sí conviene apuntar es <strong>el cierre, no el día del examen</strong>. Entre uno y otro suelen pasar semanas, y quien planea sobre la fecha del examen se encuentra la inscripción cerrada. No escribimos aquí ninguna fecha concreta a propósito: el calendario se rehace cada año escolar y una cifra vieja en una página como esta te haría planear mal algo que se decide con meses de antelación.',
+        ],
+      },
+      {
+        h: 'La inscripción, paso por paso y sin cifras inventadas',
+        body: [
+          'Quien presenta el <strong>SAT</strong> fuera de Estados Unidos se inscribe <strong>en línea</strong>, a través de la sección de <em>international testing</em> de College Board. El proceso pide crear una cuenta de estudiante, elegir fecha y sede, y ahí mismo puedes seleccionar universidades y programas de beca a los que enviar el puntaje.',
+          'Un punto donde se juega la tranquilidad del día del examen: <strong>el documento de identidad con el que te inscribes tiene que coincidir con el que lleves</strong>, y los requisitos de identificación para quien presenta fuera de Estados Unidos son más estrictos que dentro. Es lo primero que hay que leer en las políticas de examen internacional de College Board, y hay que leerlo antes de pagar, no la semana antes.',
+        ],
+      },
+      {
+        h: 'Lo que cuesta, y las exenciones que no son para ti',
+        body: [
+          'Desde Colombia se paga <strong>la inscripción más un recargo internacional</strong>, y en algunas sedes un cargo adicional del propio centro. No ponemos la cifra porque la tabla oficial lleva impresa su propia fecha de vigencia: se consulta en la página de tarifas internacionales de College Board antes de presupuestar.',
+          'Y hay algo que conviene saber antes de contar con ello. Existen <strong>exenciones de pago</strong> del <strong>SAT</strong>, pero College Board las reserva a estudiantes de grados 11 y 12 con bajos ingresos que estén en Estados Unidos o sus territorios, y a ciudadanos estadounidenses que viven fuera. <strong>Si presentas desde Colombia sin esa ciudadanía, presupuesta la tarifa completa.</strong> Es una de esas cosas que casi nadie dice y que descoloca a una familia a mitad del proceso.',
+        ],
+      },
+      {
+        h: 'Las sedes cambian de una convocatoria a otra',
+        body: [
+          'No publicamos una lista de ciudades colombianas con centro de <strong>SAT</strong>, y no es por pereza: los centros abren y cierran de una convocatoria a la siguiente, así que una lista escrita hoy engaña dentro de seis meses. El buscador oficial de centros de College Board te dice qué sedes hay disponibles <em>para la fecha que te interesa</em>.',
+          'El orden correcto es mirarlo <strong>antes</strong> de elegir fecha, no después. Si la sede más cercana solo abre en dos de las convocatorias del año, eso manda sobre tu calendario de preparación — y si implica viajar, entra en el presupuesto junto con la tarifa.',
+        ],
+      },
+      {
+        h: 'Qué pasa el día del examen',
+        body: [
+          'El <strong>SAT</strong> es digital: se hace en un computador con la aplicación de examen de College Board, y se puede usar el equipo propio o uno del centro. La sección de Reading and Writing son 64 minutos en dos módulos de 32, con un descanso antes de Math. En total, unas 2 horas y 14 minutos de examen.',
+          'Para un estudiante colombiano hay un detalle de preparación que pesa más de lo que parece: el examen está <strong>íntegramente en inglés</strong>, incluidas las instrucciones y la interfaz. Llegar habiendo practicado solo con material explicado en español y no haber visto nunca la pantalla real es un sobresalto evitable. Haz al menos un módulo completo cronometrado, en condiciones parecidas a las del día.',
+        ],
+      },
+      {
+        h: 'Prepararse desde Colombia: qué cambia',
+        body: [
+          'Preparar el <strong>SAT</strong> desde Colombia no es preparar inglés general, y esa confusión cuesta meses. El examen da por hecho que lees en inglés; lo que mide es precisión de lectura, reglas de la norma escrita estadounidense y ritmo. Un estudiante con B2 bien entrenado supera a un C1 que llega en frío.',
+          'Dos cosas afectan específicamente a quien viene del español. Una: el <strong>SAT evalúa la norma escrita estadounidense</strong>, así que usos correctos en inglés británico —los de quien preparó IELTS— cuentan aquí como error. Otra: hay errores de puntuación que en español suenan naturales, como la coma entre el sujeto y su verbo, y el examen los ofrece como opción una y otra vez precisamente por eso.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: '¿Se puede presentar el SAT en Colombia?',
+        a: 'Sí. El SAT se aplica en sedes internacionales, Colombia incluida, y las fechas de examen son las mismas dentro y fuera de Estados Unidos. Qué centros abren cambia de una convocatoria a otra, así que la sede se comprueba en el buscador oficial de centros de College Board para la fecha que te interesa.',
+      },
+      {
+        q: '¿Cuánto cuesta el SAT desde Colombia?',
+        a: 'La inscripción más un recargo internacional, y en algunas sedes un cargo adicional del centro. No escribimos la cifra porque la tabla oficial lleva su propia fecha de vigencia y cambia cada año escolar: se consulta en la página de tarifas internacionales de College Board antes de presupuestar.',
+      },
+      {
+        q: '¿Puedo pedir exención de pago del SAT siendo colombiano?',
+        a: 'Normalmente no. College Board reserva las exenciones a estudiantes de grados 11 y 12 con bajos ingresos que estén en Estados Unidos o sus territorios, y a ciudadanos estadounidenses que viven fuera. Si presentas desde Colombia sin esa ciudadanía, presupuesta la tarifa completa.',
+      },
+      {
+        q: '¿Cómo me inscribo al SAT desde Colombia?',
+        a: 'En línea, en la sección de international testing de College Board: creas una cuenta de estudiante, eliges fecha y sede, y ahí mismo puedes elegir universidades y programas de beca a los que enviar el puntaje. Lee los requisitos de identificación antes de pagar: para quien presenta fuera de Estados Unidos son más estrictos, y el documento tiene que coincidir con el que lleves el día del examen.',
+      },
+      {
+        q: '¿El SAT está en español?',
+        a: 'No. El examen es íntegramente en inglés, incluidas las instrucciones y la interfaz de la aplicación. Existen traducciones de las instrucciones para ciertos contextos escolares en Estados Unidos, pero el examen que presentas desde Colombia está en inglés de principio a fin.',
+      },
+      {
+        q: '¿Con qué antelación debo empezar a prepararme?',
+        a: 'Con tres meses se pueden trabajar los cuatro dominios de Reading and Writing con calma. Con cuatro semanas hay que concentrarse en gramática y puntuación, que son reglas cerradas, y en el ritmo. Y cuenta el cierre de inscripción, no la fecha del examen: entre uno y otro suelen pasar semanas.',
+      },
+    ],
+    relatedSlugs: ['como-estudiar-sat-desde-cero', 'puntaje-sat-universidades', 'reading-and-writing'],
+    related: [
+      { href: '/examenes/sat/practica/set-1', label: 'Simulacro SAT gratis', note: 'Un módulo cronometrado, en inglés y con la presión real de los 32 minutos.' },
+      { href: '/clases-de-ingles', label: 'Preparación con profesor', note: 'Academia colombiana, en Bucaramanga y online.' },
+      { href: '/examenes/toefl', label: 'TOEFL iBT', note: 'El examen de idioma que muchas universidades piden además del SAT.' },
+    ],
+    sources: [
+      ...FUENTES_BASE,
+      { label: 'College Board — Inscripción para quienes presentan fuera de EE. UU.', url: 'https://satsuite.collegeboard.org/sat/registration/international-testing' },
+      { label: 'College Board — Fechas de examen y cierres de inscripción', url: 'https://satsuite.collegeboard.org/sat/dates-deadlines' },
+      { label: 'College Board — Tarifas para quienes presentan fuera de EE. UU.', url: 'https://satsuite.collegeboard.org/sat/registration/international-testing/fees' },
+      { label: 'College Board — Requisitos de exención de pago', url: 'https://satsuite.collegeboard.org/sat/registration/fee-waivers/fee-waiver-eligibility' },
+      { label: 'College Board — Buscador de centros de examen', url: 'https://satsuite.collegeboard.org/sat/test-center-search' },
+    ],
+    checked: '20 de agosto de 2026',
+    checkedISO: '2026-08-20',
+  },
+
+  {
+    slug: 'sat-toefl-ielts-diferencias',
+    title: 'SAT, TOEFL e IELTS: por qué te piden dos exámenes distintos',
+    description: 'El SAT es de admisión; el TOEFL y el IELTS miden tu inglés. Qué mide cada uno, por qué las universidades piden los dos y en qué orden presentarlos.',
+    h1: 'SAT, TOEFL e IELTS: para qué sirve cada uno',
+    eyebrow: 'Guía SAT · comparativa',
+    lead:
+      'Es la confusión más cara del proceso: el <strong>SAT</strong> y el <strong>TOEFL</strong> o el <strong>IELTS</strong> no son alternativas, son exámenes que miden cosas distintas y muchas universidades estadounidenses piden los dos. El SAT es un <strong>examen de admisión</strong> que da por hecho que lees en inglés y compara tu razonamiento con el de estudiantes estadounidenses. El TOEFL y el IELTS son <strong>exámenes de dominio del idioma</strong> para quien no tiene el inglés como lengua materna.',
+    sections: [
+      {
+        h: 'Miden cosas distintas, no niveles distintos',
+        body: [
+          'La diferencia no es de dificultad, es de propósito. El <strong>TOEFL</strong> y el <strong>IELTS</strong> preguntan si tu inglés alcanza para estudiar en inglés: evalúan las cuatro destrezas —comprensión oral y escrita, expresión oral y escrita— y te sitúan en una escala de dominio del idioma.',
+          'El <strong>SAT</strong> no evalúa tu inglés como lengua extranjera. Da por sentado que lees en inglés y a partir de ahí mide otra cosa: precisión de lectura, dominio de la norma escrita estadounidense y razonamiento matemático, comparándote con estudiantes de bachillerato de Estados Unidos. Por eso el SAT no tiene sección de conversación ni de comprensión oral, y por eso un buen puntaje de TOEFL no te garantiza un buen SAT.',
+        ],
+      },
+      {
+        h: 'Por qué una universidad pide los dos',
+        body: [
+          'Porque responden a dos preguntas de admisión distintas. Con el <strong>SAT</strong>, la universidad quiere saber cómo te comparas académicamente con el resto de aspirantes. Con el <strong>TOEFL</strong> o el <strong>IELTS</strong> quiere asegurarse de que podrás seguir las clases, escribir trabajos y participar — incluidas las destrezas orales, que el SAT no toca.',
+          'Algunas universidades contemplan eximir del examen de idioma cuando el puntaje de <strong>Reading and Writing</strong> del SAT es suficientemente alto, o cuando cursaste el bachillerato en inglés. Es una política que varía por universidad y por año, así que se comprueba en la página de admisiones de cada una: es exactamente el tipo de dato que no conviene dar por hecho a partir de lo que le pasó a un conocido.',
+        ],
+      },
+      {
+        h: 'En qué orden conviene presentarlos',
+        body: [
+          'La regla práctica es simple: <strong>primero el idioma, después el SAT</strong>. Si tu nivel de inglés todavía no llega a un B2 sólido, prepararte para el formato del SAT es construir sobre una base que no está — las estrategias de lectura no compensan no entender el texto.',
+          'Cuando el inglés ya está, el orden se invierte en importancia: el <strong>SAT</strong> pide más tiempo de preparación porque hay que aprender un formato, no un idioma, y porque sus fechas son pocas al año, mientras que el TOEFL y el IELTS se presentan con mucha más frecuencia. Y ojo con el detalle que muerde a quien viene del IELTS: el SAT evalúa la <strong>norma escrita estadounidense</strong>, así que usos que en inglés británico son correctos aquí cuentan como error.',
+        ],
+      },
+      {
+        h: 'Lo que se transfiere de un examen a otro, y lo que no',
+        body: [
+          'Sí se transfiere: la velocidad de lectura, el vocabulario académico y la comodidad de hacer un examen largo en inglés. Quien preparó el <strong>IELTS</strong> Academic llega al SAT leyendo mejor que quien no ha preparado nada.',
+          'No se transfiere lo que decide el puntaje. Los cuatro dominios del SAT —vocabulario en contexto, evidencia, convenciones y expresión— tienen tipos de pregunta propios que no aparecen en TOEFL ni IELTS, y el ritmo es muy distinto: un minuto y once segundos por pregunta, con un texto nuevo en cada una. Es la razón por la que estudiantes con IELTS 7.5 sacan puntajes mediocres de SAT en su primer intento: el inglés estaba, el formato no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: '¿El SAT reemplaza al TOEFL o al IELTS?',
+        a: 'No. Son cosas distintas y muchas universidades piden las dos: el SAT como examen de admisión y el TOEFL o el IELTS como prueba de dominio del inglés para estudiantes internacionales. Algunas universidades contemplan eximir del examen de idioma si el puntaje de Reading and Writing es alto, pero eso se comprueba universidad por universidad.',
+      },
+      {
+        q: '¿Qué presento primero, el SAT o el examen de inglés?',
+        a: 'Primero el idioma. Si tu nivel no llega a un B2 sólido, prepararte para el formato del SAT es construir sobre una base que no está. Cuando el inglés ya está, el SAT pide más tiempo de preparación y tiene menos fechas al año, así que conviene reservarle el calendario más largo.',
+      },
+      {
+        q: '¿Es más difícil el SAT o el TOEFL?',
+        a: 'No se pueden comparar así, porque no miden lo mismo. El TOEFL evalúa si tu inglés alcanza para estudiar en inglés, con las cuatro destrezas. El SAT da por hecho que lees en inglés y mide precisión de lectura, norma escrita estadounidense y matemáticas, comparándote con estudiantes de bachillerato de Estados Unidos.',
+      },
+      {
+        q: 'Preparé el IELTS. ¿Me sirve para el SAT?',
+        a: 'En parte. Se transfiere la velocidad de lectura, el vocabulario académico y la resistencia a un examen largo en inglés. No se transfieren los tipos de pregunta del SAT ni su ritmo, y hay una trampa concreta: el SAT evalúa la norma escrita estadounidense, así que usos correctos en inglés británico cuentan aquí como error.',
+      },
+      {
+        q: '¿El SAT tiene sección de speaking o listening?',
+        a: 'No. El SAT digital tiene dos secciones, Reading and Writing y Math, y ninguna evalúa comprensión oral ni expresión oral. Es una de las razones por las que las universidades piden además un examen de idioma a los estudiantes internacionales.',
+      },
+    ],
+    relatedSlugs: ['reading-and-writing', 'puntaje-sat-universidades', 'como-estudiar-sat-desde-cero'],
+    related: [
+      { href: '/examenes/sat/practica/set-1', label: 'Simulacro SAT gratis', note: 'Un módulo cronometrado de 27 preguntas con desglose por dominio.' },
+      { href: '/examenes/toefl', label: 'TOEFL iBT', note: 'Guía y simulacros del examen de idioma más pedido en EE. UU.' },
+      { href: '/examenes/ielts', label: 'IELTS', note: 'La alternativa al TOEFL, aceptada por la mayoría de universidades de EE. UU.' },
     ],
     sources: FUENTES_BASE,
     checked: '20 de agosto de 2026',

@@ -75,14 +75,32 @@ Prioridad = cuánta demanda hay × lo malo que es quien la ocupa hoy.
 | E6 | `expression-of-ideas` | Transiciones y síntesis de notas | **Ninguna** |
 | E7 | `como-estudiar-sat-desde-cero` | Plan de estudio por semanas según de dónde partes | Genérica y de agencia |
 
-### Ramas — `/blog/…`
+### Cambio de ruta, 20 ago 2026 — las ramas también van al espinazo
+
+Estas cuatro iban a ser artículos de blog. **No lo son, por dos razones y una de
+ellas es puramente práctica.**
+
+La práctica: `src/data/blog.ts` tiene trabajo sin commitear de otra sesión —está
+añadiendo los artículos 127 en adelante— y meter mano ahí significaría llevarme su
+trabajo dentro de un commit mío, que es justo lo que prohíbe el playbook. Esperar a
+que termine bloquearía el clúster entero.
+
+La buena: al mirarlo dos veces, tenerlo todo bajo `/examenes/sat/` **concentra los
+enlaces internos en una sola entidad** en vez de repartirlos entre dos secciones del
+sitio. Para un superhub eso es mejor, no peor.
+
+Si más adelante conviene una versión de blog de alguno de estos temas, se escribe
+como artículo aparte, no como copia: dos URLs con el mismo contenido compiten entre
+sí y ganan las dos menos.
+
+### Ramas — ahora en `/examenes/sat/guia/…`
 
 | # | Tema | Por qué | Quién lo ocupa |
 |---|---|---|---|
-| E8 | Qué puntaje de SAT necesitas, por tipo de universidad | Intención altísima, decide la compra | Crimson, con un artículo bueno |
-| E9 | El SAT desde Colombia: sedes, fechas, inscripción | Búsqueda local y nuestra casa | Seeking English, contenido flojo |
-| E10 | SAT o ACT: cuál presentar | Duda universal, no la respondemos en ninguna parte | Agencias |
-| E11 | SAT y TOEFL/IELTS: por qué te piden los dos | **Tenemos los tres exámenes.** Nadie más puede enlazar así | Nadie lo cruza bien |
+| E8 ✅ | `puntaje-sat-universidades` | Intención altísima, decide la compra | Crimson, con un artículo bueno |
+| E9 ✅ | `sat-desde-colombia` | Búsqueda local y nuestra casa | Seeking English, contenido flojo |
+| E10 ⏸️ | SAT o ACT: cuál presentar | **Aplazada a propósito.** El ACT cambió de formato hace poco y no tenemos sus datos verificados contra `act.org`. Escribirla con lo que creemos recordar sería romper la primera regla de esta página | Agencias |
+| E11 ✅ | `sat-toefl-ielts-diferencias` | **Tenemos los tres exámenes.** Nadie más puede enlazar así | Nadie lo cruza bien |
 
 ## 5. Reglas al escribir cualquiera de estas páginas
 
