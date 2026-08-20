@@ -1,0 +1,491 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-b1-sie-hat-nie-fahren-wollen",
+  "status": "published",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Alemán B1"
+  },
+  "slug": "sie-hat-nie-fahren-wollen",
+  "series": {
+    "id": "aleman-b1-lectura-10",
+    "episode": 8,
+    "totalEpisodes": 10,
+    "previousExerciseId": "de-b1-die-tuer-des-schrankes",
+    "nextExerciseId": "de-b1-stell-den-stuhl-ans-fenster"
+  },
+  "classification": {
+    "genre": "relato familiar",
+    "topic": "un carnet de conducir a los sesenta y uno",
+    "intent": "learning",
+    "tags": [
+      "aleman b1",
+      "lectura",
+      "modales en pasado",
+      "Perfekt"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Nunca quiso conducir"
+    },
+    "intro": {
+      "es": "A los sesenta y uno se saca el carnet en secreto, diciendo que va a gimnasia acuática. Lectura de alemán B1 con los modales en pasado."
+    },
+    "mission": {
+      "es": "Averigua la diferencia entre no querer y no haber podido querer."
+    },
+    "targetText": "Meine Mutter hat mit einundsechzig Jahren den Führerschein gemacht. Vorher konnte sie nicht fahren, und das war kein Zufall.\n\nAls sie jung war, durfte sie nicht. Ihr Vater hat gesagt, dafür sei kein Geld da, und dasselbe Geld, das nicht da war, hat zwei Jahre später für den Führerschein ihres Bruders gereicht. Sie hat das nie laut kommentiert. Sie hat nur einmal gesagt: Damals musste man nicht diskutieren, damals hat man verstanden.\n\nSpäter wollte sie nicht mehr. Mein Vater fuhr, und wenn er nicht fuhr, fuhr ich. Es hat vierzig Jahre lang funktioniert, und wenn etwas vierzig Jahre lang funktioniert, sieht niemand, was es kostet.\n\nWas es kostete, sah man erst, als mein Vater im März ins Krankenhaus musste. Er konnte drei Monate lang nicht fahren. Meine Mutter hat in diesen drei Monaten dreiundvierzig Mal jemanden fragen müssen, ob er sie mitnimmt. Sie hat mitgezählt. Das ist der Teil, den ich nicht vergesse: Sie hat mitgezählt.\n\nIm Juli hat sie sich in einer Fahrschule angemeldet. Sie hat es niemandem gesagt, auch mir nicht. Sie hat behauptet, sie gehe zur Wassergymnastik, und ist stattdessen zweimal pro Woche zum Unterricht gegangen.\n\nDer Fahrlehrer war siebenundzwanzig und hat sie geduzt, was sie geärgert hat. Sie hat trotzdem nichts gesagt, weil sie nicht auffallen wollte. Die Theorieprüfung hat sie im ersten Anlauf bestanden. Die praktische Prüfung hat sie zweimal machen müssen, und beim ersten Mal ist sie nach Hause gefahren worden, was sie schlimmer fand als das Durchfallen selbst.\n\nAn dem Tag, an dem sie den Schein bekam, hat sie mich angerufen und gefragt, ob ich einen Kaffee wolle. Sie ist gekommen und hat vor dem Haus geparkt, ziemlich weit weg vom Bordstein.\n\nIch habe nichts über das Parken gesagt. Ich habe gefragt, wie es war. Sie hat einen Moment nachgedacht und dann geantwortet: Ich hätte das mit zwanzig gekonnt. Ich habe es nur nie gedurft, und irgendwann habe ich geglaubt, ich wollte nicht.",
+    "wordCount": 320,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Distinguir konnte, durfte, wollte y musste en el pasado."
+      },
+      {
+        "es": "Formar el Perfekt de los modales con doble infinitivo: hat fragen müssen."
+      },
+      {
+        "es": "Separar una prohibición antigua de una preferencia personal."
+      }
+    ],
+    "grammarFocus": [
+      "modalverben-prateritum-b1",
+      "perfekt-haben-sein-b1",
+      "modalverben"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Führerschein",
+        "lemma": "Führerschein",
+        "glosses": {
+          "es": "carnet de conducir"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gereicht",
+        "lemma": "reichen",
+        "glosses": {
+          "es": "bastado, alcanzado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "mitgezählt",
+        "lemma": "mitzählen",
+        "glosses": {
+          "es": "llevado la cuenta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "angemeldet",
+        "lemma": "sich anmelden",
+        "glosses": {
+          "es": "inscrito, matriculado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "behauptet",
+        "lemma": "behaupten",
+        "glosses": {
+          "es": "afirmado, sostenido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "geduzt",
+        "lemma": "duzen",
+        "glosses": {
+          "es": "tuteado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Durchfallen",
+        "lemma": "durchfallen",
+        "glosses": {
+          "es": "suspender un examen"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Bordstein",
+        "lemma": "Bordstein",
+        "glosses": {
+          "es": "bordillo de la acera"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El carnet alemán exige clases obligatorias en autoescuela y cuesta entre dos y tres mil euros. En los años sesenta, ese gasto solía decidirse una vez por familia, y casi nunca a favor de las hijas."
+    },
+    "spanishSpeakerNote": {
+      "es": "Cuando un modal va en Perfekt, el alemán no usa participio sino dos infinitivos al final: «Sie hat fragen müssen», no «gemusst». Se lee del final hacia atrás: primero el modal, luego el verbo principal."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto alemán largo que desarrolla una idea y cambia de dirección, separar lo que ocurrió de lo que alguien dice que ocurrió, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens",
+      "adjektivdeklination-a2",
+      "da-hin-her-a2",
+      "dativ-a2",
+      "futur-i-a2",
+      "genitiv-a2",
+      "infinitiv-zu-a2",
+      "komparativ-superlativ-a2",
+      "konjunktionen-a2",
+      "konjunktiv-ii-wurden-a2",
+      "modalverben-praeteritum-a2",
+      "partizip-als-adjektiv-a2",
+      "passiv-praesens-a2",
+      "perfekt-haben-a2",
+      "perfekt-sein-a2",
+      "praeteritum-basic-a2",
+      "reflexivverben-a2",
+      "relativsaetze-a2",
+      "trennbare-verben-praeteritum-a2",
+      "wechselpraepositionen-a2",
+      "zweiteilige-konnektoren-a2",
+      "adjektivdeklination-b1",
+      "genitiv-b1",
+      "imperativ-b1",
+      "indirekte-rede-b1",
+      "infinitiv-zu-b1",
+      "kausale-konzessive-satze-b1",
+      "konjunktiv-ii-b1",
+      "modalverben-prateritum-b1",
+      "nebensatze-b1",
+      "partizip-als-adjektiv-b1",
+      "passiv-b1",
+      "perfekt-haben-sein-b1",
+      "prateritum-starke-verben-b1",
+      "reflexive-verben-b1",
+      "relativsatze-b1",
+      "temporale-prapositionen-b1",
+      "verben-mit-prapositionen-b1",
+      "wechselprapositionen-b1",
+      "wortbildung-b1",
+      "zweiteilige-konnektoren-b1"
+    ],
+    "disallowedGrammar": [
+      "Futur II",
+      "erweitertes Partizipialattribut",
+      "Nominalstil amtlich",
+      "Konjunktiv I seltener Verben"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 11.9,
+      "maxSentenceWords": 26,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Prosa B1 con Konjunktiv II, indirekte Rede, pasiva y subordinadas encadenadas. Konjunktiv I solo en verbos frecuentes (sei, habe, wolle). Inferencia moderada: exige cruzar dos pasajes separados."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué revela la frase final de la madre?",
+      "options": [
+        {
+          "id": "creido",
+          "text": "Que la prohibición de entonces terminó convirtiéndose en una falta de ganas que ella se creyó"
+        },
+        {
+          "id": "miedo",
+          "text": "Que siempre tuvo miedo a los coches y lo superó"
+        },
+        {
+          "id": "edad",
+          "text": "Que los sesenta son la mejor edad para aprender a conducir"
+        }
+      ],
+      "answer": "creido",
+      "evidence": "Ich hätte das mit zwanzig gekonnt. Ich habe es nur nie gedurft, und irgendwann habe ich geglaubt, ich wollte nicht.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la frase distingue tres cosas: poder, tener permiso y querer."
+        },
+        "incorrect": {
+          "es": "No se menciona miedo a los coches ni se recomienda ninguna edad. Lee la última frase entera."
+        },
+        "strategy": {
+          "es": "Cuando la última frase enumera varios verbos modales, la distinción entre ellos es el asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántas veces tuvo que pedir que la llevaran en esos tres meses?",
+      "options": [
+        {
+          "id": "cuarentaytres",
+          "text": "Cuarenta y tres veces"
+        },
+        {
+          "id": "tres",
+          "text": "Tres veces"
+        },
+        {
+          "id": "veintisiete",
+          "text": "Veintisiete veces"
+        }
+      ],
+      "answer": "cuarentaytres",
+      "evidence": "Meine Mutter hat in diesen drei Monaten dreiundvierzig Mal jemanden fragen müssen, ob er sie mitnimmt.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y lo importante no es la cifra sino que ella la contara."
+        },
+        "incorrect": {
+          "es": "Los tres son meses y los veintisiete, la edad del profesor. Busca la cifra con «Mal»."
+        },
+        "strategy": {
+          "es": "Empareja cada número con su unidad: meses, veces, años."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El profesor la ha «geduzt» y eso la molestó. ¿Qué significa?",
+      "options": [
+        {
+          "id": "tutear",
+          "text": "Tratarla de tú en lugar de usted"
+        },
+        {
+          "id": "suspender",
+          "text": "Suspenderla en una clase"
+        },
+        {
+          "id": "esperar",
+          "text": "Hacerla esperar"
+        }
+      ],
+      "answer": "tutear",
+      "evidence": "Der Fahrlehrer war siebenundzwanzig und hat sie geduzt, was sie geärgert hat.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. La edad del profesor está ahí justamente para que se note el desajuste."
+        },
+        "incorrect": {
+          "es": "El verbo aparece unido a la edad del profesor, no a notas ni a horarios. Fíjate en esa relación."
+        },
+        "strategy": {
+          "es": "Si un dato aparentemente inútil (la edad) acompaña a un verbo, suele explicar por qué molestó."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el narrador no comenta nada del aparcamiento?",
+      "options": [
+        {
+          "id": "respeto",
+          "text": "Porque corregirla en ese momento habría estropeado lo que acababa de conseguir"
+        },
+        {
+          "id": "visto",
+          "text": "Porque no vio cómo había aparcado"
+        },
+        {
+          "id": "prisa",
+          "text": "Porque tenía prisa y quería entrar en casa"
+        }
+      ],
+      "answer": "respeto",
+      "evidence": "hat vor dem Haus geparkt, ziemlich weit weg vom Bordstein. Ich habe nichts über das Parken gesagt. Ich habe gefragt, wie es war.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El narrador se fija —lo describe— y aun así elige preguntar otra cosa."
+        },
+        "incorrect": {
+          "es": "Sí lo vio, porque lo describe con detalle, y no se menciona ninguna prisa. Fíjate en el contraste entre las dos frases."
+        },
+        "strategy": {
+          "es": "Cuando alguien describe algo con precisión y luego calla, el silencio es una decisión."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: ocultó a su familia que se había matriculado en la autoescuela.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Sie hat es niemandem gesagt, auch mir nicht. Sie hat behauptet, sie gehe zur Wassergymnastik.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, e incluso inventó una coartada: la gimnasia acuática."
+        },
+        "incorrect": {
+          "es": "Busca el párrafo de julio. Allí se dice a quién se lo contó y qué dijo en su lugar."
+        },
+        "strategy": {
+          "es": "La expresión «auch mir nicht» amplía la negación al propio narrador: nadie significa nadie."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la historia de la madre.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "De joven no le dejan y el dinero va al hermano"
+        },
+        {
+          "id": "p2",
+          "text": "Cuarenta años en los que conducen otros"
+        },
+        {
+          "id": "p3",
+          "text": "El padre ingresa y ella cuenta cuarenta y tres favores"
+        },
+        {
+          "id": "p4",
+          "text": "Se matricula en secreto y aprueba en julio"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Als sie jung war, durfte sie nicht … Es hat vierzig Jahre lang funktioniert … als mein Vater im März ins Krankenhaus musste … Im Juli hat sie sich in einer Fahrschule angemeldet.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: prohibición, costumbre, ruptura y decisión."
+        },
+        "incorrect": {
+          "es": "Guíate por «Als sie jung war», «vierzig Jahre lang», «im März» e «Im Juli»."
+        },
+        "strategy": {
+          "es": "En un relato de varias décadas, ordena primero por edades y luego por meses."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en alemán sobre algo que no pudiste, no te dejaron o no quisiste hacer de joven. Usa konnte, durfte, wollte y musste, y dos modales en Perfekt."
+    },
+    "minWords": 70,
+    "maxWords": 130,
+    "hints": [
+      "Als ich jung war, durfte ich nicht …",
+      "Ich habe … fragen müssen.",
+      "Vierzig Jahre lang hat es funktioniert.",
+      "Ich hätte das mit zwanzig gekonnt."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán B1: nunca quiso conducir | WeLearn"
+    },
+    "description": {
+      "es": "Lee un relato familiar en alemán B1 y practica los verbos modales en pasado y el Perfekt con haben y sein. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/b1/lectura/sie-hat-nie-fahren-wollen",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-b1-die-tuer-des-schrankes",
+      "de-b1-stell-den-stuhl-ans-fenster"
+    ]
+  }
+}

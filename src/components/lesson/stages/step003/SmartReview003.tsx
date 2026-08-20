@@ -332,7 +332,7 @@ export default function SmartReview003({ onComplete }: Props) {
       {/* Round 2 banner */}
       {round === 2 && (
         <div style={{ padding:'9px 14px', borderRadius:12, background:'rgba(239,68,68,0.08)', border:'1px solid rgba(239,68,68,0.3)', textAlign:'center', animation:'sr-in 0.4s ease both' }}>
-          <span style={{ fontSize:12, fontWeight:700, color:'#ef4444' }}>🔁 Segunda oportunidad — solo los que fallaste</span>
+          <span style={{ fontSize:12, fontWeight:700, color:'var(--wl-on-panel-alert, #ef4444)' }}>🔁 Segunda oportunidad — solo los que fallaste</span>
         </div>
       )}
 
@@ -358,7 +358,7 @@ export default function SmartReview003({ onComplete }: Props) {
             </span>
           ))}
           <span style={{ fontSize:10, fontWeight:700, padding:'2px 9px', borderRadius:100,
-            background:'rgba(108,99,255,0.08)', border:'1px solid rgba(108,99,255,0.22)', color:'#6c63ff', whiteSpace:'nowrap' }}>
+            background:'rgba(108,99,255,0.08)', border:'1px solid rgba(108,99,255,0.22)', color:'var(--wl-on-panel-link, #6c63ff)', whiteSpace:'nowrap' }}>
             integra {card.skills.length} habilidades
           </span>
         </div>
@@ -374,7 +374,7 @@ export default function SmartReview003({ onComplete }: Props) {
               <button type="button" onClick={() => playAudio(card.audio!)}
                 style={{ marginTop:8, padding:'4px 12px', borderRadius:100, cursor:'pointer',
                   background:'rgba(108,99,255,0.1)', border:'1px solid rgba(108,99,255,0.3)',
-                  fontSize:11, fontWeight:600, color:'#6c63ff', display:'inline-flex', alignItems:'center', gap:5 }}>
+                  fontSize:11, fontWeight:600, color:'var(--wl-on-panel-link, #6c63ff)', display:'inline-flex', alignItems:'center', gap:5 }}>
                 🔊 Escuchar
               </button>
             )}
@@ -434,7 +434,7 @@ export default function SmartReview003({ onComplete }: Props) {
         <button type="button" onClick={next}
           style={{ padding:'13px', borderRadius:14, width:'100%', cursor:'pointer',
             background:'rgba(108,99,255,0.14)', border:'1px solid rgba(108,99,255,0.4)',
-            fontSize:13, fontWeight:700, color:'#6c63ff', transition:'all 0.18s ease' }}>
+            fontSize:13, fontWeight:700, color:'var(--wl-on-panel-link, #6c63ff)', transition:'all 0.18s ease' }}>
           {idx < queue.length - 1 || (wrong.length > 0 && round < 2)
             ? 'Siguiente tarjeta →'
             : '🧠 Ver resultados finales'}

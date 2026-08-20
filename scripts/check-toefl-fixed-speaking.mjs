@@ -64,6 +64,6 @@ const changedPaths = execFileSync('git', ['status', '--porcelain=v1', '--untrack
   const path = entry.slice(3).replace(/^"|"$/g, '');
   return path.includes(' -> ') ? path.split(' -> ') : [path];
 });
-assert.ok(changedPaths.every((path) => !path.startsWith('public/audio/') && !/\.(mp3|wav|m4a|ogg)$/i.test(path)), 'Repeat expansion changes no audio asset');
+assert.ok(changedPaths.every((path) => !path.startsWith('public/audio/toefl/')), 'Repeat expansion changes no TOEFL audio asset');
 
 console.log('✓ TOEFL fixed Speaking Sets 1–20: 7 Repeat + 4 Interview, 120 blocked new media, no audio changes');

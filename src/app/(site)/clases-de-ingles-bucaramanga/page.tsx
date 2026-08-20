@@ -345,19 +345,19 @@ export default function ClasesInglessBucaramangaPage() {
                 featured: false,
               },
             ].map(plan => (
-              <div key={plan.name} style={{ background: plan.featured ? 'var(--accent)' : 'rgba(255,255,255,0.06)', border: `1px solid ${plan.featured ? 'var(--accent)' : 'rgba(255,255,255,0.12)'}`, borderRadius: 16, padding: '1.75rem', display: 'flex', flexDirection: 'column', gap: '1rem', position: 'relative' }}>
+              <div key={plan.name} style={{ background: plan.featured ? 'var(--accent-action, var(--accent))' : 'rgba(255,255,255,0.06)', border: `1px solid ${plan.featured ? 'var(--accent-action, var(--accent))' : 'rgba(255,255,255,0.12)'}`, borderRadius: 16, padding: '1.75rem', display: 'flex', flexDirection: 'column', gap: '1rem', position: 'relative' }}>
                 {plan.featured && (
-                  <span style={{ position: 'absolute', top: -12, left: '50%', transform: 'translateX(-50%)', background: '#fff', color: 'var(--accent)', fontSize: '0.72rem', fontWeight: 700, padding: '0.22rem 0.9rem', borderRadius: 20, whiteSpace: 'nowrap' }}>
+                  <span style={{ position: 'absolute', top: -12, left: '50%', transform: 'translateX(-50%)', background: '#fff', color: 'var(--accent-action, var(--accent))', fontSize: '0.72rem', fontWeight: 700, padding: '0.22rem 0.9rem', borderRadius: 20, whiteSpace: 'nowrap' }}>
                     Más popular
                   </span>
                 )}
                 <h3 style={{ fontWeight: 700, color: '#fff', fontSize: '1.05rem' }}>{plan.name}</h3>
                 <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.3rem' }}>
                   <span style={{ fontWeight: 800, fontSize: '1.5rem', color: '#fff' }}>{plan.price}</span>
-                  {plan.cadence && <span style={{ color: 'rgba(255,255,255,0.55)', fontSize: '0.9rem' }}>{plan.cadence}</span>}
+                  {plan.cadence && <span style={{ color: 'rgba(255,255,255,0.86)', fontSize: '0.9rem' }}>{plan.cadence}</span>}
                 </div>
-                <p style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.72)', lineHeight: 1.6, flexGrow: 1 }}>{plan.desc}</p>
-                <a href={plan.url} target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center', padding: '0.65rem 1.25rem', borderRadius: 10, fontWeight: 700, fontSize: '0.875rem', textDecoration: 'none', background: plan.featured ? '#fff' : 'rgba(255,255,255,0.12)', color: plan.featured ? 'var(--accent)' : '#fff' }}>
+                <p style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.9)', lineHeight: 1.6, flexGrow: 1 }}>{plan.desc}</p>
+                <a href={plan.url} target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center', padding: '0.65rem 1.25rem', borderRadius: 10, fontWeight: 700, fontSize: '0.875rem', textDecoration: 'none', background: plan.featured ? '#fff' : 'rgba(255,255,255,0.12)', color: plan.featured ? 'var(--accent-action, var(--accent))' : '#fff' }}>
                   {plan.cta}
                 </a>
               </div>
@@ -376,7 +376,7 @@ export default function ClasesInglessBucaramangaPage() {
               {PAQUETES.map(pkg => (
                 <div key={pkg.label} style={{ background: pkg.highlight ? 'rgba(255,255,255,0.15)' : 'rgba(255,255,255,0.06)', border: `1px solid ${pkg.highlight ? 'rgba(255,255,255,0.4)' : 'rgba(255,255,255,0.12)'}`, borderRadius: 14, padding: '1.25rem', position: 'relative' }}>
                   {pkg.badge && (
-                    <span style={{ position: 'absolute', top: -10, left: '50%', transform: 'translateX(-50%)', background: '#fff', color: 'var(--accent)', fontSize: '0.68rem', fontWeight: 700, padding: '0.18rem 0.75rem', borderRadius: 20, whiteSpace: 'nowrap' }}>
+                    <span style={{ position: 'absolute', top: -10, left: '50%', transform: 'translateX(-50%)', background: '#fff', color: 'var(--accent-action, var(--accent))', fontSize: '0.68rem', fontWeight: 700, padding: '0.18rem 0.75rem', borderRadius: 20, whiteSpace: 'nowrap' }}>
                       {pkg.badge}
                     </span>
                   )}
@@ -410,7 +410,7 @@ export default function ClasesInglessBucaramangaPage() {
                   &ldquo;{t.quote}&rdquo;
                 </p>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                  <div style={{ width: 38, height: 38, borderRadius: '50%', background: 'var(--accent)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: '0.95rem', flexShrink: 0 }}>
+                  <div style={{ width: 38, height: 38, borderRadius: '50%', background: 'var(--accent-action, var(--accent))', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: '0.95rem', flexShrink: 0 }}>
                     {t.name[0]}
                   </div>
                   <div>

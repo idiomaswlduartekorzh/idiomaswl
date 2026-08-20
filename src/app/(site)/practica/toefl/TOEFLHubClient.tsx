@@ -113,7 +113,7 @@ function TOEFLReadingExercise() {
 
       {/* Instructions */}
       <div style={{ padding: '0.9rem 1.1rem', borderRadius: 12, background: 'rgba(26,79,204,0.07)', border: '1px solid rgba(26,79,204,0.2)', fontSize: '0.87rem', color: 'var(--ink-2)', lineHeight: 1.65 }}>
-        <strong style={{ color: '#1a4fcc' }}>Instrucciones:</strong> Para cada pregunta, elige la mejor respuesta basada en la información del pasaje. El tiempo en TOEFL iBT para Reading es de ~18 min por pasaje.
+        <strong style={{ color: 'var(--wl-on-panel-link, #1a4fcc)' }}>Instrucciones:</strong> Para cada pregunta, elige la mejor respuesta basada en la información del pasaje. El tiempo en TOEFL iBT para Reading es de ~18 min por pasaje.
       </div>
 
       {/* Progress */}
@@ -132,7 +132,7 @@ function TOEFLReadingExercise() {
         const isDone = ans !== undefined;
         return (
           <div key={qi} className="wl-card" style={{ padding: '1.25rem' }}>
-            <div style={{ fontSize: '0.68rem', fontWeight: 800, color: '#1a4fcc', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.5rem' }}>
+            <div style={{ fontSize: '0.68rem', fontWeight: 800, color: 'var(--wl-on-panel-link, #1a4fcc)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.5rem' }}>
               Question {qi + 1} of {QUESTIONS.length}
             </div>
             <p style={{ margin: '0 0 0.85rem', fontWeight: 600, color: 'var(--ink)', fontSize: '0.97rem', lineHeight: 1.65 }}>{q.question}</p>
@@ -215,7 +215,7 @@ export default function TOEFLHubClient() {
             {/* Score scale */}
             <div style={{ display: 'flex', gap: '0.4rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
               {[['0-41','Básico','#dc2626'],['42-71','Intermedio','#f59e0b'],['72-94','Avanzado','#1a4fcc'],['95-120','Superior','#059669']].map(([score,label,color]) => (
-                <span key={score} style={{ fontSize: '0.72rem', padding: '0.2rem 0.65rem', borderRadius: 20, background: `${color}15`, color, border: `1px solid ${color}40`, fontFamily: 'var(--mono)', fontWeight: 700 }}>
+                <span key={score} className="wl-score-chip" style={{ fontSize: '0.72rem', padding: '0.2rem 0.65rem', borderRadius: 20, background: `${color}15`, color, border: `1px solid ${color}40`, fontFamily: 'var(--mono)', fontWeight: 700 }}>
                   {score} — {label}
                 </span>
               ))}

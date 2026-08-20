@@ -83,7 +83,7 @@ function PhaseHeader({
           fontSize: 10,
           letterSpacing: '0.12em',
           textTransform: 'uppercase',
-          color: '#6c63ff',
+          color: 'var(--wl-on-panel-link, #6c63ff)',
           fontWeight: 700,
         }}
       >
@@ -201,11 +201,11 @@ function AssemblyDemo({ entry, autoPlay }: { entry: ExampleEntry; autoPlay?: boo
       {/* Split view */}
       {!isAssembled && (
         <>
-          <span key="c-split" className="gd-slide-r" style={{ ...KR(36), color: '#6c63ff' }}>
+          <span key="c-split" className="gd-slide-r" style={{ ...KR(36), color: 'var(--wl-on-panel-link, #6c63ff)' }}>
             {entry.consonant}
           </span>
           <span style={{ fontSize: 22, color: 'var(--muted)', fontWeight: 300 }}>+</span>
-          <span key="v-split" className="gd-slide-l" style={{ ...KR(36), color: '#059669' }}>
+          <span key="v-split" className="gd-slide-l" style={{ ...KR(36), color: 'var(--wl-on-panel-ok, #059669)' }}>
             {entry.vowel}
           </span>
           <span style={{ fontSize: 22, color: 'var(--muted)', fontWeight: 300 }}>=</span>
@@ -215,9 +215,9 @@ function AssemblyDemo({ entry, autoPlay }: { entry: ExampleEntry; autoPlay?: boo
       {/* Assembled view */}
       {isAssembled && (
         <>
-          <span style={{ ...KR(20), color: '#6c63ff', opacity: 0.5 }}>{entry.consonant}</span>
+          <span style={{ ...KR(20), color: 'var(--wl-on-panel-link, #6c63ff)', opacity: 0.5 }}>{entry.consonant}</span>
           <span style={{ fontSize: 18, color: 'var(--muted)', fontWeight: 300 }}>+</span>
-          <span style={{ ...KR(20), color: '#059669', opacity: 0.5 }}>{entry.vowel}</span>
+          <span style={{ ...KR(20), color: 'var(--wl-on-panel-ok, #059669)', opacity: 0.5 }}>{entry.vowel}</span>
           <span style={{ fontSize: 18, color: 'var(--muted)', fontWeight: 300 }}>=</span>
           <span key="result" className="gd-pop" style={{ ...KR(48), color: 'var(--ink)' }}>
             {entry.result}
@@ -266,7 +266,7 @@ function Phase1({ onNext }: { onNext: () => void }) {
           marginBottom: 22,
         }}
       >
-        <p style={{ margin: 0, fontSize: 13, fontWeight: 600, color: '#6c63ff' }}>
+        <p style={{ margin: 0, fontSize: 13, fontWeight: 600, color: 'var(--wl-on-panel-link, #6c63ff)' }}>
           La regla de oro
         </p>
         <p style={{ margin: '6px 0 0', fontSize: 13, color: 'var(--ink)', lineHeight: 1.6 }}>
@@ -307,9 +307,9 @@ function Phase1({ onNext }: { onNext: () => void }) {
         >
           <p style={{ margin: '0 0 12px', fontSize: 14, fontWeight: 600, color: 'var(--ink)' }}>
             ¿Cuál es el resultado de&nbsp;
-            <span style={{ ...KR(22), color: '#6c63ff' }}>ㅅ</span>
+            <span style={{ ...KR(22), color: 'var(--wl-on-panel-link, #6c63ff)' }}>ㅅ</span>
             &nbsp;+&nbsp;
-            <span style={{ ...KR(22), color: '#059669' }}>ㅏ</span>
+            <span style={{ ...KR(22), color: 'var(--wl-on-panel-ok, #059669)' }}>ㅏ</span>
             &nbsp;=&nbsp;?
           </p>
           <div style={{ display: 'flex', gap: 10 }}>
@@ -623,7 +623,7 @@ function Phase3({
                 borderRadius: 12,
               }}
             >
-              <span style={{ ...KR(52), color: '#6c63ff' }}>{q.consonant}</span>
+              <span style={{ ...KR(52), color: 'var(--wl-on-panel-link, #6c63ff)' }}>{q.consonant}</span>
             </div>
             <span style={{ fontSize: 28, color: 'var(--muted)', fontWeight: 300 }}>+</span>
             <div
@@ -634,7 +634,7 @@ function Phase3({
                 borderRadius: 12,
               }}
             >
-              <span style={{ ...KR(52), color: '#059669' }}>{q.vowel}</span>
+              <span style={{ ...KR(52), color: 'var(--wl-on-panel-ok, #059669)' }}>{q.vowel}</span>
             </div>
             <span style={{ fontSize: 28, color: 'var(--muted)', fontWeight: 300 }}>=</span>
             <span style={{ fontSize: 28, color: 'var(--muted)' }}>?</span>

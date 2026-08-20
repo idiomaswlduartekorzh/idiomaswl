@@ -87,7 +87,7 @@ export default function SmartReview002({ onComplete }: Props) {
 
     return (
       <section style={{ maxWidth: 560, margin: '0 auto', padding: '2rem 1rem' }}>
-        <p style={{ margin: '0 0 4px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6c63ff', fontWeight: 700 }}>REPASO ESPACIADO · Resultados</p>
+        <p style={{ margin: '0 0 4px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700 }}>REPASO ESPACIADO · Resultados</p>
         <h3 style={{ margin: '0 0 6px', fontSize: 22, fontWeight: 700, color: 'var(--ink)' }}>
           {score}/{total} palabras
         </h3>
@@ -97,10 +97,10 @@ export default function SmartReview002({ onComplete }: Props) {
 
         {knewCards.length > 0 && (
           <div style={{ marginBottom: 16 }}>
-            <p style={{ margin: '0 0 8px', fontSize: 12, fontWeight: 700, color: '#2d9b4e' }}>Palabras que recuerdas:</p>
+            <p style={{ margin: '0 0 8px', fontSize: 12, fontWeight: 700, color: 'var(--wl-on-panel-ok, #2d9b4e)' }}>Palabras que recuerdas:</p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
               {knewCards.map(c => (
-                <span key={c.id} style={{ padding: '6px 14px', borderRadius: 100, background: 'rgba(45,155,78,0.08)', border: '1px solid rgba(45,155,78,0.2)', fontSize: 14, fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 700, color: '#2d9b4e' }}>
+                <span key={c.id} style={{ padding: '6px 14px', borderRadius: 100, background: 'rgba(45,155,78,0.08)', border: '1px solid rgba(45,155,78,0.2)', fontSize: 14, fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 700, color: 'var(--wl-on-panel-ok, #2d9b4e)' }}>
                   {c.korean}
                 </span>
               ))}
@@ -110,10 +110,10 @@ export default function SmartReview002({ onComplete }: Props) {
 
         {missedCards.length > 0 && (
           <div style={{ marginBottom: 24 }}>
-            <p style={{ margin: '0 0 8px', fontSize: 12, fontWeight: 700, color: '#e07b00' }}>Para seguir practicando:</p>
+            <p style={{ margin: '0 0 8px', fontSize: 12, fontWeight: 700, color: 'var(--wl-on-panel-warn, #e07b00)' }}>Para seguir practicando:</p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
               {missedCards.map(c => (
-                <span key={c.id} style={{ padding: '6px 14px', borderRadius: 100, background: 'rgba(224,123,0,0.08)', border: '1px solid rgba(224,123,0,0.2)', fontSize: 14, fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 700, color: '#e07b00' }}>
+                <span key={c.id} style={{ padding: '6px 14px', borderRadius: 100, background: 'rgba(224,123,0,0.08)', border: '1px solid rgba(224,123,0,0.2)', fontSize: 14, fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 700, color: 'var(--wl-on-panel-warn, #e07b00)' }}>
                   {c.korean}
                 </span>
               ))}
@@ -137,7 +137,7 @@ export default function SmartReview002({ onComplete }: Props) {
       {/* Header */}
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16 }}>
         <div>
-          <p style={{ margin: 0, fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6c63ff', fontWeight: 700 }}>
+          <p style={{ margin: 0, fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700 }}>
             REPASO ESPACIADO · Card {cardNum} de {total}
           </p>
         </div>
@@ -216,11 +216,11 @@ export default function SmartReview002({ onComplete }: Props) {
       ) : (
         <div style={{ display: 'flex', gap: 10 }}>
           <button type="button" onClick={() => rate(card.id, 'knew')}
-            style={{ flex: 1, padding: '14px', background: 'rgba(45,155,78,0.08)', border: '1.5px solid rgba(45,155,78,0.3)', borderRadius: 12, color: '#2d9b4e', fontSize: 13, fontWeight: 700, cursor: 'pointer' }}>
+            style={{ flex: 1, padding: '14px', background: 'rgba(45,155,78,0.08)', border: '1.5px solid rgba(45,155,78,0.3)', borderRadius: 12, color: 'var(--wl-on-panel-ok, #2d9b4e)', fontSize: 13, fontWeight: 700, cursor: 'pointer' }}>
             Lo recordé
           </button>
           <button type="button" onClick={() => rate(card.id, 'missed')}
-            style={{ flex: 1, padding: '14px', background: 'rgba(224,123,0,0.06)', border: '1.5px solid rgba(224,123,0,0.25)', borderRadius: 12, color: '#e07b00', fontSize: 13, fontWeight: 700, cursor: 'pointer' }}>
+            style={{ flex: 1, padding: '14px', background: 'rgba(224,123,0,0.06)', border: '1.5px solid rgba(224,123,0,0.25)', borderRadius: 12, color: 'var(--wl-on-panel-warn, #e07b00)', fontSize: 13, fontWeight: 700, cursor: 'pointer' }}>
             No lo recordé
           </button>
         </div>

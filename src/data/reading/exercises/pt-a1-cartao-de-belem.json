@@ -1,0 +1,447 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-a1-cartao-de-belem",
+  "status": "published",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Portugués A1"
+  },
+  "slug": "cartao-de-belem",
+  "series": {
+    "id": "portugues-a1-lectura-10",
+    "episode": 10,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-a1-o-que-voce-vende-mais",
+    "nextExerciseId": null
+  },
+  "classification": {
+    "genre": "postal",
+    "topic": "escribir desde otra ciudad",
+    "intent": "learning",
+    "tags": [
+      "portugues a1",
+      "lectura",
+      "futuro con ir",
+      "verbos irregulares"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Postal desde Belém"
+    },
+    "intro": {
+      "es": "Una postal desde Belém con tres planes para la semana que viene y una promesa que probablemente no se cumpla. Lectura de portugués A1."
+    },
+    "mission": {
+      "es": "Averigua qué va a hacer y qué promete sin estar seguro."
+    },
+    "targetText": "Belém, 14 de março. Oi mãe. Cheguei ontem. Está fazendo muito calor aqui, uns trinta e cinco graus, e chove todo dia às três da tarde. Todo dia, na mesma hora. As pessoas daqui já sabem: às duas e meia elas vão para dentro. Amanhã eu vou no mercado Ver-o-Peso. Dizem que é o maior mercado do norte. Depois eu vou comer açaí de verdade. Aqui eu descobri uma coisa: açaí não é doce. Em São Paulo eles põem xarope. Aqui não. Aqui vem com farinha e peixe. É outra comida. Na quinta eu vou visitar a tia Zuleide. Ela tem oitenta e um anos e mora sozinha. Ela vai reclamar que eu não escrevo. Ela tem razão. Eu vou escrever mais, mãe. Eu digo isso todo ano. Este ano talvez seja verdade. Um beijo, Camila.",
+    "wordCount": 136,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Formar el futuro con ir + infinitivo: vou comer, vou visitar, vai reclamar."
+      },
+      {
+        "es": "Conjugar verbos irregulares en presente: fazer, saber, dizer, pôr, vir, ter."
+      },
+      {
+        "es": "Distinguir un plan concreto de una promesa vaga."
+      }
+    ],
+    "grammarFocus": [
+      "ir-futuro",
+      "verbos-irregulares"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Cheguei",
+        "lemma": "chegar",
+        "glosses": {
+          "es": "llegué"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "graus",
+        "lemma": "grau",
+        "glosses": {
+          "es": "grados (de temperatura)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "açaí",
+        "lemma": "açaí",
+        "glosses": {
+          "es": "fruto amazónico; en el norte se come salado, con pescado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "xarope",
+        "lemma": "xarope",
+        "glosses": {
+          "es": "sirope, jarabe"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "farinha",
+        "lemma": "farinha",
+        "glosses": {
+          "es": "harina; aquí, harina de mandioca"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sozinha",
+        "lemma": "sozinho",
+        "glosses": {
+          "es": "sola"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "põem",
+        "lemma": "pôr",
+        "glosses": {
+          "es": "ponen"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "beijo",
+        "lemma": "beijo",
+        "glosses": {
+          "es": "beso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En Belém, capital de Pará, el açaí se toma salado y acompañado de pescado y harina de mandioca. La versión dulce con sirope y fruta es una invención del sur del país."
+    },
+    "spanishSpeakerNote": {
+      "es": "El futuro con «ir» funciona igual que en español: «eu vou comer» = «voy a comer». La diferencia está en «vou no mercado»: en Brasil se dice «ir no» tanto como «ir ao», algo que en español no tiene equivalente."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en portugués de Brasil sobre la vida cotidiana, distinguir ser de estar, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares"
+    ],
+    "disallowedGrammar": [
+      "pretérito perfeito",
+      "imperfeito",
+      "subjuntivo",
+      "voz passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 6.2,
+      "maxSentenceWords": 18,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Presente de indicativo y futuro con ir. Sin tiempos del pasado ni subjuntivo. Falso amigo glosado en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué contiene la postal?",
+      "options": [
+        {
+          "id": "planes",
+          "text": "Impresiones de la ciudad y tres planes para los próximos días"
+        },
+        {
+          "id": "queja",
+          "text": "Una queja por el calor y la lluvia de Belém"
+        },
+        {
+          "id": "mudanza",
+          "text": "El anuncio de que se va a quedar a vivir allí"
+        }
+      ],
+      "answer": "planes",
+      "evidence": "Amanhã eu vou no mercado Ver-o-Peso … Depois eu vou comer açaí de verdade … Na quinta eu vou visitar a tia Zuleide.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Tres planes marcados con «vou», más lo que ha descubierto del açaí."
+        },
+        "incorrect": {
+          "es": "El calor y la lluvia se cuentan sin queja, y no dice que se quede. Busca las frases con «vou»."
+        },
+        "strategy": {
+          "es": "En una postal, los verbos con «vou» marcan los planes. Cuéntalos para saber de qué va."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿A qué hora llueve todos los días?",
+      "options": [
+        {
+          "id": "tres",
+          "text": "A las tres de la tarde"
+        },
+        {
+          "id": "dos",
+          "text": "A las dos y media"
+        },
+        {
+          "id": "manana",
+          "text": "Por la mañana"
+        }
+      ],
+      "answer": "tres",
+      "evidence": "chove todo dia às três da tarde",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Las dos y media es cuando la gente se mete en casa, media hora antes."
+        },
+        "incorrect": {
+          "es": "El texto da dos horas seguidas y una es consecuencia de la otra. Busca la que va con «chove»."
+        },
+        "strategy": {
+          "es": "Si dos horas van juntas, comprueba cuál es la causa y cuál la reacción."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «Em São Paulo eles põem xarope». ¿Qué es «xarope»?",
+      "options": [
+        {
+          "id": "sirope",
+          "text": "Sirope o jarabe dulce"
+        },
+        {
+          "id": "harina",
+          "text": "Harina"
+        },
+        {
+          "id": "pescado",
+          "text": "Pescado"
+        }
+      ],
+      "answer": "sirope",
+      "evidence": "Aqui eu descobri uma coisa: açaí não é doce. Em São Paulo eles põem xarope. Aqui não.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Es lo que hace dulce al açaí del sur, y en Belém no se le pone."
+        },
+        "incorrect": {
+          "es": "La harina y el pescado aparecen en la frase siguiente, como lo que sí lleva en Belém. Esta es la del sur."
+        },
+        "strategy": {
+          "es": "Cuando un texto contrapone dos lugares, cada ingrediente pertenece a uno. No los mezcles."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice «Este ano talvez seja verdade»?",
+      "options": [
+        {
+          "id": "duda",
+          "text": "Porque promete escribir más cada año y sabe que no lo cumple"
+        },
+        {
+          "id": "mudanza",
+          "text": "Porque este año va a vivir más cerca de su madre"
+        },
+        {
+          "id": "tiempo",
+          "text": "Porque este año tendrá más tiempo libre"
+        }
+      ],
+      "answer": "duda",
+      "evidence": "Eu vou escrever mais, mãe. Eu digo isso todo ano. Este ano talvez seja verdade.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y es un gesto muy honesto: reconoce la promesa repetida en la frase de en medio."
+        },
+        "incorrect": {
+          "es": "No habla de mudarse ni de tiempo libre. Lee las tres frases finales seguidas."
+        },
+        "strategy": {
+          "es": "Cuando alguien dice «lo digo todos los años», está avisando de que su promesa es débil."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: en Belém el açaí se come dulce, igual que en São Paulo.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "açaí não é doce … Aqui vem com farinha e peixe. É outra comida.",
+      "feedback": {
+        "correct": {
+          "es": "Falso, y ella lo presenta como un descubrimiento: allí va con harina y pescado."
+        },
+        "incorrect": {
+          "es": "Busca la frase que empieza con «Aqui eu descobri uma coisa». Lo dice justo después."
+        },
+        "strategy": {
+          "es": "Cuando un texto anuncia un descubrimiento, lo que sigue contradice lo que se daba por sabido."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena los planes de Camila según la postal.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Ir al mercado Ver-o-Peso"
+        },
+        {
+          "id": "p2",
+          "text": "Comer açaí de verdad"
+        },
+        {
+          "id": "p3",
+          "text": "Visitar a la tía Zuleide el jueves"
+        },
+        {
+          "id": "p4",
+          "text": "Escribir más a su madre"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Amanhã eu vou no mercado … Depois eu vou comer açaí … Na quinta eu vou visitar a tia Zuleide … Eu vou escrever mais, mãe.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La postal ordena los planes con marcas de tiempo: amanhã, depois, na quinta."
+        },
+        "incorrect": {
+          "es": "Guíate por las marcas de tiempo: «amanhã», «depois», «na quinta». La última promesa no tiene fecha."
+        },
+        "strategy": {
+          "es": "Los planes con fecha van antes que los planes sin fecha. La ausencia de fecha ya dice algo."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe una postal de 5–7 frases en portugués desde una ciudad que conozcas. Usa el futuro con ir cuatro veces y tres verbos irregulares."
+    },
+    "minWords": 30,
+    "maxWords": 70,
+    "hints": [
+      "Oi mãe. Cheguei ontem.",
+      "Está fazendo muito calor…",
+      "Amanhã eu vou…",
+      "Eu vou… mais."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués A1: Postal desde Belém | WeLearn"
+    },
+    "description": {
+      "es": "Lee una postal en portugués de Brasil A1 y practica el futuro con ir y los verbos irregulares. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/a1/lectura/cartao-de-belem",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-a1-o-que-voce-vende-mais"
+    ]
+  }
+}

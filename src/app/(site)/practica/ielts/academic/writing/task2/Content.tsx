@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 import { ArrowRight, BookOpen, Braces, CheckCircle2, Clock3, FilePenLine, Headphones, Layers3, Route, Search, ShieldCheck, Wrench } from 'lucide-react';
+import task2Notes from '@/data/practica/podcasts/picking-the-task-2-lock';
+import EpisodeNotes from '@/components/practica/EpisodeNotes';
 import styles from './introduccion/page.module.css';
 
 const BUILD_PATH = [
@@ -105,6 +107,16 @@ export default function Task2HubPage() {
                 </div>
               </aside>
             </div>
+
+            <EpisodeNotes
+              sections={task2Notes}
+              tone={{
+                accent: 'var(--intro-red)',
+                ink: 'var(--intro-ink)',
+                muted: 'var(--intro-muted)',
+                line: 'var(--intro-line)',
+              }}
+            />
           </div>
         </section>
 

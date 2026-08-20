@@ -135,7 +135,7 @@ const EXERCISES: Exercise[] = [
 
 const TILE_COLORS: Record<BuildExercise['tiles'][0]['role'], { bg: string; border: string; color: string }> = {
   subject:  { bg: 'rgba(232,121,249,0.12)', border: 'rgba(232,121,249,0.4)', color: '#e879f9' },
-  object:   { bg: 'rgba(108,99,255,0.12)',  border: 'rgba(108,99,255,0.4)',  color: '#6c63ff' },
+  object:   { bg: 'rgba(108,99,255,0.12)',  border: 'rgba(108,99,255,0.4)',  color: 'var(--wl-on-panel-link, #6c63ff)' },
   verb:     { bg: 'rgba(34,197,94,0.12)',   border: 'rgba(34,197,94,0.4)',   color: '#22c55e' },
   modifier: { bg: 'rgba(245,158,11,0.12)', border: 'rgba(245,158,11,0.4)', color: '#f59e0b' },
   filler:   { bg: 'rgba(100,116,139,0.1)', border: 'rgba(100,116,139,0.3)', color: 'var(--muted-foreground)' },
@@ -257,7 +257,7 @@ function BuildExerciseView({
             style={{
               alignSelf: 'flex-start', padding: '5px 12px', borderRadius: 20, cursor: 'pointer',
               background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.28)',
-              fontSize: 11.5, fontWeight: 700, color: '#d97706',
+              fontSize: 11.5, fontWeight: 700, color: 'var(--wl-on-panel-warn, #d97706)',
               opacity: hintUsed && !hintVisible ? 0.55 : 1,
               transition: 'opacity 0.2s ease',
             }}
@@ -270,7 +270,7 @@ function BuildExerciseView({
               background: 'rgba(245,158,11,0.09)', border: '1px solid rgba(245,158,11,0.3)',
               animation: 'gp-in 0.25s ease both',
             }}>
-              <p style={{ margin: 0, fontSize: 12.5, color: '#92400e', lineHeight: 1.55 }}>
+              <p style={{ margin: 0, fontSize: 12.5, color: 'var(--wl-on-panel-warn, #92400e)', lineHeight: 1.55 }}>
                 💡 {ex.hint}
               </p>
             </div>
@@ -323,7 +323,7 @@ function BuildExerciseView({
           background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.3)',
           animation: 'gp-in 0.3s ease both',
         }}>
-          <p style={{ margin: 0, fontSize: 12.5, color: '#dc2626' }}>
+          <p style={{ margin: 0, fontSize: 12.5, color: 'var(--wl-on-panel-alert, #dc2626)' }}>
             ❌ Ese orden no es correcto. Revisa el patrón SOV e inténtalo de nuevo.
           </p>
         </div>
@@ -382,7 +382,7 @@ function BuildExerciseView({
             style={{
               flex: 1, padding: '12px', borderRadius: 13, cursor: 'pointer',
               background: 'rgba(239,68,68,0.1)', border: '1px solid rgba(239,68,68,0.3)',
-              fontSize: 13, fontWeight: 700, color: '#dc2626',
+              fontSize: 13, fontWeight: 700, color: 'var(--wl-on-panel-alert, #dc2626)',
             }}>
             🔄 Intentar de nuevo
           </button>
@@ -538,7 +538,7 @@ export default function GuidedProduction003({ onComplete }: Props) {
             <div key={s} style={{
               padding: '10px 16px', borderRadius: 12,
               background: 'rgba(34,197,94,0.09)', border: '1px solid rgba(34,197,94,0.25)',
-              fontSize: 14, fontWeight: 700, fontFamily: '"Noto Sans KR",sans-serif', color: '#16a34a',
+              fontSize: 14, fontWeight: 700, fontFamily: '"Noto Sans KR",sans-serif', color: 'var(--wl-on-panel-ok, #16a34a)',
             }}>{s}</div>
           ))}
         </div>

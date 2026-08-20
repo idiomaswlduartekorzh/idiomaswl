@@ -1,0 +1,459 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-a2-a-oficina-do-seu-jorge",
+  "status": "published",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Portugués A2"
+  },
+  "slug": "a-oficina-do-seu-jorge",
+  "series": {
+    "id": "portugues-a2-lectura-10",
+    "episode": 4,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-a2-carta-sobre-o-recreio",
+    "nextExerciseId": "pt-a2-voltar-para-a-cidade-pequena"
+  },
+  "classification": {
+    "genre": "reportaje breve",
+    "topic": "un taller de reparación",
+    "intent": "learning",
+    "tags": [
+      "portugues a2",
+      "lectura",
+      "pronombres oblicuos",
+      "relativos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El taller de Seu Jorge"
+    },
+    "intro": {
+      "es": "Un taller que arregla lo que las marcas ya no arreglan, y un cuaderno con dos mil nombres. Lectura de portugués A2 con los pronombres."
+    },
+    "mission": {
+      "es": "Averigua qué anota en el cuaderno y para qué le sirve."
+    },
+    "targetText": "Na rua Aurora existe uma oficina que conserta o que ninguém mais conserta. Ventilador de mil novecentos e oitenta. Rádio de válvula. Batedeira que a fábrica parou de fazer há vinte anos. O dono se chama Jorge, mas todo mundo o chama de Seu Jorge. Eu o encontrei numa terça de manhã. Ele estava com um liquidificador na mão, aquele modelo que tinha dois botões e um copo de vidro. A dona que o trouxe queria só o motor. Ele disse a ela que o motor estava bom e que o problema era outro. Ela não acreditou. Ele mostrou a ela. Era um fio solto. Cinco reais. Eu perguntei quantos aparelhos ele conserta por semana. Ele não me respondeu com um número. Ele me mostrou um caderno. No caderno estão os nomes das pessoas cujos aparelhos ele já consertou, com a data e o defeito. São quase duas mil linhas desde 1994. Eu perguntei por que ele anota isso. Ele me explicou que, quando alguém volta com o mesmo aparelho, ele precisa saber o que fez antes. E acrescentou uma coisa que eu não esperava: também serve para lembrar quem ainda não pagou. Ele riu. Depois disse que quase todos pagam, mas depois.",
+    "wordCount": 203,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Usar los pronombres oblicuos: o, a, me, lhe, e su colocación en la frase."
+      },
+      {
+        "es": "Encadenar relativos: que, o que, cujo, quem."
+      },
+      {
+        "es": "Seguir un reportaje donde el entrevistado responde con un objeto, no con palabras."
+      }
+    ],
+    "grammarFocus": [
+      "pronomes-obliquos-a2",
+      "pronomes-relativos-a2",
+      "pronomes-pessoais"
+    ],
+    "vocabulary": [
+      {
+        "surface": "oficina",
+        "lemma": "oficina",
+        "glosses": {
+          "es": "taller. ¡No es una oficina: eso es «escritório»!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "conserta",
+        "lemma": "consertar",
+        "glosses": {
+          "es": "arregla, repara"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Batedeira",
+        "lemma": "batedeira",
+        "glosses": {
+          "es": "batidora de varillas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "liquidificador",
+        "lemma": "liquidificador",
+        "glosses": {
+          "es": "batidora de vaso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fio",
+        "lemma": "fio",
+        "glosses": {
+          "es": "cable, hilo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "solto",
+        "lemma": "solto",
+        "glosses": {
+          "es": "suelto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "caderno",
+        "lemma": "caderno",
+        "glosses": {
+          "es": "cuaderno"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "acrescentou",
+        "lemma": "acrescentar",
+        "glosses": {
+          "es": "añadió"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Los talleres de reparación de pequeños electrodomésticos siguen siendo comunes en los barrios brasileños, y muchos sobreviven precisamente porque las marcas dejaron de fabricar repuestos."
+    },
+    "spanishSpeakerNote": {
+      "es": "«Oficina» en portugués es un taller mecánico o de reparación; la oficina de trabajo es «escritório». Es de los falsos amigos que más despistan al leer un cartel en la calle."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en portugués sobre hechos pasados y planes, distinguir el perfeito del imperfeito, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares",
+      "comparativos-superlativos-a2",
+      "condicional-a2",
+      "conjuncoes-logicas-a2",
+      "diminutivos-aumentativos-a2",
+      "expressoes-com-fazer-a2",
+      "expressoes-tempo-a2",
+      "futuro-do-presente-a2",
+      "gerundio-a2",
+      "ha-faz-tempo-a2",
+      "para-vs-por-a2",
+      "preterito-imperfeito-a2",
+      "preterito-perfeito-irregular-a2",
+      "pronomes-obliquos-a2",
+      "pronomes-relativos-a2",
+      "ser-vs-estar-a2",
+      "subjuntivo-presente-a2",
+      "verbo-ficar-a2",
+      "verbos-modais-a2",
+      "verbos-reflexivos-a2",
+      "voz-passiva-a2"
+    ],
+    "disallowedGrammar": [
+      "mais-que-perfeito composto",
+      "futuro do subjuntivo",
+      "registro literario"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 8.8,
+      "maxSentenceWords": 18,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Pasado narrativo (perfeito e imperfeito) y subjuntivo presente permitidos. Sin mais-que-perfeito compuesto ni futuro de subjuntivo. Inferencia ligera."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué retrata el reportaje?",
+      "options": [
+        {
+          "id": "registro",
+          "text": "Un taller que sobrevive arreglando lo descatalogado, y el cuaderno que lo sostiene"
+        },
+        {
+          "id": "cierre",
+          "text": "El cierre inminente de un taller antiguo"
+        },
+        {
+          "id": "marcas",
+          "text": "Una denuncia contra las marcas de electrodomésticos"
+        }
+      ],
+      "answer": "registro",
+      "evidence": "uma oficina que conserta o que ninguém mais conserta … Ele me mostrou um caderno.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La primera frase define el oficio y el cuaderno explica cómo se sostiene."
+        },
+        "incorrect": {
+          "es": "Nada indica que vaya a cerrar, y no hay denuncia: solo se constata que las marcas dejaron de fabricar."
+        },
+        "strategy": {
+          "es": "La primera frase de un reportaje suele definir el sujeto. Compárala con lo que se desarrolla después."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuál era el problema de la batidora de vaso?",
+      "options": [
+        {
+          "id": "fio",
+          "text": "Un cable suelto"
+        },
+        {
+          "id": "motor",
+          "text": "El motor quemado"
+        },
+        {
+          "id": "copo",
+          "text": "El vaso de cristal roto"
+        }
+      ],
+      "answer": "fio",
+      "evidence": "Ele disse a ela que o motor estava bom e que o problema era outro … Era um fio solto. Cinco reais.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El motor estaba bien, que es justo lo que la clienta no creía."
+        },
+        "incorrect": {
+          "es": "El texto dice expresamente que el motor estaba bien. Busca qué le enseñó a la dueña."
+        },
+        "strategy": {
+          "es": "Cuando un texto descarta una causa y anuncia otra, la verdadera viene después de los dos puntos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto empieza con «existe uma oficina». ¿Qué es una «oficina» en portugués?",
+      "options": [
+        {
+          "id": "taller",
+          "text": "Un taller de reparación"
+        },
+        {
+          "id": "despacho",
+          "text": "Una oficina de trabajo"
+        },
+        {
+          "id": "tienda",
+          "text": "Una tienda de electrodomésticos"
+        }
+      ],
+      "answer": "taller",
+      "evidence": "uma oficina que conserta o que ninguém mais conserta",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Es un falso amigo: la oficina de trabajo se dice «escritório»."
+        },
+        "incorrect": {
+          "es": "En un despacho no se arreglan ventiladores de 1980. Fíjate en el verbo que la define: «conserta»."
+        },
+        "strategy": {
+          "es": "Cuando un falso amigo va con una relativa que lo define, la relativa manda sobre el parecido."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué Seu Jorge responde con el cuaderno en vez de dar un número?",
+      "options": [
+        {
+          "id": "personas",
+          "text": "Porque para él el trabajo se cuenta en personas, no en aparatos"
+        },
+        {
+          "id": "memoria",
+          "text": "Porque no recuerda cuántos arregla"
+        },
+        {
+          "id": "secreto",
+          "text": "Porque no quiere revelar sus cifras"
+        }
+      ],
+      "answer": "personas",
+      "evidence": "No caderno estão os nomes das pessoas cujos aparelhos ele já consertou",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Lo que anota son nombres, no unidades. Esa es la respuesta que da sin decirla."
+        },
+        "incorrect": {
+          "es": "Tiene el registro completo desde 1994, así que no es falta de memoria ni secretismo."
+        },
+        "strategy": {
+          "es": "Si alguien responde con un objeto, mira qué contiene ese objeto. Ahí está su respuesta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el cuaderno le sirve también para saber quién no ha pagado.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "também serve para lembrar quem ainda não pagou. Ele riu.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y lo dice como algo añadido: es el segundo uso, y le hace gracia contarlo."
+        },
+        "incorrect": {
+          "es": "Busca lo que añade después de explicar el primer uso. La palabra clave es «também»."
+        },
+        "strategy": {
+          "es": "La palabra «também» introduce un segundo motivo. Si la ves, hay más de una razón."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "reference",
+      "skill": "reference",
+      "prompt": "En «Ele mostrou a ela», ¿a quién se refiere «a ela»?",
+      "options": [
+        {
+          "id": "dona",
+          "text": "A la señora que llevó la batidora"
+        },
+        {
+          "id": "periodista",
+          "text": "A la periodista que escribe el reportaje"
+        },
+        {
+          "id": "fabrica",
+          "text": "A la fábrica del aparato"
+        }
+      ],
+      "answer": "dona",
+      "evidence": "A dona que o trouxe queria só o motor. Ele disse a ela que o motor estava bom … Ela não acreditou. Ele mostrou a ela.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La secuencia es continua: la dueña no cree, y él se lo demuestra a ella."
+        },
+        "incorrect": {
+          "es": "Quien narra habla en primera persona («eu»), así que no es la periodista. Busca el sujeto femenino anterior."
+        },
+        "strategy": {
+          "es": "Un pronombre femenino remite al último sujeto femenino nombrado. Retrocede hasta encontrarlo."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en portugués sobre un negocio de barrio que resista. Usa tres pronombres oblicuos (o, a, me, lhe) y tres relativos distintos."
+    },
+    "minWords": 45,
+    "maxWords": 95,
+    "hints": [
+      "Na rua… existe uma oficina que…",
+      "Eu o encontrei…",
+      "Ele me mostrou…",
+      "as pessoas cujos… ele já consertou"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués A2: El taller de Seu Jorge | WeLearn"
+    },
+    "description": {
+      "es": "Lee un reportaje en portugués de Brasil A2 y practica los pronombres oblicuos y los relativos. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/a2/lectura/a-oficina-do-seu-jorge",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-a2-carta-sobre-o-recreio",
+      "pt-a2-voltar-para-a-cidade-pequena"
+    ]
+  }
+}

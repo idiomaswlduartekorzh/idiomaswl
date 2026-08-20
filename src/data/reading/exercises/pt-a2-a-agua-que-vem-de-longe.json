@@ -1,0 +1,459 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-a2-a-agua-que-vem-de-longe",
+  "status": "published",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Portugués A2"
+  },
+  "slug": "a-agua-que-vem-de-longe",
+  "series": {
+    "id": "portugues-a2-lectura-10",
+    "episode": 2,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-a2-o-erro-de-trinta-mil",
+    "nextExerciseId": "pt-a2-carta-sobre-o-recreio"
+  },
+  "classification": {
+    "genre": "artículo divulgativo",
+    "topic": "de dónde viene el agua de la ciudad",
+    "intent": "learning",
+    "tags": [
+      "portugues a2",
+      "lectura",
+      "futuro do presente",
+      "condicional"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El agua que viene de lejos"
+    },
+    "intro": {
+      "es": "El agua que sale del grifo en São Paulo viajó ochenta kilómetros y subió una montaña. Lectura de portugués A2 con el futuro y el condicional."
+    },
+    "mission": {
+      "es": "Averigua qué pasaría si el sistema fallara, y qué propone el artículo."
+    },
+    "targetText": "A água que sai da sua torneira em São Paulo não nasceu perto de você. Ela veio de oitenta quilômetros de distância, do sistema Cantareira, e subiu quase quinhentos metros de altura antes de chegar. Esse trabalho consome energia todos os dias, sem parar. Se as bombas parassem por doze horas, metade da cidade ficaria sem água. Não é uma hipótese distante: aconteceu em 2014. Naquele ano choveu muito pouco e os reservatórios chegaram a cinco por cento da capacidade. Muita gente guardava água em baldes dentro de casa. Segundo o relatório municipal publicado em março, a cidade terá um problema parecido em 2035 se nada mudar. A população crescerá, a chuva será menos regular e o consumo por pessoa continuará alto. O relatório propõe três medidas. A primeira é consertar os canos velhos: hoje a cidade perde trinta e um por cento da água em vazamentos, antes de ela chegar em qualquer casa. A segunda é captar água da chuva nos prédios novos. A terceira é a mais difícil: mudar o preço. Se a água custasse mais para quem gasta muito, o consumo cairia. Mas essa medida seria impopular, e por isso quase ninguém fala dela. O relatório fala. Está na página quarenta e sete.",
+    "wordCount": 206,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Formar el futuro do presente: terá, crescerá, será, continuará."
+      },
+      {
+        "es": "Usar el condicional para hipótesis: ficaria, cairia, seria."
+      },
+      {
+        "es": "Distinguir un dato comprobado de una previsión."
+      }
+    ],
+    "grammarFocus": [
+      "futuro-do-presente-a2",
+      "condicional-a2",
+      "ir-futuro"
+    ],
+    "vocabulary": [
+      {
+        "surface": "torneira",
+        "lemma": "torneira",
+        "glosses": {
+          "es": "grifo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "bombas",
+        "lemma": "bomba",
+        "glosses": {
+          "es": "bombas (de impulsión de agua)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "reservatórios",
+        "lemma": "reservatório",
+        "glosses": {
+          "es": "embalses, depósitos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "baldes",
+        "lemma": "balde",
+        "glosses": {
+          "es": "cubos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "canos",
+        "lemma": "cano",
+        "glosses": {
+          "es": "tuberías"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vazamentos",
+        "lemma": "vazamento",
+        "glosses": {
+          "es": "fugas de agua"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "captar",
+        "lemma": "captar",
+        "glosses": {
+          "es": "recoger, captar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "impopular",
+        "lemma": "impopular",
+        "glosses": {
+          "es": "impopular, mal recibida"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La crisis hídrica de São Paulo en 2014-2015 llegó a dejar los embalses del Cantareira por debajo del 5 % y marcó la política del agua de todo el estado."
+    },
+    "spanishSpeakerNote": {
+      "es": "Ojo con «vazamento»: es una fuga, no un vaciado programado. Y fíjate en la pareja: «terá um problema» es una previsión (futuro), mientras «ficaria sem água» es una hipótesis (condicional). El español hace la misma distinción."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en portugués sobre hechos pasados y planes, distinguir el perfeito del imperfeito, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares",
+      "comparativos-superlativos-a2",
+      "condicional-a2",
+      "conjuncoes-logicas-a2",
+      "diminutivos-aumentativos-a2",
+      "expressoes-com-fazer-a2",
+      "expressoes-tempo-a2",
+      "futuro-do-presente-a2",
+      "gerundio-a2",
+      "ha-faz-tempo-a2",
+      "para-vs-por-a2",
+      "preterito-imperfeito-a2",
+      "preterito-perfeito-irregular-a2",
+      "pronomes-obliquos-a2",
+      "pronomes-relativos-a2",
+      "ser-vs-estar-a2",
+      "subjuntivo-presente-a2",
+      "verbo-ficar-a2",
+      "verbos-modais-a2",
+      "verbos-reflexivos-a2",
+      "voz-passiva-a2"
+    ],
+    "disallowedGrammar": [
+      "mais-que-perfeito composto",
+      "futuro do subjuntivo",
+      "registro literario"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 12.1,
+      "maxSentenceWords": 27,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Pasado narrativo (perfeito e imperfeito) y subjuntivo presente permitidos. Sin mais-que-perfeito compuesto ni futuro de subjuntivo. Inferencia ligera."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué defiende el artículo?",
+      "options": [
+        {
+          "id": "medidas",
+          "text": "Que hay tres medidas posibles y la más eficaz es la que nadie menciona"
+        },
+        {
+          "id": "imposible",
+          "text": "Que el problema del agua no tiene solución"
+        },
+        {
+          "id": "lluvia",
+          "text": "Que todo depende de que llueva más"
+        }
+      ],
+      "answer": "medidas",
+      "evidence": "A terceira é a mais difícil: mudar o preço … Mas essa medida seria impopular, e por isso quase ninguém fala dela. O relatório fala.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el remate está en tres palabras: «O relatório fala». Es un elogio al informe por decir lo incómodo."
+        },
+        "incorrect": {
+          "es": "El artículo propone tres medidas concretas, así que no es un problema sin solución. Busca la tercera."
+        },
+        "strategy": {
+          "es": "Cuando un texto enumera opciones y destaca una como difícil, esa es la que le interesa."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué porcentaje del agua se pierde en fugas?",
+      "options": [
+        {
+          "id": "31",
+          "text": "Treinta y uno por ciento"
+        },
+        {
+          "id": "5",
+          "text": "Cinco por ciento"
+        },
+        {
+          "id": "47",
+          "text": "Cuarenta y siete por ciento"
+        }
+      ],
+      "answer": "31",
+      "evidence": "a cidade perde trinta e um por cento da água em vazamentos",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El cinco por ciento fue el nivel de los embalses en 2014, y el cuarenta y siete es la página del informe."
+        },
+        "incorrect": {
+          "es": "El artículo tiene tres cifras parecidas y cada una mide algo distinto. Busca la que va con «vazamentos»."
+        },
+        "strategy": {
+          "es": "Con varios porcentajes en un texto, empareja cada uno con su sustantivo antes de responder."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto habla de perder agua «em vazamentos». ¿Qué son?",
+      "options": [
+        {
+          "id": "fugas",
+          "text": "Fugas en las tuberías"
+        },
+        {
+          "id": "vaciados",
+          "text": "Vaciados programados de los embalses"
+        },
+        {
+          "id": "evaporacion",
+          "text": "Evaporación por el calor"
+        }
+      ],
+      "answer": "fugas",
+      "evidence": "a cidade perde trinta e um por cento da água em vazamentos, antes de ela chegar em qualquer casa",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Y la frase lo confirma: se pierde antes de llegar a ninguna casa, o sea, por el camino."
+        },
+        "incorrect": {
+          "es": "La frase dice que ocurre antes de llegar a las casas, es decir, en las tuberías. Y la primera medida es arreglarlas."
+        },
+        "strategy": {
+          "es": "Si un texto propone una solución, esa solución define el problema. Aquí: arreglar tuberías viejas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué casi nadie propone cambiar el precio del agua?",
+      "options": [
+        {
+          "id": "impopular",
+          "text": "Porque sería una medida impopular"
+        },
+        {
+          "id": "ilegal",
+          "text": "Porque la ley no lo permite"
+        },
+        {
+          "id": "inutil",
+          "text": "Porque no reduciría el consumo"
+        }
+      ],
+      "answer": "impopular",
+      "evidence": "Mas essa medida seria impopular, e por isso quase ninguém fala dela.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo dice con todas las letras, unido por «e por isso»."
+        },
+        "incorrect": {
+          "es": "El artículo dice que sí reduciría el consumo, y no menciona ninguna ley. Busca «e por isso»."
+        },
+        "strategy": {
+          "es": "La expresión «e por isso» une causa y consecuencia. Si la localizas, tienes la respuesta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: en 2014 los embalses llegaron a estar al cinco por ciento de su capacidad.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Naquele ano choveu muito pouco e os reservatórios chegaram a cinco por cento da capacidade.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y el texto lo usa para mostrar que la hipótesis no es teórica."
+        },
+        "incorrect": {
+          "es": "Busca el párrafo sobre 2014. Da la cifra exacta de los embalses."
+        },
+        "strategy": {
+          "es": "Cuando un texto dice «no es una hipótesis lejana», lo que sigue es el precedente real. Léelo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué termina el artículo diciendo «Está na página quarenta e sete»?",
+      "options": [
+        {
+          "id": "verificable",
+          "text": "Para que el lector pueda comprobarlo por sí mismo"
+        },
+        {
+          "id": "extenso",
+          "text": "Para señalar que el informe es demasiado largo"
+        },
+        {
+          "id": "escondido",
+          "text": "Para denunciar que la medida está escondida al final"
+        }
+      ],
+      "answer": "verificable",
+      "evidence": "O relatório fala. Está na página quarenta e sete.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Es un gesto periodístico: da la referencia exacta para que nadie tenga que fiarse de él."
+        },
+        "incorrect": {
+          "es": "No se queja de la extensión ni denuncia ocultación: acaba de elogiar al informe por decirlo."
+        },
+        "strategy": {
+          "es": "Una referencia exacta al final de un artículo suele ser una invitación a verificar, no una crítica."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en portugués sobre un recurso que escasee en tu ciudad. Usa cuatro verbos en futuro do presente y dos hipótesis en condicional."
+    },
+    "minWords": 45,
+    "maxWords": 95,
+    "hints": [
+      "A água que sai da sua torneira…",
+      "A cidade terá…",
+      "Se… parassem, … ficaria…",
+      "O relatório propõe três medidas."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués A2: El agua que viene de lejos | WeLearn"
+    },
+    "description": {
+      "es": "Lee un artículo divulgativo en portugués de Brasil A2 y practica el futuro do presente y el condicional. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/a2/lectura/a-agua-que-vem-de-longe",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-a2-o-erro-de-trinta-mil",
+      "pt-a2-carta-sobre-o-recreio"
+    ]
+  }
+}

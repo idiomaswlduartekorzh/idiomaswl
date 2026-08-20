@@ -31,8 +31,8 @@ type Exercise = BuildEx | ChoiceEx;
 
 /* ─── Data ───────────────────────────────────────────────────────────────── */
 const TILE_COLORS: Record<Tile['role'], { bg: string; border: string; color: string }> = {
-  subject: { bg: 'rgba(59,130,246,0.12)',  border: 'rgba(59,130,246,0.4)',  color: '#3b82f6' },
-  object:  { bg: 'rgba(245,158,11,0.12)',  border: 'rgba(245,158,11,0.4)',  color: '#d97706' },
+  subject: { bg: 'rgba(59,130,246,0.12)',  border: 'rgba(59,130,246,0.4)',  color: 'var(--wl-on-panel-link, #3b82f6)' },
+  object:  { bg: 'rgba(245,158,11,0.12)',  border: 'rgba(245,158,11,0.4)',  color: 'var(--wl-on-panel-warn, #d97706)' },
   verb:    { bg: 'rgba(34,197,94,0.12)',   border: 'rgba(34,197,94,0.4)',   color: '#22c55e' },
 };
 
@@ -179,12 +179,12 @@ function BuildView({
       {/* Hint */}
       <div>
         <button type="button" onClick={() => setShowHint(v => !v)}
-          style={{ padding: '5px 12px', borderRadius: 20, cursor: 'pointer', background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.28)', fontSize: 11.5, fontWeight: 700, color: '#d97706' }}>
+          style={{ padding: '5px 12px', borderRadius: 20, cursor: 'pointer', background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.28)', fontSize: 11.5, fontWeight: 700, color: 'var(--wl-on-panel-warn, #d97706)' }}>
           💡 {showHint ? 'Ocultar pista' : 'Ver pista'}
         </button>
         {showHint && (
           <div style={{ marginTop: 6, padding: '9px 13px', borderRadius: 10, background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.28)' }}>
-            <p style={{ margin: 0, fontSize: 12.5, color: '#92400e' }}>💡 {ex.hint}</p>
+            <p style={{ margin: 0, fontSize: 12.5, color: 'var(--wl-on-panel-warn, #92400e)' }}>💡 {ex.hint}</p>
           </div>
         )}
       </div>
@@ -218,7 +218,7 @@ function BuildView({
       {/* Feedback */}
       {status === 'wrong' && (
         <div style={{ padding: '10px 14px', borderRadius: 12, background: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.28)', animation: 'gp5-in 0.3s ease both' }}>
-          <p style={{ margin: 0, fontSize: 12.5, color: '#dc2626' }}>❌ Orden incorrecto. Inténtalo de nuevo.</p>
+          <p style={{ margin: 0, fontSize: 12.5, color: 'var(--wl-on-panel-alert, #dc2626)' }}>❌ Orden incorrecto. Inténtalo de nuevo.</p>
         </div>
       )}
       {status === 'correct' && stars !== null && (
@@ -262,7 +262,7 @@ function BuildView({
         )}
         {status === 'wrong' && (
           <button type="button" onClick={retry}
-            style={{ flex: 1, padding: '11px', borderRadius: 12, cursor: 'pointer', background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.28)', fontSize: 13, fontWeight: 700, color: '#dc2626' }}>
+            style={{ flex: 1, padding: '11px', borderRadius: 12, cursor: 'pointer', background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.28)', fontSize: 13, fontWeight: 700, color: 'var(--wl-on-panel-alert, #dc2626)' }}>
             🔄 Intentar de nuevo
           </button>
         )}

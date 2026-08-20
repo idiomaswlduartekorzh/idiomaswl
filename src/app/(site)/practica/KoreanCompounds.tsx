@@ -149,7 +149,7 @@ function CompoundCard({ compound, highlight }: { compound: KoreanCompound; highl
         <div style={{
           padding: '0.5rem 0.75rem', borderRadius: 8,
           background: 'rgba(83,74,183,0.06)', border: '1px solid rgba(83,74,183,0.2)',
-          fontSize: '0.78rem', color: '#534AB7', lineHeight: 1.55,
+          fontSize: '0.78rem', color: 'var(--wl-on-panel-link, #534AB7)', lineHeight: 1.55,
         }}>
           🔊 <strong>Nota:</strong> {compound.note}
         </div>
@@ -159,7 +159,7 @@ function CompoundCard({ compound, highlight }: { compound: KoreanCompound; highl
       <div style={{ display: 'flex', gap: '0.4rem', alignItems: 'center' }}>
         <span style={{
           fontSize: '0.65rem', fontFamily: 'var(--mono)', fontWeight: 800, padding: '0.15rem 0.5rem',
-          borderRadius: 6, background: 'rgba(5,150,105,0.08)', color: '#059669', border: '1px solid #05966944',
+          borderRadius: 6, background: 'rgba(5,150,105,0.08)', color: 'var(--wl-on-panel-ok, #059669)', border: '1px solid #05966944',
         }}>
           {compound.level}
         </span>
@@ -230,7 +230,7 @@ function CombineMode({ addXp }: { addXp: (n: number) => void }) {
       <AnimatePresence mode="wait">
         {result === 'none' && (
           <motion.div key="none" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
-            style={{ padding: '0.85rem 1rem', borderRadius: 12, background: 'rgba(217,119,6,0.07)', border: '1px solid rgba(217,119,6,0.25)', fontSize: '0.88rem', color: '#d97706', fontWeight: 600 }}>
+            style={{ padding: '0.85rem 1rem', borderRadius: 12, background: 'rgba(217,119,6,0.07)', border: '1px solid rgba(217,119,6,0.25)', fontSize: '0.88rem', color: 'var(--wl-on-panel-warn, #d97706)', fontWeight: 600 }}>
             🤔 Estas raíces no forman una palabra compuesta conocida. ¡Prueba otra combinación!
           </motion.div>
         )}
@@ -270,7 +270,7 @@ function CombineMode({ addXp }: { addXp: (n: number) => void }) {
       </div>
 
       {found.size > 0 && (
-        <div style={{ padding: '0.85rem 1rem', borderRadius: 12, background: 'rgba(5,150,105,0.07)', border: '1px solid rgba(5,150,105,0.2)', fontSize: '0.85rem', color: '#059669', fontWeight: 600 }}>
+        <div style={{ padding: '0.85rem 1rem', borderRadius: 12, background: 'rgba(5,150,105,0.07)', border: '1px solid rgba(5,150,105,0.2)', fontSize: '0.85rem', color: 'var(--wl-on-panel-ok, #059669)', fontWeight: 600 }}>
           ✅ Compuestos encontrados ({found.size}): {[...found].map(id => COMPOUNDS.find(c => c.id === id)!.hangul).join(' · ')}
         </div>
       )}
@@ -415,7 +415,7 @@ function QuizMode({ addXp }: { addXp: (n: number) => void }) {
         style={{ textAlign: 'center', padding: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'center' }}>
         <div style={{ fontSize: '3.5rem' }}>{pct >= 90 ? '🏆' : pct >= 70 ? '🎉' : '💪'}</div>
         <h3 style={{ fontWeight: 900, fontSize: '1.5rem', margin: 0, color: 'var(--ink)' }}>{msg}</h3>
-        <div style={{ fontSize: '2.5rem', fontWeight: 900, color: '#534AB7' }}>{score}/{questions.length}</div>
+        <div style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--wl-on-panel-link, #534AB7)' }}>{score}/{questions.length}</div>
         <p style={{ color: 'var(--muted)', margin: 0 }}>{pct}% de aciertos</p>
         <button onClick={restart} className="btn btn-sm" style={{ fontSize: '0.95rem', padding: '0.75rem 1.5rem', marginTop: '0.5rem' }}>
           Intentar de nuevo →
@@ -437,7 +437,7 @@ function QuizMode({ addXp }: { addXp: (n: number) => void }) {
         <span style={{ fontSize: '0.78rem', fontFamily: 'var(--mono)', color: 'var(--muted)', whiteSpace: 'nowrap' }}>
           {currentIdx + 1}/{questions.length}
         </span>
-        <span style={{ fontSize: '0.78rem', fontFamily: 'var(--mono)', color: '#059669', fontWeight: 700 }}>
+        <span style={{ fontSize: '0.78rem', fontFamily: 'var(--mono)', color: 'var(--wl-on-panel-ok, #059669)', fontWeight: 700 }}>
           ✓ {score}
         </span>
       </div>
@@ -451,7 +451,7 @@ function QuizMode({ addXp }: { addXp: (n: number) => void }) {
           <div className="wl-card" style={{ padding: '1.5rem', border: '1.5px solid rgba(83,74,183,0.2)' }}>
             {q.type === 'parts-to-meaning' ? (
               <>
-                <p style={{ margin: '0 0 1rem', fontSize: '0.8rem', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', color: '#534AB7', fontWeight: 800 }}>
+                <p style={{ margin: '0 0 1rem', fontSize: '0.8rem', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--wl-on-panel-link, #534AB7)', fontWeight: 800 }}>
                   ¿Qué significa esta combinación?
                 </p>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', justifyContent: 'center', marginBottom: '1.25rem', flexWrap: 'wrap' }}>
@@ -462,7 +462,7 @@ function QuizMode({ addXp }: { addXp: (n: number) => void }) {
               </>
             ) : (
               <>
-                <p style={{ margin: '0 0 1rem', fontSize: '0.8rem', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', color: '#534AB7', fontWeight: 800 }}>
+                <p style={{ margin: '0 0 1rem', fontSize: '0.8rem', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--wl-on-panel-link, #534AB7)', fontWeight: 800 }}>
                   ¿Cuáles raíces forman esta palabra?
                 </p>
                 <div style={{ textAlign: 'center', marginBottom: '1.25rem' }}>
@@ -498,8 +498,8 @@ function QuizMode({ addXp }: { addXp: (n: number) => void }) {
                         fontFamily: 'inherit', transition: 'all 0.15s', justifyContent: 'flex-start',
                       }}
                     >
-                      {chosen && isCorrect && <span style={{ color: '#059669', fontWeight: 800, marginRight: '0.25rem' }}>✓</span>}
-                      {chosen && isChosen && !isCorrect && <span style={{ color: '#dc2626', fontWeight: 800, marginRight: '0.25rem' }}>✗</span>}
+                      {chosen && isCorrect && <span style={{ color: 'var(--wl-on-panel-ok, #059669)', fontWeight: 800, marginRight: '0.25rem' }}>✓</span>}
+                      {chosen && isChosen && !isCorrect && <span style={{ color: 'var(--wl-on-panel-alert, #dc2626)', fontWeight: 800, marginRight: '0.25rem' }}>✗</span>}
                       <RootBlock root={pr0} size="sm" />
                       <span style={{ color: 'var(--muted)', fontWeight: 700 }}>+</span>
                       <RootBlock root={pr1} size="sm" />
@@ -588,11 +588,11 @@ export default function KoreanCompounds({ addXp = () => {} }: { addXp?: (n: numb
             background: 'none', border: 'none', cursor: 'pointer', fontSize: '1rem', color: 'var(--muted)',
           }}>✕</button>
 
-          <p style={{ margin: '0 0 0.4rem', fontSize: '0.72rem', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#059669', fontWeight: 800 }}>
+          <p style={{ margin: '0 0 0.4rem', fontSize: '0.72rem', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--wl-on-panel-ok, #059669)', fontWeight: 800 }}>
             El secreto del vocabulario coreano
           </p>
           <h2 style={{ margin: '0 0 0.75rem', fontSize: '1.25rem', fontWeight: 900, color: 'var(--ink)', lineHeight: 1.3 }}>
-            Las palabras compuestas — <span style={{ color: '#059669' }}>합성어</span>
+            Las palabras compuestas — <span style={{ color: 'var(--wl-on-panel-ok, #059669)' }}>합성어</span>
           </h2>
           <p style={{ margin: '0 0 1rem', fontSize: '0.88rem', color: 'var(--muted)', lineHeight: 1.65 }}>
             En coreano, puedes combinar dos palabras sencillas para crear una nueva.
@@ -614,7 +614,7 @@ export default function KoreanCompounds({ addXp = () => {} }: { addXp?: (n: numb
                 <span style={{ color: 'var(--muted)' }}>{ex.a}</span>
                 <span style={{ fontWeight: 700 }}>+</span>
                 <span style={{ color: 'var(--muted)' }}>{ex.b}</span>
-                <span style={{ fontWeight: 900, color: '#059669' }}>→</span>
+                <span style={{ fontWeight: 900, color: 'var(--wl-on-panel-ok, #059669)' }}>→</span>
                 <span style={{ fontWeight: 800 }}>{ex.r}</span>
               </div>
             ))}

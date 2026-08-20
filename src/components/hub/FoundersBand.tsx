@@ -35,7 +35,7 @@ export default function FoundersBand({
   return (
     <section className={s.band}>
       <div className={s.wrap}>
-        <p className={s.eyebrow} style={{ color: accent }}>{eyebrow}</p>
+        <p className={`${s.eyebrow} wl-route-accent-text`} style={{ color: accent }}>{eyebrow}</p>
         <h2 className={s.title}>{title}</h2>
         <p className={s.intro}>{intro}</p>
 
@@ -52,7 +52,7 @@ export default function FoundersBand({
             </div>
             <div>
               <p className={s.name}>José David Duarte Silva</p>
-              <p className={s.role} style={{ color: accent }}>Co-fundador · Políglota</p>
+              <p className={`${s.role} wl-route-accent-text`} style={{ color: accent }}>Co-fundador · Políglota</p>
               <p className={s.line}>{davidLine}</p>
               <div className={s.tags}>
                 {davidTags.map(t => <span key={t} className={s.tag}>{t}</span>)}
@@ -72,7 +72,7 @@ export default function FoundersBand({
             </div>
             <div>
               <p className={s.name}>Zhanna Korzh</p>
-              <p className={s.role} style={{ color: accent }}>Co-fundadora · Directora académica</p>
+              <p className={`${s.role} wl-route-accent-text`} style={{ color: accent }}>Co-fundadora · Directora académica</p>
               <p className={s.line}>{zhannaLine}</p>
               <div className={s.tags}>
                 {zhannaTags.map(t => <span key={t} className={s.tag}>{t}</span>)}

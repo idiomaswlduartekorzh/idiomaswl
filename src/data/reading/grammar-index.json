@@ -1,0 +1,2876 @@
+{
+  "note": "Generado por scripts/build-reading-grammar-index.mjs. No editar a mano.",
+  "source": "src/data/grammar/<idioma>/<nivel>/*.ts",
+  "languageDirs": {
+    "en": "ingles",
+    "fr": "frances",
+    "it": "italiano",
+    "de": "aleman",
+    "ru": "ruso",
+    "ja": "japones",
+    "ko": "coreano",
+    "pt": "portugues"
+  },
+  "languages": {
+    "en": {
+      "a1": [
+        {
+          "slug": "adjectives-basic",
+          "title": "Adjectives (basic)",
+          "category": "Nouns",
+          "file": "src/data/grammar/ingles/a1/adjectives-basic.ts"
+        },
+        {
+          "slug": "adverbs-frequency",
+          "title": "Adverbios de frecuencia",
+          "category": "Adverbs",
+          "file": "src/data/grammar/ingles/a1/adverbs-frequency.ts"
+        },
+        {
+          "slug": "articles",
+          "title": "Articles: a, an, the",
+          "category": "Nouns",
+          "file": "src/data/grammar/ingles/a1/articles.ts"
+        },
+        {
+          "slug": "can-ability",
+          "title": "Can (habilidad)",
+          "category": "Verbs",
+          "file": "src/data/grammar/ingles/a1/can-ability.ts"
+        },
+        {
+          "slug": "countable-uncountable",
+          "title": "Contables e incontables",
+          "category": "Nouns",
+          "file": "src/data/grammar/ingles/a1/countable-uncountable.ts"
+        },
+        {
+          "slug": "demonstratives",
+          "title": "Demonstratives",
+          "category": "Nouns",
+          "file": "src/data/grammar/ingles/a1/demonstratives.ts"
+        },
+        {
+          "slug": "going-to",
+          "title": "Going to (futuro)",
+          "category": "Tenses",
+          "file": "src/data/grammar/ingles/a1/going-to.ts"
+        },
+        {
+          "slug": "have-got",
+          "title": "Have got",
+          "category": "Verbs",
+          "file": "src/data/grammar/ingles/a1/have-got.ts"
+        },
+        {
+          "slug": "imperative",
+          "title": "Imperativo",
+          "category": "Verbs",
+          "file": "src/data/grammar/ingles/a1/imperative.ts"
+        },
+        {
+          "slug": "like-ing",
+          "title": "Like + -ing",
+          "category": "Verbs",
+          "file": "src/data/grammar/ingles/a1/like-ing.ts"
+        },
+        {
+          "slug": "object-pronouns",
+          "title": "Object pronouns",
+          "category": "Foundations",
+          "file": "src/data/grammar/ingles/a1/object-pronouns.ts"
+        },
+        {
+          "slug": "plural-nouns",
+          "title": "Plural nouns",
+          "category": "Nouns",
+          "file": "src/data/grammar/ingles/a1/plural-nouns.ts"
+        },
+        {
+          "slug": "possessive-adjectives",
+          "title": "Possessive adjectives",
+          "category": "Nouns",
+          "file": "src/data/grammar/ingles/a1/possessive-adjectives.ts"
+        },
+        {
+          "slug": "possessive-s",
+          "title": "Genitivo sajón (\\'s)",
+          "category": "Nouns",
+          "file": "src/data/grammar/ingles/a1/possessive-s.ts"
+        },
+        {
+          "slug": "prepositions-place",
+          "title": "Prepositions of Place",
+          "category": "Prepositions",
+          "file": "src/data/grammar/ingles/a1/prepositions-place.ts"
+        },
+        {
+          "slug": "prepositions-time",
+          "title": "Preposiciones de tiempo",
+          "category": "Prepositions",
+          "file": "src/data/grammar/ingles/a1/prepositions-time.ts"
+        },
+        {
+          "slug": "present-continuous",
+          "title": "Present Continuous",
+          "category": "Verbs",
+          "file": "src/data/grammar/ingles/a1/present-continuous.ts"
+        },
+        {
+          "slug": "present-simple-affirmative",
+          "title": "Present simple (afirmativo)",
+          "category": "Verbs",
+          "file": "src/data/grammar/ingles/a1/present-simple-affirmative.ts"
+        },
+        {
+          "slug": "present-simple-negative",
+          "title": "Present simple (negativo)",
+          "category": "Verbs",
+          "file": "src/data/grammar/ingles/a1/present-simple-negative.ts"
+        },
+        {
+          "slug": "present-simple-questions",
+          "title": "Present simple (preguntas)",
+          "category": "Verbs",
+          "file": "src/data/grammar/ingles/a1/present-simple-questions.ts"
+        },
+        {
+          "slug": "subject-pronouns",
+          "title": "Subject pronouns",
+          "category": "Foundations",
+          "file": "src/data/grammar/ingles/a1/subject-pronouns.ts"
+        },
+        {
+          "slug": "telling-time",
+          "title": "La hora en inglés",
+          "category": "Expressions",
+          "file": "src/data/grammar/ingles/a1/telling-time.ts"
+        },
+        {
+          "slug": "there-is-there-are",
+          "title": "There is / There are",
+          "category": "Structure",
+          "file": "src/data/grammar/ingles/a1/there-is-there-are.ts"
+        },
+        {
+          "slug": "verb-to-be",
+          "title": "Verb to be",
+          "category": "Foundations",
+          "file": "src/data/grammar/ingles/a1/verb-to-be.ts"
+        },
+        {
+          "slug": "wh-questions",
+          "title": "WH questions",
+          "category": "Questions",
+          "file": "src/data/grammar/ingles/a1/wh-questions.ts"
+        }
+      ],
+      "a2": [
+        {
+          "slug": "adverbs-manner",
+          "title": "Adverbios de Modo",
+          "category": "Adverbs",
+          "file": "src/data/grammar/ingles/a2/adverbs-manner.ts"
+        },
+        {
+          "slug": "comparatives",
+          "title": "Comparativos",
+          "category": "Adjectives",
+          "file": "src/data/grammar/ingles/a2/comparatives.ts"
+        },
+        {
+          "slug": "connectors-a2",
+          "title": "Because / So / Although",
+          "category": "Cohesión del discurso",
+          "file": "src/data/grammar/ingles/a2/connectors.ts"
+        },
+        {
+          "slug": "first-conditional",
+          "title": "1er Condicional",
+          "category": "Verbs",
+          "file": "src/data/grammar/ingles/a2/first-conditional.ts"
+        },
+        {
+          "slug": "have-to-must",
+          "title": "Have to / Must",
+          "category": "Modals",
+          "file": "src/data/grammar/ingles/a2/have-to-must.ts"
+        },
+        {
+          "slug": "past-continuous-a2",
+          "title": "Past Continuous",
+          "category": "Verbs",
+          "file": "src/data/grammar/ingles/a2/past-continuous.ts"
+        },
+        {
+          "slug": "past-simple-be",
+          "title": "Was / Were",
+          "category": "Verbs",
+          "file": "src/data/grammar/ingles/a2/past-simple-be.ts"
+        },
+        {
+          "slug": "past-simple-irregular",
+          "title": "Irregulares en Pasado",
+          "category": "Verbs",
+          "file": "src/data/grammar/ingles/a2/past-simple-irregular.ts"
+        },
+        {
+          "slug": "past-simple-questions",
+          "title": "Did / Didn\\'t",
+          "category": "Verbs",
+          "file": "src/data/grammar/ingles/a2/past-simple-questions.ts"
+        },
+        {
+          "slug": "past-simple-regular",
+          "title": "Past Simple Regular",
+          "category": "Verbs",
+          "file": "src/data/grammar/ingles/a2/past-simple-regular.ts"
+        },
+        {
+          "slug": "prepositions-movement-a2",
+          "title": "Into / Through / Along",
+          "category": "Preposiciones",
+          "file": "src/data/grammar/ingles/a2/prepositions-movement.ts"
+        },
+        {
+          "slug": "present-continuous-future-a2",
+          "title": "Futuro: Present Continuous",
+          "category": "Futuro",
+          "file": "src/data/grammar/ingles/a2/present-continuous-future.ts"
+        },
+        {
+          "slug": "present-perfect-basic",
+          "title": "Present Perfect",
+          "category": "Verbs",
+          "file": "src/data/grammar/ingles/a2/present-perfect-basic.ts"
+        },
+        {
+          "slug": "present-perfect-ever-never",
+          "title": "Ever / Never / Already / Yet",
+          "category": "Verbs",
+          "file": "src/data/grammar/ingles/a2/present-perfect-ever-never.ts"
+        },
+        {
+          "slug": "present-perfect-vs-past-simple",
+          "title": "PP vs. Past Simple",
+          "category": "Verbs",
+          "file": "src/data/grammar/ingles/a2/present-perfect-vs-past-simple.ts"
+        },
+        {
+          "slug": "quantifiers",
+          "title": "Cuantificadores",
+          "category": "Nouns",
+          "file": "src/data/grammar/ingles/a2/quantifiers.ts"
+        },
+        {
+          "slug": "relative-clauses-a2",
+          "title": "Who / Which / That",
+          "category": "Sintaxis",
+          "file": "src/data/grammar/ingles/a2/relative-clauses.ts"
+        },
+        {
+          "slug": "should-advice",
+          "title": "Should",
+          "category": "Modals",
+          "file": "src/data/grammar/ingles/a2/should-advice.ts"
+        },
+        {
+          "slug": "superlatives",
+          "title": "Superlativos",
+          "category": "Adjectives",
+          "file": "src/data/grammar/ingles/a2/superlatives.ts"
+        },
+        {
+          "slug": "used-to-a2",
+          "title": "Used to",
+          "category": "Tiempo pasado",
+          "file": "src/data/grammar/ingles/a2/used-to.ts"
+        },
+        {
+          "slug": "will-future",
+          "title": "Will",
+          "category": "Verbs",
+          "file": "src/data/grammar/ingles/a2/will-future.ts"
+        }
+      ],
+      "b1": [
+        {
+          "slug": "articles-advanced-b1",
+          "title": "Artículos Avanzados",
+          "category": "Grammar",
+          "file": "src/data/grammar/ingles/b1/articles-advanced-b1.ts"
+        },
+        {
+          "slug": "comparison-adjectives-adverbs-b1",
+          "title": "Comparativos y Superlativos",
+          "category": "Grammar",
+          "file": "src/data/grammar/ingles/b1/comparison-adjectives-adverbs-b1.ts"
+        },
+        {
+          "slug": "first-conditional-b1",
+          "title": "First Conditional",
+          "category": "Conditionals",
+          "file": "src/data/grammar/ingles/b1/first-conditional-b1.ts"
+        },
+        {
+          "slug": "future-will-going-to-b1",
+          "title": "Will vs Going To",
+          "category": "Verbs",
+          "file": "src/data/grammar/ingles/b1/future-will-going-to-b1.ts"
+        },
+        {
+          "slug": "gerunds-infinitives-b1",
+          "title": "Gerundios e Infinitivos",
+          "category": "Verbs",
+          "file": "src/data/grammar/ingles/b1/gerunds-infinitives-b1.ts"
+        },
+        {
+          "slug": "linking-words-b1",
+          "title": "Linking Words",
+          "category": "Writing",
+          "file": "src/data/grammar/ingles/b1/linking-words-b1.ts"
+        },
+        {
+          "slug": "modals-must-have-to-b1",
+          "title": "Must / Have To",
+          "category": "Modals",
+          "file": "src/data/grammar/ingles/b1/modals-must-have-to-b1.ts"
+        },
+        {
+          "slug": "passive-voice-b1",
+          "title": "Passive Voice",
+          "category": "Structure",
+          "file": "src/data/grammar/ingles/b1/passive-voice-b1.ts"
+        },
+        {
+          "slug": "past-continuous-b1",
+          "title": "Past Continuous",
+          "category": "Verbs",
+          "file": "src/data/grammar/ingles/b1/past-continuous-b1.ts"
+        },
+        {
+          "slug": "past-perfect-b1",
+          "title": "Past Perfect",
+          "category": "Verbs",
+          "file": "src/data/grammar/ingles/b1/past-perfect-b1.ts"
+        },
+        {
+          "slug": "phrasal-verbs-common-b1",
+          "title": "Phrasal Verbs",
+          "category": "Vocabulary",
+          "file": "src/data/grammar/ingles/b1/phrasal-verbs-common-b1.ts"
+        },
+        {
+          "slug": "present-perfect-continuous-b1",
+          "title": "Present Perfect Continuous",
+          "category": "Verbs",
+          "file": "src/data/grammar/ingles/b1/present-perfect-continuous-b1.ts"
+        },
+        {
+          "slug": "present-perfect-simple-b1",
+          "title": "Present Perfect Simple",
+          "category": "Verbs",
+          "file": "src/data/grammar/ingles/b1/present-perfect-simple-b1.ts"
+        },
+        {
+          "slug": "quantifiers-b1",
+          "title": "Cuantificadores",
+          "category": "Grammar",
+          "file": "src/data/grammar/ingles/b1/quantifiers-b1.ts"
+        },
+        {
+          "slug": "question-tags-b1",
+          "title": "Question Tags",
+          "category": "Grammar",
+          "file": "src/data/grammar/ingles/b1/question-tags-b1.ts"
+        },
+        {
+          "slug": "relative-clauses-b1",
+          "title": "Relative Clauses",
+          "category": "Structure",
+          "file": "src/data/grammar/ingles/b1/relative-clauses-b1.ts"
+        },
+        {
+          "slug": "reported-speech-b1",
+          "title": "Reported Speech",
+          "category": "Grammar",
+          "file": "src/data/grammar/ingles/b1/reported-speech-b1.ts"
+        },
+        {
+          "slug": "second-conditional-b1",
+          "title": "Second Conditional",
+          "category": "Conditionals",
+          "file": "src/data/grammar/ingles/b1/second-conditional-b1.ts"
+        },
+        {
+          "slug": "time-clauses-b1",
+          "title": "Oraciones Temporales",
+          "category": "Grammar",
+          "file": "src/data/grammar/ingles/b1/time-clauses-b1.ts"
+        },
+        {
+          "slug": "wish-clauses-b1",
+          "title": "Wish Clauses",
+          "category": "Grammar",
+          "file": "src/data/grammar/ingles/b1/wish-clauses-b1.ts"
+        }
+      ]
+    },
+    "fr": {
+      "a1": [
+        {
+          "slug": "adjectifs-possessifs",
+          "title": "Adjectifs possessifs",
+          "category": "Déterminants",
+          "file": "src/data/grammar/frances/a1/adjectifs-possessifs.ts"
+        },
+        {
+          "slug": "adjectifs-qualificatifs",
+          "title": "Adjectifs qualificatifs",
+          "category": "Adjectifs",
+          "file": "src/data/grammar/frances/a1/adjectifs-qualificatifs.ts"
+        },
+        {
+          "slug": "adverbes-frequence",
+          "title": "Adverbes de fréquence",
+          "category": "Adverbes",
+          "file": "src/data/grammar/frances/a1/adverbes-frequence.ts"
+        },
+        {
+          "slug": "articles",
+          "title": "Articles",
+          "category": "Noms",
+          "file": "src/data/grammar/frances/a1/articles.ts"
+        },
+        {
+          "slug": "futur-proche",
+          "title": "Futur proche",
+          "category": "Verbes",
+          "file": "src/data/grammar/frances/a1/futur-proche.ts"
+        },
+        {
+          "slug": "genre-noms",
+          "title": "Genre des noms",
+          "category": "Noms",
+          "file": "src/data/grammar/frances/a1/genre-noms.ts"
+        },
+        {
+          "slug": "imperatif",
+          "title": "L\\'impératif",
+          "category": "Verbes",
+          "file": "src/data/grammar/frances/a1/imperatif.ts"
+        },
+        {
+          "slug": "negation-ne-pas",
+          "title": "Négation ne...pas",
+          "category": "Syntaxe",
+          "file": "src/data/grammar/frances/a1/negation-ne-pas.ts"
+        },
+        {
+          "slug": "pluriel-noms",
+          "title": "Pluriel des noms",
+          "category": "Noms",
+          "file": "src/data/grammar/frances/a1/pluriel-noms.ts"
+        },
+        {
+          "slug": "prepositions-lieu",
+          "title": "Prépositions de lieu",
+          "category": "Prépositions",
+          "file": "src/data/grammar/frances/a1/prepositions-lieu.ts"
+        },
+        {
+          "slug": "prepositions-temps",
+          "title": "Prépositions de temps",
+          "category": "Prépositions",
+          "file": "src/data/grammar/frances/a1/prepositions-temps.ts"
+        },
+        {
+          "slug": "present-verbes-er",
+          "title": "Présent verbes -ER",
+          "category": "Verbes",
+          "file": "src/data/grammar/frances/a1/present-verbes-er.ts"
+        },
+        {
+          "slug": "present-verbes-ir",
+          "title": "Présent verbes -IR",
+          "category": "Verbes",
+          "file": "src/data/grammar/frances/a1/present-verbes-ir.ts"
+        },
+        {
+          "slug": "pronoms-sujet",
+          "title": "Pronoms sujets",
+          "category": "Pronoms",
+          "file": "src/data/grammar/frances/a1/pronoms-sujet.ts"
+        },
+        {
+          "slug": "questions",
+          "title": "Questions",
+          "category": "Syntaxe",
+          "file": "src/data/grammar/frances/a1/questions.ts"
+        },
+        {
+          "slug": "verbe-avoir",
+          "title": "Verbe avoir",
+          "category": "Verbes",
+          "file": "src/data/grammar/frances/a1/verbe-avoir.ts"
+        },
+        {
+          "slug": "verbe-etre",
+          "title": "Verbe être",
+          "category": "Verbes",
+          "file": "src/data/grammar/frances/a1/verbe-etre.ts"
+        },
+        {
+          "slug": "verbes-irreguliers",
+          "title": "Verbes irréguliers",
+          "category": "Verbes",
+          "file": "src/data/grammar/frances/a1/verbes-irreguliers.ts"
+        }
+      ],
+      "a2": [
+        {
+          "slug": "accord-participe-passe",
+          "title": "Acuerdo participio pasado",
+          "category": "Verbos",
+          "file": "src/data/grammar/frances/a2/accord-participe-passe.ts"
+        },
+        {
+          "slug": "cause-consequence",
+          "title": "Causa y consecuencia",
+          "category": "Cohesión textual",
+          "file": "src/data/grammar/frances/a2/cause-consequence.ts"
+        },
+        {
+          "slug": "comparatifs",
+          "title": "Comparativos",
+          "category": "Comparación",
+          "file": "src/data/grammar/frances/a2/comparatifs.ts"
+        },
+        {
+          "slug": "conditionnel-present",
+          "title": "Conditionnel présent",
+          "category": "Verbos",
+          "file": "src/data/grammar/frances/a2/conditionnel-present.ts"
+        },
+        {
+          "slug": "connecteurs",
+          "title": "Conectores discursivos",
+          "category": "Cohesión textual",
+          "file": "src/data/grammar/frances/a2/connecteurs.ts"
+        },
+        {
+          "slug": "discours-indirect",
+          "title": "Discurso indirecto",
+          "category": "Sintaxis",
+          "file": "src/data/grammar/frances/a2/discours-indirect.ts"
+        },
+        {
+          "slug": "dont-relatif",
+          "title": "Relativos qui/que/où/dont",
+          "category": "Pronombres",
+          "file": "src/data/grammar/frances/a2/dont-relatif.ts"
+        },
+        {
+          "slug": "futur-simple",
+          "title": "Futur simple",
+          "category": "Verbos",
+          "file": "src/data/grammar/frances/a2/futur-simple.ts"
+        },
+        {
+          "slug": "gerondif",
+          "title": "Gérondif (en faisant)",
+          "category": "Verbos",
+          "file": "src/data/grammar/frances/a2/gerondif.ts"
+        },
+        {
+          "slug": "imparfait",
+          "title": "Imparfait",
+          "category": "Verbos",
+          "file": "src/data/grammar/frances/a2/imparfait.ts"
+        },
+        {
+          "slug": "negation-avancee",
+          "title": "Negación avanzada",
+          "category": "Negación",
+          "file": "src/data/grammar/frances/a2/negation-avancee.ts"
+        },
+        {
+          "slug": "passe-compose-avoir",
+          "title": "Passé composé (avoir)",
+          "category": "Verbos",
+          "file": "src/data/grammar/frances/a2/passe-compose-avoir.ts"
+        },
+        {
+          "slug": "passe-compose-etre",
+          "title": "Passé composé (être)",
+          "category": "Verbos",
+          "file": "src/data/grammar/frances/a2/passe-compose-etre.ts"
+        },
+        {
+          "slug": "passe-compose-vs-imparfait",
+          "title": "PC vs. Imparfait",
+          "category": "Verbos",
+          "file": "src/data/grammar/frances/a2/passe-compose-vs-imparfait.ts"
+        },
+        {
+          "slug": "pronoms-coi",
+          "title": "Pronombres COI (lui/leur)",
+          "category": "Pronombres",
+          "file": "src/data/grammar/frances/a2/pronoms-coi.ts"
+        },
+        {
+          "slug": "pronoms-y-en",
+          "title": "Pronombres y/en",
+          "category": "Pronombres",
+          "file": "src/data/grammar/frances/a2/pronoms-y-en.ts"
+        },
+        {
+          "slug": "si-conditionnel",
+          "title": "Si + condicionnel",
+          "category": "Condicional",
+          "file": "src/data/grammar/frances/a2/si-conditionnel.ts"
+        },
+        {
+          "slug": "subjonctif-present",
+          "title": "Subjuntivo presente",
+          "category": "Modos verbales",
+          "file": "src/data/grammar/frances/a2/subjonctif-present.ts"
+        },
+        {
+          "slug": "superlatifs",
+          "title": "Superlativos",
+          "category": "Comparación",
+          "file": "src/data/grammar/frances/a2/superlatifs.ts"
+        },
+        {
+          "slug": "verbes-pronominaux",
+          "title": "Verbos pronominales",
+          "category": "Verbos",
+          "file": "src/data/grammar/frances/a2/verbes-pronominaux.ts"
+        }
+      ],
+      "b1": [
+        {
+          "slug": "accord-participe-passe-b1",
+          "title": "Accord Participe Passé",
+          "category": "Concordancia",
+          "file": "src/data/grammar/frances/b1/accord-participe-passe-b1.ts"
+        },
+        {
+          "slug": "comparatif-superlatif-b1",
+          "title": "Comparatif & Superlatif",
+          "category": "Adjetivos",
+          "file": "src/data/grammar/frances/b1/comparatif-superlatif-b1.ts"
+        },
+        {
+          "slug": "conditionnel-present-b1",
+          "title": "Conditionnel Présent",
+          "category": "Verbes",
+          "file": "src/data/grammar/frances/b1/conditionnel-present-b1.ts"
+        },
+        {
+          "slug": "connecteurs-logiques-b1",
+          "title": "Connecteurs Logiques",
+          "category": "Conectores",
+          "file": "src/data/grammar/frances/b1/connecteurs-logiques-b1.ts"
+        },
+        {
+          "slug": "discours-indirect-b1",
+          "title": "Discours Indirect",
+          "category": "Discurso",
+          "file": "src/data/grammar/frances/b1/discours-indirect-b1.ts"
+        },
+        {
+          "slug": "expressions-temporelles-b1",
+          "title": "Expressions Temporelles",
+          "category": "Tiempo",
+          "file": "src/data/grammar/frances/b1/expressions-temporelles-b1.ts"
+        },
+        {
+          "slug": "futur-simple-b1",
+          "title": "Futur Simple",
+          "category": "Verbes",
+          "file": "src/data/grammar/frances/b1/futur-simple-b1.ts"
+        },
+        {
+          "slug": "gerondif-b1",
+          "title": "Gérondif",
+          "category": "Verbos",
+          "file": "src/data/grammar/frances/b1/gerondif-b1.ts"
+        },
+        {
+          "slug": "hypothese-si-b1",
+          "title": "Hypothèse avec Si",
+          "category": "Condicionales",
+          "file": "src/data/grammar/frances/b1/hypothese-si-b1.ts"
+        },
+        {
+          "slug": "imperatif-b1",
+          "title": "Impératif",
+          "category": "Verbos",
+          "file": "src/data/grammar/frances/b1/imperatif-b1.ts"
+        },
+        {
+          "slug": "negation-avancee-b1",
+          "title": "Négation Avancée",
+          "category": "Negación",
+          "file": "src/data/grammar/frances/b1/negation-avancee-b1.ts"
+        },
+        {
+          "slug": "nominalisation-b1",
+          "title": "Nominalisation",
+          "category": "Vocabulario",
+          "file": "src/data/grammar/frances/b1/nominalisation-b1.ts"
+        },
+        {
+          "slug": "participe-present-b1",
+          "title": "Participe Présent",
+          "category": "Verbos",
+          "file": "src/data/grammar/frances/b1/participe-present-b1.ts"
+        },
+        {
+          "slug": "passe-compose-vs-imparfait-b1",
+          "title": "Passé Composé vs Imparfait",
+          "category": "Verbes",
+          "file": "src/data/grammar/frances/b1/passe-compose-vs-imparfait-b1.ts"
+        },
+        {
+          "slug": "plus-que-parfait-b1",
+          "title": "Plus-que-parfait",
+          "category": "Verbes",
+          "file": "src/data/grammar/frances/b1/plus-que-parfait-b1.ts"
+        },
+        {
+          "slug": "pronoms-relatifs-b1",
+          "title": "Pronoms Relatifs",
+          "category": "Estructura",
+          "file": "src/data/grammar/frances/b1/pronoms-relatifs-b1.ts"
+        },
+        {
+          "slug": "pronoms-y-en-b1",
+          "title": "Pronoms Y et En",
+          "category": "Pronombres",
+          "file": "src/data/grammar/frances/b1/pronoms-y-en-b1.ts"
+        },
+        {
+          "slug": "questions-indirectes-b1",
+          "title": "Questions Indirectes",
+          "category": "Preguntas",
+          "file": "src/data/grammar/frances/b1/questions-indirectes-b1.ts"
+        },
+        {
+          "slug": "subjonctif-present-b1",
+          "title": "Subjonctif Présent",
+          "category": "Verbes",
+          "file": "src/data/grammar/frances/b1/subjonctif-present-b1.ts"
+        },
+        {
+          "slug": "voix-passive-b1",
+          "title": "Voix Passive",
+          "category": "Structure",
+          "file": "src/data/grammar/frances/b1/voix-passive-b1.ts"
+        }
+      ]
+    },
+    "it": {
+      "a1": [
+        {
+          "slug": "aggettivi-possessivi",
+          "title": "Posesivos (mio/tuo/suo...)",
+          "category": "Determinantes",
+          "file": "src/data/grammar/italiano/a1/aggettivi-possessivi.ts"
+        },
+        {
+          "slug": "aggettivi-qualificativi",
+          "title": "Adjetivos calificativos",
+          "category": "Adjetivos",
+          "file": "src/data/grammar/italiano/a1/aggettivi-qualificativi.ts"
+        },
+        {
+          "slug": "articoli",
+          "title": "Articoli (il/la/un/una)",
+          "category": "Artículos",
+          "file": "src/data/grammar/italiano/a1/articoli.ts"
+        },
+        {
+          "slug": "avverbi-frequenza",
+          "title": "Avverbi di frequenza",
+          "category": "Avverbi",
+          "file": "src/data/grammar/italiano/a1/avverbi-frequenza.ts"
+        },
+        {
+          "slug": "ce-ci-sono",
+          "title": "C\\'è / Ci sono (hay)",
+          "category": "Estructura de la oración",
+          "file": "src/data/grammar/italiano/a1/ce-ci-sono.ts"
+        },
+        {
+          "slug": "domande-interrogativi",
+          "title": "Preguntas (chi, cosa, dove...)",
+          "category": "Estructura de la oración",
+          "file": "src/data/grammar/italiano/a1/domande-interrogativi.ts"
+        },
+        {
+          "slug": "genere-numero",
+          "title": "Genere e numero",
+          "category": "Sustantivos",
+          "file": "src/data/grammar/italiano/a1/genere-numero.ts"
+        },
+        {
+          "slug": "imperativo",
+          "title": "Imperativo",
+          "category": "Verbi",
+          "file": "src/data/grammar/italiano/a1/imperativo.ts"
+        },
+        {
+          "slug": "negazione",
+          "title": "Negación (non)",
+          "category": "Estructura de la oración",
+          "file": "src/data/grammar/italiano/a1/negazione.ts"
+        },
+        {
+          "slug": "preposizioni-articolate",
+          "title": "Preposiciones articuladas",
+          "category": "Preposiciones",
+          "file": "src/data/grammar/italiano/a1/preposizioni-articolate.ts"
+        },
+        {
+          "slug": "preposizioni-semplici",
+          "title": "Preposiciones simples",
+          "category": "Preposiciones",
+          "file": "src/data/grammar/italiano/a1/preposizioni-semplici.ts"
+        },
+        {
+          "slug": "presente-verbi-are",
+          "title": "Presente -are",
+          "category": "Verbos",
+          "file": "src/data/grammar/italiano/a1/presente-verbi-are.ts"
+        },
+        {
+          "slug": "presente-verbi-ere-ire",
+          "title": "Presente -ere/-ire",
+          "category": "Verbos",
+          "file": "src/data/grammar/italiano/a1/presente-verbi-ere-ire.ts"
+        },
+        {
+          "slug": "pronomi-soggetto",
+          "title": "Pronomi soggetto",
+          "category": "Pronombres",
+          "file": "src/data/grammar/italiano/a1/pronomi-soggetto.ts"
+        },
+        {
+          "slug": "stare-gerundio",
+          "title": "Stare + gerundio",
+          "category": "Verbi",
+          "file": "src/data/grammar/italiano/a1/stare-gerundio.ts"
+        },
+        {
+          "slug": "verbi-irregolari",
+          "title": "Verbos irregulares",
+          "category": "Verbos",
+          "file": "src/data/grammar/italiano/a1/verbi-irregolari.ts"
+        },
+        {
+          "slug": "verbo-avere",
+          "title": "Avere (tener)",
+          "category": "Verbos",
+          "file": "src/data/grammar/italiano/a1/verbo-avere.ts"
+        },
+        {
+          "slug": "verbo-essere",
+          "title": "Essere (ser/estar)",
+          "category": "Verbos",
+          "file": "src/data/grammar/italiano/a1/verbo-essere.ts"
+        }
+      ],
+      "a2": [
+        {
+          "slug": "avverbi-frequenza-modo-a2",
+          "title": "Avverbi",
+          "category": "Vocabulario",
+          "file": "src/data/grammar/italiano/a2/avverbi-frequenza-modo-a2.ts"
+        },
+        {
+          "slug": "ci-vuole-vogliono-a2",
+          "title": "Ci vuole / ci vogliono",
+          "category": "Espressioni impersonali",
+          "file": "src/data/grammar/italiano/a2/ci-vuole-vogliono-a2.ts"
+        },
+        {
+          "slug": "comparativi-a2",
+          "title": "Comparativos",
+          "category": "Comparativi",
+          "file": "src/data/grammar/italiano/a2/comparativi-a2.ts"
+        },
+        {
+          "slug": "condizionale-presente-a2",
+          "title": "Condizionale presente",
+          "category": "Condizionale",
+          "file": "src/data/grammar/italiano/a2/condizionale-presente-a2.ts"
+        },
+        {
+          "slug": "congiunzioni-logiche-a2",
+          "title": "Conjunciones lógicas",
+          "category": "Connettivi",
+          "file": "src/data/grammar/italiano/a2/congiunzioni-logiche-a2.ts"
+        },
+        {
+          "slug": "da-presente-a2",
+          "title": "Da + presente",
+          "category": "Preposizioni + tempo",
+          "file": "src/data/grammar/italiano/a2/da-presente-a2.ts"
+        },
+        {
+          "slug": "forma-cortesia-a2",
+          "title": "Forma di cortesia",
+          "category": "Gramática",
+          "file": "src/data/grammar/italiano/a2/forma-cortesia-a2.ts"
+        },
+        {
+          "slug": "futuro-probabilita-a2",
+          "title": "Futuro probabilità",
+          "category": "Verbos",
+          "file": "src/data/grammar/italiano/a2/futuro-probabilita-a2.ts"
+        },
+        {
+          "slug": "futuro-semplice-a2",
+          "title": "Futuro semplice",
+          "category": "Futuro",
+          "file": "src/data/grammar/italiano/a2/futuro-semplice-a2.ts"
+        },
+        {
+          "slug": "imperfetto-a2",
+          "title": "Imperfetto",
+          "category": "Imperfetto",
+          "file": "src/data/grammar/italiano/a2/imperfetto-a2.ts"
+        },
+        {
+          "slug": "passato-prossimo-avere-a2",
+          "title": "Passato prossimo (avere)",
+          "category": "Passato prossimo",
+          "file": "src/data/grammar/italiano/a2/passato-prossimo-avere-a2.ts"
+        },
+        {
+          "slug": "passato-prossimo-essere-a2",
+          "title": "Passato prossimo (essere)",
+          "category": "Passato prossimo",
+          "file": "src/data/grammar/italiano/a2/passato-prossimo-essere-a2.ts"
+        },
+        {
+          "slug": "periodo-ipotetico-reale-a2",
+          "title": "Periodo ipotetico reale",
+          "category": "Sintaxis",
+          "file": "src/data/grammar/italiano/a2/periodo-ipotetico-reale-a2.ts"
+        },
+        {
+          "slug": "piacere-verbi-simili-a2",
+          "title": "Piacere e simili",
+          "category": "Verbos",
+          "file": "src/data/grammar/italiano/a2/piacere-verbi-simili-a2.ts"
+        },
+        {
+          "slug": "pronomi-diretti-a2",
+          "title": "Pronombres directos",
+          "category": "Pronomi",
+          "file": "src/data/grammar/italiano/a2/pronomi-diretti-a2.ts"
+        },
+        {
+          "slug": "pronomi-indiretti-a2",
+          "title": "Pronombres indirectos",
+          "category": "Pronomi",
+          "file": "src/data/grammar/italiano/a2/pronomi-indiretti-a2.ts"
+        },
+        {
+          "slug": "pronomi-relativi-a2",
+          "title": "Pronombres relativos",
+          "category": "Pronomi relativi",
+          "file": "src/data/grammar/italiano/a2/pronomi-relativi-a2.ts"
+        },
+        {
+          "slug": "stare-per-a2",
+          "title": "Stare per + infinito",
+          "category": "Perifrasi verbali",
+          "file": "src/data/grammar/italiano/a2/stare-per-a2.ts"
+        },
+        {
+          "slug": "trapassato-prossimo-a2",
+          "title": "Trapassato prossimo",
+          "category": "Verbos",
+          "file": "src/data/grammar/italiano/a2/trapassato-prossimo-a2.ts"
+        },
+        {
+          "slug": "verbi-riflessivi-a2",
+          "title": "Verbos reflexivos",
+          "category": "Verbi riflessivi",
+          "file": "src/data/grammar/italiano/a2/verbi-riflessivi-a2.ts"
+        }
+      ],
+      "b1": [
+        {
+          "slug": "condizionale-passato-b1",
+          "title": "Condizionale Passato",
+          "category": "Verbi",
+          "file": "src/data/grammar/italiano/b1/condizionale-passato-b1.ts"
+        },
+        {
+          "slug": "congiuntivo-passato-b1",
+          "title": "Congiuntivo Passato",
+          "category": "Verbi",
+          "file": "src/data/grammar/italiano/b1/congiuntivo-passato-b1.ts"
+        },
+        {
+          "slug": "congiuntivo-presente-b1",
+          "title": "Congiuntivo Presente",
+          "category": "Verbi",
+          "file": "src/data/grammar/italiano/b1/congiuntivo-presente-b1.ts"
+        },
+        {
+          "slug": "futuro-anteriore-b1",
+          "title": "Futuro Anteriore",
+          "category": "Verbi",
+          "file": "src/data/grammar/italiano/b1/futuro-anteriore-b1.ts"
+        },
+        {
+          "slug": "periodo-ipotetico-b1",
+          "title": "Periodo Ipotetico",
+          "category": "Struttura",
+          "file": "src/data/grammar/italiano/b1/periodo-ipotetico-b1.ts"
+        },
+        {
+          "slug": "trapassato-prossimo-b1",
+          "title": "Trapassato Prossimo",
+          "category": "Verbi",
+          "file": "src/data/grammar/italiano/b1/trapassato-prossimo-b1.ts"
+        }
+      ]
+    },
+    "de": {
+      "a1": [
+        {
+          "slug": "adjektive-pradikativ",
+          "title": "Adjektive prädikativ",
+          "category": "Adjektive",
+          "file": "src/data/grammar/aleman/a1/adjektive-pradikativ.ts"
+        },
+        {
+          "slug": "akkusativ",
+          "title": "Akkusativ",
+          "category": "Kasus",
+          "file": "src/data/grammar/aleman/a1/akkusativ.ts"
+        },
+        {
+          "slug": "artikel",
+          "title": "Artikel",
+          "category": "Nomen",
+          "file": "src/data/grammar/aleman/a1/artikel.ts"
+        },
+        {
+          "slug": "dativ-praepositionen",
+          "title": "Dativpräpositionen",
+          "category": "Präpositionen",
+          "file": "src/data/grammar/aleman/a1/dativ-praepositionen.ts"
+        },
+        {
+          "slug": "imperativ",
+          "title": "Imperativ",
+          "category": "Satzbau",
+          "file": "src/data/grammar/aleman/a1/imperativ.ts"
+        },
+        {
+          "slug": "modalverben",
+          "title": "Modalverben",
+          "category": "Verben",
+          "file": "src/data/grammar/aleman/a1/modalverben.ts"
+        },
+        {
+          "slug": "personalpronomen-akkusativ",
+          "title": "Pronomen Akkusativ",
+          "category": "Pronomen",
+          "file": "src/data/grammar/aleman/a1/personalpronomen-akkusativ.ts"
+        },
+        {
+          "slug": "personalpronomen",
+          "title": "Personalpronomen",
+          "category": "Pronomen",
+          "file": "src/data/grammar/aleman/a1/personalpronomen.ts"
+        },
+        {
+          "slug": "plural-nomen",
+          "title": "Plural der Nomen",
+          "category": "Nomen",
+          "file": "src/data/grammar/aleman/a1/plural-nomen.ts"
+        },
+        {
+          "slug": "possessivpronomen",
+          "title": "Possessivpronomen",
+          "category": "Pronomen",
+          "file": "src/data/grammar/aleman/a1/possessivpronomen.ts"
+        },
+        {
+          "slug": "praepositionen-ort",
+          "title": "Präpositionen Ort",
+          "category": "Präpositionen",
+          "file": "src/data/grammar/aleman/a1/praepositionen-ort.ts"
+        },
+        {
+          "slug": "praepositionen-zeit",
+          "title": "Präpositionen Zeit",
+          "category": "Präpositionen",
+          "file": "src/data/grammar/aleman/a1/praepositionen-zeit.ts"
+        },
+        {
+          "slug": "prasens-regelmaessig",
+          "title": "Präsens regelmäßig",
+          "category": "Verben",
+          "file": "src/data/grammar/aleman/a1/prasens-regelmaessig.ts"
+        },
+        {
+          "slug": "prasens-unregelmaessig",
+          "title": "Präsens unregelmäßig",
+          "category": "Verben",
+          "file": "src/data/grammar/aleman/a1/prasens-unregelmaessig.ts"
+        },
+        {
+          "slug": "trennbare-verben",
+          "title": "Trennbare Verben",
+          "category": "Verben",
+          "file": "src/data/grammar/aleman/a1/trennbare-verben.ts"
+        },
+        {
+          "slug": "verb-haben",
+          "title": "Verb haben",
+          "category": "Verben",
+          "file": "src/data/grammar/aleman/a1/verb-haben.ts"
+        },
+        {
+          "slug": "verb-sein",
+          "title": "Verb sein",
+          "category": "Verben",
+          "file": "src/data/grammar/aleman/a1/verb-sein.ts"
+        },
+        {
+          "slug": "verneinung",
+          "title": "Verneinung",
+          "category": "Satzbau",
+          "file": "src/data/grammar/aleman/a1/verneinung.ts"
+        },
+        {
+          "slug": "w-fragen",
+          "title": "W-Fragen",
+          "category": "Satzbau",
+          "file": "src/data/grammar/aleman/a1/w-fragen.ts"
+        },
+        {
+          "slug": "zukunft-prasens",
+          "title": "Zukunft / Futur",
+          "category": "Verben",
+          "file": "src/data/grammar/aleman/a1/zukunft-prasens.ts"
+        }
+      ],
+      "a2": [
+        {
+          "slug": "adjektivdeklination-a2",
+          "title": "Adjektivdeklination",
+          "category": "Adjektive",
+          "file": "src/data/grammar/aleman/a2/adjektivdeklination-a2.ts"
+        },
+        {
+          "slug": "da-hin-her-a2",
+          "title": "Hin / Her / Da-Komposita",
+          "category": "Vocabulario",
+          "file": "src/data/grammar/aleman/a2/da-hin-her-a2.ts"
+        },
+        {
+          "slug": "dativ-a2",
+          "title": "Dativ",
+          "category": "Kasus",
+          "file": "src/data/grammar/aleman/a2/dativ-a2.ts"
+        },
+        {
+          "slug": "futur-i-a2",
+          "title": "Futur I",
+          "category": "Verben",
+          "file": "src/data/grammar/aleman/a2/futur-i-a2.ts"
+        },
+        {
+          "slug": "genitiv-a2",
+          "title": "Genitiv",
+          "category": "Kasus",
+          "file": "src/data/grammar/aleman/a2/genitiv-a2.ts"
+        },
+        {
+          "slug": "infinitiv-zu-a2",
+          "title": "Infinitiv mit zu",
+          "category": "Verben",
+          "file": "src/data/grammar/aleman/a2/infinitiv-zu-a2.ts"
+        },
+        {
+          "slug": "komparativ-superlativ-a2",
+          "title": "Komparativ & Superlativ",
+          "category": "Adjektive",
+          "file": "src/data/grammar/aleman/a2/komparativ-superlativ-a2.ts"
+        },
+        {
+          "slug": "konjunktionen-a2",
+          "title": "Konjunktionen",
+          "category": "Satzstruktur",
+          "file": "src/data/grammar/aleman/a2/konjunktionen-a2.ts"
+        },
+        {
+          "slug": "konjunktiv-ii-wurden-a2",
+          "title": "Konjunktiv II (würde)",
+          "category": "Verben",
+          "file": "src/data/grammar/aleman/a2/konjunktiv-ii-wurden-a2.ts"
+        },
+        {
+          "slug": "modalverben-praeteritum-a2",
+          "title": "Modalverben Präteritum",
+          "category": "Verben",
+          "file": "src/data/grammar/aleman/a2/modalverben-praeteritum-a2.ts"
+        },
+        {
+          "slug": "partizip-als-adjektiv-a2",
+          "title": "Partizip als Adjektiv",
+          "category": "Adjetivos",
+          "file": "src/data/grammar/aleman/a2/partizip-als-adjektiv-a2.ts"
+        },
+        {
+          "slug": "passiv-praesens-a2",
+          "title": "Passiv Präsens",
+          "category": "Verbos",
+          "file": "src/data/grammar/aleman/a2/passiv-praesens-a2.ts"
+        },
+        {
+          "slug": "perfekt-haben-a2",
+          "title": "Perfekt mit haben",
+          "category": "Verben",
+          "file": "src/data/grammar/aleman/a2/perfekt-haben-a2.ts"
+        },
+        {
+          "slug": "perfekt-sein-a2",
+          "title": "Perfekt mit sein",
+          "category": "Verben",
+          "file": "src/data/grammar/aleman/a2/perfekt-sein-a2.ts"
+        },
+        {
+          "slug": "praeteritum-basic-a2",
+          "title": "Präteritum básico",
+          "category": "Verben",
+          "file": "src/data/grammar/aleman/a2/praeteritum-basic-a2.ts"
+        },
+        {
+          "slug": "reflexivverben-a2",
+          "title": "Reflexivverben",
+          "category": "Verben",
+          "file": "src/data/grammar/aleman/a2/reflexivverben-a2.ts"
+        },
+        {
+          "slug": "relativsaetze-a2",
+          "title": "Relativsätze",
+          "category": "Satzstruktur",
+          "file": "src/data/grammar/aleman/a2/relativsaetze-a2.ts"
+        },
+        {
+          "slug": "trennbare-verben-praeteritum-a2",
+          "title": "Trennbare Verben Prät.",
+          "category": "Verbos",
+          "file": "src/data/grammar/aleman/a2/trennbare-verben-praeteritum-a2.ts"
+        },
+        {
+          "slug": "wechselpraepositionen-a2",
+          "title": "Wechselpräpositionen",
+          "category": "Kasus",
+          "file": "src/data/grammar/aleman/a2/wechselpraepositionen-a2.ts"
+        },
+        {
+          "slug": "zweiteilige-konnektoren-a2",
+          "title": "Zweiteilige Konnektoren",
+          "category": "Sintaxis",
+          "file": "src/data/grammar/aleman/a2/zweiteilige-konnektoren-a2.ts"
+        }
+      ],
+      "b1": [
+        {
+          "slug": "adjektivdeklination-b1",
+          "title": "Adjektivdeklination",
+          "category": "Sustantivos",
+          "file": "src/data/grammar/aleman/b1/adjektivdeklination-b1.ts"
+        },
+        {
+          "slug": "genitiv-b1",
+          "title": "Genitiv",
+          "category": "Casos",
+          "file": "src/data/grammar/aleman/b1/genitiv-b1.ts"
+        },
+        {
+          "slug": "imperativ-b1",
+          "title": "Imperativ",
+          "category": "Modus",
+          "file": "src/data/grammar/aleman/b1/imperativ-b1.ts"
+        },
+        {
+          "slug": "indirekte-rede-b1",
+          "title": "Indirekte Rede",
+          "category": "Satzstruktur",
+          "file": "src/data/grammar/aleman/b1/indirekte-rede-b1.ts"
+        },
+        {
+          "slug": "infinitiv-zu-b1",
+          "title": "Infinitiv mit zu",
+          "category": "Verben",
+          "file": "src/data/grammar/aleman/b1/infinitiv-zu-b1.ts"
+        },
+        {
+          "slug": "kausale-konzessive-satze-b1",
+          "title": "Kausale & konzessive Sätze",
+          "category": "Conectores",
+          "file": "src/data/grammar/aleman/b1/kausale-konzessive-satze-b1.ts"
+        },
+        {
+          "slug": "konjunktiv-ii-b1",
+          "title": "Konjunktiv II",
+          "category": "Modus",
+          "file": "src/data/grammar/aleman/b1/konjunktiv-ii-b1.ts"
+        },
+        {
+          "slug": "modalverben-prateritum-b1",
+          "title": "Modalverben Präteritum",
+          "category": "Verben",
+          "file": "src/data/grammar/aleman/b1/modalverben-prateritum-b1.ts"
+        },
+        {
+          "slug": "nebensatze-b1",
+          "title": "Nebensätze",
+          "category": "Satzstruktur",
+          "file": "src/data/grammar/aleman/b1/nebensatze-b1.ts"
+        },
+        {
+          "slug": "partizip-als-adjektiv-b1",
+          "title": "Partizip als Adjektiv",
+          "category": "Adjektiv",
+          "file": "src/data/grammar/aleman/b1/partizip-als-adjektiv-b1.ts"
+        },
+        {
+          "slug": "passiv-b1",
+          "title": "Passiv",
+          "category": "Struktur",
+          "file": "src/data/grammar/aleman/b1/passiv-b1.ts"
+        },
+        {
+          "slug": "perfekt-haben-sein-b1",
+          "title": "Perfekt haben/sein",
+          "category": "Verbos",
+          "file": "src/data/grammar/aleman/b1/perfekt-haben-sein-b1.ts"
+        },
+        {
+          "slug": "prateritum-starke-verben-b1",
+          "title": "Präteritum starke Verben",
+          "category": "Verbos",
+          "file": "src/data/grammar/aleman/b1/prateritum-starke-verben-b1.ts"
+        },
+        {
+          "slug": "reflexive-verben-b1",
+          "title": "Reflexive Verben",
+          "category": "Verb",
+          "file": "src/data/grammar/aleman/b1/reflexive-verben-b1.ts"
+        },
+        {
+          "slug": "relativsatze-b1",
+          "title": "Relativsätze",
+          "category": "Satzstruktur",
+          "file": "src/data/grammar/aleman/b1/relativsatze-b1.ts"
+        },
+        {
+          "slug": "temporale-prapositionen-b1",
+          "title": "Temporale Präpositionen",
+          "category": "Preposiciones",
+          "file": "src/data/grammar/aleman/b1/temporale-prapositionen-b1.ts"
+        },
+        {
+          "slug": "verben-mit-prapositionen-b1",
+          "title": "Verben mit Präpositionen",
+          "category": "Verbos",
+          "file": "src/data/grammar/aleman/b1/verben-mit-prapositionen-b1.ts"
+        },
+        {
+          "slug": "wechselprapositionen-b1",
+          "title": "Wechselpräpositionen",
+          "category": "Preposiciones",
+          "file": "src/data/grammar/aleman/b1/wechselprapositionen-b1.ts"
+        },
+        {
+          "slug": "wortbildung-b1",
+          "title": "Wortbildung",
+          "category": "Wortschatz",
+          "file": "src/data/grammar/aleman/b1/wortbildung-b1.ts"
+        },
+        {
+          "slug": "zweiteilige-konnektoren-b1",
+          "title": "Zweiteilige Konnektoren",
+          "category": "Conectores",
+          "file": "src/data/grammar/aleman/b1/zweiteilige-konnektoren-b1.ts"
+        }
+      ]
+    },
+    "ru": {
+      "a1": [
+        {
+          "slug": "adjetivos-concordancia",
+          "title": "Adjetivos — concordancia",
+          "category": "Adjetivos",
+          "file": "src/data/grammar/ruso/a1/adjetivos-concordancia.ts"
+        },
+        {
+          "slug": "adjetivos-posesivos",
+          "title": "Posesivos",
+          "category": "Adjetivos",
+          "file": "src/data/grammar/ruso/a1/adjetivos-posesivos.ts"
+        },
+        {
+          "slug": "alfabeto-cirilico",
+          "title": "Alfabeto cirílico",
+          "category": "Escritura",
+          "file": "src/data/grammar/ruso/a1/alfabeto-cirilico.ts"
+        },
+        {
+          "slug": "caso-acusativo",
+          "title": "Caso acusativo",
+          "category": "Casos",
+          "file": "src/data/grammar/ruso/a1/caso-acusativo.ts"
+        },
+        {
+          "slug": "caso-dativo-basico",
+          "title": "Caso dativo",
+          "category": "Падежи",
+          "file": "src/data/grammar/ruso/a1/caso-dativo-basico.ts"
+        },
+        {
+          "slug": "caso-genitivo",
+          "title": "Caso genitivo",
+          "category": "Casos",
+          "file": "src/data/grammar/ruso/a1/caso-genitivo.ts"
+        },
+        {
+          "slug": "caso-nominativo",
+          "title": "Caso nominativo",
+          "category": "Casos",
+          "file": "src/data/grammar/ruso/a1/caso-nominativo.ts"
+        },
+        {
+          "slug": "futuro-byt",
+          "title": "Futuro con быть",
+          "category": "Глаголы",
+          "file": "src/data/grammar/ruso/a1/futuro-byt.ts"
+        },
+        {
+          "slug": "genero-sustantivos",
+          "title": "Género de sustantivos",
+          "category": "Sustantivos",
+          "file": "src/data/grammar/ruso/a1/genero-sustantivos.ts"
+        },
+        {
+          "slug": "imperativo",
+          "title": "Imperativo",
+          "category": "Глаголы",
+          "file": "src/data/grammar/ruso/a1/imperativo.ts"
+        },
+        {
+          "slug": "negacion-ne",
+          "title": "Negación: не y нет",
+          "category": "Sintaxis",
+          "file": "src/data/grammar/ruso/a1/negacion-ne.ts"
+        },
+        {
+          "slug": "numeros",
+          "title": "Números 1-100",
+          "category": "Числа",
+          "file": "src/data/grammar/ruso/a1/numeros.ts"
+        },
+        {
+          "slug": "preguntas-vopros",
+          "title": "Interrogativos",
+          "category": "Interrogativos",
+          "file": "src/data/grammar/ruso/a1/preguntas-vopros.ts"
+        },
+        {
+          "slug": "preposiciones-direccion",
+          "title": "В y НА — dirección",
+          "category": "Preposiciones",
+          "file": "src/data/grammar/ruso/a1/preposiciones-direccion.ts"
+        },
+        {
+          "slug": "preposiciones-lugar-v-na",
+          "title": "В y НА — ubicación",
+          "category": "Preposiciones",
+          "file": "src/data/grammar/ruso/a1/preposiciones-lugar-v-na.ts"
+        },
+        {
+          "slug": "presente-verbos",
+          "title": "Presente de verbos",
+          "category": "Verbos",
+          "file": "src/data/grammar/ruso/a1/presente-verbos.ts"
+        },
+        {
+          "slug": "pronombres-personales",
+          "title": "Pronombres personales",
+          "category": "Pronombres",
+          "file": "src/data/grammar/ruso/a1/pronombres-personales.ts"
+        },
+        {
+          "slug": "tiempo-expresiones",
+          "title": "Expresiones de tiempo",
+          "category": "Лексика",
+          "file": "src/data/grammar/ruso/a1/tiempo-expresiones.ts"
+        },
+        {
+          "slug": "verbos-irregulares-basicos",
+          "title": "Verbos irregulares",
+          "category": "Глаголы",
+          "file": "src/data/grammar/ruso/a1/verbos-irregulares-basicos.ts"
+        },
+        {
+          "slug": "verbos-movimiento",
+          "title": "Verbos de movimiento",
+          "category": "Глаголы",
+          "file": "src/data/grammar/ruso/a1/verbos-movimiento.ts"
+        }
+      ],
+      "a2": [
+        {
+          "slug": "acusativo-movimiento",
+          "title": "Acusativo movimiento",
+          "category": "Casos",
+          "file": "src/data/grammar/ruso/a2/acusativo-movimiento.ts"
+        },
+        {
+          "slug": "adverbios-tiempo",
+          "title": "Adverbios de tiempo",
+          "category": "Adverbios",
+          "file": "src/data/grammar/ruso/a2/adverbios-tiempo.ts"
+        },
+        {
+          "slug": "aspecto-verbal",
+          "title": "Aspecto verbal",
+          "category": "Verbos",
+          "file": "src/data/grammar/ruso/a2/aspecto-verbal.ts"
+        },
+        {
+          "slug": "comparativos",
+          "title": "Comparativos",
+          "category": "Comparación",
+          "file": "src/data/grammar/ruso/a2/comparativos.ts"
+        },
+        {
+          "slug": "condicional",
+          "title": "Condicional (если бы)",
+          "category": "Condicional",
+          "file": "src/data/grammar/ruso/a2/condicional.ts"
+        },
+        {
+          "slug": "dativo-uso",
+          "title": "Dativo: уsos avanzados",
+          "category": "Casos",
+          "file": "src/data/grammar/ruso/a2/dativo-uso.ts"
+        },
+        {
+          "slug": "futuro-imperfectivo",
+          "title": "Futuro imperfectivo",
+          "category": "Verbos",
+          "file": "src/data/grammar/ruso/a2/futuro-imperfectivo.ts"
+        },
+        {
+          "slug": "futuro-perfectivo",
+          "title": "Futuro perfectivo",
+          "category": "Verbos",
+          "file": "src/data/grammar/ruso/a2/futuro-perfectivo.ts"
+        },
+        {
+          "slug": "genitivo-cantidad",
+          "title": "Genitivo: cantidad y negación",
+          "category": "Casos",
+          "file": "src/data/grammar/ruso/a2/genitivo-cantidad.ts"
+        },
+        {
+          "slug": "imperativo",
+          "title": "Imperativo",
+          "category": "Verbos",
+          "file": "src/data/grammar/ruso/a2/imperativo.ts"
+        },
+        {
+          "slug": "instrumental-uso",
+          "title": "Instrumental",
+          "category": "Casos",
+          "file": "src/data/grammar/ruso/a2/instrumental-uso.ts"
+        },
+        {
+          "slug": "oraciones-subordinadas",
+          "title": "Subordinadas (что, чтобы)",
+          "category": "Sintaxis",
+          "file": "src/data/grammar/ruso/a2/oraciones-subordinadas.ts"
+        },
+        {
+          "slug": "pasado-verbos",
+          "title": "Pasado de verbos",
+          "category": "Verbos",
+          "file": "src/data/grammar/ruso/a2/pasado-verbos.ts"
+        },
+        {
+          "slug": "plurales-irregulares",
+          "title": "Plurales irregulares",
+          "category": "Morfología",
+          "file": "src/data/grammar/ruso/a2/plurales-irregulares.ts"
+        },
+        {
+          "slug": "prepositivo-avanzado",
+          "title": "Prepositivo: о + тема",
+          "category": "Casos",
+          "file": "src/data/grammar/ruso/a2/prepositivo-avanzado.ts"
+        },
+        {
+          "slug": "pronombres-reflexivos",
+          "title": "Reflexivos себя/свой",
+          "category": "Pronombres",
+          "file": "src/data/grammar/ruso/a2/pronombres-reflexivos.ts"
+        },
+        {
+          "slug": "pronombres-relativos",
+          "title": "Pronombre relativo который",
+          "category": "Pronombres",
+          "file": "src/data/grammar/ruso/a2/pronombres-relativos.ts"
+        },
+        {
+          "slug": "superlativos",
+          "title": "Superlativos",
+          "category": "Comparación",
+          "file": "src/data/grammar/ruso/a2/superlativos.ts"
+        },
+        {
+          "slug": "verbos-movimiento",
+          "title": "Verbos movimiento",
+          "category": "Verbos",
+          "file": "src/data/grammar/ruso/a2/verbos-movimiento.ts"
+        },
+        {
+          "slug": "verbos-prefijados",
+          "title": "Verbos prefijados movimiento",
+          "category": "Verbos",
+          "file": "src/data/grammar/ruso/a2/verbos-prefijados.ts"
+        }
+      ],
+      "b1": [
+        {
+          "slug": "adverbios-circunstanciales-b1",
+          "title": "Adverbios: как, когда, где, почему",
+          "category": "Adverbios y Expresiones",
+          "file": "src/data/grammar/ruso/b1/adverbios-circunstanciales-b1.ts"
+        },
+        {
+          "slug": "aspecto-perfectivo-imperfectivo-b1",
+          "title": "СВ (perfectivo) vs НСВ (imperfectivo)",
+          "category": "Aspecto Verbal",
+          "file": "src/data/grammar/ruso/b1/aspecto-perfectivo-imperfectivo-b1.ts"
+        },
+        {
+          "slug": "comparativos-superlativos-b1",
+          "title": "Сравнительная и превосходная степень",
+          "category": "Adjetivos y Adverbios",
+          "file": "src/data/grammar/ruso/b1/comparativos-superlativos-b1.ts"
+        },
+        {
+          "slug": "condicional-subjuntivo-b1",
+          "title": "БЫ (would, if only)",
+          "category": "Mood y Tiempo",
+          "file": "src/data/grammar/ruso/b1/condicional-subjuntivo-b1.ts"
+        },
+        {
+          "slug": "dativo-b1",
+          "title": "Dativo (indirect object, for, toward)",
+          "category": "Casos y Preposiciones",
+          "file": "src/data/grammar/ruso/b1/dativo-b1.ts"
+        },
+        {
+          "slug": "deeprichastiya-b1",
+          "title": "Деепричастия (Gerundios)",
+          "category": "Деепричастия",
+          "file": "src/data/grammar/ruso/b1/deeprichastiya-b1.ts"
+        },
+        {
+          "slug": "diminutivos-aumentativos-b1",
+          "title": "Diminutivos: -ик, -ка, -ко; Aumentativos: -ище",
+          "category": "Formación de Palabras",
+          "file": "src/data/grammar/ruso/b1/diminutivos-aumentativos-b1.ts"
+        },
+        {
+          "slug": "discurso-indirecto-b1",
+          "title": "Косвенная речь (reported speech)",
+          "category": "Sintaxis Compleja",
+          "file": "src/data/grammar/ruso/b1/discurso-indirecto-b1.ts"
+        },
+        {
+          "slug": "futuro-perfectivo-b1",
+          "title": "СВ futuro: буду vs напишу",
+          "category": "Tiempo y Aspecto",
+          "file": "src/data/grammar/ruso/b1/futuro-perfectivo-b1.ts"
+        },
+        {
+          "slug": "genitivo-negacion-b1",
+          "title": "Genitivo después de нет, нельзя, нет (hay/no hay)",
+          "category": "Casos y Preposiciones",
+          "file": "src/data/grammar/ruso/b1/genitivo-negacion-b1.ts"
+        },
+        {
+          "slug": "impersonales-modales-b1",
+          "title": "Можно, нельзя, нужно, надо, жаль",
+          "category": "Modo e Impersonal",
+          "file": "src/data/grammar/ruso/b1/impersonales-modales-b1.ts"
+        },
+        {
+          "slug": "instrumental-b1",
+          "title": "Instrumental (tools, manner, with)",
+          "category": "Casos y Preposiciones",
+          "file": "src/data/grammar/ruso/b1/instrumental-b1.ts"
+        },
+        {
+          "slug": "oraciones-subordinadas-b1",
+          "title": "Subordinadas: что, который, если, потому что",
+          "category": "Sintaxis Compleja",
+          "file": "src/data/grammar/ruso/b1/oraciones-subordinadas-b1.ts"
+        },
+        {
+          "slug": "participios-activos-b1",
+          "title": "Participios Activos",
+          "category": "Participios",
+          "file": "src/data/grammar/ruso/b1/participios-activos-b1.ts"
+        },
+        {
+          "slug": "participios-adjetivales-b1",
+          "title": "Participios activos y pasivos (como adjetivos)",
+          "category": "Verbos y Participios",
+          "file": "src/data/grammar/ruso/b1/participios-adjetivales-b1.ts"
+        },
+        {
+          "slug": "participios-pasivos-b1",
+          "title": "Participios Pasivos",
+          "category": "Participios",
+          "file": "src/data/grammar/ruso/b1/participios-pasivos-b1.ts"
+        },
+        {
+          "slug": "prefijos-verbos-b1",
+          "title": "Prefijos: за-, раз-, пере-, про-",
+          "category": "Verbos y Prefijos",
+          "file": "src/data/grammar/ruso/b1/prefijos-verbos-b1.ts"
+        },
+        {
+          "slug": "preposiciones-casos-b1",
+          "title": "Preposiciones: régimen de casos",
+          "category": "Casos y Preposiciones",
+          "file": "src/data/grammar/ruso/b1/preposiciones-casos-b1.ts"
+        },
+        {
+          "slug": "verbos-movimiento-prefijados-b1",
+          "title": "Verbos de Movimiento con Prefijos",
+          "category": "Verbos",
+          "file": "src/data/grammar/ruso/b1/verbos-movimiento-prefijados-b1.ts"
+        },
+        {
+          "slug": "verbos-reflexivos-b1",
+          "title": "Verbos reflexivos con -ся/-сь",
+          "category": "Verbos",
+          "file": "src/data/grammar/ruso/b1/verbos-reflexivos-b1.ts"
+        }
+      ]
+    },
+    "ja": {
+      "a1": [
+        {
+          "slug": "adverbios-frecuencia",
+          "title": "Adverbios frecuencia",
+          "category": "Adverbios",
+          "file": "src/data/grammar/japones/a1/adverbios-frecuencia.ts"
+        },
+        {
+          "slug": "arimasu-imasu",
+          "title": "います / あります",
+          "category": "Verbos",
+          "file": "src/data/grammar/japones/a1/arimasu-imasu.ts"
+        },
+        {
+          "slug": "conjunciones",
+          "title": "Conjunciones",
+          "category": "文法",
+          "file": "src/data/grammar/japones/a1/conjunciones.ts"
+        },
+        {
+          "slug": "desu-masu",
+          "title": "です / ます",
+          "category": "Verbos",
+          "file": "src/data/grammar/japones/a1/desu-masu.ts"
+        },
+        {
+          "slug": "estructura-sov-particulas",
+          "title": "SOV y partículas",
+          "category": "Estructura",
+          "file": "src/data/grammar/japones/a1/estructura-sov-particulas.ts"
+        },
+        {
+          "slug": "expresiones-cotidianas",
+          "title": "Expresiones cotidianas",
+          "category": "文法",
+          "file": "src/data/grammar/japones/a1/expresiones-cotidianas.ts"
+        },
+        {
+          "slug": "hiragana-basico",
+          "title": "Hiragana básico",
+          "category": "Escritura",
+          "file": "src/data/grammar/japones/a1/hiragana-basico.ts"
+        },
+        {
+          "slug": "i-keiyoshi",
+          "title": "Adjetivos い",
+          "category": "Adjetivos",
+          "file": "src/data/grammar/japones/a1/i-keiyoshi.ts"
+        },
+        {
+          "slug": "interrogativos-ka",
+          "title": "Interrogativos",
+          "category": "Preguntas",
+          "file": "src/data/grammar/japones/a1/interrogativos-ka.ts"
+        },
+        {
+          "slug": "jikan-tiempo",
+          "title": "La hora",
+          "category": "Tiempo",
+          "file": "src/data/grammar/japones/a1/jikan-tiempo.ts"
+        },
+        {
+          "slug": "katakana-basico",
+          "title": "Katakana",
+          "category": "Escritura",
+          "file": "src/data/grammar/japones/a1/katakana-basico.ts"
+        },
+        {
+          "slug": "masu-kei-conjugacion",
+          "title": "Conjugación ます",
+          "category": "Verbos",
+          "file": "src/data/grammar/japones/a1/masu-kei-conjugacion.ts"
+        },
+        {
+          "slug": "na-keiyoshi",
+          "title": "Adjetivos な",
+          "category": "Adjetivos",
+          "file": "src/data/grammar/japones/a1/na-keiyoshi.ts"
+        },
+        {
+          "slug": "negacion-completa",
+          "title": "Negación completa",
+          "category": "Negación",
+          "file": "src/data/grammar/japones/a1/negacion-completa.ts"
+        },
+        {
+          "slug": "numeros-contadores",
+          "title": "Números y contadores",
+          "category": "Números",
+          "file": "src/data/grammar/japones/a1/numeros-contadores.ts"
+        },
+        {
+          "slug": "particula-de-e",
+          "title": "で y へ",
+          "category": "Partículas",
+          "file": "src/data/grammar/japones/a1/particula-de-e.ts"
+        },
+        {
+          "slug": "particula-wa-ga",
+          "title": "は vs が",
+          "category": "Partículas",
+          "file": "src/data/grammar/japones/a1/particula-wa-ga.ts"
+        },
+        {
+          "slug": "particula-wo-ni",
+          "title": "を y に",
+          "category": "Partículas",
+          "file": "src/data/grammar/japones/a1/particula-wo-ni.ts"
+        },
+        {
+          "slug": "tai-form",
+          "title": "〜たいです",
+          "category": "Verbos",
+          "file": "src/data/grammar/japones/a1/tai-form.ts"
+        },
+        {
+          "slug": "te-form-permission",
+          "title": "〜てもいいですか",
+          "category": "Verbos",
+          "file": "src/data/grammar/japones/a1/te-form-permission.ts"
+        }
+      ],
+      "a2": [
+        {
+          "slug": "ageru-morau-kureru-a2",
+          "title": "あげる/もらう/くれる",
+          "category": "Verbos",
+          "file": "src/data/grammar/japones/a2/ageru-morau-kureru-a2.ts"
+        },
+        {
+          "slug": "dake-shika-bakari-a2",
+          "title": "だけ/しか/ばかり",
+          "category": "Partículas",
+          "file": "src/data/grammar/japones/a2/dake-shika-bakari-a2.ts"
+        },
+        {
+          "slug": "deshou-a2",
+          "title": "~でしょう/だろう",
+          "category": "Modalidad",
+          "file": "src/data/grammar/japones/a2/deshou-a2.ts"
+        },
+        {
+          "slug": "hikaku-a2",
+          "title": "Comparación (より/ほど)",
+          "category": "Comparación",
+          "file": "src/data/grammar/japones/a2/hikaku-a2.ts"
+        },
+        {
+          "slug": "kamoshirenai-a2",
+          "title": "～かもしれない",
+          "category": "Expresion",
+          "file": "src/data/grammar/japones/a2/kamoshirenai-a2.ts"
+        },
+        {
+          "slug": "kanoukei-a2",
+          "title": "Forma potencial",
+          "category": "Verbos",
+          "file": "src/data/grammar/japones/a2/kanoukei-a2.ts"
+        },
+        {
+          "slug": "mae-ni-ato-de-a2",
+          "title": "前に/後で (antes/después)",
+          "category": "Sintaxis",
+          "file": "src/data/grammar/japones/a2/mae-ni-ato-de-a2.ts"
+        },
+        {
+          "slug": "n-desu-a2",
+          "title": "~んです/のです",
+          "category": "Explicación",
+          "file": "src/data/grammar/japones/a2/n-desu-a2.ts"
+        },
+        {
+          "slug": "nagara-a2",
+          "title": "~ながら (mientras)",
+          "category": "Conjunciones",
+          "file": "src/data/grammar/japones/a2/nagara-a2.ts"
+        },
+        {
+          "slug": "nakereba-naranai-a2",
+          "title": "～なければならない",
+          "category": "Verbos",
+          "file": "src/data/grammar/japones/a2/nakereba-naranai-a2.ts"
+        },
+        {
+          "slug": "noun-modification-a2",
+          "title": "Modificación nominal",
+          "category": "Sintaxis",
+          "file": "src/data/grammar/japones/a2/noun-modification-a2.ts"
+        },
+        {
+          "slug": "ta-koto-ga-aru-a2",
+          "title": "〜たことがある",
+          "category": "Verbos",
+          "file": "src/data/grammar/japones/a2/ta-koto-ga-aru-a2.ts"
+        },
+        {
+          "slug": "tara-condicional-a2",
+          "title": "~たら (condicional)",
+          "category": "Condicional",
+          "file": "src/data/grammar/japones/a2/tara-condicional-a2.ts"
+        },
+        {
+          "slug": "tari-tari-a2",
+          "title": "〜たり〜たりする",
+          "category": "Verbos",
+          "file": "src/data/grammar/japones/a2/tari-tari-a2.ts"
+        },
+        {
+          "slug": "te-form-sequence-a2",
+          "title": "〜て (secuencia)",
+          "category": "Verbos",
+          "file": "src/data/grammar/japones/a2/te-form-sequence-a2.ts"
+        },
+        {
+          "slug": "te-iru-a2",
+          "title": "〜ている",
+          "category": "Verbos",
+          "file": "src/data/grammar/japones/a2/te-iru-a2.ts"
+        },
+        {
+          "slug": "te-mo-ii-a2",
+          "title": "～てもいい / ～てはいけない",
+          "category": "Verbos",
+          "file": "src/data/grammar/japones/a2/te-mo-ii-a2.ts"
+        },
+        {
+          "slug": "to-condicional-a2",
+          "title": "~と (condicional natural)",
+          "category": "Condicional",
+          "file": "src/data/grammar/japones/a2/to-condicional-a2.ts"
+        },
+        {
+          "slug": "to-omoimasu-a2",
+          "title": "～と思います",
+          "category": "Expresion",
+          "file": "src/data/grammar/japones/a2/to-omoimasu-a2.ts"
+        },
+        {
+          "slug": "ukemi-a2",
+          "title": "Forma pasiva",
+          "category": "Verbos",
+          "file": "src/data/grammar/japones/a2/ukemi-a2.ts"
+        }
+      ],
+      "b1": [
+        {
+          "slug": "bakari-b1",
+          "title": "〜ばかり (just, only)",
+          "category": "Cantidad y Énfasis",
+          "file": "src/data/grammar/japones/b1/bakari-b1.ts"
+        },
+        {
+          "slug": "beki-b1",
+          "title": "〜べき (should, ought to, be supposed to)",
+          "category": "Modalidad y Opinión",
+          "file": "src/data/grammar/japones/b1/beki-b1.ts"
+        },
+        {
+          "slug": "hazu-da-b1",
+          "title": "〜はずだ (should be, is supposed to)",
+          "category": null,
+          "file": "src/data/grammar/japones/b1/hazu-da-b1.ts"
+        },
+        {
+          "slug": "hodo-b1",
+          "title": "〜ほど (extent, to the degree that)",
+          "category": null,
+          "file": "src/data/grammar/japones/b1/hodo-b1.ts"
+        },
+        {
+          "slug": "kamo-b1",
+          "title": "〜かもしれない (might, may, perhaps)",
+          "category": "Especulación e Incertidumbre",
+          "file": "src/data/grammar/japones/b1/kamo-b1.ts"
+        },
+        {
+          "slug": "koto-ni-suru-naru-b1",
+          "title": "〜ことにする/なる (Decidir / Resultar que)",
+          "category": "Decisión",
+          "file": "src/data/grammar/japones/b1/koto-ni-suru-naru-b1.ts"
+        },
+        {
+          "slug": "monokara-b1",
+          "title": "〜ものなら (if, if you can)",
+          "category": "Causalidad y Razón",
+          "file": "src/data/grammar/japones/b1/monokara-b1.ts"
+        },
+        {
+          "slug": "nakerebanaranai-b1",
+          "title": "〜なければならない (must, have to)",
+          "category": null,
+          "file": "src/data/grammar/japones/b1/nakerebanaranai-b1.ts"
+        },
+        {
+          "slug": "ni-chigainai-b1",
+          "title": "〜に違いない (must be, surely)",
+          "category": null,
+          "file": "src/data/grammar/japones/b1/ni-chigainai-b1.ts"
+        },
+        {
+          "slug": "noni-b1",
+          "title": "〜のに (although, in spite of, yet)",
+          "category": "Contraste y Concesión",
+          "file": "src/data/grammar/japones/b1/noni-b1.ts"
+        },
+        {
+          "slug": "shieki-saseru-b1",
+          "title": "〜させる (Causativo)",
+          "category": "Causativo",
+          "file": "src/data/grammar/japones/b1/shieki-saseru-b1.ts"
+        },
+        {
+          "slug": "sou-b1",
+          "title": "〜そう (looks like, seems)",
+          "category": null,
+          "file": "src/data/grammar/japones/b1/sou-b1.ts"
+        },
+        {
+          "slug": "tameni-b1",
+          "title": "〜ために (in order to, for, because of)",
+          "category": "Propósito y Razón",
+          "file": "src/data/grammar/japones/b1/tameni-b1.ts"
+        },
+        {
+          "slug": "te-shimau-b1",
+          "title": "〜てしまう (just did, ended up)",
+          "category": "Aspecto y Resultado",
+          "file": "src/data/grammar/japones/b1/te-shimau-b1.ts"
+        },
+        {
+          "slug": "tokoro-b1",
+          "title": "〜ところ (just doing, at the moment of)",
+          "category": "Tiempo y Aspecto",
+          "file": "src/data/grammar/japones/b1/tokoro-b1.ts"
+        },
+        {
+          "slug": "toutsutsuaru-b1",
+          "title": "〜つつある (is becoming, in the process of)",
+          "category": null,
+          "file": "src/data/grammar/japones/b1/toutsutsuaru-b1.ts"
+        },
+        {
+          "slug": "ukemi-rareru-b1",
+          "title": "〜られる (Pasiva)",
+          "category": "Pasiva",
+          "file": "src/data/grammar/japones/b1/ukemi-rareru-b1.ts"
+        },
+        {
+          "slug": "wake-da-b1",
+          "title": "〜わけだ (that explains it, no wonder)",
+          "category": null,
+          "file": "src/data/grammar/japones/b1/wake-da-b1.ts"
+        },
+        {
+          "slug": "yooni-b1",
+          "title": "〜ように (so that, in order to, like)",
+          "category": "Propósito y Modo",
+          "file": "src/data/grammar/japones/b1/yooni-b1.ts"
+        },
+        {
+          "slug": "you-ni-naru-b1",
+          "title": "〜ようになる (Llegar a)",
+          "category": "Cambio de estado",
+          "file": "src/data/grammar/japones/b1/you-ni-naru-b1.ts"
+        }
+      ]
+    },
+    "ko": {
+      "a1": [
+        {
+          "slug": "adverbios-tiempo",
+          "title": "Adverbios de tiempo",
+          "category": "Adverbios",
+          "file": "src/data/grammar/coreano/a1/adverbios-tiempo.ts"
+        },
+        {
+          "slug": "conjuncion-hago",
+          "title": "Conjunción 하고 / 와 / 과",
+          "category": "Partículas",
+          "file": "src/data/grammar/coreano/a1/conjuncion-hago.ts"
+        },
+        {
+          "slug": "estructura-sov",
+          "title": "Estructura SOV",
+          "category": "Sintaxis",
+          "file": "src/data/grammar/coreano/a1/estructura-sov.ts"
+        },
+        {
+          "slug": "expresiones-cotidianas",
+          "title": "Expresiones cotidianas",
+          "category": "문법",
+          "file": "src/data/grammar/coreano/a1/expresiones-cotidianas.ts"
+        },
+        {
+          "slug": "forma-formal-habnida",
+          "title": "Forma formal -합니다",
+          "category": "문법",
+          "file": "src/data/grammar/coreano/a1/forma-formal-habnida.ts"
+        },
+        {
+          "slug": "haeyo-presente",
+          "title": "Presente 아요/어요",
+          "category": "Verbos",
+          "file": "src/data/grammar/coreano/a1/haeyo-presente.ts"
+        },
+        {
+          "slug": "hangul-basico",
+          "title": "Hangeúl básico",
+          "category": "Escritura",
+          "file": "src/data/grammar/coreano/a1/hangul-basico.ts"
+        },
+        {
+          "slug": "ieoyo-yeyo",
+          "title": "이에요 / 예요",
+          "category": "Verbos",
+          "file": "src/data/grammar/coreano/a1/ieoyo-yeyo.ts"
+        },
+        {
+          "slug": "interrogativos",
+          "title": "Interrogativos",
+          "category": "Sintaxis",
+          "file": "src/data/grammar/coreano/a1/interrogativos.ts"
+        },
+        {
+          "slug": "isseoyo-eopsoyo",
+          "title": "있어요 / 없어요",
+          "category": "Verbos",
+          "file": "src/data/grammar/coreano/a1/isseoyo-eopsoyo.ts"
+        },
+        {
+          "slug": "marcador-lugar-e",
+          "title": "Lugar 에 (destino)",
+          "category": "Partículas",
+          "file": "src/data/grammar/coreano/a1/marcador-lugar-e.ts"
+        },
+        {
+          "slug": "marcador-lugar-eseo",
+          "title": "Lugar 에서 (acción)",
+          "category": "Partículas",
+          "file": "src/data/grammar/coreano/a1/marcador-lugar-eseo.ts"
+        },
+        {
+          "slug": "marcador-objeto",
+          "title": "Objeto 을/를",
+          "category": "Partículas",
+          "file": "src/data/grammar/coreano/a1/marcador-objeto.ts"
+        },
+        {
+          "slug": "marcadores-tema-sujeto",
+          "title": "은/는 y 이/가",
+          "category": "Partículas",
+          "file": "src/data/grammar/coreano/a1/marcadores-tema-sujeto.ts"
+        },
+        {
+          "slug": "negacion",
+          "title": "Negación 안 / 못",
+          "category": "Verbos",
+          "file": "src/data/grammar/coreano/a1/negacion.ts"
+        },
+        {
+          "slug": "numeros-nativos-contadores",
+          "title": "Números nativos y contadores",
+          "category": "Números",
+          "file": "src/data/grammar/coreano/a1/numeros-nativos-contadores.ts"
+        },
+        {
+          "slug": "numeros-sino-coreanos",
+          "title": "Números sino-coreanos",
+          "category": "Números",
+          "file": "src/data/grammar/coreano/a1/numeros-sino-coreanos.ts"
+        },
+        {
+          "slug": "pasado-asseoyo",
+          "title": "Pasado 았/었어요",
+          "category": "Verbos",
+          "file": "src/data/grammar/coreano/a1/pasado-asseoyo.ts"
+        },
+        {
+          "slug": "querer-goshipda",
+          "title": "Deseos 고 싶어요",
+          "category": "Verbos",
+          "file": "src/data/grammar/coreano/a1/querer-goshipda.ts"
+        },
+        {
+          "slug": "tiempo-horas",
+          "title": "La hora 몇 시예요?",
+          "category": "Números",
+          "file": "src/data/grammar/coreano/a1/tiempo-horas.ts"
+        }
+      ],
+      "a2": [
+        {
+          "slug": "antes-despues-a2",
+          "title": "전에/후에 (antes/después)",
+          "category": "Sintaxis",
+          "file": "src/data/grammar/coreano/a2/antes-despues-a2.ts"
+        },
+        {
+          "slug": "capacidad-rl-su-itda-a2",
+          "title": "-(으)ㄹ 수 있다",
+          "category": "Modalidad",
+          "file": "src/data/grammar/coreano/a2/capacidad-rl-su-itda-a2.ts"
+        },
+        {
+          "slug": "clausulas-relativas-a2",
+          "title": "Cláusulas relativas",
+          "category": "Sintaxis",
+          "file": "src/data/grammar/coreano/a2/clausulas-relativas-a2.ts"
+        },
+        {
+          "slug": "condicional-eumyeon-a2",
+          "title": "-(으)면",
+          "category": "Conectores",
+          "file": "src/data/grammar/coreano/a2/condicional-eumyeon-a2.ts"
+        },
+        {
+          "slug": "conector-aseo-a2",
+          "title": "-(아/어)서",
+          "category": "Conectores",
+          "file": "src/data/grammar/coreano/a2/conector-aseo-a2.ts"
+        },
+        {
+          "slug": "cuanto-eolmana-a2",
+          "title": "얼마나 (cuánto/qué tan)",
+          "category": "Adverbios",
+          "file": "src/data/grammar/coreano/a2/cuanto-eolmana-a2.ts"
+        },
+        {
+          "slug": "discurso-reportado-a2",
+          "title": "Discurso indirecto",
+          "category": "Gramática",
+          "file": "src/data/grammar/coreano/a2/discurso-reportado-a2.ts"
+        },
+        {
+          "slug": "durante-neun-dongane-a2",
+          "title": "동안에 (durante)",
+          "category": "Sintaxis",
+          "file": "src/data/grammar/coreano/a2/durante-neun-dongane-a2.ts"
+        },
+        {
+          "slug": "futuro-rl-geoyeyo-a2",
+          "title": "-(으)ㄹ 거예요",
+          "category": "Tiempo verbal",
+          "file": "src/data/grammar/coreano/a2/futuro-rl-geoyeyo-a2.ts"
+        },
+        {
+          "slug": "honorificos-a2",
+          "title": "Honoríficos",
+          "category": "Gramática",
+          "file": "src/data/grammar/coreano/a2/honorificos-a2.ts"
+        },
+        {
+          "slug": "intencion-ryogo-hada-a2",
+          "title": "-(으)려고 하다",
+          "category": "Intenciones",
+          "file": "src/data/grammar/coreano/a2/intencion-ryogo-hada-a2.ts"
+        },
+        {
+          "slug": "negacion-ji-anta-a2",
+          "title": "-지 않다 / 못",
+          "category": "Negacion",
+          "file": "src/data/grammar/coreano/a2/negacion-ji-anta-a2.ts"
+        },
+        {
+          "slug": "obligacion-aya-hada-a2",
+          "title": "-(아/어)야 하다",
+          "category": "Modalidad",
+          "file": "src/data/grammar/coreano/a2/obligacion-aya-hada-a2.ts"
+        },
+        {
+          "slug": "parecer-neun-geot-gatda-a2",
+          "title": "것 같다 (parece)",
+          "category": "Gramática",
+          "file": "src/data/grammar/coreano/a2/parecer-neun-geot-gatda-a2.ts"
+        },
+        {
+          "slug": "particulas-recipiente-a2",
+          "title": "에게/한테/께",
+          "category": "Partículas",
+          "file": "src/data/grammar/coreano/a2/particulas-recipiente-a2.ts"
+        },
+        {
+          "slug": "progresivo-go-itda-a2",
+          "title": "-고 있다 (progresivo)",
+          "category": "Verbos",
+          "file": "src/data/grammar/coreano/a2/progresivo-go-itda-a2.ts"
+        },
+        {
+          "slug": "razon-gittaemune-a2",
+          "title": "-기 때문에",
+          "category": "Conectores",
+          "file": "src/data/grammar/coreano/a2/razon-gittaemune-a2.ts"
+        },
+        {
+          "slug": "razon-niikka-a2",
+          "title": "-(으)니까",
+          "category": "Conectores",
+          "file": "src/data/grammar/coreano/a2/razon-niikka-a2.ts"
+        },
+        {
+          "slug": "solo-tambien-man-do-a2",
+          "title": "만/도 (solo/también)",
+          "category": "Partículas",
+          "file": "src/data/grammar/coreano/a2/solo-tambien-man-do-a2.ts"
+        },
+        {
+          "slug": "verbos-irregulares-pasado-a2",
+          "title": "Irregulares ㄹ/ㅂ/르",
+          "category": "Verbos",
+          "file": "src/data/grammar/coreano/a2/verbos-irregulares-pasado-a2.ts"
+        }
+      ],
+      "b1": [
+        {
+          "slug": "alternativa-geona-b1",
+          "title": "-거나 (o bien, o)",
+          "category": "Alternativa y opción",
+          "file": "src/data/grammar/coreano/b1/alternativa-geona-b1.ts"
+        },
+        {
+          "slug": "causal-gi-ttaemune-b1",
+          "title": "-기 때문에 (porque, debido a)",
+          "category": "Causal y razón",
+          "file": "src/data/grammar/coreano/b1/causal-gi-ttaemune-b1.ts"
+        },
+        {
+          "slug": "causativa-shichang-b1",
+          "title": "사동사 (hacer que, dejar que)",
+          "category": "Voz y Perspectiva",
+          "file": "src/data/grammar/coreano/b1/causativa-shichang-b1.ts"
+        },
+        {
+          "slug": "condicional-erado-eurely-b1",
+          "title": "-더라도 (condicional concesivo)",
+          "category": "Estructura condicional",
+          "file": "src/data/grammar/coreano/b1/condicional-erado-eurely-b1.ts"
+        },
+        {
+          "slug": "despues-gona-seo-b1",
+          "title": "-고 나서 (después de)",
+          "category": "Tiempo y secuencia",
+          "file": "src/data/grammar/coreano/b1/despues-gona-seo-b1.ts"
+        },
+        {
+          "slug": "estado-mantener-chae-b1",
+          "title": "-은 채로 (manteniendo el estado)",
+          "category": "Estado y condición",
+          "file": "src/data/grammar/coreano/b1/estado-mantener-chae-b1.ts"
+        },
+        {
+          "slug": "forzosidad-subakkeneopsda-b1",
+          "title": "-수밖에 없다 (no hay más remedio que)",
+          "category": "Obligación y Necesidad",
+          "file": "src/data/grammar/coreano/b1/forzosidad-subakkeneopsda-b1.ts"
+        },
+        {
+          "slug": "futuro-intencion-b1",
+          "title": "-(으)ㄹ 것이다 (Futuro/Intención)",
+          "category": "Tiempo verbal",
+          "file": "src/data/grammar/coreano/b1/futuro-intencion-b1.ts"
+        },
+        {
+          "slug": "ge-doeda-b1",
+          "title": "-게 되다 (Llegar a ser)",
+          "category": "Expresiones",
+          "file": "src/data/grammar/coreano/b1/ge-doeda-b1.ts"
+        },
+        {
+          "slug": "inmediato-jamaja-b1",
+          "title": "-자마자 (tan pronto como, inmediatamente después)",
+          "category": "Tiempo y secuencia",
+          "file": "src/data/grammar/coreano/b1/inmediato-jamaja-b1.ts"
+        },
+        {
+          "slug": "kiro-hada-b1",
+          "title": "-기로 하다 (Decidir hacer)",
+          "category": "Expresiones",
+          "file": "src/data/grammar/coreano/b1/kiro-hada-b1.ts"
+        },
+        {
+          "slug": "obligacion-eoyahada-b1",
+          "title": "-어야 하다 (debo, tengo que)",
+          "category": "Obligación y Necesidad",
+          "file": "src/data/grammar/coreano/b1/obligacion-eoyahada-b1.ts"
+        },
+        {
+          "slug": "observacion-neyo-b1",
+          "title": "-네요 (parece, observo que)",
+          "category": "Expresión de Perspectiva",
+          "file": "src/data/grammar/coreano/b1/observacion-neyo-b1.ts"
+        },
+        {
+          "slug": "oportunidad-gime-b1",
+          "title": "-는 김에 (mientras, ya que)",
+          "category": "Tiempo y oportunidad",
+          "file": "src/data/grammar/coreano/b1/oportunidad-gime-b1.ts"
+        },
+        {
+          "slug": "pasiva-jeosudo-b1",
+          "title": "피동사 (ser + participio)",
+          "category": "Voz y Perspectiva",
+          "file": "src/data/grammar/coreano/b1/pasiva-jeosudo-b1.ts"
+        },
+        {
+          "slug": "passado-reminiscencia-b1",
+          "title": "-던 / -았던 (Pasado con reminiscencia)",
+          "category": "Tiempo verbal",
+          "file": "src/data/grammar/coreano/b1/passado-reminiscencia-b1.ts"
+        },
+        {
+          "slug": "posibilidad-su-itda-b1",
+          "title": "-을/ㄹ 수 있다/없다 (poder, capacidad)",
+          "category": "Posibilidad y capacidad",
+          "file": "src/data/grammar/coreano/b1/posibilidad-su-itda-b1.ts"
+        },
+        {
+          "slug": "proporcion-euttorok-b1",
+          "title": "-ㄹ수록 (cuanto más..., más...)",
+          "category": "Proporción y grado",
+          "file": "src/data/grammar/coreano/b1/proporcion-euttorok-b1.ts"
+        },
+        {
+          "slug": "proposito-dorok-b1",
+          "title": "-도록 (para que, de modo que)",
+          "category": "Propósito y Grado",
+          "file": "src/data/grammar/coreano/b1/proposito-dorok-b1.ts"
+        },
+        {
+          "slug": "simultaneo-eumyeonseo-b1",
+          "title": "-으면서 (mientras, a la vez)",
+          "category": "Simultaneidad",
+          "file": "src/data/grammar/coreano/b1/simultaneo-eumyeonseo-b1.ts"
+        }
+      ]
+    },
+    "pt": {
+      "a1": [
+        {
+          "slug": "adjetivos-possessivos",
+          "title": "Possessivos",
+          "category": "Gramática",
+          "file": "src/data/grammar/portugues/a1/adjetivos-possessivos.ts"
+        },
+        {
+          "slug": "adjetivos-qualificativos",
+          "title": "Adjetivos",
+          "category": "Gramática",
+          "file": "src/data/grammar/portugues/a1/adjetivos-qualificativos.ts"
+        },
+        {
+          "slug": "adverbios-frequencia",
+          "title": "Advérbios de frequência",
+          "category": "Advérbios",
+          "file": "src/data/grammar/portugues/a1/adverbios-frequencia.ts"
+        },
+        {
+          "slug": "artigos",
+          "title": "Artigos (o/a/um/uma)",
+          "category": "Artículos",
+          "file": "src/data/grammar/portugues/a1/artigos.ts"
+        },
+        {
+          "slug": "contracoes",
+          "title": "Contrações",
+          "category": "Gramática",
+          "file": "src/data/grammar/portugues/a1/contracoes.ts"
+        },
+        {
+          "slug": "estar-gerundio",
+          "title": "Estar + gerúndio",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/a1/estar-gerundio.ts"
+        },
+        {
+          "slug": "ha-tem-existe",
+          "title": "Há / Tem",
+          "category": "Gramática",
+          "file": "src/data/grammar/portugues/a1/ha-tem-existe.ts"
+        },
+        {
+          "slug": "ir-futuro",
+          "title": "Ir + infinitivo (futuro)",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/a1/ir-futuro.ts"
+        },
+        {
+          "slug": "negacao",
+          "title": "Negação",
+          "category": "Gramática",
+          "file": "src/data/grammar/portugues/a1/negacao.ts"
+        },
+        {
+          "slug": "perguntas-interrogativas",
+          "title": "Perguntas",
+          "category": "Gramática",
+          "file": "src/data/grammar/portugues/a1/perguntas-interrogativas.ts"
+        },
+        {
+          "slug": "plural-substantivos",
+          "title": "Plural (substantivos)",
+          "category": "Sustantivos",
+          "file": "src/data/grammar/portugues/a1/plural-substantivos.ts"
+        },
+        {
+          "slug": "preposicoes-lugar",
+          "title": "Preposições",
+          "category": "Gramática",
+          "file": "src/data/grammar/portugues/a1/preposicoes-lugar.ts"
+        },
+        {
+          "slug": "presente-verbos-ar",
+          "title": "Presente -ar",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/a1/presente-verbos-ar.ts"
+        },
+        {
+          "slug": "presente-verbos-er-ir",
+          "title": "Presente -er/-ir",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/a1/presente-verbos-er-ir.ts"
+        },
+        {
+          "slug": "pronomes-pessoais",
+          "title": "Pronomes pessoais",
+          "category": "Pronombres",
+          "file": "src/data/grammar/portugues/a1/pronomes-pessoais.ts"
+        },
+        {
+          "slug": "ser-e-estar",
+          "title": "Ser e Estar",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/a1/ser-e-estar.ts"
+        },
+        {
+          "slug": "verbo-ter",
+          "title": "Ter (tener)",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/a1/verbo-ter.ts"
+        },
+        {
+          "slug": "verbos-irregulares",
+          "title": "Verbos irregulares",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/a1/verbos-irregulares.ts"
+        }
+      ],
+      "a2": [
+        {
+          "slug": "comparativos-superlativos-a2",
+          "title": "Comparativos e superlativos",
+          "category": "Adjetivos",
+          "file": "src/data/grammar/portugues/a2/comparativos-superlativos-a2.ts"
+        },
+        {
+          "slug": "condicional-a2",
+          "title": "Condicional",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/a2/condicional-a2.ts"
+        },
+        {
+          "slug": "conjuncoes-logicas-a2",
+          "title": "Conjunções lógicas",
+          "category": "Gramática",
+          "file": "src/data/grammar/portugues/a2/conjuncoes-logicas-a2.ts"
+        },
+        {
+          "slug": "diminutivos-aumentativos-a2",
+          "title": "Diminutivos e aumentativos",
+          "category": "Vocabulario",
+          "file": "src/data/grammar/portugues/a2/diminutivos-aumentativos-a2.ts"
+        },
+        {
+          "slug": "expressoes-com-fazer-a2",
+          "title": "Expressões com fazer",
+          "category": "Vocabulario",
+          "file": "src/data/grammar/portugues/a2/expressoes-com-fazer-a2.ts"
+        },
+        {
+          "slug": "expressoes-tempo-a2",
+          "title": "Expressões de tempo",
+          "category": "Vocabulario",
+          "file": "src/data/grammar/portugues/a2/expressoes-tempo-a2.ts"
+        },
+        {
+          "slug": "futuro-do-presente-a2",
+          "title": "Futuro do presente",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/a2/futuro-do-presente-a2.ts"
+        },
+        {
+          "slug": "gerundio-a2",
+          "title": "Gerúndio",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/a2/gerundio-a2.ts"
+        },
+        {
+          "slug": "ha-faz-tempo-a2",
+          "title": "Há / faz + tempo",
+          "category": "Gramática",
+          "file": "src/data/grammar/portugues/a2/ha-faz-tempo-a2.ts"
+        },
+        {
+          "slug": "para-vs-por-a2",
+          "title": "Para vs. por",
+          "category": "Preposiciones",
+          "file": "src/data/grammar/portugues/a2/para-vs-por-a2.ts"
+        },
+        {
+          "slug": "preterito-imperfeito-a2",
+          "title": "Pretérito imperfeito",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/a2/preterito-imperfeito-a2.ts"
+        },
+        {
+          "slug": "preterito-perfeito-irregular-a2",
+          "title": "Perfeito irregular",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/a2/preterito-perfeito-irregular-a2.ts"
+        },
+        {
+          "slug": "pronomes-obliquos-a2",
+          "title": "Pronomes oblíquos",
+          "category": "Pronomes",
+          "file": "src/data/grammar/portugues/a2/pronomes-obliquos-a2.ts"
+        },
+        {
+          "slug": "pronomes-relativos-a2",
+          "title": "Pronomes relativos",
+          "category": "Pronomes",
+          "file": "src/data/grammar/portugues/a2/pronomes-relativos-a2.ts"
+        },
+        {
+          "slug": "ser-vs-estar-a2",
+          "title": "Ser vs Estar A2",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/a2/ser-vs-estar-a2.ts"
+        },
+        {
+          "slug": "subjuntivo-presente-a2",
+          "title": "Subjuntivo presente",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/a2/subjuntivo-presente-a2.ts"
+        },
+        {
+          "slug": "verbo-ficar-a2",
+          "title": "Verbo ficar",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/a2/verbo-ficar-a2.ts"
+        },
+        {
+          "slug": "verbos-modais-a2",
+          "title": "Verbos modais",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/a2/verbos-modais-a2.ts"
+        },
+        {
+          "slug": "verbos-reflexivos-a2",
+          "title": "Verbos reflexivos",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/a2/verbos-reflexivos-a2.ts"
+        },
+        {
+          "slug": "voz-passiva-a2",
+          "title": "Voz passiva",
+          "category": "Sintaxis",
+          "file": "src/data/grammar/portugues/a2/voz-passiva-a2.ts"
+        }
+      ],
+      "b1": [
+        {
+          "slug": "comparativos-superlativos-b1",
+          "title": "Comparativos y Superlativos",
+          "category": "Adjetivos",
+          "file": "src/data/grammar/portugues/b1/comparativos-superlativos-b1.ts"
+        },
+        {
+          "slug": "condicional-b1",
+          "title": "Condicional",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/b1/condicional-b1.ts"
+        },
+        {
+          "slug": "conectivos-b1",
+          "title": "Conectivos",
+          "category": "Estructura del discurso",
+          "file": "src/data/grammar/portugues/b1/conectivos-b1.ts"
+        },
+        {
+          "slug": "conjuntivo-imperfeito-b1",
+          "title": "Conjuntivo Imperfeito",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/b1/conjuntivo-imperfeito-b1.ts"
+        },
+        {
+          "slug": "discurso-indireto-b1",
+          "title": "Discurso Indireto",
+          "category": "Estrutura",
+          "file": "src/data/grammar/portugues/b1/discurso-indireto-b1.ts"
+        },
+        {
+          "slug": "futuro-conjuntivo-b1",
+          "title": "Futuro do Conjuntivo",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/b1/futuro-conjuntivo-b1.ts"
+        },
+        {
+          "slug": "futuro-presente-b1",
+          "title": "Futuro do Presente",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/b1/futuro-presente-b1.ts"
+        },
+        {
+          "slug": "gerundio-b1",
+          "title": "Gerundio",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/b1/gerundio-b1.ts"
+        },
+        {
+          "slug": "imperativo-b1",
+          "title": "Imperativo",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/b1/imperativo-b1.ts"
+        },
+        {
+          "slug": "participio-passado-b1",
+          "title": "Participio Pasado",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/b1/participio-passado-b1.ts"
+        },
+        {
+          "slug": "periodo-hipotico-b1",
+          "title": "Período Hipotético",
+          "category": "Estructura gramatical",
+          "file": "src/data/grammar/portugues/b1/periodo-hipotico-b1.ts"
+        },
+        {
+          "slug": "preposicoes-b1",
+          "title": "Preposiciones",
+          "category": "Estructura gramatical",
+          "file": "src/data/grammar/portugues/b1/preposicoes-b1.ts"
+        },
+        {
+          "slug": "preterito-perfeito-vs-imperfeito-b1",
+          "title": "Pretérito Perfeito vs Imperfeito",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/b1/preterito-perfeito-vs-imperfeito-b1.ts"
+        },
+        {
+          "slug": "pronomes-obliquos-b1",
+          "title": "Pronomes Oblíquos",
+          "category": "Pronomes",
+          "file": "src/data/grammar/portugues/b1/pronomes-obliquos-b1.ts"
+        },
+        {
+          "slug": "regencia-verbal-b1",
+          "title": "Regencia Verbal",
+          "category": "Estructura gramatical",
+          "file": "src/data/grammar/portugues/b1/regencia-verbal-b1.ts"
+        },
+        {
+          "slug": "ser-vs-estar-b1",
+          "title": "Ser vs Estar",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/b1/ser-vs-estar-b1.ts"
+        },
+        {
+          "slug": "subjuntivo-presente-b1",
+          "title": "Subjuntivo Presente",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/b1/subjuntivo-presente-b1.ts"
+        },
+        {
+          "slug": "tempos-compostos-b1",
+          "title": "Tempos Compostos",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/b1/tempos-compostos-b1.ts"
+        },
+        {
+          "slug": "verbos-reflexos-b1",
+          "title": "Verbos Reflexos",
+          "category": "Verbos",
+          "file": "src/data/grammar/portugues/b1/verbos-reflexos-b1.ts"
+        },
+        {
+          "slug": "voz-passiva-b1",
+          "title": "Voz Passiva",
+          "category": "Estrutura",
+          "file": "src/data/grammar/portugues/b1/voz-passiva-b1.ts"
+        }
+      ]
+    }
+  }
+}

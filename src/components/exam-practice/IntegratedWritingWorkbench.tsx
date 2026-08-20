@@ -194,7 +194,7 @@ export default function IntegratedWritingWorkbench({
         </div>
 
         {completed === prompt.checklist.length && words >= 150 && (
-          <div style={{ display: 'grid', gridTemplateColumns: '24px 1fr', gap: '0.55rem', alignItems: 'start', color: '#047857', background: 'rgba(5,150,105,0.08)', borderRadius: 12, padding: '0.75rem', lineHeight: 1.55 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '24px 1fr', gap: '0.55rem', alignItems: 'start', color: 'var(--wl-on-panel-ok, #047857)', background: 'rgba(5,150,105,0.08)', borderRadius: 12, padding: '0.75rem', lineHeight: 1.55 }}>
             <CheckCircle2 size={18} />
             <span>
               Tu respuesta ya cubre la estructura base. Ahora revisa que cada párrafo reporte una relación lectura-clase y que no aparezca una opinión personal.

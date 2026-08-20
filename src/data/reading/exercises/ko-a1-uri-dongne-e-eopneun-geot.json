@@ -1,0 +1,453 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-a1-uri-dongne-e-eopneun-geot",
+  "status": "published",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Coreano A1",
+    "topik": 1,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. A1 se sitúa alrededor del TOPIK I nivel 1, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "uri-dongne-e-eopneun-geot",
+  "series": {
+    "id": "coreano-a1-lectura-10",
+    "episode": 3,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-a1-doseogwan-goyangi",
+    "nextExerciseId": "ko-a1-halmeoni-achim"
+  },
+  "classification": {
+    "genre": "presentación de un lugar",
+    "topic": "el barrio",
+    "intent": "learning",
+    "tags": [
+      "coreano a1",
+      "lectura",
+      "있어요/없어요",
+      "partícula 에"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Lo que no hay en mi barrio"
+    },
+    "intro": {
+      "es": "No hay cine, no hay metro y no hay hospital. Pero hay una panadería por la que la gente cruza la ciudad. Lectura de coreano A1."
+    },
+    "mission": {
+      "es": "Haz dos listas mientras lees: lo que hay y lo que no hay."
+    },
+    "targetText": "우리 동네는 작아요. 우리 동네에 영화관이 없어요. 지하철역도 없어요. 큰 병원도 없어요. 학교는 하나 있어요. 공원도 하나 있어요. 공원에 나무가 많아요. 그리고 우리 동네에 빵집이 하나 있어요. 이 빵집은 아주 유명해요. 주말에는 줄이 길어요. 사람들이 다른 동네에서 와요. 어떤 사람들은 버스로 한 시간 와요. 빵집 이름은 없어요. 간판도 없어요. 그냥 문 앞에 빵 사진이 하나 있어요. 우리 할머니가 말해요. 좋은 빵집에 간판이 필요 없어요. 저는 영화관이 조금 필요해요. 하지만 빵은 매일 필요해요.",
+    "wordCount": 72,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Usar 있어요 y 없어요 para decir lo que hay y lo que falta."
+      },
+      {
+        "es": "Marcar el lugar con la partícula 에 y distinguirla de 에서."
+      },
+      {
+        "es": "Leer un texto de enumeración sin perder el hilo de dos listas a la vez."
+      }
+    ],
+    "grammarFocus": [
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e"
+    ],
+    "vocabulary": [
+      {
+        "surface": "동네",
+        "lemma": "동네",
+        "reading": "dongne",
+        "glosses": {
+          "es": "barrio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "영화관",
+        "lemma": "영화관",
+        "reading": "yeonghwagwan",
+        "glosses": {
+          "es": "cine"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "지하철역",
+        "lemma": "지하철역",
+        "reading": "jihacheollyeok",
+        "glosses": {
+          "es": "estación de metro"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "빵집",
+        "lemma": "빵집",
+        "reading": "ppangjip",
+        "glosses": {
+          "es": "panadería"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "줄",
+        "lemma": "줄",
+        "reading": "jul",
+        "glosses": {
+          "es": "cola, fila de gente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "간판",
+        "lemma": "간판",
+        "reading": "ganpan",
+        "glosses": {
+          "es": "letrero, rótulo del local"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "유명해요",
+        "lemma": "유명하다",
+        "reading": "yumyeonghaeyo",
+        "glosses": {
+          "es": "es famoso, es conocido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "필요해요",
+        "lemma": "필요하다",
+        "reading": "piryohaeyo",
+        "glosses": {
+          "es": "hace falta, es necesario"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En Corea hay panaderías de barrio muy conocidas que no ponen rótulo y funcionan solo por recomendación. La cola de la calle es su única publicidad."
+    },
+    "spanishSpeakerNote": {
+      "es": "Ojo con 없어요: el coreano tiene un verbo propio para «no haber», no niega 있어요. Y la partícula 도 significa «también» o, en negativo, «tampoco»: 지하철역도 없어요 es «tampoco hay metro»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en 해요체 sobre la vida cotidiana, identificar de quién se habla gracias a las partículas de tema y de objeto, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas"
+    ],
+    "disallowedGrammar": [
+      "clausulas-relativas",
+      "discurso-reportado",
+      "honorificos-avanzados",
+      "voz pasiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 3.8,
+      "maxSentenceWords": 7,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Todo en 해요체 salvo la lectura 10 (합니다체, carta formal). Sin cláusulas de relativo ni discurso indirecto. Romanización disponible como apoyo opcional."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué idea sostiene el texto sobre el barrio?",
+      "options": [
+        {
+          "id": "falta",
+          "text": "Que le faltan muchas cosas, pero lo que tiene compensa"
+        },
+        {
+          "id": "mudarse",
+          "text": "Que el narrador quiere mudarse a un barrio mejor"
+        },
+        {
+          "id": "crecer",
+          "text": "Que el barrio está creciendo muy rápido"
+        }
+      ],
+      "answer": "falta",
+      "evidence": "저는 영화관이 조금 필요해요. 하지만 빵은 매일 필요해요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Las dos últimas frases hacen el balance: el cine hace falta un poco, el pan todos los días."
+        },
+        "incorrect": {
+          "es": "Nadie se muda y el barrio no crece. Lee las dos últimas frases, donde compara el cine con el pan."
+        },
+        "strategy": {
+          "es": "Cuando un texto enumera carencias y ventajas, la conclusión está en cómo las pesa al final."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuál de estas cosas sí hay en el barrio?",
+      "options": [
+        {
+          "id": "parque",
+          "text": "Un parque"
+        },
+        {
+          "id": "metro",
+          "text": "Una estación de metro"
+        },
+        {
+          "id": "hospital",
+          "text": "Un hospital grande"
+        }
+      ],
+      "answer": "parque",
+      "evidence": "공원도 하나 있어요. 공원에 나무가 많아요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: 공원도 하나 있어요, hay un parque. El metro y el hospital grande van con 없어요."
+        },
+        "incorrect": {
+          "es": "Fíjate en qué verbo cierra cada frase: 있어요 significa que hay, 없어요 que no hay."
+        },
+        "strategy": {
+          "es": "En un texto de listas, el verbo final de cada frase decide en qué lista va el elemento. Léelo siempre."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice 간판도 없어요. ¿Qué es un 간판?",
+      "options": [
+        {
+          "id": "letrero",
+          "text": "El letrero con el nombre del local"
+        },
+        {
+          "id": "escaparate",
+          "text": "El escaparate de cristal"
+        },
+        {
+          "id": "horario",
+          "text": "El horario de apertura"
+        }
+      ],
+      "answer": "letrero",
+      "evidence": "빵집 이름은 없어요. 간판도 없어요. 그냥 문 앞에 빵 사진이 하나 있어요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. La frase anterior dice que no tiene nombre, y la siguiente que solo hay una foto de pan en la puerta."
+        },
+        "incorrect": {
+          "es": "Está entre dos frases que hablan del nombre del local y de lo único que hay en la puerta. Eso lo acota."
+        },
+        "strategy": {
+          "es": "Una palabra desconocida entre dos frases relacionadas se deduce de ambas. Léelas como un bloque."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice la abuela 좋은 빵집에 간판이 필요 없어요?",
+      "options": [
+        {
+          "id": "boca",
+          "text": "Porque si el pan es bueno, la gente llega sin necesidad de anuncios"
+        },
+        {
+          "id": "dinero",
+          "text": "Porque los letreros son demasiado caros"
+        },
+        {
+          "id": "ley",
+          "text": "Porque la ley no permite poner letreros en ese barrio"
+        }
+      ],
+      "answer": "boca",
+      "evidence": "사람들이 다른 동네에서 와요. 어떤 사람들은 버스로 한 시간 와요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto ya lo había demostrado antes: hay gente que se pasa una hora de autobús para llegar allí."
+        },
+        "incorrect": {
+          "es": "El texto no habla de precios ni de normas. Busca de dónde viene la gente y cuánto tarda."
+        },
+        "strategy": {
+          "es": "Cuando alguien dice una frase con forma de refrán, la prueba suele estar antes en el texto. Búscala."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: los fines de semana la panadería tiene cola en la calle.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "주말에는 줄이 길어요.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero: 주말에는 줄이 길어요, los fines de semana la cola es larga."
+        },
+        "incorrect": {
+          "es": "Busca la palabra 주말, fin de semana, y mira qué dice de la cola."
+        },
+        "strategy": {
+          "es": "La partícula 에는 marca el momento. Localizarla te lleva directo a la frase que habla de ese momento."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué menciona el texto que hay gente que viene una hora en autobús?",
+      "options": [
+        {
+          "id": "fama",
+          "text": "Para demostrar hasta qué punto la panadería es conocida"
+        },
+        {
+          "id": "transporte",
+          "text": "Para quejarse de que el barrio está mal comunicado"
+        },
+        {
+          "id": "tiempo",
+          "text": "Para explicar cuánto se tarda en llegar al centro"
+        }
+      ],
+      "answer": "fama",
+      "evidence": "이 빵집은 아주 유명해요 … 어떤 사람들은 버스로 한 시간 와요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El texto afirma que es famosa y luego lo prueba con un dato concreto: una hora de autobús."
+        },
+        "incorrect": {
+          "es": "La falta de metro se menciona aparte, al principio. Este dato viene después de decir que la panadería es famosa."
+        },
+        "strategy": {
+          "es": "Un dato concreto casi siempre sirve para probar la afirmación que lo precede. Lee hacia arriba."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en coreano sobre tu barrio: tres cosas que hay y tres que no. Usa 있어요 y 없어요 y la partícula 에."
+    },
+    "minWords": 25,
+    "maxWords": 60,
+    "hints": [
+      "우리 동네는 …",
+      "우리 동네에 …이/가 있어요.",
+      "…도 없어요.",
+      "저는 …이/가 필요해요."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano A1: Lo que no hay en mi barrio | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto en coreano A1 y practica 있어요 y 없어요 con la partícula de lugar 에. Con vocabulario romanizado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/coreano/a1/lectura/uri-dongne-e-eopneun-geot",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-a1-doseogwan-goyangi",
+      "ko-a1-halmeoni-achim"
+    ]
+  }
+}

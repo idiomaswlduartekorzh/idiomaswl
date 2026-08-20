@@ -1,0 +1,459 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-a2-a-biblioteca-do-predio",
+  "status": "published",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Portugués A2"
+  },
+  "slug": "a-biblioteca-do-predio",
+  "series": {
+    "id": "portugues-a2-lectura-10",
+    "episode": 8,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-a2-a-cozinheira-das-cinco",
+    "nextExerciseId": "pt-a2-como-usar-o-onibus"
+  },
+  "classification": {
+    "genre": "noticia local",
+    "topic": "una biblioteca vecinal",
+    "intent": "learning",
+    "tags": [
+      "portugues a2",
+      "lectura",
+      "voz pasiva",
+      "conectores lógicos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La biblioteca del edificio"
+    },
+    "intro": {
+      "es": "Una estantería en el portal que empezó con nueve libros y hoy tiene mil cuatrocientos. Lectura de portugués A2 con la voz pasiva."
+    },
+    "mission": {
+      "es": "Averigua qué regla se puso y cuál se quitó."
+    },
+    "targetText": "A biblioteca do edifício Antares foi criada em 2019 por duas moradoras do quinto andar. No começo eram nove livros numa estante velha, colocada ao lado do elevador. Hoje são mil e quatrocentos. Nenhum livro foi comprado: todos foram doados por moradores ou por vizinhos da rua. O sistema é simples. Não existe cadastro nem ficha. As pessoas pegam o livro que querem e devolvem quando terminam. No primeiro ano foi criada uma regra: cada morador podia levar no máximo dois livros por vez. Entretanto, a regra foi retirada em 2021, porque ninguém a cumpria e, mais importante, porque os livros voltavam mesmo assim. Segundo o síndico, apenas trinta livros desapareceram em sete anos. Isso é pouco mais de dois por cento. A estante foi trocada duas vezes, pois a primeira quebrou com o peso. A segunda foi construída por um morador que é marceneiro, portanto não custou nada ao condomínio. Agora existe um problema novo, e é um problema bom: não cabe mais livro. Por isso, a assembleia vai votar em setembro se a biblioteca ocupa também a parede do outro lado. A proposta foi aceita pela maioria em uma reunião informal, mas falta o voto oficial da assembleia.",
+    "wordCount": 200,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Formar la voz pasiva con ser + participio: foi criada, foram doados, foi retirada."
+      },
+      {
+        "es": "Encadenar con conectores lógicos: entretanto, pois, portanto, por isso, segundo."
+      },
+      {
+        "es": "Seguir una noticia que da cifras y las interpreta."
+      }
+    ],
+    "grammarFocus": [
+      "voz-passiva-a2",
+      "conjuncoes-logicas-a2",
+      "artigos"
+    ],
+    "vocabulary": [
+      {
+        "surface": "moradoras",
+        "lemma": "morador",
+        "glosses": {
+          "es": "vecinas, residentes"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "estante",
+        "lemma": "estante",
+        "glosses": {
+          "es": "estantería"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "doados",
+        "lemma": "doar",
+        "glosses": {
+          "es": "donados"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cadastro",
+        "lemma": "cadastro",
+        "glosses": {
+          "es": "registro, alta de usuario"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "síndico",
+        "lemma": "síndico",
+        "glosses": {
+          "es": "presidente de la comunidad de vecinos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "marceneiro",
+        "lemma": "marceneiro",
+        "glosses": {
+          "es": "carpintero de muebles"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "condomínio",
+        "lemma": "condomínio",
+        "glosses": {
+          "es": "comunidad de propietarios; también la cuota"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "assembleia",
+        "lemma": "assembleia",
+        "glosses": {
+          "es": "junta de vecinos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El «síndico» es la figura que preside la comunidad en los edificios brasileños, y la «assembleia» es la junta que vota las decisiones comunes."
+    },
+    "spanishSpeakerNote": {
+      "es": "«Síndico» no es un cargo municipal: es el presidente de la comunidad de vecinos. Y fíjate en la pasiva: «foi criada por duas moradoras» mantiene el agente con «por», igual que en español."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en portugués sobre hechos pasados y planes, distinguir el perfeito del imperfeito, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares",
+      "comparativos-superlativos-a2",
+      "condicional-a2",
+      "conjuncoes-logicas-a2",
+      "diminutivos-aumentativos-a2",
+      "expressoes-com-fazer-a2",
+      "expressoes-tempo-a2",
+      "futuro-do-presente-a2",
+      "gerundio-a2",
+      "ha-faz-tempo-a2",
+      "para-vs-por-a2",
+      "preterito-imperfeito-a2",
+      "preterito-perfeito-irregular-a2",
+      "pronomes-obliquos-a2",
+      "pronomes-relativos-a2",
+      "ser-vs-estar-a2",
+      "subjuntivo-presente-a2",
+      "verbo-ficar-a2",
+      "verbos-modais-a2",
+      "verbos-reflexivos-a2",
+      "voz-passiva-a2"
+    ],
+    "disallowedGrammar": [
+      "mais-que-perfeito composto",
+      "futuro do subjuntivo",
+      "registro literario"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 12.5,
+      "maxSentenceWords": 20,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Pasado narrativo (perfeito e imperfeito) y subjuntivo presente permitidos. Sin mais-que-perfeito compuesto ni futuro de subjuntivo. Inferencia ligera."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta la noticia?",
+      "options": [
+        {
+          "id": "crecio",
+          "text": "Una biblioteca vecinal que creció tanto que ya no cabe"
+        },
+        {
+          "id": "robos",
+          "text": "Los robos de libros en un edificio"
+        },
+        {
+          "id": "cierre",
+          "text": "El cierre de una biblioteca por falta de uso"
+        }
+      ],
+      "answer": "crecio",
+      "evidence": "Agora existe um problema novo, e é um problema bom: não cabe mais livro.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo llama «un problema bueno», que es la clave del tono."
+        },
+        "incorrect": {
+          "es": "Solo desaparecieron treinta libros en siete años, y nadie cierra nada. Busca «um problema bom»."
+        },
+        "strategy": {
+          "es": "Cuando una noticia califica un problema como bueno, ese contraste es su asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántos libros hay hoy?",
+      "options": [
+        {
+          "id": "1400",
+          "text": "Mil cuatrocientos"
+        },
+        {
+          "id": "9",
+          "text": "Nueve"
+        },
+        {
+          "id": "30",
+          "text": "Treinta"
+        }
+      ],
+      "answer": "1400",
+      "evidence": "No começo eram nove livros numa estante velha … Hoje são mil e quatrocentos.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Los nueve eran el principio y los treinta, los que desaparecieron."
+        },
+        "incorrect": {
+          "es": "La noticia da tres cifras de libros y cada una mide un momento distinto. Busca la que va con «Hoje»."
+        },
+        "strategy": {
+          "es": "Cuando un texto compara un antes y un ahora, la palabra «hoje» marca la cifra actual."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «Segundo o síndico, apenas trinta livros desapareceram». ¿Qué es el «síndico»?",
+      "options": [
+        {
+          "id": "presidente",
+          "text": "El presidente de la comunidad de vecinos"
+        },
+        {
+          "id": "sindicato",
+          "text": "Un representante sindical"
+        },
+        {
+          "id": "bibliotecario",
+          "text": "El bibliotecario del edificio"
+        }
+      ],
+      "answer": "presidente",
+      "evidence": "Segundo o síndico, apenas trinta livros desapareceram em sete anos.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Es quien lleva las cuentas del edificio, por eso da la cifra."
+        },
+        "incorrect": {
+          "es": "No hay sindicato ni bibliotecario: la biblioteca no tiene registro ni personal. Piensa quién administra un edificio."
+        },
+        "strategy": {
+          "es": "Si un cargo aparece dando datos oficiales de un edificio, es quien lo administra."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué la segunda estantería no costó nada?",
+      "options": [
+        {
+          "id": "vecino",
+          "text": "Porque la construyó un vecino que es carpintero"
+        },
+        {
+          "id": "donada",
+          "text": "Porque la donó una tienda del barrio"
+        },
+        {
+          "id": "vieja",
+          "text": "Porque reutilizaron la primera"
+        }
+      ],
+      "answer": "vecino",
+      "evidence": "A segunda foi construída por um morador que é marceneiro, portanto não custou nada ao condomínio.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el conector «portanto» une la causa con la consecuencia en la misma frase."
+        },
+        "incorrect": {
+          "es": "La primera se rompió con el peso, así que no se reutilizó. Busca el conector «portanto»."
+        },
+        "strategy": {
+          "es": "El conector «portanto» (por lo tanto) señala la consecuencia. Lo que va antes es la causa."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la regla de llevarse como máximo dos libros se retiró en 2021.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "a regra foi retirada em 2021, porque ninguém a cumpria e, mais importante, porque os livros voltavam mesmo assim",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y con dos razones: nadie la cumplía y los libros volvían igual."
+        },
+        "incorrect": {
+          "es": "Busca el conector «Entretanto». Lo que sigue cuenta qué pasó con la regla."
+        },
+        "strategy": {
+          "es": "«Entretanto» anuncia un giro. Si lo ves, lo que sigue contradice lo anterior."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué convierte los treinta libros perdidos en un porcentaje?",
+      "options": [
+        {
+          "id": "relativizar",
+          "text": "Para mostrar que la pérdida es mínima frente al total"
+        },
+        {
+          "id": "alarmar",
+          "text": "Para alertar de que se pierden demasiados libros"
+        },
+        {
+          "id": "contar",
+          "text": "Para explicar cómo se hace el inventario"
+        }
+      ],
+      "answer": "relativizar",
+      "evidence": "apenas trinta livros desapareceram em sete anos. Isso é pouco mais de dois por cento.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el «apenas» ya lo anunciaba: la cifra se presenta como pequeña."
+        },
+        "incorrect": {
+          "es": "La palabra «apenas» descarta la alarma, y no se explica ningún inventario. Fíjate en ella."
+        },
+        "strategy": {
+          "es": "Convertir una cifra en porcentaje suele servir para relativizarla. Mira qué adverbio la acompaña."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe una noticia de 8–10 frases en portugués sobre una iniciativa vecinal. Usa cuatro construcciones en voz pasiva y cuatro conectores lógicos distintos."
+    },
+    "minWords": 45,
+    "maxWords": 95,
+    "hints": [
+      "A… foi criada em… por…",
+      "Nenhum… foi comprado.",
+      "Entretanto, … foi retirada…",
+      "Portanto, não custou nada."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués A2: La biblioteca del edificio | WeLearn"
+    },
+    "description": {
+      "es": "Lee una noticia local en portugués de Brasil A2 y practica la voz pasiva y los conectores lógicos. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/a2/lectura/a-biblioteca-do-predio",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-a2-a-cozinheira-das-cinco",
+      "pt-a2-como-usar-o-onibus"
+    ]
+  }
+}

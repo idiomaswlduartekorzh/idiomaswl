@@ -13,14 +13,15 @@ export const LANGUAGE_NAMES: Record<TutorLocale, Record<ReadingLanguage, string>
 export function readingHubPath(locale: TutorLocale, language: ReadingLanguage, level: CefrLevel) {
   const languageSlug = LANGUAGE_SLUGS[locale][language]
   const normalizedLevel = level.toLowerCase()
-  // El inglés usa las URLs canónicas del sitio (/practica/...), unificadas con el resto
-  // de la práctica y sin prefijo de idioma, para no fragmentar el direccionamiento en Google.
-  if (language === 'en') {
-    return `/practica/ingles/${normalizedLevel}/lectura`
+  // Todas las lecturas viven en las URLs canónicas del sitio, sin prefijo de idioma:
+  // /practica/<idioma>/<nivel>/lectura. El inglés ya era así; el resto llevaba un /es/
+  // delante que habría abierto un segundo espacio de URLs en paralelo al que se unificó
+  // en agosto de 2026. Es la misma ruta que escribe el generador en `seo.canonicalPath`,
+  // y las dos tienen que coincidir o el sitemap apuntaría a un sitio y el canonical a otro.
+  if (locale === 'es') {
+    return `/practica/${languageSlug}/${normalizedLevel}/lectura`
   }
-  return locale === 'es'
-    ? `/es/practica/${languageSlug}/${normalizedLevel}/lectura`
-    : `/en/practice/${languageSlug}/${normalizedLevel}/reading`
+  return `/en/practice/${languageSlug}/${normalizedLevel}/reading`
 }
 
 export function readingExercisePath(locale: TutorLocale, language: ReadingLanguage, level: CefrLevel, slug: string) {

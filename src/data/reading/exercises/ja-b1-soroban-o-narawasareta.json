@@ -1,0 +1,503 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ja-b1-soroban-o-narawasareta",
+  "status": "published",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Japonés B1",
+    "jlpt": "N3",
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el JLPT es aproximada: son dos escalas distintas, con exámenes distintos. B1 se sitúa alrededor del N3, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "soroban-o-narawasareta",
+  "series": {
+    "id": "japones-b1-lectura-10",
+    "episode": 4,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ja-b1-kare-wa-konai-hazu-datta",
+    "nextExerciseId": "ja-b1-jibun-no-soubetsukai-ni-okureta"
+  },
+  "classification": {
+    "genre": "memoria familiar",
+    "topic": "siete años de clases obligadas",
+    "intent": "learning",
+    "tags": [
+      "japones b1",
+      "lectura",
+      "causativo させる",
+      "pasivo de perjuicio られる"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Me hicieron aprender ábaco"
+    },
+    "intro": {
+      "es": "Siete años yendo a clase de ábaco sin querer, y una discusión de treinta años que se cierra en una cocina. Lectura de japonés B1."
+    },
+    "mission": {
+      "es": "Averigua qué le respondió su madre cuando por fin se lo reprochó."
+    },
+    "targetText": "小学一年から中学一年まで、私は母にそろばんを習わされた。週に三回、七年間だ。\n\n行きたくなかった。友達は外で遊んでいるのに、私は教室で数字を見ていた。\n\n母は理由を説明しなかった。「行きなさい」だけだった。\n\n十歳のとき、大会に出させられた。県の大会で、私は五十六人中四十九位だった。帰りのバスで泣いた。母は何も言わなかった。\n\n十三歳でやめた。やめると言ったとき、母は反対しなかった。それも腹が立った。七年間行かせておいて、やめるときは何も言わないのか、と思った。\n\n大人になってから、この話を何度もした。友達に「親に習わされた」と言うと、みんな笑った。私も笑っていた。でも本当は笑っていなかった。\n\n去年、母が入院した。病院の帰り、私は初めて聞いた。「どうして七年も行かせたの。」\n\n母は少し考えて、こう言った。\n\n「お母さんは計算ができない。だから、店で何度もだまされた。若いとき、家を借りるときに、お金の計算を間違えて、大変なことになった。あなたにはそうなってほしくなかった。」\n\n私は何も言えなかった。\n\n母は続けた。「でも、あなたに聞かなかったのは悪かった。ごめんね。」\n\n三十年謝られなかったことを、そこで謝られた。\n\n今、私は経理の仕事をしている。数字を見ても、何も感じない。速く正確に計算できる。\n\nそれがそろばんのおかげかどうかは分からない。でも、母が何のために行かせたかは、やっと分かった。",
+    "wordCount": 511,
+    "estimatedMinutes": 20,
+    "objectives": [
+      {
+        "es": "Formar el causativo: 習わせる, 行かせる, 出させる."
+      },
+      {
+        "es": "Formar el causativo-pasivo y el pasivo de perjuicio: 習わされた, だまされた, 謝られた."
+      },
+      {
+        "es": "Distinguir la razón de una decisión de la forma en que se tomó."
+      }
+    ],
+    "grammarFocus": [
+      "shieki-saseru-b1",
+      "ukemi-rareru-b1",
+      "ukemi-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "そろばん",
+        "lemma": "そろばん",
+        "reading": "そろばん",
+        "glosses": {
+          "es": "ábaco japonés"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "大会",
+        "lemma": "大会",
+        "reading": "たいかい",
+        "glosses": {
+          "es": "competición, campeonato"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "反対",
+        "lemma": "反対",
+        "reading": "はんたい",
+        "glosses": {
+          "es": "oposición, estar en contra"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "腹が立った",
+        "lemma": "腹が立った",
+        "reading": "はらがたった",
+        "glosses": {
+          "es": "me dio rabia"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "入院",
+        "lemma": "入院",
+        "reading": "にゅういん",
+        "glosses": {
+          "es": "ingreso hospitalario"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "だまされた",
+        "lemma": "だまされた",
+        "reading": "だまされた",
+        "glosses": {
+          "es": "me engañaron, me timaron"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "経理",
+        "lemma": "経理",
+        "reading": "けいり",
+        "glosses": {
+          "es": "contabilidad"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "正確",
+        "lemma": "正確",
+        "reading": "せいかく",
+        "glosses": {
+          "es": "exacto, preciso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Las escuelas de そろばん siguen funcionando en Japón como refuerzo de cálculo mental, con exámenes por niveles y campeonatos provinciales. Muchas familias apuntan a los hijos sin explicarles por qué."
+    },
+    "spanishSpeakerNote": {
+      "es": "させる es «hacer que alguien haga»: 行かせた, «la hizo ir». Y させられる es el causativo-pasivo, el que sufre: 習わされた, «me hicieron aprender». El japonés distingue en el verbo lo que el español dice con perífrasis."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto japonés largo escrito con kanji al uso normal, distinguir lo que alguien afirma de lo que deduce, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adverbios-frecuencia",
+      "arimasu-imasu",
+      "conjunciones",
+      "desu-masu",
+      "estructura-sov-particulas",
+      "expresiones-cotidianas",
+      "hiragana-basico",
+      "i-keiyoshi",
+      "interrogativos-ka",
+      "jikan-tiempo",
+      "katakana-basico",
+      "masu-kei-conjugacion",
+      "na-keiyoshi",
+      "negacion-completa",
+      "numeros-contadores",
+      "particula-de-e",
+      "particula-wa-ga",
+      "particula-wo-ni",
+      "tai-form",
+      "te-form-permission",
+      "ageru-morau-kureru-a2",
+      "dake-shika-bakari-a2",
+      "deshou-a2",
+      "hikaku-a2",
+      "kamoshirenai-a2",
+      "kanoukei-a2",
+      "mae-ni-ato-de-a2",
+      "n-desu-a2",
+      "nagara-a2",
+      "nakereba-naranai-a2",
+      "noun-modification-a2",
+      "ta-koto-ga-aru-a2",
+      "tara-condicional-a2",
+      "tari-tari-a2",
+      "te-form-sequence-a2",
+      "te-iru-a2",
+      "te-mo-ii-a2",
+      "to-condicional-a2",
+      "to-omoimasu-a2",
+      "ukemi-a2",
+      "bakari-b1",
+      "beki-b1",
+      "hazu-da-b1",
+      "hodo-b1",
+      "kamo-b1",
+      "koto-ni-suru-naru-b1",
+      "monokara-b1",
+      "nakerebanaranai-b1",
+      "ni-chigainai-b1",
+      "noni-b1",
+      "shieki-saseru-b1",
+      "sou-b1",
+      "tameni-b1",
+      "te-shimau-b1",
+      "tokoro-b1",
+      "toutsutsuaru-b1",
+      "ukemi-rareru-b1",
+      "wake-da-b1",
+      "yooni-b1",
+      "you-ni-naru-b1"
+    ],
+    "disallowedGrammar": [
+      "keigo completo (尊敬語・謙譲語 sistemático)",
+      "japonés clásico",
+      "registro jurídico",
+      "dialectos regionales cerrados"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 46.5,
+      "maxSentenceWords": 83,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Causativo させる, pasivo de perjuicio られる, matices de certeza (はず, にちがいない, そう, かも, わけだ), てしまう, ようになる. Sin keigo sistemático. Furigana no obligatorio en B1."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué resuelve la conversación del hospital?",
+      "options": [
+        {
+          "id": "razon",
+          "text": "Que había una razón concreta detrás de los siete años, y que la madre reconoce no habérsela preguntado"
+        },
+        {
+          "id": "perdon",
+          "text": "Que la madre le pide que vuelva al ábaco"
+        },
+        {
+          "id": "dinero",
+          "text": "Que la familia tenía problemas de dinero"
+        }
+      ],
+      "answer": "razon",
+      "evidence": "「あなたにはそうなってほしくなかった。」… 「でも、あなたに聞かなかったのは悪かった。ごめんね。」",
+      "feedback": {
+        "correct": {
+          "es": "Sí: da la razón y admite el error de método por separado."
+        },
+        "incorrect": {
+          "es": "No le pide que vuelva, y lo del dinero es un episodio de juventud de ella. Lee sus dos intervenciones."
+        },
+        "strategy": {
+          "es": "Si un personaje da una razón y luego se disculpa por otra cosa, son dos asuntos distintos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué puesto hizo en el campeonato provincial?",
+      "options": [
+        {
+          "id": "49",
+          "text": "El cuarenta y nueve de cincuenta y seis"
+        },
+        {
+          "id": "56",
+          "text": "El cincuenta y seis"
+        },
+        {
+          "id": "10",
+          "text": "El décimo"
+        }
+      ],
+      "answer": "49",
+      "evidence": "県の大会で、私は五十六人中四十九位だった。帰りのバスで泣いた。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y volvió llorando en el autobús."
+        },
+        "incorrect": {
+          "es": "Los cincuenta y seis son los participantes y los diez, su edad. Busca 位."
+        },
+        "strategy": {
+          "es": "El contador 位 marca el puesto en una clasificación; 人中 marca el total."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué significa だまされた?",
+      "options": [
+        {
+          "id": "enganada",
+          "text": "Que la engañaron, la timaron"
+        },
+        {
+          "id": "ayudada",
+          "text": "Que la ayudaron"
+        },
+        {
+          "id": "obligada",
+          "text": "Que la obligaron"
+        }
+      ],
+      "answer": "enganada",
+      "evidence": "「お母さんは計算ができない。だから、店で何度もだまされた。」",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y la causa va delante: no sabe calcular."
+        },
+        "incorrect": {
+          "es": "La frase anterior dice que no sabe hacer cuentas: la consecuencia es en su contra."
+        },
+        "strategy": {
+          "es": "Si la frase anterior da una carencia, la pasiva que sigue suele expresar un perjuicio."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué le dio rabia que su madre no se opusiera cuando lo dejó?",
+      "options": [
+        {
+          "id": "coherencia",
+          "text": "Porque siete años de obligación y ninguna palabra al dejarlo le parecieron incoherentes"
+        },
+        {
+          "id": "triste",
+          "text": "Porque quería seguir yendo"
+        },
+        {
+          "id": "dinero",
+          "text": "Porque ya habían pagado el curso entero"
+        }
+      ],
+      "answer": "coherencia",
+      "evidence": "母は反対しなかった。それも腹が立った。七年間行かせておいて、やめるときは何も言わないのか、と思った。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y él mismo formula la contradicción en la frase siguiente."
+        },
+        "incorrect": {
+          "es": "No quería seguir y no se habla de dinero del curso. Lee la frase que empieza por 七年間行かせておいて."
+        },
+        "strategy": {
+          "es": "La forma …ておいて reprocha una incoherencia entre lo hecho antes y lo hecho después."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: hoy trabaja en contabilidad y calcula rápido y sin errores.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "今、私は経理の仕事をしている … 速く正確に計算できる。",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, aunque él mismo duda de que sea gracias al ábaco."
+        },
+        "incorrect": {
+          "es": "Busca el penúltimo párrafo: dice su oficio y qué sabe hacer."
+        },
+        "strategy": {
+          "es": "La palabra 今 abre el párrafo del presente: ahí están los datos actuales."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la memoria.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Siete años de clases sin explicación"
+        },
+        {
+          "id": "p2",
+          "text": "El campeonato a los diez años"
+        },
+        {
+          "id": "p3",
+          "text": "Lo deja a los trece y su madre no se opone"
+        },
+        {
+          "id": "p4",
+          "text": "La conversación al salir del hospital"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "小学一年から中学一年まで… 十歳のとき、大会に出させられた… 十三歳でやめた… 去年、母が入院した。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: las edades ordenan el texto."
+        },
+        "incorrect": {
+          "es": "Guíate por 十歳, 十三歳 y 去年."
+        },
+        "strategy": {
+          "es": "En una memoria, las edades funcionan como fechas."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 12–15 frases en japonés sobre algo que te hicieron hacer de pequeño. Usa tres causativos y dos pasivos de perjuicio."
+    },
+    "minWords": 180,
+    "maxWords": 420,
+    "hints": [
+      "母にそろばんを習わされた。",
+      "大会に出させられた。",
+      "七年間行かせておいて…",
+      "何のために行かせたかは、やっと分かった。"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de japonés B1: me hicieron aprender ábaco | WeLearn"
+    },
+    "description": {
+      "es": "Lee una memoria familiar en japonés B1 y practica el causativo させる y el pasivo de perjuicio られる. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/japones/b1/lectura/soroban-o-narawasareta",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ja-b1-kare-wa-konai-hazu-datta",
+      "ja-b1-jibun-no-soubetsukai-ni-okureta"
+    ]
+  }
+}

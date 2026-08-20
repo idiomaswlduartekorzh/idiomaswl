@@ -1,0 +1,493 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-b1-doraon-jeolmeuni-deul",
+  "status": "published",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Coreano B1",
+    "topik": 3,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. B1 se sitúa alrededor del TOPIK II nivel 3, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "doraon-jeolmeuni-deul",
+  "series": {
+    "id": "coreano-b1-lectura-10",
+    "episode": 9,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-b1-abeoji-wa-cheonjangyi-mun",
+    "nextExerciseId": "ko-b1-gateun-noraeui-du-beonjeon"
+  },
+  "classification": {
+    "genre": "informe municipal",
+    "topic": "repoblación de un pueblo",
+    "intent": "learning",
+    "tags": [
+      "coreano b1",
+      "lectura",
+      "고 나서",
+      "intención futura"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Los jóvenes que volvieron"
+    },
+    "intro": {
+      "es": "Diecinueve jóvenes volvieron a un pueblo de mil doscientos habitantes. Once se quedaron. El informe explica qué distinguió a esos once."
+    },
+    "mission": {
+      "es": "Averigua qué tenían en común los que se quedaron."
+    },
+    "targetText": "이 보고서는 이천이십일 년부터 이천이십육 년까지 우리 군에 돌아온 청년 열아홉 명을 조사한 것입니다. 군 인구는 천이백 명입니다. 열아홉 명 중에서 열한 명이 아직 살고 있습니다. 여덟 명은 떠났습니다. 우리는 두 집단의 차이를 찾으려고 했습니다. 처음에는 돈이 이유라고 생각했습니다. 하지만 지원금을 받고 나서 떠난 사람도 다섯 명 있었습니다. 그러니까 돈만으로는 설명이 안 됩니다. 나이도 차이가 없었습니다. 남은 사람과 떠난 사람의 평균 나이는 둘 다 서른두 살입니다. 진짜 차이는 다른 곳에 있었습니다. 남은 열한 명 중에서 아홉 명은 돌아오고 나서 여섯 달 안에 일을 하나 시작했습니다. 농사가 아닌 일입니다. 카페, 목공소, 수리점, 온라인 가게 같은 것입니다. 떠난 여덟 명 중에서는 두 명만 그렇게 했습니다. 이것이 무슨 뜻일까요? 우리가 보기에 남은 사람들은 이 군에서 자기 일을 만들었습니다. 떠난 사람들은 이 군에서 일을 찾으려고 했습니다. 일을 찾는 사람은 결국 일이 많은 도시로 갈 것입니다. 그것은 당연합니다. 그래서 군은 계획을 바꿀 것입니다. 지원금을 이사할 때 주지 않고 가게를 열 때 줄 것입니다. 금액도 나누기로 했습니다. 처음에 절반, 일 년 후에 절반입니다. 이 방식은 위험이 있습니다. 가게를 열 돈이 처음부터 없는 사람은 신청할 수 없습니다. 그래서 군은 작은 대출도 함께 준비할 것입니다. 이 부분은 아직 예산이 정해지지 않았습니다. 우리는 이것을 다음 보고서에 적을 것입니다. 마지막으로 한 가지를 적어 둡니다. 남은 열한 명 가운데 일곱 명은 서로 아는 사람입니다. 같은 학교를 나왔거나 친척입니다. 사람은 일자리만 보고 오지 않습니다. 아는 얼굴을 보고 옵니다. 이 부분은 예산으로 만들 수 없습니다.",
+    "wordCount": 222,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Usar 고 나서 para lo que ocurre después de completar algo."
+      },
+      {
+        "es": "Expresar intención institucional con ㄹ 것입니다."
+      },
+      {
+        "es": "Leer un informe que descarta hipótesis antes de dar la suya."
+      }
+    ],
+    "grammarFocus": [
+      "despues-gona-seo-b1",
+      "futuro-intencion-b1",
+      "futuro-rl-geoyeyo-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "보고서",
+        "lemma": "보고서",
+        "reading": "bogoseo",
+        "glosses": {
+          "es": "informe"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "군",
+        "lemma": "군",
+        "reading": "gun",
+        "glosses": {
+          "es": "comarca, distrito rural"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "청년",
+        "lemma": "청년",
+        "reading": "cheongnyeon",
+        "glosses": {
+          "es": "joven adulto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "지원금",
+        "lemma": "지원금",
+        "reading": "jiwongeum",
+        "glosses": {
+          "es": "subvención, ayuda económica"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "평균",
+        "lemma": "평균",
+        "reading": "pyeonggyun",
+        "glosses": {
+          "es": "media, promedio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "목공소",
+        "lemma": "목공소",
+        "reading": "mokgongso",
+        "glosses": {
+          "es": "carpintería"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "당연합니다",
+        "lemma": "당연하다",
+        "reading": "dangyeonhamnida",
+        "glosses": {
+          "es": "es lógico, es natural"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "친척",
+        "lemma": "친척",
+        "reading": "chincheok",
+        "glosses": {
+          "es": "pariente, familiar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El despoblamiento rural es una de las grandes preocupaciones administrativas de Corea, y muchas comarcas ofrecen ayudas directas por trasladarse. El debate sobre si esas ayudas funcionan es exactamente el del informe."
+    },
+    "spanishSpeakerNote": {
+      "es": "고 나서 marca que la primera acción está terminada: 지원금을 받고 나서 떠났어요, «se fueron después de cobrar la ayuda». Y en un informe, ㄹ 것입니다 no es una predicción: es la intención declarada de la institución."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo en coreano que desarrolla una idea y cambia de dirección, distinguir el hecho de la interpretación, y justificar una inferencia cruzando dos pasajes separados."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas",
+      "antes-despues-a2",
+      "capacidad-rl-su-itda-a2",
+      "clausulas-relativas-a2",
+      "condicional-eumyeon-a2",
+      "conector-aseo-a2",
+      "cuanto-eolmana-a2",
+      "discurso-reportado-a2",
+      "durante-neun-dongane-a2",
+      "futuro-rl-geoyeyo-a2",
+      "honorificos-a2",
+      "intencion-ryogo-hada-a2",
+      "negacion-ji-anta-a2",
+      "obligacion-aya-hada-a2",
+      "parecer-neun-geot-gatda-a2",
+      "particulas-recipiente-a2",
+      "progresivo-go-itda-a2",
+      "razon-gittaemune-a2",
+      "razon-niikka-a2",
+      "solo-tambien-man-do-a2",
+      "verbos-irregulares-pasado-a2",
+      "alternativa-geona-b1",
+      "causal-gi-ttaemune-b1",
+      "causativa-shichang-b1",
+      "condicional-erado-eurely-b1",
+      "despues-gona-seo-b1",
+      "estado-mantener-chae-b1",
+      "forzosidad-subakkeneopsda-b1",
+      "futuro-intencion-b1",
+      "ge-doeda-b1",
+      "inmediato-jamaja-b1",
+      "kiro-hada-b1",
+      "obligacion-eoyahada-b1",
+      "observacion-neyo-b1",
+      "oportunidad-gime-b1",
+      "pasiva-jeosudo-b1",
+      "passado-reminiscencia-b1",
+      "posibilidad-su-itda-b1",
+      "proporcion-euttorok-b1",
+      "proposito-dorok-b1",
+      "simultaneo-eumyeonseo-b1"
+    ],
+    "disallowedGrammar": [
+      "registro literario",
+      "hanja sin glosa",
+      "dialecto regional"
+    ],
+    "maxOutOfLevelVocabularyPercent": 7,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 6.3,
+      "maxSentenceWords": 14,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Prosa B1 con 더라/던, 게 되다, 채, 을수록 y pasiva. Sin registro literario ni hanja sin glosar. Inferencia moderada: exige cruzar dos pasajes."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es la conclusión del informe?",
+      "options": [
+        {
+          "id": "crear",
+          "text": "Que se quedaron quienes crearon su propio trabajo, no quienes buscaron uno"
+        },
+        {
+          "id": "dinero",
+          "text": "Que la ayuda económica es lo que decide quién se queda"
+        },
+        {
+          "id": "edad",
+          "text": "Que los más jóvenes se quedan y los mayores se van"
+        }
+      ],
+      "answer": "crear",
+      "evidence": "남은 사람들은 이 군에서 자기 일을 만들었습니다. 떠난 사람들은 이 군에서 일을 찾으려고 했습니다.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y llega ahí por eliminación: descarta el dinero y la edad antes de proponerlo."
+        },
+        "incorrect": {
+          "es": "El informe descarta el dinero (cinco se fueron tras cobrarlo) y la edad (media idéntica). Busca 자기 일을 만들었습니다."
+        },
+        "strategy": {
+          "es": "Cuando un informe descarta hipótesis una a una, la que queda es su conclusión. Localiza los descartes primero."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántos de los diecinueve siguen viviendo allí?",
+      "options": [
+        {
+          "id": "once",
+          "text": "Once"
+        },
+        {
+          "id": "ocho",
+          "text": "Ocho"
+        },
+        {
+          "id": "nueve",
+          "text": "Nueve"
+        }
+      ],
+      "answer": "once",
+      "evidence": "열아홉 명 중에서 열한 명이 아직 살고 있습니다. 여덟 명은 떠났습니다.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: once se quedaron y ocho se fueron. Los nueve son los que montaron algo en seis meses."
+        },
+        "incorrect": {
+          "es": "El informe maneja varias cifras cercanas. Busca la que va con 아직 살고 있습니다."
+        },
+        "strategy": {
+          "es": "Con cifras próximas entre sí, empareja cada una con su verbo antes de responder."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El informe dice 지원금을 받고 나서 떠난 사람도 다섯 명 있었습니다. ¿Qué indica 고 나서?",
+      "options": [
+        {
+          "id": "despues",
+          "text": "Que se marcharon después de haber cobrado la ayuda"
+        },
+        {
+          "id": "antes",
+          "text": "Que se marcharon antes de cobrarla"
+        },
+        {
+          "id": "sin",
+          "text": "Que se marcharon sin cobrarla"
+        }
+      ],
+      "answer": "despues",
+      "evidence": "하지만 지원금을 받고 상서 떠난 사람도 다섯 명 있었습니다. 그러니까 돈만으로는 설명이 안 됩니다.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y por eso el argumento del dinero se cae: cobraron y se fueron igual."
+        },
+        "incorrect": {
+          "es": "Si se hubieran ido sin cobrar, el dato no serviría para descartar el dinero. Fíjate en la frase siguiente."
+        },
+        "strategy": {
+          "es": "고 나서 exige que la primera acción esté completada. Si el dato sirve como refutación, comprueba el orden."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué la comarca va a dar la ayuda al abrir un negocio y no al mudarse?",
+      "options": [
+        {
+          "id": "perfil",
+          "text": "Para atraer a quien crea su propio trabajo, que es quien se queda"
+        },
+        {
+          "id": "ahorrar",
+          "text": "Para gastar menos dinero público"
+        },
+        {
+          "id": "control",
+          "text": "Para controlar en qué se gasta la ayuda"
+        }
+      ],
+      "answer": "perfil",
+      "evidence": "남은 열한 명 중에서 아홉 명은 돌아오고 나서 여섯 달 안에 일을 하나 시작했습니다 … 그래서 군은 계획을 바꿀 것입니다.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El cambio se apoya directamente en el hallazgo: el 그래서 los une."
+        },
+        "incorrect": {
+          "es": "El informe no habla de ahorrar ni de fiscalizar. Busca qué hallazgo precede al 그래서."
+        },
+        "strategy": {
+          "es": "En un informe, la medida que sigue a un 그래서 se justifica en el dato inmediatamente anterior."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la edad media de quienes se quedaron y de quienes se fueron es la misma.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "남은 사람과 떠난 사람의 평균 나이는 둘 다 서른두 살입니다.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero: treinta y dos en los dos grupos. Por eso el informe descarta la edad como explicación."
+        },
+        "incorrect": {
+          "es": "Busca la frase con 평균 나이, edad media. El 둘 다 significa «los dos grupos»."
+        },
+        "strategy": {
+          "es": "La expresión 둘 다 («ambos») señala que dos grupos coinciden. Si la ves, el dato no distingue nada."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué añade el informe que siete de los once se conocían entre sí?",
+      "options": [
+        {
+          "id": "limite",
+          "text": "Para señalar un factor decisivo que ninguna subvención puede crear"
+        },
+        {
+          "id": "nepotismo",
+          "text": "Para denunciar que las ayudas se dieron a conocidos"
+        },
+        {
+          "id": "dato",
+          "text": "Como dato estadístico sin relación con la conclusión"
+        }
+      ],
+      "answer": "limite",
+      "evidence": "사람은 일자리만 보고 오지 않습니다. 아는 얼굴을 보고 옵니다. 이 부분은 예산으로 만들 수 없습니다.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la última frase lo dice sin rodeos: eso no se puede fabricar con presupuesto."
+        },
+        "incorrect": {
+          "es": "No denuncia nada, y el informe lo presenta como decisivo, no como dato suelto. Lee la última frase."
+        },
+        "strategy": {
+          "es": "Cuando un informe termina reconociendo lo que no puede hacer, ahí está su punto más honesto. No lo saltes."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en coreano sobre por qué la gente joven se queda o se va de tu ciudad. Usa 고 나서 dos veces y ㄹ 것입니다 dos veces."
+    },
+    "minWords": 60,
+    "maxWords": 120,
+    "hints": [
+      "이 보고서는 …을 조사한 것입니다.",
+      "처음에는 …이라고 생각했습니다.",
+      "…고 나서 …",
+      "그래서 … 바꿀 것입니다."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano B1: Los jóvenes que volvieron | WeLearn"
+    },
+    "description": {
+      "es": "Lee un informe municipal en coreano B1 y practica 고 나서 y la intención futura con ㄹ 것이다. Con vocabulario romanizado y seis preguntas."
+    },
+    "canonicalPath": "/practica/coreano/b1/lectura/doraon-jeolmeuni-deul",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-b1-abeoji-wa-cheonjangyi-mun",
+      "ko-b1-gateun-noraeui-du-beonjeon"
+    ]
+  }
+}

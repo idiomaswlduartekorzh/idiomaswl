@@ -18,6 +18,8 @@ import {
   MIN_PALABRAS_USADAS,
   progresoEscritura,
 } from '@/data/practica/vocabulario/ejercicios'
+import PdfDownloadButton from '@/components/practica/PdfDownloadButton'
+import { canRenderPdf } from '@/lib/pdf/languages'
 
 /**
  * Motor único de vocabulario para los ocho idiomas.
@@ -40,7 +42,9 @@ import {
  * la metodología.
  */
 
-const COLOR = '#e11d48'
+const COLOR = 'var(--wlp-accent-vocabulario)'
+/** El color al N % de opacidad; antes se pegaba la transparencia en hexadecimal. */
+const COLORMix = (p: number) => `color-mix(in srgb, ${COLOR} ${p}%, transparent)`
 
 type Props = {
   bloque: VocabBlock
@@ -181,10 +185,10 @@ function Fuente({ entrada }: { entrada: VocabEntry }) {
         fontSize: '0.68rem',
         fontFamily: 'var(--mono)',
         padding: '0.12rem 0.42rem',
-        borderRadius: 6,
+        borderRadius: 'var(--wlp-r)',
         border: '1px solid var(--line-soft)',
         color: delMaterial ? COLOR : 'var(--muted)',
-        background: delMaterial ? `${COLOR}0d` : 'transparent',
+        background: delMaterial ? `${COLORMix(5.1)}` : 'transparent',
         whiteSpace: 'nowrap',
       }}
     >
@@ -211,10 +215,10 @@ function Trampa({ falso }: { falso: FalsoAmigo }) {
         fontSize: '0.82rem',
         lineHeight: 1.5,
         padding: '0.5rem 0.65rem',
-        borderRadius: 10,
+        borderRadius: 'var(--wlp-r)',
         border: '1px solid var(--line-soft)',
         borderLeft: `3px solid ${COLOR}`,
-        background: `${COLOR}0a`,
+        background: `${COLORMix(3.9)}`,
       }}
     >
       <strong style={{ color: COLOR }}>Falso amigo.</strong>{' '}
@@ -231,7 +235,7 @@ function Ficha({ entrada, locale }: { entrada: VocabEntry; locale: string }) {
     <article
       style={{
         border: '1px solid var(--line-soft)',
-        borderRadius: 14,
+        borderRadius: 'var(--wlp-r)',
         padding: '1rem 1.1rem',
         background: 'var(--bg)',
         display: 'grid',
@@ -421,9 +425,9 @@ function Sesion({
                 fontSize: '0.68rem',
                 fontFamily: 'var(--mono)',
                 padding: '0.16rem 0.4rem',
-                borderRadius: 6,
+                borderRadius: 'var(--wlp-r)',
                 border: `1px solid ${e.id === actual.id ? COLOR : 'var(--line-soft)'}`,
-                background: c > 5 ? `${COLOR}22` : 'transparent',
+                background: c > 5 ? `${COLORMix(13.3)}` : 'transparent',
                 color: c > 5 ? COLOR : 'var(--muted)',
               }}
             >
@@ -441,7 +445,7 @@ function Sesion({
         data-caja={modo}
         data-lemma={actual.lemma}
         data-variante={modo === 2 ? caja2.tipo : undefined}
-        style={{ border: '1px solid var(--line-soft)', borderRadius: 16, padding: '1.3rem', background: 'var(--bg)' }}
+        style={{ border: '1px solid var(--line-soft)', borderRadius: 'var(--wlp-r)', padding: '1.3rem', background: 'var(--bg)' }}
       >
         <p style={{ margin: '0 0 0.9rem', fontFamily: 'var(--mono)', fontSize: '0.74rem', color: COLOR }}>
           CAJA {modo} · {CAJAS[modo - 1].nombre} —{' '}
@@ -461,7 +465,7 @@ function Sesion({
                   style={{
                     ...botonOpcion,
                     borderColor: veredicto && opcion === actual.es ? COLOR : 'var(--line-soft)',
-                    background: veredicto && opcion === actual.es ? `${COLOR}0d` : 'var(--bg)',
+                    background: veredicto && opcion === actual.es ? `${COLORMix(5.1)}` : 'var(--bg)',
                   }}
                 >
                   {opcion}
@@ -633,7 +637,7 @@ function Dictado({ frases, locale, onHecho }: { frases: VocabEntry[]; locale: st
   }
 
   return (
-    <div style={{ border: '1px solid var(--line-soft)', borderRadius: 16, padding: '1.3rem', background: 'var(--bg)' }}>
+    <div style={{ border: '1px solid var(--line-soft)', borderRadius: 'var(--wlp-r)', padding: '1.3rem', background: 'var(--bg)' }}>
       <p style={{ margin: '0 0 0.9rem', fontFamily: 'var(--mono)', fontSize: '0.74rem', color: COLOR }}>
         DICTADO {i + 1} DE {frases.length} · Óyela y escríbela
       </p>
@@ -699,7 +703,7 @@ function EscrituraReforzada({ entradas, onSalir }: { entradas: VocabEntry[]; onS
   const { usadas, frases, listo } = progresoEscritura(texto, entradas)
 
   return (
-    <div style={{ border: '1px solid var(--line-soft)', borderRadius: 16, padding: '1.3rem', background: 'var(--bg)' }}>
+    <div style={{ border: '1px solid var(--line-soft)', borderRadius: 'var(--wlp-r)', padding: '1.3rem', background: 'var(--bg)' }}>
       <p style={{ margin: '0 0 0.5rem', fontFamily: 'var(--mono)', fontSize: '0.74rem', color: COLOR }}>
         ESCRITURA · Cierre de la unidad
       </p>
@@ -727,9 +731,9 @@ function EscrituraReforzada({ entradas, onSalir }: { entradas: VocabEntry[]; onS
                 fontSize: '0.72rem',
                 fontFamily: 'var(--mono)',
                 padding: '0.16rem 0.42rem',
-                borderRadius: 6,
+                borderRadius: 'var(--wlp-r)',
                 border: `1px solid ${hecha ? COLOR : 'var(--line-soft)'}`,
-                background: hecha ? `${COLOR}14` : 'transparent',
+                background: hecha ? `${COLORMix(7.8)}` : 'transparent',
                 color: hecha ? COLOR : 'var(--muted)',
               }}
             >
@@ -837,11 +841,25 @@ export default function VocabularyJourney({ bloque, nivel, idiomaLabel, nivelLab
 
   return (
     <section style={{ display: 'grid', gap: '1.6rem' }}>
+      {/* Descarga: la lista completa del nivel, no solo la de este bloque */}
+      {canRenderPdf(nivel.lang) && (
+        <div className="topic-download no-print" style={{ margin: 0 }}>
+          <PdfDownloadButton
+            label={`Descargar el vocabulario de ${idiomaLabel} ${nivelLabel} en PDF`}
+            generate={async () => {
+              const { generateVocabularyPdf } = await import('@/lib/pdf/generateVocabularyPdf')
+              await generateVocabularyPdf(nivel)
+            }}
+          />
+          <span>Todas las palabras del nivel, por bloques, con su ejemplo y lo que hay que saber de cada una.</span>
+        </div>
+      )}
+
       {/* Cómo funciona: la escalera, explicada antes de empezar */}
       <div
         style={{
           border: '1px solid var(--line-soft)',
-          borderRadius: 16,
+          borderRadius: 'var(--wlp-r)',
           padding: '1.1rem 1.2rem',
           background: 'var(--bg-2)',
         }}
@@ -964,7 +982,7 @@ const botonPrimario: React.CSSProperties = {
   border: `1px solid ${COLOR}`,
   background: COLOR,
   color: '#fff',
-  borderRadius: 10,
+  borderRadius: 'var(--wlp-r)',
   padding: '0.5rem 0.95rem',
   fontSize: '0.86rem',
   fontWeight: 700,
@@ -976,7 +994,7 @@ const botonSecundario: React.CSSProperties = {
   border: '1px solid var(--line-soft)',
   background: 'var(--bg)',
   color: 'var(--ink)',
-  borderRadius: 10,
+  borderRadius: 'var(--wlp-r)',
   padding: '0.5rem 0.95rem',
   fontSize: '0.86rem',
   fontFamily: 'inherit',
@@ -985,7 +1003,7 @@ const botonSecundario: React.CSSProperties = {
 
 const botonOpcion: React.CSSProperties = {
   border: '1px solid var(--line-soft)',
-  borderRadius: 10,
+  borderRadius: 'var(--wlp-r)',
   padding: '0.65rem 0.9rem',
   fontSize: '0.94rem',
   fontFamily: 'inherit',
@@ -997,7 +1015,7 @@ const botonOpcion: React.CSSProperties = {
 const campo: React.CSSProperties = {
   width: '100%',
   border: '1px solid var(--line-soft)',
-  borderRadius: 10,
+  borderRadius: 'var(--wlp-r)',
   padding: '0.6rem 0.8rem',
   fontSize: '1rem',
   fontFamily: 'inherit',

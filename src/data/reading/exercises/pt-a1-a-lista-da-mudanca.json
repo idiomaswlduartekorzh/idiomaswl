@@ -1,0 +1,448 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-a1-a-lista-da-mudanca",
+  "status": "published",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Portugués A1"
+  },
+  "slug": "a-lista-da-mudanca",
+  "series": {
+    "id": "portugues-a1-lectura-10",
+    "episode": 5,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-a1-cento-e-oito-copos",
+    "nextExerciseId": "pt-a1-mensagens-sobre-o-sofa"
+  },
+  "classification": {
+    "genre": "inventario comentado",
+    "topic": "mudarse de casa",
+    "intent": "learning",
+    "tags": [
+      "portugues a1",
+      "lectura",
+      "artículos",
+      "plural de los sustantivos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La lista de la mudanza"
+    },
+    "intro": {
+      "es": "Una lista de mudanza con veintidós cajas, y una caja que nunca se abre pero siempre se lleva. Lectura de portugués A1."
+    },
+    "mission": {
+      "es": "Averigua qué hay en la caja número doce y por qué nunca se abre."
+    },
+    "targetText": "Esta é a lista da mudança. São vinte e duas caixas. As caixas de um a seis têm os livros. As caixas sete e oito têm as roupas de inverno. As caixas dez e onze têm os pratos, os copos e as panelas. A caixa doze é a caixa especial. Nela estão as cartas do meu avô. São quarenta e uma cartas. Ele escreveu essas cartas para a minha avó entre 1961 e 1963. Eu nunca abro essa caixa. Minha mãe também não abre. Mas nós duas levamos ela em todas as mudanças. Esta é a quinta mudança dela. As caixas treze a vinte têm as coisas do escritório: os papéis, os cadernos, as canetas. As caixas vinte e um e vinte e dois estão vazias. São para as coisas que a gente compra depois.",
+    "wordCount": 135,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Usar el artículo definido correcto: o, a, os, as."
+      },
+      {
+        "es": "Formar el plural de los sustantivos: caixa/caixas, papel/papéis, livro/livros."
+      },
+      {
+        "es": "Leer una lista numerada sin perder la cuenta."
+      }
+    ],
+    "grammarFocus": [
+      "artigos",
+      "plural-substantivos"
+    ],
+    "vocabulary": [
+      {
+        "surface": "mudança",
+        "lemma": "mudança",
+        "glosses": {
+          "es": "mudanza (de casa)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "caixas",
+        "lemma": "caixa",
+        "glosses": {
+          "es": "cajas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "roupas",
+        "lemma": "roupa",
+        "glosses": {
+          "es": "ropa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "panelas",
+        "lemma": "panela",
+        "glosses": {
+          "es": "ollas, cazuelas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cartas",
+        "lemma": "carta",
+        "glosses": {
+          "es": "cartas (correspondencia)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "escritório",
+        "lemma": "escritório",
+        "glosses": {
+          "es": "despacho, oficina. ¡No es un «escritorio»: eso es «escrivaninha»!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "canetas",
+        "lemma": "caneta",
+        "glosses": {
+          "es": "bolígrafos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vazias",
+        "lemma": "vazio",
+        "glosses": {
+          "es": "vacías"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En Brasil el «escritório» es la habitación de trabajo o el despacho profesional. El mueble que en español llamamos escritorio es «escrivaninha» o «mesa»."
+    },
+    "spanishSpeakerNote": {
+      "es": "«Escritório» es la habitación, no el mueble: un falso amigo que aparece en cualquier anuncio de piso. Y fíjate en los plurales irregulares: «papel» hace «papéis», no «papeles»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en portugués de Brasil sobre la vida cotidiana, distinguir ser de estar, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares"
+    ],
+    "disallowedGrammar": [
+      "pretérito perfeito",
+      "imperfeito",
+      "subjuntivo",
+      "voz passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 8.4,
+      "maxSentenceWords": 16,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Presente de indicativo y futuro con ir. Sin tiempos del pasado ni subjuntivo. Falso amigo glosado en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué destaca esta lista además de organizar la mudanza?",
+      "options": [
+        {
+          "id": "caja12",
+          "text": "Una caja que nunca se abre y siempre se lleva"
+        },
+        {
+          "id": "ahorro",
+          "text": "Que la mudanza va a ser muy barata"
+        },
+        {
+          "id": "libros",
+          "text": "Que la familia tiene demasiados libros"
+        }
+      ],
+      "answer": "caja12",
+      "evidence": "A caixa doze é a caixa especial … Eu nunca abro essa caixa. Minha mãe também não abre. Mas nós duas levamos ela em todas as mudanças.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Es la única caja que el texto llama especial y la única que se explica."
+        },
+        "incorrect": {
+          "es": "No se habla de precios, y los libros son solo seis cajas. Busca la caja que el texto llama «especial»."
+        },
+        "strategy": {
+          "es": "En una lista, el elemento que recibe más frases es el que importa. Cuéntalas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántas cartas hay en la caja doce?",
+      "options": [
+        {
+          "id": "41",
+          "text": "Cuarenta y una"
+        },
+        {
+          "id": "22",
+          "text": "Veintidós"
+        },
+        {
+          "id": "12",
+          "text": "Doce"
+        }
+      ],
+      "answer": "41",
+      "evidence": "São quarenta e uma cartas.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Las veintidós son las cajas y el doce es el número de esa caja."
+        },
+        "incorrect": {
+          "es": "El texto tiene varias cifras: cajas, cartas y números de caja. Busca la que va con «cartas»."
+        },
+        "strategy": {
+          "es": "En una lista numerada, distingue el número de orden de la cantidad de contenido."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «as coisas do escritório: os papéis, os cadernos, as canetas». ¿Qué es un «escritório»?",
+      "options": [
+        {
+          "id": "despacho",
+          "text": "El despacho o la habitación de trabajo"
+        },
+        {
+          "id": "mueble",
+          "text": "El mueble donde se escribe"
+        },
+        {
+          "id": "papeleria",
+          "text": "Una papelería"
+        }
+      ],
+      "answer": "despacho",
+      "evidence": "As caixas treze a vinte têm as coisas do escritório",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. En Brasil el mueble es «escrivaninha»; el «escritório» es la habitación."
+        },
+        "incorrect": {
+          "es": "Ocho cajas no salen de un solo mueble. Y no es una tienda: son las cosas propias de esa estancia."
+        },
+        "strategy": {
+          "es": "Si un falso amigo no encaja con la cantidad que describe el texto, prueba el otro significado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué se llevan la caja doce si nadie la abre?",
+      "options": [
+        {
+          "id": "valor",
+          "text": "Porque las cartas del abuelo valen más que su contenido leído"
+        },
+        {
+          "id": "peso",
+          "text": "Porque es la caja más ligera de todas"
+        },
+        {
+          "id": "orden",
+          "text": "Porque el número doce marca el centro de la lista"
+        }
+      ],
+      "answer": "valor",
+      "evidence": "Ele escreveu essas cartas para a minha avó entre 1961 e 1963 … nós duas levamos ela em todas as mudanças.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El texto no lo explica con palabras: lo demuestra con el gesto de llevarla cinco mudanzas."
+        },
+        "incorrect": {
+          "es": "No se menciona el peso ni el orden como motivo. Fíjate en de quién son las cartas y en cuántas mudanzas llevan."
+        },
+        "strategy": {
+          "es": "Cuando un texto no explica un motivo, mira qué gesto repite. La repetición es la explicación."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: las dos últimas cajas van vacías, para lo que se compre después.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "As caixas vinte e um e vinte e dois estão vazias. São para as coisas que a gente compra depois.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y el texto explica para qué: lo que se comprará más adelante."
+        },
+        "incorrect": {
+          "es": "Busca las dos últimas cajas de la lista. El texto dice cómo van y para qué."
+        },
+        "strategy": {
+          "es": "En una lista, el último elemento suele traer una explicación. Léelo hasta el final."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el contenido de las cajas según la lista.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Los libros"
+        },
+        {
+          "id": "p2",
+          "text": "La ropa de invierno"
+        },
+        {
+          "id": "p3",
+          "text": "Los platos, los vasos y las ollas"
+        },
+        {
+          "id": "p4",
+          "text": "Las cosas del despacho"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "As caixas de um a seis têm os livros … sete e oito … as roupas de inverno … dez e onze … os pratos … treze a vinte … do escritório",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La lista va por número de caja, de menor a mayor."
+        },
+        "incorrect": {
+          "es": "Guíate por los números de caja: uno a seis, siete y ocho, diez y once, trece a veinte."
+        },
+        "strategy": {
+          "es": "Si una lista está numerada, el orden ya está dado. Solo hay que leer los números."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe una lista de 5–7 frases en portugués con lo que meterías en cajas al mudarte. Usa los cuatro artículos definidos y cinco sustantivos en plural."
+    },
+    "minWords": 30,
+    "maxWords": 70,
+    "hints": [
+      "Esta é a lista de…",
+      "As caixas de um a… têm os…",
+      "A caixa… é especial.",
+      "As caixas… estão vazias."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués A1: La lista de la mudanza | WeLearn"
+    },
+    "description": {
+      "es": "Lee un inventario en portugués de Brasil A1 y practica los artículos y el plural de los sustantivos. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/a1/lectura/a-lista-da-mudanca",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-a1-cento-e-oito-copos",
+      "pt-a1-mensagens-sobre-o-sofa"
+    ]
+  }
+}

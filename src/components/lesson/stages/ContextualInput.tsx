@@ -36,7 +36,7 @@ const BLOCKS: Block[] = [
     role: 'ejecutor',
     label: '¿Quién?',
     translation: 'yo',
-    color: '#6c63ff',
+    color: 'var(--wl-on-panel-link, #6c63ff)',
     audio: '저는',
     description: 'El que realiza la acción. Siempre va primero.',
   },
@@ -54,7 +54,7 @@ const BLOCKS: Block[] = [
     role: 'verbo',
     label: '¿Qué pasa?',
     translation: 'voy',
-    color: '#2d9b4e',
+    color: 'var(--wl-on-panel-ok, #2d9b4e)',
     audio: '가요',
     description: 'La acción. Siempre al final. Siempre.',
   },
@@ -99,7 +99,7 @@ function FullSentencePreview({ highlightRole }: { highlightRole: string }) {
   return (
     <div
       style={{
-        background: '#fff',
+        background: 'var(--wl-panel-raised, #fff)',
         border: '1px solid #e9ecef',
         borderRadius: 12,
         padding: 14,
@@ -107,7 +107,7 @@ function FullSentencePreview({ highlightRole }: { highlightRole: string }) {
         marginBottom: 16,
       }}
     >
-      <p style={{ margin: '0 0 8px', fontSize: 10, color: '#6c757d', textTransform: 'uppercase', letterSpacing: '0.12em' }}>
+      <p style={{ margin: '0 0 8px', fontSize: 10, color: 'var(--wl-on-panel-soft, #6c757d)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>
         La frase completa
       </p>
       <div style={{ display: 'inline-flex', gap: 8, alignItems: 'center' }}>
@@ -175,46 +175,46 @@ export default function ContextualInput({ onComplete }: Props) {
   if (phase === 'intro') {
     return (
       <section style={{ maxWidth: 680, margin: '0 auto', padding: '2rem 1rem' }}>
-        <p style={{ margin: '0 0 8px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6c63ff', fontWeight: 700 }}>
+        <p style={{ margin: '0 0 8px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700 }}>
           SECCIÓN 5 DE 11
         </p>
-        <h3 style={{ margin: '0 0 8px', fontSize: 24, fontWeight: 700, color: '#1a1a2e' }}>Contexto primero</h3>
-        <p style={{ margin: '0 0 24px', fontSize: 14, color: '#6c757d', lineHeight: 1.7 }}>{EXPLANATION.intro}</p>
+        <h3 style={{ margin: '0 0 8px', fontSize: 24, fontWeight: 700, color: 'var(--wl-on-panel, #1a1a2e)' }}>Contexto primero</h3>
+        <p style={{ margin: '0 0 24px', fontSize: 14, color: 'var(--wl-on-panel-soft, #6c757d)', lineHeight: 1.7 }}>{EXPLANATION.intro}</p>
 
-        <article style={{ background: '#fff', border: '1px solid #e9ecef', borderRadius: 14, padding: 24, marginBottom: 20 }}>
-          <p style={{ margin: '0 0 8px', fontFamily: "'Noto Sans KR', sans-serif", fontSize: 42, fontWeight: 700, color: '#1a1a2e', textAlign: 'center' }}>
+        <article style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 14, padding: 24, marginBottom: 20 }}>
+          <p style={{ margin: '0 0 8px', fontFamily: "'Noto Sans KR', sans-serif", fontSize: 42, fontWeight: 700, color: 'var(--wl-on-panel, #1a1a2e)', textAlign: 'center' }}>
             {EXPLANATION.korean}
           </p>
           <div style={{ textAlign: 'center', marginBottom: 10 }}>
             <button
               type="button"
               onClick={() => playAudio('학교에 가요', 1)}
-              style={{ background: '#fff', border: '1px solid #e9ecef', borderRadius: 100, padding: '4px 12px', fontSize: 12, color: '#6c757d', cursor: 'pointer' }}
+              style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 100, padding: '4px 12px', fontSize: 12, color: 'var(--wl-on-panel-soft, #6c757d)', cursor: 'pointer' }}
             >
               🔊 Escuchar frase
             </button>
           </div>
-          <p style={{ margin: '0 0 16px', fontSize: 13, color: '#6c757d', textAlign: 'center' }}>
+          <p style={{ margin: '0 0 16px', fontSize: 13, color: 'var(--wl-on-panel-soft, #6c757d)', textAlign: 'center' }}>
             jeo-neun hak-gyo-e ga-yo
           </p>
 
-          <div style={{ background: '#f8f9fa', border: '1px solid #e9ecef', borderRadius: 10, padding: 14, marginBottom: 8 }}>
-            <p style={{ margin: '0 0 4px', fontSize: 10, color: '#6c757d', textTransform: 'uppercase', letterSpacing: '0.12em' }}>Español natural</p>
-            <p style={{ margin: 0, fontSize: 14, color: '#1a1a2e' }}>{EXPLANATION.spanishNatural}</p>
+          <div style={{ background: 'var(--wl-panel-raised, #f8f9fa)', border: '1px solid #e9ecef', borderRadius: 10, padding: 14, marginBottom: 8 }}>
+            <p style={{ margin: '0 0 4px', fontSize: 10, color: 'var(--wl-on-panel-soft, #6c757d)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>Español natural</p>
+            <p style={{ margin: 0, fontSize: 14, color: 'var(--wl-on-panel, #1a1a2e)' }}>{EXPLANATION.spanishNatural}</p>
           </div>
 
-          <div style={{ background: '#f8f9fa', border: '1px solid #e9ecef', borderRadius: 10, padding: 14, marginBottom: 8 }}>
-            <p style={{ margin: '0 0 4px', fontSize: 10, color: '#6c757d', textTransform: 'uppercase', letterSpacing: '0.12em' }}>Orden coreano</p>
-            <p style={{ margin: 0, fontSize: 14, color: '#1a1a2e' }}>{EXPLANATION.spanishKoreanOrder}</p>
-            <p style={{ margin: '6px 0 0', fontSize: 11, color: '#6c63ff' }}>¿Notaste? El verbo se fue al final.</p>
+          <div style={{ background: 'var(--wl-panel-raised, #f8f9fa)', border: '1px solid #e9ecef', borderRadius: 10, padding: 14, marginBottom: 8 }}>
+            <p style={{ margin: '0 0 4px', fontSize: 10, color: 'var(--wl-on-panel-soft, #6c757d)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>Orden coreano</p>
+            <p style={{ margin: 0, fontSize: 14, color: 'var(--wl-on-panel, #1a1a2e)' }}>{EXPLANATION.spanishKoreanOrder}</p>
+            <p style={{ margin: '6px 0 0', fontSize: 11, color: 'var(--wl-on-panel-link, #6c63ff)' }}>¿Notaste? El verbo se fue al final.</p>
           </div>
 
-          <div style={{ background: '#f8f9fa', border: '1px solid #e9ecef', borderRadius: 10, padding: 14, marginBottom: 14 }}>
-            <p style={{ margin: '0 0 4px', fontSize: 10, color: '#6c757d', textTransform: 'uppercase', letterSpacing: '0.12em' }}>Coreano</p>
-            <p style={{ margin: 0, fontSize: 18, color: '#6c63ff', fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 700 }}>{EXPLANATION.korean}</p>
+          <div style={{ background: 'var(--wl-panel-raised, #f8f9fa)', border: '1px solid #e9ecef', borderRadius: 10, padding: 14, marginBottom: 14 }}>
+            <p style={{ margin: '0 0 4px', fontSize: 10, color: 'var(--wl-on-panel-soft, #6c757d)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>Coreano</p>
+            <p style={{ margin: 0, fontSize: 18, color: 'var(--wl-on-panel-link, #6c63ff)', fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 700 }}>{EXPLANATION.korean}</p>
           </div>
 
-          <div style={{ background: 'rgba(108,99,255,0.06)', border: '1px solid rgba(108,99,255,0.15)', borderRadius: 8, padding: '10px 14px', fontSize: 12, color: '#6c63ff', marginBottom: 16 }}>
+          <div style={{ background: 'rgba(108,99,255,0.06)', border: '1px solid rgba(108,99,255,0.15)', borderRadius: 8, padding: '10px 14px', fontSize: 12, color: 'var(--wl-on-panel-link, #6c63ff)', marginBottom: 16 }}>
             {EXPLANATION.note}
           </div>
 
@@ -233,15 +233,15 @@ export default function ContextualInput({ onComplete }: Props) {
   if (phase === 'reveal') {
     return (
       <section style={{ maxWidth: 680, margin: '0 auto', padding: '2rem 1rem' }}>
-        <h3 style={{ margin: '0 0 4px', fontSize: 18, fontWeight: 700, color: '#1a1a2e' }}>¿Qué hace cada parte?</h3>
-        <p style={{ margin: '0 0 20px', fontSize: 13, color: '#6c757d' }}>Toca cada bloque para escuchar y entender su rol.</p>
+        <h3 style={{ margin: '0 0 4px', fontSize: 18, fontWeight: 700, color: 'var(--wl-on-panel, #1a1a2e)' }}>¿Qué hace cada parte?</h3>
+        <p style={{ margin: '0 0 20px', fontSize: 13, color: 'var(--wl-on-panel-soft, #6c757d)' }}>Toca cada bloque para escuchar y entender su rol.</p>
 
         {BLOCKS.map((block) => (
           <article
             key={block.korean}
             onClick={() => playAudio(block.audio, 1)}
             style={{
-              background: '#fff',
+              background: 'var(--wl-panel-raised, #fff)',
               border: `2px solid ${block.color}30`,
               borderLeft: `4px solid ${block.color}`,
               borderRadius: 12,
@@ -266,15 +266,15 @@ export default function ContextualInput({ onComplete }: Props) {
                 🔊
               </button>
             </div>
-            <p style={{ margin: '6px 0 8px', fontSize: 13, color: '#6c757d', textAlign: 'center' }}>"{block.translation}"</p>
-            <p style={{ margin: 0, fontSize: 12, color: '#1a1a2e', lineHeight: 1.6, background: `${block.color}08`, borderRadius: 8, padding: '8px 10px' }}>
+            <p style={{ margin: '6px 0 8px', fontSize: 13, color: 'var(--wl-on-panel-soft, #6c757d)', textAlign: 'center' }}>"{block.translation}"</p>
+            <p style={{ margin: 0, fontSize: 12, color: 'var(--wl-on-panel, #1a1a2e)', lineHeight: 1.6, background: `${block.color}08`, borderRadius: 8, padding: '8px 10px' }}>
               {block.description}
             </p>
           </article>
         ))}
 
-        <article style={{ background: '#fff', border: '1px solid #e9ecef', borderRadius: 12, padding: 16, textAlign: 'center', marginBottom: 20 }}>
-          <p style={{ margin: '0 0 10px', fontSize: 11, color: '#6c757d', textTransform: 'uppercase', letterSpacing: '0.12em' }}>La frase completa</p>
+        <article style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 12, padding: 16, textAlign: 'center', marginBottom: 20 }}>
+          <p style={{ margin: '0 0 10px', fontSize: 11, color: 'var(--wl-on-panel-soft, #6c757d)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>La frase completa</p>
           <div style={{ display: 'inline-flex', gap: 8, flexWrap: 'wrap', justifyContent: 'center' }}>
             {BLOCKS.map((block) => (
               <button
@@ -290,7 +290,7 @@ export default function ContextualInput({ onComplete }: Props) {
           <button
             type="button"
             onClick={() => playAudio('학교에 가요', 1)}
-            style={{ marginTop: 10, background: '#fff', border: '1px solid #e9ecef', borderRadius: 100, padding: '4px 12px', fontSize: 12, color: '#6c757d', cursor: 'pointer' }}
+            style={{ marginTop: 10, background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 100, padding: '4px 12px', fontSize: 12, color: 'var(--wl-on-panel-soft, #6c757d)', cursor: 'pointer' }}
           >
             🔊 Escuchar frase
           </button>
@@ -312,12 +312,12 @@ export default function ContextualInput({ onComplete }: Props) {
       <section style={{ maxWidth: 680, margin: '0 auto', padding: '2rem 1rem' }}>
         <FullSentencePreview highlightRole={currentQuestion.highlightRole} />
 
-        <article style={{ background: '#fff', border: '1px solid #e9ecef', borderRadius: 12, padding: 20 }}>
-          <span style={{ fontSize: 9, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#6c63ff', background: 'rgba(108,99,255,0.08)', border: '1px solid rgba(108,99,255,0.15)', borderRadius: 100, padding: '2px 8px', fontWeight: 700 }}>
+        <article style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 12, padding: 20 }}>
+          <span style={{ fontSize: 9, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--wl-on-panel-link, #6c63ff)', background: 'rgba(108,99,255,0.08)', border: '1px solid rgba(108,99,255,0.15)', borderRadius: 100, padding: '2px 8px', fontWeight: 700 }}>
             Pregunta {questionIndex + 1} de {BLOCK_QUESTIONS.length}
           </span>
 
-          <p style={{ margin: '14px 0 16px', fontSize: 15, fontWeight: 600, color: '#1a1a2e' }}>{currentQuestion.prompt}</p>
+          <p style={{ margin: '14px 0 16px', fontSize: 15, fontWeight: 600, color: 'var(--wl-on-panel, #1a1a2e)' }}>{currentQuestion.prompt}</p>
 
           <div>
             {questionOptions.map((option) => {
@@ -349,7 +349,7 @@ export default function ContextualInput({ onComplete }: Props) {
                   <button
                     type="button"
                     onClick={() => playAudio(option, 1)}
-                    style={{ width: 44, border: '1px solid #e9ecef', borderRadius: 10, background: '#fff', cursor: 'pointer', fontSize: 13 }}
+                    style={{ width: 44, border: '1px solid #e9ecef', borderRadius: 10, background: 'var(--wl-panel-raised, #fff)', cursor: 'pointer', fontSize: 13 }}
                   >
                     🔊
                   </button>
@@ -404,8 +404,8 @@ export default function ContextualInput({ onComplete }: Props) {
 
   return (
     <section style={{ maxWidth: 560, margin: '0 auto', padding: '2rem 1rem' }}>
-      <p style={{ margin: '0 0 4px', fontSize: 52, fontWeight: 700, color: '#6c63ff', textAlign: 'center' }}>{`${score}/${BLOCK_QUESTIONS.length}`}</p>
-      <p style={{ margin: '0 0 18px', fontSize: 14, color: '#6c757d', textAlign: 'center' }}>
+      <p style={{ margin: '0 0 4px', fontSize: 52, fontWeight: 700, color: 'var(--wl-on-panel-link, #6c63ff)', textAlign: 'center' }}>{`${score}/${BLOCK_QUESTIONS.length}`}</p>
+      <p style={{ margin: '0 0 18px', fontSize: 14, color: 'var(--wl-on-panel-soft, #6c757d)', textAlign: 'center' }}>
         {score === 3
           ? 'Identificaste las 3 partes. Tu cerebro ya mapea el coreano.'
           : score === 2
@@ -413,7 +413,7 @@ export default function ContextualInput({ onComplete }: Props) {
             : 'Buen intento. Estos patrones se instalan con repetición.'}
       </p>
 
-      <div style={{ background: '#fff', border: '1px solid #e9ecef', borderRadius: 12, padding: 16, marginBottom: 14, textAlign: 'center' }}>
+      <div style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 12, padding: 16, marginBottom: 14, textAlign: 'center' }}>
         <div style={{ display: 'inline-flex', gap: 8, flexWrap: 'wrap', justifyContent: 'center' }}>
           {BLOCKS.map((block) => (
             <button
@@ -428,7 +428,7 @@ export default function ContextualInput({ onComplete }: Props) {
         </div>
       </div>
 
-      <article style={{ background: '#fff', border: '1px solid #e9ecef', borderRadius: 12, overflow: 'hidden' }}>
+      <article style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 12, overflow: 'hidden' }}>
         {BLOCKS.map((block, index) => (
           <div
             key={block.role}
@@ -438,7 +438,7 @@ export default function ContextualInput({ onComplete }: Props) {
               {block.role}
             </span>
             <p style={{ margin: 0, fontFamily: "'Noto Sans KR', sans-serif", fontSize: 20, color: block.color, minWidth: 70 }}>{block.korean}</p>
-            <p style={{ margin: 0, fontSize: 12, color: '#6c757d', flex: 1 }}>{block.translation === 'yo' ? 'yo (formal)' : block.translation}</p>
+            <p style={{ margin: 0, fontSize: 12, color: 'var(--wl-on-panel-soft, #6c757d)', flex: 1 }}>{block.translation === 'yo' ? 'yo (formal)' : block.translation}</p>
             <button
               type="button"
               onClick={() => playAudio(block.audio, 1)}

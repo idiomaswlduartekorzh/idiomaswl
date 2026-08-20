@@ -1,0 +1,460 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-a2-quatre-heures-du-matin",
+  "status": "published",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Francés A2"
+  },
+  "slug": "quatre-heures-du-matin",
+  "series": {
+    "id": "frances-a2-lectura-10",
+    "episode": 7,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-a2-la-librairie-qui-resiste",
+    "nextExerciseId": "fr-a2-a-propos-de-la-piste-cyclable"
+  },
+  "classification": {
+    "genre": "entrevista",
+    "topic": "oficios de madrugada",
+    "intent": "learning",
+    "tags": [
+      "frances a2",
+      "lectura",
+      "verbos pronominales",
+      "gerundio"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Las cuatro de la mañana"
+    },
+    "intro": {
+      "es": "Una panadera que se levanta a las tres y media y no piensa cambiar de horario. Lectura de francés A2 con verbos pronominales y gérondif."
+    },
+    "mission": {
+      "es": "Averigua qué gana ella con ese horario, además de dinero."
+    },
+    "targetText": "— À quelle heure vous levez-vous? — Je me lève à trois heures et demie. Je me prépare en dix minutes et j’arrive au fournil à quatre heures moins le quart. — On s’habitue? — On ne s’habitue jamais complètement. Mais le corps s’organise tout seul. Je m’endors à neuf heures du soir sans y penser, même le samedi. — Qu’est-ce que vous faites en arrivant? — Je regarde la pâte. Elle a passé la nuit à lever, et elle me raconte tout: s’il a fait trop chaud, si j’ai mis trop d’eau la veille. En la touchant, je sais déjà quel pain je vais avoir. — Le métier a changé? — Beaucoup. Avant, on se plaignait du froid et du poids des sacs. Maintenant, on se plaint des clients qui commandent sur une application et qui repartent sans dire bonjour. — Vous changeriez d’horaire? — Non. À six heures, il y a une heure où la rue est encore vide et où le pain sort du four. Personne ne me parle. Je bois un café en écoutant la radio. Toujours la même station, toujours trop bas pour comprendre les mots. Cette heure-là, elle est à moi. Les gens croient que je me lève tôt pour travailler. Je me lève tôt aussi pour ça.",
+    "wordCount": 204,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Conjugar y reconocer verbos pronominales: se lever, se préparer, s’habituer, se plaindre."
+      },
+      {
+        "es": "Formar el gérondif con «en + participio presente» para expresar simultaneidad."
+      },
+      {
+        "es": "Leer una entrevista y distinguir la pregunta de la respuesta."
+      }
+    ],
+    "grammarFocus": [
+      "verbes-pronominaux",
+      "gerondif",
+      "adverbes-frequence"
+    ],
+    "vocabulary": [
+      {
+        "surface": "fournil",
+        "lemma": "fournil",
+        "glosses": {
+          "es": "obrador de panadería, donde está el horno"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "s’habitue",
+        "lemma": "s’habituer",
+        "glosses": {
+          "es": "se acostumbra"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pâte",
+        "lemma": "pâte",
+        "glosses": {
+          "es": "masa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "lever",
+        "lemma": "lever",
+        "glosses": {
+          "es": "fermentar, subir (la masa)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "la veille",
+        "lemma": "la veille",
+        "glosses": {
+          "es": "el día anterior, la víspera"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "se plaignait",
+        "lemma": "se plaindre",
+        "glosses": {
+          "es": "se quejaba"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "poids",
+        "lemma": "poids",
+        "glosses": {
+          "es": "peso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "four",
+        "lemma": "four",
+        "glosses": {
+          "es": "horno"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La ley francesa regula quién puede llamarse «boulangerie»: solo quien amasa y cuece en el propio local. Por eso el trabajo de madrugada sigue existiendo."
+    },
+    "spanishSpeakerNote": {
+      "es": "El gérondif francés se forma con «en» delante: «en la touchant» = «tocándola», «en écoutant» = «escuchando». Sin ese «en» no es gérondif. Y ojo: el gerundio español de duración («estoy comiendo») no se dice así en francés."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo sobre hechos pasados y planes futuros, distinguir quién dice qué, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers",
+      "accord-participe-passe",
+      "cause-consequence",
+      "comparatifs",
+      "conditionnel-present",
+      "connecteurs",
+      "discours-indirect",
+      "dont-relatif",
+      "futur-simple",
+      "gerondif",
+      "imparfait",
+      "negation-avancee",
+      "passe-compose-avoir",
+      "passe-compose-etre",
+      "passe-compose-vs-imparfait",
+      "pronoms-coi",
+      "pronoms-y-en",
+      "si-conditionnel",
+      "subjonctif-present",
+      "superlatifs",
+      "verbes-pronominaux"
+    ],
+    "disallowedGrammar": [
+      "plus-que-parfait",
+      "voix passive",
+      "participe présent",
+      "futur antérieur"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 8.5,
+      "maxSentenceWords": 24,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Pasado narrativo (passé composé e imparfait) permitido. Sin plus-que-parfait ni voz pasiva. Inferencia ligera: unir dos datos separados por varios párrafos."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué revela la entrevista al final?",
+      "options": [
+        {
+          "id": "hora",
+          "text": "Que madruga también por una hora de calma que es solo suya"
+        },
+        {
+          "id": "dinero",
+          "text": "Que madruga porque el turno de noche se paga mejor"
+        },
+        {
+          "id": "dejar",
+          "text": "Que quiere dejar el oficio en cuanto pueda"
+        }
+      ],
+      "answer": "hora",
+      "evidence": "Cette heure-là, elle est à moi. Les gens croient que je me lève tôt pour travailler. Je me lève tôt aussi pour ça.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo guarda para el final: corrige lo que la gente supone y da la razón verdadera."
+        },
+        "incorrect": {
+          "es": "No se habla de dinero, y dice expresamente que no cambiaría de horario. Lee sus tres últimas frases."
+        },
+        "strategy": {
+          "es": "En una entrevista, la última respuesta suele guardar lo más personal. No la leas con prisa."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿A qué hora llega al obrador?",
+      "options": [
+        {
+          "id": "345",
+          "text": "A las cuatro menos cuarto"
+        },
+        {
+          "id": "330",
+          "text": "A las tres y media"
+        },
+        {
+          "id": "600",
+          "text": "A las seis"
+        }
+      ],
+      "answer": "345",
+      "evidence": "j’arrive au fournil à quatre heures moins le quart",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Las tres y media es cuando se levanta, y las seis, la hora de la calle vacía."
+        },
+        "incorrect": {
+          "es": "El texto da tres horas distintas y cada una marca un momento. Busca la que va con el verbo «arrive»."
+        },
+        "strategy": {
+          "es": "Asocia cada hora a su verbo: levantarse, llegar, salir el pan. Así no se cruzan."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Dice que la masa «a passé la nuit à lever». ¿Qué significa «lever» aquí?",
+      "options": [
+        {
+          "id": "fermentar",
+          "text": "Fermentar, subir"
+        },
+        {
+          "id": "levantarse",
+          "text": "Levantarse de la cama"
+        },
+        {
+          "id": "limpiar",
+          "text": "Limpiarse, lavarse"
+        }
+      ],
+      "answer": "fermentar",
+      "evidence": "Elle a passé la nuit à lever",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. El mismo verbo que usa para sí misma («je me lève») significa otra cosa aplicado a la masa."
+        },
+        "incorrect": {
+          "es": "El sujeto de la frase es «elle», la masa, no una persona. Eso descarta levantarse de la cama."
+        },
+        "strategy": {
+          "es": "Antes de traducir un verbo, comprueba quién es el sujeto. El mismo verbo cambia de sentido según quién lo haga."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Qué ha cambiado en el oficio, según ella?",
+      "options": [
+        {
+          "id": "clientes",
+          "text": "Las quejas: antes eran físicas, ahora son sobre el trato de los clientes"
+        },
+        {
+          "id": "maquinas",
+          "text": "Que ahora las máquinas hacen todo el trabajo pesado"
+        },
+        {
+          "id": "horario",
+          "text": "Que ahora se entra a trabajar más tarde que antes"
+        }
+      ],
+      "answer": "clientes",
+      "evidence": "Avant, on se plaignait du froid et du poids des sacs. Maintenant, on se plaint des clients qui commandent sur une application",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La estructura «Avant… Maintenant…» hace toda la comparación en dos frases."
+        },
+        "incorrect": {
+          "es": "No menciona máquinas, y su horario sigue siendo de madrugada. Busca las palabras «Avant» y «Maintenant»."
+        },
+        "strategy": {
+          "es": "La pareja «avant / maintenant» es un contraste explícito. Lo que cambia está en la diferencia entre las dos frases."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: dice que uno acaba acostumbrándose del todo a levantarse de madrugada.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "On ne s’habitue jamais complètement. Mais le corps s’organise tout seul.",
+      "feedback": {
+        "correct": {
+          "es": "Falso. Dice que del todo no, aunque el cuerpo acabe organizándose por su cuenta. El matiz es suyo."
+        },
+        "incorrect": {
+          "es": "Su respuesta tiene dos partes unidas por «Mais». La primera contesta a la pregunta; no te quedes en la segunda."
+        },
+        "strategy": {
+          "es": "Cuando una respuesta empieza con una negación y sigue con «mais», la negación es la respuesta y lo demás es el matiz."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué dice que la masa «le cuenta todo»?",
+      "options": [
+        {
+          "id": "oficio",
+          "text": "Para explicar que su oficio se ejerce leyendo señales, no siguiendo recetas"
+        },
+        {
+          "id": "broma",
+          "text": "Para hacer una broma sin ningún significado"
+        },
+        {
+          "id": "queja",
+          "text": "Para quejarse de que la masa le da problemas"
+        }
+      ],
+      "answer": "oficio",
+      "evidence": "elle me raconte tout: s’il a fait trop chaud, si j’ai mis trop d’eau la veille. En la touchant, je sais déjà quel pain je vais avoir.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Los dos puntos abren la lista de lo que «cuenta», y la frase siguiente explica cómo lo lee: tocándola."
+        },
+        "incorrect": {
+          "es": "No hay queja: enseguida detalla exactamente qué información obtiene. Lee lo que sigue a los dos puntos."
+        },
+        "strategy": {
+          "es": "Cuando una imagen va seguida de dos puntos, lo que viene después la traduce a hechos. Ahí está su función."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Describe en 6–8 frases en francés una mañana tuya, hora por hora. Usa cuatro verbos pronominales y dos gérondifs (en + participio)."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "Je me lève à…",
+      "Je me prépare en…",
+      "En arrivant,…",
+      "Je bois un café en écoutant…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés A2: Las cuatro de la mañana | WeLearn"
+    },
+    "description": {
+      "es": "Lee una entrevista en francés A2 y practica los verbos pronominales (se lever, s’habituer) y el gérondif (en faisant). Con seis preguntas."
+    },
+    "canonicalPath": "/practica/frances/a2/lectura/quatre-heures-du-matin",
+    "indexable": true,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-a2-la-librairie-qui-resiste",
+      "fr-a2-a-propos-de-la-piste-cyclable"
+    ]
+  }
+}

@@ -1,0 +1,442 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-a1-die-waschkueche",
+  "status": "published",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Alemán A1"
+  },
+  "slug": "die-waschkueche",
+  "series": {
+    "id": "aleman-a1-lectura-10",
+    "episode": 2,
+    "totalEpisodes": 10,
+    "previousExerciseId": "de-a1-mein-name-ist-schwer",
+    "nextExerciseId": "de-a1-was-machst-du-eigentlich"
+  },
+  "classification": {
+    "genre": "cartel de comunidad",
+    "topic": "normas del edificio",
+    "intent": "learning",
+    "tags": [
+      "aleman a1",
+      "lectura",
+      "verbo haben",
+      "artículos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El cuarto de la lavadora"
+    },
+    "intro": {
+      "es": "Un cartel en el sótano con seis normas, una lista de turnos y una advertencia sobre el calcetín perdido. Lectura de alemán A1."
+    },
+    "mission": {
+      "es": "Averigua qué pasa si alguien olvida su ropa dentro."
+    },
+    "targetText": "WASCHKÜCHE — HAUS 14. Die Waschküche hat zwei Maschinen und einen Trockner. Jede Wohnung hat einen Tag pro Woche. Der Plan hängt an der Tür. Wohnung 3 hat Montag. Wohnung 7 hat Dienstag. Und so weiter. Wichtig: Die Maschine hat kein Schloss. Wir haben Vertrauen. Bitte nehmen Sie Ihre Wäsche sofort heraus. Wir haben eine Kiste für vergessene Wäsche. Die Kiste ist alt und sie ist immer voll. Wir haben dort elf Socken, zwei Handtücher und ein Kinderhemd. Niemand hat sie abgeholt. Der Trockner hat ein Problem: er ist laut. Bitte benutzen Sie ihn nicht nach 22 Uhr. Frau Berger hat ein Baby und das Baby hat einen leichten Schlaf. Danke. Die Hausverwaltung.",
+    "wordCount": 112,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Conjugar haben en presente y usarlo para posesión y para lo que hay."
+      },
+      {
+        "es": "Elegir el artículo correcto: der, die, das, y su forma en acusativo."
+      },
+      {
+        "es": "Sacar datos prácticos de un cartel con normas y horarios."
+      }
+    ],
+    "grammarFocus": [
+      "verb-haben",
+      "artikel"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Waschküche",
+        "lemma": "Waschküche",
+        "glosses": {
+          "es": "cuarto de lavadoras del edificio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Trockner",
+        "lemma": "Trockner",
+        "glosses": {
+          "es": "secadora"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Schloss",
+        "lemma": "Schloss",
+        "glosses": {
+          "es": "cerradura; también castillo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Vertrauen",
+        "lemma": "Vertrauen",
+        "glosses": {
+          "es": "confianza"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Wäsche",
+        "lemma": "Wäsche",
+        "glosses": {
+          "es": "ropa para lavar, colada"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Kiste",
+        "lemma": "Kiste",
+        "glosses": {
+          "es": "caja, cajón"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Handtücher",
+        "lemma": "Handtuch",
+        "glosses": {
+          "es": "toallas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Hausverwaltung",
+        "lemma": "Hausverwaltung",
+        "glosses": {
+          "es": "administración de la finca"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El cuarto de lavadoras compartido con turno semanal por vivienda es la norma en muchos edificios alemanes, y el plan colgado en la puerta tiene fuerza de acuerdo vecinal."
+    },
+    "spanishSpeakerNote": {
+      "es": "Cuidado con «Schloss»: significa cerradura y también castillo, según el contexto. Y fíjate en el acusativo: «hat einen Trockner» lleva «einen» porque Trockner es masculino y va como complemento directo."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en alemán sobre la vida cotidiana, encontrar el verbo aunque esté partido o al final, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens"
+    ],
+    "disallowedGrammar": [
+      "Perfekt",
+      "Präteritum",
+      "Konjunktiv",
+      "Passiv",
+      "Genitiv"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 5.9,
+      "maxSentenceWords": 12,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo y futuro con presente. Sin Perfekt, Präteritum ni pasiva. Verbos separables y orden de la frase trabajados en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué hace este cartel?",
+      "options": [
+        {
+          "id": "normas",
+          "text": "Explica cómo se usa el cuarto y pide dos cosas concretas"
+        },
+        {
+          "id": "obras",
+          "text": "Anuncia obras en el sótano"
+        },
+        {
+          "id": "multa",
+          "text": "Comunica una multa a los vecinos"
+        }
+      ],
+      "answer": "normas",
+      "evidence": "Bitte nehmen Sie Ihre Wäsche sofort heraus … Bitte benutzen Sie ihn nicht nach 22 Uhr.",
+      "feedback": {
+        "correct": {
+          "es": "Sí: pide sacar la ropa enseguida y no usar la secadora de noche. Dos peticiones claras."
+        },
+        "incorrect": {
+          "es": "No hay obras ni multas. Busca las dos frases que empiezan con «Bitte»."
+        },
+        "strategy": {
+          "es": "En un cartel, las frases con «Bitte» son las peticiones. Localízalas y tendrás su función."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántos calcetines hay en la caja de objetos olvidados?",
+      "options": [
+        {
+          "id": "once",
+          "text": "Once"
+        },
+        {
+          "id": "dos",
+          "text": "Dos"
+        },
+        {
+          "id": "catorce",
+          "text": "Catorce"
+        }
+      ],
+      "answer": "once",
+      "evidence": "Wir haben dort elf Socken, zwei Handtücher und ein Kinderhemd.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Los dos son las toallas y el catorce es el número del edificio."
+        },
+        "incorrect": {
+          "es": "El cartel enumera tres cosas con tres cifras. Busca la que va con «Socken»."
+        },
+        "strategy": {
+          "es": "En una enumeración, empareja cada número con su sustantivo antes de responder."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El cartel dice «Die Maschine hat kein Schloss. Wir haben Vertrauen». ¿Qué significa «Schloss» aquí?",
+      "options": [
+        {
+          "id": "cerradura",
+          "text": "Cerradura"
+        },
+        {
+          "id": "castillo",
+          "text": "Castillo"
+        },
+        {
+          "id": "programa",
+          "text": "Programa de lavado"
+        }
+      ],
+      "answer": "cerradura",
+      "evidence": "Die Maschine hat kein Schloss. Wir haben Vertrauen.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. La frase siguiente lo confirma: si no hay cerradura, hace falta confianza."
+        },
+        "incorrect": {
+          "es": "La palabra significa las dos cosas, pero una lavadora no tiene castillo. La frase siguiente lo aclara."
+        },
+        "strategy": {
+          "es": "Cuando una palabra tiene dos sentidos, la frase siguiente suele decidir cuál. Léela."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué pide no usar la secadora después de las diez de la noche?",
+      "options": [
+        {
+          "id": "bebe",
+          "text": "Porque hace ruido y una vecina tiene un bebé con sueño ligero"
+        },
+        {
+          "id": "electricidad",
+          "text": "Porque la electricidad es más cara de noche"
+        },
+        {
+          "id": "averia",
+          "text": "Porque está averiada y solo funciona de día"
+        }
+      ],
+      "answer": "bebe",
+      "evidence": "er ist laut. Bitte benutzen Sie ihn nicht nach 22 Uhr. Frau Berger hat ein Baby und das Baby hat einen leichten Schlaf.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el cartel da nombre y todo: Frau Berger. Eso hace la petición más difícil de ignorar."
+        },
+        "incorrect": {
+          "es": "El problema declarado es el ruido, no la avería ni el precio. Lee las dos frases siguientes."
+        },
+        "strategy": {
+          "es": "Cuando un cartel da un nombre propio, está personalizando la petición. Ahí está el motivo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: cada vivienda tiene un día asignado por semana.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Jede Wohnung hat einen Tag pro Woche. Der Plan hängt an der Tür.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y el cartel da dos ejemplos: la 3 el lunes y la 7 el martes."
+        },
+        "incorrect": {
+          "es": "Busca la frase con «Jede Wohnung». Es la que organiza todo el sistema."
+        },
+        "strategy": {
+          "es": "La palabra «jede» (cada) establece una regla general. Si la ves, aplica a todos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué dice que la caja «siempre está llena»?",
+      "options": [
+        {
+          "id": "insistir",
+          "text": "Para insistir en que la gente olvida la ropa a menudo"
+        },
+        {
+          "id": "comprar",
+          "text": "Para pedir dinero para una caja nueva"
+        },
+        {
+          "id": "tirar",
+          "text": "Para avisar de que van a tirar el contenido"
+        }
+      ],
+      "answer": "insistir",
+      "evidence": "Die Kiste ist alt und sie ist immer voll … Niemand hat sie abgeholt.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo remata con el inventario: once calcetines que nadie ha recogido."
+        },
+        "incorrect": {
+          "es": "No pide dinero ni anuncia que vaya a tirar nada. Fíjate en el inventario que viene después."
+        },
+        "strategy": {
+          "es": "Si un cartel da un detalle y luego una lista, la lista es la prueba de ese detalle."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe un cartel de 5–7 frases en alemán para un espacio compartido. Usa el verbo haben cinco veces y los tres artículos definidos."
+    },
+    "minWords": 25,
+    "maxWords": 60,
+    "hints": [
+      "Die… hat zwei…",
+      "Jede Wohnung hat…",
+      "Wir haben…",
+      "Bitte benutzen Sie… nicht nach… Uhr."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán A1: El cuarto de la lavadora | WeLearn"
+    },
+    "description": {
+      "es": "Lee un cartel de comunidad en alemán A1 y practica el verbo haben y los artículos der, die, das. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/a1/lectura/die-waschkueche",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-a1-mein-name-ist-schwer",
+      "de-a1-was-machst-du-eigentlich"
+    ]
+  }
+}

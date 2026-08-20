@@ -1,0 +1,439 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-a1-o-jogo-da-rua-quinze",
+  "status": "published",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Portugués A1"
+  },
+  "slug": "o-jogo-da-rua-quinze",
+  "series": {
+    "id": "portugues-a1-lectura-10",
+    "episode": 8,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-a1-eu-nao-vendo-nada",
+    "nextExerciseId": "pt-a1-o-que-voce-vende-mais"
+  },
+  "classification": {
+    "genre": "crónica de barrio",
+    "topic": "un partido en la calle",
+    "intent": "learning",
+    "tags": [
+      "portugues a1",
+      "lectura",
+      "estar + gerundio",
+      "verbos irregulares"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El partido de la calle Quince"
+    },
+    "intro": {
+      "es": "Un partido en plena calle, dos coches como portería y una vecina que se convirtió en árbitro sin querer. Lectura de portugués A1."
+    },
+    "mission": {
+      "es": "Averigua quién manda de verdad en ese partido."
+    },
+    "targetText": "Agora são cinco da tarde e as crianças estão jogando bola na rua quinze. Elas jogam aqui todo dia. O gol é entre dois carros. Os carros são do Seu Nilton e da dona Cida. Eles sabem disso e não reclamam. Eu vejo da janela. Tem oito crianças. Uma menina está gritando com o irmão porque ele não passa a bola. Ela tem razão: ele nunca passa. Quando um carro vem, todo mundo para e as crianças saem. Depois voltam. Acontece umas vinte vezes por tarde. A dona Cida está sentada na cadeira dela, na porta. Ela não está jogando, mas ela decide tudo. Quando tem dúvida, as crianças perguntam para ela. Ela vê o jogo inteiro da porta. Hoje ela deu um gol para o time azul. O time vermelho reclama. Mas ninguém discute com a dona Cida.",
+    "wordCount": 139,
+    "estimatedMinutes": 6,
+    "objectives": [
+      {
+        "es": "Formar el presente continuo con estar + gerundio: estão jogando, está gritando."
+      },
+      {
+        "es": "Conjugar verbos irregulares frecuentes: ser, ter, vir, ver, saber, dar, sair."
+      },
+      {
+        "es": "Distinguir lo que pasa ahora de lo que pasa siempre."
+      }
+    ],
+    "grammarFocus": [
+      "estar-gerundio",
+      "verbos-irregulares"
+    ],
+    "vocabulary": [
+      {
+        "surface": "gol",
+        "lemma": "gol",
+        "glosses": {
+          "es": "portería; también gol"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Acontece",
+        "lemma": "acontecer",
+        "glosses": {
+          "es": "ocurre, sucede"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "janela",
+        "lemma": "janela",
+        "glosses": {
+          "es": "ventana"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "razão",
+        "lemma": "razão",
+        "glosses": {
+          "es": "razón; ter razão = tener razón"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "para",
+        "lemma": "parar",
+        "glosses": {
+          "es": "se detiene, para"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cadeira",
+        "lemma": "cadeira",
+        "glosses": {
+          "es": "silla. ¡No es «cadera»: eso es «quadril»!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dúvida",
+        "lemma": "dúvida",
+        "glosses": {
+          "es": "duda"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "time",
+        "lemma": "time",
+        "glosses": {
+          "es": "equipo (deportivo)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El fútbol callejero con la portería marcada entre dos coches es una escena clásica de los barrios brasileños. La figura del vecino o vecina que arbitra desde su puerta es real y su autoridad no se discute."
+    },
+    "spanishSpeakerNote": {
+      "es": "«Cadeira» es silla, no cadera. Y fíjate en la diferencia entre «estão jogando» (están jugando ahora) y «elas jogam aqui todo dia» (juegan aquí todos los días): el gerundio marca el momento, el presente simple la costumbre."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en portugués de Brasil sobre la vida cotidiana, distinguir ser de estar, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares"
+    ],
+    "disallowedGrammar": [
+      "pretérito perfeito",
+      "imperfeito",
+      "subjuntivo",
+      "voz passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 7.3,
+      "maxSentenceWords": 14,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Presente de indicativo y futuro con ir. Sin tiempos del pasado ni subjuntivo. Falso amigo glosado en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué retrata la crónica?",
+      "options": [
+        {
+          "id": "autoridad",
+          "text": "Un partido de calle donde la autoridad la tiene una vecina sentada en la puerta"
+        },
+        {
+          "id": "queja",
+          "text": "Una queja por el ruido de los niños en la calle"
+        },
+        {
+          "id": "peligro",
+          "text": "El peligro de jugar en una calle con coches"
+        }
+      ],
+      "answer": "autoridad",
+      "evidence": "Ela não está jogando, mas ela decide tudo … Mas ninguém discute com a dona Cida.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y las dos frases finales lo confirman: no juega y aun así decide."
+        },
+        "incorrect": {
+          "es": "Nadie se queja y los coches se manejan sin drama. Busca las frases sobre dona Cida."
+        },
+        "strategy": {
+          "es": "Si un personaje que no participa aparece en varias frases, es el centro del texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántos niños están jugando?",
+      "options": [
+        {
+          "id": "ocho",
+          "text": "Ocho"
+        },
+        {
+          "id": "quince",
+          "text": "Quince"
+        },
+        {
+          "id": "veinte",
+          "text": "Veinte"
+        }
+      ],
+      "answer": "ocho",
+      "evidence": "Tem oito crianças.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El quince es el nombre de la calle y el veinte, las veces que paran por los coches."
+        },
+        "incorrect": {
+          "es": "El texto tiene tres cifras y cada una mide algo distinto. Busca la que va con «crianças»."
+        },
+        "strategy": {
+          "es": "Empareja cada número con lo que cuenta. Un número de calle no es una cantidad de gente."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «A dona Cida está sentada na cadeira dela». ¿Qué es una «cadeira»?",
+      "options": [
+        {
+          "id": "silla",
+          "text": "Una silla"
+        },
+        {
+          "id": "cadera",
+          "text": "La cadera"
+        },
+        {
+          "id": "acera",
+          "text": "La acera"
+        }
+      ],
+      "answer": "silla",
+      "evidence": "A dona Cida está sentada na cadeira dela, na porta.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y es un falso amigo clásico: «cadeira» es silla; la cadera es «quadril»."
+        },
+        "incorrect": {
+          "es": "Se parece a «cadera», pero uno se sienta «na cadeira». Eso descarta la parte del cuerpo."
+        },
+        "strategy": {
+          "es": "Si la preposición es «na» (en la), lo que sigue es un objeto o un lugar, no una parte del cuerpo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué nadie discute las decisiones de dona Cida?",
+      "options": [
+        {
+          "id": "ve",
+          "text": "Porque ve el partido entero desde la puerta y todos lo aceptan"
+        },
+        {
+          "id": "coche",
+          "text": "Porque uno de los coches de la portería es suyo"
+        },
+        {
+          "id": "edad",
+          "text": "Porque es la vecina más mayor de la calle"
+        }
+      ],
+      "answer": "ve",
+      "evidence": "Ela vê o jogo inteiro da porta … Mas ninguém discute com a dona Cida.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El texto da la razón práctica —lo ve todo— y luego el hecho social: nadie discute."
+        },
+        "incorrect": {
+          "es": "Su coche es la portería, pero el texto no lo da como motivo, y de la edad no dice nada."
+        },
+        "strategy": {
+          "es": "Cuando un texto explica una autoridad, busca el dato práctico que la sostiene. Aquí es el punto de vista."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: los dueños de los dos coches protestan porque los usan como portería.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Eles sabem disso e não reclamam.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: lo saben y no se quejan. Es parte del acuerdo tácito de la calle."
+        },
+        "incorrect": {
+          "es": "Busca la frase que habla de Seu Nilton y dona Cida como dueños. Dice qué hacen al respecto."
+        },
+        "strategy": {
+          "es": "Antes de suponer un conflicto, comprueba si el texto lo confirma. Aquí lo niega."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué cuenta que el partido se para unas veinte veces por tarde?",
+      "options": [
+        {
+          "id": "normal",
+          "text": "Para mostrar que convivir con los coches es parte normal del juego"
+        },
+        {
+          "id": "peligro",
+          "text": "Para avisar de que la calle es peligrosa"
+        },
+        {
+          "id": "queja",
+          "text": "Para quejarse del tráfico del barrio"
+        }
+      ],
+      "answer": "normal",
+      "evidence": "Quando um carro vem, todo mundo para. Alguém grita carro! e as crianças saem da rua. Depois voltam.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el «depois voltam» es la clave: no es un problema, es una rutina resuelta."
+        },
+        "incorrect": {
+          "es": "El texto no dramatiza: describe un procedimiento que funciona. Fíjate en «depois voltam»."
+        },
+        "strategy": {
+          "es": "Si un texto describe un riesgo y añade cómo se resuelve, no está alertando: está retratando."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Describe en 5–7 frases en portugués una escena que estés viendo ahora mismo. Usa estar + gerundio cuatro veces y tres verbos irregulares."
+    },
+    "minWords": 30,
+    "maxWords": 70,
+    "hints": [
+      "Agora são… e…",
+      "… estão …ndo…",
+      "Quando…, todo mundo…",
+      "Ninguém discute com…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués A1: El partido de la calle Quince | WeLearn"
+    },
+    "description": {
+      "es": "Lee una crónica de barrio en portugués de Brasil A1 y practica estar + gerundio y los verbos irregulares. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/a1/lectura/o-jogo-da-rua-quinze",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-a1-eu-nao-vendo-nada",
+      "pt-a1-o-que-voce-vende-mais"
+    ]
+  }
+}

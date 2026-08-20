@@ -1,0 +1,489 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-b1-chitalnyy-zal-kotoryy-ne-zakryvaetsya",
+  "status": "published",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Ruso B1"
+  },
+  "slug": "chitalnyy-zal-kotoryy-ne-zakryvaetsya",
+  "series": {
+    "id": "ruso-b1-lectura-10",
+    "episode": 4,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-b1-on-govoril-chto-priedet",
+    "nextExerciseId": "ru-b1-chto-ya-sdelayu-v-subbotu"
+  },
+  "classification": {
+    "genre": "artículo de opinión",
+    "topic": "una bibliotecaria pide abrir de noche",
+    "intent": "learning",
+    "tags": [
+      "ruso b1",
+      "lectura",
+      "condicional con бы",
+      "impersonales modales"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Una sala de lectura que no cierre"
+    },
+    "intro": {
+      "es": "Se olvidó de cerrar la puerta una noche de invierno y entraron cuatro personas. Ninguna preguntó si estaba abierto. Lectura de ruso B1."
+    },
+    "mission": {
+      "es": "Averigua qué decía la nota que encontró por la mañana."
+    },
+    "targetText": "Я библиотекарь в Иркутске, и я хочу, чтобы у нас был читальный зал, работающий всю ночь.\n\nМне говорят, что это невозможно. Мне говорят, что нужны деньги, что нужен охранник, что нельзя оставлять книги без присмотра. Всё это правда.\n\nНо давайте посчитаем. Если бы зал работал с девяти вечера до семи утра, нужен был бы один человек в смену и свет. Больше ничего. Книги не надо выдавать: читай здесь, а уходя — оставь на столе.\n\nКому это нужно? Мне отвечают: никому.\n\nЯ работаю здесь девятнадцать лет и знаю, кому. Студентам, живущим в общежитии по четыре человека в комнате, где нельзя включить свет после одиннадцати. Матерям, у которых дети засыпают в десять и которым надо готовиться к экзаменам. Людям, работающим в две смены. Людям, которым просто негде сидеть.\n\nВ общежитии нельзя. В кафе нужно покупать кофе каждый час. Дома, если в доме четыре человека, тоже нельзя.\n\nЕсли бы я могла выбрать одну вещь для этого города, я бы выбрала не новую библиотеку. Я бы выбрала старую библиотеку, открытую ночью.\n\nЯ спросила у коллег в других городах. В Казани такой зал был два года, а потом закрылся: не хватило не денег, а желания директора. В Красноярске он есть до сих пор, но только в сессию, три недели в году. Значит, это возможно. Значит, вопрос не в том, можно ли, а в том, кто захочет. Мне пятьдесят четыре года. Я успею ещё лет десять просить.\n\nОдин раз, зимой, я осталась до двух ночи, чтобы закончить каталог. Я забыла закрыть дверь. Пришли четыре человека. Никто из них не спросил, работает ли зал. Они просто вошли, сели и стали читать. Один парень спал сорок минут за столом, потом проснулся и продолжил читать.\n\nНикто ничего не украл. Утром на столе лежала записка: «Спасибо. Мы вернёмся, если можно». Я не знаю, кто её написал.\n\nЯ показала записку директору. Он сказал, что это очень трогательно и что денег нет.\n\nЗаписка лежит у меня в столе третий год. Иногда я думаю, что её надо будет показать кому-то другому, и что этот кто-то, наверное, ещё не работает в мэрии.",
+    "wordCount": 337,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Construir el condicional con бы: если бы зал работал, нужен был бы."
+      },
+      {
+        "es": "Usar los impersonales modales: нужно, надо, нельзя, можно, негде."
+      },
+      {
+        "es": "Distinguir un argumento de coste de un argumento de necesidad."
+      }
+    ],
+    "grammarFocus": [
+      "condicional-subjuntivo-b1",
+      "impersonales-modales-b1",
+      "condicional"
+    ],
+    "vocabulary": [
+      {
+        "surface": "читальный",
+        "lemma": "читальный зал",
+        "glosses": {
+          "es": "de lectura; «читальный зал» es la sala de lectura"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "присмотра",
+        "lemma": "присмотр",
+        "glosses": {
+          "es": "vigilancia; «без присмотра» es sin vigilar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "выдавать",
+        "lemma": "выдавать",
+        "glosses": {
+          "es": "prestar, entregar en préstamo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "общежитии",
+        "lemma": "общежитие",
+        "glosses": {
+          "es": "residencia de estudiantes"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "засыпают",
+        "lemma": "засыпать",
+        "glosses": {
+          "es": "se duermen"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "негде",
+        "lemma": "негде",
+        "glosses": {
+          "es": "no hay dónde"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "записка",
+        "lemma": "записка",
+        "glosses": {
+          "es": "nota escrita a mano"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "трогательно",
+        "lemma": "трогательно",
+        "glosses": {
+          "es": "conmovedor"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Las residencias universitarias rusas suelen alojar a cuatro estudiantes por habitación con horarios de luces, y por eso las salas de lectura públicas cumplen una función que en otros países cubre la propia vivienda."
+    },
+    "spanishSpeakerNote": {
+      "es": "Los impersonales rusos no llevan sujeto: «нужно», «надо», «нельзя», «негде». Y la persona a la que afectan va en dativo: «мне надо», «людям негде сидеть». El español pone ahí un sujeto o un «se»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto ruso largo con participios y gerundios, distinguir lo que alguien afirma de lo que solo dice que intentará, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento",
+      "acusativo-movimiento",
+      "adverbios-tiempo",
+      "aspecto-verbal",
+      "comparativos",
+      "condicional",
+      "dativo-uso",
+      "futuro-imperfectivo",
+      "futuro-perfectivo",
+      "genitivo-cantidad",
+      "instrumental-uso",
+      "oraciones-subordinadas",
+      "pasado-verbos",
+      "plurales-irregulares",
+      "prepositivo-avanzado",
+      "pronombres-reflexivos",
+      "pronombres-relativos",
+      "superlativos",
+      "verbos-prefijados",
+      "adverbios-circunstanciales-b1",
+      "aspecto-perfectivo-imperfectivo-b1",
+      "comparativos-superlativos-b1",
+      "condicional-subjuntivo-b1",
+      "dativo-b1",
+      "deeprichastiya-b1",
+      "diminutivos-aumentativos-b1",
+      "discurso-indirecto-b1",
+      "futuro-perfectivo-b1",
+      "genitivo-negacion-b1",
+      "impersonales-modales-b1",
+      "instrumental-b1",
+      "oraciones-subordinadas-b1",
+      "participios-activos-b1",
+      "participios-adjetivales-b1",
+      "participios-pasivos-b1",
+      "prefijos-verbos-b1",
+      "preposiciones-casos-b1",
+      "verbos-movimiento-prefijados-b1",
+      "verbos-reflexivos-b1"
+    ],
+    "disallowedGrammar": [
+      "participios de registro literario raro",
+      "sintaxis nominal administrativa",
+      "arcaísmos",
+      "jerga profesional cerrada"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 8.2,
+      "maxSentenceWords": 20,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Participios activos, pasivos y adjetivales; деепричастия de los dos aspectos; condicional con бы; impersonales modales. Acento sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué defiende la bibliotecaria?",
+      "options": [
+        {
+          "id": "noche",
+          "text": "Abrir de noche la biblioteca que ya existe, en lugar de construir una nueva"
+        },
+        {
+          "id": "nueva",
+          "text": "Construir una biblioteca nueva y moderna"
+        },
+        {
+          "id": "prestamo",
+          "text": "Ampliar el préstamo de libros a domicilio"
+        }
+      ],
+      "answer": "noche",
+      "evidence": "Я бы выбрала не новую библиотеку. Я бы выбрала старую библиотеку, открытую ночью.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo dice con dos condicionales seguidos que descartan la opción obvia."
+        },
+        "incorrect": {
+          "es": "Descarta expresamente la biblioteca nueva, y dice que los libros no hace falta prestarlos."
+        },
+        "strategy": {
+          "es": "Cuando dos frases con бы se oponen, la segunda es la propuesta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué haría falta según ella para abrir de noche?",
+      "options": [
+        {
+          "id": "dos",
+          "text": "Una persona por turno y la luz encendida"
+        },
+        {
+          "id": "tres",
+          "text": "Un vigilante, un bibliotecario y un caterero"
+        },
+        {
+          "id": "nada",
+          "text": "Nada: se podría hacer sin personal"
+        }
+      ],
+      "answer": "dos",
+      "evidence": "Если бы зал работал с девяти вечера до семи утра, нужен был бы один человек в смену и свет. Больше ничего.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y ella misma cierra con «больше ничего»."
+        },
+        "incorrect": {
+          "es": "No propone dejarlo sin nadie ni contratar a tres personas. Busca la frase con «нужен был бы»."
+        },
+        "strategy": {
+          "es": "La forma «нужен был бы» introduce lo que haría falta en la hipótesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Dice que a algunas personas «негде сидеть». ¿Qué significa?",
+      "options": [
+        {
+          "id": "sitio",
+          "text": "Que no tienen dónde sentarse"
+        },
+        {
+          "id": "prohibido",
+          "text": "Que tienen prohibido sentarse"
+        },
+        {
+          "id": "gratis",
+          "text": "Que no pueden pagar un asiento"
+        }
+      ],
+      "answer": "sitio",
+      "evidence": "Людям, работающим в две смены. Людям, которым просто негде сидеть … В общежитии нельзя. В кафе нужно покупать кофе каждый час.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y los dos ejemplos siguientes lo demuestran: la residencia y el café."
+        },
+        "incorrect": {
+          "es": "La prohibición es «нельзя», otra palabra. Aquí se habla de falta de lugar."
+        },
+        "strategy": {
+          "es": "La partícula «не-» + «где» construye la idea de «ningún lugar donde»."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué es importante que nadie preguntara si la sala estaba abierta?",
+      "options": [
+        {
+          "id": "esperando",
+          "text": "Porque demuestra que había gente esperando esa posibilidad, no que se colara por casualidad"
+        },
+        {
+          "id": "descuido",
+          "text": "Porque prueba que la biblioteca es insegura"
+        },
+        {
+          "id": "norma",
+          "text": "Porque significa que la norma no estaba clara"
+        }
+      ],
+      "answer": "esperando",
+      "evidence": "Никто из них не спросил, работает ли зал. Они просто вошли, сели и стали читать … Никто ничего не украл.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto añade la prueba contraria a la desconfianza: no faltó nada."
+        },
+        "incorrect": {
+          "es": "El texto dice justamente que no robaron nada, así que no habla de inseguridad."
+        },
+        "strategy": {
+          "es": "Si el texto añade que no hubo daño, está respondiendo a la objeción previsible."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el director le dijo que la idea era conmovedora pero que no había dinero.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Я показала записку директору. Он сказал, что это очень трогательно и что денег нет.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y las dos mitades de la frase van juntas a propósito."
+        },
+        "incorrect": {
+          "es": "Busca la frase del director: dice dos cosas seguidas."
+        },
+        "strategy": {
+          "es": "Cuando alguien elogia y niega en la misma frase, las dos partes cuentan."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el artículo.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Lo que le contestan: hace falta dinero y vigilante"
+        },
+        {
+          "id": "p2",
+          "text": "El cálculo: una persona por turno y luz"
+        },
+        {
+          "id": "p3",
+          "text": "Para quién sería: estudiantes, madres, turnos dobles"
+        },
+        {
+          "id": "p4",
+          "text": "La noche que olvidó cerrar y la nota de la mañana"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Мне говорят, что это невозможно … Но давайте посчитаем … Я работаю здесь девятнадцать лет и знаю, кому … Один раз, зимой, я осталась до двух ночи.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: objeción, cálculo, destinatarios y prueba."
+        },
+        "incorrect": {
+          "es": "Fíjate en dónde empieza el cálculo y dónde el episodio de la puerta abierta."
+        },
+        "strategy": {
+          "es": "Un artículo de opinión suele guardar la anécdota probatoria para el final."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 12–15 frases en ruso proponiendo algo para tu ciudad. Usa tres condicionales con бы y cinco impersonales modales distintos."
+    },
+    "minWords": 65,
+    "maxWords": 120,
+    "hints": [
+      "Если бы зал работал всю ночь…",
+      "Нужен был бы один человек.",
+      "В кафе нужно покупать кофе.",
+      "Людям просто негде сидеть."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso B1: una sala de lectura que no cierre | WeLearn"
+    },
+    "description": {
+      "es": "Lee un artículo de opinión en ruso B1 y practica el condicional con бы y los impersonales modales. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/b1/lectura/chitalnyy-zal-kotoryy-ne-zakryvaetsya",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-b1-on-govoril-chto-priedet",
+      "ru-b1-chto-ya-sdelayu-v-subbotu"
+    ]
+  }
+}

@@ -221,7 +221,7 @@ export default function MicroExplanation006({ onComplete }: Props) {
               <p style={{ margin: 0, fontSize: 12, color: 'var(--muted-foreground)', lineHeight: 1.5 }}>propone acción juntos</p>
             </div>
             <div style={{ padding: '10px 12px', background: 'rgba(108,99,255,0.08)' }}>
-              <p style={{ margin: '0 0 4px', fontSize: 15, fontWeight: 800, color: '#6c63ff', fontFamily: '"Noto Sans KR",sans-serif' }}>어때요?</p>
+              <p style={{ margin: '0 0 4px', fontSize: 15, fontWeight: 800, color: 'var(--wl-on-panel-link, #6c63ff)', fontFamily: '"Noto Sans KR",sans-serif' }}>어때요?</p>
               <p style={{ margin: 0, fontSize: 12, color: 'var(--muted-foreground)', lineHeight: 1.5 }}>pide tu opinión</p>
             </div>
           </div>
@@ -238,7 +238,7 @@ export default function MicroExplanation006({ onComplete }: Props) {
         style={{
           padding: '14px', borderRadius: 14, cursor: 'pointer', width: '100%',
           background: 'rgba(108,99,255,0.13)', border: '1px solid rgba(108,99,255,0.38)',
-          fontSize: 14, fontWeight: 800, color: '#6c63ff',
+          fontSize: 14, fontWeight: 800, color: 'var(--wl-on-panel-link, #6c63ff)',
           animation: 'me4-in 0.4s 0.3s ease both',
         }}
       >

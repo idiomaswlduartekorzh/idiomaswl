@@ -123,7 +123,7 @@ export default function AnimatedBlock({
         </div>
         {/* vowel cell — beside consonant */}
         <div style={cellStyle(2, { x: 20, y: 0 }, vowel, 'rgba(5,150,105,0.1)')}>
-          {visible(2) ? <span style={{ color: '#059669' }}>{vowel}</span> : ''}
+          {visible(2) ? <span style={{ color: 'var(--wl-on-panel-ok, #059669)' }}>{vowel}</span> : ''}
         </div>
       </div>
 
@@ -131,7 +131,7 @@ export default function AnimatedBlock({
       {batchim && (
         <div style={{ display: 'flex', gap: 4 }}>
           <div style={{ ...cellStyle(3, { x: 0, y: 20 }, batchim, 'rgba(220,38,38,0.08)'), borderColor: visible(3) ? '#dc2626' : 'var(--line-soft)' }}>
-            {visible(3) ? <span style={{ color: '#dc2626' }}>{batchim}</span> : ''}
+            {visible(3) ? <span style={{ color: 'var(--wl-on-panel-alert, #dc2626)' }}>{batchim}</span> : ''}
           </div>
           <div style={{ width: s.cell, height: s.cell }} /> {/* spacer */}
         </div>

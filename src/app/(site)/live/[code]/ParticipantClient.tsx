@@ -148,7 +148,7 @@ export default function ParticipantClient({ session, set }: Props) {
           </div>
           {error && <p style={{ color: 'var(--accent)', fontSize: 13, margin: 0 }}>{error}</p>}
           <button onClick={handleJoin} disabled={joining}
-            style={{ padding: '12px', borderRadius: 10, border: 'none', background: 'var(--ink)', color: '#fff', fontSize: 15, fontWeight: 700, cursor: 'pointer', opacity: joining ? 0.6 : 1 }}>
+            style={{ padding: '12px', borderRadius: 10, border: 'none', background: 'var(--ink-bg)', color: '#fff', fontSize: 15, fontWeight: 700, cursor: 'pointer', opacity: joining ? 0.6 : 1 }}>
             {joining ? 'Entrando...' : '✓ Entrar al quiz'}
           </button>
         </div>
@@ -193,7 +193,7 @@ export default function ParticipantClient({ session, set }: Props) {
               {pct >= 70 ? '🔥 Nivel TOPIK-I — ¡Excelente!' : pct >= 40 ? '📚 Buen avance — sigue practicando' : '💪 Empieza por los fundamentos'}
             </p>
           </div>
-          <a href="/clases-de-coreano" style={{ display: 'block', width: '100%', padding: '12px', borderRadius: 10, background: 'var(--ink)', color: '#fff', textAlign: 'center', textDecoration: 'none', fontWeight: 700, fontSize: 15, boxSizing: 'border-box' }}>
+          <a href="/clases-de-coreano" style={{ display: 'block', width: '100%', padding: '12px', borderRadius: 10, background: 'var(--ink-bg)', color: '#fff', textAlign: 'center', textDecoration: 'none', fontWeight: 700, fontSize: 15, boxSizing: 'border-box' }}>
             Ver clases de coreano →
           </a>
         </div>

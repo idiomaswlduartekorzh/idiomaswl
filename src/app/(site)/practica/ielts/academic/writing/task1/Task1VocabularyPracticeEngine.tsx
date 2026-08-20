@@ -150,7 +150,7 @@ export default function Task1VocabularyPracticeEngine() {
       <div style={{ padding: '0.75rem', background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 8, marginBottom: '1rem' }}>
         <Visual variant={index + level - 1} />
       </div>
-      <p style={{ margin: '0 0 0.3rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 800, textTransform: 'uppercase' }}>
+      <p style={{ margin: '0 0 0.3rem', color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 800, textTransform: 'uppercase' }}>
         {question.title} · {index + 1}/{items.length}
       </p>
       <h3 style={{ margin: '0 0 0.9rem', fontSize: '1rem', lineHeight: 1.5 }}>{question.prompt}</h3>

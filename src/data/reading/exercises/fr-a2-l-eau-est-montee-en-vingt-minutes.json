@@ -1,0 +1,468 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-a2-l-eau-est-montee-en-vingt-minutes",
+  "status": "published",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Francés A2"
+  },
+  "slug": "l-eau-est-montee-en-vingt-minutes",
+  "series": {
+    "id": "frances-a2-lectura-10",
+    "episode": 10,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-a2-reunion-des-voisins",
+    "nextExerciseId": null
+  },
+  "classification": {
+    "genre": "noticia local",
+    "topic": "una inundación",
+    "intent": "learning",
+    "tags": [
+      "frances a2",
+      "lectura",
+      "causa y consecuencia",
+      "concordancia del participio"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El agua subió en veinte minutos"
+    },
+    "intro": {
+      "es": "Veinte minutos, sesenta centímetros y una alarma que se oyó porque alguien la había probado el mes anterior. Lectura de francés A2."
+    },
+    "mission": {
+      "es": "Reconstruye la cadena de causas: qué provocó qué, y qué evitó lo peor."
+    },
+    "targetText": "Jeudi soir, l’eau est montée de soixante centimètres en vingt minutes dans le bas du village. Il n’y a aucun blessé. La cause n’est pas seulement la pluie: c’est le ruisseau des Aulnes, dont le lit était bouché par des branches depuis l’automne. À cause de ce bouchon, l’eau n’a pas pu s’écouler et elle est passée par la rue de la Poste. Douze maisons ont été touchées. Les habitants les ont quittées en quelques minutes, parce que la sirène s’est déclenchée à temps. Cette sirène, la mairie l’avait testée en avril, et l’essai avait montré qu’elle ne s’entendait pas dans deux rues. On a donc ajouté un haut-parleur rue de la Poste. C’est précisément là que l’eau est arrivée jeudi. Les pompiers sont restés jusqu’à trois heures du matin. Ils ont pompé l’eau de sept caves et ils ont vérifié un par un les compteurs électriques de chaque maison touchée avant de partir. Le maire a annoncé que le ruisseau serait nettoyé chaque automne, et non tous les trois ans. Une habitante, dont la cave a été inondée deux fois en cinq ans, a résumé la situation en une phrase: «On savait tous que ça arriverait. On ne savait pas quand.»",
+    "wordCount": 202,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Encadenar causa y consecuencia: parce que, à cause de, donc."
+      },
+      {
+        "es": "Aplicar la concordancia del participio pasado con el complemento directo antepuesto."
+      },
+      {
+        "es": "Reconstruir una cadena de hechos a partir de una noticia breve."
+      }
+    ],
+    "grammarFocus": [
+      "cause-consequence",
+      "accord-participe-passe",
+      "prepositions-temps"
+    ],
+    "vocabulary": [
+      {
+        "surface": "ruisseau",
+        "lemma": "ruisseau",
+        "glosses": {
+          "es": "arroyo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "lit",
+        "lemma": "lit",
+        "glosses": {
+          "es": "cauce (de un río). También significa «cama»"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "bouché",
+        "lemma": "boucher",
+        "glosses": {
+          "es": "obstruido, taponado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "s’écouler",
+        "lemma": "s’écouler",
+        "glosses": {
+          "es": "correr, fluir (el agua)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sirène",
+        "lemma": "sirène",
+        "glosses": {
+          "es": "sirena de alarma"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "essai",
+        "lemma": "essai",
+        "glosses": {
+          "es": "prueba, ensayo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "haut-parleur",
+        "lemma": "haut-parleur",
+        "glosses": {
+          "es": "altavoz"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cave",
+        "lemma": "cave",
+        "glosses": {
+          "es": "sótano, bodega. ¡No es «cueva»!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Los pueblos del sur de Francia conviven con las crecidas súbitas de arroyos pequeños. Limpiar el cauce es una competencia municipal, y su periodicidad es un asunto político real."
+    },
+    "spanishSpeakerNote": {
+      "es": "La concordancia del participio: «Les habitants les ont quittées» lleva -es porque el complemento directo («les», las casas, femenino plural) va delante del verbo. Si va detrás, no concuerda. Es una regla que el español no tiene."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo sobre hechos pasados y planes futuros, distinguir quién dice qué, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers",
+      "accord-participe-passe",
+      "cause-consequence",
+      "comparatifs",
+      "conditionnel-present",
+      "connecteurs",
+      "discours-indirect",
+      "dont-relatif",
+      "futur-simple",
+      "gerondif",
+      "imparfait",
+      "negation-avancee",
+      "passe-compose-avoir",
+      "passe-compose-etre",
+      "passe-compose-vs-imparfait",
+      "pronoms-coi",
+      "pronoms-y-en",
+      "si-conditionnel",
+      "subjonctif-present",
+      "superlatifs",
+      "verbes-pronominaux"
+    ],
+    "disallowedGrammar": [
+      "plus-que-parfait",
+      "voix passive",
+      "participe présent",
+      "futur antérieur"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 14.4,
+      "maxSentenceWords": 26,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Pasado narrativo (passé composé e imparfait) permitido. Sin plus-que-parfait ni voz pasiva. Inferencia ligera: unir dos datos separados por varios párrafos."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué explica la noticia además de contar la inundación?",
+      "options": [
+        {
+          "id": "prevision",
+          "text": "Que una prueba hecha meses antes evitó que hubiera heridos"
+        },
+        {
+          "id": "culpa",
+          "text": "Que los vecinos son culpables de no limpiar el arroyo"
+        },
+        {
+          "id": "lluvia",
+          "text": "Que la lluvia de aquel jueves fue la más fuerte del siglo"
+        }
+      ],
+      "answer": "prevision",
+      "evidence": "la mairie l’avait testée en avril … On a donc ajouté un haut-parleur rue de la Poste. C’est précisément là que l’eau est arrivée jeudi.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y es la mejor parte de la noticia: el altavoz se puso justo en la calle que se inundó."
+        },
+        "incorrect": {
+          "es": "La noticia no culpa a los vecinos ni dice que la lluvia fuera excepcional. Al contrario: señala el cauce obstruido."
+        },
+        "strategy": {
+          "es": "Cuando una noticia dedica un párrafo a algo anterior al suceso, ese párrafo suele contener su verdadero interés."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántas casas resultaron afectadas?",
+      "options": [
+        {
+          "id": "doce",
+          "text": "Doce"
+        },
+        {
+          "id": "dos",
+          "text": "Dos"
+        },
+        {
+          "id": "sesenta",
+          "text": "Sesenta"
+        }
+      ],
+      "answer": "doce",
+      "evidence": "Douze maisons ont été touchées.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El dos son las calles donde no se oía la sirena, y sesenta son los centímetros que subió el agua."
+        },
+        "incorrect": {
+          "es": "En la noticia hay varias cifras y cada una mide algo distinto. Busca la que acompaña a «maisons»."
+        },
+        "strategy": {
+          "es": "En una noticia con muchos números, empareja cada cifra con su sustantivo antes de responder."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto habla del arroyo «dont le lit était bouché». ¿Qué es aquí «le lit»?",
+      "options": [
+        {
+          "id": "cauce",
+          "text": "El cauce por donde corre el agua"
+        },
+        {
+          "id": "cama",
+          "text": "Una cama"
+        },
+        {
+          "id": "puente",
+          "text": "El puente que lo cruza"
+        }
+      ],
+      "answer": "cauce",
+      "evidence": "le ruisseau des Aulnes, dont le lit était bouché par des branches",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. «Lit» significa cama, pero aplicado a un río es el cauce. El contexto manda sobre el diccionario."
+        },
+        "incorrect": {
+          "es": "Se está hablando de un arroyo obstruido por ramas. Una cama no se obstruye con ramas."
+        },
+        "strategy": {
+          "es": "Una palabra corriente puede tener un sentido técnico. Si el sentido común no encaja, busca el especializado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Qué quiere decir la vecina con «On savait tous que ça arriverait. On ne savait pas quand»?",
+      "options": [
+        {
+          "id": "anunciado",
+          "text": "Que el riesgo era conocido y aun así no se actuó antes"
+        },
+        {
+          "id": "sorpresa",
+          "text": "Que nadie podía haber previsto una crecida así"
+        },
+        {
+          "id": "mudanza",
+          "text": "Que va a mudarse del pueblo después de lo ocurrido"
+        }
+      ],
+      "answer": "anunciado",
+      "evidence": "Une habitante, dont la cave a été inondée deux fois en cinq ans",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Su sótano ya se había inundado dos veces en cinco años: para ella no era una sorpresa, era una espera."
+        },
+        "incorrect": {
+          "es": "Dice justo lo contrario de que fuera imprevisible: «on savait tous», todos lo sabíamos. Y no menciona mudarse."
+        },
+        "strategy": {
+          "es": "Antes de interpretar una cita, mira cómo presenta el texto a quien la dice. Ahí suele estar la clave de su sentido."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: a partir de ahora el arroyo se limpiará cada tres años, como hasta ahora.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "le ruisseau serait nettoyé chaque automne, et non tous les trois ans",
+      "feedback": {
+        "correct": {
+          "es": "Falso: pasa a limpiarse cada otoño. Los tres años son justamente lo que se abandona."
+        },
+        "incorrect": {
+          "es": "La frase contiene las dos periodicidades. Fíjate en cuál va detrás de «et non»."
+        },
+        "strategy": {
+          "es": "La fórmula «X, et non Y» contrapone lo nuevo con lo viejo. Lo que va detrás de «non» es lo que se descarta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la cadena de causas que reconstruye la noticia.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "El cauce del arroyo se obstruye con ramas desde el otoño"
+        },
+        {
+          "id": "p2",
+          "text": "La lluvia del jueves no encuentra salida y desborda por la calle"
+        },
+        {
+          "id": "p3",
+          "text": "La sirena y el altavoz avisan a tiempo a los vecinos"
+        },
+        {
+          "id": "p4",
+          "text": "Las doce casas se desalojan en pocos minutos, sin heridos"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "le lit était bouché … À cause de ce bouchon, l’eau n’a pas pu s’écouler … la sirène s’est déclenchée à temps … Les habitants les ont quittées en quelques minutes",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La noticia va marcando los eslabones con «à cause de», «parce que» y «donc»."
+        },
+        "incorrect": {
+          "es": "Guíate por los conectores de causa: «à cause de ce bouchon» te dice qué fue antes y qué después."
+        },
+        "strategy": {
+          "es": "Para reconstruir una cadena causal, subraya los conectores. Ellos ordenan los hechos aunque el texto los cuente salteados."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Cuenta en 6–8 frases en francés un suceso ocurrido en tu ciudad. Explica la causa y la consecuencia usando «parce que», «à cause de» y «donc»."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "Jeudi soir,…",
+      "La cause n’est pas seulement…",
+      "À cause de…",
+      "On a donc…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés A2: El agua subió en veinte minutos | WeLearn"
+    },
+    "description": {
+      "es": "Lee una noticia local en francés A2 y practica la causa y la consecuencia (parce que, donc, à cause de) y la concordancia del participio pasado."
+    },
+    "canonicalPath": "/practica/frances/a2/lectura/l-eau-est-montee-en-vingt-minutes",
+    "indexable": true,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-a2-reunion-des-voisins"
+    ]
+  }
+}

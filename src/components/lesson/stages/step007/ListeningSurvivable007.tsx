@@ -114,7 +114,7 @@ export default function ListeningSurvivable007({ onComplete }: Props) {
   /* ── INTRO ──────────────────────────────────────────────────────────────── */
   if (phase === 'intro') return (
     <section style={{ maxWidth:640, margin:'0 auto', padding:'2rem 1rem' }}>
-      <p style={{ margin:'0 0 6px', fontSize:10, letterSpacing:'0.12em', textTransform:'uppercase', color:'#6c63ff', fontWeight:700 }}>
+      <p style={{ margin:'0 0 6px', fontSize:10, letterSpacing:'0.12em', textTransform:'uppercase', color:'var(--wl-on-panel-link, #6c63ff)', fontWeight:700 }}>
         ETAPA 04 DE 11
       </p>
       <h3 style={{ margin:'0 0 10px', fontSize:22, fontWeight:700, color:'var(--foreground)' }}>
@@ -126,7 +126,7 @@ export default function ListeningSurvivable007({ onComplete }: Props) {
 
       {/* Timestamp preview */}
       <div style={{ background:'rgba(108,99,255,0.04)', border:'1px solid rgba(108,99,255,0.15)', borderRadius:12, padding:'14px 16px', marginBottom:16 }}>
-        <p style={{ margin:'0 0 10px', fontSize:11, fontWeight:700, letterSpacing:'0.08em', textTransform:'uppercase', color:'#6c63ff' }}>
+        <p style={{ margin:'0 0 10px', fontSize:11, fontWeight:700, letterSpacing:'0.08em', textTransform:'uppercase', color:'var(--wl-on-panel-link, #6c63ff)' }}>
           Momentos clave
         </p>
         <div style={{ display:'flex', flexDirection:'column', gap:6 }}>
@@ -141,7 +141,7 @@ export default function ListeningSurvivable007({ onComplete }: Props) {
 
       {/* Mission */}
       <div style={{ background:'rgba(108,99,255,0.05)', border:'1px solid rgba(108,99,255,0.18)', borderRadius:12, padding:'16px 20px', marginBottom:24 }}>
-        <p style={{ margin:'0 0 12px', fontSize:11, fontWeight:700, letterSpacing:'0.08em', textTransform:'uppercase', color:'#6c63ff' }}>
+        <p style={{ margin:'0 0 12px', fontSize:11, fontWeight:700, letterSpacing:'0.08em', textTransform:'uppercase', color:'var(--wl-on-panel-link, #6c63ff)' }}>
           Tu misión: mientras miras, identifica...
         </p>
         <ol style={{ margin:0, paddingLeft:20, display:'flex', flexDirection:'column', gap:6 }}>
@@ -285,7 +285,7 @@ export default function ListeningSurvivable007({ onComplete }: Props) {
   /* ── QUESTIONS ───────────────────────────────────────────────────────────── */
   if (phase === 'questions') return (
     <section style={{ maxWidth:640, margin:'0 auto', padding:'1rem 0' }}>
-      <p style={{ margin:'0 0 6px', fontSize:11, fontWeight:700, letterSpacing:'0.08em', textTransform:'uppercase', color:'#6c63ff' }}>
+      <p style={{ margin:'0 0 6px', fontSize:11, fontWeight:700, letterSpacing:'0.08em', textTransform:'uppercase', color:'var(--wl-on-panel-link, #6c63ff)' }}>
         Tu misión
       </p>
       <p style={{ margin:'0 0 20px', fontSize:13, color:'var(--muted-foreground)' }}>
@@ -296,7 +296,7 @@ export default function ListeningSurvivable007({ onComplete }: Props) {
         <span style={{ fontSize:20 }}>🎧</span>
         <p style={{ margin:0, fontSize:12, color:'var(--muted-foreground)', flex:1 }}>¿Quieres verlo otra vez?</p>
         <button type="button" onClick={() => setPhase('listening')}
-          style={{ fontSize:12, color:'#6c63ff', background:'none', border:'none', cursor:'pointer', textDecoration:'underline' }}>
+          style={{ fontSize:12, color:'var(--wl-on-panel-link, #6c63ff)', background:'none', border:'none', cursor:'pointer', textDecoration:'underline' }}>
           Ver de nuevo
         </button>
       </div>
@@ -357,7 +357,7 @@ export default function ListeningSurvivable007({ onComplete }: Props) {
                   <p style={{ margin:0, fontSize:12, color:'var(--muted-foreground)' }}>{phrase.es}</p>
                 </div>
                 <button type="button" onClick={() => playAudio(phrase.audio)}
-                  style={{ flexShrink:0, width:32, height:32, borderRadius:'50%', background:'rgba(108,99,255,0.08)', border:'1px solid rgba(108,99,255,0.2)', color:'#6c63ff', fontSize:14, cursor:'pointer', display:'flex', alignItems:'center', justifyContent:'center' }}>
+                  style={{ flexShrink:0, width:32, height:32, borderRadius:'50%', background:'rgba(108,99,255,0.08)', border:'1px solid rgba(108,99,255,0.2)', color:'var(--wl-on-panel-link, #6c63ff)', fontSize:14, cursor:'pointer', display:'flex', alignItems:'center', justifyContent:'center' }}>
                   🔊
                 </button>
               </div>

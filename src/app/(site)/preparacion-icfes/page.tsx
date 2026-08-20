@@ -136,10 +136,10 @@ const TIPS = [
 // Son cuatro niveles y B1 es el techo: el examen NO reporta B2, C1 ni C2, y ya no
 // existen las etiquetas "A−" ni "B+" que circulan en mucho contenido desactualizado.
 const SCORES = [
-  { level: 'PreA1', label: 'Pre A1', pts: '0–36',   color: '#dc2626', desc: 'Por debajo del primer nivel del MCER. Necesita preparación desde la base.' },
-  { level: 'A1',    label: 'Nivel A1', pts: '37–57', color: '#ea580c', desc: 'Básico. Comprende frases y avisos muy simples.' },
-  { level: 'A2',    label: 'Nivel A2', pts: '58–70', color: '#d97706', desc: 'Pre-intermedio. Donde se ubica buena parte de los estudiantes.' },
-  { level: 'B1',    label: 'Nivel B1', pts: '71–100', color: '#16a34a', desc: 'Intermedio. Es el nivel más alto que reporta el examen.' },
+  { level: 'PreA1', label: 'Pre A1', pts: '0–36',   color: 'var(--wl-on-panel-alert, #dc2626)', desc: 'Por debajo del primer nivel del MCER. Necesita preparación desde la base.' },
+  { level: 'A1',    label: 'Nivel A1', pts: '37–57', color: 'var(--wl-on-panel-warn, #ea580c)', desc: 'Básico. Comprende frases y avisos muy simples.' },
+  { level: 'A2',    label: 'Nivel A2', pts: '58–70', color: 'var(--wl-on-panel-warn, #d97706)', desc: 'Pre-intermedio. Donde se ubica buena parte de los estudiantes.' },
+  { level: 'B1',    label: 'Nivel B1', pts: '71–100', color: 'var(--wl-on-panel-ok, #16a34a)', desc: 'Intermedio. Es el nivel más alto que reporta el examen.' },
 ];
 
 const FAQS = [
@@ -333,7 +333,7 @@ export default function PreparacionICFESPage() {
           <div className={s.wrap}>
             <div style={{ background: 'linear-gradient(135deg, #0f3d8c12 0%, #0f3d8c06 100%)', border: '2px solid #0f3d8c30', borderRadius: 20, padding: '2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1.5rem', flexWrap: 'wrap' }}>
               <div>
-                <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', background: '#0f3d8c18', border: '1px solid #0f3d8c30', borderRadius: 8, padding: '0.2rem 0.7rem', fontSize: '0.72rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.7rem' }}>
+                <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', background: '#0f3d8c18', border: '1px solid #0f3d8c30', borderRadius: 8, padding: '0.2rem 0.7rem', fontSize: '0.72rem', fontWeight: 800, color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.7rem' }}>
                   Gratis · Sin registro
                 </div>
                 <h3 style={{ margin: '0 0 0.4rem', fontSize: '1.3rem', fontWeight: 800, color: 'var(--ink)' }}>
@@ -401,12 +401,12 @@ export default function PreparacionICFESPage() {
             <h2 className={s.h2}>Guías gratuitas para el ICFES inglés</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1rem', marginTop: '1.5rem' }}>
               {[
-                { cat: 'ICFES', color: '#0f7c3e', title: 'Puntaje inglés ICFES Saber 11: qué significan los niveles y cómo subir tu puntaje', slug: 'icfes-saber-11-niveles-ingles-guia-completa' },
-                { cat: 'Inglés', color: '#1a4fcc', title: 'Niveles A1–C2: qué significa cada nivel y para qué sirve', slug: 'niveles-de-ingles-a1-a2-b1-b2-c1-c2' },
-                { cat: 'Método', color: '#c87941', title: '¿Cuánto cuesta aprender inglés en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-ingles-colombia-2026' },
-                { cat: 'ICFES', color: '#0f7c3e', title: 'Plan de estudio inglés ICFES en 3 meses: semana a semana', slug: 'icfes-ingles-plan-estudio-3-meses' },
-                { cat: 'ICFES', color: '#0f7c3e', title: 'Vocabulario inglés ICFES: las 200 palabras más frecuentes en Saber 11', slug: 'icfes-vocabulario-ingles-palabras-mas-frecuentes' },
-                { cat: 'Método', color: '#c87941', title: 'Inmersión en casa: cómo crear un ambiente de idioma sin viajar', slug: 'aprender-idiomas-tecnica-inmersion-en-casa' },
+                { cat: 'ICFES', color: 'var(--wl-on-panel-ok, #0f7c3e)', title: 'Puntaje inglés ICFES Saber 11: qué significan los niveles y cómo subir tu puntaje', slug: 'icfes-saber-11-niveles-ingles-guia-completa' },
+                { cat: 'Inglés', color: 'var(--wl-on-panel-link, #1a4fcc)', title: 'Niveles A1–C2: qué significa cada nivel y para qué sirve', slug: 'niveles-de-ingles-a1-a2-b1-b2-c1-c2' },
+                { cat: 'Método', color: 'var(--wl-on-panel-warn, #c87941)', title: '¿Cuánto cuesta aprender inglés en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-ingles-colombia-2026' },
+                { cat: 'ICFES', color: 'var(--wl-on-panel-ok, #0f7c3e)', title: 'Plan de estudio inglés ICFES en 3 meses: semana a semana', slug: 'icfes-ingles-plan-estudio-3-meses' },
+                { cat: 'ICFES', color: 'var(--wl-on-panel-ok, #0f7c3e)', title: 'Vocabulario inglés ICFES: las 200 palabras más frecuentes en Saber 11', slug: 'icfes-vocabulario-ingles-palabras-mas-frecuentes' },
+                { cat: 'Método', color: 'var(--wl-on-panel-warn, #c87941)', title: 'Inmersión en casa: cómo crear un ambiente de idioma sin viajar', slug: 'aprender-idiomas-tecnica-inmersion-en-casa' },
               ].map(a => (
                 <Link key={a.slug} href={`/blog/${a.slug}`} style={{ display: 'block', padding: '1rem 1.1rem', borderRadius: 10, border: '1px solid var(--line-soft)', background: 'var(--bg)', textDecoration: 'none' }}>
                   <span style={{ display: 'inline-block', fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: a.color, background: a.color + '18', padding: '2px 8px', borderRadius: 100, marginBottom: '0.55rem' }}>{a.cat}</span>

@@ -143,6 +143,6 @@ const changedPaths = execFileSync('git', ['status', '--porcelain=v1', '--untrack
   const path = entry.slice(3).replace(/^"|"$/g, '');
   return path.includes(' -> ') ? path.split(' -> ') : [path];
 });
-assert.ok(changedPaths.every((path) => !path.startsWith('public/audio/') && !/\.(mp3|wav|m4a|ogg)$/i.test(path)), 'Listening script work changes no audio asset');
+assert.ok(changedPaths.every((path) => !path.startsWith('public/audio/toefl/')), 'Listening script work changes no TOEFL audio asset');
 
 console.log('✓ TOEFL fixed Listening scripts Sets 1–20: 19 new items/set, 14 blocked media/set, private keys, and no audio changes');

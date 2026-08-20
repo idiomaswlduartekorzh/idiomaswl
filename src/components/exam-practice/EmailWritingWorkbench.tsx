@@ -180,7 +180,7 @@ export default function EmailWritingWorkbench({
         </div>
 
         {completed === prompt.checklist.length && words >= 70 && (
-          <div style={{ display: 'grid', gridTemplateColumns: '24px 1fr', gap: '0.55rem', alignItems: 'start', color: '#047857', background: 'rgba(5,150,105,0.08)', borderRadius: 12, padding: '0.75rem', lineHeight: 1.55 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '24px 1fr', gap: '0.55rem', alignItems: 'start', color: 'var(--wl-on-panel-ok, #047857)', background: 'rgba(5,150,105,0.08)', borderRadius: 12, padding: '0.75rem', lineHeight: 1.55 }}>
             <CheckCircle2 size={18} />
             <span>
               Tu email cubre los elementos esenciales. Ahora revisa si el tono coincide con el destinatario y si cada oración ayuda a resolver la situación.

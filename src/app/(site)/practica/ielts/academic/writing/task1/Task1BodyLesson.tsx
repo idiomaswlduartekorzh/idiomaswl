@@ -115,12 +115,12 @@ export default function Task1BodyLesson({ body }: { body: Body }) {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '1.15rem', alignItems: 'start' }}>
               <div style={{ padding: '0.65rem', borderRadius: 8, border: '1px solid var(--line-soft)', background: 'var(--bg-2)', overflow: 'hidden' }}><Chart variant={lesson.variant} /></div>
               <div>
-                <p style={{ margin: '0 0 0.55rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.76rem', fontWeight: 900 }}>{lesson.label.toUpperCase()} · GUIDED EXAMPLE</p>
+                <p style={{ margin: '0 0 0.55rem', color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)', fontSize: '0.76rem', fontWeight: 900 }}>{lesson.label.toUpperCase()} · GUIDED EXAMPLE</p>
                 <p style={{ margin: '0 0 0.75rem', color: 'var(--ink)', lineHeight: 1.55, fontStyle: 'italic' }}>&ldquo;{lesson.prompt}&rdquo;</p>
                 <h3 style={{ margin: '0 0 0.35rem', fontSize: '1rem' }}>Paragraph job</h3><p style={{ margin: '0 0 0.7rem', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.88rem' }}>{lesson.job}</p>
                 <h3 style={{ margin: '0 0 0.35rem', fontSize: '1rem' }}>Grouping decision</h3><p style={{ margin: '0 0 0.7rem', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.88rem' }}>{lesson.grouping}</p>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.38rem', marginBottom: '0.8rem' }}>{lesson.lego.map((block) => <span key={block} style={{ padding: '0.28rem 0.5rem', borderRadius: 999, border: '1px solid rgba(15,61,140,0.22)', color: '#0f3d8c', background: 'rgba(15,61,140,0.05)', fontSize: '0.74rem', lineHeight: 1.35 }}>{block}</span>)}</div>
-                <div style={{ padding: '0.8rem', borderRadius: 8, background: 'rgba(5,150,105,0.06)', border: '1px solid rgba(5,150,105,0.23)' }}><strong style={{ color: '#047857', fontSize: '0.76rem', fontFamily: 'var(--mono)' }}>MODEL BODY {body}</strong><p style={{ margin: '0.35rem 0 0', color: 'var(--ink)', lineHeight: 1.65 }}>{lesson.model}</p></div>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.38rem', marginBottom: '0.8rem' }}>{lesson.lego.map((block) => <span key={block} style={{ padding: '0.28rem 0.5rem', borderRadius: 999, border: '1px solid rgba(15,61,140,0.22)', color: 'var(--wl-on-panel-link, #0f3d8c)', background: 'rgba(15,61,140,0.05)', fontSize: '0.74rem', lineHeight: 1.35 }}>{block}</span>)}</div>
+                <div style={{ padding: '0.8rem', borderRadius: 8, background: 'rgba(5,150,105,0.06)', border: '1px solid rgba(5,150,105,0.23)' }}><strong style={{ color: 'var(--wl-on-panel-ok, #047857)', fontSize: '0.76rem', fontFamily: 'var(--mono)' }}>MODEL BODY {body}</strong><p style={{ margin: '0.35rem 0 0', color: 'var(--ink)', lineHeight: 1.65 }}>{lesson.model}</p></div>
               </div>
             </div>
           </article>

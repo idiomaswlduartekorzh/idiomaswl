@@ -1,0 +1,481 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-a2-jega-han-silsu",
+  "status": "published",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Coreano A2",
+    "topik": 2,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. A2 se sitúa alrededor del TOPIK I nivel 2, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "jega-han-silsu",
+  "series": {
+    "id": "coreano-a2-lectura-10",
+    "episode": 1,
+    "totalEpisodes": 10,
+    "previousExerciseId": null,
+    "nextExerciseId": "ko-a2-yeohaeng-gyehoek"
+  },
+  "classification": {
+    "genre": "relato de trabajo",
+    "topic": "un correo enviado a quien no debía",
+    "intent": "learning",
+    "tags": [
+      "coreano a2",
+      "lectura",
+      "pasado irregular",
+      "negación 지 않다"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El error que cometí"
+    },
+    "intro": {
+      "es": "Un correo con precios enviado al cliente equivocado, y un jefe que no grita. Lectura de coreano A2 con los verbos irregulares en pasado."
+    },
+    "mission": {
+      "es": "Averigua qué le costó más al narrador, y qué le dijo su jefe al final del día."
+    },
+    "targetText": "작년에 저는 회사에서 큰 실수를 했어요. 한 고객에게 보낼 이메일을 다른 고객에게 보냈어요. 그 이메일에는 가격이 있었어요. 두 고객은 같은 물건을 사요. 하지만 가격이 달랐어요. 저는 삼십 분 동안 몰랐어요. 그다음에 전화가 왔어요. 저는 팀장님의 목소리를 들었어요. 팀장님은 화를 내지 않았어요. 조용히 물었어요. 무슨 일이 있었어요? 저는 다 말했어요. 숨기지 않았어요. 그게 제일 어려웠어요. 팀장님은 저를 도왔어요. 우리는 같이 고객에게 전화했어요. 팀장님이 먼저 말했어요. 회사의 실수입니다. 팀장님은 제 이름을 말하지 않았어요. 고객은 화를 냈어요. 삼십 분 동안 화를 냈어요. 고객은 저에게 직접 말하고 싶다고 했어요. 그래서 저는 다시 전화했어요. 저는 준비한 말을 하지 않았어요. 그냥 죄송하다고 말했어요. 고객은 조금 조용해졌어요. 그것으로 끝이었어요. 하지만 계약은 끝나지 않았어요. 그날 저녁에 팀장님이 저에게 말했어요. 실수는 괜찮아요. 숨기는 것은 안 괜찮아요. 저는 그 말을 아직 기억해요.",
+    "wordCount": 122,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Reconocer los irregulares en pasado: 듣다→들었어요, 모르다→몰랐어요, 돕다→도왔어요, 다르다→달랐어요."
+      },
+      {
+        "es": "Negar con 지 않다 y notar que es más formal que 안."
+      },
+      {
+        "es": "Distinguir lo que el narrador hizo de lo que decidió no hacer."
+      }
+    ],
+    "grammarFocus": [
+      "verbos-irregulares-pasado-a2",
+      "negacion-ji-anta-a2",
+      "pasado-asseoyo"
+    ],
+    "vocabulary": [
+      {
+        "surface": "실수",
+        "lemma": "실수",
+        "reading": "silsu",
+        "glosses": {
+          "es": "error, equivocación"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "고객",
+        "lemma": "고객",
+        "reading": "gogaek",
+        "glosses": {
+          "es": "cliente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "가격",
+        "lemma": "가격",
+        "reading": "gagyeok",
+        "glosses": {
+          "es": "precio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "팀장님",
+        "lemma": "팀장님",
+        "reading": "timjangnim",
+        "glosses": {
+          "es": "jefe o jefa de equipo (con 님 de respeto)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "목소리",
+        "lemma": "목소리",
+        "reading": "moksori",
+        "glosses": {
+          "es": "voz"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "숨기지",
+        "lemma": "숨기다",
+        "reading": "sumgiji",
+        "glosses": {
+          "es": "ocultar, esconder"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "계약",
+        "lemma": "계약",
+        "reading": "gyeyak",
+        "glosses": {
+          "es": "contrato"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "기억해요",
+        "lemma": "기억하다",
+        "reading": "gieokhaeyo",
+        "glosses": {
+          "es": "recuerda"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El sufijo 님 marca respeto al cargo: 팀장 es «jefe de equipo» y 팀장님 es cómo se le habla y se le nombra. Omitirlo en una oficina coreana sería una falta clara."
+    },
+    "spanishSpeakerNote": {
+      "es": "Los irregulares coreanos cambian la raíz en pasado: 듣다 (oír) hace 들었어요, no *듣었어요; 돕다 (ayudar) hace 도왔어요. Y 지 않다 es la negación larga: 화를 내지 않았어요 es «no se enfadó», más formal que 안 냈어요."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en coreano sobre hechos pasados y planes, entender quién dice qué en estilo indirecto, y reconocer a quién se trata con respeto."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas",
+      "antes-despues-a2",
+      "capacidad-rl-su-itda-a2",
+      "clausulas-relativas-a2",
+      "condicional-eumyeon-a2",
+      "conector-aseo-a2",
+      "cuanto-eolmana-a2",
+      "discurso-reportado-a2",
+      "durante-neun-dongane-a2",
+      "futuro-rl-geoyeyo-a2",
+      "honorificos-a2",
+      "intencion-ryogo-hada-a2",
+      "negacion-ji-anta-a2",
+      "obligacion-aya-hada-a2",
+      "parecer-neun-geot-gatda-a2",
+      "particulas-recipiente-a2",
+      "progresivo-go-itda-a2",
+      "razon-gittaemune-a2",
+      "razon-niikka-a2",
+      "solo-tambien-man-do-a2",
+      "verbos-irregulares-pasado-a2"
+    ],
+    "disallowedGrammar": [
+      "voz pasiva avanzada",
+      "nominalización compleja",
+      "estilo literario"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 3.8,
+      "maxSentenceWords": 7,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Pasado irregular, cláusulas de relativo y honoríficos permitidos. Sin voz pasiva avanzada ni registro literario. Inferencia ligera."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es la lección del relato?",
+      "options": [
+        {
+          "id": "ocultar",
+          "text": "Que el error se perdona, pero esconderlo no"
+        },
+        {
+          "id": "despido",
+          "text": "Que un error así cuesta el puesto de trabajo"
+        },
+        {
+          "id": "revisar",
+          "text": "Que hay que revisar dos veces cada correo"
+        }
+      ],
+      "answer": "ocultar",
+      "evidence": "실수는 괜찮아요. 숨기는 것은 안 괜찮아요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y es el jefe quien la formula al final del día, en dos frases cortas."
+        },
+        "incorrect": {
+          "es": "Nadie es despedido y el texto no da consejos técnicos. Busca lo que dice el jefe por la noche."
+        },
+        "strategy": {
+          "es": "Cuando un relato acaba con una cita, esa cita suele ser la tesis. Localiza la última frase entre comillas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué hizo el jefe al llamar al cliente?",
+      "options": [
+        {
+          "id": "empresa",
+          "text": "Dijo que el error era de la empresa, sin dar el nombre del narrador"
+        },
+        {
+          "id": "culpar",
+          "text": "Explicó quién había cometido el error"
+        },
+        {
+          "id": "negar",
+          "text": "Negó que hubiera habido un error"
+        }
+      ],
+      "answer": "empresa",
+      "evidence": "회사의 실수입니다. 팀장님은 제 이름을 말하지 않았어요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y las dos frases van seguidas: asume el error como de la empresa y calla el nombre."
+        },
+        "incorrect": {
+          "es": "No niega nada —llaman precisamente para reconocerlo— ni da nombres. Lee las dos frases de la llamada."
+        },
+        "strategy": {
+          "es": "En una escena de dos frases, la segunda suele precisar lo que la primera insinúa. Léelas juntas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El narrador dice 숨기지 않았어요. ¿Qué decidió no hacer?",
+      "options": [
+        {
+          "id": "ocultarlo",
+          "text": "Ocultar lo que había pasado"
+        },
+        {
+          "id": "contestar",
+          "text": "Contestar al teléfono"
+        },
+        {
+          "id": "disculparse",
+          "text": "Disculparse con el cliente"
+        }
+      ],
+      "answer": "ocultarlo",
+      "evidence": "저는 다 말했어요. 숨기지 않았어요. 그게 제일 어려웠어요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Lo dice justo después de 다 말했어요, «lo conté todo»: son las dos caras de la misma decisión."
+        },
+        "incorrect": {
+          "es": "Sí contestó al teléfono y sí llamaron al cliente. Fíjate en la frase anterior: 다 말했어요."
+        },
+        "strategy": {
+          "es": "Una negación suele reforzar la afirmación anterior. Si conoces la primera, deduces la segunda."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice que eso fue lo más difícil?",
+      "options": [
+        {
+          "id": "confesar",
+          "text": "Porque confesarlo todo cuesta más que arreglar el error"
+        },
+        {
+          "id": "idioma",
+          "text": "Porque tuvo que hablar en un idioma que no domina"
+        },
+        {
+          "id": "tiempo",
+          "text": "Porque tardó treinta minutos en darse cuenta"
+        }
+      ],
+      "answer": "confesar",
+      "evidence": "저는 다 말했어요. 숨기지 않았어요. 그게 제일 어려웠어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El 그게 remite a lo inmediatamente anterior: contarlo todo y no esconder nada."
+        },
+        "incorrect": {
+          "es": "Los treinta minutos son otro dato, y no se habla de idiomas. Mira a qué se refiere 그게."
+        },
+        "strategy": {
+          "es": "El demostrativo 그게 («eso») recoge lo dicho justo antes. Retrocede una frase para resolverlo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el cliente se enfadó pero el contrato no se rompió.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "고객은 화를 냈어요 … 하지만 계약은 끝나지 않았어요.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero: se enfadó media hora, y aun así 계약은 끝나지 않았어요, el contrato no terminó."
+        },
+        "incorrect": {
+          "es": "Busca la frase con 하지만 después del enfado del cliente. Ahí está lo que pasó con el contrato."
+        },
+        "strategy": {
+          "es": "El 하지만 introduce lo contrario de lo esperado. Si lo ves después de una mala noticia, viene el matiz."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena lo que pasó ese día.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Envía el correo con los precios al cliente equivocado"
+        },
+        {
+          "id": "p2",
+          "text": "Recibe la llamada del jefe y se lo cuenta todo"
+        },
+        {
+          "id": "p3",
+          "text": "Llaman juntos al cliente y el jefe asume el error"
+        },
+        {
+          "id": "p4",
+          "text": "Por la noche el jefe le dice que esconderlo sería lo grave"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "이메일을 다른 고객에게 보냈어요 … 전화가 왔어요 … 같이 고객에게 전화했어요 … 그날 저녁에 팀장님이 …",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El relato encadena los hechos con marcas de tiempo: 삼십 분 동안, 그다음에, 그날 저녁에."
+        },
+        "incorrect": {
+          "es": "Guíate por 그다음에 y 그날 저녁에. Ordenan el día de principio a fin."
+        },
+        "strategy": {
+          "es": "Busca las marcas temporales antes de ordenar. En un relato de un día son el esqueleto."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en coreano sobre un error que cometiste y cómo lo resolviste. Usa tres verbos irregulares en pasado y dos negaciones con 지 않다."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "작년에 저는 … 실수를 했어요.",
+      "저는 몰랐어요.",
+      "…지 않았어요.",
+      "저는 그 말을 기억해요."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano A2: El error que cometí | WeLearn"
+    },
+    "description": {
+      "es": "Lee un relato en coreano A2 y practica los verbos irregulares en pasado y la negación con 지 않다. Con vocabulario romanizado y seis preguntas."
+    },
+    "canonicalPath": "/practica/coreano/a2/lectura/jega-han-silsu",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-a2-yeohaeng-gyehoek"
+    ]
+  }
+}

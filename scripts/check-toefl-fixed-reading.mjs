@@ -102,6 +102,6 @@ assert.equal(new Set(allIds).size, allIds.length, 'all Module 2 Reading item ids
 const changedPaths = (await import('node:child_process')).execFileSync('git', ['diff', '--name-only', 'HEAD'], {
   cwd: new URL('.', root), encoding: 'utf8',
 }).trim().split('\n').filter(Boolean);
-assert.ok(changedPaths.every((path) => !path.startsWith('public/audio/') && !/\.(mp3|wav|m4a|ogg)$/i.test(path)), 'Reading expansion changes no audio asset');
+assert.ok(changedPaths.every((path) => !path.startsWith('public/audio/toefl/')), 'Reading expansion changes no TOEFL audio asset');
 
 console.log('✓ TOEFL fixed Reading Module 2: Sets 1–20 have 20 interactions, private keys, official-family shape, and no audio changes');

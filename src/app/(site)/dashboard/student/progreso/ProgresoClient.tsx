@@ -50,7 +50,7 @@ export default function ProgresoClient({ name, exams, koreanSteps, activityDays,
               {name} · Resumen de tu actividad en WeLearn
             </p>
           </div>
-          <Link href="/examenes" className="btn btn-sm" style={{ background: 'var(--ink)', color: '#fff', borderColor: 'var(--ink)' }}>
+          <Link href="/examenes" className="btn btn-sm" style={{ background: 'var(--ink-bg)', color: '#fff', borderColor: 'var(--ink-bg)' }}>
             + Nuevo simulacro
           </Link>
         </div>

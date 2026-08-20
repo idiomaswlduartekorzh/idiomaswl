@@ -1,0 +1,271 @@
+/* Lo que es propio de la pantalla de habla y no sube al sistema compartido: la fila de la
+   frase, su número y el cajón de la nota. Todo lo demás —lienzo, migajero, encabezado,
+   pestañas, barra, botones— sale de las primitivas de practica-ui.css.
+
+   Sin hex: los colores se piden a las variables que declara .wlp-page. */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.item {
+  background: var(--wlp-surface);
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r);
+  overflow: hidden;
+}
+
+/* Una frase dominada se marca con el filete lateral, no tiñendo el fondo entero: en oscuro
+   un tinte al 6 % sobre la superficie era indistinguible del resto. */
+.itemDone {
+  border-color: color-mix(in srgb, var(--wlp-accent) 45%, var(--wlp-line));
+  box-shadow: inset 3px 0 0 var(--wlp-accent);
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+}
+
+.num {
+  align-items: center;
+  background: var(--wlp-raised);
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r-sm);
+  color: var(--wlp-muted);
+  display: flex;
+  flex-shrink: 0;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  font-weight: 900;
+  height: 32px;
+  justify-content: center;
+  width: 32px;
+}
+
+.numDone {
+  background: var(--wlp-accent);
+  border-color: var(--wlp-accent);
+  color: var(--wl-canvas);
+}
+
+.body {
+  flex: 1;
+  min-width: 0;
+}
+
+.phrase {
+  color: var(--wlp-ink);
+  font-size: 0.97rem;
+  font-weight: 800;
+  margin-bottom: 0.12rem;
+}
+
+/* La romanización: hangul, romaji o transliteración cirílica. Va antes de la fonética
+   porque es la que se lee para producir el sonido. */
+.script {
+  color: var(--wlp-muted);
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  margin-bottom: 0.08rem;
+}
+
+.phonetic {
+  color: var(--wlp-accent);
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  font-style: italic;
+  margin-bottom: 0.12rem;
+}
+
+.es {
+  color: var(--wlp-muted);
+  font-size: 0.78rem;
+}
+
+.context {
+  color: var(--wlp-accent);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-style: italic;
+  margin-top: 0.12rem;
+}
+
+.actions {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  gap: 0.5rem;
+}
+
+.noteToggle {
+  background: transparent;
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r-sm);
+  color: var(--wlp-muted);
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  padding: 0.2rem 0.55rem;
+}
+
+.markButton {
+  background: transparent;
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r-sm);
+  color: var(--wlp-muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+  white-space: nowrap;
+}
+
+.markButtonDone {
+  background: var(--wlp-accent);
+  border-color: var(--wlp-accent);
+  color: var(--wl-canvas);
+}
+
+.note {
+  background: var(--wlp-raised);
+  border-top: 1px solid var(--wlp-line);
+  padding: 0.7rem 1.25rem 0.85rem 4.5rem;
+}
+
+.noteHeading {
+  color: var(--wlp-accent);
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+
+.note p {
+  color: var(--wlp-muted);
+  font-size: 0.82rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r-sm);
+  color: var(--wlp-muted);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.12rem 0.45rem;
+}
+
+.tagRegister {
+  border-color: color-mix(in srgb, var(--wlp-accent) 34%, transparent);
+  color: var(--wlp-accent);
+}
+
+.progress {
+  align-items: center;
+  display: flex;
+  gap: 0.75rem;
+  margin: 1.5rem 0 1.75rem;
+}
+
+.progressLabel {
+  color: var(--wlp-muted);
+  flex-shrink: 0;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+}
+
+.progressLabelFull {
+  color: var(--wlp-accent);
+}
+
+.tip {
+  background: var(--wlp-raised);
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r);
+  color: var(--wlp-muted);
+  font-size: 0.82rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  padding: 0.85rem 1.1rem;
+}
+
+.tip strong {
+  color: var(--wlp-ink);
+}
+
+.done {
+  background: var(--wlp-tint-ok);
+  border: 1px solid color-mix(in srgb, var(--wlp-ok) 34%, transparent);
+  border-radius: var(--wlp-r);
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  text-align: center;
+}
+
+.done h2 {
+  color: var(--wlp-ok);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.done p {
+  color: var(--wlp-muted);
+  font-size: 0.85rem;
+  margin: 0.3rem 0 0;
+}
+
+/* El cajón de enlaces al cerrar. No usa .wlp-next porque no es una rejilla de tarjetas
+   sino un párrafo con enlaces dentro. */
+.footer {
+  background: var(--wlp-raised);
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r);
+  color: var(--wlp-muted);
+  font-size: 0.84rem;
+  line-height: 1.6;
+  margin-top: 2rem;
+  padding: 1.1rem 1.3rem;
+}
+
+.footer strong {
+  color: var(--wlp-ink);
+}
+
+.footer a {
+  color: var(--wlp-accent);
+  font-weight: 700;
+}
+
+@media (max-width: 560px) {
+  .row {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0.9rem 1rem;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .note {
+    padding-left: 1rem;
+  }
+}

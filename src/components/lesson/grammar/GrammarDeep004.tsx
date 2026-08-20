@@ -20,7 +20,7 @@ export default function GrammarDeep004() {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 14 }}>
           {[
             { title: 'Números NATIVOS', examples: ['하나 (hana) = 1 objeto', '두 개 = 2 cosas', '세 시 = las 3 en punto', '네 명 = 4 personas'], color: accent, when: 'objetos, personas, horas' },
-            { title: 'Números SINO-COREANOS', examples: ['일 (il) = 1 en precios', '천 원 = 1.000 won', '삼십 분 = 30 minutos', '오월 = mayo (mes 5)'], color: '#6c63ff', when: 'precios, fechas, minutos' },
+            { title: 'Números SINO-COREANOS', examples: ['일 (il) = 1 en precios', '천 원 = 1.000 won', '삼십 분 = 30 minutos', '오월 = mayo (mes 5)'], color: 'var(--wl-on-panel-link, #6c63ff)', when: 'precios, fechas, minutos' },
           ].map(s => (
             <div key={s.title} style={{ background: 'var(--bg-2)', border: `2px solid ${s.color}20`, borderRadius: 10, padding: '14px 16px', borderLeft: `3px solid ${s.color}` }}>
               <p style={{ margin: '0 0 4px', fontSize: 12, fontWeight: 800, color: s.color, textTransform: 'uppercase', letterSpacing: '0.08em' }}>{s.title}</p>
@@ -87,8 +87,8 @@ export default function GrammarDeep004() {
                 <p style={{ margin: '0 0 6px', fontSize: 14, fontWeight: 700 }}>{e.title}</p>
                 {e.wrong && (
                   <div style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
-                    <code style={{ fontSize: 13, padding: '3px 10px', background: 'rgba(220,53,69,0.06)', border: '1px solid rgba(220,53,69,0.2)', borderRadius: 6, color: '#dc3545', fontFamily: "'Noto Sans KR',sans-serif" }}>{e.wrong}</code>
-                    <code style={{ fontSize: 13, padding: '3px 10px', background: 'rgba(45,155,78,0.06)', border: '1px solid rgba(45,155,78,0.2)', borderRadius: 6, color: '#2d9b4e', fontFamily: "'Noto Sans KR',sans-serif" }}>{e.right}</code>
+                    <code style={{ fontSize: 13, padding: '3px 10px', background: 'rgba(220,53,69,0.06)', border: '1px solid rgba(220,53,69,0.2)', borderRadius: 6, color: 'var(--wl-on-panel-alert, #dc3545)', fontFamily: "'Noto Sans KR',sans-serif" }}>{e.wrong}</code>
+                    <code style={{ fontSize: 13, padding: '3px 10px', background: 'rgba(45,155,78,0.06)', border: '1px solid rgba(45,155,78,0.2)', borderRadius: 6, color: 'var(--wl-on-panel-ok, #2d9b4e)', fontFamily: "'Noto Sans KR',sans-serif" }}>{e.right}</code>
                   </div>
                 )}
                 <p style={{ margin: 0, fontSize: 12, color: 'var(--muted)', lineHeight: 1.6 }}>{e.why}</p>

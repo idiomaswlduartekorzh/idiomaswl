@@ -42,7 +42,7 @@ export default function Task2OfficialReviewBlock({
         margin: '0 0 1.5rem',
       }}
     >
-      <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: '#fff' }}>
+      <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: 'var(--wl-panel-raised, #fff)' }}>
         <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Official format versus WeLearn strategy</h2>
         <p style={{ margin: '0 0 0.65rem', color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.86rem' }}>
           <strong style={{ color: 'var(--ink)' }}>Official format:</strong> {officialFormat}
@@ -51,7 +51,7 @@ export default function Task2OfficialReviewBlock({
           <strong style={{ color: 'var(--ink)' }}>WeLearn strategy:</strong> {welearnStrategy}
         </p>
       </article>
-      <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: '#f8fafc' }}>
+      <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: 'var(--wl-panel-raised, #f8fafc)' }}>
         <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Answer review</h2>
         <p style={{ margin: '0 0 0.65rem', color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.86rem' }}>
           <strong style={{ color: 'var(--ink)' }}>Review focus:</strong> {focus}
@@ -67,7 +67,7 @@ export default function Task2OfficialReviewBlock({
             style={{
               border: '1px solid var(--line-soft)',
               borderRadius: 999,
-              color: '#0f3d8c',
+              color: 'var(--wl-on-panel-link, #0f3d8c)',
               fontFamily: 'var(--mono)',
               fontSize: '0.72rem',
               fontWeight: 800,
@@ -84,7 +84,7 @@ export default function Task2OfficialReviewBlock({
             style={{
               border: '1px solid var(--line-soft)',
               borderRadius: 999,
-              color: '#0f3d8c',
+              color: 'var(--wl-on-panel-link, #0f3d8c)',
               fontFamily: 'var(--mono)',
               fontSize: '0.72rem',
               fontWeight: 800,
@@ -101,7 +101,7 @@ export default function Task2OfficialReviewBlock({
               style={{
                 border: '1px solid var(--line-soft)',
                 borderRadius: 999,
-                color: '#0f3d8c',
+                color: 'var(--wl-on-panel-link, #0f3d8c)',
                 fontFamily: 'var(--mono)',
                 fontSize: '0.72rem',
                 fontWeight: 800,

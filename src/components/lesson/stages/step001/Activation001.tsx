@@ -47,7 +47,7 @@ const TIMELINE: TimelineItem[] = [
     kr: 'S · O · V',
     title: 'El verbo siempre al final',
     body: 'En coreano el verbo cierra la oración. Siempre. Sin excepciones. No sabes qué está pasando hasta que llega la última palabra. Es la diferencia más importante entre el español y el coreano.',
-    color: '#6c63ff',
+    color: 'var(--wl-on-panel-link, #6c63ff)',
     examples: [
       { kr: '저는 학교에 가요', es: 'Yo · escuela-hacia · voy', lit: 'Sujeto → Objeto → Verbo' },
       { kr: '나는 집에 가요', es: 'Yo · casa-hacia · voy', lit: 'El verbo siempre al final' },
@@ -59,7 +59,7 @@ const TIMELINE: TimelineItem[] = [
     kr: '학교 · 집 · 대학교',
     title: 'Los artículos desaparecen',
     body: 'En coreano no existe "la", "el", "una" ni "un". El sustantivo va solo. El contexto hace el trabajo. No se pierde información — el hablante confía en que el oyente está prestando atención.',
-    color: '#ff6b6b',
+    color: 'var(--wl-on-panel-alert, #ff6b6b)',
     examples: [
       { kr: '학교', es: 'la escuela / una escuela / escuela', lit: 'sin artículo — el contexto decide' },
       { kr: '집', es: 'la casa / mi casa / casa', lit: 'sin artículo ni posesivo' },
@@ -72,7 +72,7 @@ const TIMELINE: TimelineItem[] = [
     rom: 'hak-gyo',
     title: 'Escuela',
     body: 'Una de las primeras palabras del coreano cotidiano. Aparece sola (sin artículo) o con la partícula 에 → 학교에. Se construye con hanja: 학(學) = aprendizaje + 교(校) = institución.',
-    color: '#6c63ff',
+    color: 'var(--wl-on-panel-link, #6c63ff)',
     audioKey: '학교',
     breakdown: [
       { kr: '학', es: 'aprendizaje / educación (hanja 學)' },
@@ -116,7 +116,7 @@ const TIMELINE: TimelineItem[] = [
     rom: 'jeo-neun',
     title: 'Yo (forma formal)',
     body: '저는 es la forma respetuosa de "yo". Se usa con desconocidos, personas mayores y en situaciones formales. La partícula 는 marca el tema de la oración — "en cuanto a mí...". Para extranjeros es la forma segura.',
-    color: '#ff6b6b',
+    color: 'var(--wl-on-panel-alert, #ff6b6b)',
     audioKey: '저는',
     breakdown: [
       { kr: '저', es: 'yo (humilde, formal)' },
@@ -188,7 +188,7 @@ const TIMELINE: TimelineItem[] = [
     rom: 'dae-hak-gyo-e',
     title: 'Hacia la universidad',
     body: 'La misma fórmula que 학교에: [lugar] + 에 = "hacia [lugar]". Ya reconoces el patrón. Cuando el patrón es predecible, el idioma se vuelve automático. Tu cerebro está internalizando el sistema.',
-    color: '#a78bfa',
+    color: 'var(--wl-on-panel-link, #a78bfa)',
     audioKey: '대학교에',
     recycled: '학교에',
     examples: [
@@ -384,7 +384,7 @@ function TimelineCard({
           {cfg.label}
         </span>
         {item.recycled && isLatest && (
-          <span style={{ marginLeft: 'auto', fontSize: 9, fontWeight: 700, background: 'rgba(45,155,78,0.12)', border: '1px solid rgba(45,155,78,0.3)', color: '#2d9b4e', borderRadius: 100, padding: '2px 8px' }}>
+          <span style={{ marginLeft: 'auto', fontSize: 9, fontWeight: 700, background: 'rgba(45,155,78,0.12)', border: '1px solid rgba(45,155,78,0.3)', color: 'var(--wl-on-panel-ok, #2d9b4e)', borderRadius: 100, padding: '2px 8px' }}>
             ♻ reciclado · {item.recycled}
           </span>
         )}
@@ -532,10 +532,10 @@ function DragExercise({
   return (
     <>
       <p style={{ margin: '0 0 10px', fontSize: 13, color: 'var(--ink)', lineHeight: 1.6 }}>{item.question}</p>
-      {item.source && <span style={{ display: 'block', fontSize: 13, fontWeight: 600, color: '#6c63ff', marginBottom: 8 }}>{item.source}</span>}
+      {item.source && <span style={{ display: 'block', fontSize: 13, fontWeight: 600, color: 'var(--wl-on-panel-link, #6c63ff)', marginBottom: 8 }}>{item.source}</span>}
       {item.hint && <p style={{ margin: '0 0 12px', fontSize: 11, color: 'var(--muted)' }}>{item.hint}</p>}
       {item.speak && (
-        <button type="button" onClick={() => playAudio(item.speak!)} style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(108,99,255,0.06)', border: '1px solid rgba(108,99,255,0.2)', borderRadius: 100, padding: '6px 14px', color: '#6c63ff', fontSize: 12, cursor: 'pointer', marginBottom: 14 }}>
+        <button type="button" onClick={() => playAudio(item.speak!)} style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(108,99,255,0.06)', border: '1px solid rgba(108,99,255,0.2)', borderRadius: 100, padding: '6px 14px', color: 'var(--wl-on-panel-link, #6c63ff)', fontSize: 12, cursor: 'pointer', marginBottom: 14 }}>
           🔊 Escuchar frase
         </button>
       )}
@@ -574,7 +574,7 @@ function DragExercise({
         </button>
       </div>
       {isCompleted && (
-        <p style={{ margin: '8px 0 0', textAlign: 'center', fontSize: 12, color: '#2d9b4e', fontWeight: 600 }}>✓ Completado</p>
+        <p style={{ margin: '8px 0 0', textAlign: 'center', fontSize: 12, color: 'var(--wl-on-panel-ok, #2d9b4e)', fontWeight: 600 }}>✓ Completado</p>
       )}
     </>
   );
@@ -693,7 +693,7 @@ export default function Activation001({ onComplete }: Props) {
   if (phase === 'intro') {
     return (
       <section style={{ maxWidth: 560, margin: '0 auto', padding: '2.5rem 1rem' }}>
-        <p style={{ margin: '0 0 6px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6c63ff', fontWeight: 700 }}>
+        <p style={{ margin: '0 0 6px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700 }}>
           ETAPA 01 DE 11 · Activación
         </p>
         <h2 style={{ margin: '0 0 12px', fontSize: 24, fontWeight: 800, color: 'var(--ink)', lineHeight: 1.2 }}>
@@ -704,7 +704,7 @@ export default function Activation001({ onComplete }: Props) {
         </p>
 
         <div style={{ background: 'rgba(108,99,255,0.05)', border: '1px solid rgba(108,99,255,0.18)', borderRadius: 12, padding: '16px 20px', marginBottom: 24 }}>
-          <p style={{ margin: '0 0 10px', fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#6c63ff' }}>Cómo funciona</p>
+          <p style={{ margin: '0 0 10px', fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--wl-on-panel-link, #6c63ff)' }}>Cómo funciona</p>
           <ol style={{ margin: 0, paddingLeft: 18, display: 'flex', flexDirection: 'column', gap: 8 }}>
             {[
               'Escucha el podcast — ~5 minutos de inmersión en coreano real',
@@ -770,7 +770,7 @@ export default function Activation001({ onComplete }: Props) {
                   }} />
                 ))}
               </div>
-              <span style={{ fontFamily: 'var(--mono)', fontSize: 9, color: '#6c63ff', fontWeight: 700, letterSpacing: '0.12em' }}>
+              <span style={{ fontFamily: 'var(--mono)', fontSize: 9, color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700, letterSpacing: '0.12em' }}>
                 PODCAST · STEP 001
               </span>
             </div>
@@ -861,7 +861,7 @@ export default function Activation001({ onComplete }: Props) {
                     EJERCICIO
                   </span>
                   <span style={{ fontSize: 11, fontWeight: 600, color: 'var(--ink)', marginLeft: 4 }}>{ex.title}</span>
-                  {isDone && <span style={{ marginLeft: 'auto', fontSize: 11, color: '#2d9b4e', fontWeight: 700 }}>✓ Completado</span>}
+                  {isDone && <span style={{ marginLeft: 'auto', fontSize: 11, color: 'var(--wl-on-panel-ok, #2d9b4e)', fontWeight: 700 }}>✓ Completado</span>}
                   <span style={{ fontFamily: 'var(--mono)', fontSize: 9, color: 'var(--muted)', marginLeft: isDone ? 0 : 'auto' }}>{fmt(ex.at)}</span>
                 </div>
 
@@ -923,7 +923,7 @@ export default function Activation001({ onComplete }: Props) {
   if (phase === 'questions') {
     return (
       <section style={{ maxWidth: 560, margin: '0 auto', padding: '1.5rem 1rem' }}>
-        <p style={{ margin: '0 0 6px', fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#6c63ff' }}>
+        <p style={{ margin: '0 0 6px', fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--wl-on-panel-link, #6c63ff)' }}>
           Comprensión global
         </p>
         <p style={{ margin: '0 0 20px', fontSize: 13, color: 'var(--muted)', lineHeight: 1.6 }}>
@@ -980,7 +980,7 @@ export default function Activation001({ onComplete }: Props) {
     <section style={{ maxWidth: 520, margin: '0 auto', padding: '3rem 1rem', textAlign: 'center' }}>
       <div style={{ width: 56, height: 56, borderRadius: '50%', background: 'rgba(108,99,255,0.1)', border: '2px solid #6c63ff', margin: '0 auto 16px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 24 }}>✓</div>
       <h3 style={{ margin: '0 0 10px', fontSize: 20, fontWeight: 700, color: 'var(--ink)' }}>Activación completada</h3>
-      <p style={{ margin: '0 0 10px', fontSize: 22, color: '#6c63ff', fontFamily: "'Noto Sans KR', sans-serif" }}>저는 학교에 가요</p>
+      <p style={{ margin: '0 0 10px', fontSize: 22, color: 'var(--wl-on-panel-link, #6c63ff)', fontFamily: "'Noto Sans KR', sans-serif" }}>저는 학교에 가요</p>
       <p style={{ margin: '0 0 28px', fontSize: 12, color: 'var(--muted)' }}>Yo · escuela-hacia · voy — el patrón SOV ya está activo.</p>
       <button type="button" onClick={onComplete} style={{ width: '100%', padding: '14px', background: '#6c63ff', border: 'none', borderRadius: 12, color: '#fff', fontSize: 14, fontWeight: 600, cursor: 'pointer' }}>
         Siguiente etapa →

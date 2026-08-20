@@ -458,7 +458,7 @@ export default function ClasesDeInglesPage() {
               {PAQUETES_HORAS.map(pkg => (
                 <div key={pkg.label} style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: 14, padding: '1.25rem', position: 'relative' }}>
                   {pkg.badge && (
-                    <span style={{ position: 'absolute', top: -10, left: '50%', transform: 'translateX(-50%)', background: '#fff', color: 'var(--accent)', fontSize: '0.68rem', fontWeight: 700, padding: '0.18rem 0.75rem', borderRadius: 20, whiteSpace: 'nowrap' }}>
+                    <span className="wl-action-on-light" style={{ position: 'absolute', top: -10, left: '50%', transform: 'translateX(-50%)', background: '#fff', color: 'var(--accent)', fontSize: '0.68rem', fontWeight: 700, padding: '0.18rem 0.75rem', borderRadius: 20, whiteSpace: 'nowrap' }}>
                       {pkg.badge}
                     </span>
                   )}
@@ -475,7 +475,7 @@ export default function ClasesDeInglesPage() {
           <p style={{
             textAlign: 'center',
             marginTop: '1.75rem',
-            color: 'rgba(255,255,255,0.4)',
+            color: 'rgba(255,255,255,0.68)',
             fontSize: '0.82rem',
           }}>
             Todos los planes incluyen clase de diagnóstico gratis · Sin permanencia mínima
@@ -497,7 +497,7 @@ export default function ClasesDeInglesPage() {
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                   <div style={{
                     width: 38, height: 38, borderRadius: '50%',
-                    background: 'var(--accent)', color: '#fff',
+                    background: 'var(--accent-action)', color: '#fff',
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
                     fontWeight: 700, fontSize: '0.95rem', flexShrink: 0,
                   }}>
@@ -625,6 +625,7 @@ export default function ClasesDeInglesPage() {
           { href: '/examenes/ielts', title: 'Simulacros IELTS', desc: 'Listening, Reading y Writing con formato real e informe de desempeño por sección.' },
           { href: '/examenes/toefl', title: 'Simulacros TOEFL', desc: 'Reading, Listening, Speaking y Writing al estilo del iBT, con retroalimentación.' },
           { href: '/examenes/icfes', title: 'Simulacro ICFES', desc: 'La sección de inglés del Saber 11, con el nivel estimado según la escala del examen.' },
+          { href: '/herramientas/transcripcion-fonetica/ingles', title: 'Transcripción fonética', desc: 'Pega cualquier texto y léelo en alfabeto fonético, en británico o americano, con el acento tónico donde va.' },
           { href: '/nivel-radar', title: 'Descubre tu nivel real', desc: 'Si no sabes por dónde empezar, el diagnóstico te ubica en el MCER antes de la primera clase.' },
         ]}
       />

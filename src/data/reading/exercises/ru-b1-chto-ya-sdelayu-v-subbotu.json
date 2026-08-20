@@ -1,0 +1,489 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-b1-chto-ya-sdelayu-v-subbotu",
+  "status": "published",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Ruso B1"
+  },
+  "slug": "chto-ya-sdelayu-v-subbotu",
+  "series": {
+    "id": "ruso-b1-lectura-10",
+    "episode": 5,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-b1-chitalnyy-zal-kotoryy-ne-zakryvaetsya",
+    "nextExerciseId": "ru-b1-provodnitsa-nochnogo-poezda"
+  },
+  "classification": {
+    "genre": "confesión con datos",
+    "topic": "un año de listas de sábados",
+    "intent": "learning",
+    "tags": [
+      "ruso b1",
+      "lectura",
+      "aspecto perfectivo e imperfectivo",
+      "futuro perfectivo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Lo que haré el sábado"
+    },
+    "intro": {
+      "es": "Ciento ochenta y siete tareas planificadas en un año y sesenta y una hechas. Lo interesante no es la cifra. Lectura de ruso B1."
+    },
+    "mission": {
+      "es": "Averigua qué tenían en común todas las tareas que nunca hizo."
+    },
+    "targetText": "В январе прошлого года я начал вести список. Каждую пятницу вечером я писал, что я сделаю в субботу. В воскресенье я писал, что я сделал на самом деле.\n\nГод. Пятьдесят две пары строчек.\n\nРезультат такой. Я запланировал сто восемьдесят семь дел. Сделал шестьдесят одно.\n\nНо интересно не это. Интересно, какие дела я делал, а какие не сделал ни разу.\n\nДела, которые я сделал, почти все были маленькие и конкретные: «позвонить в поликлинику», «купить лампочку», «отдать книгу Свете». Такие дела я обычно делал.\n\nДела, которые я не сделал, были все написаны другими словами: «разобрать балкон», «заняться английским», «привести в порядок документы». Не «сделать», а «заниматься». Не результат, а процесс без конца.\n\nВ русском языке разница видна сразу. «Я разберу балкон» — это конец. «Я буду разбирать балкон» — это можно делать всю жизнь. Год я писал в списке процессы и удивлялся, почему они не заканчиваются.\n\nВ сентябре я изменил правило. Теперь я пишу только то, что можно закончить за один день. Не «разобрать балкон», а «вынести с балкона четыре коробки». Не «заняться английским», а «выучить двадцать слов».\n\nС сентября по декабрь я запланировал сорок четыре дела и сделал тридцать девять.\n\nБалкон, кстати, разобран. На это понадобилось одиннадцать суббот и сорок три коробки. Ни в одну субботу я не разбирал балкон. В каждую из одиннадцати я выносил коробки.\n\nЯ показал список другу, который работает программистом. Он посмотрел и сказал, что у них на работе это называется по-другому, но проблема та же: если задачу нельзя закрыть, её никто не берёт. Он спросил, сколько мне это стоило. Я ответил: год и одну тетрадь за сорок рублей. Он сказал, что у них на это тратят гораздо больше. Тетрадь, кстати, ещё не кончилась.\n\nМоя сестра говорит, что я просто обманул сам себя. Может быть. Но балкон пустой, а обман, после которого балкон становится пустым, я готов терпеть каждую субботу.\n\nСписок я продолжаю вести. Сейчас идёт второй год. Я больше не пишу «привести в порядок документы». Я пишу «найти документы на машину», и в прошлую субботу я их нашёл.",
+    "wordCount": 330,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Elegir el aspecto según haya final posible o no: разберу frente a буду разбирать."
+      },
+      {
+        "es": "Usar el futuro perfectivo para lo que se puede terminar en un día."
+      },
+      {
+        "es": "Leer un dato numérico y ver qué lo explica."
+      }
+    ],
+    "grammarFocus": [
+      "aspecto-perfectivo-imperfectivo-b1",
+      "futuro-perfectivo-b1",
+      "futuro-imperfectivo"
+    ],
+    "vocabulary": [
+      {
+        "surface": "вести",
+        "lemma": "вести",
+        "glosses": {
+          "es": "llevar; «вести список» es llevar una lista"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "строчек",
+        "lemma": "строчка",
+        "glosses": {
+          "es": "líneas, renglones"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "лампочку",
+        "lemma": "лампочка",
+        "glosses": {
+          "es": "bombilla"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "разобрать",
+        "lemma": "разобрать",
+        "glosses": {
+          "es": "despejar, desmontar, poner en orden"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "удивлялся",
+        "lemma": "удивляться",
+        "glosses": {
+          "es": "me extrañaba"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "вынести",
+        "lemma": "вынести",
+        "glosses": {
+          "es": "sacar algo de un sitio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "понадобилось",
+        "lemma": "понадобиться",
+        "glosses": {
+          "es": "hicieron falta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "обманул",
+        "lemma": "обмануть",
+        "glosses": {
+          "es": "engañé"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El balcón cerrado de los pisos rusos funciona como despensa y trastero: patatas, conservas, esquís y cajas. Vaciarlo es una tarea que se aplaza durante años en muchas casas."
+    },
+    "spanishSpeakerNote": {
+      "es": "Aquí el aspecto se vuelve práctico: «разберу» tiene final, «буду разбирать» no. Si te escribes una tarea en imperfectivo, te has escrito un proceso sin fin. El español no marca esa diferencia y por eso el problema pasa desapercibido."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto ruso largo con participios y gerundios, distinguir lo que alguien afirma de lo que solo dice que intentará, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento",
+      "acusativo-movimiento",
+      "adverbios-tiempo",
+      "aspecto-verbal",
+      "comparativos",
+      "condicional",
+      "dativo-uso",
+      "futuro-imperfectivo",
+      "futuro-perfectivo",
+      "genitivo-cantidad",
+      "instrumental-uso",
+      "oraciones-subordinadas",
+      "pasado-verbos",
+      "plurales-irregulares",
+      "prepositivo-avanzado",
+      "pronombres-reflexivos",
+      "pronombres-relativos",
+      "superlativos",
+      "verbos-prefijados",
+      "adverbios-circunstanciales-b1",
+      "aspecto-perfectivo-imperfectivo-b1",
+      "comparativos-superlativos-b1",
+      "condicional-subjuntivo-b1",
+      "dativo-b1",
+      "deeprichastiya-b1",
+      "diminutivos-aumentativos-b1",
+      "discurso-indirecto-b1",
+      "futuro-perfectivo-b1",
+      "genitivo-negacion-b1",
+      "impersonales-modales-b1",
+      "instrumental-b1",
+      "oraciones-subordinadas-b1",
+      "participios-activos-b1",
+      "participios-adjetivales-b1",
+      "participios-pasivos-b1",
+      "prefijos-verbos-b1",
+      "preposiciones-casos-b1",
+      "verbos-movimiento-prefijados-b1",
+      "verbos-reflexivos-b1"
+    ],
+    "disallowedGrammar": [
+      "participios de registro literario raro",
+      "sintaxis nominal administrativa",
+      "arcaísmos",
+      "jerga profesional cerrada"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 8,
+      "maxSentenceWords": 24,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Participios activos, pasivos y adjetivales; деепричастия de los dos aspectos; condicional con бы; impersonales modales. Acento sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué descubrió el narrador con su lista?",
+      "options": [
+        {
+          "id": "aspecto",
+          "text": "Que las tareas que nunca hacía estaban escritas como procesos sin final"
+        },
+        {
+          "id": "pereza",
+          "text": "Que es una persona perezosa y debe organizarse mejor"
+        },
+        {
+          "id": "listas",
+          "text": "Que las listas de tareas no sirven para nada"
+        }
+      ],
+      "answer": "aspecto",
+      "evidence": "Дела, которые я не сделал, были все написаны другими словами … Не «сделать», а «заниматься». Не результат, а процесс без конца.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo demuestra con la lista de ejemplos."
+        },
+        "incorrect": {
+          "es": "No se llama perezoso, y la lista acabó funcionando: la sigue el segundo año."
+        },
+        "strategy": {
+          "es": "Cuando un texto agrupa los fracasos y busca qué tienen en común, ese rasgo es la tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántas tareas planificó y cuántas hizo entre septiembre y diciembre?",
+      "options": [
+        {
+          "id": "4439",
+          "text": "Planificó cuarenta y cuatro e hizo treinta y nueve"
+        },
+        {
+          "id": "18761",
+          "text": "Planificó ciento ochenta y siete e hizo sesenta y una"
+        },
+        {
+          "id": "1143",
+          "text": "Planificó once e hizo cuarenta y tres"
+        }
+      ],
+      "answer": "4439",
+      "evidence": "С сентября по декабрь я запланировал сорок четыре дела и сделал тридцать девять.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: las cifras del año completo son las otras."
+        },
+        "incorrect": {
+          "es": "Los 187 y 61 son de todo el año, y once y cuarenta y tres son sábados y cajas."
+        },
+        "strategy": {
+          "es": "Antes de elegir cifras, comprueba de qué periodo habla la pregunta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué significa «разобрать балкон»?",
+      "options": [
+        {
+          "id": "despejar",
+          "text": "Vaciarlo y ponerlo en orden"
+        },
+        {
+          "id": "derribar",
+          "text": "Derribar el balcón"
+        },
+        {
+          "id": "cerrar",
+          "text": "Cerrarlo con cristales"
+        }
+      ],
+      "answer": "despejar",
+      "evidence": "Балкон, кстати, разобран. Понадобилось одиннадцать суббот и сорок три коробки … В каждую из одиннадцати я выносил коробки.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: cuarenta y tres cajas sacadas en once sábados."
+        },
+        "incorrect": {
+          "es": "No derriba ni acristala nada: saca cajas. Fíjate en qué hizo cada sábado."
+        },
+        "strategy": {
+          "es": "Si el texto dice qué acciones concretas componen una tarea, esas acciones la definen."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué acepta que se engañó a sí mismo?",
+      "options": [
+        {
+          "id": "resultado",
+          "text": "Porque el engaño produjo un resultado real: el balcón está vacío"
+        },
+        {
+          "id": "hermana",
+          "text": "Porque su hermana tiene siempre razón"
+        },
+        {
+          "id": "facil",
+          "text": "Porque así las tareas le cuestan menos"
+        }
+      ],
+      "answer": "resultado",
+      "evidence": "Моя сестра говорит, что я просто обманул сам себя. Может быть. Но балкон пустой, а обман, после которого балкон становится пустым, я готов терпеть каждую субботу.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y él mismo formula la condición: un engaño con ese resultado le vale."
+        },
+        "incorrect": {
+          "es": "No dice que su hermana tenga razón sin más ni que busque comodidad. Lee su respuesta entera."
+        },
+        "strategy": {
+          "es": "Cuando alguien concede una crítica y luego dice «pero», su argumento va después."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: dejó de escribir la lista al terminar el primer año.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Список я продолжаю вести. Сейчас идёт второй год.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: va por el segundo año."
+        },
+        "incorrect": {
+          "es": "La respuesta está en el último párrafo, en la primera frase."
+        },
+        "strategy": {
+          "es": "El presente («продолжаю») indica que la acción sigue: descarta el pasado cerrado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la confesión.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "El método: viernes lo previsto, domingo lo hecho"
+        },
+        {
+          "id": "p2",
+          "text": "Las cifras del año: 187 planificadas, 61 hechas"
+        },
+        {
+          "id": "p3",
+          "text": "El hallazgo: las que fallaban eran procesos"
+        },
+        {
+          "id": "p4",
+          "text": "El cambio de regla en septiembre y el balcón vacío"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Каждую пятницу вечером я писал, что я сделаю в субботу … Я запланировал сто восемьдесят семь дел … Дела, которые я не сделал, были все написаны другими словами … В сентябре я изменил правило.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: método, datos, hallazgo y corrección."
+        },
+        "incorrect": {
+          "es": "Fíjate en dónde aparecen las cifras y dónde el cambio de regla."
+        },
+        "strategy": {
+          "es": "Un texto con datos suele ir de la medición al hallazgo y de ahí al cambio."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 12–15 frases en ruso sobre una tarea que aplazas siempre. Reescríbela en perfectivo y en imperfectivo, y explica la diferencia."
+    },
+    "minWords": 65,
+    "maxWords": 120,
+    "hints": [
+      "Каждую пятницу я писал, что сделаю в субботу.",
+      "«Я разберу балкон» — это конец.",
+      "«Я буду разбирать балкон» — это всю жизнь.",
+      "Теперь я пишу только то, что можно закончить."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso B1: lo que haré el sábado | WeLearn"
+    },
+    "description": {
+      "es": "Lee una confesión con datos en ruso B1 y practica el aspecto perfectivo e imperfectivo y el futuro perfectivo. Con seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/b1/lectura/chto-ya-sdelayu-v-subbotu",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-b1-chitalnyy-zal-kotoryy-ne-zakryvaetsya",
+      "ru-b1-provodnitsa-nochnogo-poezda"
+    ]
+  }
+}

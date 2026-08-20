@@ -1,0 +1,492 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-b1-gyedani-yeoseot-gae",
+  "status": "published",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Coreano B1",
+    "topik": 3,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. B1 se sitúa alrededor del TOPIK II nivel 3, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "gyedani-yeoseot-gae",
+  "series": {
+    "id": "coreano-b1-lectura-10",
+    "episode": 1,
+    "totalEpisodes": 10,
+    "previousExerciseId": null,
+    "nextExerciseId": "ko-b1-sijangi-namge-doen-iyu"
+  },
+  "classification": {
+    "genre": "relato retrospectivo",
+    "topic": "un recuerdo que no coincide",
+    "intent": "learning",
+    "tags": [
+      "coreano b1",
+      "lectura",
+      "더라",
+      "causa 기 때문에"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Los escalones eran seis"
+    },
+    "intro": {
+      "es": "Veinte años después vuelve a la casa de su infancia y cuenta los escalones. Eran doce en su memoria. Son seis. Lectura de coreano B1."
+    },
+    "mission": {
+      "es": "Averigua por qué el narrador no se decepciona al descubrir que su memoria mentía."
+    },
+    "targetText": "작년 여름에 저는 스무 해 만에 어릴 때 살던 집에 갔어요. 그 집은 대구 남쪽의 작은 동네에 있어요. 저는 그 집을 아주 잘 기억하고 있었어요. 마당이 넓었고, 감나무가 두 그루 있었고, 계단이 열두 개였어요. 저는 그 계단을 세면서 올라가던 아이였어요. 그런데 도착해서 보니까 마당이 아주 작더라고요. 자동차 한 대도 못 들어갈 것 같았어요. 감나무는 한 그루뿐이었어요. 그리고 계단은 여섯 개였어요. 저는 두 번 세어 봤어요. 여섯 개였어요. 처음에는 누가 계단을 바꿨다고 생각했어요. 하지만 그건 말이 안 되는 이야기였어요. 계단이 콘크리트였기 때문에 바꾸려면 집을 다 고쳐야 해요. 집은 하나도 안 변했어요. 벽 페인트 색까지 똑같았어요. 저는 옆집 아주머니에게 물어봤어요. 그분은 사십 년 동안 그 동네에 사셨어요. 계단을 고친 적이 있냐고 물었어요. 아주머니는 웃으시면서 말하셨어요. 이 동네는 사십 년 동안 아무것도 안 고쳤어요. 그러면서 저를 한참 보시더니 이렇게 말하셨어요. 다들 그렇게 물어봐요. 저만 그런 게 아니었어요. 그러면 왜 제 기억이 틀렸을까요? 답은 간단해요. 그때 저는 다섯 살이었기 때문에 모든 것이 컸어요. 제 다리가 짧았기 때문에 계단이 많게 느껴졌어요. 이상한 것은 그다음이에요. 저는 실망하지 않았어요. 오히려 기분이 좋았어요. 왜냐하면 그 작은 마당에서 제가 정말 행복했다는 것을 알게 되었기 때문이에요. 행복은 마당 크기하고 관계가 없었어요. 돌아오는 기차에서 저는 어머니께 전화했어요. 계단이 여섯 개더라고 말했어요. 어머니는 웃으시면서 말하셨어요. 너는 그 계단에서 두 번 넘어졌어. 저는 그것을 기억하지 못했어요. 기억은 크기를 바꾸고, 넘어진 것은 지워요. 저는 지금 제 기억을 조금 덜 믿어요. 하지만 그 집은 여전히 제 집이에요.",
+    "wordCount": 222,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Usar 더라/더라고요 para contar algo comprobado en persona y que sorprende."
+      },
+      {
+        "es": "Encadenar causas con 기 때문에 y con 왜냐하면 … 때문이에요."
+      },
+      {
+        "es": "Distinguir el hecho comprobado de la interpretación que el narrador hace de él."
+      }
+    ],
+    "grammarFocus": [
+      "passado-reminiscencia-b1",
+      "causal-gi-ttaemune-b1",
+      "verbos-irregulares-pasado-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "마당",
+        "lemma": "마당",
+        "reading": "madang",
+        "glosses": {
+          "es": "patio interior de una casa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "감나무",
+        "lemma": "감나무",
+        "reading": "gamnamu",
+        "glosses": {
+          "es": "caqui (el árbol)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "그루",
+        "lemma": "그루",
+        "reading": "geuru",
+        "glosses": {
+          "es": "contador para árboles"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "계단",
+        "lemma": "계단",
+        "reading": "gyedan",
+        "glosses": {
+          "es": "escalón, escalera"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "콘크리트",
+        "lemma": "콘크리트",
+        "reading": "konkeuriteu",
+        "glosses": {
+          "es": "hormigón"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "느껴졌어요",
+        "lemma": "느껴지다",
+        "reading": "neukkyeojyeosseoyo",
+        "glosses": {
+          "es": "se sentía, daba la sensación"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "넘어졌어",
+        "lemma": "넘어지다",
+        "reading": "neomeojyeosseo",
+        "glosses": {
+          "es": "te caíste"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "지워요",
+        "lemma": "지우다",
+        "reading": "jiwoyo",
+        "glosses": {
+          "es": "borra"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La casa con 마당 —patio interior— y caqui es una imagen doméstica muy reconocible en Corea. El caqui se seca colgado en otoño, y muchos recuerdos de infancia se organizan alrededor de ese árbol."
+    },
+    "spanishSpeakerNote": {
+      "es": "더라고요 sirve para contar algo que uno comprobó por sí mismo y que resultó distinto de lo esperado: 마당이 작더라고요 es «resulta que el patio era pequeño, lo vi yo». El español lo resuelve con «resulta que» o con la entonación; el coreano tiene una terminación propia."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo en coreano que desarrolla una idea y cambia de dirección, distinguir el hecho de la interpretación, y justificar una inferencia cruzando dos pasajes separados."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas",
+      "antes-despues-a2",
+      "capacidad-rl-su-itda-a2",
+      "clausulas-relativas-a2",
+      "condicional-eumyeon-a2",
+      "conector-aseo-a2",
+      "cuanto-eolmana-a2",
+      "discurso-reportado-a2",
+      "durante-neun-dongane-a2",
+      "futuro-rl-geoyeyo-a2",
+      "honorificos-a2",
+      "intencion-ryogo-hada-a2",
+      "negacion-ji-anta-a2",
+      "obligacion-aya-hada-a2",
+      "parecer-neun-geot-gatda-a2",
+      "particulas-recipiente-a2",
+      "progresivo-go-itda-a2",
+      "razon-gittaemune-a2",
+      "razon-niikka-a2",
+      "solo-tambien-man-do-a2",
+      "verbos-irregulares-pasado-a2",
+      "alternativa-geona-b1",
+      "causal-gi-ttaemune-b1",
+      "causativa-shichang-b1",
+      "condicional-erado-eurely-b1",
+      "despues-gona-seo-b1",
+      "estado-mantener-chae-b1",
+      "forzosidad-subakkeneopsda-b1",
+      "futuro-intencion-b1",
+      "ge-doeda-b1",
+      "inmediato-jamaja-b1",
+      "kiro-hada-b1",
+      "obligacion-eoyahada-b1",
+      "observacion-neyo-b1",
+      "oportunidad-gime-b1",
+      "pasiva-jeosudo-b1",
+      "passado-reminiscencia-b1",
+      "posibilidad-su-itda-b1",
+      "proporcion-euttorok-b1",
+      "proposito-dorok-b1",
+      "simultaneo-eumyeonseo-b1"
+    ],
+    "disallowedGrammar": [
+      "registro literario",
+      "hanja sin glosa",
+      "dialecto regional"
+    ],
+    "maxOutOfLevelVocabularyPercent": 7,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 5.4,
+      "maxSentenceWords": 11,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Prosa B1 con 더라/던, 게 되다, 채, 을수록 y pasiva. Sin registro literario ni hanja sin glosar. Inferencia moderada: exige cruzar dos pasajes."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué descubre el narrador en el viaje?",
+      "options": [
+        {
+          "id": "memoria",
+          "text": "Que su memoria agrandó las cosas, y que eso no le quita valor al recuerdo"
+        },
+        {
+          "id": "reforma",
+          "text": "Que alguien reformó la casa mientras él estaba fuera"
+        },
+        {
+          "id": "venta",
+          "text": "Que la casa se ha vendido y ya no puede entrar"
+        }
+      ],
+      "answer": "memoria",
+      "evidence": "행복은 마당 크기하고 관계가 없었어요 … 하지만 그 집은 여전히 제 집이에요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Descarta expresamente la reforma y llega a una conclusión distinta: la felicidad no dependía del tamaño."
+        },
+        "incorrect": {
+          "es": "El texto descarta la reforma con un argumento (el hormigón) y no menciona ninguna venta. Busca la frase sobre 행복."
+        },
+        "strategy": {
+          "es": "Si un texto plantea una hipótesis y la descarta, la conclusión verdadera viene después. Localiza el 하지만."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántos escalones tiene la casa en realidad?",
+      "options": [
+        {
+          "id": "seis",
+          "text": "Seis"
+        },
+        {
+          "id": "doce",
+          "text": "Doce"
+        },
+        {
+          "id": "dos",
+          "text": "Dos"
+        }
+      ],
+      "answer": "seis",
+      "evidence": "그리고 계단은 여섯 개였어요. 저는 두 번 세어 봤어요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: seis, y los contó dos veces para asegurarse. Los doce eran los de su memoria."
+        },
+        "incorrect": {
+          "es": "Los doce son los que él recordaba. Busca la cifra que aparece después de 도착해서 보니까."
+        },
+        "strategy": {
+          "es": "En un texto que compara memoria y realidad, separa las dos cifras antes de responder."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice 마당이 아주 작더라고요. ¿Qué añade la terminación 더라고요?",
+      "options": [
+        {
+          "id": "comprobado",
+          "text": "Que lo comprobó él mismo y le resultó inesperado"
+        },
+        {
+          "id": "duda",
+          "text": "Que no está seguro de lo que vio"
+        },
+        {
+          "id": "ajeno",
+          "text": "Que se lo contó otra persona"
+        }
+      ],
+      "answer": "comprobado",
+      "evidence": "그런데 도착해서 보니까 마당이 아주 작더라고요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Va precedido de 도착해서 보니까, «al llegar y verlo»: es experiencia directa y contraria a lo esperado."
+        },
+        "incorrect": {
+          "es": "Justo lo contrario: 더라고요 se usa para lo que uno vio en persona. Fíjate en 보니까 delante."
+        },
+        "strategy": {
+          "es": "Las terminaciones coreanas cargan información sobre la fuente. 더라 marca experiencia propia, no rumor."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué descarta la idea de que alguien cambiara los escalones?",
+      "options": [
+        {
+          "id": "hormigon",
+          "text": "Porque cambiar hormigón exigiría reformar toda la casa, y nada ha cambiado"
+        },
+        {
+          "id": "vecinos",
+          "text": "Porque los vecinos le dijeron que nadie tocó la casa"
+        },
+        {
+          "id": "fotos",
+          "text": "Porque tiene fotos antiguas que lo demuestran"
+        }
+      ],
+      "answer": "hormigon",
+      "evidence": "계단이 콘크리트였기 때문에 바꾸려면 집을 다 고쳐야 해요. 집은 하나도 안 변했어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo remata con un detalle: hasta el color de la pintura es el mismo."
+        },
+        "incorrect": {
+          "es": "No habla con vecinos ni menciona fotos. Busca la frase con 콘크리트."
+        },
+        "strategy": {
+          "es": "Cuando un narrador descarta una hipótesis, da un argumento material. Búscalo en la frase con 때문에."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la madre recuerda algo de aquellos escalones que él había olvidado.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "너는 그 계단에서 두 번 넘어졌어. 저는 그것을 기억하지 못했어요.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero: que se cayó dos veces. Y él lo admite: 기억하지 못했어요."
+        },
+        "incorrect": {
+          "es": "Busca la respuesta de la madre en la llamada de vuelta, y la frase que él añade después."
+        },
+        "strategy": {
+          "es": "En una conversación reproducida, la frase que sigue a la cita suele ser la reacción del narrador. Léela."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué cierra con 기억은 크기를 바꾸고, 넘어진 것은 지워요?",
+      "options": [
+        {
+          "id": "balance",
+          "text": "Para resumir los dos engaños de la memoria que el texto acaba de mostrar"
+        },
+        {
+          "id": "queja",
+          "text": "Para lamentar que ya no recuerda nada de su infancia"
+        },
+        {
+          "id": "consejo",
+          "text": "Para aconsejar que se escriban diarios"
+        }
+      ],
+      "answer": "balance",
+      "evidence": "계단이 열두 개였어요 … 너는 그 계단에서 두 번 넘어졌어. 저는 그것을 기억하지 못했어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí: agrandó los escalones y borró las caídas. La frase final nombra los dos errores en el mismo orden en que aparecieron."
+        },
+        "incorrect": {
+          "es": "No se lamenta —dice que se alegró— ni da consejos. Fíjate en los dos engaños que el texto ya ha contado."
+        },
+        "strategy": {
+          "es": "Una frase final con dos mitades suele recoger dos cosas ya contadas. Busca cuáles antes de interpretarla."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en coreano sobre un lugar de tu infancia al que hayas vuelto. Usa 더라고요 dos veces y 기 때문에 tres veces."
+    },
+    "minWords": 60,
+    "maxWords": 120,
+    "hints": [
+      "어릴 때 살던 …에 갔어요.",
+      "가 보니까 …더라고요.",
+      "… 때문에 …",
+      "하지만 그곳은 여전히 …"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano B1: Los escalones eran seis | WeLearn"
+    },
+    "description": {
+      "es": "Lee un relato en coreano B1 y practica 더라 para volver sobre lo vivido y 기 때문에 para dar causas. Con vocabulario romanizado y seis preguntas."
+    },
+    "canonicalPath": "/practica/coreano/b1/lectura/gyedani-yeoseot-gae",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-b1-sijangi-namge-doen-iyu"
+    ]
+  }
+}

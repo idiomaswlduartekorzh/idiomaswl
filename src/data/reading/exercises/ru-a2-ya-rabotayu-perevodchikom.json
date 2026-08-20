@@ -1,0 +1,471 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-a2-ya-rabotayu-perevodchikom",
+  "status": "published",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Ruso A2"
+  },
+  "slug": "ya-rabotayu-perevodchikom",
+  "series": {
+    "id": "ruso-a2-lectura-10",
+    "episode": 3,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-a2-ya-pozvonyu-i-budu-zvonit",
+    "nextExerciseId": "ru-a2-samyy-korotkiy-put"
+  },
+  "classification": {
+    "genre": "diario de oficio",
+    "topic": "una intérprete judicial que escribe a lápiz",
+    "intent": "learning",
+    "tags": [
+      "ruso a2",
+      "lectura",
+      "caso instrumental",
+      "caso dativo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Trabajo de intérprete"
+    },
+    "intro": {
+      "es": "Doce años traduciendo en un juzgado de San Petersburgo, a lápiz y no a bolígrafo, y por una razón concreta. Lectura de ruso A2."
+    },
+    "mission": {
+      "es": "Averigua qué es lo más difícil de su trabajo, y no son las palabras."
+    },
+    "targetText": "Я работаю переводчиком в суде в Санкт-Петербурге. Испанский и русский. Двенадцать лет.\n\nЯ не перевожу книги. Я перевожу людям, которые не понимают, что с ними происходит.\n\nОбычно это рабочие: строители, водители, повара. Они приехали сюда работать, а не судиться. Я помогаю им понять вопросы судьи, и я помогаю судье понять их ответы.\n\nЯ пишу карандашом, не ручкой. Карандашом можно стереть. В суде это важно.\n\nСамое трудное — не слова. Самое трудное — когда человек говорит мне что-то и просит: «Не переводите это». Я обязана переводить всё. Я объясняю ему это заранее, перед началом, каждый раз.\n\nОдин раз колумбиец сказал судье четыре слова, и я перевела их точно. Судья долго молчал. Потом он изменил решение. Я не знаю, из-за моих слов или нет.\n\nВ плохие дни в суде бывает три или четыре дела подряд. Тогда я не помню лиц, только голоса. В хорошие дни бывает одно дело, и я запоминаю всё: имя, город, работу, детей.\n\nВечером я езжу домой автобусом, сорок минут. Я не слушаю музыку. Я молчу, потому что весь день я говорю чужими словами.\n\nМоя мать была учительницей. Она говорила: «Твоя работа — быть мостом». Мосты не выбирают, кто по ним идёт.",
+    "wordCount": 190,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Usar el instrumental para el oficio y el medio: работаю переводчиком, пишу карандашом."
+      },
+      {
+        "es": "Usar el dativo del destinatario con помогать y переводить."
+      },
+      {
+        "es": "Distinguir la dificultad técnica de la dificultad moral de un oficio."
+      }
+    ],
+    "grammarFocus": [
+      "instrumental-uso",
+      "dativo-uso",
+      "caso-dativo-basico"
+    ],
+    "vocabulary": [
+      {
+        "surface": "суде",
+        "lemma": "суд",
+        "glosses": {
+          "es": "juzgado, tribunal"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "строители",
+        "lemma": "строитель",
+        "glosses": {
+          "es": "albañiles, obreros de la construcción"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "повара",
+        "lemma": "повар",
+        "glosses": {
+          "es": "cocineros"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "судиться",
+        "lemma": "судиться",
+        "glosses": {
+          "es": "pleitear, ir a juicio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "стереть",
+        "lemma": "стереть",
+        "glosses": {
+          "es": "borrar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "обязана",
+        "lemma": "обязанный",
+        "glosses": {
+          "es": "obligada"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "заранее",
+        "lemma": "заранее",
+        "glosses": {
+          "es": "de antemano"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "мостом",
+        "lemma": "мост",
+        "glosses": {
+          "es": "puente (en instrumental)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En Rusia el intérprete judicial jura traducir íntegramente y responde por ello. No puede omitir nada de lo que oye, ni aunque la persona se lo pida."
+    },
+    "spanishSpeakerNote": {
+      "es": "El instrumental hace dos trabajos que el español reparte: dice el oficio («работаю переводчиком», trabajo DE intérprete) y el medio («пишу карандашом», escribo CON lápiz). La misma terminación para «de» y para «con»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato en ruso sobre hechos pasados, distinguir el aspecto imperfectivo del perfectivo, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento",
+      "acusativo-movimiento",
+      "adverbios-tiempo",
+      "aspecto-verbal",
+      "comparativos",
+      "condicional",
+      "dativo-uso",
+      "futuro-imperfectivo",
+      "futuro-perfectivo",
+      "genitivo-cantidad",
+      "imperativo",
+      "instrumental-uso",
+      "oraciones-subordinadas",
+      "pasado-verbos",
+      "plurales-irregulares",
+      "prepositivo-avanzado",
+      "pronombres-reflexivos",
+      "pronombres-relativos",
+      "superlativos",
+      "verbos-movimiento",
+      "verbos-prefijados"
+    ],
+    "disallowedGrammar": [
+      "participios (причастия)",
+      "gerundios (деепричастия)",
+      "discurso indirecto complejo",
+      "voz pasiva con -ся literaria"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 6.8,
+      "maxSentenceWords": 14,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Pasado y futuro con los dos aspectos, instrumental, condicional con бы, verbos prefijados de movimiento. Sin participios ni gerundios. Acento sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué explica el diario?",
+      "options": [
+        {
+          "id": "todo",
+          "text": "Que lo difícil no es traducir bien, sino estar obligada a traducirlo todo"
+        },
+        {
+          "id": "sueldo",
+          "text": "Que los intérpretes judiciales están mal pagados"
+        },
+        {
+          "id": "idioma",
+          "text": "Que el español y el ruso son lenguas muy distintas"
+        }
+      ],
+      "answer": "todo",
+      "evidence": "Самое трудное — не слова. Самое трудное — когда человек говорит мне что-то и просит: «Не переводите это». Я обязана переводить всё.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo dice descartando primero lo que no es difícil."
+        },
+        "incorrect": {
+          "es": "No se habla de sueldos, y la distancia entre lenguas no aparece. Busca las dos frases con «самое трудное»."
+        },
+        "strategy": {
+          "es": "Cuando un texto repite «lo más difícil» dos veces, la segunda es la de verdad."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Por qué escribe a lápiz y no a bolígrafo?",
+      "options": [
+        {
+          "id": "borrar",
+          "text": "Porque a lápiz se puede borrar"
+        },
+        {
+          "id": "barato",
+          "text": "Porque el lápiz es más barato"
+        },
+        {
+          "id": "rapido",
+          "text": "Porque a lápiz escribe más rápido"
+        }
+      ],
+      "answer": "borrar",
+      "evidence": "Я пишу карандашом, не ручкой. Карандашом можно стереть. В суде это важно.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y añade que en un juzgado eso importa."
+        },
+        "incorrect": {
+          "es": "No habla de precio ni de velocidad. Busca la frase que empieza por «Карандашом можно»."
+        },
+        "strategy": {
+          "es": "Si el texto repite la palabra en la frase siguiente, ahí está la explicación."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Dice que vinieron a trabajar «а не судиться». ¿Qué significa el verbo?",
+      "options": [
+        {
+          "id": "pleitear",
+          "text": "Ir a juicio, pleitear"
+        },
+        {
+          "id": "juzgar",
+          "text": "Juzgar a otros"
+        },
+        {
+          "id": "estudiar",
+          "text": "Estudiar derecho"
+        }
+      ],
+      "answer": "pleitear",
+      "evidence": "Они приехали сюда работать, а не судиться.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Se opone a «работать» y comparte raíz con «суд», juzgado."
+        },
+        "incorrect": {
+          "es": "Ellos no juzgan a nadie: son quienes están en el juicio. Fíjate en la raíz «суд»."
+        },
+        "strategy": {
+          "es": "Si reconoces la raíz de una palabra que ya viste («суд»), tienes medio significado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué vuelve a casa en silencio, sin música?",
+      "options": [
+        {
+          "id": "ajenas",
+          "text": "Porque se ha pasado el día hablando con palabras que no son suyas"
+        },
+        {
+          "id": "cansada",
+          "text": "Porque el autobús va demasiado lleno"
+        },
+        {
+          "id": "multa",
+          "text": "Porque en el autobús no se puede escuchar música"
+        }
+      ],
+      "answer": "ajenas",
+      "evidence": "Я не слушаю музыку. Я молчу, потому что весь день я говорю чужими словами.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y ella misma lo explica con un «потому что»."
+        },
+        "incorrect": {
+          "es": "No se dice que el autobús esté lleno ni que haya prohibiciones. Lee la explicación."
+        },
+        "strategy": {
+          "es": "Una explicación con «потому что» es literal: no hay que deducirla."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: ella sabe con seguridad que sus palabras hicieron cambiar la decisión del juez.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Потом он изменил решение. Я не знаю, из-за моих слов или нет.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: dice expresamente que no lo sabe."
+        },
+        "incorrect": {
+          "es": "La decisión cambió, pero busca la frase siguiente: dice qué sabe y qué no."
+        },
+        "strategy": {
+          "es": "Si el narrador dice «я не знаю», la certeza absoluta es falsa."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la información.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Su oficio, sus idiomas y sus años"
+        },
+        {
+          "id": "p2",
+          "text": "A quién traduce: obreros, no libros"
+        },
+        {
+          "id": "p3",
+          "text": "El lápiz y lo más difícil del trabajo"
+        },
+        {
+          "id": "p4",
+          "text": "La vuelta a casa en silencio y la frase de su madre"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Я работаю переводчиком в суде … Я не перевожу книги. Я перевожу людям … Я пишу карандашом … Вечером я езжу домой автобусом.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: quién es, para quién trabaja, cómo trabaja y qué le cuesta."
+        },
+        "incorrect": {
+          "es": "Fíjate en dónde entra el lápiz y dónde la vuelta a casa."
+        },
+        "strategy": {
+          "es": "Un diario de oficio suele acabar en el momento de salir del trabajo."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en ruso sobre tu trabajo o el de alguien cercano. Usa cuatro instrumentales (oficio y medio) y tres dativos."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "Я работаю переводчиком.",
+      "Я пишу карандашом, не ручкой.",
+      "Я помогаю людям понять…",
+      "Моя мать была учительницей."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso A2: trabajo de intérprete | WeLearn"
+    },
+    "description": {
+      "es": "Lee un diario de oficio en ruso A2 y practica el caso instrumental y el dativo. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/ruso/a2/lectura/ya-rabotayu-perevodchikom",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-a2-ya-pozvonyu-i-budu-zvonit",
+      "ru-a2-samyy-korotkiy-put"
+    ]
+  }
+}

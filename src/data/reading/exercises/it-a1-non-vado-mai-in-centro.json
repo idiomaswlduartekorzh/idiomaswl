@@ -1,0 +1,449 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-a1-non-vado-mai-in-centro",
+  "status": "published",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Italiano A1"
+  },
+  "slug": "non-vado-mai-in-centro",
+  "series": {
+    "id": "italiano-a1-lectura-10",
+    "episode": 5,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-a1-chi-scrive-sul-muro",
+    "nextExerciseId": "it-a1-ce-un-gatto-in-biblioteca"
+  },
+  "classification": {
+    "genre": "testimonio",
+    "topic": "vivir en una ciudad turística sin visitarla",
+    "intent": "learning",
+    "tags": [
+      "italiano a1",
+      "lectura",
+      "verbos irregulares",
+      "negación"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Nunca voy al centro"
+    },
+    "intro": {
+      "es": "Vive en Roma desde siempre y no ha pisado el Coliseo en años. Sus amigos no lo entienden. Lectura de italiano A1."
+    },
+    "mission": {
+      "es": "Averigua qué hace distinta la ciudad cuando viene su prima de Milán."
+    },
+    "targetText": "Abito a Roma da sempre e non vado mai in centro. I miei amici non capiscono. Dicono: come? Non vai al Colosseo? Non vedi Piazza Navona? Io rispondo: no, non ci vado. Non è che non mi piace. Il centro è pieno di persone che fanno le foto. Io non faccio foto. Vado al bar sotto casa, faccio la spesa al mercato di via Prati, e sto bene. Mia cugina viene da Milano due volte all'anno. Lei vuole vedere tutto. Io vado con lei e faccio il turista nella mia città. È curioso: con lei vedo cose che non vedo mai da solo. Poi lei parte e io non torno più in centro. Non è pigrizia. È che la città dove tu abiti non è la città che tu visiti.",
+    "wordCount": 130,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Conjugar los irregulares frecuentes: vado, faccio, sto, vengo, voglio, vedo."
+      },
+      {
+        "es": "Construir la negación con non… mai, non… più y non è che."
+      },
+      {
+        "es": "Distinguir una explicación de una excusa."
+      }
+    ],
+    "grammarFocus": [
+      "verbi-irregolari",
+      "negazione"
+    ],
+    "vocabulary": [
+      {
+        "surface": "mai",
+        "lemma": "mai",
+        "glosses": {
+          "es": "nunca; siempre con «non» delante"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "più",
+        "lemma": "più",
+        "glosses": {
+          "es": "más; «non… più» es «ya no»"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pigrizia",
+        "lemma": "pigrizia",
+        "glosses": {
+          "es": "pereza"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "spesa",
+        "lemma": "spesa",
+        "glosses": {
+          "es": "compra diaria; «fare la spesa» es hacer la compra"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cugina",
+        "lemma": "cugina",
+        "glosses": {
+          "es": "prima"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "parte",
+        "lemma": "partire",
+        "glosses": {
+          "es": "se marcha, se va de viaje"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sotto",
+        "lemma": "sotto",
+        "glosses": {
+          "es": "debajo de"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "capiscono",
+        "lemma": "capire",
+        "glosses": {
+          "es": "entienden"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Es un fenómeno documentado en Roma, Venecia y Florencia: los residentes evitan el centro histórico porque el turismo ha sustituido las tiendas de barrio por souvenirs. No es desinterés, es desplazamiento."
+    },
+    "spanishSpeakerNote": {
+      "es": "La negación italiana casi siempre lleva dos piezas: «non… mai», «non… più», «non… niente», «non… nessuno». El español hace lo mismo con «no… nunca», así que aquí tienes ventaja: úsala."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en italiano sobre la vida cotidiana, distinguir un falso amigo de una palabra transparente, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere"
+    ],
+    "disallowedGrammar": [
+      "passato prossimo",
+      "imperfetto",
+      "congiuntivo",
+      "condizionale",
+      "voce passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 7.6,
+      "maxSentenceWords": 16,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo, imperativo y stare + gerundio. Sin tiempos del pasado ni congiuntivo. Falso amigo glosado en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué explica el narrador?",
+      "options": [
+        {
+          "id": "habitar",
+          "text": "Que la ciudad donde vives no es la misma que la ciudad que visitas"
+        },
+        {
+          "id": "odio",
+          "text": "Que odia a los turistas de su ciudad"
+        },
+        {
+          "id": "prima",
+          "text": "Que su prima de Milán viene demasiado poco"
+        }
+      ],
+      "answer": "habitar",
+      "evidence": "È che la città dove tu abiti non è la città che tu visiti.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y esa frase final resume el texto entero."
+        },
+        "incorrect": {
+          "es": "No expresa odio y la visita de la prima es un ejemplo, no una queja. Lee la última frase."
+        },
+        "strategy": {
+          "es": "En un testimonio corto, la última frase suele ser la conclusión que da sentido a lo demás."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántas veces al año viene su prima?",
+      "options": [
+        {
+          "id": "dos",
+          "text": "Dos veces al año"
+        },
+        {
+          "id": "nunca",
+          "text": "Nunca viene"
+        },
+        {
+          "id": "mes",
+          "text": "Una vez al mes"
+        }
+      ],
+      "answer": "dos",
+      "evidence": "Mia cugina viene da Milano due volte all'anno.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y son las dos veces al año en que él hace de turista."
+        },
+        "incorrect": {
+          "es": "Sí que viene, y desde Milán. Busca la frase que empieza por «Mia cugina»."
+        },
+        "strategy": {
+          "es": "Localiza primero al personaje y lee solo la frase donde aparece."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Dice «faccio la spesa al mercato». ¿Qué significa «fare la spesa»?",
+      "options": [
+        {
+          "id": "compra",
+          "text": "Hacer la compra de comida"
+        },
+        {
+          "id": "gasto",
+          "text": "Gastar mucho dinero"
+        },
+        {
+          "id": "esperar",
+          "text": "Esperar en la cola"
+        }
+      ],
+      "answer": "compra",
+      "evidence": "Vado al bar sotto casa, faccio la spesa al mercato di via Prati, e sto bene.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Va con el mercado, y es una expresión fija del italiano cotidiano."
+        },
+        "incorrect": {
+          "es": "La expresión no habla de cuánto se gasta ni de colas: fíjate en dónde ocurre."
+        },
+        "strategy": {
+          "es": "Con expresiones que llevan «fare», mira el lugar o el objeto que las acompaña."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice que con su prima ve cosas que solo no ve nunca?",
+      "options": [
+        {
+          "id": "mirada",
+          "text": "Porque acompañar a alguien de fuera le hace mirar su ciudad de otra manera"
+        },
+        {
+          "id": "zonas",
+          "text": "Porque su prima conoce barrios que él no conoce"
+        },
+        {
+          "id": "tiempo",
+          "text": "Porque solo tiene tiempo libre cuando ella viene"
+        }
+      ],
+      "answer": "mirada",
+      "evidence": "Io vado con lei e faccio il turista nella mia città … con lei vedo cose che non vedo mai da solo.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y él mismo lo formula así: hace de turista en su propia ciudad."
+        },
+        "incorrect": {
+          "es": "La prima es de Milán, no conoce Roma mejor que él, y no se habla de tiempo libre. Fíjate en «faccio il turista»."
+        },
+        "strategy": {
+          "es": "Cuando alguien dice que hace de turista en su ciudad, habla de cómo mira, no de dónde va."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el narrador dice que el centro de la ciudad no le gusta nada.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Non è che non mi piace. Il centro è pieno di persone che fanno le foto.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: descarta expresamente esa lectura con «Non è che non mi piace»."
+        },
+        "incorrect": {
+          "es": "Hay una frase que niega justamente eso. Búscala antes de la explicación de las fotos."
+        },
+        "strategy": {
+          "es": "La fórmula «non è che…» sirve para descartar la interpretación fácil: no te la pierdas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el testimonio.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Dice que no va nunca al centro"
+        },
+        {
+          "id": "p2",
+          "text": "Sus amigos le preguntan por el Coliseo"
+        },
+        {
+          "id": "p3",
+          "text": "Cuenta lo que sí hace en su barrio"
+        },
+        {
+          "id": "p4",
+          "text": "La visita de su prima y la conclusión"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Abito a Roma da sempre e non vado mai in centro … Dicono: come? Non vai al Colosseo? … Vado al bar sotto casa … Mia cugina viene da Milano.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: afirmación, objeción, alternativa y conclusión."
+        },
+        "incorrect": {
+          "es": "Fíjate en dónde aparecen las preguntas de los amigos y dónde entra la prima."
+        },
+        "strategy": {
+          "es": "Un testimonio suele abrir con la afirmación polémica y cerrar con la explicación."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en italiano sobre un lugar famoso de tu ciudad que no visitas nunca. Usa cinco verbos irregulares y tres negaciones distintas."
+    },
+    "minWords": 30,
+    "maxWords": 60,
+    "hints": [
+      "Abito qui da sempre e non vado mai…",
+      "I miei amici non capiscono.",
+      "Non è che non mi piace.",
+      "Non torno più…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano A1: nunca voy al centro | WeLearn"
+    },
+    "description": {
+      "es": "Lee un testimonio en italiano A1 y practica los verbos irregulares y la negación (non… mai, non… più). Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/italiano/a1/lectura/non-vado-mai-in-centro",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-a1-chi-scrive-sul-muro",
+      "it-a1-ce-un-gatto-in-biblioteca"
+    ]
+  }
+}

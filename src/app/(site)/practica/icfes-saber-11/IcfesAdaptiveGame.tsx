@@ -641,10 +641,10 @@ const ALL_QUESTIONS: IcfesQuestion[] = [
 // ─── Level Config ─────────────────────────────────────────────────────────────
 
 const LEVEL_CFG = {
-  1: { time: 30, color: '#059669', label: 'Nivel 1', subtitle: 'Avisos y Vocabulario', icon: '📋', description: 'Señales, avisos y vocabulario básico' },
-  2: { time: 28, color: '#2563eb', label: 'Nivel 2', subtitle: 'Diálogos',             icon: '💬', description: 'Conversaciones y situaciones cotidianas' },
-  3: { time: 25, color: '#7c3aed', label: 'Nivel 3', subtitle: 'Gramática',             icon: '✏️', description: 'Gramática y vocabulario en contexto' },
-  4: { time: 35, color: '#dc2626', label: 'Nivel 4', subtitle: 'Comprensión lectora',   icon: '📖', description: 'Textos y preguntas de inferencia' },
+  1: { time: 30, color: 'var(--wl-on-panel-ok, #059669)', label: 'Nivel 1', subtitle: 'Avisos y Vocabulario', icon: '📋', description: 'Señales, avisos y vocabulario básico' },
+  2: { time: 28, color: 'var(--wl-on-panel-link, #2563eb)', label: 'Nivel 2', subtitle: 'Diálogos',             icon: '💬', description: 'Conversaciones y situaciones cotidianas' },
+  3: { time: 25, color: 'var(--wl-on-panel-purple, #7c3aed)', label: 'Nivel 3', subtitle: 'Gramática',             icon: '✏️', description: 'Gramática y vocabulario en contexto' },
+  4: { time: 35, color: 'var(--wl-on-panel-alert, #dc2626)', label: 'Nivel 4', subtitle: 'Comprensión lectora',   icon: '📖', description: 'Textos y preguntas de inferencia' },
 } as const;
 
 const SKILL_LABELS: Record<Skill, string> = {

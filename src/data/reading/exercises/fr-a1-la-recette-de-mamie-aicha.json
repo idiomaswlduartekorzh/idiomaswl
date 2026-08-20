@@ -1,0 +1,450 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-a1-la-recette-de-mamie-aicha",
+  "status": "published",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Francés A1"
+  },
+  "slug": "la-recette-de-mamie-aicha",
+  "series": {
+    "id": "frances-a1-lectura-10",
+    "episode": 6,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-a1-colocataire-cherche",
+    "nextExerciseId": "fr-a1-le-bus-de-7h12"
+  },
+  "classification": {
+    "genre": "receta de cocina",
+    "topic": "cocina familiar",
+    "intent": "learning",
+    "tags": [
+      "frances a1",
+      "lectura",
+      "verbos en -IR",
+      "imperativo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La receta de la abuela Aïcha"
+    },
+    "intro": {
+      "es": "Una sopa, una abuela con opiniones firmes y un limón que decide si el plato está bien o solo correcto. Lectura de francés A1."
+    },
+    "mission": {
+      "es": "Averigua qué no hay que hacer mientras cuece, y cuál es el secreto del final."
+    },
+    "targetText": "LA CHORBA DE MAMIE AÏCHA (pour quatre personnes). Choisissez des tomates bien mûres. Mamie dit qu’une mauvaise tomate finit toujours par se voir dans la soupe. Dans une casserole, faites chauffer l’huile. Ajoutez l’oignon, la viande, les épices. Remuez cinq minutes. Ajoutez les tomates, l’eau et les pois chiches. Remplissez la casserole jusqu’à trois centimètres du bord, pas plus. Laissez cuire une heure à feu doux. Ne remuez pas trop: la soupe devient trouble. À la fin, ajoutez la coriandre et le jus d’un citron. Le citron, c’est le secret. Sans lui, la chorba est correcte. Avec lui, elle est bonne. Vous réussissez la chorba quand la maison entière sent la coriandre.",
+    "wordCount": 112,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Reconocer los verbos en -IR en presente: choisir, finir, remplir, réussir."
+      },
+      {
+        "es": "Seguir instrucciones encadenadas en imperativo, incluida una prohibición."
+      },
+      {
+        "es": "Entender por qué el artículo cambia: l’huile, les épices, un citron."
+      }
+    ],
+    "grammarFocus": [
+      "present-verbes-ir",
+      "imperatif",
+      "articles"
+    ],
+    "vocabulary": [
+      {
+        "surface": "mûres",
+        "lemma": "mûr",
+        "glosses": {
+          "es": "maduras"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "casserole",
+        "lemma": "casserole",
+        "glosses": {
+          "es": "cazuela, olla"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "épices",
+        "lemma": "épice",
+        "glosses": {
+          "es": "especias"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pois chiches",
+        "lemma": "pois chiches",
+        "glosses": {
+          "es": "garbanzos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "feu doux",
+        "lemma": "feu doux",
+        "glosses": {
+          "es": "fuego lento"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "trouble",
+        "lemma": "trouble",
+        "glosses": {
+          "es": "turbia, no transparente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "coriandre",
+        "lemma": "coriandre",
+        "glosses": {
+          "es": "cilantro"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "bord",
+        "lemma": "bord",
+        "glosses": {
+          "es": "borde"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La chorba es una sopa del Magreb muy presente en Francia, sobre todo durante el Ramadán. Cada familia defiende su versión, y el punto de discusión suele ser el limón."
+    },
+    "spanishSpeakerNote": {
+      "es": "Los verbos en -IR meten un «-iss-» en plural: «je choisis» pero «nous choisissons», «vous réussissez». Si te suena raro, es la señal de que estás ante un verbo de este grupo y no ante uno en -ER."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto corto en presente sobre la vida cotidiana, localizar quién hace cada cosa y justificar tu respuesta con una frase del texto."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers"
+    ],
+    "disallowedGrammar": [
+      "passé composé",
+      "imparfait",
+      "subjonctif",
+      "conditionnel",
+      "voix passive"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 7.5,
+      "maxSentenceWords": 13,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Texto original en presente. Sin tiempos compuestos. Inferencia limitada a unir dos datos explícitos."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Además de explicar los pasos, ¿qué defiende esta receta?",
+      "options": [
+        {
+          "id": "detalle",
+          "text": "Que dos detalles pequeños, el tomate y el limón, deciden el resultado"
+        },
+        {
+          "id": "rapido",
+          "text": "Que la sopa se puede hacer en menos de quince minutos"
+        },
+        {
+          "id": "barato",
+          "text": "Que es la receta más barata de la cocina magrebí"
+        }
+      ],
+      "answer": "detalle",
+      "evidence": "Le citron, c’est le secret. Sans lui, la chorba est correcte. Avec lui, elle est bonne.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La receta empieza avisando del tomate y termina insistiendo en el limón. Ese es su argumento."
+        },
+        "incorrect": {
+          "es": "La receta dice que cuece una hora, así que rápida no es. Y del precio no dice nada. Mira el principio y el final."
+        },
+        "strategy": {
+          "es": "Cuando el principio y el final de un texto insisten en lo mismo, ahí está la idea que el autor quiere dejarte."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Hasta qué altura hay que llenar la cazuela?",
+      "options": [
+        {
+          "id": "tres",
+          "text": "Hasta tres centímetros por debajo del borde"
+        },
+        {
+          "id": "borde",
+          "text": "Hasta el borde mismo"
+        },
+        {
+          "id": "mitad",
+          "text": "Hasta la mitad de la cazuela"
+        }
+      ],
+      "answer": "tres",
+      "evidence": "Remplissez la casserole jusqu’à trois centimètres du bord, pas plus.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Y el «pas plus» del final no es un adorno: es una advertencia."
+        },
+        "incorrect": {
+          "es": "Busca el verbo «remplissez», que significa «llenad». La medida está en la misma frase."
+        },
+        "strategy": {
+          "es": "En una receta, las cantidades y las medidas van pegadas a su verbo. Localiza el verbo y tendrás el dato."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "La receta avisa: «Ne remuez pas trop: la soupe devient trouble». ¿Qué quiere decir «trouble» aquí?",
+      "options": [
+        {
+          "id": "turbia",
+          "text": "Turbia, sin transparencia"
+        },
+        {
+          "id": "fria",
+          "text": "Fría, sin temperatura"
+        },
+        {
+          "id": "salada",
+          "text": "Salada, con demasiada sal"
+        }
+      ],
+      "answer": "turbia",
+      "evidence": "Ne remuez pas trop: la soupe devient trouble.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Remover de más deshace los ingredientes y el caldo pierde la transparencia."
+        },
+        "incorrect": {
+          "es": "Piensa qué le pasa a una sopa si la mueves demasiado. No se enfría ni se sala: se enturbia."
+        },
+        "strategy": {
+          "es": "Cuando una palabra es consecuencia de una acción, imagina la acción. El resultado te da el significado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué insiste la abuela en elegir bien los tomates desde el principio?",
+      "options": [
+        {
+          "id": "final",
+          "text": "Porque un tomate malo acaba notándose en el plato terminado"
+        },
+        {
+          "id": "precio",
+          "text": "Porque los tomates maduros son más baratos"
+        },
+        {
+          "id": "tiempo",
+          "text": "Porque los tomates maduros cuecen más rápido"
+        }
+      ],
+      "answer": "final",
+      "evidence": "une mauvaise tomate finit toujours par se voir dans la soupe",
+      "feedback": {
+        "correct": {
+          "es": "Sí. «Finit par se voir» es «acaba viéndose». El error del principio reaparece al final; por eso hay que evitarlo antes."
+        },
+        "incorrect": {
+          "es": "La receta no habla de precio ni de tiempos de cocción del tomate. Lee la frase que la abuela dice en la segunda línea."
+        },
+        "strategy": {
+          "es": "Cuando un texto cita a alguien, esa frase suele contener la razón de la instrucción anterior. Léelas juntas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la receta prohíbe remover mucho la sopa mientras cuece, para que no se ponga turbia.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Ne remuez pas trop: la soupe devient trouble.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero. Se remueve cinco minutos al principio, con el sofrito, y a partir de ahí se deja tranquila."
+        },
+        "incorrect": {
+          "es": "Busca «Ne remuez pas» y lee lo que viene después de los dos puntos: ahí está la razón de la prohibición."
+        },
+        "strategy": {
+          "es": "Si una acción aparece dos veces en un texto, comprueba en qué momento va cada una. No siempre valen igual."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena los pasos de la receta.",
+      "options": [
+        {
+          "id": "paso-1",
+          "text": "Calentar el aceite y añadir la cebolla, la carne y las especias"
+        },
+        {
+          "id": "paso-2",
+          "text": "Añadir los tomates, el agua y los garbanzos"
+        },
+        {
+          "id": "paso-3",
+          "text": "Dejar cocer una hora a fuego lento"
+        },
+        {
+          "id": "paso-4",
+          "text": "Añadir el cilantro y el zumo de limón"
+        }
+      ],
+      "answer": [
+        "paso-1",
+        "paso-2",
+        "paso-3",
+        "paso-4"
+      ],
+      "evidence": "faites chauffer l’huile … Ajoutez les tomates … Laissez cuire une heure … À la fin, ajoutez la coriandre",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Y fíjate en que la receta marca el último paso con «à la fin», por si quedara alguna duda."
+        },
+        "incorrect": {
+          "es": "El verbo «ajouter» aparece dos veces, con ingredientes distintos. Distingue cuál va antes del agua y cuál va al final."
+        },
+        "strategy": {
+          "es": "En las recetas, el orden lo marcan los verbos, no los ingredientes. Subraya los verbos y numéralos."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe una receta corta de 5–7 frases en francés, de un plato de tu familia. Usa al menos cuatro imperativos y una prohibición con ne… pas."
+    },
+    "minWords": 35,
+    "maxWords": 80,
+    "hints": [
+      "Choisissez…",
+      "Dans une casserole, ajoutez…",
+      "Laissez cuire… minutes.",
+      "Ne… pas trop."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés A1: La receta de la abuela Aïcha | WeLearn"
+    },
+    "description": {
+      "es": "Lee una receta en francés A1 y practica los verbos en -IR (choisir, finir, remplir, réussir) y el imperativo. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/frances/a1/lectura/la-recette-de-mamie-aicha",
+    "indexable": true,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-a1-colocataire-cherche",
+      "fr-a1-le-bus-de-7h12"
+    ]
+  }
+}

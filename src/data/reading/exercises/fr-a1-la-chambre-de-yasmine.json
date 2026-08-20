@@ -1,0 +1,441 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-a1-la-chambre-de-yasmine",
+  "status": "published",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Francés A1"
+  },
+  "slug": "la-chambre-de-yasmine",
+  "series": {
+    "id": "frances-a1-lectura-10",
+    "episode": 4,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-a1-trois-messages-et-un-retard",
+    "nextExerciseId": "fr-a1-colocataire-cherche"
+  },
+  "classification": {
+    "genre": "entrada de diario",
+    "topic": "mudarse de casa",
+    "intent": "learning",
+    "tags": [
+      "frances a1",
+      "lectura",
+      "verbo être",
+      "adjetivos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La habitación de Yasmine"
+    },
+    "intro": {
+      "es": "Una habitación de un paso de ancho, una madre preocupada y una discusión sobre si estrecho es lo mismo que oscuro. Lectura de francés A1."
+    },
+    "mission": {
+      "es": "Averigua por qué la narradora está contenta con una habitación que su madre no aprueba."
+    },
+    "targetText": "Mardi 14 mars. Ma nouvelle chambre est petite. Très petite. Le lit est contre le mur, la table est sous la fenêtre, et entre les deux il y a exactement un pas. Les murs sont blancs et le sol est en bois clair. Mais la fenêtre est grande, et elle est orientée à l’est. À sept heures du matin, toute la chambre est orange. Ma mère est inquiète. Elle dit que la chambre est trop sombre pour étudier. Elle n’est pas sombre: elle est juste étroite. Ce n’est pas la même chose. Mon frère est jaloux, parce que sa chambre est plus grande mais elle donne sur le parking. Je suis contente. Un pas, c’est assez.",
+    "wordCount": 116,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Usar el verbo être para describir cómo son las cosas y cómo están colocadas."
+      },
+      {
+        "es": "Distinguir adjetivos parecidos que no significan lo mismo: petite, étroite, sombre."
+      },
+      {
+        "es": "Notar el género de los nombres a través del artículo y del adjetivo que los acompaña."
+      }
+    ],
+    "grammarFocus": [
+      "verbe-etre",
+      "adjectifs-qualificatifs",
+      "genre-noms"
+    ],
+    "vocabulary": [
+      {
+        "surface": "mur",
+        "lemma": "mur",
+        "glosses": {
+          "es": "pared, muro"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fenêtre",
+        "lemma": "fenêtre",
+        "glosses": {
+          "es": "ventana"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "étroite",
+        "lemma": "étroit",
+        "glosses": {
+          "es": "estrecha"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sombre",
+        "lemma": "sombre",
+        "glosses": {
+          "es": "oscura, con poca luz"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "inquiète",
+        "lemma": "inquiet",
+        "glosses": {
+          "es": "preocupada, inquieta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "jaloux",
+        "lemma": "jaloux",
+        "glosses": {
+          "es": "celoso, envidioso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sol",
+        "lemma": "sol",
+        "glosses": {
+          "es": "suelo (del cuarto)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "contente",
+        "lemma": "content",
+        "glosses": {
+          "es": "contenta, satisfecha"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En francés las plantas y las orientaciones se dicen mucho al describir una casa: que una ventana esté «orientée à l’est» es un dato de valor, porque decide a qué hora entra el sol."
+    },
+    "spanishSpeakerNote": {
+      "es": "Cuidado con «sol»: en francés no es el astro, es el suelo. El sol del cielo es «le soleil». Y fíjate en cómo el adjetivo cambia con el nombre: «petit» pero «petite», «content» pero «contente»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto corto en presente sobre la vida cotidiana, localizar quién hace cada cosa y justificar tu respuesta con una frase del texto."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers"
+    ],
+    "disallowedGrammar": [
+      "passé composé",
+      "imparfait",
+      "subjonctif",
+      "conditionnel",
+      "voix passive"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 8.3,
+      "maxSentenceWords": 22,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Texto original en presente. Sin tiempos compuestos. Inferencia limitada a unir dos datos explícitos."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es la idea central de esta entrada de diario?",
+      "options": [
+        {
+          "id": "defensa",
+          "text": "La narradora defiende una habitación pequeña que a su familia no le convence"
+        },
+        {
+          "id": "queja",
+          "text": "La narradora se queja de que le han dado la peor habitación"
+        },
+        {
+          "id": "mudanza",
+          "text": "La narradora explica cómo organizó la mudanza de la familia"
+        }
+      ],
+      "answer": "defensa",
+      "evidence": "Elle n’est pas sombre: elle est juste étroite. Ce n’est pas la même chose.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Todo el texto es una defensa tranquila, y la frase final la remata: «Un pas, c’est assez»."
+        },
+        "incorrect": {
+          "es": "Fíjate en el tono de la última frase. Quien se queja no termina diciendo que le basta."
+        },
+        "strategy": {
+          "es": "Para la idea principal, mira quién está a favor y quién en contra dentro del texto. La voz que narra suele tener un bando."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Dónde está la mesa dentro de la habitación?",
+      "options": [
+        {
+          "id": "fenetre",
+          "text": "Debajo de la ventana"
+        },
+        {
+          "id": "mur",
+          "text": "Contra la pared, al lado de la cama"
+        },
+        {
+          "id": "porte",
+          "text": "Junto a la puerta"
+        }
+      ],
+      "answer": "fenetre",
+      "evidence": "la table est sous la fenêtre",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La cama es la que está contra la pared; entre las dos cabe exactamente un paso."
+        },
+        "incorrect": {
+          "es": "En la misma frase hay dos muebles y dos sitios. «Le lit est contre le mur» es uno; busca el otro."
+        },
+        "strategy": {
+          "es": "Cuando una frase coloca dos objetos, dibuja el cuarto en un papel. Con dos trazos se acaba la confusión."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "La narradora corrige a su madre: «Elle n’est pas sombre: elle est juste étroite». ¿Qué diferencia está marcando?",
+      "options": [
+        {
+          "id": "luz",
+          "text": "Que la habitación tiene poco espacio, pero no le falta luz"
+        },
+        {
+          "id": "precio",
+          "text": "Que la habitación es barata, pero no es fea"
+        },
+        {
+          "id": "ruido",
+          "text": "Que la habitación es ruidosa, pero no es incómoda"
+        }
+      ],
+      "answer": "luz",
+      "evidence": "la fenêtre est grande … À sept heures du matin, toute la chambre est orange.",
+      "feedback": {
+        "correct": {
+          "es": "Exacto. «Sombre» es de luz, «étroite» es de espacio. La ventana grande y la luz naranja demuestran quién tiene razón."
+        },
+        "incorrect": {
+          "es": "Busca antes en el texto qué se dice de la ventana. Ese dato es la prueba que la narradora usa sin decirlo."
+        },
+        "strategy": {
+          "es": "Cuando alguien corrige una palabra por otra, la diferencia entre ambas es el corazón del texto. Búscala."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "La habitación del hermano es más grande. ¿Por qué la narradora no la envidia?",
+      "options": [
+        {
+          "id": "vue",
+          "text": "Porque la ventana del hermano da al parking"
+        },
+        {
+          "id": "bruit",
+          "text": "Porque la habitación del hermano es más ruidosa"
+        },
+        {
+          "id": "petite",
+          "text": "Porque la habitación del hermano también es estrecha"
+        }
+      ],
+      "answer": "vue",
+      "evidence": "sa chambre est plus grande mais elle donne sur le parking",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Todo el texto valora la luz y las vistas por encima del tamaño, y esa frase lo confirma."
+        },
+        "incorrect": {
+          "es": "El texto no habla de ruido ni dice que la del hermano sea estrecha. Lee lo que va después del «mais»."
+        },
+        "strategy": {
+          "es": "La palabra «mais» avisa de que viene lo importante. Lo que va después casi siempre pesa más que lo de antes."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la madre y la hija están de acuerdo en cómo es la habitación nueva.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Elle dit que la chambre est trop sombre pour étudier. Elle n’est pas sombre",
+      "feedback": {
+        "correct": {
+          "es": "Falso. La madre dice «sombre» y la hija lo niega en la frase siguiente. Es un desacuerdo de una sola palabra."
+        },
+        "incorrect": {
+          "es": "Compara las dos frases seguidas: una dice que es oscura y la otra lo niega. No pueden ser las dos verdad."
+        },
+        "strategy": {
+          "es": "Cuando dos frases seguidas dicen cosas opuestas, es que hay dos voces distintas. Identifica de quién es cada una."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "¿Qué tono tiene la frase final, «Un pas, c’est assez»?",
+      "options": [
+        {
+          "id": "conforme",
+          "text": "Conformidad satisfecha: le vale con lo que tiene"
+        },
+        {
+          "id": "triste",
+          "text": "Tristeza resignada: se aguanta porque no hay más remedio"
+        },
+        {
+          "id": "enfadado",
+          "text": "Enfado: protesta por el poco espacio"
+        }
+      ],
+      "answer": "conforme",
+      "evidence": "Je suis contente. Un pas, c’est assez.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La frase anterior, «Je suis contente», no deja lugar a dudas: es una conclusión en positivo."
+        },
+        "incorrect": {
+          "es": "No leas la frase final sola. La de antes dice «Je suis contente», y eso decide el tono de las dos."
+        },
+        "strategy": {
+          "es": "Una frase corta al final puede sonar a cualquier cosa. Léela siempre junto con la anterior."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Describe tu habitación en 4–6 frases en francés. Usa el verbo être al menos cuatro veces y tres adjetivos distintos, con la terminación que le toque a cada nombre."
+    },
+    "minWords": 30,
+    "maxWords": 70,
+    "hints": [
+      "Ma chambre est…",
+      "Le lit est contre…",
+      "La fenêtre est…",
+      "Je suis content / contente parce que…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés A1: La habitación de Yasmine | WeLearn"
+    },
+    "description": {
+      "es": "Lee una entrada de diario en francés A1 y practica el verbo être, los adjetivos y el género de los nombres. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/frances/a1/lectura/la-chambre-de-yasmine",
+    "indexable": true,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-a1-trois-messages-et-un-retard",
+      "fr-a1-colocataire-cherche"
+    ]
+  }
+}

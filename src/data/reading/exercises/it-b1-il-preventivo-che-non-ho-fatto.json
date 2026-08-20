@@ -1,0 +1,474 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-b1-il-preventivo-che-non-ho-fatto",
+  "status": "published",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Italiano B1"
+  },
+  "slug": "il-preventivo-che-non-ho-fatto",
+  "series": {
+    "id": "italiano-b1-lectura-10",
+    "episode": 1,
+    "totalEpisodes": 10,
+    "previousExerciseId": null,
+    "nextExerciseId": "it-b1-sei-contro-sei"
+  },
+  "classification": {
+    "genre": "relato de oficio",
+    "topic": "una fontanera y un presupuesto de palabra",
+    "intent": "learning",
+    "tags": [
+      "italiano b1",
+      "lectura",
+      "periodo ipotetico",
+      "condizionale passato"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El presupuesto que no escribí"
+    },
+    "intro": {
+      "es": "Diecinueve años de fontanería y un solo arrepentimiento: un presupuesto dado de palabra en el ascensor, en diez segundos. Lectura de italiano B1."
+    },
+    "mission": {
+      "es": "Averigua para qué sirve de verdad un presupuesto escrito, según ella."
+    },
+    "targetText": "Faccio l'idraulico da diciannove anni e ho un solo rimpianto professionale. Non è un lavoro fatto male. È un preventivo che non ho scritto.\n\nNel 2019 la signora Ferri, che abita al piano sotto il mio, mi ha chiesto di rifare i tubi del bagno. Abitiamo nello stesso palazzo da undici anni. Le ho detto una cifra a voce, in ascensore, in dieci secondi: milleduecento euro. Lei ha detto va bene. Non ho scritto niente, perché tra vicini non si scrive.\n\nQuando ho aperto il muro ho trovato una cosa che non avevo previsto: la colonna di scarico era di piombo e andava sostituita tutta, dal secondo piano al piano terra. Se avessi fatto un preventivo scritto, ci sarebbe stata una riga con tre parole: salvo imprevisti strutturali. Non c'era nessuna riga, perché non c'era nessun foglio.\n\nIl lavoro è finito a duemilanovecento euro. Io gliene ho chiesti duemilaquattrocento, perché mi vergognavo. Lei mi ha dato milleduecento e ha detto: la cifra era questa.\n\nNon aveva torto. Non aveva nemmeno ragione. Semplicemente, tra noi due non esisteva niente che potesse dire chi si era sbagliato.\n\nHo perso milleduecento euro e ho perso una vicina. Non ci salutiamo da sei anni. Ci incontriamo in ascensore due volte al mese e guardiamo il pavimento come due adolescenti.\n\nLa parte che mi fa più rabbia non è il denaro. È che se avessi passato dieci minuti a scrivere un foglio, adesso lei mi chiederebbe ancora il sale quando lo finisce. Il preventivo non serve a difenderti dal cliente. Serve a non dover scegliere tra i soldi e il vicino.\n\nAdesso lo faccio a tutti. A mia sorella, a mio cognato, al ragazzo che mi taglia i capelli. Qualcuno si offende. Uno mi ha detto: non ti fidi di me? Gli ho risposto che è il contrario. Il foglio esiste proprio perché ci fidiamo, e perché vogliamo continuare a fidarci anche dopo.\n\nUna volta, dopo un anno, sono scesa con una cartellina e le fatture del piombo. Volevo solo farle vedere i numeri, non chiederle niente. Lei ha aperto la porta di dieci centimetri e ha detto: adesso è tardi per i fogli. Aveva ragione anche in quello. Un preventivo che arriva dopo non è un preventivo: è una difesa.\n\nCredo che sia la cosa più utile che ho imparato in diciannove anni, e non l'ho imparata da un altro idraulico. L'ho imparata perdendo milleduecento euro e una persona che mi piaceva.",
+    "wordCount": 408,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Construir el periodo ipotetico dell'impossibilità: se + congiuntivo trapassato, condizionale passato."
+      },
+      {
+        "es": "Usar el condizionale passato para lo que habría pasado y no pasó."
+      },
+      {
+        "es": "Distinguir el motivo económico del motivo real de un arrepentimiento."
+      }
+    ],
+    "grammarFocus": [
+      "periodo-ipotetico-b1",
+      "condizionale-passato-b1",
+      "passato-prossimo-avere-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "idraulico",
+        "lemma": "idraulico",
+        "glosses": {
+          "es": "fontanero"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rimpianto",
+        "lemma": "rimpianto",
+        "glosses": {
+          "es": "arrepentimiento por lo que no se hizo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "preventivo",
+        "lemma": "preventivo",
+        "glosses": {
+          "es": "presupuesto por escrito"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tubi",
+        "lemma": "tubo",
+        "glosses": {
+          "es": "tuberías"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "scarico",
+        "lemma": "scarico",
+        "glosses": {
+          "es": "desagüe; «colonna di scarico» es la bajante"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "piombo",
+        "lemma": "piombo",
+        "glosses": {
+          "es": "plomo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vergognavo",
+        "lemma": "vergognarsi",
+        "glosses": {
+          "es": "me daba vergüenza"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cognato",
+        "lemma": "cognato",
+        "glosses": {
+          "es": "cuñado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Las bajantes de plomo son habituales en los edificios italianos anteriores a 1970 y su sustitución afecta a toda la columna del inmueble, no a un solo piso. Aparecen al abrir la pared, no antes."
+    },
+    "spanishSpeakerNote": {
+      "es": "La condicional imposible italiana funciona como la española pero con congiuntivo trapassato: «se avessi fatto… ci sarebbe stata» es «si hubiera hecho… habría habido». Fíjate en la mixta del final: «se avessi passato…, adesso mi chiederebbe», con consecuencia en el presente."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto italiano largo que desarrolla una idea y cambia de dirección, distinguir el hecho de la opinión por la forma del verbo, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere",
+      "avverbi-frequenza-modo-a2",
+      "ci-vuole-vogliono-a2",
+      "comparativi-a2",
+      "condizionale-presente-a2",
+      "congiunzioni-logiche-a2",
+      "da-presente-a2",
+      "forma-cortesia-a2",
+      "futuro-probabilita-a2",
+      "futuro-semplice-a2",
+      "imperfetto-a2",
+      "passato-prossimo-avere-a2",
+      "passato-prossimo-essere-a2",
+      "periodo-ipotetico-reale-a2",
+      "piacere-verbi-simili-a2",
+      "pronomi-diretti-a2",
+      "pronomi-indiretti-a2",
+      "pronomi-relativi-a2",
+      "stare-per-a2",
+      "trapassato-prossimo-a2",
+      "verbi-riflessivi-a2",
+      "condizionale-passato-b1",
+      "congiuntivo-passato-b1",
+      "congiuntivo-presente-b1",
+      "futuro-anteriore-b1",
+      "periodo-ipotetico-b1",
+      "trapassato-prossimo-b1"
+    ],
+    "disallowedGrammar": [
+      "passato remoto",
+      "trapassato remoto",
+      "infinito sostantivato letterario",
+      "costruzioni participiali estese"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 11,
+      "maxSentenceWords": 30,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Congiuntivo presente y passato, condizionale passato, futuro anteriore, trapassato prossimo y las tres condicionales. El congiuntivo imperfetto aparece solo dentro del periodo ipotetico dell'impossibilità, que es el propio tema del nivel. Sin passato remoto."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Para qué sirve un presupuesto escrito según la narradora?",
+      "options": [
+        {
+          "id": "relacion",
+          "text": "Para no tener que elegir entre el dinero y la relación con la otra persona"
+        },
+        {
+          "id": "cliente",
+          "text": "Para poder demandar al cliente si no paga"
+        },
+        {
+          "id": "precio",
+          "text": "Para poder subir el precio a mitad de obra"
+        }
+      ],
+      "answer": "relacion",
+      "evidence": "Il preventivo non serve a difenderti dal cliente. Serve a non dover scegliere tra i soldi e il vicino.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo formula descartando primero la lectura obvia."
+        },
+        "incorrect": {
+          "es": "El texto niega expresamente que sirva para defenderse del cliente, y ella no subió nada. Busca las dos frases seguidas sobre el preventivo."
+        },
+        "strategy": {
+          "es": "Cuando un texto dice «no sirve para X, sirve para Y», ahí tienes la tesis en dos frases."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto acabó cobrando por un trabajo de 2.900 euros?",
+      "options": [
+        {
+          "id": "1200",
+          "text": "Mil doscientos, la cifra dicha de palabra"
+        },
+        {
+          "id": "2400",
+          "text": "Dos mil cuatrocientos, lo que pidió"
+        },
+        {
+          "id": "2900",
+          "text": "Dos mil novecientos, el coste real"
+        }
+      ],
+      "answer": "1200",
+      "evidence": "Io gliene ho chiesti duemilaquattrocento, perché mi vergognavo. Lei mi ha dato milleduecento e ha detto: la cifra era questa.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: pidió 2.400 por vergüenza y recibió los 1.200 iniciales."
+        },
+        "incorrect": {
+          "es": "Los 2.400 los pidió y los 2.900 son el coste. Busca lo que ella le dio."
+        },
+        "strategy": {
+          "es": "Con tres cifras en juego, empareja cada una con quién la dijo y en qué momento."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Dice que tiene un «rimpianto professionale». ¿Qué significa?",
+      "options": [
+        {
+          "id": "arrepentimiento",
+          "text": "Un arrepentimiento por algo que no hizo"
+        },
+        {
+          "id": "reclamacion",
+          "text": "Una reclamación de un cliente"
+        },
+        {
+          "id": "ascenso",
+          "text": "Un ascenso que no le dieron"
+        }
+      ],
+      "answer": "arrepentimiento",
+      "evidence": "ho un solo rimpianto professionale. Non è un lavoro fatto male. È un preventivo che non ho scritto.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y las dos frases siguientes lo concretan: no un trabajo mal hecho, un papel no escrito."
+        },
+        "incorrect": {
+          "es": "No es una queja de un cliente ni tiene que ver con su carrera. Lee las dos frases que lo definen."
+        },
+        "strategy": {
+          "es": "Si el texto define una palabra con «no es X, es Y», la segunda mitad es la respuesta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué responde «es al contrario» a quien le pregunta si no se fía?",
+      "options": [
+        {
+          "id": "durar",
+          "text": "Porque el papel existe para que la confianza pueda seguir después del trabajo"
+        },
+        {
+          "id": "ley",
+          "text": "Porque la ley le obliga a hacer presupuesto escrito"
+        },
+        {
+          "id": "precio",
+          "text": "Porque así puede cobrar más caro a los conocidos"
+        }
+      ],
+      "answer": "durar",
+      "evidence": "Il foglio esiste proprio perché ci fidiamo, e perché vogliamo continuare a fidarci anche dopo.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y encaja con toda la historia: perdió a la vecina, no el dinero."
+        },
+        "incorrect": {
+          "es": "No menciona ninguna ley ni cobra más a los conocidos. Lee su respuesta completa."
+        },
+        "strategy": {
+          "es": "Cuando alguien dice «es al contrario», la explicación viene en la misma frase o en la siguiente."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la vecina se negó a pagar porque el trabajo había quedado mal hecho.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Non è un lavoro fatto male … Lei mi ha dato milleduecento e ha detto: la cifra era questa.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: pagó la cifra acordada, y el texto dice desde el principio que el trabajo no estaba mal hecho."
+        },
+        "incorrect": {
+          "es": "Sí pagó, y el texto descarta el trabajo mal hecho en su tercera frase."
+        },
+        "strategy": {
+          "es": "Comprueba las dos mitades de la pregunta por separado: si pagó y si el trabajo estaba mal."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena los hechos del relato.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Da la cifra de palabra en el ascensor"
+        },
+        {
+          "id": "p2",
+          "text": "Abre la pared y encuentra la bajante de plomo"
+        },
+        {
+          "id": "p3",
+          "text": "Ella paga la cifra pactada y dejan de saludarse"
+        },
+        {
+          "id": "p4",
+          "text": "Ahora hace presupuesto escrito incluso a su familia"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Le ho detto una cifra a voce, in ascensore … Quando ho aperto il muro ho trovato una cosa che non avevo previsto … Non ci salutiamo da sei anni … Adesso lo faccio a tutti.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: el acuerdo, la sorpresa, la ruptura y la lección."
+        },
+        "incorrect": {
+          "es": "Guíate por «Nel 2019», «Quando ho aperto il muro» y «Adesso»."
+        },
+        "strategy": {
+          "es": "Un relato de aprendizaje profesional termina en el presente: busca «adesso»."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 12–15 frases en italiano sobre algo que harías distinto si pudieras volver atrás. Usa tres condicionales imposibles y cuatro verbos en condizionale passato."
+    },
+    "minWords": 80,
+    "maxWords": 140,
+    "hints": [
+      "Se avessi scritto…, non sarebbe successo…",
+      "Avrei dovuto…",
+      "Adesso mi chiederebbe ancora…",
+      "Credo che sia la cosa più utile…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano B1: el presupuesto que no escribí | WeLearn"
+    },
+    "description": {
+      "es": "Lee un relato en italiano B1 y practica el periodo ipotetico y el condizionale passato. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/italiano/b1/lectura/il-preventivo-che-non-ho-fatto",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-b1-sei-contro-sei"
+    ]
+  }
+}

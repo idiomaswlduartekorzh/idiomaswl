@@ -1,0 +1,453 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-a1-sijang-eseo",
+  "status": "published",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Coreano A1",
+    "topik": 1,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. A1 se sitúa alrededor del TOPIK I nivel 1, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "sijang-eseo",
+  "series": {
+    "id": "coreano-a1-lectura-10",
+    "episode": 6,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-a1-beoseu-siganpyo",
+    "nextExerciseId": "ko-a1-keopireul-an-masyeoyo"
+  },
+  "classification": {
+    "genre": "escena de mercado",
+    "topic": "la compra del sábado",
+    "intent": "learning",
+    "tags": [
+      "coreano a1",
+      "lectura",
+      "números nativos y contadores",
+      "partícula 에서"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "En el mercado"
+    },
+    "intro": {
+      "es": "Cinco manzanas, diez huevos y cinco minutos parados delante de la floristería sin comprar nada. Lectura de coreano A1."
+    },
+    "mission": {
+      "es": "Cuenta lo que compran, y averigua qué es lo que más le gusta del mercado."
+    },
+    "targetText": "토요일 아침에 저는 어머니와 시장에 가요. 시장에서 우리는 많이 사요. 사과 다섯 개, 계란 열 개, 두부 두 모를 사요. 생선도 한 마리 사요. 어머니는 생선 가게에서 항상 오래 이야기해요. 아저씨는 어머니를 알아요. 그래서 생선을 하나 더 줘요. 그다음에 우리는 떡집에 가요. 떡을 여섯 개 사요. 세 개는 집에서 먹어요. 세 개는 옆집 할머니에게 줘요. 시장에서 제일 좋은 곳은 떡집이 아니에요. 꽃집이에요. 저는 꽃을 안 사요. 돈이 없어요. 하지만 꽃집 앞에서 오 분 동안 서 있어요. 어머니는 기다려요. 어머니도 그 냄새를 좋아해요.",
+    "wordCount": 82,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Contar objetos con el número nativo y su contador: 다섯 개, 한 마리, 두 모."
+      },
+      {
+        "es": "Usar 에서 para el lugar donde ocurre la acción y distinguirla de 에."
+      },
+      {
+        "es": "Seguir una escena con varios sitios y varias cantidades a la vez."
+      }
+    ],
+    "grammarFocus": [
+      "numeros-nativos-contadores",
+      "marcador-lugar-eseo"
+    ],
+    "vocabulary": [
+      {
+        "surface": "사과",
+        "lemma": "사과",
+        "reading": "sagwa",
+        "glosses": {
+          "es": "manzana"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "계란",
+        "lemma": "계란",
+        "reading": "gyeran",
+        "glosses": {
+          "es": "huevo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "두부",
+        "lemma": "두부",
+        "reading": "dubu",
+        "glosses": {
+          "es": "tofu"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "모",
+        "lemma": "모",
+        "reading": "mo",
+        "glosses": {
+          "es": "contador para bloques de tofu"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "생선",
+        "lemma": "생선",
+        "reading": "saengseon",
+        "glosses": {
+          "es": "pescado (para comer)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "떡",
+        "lemma": "떡",
+        "reading": "tteok",
+        "glosses": {
+          "es": "pastel de arroz"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "꽃집",
+        "lemma": "꽃집",
+        "reading": "kkotjip",
+        "glosses": {
+          "es": "floristería"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "냄새",
+        "lemma": "냄새",
+        "reading": "naemsae",
+        "glosses": {
+          "es": "olor"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En los mercados tradicionales coreanos el trato personal cuenta: al cliente habitual se le añade algo de más, un gesto llamado 서비스. Y el tofu se vende por bloques, que se cuentan con 모."
+    },
+    "spanishSpeakerNote": {
+      "es": "Cada cosa tiene su contador: 개 para objetos, 마리 para animales, 모 para bloques de tofu, 대 para vehículos. Y ojo con 에 frente a 에서: 시장에 가요 es «voy al mercado» (destino); 시장에서 사요 es «compro en el mercado» (lugar de la acción)."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en 해요체 sobre la vida cotidiana, identificar de quién se habla gracias a las partículas de tema y de objeto, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas"
+    ],
+    "disallowedGrammar": [
+      "clausulas-relativas",
+      "discurso-reportado",
+      "honorificos-avanzados",
+      "voz pasiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 4.6,
+      "maxSentenceWords": 10,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Todo en 해요체 salvo la lectura 10 (합니다체, carta formal). Sin cláusulas de relativo ni discurso indirecto. Romanización disponible como apoyo opcional."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué revela el texto al final?",
+      "options": [
+        {
+          "id": "flores",
+          "text": "Que lo que más le gusta del mercado es algo que no compra"
+        },
+        {
+          "id": "gasto",
+          "text": "Que gastan demasiado dinero cada sábado"
+        },
+        {
+          "id": "prisa",
+          "text": "Que van con prisa y no pueden pararse"
+        }
+      ],
+      "answer": "flores",
+      "evidence": "시장에서 제일 좋은 곳은 떡집이 아니에요. 꽃집이에요. 저는 꽃을 안 사요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el remate está en que la madre también se para: 어머니도 그 냄새를 좋아해요."
+        },
+        "incorrect": {
+          "es": "No hay prisa —se paran cinco minutos— ni queja por el gasto. Busca la frase con 제일 좋은 곳."
+        },
+        "strategy": {
+          "es": "La expresión 제일 (el más) señala lo que el autor destaca. Localízala y tendrás el foco del texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántos pasteles de arroz compran?",
+      "options": [
+        {
+          "id": "seis",
+          "text": "Seis"
+        },
+        {
+          "id": "tres",
+          "text": "Tres"
+        },
+        {
+          "id": "diez",
+          "text": "Diez"
+        }
+      ],
+      "answer": "seis",
+      "evidence": "떡을 여섯 개 사요. 세 개는 집에서 먹어요. 세 개는 옆집 할머니에게 줘요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: 여섯 개, seis. Los tres y tres son el reparto, y los diez son los huevos."
+        },
+        "incorrect": {
+          "es": "El texto compra seis y luego los reparte en dos mitades. Y los diez son de otra cosa."
+        },
+        "strategy": {
+          "es": "Distingue el total de su reparto. Si dos cifras suman una tercera, esa tercera es el total."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice 두부 두 모를 사요. ¿Qué es 모 aquí?",
+      "options": [
+        {
+          "id": "contador",
+          "text": "El contador que se usa para bloques de tofu"
+        },
+        {
+          "id": "marca",
+          "text": "La marca del tofu"
+        },
+        {
+          "id": "peso",
+          "text": "Una medida de peso"
+        }
+      ],
+      "answer": "contador",
+      "evidence": "사과 다섯 개, 계란 열 개, 두부 두 모를 사요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Está en una lista donde cada producto va con su contador: 개 para manzanas y huevos, 모 para el tofu."
+        },
+        "incorrect": {
+          "es": "Fíjate en la posición: va detrás de un número, igual que 개 en los dos productos anteriores."
+        },
+        "strategy": {
+          "es": "Si una sílaba va siempre detrás de un número y delante de nada, es un contador. Compárala con las de al lado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el pescadero les da un pescado de más?",
+      "options": [
+        {
+          "id": "clienta",
+          "text": "Porque la madre es clienta habitual y se conocen"
+        },
+        {
+          "id": "viejo",
+          "text": "Porque ese pescado ya no está fresco"
+        },
+        {
+          "id": "oferta",
+          "text": "Porque hay una oferta ese día"
+        }
+      ],
+      "answer": "clienta",
+      "evidence": "어머니는 생선 가게에서 항상 오래 이야기해요. 아저씨는 어머니를 알아요. 그래서 생선을 하나 더 줘요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Las tres frases están encadenadas por 그래서: hablan mucho, él la conoce, y por eso le añade uno."
+        },
+        "incorrect": {
+          "es": "El texto no dice nada de ofertas ni de frescura. Fíjate en el 그래서 y en lo que viene antes."
+        },
+        "strategy": {
+          "es": "El conector 그래서 (por eso) une causa y efecto. Si lo encuentras, la causa está justo delante."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el narrador compra flores todas las semanas en el mercado.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "저는 꽃을 안 사요. 돈이 없어요.",
+      "feedback": {
+        "correct": {
+          "es": "Falso, y lo dice sin rodeos: no compra flores porque no tiene dinero. Solo se queda mirando."
+        },
+        "incorrect": {
+          "es": "La floristería es su sitio favorito, pero eso no significa que compre. Busca 안 사요."
+        },
+        "strategy": {
+          "es": "Que algo guste no implica que se compre. Busca el verbo en negativo antes de responder."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "reference",
+      "skill": "reference",
+      "prompt": "En 어머니도 그 냄새를 좋아해요, ¿de qué olor se habla?",
+      "options": [
+        {
+          "id": "flores",
+          "text": "Del de la floristería"
+        },
+        {
+          "id": "tteok",
+          "text": "Del de los pasteles de arroz"
+        },
+        {
+          "id": "pescado",
+          "text": "Del de la pescadería"
+        }
+      ],
+      "answer": "flores",
+      "evidence": "꽃집 앞에서 오 분 동안 서 있어요. 어머니는 기다려요. 어머니도 그 냄새를 좋아해요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Están parados delante de la floristería, y el 도 (también) indica que comparte su gusto."
+        },
+        "incorrect": {
+          "es": "Mira delante de qué tienda están parados en las frases anteriores. Ese es el olor del que habla."
+        },
+        "strategy": {
+          "es": "El demostrativo 그 remite a algo ya mencionado. Busca el último lugar u objeto nombrado antes."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en coreano sobre una compra que haces a menudo. Nombra cuatro productos con su número nativo y su contador, y usa 에서 dos veces."
+    },
+    "minWords": 25,
+    "maxWords": 60,
+    "hints": [
+      "저는 …에 가요.",
+      "…에서 …를 사요.",
+      "사과 … 개, … 두 개",
+      "제일 좋은 곳은 …이에요."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano A1: En el mercado | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto en coreano A1 y practica los números nativos con sus contadores (개, 마리, 모) y la partícula de lugar 에서."
+    },
+    "canonicalPath": "/practica/coreano/a1/lectura/sijang-eseo",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-a1-beoseu-siganpyo",
+      "ko-a1-keopireul-an-masyeoyo"
+    ]
+  }
+}

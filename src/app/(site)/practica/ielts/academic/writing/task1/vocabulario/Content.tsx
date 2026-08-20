@@ -165,14 +165,14 @@ export default function VocabularioDatosContent() {
                 <article key={visual} style={{ padding: '0.75rem', borderRadius: 8, background: 'var(--bg)', border: '1px solid var(--line-soft)' }}>
                   <h3 style={{ margin: '0 0 0.25rem', fontSize: '0.88rem' }}>{visual}</h3>
                   <p style={{ margin: '0 0 0.35rem', color: 'var(--muted)', fontSize: '0.78rem', lineHeight: 1.45 }}>{purpose}</p>
-                  <p style={{ margin: 0, color: '#0f3d8c', fontSize: '0.76rem', lineHeight: 1.5, fontFamily: 'var(--mono)' }}>{language}</p>
+                  <p style={{ margin: 0, color: 'var(--wl-on-panel-link, #0f3d8c)', fontSize: '0.76rem', lineHeight: 1.5, fontFamily: 'var(--mono)' }}>{language}</p>
                 </article>
               ))}
             </div>
           </div>
 
           <div style={{ padding: '1.1rem', borderRadius: 8, border: '1px solid var(--line-soft)', background: 'var(--bg-2)', marginBottom: '1.5rem' }}>
-            <p style={{ margin: '0 0 0.25rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase' }}>Read the visual before choosing vocabulary</p>
+            <p style={{ margin: '0 0 0.25rem', color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase' }}>Read the visual before choosing vocabulary</p>
             <p style={{ margin: '0 0 0.8rem', color: 'var(--muted)', fontSize: '0.88rem', lineHeight: 1.55 }}>
               The correct verb and modifier depend on what the visual actually shows. Identify the direction, size and time frame first; then build the sentence.
             </p>
@@ -200,7 +200,7 @@ export default function VocabularioDatosContent() {
                   <h3 style={{ margin: '0 0 0.45rem', fontSize: '0.92rem' }}>{group.title}</h3>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.3rem', marginBottom: '0.55rem' }}>
                     {group.items.map((item) => (
-                      <span key={item} style={{ padding: '0.16rem 0.45rem', borderRadius: 999, background: 'rgba(15,61,140,0.08)', color: '#0f3d8c', fontSize: '0.72rem', fontFamily: 'var(--mono)', fontWeight: 700 }}>
+                      <span key={item} style={{ padding: '0.16rem 0.45rem', borderRadius: 999, background: 'rgba(15,61,140,0.08)', color: 'var(--wl-on-panel-link, #0f3d8c)', fontSize: '0.72rem', fontFamily: 'var(--mono)', fontWeight: 700 }}>
                         {item}
                       </span>
                     ))}
@@ -225,19 +225,19 @@ export default function VocabularioDatosContent() {
           {/* Vocabulary reference */}
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1.5rem' }}>
             <div style={{ padding: '0.9rem', borderRadius: 10, background: 'rgba(5,150,105,0.06)', border: '1px solid rgba(5,150,105,0.2)' }}>
-              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Upward verbs ↑</p>
+              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: 'var(--wl-on-panel-ok, #059669)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Upward verbs ↑</p>
               <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>rise · increase · grow · climb · surge · recover · peak</p>
             </div>
             <div style={{ padding: '0.9rem', borderRadius: 10, background: 'rgba(220,38,38,0.05)', border: '1px solid rgba(220,38,38,0.2)' }}>
-              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#dc2626', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Downward verbs ↓</p>
+              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: 'var(--wl-on-panel-alert, #dc2626)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Downward verbs ↓</p>
               <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>fall · decrease · decline · drop · plunge · dip</p>
             </div>
             <div style={{ padding: '0.9rem', borderRadius: 10, background: 'rgba(15,61,140,0.05)', border: '1px solid rgba(15,61,140,0.15)' }}>
-              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Adverbs</p>
+              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Adverbs</p>
               <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>sharply · dramatically · significantly · gradually · steadily · slightly · moderately</p>
             </div>
             <div style={{ padding: '0.9rem', borderRadius: 10, background: 'rgba(124,58,237,0.05)', border: '1px solid rgba(124,58,237,0.15)' }}>
-              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#7c3aed', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Structure</p>
+              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: 'var(--wl-on-panel-purple, #7c3aed)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Structure</p>
               <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>X [verb] [adverb] from A to B between [year] and [year]</p>
             </div>
           </div>
@@ -252,7 +252,7 @@ export default function VocabularioDatosContent() {
 
           {/* Data card */}
           <div className="wl-card" style={{ padding: '1.5rem', borderLeft: '4px solid #0f3d8c', marginBottom: '1.25rem' }}>
-            <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.65rem' }}>Data</p>
+            <p style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.65rem' }}>Data</p>
             <p style={{ margin: '0 0 0.5rem', fontWeight: 700, fontSize: '1rem', color: 'var(--ink)' }}>{sc.subject}</p>
             <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
               <div>
@@ -317,11 +317,11 @@ export default function VocabularioDatosContent() {
           {revealed && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               <div className="wl-card" style={{ padding: '1.25rem', borderLeft: '3px solid #059669' }}>
-                <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.5rem' }}>Model answer</p>
+                <p style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--wl-on-panel-ok, #059669)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.5rem' }}>Model answer</p>
                 <p style={{ margin: 0, fontSize: '0.95rem', lineHeight: 1.7, color: 'var(--ink)' }}>{sc.correctSentence}</p>
                 <div style={{ marginTop: '0.5rem', display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
-                  <span style={{ fontSize: '0.72rem', padding: '0.15rem 0.5rem', borderRadius: 10, background: 'rgba(5,150,105,0.1)', color: '#059669', fontFamily: 'var(--mono)', fontWeight: 700 }}>Verbo: {sc.correctVerb}</span>
-                  {sc.correctAdverb && <span style={{ fontSize: '0.72rem', padding: '0.15rem 0.5rem', borderRadius: 10, background: 'rgba(124,58,237,0.1)', color: '#7c3aed', fontFamily: 'var(--mono)', fontWeight: 700 }}>Adverb: {sc.correctAdverb}</span>}
+                  <span style={{ fontSize: '0.72rem', padding: '0.15rem 0.5rem', borderRadius: 10, background: 'rgba(5,150,105,0.1)', color: 'var(--wl-on-panel-ok, #059669)', fontFamily: 'var(--mono)', fontWeight: 700 }}>Verbo: {sc.correctVerb}</span>
+                  {sc.correctAdverb && <span style={{ fontSize: '0.72rem', padding: '0.15rem 0.5rem', borderRadius: 10, background: 'rgba(124,58,237,0.1)', color: 'var(--wl-on-panel-purple, #7c3aed)', fontFamily: 'var(--mono)', fontWeight: 700 }}>Adverb: {sc.correctAdverb}</span>}
                 </div>
               </div>
               <button className="btn btn-sm" onClick={next} style={{ alignSelf: 'flex-start' }}>

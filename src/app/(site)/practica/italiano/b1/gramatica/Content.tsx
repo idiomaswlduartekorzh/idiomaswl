@@ -240,8 +240,8 @@ export default function GramaticaItalianoB1() {
 
   function bs(done: boolean, ok: boolean, sel: boolean) {
     if (!done) return { background: 'var(--bg-2)', border: '1px solid var(--line-soft)', color: 'var(--ink)' };
-    if (ok) return { background: 'rgba(5,150,105,0.1)', border: '1px solid #059669', color: '#059669' };
-    if (sel) return { background: 'rgba(220,38,38,0.1)', border: '1px solid #dc2626', color: '#dc2626' };
+    if (ok) return { background: 'rgba(5,150,105,0.1)', border: '1px solid #059669', color: 'var(--wl-on-panel-ok, #059669)' };
+    if (sel) return { background: 'rgba(220,38,38,0.1)', border: '1px solid #dc2626', color: 'var(--wl-on-panel-alert, #dc2626)' };
     return { background: 'var(--bg-2)', border: '1px solid var(--line-soft)', color: 'var(--muted)' };
   }
 
@@ -276,13 +276,13 @@ export default function GramaticaItalianoB1() {
           }}>
             <div style={{ width: 44, height: 44, borderRadius: 11, background: '#009246', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.25rem', flexShrink: 0 }}>🎯</div>
             <div style={{ flex: 1, minWidth: 220 }}>
-              <div style={{ fontSize: '0.68rem', fontWeight: 800, color: '#009246', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.2rem' }}>Quest guidato · 6 livelli</div>
+              <div style={{ fontSize: '0.68rem', fontWeight: 800, color: 'var(--wl-on-panel-ok, #009246)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.2rem' }}>Quest guidato · 6 livelli</div>
               <div style={{ fontWeight: 850, color: 'var(--ink)', fontSize: '1rem', marginBottom: '0.18rem' }}>Particelle pronominali: ci, ne, gli, le, vi</div>
               <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.84rem', lineHeight: 1.55 }}>
                 Guida aperta, progressione a XP e sei livelli per distinguere luogo, quantità, complemento indiretto e forme pronominali in contesto.
               </p>
             </div>
-            <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '0.55rem', color: '#009246', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 800 }}>
+            <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '0.55rem', color: 'var(--wl-on-panel-ok, #009246)', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 800 }}>
               <span>48 esercizi</span>
               <span style={{ fontSize: '1rem' }}>→</span>
             </div>
@@ -388,7 +388,7 @@ export default function GramaticaItalianoB1() {
             const ans = transAns[qi]; const done = ans !== undefined;
             return (
               <div key={qi} style={{ padding: '1rem 1.2rem', borderRadius: 12, border: `1.5px solid ${done ? (ans === q.a ? '#05966955' : '#dc262644') : 'var(--line-soft)'}`, background: done ? (ans === q.a ? 'rgba(5,150,105,0.03)' : 'rgba(220,38,38,0.03)') : 'var(--bg)', marginBottom: '0.7rem' }}>
-                <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#d97706', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.3rem' }}>🔄 {q.prompt}</div>
+                <div style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--wl-on-panel-warn, #d97706)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.3rem' }}>🔄 {q.prompt}</div>
                 <p style={{ margin: '0 0 0.7rem', fontSize: '0.92rem', color: 'var(--ink)', fontStyle: 'italic', borderLeft: '3px solid var(--line-soft)', paddingLeft: '0.5rem', fontWeight: 600 }}>
                   &ldquo;{q.s}&rdquo;
                 </p>
@@ -426,8 +426,8 @@ export default function GramaticaItalianoB1() {
             const ans = errAns[qi]; const done = ans !== undefined;
             return (
               <div key={qi} style={{ padding: '1rem 1.2rem', borderRadius: 12, border: `1.5px solid ${done ? (ans === q.a ? '#05966955' : '#dc262644') : 'var(--line-soft)'}`, background: done ? (ans === q.a ? 'rgba(5,150,105,0.03)' : 'rgba(220,38,38,0.03)') : 'var(--bg)', marginBottom: '0.7rem' }}>
-                <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#dc2626', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.3rem' }}>🔍 Trova l&apos;errore</div>
-                <p style={{ margin: '0 0 0.25rem', fontWeight: 700, color: '#dc2626', fontSize: '0.93rem', fontFamily: 'var(--mono)', borderLeft: '3px solid #dc2626', paddingLeft: '0.5rem', lineHeight: 1.5 }}>{q.s}</p>
+                <div style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--wl-on-panel-alert, #dc2626)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.3rem' }}>🔍 Trova l&apos;errore</div>
+                <p style={{ margin: '0 0 0.25rem', fontWeight: 700, color: 'var(--wl-on-panel-alert, #dc2626)', fontSize: '0.93rem', fontFamily: 'var(--mono)', borderLeft: '3px solid #dc2626', paddingLeft: '0.5rem', lineHeight: 1.5 }}>{q.s}</p>
                 <p style={{ margin: '0 0 0.65rem', fontSize: '0.83rem', color: 'var(--muted)' }}>{q.q}</p>
                 <div style={{ display: 'flex', gap: '0.45rem', flexWrap: 'wrap' }}>
                   {q.opts.map((opt, oi) => {
@@ -483,7 +483,7 @@ export default function GramaticaItalianoB1() {
           )}
           {prodDone && (
             <div style={{ padding: '1rem 1.2rem', borderRadius: 12, background: 'rgba(5,150,105,0.06)', border: '1.5px solid rgba(5,150,105,0.25)' }}>
-              <div style={{ fontSize: '0.65rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.4rem' }}>La tua produzione</div>
+              <div style={{ fontSize: '0.65rem', fontWeight: 800, color: 'var(--wl-on-panel-ok, #059669)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.4rem' }}>La tua produzione</div>
               <p style={{ margin: '0 0 0.7rem', fontSize: '0.9rem', color: 'var(--ink)', lineHeight: 1.7, whiteSpace: 'pre-wrap' }}>{prodText}</p>
               <button className="btn btn-ghost btn-sm" onClick={() => { setProdText(''); setProdDone(false); }} style={{ fontSize: '0.78rem' }}>Modificare</button>
             </div>

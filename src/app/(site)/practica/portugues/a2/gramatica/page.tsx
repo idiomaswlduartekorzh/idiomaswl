@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { generateGrammarIndexMetadata } from '@/lib/grammar-metadata'
 import { getTopicsByLevel } from '@/data/grammar/registry'
+import { SKILL_ACCENT } from '@/data/practica/skill-accents'
 
 export const metadata: Metadata = generateGrammarIndexMetadata('portugues', 'a2')
 
@@ -25,7 +26,7 @@ export default function GrammarIndexPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <div className="gram-page" style={{ '--topic-color': '#166534' } as React.CSSProperties}>
+      <div className="gram-page" style={{ '--topic-color': SKILL_ACCENT.gramatica.var } as React.CSSProperties}>
         <div className="wrap">
           <nav aria-label="breadcrumb" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '1.5rem 0 0', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
             <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
@@ -34,7 +35,7 @@ export default function GrammarIndexPage() {
             <span>/</span>
             <Link href="/practica/portugues/a2" style={{ color: 'var(--muted)', textDecoration: 'none' }}>A2</Link>
             <span>/</span>
-            <span style={{ color: '#166534', fontWeight: 800 }}>Gramática</span>
+            <span style={{ color: 'var(--wl-on-panel-ok, #166534)', fontWeight: 800 }}>Gramática</span>
           </nav>
 
           <section className="topic-hero" style={{ paddingBottom: '1.5rem' }}>

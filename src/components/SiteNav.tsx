@@ -8,12 +8,13 @@ import type { User } from '@supabase/supabase-js';
 import Image from 'next/image';
 import { useTheme } from '@/components/ThemeProvider';
 
-// ⚠️ NUNCA borrar "Práctica": se ha perdido varias veces en force-pushes.
+// ⚠️ NUNCA borrar "Práctica" ni "Herramientas": se han perdido en force-pushes.
 const NAV_LINKS = [
   { label: 'Home',           href: '/' },
   { label: 'Idiomas',        href: '/clases-de-idiomas' },
   { label: 'Exámenes',       href: '/examenes' },
   { label: 'Práctica',       href: '/practica' },
+  { label: 'Herramientas',   href: '/herramientas' },
   { label: 'Quiénes somos',  href: '/quienes-somos' },
 ];
 

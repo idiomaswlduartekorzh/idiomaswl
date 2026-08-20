@@ -72,9 +72,10 @@
   transition: border-color 0.18s;
 }
 .pricingCardFeatured {
-  background: var(--accent);
-  border-color: var(--accent);
+  background: var(--accent-action, var(--accent));
+  border-color: var(--accent-action, var(--accent));
 }
+.pricingCardFeatured p { color: rgba(255, 255, 255, .86) !important; }
 
 .testimonialCard {
   background: var(--surface);
@@ -107,7 +108,7 @@
   display: inline-block;
   font-size: 0.75rem;
   background: color-mix(in srgb, var(--accent) 12%, transparent);
-  color: var(--accent);
+  color: var(--accent-action, var(--accent));
   padding: 0.2rem 0.65rem;
   border-radius: 20px;
   font-weight: 700;
@@ -119,12 +120,16 @@
   left: 50%;
   transform: translateX(-50%);
   background: #fff;
-  color: var(--accent);
+  color: var(--accent-action, var(--accent));
   font-size: 0.72rem;
   font-weight: 700;
   padding: 0.22rem 0.9rem;
   border-radius: 20px;
   white-space: nowrap;
+}
+
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .targetBadge {
+  color: var(--wl-accent);
 }
 
 /* ── WA button ──────────────────────────────────────────────────────── */

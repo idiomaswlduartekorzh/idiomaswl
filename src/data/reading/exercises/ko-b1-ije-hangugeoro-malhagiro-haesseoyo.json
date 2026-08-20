@@ -1,0 +1,493 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-b1-ije-hangugeoro-malhagiro-haesseoyo",
+  "status": "published",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Coreano B1",
+    "topik": 3,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. B1 se sitúa alrededor del TOPIK II nivel 3, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "ije-hangugeoro-malhagiro-haesseoyo",
+  "series": {
+    "id": "coreano-b1-lectura-10",
+    "episode": 5,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-b1-bam-geunmu",
+    "nextExerciseId": "ko-b1-tongyeoksa-ui-hanabeon"
+  },
+  "classification": {
+    "genre": "escena familiar",
+    "topic": "idioma dentro de una familia",
+    "intent": "learning",
+    "tags": [
+      "coreano b1",
+      "lectura",
+      "propósito 도록",
+      "decisión 기로 하다"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Decidimos hablar en coreano"
+    },
+    "intro": {
+      "es": "Una familia que decide hablar coreano los domingos para que el hijo pequeño no lo pierda, y el error que casi lo estropea. Lectura de coreano B1."
+    },
+    "mission": {
+      "es": "Averigua qué regla tuvieron que quitar para que el plan funcionara."
+    },
+    "targetText": "우리 가족은 보고타에 살아요. 저는 한국 사람이고 남편은 콜롬비아 사람이에요. 아이가 두 명 있어요. 큰딸은 열두 살이고 아들은 여섯 살이에요. 큰딸은 한국어를 잘해요. 어릴 때 서울에서 삼 년 살았기 때문이에요. 하지만 아들은 그런 시간이 없었어요. 작년에 저는 아들이 한국어를 잊지 않도록 계획을 세웠어요. 우리는 일요일에 한국어만 쓰기로 했어요. 하루 종일이요. 규칙도 만들었어요. 스페인어를 쓰면 벌금 오백 페소를 내기로 했어요. 첫 일요일은 재미있었어요. 두 번째 일요일도 괜찮았어요. 세 번째 일요일에 아들이 울었어요. 아들은 하고 싶은 말이 있었어요. 학교에서 친구하고 싸운 이야기였어요. 그런데 한국어로 어떻게 말하는지 몰랐어요. 스페인어로 말하면 벌금을 내야 해요. 그래서 아무 말도 안 했어요. 저는 그날 밤에 오래 생각했어요. 제 계획이 아들을 조용하게 만들고 있었어요. 그건 제가 원한 것과 정반대였어요. 그래서 다음 주에 규칙을 바꿨어요. 벌금은 없앴어요. 그리고 새 규칙을 하나만 만들었어요. 스페인어로 말해도 괜찮아요. 하지만 그 문장을 한국어로 다시 말해 보기로 했어요. 제가 도와줘요. 방법은 이래요. 아들이 스페인어로 말해요. 저는 듣고 나서 그 문장을 한국어로 천천히 말해요. 그다음에 아들이 따라 해요. 틀려도 고치지 않아요. 한 번만 다시 말해 봐요. 그게 전부예요. 남편도 같이 해요. 남편은 한국어를 잘 못해요. 그래서 아들하고 같이 배워요. 아들은 아빠가 틀리는 것을 보면서 웃어요. 그리고 자기도 편하게 틀려요. 규칙보다 분위기가 더 힘이 세요. 저는 그것을 아주 늦게 배웠어요. 육 개월이 걸렸어요. 지금 여섯 달이 지났어요. 아들은 일요일에 말을 아주 많이 해요. 틀린 말도 많이 해요. 하지만 말을 해요. 말을 많이 하면 할수록 늘어요. 조용한 아이는 늘지 않아요.",
+    "wordCount": 223,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Expresar propósito con 도록: 잊지 않도록."
+      },
+      {
+        "es": "Expresar una decisión tomada con 기로 하다 y notar que implica acuerdo."
+      },
+      {
+        "es": "Seguir el cambio de una norma y entender qué lo provocó."
+      }
+    ],
+    "grammarFocus": [
+      "proposito-dorok-b1",
+      "kiro-hada-b1",
+      "intencion-ryogo-hada-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "남편",
+        "lemma": "남편",
+        "reading": "nampyeon",
+        "glosses": {
+          "es": "marido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "벌금",
+        "lemma": "벌금",
+        "reading": "beolgeum",
+        "glosses": {
+          "es": "multa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "싸운",
+        "lemma": "싸우다",
+        "reading": "ssaun",
+        "glosses": {
+          "es": "que se peleó"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "정반대",
+        "lemma": "정반대",
+        "reading": "jeongbandae",
+        "glosses": {
+          "es": "exactamente lo contrario"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "없앴어요",
+        "lemma": "없애다",
+        "reading": "eopsaesseoyo",
+        "glosses": {
+          "es": "lo eliminamos, lo quitamos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "틀린",
+        "lemma": "틀리다",
+        "reading": "teullin",
+        "glosses": {
+          "es": "equivocado, incorrecto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "늘어요",
+        "lemma": "늘다",
+        "reading": "neureoyo",
+        "glosses": {
+          "es": "mejora, aumenta (una habilidad)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "계획",
+        "lemma": "계획",
+        "reading": "gyehoek",
+        "glosses": {
+          "es": "plan"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En familias coreanas emigradas es habitual fijar un día o una comida en coreano para que los hijos no pierdan la lengua. La dificultad suele ser la que cuenta el texto: el idioma se convierte en obligación y el niño calla."
+    },
+    "spanishSpeakerNote": {
+      "es": "도록 marca la finalidad: 잊지 않도록, «para que no se olvide». Y 기로 하다 no es solo decidir: implica un acuerdo, propio o con otros. 쓰기로 했어요 es «acordamos usar», no simplemente «voy a usar»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo en coreano que desarrolla una idea y cambia de dirección, distinguir el hecho de la interpretación, y justificar una inferencia cruzando dos pasajes separados."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas",
+      "antes-despues-a2",
+      "capacidad-rl-su-itda-a2",
+      "clausulas-relativas-a2",
+      "condicional-eumyeon-a2",
+      "conector-aseo-a2",
+      "cuanto-eolmana-a2",
+      "discurso-reportado-a2",
+      "durante-neun-dongane-a2",
+      "futuro-rl-geoyeyo-a2",
+      "honorificos-a2",
+      "intencion-ryogo-hada-a2",
+      "negacion-ji-anta-a2",
+      "obligacion-aya-hada-a2",
+      "parecer-neun-geot-gatda-a2",
+      "particulas-recipiente-a2",
+      "progresivo-go-itda-a2",
+      "razon-gittaemune-a2",
+      "razon-niikka-a2",
+      "solo-tambien-man-do-a2",
+      "verbos-irregulares-pasado-a2",
+      "alternativa-geona-b1",
+      "causal-gi-ttaemune-b1",
+      "causativa-shichang-b1",
+      "condicional-erado-eurely-b1",
+      "despues-gona-seo-b1",
+      "estado-mantener-chae-b1",
+      "forzosidad-subakkeneopsda-b1",
+      "futuro-intencion-b1",
+      "ge-doeda-b1",
+      "inmediato-jamaja-b1",
+      "kiro-hada-b1",
+      "obligacion-eoyahada-b1",
+      "observacion-neyo-b1",
+      "oportunidad-gime-b1",
+      "pasiva-jeosudo-b1",
+      "passado-reminiscencia-b1",
+      "posibilidad-su-itda-b1",
+      "proporcion-euttorok-b1",
+      "proposito-dorok-b1",
+      "simultaneo-eumyeonseo-b1"
+    ],
+    "disallowedGrammar": [
+      "registro literario",
+      "hanja sin glosa",
+      "dialecto regional"
+    ],
+    "maxOutOfLevelVocabularyPercent": 7,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 4.5,
+      "maxSentenceWords": 8,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Prosa B1 con 더라/던, 게 되다, 채, 을수록 y pasiva. Sin registro literario ni hanja sin glosar. Inferencia moderada: exige cruzar dos pasajes."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué aprendió la madre con este plan?",
+      "options": [
+        {
+          "id": "hablar",
+          "text": "Que lo importante es que el niño hable, aunque se equivoque"
+        },
+        {
+          "id": "multa",
+          "text": "Que las multas funcionan bien con los niños pequeños"
+        },
+        {
+          "id": "renunciar",
+          "text": "Que es imposible mantener el coreano fuera de Corea"
+        }
+      ],
+      "answer": "hablar",
+      "evidence": "틀린 말도 많이 해요. 하지만 말을 해요. 말을 많이 하면 할수록 늘어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el cierre lo formula como regla: cuanto más habla, más mejora. El niño callado no mejora."
+        },
+        "incorrect": {
+          "es": "La multa es justo lo que quitó porque no funcionaba, y el plan sigue en marcha. Lee las últimas frases."
+        },
+        "strategy": {
+          "es": "Cuando un texto acaba con una regla general («cuanto más… más…»), ahí está la conclusión."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué regla eliminaron?",
+      "options": [
+        {
+          "id": "multa",
+          "text": "La multa de quinientos pesos por hablar español"
+        },
+        {
+          "id": "domingo",
+          "text": "Hablar coreano los domingos"
+        },
+        {
+          "id": "ayuda",
+          "text": "La ayuda de la madre al traducir"
+        }
+      ],
+      "answer": "multa",
+      "evidence": "벌금은 없앴어요. 그리고 새 규칙을 하나만 만들었어요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El domingo en coreano se mantiene; lo que desaparece es el castigo."
+        },
+        "incorrect": {
+          "es": "El domingo sigue siendo en coreano y la madre ayuda más, no menos. Busca 없앴어요."
+        },
+        "strategy": {
+          "es": "Distingue lo que un texto elimina de lo que conserva. Suelen ir en frases seguidas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "La madre escribe 아들이 한국어를 잊지 않도록 계획을 세웠어요. ¿Qué expresa 도록?",
+      "options": [
+        {
+          "id": "finalidad",
+          "text": "La finalidad: para que no lo olvide"
+        },
+        {
+          "id": "tiempo",
+          "text": "El tiempo: hasta que lo olvide"
+        },
+        {
+          "id": "causa",
+          "text": "La causa: porque lo olvidó"
+        }
+      ],
+      "answer": "finalidad",
+      "evidence": "아들이 한국어를 잊지 않도록 계획을 세웠어요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El plan existe para evitar el olvido: es finalidad, no causa."
+        },
+        "incorrect": {
+          "es": "Si fuera causa, el niño ya lo habría olvidado, y el texto dice que quiere evitarlo. Fíjate en la negación 잊지 않."
+        },
+        "strategy": {
+          "es": "Si una acción se hace «para que» algo no ocurra, es finalidad. La negación en la subordinada suele delatarla."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué lloró el niño el tercer domingo?",
+      "options": [
+        {
+          "id": "atrapado",
+          "text": "Porque tenía algo importante que contar y la regla le impedía decirlo"
+        },
+        {
+          "id": "cansado",
+          "text": "Porque estaba cansado de estudiar coreano"
+        },
+        {
+          "id": "dinero",
+          "text": "Porque había gastado todo su dinero en multas"
+        }
+      ],
+      "answer": "atrapado",
+      "evidence": "아들은 하고 싶은 말이 있었어요 … 한국어로 어떻게 말하는지 몰랐어요. 스페인어로 말하면 벌금을 내야 해요. 그래서 아무 말도 안 했어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto encadena las tres piezas: quería contarlo, no sabía cómo, y hablar español costaba dinero."
+        },
+        "incorrect": {
+          "es": "No dice que estuviera cansado ni que gastara nada. Lee las cuatro frases seguidas sobre ese domingo."
+        },
+        "strategy": {
+          "es": "Cuando varias frases cortas se encadenan sin conectores, están construyendo una trampa lógica. Reconstrúyela."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la hija mayor habla bien coreano porque vivió en Seúl de pequeña.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "큰딸은 한국어를 잘해요. 어릴 때 서울에서 삼 년 살았기 때문이에요.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero: tres años en Seúl de pequeña. Y esa es la diferencia con el hijo, que no tuvo ese tiempo."
+        },
+        "incorrect": {
+          "es": "Busca la frase con 큰딸 y la razón que da justo después, con 기 때문이에요."
+        },
+        "strategy": {
+          "es": "Una afirmación seguida de 기 때문이에요 trae su causa pegada. Léelas como una sola unidad."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué dice 제 계획이 아들을 조용하게 만들고 있었어요?",
+      "options": [
+        {
+          "id": "contradiccion",
+          "text": "Para reconocer que su plan producía lo contrario de lo que buscaba"
+        },
+        {
+          "id": "culpar",
+          "text": "Para culpar al niño de no esforzarse"
+        },
+        {
+          "id": "exito",
+          "text": "Para decir que el plan estaba funcionando"
+        }
+      ],
+      "answer": "contradiccion",
+      "evidence": "제 계획이 아들을 조용하게 만들고 있었어요. 그건 제가 원한 것과 정반대였어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la frase siguiente lo dice sin rodeos: 정반대, exactamente lo contrario."
+        },
+        "incorrect": {
+          "es": "No culpa al niño y reconoce que iba mal. Lee la frase siguiente, con 정반대."
+        },
+        "strategy": {
+          "es": "Cuando alguien describe el efecto de su propia decisión, comprueba si coincide con lo que quería. Ahí está el giro."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en coreano sobre una norma que pusiste y tuviste que cambiar. Usa 도록 dos veces y 기로 하다 tres veces."
+    },
+    "minWords": 60,
+    "maxWords": 120,
+    "hints": [
+      "…지 않도록 계획을 세웠어요.",
+      "우리는 …기로 했어요.",
+      "그건 제가 원한 것과 정반대였어요.",
+      "그래서 규칙을 바꿨어요."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano B1: Decidimos hablar en coreano | WeLearn"
+    },
+    "description": {
+      "es": "Lee una escena familiar en coreano B1 y practica 도록 (propósito) y 기로 하다 (decisión tomada). Con vocabulario romanizado y seis preguntas."
+    },
+    "canonicalPath": "/practica/coreano/b1/lectura/ije-hangugeoro-malhagiro-haesseoyo",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-b1-bam-geunmu",
+      "ko-b1-tongyeoksa-ui-hanabeon"
+    ]
+  }
+}

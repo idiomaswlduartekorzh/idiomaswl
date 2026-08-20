@@ -18,7 +18,7 @@ export default function GrammarDeep001() {
     >
       {/* ── Header ── */}
       <div style={{ marginBottom: '2.5rem', borderTop: '3px solid #6c63ff', paddingTop: '2rem' }}>
-        <p style={{ margin: '0 0 6px', fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6c63ff' }}>
+        <p style={{ margin: '0 0 6px', fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--wl-on-panel-link, #6c63ff)' }}>
           REFERENCIA GRAMATICAL · DÍA 1
         </p>
         <h2 style={{ margin: '0 0 10px', fontSize: 28, fontWeight: 800, lineHeight: 1.2 }}>
@@ -152,7 +152,7 @@ export default function GrammarDeep001() {
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 14 }}>
           {[
-            { kr: '저는', rom: 'jeo-neun', label: 'Yo (formal/humilde)', when: 'Desconocidos, personas mayores, trabajo, situaciones públicas', note: 'La forma segura para extranjeros', color: '#6c63ff' },
+            { kr: '저는', rom: 'jeo-neun', label: 'Yo (formal/humilde)', when: 'Desconocidos, personas mayores, trabajo, situaciones públicas', note: 'La forma segura para extranjeros', color: 'var(--wl-on-panel-link, #6c63ff)' },
             { kr: '나는', rom: 'na-neun', label: 'Yo (casual/íntimo)', when: 'Amigos íntimos, familia, personas menores que tú', note: 'Úsalo solo cuando te inviten a ser casual', color: '#f59e0b' },
           ].map(item => (
             <div key={item.kr} style={{ background: 'var(--bg-2)', border: `2px solid ${item.color}20`, borderRadius: 12, padding: '14px 16px' }}>
@@ -183,7 +183,7 @@ export default function GrammarDeep001() {
         <p style={{ margin: '0 0 14px', fontSize: 14, lineHeight: 1.85, color: 'var(--muted)' }}>
           En español los artículos (el, la, un, una) son obligatorios. En coreano{' '}
           <strong>no existen</strong>. La palabra{' '}
-          <span style={{ fontFamily: "'Noto Sans KR', sans-serif", color: '#6c63ff' }}>학교</span> puede
+          <span style={{ fontFamily: "'Noto Sans KR', sans-serif", color: 'var(--wl-on-panel-link, #6c63ff)' }}>학교</span> puede
           significar "la escuela", "una escuela" o simplemente "escuela" dependiendo del contexto. El
           coreano es un idioma de <em>alto contexto</em>: asume que ambos interlocutores comparten
           suficiente información situacional para no necesitar especificar.
@@ -229,8 +229,8 @@ export default function GrammarDeep001() {
               <div>
                 <p style={{ margin: '0 0 8px', fontSize: 14, fontWeight: 700, color: 'var(--ink)' }}>{item.error}</p>
                 <div style={{ display: 'flex', gap: 8, marginBottom: 8, flexWrap: 'wrap' }}>
-                  <code style={{ fontSize: 13, padding: '3px 10px', background: 'rgba(220,53,69,0.06)', border: '1px solid rgba(220,53,69,0.2)', borderRadius: 6, color: '#dc3545', fontFamily: "'Noto Sans KR', sans-serif" }}>{item.wrong}</code>
-                  <code style={{ fontSize: 13, padding: '3px 10px', background: 'rgba(45,155,78,0.06)', border: '1px solid rgba(45,155,78,0.2)', borderRadius: 6, color: '#2d9b4e', fontFamily: "'Noto Sans KR', sans-serif" }}>{item.right}</code>
+                  <code style={{ fontSize: 13, padding: '3px 10px', background: 'rgba(220,53,69,0.06)', border: '1px solid rgba(220,53,69,0.2)', borderRadius: 6, color: 'var(--wl-on-panel-alert, #dc3545)', fontFamily: "'Noto Sans KR', sans-serif" }}>{item.wrong}</code>
+                  <code style={{ fontSize: 13, padding: '3px 10px', background: 'rgba(45,155,78,0.06)', border: '1px solid rgba(45,155,78,0.2)', borderRadius: 6, color: 'var(--wl-on-panel-ok, #2d9b4e)', fontFamily: "'Noto Sans KR', sans-serif" }}>{item.right}</code>
                 </div>
                 <p style={{ margin: 0, fontSize: 12, color: 'var(--muted)', lineHeight: 1.6 }}>{item.why}</p>
               </div>
@@ -283,7 +283,7 @@ export default function GrammarDeep001() {
 
       {/* ── Sección 7: Sigue aprendiendo ── */}
       <div style={{ background: 'linear-gradient(135deg, rgba(108,99,255,0.05), rgba(108,99,255,0.02))', border: '1px solid rgba(108,99,255,0.18)', borderRadius: 14, padding: '20px 24px' }}>
-        <p style={{ margin: '0 0 8px', fontSize: 12, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#6c63ff' }}>
+        <p style={{ margin: '0 0 8px', fontSize: 12, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--wl-on-panel-link, #6c63ff)' }}>
           Siguiente paso
         </p>
         <h4 style={{ margin: '0 0 8px', fontSize: 16, fontWeight: 700 }}>

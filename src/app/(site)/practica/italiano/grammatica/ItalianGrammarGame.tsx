@@ -157,9 +157,9 @@ const ALL_QUESTIONS: Question[] = [
 
 const LEVEL_CFG = {
   1: { time: 15, color: '#60a5fa', label: 'Livello 1', subtitle: 'Articoli & Accordo', icon: '📖' },
-  2: { time: 12, color: '#a78bfa', label: 'Livello 2', subtitle: 'Tempi Verbali',      icon: '⏱️' },
+  2: { time: 12, color: 'var(--wl-on-panel-link, #a78bfa)', label: 'Livello 2', subtitle: 'Tempi Verbali',      icon: '⏱️' },
   3: { time: 15, color: '#fbbf24', label: 'Livello 3', subtitle: 'Scrivi tu!',          icon: '✍️' },
-  4: { time: 10, color: '#f87171', label: 'Livello 4', subtitle: "L'Esperto",           icon: '🔥' },
+  4: { time: 10, color: 'var(--wl-on-panel-alert, #f87171)', label: 'Livello 4', subtitle: "L'Esperto",           icon: '🔥' },
 } as const;
 
 // ─── Utilities ────────────────────────────────────────────────────────────────

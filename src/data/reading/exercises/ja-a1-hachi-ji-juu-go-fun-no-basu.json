@@ -1,0 +1,462 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ja-a1-hachi-ji-juu-go-fun-no-basu",
+  "status": "published",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Japonés A1",
+    "jlpt": "N5",
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el JLPT es aproximada: son dos escalas distintas, con exámenes distintos. A1 se sitúa alrededor del N5, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "hachi-ji-juu-go-fun-no-basu",
+  "series": {
+    "id": "japones-a1-lectura-10",
+    "episode": 5,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ja-a1-atarashii-jitensha",
+    "nextExerciseId": "ja-a1-dare-mo-shirimasen"
+  },
+  "classification": {
+    "genre": "escena cotidiana",
+    "topic": "un autobús que nunca llega a su hora",
+    "intent": "learning",
+    "tags": [
+      "japones a1",
+      "lectura",
+      "números y contadores",
+      "expresiones de tiempo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El autobús de las 8:15"
+    },
+    "intro": {
+      "es": "El horario dice 8:15. La realidad dice otra cosa, y una señora lleva años midiéndolo. Lectura de japonés A1."
+    },
+    "mission": {
+      "es": "Averigua qué apunta la señora en su cuaderno."
+    },
+    "targetText": "わたしは まいにち はちじ じゅうごふんの バスに のります。\n\nでも バスは はちじ じゅうごふんに きません。 はちじ じゅうはっぷんか はちじ にじゅっぷんに きます。\n\nバスていに おばあさんが います。 いつも ノートを もって います。\n\nおばあさんは バスの じかんを かきます。 ろくねん かきました。\n\nきのう おばあさんは わたしに いいました。 「さんねんまえは にふん おそかったです。 いまは ごふんです。」\n\nわたしは びっくりしました。 だれも しりません。 でも おばあさんは しって います。",
+    "wordCount": 198,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Leer horas y minutos: 八時十五分, 二十分."
+      },
+      {
+        "es": "Usar los contadores de tiempo: 年, 分, まえ."
+      },
+      {
+        "es": "Reconocer un dato que solo tiene quien lo mide."
+      }
+    ],
+    "grammarFocus": [
+      "numeros-contadores",
+      "jikan-tiempo"
+    ],
+    "vocabulary": [
+      {
+        "surface": "まいにち",
+        "lemma": "まいにち",
+        "reading": "まいにち",
+        "glosses": {
+          "es": "todos los días"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "のります",
+        "lemma": "のります",
+        "reading": "のります",
+        "glosses": {
+          "es": "me subo (a un transporte)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "バスてい",
+        "lemma": "バスてい",
+        "reading": "バスてい",
+        "glosses": {
+          "es": "parada de autobús"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ノート",
+        "lemma": "ノート",
+        "reading": "ノート",
+        "glosses": {
+          "es": "cuaderno"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "かきます",
+        "lemma": "かきます",
+        "reading": "かきます",
+        "glosses": {
+          "es": "escribe, apunta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "おそかった",
+        "lemma": "おそかった",
+        "reading": "おそかった",
+        "glosses": {
+          "es": "llegaba tarde"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "びっくり",
+        "lemma": "びっくり",
+        "reading": "びっくり",
+        "glosses": {
+          "es": "sorpresa; びっくりしました es me sorprendí"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "しって",
+        "lemma": "しって",
+        "reading": "しって",
+        "glosses": {
+          "es": "saber; しって います es lo sabe"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La puntualidad del transporte japonés es real en tren, pero el autobús urbano depende del tráfico. Un retraso medio de cinco minutos es una queja seria en Japón."
+    },
+    "spanishSpeakerNote": {
+      "es": "Los contadores cambian con lo que se cuenta: 分 para minutos, 時 para horas, 年 para años. Y まえ detrás de una cantidad significa «hace»: 三年まえ es «hace tres años»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": true,
+    "romanization": "a0-only",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en japonés escrito casi todo en kana, identificar de quién o de qué se habla gracias a las partículas, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adverbios-frecuencia",
+      "arimasu-imasu",
+      "conjunciones",
+      "desu-masu",
+      "estructura-sov-particulas",
+      "expresiones-cotidianas",
+      "hiragana-basico",
+      "i-keiyoshi",
+      "interrogativos-ka",
+      "jikan-tiempo",
+      "katakana-basico",
+      "masu-kei-conjugacion",
+      "na-keiyoshi",
+      "negacion-completa",
+      "numeros-contadores",
+      "particula-de-e",
+      "particula-wa-ga",
+      "particula-wo-ni",
+      "tai-form",
+      "te-form-permission"
+    ],
+    "disallowedGrammar": [
+      "forma llana (辞書形) en oración principal",
+      "keigo",
+      "condicionales",
+      "voz pasiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 16.5,
+      "maxSentenceWords": 25,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Forma です／ます, partículas básicas, adjetivos i y na. Kanji por debajo del 12 %, con espacios entre palabras. Furigana declarado pero no implementado en el runner: el apoyo lo dan las lecturas en kana del vocabulario."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué muestra el texto?",
+      "options": [
+        {
+          "id": "medir",
+          "text": "Que el retraso del autobús ha aumentado, y solo lo sabe quien lo lleva midiendo seis años"
+        },
+        {
+          "id": "quejarse",
+          "text": "Que los vecinos han puesto una queja formal"
+        },
+        {
+          "id": "nuevo",
+          "text": "Que van a cambiar el horario del autobús"
+        }
+      ],
+      "answer": "medir",
+      "evidence": "六年 かきました … 「さんねんまえは にふん おそかったです。 いまは ごふんです。」 … だれも しりません。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo remata: nadie lo sabe, ella sí."
+        },
+        "incorrect": {
+          "es": "No hay queja ni cambio de horario. Fíjate en los años que lleva apuntando."
+        },
+        "strategy": {
+          "es": "Cuando un texto contrasta «nadie sabe» con «ella sabe», ahí está el asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto se retrasa el autobús ahora?",
+      "options": [
+        {
+          "id": "cinco",
+          "text": "Cinco minutos"
+        },
+        {
+          "id": "dos",
+          "text": "Dos minutos"
+        },
+        {
+          "id": "quince",
+          "text": "Quince minutos"
+        }
+      ],
+      "answer": "cinco",
+      "evidence": "「さんねんまえは にふん おそかったです。 いまは ごふんです。」",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: los dos minutos eran hace tres años."
+        },
+        "incorrect": {
+          "es": "Los dos minutos son de hace tres años y los quince forman parte de la hora."
+        },
+        "strategy": {
+          "es": "まえ marca el pasado: separa lo de antes de lo de ahora."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué significa バスてい?",
+      "options": [
+        {
+          "id": "parada",
+          "text": "La parada del autobús"
+        },
+        {
+          "id": "billete",
+          "text": "El billete de autobús"
+        },
+        {
+          "id": "conductor",
+          "text": "El conductor"
+        }
+      ],
+      "answer": "parada",
+      "evidence": "バスていに おばあさんが います。",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: es donde está la señora esperando."
+        },
+        "incorrect": {
+          "es": "La partícula に marca un lugar, y allí hay una persona esperando."
+        },
+        "strategy": {
+          "es": "Si la palabra va con に y con います, es un lugar donde hay alguien."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué se sorprende el narrador?",
+      "options": [
+        {
+          "id": "dato",
+          "text": "Porque nadie más tenía ese dato y ella lo tiene medido"
+        },
+        {
+          "id": "tarde",
+          "text": "Porque no sabía que el autobús se retrasaba"
+        },
+        {
+          "id": "edad",
+          "text": "Porque la señora es muy mayor"
+        }
+      ],
+      "answer": "dato",
+      "evidence": "わたしは びっくりしました。 だれも しりません。 でも おばあさんは しって います。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y las dos frases siguientes explican la sorpresa."
+        },
+        "incorrect": {
+          "es": "Él coge ese autobús a diario: sabe que llega tarde. Lo que no sabía es cuánto ha empeorado."
+        },
+        "strategy": {
+          "es": "Si tras la sorpresa vienen dos frases sobre quién sabe qué, ahí está la razón."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la señora solo apunta la hora cuando el autobús se retrasa mucho.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "おばあさんは バスの じかんを かきます。 ろくねん かきました。",
+      "feedback": {
+        "correct": {
+          "es": "Falso: apunta la hora todos los días, y lleva seis años haciéndolo."
+        },
+        "incorrect": {
+          "es": "Busca la frase con ろくねん: dice cuánto tiempo lleva, no en qué casos apunta."
+        },
+        "strategy": {
+          "es": "Si el texto da una duración y ninguna condición, no hay excepciones que buscar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la escena.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Coge todos los días el autobús de las 8:15"
+        },
+        {
+          "id": "p2",
+          "text": "El autobús llega entre las 8:18 y las 8:20"
+        },
+        {
+          "id": "p3",
+          "text": "La señora del cuaderno en la parada"
+        },
+        {
+          "id": "p4",
+          "text": "Lo que le contó ayer"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "わたしは まいにち はちじ じゅうごふんの バスに のります … 八時十八分か 八時二十分に きます … バスていに おばあさんが います … きのう おばあさんは わたしに いいました。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: rutina, hecho, personaje y revelación."
+        },
+        "incorrect": {
+          "es": "Guíate por きのう, que marca el momento concreto."
+        },
+        "strategy": {
+          "es": "La palabra きのう (ayer) sitúa la escena concreta dentro de lo habitual."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en japonés sobre un transporte que usas. Usa cuatro horas o cantidades con su contador."
+    },
+    "minWords": 60,
+    "maxWords": 160,
+    "hints": [
+      "まいにち はちじ じゅうごふんの バスに のります。",
+      "バスは 八時二十分に きます。",
+      "三年まえは …でした。",
+      "今は 五分です。"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de japonés A1: el autobús de las 8:15 | WeLearn"
+    },
+    "description": {
+      "es": "Lee una escena en japonés A1 y practica los números, los contadores y las expresiones de tiempo. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/japones/a1/lectura/hachi-ji-juu-go-fun-no-basu",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ja-a1-atarashii-jitensha",
+      "ja-a1-dare-mo-shirimasen"
+    ]
+  }
+}

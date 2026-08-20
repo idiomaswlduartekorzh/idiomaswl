@@ -1,0 +1,493 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-b1-abeoji-wa-cheonjangyi-mun",
+  "status": "published",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Coreano B1",
+    "topik": 3,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. B1 se sitúa alrededor del TOPIK II nivel 3, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "abeoji-wa-cheonjangyi-mun",
+  "series": {
+    "id": "coreano-b1-lectura-10",
+    "episode": 8,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-b1-jeokhiji-anheun-gyuchik",
+    "nextExerciseId": "ko-b1-doraon-jeolmeuni-deul"
+  },
+  "classification": {
+    "genre": "diario de cuidados",
+    "topic": "cuidar de un padre mayor",
+    "intent": "learning",
+    "tags": [
+      "coreano b1",
+      "lectura",
+      "causativa 시키다",
+      "estado 채"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Mi padre y la puerta del techo"
+    },
+    "intro": {
+      "es": "Un padre de ochenta y un años que insiste en subir él mismo a arreglar la trampilla del techo, y una hija que aprende a dejar de decir no."
+    },
+    "mission": {
+      "es": "Averigua qué decide cambiar la hija, y por qué no es lo que ella esperaba."
+    },
+    "targetText": "아버지는 여든한 살이세요. 작년부터 저희와 함께 사세요. 다리가 안 좋으셔서 계단을 천천히 올라가셔야 해요. 그런데도 아버지는 집을 계속 고치고 싶어 하세요. 지난달에 천장에 있는 문이 안 닫혔어요. 아버지는 사다리를 가져오셨어요. 저는 놀라서 말했어요. 아버지, 제가 할게요. 아버지는 앉은 채로 저를 한참 보셨어요. 그리고 말씀하셨어요. 너는 나를 앉혀 두려고 하는구나. 저는 아무 말도 못 했어요. 그 말이 맞았기 때문이에요. 저는 아버지를 안전하게 하려고 아무것도 안 하게 만들고 있었어요. 아버지를 쉬게 시키는 것이 사랑이라고 생각했어요. 하지만 아버지에게는 그게 다른 뜻이었어요. 그날 밤에 저는 남편하고 오래 이야기했어요. 다음 날 우리는 다르게 하기로 했어요. 사다리를 새로 샀어요. 넓고 낮은 것으로요. 그리고 아버지가 올라가실 때 제가 아래에서 잡아요. 아버지가 일하시고 저는 도구를 드려요. 아버지는 서른 분 동안 그 문을 고치셨어요. 십 분이면 되는 일이었어요. 하지만 그건 중요하지 않아요. 그날 저녁에 아버지는 밥을 두 그릇 드셨어요. 저는 그 그릇을 보면서 조금 부끄러웠어요. 아버지가 필요한 것은 안전이 아니었어요. 할 일이었어요. 저는 그 두 가지를 같은 것이라고 생각했어요. 병원에서도 비슷한 이야기를 들었어요. 의사 선생님이 말씀하셨어요. 어르신들은 움직이지 않으면 더 빨리 나빠지십니다. 앉아 계신 채로 하루를 보내는 것이 계단보다 위험할 수 있습니다. 저는 그 말을 적어 두었어요. 그리고 냉장고에 붙였어요. 남편도 봤어요. 남편은 아무 말도 하지 않았어요. 하지만 다음 주에 아버지 사다리를 하나 더 사 왔어요. 요즘 아버지는 매주 무언가를 고치세요. 어제는 제 딸 자전거를 고치셨어요. 딸은 옆에 선 채로 계속 질문했어요. 아버지는 하나씩 다 대답하셨어요. 저는 부엌에서 그 소리를 들으면서 생각했어요. 제가 바꾼 것은 사다리가 아니었어요.",
+    "wordCount": 228,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Reconocer la causativa: 앉히다, 쉬게 시키다, 안 하게 만들다."
+      },
+      {
+        "es": "Usar 채로 para describir un estado que se mantiene durante otra acción."
+      },
+      {
+        "es": "Manejar honoríficos verbales al hablar de un padre: 사세요, 말씀하셨어요, 드셨어요."
+      }
+    ],
+    "grammarFocus": [
+      "causativa-shichang-b1",
+      "estado-mantener-chae-b1",
+      "honorificos-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "천장",
+        "lemma": "천장",
+        "reading": "cheonjang",
+        "glosses": {
+          "es": "techo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "사다리",
+        "lemma": "사다리",
+        "reading": "sadari",
+        "glosses": {
+          "es": "escalera de mano"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "앉은 채로",
+        "lemma": "앉은 채로",
+        "reading": "anjeun chaero",
+        "glosses": {
+          "es": "sin levantarse, estando sentado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "안전하게",
+        "lemma": "안전하다",
+        "reading": "anjeonhage",
+        "glosses": {
+          "es": "de forma segura"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "도구",
+        "lemma": "도구",
+        "reading": "dogu",
+        "glosses": {
+          "es": "herramienta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "그릇",
+        "lemma": "그릇",
+        "reading": "geureut",
+        "glosses": {
+          "es": "cuenco; contador para raciones de arroz"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "무언가",
+        "lemma": "무언가",
+        "reading": "mueonga",
+        "glosses": {
+          "es": "algo, alguna cosa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "말씀하셨어요",
+        "lemma": "말씀하다",
+        "reading": "malsseumhasyeosseoyo",
+        "glosses": {
+          "es": "dijo (forma honorífica de 말하다)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Que un padre mayor pase a vivir con una hija casada es una situación cada vez más común en Corea. El honorífico no se relaja por la convivencia: se habla del padre con 세요 y 드시다 incluso al contarlo por escrito."
+    },
+    "spanishSpeakerNote": {
+      "es": "La causativa coreana añade una sílaba o usa 게 하다 / 게 시키다: 앉다 (sentarse) → 앉히다 (hacer sentar). Y 채로 describe un estado mantenido: 앉은 채로 저를 보셨어요, «me miró sin levantarse»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo en coreano que desarrolla una idea y cambia de dirección, distinguir el hecho de la interpretación, y justificar una inferencia cruzando dos pasajes separados."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas",
+      "antes-despues-a2",
+      "capacidad-rl-su-itda-a2",
+      "clausulas-relativas-a2",
+      "condicional-eumyeon-a2",
+      "conector-aseo-a2",
+      "cuanto-eolmana-a2",
+      "discurso-reportado-a2",
+      "durante-neun-dongane-a2",
+      "futuro-rl-geoyeyo-a2",
+      "honorificos-a2",
+      "intencion-ryogo-hada-a2",
+      "negacion-ji-anta-a2",
+      "obligacion-aya-hada-a2",
+      "parecer-neun-geot-gatda-a2",
+      "particulas-recipiente-a2",
+      "progresivo-go-itda-a2",
+      "razon-gittaemune-a2",
+      "razon-niikka-a2",
+      "solo-tambien-man-do-a2",
+      "verbos-irregulares-pasado-a2",
+      "alternativa-geona-b1",
+      "causal-gi-ttaemune-b1",
+      "causativa-shichang-b1",
+      "condicional-erado-eurely-b1",
+      "despues-gona-seo-b1",
+      "estado-mantener-chae-b1",
+      "forzosidad-subakkeneopsda-b1",
+      "futuro-intencion-b1",
+      "ge-doeda-b1",
+      "inmediato-jamaja-b1",
+      "kiro-hada-b1",
+      "obligacion-eoyahada-b1",
+      "observacion-neyo-b1",
+      "oportunidad-gime-b1",
+      "pasiva-jeosudo-b1",
+      "passado-reminiscencia-b1",
+      "posibilidad-su-itda-b1",
+      "proporcion-euttorok-b1",
+      "proposito-dorok-b1",
+      "simultaneo-eumyeonseo-b1"
+    ],
+    "disallowedGrammar": [
+      "registro literario",
+      "hanja sin glosa",
+      "dialecto regional"
+    ],
+    "maxOutOfLevelVocabularyPercent": 7,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 5.1,
+      "maxSentenceWords": 10,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Prosa B1 con 더라/던, 게 되다, 채, 을수록 y pasiva. Sin registro literario ni hanja sin glosar. Inferencia moderada: exige cruzar dos pasajes."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cambia la narradora?",
+      "options": [
+        {
+          "id": "acompanar",
+          "text": "Deja de impedirle hacer cosas y empieza a acompañarlo mientras las hace"
+        },
+        {
+          "id": "prohibir",
+          "text": "Le prohíbe definitivamente subir a cualquier escalera"
+        },
+        {
+          "id": "mudanza",
+          "text": "Decide que su padre vuelva a vivir solo"
+        }
+      ],
+      "answer": "acompanar",
+      "evidence": "아버지가 올라가실 때 제가 아래에서 잡아요. 아버지가 일하시고 저는 도구를 드려요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la última frase lo nombra: lo que cambió no fue la escalera."
+        },
+        "incorrect": {
+          "es": "No le prohíbe nada —compra una escalera mejor— ni nadie se muda. Lee lo que hacen al día siguiente."
+        },
+        "strategy": {
+          "es": "Si un texto termina diciendo «lo que cambié no fue X», busca cuál fue el cambio real en la escena anterior."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto tardó el padre en arreglar la trampilla?",
+      "options": [
+        {
+          "id": "treinta",
+          "text": "Treinta minutos"
+        },
+        {
+          "id": "diez",
+          "text": "Diez minutos"
+        },
+        {
+          "id": "dos",
+          "text": "Dos horas"
+        }
+      ],
+      "answer": "treinta",
+      "evidence": "아버지는 서른 분 동안 그 문을 고치셨어요. 십 분이면 되는 일이었어요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: treinta minutos, para algo de diez. Y la narradora añade que eso no importa."
+        },
+        "incorrect": {
+          "es": "Los diez minutos son lo que habría costado a otra persona. Busca la cifra que va con 동안."
+        },
+        "strategy": {
+          "es": "Cuando un texto da dos duraciones, una es la real y otra la esperada. La partícula 동안 marca la real."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El padre dice 너는 나를 앉혀 두려고 하는구나. ¿Qué le está reprochando?",
+      "options": [
+        {
+          "id": "inutil",
+          "text": "Que quiere dejarlo sentado sin hacer nada"
+        },
+        {
+          "id": "silla",
+          "text": "Que le ha comprado una silla incómoda"
+        },
+        {
+          "id": "visita",
+          "text": "Que no lo sienta con las visitas"
+        }
+      ],
+      "answer": "inutil",
+      "evidence": "너는 나를 앉혀 두려고 하는구나 … 저는 아버지를 안전하게 하려고 아무것도 안 하게 만들고 있었어요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y la narradora lo confirma en la frase siguiente con sus propias palabras."
+        },
+        "incorrect": {
+          "es": "No se habla de sillas ni de visitas. 앉히다 es «hacer sentar», y la frase siguiente lo explica."
+        },
+        "strategy": {
+          "es": "Si un personaje dice algo en forma de reproche, la frase siguiente del narrador suele traducirlo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué cuenta que esa noche el padre cenó dos cuencos de arroz?",
+      "options": [
+        {
+          "id": "animo",
+          "text": "Como señal de que el día le había hecho bien"
+        },
+        {
+          "id": "hambre",
+          "text": "Porque trabajó tanto que pasó hambre"
+        },
+        {
+          "id": "salud",
+          "text": "Porque el médico le había pedido comer más"
+        }
+      ],
+      "answer": "animo",
+      "evidence": "하지만 그건 중요하지 않아요. 그날 저녁에 아버지는 밥을 두 그릇 드셨어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El dato viene justo después de decir que el tiempo no importaba: es la prueba de que sí importó otra cosa."
+        },
+        "incorrect": {
+          "es": "No se menciona ningún médico, y el texto no lo presenta como cansancio. Fíjate en qué frase precede al dato."
+        },
+        "strategy": {
+          "es": "Un detalle doméstico colocado tras una valoración suele ser su prueba. Pregúntate qué demuestra."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la narradora acabó subiendo ella misma a arreglar la trampilla.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "아버지가 올라가실 때 제가 아래에서 잡아요. 아버지가 일하시고 저는 도구를 드려요.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: sube el padre y ella sujeta la escalera y le pasa las herramientas. Ese es todo el cambio."
+        },
+        "incorrect": {
+          "es": "Ella lo ofreció al principio, pero mira qué acordaron al día siguiente. Los papeles quedan repartidos."
+        },
+        "strategy": {
+          "es": "Distingue lo que un personaje propone al principio de lo que finalmente se hace. El texto cuenta las dos cosas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "¿Qué tono tiene la frase final, 제가 바꾼 것은 사다리가 아니었어요?",
+      "options": [
+        {
+          "id": "reconocimiento",
+          "text": "Reconocimiento sereno de lo que había entendido mal"
+        },
+        {
+          "id": "ironia",
+          "text": "Ironía hacia su padre, que se empeña en subir"
+        },
+        {
+          "id": "queja",
+          "text": "Queja por el trabajo que le da cuidarlo"
+        }
+      ],
+      "answer": "reconocimiento",
+      "evidence": "저는 부엌에서 그 소리를 들으면서 생각했어요. 제가 바꾼 것은 사다리가 아니었어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Está escuchando a su padre responder a su nieta, y en ese momento entiende qué había cambiado de verdad."
+        },
+        "incorrect": {
+          "es": "No hay ironía ni queja: la escena que precede es su padre explicándole cosas a la nieta. Léela."
+        },
+        "strategy": {
+          "es": "Para el tono de una frase final, mira qué escena la provoca. Aquí es una conversación que ella oye desde otra habitación."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en coreano sobre alguien mayor de tu familia y algo que insiste en hacer solo. Usa una causativa, 채로 una vez y honoríficos en todo el texto."
+    },
+    "minWords": 60,
+    "maxWords": 120,
+    "hints": [
+      "…는 …살이세요.",
+      "…시고 싶어 하세요.",
+      "…은 채로 …",
+      "제가 바꾼 것은 …이 아니었어요."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano B1: Mi padre y la puerta del techo | WeLearn"
+    },
+    "description": {
+      "es": "Lee un diario de cuidados en coreano B1 y practica la causativa 시키다 y el estado con 채. Con vocabulario romanizado y seis preguntas."
+    },
+    "canonicalPath": "/practica/coreano/b1/lectura/abeoji-wa-cheonjangyi-mun",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-b1-jeokhiji-anheun-gyuchik",
+      "ko-b1-doraon-jeolmeuni-deul"
+    ]
+  }
+}

@@ -1,0 +1,462 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-a2-damals-durfte-man-nicht",
+  "status": "published",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Alemán A2"
+  },
+  "slug": "damals-durfte-man-nicht",
+  "series": {
+    "id": "aleman-a2-lectura-10",
+    "episode": 2,
+    "totalEpisodes": 10,
+    "previousExerciseId": "de-a2-ich-habe-den-brief-nicht-geoeffnet",
+    "nextExerciseId": "de-a2-die-frau-die-den-schluessel-hat"
+  },
+  "classification": {
+    "genre": "memoria familiar",
+    "topic": "una abuela y una frontera",
+    "intent": "learning",
+    "tags": [
+      "aleman a2",
+      "lectura",
+      "Präteritum",
+      "modales en pasado"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Entonces no se podía"
+    },
+    "intro": {
+      "es": "Una abuela que vivió a doscientos metros de una frontera cerrada y tardó veintiocho años en cruzar la calle. Lectura de alemán A2."
+    },
+    "mission": {
+      "es": "Averigua qué hizo el día que por fin pudo pasar."
+    },
+    "targetText": "Meine Großmutter wohnte in Berlin, in der Bernauer Straße. Ihre Schwester wohnte auf der anderen Seite, zweihundert Meter weiter. Von 1961 bis 1989 konnten sie sich nicht besuchen. Zweihundert Meter. Sie durfte nicht hinübergehen und ihre Schwester durfte nicht herüberkommen. Sie schrieben Briefe. Die Briefe waren kurz, weil jemand sie las. Meine Großmutter wollte nichts Falsches schreiben. Sie schrieb also über das Wetter und über den Garten. Achtundzwanzig Jahre Wetter. Im November 1989 war sie sechsundsechzig Jahre alt. Sie musste nicht mehr warten. Aber sie ging nicht sofort. Sie wartete noch drei Tage. Meine Mutter fragte sie warum. Sie antwortete: Ich wollte mir die Haare machen lassen. Das klingt komisch und es ist auch komisch. Ich glaube, sie hatte Angst. Nicht vor der Grenze. Vor ihrer Schwester. Achtundzwanzig Jahre sind lang und Menschen ändern sich. Am vierten Tag ging sie hinüber. Die Schwester machte die Tür auf und sagte nur einen Satz: Du bist zu spät, der Kaffee ist kalt. Dann lachten beide und weinten beide.",
+    "wordCount": 166,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Conjugar el Präteritum de los verbos frecuentes: war, wohnte, schrieb, ging."
+      },
+      {
+        "es": "Usar los modales en pasado: konnte, durfte, wollte, musste."
+      },
+      {
+        "es": "Distinguir el hecho histórico de la razón personal."
+      }
+    ],
+    "grammarFocus": [
+      "praeteritum-basic-a2",
+      "modalverben-praeteritum-a2",
+      "modalverben"
+    ],
+    "vocabulary": [
+      {
+        "surface": "hinübergehen",
+        "lemma": "hinübergehen",
+        "glosses": {
+          "es": "cruzar al otro lado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "herüberkommen",
+        "lemma": "herüberkommen",
+        "glosses": {
+          "es": "venir de aquel lado a este"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Grenze",
+        "lemma": "Grenze",
+        "glosses": {
+          "es": "frontera"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Falsches",
+        "lemma": "Falsches",
+        "glosses": {
+          "es": "algo equivocado, algo inconveniente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Wetter",
+        "lemma": "Wetter",
+        "glosses": {
+          "es": "tiempo meteorológico"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ändern",
+        "lemma": "sich ändern",
+        "glosses": {
+          "es": "cambiar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "weinten",
+        "lemma": "weinen",
+        "glosses": {
+          "es": "lloraron"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "lachten",
+        "lemma": "lachen",
+        "glosses": {
+          "es": "rieron"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La Bernauer Straße quedó partida por el Muro de Berlín: las casas estaban en el Este y la acera en el Oeste. Es uno de los puntos donde la división urbana fue más literal."
+    },
+    "spanishSpeakerNote": {
+      "es": "Fíjate en «hin» y «her»: marcan la dirección respecto a quien habla. «Hinübergehen» es ir hacia allá; «herüberkommen» es venir hacia aquí. El español lo resuelve con ir y venir, pero el alemán lo pega al verbo."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en alemán sobre hechos pasados, encontrar el verbo al final de una subordinada, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens",
+      "adjektivdeklination-a2",
+      "da-hin-her-a2",
+      "dativ-a2",
+      "futur-i-a2",
+      "genitiv-a2",
+      "infinitiv-zu-a2",
+      "komparativ-superlativ-a2",
+      "konjunktionen-a2",
+      "konjunktiv-ii-wurden-a2",
+      "modalverben-praeteritum-a2",
+      "partizip-als-adjektiv-a2",
+      "passiv-praesens-a2",
+      "perfekt-haben-a2",
+      "perfekt-sein-a2",
+      "praeteritum-basic-a2",
+      "reflexivverben-a2",
+      "relativsaetze-a2",
+      "trennbare-verben-praeteritum-a2",
+      "wechselpraepositionen-a2",
+      "zweiteilige-konnektoren-a2"
+    ],
+    "disallowedGrammar": [
+      "Konjunktiv I",
+      "Plusquamperfekt",
+      "Partizip I",
+      "Nominalstil"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 6.9,
+      "maxSentenceWords": 19,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Perfekt y Präteritum con su reparto de uso. Konjunktiv II solo en formas hechas (würde, wäre, hätte). Sin Plusquamperfekt ni Konjunktiv I."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta el texto?",
+      "options": [
+        {
+          "id": "miedo",
+          "text": "Que al abrirse la frontera esperó tres días, probablemente por miedo al reencuentro"
+        },
+        {
+          "id": "huida",
+          "text": "Que la abuela intentó cruzar la frontera en secreto"
+        },
+        {
+          "id": "mudanza",
+          "text": "Que las dos hermanas se mudaron juntas en 1989"
+        }
+      ],
+      "answer": "miedo",
+      "evidence": "Sie wartete noch drei Tage … Ich glaube, sie hatte Angst. Nicht vor der Grenze. Vor ihrer Schwester.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el narrador lo presenta como interpretación suya: «Ich glaube»."
+        },
+        "incorrect": {
+          "es": "Nadie intenta cruzar en secreto ni se muda. Busca por qué esperó tres días más."
+        },
+        "strategy": {
+          "es": "Cuando un narrador dice «creo que», está interpretando. Esa interpretación suele ser el asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿A qué distancia vivían la una de la otra?",
+      "options": [
+        {
+          "id": "200",
+          "text": "Doscientos metros"
+        },
+        {
+          "id": "28",
+          "text": "Veintiocho kilómetros"
+        },
+        {
+          "id": "66",
+          "text": "Sesenta y seis metros"
+        }
+      ],
+      "answer": "200",
+      "evidence": "Ihre Schwester wohnte auf der anderen Seite, zweihundert Meter weiter.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el texto repite la cifra para que se note el absurdo."
+        },
+        "incorrect": {
+          "es": "Los veintiocho son años y los sesenta y seis, la edad de la abuela. Busca la cifra con «Meter»."
+        },
+        "strategy": {
+          "es": "Empareja cada número con su unidad: metros, años, edad."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «Sie durfte nicht hinübergehen». ¿Qué significa «hinübergehen»?",
+      "options": [
+        {
+          "id": "cruzar",
+          "text": "Ir cruzando al otro lado"
+        },
+        {
+          "id": "salir",
+          "text": "Salir de casa"
+        },
+        {
+          "id": "volver",
+          "text": "Regresar a casa"
+        }
+      ],
+      "answer": "cruzar",
+      "evidence": "Sie durfte nicht hinübergehen und ihre Schwester durfte nicht herüberkommen.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Y su pareja «herüberkommen» es lo mismo en dirección contraria."
+        },
+        "incorrect": {
+          "es": "Las dos formas del texto son simétricas y hablan de los dos lados de la frontera."
+        },
+        "strategy": {
+          "es": "Si dos verbos aparecen en pareja simétrica, describen el mismo movimiento en dos direcciones."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué las cartas hablaban solo del tiempo y del jardín?",
+      "options": [
+        {
+          "id": "censura",
+          "text": "Porque alguien las leía y no quería escribir nada inconveniente"
+        },
+        {
+          "id": "aburrido",
+          "text": "Porque no tenían nada más que contarse"
+        },
+        {
+          "id": "idioma",
+          "text": "Porque no dominaban bien la escritura"
+        }
+      ],
+      "answer": "censura",
+      "evidence": "Die Briefe waren kurz, weil jemand sie las. Meine Großmutter wollte nichts Falsches schreiben.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo dice con un «weil»: alguien las leía."
+        },
+        "incorrect": {
+          "es": "El texto da la razón de forma explícita en la frase siguiente. Busca el «weil»."
+        },
+        "strategy": {
+          "es": "Una explicación con «weil» es literal. No hace falta deducir nada más."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la abuela cruzó el mismo día que se abrió la frontera.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Aber sie ging nicht sofort. Sie wartete noch drei Tage … Am vierten Tag ging sie hinüber.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: esperó tres días y cruzó al cuarto. Ese retraso es el corazón del texto."
+        },
+        "incorrect": {
+          "es": "Busca la frase que empieza con «Aber». Lo que sigue contradice lo esperado."
+        },
+        "strategy": {
+          "es": "La conjunción «aber» avisa de que viene lo contrario de lo previsible. Léelo entero."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "¿Qué efecto tiene la frase de la hermana, «Du bist zu spät, der Kaffee ist kalt»?",
+      "options": [
+        {
+          "id": "broma",
+          "text": "Desarma veintiocho años con una broma doméstica"
+        },
+        {
+          "id": "reproche",
+          "text": "Es un reproche serio por haber tardado"
+        },
+        {
+          "id": "confusion",
+          "text": "Muestra que no la ha reconocido"
+        }
+      ],
+      "answer": "broma",
+      "evidence": "Du bist zu spät, der Kaffee ist kalt. Dann lachten beide und weinten beide.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la reacción lo confirma: rieron y lloraron las dos a la vez."
+        },
+        "incorrect": {
+          "es": "Si fuera un reproche no se reirían. Fíjate en la frase inmediatamente posterior."
+        },
+        "strategy": {
+          "es": "Para el tono de una frase, mira la reacción que provoca. Aquí está en la línea siguiente."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en alemán sobre alguien mayor de tu familia y algo que no pudo hacer en su época. Usa cuatro modales en pasado y cuatro verbos en Präteritum."
+    },
+    "minWords": 40,
+    "maxWords": 85,
+    "hints": [
+      "Meine Großmutter wohnte in…",
+      "Sie konnte nicht…",
+      "Sie durfte nicht…",
+      "Am… Tag ging sie…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán A2: Entonces no se podía | WeLearn"
+    },
+    "description": {
+      "es": "Lee una memoria familiar en alemán A2 y practica el Präteritum y los verbos modales en pasado. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/a2/lectura/damals-durfte-man-nicht",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-a2-ich-habe-den-brief-nicht-geoeffnet",
+      "de-a2-die-frau-die-den-schluessel-hat"
+    ]
+  }
+}

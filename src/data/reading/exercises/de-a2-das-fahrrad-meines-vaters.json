@@ -1,0 +1,462 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-a2-das-fahrrad-meines-vaters",
+  "status": "published",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Alemán A2"
+  },
+  "slug": "das-fahrrad-meines-vaters",
+  "series": {
+    "id": "aleman-a2-lectura-10",
+    "episode": 9,
+    "totalEpisodes": 10,
+    "previousExerciseId": "de-a2-weder-laut-noch-leise",
+    "nextExerciseId": "de-a2-komm-mal-her"
+  },
+  "classification": {
+    "genre": "retrato de un objeto",
+    "topic": "una herencia incómoda",
+    "intent": "learning",
+    "tags": [
+      "aleman a2",
+      "lectura",
+      "comparativo y superlativo",
+      "genitivo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La bicicleta de mi padre"
+    },
+    "intro": {
+      "es": "Una bicicleta heredada, más pesada y más lenta que cualquier otra, que su dueño no cambia por una mejor. Lectura de alemán A2."
+    },
+    "mission": {
+      "es": "Averigua qué encontró dentro del sillín."
+    },
+    "targetText": "Das Fahrrad meines Vaters ist von 1981. Es ist schwerer als mein altes Rad und viel langsamer als die neuen. Der Rahmen ist aus Stahl. Es wiegt siebzehn Kilo. Ein modernes Rad wiegt neun. Der Sattel ist der unbequemste Sattel der Stadt, das sage ich ohne Übertreibung. Meine Frau fragt jedes Jahr, warum ich kein besseres Rad kaufe. Ich habe keine gute Antwort. Letztes Jahr habe ich den Sattel abgeschraubt, weil er kaputt war. Im Rohr steckte ein zusammengerolltes Papier. Es war die Rechnung des Fahrrads, von 1981. Mein Vater hat auf die Rückseite etwas geschrieben. Nur zwei Zeilen. Er hat den Preis notiert und daneben: drei Monate gespart. Er war damals dreiundzwanzig. Ich bin jetzt einundvierzig und ich habe nie drei Monate für etwas gespart. Ich habe die Rechnung wieder in das Rohr gesteckt und den neuen Sattel darauf geschraubt. Meine Frau weiß davon nichts. Sie fragt weiter jedes Jahr, und ich antworte weiter schlecht. Das ist der Grund, warum das Fahrrad noch da ist. Nicht der Rahmen. Das Papier.",
+    "wordCount": 171,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Formar comparativos y superlativos: schwerer als, viel langsamer, der unbequemste."
+      },
+      {
+        "es": "Usar el genitivo: das Fahrrad meines Vaters, die Rechnung des Fahrrads."
+      },
+      {
+        "es": "Distinguir el valor de un objeto de su utilidad."
+      }
+    ],
+    "grammarFocus": [
+      "komparativ-superlativ-a2",
+      "genitiv-a2",
+      "possessivpronomen"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Rahmen",
+        "lemma": "Rahmen",
+        "glosses": {
+          "es": "cuadro de la bicicleta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Stahl",
+        "lemma": "Stahl",
+        "glosses": {
+          "es": "acero"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "wiegt",
+        "lemma": "wiegen",
+        "glosses": {
+          "es": "pesa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Sattel",
+        "lemma": "Sattel",
+        "glosses": {
+          "es": "sillín"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Übertreibung",
+        "lemma": "Übertreibung",
+        "glosses": {
+          "es": "exageración"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "abgeschraubt",
+        "lemma": "abschrauben",
+        "glosses": {
+          "es": "desatornillado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Rohr",
+        "lemma": "Rohr",
+        "glosses": {
+          "es": "tubo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gespart",
+        "lemma": "sparen",
+        "glosses": {
+          "es": "ahorrado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Las bicicletas alemanas de cuadro de acero de los años setenta y ochenta duran décadas y siguen circulando, aunque pesen casi el doble que una moderna."
+    },
+    "spanishSpeakerNote": {
+      "es": "El genitivo añade -s al masculino y neutro: «das Fahrrad meines Vaters», «die Rechnung des Fahrrads». En el habla se sustituye por «von», pero en un texto escrito verás el genitivo."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en alemán sobre hechos pasados, encontrar el verbo al final de una subordinada, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens",
+      "adjektivdeklination-a2",
+      "da-hin-her-a2",
+      "dativ-a2",
+      "futur-i-a2",
+      "genitiv-a2",
+      "infinitiv-zu-a2",
+      "komparativ-superlativ-a2",
+      "konjunktionen-a2",
+      "konjunktiv-ii-wurden-a2",
+      "modalverben-praeteritum-a2",
+      "partizip-als-adjektiv-a2",
+      "passiv-praesens-a2",
+      "perfekt-haben-a2",
+      "perfekt-sein-a2",
+      "praeteritum-basic-a2",
+      "reflexivverben-a2",
+      "relativsaetze-a2",
+      "trennbare-verben-praeteritum-a2",
+      "wechselpraepositionen-a2",
+      "zweiteilige-konnektoren-a2"
+    ],
+    "disallowedGrammar": [
+      "Konjunktiv I",
+      "Plusquamperfekt",
+      "Partizip I",
+      "Nominalstil"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 7.8,
+      "maxSentenceWords": 15,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Perfekt y Präteritum con su reparto de uso. Konjunktiv II solo en formas hechas (würde, wäre, hätte). Sin Plusquamperfekt ni Konjunktiv I."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Por qué conserva la bicicleta?",
+      "options": [
+        {
+          "id": "papel",
+          "text": "Por el papel que encontró dentro, no por la bicicleta en sí"
+        },
+        {
+          "id": "dinero",
+          "text": "Porque no puede permitirse otra"
+        },
+        {
+          "id": "calidad",
+          "text": "Porque el acero dura más que el aluminio"
+        }
+      ],
+      "answer": "papel",
+      "evidence": "Das ist der Grund, warum das Fahrrad noch da ist. Nicht der Rahmen. Das Papier.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo dice en tres frases muy cortas al final, separando una cosa de la otra."
+        },
+        "incorrect": {
+          "es": "No habla de dinero, y el acero solo se menciona como peso. Lee las tres últimas frases."
+        },
+        "strategy": {
+          "es": "Cuando un texto acaba con «no X. Y», está corrigiendo lo que el lector podría suponer."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto pesa la bicicleta?",
+      "options": [
+        {
+          "id": "17",
+          "text": "Diecisiete kilos"
+        },
+        {
+          "id": "9",
+          "text": "Nueve kilos"
+        },
+        {
+          "id": "23",
+          "text": "Veintitrés kilos"
+        }
+      ],
+      "answer": "17",
+      "evidence": "Es wiegt siebzehn Kilo. Ein modernes Rad wiegt neun.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Los nueve son los de una moderna y los veintitrés, la edad del padre."
+        },
+        "incorrect": {
+          "es": "Los nueve kilos son de una bicicleta moderna, no de esta. Compara las dos frases."
+        },
+        "strategy": {
+          "es": "Cuando un texto compara dos pesos, comprueba cuál pertenece al objeto del que se habla."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «Im Rohr steckte ein zusammengerolltes Papier». ¿Dónde estaba el papel?",
+      "options": [
+        {
+          "id": "tubo",
+          "text": "Dentro del tubo del sillín"
+        },
+        {
+          "id": "bolsillo",
+          "text": "En un bolsillo de la bolsa"
+        },
+        {
+          "id": "cesta",
+          "text": "En la cesta delantera"
+        }
+      ],
+      "answer": "tubo",
+      "evidence": "habe ich den Sattel abgeschraubt … Im Rohr steckte ein zusammengerolltes Papier.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Al desatornillar el sillín apareció el tubo, y dentro el papel enrollado."
+        },
+        "incorrect": {
+          "es": "El texto no menciona bolsa ni cesta. Fíjate en qué acababa de desatornillar."
+        },
+        "strategy": {
+          "es": "Si una acción precede al hallazgo, esa acción indica dónde estaba lo hallado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Qué le impresiona de las dos líneas escritas por su padre?",
+      "options": [
+        {
+          "id": "ahorro",
+          "text": "Que su padre ahorrara tres meses para comprarla, algo que él nunca ha hecho"
+        },
+        {
+          "id": "precio",
+          "text": "Que la bicicleta costara muy poco dinero"
+        },
+        {
+          "id": "letra",
+          "text": "Que la letra de su padre fuera muy bonita"
+        }
+      ],
+      "answer": "ahorro",
+      "evidence": "daneben: drei Monate gespart … ich habe nie drei Monate für etwas gespart",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la comparación con su propia vida es lo que le da el peso."
+        },
+        "incorrect": {
+          "es": "No comenta el precio ni la caligrafía. Compara la nota del padre con lo que él dice de sí mismo."
+        },
+        "strategy": {
+          "es": "Si un narrador se compara con lo que acaba de leer, ahí está lo que le impresiona."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: su mujer le pregunta cada año por qué no compra una bicicleta mejor.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Meine Frau fragt jedes Jahr, warum ich kein besseres Rad kaufe. Ich habe keine gute Antwort.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y él admite que no tiene una buena respuesta que darle."
+        },
+        "incorrect": {
+          "es": "Busca la frase con «Meine Frau». Dice con qué frecuencia pregunta."
+        },
+        "strategy": {
+          "es": "La expresión «jedes Jahr» indica repetición anual. Si la ves, el hecho no es puntual."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "¿Qué tono tiene decir que el sillín es «el más incómodo de la ciudad, sin exagerar»?",
+      "options": [
+        {
+          "id": "humor",
+          "text": "Humor: se ríe del objeto que aun así conserva"
+        },
+        {
+          "id": "queja",
+          "text": "Queja seria por el estado de la bicicleta"
+        },
+        {
+          "id": "orgullo",
+          "text": "Orgullo por lo resistente que es"
+        }
+      ],
+      "answer": "humor",
+      "evidence": "Der Sattel ist der unbequemste Sattel der Stadt, das sage ich ohne Übertreibung.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El «ohne Übertreibung» después de un superlativo tan grande es justamente la broma."
+        },
+        "incorrect": {
+          "es": "No es queja: conserva la bici por decisión propia. Y el sillín no es motivo de orgullo."
+        },
+        "strategy": {
+          "es": "Un superlativo exagerado seguido de «sin exagerar» es humor. Es una figura reconocible."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en alemán sobre un objeto heredado. Usa tres comparativos, un superlativo y dos genitivos."
+    },
+    "minWords": 40,
+    "maxWords": 85,
+    "hints": [
+      "Das… meines Vaters ist von…",
+      "Es ist schwerer als…",
+      "Der… ist der… der Stadt.",
+      "Das ist der Grund, warum…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán A2: La bicicleta de mi padre | WeLearn"
+    },
+    "description": {
+      "es": "Lee un retrato de objeto en alemán A2 y practica el comparativo, el superlativo y el genitivo. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/a2/lectura/das-fahrrad-meines-vaters",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-a2-weder-laut-noch-leise",
+      "de-a2-komm-mal-her"
+    ]
+  }
+}

@@ -45,7 +45,7 @@ const TIMELINE: TimelineItem[] = [
     rom: 'i-geo',
     title: '이거 — esto (objeto cerca de ti)',
     body: 'El cliente entra, señala algo en la vitrina y pregunta. Usa 이거 porque el objeto está cerca de él. En coreano la distancia importa: 이거 es lo que tienes casi al alcance.',
-    color: '#6c63ff',
+    color: 'var(--wl-on-panel-link, #6c63ff)',
     audioKey: '이거 뭐예요?',
     breakdown: [
       { kr: '이거', es: 'esto (cerca del hablante)' },
@@ -63,7 +63,7 @@ const TIMELINE: TimelineItem[] = [
     rom: 'geu-geo-neun ho-tteok-i-e-yo',
     title: 'David responde — 그거 (eso, objeto lejos de ti)',
     body: 'David responde con 그거 porque para él el hodduk está más lejos. Mismo objeto, pronombre diferente según la perspectiva de quien habla.',
-    color: '#8b5cf6',
+    color: 'var(--wl-on-panel-link, #8b5cf6)',
     audioKey: '호떡',
     breakdown: [
       { kr: '그거는', es: 'eso (lejos del hablante, -는 = partícula de tema)' },
@@ -92,7 +92,7 @@ const TIMELINE: TimelineItem[] = [
     rom: 'ma-si-sseo-yo / ma-deop-sseo-yo',
     title: '맛있어요 — tiene sabor → está delicioso',
     body: 'Coreano analítico: 맛 (sabor) + 있어요 (hay/tiene) = "tiene sabor" = está delicioso. Si le quitas el sabor: 맛없어요 = "no tiene sabor" = está malo.',
-    color: '#6c63ff',
+    color: 'var(--wl-on-panel-link, #6c63ff)',
     audioKey: '맛있어요',
     breakdown: [
       { kr: '맛', es: 'sabor / gusto' },
@@ -110,7 +110,7 @@ const TIMELINE: TimelineItem[] = [
     rom: 'ha-na · dul · set · net · da-seot',
     title: 'Números nativos — para contar objetos físicos',
     body: 'En coreano hay dos sistemas de números. El sistema nativo (순우리말) se usa para contar objetos tangibles, personas y edad. ¡No es el mismo que usas para el dinero!',
-    color: '#8b5cf6',
+    color: 'var(--wl-on-panel-link, #8b5cf6)',
     breakdown: [
       { kr: '하나', es: 'uno' },
       { kr: '둘', es: 'dos' },
@@ -130,7 +130,7 @@ const TIMELINE: TimelineItem[] = [
     rom: 'han jan · han gae',
     title: 'La contracción + contadores (잔, 개)',
     body: 'Cuando el número nativo va antes de un contador, se contrae: 하나→한, 둘→두, 셋→세, 넷→네. El contador 잔 es para bebidas/tazas; 개 es genérico para objetos.',
-    color: '#8b5cf6',
+    color: 'var(--wl-on-panel-link, #8b5cf6)',
     breakdown: [
       { kr: '하나 → 한', es: 'uno → un (antes de contador)' },
       { kr: '잔 (jan)', es: 'contador para tazas y bebidas' },
@@ -332,7 +332,7 @@ export default function Activation004({ onComplete }: Props) {
                     }} />
                   ))}
                 </div>
-                <span style={{ fontFamily: 'var(--mono)', fontSize: 9, color: '#6c63ff', fontWeight: 700, letterSpacing: '0.12em' }}>
+                <span style={{ fontFamily: 'var(--mono)', fontSize: 9, color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700, letterSpacing: '0.12em' }}>
                   PODCAST · STEP 004
                 </span>
               </div>
@@ -396,7 +396,7 @@ export default function Activation004({ onComplete }: Props) {
                   {TYPE_CONFIG[activeItem.type].icon} {TYPE_CONFIG[activeItem.type].label}
                 </span>
                 {activeItem.recycled && (
-                  <span style={{ fontSize: 10, fontWeight: 700, color: '#2d9b4e', background: 'rgba(45,155,78,0.1)', border: '1px solid rgba(45,155,78,0.3)', borderRadius: 100, padding: '2px 8px' }}>
+                  <span style={{ fontSize: 10, fontWeight: 700, color: 'var(--wl-on-panel-ok, #2d9b4e)', background: 'rgba(45,155,78,0.1)', border: '1px solid rgba(45,155,78,0.3)', borderRadius: 100, padding: '2px 8px' }}>
                     ♻️ RECICLADO
                   </span>
                 )}
@@ -408,7 +408,7 @@ export default function Activation004({ onComplete }: Props) {
               {activeItem.breakdown && (
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 10 }}>
                   {activeItem.breakdown.map(b => (
-                    <span key={b.kr} style={{ background: 'var(--bg-2,#f5f5f7)', borderRadius: 8, padding: '4px 10px', fontSize: 12 }}>
+                    <span key={b.kr} style={{ background: 'var(--bg-2,var(--wl-panel-raised, #f5f5f7))', borderRadius: 8, padding: '4px 10px', fontSize: 12 }}>
                       <strong>{b.kr}</strong> = {b.es}
                     </span>
                   ))}
@@ -441,7 +441,7 @@ export default function Activation004({ onComplete }: Props) {
           </div>
 
           <button onClick={() => { setPhase('quiz'); setQuizIdx(0); }}
-            style={{ width: '100%', background: 'var(--bg-2,#f5f5f7)', border: '1px solid var(--line-soft)', borderRadius: 10, padding: '12px', fontSize: 13, color: 'var(--muted)', cursor: 'pointer' }}>
+            style={{ width: '100%', background: 'var(--bg-2,var(--wl-panel-raised, #f5f5f7))', border: '1px solid var(--line-soft)', borderRadius: 10, padding: '12px', fontSize: 13, color: 'var(--muted)', cursor: 'pointer' }}>
             Saltar al cuestionario →
           </button>
         </>
@@ -477,7 +477,7 @@ export default function Activation004({ onComplete }: Props) {
       {phase === 'recap' && (
         <div>
           <div style={{ background: 'rgba(45,155,78,0.1)', border: '1px solid rgba(45,155,78,0.3)', borderRadius: 14, padding: '16px 20px', marginBottom: 20, textAlign: 'center' }}>
-            <p style={{ margin: 0, fontSize: 15, fontWeight: 700, color: '#2d9b4e' }}>
+            <p style={{ margin: 0, fontSize: 15, fontWeight: 700, color: 'var(--wl-on-panel-ok, #2d9b4e)' }}>
               {correct}/{QUESTIONS.length} respuestas correctas ✅
             </p>
           </div>
@@ -487,7 +487,7 @@ export default function Activation004({ onComplete }: Props) {
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginBottom: 20 }}>
             {RECAP_PHRASES.map(p => (
               <button key={p.kr} onClick={() => playAudio(p.audio)}
-                style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'var(--bg-2,#f5f5f7)', border: '1px solid var(--line-soft)', borderRadius: 10, padding: '12px 16px', cursor: 'pointer', textAlign: 'left' }}>
+                style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'var(--bg-2,var(--wl-panel-raised, #f5f5f7))', border: '1px solid var(--line-soft)', borderRadius: 10, padding: '12px 16px', cursor: 'pointer', textAlign: 'left' }}>
                 <span style={{ fontFamily: "'Noto Sans KR',sans-serif", fontWeight: 600 }}>{p.kr}</span>
                 <span style={{ fontSize: 12, color: 'var(--muted)' }}>{p.es} 🔊</span>
               </button>

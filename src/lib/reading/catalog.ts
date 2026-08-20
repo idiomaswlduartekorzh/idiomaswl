@@ -29,6 +29,250 @@ import remoteWorkPilot from '@/data/reading/exercises/en-b1-remote-work-pilot.js
 import urbanTreePlan from '@/data/reading/exercises/en-b1-urban-tree-plan.json'
 import workplaceMentoring from '@/data/reading/exercises/en-b1-workplace-mentoring.json'
 import koreanCafe from '@/data/reading/exercises/ko-a1-cafe-order.json'
+// Francés A1 — blueprint 1.1.0. Generadas desde `src/data/reading/source/fr-a1.mjs`,
+// en borrador hasta que pasen revisión de lengua y de pedagogía. Se ven con READING_PREVIEW=1.
+import frChatTroisiemeEtage from '@/data/reading/exercises/fr-a1-le-chat-du-troisieme-etage.json'
+import frMarcheDuSamedi from '@/data/reading/exercises/fr-a1-le-marche-du-samedi.json'
+import frTroisMessages from '@/data/reading/exercises/fr-a1-trois-messages-et-un-retard.json'
+import frChambreDeYasmine from '@/data/reading/exercises/fr-a1-la-chambre-de-yasmine.json'
+import frColocataireCherche from '@/data/reading/exercises/fr-a1-colocataire-cherche.json'
+import frRecetteMamieAicha from '@/data/reading/exercises/fr-a1-la-recette-de-mamie-aicha.json'
+import frBus712 from '@/data/reading/exercises/fr-a1-le-bus-de-7h12.json'
+import frLettreDeDakar from '@/data/reading/exercises/fr-a1-une-lettre-de-dakar.json'
+import frTropDeSel from '@/data/reading/exercises/fr-a1-trop-de-sel.json'
+import frPremierJour from '@/data/reading/exercises/fr-a1-le-premier-jour.json'
+// Francés A2 — generadas desde `src/data/reading/source/fr-a2.mjs`.
+import frQuaranteSecondes from '@/data/reading/exercises/fr-a2-quarante-secondes.json'
+import frEtesDeSete from '@/data/reading/exercises/fr-a2-les-etes-de-sete.json'
+import frVillePlusChaud from '@/data/reading/exercises/fr-a2-la-ville-aura-plus-chaud.json'
+import frTroisVelos from '@/data/reading/exercises/fr-a2-trois-velos-un-budget.json'
+import frRepartitionTaches from '@/data/reading/exercises/fr-a2-repartition-des-taches.json'
+import frLibrairieResiste from '@/data/reading/exercises/fr-a2-la-librairie-qui-resiste.json'
+import frQuatreHeures from '@/data/reading/exercises/fr-a2-quatre-heures-du-matin.json'
+import frPisteCyclable from '@/data/reading/exercises/fr-a2-a-propos-de-la-piste-cyclable.json'
+import frReunionVoisins from '@/data/reading/exercises/fr-a2-reunion-des-voisins.json'
+import frEauMontee from '@/data/reading/exercises/fr-a2-l-eau-est-montee-en-vingt-minutes.json'
+// Francés B1 — generadas desde `src/data/reading/source/fr-b1.mjs`.
+import frLettreJamaisEnvoyee from '@/data/reading/exercises/fr-b1-la-lettre-jamais-envoyee.json'
+import frUsineLaisse from '@/data/reading/exercises/fr-b1-ce-que-l-usine-a-laisse.json'
+import frTravaillaitMoins from '@/data/reading/exercises/fr-b1-si-on-travaillait-moins.json'
+import frDernierAccordeur from '@/data/reading/exercises/fr-b1-le-dernier-accordeur.json'
+import frRumeurGymnase from '@/data/reading/exercises/fr-b1-la-rumeur-du-gymnase.json'
+import frAttention from '@/data/reading/exercises/fr-b1-ce-que-nous-appelons-l-attention.json'
+import frVillage2040 from '@/data/reading/exercises/fr-b1-le-village-en-2040.json'
+import frApprendreSeTrompant from '@/data/reading/exercises/fr-b1-apprendre-en-se-trompant.json'
+import frDeuxFoisRoman from '@/data/reading/exercises/fr-b1-deux-fois-le-meme-roman.json'
+import frClubNeGagneJamais from '@/data/reading/exercises/fr-b1-le-club-qui-ne-gagne-jamais.json'
+// Coreano A1 — generadas desde `src/data/reading/source/ko-a1.mjs`.
+// El coreano lleva banda de longitud propia (eojeol, no palabras) y romanización en cada
+// entrada de vocabulario. Ninguna puede publicarse sin revisión de hablante nativa.
+import koIreumiDuGae from '@/data/reading/exercises/ko-a1-ireumi-du-gae.json'
+import koDoseogwanGoyangi from '@/data/reading/exercises/ko-a1-doseogwan-goyangi.json'
+import koDongneEopneunGeot from '@/data/reading/exercises/ko-a1-uri-dongne-e-eopneun-geot.json'
+import koHalmeoniAchim from '@/data/reading/exercises/ko-a1-halmeoni-achim.json'
+import koBeoseuSiganpyo from '@/data/reading/exercises/ko-a1-beoseu-siganpyo.json'
+import koSijangEseo from '@/data/reading/exercises/ko-a1-sijang-eseo.json'
+import koKeopiAnMasyeoyo from '@/data/reading/exercises/ko-a1-keopireul-an-masyeoyo.json'
+import koJinanJumal from '@/data/reading/exercises/ko-a1-jinan-jumal.json'
+import koJilmuniManheunAi from '@/data/reading/exercises/ko-a1-jilmuni-manheun-ai.json'
+import koHagoSipeunIl from '@/data/reading/exercises/ko-a1-hago-sipeun-il.json'
+// Coreano A2 — generadas desde `src/data/reading/source/ko-a2.mjs`.
+import koA2CheoeumInsa from '@/data/reading/exercises/ko-a2-cheoeum-insa.json'
+import koA2GeseuteuhauseuGyuchik from '@/data/reading/exercises/ko-a2-geseuteuhauseu-gyuchik.json'
+import koA2GireulIreobeorimyeon from '@/data/reading/exercises/ko-a2-gireul-ireobeorimyeon.json'
+import koA2IsaJeonhwaHu from '@/data/reading/exercises/ko-a2-isa-jeonhwa-hu.json'
+import koA2JalAnhaneunKape from '@/data/reading/exercises/ko-a2-jal-anhaneun-kape.json'
+import koA2JegaHanSilsu from '@/data/reading/exercises/ko-a2-jega-han-silsu.json'
+import koA2JongiChaegmanIlgeoyo from '@/data/reading/exercises/ko-a2-jongi-chaegman-ilgeoyo.json'
+import koA2SumureulBaeugoItsseoyo from '@/data/reading/exercises/ko-a2-sumureul-baeugo-itsseoyo.json'
+import koA2UisagaHanMal from '@/data/reading/exercises/ko-a2-uisaga-han-mal.json'
+import koA2YeohaengGyehoek from '@/data/reading/exercises/ko-a2-yeohaeng-gyehoek.json'
+// Coreano B1 — generadas desde `src/data/reading/source/ko-b1.mjs`.
+import koB1AbeojiWaCheonjangyiMun from '@/data/reading/exercises/ko-b1-abeoji-wa-cheonjangyi-mun.json'
+import koB1AniRagoMalhaneunYeonseup from '@/data/reading/exercises/ko-b1-ani-rago-malhaneun-yeonseup.json'
+import koB1BamGeunmu from '@/data/reading/exercises/ko-b1-bam-geunmu.json'
+import koB1DoraonJeolmeuniDeul from '@/data/reading/exercises/ko-b1-doraon-jeolmeuni-deul.json'
+import koB1GateunNoraeuiDuBeonjeon from '@/data/reading/exercises/ko-b1-gateun-noraeui-du-beonjeon.json'
+import koB1GyedaniYeoseotGae from '@/data/reading/exercises/ko-b1-gyedani-yeoseot-gae.json'
+import koB1IjeHangugeoroMalhagiroHaesseoyo from '@/data/reading/exercises/ko-b1-ije-hangugeoro-malhagiro-haesseoyo.json'
+import koB1JeokhijiAnheunGyuchik from '@/data/reading/exercises/ko-b1-jeokhiji-anheun-gyuchik.json'
+import koB1SijangiNamgeDoenIyu from '@/data/reading/exercises/ko-b1-sijangi-namge-doen-iyu.json'
+import koB1TongyeoksaUiHanabeon from '@/data/reading/exercises/ko-b1-tongyeoksa-ui-hanabeon.json'
+// Portugués (Brasil) A1 — generadas desde `src/data/reading/source/pt-a1.mjs`.
+import ptA1AListaDaMudanca from '@/data/reading/exercises/pt-a1-a-lista-da-mudanca.json'
+import ptA1APracaAtrasDoMercado from '@/data/reading/exercises/pt-a1-a-praca-atras-do-mercado.json'
+import ptA1CartaoDeBelem from '@/data/reading/exercises/pt-a1-cartao-de-belem.json'
+import ptA1CentoEOitoCopos from '@/data/reading/exercises/pt-a1-cento-e-oito-copos.json'
+import ptA1EuNaoEstouBravo from '@/data/reading/exercises/pt-a1-eu-nao-estou-bravo.json'
+import ptA1EuNaoVendoNada from '@/data/reading/exercises/pt-a1-eu-nao-vendo-nada.json'
+import ptA1FeiraDaPraca from '@/data/reading/exercises/pt-a1-feira-da-praca.json'
+import ptA1MensagensSobreOSofa from '@/data/reading/exercises/pt-a1-mensagens-sobre-o-sofa.json'
+import ptA1OJogoDaRuaQuinze from '@/data/reading/exercises/pt-a1-o-jogo-da-rua-quinze.json'
+import ptA1OQueVoceVendeMais from '@/data/reading/exercises/pt-a1-o-que-voce-vende-mais.json'
+// Portugués (Brasil) A2 — generadas desde `src/data/reading/source/pt-a2.mjs`.
+import ptA2AAguaQueVemDeLonge from '@/data/reading/exercises/pt-a2-a-agua-que-vem-de-longe.json'
+import ptA2ABibliotecaDoPredio from '@/data/reading/exercises/pt-a2-a-biblioteca-do-predio.json'
+import ptA2ACozinheiraDasCinco from '@/data/reading/exercises/pt-a2-a-cozinheira-das-cinco.json'
+import ptA2AOficinaDoSeuJorge from '@/data/reading/exercises/pt-a2-a-oficina-do-seu-jorge.json'
+import ptA2CartaSobreORecreio from '@/data/reading/exercises/pt-a2-carta-sobre-o-recreio.json'
+import ptA2ComoUsarOOnibus from '@/data/reading/exercises/pt-a2-como-usar-o-onibus.json'
+import ptA2FazTempoQueEuNaoParo from '@/data/reading/exercises/pt-a2-faz-tempo-que-eu-nao-paro.json'
+import ptA2OErroDeTrintaMil from '@/data/reading/exercises/pt-a2-o-erro-de-trinta-mil.json'
+import ptA2TresBairrosUmAluguel from '@/data/reading/exercises/pt-a2-tres-bairros-um-aluguel.json'
+import ptA2VoltarParaACidadePequena from '@/data/reading/exercises/pt-a2-voltar-para-a-cidade-pequena.json'
+// Portugués (Brasil) B1 — generadas desde `src/data/reading/source/pt-b1.mjs`. Nivel en curso.
+import ptB1OCadernoQueNinguemTinhaAberto from '@/data/reading/exercises/pt-b1-o-caderno-que-ninguem-tinha-aberto.json'
+import ptB1OPredioQueFoiTombado from '@/data/reading/exercises/pt-b1-o-predio-que-foi-tombado.json'
+import ptB1SeEuTivesseDitoNao from '@/data/reading/exercises/pt-b1-se-eu-tivesse-dito-nao.json'
+import ptB1APreposicaoQueMudouOContrato from '@/data/reading/exercises/pt-b1-a-preposicao-que-mudou-o-contrato.json'
+import ptB1ARotinaQueEuNaoEscolhi from '@/data/reading/exercises/pt-b1-a-rotina-que-eu-nao-escolhi.json'
+import ptB1ComoDarUmaNoticiaRuim from '@/data/reading/exercises/pt-b1-como-dar-uma-noticia-ruim.json'
+import ptB1ElaNaoEstaProfessoraElaE from '@/data/reading/exercises/pt-b1-ela-nao-esta-professora-ela-e.json'
+import ptB1OMelhorCafeNaoEOMaisCaro from '@/data/reading/exercises/pt-b1-o-melhor-cafe-nao-e-o-mais-caro.json'
+import ptB1OQueATestemunhaDisse from '@/data/reading/exercises/pt-b1-o-que-a-testemunha-disse.json'
+import ptB1QuandoAAguaChegar from '@/data/reading/exercises/pt-b1-quando-a-agua-chegar.json'
+// Alemán A1 — generadas desde `src/data/reading/source/de-a1.mjs`. Nivel en curso.
+import deA1DerEinkaufszettel from '@/data/reading/exercises/de-a1-der-einkaufszettel.json'
+import deA1DerWegZurArbeit from '@/data/reading/exercises/de-a1-der-weg-zur-arbeit.json'
+import deA1DieWaschkueche from '@/data/reading/exercises/de-a1-die-waschkueche.json'
+import deA1MeinNameIstSchwer from '@/data/reading/exercises/de-a1-mein-name-ist-schwer.json'
+import deA1WasMachstDuEigentlich from '@/data/reading/exercises/de-a1-was-machst-du-eigentlich.json'
+import deA1AnleitungFuerDenNotdienst from '@/data/reading/exercises/de-a1-anleitung-fuer-den-notdienst.json'
+import deA1DerZugFaehrtAb from '@/data/reading/exercises/de-a1-der-zug-faehrt-ab.json'
+import deA1IchKannNichtSchwimmen from '@/data/reading/exercises/de-a1-ich-kann-nicht-schwimmen.json'
+import deA1NaechstesJahrWirdAllesAnders from '@/data/reading/exercises/de-a1-naechstes-jahr-wird-alles-anders.json'
+import deA1UnserTisch from '@/data/reading/exercises/de-a1-unser-tisch.json'
+// Alemán A2 — generadas desde `src/data/reading/source/de-a2.mjs`. Nivel en curso.
+import deA2DamalsDurfteManNicht from '@/data/reading/exercises/de-a2-damals-durfte-man-nicht.json'
+import deA2DieFrauDieDenSchluesselHat from '@/data/reading/exercises/de-a2-die-frau-die-den-schluessel-hat.json'
+import deA2IchHabeDenBriefNichtGeoeffnet from '@/data/reading/exercises/de-a2-ich-habe-den-brief-nicht-geoeffnet.json'
+import deA2AufDemTischOderAufDenTisch from '@/data/reading/exercises/de-a2-auf-dem-tisch-oder-auf-den-tisch.json'
+import deA2DasBrotWirdNachtsGebacken from '@/data/reading/exercises/de-a2-das-brot-wird-nachts-gebacken.json'
+import deA2IchHabeMichVerlaufen from '@/data/reading/exercises/de-a2-ich-habe-mich-verlaufen.json'
+import deA2WasWuerdestDuMachen from '@/data/reading/exercises/de-a2-was-wuerdest-du-machen.json'
+import deA2DasFahrradMeinesVaters from '@/data/reading/exercises/de-a2-das-fahrrad-meines-vaters.json'
+import deA2KommMalHer from '@/data/reading/exercises/de-a2-komm-mal-her.json'
+import deA2WederLautNochLeise from '@/data/reading/exercises/de-a2-weder-laut-noch-leise.json'
+
+// Alemán B1 — generadas desde `src/data/reading/source/de-b1.mjs`. Nivel completo.
+import deB1DerKonjunktivDerNachbarn from '@/data/reading/exercises/de-b1-der-konjunktiv-der-nachbarn.json'
+import deB1WasAllesRepariertWurde from '@/data/reading/exercises/de-b1-was-alles-repariert-wurde.json'
+import deB1DieHaltestelleDieEsNichtGibt from '@/data/reading/exercises/de-b1-die-haltestelle-die-es-nicht-gibt.json'
+import deB1ObwohlSieWiederVerloren from '@/data/reading/exercises/de-b1-obwohl-sie-wieder-verloren.json'
+import deB1DerZugUmSechsUhrZwoelf from '@/data/reading/exercises/de-b1-der-zug-um-sechs-uhr-zwoelf.json'
+import deB1IchFreueMichAufNichts from '@/data/reading/exercises/de-b1-ich-freue-mich-auf-nichts.json'
+import deB1DieTuerDesSchrankes from '@/data/reading/exercises/de-b1-die-tuer-des-schrankes.json'
+import deB1SieHatNieFahrenWollen from '@/data/reading/exercises/de-b1-sie-hat-nie-fahren-wollen.json'
+import deB1StellDenStuhlAnsFenster from '@/data/reading/exercises/de-b1-stell-den-stuhl-ans-fenster.json'
+import deB1EntwederJetztOderNie from '@/data/reading/exercises/de-b1-entweder-jetzt-oder-nie.json'
+
+// Italiano A1 — generadas desde `src/data/reading/source/it-a1.mjs`. Nivel completo.
+import itA1IlCaffeSiBeveInPiedi from '@/data/reading/exercises/it-a1-il-caffe-si-beve-in-piedi.json'
+import itA1HoDueNonneEUnaRicetta from '@/data/reading/exercises/it-a1-ho-due-nonne-e-una-ricetta.json'
+import itA1IlPortiereSaTutto from '@/data/reading/exercises/it-a1-il-portiere-sa-tutto.json'
+import itA1ChiScriveSulMuro from '@/data/reading/exercises/it-a1-chi-scrive-sul-muro.json'
+import itA1NonVadoMaiInCentro from '@/data/reading/exercises/it-a1-non-vado-mai-in-centro.json'
+import itA1CeUnGattoInBiblioteca from '@/data/reading/exercises/it-a1-ce-un-gatto-in-biblioteca.json'
+import itA1IlMercatoDelSabato from '@/data/reading/exercises/it-a1-il-mercato-del-sabato.json'
+import itA1DoveSonoLeMieChiavi from '@/data/reading/exercises/it-a1-dove-sono-le-mie-chiavi.json'
+import itA1GuardaStaPiovendo from '@/data/reading/exercises/it-a1-guarda-sta-piovendo.json'
+import itA1IlBurroNonEUnAsino from '@/data/reading/exercises/it-a1-il-burro-non-e-un-asino.json'
+
+// Italiano A2 — generadas desde `src/data/reading/source/it-a2.mjs`. Nivel completo.
+import itA2IlTrenoCheNonHoPreso from '@/data/reading/exercises/it-a2-il-treno-che-non-ho-preso.json'
+import itA2MioPadreNonParlavaAlTelefono from '@/data/reading/exercises/it-a2-mio-padre-non-parlava-al-telefono.json'
+import itA2IlMessaggioCheNonHoMandato from '@/data/reading/exercises/it-a2-il-messaggio-che-non-ho-mandato.json'
+import itA2MiScusiSignoraNardi from '@/data/reading/exercises/it-a2-mi-scusi-signora-nardi.json'
+import itA2LaScuolaConSeiBambini from '@/data/reading/exercises/it-a2-la-scuola-con-sei-bambini.json'
+import itA2IlPiuVecchioNonEIlPiuLento from '@/data/reading/exercises/it-a2-il-piu-vecchio-non-e-il-piu-lento.json'
+import itA2MiSveglioAlleQuattroEVenti from '@/data/reading/exercises/it-a2-mi-sveglio-alle-quattro-e-venti.json'
+import itA2AMiaMadreNonPiaceIlMare from '@/data/reading/exercises/it-a2-a-mia-madre-non-piace-il-mare.json'
+import itA2SePioveNonSiGioca from '@/data/reading/exercises/it-a2-se-piove-non-si-gioca.json'
+import itA2EroArrivatoDueOrePrima from '@/data/reading/exercises/it-a2-ero-arrivato-due-ore-prima.json'
+
+// Italiano B1 — generadas desde `src/data/reading/source/it-b1.mjs`. Nivel completo.
+import itB1IlPreventivoCheNonHoFatto from '@/data/reading/exercises/it-b1-il-preventivo-che-non-ho-fatto.json'
+import itB1SeiControSei from '@/data/reading/exercises/it-b1-sei-contro-sei.json'
+import itB1QuandoAvraiLettoQuestaLettera from '@/data/reading/exercises/it-b1-quando-avrai-letto-questa-lettera.json'
+import itB1LaFarmaciaCheApreDiNotte from '@/data/reading/exercises/it-b1-la-farmacia-che-apre-di-notte.json'
+import itB1AvreiDovutoChiamare from '@/data/reading/exercises/it-b1-avrei-dovuto-chiamare.json'
+import itB1NessunoHaApplaudito from '@/data/reading/exercises/it-b1-nessuno-ha-applaudito.json'
+import itB1IlNegozioCheHaApertoTroppoTardi from '@/data/reading/exercises/it-b1-il-negozio-che-ha-aperto-troppo-tardi.json'
+import itB1LaNonnaLoAvevaDetto from '@/data/reading/exercises/it-b1-la-nonna-lo-aveva-detto.json'
+import itB1MiDicaLeiCosaDevoFare from '@/data/reading/exercises/it-b1-mi-dica-lei-cosa-devo-fare.json'
+import itB1LaCasaDiVentAnni from '@/data/reading/exercises/it-b1-la-casa-di-vent-anni.json'
+
+// Ruso A1 — generadas desde `src/data/reading/source/ru-a1.mjs`. Nivel completo.
+import ruA1MoyaSosedkaVeraIvanovna from '@/data/reading/exercises/ru-a1-moya-sosedka-vera-ivanovna.json'
+import ruA1PyatDvereyPyatTsvetov from '@/data/reading/exercises/ru-a1-pyat-dverey-pyat-tsvetov.json'
+import ruA1VosemChasovUtra from '@/data/reading/exercises/ru-a1-vosem-chasov-utra.json'
+import ruA1KuryerTimur from '@/data/reading/exercises/ru-a1-kuryer-timur.json'
+import ruA1VShkoleNoNaRabote from '@/data/reading/exercises/ru-a1-v-shkole-no-na-rabote.json'
+import ruA1SkolkoStoitKhleb from '@/data/reading/exercises/ru-a1-skolko-stoit-khleb.json'
+import ruA1KomuDedushkaPishet from '@/data/reading/exercises/ru-a1-komu-dedushka-pishet.json'
+import ruA1VoditelKotoryyNeSprashivaet from '@/data/reading/exercises/ru-a1-voditel-kotoryy-ne-sprashivaet.json'
+import ruA1PrikhoditeVSem from '@/data/reading/exercises/ru-a1-prikhodite-v-sem.json'
+import ruA1BukvyObmanyvayut from '@/data/reading/exercises/ru-a1-bukvy-obmanyvayut.json'
+
+// Ruso A2 — generadas desde `src/data/reading/source/ru-a2.mjs`. Nivel completo.
+import ruA2OdinnadtsatDneyYaKrasilDver from '@/data/reading/exercises/ru-a2-odinnadtsat-dney-ya-krasil-dver.json'
+import ruA2YaPozvonyuIBuduZvonit from '@/data/reading/exercises/ru-a2-ya-pozvonyu-i-budu-zvonit.json'
+import ruA2YaRabotayuPerevodchikom from '@/data/reading/exercises/ru-a2-ya-rabotayu-perevodchikom.json'
+import ruA2SamyyKorotkiyPut from '@/data/reading/exercises/ru-a2-samyy-korotkiy-put.json'
+import ruA2PrishelUshelVernulsya from '@/data/reading/exercises/ru-a2-prishel-ushel-vernulsya.json'
+import ruA2ChelovekKotoryyChinitChasy from '@/data/reading/exercises/ru-a2-chelovek-kotoryy-chinit-chasy.json'
+import ruA2EsliByYaNachalaRanshe from '@/data/reading/exercises/ru-a2-esli-by-ya-nachala-ranshe.json'
+import ruA2SkolkoLyudeyPrikhodit from '@/data/reading/exercises/ru-a2-skolko-lyudey-prikhodit.json'
+import ruA2VDerevnyuIVDerevne from '@/data/reading/exercises/ru-a2-v-derevnyu-i-v-derevne.json'
+import ruA2NikogdaNeVykhodiSMokrymiVolosami from '@/data/reading/exercises/ru-a2-nikogda-ne-vykhodi-s-mokrymi-volosami.json'
+
+// Ruso B1 — generadas desde `src/data/reading/source/ru-b1.mjs`. Nivel completo.
+import ruB1VsyoChtoZdesSdelano from '@/data/reading/exercises/ru-b1-vsyo-chto-zdes-sdelano.json'
+import ruB1GovoryaVMikrofonVTriNochi from '@/data/reading/exercises/ru-b1-govorya-v-mikrofon-v-tri-nochi.json'
+import ruB1OnGovorilChtoPriedet from '@/data/reading/exercises/ru-b1-on-govoril-chto-priedet.json'
+import ruB1ChitalnyyZalKotoryyNeZakryvaetsya from '@/data/reading/exercises/ru-b1-chitalnyy-zal-kotoryy-ne-zakryvaetsya.json'
+import ruB1ChtoYaSdelayuVSubbotu from '@/data/reading/exercises/ru-b1-chto-ya-sdelayu-v-subbotu.json'
+import ruB1ProvodnitsaNochnogoPoezda from '@/data/reading/exercises/ru-b1-provodnitsa-nochnogo-poezda.json'
+import ruB1NetKassyNetProblem from '@/data/reading/exercises/ru-b1-net-kassy-net-problem.json'
+import ruB1OnaNeDoshla from '@/data/reading/exercises/ru-b1-ona-ne-doshla.json'
+import ruB1Minutochku from '@/data/reading/exercises/ru-b1-minutochku.json'
+import ruB1ChemKholodneeTemLuchshe from '@/data/reading/exercises/ru-b1-chem-kholodnee-tem-luchshe.json'
+
+// Japonés A1 — generadas desde `src/data/reading/source/ja-a1.mjs`. Nivel completo.
+import jaA1HoSanToYobimasu from '@/data/reading/exercises/ja-a1-ho-san-to-yobimasu.json'
+import jaA1NekoGaImasu from '@/data/reading/exercises/ja-a1-neko-ga-imasu.json'
+import jaA1MaiasaRokuJiNiOkimasu from '@/data/reading/exercises/ja-a1-maiasa-roku-ji-ni-okimasu.json'
+import jaA1AtarashiiJitensha from '@/data/reading/exercises/ja-a1-atarashii-jitensha.json'
+import jaA1HachiJiJuuGoFunNoBasu from '@/data/reading/exercises/ja-a1-hachi-ji-juu-go-fun-no-basu.json'
+import jaA1DareMoShirimasen from '@/data/reading/exercises/ja-a1-dare-mo-shirimasen.json'
+import jaA1BasuDeIkimasu from '@/data/reading/exercises/ja-a1-basu-de-ikimasu.json'
+import jaA1KatakanaWaMuzukashii from '@/data/reading/exercises/ja-a1-katakana-wa-muzukashii.json'
+import jaA1TabeteMoIiDesuKa from '@/data/reading/exercises/ja-a1-tabete-mo-ii-desu-ka.json'
+import jaA1Itadakimasu from '@/data/reading/exercises/ja-a1-itadakimasu.json'
+
+// Japonés A2 — generadas desde `src/data/reading/source/ja-a2.mjs`. Nivel completo.
+import jaA2ShinbunOToriNiIku from '@/data/reading/exercises/ja-a2-shinbun-o-tori-ni-iku.json'
+import jaA2FujiSanNiNobottaKotoGaAru from '@/data/reading/exercises/ja-a2-fuji-san-ni-nobotta-koto-ga-aru.json'
+import jaA2AmeGaFuruTo from '@/data/reading/exercises/ja-a2-ame-ga-furu-to.json'
+import jaA2OnigiriBakari from '@/data/reading/exercises/ja-a2-onigiri-bakari.json'
+import jaA2YasaiOMoratta from '@/data/reading/exercises/ja-a2-yasai-o-moratta.json'
+import jaA2NazeNihongoOBenkyouSuruNDesuKa from '@/data/reading/exercises/ja-a2-naze-nihongo-o-benkyou-suru-n-desu-ka.json'
+import jaA2HankoOMotteKonakerebaNaranai from '@/data/reading/exercises/ja-a2-hanko-o-motte-konakereba-naranai.json'
+import jaA2AshitaWaYukiDeshou from '@/data/reading/exercises/ja-a2-ashita-wa-yuki-deshou.json'
+import jaA2NagaraBenkyouShitari from '@/data/reading/exercises/ja-a2-nagara-benkyou-shitari.json'
+import jaA2KabeNiKakaretaE from '@/data/reading/exercises/ja-a2-kabe-ni-kakareta-e.json'
+
+// Japonés B1 — generadas desde `src/data/reading/source/ja-b1.mjs`. Nivel completo.
+import jaB1SuteteShimattaTegami from '@/data/reading/exercises/ja-b1-sutete-shimatta-tegami.json'
+import jaB1SumimasenOKazoeteMita from '@/data/reading/exercises/ja-b1-sumimasen-o-kazoete-mita.json'
+import jaB1KareWaKonaiHazuDatta from '@/data/reading/exercises/ja-b1-kare-wa-konai-hazu-datta.json'
+import jaB1SorobanONarawasareta from '@/data/reading/exercises/ja-b1-soroban-o-narawasareta.json'
+import jaB1JibunNoSoubetsukaiNiOkureta from '@/data/reading/exercises/ja-b1-jibun-no-soubetsukai-ni-okureta.json'
+import jaB1YomeruYouNiSuruTameNi from '@/data/reading/exercises/ja-b1-yomeru-you-ni-suru-tame-ni.json'
+import jaB1PuuruONokosuBekiKa from '@/data/reading/exercises/ja-b1-puuru-o-nokosu-beki-ka.json'
+import jaB1KyuujuppunNarabuHodoKa from '@/data/reading/exercises/ja-b1-kyuujuppun-narabu-hodo-ka.json'
+import jaB1KieteitsutsuaruKotoba from '@/data/reading/exercises/ja-b1-kieteitsutsuaru-kotoba.json'
+import jaB1AkisouDeAkanaiMise from '@/data/reading/exercises/ja-b1-akisou-de-akanai-mise.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -64,6 +308,216 @@ const RAW_EXERCISES: unknown[] = [
   workplaceMentoring,
   publicTransportFareChange,
   koreanCafe,
+  frChatTroisiemeEtage,
+  frMarcheDuSamedi,
+  frTroisMessages,
+  frChambreDeYasmine,
+  frColocataireCherche,
+  frRecetteMamieAicha,
+  frBus712,
+  frLettreDeDakar,
+  frTropDeSel,
+  frPremierJour,
+  frQuaranteSecondes,
+  frEtesDeSete,
+  frVillePlusChaud,
+  frTroisVelos,
+  frRepartitionTaches,
+  frLibrairieResiste,
+  frQuatreHeures,
+  frPisteCyclable,
+  frReunionVoisins,
+  frEauMontee,
+  frLettreJamaisEnvoyee,
+  frUsineLaisse,
+  frTravaillaitMoins,
+  frDernierAccordeur,
+  frRumeurGymnase,
+  frAttention,
+  frVillage2040,
+  frApprendreSeTrompant,
+  frDeuxFoisRoman,
+  frClubNeGagneJamais,
+  koIreumiDuGae,
+  koDoseogwanGoyangi,
+  koDongneEopneunGeot,
+  koHalmeoniAchim,
+  koBeoseuSiganpyo,
+  koSijangEseo,
+  koKeopiAnMasyeoyo,
+  koJinanJumal,
+  koJilmuniManheunAi,
+  koHagoSipeunIl,
+  koA2CheoeumInsa,
+  koA2GeseuteuhauseuGyuchik,
+  koA2GireulIreobeorimyeon,
+  koA2IsaJeonhwaHu,
+  koA2JalAnhaneunKape,
+  koA2JegaHanSilsu,
+  koA2JongiChaegmanIlgeoyo,
+  koA2SumureulBaeugoItsseoyo,
+  koA2UisagaHanMal,
+  koA2YeohaengGyehoek,
+  koB1AbeojiWaCheonjangyiMun,
+  koB1AniRagoMalhaneunYeonseup,
+  koB1BamGeunmu,
+  koB1DoraonJeolmeuniDeul,
+  koB1GateunNoraeuiDuBeonjeon,
+  koB1GyedaniYeoseotGae,
+  koB1IjeHangugeoroMalhagiroHaesseoyo,
+  koB1JeokhijiAnheunGyuchik,
+  koB1SijangiNamgeDoenIyu,
+  koB1TongyeoksaUiHanabeon,
+  ptA1AListaDaMudanca,
+  ptA1APracaAtrasDoMercado,
+  ptA1CartaoDeBelem,
+  ptA1CentoEOitoCopos,
+  ptA1EuNaoEstouBravo,
+  ptA1EuNaoVendoNada,
+  ptA1FeiraDaPraca,
+  ptA1MensagensSobreOSofa,
+  ptA1OJogoDaRuaQuinze,
+  ptA1OQueVoceVendeMais,
+  ptA2AAguaQueVemDeLonge,
+  ptA2ABibliotecaDoPredio,
+  ptA2ACozinheiraDasCinco,
+  ptA2AOficinaDoSeuJorge,
+  ptA2CartaSobreORecreio,
+  ptA2ComoUsarOOnibus,
+  ptA2FazTempoQueEuNaoParo,
+  ptA2OErroDeTrintaMil,
+  ptA2TresBairrosUmAluguel,
+  ptA2VoltarParaACidadePequena,
+  ptB1OCadernoQueNinguemTinhaAberto,
+  ptB1OPredioQueFoiTombado,
+  ptB1SeEuTivesseDitoNao,
+  ptB1APreposicaoQueMudouOContrato,
+  ptB1ARotinaQueEuNaoEscolhi,
+  ptB1ComoDarUmaNoticiaRuim,
+  ptB1ElaNaoEstaProfessoraElaE,
+  ptB1OMelhorCafeNaoEOMaisCaro,
+  ptB1OQueATestemunhaDisse,
+  ptB1QuandoAAguaChegar,
+  deA1DerEinkaufszettel,
+  deA1DerWegZurArbeit,
+  deA1DieWaschkueche,
+  deA1MeinNameIstSchwer,
+  deA1WasMachstDuEigentlich,
+  deA1AnleitungFuerDenNotdienst,
+  deA1DerZugFaehrtAb,
+  deA1IchKannNichtSchwimmen,
+  deA1NaechstesJahrWirdAllesAnders,
+  deA1UnserTisch,
+  deA2DamalsDurfteManNicht,
+  deA2DieFrauDieDenSchluesselHat,
+  deA2IchHabeDenBriefNichtGeoeffnet,
+  deA2AufDemTischOderAufDenTisch,
+  deA2DasBrotWirdNachtsGebacken,
+  deA2IchHabeMichVerlaufen,
+  deA2WasWuerdestDuMachen,
+  deA2DasFahrradMeinesVaters,
+  deA2KommMalHer,
+  deA2WederLautNochLeise,
+  deB1DerKonjunktivDerNachbarn,
+  deB1WasAllesRepariertWurde,
+  deB1DieHaltestelleDieEsNichtGibt,
+  deB1ObwohlSieWiederVerloren,
+  deB1DerZugUmSechsUhrZwoelf,
+  deB1IchFreueMichAufNichts,
+  deB1DieTuerDesSchrankes,
+  deB1SieHatNieFahrenWollen,
+  deB1StellDenStuhlAnsFenster,
+  deB1EntwederJetztOderNie,
+  itA1IlCaffeSiBeveInPiedi,
+  itA1HoDueNonneEUnaRicetta,
+  itA1IlPortiereSaTutto,
+  itA1ChiScriveSulMuro,
+  itA1NonVadoMaiInCentro,
+  itA1CeUnGattoInBiblioteca,
+  itA1IlMercatoDelSabato,
+  itA1DoveSonoLeMieChiavi,
+  itA1GuardaStaPiovendo,
+  itA1IlBurroNonEUnAsino,
+  itA2IlTrenoCheNonHoPreso,
+  itA2MioPadreNonParlavaAlTelefono,
+  itA2IlMessaggioCheNonHoMandato,
+  itA2MiScusiSignoraNardi,
+  itA2LaScuolaConSeiBambini,
+  itA2IlPiuVecchioNonEIlPiuLento,
+  itA2MiSveglioAlleQuattroEVenti,
+  itA2AMiaMadreNonPiaceIlMare,
+  itA2SePioveNonSiGioca,
+  itA2EroArrivatoDueOrePrima,
+  itB1IlPreventivoCheNonHoFatto,
+  itB1SeiControSei,
+  itB1QuandoAvraiLettoQuestaLettera,
+  itB1LaFarmaciaCheApreDiNotte,
+  itB1AvreiDovutoChiamare,
+  itB1NessunoHaApplaudito,
+  itB1IlNegozioCheHaApertoTroppoTardi,
+  itB1LaNonnaLoAvevaDetto,
+  itB1MiDicaLeiCosaDevoFare,
+  itB1LaCasaDiVentAnni,
+  ruA1MoyaSosedkaVeraIvanovna,
+  ruA1PyatDvereyPyatTsvetov,
+  ruA1VosemChasovUtra,
+  ruA1KuryerTimur,
+  ruA1VShkoleNoNaRabote,
+  ruA1SkolkoStoitKhleb,
+  ruA1KomuDedushkaPishet,
+  ruA1VoditelKotoryyNeSprashivaet,
+  ruA1PrikhoditeVSem,
+  ruA1BukvyObmanyvayut,
+  ruA2OdinnadtsatDneyYaKrasilDver,
+  ruA2YaPozvonyuIBuduZvonit,
+  ruA2YaRabotayuPerevodchikom,
+  ruA2SamyyKorotkiyPut,
+  ruA2PrishelUshelVernulsya,
+  ruA2ChelovekKotoryyChinitChasy,
+  ruA2EsliByYaNachalaRanshe,
+  ruA2SkolkoLyudeyPrikhodit,
+  ruA2VDerevnyuIVDerevne,
+  ruA2NikogdaNeVykhodiSMokrymiVolosami,
+  ruB1VsyoChtoZdesSdelano,
+  ruB1GovoryaVMikrofonVTriNochi,
+  ruB1OnGovorilChtoPriedet,
+  ruB1ChitalnyyZalKotoryyNeZakryvaetsya,
+  ruB1ChtoYaSdelayuVSubbotu,
+  ruB1ProvodnitsaNochnogoPoezda,
+  ruB1NetKassyNetProblem,
+  ruB1OnaNeDoshla,
+  ruB1Minutochku,
+  ruB1ChemKholodneeTemLuchshe,
+  jaA1HoSanToYobimasu,
+  jaA1NekoGaImasu,
+  jaA1MaiasaRokuJiNiOkimasu,
+  jaA1AtarashiiJitensha,
+  jaA1HachiJiJuuGoFunNoBasu,
+  jaA1DareMoShirimasen,
+  jaA1BasuDeIkimasu,
+  jaA1KatakanaWaMuzukashii,
+  jaA1TabeteMoIiDesuKa,
+  jaA1Itadakimasu,
+  jaA2ShinbunOToriNiIku,
+  jaA2FujiSanNiNobottaKotoGaAru,
+  jaA2AmeGaFuruTo,
+  jaA2OnigiriBakari,
+  jaA2YasaiOMoratta,
+  jaA2NazeNihongoOBenkyouSuruNDesuKa,
+  jaA2HankoOMotteKonakerebaNaranai,
+  jaA2AshitaWaYukiDeshou,
+  jaA2NagaraBenkyouShitari,
+  jaA2KabeNiKakaretaE,
+  jaB1SuteteShimattaTegami,
+  jaB1SumimasenOKazoeteMita,
+  jaB1KareWaKonaiHazuDatta,
+  jaB1SorobanONarawasareta,
+  jaB1JibunNoSoubetsukaiNiOkureta,
+  jaB1YomeruYouNiSuruTameNi,
+  jaB1PuuruONokosuBekiKa,
+  jaB1KyuujuppunNarabuHodoKa,
+  jaB1KieteitsutsuaruKotoba,
+  jaB1AkisouDeAkanaiMise,
 ]
 
 export const READING_EXERCISES: ReadingExercise[] = RAW_EXERCISES.map((candidate) => {

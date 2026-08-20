@@ -3,7 +3,10 @@
 import { useState, useCallback } from 'react';
 import Link from 'next/link';
 
-const COLOR = '#e11d48';
+const COLOR = 'var(--wlp-accent-vocabulario)';
+/** El color al N % de opacidad. Antes se escribía pegando la transparencia en
+    hexadecimal (`${COLOR}14`), que con una variable CSS no se puede. */
+const COLORMix = (p: number) => `color-mix(in srgb, ${COLOR} ${p}%, transparent)`;
 
 interface VocabWord { word: string; translit: string; es: string; emoji: string; example: string; exampleTranslit: string; exampleEs: string; }
 interface VocabSet { id: string; name: string; nameTranslit: string; nameEs: string; emoji: string; words: VocabWord[]; }
@@ -174,10 +177,10 @@ export default function VocabularioRusoA1() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1rem' }}>
             {SETS.map(s => (
               <button key={s.id} onClick={() => setSetId(s.id)} style={{ textAlign: 'left', background: 'none', border: 'none', padding: 0, cursor: 'pointer', font: 'inherit', color: 'inherit' }}>
-                <div style={{ padding: '1.25rem 1.4rem', border: `1.5px solid ${COLOR}22`, borderRadius: 16, background: `${COLOR}06` }}>
+                <div style={{ padding: '1.25rem 1.4rem', border: `1.5px solid ${COLORMix(13.3)}`, borderRadius: 16, background: `${COLORMix(2.4)}` }}>
                   <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>{s.emoji}</div>
                   <div style={{ fontWeight: 800, fontSize: '1rem', color: 'var(--ink)', marginBottom: '0.1rem' }}>{s.name}</div>
-                  <div style={{ fontSize: '0.75rem', color: '#cc0000', fontWeight: 600, marginBottom: '0.1rem' }}>{s.nameTranslit}</div>
+                  <div style={{ fontSize: '0.75rem', color: 'var(--wl-on-panel-alert, #cc0000)', fontWeight: 600, marginBottom: '0.1rem' }}>{s.nameTranslit}</div>
                   <div style={{ fontSize: '0.8rem', color: 'var(--muted)' }}>{s.nameEs} · {s.words.length} palabras</div>
                 </div>
               </button>
@@ -217,17 +220,17 @@ export default function VocabularioRusoA1() {
         {mode === 'browse' && (
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(290px, 1fr))', gap: '0.85rem' }}>
             {currentSet.words.map(w => (
-              <div key={w.word} style={{ padding: '1rem 1.2rem', border: `1.5px solid ${COLOR}22`, borderRadius: 14, background: `${COLOR}06` }}>
+              <div key={w.word} style={{ padding: '1rem 1.2rem', border: `1.5px solid ${COLORMix(13.3)}`, borderRadius: 14, background: `${COLORMix(2.4)}` }}>
                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem', marginBottom: '0.5rem' }}>
                   <span style={{ fontSize: '1.5rem' }}>{w.emoji}</span>
                   <div>
                     <div style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--ink)' }}>{w.word}</div>
-                    <div style={{ fontSize: '0.73rem', color: '#cc0000', fontWeight: 700 }}>{w.translit}</div>
+                    <div style={{ fontSize: '0.73rem', color: 'var(--wl-on-panel-alert, #cc0000)', fontWeight: 700 }}>{w.translit}</div>
                     <div style={{ fontSize: '0.85rem', color: COLOR, fontWeight: 700 }}>{w.es}</div>
                   </div>
                 </div>
                 <p style={{ margin: '0.35rem 0 0.1rem', fontSize: '0.82rem', color: 'var(--ink)', fontStyle: 'italic' }}>{w.example}</p>
-                <p style={{ margin: '0.1rem 0 0.1rem', fontSize: '0.75rem', color: '#cc0000' }}>{w.exampleTranslit}</p>
+                <p style={{ margin: '0.1rem 0 0.1rem', fontSize: '0.75rem', color: 'var(--wl-on-panel-alert, #cc0000)' }}>{w.exampleTranslit}</p>
                 <p style={{ margin: 0, fontSize: '0.78rem', color: 'var(--muted)' }}>{w.exampleEs}</p>
               </div>
             ))}
@@ -238,23 +241,23 @@ export default function VocabularioRusoA1() {
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', maxWidth: 480 }}>
               <span style={{ fontSize: '0.78rem', fontFamily: 'var(--mono)', color: 'var(--muted)' }}>{cardIdx + 1} / {currentSet.words.length}</span>
-              <button onClick={() => setShowTranslit(!showTranslit)} style={{ fontSize: '0.75rem', background: 'none', border: 'none', cursor: 'pointer', color: '#cc0000', fontWeight: 700 }}>
+              <button onClick={() => setShowTranslit(!showTranslit)} style={{ fontSize: '0.75rem', background: 'none', border: 'none', cursor: 'pointer', color: 'var(--wl-on-panel-alert, #cc0000)', fontWeight: 700 }}>
                 {showTranslit ? '🔤 Ocultar translit.' : '🔤 Ver translit.'}
               </button>
             </div>
-            <div onClick={() => setFlipped(!flipped)} style={{ width: '100%', maxWidth: 480, minHeight: 200, padding: '2rem', border: `2px solid ${COLOR}44`, borderRadius: 20, background: flipped ? `${COLOR}0d` : 'var(--bg)', cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', textAlign: 'center' }}>
+            <div onClick={() => setFlipped(!flipped)} style={{ width: '100%', maxWidth: 480, minHeight: 200, padding: '2rem', border: `2px solid ${COLORMix(26.7)}`, borderRadius: 20, background: flipped ? `${COLORMix(5.1)}` : 'var(--bg)', cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', textAlign: 'center' }}>
               {!flipped ? (
                 <>
                   <span style={{ fontSize: '2.5rem' }}>{currentSet.words[cardIdx].emoji}</span>
                   <span style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--ink)' }}>{currentSet.words[cardIdx].word}</span>
-                  {showTranslit && <span style={{ fontSize: '0.9rem', color: '#cc0000', fontWeight: 600 }}>{currentSet.words[cardIdx].translit}</span>}
+                  {showTranslit && <span style={{ fontSize: '0.9rem', color: 'var(--wl-on-panel-alert, #cc0000)', fontWeight: 600 }}>{currentSet.words[cardIdx].translit}</span>}
                   <span style={{ fontSize: '0.75rem', color: 'var(--muted)', marginTop: '0.5rem' }}>toca para ver la traducción</span>
                 </>
               ) : (
                 <>
                   <span style={{ fontSize: '1.8rem', fontWeight: 800, color: COLOR }}>{currentSet.words[cardIdx].es}</span>
                   <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--ink)', fontStyle: 'italic', maxWidth: 340 }}>{currentSet.words[cardIdx].example}</p>
-                  <p style={{ margin: 0, fontSize: '0.78rem', color: '#cc0000', maxWidth: 340 }}>{currentSet.words[cardIdx].exampleTranslit}</p>
+                  <p style={{ margin: 0, fontSize: '0.78rem', color: 'var(--wl-on-panel-alert, #cc0000)', maxWidth: 340 }}>{currentSet.words[cardIdx].exampleTranslit}</p>
                 </>
               )}
             </div>
@@ -272,7 +275,7 @@ export default function VocabularioRusoA1() {
               return (
                 <div key={wi} className="wl-card" style={{ padding: '1.1rem' }}>
                   <p style={{ margin: '0 0 0.35rem', fontWeight: 800, color: 'var(--ink)', fontSize: '1.1rem' }}>{w.emoji} {w.word}</p>
-                  <p style={{ margin: '0 0 0.75rem', fontSize: '0.78rem', color: '#cc0000', fontWeight: 600 }}>{w.translit}</p>
+                  <p style={{ margin: '0 0 0.75rem', fontSize: '0.78rem', color: 'var(--wl-on-panel-alert, #cc0000)', fontWeight: 600 }}>{w.translit}</p>
                   <p style={{ margin: '0 0 0.75rem', fontSize: '0.85rem', color: 'var(--muted)' }}>¿Qué significa en español?</p>
                   <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
                     {quizOpts[wi]?.map((opt, oi) => {

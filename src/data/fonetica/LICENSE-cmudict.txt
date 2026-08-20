@@ -1,0 +1,11 @@
+El diccionario de pronunciación de este directorio procede del CMU Pronouncing
+Dictionary (cmudict), de la Universidad Carnegie Mellon.
+
+  https://github.com/cmusphinx/cmudict
+
+Copyright (c) 2015, Alexander Rudnicky. Distribuido bajo licencia BSD de dos
+cláusulas: se permite la redistribución y el uso, con o sin modificaciones, con o
+sin ánimo de lucro, siempre que se conserve este aviso.
+
+Se redistribuye modificado: ver scripts/build-fonetica-dict.mjs para saber
+exactamente qué se le quitó.

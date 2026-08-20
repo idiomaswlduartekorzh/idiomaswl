@@ -86,7 +86,7 @@ export default function MockGrid({ exam }: { exam: Exam }) {
                         <span className="wl-mock-card__num">{String(absoluteIndex + 1).padStart(2, '0')}</span>
                         <div style={{ display: 'flex', gap: '0.35rem', alignItems: 'center' }}>
                           {mock.badge && (
-                            <span style={{ fontSize: '0.65rem', fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase', background: 'rgba(220,38,38,0.1)', color: '#dc2626', border: '1px solid rgba(220,38,38,0.25)', borderRadius: 4, padding: '2px 6px' }}>
+                            <span className="wl-exam-status-chip" style={{ fontSize: '0.65rem', fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase', background: 'rgba(220,38,38,0.1)', color: '#dc2626', border: '1px solid rgba(220,38,38,0.25)', borderRadius: 4, padding: '2px 6px' }}>
                               {mock.badge}
                             </span>
                           )}

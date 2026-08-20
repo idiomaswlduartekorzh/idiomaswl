@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { generateGrammarIndexMetadata } from '@/lib/grammar-metadata'
 import { getTopicsByLevel } from '@/data/grammar/registry'
+import { SKILL_ACCENT } from '@/data/practica/skill-accents'
 
 export const metadata: Metadata = generateGrammarIndexMetadata('coreano', 'a1')
 
@@ -28,7 +29,7 @@ export default function GrammarIndexPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <div className="gram-page" style={{ '--topic-color': '#dc2626' } as React.CSSProperties}>
+      <div className="gram-page" style={{ '--topic-color': SKILL_ACCENT.gramatica.var } as React.CSSProperties}>
         <div className="wrap">
           <nav
             aria-label="breadcrumb"
@@ -49,7 +50,7 @@ export default function GrammarIndexPage() {
             <span>/</span>
             <Link href="/practica/coreano/a1" style={{ color: 'var(--muted)', textDecoration: 'none' }}>A1</Link>
             <span>/</span>
-            <span style={{ color: '#dc2626', fontWeight: 800 }}>Gramática</span>
+            <span style={{ color: 'var(--wl-on-panel-alert, #dc2626)', fontWeight: 800 }}>Gramática</span>
           </nav>
 
           <section className="topic-hero" style={{ paddingBottom: '1.5rem' }}>

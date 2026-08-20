@@ -1,0 +1,459 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-a2-como-usar-o-onibus",
+  "status": "published",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Portugués A2"
+  },
+  "slug": "como-usar-o-onibus",
+  "series": {
+    "id": "portugues-a2-lectura-10",
+    "episode": 9,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-a2-a-biblioteca-do-predio",
+    "nextExerciseId": "pt-a2-faz-tempo-que-eu-nao-paro"
+  },
+  "classification": {
+    "genre": "guía práctica",
+    "topic": "transporte urbano",
+    "intent": "learning",
+    "tags": [
+      "portugues a2",
+      "lectura",
+      "para vs por",
+      "expresiones con fazer"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Cómo usar el autobús"
+    },
+    "intro": {
+      "es": "Cuatro consejos para no perderse en el autobús de una ciudad brasileña, incluido uno que ningún mapa explica. Lectura de portugués A2."
+    },
+    "mission": {
+      "es": "Averigua qué hay que hacer con la mano y por qué."
+    },
+    "targetText": "Quatro coisas que ninguém explica para quem chega. Primeira: o ônibus não para sozinho. Você tem que fazer sinal com a mão, esticando o braço para a rua. Se você ficar parado no ponto olhando o celular, o motorista passa direto. Isso vale mesmo se você estiver sozinho no ponto e for óbvio que você está esperando. Segunda: por dentro do ônibus se anda para trás. A entrada é pela frente, você paga na catraca e passa para a parte de trás. Não fique parado perto da porta da frente, porque isso bloqueia quem entra. Terceira: para descer, aperte o botão com antecedência, uns cinquenta metros antes. Se você apertar em cima da parada, o motorista às vezes não consegue parar a tempo e você desce na próxima. Não adianta reclamar. Quarta, e essa é a mais útil: se você não sabe onde descer, fale com o motorista na hora de entrar. Diga o nome da rua e peça para ele avisar. Quase todos avisam. Alguns até fazem questão de avisar duas vezes. Essa é a diferença entre ler um mapa e perguntar para alguém que faz esse caminho oito horas por dia. O mapa mostra a rua. O motorista sabe onde a rua começa de verdade.",
+    "wordCount": 207,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguir «para» (finalidad, destino) de «por» (medio, lugar por donde)."
+      },
+      {
+        "es": "Usar expresiones con fazer: fazer sinal, fazer questão, fazer o caminho."
+      },
+      {
+        "es": "Extraer instrucciones prácticas y su justificación."
+      }
+    ],
+    "grammarFocus": [
+      "para-vs-por-a2",
+      "expressoes-com-fazer-a2",
+      "preposicoes-lugar"
+    ],
+    "vocabulary": [
+      {
+        "surface": "sinal",
+        "lemma": "sinal",
+        "glosses": {
+          "es": "señal; fazer sinal = hacer una señal con la mano"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "esticando",
+        "lemma": "esticar",
+        "glosses": {
+          "es": "estirando"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ponto",
+        "lemma": "ponto",
+        "glosses": {
+          "es": "parada de autobús"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "catraca",
+        "lemma": "catraca",
+        "glosses": {
+          "es": "torno de acceso donde se paga"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "antecedência",
+        "lemma": "antecedência",
+        "glosses": {
+          "es": "antelación"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "adianta",
+        "lemma": "adiantar",
+        "glosses": {
+          "es": "sirve de algo; não adianta = no sirve de nada"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fazem questão",
+        "lemma": "fazer questão",
+        "glosses": {
+          "es": "se empeñan, insisten"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "motorista",
+        "lemma": "motorista",
+        "glosses": {
+          "es": "conductor. ¡No es un «motorista» de moto!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En la mayoría de las ciudades brasileñas el autobús solo para si el pasajero hace la señal, y el cobro se hace en una catraca dentro del vehículo. Preguntar al conductor es una costumbre aceptada."
+    },
+    "spanishSpeakerNote": {
+      "es": "«Motorista» es el conductor del autobús, no alguien en moto. Y fíjate en la pareja: «para a rua» marca dirección; «pela frente» marca el lugar por donde se pasa. Es la diferencia entre para y por."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en portugués sobre hechos pasados y planes, distinguir el perfeito del imperfeito, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares",
+      "comparativos-superlativos-a2",
+      "condicional-a2",
+      "conjuncoes-logicas-a2",
+      "diminutivos-aumentativos-a2",
+      "expressoes-com-fazer-a2",
+      "expressoes-tempo-a2",
+      "futuro-do-presente-a2",
+      "gerundio-a2",
+      "ha-faz-tempo-a2",
+      "para-vs-por-a2",
+      "preterito-imperfeito-a2",
+      "preterito-perfeito-irregular-a2",
+      "pronomes-obliquos-a2",
+      "pronomes-relativos-a2",
+      "ser-vs-estar-a2",
+      "subjuntivo-presente-a2",
+      "verbo-ficar-a2",
+      "verbos-modais-a2",
+      "verbos-reflexivos-a2",
+      "voz-passiva-a2"
+    ],
+    "disallowedGrammar": [
+      "mais-que-perfeito composto",
+      "futuro do subjuntivo",
+      "registro literario"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 11.5,
+      "maxSentenceWords": 21,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Pasado narrativo (perfeito e imperfeito) y subjuntivo presente permitidos. Sin mais-que-perfeito compuesto ni futuro de subjuntivo. Inferencia ligera."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué ofrece el texto?",
+      "options": [
+        {
+          "id": "normas",
+          "text": "Cuatro reglas prácticas que no aparecen en los mapas"
+        },
+        {
+          "id": "horarios",
+          "text": "Los horarios de las líneas de autobús"
+        },
+        {
+          "id": "queja",
+          "text": "Una queja sobre el transporte público"
+        }
+      ],
+      "answer": "normas",
+      "evidence": "Quatro coisas que ninguém explica para quem chega.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la primera frase lo anuncia: son cosas que no están escritas en ningún sitio."
+        },
+        "incorrect": {
+          "es": "No da horarios ni se queja: explica cómo funciona. Lee la primera frase."
+        },
+        "strategy": {
+          "es": "La primera frase de una guía suele decir a quién se dirige y qué promete. Léela con atención."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Con cuánta antelación hay que pulsar el botón para bajar?",
+      "options": [
+        {
+          "id": "50",
+          "text": "Unos cincuenta metros antes"
+        },
+        {
+          "id": "parada",
+          "text": "Justo en la parada"
+        },
+        {
+          "id": "8",
+          "text": "Ocho horas antes"
+        }
+      ],
+      "answer": "50",
+      "evidence": "aperte o botão com antecedência, uns cinquenta metros antes",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y explica qué pasa si no: te bajas en la siguiente."
+        },
+        "incorrect": {
+          "es": "Pulsar en la parada misma es justo lo que desaconseja. Y las ocho horas son del conductor."
+        },
+        "strategy": {
+          "es": "En una guía, cada consejo trae su medida concreta. Busca la que va con el verbo del consejo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «Você tem que fazer sinal com a mão». ¿Qué hay que hacer?",
+      "options": [
+        {
+          "id": "brazo",
+          "text": "Estirar el brazo hacia la calzada para que pare"
+        },
+        {
+          "id": "tocar",
+          "text": "Tocar el timbre del autobús"
+        },
+        {
+          "id": "firmar",
+          "text": "Firmar un papel al subir"
+        }
+      ],
+      "answer": "brazo",
+      "evidence": "Você tem que fazer sinal com a mão, esticando o braço para a rua.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y la propia frase lo explica con un gerundio: estirando el brazo."
+        },
+        "incorrect": {
+          "es": "El timbre es para bajar, y no hay nada que firmar. La misma frase lo detalla."
+        },
+        "strategy": {
+          "es": "Cuando una expresión va seguida de un gerundio, ese gerundio la explica. No hace falta más."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el cuarto consejo es «el más útil»?",
+      "options": [
+        {
+          "id": "experiencia",
+          "text": "Porque el conductor conoce el trayecto mejor que cualquier mapa"
+        },
+        {
+          "id": "gratis",
+          "text": "Porque no cuesta dinero"
+        },
+        {
+          "id": "rapido",
+          "text": "Porque acorta el viaje"
+        }
+      ],
+      "answer": "experiencia",
+      "evidence": "Essa é a diferença entre ler um mapa e perguntar para alguém que faz esse caminho oito horas por dia.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo cierra con esa comparación: mapa contra experiencia diaria."
+        },
+        "incorrect": {
+          "es": "No acorta el viaje ni se habla de dinero. Lee la última frase del texto."
+        },
+        "strategy": {
+          "es": "La última frase de una guía suele justificar el consejo que acaba de dar. Léela como explicación."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: si te quedas mirando el móvil en la parada, el autobús para igual.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Se você ficar parado no ponto olhando o celular, o motorista passa direto.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: pasa de largo. Y el texto añade que da igual que seas el único en la parada."
+        },
+        "incorrect": {
+          "es": "Busca el primer consejo. Dice exactamente qué pasa en ese caso."
+        },
+        "strategy": {
+          "es": "Un consejo suele venir con su contraejemplo. Si buscas qué pasa «si no lo haces», ahí está la respuesta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué dice «Não adianta reclamar»?",
+      "options": [
+        {
+          "id": "avisar",
+          "text": "Para avisar de que protestar no cambia nada, y conviene prevenir"
+        },
+        {
+          "id": "grosero",
+          "text": "Para decir que los conductores son groseros"
+        },
+        {
+          "id": "prohibir",
+          "text": "Para indicar que está prohibido hablar con el conductor"
+        }
+      ],
+      "answer": "avisar",
+      "evidence": "o motorista às vezes não consegue parar a tempo e você desce na próxima. Não adianta reclamar.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y encaja con el consejo: por eso hay que pulsar con antelación."
+        },
+        "incorrect": {
+          "es": "El cuarto consejo recomienda justamente hablar con el conductor, así que no lo prohíbe."
+        },
+        "strategy": {
+          "es": "Si una frase corta sigue a una consecuencia negativa, refuerza el consejo anterior. Léelos juntos."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe una guía de 8–10 frases en portugués sobre cómo usar el transporte de tu ciudad. Usa «para» y «por» tres veces cada uno y dos expresiones con fazer."
+    },
+    "minWords": 45,
+    "maxWords": 95,
+    "hints": [
+      "Quatro coisas que ninguém explica…",
+      "Primeira: …",
+      "Você tem que fazer…",
+      "Não adianta…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués A2: Cómo usar el autobús | WeLearn"
+    },
+    "description": {
+      "es": "Lee una guía práctica en portugués de Brasil A2 y practica la diferencia entre para y por, y las expresiones con fazer. Seis preguntas y vocabulario."
+    },
+    "canonicalPath": "/practica/portugues/a2/lectura/como-usar-o-onibus",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-a2-a-biblioteca-do-predio",
+      "pt-a2-faz-tempo-que-eu-nao-paro"
+    ]
+  }
+}

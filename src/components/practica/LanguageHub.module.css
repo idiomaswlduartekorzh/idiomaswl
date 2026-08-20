@@ -1,0 +1,149 @@
+/* Lo propio del hub de idioma: la lista de niveles y la rejilla de herramientas.
+   El resto sale de practica-ui.css. Sin hex. */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+  margin: 2.5rem 0 0;
+  padding: 0;
+}
+
+/* Fila de nivel: chapa, texto y flecha. Se compone sobre .wlp-card, así que el radio, el
+   filete y la superficie ya vienen dados. */
+.row {
+  align-items: center;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.badge {
+  align-items: center;
+  border: 1px solid var(--wlp-accent);
+  border-radius: var(--wlp-r);
+  color: var(--wlp-accent);
+  display: flex;
+  flex-shrink: 0;
+  font-family: var(--mono);
+  font-size: 1.05rem;
+  font-weight: 900;
+  height: 54px;
+  justify-content: center;
+  width: 54px;
+}
+
+.body {
+  flex: 1;
+  min-width: 0;
+}
+
+.titleRow {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 0.2rem;
+}
+
+.name {
+  color: var(--wlp-ink);
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.tag {
+  border: 1px solid var(--wlp-accent);
+  border-radius: var(--wlp-r-sm);
+  color: var(--wlp-accent);
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  padding: 0.1rem 0.4rem;
+}
+
+.tagSoon {
+  border-color: var(--wlp-line);
+  color: var(--wlp-muted);
+}
+
+.desc {
+  color: var(--wlp-muted);
+  font-size: 0.84rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.count {
+  color: var(--wlp-accent);
+  font-family: var(--mono);
+  font-size: 0.73rem;
+  font-weight: 700;
+  margin: 0.25rem 0 0;
+}
+
+.arrow {
+  color: var(--wlp-accent);
+  flex-shrink: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* Un nivel aún sin abrir: se apaga, no se pinta. */
+.soon {
+  border-top-color: var(--wlp-line);
+  opacity: 0.6;
+}
+
+.soon .badge {
+  border-color: var(--wlp-line);
+  color: var(--wlp-muted);
+}
+
+.soon .count {
+  color: var(--wlp-muted);
+}
+
+.tools {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+.tool {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  height: 100%;
+}
+
+.toolName {
+  color: var(--wlp-ink);
+  font-size: 0.97rem;
+  font-weight: 800;
+}
+
+.toolTag {
+  color: var(--wlp-accent);
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  margin-top: auto;
+}
+
+@media (max-width: 560px) {
+  .row {
+    align-items: flex-start;
+    gap: 0.9rem;
+  }
+
+  .badge {
+    height: 44px;
+    width: 44px;
+    font-size: 0.9rem;
+  }
+}

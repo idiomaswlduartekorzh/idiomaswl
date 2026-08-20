@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-a1-hago-sipeun-il",
+  "status": "published",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Coreano A1",
+    "topik": 1,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. A1 se sitúa alrededor del TOPIK I nivel 1, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "hago-sipeun-il",
+  "series": {
+    "id": "coreano-a1-lectura-10",
+    "episode": 10,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-a1-jilmuni-manheun-ai",
+    "nextExerciseId": null
+  },
+  "classification": {
+    "genre": "carta formal",
+    "topic": "solicitud de estudios",
+    "intent": "learning",
+    "tags": [
+      "coreano a1",
+      "lectura",
+      "고 싶다",
+      "forma formal 합니다"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Lo que quiero hacer"
+    },
+    "intro": {
+      "es": "Una carta escrita en coreano por alguien que aún no lo domina, y que precisamente por eso la escribe él mismo. Lectura de coreano A1."
+    },
+    "mission": {
+      "es": "Averigua sus dos razones para estudiar, y por qué escribe la carta en coreano."
+    },
+    "targetText": "안녕하십니까. 저는 다니엘 두아르테입니다. 콜롬비아 사람입니다. 지금 한국어를 배웁니다. 이 편지를 한국어로 씁니다. 조금 어렵습니다. 하지만 직접 쓰고 싶습니다. 저는 귀 학교에서 공부하고 싶습니다. 이유는 두 가지입니다. 첫째, 저는 한국 음악을 좋아합니다. 가사를 이해하고 싶습니다. 번역은 조금 다릅니다. 둘째, 저는 통역사가 되고 싶습니다. 콜롬비아에 한국어 통역사가 많이 없습니다. 그래서 일이 많습니다. 저는 매일 두 시간 공부합니다. 아침에 한 시간, 저녁에 한 시간입니다. 아직 잘 못합니다. 하지만 매일 합니다. 답장을 기다립니다. 감사합니다.",
+    "wordCount": 71,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Expresar deseos con 고 싶다: 쓰고 싶습니다, 공부하고 싶습니다."
+      },
+      {
+        "es": "Reconocer la forma formal 합니다 y saber en qué contextos aparece."
+      },
+      {
+        "es": "Leer una carta formal y separar la presentación de las razones."
+      }
+    ],
+    "grammarFocus": [
+      "querer-goshipda",
+      "forma-formal-habnida"
+    ],
+    "vocabulary": [
+      {
+        "surface": "편지",
+        "lemma": "편지",
+        "reading": "pyeonji",
+        "glosses": {
+          "es": "carta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "직접",
+        "lemma": "직접",
+        "reading": "jikjeop",
+        "glosses": {
+          "es": "en persona, por uno mismo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "귀 학교",
+        "lemma": "귀 학교",
+        "reading": "gwi hakgyo",
+        "glosses": {
+          "es": "su institución (fórmula de respeto en cartas)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "이유",
+        "lemma": "이유",
+        "reading": "iyu",
+        "glosses": {
+          "es": "razón, motivo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "가사",
+        "lemma": "가사",
+        "reading": "gasa",
+        "glosses": {
+          "es": "letra de una canción"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "번역",
+        "lemma": "번역",
+        "reading": "beonyeok",
+        "glosses": {
+          "es": "traducción (escrita)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "통역사",
+        "lemma": "통역사",
+        "reading": "tongyeoksa",
+        "glosses": {
+          "es": "intérprete (traductor oral)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "답장",
+        "lemma": "답장",
+        "reading": "dapjang",
+        "glosses": {
+          "es": "respuesta a una carta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La forma 합니다체 es la que se usa en cartas formales, presentaciones y noticias. Fórmulas como 안녕하십니까 y 귀 학교 son marcas de registro escrito, no de conversación."
+    },
+    "spanishSpeakerNote": {
+      "es": "고 싶다 se pega a la raíz del verbo: 쓰다 → 쓰고 싶습니다, «quiero escribir». Y fíjate en la diferencia entre 번역 (traducción escrita) y 통역 (interpretación oral): en español usamos «traductor» para casi todo, en coreano son dos oficios distintos."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en 해요체 sobre la vida cotidiana, identificar de quién se habla gracias a las partículas de tema y de objeto, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas"
+    ],
+    "disallowedGrammar": [
+      "clausulas-relativas",
+      "discurso-reportado",
+      "honorificos-avanzados",
+      "voz pasiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 3.4,
+      "maxSentenceWords": 6,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Todo en 해요체 salvo la lectura 10 (합니다체, carta formal). Sin cláusulas de relativo ni discurso indirecto. Romanización disponible como apoyo opcional."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Para qué escribe esta carta?",
+      "options": [
+        {
+          "id": "solicitar",
+          "text": "Para solicitar estudiar en esa institución y explicar por qué"
+        },
+        {
+          "id": "clases",
+          "text": "Para ofrecerse como profesor de español"
+        },
+        {
+          "id": "queja",
+          "text": "Para reclamar una respuesta que no ha recibido"
+        }
+      ],
+      "answer": "solicitar",
+      "evidence": "저는 귀 학교에서 공부하고 싶습니다. 이유는 두 가지입니다.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y estructura la carta como se espera: se presenta, pide, y da dos razones numeradas."
+        },
+        "incorrect": {
+          "es": "No ofrece clases ni reclama nada: está esperando respuesta por primera vez. Busca 공부하고 싶습니다."
+        },
+        "strategy": {
+          "es": "En una carta formal, la petición suele ir después de la presentación y antes de las razones."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto estudia coreano cada día?",
+      "options": [
+        {
+          "id": "dos",
+          "text": "Dos horas"
+        },
+        {
+          "id": "una",
+          "text": "Una hora"
+        },
+        {
+          "id": "tres",
+          "text": "Tres horas"
+        }
+      ],
+      "answer": "dos",
+      "evidence": "저는 매일 두 시간 공부합니다. 아침에 한 시간, 저녁에 한 시간입니다.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: dos horas, repartidas en una por la mañana y una por la noche."
+        },
+        "incorrect": {
+          "es": "El texto da el total y luego el reparto. La suma de las dos partes es el total."
+        },
+        "strategy": {
+          "es": "Cuando un texto da un total y su desglose, comprueba que cuadren. Así identificas cuál es cuál."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Dice que quiere ser 통역사. ¿Qué oficio es?",
+      "options": [
+        {
+          "id": "interprete",
+          "text": "Intérprete, que traduce hablando"
+        },
+        {
+          "id": "escritor",
+          "text": "Escritor de canciones"
+        },
+        {
+          "id": "profesor",
+          "text": "Profesor de idiomas"
+        }
+      ],
+      "answer": "interprete",
+      "evidence": "번역은 조금 다릅니다. 둘째, 저는 통역사가 되고 싶습니다.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. El texto ha nombrado antes 번역, la traducción escrita, y marca que esto es distinto."
+        },
+        "incorrect": {
+          "es": "La carta distingue expresamente esta palabra de 번역. Fíjate en la frase que dice que son cosas diferentes."
+        },
+        "strategy": {
+          "es": "Si un texto dice que dos palabras parecidas son distintas, esa aclaración es la definición de la segunda."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué escribe la carta en coreano aunque le resulte difícil?",
+      "options": [
+        {
+          "id": "mismo",
+          "text": "Porque quiere hacerlo él mismo y no por medio de otra persona"
+        },
+        {
+          "id": "obligatorio",
+          "text": "Porque la institución exige que se escriba en coreano"
+        },
+        {
+          "id": "barato",
+          "text": "Porque no puede pagar una traducción"
+        }
+      ],
+      "answer": "mismo",
+      "evidence": "조금 어렵습니다. 하지만 직접 쓰고 싶습니다.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. 직접 significa «por uno mismo», y el 하지만 marca que lo hace a pesar de la dificultad."
+        },
+        "incorrect": {
+          "es": "No menciona ningún requisito ni el dinero. Busca la palabra 직접 y el 하지만 que la precede."
+        },
+        "strategy": {
+          "es": "La estructura «es difícil, pero quiero…» revela una decisión deliberada. Lo importante está tras el 하지만."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: dice que ya domina bien el coreano.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "아직 잘 못합니다. 하지만 매일 합니다.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: dice 아직 잘 못합니다, todavía no lo hace bien. Lo que reivindica es la constancia, no el nivel."
+        },
+        "incorrect": {
+          "es": "Busca la frase con 아직, todavía. Ahí valora su propio nivel."
+        },
+        "strategy": {
+          "es": "아직 + negativo significa «todavía no». Reconocerlo evita entender lo contrario."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué señala que en Colombia hay pocos intérpretes de coreano?",
+      "options": [
+        {
+          "id": "demanda",
+          "text": "Para justificar que su objetivo profesional tiene salida"
+        },
+        {
+          "id": "critica",
+          "text": "Para criticar la enseñanza de idiomas en su país"
+        },
+        {
+          "id": "excusa",
+          "text": "Para excusarse por su nivel de coreano"
+        }
+      ],
+      "answer": "demanda",
+      "evidence": "콜롬비아에 한국어 통역사가 많이 없습니다. 그래서 일이 많습니다.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El 그래서 lo encadena: pocos intérpretes, por tanto mucho trabajo disponible."
+        },
+        "incorrect": {
+          "es": "No critica a nadie ni se excusa. Lee la frase que sigue, unida por 그래서."
+        },
+        "strategy": {
+          "es": "El conector 그래서 introduce la consecuencia. Si lo encuentras, ya tienes el argumento completo."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe una carta formal de 6–8 frases en coreano presentándote y explicando qué quieres estudiar o hacer. Usa 합니다체 en todo y 고 싶다 tres veces."
+    },
+    "minWords": 30,
+    "maxWords": 65,
+    "hints": [
+      "안녕하십니까. 저는 …입니다.",
+      "저는 …고 싶습니다.",
+      "이유는 두 가지입니다.",
+      "답장을 기다립니다."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano A1: Lo que quiero hacer | WeLearn"
+    },
+    "description": {
+      "es": "Lee una carta formal en coreano A1 y practica 고 싶다 (querer) y la forma formal 합니다. Con vocabulario romanizado y seis preguntas."
+    },
+    "canonicalPath": "/practica/coreano/a1/lectura/hago-sipeun-il",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-a1-jilmuni-manheun-ai"
+    ]
+  }
+}

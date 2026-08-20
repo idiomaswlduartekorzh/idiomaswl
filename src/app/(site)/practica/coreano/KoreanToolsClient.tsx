@@ -66,7 +66,7 @@ interface BatchimExample { written: string; spoken: string; romanWritten: string
 interface BatchimRule { id: string; emoji: string; name: string; nameEs: string; color: string; explanation: string; trigger: string; examples: BatchimExample[]; }
 
 const BATCHIM_RULES: BatchimRule[] = [
-  { id:'yeonneum', emoji:'🔗', name:'연음', nameEs:'Enlace silábico', color:'#534AB7',
+  { id:'yeonneum', emoji:'🔗', name:'연음', nameEs:'Enlace silábico', color:'var(--wl-on-panel-link, #534AB7)',
     explanation:'Cuando una sílaba termina en consonante (batchim) y la siguiente empieza con ㅇ (inicial muda), la consonante final "se mueve" para abrir la sílaba siguiente. No hay sonido extra — solo se redistribuyen los fonemas.',
     trigger:'batchim + vocal siguiente (ㅇ inicial)',
     examples:[
@@ -74,7 +74,7 @@ const BATCHIM_RULES: BatchimRule[] = [
       { written:'있어요', spoken:'이써요', romanWritten:'iss·eo·yo',  romanSpoken:'i·sseo·yo',  note:'ㅆ se mueve al inicio de 어' },
       { written:'읽어요', spoken:'일거요', romanWritten:'ilg·eo·yo',  romanSpoken:'il·geo·yo',  note:'de ㄺ solo ㄱ se enlaza' },
     ] },
-  { id:'neutralization', emoji:'⚖️', name:'평파열음화', nameEs:'Neutralización', color:'#d97706',
+  { id:'neutralization', emoji:'⚖️', name:'평파열음화', nameEs:'Neutralización', color:'var(--wl-on-panel-warn, #d97706)',
     explanation:'En posición final de sílaba, solo 7 consonantes pueden existir: ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅇ. Las demás se "neutralizan" al representante más cercano. Por eso muchas palabras suenan iguales al final.',
     trigger:'consonante en posición final ante otra consonante o pausa',
     examples:[
@@ -82,7 +82,7 @@ const BATCHIM_RULES: BatchimRule[] = [
       { written:'낮',   spoken:'낟',   romanWritten:'nat\'',    romanSpoken:'nat',    note:'ㅈ → [ㄷ]' },
       { written:'앞',   spoken:'압',   romanWritten:'ap\'',     romanSpoken:'ap',     note:'ㅍ → [ㅂ]' },
     ] },
-  { id:'nasalization', emoji:'👃', name:'비음화', nameEs:'Nasalización', color:'#059669',
+  { id:'nasalization', emoji:'👃', name:'비음화', nameEs:'Nasalización', color:'var(--wl-on-panel-ok, #059669)',
     explanation:'Cuando un batchim obstruyente ([ㄱ], [ㄷ], [ㅂ]) va seguido de ㄴ o ㅁ, adopta la nasalidad equivalente: [ㄱ]→ㅇ, [ㄷ]→ㄴ, [ㅂ]→ㅁ.',
     trigger:'[ㄱ/ㄷ/ㅂ] + ㄴ o ㅁ',
     examples:[
@@ -90,7 +90,7 @@ const BATCHIM_RULES: BatchimRule[] = [
       { written:'합니다', spoken:'함니다', romanWritten:'hap·ni·da', romanSpoken:'ham·ni·da', note:'[ㅂ] antes de ㄴ → ㅁ' },
       { written:'학년',  spoken:'항년',  romanWritten:'hak·nyeon', romanSpoken:'hang·nyeon', note:'[ㄱ] antes de ㄴ → ㅇ' },
     ] },
-  { id:'aspiration', emoji:'💨', name:'격음화', nameEs:'Aspiración', color:'#dc2626',
+  { id:'aspiration', emoji:'💨', name:'격음화', nameEs:'Aspiración', color:'var(--wl-on-panel-alert, #dc2626)',
     explanation:'Cuando ㅎ se combina con una consonante obstruyente, se fusionan en la versión aspirada: ㄱ+ㅎ=ㅋ, ㄷ+ㅎ=ㅌ, ㅂ+ㅎ=ㅍ, ㅈ+ㅎ=ㅊ.',
     trigger:'ㅎ en contacto con ㄱ, ㄷ, ㅂ o ㅈ',
     examples:[
@@ -98,7 +98,7 @@ const BATCHIM_RULES: BatchimRule[] = [
       { written:'많다', spoken:'만타', romanWritten:'man·da', romanSpoken:'man·ta', note:'ㄶ: ㅎ + ㄷ → ㅌ' },
       { written:'넣고', spoken:'너코', romanWritten:'neo·h·go', romanSpoken:'neo·ko', note:'ㅎ + ㄱ → ㅋ' },
     ] },
-  { id:'lateralization', emoji:'🌊', name:'유음화', nameEs:'Lateralización', color:'#2563eb',
+  { id:'lateralization', emoji:'🌊', name:'유음화', nameEs:'Lateralización', color:'var(--wl-on-panel-link, #2563eb)',
     explanation:'Cuando ㄴ y ㄹ se encuentran (en cualquier orden), ambos se convierten en ㄹ, creando el sonido "l-l".',
     trigger:'ㄴ + ㄹ  o  ㄹ + ㄴ',
     examples:[
@@ -197,13 +197,13 @@ export default function KoreanToolsClient() {
               </div>
               <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
                 {['🆘 Supervivencia', '📜 Modelo', '✏️ Personalizar', '🧩 Construir frases', '🎤 Presentación final'].map(tag => (
-                  <span key={tag} style={{ fontSize: '0.7rem', padding: '0.15rem 0.5rem', borderRadius: 6, background: 'rgba(83,74,183,0.1)', color: '#534AB7', border: '1px solid rgba(83,74,183,0.2)', fontFamily: 'var(--mono)', fontWeight: 600 }}>
+                  <span key={tag} style={{ fontSize: '0.7rem', padding: '0.15rem 0.5rem', borderRadius: 6, background: 'rgba(83,74,183,0.1)', color: 'var(--wl-on-panel-link, #534AB7)', border: '1px solid rgba(83,74,183,0.2)', fontFamily: 'var(--mono)', fontWeight: 600 }}>
                     {tag}
                   </span>
                 ))}
               </div>
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', paddingRight: '1.25rem', color: '#534AB7', fontSize: '1.1rem', fontWeight: 700 }}>→</div>
+            <div style={{ display: 'flex', alignItems: 'center', paddingRight: '1.25rem', color: 'var(--wl-on-panel-link, #534AB7)', fontSize: '1.1rem', fontWeight: 700 }}>→</div>
           </Link>
 
           {/* Tool tabs */}
@@ -323,7 +323,7 @@ function KoreanReader({ addXp }: { addXp: (n: number) => void }) {
             <span style={{ fontSize:'0.7rem', color:'var(--muted)', fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.08em', marginRight:'0.5rem' }}>Historial:</span>
             <div style={{ display:'inline-flex', gap:'0.4rem', flexWrap:'wrap', marginTop:'0.3rem' }}>
               {history.slice(1).map(t => (
-                <button key={t} onClick={() => handleQuick(t)} style={{ fontSize:'0.8rem', padding:'0.2rem 0.6rem', borderRadius:8, border:'1px solid rgba(83,74,183,0.25)', background:'rgba(83,74,183,0.05)', color:'#534AB7', cursor:'pointer', fontFamily:'inherit' }}>{t}</button>
+                <button key={t} onClick={() => handleQuick(t)} style={{ fontSize:'0.8rem', padding:'0.2rem 0.6rem', borderRadius:8, border:'1px solid rgba(83,74,183,0.25)', background:'rgba(83,74,183,0.05)', color:'var(--wl-on-panel-link, #534AB7)', cursor:'pointer', fontFamily:'inherit' }}>{t}</button>
               ))}
             </div>
           </div>
@@ -336,9 +336,9 @@ function KoreanReader({ addXp }: { addXp: (n: number) => void }) {
             <div>
               <p className="eyebrow" style={{ margin:'0 0 0.4rem' }}><span className="ink-line" />Desglose silábico</p>
               <div style={{ display:'flex', gap:'0.75rem', fontSize:'0.75rem', fontFamily:'var(--mono)', color:'var(--muted)' }}>
-                <span style={{ color:'#534AB7', fontWeight:700 }}>{hangulSylls.length} sílabas</span>
-                {withBatchim > 0 && <span style={{ color:'#d97706' }}>· {withBatchim} con batchim</span>}
-                {withoutBatch > 0 && <span style={{ color:'#2563eb' }}>· {withoutBatch} abiertas</span>}
+                <span style={{ color:'var(--wl-on-panel-link, #534AB7)', fontWeight:700 }}>{hangulSylls.length} sílabas</span>
+                {withBatchim > 0 && <span style={{ color:'var(--wl-on-panel-warn, #d97706)' }}>· {withBatchim} con batchim</span>}
+                {withoutBatch > 0 && <span style={{ color:'var(--wl-on-panel-link, #2563eb)' }}>· {withoutBatch} abiertas</span>}
               </div>
             </div>
             <div style={{ display:'flex', gap:'0.5rem' }}>
@@ -425,10 +425,10 @@ function SyllableDetail({ syllable }: { syllable: SyllableData }) {
       <p className="eyebrow" style={{ margin:'0 0 0.75rem' }}>
         <span className="ink-line" />
         Detalle de{' '}
-        <span style={{ color:'#534AB7', fontSize:'1.5rem', fontWeight:900 }}>{syllable.char}</span>
+        <span style={{ color:'var(--wl-on-panel-link, #534AB7)', fontSize:'1.5rem', fontWeight:900 }}>{syllable.char}</span>
         <span style={{ color:'var(--muted)', fontSize:'0.88rem', marginLeft:'0.5rem', fontFamily:'var(--mono)' }}>[{syllable.romanization}]</span>
         {!syllable.jong && (
-          <span style={{ marginLeft:'0.75rem', fontSize:'0.72rem', background:'rgba(83,74,183,0.1)', color:'#534AB7', border:'1px solid rgba(83,74,183,0.25)', borderRadius:6, padding:'0.15rem 0.55rem', fontFamily:'var(--mono)' }}>sílaba abierta</span>
+          <span style={{ marginLeft:'0.75rem', fontSize:'0.72rem', background:'rgba(83,74,183,0.1)', color:'var(--wl-on-panel-link, #534AB7)', border:'1px solid rgba(83,74,183,0.25)', borderRadius:6, padding:'0.15rem 0.55rem', fontFamily:'var(--mono)' }}>sílaba abierta</span>
         )}
       </p>
       <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(145px,1fr))', gap:'0.75rem' }}>
@@ -494,18 +494,18 @@ const VOWELS: { jamo: string; rom: string; ipa: string; type: string }[] = [
 ];
 
 const CONS_TYPES: Record<string, { label: string; color: string; desc: string }> = {
-  plain:     { label:'Planas',    color:'#534AB7', desc:'Son sonoras entre vocales, sordas al final.' },
-  nasal:     { label:'Nasales',   color:'#059669', desc:'Producidas con resonancia nasal.' },
-  liquid:    { label:'Líquida',   color:'#2563eb', desc:'ㄹ suena como "r" inicial y "l" final.' },
-  aspirated: { label:'Aspiradas', color:'#d97706', desc:'Se pronuncian con una ráfaga de aire.' },
-  tense:     { label:'Tensas',    color:'#dc2626', desc:'Glotalizadas, pronunciación tensa y corta.' },
+  plain:     { label:'Planas',    color:'var(--wl-on-panel-link, #534AB7)', desc:'Son sonoras entre vocales, sordas al final.' },
+  nasal:     { label:'Nasales',   color:'var(--wl-on-panel-ok, #059669)', desc:'Producidas con resonancia nasal.' },
+  liquid:    { label:'Líquida',   color:'var(--wl-on-panel-link, #2563eb)', desc:'ㄹ suena como "r" inicial y "l" final.' },
+  aspirated: { label:'Aspiradas', color:'var(--wl-on-panel-warn, #d97706)', desc:'Se pronuncian con una ráfaga de aire.' },
+  tense:     { label:'Tensas',    color:'var(--wl-on-panel-alert, #dc2626)', desc:'Glotalizadas, pronunciación tensa y corta.' },
 };
 
 const VOW_TYPES: Record<string, { label: string; color: string }> = {
-  basic:        { label:'Básicas',    color:'#534AB7' },
-  'y-compound': { label:'Con Y-',     color:'#2563eb' },
-  'w-compound': { label:'Con W-',     color:'#059669' },
-  special:      { label:'Especial',   color:'#d97706' },
+  basic:        { label:'Básicas',    color:'var(--wl-on-panel-link, #534AB7)' },
+  'y-compound': { label:'Con Y-',     color:'var(--wl-on-panel-link, #2563eb)' },
+  'w-compound': { label:'Con W-',     color:'var(--wl-on-panel-ok, #059669)' },
+  special:      { label:'Especial',   color:'var(--wl-on-panel-warn, #d97706)' },
 };
 
 function JamoTable({ addXp }: { addXp: (n: number) => void }) {
@@ -594,7 +594,7 @@ function BatchimAnalyzer({ addXp }: { addXp: (n: number) => void }) {
       <div className="wl-card" style={{ padding:'1.5rem' }}>
         <p className="eyebrow" style={{ margin:'0 0 0.5rem' }}><span className="ink-line" />Reglas fonéticas del Batchim</p>
         <p style={{ margin:0, fontSize:'0.9rem', color:'var(--muted)', lineHeight:1.65 }}>
-          El batchim (종성, consonante final) no siempre suena como se escribe. Estas <strong style={{ color:'var(--ink)' }}>5 reglas</strong> explican el 95% de los cambios fonéticos. Haz clic en cada ejemplo para escucharlo <span style={{ color:'#059669', fontWeight:700 }}>(+15 XP)</span>.
+          El batchim (종성, consonante final) no siempre suena como se escribe. Estas <strong style={{ color:'var(--ink)' }}>5 reglas</strong> explican el 95% de los cambios fonéticos. Haz clic en cada ejemplo para escucharlo <span style={{ color:'var(--wl-on-panel-ok, #059669)', fontWeight:700 }}>(+15 XP)</span>.
         </p>
         <div style={{ display:'flex', gap:'0.5rem', flexWrap:'wrap', marginTop:'0.9rem' }}>
           {BATCHIM_RULES.map(r => (
@@ -640,7 +640,7 @@ function BatchimAnalyzer({ addXp }: { addXp: (n: number) => void }) {
                         <div style={{ fontSize:'0.72rem', color:'var(--muted)', fontStyle:'italic', fontFamily:'var(--mono)' }}>[{ex.romanWritten}]</div>
                       </div>
                       <div>
-                        <div style={{ fontSize:'0.67rem', color:'#059669', fontWeight:700, marginBottom:'0.2rem', textTransform:'uppercase', fontFamily:'var(--mono)' }}>Pronunciado</div>
+                        <div style={{ fontSize:'0.67rem', color:'var(--wl-on-panel-ok, #059669)', fontWeight:700, marginBottom:'0.2rem', textTransform:'uppercase', fontFamily:'var(--mono)' }}>Pronunciado</div>
                         <div style={{ fontSize:'1.3rem', fontWeight:800, color:'var(--ink)' }}>{ex.spoken}</div>
                         <div style={{ fontSize:'0.72rem', color:'var(--muted)', fontStyle:'italic', fontFamily:'var(--mono)' }}>[{ex.romanSpoken}]</div>
                       </div>
@@ -658,7 +658,7 @@ function BatchimAnalyzer({ addXp }: { addXp: (n: number) => void }) {
       ))}
 
       <div style={{ padding:'1rem 1.25rem', borderRadius:12, background:'rgba(83,74,183,0.06)', border:'1px solid rgba(83,74,183,0.15)', fontSize:'0.83rem', lineHeight:1.7, color:'var(--muted)' }}>
-        <strong style={{ color:'#534AB7', display:'block', marginBottom:'0.3rem' }}>🧠 Las 7 consonantes representativas</strong>
+        <strong style={{ color:'var(--wl-on-panel-link, #534AB7)', display:'block', marginBottom:'0.3rem' }}>🧠 Las 7 consonantes representativas</strong>
         En posición final, el coreano solo usa: <strong style={{ color:'var(--ink)', fontFamily:'var(--mono)' }}>ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅇ</strong>. Las demás se neutralizan hacia una de estas.
       </div>
     </div>
@@ -732,9 +732,9 @@ function SyllableQuiz({ addXp }: { addXp: (n: number) => void }) {
     <div style={{ display:'flex', flexDirection:'column', gap:'1.25rem' }}>
       <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:'0.6rem' }}>
         {[
-          { label:'Correctas', value: score.correct, color:'#059669' },
-          { label:'Precisión',  value: `${accuracy}%`, color:'#534AB7' },
-          { label:'Racha',      value: `${streak} 🔥`, color:'#d97706' },
+          { label:'Correctas', value: score.correct, color:'var(--wl-on-panel-ok, #059669)' },
+          { label:'Precisión',  value: `${accuracy}%`, color:'var(--wl-on-panel-link, #534AB7)' },
+          { label:'Racha',      value: `${streak} 🔥`, color:'var(--wl-on-panel-warn, #d97706)' },
         ].map(stat => (
           <div key={stat.label} style={{ background:'var(--bg)', border:'1px solid var(--line-soft)', borderRadius:12, padding:'0.75rem 1rem', textAlign:'center' }}>
             <div style={{ fontSize:'1.4rem', fontWeight:800, color:stat.color }}>{stat.value}</div>
@@ -797,11 +797,11 @@ function SyllableQuiz({ addXp }: { addXp: (n: number) => void }) {
           <div style={{ marginTop:'1rem', padding:'0.85rem 1rem', borderRadius:12, background: answered === question.correct ? 'rgba(5,150,105,0.08)' : 'rgba(220,38,38,0.06)', border:`1px solid ${answered === question.correct ? '#05966933' : '#dc262633'}`, fontSize:'0.85rem', color:'var(--ink)', lineHeight:1.55 }}>
             {answered === question.correct
               ? isRomMode
-                ? <>✅ <strong>¡Correcto!</strong> +20 XP — <strong style={{ color:'#534AB7' }}>{question.syllable.char}</strong> se romaniza como <strong style={{ color:'#2563eb', fontFamily:'var(--mono)' }}>[{question.correct}]</strong>.</>
-                : <>✅ <strong>¡Correcto!</strong> +20 XP — La {targetInfo?.labelEs.toLowerCase()} de <strong style={{ color:'#534AB7' }}>{question.syllable.char}</strong> es <strong style={{ color:targetInfo?.hex }}>{question.correct}</strong>.</>
+                ? <>✅ <strong>¡Correcto!</strong> +20 XP — <strong style={{ color:'var(--wl-on-panel-link, #534AB7)' }}>{question.syllable.char}</strong> se romaniza como <strong style={{ color:'var(--wl-on-panel-link, #2563eb)', fontFamily:'var(--mono)' }}>[{question.correct}]</strong>.</>
+                : <>✅ <strong>¡Correcto!</strong> +20 XP — La {targetInfo?.labelEs.toLowerCase()} de <strong style={{ color:'var(--wl-on-panel-link, #534AB7)' }}>{question.syllable.char}</strong> es <strong style={{ color:targetInfo?.hex }}>{question.correct}</strong>.</>
               : isRomMode
-                ? <>❌ <strong>Casi.</strong> La romanización correcta era <strong style={{ color:'#2563eb', fontFamily:'var(--mono)' }}>[{question.correct}]</strong>.</>
-                : <>❌ <strong>Casi.</strong> La respuesta era <strong style={{ color:targetInfo?.hex }}>{question.correct}</strong> — {targetInfo?.labelEs} de <strong style={{ color:'#534AB7' }}>{question.syllable.char}</strong>.</>
+                ? <>❌ <strong>Casi.</strong> La romanización correcta era <strong style={{ color:'var(--wl-on-panel-link, #2563eb)', fontFamily:'var(--mono)' }}>[{question.correct}]</strong>.</>
+                : <>❌ <strong>Casi.</strong> La respuesta era <strong style={{ color:targetInfo?.hex }}>{question.correct}</strong> — {targetInfo?.labelEs} de <strong style={{ color:'var(--wl-on-panel-link, #534AB7)' }}>{question.syllable.char}</strong>.</>
             }
           </div>
         )}

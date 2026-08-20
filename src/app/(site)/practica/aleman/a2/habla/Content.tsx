@@ -1,9 +1,4 @@
-'use client';
-
-import { useState } from 'react';
-import Link from 'next/link';
-
-const COLOR = '#d97706';
+import SpeakingPractice from '@/components/practica/SpeakingPractice'
 
 interface Phrase {
   id: number; phrase: string; phonetic: string; es: string;
@@ -180,105 +175,35 @@ const CAT_ES: Record<string, string> = {
 };
 
 export default function HablaAlemanA2() {
-  const [filter, setFilter] = useState('Alle');
-  const [practiced, setPracticed] = useState<Set<number>>(new Set());
-  const [expanded, setExpanded] = useState<number | null>(null);
-
-  const shown = filter === 'Alle' ? PHRASES : PHRASES.filter(p => p.category === filter);
-  const pct = Math.round((practiced.size / PHRASES.length) * 100);
-
-  function mark(id: number, val: boolean) {
-    setPracticed(prev => { const next = new Set(prev); if (val) next.add(id); else next.delete(id); return next; });
-  }
-
   return (
-    <section className="wl-section">
-      <div className="wrap" style={{ maxWidth: 780 }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
-          <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
-          <span>/</span>
-          <Link href="/practica/aleman/a2" style={{ color: 'var(--muted)', textDecoration: 'none' }}>🇩🇪 Deutsch A2</Link>
-          <span>/</span>
-          <span style={{ color: COLOR, fontWeight: 800 }}>🗣️ Sprechen</span>
-        </div>
-
-        <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />Sprechen · Deutsch A2</p>
-        <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: '0 0 0.5rem', fontWeight: 700 }}>Redemittel A2</h1>
-        <p style={{ color: 'var(--muted)', fontSize: '1rem', maxWidth: 580, margin: '0 0 0.75rem' }}>
-          20 expresiones clave A2 con fonética, notas gramaticales y variantes formal/informal.
-        </p>
-
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
-          <div style={{ flex: 1, height: 7, background: 'var(--line-soft)', borderRadius: 4 }}>
-            <div style={{ height: '100%', width: `${pct}%`, background: COLOR, borderRadius: 4, transition: 'width 0.5s' }} />
-          </div>
-          <span style={{ fontSize: '0.78rem', fontFamily: 'var(--mono)', color: pct === 100 ? COLOR : 'var(--muted)', flexShrink: 0 }}>{practiced.size}/{PHRASES.length}</span>
-        </div>
-
-        <div style={{ display: 'flex', gap: '0.45rem', flexWrap: 'wrap', marginBottom: '1.25rem' }}>
-          {CATEGORIES.map(cat => (
-            <button key={cat} onClick={() => setFilter(cat)}
-              className={filter === cat ? 'btn btn-sm' : 'btn btn-ghost btn-sm'}
-              style={{ fontSize: '0.78rem', ...(filter === cat ? { background: COLOR, borderColor: COLOR } : {}) }}>
-              {CAT_ES[cat]}
-            </button>
-          ))}
-        </div>
-
-        <div style={{ padding: '0.85rem 1.1rem', borderRadius: 12, background: `${COLOR}0a`, border: `1px solid ${COLOR}22`, marginBottom: '1.5rem', fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-          🔑 <strong style={{ color: 'var(--ink)' }}>Sie vs. du:</strong> En alemán formal (trabajo, desconocidos) siempre usa <strong style={{ color: 'var(--ink)' }}>Sie</strong> (mayúscula). Con amigos, familia y niños: <strong style={{ color: 'var(--ink)' }}>du</strong>. Cambiar de Sie a du se llama &quot;duzen&quot; — solo cuando ambas partes lo proponen.
-        </div>
-
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-          {shown.map(p => {
-            const done = practiced.has(p.id);
-            const isExpanded = expanded === p.id;
-            return (
-              <div key={p.id} style={{ border: `1.5px solid ${done ? `${COLOR}44` : 'var(--line-soft)'}`, borderRadius: 16, background: done ? `${COLOR}06` : 'var(--bg)', overflow: 'hidden' }}>
-                <div style={{ padding: '1rem 1.25rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                  <div style={{ width: 32, height: 32, borderRadius: 8, background: done ? COLOR : 'var(--line-soft)', color: done ? '#fff' : 'var(--muted)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.8rem', fontWeight: 900, fontFamily: 'var(--mono)', flexShrink: 0 }}>{p.id}</div>
-                  <div style={{ flex: 1 }}>
-                    <div style={{ fontWeight: 800, color: 'var(--ink)', fontSize: '0.97rem', marginBottom: '0.12rem' }}>{p.phrase}</div>
-                    <div style={{ fontSize: '0.78rem', color: COLOR, fontFamily: 'var(--mono)', fontStyle: 'italic', marginBottom: '0.12rem' }}>{p.phonetic}</div>
-                    <div style={{ fontSize: '0.78rem', color: 'var(--muted)' }}>{p.es}</div>
-                  </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexShrink: 0 }}>
-                    <button onClick={() => setExpanded(isExpanded ? null : p.id)}
-                      style={{ fontSize: '0.72rem', padding: '0.2rem 0.55rem', borderRadius: 6, border: '1px solid var(--line-soft)', background: 'transparent', cursor: 'pointer', fontFamily: 'var(--mono)', color: 'var(--muted)' }}>
-                      {isExpanded ? '▲ nota' : '▼ nota'}
-                    </button>
-                    <button onClick={() => mark(p.id, !done)}
-                      style={{ fontSize: '0.82rem', padding: '0.3rem 0.75rem', borderRadius: 8, border: `1.5px solid ${done ? COLOR : 'var(--line-soft)'}`, background: done ? COLOR : 'transparent', color: done ? '#fff' : 'var(--muted)', cursor: 'pointer', fontFamily: 'inherit', fontWeight: 700, transition: 'all 0.15s', whiteSpace: 'nowrap' }}>
-                      {done ? '✓ Gelernt' : 'Geschafft ✓'}
-                    </button>
-                  </div>
-                </div>
-                {isExpanded && (
-                  <div style={{ padding: '0.7rem 1.25rem 0.85rem 4.5rem', borderTop: '1px solid var(--line-soft)', background: `${COLOR}04` }}>
-                    <div style={{ fontSize: '0.65rem', fontWeight: 800, color: COLOR, fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.3rem' }}>Aussprache & Grammatik</div>
-                    <p style={{ margin: '0 0 0.5rem', fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.55 }}>{p.note}</p>
-                    {(p.formal || p.informal) && (
-                      <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginTop: '0.4rem' }}>
-                        {p.formal && <span style={{ fontSize: '0.7rem', padding: '0.15rem 0.5rem', borderRadius: 5, background: 'rgba(37,99,235,0.1)', color: '#2563eb', fontFamily: 'var(--mono)', fontWeight: 600 }}>Formal: {p.formal}</span>}
-                        {p.informal && <span style={{ fontSize: '0.7rem', padding: '0.15rem 0.5rem', borderRadius: 5, background: `${COLOR}12`, color: COLOR, fontFamily: 'var(--mono)', fontWeight: 600 }}>Informal: {p.informal}</span>}
-                      </div>
-                    )}
-                    <div style={{ marginTop: '0.4rem', display: 'inline-block', fontSize: '0.68rem', padding: '0.12rem 0.45rem', borderRadius: 5, background: `${COLOR}15`, color: COLOR, fontFamily: 'var(--mono)', fontWeight: 700 }}>{p.category}</div>
-                  </div>
-                )}
-              </div>
-            );
-          })}
-        </div>
-
-        {practiced.size === PHRASES.length && (
-          <div style={{ marginTop: '2rem', padding: '1.25rem 1.5rem', borderRadius: 16, background: `${COLOR}0a`, border: `2px solid ${COLOR}33`, textAlign: 'center' }}>
-            <div style={{ fontSize: '2rem', marginBottom: '0.4rem' }}>🎉</div>
-            <p style={{ margin: 0, fontWeight: 800, color: COLOR, fontSize: '1.1rem' }}>Ausgezeichnet! Alle 20 Redemittel beherrscht.</p>
-            <p style={{ margin: '0.3rem 0 0', fontSize: '0.85rem', color: 'var(--muted)' }}>Jetzt in echten Gesprächen benutzen — übe mit David oder Zhanna.</p>
-          </div>
-        )}
-      </div>
-    </section>
-  );
+    <SpeakingPractice
+      hubHref="/practica/aleman/a2"
+      hubLabel="🇩🇪 Deutsch A2"
+      eyebrow="Sprechen · Deutsch A2"
+      title="Redemittel A2"
+      lead="20 expresiones clave A2 con fonética, notas gramaticales y variantes formal/informal."
+      categories={CATEGORIES.slice(1)}
+      categoryLabel={CAT_ES}
+      noteHeading="Aussprache & Grammatik"
+      doneLabel="Gelernt"
+      todoLabel="Geschafft"
+      completionTitle="Ausgezeichnet! Alle 20 Redemittel beherrscht."
+      completionBody="Jetzt in echten Gesprächen benutzen — übe mit David oder Zhanna."
+      phrases={PHRASES.map((p) => ({
+          id: p.id,
+          phrase: p.phrase,
+          phonetic: p.phonetic,
+          es: p.es,
+          note: p.note,
+          category: p.category,
+          formal: p.formal,
+          informal: p.informal,
+      }))}
+      tip={
+        <>
+          🔑 <strong>Sie vs. du:</strong> En alemán formal (trabajo, desconocidos) siempre usa <strong>Sie</strong> (mayúscula). Con amigos, familia y niños: <strong>du</strong>. Cambiar de Sie a du se llama &quot;duzen&quot; — solo cuando ambas partes lo proponen.
+        </>
+      }
+    />
+  )
 }

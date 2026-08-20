@@ -1,0 +1,493 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-b1-ani-rago-malhaneun-yeonseup",
+  "status": "published",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Coreano B1",
+    "topik": 3,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. B1 se sitúa alrededor del TOPIK II nivel 3, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "ani-rago-malhaneun-yeonseup",
+  "series": {
+    "id": "coreano-b1-lectura-10",
+    "episode": 3,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-b1-sijangi-namge-doen-iyu",
+    "nextExerciseId": "ko-b1-bam-geunmu"
+  },
+  "classification": {
+    "genre": "ensayo breve",
+    "topic": "aprender a poner límites",
+    "intent": "learning",
+    "tags": [
+      "coreano b1",
+      "lectura",
+      "concesivo 어도",
+      "수밖에 없다"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Practicar decir no"
+    },
+    "intro": {
+      "es": "Alguien que aceptó trabajos durante ocho años porque decir no le parecía imposible, y las tres frases que le enseñó una compañera. Lectura de coreano B1."
+    },
+    "mission": {
+      "es": "Averigua qué cambió cuando dejó de dar explicaciones."
+    },
+    "targetText": "팔 년 동안 저는 거절을 한 번도 못 했어요. 일이 아무리 많아도 새 일을 받았어요. 주말이라도 일했어요. 몸이 아파도 회의에 갔어요. 왜 그랬을까요? 저는 거절하면 사람들이 저를 싫어할 것 같았어요. 그리고 거절하려면 좋은 이유가 있어야 한다고 믿었어요. 이유가 없으면 받아들일 수밖에 없다고 생각했어요. 문제는 이유를 만드는 일이 힘들었다는 거예요. 저는 거짓말을 자주 했어요. 병원에 가야 한다거나 가족 일이 있다고 말했어요. 사실 그냥 쉬고 싶었어요. 삼 년 전에 새로 온 동료가 있었어요. 그 사람은 거절을 아주 쉽게 했어요. 저는 그 사람의 말을 잘 들어 봤어요. 놀랍게도 이유를 말하지 않았어요. 세 가지 문장만 썼어요. 첫째, 죄송하지만 이번에는 어려워요. 둘째, 제가 지금 하는 일을 먼저 끝내야 해요. 셋째, 다음에 기회가 있으면 알려 주세요. 이유가 하나도 없어요. 하지만 아무도 화를 내지 않았어요. 저는 그것을 육 개월 동안 연습했어요. 처음에는 손이 떨렸어요. 지금은 편해요. 연습 방법은 간단했어요. 저는 그 세 문장을 종이에 써서 책상에 붙였어요. 전화가 오면 그 종이를 봤어요. 처음 한 달은 목소리가 작았어요. 두 번째 달에는 상대방이 이유를 물었어요. 저는 이유를 말하지 않고 다시 첫 번째 문장을 말했어요. 죄송하지만 이번에는 어려워요. 상대방은 알겠다고 했어요. 그때 저는 중요한 것을 알게 되었어요. 사람들은 이유를 듣고 싶어 하는 게 아니었어요. 답을 듣고 싶어 했어요. 빠른 답이 긴 이유보다 친절해요. 그리고 이상한 일이 생겼어요. 제 일이 줄어들었는데 평가는 더 좋아졌어요. 제가 하는 일이 적어졌기 때문에 그 일을 더 잘하게 되었어요. 거절은 이유가 필요한 일이 아니었어요. 연습이 필요한 일이었어요.",
+    "wordCount": 221,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Usar el concesivo 아도/어도 y 라도: 아무리 많아도, 주말이라도."
+      },
+      {
+        "es": "Expresar inevitabilidad con 수밖에 없다."
+      },
+      {
+        "es": "Seguir un ensayo que separa la creencia del narrador de lo que resultó ser verdad."
+      }
+    ],
+    "grammarFocus": [
+      "condicional-erado-eurely-b1",
+      "forzosidad-subakkeneopsda-b1",
+      "condicional-eumyeon-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "거절",
+        "lemma": "거절",
+        "reading": "geojeol",
+        "glosses": {
+          "es": "negativa, rechazo de una petición"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "받아들일",
+        "lemma": "받아들이다",
+        "reading": "badadeuril",
+        "glosses": {
+          "es": "aceptar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "거짓말",
+        "lemma": "거짓말",
+        "reading": "geojinmal",
+        "glosses": {
+          "es": "mentira"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "동료",
+        "lemma": "동료",
+        "reading": "dongryo",
+        "glosses": {
+          "es": "compañero de trabajo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "놀랍게도",
+        "lemma": "놀랍게도",
+        "reading": "nollapgedo",
+        "glosses": {
+          "es": "sorprendentemente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "떨렸어요",
+        "lemma": "떨리다",
+        "reading": "tteollyeosseoyo",
+        "glosses": {
+          "es": "temblaban"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "줄어들었는데",
+        "lemma": "줄어들다",
+        "reading": "jureodeureonneunde",
+        "glosses": {
+          "es": "disminuyó, y sin embargo…"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "평가",
+        "lemma": "평가",
+        "reading": "pyeongga",
+        "glosses": {
+          "es": "valoración, evaluación de desempeño"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La presión por aceptar tareas adicionales es un tema muy discutido en el entorno laboral coreano, y en los últimos años ha aparecido bastante literatura de autoayuda sobre cómo negarse sin dañar la relación."
+    },
+    "spanishSpeakerNote": {
+      "es": "아도/어도 es «aunque»: 아파도 회의에 갔어요, «aunque estaba enfermo fui a la reunión». Y 수밖에 없다 expresa que no queda otra: 받아들일 수밖에 없다, «no me quedaba más que aceptar». Ojo: 밖에 aquí no significa «fuera»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo en coreano que desarrolla una idea y cambia de dirección, distinguir el hecho de la interpretación, y justificar una inferencia cruzando dos pasajes separados."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas",
+      "antes-despues-a2",
+      "capacidad-rl-su-itda-a2",
+      "clausulas-relativas-a2",
+      "condicional-eumyeon-a2",
+      "conector-aseo-a2",
+      "cuanto-eolmana-a2",
+      "discurso-reportado-a2",
+      "durante-neun-dongane-a2",
+      "futuro-rl-geoyeyo-a2",
+      "honorificos-a2",
+      "intencion-ryogo-hada-a2",
+      "negacion-ji-anta-a2",
+      "obligacion-aya-hada-a2",
+      "parecer-neun-geot-gatda-a2",
+      "particulas-recipiente-a2",
+      "progresivo-go-itda-a2",
+      "razon-gittaemune-a2",
+      "razon-niikka-a2",
+      "solo-tambien-man-do-a2",
+      "verbos-irregulares-pasado-a2",
+      "alternativa-geona-b1",
+      "causal-gi-ttaemune-b1",
+      "causativa-shichang-b1",
+      "condicional-erado-eurely-b1",
+      "despues-gona-seo-b1",
+      "estado-mantener-chae-b1",
+      "forzosidad-subakkeneopsda-b1",
+      "futuro-intencion-b1",
+      "ge-doeda-b1",
+      "inmediato-jamaja-b1",
+      "kiro-hada-b1",
+      "obligacion-eoyahada-b1",
+      "observacion-neyo-b1",
+      "oportunidad-gime-b1",
+      "pasiva-jeosudo-b1",
+      "passado-reminiscencia-b1",
+      "posibilidad-su-itda-b1",
+      "proporcion-euttorok-b1",
+      "proposito-dorok-b1",
+      "simultaneo-eumyeonseo-b1"
+    ],
+    "disallowedGrammar": [
+      "registro literario",
+      "hanja sin glosa",
+      "dialecto regional"
+    ],
+    "maxOutOfLevelVocabularyPercent": 7,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 5.3,
+      "maxSentenceWords": 10,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Prosa B1 con 더라/던, 게 되다, 채, 을수록 y pasiva. Sin registro literario ni hanja sin glosar. Inferencia moderada: exige cruzar dos pasajes."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué conclusión ofrece el ensayo?",
+      "options": [
+        {
+          "id": "practica",
+          "text": "Que negarse no requiere una buena razón, sino práctica"
+        },
+        {
+          "id": "razon",
+          "text": "Que hay que preparar siempre una razón sólida para negarse"
+        },
+        {
+          "id": "renunciar",
+          "text": "Que lo mejor es cambiar de trabajo"
+        }
+      ],
+      "answer": "practica",
+      "evidence": "거절은 이유가 필요한 일이 아니었어요. 연습이 필요한 일이었어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la última frase lo dice con una oposición limpia: no razones, práctica."
+        },
+        "incorrect": {
+          "es": "Tener una razón es justo lo que el narrador creía y resultó falso. Y nadie cambia de trabajo. Lee las dos últimas frases."
+        },
+        "strategy": {
+          "es": "Cuando un ensayo termina con «no era X, era Y», ahí está su tesis. No la busques en el medio."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántas frases usaba la compañera para negarse?",
+      "options": [
+        {
+          "id": "tres",
+          "text": "Tres"
+        },
+        {
+          "id": "ocho",
+          "text": "Ocho"
+        },
+        {
+          "id": "seis",
+          "text": "Seis"
+        }
+      ],
+      "answer": "tres",
+      "evidence": "세 가지 문장만 썼어요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: tres, y el texto las enumera. El ocho son los años sin saber negarse y el seis, los meses de práctica."
+        },
+        "incorrect": {
+          "es": "El texto tiene varias cifras y cada una mide algo distinto. Busca la que va con 문장, frase."
+        },
+        "strategy": {
+          "es": "Empareja cada número con su unidad: años, meses, frases. Solo una responde a la pregunta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El narrador creía 받아들일 수밖에 없다고 생각했어요. ¿Qué significa 수밖에 없다?",
+      "options": [
+        {
+          "id": "sinsalida",
+          "text": "Que no queda otra opción"
+        },
+        {
+          "id": "fuera",
+          "text": "Que hay que hacerlo fuera del horario"
+        },
+        {
+          "id": "prohibido",
+          "text": "Que está prohibido"
+        }
+      ],
+      "answer": "sinsalida",
+      "evidence": "이유가 없으면 받아들일 수밖에 없다고 생각했어요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Encaja con la condición previa: si no hay razón, no hay salida más que aceptar."
+        },
+        "incorrect": {
+          "es": "La palabra 밖에 aquí no significa «fuera»: forma parte de la expresión. Fíjate en la condición que la precede."
+        },
+        "strategy": {
+          "es": "Las expresiones fijas no se traducen pieza a pieza. Usa la condición que las acompaña para deducirlas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué mejoró su valoración al aceptar menos trabajo?",
+      "options": [
+        {
+          "id": "mejor",
+          "text": "Porque con menos tareas pudo hacerlas mejor"
+        },
+        {
+          "id": "jefe",
+          "text": "Porque su jefe se lo agradeció personalmente"
+        },
+        {
+          "id": "horas",
+          "text": "Porque empezó a trabajar más horas"
+        }
+      ],
+      "answer": "mejor",
+      "evidence": "제가 하는 일이 적어졌기 때문에 그 일을 더 잘하게 되었어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo explica con 기 때문에: menos trabajo, y por eso mejor hecho."
+        },
+        "incorrect": {
+          "es": "No menciona al jefe y trabaja menos, no más. Busca la frase con 적어졌기 때문에."
+        },
+        "strategy": {
+          "es": "Si un resultado parece contradictorio, el texto suele explicarlo con 기 때문에 en la frase siguiente."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: durante esos ocho años se negaba dando siempre razones sinceras.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "저는 거짓말을 자주 했어요. 병원에 가야 한다거나 가족 일이 있다고 말했어요. 사실 그냥 쉬고 싶었어요.",
+      "feedback": {
+        "correct": {
+          "es": "Falso, y por doble motivo: casi nunca se negaba, y cuando lo hacía mentía. Hospital, asuntos de familia. La razón real era otra: solo quería descansar."
+        },
+        "incorrect": {
+          "es": "Busca la frase con 거짓말, mentira, y los dos ejemplos que da después. Eso descarta que fueran razones sinceras."
+        },
+        "strategy": {
+          "es": "Cuando un texto admite algo incómodo, suele dar ejemplos concretos justo después. Úsalos como prueba."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "¿Qué actitud tiene el narrador hacia sus ocho años anteriores?",
+      "options": [
+        {
+          "id": "analitico",
+          "text": "Analítica: explica la creencia que lo sostenía, sin castigarse"
+        },
+        {
+          "id": "vergonzoso",
+          "text": "De vergüenza: se reprocha duramente haber mentido"
+        },
+        {
+          "id": "orgulloso",
+          "text": "De orgullo: cree que trabajó más que nadie"
+        }
+      ],
+      "answer": "analitico",
+      "evidence": "왜 그랬을까요? 저는 거절하면 사람들이 저를 싫어할 것 같았어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Se pregunta el motivo y lo reconstruye como una creencia, no como un defecto moral."
+        },
+        "incorrect": {
+          "es": "Admite las mentiras pero no se castiga, y no presume de nada. Fíjate en la pregunta 왜 그랬을까요?"
+        },
+        "strategy": {
+          "es": "Si un narrador se pregunta «¿por qué hacía eso?», está analizando, no confesándose. El tono está en la pregunta."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en coreano sobre algo que te costaba hacer y aprendiste. Usa 아도/어도 tres veces y 수밖에 없다 una vez."
+    },
+    "minWords": 60,
+    "maxWords": 120,
+    "hints": [
+      "… 동안 저는 … 못 했어요.",
+      "아무리 …아도 …",
+      "…수밖에 없다고 생각했어요.",
+      "…은 연습이 필요한 일이었어요."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano B1: Practicar decir no | WeLearn"
+    },
+    "description": {
+      "es": "Lee un ensayo breve en coreano B1 y practica el concesivo 어도 y 수밖에 없다 para la inevitabilidad. Con seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/coreano/b1/lectura/ani-rago-malhaneun-yeonseup",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-b1-sijangi-namge-doen-iyu",
+      "ko-b1-bam-geunmu"
+    ]
+  }
+}

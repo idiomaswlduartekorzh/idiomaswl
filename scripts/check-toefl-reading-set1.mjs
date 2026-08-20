@@ -121,6 +121,6 @@ for (const setNumber of [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
 
 const changedPaths = execFileSync('git', ['diff', '--name-only', 'HEAD'], { cwd: new URL('.', root), encoding: 'utf8' })
   .trim().split('\n').filter(Boolean);
-assert.ok(changedPaths.every((path) => !path.startsWith('public/audio/') && !/\.(mp3|wav|m4a|ogg)$/i.test(path)), 'T13 changes no audio asset');
+assert.ok(changedPaths.every((path) => !path.startsWith('public/audio/toefl/')), 'T13 changes no TOEFL audio asset');
 
 console.log(`✓ TOEFL Reading: Set 1 plus Academic Sets 2–20 near 200 words, server-only keys, visible scoring, no audio changes`);

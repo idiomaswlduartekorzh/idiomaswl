@@ -1,0 +1,470 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-a2-odinnadtsat-dney-ya-krasil-dver",
+  "status": "published",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Ruso A2"
+  },
+  "slug": "odinnadtsat-dney-ya-krasil-dver",
+  "series": {
+    "id": "ruso-a2-lectura-10",
+    "episode": 1,
+    "totalEpisodes": 10,
+    "previousExerciseId": null,
+    "nextExerciseId": "ru-a2-ya-pozvonyu-i-budu-zvonit"
+  },
+  "classification": {
+    "genre": "relato en primera persona",
+    "topic": "una puerta que tarda once días en quedar pintada",
+    "intent": "learning",
+    "tags": [
+      "ruso a2",
+      "lectura",
+      "pasado",
+      "aspecto verbal"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Once días pintando la puerta"
+    },
+    "intro": {
+      "es": "Cada tarde la vecina preguntaba «¿la ha pintado?» y él respondía «estuve pintando». Once días con la misma conversación. Lectura de ruso A2."
+    },
+    "mission": {
+      "es": "Averigua qué le pide la vecina el día que por fin puede decir «покрасил»."
+    },
+    "targetText": "В прошлом году я решил покрасить входную дверь нашей квартиры. Дверь была старая, коричневая, и краска на ней облезла.\n\nЯ думал, что это работа на два часа. Это была работа на одиннадцать дней.\n\nПервый день я купил краску и кисть. Второй день я мыл дверь. Третий день я ждал, потому что дверь была мокрая. Четвёртый и пятый день я красил — но не докрасил.\n\nШестой и седьмой день была плохая погода: шёл дождь, и краска не сохла. Восьмой день я красил снова. Девятый день я красил второй раз, потому что первый слой был плохой.\n\nКаждый вечер моя соседка Тамара Сергеевна выходила из лифта, смотрела на дверь и спрашивала: «Покрасили?»\n\nИ каждый вечер я отвечал: «Красил».\n\nОна не понимала. Она говорила: «Так покрасили или нет?»\n\nЯ говорил: «Красил. Не покрасил».\n\nВ русском языке это два разных слова, и они значат совсем разные вещи. «Красил» — это процесс. «Покрасил» — это результат. Одиннадцать дней у меня был только процесс.\n\nНа одиннадцатый день я закончил. Вечером Тамара Сергеевна вышла из лифта, и я сказал первым: «Покрасил».\n\nОна посмотрела на дверь две секунды и сказала: «Хорошо. Теперь покрасьте мою».\n\nЯ покрасил её дверь. Это заняло три дня. Я уже знал, как это делать.",
+    "wordCount": 196,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Formar el pasado ruso con -л y concordarlo en género y número."
+      },
+      {
+        "es": "Distinguir el imperfectivo (proceso) del perfectivo (resultado): красил / покрасил."
+      },
+      {
+        "es": "Leer un diálogo donde la gramática es el malentendido."
+      }
+    ],
+    "grammarFocus": [
+      "pasado-verbos",
+      "aspecto-verbal",
+      "presente-verbos"
+    ],
+    "vocabulary": [
+      {
+        "surface": "входную",
+        "lemma": "входной",
+        "glosses": {
+          "es": "de entrada; «входная дверь» es la puerta de la calle"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "облезла",
+        "lemma": "облезть",
+        "glosses": {
+          "es": "se descascarilló"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "кисть",
+        "lemma": "кисть",
+        "glosses": {
+          "es": "pincel"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "мокрая",
+        "lemma": "мокрый",
+        "glosses": {
+          "es": "mojada"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "докрасил",
+        "lemma": "докрасить",
+        "glosses": {
+          "es": "terminé de pintar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "лифта",
+        "lemma": "лифт",
+        "glosses": {
+          "es": "ascensor"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "заняло",
+        "lemma": "занять",
+        "glosses": {
+          "es": "llevó, tardó (tiempo)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "первым",
+        "lemma": "первый",
+        "glosses": {
+          "es": "primero; «я сказал первым» es lo dije yo antes"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En los bloques rusos la puerta de entrada de cada piso da al rellano común, así que su estado lo ve todo el vecindario. Pintarla es un asunto medio privado y medio público."
+    },
+    "spanishSpeakerNote": {
+      "es": "Aquí está el aspecto en una sola escena. «Красил» y «покрасил» son los dos pasado: el primero cuenta el proceso, el segundo el resultado. El español no tiene esta pareja: «pinté» sirve para las dos cosas, y por eso hay que fijarse en el prefijo."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato en ruso sobre hechos pasados, distinguir el aspecto imperfectivo del perfectivo, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento",
+      "acusativo-movimiento",
+      "adverbios-tiempo",
+      "aspecto-verbal",
+      "comparativos",
+      "condicional",
+      "dativo-uso",
+      "futuro-imperfectivo",
+      "futuro-perfectivo",
+      "genitivo-cantidad",
+      "imperativo",
+      "instrumental-uso",
+      "oraciones-subordinadas",
+      "pasado-verbos",
+      "plurales-irregulares",
+      "prepositivo-avanzado",
+      "pronombres-reflexivos",
+      "pronombres-relativos",
+      "superlativos",
+      "verbos-movimiento",
+      "verbos-prefijados"
+    ],
+    "disallowedGrammar": [
+      "participios (причастия)",
+      "gerundios (деепричастия)",
+      "discurso indirecto complejo",
+      "voz pasiva con -ся literaria"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 7.5,
+      "maxSentenceWords": 21,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Pasado y futuro con los dos aspectos, instrumental, condicional con бы, verbos prefijados de movimiento. Sin participios ni gerundios. Acento sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta el texto?",
+      "options": [
+        {
+          "id": "aspecto",
+          "text": "Once días de proceso hasta poder decir por fin que la puerta quedó pintada"
+        },
+        {
+          "id": "vecina",
+          "text": "Un conflicto con una vecina metomentodo"
+        },
+        {
+          "id": "pintura",
+          "text": "Que compró una pintura de mala calidad"
+        }
+      ],
+      "answer": "aspecto",
+      "evidence": "«Красил» — это процесс. «Покрасил» — это результат. Одиннадцать дней у меня был только процесс.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo explica él mismo con las dos palabras."
+        },
+        "incorrect": {
+          "es": "La vecina no es el conflicto y la pintura no falla. Busca las frases sobre las dos palabras."
+        },
+        "strategy": {
+          "es": "Si un texto se detiene a explicar dos palabras parecidas, la diferencia entre ellas es el asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué hizo el segundo día?",
+      "options": [
+        {
+          "id": "lavar",
+          "text": "Lavó la puerta"
+        },
+        {
+          "id": "comprar",
+          "text": "Compró la pintura y el pincel"
+        },
+        {
+          "id": "esperar",
+          "text": "Esperó a que se secara"
+        }
+      ],
+      "answer": "lavar",
+      "evidence": "Первый день я купил краску и кисть. Второй день я мыл дверь. Третий день я ждал.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y fíjate en que ahí usa el imperfectivo «мыл»: estuvo lavando."
+        },
+        "incorrect": {
+          "es": "Comprar fue el primer día y esperar, el tercero. Cuenta los días."
+        },
+        "strategy": {
+          "es": "Cuando el texto numera los días, empareja cada acción con su número."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «краска на ней облезла». ¿Qué significa?",
+      "options": [
+        {
+          "id": "descascarillo",
+          "text": "La pintura se había descascarillado"
+        },
+        {
+          "id": "seco",
+          "text": "La pintura se había secado bien"
+        },
+        {
+          "id": "cambio",
+          "text": "La pintura había cambiado de color"
+        }
+      ],
+      "answer": "descascarillo",
+      "evidence": "Дверь была старая, коричневая, и краска на ней облезла.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y es la razón por la que decide pintarla."
+        },
+        "incorrect": {
+          "es": "Va junto a «старая»: es una descripción del mal estado de la puerta."
+        },
+        "strategy": {
+          "es": "Si la palabra va en una lista de defectos, describe un deterioro."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué la vecina no entendía sus respuestas?",
+      "options": [
+        {
+          "id": "aspecto",
+          "text": "Porque ella preguntaba por el resultado y él contestaba con el proceso"
+        },
+        {
+          "id": "sordera",
+          "text": "Porque no oía bien"
+        },
+        {
+          "id": "idioma",
+          "text": "Porque él no hablaba ruso"
+        }
+      ],
+      "answer": "aspecto",
+      "evidence": "Она говорила: «Так покрасили или нет?» Я говорил: «Красил. Не покрасил».",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y su pregunta lo demuestra: «entonces, ¿la pintó o no?»."
+        },
+        "incorrect": {
+          "es": "Él habla ruso perfectamente y ella oye bien: la pregunta y la respuesta no son del mismo tipo."
+        },
+        "strategy": {
+          "es": "Si dos personajes usan el mismo verbo con formas distintas, el malentendido está ahí."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el narrador se negó a pintar la puerta de la vecina.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Я покрасил её дверь. Это заняло три дня.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: la pintó, y en tres días en lugar de once."
+        },
+        "incorrect": {
+          "es": "La respuesta está en las dos últimas frases del texto."
+        },
+        "strategy": {
+          "es": "Si el texto da una duración concreta para algo, es porque ese algo ocurrió."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena lo que ocurre.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Decide pintar la puerta y calcula dos horas"
+        },
+        {
+          "id": "p2",
+          "text": "Los primeros días: comprar, lavar, esperar"
+        },
+        {
+          "id": "p3",
+          "text": "La conversación diaria con la vecina"
+        },
+        {
+          "id": "p4",
+          "text": "El día once puede decir «покрасил», y ella le pide su puerta"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "В прошлом году я решил покрасить входную дверь … Первый день я купил краску … Каждый вечер моя соседка … На одиннадцатый день я закончил.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: decisión, días, diálogo y remate."
+        },
+        "incorrect": {
+          "es": "Guíate por «Первый день», «Каждый вечер» y «На одиннадцатый день»."
+        },
+        "strategy": {
+          "es": "Los números de los días ordenan el relato sin que haya que interpretar nada."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en ruso sobre algo que tardaste mucho en acabar. Usa cuatro verbos imperfectivos de proceso y tres perfectivos de resultado."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "В прошлом году я решил…",
+      "Первый день я купил…",
+      "Я красил, но не докрасил.",
+      "На одиннадцатый день я закончил."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso A2: once días pintando la puerta | WeLearn"
+    },
+    "description": {
+      "es": "Lee un relato en ruso A2 y practica el pasado y el aspecto verbal (красил / покрасил). Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/a2/lectura/odinnadtsat-dney-ya-krasil-dver",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-a2-ya-pozvonyu-i-budu-zvonit"
+    ]
+  }
+}

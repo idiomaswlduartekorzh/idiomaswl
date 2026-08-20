@@ -1,0 +1,478 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-b1-le-club-qui-ne-gagne-jamais",
+  "status": "published",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Francés B1"
+  },
+  "slug": "le-club-qui-ne-gagne-jamais",
+  "series": {
+    "id": "frances-b1-lectura-10",
+    "episode": 10,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-b1-deux-fois-le-meme-roman",
+    "nextExerciseId": null
+  },
+  "classification": {
+    "genre": "crónica social",
+    "topic": "un club deportivo de barrio",
+    "intent": "learning",
+    "tags": [
+      "frances b1",
+      "lectura",
+      "pronombres y/en",
+      "conectores lógicos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El club que nunca gana"
+    },
+    "intro": {
+      "es": "Un club de balonmano que lleva once temporadas sin ascender y tiene lista de espera. Lectura de francés B1 con los pronombres y/en y los conectores."
+    },
+    "mission": {
+      "es": "Averigua por qué la gente se apunta a un club que no gana."
+    },
+    "targetText": "Le club de handball de Villeneuve n’est pas monté d’une seule division depuis onze saisons. Or il compte aujourd’hui deux cent quarante licenciés, contre quatre-vingt-dix en 2014, et il a dû ouvrir une liste d’attente. Le phénomène intrigue la fédération, qui y a envoyé une observatrice en avril. Son rapport tient en quelques pages, mais il en dit long. Le club a fait, il y a dix ans, un choix que presque personne ne fait: il a décidé que chaque licencié jouerait, quel que soit son niveau. Non pas qu’il entrerait en fin de match pour trois minutes; qu’il jouerait, réellement, un tiers du temps au minimum. Cette règle est écrite dans le règlement intérieur, et les entraîneurs s’y tiennent même en finale de coupe départementale. Ils en ont perdu plusieurs à cause de cela. Ils le savent et ils l’assument. En effet, le raisonnement du club n’a jamais été sportif. Le président, Ahmed Belkacem, le formule ainsi: un enfant qui reste sur le banc arrête au bout de deux ans, et un enfant qui arrête ne revient jamais. Le club perd donc des matchs et garde ses joueurs. Cependant, l’observatrice note une conséquence que personne n’avait prévue. Les meilleurs joueurs, ceux que d’autres clubs recrutent chaque été, restent aussi. Interrogés, plusieurs d’entre eux donnent la même raison, qui n’a rien à voir avec le sport: ils y ont leurs amis, et ils n’ont pas envie d’aller ailleurs pour gagner avec des inconnus. Le rapport en tire une conclusion prudente: la règle des trois minutes n’explique pas à elle seule la croissance du club, mais aucune autre explication ne résiste à l’examen. Ni les installations, qui sont vieilles. Ni les résultats, qui sont mauvais. Ni les tarifs, qui sont dans la moyenne du département. L’observatrice a même comparé Villeneuve à quatre clubs voisins de taille équivalente: trois d’entre eux ont perdu des licenciés sur la même période, et le quatrième n’a gagné que onze. Reste une question que le rapport pose sans y répondre: si ce modèle fonctionne si bien, pourquoi aucun club voisin ne l’a-t-il copié? Belkacem, lui, en a une idée. Il dit que copier cette règle oblige à accepter de perdre, et que peu de dirigeants sont prêts à l’expliquer à leurs adhérents une fois par semaine, pendant onze ans.",
+    "wordCount": 383,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Usar «y» y «en» y saber a qué sustituyen en cada caso."
+      },
+      {
+        "es": "Manejar conectores lógicos de nivel B1: or, en effet, cependant, donc."
+      },
+      {
+        "es": "Evaluar la solidez de una explicación cuando el texto descarta las alternativas."
+      }
+    ],
+    "grammarFocus": [
+      "pronoms-y-en-b1",
+      "connecteurs-logiques-b1",
+      "pronoms-y-en"
+    ],
+    "vocabulary": [
+      {
+        "surface": "licenciés",
+        "lemma": "licencié",
+        "glosses": {
+          "es": "federados, socios con licencia deportiva"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "liste d’attente",
+        "lemma": "liste d’attente",
+        "glosses": {
+          "es": "lista de espera"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "intrigue",
+        "lemma": "intriguer",
+        "glosses": {
+          "es": "intriga, despierta curiosidad"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "règlement intérieur",
+        "lemma": "règlement intérieur",
+        "glosses": {
+          "es": "reglamento interno"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "s’y tiennent",
+        "lemma": "s’en tenir à",
+        "glosses": {
+          "es": "se atienen a ello, lo respetan"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "banc",
+        "lemma": "banc",
+        "glosses": {
+          "es": "banquillo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "recrutent",
+        "lemma": "recruter",
+        "glosses": {
+          "es": "fichan, reclutan"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "adhérents",
+        "lemma": "adhérent",
+        "glosses": {
+          "es": "socios, miembros"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El balonmano es un deporte de club muy implantado en Francia, y las federaciones departamentales publican informes de este tipo sobre clubes cuyo crecimiento se sale de la norma."
+    },
+    "spanishSpeakerNote": {
+      "es": "Repasa la diferencia: «ils y ont leurs amis» (y = allí, en el club) frente a «ils en ont perdu plusieurs» (en = de ellos, de los partidos). «Y» sustituye lugares o complementos con «à»; «en», complementos con «de» o cantidades."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo que desarrolla una idea, cambia de dirección y se cierra; distinguir el hecho de la interpretación; y justificar una inferencia señalando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers",
+      "accord-participe-passe",
+      "cause-consequence",
+      "comparatifs",
+      "conditionnel-present",
+      "connecteurs",
+      "discours-indirect",
+      "dont-relatif",
+      "futur-simple",
+      "gerondif",
+      "imparfait",
+      "negation-avancee",
+      "passe-compose-avoir",
+      "passe-compose-etre",
+      "passe-compose-vs-imparfait",
+      "pronoms-coi",
+      "pronoms-y-en",
+      "si-conditionnel",
+      "subjonctif-present",
+      "superlatifs",
+      "verbes-pronominaux",
+      "accord-participe-passe-b1",
+      "comparatif-superlatif-b1",
+      "conditionnel-present-b1",
+      "connecteurs-logiques-b1",
+      "discours-indirect-b1",
+      "expressions-temporelles-b1",
+      "futur-simple-b1",
+      "gerondif-b1",
+      "hypothese-si-b1",
+      "imperatif-b1",
+      "negation-avancee-b1",
+      "nominalisation-b1",
+      "participe-present-b1",
+      "passe-compose-vs-imparfait-b1",
+      "plus-que-parfait-b1",
+      "pronoms-relatifs-b1",
+      "pronoms-y-en-b1",
+      "questions-indirectes-b1",
+      "subjonctif-present-b1",
+      "voix-passive-b1"
+    ],
+    "disallowedGrammar": [
+      "passé simple",
+      "subjonctif imparfait",
+      "passé antérieur"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 16.7,
+      "maxSentenceWords": 33,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Prosa B1 con plus-que-parfait, voz pasiva y subjuntivo. Sin passé simple. Inferencia moderada: exige cruzar dos pasajes separados."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué explica el crecimiento del club, según el informe?",
+      "options": [
+        {
+          "id": "regla",
+          "text": "La regla de que todo el mundo juegue, aunque cueste partidos"
+        },
+        {
+          "id": "instalaciones",
+          "text": "Unas instalaciones renovadas y unas cuotas más bajas"
+        },
+        {
+          "id": "resultados",
+          "text": "Una racha de buenos resultados deportivos"
+        }
+      ],
+      "answer": "regla",
+      "evidence": "la règle des trois minutes n’explique pas à elle seule la croissance du club, mais aucune autre explication ne résiste à l’examen",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el informe llega ahí por eliminación: descarta instalaciones, resultados y tarifas una por una."
+        },
+        "incorrect": {
+          "es": "El texto dice que las instalaciones son viejas, los resultados malos y las tarifas normales. Lee la conclusión del informe."
+        },
+        "strategy": {
+          "es": "Cuando un texto descarta explicaciones una a una, la que queda en pie es su respuesta, aunque la formule con prudencia."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto tiempo garantiza el club a cada jugador como mínimo?",
+      "options": [
+        {
+          "id": "tercio",
+          "text": "Un tercio del partido"
+        },
+        {
+          "id": "tres",
+          "text": "Tres minutos al final del partido"
+        },
+        {
+          "id": "mitad",
+          "text": "La mitad del partido"
+        }
+      ],
+      "answer": "tercio",
+      "evidence": "Non pas qu’il entrerait en fin de match pour trois minutes; qu’il jouerait, réellement, un tiers du temps au minimum.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Los tres minutos son justo el modelo que el club rechaza, y el texto lo dice con un «non pas que»."
+        },
+        "incorrect": {
+          "es": "Los tres minutos aparecen, pero para descartarlos. Fíjate en la estructura «non pas que… ; que…»."
+        },
+        "strategy": {
+          "es": "La fórmula «non pas que X; que Y» descarta X y afirma Y. Es fácil quedarse con el dato equivocado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que los entrenadores «s’y tiennent même en finale». ¿A qué se refiere «y»?",
+      "options": [
+        {
+          "id": "regla",
+          "text": "A la regla escrita en el reglamento"
+        },
+        {
+          "id": "pabellon",
+          "text": "Al pabellón donde se juega"
+        },
+        {
+          "id": "final",
+          "text": "A la final de la copa"
+        }
+      ],
+      "answer": "regla",
+      "evidence": "Cette règle est écrite dans le règlement intérieur, et les entraîneurs s’y tiennent même en finale",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. «S’en tenir à quelque chose» es atenerse a algo, y aquí ese algo es la regla que se acaba de citar."
+        },
+        "incorrect": {
+          "es": "Si «y» fuera la final, la frase diría que se atienen a la final incluso en la final. Mira qué se ha nombrado antes."
+        },
+        "strategy": {
+          "es": "Para resolver «y», busca el elemento introducido por «à» más cercano por delante. Aquí es la regla."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué se quedan también los mejores jugadores, según el informe?",
+      "options": [
+        {
+          "id": "amigos",
+          "text": "Porque tienen allí a sus amigos y no quieren ganar con desconocidos"
+        },
+        {
+          "id": "pagan",
+          "text": "Porque el club les paga mejor que los rivales"
+        },
+        {
+          "id": "titulares",
+          "text": "Porque en otros clubes no serían titulares"
+        }
+      ],
+      "answer": "amigos",
+      "evidence": "ils y ont leurs amis, et ils n’ont pas envie d’aller ailleurs pour gagner avec des inconnus",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el informe subraya que es una razón que «no tiene nada que ver con el deporte». Ahí está lo interesante."
+        },
+        "incorrect": {
+          "es": "No se menciona dinero, y son precisamente los mejores, así que serían titulares en cualquier sitio. Busca la respuesta que ellos dan."
+        },
+        "strategy": {
+          "es": "Cuando un texto dice que varias personas dan «la misma razón», esa razón está citada justo después. No la deduzcas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el club ha perdido partidos por respetar su propia regla, y lo asume conscientemente.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Ils en ont perdu plusieurs à cause de cela. Ils le savent et ils l’assument.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y en dos frases muy cortas. Esa aceptación es la clave del argumento de Belkacem."
+        },
+        "incorrect": {
+          "es": "Busca las dos frases breves que siguen a la mención de la final de copa. Ahí está la respuesta."
+        },
+        "strategy": {
+          "es": "Dos frases cortas seguidas suelen marcar una afirmación deliberada. Léelas como una sola idea."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué cierra la crónica con la explicación de Belkacem sobre por qué nadie copia el modelo?",
+      "options": [
+        {
+          "id": "coste",
+          "text": "Para señalar que el coste del modelo no es deportivo sino de valentía dirigente"
+        },
+        {
+          "id": "critica",
+          "text": "Para criticar a los clubes vecinos por su falta de recursos"
+        },
+        {
+          "id": "duda",
+          "text": "Para dejar claro que el modelo probablemente no funcionaría en otro sitio"
+        }
+      ],
+      "answer": "coste",
+      "evidence": "copier cette règle oblige à accepter de perdre, et que peu de dirigeants sont prêts à l’expliquer à leurs adhérents une fois par semaine, pendant onze ans",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La dificultad no es aplicar la regla: es sostenerla en público, semana tras semana, durante once años."
+        },
+        "incorrect": {
+          "es": "No habla de recursos ni pone en duda el modelo, cuyos resultados acaba de documentar. Fíjate en qué hay que «explicar» y con qué frecuencia."
+        },
+        "strategy": {
+          "es": "Cuando una crónica termina con una cita, pregúntate qué obstáculo identifica. Suele ser la respuesta a la pregunta anterior."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en francés sobre un grupo o club que conozcas y qué lo hace funcionar. Usa «y» y «en» dos veces cada uno, y tres conectores lógicos (or, en effet, cependant, donc)."
+    },
+    "minWords": 70,
+    "maxWords": 130,
+    "hints": [
+      "Le club compte… Or…",
+      "En effet, le raisonnement n’a jamais été…",
+      "Cependant,…",
+      "Ils y ont… / Ils en ont…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés B1: El club que nunca gana | WeLearn"
+    },
+    "description": {
+      "es": "Lee una crónica social en francés B1 y practica los pronombres y / en y los conectores lógicos (or, donc, cependant, en effet)."
+    },
+    "canonicalPath": "/practica/frances/b1/lectura/le-club-qui-ne-gagne-jamais",
+    "indexable": true,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-b1-deux-fois-le-meme-roman"
+    ]
+  }
+}

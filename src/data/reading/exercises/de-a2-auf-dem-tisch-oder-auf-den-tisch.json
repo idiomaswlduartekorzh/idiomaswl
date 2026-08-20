@@ -1,0 +1,462 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-a2-auf-dem-tisch-oder-auf-den-tisch",
+  "status": "published",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Alemán A2"
+  },
+  "slug": "auf-dem-tisch-oder-auf-den-tisch",
+  "series": {
+    "id": "aleman-a2-lectura-10",
+    "episode": 4,
+    "totalEpisodes": 10,
+    "previousExerciseId": "de-a2-die-frau-die-den-schluessel-hat",
+    "nextExerciseId": "de-a2-was-wuerdest-du-machen"
+  },
+  "classification": {
+    "genre": "escena de mudanza",
+    "topic": "colocar las cosas en una casa nueva",
+    "intent": "learning",
+    "tags": [
+      "aleman a2",
+      "lectura",
+      "preposiciones mixtas",
+      "dativo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Sobre la mesa o encima de la mesa"
+    },
+    "intro": {
+      "es": "Dos personas colocando una casa y discutiendo dónde va cada cosa, con una pregunta que ninguna sabe responder. Lectura de alemán A2."
+    },
+    "mission": {
+      "es": "Averigua qué objeto acaba en un sitio que nadie eligió."
+    },
+    "targetText": "Wir sind am Samstag umgezogen. Um zehn Uhr standen achtzehn Kisten in der Wohnung. Um acht Uhr abends standen immer noch achtzehn Kisten in der Wohnung, nur an anderen Stellen. Mein Bruder stellt die Lampe auf den Tisch. Ich sage: Die Lampe steht besser auf dem Boden, neben dem Sofa. Er stellt sie auf den Boden. Nach zehn Minuten stellt er sie wieder auf den Tisch. Wir hängen das Bild an die Wand. Dann hängt es an der Wand und es ist schief. Wir nehmen es wieder ab. Das Problem ist nicht das Bild. Das Problem ist die Wand: sie ist nicht gerade. In diesem Haus ist nichts gerade, weil das Haus aus dem Jahr 1908 ist. Am Ende liegt das Bild auf dem Sofa. Es liegt dort seit drei Wochen. Wir haben einen Nagel gekauft, einen guten, für zwei Euro achtzig. Der Nagel liegt in der Küche, in einer kleinen Schale neben dem Salz. Wir sehen ihn jeden Tag. Meine Mutter hat gefragt, wann wir es aufhängen. Ich habe geantwortet: bald. Mein Bruder hat gelacht. Er weiß, was bald bedeutet.",
+    "wordCount": 181,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguir acusativo y dativo con las preposiciones mixtas: auf den Tisch / auf dem Tisch."
+      },
+      {
+        "es": "Reconocer los verbos de posición: stellen, stehen, hängen, liegen."
+      },
+      {
+        "es": "Seguir una escena con muchos cambios de sitio sin perder el hilo."
+      }
+    ],
+    "grammarFocus": [
+      "wechselpraepositionen-a2",
+      "dativ-a2",
+      "praepositionen-ort"
+    ],
+    "vocabulary": [
+      {
+        "surface": "umgezogen",
+        "lemma": "umziehen",
+        "glosses": {
+          "es": "mudados de casa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Kisten",
+        "lemma": "Kiste",
+        "glosses": {
+          "es": "cajas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Stellen",
+        "lemma": "Stelle",
+        "glosses": {
+          "es": "sitios, lugares"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Boden",
+        "lemma": "Boden",
+        "glosses": {
+          "es": "suelo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "schief",
+        "lemma": "schief",
+        "glosses": {
+          "es": "torcido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gerade",
+        "lemma": "gerade",
+        "glosses": {
+          "es": "recto, derecho"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "aufhängen",
+        "lemma": "aufhängen",
+        "glosses": {
+          "es": "colgar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "bald",
+        "lemma": "bald",
+        "glosses": {
+          "es": "pronto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Los edificios anteriores a la Primera Guerra Mundial —los llamados Altbau— son muy valorados en Alemania por sus techos altos, y sus paredes torcidas son un tópico doméstico."
+    },
+    "spanishSpeakerNote": {
+      "es": "Aquí está la regla clave del nivel: con las preposiciones mixtas, ACUSATIVO si hay movimiento hacia un sitio («auf den Tisch») y DATIVO si se describe dónde está algo («auf dem Tisch»). El verbo lo delata: stellen mueve, stehen describe."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en alemán sobre hechos pasados, encontrar el verbo al final de una subordinada, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens",
+      "adjektivdeklination-a2",
+      "da-hin-her-a2",
+      "dativ-a2",
+      "futur-i-a2",
+      "genitiv-a2",
+      "infinitiv-zu-a2",
+      "komparativ-superlativ-a2",
+      "konjunktionen-a2",
+      "konjunktiv-ii-wurden-a2",
+      "modalverben-praeteritum-a2",
+      "partizip-als-adjektiv-a2",
+      "passiv-praesens-a2",
+      "perfekt-haben-a2",
+      "perfekt-sein-a2",
+      "praeteritum-basic-a2",
+      "reflexivverben-a2",
+      "relativsaetze-a2",
+      "trennbare-verben-praeteritum-a2",
+      "wechselpraepositionen-a2",
+      "zweiteilige-konnektoren-a2"
+    ],
+    "disallowedGrammar": [
+      "Konjunktiv I",
+      "Plusquamperfekt",
+      "Partizip I",
+      "Nominalstil"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 8.2,
+      "maxSentenceWords": 16,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Perfekt y Präteritum con su reparto de uso. Konjunktiv II solo en formas hechas (würde, wäre, hätte). Sin Plusquamperfekt ni Konjunktiv I."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué retrata la escena?",
+      "options": [
+        {
+          "id": "inacabado",
+          "text": "Una mudanza que no termina, y un cuadro que lleva tres semanas sin colgar"
+        },
+        {
+          "id": "pelea",
+          "text": "Una discusión seria entre dos hermanos"
+        },
+        {
+          "id": "obra",
+          "text": "Una reforma para enderezar las paredes"
+        }
+      ],
+      "answer": "inacabado",
+      "evidence": "Es liegt dort seit drei Wochen … Er weiß, was bald bedeutet.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el final lo remata con humor: los dos saben lo que significa «bald»."
+        },
+        "incorrect": {
+          "es": "No hay pelea ni obra: solo lámparas que van y vienen. Busca cuánto lleva el cuadro en el sofá."
+        },
+        "strategy": {
+          "es": "Cuando un texto acaba con una broma compartida, esa broma resume la situación."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántas cajas había por la noche?",
+      "options": [
+        {
+          "id": "18",
+          "text": "Las mismas dieciocho"
+        },
+        {
+          "id": "10",
+          "text": "Diez"
+        },
+        {
+          "id": "3",
+          "text": "Tres"
+        }
+      ],
+      "answer": "18",
+      "evidence": "Um acht Uhr abends standen immer noch achtzehn Kisten in der Wohnung, nur an anderen Stellen.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y la gracia está en «nur an anderen Stellen»: las mismas, solo que en otro sitio."
+        },
+        "incorrect": {
+          "es": "Los diez son minutos y los tres, semanas. Busca la cifra que va con «Kisten»."
+        },
+        "strategy": {
+          "es": "Empareja cada número con su sustantivo: cajas, minutos, semanas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que el cuadro «ist schief». ¿Qué significa?",
+      "options": [
+        {
+          "id": "torcido",
+          "text": "Torcido"
+        },
+        {
+          "id": "caro",
+          "text": "Caro"
+        },
+        {
+          "id": "pesado",
+          "text": "Pesado"
+        }
+      ],
+      "answer": "torcido",
+      "evidence": "Dann hängt es an der Wand und es ist schief … Das Problem ist die Wand: sie ist nicht gerade.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y la frase siguiente lo confirma con su contrario: la pared no está recta."
+        },
+        "incorrect": {
+          "es": "El texto explica enseguida que la pared no es recta. Ese es el sentido."
+        },
+        "strategy": {
+          "es": "Si un adjetivo tiene su contrario en la frase siguiente, ese contrario te lo define."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el cuadro acaba en el sofá?",
+      "options": [
+        {
+          "id": "pared",
+          "text": "Porque la pared está torcida y desistieron de colgarlo"
+        },
+        {
+          "id": "clavo",
+          "text": "Porque no tenían clavos"
+        },
+        {
+          "id": "gusto",
+          "text": "Porque no les gusta el cuadro"
+        }
+      ],
+      "answer": "pared",
+      "evidence": "Das Problem ist die Wand: sie ist nicht gerade … Am Ende liegt das Bild auf dem Sofa.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto descarta antes al cuadro como culpable: «Das Problem ist nicht das Bild»."
+        },
+        "incorrect": {
+          "es": "El texto dice expresamente que el problema no es el cuadro. Y no menciona clavos."
+        },
+        "strategy": {
+          "es": "Cuando un texto descarta una causa con «nicht», la verdadera viene en la frase siguiente."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el hermano vuelve a poner la lámpara sobre la mesa después de bajarla.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Er stellt sie auf den Boden. Nach zehn Minuten stellt er sie wieder auf den Tisch.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero: diez minutos después vuelve a subirla. El «wieder» lo marca."
+        },
+        "incorrect": {
+          "es": "Busca la frase con «Nach zehn Minuten». La palabra «wieder» significa de nuevo."
+        },
+        "strategy": {
+          "es": "El adverbio «wieder» indica repetición. Si lo ves, algo vuelve al estado anterior."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué menciona que la casa es de 1908?",
+      "options": [
+        {
+          "id": "explicar",
+          "text": "Para explicar por qué nada está recto en la casa"
+        },
+        {
+          "id": "valor",
+          "text": "Para señalar que la vivienda es muy valiosa"
+        },
+        {
+          "id": "ruina",
+          "text": "Para avisar de que está en mal estado"
+        }
+      ],
+      "answer": "explicar",
+      "evidence": "In diesem Haus ist nichts gerade, weil das Haus aus dem Jahr 1908 ist.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y va unido con «weil»: es la causa declarada de que nada esté recto."
+        },
+        "incorrect": {
+          "es": "No se habla de precio ni de ruina. Fíjate en el conector «weil»."
+        },
+        "strategy": {
+          "es": "Un dato unido con «weil» es una causa. No busques otra función."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en alemán colocando cosas en una habitación. Usa cuatro preposiciones mixtas, dos con acusativo y dos con dativo."
+    },
+    "minWords": 40,
+    "maxWords": 85,
+    "hints": [
+      "Wir sind am… umgezogen.",
+      "Er stellt die Lampe auf den Tisch.",
+      "Die Lampe steht auf dem Boden.",
+      "Am Ende liegt…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán A2: Sobre la mesa o encima de la mesa | WeLearn"
+    },
+    "description": {
+      "es": "Lee una escena en alemán A2 y practica las preposiciones mixtas (Wechselpräpositionen) y el dativo. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/a2/lectura/auf-dem-tisch-oder-auf-den-tisch",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-a2-die-frau-die-den-schluessel-hat",
+      "de-a2-was-wuerdest-du-machen"
+    ]
+  }
+}

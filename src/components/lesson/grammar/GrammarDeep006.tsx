@@ -98,8 +98,8 @@ export default function GrammarDeep006() {
                 <p style={{ margin: '0 0 6px', fontSize: 14, fontWeight: 700 }}>{e.title}</p>
                 {e.wrong && (
                   <div style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
-                    <code style={{ fontSize: 13, padding: '3px 10px', background: 'rgba(220,53,69,0.06)', border: '1px solid rgba(220,53,69,0.2)', borderRadius: 6, color: '#dc3545', fontFamily: "'Noto Sans KR',sans-serif" }}>{e.wrong}</code>
-                    <code style={{ fontSize: 13, padding: '3px 10px', background: 'rgba(45,155,78,0.06)', border: '1px solid rgba(45,155,78,0.2)', borderRadius: 6, color: '#2d9b4e', fontFamily: "'Noto Sans KR',sans-serif" }}>{e.right}</code>
+                    <code style={{ fontSize: 13, padding: '3px 10px', background: 'rgba(220,53,69,0.06)', border: '1px solid rgba(220,53,69,0.2)', borderRadius: 6, color: 'var(--wl-on-panel-alert, #dc3545)', fontFamily: "'Noto Sans KR',sans-serif" }}>{e.wrong}</code>
+                    <code style={{ fontSize: 13, padding: '3px 10px', background: 'rgba(45,155,78,0.06)', border: '1px solid rgba(45,155,78,0.2)', borderRadius: 6, color: 'var(--wl-on-panel-ok, #2d9b4e)', fontFamily: "'Noto Sans KR',sans-serif" }}>{e.right}</code>
                   </div>
                 )}
                 <p style={{ margin: 0, fontSize: 12, color: 'var(--muted)', lineHeight: 1.6 }}>{e.why}</p>

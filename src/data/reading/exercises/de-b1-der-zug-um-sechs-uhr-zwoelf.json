@@ -1,0 +1,491 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-b1-der-zug-um-sechs-uhr-zwoelf",
+  "status": "published",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Alemán B1"
+  },
+  "slug": "der-zug-um-sechs-uhr-zwoelf",
+  "series": {
+    "id": "aleman-b1-lectura-10",
+    "episode": 5,
+    "totalEpisodes": 10,
+    "previousExerciseId": "de-b1-obwohl-sie-wieder-verloren",
+    "nextExerciseId": "de-b1-ich-freue-mich-auf-nichts"
+  },
+  "classification": {
+    "genre": "perfil de una persona",
+    "topic": "un cambio de horario de tres minutos",
+    "intent": "learning",
+    "tags": [
+      "aleman b1",
+      "lectura",
+      "Präteritum de verbos fuertes",
+      "preposiciones temporales"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El tren de las 6:12"
+    },
+    "intro": {
+      "es": "Durante veintidós años tomó el mismo tren. Cambiaron el horario tres minutos y algo se rompió. Lectura de alemán B1."
+    },
+    "mission": {
+      "es": "Averigua qué se perdía exactamente con esos tres minutos."
+    },
+    "targetText": "Zweiundzwanzig Jahre lang nahm Herr Brandt den Zug um sechs Uhr zwölf. Er stand um Viertel vor fünf auf, ging um halb sechs aus dem Haus und war vor sechs am Bahnsteig. Im Winter wartete er drinnen, im Sommer draußen an der dritten Bank.\n\nDer Zug kam fast immer pünktlich. Herr Brandt stieg immer am selben Wagen ein, saß immer auf demselben Platz und sprach in diesen zweiundzwanzig Jahren mit ungefähr fünf Personen.\n\nIm Dezember wurde der Fahrplan geändert. Aus sechs Uhr zwölf wurde sechs Uhr neun. Drei Minuten.\n\nAls er mir davon erzählte, lachte ich zuerst. Ich verstand nicht, warum drei Minuten ein Problem sein sollten. Er erklärte es mir in einem einzigen Satz, und danach lachte ich nicht mehr.\n\nUm sechs Uhr zwölf, sagte er, kam er genau in dem Moment am Bahnsteig an, in dem die Bäckerei am Ausgang aufmachte. Er kaufte seit Jahren jeden Morgen dasselbe: ein Brötchen, keinen Kaffee. Die Frau hinter der Theke legte es ihm hin, bevor er etwas sagte. Das war das einzige Gespräch seines Tages vor neun Uhr.\n\nBei sechs Uhr neun war die Bäckerei noch zu.\n\nEr ging trotzdem weiter zum selben Bahnsteig, nur eben früher. Vier Wochen lang stand er dort und sah durch die dunkle Scheibe, wie drinnen nach und nach das Licht anging. Dann schrieb er einen Brief. Nicht an die Bahn, sondern an die Bäckerei.\n\nEr schrieb, er wolle sich nicht beschweren, er wolle nur mitteilen, dass sich für ihn etwas geändert habe. Den Brief warf er nachts ein, weil er ihn niemandem in die Hand geben wollte.\n\nSeit Februar macht die Bäckerei um sechs Uhr auf. Die Besitzerin sagt, das habe nichts mit dem Brief zu tun, sondern mit den anderen Fahrgästen, die seit dem neuen Fahrplan früher da seien. Sie sagt das jedes Mal, wenn man sie danach fragt, und sie sagt es immer ein bisschen zu schnell.\n\nHerr Brandt kauft jetzt um zwei Minuten nach sechs sein Brötchen. Er nimmt den Zug um sechs Uhr neun. Er sagt, es sei jetzt sogar besser, weil er nicht mehr hetzen müsse.",
+    "wordCount": 346,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Reconocer el Präteritum de los verbos fuertes frecuentes: nahm, ging, kam, saß, sprach, schrieb."
+      },
+      {
+        "es": "Usar um, vor, seit, bei, nach y bevor con el sentido temporal correcto."
+      },
+      {
+        "es": "Detectar cuándo un personaje niega algo con demasiada rapidez."
+      }
+    ],
+    "grammarFocus": [
+      "prateritum-starke-verben-b1",
+      "temporale-prapositionen-b1",
+      "praepositionen-zeit"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Bahnsteig",
+        "lemma": "Bahnsteig",
+        "glosses": {
+          "es": "andén"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pünktlich",
+        "lemma": "pünktlich",
+        "glosses": {
+          "es": "puntual"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Fahrplan",
+        "lemma": "Fahrplan",
+        "glosses": {
+          "es": "horario de trenes"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Brötchen",
+        "lemma": "Brötchen",
+        "glosses": {
+          "es": "panecillo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Theke",
+        "lemma": "Theke",
+        "glosses": {
+          "es": "mostrador"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Scheibe",
+        "lemma": "Scheibe",
+        "glosses": {
+          "es": "cristal de un escaparate"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "beschweren",
+        "lemma": "sich beschweren",
+        "glosses": {
+          "es": "quejarse formalmente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "hetzen",
+        "lemma": "hetzen",
+        "glosses": {
+          "es": "ir con prisas, correr"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Los cambios de horario ferroviario en Alemania se aplican todos a la vez, en diciembre, y desplazan miles de trenes unos pocos minutos. Cada uno de esos minutos cae sobre la rutina de alguien."
+    },
+    "spanishSpeakerNote": {
+      "es": "El alemán reparte las preposiciones de tiempo con más precisión que el español: um para la hora exacta, gegen para la hora aproximada, vor para antes, nach para después, seit para lo que empezó y sigue. «Um sechs Uhr zwölf» no admite un «sobre las seis»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto alemán largo que desarrolla una idea y cambia de dirección, separar lo que ocurrió de lo que alguien dice que ocurrió, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens",
+      "adjektivdeklination-a2",
+      "da-hin-her-a2",
+      "dativ-a2",
+      "futur-i-a2",
+      "genitiv-a2",
+      "infinitiv-zu-a2",
+      "komparativ-superlativ-a2",
+      "konjunktionen-a2",
+      "konjunktiv-ii-wurden-a2",
+      "modalverben-praeteritum-a2",
+      "partizip-als-adjektiv-a2",
+      "passiv-praesens-a2",
+      "perfekt-haben-a2",
+      "perfekt-sein-a2",
+      "praeteritum-basic-a2",
+      "reflexivverben-a2",
+      "relativsaetze-a2",
+      "trennbare-verben-praeteritum-a2",
+      "wechselpraepositionen-a2",
+      "zweiteilige-konnektoren-a2",
+      "adjektivdeklination-b1",
+      "genitiv-b1",
+      "imperativ-b1",
+      "indirekte-rede-b1",
+      "infinitiv-zu-b1",
+      "kausale-konzessive-satze-b1",
+      "konjunktiv-ii-b1",
+      "modalverben-prateritum-b1",
+      "nebensatze-b1",
+      "partizip-als-adjektiv-b1",
+      "passiv-b1",
+      "perfekt-haben-sein-b1",
+      "prateritum-starke-verben-b1",
+      "reflexive-verben-b1",
+      "relativsatze-b1",
+      "temporale-prapositionen-b1",
+      "verben-mit-prapositionen-b1",
+      "wechselprapositionen-b1",
+      "wortbildung-b1",
+      "zweiteilige-konnektoren-b1"
+    ],
+    "disallowedGrammar": [
+      "Futur II",
+      "erweitertes Partizipialattribut",
+      "Nominalstil amtlich",
+      "Konjunktiv I seltener Verben"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 12.4,
+      "maxSentenceWords": 24,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Prosa B1 con Konjunktiv II, indirekte Rede, pasiva y subordinadas encadenadas. Konjunktiv I solo en verbos frecuentes (sei, habe, wolle). Inferencia moderada: exige cruzar dos pasajes separados."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué perdió realmente Herr Brandt con el cambio de horario?",
+      "options": [
+        {
+          "id": "contacto",
+          "text": "El único contacto humano que tenía antes de las nueve de la mañana"
+        },
+        {
+          "id": "asiento",
+          "text": "Su asiento habitual en el vagón de siempre"
+        },
+        {
+          "id": "tren",
+          "text": "La posibilidad de llegar puntual al trabajo"
+        }
+      ],
+      "answer": "contacto",
+      "evidence": "Die Frau hinter der Theke legte es ihm hin, bevor er etwas sagte. Das war das einzige Gespräch seines Tages vor neun Uhr.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo dice sin subrayarlo: era su único intercambio de la mañana."
+        },
+        "incorrect": {
+          "es": "Sigue teniendo tren y asiento; el problema está en tierra, no en el andén. Busca qué ocurría en la panadería."
+        },
+        "strategy": {
+          "es": "Cuando un texto llama a algo «lo único», ahí está el asunto, aunque parezca un detalle."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿A quién dirigió la carta?",
+      "options": [
+        {
+          "id": "panaderia",
+          "text": "A la panadería, no a la compañía ferroviaria"
+        },
+        {
+          "id": "ferrocarril",
+          "text": "A la compañía ferroviaria, para pedir el horario antiguo"
+        },
+        {
+          "id": "ayuntamiento",
+          "text": "Al ayuntamiento de la ciudad"
+        }
+      ],
+      "answer": "panaderia",
+      "evidence": "Dann schrieb er einen Brief. Nicht an die Bahn, sondern an die Bäckerei.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el texto marca el contraste con «nicht… sondern»."
+        },
+        "incorrect": {
+          "es": "El texto descarta expresamente a uno de los destinatarios. Busca la construcción «nicht… sondern»."
+        },
+        "strategy": {
+          "es": "La estructura «nicht A, sondern B» siempre te da la respuesta y el error más probable a la vez."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Escribe que no quiere «sich beschweren». ¿Qué significa?",
+      "options": [
+        {
+          "id": "quejarse",
+          "text": "Presentar una queja"
+        },
+        {
+          "id": "mudarse",
+          "text": "Cambiarse de domicilio"
+        },
+        {
+          "id": "despedirse",
+          "text": "Despedirse de alguien"
+        }
+      ],
+      "answer": "quejarse",
+      "evidence": "Er schrieb, er wolle sich nicht beschweren, er wolle nur mitteilen, dass sich für ihn etwas geändert habe.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y lo contrapone a «mitteilen», simplemente comunicar."
+        },
+        "incorrect": {
+          "es": "La frase opone dos maneras de escribir a un negocio. Fíjate con qué verbo se contrasta."
+        },
+        "strategy": {
+          "es": "Si dos verbos se oponen en la misma frase, el sentido de uno se deduce del otro."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Qué sugiere que la dueña conteste siempre «un poco demasiado rápido»?",
+      "options": [
+        {
+          "id": "carta",
+          "text": "Que el cambio de horario sí tuvo que ver con la carta y prefiere no reconocerlo"
+        },
+        {
+          "id": "molesta",
+          "text": "Que le molesta que los clientes le hagan preguntas"
+        },
+        {
+          "id": "olvido",
+          "text": "Que ya no recuerda bien cuándo cambió el horario"
+        }
+      ],
+      "answer": "carta",
+      "evidence": "Die Besitzerin sagt, das habe nichts mit dem Brief zu tun … und sie sagt es immer ein bisschen zu schnell.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El narrador no lo afirma: describe cómo lo dice y deja que el lector concluya."
+        },
+        "incorrect": {
+          "es": "No hay señales de molestia ni de olvido; ella tiene la respuesta preparada. Fíjate en el adverbio final."
+        },
+        "strategy": {
+          "es": "Cuando el narrador describe la manera de responder y no el contenido, está señalando lo que no se dice."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: Herr Brandt dejó de ir al andén durante las cuatro semanas en que la panadería estaba cerrada.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Er ging trotzdem weiter zum selben Bahnsteig, nur eben früher. Vier Wochen lang stand er dort.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: siguió yendo cuatro semanas, solo que más temprano y mirando el cristal a oscuras."
+        },
+        "incorrect": {
+          "es": "Busca la frase que empieza por «Er ging trotzdem». El adverbio decide la respuesta."
+        },
+        "strategy": {
+          "es": "La palabra «trotzdem» avisa de que lo esperable no ocurrió: léela siempre con atención."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena los hechos del perfil.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Veintidós años con el mismo tren y el mismo panecillo"
+        },
+        {
+          "id": "p2",
+          "text": "En diciembre cambia el horario tres minutos"
+        },
+        {
+          "id": "p3",
+          "text": "Cuatro semanas ante la panadería cerrada"
+        },
+        {
+          "id": "p4",
+          "text": "Desde febrero la panadería abre a las seis"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Zweiundzwanzig Jahre lang nahm Herr Brandt den Zug … Im Dezember wurde der Fahrplan geändert … Vier Wochen lang stand er dort … Seit Februar macht die Bäckerei um sechs Uhr auf.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: rutina, ruptura, espera y desenlace."
+        },
+        "incorrect": {
+          "es": "Guíate por las marcas temporales: «zweiundzwanzig Jahre lang», «im Dezember», «vier Wochen lang», «seit Februar»."
+        },
+        "strategy": {
+          "es": "Cuando cada párrafo abre con una expresión de tiempo, el texto ya viene ordenado."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en alemán sobre una rutina tuya que se rompió por un cambio mínimo. Usa seis verbos fuertes en Präteritum y al menos cuatro preposiciones de tiempo distintas."
+    },
+    "minWords": 70,
+    "maxWords": 130,
+    "hints": [
+      "Jahrelang nahm ich …",
+      "Um … Uhr kam ich …",
+      "Seit … ist alles anders.",
+      "Vor sieben Uhr war niemand da."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán B1: el tren de las 6:12 | WeLearn"
+    },
+    "description": {
+      "es": "Lee un perfil en alemán B1 y practica el Präteritum de los verbos fuertes y las preposiciones de tiempo. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/b1/lectura/der-zug-um-sechs-uhr-zwoelf",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-b1-obwohl-sie-wieder-verloren",
+      "de-b1-ich-freue-mich-auf-nichts"
+    ]
+  }
+}

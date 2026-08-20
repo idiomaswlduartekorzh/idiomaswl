@@ -1,0 +1,479 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-b1-deux-fois-le-meme-roman",
+  "status": "published",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Francés B1"
+  },
+  "slug": "deux-fois-le-meme-roman",
+  "series": {
+    "id": "frances-b1-lectura-10",
+    "episode": 9,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-b1-apprendre-en-se-trompant",
+    "nextExerciseId": "fr-b1-le-club-qui-ne-gagne-jamais"
+  },
+  "classification": {
+    "genre": "crítica cultural",
+    "topic": "adaptaciones al cine",
+    "intent": "learning",
+    "tags": [
+      "frances b1",
+      "lectura",
+      "comparativo y superlativo",
+      "concordancia del participio"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Dos veces la misma novela"
+    },
+    "intro": {
+      "es": "La adaptación más fiel es la peor, y la más libre es la que respeta el libro. Lectura de francés B1 con comparativos y concordancia del participio."
+    },
+    "mission": {
+      "es": "Averigua qué entiende el crítico por «fidelidad», y por qué invierte el juicio habitual."
+    },
+    "targetText": "La même novela a été adaptée deux fois: en 1978 par Lambert, en 2019 par Sow. Les deux films, je les ai revus la semaine dernière à trois jours d’intervalle, et la comparaison m’a surpris plus que je ne l’attendais. La version de 1978 est de loin la plus fidèle. Les dialogues, Lambert les a repris presque mot pour mot. Les décors ont été reconstitués à partir des descriptions du livre, jusqu’à la couleur du papier peint. Aucune scène n’a été ajoutée, aucune n’a été coupée. Et pourtant, c’est le film le moins réussi des deux, et de loin. Le roman repose entièrement sur ce que le narrateur ne dit pas. Il raconte trois cents pages sans jamais nommer ce qui le ronge, et le lecteur le comprend précisément parce que le texte tourne autour. En filmant les phrases, Lambert a filmé la surface. Ses personnages disent exactement les mots du livre, mais un visage qui prononce une phrase à l’écran ne peut pas taire ce que la même phrase taisait sur la page. Sow, elle, a tout changé. Elle a déplacé l’action de la campagne à un immeuble, elle a supprimé deux personnages et elle en a inventé un. Les scènes qu’elle a gardées, elle les a raccourcies de moitié. Le résultat est le plus proche du roman que j’aie jamais vu, et c’est le paradoxe que je voudrais défendre. Sow n’a pas adapté l’histoire: elle a adapté le silence. Là où le livre tourne autour d’une chose, son film cadre systématiquement à côté du personnage qui parle. On regarde une main, une porte, un verre. Une scène résume le procédé. Dans le livre, le frère annonce son départ pendant un repas de famille, et la phrase tient en six mots. Lambert la filme frontalement, avec un gros plan sur celui qui parle. Sow, elle, place la caméra derrière la mère, qui ne se retourne pas. On ne voit jamais le frère. On voit une nuque qui ne bouge pas, et c’est insoutenable. Le procédé est plus voyant que celui de Lambert, et pourtant il est beaucoup moins bavard. Je ne prétends pas que la fidélité littérale soit toujours mauvaise. Sur un roman d’action, elle est souvent la meilleure option. Mais quand un livre est construit sur un non-dit, le copier phrase à phrase est la manière la plus sûre de le trahir, parce qu’on conserve tout sauf ce qui le tenait debout.",
+    "wordCount": 404,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Construir comparativos y superlativos, incluidos los irregulares (meilleur, le moins réussi)."
+      },
+      {
+        "es": "Aplicar la concordancia del participio con el complemento directo antepuesto."
+      },
+      {
+        "es": "Seguir una crítica que defiende una tesis contraria a la intuición."
+      }
+    ],
+    "grammarFocus": [
+      "comparatif-superlatif-b1",
+      "accord-participe-passe-b1",
+      "comparatifs"
+    ],
+    "vocabulary": [
+      {
+        "surface": "décors",
+        "lemma": "décor",
+        "glosses": {
+          "es": "decorados"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "papier peint",
+        "lemma": "papier peint",
+        "glosses": {
+          "es": "papel pintado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ronge",
+        "lemma": "ronger",
+        "glosses": {
+          "es": "corroe, carcome"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "taire",
+        "lemma": "taire",
+        "glosses": {
+          "es": "callar, silenciar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "raccourcies",
+        "lemma": "raccourcir",
+        "glosses": {
+          "es": "acortadas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cadre",
+        "lemma": "cadrer",
+        "glosses": {
+          "es": "encuadra (la cámara)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "voyant",
+        "lemma": "voyant",
+        "glosses": {
+          "es": "llamativo, que se nota"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "bavard",
+        "lemma": "bavard",
+        "glosses": {
+          "es": "hablador, charlatán"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La crítica francesa lleva desde los años cincuenta discutiendo la fidelidad en la adaptación literaria, un debate que arranca con los textos de André Bazin y sigue vivo en las revistas de cine."
+    },
+    "spanishSpeakerNote": {
+      "es": "Fíjate en «Les dialogues, Lambert les a repris» y «Les scènes qu’elle a gardées»: el participio concuerda porque el complemento directo va delante del verbo. Es una regla que el español no tiene y que se olvida constantemente al escribir."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo que desarrolla una idea, cambia de dirección y se cierra; distinguir el hecho de la interpretación; y justificar una inferencia señalando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers",
+      "accord-participe-passe",
+      "cause-consequence",
+      "comparatifs",
+      "conditionnel-present",
+      "connecteurs",
+      "discours-indirect",
+      "dont-relatif",
+      "futur-simple",
+      "gerondif",
+      "imparfait",
+      "negation-avancee",
+      "passe-compose-avoir",
+      "passe-compose-etre",
+      "passe-compose-vs-imparfait",
+      "pronoms-coi",
+      "pronoms-y-en",
+      "si-conditionnel",
+      "subjonctif-present",
+      "superlatifs",
+      "verbes-pronominaux",
+      "accord-participe-passe-b1",
+      "comparatif-superlatif-b1",
+      "conditionnel-present-b1",
+      "connecteurs-logiques-b1",
+      "discours-indirect-b1",
+      "expressions-temporelles-b1",
+      "futur-simple-b1",
+      "gerondif-b1",
+      "hypothese-si-b1",
+      "imperatif-b1",
+      "negation-avancee-b1",
+      "nominalisation-b1",
+      "participe-present-b1",
+      "passe-compose-vs-imparfait-b1",
+      "plus-que-parfait-b1",
+      "pronoms-relatifs-b1",
+      "pronoms-y-en-b1",
+      "questions-indirectes-b1",
+      "subjonctif-present-b1",
+      "voix-passive-b1"
+    ],
+    "disallowedGrammar": [
+      "passé simple",
+      "subjonctif imparfait",
+      "passé antérieur"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 14.4,
+      "maxSentenceWords": 33,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Prosa B1 con plus-que-parfait, voz pasiva y subjuntivo. Sin passé simple. Inferencia moderada: exige cruzar dos pasajes separados."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué tesis defiende el crítico?",
+      "options": [
+        {
+          "id": "silencio",
+          "text": "Que adaptar bien un libro construido sobre un silencio exige traicionar su letra"
+        },
+        {
+          "id": "fidelidad",
+          "text": "Que la adaptación más fiel al texto es siempre la mejor"
+        },
+        {
+          "id": "moderno",
+          "text": "Que las películas recientes son mejores que las antiguas"
+        }
+      ],
+      "answer": "silencio",
+      "evidence": "quand un livre est construit sur un non-dit, le copier phrase à phrase est la manière la plus sûre de le trahir",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y se cuida de acotarlo: sobre una novela de acción, admite que la fidelidad literal suele ser lo mejor."
+        },
+        "incorrect": {
+          "es": "El crítico dice justo lo contrario sobre la fidelidad literal, y no generaliza por épocas. Lee la última frase."
+        },
+        "strategy": {
+          "es": "Cuando un crítico acota su tesis («no pretendo que siempre…»), la versión acotada es la que defiende de verdad."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué hizo Sow con las escenas que conservó del libro?",
+      "options": [
+        {
+          "id": "acortar",
+          "text": "Las acortó a la mitad"
+        },
+        {
+          "id": "alargar",
+          "text": "Las alargó para dar más contexto"
+        },
+        {
+          "id": "identicas",
+          "text": "Las rodó exactamente como estaban escritas"
+        }
+      ],
+      "answer": "acortar",
+      "evidence": "Les scènes qu’elle a gardées, elle les a raccourcies de moitié.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Rodar las escenas tal cual es lo que hizo Lambert, y es lo que el crítico reprocha."
+        },
+        "incorrect": {
+          "es": "Rodar las frases al pie de la letra es lo de Lambert. Busca qué hizo Sow con lo que decidió conservar."
+        },
+        "strategy": {
+          "es": "En una comparación entre dos autores, atribuye cada acción a su autor antes de responder. Es fácil cruzarlos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El crítico dice que el procedimiento de Sow es «moins bavard». ¿Qué quiere decir aquí?",
+      "options": [
+        {
+          "id": "sugiere",
+          "text": "Que explica menos con palabras y sugiere más"
+        },
+        {
+          "id": "silencioso",
+          "text": "Que la película no tiene banda sonora"
+        },
+        {
+          "id": "corta",
+          "text": "Que la película dura menos"
+        }
+      ],
+      "answer": "sugiere",
+      "evidence": "Le procédé est plus voyant que celui de Lambert, et pourtant il est beaucoup moins bavard.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Y el «pourtant» marca la paradoja: es más visible como técnica y sin embargo dice menos en voz alta."
+        },
+        "incorrect": {
+          "es": "No se habla de música ni de duración. La palabra se opone a «voyant» dentro de la misma frase."
+        },
+        "strategy": {
+          "es": "Un adjetivo aplicado a una técnica, no a una persona, casi siempre es figurado. Busca a qué se opone en la frase."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué falla la versión de Lambert pese a ser tan fiel?",
+      "options": [
+        {
+          "id": "rostro",
+          "text": "Porque un actor que pronuncia la frase no puede callar lo que la página callaba"
+        },
+        {
+          "id": "presupuesto",
+          "text": "Porque no tuvo presupuesto para buenos decorados"
+        },
+        {
+          "id": "actores",
+          "text": "Porque eligió actores poco conocidos"
+        }
+      ],
+      "answer": "rostro",
+      "evidence": "un visage qui prononce une phrase à l’écran ne peut pas taire ce que la même phrase taisait sur la page",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Es un argumento sobre la naturaleza del medio, no sobre la calidad de la ejecución."
+        },
+        "incorrect": {
+          "es": "El texto elogia los decorados, reconstruidos hasta el papel pintado, y no menciona a los actores. Busca la frase sobre «un visage»."
+        },
+        "strategy": {
+          "es": "Si un texto elogia todos los medios de una obra y aun así la juzga fallida, la causa está en el planteamiento."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el crítico sostiene que la fidelidad literal es siempre un error al adaptar un libro.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Je ne prétends pas que la fidélité littérale soit toujours mauvaise. Sur un roman d’action, elle est souvent la meilleure option.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: acota su tesis expresamente y concede que en una novela de acción la fidelidad suele ser lo mejor."
+        },
+        "incorrect": {
+          "es": "El penúltimo bloque del texto matiza justamente esa idea. Busca «Je ne prétends pas que»."
+        },
+        "strategy": {
+          "es": "Una tesis fuerte suele venir con una excepción declarada. Buscarla evita atribuir al autor más de lo que dice."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "¿Qué actitud adopta el crítico al presentar su conclusión?",
+      "options": [
+        {
+          "id": "argumenta",
+          "text": "La presenta como una paradoja que asume defender y razona"
+        },
+        {
+          "id": "seguro",
+          "text": "La presenta como un hecho evidente que no admite discusión"
+        },
+        {
+          "id": "duda",
+          "text": "La presenta con dudas, sin decidirse entre las dos películas"
+        }
+      ],
+      "answer": "argumenta",
+      "evidence": "c’est le paradoxe que je voudrais défendre",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Usa la palabra «paradoxe» y el condicional «je voudrais»: sabe que su juicio va contra la intuición."
+        },
+        "incorrect": {
+          "es": "No hay dudas —su juicio es nítido— pero tampoco lo presenta como obvio. Fíjate en la palabra «paradoxe»."
+        },
+        "strategy": {
+          "es": "Cuando un autor llama «paradoja» a su propia tesis, está avisando de que va contracorriente y de que la va a razonar."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Compara en 8–10 frases en francés dos versiones de una misma historia (libro y película, dos canciones, dos series). Usa tres comparativos, dos superlativos y una concordancia del participio con el complemento delante."
+    },
+    "minWords": 70,
+    "maxWords": 130,
+    "hints": [
+      "La version de … est la plus…",
+      "Les scènes qu’il a gardées, il les a…",
+      "Et pourtant, c’est le moins…",
+      "Je ne prétends pas que…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés B1: Dos veces la misma novela | WeLearn"
+    },
+    "description": {
+      "es": "Lee una crítica cultural en francés B1 y practica el comparativo, el superlativo y la concordancia del participio pasado. Con seis preguntas."
+    },
+    "canonicalPath": "/practica/frances/b1/lectura/deux-fois-le-meme-roman",
+    "indexable": true,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-b1-apprendre-en-se-trompant",
+      "fr-b1-le-club-qui-ne-gagne-jamais"
+    ]
+  }
+}

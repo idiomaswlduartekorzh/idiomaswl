@@ -142,7 +142,7 @@ export default function Task2LegoGuide() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(230px, 1fr))' }}>
           {LEGO_BLOCKS.map((block) => (
             <article key={block.name} style={{ padding: '0.95rem', borderRight: '1px solid var(--line-soft)', borderBottom: '1px solid var(--line-soft)' }}>
-              <p style={{ margin: '0 0 0.3rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontWeight: 900, fontSize: '0.72rem' }}>
+              <p style={{ margin: '0 0 0.3rem', color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)', fontWeight: 900, fontSize: '0.72rem' }}>
                 BLOCK {block.n}
               </p>
               <h3 style={{ margin: '0 0 0.35rem', fontSize: '0.96rem' }}>{block.name}</h3>
@@ -150,7 +150,7 @@ export default function Task2LegoGuide() {
               <p style={{ margin: '0 0 0.55rem', color: 'var(--muted)', lineHeight: 1.45, fontSize: '0.76rem' }}>
                 <strong>Output:</strong> {block.output}
               </p>
-              <Link href={block.route} style={{ color: '#0f3d8c', fontWeight: 800, fontSize: '0.8rem', textDecoration: 'none' }}>
+              <Link href={block.route} style={{ color: 'var(--wl-on-panel-link, #0f3d8c)', fontWeight: 800, fontSize: '0.8rem', textDecoration: 'none' }}>
                 Practise →
               </Link>
             </article>
@@ -163,7 +163,7 @@ export default function Task2LegoGuide() {
           <h3 style={{ margin: '0 0 0.55rem', fontSize: '0.98rem' }}>Conjunctions and linking phrases by function</h3>
           {LINKING_FUNCTIONS.map(([fn, words]) => (
             <p key={fn} style={{ margin: '0 0 0.35rem', color: 'var(--ink-2)', fontSize: '0.82rem', lineHeight: 1.45 }}>
-              <strong>{fn}:</strong> <span style={{ fontFamily: 'var(--mono)', color: '#0f3d8c' }}>{words}</span>
+              <strong>{fn}:</strong> <span style={{ fontFamily: 'var(--mono)', color: 'var(--wl-on-panel-link, #0f3d8c)' }}>{words}</span>
             </p>
           ))}
         </article>
@@ -171,7 +171,7 @@ export default function Task2LegoGuide() {
           <h3 style={{ margin: '0 0 0.55rem', fontSize: '0.98rem' }}>Syllogism applied to a body paragraph</h3>
           {SYLLOGISM_MOVES.map((move) => (
             <div key={move.label} style={{ marginBottom: '0.55rem' }}>
-              <p style={{ margin: '0 0 0.2rem', color: '#7c3aed', fontFamily: 'var(--mono)', fontWeight: 800, fontSize: '0.76rem' }}>{move.label}</p>
+              <p style={{ margin: '0 0 0.2rem', color: 'var(--wl-on-panel-purple, #7c3aed)', fontFamily: 'var(--mono)', fontWeight: 800, fontSize: '0.76rem' }}>{move.label}</p>
               <p style={{ margin: 0, color: 'var(--ink-2)', lineHeight: 1.5, fontSize: '0.82rem' }}>{move.example}</p>
             </div>
           ))}
@@ -180,7 +180,7 @@ export default function Task2LegoGuide() {
           <h3 style={{ margin: '0 0 0.55rem', fontSize: '0.98rem' }}>Sentence types for building arguments</h3>
           {SENTENCE_TYPES.map((sentence) => (
             <div key={sentence.label} style={{ marginBottom: '0.55rem' }}>
-              <p style={{ margin: '0 0 0.2rem', color: '#d97706', fontFamily: 'var(--mono)', fontWeight: 800, fontSize: '0.76rem' }}>{sentence.label}</p>
+              <p style={{ margin: '0 0 0.2rem', color: 'var(--wl-on-panel-warn, #d97706)', fontFamily: 'var(--mono)', fontWeight: 800, fontSize: '0.76rem' }}>{sentence.label}</p>
               <p style={{ margin: '0 0 0.18rem', color: 'var(--muted)', lineHeight: 1.45, fontSize: '0.78rem' }}>{sentence.function}</p>
               <p style={{ margin: 0, color: 'var(--ink-2)', lineHeight: 1.5, fontSize: '0.82rem' }}>{sentence.example}</p>
             </div>

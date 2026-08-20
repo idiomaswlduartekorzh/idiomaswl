@@ -10,6 +10,8 @@ import { ReadingRecorder } from './ReadingRecorder'
 import { getScriptCapabilities, normalizeReadingLookup, tokenizeReadingText } from '@/lib/reading/adapters'
 import { readingExercisePath, readingHubPath } from '@/lib/reading/routes'
 import { localized } from '@/lib/reading/validate'
+import PdfDownloadButton from '@/components/practica/PdfDownloadButton'
+import { canRenderPdf } from '@/lib/pdf/languages'
 import type { ReadingExercise, ReadingQuestion, TutorLocale } from '@/lib/reading/types'
 import styles from './reading.module.css'
 
@@ -205,6 +207,13 @@ function OrderingQuestion({
   )
 }
 
+// Los códigos del esquema de lectura ('en', 'pt'…) no son los slugs de las
+// rutas ('ingles', 'portugues'), que es lo que entiende canRenderPdf.
+const READING_LANG_SLUG: Record<string, string> = {
+  en: 'ingles', fr: 'frances', it: 'italiano', de: 'aleman',
+  ru: 'ruso', ja: 'japones', ko: 'coreano', pt: 'portugues',
+}
+
 export function ReadingLesson({ exercise, locale, siblings = [] }: { exercise: ReadingExercise; locale: TutorLocale; siblings?: ReadingExercise[] }) {
   const copy = COPY[locale]
   const [stage, setStage] = useState(0)
@@ -346,7 +355,7 @@ export function ReadingLesson({ exercise, locale, siblings = [] }: { exercise: R
       <article className={`listen-work ${styles.lessonWork}`}>
         <Link href={hubHref} className="listen-back"><ArrowLeft size={14} /> {copy.back}</Link>
         <p className="eyebrow"><span className="ink-line" />{copy.eyebrowLabel} · {exercise.level.cefr} · {copy.textWord} {currentIndex + 1} {copy.of} {siblings.length || 1}</p>
-        <h1>📖 {localized(exercise.content.title, locale)}</h1>
+        <h1>{localized(exercise.content.title, locale)}</h1>
         <p className="listen-objective">{localized(exercise.content.intro, locale)}</p>
         <div className="listen-tags">
           <span>{exercise.classification.topic}</span>
@@ -500,6 +509,19 @@ export function ReadingLesson({ exercise, locale, siblings = [] }: { exercise: R
       </section>
 
       {exercise.status !== 'published' && <aside className={styles.reviewNotice}><CircleHelp size={18} /><span>{copy.reviewRequired}</span></aside>}
+      {canRenderPdf(READING_LANG_SLUG[exercise.language] ?? '') && (
+        <div className="topic-download no-print">
+          <PdfDownloadButton
+            label="Descargar esta lectura en PDF"
+            generate={async () => {
+              const { generateReadingPdf } = await import('@/lib/pdf/generateReadingPdf')
+              await generateReadingPdf(exercise, locale)
+            }}
+          />
+          <span>El texto, el glosario, las preguntas y las soluciones con su evidencia.</span>
+        </div>
+      )}
+
       <div className={styles.lessonFooterLinks}>
         <Link className={styles.nextLink} href={hubHref}>{copy.back}<ArrowRight size={17} /></Link>
         {nextSibling && (

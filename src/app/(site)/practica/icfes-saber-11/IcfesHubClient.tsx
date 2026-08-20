@@ -52,6 +52,7 @@ function ToolCard({
       <div className="wl-catalog-card__body">
         <div className="wl-catalog-card__top">
           <div
+            className="icfes-theme-accent-surface"
             style={{
               width: 44,
               height: 44,
@@ -69,7 +70,7 @@ function ToolCard({
             Disponible
           </span>
         </div>
-        <p style={{ margin: '0 0 0.25rem', color, fontFamily: 'var(--mono)', fontWeight: 800, fontSize: '0.68rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+        <p className="icfes-theme-accent-text" style={{ margin: '0 0 0.25rem', color, fontFamily: 'var(--mono)', fontWeight: 800, fontSize: '0.68rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
           {eyebrow}
         </p>
         <h2 className="wl-catalog-card__name">{title}</h2>
@@ -192,10 +193,10 @@ export default function IcfesHubClient({ embedded = false }: { embedded?: boolea
             </p>
           </div>
           <div style={{ display: 'flex', gap: '0.45rem', flexWrap: 'wrap', justifyContent: 'flex-end' }}>
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', padding: '0.42rem 0.72rem', borderRadius: 999, background: 'rgba(220,38,38,0.08)', color: ICFES_COLOR, border: '1px solid rgba(220,38,38,0.22)', fontFamily: 'var(--mono)', fontWeight: 800, fontSize: '0.72rem' }}>
+            <span className="icfes-theme-chip" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', padding: '0.42rem 0.72rem', borderRadius: 999, background: 'rgba(220,38,38,0.08)', color: ICFES_COLOR, border: '1px solid rgba(220,38,38,0.22)', fontFamily: 'var(--mono)', fontWeight: 800, fontSize: '0.72rem' }}>
               <Target size={14} /> Pre A1-B1
             </span>
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', padding: '0.42rem 0.72rem', borderRadius: 999, background: 'rgba(15,61,140,0.08)', color: SMART_COLOR, border: '1px solid rgba(15,61,140,0.2)', fontFamily: 'var(--mono)', fontWeight: 800, fontSize: '0.72rem' }}>
+            <span className="icfes-theme-chip" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', padding: '0.42rem 0.72rem', borderRadius: 999, background: 'rgba(15,61,140,0.08)', color: SMART_COLOR, border: '1px solid rgba(15,61,140,0.2)', fontFamily: 'var(--mono)', fontWeight: 800, fontSize: '0.72rem' }}>
               <BookOpenCheck size={14} /> {ICFES_SMART_BANK_SUMMARY.total} preguntas
             </span>
           </div>
@@ -206,10 +207,10 @@ export default function IcfesHubClient({ embedded = false }: { embedded?: boolea
             ¿Quieres el recorrido completo? Entrena las 7 partes con 55 preguntas y explicación inmediata.
           </span>
           <div style={{ display: 'flex', gap: '.8rem', alignItems: 'center', flexWrap: 'wrap' }}>
-            <Link href="/practica/icfes-saber-11/simulacro-guiado" style={{ color: ICFES_COLOR, fontSize: '0.82rem', fontFamily: 'var(--mono)', fontWeight: 800, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
+            <Link href="/practica/icfes-saber-11/simulacro-guiado" className="icfes-theme-accent-text" style={{ color: ICFES_COLOR, fontSize: '0.82rem', fontFamily: 'var(--mono)', fontWeight: 800, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
               Abrir simulacro guiado <ArrowRight size={14} />
             </Link>
-            <Link href="/practica/icfes-saber-11/examenes" style={{ color: SMART_COLOR, fontSize: '0.78rem', fontFamily: 'var(--mono)', fontWeight: 750, textDecoration: 'none' }}>Ver cuadernillos divulgados</Link>
+            <Link href="/practica/icfes-saber-11/examenes" className="icfes-theme-accent-text" style={{ color: SMART_COLOR, fontSize: '0.78rem', fontFamily: 'var(--mono)', fontWeight: 750, textDecoration: 'none' }}>Ver cuadernillos divulgados</Link>
           </div>
         </div>
 

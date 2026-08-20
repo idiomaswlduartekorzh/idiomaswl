@@ -4,6 +4,7 @@ import { Suspense, useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 import type { IntegratedWritingExercise, RequiredWritingTerm } from '@/data/practica/writing-integrated'
+import PdfDownloadButton from '@/components/practica/PdfDownloadButton'
 
 type Stage = 'select' | 'read' | 'prepare' | 'write' | 'review'
 
@@ -176,6 +177,18 @@ function IntegratedWritingPracticeContent({ exercises }: { exercises: Integrated
             <strong>{usedTerms.length}/{exercise.requiredCount}</strong>
             <span>mínimo de vocabulario</span>
           </div>
+        </div>
+
+        <div className="topic-download no-print">
+          <PdfDownloadButton
+            color={exercise.color}
+            label="Descargar este ejercicio en PDF"
+            generate={async () => {
+              const { generateWritingPdf } = await import('@/lib/pdf/generateWritingPdf')
+              await generateWritingPdf(exercise)
+            }}
+          />
+          <span>La lectura, las palabras obligatorias, pauta para escribir a mano y un modelo al final.</span>
         </div>
 
         <ol className="writing-integrated__steps" aria-label="Progreso del ejercicio">

@@ -1,8 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
 import Script from "next/script";
+import { Suspense } from "react";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import RouteThemeScope from "@/components/RouteThemeScope";
 
 const GTM_ID = 'GTM-57NXLPZV';
 
@@ -88,15 +90,17 @@ export const viewport: Viewport = {
   ],
 };
 
-// Blocking script — runs before paint to avoid flash of wrong theme
+// Blocking script — runs before paint to avoid flash of wrong theme.
+// Dark mode is opt-in: an unset preference resolves to light rather than
+// following the OS. See the note in ThemeProvider for why.
 const themeScript = `
 (function(){
   try {
-    var stored = localStorage.getItem('wl-theme');
-    var resolved = stored === 'dark' ? 'dark'
-      : stored === 'light' ? 'light'
-      : window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    var resolved = localStorage.getItem('wl-theme') === 'dark' ? 'dark' : 'light';
     document.documentElement.setAttribute('data-theme', resolved);
+    var pathname = window.location.pathname;
+    var surface = pathname === '/' || pathname === '/home' ? 'home' : 'editorial';
+    document.documentElement.setAttribute('data-wl-surface', surface);
   } catch(e) {}
 })();
 `;
@@ -110,6 +114,9 @@ export default function RootLayout({
     <html
       lang="es"
       suppressHydrationWarning
+      // Static light default so the OS preference never leaks through before
+      // (or without) the blocking script below; it upgrades to dark on opt-in.
+      data-theme="light"
       className={`${geistSans.variable} h-full antialiased`}
     >
       <head>
@@ -122,6 +129,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://wa.me" />
       </head>
       <body className="min-h-full flex flex-col">
+        <Suspense fallback={null}><RouteThemeScope /></Suspense>
         {/* Google Tag Manager (noscript) — immediately after <body> open */}
         {CARGAR_GTM && (
           <noscript>

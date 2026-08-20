@@ -1,0 +1,441 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-a1-le-marche-du-samedi",
+  "status": "published",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Francés A1"
+  },
+  "slug": "le-marche-du-samedi",
+  "series": {
+    "id": "frances-a1-lectura-10",
+    "episode": 2,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-a1-le-chat-du-troisieme-etage",
+    "nextExerciseId": "fr-a1-trois-messages-et-un-retard"
+  },
+  "classification": {
+    "genre": "cartel informativo",
+    "topic": "mercado semanal",
+    "intent": "learning",
+    "tags": [
+      "frances a1",
+      "lectura",
+      "imperativo",
+      "plural de los nombres"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El mercado del sábado"
+    },
+    "intro": {
+      "es": "Un cartel de mercado con normas, horarios y una advertencia sobre el aparcamiento. Lectura de francés A1 centrada en el imperativo."
+    },
+    "mission": {
+      "es": "Averigua qué tienes que llevar de casa y qué no debes hacer con el coche."
+    },
+    "targetText": "MARCHÉ DE LA PLACE VERTE — TOUS LES SAMEDIS. Chaque samedi, plus de trente vendeurs installent leurs tables à six heures du matin. Venez tôt! Les meilleurs fruits partent avant neuf heures. Nos stands: légumes, fromages, poissons, pains et fleurs. Le stand des olives est nouveau. Goûtez avant d’acheter, c’est gratuit. Apportez vos sacs. Nous ne donnons pas de sacs en plastique. Ne garez pas votre voiture devant les stands. Le parking est derrière l’école, à deux minutes. Les prix sont sur les ardoises. Si un prix n’est pas clair, demandez au vendeur. Attention: le marché ferme à treize heures trente. Après, la place devient un terrain de football pour les enfants du quartier. À samedi!",
+    "wordCount": 115,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Entender instrucciones directas en imperativo: venez, apportez, ne garez pas."
+      },
+      {
+        "es": "Distinguir singular y plural en los nombres: le stand / les stands, un sac / des sacs."
+      },
+      {
+        "es": "Localizar datos prácticos (hora, lugar, precio) dentro de un texto con muchos números."
+      }
+    ],
+    "grammarFocus": [
+      "imperatif",
+      "articles",
+      "pluriel-noms"
+    ],
+    "vocabulary": [
+      {
+        "surface": "stands",
+        "lemma": "stand",
+        "glosses": {
+          "es": "puestos (de un mercado)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ardoises",
+        "lemma": "ardoise",
+        "glosses": {
+          "es": "pizarras; aquí, las pizarritas donde se escriben los precios"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "garez",
+        "lemma": "garer",
+        "glosses": {
+          "es": "aparcáis, estacionáis (el coche)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sacs",
+        "lemma": "sac",
+        "glosses": {
+          "es": "bolsas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vendeur",
+        "lemma": "vendeur",
+        "glosses": {
+          "es": "vendedor"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gratuit",
+        "lemma": "gratuit",
+        "glosses": {
+          "es": "gratis"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "quartier",
+        "lemma": "quartier",
+        "glosses": {
+          "es": "barrio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fleurs",
+        "lemma": "fleur",
+        "glosses": {
+          "es": "flores"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El «marché» de barrio sigue siendo una institución semanal en Francia: abre temprano, cierra a mediodía y la plaza vuelve a ser plaza el resto del día."
+    },
+    "spanishSpeakerNote": {
+      "es": "El imperativo francés en negativo abraza al verbo igual que la negación normal: «Ne garez pas». En español decimos «No aparque»; en francés hacen falta las dos piezas, ne… pas, con el verbo en medio."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto corto en presente sobre la vida cotidiana, localizar quién hace cada cosa y justificar tu respuesta con una frase del texto."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers"
+    ],
+    "disallowedGrammar": [
+      "passé composé",
+      "imparfait",
+      "subjonctif",
+      "conditionnel",
+      "voix passive"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 7.2,
+      "maxSentenceWords": 14,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Texto original en presente. Sin tiempos compuestos. Inferencia limitada a unir dos datos explícitos."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué tipo de texto es y para qué sirve?",
+      "options": [
+        {
+          "id": "normas",
+          "text": "Un cartel que informa de horarios y da normas a los clientes"
+        },
+        {
+          "id": "receta",
+          "text": "Una receta con productos del mercado"
+        },
+        {
+          "id": "carta",
+          "text": "Una carta de un vendedor a sus clientes"
+        }
+      ],
+      "answer": "normas",
+      "evidence": "MARCHÉ DE LA PLACE VERTE — TOUS LES SAMEDIS",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Reconoces un cartel por la forma: título en mayúsculas, datos sueltos y verbos que dan órdenes."
+        },
+        "incorrect": {
+          "es": "Fíjate en los verbos: venez, goûtez, apportez, ne garez pas. Nadie escribe así una carta ni una receta de restaurante."
+        },
+        "strategy": {
+          "es": "Antes de leer el detalle, mira la forma del texto. El tipo de texto ya te dice para qué está escrito."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué tienen que llevar los clientes desde casa?",
+      "options": [
+        {
+          "id": "sacs",
+          "text": "Sus propias bolsas"
+        },
+        {
+          "id": "argent",
+          "text": "Dinero en efectivo, porque no hay tarjeta"
+        },
+        {
+          "id": "ardoise",
+          "text": "Una pizarra para apuntar los precios"
+        }
+      ],
+      "answer": "sacs",
+      "evidence": "Apportez vos sacs. Nous ne donnons pas de sacs en plastique.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Y el cartel explica por qué: allí no dan bolsas de plástico."
+        },
+        "incorrect": {
+          "es": "Busca el verbo «apportez», que significa «traed». Justo después dice qué es lo que el mercado no da."
+        },
+        "strategy": {
+          "es": "Los carteles suelen dar la orden y la razón en frases seguidas. Si encuentras la orden, la explicación está al lado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El cartel dice «Les prix sont sur les ardoises». ¿Qué es una «ardoise» aquí?",
+      "options": [
+        {
+          "id": "pizarra",
+          "text": "Una pizarrita donde se escribe el precio a mano"
+        },
+        {
+          "id": "caja",
+          "text": "La caja donde se paga"
+        },
+        {
+          "id": "balanza",
+          "text": "La balanza que pesa la fruta"
+        }
+      ],
+      "answer": "pizarra",
+      "evidence": "Les prix sont sur les ardoises.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. En los mercados franceses cada puesto tiene su pizarrita con el precio escrito con tiza."
+        },
+        "incorrect": {
+          "es": "La preposición te ayuda: los precios están «sur» —encima de— las ardoises. Eso descarta la caja y la balanza."
+        },
+        "strategy": {
+          "es": "Cuando no conozcas un objeto, mira la preposición que lo acompaña. «Sur» te dice que es una superficie donde se escribe algo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "El cartel insiste en llegar temprano. ¿Por qué conviene llegar antes de las nueve?",
+      "options": [
+        {
+          "id": "fruits",
+          "text": "Porque la mejor fruta se acaba pronto"
+        },
+        {
+          "id": "prix",
+          "text": "Porque antes de las nueve todo es más barato"
+        },
+        {
+          "id": "parking",
+          "text": "Porque después de las nueve el parking está cerrado"
+        }
+      ],
+      "answer": "fruits",
+      "evidence": "Venez tôt! Les meilleurs fruits partent avant neuf heures.",
+      "feedback": {
+        "correct": {
+          "es": "Justo. «Partent» aquí no es que se vayan de viaje: es que se venden y desaparecen."
+        },
+        "incorrect": {
+          "es": "El cartel no dice nada de descuentos por la mañana ni de cerrar el parking. Relee la frase que va justo después de «Venez tôt»."
+        },
+        "strategy": {
+          "es": "Un verbo corriente puede tener un sentido distinto según el sujeto. «Partir» con fruta significa que se agota."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el mercado entrega bolsas de plástico gratis a quien las necesite.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Nous ne donnons pas de sacs en plastique.",
+      "feedback": {
+        "correct": {
+          "es": "Falso. Lo gratis son las aceitunas para probar, no las bolsas. Es una trampa fácil de morder si lees por encima."
+        },
+        "incorrect": {
+          "es": "La palabra «gratuit» aparece en el texto, pero se refiere a probar las aceitunas. Busca qué dice el cartel sobre los «sacs en plastique»."
+        },
+        "strategy": {
+          "es": "Cuando una palabra llamativa como «gratis» aparece en el texto, comprueba a qué se refiere exactamente antes de darla por buena."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué está la última frase, «Après, la place devient un terrain de football pour les enfants du quartier»?",
+      "options": [
+        {
+          "id": "explicar",
+          "text": "Para explicar por qué el mercado cierra a esa hora y no más tarde"
+        },
+        {
+          "id": "invitar",
+          "text": "Para invitar a los clientes a jugar al fútbol"
+        },
+        {
+          "id": "avisar",
+          "text": "Para avisar de que hay un partido oficial ese día"
+        }
+      ],
+      "answer": "explicar",
+      "evidence": "le marché ferme à treize heures trente. Après, la place devient un terrain de football",
+      "feedback": {
+        "correct": {
+          "es": "Sí. No es un dato suelto: justifica el horario y, de paso, cuenta algo del barrio."
+        },
+        "incorrect": {
+          "es": "La frase va justo después del horario de cierre. Pregúntate qué relación tiene con la frase anterior."
+        },
+        "strategy": {
+          "es": "La última frase de un texto rara vez sobra. Suele cerrar, justificar o dejar una imagen. Pregúntate cuál de las tres."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe un cartel corto de 4–6 frases para un mercado, una tienda o un evento de tu ciudad. Usa al menos tres imperativos, uno de ellos en negativo (ne… pas)."
+    },
+    "minWords": 30,
+    "maxWords": 70,
+    "hints": [
+      "Venez…",
+      "Apportez…",
+      "Ne… pas…",
+      "Le marché ferme à…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés A1: El mercado del sábado | WeLearn"
+    },
+    "description": {
+      "es": "Lee un cartel real de mercado en francés A1 y practica el imperativo, los artículos y el plural. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/frances/a1/lectura/le-marche-du-samedi",
+    "indexable": true,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-a1-le-chat-du-troisieme-etage",
+      "fr-a1-trois-messages-et-un-retard"
+    ]
+  }
+}

@@ -236,9 +236,9 @@ export default function ReactiveInteraction007({ onComplete }: Props) {
 
         <div style={{ display: 'flex', gap: 8, justifyContent: 'center', flexWrap: 'wrap' }}>
           {[
-            { badge: '⭐', label: 'Espontáneo', color: '#16a34a', bg: 'rgba(34,197,94,0.1)', border: 'rgba(34,197,94,0.3)' },
-            { badge: '💛', label: 'Con ayuda',  color: '#b45309', bg: 'rgba(245,158,11,0.1)', border: 'rgba(245,158,11,0.35)' },
-            { badge: '🔄', label: 'Reintento',  color: '#dc2626', bg: 'rgba(239,68,68,0.08)', border: 'rgba(239,68,68,0.35)' },
+            { badge: '⭐', label: 'Espontáneo', color: 'var(--wl-on-panel-ok, #16a34a)', bg: 'rgba(34,197,94,0.1)', border: 'rgba(34,197,94,0.3)' },
+            { badge: '💛', label: 'Con ayuda',  color: 'var(--wl-on-panel-warn, #b45309)', bg: 'rgba(245,158,11,0.1)', border: 'rgba(245,158,11,0.35)' },
+            { badge: '🔄', label: 'Reintento',  color: 'var(--wl-on-panel-alert, #dc2626)', bg: 'rgba(239,68,68,0.08)', border: 'rgba(239,68,68,0.35)' },
           ].map(({ badge, label, color, bg, border }) => (
             <span key={label} style={{ fontSize: 12, fontWeight: 700, padding: '5px 13px', borderRadius: 100, background: bg, border: `1px solid ${border}`, color }}>
               {badge} {label}
@@ -247,7 +247,7 @@ export default function ReactiveInteraction007({ onComplete }: Props) {
         </div>
 
         <button type="button" onClick={startRoleplay}
-          style={{ padding: '14px', borderRadius: 14, cursor: 'pointer', width: '100%', background: 'rgba(108,99,255,0.14)', border: '1px solid rgba(108,99,255,0.4)', fontSize: 14, fontWeight: 700, color: '#6c63ff' }}>
+          style={{ padding: '14px', borderRadius: 14, cursor: 'pointer', width: '100%', background: 'rgba(108,99,255,0.14)', border: '1px solid rgba(108,99,255,0.4)', fontSize: 14, fontWeight: 700, color: 'var(--wl-on-panel-link, #6c63ff)' }}>
           Empezar conversación →
         </button>
       </div>
@@ -305,7 +305,7 @@ export default function ReactiveInteraction007({ onComplete }: Props) {
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 8, width: '100%' }}>
           <button type="button" onClick={onComplete}
-            style={{ padding: '13px', borderRadius: 13, cursor: 'pointer', width: '100%', background: 'rgba(108,99,255,0.14)', border: '1px solid rgba(108,99,255,0.4)', fontSize: 14, fontWeight: 700, color: '#6c63ff' }}>
+            style={{ padding: '13px', borderRadius: 13, cursor: 'pointer', width: '100%', background: 'rgba(108,99,255,0.14)', border: '1px solid rgba(108,99,255,0.4)', fontSize: 14, fontWeight: 700, color: 'var(--wl-on-panel-link, #6c63ff)' }}>
             Siguiente etapa →
           </button>
           <button type="button" onClick={replay}
@@ -338,7 +338,7 @@ export default function ReactiveInteraction007({ onComplete }: Props) {
             }} />
           ))}
         </div>
-        <p style={{ margin: 0, fontSize: 11, fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6c63ff' }}>
+        <p style={{ margin: 0, fontSize: 11, fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--wl-on-panel-link, #6c63ff)' }}>
           🎭 Tu turno · {turnIdx + 1} de {TURNS.length}
         </p>
       </div>
@@ -376,7 +376,7 @@ export default function ReactiveInteraction007({ onComplete }: Props) {
             <p style={{ margin: 0, fontSize: 11, color: 'var(--muted-foreground)' }}>{turn.translation}</p>
             {turn.audio && (
               <button type="button" onClick={() => playAudio(turn.audio!)}
-                style={{ marginTop: 2, padding: '4px 11px', borderRadius: 100, cursor: 'pointer', alignSelf: 'flex-start', background: 'rgba(108,99,255,0.1)', border: '1px solid rgba(108,99,255,0.3)', fontSize: 11, fontWeight: 600, color: '#6c63ff', display: 'inline-flex', alignItems: 'center', gap: 4 }}>
+                style={{ marginTop: 2, padding: '4px 11px', borderRadius: 100, cursor: 'pointer', alignSelf: 'flex-start', background: 'rgba(108,99,255,0.1)', border: '1px solid rgba(108,99,255,0.3)', fontSize: 11, fontWeight: 600, color: 'var(--wl-on-panel-link, #6c63ff)', display: 'inline-flex', alignItems: 'center', gap: 4 }}>
                 🔊
               </button>
             )}
@@ -390,12 +390,12 @@ export default function ReactiveInteraction007({ onComplete }: Props) {
           {/* Hint toggle */}
           <div>
             <button type="button" onClick={() => setShowHint(v => !v)}
-              style={{ padding: '4px 11px', borderRadius: 100, cursor: 'pointer', background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.28)', fontSize: 11, fontWeight: 700, color: '#d97706' }}>
+              style={{ padding: '4px 11px', borderRadius: 100, cursor: 'pointer', background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.28)', fontSize: 11, fontWeight: 700, color: 'var(--wl-on-panel-warn, #d97706)' }}>
               💡 {showHint ? 'Ocultar pista' : 'Ver pista'}
             </button>
             {showHint && (
               <div style={{ marginTop: 6, padding: '8px 12px', borderRadius: 10, background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.25)' }}>
-                <p style={{ margin: 0, fontSize: 12, color: '#92400e' }}>💡 {turn?.hint}</p>
+                <p style={{ margin: 0, fontSize: 12, color: 'var(--wl-on-panel-warn, #92400e)' }}>💡 {turn?.hint}</p>
               </div>
             )}
           </div>
@@ -445,7 +445,7 @@ export default function ReactiveInteraction007({ onComplete }: Props) {
 
             {/* Special feedback for 좋아요 trap in turn 3 */}
             {turn && usedJoayoInstead(turn.id, inputVal) && (
-              <p style={{ margin: '0 0 4px', fontSize: 12.5, color: '#b45309', lineHeight: 1.6 }}>
+              <p style={{ margin: '0 0 4px', fontSize: 12.5, color: 'var(--wl-on-panel-warn, #b45309)', lineHeight: 1.6 }}>
                 Casi — en este contexto usa 좋아해요 para expresar que algo te gusta.
               </p>
             )}
@@ -467,7 +467,7 @@ export default function ReactiveInteraction007({ onComplete }: Props) {
           {submitted === 'wrong' && !retryUsed ? (
             <div style={{ display: 'flex', gap: 8 }}>
               <button type="button" onClick={retry}
-                style={{ flex: 1, padding: '11px', borderRadius: 12, cursor: 'pointer', background: 'rgba(239,68,68,0.09)', border: '1px solid rgba(239,68,68,0.35)', fontSize: 12, fontWeight: 700, color: '#dc2626' }}>
+                style={{ flex: 1, padding: '11px', borderRadius: 12, cursor: 'pointer', background: 'rgba(239,68,68,0.09)', border: '1px solid rgba(239,68,68,0.35)', fontSize: 12, fontWeight: 700, color: 'var(--wl-on-panel-alert, #dc2626)' }}>
                 🔄 Reintentar
               </button>
               <button type="button" onClick={() => advance(submitted, inputVal)}
@@ -477,7 +477,7 @@ export default function ReactiveInteraction007({ onComplete }: Props) {
             </div>
           ) : (
             <button type="button" onClick={() => advance(submitted, inputVal)}
-              style={{ padding: '12px', borderRadius: 13, cursor: 'pointer', width: '100%', background: 'rgba(108,99,255,0.14)', border: '1px solid rgba(108,99,255,0.4)', fontSize: 13, fontWeight: 700, color: '#6c63ff' }}>
+              style={{ padding: '12px', borderRadius: 13, cursor: 'pointer', width: '100%', background: 'rgba(108,99,255,0.14)', border: '1px solid rgba(108,99,255,0.4)', fontSize: 13, fontWeight: 700, color: 'var(--wl-on-panel-link, #6c63ff)' }}>
               {turnIdx === TURNS.length - 1 ? '🎭 Ver resultado →' : 'Siguiente →'}
             </button>
           )}

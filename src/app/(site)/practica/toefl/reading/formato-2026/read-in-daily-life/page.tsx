@@ -129,7 +129,7 @@ export default function Page() {
               {TEXTS.flatMap((text) =>
                 text.questions.map((item, index) => (
                   <article key={item.id} style={{ display: 'grid', gridTemplateColumns: '24px 1fr', gap: '0.6rem', alignItems: 'start' }}>
-                    <CheckCircle2 size={18} style={{ color: '#047857', marginTop: 2 }} />
+                    <CheckCircle2 size={18} style={{ color: 'var(--wl-on-panel-ok, #047857)', marginTop: 2 }} />
                     <div>
                       <h3 style={{ margin: '0 0 0.25rem', fontSize: '1rem', color: 'var(--ink)' }}>{text.title} · Respuesta {index + 1}: {item.answer}</h3>
                       <p style={{ margin: '0 0 0.25rem', color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.9rem' }}>{item.explanation}</p>

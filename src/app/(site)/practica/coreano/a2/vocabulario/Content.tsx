@@ -3,7 +3,10 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
-const COLOR = '#e11d48';
+const COLOR = 'var(--wlp-accent-vocabulario)';
+/** El color al N % de opacidad. Antes se escribía pegando la transparencia en
+    hexadecimal (`${COLOR}14`), que con una variable CSS no se puede. */
+const COLORMix = (p: number) => `color-mix(in srgb, ${COLOR} ${p}%, transparent)`;
 
 interface Word { word: string; romaja: string; es: string; emoji: string; example: string; exampleRomaja: string; exampleEs: string; }
 interface VocabSet { id: string; name: string; nameKo: string; icon: string; words: Word[]; }
@@ -156,12 +159,12 @@ function Flashcard({ words, onDone }: { words: Word[]; onDone: () => void }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.25rem' }}>
       <div style={{ fontSize: '0.78rem', fontFamily: 'var(--mono)', color: 'var(--muted)' }}>{idx + 1}/{words.length}</div>
-      <div onClick={() => setFlipped(f => !f)} style={{ width: '100%', maxWidth: 400, minHeight: 200, cursor: 'pointer', borderRadius: 18, border: `2px solid ${flipped ? COLOR : 'var(--line-soft)'}`, background: flipped ? `${COLOR}08` : 'var(--bg)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '0.65rem', padding: '1.5rem', transition: 'all 0.3s', textAlign: 'center' }}>
+      <div onClick={() => setFlipped(f => !f)} style={{ width: '100%', maxWidth: 400, minHeight: 200, cursor: 'pointer', borderRadius: 18, border: `2px solid ${flipped ? COLOR : 'var(--line-soft)'}`, background: flipped ? `${COLORMix(3.1)}` : 'var(--bg)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '0.65rem', padding: '1.5rem', transition: 'all 0.3s', textAlign: 'center' }}>
         {!flipped ? (
           <>
             <div style={{ fontSize: '2.5rem' }}>{w.emoji}</div>
             <div style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--ink)' }}>{w.word}</div>
-            <div style={{ fontSize: '0.85rem', fontFamily: 'var(--mono)', color: COLOR, fontWeight: 700, padding: '0.1rem 0.5rem', borderRadius: 5, background: `${COLOR}15` }}>{w.romaja}</div>
+            <div style={{ fontSize: '0.85rem', fontFamily: 'var(--mono)', color: COLOR, fontWeight: 700, padding: '0.1rem 0.5rem', borderRadius: 5, background: `${COLORMix(8.2)}` }}>{w.romaja}</div>
             <div style={{ fontSize: '0.78rem', color: 'var(--muted)', marginTop: '0.25rem' }}>Toca para ver</div>
           </>
         ) : (
@@ -212,7 +215,7 @@ function MCQPractice({ words, onDone }: { words: Word[]; onDone: () => void }) {
       <div style={{ padding: '1.25rem', borderRadius: 14, background: 'var(--bg-2)', border: '1px solid var(--line-soft)', textAlign: 'center' }}>
         <div style={{ fontSize: '2rem', marginBottom: '0.3rem' }}>{w.emoji}</div>
         <div style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--ink)' }}>{w.word}</div>
-        <div style={{ fontSize: '0.85rem', fontFamily: 'var(--mono)', color: COLOR, fontWeight: 700, padding: '0.12rem 0.5rem', borderRadius: 5, background: `${COLOR}15`, display: 'inline-block', marginTop: '0.3rem' }}>{w.romaja}</div>
+        <div style={{ fontSize: '0.85rem', fontFamily: 'var(--mono)', color: COLOR, fontWeight: 700, padding: '0.12rem 0.5rem', borderRadius: 5, background: `${COLORMix(8.2)}`, display: 'inline-block', marginTop: '0.3rem' }}>{w.romaja}</div>
       </div>
       <p style={{ margin: 0, fontWeight: 600, color: 'var(--ink)', textAlign: 'center' }}>¿Cuál es la traducción correcta?</p>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.45rem' }}>
@@ -330,9 +333,9 @@ export default function VocabularioCoreanoA2() {
             { id: 'fillblank' as PracticeMode, icon: '✏️', title: 'Escribir la palabra', desc: 'Escribe en Hangul o romanización a partir de la traducción.' },
           ].map(m => (
             <button key={m.id} onClick={() => setMode(m.id)} style={{ textAlign: 'left', appearance: 'none', background: 'none', border: 'none', padding: 0, cursor: 'pointer', color: 'inherit', font: 'inherit' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1.1rem 1.3rem', border: `1.5px solid ${COLOR}22`, borderRadius: 14, background: `${COLOR}04`, transition: 'all 0.18s' }}
-                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.borderColor = `${COLOR}55`; (e.currentTarget as HTMLElement).style.boxShadow = `0 4px 16px ${COLOR}14`; }}
-                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.borderColor = `${COLOR}22`; (e.currentTarget as HTMLElement).style.boxShadow = 'none'; }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1.1rem 1.3rem', border: `1.5px solid ${COLORMix(13.3)}`, borderRadius: 14, background: `${COLORMix(1.6)}`, transition: 'all 0.18s' }}
+                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.borderColor = `${COLORMix(33.3)}`; (e.currentTarget as HTMLElement).style.boxShadow = `0 4px 16px ${COLORMix(7.8)}`; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.borderColor = `${COLORMix(13.3)}`; (e.currentTarget as HTMLElement).style.boxShadow = 'none'; }}>
                 <div style={{ width: 42, height: 42, borderRadius: 10, background: COLOR, color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.25rem', flexShrink: 0 }}>{m.icon}</div>
                 <div style={{ flex: 1 }}>
                   <div style={{ fontWeight: 700, color: 'var(--ink)', marginBottom: '0.1rem' }}>{m.title}</div>
@@ -375,9 +378,9 @@ export default function VocabularioCoreanoA2() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '0.85rem' }}>
           {SETS.map(s => (
             <button key={s.id} onClick={() => setSetId(s.id)} style={{ textAlign: 'left', appearance: 'none', background: 'none', border: 'none', padding: 0, cursor: 'pointer', color: 'inherit', font: 'inherit' }}>
-              <div style={{ padding: '1.25rem', border: `1.5px solid ${COLOR}22`, borderRadius: 16, background: `${COLOR}04`, height: '100%', display: 'flex', flexDirection: 'column', gap: '0.5rem', transition: 'all 0.18s' }}
-                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.borderColor = `${COLOR}55`; (e.currentTarget as HTMLElement).style.boxShadow = `0 4px 16px ${COLOR}14`; }}
-                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.borderColor = `${COLOR}22`; (e.currentTarget as HTMLElement).style.boxShadow = 'none'; }}>
+              <div style={{ padding: '1.25rem', border: `1.5px solid ${COLORMix(13.3)}`, borderRadius: 16, background: `${COLORMix(1.6)}`, height: '100%', display: 'flex', flexDirection: 'column', gap: '0.5rem', transition: 'all 0.18s' }}
+                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.borderColor = `${COLORMix(33.3)}`; (e.currentTarget as HTMLElement).style.boxShadow = `0 4px 16px ${COLORMix(7.8)}`; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.borderColor = `${COLORMix(13.3)}`; (e.currentTarget as HTMLElement).style.boxShadow = 'none'; }}>
                 <div style={{ fontSize: '1.75rem' }}>{s.icon}</div>
                 <div style={{ fontWeight: 800, color: 'var(--ink)' }}>{s.nameKo}</div>
                 <div style={{ fontSize: '0.78rem', color: 'var(--muted)' }}>{s.name} · {s.words.length} palabras</div>

@@ -224,7 +224,7 @@ export default function MicroExplanation004({ onComplete }: Props) {
           <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginBottom: 20 }}>
             {(step as EjemplosStep).items.map(item => (
               <button key={item.kr} onClick={() => playAudio(item.audio)}
-                style={{ background: 'var(--bg-2,#f5f5f7)', border: `1px solid ${step.color}44`, borderRadius: 12, padding: '14px 16px', textAlign: 'left', cursor: 'pointer' }}>
+                style={{ background: 'var(--bg-2,var(--wl-panel-raised, #f5f5f7))', border: `1px solid ${step.color}44`, borderRadius: 12, padding: '14px 16px', textAlign: 'left', cursor: 'pointer' }}>
                 <p style={{ margin: '0 0 4px', fontSize: 20, fontFamily: "'Noto Sans KR',sans-serif", fontWeight: 700 }}>
                   {item.highlight ? item.kr.split(item.highlight).map((part, i, arr) => (
                     <span key={i}>{part}{i < arr.length - 1 && <strong style={{ color: step.color }}>{item.highlight}</strong>}</span>

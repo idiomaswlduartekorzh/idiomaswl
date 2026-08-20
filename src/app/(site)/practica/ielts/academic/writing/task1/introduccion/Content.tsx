@@ -102,7 +102,7 @@ export default function IntroduccionContent() {
             <div style={{ background: 'var(--bg)', borderRadius: 12, padding: '1rem 1.25rem', marginBottom: '1.25rem', border: '1px solid var(--line-soft)' }}>
               <p style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.5rem' }}>Formula</p>
               <p style={{ fontSize: '0.97rem', color: C, fontWeight: 700, margin: 0, lineHeight: 1.65 }}>
-                The [visual type] <span style={{ color: '#0369a1' }}>illustrates / presents / compares / depicts</span> [paraphrased topic] [time period or place, if shown].
+                The [visual type] <span style={{ color: 'var(--wl-on-panel-teal, #0369a1)' }}>illustrates / presents / compares / depicts</span> [paraphrased topic] [time period or place, if shown].
               </p>
             </div>
 
@@ -125,7 +125,7 @@ export default function IntroduccionContent() {
             {/* Include / Exclude */}
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
               <div style={{ padding: '0.9rem 1rem', borderRadius: 12, background: 'rgba(5,150,105,0.07)', border: '1px solid rgba(5,150,105,0.2)' }}>
-                <p style={{ fontSize: '0.72rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.5rem' }}>✓ Incluir</p>
+                <p style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--wl-on-panel-ok, #059669)', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.5rem' }}>✓ Incluir</p>
                 <ul style={{ margin: 0, paddingLeft: '1rem', display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
                   {['Visual type (line graph, bar chart…)', 'Topic / subject (paraphrased)', 'Time period or place (if shown)', 'Unit of measurement, if essential'].map(t => (
                     <li key={t} style={{ fontSize: '0.83rem', color: 'var(--ink-2)', lineHeight: 1.5 }}>{t}</li>
@@ -133,7 +133,7 @@ export default function IntroduccionContent() {
                 </ul>
               </div>
               <div style={{ padding: '0.9rem 1rem', borderRadius: 12, background: 'rgba(220,38,38,0.07)', border: '1px solid rgba(220,38,38,0.2)' }}>
-                <p style={{ fontSize: '0.72rem', fontWeight: 800, color: '#dc2626', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.5rem' }}>✗ Excluir</p>
+                <p style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--wl-on-panel-alert, #dc2626)', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.5rem' }}>✗ Excluir</p>
                 <ul style={{ margin: 0, paddingLeft: '1rem', display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
                   {['Copied prompt text', 'Trends or comparisons', 'Specific figures or percentages', 'Personal opinions or comments'].map(t => (
                     <li key={t} style={{ fontSize: '0.83rem', color: 'var(--ink-2)', lineHeight: 1.5 }}>{t}</li>
@@ -174,11 +174,11 @@ export default function IntroduccionContent() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                   {tbl.rows.map(r => (
                     <div key={r.original} style={{ fontSize: '0.82rem' }}>
-                      <span style={{ fontWeight: 700, color: '#dc2626', textDecoration: 'line-through', marginRight: '0.4rem' }}>{r.original}</span>
+                      <span style={{ fontWeight: 700, color: 'var(--wl-on-panel-alert, #dc2626)', textDecoration: 'line-through', marginRight: '0.4rem' }}>{r.original}</span>
                       <span style={{ color: 'var(--muted)' }}>→ </span>
                       {r.alts.map((a, i) => (
                         <span key={a}>
-                          <span style={{ color: '#059669', fontWeight: 600 }}>{a}</span>
+                          <span style={{ color: 'var(--wl-on-panel-ok, #059669)', fontWeight: 600 }}>{a}</span>
                           {i < r.alts.length - 1 && <span style={{ color: 'var(--muted)', margin: '0 0.25rem' }}>·</span>}
                         </span>
                       ))}
@@ -237,11 +237,11 @@ export default function IntroduccionContent() {
                         </div>
                         <div style={{ minWidth: 0 }}>
                           <div style={{ padding: '0.8rem', borderRadius: 8, background: 'rgba(220,38,38,0.06)', border: '1px solid rgba(220,38,38,0.2)', marginBottom: '0.65rem' }}>
-                            <p style={{ fontSize: '0.61rem', fontWeight: 800, color: '#dc2626', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.3rem' }}>The prompt · paraphrase this</p>
+                            <p style={{ fontSize: '0.61rem', fontWeight: 800, color: 'var(--wl-on-panel-alert, #dc2626)', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.3rem' }}>The prompt · paraphrase this</p>
                             <p style={{ margin: 0, color: 'var(--ink)', lineHeight: 1.55, fontStyle: 'italic', fontSize: '0.88rem' }}>{example.prompt}</p>
                           </div>
                           <div style={{ padding: '0.8rem', borderRadius: 8, background: 'rgba(5,150,105,0.06)', border: '1px solid rgba(5,150,105,0.22)', marginBottom: '0.6rem' }}>
-                            <p style={{ fontSize: '0.61rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.3rem' }}>Model A · precise paraphrase</p>
+                            <p style={{ fontSize: '0.61rem', fontWeight: 800, color: 'var(--wl-on-panel-ok, #059669)', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.3rem' }}>Model A · precise paraphrase</p>
                             <p style={{ margin: 0, color: 'var(--ink)', lineHeight: 1.6, fontSize: '0.88rem' }}>{example.model}</p>
                           </div>
                           <div style={{ padding: '0.8rem', borderRadius: 8, background: `${C}06`, border: `1px solid ${C}22` }}>

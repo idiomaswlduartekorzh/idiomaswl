@@ -15,12 +15,12 @@ export default function GrammarDeep007() {
       <div style={{ marginBottom: '2.5rem' }}>
         <h3 style={{ margin: '0 0 12px', fontSize: 20, fontWeight: 700 }}>1. El problema: dos partículas de lugar que parecen lo mismo</h3>
         <p style={{ margin: '0 0 14px', fontSize: 14, lineHeight: 1.85, color: 'var(--muted)' }}>
-          Tanto <span style={{ fontFamily: "'Noto Sans KR',sans-serif", color: accent, fontWeight: 700 }}>에</span> como <span style={{ fontFamily: "'Noto Sans KR',sans-serif", color: '#6c63ff', fontWeight: 700 }}>에서</span> se traducen al español como "en" o "a". Eso hace que los hispanohablantes los confundan constantemente. La diferencia no está en la traducción — está en <strong>qué tipo de verbo acompaña a cada partícula</strong>.
+          Tanto <span style={{ fontFamily: "'Noto Sans KR',sans-serif", color: accent, fontWeight: 700 }}>에</span> como <span style={{ fontFamily: "'Noto Sans KR',sans-serif", color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700 }}>에서</span> se traducen al español como "en" o "a". Eso hace que los hispanohablantes los confundan constantemente. La diferencia no está en la traducción — está en <strong>qué tipo de verbo acompaña a cada partícula</strong>.
         </p>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14, marginBottom: 14 }}>
           {[
             { particle: '에', rule: 'Dirección o existencia estática', verbs: ['가다 → voy a', '오다 → vengo a', '있다 → estoy en', '없다 → no estoy'], example: '학교에 가요', meaning: 'Voy a la escuela', color: accent },
-            { particle: '에서', rule: 'Lugar donde ocurre una ACCIÓN', verbs: ['공부하다 → estudio en', '일하다 → trabajo en', '먹다 → como en', '살다 → vivo en'], example: '학교에서 공부해요', meaning: 'Estudio en la escuela', color: '#6c63ff' },
+            { particle: '에서', rule: 'Lugar donde ocurre una ACCIÓN', verbs: ['공부하다 → estudio en', '일하다 → trabajo en', '먹다 → como en', '살다 → vivo en'], example: '학교에서 공부해요', meaning: 'Estudio en la escuela', color: 'var(--wl-on-panel-link, #6c63ff)' },
           ].map(p => (
             <div key={p.particle} style={{ background: 'var(--bg-2)', border: `2px solid ${p.color}25`, borderRadius: 12, padding: '16px', borderLeft: `4px solid ${p.color}` }}>
               <p style={{ margin: '0 0 2px', fontSize: 44, fontFamily: "'Noto Sans KR',sans-serif", fontWeight: 900, color: p.color, lineHeight: 1 }}>{p.particle}</p>
@@ -36,7 +36,7 @@ export default function GrammarDeep007() {
         </div>
         <div style={{ background: `${accent}08`, border: `1px solid ${accent}25`, borderRadius: 10, padding: '12px 16px' }}>
           <p style={{ margin: 0, fontSize: 14, lineHeight: 1.7 }}>
-            <strong>La regla en una oración:</strong> si el lugar es el <em>destino del movimiento</em> o el lugar donde algo <em>existe</em> → usa <span style={{ fontFamily: "'Noto Sans KR',sans-serif", color: accent, fontWeight: 700 }}>에</span>. Si el lugar es donde se <em>realiza una acción</em> → usa <span style={{ fontFamily: "'Noto Sans KR',sans-serif", color: '#6c63ff', fontWeight: 700 }}>에서</span>.
+            <strong>La regla en una oración:</strong> si el lugar es el <em>destino del movimiento</em> o el lugar donde algo <em>existe</em> → usa <span style={{ fontFamily: "'Noto Sans KR',sans-serif", color: accent, fontWeight: 700 }}>에</span>. Si el lugar es donde se <em>realiza una acción</em> → usa <span style={{ fontFamily: "'Noto Sans KR',sans-serif", color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700 }}>에서</span>.
           </p>
         </div>
       </div>
@@ -116,8 +116,8 @@ export default function GrammarDeep007() {
               <div>
                 <p style={{ margin: '0 0 6px', fontSize: 14, fontWeight: 700 }}>{e.title}</p>
                 <div style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
-                  <code style={{ fontSize: 13, padding: '3px 10px', background: 'rgba(220,53,69,0.06)', border: '1px solid rgba(220,53,69,0.2)', borderRadius: 6, color: '#dc3545', fontFamily: "'Noto Sans KR',sans-serif" }}>{e.wrong}</code>
-                  <code style={{ fontSize: 13, padding: '3px 10px', background: 'rgba(45,155,78,0.06)', border: '1px solid rgba(45,155,78,0.2)', borderRadius: 6, color: '#2d9b4e', fontFamily: "'Noto Sans KR',sans-serif" }}>{e.right}</code>
+                  <code style={{ fontSize: 13, padding: '3px 10px', background: 'rgba(220,53,69,0.06)', border: '1px solid rgba(220,53,69,0.2)', borderRadius: 6, color: 'var(--wl-on-panel-alert, #dc3545)', fontFamily: "'Noto Sans KR',sans-serif" }}>{e.wrong}</code>
+                  <code style={{ fontSize: 13, padding: '3px 10px', background: 'rgba(45,155,78,0.06)', border: '1px solid rgba(45,155,78,0.2)', borderRadius: 6, color: 'var(--wl-on-panel-ok, #2d9b4e)', fontFamily: "'Noto Sans KR',sans-serif" }}>{e.right}</code>
                 </div>
                 <p style={{ margin: 0, fontSize: 12, color: 'var(--muted)', lineHeight: 1.6 }}>{e.why}</p>
               </div>

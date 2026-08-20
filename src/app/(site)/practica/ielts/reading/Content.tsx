@@ -7,11 +7,13 @@ import {
   Clock3,
   Compass,
   FileCheck2,
+  Headphones,
   Layers3,
   Map,
   Route,
   ScanSearch,
   SearchCheck,
+  ShieldCheck,
   Target,
   TextSearch,
   Workflow,
@@ -20,6 +22,8 @@ import {
   IELTS_READING_SKILLS,
   IELTS_READING_TYPES,
 } from '@/data/practica-exams/seo-catalog';
+import readingNotes from '@/data/practica/podcasts/academic-reading-strategies-and-traps';
+import EpisodeNotes from '@/components/practica/EpisodeNotes';
 import styles from './page.module.css';
 
 const QUESTION_TYPE_FAMILIES = [
@@ -230,6 +234,66 @@ export default function IELTSReadingHub() {
           <div className={styles.fact}><strong>60 min</strong><span>to read, decide and record answers</span></div>
           <div className={styles.fact}><strong>{publishedQuestionTypes.length} + {publishedSkills.length}</strong><span>question routes and skill lessons in this hub</span></div>
         </div>
+
+        <section className={`${styles.section} ${styles.podcastSection}`} aria-labelledby="audio-guide-heading">
+          <div className={styles.podcastPanel}>
+            <div className={styles.podcastHeader}>
+              <div>
+                <p className={styles.podcastEyebrow}><Headphones size={16} aria-hidden="true" /> Start here · Audio guide</p>
+                <h2 id="audio-guide-heading">IELTS Academic Reading: Strategies and Traps</h2>
+                <p>Use this English episode as your map of Academic Reading: understand the official format, distinguish the question families, avoid the most expensive traps and turn Map, Locate, Compare and Control into a repeatable practice system.</p>
+              </div>
+              <div className={styles.podcastDuration} aria-label="Episode length: 18 minutes 43 seconds">
+                <Clock3 size={18} aria-hidden="true" />
+                <span>18:43</span>
+              </div>
+            </div>
+
+            <div className={styles.playerShell}>
+              <div className={styles.nowPlaying}><span>Orientation episode · English</span><strong>No autoplay</strong></div>
+              <audio className={styles.audioPlayer} controls preload="metadata" aria-label="Play IELTS Academic Reading: Strategies and Traps">
+                <source src="/audio/ielts/reading/ielts-academic-reading-strategies-and-traps.mp3" type="audio/mpeg" />
+                Your browser does not support the audio player. <a href="/audio/ielts/reading/ielts-academic-reading-strategies-and-traps.mp3">Download the episode</a>.
+              </audio>
+            </div>
+
+            <div className={styles.podcastBody}>
+              <div className={styles.episodeMap}>
+                <p className={styles.podcastLabel}>By the end, you should be able to</p>
+                <ul>
+                  <li>explain the three-section, 40-question, 60-minute Academic Reading format and its objective scoring;</li>
+                  <li>distinguish evidence and viewpoint, matching and organisation, and completion decisions;</li>
+                  <li>use skimming, scanning, paraphrase, inference, word-limit and pacing skills inside Map, Locate, Compare and Control;</li>
+                  <li>move from focused question practice to mixed transfer, adding full timing only after the method is stable.</li>
+                </ul>
+                <nav className={styles.podcastLinks} aria-label="Continue from the audio guide">
+                  <a href="#question-types">Question types <ArrowRight size={15} aria-hidden="true" /></a>
+                  <a href="#reading-skills">Reading skills <ArrowRight size={15} aria-hidden="true" /></a>
+                  <Link href="/practica/ielts/reading/mixed-practice">Mixed practice <ArrowRight size={15} aria-hidden="true" /></Link>
+                </nav>
+              </div>
+
+              <aside className={styles.editorialNote} aria-label="Editorial accuracy note">
+                <ShieldCheck size={22} aria-hidden="true" />
+                <div>
+                  <p className={styles.podcastLabel}>Editorially reviewed</p>
+                  <h3>Three clarifications before you press play</h3>
+                  <p>This AI-produced conversation has been checked against the official format. IELTS labels the writer-view format Yes / No / Not Given. Its official format page defines 11 numbered Academic Reading question-type categories, but an individual test uses a variable selection of formats. On computer, answers are entered on screen; on paper, they must be transferred within the same 60 minutes.</p>
+                </div>
+              </aside>
+            </div>
+
+            <EpisodeNotes
+              sections={readingNotes}
+              tone={{
+                accent: 'var(--reading-red)',
+                ink: 'var(--reading-ink)',
+                muted: 'var(--reading-muted)',
+                line: 'var(--reading-line)',
+              }}
+            />
+          </div>
+        </section>
 
         <section id="choose-your-route" className={styles.section} aria-labelledby="route-heading">
           <div className={styles.sectionHeading}>

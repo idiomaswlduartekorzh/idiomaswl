@@ -475,7 +475,7 @@ export default function ClasesDeCoreanoPage() {
                       ▶ {label}
                     </span>
                     <span style={{ fontSize: '0.88rem', fontWeight: 700, color: '#fff', lineHeight: 1.3 }}>{title}</span>
-                    {sub && <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.45)' }}>{sub}</span>}
+                    {sub && <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.62)' }}>{sub}</span>}
                     <span style={{ fontSize: '0.65rem', marginTop: '0.25rem', color: '#f87171', fontWeight: 600 }}>Gratis →</span>
                   </Link>
                 ) : (
@@ -492,12 +492,12 @@ export default function ClasesDeCoreanoPage() {
                       cursor: 'default',
                     }}
                   >
-                    <span style={{ fontSize: '0.6rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.09em', color: 'rgba(255,255,255,0.3)' }}>
+                    <span style={{ fontSize: '0.6rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.09em', color: 'rgba(255,255,255,0.68)' }}>
                       🔒 {label}
                     </span>
                     <span style={{ fontSize: '0.88rem', fontWeight: 600, color: 'rgba(255,255,255,0.55)', lineHeight: 1.3 }}>{title}</span>
-                    {sub && <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.25)' }}>{sub}</span>}
-                    <span style={{ fontSize: '0.65rem', marginTop: '0.25rem', color: 'rgba(255,255,255,0.25)', fontWeight: 600 }}>Suscripción</span>
+                    {sub && <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.68)' }}>{sub}</span>}
+                    <span style={{ fontSize: '0.65rem', marginTop: '0.25rem', color: 'rgba(255,255,255,0.68)', fontWeight: 600 }}>Suscripción</span>
                   </div>
                 );
               })}

@@ -81,8 +81,8 @@ const SCENARIOS: WorkedScenario[] = [
     years: [2000, 2005, 2010, 2015, 2020],
     yMax: 100,
     series: [
-      { label: 'North America', color: '#0f3d8c', values: [45, 65, 75, 85, 90] },
-      { label: 'Latin America', color: '#059669', values: [5, 15, 35, 55, 70] },
+      { label: 'North America', color: 'var(--wl-on-panel-link, #0f3d8c)', values: [45, 65, 75, 85, 90] },
+      { label: 'Latin America', color: 'var(--wl-on-panel-ok, #059669)', values: [5, 15, 35, 55, 70] },
       { label: 'Africa', color: '#f59e0b', values: [2, 5, 10, 22, 40] },
     ],
     context: 'The line graph below shows the percentage of the population with internet access in three world regions between 2000 and 2020.',
@@ -102,8 +102,8 @@ const SCENARIOS: WorkedScenario[] = [
     years: [2000, 2005, 2010, 2015, 2020],
     yMax: 220,
     series: [
-      { label: 'STEM', color: '#0f3d8c', values: [80, 90, 120, 160, 200] },
-      { label: 'Arts & Humanities', color: '#dc2626', values: [100, 95, 90, 80, 70] },
+      { label: 'STEM', color: 'var(--wl-on-panel-link, #0f3d8c)', values: [80, 90, 120, 160, 200] },
+      { label: 'Arts & Humanities', color: 'var(--wl-on-panel-alert, #dc2626)', values: [100, 95, 90, 80, 70] },
     ],
     context: 'The graph below illustrates the number of university graduates (in thousands) in STEM subjects and Arts & Humanities between 2000 and 2020.',
     observations: [
@@ -122,9 +122,9 @@ const SCENARIOS: WorkedScenario[] = [
     years: [2010, 2012, 2014, 2016, 2018, 2020],
     yMax: 45,
     series: [
-      { label: 'Country A', color: '#0f3d8c', values: [10, 15, 22, 30, 38, 5] },
-      { label: 'Country B', color: '#059669', values: [20, 22, 24, 26, 28, 4] },
-      { label: 'Country C', color: '#7c3aed', values: [5, 8, 12, 18, 25, 3] },
+      { label: 'Country A', color: 'var(--wl-on-panel-link, #0f3d8c)', values: [10, 15, 22, 30, 38, 5] },
+      { label: 'Country B', color: 'var(--wl-on-panel-ok, #059669)', values: [20, 22, 24, 26, 28, 4] },
+      { label: 'Country C', color: 'var(--wl-on-panel-purple, #7c3aed)', values: [5, 8, 12, 18, 25, 3] },
     ],
     context: 'The line graph below shows the number of international tourist arrivals (in millions) to three countries between 2010 and 2020.',
     observations: [
@@ -144,8 +144,8 @@ const SCENARIOS: WorkedScenario[] = [
     yMax: 120,
     series: [
       { label: 'Solar', color: '#f59e0b', values: [4, 12, 25, 55, 100] },
-      { label: 'Wind', color: '#0f3d8c', values: [18, 28, 40, 62, 88] },
-      { label: 'Hydro', color: '#059669', values: [70, 72, 75, 78, 80] },
+      { label: 'Wind', color: 'var(--wl-on-panel-link, #0f3d8c)', values: [18, 28, 40, 62, 88] },
+      { label: 'Hydro', color: 'var(--wl-on-panel-ok, #059669)', values: [70, 72, 75, 78, 80] },
     ],
     context: 'The line graph below shows renewable energy generation from three sources between 2000 and 2020.',
     observations: [
@@ -164,9 +164,9 @@ const SCENARIOS: WorkedScenario[] = [
     years: [2005, 2010, 2015, 2020, 2025],
     yMax: 100,
     series: [
-      { label: 'Car', color: '#dc2626', values: [80, 82, 78, 60, 48] },
-      { label: 'Bus', color: '#0f3d8c', values: [45, 48, 50, 52, 55] },
-      { label: 'Cycling', color: '#059669', values: [8, 12, 20, 35, 62] },
+      { label: 'Car', color: 'var(--wl-on-panel-alert, #dc2626)', values: [80, 82, 78, 60, 48] },
+      { label: 'Bus', color: 'var(--wl-on-panel-link, #0f3d8c)', values: [45, 48, 50, 52, 55] },
+      { label: 'Cycling', color: 'var(--wl-on-panel-ok, #059669)', values: [8, 12, 20, 35, 62] },
     ],
     context: 'The line graph below shows the number of people using three forms of transport for daily commuting between 2005 and 2025.',
     observations: [
@@ -279,7 +279,7 @@ function VisualTrendLab() {
       </div>
       <article role="tabpanel" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem', alignItems: 'start', marginTop: '0.75rem', padding: '1rem', borderRadius: 8, border: '1px solid var(--line-soft)', background: 'var(--bg-2)' }}>
         <div style={{ padding: '0.7rem', borderRadius: 8, background: 'var(--bg)', border: '1px solid var(--line-soft)', overflow: 'hidden' }}><Chart variant={example} /></div>
-        <div><p style={{ margin: '0 0 0.3rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 900 }}>{current.title}</p><p style={{ margin: '0 0 0.55rem', color: 'var(--ink)', fontWeight: 800 }}>{current.insight}</p><p style={{ margin: 0, color: 'var(--ink-2)', lineHeight: 1.65 }}>{current.explanation}</p></div>
+        <div><p style={{ margin: '0 0 0.3rem', color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 900 }}>{current.title}</p><p style={{ margin: '0 0 0.55rem', color: 'var(--ink)', fontWeight: 800 }}>{current.insight}</p><p style={{ margin: 0, color: 'var(--ink-2)', lineHeight: 1.65 }}>{current.explanation}</p></div>
       </article>
     </div>
   );
@@ -357,7 +357,7 @@ export default function TendenciasContent() {
                 <article key={rule.label} style={{ padding: '0.9rem', borderRadius: 8, border: '1px solid var(--line-soft)', background: 'var(--bg-2)' }}>
                   <h3 style={{ margin: '0 0 0.35rem', fontSize: '0.92rem' }}>{rule.label}</h3>
                   <p style={{ margin: '0 0 0.45rem', color: 'var(--ink-2)', lineHeight: 1.55, fontSize: '0.84rem' }}>{rule.question}</p>
-                  <p style={{ margin: 0, color: '#0f3d8c', lineHeight: 1.55, fontSize: '0.82rem', fontStyle: 'italic' }}>&ldquo;{rule.example}&rdquo;</p>
+                  <p style={{ margin: 0, color: 'var(--wl-on-panel-link, #0f3d8c)', lineHeight: 1.55, fontSize: '0.82rem', fontStyle: 'italic' }}>&ldquo;{rule.example}&rdquo;</p>
                 </article>
               ))}
             </div>
@@ -374,7 +374,7 @@ export default function TendenciasContent() {
 
           {/* Chart card */}
           <div className="wl-card" style={{ padding: '1.25rem 1.5rem', marginBottom: '1.5rem' }}>
-            <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.5rem' }}>
+            <p style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.5rem' }}>
               IELTS Academic — Line graph
             </p>
             <p style={{ margin: '0 0 1rem', fontSize: '0.9rem', fontStyle: 'italic', color: 'var(--ink)', lineHeight: 1.55 }}>
@@ -397,7 +397,7 @@ export default function TendenciasContent() {
 
           {/* Observations */}
           <p style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--ink)', margin: '0 0 0.75rem' }}>
-            Select the <span style={{ color: '#0f3d8c' }}>{sc.targetCount} most important observations</span> to include in your response:
+            Select the <span style={{ color: 'var(--wl-on-panel-link, #0f3d8c)' }}>{sc.targetCount} most important observations</span> to include in your response:
           </p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem', marginBottom: '1.25rem' }}>
@@ -533,7 +533,7 @@ function TrendPracticeEngine() {
       <p style={{ margin: '0 0 1.1rem', color: 'var(--muted)', lineHeight: 1.65 }}>Move from recognising a trend to combining it in an overview. These four charts are not the ones dissected above, so no answer is printed anywhere on this page. Every option explains why it does or does not deserve space.</p>
       <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '1rem' }}>{TREND_LEVELS.map((item, i) => <button key={item.title} type="button" className="btn btn-sm" aria-pressed={level === i} onClick={() => { setLevel(i); setIndex(0); reset(); }} style={{ flex: '1 1 180px', textAlign: 'left', whiteSpace: 'normal', opacity: level === i ? 1 : 0.68 }}><strong>{i + 1}. {item.title.split('·')[1]}</strong><br /><span style={{ fontSize: '0.72rem' }}>{scores[i]}/{item.items.length}</span></button>)}</div>
       <div className="wl-card" style={{ padding: '1.15rem', borderTop: '4px solid #0f3d8c' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', gap: '0.6rem', flexWrap: 'wrap', marginBottom: '0.85rem' }}><div><p style={{ margin: 0, color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 900 }}>{currentLevel.title}</p><p style={{ margin: '0.2rem 0 0', color: 'var(--muted)', fontSize: '0.82rem' }}>Exercise {index + 1} of {currentLevel.items.length} · {scenario.title.split(' — ')[0]}</p></div><span style={{ color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.76rem' }}>{Math.round(((index + 1) / currentLevel.items.length) * 100)}%</span></div>
+        <div style={{ display: 'flex', justifyContent: 'space-between', gap: '0.6rem', flexWrap: 'wrap', marginBottom: '0.85rem' }}><div><p style={{ margin: 0, color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 900 }}>{currentLevel.title}</p><p style={{ margin: '0.2rem 0 0', color: 'var(--muted)', fontSize: '0.82rem' }}>Exercise {index + 1} of {currentLevel.items.length} · {scenario.title.split(' — ')[0]}</p></div><span style={{ color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.76rem' }}>{Math.round(((index + 1) / currentLevel.items.length) * 100)}%</span></div>
         <div style={{ padding: '0.7rem', background: 'var(--bg-2)', border: '1px solid var(--line-soft)', borderRadius: 8, overflow: 'hidden' }}><MiniLineChart scenario={scenario} /></div>
         <p style={{ margin: '0.85rem 0 0', fontWeight: 800, color: 'var(--ink)', lineHeight: 1.55 }}>{current.question}</p>
         <div style={{ display: 'grid', gap: '0.55rem', marginTop: '0.8rem' }}>{current.options.map((option, i) => <button key={option.text} type="button" onClick={() => !checked && setSelected(i)} aria-pressed={selected === i} disabled={checked} style={{ textAlign: 'left', padding: '0.8rem 0.9rem', borderRadius: 8, border: `1.5px solid ${checked && i === current.correct ? '#059669' : checked && selected === i ? '#dc2626' : selected === i ? '#0f3d8c' : 'var(--line-soft)'}`, background: selected === i ? 'rgba(15,61,140,0.06)' : 'var(--bg)', color: 'var(--ink)', cursor: checked ? 'default' : 'pointer', lineHeight: 1.55 }}>{String.fromCharCode(65 + i)}. {option.text}</button>)}</div>

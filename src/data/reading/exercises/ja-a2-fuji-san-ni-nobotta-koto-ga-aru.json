@@ -1,0 +1,483 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ja-a2-fuji-san-ni-nobotta-koto-ga-aru",
+  "status": "published",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Japonés A2",
+    "jlpt": "N4",
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el JLPT es aproximada: son dos escalas distintas, con exámenes distintos. A2 se sitúa alrededor del N4, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "fuji-san-ni-nobotta-koto-ga-aru",
+  "series": {
+    "id": "japones-a2-lectura-10",
+    "episode": 2,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ja-a2-shinbun-o-tori-ni-iku",
+    "nextExerciseId": "ja-a2-ame-ga-furu-to"
+  },
+  "classification": {
+    "genre": "anécdota",
+    "topic": "una frase que se repite en las presentaciones",
+    "intent": "learning",
+    "tags": [
+      "japones a2",
+      "lectura",
+      "ことがある",
+      "前に / 後で"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "He subido al Fuji"
+    },
+    "intro": {
+      "es": "En Japón, a los extranjeros les preguntan siempre lo mismo. Él aprendió a contestarlo y luego dejó de hacerlo. Lectura de japonés A2."
+    },
+    "mission": {
+      "es": "Averigua qué empezó a contestar en su lugar."
+    },
+    "targetText": "日本に来る前に、私は山に登ったことがなかった。一度もない。コロンビアの町に住んでいたが、山は見るものだった。\n\n日本に来た後で、みんなに同じ質問をされた。「富士山に登ったことがありますか。」\n\n三年間、私の答えは「いいえ」だった。そのたびに、少し気まずくなった。\n\n去年の八月、友達と一緒に登った。夜十時に出発して、朝五時に頂上に着いた。とても寒かった。とても疲れた。日の出はきれいだったが、写真の方がきれいだと思った。\n\n今は「はい、あります」と答えられる。でも、あまり言わない。\n\nなぜか。答えた後で、会話が終わってしまうからだ。「すごいですね」で終わる。\n\n今は違うことを言っている。「まだありません。でも、あなたは？」\n\nすると、みんな話し始める。登った人は自分の話をする。登っていない人は「私もない」と言って、笑う。\n\n登ったことより、その方が面白い。嘘ではない。二回目はまだ登っていないから。",
+    "wordCount": 333,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Usar ことがある para hablar de experiencias vividas."
+      },
+      {
+        "es": "Situar acciones con 前に (antes de) y 後で (después de)."
+      },
+      {
+        "es": "Distinguir una respuesta correcta de una respuesta útil."
+      }
+    ],
+    "grammarFocus": [
+      "ta-koto-ga-aru-a2",
+      "mae-ni-ato-de-a2",
+      "jikan-tiempo"
+    ],
+    "vocabulary": [
+      {
+        "surface": "登った",
+        "lemma": "登った",
+        "reading": "のぼった",
+        "glosses": {
+          "es": "subí, escalé"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "質問",
+        "lemma": "質問",
+        "reading": "しつもん",
+        "glosses": {
+          "es": "pregunta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "気まずく",
+        "lemma": "気まずく",
+        "reading": "きまずく",
+        "glosses": {
+          "es": "incómodo, violento"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "出発",
+        "lemma": "出発",
+        "reading": "しゅっぱつ",
+        "glosses": {
+          "es": "salida, partida"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "頂上",
+        "lemma": "頂上",
+        "reading": "ちょうじょう",
+        "glosses": {
+          "es": "cumbre"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "日の出",
+        "lemma": "日の出",
+        "reading": "ひので",
+        "glosses": {
+          "es": "amanecer"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "会話",
+        "lemma": "会話",
+        "reading": "かいわ",
+        "glosses": {
+          "es": "conversación"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "嘘",
+        "lemma": "嘘",
+        "reading": "うそ",
+        "glosses": {
+          "es": "mentira"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Subir al Fuji de noche para ver el amanecer desde la cumbre es la forma habitual de hacerlo, y la pregunta «¿has subido al Fuji?» es un clásico de las presentaciones con extranjeros."
+    },
+    "spanishSpeakerNote": {
+      "es": "ことがある no es un pasado: es «tener la experiencia de». 登ったことがある es «he subido alguna vez». Y 前に／後で ordenan: 来る前に (antes de venir), 来た後で (después de venir)."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": true,
+    "romanization": "a0-only",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto japonés escrito sin espacios, encadenar lo que ocurre con la forma て, distinguir un estado de una acción, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adverbios-frecuencia",
+      "arimasu-imasu",
+      "conjunciones",
+      "desu-masu",
+      "estructura-sov-particulas",
+      "expresiones-cotidianas",
+      "hiragana-basico",
+      "i-keiyoshi",
+      "interrogativos-ka",
+      "jikan-tiempo",
+      "katakana-basico",
+      "masu-kei-conjugacion",
+      "na-keiyoshi",
+      "negacion-completa",
+      "numeros-contadores",
+      "particula-de-e",
+      "particula-wa-ga",
+      "particula-wo-ni",
+      "tai-form",
+      "te-form-permission",
+      "ageru-morau-kureru-a2",
+      "dake-shika-bakari-a2",
+      "deshou-a2",
+      "hikaku-a2",
+      "kamoshirenai-a2",
+      "kanoukei-a2",
+      "mae-ni-ato-de-a2",
+      "n-desu-a2",
+      "nagara-a2",
+      "nakereba-naranai-a2",
+      "noun-modification-a2",
+      "ta-koto-ga-aru-a2",
+      "tara-condicional-a2",
+      "tari-tari-a2",
+      "te-form-sequence-a2",
+      "te-iru-a2",
+      "te-mo-ii-a2",
+      "to-condicional-a2",
+      "to-omoimasu-a2",
+      "ukemi-a2"
+    ],
+    "disallowedGrammar": [
+      "keigo (尊敬語・謙譲語)",
+      "causativo-pasivo",
+      "japonés clásico",
+      "registro periodístico nominal"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 47.6,
+      "maxSentenceWords": 69,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Forma て y sus usos, ている, condicionales たら y と, comparativos, pasiva sencilla. Sin keigo ni causativo-pasivo. Sin espacios: el kanji segmenta. Furigana declarado pero no implementado en el runner."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué descubrió el narrador?",
+      "options": [
+        {
+          "id": "pregunta",
+          "text": "Que devolver la pregunta abre conversación, y contestar «sí» la cierra"
+        },
+        {
+          "id": "fuji",
+          "text": "Que subir al Fuji no merece la pena"
+        },
+        {
+          "id": "foto",
+          "text": "Que las fotos del amanecer son mejores que el amanecer"
+        }
+      ],
+      "answer": "pregunta",
+      "evidence": "答えた後で、会話が終わってしまうからだ。「すごいですね」で終わる … すると、みんな話し始める。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo dice comparando qué pasa con cada respuesta."
+        },
+        "incorrect": {
+          "es": "Lo de la foto es un comentario de pasada y no dice que no merezca la pena. Compara las dos respuestas."
+        },
+        "strategy": {
+          "es": "Si el texto contrapone dos respuestas y sus efectos, la comparación es el asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿A qué hora llegó a la cumbre?",
+      "options": [
+        {
+          "id": "cinco",
+          "text": "A las cinco de la mañana"
+        },
+        {
+          "id": "diez",
+          "text": "A las diez de la noche"
+        },
+        {
+          "id": "ocho",
+          "text": "En agosto, a las ocho"
+        }
+      ],
+      "answer": "cinco",
+      "evidence": "夜十時に出発して、朝五時に頂上に着いた。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: salió a las diez de la noche y llegó a las cinco."
+        },
+        "incorrect": {
+          "es": "Las diez de la noche son la salida y agosto es el mes. Busca la frase con 頂上に着いた."
+        },
+        "strategy": {
+          "es": "Empareja cada hora con su verbo: 出発 es salir, 着く es llegar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué significa 気まずくなった?",
+      "options": [
+        {
+          "id": "incomodo",
+          "text": "Se hacía un poco incómodo"
+        },
+        {
+          "id": "enfadado",
+          "text": "Se enfadaba"
+        },
+        {
+          "id": "contento",
+          "text": "Se ponía contento"
+        }
+      ],
+      "answer": "incomodo",
+      "evidence": "三年間、私の答えは「いいえ」だった。そのたびに、少し気まずくなった。",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: cada vez que decía «no», la conversación se quedaba tensa."
+        },
+        "incorrect": {
+          "es": "Va después de responder «no» a una pregunta esperada: describe una situación violenta, no un enfado."
+        },
+        "strategy": {
+          "es": "Si la palabra va tras una respuesta negativa repetida, describe la incomodidad de esa escena."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice que su respuesta actual no es mentira?",
+      "options": [
+        {
+          "id": "segunda",
+          "text": "Porque todavía no ha subido una segunda vez"
+        },
+        {
+          "id": "nunca",
+          "text": "Porque en realidad nunca subió"
+        },
+        {
+          "id": "otro",
+          "text": "Porque subió otra montaña, no el Fuji"
+        }
+      ],
+      "answer": "segunda",
+      "evidence": "嘘ではない。二回目はまだ登っていないから。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y es un juego con la pregunta: nadie especifica cuántas veces."
+        },
+        "incorrect": {
+          "es": "El texto cuenta con detalle la subida de agosto. Lee la última frase."
+        },
+        "strategy": {
+          "es": "Si el narrador justifica que algo no es mentira, la justificación está en la misma frase."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: antes de llegar a Japón ya había subido montañas en Colombia.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "日本に来る前に、私は山に登ったことがなかった。一度もない。",
+      "feedback": {
+        "correct": {
+          "es": "Falso: dice que no lo había hecho ni una sola vez."
+        },
+        "incorrect": {
+          "es": "Busca la primera frase del texto. Usa 前に y una negación reforzada."
+        },
+        "strategy": {
+          "es": "La expresión 一度もない refuerza la negación: ni una sola vez."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la anécdota.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Antes de venir no había subido ninguna montaña"
+        },
+        {
+          "id": "p2",
+          "text": "Tres años contestando «no» a la misma pregunta"
+        },
+        {
+          "id": "p3",
+          "text": "La subida de agosto con sus amigos"
+        },
+        {
+          "id": "p4",
+          "text": "Ahora devuelve la pregunta"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "日本に来る前に… 三年間、私の答えは「いいえ」だった… 去年の八月、友達と一緒に登った… 今は違うことを言っている。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: antes, los tres años, la subida y el presente."
+        },
+        "incorrect": {
+          "es": "Guíate por 前に, 三年間, 去年の八月 y 今は."
+        },
+        "strategy": {
+          "es": "Las marcas 前に y 後で, más los años, ordenan la anécdota entera."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en japonés sobre algo que has hecho una vez y algo que nunca has hecho. Usa tres veces ことがある y dos veces 前に o 後で."
+    },
+    "minWords": 110,
+    "maxWords": 260,
+    "hints": [
+      "日本に来る前に、…たことがなかった。",
+      "去年の八月、…に登った。",
+      "今は「はい、あります」と答えられる。",
+      "まだ…ていない。"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de japonés A2: he subido al Fuji | WeLearn"
+    },
+    "description": {
+      "es": "Lee una anécdota en japonés A2 y practica ことがある y las expresiones 前に y 後で. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/japones/a2/lectura/fuji-san-ni-nobotta-koto-ga-aru",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ja-a2-shinbun-o-tori-ni-iku",
+      "ja-a2-ame-ga-furu-to"
+    ]
+  }
+}

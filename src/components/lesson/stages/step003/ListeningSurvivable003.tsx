@@ -90,7 +90,7 @@ export default function ListeningSurvivable003({ onComplete }: Props) {
   if (phase === 'intro') {
     return (
       <section style={{ maxWidth: 640, margin: '0 auto', padding: '2rem 1rem' }}>
-        <p style={{ margin: '0 0 6px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6c63ff', fontWeight: 700 }}>
+        <p style={{ margin: '0 0 6px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700 }}>
           ETAPA 04 DE 11
         </p>
         <h3 style={{ margin: '0 0 10px', fontSize: 22, fontWeight: 700, color: 'var(--ink)' }}>
@@ -102,7 +102,7 @@ export default function ListeningSurvivable003({ onComplete }: Props) {
 
         {/* Mission briefing */}
         <div style={{ background: 'rgba(108,99,255,0.05)', border: '1px solid rgba(108,99,255,0.18)', borderRadius: 12, padding: '16px 20px', marginBottom: 24 }}>
-          <p style={{ margin: '0 0 12px', fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#6c63ff' }}>
+          <p style={{ margin: '0 0 12px', fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--wl-on-panel-link, #6c63ff)' }}>
             Tu misión: mientras escuchas, identifica...
           </p>
           <ol style={{ margin: 0, paddingLeft: 20, display: 'flex', flexDirection: 'column', gap: 6 }}>
@@ -171,7 +171,7 @@ export default function ListeningSurvivable003({ onComplete }: Props) {
   if (phase === 'questions') {
     return (
       <section style={{ maxWidth: 640, margin: '0 auto', padding: '1rem 0' }}>
-        <p style={{ margin: '0 0 6px', fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#6c63ff' }}>
+        <p style={{ margin: '0 0 6px', fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--wl-on-panel-link, #6c63ff)' }}>
           Tu misión
         </p>
         <p style={{ margin: '0 0 20px', fontSize: 13, color: 'var(--muted)' }}>
@@ -187,7 +187,7 @@ export default function ListeningSurvivable003({ onComplete }: Props) {
           <button
             type="button"
             onClick={() => setPhase('watching')}
-            style={{ fontSize: 12, color: '#6c63ff', background: 'none', border: 'none', cursor: 'pointer', textDecoration: 'underline' }}
+            style={{ fontSize: 12, color: 'var(--wl-on-panel-link, #6c63ff)', background: 'none', border: 'none', cursor: 'pointer', textDecoration: 'underline' }}
           >
             Ver de nuevo
           </button>
@@ -269,7 +269,7 @@ export default function ListeningSurvivable003({ onComplete }: Props) {
                     <button
                       type="button"
                       onClick={() => playAudio(phrase.audio)}
-                      style={{ flexShrink: 0, width: 32, height: 32, borderRadius: '50%', background: 'rgba(108,99,255,0.08)', border: '1px solid rgba(108,99,255,0.2)', color: '#6c63ff', fontSize: 14, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                      style={{ flexShrink: 0, width: 32, height: 32, borderRadius: '50%', background: 'rgba(108,99,255,0.08)', border: '1px solid rgba(108,99,255,0.2)', color: 'var(--wl-on-panel-link, #6c63ff)', fontSize: 14, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
                     >
                       &#x1F50A;
                     </button>

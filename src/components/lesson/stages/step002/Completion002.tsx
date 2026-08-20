@@ -15,12 +15,12 @@ interface CheckItem {
 }
 
 const WHAT_YOU_KNOW: CheckItem[] = [
-  { kr: '한글', label: 'El nombre correcto es Hangul, no "coreano"', note: '세종대왕 lo diseñó en 1446 — científicamente, no al azar.', color: '#6c63ff' },
-  { kr: '아이', label: 'Las letras se agrupan en bloques silábicos cuadrados', note: 'Cada bloque = una sílaba. El coreano no se lee letra a letra como el español.', color: '#059669' },
+  { kr: '한글', label: 'El nombre correcto es Hangul, no "coreano"', note: '세종대왕 lo diseñó en 1446 — científicamente, no al azar.', color: 'var(--wl-on-panel-link, #6c63ff)' },
+  { kr: '아이', label: 'Las letras se agrupan en bloques silábicos cuadrados', note: 'Cada bloque = una sílaba. El coreano no se lee letra a letra como el español.', color: 'var(--wl-on-panel-ok, #059669)' },
   { kr: 'ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ', label: '6 vocales core', note: 'ㅡ es la única sin equivalente en español. Las demás ya las tienes.', color: '#e6930a' },
-  { kr: 'ㄴ ㅁ ㄹ ㅇ', label: 'Nasales y sonorantes', note: 'ㄹ = "r" de "pero". Tu ventaja más grande sobre angloparlantes.', color: '#0891b2' },
-  { kr: 'ㄱ ㄷ ㅂ → ㅋ ㅌ ㅍ → ㄲ ㄸ ㅃ', label: 'Familias tripartitas de consonantes', note: 'Simple → Aspirada (con aire) → Tensa (seca). Aprendes 3 a la vez.', color: '#dc2626' },
-  { kr: '글자', label: 'Consonante final (받침) debajo del bloque', note: '글 = ㄱ+ㅡ+ㄹ. El 받침 va debajo de la vocal. Lo viste en 글자, 오늘, 조금.', color: '#7c3aed' },
+  { kr: 'ㄴ ㅁ ㄹ ㅇ', label: 'Nasales y sonorantes', note: 'ㄹ = "r" de "pero". Tu ventaja más grande sobre angloparlantes.', color: 'var(--wl-on-panel-teal, #0891b2)' },
+  { kr: 'ㄱ ㄷ ㅂ → ㅋ ㅌ ㅍ → ㄲ ㄸ ㅃ', label: 'Familias tripartitas de consonantes', note: 'Simple → Aspirada (con aire) → Tensa (seca). Aprendes 3 a la vez.', color: 'var(--wl-on-panel-alert, #dc2626)' },
+  { kr: '글자', label: 'Consonante final (받침) debajo del bloque', note: '글 = ㄱ+ㅡ+ㄹ. El 받침 va debajo de la vocal. Lo viste en 글자, 오늘, 조금.', color: 'var(--wl-on-panel-purple, #7c3aed)' },
 ];
 
 const VOCAB_DAY2 = [
@@ -179,7 +179,7 @@ export default function Completion002({ onComplete }: Props) {
 
         {/* Step001 review reminder */}
         <div style={{ background: 'rgba(108,99,255,0.06)', border: '1px solid rgba(108,99,255,0.2)', borderRadius: 10, padding: '12px 16px', marginBottom: 20 }}>
-          <p style={{ margin: 0, fontSize: 12, color: '#6c63ff', fontWeight: 700, marginBottom: 4 }}>📘 También repasaste del Día 1:</p>
+          <p style={{ margin: 0, fontSize: 12, color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700, marginBottom: 4 }}>📘 También repasaste del Día 1:</p>
           <p style={{ margin: 0, fontSize: 12, color: 'var(--muted)' }}>
             학교 · 집 · 가요 · 저는 · 어디
           </p>
@@ -209,7 +209,7 @@ export default function Completion002({ onComplete }: Props) {
             onClick={() => korean(KEY_SENTENCE.kr, 0.85)}
             style={{ background: 'none', border: 'none', cursor: 'pointer', display: 'block', width: '100%' }}
           >
-            <div style={{ fontSize: 32, fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 800, color: '#6c63ff', marginBottom: 8, lineHeight: 1.3 }}>
+            <div style={{ fontSize: 32, fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 800, color: 'var(--wl-on-panel-link, #6c63ff)', marginBottom: 8, lineHeight: 1.3 }}>
               {KEY_SENTENCE.kr}
             </div>
             <div style={{ fontSize: 12, color: 'var(--muted)' }}>🔊 toca para escuchar</div>
@@ -223,7 +223,7 @@ export default function Completion002({ onComplete }: Props) {
               <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', justifyContent: 'center' }}>
                 {KEY_SENTENCE.breakdown.map((b, i) => (
                   <div key={i} style={{ background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 8, padding: '8px 12px', textAlign: 'center' }}>
-                    <div style={{ fontSize: 18, fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 700, color: '#6c63ff', marginBottom: 2 }}>{b.kr}</div>
+                    <div style={{ fontSize: 18, fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 700, color: 'var(--wl-on-panel-link, #6c63ff)', marginBottom: 2 }}>{b.kr}</div>
                     <div style={{ fontSize: 11, color: 'var(--muted)' }}>{b.es}</div>
                   </div>
                 ))}
@@ -260,8 +260,8 @@ export default function Completion002({ onComplete }: Props) {
       {/* Stats */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10, marginBottom: 28 }}>
         {[
-          { num: '40', label: 'Caracteres\nexplorados', color: '#6c63ff' },
-          { num: '9', label: 'Palabras\nnuevas', color: '#059669' },
+          { num: '40', label: 'Caracteres\nexplorados', color: 'var(--wl-on-panel-link, #6c63ff)' },
+          { num: '9', label: 'Palabras\nnuevas', color: 'var(--wl-on-panel-ok, #059669)' },
           { num: '6', label: 'Familias\narticulatorias', color: '#e6930a' },
         ].map(s => (
           <div key={s.label} style={{ background: 'var(--bg-2)', borderRadius: 12, padding: '16px 10px' }}>
@@ -273,7 +273,7 @@ export default function Completion002({ onComplete }: Props) {
 
       {/* What you can do now */}
       <div style={{ background: 'rgba(5,150,105,0.06)', border: '1px solid rgba(5,150,105,0.2)', borderRadius: 12, padding: '16px 20px', marginBottom: 24, textAlign: 'left' }}>
-        <p style={{ margin: '0 0 10px', fontSize: 13, fontWeight: 700, color: '#059669' }}>✅ Ahora puedes:</p>
+        <p style={{ margin: '0 0 10px', fontSize: 13, fontWeight: 700, color: 'var(--wl-on-panel-ok, #059669)' }}>✅ Ahora puedes:</p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 7 }}>
           {[
             '🧱 Reconocer la estructura de un bloque silábico coreano',

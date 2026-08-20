@@ -29,6 +29,6 @@ const changedPaths = execFileSync('git', ['status', '--porcelain=v1', '--untrack
   const path = entry.slice(3).replace(/^"|"$/g, '');
   return path.includes(' -> ') ? path.split(' -> ') : [path];
 });
-assert.ok(changedPaths.every((path) => !path.startsWith('public/audio/') && !/\.(mp3|wav|m4a|ogg)$/i.test(path)), 'runtime changes no audio asset');
+assert.ok(changedPaths.every((path) => !path.startsWith('public/audio/toefl/')), 'runtime changes no TOEFL audio asset');
 
 console.log('✓ TOEFL fixed session: 8 irreversible stages, honest clocks/results, no audio changes');

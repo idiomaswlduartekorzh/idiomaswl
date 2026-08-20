@@ -69,7 +69,7 @@ export default function LessonFrame({ idioma, vocab, pasos, stepId }: LessonFram
                 style={{
                   width: 32,
                   height: 32,
-                  background: 'var(--ink)',
+                  background: 'var(--ink-bg)',
                   color: 'var(--accent-ink)',
                   borderRadius: 6,
                   display: 'grid',

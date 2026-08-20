@@ -1,0 +1,479 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-b1-a-rotina-que-eu-nao-escolhi",
+  "status": "published",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Portugués B1"
+  },
+  "slug": "a-rotina-que-eu-nao-escolhi",
+  "series": {
+    "id": "portugues-b1-lectura-10",
+    "episode": 8,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-b1-como-dar-uma-noticia-ruim",
+    "nextExerciseId": "pt-b1-a-preposicao-que-mudou-o-contrato"
+  },
+  "classification": {
+    "genre": "crónica personal",
+    "topic": "cuidar de alguien",
+    "intent": "learning",
+    "tags": [
+      "portugues b1",
+      "lectura",
+      "gerundio",
+      "verbos reflexivos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La rutina que no elegí"
+    },
+    "intro": {
+      "es": "Alguien que organiza su día alrededor de la medicación de su madre y descubre algo inesperado en esa rutina. Lectura de portugués B1."
+    },
+    "mission": {
+      "es": "Averigua qué encontró de bueno en una rutina que no eligió."
+    },
+    "targetText": "Faz dois anos e quatro meses que eu me levanto às seis e vinte. Não é escolha minha. Minha mãe toma o primeiro remédio às seis e meia, em jejum, e precisa esperar quarenta minutos antes de comer. Se eu me atrasar dez minutos, o café da manhã dela atrasa dez, o segundo remédio atrasa dez, e à noite a conta chega. Ela dorme mal e eu também. No começo eu vivia me irritando com isso. Eu estava perdendo o que eu chamava de manhã: aquele tempo antes do dia começar, quando eu ficava lendo ou simplesmente olhando pela janela. Passei meses me sentindo roubado. Contava para os amigos, e eles diziam que eu era um bom filho, o que me irritava ainda mais, porque eu não estava me sentindo bom filho nenhum. Eu estava me sentindo preso. O que mudou não foi a rotina. Foi uma coisa pequena. Um dia, esperando os quarenta minutos, eu me sentei na cozinha com ela em vez de ir mexer no celular no outro cômodo. Não conversamos nada de especial. Ela estava contando de uma vizinha que tinha se mudado em 1987. Eu já conhecia a história. Ouvi de novo. No dia seguinte me sentei outra vez. Levei um tempo para perceber outra coisa. Naqueles quarenta minutos ela também está esperando. Não está sendo cuidada, não está tomando remédio, não está sendo levada a lugar nenhum. Está esperando, igual a mim, e isso nos deixa em pé de igualdade pela primeira vez no dia. O resto do tempo eu sou quem organiza e ela é quem depende. Na cozinha, das seis e meia às sete e dez, nós somos duas pessoas sentadas esperando a mesma coisa. Hoje esses quarenta minutos são a única parte do dia em que eu não estou correndo atrás de nada. Meu irmão me perguntou uma vez se eu não queria contratar alguém para as manhãs. Eu disse que sim, que queria, e que ele podia dividir o custo. Ele mudou de assunto. Não insisti, e essa também é uma escolha minha, embora eu prefira não pensar muito nela. Não virei uma pessoa melhor e não me reconciliei com a situação. Continuo cansado. Continuo achando injusto que isso tenha caído sobre mim e não sobre meu irmão, que mora a quatro quadras e aparece aos domingos. Mas eu deixei de esperar que a rotina acabe para viver. Aprendi isso sem querer, esperando quarenta minutos, todos os dias, sentado numa cadeira de cozinha.",
+    "wordCount": 413,
+    "estimatedMinutes": 17,
+    "objectives": [
+      {
+        "es": "Usar el gerundio en perífrasis: vivia me irritando, estava perdendo, esperando."
+      },
+      {
+        "es": "Colocar los pronombres reflexivos: me levanto, me sentei, se mudou."
+      },
+      {
+        "es": "Distinguir la reconciliación real del cambio que el narrador admite."
+      }
+    ],
+    "grammarFocus": [
+      "gerundio-b1",
+      "verbos-reflexos-b1",
+      "gerundio-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "remédio",
+        "lemma": "remédio",
+        "glosses": {
+          "es": "medicamento. ¡No es un «remedio» casero!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "jejum",
+        "lemma": "jejum",
+        "glosses": {
+          "es": "ayuno; em jejum = en ayunas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "me atrasar",
+        "lemma": "atrasar-se",
+        "glosses": {
+          "es": "retrasarme"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "roubado",
+        "lemma": "roubar",
+        "glosses": {
+          "es": "robado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "preso",
+        "lemma": "preso",
+        "glosses": {
+          "es": "atrapado, encerrado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cômodo",
+        "lemma": "cômodo",
+        "glosses": {
+          "es": "habitación, estancia. ¡No es «cómodo»!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "quadras",
+        "lemma": "quadra",
+        "glosses": {
+          "es": "manzanas de casas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "irmão",
+        "lemma": "irmão",
+        "glosses": {
+          "es": "hermano"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En Brasil el cuidado de los mayores recae mayoritariamente en la familia y sin apoyo profesional, y suele concentrarse en un solo hijo, no repartido entre hermanos."
+    },
+    "spanishSpeakerNote": {
+      "es": "Dos falsos amigos juntos: «remédio» es el medicamento, y «cômodo» es una habitación, no algo confortable. Y fíjate en la perífrasis «vivia me irritando»: literalmente «vivía irritándome», es decir, me irritaba constantemente."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo en portugués que desarrolla una idea y cambia de dirección, distinguir el hecho de la interpretación, y justificar una inferencia cruzando dos pasajes."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares",
+      "comparativos-superlativos-a2",
+      "condicional-a2",
+      "conjuncoes-logicas-a2",
+      "diminutivos-aumentativos-a2",
+      "expressoes-com-fazer-a2",
+      "expressoes-tempo-a2",
+      "futuro-do-presente-a2",
+      "gerundio-a2",
+      "ha-faz-tempo-a2",
+      "para-vs-por-a2",
+      "preterito-imperfeito-a2",
+      "preterito-perfeito-irregular-a2",
+      "pronomes-obliquos-a2",
+      "pronomes-relativos-a2",
+      "ser-vs-estar-a2",
+      "subjuntivo-presente-a2",
+      "verbo-ficar-a2",
+      "verbos-modais-a2",
+      "verbos-reflexivos-a2",
+      "voz-passiva-a2",
+      "comparativos-superlativos-b1",
+      "condicional-b1",
+      "conectivos-b1",
+      "conjuntivo-imperfeito-b1",
+      "discurso-indireto-b1",
+      "futuro-conjuntivo-b1",
+      "futuro-presente-b1",
+      "gerundio-b1",
+      "imperativo-b1",
+      "participio-passado-b1",
+      "periodo-hipotico-b1",
+      "preposicoes-b1",
+      "preterito-perfeito-vs-imperfeito-b1",
+      "pronomes-obliquos-b1",
+      "regencia-verbal-b1",
+      "ser-vs-estar-b1",
+      "subjuntivo-presente-b1",
+      "tempos-compostos-b1",
+      "verbos-reflexos-b1",
+      "voz-passiva-b1"
+    ],
+    "disallowedGrammar": [
+      "registro literario",
+      "mesóclise",
+      "português europeu"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 12.1,
+      "maxSentenceWords": 28,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Prosa B1 con tiempos compuestos, futuro do subjuntivo y período hipotético. Sin mesóclise ni norma europea. Inferencia moderada."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta la crónica?",
+      "options": [
+        {
+          "id": "esperar",
+          "text": "Que dejó de esperar a que la rutina acabara para empezar a vivir"
+        },
+        {
+          "id": "reconciliacion",
+          "text": "Que se reconcilió con la situación y ya no le pesa"
+        },
+        {
+          "id": "hermano",
+          "text": "Que consiguió que su hermano se hiciera cargo"
+        }
+      ],
+      "answer": "esperar",
+      "evidence": "Mas eu deixei de esperar que a rotina acabe para viver.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo dice después de negar expresamente que se haya reconciliado con nada."
+        },
+        "incorrect": {
+          "es": "Dice que no se reconcilió y que sigue cansado. Y el hermano sigue apareciendo solo los domingos."
+        },
+        "strategy": {
+          "es": "Cuando un texto niega varias conclusiones antes de dar la suya, la suya es la que viene tras el «mas»."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto hay que esperar entre el primer medicamento y el desayuno?",
+      "options": [
+        {
+          "id": "40",
+          "text": "Cuarenta minutos"
+        },
+        {
+          "id": "20",
+          "text": "Veinte minutos"
+        },
+        {
+          "id": "10",
+          "text": "Diez minutos"
+        }
+      ],
+      "answer": "40",
+      "evidence": "precisa esperar quarenta minutos antes de comer",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Los diez son el retraso que se acumula si él se levanta tarde."
+        },
+        "incorrect": {
+          "es": "Los diez minutos son el efecto dominó del retraso. Busca la espera obligatoria."
+        },
+        "strategy": {
+          "es": "Distingue la duración fija de la variable. Una es una norma médica; la otra, una consecuencia."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «ir mexer no celular no outro cômodo». ¿Qué es un «cômodo»?",
+      "options": [
+        {
+          "id": "habitacion",
+          "text": "Una habitación de la casa"
+        },
+        {
+          "id": "sofa",
+          "text": "Un sofá cómodo"
+        },
+        {
+          "id": "descanso",
+          "text": "Un rato de descanso"
+        }
+      ],
+      "answer": "habitacion",
+      "evidence": "eu me sentei na cozinha com ela em vez de ir mexer no celular no outro cômodo",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. La preposición «no» lo marca como lugar, y se opone a «na cozinha»."
+        },
+        "incorrect": {
+          "es": "Se parece a «cómodo», pero va con la preposición «no» y se opone a la cocina. Es un lugar."
+        },
+        "strategy": {
+          "es": "Si un falso amigo se opone a un lugar concreto en la misma frase, también es un lugar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué le irritaba que los amigos lo llamaran buen hijo?",
+      "options": [
+        {
+          "id": "sentia",
+          "text": "Porque él no se sentía así: se sentía atrapado"
+        },
+        {
+          "id": "falso",
+          "text": "Porque sabía que lo decían sin creerlo"
+        },
+        {
+          "id": "hermano",
+          "text": "Porque su hermano recibía los mismos elogios"
+        }
+      ],
+      "answer": "sentia",
+      "evidence": "eles diziam que eu era um bom filho, o que me irritava ainda mais, porque eu não estava me sentindo bom filho nenhum. Eu estava me sentindo preso.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la distancia entre lo que le decían y lo que sentía es justo lo que le molestaba."
+        },
+        "incorrect": {
+          "es": "No pone en duda la sinceridad de sus amigos ni menciona elogios al hermano. Lee las dos frases seguidas."
+        },
+        "strategy": {
+          "es": "Cuando alguien rechaza un elogio, la razón suele estar en cómo se siente realmente. Búscala."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: reconoce que sigue cansado y que le sigue pareciendo injusto el reparto con su hermano.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Continuo cansado. Continuo achando injusto que isso tenha caído sobre mim e não sobre meu irmão",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y esa honestidad es lo que hace creíble el cambio que sí admite."
+        },
+        "incorrect": {
+          "es": "Busca las dos frases seguidas que empiezan con «Continuo». Lo dice sin rodeos."
+        },
+        "strategy": {
+          "es": "La repetición de un mismo verbo al inicio de dos frases seguidas marca lo que no ha cambiado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué cuenta que ya conocía la historia de la vecina de 1987?",
+      "options": [
+        {
+          "id": "escuchar",
+          "text": "Para mostrar que lo importante no era la conversación sino estar allí"
+        },
+        {
+          "id": "memoria",
+          "text": "Para señalar que su madre repite cosas por la edad"
+        },
+        {
+          "id": "aburrido",
+          "text": "Para explicar por qué prefería el móvil"
+        }
+      ],
+      "answer": "escuchar",
+      "evidence": "Não conversamos nada de especial … Eu já conhecia a história. Ouvi de novo. No dia seguinte me sentei outra vez.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El texto insiste en que no hubo nada especial, y aun así volvió al día siguiente."
+        },
+        "incorrect": {
+          "es": "No hay juicio sobre la memoria de su madre, y volvió a sentarse. Fíjate en «No dia seguinte»."
+        },
+        "strategy": {
+          "es": "Si un texto resta importancia al contenido de una escena, el valor está en el gesto, no en lo dicho."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en portugués sobre una rutina que no elegiste. Usa cuatro gerundios en perífrasis y cinco verbos reflexivos."
+    },
+    "minWords": 70,
+    "maxWords": 140,
+    "hints": [
+      "Faz… que eu me levanto às…",
+      "No começo eu vivia me irritando…",
+      "Eu estava me sentindo…",
+      "Mas eu deixei de esperar…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués B1: La rutina que no elegí | WeLearn"
+    },
+    "description": {
+      "es": "Lee una crónica personal en portugués de Brasil B1 y practica el gerundio y los verbos reflexivos. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/b1/lectura/a-rotina-que-eu-nao-escolhi",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-b1-como-dar-uma-noticia-ruim",
+      "pt-b1-a-preposicao-que-mudou-o-contrato"
+    ]
+  }
+}

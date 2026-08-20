@@ -69,7 +69,7 @@ const FAMILIES: LetterFamily[] = [
     id: 'core-vowels',
     name: 'Vocales esenciales',
     subtitle: 'La base de todo bloque silabico',
-    color: '#059669',
+    color: 'var(--wl-on-panel-ok, #059669)',
     bg: 'rgba(5,150,105,0.08)',
     icon: 'A',
     teachingNote: 'Cada vocal se escribe con ㅇ (consonante muda) al inicio. Asi: ㅏ nunca va sola — siempre es 아. Esto permite escribir silabas reales desde el primer momento.',
@@ -86,7 +86,7 @@ const FAMILIES: LetterFamily[] = [
     id: 'nasals',
     name: 'Nasales y sonorantes',
     subtitle: 'Las mas faciles — y ㄹ es tu ventaja',
-    color: '#6c63ff',
+    color: 'var(--wl-on-panel-link, #6c63ff)',
     bg: 'rgba(108,99,255,0.08)',
     icon: 'N',
     teachingNote: '¡ㄹ es tu mayor ventaja! Suena exactamente como la "r" de "pero" o "cara". Los angloparlantes batallan semanas con esto. Para ti es natural.',
@@ -115,7 +115,7 @@ const FAMILIES: LetterFamily[] = [
     id: 'fricatives',
     name: 'Fricativas y africada',
     subtitle: 'Sonidos con anclas claras en espanol',
-    color: '#0891b2',
+    color: 'var(--wl-on-panel-teal, #0891b2)',
     bg: 'rgba(8,145,178,0.08)',
     icon: 'F',
     teachingNote: 'ㅅ antes de ㅣ suena como "sh". ㅎ es como la "j" espanola suavizada. ㅈ se parece a la "y" argentina.',
@@ -129,7 +129,7 @@ const FAMILIES: LetterFamily[] = [
     id: 'aspirated',
     name: 'Consonantes aspiradas',
     subtitle: 'Con aire — el trazo extra',
-    color: '#dc2626',
+    color: 'var(--wl-on-panel-alert, #dc2626)',
     bg: 'rgba(220,38,38,0.08)',
     icon: 'H',
     teachingNote: 'Prueba: pon la mano frente a la boca. Di ㅍ. Debes sentir el chorro de aire — como al apagar una vela. Eso es la aspiracion.',
@@ -144,7 +144,7 @@ const FAMILIES: LetterFamily[] = [
     id: 'tense',
     name: 'Consonantes tensas',
     subtitle: 'Seco, explosivo, sin aire — el tercer nivel',
-    color: '#7c3aed',
+    color: 'var(--wl-on-panel-purple, #7c3aed)',
     bg: 'rgba(124,58,237,0.08)',
     icon: 'T',
     teachingNote: 'No tienen equivalente en espanol. Son el tercer nivel de cada familia. Sin nada de aire, con tension en la garganta. Se aprenden por contraste auditivo.',
@@ -285,7 +285,7 @@ function LetterCard({
               {letter.char}
             </span>
             {letter.isHard && (
-              <span style={{ fontSize: 10, background: 'rgba(220,38,38,0.1)', color: '#dc2626', borderRadius: 6, padding: '2px 6px', fontWeight: 700 }}>
+              <span style={{ fontSize: 10, background: 'rgba(220,38,38,0.1)', color: 'var(--wl-on-panel-alert, #dc2626)', borderRadius: 6, padding: '2px 6px', fontWeight: 700 }}>
                 dificil
               </span>
             )}
@@ -700,7 +700,7 @@ function ReadingDrill({ onComplete, korean }: { onComplete: () => void; korean: 
       </p>
       <p style={{ margin: '0 0 20px', fontSize: 13, color: 'var(--ink)' }}>¿Como se romaniza esta silaba/palabra?</p>
 
-      <div style={{ textAlign: 'center', fontSize: 80, fontFamily: "'Noto Sans KR', sans-serif", color: '#6c63ff', fontWeight: 700, lineHeight: 1, marginBottom: 28 }}>
+      <div style={{ textAlign: 'center', fontSize: 80, fontFamily: "'Noto Sans KR', sans-serif", color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700, lineHeight: 1, marginBottom: 28 }}>
         {item.syllable}
       </div>
 
@@ -772,7 +772,7 @@ function StrokeQuiz({ onComplete }: { onComplete: () => void }) {
         <p style={{ margin: '0 0 8px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', fontWeight: 700 }}>
           ESCRITURA GUIADA — Resultado
         </p>
-        <div style={{ fontSize: 56, fontFamily: "'Noto Sans KR', sans-serif", color: '#6c63ff', marginBottom: 12 }}>쓰기</div>
+        <div style={{ fontSize: 56, fontFamily: "'Noto Sans KR', sans-serif", color: 'var(--wl-on-panel-link, #6c63ff)', marginBottom: 12 }}>쓰기</div>
         <h3 style={{ fontSize: 22, fontWeight: 700, marginBottom: 16 }}>{score} / {STROKE_QUIZ.length}</h3>
         <button
           type="button"
@@ -895,7 +895,7 @@ function FinalTest({ onComplete, korean }: { onComplete: () => void; korean: (t:
           {score} / {FINAL_TEST.length}
         </h3>
         {passed ? (
-          <p style={{ fontSize: 15, color: '#2d9b4e', marginBottom: 24, fontWeight: 600 }}>
+          <p style={{ fontSize: 15, color: 'var(--wl-on-panel-ok, #2d9b4e)', marginBottom: 24, fontWeight: 600 }}>
             ¡Puedes leer Hangul basico!
           </p>
         ) : (
@@ -939,7 +939,7 @@ function FinalTest({ onComplete, korean }: { onComplete: () => void; korean: (t:
       </p>
 
       <div
-        style={{ textAlign: 'center', fontSize: 52, fontFamily: "'Noto Sans KR', sans-serif", color: '#7c3aed', fontWeight: 700, lineHeight: 1, marginBottom: 8, cursor: 'pointer' }}
+        style={{ textAlign: 'center', fontSize: 52, fontFamily: "'Noto Sans KR', sans-serif", color: 'var(--wl-on-panel-purple, #7c3aed)', fontWeight: 700, lineHeight: 1, marginBottom: 8, cursor: 'pointer' }}
         onClick={() => korean(item.korean)}
       >
         {item.korean}
@@ -1209,7 +1209,7 @@ export default function ContextualInput002({ onComplete }: Props) {
   // ── Complete ───────────────────────────────────────────────────────────────────
   return (
     <section style={{ maxWidth: 460, margin: '0 auto', padding: '3rem 1rem', textAlign: 'center' }}>
-      <div style={{ fontSize: 64, fontFamily: "'Noto Sans KR', sans-serif", color: '#2d9b4e', marginBottom: 16 }}>한글</div>
+      <div style={{ fontSize: 64, fontFamily: "'Noto Sans KR', sans-serif", color: 'var(--wl-on-panel-ok, #2d9b4e)', marginBottom: 16 }}>한글</div>
       <h3 style={{ fontSize: 22, fontWeight: 700, marginBottom: 10 }}>¡Puedes leer Hangul basico!</h3>
       <p style={{ color: 'var(--muted)', fontSize: 14, marginBottom: 8, lineHeight: 1.6 }}>
         Has completado las 6 familias, la lectura guiada, el repaso de trazos y la prueba final.

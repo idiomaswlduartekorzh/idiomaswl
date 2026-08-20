@@ -66,6 +66,7 @@
 .sectionDark .h2 { color: #fff; }
 .sectionDark .sectionEyebrow { color: #f87171; }
 .sectionDark .sectionSub { color: rgba(255,255,255,0.6); }
+.sectionDark .levelTitle { color: #fff; }
 
 /* ─── Hero ──────────────────────────────────────────────────────────────────── */
 .hero {
@@ -612,4 +613,28 @@
   .heroCtas { flex-direction: column; align-items: flex-start; }
   .founderBox { padding: 2rem 1.25rem; }
   .ctaBtns { flex-direction: column; align-items: center; }
+}
+
+/* Route-scoped bridge to the shared graphite/red dark theme. */
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .page :is(.accent, .eyebrow, .sectionEyebrow, .topikSkills span, .faqQ::after) {
+  color: var(--wl-accent) !important;
+}
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .page :is(.metodNum, .levelBadge) {
+  color: var(--wl-accent) !important;
+  border-color: var(--wl-border);
+  background: var(--wl-surface-raised);
+}
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .page :is(.heroBadge, .founderBtn) {
+  color: #fff;
+  background: var(--wl-accent-action);
+  border-color: var(--wl-accent-action);
+}
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .page :is(.heroKorean, .ctaKorean, .founderNote) {
+  color: rgba(255,255,255,.68);
+}
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .page :is(.heroSub, .sectionDark .sectionSub, .ctaSub, .faqA) {
+  color: rgba(255,255,255,.74);
+}
+:global(:root[data-wl-surface="editorial"][data-theme="dark"]) .page :is(.hero, .sectionDark, .proofStrip, .ctaSection) {
+  background: var(--wl-inverse);
 }

@@ -1,0 +1,451 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-a1-v-shkole-no-na-rabote",
+  "status": "published",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Ruso A1"
+  },
+  "slug": "v-shkole-no-na-rabote",
+  "series": {
+    "id": "ruso-a1-lectura-10",
+    "episode": 5,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-a1-kuryer-timur",
+    "nextExerciseId": "ru-a1-skolko-stoit-khleb"
+  },
+  "classification": {
+    "genre": "cuaderno de estudiante",
+    "topic": "la lista de qué palabras llevan в y cuáles на",
+    "intent": "learning",
+    "tags": [
+      "ruso a1",
+      "lectura",
+      "preposiciones в y на",
+      "dirección"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "En la escuela, pero «en» el trabajo"
+    },
+    "intro": {
+      "es": "El ruso dice «в школе» pero «на работе». Nadie sabe exactamente por qué, así que se hace una lista. Lectura de ruso A1."
+    },
+    "mission": {
+      "es": "Averigua qué contesta el narrador cuando le preguntan dónde está."
+    },
+    "targetText": "Русский язык говорит «в школе», но «на работе». Почему? Я не знаю. Никто точно не знает.\n\nМоя учительница Ольга говорит: «Это надо просто запомнить». Я запоминаю.\n\nЯ делаю список. В телефоне.\n\nЯ говорю «в»: в школе, в магазине, в банке, в театре, в аптеке, в метро.\n\nЯ говорю «на»: на работе, на почте, на улице, на вокзале, на кухне, на уроке.\n\nЕсть слова, где я всегда ошибаюсь. «На заводе», не «в заводе». «В университете», не «на университете».\n\nСегодня Ольга спрашивает: «Где ты сейчас?» Я отвечаю: «Я на уроке, в школе, на втором этаже». Она смеётся и говорит: «Правильно. Три раза правильно».",
+    "wordCount": 101,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Distinguir в de на con nombres de lugar."
+      },
+      {
+        "es": "Cambiar de caso según lugar o dirección: в школе frente a в школу."
+      },
+      {
+        "es": "Aceptar que una regla se aprende de memoria cuando no hay regla."
+      }
+    ],
+    "grammarFocus": [
+      "preposiciones-lugar-v-na",
+      "preposiciones-direccion"
+    ],
+    "vocabulary": [
+      {
+        "surface": "запомнить",
+        "lemma": "запомнить",
+        "glosses": {
+          "es": "aprender de memoria"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "список",
+        "lemma": "список",
+        "glosses": {
+          "es": "lista"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "аптеке",
+        "lemma": "аптека",
+        "glosses": {
+          "es": "farmacia"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "вокзале",
+        "lemma": "вокзал",
+        "glosses": {
+          "es": "estación de trenes"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "заводе",
+        "lemma": "завод",
+        "glosses": {
+          "es": "fábrica"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ошибаюсь",
+        "lemma": "ошибаться",
+        "glosses": {
+          "es": "me equivoco"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "этаже",
+        "lemma": "этаж",
+        "glosses": {
+          "es": "planta, piso de un edificio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "смеётся",
+        "lemma": "смеяться",
+        "glosses": {
+          "es": "se ríe"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El reparto entre в y на no tiene una regla completa ni para los hablantes nativos: hay listas y hay excepciones. Los manuales rusos lo enseñan como vocabulario, no como gramática."
+    },
+    "spanishSpeakerNote": {
+      "es": "Las dos se traducen por «en», y no hay atajo: «в школе» pero «на работе». Lo que sí es regla es el caso: con lugar va prepositivo («в школе»), con dirección va acusativo («в школу»)."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en ruso sobre la vida cotidiana, reconocer las letras cirílicas que se parecen a las latinas sin serlo, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento"
+    ],
+    "disallowedGrammar": [
+      "pasado verbal",
+      "aspecto perfectivo",
+      "participios",
+      "gerundios (деепричастия)",
+      "condicional"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 6.3,
+      "maxSentenceWords": 16,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo, imperativo y futuro con быть. Sin pasado, sin aspecto y sin participios. Acento (ударение) sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta el texto?",
+      "options": [
+        {
+          "id": "lista",
+          "text": "Que ante una regla que no existe, la solución es una lista de memoria"
+        },
+        {
+          "id": "profesora",
+          "text": "Que su profesora no sabe explicar la gramática"
+        },
+        {
+          "id": "facil",
+          "text": "Que el ruso es más fácil de lo que parece"
+        }
+      ],
+      "answer": "lista",
+      "evidence": "Никто точно не знает … «Это надо просто запомнить». Я запоминаю. Я делаю список.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto no lo presenta como derrota: es un método."
+        },
+        "incorrect": {
+          "es": "La profesora sí explica —dice que hay que memorizarlo— y el texto no dice que sea fácil."
+        },
+        "strategy": {
+          "es": "Cuando el texto admite que no hay explicación, lo que viene después es la solución práctica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuál de estas va con «на» según el texto?",
+      "options": [
+        {
+          "id": "pochta",
+          "text": "на почте (en correos)"
+        },
+        {
+          "id": "bank",
+          "text": "в банке (en el banco)"
+        },
+        {
+          "id": "apteka",
+          "text": "в аптеке (en la farmacia)"
+        }
+      ],
+      "answer": "pochta",
+      "evidence": "Я говорю «на»: на работе, на почте, на улице, на вокзале, на кухне, на уроке.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: correos va en la lista de «на»."
+        },
+        "incorrect": {
+          "es": "El banco y la farmacia están en la lista de «в». Compara las dos listas."
+        },
+        "strategy": {
+          "es": "Cuando el texto da dos listas, localiza la palabra en la lista correcta antes de responder."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «Это надо просто запомнить». ¿Qué significa el verbo?",
+      "options": [
+        {
+          "id": "memorizar",
+          "text": "Aprenderlo de memoria"
+        },
+        {
+          "id": "entender",
+          "text": "Entenderlo con una regla"
+        },
+        {
+          "id": "escribir",
+          "text": "Escribirlo en el cuaderno"
+        }
+      ],
+      "answer": "memorizar",
+      "evidence": "«Это надо просто запомнить». Я запоминаю.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y la frase siguiente lo confirma: «я запоминаю»."
+        },
+        "incorrect": {
+          "es": "Viene después de decir que nadie sabe la razón: no es entender, es retener."
+        },
+        "strategy": {
+          "es": "Si el narrador repite el verbo en primera persona, ya tienes su significado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué la profesora dice «tres veces bien»?",
+      "options": [
+        {
+          "id": "tres",
+          "text": "Porque en una sola respuesta acertó las tres preposiciones"
+        },
+        {
+          "id": "nota",
+          "text": "Porque es la tercera vez que aprueba"
+        },
+        {
+          "id": "clase",
+          "text": "Porque lleva tres clases sin faltar"
+        }
+      ],
+      "answer": "tres",
+      "evidence": "Я отвечаю: «Я на уроке, в школе, на втором этаже». Она смеётся и говорит: «Правильно. Три раза правильно».",
+      "feedback": {
+        "correct": {
+          "es": "Sí: на уроке, в школе, на этаже. Tres aciertos en una frase."
+        },
+        "incorrect": {
+          "es": "No se habla de notas ni de asistencia. Cuenta las preposiciones de su respuesta."
+        },
+        "strategy": {
+          "es": "Si un personaje cuenta algo («tres veces»), busca qué hay tres veces en la frase anterior."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: en ruso se dice «в заводе» para decir «en la fábrica».",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "«На заводе», не «в заводе».",
+      "feedback": {
+        "correct": {
+          "es": "Falso: es «на заводе», y el texto lo pone justamente como error frecuente."
+        },
+        "incorrect": {
+          "es": "Busca el párrafo de los errores. La forma correcta va primero y la incorrecta después."
+        },
+        "strategy": {
+          "es": "En la fórmula «X, не Y», la primera es la correcta y la segunda es el error."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el cuaderno.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Plantea la pregunta: por qué в y por qué на"
+        },
+        {
+          "id": "p2",
+          "text": "La profesora dice que hay que memorizarlo"
+        },
+        {
+          "id": "p3",
+          "text": "Las dos listas, la de в y la de на"
+        },
+        {
+          "id": "p4",
+          "text": "La respuesta con tres preposiciones seguidas"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Русский язык говорит «в школе», но «на работе». Почему? … «Это надо просто запомнить» … Я говорю «в»: … Сегодня Ольга спрашивает: «Где ты сейчас?»",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: pregunta, consejo, listas y prueba."
+        },
+        "incorrect": {
+          "es": "Fíjate en dónde aparecen las dos listas y dónde el «Сегодня»."
+        },
+        "strategy": {
+          "es": "La palabra «сегодня» marca la escena final: lo que ocurre hoy va al final."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en ruso diciendo dónde estás en distintos momentos del día. Usa cuatro veces «в» y cuatro veces «на» con lugares distintos."
+    },
+    "minWords": 25,
+    "maxWords": 55,
+    "hints": [
+      "Я в школе.",
+      "Я на работе.",
+      "Утром я на уроке.",
+      "Вечером я в магазине."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso A1: en la escuela, pero «en» el trabajo | WeLearn"
+    },
+    "description": {
+      "es": "Lee un cuaderno de estudiante en ruso A1 y practica las preposiciones в y на de lugar y de dirección. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/a1/lectura/v-shkole-no-na-rabote",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-a1-kuryer-timur",
+      "ru-a1-skolko-stoit-khleb"
+    ]
+  }
+}

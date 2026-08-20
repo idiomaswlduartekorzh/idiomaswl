@@ -125,7 +125,7 @@ export default function MicroChallenge({
               to   { opacity:1; transform: translateY(0) }
             }
           `}</style>
-          <p style={{ margin: 0, fontSize: 13, color: '#059669', fontWeight: 700 }}>
+          <p style={{ margin: 0, fontSize: 13, color: 'var(--wl-on-panel-ok, #059669)', fontWeight: 700 }}>
             ✅ Correcto
           </p>
           {explanation && (
@@ -151,7 +151,7 @@ export default function MicroChallenge({
           border: '1px solid rgba(220,38,38,0.2)',
           borderRadius: 10, padding: '12px 16px',
         }}>
-          <p style={{ margin: 0, fontSize: 13, color: '#dc2626', fontWeight: 700 }}>
+          <p style={{ margin: 0, fontSize: 13, color: 'var(--wl-on-panel-alert, #dc2626)', fontWeight: 700 }}>
             No exactamente
           </p>
           <p style={{ margin: '4px 0 0', fontSize: 12, color: 'var(--muted)' }}>

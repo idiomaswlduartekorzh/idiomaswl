@@ -120,10 +120,10 @@ export default function MiVocabularioClient() {
               </>
             ) : (
               <>
-                <div style={{ fontSize: '0.72rem', color: '#2563eb', fontFamily: 'var(--mono)', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.5rem' }}>
+                <div style={{ fontSize: '0.72rem', color: 'var(--wl-on-panel-link, #2563eb)', fontFamily: 'var(--mono)', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.5rem' }}>
                   Traducción
                 </div>
-                <div style={{ fontSize: '2rem', fontWeight: 800, color: '#2563eb', marginBottom: '0.5rem' }}>
+                <div style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--wl-on-panel-link, #2563eb)', marginBottom: '0.5rem' }}>
                   {fc.word.translation}
                 </div>
                 {fc.word.context && (

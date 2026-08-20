@@ -1,0 +1,493 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-b1-jeokhiji-anheun-gyuchik",
+  "status": "published",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Coreano B1",
+    "topik": 3,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. B1 se sitúa alrededor del TOPIK II nivel 3, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "jeokhiji-anheun-gyuchik",
+  "series": {
+    "id": "coreano-b1-lectura-10",
+    "episode": 7,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-b1-tongyeoksa-ui-hanabeon",
+    "nextExerciseId": "ko-b1-abeoji-wa-cheonjangyi-mun"
+  },
+  "classification": {
+    "genre": "columna de opinión",
+    "topic": "reglas tácitas en el trabajo",
+    "intent": "learning",
+    "tags": [
+      "coreano b1",
+      "lectura",
+      "obligación 어야 하다",
+      "posibilidad 수 있다"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Las normas que nadie escribió"
+    },
+    "intro": {
+      "es": "Una empresa publicó su manual y descubrió que las normas de verdad eran otras seis, y ninguna estaba escrita. Lectura de coreano B1."
+    },
+    "mission": {
+      "es": "Averigua qué pasó cuando pusieron por escrito las reglas no escritas."
+    },
+    "targetText": "모든 회사에는 규칙이 두 가지 있어요. 적힌 규칙과 적히지 않은 규칙이에요. 적힌 규칙은 읽을 수 있어요. 적히지 않은 규칙은 배워야 해요. 그리고 보통 실수를 하고 나서 배워요. 제가 아는 한 회사가 재미있는 실험을 했어요. 직원 백이십 명에게 질문을 하나 했어요. 이 회사에서 새로 온 사람이 꼭 알아야 하는 것을 하나만 쓰세요. 답이 백 개 넘게 왔어요. 하지만 정리해 보니까 여섯 가지였어요. 첫째, 부장님이 회의에서 좋은 생각이라고 말하면 그건 반대라는 뜻이에요. 둘째, 금요일 오후에는 새 일을 시작하지 않아요. 셋째, 점심을 혼자 먹어도 괜찮아요. 아무도 신경 쓰지 않아요. 넷째, 휴가를 신청할 때는 이유를 쓸 필요가 없어요. 다섯째, 회의 시간에 늦으면 사과해야 해요. 하지만 이메일에 늦게 답하는 것은 아무도 문제라고 생각하지 않아요. 여섯째, 모르는 것이 있으면 물어봐야 해요. 혼자 세 시간 찾는 것보다 오 분 물어보는 것이 낫다고 다들 생각해요. 회사는 이 여섯 가지를 종이에 적어서 새 직원에게 줬어요. 결과는 대부분 좋았어요. 새로 온 사람들은 삼 개월 동안 실수를 훨씬 적게 했어요. 특히 첫 번째 규칙이 도움이 되었어요. 전에는 새 직원이 부장님 말을 그대로 믿고 일을 시작했어요. 그리고 이 주 후에 다시 해야 했어요. 지금은 그런 일이 없어요. 인사팀은 이 종이를 다른 부서에도 보냈어요. 그리고 여기서 이상한 일이 생겼어요. 세 번째 규칙이 문제가 되었어요. 점심을 혼자 먹어도 괜찮다고 적혀 있으니까 사람들이 갑자기 그것을 의식하게 되었어요. 전에는 그냥 자연스러웠어요. 이제는 결정이 되었어요. 어떤 규칙은 적으면 힘을 잃어요. 저는 그 회사가 다섯 가지만 적어야 했다고 생각해요.",
+    "wordCount": 221,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Expresar obligación con 어야 하다 y su negación con 필요가 없다."
+      },
+      {
+        "es": "Expresar posibilidad y permiso con 수 있다 y 아도 괜찮다."
+      },
+      {
+        "es": "Seguir un texto que expone una lista y luego la cuestiona."
+      }
+    ],
+    "grammarFocus": [
+      "obligacion-eoyahada-b1",
+      "posibilidad-su-itda-b1",
+      "obligacion-aya-hada-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "적힌",
+        "lemma": "적히다",
+        "reading": "jeokhin",
+        "glosses": {
+          "es": "escrito, anotado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "실험",
+        "lemma": "실험",
+        "reading": "silheom",
+        "glosses": {
+          "es": "experimento"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "직원",
+        "lemma": "직원",
+        "reading": "jigwon",
+        "glosses": {
+          "es": "empleado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "정리해",
+        "lemma": "정리하다",
+        "reading": "jeongrihae",
+        "glosses": {
+          "es": "ordenar, sintetizar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "부장님",
+        "lemma": "부장님",
+        "reading": "bujangnim",
+        "glosses": {
+          "es": "jefe de departamento (con 님 de respeto)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "신경",
+        "lemma": "신경",
+        "reading": "singyeong",
+        "glosses": {
+          "es": "atención; 신경 쓰다 = darle importancia"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "의식하게",
+        "lemma": "의식하다",
+        "reading": "uisikhage",
+        "glosses": {
+          "es": "volverse consciente de algo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "자연스러웠어요",
+        "lemma": "자연스럽다",
+        "reading": "jayeonseureowosseoyo",
+        "glosses": {
+          "es": "era natural, no forzado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La jerarquía por cargos (부장, 과장, 대리) organiza la comunicación en las empresas coreanas, y buena parte de lo que se transmite va en el tono más que en las palabras. De ahí la primera de las seis normas."
+    },
+    "spanishSpeakerNote": {
+      "es": "Fíjate en el contraste: 배워야 해요 es «hay que aprenderlo» (obligación) y 읽을 수 있어요 es «se puede leer» (posibilidad). Y 쓸 필요가 없어요 no es prohibición: es «no hace falta escribirlo»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo en coreano que desarrolla una idea y cambia de dirección, distinguir el hecho de la interpretación, y justificar una inferencia cruzando dos pasajes separados."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas",
+      "antes-despues-a2",
+      "capacidad-rl-su-itda-a2",
+      "clausulas-relativas-a2",
+      "condicional-eumyeon-a2",
+      "conector-aseo-a2",
+      "cuanto-eolmana-a2",
+      "discurso-reportado-a2",
+      "durante-neun-dongane-a2",
+      "futuro-rl-geoyeyo-a2",
+      "honorificos-a2",
+      "intencion-ryogo-hada-a2",
+      "negacion-ji-anta-a2",
+      "obligacion-aya-hada-a2",
+      "parecer-neun-geot-gatda-a2",
+      "particulas-recipiente-a2",
+      "progresivo-go-itda-a2",
+      "razon-gittaemune-a2",
+      "razon-niikka-a2",
+      "solo-tambien-man-do-a2",
+      "verbos-irregulares-pasado-a2",
+      "alternativa-geona-b1",
+      "causal-gi-ttaemune-b1",
+      "causativa-shichang-b1",
+      "condicional-erado-eurely-b1",
+      "despues-gona-seo-b1",
+      "estado-mantener-chae-b1",
+      "forzosidad-subakkeneopsda-b1",
+      "futuro-intencion-b1",
+      "ge-doeda-b1",
+      "inmediato-jamaja-b1",
+      "kiro-hada-b1",
+      "obligacion-eoyahada-b1",
+      "observacion-neyo-b1",
+      "oportunidad-gime-b1",
+      "pasiva-jeosudo-b1",
+      "passado-reminiscencia-b1",
+      "posibilidad-su-itda-b1",
+      "proporcion-euttorok-b1",
+      "proposito-dorok-b1",
+      "simultaneo-eumyeonseo-b1"
+    ],
+    "disallowedGrammar": [
+      "registro literario",
+      "hanja sin glosa",
+      "dialecto regional"
+    ],
+    "maxOutOfLevelVocabularyPercent": 7,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 6.5,
+      "maxSentenceWords": 12,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Prosa B1 con 더라/던, 게 되다, 채, 을수록 y pasiva. Sin registro literario ni hanja sin glosar. Inferencia moderada: exige cruzar dos pasajes."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué defiende la columna?",
+      "options": [
+        {
+          "id": "perder",
+          "text": "Que poner por escrito ciertas normas tácitas les quita su fuerza"
+        },
+        {
+          "id": "escribir",
+          "text": "Que todas las normas de una empresa deberían escribirse"
+        },
+        {
+          "id": "jerarquia",
+          "text": "Que hay que eliminar la jerarquía de cargos"
+        }
+      ],
+      "answer": "perder",
+      "evidence": "어떤 규칙은 적으면 힘을 잃어요. 저는 그 회사가 다섯 가지만 적어야 했다고 생각해요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo cuantifica: cinco de las seis sí, la tercera no."
+        },
+        "incorrect": {
+          "es": "La columna acaba diciendo lo contrario: una de las seis no debió escribirse. Lee las dos últimas frases."
+        },
+        "strategy": {
+          "es": "Si un texto expone una lista y luego señala un problema en un solo elemento, ahí está su tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántas normas tácitas salieron al ordenar las respuestas?",
+      "options": [
+        {
+          "id": "seis",
+          "text": "Seis"
+        },
+        {
+          "id": "cien",
+          "text": "Más de cien"
+        },
+        {
+          "id": "ciento veinte",
+          "text": "Ciento veinte"
+        }
+      ],
+      "answer": "seis",
+      "evidence": "답이 백 개 넘게 왔어요. 하지만 정리해 보니까 여섯 가지였어요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: más de cien respuestas que al ordenarlas se reducen a seis. Los ciento veinte son los empleados."
+        },
+        "incorrect": {
+          "es": "Las cien son respuestas sin ordenar y los ciento veinte, las personas. Busca lo que sale después de 정리해 보니까."
+        },
+        "strategy": {
+          "es": "Distingue el número de respuestas del número de categorías. El verbo 정리하다 marca ese paso."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "La cuarta norma dice 이유를 쓸 필요가 없어요. ¿Qué significa?",
+      "options": [
+        {
+          "id": "nohace",
+          "text": "Que no hace falta escribir el motivo"
+        },
+        {
+          "id": "prohibido",
+          "text": "Que está prohibido escribir el motivo"
+        },
+        {
+          "id": "obligatorio",
+          "text": "Que es obligatorio escribir el motivo"
+        }
+      ],
+      "answer": "nohace",
+      "evidence": "휴가를 신청할 때는 이유를 쓸 필요가 없어요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. 필요가 없다 es «no ser necesario», no «estar prohibido». La diferencia importa."
+        },
+        "incorrect": {
+          "es": "No es prohibición ni obligación: 필요가 없다 significa que no es necesario. Es un permiso, no una regla."
+        },
+        "strategy": {
+          "es": "Distingue 필요가 없다 (no hace falta) de 안 돼요 (no se puede). El español las confunde con «no hay que»."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué la tercera norma se volvió un problema al escribirla?",
+      "options": [
+        {
+          "id": "consciente",
+          "text": "Porque al escribirla la gente empezó a pensar en ella, y dejó de ser natural"
+        },
+        {
+          "id": "falsa",
+          "text": "Porque en realidad no era cierta"
+        },
+        {
+          "id": "jefe",
+          "text": "Porque al jefe no le gustó verla por escrito"
+        }
+      ],
+      "answer": "consciente",
+      "evidence": "사람들이 갑자기 그것을 의식하게 되었어요. 전에는 그냥 자연스러웠어요. 이제는 결정이 되었어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Comer solo pasó de ser algo que no se pensaba a ser una decisión que se toma."
+        },
+        "incorrect": {
+          "es": "El texto no dice que fuera falsa ni menciona la reacción del jefe. Lee las tres frases seguidas."
+        },
+        "strategy": {
+          "es": "Cuando tres frases cortas se encadenan, describen un proceso. Reconstrúyelo paso a paso."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: en esa empresa llegar tarde a una reunión pide disculpas, pero tardar en contestar correos no.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "회의 시간에 늦으면 사과해야 해요. 하지만 이메일에 늦게 답하는 것은 아무도 문제라고 생각하지 않아요.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y es la quinta norma. El contraste entre las dos formas de llegar tarde es lo interesante."
+        },
+        "incorrect": {
+          "es": "Busca la quinta norma. Tiene dos mitades unidas por 하지만 y dicen cosas distintas."
+        },
+        "strategy": {
+          "es": "Cuando una norma tiene dos mitades con 하지만, compruébalas por separado. Suelen contraponerse."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "reference",
+      "skill": "reference",
+      "prompt": "En 사람들이 갑자기 그것을 의식하게 되었어요, ¿a qué se refiere 그것?",
+      "options": [
+        {
+          "id": "comer",
+          "text": "A comer solo al mediodía"
+        },
+        {
+          "id": "manual",
+          "text": "Al manual de la empresa"
+        },
+        {
+          "id": "jefe",
+          "text": "A la costumbre del jefe en las reuniones"
+        }
+      ],
+      "answer": "comer",
+      "evidence": "점심을 혼자 먹어도 괜찮다고 적혀 있으니까 사람들이 갑자기 그것을 의식하게 되었어요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La propia frase lo nombra antes del 니까: comer solo al mediodía."
+        },
+        "incorrect": {
+          "es": "La frase entera empieza citando la tercera norma. Lee lo que va antes de 니까."
+        },
+        "strategy": {
+          "es": "Cuando 그것 aparece en la misma frase que su referente, búscalo antes del conector, no en la frase anterior."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en coreano con cuatro normas no escritas de tu trabajo, clase o casa. Usa 어야 하다 tres veces y 수 있다 dos veces."
+    },
+    "minWords": 60,
+    "maxWords": 120,
+    "hints": [
+      "모든 …에는 규칙이 두 가지 있어요.",
+      "첫째, …",
+      "…아도 괜찮아요.",
+      "어떤 규칙은 적으면 …"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano B1: Las normas que nadie escribió | WeLearn"
+    },
+    "description": {
+      "es": "Lee una columna en coreano B1 y practica 어야 하다 para la obligación y 수 있다 para la posibilidad. Con vocabulario romanizado y seis preguntas."
+    },
+    "canonicalPath": "/practica/coreano/b1/lectura/jeokhiji-anheun-gyuchik",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-b1-tongyeoksa-ui-hanabeon",
+      "ko-b1-abeoji-wa-cheonjangyi-mun"
+    ]
+  }
+}

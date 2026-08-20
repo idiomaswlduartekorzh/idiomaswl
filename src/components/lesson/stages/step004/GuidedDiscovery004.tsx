@@ -111,7 +111,7 @@ export default function GuidedDiscovery004({ onComplete }: Props) {
               ))}
             </div>
             <div style={{ background:'rgba(239,68,68,0.08)', border:'1px solid rgba(239,68,68,0.25)', borderRadius: 12, padding: '12px' }}>
-              <p style={{ margin:'0 0 4px', fontSize:11, fontWeight:700, color:'#ef4444' }}>한자어 (SINO-COREANOS)</p>
+              <p style={{ margin:'0 0 4px', fontSize:11, fontWeight:700, color:'var(--wl-on-panel-alert, #ef4444)' }}>한자어 (SINO-COREANOS)</p>
               <p style={{ margin:'0 0 4px', fontSize:11, color:'var(--muted)' }}>dinero · fechas · pisos · min</p>
               {NUMBERS.map(n => (
                 <div key={n.sino} style={{ display:'block', padding:'3px 0', fontSize:16, fontFamily:"'Noto Sans KR',sans-serif", fontWeight:600, color:'var(--muted)' }}>
@@ -175,7 +175,7 @@ export default function GuidedDiscovery004({ onComplete }: Props) {
           <p style={{ margin:'0 0 16px', fontSize:13, color:'var(--muted)' }}>
             Pregunta {counterIdx + 1} de {COUNTER_QUESTIONS.length}
           </p>
-          <div style={{ background:'var(--bg-2,#f5f5f7)', borderRadius:14, padding:'24px', textAlign:'center', marginBottom:20 }}>
+          <div style={{ background:'var(--bg-2,var(--wl-panel-raised, #f5f5f7))', borderRadius:14, padding:'24px', textAlign:'center', marginBottom:20 }}>
             <p style={{ margin:0, fontSize:24, fontFamily:"'Noto Sans KR',sans-serif", fontWeight:700 }}>
               {COUNTER_QUESTIONS[counterIdx].sentence}
             </p>

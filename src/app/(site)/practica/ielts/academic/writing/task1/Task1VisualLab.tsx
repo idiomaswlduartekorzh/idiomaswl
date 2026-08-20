@@ -12,9 +12,9 @@ export function IELTSLineGraphVisual({ variant = 0 }: { variant?: number }) {
       yMax: 100,
       unit: '%',
       series: [
-        { label: 'Region A', color: '#0f3d8c', values: [30, 48, 61, 77, 88] },
-        { label: 'Region B', color: '#059669', values: [12, 26, 45, 63, 79] },
-        { label: 'Region C', color: '#d97706', values: [6, 10, 22, 38, 57] },
+        { label: 'Region A', color: 'var(--wl-on-panel-link, #0f3d8c)', values: [30, 48, 61, 77, 88] },
+        { label: 'Region B', color: 'var(--wl-on-panel-ok, #059669)', values: [12, 26, 45, 63, 79] },
+        { label: 'Region C', color: 'var(--wl-on-panel-warn, #d97706)', values: [6, 10, 22, 38, 57] },
       ],
     },
     {
@@ -23,9 +23,9 @@ export function IELTSLineGraphVisual({ variant = 0 }: { variant?: number }) {
       yMax: 90,
       unit: 'm',
       series: [
-        { label: 'Metro', color: '#0f3d8c', values: [40, 46, 53, 61, 58, 74] },
-        { label: 'Bus', color: '#059669', values: [70, 68, 65, 59, 52, 48] },
-        { label: 'Tram', color: '#7c3aed', values: [15, 22, 34, 45, 49, 60] },
+        { label: 'Metro', color: 'var(--wl-on-panel-link, #0f3d8c)', values: [40, 46, 53, 61, 58, 74] },
+        { label: 'Bus', color: 'var(--wl-on-panel-ok, #059669)', values: [70, 68, 65, 59, 52, 48] },
+        { label: 'Tram', color: 'var(--wl-on-panel-purple, #7c3aed)', values: [15, 22, 34, 45, 49, 60] },
       ],
     },
     {
@@ -34,9 +34,9 @@ export function IELTSLineGraphVisual({ variant = 0 }: { variant?: number }) {
       yMax: 60,
       unit: '%',
       series: [
-        { label: 'North', color: '#0f3d8c', values: [12, 18, 29, 41, 55] },
-        { label: 'Central', color: '#059669', values: [45, 43, 40, 38, 36] },
-        { label: 'South', color: '#7c3aed', values: [20, 25, 24, 32, 46] },
+        { label: 'North', color: 'var(--wl-on-panel-link, #0f3d8c)', values: [12, 18, 29, 41, 55] },
+        { label: 'Central', color: 'var(--wl-on-panel-ok, #059669)', values: [45, 43, 40, 38, 36] },
+        { label: 'South', color: 'var(--wl-on-panel-purple, #7c3aed)', values: [20, 25, 24, 32, 46] },
       ],
     },
     {
@@ -45,9 +45,9 @@ export function IELTSLineGraphVisual({ variant = 0 }: { variant?: number }) {
       yMax: 90,
       unit: 'k',
       series: [
-        { label: 'Students', color: '#0f3d8c', values: [80, 78, 76, 75, 75, 74] },
-        { label: 'Families', color: '#059669', values: [30, 36, 44, 53, 58, 62] },
-        { label: 'Retirees', color: '#d97706', values: [55, 52, 48, 44, 42, 40] },
+        { label: 'Students', color: 'var(--wl-on-panel-link, #0f3d8c)', values: [80, 78, 76, 75, 75, 74] },
+        { label: 'Families', color: 'var(--wl-on-panel-ok, #059669)', values: [30, 36, 44, 53, 58, 62] },
+        { label: 'Retirees', color: 'var(--wl-on-panel-warn, #d97706)', values: [55, 52, 48, 44, 42, 40] },
       ],
     },
     {
@@ -56,9 +56,9 @@ export function IELTSLineGraphVisual({ variant = 0 }: { variant?: number }) {
       yMax: 60,
       unit: '%',
       series: [
-        { label: 'Region A', color: '#0f3d8c', values: [18, 24, 31, 40, 52] },
-        { label: 'Region B', color: '#059669', values: [42, 39, 36, 30, 25] },
-        { label: 'Region C', color: '#dc2626', values: [12, 13, 18, 27, 39] },
+        { label: 'Region A', color: 'var(--wl-on-panel-link, #0f3d8c)', values: [18, 24, 31, 40, 52] },
+        { label: 'Region B', color: 'var(--wl-on-panel-ok, #059669)', values: [42, 39, 36, 30, 25] },
+        { label: 'Region C', color: 'var(--wl-on-panel-alert, #dc2626)', values: [12, 13, 18, 27, 39] },
       ],
     },
   ];
@@ -191,7 +191,7 @@ export function IELTSTableVisual({ variant = 0 }: { variant?: number }) {
           {selected.caption}
         </caption>
         <thead>
-          <tr>{selected.headers.map((h) => <th key={h} style={{ padding: '0.65rem', color: '#0f3d8c', textAlign: 'left', borderTop: '1px solid var(--line-soft)', borderBottom: '1px solid var(--line-soft)' }}>{h}</th>)}</tr>
+          <tr>{selected.headers.map((h) => <th key={h} style={{ padding: '0.65rem', color: 'var(--wl-on-panel-link, #0f3d8c)', textAlign: 'left', borderTop: '1px solid var(--line-soft)', borderBottom: '1px solid var(--line-soft)' }}>{h}</th>)}</tr>
         </thead>
         <tbody>
           {rows.map((row) => <tr key={row[0]}>{row.map((cell) => <td key={cell} style={{ padding: '0.65rem', borderBottom: '1px solid var(--line-soft)', color: 'var(--ink-2)' }}>{cell}</td>)}</tr>)}

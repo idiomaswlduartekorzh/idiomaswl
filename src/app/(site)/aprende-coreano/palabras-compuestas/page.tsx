@@ -149,7 +149,7 @@ export default function PalabrasCompuestasPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <main>
+      <main className="wl-korean-compounds-page">
 
         {/* ── Hero ──────────────────────────────────────────────────────────── */}
         <section style={{

@@ -187,14 +187,14 @@ export default function ListeningSurvivable({ onComplete }: Props) {
   if (phase === 'intro') {
     return (
       <section style={{ maxWidth: 640, margin: '0 auto', padding: '2rem' }}>
-        <p style={{ margin: '0 0 8px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6c63ff', fontWeight: 700 }}>
+        <p style={{ margin: '0 0 8px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700 }}>
           SECCIÓN 4 DE 11
         </p>
-        <h3 style={{ margin: '0 0 8px', fontSize: 24, fontWeight: 700, color: '#1a1a2e' }}>Escucha sobrevivible</h3>
-        <p style={{ margin: '0 0 8px', fontSize: 13, color: '#6c757d', lineHeight: 1.7 }}>
+        <h3 style={{ margin: '0 0 8px', fontSize: 24, fontWeight: 700, color: 'var(--wl-on-panel, #1a1a2e)' }}>Escucha sobrevivible</h3>
+        <p style={{ margin: '0 0 8px', fontSize: 13, color: 'var(--wl-on-panel-soft, #6c757d)', lineHeight: 1.7 }}>
           No traduzcas. No analices. Solo observa a David caminar por Seúl y escucha. Tu cerebro va a hacer el resto.
         </p>
-        <div style={{ background: 'rgba(108,99,255,0.07)', border: '1px solid rgba(108,99,255,0.15)', borderRadius: 10, padding: '10px 14px', marginBottom: 20, fontSize: 12, color: '#6c63ff' }}>
+        <div style={{ background: 'rgba(108,99,255,0.07)', border: '1px solid rgba(108,99,255,0.15)', borderRadius: 10, padding: '10px 14px', marginBottom: 20, fontSize: 12, color: 'var(--wl-on-panel-link, #6c63ff)' }}>
           📌 Nota: El video de escucha completo estará disponible pronto. Por ahora verás el video de patrón SOV como referencia.
         </div>
 
@@ -210,7 +210,7 @@ export default function ListeningSurvivable({ onComplete }: Props) {
                 display: 'flex',
                 gap: 12,
                 alignItems: 'flex-start',
-                background: '#f8f9fa',
+                background: 'var(--wl-panel-raised, #f8f9fa)',
                 border: '1px solid #e9ecef',
                 borderRadius: 10,
                 padding: '12px 14px',
@@ -231,7 +231,7 @@ export default function ListeningSurvivable({ onComplete }: Props) {
               >
                 {item.icon}
               </span>
-              <p style={{ margin: 0, fontSize: 13, color: '#1a1a2e', lineHeight: 1.55 }}>{item.text}</p>
+              <p style={{ margin: 0, fontSize: 13, color: 'var(--wl-on-panel, #1a1a2e)', lineHeight: 1.55 }}>{item.text}</p>
             </article>
           ))}
         </div>
@@ -276,7 +276,7 @@ export default function ListeningSurvivable({ onComplete }: Props) {
           </div>
         </article>
 
-        <div style={{ background: '#fff', border: '1px solid #e9ecef', borderRadius: '0 0 14px 14px', padding: '12px 16px' }}>
+        <div style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: '0 0 14px 14px', padding: '12px 16px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
             <button
               type="button"
@@ -289,19 +289,19 @@ export default function ListeningSurvivable({ onComplete }: Props) {
             <button
               type="button"
               onClick={handleProgressClick}
-              style={{ flex: 1, height: 4, background: '#e9ecef', borderRadius: 2, cursor: 'pointer', position: 'relative', border: 'none', padding: 0 }}
+              style={{ flex: 1, height: 4, background: 'var(--wl-panel-raised, #e9ecef)', borderRadius: 2, cursor: 'pointer', position: 'relative', border: 'none', padding: 0 }}
             >
               <span style={{ display: 'block', height: '100%', background: '#6c63ff', borderRadius: 2, width: progressWidth }} />
             </button>
 
-            <span style={{ fontFamily: 'var(--mono)', fontSize: 11, color: '#6c757d', flexShrink: 0 }}>
+            <span style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--wl-on-panel-soft, #6c757d)', flexShrink: 0 }}>
               {`${formatVideoTime(currentVideoTime)} / ${formatVideoTime(videoDuration)}`}
             </span>
 
             <button
               type="button"
               onClick={handleReplay}
-              style={{ fontSize: 11, color: '#6c757d', background: '#fff', border: '1px solid #e9ecef', borderRadius: 100, padding: '4px 10px', cursor: 'pointer' }}
+              style={{ fontSize: 11, color: 'var(--wl-on-panel-soft, #6c757d)', background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 100, padding: '4px 10px', cursor: 'pointer' }}
             >
               🔁 Repetir
             </button>
@@ -371,13 +371,13 @@ export default function ListeningSurvivable({ onComplete }: Props) {
   if (phase === 'questions') {
     return (
       <section style={{ maxWidth: 640, margin: '0 auto', padding: '1rem 0' }}>
-        <p style={{ margin: '0 0 20px', fontSize: 13, color: '#6c757d' }}>
+        <p style={{ margin: '0 0 20px', fontSize: 13, color: 'var(--wl-on-panel-soft, #6c757d)' }}>
           3 preguntas sobre lo que escuchaste. Sin trampa.
         </p>
 
         <article
           style={{
-            background: '#f8f9fa',
+            background: 'var(--wl-panel-raised, #f8f9fa)',
             border: '1px solid #e9ecef',
             borderRadius: 10,
             padding: '10px 14px',
@@ -391,12 +391,12 @@ export default function ListeningSurvivable({ onComplete }: Props) {
             <video src={VIDEO_SRC} muted style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
           <div style={{ flex: 1 }}>
-            <p style={{ margin: 0, fontSize: 12, color: '#6c757d' }}>¿Quieres volver a verlo?</p>
+            <p style={{ margin: 0, fontSize: 12, color: 'var(--wl-on-panel-soft, #6c757d)' }}>¿Quieres volver a verlo?</p>
           </div>
           <button
             type="button"
             onClick={() => goToWatchingAndPlay(true)}
-            style={{ fontSize: 12, color: '#6c63ff', background: 'none', border: 'none', cursor: 'pointer', textDecoration: 'underline' }}
+            style={{ fontSize: 12, color: 'var(--wl-on-panel-link, #6c63ff)', background: 'none', border: 'none', cursor: 'pointer', textDecoration: 'underline' }}
           >
             Ver de nuevo
           </button>
@@ -405,7 +405,7 @@ export default function ListeningSurvivable({ onComplete }: Props) {
         {QUESTIONS.map((question) => (
           <article
             key={question.id}
-            style={{ background: '#fff', border: '1px solid #e9ecef', borderRadius: 12, padding: 16, marginBottom: 12 }}
+            style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 12, padding: 16, marginBottom: 12 }}
           >
             <span
               style={{
@@ -418,14 +418,14 @@ export default function ListeningSurvivable({ onComplete }: Props) {
                 border: '1px solid rgba(108,99,255,0.15)',
                 borderRadius: 100,
                 padding: '2px 8px',
-                color: '#6c63ff',
+                color: 'var(--wl-on-panel-link, #6c63ff)',
                 marginBottom: 10,
               }}
             >
               {question.scene} · {question.time}
             </span>
 
-            <p style={{ margin: '0 0 12px', fontSize: 14, fontWeight: 500, color: '#1a1a2e', lineHeight: 1.5 }}>
+            <p style={{ margin: '0 0 12px', fontSize: 14, fontWeight: 500, color: 'var(--wl-on-panel, #1a1a2e)', lineHeight: 1.5 }}>
               {question.question}
             </p>
 
@@ -487,8 +487,8 @@ export default function ListeningSurvivable({ onComplete }: Props) {
 
   return (
     <section style={{ maxWidth: 580, margin: '0 auto', textAlign: 'center', padding: '2.5rem 1rem' }}>
-      <p style={{ margin: '0 0 4px', fontSize: 52, fontWeight: 700, color: '#6c63ff' }}>{`${score}/3`}</p>
-      <p style={{ margin: '0 0 24px', fontSize: 14, color: '#6c757d', lineHeight: 1.6 }}>
+      <p style={{ margin: '0 0 4px', fontSize: 52, fontWeight: 700, color: 'var(--wl-on-panel-link, #6c63ff)' }}>{`${score}/3`}</p>
+      <p style={{ margin: '0 0 24px', fontSize: 14, color: 'var(--wl-on-panel-soft, #6c757d)', lineHeight: 1.6 }}>
         {score === 3
           ? 'Entendiste todo. Tu oído coreano está despertando.'
           : score === 2
@@ -500,7 +500,7 @@ export default function ListeningSurvivable({ onComplete }: Props) {
         {RECAP_SENTENCES.map((sentence) => (
           <article
             key={sentence.id}
-            style={{ background: '#f8f9fa', border: '1px solid #e9ecef', borderRadius: 10, padding: '12px 14px', display: 'flex', alignItems: 'center', gap: 12 }}
+            style={{ background: 'var(--wl-panel-raised, #f8f9fa)', border: '1px solid #e9ecef', borderRadius: 10, padding: '12px 14px', display: 'flex', alignItems: 'center', gap: 12 }}
           >
             <span
               style={{ width: 24, height: 24, borderRadius: '50%', background: '#6c63ff', color: '#fff', fontSize: 11, fontWeight: 700, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}
@@ -508,13 +508,13 @@ export default function ListeningSurvivable({ onComplete }: Props) {
               {sentence.scene}
             </span>
             <div style={{ flex: 1 }}>
-              <p style={{ margin: '0 0 2px', fontFamily: "'Noto Sans KR', sans-serif", fontSize: 16, color: '#6c63ff' }}>{sentence.korean}</p>
-              <p style={{ margin: 0, fontSize: 12, color: '#6c757d' }}>{sentence.translation}</p>
+              <p style={{ margin: '0 0 2px', fontFamily: "'Noto Sans KR', sans-serif", fontSize: 16, color: 'var(--wl-on-panel-link, #6c63ff)' }}>{sentence.korean}</p>
+              <p style={{ margin: 0, fontSize: 12, color: 'var(--wl-on-panel-soft, #6c757d)' }}>{sentence.translation}</p>
             </div>
             <button
               type="button"
               onClick={() => playAudio(sentence.audioKey, 1)}
-              style={{ fontSize: 14, color: '#6c63ff', background: 'none', border: 'none', cursor: 'pointer' }}
+              style={{ fontSize: 14, color: 'var(--wl-on-panel-link, #6c63ff)', background: 'none', border: 'none', cursor: 'pointer' }}
             >
               ▶
             </button>
@@ -522,7 +522,7 @@ export default function ListeningSurvivable({ onComplete }: Props) {
         ))}
       </div>
 
-      <p style={{ fontSize: 13, color: '#6c757d', lineHeight: 1.7, marginBottom: 24 }}>
+      <p style={{ fontSize: 13, color: 'var(--wl-on-panel-soft, #6c757d)', lineHeight: 1.7, marginBottom: 24 }}>
         Acabas de escuchar coreano real. Sin traducir, sin pausar, sin ayuda. Eso es exactamente lo que hace que el idioma se instale de verdad.
       </p>
     </section>

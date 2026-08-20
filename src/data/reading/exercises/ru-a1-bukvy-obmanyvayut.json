@@ -1,0 +1,450 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-a1-bukvy-obmanyvayut",
+  "status": "published",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Ruso A1"
+  },
+  "slug": "bukvy-obmanyvayut",
+  "series": {
+    "id": "ruso-a1-lectura-10",
+    "episode": 10,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-a1-prikhodite-v-sem",
+    "nextExerciseId": null
+  },
+  "classification": {
+    "genre": "cuaderno de estudiante",
+    "topic": "comprar САЛО creyendo que es ensalada",
+    "intent": "learning",
+    "tags": [
+      "ruso a1",
+      "lectura",
+      "alfabeto cirílico",
+      "futuro con быть"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Las letras engañan"
+    },
+    "intro": {
+      "es": "Las primeras semanas no lee: adivina. Y un día compra doscientos gramos de algo que no era ensalada. Lectura de ruso A1."
+    },
+    "mission": {
+      "es": "Averigua qué compra ahora todas las semanas, y a propósito."
+    },
+    "targetText": "Первые недели в Москве я не читаю, я угадываю. Буквы обманывают. «В» похожа на латинскую букву, но это другой звук. «Р», «С», «Н», «У», «Х» — то же самое.\n\nВ магазине я вижу слово «САЛО» и думаю: это салат. Я покупаю двести граммов. Дома я открываю пакет. Это не салат. Это сало.\n\nМой сосед Павел смеётся десять минут. Потом он говорит: «Ешь. Это хорошо с чёрным хлебом».\n\nОн прав. Это правда хорошо.\n\nТеперь я читаю медленно, но правильно. Я буду читать быстро, но не сейчас. Через год я буду читать газеты. Через два года я буду понимать шутки. Это план.\n\nСало я покупаю каждую неделю. Специально.",
+    "wordCount": 105,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Reconocer las letras cirílicas que se parecen a las latinas sin serlo: В, Н, Р, С, У, Х."
+      },
+      {
+        "es": "Formar el futuro con быть + infinitivo: я буду читать, я буду понимать."
+      },
+      {
+        "es": "Leer un error de lectura contado por quien lo cometió."
+      }
+    ],
+    "grammarFocus": [
+      "alfabeto-cirilico",
+      "futuro-byt"
+    ],
+    "vocabulary": [
+      {
+        "surface": "угадываю",
+        "lemma": "угадывать",
+        "glosses": {
+          "es": "adivino"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "обманывают",
+        "lemma": "обманывать",
+        "glosses": {
+          "es": "engañan"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "похожа",
+        "lemma": "похожий",
+        "glosses": {
+          "es": "se parece a"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "звук",
+        "lemma": "звук",
+        "glosses": {
+          "es": "sonido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "сало",
+        "lemma": "сало",
+        "glosses": {
+          "es": "tocino salado, manteca curada"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "пакет",
+        "lemma": "пакет",
+        "glosses": {
+          "es": "bolsa, paquete"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "прав",
+        "lemma": "прав",
+        "glosses": {
+          "es": "tiene razón"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "шутки",
+        "lemma": "шутка",
+        "glosses": {
+          "es": "chistes, bromas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El сало —tocino curado en sal— se come en lonchas finas con pan negro y es un aperitivo cotidiano en Rusia y Ucrania. No se cocina: se corta y se come frío."
+    },
+    "spanishSpeakerNote": {
+      "es": "El primer obstáculo del ruso no es la gramática, es leer. В suena como una v, Н como una n, Р como una r fuerte, С como una s, У como una u y Х como una j. Todas parecen otra cosa, y por eso «САЛО» se lee salo, no salat."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en ruso sobre la vida cotidiana, reconocer las letras cirílicas que se parecen a las latinas sin serlo, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento"
+    ],
+    "disallowedGrammar": [
+      "pasado verbal",
+      "aspecto perfectivo",
+      "participios",
+      "gerundios (деепричастия)",
+      "condicional"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 5,
+      "maxSentenceWords": 10,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo, imperativo y futuro con быть. Sin pasado, sin aspecto y sin participios. Acento (ударение) sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta el texto?",
+      "options": [
+        {
+          "id": "leer",
+          "text": "Que las letras cirílicas engañan al principio, y que el error acabó gustándole"
+        },
+        {
+          "id": "tienda",
+          "text": "Que en la tienda le vendieron algo equivocado"
+        },
+        {
+          "id": "dieta",
+          "text": "Que ha cambiado de dieta desde que vive en Moscú"
+        }
+      ],
+      "answer": "leer",
+      "evidence": "Буквы обманывают … Это не салат. Это сало … Сало я покупаю каждую неделю. Специально.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el final le da la vuelta: ahora lo compra queriendo."
+        },
+        "incorrect": {
+          "es": "Nadie le vendió nada equivocado: leyó mal la etiqueta. Fíjate en la primera y la última frase."
+        },
+        "strategy": {
+          "es": "Si el final repite el objeto del error, el texto trata de cómo el error acabó bien."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto compró creyendo que era ensalada?",
+      "options": [
+        {
+          "id": "200",
+          "text": "Doscientos gramos"
+        },
+        {
+          "id": "diez",
+          "text": "Diez gramos"
+        },
+        {
+          "id": "kilo",
+          "text": "Un kilo"
+        }
+      ],
+      "answer": "200",
+      "evidence": "Я покупаю двести граммов. Дома я открываю пакет.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y en casa descubre lo que es."
+        },
+        "incorrect": {
+          "es": "Los diez son los minutos que se ríe el vecino. Busca la cifra con «граммов»."
+        },
+        "strategy": {
+          "es": "Empareja cada cifra con su unidad: gramos, minutos, años."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Según el texto, ¿qué es «сало»?",
+      "options": [
+        {
+          "id": "tocino",
+          "text": "Tocino curado que se come con pan negro"
+        },
+        {
+          "id": "ensalada",
+          "text": "Una ensalada rusa"
+        },
+        {
+          "id": "sal",
+          "text": "Sal gruesa"
+        }
+      ],
+      "answer": "tocino",
+      "evidence": "Это не салат. Это сало … «Ешь. Это хорошо с чёрным хлебом».",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y el vecino dice cómo se come: con pan negro."
+        },
+        "incorrect": {
+          "es": "El texto niega expresamente que sea ensalada. Fíjate en lo que dice el vecino."
+        },
+        "strategy": {
+          "es": "Si un personaje dice cómo se come algo, esa frase te dice qué es."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué termina diciendo «специально»?",
+      "options": [
+        {
+          "id": "gusto",
+          "text": "Porque ahora lo compra a propósito: le gustó de verdad"
+        },
+        {
+          "id": "broma",
+          "text": "Porque quiere hacer reír a su vecino"
+        },
+        {
+          "id": "practica",
+          "text": "Porque así practica la lectura del cartel"
+        }
+      ],
+      "answer": "gusto",
+      "evidence": "Он прав. Это правда хорошо … Сало я покупаю каждую неделю. Специально.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo apoya la frase anterior: «это правда хорошо»."
+        },
+        "incorrect": {
+          "es": "No lo hace por el vecino ni para practicar. Cruza la última palabra con «это правда хорошо»."
+        },
+        "strategy": {
+          "es": "Una palabra sola al final de un texto se entiende con la frase que la precede."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: dice que dentro de dos años entenderá los chistes en ruso.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Через год я буду читать газеты. Через два года я буду понимать шутки. Это план.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y lo llama plan: primero periódicos, después chistes."
+        },
+        "incorrect": {
+          "es": "Busca el párrafo con los dos futuros. Da dos plazos distintos."
+        },
+        "strategy": {
+          "es": "La estructura «через + tiempo» marca un plazo futuro: localiza las dos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena lo que ocurre.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Las primeras semanas adivina en vez de leer"
+        },
+        {
+          "id": "p2",
+          "text": "Compra doscientos gramos creyendo que es ensalada"
+        },
+        {
+          "id": "p3",
+          "text": "El vecino se ríe y le dice cómo comerlo"
+        },
+        {
+          "id": "p4",
+          "text": "Ahora lee despacio y tiene un plan a dos años"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Первые недели в Москве я не читаю, я угадываю … В магазине я вижу слово «САЛО» … Мой сосед Павел смеётся десять минут … Теперь я читаю медленно, но правильно.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: la dificultad, el error, la ayuda y el plan."
+        },
+        "incorrect": {
+          "es": "Guíate por «Первые недели» y por «Теперь»."
+        },
+        "strategy": {
+          "es": "Las expresiones «первые недели» y «теперь» separan el antes del ahora."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en ruso sobre un error tuyo al leer o al hablar, y qué harás dentro de un año. Usa tres futuros con быть."
+    },
+    "minWords": 25,
+    "maxWords": 55,
+    "hints": [
+      "Первые недели я не читаю, я угадываю.",
+      "Это не салат. Это сало.",
+      "Через год я буду читать газеты.",
+      "Это план."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso A1: las letras engañan | WeLearn"
+    },
+    "description": {
+      "es": "Lee un cuaderno de estudiante en ruso A1 y practica el alfabeto cirílico y el futuro con быть. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/a1/lectura/bukvy-obmanyvayut",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-a1-prikhodite-v-sem"
+    ]
+  }
+}

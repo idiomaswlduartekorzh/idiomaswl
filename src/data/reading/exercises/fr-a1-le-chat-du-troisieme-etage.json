@@ -1,0 +1,450 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-a1-le-chat-du-troisieme-etage",
+  "status": "published",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Francés A1"
+  },
+  "slug": "le-chat-du-troisieme-etage",
+  "series": {
+    "id": "frances-a1-lectura-10",
+    "episode": 1,
+    "totalEpisodes": 10,
+    "previousExerciseId": null,
+    "nextExerciseId": "fr-a1-le-marche-du-samedi"
+  },
+  "classification": {
+    "genre": "relato de vecindario",
+    "topic": "vecinos y rutinas",
+    "intent": "learning",
+    "tags": [
+      "frances a1",
+      "lectura",
+      "negacion ne pas",
+      "preposiciones de lugar"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El gato del tercer piso"
+    },
+    "intro": {
+      "es": "Un gato con dos casas, dos vecinos que no se hablan y un plato vacío. Lectura de francés A1 con la negación ne… pas y las preposiciones de lugar."
+    },
+    "mission": {
+      "es": "Averigua por qué Pistache no come en su casa, y quién resuelve el malentendido."
+    },
+    "targetText": "Dans notre immeuble, à Lyon, il y a un chat roux. Il s’appelle Pistache. Il habite au troisième étage, avec Madame Blanc. Mais Pistache n’est pas un chat très fidèle. Chaque matin, il descend l’escalier et il entre chez Monsieur Ozan, au premier étage. Monsieur Ozan prépare toujours du poisson pour le déjeuner. Un jour, Madame Blanc affiche un message sur la porte de l’immeuble: «Mon chat ne mange pas. Il est malade?» Monsieur Ozan lit le message et il ne dit rien. Le soir, il monte au troisième étage avec une assiette vide et un grand sourire. Il explique tout à sa voisine. Maintenant, les deux voisins déjeunent ensemble le dimanche. Et Pistache mange deux fois par jour.",
+    "wordCount": 119,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Seguir una historia corta en presente y localizar quién hace cada cosa."
+      },
+      {
+        "es": "Reconocer la negación ne… pas y entender qué se está negando."
+      },
+      {
+        "es": "Situar a los personajes con preposiciones de lugar: au, chez, sur, dans."
+      }
+    ],
+    "grammarFocus": [
+      "negation-ne-pas",
+      "present-verbes-er",
+      "prepositions-lieu",
+      "adjectifs-possessifs"
+    ],
+    "vocabulary": [
+      {
+        "surface": "immeuble",
+        "lemma": "immeuble",
+        "glosses": {
+          "es": "edificio de apartamentos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "roux",
+        "lemma": "roux",
+        "glosses": {
+          "es": "pelirrojo; en un gato, de pelaje anaranjado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "escalier",
+        "lemma": "escalier",
+        "glosses": {
+          "es": "escalera"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fidèle",
+        "lemma": "fidèle",
+        "glosses": {
+          "es": "fiel, leal"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "affiche",
+        "lemma": "afficher",
+        "glosses": {
+          "es": "pega, cuelga (un aviso en un sitio visible)"
+        },
+        "audioRequired": true,
+        "levelStatus": "out-of-level-glossed"
+      },
+      {
+        "surface": "assiette",
+        "lemma": "assiette",
+        "glosses": {
+          "es": "plato"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sourire",
+        "lemma": "sourire",
+        "glosses": {
+          "es": "sonrisa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "voisine",
+        "lemma": "voisin",
+        "glosses": {
+          "es": "vecina"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En los edificios franceses el portal es un tablón de anuncios de facto: los avisos entre vecinos se pegan en la puerta de entrada, no se mandan por chat."
+    },
+    "spanishSpeakerNote": {
+      "es": "Ojo con «chez»: no existe en español. «Chez Monsieur Ozan» es «en casa de Monsieur Ozan», una sola palabra para toda esa idea. Y fíjate en que la negación francesa lleva dos piezas que abrazan al verbo: ne… pas."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto corto en presente sobre la vida cotidiana, localizar quién hace cada cosa y justificar tu respuesta con una frase del texto."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers"
+    ],
+    "disallowedGrammar": [
+      "passé composé",
+      "imparfait",
+      "subjonctif",
+      "conditionnel",
+      "voix passive"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 9.9,
+      "maxSentenceWords": 17,
+      "outOfLevelVocabularyPercent": 1,
+      "glossedOutOfLevelItems": 1
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Texto original en presente. Sin tiempos compuestos. Inferencia limitada a unir dos datos explícitos."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿De qué trata el texto, en una frase?",
+      "options": [
+        {
+          "id": "malentendido",
+          "text": "Un gato come en casa de otro vecino y eso provoca un malentendido"
+        },
+        {
+          "id": "enfermo",
+          "text": "Un gato se pone enfermo y hay que llevarlo al veterinario"
+        },
+        {
+          "id": "mudanza",
+          "text": "Una señora se muda del tercer piso al primero"
+        }
+      ],
+      "answer": "malentendido",
+      "evidence": "il entre chez Monsieur Ozan, au premier étage",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Todo el relato gira alrededor de un gato que tiene dos comedores y una dueña que no lo sabe."
+        },
+        "incorrect": {
+          "es": "El gato no está enfermo y nadie se muda. Relee la pregunta que Madame Blanc escribe en la puerta y lo que hace Monsieur Ozan después."
+        },
+        "strategy": {
+          "es": "La idea principal casi nunca está en una sola frase: es lo que conecta el principio con el final. Pregúntate qué cambia entre la primera línea y la última."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿En qué piso vive Monsieur Ozan?",
+      "options": [
+        {
+          "id": "premier",
+          "text": "En el primero"
+        },
+        {
+          "id": "troisieme",
+          "text": "En el tercero"
+        },
+        {
+          "id": "rez",
+          "text": "En la planta baja"
+        }
+      ],
+      "answer": "premier",
+      "evidence": "il entre chez Monsieur Ozan, au premier étage",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: «au premier étage». El tercero es donde vive Madame Blanc con el gato."
+        },
+        "incorrect": {
+          "es": "Cuidado, en el texto aparecen dos pisos. «Troisième étage» es el de Madame Blanc; busca dónde dice «premier»."
+        },
+        "strategy": {
+          "es": "Cuando un texto menciona varios sitios, subraya cada uno con su dueño antes de responder. Aquí hay dos pisos y dos personas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que Pistache «n’est pas un chat très fidèle». ¿Qué quiere decir «fidèle» aquí?",
+      "options": [
+        {
+          "id": "leal",
+          "text": "Leal: que se queda con los suyos y no se va con otros"
+        },
+        {
+          "id": "gordo",
+          "text": "Gordo: que come mucho"
+        },
+        {
+          "id": "viejo",
+          "text": "Viejo: que ya tiene muchos años"
+        }
+      ],
+      "answer": "leal",
+      "evidence": "Mais Pistache n’est pas un chat très fidèle.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Y fíjate en la ironía: la frase siguiente explica exactamente en qué consiste esa infidelidad, bajar a comer a otra casa."
+        },
+        "incorrect": {
+          "es": "La pista está en la frase de después, no en la de antes: el gato baja la escalera y entra en otra casa. Eso es lo que el narrador llama no ser fiel."
+        },
+        "strategy": {
+          "es": "Una palabra desconocida casi siempre se explica sola en la frase siguiente. Antes de buscarla en el diccionario, lee una línea más."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Madame Blanc escribe que su gato no come. ¿Por qué no come en su casa?",
+      "options": [
+        {
+          "id": "lleno",
+          "text": "Porque ya ha comido pescado abajo, en casa de Monsieur Ozan"
+        },
+        {
+          "id": "enfermo",
+          "text": "Porque está enfermo, como ella sospecha"
+        },
+        {
+          "id": "olvido",
+          "text": "Porque Madame Blanc se olvida de darle de comer"
+        }
+      ],
+      "answer": "lleno",
+      "evidence": "Monsieur Ozan prépare toujours du poisson pour le déjeuner.",
+      "feedback": {
+        "correct": {
+          "es": "Exacto. El texto nunca lo dice con estas palabras: lo tienes que juntar tú, con el pescado de abajo y el plato que sigue lleno arriba."
+        },
+        "incorrect": {
+          "es": "El texto no dice en ningún sitio que el gato esté enfermo; eso es lo que Madame Blanc teme. Busca qué hay para comer en el primer piso."
+        },
+        "strategy": {
+          "es": "Inferir es unir dos datos que están en párrafos distintos. Aquí uno está al principio (el pescado) y el otro en el aviso de la puerta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: Monsieur Ozan responde al aviso de la puerta por escrito, con otro mensaje.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Monsieur Ozan lit le message et il ne dit rien.",
+      "feedback": {
+        "correct": {
+          "es": "Falso, sí. «Il ne dit rien» — no dice nada. Sube en persona por la noche, con el plato vacío en la mano."
+        },
+        "incorrect": {
+          "es": "Relee: «il ne dit rien». Esa negación es la clave. Lo que hace en vez de responder viene en la frase siguiente."
+        },
+        "strategy": {
+          "es": "En francés la negación va en dos piezas alrededor del verbo: ne + verbo + pas / rien / jamais. Si solo ves el «ne», sigue leyendo hasta la segunda pieza."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena lo que pasa en el relato, de principio a fin.",
+      "options": [
+        {
+          "id": "paso-1",
+          "text": "Pistache baja la escalera y entra en casa de Monsieur Ozan"
+        },
+        {
+          "id": "paso-2",
+          "text": "Madame Blanc pega un aviso en la puerta del edificio"
+        },
+        {
+          "id": "paso-3",
+          "text": "Monsieur Ozan sube al tercer piso con un plato vacío"
+        },
+        {
+          "id": "paso-4",
+          "text": "Los dos vecinos almuerzan juntos los domingos"
+        }
+      ],
+      "answer": [
+        "paso-1",
+        "paso-2",
+        "paso-3",
+        "paso-4"
+      ],
+      "evidence": "Chaque matin, il descend l’escalier … Un jour, Madame Blanc affiche un message … Le soir, il monte … Maintenant, les deux voisins déjeunent ensemble.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El relato se mueve con marcadores de tiempo: chaque matin, un jour, le soir, maintenant. Son ellos los que te dan el orden."
+        },
+        "incorrect": {
+          "es": "No te fíes del orden en que aparecen los personajes: fíjate en las cuatro marcas de tiempo del texto (chaque matin, un jour, le soir, maintenant)."
+        },
+        "strategy": {
+          "es": "Antes de ordenar, localiza las expresiones de tiempo y numéralas en el margen. La secuencia sale sola."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 4–6 frases en francés sobre un vecino tuyo o alguien de tu edificio. Usa al menos una negación con ne… pas y dos preposiciones de lugar (au, chez, dans, sur)."
+    },
+    "minWords": 30,
+    "maxWords": 70,
+    "hints": [
+      "Dans mon immeuble, il y a…",
+      "Il / Elle habite au… étage.",
+      "Il n’est pas… / Elle ne mange pas…",
+      "Chaque matin, il / elle…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés A1: El gato del tercer piso | WeLearn"
+    },
+    "description": {
+      "es": "Lee un relato corto en francés A1 sobre dos vecinos y un gato con dos casas. Con vocabulario glosado, seis preguntas de comprensión y práctica de la negación ne… pas."
+    },
+    "canonicalPath": "/practica/frances/a1/lectura/le-chat-du-troisieme-etage",
+    "indexable": true,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-a1-le-marche-du-samedi"
+    ]
+  }
+}

@@ -1,0 +1,449 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-a1-ce-un-gatto-in-biblioteca",
+  "status": "published",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Italiano A1"
+  },
+  "slug": "ce-un-gatto-in-biblioteca",
+  "series": {
+    "id": "italiano-a1-lectura-10",
+    "episode": 6,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-a1-non-vado-mai-in-centro",
+    "nextExerciseId": "it-a1-il-mercato-del-sabato"
+  },
+  "classification": {
+    "genre": "crónica breve",
+    "topic": "un gato que impone silencio",
+    "intent": "learning",
+    "tags": [
+      "italiano a1",
+      "lectura",
+      "c'è / ci sono",
+      "preposiciones simples"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Hay un gato en la biblioteca"
+    },
+    "intro": {
+      "es": "Ocho mil libros, treinta mesas y un gato llamado Coma que siempre elige la misma. Lectura de italiano A1."
+    },
+    "mission": {
+      "es": "Averigua por qué en esa sala hay ahora más silencio que antes."
+    },
+    "targetText": "Nella biblioteca comunale di Sesto c'è un gatto. Si chiama Virgola. Non c'è un cartello con il suo nome, ma tutti lo conoscono. Virgola dorme su un tavolo, sempre lo stesso, vicino alla finestra. Ci sono trenta tavoli in quella sala e lui sta sempre su quello. Sul tavolo ci sono due libri e un cuscino. I libri non sono per lui, ma il cuscino sì. La bibliotecaria dice che con il gatto ci sono meno problemi. Prima ci sono ragazzi che parlano forte; adesso c'è silenzio, perché nessuno vuole svegliare Virgola. È una regola senza cartello. In biblioteca ci sono più di ottomila libri e una sola cosa importante: non fare rumore. Il gatto non legge niente, ma lavora molto.",
+    "wordCount": 121,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Distinguir c'è (singular) de ci sono (plural)."
+      },
+      {
+        "es": "Usar in, su, di, a, per, con, senza con su sentido básico."
+      },
+      {
+        "es": "Entender una norma que nadie ha escrito."
+      }
+    ],
+    "grammarFocus": [
+      "ce-ci-sono",
+      "preposizioni-semplici"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Virgola",
+        "lemma": "Virgola",
+        "glosses": {
+          "es": "coma, el signo de puntuación; aquí es el nombre del gato"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cuscino",
+        "lemma": "cuscino",
+        "glosses": {
+          "es": "cojín"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cartello",
+        "lemma": "cartello",
+        "glosses": {
+          "es": "cartel"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "svegliare",
+        "lemma": "svegliare",
+        "glosses": {
+          "es": "despertar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rumore",
+        "lemma": "rumore",
+        "glosses": {
+          "es": "ruido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tavoli",
+        "lemma": "tavolo",
+        "glosses": {
+          "es": "mesas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "forte",
+        "lemma": "forte",
+        "glosses": {
+          "es": "alto, fuerte; «parlare forte» es hablar alto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dorme",
+        "lemma": "dormire",
+        "glosses": {
+          "es": "duerme"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Varias bibliotecas municipales italianas tienen gato residente, y algunas lo registran en el catálogo con su propia ficha. No es una excentricidad reciente: es una tradición de las bibliotecas de barrio."
+    },
+    "spanishSpeakerNote": {
+      "es": "El italiano distingue «c'è» para uno y «ci sono» para varios, igual que el español «hay» no distingue nada. Aquí tienes que elegir: «c'è un gatto», «ci sono trenta tavoli»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en italiano sobre la vida cotidiana, distinguir un falso amigo de una palabra transparente, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere"
+    ],
+    "disallowedGrammar": [
+      "passato prossimo",
+      "imperfetto",
+      "congiuntivo",
+      "condizionale",
+      "voce passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 10.1,
+      "maxSentenceWords": 16,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo, imperativo y stare + gerundio. Sin tiempos del pasado ni congiuntivo. Falso amigo glosado en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta la crónica?",
+      "options": [
+        {
+          "id": "silencio",
+          "text": "Que el gato consiguió el silencio que ningún cartel había conseguido"
+        },
+        {
+          "id": "adopcion",
+          "text": "Que la biblioteca busca a alguien que adopte al gato"
+        },
+        {
+          "id": "libros",
+          "text": "Que la biblioteca tiene más de ocho mil libros"
+        }
+      ],
+      "answer": "silencio",
+      "evidence": "adesso c'è silenzio, perché nessuno vuole svegliare Virgola. È una regola senza cartello.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo llama exactamente así: una regla sin cartel."
+        },
+        "incorrect": {
+          "es": "La cifra de libros es un dato y nadie busca adoptarlo. Busca la frase con «regola senza cartello»."
+        },
+        "strategy": {
+          "es": "Cuando un texto contrapone «prima» y «adesso», el cambio entre los dos es el asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué hay sobre la mesa del gato?",
+      "options": [
+        {
+          "id": "libros",
+          "text": "Dos libros y un cojín"
+        },
+        {
+          "id": "cartel",
+          "text": "Un cartel con su nombre"
+        },
+        {
+          "id": "nada",
+          "text": "No hay nada, solo el gato"
+        }
+      ],
+      "answer": "libros",
+      "evidence": "Sul tavolo ci sono due libri e un cuscino. I libri non sono per lui, ma il cuscino sì.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el texto aclara de quién es cada cosa."
+        },
+        "incorrect": {
+          "es": "El texto dice expresamente que no hay ningún cartel con su nombre. Busca la frase con «Sul tavolo»."
+        },
+        "strategy": {
+          "es": "La preposición «sul» (sobre el) te lleva directo a la frase que necesitas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Nadie quiere «svegliare» al gato. ¿Qué significa?",
+      "options": [
+        {
+          "id": "despertar",
+          "text": "Despertarlo"
+        },
+        {
+          "id": "molestar",
+          "text": "Sacarlo de la sala"
+        },
+        {
+          "id": "alimentar",
+          "text": "Darle de comer"
+        }
+      ],
+      "answer": "despertar",
+      "evidence": "Virgola dorme su un tavolo … nessuno vuole svegliare Virgola.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y encaja con lo que el gato hace todo el día: dormir."
+        },
+        "incorrect": {
+          "es": "La palabra se relaciona con lo que el gato está haciendo en la mesa. Busca el verbo «dorme»."
+        },
+        "strategy": {
+          "es": "Si un verbo se refiere a alguien que duerme, piensa primero en lo contrario de dormir."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Qué quiere decir la última frase, «il gatto non legge niente, ma lavora molto»?",
+      "options": [
+        {
+          "id": "funcion",
+          "text": "Que sin hacer nada cumple una función real en la biblioteca"
+        },
+        {
+          "id": "empleado",
+          "text": "Que la biblioteca le paga un sueldo"
+        },
+        {
+          "id": "cansado",
+          "text": "Que el gato está siempre cansado de trabajar"
+        }
+      ],
+      "answer": "funcion",
+      "evidence": "La bibliotecaria dice che con il gatto ci sono meno problemi … Il gatto non legge niente, ma lavora molto.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la frase de la bibliotecaria lo confirma: con él hay menos problemas."
+        },
+        "incorrect": {
+          "es": "Nadie le paga nada y su ocupación es dormir. Une la frase final con lo que dice la bibliotecaria."
+        },
+        "strategy": {
+          "es": "Una frase final con «ma» suele resumir el texto en broma: busca a qué se refiere en serio."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: en esa sala hay treinta mesas y el gato usa siempre la misma.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Ci sono trenta tavoli in quella sala e lui sta sempre su quello.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y el texto insiste: «sempre lo stesso», junto a la ventana."
+        },
+        "incorrect": {
+          "es": "Busca la frase con «trenta tavoli» y fíjate en el adverbio que la cierra."
+        },
+        "strategy": {
+          "es": "Cuando una pregunta junta una cifra y una costumbre, comprueba las dos por separado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la información de la crónica.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Hay un gato en la biblioteca y se llama Virgola"
+        },
+        {
+          "id": "p2",
+          "text": "Duerme siempre en la misma mesa junto a la ventana"
+        },
+        {
+          "id": "p3",
+          "text": "La bibliotecaria dice que hay menos problemas"
+        },
+        {
+          "id": "p4",
+          "text": "La regla sin cartel: no hacer ruido"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Nella biblioteca comunale di Sesto c'è un gatto … Virgola dorme su un tavolo, sempre lo stesso … La bibliotecaria dice che … È una regola senza cartello.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: presentación, costumbre, testimonio y conclusión."
+        },
+        "incorrect": {
+          "es": "Guíate por el orden de las frases: primero el gato, luego la mesa, luego la bibliotecaria."
+        },
+        "strategy": {
+          "es": "Una crónica breve presenta primero el hecho y deja el testimonio para después."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en italiano describiendo qué hay en un sitio que conoces bien. Usa c'è tres veces y ci sono tres veces."
+    },
+    "minWords": 30,
+    "maxWords": 60,
+    "hints": [
+      "Nella biblioteca c'è…",
+      "Ci sono trenta…",
+      "Sul tavolo ci sono…",
+      "Non c'è un cartello."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano A1: hay un gato en la biblioteca | WeLearn"
+    },
+    "description": {
+      "es": "Lee una crónica breve en italiano A1 y practica c'è / ci sono y las preposiciones simples. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/italiano/a1/lectura/ce-un-gatto-in-biblioteca",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-a1-non-vado-mai-in-centro",
+      "it-a1-il-mercato-del-sabato"
+    ]
+  }
+}

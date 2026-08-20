@@ -1,19 +1,12 @@
 import type { Metadata } from 'next'
-import { practicaMetadata } from '@/lib/practica-metadata'
-import Content from './Content'
-import { QuizSchema } from '@/components/practica/EducationSchema';
+import { buildHubMetadata, HubPage, resolveHubForRoute } from '@/components/reading/ReadingPageServer'
 
-export const metadata: Metadata = practicaMetadata('japones', 'a2', 'lectura')
+export function generateMetadata(): Metadata {
+  const r = resolveHubForRoute('es', 'japones', 'a2')
+  return buildHubMetadata('es', r.language, r.level, r.exercises)
+}
 
 export default function Page() {
-  return (
-    <>
-      <QuizSchema
-        name="Lectura en Japonés A2 — Textos interactivos"
-        url="https://idiomaswl.com/practica/japones/a2/lectura"
-        description="5 textos de lectura en japonés nivel A2 con romaji, vocabulario interactivo y 6 preguntas por texto."
-      />
-      <Content />
-    </>
-  )
+  const r = resolveHubForRoute('es', 'japones', 'a2')
+  return <HubPage locale="es" {...r} />
 }

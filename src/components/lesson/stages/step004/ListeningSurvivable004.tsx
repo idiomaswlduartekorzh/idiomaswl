@@ -94,7 +94,7 @@ export default function ListeningSurvivable004({ onComplete }: Props) {
 
   if (phase === 'intro') return (
     <section style={{ maxWidth: 640, margin: '0 auto', padding: '2rem 1rem', fontFamily: 'system-ui,-apple-system,"Segoe UI",sans-serif', color: 'var(--foreground)' }}>
-      <p style={{ margin: '0 0 6px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6c63ff', fontWeight: 700 }}>
+      <p style={{ margin: '0 0 6px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700 }}>
         ETAPA 04 DE 11 · Escucha sobrevivible
       </p>
       <h3 style={{ margin: '0 0 10px', fontSize: 22, fontWeight: 700 }}>
@@ -105,7 +105,7 @@ export default function ListeningSurvivable004({ onComplete }: Props) {
       </p>
 
       <div style={{ background: 'rgba(108,99,255,0.04)', border: '1px solid rgba(108,99,255,0.15)', borderRadius: 12, padding: '14px 16px', marginBottom: 16 }}>
-        <p style={{ margin: '0 0 10px', fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#6c63ff' }}>
+        <p style={{ margin: '0 0 10px', fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--wl-on-panel-link, #6c63ff)' }}>
           Momentos clave
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 7 }}>
@@ -120,7 +120,7 @@ export default function ListeningSurvivable004({ onComplete }: Props) {
       </div>
 
       <div style={{ background: 'rgba(108,99,255,0.05)', border: '1px solid rgba(108,99,255,0.18)', borderRadius: 12, padding: '16px 20px', marginBottom: 24 }}>
-        <p style={{ margin: '0 0 12px', fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#6c63ff' }}>
+        <p style={{ margin: '0 0 12px', fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--wl-on-panel-link, #6c63ff)' }}>
           Tu misión: mientras ves, identifica...
         </p>
         <ol style={{ margin: 0, paddingLeft: 20, display: 'flex', flexDirection: 'column', gap: 6 }}>
@@ -176,7 +176,7 @@ export default function ListeningSurvivable004({ onComplete }: Props) {
 
           {/* Active chapter */}
           <div style={{ background: 'rgba(108,99,255,0.08)', border: '1px solid rgba(108,99,255,0.25)', borderRadius: 12, padding: '12px 16px', marginBottom: 16 }}>
-            <span style={{ fontSize: 11, color: '#6c63ff', fontWeight: 700 }}>{activeChapter.emoji} {activeChapter.labelEs}</span>
+            <span style={{ fontSize: 11, color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700 }}>{activeChapter.emoji} {activeChapter.labelEs}</span>
             {activeChapter.line && (
               <div style={{ marginTop: 6 }}>
                 {activeChapter.speaker && <span style={{ fontSize: 11, color: 'var(--muted)', display: 'block', marginBottom: 2 }}>{activeChapter.speaker}:</span>}
@@ -249,7 +249,7 @@ export default function ListeningSurvivable004({ onComplete }: Props) {
           </p>
           {correct < 4 && (
             <button onClick={() => { setPhase('video'); setQIdx(0); setPicked(null); setCorrect(0); }}
-              style={{ marginBottom: 12, background: 'var(--bg-2,#f5f5f7)', border: '1px solid var(--line-soft)', borderRadius: 10, padding: '12px 24px', fontSize: 14, cursor: 'pointer' }}>
+              style={{ marginBottom: 12, background: 'var(--bg-2,var(--wl-panel-raised, #f5f5f7))', border: '1px solid var(--line-soft)', borderRadius: 10, padding: '12px 24px', fontSize: 14, cursor: 'pointer' }}>
               Revisar video de nuevo
             </button>
           )}

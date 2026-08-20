@@ -1,0 +1,439 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-a1-cento-e-oito-copos",
+  "status": "published",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Portugués A1"
+  },
+  "slug": "cento-e-oito-copos",
+  "series": {
+    "id": "portugues-a1-lectura-10",
+    "episode": 4,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-a1-a-praca-atras-do-mercado",
+    "nextExerciseId": "pt-a1-a-lista-da-mudanca"
+  },
+  "classification": {
+    "genre": "retrato familiar",
+    "topic": "una tía y su casa",
+    "intent": "learning",
+    "tags": [
+      "portugues a1",
+      "lectura",
+      "verbo ter",
+      "posesivos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Ciento ocho vasos"
+    },
+    "intro": {
+      "es": "Una tía de setenta y dos años con ciento ocho vasos en una casa pequeña, y un vaso azul que siempre es el mismo. Lectura de portugués A1."
+    },
+    "mission": {
+      "es": "Averigua para qué sirven los ciento ocho vasos."
+    },
+    "targetText": "Minha tia Neide tem setenta e dois anos. Ela tem uma casa pequena em Recife. Na casa dela tem muita coisa. Ela tem quatorze plantas. Ela tem três gatos. Ela tem uma máquina de costura antiga. E ela tem cento e oito copos. Eu perguntei sobre os copos. A resposta dela foi simples. Cada copo é de uma pessoa. Quando alguém vem na casa dela, ela lembra qual é o copo daquela pessoa. Meu copo é azul, com uma flor branca. Meu irmão tem um copo verde. Nossa mãe tem um copo de vidro grosso, sem desenho. Eu não sei se ela lembra de verdade. Talvez ela escolha na hora. Mas ela sempre me dá o copo azul. Sempre. A casa dela é pequena. A memória dela não é.",
+    "wordCount": 129,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Conjugar y reconocer el verbo ter en presente."
+      },
+      {
+        "es": "Usar los posesivos meu, minha, dela, nossa según el poseedor."
+      },
+      {
+        "es": "Distinguir el dato del texto de la duda que el narrador plantea sobre él."
+      }
+    ],
+    "grammarFocus": [
+      "verbo-ter",
+      "adjetivos-possessivos"
+    ],
+    "vocabulary": [
+      {
+        "surface": "copos",
+        "lemma": "copo",
+        "glosses": {
+          "es": "vasos. ¡No son «copas»: una copa es «taça»!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "costura",
+        "lemma": "costura",
+        "glosses": {
+          "es": "costura; máquina de costura = máquina de coser"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "lembra",
+        "lemma": "lembrar",
+        "glosses": {
+          "es": "recuerda"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vidro",
+        "lemma": "vidro",
+        "glosses": {
+          "es": "cristal, vidrio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "grosso",
+        "lemma": "grosso",
+        "glosses": {
+          "es": "grueso (de espesor)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "desenho",
+        "lemma": "desenho",
+        "glosses": {
+          "es": "dibujo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "escolha",
+        "lemma": "escolher",
+        "glosses": {
+          "es": "elija, escoja"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Talvez",
+        "lemma": "Talvez",
+        "glosses": {
+          "es": "quizá, tal vez"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Recife está en el nordeste brasileño. Guardar objetos asignados a personas concretas es una forma de hospitalidad muy reconocible en las casas del nordeste."
+    },
+    "spanishSpeakerNote": {
+      "es": "Cuidado con «copo»: es un vaso, no una copa. La copa de vino es «taça». Y fíjate en los posesivos: «a casa dela» (su casa, de ella) frente a «minha casa». El portugués brasileño prefiere «dela» a «sua» para evitar ambigüedad."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en portugués de Brasil sobre la vida cotidiana, distinguir ser de estar, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares"
+    ],
+    "disallowedGrammar": [
+      "pretérito perfeito",
+      "imperfeito",
+      "subjuntivo",
+      "voz passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 6.5,
+      "maxSentenceWords": 14,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Presente de indicativo y futuro con ir. Sin tiempos del pasado ni subjuntivo. Falso amigo glosado en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta el texto sobre la tía?",
+      "options": [
+        {
+          "id": "memoria",
+          "text": "Que asigna un vaso a cada persona y recuerda cuál es de quién"
+        },
+        {
+          "id": "coleccion",
+          "text": "Que colecciona vasos antiguos por su valor"
+        },
+        {
+          "id": "mudanza",
+          "text": "Que quiere deshacerse de sus cosas"
+        }
+      ],
+      "answer": "memoria",
+      "evidence": "Cada copo é de uma pessoa. Quando alguém vem na casa dela, ela lembra qual é o copo daquela pessoa.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. No es una colección: es un sistema de memoria social."
+        },
+        "incorrect": {
+          "es": "No se habla de valor ni de deshacerse de nada. Busca la respuesta que da ella sobre los vasos."
+        },
+        "strategy": {
+          "es": "Cuando el narrador pregunta algo y transcribe la respuesta, esa respuesta es la clave del texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cómo es el vaso del narrador?",
+      "options": [
+        {
+          "id": "azul",
+          "text": "Azul con una flor blanca"
+        },
+        {
+          "id": "verde",
+          "text": "Verde"
+        },
+        {
+          "id": "grueso",
+          "text": "De cristal grueso, sin dibujo"
+        }
+      ],
+      "answer": "azul",
+      "evidence": "Meu copo é azul, com uma flor branca.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El verde es de su hermano y el de cristal grueso, de su madre."
+        },
+        "incorrect": {
+          "es": "El texto describe tres vasos, uno por persona. Busca el que va con «meu copo»."
+        },
+        "strategy": {
+          "es": "Con varios objetos asignados, empareja cada uno con su dueño usando los posesivos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto habla de «cento e oito copos». ¿Qué son los «copos»?",
+      "options": [
+        {
+          "id": "vasos",
+          "text": "Vasos para beber"
+        },
+        {
+          "id": "copas",
+          "text": "Copas de vino"
+        },
+        {
+          "id": "copos",
+          "text": "Copos de nieve"
+        }
+      ],
+      "answer": "vasos",
+      "evidence": "Nossa mãe tem um copo de vidro grosso, sem desenho.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y es un falso amigo doble: no son copas ni copos, son vasos. La copa es «taça»."
+        },
+        "incorrect": {
+          "es": "Se parece a dos palabras españolas distintas y no es ninguna. Fíjate en que uno es «de vidro grosso»."
+        },
+        "strategy": {
+          "es": "Cuando una palabra portuguesa se parece a varias españolas, ninguna suele ser la correcta. Usa el contexto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Qué duda plantea el narrador sobre la tía?",
+      "options": [
+        {
+          "id": "recuerda",
+          "text": "Si de verdad recuerda cada vaso o lo elige en el momento"
+        },
+        {
+          "id": "cantidad",
+          "text": "Si de verdad tiene ciento ocho vasos"
+        },
+        {
+          "id": "edad",
+          "text": "Si de verdad tiene setenta y dos años"
+        }
+      ],
+      "answer": "recuerda",
+      "evidence": "Eu não sei se ela lembra de verdade. Talvez ela escolha na hora.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y aun así cierra reconociendo el hecho: a él siempre le da el azul."
+        },
+        "incorrect": {
+          "es": "No pone en duda la cantidad ni la edad. Busca la frase que empieza con «Eu não sei»."
+        },
+        "strategy": {
+          "es": "Una frase que empieza con «no sé si» introduce la duda del narrador, no un dato del texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: cada persona que visita la casa tiene su propio vaso asignado.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Cada copo é de uma pessoa.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y es el sistema entero: un vaso, una persona."
+        },
+        "incorrect": {
+          "es": "Busca la frase que empieza con «Cada copo». Lo dice en cinco palabras."
+        },
+        "strategy": {
+          "es": "La palabra «cada» establece una correspondencia uno a uno. Si la ves, el reparto es total."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "¿Qué efecto busca la última frase, «A casa dela é pequena. A memória dela não é»?",
+      "options": [
+        {
+          "id": "contraste",
+          "text": "Contraponer el tamaño de la casa con el alcance de su memoria"
+        },
+        {
+          "id": "queja",
+          "text": "Quejarse de que la casa es demasiado pequeña"
+        },
+        {
+          "id": "salud",
+          "text": "Avisar de que la tía está perdiendo la memoria"
+        }
+      ],
+      "answer": "contraste",
+      "evidence": "A casa dela é pequena. A memória dela não é.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Dos frases cortas con la misma estructura, y la segunda la niega: eso es el contraste."
+        },
+        "incorrect": {
+          "es": "Nada indica pérdida de memoria: al contrario. Y no hay queja. Fíjate en la simetría de las dos frases."
+        },
+        "strategy": {
+          "es": "Dos frases con la misma forma y sentido opuesto son un contraste deliberado. Busca qué opone."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en portugués sobre alguien de tu familia y las cosas que guarda. Usa el verbo ter cinco veces y tres posesivos distintos."
+    },
+    "minWords": 30,
+    "maxWords": 70,
+    "hints": [
+      "Minha tia / Meu tio tem… anos.",
+      "Na casa dela tem…",
+      "Meu… é…",
+      "Nossa mãe tem…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués A1: Ciento ocho vasos | WeLearn"
+    },
+    "description": {
+      "es": "Lee un retrato familiar en portugués de Brasil A1 y practica el verbo ter y los adjetivos posesivos. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/a1/lectura/cento-e-oito-copos",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-a1-a-praca-atras-do-mercado",
+      "pt-a1-a-lista-da-mudanca"
+    ]
+  }
+}

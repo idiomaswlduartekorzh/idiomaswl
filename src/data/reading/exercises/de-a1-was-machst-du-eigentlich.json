@@ -1,0 +1,442 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-a1-was-machst-du-eigentlich",
+  "status": "published",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Alemán A1"
+  },
+  "slug": "was-machst-du-eigentlich",
+  "series": {
+    "id": "aleman-a1-lectura-10",
+    "episode": 3,
+    "totalEpisodes": 10,
+    "previousExerciseId": "de-a1-die-waschkueche",
+    "nextExerciseId": "de-a1-der-einkaufszettel"
+  },
+  "classification": {
+    "genre": "conversación breve",
+    "topic": "presentarse en una fiesta",
+    "intent": "learning",
+    "tags": [
+      "aleman a1",
+      "lectura",
+      "presente regular",
+      "preguntas con W"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "¿Y tú qué haces?"
+    },
+    "intro": {
+      "es": "Dos personas que no se conocen en una fiesta, y una pregunta que rompe el guion. Lectura de alemán A1 con las preguntas con W."
+    },
+    "mission": {
+      "es": "Fíjate en qué pregunta cambia el tono de la conversación."
+    },
+    "targetText": "— Wie heißt du? — Ich heiße Nadia. Und du? — Tobias. Wo wohnst du? — In Wedding. Seit zwei Jahren. — Was machst du? — Ich arbeite bei einer Versicherung. — Ach so. Und was machst du wirklich? — Wie bitte? — Ich frage nicht nach dem Job. Ich frage, was du machst. — Niemand fragt so. — Ich weiß. Deshalb frage ich. — Also gut. Ich male. Seit sechs Jahren. Niemand kauft die Bilder. — Warum sagst du das nicht zuerst? — Weil die Leute dann fragen, wo sie die Bilder kaufen können. Und dann sage ich, dass sie nirgendwo verkauft werden. Und dann ist es peinlich. — Für wen ist es peinlich? — Das frage ich mich jetzt auch.",
+    "wordCount": 106,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Conjugar el presente regular: heißen, wohnen, arbeiten, machen, fragen, malen."
+      },
+      {
+        "es": "Usar las preguntas con W: wie, wo, was, warum, für wen."
+      },
+      {
+        "es": "Seguir un diálogo y detectar en qué punto cambia."
+      }
+    ],
+    "grammarFocus": [
+      "prasens-regelmaessig",
+      "w-fragen"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Versicherung",
+        "lemma": "Versicherung",
+        "glosses": {
+          "es": "compañía de seguros"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "wirklich",
+        "lemma": "wirklich",
+        "glosses": {
+          "es": "de verdad, realmente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Deshalb",
+        "lemma": "Deshalb",
+        "glosses": {
+          "es": "por eso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "male",
+        "lemma": "malen",
+        "glosses": {
+          "es": "pinto (cuadros)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Bilder",
+        "lemma": "Bild",
+        "glosses": {
+          "es": "cuadros, imágenes"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "nirgendwo",
+        "lemma": "nirgendwo",
+        "glosses": {
+          "es": "en ninguna parte"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "peinlich",
+        "lemma": "peinlich",
+        "glosses": {
+          "es": "embarazoso, violento"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Seit",
+        "lemma": "Seit",
+        "glosses": {
+          "es": "desde hace"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Wedding es un barrio del norte de Berlín. La pregunta «Was machst du?» se entiende automáticamente como «¿de qué trabajas?», y ahí está el juego del texto."
+    },
+    "spanishSpeakerNote": {
+      "es": "Ojo con «seit»: significa «desde hace» y va con presente, no con pasado. «Seit zwei Jahren» es «desde hace dos años», y el verbo va en presente aunque en español usemos otro tiempo."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en alemán sobre la vida cotidiana, encontrar el verbo aunque esté partido o al final, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens"
+    ],
+    "disallowedGrammar": [
+      "Perfekt",
+      "Präteritum",
+      "Konjunktiv",
+      "Passiv",
+      "Genitiv"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 3.9,
+      "maxSentenceWords": 11,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo y futuro con presente. Sin Perfekt, Präteritum ni pasiva. Verbos separables y orden de la frase trabajados en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué ocurre en la conversación?",
+      "options": [
+        {
+          "id": "pregunta",
+          "text": "Una pregunta inesperada la lleva a contar algo que normalmente calla"
+        },
+        {
+          "id": "trabajo",
+          "text": "Los dos hablan de sus trabajos y se despiden"
+        },
+        {
+          "id": "discusion",
+          "text": "Discuten sobre el valor del arte"
+        }
+      ],
+      "answer": "pregunta",
+      "evidence": "Und was machst du wirklich? … Also gut. Ich male. Seit sechs Jahren.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La palabra «wirklich» es lo que rompe el guion de la conversación normal."
+        },
+        "incorrect": {
+          "es": "No discuten ni se despiden. Busca la pregunta que ella responde con «Wie bitte?»."
+        },
+        "strategy": {
+          "es": "En un diálogo, el momento en que alguien responde con extrañeza marca el giro. Localízalo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto tiempo lleva pintando?",
+      "options": [
+        {
+          "id": "seis",
+          "text": "Seis años"
+        },
+        {
+          "id": "dos",
+          "text": "Dos años"
+        },
+        {
+          "id": "ninguno",
+          "text": "No lo dice"
+        }
+      ],
+      "answer": "seis",
+      "evidence": "Ich male. Seit sechs Jahren.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Los dos años son los que lleva viviendo en Wedding."
+        },
+        "incorrect": {
+          "es": "El texto da dos duraciones distintas. Busca la que va después de «Ich male»."
+        },
+        "strategy": {
+          "es": "Cuando aparecen dos cifras con «seit», empareja cada una con su verbo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Ella dice «Und dann ist es peinlich». ¿Qué significa «peinlich»?",
+      "options": [
+        {
+          "id": "violento",
+          "text": "Embarazoso, incómodo"
+        },
+        {
+          "id": "doloroso",
+          "text": "Doloroso físicamente"
+        },
+        {
+          "id": "caro",
+          "text": "Caro"
+        }
+      ],
+      "answer": "violento",
+      "evidence": "Und dann sage ich, dass sie nirgendwo verkauft werden. Und dann ist es peinlich.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Describe la incomodidad de tener que decir que no vende nada."
+        },
+        "incorrect": {
+          "es": "Se parece a «pena» física, pero aquí describe una situación social. Fíjate en lo que la provoca."
+        },
+        "strategy": {
+          "es": "Si una palabra califica una situación y no un cuerpo, busca el sentido social."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué no dice primero que pinta?",
+      "options": [
+        {
+          "id": "preguntas",
+          "text": "Porque entonces le preguntan dónde comprar los cuadros y se pone incómoda"
+        },
+        {
+          "id": "secreto",
+          "text": "Porque quiere mantenerlo en secreto"
+        },
+        {
+          "id": "vergüenza",
+          "text": "Porque le da vergüenza pintar mal"
+        }
+      ],
+      "answer": "preguntas",
+      "evidence": "Weil die Leute dann fragen, wo sie die Bilder kaufen können.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la respuesta empieza con «Weil», así que es literal: es la razón que ella da."
+        },
+        "incorrect": {
+          "es": "No dice que pinte mal ni que sea un secreto: se lo cuenta a un desconocido. Busca el «Weil»."
+        },
+        "strategy": {
+          "es": "Una respuesta que empieza con «weil» da la causa directamente. No hay que deducir nada."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: sus cuadros se venden en una galería del barrio.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Niemand kauft die Bilder … sie nirgendwo verkauft werden",
+      "feedback": {
+        "correct": {
+          "es": "Falso: no se venden en ninguna parte. Ella lo dice dos veces."
+        },
+        "incorrect": {
+          "es": "Busca las palabras «Niemand» y «nirgendwo». Las dos son negaciones absolutas."
+        },
+        "strategy": {
+          "es": "Palabras como «niemand» y «nirgendwo» cierran la puerta del todo. No admiten excepción."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "¿Qué efecto tiene la última frase, «Das frage ich mich jetzt auch»?",
+      "options": [
+        {
+          "id": "duda",
+          "text": "Ella empieza a preguntarse para quién era incómodo en realidad"
+        },
+        {
+          "id": "enfado",
+          "text": "Se enfada con él por insistir"
+        },
+        {
+          "id": "despedida",
+          "text": "Da la conversación por terminada"
+        }
+      ],
+      "answer": "duda",
+      "evidence": "— Für wen ist es peinlich? — Das frage ich mich jetzt auch.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La pregunta de él le devuelve una duda que ella no se había planteado."
+        },
+        "incorrect": {
+          "es": "No hay enfado ni despedida: la frase abre algo, no lo cierra. Fíjate en «jetzt auch»."
+        },
+        "strategy": {
+          "es": "La expresión «jetzt auch» (ahora también) indica un cambio en quien habla. Es una apertura, no un final."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe un diálogo de 6–8 líneas en alemán entre dos personas que se acaban de conocer. Usa cinco preguntas con W distintas y cuatro verbos regulares en presente."
+    },
+    "minWords": 25,
+    "maxWords": 60,
+    "hints": [
+      "— Wie heißt du?",
+      "— Wo wohnst du?",
+      "— Was machst du?",
+      "— Warum sagst du das nicht zuerst?"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán A1: ¿Y tú qué haces? | WeLearn"
+    },
+    "description": {
+      "es": "Lee una conversación en alemán A1 y practica el presente regular y las preguntas con W (wo, was, wie, warum). Con seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/aleman/a1/lectura/was-machst-du-eigentlich",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-a1-die-waschkueche",
+      "de-a1-der-einkaufszettel"
+    ]
+  }
+}

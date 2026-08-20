@@ -1,0 +1,462 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ja-a1-neko-ga-imasu",
+  "status": "published",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Japonés A1",
+    "jlpt": "N5",
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el JLPT es aproximada: son dos escalas distintas, con exámenes distintos. A1 se sitúa alrededor del N5, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "neko-ga-imasu",
+  "series": {
+    "id": "japones-a1-lectura-10",
+    "episode": 2,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ja-a1-ho-san-to-yobimasu",
+    "nextExerciseId": "ja-a1-maiasa-roku-ji-ni-okimasu"
+  },
+  "classification": {
+    "genre": "descripción de un lugar",
+    "topic": "una tienda de barrio y su gato",
+    "intent": "learning",
+    "tags": [
+      "japones a1",
+      "lectura",
+      "あります／います",
+      "partículas を y に"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Hay un gato"
+    },
+    "intro": {
+      "es": "En la tienda hay muchas cosas, pero lo que la gente busca al entrar es otra. Lectura de japonés A1."
+    },
+    "mission": {
+      "es": "Averigua qué hace el gato cuando entra un cliente."
+    },
+    "targetText": "うちの ちかくに 小さい みせが あります。\n\nみせの 中に パンと ぎゅうにゅうと しんぶんが あります。 それから ねこが います。\n\nねこの なまえは 「たまご」です。しろい ねこです。\n\nお客さんが 入ります。 たまごは ドアの ところに います。 お客さんを 見ます。 でも うごきません。\n\nみせの おばあさんは たまごに ごはんを あげます。 一日に 二かい あげます。\n\nみせに ものは たくさん あります。 でも みんなは ねこを 見に 来ます。",
+    "wordCount": 168,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguir あります (cosas) de います (seres vivos)."
+      },
+      {
+        "es": "Usar を para el objeto directo y に para el lugar o el destinatario."
+      },
+      {
+        "es": "Leer una descripción organizada por lo que hay en un espacio."
+      }
+    ],
+    "grammarFocus": [
+      "arimasu-imasu",
+      "particula-wo-ni"
+    ],
+    "vocabulary": [
+      {
+        "surface": "ちかく",
+        "lemma": "ちかく",
+        "reading": "ちかく",
+        "glosses": {
+          "es": "cerca, en las inmediaciones"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "みせ",
+        "lemma": "みせ",
+        "reading": "みせ",
+        "glosses": {
+          "es": "tienda"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ぎゅうにゅう",
+        "lemma": "ぎゅうにゅう",
+        "reading": "ぎゅうにゅう",
+        "glosses": {
+          "es": "leche"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "しんぶん",
+        "lemma": "しんぶん",
+        "reading": "しんぶん",
+        "glosses": {
+          "es": "periódico"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "お客さん",
+        "lemma": "お客さん",
+        "reading": "おきゃくさん",
+        "glosses": {
+          "es": "cliente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "うごきません",
+        "lemma": "うごきません",
+        "reading": "うごきません",
+        "glosses": {
+          "es": "no se mueve"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ごはん",
+        "lemma": "ごはん",
+        "reading": "ごはん",
+        "glosses": {
+          "es": "comida, arroz cocido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "たくさん",
+        "lemma": "たくさん",
+        "reading": "たくさん",
+        "glosses": {
+          "es": "mucho, en gran cantidad"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Las tiendas de barrio japonesas con gato residente son bastante comunes, y el gato suele tener nombre conocido en toda la calle. «たまご» significa huevo."
+    },
+    "spanishSpeakerNote": {
+      "es": "El japonés usa dos verbos donde el español dice «hay»: あります para cosas y います para seres vivos. Por eso «パンが あります» pero «ねこが います»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": true,
+    "romanization": "a0-only",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en japonés escrito casi todo en kana, identificar de quién o de qué se habla gracias a las partículas, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adverbios-frecuencia",
+      "arimasu-imasu",
+      "conjunciones",
+      "desu-masu",
+      "estructura-sov-particulas",
+      "expresiones-cotidianas",
+      "hiragana-basico",
+      "i-keiyoshi",
+      "interrogativos-ka",
+      "jikan-tiempo",
+      "katakana-basico",
+      "masu-kei-conjugacion",
+      "na-keiyoshi",
+      "negacion-completa",
+      "numeros-contadores",
+      "particula-de-e",
+      "particula-wa-ga",
+      "particula-wo-ni",
+      "tai-form",
+      "te-form-permission"
+    ],
+    "disallowedGrammar": [
+      "forma llana (辞書形) en oración principal",
+      "keigo",
+      "condicionales",
+      "voz pasiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 14,
+      "maxSentenceWords": 24,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Forma です／ます, partículas básicas, adjetivos i y na. Kanji por debajo del 12 %, con espacios entre palabras. Furigana declarado pero no implementado en el runner: el apoyo lo dan las lecturas en kana del vocabulario."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué dice el texto sobre la tienda?",
+      "options": [
+        {
+          "id": "gato",
+          "text": "Que tiene muchas cosas, pero la gente va a ver al gato"
+        },
+        {
+          "id": "cierre",
+          "text": "Que la tienda va a cerrar"
+        },
+        {
+          "id": "precios",
+          "text": "Que los precios son muy baratos"
+        }
+      ],
+      "answer": "gato",
+      "evidence": "みせに ものは たくさん あります。 でも みんなは ねこを 見に 来ます。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y esas dos frases finales lo dicen con un でも en medio."
+        },
+        "incorrect": {
+          "es": "No se habla de cierre ni de precios. Busca las dos frases del final."
+        },
+        "strategy": {
+          "es": "La palabra でも (pero) avisa de que lo importante viene después."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántas veces al día le dan de comer al gato?",
+      "options": [
+        {
+          "id": "dos",
+          "text": "Dos veces"
+        },
+        {
+          "id": "una",
+          "text": "Una vez"
+        },
+        {
+          "id": "tres",
+          "text": "Tres veces"
+        }
+      ],
+      "answer": "dos",
+      "evidence": "一日に 二かい あげます。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: 二かい son dos veces."
+        },
+        "incorrect": {
+          "es": "El contador かい cuenta veces. Busca la frase con 一日に."
+        },
+        "strategy": {
+          "es": "El contador かい indica número de veces: localízalo y lee la cifra que lo precede."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué significa うごきません?",
+      "options": [
+        {
+          "id": "nomueve",
+          "text": "No se mueve"
+        },
+        {
+          "id": "nocome",
+          "text": "No come"
+        },
+        {
+          "id": "noduerme",
+          "text": "No duerme"
+        }
+      ],
+      "answer": "nomueve",
+      "evidence": "たまごは ドアの ところに います。 お客さんを 見ます。 でも うごきません。",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: mira al cliente pero se queda donde está."
+        },
+        "incorrect": {
+          "es": "La frase anterior dice que mira al cliente: lo que no hace es cambiar de sitio."
+        },
+        "strategy": {
+          "es": "Si la frase anterior describe una postura, el verbo negado suele ser el de moverse."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el gato se queda junto a la puerta?",
+      "options": [
+        {
+          "id": "ver",
+          "text": "Porque desde ahí ve entrar a todo el mundo sin tener que moverse"
+        },
+        {
+          "id": "salir",
+          "text": "Porque quiere salir a la calle"
+        },
+        {
+          "id": "comida",
+          "text": "Porque ahí le ponen la comida"
+        }
+      ],
+      "answer": "ver",
+      "evidence": "たまごは ドアの ところに います。 お客さんを 見ます。 でも うごきません。",
+      "feedback": {
+        "correct": {
+          "es": "Sí: mira a cada cliente desde el mismo sitio."
+        },
+        "incorrect": {
+          "es": "No intenta salir, y la comida se la dan dos veces al día, sin decir dónde."
+        },
+        "strategy": {
+          "es": "Si el texto une un lugar con una acción repetida, el lugar sirve para esa acción."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: en la tienda venden pan, leche y periódicos.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "みせの 中に パンと ぎゅうにゅうと しんぶんが あります。",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero: los tres aparecen unidos por と."
+        },
+        "incorrect": {
+          "es": "Busca la frase con みせの 中に. Enumera tres cosas."
+        },
+        "strategy": {
+          "es": "La partícula と enlaza elementos de una lista: cuéntalos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la descripción.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Hay una tienda pequeña cerca de casa"
+        },
+        {
+          "id": "p2",
+          "text": "Qué hay dentro, y además un gato"
+        },
+        {
+          "id": "p3",
+          "text": "Qué hace el gato cuando entra un cliente"
+        },
+        {
+          "id": "p4",
+          "text": "La gente va a ver al gato"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "うちの ちかくに 小さい みせが あります … みせの 中に パンと … お客さんが 入ります … みんなは ねこを 見に 来ます。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: el lugar, el contenido, la escena y la conclusión."
+        },
+        "incorrect": {
+          "es": "Fíjate en dónde entra el cliente y dónde está la frase final."
+        },
+        "strategy": {
+          "es": "Una descripción va de fuera hacia dentro: del sitio a lo que ocurre en él."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en japonés describiendo una tienda o una habitación. Usa tres veces あります y dos veces います."
+    },
+    "minWords": 60,
+    "maxWords": 160,
+    "hints": [
+      "うちの ちかくに …が あります。",
+      "中に …と …が あります。",
+      "ねこが います。",
+      "みんなは …を 見に 来ます。"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de japonés A1: hay un gato | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto corto en japonés A1 y practica あります／います y las partículas を y に. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/japones/a1/lectura/neko-ga-imasu",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ja-a1-ho-san-to-yobimasu",
+      "ja-a1-maiasa-roku-ji-ni-okimasu"
+    ]
+  }
+}

@@ -151,15 +151,15 @@ export default function MapasPage() {
           {/* Vocab */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '0.75rem', marginBottom: '1.5rem' }}>
             <div style={{ padding: '0.9rem', borderRadius: 10, background: 'rgba(15,61,140,0.05)', border: '1px solid rgba(15,61,140,0.15)' }}>
-              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Location</p>
+              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Location</p>
               <div style={{ display: 'flex', gap: '0.3rem', flexWrap: 'wrap' }}>
-                {LOCATION_PHRASES.map(p => <span key={p} style={{ fontSize: '0.7rem', padding: '0.1rem 0.4rem', borderRadius: 8, background: 'rgba(15,61,140,0.08)', color: '#0f3d8c', fontFamily: 'var(--mono)' }}>{p}</span>)}
+                {LOCATION_PHRASES.map(p => <span key={p} style={{ fontSize: '0.7rem', padding: '0.1rem 0.4rem', borderRadius: 8, background: 'rgba(15,61,140,0.08)', color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)' }}>{p}</span>)}
               </div>
             </div>
             <div style={{ padding: '0.9rem', borderRadius: 10, background: 'rgba(220,38,38,0.05)', border: '1px solid rgba(220,38,38,0.15)' }}>
-              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#dc2626', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Change</p>
+              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: 'var(--wl-on-panel-alert, #dc2626)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Change</p>
               <div style={{ display: 'flex', gap: '0.3rem', flexWrap: 'wrap' }}>
-                {CHANGE_PHRASES.map(p => <span key={p} style={{ fontSize: '0.7rem', padding: '0.1rem 0.4rem', borderRadius: 8, background: 'rgba(220,38,38,0.07)', color: '#dc2626', fontFamily: 'var(--mono)' }}>{p}</span>)}
+                {CHANGE_PHRASES.map(p => <span key={p} style={{ fontSize: '0.7rem', padding: '0.1rem 0.4rem', borderRadius: 8, background: 'rgba(220,38,38,0.07)', color: 'var(--wl-on-panel-alert, #dc2626)', fontFamily: 'var(--mono)' }}>{p}</span>)}
               </div>
             </div>
           </div>
@@ -174,7 +174,7 @@ export default function MapasPage() {
 
           {/* Original WeLearn map visual */}
           <div id="map-example-panel" role="tabpanel" className="wl-card" style={{ padding: '1.25rem', marginBottom: '1.25rem', overflowX: 'auto' }}>
-            <p style={{ margin: '0 0 0.65rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 900, textTransform: 'uppercase' }}>IELTS-style visual reference</p>
+            <p style={{ margin: '0 0 0.65rem', color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 900, textTransform: 'uppercase' }}>IELTS-style visual reference</p>
             <Image
               src={ex.image}
               alt={`${ex.title}. Original WeLearn IELTS Task 1 map reference showing the before and after layout.`}
@@ -189,7 +189,7 @@ export default function MapasPage() {
 
           {/* Guided map practice */}
           <div className="wl-card" style={{ padding: '1.25rem', marginBottom: '1.25rem' }}>
-            <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.75rem' }}>{ex.title}</p>
+            <p style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--wl-on-panel-link, #0f3d8c)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.75rem' }}>{ex.title}</p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '0.75rem' }}>
               {['Before', 'After'].map((label, ti) => (
                 <div key={label}>
@@ -212,7 +212,7 @@ export default function MapasPage() {
           {change && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '1.25rem' }}>
               <div style={{ padding: '0.9rem 1.1rem', borderRadius: 10, background: 'rgba(15,61,140,0.06)', border: '1px solid rgba(15,61,140,0.18)', fontSize: '0.87rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>
-                <strong style={{ color: '#0f3d8c' }}>Selected change:</strong>{' '}
+                <strong style={{ color: 'var(--wl-on-panel-link, #0f3d8c)' }}>Selected change:</strong>{' '}
                 <em>{change.before}</em> → <em>{change.after}</em>
                 {' '}— location: {change.location}
               </div>
@@ -229,7 +229,7 @@ export default function MapasPage() {
               )}
               {revealed && (
                 <div className="wl-card" style={{ padding: '1.1rem', borderLeft: '3px solid #059669' }}>
-                  <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Model sentence</p>
+                  <p style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--wl-on-panel-ok, #059669)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Model sentence</p>
                   <p style={{ margin: 0, fontSize: '0.93rem', lineHeight: 1.7, color: 'var(--ink)' }}>{change.modelSentence}</p>
                 </div>
               )}
@@ -238,7 +238,7 @@ export default function MapasPage() {
 
           {/* Full model paragraph */}
           <div className="wl-card" style={{ padding: '1.25rem', borderLeft: '3px solid #7c3aed', marginBottom: '1rem' }}>
-            <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#7c3aed', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.5rem' }}>Complete model paragraph</p>
+            <p style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--wl-on-panel-purple, #7c3aed)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.5rem' }}>Complete model paragraph</p>
             <p style={{ margin: 0, fontSize: '0.92rem', lineHeight: 1.8, color: 'var(--ink)' }}>{ex.modelParagraph}</p>
           </div>
 

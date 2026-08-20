@@ -1,0 +1,451 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-a1-der-weg-zur-arbeit",
+  "status": "published",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Alemán A1"
+  },
+  "slug": "der-weg-zur-arbeit",
+  "series": {
+    "id": "aleman-a1-lectura-10",
+    "episode": 5,
+    "totalEpisodes": 10,
+    "previousExerciseId": "de-a1-der-einkaufszettel",
+    "nextExerciseId": "de-a1-ich-kann-nicht-schwimmen"
+  },
+  "classification": {
+    "genre": "descripción de un trayecto",
+    "topic": "ir al trabajo a pie",
+    "intent": "learning",
+    "tags": [
+      "aleman a1",
+      "lectura",
+      "preposiciones de lugar",
+      "dativo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El camino al trabajo"
+    },
+    "intro": {
+      "es": "Veinticuatro minutos andando por el mismo camino, y un desvío de dos minutos que el narrador hace desde hace un año. Lectura de alemán A1."
+    },
+    "mission": {
+      "es": "Averigua por dónde pasa el desvío y qué hay allí."
+    },
+    "targetText": "Ich gehe zu Fuß zur Arbeit. Vierundzwanzig Minuten. Zuerst gehe ich aus dem Haus und dann nach links. Ich gehe an der Bäckerei vorbei, aber ich kaufe nichts. Nach der Bäckerei kommt die Brücke. Unter der Brücke ist ein Kanal. Auf dem Kanal sind immer Enten. Nach der Brücke gehe ich durch den Park. Im Park steht eine alte Bank. Neben der Bank ist ein Baum. Vor einem Jahr habe ich dort etwas gefunden: ein Buch in einer Plastiktüte. Jemand legt jede Woche ein neues Buch dorthin. Ich weiß nicht, wer. Seitdem gehe ich immer über den Park, auch bei Regen. Das sind zwei Minuten mehr. Es lohnt sich.",
+    "wordCount": 109,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Usar las preposiciones de lugar: aus, an, unter, auf, durch, neben, über."
+      },
+      {
+        "es": "Reconocer las que rigen dativo: aus dem Haus, an der Bäckerei, unter der Brücke."
+      },
+      {
+        "es": "Reconstruir un recorrido a partir de una descripción."
+      }
+    ],
+    "grammarFocus": [
+      "praepositionen-ort",
+      "dativ-praepositionen"
+    ],
+    "vocabulary": [
+      {
+        "surface": "zu Fuß",
+        "lemma": "zu Fuß",
+        "glosses": {
+          "es": "a pie, andando"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Brücke",
+        "lemma": "Brücke",
+        "glosses": {
+          "es": "puente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Kanal",
+        "lemma": "Kanal",
+        "glosses": {
+          "es": "canal"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Enten",
+        "lemma": "Ente",
+        "glosses": {
+          "es": "patos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Bank",
+        "lemma": "Bank",
+        "glosses": {
+          "es": "banco de sentarse; también banco de dinero"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Baum",
+        "lemma": "Baum",
+        "glosses": {
+          "es": "árbol"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Plastiktüte",
+        "lemma": "Plastiktüte",
+        "glosses": {
+          "es": "bolsa de plástico"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "lohnt",
+        "lemma": "sich lohnen",
+        "glosses": {
+          "es": "merece la pena"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Dejar libros en un lugar público para que otros los tomen es una práctica extendida en Alemania, con estanterías callejeras oficiales en muchas ciudades."
+    },
+    "spanishSpeakerNote": {
+      "es": "Ojo con «Bank»: es el banco de sentarse y también el banco de dinero, según el contexto. Y fíjate en las preposiciones con dativo: «aus dem Haus», «unter der Brücke», «neben der Bank» — el artículo cambia y hay que aprenderlo con la preposición."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en alemán sobre la vida cotidiana, encontrar el verbo aunque esté partido o al final, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens"
+    ],
+    "disallowedGrammar": [
+      "Perfekt",
+      "Präteritum",
+      "Konjunktiv",
+      "Passiv",
+      "Genitiv"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 6.8,
+      "maxSentenceWords": 13,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo y futuro con presente. Sin Perfekt, Präteritum ni pasiva. Verbos separables y orden de la frase trabajados en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta el texto?",
+      "options": [
+        {
+          "id": "libros",
+          "text": "Un trayecto diario y un desvío que hace por unos libros que alguien deja"
+        },
+        {
+          "id": "deporte",
+          "text": "Que camina al trabajo para hacer ejercicio"
+        },
+        {
+          "id": "transporte",
+          "text": "Que el transporte público de su ciudad funciona mal"
+        }
+      ],
+      "answer": "libros",
+      "evidence": "Jemand legt jede Woche ein neues Buch dorthin … Seitdem gehe ich immer über den Park.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El desvío de dos minutos existe por los libros, y él lo hace incluso cuando llueve."
+        },
+        "incorrect": {
+          "es": "No habla de ejercicio ni de transporte. Busca qué encontró junto al banco."
+        },
+        "strategy": {
+          "es": "Si un texto explica por qué alguien alarga un camino, esa razón es su asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto dura el trayecto?",
+      "options": [
+        {
+          "id": "24",
+          "text": "Veinticuatro minutos"
+        },
+        {
+          "id": "2",
+          "text": "Dos minutos"
+        },
+        {
+          "id": "12",
+          "text": "Doce minutos"
+        }
+      ],
+      "answer": "24",
+      "evidence": "Ich gehe zu Fuß zur Arbeit. Vierundzwanzig Minuten.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Los dos minutos son lo que añade el desvío por el parque."
+        },
+        "incorrect": {
+          "es": "Los dos minutos son el desvío, no el trayecto. Busca la cifra de la segunda frase."
+        },
+        "strategy": {
+          "es": "Distingue el total del añadido. Un texto puede dar los dos y son cosas distintas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «Im Park steht eine alte Bank». ¿Qué es aquí «Bank»?",
+      "options": [
+        {
+          "id": "banco",
+          "text": "Un banco para sentarse"
+        },
+        {
+          "id": "dinero",
+          "text": "Una sucursal bancaria"
+        },
+        {
+          "id": "barandilla",
+          "text": "Una barandilla"
+        }
+      ],
+      "answer": "banco",
+      "evidence": "Im Park steht eine alte Bank. Neben der Bank ist ein Baum.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Está en un parque, junto a un árbol: es el banco de sentarse."
+        },
+        "incorrect": {
+          "es": "Una sucursal bancaria no está en medio de un parque junto a un árbol. El contexto decide."
+        },
+        "strategy": {
+          "es": "Cuando una palabra tiene dos sentidos, el lugar donde está decide cuál. Aquí, el parque."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué pasa por el parque incluso cuando llueve?",
+      "options": [
+        {
+          "id": "libro",
+          "text": "Para ver si hay un libro nuevo esa semana"
+        },
+        {
+          "id": "corto",
+          "text": "Porque por el parque el camino es más corto"
+        },
+        {
+          "id": "patos",
+          "text": "Para ver los patos del canal"
+        }
+      ],
+      "answer": "libro",
+      "evidence": "Jemand legt jede Woche ein neues Buch dorthin … Seitdem gehe ich immer über den Park, auch bei Regen.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el «Seitdem» lo une: desde que lo descubrió, cambia el camino."
+        },
+        "incorrect": {
+          "es": "El texto dice que son dos minutos más, así que no es más corto. Y los patos están en el canal, antes del parque."
+        },
+        "strategy": {
+          "es": "La palabra «seitdem» une un descubrimiento con un cambio de hábito. Busca qué descubrió."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: compra pan en la panadería por la que pasa.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Ich gehe an der Bäckerei vorbei, aber ich kaufe nichts.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: pasa por delante pero no compra nada. El «aber» marca el contraste."
+        },
+        "incorrect": {
+          "es": "Busca la frase con «Bäckerei». Lo que hay después del «aber» es la respuesta."
+        },
+        "strategy": {
+          "es": "La conjunción «aber» introduce lo contrario de lo esperado. No leas solo la primera mitad."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el recorrido según el texto.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Sale de casa y gira a la izquierda"
+        },
+        {
+          "id": "p2",
+          "text": "Pasa por delante de la panadería"
+        },
+        {
+          "id": "p3",
+          "text": "Cruza el puente sobre el canal"
+        },
+        {
+          "id": "p4",
+          "text": "Atraviesa el parque, donde está el banco"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Zuerst gehe ich aus dem Haus und dann nach links … an der Bäckerei vorbei … Nach der Bäckerei kommt die Brücke … Nach der Brücke gehe ich durch den Park.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El texto encadena el recorrido con «zuerst», «dann» y dos veces «nach»."
+        },
+        "incorrect": {
+          "es": "Guíate por «zuerst», «dann» y «nach». Ordenan el camino entero."
+        },
+        "strategy": {
+          "es": "En una descripción de trayecto, los marcadores de secuencia dan el orden. Localízalos."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Describe en 5–7 frases en alemán tu camino al trabajo o a clase. Usa seis preposiciones de lugar distintas y tres con dativo."
+    },
+    "minWords": 25,
+    "maxWords": 60,
+    "hints": [
+      "Ich gehe zu Fuß zur Arbeit.",
+      "Zuerst gehe ich aus dem Haus…",
+      "Nach… kommt…",
+      "Es lohnt sich."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán A1: El camino al trabajo | WeLearn"
+    },
+    "description": {
+      "es": "Lee una descripción en alemán A1 y practica las preposiciones de lugar y las que rigen dativo. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/a1/lectura/der-weg-zur-arbeit",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-a1-der-einkaufszettel",
+      "de-a1-ich-kann-nicht-schwimmen"
+    ]
+  }
+}

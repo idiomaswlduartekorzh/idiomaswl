@@ -99,7 +99,7 @@ export default async function VocabBlockPage({ params }: Props) {
           <span>/</span>
           <Link href={`/practica/${IDIOMA}/${NIVEL}/vocabulario`} style={{ color: 'var(--muted)', textDecoration: 'none' }}>Vocabulario</Link>
           <span>/</span>
-          <span style={{ color: '#e11d48', fontWeight: 800 }}>{bloque.nombre}</span>
+          <span style={{ color: 'var(--wl-on-panel-alert, #e11d48)', fontWeight: 800 }}>{bloque.nombre}</span>
         </nav>
 
         <header style={{ padding: '1.6rem 0 1.4rem', display: 'grid', gap: '0.5rem' }}>

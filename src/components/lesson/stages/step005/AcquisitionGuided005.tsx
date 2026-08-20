@@ -50,11 +50,11 @@ export default function AcquisitionGuided005({ onComplete }: Props) {
 
       <article style={{ background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 16, overflow: 'hidden', marginBottom: 16, position: 'relative' }}>
         {card.recycled && (
-          <div style={{ position: 'absolute', top: 12, right: 12, zIndex: 10, background: 'rgba(45,155,78,0.12)', border: '1px solid rgba(45,155,78,0.3)', borderRadius: 100, padding: '3px 10px', fontSize: 10, fontWeight: 700, color: '#2d9b4e' }}>
+          <div style={{ position: 'absolute', top: 12, right: 12, zIndex: 10, background: 'rgba(45,155,78,0.12)', border: '1px solid rgba(45,155,78,0.3)', borderRadius: 100, padding: '3px 10px', fontSize: 10, fontWeight: 700, color: 'var(--wl-on-panel-ok, #2d9b4e)' }}>
             ♻️ Ya la conoces
           </div>
         )}
-        <div style={{ position: 'relative', aspectRatio: '4/3', overflow: 'hidden', background: 'var(--bg-2,#f5f5f7)' }}>
+        <div style={{ position: 'relative', aspectRatio: '4/3', overflow: 'hidden', background: 'var(--bg-2,var(--wl-panel-raised, #f5f5f7))' }}>
           <img src={card.img} alt={card.es} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
             onError={e => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }} />
           <div style={{ position: 'absolute', inset: 'auto 0 0 0', height: 100, background: 'linear-gradient(transparent, rgba(0,0,0,0.35))' }} />

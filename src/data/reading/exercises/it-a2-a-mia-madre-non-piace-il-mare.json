@@ -1,0 +1,469 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-a2-a-mia-madre-non-piace-il-mare",
+  "status": "published",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Italiano A2"
+  },
+  "slug": "a-mia-madre-non-piace-il-mare",
+  "series": {
+    "id": "italiano-a2-lectura-10",
+    "episode": 8,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-a2-mi-sveglio-alle-quattro-e-venti",
+    "nextExerciseId": "it-a2-se-piove-non-si-gioca"
+  },
+  "classification": {
+    "genre": "retrato",
+    "topic": "treinta veranos en una playa que no le gustaba",
+    "intent": "learning",
+    "tags": [
+      "italiano a2",
+      "lectura",
+      "verbo piacere",
+      "pronombres relativos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A mi madre no le gusta el mar"
+    },
+    "intro": {
+      "es": "Treinta veranos en Rímini, debajo de la sombrilla, vestida y con zapatos, leyendo. Y viniendo todos los años. Lectura de italiano A2."
+    },
+    "mission": {
+      "es": "Averigua qué respondió cuando por fin le preguntaron por qué venía."
+    },
+    "targetText": "A mia madre non piace il mare. Lo dice da sempre e nessuno le crede, perché in Italia è una frase che nessuno prende sul serio.\n\nOgni estate andavamo a Rimini, in un albergo che si chiamava Perla e che non aveva niente di perla. A mio padre piaceva nuotare. A me e a mio fratello piaceva la sabbia. A mia madre non piaceva niente di tutto questo, ma veniva.\n\nStava sotto l'ombrellone con un libro, vestita, con le scarpe. Le signore che stavano intorno a noi le chiedevano: signora, non fa il bagno? Lei rispondeva: no, grazie, a me interessa il libro.\n\nUna volta le ho chiesto perché andavamo a Rimini tutti gli anni, se a lei il mare non piaceva. Mi ha risposto una cosa che mi è rimasta: a me non piace il mare, ma mi piacete voi contenti.\n\nAdesso ha settantatré anni e noi non andiamo più a Rimini. Andiamo in montagna, in un posto che le piace davvero, dove ci sono i boschi e non c'è la sabbia.\n\nE succede una cosa curiosa: in montagna lei parla molto più che al mare. Le piace camminare, le piacciono i nomi degli alberi, le interessa il tempo che farà domani.\n\nMio fratello dice che abbiamo perso trent'anni. Io penso di no: quei trent'anni erano un regalo, e i regali non si contano.",
+    "wordCount": 225,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Conjugar piacere y verbos similares (interessare) con pronombre indirecto."
+      },
+      {
+        "es": "Concordar el verbo con lo que gusta: mi piace il mare, mi piacciono i nomi."
+      },
+      {
+        "es": "Encadenar relativos: che, dove, dei quali."
+      }
+    ],
+    "grammarFocus": [
+      "piacere-verbi-simili-a2",
+      "pronomi-relativi-a2",
+      "articoli"
+    ],
+    "vocabulary": [
+      {
+        "surface": "albergo",
+        "lemma": "albergo",
+        "glosses": {
+          "es": "hotel"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sabbia",
+        "lemma": "sabbia",
+        "glosses": {
+          "es": "arena"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ombrellone",
+        "lemma": "ombrellone",
+        "glosses": {
+          "es": "sombrilla de playa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "bagno",
+        "lemma": "bagno",
+        "glosses": {
+          "es": "baño; «fare il bagno» es bañarse en el mar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rimasta",
+        "lemma": "rimanere",
+        "glosses": {
+          "es": "quedada; «mi è rimasta» es se me quedó grabada"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "boschi",
+        "lemma": "bosco",
+        "glosses": {
+          "es": "bosques"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "alberi",
+        "lemma": "albero",
+        "glosses": {
+          "es": "árboles"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "davvero",
+        "lemma": "davvero",
+        "glosses": {
+          "es": "de verdad, realmente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Rímini y toda la costa de Romaña se organizan en filas numeradas de sombrillas alquiladas por semanas. Familias enteras vuelven al mismo número durante décadas, y la costumbre pesa más que el gusto."
+    },
+    "spanishSpeakerNote": {
+      "es": "Piacere funciona como «gustar»: el sujeto es lo que gusta, no la persona. «Mi piacciono i nomi» lleva verbo en plural porque los nombres son varios. Y «mi piacete voi» es literalmente «me gustáis vosotros»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato en italiano sobre hechos pasados, distinguir el passato prossimo del imperfetto, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere",
+      "avverbi-frequenza-modo-a2",
+      "ci-vuole-vogliono-a2",
+      "comparativi-a2",
+      "condizionale-presente-a2",
+      "congiunzioni-logiche-a2",
+      "da-presente-a2",
+      "forma-cortesia-a2",
+      "futuro-probabilita-a2",
+      "futuro-semplice-a2",
+      "imperfetto-a2",
+      "passato-prossimo-avere-a2",
+      "passato-prossimo-essere-a2",
+      "periodo-ipotetico-reale-a2",
+      "piacere-verbi-simili-a2",
+      "pronomi-diretti-a2",
+      "pronomi-indiretti-a2",
+      "pronomi-relativi-a2",
+      "stare-per-a2",
+      "trapassato-prossimo-a2",
+      "verbi-riflessivi-a2"
+    ],
+    "disallowedGrammar": [
+      "congiuntivo",
+      "passato remoto",
+      "periodo ipotetico irreale",
+      "forma passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 13.2,
+      "maxSentenceWords": 20,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Passato prossimo con avere y essere, imperfetto, futuro, condizionale y forma di cortesia. Sin congiuntivo ni passato remoto."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué revela el retrato?",
+      "options": [
+        {
+          "id": "regalo",
+          "text": "Que iba treinta veranos a un sitio que no le gustaba porque le gustaba verlos contentos"
+        },
+        {
+          "id": "engano",
+          "text": "Que en realidad sí le gustaba el mar y lo escondía"
+        },
+        {
+          "id": "montana",
+          "text": "Que la montaña siempre fue el destino de la familia"
+        }
+      ],
+      "answer": "regalo",
+      "evidence": "a me non piace il mare, ma mi piacete voi contenti.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y esa frase es la que el narrador dice que se le quedó grabada."
+        },
+        "incorrect": {
+          "es": "El texto no insinúa que mintiera, y la montaña llega al final. Busca la respuesta que ella da."
+        },
+        "strategy": {
+          "es": "Si el narrador anuncia una frase que «se le quedó», esa frase es el centro del texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué hacía la madre debajo de la sombrilla?",
+      "options": [
+        {
+          "id": "leia",
+          "text": "Leía, vestida y con zapatos"
+        },
+        {
+          "id": "dormia",
+          "text": "Dormía la siesta"
+        },
+        {
+          "id": "nadaba",
+          "text": "Se bañaba al final de la tarde"
+        }
+      ],
+      "answer": "leia",
+      "evidence": "Stava sotto l'ombrellone con un libro, vestita, con le scarpe.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y a las vecinas les contestaba que le interesaba el libro."
+        },
+        "incorrect": {
+          "es": "No se baña nunca en el texto y no se menciona ninguna siesta. Busca la frase con «ombrellone»."
+        },
+        "strategy": {
+          "es": "Los detalles de una escena suelen ir agrupados en una sola frase descriptiva."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Las señoras le preguntan «non fa il bagno?». ¿Qué significa?",
+      "options": [
+        {
+          "id": "banarse",
+          "text": "¿No se baña en el mar?"
+        },
+        {
+          "id": "ducharse",
+          "text": "¿No se ducha antes de comer?"
+        },
+        {
+          "id": "bano",
+          "text": "¿No va al cuarto de baño?"
+        }
+      ],
+      "answer": "banarse",
+      "evidence": "signora, non fa il bagno? Lei rispondeva: no, grazie, a me interessa il libro.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. En la playa, «fare il bagno» es meterse en el agua."
+        },
+        "incorrect": {
+          "es": "La pregunta se hace en la playa, entre sombrillas, y ella contesta que prefiere el libro."
+        },
+        "strategy": {
+          "es": "Una expresión fija se interpreta por el sitio donde se dice: aquí, la playa."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el narrador no está de acuerdo con su hermano?",
+      "options": [
+        {
+          "id": "regalo",
+          "text": "Porque para él esos treinta veranos fueron un regalo de ella, no un tiempo perdido"
+        },
+        {
+          "id": "montana",
+          "text": "Porque cree que la montaña tampoco le gusta a su madre"
+        },
+        {
+          "id": "culpa",
+          "text": "Porque piensa que la culpa fue del padre"
+        }
+      ],
+      "answer": "regalo",
+      "evidence": "Mio fratello dice che abbiamo perso trent'anni. Io penso di no: quei trent'anni erano un regalo, e i regali non si contano.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y añade el argumento: los regalos no se cuentan."
+        },
+        "incorrect": {
+          "es": "El texto dice que la montaña le gusta de verdad, y nadie culpa al padre. Lee la última frase entera."
+        },
+        "strategy": {
+          "es": "Cuando un texto enfrenta dos opiniones familiares, la última suele traer su propio argumento."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: en la montaña la madre habla mucho más que en la playa.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "in montagna lei parla molto più che al mare. Le piace camminare, le piacciono i nomi degli alberi.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y el texto lo llama «una cosa curiosa»."
+        },
+        "incorrect": {
+          "es": "Busca el párrafo que empieza por «E succede una cosa curiosa»."
+        },
+        "strategy": {
+          "es": "Cuando el texto anuncia algo curioso, lo que sigue es un dato comprobable."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el retrato.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Dice que no le gusta el mar y nadie la cree"
+        },
+        {
+          "id": "p2",
+          "text": "Los veranos en el hotel Perla, bajo la sombrilla"
+        },
+        {
+          "id": "p3",
+          "text": "La pregunta y su respuesta sobre por qué venía"
+        },
+        {
+          "id": "p4",
+          "text": "Ahora van a la montaña y ella habla más"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "A mia madre non piace il mare … Ogni estate andavamo a Rimini, in un albergo che si chiamava Perla … Una volta le ho chiesto perché … Adesso ha settantatré anni.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: afirmación, recuerdo, explicación y presente."
+        },
+        "incorrect": {
+          "es": "Guíate por «Ogni estate», «Una volta» y «Adesso»."
+        },
+        "strategy": {
+          "es": "Un retrato suele terminar en el presente: busca la palabra que marca ese salto."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en italiano sobre algo que hace tu familia y que a alguien no le gusta. Usa piacere seis veces, en singular y en plural, y tres relativos."
+    },
+    "minWords": 60,
+    "maxWords": 110,
+    "hints": [
+      "A mia madre non piace…",
+      "A me piaceva la sabbia.",
+      "Le piacciono i nomi degli alberi.",
+      "un posto che le piace davvero"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano A2: a mi madre no le gusta el mar | WeLearn"
+    },
+    "description": {
+      "es": "Lee un retrato en italiano A2 y practica el verbo piacere y los pronombres relativos. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/italiano/a2/lectura/a-mia-madre-non-piace-il-mare",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-a2-mi-sveglio-alle-quattro-e-venti",
+      "it-a2-se-piove-non-si-gioca"
+    ]
+  }
+}
