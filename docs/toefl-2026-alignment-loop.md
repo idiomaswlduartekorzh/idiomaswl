@@ -3558,3 +3558,13 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
   máximo de 45 minutos. No fue una falla del código TOEFL. El preview del arreglo
   sigue abierto hasta completar un despliegue directo desde un commit limpio, sin
   tocar producción.
+- El despliegue directo desde el commit limpio `50ec7ed6` evitó la clonación y quedó
+  `READY` como `dpl_CC274qEYiqZWye8rWZMEXqBPy29a`. El build remoto con Node 24 pasó
+  catálogo protegido, compilación, TypeScript y 1.822/1.822 páginas; el manifiesto
+  contiene `examenes/[exam]/practica/[mockId]`. El alias protegido de la rama apunta
+  al nuevo preview; una petición anónima a Set 1 recibe 302 al SSO de Vercel y la
+  comprobación autenticada del CLI responde HTTP 200.
+- Estado: gate técnico del preview cerrado. Pendiente del owner: confirmar el espaciado
+  de CTW, avanzar Listening del ítem 1 al 2 con un reproductor nuevo y verificar la
+  omisión explícita cuando llegue a un medio realmente ausente. VoiceOver T16/T17 y
+  todo el gate de 400 audios continúan abiertos.

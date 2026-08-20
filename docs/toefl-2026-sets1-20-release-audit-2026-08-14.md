@@ -162,6 +162,13 @@ se conservan como evidencia.
   minutos. Antes del corte sí pasó guardianes, compilación, TypeScript y generación
   de rutas. El siguiente intento debe evitar esa clonación lenta y permanecer como
   preview protegido, nunca producción;
+- el despliegue directo desde el commit limpio `50ec7ed6` evitó esa clonación. El
+  preview `dpl_CC274qEYiqZWye8rWZMEXqBPy29a` quedó `READY`: catálogo protegido PASS,
+  compilación PASS, TypeScript PASS, 1.822/1.822 páginas y ruta
+  `examenes/[exam]/practica/[mockId]` presente en el manifiesto. El alias estable de
+  la rama fue asignado al nuevo preview y conserva SSO: Set 1 responde 302 al login
+  cuando se solicita sin sesión y HTTP 200 mediante la comprobación autenticada del
+  CLI;
 - ningún audio fue abierto, reproducido, transcrito, generado ni modificado.
 
 ## Gates para declarar “producto terminado”
@@ -173,15 +180,14 @@ se conservan como evidencia.
 | Producción local de las 20 rutas | CERRADO | Smoke 20/20 pasa. |
 | VoiceOver T16/T17 | ABIERTO | Revisión humana del owner en Build, Email y Discussion. |
 | Rama contra `origin/main` | CERRADO | `origin/main` `16b80b03` está incorporado en `b32d25da`; 0 commits detrás, catálogo, TypeScript y guardianes TOEFL PASS. |
-| Build del preview Vercel | ABIERTO | El preview anterior sigue `READY`, pero no contiene `155f8828`. El intento nuevo agotó los 45 minutos por la clonación lenta; falta publicar el arreglo desde un commit limpio. |
-| Revisión humana del preview | ABIERTO | Después del nuevo `READY`, el owner debe probar CTW y el avance Listening 1→2, y aprobar T16/T17 con VoiceOver. La protección SSO no se debilita. |
+| Build del preview Vercel | CERRADO | `dpl_CC274qEYiqZWye8rWZMEXqBPy29a` está `READY`; build exacto, TypeScript y 1.822 páginas PASS. El alias protegido de la rama apunta al arreglo. |
+| Revisión humana del preview | ABIERTO | El owner debe probar CTW y el avance Listening 1→2, y aprobar T16/T17 con VoiceOver. La protección SSO no se debilitó. |
 | Aprobación de audio | ABIERTO | Manifiesto exacto, voces, muestra y costo; requiere autorización explícita. |
 | Generación y QA de audio | BLOQUEADO | Crear sólo el lote aprobado y luego revisar técnica, texto/voz y experiencia. |
 | Producción | BLOQUEADO | Requiere cierre de todos los gates anteriores y autorización separada. |
 
-Conclusión: los 20 simulacros y el arreglo están **listos para un nuevo preview técnico
-pre-audio**, pero `155f8828` todavía no está publicado porque el primer intento agotó
-el tiempo de infraestructura de Vercel. Aún no están listos para venderse o desplegarse
-en producción como producto terminado: faltan el preview `READY`, la aprobación humana
-de CTW, Listening y VoiceOver T16/T17, y después el gate separado de manifiesto, voces,
+Conclusión: los 20 simulacros y el arreglo están **desplegados en un preview técnico
+pre-audio `READY` para revisión del owner**. Aún no están listos para venderse o
+desplegarse en producción como producto terminado: faltan la aprobación humana de CTW,
+avance Listening y VoiceOver T16/T17, y después el gate separado de manifiesto, voces,
 muestra, costo, generación y QA de los 400 audios.
