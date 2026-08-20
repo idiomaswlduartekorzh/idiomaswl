@@ -53,10 +53,10 @@ Ninguno se repite con los escenarios 1, 2, 3, 7 y 8 del set: se comprobó uno po
 **Wilson**, **Yeison**, **Yeimy**, **Laura**, **Andrés**, **Sebastián** y **Nubia**, que ya
 viven en otros escenarios como personas distintas.
 
-- nº 4 — **Yolima**, asesora · **Brayan**, sobrino de 12 años.
-- nº 5 — **Julián**, auxiliar de bodega · **doña Amparo**, supervisora · **Alba**, mostrador ·
-  **Matías**, hijo de Julián.
-- nº 6 — **Dani** (nombre neutro, a propósito) · **Cris** · **Iván**, primo · **Óscar**, el del 402.
+- nº 4 — **Norbey**, asesora · **Brayan**, sobrino de 12 años.
+- nº 5 — **Liliana**, auxiliar de bodega · **doña Amparo**, supervisora · **Alba**, mostrador ·
+  **Matías**, hijo de Liliana.
+- nº 6 — **Dani** (nombre neutro, a propósito) · **Cris** · **Iván**, primo · **Nelson**, el del 402.
 
 ## Dos decisiones de conjunto que este bloque cumple, y por qué importan
 
@@ -87,7 +87,7 @@ viven en otros escenarios como personas distintas.
 Tienda de la operadora en un centro comercial de Bucaramanga, **martes 18 de agosto, 10:40
 a. m.** A llega con la factura impresa: el recibo del 5 de agosto (consumo de julio) trae
 **$42.000 de datos fuera del plan** encima de los $58.900 de su plan de 8 GB. Nueve años con la
-misma línea y ni un solo cobro extra. Al otro lado del mostrador, la asesora Yolima acaba de
+misma línea y ni un solo cobro extra. Al otro lado del mostrador, la asesora Norbey acaba de
 abrir la caja y tiene el turno 07 en la pantalla.
 
 Registro: los dos de usted. Ella lo trata de «señor/señora»; no se conocen.
@@ -145,7 +145,7 @@ completo.
 
 ## Lo que sabe B y A no
 
-En el sistema, Yolima ve el detalle que el cliente no tiene: el consumo son **dos bloques**, no
+En el sistema, Norbey ve el detalle que el cliente no tiene: el consumo son **dos bloques**, no
 uno. Uno el **domingo 26, de 1:10 a 7:40 p. m.** —seis horas seguidas de video—, y otro **del
 21 al 24, entre las 2:00 y las 5:00 de la madrugada**, con el teléfono quieto. Ese segundo
 bloque, que es el grueso, no lo hizo ningún humano. Ve además **otros cuatro reclamos idénticos
@@ -172,14 +172,14 @@ ciudad. Ninguna es la obvia.
 1. **$25.000 en nota crédito en la próxima factura + bloqueo gratuito de datos fuera del plan
    desde hoy + alerta al 80 % configurada en la app.** El caso se cierra aquí. A recibe bastante
    menos de lo que pedía y se va con la garantía de que no se repite. Es la que más le sirve a
-   Yolima y la que peor suena dicha en voz alta.
+   Norbey y la que peor suena dicha en voz alta.
 2. **Los $25.000 en gigas: 8 GB adicionales este ciclo y el siguiente**, sin tocar la factura,
    más el bloqueo. A no ve un peso, pero trabaja tres días por semana desde la casa con un
    internet que se cae, así que el doble de datos vale más de lo que parece. La factura queda
    como está, que es lo que le cuesta aceptar.
 3. **Cambio de plan de retención**: 12 GB al precio de los 8 ($58.900) durante seis meses, y los
    **$42.000 completos** aplicados como descuento repartido en tres facturas de $14.000, **con
-   cláusula de permanencia de seis meses**. Yolima puede activarla desde el mostrador —es
+   cláusula de permanencia de seis meses**. Norbey puede activarla desde el mostrador —es
    promoción de retención, no excepción, y por eso no choca con su tope— pero solo si el cliente
    lo pide o lo acepta con todas las letras. Es la única que devuelve los $42.000 enteros y la
    única que lo amarra: si se va antes, le cobran lo descontado.
@@ -261,7 +261,7 @@ camión de la distribuidora: descargar y contar contra la guía se hace entre do
 la supervisora, lo hace pasar a la oficina de atrás, cierra la puerta y **pone dos cosas sobre
 el escritorio: el segundo juego de llaves del almacén y una hoja de compromiso en blanco**.
 
-Registro: doña Amparo lo tutea y manda; Julián la trata de usted. Dos años trabajando juntos.
+Registro: doña Amparo lo tutea y manda; Liliana la trata de usted. Dos años trabajando juntos.
 
 ## Lo que quiere A
 
@@ -286,7 +286,7 @@ sábados por la mañana.
 **No viene a regañar, y eso está en la mesa antes de la primera frase.** Doña Amparo lleva dos
 años siendo la única que abre y la única que sabe recibir mercancía: no puede faltar, no puede
 enfermarse, no puede tomarse un lunes. Quiere **entregar el segundo juego de llaves**, y el
-único candidato que conoce la bodega y a los proveedores es Julián. Para poder entregarlas
+único candidato que conoce la bodega y a los proveedores es Liliana. Para poder entregarlas
 necesita dos cosas que solo él puede darle:
 
 1. **La hoja de compromiso con el renglón «qué cambia» lleno**: un mecanismo concreto —a qué
@@ -304,13 +304,13 @@ los otros cuatro del almacén. **No puede** pagar recargos ni subir sueldos.
 
 ## Por qué chocan
 
-Los dos quieren lo mismo —las llaves en manos de Julián— y no se ponen de acuerdo en **qué hay
+Los dos quieren lo mismo —las llaves en manos de Liliana— y no se ponen de acuerdo en **qué hay
 que cambiar para que eso sea posible**:
 
-- **Julián** cree que esto se arregla **moviendo su horario**: entra a las 7:30, sale a las
+- **Liliana** cree que esto se arregla **moviendo su horario**: entra a las 7:30, sale a las
   6:30, y no vuelve a llegar tarde en su vida. Es el único arreglo que depende solo de él.
 - **Amparo** no puede tomar ese arreglo, y no por reglamento: el camión pasa a las 7:10, y quien
-  entra a las 7:30 no aprende a recibir nunca. El arreglo de Julián es justo el que le cierra la
+  entra a las 7:30 no aprende a recibir nunca. El arreglo de Liliana es justo el que le cierra la
   puerta de las llaves. Para ella el arreglo es que **las mañanas dejen de depender del bus**.
 
 Y encima, lo que ella ofrece como premio —la capacitación— cae en la única franja que él no
@@ -345,7 +345,7 @@ cerrar**, y no lo propone porque son dos noches suyas y ya trabaja doce horas lo
 
 Tres salidas, y las tres las firmarían los dos.
 
-1. **La vecina + hoja firmada + capacitación en dos jueves después de cerrar.** Julián entra a
+1. **La vecina + hoja firmada + capacitación en dos jueves después de cerrar.** Liliana entra a
    las 6:55 los lunes porque la vecina lleva a Matías, y él recoge a las dos niñas los
    miércoles; el renglón «qué cambia» queda lleno con eso, con fecha de comienzo y revisión el
    lunes 14 de septiembre; Amparo se queda dos jueves hasta las 8:30 para enseñarle a recibir, y
@@ -353,11 +353,11 @@ Tres salidas, y las tres las firmarían los dos.
    Cuesta: a él, sus miércoles; a ella, dos noches suyas que nadie le paga.
 2. **Llamado de atención escrito en la carpeta del almacén —no en la hoja de vida— y la
    capacitación los dos sábados por la mañana.** Amparo se lleva todo lo que vino a buscar sin
-   inventar nada, y Julián se lleva las llaves y el papel que no le duele. Es la salida más fácil
+   inventar nada, y Liliana se lleva las llaves y el papel que no le duele. Es la salida más fácil
    de decir y la más cara de todas: pagarla significa **dar por perdido el curso, el B1 y el
    trámite**, y no hay reembolso ni otro grupo. Existe a propósito: se puede elegir mal.
-3. **Alba abre los lunes y Julián entra a las 8:00.** La puerta queda resuelta hoy mismo, sin
-   pedirle nada a nadie: Julián conserva sus sábados y sus miércoles, y se queda sin camión y sin
+3. **Alba abre los lunes y Liliana entra a las 8:00.** La puerta queda resuelta hoy mismo, sin
+   pedirle nada a nadie: Liliana conserva sus sábados y sus miércoles, y se queda sin camión y sin
    ascenso; Amparo resuelve la apertura y sigue siendo la única que sabe recibir. Es la única que
    se puede cerrar en dos minutos, y la que deja a los dos peor de lo que entraron.
 
@@ -366,7 +366,7 @@ Tres salidas, y las tres las firmarían los dos.
 - **B → A**: qué pasó de verdad estos tres lunes. La respuesta útil son tres piezas —el jardín a
   las 6:40, la obra, los 25 minutos— y ninguna cabe en un sí o un no.
 - **B → A**: qué puede cambiar y qué le costaría. De ahí, y solo de ahí, sale la vecina del 3:
-  Julián no la va a ofrecer sin que le pregunten, porque le cuesta los miércoles.
+  Liliana no la va a ofrecer sin que le pregunten, porque le cuesta los miércoles.
 - **A → B**: qué queda escrito exactamente, en qué papel y quién lo lee. Es la pregunta que
   decide si acepta, y la ficha de A no le da la respuesta.
 
@@ -381,8 +381,8 @@ Alba. Amparo sale al pasillo treinta segundos y vuelve. Lo que Alba le dijo —y
 No es un plazo ni un aumento de volumen: **destruye la forma del trato que estaban armando.**
 Todo lo anterior se sostenía sobre que esto quedara entre los dos, con la puerta cerrada. A
 partir de aquí, lo que Amparo firme tiene que poder decirse **delante de los otros cuatro**: un
-arreglo callado ya no le sirve, y cualquier cambio de horario para Julián que los demás vean va
-a tener que explicarse con algo que Julián dé a cambio a la vista de todos. B decide cuánto le
+arreglo callado ya no le sirve, y cualquier cambio de horario para Liliana que los demás vean va
+a tener que explicarse con algo que Liliana dé a cambio a la vista de todos. B decide cuánto le
 cuenta a A; A se entera solo por lo que le digan.
 
 La carta va **en su propia pantalla**, detrás de un botón, con «turno global 5» escrito encima.
@@ -397,12 +397,12 @@ sábado, sin abrir siquiera la carta.
 
 **Si se van sin acuerdo**, pierden los dos:
 
-- **Julián** sale con memorando —es el único papel que le queda a ella— , pierde el bono de
+- **Liliana** sale con memorando —es el único papel que le queda a ella— , pierde el bono de
   agosto y sale de la lista del ascenso; y las llaves se van con Alba, sin que nadie lo anuncie.
 - **Amparo** sigue siendo la única que abre y la única que recibe, dos años más; y el memorando
   que escriba es justo el papel que la obliga a explicar por qué no están los otros dos lunes.
 
-**Si Julián cede de golpe** —«firmo lo que sea, abro los sábados, hago lo que digan»— no cierra
+**Si Liliana cede de golpe** —«firmo lo que sea, abro los sábados, hago lo que digan»— no cierra
 nada, y por tres razones estructurales:
 
 1. **La hoja tiene un renglón que él tiene que llenar.** «Voy a cumplir» no es un mecanismo, y
@@ -527,7 +527,7 @@ está avisando. Sabe lo de la beca y no lo va a decir. Sabe que Iván llega en e
 **4:30 p. m. del jueves** y que ya tiene el pasaje. Sabe que **el miércoles 26 le dan la
 respuesta**, y que a partir de ahí las últimas noches ya no son defendibles —lo cual explica,
 para él y no para el otro, por qué puede ceder los días del final y no los del principio—. Y
-sabe dos cosas que puede ofrecer y todavía no ha ofrecido: que **Óscar, el del 402, se va a
+sabe dos cosas que puede ofrecer y todavía no ha ofrecido: que **Nelson, el del 402, se va a
 Barranquilla del 24 al 30** y le debe un favor, y que en casa hay **un colchón sencillo** que
 cabe en el piso de su cuarto.
 
@@ -570,7 +570,7 @@ colchón solo existía en la ficha de Dani y Cris no podía proponerlo.
 2. **Iván duerme en el cuarto de Dani** —colchón en el piso— y **Dani duerme en el sofá** las
    diez noches. La sala queda libre de día, siempre, y el fin de semana del 29 la mamá duerme en
    la sala como estaba previsto. Dani paga con su propio espacio, no con días.
-3. **Mitad y mitad**: cinco noches aquí y del 24 al 30 en el apartamento de Óscar, el del 402,
+3. **Mitad y mitad**: cinco noches aquí y del 24 al 30 en el apartamento de Nelson, el del 402,
    que está en Barranquilla. Es la que le devuelve la casa entera a Cris y la única que depende
    de un tercero: hay que llamarlo esta noche y puede decir que no.
 
@@ -679,7 +679,7 @@ la 12 del set completo: no son mías.
 | 7 | **Nº 6 · el motivo del primo deja de ser médico.** Exámenes en el Hospital Internacional → **entrevista final de una beca**, viernes 21, respuesta el miércoles 26, la familia pidió no contarlo. La mecánica solo necesita algo importante y no decible; y el 26 explica además por qué Dani puede ceder los últimos días y no los primeros | `fase3-equidad-1-6.md` H16 (grave) y H17 |
 | 8 | **Fuera el dinero de bolsillo en los tres.** Nº 6: se van los $150.000 hasta el 30 (queda una prohibición social: en su familia el sobrino no paga hospedaje) y los $200.000 de administración (la moneda es la firma). Nº 5: se van los $960.000 del semestre y los $8.000 diarios de cuidado del niño (el precio ahora es recoger a las dos niñas los miércoles). Nº 4 no tenía y sigue sin tener | `fase3-equidad-1-6.md` C1 (cinco de seis escenarios con un jugador sin liquidez; el 4 demuestra que sobra) |
 | 9 | **Nº 6 · la neutralidad de Dani deja de caerse.** «Viven juntas» → «comparten este apartamento»; «mañana siguen viviendo juntas» → «mañana desayunan aquí mismo»; fuera «el arriendo tú sola» —lo que hay es que sin las dos firmas los dos buscan apartamento— | `fase3-equidad-1-6.md` H18 y H19 |
-| 10 | **Nombres.** Fuera los dos Wilson y los dos Yeison, y de paso los cuatro nombres que chocaban con los escenarios 7 y 8: Yeimy → **Yolima**, Laura → **Cris**, Andrés → **Iván**, Sebastián → **Óscar**, Yeison → **Alba**, don Wilson → **doña Amparo**, Samuel → **Brayan** | `fase3-tension-1-6.md` hallazgo 6 · `fase3-equidad-1-6.md` C6 · comprobación propia contra `fase1-escenarios-1-3.md` y `fase1-escenarios-7-8.md` |
+| 10 | **Nombres.** Fuera los dos Wilson y los dos Yeison, y de paso los cuatro nombres que chocaban con los escenarios 7 y 8: Yeimy → **Norbey**, Laura → **Cris**, Andrés → **Iván**, Sebastián → **Nelson**, Yeison → **Alba**, don Wilson → **doña Amparo**, Samuel → **Brayan** | `fase3-tension-1-6.md` hallazgo 6 · `fase3-equidad-1-6.md` C6 · comprobación propia contra `fase1-escenarios-1-3.md` y `fase1-escenarios-7-8.md` |
 | 11 | **Nº 6 · dos datos que solo salen preguntando**: por qué la sala y no el cuarto (lo tiene B y no lo confiesa) y qué va a hacer Iván durante el día (lo tiene A y no sabe que importa). Más una tercera natural, el hostal. Y el colchón pasa a ser dato de las dos fichas | `fase3-tension-1-6.md` (el 6 es el único que baja de dos preguntas abiertas: funciona por confesión, no por indagación) · `fase3-simulacion-4-6.md` §6.D.3 (con un A callado, la salida 2 es inalcanzable jugando limpio) |
 | 12 | **Minutos a lo que dura de verdad**: 6→**7**, 5→**7**, 5→**8**, con el aviso de que eso desborda la horquilla de §4 y hay que decidirlo a la vista | `fase3-simulacion-4-6.md` fallo estructural 4 (turno real de 26-28 s, no de 22-24; ningún escenario cabe en su tiempo) |
 | 13 | **Nº 4 · la carta pasa de media a entera.** El WhatsApp de la hermana ya no solo confirma al sobrino: dice que compartió internet con el televisor, y eso choca con la casilla de custodia de la radicación escrita, que es la salida que A estaba construyendo. Cierra una salida en vez de adelantar una confesión | `fase3-tension-1-6.md` (la del 4 era «media»: el sobrino salía igual por la pregunta obligatoria de B más la prohibición de mentir) |

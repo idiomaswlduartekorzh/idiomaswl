@@ -107,10 +107,10 @@ no hasta saber a quién afecta y por qué le importa a él.**
 | Por persona | **100,000 pesos** *(a hundred thousand)* |
 | Lo que falta | Kevin · **100,000 pesos** · July 30 |
 | Lista de la portería | **6 names + 6 ID numbers** · only doña Nubia can change it |
-| El sexto | Hernán, **Wednesday** · you put him in · car + petrol |
+| El sexto | Hernán, **Wednesday** · you put him in · car + gas |
 | El grupo | **6 people · 2 cars** — and one of them is Kevin's |
 | El carro de Hernán | **4 seats** · at the garage · the mechanic calls back at **7:00 a.m.** |
-| El carro de Kevin | **5 seats** · he pays for the petrol |
+| El carro de Kevin | **5 seats** · he pays for the gas |
 | Salida | Saturday, **8:00 a.m.**, from the parking lot · 1 hour 30 minutes |
 | Ahora mismo | Friday, August 21, **7:20 p.m.** |
 
@@ -248,13 +248,13 @@ caso.
 
 | dato | valor |
 |---|---|
-| Tu carro | **5 seats** · you pay for the petrol |
+| Tu carro | **5 seats** · you pay for the gas |
 | El grupo | **6 people · 2 cars** — and one of them is yours |
 | El martes, en el grupo | **five people** · you said yes to **two** |
 | Lo que le debes a Valentina | **100,000 pesos** *(a hundred thousand)* · July 30 |
 | Lo que cobraste el martes | **100,000 × 2 = 200,000 pesos** *(two hundred thousand)* — Sebastián, Andrea |
 | Fecha que le puedes proponer | **Tuesday the 25th** |
-| Sebastián | call-centre shift **until 10:00 p.m.**, doesn't answer before · hammock, no bed |
+| Sebastián | call center shift **until 10:00 p.m.**, doesn't answer before · hammock, no bed |
 | Andrea | gets to the parking lot **in twenty minutes** · no way there except in your car |
 | Salida | Saturday, **8:00 a.m.**, from the parking lot |
 | Ahora mismo | Friday, August 21, **7:20 p.m.** |
@@ -564,7 +564,7 @@ antes de que se vaya:
 
 | dato | valor |
 |---|---|
-| Hoy | Tuesday, August 25 · **6:40 p.m.** · four people in the queue |
+| Hoy | Tuesday, August 25 · **6:40 p.m.** · four people in line |
 | Su plan | 12 months · **92,000 pesos a month** *(ninety-two thousand)* · signed **July 13** |
 | Permanencia *(los meses mínimos que hay que quedarse)* | **3 months** · ends **October 13** |
 | Débito automático | the **5th** of every month |

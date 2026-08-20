@@ -23,7 +23,7 @@ qué, y debajo van **solo los exponentes de este escenario**.
 | 7 | **Nº 4 · fuera `I'm not sure about that.`**, que contradecía su propia restricción de no mentir. La evasiva de 4A pasa al **bloque 6 de la caja**, con la advertencia escrita de qué se puede y qué no | `fase5-naturalidad-1-6.md` N5 |
 | 8 | **Glosas nuevas.** Ninguna glosa de estas seis fichas se repite con las de `fase4-fichas-1-3.md` ni `fase4-fichas-7-8.md`. Las dos byte-idénticas (`I'm not sure about that.` y la de `I mean…`) desaparecen con la fila | `fase5-naturalidad-1-6.md` C3 y N9 · `fase5-conjunto.md` §5.3 |
 | 9 | **«Lo que pierdes si te vas sin trato» entra en los seis roles**, con el formato de `fase4-fichas-1-3.md`. Estaba en 6 de 6 fichas del otro lote y en 0 de las mías | `fase5-tension-1-6.md` §4.4 · `fase5-naturalidad-1-6.md` N14 |
-| 10 | **Género.** La asesora del 4 pasa a hombre (**Hernán**) y Julián (5A) pasa a mujer (**Liliana**). Ningún motor depende de su género; concordancias barridas en las dos fichas de cada par | `fase5-equidad-8.md` §Dos · `fase5-conjunto.md` §6.2 |
+| 10 | **Género.** La asesora del 4 pasa a hombre (**Norbey**) y Julián (5A) pasa a mujer (**Liliana**). Ningún motor depende de su género; concordancias barridas en las dos fichas de cada par | `fase5-equidad-8.md` §Dos · `fase5-conjunto.md` §6.2 |
 | 11 | **Colisión de nombre.** Óscar (el del 402, nº 6) → **Nelson**. El Óscar del nº 7 se queda con el nombre: tiene carro, cuatro puestos y media carta | `fase5-equidad-8.md` N5 · `fase5-conjunto.md` §6.3 |
 | 12 | **Fuera el aviso de minutos.** §4 da hoy 5-8 minutos y 6-9 turnos por rol: los tres caben y no hay nada que decidir. Y la línea del jugador se unifica con la del otro lote: **turnos y minutos, en las seis** | `fase5-tension-1-6.md` §4.5 · `fase5-calibrador-8.md` F10 · `fase5-conjunto.md` §5.3 y §6.5.1 |
 | 13 | **Gesto físico de cierre en los tres**, escrito igual en las dos fichas de cada par: el número del reclamo, la hoja firmada y leída, el mensaje a la tía dictado en voz alta | `fase5-conjunto.md` §5.2 y §6.4 |
@@ -41,8 +41,8 @@ botón, en su propia vista, y aquí se escribe en bloque propio detrás de las d
 bloque `grammarReferences`, que es insumo para `habla-integracion`.
 
 **Aviso al coordinador — dos nombres divergen del motor.** `fase4-escenarios-4-6.md` sigue diciendo
-**Yolima** (4B) y **Julián** (5A). Manda esta ficha: es lo que el jugador ve. Al integrar hay que
-propagar Hernán, Liliana y Nelson al motor, y correr la comprobación de nombres **una vez sobre los
+**Norbey** (4B) y **Julián** (5A). Manda esta ficha: es lo que el jugador ve. Al integrar hay que
+propagar Norbey, Liliana y Nelson al motor, y correr la comprobación de nombres **una vez sobre los
 tres archivos a la vez**, no dentro de cada bloque —que es como se creó la colisión de Óscar—.
 
 ---
@@ -52,7 +52,7 @@ tres archivos a la vez**, no dentro de cada bloque —que es como se creó la co
 
 `quejarse` + `pedir-aclaracion` · poder **b>a** · arranca **A** · desenlace **acuerdo-parcial** ·
 **7 min** · A 8 turnos · B 7 turnos (15 globales) · **A = «Quien reclama la factura»**,
-**B = Hernán, el asesor**
+**B = Norbey, el asesor**
 
 **Anclaje de gramática (A2):** `past-simple-questions` (la queja entera va en negativo de pasado),
 `past-continuous-a2` (qué estaba haciendo el teléfono), `past-simple-be`,
@@ -187,7 +187,7 @@ decidido.
 
 ---
 
-## Ficha del rol B — Hernán, el asesor
+## Ficha del rol B — Norbey, el asesor
 
 > **Esta ficha es solo tuya.** No la enseñes y no leas la otra.
 > **Registro:** mostrador. Tratas de usted a la persona que tienes delante todo el tiempo, también
@@ -447,7 +447,7 @@ otra persona sin que nadie lo anuncie.
 | Los tres lunes | **August 3, August 10, August 17** |
 | Tu hijo | **Matías** · nursery in Girón · drop-off at **6:40** |
 | Tu bus | it **used to arrive at ten to seven** · now it arrives at **a quarter past seven** |
-| La obra de la carrera 15 | roadworks — they **started on August 1** · **twenty-five minutes more** |
+| La obra de la carrera 15 | road work — they **started on August 1** · **twenty-five minutes more** |
 | El bus de las 5:50 | it gets you there at **6:45** — but then the boy waits **thirty minutes alone** at the nursery door |
 | La vecina del 3 | she takes her daughter to the **same nursery** · you have never asked her |
 | Lo que cuesta pedírselo | **you pick up both girls on Wednesdays at five** · Wednesdays are yours |
@@ -469,7 +469,7 @@ está ordenada por función y ninguna fila va antes que otra.
 | saber qué hay encima de la mesa | `What are the keys for?` | preguntar por lo que ves antes de hablar de ti | formal |
 | saber qué firmas | `Which paper is that, and who reads it?` | separar tres papeles que suenan igual y no lo son | formal |
 | contar qué cambió | `My bus used to arrive at ten to seven — now it arrives at a quarter past.` | poner las dos horas juntas, que es lo que se entiende | neutro |
-| contar qué cambió | `The roadworks started on August 1.` | fechar la causa en vez de contarla como una queja | neutro |
+| contar qué cambió | `The road work started on August 1.` | fechar la causa en vez de contarla como una queja | neutro |
 | contar qué cambió | `I leave Matías at the nursery at twenty to seven.` | decir la hora que no se puede mover | neutro |
 | decir el precio de lo que aceptas | `That costs me my Wednesdays.` | nombrar en voz alta lo que pagas, que es el punto 3 del cierre | neutro |
 | reconocer el hecho | `I'm sorry about this morning.` | disculparte una vez, con el hecho delante, y no volver a hacerlo | formal |
@@ -681,13 +681,13 @@ grammarReferences: [
   { slug: 'have-to-must', title: 'Have to y Must en Inglés A2',
     rationale: 'Ella no regaña, se ampara en una obligación: "I have to write something"; y la otra explica la suya: "I have to leave him at the nursery at twenty to seven".' }, // a2
   { slug: 'past-simple-regular', title: 'Past Simple Verbos Regulares en Inglés A2',
-    rationale: 'La causa se fecha en pasado, nunca con since ni con for: "the roadworks started on August 1", "the job opened in April".' }, // a2
+    rationale: 'La causa se fecha en pasado, nunca con since ni con for: "the road work started on August 1", "the job opened in April".' }, // a2
   { slug: 'past-simple-questions', title: 'Preguntas y Negativos en Past Simple A2',
     rationale: 'Las dos preguntas abiertas que el criterio exige antes de decidir nada: "What happened this morning?", "What time did you leave?".' }, // a2
   { slug: 'will-future', title: 'El Futuro con Will en Inglés A2',
     rationale: 'El mecanismo se compromete con hora y día de comienzo: "I\'ll start at five to seven from next Monday".' }, // a2
   { slug: 'connectors-a2', title: 'Conectores en Inglés A2: because, so, although, however, but',
-    rationale: 'Razón y contraste en la disculpa y en la negativa amortiguada: "I\'m sorry, but the bus takes twenty-five minutes more because of the roadworks".' }, // a2
+    rationale: 'Razón y contraste en la disculpa y en la negativa amortiguada: "I\'m sorry, but the bus takes twenty-five minutes more because of the road work".' }, // a2
   { slug: 'imperative', title: 'El imperativo en inglés A1',
     rationale: 'El primer turno de la supervisora no es una frase, es un objeto sobre la mesa y un imperativo: "Sit down. I want to give you these keys". Sin este tema, el turno que sostiene el escenario entero no está anclado.' }, // a1
   { slug: 'can-ability', title: 'Can para habilidad en inglés A1',
@@ -1032,8 +1032,8 @@ vienen de `fase0-plan.md` y no se han tocado. El reparto de conjunto (§5) se mi
 
 # Lo que queda abierto, escrito y no escondido
 
-1. **El motor del 4 y el del 5 no saben todavía cómo se llaman sus personajes.** Hernán, Liliana y
-   Nelson están en las fichas; `fase4-escenarios-4-6.md` sigue diciendo Yolima, Julián y Óscar.
+1. **El motor del 4 y el del 5 no saben todavía cómo se llaman sus personajes.** Norbey, Liliana y
+   Nelson están en las fichas; `fase4-escenarios-4-6.md` ya los trae propagados (Norbey, Liliana y Nelson).
 2. **Con Julián convertido en Liliana, el set pierde su único hombre cuidando a un menor.** El
    reparto de género mejora donde se midió (quien manda cara a cara y quien causa el problema) y
    empeora en una casilla que nadie contó. Queda dicho para que se decida a la vista.
@@ -1047,5 +1047,5 @@ vienen de `fase0-plan.md` y no se han tocado. El reparto de conjunto (§5) se mi
    otro día y prohibido llamar; esa prohibición ya no es restricción: es el coste de irse, que se
    paga en tiempo y en dinero, no en salud. Los otros cinco pierden un papel, un bono, una mañana o
    un desayuno incómodo.
-5. **La variedad de inglés sigue mezclada** (`roadworks` y `neighbor` conviven en el 5). No lo toco:
+5. **La variedad de inglés sigue mezclada** (`road work` y `neighbor` conviven en el 5). No lo toco:
    la decisión entre británico y americano es de David y afecta a los ocho escenarios a la vez.

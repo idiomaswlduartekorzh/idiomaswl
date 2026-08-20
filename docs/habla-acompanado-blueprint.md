@@ -43,7 +43,8 @@ Nueve piezas. Falta una y el escenario se muere de una de las seis maneras de §
 | **Objetivo propio** | Qué tiene que conseguir *este* rol. Concreto y verificable. | Se conversa sin rumbo |
 | **Restricciones** | Lo que este rol **no** puede hacer o decir. 2 o 3. | Se resuelve por la vía fácil y no se produce lengua |
 | **Dato oculto** | Algo que este rol sabe y el otro no | No hay razón para preguntar |
-| **Datos duros** | Fecha, hora, precio, nombre, número. **Nunca frases en español.** | El A2 traduce literal y sale spanglish |
+| **Datos duros** | Fecha, hora, precio, nombre, número, en forma de nota. **Nunca una frase decible.** | O traduce literal, o lee la ficha en voz alta |
+| **Vocabulario** | 8 a 10 palabras que este rol necesita **aquí** y que un A2 probablemente no tiene, con su definición en inglés sencillo | Se sabe qué decir y no con qué palabra |
 | **Andamiaje** | 6 a 10 expresiones en el idioma meta, con su uso y su registro. Opcionales. | El flojo se bloquea y se pasa al español |
 | **Complicación** | Una carta que entra a mitad y va **a un solo rol** | La conversación se aplana |
 | **Criterio de cierre** | Cómo saben los dos que terminó y con qué | Se apaga sin final |
@@ -119,7 +120,7 @@ El guardián no publica un set que falle una sola.
 
 1. **Asimetría** — cada ficha tiene al menos un dato que la otra no.
 2. **Zona de acuerdo** — existe una salida que los dos aceptarían, y no es obvia.
-3. **Cero español calcable** — ninguna ficha trae la frase que hay que decir.
+3. **Cero frase calcable** — ninguna ficha trae la frase que hay que decir, ni en español ni en inglés (ver §11).
 4. **Andamiaje** — en **dos piezas separadas**, y esto no es organización, es lo que impide
    que se convierta en un guion (ver §10): la **caja de herramientas del nivel**, común a los
    ocho escenarios, y **6 a 10 exponentes propios** de este rol en este escenario. Ninguna
@@ -156,7 +157,8 @@ type RoleplayRole = {
   goal: string
   constraints: string[]
   secret?: string
-  data: { label: string; value: string }[]   // datos duros, jamás frases en español
+  data: { label: string; value: string }[]   // datos duros en nota, jamás una frase decible
+  vocab: { word: string; whatItIs: string; here: string }[]  // 8-10, definición en inglés (§11)
   exponents: { form: string; use: string; register: 'formal' | 'neutro' | 'informal' }[]
   successCriteria: string[]
 }
@@ -236,3 +238,65 @@ mitades y cada ficha señala cuáles le tocan.
 
 Regla de reparto: si una forma sirve igual en cinco escenarios, es de la caja. Si solo se
 entiende sabiendo de qué va este escenario, es de la ficha.
+
+## 11. La ficha está en inglés, y por eso hay que escribirla distinto
+
+**Decisión de David, 20 de agosto de 2026.** La ficha entera va en el idioma que se estudia. No
+es una traducción de la versión en español: es lo que convierte el ejercicio en circular —se
+lee en inglés y después se habla en inglés, y la lectura deja de ser un trámite para ser la
+mitad del ejercicio.
+
+**El riesgo que introduce, y cómo se cierra.** Con la ficha en español era físicamente imposible
+leerla en voz alta. En inglés, se puede — y si se puede, se hace. Por eso:
+
+> La ficha se escribe **en notas, no en frases**. `Exam: Saturday 12, 8:00 a.m.` sí.
+> `I'm taking the exam on Saturday at eight.` no, jamás, ni en los datos ni en la situación ni
+> en los objetivos. Las frases decibles viven **solo** en la tabla de exponentes, que es donde
+> el estudiante sabe que va a buscarlas.
+
+Prueba para el redactor: si una línea de tu ficha se puede decir tal cual en la conversación y
+el turno avanza, esa línea está mal escrita. Reescríbela como dato.
+
+El inglés de la ficha es **A2 leído**, que aguanta un poco más que el A2 hablado: frases cortas,
+presente y pasado simple, cero subordinación larga. Si una instrucción no cabe en A2, es que la
+instrucción es demasiado complicada.
+
+**Variedad: americana.** `road work`, no `roadworks`. `gas`, no `petrol`. Vale para los ocho
+escenarios y para los 23 niveles que vengan detrás.
+
+### El bloque de vocabulario
+
+Es pieza obligatoria y va **antes** de los exponentes, porque saber qué decir no sirve de nada
+sin la palabra. De 8 a 10 entradas por rol, y solo las de **este** rol en **este** escenario: la
+palabra que necesita quien está detrás del mostrador no es la que necesita quien está delante.
+
+| Columna | Qué lleva |
+|---|---|
+| `word` | La palabra o el trozo, tal como se dice |
+| `what it is` | Definición **en inglés sencillo**, no traducción. `shift — the hours you work in one day` |
+| `here` | Para qué le sirve en esta conversación concreta |
+
+Se eligen por una prueba, no por intuición: **¿puede este rol llegar al cierre sin esta
+palabra?** Si sí, fuera. Entran las que aparecen en los datos duros del propio rol, las que le
+va a soltar el otro, y las del oficio de la escena.
+
+### Cuánto ocupa una ficha
+
+Se mide **la prosa aparte de las tablas**, porque no cuestan lo mismo de leer: una tabla se
+consulta, un párrafo se lee entero. Contar las dos juntas es lo que hace que un presupuesto
+parezca incumplido cuando no lo está.
+
+| Nivel | Prosa | Tablas |
+|---|---|---|
+| **A1-A2** | **≤ 350 palabras** | datos ≤ 10 filas · vocabulario 8-10 · exponentes 6-9 |
+| **B1-B2** | ≤ 600 | datos ≤ 14 · vocabulario 10-12 · exponentes 8-10 |
+| **C1-C2** | sin tope fijo | ahí la ficha puede ser un documento de verdad — un contrato, un informe |
+
+Medido sobre el escenario 3: la ficha en español gastaba **798 palabras de prosa**; la misma
+ficha en inglés, con el bloque de vocabulario añadido, gasta **343** — un 57 % menos, y con una
+pieza más dentro. Se corta prosa, no piezas:
+la situación pasa de párrafo a dos líneas, el objetivo de explicación a frase, y lo que cabe en
+una tabla no se cuenta en un texto.
+
+El molde vivo está en `artifacts/habla-a2/fase7-modelo-ficha-en.md`. Los escenarios nuevos se
+escriben contra él, no contra esta descripción.
