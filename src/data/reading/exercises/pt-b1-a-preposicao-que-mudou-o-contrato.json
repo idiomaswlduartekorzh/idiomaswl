@@ -1,0 +1,479 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-b1-a-preposicao-que-mudou-o-contrato",
+  "status": "published",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Portugués B1"
+  },
+  "slug": "a-preposicao-que-mudou-o-contrato",
+  "series": {
+    "id": "portugues-b1-lectura-10",
+    "episode": 9,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-b1-a-rotina-que-eu-nao-escolhi",
+    "nextExerciseId": "pt-b1-ela-nao-esta-professora-ela-e"
+  },
+  "classification": {
+    "genre": "crónica profesional",
+    "topic": "una palabra en un documento",
+    "intent": "learning",
+    "tags": [
+      "portugues b1",
+      "lectura",
+      "regencia verbal",
+      "preposiciones"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La preposición que cambió el contrato"
+    },
+    "intro": {
+      "es": "Un contrato de obra en el que una preposición cambió quién pagaba el material. Lectura de portugués B1 con la regencia verbal."
+    },
+    "mission": {
+      "es": "Averigua qué decía el contrato y qué creían las dos partes que decía."
+    },
+    "targetText": "Eu trabalho revisando contratos há onze anos e a maioria dos problemas que eu vejo não vem de cláusulas complicadas. Vem de preposições. O caso que eu conto sempre em treinamento aconteceu em 2022, numa obra pequena de reforma de padaria. A cláusula dizia que a empresa se responsabilizava pelo fornecimento do material. O dono da padaria entendeu que a empresa ia comprar e pagar o material. A empresa entendeu que ia se encarregar de trazer o material até a obra, e que o pagamento continuava com o cliente. As duas leituras cabem na frase. Responsabilizar-se por alguma coisa pode significar assumir o custo ou assumir a tarefa, e a preposição não resolve a ambiguidade. Se a cláusula dissesse que a empresa se comprometia a adquirir o material, não haveria discussão nenhuma. O verbo adquirir só tem um sentido. A obra parou por cinco semanas. O material estava na calçada, coberto com lona, e ninguém queria assinar o recebimento. Cada dia parado custava cerca de mil e duzentos reais em faturamento perdido para a padaria. No fim as duas partes dividiram o valor, o que ninguém achou justo e todo mundo aceitou, porque cinco semanas já eram mais caras do que a diferença. Depois desse caso eu comecei a marcar os contratos que reviso com uma cor. Verde para os verbos que só admitem uma leitura. Amarelo para os que precisam de contexto. Vermelho para os que eu já vi darem problema em juízo. Mostro a página inteira ao cliente antes de qualquer explicação. Quase sempre a reação é a mesma: a pessoa fica olhando a quantidade de amarelo e faz uma pergunta que eu já espero, se aquilo é normal. É normal, e é justamente por ser normal que quase ninguém repara. Desde então eu tenho uma regra que ensino a quem me procura. Nunca escreva um verbo que precise de contexto para ser entendido. Prefira verbos que dependam de uma única preposição e que se refiram a uma única ação. Escreva comprar, entregar, transportar, pagar. Não escreva responsabilizar-se, providenciar, viabilizar. Essas palavras existem para o caso em que alguém não quer se comprometer, e às vezes é exatamente para isso que elas são escolhidas. Quando eu vejo três delas na mesma página, eu não penso mais em erro de redação. Penso que alguém escreveu com cuidado, só que não o cuidado que o cliente imagina.",
+    "wordCount": 397,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Reconocer la regencia verbal: responsabilizar-se por, comprometer-se a, referir-se a."
+      },
+      {
+        "es": "Notar cómo cambia el sentido según la preposición que exige el verbo."
+      },
+      {
+        "es": "Distinguir la ambigüedad accidental de la deliberada."
+      }
+    ],
+    "grammarFocus": [
+      "regencia-verbal-b1",
+      "preposicoes-b1",
+      "para-vs-por-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "calçada",
+        "lemma": "calçada",
+        "glosses": {
+          "es": "acera"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fornecimento",
+        "lemma": "fornecimento",
+        "glosses": {
+          "es": "suministro"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "encarregar",
+        "lemma": "encarregar-se",
+        "glosses": {
+          "es": "encargarse"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "assinar",
+        "lemma": "assinar",
+        "glosses": {
+          "es": "firmar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "recebimento",
+        "lemma": "recebimento",
+        "glosses": {
+          "es": "recepción, acuse de recibo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "faturamento",
+        "lemma": "faturamento",
+        "glosses": {
+          "es": "facturación"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "providenciar",
+        "lemma": "providenciar",
+        "glosses": {
+          "es": "gestionar, ocuparse de que algo se haga"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "redação",
+        "lemma": "redação",
+        "glosses": {
+          "es": "redacción"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La revisión de contratos de obra es un servicio habitual en Brasil para pequeños comercios, y buena parte de los litigios menores se originan en la redacción y no en el incumplimiento."
+    },
+    "spanishSpeakerNote": {
+      "es": "La regencia verbal es la preposición que cada verbo exige, y no coincide siempre con el español: «comprometer-se a», «responsabilizar-se por», «referir-se a». Cambiarla no suena raro, cambia el sentido."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo en portugués que desarrolla una idea y cambia de dirección, distinguir el hecho de la interpretación, y justificar una inferencia cruzando dos pasajes."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares",
+      "comparativos-superlativos-a2",
+      "condicional-a2",
+      "conjuncoes-logicas-a2",
+      "diminutivos-aumentativos-a2",
+      "expressoes-com-fazer-a2",
+      "expressoes-tempo-a2",
+      "futuro-do-presente-a2",
+      "gerundio-a2",
+      "ha-faz-tempo-a2",
+      "para-vs-por-a2",
+      "preterito-imperfeito-a2",
+      "preterito-perfeito-irregular-a2",
+      "pronomes-obliquos-a2",
+      "pronomes-relativos-a2",
+      "ser-vs-estar-a2",
+      "subjuntivo-presente-a2",
+      "verbo-ficar-a2",
+      "verbos-modais-a2",
+      "verbos-reflexivos-a2",
+      "voz-passiva-a2",
+      "comparativos-superlativos-b1",
+      "condicional-b1",
+      "conectivos-b1",
+      "conjuntivo-imperfeito-b1",
+      "discurso-indireto-b1",
+      "futuro-conjuntivo-b1",
+      "futuro-presente-b1",
+      "gerundio-b1",
+      "imperativo-b1",
+      "participio-passado-b1",
+      "periodo-hipotico-b1",
+      "preposicoes-b1",
+      "preterito-perfeito-vs-imperfeito-b1",
+      "pronomes-obliquos-b1",
+      "regencia-verbal-b1",
+      "ser-vs-estar-b1",
+      "subjuntivo-presente-b1",
+      "tempos-compostos-b1",
+      "verbos-reflexos-b1",
+      "voz-passiva-b1"
+    ],
+    "disallowedGrammar": [
+      "registro literario",
+      "mesóclise",
+      "português europeu"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 13.7,
+      "maxSentenceWords": 28,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Prosa B1 con tiempos compuestos, futuro do subjuntivo y período hipotético. Sin mesóclise ni norma europea. Inferencia moderada."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué defiende la crónica?",
+      "options": [
+        {
+          "id": "verbos",
+          "text": "Que hay que elegir verbos de un solo sentido, porque los ambiguos a veces se eligen a propósito"
+        },
+        {
+          "id": "abogado",
+          "text": "Que todo contrato debe ser revisado por un abogado"
+        },
+        {
+          "id": "obra",
+          "text": "Que las obras de reforma siempre se retrasan"
+        }
+      ],
+      "answer": "verbos",
+      "evidence": "Nunca escreva um verbo que precise de contexto para ser entendido … às vezes é exatamente para isso que elas são escolhidas.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el cierre añade la sospecha: la ambigüedad puede ser deliberada."
+        },
+        "incorrect": {
+          "es": "No recomienda contratar a nadie ni generaliza sobre las obras. Busca la regla que enseña."
+        },
+        "strategy": {
+          "es": "Cuando un profesional enuncia «una regla que enseño», esa regla es la tesis del texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto tiempo estuvo parada la obra?",
+      "options": [
+        {
+          "id": "cinco",
+          "text": "Cinco semanas"
+        },
+        {
+          "id": "once",
+          "text": "Once años"
+        },
+        {
+          "id": "2022",
+          "text": "Dos años"
+        }
+      ],
+      "answer": "cinco",
+      "evidence": "A obra parou por cinco semanas.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Los once años son la experiencia del narrador revisando contratos."
+        },
+        "incorrect": {
+          "es": "Los once años son de su oficio, no de la obra. Busca la frase con «parou»."
+        },
+        "strategy": {
+          "es": "Empareja cada duración con su sujeto: la obra, la carrera del autor, la fecha del caso."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto habla del «fornecimento do material». ¿Qué es el «fornecimento»?",
+      "options": [
+        {
+          "id": "suministro",
+          "text": "El suministro, hacer llegar el material"
+        },
+        {
+          "id": "almacen",
+          "text": "El almacén donde se guarda"
+        },
+        {
+          "id": "presupuesto",
+          "text": "El presupuesto del material"
+        }
+      ],
+      "answer": "suministro",
+      "evidence": "a empresa se responsabilizava pelo fornecimento do material",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y justamente su ambigüedad es el problema: suministrar puede ser pagar o transportar."
+        },
+        "incorrect": {
+          "es": "No se habla de almacén ni de presupuesto. Fíjate en las dos lecturas que el texto explica después."
+        },
+        "strategy": {
+          "es": "Si un término genera dos interpretaciones en el texto, esas dos interpretaciones lo definen."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué aceptaron las dos partes dividir el importe si nadie lo veía justo?",
+      "options": [
+        {
+          "id": "coste",
+          "text": "Porque cinco semanas paradas ya costaban más que la diferencia en disputa"
+        },
+        {
+          "id": "juez",
+          "text": "Porque un juez se lo ordenó"
+        },
+        {
+          "id": "amistad",
+          "text": "Porque eran amigos desde antes"
+        }
+      ],
+      "answer": "coste",
+      "evidence": "o que ninguém achou justo e todo mundo aceitou, porque cinco semanas já eram mais caras do que a diferença",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el dato de los mil doscientos reales diarios lo sostiene."
+        },
+        "incorrect": {
+          "es": "No interviene ningún juez ni se mencionan relaciones previas. Busca el «porque» de esa frase."
+        },
+        "strategy": {
+          "es": "Cuando un acuerdo se acepta sin convencer a nadie, la razón suele ser económica. Busca la cifra."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el autor sostiene que la ambigüedad de la cláusula fue un error de redacción.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "eu não penso mais em erro de redação. Penso que alguém escreveu com cuidado, só que não o cuidado que o cliente imagina.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: dice que ya no lo interpreta como error, sino como escritura cuidadosa con otro fin."
+        },
+        "incorrect": {
+          "es": "Busca la última frase. Dice expresamente que dejó de pensar en error de redacción."
+        },
+        "strategy": {
+          "es": "Si un texto dice «ya no pienso que…», está descartando esa lectura. Léelo hasta el final."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué contrapone «comprar, entregar, transportar» a «responsabilizar-se, providenciar, viabilizar»?",
+      "options": [
+        {
+          "id": "claridad",
+          "text": "Para separar los verbos de una sola acción de los que permiten escapar"
+        },
+        {
+          "id": "estilo",
+          "text": "Para recomendar un estilo más elegante"
+        },
+        {
+          "id": "longitud",
+          "text": "Para señalar que los segundos son más largos"
+        }
+      ],
+      "answer": "claridad",
+      "evidence": "Prefira verbos que dependam de uma única preposição e que se refiram a uma única ação.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La lista no es estilística: separa los verbos que comprometen de los que no."
+        },
+        "incorrect": {
+          "es": "No es cuestión de elegancia ni de longitud. Lee la instrucción que precede a las dos listas."
+        },
+        "strategy": {
+          "es": "Dos listas contrapuestas suelen ilustrar una regla enunciada justo antes. Búscala."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en portugués sobre un malentendido causado por una palabra mal elegida. Usa cuatro verbos con su preposición propia (comprometer-se a, referir-se a, responsabilizar-se por)."
+    },
+    "minWords": 70,
+    "maxWords": 140,
+    "hints": [
+      "Eu trabalho… há… anos.",
+      "A cláusula dizia que…",
+      "As duas leituras cabem na frase.",
+      "Nunca escreva um verbo que…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués B1: La preposición que cambió el contrato | WeLearn"
+    },
+    "description": {
+      "es": "Lee una crónica profesional en portugués de Brasil B1 y practica la regencia verbal y las preposiciones. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/b1/lectura/a-preposicao-que-mudou-o-contrato",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-b1-a-rotina-que-eu-nao-escolhi",
+      "pt-b1-ela-nao-esta-professora-ela-e"
+    ]
+  }
+}

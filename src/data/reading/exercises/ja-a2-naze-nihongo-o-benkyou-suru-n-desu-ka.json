@@ -1,0 +1,483 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ja-a2-naze-nihongo-o-benkyou-suru-n-desu-ka",
+  "status": "published",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Japonés A2",
+    "jlpt": "N4",
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el JLPT es aproximada: son dos escalas distintas, con exámenes distintos. A2 se sitúa alrededor del N4, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "naze-nihongo-o-benkyou-suru-n-desu-ka",
+  "series": {
+    "id": "japones-a2-lectura-10",
+    "episode": 6,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ja-a2-yasai-o-moratta",
+    "nextExerciseId": "ja-a2-hanko-o-motte-konakereba-naranai"
+  },
+  "classification": {
+    "genre": "reflexión breve",
+    "topic": "una pregunta que se hace siempre y una respuesta que cambia",
+    "intent": "learning",
+    "tags": [
+      "japones a2",
+      "lectura",
+      "んです",
+      "と思います"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "¿Por qué estudias japonés?"
+    },
+    "intro": {
+      "es": "Cinco años dando la misma respuesta correcta. Un día dijo la verdadera y la conversación duró cuarenta minutos. Lectura de japonés A2."
+    },
+    "mission": {
+      "es": "Averigua cuál es la respuesta que da ahora."
+    },
+    "targetText": "日本語を勉強していると言うと、みんな同じ質問をする。「どうして日本語を勉強しているんですか。」\n\n五年間、私の答えは同じだった。「アニメが好きだからです。」\n\nこれは本当だが、全部ではない。この答えは簡単で、みんな納得する。そして会話が終わる。\n\n去年、京都のバーで、隣の人に同じ質問をされた。その日は疲れていて、正しい答えを考えたくなかった。\n\nだから、本当のことを言った。\n\n「私の国では、私はよく話す人でした。日本語では、私はあまり話せません。だから、聞く人になりました。聞く人の方が、たくさん分かると思います。」\n\n隣の人は少し黙って、それから自分の話を始めた。四十分話した。\n\n私は思った。正しい答えは会話を終わらせる。本当の答えは会話を始める。\n\n今も「アニメが好きだから」と言うことがある。急いでいるときだ。\n\nでも時間があるときは、本当のことを言う。そうすると、たいてい相手も本当のことを言ってくれる。\n\n言葉ができないのは不便だ。でも、悪いことばかりではないと思う。",
+    "wordCount": 373,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Usar んです para explicar o pedir una explicación."
+      },
+      {
+        "es": "Formular una opinión con と思います."
+      },
+      {
+        "es": "Distinguir una respuesta correcta de una respuesta verdadera."
+      }
+    ],
+    "grammarFocus": [
+      "n-desu-a2",
+      "to-omoimasu-a2",
+      "desu-masu"
+    ],
+    "vocabulary": [
+      {
+        "surface": "勉強",
+        "lemma": "勉強",
+        "reading": "べんきょう",
+        "glosses": {
+          "es": "estudio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "納得",
+        "lemma": "納得",
+        "reading": "なっとく",
+        "glosses": {
+          "es": "quedar convencido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "隣",
+        "lemma": "隣",
+        "reading": "となり",
+        "glosses": {
+          "es": "de al lado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "正しい",
+        "lemma": "正しい",
+        "reading": "ただしい",
+        "glosses": {
+          "es": "correcto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "黙って",
+        "lemma": "黙って",
+        "reading": "だまって",
+        "glosses": {
+          "es": "callado, en silencio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "相手",
+        "lemma": "相手",
+        "reading": "あいて",
+        "glosses": {
+          "es": "la otra persona, el interlocutor"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "不便",
+        "lemma": "不便",
+        "reading": "ふべん",
+        "glosses": {
+          "es": "incómodo, poco práctico"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "急いで",
+        "lemma": "急いで",
+        "reading": "いそいで",
+        "glosses": {
+          "es": "con prisa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La pregunta «¿por qué estudias japonés?» es casi obligatoria en cualquier primera conversación con un extranjero en Japón, y la respuesta del anime es la más frecuente y la que menos se comenta."
+    },
+    "spanishSpeakerNote": {
+      "es": "んです pide o da una explicación, y por eso la pregunta es 勉強しているんですか y no 勉強していますか: quien pregunta espera un motivo. Y と思います marca que lo que sigue es opinión, no hecho."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": true,
+    "romanization": "a0-only",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto japonés escrito sin espacios, encadenar lo que ocurre con la forma て, distinguir un estado de una acción, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adverbios-frecuencia",
+      "arimasu-imasu",
+      "conjunciones",
+      "desu-masu",
+      "estructura-sov-particulas",
+      "expresiones-cotidianas",
+      "hiragana-basico",
+      "i-keiyoshi",
+      "interrogativos-ka",
+      "jikan-tiempo",
+      "katakana-basico",
+      "masu-kei-conjugacion",
+      "na-keiyoshi",
+      "negacion-completa",
+      "numeros-contadores",
+      "particula-de-e",
+      "particula-wa-ga",
+      "particula-wo-ni",
+      "tai-form",
+      "te-form-permission",
+      "ageru-morau-kureru-a2",
+      "dake-shika-bakari-a2",
+      "deshou-a2",
+      "hikaku-a2",
+      "kamoshirenai-a2",
+      "kanoukei-a2",
+      "mae-ni-ato-de-a2",
+      "n-desu-a2",
+      "nagara-a2",
+      "nakereba-naranai-a2",
+      "noun-modification-a2",
+      "ta-koto-ga-aru-a2",
+      "tara-condicional-a2",
+      "tari-tari-a2",
+      "te-form-sequence-a2",
+      "te-iru-a2",
+      "te-mo-ii-a2",
+      "to-condicional-a2",
+      "to-omoimasu-a2",
+      "ukemi-a2"
+    ],
+    "disallowedGrammar": [
+      "keigo (尊敬語・謙譲語)",
+      "causativo-pasivo",
+      "japonés clásico",
+      "registro periodístico nominal"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 46.6,
+      "maxSentenceWords": 103,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Forma て y sus usos, ている, condicionales たら y と, comparativos, pasiva sencilla. Sin keigo ni causativo-pasivo. Sin espacios: el kanji segmenta. Furigana declarado pero no implementado en el runner."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué descubrió el narrador?",
+      "options": [
+        {
+          "id": "abrir",
+          "text": "Que la respuesta correcta cierra la conversación y la verdadera la abre"
+        },
+        {
+          "id": "anime",
+          "text": "Que el anime no es una buena razón para estudiar japonés"
+        },
+        {
+          "id": "kioto",
+          "text": "Que en Kioto la gente habla más"
+        }
+      ],
+      "answer": "abrir",
+      "evidence": "正しい答えは会話を終わらせる。本当の答えは会話を始める。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y son dos frases paralelas puestas una detrás de otra."
+        },
+        "incorrect": {
+          "es": "Sigue usando la respuesta del anime cuando tiene prisa. Busca las dos frases paralelas."
+        },
+        "strategy": {
+          "es": "Dos frases con la misma estructura y sentido opuesto suelen ser la tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto duró la conversación en el bar?",
+      "options": [
+        {
+          "id": "cuarenta",
+          "text": "Cuarenta minutos"
+        },
+        {
+          "id": "cinco",
+          "text": "Cinco años"
+        },
+        {
+          "id": "diez",
+          "text": "Diez minutos"
+        }
+      ],
+      "answer": "cuarenta",
+      "evidence": "隣の人は少し黙って、それから自分の話を始めた。四十分話した。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: cuarenta minutos, y hablando el otro."
+        },
+        "incorrect": {
+          "es": "Los cinco años son el tiempo dando la respuesta de siempre. Busca la cifra con 分."
+        },
+        "strategy": {
+          "es": "Empareja cada cifra con su unidad: años de costumbre, minutos de conversación."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué significa 納得する?",
+      "options": [
+        {
+          "id": "convencerse",
+          "text": "Quedar convencido y no preguntar más"
+        },
+        {
+          "id": "sorprenderse",
+          "text": "Sorprenderse mucho"
+        },
+        {
+          "id": "enfadarse",
+          "text": "Molestarse"
+        }
+      ],
+      "answer": "convencerse",
+      "evidence": "この答えは簡単で、みんな納得する。そして会話が終わる。",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y por eso la conversación se acaba ahí."
+        },
+        "incorrect": {
+          "es": "La frase siguiente dice que la conversación termina: la gente se da por satisfecha."
+        },
+        "strategy": {
+          "es": "Si tras la palabra la conversación se acaba, esa palabra indica satisfacción, no sorpresa."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dijo la verdad aquel día en Kioto?",
+      "options": [
+        {
+          "id": "cansado",
+          "text": "Porque estaba cansado y no quiso pensar la respuesta de siempre"
+        },
+        {
+          "id": "bebido",
+          "text": "Porque había bebido demasiado"
+        },
+        {
+          "id": "amigo",
+          "text": "Porque el vecino de barra era amigo suyo"
+        }
+      ],
+      "answer": "cansado",
+      "evidence": "その日は疲れていて、正しい答えを考えたくなかった。 だから、本当のことを言った。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el だから enlaza la causa con lo que hizo."
+        },
+        "incorrect": {
+          "es": "No se dice que hubiera bebido ni que se conocieran. Lee la frase antes del だから."
+        },
+        "strategy": {
+          "es": "La conjunción だから introduce la consecuencia de la frase anterior."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: ya no usa nunca la respuesta del anime.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "今も「アニメが好きだから」と言うことがある。急いでいるときだ。",
+      "feedback": {
+        "correct": {
+          "es": "Falso: la sigue usando cuando tiene prisa."
+        },
+        "incorrect": {
+          "es": "Busca el párrafo que empieza por 今も. Dice cuándo la usa."
+        },
+        "strategy": {
+          "es": "La expresión ことがある indica que algo ocurre a veces: no es un abandono total."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la reflexión.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "La pregunta que le hacen siempre"
+        },
+        {
+          "id": "p2",
+          "text": "Cinco años con la respuesta del anime"
+        },
+        {
+          "id": "p3",
+          "text": "La noche de Kioto y la respuesta verdadera"
+        },
+        {
+          "id": "p4",
+          "text": "Lo que hace ahora según el tiempo que tenga"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "みんな同じ質問をする… 五年間、私の答えは同じだった… 去年、京都のバーで… 今も「アニメが好きだから」と言うことがある。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: la pregunta, la costumbre, la excepción y el presente."
+        },
+        "incorrect": {
+          "es": "Guíate por 五年間, 去年 y 今も."
+        },
+        "strategy": {
+          "es": "Los marcadores temporales separan la costumbre de la excepción y del presente."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en japonés respondiendo por qué estudias un idioma. Usa tres veces んです y tres veces と思います."
+    },
+    "minWords": 110,
+    "maxWords": 260,
+    "hints": [
+      "どうして日本語を勉強しているんですか。",
+      "アニメが好きだからです。",
+      "…と思います。",
+      "時間があるときは、本当のことを言う。"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de japonés A2: ¿por qué estudias japonés? | WeLearn"
+    },
+    "description": {
+      "es": "Lee una reflexión en japonés A2 y practica んです y と思います. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/japones/a2/lectura/naze-nihongo-o-benkyou-suru-n-desu-ka",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ja-a2-yasai-o-moratta",
+      "ja-a2-hanko-o-motte-konakereba-naranai"
+    ]
+  }
+}

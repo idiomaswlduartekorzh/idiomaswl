@@ -1,0 +1,479 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-b1-si-on-travaillait-moins",
+  "status": "published",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Francés B1"
+  },
+  "slug": "si-on-travaillait-moins",
+  "series": {
+    "id": "frances-b1-lectura-10",
+    "episode": 3,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-b1-ce-que-l-usine-a-laisse",
+    "nextExerciseId": "fr-b1-le-dernier-accordeur"
+  },
+  "classification": {
+    "genre": "ensayo breve",
+    "topic": "tiempo y trabajo",
+    "intent": "learning",
+    "tags": [
+      "frances b1",
+      "lectura",
+      "hipótesis con si",
+      "condicional"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Si trabajáramos menos"
+    },
+    "intro": {
+      "es": "Un experimento con la semana de cuatro días que salió bien, y la pregunta incómoda que dejó abierta. Lectura de francés B1."
+    },
+    "mission": {
+      "es": "Distingue lo que el experimento demostró de lo que solo sugiere."
+    },
+    "targetText": "Si nous travaillions quatre jours par semaine au lieu de cinq, que se passerait-il? La question paraît naïve, mais elle a été posée sérieusement par une entreprise de logiciels de Grenoble, qui a testé la semaine de quatre jours pendant douze mois avec cent quarante salariés, sans réduction de salaire. Les résultats ont été publiés en janvier. Le chiffre d’affaires n’a pas baissé. L’absentéisme a diminué de vingt-huit pour cent. Quatre-vingt-onze pour cent des salariés ont demandé à continuer. Si l’on s’arrêtait là, la conclusion serait simple: il faudrait généraliser la mesure demain matin. Mais le rapport contient une deuxième partie que presque personne n’a citée. Les salariés ont travaillé autrement. Les réunions, qui occupaient en moyenne onze heures par semaine, sont tombées à quatre. Une grande partie de ce qui a été supprimé n’était pas du travail: c’était de la coordination sur du travail. Le rapport le dit clairement: si les réunions n’avaient pas été réduites, la semaine de quatre jours n’aurait pas fonctionné. Autrement dit, ce n’est pas le jour libre qui a produit le résultat. C’est ce qu’il a obligé à supprimer. Cette nuance change tout. Une entreprise qui adopterait la semaine de quatre jours sans toucher à son organisation obtiendrait probablement l’inverse: le même volume de tâches comprimé dans moins d’heures, donc plus de fatigue. Plusieurs études sur des expériences ratées vont dans ce sens. L’une d’elles, menée en Espagne auprès de soixante entreprises, a montré que les sociétés ayant conservé leurs procédures habituelles voyaient leurs arrêts maladie augmenter au bout de huit mois. Le jour libre était réel; le repos, non. Ceux qui avaient le mieux réussi avaient tous commencé par la même chose, et ce n’était pas le calendrier: c’était la liste de ce qu’ils allaient cesser de faire. Reste une question que le rapport n’aborde pas, et c’est peut-être la plus intéressante. Si onze heures de réunions par semaine peuvent devenir quatre sans que rien ne se casse, qu’est-ce que cela dit des sept heures restantes, dans toutes les entreprises qui n’ont rien changé du tout? Personne ne pose la question dans ces termes, parce qu’elle ne s’adresse pas au temps de travail: elle s’adresse à ce que nous appelons travailler. Si nous voulions vraiment y répondre, il faudrait commencer par mesurer non pas les heures, mais ce qui se passe dedans. Ce serait plus utile, et beaucoup plus dérangeant.",
+    "wordCount": 397,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Construir hipótesis con «si + imparfait, conditionnel» y distinguirlas del «si + presente, futuro»."
+      },
+      {
+        "es": "Diferenciar lo que un estudio demuestra de lo que solo sugiere."
+      },
+      {
+        "es": "Seguir un texto argumentativo que gira a mitad de camino."
+      }
+    ],
+    "grammarFocus": [
+      "hypothese-si-b1",
+      "conditionnel-present-b1",
+      "si-conditionnel"
+    ],
+    "vocabulary": [
+      {
+        "surface": "logiciels",
+        "lemma": "logiciel",
+        "glosses": {
+          "es": "programas informáticos, software"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "salariés",
+        "lemma": "salarié",
+        "glosses": {
+          "es": "empleados, asalariados"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "chiffre d’affaires",
+        "lemma": "chiffre d’affaires",
+        "glosses": {
+          "es": "facturación, volumen de negocio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "absentéisme",
+        "lemma": "absentéisme",
+        "glosses": {
+          "es": "absentismo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "réunions",
+        "lemma": "réunion",
+        "glosses": {
+          "es": "reuniones"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "supprimé",
+        "lemma": "supprimer",
+        "glosses": {
+          "es": "eliminado, suprimido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "comprimé",
+        "lemma": "comprimer",
+        "glosses": {
+          "es": "comprimido, apretado en menos espacio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dérangeant",
+        "lemma": "dérangeant",
+        "glosses": {
+          "es": "incómodo, que molesta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Francia lleva discutiendo la reducción del tiempo de trabajo desde la ley de las 35 horas de 2000, así que un experimento de este tipo se lee allí dentro de un debate político de veinticinco años."
+    },
+    "spanishSpeakerNote": {
+      "es": "Fíjate en los dos tipos de hipótesis: «si nous travaillions… que se passerait-il?» (imperfecto + condicional, hipótesis irreal) frente a «si le plan fonctionne, les enfants joueront» (presente + futuro, previsión posible). El español hace la misma distinción."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo que desarrolla una idea, cambia de dirección y se cierra; distinguir el hecho de la interpretación; y justificar una inferencia señalando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers",
+      "accord-participe-passe",
+      "cause-consequence",
+      "comparatifs",
+      "conditionnel-present",
+      "connecteurs",
+      "discours-indirect",
+      "dont-relatif",
+      "futur-simple",
+      "gerondif",
+      "imparfait",
+      "negation-avancee",
+      "passe-compose-avoir",
+      "passe-compose-etre",
+      "passe-compose-vs-imparfait",
+      "pronoms-coi",
+      "pronoms-y-en",
+      "si-conditionnel",
+      "subjonctif-present",
+      "superlatifs",
+      "verbes-pronominaux",
+      "accord-participe-passe-b1",
+      "comparatif-superlatif-b1",
+      "conditionnel-present-b1",
+      "connecteurs-logiques-b1",
+      "discours-indirect-b1",
+      "expressions-temporelles-b1",
+      "futur-simple-b1",
+      "gerondif-b1",
+      "hypothese-si-b1",
+      "imperatif-b1",
+      "negation-avancee-b1",
+      "nominalisation-b1",
+      "participe-present-b1",
+      "passe-compose-vs-imparfait-b1",
+      "plus-que-parfait-b1",
+      "pronoms-relatifs-b1",
+      "pronoms-y-en-b1",
+      "questions-indirectes-b1",
+      "subjonctif-present-b1",
+      "voix-passive-b1"
+    ],
+    "disallowedGrammar": [
+      "passé simple",
+      "subjonctif imparfait",
+      "passé antérieur"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 15.9,
+      "maxSentenceWords": 36,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Prosa B1 con plus-que-parfait, voz pasiva y subjuntivo. Sin passé simple. Inferencia moderada: exige cruzar dos pasajes separados."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es la tesis del ensayo?",
+      "options": [
+        {
+          "id": "organizacion",
+          "text": "Que el resultado vino de reorganizar el trabajo, no de quitar un día"
+        },
+        {
+          "id": "generalizar",
+          "text": "Que la semana de cuatro días debería aplicarse ya en todas partes"
+        },
+        {
+          "id": "fracaso",
+          "text": "Que el experimento de Grenoble fracasó"
+        }
+      ],
+      "answer": "organizacion",
+      "evidence": "ce n’est pas le jour libre qui a produit le résultat. C’est ce qu’il a obligé à supprimer.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y esa frase es el eje del texto: todo lo anterior la prepara y todo lo posterior la desarrolla."
+        },
+        "incorrect": {
+          "es": "El experimento salió bien, así que no fracasó; y el ensayo advierte contra generalizar sin más. Busca la frase que empieza con «ce n’est pas»."
+        },
+        "strategy": {
+          "es": "La estructura «no es X, es Y» concentra la tesis de un texto argumentativo. Búscala antes de decidir."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿De cuántas horas semanales de reuniones se pasó a cuántas?",
+      "options": [
+        {
+          "id": "11a4",
+          "text": "De once a cuatro"
+        },
+        {
+          "id": "28a4",
+          "text": "De veintiocho a cuatro"
+        },
+        {
+          "id": "7a4",
+          "text": "De siete a cuatro"
+        }
+      ],
+      "answer": "11a4",
+      "evidence": "Les réunions, qui occupaient en moyenne onze heures par semaine, sont tombées à quatre.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El veintiocho es el porcentaje de caída del absentismo, y el siete son las horas que quedan por explicar."
+        },
+        "incorrect": {
+          "es": "El texto maneja varias cifras con unidades distintas: horas, porcentajes y personas. Busca la que va con «réunions»."
+        },
+        "strategy": {
+          "es": "Comprueba siempre la unidad: un 28 % y 28 horas no son lo mismo, y los textos de datos juegan con eso."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que el resultado sería «plus dérangeant». ¿Qué significa «dérangeant»?",
+      "options": [
+        {
+          "id": "incomodo",
+          "text": "Incómodo, porque obliga a cuestionar cosas asumidas"
+        },
+        {
+          "id": "desordenado",
+          "text": "Desordenado, mal organizado"
+        },
+        {
+          "id": "lento",
+          "text": "Lento de realizar"
+        }
+      ],
+      "answer": "incomodo",
+      "evidence": "Ce serait plus utile, et beaucoup plus dérangeant.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Va emparejado con «utile»: el autor admite que la respuesta serviría, y justo por eso molestaría."
+        },
+        "incorrect": {
+          "es": "La palabra se contrapone a «utile» en la misma frase. Piensa qué defecto tendría algo útil que nadie quiere hacer."
+        },
+        "strategy": {
+          "es": "Cuando dos adjetivos van unidos por «et» al final de un texto, suelen formar una tensión deliberada. Ahí está el sentido."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Qué le pasaría, según el texto, a una empresa que adoptara la semana de cuatro días sin cambiar nada más?",
+      "options": [
+        {
+          "id": "fatiga",
+          "text": "Acabaría con el mismo trabajo en menos horas y más cansancio"
+        },
+        {
+          "id": "ahorro",
+          "text": "Ahorraría dinero en salarios"
+        },
+        {
+          "id": "igual",
+          "text": "Obtendría exactamente los mismos resultados que en Grenoble"
+        }
+      ],
+      "answer": "fatiga",
+      "evidence": "le même volume de tâches comprimé dans moins d’heures, donc plus de fatigue",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto añade que varios experimentos fallidos apuntan en esa dirección."
+        },
+        "incorrect": {
+          "es": "El experimento de Grenoble se hizo «sans réduction de salaire», así que no hay ahorro. Busca la frase con «obtiendrait probablement l’inverse»."
+        },
+        "strategy": {
+          "es": "Las hipótesis en condicional describen escenarios que no ocurrieron. Léelas como advertencias, no como hechos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: durante el experimento se redujo el salario de los empleados a cambio del día libre.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "pendant douze mois avec cent quarante salariés, sans réduction de salaire",
+      "feedback": {
+        "correct": {
+          "es": "Falso, y es un detalle decisivo: sin esa condición el resultado no significaría lo mismo."
+        },
+        "incorrect": {
+          "es": "La descripción del experimento, en la primera parte, precisa las condiciones. Busca «sans réduction»."
+        },
+        "strategy": {
+          "es": "En un estudio, las condiciones del experimento condicionan la validez de las conclusiones. Léelas con atención."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué plantea el autor la pregunta sobre «las siete horas restantes»?",
+      "options": [
+        {
+          "id": "extender",
+          "text": "Para sugerir que el problema no es el horario, sino en qué se emplea"
+        },
+        {
+          "id": "criticar",
+          "text": "Para criticar a la empresa de Grenoble por no haber ido más lejos"
+        },
+        {
+          "id": "calcular",
+          "text": "Para calcular cuánto tiempo se pierde exactamente en cada empresa"
+        }
+      ],
+      "answer": "extender",
+      "evidence": "elle ne s’adresse pas au temps de travail: elle s’adresse à ce que nous appelons travailler",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La pregunta desplaza el debate del cuánto al qué, y el autor lo dice literalmente en la frase siguiente."
+        },
+        "incorrect": {
+          "es": "No critica a la empresa —dice que hizo bien— y no propone ningún cálculo. Lee la frase que sigue a la pregunta."
+        },
+        "strategy": {
+          "es": "Cuando un autor formula una pregunta y luego explica a qué se dirige, esa explicación es su función. No la saltes."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en francés respondiendo a: «Si tu travaillais un jour de moins, que ferais-tu?». Usa cuatro hipótesis con «si + imparfait, conditionnel»."
+    },
+    "minWords": 70,
+    "maxWords": 130,
+    "hints": [
+      "Si je travaillais…, je…",
+      "Que se passerait-il si…?",
+      "Il faudrait d’abord…",
+      "Ce serait plus… et plus…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés B1: Si trabajáramos menos | WeLearn"
+    },
+    "description": {
+      "es": "Lee un ensayo breve en francés B1 y practica la hipótesis con si (imparfait + conditionnel) y el condicional. Con seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/frances/b1/lectura/si-on-travaillait-moins",
+    "indexable": true,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-b1-ce-que-l-usine-a-laisse",
+      "fr-b1-le-dernier-accordeur"
+    ]
+  }
+}

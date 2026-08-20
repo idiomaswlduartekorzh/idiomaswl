@@ -1,0 +1,473 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-a2-cheoeum-insa",
+  "status": "published",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Coreano A2",
+    "topik": 2,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. A2 se sitúa alrededor del TOPIK I nivel 2, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "cheoeum-insa",
+  "series": {
+    "id": "coreano-a2-lectura-10",
+    "episode": 4,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-a2-gireul-ireobeorimyeon",
+    "nextExerciseId": "ko-a2-jal-anhaneun-kape"
+  },
+  "classification": {
+    "genre": "escena familiar",
+    "topic": "conocer a los padres de la pareja",
+    "intent": "learning",
+    "tags": [
+      "coreano a2",
+      "lectura",
+      "honoríficos",
+      "partícula 께"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La primera visita"
+    },
+    "intro": {
+      "es": "Una primera comida en casa de los suegros, un error de tratamiento y una abuela que lo arregla en una frase. Lectura de coreano A2."
+    },
+    "mission": {
+      "es": "Fíjate en cómo cambia la forma de hablar según a quién se dirija cada personaje."
+    },
+    "targetText": "지난 일요일에 저는 여자 친구의 집에 처음 갔어요. 저는 아주 긴장했어요. 손에 과일 상자를 들고 있었어요. 문이 열렸어요. 여자 친구의 어머니가 계셨어요. 저는 인사를 드렸어요. 안녕하세요. 이거 어머니께 드리는 선물입니다. 어머니는 웃으셨어요. 안으로 들어갔어요. 거실에 할머니도 계셨어요. 저는 할머니께도 인사를 드렸어요. 그다음에 큰 문제가 생겼어요. 저는 여자 친구에게 물었어요. 아버지는 어디 있어요? 방이 조용해졌어요. 어머니가 부드럽게 말하셨어요. 아버지는 안방에 계세요. 저는 얼굴이 빨개졌어요. 있어요가 아니라 계세요라고 해야 했어요. 여자 친구는 제 손을 잡았어요. 어머니는 아무 말도 하지 않으셨어요. 그 삼 초가 아주 길었어요. 그때 아버지가 안방에서 나오셨어요. 아버지는 제 손을 보셨어요. 과일 상자가 아직 제 손에 있었어요. 그때 할머니가 말하셨어요. 괜찮아요. 우리 손녀도 스페인어를 배우고 있어요. 그 애도 매일 실수해요. 모두 웃었어요. 저녁을 먹는 동안 저는 계세요를 다섯 번 말했어요. 할머니는 그것도 세고 있었어요.",
+    "wordCount": 124,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Usar las formas honoríficas 계시다, 드리다 y 말하시다 con las personas mayores."
+      },
+      {
+        "es": "Marcar el receptor con 께 en lugar de 에게 cuando se debe respeto."
+      },
+      {
+        "es": "Notar cómo el registro cambia según con quién se habla dentro de una misma escena."
+      }
+    ],
+    "grammarFocus": [
+      "honorificos-a2",
+      "particulas-recipiente-a2",
+      "marcadores-tema-sujeto"
+    ],
+    "vocabulary": [
+      {
+        "surface": "긴장했어요",
+        "lemma": "긴장하다",
+        "reading": "ginjanghaesseoyo",
+        "glosses": {
+          "es": "estaba nervioso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "상자",
+        "lemma": "상자",
+        "reading": "sangja",
+        "glosses": {
+          "es": "caja"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "계셨어요",
+        "lemma": "계시다",
+        "reading": "gyesyeosseoyo",
+        "glosses": {
+          "es": "estaba (forma honorífica de 있다)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "드렸어요",
+        "lemma": "드리다",
+        "reading": "deuryeosseoyo",
+        "glosses": {
+          "es": "di, ofrecí (forma honorífica de 주다)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "거실",
+        "lemma": "거실",
+        "reading": "geosil",
+        "glosses": {
+          "es": "salón, sala de estar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "안방",
+        "lemma": "안방",
+        "reading": "anbang",
+        "glosses": {
+          "es": "habitación principal"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "부드럽게",
+        "lemma": "부드럽다",
+        "reading": "budeureopge",
+        "glosses": {
+          "es": "con suavidad"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "손녀",
+        "lemma": "손녀",
+        "reading": "sonnyeo",
+        "glosses": {
+          "es": "nieta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Llevar una caja de fruta a una primera visita es un gesto estándar en Corea. Y el honorífico no es opcional: usar 있어요 en lugar de 계세요 al hablar de un mayor se percibe de inmediato."
+    },
+    "spanishSpeakerNote": {
+      "es": "El coreano cambia el verbo entero, no solo el pronombre: 있다 se vuelve 계시다, 주다 se vuelve 드리다, y el receptor pasa de 에게 a 께. El español marca el respeto con «usted»; el coreano lo marca en cada palabra de la frase."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en coreano sobre hechos pasados y planes, entender quién dice qué en estilo indirecto, y reconocer a quién se trata con respeto."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas",
+      "antes-despues-a2",
+      "capacidad-rl-su-itda-a2",
+      "clausulas-relativas-a2",
+      "condicional-eumyeon-a2",
+      "conector-aseo-a2",
+      "cuanto-eolmana-a2",
+      "discurso-reportado-a2",
+      "durante-neun-dongane-a2",
+      "futuro-rl-geoyeyo-a2",
+      "honorificos-a2",
+      "intencion-ryogo-hada-a2",
+      "negacion-ji-anta-a2",
+      "obligacion-aya-hada-a2",
+      "parecer-neun-geot-gatda-a2",
+      "particulas-recipiente-a2",
+      "progresivo-go-itda-a2",
+      "razon-gittaemune-a2",
+      "razon-niikka-a2",
+      "solo-tambien-man-do-a2",
+      "verbos-irregulares-pasado-a2"
+    ],
+    "disallowedGrammar": [
+      "voz pasiva avanzada",
+      "nominalización compleja",
+      "estilo literario"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 3.8,
+      "maxSentenceWords": 8,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Pasado irregular, cláusulas de relativo y honoríficos permitidos. Sin voz pasiva avanzada ni registro literario. Inferencia ligera."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta la escena?",
+      "options": [
+        {
+          "id": "error",
+          "text": "Un error de tratamiento en una primera visita, y cómo la abuela lo desactiva"
+        },
+        {
+          "id": "rechazo",
+          "text": "Que la familia rechaza al novio por su coreano"
+        },
+        {
+          "id": "regalo",
+          "text": "Que el regalo que llevó no fue el adecuado"
+        }
+      ],
+      "answer": "error",
+      "evidence": "있어요가 아니라 계세요라고 해야 했어요 … 괜찮아요. 우리 손녀도 스페인어를 배우고 있어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La abuela no minimiza el error: lo pone al lado del de su propia nieta aprendiendo español."
+        },
+        "incorrect": {
+          "es": "Nadie lo rechaza y el regalo se recibe con una sonrisa. Busca la frase de la abuela."
+        },
+        "strategy": {
+          "es": "Cuando alguien interviene después de un momento incómodo, su frase suele ser el sentido de la escena."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Dónde estaba el padre?",
+      "options": [
+        {
+          "id": "anbang",
+          "text": "En la habitación principal"
+        },
+        {
+          "id": "geosil",
+          "text": "En el salón"
+        },
+        {
+          "id": "fuera",
+          "text": "Fuera de casa"
+        }
+      ],
+      "answer": "anbang",
+      "evidence": "아버지는 안방에 계세요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: 안방, la habitación principal. Y fíjate en el verbo que usa la madre: 계세요, no 있어요."
+        },
+        "incorrect": {
+          "es": "En el salón estaban la abuela y ellos. Busca la respuesta que da la madre."
+        },
+        "strategy": {
+          "es": "En una escena con varias habitaciones, empareja cada persona con su sitio antes de responder."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El narrador dice 저는 인사를 드렸어요. ¿Por qué usa 드리다 y no 주다?",
+      "options": [
+        {
+          "id": "respeto",
+          "text": "Porque el saludo va dirigido a alguien mayor y merece forma honorífica"
+        },
+        {
+          "id": "pasado",
+          "text": "Porque la acción está en pasado"
+        },
+        {
+          "id": "plural",
+          "text": "Porque saluda a varias personas a la vez"
+        }
+      ],
+      "answer": "respeto",
+      "evidence": "저는 인사를 드렸어요 … 저는 할머니께도 인사를 드렸어요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Y va acompañado de 께, la partícula de receptor con respeto: 할머니께."
+        },
+        "incorrect": {
+          "es": "El pasado y el plural se marcan aparte. Fíjate en a quién se dirige y en la partícula 께."
+        },
+        "strategy": {
+          "es": "Si un verbo aparece junto a la partícula 께, el cambio de verbo es por respeto, no por gramática básica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué se le puso la cara roja al narrador?",
+      "options": [
+        {
+          "id": "darse-cuenta",
+          "text": "Porque se dio cuenta de que debía haber usado el honorífico"
+        },
+        {
+          "id": "comida",
+          "text": "Porque la comida estaba muy picante"
+        },
+        {
+          "id": "calor",
+          "text": "Porque hacía mucho calor en el salón"
+        }
+      ],
+      "answer": "darse-cuenta",
+      "evidence": "저는 얼굴이 빨개졌어요. 있어요가 아니라 계세요라고 해야 했어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La frase siguiente lo explica sin rodeos: tendría que haber dicho 계세요."
+        },
+        "incorrect": {
+          "es": "Aún no habían empezado a comer y no se menciona el calor. Lee la frase inmediatamente posterior."
+        },
+        "strategy": {
+          "es": "Cuando un texto describe una reacción física, la causa suele venir en la frase de al lado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la abuela le reprocha el error y le pide que estudie más.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "괜찮아요. 우리 손녀도 스페인어를 배우고 있어요. 그 애도 매일 실수해요.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: dice 괜찮아요 y compara con su nieta, que también se equivoca a diario. Es lo contrario de un reproche."
+        },
+        "incorrect": {
+          "es": "Busca lo que dice la abuela. Empieza con una sola palabra que ya lo resuelve todo."
+        },
+        "strategy": {
+          "es": "Antes de leer una intervención como reproche, comprueba con qué palabra empieza."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "¿Qué efecto tiene la última frase, 할머니는 그것도 세고 있었어요?",
+      "options": [
+        {
+          "id": "complicidad",
+          "text": "Humor cómplice: la abuela lleva la cuenta y él lo sabe"
+        },
+        {
+          "id": "severidad",
+          "text": "Severidad: la abuela vigila cada error"
+        },
+        {
+          "id": "tristeza",
+          "text": "Tristeza: el narrador se siente examinado"
+        }
+      ],
+      "answer": "complicidad",
+      "evidence": "저는 계세요를 다섯 번 말했어요. 할머니는 그것도 세고 있었어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Él cuenta sus cinco aciertos y ella también los cuenta: es un juego entre los dos, no una prueba."
+        },
+        "incorrect": {
+          "es": "La abuela es quien acaba de quitarle importancia al error, así que difícilmente es severidad."
+        },
+        "strategy": {
+          "es": "Para el tono de una frase final, mira cómo se ha comportado ese personaje antes en la escena."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en coreano sobre una visita a casa de alguien mayor. Usa 계시다 y 드리다 dos veces cada uno, y la partícula 께."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "지난 …에 저는 …에 갔어요.",
+      "…이 계셨어요.",
+      "저는 …께 인사를 드렸어요.",
+      "저는 긴장했어요."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano A2: La primera visita | WeLearn"
+    },
+    "description": {
+      "es": "Lee una escena familiar en coreano A2 y practica los honoríficos (드리다, 계시다, 께) y las partículas de receptor. Con seis preguntas."
+    },
+    "canonicalPath": "/practica/coreano/a2/lectura/cheoeum-insa",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-a2-gireul-ireobeorimyeon",
+      "ko-a2-jal-anhaneun-kape"
+    ]
+  }
+}

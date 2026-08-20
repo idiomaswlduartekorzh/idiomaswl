@@ -20,6 +20,8 @@ import Link from 'next/link';
 import type { Historia, StoryQuestion, StoryVoice, VoiceKey } from '@/data/practica/historias/types';
 import { totalParts, totalQuestions } from '@/data/practica/historias/types';
 import { STORY_UI } from '@/data/practica/historias/ui';
+import PdfDownloadButton from '@/components/practica/PdfDownloadButton';
+import { canRenderPdf } from '@/lib/pdf/languages';
 
 /**
  * Cada voz recorre los mismos cinco pasos, en este orden. La fase se compone
@@ -497,6 +499,20 @@ export default function StoryEngine({ historia, hubHref, hubLabel }: {
       <p className="eyebrow" style={{ marginBottom: '0.4rem' }}><span className="ink-line" />{historia.icon} {hubLabel} · {historia.level}</p>
       <h1 style={{ fontSize: '2.2rem', fontWeight: 800, letterSpacing: '-0.03em', margin: '0 0 0.5rem', lineHeight: 1.1 }}>{historia.title}</h1>
       <p style={{ color: 'var(--muted)', fontSize: '1rem', maxWidth: 560, margin: '0 0 2rem', lineHeight: 1.65 }}>{historia.intro}</p>
+
+      {canRenderPdf(historia.lang) && (
+        <div className="topic-download no-print" style={{ margin: '0 0 2rem' }}>
+          <PdfDownloadButton
+            color={historia.color}
+            label="Descargar la historia en PDF"
+            generate={async () => {
+              const { generateStoryPdf } = await import('@/lib/pdf/generateStoryPdf');
+              await generateStoryPdf(historia);
+            }}
+          />
+          <span>El relato, las dos versiones transcritas, las preguntas y el solucionario.</span>
+        </div>
+      )}
 
       <div style={{ background: 'var(--bg-1)', border: '1px solid var(--line-soft)', borderRadius: 16, padding: '1.25rem 1.5rem', marginBottom: '2rem' }}>
         <p style={{ margin: '0 0 0.75rem', fontSize: '0.72rem', fontWeight: 800, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.08em', fontFamily: 'var(--mono)' }}>{t.structure}</p>

@@ -1,0 +1,462 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ja-a1-katakana-wa-muzukashii",
+  "status": "published",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Japonés A1",
+    "jlpt": "N5",
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el JLPT es aproximada: son dos escalas distintas, con exámenes distintos. A1 se sitúa alrededor del N5, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "katakana-wa-muzukashii",
+  "series": {
+    "id": "japones-a1-lectura-10",
+    "episode": 8,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ja-a1-basu-de-ikimasu",
+    "nextExerciseId": "ja-a1-tabete-mo-ii-desu-ka"
+  },
+  "classification": {
+    "genre": "cuaderno de estudiante",
+    "topic": "palabras que parecen inglesas y no lo son",
+    "intent": "learning",
+    "tags": [
+      "japones a1",
+      "lectura",
+      "hiragana",
+      "katakana"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El katakana engaña"
+    },
+    "intro": {
+      "es": "Aprendió el hiragana en dos semanas. El katakana lo aprendió en dos días y le costó dos años. Lectura de japonés A1."
+    },
+    "mission": {
+      "es": "Averigua por qué el katakana le resultó más difícil, si es más fácil de leer."
+    },
+    "targetText": "ひらがなは 二しゅうかんで おぼえました。 たいへんでしたが、 わかりやすいです。\n\nカタカナは 二日で おぼえました。 かんたんでした。 でも カタカナは 二年 わたしを こまらせました。\n\nもんだいは じでは ありません。 ことばです。\n\n「マンション」は えいごの mansion では ありません。 ふつうの アパートです。\n\n「サービス」は ときどき 「ただ」の いみです。 「コーヒー、 サービスです」は 「コーヒーは ただです」です。\n\n「バイキング」は りょうりの ビュッフェです。 ふねでは ありません。\n\nいまは カタカナを 見て、 えいごを かんがえません。 日本語を かんがえます。\n\nそれが いちばん たいへんでした。",
+    "wordCount": 230,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Leer hiragana y katakana y saber qué se escribe con cada uno."
+      },
+      {
+        "es": "Reconocer que una palabra en katakana no siempre significa lo que su origen."
+      },
+      {
+        "es": "Distinguir la dificultad de leer de la dificultad de entender."
+      }
+    ],
+    "grammarFocus": [
+      "hiragana-basico",
+      "katakana-basico"
+    ],
+    "vocabulary": [
+      {
+        "surface": "おぼえました",
+        "lemma": "おぼえました",
+        "reading": "おぼえました",
+        "glosses": {
+          "es": "aprendí de memoria"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "たいへん",
+        "lemma": "たいへん",
+        "reading": "たいへん",
+        "glosses": {
+          "es": "duro, costoso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "かんたん",
+        "lemma": "かんたん",
+        "reading": "かんたん",
+        "glosses": {
+          "es": "sencillo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "こまらせました",
+        "lemma": "こまらせました",
+        "reading": "こまらせました",
+        "glosses": {
+          "es": "me trajo problemas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ことば",
+        "lemma": "ことば",
+        "reading": "ことば",
+        "glosses": {
+          "es": "palabra, vocabulario"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ふつう",
+        "lemma": "ふつう",
+        "reading": "ふつう",
+        "glosses": {
+          "es": "normal, corriente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ただ",
+        "lemma": "ただ",
+        "reading": "ただ",
+        "glosses": {
+          "es": "gratis"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "いみ",
+        "lemma": "いみ",
+        "reading": "いみ",
+        "glosses": {
+          "es": "significado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Las palabras tomadas de otras lenguas y escritas en katakana suelen cambiar de sentido al entrar en japonés. Se les llama 和製英語 cuando el japonés las construye por su cuenta."
+    },
+    "spanishSpeakerNote": {
+      "es": "El katakana es fácil de leer y por eso engaña: parece que ya sabes la palabra. «マンション» no es una mansión, es un piso normal; «サービス» a veces significa «gratis»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": true,
+    "romanization": "a0-only",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en japonés escrito casi todo en kana, identificar de quién o de qué se habla gracias a las partículas, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adverbios-frecuencia",
+      "arimasu-imasu",
+      "conjunciones",
+      "desu-masu",
+      "estructura-sov-particulas",
+      "expresiones-cotidianas",
+      "hiragana-basico",
+      "i-keiyoshi",
+      "interrogativos-ka",
+      "jikan-tiempo",
+      "katakana-basico",
+      "masu-kei-conjugacion",
+      "na-keiyoshi",
+      "negacion-completa",
+      "numeros-contadores",
+      "particula-de-e",
+      "particula-wa-ga",
+      "particula-wo-ni",
+      "tai-form",
+      "te-form-permission"
+    ],
+    "disallowedGrammar": [
+      "forma llana (辞書形) en oración principal",
+      "keigo",
+      "condicionales",
+      "voz pasiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 14.4,
+      "maxSentenceWords": 22,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Forma です／ます, partículas básicas, adjetivos i y na. Kanji por debajo del 12 %, con espacios entre palabras. Furigana declarado pero no implementado en el runner: el apoyo lo dan las lecturas en kana del vocabulario."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es la idea del texto?",
+      "options": [
+        {
+          "id": "significado",
+          "text": "Que el katakana es fácil de leer pero sus palabras no significan lo que parece"
+        },
+        {
+          "id": "dificil",
+          "text": "Que aprender los kana japoneses lleva años"
+        },
+        {
+          "id": "ingles",
+          "text": "Que hay que saber inglés para aprender japonés"
+        }
+      ],
+      "answer": "significado",
+      "evidence": "もんだいは じでは ありません。 ことばです。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y esas dos frases cortas separan el problema real del aparente."
+        },
+        "incorrect": {
+          "es": "Los kana los aprendió en días o semanas, y no dice que haga falta inglés. Busca las dos frases sobre el problema."
+        },
+        "strategy": {
+          "es": "Cuando un texto dice «el problema no es X, es Y», ahí está la tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué significa «マンション» en japonés?",
+      "options": [
+        {
+          "id": "piso",
+          "text": "Un piso normal"
+        },
+        {
+          "id": "mansion",
+          "text": "Una mansión"
+        },
+        {
+          "id": "hotel",
+          "text": "Un hotel"
+        }
+      ],
+      "answer": "piso",
+      "evidence": "「マンション」は えいごの mansion では ありません。 ふつうの アパートです。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el texto lo descarta expresamente."
+        },
+        "incorrect": {
+          "es": "El texto niega justamente el significado inglés. Lee la frase completa."
+        },
+        "strategy": {
+          "es": "La estructura …では ありません descarta la interpretación esperada."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué significa ただ en este texto?",
+      "options": [
+        {
+          "id": "gratis",
+          "text": "Gratis"
+        },
+        {
+          "id": "solo",
+          "text": "Solamente"
+        },
+        {
+          "id": "caro",
+          "text": "Caro"
+        }
+      ],
+      "answer": "gratis",
+      "evidence": "「サービス」は ときどき 「ただ」の いみです。 「コーヒー、 サービスです」は 「コーヒーは ただです」です。",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y el ejemplo del café lo demuestra."
+        },
+        "incorrect": {
+          "es": "El ejemplo del café aclara el sentido: no se paga."
+        },
+        "strategy": {
+          "es": "Si el texto da un ejemplo con una frase completa, úsalo para fijar el significado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice que eso fue lo más duro?",
+      "options": [
+        {
+          "id": "dejar",
+          "text": "Porque tuvo que dejar de pensar en inglés al ver katakana"
+        },
+        {
+          "id": "memoria",
+          "text": "Porque memorizar los signos le costó dos años"
+        },
+        {
+          "id": "acento",
+          "text": "Porque no conseguía pronunciarlas bien"
+        }
+      ],
+      "answer": "dejar",
+      "evidence": "いまは カタカナを 見て、 えいごを かんがえません。 日本語を かんがえます。 それが いちばん たいへんでした。",
+      "feedback": {
+        "correct": {
+          "es": "Sí: el それ se refiere al cambio de idioma mental, no a los signos."
+        },
+        "incorrect": {
+          "es": "Los signos los aprendió en dos días. Fíjate a qué se refiere それ."
+        },
+        "strategy": {
+          "es": "El pronombre それ remite a lo dicho justo antes: compruébalo antes de responder."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: aprendió los signos del katakana en dos días.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "カタカナは 二日で おぼえました。 かんたんでした。",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y le pareció sencillo: lo difícil vino después."
+        },
+        "incorrect": {
+          "es": "Busca la frase con 二日. Las dos semanas son del hiragana."
+        },
+        "strategy": {
+          "es": "Distingue los dos plazos: uno es del hiragana y otro del katakana."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el cuaderno.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "El hiragana en dos semanas"
+        },
+        {
+          "id": "p2",
+          "text": "El katakana en dos días, y dos años de problemas"
+        },
+        {
+          "id": "p3",
+          "text": "Los tres ejemplos: mansión, servicio, bufé"
+        },
+        {
+          "id": "p4",
+          "text": "Ahora ya no piensa en inglés"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "ひらがなは 二しゅうかんで おぼえました … カタカナは 二日で おぼえました … 「マンション」は … いまは カタカナを 見て、 えいごを かんがえません。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: los dos sistemas, los ejemplos y el cambio."
+        },
+        "incorrect": {
+          "es": "Fíjate en dónde empiezan los ejemplos entrecomillados."
+        },
+        "strategy": {
+          "es": "La palabra いま (ahora) marca el final del recorrido de aprendizaje."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en japonés sobre tres palabras en katakana que te engañaron. Explica qué significan de verdad."
+    },
+    "minWords": 60,
+    "maxWords": 160,
+    "hints": [
+      "カタカナは かんたんでした。",
+      "もんだいは ことばです。",
+      "「マンション」は …では ありません。",
+      "いまは 日本語を かんがえます。"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de japonés A1: el katakana engaña | WeLearn"
+    },
+    "description": {
+      "es": "Lee un cuaderno de estudiante en japonés A1 y practica el hiragana y el katakana. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/japones/a1/lectura/katakana-wa-muzukashii",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ja-a1-basu-de-ikimasu",
+      "ja-a1-tabete-mo-ii-desu-ka"
+    ]
+  }
+}

@@ -1,0 +1,459 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-a2-a-cozinheira-das-cinco",
+  "status": "published",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Portugués A2"
+  },
+  "slug": "a-cozinheira-das-cinco",
+  "series": {
+    "id": "portugues-a2-lectura-10",
+    "episode": 7,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-a2-tres-bairros-um-aluguel",
+    "nextExerciseId": "pt-a2-a-biblioteca-do-predio"
+  },
+  "classification": {
+    "genre": "entrevista",
+    "topic": "una cocina de restaurante",
+    "intent": "learning",
+    "tags": [
+      "portugues a2",
+      "lectura",
+      "gerundio",
+      "expresiones de tiempo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La cocinera de las cinco"
+    },
+    "intro": {
+      "es": "Una cocinera que lleva veintiséis años entrando a las cinco de la mañana y explica por qué no cambia de turno. Lectura de portugués A2."
+    },
+    "mission": {
+      "es": "Averigua qué hace en la primera hora, y por qué dice que es la más importante."
+    },
+    "targetText": "— A que horas a senhora chega? — Cinco da manhã. Faz vinte e seis anos que eu chego nesse horário. — O restaurante abre ao meio-dia. O que a senhora faz durante sete horas? — Na primeira hora eu não cozinho nada. Eu fico olhando o que chegou. O peixe, a verdura, a carne. Eu vou abrindo as caixas devagar e vou decidindo o cardápio do dia enquanto abro. — Então o cardápio muda todo dia? — Muda. Eu não posso escrever o cardápio na segunda-feira para a semana inteira. O que chega decide. Se o peixe está ruim, eu não vou servir peixe só porque estava escrito. — E as outras seis horas? — Aí sim eu cozinho. Feijão leva três horas. Caldo leva quatro. Essas coisas ninguém faz correndo. — A senhora já pensou em mudar de turno? — Já me ofereceram muitas vezes. Eu sempre digo não. — Por quê? — Porque quem chega às dez está cozinhando o que outra pessoa escolheu. Eu prefiro escolher. — Foi difícil no começo? — Nos primeiros anos eu dormia mal. Hoje eu durmo às nove da noite sem problema. O corpo aprende. Faz tempo que eu não uso despertador. Eu acordo cinco minutos antes dele tocar, todos os dias, e isso me assusta um pouco.",
+    "wordCount": 203,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Formar el gerundio y las perífrasis: vou abrindo, está cozinhando, fico olhando."
+      },
+      {
+        "es": "Usar las expresiones de tiempo: faz vinte e seis anos, nos primeiros anos, faz tempo que."
+      },
+      {
+        "es": "Distinguir en una entrevista la pregunta de la respuesta."
+      }
+    ],
+    "grammarFocus": [
+      "gerundio-a2",
+      "expressoes-tempo-a2",
+      "estar-gerundio"
+    ],
+    "vocabulary": [
+      {
+        "surface": "cardápio",
+        "lemma": "cardápio",
+        "glosses": {
+          "es": "carta, menú del día"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "devagar",
+        "lemma": "devagar",
+        "glosses": {
+          "es": "despacio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ruim",
+        "lemma": "ruim",
+        "glosses": {
+          "es": "malo, en mal estado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Feijão",
+        "lemma": "feijão",
+        "glosses": {
+          "es": "alubias, frijoles"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "acordo",
+        "lemma": "acordar",
+        "glosses": {
+          "es": "me despierto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "turno",
+        "lemma": "turno",
+        "glosses": {
+          "es": "turno de trabajo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tocar",
+        "lemma": "tocar",
+        "glosses": {
+          "es": "sonar (un despertador, un teléfono)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ofereceram",
+        "lemma": "oferecer",
+        "glosses": {
+          "es": "ofrecieron"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El feijão de cocción lenta es la base de la comida diaria brasileña, y en muchos restaurantes marca el ritmo entero de la cocina desde primera hora."
+    },
+    "spanishSpeakerNote": {
+      "es": "La perífrasis «ir + gerundio» expresa un proceso gradual: «vou abrindo as caixas» es «voy abriendo las cajas». Y «faz vinte e seis anos que…» equivale a «hace veintiséis años que…»: el verbo va en presente, igual que en español."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en portugués sobre hechos pasados y planes, distinguir el perfeito del imperfeito, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares",
+      "comparativos-superlativos-a2",
+      "condicional-a2",
+      "conjuncoes-logicas-a2",
+      "diminutivos-aumentativos-a2",
+      "expressoes-com-fazer-a2",
+      "expressoes-tempo-a2",
+      "futuro-do-presente-a2",
+      "gerundio-a2",
+      "ha-faz-tempo-a2",
+      "para-vs-por-a2",
+      "preterito-imperfeito-a2",
+      "preterito-perfeito-irregular-a2",
+      "pronomes-obliquos-a2",
+      "pronomes-relativos-a2",
+      "ser-vs-estar-a2",
+      "subjuntivo-presente-a2",
+      "verbo-ficar-a2",
+      "verbos-modais-a2",
+      "verbos-reflexivos-a2",
+      "voz-passiva-a2"
+    ],
+    "disallowedGrammar": [
+      "mais-que-perfeito composto",
+      "futuro do subjuntivo",
+      "registro literario"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 6.5,
+      "maxSentenceWords": 16,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Pasado narrativo (perfeito e imperfeito) y subjuntivo presente permitidos. Sin mais-que-perfeito compuesto ni futuro de subjuntivo. Inferencia ligera."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué defiende la cocinera?",
+      "options": [
+        {
+          "id": "elegir",
+          "text": "Que llegar la primera le permite elegir, y por eso no cambia de turno"
+        },
+        {
+          "id": "madrugar",
+          "text": "Que madrugar es bueno para la salud"
+        },
+        {
+          "id": "feijao",
+          "text": "Que el feijão es el plato más importante del menú"
+        }
+      ],
+      "answer": "elegir",
+      "evidence": "quem chega às dez está cozinhando o que outra pessoa escolheu. Eu prefiro escolher.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Es su respuesta a por qué rechaza cambiar de turno, y resume toda la entrevista."
+        },
+        "incorrect": {
+          "es": "No da consejos de salud, y el feijão es un ejemplo de tiempos de cocción. Busca su respuesta a «Por quê?»."
+        },
+        "strategy": {
+          "es": "En una entrevista, la respuesta a la pregunta «¿por qué?» suele contener la tesis del personaje."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué hace en la primera hora?",
+      "options": [
+        {
+          "id": "mirar",
+          "text": "Mirar lo que ha llegado y decidir el menú"
+        },
+        {
+          "id": "feijao",
+          "text": "Poner el feijão a cocer"
+        },
+        {
+          "id": "limpiar",
+          "text": "Limpiar la cocina antes de empezar"
+        }
+      ],
+      "answer": "mirar",
+      "evidence": "Na primeira hora eu não cozinho nada. Eu fico olhando o que chegou.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Lo dice en negativo primero: en esa hora no cocina nada."
+        },
+        "incorrect": {
+          "es": "El feijão y el caldo son de las seis horas siguientes. Busca «Na primeira hora»."
+        },
+        "strategy": {
+          "es": "Si una respuesta empieza negando, lo que sigue es lo que sí ocurre. Léelo entero."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "La cocinera dice «Se o peixe está ruim, eu não vou servir peixe». ¿Qué significa «ruim»?",
+      "options": [
+        {
+          "id": "malo",
+          "text": "Malo, en mal estado"
+        },
+        {
+          "id": "caro",
+          "text": "Caro"
+        },
+        {
+          "id": "poco",
+          "text": "Escaso, poca cantidad"
+        }
+      ],
+      "answer": "malo",
+      "evidence": "Se o peixe está ruim, eu não vou servir peixe só porque estava escrito.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Va con «está», así que describe un estado del producto ese día."
+        },
+        "incorrect": {
+          "es": "Si fuera el precio o la cantidad, no cambiaría el menú por calidad. Fíjate en que va con «está»."
+        },
+        "strategy": {
+          "es": "Un adjetivo con «estar» describe un estado pasajero. Eso descarta las cualidades fijas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice que ya no usa despertador?",
+      "options": [
+        {
+          "id": "costumbre",
+          "text": "Porque después de tantos años el cuerpo se despierta solo"
+        },
+        {
+          "id": "ruido",
+          "text": "Porque el ruido de la calle la despierta"
+        },
+        {
+          "id": "tarde",
+          "text": "Porque ahora entra más tarde a trabajar"
+        }
+      ],
+      "answer": "costumbre",
+      "evidence": "Nos primeiros anos eu dormia mal. Hoje eu durmo às nove da noite sem problema. O corpo aprende.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y ella misma lo formula en tres palabras: «O corpo aprende»."
+        },
+        "incorrect": {
+          "es": "Sigue entrando a las cinco, y no menciona ruido. Lee la frase «O corpo aprende»."
+        },
+        "strategy": {
+          "es": "Cuando alguien resume su experiencia en una frase corta, esa frase explica lo que viene después."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: escribe el menú de toda la semana el lunes.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Eu não posso escrever o cardápio na segunda-feira para a semana inteira. O que chega decide.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: dice justamente que no puede. Lo que llega cada día decide el menú."
+        },
+        "incorrect": {
+          "es": "Busca su respuesta a si el menú cambia todos los días. Empieza con «Muda»."
+        },
+        "strategy": {
+          "es": "Una negación con «não posso» descarta la opción entera. No la leas como una preferencia."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "reference",
+      "skill": "reference",
+      "prompt": "En «Já me ofereceram muitas vezes», ¿qué le ofrecieron?",
+      "options": [
+        {
+          "id": "turno",
+          "text": "Cambiar de turno"
+        },
+        {
+          "id": "puesto",
+          "text": "Un puesto de jefa de cocina"
+        },
+        {
+          "id": "sueldo",
+          "text": "Un aumento de sueldo"
+        }
+      ],
+      "answer": "turno",
+      "evidence": "— A senhora já pensou em mudar de turno? — Já me ofereceram muitas vezes.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La respuesta remite directamente a la pregunta anterior del entrevistador."
+        },
+        "incorrect": {
+          "es": "No se habla de sueldo ni de ascenso. Lee la pregunta a la que está contestando."
+        },
+        "strategy": {
+          "es": "En una entrevista, una respuesta corta se completa con la pregunta. Léelas siempre juntas."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe una entrevista de 8–10 líneas en portugués a alguien que empiece a trabajar muy temprano. Usa tres gerundios y tres expresiones de tiempo."
+    },
+    "minWords": 45,
+    "maxWords": 95,
+    "hints": [
+      "— A que horas a senhora chega?",
+      "Faz… anos que eu…",
+      "Eu vou… ndo…",
+      "Nos primeiros anos eu…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués A2: La cocinera de las cinco | WeLearn"
+    },
+    "description": {
+      "es": "Lee una entrevista en portugués de Brasil A2 y practica el gerundio y las expresiones de tiempo. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/a2/lectura/a-cozinheira-das-cinco",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-a2-tres-bairros-um-aluguel",
+      "pt-a2-a-biblioteca-do-predio"
+    ]
+  }
+}

@@ -1,0 +1,479 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-b1-ce-que-l-usine-a-laisse",
+  "status": "published",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Francés B1"
+  },
+  "slug": "ce-que-l-usine-a-laisse",
+  "series": {
+    "id": "frances-b1-lectura-10",
+    "episode": 2,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-b1-la-lettre-jamais-envoyee",
+    "nextExerciseId": "fr-b1-si-on-travaillait-moins"
+  },
+  "classification": {
+    "genre": "artículo de fondo",
+    "topic": "patrimonio industrial",
+    "intent": "learning",
+    "tags": [
+      "frances b1",
+      "lectura",
+      "voz pasiva",
+      "nominalización"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Lo que dejó la fábrica"
+    },
+    "intro": {
+      "es": "Una fábrica cerrada en 1993 que sigue decidiendo cómo es el barrio treinta años después. Lectura de francés B1 con la voz pasiva."
+    },
+    "mission": {
+      "es": "Averigua qué se conserva del edificio, qué se destruye y quién decide cada cosa."
+    },
+    "targetText": "L’usine textile de la rue Ampère a été fermée en 1993. Six cents personnes y travaillaient. Le bâtiment, lui, n’a jamais été démoli: il est resté là, avec ses fenêtres cassées et sa cheminée de brique, pendant vingt-huit ans. Aujourd’hui, un projet de réhabilitation vient d’être approuvé par le conseil municipal, et il divise le quartier plus que ne l’avait fait la fermeture elle-même. Le projet prévoit la construction de quatre-vingts logements, l’ouverture d’une médiathèque et la création d’un passage piéton entre deux rues qui n’ont jamais communiqué. La cheminée sera conservée. Les ateliers du fond, en revanche, seront détruits, et c’est là que la discussion devient vive. Pour l’adjoint à l’urbanisme, la démolition est inévitable: les planchers ont été fragilisés par l’humidité et leur consolidation coûterait plus cher que la reconstruction. Pour l’association Mémoire d’Ampère, cet argument est utilisé chaque fois qu’on veut éviter un débat. Sa présidente, Malika Ferrand, rappelle que le même diagnostic avait été fait en 2004 pour les bureaux, qui ont finalement été restaurés sans difficulté. Ce désaccord technique en cache un autre, plus profond. Ce que défend l’association, ce n’est pas la brique: c’est la reconnaissance de ce qui s’est passé là. La fermeture de l’usine n’a pas seulement supprimé des emplois; elle a été vécue comme une humiliation par des familles à qui on avait promis, six mois plus tôt, que le site serait modernisé. Personne n’a jamais présenté d’excuses. Aucun panneau n’explique aujourd’hui ce qu’était ce bâtiment. Le projet actuel prévoit d’ailleurs une plaque de dix centimètres à l’entrée du passage. L’association en demande une autre: une salle, à l’intérieur de la médiathèque, où seraient rassemblés les documents, les photographies et les témoignages enregistrés depuis dix ans par des bénévoles. La mairie répond que l’espace manque. La présidente répond que l’espace a été trouvé pour un parking souterrain. Entre les deux, une trentaine d’anciens ouvriers continuent de se retrouver le premier samedi du mois, dans l’arrière-salle d’un café. Ils ne demandent rien à la mairie. Ils ont simplement pris l’habitude, depuis les enregistrements, de se raconter entre eux ce qu’ils n’avaient jamais raconté chez eux. L’un d’eux, Robert Sylla, entré à l’usine à seize ans, résume ainsi ce qu’il attend du projet: «Je ne veux pas qu’on nous plaigne. Je veux qu’on sache.» Le chantier commencera en septembre. Ce qui sera construit là est décidé; ce qui sera raconté ne l’est pas encore.",
+    "wordCount": 401,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Reconocer la voz pasiva y saber quién actúa cuando el agente no aparece."
+      },
+      {
+        "es": "Identificar nominalizaciones: fermeture, construction, démolition, reconnaissance."
+      },
+      {
+        "es": "Distinguir un desacuerdo técnico de un desacuerdo de fondo."
+      }
+    ],
+    "grammarFocus": [
+      "voix-passive-b1",
+      "nominalisation-b1",
+      "connecteurs"
+    ],
+    "vocabulary": [
+      {
+        "surface": "usine",
+        "lemma": "usine",
+        "glosses": {
+          "es": "fábrica"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "démoli",
+        "lemma": "démolir",
+        "glosses": {
+          "es": "derribado, demolido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cheminée",
+        "lemma": "cheminée",
+        "glosses": {
+          "es": "chimenea (industrial)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "réhabilitation",
+        "lemma": "réhabilitation",
+        "glosses": {
+          "es": "rehabilitación, reforma integral"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "planchers",
+        "lemma": "plancher",
+        "glosses": {
+          "es": "forjados, suelos de un edificio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "adjoint",
+        "lemma": "adjoint",
+        "glosses": {
+          "es": "concejal, teniente de alcalde"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "bénévoles",
+        "lemma": "bénévole",
+        "glosses": {
+          "es": "voluntarios"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "plaque",
+        "lemma": "plaque",
+        "glosses": {
+          "es": "placa conmemorativa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La reconversión de fábricas textiles cerradas en los años noventa es un debate recurrente en el norte y el este de Francia, y suele enfrentar a los ayuntamientos con asociaciones de antiguos trabajadores."
+    },
+    "spanishSpeakerNote": {
+      "es": "La voz pasiva francesa se construye igual que la española: être + participio, con concordancia («l’usine a été fermée»). La nominalización, en cambio, es más frecuente en francés que en español: donde nosotros diríamos «cuando cerraron la fábrica», el francés prefiere «la fermeture de l’usine»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo que desarrolla una idea, cambia de dirección y se cierra; distinguir el hecho de la interpretación; y justificar una inferencia señalando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers",
+      "accord-participe-passe",
+      "cause-consequence",
+      "comparatifs",
+      "conditionnel-present",
+      "connecteurs",
+      "discours-indirect",
+      "dont-relatif",
+      "futur-simple",
+      "gerondif",
+      "imparfait",
+      "negation-avancee",
+      "passe-compose-avoir",
+      "passe-compose-etre",
+      "passe-compose-vs-imparfait",
+      "pronoms-coi",
+      "pronoms-y-en",
+      "si-conditionnel",
+      "subjonctif-present",
+      "superlatifs",
+      "verbes-pronominaux",
+      "accord-participe-passe-b1",
+      "comparatif-superlatif-b1",
+      "conditionnel-present-b1",
+      "connecteurs-logiques-b1",
+      "discours-indirect-b1",
+      "expressions-temporelles-b1",
+      "futur-simple-b1",
+      "gerondif-b1",
+      "hypothese-si-b1",
+      "imperatif-b1",
+      "negation-avancee-b1",
+      "nominalisation-b1",
+      "participe-present-b1",
+      "passe-compose-vs-imparfait-b1",
+      "plus-que-parfait-b1",
+      "pronoms-relatifs-b1",
+      "pronoms-y-en-b1",
+      "questions-indirectes-b1",
+      "subjonctif-present-b1",
+      "voix-passive-b1"
+    ],
+    "disallowedGrammar": [
+      "passé simple",
+      "subjonctif imparfait",
+      "passé antérieur"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 16,
+      "maxSentenceWords": 34,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Prosa B1 con plus-que-parfait, voz pasiva y subjuntivo. Sin passé simple. Inferencia moderada: exige cruzar dos pasajes separados."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es el conflicto central del artículo?",
+      "options": [
+        {
+          "id": "memoria",
+          "text": "No es qué se construye, sino si se contará lo que pasó allí"
+        },
+        {
+          "id": "dinero",
+          "text": "El coste de la obra y quién debe pagarla"
+        },
+        {
+          "id": "viviendas",
+          "text": "El número de viviendas que se van a edificar"
+        }
+      ],
+      "answer": "memoria",
+      "evidence": "Ce qui sera construit là est décidé; ce qui sera raconté ne l’est pas encore.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la última frase lo resume en una simetría: lo construido ya está decidido, lo narrado no."
+        },
+        "incorrect": {
+          "es": "El coste aparece como argumento técnico, y las viviendas son un dato. Lee la última frase del artículo."
+        },
+        "strategy": {
+          "es": "Cuando un artículo termina con una frase construida en dos mitades simétricas, ahí está su tesis condensada."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué elemento del edificio se va a conservar?",
+      "options": [
+        {
+          "id": "cheminee",
+          "text": "La chimenea"
+        },
+        {
+          "id": "ateliers",
+          "text": "Los talleres del fondo"
+        },
+        {
+          "id": "bureaux",
+          "text": "Los despachos de 2004"
+        }
+      ],
+      "answer": "cheminee",
+      "evidence": "La cheminée sera conservée. Les ateliers du fond, en revanche, seront détruits",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El «en revanche» marca justo el contraste entre lo que se salva y lo que cae."
+        },
+        "incorrect": {
+          "es": "Los talleres se derriban: lo dice la frase con «en revanche». Busca qué se salva justo antes."
+        },
+        "strategy": {
+          "es": "Conectores como «en revanche» separan dos destinos opuestos. Localizarlo te da las dos respuestas de golpe."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El artículo dice que los «planchers ont été fragilisés par l’humidité». ¿Qué son los «planchers»?",
+      "options": [
+        {
+          "id": "forjados",
+          "text": "Los forjados, la estructura horizontal que sostiene cada piso"
+        },
+        {
+          "id": "planchas",
+          "text": "Las planchas metálicas de la fachada"
+        },
+        {
+          "id": "planos",
+          "text": "Los planos del arquitecto"
+        }
+      ],
+      "answer": "forjados",
+      "evidence": "les planchers ont été fragilisés par l’humidité et leur consolidation coûterait plus cher que la reconstruction",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Y por eso el argumento pesa: si lo que falla es la estructura, reforzarla es carísimo."
+        },
+        "incorrect": {
+          "es": "Se habla de algo que la humedad debilita y que habría que consolidar. Unos planos no se consolidan."
+        },
+        "strategy": {
+          "es": "Si una palabra aparece junto a «humidité» y «consolidation», estamos en vocabulario de estructura, no de documentos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué recuerda Malika Ferrand el caso de los despachos de 2004?",
+      "options": [
+        {
+          "id": "precedente",
+          "text": "Para mostrar que el mismo diagnóstico ya se hizo antes y resultó exagerado"
+        },
+        {
+          "id": "coste",
+          "text": "Para calcular cuánto costó aquella restauración"
+        },
+        {
+          "id": "fecha",
+          "text": "Para fijar la fecha en que se fundó la asociación"
+        }
+      ],
+      "answer": "precedente",
+      "evidence": "le même diagnostic avait été fait en 2004 pour les bureaux, qui ont finalement été restaurés sans difficulté",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Usa un precedente para poner en duda el argumento técnico actual: la misma advertencia ya falló una vez."
+        },
+        "incorrect": {
+          "es": "No da ninguna cifra ni habla de la fundación de la asociación. Fíjate en qué pasó finalmente con aquellos despachos."
+        },
+        "strategy": {
+          "es": "Cuando alguien cita un caso pasado en un debate, pregúntate qué demuestra ese caso sobre el argumento contrario."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el ayuntamiento alega falta de espacio para la sala de memoria, y la asociación replica que sí hubo espacio para otra cosa.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "La mairie répond que l’espace manque. La présidente répond que l’espace a été trouvé pour un parking souterrain.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero. Las dos frases van seguidas y la segunda desmonta la primera con un solo ejemplo."
+        },
+        "incorrect": {
+          "es": "Busca las dos frases consecutivas que empiezan por «répond». El intercambio está entero ahí."
+        },
+        "strategy": {
+          "es": "Dos frases seguidas con el mismo verbo («répond… répond») señalan una réplica directa. Léelas como un par."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué menciona el artículo que a las familias «se les había prometido» una modernización seis meses antes del cierre?",
+      "options": [
+        {
+          "id": "humillacion",
+          "text": "Para explicar por qué el cierre se vivió como una humillación y no solo como una pérdida de empleo"
+        },
+        {
+          "id": "culpable",
+          "text": "Para señalar al director de la fábrica como responsable legal"
+        },
+        {
+          "id": "fecha",
+          "text": "Para precisar la fecha exacta del anuncio de cierre"
+        }
+      ],
+      "answer": "humillacion",
+      "evidence": "elle a été vécue comme une humiliation par des familles à qui on avait promis, six mois plus tôt, que le site serait modernisé",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Ese dato convierte el cierre en algo más que económico, y es lo que sostiene la reivindicación de la asociación."
+        },
+        "incorrect": {
+          "es": "El artículo no señala a nadie personalmente ni busca fechas. Fíjate en la palabra que precede a la promesa: «humiliation»."
+        },
+        "strategy": {
+          "es": "Un dato del pasado insertado en medio de un debate actual suele explicar la intensidad del conflicto, no los hechos."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en francés sobre un edificio abandonado de tu ciudad y qué debería hacerse con él. Usa cuatro construcciones en voz pasiva y dos nominalizaciones."
+    },
+    "minWords": 70,
+    "maxWords": 130,
+    "hints": [
+      "Le bâtiment a été fermé en…",
+      "Il n’a jamais été démoli.",
+      "La construction de… est prévue.",
+      "Ce qui sera… n’est pas encore décidé."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés B1: Lo que dejó la fábrica | WeLearn"
+    },
+    "description": {
+      "es": "Lee un artículo de fondo en francés B1 y practica la voz pasiva y la nominalización. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/frances/b1/lectura/ce-que-l-usine-a-laisse",
+    "indexable": true,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-b1-la-lettre-jamais-envoyee",
+      "fr-b1-si-on-travaillait-moins"
+    ]
+  }
+}

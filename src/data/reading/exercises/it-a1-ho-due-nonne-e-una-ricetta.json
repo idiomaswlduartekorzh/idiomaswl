@@ -1,0 +1,449 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-a1-ho-due-nonne-e-una-ricetta",
+  "status": "published",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Italiano A1"
+  },
+  "slug": "ho-due-nonne-e-una-ricetta",
+  "series": {
+    "id": "italiano-a1-lectura-10",
+    "episode": 2,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-a1-il-caffe-si-beve-in-piedi",
+    "nextExerciseId": "it-a1-il-portiere-sa-tutto"
+  },
+  "classification": {
+    "genre": "retrato familiar",
+    "topic": "dos abuelas y el mismo ragú",
+    "intent": "learning",
+    "tags": [
+      "italiano a1",
+      "lectura",
+      "verbo avere",
+      "género y número"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Tengo dos abuelas y una receta"
+    },
+    "intro": {
+      "es": "Una de Nápoles, otra de Bérgamo, la misma receta y dos comidas cada domingo. Lectura de italiano A1 con el verbo avere."
+    },
+    "mission": {
+      "es": "Averigua cuál es el problema de verdad, que no es la receta."
+    },
+    "targetText": "Ho due nonne. Una è di Napoli, l'altra è di Bergamo. Le due hanno la stessa ricetta per il ragù, ma la ricetta non è la stessa. Nonna Rosa ha bisogno di quattro ore. Nonna Elsa ha bisogno di due. Nonna Rosa dice che il pomodoro è la base. Per Nonna Elsa la base è la carne. Io ho ventidue anni e una sola opinione: le due sono buone. Il problema non è il ragù. Il problema è la domenica. Adesso le due nonne abitano nella stessa città, a otto minuti di autobus. La domenica io ho due pranzi. Ho due piatti di pasta, due bicchieri di vino, due caffè. Non ho scelta: se io mangio con una nonna, l'altra è triste, e la sua tristezza è silenziosa. Mia madre dice che questo è un problema mio. Ha ragione.",
+    "wordCount": 139,
+    "estimatedMinutes": 6,
+    "objectives": [
+      {
+        "es": "Conjugar avere en presente, incluido «avere bisogno di»."
+      },
+      {
+        "es": "Concordar en género y número: due nonne, le due, i piatti, le ore."
+      },
+      {
+        "es": "Distinguir el problema declarado del problema real de un texto."
+      }
+    ],
+    "grammarFocus": [
+      "verbo-avere",
+      "genere-numero"
+    ],
+    "vocabulary": [
+      {
+        "surface": "nonne",
+        "lemma": "nonna",
+        "glosses": {
+          "es": "abuelas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ricetta",
+        "lemma": "ricetta",
+        "glosses": {
+          "es": "receta de cocina"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "bisogno",
+        "lemma": "bisogno",
+        "glosses": {
+          "es": "necesidad; «avere bisogno di» es necesitar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pomodoro",
+        "lemma": "pomodoro",
+        "glosses": {
+          "es": "tomate"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pranzi",
+        "lemma": "pranzo",
+        "glosses": {
+          "es": "comidas del mediodía"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "bicchieri",
+        "lemma": "bicchiere",
+        "glosses": {
+          "es": "vasos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "scelta",
+        "lemma": "scelta",
+        "glosses": {
+          "es": "elección, opción"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tristezza",
+        "lemma": "tristezza",
+        "glosses": {
+          "es": "pena, disgusto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El ragú del norte y el del sur de Italia son platos distintos con el mismo nombre: en Nápoles domina el tomate y las horas de cocción; en el norte, la carne. La discusión es real y no se resuelve."
+    },
+    "spanishSpeakerNote": {
+      "es": "El italiano usa «avere bisogno di» donde el español dice «necesitar»: literalmente «tener necesidad de». Y ojo con los plurales: «nonna» hace «nonne», no «nonnas»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en italiano sobre la vida cotidiana, distinguir un falso amigo de una palabra transparente, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere"
+    ],
+    "disallowedGrammar": [
+      "passato prossimo",
+      "imperfetto",
+      "congiuntivo",
+      "condizionale",
+      "voce passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 8.7,
+      "maxSentenceWords": 18,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo, imperativo y stare + gerundio. Sin tiempos del pasado ni congiuntivo. Falso amigo glosado en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es el asunto del texto?",
+      "options": [
+        {
+          "id": "domingo",
+          "text": "Que los domingos tiene que comer dos veces para no dejar a ninguna abuela triste"
+        },
+        {
+          "id": "receta",
+          "text": "Que quiere aprender la receta correcta del ragú"
+        },
+        {
+          "id": "mudanza",
+          "text": "Que sus abuelas se mudaron a la misma ciudad"
+        }
+      ],
+      "answer": "domingo",
+      "evidence": "Il problema non è il ragù. Il problema è la domenica … Non ho scelta.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo dice con esas dos frases seguidas: descarta un problema y anuncia el otro."
+        },
+        "incorrect": {
+          "es": "La receta y la mudanza son datos de contexto. Busca las dos frases que empiezan por «Il problema»."
+        },
+        "strategy": {
+          "es": "Cuando un texto dice «el problema no es X, el problema es Y», ahí tienes el asunto servido."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántas horas necesita la nonna Rosa para su ragú?",
+      "options": [
+        {
+          "id": "cuatro",
+          "text": "Cuatro horas"
+        },
+        {
+          "id": "dos",
+          "text": "Dos horas"
+        },
+        {
+          "id": "ocho",
+          "text": "Ocho horas"
+        }
+      ],
+      "answer": "cuatro",
+      "evidence": "Nonna Rosa ha bisogno di quattro ore. Nonna Elsa ha bisogno di due.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Las dos horas son las de la nonna Elsa."
+        },
+        "incorrect": {
+          "es": "Los ocho son minutos de autobús. Empareja cada cifra con su abuela."
+        },
+        "strategy": {
+          "es": "Cuando dos personajes se comparan con cifras, lee las dos frases juntas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto repite «ha bisogno di». ¿Qué significa?",
+      "options": [
+        {
+          "id": "necesita",
+          "text": "Necesita"
+        },
+        {
+          "id": "quiere",
+          "text": "Quiere, le apetece"
+        },
+        {
+          "id": "tarda",
+          "text": "Llega tarde"
+        }
+      ],
+      "answer": "necesita",
+      "evidence": "Nonna Rosa ha bisogno di quattro ore.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Literalmente «tiene necesidad de», que en español es simplemente «necesita»."
+        },
+        "incorrect": {
+          "es": "La expresión va con horas de cocción, no con ganas ni con retrasos. Traduce «bisogno» como necesidad."
+        },
+        "strategy": {
+          "es": "Muchas expresiones italianas se construyen con «avere» + sustantivo: tradúcelas por un verbo español."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice que su madre «ha ragione»?",
+      "options": [
+        {
+          "id": "propio",
+          "text": "Porque reconoce que el problema lo crea él al no querer elegir"
+        },
+        {
+          "id": "cocina",
+          "text": "Porque su madre cocina mejor que las dos abuelas"
+        },
+        {
+          "id": "abuelas",
+          "text": "Porque su madre dice que las abuelas exageran"
+        }
+      ],
+      "answer": "propio",
+      "evidence": "Non ho scelta … Mia madre dice che questo è un problema mio. Ha ragione.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Dice que no tiene elección y a la vez admite que el problema es suyo: ahí está el chiste."
+        },
+        "incorrect": {
+          "es": "La madre no cocina en este texto ni habla de exageraciones. Une su frase con el «Non ho scelta» anterior."
+        },
+        "strategy": {
+          "es": "Un «tiene razón» al final suele corregir algo que el narrador dijo antes."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: las dos abuelas viven ahora en la misma ciudad, a pocos minutos la una de la otra.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Adesso le due nonne abitano nella stessa città, a otto minuti di autobus.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y esos ocho minutos son justamente lo que hace posible la doble comida."
+        },
+        "incorrect": {
+          "es": "Busca la frase que empieza por «Adesso»: dice dónde viven y a qué distancia."
+        },
+        "strategy": {
+          "es": "La palabra «adesso» marca lo que es cierto en el presente, frente a lo de antes."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la información tal como aparece.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Presenta a las dos abuelas y de dónde son"
+        },
+        {
+          "id": "p2",
+          "text": "Compara las dos versiones de la receta"
+        },
+        {
+          "id": "p3",
+          "text": "Explica que el problema real es el domingo"
+        },
+        {
+          "id": "p4",
+          "text": "Su madre le dice que el problema es suyo"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Ho due nonne. Una è di Napoli … Nonna Rosa ha bisogno di quattro ore … Il problema è la domenica … Mia madre dice che questo è un problema mio.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: presentación, comparación, problema y sentencia final."
+        },
+        "incorrect": {
+          "es": "Fíjate en el orden de las frases: primero quiénes son, luego las horas, luego el domingo."
+        },
+        "strategy": {
+          "es": "Un retrato familiar suele presentar a las personas antes de contar el conflicto."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en italiano sobre dos personas de tu familia que hacen lo mismo de forma distinta. Usa avere seis veces, incluida una con «avere bisogno di»."
+    },
+    "minWords": 30,
+    "maxWords": 60,
+    "hints": [
+      "Ho due…",
+      "Lei ha bisogno di…",
+      "Le due sono buone.",
+      "Io ho una sola opinione."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano A1: tengo dos abuelas y una receta | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto corto en italiano A1 y practica el verbo avere y el género y número. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/italiano/a1/lectura/ho-due-nonne-e-una-ricetta",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-a1-il-caffe-si-beve-in-piedi",
+      "it-a1-il-portiere-sa-tutto"
+    ]
+  }
+}

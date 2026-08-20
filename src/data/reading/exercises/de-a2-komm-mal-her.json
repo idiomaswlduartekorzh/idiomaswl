@@ -1,0 +1,461 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-a2-komm-mal-her",
+  "status": "published",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Alemán A2"
+  },
+  "slug": "komm-mal-her",
+  "series": {
+    "id": "aleman-a2-lectura-10",
+    "episode": 10,
+    "totalEpisodes": 10,
+    "previousExerciseId": "de-a2-das-fahrrad-meines-vaters",
+    "nextExerciseId": null
+  },
+  "classification": {
+    "genre": "escena de cocina",
+    "topic": "aprender a cocinar de alguien",
+    "intent": "learning",
+    "tags": [
+      "aleman a2",
+      "lectura",
+      "infinitivo con zu",
+      "da/hin/her"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Ven un momento"
+    },
+    "intro": {
+      "es": "Una receta que no se puede escribir porque la medida es «hasta que suene distinto». Lectura de alemán A2 con el infinitivo con zu."
+    },
+    "mission": {
+      "es": "Averigua por qué el narrador no consigue anotar la receta."
+    },
+    "targetText": "Meine Schwiegermutter kocht seit fünfzig Jahren. Ich habe versucht, ihr Rezept aufzuschreiben. Es ist mir nicht gelungen. Sie sagt: Komm mal her. Ich gehe hin. Sie zeigt auf die Pfanne und sagt: Jetzt. Ich frage: Wie viele Minuten? Sie antwortet: Keine Minuten. Hör hin. Das Öl klingt anders, wenn es so weit ist. Ich habe angefangen, mit dem Handy zu messen. Es waren einmal vier Minuten und einmal sieben. Sie hatte trotzdem recht, beide Male. Ich habe versucht zu verstehen, wovon es abhängt. Von der Temperatur, glaube ich, und davon, wie nass das Gemüse ist. Sie weiß das nicht. Sie hat nie darüber nachgedacht. Sie hört einfach hin. Mein Sohn ist acht. Er steht daneben und fragt sie alles. Sie antwortet ihm ohne Zahlen und er versteht es. Letzte Woche hat sie ihm die Pfanne gegeben und ist einen Schritt zurückgetreten. Er hat nichts gefragt. Er hat zwei Minuten gewartet und dann das Gemüse hineingegeben. Es war genau der richtige Moment. Ich habe daneben gestanden und nichts gesagt. Ich schreibe weiter mit. Vielleicht ist es zu spät, so etwas zu lernen. Vielleicht schreibe ich es für ihn auf.",
+    "wordCount": 188,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Formar el infinitivo con zu: versucht aufzuschreiben, angefangen zu messen."
+      },
+      {
+        "es": "Usar las partículas direccionales: her, hin, daneben, davon, darüber."
+      },
+      {
+        "es": "Distinguir el conocimiento explicable del que no lo es."
+      }
+    ],
+    "grammarFocus": [
+      "infinitiv-zu-a2",
+      "da-hin-her-a2",
+      "w-fragen"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Schwiegermutter",
+        "lemma": "Schwiegermutter",
+        "glosses": {
+          "es": "suegra"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gelungen",
+        "lemma": "gelingen",
+        "glosses": {
+          "es": "logrado, salido bien"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Pfanne",
+        "lemma": "Pfanne",
+        "glosses": {
+          "es": "sartén"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Öl",
+        "lemma": "Öl",
+        "glosses": {
+          "es": "aceite"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "messen",
+        "lemma": "messen",
+        "glosses": {
+          "es": "medir"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "abhängt",
+        "lemma": "abhängen",
+        "glosses": {
+          "es": "depende"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "nass",
+        "lemma": "nass",
+        "glosses": {
+          "es": "mojado, húmedo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "nachgedacht",
+        "lemma": "nachdenken",
+        "glosses": {
+          "es": "reflexionado, pensado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La transmisión oral de recetas sin medidas es común en todas las cocinas domésticas, y en alemán aparece con verbos de percepción como «hinhören», escuchar con atención."
+    },
+    "spanishSpeakerNote": {
+      "es": "Las partículas «hin» y «her» marcan dirección: «her» hacia quien habla («komm her», ven aquí), «hin» alejándose («ich gehe hin», voy allá). Y «hinhören» no es solo oír: es escuchar prestando atención."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en alemán sobre hechos pasados, encontrar el verbo al final de una subordinada, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens",
+      "adjektivdeklination-a2",
+      "da-hin-her-a2",
+      "dativ-a2",
+      "futur-i-a2",
+      "genitiv-a2",
+      "infinitiv-zu-a2",
+      "komparativ-superlativ-a2",
+      "konjunktionen-a2",
+      "konjunktiv-ii-wurden-a2",
+      "modalverben-praeteritum-a2",
+      "partizip-als-adjektiv-a2",
+      "passiv-praesens-a2",
+      "perfekt-haben-a2",
+      "perfekt-sein-a2",
+      "praeteritum-basic-a2",
+      "reflexivverben-a2",
+      "relativsaetze-a2",
+      "trennbare-verben-praeteritum-a2",
+      "wechselpraepositionen-a2",
+      "zweiteilige-konnektoren-a2"
+    ],
+    "disallowedGrammar": [
+      "Konjunktiv I",
+      "Plusquamperfekt",
+      "Partizip I",
+      "Nominalstil"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 6.5,
+      "maxSentenceWords": 13,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Perfekt y Präteritum con su reparto de uso. Konjunktiv II solo en formas hechas (würde, wäre, hätte). Sin Plusquamperfekt ni Konjunktiv I."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué descubre el narrador?",
+      "options": [
+        {
+          "id": "nomedible",
+          "text": "Que la receta no se puede escribir porque no depende de números"
+        },
+        {
+          "id": "secreto",
+          "text": "Que su suegra le oculta la receta a propósito"
+        },
+        {
+          "id": "error",
+          "text": "Que la receta que le dieron era incorrecta"
+        }
+      ],
+      "answer": "nomedible",
+      "evidence": "Keine Minuten. Hör hin. Das Öl klingt anders, wenn es so weit ist.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el propio narrador comprueba que los tiempos varían: cuatro minutos una vez, siete otra."
+        },
+        "incorrect": {
+          "es": "Ella no oculta nada: se lo enseña de otra manera. Busca su respuesta a la pregunta de los minutos."
+        },
+        "strategy": {
+          "es": "Cuando un personaje rechaza la pregunta que se le hace, su respuesta redefine el problema."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué midió con el móvil?",
+      "options": [
+        {
+          "id": "tiempos",
+          "text": "Cuatro minutos una vez y siete otra"
+        },
+        {
+          "id": "temperatura",
+          "text": "La temperatura del aceite"
+        },
+        {
+          "id": "peso",
+          "text": "El peso de la verdura"
+        }
+      ],
+      "answer": "tiempos",
+      "evidence": "Ich habe angefangen, mit dem Handy zu messen. Es waren einmal vier Minuten und einmal sieben.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y las dos veces ella tuvo razón pese a la diferencia."
+        },
+        "incorrect": {
+          "es": "La temperatura es una hipótesis suya, no una medición. Busca las dos cifras."
+        },
+        "strategy": {
+          "es": "Distingue lo que el narrador midió de lo que solo supone. El texto marca la diferencia."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Ella dice «Hör hin». ¿Qué le pide?",
+      "options": [
+        {
+          "id": "escuchar",
+          "text": "Que escuche con atención"
+        },
+        {
+          "id": "parar",
+          "text": "Que pare de cocinar"
+        },
+        {
+          "id": "irse",
+          "text": "Que se vaya de la cocina"
+        }
+      ],
+      "answer": "escuchar",
+      "evidence": "Keine Minuten. Hör hin. Das Öl klingt anders, wenn es so weit ist.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. La frase siguiente lo explica: el aceite suena distinto cuando está listo."
+        },
+        "incorrect": {
+          "es": "La frase siguiente habla de cómo suena el aceite. Eso descarta parar o marcharse."
+        },
+        "strategy": {
+          "es": "Si una orden va seguida de una explicación sobre un sonido, la orden es de escuchar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el hijo de ocho años sí lo entiende?",
+      "options": [
+        {
+          "id": "sinnumeros",
+          "text": "Porque ella se lo explica sin números y él no necesita medirlo"
+        },
+        {
+          "id": "cocina",
+          "text": "Porque ya sabe cocinar"
+        },
+        {
+          "id": "paciencia",
+          "text": "Porque ella tiene más paciencia con él"
+        }
+      ],
+      "answer": "sinnumeros",
+      "evidence": "Sie antwortet ihm ohne Zahlen und er versteht es.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el contraste con el padre es exacto: él insiste en medir y por eso se le escapa."
+        },
+        "incorrect": {
+          "es": "El texto no dice que el niño sepa cocinar ni compara la paciencia. Busca «ohne Zahlen»."
+        },
+        "strategy": {
+          "es": "Cuando dos personajes reciben lo mismo con resultados distintos, la diferencia está en el método."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la suegra sabe explicar de qué depende el punto del aceite.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Sie weiß das nicht. Sie hat nie darüber nachgedacht. Sie hört einfach hin.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: no lo sabe y nunca se lo ha planteado. Simplemente escucha."
+        },
+        "incorrect": {
+          "es": "Busca las tres frases cortas seguidas sobre ella. Las tres apuntan a lo mismo."
+        },
+        "strategy": {
+          "es": "Tres frases cortas seguidas suelen construir una sola idea. Léelas como bloque."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué termina con «Vielleicht schreibe ich es für ihn auf»?",
+      "options": [
+        {
+          "id": "relevo",
+          "text": "Para admitir que quizá lo que anota no es para él sino para su hijo"
+        },
+        {
+          "id": "libro",
+          "text": "Para anunciar que va a publicar un libro de recetas"
+        },
+        {
+          "id": "abandono",
+          "text": "Para decir que deja de intentarlo"
+        }
+      ],
+      "answer": "relevo",
+      "evidence": "Vielleicht ist es zu spät, so etwas zu lernen. Vielleicht schreibe ich es für ihn auf.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Las dos frases con «Vielleicht» van juntas: si él no puede aprenderlo, que sirva al niño."
+        },
+        "incorrect": {
+          "es": "No abandona —dice «Ich schreibe weiter mit»— ni habla de publicar. Lee las dos frases finales."
+        },
+        "strategy": {
+          "es": "Dos frases seguidas que empiezan igual suelen formar un razonamiento en dos pasos. Léelas juntas."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en alemán sobre algo que aprendiste de alguien sin instrucciones escritas. Usa tres infinitivos con zu y dos partículas hin o her."
+    },
+    "minWords": 40,
+    "maxWords": 85,
+    "hints": [
+      "Ich habe versucht, … aufzuschreiben.",
+      "Sie sagt: Komm mal her.",
+      "Ich habe angefangen, … zu messen.",
+      "Vielleicht ist es zu spät, … zu lernen."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán A2: Ven un momento | WeLearn"
+    },
+    "description": {
+      "es": "Lee una escena en alemán A2 y practica el infinitivo con zu y las partículas da, hin y her. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/a2/lectura/komm-mal-her",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-a2-das-fahrrad-meines-vaters"
+    ]
+  }
+}

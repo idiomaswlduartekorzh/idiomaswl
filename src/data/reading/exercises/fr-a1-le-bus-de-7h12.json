@@ -1,0 +1,441 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-a1-le-bus-de-7h12",
+  "status": "published",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Francés A1"
+  },
+  "slug": "le-bus-de-7h12",
+  "series": {
+    "id": "frances-a1-lectura-10",
+    "episode": 7,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-a1-la-recette-de-mamie-aicha",
+    "nextExerciseId": "fr-a1-une-lettre-de-dakar"
+  },
+  "classification": {
+    "genre": "crónica personal",
+    "topic": "transporte y rutina",
+    "intent": "learning",
+    "tags": [
+      "frances a1",
+      "lectura",
+      "adverbios de frecuencia",
+      "verbos irregulares"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El autobús de las 7:12"
+    },
+    "intro": {
+      "es": "Un conductor que no saluda nunca, un desvío de dos minutos una vez al mes y nadie que proteste. Lectura de francés A1 con los adverbios de frecuencia."
+    },
+    "mission": {
+      "es": "Fíjate en cada palabra de frecuencia y averigua por qué nadie se queja del desvío."
+    },
+    "targetText": "Je prends toujours le bus de sept heures douze. Toujours. Depuis quatre ans. Le chauffeur s’appelle Bernard. Il ne dit jamais bonjour, mais il attend souvent trente secondes de plus quand il me voit courir au coin de la rue. Le mardi, il y a rarement des places assises: c’est le jour du marché et les gens vont en ville avec des sacs énormes. Le vendredi, le bus est presque vide. Tout le monde part plus tôt. Une fois par mois, Bernard fait un détour de deux minutes par la rue Pasteur, parce qu’une dame âgée ne peut plus marcher jusqu’à l’arrêt. Personne ne se plaint jamais. Nous savons tous pourquoi.",
+    "wordCount": 111,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Colocar los adverbios de frecuencia en su sitio: toujours, jamais, souvent, rarement."
+      },
+      {
+        "es": "Reconocer verbos irregulares muy frecuentes en presente: prendre, dire, voir, aller, faire, pouvoir, savoir."
+      },
+      {
+        "es": "Relacionar cada día de la semana con lo que pasa ese día."
+      }
+    ],
+    "grammarFocus": [
+      "adverbes-frequence",
+      "verbes-irreguliers",
+      "prepositions-temps"
+    ],
+    "vocabulary": [
+      {
+        "surface": "chauffeur",
+        "lemma": "chauffeur",
+        "glosses": {
+          "es": "conductor"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "places assises",
+        "lemma": "places assises",
+        "glosses": {
+          "es": "asientos, plazas sentadas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "détour",
+        "lemma": "détour",
+        "glosses": {
+          "es": "rodeo, desvío"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "arrêt",
+        "lemma": "arrêt",
+        "glosses": {
+          "es": "parada (del autobús)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "se plaint",
+        "lemma": "se plaindre",
+        "glosses": {
+          "es": "se queja"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "âgée",
+        "lemma": "âgé",
+        "glosses": {
+          "es": "mayor, de edad avanzada"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vide",
+        "lemma": "vide",
+        "glosses": {
+          "es": "vacío"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "coin",
+        "lemma": "coin",
+        "glosses": {
+          "es": "esquina"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En Francia los horarios de autobús se anuncian al minuto exacto —7h12, no «sobre y cuarto»— y la gente los usa como referencia fija de su rutina."
+    },
+    "spanishSpeakerNote": {
+      "es": "El adverbio de frecuencia va detrás del verbo, no delante como en español: «Il ne dit jamais bonjour» = «Nunca dice buenos días». Y ojo con «jamais», que necesita el «ne» delante del verbo para significar «nunca»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto corto en presente sobre la vida cotidiana, localizar quién hace cada cosa y justificar tu respuesta con una frase del texto."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers"
+    ],
+    "disallowedGrammar": [
+      "passé composé",
+      "imparfait",
+      "subjonctif",
+      "conditionnel",
+      "voix passive"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 10.1,
+      "maxSentenceWords": 25,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Texto original en presente. Sin tiempos compuestos. Inferencia limitada a unir dos datos explícitos."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué retrata este texto por encima de todo?",
+      "options": [
+        {
+          "id": "comunidad",
+          "text": "Una pequeña comunidad silenciosa que se entiende sin hablar"
+        },
+        {
+          "id": "queja",
+          "text": "Una queja sobre el mal servicio del transporte público"
+        },
+        {
+          "id": "horario",
+          "text": "Una explicación del horario de autobuses de la ciudad"
+        }
+      ],
+      "answer": "comunidad",
+      "evidence": "Personne ne se plaint jamais. Nous savons tous pourquoi.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El conductor no saluda pero espera; los pasajeros no hablan pero entienden. Todo el texto va de eso."
+        },
+        "incorrect": {
+          "es": "Nadie se queja en este texto, y el horario es solo el punto de partida. Lee las dos últimas frases."
+        },
+        "strategy": {
+          "es": "Si el texto describe conductas y no da datos técnicos, no busques la información: busca la relación entre las personas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué día del mes cuesta encontrar asiento libre?",
+      "options": [
+        {
+          "id": "mardi",
+          "text": "El martes, que es día de mercado"
+        },
+        {
+          "id": "vendredi",
+          "text": "El viernes, cuando todos salen antes"
+        },
+        {
+          "id": "lundi",
+          "text": "El lunes, al empezar la semana"
+        }
+      ],
+      "answer": "mardi",
+      "evidence": "Le mardi, il y a rarement des places assises: c’est le jour du marché",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El viernes es justo lo contrario: el autobús va casi vacío."
+        },
+        "incorrect": {
+          "es": "En el texto se nombran dos días, y a cada uno le pasa lo opuesto. Busca cuál va con «rarement des places assises»."
+        },
+        "strategy": {
+          "es": "Cuando un texto compara dos días, apunta qué pasa en cada uno antes de contestar. Es fácil cruzarlos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que una señora «ne peut plus marcher jusqu’à l’arrêt». ¿Qué es «l’arrêt»?",
+      "options": [
+        {
+          "id": "parada",
+          "text": "La parada del autobús"
+        },
+        {
+          "id": "semaforo",
+          "text": "El semáforo de la esquina"
+        },
+        {
+          "id": "final",
+          "text": "El final del trayecto, la última calle"
+        }
+      ],
+      "answer": "parada",
+      "evidence": "une dame âgée ne peut plus marcher jusqu’à l’arrêt",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Y por eso el desvío tiene sentido: si ella no llega a la parada, la parada va hacia ella."
+        },
+        "incorrect": {
+          "es": "Piensa qué necesita alcanzar una persona que quiere coger el autobús. El verbo «marcher jusqu’à» te dice que es un destino."
+        },
+        "strategy": {
+          "es": "La preposición «jusqu’à» marca un destino. Lo que va detrás es siempre un lugar al que se llega."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "La última frase dice «Nous savons tous pourquoi». ¿Qué es lo que saben todos?",
+      "options": [
+        {
+          "id": "dame",
+          "text": "Que el desvío existe por la señora mayor que no puede caminar"
+        },
+        {
+          "id": "retard",
+          "text": "Que el autobús siempre llega con dos minutos de retraso"
+        },
+        {
+          "id": "bernard",
+          "text": "Que Bernard se jubila el mes que viene"
+        }
+      ],
+      "answer": "dame",
+      "evidence": "Bernard fait un détour de deux minutes par la rue Pasteur, parce qu’une dame âgée ne peut plus marcher",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El texto ya lo ha explicado, y por eso la última frase puede callárselo. Ese silencio es el efecto buscado."
+        },
+        "incorrect": {
+          "es": "La respuesta ya está escrita unas líneas antes, con un «parce que». La última frase solo la da por sabida."
+        },
+        "strategy": {
+          "es": "Cuando un texto termina con «todos sabemos por qué», la razón está más arriba. Retrocede y busca el «porque»."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: Bernard saluda a los pasajeros cada mañana al subir al autobús.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Il ne dit jamais bonjour, mais il attend souvent trente secondes de plus",
+      "feedback": {
+        "correct": {
+          "es": "Falso, y esa es la gracia del personaje: no saluda nunca, pero espera. Los gestos valen más que las palabras."
+        },
+        "incorrect": {
+          "es": "Busca «bonjour» en el texto y mira qué hay delante: «ne dit jamais». Eso es un nunca rotundo."
+        },
+        "strategy": {
+          "es": "Con «jamais» hay que leer la frase entera. La palabra sola puede aparecer en frases que dicen lo contrario."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "¿Qué sensación deja el narrador al hablar de Bernard?",
+      "options": [
+        {
+          "id": "respeto",
+          "text": "Respeto callado: valora lo que hace, no lo que dice"
+        },
+        {
+          "id": "fastidio",
+          "text": "Fastidio: le molesta que sea antipático"
+        },
+        {
+          "id": "indiferencia",
+          "text": "Indiferencia: le da igual quién conduzca"
+        }
+      ],
+      "answer": "respeto",
+      "evidence": "Il ne dit jamais bonjour, mais il attend souvent trente secondes de plus",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Ese «mais» es la bisagra del texto: reconoce el defecto y a continuación lo compensa con creces."
+        },
+        "incorrect": {
+          "es": "Si le fuera indiferente no contaría el desvío de la rue Pasteur. Fíjate en qué elige contar el narrador."
+        },
+        "strategy": {
+          "es": "Para el tono, no mires los adjetivos: mira qué decide contar el narrador y en qué orden lo pone."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Describe en 4–6 frases en francés un trayecto que hagas a menudo. Usa cuatro adverbios de frecuencia distintos (toujours, souvent, rarement, jamais)."
+    },
+    "minWords": 30,
+    "maxWords": 70,
+    "hints": [
+      "Je prends toujours…",
+      "Le lundi, il y a souvent…",
+      "Je ne… jamais…",
+      "Une fois par mois…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés A1: El autobús de las 7:12 | WeLearn"
+    },
+    "description": {
+      "es": "Lee una crónica breve en francés A1 y practica los adverbios de frecuencia (toujours, jamais, souvent, rarement) y los verbos irregulares. Seis preguntas y vocabulario."
+    },
+    "canonicalPath": "/practica/frances/a1/lectura/le-bus-de-7h12",
+    "indexable": true,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-a1-la-recette-de-mamie-aicha",
+      "fr-a1-une-lettre-de-dakar"
+    ]
+  }
+}

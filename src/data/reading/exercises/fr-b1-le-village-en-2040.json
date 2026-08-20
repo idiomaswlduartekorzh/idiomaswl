@@ -1,0 +1,479 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-b1-le-village-en-2040",
+  "status": "published",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Francés B1"
+  },
+  "slug": "le-village-en-2040",
+  "series": {
+    "id": "frances-b1-lectura-10",
+    "episode": 7,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-b1-ce-que-nous-appelons-l-attention",
+    "nextExerciseId": "fr-b1-apprendre-en-se-trompant"
+  },
+  "classification": {
+    "genre": "informe prospectivo",
+    "topic": "despoblación rural",
+    "intent": "learning",
+    "tags": [
+      "frances b1",
+      "lectura",
+      "futuro simple",
+      "expresiones temporales"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El pueblo en 2040"
+    },
+    "intro": {
+      "es": "Un informe que proyecta el pueblo a quince años vista y encuentra que la partida ya está decidida por lo que pasó hace veinte. Lectura de francés B1."
+    },
+    "mission": {
+      "es": "Distingue lo que el informe da por seguro de lo que presenta como reversible."
+    },
+    "targetText": "D’ici 2040, Saint-Béat comptera environ quatre cent dix habitants, contre six cent quatre-vingts aujourd’hui. Cette projection, publiée le mois dernier, ne dépend d’aucune hypothèse compliquée: elle se déduit de la pyramide des âges actuelle. Les personnes qui auront plus de soixante-quinze ans en 2040 vivent déjà ici. Celles qui auraient dû naître entre 2005 et 2015 ne sont jamais nées. Le rapport est clair sur un point souvent mal compris: dans quinze ans, la population ne baissera pas à cause de nouveaux départs. Elle baissera à cause de départs qui ont eu lieu il y a vingt ans. Depuis la fermeture de la scierie en 2003, le village perd en moyenne neuf habitants par an, et les deux tiers de cette perte sont des jeunes adultes partis avant trente ans. Ces gens-là n’ont pas eu leurs enfants ici. À partir de 2032, l’école ne pourra plus maintenir ses deux classes. Le seuil est fixé à vingt-quatre élèves; le rapport en prévoit dix-neuf. La commune devra alors se regrouper avec Arbas, à onze kilomètres, ce qui allongera le trajet quotidien des plus petits de quarante minutes aller-retour. Jusqu’ici, le rapport décrit ce qui est déjà joué. La deuxième partie, moins citée, décrit ce qui ne l’est pas. Elle constate que dix-sept maisons du centre sont vides depuis plus de cinq ans, dont onze appartiennent à des héritiers qui n’habitent pas la région et qui ne les vendront pas tant que les frais resteront faibles. Elle observe aussi que quatorze foyers se sont installés depuis 2019, presque tous des télétravailleurs, et que douze d’entre eux sont restés. Aucun n’est venu pour le paysage: tous citent le prix au mètre carré et la fibre optique, installée en 2018. Trois d’entre eux ont racheté une maison qui était vide depuis plus de dix ans, et deux ont ouvert une activité qui emploie aujourd’hui quatre personnes. Le rapport ne promet rien. Il note seulement que ces deux chiffres, les maisons vides et les arrivées récentes, sont du même ordre de grandeur, et qu’aucune politique publique n’a jamais essayé de les relier. Sa dernière phrase mérite d’être citée: «Le déclin démographique de Saint-Béat est certain; son inhabitation ne l’est pas.» Autrement dit, le nombre d’habitants baissera quoi qu’il arrive. Le nombre de maisons habitées, lui, dépend encore de décisions qui n’ont pas été prises.",
+    "wordCount": 388,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Usar el futur simple para proyecciones y distinguirlo de lo hipotético."
+      },
+      {
+        "es": "Manejar expresiones temporales: d’ici, dans, depuis, à partir de, jusqu’ici."
+      },
+      {
+        "es": "Separar en un informe lo irreversible de lo que aún depende de decisiones."
+      }
+    ],
+    "grammarFocus": [
+      "futur-simple-b1",
+      "expressions-temporelles-b1",
+      "futur-simple"
+    ],
+    "vocabulary": [
+      {
+        "surface": "pyramide des âges",
+        "lemma": "pyramide des âges",
+        "glosses": {
+          "es": "pirámide de población, reparto por edades"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "scierie",
+        "lemma": "scierie",
+        "glosses": {
+          "es": "aserradero, serrería"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "seuil",
+        "lemma": "seuil",
+        "glosses": {
+          "es": "umbral, mínimo exigido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "se regrouper",
+        "lemma": "se regrouper",
+        "glosses": {
+          "es": "agruparse, fusionarse"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "trajet",
+        "lemma": "trajet",
+        "glosses": {
+          "es": "trayecto, desplazamiento"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "héritiers",
+        "lemma": "héritier",
+        "glosses": {
+          "es": "herederos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "foyers",
+        "lemma": "foyer",
+        "glosses": {
+          "es": "hogares, unidades familiares"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "inhabitation",
+        "lemma": "inhabitation",
+        "glosses": {
+          "es": "despoblamiento de las viviendas, hecho de que queden vacías"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El «regroupement pédagogique intercommunal» —repartir los cursos de varios pueblos entre sus escuelas— es el mecanismo real con el que Francia mantiene abiertas las escuelas rurales pequeñas."
+    },
+    "spanishSpeakerNote": {
+      "es": "Ojo con «d’ici 2040»: significa «de aquí a 2040», es decir, el plazo hasta esa fecha, no «aquí en 2040». Y «depuis» marca desde cuándo dura algo, mientras que «il y a» sitúa un punto en el pasado: «depuis 2003» frente a «il y a vingt ans»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo que desarrolla una idea, cambia de dirección y se cierra; distinguir el hecho de la interpretación; y justificar una inferencia señalando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers",
+      "accord-participe-passe",
+      "cause-consequence",
+      "comparatifs",
+      "conditionnel-present",
+      "connecteurs",
+      "discours-indirect",
+      "dont-relatif",
+      "futur-simple",
+      "gerondif",
+      "imparfait",
+      "negation-avancee",
+      "passe-compose-avoir",
+      "passe-compose-etre",
+      "passe-compose-vs-imparfait",
+      "pronoms-coi",
+      "pronoms-y-en",
+      "si-conditionnel",
+      "subjonctif-present",
+      "superlatifs",
+      "verbes-pronominaux",
+      "accord-participe-passe-b1",
+      "comparatif-superlatif-b1",
+      "conditionnel-present-b1",
+      "connecteurs-logiques-b1",
+      "discours-indirect-b1",
+      "expressions-temporelles-b1",
+      "futur-simple-b1",
+      "gerondif-b1",
+      "hypothese-si-b1",
+      "imperatif-b1",
+      "negation-avancee-b1",
+      "nominalisation-b1",
+      "participe-present-b1",
+      "passe-compose-vs-imparfait-b1",
+      "plus-que-parfait-b1",
+      "pronoms-relatifs-b1",
+      "pronoms-y-en-b1",
+      "questions-indirectes-b1",
+      "subjonctif-present-b1",
+      "voix-passive-b1"
+    ],
+    "disallowedGrammar": [
+      "passé simple",
+      "subjonctif imparfait",
+      "passé antérieur"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 18.5,
+      "maxSentenceWords": 37,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Prosa B1 con plus-que-parfait, voz pasiva y subjuntivo. Sin passé simple. Inferencia moderada: exige cruzar dos pasajes separados."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué distingue el informe en sus dos partes?",
+      "options": [
+        {
+          "id": "reversible",
+          "text": "Lo que ya está decidido de lo que todavía depende de decisiones"
+        },
+        {
+          "id": "culpables",
+          "text": "A los responsables políticos del pasado de los del presente"
+        },
+        {
+          "id": "pueblos",
+          "text": "La situación de Saint-Béat de la de Arbas"
+        }
+      ],
+      "answer": "reversible",
+      "evidence": "Jusqu’ici, le rapport décrit ce qui est déjà joué. La deuxième partie, moins citée, décrit ce qui ne l’est pas.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la frase final lo condensa: el declive es seguro, el vaciado de las casas no."
+        },
+        "incorrect": {
+          "es": "El informe no señala responsables ni compara los dos pueblos. Busca la frase que empieza con «Jusqu’ici»."
+        },
+        "strategy": {
+          "es": "Cuando un texto anuncia que tiene dos partes, la frase de transición te dice el criterio que las separa."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿A partir de qué año no podrá la escuela mantener sus dos clases?",
+      "options": [
+        {
+          "id": "2032",
+          "text": "A partir de 2032"
+        },
+        {
+          "id": "2040",
+          "text": "A partir de 2040"
+        },
+        {
+          "id": "2019",
+          "text": "A partir de 2019"
+        }
+      ],
+      "answer": "2032",
+      "evidence": "À partir de 2032, l’école ne pourra plus maintenir ses deux classes.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. 2040 es el horizonte de la proyección y 2019, cuando empezaron a llegar teletrabajadores."
+        },
+        "incorrect": {
+          "es": "El informe maneja varias fechas y cada una marca un hecho distinto. Busca la que va con «l’école»."
+        },
+        "strategy": {
+          "es": "Con muchas fechas, empareja cada una con su hecho. La expresión «à partir de» señala el inicio de una consecuencia."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El informe habla de un «seuil fixé à vingt-quatre élèves». ¿Qué es un «seuil»?",
+      "options": [
+        {
+          "id": "umbral",
+          "text": "Un umbral, el mínimo por debajo del cual algo deja de mantenerse"
+        },
+        {
+          "id": "aula",
+          "text": "Un aula, una clase física"
+        },
+        {
+          "id": "curso",
+          "text": "Un curso escolar completo"
+        }
+      ],
+      "answer": "umbral",
+      "evidence": "Le seuil est fixé à vingt-quatre élèves; le rapport en prévoit dix-neuf.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y por eso la cifra siguiente importa: diecinueve queda por debajo de veinticuatro."
+        },
+        "incorrect": {
+          "es": "La palabra va con una cifra fijada y se compara con otra menor. Un aula o un curso no se comparan así."
+        },
+        "strategy": {
+          "es": "Si una palabra va seguida de «fixé à» y una cifra, estás ante un límite administrativo. Compáralo con el dato real."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el informe considera relevante que las casas vacías y las llegadas recientes sean cifras parecidas?",
+      "options": [
+        {
+          "id": "conectar",
+          "text": "Porque sugiere que unas podrían resolver a las otras, y nadie lo ha intentado"
+        },
+        {
+          "id": "coincidencia",
+          "text": "Porque demuestra que se trata de una simple coincidencia estadística"
+        },
+        {
+          "id": "precio",
+          "text": "Porque prueba que los precios de la vivienda van a subir"
+        }
+      ],
+      "answer": "conectar",
+      "evidence": "sont du même ordre de grandeur, et qu’aucune politique publique n’a jamais essayé de les relier",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el informe se cuida de no prometer nada: solo señala que la conexión nunca se ha intentado."
+        },
+        "incorrect": {
+          "es": "El texto no habla de precios y no lo presenta como casualidad: al contrario, lamenta que nadie lo haya ligado."
+        },
+        "strategy": {
+          "es": "Cuando un informe pone dos datos juntos y añade que nadie los ha relacionado, te está señalando una vía sin explorar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: según el informe, la caída de población hasta 2040 se deberá sobre todo a marchas que aún no han ocurrido.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "la population ne baissera pas à cause de nouveaux départs. Elle baissera à cause de départs qui ont eu lieu il y a vingt ans.",
+      "feedback": {
+        "correct": {
+          "es": "Falso, y el informe lo llama expresamente un punto mal entendido: la causa está veinte años atrás."
+        },
+        "incorrect": {
+          "es": "El informe dedica dos frases seguidas justo a corregir esa idea. Busca «souvent mal compris»."
+        },
+        "strategy": {
+          "es": "Si un texto avisa de que algo «se entiende mal», lo que viene después contradice la intuición. Léelo con cuidado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué cita el informe que once de las casas vacías pertenecen a herederos de fuera?",
+      "options": [
+        {
+          "id": "obstaculo",
+          "text": "Para explicar por qué esas casas no salen al mercado pese a estar vacías"
+        },
+        {
+          "id": "impuesto",
+          "text": "Para pedir que se suba el impuesto a los no residentes"
+        },
+        {
+          "id": "ruina",
+          "text": "Para advertir de que esas casas están en ruinas"
+        }
+      ],
+      "answer": "obstaculo",
+      "evidence": "qui n’habitent pas la région et qui ne les vendront pas tant que les frais resteront faibles",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Identifica el obstáculo concreto: sin coste de mantener la casa vacía, no hay motivo para venderla."
+        },
+        "incorrect": {
+          "es": "El informe no pide ningún impuesto ni habla del estado de los edificios. Lee la relativa completa."
+        },
+        "strategy": {
+          "es": "Cuando un dato viene con una relativa larga que explica una conducta, esa explicación es la razón de que se cite."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en francés proyectando cómo será tu barrio o pueblo en 2040. Usa cinco verbos en futur simple y tres expresiones temporales distintas (d’ici, à partir de, depuis)."
+    },
+    "minWords": 70,
+    "maxWords": 130,
+    "hints": [
+      "D’ici 2040, … comptera…",
+      "À partir de…, il n’y aura plus…",
+      "Depuis…, le quartier perd…",
+      "Cela dépendra de…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés B1: El pueblo en 2040 | WeLearn"
+    },
+    "description": {
+      "es": "Lee un informe prospectivo en francés B1 y practica el futur simple y las expresiones temporales (d’ici, dans, depuis, à partir de)."
+    },
+    "canonicalPath": "/practica/frances/b1/lectura/le-village-en-2040",
+    "indexable": true,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-b1-ce-que-nous-appelons-l-attention",
+      "fr-b1-apprendre-en-se-trompant"
+    ]
+  }
+}

@@ -47,3 +47,4 @@ comprueban y qué queda pendiente. Léelo antes de tocar ese subsistema, y actua
 | Subsistema | Documento |
 |---|---|
 | Escucha — 480 episodios en 8 idiomas, `/practica/*/escucha` | [`docs/escucha-estado.md`](escucha-estado.md) |
+| PDF descargables — 5 destrezas en 8 idiomas, `src/lib/pdf/` | [`docs/pdf-descargables-estado.md`](pdf-descargables-estado.md) |

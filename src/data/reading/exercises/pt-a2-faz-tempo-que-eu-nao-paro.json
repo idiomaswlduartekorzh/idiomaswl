@@ -1,0 +1,458 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-a2-faz-tempo-que-eu-nao-paro",
+  "status": "published",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Portugués A2"
+  },
+  "slug": "faz-tempo-que-eu-nao-paro",
+  "series": {
+    "id": "portugues-a2-lectura-10",
+    "episode": 10,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-a2-como-usar-o-onibus",
+    "nextExerciseId": null
+  },
+  "classification": {
+    "genre": "columna corta",
+    "topic": "el ritmo de los días",
+    "intent": "learning",
+    "tags": [
+      "portugues a2",
+      "lectura",
+      "há / faz tempo",
+      "verbos reflexivos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Hace tiempo que no paro"
+    },
+    "intro": {
+      "es": "Alguien que se dio cuenta de que llevaba once meses sin un día entero libre, y lo descubrió por el calendario del móvil. Lectura de portugués A2."
+    },
+    "mission": {
+      "es": "Averigua cómo se dio cuenta y qué decidió cambiar."
+    },
+    "targetText": "Faz onze meses que eu não tenho um dia inteiro livre. Eu não me dei conta sozinho. Foi o calendário do celular. Em janeiro eu quis lembrar de uma data e fui olhando para trás, mês a mês. Todos os sábados tinham alguma coisa. Todos. Trabalho, curso, mudança de alguém, aniversário, consulta. Eu não me lembro de ter escolhido isso. Foi acontecendo. Eu me levantava, me arrumava e ia. Há uns cinco anos eu tinha domingos vazios e reclamava do tédio. Agora eu me lembro daquele tédio com uma saudade que eu não sei explicar. O problema não é o trabalho. Eu gosto do que eu faço. O problema é que eu nunca disse não a nada, e nove meses depois cada sábado já estava vendido. Então eu fiz uma coisa muito simples e um pouco ridícula. Eu abri o calendário e marquei quatro sábados do ano que vem. Não escrevi o motivo. Só o meu nome. Quando alguém me convida nesses dias, eu digo que já tenho compromisso. Não é mentira. Faz dois meses que eu faço isso. Já usei dois desses sábados e não fiz nada em nenhum dos dois. Foram os melhores dias do ano. Não porque eu fiz algo especial, mas porque não tive que fazer nada.",
+    "wordCount": 211,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Usar «faz» y «há» para expresar tiempo transcurrido."
+      },
+      {
+        "es": "Conjugar verbos reflexivos: me dei conta, me levantava, me arrumava, me lembro."
+      },
+      {
+        "es": "Distinguir la causa que el autor descarta de la que acepta."
+      }
+    ],
+    "grammarFocus": [
+      "ha-faz-tempo-a2",
+      "verbos-reflexivos-a2",
+      "verbo-ter"
+    ],
+    "vocabulary": [
+      {
+        "surface": "me dei conta",
+        "lemma": "dar-se conta",
+        "glosses": {
+          "es": "me di cuenta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "me arrumava",
+        "lemma": "arrumar-se",
+        "glosses": {
+          "es": "me arreglaba, me preparaba"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tédio",
+        "lemma": "tédio",
+        "glosses": {
+          "es": "aburrimiento"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "saudade",
+        "lemma": "saudade",
+        "glosses": {
+          "es": "añoranza; sentimiento de echar de menos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vendido",
+        "lemma": "vender",
+        "glosses": {
+          "es": "vendido; aquí, comprometido de antemano"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ridícula",
+        "lemma": "ridícula",
+        "glosses": {
+          "es": "absurda, de puro simple"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "compromisso",
+        "lemma": "compromisso",
+        "glosses": {
+          "es": "compromiso, cita previa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "convida",
+        "lemma": "convidar",
+        "glosses": {
+          "es": "invita"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "«Saudade» no tiene equivalente exacto en español: mezcla la nostalgia con el deseo de que algo vuelva. Es una palabra que los brasileños usan a diario, no solo en poesía."
+    },
+    "spanishSpeakerNote": {
+      "es": "«Faz onze meses que…» y «Há uns cinco anos…» significan lo mismo que «hace once meses que» y «hace unos cinco años». La diferencia es de registro: «faz» es más hablado en Brasil, «há» más escrito."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en portugués sobre hechos pasados y planes, distinguir el perfeito del imperfeito, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares",
+      "comparativos-superlativos-a2",
+      "condicional-a2",
+      "conjuncoes-logicas-a2",
+      "diminutivos-aumentativos-a2",
+      "expressoes-com-fazer-a2",
+      "expressoes-tempo-a2",
+      "futuro-do-presente-a2",
+      "gerundio-a2",
+      "ha-faz-tempo-a2",
+      "para-vs-por-a2",
+      "preterito-imperfeito-a2",
+      "preterito-perfeito-irregular-a2",
+      "pronomes-obliquos-a2",
+      "pronomes-relativos-a2",
+      "ser-vs-estar-a2",
+      "subjuntivo-presente-a2",
+      "verbo-ficar-a2",
+      "verbos-modais-a2",
+      "verbos-reflexivos-a2",
+      "voz-passiva-a2"
+    ],
+    "disallowedGrammar": [
+      "mais-que-perfeito composto",
+      "futuro do subjuntivo",
+      "registro literario"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 8.4,
+      "maxSentenceWords": 19,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Pasado narrativo (perfeito e imperfeito) y subjuntivo presente permitidos. Sin mais-que-perfeito compuesto ni futuro de subjuntivo. Inferencia ligera."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta la columna?",
+      "options": [
+        {
+          "id": "reservar",
+          "text": "Que se quedó sin sábados libres y decidió reservarse cuatro por adelantado"
+        },
+        {
+          "id": "trabajo",
+          "text": "Que odia su trabajo y quiere cambiar"
+        },
+        {
+          "id": "agenda",
+          "text": "Que el calendario del móvil funciona mal"
+        }
+      ],
+      "answer": "reservar",
+      "evidence": "Eu abri o calendário e marquei quatro sábados do ano que vem. Não escrevi o motivo. Só o meu nome.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La solución es tan simple que él mismo la llama un poco ridícula."
+        },
+        "incorrect": {
+          "es": "Dice expresamente que le gusta lo que hace, y el calendario funciona: le sirvió para darse cuenta."
+        },
+        "strategy": {
+          "es": "Cuando un texto plantea un problema y describe una acción concreta, esa acción es la solución propuesta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántos sábados se ha reservado?",
+      "options": [
+        {
+          "id": "4",
+          "text": "Cuatro"
+        },
+        {
+          "id": "11",
+          "text": "Once"
+        },
+        {
+          "id": "2",
+          "text": "Dos"
+        }
+      ],
+      "answer": "4",
+      "evidence": "marquei quatro sábados do ano que vem",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Los once son los meses sin día libre y los dos, los sábados que ya usó."
+        },
+        "incorrect": {
+          "es": "El texto tiene tres cifras y cada una cuenta algo distinto. Busca la que va con «sábados do ano que vem»."
+        },
+        "strategy": {
+          "es": "Con varias cifras, empareja cada una con su sustantivo. Aquí: meses, sábados reservados, sábados usados."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El autor dice que recuerda aquel aburrimiento «com uma saudade». ¿Qué es la «saudade»?",
+      "options": [
+        {
+          "id": "anoranza",
+          "text": "La añoranza de algo que se echa de menos"
+        },
+        {
+          "id": "culpa",
+          "text": "El sentimiento de culpa"
+        },
+        {
+          "id": "soledad",
+          "text": "La soledad"
+        }
+      ],
+      "answer": "anoranza",
+      "evidence": "Há uns cinco anos eu tinha domingos vazios e reclamava do tédio. Agora eu me lembro daquele tédio com uma saudade que eu não sei explicar.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y la paradoja está ahí: echa de menos justo aquello de lo que se quejaba."
+        },
+        "incorrect": {
+          "es": "No hay culpa ni soledad: se trata de recordar algo pasado con deseo de que vuelva."
+        },
+        "strategy": {
+          "es": "Si un texto dice que algo «no se sabe explicar», suele ser una palabra sin equivalente. Usa el contexto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice que no es mentira decir que ya tiene un compromiso?",
+      "options": [
+        {
+          "id": "consigo",
+          "text": "Porque el compromiso es consigo mismo, y lo tiene anotado"
+        },
+        {
+          "id": "trabajo",
+          "text": "Porque realmente trabaja esos días"
+        },
+        {
+          "id": "familia",
+          "text": "Porque son compromisos familiares"
+        }
+      ],
+      "answer": "consigo",
+      "evidence": "Não escrevi o motivo. Só o meu nome … eu digo que já tenho compromisso. Não é mentira.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Escribió su propio nombre en el calendario, así que el compromiso existe y es con él."
+        },
+        "incorrect": {
+          "es": "No trabaja esos días —dice que no hizo nada— y no menciona familia. Fíjate en qué escribió en el calendario."
+        },
+        "strategy": {
+          "es": "Si un texto insiste en un detalle pequeño (qué escribió exactamente), ese detalle sostiene el argumento."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el autor dice que el problema es su trabajo.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "O problema não é o trabalho. Eu gosto do que eu faço. O problema é que eu nunca disse não a nada.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: lo descarta expresamente y señala otra cosa, no haber dicho nunca que no."
+        },
+        "incorrect": {
+          "es": "Busca las tres frases seguidas que empiezan con «O problema». Dos de ellas lo aclaran."
+        },
+        "strategy": {
+          "es": "Cuando un texto repite «el problema es», compara las dos versiones. Una descarta y otra afirma."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "¿Qué actitud tiene el autor hacia su propia solución?",
+      "options": [
+        {
+          "id": "ironia",
+          "text": "Ironía afectuosa: la llama simple y un poco ridícula, y funciona"
+        },
+        {
+          "id": "orgullo",
+          "text": "Orgullo: la presenta como un método que todos deberían seguir"
+        },
+        {
+          "id": "duda",
+          "text": "Duda: no sabe si va a servir de algo"
+        }
+      ],
+      "answer": "ironia",
+      "evidence": "Então eu fiz uma coisa muito simples e um pouco ridícula … Foram os melhores dias do ano.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Se ríe de lo elemental del remedio y a la vez reconoce que funcionó."
+        },
+        "incorrect": {
+          "es": "No la presenta como método universal ni duda: ya usó dos sábados y los llama los mejores del año."
+        },
+        "strategy": {
+          "es": "Si alguien califica su idea de ridícula y luego dice que funcionó, el tono es irónico, no dubitativo."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en portugués sobre una costumbre tuya que quieras cambiar. Usa «faz/há + tiempo» tres veces y cuatro verbos reflexivos."
+    },
+    "minWords": 45,
+    "maxWords": 95,
+    "hints": [
+      "Faz… meses que eu não…",
+      "Eu não me dei conta sozinho.",
+      "Eu me levantava e…",
+      "Então eu fiz uma coisa simples."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués A2: Hace tiempo que no paro | WeLearn"
+    },
+    "description": {
+      "es": "Lee una columna en portugués de Brasil A2 y practica las expresiones há / faz tempo y los verbos reflexivos. Con vocabulario y seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/a2/lectura/faz-tempo-que-eu-nao-paro",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-a2-como-usar-o-onibus"
+    ]
+  }
+}

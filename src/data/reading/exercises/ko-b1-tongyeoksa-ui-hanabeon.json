@@ -1,0 +1,493 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-b1-tongyeoksa-ui-hanabeon",
+  "status": "published",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Coreano B1",
+    "topik": 3,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. B1 se sitúa alrededor del TOPIK II nivel 3, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "tongyeoksa-ui-hanabeon",
+  "series": {
+    "id": "coreano-b1-lectura-10",
+    "episode": 6,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-b1-ije-hangugeoro-malhagiro-haesseoyo",
+    "nextExerciseId": "ko-b1-jeokhiji-anheun-gyuchik"
+  },
+  "classification": {
+    "genre": "perfil profesional",
+    "topic": "el oficio de interpretar",
+    "intent": "learning",
+    "tags": [
+      "coreano b1",
+      "lectura",
+      "alternativa 거나",
+      "oportunidad 김에"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La intérprete y la frase que no tradujo"
+    },
+    "intro": {
+      "es": "Una intérprete de veintidós años de oficio y la única vez que decidió no traducir una frase. Lectura de coreano B1 con 거나 y 김에."
+    },
+    "mission": {
+      "es": "Averigua qué decidió no decir, y por qué sigue pensando que hizo bien."
+    },
+    "targetText": "박선영 씨는 스물두 해 동안 통역을 했어요. 한국어와 스페인어예요. 보통 회사 회의나 병원에서 일해요. 가끔 법원에서도 통역해요. 저는 그분을 서울에서 만났어요. 커피를 마시러 간 김에 두 시간 동안 이야기를 들었어요. 그분은 이 일에서 제일 어려운 것이 단어가 아니라고 말했어요. 단어는 찾거나 물어보면 돼요. 어려운 것은 속도예요. 사람들은 말을 하면서 생각을 바꿔요. 문장을 시작하고 중간에 다른 말을 해요. 통역사는 그 두 가지를 다 들어야 해요. 그리고 하나만 말해야 해요. 그분은 예를 하나 들었어요. 회의에서 어떤 사람이 이렇게 말해요. 우리는 그 계약을 할 생각이 없습니다, 아니, 조건에 따라서는 볼 수 있습니다. 통역사는 무엇을 말해야 할까요? 두 번째만 말하면 회의가 계속돼요. 첫 번째만 말하면 회의가 끝나요. 그분은 둘 다 말한다고 했어요. 순서까지 그대로요. 저는 실수한 이야기를 물어봤어요. 그분은 실수 이야기를 하지 않았어요. 대신 다른 이야기를 했어요. 십 년 전에 병원에서 통역을 했어요. 콜롬비아에서 온 환자였어요. 의사가 검사 결과를 설명하고 있었어요. 그때 환자의 남편이 한국어로 아주 심한 말을 했어요. 아내에게 한 말이었어요. 의사는 스페인어를 몰랐고, 아내는 한국어를 몰랐어요. 선영 씨만 두 언어를 알았어요. 그분은 그 문장을 통역하지 않았어요. 대신 의사에게 질문을 하나 했어요. 부인만 따로 만날 수 있나요? 의사는 그렇게 했어요. 그 방에서 아내는 처음으로 혼자 말할 수 있었어요. 저는 그분에게 물었어요. 통역사는 다 통역해야 하지 않나요? 그분은 조금 오래 생각한 다음에 대답했어요. 규칙은 그래요. 하지만 규칙은 그 방에 남편만 있는 경우를 생각하고 만든 게 아니에요. 저는 지금도 그때 제가 맞았다고 생각해요. 다시 그런 일이 생기면 저는 또 그렇게 할 거예요.",
+    "wordCount": 227,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Ofrecer alternativas con 거나: 회의나 병원에서, 찾거나 물어보면."
+      },
+      {
+        "es": "Usar 김에 para aprovechar una ocasión que ya se daba."
+      },
+      {
+        "es": "Distinguir la norma profesional de la decisión concreta de una persona."
+      }
+    ],
+    "grammarFocus": [
+      "alternativa-geona-b1",
+      "oportunidad-gime-b1",
+      "solo-tambien-man-do-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "통역",
+        "lemma": "통역",
+        "reading": "tongyeok",
+        "glosses": {
+          "es": "interpretación oral"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "법원",
+        "lemma": "법원",
+        "reading": "beobwon",
+        "glosses": {
+          "es": "juzgado, tribunal"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "속도",
+        "lemma": "속도",
+        "reading": "sokdo",
+        "glosses": {
+          "es": "velocidad, ritmo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "환자",
+        "lemma": "환자",
+        "reading": "hwanja",
+        "glosses": {
+          "es": "paciente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "검사",
+        "lemma": "검사",
+        "reading": "geomsa",
+        "glosses": {
+          "es": "prueba médica, análisis"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "심한",
+        "lemma": "심하다",
+        "reading": "simhan",
+        "glosses": {
+          "es": "grave, muy fuerte (una palabra)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "따로",
+        "lemma": "따로",
+        "reading": "ttaro",
+        "glosses": {
+          "es": "aparte, por separado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "경우",
+        "lemma": "경우",
+        "reading": "gyeongu",
+        "glosses": {
+          "es": "caso, situación"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La interpretación médica y judicial está regulada y su código deontológico exige fidelidad completa. Los propios colegios profesionales discuten desde hace años qué hacer cuando esa fidelidad pone en riesgo a alguien."
+    },
+    "spanishSpeakerNote": {
+      "es": "거나 une alternativas dentro de una frase: 찾거나 물어보면 돼요, «basta con buscarlo o preguntar». Y 김에 marca que se aprovecha algo ya en marcha: 커피를 마시러 간 김에, «aprovechando que fui a tomar café»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo en coreano que desarrolla una idea y cambia de dirección, distinguir el hecho de la interpretación, y justificar una inferencia cruzando dos pasajes separados."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas",
+      "antes-despues-a2",
+      "capacidad-rl-su-itda-a2",
+      "clausulas-relativas-a2",
+      "condicional-eumyeon-a2",
+      "conector-aseo-a2",
+      "cuanto-eolmana-a2",
+      "discurso-reportado-a2",
+      "durante-neun-dongane-a2",
+      "futuro-rl-geoyeyo-a2",
+      "honorificos-a2",
+      "intencion-ryogo-hada-a2",
+      "negacion-ji-anta-a2",
+      "obligacion-aya-hada-a2",
+      "parecer-neun-geot-gatda-a2",
+      "particulas-recipiente-a2",
+      "progresivo-go-itda-a2",
+      "razon-gittaemune-a2",
+      "razon-niikka-a2",
+      "solo-tambien-man-do-a2",
+      "verbos-irregulares-pasado-a2",
+      "alternativa-geona-b1",
+      "causal-gi-ttaemune-b1",
+      "causativa-shichang-b1",
+      "condicional-erado-eurely-b1",
+      "despues-gona-seo-b1",
+      "estado-mantener-chae-b1",
+      "forzosidad-subakkeneopsda-b1",
+      "futuro-intencion-b1",
+      "ge-doeda-b1",
+      "inmediato-jamaja-b1",
+      "kiro-hada-b1",
+      "obligacion-eoyahada-b1",
+      "observacion-neyo-b1",
+      "oportunidad-gime-b1",
+      "pasiva-jeosudo-b1",
+      "passado-reminiscencia-b1",
+      "posibilidad-su-itda-b1",
+      "proporcion-euttorok-b1",
+      "proposito-dorok-b1",
+      "simultaneo-eumyeonseo-b1"
+    ],
+    "disallowedGrammar": [
+      "registro literario",
+      "hanja sin glosa",
+      "dialecto regional"
+    ],
+    "maxOutOfLevelVocabularyPercent": 7,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 5.3,
+      "maxSentenceWords": 12,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Prosa B1 con 더라/던, 게 되다, 채, 을수록 y pasiva. Sin registro literario ni hanja sin glosar. Inferencia moderada: exige cruzar dos pasajes."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿De qué trata el perfil?",
+      "options": [
+        {
+          "id": "limite",
+          "text": "De una vez en que la intérprete puso el cuidado de una persona por delante de la norma"
+        },
+        {
+          "id": "tecnica",
+          "text": "De las técnicas para traducir vocabulario médico difícil"
+        },
+        {
+          "id": "carrera",
+          "text": "De cómo se hizo intérprete y cuánto cobra"
+        }
+      ],
+      "answer": "limite",
+      "evidence": "그분은 그 문장을 통역하지 않았어요 … 저는 지금도 그때 제가 맞았다고 생각해요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El texto dedica más de la mitad a esa escena del hospital y a cómo la defiende."
+        },
+        "incorrect": {
+          "es": "El vocabulario lo descarta ella misma («단어는 찾거나 물어보면 돼요») y no se habla de dinero."
+        },
+        "strategy": {
+          "es": "Si un perfil dedica la mitad del espacio a una sola escena, esa escena es el asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Según ella, ¿qué es lo más difícil del oficio?",
+      "options": [
+        {
+          "id": "velocidad",
+          "text": "La velocidad, porque la gente cambia de idea mientras habla"
+        },
+        {
+          "id": "vocabulario",
+          "text": "El vocabulario técnico"
+        },
+        {
+          "id": "horario",
+          "text": "Los horarios irregulares"
+        }
+      ],
+      "answer": "velocidad",
+      "evidence": "어려운 것은 속도예요. 사람들은 말을 하면서 생각을 바꿔요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y lo explica: hay que oír las dos versiones y decir solo una."
+        },
+        "incorrect": {
+          "es": "Dice expresamente que el vocabulario no es el problema. Busca 어려운 것은."
+        },
+        "strategy": {
+          "es": "Cuando alguien niega una dificultad y afirma otra, la segunda es la respuesta. Busca la negación primero."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El narrador dice 커피를 마시러 간 김에 두 시간 동안 이야기를 들었어요. ¿Qué aporta 김에?",
+      "options": [
+        {
+          "id": "aprovechar",
+          "text": "Que aprovechó una ocasión que ya existía"
+        },
+        {
+          "id": "obligado",
+          "text": "Que estaba obligado a quedarse dos horas"
+        },
+        {
+          "id": "casualidad",
+          "text": "Que se la encontró por casualidad en la calle"
+        }
+      ],
+      "answer": "aprovechar",
+      "evidence": "커피를 마시러 간 김에 두 시간 동안 이야기를 들었어요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Iba a tomar café, y aprovechando eso se quedó dos horas escuchando."
+        },
+        "incorrect": {
+          "es": "No hay obligación ni casualidad: había quedado para tomar café. 김에 añade el aprovechamiento."
+        },
+        "strategy": {
+          "es": "김에 siempre va detrás de algo ya planeado. Busca cuál era el plan original en la misma frase."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué pidió ver a la paciente a solas?",
+      "options": [
+        {
+          "id": "sola",
+          "text": "Para que pudiera hablar sin su marido delante"
+        },
+        {
+          "id": "idioma",
+          "text": "Para explicarle el diagnóstico más despacio"
+        },
+        {
+          "id": "tiempo",
+          "text": "Porque la consulta se estaba alargando demasiado"
+        }
+      ],
+      "answer": "sola",
+      "evidence": "그 방에서 아내는 처음으로 혼자 말할 수 있었어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La frase lo dice sin explicarlo: fue la primera vez que pudo hablar sola."
+        },
+        "incorrect": {
+          "es": "El texto no menciona el ritmo del diagnóstico ni el tiempo. Busca la frase con 처음으로 혼자."
+        },
+        "strategy": {
+          "es": "Cuando un texto describe el resultado de una decisión, ese resultado suele ser el motivo. Léelo hacia atrás."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la intérprete admite que se equivocó al no traducir esa frase.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "저는 지금도 그때 제가 맞았다고 생각해요. 다시 그런 일이 생기면 저는 또 그렇게 할 거예요.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: dice que sigue pensando que acertó, y que lo repetiría. Reconoce la norma, no el error."
+        },
+        "incorrect": {
+          "es": "Busca sus dos últimas frases. Reconoce que la norma dice otra cosa, pero eso no es admitir un error."
+        },
+        "strategy": {
+          "es": "Distingue reconocer una norma de admitir haberla incumplido mal. Son dos cosas distintas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué dice 규칙은 그 방에 남편만 있는 경우를 생각하고 만든 게 아니에요?",
+      "options": [
+        {
+          "id": "limites",
+          "text": "Para señalar que la norma no previó una situación como esa"
+        },
+        {
+          "id": "abolir",
+          "text": "Para pedir que se elimine el código deontológico"
+        },
+        {
+          "id": "culpar",
+          "text": "Para culpar al médico de no darse cuenta"
+        }
+      ],
+      "answer": "limites",
+      "evidence": "규칙은 그래요. 하지만 규칙은 그 방에 남편만 있는 경우를 생각하고 만든 게 아니에요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Empieza dándole la razón a la norma («규칙은 그래요») y luego señala su punto ciego."
+        },
+        "incorrect": {
+          "es": "No pide abolir nada —empieza reconociendo la norma— ni culpa al médico, que no sabía español."
+        },
+        "strategy": {
+          "es": "Cuando alguien concede una norma y luego añade un «pero», lo que señala es un límite, no un rechazo."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en coreano sobre una vez que tuviste que decidir entre seguir una norma y hacer lo que te parecía correcto. Usa 거나 dos veces y 김에 una vez."
+    },
+    "minWords": 60,
+    "maxWords": 120,
+    "hints": [
+      "저는 … 동안 …을 했어요.",
+      "보통 …나 …에서 일해요.",
+      "…한 김에 …",
+      "저는 지금도 제가 맞았다고 생각해요."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano B1: La intérprete y la frase que no tradujo | WeLearn"
+    },
+    "description": {
+      "es": "Lee un perfil en coreano B1 y practica 거나 para las alternativas y 김에 para aprovechar una ocasión. Con vocabulario romanizado y seis preguntas."
+    },
+    "canonicalPath": "/practica/coreano/b1/lectura/tongyeoksa-ui-hanabeon",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-b1-ije-hangugeoro-malhagiro-haesseoyo",
+      "ko-b1-jeokhiji-anheun-gyuchik"
+    ]
+  }
+}

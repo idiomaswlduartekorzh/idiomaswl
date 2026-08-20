@@ -1,0 +1,468 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-a2-quarante-secondes",
+  "status": "published",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Francés A2"
+  },
+  "slug": "quarante-secondes",
+  "series": {
+    "id": "frances-a2-lectura-10",
+    "episode": 1,
+    "totalEpisodes": 10,
+    "previousExerciseId": null,
+    "nextExerciseId": "fr-a2-les-etes-de-sete"
+  },
+  "classification": {
+    "genre": "crónica de viaje",
+    "topic": "perder un tren",
+    "intent": "learning",
+    "tags": [
+      "frances a2",
+      "lectura",
+      "passé composé",
+      "viajes"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Cuarenta segundos"
+    },
+    "intro": {
+      "es": "Perder un tren por cuarenta segundos y acabar durmiendo en el sofá de un desconocido. Lectura de francés A2 con el passé composé."
+    },
+    "mission": {
+      "es": "Averigua qué historia decide contar el narrador, y cuál se calla."
+    },
+    "targetText": "J’ai raté mon train à Lyon. Pas de deux minutes: de quarante secondes. Je suis arrivé sur le quai au moment exact où les portes se sont fermées, et j’ai vu mon sac partir sans moi, posé bien tranquillement sur le siège 42. L’employé du guichet a été très clair: le prochain train pour Toulouse part demain matin. Il m’a proposé un hôtel à côté de la gare. J’ai regardé le prix et j’ai dit non. Je suis sorti. Il faisait froid. J’ai marché jusqu’au centre de Clermont et là, j’ai trouvé une chose que je ne cherchais pas: une fête de quartier. Des tables au milieu de la rue, des guirlandes, une musique un peu trop forte. Une femme m’a demandé si j’étais perdu. J’ai répondu que oui, techniquement. Elle a ri. Elle m’a servi une assiette et elle est partie danser. J’ai dormi chez son frère, sur un canapé trop court, avec un chat sur les pieds. Le lendemain, j’ai récupéré mon sac à Toulouse. Il était intact. Personne n’a touché à rien. Mais je n’ai jamais raconté à mes amis l’histoire du sac. J’ai raconté l’autre. Depuis, quand je rate un train, j’attends un peu avant de m’énerver.",
+    "wordCount": 201,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguir los verbos que forman el passé composé con avoir de los que lo forman con être."
+      },
+      {
+        "es": "Seguir una secuencia de hechos pasados y situar cada uno en su momento."
+      },
+      {
+        "es": "Reconocer cuándo el narrador deja de contar hechos y pasa a valorar."
+      }
+    ],
+    "grammarFocus": [
+      "passe-compose-avoir",
+      "passe-compose-etre",
+      "present-verbes-er"
+    ],
+    "vocabulary": [
+      {
+        "surface": "raté",
+        "lemma": "rater",
+        "glosses": {
+          "es": "perdido (un tren), fallado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "quai",
+        "lemma": "quai",
+        "glosses": {
+          "es": "andén"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "guichet",
+        "lemma": "guichet",
+        "glosses": {
+          "es": "taquilla, ventanilla"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "guirlandes",
+        "lemma": "guirlande",
+        "glosses": {
+          "es": "guirnaldas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "canapé",
+        "lemma": "canapé",
+        "glosses": {
+          "es": "sofá"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "lendemain",
+        "lemma": "lendemain",
+        "glosses": {
+          "es": "el día siguiente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "intact",
+        "lemma": "intact",
+        "glosses": {
+          "es": "intacto, sin tocar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "m’énerver",
+        "lemma": "s’énerver",
+        "glosses": {
+          "es": "ponerme nervioso, alterarme"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Las «fêtes de quartier» son fiestas de calle organizadas por los vecinos, muy comunes en verano en las ciudades francesas medianas. Se monta la mesa en plena calzada."
+    },
+    "spanishSpeakerNote": {
+      "es": "El passé composé elige entre avoir y être. Con être van los verbos de movimiento y de cambio de estado (arriver, partir, sortir, rester) y todos los pronominales, y el participio concuerda: «elle est partie», con -e."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo sobre hechos pasados y planes futuros, distinguir quién dice qué, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers",
+      "accord-participe-passe",
+      "cause-consequence",
+      "comparatifs",
+      "conditionnel-present",
+      "connecteurs",
+      "discours-indirect",
+      "dont-relatif",
+      "futur-simple",
+      "gerondif",
+      "imparfait",
+      "negation-avancee",
+      "passe-compose-avoir",
+      "passe-compose-etre",
+      "passe-compose-vs-imparfait",
+      "pronoms-coi",
+      "pronoms-y-en",
+      "si-conditionnel",
+      "subjonctif-present",
+      "superlatifs",
+      "verbes-pronominaux"
+    ],
+    "disallowedGrammar": [
+      "plus-que-parfait",
+      "voix passive",
+      "participe présent",
+      "futur antérieur"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 9.6,
+      "maxSentenceWords": 30,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Pasado narrativo (passé composé e imparfait) permitido. Sin plus-que-parfait ni voz pasiva. Inferencia ligera: unir dos datos separados por varios párrafos."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué acaba contando este texto en realidad?",
+      "options": [
+        {
+          "id": "noche",
+          "text": "Que perder el tren le regaló una noche que no habría vivido"
+        },
+        {
+          "id": "robo",
+          "text": "Que le robaron el equipaje al perder el tren"
+        },
+        {
+          "id": "reclamacion",
+          "text": "Que la compañía de tren le indemnizó por el retraso"
+        }
+      ],
+      "answer": "noche",
+      "evidence": "je n’ai jamais raconté à mes amis l’histoire du sac. J’ai raconté l’autre.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Y lo dice sin decirlo: de las dos historias posibles, elige contar la de la fiesta."
+        },
+        "incorrect": {
+          "es": "Nadie roba nada —el texto dice que la bolsa estaba intacta— y no hay ninguna reclamación. Lee las tres últimas frases."
+        },
+        "strategy": {
+          "es": "Cuando un narrador dice qué historia cuenta y cuál se calla, esa frase es la tesis del texto. Búscala."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Por qué rechaza el hotel que le ofrece el empleado?",
+      "options": [
+        {
+          "id": "precio",
+          "text": "Por el precio"
+        },
+        {
+          "id": "lejos",
+          "text": "Porque estaba demasiado lejos de la estación"
+        },
+        {
+          "id": "lleno",
+          "text": "Porque estaba completo"
+        }
+      ],
+      "answer": "precio",
+      "evidence": "Il m’a proposé un hôtel à côté de la gare. J’ai regardé le prix et j’ai dit non.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el texto lo cuenta en dos gestos seguidos: mirar el precio, decir que no."
+        },
+        "incorrect": {
+          "es": "El hotel estaba «à côté de la gare», es decir, al lado. Busca qué mira antes de decir que no."
+        },
+        "strategy": {
+          "es": "A veces la razón no se explica: se muestra con una acción. Fíjate en qué hace el personaje justo antes de decidir."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto empieza con «J’ai raté mon train». ¿Qué significa «rater» aquí?",
+      "options": [
+        {
+          "id": "perder",
+          "text": "Perderlo, no llegar a tiempo"
+        },
+        {
+          "id": "odiar",
+          "text": "Detestarlo"
+        },
+        {
+          "id": "reservar",
+          "text": "Reservarlo con antelación"
+        }
+      ],
+      "answer": "perder",
+      "evidence": "Je suis arrivé sur le quai au moment exact où les portes se sont fermées",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. La frase siguiente lo demuestra: llega justo cuando las puertas se cierran."
+        },
+        "incorrect": {
+          "es": "No hace falta el diccionario: la frase siguiente cuenta exactamente lo que pasó en el andén."
+        },
+        "strategy": {
+          "es": "Un verbo desconocido al principio de un texto casi siempre se explica en la escena que viene después."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Qué ha cambiado en el narrador después de aquella noche?",
+      "options": [
+        {
+          "id": "paciencia",
+          "text": "Se toma los contratiempos con más calma"
+        },
+        {
+          "id": "puntual",
+          "text": "Llega mucho antes a las estaciones"
+        },
+        {
+          "id": "viaja",
+          "text": "Ha dejado de viajar en tren"
+        }
+      ],
+      "answer": "paciencia",
+      "evidence": "Depuis, quand je rate un train, j’attends un peu avant de m’énerver.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Sigue perdiendo trenes —lo dice en presente— pero ya no reacciona igual."
+        },
+        "incorrect": {
+          "es": "La última frase empieza con «Depuis», desde entonces. Ahí está lo que cambió, y no es su puntualidad."
+        },
+        "strategy": {
+          "es": "Palabras como «depuis» o «maintenant» al final de un relato anuncian la consecuencia. Es donde el autor cierra."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el narrador recuperó su bolsa al día siguiente y no le faltaba nada.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Le lendemain, j’ai récupéré mon sac à Toulouse. Il était intact.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero. Y es justo por eso que la historia de la bolsa no tiene interés: no pasó nada con ella."
+        },
+        "incorrect": {
+          "es": "Busca «le lendemain» y lee las dos frases siguientes. Ahí está el destino de la bolsa."
+        },
+        "strategy": {
+          "es": "Comprueba las dos mitades de la afirmación: si la recuperó, y en qué estado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena los hechos de la noche.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Llega al andén y ve el tren marcharse"
+        },
+        {
+          "id": "p2",
+          "text": "Rechaza el hotel y sale de la estación"
+        },
+        {
+          "id": "p3",
+          "text": "Encuentra una fiesta de barrio en el centro"
+        },
+        {
+          "id": "p4",
+          "text": "Duerme en el sofá del hermano de una desconocida"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Je suis arrivé sur le quai … J’ai dit non. Je suis sorti … j’ai trouvé une fête de quartier … J’ai dormi chez son frère",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El relato va encadenando verbos en passé composé, y cada uno empuja al siguiente."
+        },
+        "incorrect": {
+          "es": "Guíate por los verbos de movimiento: arriver, sortir, marcher, dormir. Ellos marcan el recorrido de la noche."
+        },
+        "strategy": {
+          "es": "En un relato de una noche, los verbos de desplazamiento son el esqueleto. Localízalos y el orden aparece."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Cuenta en 6–8 frases en francés una vez que algo te salió mal y acabó bien. Usa el passé composé al menos cinco veces, con avoir y con être."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "J’ai raté…",
+      "Je suis arrivé(e)…",
+      "Il / Elle m’a proposé…",
+      "Depuis, quand…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés A2: Cuarenta segundos | WeLearn"
+    },
+    "description": {
+      "es": "Lee una crónica de viaje en francés A2 y practica el passé composé con avoir y con être. Vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/frances/a2/lectura/quarante-secondes",
+    "indexable": true,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-a2-les-etes-de-sete"
+    ]
+  }
+}

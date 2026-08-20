@@ -1,0 +1,471 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-a2-esli-by-ya-nachala-ranshe",
+  "status": "published",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Ruso A2"
+  },
+  "slug": "esli-by-ya-nachala-ranshe",
+  "series": {
+    "id": "ruso-a2-lectura-10",
+    "episode": 7,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-a2-chelovek-kotoryy-chinit-chasy",
+    "nextExerciseId": "ru-a2-skolko-lyudey-prikhodit"
+  },
+  "classification": {
+    "genre": "confesión",
+    "topic": "aprender a nadar a los cincuenta y uno",
+    "intent": "learning",
+    "tags": [
+      "ruso a2",
+      "lectura",
+      "condicional con бы",
+      "verbos reflexivos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Si hubiera empezado antes"
+    },
+    "intro": {
+      "es": "Treinta años de miedo al agua, cuatro meses de clases, y una primera sesión entera sentada en el borde. Lectura de ruso A2."
+    },
+    "mission": {
+      "es": "Averigua qué le faltaba en realidad, si no era valentía."
+    },
+    "targetText": "Я научилась плавать в пятьдесят один год.\n\nДо этого я боялась воды тридцать лет. Не глубокой воды — любой. В детстве я упала в реку под Тверью, и меня вытащил сосед. Я не помню этого. Я помню только то, что мне рассказывали.\n\nЕсли бы я начала в двадцать лет, было бы легче. Тело моложе, и стыда меньше. Но в двадцать я не могла даже подойти к бассейну.\n\nВ сорок девять я записалась в группу и не пришла. В пятьдесят я записалась снова и пришла один раз.\n\nВ пятьдесят один я нашла тренера, которая работает только со взрослыми, которые боятся. Она называет нас «мои взрослые». Нас было шесть человек: пять женщин и один мужчина, все от сорока до семидесяти.\n\nПервое занятие мы не входили в воду. Мы сидели на краю бассейна и опускали ноги. Сорок минут. Я заплатила деньги, чтобы сидеть на краю, и это было правильно.\n\nЧерез четыре месяца я проплыла двадцать пять метров.\n\nЕсли бы мне сказали в двадцать лет, что это займёт тридцать лет и четыре месяца, я бы не поверила. Тридцать лет — это страх. Четыре месяца — это работа. Я всё время думала, что мне нужно больше смелости. Мне нужен был только правильный тренер.",
+    "wordCount": 195,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Construir el condicional con бы: если бы я начала, было бы легче."
+      },
+      {
+        "es": "Conjugar verbos reflexivos en pasado: научилась, боялась, записалась."
+      },
+      {
+        "es": "Separar el tiempo de miedo del tiempo de trabajo real."
+      }
+    ],
+    "grammarFocus": [
+      "condicional",
+      "pronombres-reflexivos",
+      "pronombres-personales"
+    ],
+    "vocabulary": [
+      {
+        "surface": "плавать",
+        "lemma": "плавать",
+        "glosses": {
+          "es": "nadar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "боялась",
+        "lemma": "бояться",
+        "glosses": {
+          "es": "tenía miedo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "вытащил",
+        "lemma": "вытащить",
+        "glosses": {
+          "es": "sacó (del agua)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "стыда",
+        "lemma": "стыд",
+        "glosses": {
+          "es": "vergüenza"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "бассейна",
+        "lemma": "бассейн",
+        "glosses": {
+          "es": "piscina"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "краю",
+        "lemma": "край",
+        "glosses": {
+          "es": "borde"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "проплыла",
+        "lemma": "проплыть",
+        "glosses": {
+          "es": "nadé (una distancia)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "смелости",
+        "lemma": "смелость",
+        "glosses": {
+          "es": "valentía"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En Rusia hay clases de natación específicas para adultos con miedo al agua, a menudo llamadas «para los que no flotan». Empezar sin entrar en el agua es un método reconocido."
+    },
+    "spanishSpeakerNote": {
+      "es": "El condicional ruso es más simple que el español: una sola partícula, бы, con el verbo en pasado. «Если бы я начала…, было бы легче» sirve para hipótesis presentes y pasadas. No hay que elegir tiempo."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato en ruso sobre hechos pasados, distinguir el aspecto imperfectivo del perfectivo, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento",
+      "acusativo-movimiento",
+      "adverbios-tiempo",
+      "aspecto-verbal",
+      "comparativos",
+      "condicional",
+      "dativo-uso",
+      "futuro-imperfectivo",
+      "futuro-perfectivo",
+      "genitivo-cantidad",
+      "imperativo",
+      "instrumental-uso",
+      "oraciones-subordinadas",
+      "pasado-verbos",
+      "plurales-irregulares",
+      "prepositivo-avanzado",
+      "pronombres-reflexivos",
+      "pronombres-relativos",
+      "superlativos",
+      "verbos-movimiento",
+      "verbos-prefijados"
+    ],
+    "disallowedGrammar": [
+      "participios (причастия)",
+      "gerundios (деепричастия)",
+      "discurso indirecto complejo",
+      "voz pasiva con -ся literaria"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 8.1,
+      "maxSentenceWords": 19,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Pasado y futuro con los dos aspectos, instrumental, condicional con бы, verbos prefijados de movimiento. Sin participios ni gerundios. Acento sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es la conclusión de la narradora?",
+      "options": [
+        {
+          "id": "tren",
+          "text": "Que no le faltaba valentía: le faltaba la profesora adecuada"
+        },
+        {
+          "id": "edad",
+          "text": "Que a los cincuenta ya es tarde para aprender"
+        },
+        {
+          "id": "rio",
+          "text": "Que el accidente del río le arruinó la vida"
+        }
+      ],
+      "answer": "tren",
+      "evidence": "Я всё время думала, что мне нужно больше смелости. Мне нужен был только правильный тренер.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y son las dos últimas frases: una corrige a la otra."
+        },
+        "incorrect": {
+          "es": "Aprendió a los cincuenta y uno, así que no es tarde, y el río es el origen, no la conclusión."
+        },
+        "strategy": {
+          "es": "Si las dos últimas frases se contradicen, la segunda es la conclusión."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué hicieron en la primera clase?",
+      "options": [
+        {
+          "id": "borde",
+          "text": "Se sentaron en el borde y metieron los pies, cuarenta minutos"
+        },
+        {
+          "id": "nadar",
+          "text": "Nadaron veinticinco metros"
+        },
+        {
+          "id": "teoria",
+          "text": "Dieron una clase teórica"
+        }
+      ],
+      "answer": "borde",
+      "evidence": "Первое занятие мы не входили в воду. Мы сидели на краю бассейна и опускали ноги. Сорок минут.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y ella dice que pagar por eso estuvo bien."
+        },
+        "incorrect": {
+          "es": "Los veinticinco metros llegan cuatro meses después. Busca la primera clase."
+        },
+        "strategy": {
+          "es": "Los ordinales («первое занятие») te llevan al momento exacto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Dice que a los veinte habría habido menos «стыда». ¿Qué significa?",
+      "options": [
+        {
+          "id": "verguenza",
+          "text": "Vergüenza"
+        },
+        {
+          "id": "tiempo",
+          "text": "Tiempo libre"
+        },
+        {
+          "id": "dinero",
+          "text": "Dinero"
+        }
+      ],
+      "answer": "verguenza",
+      "evidence": "Если бы я начала в двадцать лет, было бы легче. Тело моложе, и стыда меньше.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y va emparejado con el cuerpo más joven: dos razones, una física y una social."
+        },
+        "incorrect": {
+          "es": "La frase compara dos ventajas de tener veinte años, y una es el cuerpo. La otra no es material."
+        },
+        "strategy": {
+          "es": "Si dos cosas van emparejadas en una comparación, suelen ser de tipos distintos: cuerpo y ánimo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué separa «treinta años» de «cuatro meses»?",
+      "options": [
+        {
+          "id": "dos",
+          "text": "Porque los treinta años fueron miedo y los cuatro meses, aprendizaje real"
+        },
+        {
+          "id": "edad",
+          "text": "Porque quiere decir que empezó demasiado tarde"
+        },
+        {
+          "id": "lento",
+          "text": "Porque aprende más despacio que los jóvenes"
+        }
+      ],
+      "answer": "dos",
+      "evidence": "Тридцать лет — это страх. Четыре месяца — это работа.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo dice con dos frases cortas y paralelas."
+        },
+        "incorrect": {
+          "es": "No se lamenta de la edad ni se compara con nadie. Lee las dos frases con guion."
+        },
+        "strategy": {
+          "es": "Dos frases con la misma estructura y distinto contenido están contraponiendo dos cosas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: a los cuarenta y nueve se apuntó a un grupo y no llegó a ir.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "В сорок девять я записалась в группу и не пришла. В пятьдесят я записалась снова и пришла один раз.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y al año siguiente fue una sola vez."
+        },
+        "incorrect": {
+          "es": "Busca las dos frases con las edades cuarenta y nueve y cincuenta."
+        },
+        "strategy": {
+          "es": "Cuando el texto enumera intentos por edades, léelos en orden antes de responder."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la historia.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "La caída en el río de niña, que no recuerda"
+        },
+        {
+          "id": "p2",
+          "text": "Dos intentos fallidos a los cuarenta y nueve y a los cincuenta"
+        },
+        {
+          "id": "p3",
+          "text": "El grupo de adultos y la primera clase en el borde"
+        },
+        {
+          "id": "p4",
+          "text": "Veinticinco metros a los cuatro meses"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "В детстве я упала в реку под Тверью … В сорок девять я записалась в группу и не пришла … Первое занятие мы не входили в воду … Через четыре месяца я проплыла двадцать пять метров.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: origen, intentos, método y resultado."
+        },
+        "incorrect": {
+          "es": "Guíate por «В детстве», «В сорок девять», «Первое занятие» y «Через четыре месяца»."
+        },
+        "strategy": {
+          "es": "Las edades y los plazos ordenan una confesión sin necesidad de interpretar."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en ruso sobre algo que aprendiste tarde o que aún no has aprendido. Usa tres condicionales con бы y cuatro verbos reflexivos."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "Я научилась плавать в пятьдесят один год.",
+      "Если бы я начала раньше, было бы легче.",
+      "Я записалась и не пришла.",
+      "Мне нужен был правильный тренер."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso A2: si hubiera empezado antes | WeLearn"
+    },
+    "description": {
+      "es": "Lee una confesión en ruso A2 y practica el condicional con бы y los verbos reflexivos. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/a2/lectura/esli-by-ya-nachala-ranshe",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-a2-chelovek-kotoryy-chinit-chasy",
+      "ru-a2-skolko-lyudey-prikhodit"
+    ]
+  }
+}

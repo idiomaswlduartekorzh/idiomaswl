@@ -1,0 +1,468 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-a2-ero-arrivato-due-ore-prima",
+  "status": "published",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Italiano A2"
+  },
+  "slug": "ero-arrivato-due-ore-prima",
+  "series": {
+    "id": "italiano-a2-lectura-10",
+    "episode": 10,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-a2-se-piove-non-si-gioca",
+    "nextExerciseId": null
+  },
+  "classification": {
+    "genre": "anécdota de trabajo",
+    "topic": "una entrevista y un error de cálculo",
+    "intent": "learning",
+    "tags": [
+      "italiano a2",
+      "lectura",
+      "trapassato prossimo",
+      "da + presente"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Había llegado dos horas antes"
+    },
+    "intro": {
+      "es": "Había apuntado las nueve. La entrevista era a las once. Se sentó en un bar con la cartera sobre las rodillas. Lectura de italiano A2."
+    },
+    "mission": {
+      "es": "Averigua quién era el señor de la chaqueta en la mano."
+    },
+    "targetText": "Sono arrivato due ore prima del colloquio di lavoro. Non un quarto d'ora: due ore.\n\nIl motivo è che avevo calcolato male. Avevo guardato l'orario del treno sul sito la settimana prima e avevo scritto le nove sul telefono. Il colloquio era alle undici. Quando sono arrivato in via Boccaccio, il portone era chiuso e le luci spente.\n\nStudio ingegneria da cinque anni e cerco lavoro da otto mesi. Avevo già fatto sei colloqui e non ne avevo passato nessuno. Quel giorno avevo deciso di non sbagliare niente, e ho sbagliato l'ora.\n\nSono andato in un bar davanti al portone. Ho ordinato un caffè e mi sono seduto con la cartella sulle gambe, come un bambino il primo giorno di scuola.\n\nAlle nove e quaranta è entrato un signore con la giacca in mano. Ha ordinato un caffè, mi ha guardato e mi ha chiesto: colloquio da Ferrari e Associati? Ho detto sì. Lui ha detto: anch'io. Ma io lavoro là da dodici anni, e oggi tocca a me fare le domande.\n\nAbbiamo parlato un'ora e dieci minuti di tutto tranne che di lavoro: di treni, di ingegneria, di suo figlio che studia a Bologna.\n\nAlle undici siamo entrati insieme. Il colloquio ufficiale è durato dodici minuti.\n\nLavoro in quello studio da tre anni. Il mio capo racconta ancora oggi che mi ha assunto in un bar, e che io ero già arrivato prima di arrivare.",
+    "wordCount": 236,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Formar el trapassato prossimo para lo anterior a otro pasado: avevo calcolato, ero arrivato."
+      },
+      {
+        "es": "Usar «da + presente» para lo que sigue durando: studio da cinque anni."
+      },
+      {
+        "es": "Distinguir la entrevista oficial de la que decidió de verdad."
+      }
+    ],
+    "grammarFocus": [
+      "trapassato-prossimo-a2",
+      "da-presente-a2",
+      "preposizioni-semplici"
+    ],
+    "vocabulary": [
+      {
+        "surface": "colloquio",
+        "lemma": "colloquio",
+        "glosses": {
+          "es": "entrevista de trabajo. ¡No es un «coloquio»!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "spente",
+        "lemma": "spento",
+        "glosses": {
+          "es": "apagadas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cartella",
+        "lemma": "cartella",
+        "glosses": {
+          "es": "cartera, carpeta de documentos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "giacca",
+        "lemma": "giacca",
+        "glosses": {
+          "es": "chaqueta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tocca",
+        "lemma": "toccare",
+        "glosses": {
+          "es": "corresponde; «tocca a me» es me toca a mí"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tranne",
+        "lemma": "tranne",
+        "glosses": {
+          "es": "excepto, salvo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "assunto",
+        "lemma": "assumere",
+        "glosses": {
+          "es": "contratado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gambe",
+        "lemma": "gamba",
+        "glosses": {
+          "es": "piernas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En Italia el «colloquio di lavoro» de un estudio de ingeniería suele ser corto y muy formal. Lo que decide, según muchos entrevistadores, es la conversación de antes o la de después."
+    },
+    "spanishSpeakerNote": {
+      "es": "Dos cosas: «colloquio» es una entrevista de trabajo, no un coloquio; y «da + presente» expresa lo que sigue durando —«studio da cinque anni» es «estudio desde hace cinco años», nunca «he estudiado»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato en italiano sobre hechos pasados, distinguir el passato prossimo del imperfetto, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere",
+      "avverbi-frequenza-modo-a2",
+      "ci-vuole-vogliono-a2",
+      "comparativi-a2",
+      "condizionale-presente-a2",
+      "congiunzioni-logiche-a2",
+      "da-presente-a2",
+      "forma-cortesia-a2",
+      "futuro-probabilita-a2",
+      "futuro-semplice-a2",
+      "imperfetto-a2",
+      "passato-prossimo-avere-a2",
+      "passato-prossimo-essere-a2",
+      "periodo-ipotetico-reale-a2",
+      "piacere-verbi-simili-a2",
+      "pronomi-diretti-a2",
+      "pronomi-indiretti-a2",
+      "pronomi-relativi-a2",
+      "stare-per-a2",
+      "trapassato-prossimo-a2",
+      "verbi-riflessivi-a2"
+    ],
+    "disallowedGrammar": [
+      "congiuntivo",
+      "passato remoto",
+      "periodo ipotetico irreale",
+      "forma passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 11.2,
+      "maxSentenceWords": 23,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Passato prossimo con avere y essere, imperfetto, futuro, condizionale y forma di cortesia. Sin congiuntivo ni passato remoto."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta la anécdota?",
+      "options": [
+        {
+          "id": "antes",
+          "text": "Que el error de dos horas le dio la conversación que le consiguió el trabajo"
+        },
+        {
+          "id": "puntual",
+          "text": "Que conviene llegar siempre dos horas antes a una entrevista"
+        },
+        {
+          "id": "suerte",
+          "text": "Que consiguió el puesto porque nadie más se presentó"
+        }
+      ],
+      "answer": "antes",
+      "evidence": "Abbiamo parlato un'ora e dieci minuti di tutto tranne che di lavoro … mi ha assunto in un bar.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y su jefe lo cuenta así todavía hoy."
+        },
+        "incorrect": {
+          "es": "El texto no da consejos ni menciona otros candidatos. Fíjate en qué dice su jefe."
+        },
+        "strategy": {
+          "es": "Si un personaje resume la historia al final, ese resumen es la idea del texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto duró la entrevista oficial?",
+      "options": [
+        {
+          "id": "doce",
+          "text": "Doce minutos"
+        },
+        {
+          "id": "hora",
+          "text": "Una hora y diez minutos"
+        },
+        {
+          "id": "dos",
+          "text": "Dos horas"
+        }
+      ],
+      "answer": "doce",
+      "evidence": "Alle undici siamo entrati insieme. Il colloquio ufficiale è durato dodici minuti.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y la conversación del bar duró seis veces más."
+        },
+        "incorrect": {
+          "es": "La hora y diez es la charla del bar, y las dos horas son su adelanto. Busca «colloquio ufficiale»."
+        },
+        "strategy": {
+          "es": "Cuando un texto contrapone dos duraciones, la palabra «ufficiale» te dice cuál es cuál."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué es un «colloquio di lavoro»?",
+      "options": [
+        {
+          "id": "entrevista",
+          "text": "Una entrevista de trabajo"
+        },
+        {
+          "id": "coloquio",
+          "text": "Una charla académica"
+        },
+        {
+          "id": "contrato",
+          "text": "La firma de un contrato"
+        }
+      ],
+      "answer": "entrevista",
+      "evidence": "Sono arrivato due ore prima del colloquio di lavoro … oggi tocca a me fare le domande.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y el señor del bar confirma que él es quien va a preguntar."
+        },
+        "incorrect": {
+          "es": "Se parece a «coloquio», pero aquí alguien hace preguntas para contratar. No es académico ni es una firma."
+        },
+        "strategy": {
+          "es": "Si alguien dice «hoy me toca hacer las preguntas», estás ante una entrevista."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Qué quiere decir el jefe con «era già arrivato prima di arrivare»?",
+      "options": [
+        {
+          "id": "ganado",
+          "text": "Que la entrevista ya estaba ganada antes de empezar la oficial"
+        },
+        {
+          "id": "puntual",
+          "text": "Que fue el candidato más puntual de todos"
+        },
+        {
+          "id": "tren",
+          "text": "Que su tren llegó antes de lo previsto"
+        }
+      ],
+      "answer": "ganado",
+      "evidence": "mi ha assunto in un bar, e che io ero già arrivato prima di arrivare",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y va unido a la primera mitad de la frase: lo contrató en un bar."
+        },
+        "incorrect": {
+          "es": "No compara candidatos ni habla del tren en esa frase. Lee la frase entera, con las dos mitades."
+        },
+        "strategy": {
+          "es": "Un juego de palabras al final se entiende mirando con qué va unido en la misma frase."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: antes de este día ya había hecho seis entrevistas sin aprobar ninguna.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Avevo già fatto sei colloqui e non ne avevo passato nessuno.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y por eso ese día había decidido no equivocarse en nada."
+        },
+        "incorrect": {
+          "es": "Busca la frase con «Avevo già fatto». Está en el párrafo de los cinco años de carrera."
+        },
+        "strategy": {
+          "es": "El trapassato («avevo fatto») señala lo que ya había pasado antes del día que se cuenta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena los hechos.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Se equivoca al apuntar la hora y llega a las nueve"
+        },
+        {
+          "id": "p2",
+          "text": "Encuentra el portal cerrado y entra en un bar"
+        },
+        {
+          "id": "p3",
+          "text": "A las 9:40 entra el señor de la chaqueta"
+        },
+        {
+          "id": "p4",
+          "text": "A las once entran juntos y la entrevista dura doce minutos"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "avevo scritto le nove sul telefono … il portone era chiuso e le luci spente … Alle nove e quaranta è entrato un signore … Alle undici siamo entrati insieme.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: el error, la espera, el encuentro y la entrevista."
+        },
+        "incorrect": {
+          "es": "Guíate por las horas: las nueve, las 9:40 y las once."
+        },
+        "strategy": {
+          "es": "Si el texto da horas exactas, ordénalas y tendrás la secuencia."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en italiano sobre un error de cálculo tuyo que acabó bien. Usa cuatro verbos en trapassato prossimo y tres veces «da + presente»."
+    },
+    "minWords": 60,
+    "maxWords": 110,
+    "hints": [
+      "Avevo calcolato male.",
+      "Avevo scritto le nove sul telefono.",
+      "Studio ingegneria da cinque anni.",
+      "Lavoro là da tre anni."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano A2: había llegado dos horas antes | WeLearn"
+    },
+    "description": {
+      "es": "Lee una anécdota en italiano A2 y practica el trapassato prossimo y «da + presente». Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/italiano/a2/lectura/ero-arrivato-due-ore-prima",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-a2-se-piove-non-si-gioca"
+    ]
+  }
+}

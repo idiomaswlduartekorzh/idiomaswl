@@ -1,0 +1,475 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-b1-quando-avrai-letto-questa-lettera",
+  "status": "published",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Italiano B1"
+  },
+  "slug": "quando-avrai-letto-questa-lettera",
+  "series": {
+    "id": "italiano-b1-lectura-10",
+    "episode": 3,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-b1-sei-contro-sei",
+    "nextExerciseId": "it-b1-la-farmacia-che-apre-di-notte"
+  },
+  "classification": {
+    "genre": "carta de relevo",
+    "topic": "la secretaría de un instituto",
+    "intent": "learning",
+    "tags": [
+      "italiano b1",
+      "lectura",
+      "futuro anteriore",
+      "trapassato prossimo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Cuando hayas leído esta carta"
+    },
+    "intro": {
+      "es": "Veintiocho años en la secretaría de un instituto y dos versiones de las instrucciones: la oficial, en la carpeta azul, y esta. Lectura de italiano B1."
+    },
+    "mission": {
+      "es": "Averigua qué hay en el cajón de abajo a la derecha y por qué no está en el inventario."
+    },
+    "targetText": "Cara collega, o caro collega,\n\nquando avrai letto questa lettera io sarò già andata via. Lascio la segreteria della scuola media Falcone dopo ventotto anni. Il preside mi ha chiesto di scrivere le istruzioni per chi viene dopo. Ne ho scritte due versioni: quella ufficiale, che troverai nel raccoglitore blu, e questa.\n\nCominciamo dalle cose che il raccoglitore non dice.\n\nLa fotocopiatrice del primo piano si blocca se metti più di quaranta fogli. Non è rotta. Nel 2014 avevano già mandato un tecnico tre volte, e ogni volta lui aveva scritto sul foglio di intervento «nessun difetto riscontrato». Mettine trenta e non avrai problemi per il resto della tua carriera.\n\nLa professoressa Riva chiede sempre le stesse aule e le chiede in ritardo. Quando avrà capito che tu non cedi, smetterà. A me ci sono voluti due anni.\n\nI genitori telefonano tra le otto e le nove. Se rispondi dopo il terzo squillo, pensano che la segreteria sia sempre occupata. Se rispondi al primo, pensano che qui non ci sia niente da fare. Rispondi al secondo. So come suona, e funziona comunque.\n\nLa cosa più importante non è amministrativa. In questa scuola ci sono quattrocento ragazzi, e tu sarai la prima persona che vedono quando entrano e l'ultima quando escono. Molti passeranno davanti a te duemila volte in tre anni. Alcuni non parleranno con nessun altro adulto in tutta la mattina.\n\nNel 2011 un ragazzo di seconda si è fermato al mio bancone ventitré giorni di fila senza chiedere niente. Diceva solo buongiorno. Al ventiquattresimo giorno ha detto un'altra cosa, e quella cosa ha cambiato il suo anno, e forse più di un anno. Non la scrivo qui: quando avrai fatto il primo mese, capirai perché.\n\nLavoro in questa scuola da ventotto anni e ho imparato una cosa sola che valga la pena scrivere: questo lavoro non è mettere timbri. Se qualcuno ti dice che è mettere timbri, quella persona non ha mai guardato il bancone dall'altra parte.\n\nUn'ultima cosa pratica: il registro delle assenze si chiude alle nove e trenta. Ma se una madre chiama alle nove e trentacinque perché il figlio ha vomitato in autobus, il registro si riapre. Nessuno ti dirà mai questo per iscritto, e nessuno ti rimprovererà per averlo fatto.\n\nTi lascio la chiave del cassetto in basso a destra. Dentro ci sono i cerotti, le caramelle e i fazzoletti di carta. Non sono nell'inventario e non lo saranno mai. Non chiedere il rimborso: comprali e basta.\n\nBuona fortuna. Anna.",
+    "wordCount": 415,
+    "estimatedMinutes": 17,
+    "objectives": [
+      {
+        "es": "Formar el futuro anteriore: quando avrai letto, quando avrà capito."
+      },
+      {
+        "es": "Usar el trapassato prossimo para lo anterior a otro pasado: avevano mandato, aveva scritto."
+      },
+      {
+        "es": "Leer un documento donde lo esencial no es el procedimiento."
+      }
+    ],
+    "grammarFocus": [
+      "futuro-anteriore-b1",
+      "trapassato-prossimo-b1",
+      "da-presente-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "segreteria",
+        "lemma": "segreteria",
+        "glosses": {
+          "es": "secretaría administrativa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "preside",
+        "lemma": "preside",
+        "glosses": {
+          "es": "director o directora del centro"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "raccoglitore",
+        "lemma": "raccoglitore",
+        "glosses": {
+          "es": "carpeta de anillas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "squillo",
+        "lemma": "squillo",
+        "glosses": {
+          "es": "tono de llamada"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "timbri",
+        "lemma": "timbro",
+        "glosses": {
+          "es": "sellos de oficina"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cassetto",
+        "lemma": "cassetto",
+        "glosses": {
+          "es": "cajón"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cerotti",
+        "lemma": "cerotto",
+        "glosses": {
+          "es": "tiritas, curitas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rimborso",
+        "lemma": "rimborso",
+        "glosses": {
+          "es": "reembolso de un gasto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La secretaría de una scuola media italiana atiende al alumnado en un mostrador abierto al pasillo. El personal administrativo no da clase, pero ve pasar a los cuatrocientos alumnos varias veces al día."
+    },
+    "spanishSpeakerNote": {
+      "es": "El futuro anteriore marca lo que estará terminado antes de otro momento futuro: «quando avrai letto» es «cuando hayas leído». El español usa ahí subjuntivo; el italiano, futuro compuesto."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto italiano largo que desarrolla una idea y cambia de dirección, distinguir el hecho de la opinión por la forma del verbo, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere",
+      "avverbi-frequenza-modo-a2",
+      "ci-vuole-vogliono-a2",
+      "comparativi-a2",
+      "condizionale-presente-a2",
+      "congiunzioni-logiche-a2",
+      "da-presente-a2",
+      "forma-cortesia-a2",
+      "futuro-probabilita-a2",
+      "futuro-semplice-a2",
+      "imperfetto-a2",
+      "passato-prossimo-avere-a2",
+      "passato-prossimo-essere-a2",
+      "periodo-ipotetico-reale-a2",
+      "piacere-verbi-simili-a2",
+      "pronomi-diretti-a2",
+      "pronomi-indiretti-a2",
+      "pronomi-relativi-a2",
+      "stare-per-a2",
+      "trapassato-prossimo-a2",
+      "verbi-riflessivi-a2",
+      "condizionale-passato-b1",
+      "congiuntivo-passato-b1",
+      "congiuntivo-presente-b1",
+      "futuro-anteriore-b1",
+      "periodo-ipotetico-b1",
+      "trapassato-prossimo-b1"
+    ],
+    "disallowedGrammar": [
+      "passato remoto",
+      "trapassato remoto",
+      "infinito sostantivato letterario",
+      "costruzioni participiali estese"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 11.5,
+      "maxSentenceWords": 24,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Congiuntivo presente y passato, condizionale passato, futuro anteriore, trapassato prossimo y las tres condicionales. El congiuntivo imperfetto aparece solo dentro del periodo ipotetico dell'impossibilità, que es el propio tema del nivel. Sin passato remoto."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué quiere transmitir Anna a quien la sustituya?",
+      "options": [
+        {
+          "id": "bancone",
+          "text": "Que el puesto no consiste en tramitar papeles: es el primer y último adulto que ven cuatrocientos chicos"
+        },
+        {
+          "id": "fotocopiadora",
+          "text": "Que la fotocopiadora está averiada y hay que sustituirla"
+        },
+        {
+          "id": "riva",
+          "text": "Que debe tener cuidado con la profesora Riva"
+        }
+      ],
+      "answer": "bancone",
+      "evidence": "questo lavoro non è mettere timbri. Se qualcuno ti dice che è mettere timbri, quella persona non ha mai guardato il bancone dall'altra parte.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y por eso separa la carpeta azul de esta carta."
+        },
+        "incorrect": {
+          "es": "La fotocopiadora y la profesora Riva son avisos prácticos. Busca lo que ella llama «la cosa più importante»."
+        },
+        "strategy": {
+          "es": "Si un texto anuncia «lo más importante no es X», lo que sigue es su tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántas hojas se pueden poner en la fotocopiadora sin que se bloquee?",
+      "options": [
+        {
+          "id": "treinta",
+          "text": "Treinta"
+        },
+        {
+          "id": "cuarenta",
+          "text": "Cuarenta"
+        },
+        {
+          "id": "tres",
+          "text": "Tres"
+        }
+      ],
+      "answer": "treinta",
+      "evidence": "si blocca se metti più di quaranta fogli … Mettine trenta e non avrai problemi per il resto della tua carriera.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: se bloquea por encima de cuarenta, y su consejo es poner treinta."
+        },
+        "incorrect": {
+          "es": "Cuarenta es el límite en que ya falla, y los tres son las visitas del técnico. Busca su consejo."
+        },
+        "strategy": {
+          "es": "Distingue el límite que da el texto del consejo práctico que da la persona."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El técnico escribía «nessun difetto riscontrato». ¿Qué quiere decir?",
+      "options": [
+        {
+          "id": "ninguno",
+          "text": "Que no se detectó ningún defecto"
+        },
+        {
+          "id": "reparado",
+          "text": "Que reparó el defecto encontrado"
+        },
+        {
+          "id": "grave",
+          "text": "Que el defecto era grave"
+        }
+      ],
+      "answer": "ninguno",
+      "evidence": "ogni volta lui aveva scritto sul foglio di intervento «nessun difetto riscontrato»",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y es la razón por la que la máquina sigue igual desde 2014."
+        },
+        "incorrect": {
+          "es": "Si hubiera reparado algo, la máquina no seguiría bloqueándose. Fíjate en la palabra «nessun»."
+        },
+        "strategy": {
+          "es": "La palabra «nessun» niega lo que sigue: no hace falta entender el resto para saberlo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué no escribe lo que dijo el chico el día veinticuatro?",
+      "options": [
+        {
+          "id": "entender",
+          "text": "Porque solo se entiende desde dentro del puesto, después del primer mes"
+        },
+        {
+          "id": "secreto",
+          "text": "Porque es un secreto administrativo que no puede revelar"
+        },
+        {
+          "id": "olvido",
+          "text": "Porque no lo recuerda con exactitud"
+        }
+      ],
+      "answer": "entender",
+      "evidence": "Non la scrivo qui: quando avrai fatto il primo mese, capirai perché.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo dice en la misma frase con un futuro anteriore."
+        },
+        "incorrect": {
+          "es": "No lo presenta como secreto ni dice haberlo olvidado. Lee la frase entera, después de los dos puntos."
+        },
+        "strategy": {
+          "es": "Después de dos puntos suele venir la razón de lo que se acaba de afirmar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el contenido del cajón de abajo a la derecha figura en el inventario del centro.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Non sono nell'inventario e non lo saranno mai. Non chiedere il rimborso: comprali e basta.",
+      "feedback": {
+        "correct": {
+          "es": "Falso, y ella añade que nunca lo estarán: se compran de tu bolsillo."
+        },
+        "incorrect": {
+          "es": "La respuesta está en el último párrafo, justo después de enumerar lo que hay dentro."
+        },
+        "strategy": {
+          "es": "Cuando un texto enumera objetos, la frase siguiente suele decir su situación administrativa."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la carta.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Anuncia que hay dos versiones de las instrucciones"
+        },
+        {
+          "id": "p2",
+          "text": "Los avisos prácticos: fotocopiadora, aulas, teléfono"
+        },
+        {
+          "id": "p3",
+          "text": "Lo que de verdad importa: ser el primer adulto del día"
+        },
+        {
+          "id": "p4",
+          "text": "La llave del cajón y las tiritas"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Ne ho scritte due versioni … La fotocopiatrice del primo piano si blocca … La cosa più importante non è amministrativa … Ti lascio la chiave del cassetto.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: encuadre, avisos, sentido y legado."
+        },
+        "incorrect": {
+          "es": "Fíjate en dónde dice «la cosa più importante» y dónde entrega la llave."
+        },
+        "strategy": {
+          "es": "Una carta de relevo va de lo administrativo a lo humano: busca la frase que marca el cambio."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 12–15 frases en italiano con las instrucciones reales de algo que sabes hacer. Usa tres futuros anteriori y tres trapassati prossimi."
+    },
+    "minWords": 80,
+    "maxWords": 140,
+    "hints": [
+      "Quando avrai letto questa lettera…",
+      "Nel 2014 avevano già mandato…",
+      "Quando avrà capito che non cedi…",
+      "Non è mettere timbri."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano B1: cuando hayas leído esta carta | WeLearn"
+    },
+    "description": {
+      "es": "Lee una carta en italiano B1 y practica el futuro anteriore y el trapassato prossimo. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/italiano/b1/lectura/quando-avrai-letto-questa-lettera",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-b1-sei-contro-sei",
+      "it-b1-la-farmacia-che-apre-di-notte"
+    ]
+  }
+}

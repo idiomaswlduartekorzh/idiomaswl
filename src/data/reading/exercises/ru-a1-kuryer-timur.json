@@ -1,0 +1,451 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-a1-kuryer-timur",
+  "status": "published",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Ruso A1"
+  },
+  "slug": "kuryer-timur",
+  "series": {
+    "id": "ruso-a1-lectura-10",
+    "episode": 4,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-a1-vosem-chasov-utra",
+    "nextExerciseId": "ru-a1-v-shkole-no-na-rabote"
+  },
+  "classification": {
+    "genre": "retrato de oficio",
+    "topic": "un repartidor que conoce la ciudad mejor que un taxista",
+    "intent": "learning",
+    "tags": [
+      "ruso a1",
+      "lectura",
+      "caso acusativo",
+      "verbos de movimiento"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Timur, el repartidor"
+    },
+    "intro": {
+      "es": "Cada día anda, va en metro, corre y vuelve a andar. Y por la tarde hace cuarenta minutos a pie por gusto. Lectura de ruso A1."
+    },
+    "mission": {
+      "es": "Averigua por qué vuelve andando a casa."
+    },
+    "targetText": "Мой друг Тимур работает курьером в Екатеринбурге. Каждый день он идёт, едет, бежит и снова идёт.\n\nУтром он берёт большую сумку и едет на метро в центр. Потом он идёт в первый дом, во второй дом, в третий дом.\n\nОн несёт пиццу, документы, торты. Один раз он несёт кота в коробке.\n\nЛюди открывают дверь и смотрят на сумку, не на Тимура. Он говорит, что это нормально.\n\nОн знает город лучше, чем таксист. Он знает, где лифт не работает и где есть злая собака.\n\nВечером он идёт домой пешком, сорок минут. Я спрашиваю: почему? Он отвечает: потому что вечером я иду туда, куда я хочу.",
+    "wordCount": 104,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Formar el acusativo del objeto directo: большую сумку, пиццу, кота."
+      },
+      {
+        "es": "Elegir el verbo de movimiento correcto: идти, ехать, бежать, нести."
+      },
+      {
+        "es": "Distinguir un dato del oficio de una razón personal."
+      }
+    ],
+    "grammarFocus": [
+      "caso-acusativo",
+      "verbos-movimiento"
+    ],
+    "vocabulary": [
+      {
+        "surface": "курьером",
+        "lemma": "курьер",
+        "glosses": {
+          "es": "repartidor, mensajero"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "сумку",
+        "lemma": "сумка",
+        "glosses": {
+          "es": "bolsa grande, saca"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "несёт",
+        "lemma": "нести",
+        "glosses": {
+          "es": "lleva (a mano)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "торты",
+        "lemma": "торт",
+        "glosses": {
+          "es": "tartas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "лифт",
+        "lemma": "лифт",
+        "glosses": {
+          "es": "ascensor"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "злая",
+        "lemma": "злой",
+        "glosses": {
+          "es": "agresiva, de mal genio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "пешком",
+        "lemma": "пешком",
+        "glosses": {
+          "es": "a pie, andando"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "спрашиваю",
+        "lemma": "спрашивать",
+        "glosses": {
+          "es": "pregunto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El reparto a domicilio es enorme en las ciudades rusas y los repartidores acaban conociendo detalles que no están en ningún mapa: qué portal se abre solo, qué ascensor falla, qué patio tiene perro."
+    },
+    "spanishSpeakerNote": {
+      "es": "El acusativo marca el objeto directo y cambia la terminación: «сумка» pasa a «сумку», «пицца» a «пиццу». En los seres animados masculinos coincide con el genitivo: «кот» pasa a «кота»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en ruso sobre la vida cotidiana, reconocer las letras cirílicas que se parecen a las latinas sin serlo, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento"
+    ],
+    "disallowedGrammar": [
+      "pasado verbal",
+      "aspecto perfectivo",
+      "participios",
+      "gerundios (деепричастия)",
+      "condicional"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 8,
+      "maxSentenceWords": 12,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo, imperativo y futuro con быть. Sin pasado, sin aspecto y sin participios. Acento (ударение) sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué retrata el texto?",
+      "options": [
+        {
+          "id": "eleccion",
+          "text": "Un oficio de moverse todo el día, y una caminata final que sí elige él"
+        },
+        {
+          "id": "sueldo",
+          "text": "Que los repartidores están mal pagados"
+        },
+        {
+          "id": "metro",
+          "text": "El funcionamiento del metro de Ekaterimburgo"
+        }
+      ],
+      "answer": "eleccion",
+      "evidence": "Вечером он идёт домой пешком, сорок минут … потому что вечером я иду туда, куда я хочу.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la clave está en su respuesta final: por la tarde va donde quiere."
+        },
+        "incorrect": {
+          "es": "No se habla de sueldos ni del metro como tema. Busca su respuesta a «почему?»."
+        },
+        "strategy": {
+          "es": "Cuando el texto acaba con una pregunta y su respuesta, esa respuesta es la tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué llevó una vez dentro de una caja?",
+      "options": [
+        {
+          "id": "gato",
+          "text": "Un gato"
+        },
+        {
+          "id": "tartas",
+          "text": "Tartas"
+        },
+        {
+          "id": "documentos",
+          "text": "Documentos"
+        }
+      ],
+      "answer": "gato",
+      "evidence": "Он несёт пиццу, документы, торты. Один раз он несёт кота в коробке.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el texto lo separa del resto con «один раз»."
+        },
+        "incorrect": {
+          "es": "Las tartas y los documentos son lo habitual. Busca la frase con «один раз»."
+        },
+        "strategy": {
+          "es": "La expresión «один раз» (una vez) señala la excepción de una lista."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Vuelve a casa «пешком». ¿Qué significa?",
+      "options": [
+        {
+          "id": "pie",
+          "text": "A pie, andando"
+        },
+        {
+          "id": "metro",
+          "text": "En metro"
+        },
+        {
+          "id": "taxi",
+          "text": "En taxi"
+        }
+      ],
+      "answer": "pie",
+      "evidence": "Вечером он идёт домой пешком, сорок минут.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y va con «идёт», el verbo de ir andando, y con cuarenta minutos."
+        },
+        "incorrect": {
+          "es": "Va con el verbo de andar y con cuarenta minutos: en metro no tardaría eso."
+        },
+        "strategy": {
+          "es": "Fíjate en el verbo de movimiento que acompaña: «идёт» es a pie, «едет» es en vehículo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice que la gente mira la bolsa y no a él?",
+      "options": [
+        {
+          "id": "invisible",
+          "text": "Porque en el trabajo lo ven como el reparto, no como una persona"
+        },
+        {
+          "id": "ladron",
+          "text": "Porque desconfían de él"
+        },
+        {
+          "id": "pesada",
+          "text": "Porque la bolsa es muy grande y llama la atención"
+        }
+      ],
+      "answer": "invisible",
+      "evidence": "Люди открывают дверь и смотрят на сумку, не на Тимура. Он говорит, что это нормально.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y él mismo lo da por normal, lo que hace la frase más dura."
+        },
+        "incorrect": {
+          "es": "No se habla de desconfianza, y el tamaño de la bolsa no es el punto. Fíjate en el contraste «на сумку, не на Тимура»."
+        },
+        "strategy": {
+          "es": "La estructura «A, no B» señala una comparación que el texto quiere que notes."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: Timur conoce la ciudad mejor que un taxista.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Он знает город лучше, чем таксист. Он знает, где лифт не работает и где есть злая собака.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y el texto lo prueba con dos ejemplos concretos."
+        },
+        "incorrect": {
+          "es": "Busca la frase con «лучше, чем». Va seguida de dos ejemplos."
+        },
+        "strategy": {
+          "es": "La fórmula «лучше, чем» es una comparación explícita: no hay que deducirla."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena su jornada.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Coge la saca y va en metro al centro"
+        },
+        {
+          "id": "p2",
+          "text": "Entra en el primer portal, el segundo, el tercero"
+        },
+        {
+          "id": "p3",
+          "text": "La gente abre y mira la bolsa"
+        },
+        {
+          "id": "p4",
+          "text": "Por la tarde vuelve a casa andando"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Утром он берёт большую сумку и едет на метро … Потом он идёт в первый дом … Люди открывают дверь … Вечером он идёт домой пешком.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: mañana, reparto, portales y tarde."
+        },
+        "incorrect": {
+          "es": "Guíate por «Утром», «Потом» y «Вечером»."
+        },
+        "strategy": {
+          "es": "Las palabras «утром» y «вечером» dividen el día: úsalas como marcas."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en ruso sobre alguien que se mueve mucho por trabajo. Usa cuatro objetos en acusativo y tres verbos de movimiento distintos."
+    },
+    "minWords": 25,
+    "maxWords": 55,
+    "hints": [
+      "Он берёт большую сумку.",
+      "Он едет на метро в центр.",
+      "Он несёт пиццу и документы.",
+      "Вечером он идёт домой пешком."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso A1: Timur, el repartidor | WeLearn"
+    },
+    "description": {
+      "es": "Lee un retrato de oficio en ruso A1 y practica el caso acusativo y los verbos de movimiento. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/a1/lectura/kuryer-timur",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-a1-vosem-chasov-utra",
+      "ru-a1-v-shkole-no-na-rabote"
+    ]
+  }
+}

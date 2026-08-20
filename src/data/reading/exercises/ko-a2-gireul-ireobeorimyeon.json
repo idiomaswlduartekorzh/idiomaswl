@@ -1,0 +1,473 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-a2-gireul-ireobeorimyeon",
+  "status": "published",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Coreano A2",
+    "topik": 2,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. A2 se sitúa alrededor del TOPIK I nivel 2, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "gireul-ireobeorimyeon",
+  "series": {
+    "id": "coreano-a2-lectura-10",
+    "episode": 3,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-a2-yeohaeng-gyehoek",
+    "nextExerciseId": "ko-a2-cheoeum-insa"
+  },
+  "classification": {
+    "genre": "consejo práctico",
+    "topic": "perderse en una ciudad desconocida",
+    "intent": "learning",
+    "tags": [
+      "coreano a2",
+      "lectura",
+      "condicional 으면",
+      "razón 니까"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Si te pierdes"
+    },
+    "intro": {
+      "es": "Qué hacer si te pierdes en Corea sin batería, y por qué el mejor sitio para preguntar no es la calle. Lectura de coreano A2."
+    },
+    "mission": {
+      "es": "Quédate con los tres consejos y con la razón de cada uno."
+    },
+    "targetText": "한국에서 길을 잃어버리면 어떻게 할까요? 세 가지만 기억하면 됩니다. 첫째, 편의점에 들어가세요. 한국에는 편의점이 아주 많으니까 오 분 안에 하나를 찾을 수 있어요. 편의점 직원은 그 동네를 잘 알아요. 그리고 편의점은 밤에도 열려 있으니까 시간이 늦어도 괜찮아요. 둘째, 지하철역 이름을 물어보세요. 주소는 어려우니까 지하철역이 더 좋아요. 한국 사람들은 보통 주소를 잘 몰라요. 하지만 지하철역은 다 알아요. 셋째, 휴대폰 배터리가 없으면 걱정하지 마세요. 편의점에서 배터리를 빌릴 수 있어요. 돈은 조금 들지만 아주 편해요. 보조 배터리는 보통 세 시간쯤 쓸 수 있어요. 지도 앱을 켜면 배터리가 빨리 없어지니까 미리 빌리는 게 좋아요. 그리고 편의점 직원에게 영수증을 꼭 받으세요. 다른 편의점에서 반납할 수 있어요. 그리고 마지막 조언이 있어요. 길을 물어보면 사람들이 같이 걸어갈 거예요. 한국에서는 자주 그렇게 해요. 그때 미안해하지 마세요. 그 사람은 시간이 있으니까 그렇게 하는 거예요.",
+    "wordCount": 125,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Construir condiciones con 으면/면 y entender qué depende de qué."
+      },
+      {
+        "es": "Dar razones con 니까 y distinguirlo de 그래서."
+      },
+      {
+        "es": "Extraer instrucciones de un texto que además explica cada motivo."
+      }
+    ],
+    "grammarFocus": [
+      "condicional-eumyeon-a2",
+      "razon-niikka-a2",
+      "negacion"
+    ],
+    "vocabulary": [
+      {
+        "surface": "잃어버리면",
+        "lemma": "잃어버리다",
+        "reading": "ireobeorimyeon",
+        "glosses": {
+          "es": "si pierdes (algo), si te pierdes"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "편의점",
+        "lemma": "편의점",
+        "reading": "pyeonuijeom",
+        "glosses": {
+          "es": "tienda de conveniencia, 24 horas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "직원",
+        "lemma": "직원",
+        "reading": "jigwon",
+        "glosses": {
+          "es": "empleado, dependiente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "주소",
+        "lemma": "주소",
+        "reading": "juso",
+        "glosses": {
+          "es": "dirección postal"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "휴대폰",
+        "lemma": "휴대폰",
+        "reading": "hyudaepon",
+        "glosses": {
+          "es": "teléfono móvil"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "빌릴",
+        "lemma": "빌리다",
+        "reading": "billil",
+        "glosses": {
+          "es": "pedir prestado, alquilar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "조언",
+        "lemma": "조언",
+        "reading": "joeon",
+        "glosses": {
+          "es": "consejo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "미안해하지",
+        "lemma": "미안해하다",
+        "reading": "mianhaehaji",
+        "glosses": {
+          "es": "sentirse culpable, disculparse"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Corea tiene una de las densidades de tiendas 24 horas más altas del mundo, y muchas alquilan baterías portátiles. El sistema de direcciones cambió en 2014, así que mucha gente sigue orientándose por metro y no por calle."
+    },
+    "spanishSpeakerNote": {
+      "es": "니까 y 그래서 significan los dos «así que», pero 니까 puede ir con imperativos y 그래서 no: 늦으니까 가세요 funciona, *늦어서 가세요 no. Es una regla que ahorra muchos errores."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en coreano sobre hechos pasados y planes, entender quién dice qué en estilo indirecto, y reconocer a quién se trata con respeto."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas",
+      "antes-despues-a2",
+      "capacidad-rl-su-itda-a2",
+      "clausulas-relativas-a2",
+      "condicional-eumyeon-a2",
+      "conector-aseo-a2",
+      "cuanto-eolmana-a2",
+      "discurso-reportado-a2",
+      "durante-neun-dongane-a2",
+      "futuro-rl-geoyeyo-a2",
+      "honorificos-a2",
+      "intencion-ryogo-hada-a2",
+      "negacion-ji-anta-a2",
+      "obligacion-aya-hada-a2",
+      "parecer-neun-geot-gatda-a2",
+      "particulas-recipiente-a2",
+      "progresivo-go-itda-a2",
+      "razon-gittaemune-a2",
+      "razon-niikka-a2",
+      "solo-tambien-man-do-a2",
+      "verbos-irregulares-pasado-a2"
+    ],
+    "disallowedGrammar": [
+      "voz pasiva avanzada",
+      "nominalización compleja",
+      "estilo literario"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 5.7,
+      "maxSentenceWords": 11,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Pasado irregular, cláusulas de relativo y honoríficos permitidos. Sin voz pasiva avanzada ni registro literario. Inferencia ligera."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué ofrece el texto?",
+      "options": [
+        {
+          "id": "consejos",
+          "text": "Tres consejos prácticos y la razón de cada uno"
+        },
+        {
+          "id": "historia",
+          "text": "La historia de una vez que el autor se perdió"
+        },
+        {
+          "id": "mapa",
+          "text": "Instrucciones para leer un mapa del metro"
+        }
+      ],
+      "answer": "consejos",
+      "evidence": "세 가지만 기억하면 됩니다. 첫째, … 둘째, … 셋째, …",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y los numera: 첫째, 둘째, 셋째. Cada uno viene con su motivo introducido por 니까."
+        },
+        "incorrect": {
+          "es": "No cuenta ninguna anécdota propia ni explica el metro. Fíjate en la estructura numerada."
+        },
+        "strategy": {
+          "es": "Si un texto anuncia «tres cosas» y luego las numera, su forma ya te dice de qué tipo es."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué recomienda preguntar en vez de la dirección?",
+      "options": [
+        {
+          "id": "metro",
+          "text": "El nombre de la estación de metro"
+        },
+        {
+          "id": "calle",
+          "text": "El nombre de la calle"
+        },
+        {
+          "id": "barrio",
+          "text": "El nombre del barrio"
+        }
+      ],
+      "answer": "metro",
+      "evidence": "지하철역 이름을 물어보세요. 주소는 어려우니까 지하철역이 더 좋아요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el texto da la razón: la dirección es difícil y mucha gente no la sabe."
+        },
+        "incorrect": {
+          "es": "La dirección es justo lo que aconseja evitar. Busca 지하철역 이름."
+        },
+        "strategy": {
+          "es": "Cuando un texto compara dos opciones con 더 좋아요, la que lleva ese comparativo es la recomendada."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice 편의점에서 배터리를 빌릴 수 있어요. ¿Qué significa 빌리다 aquí?",
+      "options": [
+        {
+          "id": "prestar",
+          "text": "Que te la pueden prestar o alquilar"
+        },
+        {
+          "id": "comprar",
+          "text": "Que puedes comprar una nueva"
+        },
+        {
+          "id": "cargar",
+          "text": "Que puedes cargar la tuya gratis"
+        }
+      ],
+      "answer": "prestar",
+      "evidence": "편의점에서 배터리를 빌릴 수 있어요. 돈은 조금 들지만 아주 편해요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Y la frase siguiente lo confirma: cuesta algo de dinero, así que es un alquiler, no un regalo."
+        },
+        "incorrect": {
+          "es": "La frase siguiente dice que cuesta algo de dinero, así que no es gratis. Y no habla de comprar una nueva."
+        },
+        "strategy": {
+          "es": "Si un verbo va seguido de una frase sobre el coste, esa frase acota si es compra, alquiler o regalo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice el texto 미안해하지 마세요?",
+      "options": [
+        {
+          "id": "normal",
+          "text": "Porque acompañar a alguien perdido es normal allí y no crea una deuda"
+        },
+        {
+          "id": "peligro",
+          "text": "Porque puede ser peligroso seguir a un desconocido"
+        },
+        {
+          "id": "idioma",
+          "text": "Porque no hace falta disculparse por hablar mal coreano"
+        }
+      ],
+      "answer": "normal",
+      "evidence": "한국에서는 자주 그렇게 해요 … 그 사람은 시간이 있으니까 그렇게 하는 거예요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El texto lo explica dos veces: es habitual, y quien lo hace es porque tiene tiempo."
+        },
+        "incorrect": {
+          "es": "No advierte de ningún peligro ni habla del idioma. Lee las dos frases que rodean el consejo."
+        },
+        "strategy": {
+          "es": "Cuando un texto pide no sentir algo, la razón está en las frases de alrededor. Busca el 니까."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el texto aconseja evitar las tiendas 24 horas por la noche.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "편의점은 밤에도 열려 있으니까 시간이 늦어도 괜찮아요.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: dice lo contrario. Que abran de noche es precisamente una de sus ventajas."
+        },
+        "incorrect": {
+          "es": "Busca qué dice el texto sobre el horario nocturno de las tiendas. La partícula 도 es la clave."
+        },
+        "strategy": {
+          "es": "La partícula 도 («también, incluso») suele añadir una ventaja. Si la ves, no leas la frase como una advertencia."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué menciona que los coreanos no suelen saberse las direcciones?",
+      "options": [
+        {
+          "id": "justificar",
+          "text": "Para justificar por qué conviene preguntar por el metro"
+        },
+        {
+          "id": "criticar",
+          "text": "Para criticar el sistema de direcciones del país"
+        },
+        {
+          "id": "turista",
+          "text": "Para señalar que los turistas se orientan mejor"
+        }
+      ],
+      "answer": "justificar",
+      "evidence": "주소는 어려우니까 지하철역이 더 좋아요. 한국 사람들은 보통 주소를 잘 몰라요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Es la prueba del consejo anterior: si ni los locales las saben, preguntarlas no sirve."
+        },
+        "incorrect": {
+          "es": "No critica el sistema ni compara con turistas. Fíjate en qué consejo acaba de dar."
+        },
+        "strategy": {
+          "es": "Un dato colocado detrás de un consejo suele estar sosteniéndolo. Lee hacia arriba para comprobarlo."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en coreano con tres consejos para alguien que visita tu ciudad. Usa 으면/면 tres veces y 니까 dos veces."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "…면 어떻게 할까요?",
+      "첫째, …세요.",
+      "…니까 …이 더 좋아요.",
+      "걱정하지 마세요."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano A2: Si te pierdes | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto de consejos en coreano A2 y practica el condicional con 으면 y la razón con 니까. Con vocabulario romanizado y seis preguntas."
+    },
+    "canonicalPath": "/practica/coreano/a2/lectura/gireul-ireobeorimyeon",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-a2-yeohaeng-gyehoek",
+      "ko-a2-cheoeum-insa"
+    ]
+  }
+}

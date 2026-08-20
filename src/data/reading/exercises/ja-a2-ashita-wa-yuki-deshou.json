@@ -1,0 +1,483 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ja-a2-ashita-wa-yuki-deshou",
+  "status": "published",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Japonés A2",
+    "jlpt": "N4",
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el JLPT es aproximada: son dos escalas distintas, con exámenes distintos. A2 se sitúa alrededor del N4, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "ashita-wa-yuki-deshou",
+  "series": {
+    "id": "japones-a2-lectura-10",
+    "episode": 8,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ja-a2-hanko-o-motte-konakereba-naranai",
+    "nextExerciseId": "ja-a2-nagara-benkyou-shitari"
+  },
+  "classification": {
+    "genre": "crónica de pueblo",
+    "topic": "un hombre que acierta el tiempo mejor que la previsión",
+    "intent": "learning",
+    "tags": [
+      "japones a2",
+      "lectura",
+      "でしょう",
+      "かもしれない"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Mañana nevará, probablemente"
+    },
+    "intro": {
+      "es": "La previsión oficial dice una cosa y el señor Kudō dice otra. En el pueblo hacen caso al señor Kudō. Lectura de japonés A2."
+    },
+    "mission": {
+      "es": "Averigua en qué se fija Kudō para acertar."
+    },
+    "targetText": "青森の小さいまちに、工藤さんという人がいる。七十四さいで、むかしは郵便局で働いていた。\n\n工藤さんは天気がわかる。天気予報よりただしいと、まちのみんなが言う。\n\n私はさいしょ、信じなかった。工藤さんは機械を持っていないし、べんきょうもしていない。\n\nでも去年の十二月、テレビは「明日は晴れでしょう」と言った。工藤さんは「明日は雪かもしれない」と言った。\n\nつぎの日、四十センチ積もった。\n\n三月、私は工藤さんに聞いた。「どうしてわかるんですか。」\n\n工藤さんは少し笑って、こう答えた。「鳥です。雪の前の日、鳥が低いところを飛びます。それだけです。」\n\nほんとうかどうか、私にはわからない。偶然かもしれない。\n\nでも工藤さんは五十年ここにすんでいる。五十年、毎日空を見ている。それは機械ではないが、データではあるでしょう。\n\nまちの人は天気予報も見る。そして工藤さんにも聞く。両方違うときは、工藤さんを信じる。",
+    "wordCount": 341,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Usar でしょう para una previsión con seguridad media."
+      },
+      {
+        "es": "Usar かもしれない para una posibilidad más débil."
+      },
+      {
+        "es": "Distinguir un dato acumulado de una casualidad."
+      }
+    ],
+    "grammarFocus": [
+      "deshou-a2",
+      "kamoshirenai-a2",
+      "interrogativos-ka"
+    ],
+    "vocabulary": [
+      {
+        "surface": "郵便局",
+        "lemma": "郵便局",
+        "reading": "ゆうびんきょく",
+        "glosses": {
+          "es": "oficina de correos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "信じ",
+        "lemma": "信じ",
+        "reading": "しんじ",
+        "glosses": {
+          "es": "creer"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "機械",
+        "lemma": "機械",
+        "reading": "きかい",
+        "glosses": {
+          "es": "aparato, máquina"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "積もった",
+        "lemma": "積もった",
+        "reading": "つもった",
+        "glosses": {
+          "es": "se acumuló (nieve)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "鳥",
+        "lemma": "鳥",
+        "reading": "とり",
+        "glosses": {
+          "es": "pájaro"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "低い",
+        "lemma": "低い",
+        "reading": "ひくい",
+        "glosses": {
+          "es": "bajo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "偶然",
+        "lemma": "偶然",
+        "reading": "ぐうぜん",
+        "glosses": {
+          "es": "casualidad"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "両方",
+        "lemma": "両方",
+        "reading": "りょうほう",
+        "glosses": {
+          "es": "ambos, las dos cosas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Aomori es una de las regiones con más nieve del mundo habitado, con acumulaciones de varios metros al año. Saber si va a nevar no es curiosidad: cambia el día entero."
+    },
+    "spanishSpeakerNote": {
+      "es": "でしょう y かもしれない no son lo mismo: でしょう es «probablemente sí» y かもしれない es «puede que». El texto los usa a propósito uno frente a otro: la tele dice でしょう y Kudō dice かもしれない."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": true,
+    "romanization": "a0-only",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto japonés escrito sin espacios, encadenar lo que ocurre con la forma て, distinguir un estado de una acción, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adverbios-frecuencia",
+      "arimasu-imasu",
+      "conjunciones",
+      "desu-masu",
+      "estructura-sov-particulas",
+      "expresiones-cotidianas",
+      "hiragana-basico",
+      "i-keiyoshi",
+      "interrogativos-ka",
+      "jikan-tiempo",
+      "katakana-basico",
+      "masu-kei-conjugacion",
+      "na-keiyoshi",
+      "negacion-completa",
+      "numeros-contadores",
+      "particula-de-e",
+      "particula-wa-ga",
+      "particula-wo-ni",
+      "tai-form",
+      "te-form-permission",
+      "ageru-morau-kureru-a2",
+      "dake-shika-bakari-a2",
+      "deshou-a2",
+      "hikaku-a2",
+      "kamoshirenai-a2",
+      "kanoukei-a2",
+      "mae-ni-ato-de-a2",
+      "n-desu-a2",
+      "nagara-a2",
+      "nakereba-naranai-a2",
+      "noun-modification-a2",
+      "ta-koto-ga-aru-a2",
+      "tara-condicional-a2",
+      "tari-tari-a2",
+      "te-form-sequence-a2",
+      "te-iru-a2",
+      "te-mo-ii-a2",
+      "to-condicional-a2",
+      "to-omoimasu-a2",
+      "ukemi-a2"
+    ],
+    "disallowedGrammar": [
+      "keigo (尊敬語・謙譲語)",
+      "causativo-pasivo",
+      "japonés clásico",
+      "registro periodístico nominal"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 42.6,
+      "maxSentenceWords": 88,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Forma て y sus usos, ている, condicionales たら y と, comparativos, pasiva sencilla. Sin keigo ni causativo-pasivo. Sin espacios: el kanji segmenta. Furigana declarado pero no implementado en el runner."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué defiende el texto?",
+      "options": [
+        {
+          "id": "datos",
+          "text": "Que cincuenta años mirando el cielo también son datos, aunque no haya máquina"
+        },
+        {
+          "id": "tele",
+          "text": "Que la previsión oficial es inútil"
+        },
+        {
+          "id": "pajaros",
+          "text": "Que los pájaros predicen el tiempo con seguridad"
+        }
+      ],
+      "answer": "datos",
+      "evidence": "五十年、毎日空を見ている。それは機械ではないが、データではあるでしょう。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el narrador lo dice con でしょう: es su opinión, no un hecho probado."
+        },
+        "incorrect": {
+          "es": "La gente sigue viendo la previsión, y el narrador admite que puede ser casualidad."
+        },
+        "strategy": {
+          "es": "Si el narrador matiza con でしょう, está proponiendo una idea, no afirmando."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánta nieve cayó aquel día de diciembre?",
+      "options": [
+        {
+          "id": "cuarenta",
+          "text": "Cuarenta centímetros"
+        },
+        {
+          "id": "cincuenta",
+          "text": "Cincuenta centímetros"
+        },
+        {
+          "id": "nada",
+          "text": "No nevó"
+        }
+      ],
+      "answer": "cuarenta",
+      "evidence": "つぎの日、四十センチ積もった。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y ese día la tele había dicho que haría sol."
+        },
+        "incorrect": {
+          "es": "Los cincuenta son los años que lleva viviendo allí. Busca la frase con センチ."
+        },
+        "strategy": {
+          "es": "Empareja cada cifra con su unidad: centímetros de nieve, años de vida."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué significa 偶然?",
+      "options": [
+        {
+          "id": "casualidad",
+          "text": "Casualidad"
+        },
+        {
+          "id": "costumbre",
+          "text": "Costumbre"
+        },
+        {
+          "id": "error",
+          "text": "Error"
+        }
+      ],
+      "answer": "casualidad",
+      "evidence": "ほんとうかどうか、私にはわからない。偶然かもしれない。",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: el narrador admite que puede no haber relación."
+        },
+        "incorrect": {
+          "es": "Va con かもしれない después de decir que no sabe si es cierto: habla de azar."
+        },
+        "strategy": {
+          "es": "Si acompaña a una duda sobre la causa, la palabra se refiere al azar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué la gente consulta las dos previsiones?",
+      "options": [
+        {
+          "id": "contraste",
+          "text": "Porque las compara, y cuando no coinciden se fía de Kudō"
+        },
+        {
+          "id": "ley",
+          "text": "Porque la previsión oficial es obligatoria"
+        },
+        {
+          "id": "duda",
+          "text": "Porque no entienden la previsión de la tele"
+        }
+      ],
+      "answer": "contraste",
+      "evidence": "まちの人は天気予報も見る。そして工藤さんにも聞く。両方違うときは、工藤さんを信じる。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la última frase resuelve el empate."
+        },
+        "incorrect": {
+          "es": "No se habla de obligación ni de dificultad para entender la tele. Lee las tres frases finales."
+        },
+        "strategy": {
+          "es": "La expresión 両方違うとき plantea el caso en que las dos fuentes chocan."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: Kudō usa aparatos de medición para acertar el tiempo.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "工藤さんは機械を持っていないし、べんきょうもしていない … 「鳥です。」",
+      "feedback": {
+        "correct": {
+          "es": "Falso: no tiene aparatos ni ha estudiado. Se fija en los pájaros."
+        },
+        "incorrect": {
+          "es": "Busca la frase donde el narrador cuenta por qué no le creía al principio."
+        },
+        "strategy": {
+          "es": "La construcción …ないし、…ないenumera dos cosas que faltan."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la crónica.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Quién es Kudō y qué dice el pueblo de él"
+        },
+        {
+          "id": "p2",
+          "text": "El diciembre en que la tele falló y él acertó"
+        },
+        {
+          "id": "p3",
+          "text": "Su explicación: los pájaros vuelan bajo"
+        },
+        {
+          "id": "p4",
+          "text": "Qué hace la gente cuando las dos previsiones chocan"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "工藤さんという人がいる… 去年の十二月、テレビは「明日は晴れでしょう」と言った… 「鳥です。」… 両方違うときは、工藤さんを信じる。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: el personaje, la prueba, la explicación y el uso."
+        },
+        "incorrect": {
+          "es": "Guíate por 去年の十二月 y 三月."
+        },
+        "strategy": {
+          "es": "Una crónica presenta al personaje, aporta la prueba y termina con la consecuencia."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en japonés sobre alguien que sabe algo sin estudiarlo. Usa tres veces でしょう y tres veces かもしれない."
+    },
+    "minWords": 110,
+    "maxWords": 260,
+    "hints": [
+      "明日は晴れでしょう。",
+      "明日は雪かもしれない。",
+      "偶然かもしれない。",
+      "両方違うときは、…を信じる。"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de japonés A2: mañana nevará, probablemente | WeLearn"
+    },
+    "description": {
+      "es": "Lee una crónica en japonés A2 y practica でしょう y かもしれない. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/japones/a2/lectura/ashita-wa-yuki-deshou",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ja-a2-hanko-o-motte-konakereba-naranai",
+      "ja-a2-nagara-benkyou-shitari"
+    ]
+  }
+}

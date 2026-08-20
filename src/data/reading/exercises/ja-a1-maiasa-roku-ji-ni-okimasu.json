@@ -1,0 +1,462 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ja-a1-maiasa-roku-ji-ni-okimasu",
+  "status": "published",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Japonés A1",
+    "jlpt": "N5",
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el JLPT es aproximada: son dos escalas distintas, con exámenes distintos. A1 se sitúa alrededor del N5, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "maiasa-roku-ji-ni-okimasu",
+  "series": {
+    "id": "japones-a1-lectura-10",
+    "episode": 3,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ja-a1-neko-ga-imasu",
+    "nextExerciseId": "ja-a1-atarashii-jitensha"
+  },
+  "classification": {
+    "genre": "rutina diaria",
+    "topic": "una rutina que cambia los sábados",
+    "intent": "learning",
+    "tags": [
+      "japones a1",
+      "lectura",
+      "conjugación ます",
+      "adverbios de frecuencia"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Me levanto a las seis"
+    },
+    "intro": {
+      "es": "De lunes a viernes, siempre lo mismo. Los sábados, una sola cosa distinta. Lectura de japonés A1."
+    },
+    "mission": {
+      "es": "Averigua qué hace los sábados que no hace el resto de la semana."
+    },
+    "targetText": "まいあさ ろくじに おきます。 いつも ラジオを ききます。\n\nあさごはんは いつも おなじです。 パンと コーヒー。 ときどき たまごを たべます。\n\nしちじに うちを でます。 でんしゃで かいしゃに いきますが、 でんしゃの なかでは いつも ほんを よみます。\n\nぜんぜん ねません。 ねると、 えきを わすれます。 いちど とおくまで いきました。\n\nどようびは ちがいます。 ろくじに おきますが、 どこにも いきません。\n\nどようびの あさ、 わたしは なにも しません。 それが いちばん すきな じかんです。",
+    "wordCount": 193,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Conjugar en ます: おきます, ききます, 食べます, 行きます, 読みます."
+      },
+      {
+        "es": "Usar los adverbios de frecuencia: いつも, ときどき, ぜんぜん."
+      },
+      {
+        "es": "Reconocer un contraste entre la semana y el fin de semana."
+      }
+    ],
+    "grammarFocus": [
+      "masu-kei-conjugacion",
+      "adverbios-frecuencia"
+    ],
+    "vocabulary": [
+      {
+        "surface": "まいあさ",
+        "lemma": "まいあさ",
+        "reading": "まいあさ",
+        "glosses": {
+          "es": "todas las mañanas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "おきます",
+        "lemma": "おきます",
+        "reading": "おきます",
+        "glosses": {
+          "es": "me levanto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "おなじ",
+        "lemma": "おなじ",
+        "reading": "おなじ",
+        "glosses": {
+          "es": "igual, lo mismo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ときどき",
+        "lemma": "ときどき",
+        "reading": "ときどき",
+        "glosses": {
+          "es": "a veces"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "でんしゃ",
+        "lemma": "でんしゃ",
+        "reading": "でんしゃ",
+        "glosses": {
+          "es": "tren"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ぜんぜん",
+        "lemma": "ぜんぜん",
+        "reading": "ぜんぜん",
+        "glosses": {
+          "es": "nunca, en absoluto (con negación)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "わすれます",
+        "lemma": "わすれます",
+        "reading": "わすれます",
+        "glosses": {
+          "es": "me olvido, me paso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "どようび",
+        "lemma": "どようび",
+        "reading": "どようび",
+        "glosses": {
+          "es": "sábado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Dormirse en el tren es tan habitual en Japón que tiene nombre propio, 居眠り, y pasarse de estación por eso es una experiencia compartida por casi todos los que van a trabajar en tren."
+    },
+    "spanishSpeakerNote": {
+      "es": "Los adverbios de frecuencia mandan la forma del verbo: いつも y ときどき van con verbo afirmativo, pero ぜんぜん exige negativo. «ぜんぜん ねません» es «no duermo nunca», y no se puede decir «ぜんぜん ねます»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": true,
+    "romanization": "a0-only",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en japonés escrito casi todo en kana, identificar de quién o de qué se habla gracias a las partículas, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adverbios-frecuencia",
+      "arimasu-imasu",
+      "conjunciones",
+      "desu-masu",
+      "estructura-sov-particulas",
+      "expresiones-cotidianas",
+      "hiragana-basico",
+      "i-keiyoshi",
+      "interrogativos-ka",
+      "jikan-tiempo",
+      "katakana-basico",
+      "masu-kei-conjugacion",
+      "na-keiyoshi",
+      "negacion-completa",
+      "numeros-contadores",
+      "particula-de-e",
+      "particula-wa-ga",
+      "particula-wo-ni",
+      "tai-form",
+      "te-form-permission"
+    ],
+    "disallowedGrammar": [
+      "forma llana (辞書形) en oración principal",
+      "keigo",
+      "condicionales",
+      "voz pasiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 13.8,
+      "maxSentenceWords": 34,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Forma です／ます, partículas básicas, adjetivos i y na. Kanji por debajo del 12 %, con espacios entre palabras. Furigana declarado pero no implementado en el runner: el apoyo lo dan las lecturas en kana del vocabulario."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta el texto?",
+      "options": [
+        {
+          "id": "sabado",
+          "text": "Una rutina fija de lunes a viernes y un sábado en el que no hace nada, que es lo que más le gusta"
+        },
+        {
+          "id": "trabajo",
+          "text": "Que su trabajo le gusta mucho"
+        },
+        {
+          "id": "tren",
+          "text": "Que el tren siempre va lleno"
+        }
+      ],
+      "answer": "sabado",
+      "evidence": "土曜日の 朝、 わたしは 何も しません。 それが いちばん すきな 時間です。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la última frase lo dice sin rodeos."
+        },
+        "incorrect": {
+          "es": "No habla de su trabajo ni de lo lleno que va el tren. Lee la última frase."
+        },
+        "strategy": {
+          "es": "En un texto corto, la última frase suele decir qué importa de todo lo anterior."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué hace en el tren?",
+      "options": [
+        {
+          "id": "leer",
+          "text": "Lee un libro"
+        },
+        {
+          "id": "dormir",
+          "text": "Duerme"
+        },
+        {
+          "id": "radio",
+          "text": "Escucha la radio"
+        }
+      ],
+      "answer": "leer",
+      "evidence": "電車の 中で ほんを 読みます。 ぜんぜん ねません。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y dice expresamente que no duerme."
+        },
+        "incorrect": {
+          "es": "La radio la escucha al levantarse, y dormir es justo lo que no hace. Busca la frase con 電車の 中で."
+        },
+        "strategy": {
+          "es": "La partícula で marca el lugar donde se hace algo: úsala para localizar la frase."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué significa ぜんぜん en «ぜんぜん ねません»?",
+      "options": [
+        {
+          "id": "nunca",
+          "text": "Nunca, en absoluto"
+        },
+        {
+          "id": "siempre",
+          "text": "Siempre"
+        },
+        {
+          "id": "aveces",
+          "text": "A veces"
+        }
+      ],
+      "answer": "nunca",
+      "evidence": "ぜんぜん ねません。 ねると、 えきを わすれます。",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y la frase siguiente da la razón: si se duerme, se pasa de estación."
+        },
+        "incorrect": {
+          "es": "Va con un verbo en negativo (ねません), así que no puede ser «siempre» ni «a veces»."
+        },
+        "strategy": {
+          "es": "ぜんぜん exige verbo negativo: si ves ません, ya sabes el sentido."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué no duerme en el tren?",
+      "options": [
+        {
+          "id": "estacion",
+          "text": "Porque si se duerme se pasa de estación"
+        },
+        {
+          "id": "ruido",
+          "text": "Porque hay demasiado ruido"
+        },
+        {
+          "id": "libro",
+          "text": "Porque el libro es muy interesante"
+        }
+      ],
+      "answer": "estacion",
+      "evidence": "ぜんぜん ねません。 ねると、 えきを わすれます。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo dice en la frase inmediatamente siguiente."
+        },
+        "incorrect": {
+          "es": "No menciona ruido, y el libro no se presenta como la razón. Lee la frase de después."
+        },
+        "strategy": {
+          "es": "Si la frase siguiente describe una consecuencia, esa consecuencia es el motivo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: los sábados se levanta más tarde que entre semana.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "六時に おきますが、 どこにも 行きません。",
+      "feedback": {
+        "correct": {
+          "es": "Falso: se levanta también a las seis; lo que cambia es que no va a ninguna parte."
+        },
+        "incorrect": {
+          "es": "Busca la frase del sábado: repite la misma hora y añade un が."
+        },
+        "strategy": {
+          "es": "La partícula が en medio de una frase marca un contraste: lee las dos mitades."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la rutina.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Se levanta a las seis y escucha la radio"
+        },
+        {
+          "id": "p2",
+          "text": "Desayuna siempre lo mismo"
+        },
+        {
+          "id": "p3",
+          "text": "Sale a las siete y lee en el tren"
+        },
+        {
+          "id": "p4",
+          "text": "El sábado no va a ninguna parte"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "まいあさ 六時に おきます … 朝ごはんは いつも 同じです … 七時に うちを 出ます … 土曜日は ちがいます。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: el texto sigue el reloj y termina en el sábado."
+        },
+        "incorrect": {
+          "es": "Guíate por las horas: 六時, 七時, y después 土曜日."
+        },
+        "strategy": {
+          "es": "Si el texto da horas, ordénalas y tendrás la secuencia."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en japonés sobre tu rutina de la mañana. Usa cinco verbos en ます y tres adverbios de frecuencia."
+    },
+    "minWords": 60,
+    "maxWords": 160,
+    "hints": [
+      "まいあさ 六時に おきます。",
+      "いつも コーヒーを のみます。",
+      "ときどき たまごを 食べます。",
+      "土曜日は ちがいます。"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de japonés A1: me levanto a las seis | WeLearn"
+    },
+    "description": {
+      "es": "Lee una rutina en japonés A1 y practica la conjugación en ます y los adverbios de frecuencia. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/japones/a1/lectura/maiasa-roku-ji-ni-okimasu",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ja-a1-neko-ga-imasu",
+      "ja-a1-atarashii-jitensha"
+    ]
+  }
+}

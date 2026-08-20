@@ -150,7 +150,7 @@ const topic: GrammarTopic = {
         text: '1. "No tengo carro" (машина — carro, fem): У меня нет [[0]]. 2. "El libro de Sofia" (София — Sofia, fem -а): книга [[1]]. 3. "Cuatro libros" (книга — fem): четыре [[2]]. 4. "Tengo un hermano" (брат — hermano, masc): У меня есть [[3]]. 5. "No hay problema" (проблема, fem): Нет [[4]].',
         blanks: [
           { answer: 'машины', accepted: ['машины'], explain: 'машина (fem -а) → машины en genitivo. У меня нет машины.' },
-          { answer: 'Софии', accepted: ['Софии', '软ии', 'софии'], explain: 'София (fem -ия) → Софии en genitivo. книга Софии = el libro de Sofia.' },
+          { answer: 'Софии', accepted: ['Софии', 'софии'], explain: 'София (fem -ия) → Софии en genitivo. книга Софии = el libro de Sofia.' },
           { answer: 'книги', accepted: ['книги'], explain: 'четыре (4) + genitivo sg. книга → книги.' },
           { answer: 'брат', accepted: ['брат', 'Брат'], explain: 'Con есть el sustantivo va en NOMINATIVO. У меня есть брат.' },
           { answer: 'проблем', accepted: ['проблем', 'проблемы'], explain: 'Нет проблем — frase hecha (genitivo plural). También aceptable: Нет проблемы (sg).' },

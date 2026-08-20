@@ -46,7 +46,10 @@ export type ReadingQuestion = {
 }
 
 export type ReadingExercise = {
-  schemaVersion: '1.0.0'
+  // 1.0.0 son las 30 lecturas de inglés ya publicadas. 1.1.0 es el blueprint multiidioma:
+  // mismo esquema, pero con reglas de acompasamiento con gramática y de longitud que
+  // impone el guardián (scripts/lib/reading-blueprint.mjs).
+  schemaVersion: '1.0.0' | '1.1.0'
   id: string
   status: ReadingStatus
   language: ReadingLanguage

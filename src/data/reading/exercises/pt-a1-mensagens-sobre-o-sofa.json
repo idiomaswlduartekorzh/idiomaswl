@@ -1,0 +1,439 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-a1-mensagens-sobre-o-sofa",
+  "status": "published",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Portugués A1"
+  },
+  "slug": "mensagens-sobre-o-sofa",
+  "series": {
+    "id": "portugues-a1-lectura-10",
+    "episode": 6,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-a1-a-lista-da-mudanca",
+    "nextExerciseId": "pt-a1-eu-nao-vendo-nada"
+  },
+  "classification": {
+    "genre": "mensajes de móvil",
+    "topic": "comprar un mueble de segunda mano",
+    "intent": "learning",
+    "tags": [
+      "portugues a1",
+      "lectura",
+      "contracciones",
+      "adjetivos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Mensajes sobre un sofá"
+    },
+    "intro": {
+      "es": "Un sofá de segunda mano, una escalera estrecha y una medida que nadie tomó. Lectura de portugués A1 con las contracciones."
+    },
+    "mission": {
+      "es": "Averigua qué problema aparece al final y quién lo había avisado."
+    },
+    "targetText": "Bia: Achei um sofá na internet. Está na casa de uma senhora no Butantã. Trezentos reais. Rodrigo: Nossa, barato! Como está? Bia: O tecido é bege, um pouco velho, mas está limpo. É um sofá largo, de três lugares. Rodrigo: A gente pega no sábado? Meu tio empresta a van dele. Bia: Perfeito. Ela mora na rua do Matão, perto do metrô. Rodrigo: Você mediu a nossa escada? Bia: Não. Por quê? Rodrigo: A escada do nosso prédio é muito estreita. O sofá do vizinho não subiu no ano passado. Eles deixaram ele na calçada. Rodrigo: Mede antes de pagar. Bia: Já paguei. Bia: A senhora é muito simpática. Ela disse que a gente pode devolver. Bia: Ela também disse uma coisa engraçada. O sofá é do filho dela. Ele não conseguiu subir na escada do prédio dele.",
+    "wordCount": 138,
+    "estimatedMinutes": 6,
+    "objectives": [
+      {
+        "es": "Formar las contracciones: em + a = na, de + o = do, a + o = ao."
+      },
+      {
+        "es": "Usar adjetivos con el género y el número correctos: largo, estreita, limpo."
+      },
+      {
+        "es": "Seguir una conversación de dos personas y detectar quién avisa de qué."
+      }
+    ],
+    "grammarFocus": [
+      "contracoes",
+      "adjetivos-qualificativos"
+    ],
+    "vocabulary": [
+      {
+        "surface": "tecido",
+        "lemma": "tecido",
+        "glosses": {
+          "es": "tela, tapizado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "bege",
+        "lemma": "bege",
+        "glosses": {
+          "es": "beige"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "largo",
+        "lemma": "largo",
+        "glosses": {
+          "es": "ancho. ¡No significa «largo»: eso es «comprido»!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "empresta",
+        "lemma": "emprestar",
+        "glosses": {
+          "es": "presta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "mediu",
+        "lemma": "medir",
+        "glosses": {
+          "es": "mediste"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "estreita",
+        "lemma": "estreito",
+        "glosses": {
+          "es": "estrecha"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "calçada",
+        "lemma": "calçada",
+        "glosses": {
+          "es": "acera"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "engraçada",
+        "lemma": "engraçado",
+        "glosses": {
+          "es": "graciosa, curiosa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El real es la moneda brasileña. Butantã es un barrio de São Paulo, y comprar muebles de segunda mano entre particulares es habitual en las grandes ciudades."
+    },
+    "spanishSpeakerNote": {
+      "es": "«Largo» en portugués es ancho, no largo: para eso está «comprido». Es uno de los falsos amigos que más problemas causa, y este texto lo pone justo donde importa: un sofá ancho y una escalera estrecha."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en portugués de Brasil sobre la vida cotidiana, distinguir ser de estar, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares"
+    ],
+    "disallowedGrammar": [
+      "pretérito perfeito",
+      "imperfeito",
+      "subjuntivo",
+      "voz passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 5.8,
+      "maxSentenceWords": 11,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Presente de indicativo y futuro con ir. Sin tiempos del pasado ni subjuntivo. Falso amigo glosado en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué pasa en la conversación?",
+      "options": [
+        {
+          "id": "medida",
+          "text": "Compra un sofá sin medir la escalera, y aparece que puede no subir"
+        },
+        {
+          "id": "precio",
+          "text": "Discuten porque el sofá es demasiado caro"
+        },
+        {
+          "id": "van",
+          "text": "No consiguen una furgoneta para transportarlo"
+        }
+      ],
+      "answer": "medida",
+      "evidence": "Você mediu a nossa escada? … Não. Por quê? … A escada do nosso prédio é muito estreita.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el remate es el último mensaje: el sofá ya no subió una escalera antes."
+        },
+        "incorrect": {
+          "es": "El precio les parece barato y el tío presta la furgoneta. Busca la pregunta de Rodrigo sobre la escalera."
+        },
+        "strategy": {
+          "es": "En una conversación, el problema suele entrar con una pregunta. Localiza cuál."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto cuesta el sofá?",
+      "options": [
+        {
+          "id": "300",
+          "text": "Trescientos reales"
+        },
+        {
+          "id": "3",
+          "text": "Tres reales"
+        },
+        {
+          "id": "30",
+          "text": "Treinta reales"
+        }
+      ],
+      "answer": "300",
+      "evidence": "Trezentos reais.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Y por eso Rodrigo responde «Nossa, barato!»."
+        },
+        "incorrect": {
+          "es": "El precio está en el primer mensaje de Bia, escrito con letras. «Trezentos» son trescientos."
+        },
+        "strategy": {
+          "es": "Cuando un número va escrito con letras, tradúcelo antes de comparar con las opciones."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Bia dice «É um sofá largo, de três lugares». ¿Qué significa «largo»?",
+      "options": [
+        {
+          "id": "ancho",
+          "text": "Ancho"
+        },
+        {
+          "id": "largo",
+          "text": "Largo, de mucha longitud"
+        },
+        {
+          "id": "bajo",
+          "text": "Bajo"
+        }
+      ],
+      "answer": "ancho",
+      "evidence": "É um sofá largo, de três lugares … A escada do nosso prédio é muito estreita.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y el texto lo confirma por contraste: la escalera es «estreita», estrecha. Ancho contra estrecho."
+        },
+        "incorrect": {
+          "es": "Se parece al español, pero en portugués «largo» es ancho. Lo confirma el contraste con «estreita»."
+        },
+        "strategy": {
+          "es": "Si un falso amigo aparece junto a su antónimo real, ese antónimo te da el significado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué es «graciosa» la última cosa que cuenta la señora?",
+      "options": [
+        {
+          "id": "mismo",
+          "text": "Porque el sofá ya falló antes en la escalera de su propio hijo"
+        },
+        {
+          "id": "regalo",
+          "text": "Porque el sofá era un regalo de boda"
+        },
+        {
+          "id": "color",
+          "text": "Porque el hijo eligió el color beige"
+        }
+      ],
+      "answer": "mismo",
+      "evidence": "O sofá é do filho dela. Ele não conseguiu subir na escada do prédio dele.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El sofá está en venta justamente porque ya no cabía por una escalera. Se repite la historia."
+        },
+        "incorrect": {
+          "es": "No se habla de bodas ni del color en ese momento. Lee los dos últimos mensajes."
+        },
+        "strategy": {
+          "es": "Cuando un texto dice que algo es gracioso, la gracia está en la coincidencia. Busca qué se repite."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la señora acepta que devuelvan el sofá si no cabe.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "A senhora é muito simpática. Ela disse que a gente pode devolver.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y eso es lo que salva la compra apresurada de Bia."
+        },
+        "incorrect": {
+          "es": "Busca el mensaje de Bia después de decir que ya pagó. Ahí está la solución."
+        },
+        "strategy": {
+          "es": "Después de un problema en una conversación, busca si alguien aporta una salida. Suele estar dos mensajes más abajo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "reference",
+      "skill": "reference",
+      "prompt": "En «Eles deixaram ele na calçada», ¿a qué se refiere «ele»?",
+      "options": [
+        {
+          "id": "sofa",
+          "text": "Al sofá del vecino"
+        },
+        {
+          "id": "vecino",
+          "text": "Al vecino"
+        },
+        {
+          "id": "tio",
+          "text": "Al tío de Rodrigo"
+        }
+      ],
+      "answer": "sofa",
+      "evidence": "O sofá do vizinho não subiu no ano passado. Eles deixaram ele na calçada.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El sofá es el sujeto de la frase anterior, y es lo que acabó en la acera."
+        },
+        "incorrect": {
+          "es": "A nadie deja nadie en la acera. Mira qué objeto es el sujeto de la frase anterior."
+        },
+        "strategy": {
+          "es": "Un pronombre suele recoger el sujeto de la frase anterior. Comprueba que el resultado tenga sentido."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 mensajes en portugués organizando la compra de algo de segunda mano. Usa cinco contracciones distintas (na, no, da, do, ao) y tres adjetivos."
+    },
+    "minWords": 30,
+    "maxWords": 70,
+    "hints": [
+      "Achei um… na internet.",
+      "Está na casa de…",
+      "É um… largo, de…",
+      "Mede antes de pagar."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués A1: Mensajes sobre un sofá | WeLearn"
+    },
+    "description": {
+      "es": "Lee una conversación de móvil en portugués de Brasil A1 y practica las contracciones (no, na, do, da, ao) y los adjetivos. Seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/a1/lectura/mensagens-sobre-o-sofa",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-a1-a-lista-da-mudanca",
+      "pt-a1-eu-nao-vendo-nada"
+    ]
+  }
+}

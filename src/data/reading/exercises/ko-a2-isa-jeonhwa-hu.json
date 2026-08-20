@@ -1,0 +1,473 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-a2-isa-jeonhwa-hu",
+  "status": "published",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Coreano A2",
+    "topik": 2,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. A2 se sitúa alrededor del TOPIK I nivel 2, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "isa-jeonhwa-hu",
+  "series": {
+    "id": "coreano-a2-lectura-10",
+    "episode": 9,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-a2-uisaga-han-mal",
+    "nextExerciseId": "ko-a2-jongi-chaegman-ilgeoyo"
+  },
+  "classification": {
+    "genre": "comparación personal",
+    "topic": "cambiar de casa",
+    "intent": "learning",
+    "tags": [
+      "coreano a2",
+      "lectura",
+      "antes y después",
+      "cuánto 얼마나"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Antes y después de la mudanza"
+    },
+    "intro": {
+      "es": "Veinte minutos menos de metro y una ventana que da a una pared. Lectura de coreano A2 sobre lo que se gana y lo que se pierde al mudarse."
+    },
+    "mission": {
+      "es": "Haz el balance: qué mejoró y qué empeoró."
+    },
+    "targetText": "이사하기 전에 저는 학교에서 아주 멀리 살았어요. 사람들이 자주 물었어요. 학교까지 얼마나 걸려요? 저는 대답했어요. 한 시간 십 분이요. 아침에 지하철에서 사십 분 서 있었어요. 이사한 후에는 이십 분만 걸려요. 그래서 아침에 사십 분 더 잘 수 있어요. 이건 정말 좋아요. 하지만 잃어버린 것도 있어요. 전에 살던 집에는 창문이 컸어요. 창문 밖에 나무가 두 개 있었어요. 봄에는 꽃이 보였어요. 지금 집은 창문이 작아요. 창문을 열면 이웃집 부엌 벽이 바로 보여요. 하늘은 안 보여요. 창문 밖에는 벽이 있어요. 얼마나 가까워요? 손을 내밀면 벽을 만질 수 있어요. 그리고 전에는 부엌에서 요리를 자주 했어요. 지금은 부엌이 너무 좁아서 잘 안 해요. 그럼 저는 후회해요? 아니요. 사십 분은 하루에 사십 분이에요. 일 년에 이백 시간이 넘어요. 창문은 아쉬워요. 하지만 저는 그 시간으로 다른 창문을 살 거예요.",
+    "wordCount": 122,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Situar hechos con 전에 y 후에 respecto a un momento clave."
+      },
+      {
+        "es": "Preguntar cantidades y distancias con 얼마나."
+      },
+      {
+        "es": "Hacer un balance leyendo dos series de datos contrapuestas."
+      }
+    ],
+    "grammarFocus": [
+      "antes-despues-a2",
+      "cuanto-eolmana-a2",
+      "interrogativos"
+    ],
+    "vocabulary": [
+      {
+        "surface": "이사하기",
+        "lemma": "이사하다",
+        "reading": "isahagi",
+        "glosses": {
+          "es": "mudarse de casa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "멀리",
+        "lemma": "멀리",
+        "reading": "meolli",
+        "glosses": {
+          "es": "lejos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "얼마나",
+        "lemma": "얼마나",
+        "reading": "eolmana",
+        "glosses": {
+          "es": "cuánto, cuán"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "벽",
+        "lemma": "벽",
+        "reading": "byeok",
+        "glosses": {
+          "es": "pared, muro"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "내밀면",
+        "lemma": "내밀다",
+        "reading": "naemilmyeon",
+        "glosses": {
+          "es": "si extiendes (la mano)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "좁아서",
+        "lemma": "좁다",
+        "reading": "jobaseo",
+        "glosses": {
+          "es": "ser estrecho, y por eso…"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "후회해요",
+        "lemma": "후회하다",
+        "reading": "huhoehaeyo",
+        "glosses": {
+          "es": "se arrepiente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "아쉬워요",
+        "lemma": "아쉽다",
+        "reading": "aswiwoyo",
+        "glosses": {
+          "es": "da lástima, se echa de menos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En Seúl el tiempo de trayecto es un criterio de vivienda tan decisivo como el precio, y una hora por sentido es una cifra corriente en las zonas periféricas."
+    },
+    "spanishSpeakerNote": {
+      "es": "전에 y 후에 van detrás de lo que sitúan, al contrario que en español: 이사하기 전에 es «antes de mudarme». Y 얼마나 sirve tanto para tiempo como para distancia: 얼마나 걸려요? (cuánto tarda) y 얼마나 가까워요? (cuán cerca)."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en coreano sobre hechos pasados y planes, entender quién dice qué en estilo indirecto, y reconocer a quién se trata con respeto."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas",
+      "antes-despues-a2",
+      "capacidad-rl-su-itda-a2",
+      "clausulas-relativas-a2",
+      "condicional-eumyeon-a2",
+      "conector-aseo-a2",
+      "cuanto-eolmana-a2",
+      "discurso-reportado-a2",
+      "durante-neun-dongane-a2",
+      "futuro-rl-geoyeyo-a2",
+      "honorificos-a2",
+      "intencion-ryogo-hada-a2",
+      "negacion-ji-anta-a2",
+      "obligacion-aya-hada-a2",
+      "parecer-neun-geot-gatda-a2",
+      "particulas-recipiente-a2",
+      "progresivo-go-itda-a2",
+      "razon-gittaemune-a2",
+      "razon-niikka-a2",
+      "solo-tambien-man-do-a2",
+      "verbos-irregulares-pasado-a2"
+    ],
+    "disallowedGrammar": [
+      "voz pasiva avanzada",
+      "nominalización compleja",
+      "estilo literario"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 4.5,
+      "maxSentenceWords": 8,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Pasado irregular, cláusulas de relativo y honoríficos permitidos. Sin voz pasiva avanzada ni registro literario. Inferencia ligera."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es el balance de la mudanza?",
+      "options": [
+        {
+          "id": "vale",
+          "text": "Que compensa, aunque haya perdido cosas que echa de menos"
+        },
+        {
+          "id": "error",
+          "text": "Que fue un error y quiere volver a su antigua casa"
+        },
+        {
+          "id": "igual",
+          "text": "Que la nueva casa es igual que la anterior"
+        }
+      ],
+      "answer": "vale",
+      "evidence": "그럼 저는 후회해요? 아니요 … 창문은 아쉬워요. 하지만 저는 그 시간으로 다른 창문을 살 거예요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y se lo pregunta a sí mismo antes de contestar: 후회해요? 아니요."
+        },
+        "incorrect": {
+          "es": "Se pregunta expresamente si se arrepiente y contesta que no. Busca esa pregunta."
+        },
+        "strategy": {
+          "es": "Cuando un texto se hace una pregunta a sí mismo, la respuesta inmediata es su conclusión."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto tardaba antes en llegar al colegio?",
+      "options": [
+        {
+          "id": "70",
+          "text": "Una hora y diez minutos"
+        },
+        {
+          "id": "20",
+          "text": "Veinte minutos"
+        },
+        {
+          "id": "40",
+          "text": "Cuarenta minutos"
+        }
+      ],
+      "answer": "70",
+      "evidence": "한 시간 십 분이요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Los veinte son lo que tarda ahora, y los cuarenta, lo que iba de pie en el metro."
+        },
+        "incorrect": {
+          "es": "En el texto hay tres cantidades de tiempo y cada una mide algo distinto. Busca la respuesta a 얼마나 걸려요."
+        },
+        "strategy": {
+          "es": "Cuando un texto compara antes y después, sitúa cada cifra en su momento antes de contestar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto pregunta 얼마나 가까워요? y responde con la mano. ¿Qué está midiendo?",
+      "options": [
+        {
+          "id": "distancia",
+          "text": "La distancia entre la ventana y la pared"
+        },
+        {
+          "id": "tiempo",
+          "text": "El tiempo hasta el colegio"
+        },
+        {
+          "id": "tamano",
+          "text": "El tamaño de la cocina"
+        }
+      ],
+      "answer": "distancia",
+      "evidence": "창문 밖에는 벽이 있어요. 얼마나 가까워요? 손을 내밀면 벽을 만질 수 있어요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Y la respuesta es física, no numérica: si estiras la mano, la tocas."
+        },
+        "incorrect": {
+          "es": "La palabra 가까워요 significa «está cerca», así que mide espacio. Y la frase anterior habla de la pared."
+        },
+        "strategy": {
+          "es": "얼마나 puede medir tiempo o espacio. El adjetivo que le sigue te dice cuál de los dos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué ya casi no cocina en la casa nueva?",
+      "options": [
+        {
+          "id": "estrecha",
+          "text": "Porque la cocina es demasiado estrecha"
+        },
+        {
+          "id": "tiempo",
+          "text": "Porque no le queda tiempo"
+        },
+        {
+          "id": "gusto",
+          "text": "Porque ha dejado de gustarle cocinar"
+        }
+      ],
+      "answer": "estrecha",
+      "evidence": "지금은 부엌이 너무 좁아서 잘 안 해요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el 아서 lo une: la cocina es estrecha, y por eso no cocina."
+        },
+        "incorrect": {
+          "es": "Ahora tiene cuarenta minutos más al día, así que no es falta de tiempo. Busca el conector 아서."
+        },
+        "strategy": {
+          "es": "El conector 아서/어서 une causa y efecto en una frase. La causa va delante."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: en la casa anterior se veían flores por la ventana en primavera.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "창문 밖에 나무가 두 개 있었어요. 봄에는 꽃이 보였어요.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y está en pasado: 보였어요, se veían. Es lo que perdió al mudarse."
+        },
+        "incorrect": {
+          "es": "Busca la descripción de la casa anterior, con los dos árboles. La frase siguiente habla de la primavera."
+        },
+        "strategy": {
+          "es": "El tiempo verbal te dice a qué casa se refiere cada descripción: pasado es la antigua, presente la nueva."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué calcula que cuarenta minutos al día son más de doscientas horas al año?",
+      "options": [
+        {
+          "id": "justificar",
+          "text": "Para justificar que el tiempo ganado pesa más que la ventana perdida"
+        },
+        {
+          "id": "queja",
+          "text": "Para quejarse del tiempo que perdía antes"
+        },
+        {
+          "id": "horario",
+          "text": "Para explicar su horario de estudio"
+        }
+      ],
+      "answer": "justificar",
+      "evidence": "사십 분은 하루에 사십 분이에요. 일 년에 이백 시간이 넘어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Convierte una cifra pequeña en una grande justo cuando tiene que defender su decisión."
+        },
+        "incorrect": {
+          "es": "No se queja del pasado ni explica horarios. Fíjate en dónde aparece el cálculo: justo después de 후회해요? 아니요."
+        },
+        "strategy": {
+          "es": "Un cálculo colocado en medio de una defensa está ahí para sostenerla. Mira qué acaba de afirmarse."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en coreano comparando tu vida antes y después de un cambio. Usa 전에 y 후에 dos veces cada uno y una pregunta con 얼마나."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "…하기 전에 저는 …",
+      "…한 후에는 …",
+      "얼마나 걸려요?",
+      "하지만 잃어버린 것도 있어요."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano A2: Antes y después de la mudanza | WeLearn"
+    },
+    "description": {
+      "es": "Lee una comparación en coreano A2 y practica 전에/후에 (antes y después) y las preguntas con 얼마나. Con seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/coreano/a2/lectura/isa-jeonhwa-hu",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-a2-uisaga-han-mal",
+      "ko-a2-jongi-chaegman-ilgeoyo"
+    ]
+  }
+}

@@ -1,0 +1,473 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-a2-sumureul-baeugo-itsseoyo",
+  "status": "published",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Coreano A2",
+    "topik": 2,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. A2 se sitúa alrededor del TOPIK I nivel 2, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "sumureul-baeugo-itsseoyo",
+  "series": {
+    "id": "coreano-a2-lectura-10",
+    "episode": 6,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-a2-jal-anhaneun-kape",
+    "nextExerciseId": "ko-a2-geseuteuhauseu-gyuchik"
+  },
+  "classification": {
+    "genre": "crónica personal",
+    "topic": "aprender algo de adulto",
+    "intent": "learning",
+    "tags": [
+      "coreano a2",
+      "lectura",
+      "progresivo 고 있다",
+      "동안"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Estoy aprendiendo a nadar"
+    },
+    "intro": {
+      "es": "Treinta y cuatro años, una piscina municipal y siete niños de seis años que nadan mejor. Lectura de coreano A2 con el progresivo."
+    },
+    "mission": {
+      "es": "Fíjate en cuánto tiempo lleva y en qué es lo que de verdad está aprendiendo."
+    },
+    "targetText": "저는 지금 수영을 배우고 있어요. 서른네 살이에요. 다섯 달 동안 배우고 있어요. 아직 잘 못해요. 우리 반에는 일곱 명이 있어요. 저만 어른이에요. 다른 사람들은 여섯 살하고 일곱 살이에요. 아이들은 저보다 훨씬 잘해요. 처음에는 그것이 부끄러웠어요. 지금은 아니에요. 아이들이 저를 도와주고 있어요. 한 아이가 매주 저에게 말해요. 아저씨, 숨을 쉬어야 해요. 그 아이 이름은 하윤이에요. 여섯 살이에요. 하윤이는 저보다 이십팔 년 어려요. 그리고 저보다 훨씬 좋은 선생님이에요. 저는 그렇게 생각해요. 저는 자주 숨을 잊어버려요. 물속에 있는 동안 저는 아무것도 생각할 수 없어요. 그게 문제예요. 하지만 그게 좋은 점이기도 해요. 회사에서 하루 종일 생각해요. 수영장에서는 이십오 미터 동안 아무것도 생각하지 않아요. 요즘 저는 잠을 아주 잘 자고 있어요. 다섯 달 전부터 그래요. 저는 아직 수영을 잘 못해요. 하지만 다른 것을 배우고 있는 것 같아요.",
+    "wordCount": 122,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Formar el progresivo con 고 있다 para acciones en curso."
+      },
+      {
+        "es": "Expresar duración con 동안 y con 부터."
+      },
+      {
+        "es": "Distinguir lo que el narrador dice que aprende de lo que realmente aprende."
+      }
+    ],
+    "grammarFocus": [
+      "progresivo-go-itda-a2",
+      "durante-neun-dongane-a2",
+      "adverbios-tiempo"
+    ],
+    "vocabulary": [
+      {
+        "surface": "수영",
+        "lemma": "수영",
+        "reading": "suyeong",
+        "glosses": {
+          "es": "natación"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "서른네",
+        "lemma": "서른네",
+        "reading": "seoreunne",
+        "glosses": {
+          "es": "treinta y cuatro (número nativo)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "부끄러웠어요",
+        "lemma": "부끄럽다",
+        "reading": "bukkeureowosseoyo",
+        "glosses": {
+          "es": "daba vergüenza"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "숨",
+        "lemma": "숨",
+        "reading": "sum",
+        "glosses": {
+          "es": "respiración, aliento"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "잊어버려요",
+        "lemma": "잊어버리다",
+        "reading": "ijeobeoryeoyo",
+        "glosses": {
+          "es": "se me olvida"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "물속",
+        "lemma": "물속",
+        "reading": "mulsok",
+        "glosses": {
+          "es": "dentro del agua"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "하루 종일",
+        "lemma": "하루 종일",
+        "reading": "haru jongil",
+        "glosses": {
+          "es": "todo el día"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "수영장",
+        "lemma": "수영장",
+        "reading": "suyeongjang",
+        "glosses": {
+          "es": "piscina"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Las piscinas municipales coreanas ofrecen cursos por niveles y no por edades, así que no es raro que un adulto principiante comparta grupo con niños."
+    },
+    "spanishSpeakerNote": {
+      "es": "고 있다 marca la acción en curso: 배우고 있어요, «estoy aprendiendo». Ojo con 동안: va detrás de lo que dura (다섯 달 동안, «durante cinco meses») y no delante como la preposición española."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en coreano sobre hechos pasados y planes, entender quién dice qué en estilo indirecto, y reconocer a quién se trata con respeto."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas",
+      "antes-despues-a2",
+      "capacidad-rl-su-itda-a2",
+      "clausulas-relativas-a2",
+      "condicional-eumyeon-a2",
+      "conector-aseo-a2",
+      "cuanto-eolmana-a2",
+      "discurso-reportado-a2",
+      "durante-neun-dongane-a2",
+      "futuro-rl-geoyeyo-a2",
+      "honorificos-a2",
+      "intencion-ryogo-hada-a2",
+      "negacion-ji-anta-a2",
+      "obligacion-aya-hada-a2",
+      "parecer-neun-geot-gatda-a2",
+      "particulas-recipiente-a2",
+      "progresivo-go-itda-a2",
+      "razon-gittaemune-a2",
+      "razon-niikka-a2",
+      "solo-tambien-man-do-a2",
+      "verbos-irregulares-pasado-a2"
+    ],
+    "disallowedGrammar": [
+      "voz pasiva avanzada",
+      "nominalización compleja",
+      "estilo literario"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 4.4,
+      "maxSentenceWords": 8,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Pasado irregular, cláusulas de relativo y honoríficos permitidos. Sin voz pasiva avanzada ni registro literario. Inferencia ligera."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué descubre el narrador?",
+      "options": [
+        {
+          "id": "otra",
+          "text": "Que está aprendiendo otra cosa además de nadar"
+        },
+        {
+          "id": "tarde",
+          "text": "Que a su edad ya es tarde para aprender a nadar"
+        },
+        {
+          "id": "dejarlo",
+          "text": "Que va a dejar las clases el mes que viene"
+        }
+      ],
+      "answer": "otra",
+      "evidence": "저는 아직 수영을 잘 못해요. 하지만 다른 것을 배우고 있는 것 같아요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la última frase lo deja abierto a propósito: sabe que aprende algo, sin nombrarlo."
+        },
+        "incorrect": {
+          "es": "No dice que sea tarde ni que vaya a dejarlo. Lee las dos últimas frases, unidas por 하지만."
+        },
+        "strategy": {
+          "es": "Cuando un texto termina con 하지만, lo que va después corrige todo lo anterior. Ahí está la conclusión."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto tiempo lleva aprendiendo?",
+      "options": [
+        {
+          "id": "cinco",
+          "text": "Cinco meses"
+        },
+        {
+          "id": "siete",
+          "text": "Siete meses"
+        },
+        {
+          "id": "veinticinco",
+          "text": "Veinticinco semanas"
+        }
+      ],
+      "answer": "cinco",
+      "evidence": "다섯 달 동안 배우고 있어요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: 다섯 달, cinco meses. El siete son las personas de la clase y el veinticinco, los metros de la piscina."
+        },
+        "incorrect": {
+          "es": "En el texto hay varias cifras y cada una mide algo distinto. Busca la que va con 달, meses."
+        },
+        "strategy": {
+          "es": "Fíjate en la unidad que acompaña a cada número: 달 son meses, 명 son personas, 미터 son metros."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Un niño le dice 숨을 쉬어야 해요. ¿Qué le está recordando?",
+      "options": [
+        {
+          "id": "respirar",
+          "text": "Que tiene que respirar"
+        },
+        {
+          "id": "descansar",
+          "text": "Que tiene que descansar"
+        },
+        {
+          "id": "contar",
+          "text": "Que tiene que contar las brazadas"
+        }
+      ],
+      "answer": "respirar",
+      "evidence": "아저씨, 숨을 쉬어야 해요. 저는 자주 숨을 잊어버려요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y la frase siguiente lo confirma: se le olvida respirar mientras nada."
+        },
+        "incorrect": {
+          "es": "La frase siguiente dice qué es lo que se le olvida. Ahí tienes la respuesta."
+        },
+        "strategy": {
+          "es": "Si un consejo va seguido de una confesión, la confesión explica el consejo. Léelos como pareja."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice que no poder pensar dentro del agua también es bueno?",
+      "options": [
+        {
+          "id": "descanso",
+          "text": "Porque en el trabajo se pasa el día entero pensando"
+        },
+        {
+          "id": "peligro",
+          "text": "Porque pensar mientras nada es peligroso"
+        },
+        {
+          "id": "tecnica",
+          "text": "Porque así mejora la técnica más rápido"
+        }
+      ],
+      "answer": "descanso",
+      "evidence": "회사에서 하루 종일 생각해요. 수영장에서는 이십오 미터 동안 아무것도 생각하지 않아요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Las dos frases se contraponen: todo el día pensando en la oficina, veinticinco metros sin pensar nada."
+        },
+        "incorrect": {
+          "es": "No habla de peligro ni de técnica. Compara las dos frases sobre la oficina y la piscina."
+        },
+        "strategy": {
+          "es": "Cuando dos frases seguidas oponen dos lugares, la comparación es el argumento. No leas solo una."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: al principio le daba vergüenza ser el único adulto de la clase.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "처음에는 그것이 부끄러웠어요. 지금은 아니에요.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y añade que ya no: 지금은 아니에요."
+        },
+        "incorrect": {
+          "es": "Busca la pareja 처음에는 / 지금은. La primera parte responde a la pregunta."
+        },
+        "strategy": {
+          "es": "Las parejas 처음에는 / 지금은 marcan un cambio. Comprueba de qué a qué antes de responder."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué menciona que últimamente duerme muy bien?",
+      "options": [
+        {
+          "id": "prueba",
+          "text": "Como prueba de que la natación le está cambiando algo más"
+        },
+        {
+          "id": "insomnio",
+          "text": "Para explicar que antes tenía insomnio grave"
+        },
+        {
+          "id": "horario",
+          "text": "Para justificar que va a la piscina por la tarde"
+        }
+      ],
+      "answer": "prueba",
+      "evidence": "요즘 저는 잠을 아주 잘 자고 있어요. 다섯 달 전부터 그래요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el dato temporal es la prueba: desde hace cinco meses, justo cuando empezó a nadar."
+        },
+        "incorrect": {
+          "es": "No habla de insomnio ni de horarios. Fíjate en la frase que da la fecha desde la que duerme bien."
+        },
+        "strategy": {
+          "es": "Un dato de tiempo pegado a un cambio suele señalar la causa. Compáralo con otras fechas del texto."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en coreano sobre algo que estés aprendiendo ahora. Usa 고 있다 cuatro veces y 동안 dos veces."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "저는 지금 …를 배우고 있어요.",
+      "… 동안 배우고 있어요.",
+      "처음에는 …",
+      "하지만 다른 것을 배우고 있는 것 같아요."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano A2: Estoy aprendiendo a nadar | WeLearn"
+    },
+    "description": {
+      "es": "Lee una crónica en coreano A2 y practica el progresivo 고 있다 y las expresiones de duración con 동안. Con seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/coreano/a2/lectura/sumureul-baeugo-itsseoyo",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-a2-jal-anhaneun-kape",
+      "ko-a2-geseuteuhauseu-gyuchik"
+    ]
+  }
+}

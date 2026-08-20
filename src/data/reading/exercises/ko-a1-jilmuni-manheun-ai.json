@@ -1,0 +1,453 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-a1-jilmuni-manheun-ai",
+  "status": "published",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Coreano A1",
+    "topik": 1,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. A1 se sitúa alrededor del TOPIK I nivel 1, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "jilmuni-manheun-ai",
+  "series": {
+    "id": "coreano-a1-lectura-10",
+    "episode": 9,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-a1-jinan-jumal",
+    "nextExerciseId": "ko-a1-hago-sipeun-il"
+  },
+  "classification": {
+    "genre": "anécdota familiar",
+    "topic": "las preguntas de una niña",
+    "intent": "learning",
+    "tags": [
+      "coreano a1",
+      "lectura",
+      "interrogativos",
+      "expresiones cotidianas"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La niña que pregunta mucho"
+    },
+    "intro": {
+      "es": "Cien preguntas al día, una que el tío no supo contestar, y la respuesta que lo cambió todo. Lectura de coreano A1 con los interrogativos."
+    },
+    "mission": {
+      "es": "Fíjate en qué pasó cuando el adulto admitió que no sabía."
+    },
+    "targetText": "제 조카는 다섯 살이에요. 이름은 서연이에요. 서연이는 질문이 아주 많아요. 하루에 백 개쯤 물어요. 이게 뭐예요? 왜요? 어디에 있어요? 누가 만들었어요? 언제 와요? 어떻게 해요? 저는 처음에 다 대답했어요. 지금은 조금 힘들어요. 어제 서연이가 물었어요. 하늘은 왜 파란색이에요? 저는 몰랐어요. 그래서 저는 말했어요. 몰라요. 서연이는 놀랐어요. 어른도 몰라요? 저는 대답했어요. 어른도 많이 몰라요. 서연이는 조용했어요. 그리고 말했어요. 그럼 괜찮아요. 지금 서연이는 이렇게 물어요. 이거 알아요, 몰라요? 저는 이 질문이 제일 좋아요.",
+    "wordCount": 71,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Reconocer y usar los interrogativos: 뭐, 왜, 어디, 누가, 언제, 어떻게."
+      },
+      {
+        "es": "Manejar expresiones de conversación: 몰라요, 괜찮아요, 그럼."
+      },
+      {
+        "es": "Seguir un diálogo breve entre dos personas dentro de un relato."
+      }
+    ],
+    "grammarFocus": [
+      "interrogativos",
+      "expresiones-cotidianas"
+    ],
+    "vocabulary": [
+      {
+        "surface": "조카",
+        "lemma": "조카",
+        "reading": "joka",
+        "glosses": {
+          "es": "sobrina, sobrino"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "질문",
+        "lemma": "질문",
+        "reading": "jilmun",
+        "glosses": {
+          "es": "pregunta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "쯤",
+        "lemma": "쯤",
+        "reading": "jjeum",
+        "glosses": {
+          "es": "aproximadamente, unos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "하늘",
+        "lemma": "하늘",
+        "reading": "haneul",
+        "glosses": {
+          "es": "cielo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "몰랐어요",
+        "lemma": "모르다",
+        "reading": "mollasseoyo",
+        "glosses": {
+          "es": "no lo sabía"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "놀랐어요",
+        "lemma": "놀라다",
+        "reading": "nollasseoyo",
+        "glosses": {
+          "es": "se sorprendió"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "어른",
+        "lemma": "어른",
+        "reading": "eoreun",
+        "glosses": {
+          "es": "adulto, persona mayor"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "괜찮아요",
+        "lemma": "괜찮다",
+        "reading": "gwaenchanayo",
+        "glosses": {
+          "es": "no pasa nada, está bien"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En coreano la edad se dice con números nativos y el contador 살: 다섯 살, cinco años. Y 조카 vale tanto para sobrino como para sobrina."
+    },
+    "spanishSpeakerNote": {
+      "es": "Ojo con 몰라요: el coreano tiene un verbo propio para «no saber», no niega 알아요. Igual que 없어요 frente a 있어요. Y la pregunta 알아요, 몰라요? ofrece las dos opciones a la vez, algo muy coreano."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en 해요체 sobre la vida cotidiana, identificar de quién se habla gracias a las partículas de tema y de objeto, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas"
+    ],
+    "disallowedGrammar": [
+      "clausulas-relativas",
+      "discurso-reportado",
+      "honorificos-avanzados",
+      "voz pasiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 2.6,
+      "maxSentenceWords": 5,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Todo en 해요체 salvo la lectura 10 (합니다체, carta formal). Sin cláusulas de relativo ni discurso indirecto. Romanización disponible como apoyo opcional."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cambia en la niña a lo largo del texto?",
+      "options": [
+        {
+          "id": "acepta",
+          "text": "Aprende que los adultos también pueden no saber, y le parece bien"
+        },
+        {
+          "id": "calla",
+          "text": "Deja de hacer preguntas por completo"
+        },
+        {
+          "id": "enfada",
+          "text": "Se enfada con su tío por no responderle"
+        }
+      ],
+      "answer": "acepta",
+      "evidence": "어른도 많이 몰라요 … 그럼 괜찮아요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Y la prueba está al final: cambia la forma de preguntar, no deja de preguntar."
+        },
+        "incorrect": {
+          "es": "No deja de preguntar ni se enfada: al final pregunta de otra manera. Busca 그럼 괜찮아요."
+        },
+        "strategy": {
+          "es": "Si un relato termina describiendo un comportamiento nuevo, compáralo con el del principio. Ahí está el cambio."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántos años tiene Seoyeon?",
+      "options": [
+        {
+          "id": "cinco",
+          "text": "Cinco"
+        },
+        {
+          "id": "cien",
+          "text": "Cien"
+        },
+        {
+          "id": "tres",
+          "text": "Tres"
+        }
+      ],
+      "answer": "cinco",
+      "evidence": "제 조카는 다섯 살이에요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: 다섯 살, cinco años. El cien son las preguntas que hace al día."
+        },
+        "incorrect": {
+          "es": "En el texto hay dos números y miden cosas distintas. Busca el que va con 살, el contador de años."
+        },
+        "strategy": {
+          "es": "Empareja cada número con su contador: 살 son años, 개 son unidades. El contador dice qué mide."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "La niña dice 그럼 괜찮아요. ¿Qué significa 괜찮아요 aquí?",
+      "options": [
+        {
+          "id": "nopasa",
+          "text": "No pasa nada, está bien así"
+        },
+        {
+          "id": "gracias",
+          "text": "Muchas gracias"
+        },
+        {
+          "id": "nosé",
+          "text": "No lo sé"
+        }
+      ],
+      "answer": "nopasa",
+      "evidence": "어른도 많이 몰라요. 서연이는 조용했어요. 그리고 말했어요. 그럼 괜찮아요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Acaba de oír que los adultos tampoco saben, se queda callada y concluye que entonces no pasa nada."
+        },
+        "incorrect": {
+          "es": "No está dando las gracias ni diciendo que no sabe. Fíjate en lo que le acaban de decir justo antes."
+        },
+        "strategy": {
+          "es": "Para entender una respuesta corta, lee siempre a qué está respondiendo. La frase anterior la explica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué le gusta al tío la nueva forma de preguntar de la niña?",
+      "options": [
+        {
+          "id": "honesta",
+          "text": "Porque le deja la salida de decir que no lo sabe"
+        },
+        {
+          "id": "corta",
+          "text": "Porque las preguntas son más cortas y rápidas"
+        },
+        {
+          "id": "menos",
+          "text": "Porque ahora pregunta muchas menos veces"
+        }
+      ],
+      "answer": "honesta",
+      "evidence": "이거 알아요, 몰라요? 저는 이 질문이 제일 좋아요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La niña ha incorporado el «no lo sé» a la propia pregunta: ya no hay respuesta equivocada."
+        },
+        "incorrect": {
+          "es": "El texto no dice que pregunte menos ni valora la longitud. Fíjate en las dos opciones que ofrece la pregunta."
+        },
+        "strategy": {
+          "es": "Cuando una pregunta ofrece dos salidas, pregúntate qué se gana con la segunda. Ahí está el motivo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el tío inventó una respuesta cuando no supo por qué el cielo es azul.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "저는 몰랐어요. 그래서 저는 말했어요. 몰라요.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: dijo la verdad, 몰라요, no lo sé. Y eso es lo que desencadena todo lo demás."
+        },
+        "incorrect": {
+          "es": "Busca qué contestó exactamente. La respuesta es una sola palabra y está en el texto."
+        },
+        "strategy": {
+          "es": "Cuando un texto reproduce una respuesta entre frases cortas, es literal. No supongas otra cosa."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "¿Con qué actitud cuenta el tío toda la anécdota?",
+      "options": [
+        {
+          "id": "carino",
+          "text": "Con cariño y algo de admiración por la niña"
+        },
+        {
+          "id": "fastidio",
+          "text": "Con fastidio por tantas preguntas"
+        },
+        {
+          "id": "preocupacion",
+          "text": "Con preocupación por el desarrollo de la niña"
+        }
+      ],
+      "answer": "carino",
+      "evidence": "저는 이 질문이 제일 좋아요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Reconoce que a veces le cuesta, pero termina diciendo que esa pregunta es su favorita."
+        },
+        "incorrect": {
+          "es": "Admite que es un poco duro (조금 힘들어요), pero la última frase no deja lugar a dudas."
+        },
+        "strategy": {
+          "es": "Para el tono, pesa más la frase final que las quejas del medio. Comprueba cómo cierra el autor."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en coreano sobre alguien que te hace muchas preguntas, o sobre una pregunta que no supiste contestar. Usa cuatro interrogativos distintos."
+    },
+    "minWords": 25,
+    "maxWords": 60,
+    "hints": [
+      "제 …는 … 살이에요.",
+      "…는 질문이 많아요.",
+      "왜 …? 어디에 …?",
+      "저는 몰랐어요."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano A1: La niña que pregunta mucho | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto en coreano A1 y practica los interrogativos (뭐, 왜, 어디, 누가, 언제, 어떻게) y expresiones cotidianas. Seis preguntas y vocabulario."
+    },
+    "canonicalPath": "/practica/coreano/a1/lectura/jilmuni-manheun-ai",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-a1-jinan-jumal",
+      "ko-a1-hago-sipeun-il"
+    ]
+  }
+}

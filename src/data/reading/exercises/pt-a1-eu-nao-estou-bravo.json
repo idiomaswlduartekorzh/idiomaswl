@@ -1,0 +1,447 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-a1-eu-nao-estou-bravo",
+  "status": "published",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Portugués A1"
+  },
+  "slug": "eu-nao-estou-bravo",
+  "series": {
+    "id": "portugues-a1-lectura-10",
+    "episode": 1,
+    "totalEpisodes": 10,
+    "previousExerciseId": null,
+    "nextExerciseId": "pt-a1-feira-da-praca"
+  },
+  "classification": {
+    "genre": "relato en primera persona",
+    "topic": "malentendidos culturales",
+    "intent": "learning",
+    "tags": [
+      "portugues a1",
+      "lectura",
+      "ser y estar",
+      "pronombres personales"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "No estoy enfadado"
+    },
+    "intro": {
+      "es": "Un colombiano en São Paulo con cara seria, y tres compañeras convencidas de que está enfadado. Lectura de portugués A1 con ser y estar."
+    },
+    "mission": {
+      "es": "Averigua qué frase usa ahora el narrador el primer día de trabajo, y por qué."
+    },
+    "targetText": "Eu moro em São Paulo há dois anos. Sou colombiano. Tenho uma cara séria. Isso é um problema aqui. No meu primeiro mês, uma colega me perguntou: você está bravo? Eu não estava bravo. Eu estava pensando. Ela perguntou de novo na semana seguinte. E na outra também. Então eu entendi uma coisa. No Brasil, as pessoas sorriem muito. Elas sorriem no elevador, na fila do banco, na padaria. Eu não sorrio. Não porque sou triste. Eu sou assim. Agora eu explico logo no primeiro dia. Eu digo: minha cara é séria, mas eu estou bem. É a minha cara, não é o meu humor. As pessoas riem quando eu digo isso. E aí eu sorrio também. Então elas ficam confusas de novo.",
+    "wordCount": 123,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Distinguir ser (lo que alguien es) de estar (cómo alguien está en un momento)."
+      },
+      {
+        "es": "Identificar los pronombres personales y a quién señala cada uno."
+      },
+      {
+        "es": "Entender un texto donde el malentendido es el tema, no un obstáculo."
+      }
+    ],
+    "grammarFocus": [
+      "ser-e-estar",
+      "pronomes-pessoais"
+    ],
+    "vocabulary": [
+      {
+        "surface": "bravo",
+        "lemma": "bravo",
+        "glosses": {
+          "es": "enfadado (en Brasil). ¡No significa «valiente»!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fila",
+        "lemma": "fila",
+        "glosses": {
+          "es": "cola de gente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "padaria",
+        "lemma": "padaria",
+        "glosses": {
+          "es": "panadería"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "humor",
+        "lemma": "humor",
+        "glosses": {
+          "es": "estado de ánimo, no «sentido del humor»"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sorriem",
+        "lemma": "sorrir",
+        "glosses": {
+          "es": "sonríen"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "logo",
+        "lemma": "logo",
+        "glosses": {
+          "es": "enseguida, ya. ¡No es «luego»!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "assim",
+        "lemma": "assim",
+        "glosses": {
+          "es": "así"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "confusas",
+        "lemma": "confuso",
+        "glosses": {
+          "es": "desconcertadas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La sonrisa social es más frecuente en Brasil que en buena parte de Hispanoamérica, y su ausencia se lee como enfado. No es una impresión del narrador: es un choque cultural documentado."
+    },
+    "spanishSpeakerNote": {
+      "es": "Tres trampas en un solo texto. «Bravo» es enfadado, no valiente. «Logo» es enseguida, no luego. Y «humor» es el estado de ánimo: para el sentido del humor, el portugués dice «senso de humor»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en portugués de Brasil sobre la vida cotidiana, distinguir ser de estar, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares"
+    ],
+    "disallowedGrammar": [
+      "pretérito perfeito",
+      "imperfeito",
+      "subjuntivo",
+      "voz passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 5.9,
+      "maxSentenceWords": 11,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Presente de indicativo y futuro con ir. Sin tiempos del pasado ni subjuntivo. Falso amigo glosado en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿De qué trata el texto?",
+      "options": [
+        {
+          "id": "cara",
+          "text": "De cómo su cara seria se malinterpreta en Brasil"
+        },
+        {
+          "id": "idioma",
+          "text": "De la dificultad de aprender portugués"
+        },
+        {
+          "id": "trabajo",
+          "text": "De un conflicto con una compañera de trabajo"
+        }
+      ],
+      "answer": "cara",
+      "evidence": "É a minha cara, não é o meu humor.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Y esa frase resume el texto entero: distingue lo que es de lo que está."
+        },
+        "incorrect": {
+          "es": "No hay conflicto con nadie —las compañeras solo preguntan— ni se habla del idioma. Busca la frase con «a minha cara»."
+        },
+        "strategy": {
+          "es": "Cuando un texto repite una idea con dos palabras distintas (cara / humor), esa distinción es el asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué le preguntó la compañera el primer mes?",
+      "options": [
+        {
+          "id": "bravo",
+          "text": "Si estaba enfadado"
+        },
+        {
+          "id": "triste",
+          "text": "Si estaba triste"
+        },
+        {
+          "id": "colombiano",
+          "text": "De dónde era"
+        }
+      ],
+      "answer": "bravo",
+      "evidence": "uma colega me perguntou: você está bravo?",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. «Bravo» en Brasil es enfadado, y eso es justo lo que él no estaba."
+        },
+        "incorrect": {
+          "es": "La palabra «triste» aparece más adelante, y en otra frase. Busca la pregunta literal de la compañera."
+        },
+        "strategy": {
+          "es": "Cuando un texto reproduce una pregunta, la respuesta está en esa cita, no en el resumen posterior."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «Agora eu explico logo no primeiro dia». ¿Qué significa «logo»?",
+      "options": [
+        {
+          "id": "enseguida",
+          "text": "Enseguida, ya de entrada"
+        },
+        {
+          "id": "luego",
+          "text": "Luego, más tarde"
+        },
+        {
+          "id": "despacio",
+          "text": "Despacio"
+        }
+      ],
+      "answer": "enseguida",
+      "evidence": "Agora eu explico logo no primeiro dia.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y es un falso amigo de manual: «logo» en portugués es enseguida, no luego."
+        },
+        "incorrect": {
+          "es": "Se parece al español «luego», pero significa lo contrario. Fíjate en que lo hace «no primeiro dia»."
+        },
+        "strategy": {
+          "es": "Con palabras casi idénticas al español, comprueba el resto de la frase. «No primeiro dia» no admite «más tarde»."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué la gente se queda desconcertada otra vez al final?",
+      "options": [
+        {
+          "id": "sonrie",
+          "text": "Porque después de decir que no sonríe, sonríe"
+        },
+        {
+          "id": "idioma",
+          "text": "Porque no entienden su acento colombiano"
+        },
+        {
+          "id": "enfado",
+          "text": "Porque se enfada al dar la explicación"
+        }
+      ],
+      "answer": "sonrie",
+      "evidence": "As pessoas riem quando eu digo isso. E aí eu sorrio também. Então elas ficam confusas de novo.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y ahí está el chiste del final: su propia explicación se contradice en el acto."
+        },
+        "incorrect": {
+          "es": "No se enfada y no se habla de acento. Lee las tres frases finales en orden."
+        },
+        "strategy": {
+          "es": "Cuando un texto termina con «de nuevo», busca qué se repite. Aquí la confusión, pero por el motivo contrario."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el narrador dice que no sonríe porque es una persona triste.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Eu não sorrio. Não porque sou triste. Eu sou assim.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: lo niega expresamente. «Não porque sou triste» descarta esa explicación."
+        },
+        "incorrect": {
+          "es": "La palabra «triste» está en el texto, pero dentro de una negación. Lee la frase entera."
+        },
+        "strategy": {
+          "es": "Que una palabra aparezca no significa que el texto la afirme. Comprueba si va dentro de una negación."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena lo que pasa en el texto.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Una compañera le pregunta si está enfadado"
+        },
+        {
+          "id": "p2",
+          "text": "La pregunta se repite en las semanas siguientes"
+        },
+        {
+          "id": "p3",
+          "text": "Él entiende que en Brasil se sonríe mucho más"
+        },
+        {
+          "id": "p4",
+          "text": "Ahora avisa el primer día, y la gente se ríe"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "No meu primeiro mês … na semana seguinte … Então eu entendi uma coisa … Agora eu explico logo",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El texto avanza con marcas de tiempo: primer mes, semana siguiente, entonces, ahora."
+        },
+        "incorrect": {
+          "es": "Guíate por las marcas de tiempo: «no meu primeiro mês», «na semana seguinte», «agora»."
+        },
+        "strategy": {
+          "es": "En un relato breve, las expresiones de tiempo dan el orden. Localízalas antes de ordenar."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en portugués sobre algo tuyo que la gente malinterpreta. Usa ser y estar al menos tres veces cada uno."
+    },
+    "minWords": 30,
+    "maxWords": 70,
+    "hints": [
+      "Eu moro em… há… anos.",
+      "Sou…",
+      "Eu estou…",
+      "É a minha…, não é o meu…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués A1: No estoy enfadado | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto corto en portugués de Brasil A1 y practica la diferencia entre ser y estar. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/portugues/a1/lectura/eu-nao-estou-bravo",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-a1-feira-da-praca"
+    ]
+  }
+}

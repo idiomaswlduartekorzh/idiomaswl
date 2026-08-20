@@ -1,0 +1,442 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-a1-unser-tisch",
+  "status": "published",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Alemán A1"
+  },
+  "slug": "unser-tisch",
+  "series": {
+    "id": "aleman-a1-lectura-10",
+    "episode": 8,
+    "totalEpisodes": 10,
+    "previousExerciseId": "de-a1-der-zug-faehrt-ab",
+    "nextExerciseId": "de-a1-anleitung-fuer-den-notdienst"
+  },
+  "classification": {
+    "genre": "retrato de un objeto",
+    "topic": "un mueble heredado",
+    "intent": "learning",
+    "tags": [
+      "aleman a1",
+      "lectura",
+      "posesivos",
+      "pronombres en acusativo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Nuestra mesa"
+    },
+    "intro": {
+      "es": "Una mesa que ha pasado por cuatro casas y tiene una marca que nadie quiere lijar. Lectura de alemán A1 con los posesivos."
+    },
+    "mission": {
+      "es": "Averigua de dónde viene la marca y por qué la conservan."
+    },
+    "targetText": "Unser Tisch ist nicht schön. Er ist alt und er ist zu groß für unsere Küche. Meine Frau will ihn nicht wegwerfen. Ich will ihn auch nicht wegwerfen. Der Tisch kommt von ihrem Großvater. Er war Tischler. Er hat den Tisch für seine Tochter gemacht, also für ihre Mutter. Dann kam der Tisch zu uns. Vier Wohnungen, ein Tisch. In der Mitte ist eine Stelle. Die Farbe ist dort anders. Meine Schwiegermutter sagt: das ist von einer heißen Pfanne, 1979. Ihre Schwester sagt: nein, das ist Tinte. Sie streiten seit vierzig Jahren darüber. Ein Freund fragt mich: warum schleift ihr die Stelle nicht ab? Ich sage ihm: dann haben wir nur noch einen alten Tisch.",
+    "wordCount": 115,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Usar los posesivos: mein, unser, ihr, sein, con su terminación."
+      },
+      {
+        "es": "Sustituir el complemento directo por un pronombre en acusativo: ihn, sie, es."
+      },
+      {
+        "es": "Entender por qué un defecto puede ser lo que da valor a un objeto."
+      }
+    ],
+    "grammarFocus": [
+      "possessivpronomen",
+      "personalpronomen-akkusativ"
+    ],
+    "vocabulary": [
+      {
+        "surface": "wegwerfen",
+        "lemma": "wegwerfen",
+        "glosses": {
+          "es": "tirar a la basura"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Tischler",
+        "lemma": "Tischler",
+        "glosses": {
+          "es": "carpintero"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Stelle",
+        "lemma": "Stelle",
+        "glosses": {
+          "es": "punto, lugar concreto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Pfanne",
+        "lemma": "Pfanne",
+        "glosses": {
+          "es": "sartén"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Tinte",
+        "lemma": "Tinte",
+        "glosses": {
+          "es": "tinta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "streiten",
+        "lemma": "streiten",
+        "glosses": {
+          "es": "discutir"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "schleift",
+        "lemma": "abschleifen",
+        "glosses": {
+          "es": "lija"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Schwiegermutter",
+        "lemma": "Schwiegermutter",
+        "glosses": {
+          "es": "suegra"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El oficio de «Tischler» —carpintero de muebles— tiene formación reglada en Alemania, y un mueble hecho por un familiar del gremio suele conservarse aunque no encaje en la casa."
+    },
+    "spanishSpeakerNote": {
+      "es": "El posesivo concuerda con lo poseído, no con quien posee: «ihr Großvater» y «ihre Mutter» cambian según el género del sustantivo que sigue. Y fíjate en «ihn»: es «lo» referido a un masculino, «der Tisch»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en alemán sobre la vida cotidiana, encontrar el verbo aunque esté partido o al final, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens"
+    ],
+    "disallowedGrammar": [
+      "Perfekt",
+      "Präteritum",
+      "Konjunktiv",
+      "Passiv",
+      "Genitiv"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 7.2,
+      "maxSentenceWords": 12,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo y futuro con presente. Sin Perfekt, Präteritum ni pasiva. Verbos separables y orden de la frase trabajados en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué explica el texto?",
+      "options": [
+        {
+          "id": "marca",
+          "text": "Por qué conservan una mesa fea con una mancha que nadie quiere quitar"
+        },
+        {
+          "id": "restauracion",
+          "text": "Cómo restaurar un mueble antiguo"
+        },
+        {
+          "id": "mudanza",
+          "text": "Que van a cambiar de piso otra vez"
+        }
+      ],
+      "answer": "marca",
+      "evidence": "dann haben wir nur noch einen alten Tisch.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La última frase lo dice entero: sin la marca, sería solo una mesa vieja."
+        },
+        "incorrect": {
+          "es": "No explican cómo restaurarla: justamente se niegan. Busca la respuesta al amigo."
+        },
+        "strategy": {
+          "es": "Cuando un texto termina respondiendo a una pregunta, esa respuesta es la tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Quién hizo la mesa?",
+      "options": [
+        {
+          "id": "abuelo",
+          "text": "El abuelo de su mujer, que era carpintero"
+        },
+        {
+          "id": "suegra",
+          "text": "Su suegra"
+        },
+        {
+          "id": "amigo",
+          "text": "Un amigo carpintero"
+        }
+      ],
+      "answer": "abuelo",
+      "evidence": "Der Tisch kommt von ihrem Großvater. Er war Tischler.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y la hizo para su hija, que es la suegra del narrador."
+        },
+        "incorrect": {
+          "es": "La suegra es para quien se hizo la mesa, no quien la hizo. Busca «Tischler»."
+        },
+        "strategy": {
+          "es": "En una cadena familiar, dibuja quién es quién antes de responder. El texto la da entera."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El amigo pregunta «warum schleift ihr die Stelle nicht ab?». ¿Qué propone?",
+      "options": [
+        {
+          "id": "lijar",
+          "text": "Lijar la mancha"
+        },
+        {
+          "id": "tapar",
+          "text": "Taparla con un mantel"
+        },
+        {
+          "id": "pintar",
+          "text": "Pintar la mesa entera"
+        }
+      ],
+      "answer": "lijar",
+      "evidence": "warum schleift ihr die Stelle nicht ab? Ich sage ihm: dann haben wir nur noch einen alten Tisch.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Y la respuesta lo confirma: si se quita, se pierde lo único que la distingue."
+        },
+        "incorrect": {
+          "es": "Un mantel o una capa de pintura no harían que la mesa fuera «solo vieja». Fíjate en la respuesta."
+        },
+        "strategy": {
+          "es": "Si la respuesta a una propuesta habla de pérdida, la propuesta implicaba eliminar algo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué llevan cuarenta años discutiendo sobre la mancha?",
+      "options": [
+        {
+          "id": "origen",
+          "text": "Porque no se ponen de acuerdo sobre qué la causó"
+        },
+        {
+          "id": "limpieza",
+          "text": "Porque no saben cómo limpiarla"
+        },
+        {
+          "id": "valor",
+          "text": "Porque discuten cuánto vale la mesa"
+        }
+      ],
+      "answer": "origen",
+      "evidence": "das ist von einer heißen Pfanne, 1979. Ihre Schwester sagt: nein, das ist Tinte.",
+      "feedback": {
+        "correct": {
+          "es": "Sí: una dice sartén caliente, la otra dice tinta. Cuarenta años sin resolverlo."
+        },
+        "incorrect": {
+          "es": "No se habla de limpieza ni de precio. Lee las dos versiones enfrentadas."
+        },
+        "strategy": {
+          "es": "Cuando dos personajes dan versiones distintas del mismo hecho, ahí está el motivo de la discusión."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la mesa es demasiado grande para su cocina.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Er ist alt und er ist zu groß für unsere Küche.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y aun así no la tiran. Ese contraste abre el texto."
+        },
+        "incorrect": {
+          "es": "Busca la segunda frase. Dice dos cosas de la mesa y las dos son negativas."
+        },
+        "strategy": {
+          "es": "La expresión «zu + adjetivo» significa demasiado. Marca un exceso, no una cualidad."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "reference",
+      "skill": "reference",
+      "prompt": "En «Meine Frau will ihn nicht wegwerfen», ¿a qué se refiere «ihn»?",
+      "options": [
+        {
+          "id": "mesa",
+          "text": "A la mesa"
+        },
+        {
+          "id": "abuelo",
+          "text": "Al abuelo"
+        },
+        {
+          "id": "amigo",
+          "text": "Al amigo"
+        }
+      ],
+      "answer": "mesa",
+      "evidence": "Unser Tisch ist nicht schön … Meine Frau will ihn nicht wegwerfen.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. «Der Tisch» es masculino, y su forma en acusativo es «ihn»."
+        },
+        "incorrect": {
+          "es": "Nadie tira a una persona. El pronombre es masculino y remite al sustantivo masculino anterior."
+        },
+        "strategy": {
+          "es": "Para resolver «ihn», busca el sustantivo masculino más cercano por delante. Aquí, der Tisch."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en alemán sobre un objeto de tu casa que no tirarías. Usa cuatro posesivos distintos y dos pronombres en acusativo."
+    },
+    "minWords": 25,
+    "maxWords": 60,
+    "hints": [
+      "Unser… ist nicht schön.",
+      "Er kommt von meinem…",
+      "Ich will ihn nicht wegwerfen.",
+      "In der Mitte ist…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán A1: Nuestra mesa | WeLearn"
+    },
+    "description": {
+      "es": "Lee un retrato de objeto en alemán A1 y practica los posesivos y los pronombres personales en acusativo. Con vocabulario y seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/a1/lectura/unser-tisch",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-a1-der-zug-faehrt-ab",
+      "de-a1-anleitung-fuer-den-notdienst"
+    ]
+  }
+}

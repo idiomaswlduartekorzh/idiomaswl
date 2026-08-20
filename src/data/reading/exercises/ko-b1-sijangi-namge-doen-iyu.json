@@ -1,0 +1,493 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-b1-sijangi-namge-doen-iyu",
+  "status": "published",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Coreano B1",
+    "topik": 3,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. B1 se sitúa alrededor del TOPIK II nivel 3, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "sijangi-namge-doen-iyu",
+  "series": {
+    "id": "coreano-b1-lectura-10",
+    "episode": 2,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-b1-gyedani-yeoseot-gae",
+    "nextExerciseId": "ko-b1-ani-rago-malhaneun-yeonseup"
+  },
+  "classification": {
+    "genre": "reportaje local",
+    "topic": "un mercado que evitó el derribo",
+    "intent": "learning",
+    "tags": [
+      "coreano b1",
+      "lectura",
+      "pasiva",
+      "게 되다"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Por qué el mercado sigue en pie"
+    },
+    "intro": {
+      "es": "Un mercado de 1961 que iba a ser derribado y hoy tiene lista de espera para un puesto. Lectura de coreano B1 con la pasiva y 게 되다."
+    },
+    "mission": {
+      "es": "Averigua qué decisión salvó el mercado, y quién la tomó."
+    },
+    "targetText": "1961년에 지어진 중앙시장은 2015년에 철거될 예정이었어요. 시청은 그 자리에 아파트를 세우려고 했어요. 계획은 이미 승인되었고, 상인들에게 통보도 되었어요. 그때 시장에서 장사하던 상인은 백열 명이었어요. 대부분 예순 살이 넘은 분들이었어요. 상인들은 시위를 하지 않았어요. 대신 다른 일을 했어요. 시장 안에 있는 빈 가게 세 곳을 청소하고, 거기서 요리 수업을 열기로 했어요. 수업료는 없었어요. 조건이 하나 있었어요. 재료를 그 시장에서 사야 했어요. 첫 달에 여덟 명이 왔어요. 여섯 달 후에는 백 명이 넘었어요. 대부분 삼십 대 여자들이었어요. 수업에서 배운 것은 요리만이 아니었어요. 어떤 생선이 그날 좋은지, 어느 가게 두부가 단단한지도 배웠어요. 그런 것은 인터넷에 없어요. 상인들이 알려 줘야 알 수 있어요. 수업이 끝나고 나서 사람들은 시장에서 장을 봤어요. 처음에는 재료만 샀어요. 세 달 후에는 다른 것도 샀어요. 한 상인은 이렇게 말했어요. 우리는 손님을 부른 게 아니에요. 손님이 아는 사람이 되게 만든 거예요. 아는 사람이 있는 시장은 대신할 수 없어요. 아파트는 대신할 수 있어요. 그 사람들이 시장에 대해 쓴 글이 인터넷에 퍼지게 되었어요. 시청은 계획을 바꿨어요. 공식적으로는 예산 문제라고 발표되었어요. 하지만 그때 시의원이었던 사람은 다른 이야기를 해요. 아파트를 지으면 표를 잃을 것 같았어요. 지금 중앙시장에는 상인이 백사십 명 있어요. 가게를 얻으려면 기다려야 해요. 대기자가 열아홉 명이에요. 요리 수업은 아직 열려요. 매주 토요일 오전 열 시예요. 처음 수업을 시작한 상인 두 분은 이제 안 계세요. 하지만 그분들의 딸이 지금 그 수업을 해요. 시장을 지킨 것은 시위가 아니었어요. 시장을 필요로 하는 사람을 새로 만든 것이었어요.",
+    "wordCount": 220,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Reconocer la pasiva coreana (철거될, 승인되었고, 발표되었어요) y saber quién actúa cuando el agente desaparece."
+      },
+      {
+        "es": "Usar 게 되다 para lo que acaba ocurriendo sin que nadie lo decida."
+      },
+      {
+        "es": "Distinguir la versión oficial de un hecho de la versión de un testigo."
+      }
+    ],
+    "grammarFocus": [
+      "pasiva-jeosudo-b1",
+      "ge-doeda-b1",
+      "clausulas-relativas-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "철거될",
+        "lemma": "철거되다",
+        "reading": "cheolgeodoel",
+        "glosses": {
+          "es": "ser derribado, demolido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "승인되었고",
+        "lemma": "승인되다",
+        "reading": "seunginoeeotgo",
+        "glosses": {
+          "es": "fue aprobado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "통보",
+        "lemma": "통보",
+        "reading": "tongbo",
+        "glosses": {
+          "es": "notificación oficial"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "상인",
+        "lemma": "상인",
+        "reading": "sangin",
+        "glosses": {
+          "es": "comerciante, tendero"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "시위",
+        "lemma": "시위",
+        "reading": "siwi",
+        "glosses": {
+          "es": "manifestación, protesta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "수업료",
+        "lemma": "수업료",
+        "reading": "sueopryo",
+        "glosses": {
+          "es": "precio de la clase, matrícula"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "예산",
+        "lemma": "예산",
+        "reading": "yesan",
+        "glosses": {
+          "es": "presupuesto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "대기자",
+        "lemma": "대기자",
+        "reading": "daegija",
+        "glosses": {
+          "es": "persona en lista de espera"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Los mercados tradicionales coreanos han perdido terreno frente a los supermercados y muchos han sido derribados para construir vivienda. Que uno crezca es lo bastante raro como para que lo estudien."
+    },
+    "spanishSpeakerNote": {
+      "es": "La pasiva coreana se forma con 되다 sobre nombres de acción: 철거하다 (derribar) → 철거되다 (ser derribado). Y 게 되다 expresa que algo acaba pasando: 퍼지게 되었어요 es «acabó difundiéndose», sin señalar a nadie como responsable."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo en coreano que desarrolla una idea y cambia de dirección, distinguir el hecho de la interpretación, y justificar una inferencia cruzando dos pasajes separados."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas",
+      "antes-despues-a2",
+      "capacidad-rl-su-itda-a2",
+      "clausulas-relativas-a2",
+      "condicional-eumyeon-a2",
+      "conector-aseo-a2",
+      "cuanto-eolmana-a2",
+      "discurso-reportado-a2",
+      "durante-neun-dongane-a2",
+      "futuro-rl-geoyeyo-a2",
+      "honorificos-a2",
+      "intencion-ryogo-hada-a2",
+      "negacion-ji-anta-a2",
+      "obligacion-aya-hada-a2",
+      "parecer-neun-geot-gatda-a2",
+      "particulas-recipiente-a2",
+      "progresivo-go-itda-a2",
+      "razon-gittaemune-a2",
+      "razon-niikka-a2",
+      "solo-tambien-man-do-a2",
+      "verbos-irregulares-pasado-a2",
+      "alternativa-geona-b1",
+      "causal-gi-ttaemune-b1",
+      "causativa-shichang-b1",
+      "condicional-erado-eurely-b1",
+      "despues-gona-seo-b1",
+      "estado-mantener-chae-b1",
+      "forzosidad-subakkeneopsda-b1",
+      "futuro-intencion-b1",
+      "ge-doeda-b1",
+      "inmediato-jamaja-b1",
+      "kiro-hada-b1",
+      "obligacion-eoyahada-b1",
+      "observacion-neyo-b1",
+      "oportunidad-gime-b1",
+      "pasiva-jeosudo-b1",
+      "passado-reminiscencia-b1",
+      "posibilidad-su-itda-b1",
+      "proporcion-euttorok-b1",
+      "proposito-dorok-b1",
+      "simultaneo-eumyeonseo-b1"
+    ],
+    "disallowedGrammar": [
+      "registro literario",
+      "hanja sin glosa",
+      "dialecto regional"
+    ],
+    "maxOutOfLevelVocabularyPercent": 7,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 5.5,
+      "maxSentenceWords": 13,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Prosa B1 con 더라/던, 게 되다, 채, 을수록 y pasiva. Sin registro literario ni hanja sin glosar. Inferencia moderada: exige cruzar dos pasajes."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es la tesis del reportaje?",
+      "options": [
+        {
+          "id": "clientes",
+          "text": "Que el mercado se salvó creando clientes nuevos, no protestando"
+        },
+        {
+          "id": "presupuesto",
+          "text": "Que el mercado se salvó porque el ayuntamiento se quedó sin dinero"
+        },
+        {
+          "id": "ley",
+          "text": "Que una ley de patrimonio impidió el derribo"
+        }
+      ],
+      "answer": "clientes",
+      "evidence": "시장을 지킨 것은 시위가 아니었어요. 시장을 필요로 하는 사람을 새로 만든 것이었어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la última frase lo dice con una oposición: no fue la protesta, fue la clientela nueva."
+        },
+        "incorrect": {
+          "es": "El presupuesto es la versión oficial, que el propio texto pone en duda. Y no se menciona ninguna ley."
+        },
+        "strategy": {
+          "es": "La estructura «no fue X, fue Y» concentra la tesis. Búscala al final del reportaje."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué condición tenían las clases de cocina?",
+      "options": [
+        {
+          "id": "comprar",
+          "text": "Comprar los ingredientes en el propio mercado"
+        },
+        {
+          "id": "pagar",
+          "text": "Pagar una matrícula mensual"
+        },
+        {
+          "id": "edad",
+          "text": "Tener más de treinta años"
+        }
+      ],
+      "answer": "comprar",
+      "evidence": "수업료는 없었어요. 조건이 하나 있었어요. 재료를 그 시장에서 사야 했어요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y era la única condición: las clases eran gratis."
+        },
+        "incorrect": {
+          "es": "El texto dice expresamente que no había matrícula. Y la edad es un dato de quién vino, no un requisito."
+        },
+        "strategy": {
+          "es": "Cuando un texto dice «había una condición», la condición viene en la frase siguiente. No la busques antes."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice 인터넷에 퍼지게 되었어요. ¿Qué aporta 게 되다?",
+      "options": [
+        {
+          "id": "acabo",
+          "text": "Que acabó difundiéndose, sin que nadie lo planeara"
+        },
+        {
+          "id": "obligado",
+          "text": "Que alguien lo obligó a difundirse"
+        },
+        {
+          "id": "prohibido",
+          "text": "Que se prohibió su difusión"
+        }
+      ],
+      "answer": "acabo",
+      "evidence": "그 사람들이 시장에 대해 쓴 글이 인터넷에 퍼지게 되었어요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Los comerciantes montaron las clases; que los textos se difundieran no formaba parte del plan."
+        },
+        "incorrect": {
+          "es": "게 되다 no obliga ni prohíbe: marca un resultado no buscado. Fíjate en que el sujeto son los textos, no una persona."
+        },
+        "strategy": {
+          "es": "게 되다 señala que algo llegó a ocurrir. Si lo ves, pregúntate quién NO lo decidió."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el reportaje cita al concejal además de la versión oficial?",
+      "options": [
+        {
+          "id": "dudar",
+          "text": "Para poner en duda que el motivo fuera realmente presupuestario"
+        },
+        {
+          "id": "confirmar",
+          "text": "Para confirmar que el problema fue el presupuesto"
+        },
+        {
+          "id": "culpar",
+          "text": "Para culpar al concejal de la decisión"
+        }
+      ],
+      "answer": "dudar",
+      "evidence": "공식적으로는 예산 문제라고 발표되었어요. 하지만 그때 시의원이었던 사람은 다른 이야기를 해요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El 공식적으로는 («oficialmente») ya avisa, y el 하지만 introduce la otra versión: los votos."
+        },
+        "incorrect": {
+          "es": "No confirma la versión oficial: la contrapone. Y no culpa a nadie, lo usa como testigo."
+        },
+        "strategy": {
+          "es": "La palabra «oficialmente» rara vez es neutral en un reportaje. Suele anunciar que viene otra versión."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: hoy hay más comerciantes en el mercado que cuando iban a derribarlo.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "그때 시장에서 장사하던 상인은 백열 명이었어요 … 지금 중앙시장에는 상인이 백사십 명 있어요.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero: eran 백열 명 (110) y ahora son 백사십 명 (140). Treinta comerciantes más, y aún hay lista de espera."
+        },
+        "incorrect": {
+          "es": "Compara las dos cifras que da el texto: 백열 명 entonces y 백사십 명 ahora. Haz la resta."
+        },
+        "strategy": {
+          "es": "Cuando un texto da la misma magnitud en dos momentos, haz la resta antes de decidir. Los números coreanos se leen despacio."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "reference",
+      "skill": "reference",
+      "prompt": "En 그분들의 딸이 지금 그 수업을 해요, ¿de quién es hija?",
+      "options": [
+        {
+          "id": "dos",
+          "text": "De las dos comerciantes que empezaron las clases"
+        },
+        {
+          "id": "concejal",
+          "text": "Del concejal citado en el reportaje"
+        },
+        {
+          "id": "alumnas",
+          "text": "De una de las alumnas de treinta y tantos"
+        }
+      ],
+      "answer": "dos",
+      "evidence": "처음 수업을 시작한 상인 두 분은 이제 안 계세요. 하지만 그분들의 딸이 지금 그 수업을 해요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. 그분들 remite a las dos comerciantes de la frase anterior, nombradas con el honorífico 분."
+        },
+        "incorrect": {
+          "es": "El demostrativo 그분들 recoge a las personas mencionadas justo antes. Lee la frase anterior."
+        },
+        "strategy": {
+          "es": "El honorífico 분 solo se usa con personas a las que se respeta. Eso ya acota a quién puede referirse."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en coreano sobre un sitio de tu ciudad que estuvo a punto de desaparecer. Usa dos pasivas con 되다 y 게 되다 dos veces."
+    },
+    "minWords": 60,
+    "maxWords": 120,
+    "hints": [
+      "…년에 지어진 …는 …될 예정이었어요.",
+      "계획은 이미 승인되었어요.",
+      "…게 되었어요.",
+      "…을 지킨 것은 …이 아니었어요."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano B1: Por qué el mercado sigue en pie | WeLearn"
+    },
+    "description": {
+      "es": "Lee un reportaje en coreano B1 y practica la pasiva y 게 되다 para lo que acaba ocurriendo. Con vocabulario romanizado y seis preguntas."
+    },
+    "canonicalPath": "/practica/coreano/b1/lectura/sijangi-namge-doen-iyu",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-b1-gyedani-yeoseot-gae",
+      "ko-b1-ani-rago-malhaneun-yeonseup"
+    ]
+  }
+}

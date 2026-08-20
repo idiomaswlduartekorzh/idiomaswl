@@ -1,0 +1,470 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-a2-nikogda-ne-vykhodi-s-mokrymi-volosami",
+  "status": "published",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Ruso A2"
+  },
+  "slug": "nikogda-ne-vykhodi-s-mokrymi-volosami",
+  "series": {
+    "id": "ruso-a2-lectura-10",
+    "episode": 10,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-a2-v-derevnyu-i-v-derevne",
+    "nextExerciseId": null
+  },
+  "classification": {
+    "genre": "lista de consejos",
+    "topic": "las ocho reglas del invierno, escritas a mano",
+    "intent": "learning",
+    "tags": [
+      "ruso a2",
+      "lectura",
+      "imperativo",
+      "adverbios de tiempo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Nunca salgas con el pelo mojado"
+    },
+    "intro": {
+      "es": "Ocho reglas escritas a mano en cinco minutos por un vecino, y cada una es la mala historia de alguien. Lectura de ruso A2."
+    },
+    "mission": {
+      "es": "Averigua a qué se refiere la regla del gorro, según el narrador."
+    },
+    "targetText": "Когда я приехал в Россию в октябре, мой сосед Игорь дал мне список. Он написал его от руки, за пять минут, и этот список полезнее всех сайтов о России.\n\n«Одевайся слоями. Три тонких лучше, чем один толстый».\n\n«Никогда не выходи на улицу с мокрыми волосами. Никогда».\n\n«Всегда носи шапку. Не потому, что холодно. Потому что ухо болит».\n\n«Сначала сними шапку, потом заходи в магазин. Иначе через две минуты ты вспотеешь».\n\n«Не пей алкоголь, когда тебе холодно на улице. Сначала зайди в тепло».\n\n«Купи вторые ботинки. Одни всегда мокрые».\n\n«Зимой выходи раньше. Всегда раньше. Не пять минут — двадцать».\n\n«Не держи телефон в кармане куртки. На морозе он умирает за десять минут».\n\n«Смотри вниз, когда идёшь. Лёд не видно, лёд слышно».\n\n«Если упал — не вставай сразу. Сначала посмотри, что болит».\n\nЯ прочитал список и подумал, что это слишком. Потом наступил январь.\n\nСейчас я знаю, что каждая строчка в этом списке — это чья-то плохая история. Про шапку — это про ухо Игоря в 1998 году. Про лёд — это про его руку.\n\nЯ держу список в кухне. Иногда я даю его другим иностранцам. Они тоже сначала смеются.",
+    "wordCount": 182,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Formar el imperativo de tú, afirmativo y negativo: одевайся, не выходи, купи, зайди."
+      },
+      {
+        "es": "Colocar los adverbios de tiempo: сначала, потом, всегда, никогда, иногда, раньше."
+      },
+      {
+        "es": "Reconocer que detrás de una norma práctica hay una experiencia concreta."
+      }
+    ],
+    "grammarFocus": [
+      "imperativo",
+      "adverbios-tiempo",
+      "tiempo-expresiones"
+    ],
+    "vocabulary": [
+      {
+        "surface": "слоями",
+        "lemma": "слой",
+        "glosses": {
+          "es": "por capas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "тонких",
+        "lemma": "тонкий",
+        "glosses": {
+          "es": "finos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "толстый",
+        "lemma": "толстый",
+        "glosses": {
+          "es": "gordo, grueso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "шапку",
+        "lemma": "шапка",
+        "glosses": {
+          "es": "gorro de invierno"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "вспотеешь",
+        "lemma": "вспотеть",
+        "glosses": {
+          "es": "sudarás"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ботинки",
+        "lemma": "ботинок",
+        "glosses": {
+          "es": "botas, zapatos cerrados"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "строчка",
+        "lemma": "строчка",
+        "glosses": {
+          "es": "línea, renglón"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "лёд",
+        "lemma": "лёд",
+        "glosses": {
+          "es": "hielo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Quitarse el gorro al entrar en un local es una norma práctica en Rusia, no de cortesía: la diferencia de temperatura entre la calle y el interior puede pasar de treinta grados."
+    },
+    "spanishSpeakerNote": {
+      "es": "El imperativo de tú se forma quitando la terminación del presente: «выходи», «купи», «смотри». Para prohibir, se le pone «не» delante y suele ir en imperfectivo: «не выходи», «не пей»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato en ruso sobre hechos pasados, distinguir el aspecto imperfectivo del perfectivo, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento",
+      "acusativo-movimiento",
+      "adverbios-tiempo",
+      "aspecto-verbal",
+      "comparativos",
+      "condicional",
+      "dativo-uso",
+      "futuro-imperfectivo",
+      "futuro-perfectivo",
+      "genitivo-cantidad",
+      "imperativo",
+      "instrumental-uso",
+      "oraciones-subordinadas",
+      "pasado-verbos",
+      "plurales-irregulares",
+      "prepositivo-avanzado",
+      "pronombres-reflexivos",
+      "pronombres-relativos",
+      "superlativos",
+      "verbos-movimiento",
+      "verbos-prefijados"
+    ],
+    "disallowedGrammar": [
+      "participios (причастия)",
+      "gerundios (деепричастия)",
+      "discurso indirecto complejo",
+      "voz pasiva con -ся literaria"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 5.7,
+      "maxSentenceWords": 16,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Pasado y futuro con los dos aspectos, instrumental, condicional con бы, verbos prefijados de movimiento. Sin participios ni gerundios. Acento sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué comprende el narrador con el tiempo?",
+      "options": [
+        {
+          "id": "historia",
+          "text": "Que cada línea de la lista es la mala experiencia concreta de alguien"
+        },
+        {
+          "id": "exagerado",
+          "text": "Que la lista exageraba y no hacía falta"
+        },
+        {
+          "id": "frio",
+          "text": "Que el invierno ruso es más suave de lo que dicen"
+        }
+      ],
+      "answer": "historia",
+      "evidence": "каждая строчка в этом списке — это чья-то плохая история. Про шапку — это про ухо Игоря в 1998 году.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y da dos ejemplos: el oído y la mano de Ígor."
+        },
+        "incorrect": {
+          "es": "Al principio pensó que era exagerado, y luego llegó enero. Lee el penúltimo párrafo."
+        },
+        "strategy": {
+          "es": "Si el narrador dice «сейчас я знаю», lo que sigue es lo que aprendió."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto antes recomienda salir en invierno?",
+      "options": [
+        {
+          "id": "veinte",
+          "text": "Veinte minutos antes"
+        },
+        {
+          "id": "cinco",
+          "text": "Cinco minutos antes"
+        },
+        {
+          "id": "dos",
+          "text": "Dos minutos antes"
+        }
+      ],
+      "answer": "veinte",
+      "evidence": "«Зимой выходи раньше. Всегда раньше. Не пять минут — двадцать».",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: los cinco minutos son justamente lo que descarta."
+        },
+        "incorrect": {
+          "es": "Los cinco van precedidos de «не» y los dos son lo que tardas en sudar con el gorro puesto."
+        },
+        "strategy": {
+          "es": "En la fórmula «не A — B», A es lo insuficiente y B la respuesta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "La primera regla dice «одевайся слоями». ¿Qué significa?",
+      "options": [
+        {
+          "id": "capas",
+          "text": "Vístete por capas"
+        },
+        {
+          "id": "lana",
+          "text": "Vístete de lana"
+        },
+        {
+          "id": "rapido",
+          "text": "Vístete rápido"
+        }
+      ],
+      "answer": "capas",
+      "evidence": "«Одевайся слоями. Три тонких лучше, чем один толстый».",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y la frase siguiente lo explica: tres finas mejor que una gruesa."
+        },
+        "incorrect": {
+          "es": "La frase siguiente compara tres prendas finas con una gruesa: habla de cantidad, no de material."
+        },
+        "strategy": {
+          "es": "Si la frase siguiente compara cantidades, la palabra anterior habla de cómo se acumulan."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué la regla del gorro no dice «porque hace frío»?",
+      "options": [
+        {
+          "id": "oido",
+          "text": "Porque el motivo concreto es el dolor de oído, que Ígor sufrió en 1998"
+        },
+        {
+          "id": "moda",
+          "text": "Porque en Rusia el gorro es cuestión de elegancia"
+        },
+        {
+          "id": "norma",
+          "text": "Porque es obligatorio por ley"
+        }
+      ],
+      "answer": "oido",
+      "evidence": "«Всегда носи шапку. Не потому, что холодно. Потому что ухо болит» … Про шапку — это про ухо Игоря в 1998 году.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el narrador lo ata al final con la fecha exacta."
+        },
+        "incorrect": {
+          "es": "No es elegancia ni ley: la propia regla descarta el frío como razón. Cruza la regla con el penúltimo párrafo."
+        },
+        "strategy": {
+          "es": "Cuando una regla niega el motivo obvio, el verdadero está en otra parte del texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: Ígor escribió la lista a mano en unos cinco minutos.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Он написал его от руки, за пять минут, и этот список полезнее всех сайтов о России.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y el narrador la considera más útil que cualquier web."
+        },
+        "incorrect": {
+          "es": "La respuesta está en la primera frase larga del texto."
+        },
+        "strategy": {
+          "es": "La estructura «за + tiempo» dice cuánto se tardó en completar algo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena las reglas según el texto.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Vístete por capas"
+        },
+        {
+          "id": "p2",
+          "text": "Nunca salgas con el pelo mojado"
+        },
+        {
+          "id": "p3",
+          "text": "Lleva siempre gorro"
+        },
+        {
+          "id": "p4",
+          "text": "Quítatelo antes de entrar en una tienda"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "«Одевайся слоями…» «Никогда не выходи на улицу с мокрыми волосами…» «Всегда носи шапку…» «Сначала сними шапку, потом заходи в магазин…»",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: el texto pone cada regla en su propia línea."
+        },
+        "incorrect": {
+          "es": "Cada regla va entre comillas y en una línea distinta: sigue ese orden."
+        },
+        "strategy": {
+          "es": "Si el texto separa las reglas en líneas, el orden ya está dado."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en ruso con consejos para alguien que llega a tu ciudad. Usa cinco imperativos, dos de ellos negativos, y cuatro adverbios de tiempo."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "Одевайся слоями.",
+      "Никогда не выходи с мокрыми волосами.",
+      "Сначала сними шапку, потом заходи.",
+      "Зимой выходи раньше."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso A2: nunca salgas con el pelo mojado | WeLearn"
+    },
+    "description": {
+      "es": "Lee una lista de consejos en ruso A2 y practica el imperativo y los adverbios de tiempo. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/a2/lectura/nikogda-ne-vykhodi-s-mokrymi-volosami",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-a2-v-derevnyu-i-v-derevne"
+    ]
+  }
+}

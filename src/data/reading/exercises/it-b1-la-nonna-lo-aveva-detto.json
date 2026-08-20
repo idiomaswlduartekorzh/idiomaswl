@@ -1,0 +1,475 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-b1-la-nonna-lo-aveva-detto",
+  "status": "published",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Italiano B1"
+  },
+  "slug": "la-nonna-lo-aveva-detto",
+  "series": {
+    "id": "italiano-b1-lectura-10",
+    "episode": 8,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-b1-il-negozio-che-ha-aperto-troppo-tardi",
+    "nextExerciseId": "it-b1-mi-dica-lei-cosa-devo-fare"
+  },
+  "classification": {
+    "genre": "memoria familiar",
+    "topic": "una abuela que nunca daba consejos a la cara",
+    "intent": "learning",
+    "tags": [
+      "italiano b1",
+      "lectura",
+      "trapassato prossimo",
+      "condizionale passato"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La abuela lo había dicho"
+    },
+    "intro": {
+      "es": "Sesenta años sin dar un solo consejo de frente. Los daba a un tercero, elegido para que te llegara en dos días. Uno tardó cuarenta años. Lectura de italiano B1."
+    },
+    "mission": {
+      "es": "Averigua qué decidió hacer el narrador con el mensaje de 1984."
+    },
+    "targetText": "Mia nonna Elide non ha mai dato un consiglio in faccia a nessuno. In sessant'anni, nemmeno uno.\n\nIl suo metodo era un altro. Se pensava che tu stessi sbagliando, lo diceva a una terza persona, e la scelta della terza persona non era mai casuale: sceglieva sempre qualcuno che te lo avrebbe riferito entro due giorni.\n\nQuando avevo diciassette anni volevo lasciare la scuola e andare a lavorare in un magazzino. A me non ha detto niente. Ha detto a mio cugino Ettore, davanti al bar: tuo cugino ha buone mani, ma quello che ha in testa non gli servirà in un magazzino. Ettore me lo ha riferito quella sera stessa, come previsto.\n\nHo finito la scuola. Non per il consiglio: perché un consiglio che arriva così non ti obbliga a niente. Puoi ignorarlo senza offendere nessuno e senza discutere con nessuno. Ci ho messo vent'anni a capire che era esattamente questo il punto.\n\nNonna è morta a novembre, a novantuno anni. Al funerale è venuta la signora Tosi, che ha novantatré anni e abitava di fronte a lei fino al 1990. Mi ha preso per un braccio e mi ha detto una cosa che non mi aspettavo: nel 1984 tua nonna mi aveva dato un messaggio per tua madre, e io non gliel'ho mai consegnato.\n\nLe ho chiesto perché. Ha risposto: perché era troppo pesante, e allora avevo pensato che fosse meglio aspettare. Poi ho aspettato quarant'anni.\n\nIl messaggio non era una frase terribile. Era questo: dille che quando sono nata io non c'era nessuno che avesse tempo per me, e che lei con i suoi figli ha fatto meglio di sua madre e meglio di me.\n\nAvrei potuto non dirlo. Ci ho pensato tre giorni. Ho pensato che se lo avessi tenuto per me sarei diventato la seconda persona che non consegna un messaggio, e che quarant'anni erano già abbastanza.\n\nL'ho detto a mia madre a dicembre, in cucina, mentre lei asciugava i piatti. Non si è girata. Ha continuato ad asciugare e ha detto due parole: lo sapevo. Poi ha aggiunto: non lo sapevo, ma lo speravo, e a settantadue anni è la stessa cosa.\n\nAdesso ho quarantasei anni e ho un dubbio che non riesco a risolvere. Se avessi un figlio che sta sbagliando, glielo direi in faccia o cercherei una signora Tosi?",
+    "wordCount": 387,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Usar el trapassato prossimo para lo anterior a otro pasado: mi aveva dato, avevo pensato."
+      },
+      {
+        "es": "Formar el condizionale passato: avrei potuto, sarei diventato, te lo avrebbe riferito."
+      },
+      {
+        "es": "Reconocer un método de comunicación que el texto describe sin nombrarlo."
+      }
+    ],
+    "grammarFocus": [
+      "trapassato-prossimo-b1",
+      "condizionale-passato-b1",
+      "pronomi-indiretti-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "magazzino",
+        "lemma": "magazzino",
+        "glosses": {
+          "es": "almacén. ¡No es una revista!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "riferito",
+        "lemma": "riferire",
+        "glosses": {
+          "es": "transmitido, contado a otro"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "casuale",
+        "lemma": "casuale",
+        "glosses": {
+          "es": "fruto del azar, sin intención"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pesante",
+        "lemma": "pesante",
+        "glosses": {
+          "es": "difícil de llevar, duro"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "asciugava",
+        "lemma": "asciugare",
+        "glosses": {
+          "es": "secaba"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "girata",
+        "lemma": "girarsi",
+        "glosses": {
+          "es": "vuelta; «non si è girata» es no se dio la vuelta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "speravo",
+        "lemma": "sperare",
+        "glosses": {
+          "es": "esperaba, deseaba"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "consegna",
+        "lemma": "consegnare",
+        "glosses": {
+          "es": "entrega"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El consejo transmitido por un tercero es una forma reconocible de comunicación familiar en el sur de Italia: permite decir algo sin obligar a nadie a responder ni a discutir en público."
+    },
+    "spanishSpeakerNote": {
+      "es": "Aquí aparecen los pronombres combinados: «me lo ha riferito», «non gliel'ho consegnato», «glielo direi». El indirecto se pone delante y cambia de forma: mi + lo = me lo; gli/le + lo = glielo. El español hace «se lo» en los dos casos."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto italiano largo que desarrolla una idea y cambia de dirección, distinguir el hecho de la opinión por la forma del verbo, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere",
+      "avverbi-frequenza-modo-a2",
+      "ci-vuole-vogliono-a2",
+      "comparativi-a2",
+      "condizionale-presente-a2",
+      "congiunzioni-logiche-a2",
+      "da-presente-a2",
+      "forma-cortesia-a2",
+      "futuro-probabilita-a2",
+      "futuro-semplice-a2",
+      "imperfetto-a2",
+      "passato-prossimo-avere-a2",
+      "passato-prossimo-essere-a2",
+      "periodo-ipotetico-reale-a2",
+      "piacere-verbi-simili-a2",
+      "pronomi-diretti-a2",
+      "pronomi-indiretti-a2",
+      "pronomi-relativi-a2",
+      "stare-per-a2",
+      "trapassato-prossimo-a2",
+      "verbi-riflessivi-a2",
+      "condizionale-passato-b1",
+      "congiuntivo-passato-b1",
+      "congiuntivo-presente-b1",
+      "futuro-anteriore-b1",
+      "periodo-ipotetico-b1",
+      "trapassato-prossimo-b1"
+    ],
+    "disallowedGrammar": [
+      "passato remoto",
+      "trapassato remoto",
+      "infinito sostantivato letterario",
+      "costruzioni participiali estese"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 13.3,
+      "maxSentenceWords": 34,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Congiuntivo presente y passato, condizionale passato, futuro anteriore, trapassato prossimo y las tres condicionales. El congiuntivo imperfetto aparece solo dentro del periodo ipotetico dell'impossibilità, que es el propio tema del nivel. Sin passato remoto."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué explica el texto sobre el método de la abuela?",
+      "options": [
+        {
+          "id": "libertad",
+          "text": "Que un consejo que llega por un tercero no obliga a nada y se puede ignorar sin discutir"
+        },
+        {
+          "id": "cobardia",
+          "text": "Que era cobarde y evitaba los conflictos por miedo"
+        },
+        {
+          "id": "secreto",
+          "text": "Que quería que sus consejos quedaran en secreto"
+        }
+      ],
+      "answer": "libertad",
+      "evidence": "un consiglio che arriva così non ti obbliga a niente. Puoi ignorarlo senza offendere nessuno e senza discutere con nessuno.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el narrador añade que tardó veinte años en ver que eso era precisamente lo buscado."
+        },
+        "incorrect": {
+          "es": "El texto no la juzga de cobarde, y los consejos sí llegaban. Busca la frase sobre lo que un consejo así no obliga."
+        },
+        "strategy": {
+          "es": "Cuando el narrador dice cuánto tardó en entender algo, ese algo es la tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Por qué la señora Tosi no entregó el mensaje en 1984?",
+      "options": [
+        {
+          "id": "pesado",
+          "text": "Porque le pareció demasiado duro y prefirió esperar"
+        },
+        {
+          "id": "olvido",
+          "text": "Porque se le olvidó y lo recordó en el funeral"
+        },
+        {
+          "id": "prohibido",
+          "text": "Porque la abuela le pidió después que no lo diera"
+        }
+      ],
+      "answer": "pesado",
+      "evidence": "perché era troppo pesante, e allora avevo pensato che fosse meglio aspettare. Poi ho aspettato quarant'anni.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y su propia frase final reconoce la desproporción de la espera."
+        },
+        "incorrect": {
+          "es": "No dice haberlo olvidado, y la abuela no se retractó. Busca su respuesta a la pregunta «perché»."
+        },
+        "strategy": {
+          "es": "Una respuesta que empieza por «perché» es literal: no hay que deducir."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "A los diecisiete quería trabajar en un «magazzino». ¿Qué es?",
+      "options": [
+        {
+          "id": "almacen",
+          "text": "Un almacén"
+        },
+        {
+          "id": "revista",
+          "text": "Una revista"
+        },
+        {
+          "id": "tienda",
+          "text": "Una tienda de ropa"
+        }
+      ],
+      "answer": "almacen",
+      "evidence": "volevo lasciare la scuola e andare a lavorare in un magazzino … quello che ha in testa non gli servirà in un magazzino",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Es un falso amigo del inglés y del español: no tiene nada de publicación."
+        },
+        "incorrect": {
+          "es": "Se parece a «magacín» pero es un sitio de trabajo físico. Fíjate en que se contrapone a seguir estudiando."
+        },
+        "strategy": {
+          "es": "Si la palabra designa un lugar de trabajo manual en el texto, descarta el sentido de publicación."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué decidió finalmente dar el mensaje a su madre?",
+      "options": [
+        {
+          "id": "cadena",
+          "text": "Para no convertirse él en la segunda persona que no lo entrega"
+        },
+        {
+          "id": "deber",
+          "text": "Porque su abuela le había pedido a él que lo hiciera"
+        },
+        {
+          "id": "herencia",
+          "text": "Porque estaba relacionado con la herencia familiar"
+        }
+      ],
+      "answer": "cadena",
+      "evidence": "Ho pensato che se lo avessi tenuto per me sarei diventato la seconda persona che non consegna un messaggio, e che quarant'anni erano già abbastanza.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo formula con una condicional imposible sobre sí mismo."
+        },
+        "incorrect": {
+          "es": "La abuela no le pidió nada a él, y no hay herencia en juego. Lee la frase con «la seconda persona»."
+        },
+        "strategy": {
+          "es": "Cuando alguien razona con una condicional sobre sí mismo, ahí está su motivo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la madre respondió que ya lo sabía, y después matizó que en realidad lo esperaba.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "ha detto due parole: lo sapevo. Poi ha aggiunto: non lo sapevo, ma lo speravo.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y ella misma explica por qué a los setenta y dos viene a ser lo mismo."
+        },
+        "incorrect": {
+          "es": "Busca la escena de la cocina: dice dos cosas seguidas, y la segunda corrige la primera."
+        },
+        "strategy": {
+          "es": "Si un personaje se corrige en la frase siguiente, las dos versiones cuentan."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena los hechos.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "El consejo de los diecisiete años, por vía de su primo"
+        },
+        {
+          "id": "p2",
+          "text": "La muerte de la abuela en noviembre"
+        },
+        {
+          "id": "p3",
+          "text": "La señora Tosi le cuenta el mensaje de 1984"
+        },
+        {
+          "id": "p4",
+          "text": "Se lo transmite a su madre en diciembre"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Quando avevo diciassette anni volevo lasciare la scuola … Nonna è morta a novembre … nel 1984 tua nonna mi aveva dato un messaggio … L'ho detto a mia madre a dicembre.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: el ejemplo del método, la muerte, la revelación y la entrega."
+        },
+        "incorrect": {
+          "es": "Ojo: el mensaje es de 1984, pero él se entera en el funeral. Ordena por cuándo lo sabe, no por la fecha del mensaje."
+        },
+        "strategy": {
+          "es": "En un relato con saltos temporales, ordena por cuándo se cuenta cada cosa, no por cuándo pasó."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 12–15 frases en italiano sobre un consejo que te llegó por medio de otra persona. Usa cuatro verbos en trapassato prossimo y tres en condizionale passato."
+    },
+    "minWords": 80,
+    "maxWords": 140,
+    "hints": [
+      "Mia nonna non ha mai dato un consiglio in faccia.",
+      "Me lo aveva riferito mio cugino.",
+      "Avrei potuto non dirlo.",
+      "Se lo avessi tenuto per me…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano B1: la abuela lo había dicho | WeLearn"
+    },
+    "description": {
+      "es": "Lee una memoria familiar en italiano B1 y practica el trapassato prossimo y el condizionale passato. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/italiano/b1/lectura/la-nonna-lo-aveva-detto",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-b1-il-negozio-che-ha-aperto-troppo-tardi",
+      "it-b1-mi-dica-lei-cosa-devo-fare"
+    ]
+  }
+}

@@ -1,0 +1,441 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-a1-colocataire-cherche",
+  "status": "published",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Francés A1"
+  },
+  "slug": "colocataire-cherche",
+  "series": {
+    "id": "frances-a1-lectura-10",
+    "episode": 5,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-a1-la-chambre-de-yasmine",
+    "nextExerciseId": "fr-a1-la-recette-de-mamie-aicha"
+  },
+  "classification": {
+    "genre": "anuncio clasificado",
+    "topic": "buscar compañero de piso",
+    "intent": "learning",
+    "tags": [
+      "frances a1",
+      "lectura",
+      "preguntas",
+      "verbo avoir"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Se busca compañero de piso"
+    },
+    "intro": {
+      "es": "Un anuncio de piso compartido con cuatro preguntas incómodas y una cena de los jueves. Lectura de francés A1 con las formas de preguntar."
+    },
+    "mission": {
+      "es": "Averigua qué le falta al piso y por qué hacen justo esas cuatro preguntas."
+    },
+    "targetText": "Recherche colocataire — Appartement rue des Lilas. Nous sommes trois: Amina, Théo et moi, Diego. Nous avons une chambre libre depuis le mois dernier. L’appartement a quatre chambres, une grande cuisine et un balcon. Il n’a pas d’ascenseur: c’est au quatrième étage. Il n’a pas de machine à laver non plus, mais la laverie est en face. Loyer: 340 euros, charges comprises. Quelques questions pour toi. Est-ce que tu fumes? Ici, personne ne fume. Est-ce que tu as un animal? Amina est allergique aux chats. Est-ce que tu travailles la nuit? Théo a des examens en juin et il dort mal. Est-ce que tu cuisines? Nous mangeons ensemble le jeudi. Ce n’est pas obligatoire, mais c’est agréable. Écris-nous.",
+    "wordCount": 117,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Formular y reconocer preguntas con est-ce que."
+      },
+      {
+        "es": "Usar avoir para decir lo que hay y lo que no hay: il a / il n’a pas de."
+      },
+      {
+        "es": "Leer un anuncio real y separar lo que es dato de lo que es condición."
+      }
+    ],
+    "grammarFocus": [
+      "questions",
+      "verbe-avoir",
+      "negation-ne-pas"
+    ],
+    "vocabulary": [
+      {
+        "surface": "colocataire",
+        "lemma": "colocataire",
+        "glosses": {
+          "es": "compañero o compañera de piso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Loyer",
+        "lemma": "loyer",
+        "glosses": {
+          "es": "alquiler (lo que se paga cada mes)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ascenseur",
+        "lemma": "ascenseur",
+        "glosses": {
+          "es": "ascensor"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "charges comprises",
+        "lemma": "charges comprises",
+        "glosses": {
+          "es": "gastos incluidos (agua, luz, comunidad)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "laverie",
+        "lemma": "laverie",
+        "glosses": {
+          "es": "lavandería"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fumes",
+        "lemma": "fumer",
+        "glosses": {
+          "es": "fumas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "allergique",
+        "lemma": "allergique",
+        "glosses": {
+          "es": "alérgica"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "agréable",
+        "lemma": "agréable",
+        "glosses": {
+          "es": "agradable"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "«Charges comprises» es una fórmula fija en los anuncios franceses de alquiler: significa que el precio ya incluye los gastos. Si no lo pone, se pagan aparte."
+    },
+    "spanishSpeakerNote": {
+      "es": "Tras una negación, «un / une / des» se convierte en «de»: «il a un ascenseur» pero «il n’a pas d’ascenseur». Es un cambio que el español no hace y que delata enseguida a un principiante."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto corto en presente sobre la vida cotidiana, localizar quién hace cada cosa y justificar tu respuesta con una frase del texto."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers"
+    ],
+    "disallowedGrammar": [
+      "passé composé",
+      "imparfait",
+      "subjonctif",
+      "conditionnel",
+      "voix passive"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 6.5,
+      "maxSentenceWords": 15,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Texto original en presente. Sin tiempos compuestos. Inferencia limitada a unir dos datos explícitos."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué busca este anuncio exactamente?",
+      "options": [
+        {
+          "id": "persona",
+          "text": "Una persona para ocupar la habitación libre del piso"
+        },
+        {
+          "id": "piso",
+          "text": "Un piso nuevo para tres amigos que se mudan"
+        },
+        {
+          "id": "limpieza",
+          "text": "Alguien que limpie el piso una vez por semana"
+        }
+      ],
+      "answer": "persona",
+      "evidence": "COLOCATAIRE CHERCHÉ … Nous avons une chambre libre depuis le mois dernier.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Ya viven tres personas allí; lo que falta es la cuarta."
+        },
+        "incorrect": {
+          "es": "Lee la primera línea y la frase con «chambre libre». Quien escribe ya tiene piso."
+        },
+        "strategy": {
+          "es": "En un anuncio, el título dice el qué y las primeras líneas dicen el quién. Con esas dos cosas ya lo tienes."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto cuesta el alquiler y qué incluye?",
+      "options": [
+        {
+          "id": "340",
+          "text": "340 euros con los gastos incluidos"
+        },
+        {
+          "id": "340plus",
+          "text": "340 euros más los gastos aparte"
+        },
+        {
+          "id": "400",
+          "text": "400 euros con los gastos incluidos"
+        }
+      ],
+      "answer": "340",
+      "evidence": "Loyer: 340 euros, charges comprises.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. «Charges comprises» es justo lo que evita la sorpresa a fin de mes."
+        },
+        "incorrect": {
+          "es": "El precio está claro; lo que hay que decidir es qué significan las dos palabras que van detrás de la coma."
+        },
+        "strategy": {
+          "es": "En los anuncios de alquiler, lo que va después del precio vale tanto como el precio. Nunca te pares en la cifra."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El anuncio dice «la laverie est en face». ¿Qué es una «laverie»?",
+      "options": [
+        {
+          "id": "lavanderia",
+          "text": "Una lavandería, con lavadoras de pago"
+        },
+        {
+          "id": "tienda",
+          "text": "Una tienda de electrodomésticos"
+        },
+        {
+          "id": "cocina",
+          "text": "Una cocina compartida del edificio"
+        }
+      ],
+      "answer": "lavanderia",
+      "evidence": "Il n’a pas de machine à laver non plus, mais la laverie est en face.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. La frase entera es una compensación: no hay lavadora en casa, pero hay lavandería enfrente."
+        },
+        "incorrect": {
+          "es": "Fíjate en lo que dice la primera mitad de la frase, antes del «mais». Ahí está la pista."
+        },
+        "strategy": {
+          "es": "El «mais» une un problema con su solución. Si entiendes el problema, adivinas la solución."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué preguntan si trabajas de noche?",
+      "options": [
+        {
+          "id": "theo",
+          "text": "Porque Théo tiene exámenes y duerme mal"
+        },
+        {
+          "id": "portail",
+          "text": "Porque el portal del edificio se cierra por la noche"
+        },
+        {
+          "id": "bruit",
+          "text": "Porque los vecinos se han quejado del ruido"
+        }
+      ],
+      "answer": "theo",
+      "evidence": "Est-ce que tu travailles la nuit? Théo a des examens en juin et il dort mal.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Cada pregunta del anuncio lleva su razón pegada detrás. Ninguna es curiosidad."
+        },
+        "incorrect": {
+          "es": "El texto no menciona ni el portal ni a los vecinos. Lee la frase que va justo después de esa pregunta."
+        },
+        "strategy": {
+          "es": "Cuando un texto hace una lista de preguntas, mira si cada una viene con una explicación al lado. Suele ser así."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el piso está en la cuarta planta y hay que subir andando.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Il n’a pas d’ascenseur: c’est au quatrième étage.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y ahí está la gracia del anuncio: un cuarto piso justamente sin ascensor. Los dos puntos unen el dato con su agravante."
+        },
+        "incorrect": {
+          "es": "Busca «ascenseur» y mira la negación que lleva delante. Si no hay ascensor, para subir solo queda la escalera."
+        },
+        "strategy": {
+          "es": "Si una afirmación tiene dos partes, compruébalas por separado. Las dos tienen que ser ciertas para que sea verdadera."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué sirve la lista de cuatro preguntas dentro del anuncio?",
+      "options": [
+        {
+          "id": "filtrar",
+          "text": "Para que quien no encaje en la convivencia no escriba"
+        },
+        {
+          "id": "examen",
+          "text": "Para poner un examen de francés al candidato"
+        },
+        {
+          "id": "censo",
+          "text": "Para hacer un censo de los vecinos del edificio"
+        }
+      ],
+      "answer": "filtrar",
+      "evidence": "Est-ce que tu fumes? Ici, personne ne fume.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. No preguntan por preguntar: cada respuesta descarta a alguien. Es un filtro escrito con educación."
+        },
+        "incorrect": {
+          "es": "Mira qué explicación acompaña a cada pregunta. Todas hablan de la vida diaria dentro del piso."
+        },
+        "strategy": {
+          "es": "Pregúntate qué pasaría si contestaras que sí a cada pregunta. Ahí verás para qué están puestas."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe un anuncio de 5–7 frases en francés para buscar compañero de piso. Incluye al menos tres preguntas con est-ce que y dos frases con il n’y a pas de / il n’a pas de."
+    },
+    "minWords": 35,
+    "maxWords": 80,
+    "hints": [
+      "L’appartement a…",
+      "Il n’a pas de…",
+      "Est-ce que tu…?",
+      "Loyer: … euros, charges comprises."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés A1: Se busca compañero de piso | WeLearn"
+    },
+    "description": {
+      "es": "Lee un anuncio de piso compartido en francés A1 y practica las preguntas con est-ce que y el verbo avoir. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/frances/a1/lectura/colocataire-cherche",
+    "indexable": true,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-a1-la-chambre-de-yasmine",
+      "fr-a1-la-recette-de-mamie-aicha"
+    ]
+  }
+}

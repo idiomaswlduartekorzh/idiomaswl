@@ -1,0 +1,488 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-b1-la-rumeur-du-gymnase",
+  "status": "published",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Francés B1"
+  },
+  "slug": "la-rumeur-du-gymnase",
+  "series": {
+    "id": "frances-b1-lectura-10",
+    "episode": 5,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-b1-le-dernier-accordeur",
+    "nextExerciseId": "fr-b1-ce-que-nous-appelons-l-attention"
+  },
+  "classification": {
+    "genre": "reportaje de investigación",
+    "topic": "cómo se propaga un bulo",
+    "intent": "learning",
+    "tags": [
+      "frances b1",
+      "lectura",
+      "estilo indirecto",
+      "preguntas indirectas"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El rumor del gimnasio"
+    },
+    "intro": {
+      "es": "Un mensaje mal leído, siete reenvíos y doscientas personas en la puerta del ayuntamiento. Lectura de francés B1 con el estilo indirecto."
+    },
+    "mission": {
+      "es": "Rastrea quién dijo qué, y en qué punto exacto la frase cambió de sentido."
+    },
+    "targetText": "Le 3 février, à dix-huit heures, une enseignante d’EPS écrit dans le groupe des parents que le gymnase sera fermé au mois de juin. Elle précise qu’il s’agit de travaux de toiture et que la mairie a promis une réouverture en septembre. Le message est exact. Vingt minutes plus tard, une mère le transmet à un autre groupe en résumant: elle écrit que le gymnase ferme en juin. Le mot «travaux» a disparu. Le lendemain matin, un père demande dans un troisième groupe si quelqu’un sait pourquoi la mairie ferme le gymnase. La question est honnête, mais elle installe une chose que personne n’a dite: que la fermeture est une décision politique. Personne ne répond. À midi, un message anonyme circule: il affirme que la mairie veut vendre le terrain. Nous avons cherché l’origine de cette phrase pendant trois semaines. Nous ne l’avons pas trouvée. Ce que nous savons, c’est qu’elle est apparue entre le message du père et le début de l’après-midi, et qu’elle n’a jamais été attribuée à personne. Le 6 février, deux cents personnes se réunissent devant la mairie. Le maire sort et demande aux parents ce qu’ils veulent savoir exactement. Une déléguée lui répond qu’ils veulent savoir si le terrain est en vente. Il répond que non. Elle lui demande alors s’il peut le mettre par écrit. Il répond que oui, et il le fait le soir même. L’affaire se calme en quarante-huit heures. Le gymnase a bien fermé en juin, comme annoncé, et il a rouvert le 4 septembre. Sur les deux cents personnes venues devant la mairie, une dizaine seulement avaient lu le message d’origine. Les autres avaient lu quelqu’un qui l’avait lu. Ce qui nous a frappés, en reconstituant cette semaine, ce n’est pas la vitesse: c’est qu’à aucun moment quelqu’un n’a menti. L’enseignante a dit la vérité. La mère a résumé. Le père a posé une question. Chacun de ces gestes est normal. Le rumeur n’est pas née d’un mensonge mais d’une suite de raccourcis, dont aucun n’était grave isolément. Nous avons demandé à l’enseignante si elle referait la même chose. Elle a dit que oui, mais qu’elle mettrait désormais le mot «travaux» dans la première ligne, et non dans la deuxième. Elle a ajouté qu’elle ne savait pas si cela aurait suffi. Nous non plus.",
+    "wordCount": 384,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Transformar preguntas al estilo indirecto: il demande si, elle veut savoir pourquoi."
+      },
+      {
+        "es": "Seguir una cadena de transmisión y detectar dónde se pierde información."
+      },
+      {
+        "es": "Distinguir una mentira de un resumen que deforma sin querer."
+      }
+    ],
+    "grammarFocus": [
+      "discours-indirect-b1",
+      "questions-indirectes-b1",
+      "discours-indirect"
+    ],
+    "vocabulary": [
+      {
+        "surface": "enseignante",
+        "lemma": "enseignante",
+        "glosses": {
+          "es": "profesora"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "toiture",
+        "lemma": "toiture",
+        "glosses": {
+          "es": "tejado, cubierta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "réouverture",
+        "lemma": "réouverture",
+        "glosses": {
+          "es": "reapertura"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "transmet",
+        "lemma": "transmettre",
+        "glosses": {
+          "es": "reenvía, transmite"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "terrain",
+        "lemma": "terrain",
+        "glosses": {
+          "es": "terreno, solar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "déléguée",
+        "lemma": "déléguée",
+        "glosses": {
+          "es": "delegada, representante"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "raccourcis",
+        "lemma": "raccourci",
+        "glosses": {
+          "es": "atajos; aquí, simplificaciones"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "isolément",
+        "lemma": "isolément",
+        "glosses": {
+          "es": "por separado, aisladamente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Los grupos de mensajería de padres de alumnos son un canal informal muy potente en Francia, y varios ayuntamientos han creado canales oficiales precisamente para competir con ellos."
+    },
+    "spanishSpeakerNote": {
+      "es": "En la pregunta indirecta desaparece la inversión y el signo de interrogación: «Est-ce que le terrain est en vente?» pasa a «Ils veulent savoir si le terrain est en vente». El «si» aquí no es condicional: es el «si» de pregunta indirecta, igual que en español."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo que desarrolla una idea, cambia de dirección y se cierra; distinguir el hecho de la interpretación; y justificar una inferencia señalando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers",
+      "accord-participe-passe",
+      "cause-consequence",
+      "comparatifs",
+      "conditionnel-present",
+      "connecteurs",
+      "discours-indirect",
+      "dont-relatif",
+      "futur-simple",
+      "gerondif",
+      "imparfait",
+      "negation-avancee",
+      "passe-compose-avoir",
+      "passe-compose-etre",
+      "passe-compose-vs-imparfait",
+      "pronoms-coi",
+      "pronoms-y-en",
+      "si-conditionnel",
+      "subjonctif-present",
+      "superlatifs",
+      "verbes-pronominaux",
+      "accord-participe-passe-b1",
+      "comparatif-superlatif-b1",
+      "conditionnel-present-b1",
+      "connecteurs-logiques-b1",
+      "discours-indirect-b1",
+      "expressions-temporelles-b1",
+      "futur-simple-b1",
+      "gerondif-b1",
+      "hypothese-si-b1",
+      "imperatif-b1",
+      "negation-avancee-b1",
+      "nominalisation-b1",
+      "participe-present-b1",
+      "passe-compose-vs-imparfait-b1",
+      "plus-que-parfait-b1",
+      "pronoms-relatifs-b1",
+      "pronoms-y-en-b1",
+      "questions-indirectes-b1",
+      "subjonctif-present-b1",
+      "voix-passive-b1"
+    ],
+    "disallowedGrammar": [
+      "passé simple",
+      "subjonctif imparfait",
+      "passé antérieur"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 12,
+      "maxSentenceWords": 26,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Prosa B1 con plus-que-parfait, voz pasiva y subjuntivo. Sin passé simple. Inferencia moderada: exige cruzar dos pasajes separados."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es la conclusión del reportaje?",
+      "options": [
+        {
+          "id": "atajos",
+          "text": "Que el bulo nació de una suma de atajos, sin que nadie mintiera"
+        },
+        {
+          "id": "culpable",
+          "text": "Que la profesora fue la responsable de todo el episodio"
+        },
+        {
+          "id": "venta",
+          "text": "Que el ayuntamiento sí pensaba vender el terreno"
+        }
+      ],
+      "answer": "atajos",
+      "evidence": "à aucun moment quelqu’un n’a menti … Le rumeur n’est pas née d’un mensonge mais d’une suite de raccourcis",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el reportaje lo subraya: cada gesto por separado era normal; el problema fue la cadena."
+        },
+        "incorrect": {
+          "es": "El alcalde lo desmintió por escrito, y el texto dice expresamente que nadie mintió. Busca «à aucun moment»."
+        },
+        "strategy": {
+          "es": "Cuando un reportaje dice qué le «llamó la atención» al reconstruir los hechos, ahí está su conclusión."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué palabra desapareció en el primer reenvío del mensaje?",
+      "options": [
+        {
+          "id": "travaux",
+          "text": "«Travaux», es decir, obras"
+        },
+        {
+          "id": "juin",
+          "text": "«Juin», es decir, junio"
+        },
+        {
+          "id": "mairie",
+          "text": "«Mairie», es decir, ayuntamiento"
+        }
+      ],
+      "answer": "travaux",
+      "evidence": "elle écrit que le gymnase ferme en juin. Le mot «travaux» a disparu.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y sin esa palabra el cierre deja de tener una causa técnica y queda abierto a cualquier explicación."
+        },
+        "incorrect": {
+          "es": "El texto lo dice de forma literal en una frase de cinco palabras. Busca el verbo «a disparu»."
+        },
+        "strategy": {
+          "es": "Cuando un texto señala expresamente una ausencia, esa ausencia suele ser la causa de todo lo que sigue."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El reportaje habla de «une suite de raccourcis, dont aucun n’était grave isolément». ¿Qué son aquí los «raccourcis»?",
+      "options": [
+        {
+          "id": "simplificaciones",
+          "text": "Simplificaciones al resumir la información"
+        },
+        {
+          "id": "caminos",
+          "text": "Caminos más cortos para llegar al gimnasio"
+        },
+        {
+          "id": "mentiras",
+          "text": "Mentiras deliberadas"
+        }
+      ],
+      "answer": "simplificaciones",
+      "evidence": "Le rumeur n’est pas née d’un mensonge mais d’une suite de raccourcis",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. La frase opone «raccourcis» a «mensonge», así que no pueden ser mentiras."
+        },
+        "incorrect": {
+          "es": "La propia frase contrapone esta palabra a «mensonge». Si fueran mentiras, la oposición no tendría sentido."
+        },
+        "strategy": {
+          "es": "La estructura «no es X sino Y» te dice que X e Y son cosas distintas. Úsalo para acotar el significado de Y."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice el reportaje que la pregunta del padre «instala algo que nadie había dicho»?",
+      "options": [
+        {
+          "id": "politica",
+          "text": "Porque preguntar «por qué cierra la mairie» da por hecho que es una decisión política"
+        },
+        {
+          "id": "falsa",
+          "text": "Porque el padre sabía que la información era falsa"
+        },
+        {
+          "id": "grupo",
+          "text": "Porque la escribió en un grupo al que no pertenecía"
+        }
+      ],
+      "answer": "politica",
+      "evidence": "La question est honnête, mais elle installe une chose que personne n’a dite: que la fermeture est une décision politique.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto insiste en que la pregunta era honesta. El problema no es la intención, es la presuposición."
+        },
+        "incorrect": {
+          "es": "El reportaje llama «honnête» a la pregunta, así que no hay mala fe. Lee lo que sigue a los dos puntos."
+        },
+        "strategy": {
+          "es": "Una pregunta puede dar por supuesto algo sin afirmarlo. Fíjate en qué tiene que ser verdad para que la pregunta tenga sentido."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: los periodistas consiguieron identificar quién escribió el mensaje sobre la venta del terreno.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Nous avons cherché l’origine de cette phrase pendant trois semaines. Nous ne l’avons pas trouvée.",
+      "feedback": {
+        "correct": {
+          "es": "Falso, y lo reconocen abiertamente: tres semanas de búsqueda y ningún autor."
+        },
+        "incorrect": {
+          "es": "El reportaje cuenta expresamente qué pasó con esa búsqueda. Busca «pendant trois semaines»."
+        },
+        "strategy": {
+          "es": "Cuando un texto periodístico admite lo que no pudo averiguar, esa admisión suele ser literal. No la deduzcas al revés."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la cadena de transmisión del rumor.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "La profesora informa de un cierre por obras, con reapertura en septiembre"
+        },
+        {
+          "id": "p2",
+          "text": "Una madre reenvía el mensaje resumido, sin la palabra «obras»"
+        },
+        {
+          "id": "p3",
+          "text": "Un padre pregunta por qué el ayuntamiento cierra el gimnasio"
+        },
+        {
+          "id": "p4",
+          "text": "Un mensaje anónimo afirma que el ayuntamiento quiere vender el terreno"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Le 3 février, à dix-huit heures … Vingt minutes plus tard … Le lendemain matin … À midi, un message anonyme circule",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El reportaje fecha cada eslabón para que la deformación se pueda seguir paso a paso."
+        },
+        "incorrect": {
+          "es": "Guíate por las marcas de tiempo: 18 h, veinte minutos después, la mañana siguiente, el mediodía."
+        },
+        "strategy": {
+          "es": "En una investigación, las marcas horarias son la prueba. Ordénalas antes de interpretar nada."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Cuenta en 8–10 frases en francés cómo se difundió una información inexacta que conozcas. Usa el estilo indirecto cinco veces y dos preguntas indirectas."
+    },
+    "minWords": 70,
+    "maxWords": 130,
+    "hints": [
+      "Elle a écrit que…",
+      "Il a demandé si…",
+      "Ils voulaient savoir pourquoi…",
+      "Personne n’a menti, mais…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés B1: El rumor del gimnasio | WeLearn"
+    },
+    "description": {
+      "es": "Lee un reportaje en francés B1 y practica el estilo indirecto y las preguntas indirectas (il a demandé si, elle voulait savoir pourquoi)."
+    },
+    "canonicalPath": "/practica/frances/b1/lectura/la-rumeur-du-gymnase",
+    "indexable": true,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-b1-le-dernier-accordeur",
+      "fr-b1-ce-que-nous-appelons-l-attention"
+    ]
+  }
+}

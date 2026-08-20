@@ -1,0 +1,462 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-a2-weder-laut-noch-leise",
+  "status": "published",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Alemán A2"
+  },
+  "slug": "weder-laut-noch-leise",
+  "series": {
+    "id": "aleman-a2-lectura-10",
+    "episode": 8,
+    "totalEpisodes": 10,
+    "previousExerciseId": "de-a2-das-brot-wird-nachts-gebacken",
+    "nextExerciseId": "de-a2-das-fahrrad-meines-vaters"
+  },
+  "classification": {
+    "genre": "carta al administrador",
+    "topic": "una queja vecinal que no lo es",
+    "intent": "learning",
+    "tags": [
+      "aleman a2",
+      "lectura",
+      "conjunciones",
+      "conectores dobles"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Ni ruidoso ni silencioso"
+    },
+    "intro": {
+      "es": "Una carta que empieza pareciendo una queja por ruido y acaba pidiendo lo contrario. Lectura de alemán A2 con los conectores dobles."
+    },
+    "mission": {
+      "es": "Averigua qué pide realmente el vecino."
+    },
+    "targetText": "Sehr geehrte Hausverwaltung, ich schreibe wegen der Wohnung über mir. Zuerst: das ist keine Beschwerde. Seit acht Monaten wohnt dort Herr Vasilenko. Er ist weder laut noch unhöflich. Er spielt weder Musik noch redet er abends. Genau das ist mein Problem. Ich höre gar nichts. Nicht nur nachts, sondern auch tagsüber. Kein Stuhl, kein Wasser, keine Schritte. Ich habe ihn zweimal auf der Treppe getroffen. Er hat gegrüßt und ist weitergegangen. Vor drei Wochen war die Post drei Tage im Briefkasten. Entweder ist er verreist oder es geht ihm nicht gut. Ich weiß nicht, welches von beiden stimmt. Er ist über siebzig und er hat keine Familie hier. Ich möchte nicht klingeln, weil das vielleicht unangenehm ist. Aber ich möchte auch nicht warten, bis etwas passiert. Ich habe überlegt, einen Zettel unter die Tür zu schieben. Aber ein Zettel von einem Nachbarn, den man kaum kennt, ist auch seltsam. Vielleicht denkt er dann, jemand beobachtet ihn. Das möchte ich nicht. Können Sie ihn anrufen? Sie haben die Nummer und ich nicht. Sagen Sie nicht, dass ich geschrieben habe. Sagen Sie irgendetwas über die Heizung. Mit freundlichen Grüßen, Wohnung 2 links.",
+    "wordCount": 190,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Usar los conectores dobles: weder…noch, entweder…oder, nicht nur…sondern auch."
+      },
+      {
+        "es": "Encadenar frases con conjunciones: weil, aber, dass."
+      },
+      {
+        "es": "Distinguir la queja aparente de la petición real."
+      }
+    ],
+    "grammarFocus": [
+      "konjunktionen-a2",
+      "zweiteilige-konnektoren-a2",
+      "verneinung"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Beschwerde",
+        "lemma": "Beschwerde",
+        "glosses": {
+          "es": "queja formal"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Schritte",
+        "lemma": "Schritt",
+        "glosses": {
+          "es": "pasos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Treppe",
+        "lemma": "Treppe",
+        "glosses": {
+          "es": "escalera"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gegrüßt",
+        "lemma": "grüßen",
+        "glosses": {
+          "es": "saludado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "verreist",
+        "lemma": "verreist",
+        "glosses": {
+          "es": "de viaje"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "klingeln",
+        "lemma": "klingeln",
+        "glosses": {
+          "es": "llamar al timbre"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "unangenehm",
+        "lemma": "unangenehm",
+        "glosses": {
+          "es": "incómodo, molesto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Heizung",
+        "lemma": "Heizung",
+        "glosses": {
+          "es": "calefacción"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La discreción entre vecinos está muy asentada en Alemania, y llamar a una puerta sin motivo puede leerse como intrusión. De ahí que el remitente prefiera un rodeo."
+    },
+    "spanishSpeakerNote": {
+      "es": "Los conectores dobles van en pareja obligatoria: «weder … noch» (ni … ni), «entweder … oder» (o … o), «nicht nur … sondern auch» (no solo … sino también). Si falta la segunda pieza, la frase queda coja."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en alemán sobre hechos pasados, encontrar el verbo al final de una subordinada, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens",
+      "adjektivdeklination-a2",
+      "da-hin-her-a2",
+      "dativ-a2",
+      "futur-i-a2",
+      "genitiv-a2",
+      "infinitiv-zu-a2",
+      "komparativ-superlativ-a2",
+      "konjunktionen-a2",
+      "konjunktiv-ii-wurden-a2",
+      "modalverben-praeteritum-a2",
+      "partizip-als-adjektiv-a2",
+      "passiv-praesens-a2",
+      "perfekt-haben-a2",
+      "perfekt-sein-a2",
+      "praeteritum-basic-a2",
+      "reflexivverben-a2",
+      "relativsaetze-a2",
+      "trennbare-verben-praeteritum-a2",
+      "wechselpraepositionen-a2",
+      "zweiteilige-konnektoren-a2"
+    ],
+    "disallowedGrammar": [
+      "Konjunktiv I",
+      "Plusquamperfekt",
+      "Partizip I",
+      "Nominalstil"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 7.3,
+      "maxSentenceWords": 13,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Perfekt y Präteritum con su reparto de uso. Konjunktiv II solo en formas hechas (würde, wäre, hätte). Sin Plusquamperfekt ni Konjunktiv I."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué pide realmente la carta?",
+      "options": [
+        {
+          "id": "comprobar",
+          "text": "Que llamen al vecino para comprobar que está bien, sin que él sepa quién lo pidió"
+        },
+        {
+          "id": "ruido",
+          "text": "Que hablen con el vecino por el ruido"
+        },
+        {
+          "id": "calefaccion",
+          "text": "Que revisen la calefacción del edificio"
+        }
+      ],
+      "answer": "comprobar",
+      "evidence": "Können Sie ihn anrufen? … Sagen Sie nicht, dass ich geschrieben habe. Sagen Sie irgendetwas über die Heizung.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la calefacción es solo la excusa que propone para la llamada."
+        },
+        "incorrect": {
+          "es": "La carta dice en la segunda frase que no es una queja, y el ruido es justo lo que no hay."
+        },
+        "strategy": {
+          "es": "Si una carta empieza diciendo «esto no es una queja», lo que pide está en otra parte. Léela entera."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto tiempo lleva el vecino viviendo allí?",
+      "options": [
+        {
+          "id": "8",
+          "text": "Ocho meses"
+        },
+        {
+          "id": "3",
+          "text": "Tres semanas"
+        },
+        {
+          "id": "70",
+          "text": "Setenta años"
+        }
+      ],
+      "answer": "8",
+      "evidence": "Seit acht Monaten wohnt dort Herr Vasilenko.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Las tres semanas son cuando el correo se acumuló y los setenta, su edad."
+        },
+        "incorrect": {
+          "es": "El texto tiene tres cifras y cada una mide algo distinto. Busca la que va con «wohnt»."
+        },
+        "strategy": {
+          "es": "Empareja cada número con su verbo: vivir, acumularse el correo, tener años."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «Er ist weder laut noch unhöflich». ¿Qué significa?",
+      "options": [
+        {
+          "id": "ninguno",
+          "text": "Que no es ni ruidoso ni maleducado"
+        },
+        {
+          "id": "ambos",
+          "text": "Que es ruidoso y maleducado"
+        },
+        {
+          "id": "aveces",
+          "text": "Que a veces es ruidoso"
+        }
+      ],
+      "answer": "ninguno",
+      "evidence": "Er ist weder laut noch unhöflich … Genau das ist mein Problem.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. «Weder … noch» niega las dos cosas a la vez, y ahí está la paradoja del texto."
+        },
+        "incorrect": {
+          "es": "La pareja «weder … noch» es doblemente negativa. No admite ni «a veces» ni afirmación."
+        },
+        "strategy": {
+          "es": "Los conectores dobles funcionan como una unidad. Traduce la pareja entera, no cada pieza suelta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué le preocupa el silencio?",
+      "options": [
+        {
+          "id": "solo",
+          "text": "Porque el vecino tiene más de setenta años y no tiene familia en la ciudad"
+        },
+        {
+          "id": "obras",
+          "text": "Porque cree que la vivienda está vacía y ocupada ilegalmente"
+        },
+        {
+          "id": "ruido",
+          "text": "Porque prefiere oír algo para dormir"
+        }
+      ],
+      "answer": "solo",
+      "evidence": "Er ist über siebzig und er hat keine Familie hier … Aber ich möchte auch nicht warten, bis etwas passiert.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El silencio en sí no es el problema: lo es combinado con la edad y la soledad."
+        },
+        "incorrect": {
+          "es": "No sospecha de ocupación ni habla de dormir. Cruza la edad con el correo acumulado."
+        },
+        "strategy": {
+          "es": "Para inferir, cruza dos datos separados: aquí la edad y los tres días de correo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: quien escribe pide que no se mencione su carta.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Sagen Sie nicht, dass ich geschrieben habe. Sagen Sie irgendetwas über die Heizung.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y hasta propone la excusa: que hablen de la calefacción."
+        },
+        "incorrect": {
+          "es": "Busca las dos frases del final, antes de la despedida. Las dos empiezan igual."
+        },
+        "strategy": {
+          "es": "Dos imperativos seguidos con el mismo verbo marcan una instrucción precisa. Léelos juntos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué firma como «Wohnung 2 links» y no con su nombre?",
+      "options": [
+        {
+          "id": "anonimo",
+          "text": "Para no quedar identificado ante el vecino"
+        },
+        {
+          "id": "formal",
+          "text": "Porque es la fórmula habitual en estas cartas"
+        },
+        {
+          "id": "olvido",
+          "text": "Porque olvidó firmar"
+        }
+      ],
+      "answer": "anonimo",
+      "evidence": "Sagen Sie nicht, dass ich geschrieben habe … Mit freundlichen Grüßen, Wohnung 2 links.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y encaja con lo que acaba de pedir dos frases antes."
+        },
+        "incorrect": {
+          "es": "No es una fórmula habitual: lo normal es firmar con nombre. Y la administración necesita saber quién es."
+        },
+        "strategy": {
+          "es": "Si una firma inusual sigue a una petición de discreción, las dos cosas están conectadas."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe una carta de 8–10 frases en alemán sobre una preocupación por un vecino. Usa tres conectores dobles distintos y dos conjunciones subordinantes."
+    },
+    "minWords": 40,
+    "maxWords": 85,
+    "hints": [
+      "Sehr geehrte Hausverwaltung, ich schreibe wegen…",
+      "Das ist keine Beschwerde.",
+      "Er ist weder… noch…",
+      "Entweder… oder…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán A2: Ni ruidoso ni silencioso | WeLearn"
+    },
+    "description": {
+      "es": "Lee una carta en alemán A2 y practica las conjunciones y los conectores dobles (weder…noch, entweder…oder, nicht nur…sondern auch)."
+    },
+    "canonicalPath": "/practica/aleman/a2/lectura/weder-laut-noch-leise",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-a2-das-brot-wird-nachts-gebacken",
+      "de-a2-das-fahrrad-meines-vaters"
+    ]
+  }
+}

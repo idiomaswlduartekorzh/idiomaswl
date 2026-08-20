@@ -1,0 +1,473 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-a2-geseuteuhauseu-gyuchik",
+  "status": "published",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Coreano A2",
+    "topik": 2,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. A2 se sitúa alrededor del TOPIK I nivel 2, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "geseuteuhauseu-gyuchik",
+  "series": {
+    "id": "coreano-a2-lectura-10",
+    "episode": 7,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-a2-sumureul-baeugo-itsseoyo",
+    "nextExerciseId": "ko-a2-uisaga-han-mal"
+  },
+  "classification": {
+    "genre": "reglamento comentado",
+    "topic": "convivir en un albergue",
+    "intent": "learning",
+    "tags": [
+      "coreano a2",
+      "lectura",
+      "obligación 아야 하다",
+      "capacidad ㄹ 수 있다"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Las normas del albergue"
+    },
+    "intro": {
+      "es": "Cinco normas de un albergue de Busan, cada una con su motivo. Y una que no es una norma sino una petición. Lectura de coreano A2."
+    },
+    "mission": {
+      "es": "Distingue lo que es obligatorio de lo que solo es posible."
+    },
+    "targetText": "부산 게스트하우스 규칙입니다. 다섯 가지만 지켜야 해요. 하나, 밤 열한 시 이후에는 조용해야 해요. 벽이 얇기 때문에 옆방에서 다 들려요. 음악을 듣고 싶으면 이어폰을 써야 해요. 둘, 부엌은 새벽 두 시까지 쓸 수 있어요. 하지만 설거지는 바로 해야 해요. 다음 사람이 기다리고 있을 수 있어요. 셋, 신발은 현관에 두어야 해요. 방에서는 신발을 신을 수 없어요. 넷, 세탁기는 하루에 두 번 쓸 수 있어요. 예약은 부엌 벽에 있는 종이에 써야 해요. 세탁기는 밤 열 시 이후에는 쓸 수 없어요. 소리가 아주 크기 때문이에요. 옆방에서 다 들려요. 다섯, 열쇠를 잃어버리면 바로 말해야 해요. 화내지 않아요. 하지만 늦게 말하면 문제가 커져요. 마지막으로 규칙이 아닌 것을 하나 부탁하고 싶어요. 아침에 다른 손님에게 인사해 주세요. 여기 오는 사람들은 대부분 혼자 여행하고 있어요. 인사 하나로 하루가 달라질 수 있어요.",
+    "wordCount": 123,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Expresar obligación con 아야/어야 하다 y prohibición con ㄹ 수 없다."
+      },
+      {
+        "es": "Expresar posibilidad y permiso con ㄹ 수 있다."
+      },
+      {
+        "es": "Separar en un reglamento la norma de la explicación y de la petición."
+      }
+    ],
+    "grammarFocus": [
+      "obligacion-aya-hada-a2",
+      "capacidad-rl-su-itda-a2",
+      "querer-goshipda"
+    ],
+    "vocabulary": [
+      {
+        "surface": "규칙",
+        "lemma": "규칙",
+        "reading": "gyuchik",
+        "glosses": {
+          "es": "norma, reglamento"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "지켜야",
+        "lemma": "지키다",
+        "reading": "jikyeoya",
+        "glosses": {
+          "es": "cumplir, respetar (una norma)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "얇기",
+        "lemma": "얇다",
+        "reading": "yalbgi",
+        "glosses": {
+          "es": "ser fino, delgado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "설거지",
+        "lemma": "설거지",
+        "reading": "seolgeoji",
+        "glosses": {
+          "es": "fregar los platos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "현관",
+        "lemma": "현관",
+        "reading": "hyeongwan",
+        "glosses": {
+          "es": "entrada, recibidor donde se dejan los zapatos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "세탁기",
+        "lemma": "세탁기",
+        "reading": "setakgi",
+        "glosses": {
+          "es": "lavadora"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "열쇠",
+        "lemma": "열쇠",
+        "reading": "yeolsoe",
+        "glosses": {
+          "es": "llave"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "부탁하고",
+        "lemma": "부탁하다",
+        "reading": "butakhago",
+        "glosses": {
+          "es": "pedir un favor"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Quitarse los zapatos al entrar es obligatorio en cualquier vivienda coreana, no una norma del albergue. El 현관 es el escalón donde se hace ese cambio."
+    },
+    "spanishSpeakerNote": {
+      "es": "Dos estructuras que se confunden: 아야 하다 es obligación («hay que») y ㄹ 수 있다 es posibilidad («se puede»). 설거지는 바로 해야 해요 es obligatorio; 부엌은 두 시까지 쓸 수 있어요 es un permiso."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en coreano sobre hechos pasados y planes, entender quién dice qué en estilo indirecto, y reconocer a quién se trata con respeto."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas",
+      "antes-despues-a2",
+      "capacidad-rl-su-itda-a2",
+      "clausulas-relativas-a2",
+      "condicional-eumyeon-a2",
+      "conector-aseo-a2",
+      "cuanto-eolmana-a2",
+      "discurso-reportado-a2",
+      "durante-neun-dongane-a2",
+      "futuro-rl-geoyeyo-a2",
+      "honorificos-a2",
+      "intencion-ryogo-hada-a2",
+      "negacion-ji-anta-a2",
+      "obligacion-aya-hada-a2",
+      "parecer-neun-geot-gatda-a2",
+      "particulas-recipiente-a2",
+      "progresivo-go-itda-a2",
+      "razon-gittaemune-a2",
+      "razon-niikka-a2",
+      "solo-tambien-man-do-a2",
+      "verbos-irregulares-pasado-a2"
+    ],
+    "disallowedGrammar": [
+      "voz pasiva avanzada",
+      "nominalización compleja",
+      "estilo literario"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 5.6,
+      "maxSentenceWords": 8,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Pasado irregular, cláusulas de relativo y honoríficos permitidos. Sin voz pasiva avanzada ni registro literario. Inferencia ligera."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué distingue a este reglamento?",
+      "options": [
+        {
+          "id": "motivo",
+          "text": "Que cada norma viene con su razón, y termina con una petición que no es norma"
+        },
+        {
+          "id": "estricto",
+          "text": "Que es un reglamento muy estricto con multas"
+        },
+        {
+          "id": "corto",
+          "text": "Que no explica ninguna de las normas"
+        }
+      ],
+      "answer": "motivo",
+      "evidence": "벽이 얇기 때문에 옆방에서 다 들려요 … 마지막으로 규칙이 아닌 것을 하나 부탁하고 싶어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Explica cada norma y luego separa expresamente lo que es una petición."
+        },
+        "incorrect": {
+          "es": "No menciona multas y explica casi todas las normas. Busca la frase con 규칙이 아닌 것."
+        },
+        "strategy": {
+          "es": "Cuando un texto anuncia que lo siguiente «no es una norma», ese contraste es intencionado y define el conjunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Hasta qué hora se puede usar la cocina?",
+      "options": [
+        {
+          "id": "dos",
+          "text": "Hasta las dos de la madrugada"
+        },
+        {
+          "id": "once",
+          "text": "Hasta las once de la noche"
+        },
+        {
+          "id": "medianoche",
+          "text": "Hasta medianoche"
+        }
+      ],
+      "answer": "dos",
+      "evidence": "부엌은 새벽 두 시까지 쓸 수 있어요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: 새벽 두 시, las dos de la madrugada. Las once es la hora del silencio."
+        },
+        "incorrect": {
+          "es": "El texto da dos horas y son de normas distintas. Busca la que va con 부엌, cocina."
+        },
+        "strategy": {
+          "es": "Empareja cada hora con la norma a la que pertenece. Las normas numeradas ayudan a separarlas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice 설거지는 바로 해야 해요. ¿Qué es 설거지?",
+      "options": [
+        {
+          "id": "platos",
+          "text": "Fregar los platos"
+        },
+        {
+          "id": "basura",
+          "text": "Sacar la basura"
+        },
+        {
+          "id": "cocinar",
+          "text": "Cocinar la cena"
+        }
+      ],
+      "answer": "platos",
+      "evidence": "부엌은 새벽 두 시까지 쓸 수 있어요. 하지만 설거지는 바로 해야 해요. 다음 사람이 기다리고 있을 수 있어요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Va en la norma de la cocina y la razón es que otra persona puede estar esperando."
+        },
+        "incorrect": {
+          "es": "Está en la norma de la cocina y la razón habla de la siguiente persona que la usará. Eso lo acota."
+        },
+        "strategy": {
+          "es": "Usa la norma en la que está y su explicación. Entre las dos suelen definir la palabra."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué pide avisar enseguida si se pierde la llave?",
+      "options": [
+        {
+          "id": "tarde",
+          "text": "Porque avisar tarde agrava el problema, no porque vayan a enfadarse"
+        },
+        {
+          "id": "multa",
+          "text": "Porque hay que pagar una multa el mismo día"
+        },
+        {
+          "id": "copia",
+          "text": "Porque solo hay una copia de cada llave"
+        }
+      ],
+      "answer": "tarde",
+      "evidence": "화내지 않아요. 하지만 늦게 말하면 문제가 커져요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Se adelanta al miedo de quien pierde algo: no se enfadan, pero el retraso sí importa."
+        },
+        "incorrect": {
+          "es": "No habla de multas ni de copias. Lee las dos frases cortas que siguen a la norma."
+        },
+        "strategy": {
+          "es": "Si una norma va seguida de «no nos enfadamos, pero…», el motivo real está tras el 하지만."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: se puede entrar con zapatos a las habitaciones.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "신발은 현관에 두어야 해요. 방에서는 신발을 신을 수 없어요.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: 신을 수 없어요, no se puede. Los zapatos se dejan en la entrada."
+        },
+        "incorrect": {
+          "es": "Busca la norma número tres. Tiene dos frases y la segunda es una prohibición clara."
+        },
+        "strategy": {
+          "es": "ㄹ 수 없다 es «no se puede». Distínguelo de 아야 하다, que es «hay que». Uno prohíbe, el otro obliga."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué añade la petición de saludar por la mañana?",
+      "options": [
+        {
+          "id": "solos",
+          "text": "Porque la mayoría viaja sola y un saludo puede cambiarle el día"
+        },
+        {
+          "id": "idioma",
+          "text": "Para que los huéspedes practiquen coreano"
+        },
+        {
+          "id": "control",
+          "text": "Para saber quién está en el albergue cada mañana"
+        }
+      ],
+      "answer": "solos",
+      "evidence": "여기 오는 사람들은 대부분 혼자 여행하고 있어요. 인사 하나로 하루가 달라질 수 있어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y por eso lo separa de las normas: no se puede obligar, solo pedir."
+        },
+        "incorrect": {
+          "es": "No busca practicar idiomas ni controlar a nadie. Lee las dos frases finales."
+        },
+        "strategy": {
+          "es": "Si algo se presenta como petición y no como norma, el motivo suele ser humano. Búscalo en la explicación."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 normas en coreano para un piso compartido, con su razón. Usa 아야 하다 tres veces y ㄹ 수 있다 dos veces."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "… 규칙입니다.",
+      "하나, … 해야 해요.",
+      "… 때문에 …",
+      "…는 … 쓸 수 있어요."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano A2: Las normas del albergue | WeLearn"
+    },
+    "description": {
+      "es": "Lee un reglamento comentado en coreano A2 y practica la obligación con 아야 하다 y la capacidad con ㄹ 수 있다. Seis preguntas y vocabulario."
+    },
+    "canonicalPath": "/practica/coreano/a2/lectura/geseuteuhauseu-gyuchik",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-a2-sumureul-baeugo-itsseoyo",
+      "ko-a2-uisaga-han-mal"
+    ]
+  }
+}

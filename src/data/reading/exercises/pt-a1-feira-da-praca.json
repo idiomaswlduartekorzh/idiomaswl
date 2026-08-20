@@ -1,0 +1,439 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-a1-feira-da-praca",
+  "status": "published",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Portugués A1"
+  },
+  "slug": "feira-da-praca",
+  "series": {
+    "id": "portugues-a1-lectura-10",
+    "episode": 2,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-a1-eu-nao-estou-bravo",
+    "nextExerciseId": "pt-a1-a-praca-atras-do-mercado"
+  },
+  "classification": {
+    "genre": "cartel de barrio",
+    "topic": "un mercado semanal",
+    "intent": "learning",
+    "tags": [
+      "portugues a1",
+      "lectura",
+      "presente verbos -AR",
+      "adverbios de frecuencia"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La feria de la plaza"
+    },
+    "intro": {
+      "es": "Un cartel de feria con horario, normas y una advertencia sobre quién debería ir al supermercado. Lectura de portugués A1."
+    },
+    "mission": {
+      "es": "Averigua a qué hora se acaban los mejores plátanos y qué hay que llevar de casa."
+    },
+    "targetText": "FEIRA DA PRAÇA SÃO JOÃO — TODA QUARTA. A feira começa às seis da manhã e termina ao meio-dia. Sempre. Chegue cedo: as bananas boas acabam antes das nove. Nós trabalhamos aqui há trinta e quatro anos. Alguns vendedores são filhos dos primeiros vendedores da praça. O que você encontra: frutas, verduras, peixe, queijo, pastel. O pastel do seu Zé fica na entrada. Ele frita na hora. Ele nunca frita antes. Traga sacola. Nós não damos sacola de plástico. Raramente chove na quarta, mas quando chove nós ficamos. A feira não fecha por chuva. Uma coisa importante: aqui a gente conversa. O vendedor pergunta como você está e espera a resposta. Se você quer comprar rápido e sair, o supermercado abre todo dia. Até quarta!",
+    "wordCount": 124,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Conjugar en presente los verbos regulares en -AR: trabalhamos, começa, pergunta."
+      },
+      {
+        "es": "Colocar los adverbios de frecuencia: sempre, nunca, raramente, todo dia."
+      },
+      {
+        "es": "Sacar datos prácticos de un texto lleno de horas y cifras."
+      }
+    ],
+    "grammarFocus": [
+      "presente-verbos-ar",
+      "adverbios-frequencia"
+    ],
+    "vocabulary": [
+      {
+        "surface": "quarta",
+        "lemma": "quarta",
+        "glosses": {
+          "es": "miércoles (abreviatura de quarta-feira)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cedo",
+        "lemma": "cedo",
+        "glosses": {
+          "es": "temprano"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "verduras",
+        "lemma": "verduras",
+        "glosses": {
+          "es": "verduras, hortalizas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pastel",
+        "lemma": "pastel",
+        "glosses": {
+          "es": "empanadilla frita brasileña. ¡No es un pastel dulce!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "frita",
+        "lemma": "fritar",
+        "glosses": {
+          "es": "fríe"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sacola",
+        "lemma": "sacola",
+        "glosses": {
+          "es": "bolsa de la compra"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "chuva",
+        "lemma": "chuva",
+        "glosses": {
+          "es": "lluvia"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "a gente",
+        "lemma": "a gente",
+        "glosses": {
+          "es": "nosotros (muy usado en Brasil, con verbo en singular)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La «feira livre» es un mercado callejero semanal que se monta y se desmonta el mismo día. El «pastel de feira», frito al momento, es una institución propia de esas ferias."
+    },
+    "spanishSpeakerNote": {
+      "es": "Dos avisos. «Pastel» en Brasil es una empanadilla frita, no un dulce. Y «a gente» significa «nosotros», pero lleva el verbo en singular: «a gente conversa», no «a gente conversamos»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en portugués de Brasil sobre la vida cotidiana, distinguir ser de estar, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares"
+    ],
+    "disallowedGrammar": [
+      "pretérito perfeito",
+      "imperfeito",
+      "subjuntivo",
+      "voz passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 6.9,
+      "maxSentenceWords": 12,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Presente de indicativo y futuro con ir. Sin tiempos del pasado ni subjuntivo. Falso amigo glosado en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué tipo de texto es y qué hace?",
+      "options": [
+        {
+          "id": "cartel",
+          "text": "Un cartel que informa del horario y explica cómo funciona la feria"
+        },
+        {
+          "id": "receta",
+          "text": "Una receta de pastel de feria"
+        },
+        {
+          "id": "noticia",
+          "text": "Una noticia sobre el cierre de la feria"
+        }
+      ],
+      "answer": "cartel",
+      "evidence": "FEIRA DA PRAÇA SÃO JOÃO — TODA QUARTA. A feira começa às seis da manhã",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Se reconoce por la forma: título en mayúsculas, horario, y verbos que dan instrucciones."
+        },
+        "incorrect": {
+          "es": "La feria no cierra —lo dice expresamente— y no hay ninguna receta. Fíjate en el título y en los imperativos."
+        },
+        "strategy": {
+          "es": "Antes de leer el detalle, mira la forma del texto. Te dice para qué está escrito."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿A qué hora se acaban los mejores plátanos?",
+      "options": [
+        {
+          "id": "nueve",
+          "text": "Antes de las nueve"
+        },
+        {
+          "id": "seis",
+          "text": "A las seis"
+        },
+        {
+          "id": "doce",
+          "text": "A mediodía"
+        }
+      ],
+      "answer": "nueve",
+      "evidence": "as bananas boas acabam antes das nove",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Las seis es la hora de apertura y las doce, la de cierre."
+        },
+        "incorrect": {
+          "es": "El cartel da tres horas y cada una es de una cosa. Busca la que va con «bananas»."
+        },
+        "strategy": {
+          "es": "Cuando un texto tiene varias horas, apunta al lado de cada una a qué se refiere."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El cartel dice «Traga sacola». ¿Qué es una «sacola»?",
+      "options": [
+        {
+          "id": "bolsa",
+          "text": "Una bolsa para la compra"
+        },
+        {
+          "id": "carrito",
+          "text": "Un carrito de la compra"
+        },
+        {
+          "id": "moneda",
+          "text": "Dinero suelto"
+        }
+      ],
+      "answer": "bolsa",
+      "evidence": "Traga sacola. Nós não damos sacola de plástico.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Y la frase siguiente lo confirma: allí no dan bolsas de plástico."
+        },
+        "incorrect": {
+          "es": "La frase siguiente dice qué es lo que la feria no da. Ahí tienes la pista."
+        },
+        "strategy": {
+          "es": "Una instrucción y su explicación suelen ir en frases seguidas. Lee las dos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el cartel menciona el supermercado al final?",
+      "options": [
+        {
+          "id": "aviso",
+          "text": "Para avisar de que en la feria se conversa, y quien tenga prisa no encaja"
+        },
+        {
+          "id": "competencia",
+          "text": "Para quejarse de la competencia del supermercado"
+        },
+        {
+          "id": "horario",
+          "text": "Para informar del horario del supermercado"
+        }
+      ],
+      "answer": "aviso",
+      "evidence": "aqui a gente conversa. O vendedor pergunta como você está e espera a resposta. Se você quer comprar rápido e sair, o supermercado abre todo dia.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. No es una queja: es una advertencia amable sobre el ritmo del sitio."
+        },
+        "incorrect": {
+          "es": "No se queja del supermercado: lo ofrece como alternativa. Lee las tres frases del final."
+        },
+        "strategy": {
+          "es": "Cuando un texto ofrece una alternativa al lector, pregúntate a quién se la está ofreciendo y por qué."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la feria se monta también los días de lluvia.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Raramente chove na quarta, mas quando chove nós ficamos. A feira não fecha por chuva.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y lo dice dos veces: se quedan, y la feria no cierra por lluvia."
+        },
+        "incorrect": {
+          "es": "Busca la palabra «chuva». El texto dice exactamente qué pasa esos días."
+        },
+        "strategy": {
+          "es": "Si un texto dedica dos frases seguidas a lo mismo, es porque quiere dejarlo claro. Léelas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué dice el cartel que algunos vendedores son hijos de los primeros?",
+      "options": [
+        {
+          "id": "antiguedad",
+          "text": "Para mostrar que la feria lleva generaciones en la plaza"
+        },
+        {
+          "id": "empleo",
+          "text": "Para explicar cómo se consigue un puesto"
+        },
+        {
+          "id": "familia",
+          "text": "Para pedir que se contrate a familiares"
+        }
+      ],
+      "answer": "antiguedad",
+      "evidence": "Nós trabalhamos aqui há trinta e quatro anos. Alguns vendedores são filhos dos primeiros vendedores da praça.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Va justo después de los treinta y cuatro años: las dos frases dicen lo mismo de dos maneras."
+        },
+        "incorrect": {
+          "es": "No explica cómo entrar ni pide nada. Fíjate en la frase que la precede, la de los años."
+        },
+        "strategy": {
+          "es": "Dos frases seguidas que apuntan al mismo dato suelen reforzarse. Mira qué tienen en común."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe un cartel de 5–7 frases en portugués para un mercado o un evento de tu barrio. Usa cuatro verbos en -AR y tres adverbios de frecuencia."
+    },
+    "minWords": 30,
+    "maxWords": 70,
+    "hints": [
+      "A feira começa às… e termina…",
+      "Nós trabalhamos aqui há… anos.",
+      "Nunca / sempre / raramente…",
+      "Traga…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués A1: La feria de la plaza | WeLearn"
+    },
+    "description": {
+      "es": "Lee un cartel en portugués de Brasil A1 y practica el presente de los verbos en -AR y los adverbios de frecuencia. Con seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/a1/lectura/feira-da-praca",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-a1-eu-nao-estou-bravo",
+      "pt-a1-a-praca-atras-do-mercado"
+    ]
+  }
+}

@@ -1,0 +1,491 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-b1-stell-den-stuhl-ans-fenster",
+  "status": "published",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Alemán B1"
+  },
+  "slug": "stell-den-stuhl-ans-fenster",
+  "series": {
+    "id": "aleman-b1-lectura-10",
+    "episode": 9,
+    "totalEpisodes": 10,
+    "previousExerciseId": "de-b1-sie-hat-nie-fahren-wollen",
+    "nextExerciseId": "de-b1-entweder-jetzt-oder-nie"
+  },
+  "classification": {
+    "genre": "escena de taller",
+    "topic": "un técnico de teatro y su aprendiz",
+    "intent": "learning",
+    "tags": [
+      "aleman b1",
+      "lectura",
+      "Wechselpräpositionen",
+      "imperativo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Pon la silla junto a la ventana"
+    },
+    "intro": {
+      "es": "Un técnico que lleva cuarenta años en el mismo teatro y habla casi solo en imperativo enseña la única regla que hace falta. Lectura de alemán B1."
+    },
+    "mission": {
+      "es": "Averigua qué distingue «ans Fenster» de «am Fenster», y por qué en un escenario eso es una orden."
+    },
+    "targetText": "Karl-Heinz hat vierzig Jahre lang in diesem Theater gearbeitet und redet fast nur in Befehlen. An meinem ersten Tag sagte er zu mir: Stell den Stuhl ans Fenster. Ich stellte ihn ans Fenster. Dann sagte er: Und jetzt sag mir, wo der Stuhl steht.\n\nIch sagte: Am Fenster.\n\nEr nickte, als hätte ich eine Prüfung bestanden, und sagte: Gut. Merk dir den Unterschied, dann brauchst du in diesem Beruf nie wieder Grammatik.\n\nIch habe zwei Jahre gebraucht, um zu verstehen, dass das kein Spruch war. Im Deutschen ändern bestimmte Präpositionen ihre Bedeutung mit dem Fall. An die Wand sagt man, wenn sich etwas bewegt. An der Wand sagt man, wenn es schon steht. Bewegung oder Ort: Der Fall entscheidet, nicht die Präposition.\n\nAuf einer Bühne ist das keine Feinheit, sondern eine Arbeitsanweisung. Häng das Bild über das Sofa heißt: Nimm es und häng es dorthin. Das Bild hängt über dem Sofa heißt: Fass es nicht an.\n\nKarl-Heinz hat ein Verfahren, über das er mit niemandem spricht, weil er es für selbstverständlich hält. Wenn er eine Anweisung gibt, geht er dabei los. Wenn er einen Zustand beschreibt, bleibt er stehen. Man kann ihn also verstehen, ohne die Wörter zu hören, und genau das ist bei einer Probe nützlich.\n\nHinter der Bühne hört man ihn oft, ohne ihn zu sehen. Leg das Kabel unter den Teppich. Das Kabel liegt unter dem Teppich. Zwei Sätze, ein einziger Unterschied, und die zweite Fassung bedeutet, dass die Arbeit fertig ist.\n\nIm Mai geht er in Rente. Die neue Kollegin, die ihn ersetzen soll, hat Theaterwissenschaft studiert und schreibt alles mit, was er sagt. Sie hat mich neulich gefragt, was sie sich unbedingt merken solle.\n\nIch habe gesagt: Stell einen Stuhl ans Fenster und sag ihm dann, wo er steht.\n\nSie hat gelacht. Karl-Heinz stand zwei Meter weiter im Dunkeln und hat nichts gesagt, aber ich habe gehört, dass er zufrieden war. So etwas hört man an der Art, wie jemand nicht redet.",
+    "wordCount": 327,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Elegir acusativo o dativo con an, auf, über, unter e in según haya movimiento o lugar."
+      },
+      {
+        "es": "Dar instrucciones en imperativo con la preposición correcta."
+      },
+      {
+        "es": "Entender una regla profesional transmitida sin explicarla."
+      }
+    ],
+    "grammarFocus": [
+      "wechselprapositionen-b1",
+      "imperativ-b1",
+      "imperativ"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Befehlen",
+        "lemma": "Befehl",
+        "glosses": {
+          "es": "órdenes"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "nickte",
+        "lemma": "nicken",
+        "glosses": {
+          "es": "asintió con la cabeza"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Spruch",
+        "lemma": "Spruch",
+        "glosses": {
+          "es": "frase hecha, dicho"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Feinheit",
+        "lemma": "Feinheit",
+        "glosses": {
+          "es": "matiz, sutileza"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Anweisung",
+        "lemma": "Anweisung",
+        "glosses": {
+          "es": "instrucción de trabajo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Verfahren",
+        "lemma": "Verfahren",
+        "glosses": {
+          "es": "procedimiento"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Probe",
+        "lemma": "Probe",
+        "glosses": {
+          "es": "ensayo de teatro"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Rente",
+        "lemma": "Rente",
+        "glosses": {
+          "es": "jubilación"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En los teatros alemanes el oficio técnico se transmite dentro de la casa, de una persona a la siguiente, y muchas veces sin manual: quien se jubila deja un método que nunca escribió."
+    },
+    "spanishSpeakerNote": {
+      "es": "Nueve preposiciones alemanas cambian de sentido según el caso: an, auf, hinter, in, neben, über, unter, vor, zwischen. Acusativo si hay desplazamiento («ans Fenster»), dativo si describe dónde está («am Fenster»). El español no distingue: usa «junto a» para las dos."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto alemán largo que desarrolla una idea y cambia de dirección, separar lo que ocurrió de lo que alguien dice que ocurrió, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens",
+      "adjektivdeklination-a2",
+      "da-hin-her-a2",
+      "dativ-a2",
+      "futur-i-a2",
+      "genitiv-a2",
+      "infinitiv-zu-a2",
+      "komparativ-superlativ-a2",
+      "konjunktionen-a2",
+      "konjunktiv-ii-wurden-a2",
+      "modalverben-praeteritum-a2",
+      "partizip-als-adjektiv-a2",
+      "passiv-praesens-a2",
+      "perfekt-haben-a2",
+      "perfekt-sein-a2",
+      "praeteritum-basic-a2",
+      "reflexivverben-a2",
+      "relativsaetze-a2",
+      "trennbare-verben-praeteritum-a2",
+      "wechselpraepositionen-a2",
+      "zweiteilige-konnektoren-a2",
+      "adjektivdeklination-b1",
+      "genitiv-b1",
+      "imperativ-b1",
+      "indirekte-rede-b1",
+      "infinitiv-zu-b1",
+      "kausale-konzessive-satze-b1",
+      "konjunktiv-ii-b1",
+      "modalverben-prateritum-b1",
+      "nebensatze-b1",
+      "partizip-als-adjektiv-b1",
+      "passiv-b1",
+      "perfekt-haben-sein-b1",
+      "prateritum-starke-verben-b1",
+      "reflexive-verben-b1",
+      "relativsatze-b1",
+      "temporale-prapositionen-b1",
+      "verben-mit-prapositionen-b1",
+      "wechselprapositionen-b1",
+      "wortbildung-b1",
+      "zweiteilige-konnektoren-b1"
+    ],
+    "disallowedGrammar": [
+      "Futur II",
+      "erweitertes Partizipialattribut",
+      "Nominalstil amtlich",
+      "Konjunktiv I seltener Verben"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 10.9,
+      "maxSentenceWords": 19,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Prosa B1 con Konjunktiv II, indirekte Rede, pasiva y subordinadas encadenadas. Konjunktiv I solo en verbos frecuentes (sei, habe, wolle). Inferencia moderada: exige cruzar dos pasajes separados."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué le enseña Karl-Heinz al narrador?",
+      "options": [
+        {
+          "id": "caso",
+          "text": "Que el caso, y no la preposición, decide si algo se mueve o ya está colocado"
+        },
+        {
+          "id": "orden",
+          "text": "Que en el teatro hay que obedecer sin preguntar"
+        },
+        {
+          "id": "memoria",
+          "text": "Que conviene apuntar todo lo que dicen los veteranos"
+        }
+      ],
+      "answer": "caso",
+      "evidence": "Bewegung oder Ort: Der Fall entscheidet, nicht die Präposition.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo enseña sin nombrar la gramática: con una silla y dos frases."
+        },
+        "incorrect": {
+          "es": "Lo de apuntar es lo que hace la nueva compañera, y no se habla de obediencia. Busca la frase que empieza por «Bewegung oder Ort»."
+        },
+        "strategy": {
+          "es": "Cuando un texto formula una regla en una frase corta y aislada, esa frase es la tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué hace Karl-Heinz físicamente cuando da una instrucción?",
+      "options": [
+        {
+          "id": "moverse",
+          "text": "Echa a andar mientras la dice"
+        },
+        {
+          "id": "senalar",
+          "text": "Señala el objeto con la mano"
+        },
+        {
+          "id": "repetir",
+          "text": "Repite la frase dos veces"
+        }
+      ],
+      "answer": "moverse",
+      "evidence": "Wenn er eine Anweisung gibt, geht er dabei los. Wenn er einen Zustand beschreibt, bleibt er stehen.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: su cuerpo hace lo mismo que el caso gramatical."
+        },
+        "incorrect": {
+          "es": "No se menciona ni señalar ni repetir. Busca el párrafo del «Verfahren»."
+        },
+        "strategy": {
+          "es": "Si el texto contrapone dos comportamientos en frases paralelas, la respuesta está en una de las dos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El narrador dice que la frase de Karl-Heinz no era un «Spruch». ¿Qué significa?",
+      "options": [
+        {
+          "id": "frasehecha",
+          "text": "Una frase hecha sin contenido real"
+        },
+        {
+          "id": "insulto",
+          "text": "Un insulto"
+        },
+        {
+          "id": "contrato",
+          "text": "Una cláusula del contrato"
+        }
+      ],
+      "answer": "frasehecha",
+      "evidence": "Ich habe zwei Jahre gebraucht, um zu verstehen, dass das kein Spruch war.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Si tardó dos años en ver que no lo era, es que parecía una frase vacía."
+        },
+        "incorrect": {
+          "es": "La palabra no aparece en contexto de ofensa ni de documento. Fíjate en cuánto tardó en entenderlo."
+        },
+        "strategy": {
+          "es": "Una negación («no era un X») define X por lo que resultó ser en realidad."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el narrador le repite a la nueva compañera el mismo ejercicio de la silla?",
+      "options": [
+        {
+          "id": "transmitir",
+          "text": "Porque el método se transmite haciéndolo, no anotándolo"
+        },
+        {
+          "id": "burla",
+          "text": "Porque quiere burlarse de ella por venir de la universidad"
+        },
+        {
+          "id": "prueba",
+          "text": "Porque debe examinarla antes de que la contraten"
+        }
+      ],
+      "answer": "transmitir",
+      "evidence": "Die neue Kollegin … schreibt alles mit, was er sagt … Ich habe gesagt: Stell einen Stuhl ans Fenster und sag ihm dann, wo er steht.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el contraste está puesto a propósito: ella apunta palabras, él le devuelve un gesto."
+        },
+        "incorrect": {
+          "es": "No hay examen ni burla: ella se ríe y Karl-Heinz queda satisfecho. Cruza lo que ella hace con lo que él le responde."
+        },
+        "strategy": {
+          "es": "Cuando un personaje repite en el final lo que le hicieron al principio, está transmitiendo, no repitiendo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: Karl-Heinz estaba presente cuando el narrador dio el consejo a su sustituta.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Karl-Heinz stand zwei Meter weiter im Dunkeln und hat nichts gesagt.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero: estaba a dos metros, a oscuras, y no dijo nada."
+        },
+        "incorrect": {
+          "es": "La respuesta está en la penúltima frase del texto, que dice dónde estaba."
+        },
+        "strategy": {
+          "es": "En un final breve, cada frase aporta un dato: léelas una a una antes de decidir."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la escena.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "La prueba de la silla el primer día"
+        },
+        {
+          "id": "p2",
+          "text": "La regla del caso explicada dos años después"
+        },
+        {
+          "id": "p3",
+          "text": "Los ejemplos del cable y del cuadro en el escenario"
+        },
+        {
+          "id": "p4",
+          "text": "La jubilación de mayo y la nueva compañera"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "An meinem ersten Tag sagte er zu mir … Ich habe zwei Jahre gebraucht … Hinter der Bühne hört man ihn oft … Im Mai geht er in Rente.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: la prueba, la regla, el uso diario y el relevo."
+        },
+        "incorrect": {
+          "es": "Guíate por «An meinem ersten Tag», «zwei Jahre», «hinter der Bühne» e «Im Mai»."
+        },
+        "strategy": {
+          "es": "Un relato de oficio suele terminar en el momento del relevo: busca esa marca al final."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en alemán dando instrucciones para colocar cosas en una habitación y describiendo después dónde quedaron. Alterna acusativo y dativo con an, auf, über, unter e in."
+    },
+    "minWords": 70,
+    "maxWords": 130,
+    "hints": [
+      "Stell den Tisch an die Wand.",
+      "Der Tisch steht an der Wand.",
+      "Leg das Kabel unter den Teppich.",
+      "Das Kabel liegt unter dem Teppich."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán B1: pon la silla junto a la ventana | WeLearn"
+    },
+    "description": {
+      "es": "Lee una escena de taller en alemán B1 y practica las Wechselpräpositionen (acusativo o dativo) y el imperativo. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/b1/lectura/stell-den-stuhl-ans-fenster",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-b1-sie-hat-nie-fahren-wollen",
+      "de-b1-entweder-jetzt-oder-nie"
+    ]
+  }
+}

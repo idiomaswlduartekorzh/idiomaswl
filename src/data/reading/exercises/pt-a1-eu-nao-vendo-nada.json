@@ -1,0 +1,439 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "pt-a1-eu-nao-vendo-nada",
+  "status": "published",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Portugués A1"
+  },
+  "slug": "eu-nao-vendo-nada",
+  "series": {
+    "id": "portugues-a1-lectura-10",
+    "episode": 7,
+    "totalEpisodes": 10,
+    "previousExerciseId": "pt-a1-mensagens-sobre-o-sofa",
+    "nextExerciseId": "pt-a1-o-jogo-da-rua-quinze"
+  },
+  "classification": {
+    "genre": "relato de trabajo",
+    "topic": "un empleo de verano",
+    "intent": "learning",
+    "tags": [
+      "portugues a1",
+      "lectura",
+      "negación",
+      "verbos -ER e -IR"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Yo no vendo nada"
+    },
+    "intro": {
+      "es": "Un chico contratado en una librería que no vende ni un libro en dos semanas, y descubre para qué lo contrataron. Lectura de portugués A1."
+    },
+    "mission": {
+      "es": "Averigua qué hace en realidad y por qué el dueño está contento."
+    },
+    "targetText": "Eu trabalho numa livraria desde dezembro. Eu não vendo nada. Ninguém compra livro comigo. Nas duas primeiras semanas eu não vendi nenhum. Nenhum mesmo. Eu quase pedi demissão. Mas o dono não reclama. Ele nunca reclama. Eu pergunto: por que você não me manda embora? Ele diz: você não vende, mas as pessoas voltam. Então ele explica. Eu discuto livro com os clientes. Eu falo do livro por vinte minutos. Depois eles não compram nada e vão embora. Mas eles voltam na semana seguinte. E aí compram. O dono diz que eles compram do outro vendedor, o Marcos. Então o número do Marcos sobe. O meu não. Eu disse que isso não é justo. O dono riu. Ele disse: eu não pago por número. Eu pago por gente que volta. Agora eu não peço mais demissão.",
+    "wordCount": 136,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Negar con não, nada, ninguém, nenhum y nunca."
+      },
+      {
+        "es": "Conjugar en presente los verbos en -ER e -IR: vendo, respondo, discuto, sobe."
+      },
+      {
+        "es": "Entender un texto donde el protagonista tarda en comprender su propio trabajo."
+      }
+    ],
+    "grammarFocus": [
+      "negacao",
+      "presente-verbos-er-ir"
+    ],
+    "vocabulary": [
+      {
+        "surface": "livraria",
+        "lemma": "livraria",
+        "glosses": {
+          "es": "librería. ¡No es una biblioteca: eso es «biblioteca»!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "demissão",
+        "lemma": "demissão",
+        "glosses": {
+          "es": "renuncia; pedir demissão = dimitir"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "reclama",
+        "lemma": "reclamar",
+        "glosses": {
+          "es": "se queja"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "manda embora",
+        "lemma": "mandar embora",
+        "glosses": {
+          "es": "despide, echa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "discuto",
+        "lemma": "discutir",
+        "glosses": {
+          "es": "comento, converso sobre"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sobe",
+        "lemma": "subir",
+        "glosses": {
+          "es": "sube, aumenta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "justo",
+        "lemma": "justo",
+        "glosses": {
+          "es": "justo, equitativo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "riu",
+        "lemma": "rir",
+        "glosses": {
+          "es": "se rió"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La librería de barrio brasileña vive de la clientela que vuelve, y muchas pagan al personal por sueldo fijo y no por comisión. El texto se apoya en esa diferencia."
+    },
+    "spanishSpeakerNote": {
+      "es": "«Livraria» es la tienda de libros, no la biblioteca. Y ojo con la negación múltiple: en portugués «eu não vendi nenhum» lleva dos marcas de negación y es correcto, igual que en español."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en portugués de Brasil sobre la vida cotidiana, distinguir ser de estar, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-possessivos",
+      "adjetivos-qualificativos",
+      "adverbios-frequencia",
+      "artigos",
+      "contracoes",
+      "estar-gerundio",
+      "ha-tem-existe",
+      "ir-futuro",
+      "negacao",
+      "perguntas-interrogativas",
+      "plural-substantivos",
+      "preposicoes-lugar",
+      "presente-verbos-ar",
+      "presente-verbos-er-ir",
+      "pronomes-pessoais",
+      "ser-e-estar",
+      "verbo-ter",
+      "verbos-irregulares"
+    ],
+    "disallowedGrammar": [
+      "pretérito perfeito",
+      "imperfeito",
+      "subjuntivo",
+      "voz passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 5.7,
+      "maxSentenceWords": 11,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Presente de indicativo y futuro con ir. Sin tiempos del pasado ni subjuntivo. Falso amigo glosado en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué descubre el narrador sobre su trabajo?",
+      "options": [
+        {
+          "id": "vuelven",
+          "text": "Que su valor está en que los clientes vuelven, no en lo que vende"
+        },
+        {
+          "id": "despido",
+          "text": "Que van a despedirlo a final de mes"
+        },
+        {
+          "id": "comision",
+          "text": "Que le pagan por comisión y tiene que vender más"
+        }
+      ],
+      "answer": "vuelven",
+      "evidence": "eu não pago por número. Eu pago por gente que volta.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo dice el dueño en dos frases al final. Es lo que hace que él deje de querer irse."
+        },
+        "incorrect": {
+          "es": "Nadie lo despide y el dueño dice expresamente que no paga por números. Busca la frase del dueño al final."
+        },
+        "strategy": {
+          "es": "Cuando un jefe explica su criterio en una cita literal, esa cita es la tesis del texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántos libros vendió en las dos primeras semanas?",
+      "options": [
+        {
+          "id": "ninguno",
+          "text": "Ninguno"
+        },
+        {
+          "id": "veinte",
+          "text": "Veinte"
+        },
+        {
+          "id": "dos",
+          "text": "Dos"
+        }
+      ],
+      "answer": "ninguno",
+      "evidence": "Nas duas primeiras semanas eu não vendi nenhum. Nenhum mesmo.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y lo repite para que no queden dudas: «nenhum mesmo»."
+        },
+        "incorrect": {
+          "es": "Los veinte son los minutos que habla con cada cliente. Busca la frase con «nenhum»."
+        },
+        "strategy": {
+          "es": "Si un texto repite una palabra para insistir, ese dato es importante. Fíjate en las repeticiones."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto empieza con «Eu trabalho numa livraria». ¿Qué es una «livraria»?",
+      "options": [
+        {
+          "id": "tienda",
+          "text": "Una tienda de libros"
+        },
+        {
+          "id": "biblioteca",
+          "text": "Una biblioteca pública"
+        },
+        {
+          "id": "editorial",
+          "text": "Una editorial"
+        }
+      ],
+      "answer": "tienda",
+      "evidence": "Eu não vendo nada. Ninguém compra livro comigo.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Los verbos vender y comprar solo tienen sentido en una tienda."
+        },
+        "incorrect": {
+          "es": "En una biblioteca nadie compra. Fíjate en los verbos de las dos frases siguientes."
+        },
+        "strategy": {
+          "es": "Si dudas del sitio, mira qué verbos se usan allí. Vender y comprar descartan la biblioteca."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué suben los números de Marcos y no los suyos?",
+      "options": [
+        {
+          "id": "despues",
+          "text": "Porque los clientes vuelven otro día y compran con Marcos"
+        },
+        {
+          "id": "mejor",
+          "text": "Porque Marcos habla mejor de los libros"
+        },
+        {
+          "id": "turno",
+          "text": "Porque Marcos trabaja más horas"
+        }
+      ],
+      "answer": "despues",
+      "evidence": "eles voltam na semana seguinte. E aí compram. O dono diz que eles compram do outro vendedor, o Marcos.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Él convence y Marcos cobra la venta, porque la compra ocurre otro día."
+        },
+        "incorrect": {
+          "es": "El texto no compara cómo habla Marcos ni sus horas. Fíjate en cuándo vuelven los clientes."
+        },
+        "strategy": {
+          "es": "Cuando un resultado parece injusto, busca la diferencia de tiempo entre las dos acciones."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el dueño se queja a menudo de que el narrador no vende.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Mas o dono não reclama. Ele nunca reclama.",
+      "feedback": {
+        "correct": {
+          "es": "Falso, y el texto lo dice dos veces seguidas: no se queja, nunca se queja."
+        },
+        "incorrect": {
+          "es": "Busca las dos frases sobre el dueño al principio. Las dos son negativas."
+        },
+        "strategy": {
+          "es": "Cuando dos frases seguidas niegan lo mismo, el texto está insistiendo. No lo leas al revés."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué termina el texto con «Agora eu não peço mais demissão»?",
+      "options": [
+        {
+          "id": "cierre",
+          "text": "Para cerrar el arco: al principio quería irse y ya no"
+        },
+        {
+          "id": "sueldo",
+          "text": "Para pedir un aumento de sueldo"
+        },
+        {
+          "id": "queja",
+          "text": "Para quejarse de que sigue sin vender"
+        }
+      ],
+      "answer": "cierre",
+      "evidence": "Eu quase pedi demissão … Agora eu não peço mais demissão.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la simetría es exacta: la misma palabra al principio y al final, con el sentido invertido."
+        },
+        "incorrect": {
+          "es": "No pide nada ni se queja. Busca dónde había aparecido antes la palabra «demissão»."
+        },
+        "strategy": {
+          "es": "Si una palabra del principio reaparece al final, el autor está cerrando un arco. Compara las dos frases."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en portugués sobre un trabajo donde tardaste en entender qué se esperaba de ti. Usa cinco negaciones distintas (não, nada, ninguém, nenhum, nunca)."
+    },
+    "minWords": 30,
+    "maxWords": 70,
+    "hints": [
+      "Eu trabalho em… desde…",
+      "Eu não… nada.",
+      "Ninguém…",
+      "Agora eu não… mais."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de portugués A1: Yo no vendo nada | WeLearn"
+    },
+    "description": {
+      "es": "Lee un relato en portugués de Brasil A1 y practica la negación y el presente de los verbos en -ER e -IR. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/portugues/a1/lectura/eu-nao-vendo-nada",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "pt-a1-mensagens-sobre-o-sofa",
+      "pt-a1-o-jogo-da-rua-quinze"
+    ]
+  }
+}

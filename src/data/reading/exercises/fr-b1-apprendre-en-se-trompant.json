@@ -1,0 +1,479 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-b1-apprendre-en-se-trompant",
+  "status": "published",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Francés B1"
+  },
+  "slug": "apprendre-en-se-trompant",
+  "series": {
+    "id": "frances-b1-lectura-10",
+    "episode": 8,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-b1-le-village-en-2040",
+    "nextExerciseId": "fr-b1-deux-fois-le-meme-roman"
+  },
+  "classification": {
+    "genre": "guía práctica razonada",
+    "topic": "métodos de estudio",
+    "intent": "learning",
+    "tags": [
+      "frances b1",
+      "lectura",
+      "gérondif",
+      "imperativo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Aprender equivocándose"
+    },
+    "intro": {
+      "es": "Por qué releer apuntes se siente productivo y no lo es, y qué hacer en su lugar. Lectura de francés B1 con el gérondif y el imperativo."
+    },
+    "mission": {
+      "es": "Averigua qué método desaconseja y por qué resulta tan tentador."
+    },
+    "targetText": "Commencez par accepter une chose désagréable: la méthode qui vous donne l’impression d’apprendre est presque toujours la moins efficace. En relisant vos notes, vous reconnaissez le contenu, et cette reconnaissance ressemble à s’y méprendre à de la compréhension. Ce n’en est pas. Vous reconnaissez la page, pas l’idée. La preuve est facile à obtenir: fermez le cahier et écrivez ce que vous venez de lire. La plupart des gens découvrent, en essayant, qu’ils retiennent beaucoup moins qu’ils ne le croyaient dix secondes plus tôt. Ne prenez pas cette découverte pour un échec. C’est exactement l’information qui vous manquait. Une fois qu’on l’accepte, la conséquence pratique est simple, et elle tient en une phrase: testez-vous au lieu de relire. Fermez le livre. Récitez. Écrivez de mémoire. Expliquez à voix haute, en marchant s’il le faut, à quelqu’un qui n’y connaît rien. Chaque fois que vous récupérez une information en forçant un peu, vous la fixez davantage que si vous l’aviez relue dix fois. C’est ce que les chercheurs appellent l’effet de test, et c’est l’un des résultats les mieux établis de la psychologie de l’apprentissage. Il a été mesuré sur des étudiants en médecine comme sur des enfants de huit ans, sur du vocabulaire étranger comme sur des théorèmes, et l’écart se maintient partout: entre trente et cinquante pour cent de rétention supplémentaire une semaine plus tard. Ce qui étonne, ce n’est pas l’effet. C’est qu’il soit connu depuis plus d’un siècle et que presque personne ne l’applique. Il y a une deuxième règle, moins connue et plus difficile à suivre: espacez. Trois séances de vingt minutes réparties sur trois jours produisent bien plus qu’une heure d’affilée, alors même que le temps total est identique. En espaçant, vous vous obligez à récupérer une information partiellement oubliée, et c’est précisément cet effort qui la consolide. Étudier deux heures la veille en se disant qu’on gagne du temps revient à faire l’inverse. Une dernière remarque, et c’est peut-être la plus importante. Ces deux méthodes ont un défaut commun: elles sont désagréables. Se tromper devant une page blanche est pénible. Revenir sur une leçon à moitié oubliée l’est aussi. La relecture, elle, est confortable et donne une sensation de progrès immédiate. Ne vous fiez pas à cette sensation. En apprentissage, le confort est presque toujours le signe qu’il ne se passe rien.",
+    "wordCount": 388,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Formar el gérondif con «en + participio presente» y usarlo para expresar el medio o la simultaneidad."
+      },
+      {
+        "es": "Dar instrucciones en imperativo, incluidas las negativas."
+      },
+      {
+        "es": "Seguir un texto que da consejos y justifica cada uno."
+      }
+    ],
+    "grammarFocus": [
+      "gerondif-b1",
+      "imperatif-b1",
+      "gerondif"
+    ],
+    "vocabulary": [
+      {
+        "surface": "à s’y méprendre",
+        "lemma": "à s’y méprendre",
+        "glosses": {
+          "es": "hasta confundirse, de forma engañosamente parecida"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cahier",
+        "lemma": "cahier",
+        "glosses": {
+          "es": "cuaderno"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "retiennent",
+        "lemma": "retenir",
+        "glosses": {
+          "es": "retienen, recuerdan"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "récupérez",
+        "lemma": "récupérer",
+        "glosses": {
+          "es": "recuperáis (aquí, traer algo a la memoria)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "espacez",
+        "lemma": "espacer",
+        "glosses": {
+          "es": "espaciad, separad en el tiempo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "d’affilée",
+        "lemma": "d’affilée",
+        "glosses": {
+          "es": "del tirón, seguidas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "la veille",
+        "lemma": "la veille",
+        "glosses": {
+          "es": "la víspera, el día antes"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pénible",
+        "lemma": "pénible",
+        "glosses": {
+          "es": "penoso, incómodo de hacer"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El «effet de test» o práctica de recuperación es uno de los hallazgos más replicados de la psicología cognitiva, y sin embargo sigue siendo minoritario en los hábitos de estudio de la mayoría de estudiantes."
+    },
+    "spanishSpeakerNote": {
+      "es": "El gérondif expresa el medio: «en espaçant, vous vous obligez à…» es «espaciando, te obligas a…». Ojo: en francés no se usa para la duración. «Estoy estudiando» no es «je suis étudiant» sino «je suis en train d’étudier»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo que desarrolla una idea, cambia de dirección y se cierra; distinguir el hecho de la interpretación; y justificar una inferencia señalando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers",
+      "accord-participe-passe",
+      "cause-consequence",
+      "comparatifs",
+      "conditionnel-present",
+      "connecteurs",
+      "discours-indirect",
+      "dont-relatif",
+      "futur-simple",
+      "gerondif",
+      "imparfait",
+      "negation-avancee",
+      "passe-compose-avoir",
+      "passe-compose-etre",
+      "passe-compose-vs-imparfait",
+      "pronoms-coi",
+      "pronoms-y-en",
+      "si-conditionnel",
+      "subjonctif-present",
+      "superlatifs",
+      "verbes-pronominaux",
+      "accord-participe-passe-b1",
+      "comparatif-superlatif-b1",
+      "conditionnel-present-b1",
+      "connecteurs-logiques-b1",
+      "discours-indirect-b1",
+      "expressions-temporelles-b1",
+      "futur-simple-b1",
+      "gerondif-b1",
+      "hypothese-si-b1",
+      "imperatif-b1",
+      "negation-avancee-b1",
+      "nominalisation-b1",
+      "participe-present-b1",
+      "passe-compose-vs-imparfait-b1",
+      "plus-que-parfait-b1",
+      "pronoms-relatifs-b1",
+      "pronoms-y-en-b1",
+      "questions-indirectes-b1",
+      "subjonctif-present-b1",
+      "voix-passive-b1"
+    ],
+    "disallowedGrammar": [
+      "passé simple",
+      "subjonctif imparfait",
+      "passé antérieur"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 13.4,
+      "maxSentenceWords": 42,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Prosa B1 con plus-que-parfait, voz pasiva y subjuntivo. Sin passé simple. Inferencia moderada: exige cruzar dos pasajes separados."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es el consejo central del texto?",
+      "options": [
+        {
+          "id": "testarse",
+          "text": "Ponerse a prueba y espaciar las sesiones, en vez de releer"
+        },
+        {
+          "id": "releer",
+          "text": "Releer los apuntes tantas veces como haga falta"
+        },
+        {
+          "id": "tiempo",
+          "text": "Dedicar más horas totales al estudio"
+        }
+      ],
+      "answer": "testarse",
+      "evidence": "testez-vous au lieu de relire … Il y a une deuxième règle … espacez.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Son dos reglas, y el texto insiste en que el tiempo total no cambia: cambia cómo se reparte."
+        },
+        "incorrect": {
+          "es": "Releer es justo lo que el texto desaconseja, y dice expresamente que el tiempo total puede ser el mismo."
+        },
+        "strategy": {
+          "es": "Cuando un texto de consejos numera reglas, la tesis es la suma de todas, no la primera."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Según el texto, ¿qué rinde más con el mismo tiempo total?",
+      "options": [
+        {
+          "id": "tres",
+          "text": "Tres sesiones de veinte minutos en tres días"
+        },
+        {
+          "id": "hora",
+          "text": "Una hora seguida el mismo día"
+        },
+        {
+          "id": "dos",
+          "text": "Dos horas la víspera del examen"
+        }
+      ],
+      "answer": "tres",
+      "evidence": "Trois séances de vingt minutes réparties sur trois jours produisent bien plus qu’une heure d’affilée",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el texto subraya lo contraintuitivo: «alors même que le temps total est identique»."
+        },
+        "incorrect": {
+          "es": "Estudiar dos horas la víspera es el ejemplo de lo que el texto llama hacer justo lo contrario."
+        },
+        "strategy": {
+          "es": "Cuando un texto compara dos formas de repartir el mismo tiempo, la comparación es el dato. Busca «plus que»."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que la relectura se parece «à s’y méprendre» a la comprensión. ¿Qué significa esa expresión?",
+      "options": [
+        {
+          "id": "confundirse",
+          "text": "Tanto que se confunden una con otra"
+        },
+        {
+          "id": "despreciar",
+          "text": "Que hay que despreciarla por completo"
+        },
+        {
+          "id": "aprender",
+          "text": "Que se aprende a base de repetirla"
+        }
+      ],
+      "answer": "confundirse",
+      "evidence": "cette reconnaissance ressemble à s’y méprendre à de la compréhension. Ce n’en est pas.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Y la frase siguiente lo confirma: se parecen tanto que uno se equivoca, pero no son lo mismo."
+        },
+        "incorrect": {
+          "es": "La expresión acompaña al verbo «ressembler», parecerse. Lo que añade es el grado de ese parecido."
+        },
+        "strategy": {
+          "es": "Una expresión fija junto a un verbo suele intensificarlo. Pregúntate qué grado añade, no qué significa por separado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué resulta tan tentadora la relectura, según el texto?",
+      "options": [
+        {
+          "id": "comodidad",
+          "text": "Porque es cómoda y da una sensación inmediata de progreso"
+        },
+        {
+          "id": "rapidez",
+          "text": "Porque permite terminar el temario en menos días"
+        },
+        {
+          "id": "costumbre",
+          "text": "Porque es el método que enseñan en la escuela"
+        }
+      ],
+      "answer": "comodidad",
+      "evidence": "La relecture, elle, est confortable et donne une sensation de progrès immédiate.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto cierra advirtiendo justo de eso: esa sensación es la señal de que no está pasando nada."
+        },
+        "incorrect": {
+          "es": "El texto no habla de rapidez ni de la escuela. Busca el último párrafo, donde compara las tres opciones."
+        },
+        "strategy": {
+          "es": "Cuando un texto explica por qué un mal hábito persiste, la razón suele ser psicológica. Búscala cerca del final."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el texto reconoce que los métodos que recomienda resultan desagradables de aplicar.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Ces deux méthodes ont un défaut commun: elles sont désagréables.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y lo dice sin rodeos. Es esa honestidad la que hace creíble el consejo final."
+        },
+        "incorrect": {
+          "es": "El último párrafo empieza reconociendo un defecto de sus propias recomendaciones. Búscalo."
+        },
+        "strategy": {
+          "es": "Un texto de consejos que admite los inconvenientes de su método está siendo honesto. No supongas que solo vende ventajas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué propone el texto cerrar el cuaderno y escribir lo que se acaba de leer?",
+      "options": [
+        {
+          "id": "prueba",
+          "text": "Para que el lector compruebe en sí mismo que retiene menos de lo que cree"
+        },
+        {
+          "id": "resumen",
+          "text": "Para que el lector aprenda a hacer resúmenes"
+        },
+        {
+          "id": "examen",
+          "text": "Para simular las condiciones de un examen oficial"
+        }
+      ],
+      "answer": "prueba",
+      "evidence": "La preuve est facile à obtenir: fermez le cahier et écrivez ce que vous venez de lire.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El texto lo llama «preuve»: no es un ejercicio de estudio, es una demostración de la afirmación anterior."
+        },
+        "incorrect": {
+          "es": "No se menciona ningún examen ni se enseña a resumir. Fíjate en la palabra que introduce la propuesta."
+        },
+        "strategy": {
+          "es": "Si una instrucción viene precedida de la palabra «prueba», su función es demostrar algo, no entrenar."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe una guía de 8–10 frases en francés con tu método para aprender algo. Usa cinco imperativos, uno en negativo, y tres gérondifs (en + participio)."
+    },
+    "minWords": 70,
+    "maxWords": 130,
+    "hints": [
+      "Commencez par…",
+      "En relisant…, vous…",
+      "Ne vous fiez pas à…",
+      "Chaque fois que vous…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés B1: Aprender equivocándose | WeLearn"
+    },
+    "description": {
+      "es": "Lee una guía razonada en francés B1 y practica el gérondif (en faisant) y el imperativo. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/frances/b1/lectura/apprendre-en-se-trompant",
+    "indexable": true,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-b1-le-village-en-2040",
+      "fr-b1-deux-fois-le-meme-roman"
+    ]
+  }
+}

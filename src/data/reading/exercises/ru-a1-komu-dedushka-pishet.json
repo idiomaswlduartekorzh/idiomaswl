@@ -1,0 +1,451 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-a1-komu-dedushka-pishet",
+  "status": "published",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Ruso A1"
+  },
+  "slug": "komu-dedushka-pishet",
+  "series": {
+    "id": "ruso-a1-lectura-10",
+    "episode": 7,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-a1-skolko-stoit-khleb",
+    "nextExerciseId": "ru-a1-voditel-kotoryy-ne-sprashivaet"
+  },
+  "classification": {
+    "genre": "memoria familiar",
+    "topic": "un abuelo que escribe postales a gente que vive cerca",
+    "intent": "learning",
+    "tags": [
+      "ruso a1",
+      "lectura",
+      "caso dativo",
+      "posesivos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A quién escribe el abuelo"
+    },
+    "intro": {
+      "es": "Postales, no cartas. Y una de ellas se la entrega en mano a alguien que vive en el mismo piso. Lectura de ruso A1."
+    },
+    "mission": {
+      "es": "Averigua por qué el narrador no le muestra la última postal a su madre."
+    },
+    "targetText": "Мой дедушка пишет открытки. Не письма — открытки. Он пишет своей сестре в Омск, моей матери, нашему соседу Павлу и мне.\n\nОн пишет мне каждый месяц. Я живу в той же квартире. Он даёт открытку мне в руки и говорит: «Читай потом».\n\nЕго сестре восемьдесят четыре года. Она никогда не отвечает. Дедушка говорит: «Ей трудно писать. Это ничего».\n\nМоей матери он пишет только хорошие новости. Мне он пишет всё.\n\nВ последней открытке он пишет: «Тебе двадцать лет. Мне восемьдесят один. Между нами шестьдесят один год и одна квартира. Это много и это мало».\n\nЯ не показываю эту открытку матери. Она моя.",
+    "wordCount": 100,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Formar el dativo del destinatario: сестре, матери, соседу, мне, ей, тебе."
+      },
+      {
+        "es": "Usar los posesivos: мой, моей, нашему, его, своей."
+      },
+      {
+        "es": "Reconocer un gesto que el texto no explica."
+      }
+    ],
+    "grammarFocus": [
+      "caso-dativo-basico",
+      "adjetivos-posesivos"
+    ],
+    "vocabulary": [
+      {
+        "surface": "дедушка",
+        "lemma": "дедушка",
+        "glosses": {
+          "es": "abuelo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "открытки",
+        "lemma": "открытка",
+        "glosses": {
+          "es": "postales"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "сестре",
+        "lemma": "сестра",
+        "glosses": {
+          "es": "hermana (en dativo)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "соседу",
+        "lemma": "сосед",
+        "glosses": {
+          "es": "vecino (en dativo)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "трудно",
+        "lemma": "трудно",
+        "glosses": {
+          "es": "cuesta, es difícil"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "отвечает",
+        "lemma": "отвечать",
+        "glosses": {
+          "es": "contesta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "последней",
+        "lemma": "последний",
+        "glosses": {
+          "es": "última"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "показываю",
+        "lemma": "показывать",
+        "glosses": {
+          "es": "muestro, enseño"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La postal escrita a mano sigue siendo un gesto vivo entre los rusos mayores, incluso para destinatarios que viven cerca: se escribe para dejar algo por escrito, no para informar."
+    },
+    "spanishSpeakerNote": {
+      "es": "El dativo marca a quién va dirigido algo, y en ruso lleva la edad también: «Мне тридцать лет» es literalmente «a mí (hay) treinta años». La misma forma sirve para «Ей трудно писать»: a ella le cuesta escribir."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en ruso sobre la vida cotidiana, reconocer las letras cirílicas que se parecen a las latinas sin serlo, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento"
+    ],
+    "disallowedGrammar": [
+      "pasado verbal",
+      "aspecto perfectivo",
+      "participios",
+      "gerundios (деепричастия)",
+      "condicional"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 5.6,
+      "maxSentenceWords": 13,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo, imperativo y futuro con быть. Sin pasado, sin aspecto y sin participios. Acento (ударение) sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta el texto?",
+      "options": [
+        {
+          "id": "nieto",
+          "text": "Que el abuelo escribe a varias personas y al nieto le escribe todo, no solo lo bueno"
+        },
+        {
+          "id": "correo",
+          "text": "Que el correo ruso funciona mal"
+        },
+        {
+          "id": "hermana",
+          "text": "Que su hermana de Omsk está enferma"
+        }
+      ],
+      "answer": "nieto",
+      "evidence": "Моей матери он пишет только хорошие новости. Мне он пишет всё.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y esa diferencia explica el gesto del final."
+        },
+        "incorrect": {
+          "es": "No se habla del correo ni de una enfermedad. Compara lo que escribe a la madre y al nieto."
+        },
+        "strategy": {
+          "es": "Cuando dos frases seguidas comparan a dos destinatarios, la diferencia es el asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cada cuánto le escribe el abuelo al narrador?",
+      "options": [
+        {
+          "id": "mes",
+          "text": "Cada mes"
+        },
+        {
+          "id": "semana",
+          "text": "Cada semana"
+        },
+        {
+          "id": "ano",
+          "text": "Una vez al año"
+        }
+      ],
+      "answer": "mes",
+      "evidence": "Он пишет мне каждый месяц. Я живу в той же квартире.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y la frase siguiente añade lo absurdo: viven en el mismo piso."
+        },
+        "incorrect": {
+          "es": "Busca la frase con «каждый». Va seguida de un detalle que lo hace todavía más raro."
+        },
+        "strategy": {
+          "es": "La palabra «каждый» (cada) introduce la frecuencia: búscala directamente."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El abuelo dice «Ей трудно писать». ¿Qué significa?",
+      "options": [
+        {
+          "id": "cuesta",
+          "text": "A ella le cuesta escribir"
+        },
+        {
+          "id": "noquiere",
+          "text": "Ella no quiere escribir"
+        },
+        {
+          "id": "nosabe",
+          "text": "Ella no sabe escribir"
+        }
+      ],
+      "answer": "cuesta",
+      "evidence": "Она никогда не отвечает. Дедушка говорит: «Ей трудно писать. Это ничего».",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Es una explicación amable, no un reproche: tiene ochenta y cuatro años."
+        },
+        "incorrect": {
+          "es": "El abuelo la disculpa, no la acusa de no querer ni de no saber. Fíjate en su edad."
+        },
+        "strategy": {
+          "es": "Si la frase va seguida de «это ничего» (no pasa nada), es una disculpa, no una crítica."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué no le muestra la última postal a su madre?",
+      "options": [
+        {
+          "id": "suya",
+          "text": "Porque esa postal es para él y dice cosas que el abuelo no le escribe a ella"
+        },
+        {
+          "id": "perdida",
+          "text": "Porque la ha perdido"
+        },
+        {
+          "id": "mala",
+          "text": "Porque contiene una mala noticia"
+        }
+      ],
+      "answer": "suya",
+      "evidence": "Моей матери он пишет только хорошие новости. Мне он пишет всё … Я не показываю эту открытку матери. Она моя.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y son dos frases separadas en el texto: hay que cruzarlas."
+        },
+        "incorrect": {
+          "es": "No la ha perdido y su contenido no es malo: habla de años y de una casa compartida."
+        },
+        "strategy": {
+          "es": "Para inferir, cruza el final con una frase anterior sobre el mismo personaje."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la hermana del abuelo contesta a sus postales todos los meses.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Она никогда не отвечает. Дедушка говорит: «Ей трудно писать».",
+      "feedback": {
+        "correct": {
+          "es": "Falso: no contesta nunca, y el abuelo lo entiende."
+        },
+        "incorrect": {
+          "es": "Busca la frase con «никогда». Está en el párrafo de la hermana."
+        },
+        "strategy": {
+          "es": "La palabra «никогда» (nunca) va siempre con «не»: las dos juntas niegan."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena el texto.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "A quiénes escribe el abuelo"
+        },
+        {
+          "id": "p2",
+          "text": "La postal que entrega en mano cada mes"
+        },
+        {
+          "id": "p3",
+          "text": "La hermana de Omsk, que no contesta"
+        },
+        {
+          "id": "p4",
+          "text": "La última postal y lo que el narrador hace con ella"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Он пишет своей сестре в Омск, моей матери, нашему соседу Павлу и мне … Он пишет мне каждый месяц … Его сестре восемьдесят четыре года … В последней открытке он пишет…",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: la lista, el nieto, la hermana y la postal final."
+        },
+        "incorrect": {
+          "es": "Fíjate en dónde aparece la lista de destinatarios y dónde la última postal."
+        },
+        "strategy": {
+          "es": "Un texto que abre con una lista suele desarrollar después a cada uno de sus miembros."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en ruso sobre a quién escribes o a quién escribirías. Usa cuatro dativos y cuatro posesivos distintos."
+    },
+    "minWords": 25,
+    "maxWords": 55,
+    "hints": [
+      "Мой дедушка пишет открытки.",
+      "Он пишет моей матери и мне.",
+      "Ей трудно писать.",
+      "Мне двадцать лет."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso A1: a quién escribe el abuelo | WeLearn"
+    },
+    "description": {
+      "es": "Lee una memoria familiar en ruso A1 y practica el caso dativo y los adjetivos posesivos. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/a1/lectura/komu-dedushka-pishet",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-a1-skolko-stoit-khleb",
+      "ru-a1-voditel-kotoryy-ne-sprashivaet"
+    ]
+  }
+}

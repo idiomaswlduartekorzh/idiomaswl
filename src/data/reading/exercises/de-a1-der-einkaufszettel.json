@@ -1,0 +1,442 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-a1-der-einkaufszettel",
+  "status": "published",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Alemán A1"
+  },
+  "slug": "der-einkaufszettel",
+  "series": {
+    "id": "aleman-a1-lectura-10",
+    "episode": 4,
+    "totalEpisodes": 10,
+    "previousExerciseId": "de-a1-was-machst-du-eigentlich",
+    "nextExerciseId": "de-a1-der-weg-zur-arbeit"
+  },
+  "classification": {
+    "genre": "lista comentada",
+    "topic": "una receta familiar",
+    "intent": "learning",
+    "tags": [
+      "aleman a1",
+      "lectura",
+      "acusativo",
+      "plural"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La lista de la compra"
+    },
+    "intro": {
+      "es": "Una lista para un plato familiar con dos ingredientes tachados y una nota al final. Lectura de alemán A1 con el acusativo y los plurales."
+    },
+    "mission": {
+      "es": "Averigua qué se tachó y por qué."
+    },
+    "targetText": "Für Sonntag. Ich brauche einen Kohl, zwei Zwiebeln und vier Kartoffeln. Ich brauche auch einen Apfel. Ja, einen Apfel. Meine Großmutter macht den Eintopf immer mit einem Apfel. Sie sagt, der Apfel nimmt die Säure. Ich weiß nicht, ob das stimmt. Ich mache es trotzdem. Ich kaufe keine Wurst mehr. Mein Bruder isst kein Fleisch, und er kommt am Sonntag. Also: keine Wurst. Der Eintopf ist ohne Wurst auch gut. Meine Großmutter weiß das nicht. Sie fragt jedes Mal nach der Wurst. Ich sage jedes Mal dasselbe: die Wurst ist im Kühlschrank. Das ist eine kleine Lüge. Sie ist achtundneunzig Jahre alt. Sie darf diese Lüge haben.",
+    "wordCount": 107,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Marcar el complemento directo con el acusativo: einen Kohl, den Eintopf, keine Wurst."
+      },
+      {
+        "es": "Formar el plural de los sustantivos: Zwiebeln, Kartoffeln, Jahre."
+      },
+      {
+        "es": "Distinguir el dato de la nota personal en una lista."
+      }
+    ],
+    "grammarFocus": [
+      "akkusativ",
+      "plural-nomen"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Kohl",
+        "lemma": "Kohl",
+        "glosses": {
+          "es": "col, repollo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Zwiebeln",
+        "lemma": "Zwiebel",
+        "glosses": {
+          "es": "cebollas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Eintopf",
+        "lemma": "Eintopf",
+        "glosses": {
+          "es": "guiso de una sola olla"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Säure",
+        "lemma": "Säure",
+        "glosses": {
+          "es": "acidez"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Wurst",
+        "lemma": "Wurst",
+        "glosses": {
+          "es": "salchicha, embutido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Fleisch",
+        "lemma": "Fleisch",
+        "glosses": {
+          "es": "carne"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Kühlschrank",
+        "lemma": "Kühlschrank",
+        "glosses": {
+          "es": "nevera"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Lüge",
+        "lemma": "Lüge",
+        "glosses": {
+          "es": "mentira"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El Eintopf es un guiso de una sola olla, plato dominical clásico en muchas familias alemanas. Cada casa defiende su versión, y añadir manzana es una variante regional real."
+    },
+    "spanishSpeakerNote": {
+      "es": "El acusativo solo cambia visiblemente en masculino: «der Apfel» pasa a «einen Apfel» cuando es complemento directo. En femenino y neutro no se nota, y por eso el masculino es el que hay que vigilar."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en alemán sobre la vida cotidiana, encontrar el verbo aunque esté partido o al final, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens"
+    ],
+    "disallowedGrammar": [
+      "Perfekt",
+      "Präteritum",
+      "Konjunktiv",
+      "Passiv",
+      "Genitiv"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 5.9,
+      "maxSentenceWords": 10,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo y futuro con presente. Sin Perfekt, Präteritum ni pasiva. Verbos separables y orden de la frase trabajados en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué revela la lista además de los ingredientes?",
+      "options": [
+        {
+          "id": "mentira",
+          "text": "Una mentira pequeña que se le cuenta a la abuela cada domingo"
+        },
+        {
+          "id": "dieta",
+          "text": "Que el narrador ha dejado de comer carne"
+        },
+        {
+          "id": "receta",
+          "text": "La receta exacta del guiso"
+        }
+      ],
+      "answer": "mentira",
+      "evidence": "Ich sage jedes Mal dasselbe: die Wurst ist im Kühlschrank. Das ist eine kleine Lüge.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La lista es la excusa; lo que cuenta es cómo se maneja el asunto con la abuela."
+        },
+        "incorrect": {
+          "es": "Quien no come carne es el hermano, no el narrador. Y no hay cantidades ni pasos de receta."
+        },
+        "strategy": {
+          "es": "Si una lista incluye una confesión, esa confesión es el asunto. Búscala."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Por qué no compra salchicha?",
+      "options": [
+        {
+          "id": "hermano",
+          "text": "Porque su hermano no come carne y viene el domingo"
+        },
+        {
+          "id": "precio",
+          "text": "Porque está muy cara"
+        },
+        {
+          "id": "abuela",
+          "text": "Porque a la abuela no le gusta"
+        }
+      ],
+      "answer": "hermano",
+      "evidence": "Mein Bruder isst kein Fleisch, und er kommt am Sonntag. Also: keine Wurst.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Y el «Also» une la causa con la decisión."
+        },
+        "incorrect": {
+          "es": "La abuela pregunta justamente por la salchicha, así que le gusta. Busca la frase del hermano."
+        },
+        "strategy": {
+          "es": "La palabra «also» introduce la conclusión. Lo que va antes es el motivo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «der Apfel nimmt die Säure». ¿Qué es la «Säure»?",
+      "options": [
+        {
+          "id": "acidez",
+          "text": "La acidez del guiso"
+        },
+        {
+          "id": "sal",
+          "text": "La sal"
+        },
+        {
+          "id": "espuma",
+          "text": "La espuma de la cocción"
+        }
+      ],
+      "answer": "acidez",
+      "evidence": "Meine Großmutter macht den Eintopf immer mit einem Apfel. Sie sagt, der Apfel nimmt die Säure.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Es la explicación que da la abuela para añadir manzana al guiso."
+        },
+        "incorrect": {
+          "es": "Una manzana no quita sal ni espuma. Piensa qué aporta la fruta a un guiso de col."
+        },
+        "strategy": {
+          "es": "Si un ingrediente inesperado tiene una función declarada, esa función define la palabra."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué mantiene la mentira sobre la salchicha?",
+      "options": [
+        {
+          "id": "edad",
+          "text": "Porque su abuela tiene noventa y ocho años y prefiere no discutir"
+        },
+        {
+          "id": "sabor",
+          "text": "Porque cree que el guiso está mejor sin ella"
+        },
+        {
+          "id": "olvido",
+          "text": "Porque se le olvida corregirla"
+        }
+      ],
+      "answer": "edad",
+      "evidence": "Sie ist achtundneunzig Jahre alt. Sie darf diese Lüge haben.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la frase final es casi tierna: «puede quedarse con esa mentira»."
+        },
+        "incorrect": {
+          "es": "Sí cree que está bien sin salchicha, pero eso no explica la mentira. Lee las dos frases finales."
+        },
+        "strategy": {
+          "es": "Cuando un texto da un dato y a continuación una conclusión, ese dato es la razón."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la receta de la abuela lleva una manzana.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Meine Großmutter macht den Eintopf immer mit einem Apfel.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y el narrador lo sigue haciendo aunque dude de que sirva de algo."
+        },
+        "incorrect": {
+          "es": "Busca la frase con «Großmutter» y «Apfel». Está al principio de la lista."
+        },
+        "strategy": {
+          "es": "Cuando un texto insiste en un ingrediente raro repitiéndolo, es que importa. Búscalo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "reference",
+      "skill": "reference",
+      "prompt": "En «Meine Großmutter weiß das nicht», ¿qué es lo que no sabe?",
+      "options": [
+        {
+          "id": "sinwurst",
+          "text": "Que el guiso también está bueno sin salchicha"
+        },
+        {
+          "id": "hermano",
+          "text": "Que su nieto tiene un hermano"
+        },
+        {
+          "id": "domingo",
+          "text": "Que la comida es el domingo"
+        }
+      ],
+      "answer": "sinwurst",
+      "evidence": "Der Eintopf ist ohne Wurst auch gut. Meine Großmutter weiß das nicht.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El «das» recoge la frase inmediatamente anterior."
+        },
+        "incorrect": {
+          "es": "El pronombre «das» remite a lo que se acaba de decir. Lee la frase anterior."
+        },
+        "strategy": {
+          "es": "El demostrativo «das» suele recoger la frase entera anterior, no un objeto. Retrocede una línea."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe una lista comentada de 5–7 frases en alemán para una comida familiar. Usa cinco acusativos y cuatro sustantivos en plural."
+    },
+    "minWords": 25,
+    "maxWords": 60,
+    "hints": [
+      "Für Sonntag. Ich brauche einen…",
+      "Ich brauche auch…",
+      "Ich kaufe keine… mehr.",
+      "Das ist eine kleine Lüge."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán A1: La lista de la compra | WeLearn"
+    },
+    "description": {
+      "es": "Lee una lista comentada en alemán A1 y practica el acusativo y el plural de los sustantivos. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/a1/lectura/der-einkaufszettel",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-a1-was-machst-du-eigentlich",
+      "de-a1-der-weg-zur-arbeit"
+    ]
+  }
+}

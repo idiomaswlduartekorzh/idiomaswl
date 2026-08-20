@@ -217,8 +217,11 @@
   display: inline-block;
   border: 0;
   /* El área táctil mínima de WCAG 2.2 son 24 px; en línea se quedaba en la altura de la
-     fuente, unos 20. */
-  padding: 0.15em 0.3em;
+     fuente, unos 20. El relleno da esa altura, y el margen negativo lo compensa a los
+     lados: sin él, la palabra pulsable empujaba la puntuación y `ˈθɜːzˌdeɪ .` salía con
+     un hueco antes del punto. */
+  padding: 0.22em 0.14em;
+  margin: 0 -0.14em;
   background: color-mix(in srgb, var(--wlp-accent) 10%, transparent);
   border-radius: var(--wlp-r-sm);
   /* Mezclado con la tinta: el acento puro sobre su propio tinte se quedaba en 4,25:1,
@@ -512,4 +515,12 @@
   border-top: 1px dashed var(--wl-border);
   font-size: 0.78rem !important;
   color: var(--wl-text-soft) !important;
+}
+
+/* Explicación de la fila de pronunciación real. Va una vez encima, no en cada palabra:
+   repetirla por par convertía la fila en un muro ilegible. */
+.spokenIntro {
+  margin: 0 0 0.4rem;
+  font-size: 0.85rem;
+  color: var(--wl-text-soft);
 }

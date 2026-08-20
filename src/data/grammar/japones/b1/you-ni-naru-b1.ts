@@ -70,7 +70,7 @@ const topic: GrammarTopic = {
       heading: '¿Cuál es la diferencia clave entre ようになる y ようにする?',
       paragraphs: [
         'ようになる describe un cambio que ocurre gradualmente, muchas veces sin un esfuerzo consciente específico. ようにする en cambio expresa la intención activa de hacer que algo ocurra: "me esfuerzo para que X pase".',
-        '比较: 早く起きるようになった (llegué a levantarme temprano — cambio gradual) vs 早く起きるようにしている (me esfuerzo por levantarme temprano — intención activa). En el aprendizaje de idiomas, cuando describes tu progreso usarás ようになった; cuando describes tu disciplina actual usarás ようにしている.',
+        '比較: 早く起きるようになった (llegué a levantarme temprano — cambio gradual) vs 早く起きるようにしている (me esfuerzo por levantarme temprano — intención activa). En el aprendizaje de idiomas, cuando describes tu progreso usarás ようになった; cuando describes tu disciplina actual usarás ようにしている.',
       ],
     },
     {

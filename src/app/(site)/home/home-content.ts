@@ -220,17 +220,17 @@ export const LANGUAGES = [
     name: 'Japonés',
     native: '日本語',
     symbol: '日',
-    href: '/practica/japones',
-    label: 'Explorar práctica de japonés',
-    type: 'Práctica publicada',
+    href: '/clases-de-japones',
+    label: 'Ver clases de japonés',
+    type: 'Clases y práctica',
   },
   {
     name: 'Ruso',
     native: 'Русский',
     symbol: 'РУ',
-    href: '/practica/ruso',
-    label: 'Explorar práctica de ruso',
-    type: 'Práctica publicada',
+    href: '/clases-de-ruso',
+    label: 'Ver clases de ruso',
+    type: 'Clases y práctica',
   },
 ] as const;
 

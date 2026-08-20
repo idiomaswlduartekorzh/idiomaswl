@@ -1,19 +1,12 @@
 import type { Metadata } from 'next'
-import { practicaMetadata } from '@/lib/practica-metadata'
-import Content from './Content'
-import { QuizSchema } from '@/components/practica/EducationSchema';
+import { buildHubMetadata, HubPage, resolveHubForRoute } from '@/components/reading/ReadingPageServer'
 
-export const metadata: Metadata = practicaMetadata('italiano', 'b1', 'lectura')
+export function generateMetadata(): Metadata {
+  const r = resolveHubForRoute('es', 'italiano', 'b1')
+  return buildHubMetadata('es', r.language, r.level, r.exercises)
+}
 
 export default function Page() {
-  return (
-    <>
-      <QuizSchema
-        name="Lettura Italiano B1 — Testi con vocabolario interattivo"
-        url="https://idiomaswl.com/practica/italiano/b1/lectura"
-        description="5 testi B1 de italiano (120-150 palabras) con vocabulario clickeable, 6 preguntas MCQ y producción libre."
-      />
-      <Content />
-    </>
-  )
+  const r = resolveHubForRoute('es', 'italiano', 'b1')
+  return <HubPage locale="es" {...r} />
 }

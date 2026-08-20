@@ -1,0 +1,473 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-a2-jal-anhaneun-kape",
+  "status": "published",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Coreano A2",
+    "topik": 2,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. A2 se sitúa alrededor del TOPIK I nivel 2, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "jal-anhaneun-kape",
+  "series": {
+    "id": "coreano-a2-lectura-10",
+    "episode": 5,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-a2-cheoeum-insa",
+    "nextExerciseId": "ko-a2-sumureul-baeugo-itsseoyo"
+  },
+  "classification": {
+    "genre": "reseña breve",
+    "topic": "una cafetería de barrio",
+    "intent": "learning",
+    "tags": [
+      "coreano a2",
+      "lectura",
+      "cláusulas de relativo",
+      "것 같다"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La cafetería que no atiende bien"
+    },
+    "intro": {
+      "es": "El café más rico del barrio lo sirve alguien que no saluda, no sonríe y no pregunta nada. Lectura de coreano A2 con las relativas."
+    },
+    "mission": {
+      "es": "Averigua qué acaba pensando la clienta sobre ese trato."
+    },
+    "targetText": "우리 동네에 제가 매일 가는 카페가 있어요. 이름은 없어요. 간판에 커피라는 글자만 있어요. 거기서 일하는 사람은 한 명이에요. 사십 대 남자인 것 같아요. 그 사람은 인사를 안 해요. 웃지도 않아요. 뭘 마시고 싶은지도 안 물어요. 처음 갔을 때 저는 기분이 나빴어요. 불친절한 사람인 것 같았어요. 하지만 커피가 정말 맛있었어요. 그래서 다음 날에도 갔어요. 두 번째로 갔을 때 그 사람이 제가 어제 마신 커피를 그냥 만들었어요. 아무것도 묻지 않았어요. 세 번째로 갔을 때도 똑같았어요. 네 번째 날에 저는 다른 커피를 마시고 싶었어요. 그래서 처음으로 말했어요. 오늘은 다른 것을 주세요. 그 사람은 고개를 끄덕였어요. 그리고 아무것도 묻지 않고 만들었어요. 그때 제가 이해했어요. 그 사람은 손님이 마시는 커피를 다 기억하고 있어요. 인사는 안 하지만 사람을 기억해요. 지금 저는 그 카페를 제일 좋아해요. 친절한 것과 사람을 아는 것은 다른 것 같아요.",
+    "wordCount": 127,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Formar cláusulas de relativo con 는/은/을: 제가 매일 가는 카페, 거기서 일하는 사람."
+      },
+      {
+        "es": "Expresar impresiones con 것 같다 y distinguirlas de los hechos."
+      },
+      {
+        "es": "Seguir un cambio de opinión a lo largo de tres visitas."
+      }
+    ],
+    "grammarFocus": [
+      "clausulas-relativas-a2",
+      "parecer-neun-geot-gatda-a2",
+      "marcador-objeto"
+    ],
+    "vocabulary": [
+      {
+        "surface": "간판",
+        "lemma": "간판",
+        "reading": "ganpan",
+        "glosses": {
+          "es": "letrero, rótulo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "글자",
+        "lemma": "글자",
+        "reading": "geulja",
+        "glosses": {
+          "es": "letra, carácter escrito"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "사십 대",
+        "lemma": "사십 대",
+        "reading": "sasip dae",
+        "glosses": {
+          "es": "de cuarenta y tantos años"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "불친절한",
+        "lemma": "불친절하다",
+        "reading": "bulchinjeolhan",
+        "glosses": {
+          "es": "poco amable, antipático"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "기분",
+        "lemma": "기분",
+        "reading": "gibun",
+        "glosses": {
+          "es": "ánimo, humor"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "손님",
+        "lemma": "손님",
+        "reading": "sonnim",
+        "glosses": {
+          "es": "cliente, invitado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "친절한",
+        "lemma": "친절하다",
+        "reading": "chinjeolhan",
+        "glosses": {
+          "es": "amable"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "이해했어요",
+        "lemma": "이해하다",
+        "reading": "ihaehaesseoyo",
+        "glosses": {
+          "es": "comprendí"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Las cafeterías de una sola persona son comunes en los barrios coreanos, y muchas no ponen nombre. La atención breve no se lee necesariamente como mala educación."
+    },
+    "spanishSpeakerNote": {
+      "es": "La relativa coreana va DELANTE del nombre, al contrario que en español: 제가 매일 가는 카페 es literalmente «yo cada día voy-que cafetería» = «la cafetería a la que voy cada día». Cuesta al principio y luego se vuelve automático."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en coreano sobre hechos pasados y planes, entender quién dice qué en estilo indirecto, y reconocer a quién se trata con respeto."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas",
+      "antes-despues-a2",
+      "capacidad-rl-su-itda-a2",
+      "clausulas-relativas-a2",
+      "condicional-eumyeon-a2",
+      "conector-aseo-a2",
+      "cuanto-eolmana-a2",
+      "discurso-reportado-a2",
+      "durante-neun-dongane-a2",
+      "futuro-rl-geoyeyo-a2",
+      "honorificos-a2",
+      "intencion-ryogo-hada-a2",
+      "negacion-ji-anta-a2",
+      "obligacion-aya-hada-a2",
+      "parecer-neun-geot-gatda-a2",
+      "particulas-recipiente-a2",
+      "progresivo-go-itda-a2",
+      "razon-gittaemune-a2",
+      "razon-niikka-a2",
+      "solo-tambien-man-do-a2",
+      "verbos-irregulares-pasado-a2"
+    ],
+    "disallowedGrammar": [
+      "voz pasiva avanzada",
+      "nominalización compleja",
+      "estilo literario"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 5.1,
+      "maxSentenceWords": 12,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Pasado irregular, cláusulas de relativo y honoríficos permitidos. Sin voz pasiva avanzada ni registro literario. Inferencia ligera."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿A qué conclusión llega la narradora?",
+      "options": [
+        {
+          "id": "distinto",
+          "text": "Que ser amable y conocer a alguien no son lo mismo"
+        },
+        {
+          "id": "maleducado",
+          "text": "Que el hombre es maleducado y hay que evitar el sitio"
+        },
+        {
+          "id": "precio",
+          "text": "Que el café es bueno porque es caro"
+        }
+      ],
+      "answer": "distinto",
+      "evidence": "친절한 것과 사람을 아는 것은 다른 것 같아요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y es la última frase: distingue la amabilidad de una forma más callada de atención."
+        },
+        "incorrect": {
+          "es": "Acaba diciendo que es su cafetería favorita, y el precio no se menciona. Lee la última frase."
+        },
+        "strategy": {
+          "es": "Cuando un texto termina con 것 같아요, ahí está la conclusión personal del autor. Búscala."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué hizo el hombre en la segunda visita?",
+      "options": [
+        {
+          "id": "recordar",
+          "text": "Le preparó el mismo café del día anterior sin preguntar"
+        },
+        {
+          "id": "saludar",
+          "text": "La saludó por primera vez"
+        },
+        {
+          "id": "carta",
+          "text": "Le dio la carta para elegir"
+        }
+      ],
+      "answer": "recordar",
+      "evidence": "두 번째로 갔을 때 그 사람이 제가 어제 마신 커피를 그냥 만들었어요. 아무것도 묻지 않았어요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el 그냥 es la clave: lo hizo sin más, sin consultar nada."
+        },
+        "incorrect": {
+          "es": "El texto dice que nunca saluda. Busca la frase que empieza con 두 번째로."
+        },
+        "strategy": {
+          "es": "Cuando un texto numera visitas (처음, 두 번째, 세 번째), cada una trae un dato nuevo. Localiza la que se pide."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Al principio dice 불친절한 사람인 것 같았어요. ¿Qué significa 불친절한?",
+      "options": [
+        {
+          "id": "antipatico",
+          "text": "Poco amable, antipático"
+        },
+        {
+          "id": "ocupado",
+          "text": "Muy ocupado"
+        },
+        {
+          "id": "tímido",
+          "text": "Tímido"
+        }
+      ],
+      "answer": "antipatico",
+      "evidence": "그 사람은 인사를 안 해요. 웃지도 않아요 … 불친절한 사람인 것 같았어요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Y fíjate en 것 같았어요: era una impresión suya, no un hecho, y luego la corrige."
+        },
+        "incorrect": {
+          "es": "Fíjate en lo que se acaba de describir: no saluda, no sonríe, no pregunta. Eso es lo que la palabra resume."
+        },
+        "strategy": {
+          "es": "Un adjetivo que resume varias conductas se deduce de ellas. Léelas todas antes de decidir."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Qué comprende la narradora en la tercera visita?",
+      "options": [
+        {
+          "id": "memoria",
+          "text": "Que él recuerda lo que bebe cada cliente"
+        },
+        {
+          "id": "ocupado",
+          "text": "Que está solo y no tiene tiempo de hablar"
+        },
+        {
+          "id": "idioma",
+          "text": "Que no habla bien coreano"
+        }
+      ],
+      "answer": "memoria",
+      "evidence": "그 사람은 손님이 마시는 커피를 다 기억하고 있어요. 인사는 안 하지만 사람을 기억해요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Y el contraste que sigue lo resume: no saluda, pero recuerda a la gente."
+        },
+        "incorrect": {
+          "es": "Que trabaje solo se dice al principio, y no es lo que ella comprende después. Busca 기억하고 있어요."
+        },
+        "strategy": {
+          "es": "Cuando un texto dice «entonces entendí», lo entendido viene en la frase siguiente. No la saltes."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la cafetería no tiene nombre, solo la palabra «café» en el letrero.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "이름은 없어요. 간판에 커피라는 글자만 있어요.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y la partícula 만 («solo») lo precisa: nada más que esa palabra."
+        },
+        "incorrect": {
+          "es": "Las dos primeras frases describen el letrero. Fíjate en la partícula 만."
+        },
+        "strategy": {
+          "es": "La partícula 만 significa «solo» y limita lo que hay. Reconocerla evita añadir cosas que el texto no dice."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué numera el texto las visitas sucesivas?",
+      "options": [
+        {
+          "id": "cambio",
+          "text": "Para mostrar cómo su opinión cambia con cada visita"
+        },
+        {
+          "id": "rutina",
+          "text": "Para demostrar que va todos los días"
+        },
+        {
+          "id": "precio",
+          "text": "Para comparar el precio en cada ocasión"
+        }
+      ],
+      "answer": "cambio",
+      "evidence": "처음 갔을 때 저는 기분이 나빴어요 … 그때 제가 이해했어요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Cada visita mueve su juicio: mal humor, sorpresa, comprensión."
+        },
+        "incorrect": {
+          "es": "La rutina ya se dice al principio y el precio no aparece. Compara cómo se siente en cada visita."
+        },
+        "strategy": {
+          "es": "Si un texto numera ocasiones, compara qué siente el narrador en cada una. Ahí está la función de la lista."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en coreano sobre un sitio al que vas a menudo y qué opinas de quien lo atiende. Usa tres cláusulas de relativo y dos veces 것 같다."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "제가 매일 가는 …가 있어요.",
+      "거기서 일하는 사람은 …",
+      "…인 것 같아요.",
+      "지금 저는 …를 제일 좋아해요."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano A2: La cafetería que no atiende bien | WeLearn"
+    },
+    "description": {
+      "es": "Lee una reseña en coreano A2 y practica las cláusulas de relativo (는/은/을) y 것 같다 para expresar impresiones. Seis preguntas y vocabulario."
+    },
+    "canonicalPath": "/practica/coreano/a2/lectura/jal-anhaneun-kape",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-a2-cheoeum-insa",
+      "ko-a2-sumureul-baeugo-itsseoyo"
+    ]
+  }
+}

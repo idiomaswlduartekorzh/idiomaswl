@@ -1,0 +1,453 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-a1-doseogwan-goyangi",
+  "status": "published",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Coreano A1",
+    "topik": 1,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. A1 se sitúa alrededor del TOPIK I nivel 1, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "doseogwan-goyangi",
+  "series": {
+    "id": "coreano-a1-lectura-10",
+    "episode": 2,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-a1-ireumi-du-gae",
+    "nextExerciseId": "ko-a1-uri-dongne-e-eopneun-geot"
+  },
+  "classification": {
+    "genre": "crónica de observación",
+    "topic": "un gato y un asiento",
+    "intent": "learning",
+    "tags": [
+      "coreano a1",
+      "lectura",
+      "partículas 은/는 y 이/가",
+      "orden SOV"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El gato de la biblioteca"
+    },
+    "intro": {
+      "es": "Un gato que vive en la biblioteca y siempre llega antes que tú al mejor asiento. Lectura de coreano A1 con las partículas de tema y de sujeto."
+    },
+    "mission": {
+      "es": "Averigua quién se queda con el asiento de la ventana, y quién se rinde."
+    },
+    "targetText": "도서관에 고양이가 한 마리 살아요. 이름은 책이예요. 책이는 매일 삼층에 와요. 삼층에는 창문이 커요. 오후에는 햇빛이 좋아요. 저는 삼층 창문 옆자리를 좋아해요. 책이도 그 자리를 좋아해요. 문제는 이거예요. 책이가 먼저 와요. 저는 나중에 와요. 그래서 그 자리는 항상 책이 자리예요. 저는 다른 자리에 앉아요. 그 자리는 좀 어두워요. 어느 날 사서 선생님이 저에게 말해요. 고양이를 옮기세요. 저는 고양이를 봐요. 고양이는 저를 봐요. 고양이가 눈을 감아요. 저는 다른 자리에 앉아요. 사서 선생님은 웃어요. 선생님도 그 고양이를 못 옮겨요.",
+    "wordCount": 77,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Distinguir la partícula de tema 은/는 de la de sujeto 이/가."
+      },
+      {
+        "es": "Reconocer el orden coreano sujeto – objeto – verbo, con el verbo al final."
+      },
+      {
+        "es": "Identificar el objeto de la acción por la partícula 을/를."
+      }
+    ],
+    "grammarFocus": [
+      "marcadores-tema-sujeto",
+      "estructura-sov"
+    ],
+    "vocabulary": [
+      {
+        "surface": "도서관",
+        "lemma": "도서관",
+        "reading": "doseogwan",
+        "glosses": {
+          "es": "biblioteca"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "마리",
+        "lemma": "마리",
+        "reading": "mari",
+        "glosses": {
+          "es": "contador para animales"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "창문",
+        "lemma": "창문",
+        "reading": "changmun",
+        "glosses": {
+          "es": "ventana"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "햇빛",
+        "lemma": "햇빛",
+        "reading": "haetbit",
+        "glosses": {
+          "es": "luz del sol"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "자리",
+        "lemma": "자리",
+        "reading": "jari",
+        "glosses": {
+          "es": "sitio, asiento"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "사서",
+        "lemma": "사서",
+        "reading": "saseo",
+        "glosses": {
+          "es": "bibliotecario, bibliotecaria"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "옮기세요",
+        "lemma": "옮기다",
+        "reading": "omgiseyo",
+        "glosses": {
+          "es": "muévalo, quítelo de ahí"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "어두워요",
+        "lemma": "어둡다",
+        "reading": "eoduwoyo",
+        "glosses": {
+          "es": "está oscuro"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Los gatos de biblioteca y de librería son casi una institución en Corea, y muchos tienen nombre propio y hasta cuenta en redes. El del texto se llama 책이, «librito»."
+    },
+    "spanishSpeakerNote": {
+      "es": "La diferencia entre 은/는 y 이/가 no tiene equivalente en español y es de las que más cuesta. Aquí puedes verla en pareja: 책이는 매일 와요 presenta al gato como tema, mientras 책이가 먼저 와요 subraya quién llega primero, en contraste conmigo."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en 해요체 sobre la vida cotidiana, identificar de quién se habla gracias a las partículas de tema y de objeto, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas"
+    ],
+    "disallowedGrammar": [
+      "clausulas-relativas",
+      "discurso-reportado",
+      "honorificos-avanzados",
+      "voz pasiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 3.7,
+      "maxSentenceWords": 6,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Todo en 해요체 salvo la lectura 10 (합니다체, carta formal). Sin cláusulas de relativo ni discurso indirecto. Romanización disponible como apoyo opcional."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta el texto?",
+      "options": [
+        {
+          "id": "rendirse",
+          "text": "Que el gato gana siempre el mejor sitio y nadie se atreve a moverlo"
+        },
+        {
+          "id": "expulsar",
+          "text": "Que la bibliotecaria acaba echando al gato de la sala"
+        },
+        {
+          "id": "adoptar",
+          "text": "Que el narrador se lleva el gato a casa"
+        }
+      ],
+      "answer": "rendirse",
+      "evidence": "선생님도 그 고양이를 못 옮겨요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la última frase lo remata: ni la bibliotecaria puede moverlo. El 도 significa «también ella»."
+        },
+        "incorrect": {
+          "es": "Nadie echa al gato ni se lo lleva. Lee la última frase, sobre lo que la bibliotecaria puede o no puede hacer."
+        },
+        "strategy": {
+          "es": "La última frase suele decidir el sentido del relato. Fíjate si confirma o desmiente lo anterior."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿En qué planta de la biblioteca vive el gato?",
+      "options": [
+        {
+          "id": "tres",
+          "text": "En la tercera"
+        },
+        {
+          "id": "una",
+          "text": "En la primera"
+        },
+        {
+          "id": "dos",
+          "text": "En la segunda"
+        }
+      ],
+      "answer": "tres",
+      "evidence": "책이는 매일 삼층에 와요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: 삼층, tercera planta. 삼 es el número sino-coreano para tres."
+        },
+        "incorrect": {
+          "es": "La planta se escribe con un número sino-coreano seguido de 층. Busca 삼층 en el texto."
+        },
+        "strategy": {
+          "es": "Las plantas en coreano usan números sino-coreanos: 일층, 이층, 삼층. Reconocerlos te da el dato al instante."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "La bibliotecaria dice 고양이를 옮기세요. ¿Qué le está pidiendo?",
+      "options": [
+        {
+          "id": "mover",
+          "text": "Que quite al gato de ese sitio"
+        },
+        {
+          "id": "acariciar",
+          "text": "Que acaricie al gato"
+        },
+        {
+          "id": "alimentar",
+          "text": "Que le dé de comer al gato"
+        }
+      ],
+      "answer": "mover",
+      "evidence": "사서 선생님이 저에게 말해요. 고양이를 옮기세요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Y lo cómico es lo que pasa después: el narrador no lo hace, y ella tampoco puede."
+        },
+        "incorrect": {
+          "es": "La partícula 를 marca al gato como objeto de la acción. Piensa qué acción resolvería el problema del asiento."
+        },
+        "strategy": {
+          "es": "Cuando no conoces un verbo, mira qué problema está resolviendo en la escena. El contexto acota mucho."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué se sienta el narrador en otro sitio si le pidieron mover al gato?",
+      "options": [
+        {
+          "id": "nopuede",
+          "text": "Porque no es capaz de hacerlo cuando el gato lo mira"
+        },
+        {
+          "id": "prohibido",
+          "text": "Porque está prohibido tocar a los animales en la biblioteca"
+        },
+        {
+          "id": "mejor",
+          "text": "Porque el otro sitio le parece mejor"
+        }
+      ],
+      "answer": "nopuede",
+      "evidence": "저는 고양이를 봐요. 고양이는 저를 봐요. 고양이가 눈을 감아요. 저는 다른 자리에 앉아요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Tres frases muy cortas cuentan toda la escena sin explicar nada: se miran, el gato cierra los ojos, él se rinde."
+        },
+        "incorrect": {
+          "es": "El texto dice que el otro sitio está oscuro, así que no es mejor. Y no menciona ninguna prohibición. Fíjate en las cuatro frases seguidas."
+        },
+        "strategy": {
+          "es": "Cuando un texto pone varias frases cortas seguidas sin conectores, está mostrando una escena. Reconstrúyela como una película."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el narrador prefiere el asiento oscuro al de la ventana.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "저는 삼층 창문 옆자리를 좋아해요 … 그 자리는 좀 어두워요.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: le gusta el de la ventana. Se sienta en el oscuro porque el otro está ocupado."
+        },
+        "incorrect": {
+          "es": "Busca la frase con 좋아해요, «me gusta», y mira a qué asiento se refiere."
+        },
+        "strategy": {
+          "es": "Distingue lo que alguien prefiere de lo que acaba haciendo. Un texto puede contar las dos cosas y no coinciden."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "reference",
+      "skill": "reference",
+      "prompt": "En 고양이는 저를 봐요, ¿quién mira a quién?",
+      "options": [
+        {
+          "id": "gato",
+          "text": "El gato mira al narrador"
+        },
+        {
+          "id": "narrador",
+          "text": "El narrador mira al gato"
+        },
+        {
+          "id": "bibliotecaria",
+          "text": "La bibliotecaria mira al gato"
+        }
+      ],
+      "answer": "gato",
+      "evidence": "저는 고양이를 봐요. 고양이는 저를 봐요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. En la primera frase 고양이 lleva 를 y es el objeto; en la segunda lleva 는 y pasa a ser el tema que actúa."
+        },
+        "incorrect": {
+          "es": "Compara las dos frases seguidas: son casi idénticas pero las partículas están cambiadas. Eso invierte quién actúa."
+        },
+        "strategy": {
+          "es": "En coreano el orden de las palabras no basta: la partícula decide quién actúa. Busca 를 (objeto) y 는 (tema)."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en coreano sobre un animal de tu barrio o tu casa. Usa 은/는 y 이/가 al menos dos veces cada una, y pon el verbo al final."
+    },
+    "minWords": 25,
+    "maxWords": 60,
+    "hints": [
+      "우리 동네에 … 살아요.",
+      "이름은 …이에요.",
+      "저는 …를 좋아해요.",
+      "그래서 저는 …"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano A1: El gato de la biblioteca | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto en coreano A1 y practica las partículas 은/는 y 이/가 y el orden sujeto-objeto-verbo. Con vocabulario romanizado y seis preguntas."
+    },
+    "canonicalPath": "/practica/coreano/a1/lectura/doseogwan-goyangi",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-a1-ireumi-du-gae",
+      "ko-a1-uri-dongne-e-eopneun-geot"
+    ]
+  }
+}

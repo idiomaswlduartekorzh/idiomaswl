@@ -1,0 +1,448 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-a1-il-caffe-si-beve-in-piedi",
+  "status": "published",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Italiano A1"
+  },
+  "slug": "il-caffe-si-beve-in-piedi",
+  "series": {
+    "id": "italiano-a1-lectura-10",
+    "episode": 1,
+    "totalEpisodes": 10,
+    "previousExerciseId": null,
+    "nextExerciseId": "it-a1-ho-due-nonne-e-una-ricetta"
+  },
+  "classification": {
+    "genre": "relato en primera persona",
+    "topic": "el bar y los dos precios del café",
+    "intent": "learning",
+    "tags": [
+      "italiano a1",
+      "lectura",
+      "verbo essere",
+      "pronombres sujeto"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El café se toma de pie"
+    },
+    "intro": {
+      "es": "Un colombiano en Turín descubre que el mismo café cuesta un euro diez o tres euros según dónde te lo tomes. Lectura de italiano A1."
+    },
+    "mission": {
+      "es": "Averigua qué encuentra el narrador en esos dos minutos de pie cada mañana."
+    },
+    "targetText": "Lavoro a Torino da tre mesi. Sono colombiano. Il primo giorno entro in un bar e chiedo un caffè. Il barista mi guarda e dice: al banco o al tavolo? Io non capisco la domanda. Un caffè è un caffè. Poi vedo il listino. Al banco il caffè costa un euro e dieci. Al tavolo costa tre euro. È lo stesso caffè, ma il prezzo è diverso. Adesso io bevo il caffè al banco, in piedi, in due minuti. Le persone intorno a me sono sempre le stesse: un signore con il giornale, due ragazze, il ragazzo del negozio davanti. Nessuno parla molto. Tutti sono di fretta. Ma tutti dicono buongiorno. Per me questo è strano e bello: due minuti in piedi, ogni mattina, con le stesse persone.",
+    "wordCount": 128,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Conjugar essere en presente y usarlo para identificar y describir."
+      },
+      {
+        "es": "Reconocer los pronombres sujeto y cuándo el italiano los omite."
+      },
+      {
+        "es": "Leer un texto donde el detalle económico esconde un detalle humano."
+      }
+    ],
+    "grammarFocus": [
+      "verbo-essere",
+      "pronomi-soggetto"
+    ],
+    "vocabulary": [
+      {
+        "surface": "banco",
+        "lemma": "banco",
+        "glosses": {
+          "es": "barra del bar. ¡No es «banco» de dinero!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "listino",
+        "lemma": "listino",
+        "glosses": {
+          "es": "lista de precios"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "in piedi",
+        "lemma": "in piedi",
+        "glosses": {
+          "es": "de pie"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "intorno",
+        "lemma": "intorno",
+        "glosses": {
+          "es": "alrededor"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "giornale",
+        "lemma": "giornale",
+        "glosses": {
+          "es": "periódico"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "negozio",
+        "lemma": "negozio",
+        "glosses": {
+          "es": "tienda. ¡No es un «negocio»!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fretta",
+        "lemma": "fretta",
+        "glosses": {
+          "es": "prisa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "strano",
+        "lemma": "strano",
+        "glosses": {
+          "es": "raro, curioso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En Italia el precio de la mesa está regulado y se anuncia en el listino: pagas el servicio, no el café. Tomarlo de pie en la barra no es tacañería, es la costumbre normal."
+    },
+    "spanishSpeakerNote": {
+      "es": "Dos falsos amigos en el primer texto. «Banco» es la barra del bar, y «negozio» es una tienda, no un negocio. El italiano se parece tanto al español que conviene desconfiar justo de las palabras que parecen fáciles."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en italiano sobre la vida cotidiana, distinguir un falso amigo de una palabra transparente, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere"
+    ],
+    "disallowedGrammar": [
+      "passato prossimo",
+      "imperfetto",
+      "congiuntivo",
+      "condizionale",
+      "voce passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 8,
+      "maxSentenceWords": 21,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo, imperativo y stare + gerundio. Sin tiempos del pasado ni congiuntivo. Falso amigo glosado en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿De qué habla el texto?",
+      "options": [
+        {
+          "id": "rutina",
+          "text": "De una rutina de dos minutos de pie que resulta ser lo mejor del día"
+        },
+        {
+          "id": "precio",
+          "text": "De que los bares italianos son demasiado caros"
+        },
+        {
+          "id": "trabajo",
+          "text": "De su primer día de trabajo en Turín"
+        }
+      ],
+      "answer": "rutina",
+      "evidence": "Per me questo è strano e bello: due minuti in piedi, ogni mattina, con le stesse persone.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Empieza por el precio y termina por la gente: eso es el texto."
+        },
+        "incorrect": {
+          "es": "El precio es el punto de partida, no la conclusión, y del trabajo apenas se habla. Lee la última frase."
+        },
+        "strategy": {
+          "es": "La última frase de un texto corto suele decir para qué se contó todo lo anterior."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto cuesta el café en la barra?",
+      "options": [
+        {
+          "id": "unodiez",
+          "text": "Un euro con diez"
+        },
+        {
+          "id": "tres",
+          "text": "Tres euros"
+        },
+        {
+          "id": "dos",
+          "text": "Dos euros"
+        }
+      ],
+      "answer": "unodiez",
+      "evidence": "Al banco il caffè costa un euro e dieci. Al tavolo costa tre euro.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Los tres euros son el precio de la mesa."
+        },
+        "incorrect": {
+          "es": "Los dos son minutos, no euros. Busca la frase que empieza por «Al banco»."
+        },
+        "strategy": {
+          "es": "Cuando un texto da dos precios, empareja cada uno con su sitio antes de responder."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice «al banco o al tavolo?». ¿Qué es «il banco» aquí?",
+      "options": [
+        {
+          "id": "barra",
+          "text": "La barra del bar"
+        },
+        {
+          "id": "banco",
+          "text": "Un banco donde se guarda el dinero"
+        },
+        {
+          "id": "asiento",
+          "text": "Un banco para sentarse en la calle"
+        }
+      ],
+      "answer": "barra",
+      "evidence": "al banco o al tavolo? … Adesso io bevo il caffè al banco, in piedi, in due minuti.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y el texto lo confirma: allí se bebe de pie."
+        },
+        "incorrect": {
+          "es": "Se opone a «tavolo», la mesa, y se bebe allí de pie. No tiene que ver con dinero ni con sentarse."
+        },
+        "strategy": {
+          "es": "Si una palabra se opone a otra en la misma pregunta, su sentido sale de esa oposición."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué le parece «bello» algo donde nadie habla mucho?",
+      "options": [
+        {
+          "id": "saludo",
+          "text": "Porque todos se saludan, y eso basta para reconocerse cada día"
+        },
+        {
+          "id": "silencio",
+          "text": "Porque prefiere que nadie le hable por la mañana"
+        },
+        {
+          "id": "rapido",
+          "text": "Porque así llega antes al trabajo"
+        }
+      ],
+      "answer": "saludo",
+      "evidence": "Nessuno parla molto. Tutti sono di fretta. Ma tutti dicono buongiorno.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El «ma» de esa frase es la clave: hay prisa, pero hay saludo."
+        },
+        "incorrect": {
+          "es": "No dice que prefiera el silencio ni menciona la hora de llegada. Fíjate en la frase que empieza por «Ma»."
+        },
+        "strategy": {
+          "es": "La palabra «ma» (pero) avisa de que lo importante viene justo después."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el narrador entendió la pregunta del camarero la primera vez que la oyó.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Il barista mi guarda e dice: al banco o al tavolo? Io non capisco la domanda.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: lo dice expresamente, no entiende la pregunta."
+        },
+        "incorrect": {
+          "es": "La respuesta está en la frase siguiente a la pregunta del camarero."
+        },
+        "strategy": {
+          "es": "Después de una pregunta citada, mira siempre la frase de después: allí está la reacción."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena lo que ocurre en el texto.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Entra en un bar y pide un café"
+        },
+        {
+          "id": "p2",
+          "text": "No entiende la pregunta del camarero"
+        },
+        {
+          "id": "p3",
+          "text": "Ve la lista de precios y comprende"
+        },
+        {
+          "id": "p4",
+          "text": "Ahora lo toma de pie con las mismas personas"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Il primo giorno entro in un bar e chiedo un caffè … Io non capisco la domanda … Poi vedo il listino … Adesso io bevo il caffè al banco.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Va del primer día al presente con dos marcas: «poi» y «adesso»."
+        },
+        "incorrect": {
+          "es": "Guíate por «Il primo giorno», «Poi» y «Adesso»."
+        },
+        "strategy": {
+          "es": "Las palabras «poi» y «adesso» ordenan el texto: primero lo de antes, luego lo de ahora."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en italiano sobre una costumbre del sitio donde vives que sorprende a los de fuera. Usa essere cinco veces."
+    },
+    "minWords": 30,
+    "maxWords": 60,
+    "hints": [
+      "Io sono…",
+      "Il caffè è…",
+      "Le persone sono…",
+      "Per me questo è strano."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano A1: el café se toma de pie | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto corto en italiano A1 y practica el verbo essere y los pronombres sujeto. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/italiano/a1/lectura/il-caffe-si-beve-in-piedi",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-a1-ho-due-nonne-e-una-ricetta"
+    ]
+  }
+}

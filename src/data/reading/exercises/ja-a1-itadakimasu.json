@@ -1,0 +1,461 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ja-a1-itadakimasu",
+  "status": "published",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Japonés A1",
+    "jlpt": "N5",
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el JLPT es aproximada: son dos escalas distintas, con exámenes distintos. A1 se sitúa alrededor del N5, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "itadakimasu",
+  "series": {
+    "id": "japones-a1-lectura-10",
+    "episode": 10,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ja-a1-tabete-mo-ii-desu-ka",
+    "nextExerciseId": null
+  },
+  "classification": {
+    "genre": "reflexión breve",
+    "topic": "las fórmulas fijas del día japonés",
+    "intent": "learning",
+    "tags": [
+      "japones a1",
+      "lectura",
+      "conjunciones",
+      "expresiones cotidianas"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Las palabras que se dicen"
+    },
+    "intro": {
+      "es": "Al principio le parecían de adorno. Después de cuatro años cree que sostienen el día entero. Lectura de japonés A1."
+    },
+    "mission": {
+      "es": "Averigua qué frase dice ahora aunque no haya nadie en casa."
+    },
+    "targetText": "日本語には いつも いう ことばが あります。\n\nたべる まえに 「いただきます」。 でかける とき 「いってきます」。 かえる とき 「ただいま」。\n\nはじめは、 これは かざりだと おもいました。 いみが ないと おもいました。\n\nでも 四年 すんで、 かんがえが かわりました。\n\n「いただきます」は 「ありがとう」では ありません。 「はじめます」です。 ごはんの じかんが ここから はじまります。\n\nだから、 テレビを 見ながら たべる ときも いいます。\n\nわたしは いま 一人で すんで います。\n\nそれでも 「いただきます」と いいます。 だれにも いいませんが、 じぶんに いいます。\n\nしずかな へやで、 その ことばは とても おおきいです。",
+    "wordCount": 234,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Usar las conjunciones y conectores: でも, だから, それでも, まえに, あとで."
+      },
+      {
+        "es": "Reconocer las fórmulas fijas del día y cuándo se dicen."
+      },
+      {
+        "es": "Distinguir una fórmula de cortesía de una marca de comienzo."
+      }
+    ],
+    "grammarFocus": [
+      "conjunciones",
+      "expresiones-cotidianas"
+    ],
+    "vocabulary": [
+      {
+        "surface": "かざり",
+        "lemma": "かざり",
+        "reading": "かざり",
+        "glosses": {
+          "es": "adorno"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "かんがえ",
+        "lemma": "かんがえ",
+        "reading": "かんがえ",
+        "glosses": {
+          "es": "idea, forma de pensar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "かわりました",
+        "lemma": "かわりました",
+        "reading": "かわりました",
+        "glosses": {
+          "es": "cambió"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "はじまります",
+        "lemma": "はじまります",
+        "reading": "はじまります",
+        "glosses": {
+          "es": "empieza"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ながら",
+        "lemma": "ながら",
+        "reading": "ながら",
+        "glosses": {
+          "es": "mientras (haciendo dos cosas a la vez)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "一人",
+        "lemma": "一人",
+        "reading": "ひとり",
+        "glosses": {
+          "es": "solo, una persona"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "それでも",
+        "lemma": "それでも",
+        "reading": "それでも",
+        "glosses": {
+          "es": "aun así"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "じぶん",
+        "lemma": "じぶん",
+        "reading": "じぶん",
+        "glosses": {
+          "es": "uno mismo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "いただきます no es exactamente «gracias»: marca el comienzo de la comida y se dice aunque se coma solo. Su pareja, ごちそうさま, marca el final."
+    },
+    "spanishSpeakerNote": {
+      "es": "Fíjate en los conectores: でも y それでも introducen un contraste, だから una consecuencia, y まえに / あとで sitúan una acción antes o después de otra."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": true,
+    "romanization": "a0-only",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en japonés escrito casi todo en kana, identificar de quién o de qué se habla gracias a las partículas, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adverbios-frecuencia",
+      "arimasu-imasu",
+      "conjunciones",
+      "desu-masu",
+      "estructura-sov-particulas",
+      "expresiones-cotidianas",
+      "hiragana-basico",
+      "i-keiyoshi",
+      "interrogativos-ka",
+      "jikan-tiempo",
+      "katakana-basico",
+      "masu-kei-conjugacion",
+      "na-keiyoshi",
+      "negacion-completa",
+      "numeros-contadores",
+      "particula-de-e",
+      "particula-wa-ga",
+      "particula-wo-ni",
+      "tai-form",
+      "te-form-permission"
+    ],
+    "disallowedGrammar": [
+      "forma llana (辞書形) en oración principal",
+      "keigo",
+      "condicionales",
+      "voz pasiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 15.6,
+      "maxSentenceWords": 22,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Forma です／ます, partículas básicas, adjetivos i y na. Kanji por debajo del 12 %, con espacios entre palabras. Furigana declarado pero no implementado en el runner: el apoyo lo dan las lecturas en kana del vocabulario."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué entendió el narrador con los años?",
+      "options": [
+        {
+          "id": "comienzo",
+          "text": "Que «いただきます» no es dar las gracias: marca que la comida empieza"
+        },
+        {
+          "id": "cortesia",
+          "text": "Que los japoneses son muy corteses"
+        },
+        {
+          "id": "solitario",
+          "text": "Que vivir solo en Japón es difícil"
+        }
+      ],
+      "answer": "comienzo",
+      "evidence": "「いただきます」は 「ありがとう」では ありません。 「はじめます」です。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo dice descartando primero la lectura fácil."
+        },
+        "incorrect": {
+          "es": "No es un texto sobre cortesía ni sobre la soledad. Busca las dos frases sobre いただきます."
+        },
+        "strategy": {
+          "es": "Cuando un texto dice «X no es Y, es Z», ahí está la definición."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué se dice al salir de casa?",
+      "options": [
+        {
+          "id": "ittekimasu",
+          "text": "«いってきます»"
+        },
+        {
+          "id": "tadaima",
+          "text": "«ただいま»"
+        },
+        {
+          "id": "gochisousama",
+          "text": "«ごちそうさま»"
+        }
+      ],
+      "answer": "ittekimasu",
+      "evidence": "でかける とき 「いってきます」。 かえる とき 「ただいま」。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: «ただいま» es al volver."
+        },
+        "incorrect": {
+          "es": "Empareja cada fórmula con su momento: salir, volver, antes y después de comer."
+        },
+        "strategy": {
+          "es": "La palabra とき (cuando) marca el momento de cada fórmula."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué significa かざり?",
+      "options": [
+        {
+          "id": "adorno",
+          "text": "Adorno, algo puramente decorativo"
+        },
+        {
+          "id": "costumbre",
+          "text": "Costumbre antigua"
+        },
+        {
+          "id": "regla",
+          "text": "Regla obligatoria"
+        }
+      ],
+      "answer": "adorno",
+      "evidence": "はじめは、 これは かざりだと おもいました。 いみが ないと おもいました。",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y la frase siguiente lo confirma: pensaba que no significaban nada."
+        },
+        "incorrect": {
+          "es": "La frase siguiente aclara qué creía: que no tenían significado."
+        },
+        "strategy": {
+          "es": "Si la frase siguiente repite la idea con otras palabras, úsala para deducir."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué lo dice aunque viva solo?",
+      "options": [
+        {
+          "id": "si",
+          "text": "Porque no se lo dice a nadie: se lo dice a sí mismo, y así la comida empieza igual"
+        },
+        {
+          "id": "costumbre",
+          "text": "Porque ya no puede evitarlo"
+        },
+        {
+          "id": "vecinos",
+          "text": "Porque los vecinos podrían oírle"
+        }
+      ],
+      "answer": "si",
+      "evidence": "だれにも いいませんが、 じぶんに いいます。 しずかな へやで、 その ことばは とても おおきいです。",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la última frase lo remata: en una habitación en silencio esa palabra suena grande."
+        },
+        "incorrect": {
+          "es": "No lo presenta como un tic ni piensa en los vecinos. Lee las dos frases finales."
+        },
+        "strategy": {
+          "es": "La estructura …が、… opone lo que no hace y lo que sí hace."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: dice «いただきます» también cuando come viendo la televisión.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "だから、 テレビを 見ながら たべる ときも いいます。",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y el だから la enlaza con lo anterior: si marca el comienzo, siempre vale."
+        },
+        "incorrect": {
+          "es": "Busca la frase que empieza por だから."
+        },
+        "strategy": {
+          "es": "La conjunción だから introduce la consecuencia de lo dicho antes."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la reflexión.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "La lista de fórmulas y cuándo se dicen"
+        },
+        {
+          "id": "p2",
+          "text": "Al principio le parecían adorno"
+        },
+        {
+          "id": "p3",
+          "text": "Después de cuatro años cambia de idea"
+        },
+        {
+          "id": "p4",
+          "text": "Vive solo y sigue diciéndolo"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "たべる まえに 「いただきます」… はじめは、 これは かざりだと おもいました … でも 四年 すんで、 かんがえが かわりました … わたしは いま 一人で すんで います。",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: las fórmulas, el prejuicio, el cambio y el presente."
+        },
+        "incorrect": {
+          "es": "Guíate por はじめは, でも 四年, y いま."
+        },
+        "strategy": {
+          "es": "Los marcadores はじめは y いま separan el antes del ahora."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en japonés sobre una fórmula fija de tu idioma. Usa でも, だから y それでも."
+    },
+    "minWords": 60,
+    "maxWords": 160,
+    "hints": [
+      "たべる まえに 「いただきます」。",
+      "はじめは かざりだと おもいました。",
+      "でも かんがえが かわりました。",
+      "それでも いいます。"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de japonés A1: las palabras que se dicen | WeLearn"
+    },
+    "description": {
+      "es": "Lee una reflexión en japonés A1 y practica las conjunciones y las expresiones cotidianas. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/japones/a1/lectura/itadakimasu",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ja-a1-tabete-mo-ii-desu-ka"
+    ]
+  }
+}

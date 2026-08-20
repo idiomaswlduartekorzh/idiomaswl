@@ -1,0 +1,479 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-b1-ce-que-nous-appelons-l-attention",
+  "status": "published",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Francés B1"
+  },
+  "slug": "ce-que-nous-appelons-l-attention",
+  "series": {
+    "id": "frances-b1-lectura-10",
+    "episode": 6,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-b1-la-rumeur-du-gymnase",
+    "nextExerciseId": "fr-b1-le-village-en-2040"
+  },
+  "classification": {
+    "genre": "columna de opinión",
+    "topic": "concentración y pantallas",
+    "intent": "learning",
+    "tags": [
+      "frances b1",
+      "lectura",
+      "subjuntivo",
+      "negación avanzada"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Lo que llamamos atención"
+    },
+    "intro": {
+      "es": "Una columna que empieza rechazando la explicación fácil sobre las pantallas y acaba proponiendo otra más incómoda. Lectura de francés B1."
+    },
+    "mission": {
+      "es": "Averigua qué explicación rechaza el autor y cuál propone en su lugar."
+    },
+    "targetText": "Il n’y a plus une seule conversation entre adultes où quelqu’un ne dise, à un moment, qu’il n’arrive plus à se concentrer. Personne ne conteste le diagnostic. Ce que je conteste, c’est l’explication. On répète partout qu’il faut que nous réduisions notre temps d’écran, comme s’il suffisait de retirer l’objet pour que la capacité revienne. Je n’en crois rien, et pas parce que je défendrais les téléphones. Je n’en défends aucun. Mais je remarque une chose: personne ne se plaint jamais de ne pas réussir à se concentrer sur ce qui l’intéresse vraiment. Aucun passionné de jardinage ne dit qu’il n’arrive plus à lire un catalogue de graines. Le problème n’apparaît que devant certaines tâches, et il serait utile que nous regardions lesquelles. Ce sont, presque toujours, des tâches sans fin visible: répondre à des messages qui appellent d’autres messages, remplir des documents qui seront relus par personne, assister à des réunions dont on ne saura jamais si elles ont servi à quelque chose. Je ne prétends pas que l’attention soit une ressource illimitée. Elle ne l’est pas. Mais elle ne se comporte pas comme un réservoir qui se viderait tout seul: elle se comporte comme quelque chose qui exige, pour tenir, qu’on lui montre où elle va. Il n’est pas nécessaire que la tâche soit agréable. Il est nécessaire qu’elle finisse quelque part. Je l’ai vérifié sur moi, ce qui ne prouve rien mais aide à comprendre. Les seules journées où je n’ai touché à aucun réseau social sont celles où je savais, en me levant, ce que j’aurais terminé le soir. L’écran n’avait rien changé; la liste, si. Cette hypothèse a un défaut sérieux, et je préfère le dire: elle est très difficile à prouver, et elle arrange beaucoup celui qui l’écrit, moi compris. Elle a aussi une conséquence gênante. Si le problème n’est pas l’écran mais le travail sans horizon, alors la solution ne consiste pas à installer une application qui bloque les réseaux sociaux pendant deux heures. Elle consiste à supprimer des tâches, ce qui suppose que quelqu’un accepte de dire qu’elles ne servaient à rien. Personne n’a envie de dire cela, et surtout pas de ses propres décisions. Je ne connais aucune organisation qui l’ait fait volontiers. C’est peut-être pour cela que nous parlons tellement des écrans: ils ne se défendent pas.",
+    "wordCount": 387,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Reconocer el subjuntivo tras «il faut que», «il est nécessaire que», «je ne prétends pas que»."
+      },
+      {
+        "es": "Manejar negaciones avanzadas: ne… plus une seule, ne… jamais, ne… aucun, personne ne."
+      },
+      {
+        "es": "Seguir una argumentación que rechaza una tesis antes de proponer otra."
+      }
+    ],
+    "grammarFocus": [
+      "subjonctif-present-b1",
+      "negation-avancee-b1",
+      "subjonctif-present"
+    ],
+    "vocabulary": [
+      {
+        "surface": "conteste",
+        "lemma": "contester",
+        "glosses": {
+          "es": "discuto, pongo en duda"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "écran",
+        "lemma": "écran",
+        "glosses": {
+          "es": "pantalla"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "graines",
+        "lemma": "graine",
+        "glosses": {
+          "es": "semillas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "réservoir",
+        "lemma": "réservoir",
+        "glosses": {
+          "es": "depósito, tanque"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "se viderait",
+        "lemma": "se vider",
+        "glosses": {
+          "es": "se vaciaría"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "horizon",
+        "lemma": "horizon",
+        "glosses": {
+          "es": "horizonte; aquí, un final a la vista"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gênante",
+        "lemma": "gênant",
+        "glosses": {
+          "es": "molesta, incómoda"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "volontiers",
+        "lemma": "volontiers",
+        "glosses": {
+          "es": "de buena gana, voluntariamente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "El debate sobre el «temps d’écran» es objeto de campañas públicas en Francia, incluidas recomendaciones oficiales por edades, lo que explica que el autor lo trate como un discurso ya instalado."
+    },
+    "spanishSpeakerNote": {
+      "es": "Tras un verbo de opinión en negativo, el francés pide subjuntivo: «je ne prétends pas que l’attention soit…». En afirmativo iría indicativo. El español hace exactamente lo mismo («no pretendo que sea» / «creo que es»), así que aquí tu idioma te ayuda."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto largo que desarrolla una idea, cambia de dirección y se cierra; distinguir el hecho de la interpretación; y justificar una inferencia señalando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers",
+      "accord-participe-passe",
+      "cause-consequence",
+      "comparatifs",
+      "conditionnel-present",
+      "connecteurs",
+      "discours-indirect",
+      "dont-relatif",
+      "futur-simple",
+      "gerondif",
+      "imparfait",
+      "negation-avancee",
+      "passe-compose-avoir",
+      "passe-compose-etre",
+      "passe-compose-vs-imparfait",
+      "pronoms-coi",
+      "pronoms-y-en",
+      "si-conditionnel",
+      "subjonctif-present",
+      "superlatifs",
+      "verbes-pronominaux",
+      "accord-participe-passe-b1",
+      "comparatif-superlatif-b1",
+      "conditionnel-present-b1",
+      "connecteurs-logiques-b1",
+      "discours-indirect-b1",
+      "expressions-temporelles-b1",
+      "futur-simple-b1",
+      "gerondif-b1",
+      "hypothese-si-b1",
+      "imperatif-b1",
+      "negation-avancee-b1",
+      "nominalisation-b1",
+      "participe-present-b1",
+      "passe-compose-vs-imparfait-b1",
+      "plus-que-parfait-b1",
+      "pronoms-relatifs-b1",
+      "pronoms-y-en-b1",
+      "questions-indirectes-b1",
+      "subjonctif-present-b1",
+      "voix-passive-b1"
+    ],
+    "disallowedGrammar": [
+      "passé simple",
+      "subjonctif imparfait",
+      "passé antérieur"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 15.5,
+      "maxSentenceWords": 41,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Prosa B1 con plus-que-parfait, voz pasiva y subjuntivo. Sin passé simple. Inferencia moderada: exige cruzar dos pasajes separados."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué defiende la columna?",
+      "options": [
+        {
+          "id": "tareas",
+          "text": "Que el problema no son las pantallas, sino las tareas sin final visible"
+        },
+        {
+          "id": "pantallas",
+          "text": "Que hay que reducir el tiempo de pantalla cuanto antes"
+        },
+        {
+          "id": "imposible",
+          "text": "Que la concentración es una capacidad que ya no se puede recuperar"
+        }
+      ],
+      "answer": "tareas",
+      "evidence": "Si le problème n’est pas l’écran mais le travail sans horizon",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo construye por eliminación: primero descarta la explicación habitual y luego propone la suya."
+        },
+        "incorrect": {
+          "es": "Es justo la explicación que el autor rechaza en el segundo párrafo. Busca «Ce que je conteste, c’est l’explication»."
+        },
+        "strategy": {
+          "es": "En una columna, localiza primero qué rechaza el autor. Su tesis suele ser lo que pone en el hueco."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué ejemplo usa para mostrar que la concentración no falla siempre?",
+      "options": [
+        {
+          "id": "jardineria",
+          "text": "Que nadie apasionado por la jardinería deja de poder leer un catálogo de semillas"
+        },
+        {
+          "id": "lectura",
+          "text": "Que la gente sigue leyendo novelas largas sin dificultad"
+        },
+        {
+          "id": "ninos",
+          "text": "Que los niños se concentran mejor que los adultos"
+        }
+      ],
+      "answer": "jardineria",
+      "evidence": "Aucun passionné de jardinage ne dit qu’il n’arrive plus à lire un catalogue de graines.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Es un contraejemplo: si la capacidad estuviera destruida, fallaría también ahí."
+        },
+        "incorrect": {
+          "es": "El texto no habla de novelas ni compara edades. Busca la frase que empieza con «Aucun passionné»."
+        },
+        "strategy": {
+          "es": "Un contraejemplo sirve para refutar una regla general. Identifícalo y sabrás qué regla está atacando el autor."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El autor dice que su hipótesis tiene una consecuencia «gênante». ¿Qué significa?",
+      "options": [
+        {
+          "id": "incomoda",
+          "text": "Incómoda, porque obliga a admitir algo desagradable"
+        },
+        {
+          "id": "costosa",
+          "text": "Cara de aplicar"
+        },
+        {
+          "id": "dudosa",
+          "text": "Poco fiable desde el punto de vista científico"
+        }
+      ],
+      "answer": "incomoda",
+      "evidence": "Elle a aussi une conséquence gênante … ce qui suppose que quelqu’un accepte de dire qu’elles ne servaient à rien.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Lo incómodo es tener que reconocer que unas tareas propias no servían para nada."
+        },
+        "incorrect": {
+          "es": "La duda científica ya la había admitido antes, y por separado. Lee qué consecuencia describe justo después."
+        },
+        "strategy": {
+          "es": "Cuando un adjetivo califica algo que el texto explica a continuación, deja que la explicación te dé el significado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué termina diciendo que hablamos tanto de las pantallas porque «ellas no se defienden»?",
+      "options": [
+        {
+          "id": "culpable",
+          "text": "Porque es más cómodo culpar a un objeto que a las decisiones de alguien"
+        },
+        {
+          "id": "tecnica",
+          "text": "Porque las pantallas no tienen defensa técnica posible"
+        },
+        {
+          "id": "empresas",
+          "text": "Porque las empresas tecnológicas no responden a las críticas"
+        }
+      ],
+      "answer": "culpable",
+      "evidence": "Personne n’a envie de dire cela, et surtout pas de ses propres décisions … ils ne se défendent pas.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. La frase anterior explica la resistencia; la última señala por qué la pantalla es el culpable cómodo."
+        },
+        "incorrect": {
+          "es": "No habla de empresas ni de argumentos técnicos. Lee la frase inmediatamente anterior a la conclusión."
+        },
+        "strategy": {
+          "es": "Una frase final irónica se apoya siempre en la anterior. Léelas juntas o la ironía se pierde."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el autor admite que su propia hipótesis es difícil de demostrar.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "elle est très difficile à prouver, et elle arrange beaucoup celui qui l’écrit, moi compris",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y va más lejos: reconoce que la hipótesis le conviene a él mismo."
+        },
+        "incorrect": {
+          "es": "Busca el párrafo donde habla del «défaut sérieux» de su propia hipótesis. Lo dice él, no un crítico."
+        },
+        "strategy": {
+          "es": "En una columna honesta, el autor suele señalar la debilidad de su tesis. No la confundas con la tesis contraria."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué aclara el autor «et pas parce que je défendrais les téléphones. Je n’en défends aucun»?",
+      "options": [
+        {
+          "id": "malentendido",
+          "text": "Para evitar que se le tome por defensor de las pantallas y se ignore su argumento"
+        },
+        {
+          "id": "marcas",
+          "text": "Para dejar claro que no trabaja para ninguna marca de teléfonos"
+        },
+        {
+          "id": "duda",
+          "text": "Para admitir que no tiene una opinión formada sobre el tema"
+        }
+      ],
+      "answer": "malentendido",
+      "evidence": "Je n’en crois rien, et pas parce que je défendrais les téléphones. Je n’en défends aucun.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Se adelanta a la objeción más fácil para que el debate no se desvíe hacia ella."
+        },
+        "incorrect": {
+          "es": "No habla de marcas ni de conflictos de interés, y su opinión es muy clara. Piensa qué le podrían reprochar."
+        },
+        "strategy": {
+          "es": "Cuando un autor niega algo que nadie ha dicho aún, se está anticipando a una objeción. Pregúntate a cuál."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe una columna de 8–10 frases en francés rechazando una explicación habitual sobre algún tema y proponiendo otra. Usa tres subjuntivos y tres negaciones distintas."
+    },
+    "minWords": 70,
+    "maxWords": 130,
+    "hints": [
+      "Ce que je conteste, c’est…",
+      "Il faut que nous…",
+      "Personne ne… jamais…",
+      "Je ne connais aucun(e)…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés B1: Lo que llamamos atención | WeLearn"
+    },
+    "description": {
+      "es": "Lee una columna de opinión en francés B1 y practica el subjuntivo presente y las negaciones avanzadas. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/frances/b1/lectura/ce-que-nous-appelons-l-attention",
+    "indexable": true,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-b1-la-rumeur-du-gymnase",
+      "fr-b1-le-village-en-2040"
+    ]
+  }
+}

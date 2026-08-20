@@ -1,0 +1,453 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ko-a1-beoseu-siganpyo",
+  "status": "published",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Coreano A1",
+    "topik": 1,
+    "mappingDisclaimer": {
+      "es": "La equivalencia entre el MCER y el TOPIK es aproximada: son dos escalas distintas, con exámenes distintos. A1 se sitúa alrededor del TOPIK I nivel 1, pero no es una correspondencia oficial."
+    }
+  },
+  "slug": "beoseu-siganpyo",
+  "series": {
+    "id": "coreano-a1-lectura-10",
+    "episode": 5,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ko-a1-halmeoni-achim",
+    "nextExerciseId": "ko-a1-sijang-eseo"
+  },
+  "classification": {
+    "genre": "horario comentado",
+    "topic": "autobús y puntualidad",
+    "intent": "learning",
+    "tags": [
+      "coreano a1",
+      "lectura",
+      "números sino-coreanos",
+      "horas"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El horario del autobús"
+    },
+    "intro": {
+      "es": "Dos líneas de autobús, dos horarios y una decisión: llegar justo o llegar media hora antes y tener la biblioteca vacía."
+    },
+    "mission": {
+      "es": "Calcula por qué a veces coge el autobús anterior."
+    },
+    "targetText": "우리 집 앞에 버스가 두 대 와요. 십오 번은 학교에 가요. 이십삼 번은 시장에 가요. 십오 번 버스는 여섯 시 오십 분에 와요. 그다음은 일곱 시 십오 분이에요. 저는 보통 일곱 시 십오 분 버스를 타요. 학교는 여덟 시에 시작해요. 버스는 이십 분 걸려요. 그래서 시간이 딱 맞아요. 하지만 문제가 하나 있어요. 이 버스는 자주 늦어요. 그래서 저는 가끔 여섯 시 오십 분 버스를 타요. 그러면 학교에 삼십 분 일찍 도착해요. 삼십 분 동안 저는 도서관에 있어요. 그 시간이 하루 중에 제일 조용해요.",
+    "wordCount": 83,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Leer números sino-coreanos y usarlos para minutos, líneas y cantidades."
+      },
+      {
+        "es": "Decir la hora combinando número nativo para 시 y sino-coreano para 분."
+      },
+      {
+        "es": "Resolver un pequeño cálculo a partir de datos repartidos por el texto."
+      }
+    ],
+    "grammarFocus": [
+      "numeros-sino-coreanos",
+      "tiempo-horas"
+    ],
+    "vocabulary": [
+      {
+        "surface": "대",
+        "lemma": "대",
+        "reading": "dae",
+        "glosses": {
+          "es": "contador para vehículos y máquinas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "번",
+        "lemma": "번",
+        "reading": "beon",
+        "glosses": {
+          "es": "número (de línea, de orden)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "걸려요",
+        "lemma": "걸리다",
+        "reading": "geollyeoyo",
+        "glosses": {
+          "es": "tarda, lleva (un tiempo)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "딱",
+        "lemma": "딱",
+        "reading": "ttak",
+        "glosses": {
+          "es": "justo, exactamente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "늦어요",
+        "lemma": "늦다",
+        "reading": "neujeoyo",
+        "glosses": {
+          "es": "llega tarde, se retrasa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "일찍",
+        "lemma": "일찍",
+        "reading": "iljjik",
+        "glosses": {
+          "es": "temprano, con antelación"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "도착해요",
+        "lemma": "도착하다",
+        "reading": "dochakhaeyo",
+        "glosses": {
+          "es": "llega"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "조용해요",
+        "lemma": "조용하다",
+        "reading": "joyonghaeyo",
+        "glosses": {
+          "es": "está tranquilo, silencioso"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Las líneas de autobús urbanas coreanas se nombran por número y el horario en la parada suele estar al minuto. La puntualidad del sistema es un tema de conversación frecuente."
+    },
+    "spanishSpeakerNote": {
+      "es": "Las horas coreanas mezclan las dos series de números: la hora va en números nativos (한 시, 두 시… 일곱 시) y los minutos en sino-coreanos (십오 분, 사십 분). Es el error más común del principiante: decir *칠 시 en vez de 일곱 시."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en 해요체 sobre la vida cotidiana, identificar de quién se habla gracias a las partículas de tema y de objeto, y justificar tu respuesta señalando la frase."
+    },
+    "allowedGrammar": [
+      "adverbios-tiempo",
+      "conjuncion-hago",
+      "estructura-sov",
+      "expresiones-cotidianas",
+      "forma-formal-habnida",
+      "haeyo-presente",
+      "hangul-basico",
+      "ieoyo-yeyo",
+      "interrogativos",
+      "isseoyo-eopsoyo",
+      "marcador-lugar-e",
+      "marcador-lugar-eseo",
+      "marcador-objeto",
+      "marcadores-tema-sujeto",
+      "negacion",
+      "numeros-nativos-contadores",
+      "numeros-sino-coreanos",
+      "pasado-asseoyo",
+      "querer-goshipda",
+      "tiempo-horas"
+    ],
+    "disallowedGrammar": [
+      "clausulas-relativas",
+      "discurso-reportado",
+      "honorificos-avanzados",
+      "voz pasiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 5.5,
+      "maxSentenceWords": 9,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-17T00:00:00-05:00",
+      "notes": "Todo en 해요체 salvo la lectura 10 (합니다체, carta formal). Sin cláusulas de relativo ni discurso indirecto. Romanización disponible como apoyo opcional."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué explica el texto?",
+      "options": [
+        {
+          "id": "eleccion",
+          "text": "Por qué a veces elige un autobús mucho más temprano"
+        },
+        {
+          "id": "queja",
+          "text": "Que quiere pedir una línea de autobús nueva"
+        },
+        {
+          "id": "ruta",
+          "text": "Cómo llegar desde su casa al mercado"
+        }
+      ],
+      "answer": "eleccion",
+      "evidence": "그래서 저는 가끔 여섯 시 오십 분 버스를 타요 … 그 시간이 하루 중에 제일 조용해요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y al final aparece la razón que no es práctica: media hora de biblioteca vacía."
+        },
+        "incorrect": {
+          "es": "No pide nada al ayuntamiento, y el mercado solo se menciona de pasada. Busca la frase con 그래서 저는 가끔."
+        },
+        "strategy": {
+          "es": "Cuando un texto de datos termina con una valoración personal, ahí está su verdadero asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto tarda el autobús hasta el colegio?",
+      "options": [
+        {
+          "id": "veinte",
+          "text": "Veinte minutos"
+        },
+        {
+          "id": "treinta",
+          "text": "Treinta minutos"
+        },
+        {
+          "id": "quince",
+          "text": "Quince minutos"
+        }
+      ],
+      "answer": "veinte",
+      "evidence": "버스는 이십 분 걸려요.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: 이십 분, veinte minutos. Los treinta son lo que se adelanta si coge el autobús anterior."
+        },
+        "incorrect": {
+          "es": "El texto tiene varias cantidades de minutos. Busca la que va con 걸려요, tardar."
+        },
+        "strategy": {
+          "es": "Con varios datos de minutos, fíjate en el verbo de cada frase: tardar, adelantarse, empezar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice 시간이 딱 맞아요. ¿Qué añade 딱?",
+      "options": [
+        {
+          "id": "justo",
+          "text": "Que el tiempo cuadra exactamente, sin margen"
+        },
+        {
+          "id": "casi",
+          "text": "Que casi cuadra, pero falta un poco"
+        },
+        {
+          "id": "sobra",
+          "text": "Que sobra bastante tiempo"
+        }
+      ],
+      "answer": "justo",
+      "evidence": "버스는 이십 분 걸려요. 그래서 시간이 딱 맞아요. 하지만 문제가 하나 있어요. 이 버스는 자주 늦어요.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y de ahí sale el problema: si no hay margen, cualquier retraso lo estropea."
+        },
+        "incorrect": {
+          "es": "Fíjate en lo que viene después: si el autobús se retrasa hay problema. Eso solo pasa si no hay margen."
+        },
+        "strategy": {
+          "es": "Si una afirmación va seguida de 하지만 y un problema, el problema te dice qué significaba la afirmación."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué no coge siempre el autobús de las 6:50?",
+      "options": [
+        {
+          "id": "temprano",
+          "text": "Porque implica levantarse mucho antes de lo necesario"
+        },
+        {
+          "id": "caro",
+          "text": "Porque ese autobús cuesta más dinero"
+        },
+        {
+          "id": "lleno",
+          "text": "Porque a esa hora el autobús va lleno"
+        }
+      ],
+      "answer": "temprano",
+      "evidence": "저는 보통 일곱 시 십오 분 버스를 타요 … 그래서 저는 가끔 여섯 시 오십 분 버스를 타요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. El texto usa 보통 (normalmente) para uno y 가끔 (a veces) para el otro: el temprano es la excepción."
+        },
+        "incorrect": {
+          "es": "El texto no habla de precios ni de gente. Compara los adverbios 보통 y 가끔 en las dos frases."
+        },
+        "strategy": {
+          "es": "Los adverbios de frecuencia dicen qué es la norma y qué la excepción. Compáralos antes de deducir."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la línea 15 va al colegio y la 23 al mercado.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "십오 번은 학교에 가요. 이십삼 번은 시장에 가요.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y el texto lo dice en dos frases paralelas al principio."
+        },
+        "incorrect": {
+          "es": "Las dos primeras frases sobre las líneas dicen exactamente a dónde va cada una. Compáralas."
+        },
+        "strategy": {
+          "es": "Cuando dos frases tienen la misma estructura y solo cambian dos palabras, están comparando. Léelas en pareja."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué menciona los treinta minutos en la biblioteca?",
+      "options": [
+        {
+          "id": "motivo",
+          "text": "Para dar la razón real por la que a veces madruga"
+        },
+        {
+          "id": "deberes",
+          "text": "Para explicar que hace los deberes allí"
+        },
+        {
+          "id": "espera",
+          "text": "Para quejarse de tener que esperar media hora"
+        }
+      ],
+      "answer": "motivo",
+      "evidence": "삼십 분 동안 저는 도서관에 있어요. 그 시간이 하루 중에 제일 조용해요.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. No es una espera: es el momento más tranquilo del día, y por eso vale la pena madrugar."
+        },
+        "incorrect": {
+          "es": "No dice que estudie ni se queja. Lee la frase final, sobre cómo es ese rato."
+        },
+        "strategy": {
+          "es": "Antes de leer un dato como un inconveniente, comprueba cómo lo valora el autor en la frase siguiente."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 5–7 frases en coreano sobre cómo llegas a tu trabajo o a tus clases. Di tres horas concretas y cuánto tardas, usando números sino-coreanos para los minutos."
+    },
+    "minWords": 25,
+    "maxWords": 60,
+    "hints": [
+      "저는 … 번 버스를 타요.",
+      "버스는 … 분 걸려요.",
+      "… 시 … 분에 …",
+      "그래서 …"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-17T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de coreano A1: El horario del autobús | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto en coreano A1 y practica los números sino-coreanos y cómo se dicen las horas. Con vocabulario romanizado y seis preguntas."
+    },
+    "canonicalPath": "/practica/coreano/a1/lectura/beoseu-siganpyo",
+    "indexable": true,
+    "lastModified": "2026-08-17T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ko-a1-halmeoni-achim",
+      "ko-a1-sijang-eseo"
+    ]
+  }
+}

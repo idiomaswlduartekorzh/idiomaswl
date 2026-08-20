@@ -1,0 +1,475 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-b1-nessuno-ha-applaudito",
+  "status": "published",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Italiano B1"
+  },
+  "slug": "nessuno-ha-applaudito",
+  "series": {
+    "id": "italiano-b1-lectura-10",
+    "episode": 6,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-b1-avrei-dovuto-chiamare",
+    "nextExerciseId": "it-b1-il-negozio-che-ha-aperto-troppo-tardi"
+  },
+  "classification": {
+    "genre": "crónica de concierto",
+    "topic": "nueve segundos de silencio en una iglesia",
+    "intent": "learning",
+    "tags": [
+      "italiano b1",
+      "lectura",
+      "congiuntivo passato",
+      "futuro anteriore"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Nadie aplaudió"
+    },
+    "intro": {
+      "es": "Cuatro músicos, cien sillas, once euros. Al terminar la última pieza nadie aplaudió durante nueve segundos, y no fue por apuro. Lectura de italiano B1."
+    },
+    "mission": {
+      "es": "Averigua qué explicó la violista sobre esos segundos."
+    },
+    "targetText": "Il 9 febbraio sono andato a un concerto in una chiesa di Ferrara. Quattro musicisti, cento sedie, undici euro il biglietto. Alla fine dell'ultimo pezzo nessuno ha applaudito. Non per due secondi: per otto o nove.\n\nNon è stato imbarazzo. Lo so perché li ho contati, quei secondi, e perché ho guardato intorno mentre passavano.\n\nIl programma era di musica antica, quattro pezzi di autori che non conoscevo. Mi è piaciuto il terzo più di tutti, e mi sono piaciuti soprattutto i silenzi tra le frasi, che erano lunghi in un modo che oggi non si sente quasi mai.\n\nCredo che quel silenzio finale sia stato la cosa migliore della serata. Mi dispiace che nessuno lo abbia registrato, e allo stesso tempo so che non si può registrare: appena metti un microfono, quel silenzio diventa un file e non è più la stessa cosa.\n\nDopo il concerto ho parlato con la violista. Le ho detto che mi era piaciuto molto e le ho chiesto se quel silenzio le fosse sembrato strano. Ha risposto: a me sembra che sia stato un regalo.\n\nPoi ha spiegato una cosa che non sapevo. Ha detto che quando suoni in una chiesa il suono continua nell'aria per tre o quattro secondi dopo che hai smesso, e che quel tempo appartiene ancora al pezzo, non al pubblico. Chi batte le mani subito, ha detto, non applaude alla musica: applaude alla fine della musica.\n\nHo controllato dopo, a casa: quella chiesa è del Quattrocento, ha una navata unica e non ci sono né tappeti né tende. Non c'è niente che assorba il suono. Quello che i quattro musicisti hanno suonato per un'ora, quella pietra lo restituiva con quattro secondi di ritardo, e nessuno di noi lo aveva chiesto.\n\nQuando avrò dimenticato i quattro pezzi, mi ricorderò di quei nove secondi. In parte è già successo: sono passati sei mesi e dei pezzi mi resta poco.\n\nIl pubblico era di circa novanta persone, quasi tutte sopra i sessant'anni. Tra vent'anni quel pubblico non ci sarà più, e non credo che i concerti di musica antica in chiesa avranno cento sedie occupate. Ne avranno trenta, forse quaranta.\n\nMa non è il numero il problema. Il problema è che quando quelle novanta persone non ci saranno più, nessuno avrà insegnato a nessun altro che si possono aspettare nove secondi prima di battere le mani. E una cosa che nessuno insegna non si perde in un giorno: si perde senza che nessuno se ne accorga.",
+    "wordCount": 414,
+    "estimatedMinutes": 17,
+    "objectives": [
+      {
+        "es": "Formar el congiuntivo passato: sia stato, abbia registrato."
+      },
+      {
+        "es": "Usar el futuro anteriore para lo que estará hecho antes de otro momento: quando avrò dimenticato."
+      },
+      {
+        "es": "Concordar piacere con lo que gusta: mi è piaciuto il terzo, mi sono piaciuti i silenzi."
+      }
+    ],
+    "grammarFocus": [
+      "congiuntivo-passato-b1",
+      "futuro-anteriore-b1",
+      "piacere-verbi-simili-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "sedie",
+        "lemma": "sedia",
+        "glosses": {
+          "es": "sillas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pezzo",
+        "lemma": "pezzo",
+        "glosses": {
+          "es": "pieza musical"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "battere",
+        "lemma": "battere",
+        "glosses": {
+          "es": "golpear; «battere le mani» es aplaudir"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "smesso",
+        "lemma": "smettere",
+        "glosses": {
+          "es": "dejado de hacer algo, parado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "registrato",
+        "lemma": "registrare",
+        "glosses": {
+          "es": "grabado en audio"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "resta",
+        "lemma": "restare",
+        "glosses": {
+          "es": "queda; «mi resta poco» es me queda poco"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sopra",
+        "lemma": "sopra",
+        "glosses": {
+          "es": "por encima de"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dispiace",
+        "lemma": "dispiacere",
+        "glosses": {
+          "es": "lamento; «mi dispiace» es lo siento"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Las iglesias italianas se usan como sala de concierto por su reverberación, que puede pasar de tres segundos. Los intérpretes de música antigua la cuentan como parte de la obra, no como un defecto acústico."
+    },
+    "spanishSpeakerNote": {
+      "es": "El congiuntivo passato opina sobre algo ya ocurrido: «credo che sia stato», «mi dispiace che nessuno lo abbia registrato». El español haría lo mismo con «haya sido», «haya grabado»: la estructura coincide, el auxiliar no siempre."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto italiano largo que desarrolla una idea y cambia de dirección, distinguir el hecho de la opinión por la forma del verbo, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere",
+      "avverbi-frequenza-modo-a2",
+      "ci-vuole-vogliono-a2",
+      "comparativi-a2",
+      "condizionale-presente-a2",
+      "congiunzioni-logiche-a2",
+      "da-presente-a2",
+      "forma-cortesia-a2",
+      "futuro-probabilita-a2",
+      "futuro-semplice-a2",
+      "imperfetto-a2",
+      "passato-prossimo-avere-a2",
+      "passato-prossimo-essere-a2",
+      "periodo-ipotetico-reale-a2",
+      "piacere-verbi-simili-a2",
+      "pronomi-diretti-a2",
+      "pronomi-indiretti-a2",
+      "pronomi-relativi-a2",
+      "stare-per-a2",
+      "trapassato-prossimo-a2",
+      "verbi-riflessivi-a2",
+      "condizionale-passato-b1",
+      "congiuntivo-passato-b1",
+      "congiuntivo-presente-b1",
+      "futuro-anteriore-b1",
+      "periodo-ipotetico-b1",
+      "trapassato-prossimo-b1"
+    ],
+    "disallowedGrammar": [
+      "passato remoto",
+      "trapassato remoto",
+      "infinito sostantivato letterario",
+      "costruzioni participiali estese"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 15.3,
+      "maxSentenceWords": 33,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Congiuntivo presente y passato, condizionale passato, futuro anteriore, trapassato prossimo y las tres condicionales. El congiuntivo imperfetto aparece solo dentro del periodo ipotetico dell'impossibilità, que es el propio tema del nivel. Sin passato remoto."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué preocupa al narrador al final?",
+      "options": [
+        {
+          "id": "ensena",
+          "text": "Que cuando ese público desaparezca nadie habrá enseñado a esperar antes de aplaudir"
+        },
+        {
+          "id": "sillas",
+          "text": "Que los conciertos tendrán menos público y menos dinero"
+        },
+        {
+          "id": "grabacion",
+          "text": "Que nadie grabó el concierto para poder escucharlo"
+        }
+      ],
+      "answer": "ensena",
+      "evidence": "nessuno avrà insegnato a nessun altro che si possono aspettare nove secondi prima di battere le mani. E una cosa che nessuno insegna non si perde in un giorno: si perde senza che nessuno se ne accorga.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto dice antes que el número no es el problema."
+        },
+        "incorrect": {
+          "es": "El texto descarta expresamente que el problema sea el número, y la grabación es otro asunto. Lee la última frase."
+        },
+        "strategy": {
+          "es": "Si un texto dice «no es X el problema», lo que viene después es su preocupación real."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué le gustó más del programa?",
+      "options": [
+        {
+          "id": "tercero",
+          "text": "La tercera pieza, y sobre todo los silencios entre frases"
+        },
+        {
+          "id": "ultima",
+          "text": "La última pieza"
+        },
+        {
+          "id": "iglesia",
+          "text": "La acústica de la iglesia"
+        }
+      ],
+      "answer": "tercero",
+      "evidence": "Mi è piaciuto il terzo più di tutti, e mi sono piaciuti soprattutto i silenzi tra le frasi.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y fíjate en la concordancia: piaciuto con el tercero, piaciuti con los silencios."
+        },
+        "incorrect": {
+          "es": "De la última pieza solo se dice cuándo acabó. Busca la frase con «più di tutti»."
+        },
+        "strategy": {
+          "es": "La forma del participio de piacere te dice si lo que gustó era uno o varios."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué significa «battere le mani»?",
+      "options": [
+        {
+          "id": "aplaudir",
+          "text": "Aplaudir"
+        },
+        {
+          "id": "golpear",
+          "text": "Golpear con las manos una superficie"
+        },
+        {
+          "id": "saludar",
+          "text": "Saludar con la mano"
+        }
+      ],
+      "answer": "aplaudir",
+      "evidence": "Chi batte le mani subito, ha detto, non applaude alla musica: applaude alla fine della musica.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y el texto lo confirma en la misma frase con «applaude»."
+        },
+        "incorrect": {
+          "es": "La misma frase usa después el verbo «applaudire»: es un sinónimo, no un golpe ni un saludo."
+        },
+        "strategy": {
+          "es": "Si en la misma frase aparece un sinónimo, ya tienes la traducción."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Según la violista, ¿por qué aplaudir enseguida es un error?",
+      "options": [
+        {
+          "id": "reverberacion",
+          "text": "Porque el sonido sigue en el aire tres o cuatro segundos y ese tiempo es parte de la obra"
+        },
+        {
+          "id": "ruido",
+          "text": "Porque molesta a los demás oyentes"
+        },
+        {
+          "id": "costumbre",
+          "text": "Porque en las iglesias no se aplaude nunca"
+        }
+      ],
+      "answer": "reverberacion",
+      "evidence": "il suono continua nell'aria per tre o quattro secondi dopo che hai smesso, e … quel tempo appartiene ancora al pezzo, non al pubblico",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y de ahí sale su frase: se aplaude al final de la música, no a la música."
+        },
+        "incorrect": {
+          "es": "No habla de molestias ni de una prohibición. Lee su explicación sobre el aire."
+        },
+        "strategy": {
+          "es": "Cuando un experto explica un fenómeno físico, ese fenómeno es la razón de su opinión."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el público era de unas noventa personas, casi todas mayores de sesenta años.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Il pubblico era di circa novanta persone, quasi tutte sopra i sessant'anni.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y de ese dato sale la preocupación del final."
+        },
+        "incorrect": {
+          "es": "Busca la frase que empieza por «Il pubblico era»."
+        },
+        "strategy": {
+          "es": "Los datos de público suelen ir en una frase propia, fácil de localizar."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la crónica.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Los nueve segundos sin aplausos al terminar"
+        },
+        {
+          "id": "p2",
+          "text": "Lo que más le gustó del programa"
+        },
+        {
+          "id": "p3",
+          "text": "La explicación de la violista sobre el sonido en el aire"
+        },
+        {
+          "id": "p4",
+          "text": "La proyección a veinte años y lo que se perderá"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Alla fine dell'ultimo pezzo nessuno ha applaudito … Mi è piaciuto il terzo più di tutti … Dopo il concerto ho parlato con la violista … Tra vent'anni quel pubblico non ci sarà più.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: el hecho, la valoración, la explicación y la proyección."
+        },
+        "incorrect": {
+          "es": "Fíjate en cuándo habla con la violista y cuándo aparece «Tra vent'anni»."
+        },
+        "strategy": {
+          "es": "Una crónica que acaba mirando al futuro deja esa parte para el final."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 12–15 frases en italiano sobre un momento de un concierto, una película o un partido que recuerdas. Usa dos veces el congiuntivo passato, dos el futuro anteriore y cuatro veces piacere."
+    },
+    "minWords": 80,
+    "maxWords": 140,
+    "hints": [
+      "Credo che sia stato il momento migliore.",
+      "Mi dispiace che nessuno lo abbia registrato.",
+      "Quando avrò dimenticato tutto…",
+      "Mi sono piaciuti i silenzi."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano B1: nadie aplaudió | WeLearn"
+    },
+    "description": {
+      "es": "Lee una crónica en italiano B1 y practica el congiuntivo passato y el futuro anteriore. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/italiano/b1/lectura/nessuno-ha-applaudito",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-b1-avrei-dovuto-chiamare",
+      "it-b1-il-negozio-che-ha-aperto-troppo-tardi"
+    ]
+  }
+}

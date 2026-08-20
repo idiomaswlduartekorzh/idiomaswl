@@ -1,0 +1,488 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-b1-chem-kholodnee-tem-luchshe",
+  "status": "published",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Ruso B1"
+  },
+  "slug": "chem-kholodnee-tem-luchshe",
+  "series": {
+    "id": "ruso-b1-lectura-10",
+    "episode": 10,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-b1-minutochku",
+    "nextExerciseId": null
+  },
+  "classification": {
+    "genre": "crónica",
+    "topic": "un club de baño invernal en el Obi",
+    "intent": "learning",
+    "tags": [
+      "ruso b1",
+      "lectura",
+      "comparativos y superlativos",
+      "verbos reflexivos"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Cuanto más frío, mejor"
+    },
+    "intro": {
+      "es": "Ochenta y tres personas, de diecinueve a ochenta y un años, en un agujero abierto en el hielo. Y cuarenta minutos de té después. Lectura de ruso B1."
+    },
+    "mission": {
+      "es": "Averigua en qué se equivoca el socio más joven, según el narrador."
+    },
+    "targetText": "Клуб зимнего плавания в Новосибирске существует с 1974 года. Сейчас в нём восемьдесят три человека. Самому старшему — восемьдесят один год, самому младшему — девятнадцать.\n\nОни купаются в проруби на Оби с ноября по апрель, два раза в неделю.\n\nЯ пришёл посмотреть в январе, при минус двадцати трёх. Я не купался. Я стоял в куртке и мёрз сильнее, чем люди в воде.\n\nЭто не преувеличение, это физика. Вода в проруби — плюс один. Воздух — минус двадцать три. В воде теплее, чем на берегу, и это первое, что тебе говорят.\n\nСамое трудное не вода. Самое трудное — раздеться и потом одеться. Раздеваются они быстро, а одеваются ещё быстрее: это самая холодная минута всего процесса.\n\nЛюда, шестьдесят восемь лет, купается двадцать девять лет. Она говорит: «Чем холоднее, тем лучше себя чувствуешь потом». Я спросил, не боится ли она заболеть. Она ответила, что болеет реже, чем её дочь, которая никогда не купалась.\n\nЯ не знаю, правда ли это. Врачи спорят, и я не врач.\n\nНо одно я видел сам. После купания эти люди пьют чай в раздевалке и разговаривают сорок минут. Не пять. Сорок.\n\nЯ спросил, много ли новых людей приходит. Мне ответили, что каждый ноябрь приходит человек сорок, а к февралю остаётся пять или шесть. Остальные уходят не потому, что холодно. Они уходят потому, что не выдерживают не воду, а расписание: два раза в неделю, в семь утра, всю зиму, без исключений. Вода — это две минуты. Расписание — это пять месяцев.\n\nСамый молодой, Кирилл, сказал мне вещь, которую я запомнил: «Я пришёл сюда закаляться. Я остался, потому что здесь мне девятнадцать лет, а не двадцать девять и не шестьдесят восемь. Здесь возраст никого не интересует».\n\nОн ошибается только в одном. Возраст здесь интересует всех, но с другой стороны: чем ты старше и чем дольше купаешься, тем больше уважения.\n\nЛюде осталось шесть лет до тридцати пяти лет стажа. Она уже знает, что будет в тот день. Ничего особенного не будет. Все просто искупаются, а потом кто-нибудь скажет: «Ну, Люда, тридцать пять».",
+    "wordCount": 323,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Formar comparativos y superlativos: сильнее, теплее, реже, самый молодой, самое трудное."
+      },
+      {
+        "es": "Usar la construcción чем… тем…: чем холоднее, тем лучше."
+      },
+      {
+        "es": "Conjugar los reflexivos: купаться, раздеваться, одеваться, закаляться."
+      }
+    ],
+    "grammarFocus": [
+      "comparativos-superlativos-b1",
+      "verbos-reflexivos-b1",
+      "comparativos"
+    ],
+    "vocabulary": [
+      {
+        "surface": "проруби",
+        "lemma": "прорубь",
+        "glosses": {
+          "es": "agujero abierto en el hielo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "мёрз",
+        "lemma": "мёрзнуть",
+        "glosses": {
+          "es": "pasaba frío"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "преувеличение",
+        "lemma": "преувеличение",
+        "glosses": {
+          "es": "exageración"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "берегу",
+        "lemma": "берег",
+        "glosses": {
+          "es": "orilla"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "раздеться",
+        "lemma": "раздеться",
+        "glosses": {
+          "es": "desnudarse, quitarse la ropa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "раздевалке",
+        "lemma": "раздевалка",
+        "glosses": {
+          "es": "vestuario"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "закаляться",
+        "lemma": "закаляться",
+        "glosses": {
+          "es": "endurecerse con el frío"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "стажа",
+        "lemma": "стаж",
+        "glosses": {
+          "es": "antigüedad, años de práctica"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Los clubes de «морж» (morsa) existen en casi todas las ciudades rusas con río helado y funcionan como asociaciones con décadas de historia. Los años de antigüedad se cuentan y se anuncian."
+    },
+    "spanishSpeakerNote": {
+      "es": "La construcción «чем…, тем…» equivale a «cuanto más…, más…»: «чем холоднее, тем лучше». Los dos elementos van en comparativo, y el orden es fijo."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto ruso largo con participios y gerundios, distinguir lo que alguien afirma de lo que solo dice que intentará, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento",
+      "acusativo-movimiento",
+      "adverbios-tiempo",
+      "aspecto-verbal",
+      "comparativos",
+      "condicional",
+      "dativo-uso",
+      "futuro-imperfectivo",
+      "futuro-perfectivo",
+      "genitivo-cantidad",
+      "instrumental-uso",
+      "oraciones-subordinadas",
+      "pasado-verbos",
+      "plurales-irregulares",
+      "prepositivo-avanzado",
+      "pronombres-reflexivos",
+      "pronombres-relativos",
+      "superlativos",
+      "verbos-prefijados",
+      "adverbios-circunstanciales-b1",
+      "aspecto-perfectivo-imperfectivo-b1",
+      "comparativos-superlativos-b1",
+      "condicional-subjuntivo-b1",
+      "dativo-b1",
+      "deeprichastiya-b1",
+      "diminutivos-aumentativos-b1",
+      "discurso-indirecto-b1",
+      "futuro-perfectivo-b1",
+      "genitivo-negacion-b1",
+      "impersonales-modales-b1",
+      "instrumental-b1",
+      "oraciones-subordinadas-b1",
+      "participios-activos-b1",
+      "participios-adjetivales-b1",
+      "participios-pasivos-b1",
+      "prefijos-verbos-b1",
+      "preposiciones-casos-b1",
+      "verbos-movimiento-prefijados-b1",
+      "verbos-reflexivos-b1"
+    ],
+    "disallowedGrammar": [
+      "participios de registro literario raro",
+      "sintaxis nominal administrativa",
+      "arcaísmos",
+      "jerga profesional cerrada"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 8.3,
+      "maxSentenceWords": 21,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Participios activos, pasivos y adjetivales; деепричастия de los dos aspectos; condicional con бы; impersonales modales. Acento sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué descubre el narrador sobre el club?",
+      "options": [
+        {
+          "id": "pertenencia",
+          "text": "Que la gente se queda por el grupo, aunque haya venido por la salud"
+        },
+        {
+          "id": "salud",
+          "text": "Que bañarse en hielo previene las enfermedades"
+        },
+        {
+          "id": "peligro",
+          "text": "Que es una práctica peligrosa a partir de cierta edad"
+        }
+      ],
+      "answer": "pertenencia",
+      "evidence": "После купания эти люди пьют чай в раздевалке и разговаривают сорок минут. Не пять. Сорок … «Я пришёл сюда закаляться. Я остался, потому что…»",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el propio Kiril separa por qué vino de por qué se quedó."
+        },
+        "incorrect": {
+          "es": "El narrador dice expresamente que no sabe si previene enfermedades, y no habla de peligro."
+        },
+        "strategy": {
+          "es": "Cuando alguien distingue por qué empezó de por qué sigue, la segunda razón es la tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuál es, según el texto, la parte más difícil?",
+      "options": [
+        {
+          "id": "vestirse",
+          "text": "Desvestirse y sobre todo volver a vestirse"
+        },
+        {
+          "id": "agua",
+          "text": "El momento de entrar en el agua"
+        },
+        {
+          "id": "te",
+          "text": "Los cuarenta minutos de té"
+        }
+      ],
+      "answer": "vestirse",
+      "evidence": "Самое трудное не вода. Самое трудное — раздеться и потом одеться … это самая холодная минута всего процесса.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el texto lo llama el minuto más frío de todo el proceso."
+        },
+        "incorrect": {
+          "es": "El texto descarta expresamente el agua. Busca las dos frases con «самое трудное»."
+        },
+        "strategy": {
+          "es": "Cuando un texto dice «lo más difícil no es X», lo que sigue es la respuesta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "¿Qué es una «прорубь»?",
+      "options": [
+        {
+          "id": "agujero",
+          "text": "Un agujero abierto en el hielo del río"
+        },
+        {
+          "id": "piscina",
+          "text": "Una piscina climatizada"
+        },
+        {
+          "id": "fuente",
+          "text": "Un manantial de agua caliente"
+        }
+      ],
+      "answer": "agujero",
+      "evidence": "Они купаются в проруби на Оби с ноября по апрель … Вода в проруби — плюс один. Воздух — минус двадцать три.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: está en el río Obi y el agua está a un grado."
+        },
+        "incorrect": {
+          "es": "El agua está a un grado y el aire a menos veintitrés: no es una piscina ni un manantial caliente."
+        },
+        "strategy": {
+          "es": "Si el texto da la temperatura del agua, ya sabes qué tipo de sitio es."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿En qué se equivoca Kiril, según el narrador?",
+      "options": [
+        {
+          "id": "importa",
+          "text": "La edad sí importa allí, pero al revés: cuanta más antigüedad, más respeto"
+        },
+        {
+          "id": "joven",
+          "text": "En que se cree el más joven cuando no lo es"
+        },
+        {
+          "id": "salud",
+          "text": "En que cree que el baño le hará más fuerte"
+        }
+      ],
+      "answer": "importa",
+      "evidence": "Он ошибается только в одном. Возраст здесь интересует всех, но с другой стороны: чем ты старше и чем дольше купаешься, тем больше уважения.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el narrador lo formula con la misma construcción чем… тем…"
+        },
+        "incorrect": {
+          "es": "Sí es el más joven, y no se discute lo de la salud aquí. Lee la corrección del narrador."
+        },
+        "strategy": {
+          "es": "Cuando el narrador dice «se equivoca en una cosa», la corrección viene inmediatamente."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el narrador no se bañó y pasó más frío que quienes estaban en el agua.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Я не купался. Я стоял в куртке и мёрз сильнее, чем люди в воде … В воде теплее, чем на берегу.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y el texto lo explica con las dos temperaturas."
+        },
+        "incorrect": {
+          "es": "Busca las dos frases seguidas donde el narrador habla de sí mismo."
+        },
+        "strategy": {
+          "es": "Si el texto explica una paradoja con datos, la paradoja es cierta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la crónica.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "El club, sus años y las edades de sus socios"
+        },
+        {
+          "id": "p2",
+          "text": "La visita en enero y las temperaturas"
+        },
+        {
+          "id": "p3",
+          "text": "Liuda y sus veintinueve años bañándose"
+        },
+        {
+          "id": "p4",
+          "text": "Los cuarenta minutos de té y la frase de Kiril"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Клуб зимнего плавания в Новосибирске существует с 1974 года … Я пришёл посмотреть в январе … Люда, шестьдесят восемь лет, купается двадцать девять лет … После купания эти люди пьют чай.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: datos, visita, testimonio y hallazgo."
+        },
+        "incorrect": {
+          "es": "Fíjate en dónde aparece Liuda y dónde el té del vestuario."
+        },
+        "strategy": {
+          "es": "Una crónica suele dejar para el final lo que descubre el propio narrador."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 12–15 frases en ruso sobre una actividad de grupo que conoces. Usa cuatro comparativos, tres superlativos y la construcción чем… тем…"
+    },
+    "minWords": 65,
+    "maxWords": 120,
+    "hints": [
+      "Самому старшему — восемьдесят один год.",
+      "В воде теплее, чем на берегу.",
+      "Чем холоднее, тем лучше.",
+      "Самое трудное — одеться потом."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso B1: cuanto más frío, mejor | WeLearn"
+    },
+    "description": {
+      "es": "Lee una crónica en ruso B1 y practica los comparativos, los superlativos y los verbos reflexivos. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/b1/lectura/chem-kholodnee-tem-luchshe",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-b1-minutochku"
+    ]
+  }
+}

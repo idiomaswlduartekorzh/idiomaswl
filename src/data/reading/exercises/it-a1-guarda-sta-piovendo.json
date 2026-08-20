@@ -1,0 +1,449 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-a1-guarda-sta-piovendo",
+  "status": "published",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Italiano A1"
+  },
+  "slug": "guarda-sta-piovendo",
+  "series": {
+    "id": "italiano-a1-lectura-10",
+    "episode": 9,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-a1-dove-sono-le-mie-chiavi",
+    "nextExerciseId": "it-a1-il-burro-non-e-un-asino"
+  },
+  "classification": {
+    "genre": "instrucciones habladas",
+    "topic": "recoger la ropa antes de la lluvia",
+    "intent": "learning",
+    "tags": [
+      "italiano a1",
+      "lectura",
+      "imperativo",
+      "stare + gerundio"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Mira, está lloviendo"
+    },
+    "intro": {
+      "es": "Cuarto piso, sin secadora y una abuela que da órdenes como un capitán. Y siempre acierta con el cielo. Lectura de italiano A1."
+    },
+    "mission": {
+      "es": "Averigua qué sabe la abuela sin necesidad de mirar el teléfono."
+    },
+    "targetText": "Mia nonna vive al quarto piano e non ha l'asciugatrice. Quando il cielo cambia colore, lei chiama: Marco, vieni! Sta piovendo! Io salgo di corsa. Lei dà ordini come un capitano: prendi le mollette, chiudi la finestra, non toccare le lenzuola bagnate, aspetta, aspetta! Metti prima le camicie. Io non capisco perché prima le camicie, ma non domando. Mentre lavoriamo, lei guarda il cielo e parla del tempo. Dice: sta arrivando da Ovest, dura venti minuti. Ha sempre ragione. Poi il sole torna e lei dice: adesso rimetti tutto fuori. Io rimetto tutto fuori. Mia nonna ha ottantasei anni e sta guardando il cielo da ottantasei anni. Non ha bisogno del telefono per sapere il tempo.",
+    "wordCount": 116,
+    "estimatedMinutes": 5,
+    "objectives": [
+      {
+        "es": "Formar el imperativo de tú: vieni, prendi, chiudi, aspetta, metti."
+      },
+      {
+        "es": "Usar stare + gerundio para lo que ocurre ahora: sta piovendo, sta arrivando."
+      },
+      {
+        "es": "Reconocer un saber práctico que no viene de ningún aparato."
+      }
+    ],
+    "grammarFocus": [
+      "imperativo",
+      "stare-gerundio"
+    ],
+    "vocabulary": [
+      {
+        "surface": "asciugatrice",
+        "lemma": "asciugatrice",
+        "glosses": {
+          "es": "secadora"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "mollette",
+        "lemma": "molletta",
+        "glosses": {
+          "es": "pinzas de la ropa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "lenzuola",
+        "lemma": "lenzuolo",
+        "glosses": {
+          "es": "sábanas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "bagnate",
+        "lemma": "bagnato",
+        "glosses": {
+          "es": "mojadas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "camicie",
+        "lemma": "camicia",
+        "glosses": {
+          "es": "camisas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "salgo",
+        "lemma": "salire",
+        "glosses": {
+          "es": "subo. ¡«Salire» es subir, no salir!"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fuori",
+        "lemma": "fuori",
+        "glosses": {
+          "es": "fuera, al exterior"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "corsa",
+        "lemma": "corsa",
+        "glosses": {
+          "es": "carrera; «di corsa» es corriendo, a toda prisa"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Tender en la ventana o en el balcón sigue siendo lo normal en Italia, incluso en pisos altos de ciudad. Por eso saber leer el cielo veinte minutos antes de la lluvia es un conocimiento útil, no folclore."
+    },
+    "spanishSpeakerNote": {
+      "es": "«Salire» es subir, no salir; para salir el italiano dice «uscire». Y fíjate en «sta piovendo»: es exactamente el «está lloviendo» español, con la misma estructura."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes leer un texto corto en italiano sobre la vida cotidiana, distinguir un falso amigo de una palabra transparente, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere"
+    ],
+    "disallowedGrammar": [
+      "passato prossimo",
+      "imperfetto",
+      "congiuntivo",
+      "condizionale",
+      "voce passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 8.3,
+      "maxSentenceWords": 19,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Presente de indicativo, imperativo y stare + gerundio. Sin tiempos del pasado ni congiuntivo. Falso amigo glosado en cada lectura."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué muestra el texto sobre la abuela?",
+      "options": [
+        {
+          "id": "cielo",
+          "text": "Que sabe leer el cielo por experiencia y acierta sin consultar nada"
+        },
+        {
+          "id": "orden",
+          "text": "Que es autoritaria y trata mal a su nieto"
+        },
+        {
+          "id": "secadora",
+          "text": "Que necesita comprarse una secadora"
+        }
+      ],
+      "answer": "cielo",
+      "evidence": "Dice: sta arrivando da Ovest, dura venti minuti. Ha sempre ragione … Non ha bisogno del telefono per sapere il tempo.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la última frase lo cierra: no le hace falta el teléfono."
+        },
+        "incorrect": {
+          "es": "Da órdenes, pero el texto no la juzga, y la secadora es solo el punto de partida. Lee la última frase."
+        },
+        "strategy": {
+          "es": "Cuando el texto dice «tiene siempre razón», comprueba en qué la tiene: ahí está el asunto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué le dice la abuela que ponga primero?",
+      "options": [
+        {
+          "id": "camisas",
+          "text": "Las camisas"
+        },
+        {
+          "id": "sabanas",
+          "text": "Las sábanas"
+        },
+        {
+          "id": "pinzas",
+          "text": "Las pinzas"
+        }
+      ],
+      "answer": "camisas",
+      "evidence": "non toccare le lenzuola bagnate, aspetta, aspetta! Metti prima le camicie.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el narrador admite que no sabe por qué."
+        },
+        "incorrect": {
+          "es": "De las sábanas dice justo lo contrario: que no las toque. Busca la orden con «prima»."
+        },
+        "strategy": {
+          "es": "La palabra «prima» (primero) marca el orden dentro de una serie de órdenes."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El narrador dice «Io salgo di corsa». ¿Qué significa «salgo»?",
+      "options": [
+        {
+          "id": "subo",
+          "text": "Subo"
+        },
+        {
+          "id": "salgo",
+          "text": "Salgo de casa"
+        },
+        {
+          "id": "bajo",
+          "text": "Bajo a la calle"
+        }
+      ],
+      "answer": "subo",
+      "evidence": "Mia nonna vive al quarto piano … Io salgo di corsa.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. La abuela vive en un cuarto piso: hay que subir."
+        },
+        "incorrect": {
+          "es": "Se parece al español «salgo» pero significa lo contrario de lo que crees. Fíjate en el piso donde vive."
+        },
+        "strategy": {
+          "es": "Con un falso amigo, busca el dato del texto que descarta la traducción fácil: aquí, «quarto piano»."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el narrador no pregunta por qué van primero las camisas?",
+      "options": [
+        {
+          "id": "confia",
+          "text": "Porque confía en ella y sabe que acierta, aunque no entienda el motivo"
+        },
+        {
+          "id": "miedo",
+          "text": "Porque tiene miedo de su abuela"
+        },
+        {
+          "id": "prisa",
+          "text": "Porque no hay tiempo de hablar bajo la lluvia"
+        }
+      ],
+      "answer": "confia",
+      "evidence": "Io non capisco perché prima le camicie, ma non domando … Ha sempre ragione.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo apoya con esa frase: siempre tiene razón."
+        },
+        "incorrect": {
+          "es": "No hay señales de miedo, y sí hablan mientras trabajan. Une su silencio con «Ha sempre ragione»."
+        },
+        "strategy": {
+          "es": "Cuando alguien no pregunta, busca en el texto qué opinión tiene de la otra persona."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: la abuela consulta el tiempo en el teléfono antes de avisar al nieto.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Non ha bisogno del telefono per sapere il tempo.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: la última frase dice exactamente lo contrario."
+        },
+        "incorrect": {
+          "es": "La respuesta está en la última frase del texto, y menciona el teléfono."
+        },
+        "strategy": {
+          "es": "Si una pregunta menciona un objeto, busca ese objeto en el texto: suele aparecer una sola vez."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena las acciones del texto.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "La abuela llama al nieto porque empieza a llover"
+        },
+        {
+          "id": "p2",
+          "text": "Da las órdenes: pinzas, ventana, camisas primero"
+        },
+        {
+          "id": "p3",
+          "text": "Anuncia que la lluvia viene del oeste y dura veinte minutos"
+        },
+        {
+          "id": "p4",
+          "text": "Vuelve el sol y le manda tenderlo todo otra vez"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "lei chiama: Marco, vieni! Sta piovendo! … prendi le mollette, chiudi la finestra … sta arrivando da Ovest, dura venti minuti … Poi il sole torna e lei dice: adesso rimetti tutto fuori.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: aviso, órdenes, pronóstico y vuelta a empezar."
+        },
+        "incorrect": {
+          "es": "Guíate por el orden de las frases y por el «Poi» del final."
+        },
+        "strategy": {
+          "es": "La palabra «poi» marca el paso al último momento del relato."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 6–8 frases en italiano dando instrucciones para hacer algo con prisa en casa. Usa cinco imperativos y dos formas de stare + gerundio."
+    },
+    "minWords": 30,
+    "maxWords": 60,
+    "hints": [
+      "Vieni! Sta piovendo!",
+      "Prendi le mollette.",
+      "Non toccare…",
+      "Adesso rimetti tutto fuori."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano A1: mira, está lloviendo | WeLearn"
+    },
+    "description": {
+      "es": "Lee un texto en italiano A1 y practica el imperativo y stare + gerundio. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/italiano/a1/lectura/guarda-sta-piovendo",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-a1-dove-sono-le-mie-chiavi",
+      "it-a1-il-burro-non-e-un-asino"
+    ]
+  }
+}

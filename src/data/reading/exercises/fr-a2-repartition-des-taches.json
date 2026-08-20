@@ -1,0 +1,460 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "fr-a2-repartition-des-taches",
+  "status": "published",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Francés A2"
+  },
+  "slug": "repartition-des-taches",
+  "series": {
+    "id": "frances-a2-lectura-10",
+    "episode": 5,
+    "totalEpisodes": 10,
+    "previousExerciseId": "fr-a2-trois-velos-un-budget",
+    "nextExerciseId": "fr-a2-la-librairie-qui-resiste"
+  },
+  "classification": {
+    "genre": "correo de trabajo",
+    "topic": "organizar un equipo",
+    "intent": "learning",
+    "tags": [
+      "frances a2",
+      "lectura",
+      "pronombres COI",
+      "pronombres y/en"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Reparto de tareas"
+    },
+    "intro": {
+      "es": "Un correo de una jefa que reparte tareas y, de paso, resuelve un conflicto que nadie había dicho en voz alta. Lectura de francés A2."
+    },
+    "mission": {
+      "es": "Averigua a quién le toca cada cosa y qué problema está resolviendo el correo sin nombrarlo."
+    },
+    "targetText": "Bonjour à toutes et à tous, voici la répartition pour le salon de septembre. Karim s’occupe du stand. Je lui ai déjà envoyé les plans et il en a besoin d’une version imprimée: quelqu’un peut s’en charger lundi? Nadia et Paul gèrent les rendez-vous clients. Je leur ai transmis la liste hier soir. Attention, elle change encore: n’y touchez pas avant vendredi. Sonia prépare la présentation. Elle m’a demandé plus de temps et je le lui ai accordé: elle la rendra le 4 au lieu du 1er. Un dernier point, et je préfère l’écrire ici plutôt que de le dire à la machine à café. L’année dernière, deux personnes ont préparé le même document sans le savoir, parce que personne n’avait la liste complète. Ce n’était la faute de personne. C’était la mienne: je ne l’avais pas partagée. Cette année, tout est dans le dossier commun, et vous y avez tous accès. J’ai aussi mis dans ce dossier le planning de montage et la liste du matériel, que nous avons perdue deux fois l’année dernière. Si quelque chose n’est pas clair, écrivez-moi directement. Ne demandez pas au voisin de bureau: il vous répondra ce qu’il croit, pas ce qui est écrit.",
+    "wordCount": 201,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguir los pronombres de complemento indirecto (lui, leur) del sujeto."
+      },
+      {
+        "es": "Entender qué sustituyen «y» y «en» dentro de una frase."
+      },
+      {
+        "es": "Leer un correo profesional y separar las instrucciones de la explicación."
+      }
+    ],
+    "grammarFocus": [
+      "pronoms-coi",
+      "pronoms-y-en",
+      "pronoms-sujet"
+    ],
+    "vocabulary": [
+      {
+        "surface": "répartition",
+        "lemma": "répartition",
+        "glosses": {
+          "es": "reparto, distribución"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "salon",
+        "lemma": "salon",
+        "glosses": {
+          "es": "feria, salón profesional"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "stand",
+        "lemma": "stand",
+        "glosses": {
+          "es": "estand, puesto de la feria"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "s’en charger",
+        "lemma": "se charger",
+        "glosses": {
+          "es": "encargarse de ello"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gèrent",
+        "lemma": "gérer",
+        "glosses": {
+          "es": "gestionan, llevan"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "accordé",
+        "lemma": "accorder",
+        "glosses": {
+          "es": "concedido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dossier commun",
+        "lemma": "dossier commun",
+        "glosses": {
+          "es": "carpeta compartida"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "voisin de bureau",
+        "lemma": "voisin de bureau",
+        "glosses": {
+          "es": "compañero de mesa, el de al lado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En Francia, un «salon» profesional es una feria del sector, y preparar el estand es un trabajo de semanas que suele repartirse por correo como este."
+    },
+    "spanishSpeakerNote": {
+      "es": "Los pronombres «y» y «en» no tienen equivalente directo en español y por eso cuestan. «En» sustituye a algo introducido por «de» (il en a besoin = tiene necesidad de ello); «y» sustituye a algo introducido por «à» o a un lugar (n’y touchez pas = no toquéis eso)."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo sobre hechos pasados y planes futuros, distinguir quién dice qué, y justificar tu respuesta señalando la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjectifs-possessifs",
+      "adjectifs-qualificatifs",
+      "adverbes-frequence",
+      "articles",
+      "futur-proche",
+      "genre-noms",
+      "imperatif",
+      "negation-ne-pas",
+      "pluriel-noms",
+      "prepositions-lieu",
+      "prepositions-temps",
+      "present-verbes-er",
+      "present-verbes-ir",
+      "pronoms-sujet",
+      "questions",
+      "verbe-avoir",
+      "verbe-etre",
+      "verbes-irreguliers",
+      "accord-participe-passe",
+      "cause-consequence",
+      "comparatifs",
+      "conditionnel-present",
+      "connecteurs",
+      "discours-indirect",
+      "dont-relatif",
+      "futur-simple",
+      "gerondif",
+      "imparfait",
+      "negation-avancee",
+      "passe-compose-avoir",
+      "passe-compose-etre",
+      "passe-compose-vs-imparfait",
+      "pronoms-coi",
+      "pronoms-y-en",
+      "si-conditionnel",
+      "subjonctif-present",
+      "superlatifs",
+      "verbes-pronominaux"
+    ],
+    "disallowedGrammar": [
+      "plus-que-parfait",
+      "voix passive",
+      "participe présent",
+      "futur antérieur"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 12.6,
+      "maxSentenceWords": 23,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-16T00:00:00-05:00",
+      "notes": "Pasado narrativo (passé composé e imparfait) permitido. Sin plus-que-parfait ni voz pasiva. Inferencia ligera: unir dos datos separados por varios párrafos."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué hace este correo, además de repartir tareas?",
+      "options": [
+        {
+          "id": "error",
+          "text": "La jefa asume un error del año pasado y cambia el método para evitarlo"
+        },
+        {
+          "id": "aviso",
+          "text": "La jefa advierte al equipo de que habrá despidos"
+        },
+        {
+          "id": "felicita",
+          "text": "La jefa felicita al equipo por el trabajo del año anterior"
+        }
+      ],
+      "answer": "error",
+      "evidence": "Ce n’était la faute de personne. C’était la mienne: je ne l’avais pas partagée.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y lo hace de forma explícita: nombra el error, se lo adjudica y dice qué cambia este año."
+        },
+        "incorrect": {
+          "es": "No hay despidos ni felicitaciones. Lee el párrafo que empieza con «Un dernier point»."
+        },
+        "strategy": {
+          "es": "Cuando un texto administrativo anuncia «un último punto», suele venir lo que de verdad importa. No lo leas por encima."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Quién se encarga de las citas con clientes?",
+      "options": [
+        {
+          "id": "nadia",
+          "text": "Nadia y Paul"
+        },
+        {
+          "id": "karim",
+          "text": "Karim"
+        },
+        {
+          "id": "sonia",
+          "text": "Sonia"
+        }
+      ],
+      "answer": "nadia",
+      "evidence": "Nadia et Paul gèrent les rendez-vous clients.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Karim lleva el estand y Sonia, la presentación."
+        },
+        "incorrect": {
+          "es": "El correo asigna tres tareas a tres grupos distintos. Busca cuál va con «rendez-vous clients»."
+        },
+        "strategy": {
+          "es": "En un correo de reparto, subraya cada nombre con su tarea antes de contestar. Son datos que se confunden fácil."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El correo dice «il en a besoin d’une version imprimée». ¿A qué sustituye «en»?",
+      "options": [
+        {
+          "id": "planos",
+          "text": "A los planos que le envió"
+        },
+        {
+          "id": "stand",
+          "text": "Al estand"
+        },
+        {
+          "id": "lunes",
+          "text": "Al lunes"
+        }
+      ],
+      "answer": "planos",
+      "evidence": "Je lui ai déjà envoyé les plans et il en a besoin d’une version imprimée",
+      "feedback": {
+        "correct": {
+          "es": "Sí. «En» recoge lo mencionado justo antes, «les plans», que es de lo que necesita una copia impresa."
+        },
+        "incorrect": {
+          "es": "El pronombre «en» sustituye a algo que ya se ha nombrado en la misma frase. Mira qué hay antes del «et»."
+        },
+        "strategy": {
+          "es": "Para saber qué sustituye «en», retrocede hasta el sustantivo más cercano antes del pronombre. Casi siempre es ese."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué prefiere escribir el último punto en vez de decirlo en la máquina de café?",
+      "options": [
+        {
+          "id": "constancia",
+          "text": "Para que quede escrito y llegue igual a todo el mundo"
+        },
+        {
+          "id": "verguenza",
+          "text": "Porque le da vergüenza hablar con el equipo en persona"
+        },
+        {
+          "id": "prisa",
+          "text": "Porque no tiene tiempo de hablar con cada uno"
+        }
+      ],
+      "answer": "constancia",
+      "evidence": "je préfère l’écrire ici plutôt que de le dire à la machine à café … il vous répondra ce qu’il croit, pas ce qui est écrit.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el final del correo lo confirma: lo hablado se deforma, lo escrito no. Es coherente de principio a fin."
+        },
+        "incorrect": {
+          "es": "El texto da la clave en su última frase, sobre lo que el compañero «cree» frente a lo que está escrito."
+        },
+        "strategy": {
+          "es": "Si una idea aparece al principio y vuelve al final con otras palabras, esa repetición es la explicación que buscas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: Sonia entregará su presentación en la fecha prevista al principio.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "elle la rendra le 4 au lieu du 1er",
+      "feedback": {
+        "correct": {
+          "es": "Falso: pidió más tiempo y se lo dieron. La entrega pasa del 1 al 4."
+        },
+        "incorrect": {
+          "es": "El correo menciona dos fechas para Sonia. Busca la expresión «au lieu de», en lugar de."
+        },
+        "strategy": {
+          "es": "Cuando aparecen dos fechas juntas, «au lieu de» te dice cuál se ha descartado y cuál vale."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "¿Para qué está la instrucción «Ne demandez pas au voisin de bureau»?",
+      "options": [
+        {
+          "id": "fuente",
+          "text": "Para que la gente consulte la fuente escrita y no el rumor"
+        },
+        {
+          "id": "silencio",
+          "text": "Para prohibir hablar entre compañeros durante el trabajo"
+        },
+        {
+          "id": "jerarquia",
+          "text": "Para recordar que solo la jefa puede tomar decisiones"
+        }
+      ],
+      "answer": "fuente",
+      "evidence": "Ne demandez pas au voisin de bureau: il vous répondra ce qu’il croit, pas ce qui est écrit.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Encaja con todo el correo: el problema del año pasado fue justamente que la información no estaba escrita en un sitio común."
+        },
+        "incorrect": {
+          "es": "No prohíbe hablar ni reivindica jerarquía. Lee lo que va después de los dos puntos: ahí está el motivo."
+        },
+        "strategy": {
+          "es": "Una instrucción seguida de dos puntos casi siempre trae su propia justificación. Léela antes de interpretar."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe un correo de 6–8 frases en francés repartiendo tareas para un evento. Usa «lui» o «leur» dos veces, y «y» o «en» al menos una vez."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "… s’occupe de…",
+      "Je lui ai envoyé…",
+      "Je leur ai transmis…",
+      "Vous y avez tous accès."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-16T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de francés A2: Reparto de tareas | WeLearn"
+    },
+    "description": {
+      "es": "Lee un correo de trabajo en francés A2 y practica los pronombres de complemento indirecto (lui, leur) y los pronombres y / en."
+    },
+    "canonicalPath": "/practica/frances/a2/lectura/repartition-des-taches",
+    "indexable": true,
+    "lastModified": "2026-08-16T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "fr-a2-trois-velos-un-budget",
+      "fr-a2-la-librairie-qui-resiste"
+    ]
+  }
+}

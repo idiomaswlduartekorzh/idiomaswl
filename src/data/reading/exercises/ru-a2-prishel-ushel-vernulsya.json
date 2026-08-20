@@ -1,0 +1,471 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "ru-a2-prishel-ushel-vernulsya",
+  "status": "published",
+  "language": "ru",
+  "variant": "ru-RU",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Ruso A2"
+  },
+  "slug": "prishel-ushel-vernulsya",
+  "series": {
+    "id": "ruso-a2-lectura-10",
+    "episode": 5,
+    "totalEpisodes": 10,
+    "previousExerciseId": "ru-a2-samyy-korotkiy-put",
+    "nextExerciseId": "ru-a2-chelovek-kotoryy-chinit-chasy"
+  },
+  "classification": {
+    "genre": "cuaderno de guardia",
+    "topic": "una noche en la recepción de un hospital",
+    "intent": "learning",
+    "tags": [
+      "ruso a2",
+      "lectura",
+      "verbos prefijados",
+      "verbos de movimiento"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Vino, se fue, volvió"
+    },
+    "intro": {
+      "es": "Un mismo verbo, ocho prefijos y ocho historias distintas. Y una noche de febrero anotada hora por hora. Lectura de ruso A2."
+    },
+    "mission": {
+      "es": "Averigua qué hizo el hombre en la esquina antes de irse."
+    },
+    "targetText": "Я работаю на вахте в больнице в Перми. Ночная смена: с восьми вечера до восьми утра. Я записываю всех, кто пришёл и кто ушёл.\n\nВ русском языке приставка меняет всё. Пришёл — это сюда. Ушёл — это отсюда. Вошёл — внутрь. Вышел — наружу. Зашёл — на минуту. Дошёл — до конца. Одно слово «идти» и восемь разных историй.\n\nВ ту ночь в феврале я записал вот что.\n\n21:40. Пришёл мужчина, лет сорока. Спросил третий этаж. Вошёл в лифт.\n\n22:15. Вышел. Сел на скамейку у входа. Не ушёл.\n\n23:30. Всё ещё сидел.\n\n00:20. Вышел на улицу, постоял, вернулся. Сел на ту же скамейку.\n\n01:10. Зашёл ко мне и спросил, есть ли кипяток. Я дал ему чай.\n\n03:15. Спросил, сколько времени. Я сказал. Он кивнул и больше ничего не спросил.\n\n02:00–05:00. Сидел.\n\n05:40. Встал и снова вошёл в лифт.\n\n06:20. Вышел, подошёл ко мне и сказал: «Мальчик. Три двести».\n\nПотом он ушёл. Дошёл до угла и остановился. Постоял минуту. И побежал.\n\nЯ записываю всех девять лет, и я знаю одну вещь: люди, которые сидят на скамейке всю ночь, никогда не спрашивают, можно ли.\n\nВ тетради я записал: «06:20 — ушёл». Это правда, но это не вся правда.",
+    "wordCount": 189,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Reconocer el prefijo del verbo de movimiento: при-, у-, во-, вы-, за-, до-, подо-."
+      },
+      {
+        "es": "Leer un registro horario y reconstruir la escena."
+      },
+      {
+        "es": "Ver la diferencia entre lo que un documento anota y lo que ocurre."
+      }
+    ],
+    "grammarFocus": [
+      "verbos-prefijados",
+      "verbos-movimiento",
+      "caso-acusativo"
+    ],
+    "vocabulary": [
+      {
+        "surface": "вахте",
+        "lemma": "вахта",
+        "glosses": {
+          "es": "puesto de recepción, portería"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "смена",
+        "lemma": "смена",
+        "glosses": {
+          "es": "turno de trabajo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "приставка",
+        "lemma": "приставка",
+        "glosses": {
+          "es": "prefijo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "наружу",
+        "lemma": "наружу",
+        "glosses": {
+          "es": "hacia fuera"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "скамейку",
+        "lemma": "скамейка",
+        "glosses": {
+          "es": "banco para sentarse"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "кипяток",
+        "lemma": "кипяток",
+        "glosses": {
+          "es": "agua hirviendo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "угла",
+        "lemma": "угол",
+        "glosses": {
+          "es": "esquina"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "тетради",
+        "lemma": "тетрадь",
+        "glosses": {
+          "es": "cuaderno"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En Rusia se anuncia el nacimiento diciendo el sexo y el peso: «мальчик, три двести» son un niño de tres kilos doscientos. Es la fórmula con la que se da la noticia por teléfono."
+    },
+    "spanishSpeakerNote": {
+      "es": "El ruso pone en el prefijo lo que el español pone en el verbo o en la preposición: пришёл (vino), ушёл (se fue), вошёл (entró), вышел (salió), зашёл (pasó un momento), дошёл (llegó hasta). La raíz es siempre la misma."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato en ruso sobre hechos pasados, distinguir el aspecto imperfectivo del perfectivo, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjetivos-concordancia",
+      "adjetivos-posesivos",
+      "alfabeto-cirilico",
+      "caso-acusativo",
+      "caso-dativo-basico",
+      "caso-genitivo",
+      "caso-nominativo",
+      "futuro-byt",
+      "genero-sustantivos",
+      "imperativo",
+      "negacion-ne",
+      "numeros",
+      "preguntas-vopros",
+      "preposiciones-direccion",
+      "preposiciones-lugar-v-na",
+      "presente-verbos",
+      "pronombres-personales",
+      "tiempo-expresiones",
+      "verbos-irregulares-basicos",
+      "verbos-movimiento",
+      "acusativo-movimiento",
+      "adverbios-tiempo",
+      "aspecto-verbal",
+      "comparativos",
+      "condicional",
+      "dativo-uso",
+      "futuro-imperfectivo",
+      "futuro-perfectivo",
+      "genitivo-cantidad",
+      "imperativo",
+      "instrumental-uso",
+      "oraciones-subordinadas",
+      "pasado-verbos",
+      "plurales-irregulares",
+      "prepositivo-avanzado",
+      "pronombres-reflexivos",
+      "pronombres-relativos",
+      "superlativos",
+      "verbos-movimiento",
+      "verbos-prefijados"
+    ],
+    "disallowedGrammar": [
+      "participios (причастия)",
+      "gerundios (деепричастия)",
+      "discurso indirecto complejo",
+      "voz pasiva con -ся literaria"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 4.1,
+      "maxSentenceWords": 22,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Pasado y futuro con los dos aspectos, instrumental, condicional con бы, verbos prefijados de movimiento. Sin participios ni gerundios. Acento sin marcar: pendiente con revisión nativa."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué cuenta el cuaderno de guardia?",
+      "options": [
+        {
+          "id": "espera",
+          "text": "La noche de espera de un padre, contada por quien apunta las entradas y salidas"
+        },
+        {
+          "id": "seguridad",
+          "text": "Un problema de seguridad en el hospital"
+        },
+        {
+          "id": "prefijos",
+          "text": "Una clase sobre los prefijos rusos"
+        }
+      ],
+      "answer": "espera",
+      "evidence": "06:20. Вышел, подошёл ко мне и сказал: «Мальчик. Три двести» … Это правда, но это не вся правда.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la última frase señala justamente lo que el registro no recoge."
+        },
+        "incorrect": {
+          "es": "Los prefijos son la herramienta, no el asunto, y no hay problema de seguridad. Lee las dos frases finales."
+        },
+        "strategy": {
+          "es": "Si un texto acaba diciendo que algo «no es toda la verdad», ahí está su tema."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué pidió el hombre a la una y diez de la madrugada?",
+      "options": [
+        {
+          "id": "agua",
+          "text": "Agua hirviendo"
+        },
+        {
+          "id": "telefono",
+          "text": "Un teléfono"
+        },
+        {
+          "id": "manta",
+          "text": "Una manta"
+        }
+      ],
+      "answer": "agua",
+      "evidence": "01:10. Зашёл ко мне и спросил, есть ли кипяток. Я дал ему чай.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el de la recepción le dio té."
+        },
+        "incorrect": {
+          "es": "No pide teléfono ni manta. Busca la entrada de la 01:10."
+        },
+        "strategy": {
+          "es": "En un registro horario, ve directamente a la hora que pide la pregunta."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que la «приставка» cambia todo. ¿Qué es?",
+      "options": [
+        {
+          "id": "prefijo",
+          "text": "El prefijo del verbo"
+        },
+        {
+          "id": "acento",
+          "text": "El acento de la palabra"
+        },
+        {
+          "id": "terminacion",
+          "text": "La terminación del verbo"
+        }
+      ],
+      "answer": "prefijo",
+      "evidence": "В русском языке приставка меняет всё. Пришёл — это сюда. Ушёл — это отсюда.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y los ejemplos que siguen solo cambian por delante: при-, у-."
+        },
+        "incorrect": {
+          "es": "Los ejemplos siguientes cambian el principio de la palabra, no el final."
+        },
+        "strategy": {
+          "es": "Si el texto pone ejemplos justo después, compáralos y verás qué parte cambia."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué se detuvo un minuto en la esquina y luego echó a correr?",
+      "options": [
+        {
+          "id": "asimilar",
+          "text": "Porque necesitó un momento para asimilar la noticia antes de salir corriendo a contarla"
+        },
+        {
+          "id": "perdido",
+          "text": "Porque no sabía qué dirección tomar"
+        },
+        {
+          "id": "olvido",
+          "text": "Porque había olvidado algo en el hospital"
+        }
+      ],
+      "answer": "asimilar",
+      "evidence": "Дошёл до угла и остановился. Постоял минуту. И побежал.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el narrador lo deja sin explicar a propósito: por eso dice que el registro no es toda la verdad."
+        },
+        "incorrect": {
+          "es": "No volvió al hospital ni se dice que dudara del camino. Fíjate en la secuencia de tres verbos."
+        },
+        "strategy": {
+          "es": "Tres verbos seguidos y muy cortos describen una reacción: no busques una explicación literal."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: entre las diez y cuarto de la noche y las cinco y cuarenta el hombre se fue del hospital.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "22:15. Вышел. Сел на скамейку у входа. Не ушёл … 02:00–05:00. Сидел.",
+      "feedback": {
+        "correct": {
+          "es": "Falso: salió del edificio pero no se marchó. El texto lo subraya con «Не ушёл»."
+        },
+        "incorrect": {
+          "es": "Ojo con los dos verbos: «вышел» es salir del edificio, «ушёл» es marcharse. Busca las 22:15."
+        },
+        "strategy": {
+          "es": "Distingue вышел (salió) de ушёл (se fue): el prefijo cambia el sentido por completo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la noche.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Llega, pregunta por la tercera planta y sube"
+        },
+        {
+          "id": "p2",
+          "text": "Baja y se sienta en el banco sin irse"
+        },
+        {
+          "id": "p3",
+          "text": "A la una y diez pide agua caliente"
+        },
+        {
+          "id": "p4",
+          "text": "A las 6:20 baja y anuncia el nacimiento"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "21:40. Пришёл мужчина … 22:15. Вышел. Сел на скамейку … 01:10. Зашёл ко мне … 06:20. Вышел, подошёл ко мне.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: el cuaderno está ordenado por horas."
+        },
+        "incorrect": {
+          "es": "Sigue las horas del registro: 21:40, 22:15, 01:10, 06:20."
+        },
+        "strategy": {
+          "es": "Un registro con horas ya viene ordenado: solo hay que leerlas."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en ruso registrando los movimientos de una tarde tuya. Usa cinco verbos de movimiento con prefijos distintos."
+    },
+    "minWords": 45,
+    "maxWords": 90,
+    "hints": [
+      "Пришёл мужчина, лет сорока.",
+      "Вышел и сел на скамейку.",
+      "Зашёл ко мне на минуту.",
+      "Дошёл до угла и остановился."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de ruso A2: vino, se fue, volvió | WeLearn"
+    },
+    "description": {
+      "es": "Lee un cuaderno de guardia en ruso A2 y practica los verbos de movimiento con prefijo. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/ruso/a2/lectura/prishel-ushel-vernulsya",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "ru-a2-samyy-korotkiy-put",
+      "ru-a2-chelovek-kotoryy-chinit-chasy"
+    ]
+  }
+}

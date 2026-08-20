@@ -1,19 +1,12 @@
 import type { Metadata } from 'next'
-import { practicaMetadata } from '@/lib/practica-metadata'
-import Content from './Content'
-import { QuizSchema } from '@/components/practica/EducationSchema';
+import { buildHubMetadata, HubPage, resolveHubForRoute } from '@/components/reading/ReadingPageServer'
 
-export const metadata: Metadata = practicaMetadata('coreano', 'a2', 'lectura')
+export function generateMetadata(): Metadata {
+  const r = resolveHubForRoute('es', 'coreano', 'a2')
+  return buildHubMetadata('es', r.language, r.level, r.exercises)
+}
 
 export default function Page() {
-  return (
-    <>
-      <QuizSchema
-        name="Lectura en Coreano A2 — Textos interactivos"
-        url="https://idiomaswl.com/practica/coreano/a2/lectura"
-        description="Textos de lectura en coreano nivel A2 con romanización, vocabulario interactivo y preguntas de comprensión."
-      />
-      <Content />
-    </>
-  )
+  const r = resolveHubForRoute('es', 'coreano', 'a2')
+  return <HubPage locale="es" {...r} />
 }

@@ -1,0 +1,462 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-a2-die-frau-die-den-schluessel-hat",
+  "status": "published",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Alemán A2"
+  },
+  "slug": "die-frau-die-den-schluessel-hat",
+  "series": {
+    "id": "aleman-a2-lectura-10",
+    "episode": 3,
+    "totalEpisodes": 10,
+    "previousExerciseId": "de-a2-damals-durfte-man-nicht",
+    "nextExerciseId": "de-a2-auf-dem-tisch-oder-auf-den-tisch"
+  },
+  "classification": {
+    "genre": "retrato de barrio",
+    "topic": "quien guarda las llaves de todos",
+    "intent": "learning",
+    "tags": [
+      "aleman a2",
+      "lectura",
+      "oraciones de relativo",
+      "declinación del adjetivo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La mujer que tiene la llave"
+    },
+    "intro": {
+      "es": "Una portera jubilada que guarda catorce llaves ajenas en una caja de galletas, y por qué nadie ha pedido cambiarla. Lectura de alemán A2."
+    },
+    "mission": {
+      "es": "Averigua qué sistema usa para saber de quién es cada llave."
+    },
+    "targetText": "Frau Öztürk ist die Frau, die im Erdgeschoss wohnt und die alle Schlüssel hat. Vierzehn Stück, in einer alten Keksdose. Sie war zwanzig Jahre lang Hausmeisterin. Jetzt ist sie Rentnerin, aber die Nachbarn geben ihr immer noch ihre Schlüssel. Das ist ein praktisches System, das niemand geplant hat. Es funktioniert einfach. An jedem Schlüssel hängt kein Name und keine Nummer. Ich habe sie gefragt, wie sie die Schlüssel unterscheidet. Sie hat gelacht und gesagt: Der große gehört der Familie mit dem lauten Hund. Der kleine silberne gehört dem jungen Mann, der nie grüßt. Der alte braune gehört der Wohnung, die seit einem Jahr leer ist. Sie merkt sich keine Namen. Sie merkt sich die Menschen. Einmal wollte die Hausverwaltung ein digitales Schließsystem einbauen. Es gab eine Versammlung. Niemand war dagegen, aber am Ende hat niemand unterschrieben. Ein Nachbar, der seit dreißig Jahren dort wohnt, hat es so erklärt: Eine App verliert man nicht. Aber eine App macht auch nicht die Tür auf, wenn dein Kind allein zu Hause weint.",
+    "wordCount": 169,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Formar oraciones de relativo con die, der, das y el verbo al final."
+      },
+      {
+        "es": "Declinar el adjetivo según el artículo: der große, dem jungen Mann, ein digitales System."
+      },
+      {
+        "es": "Entender por qué un sistema informal puede resistir a uno técnico."
+      }
+    ],
+    "grammarFocus": [
+      "relativsaetze-a2",
+      "adjektivdeklination-a2",
+      "adjektive-pradikativ"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Erdgeschoss",
+        "lemma": "Erdgeschoss",
+        "glosses": {
+          "es": "planta baja"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Keksdose",
+        "lemma": "Keksdose",
+        "glosses": {
+          "es": "caja de galletas"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Hausmeisterin",
+        "lemma": "Hausmeisterin",
+        "glosses": {
+          "es": "portera, conserje"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Rentnerin",
+        "lemma": "Rentnerin",
+        "glosses": {
+          "es": "jubilada"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "unterscheidet",
+        "lemma": "unterscheiden",
+        "glosses": {
+          "es": "distingue"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "grüßt",
+        "lemma": "grüßen",
+        "glosses": {
+          "es": "saluda"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Versammlung",
+        "lemma": "Versammlung",
+        "glosses": {
+          "es": "junta, reunión de vecinos"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "unterschrieben",
+        "lemma": "unterschreiben",
+        "glosses": {
+          "es": "firmado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "La figura del «Hausmeister» —conserje del edificio— es tradicional en Alemania y a menudo conserva un papel informal en el vecindario mucho después de jubilarse."
+    },
+    "spanishSpeakerNote": {
+      "es": "En la oración de relativo el verbo se va al FINAL: «die Frau, die im Erdgeschoss wohnt». Y fíjate en la coma: en alemán es obligatoria antes del relativo, no opcional como a veces en español."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato o un texto informativo en alemán sobre hechos pasados, encontrar el verbo al final de una subordinada, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens",
+      "adjektivdeklination-a2",
+      "da-hin-her-a2",
+      "dativ-a2",
+      "futur-i-a2",
+      "genitiv-a2",
+      "infinitiv-zu-a2",
+      "komparativ-superlativ-a2",
+      "konjunktionen-a2",
+      "konjunktiv-ii-wurden-a2",
+      "modalverben-praeteritum-a2",
+      "partizip-als-adjektiv-a2",
+      "passiv-praesens-a2",
+      "perfekt-haben-a2",
+      "perfekt-sein-a2",
+      "praeteritum-basic-a2",
+      "reflexivverben-a2",
+      "relativsaetze-a2",
+      "trennbare-verben-praeteritum-a2",
+      "wechselpraepositionen-a2",
+      "zweiteilige-konnektoren-a2"
+    ],
+    "disallowedGrammar": [
+      "Konjunktiv I",
+      "Plusquamperfekt",
+      "Partizip I",
+      "Nominalstil"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 9.4,
+      "maxSentenceWords": 17,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Perfekt y Präteritum con su reparto de uso. Konjunktiv II solo en formas hechas (würde, wäre, hätte). Sin Plusquamperfekt ni Konjunktiv I."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué explica el texto?",
+      "options": [
+        {
+          "id": "confianza",
+          "text": "Por qué los vecinos prefieren un sistema de confianza a uno digital"
+        },
+        {
+          "id": "robo",
+          "text": "Que hubo un robo en el edificio"
+        },
+        {
+          "id": "jubilacion",
+          "text": "Cómo se jubiló la antigua portera"
+        }
+      ],
+      "answer": "confianza",
+      "evidence": "Niemand war dagegen, aber am Ende hat niemand unterschrieben … Aber eine App macht auch nicht die Tür auf, wenn dein Kind allein zu Hause weint.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y la explicación del vecino es la clave: una app no abre la puerta a un niño que llora."
+        },
+        "incorrect": {
+          "es": "No hay ningún robo, y la jubilación es solo un dato. Busca qué pasó en la junta."
+        },
+        "strategy": {
+          "es": "Cuando un texto termina con la frase de un personaje, esa frase suele ser el argumento central."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuántas llaves guarda?",
+      "options": [
+        {
+          "id": "14",
+          "text": "Catorce"
+        },
+        {
+          "id": "20",
+          "text": "Veinte"
+        },
+        {
+          "id": "30",
+          "text": "Treinta"
+        }
+      ],
+      "answer": "14",
+      "evidence": "Vierzehn Stück, in einer alten Keksdose.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Los veinte son los años que fue portera y los treinta, los del vecino en el edificio."
+        },
+        "incorrect": {
+          "es": "El texto tiene tres cifras y solo una cuenta llaves. Busca la que va con «Stück»."
+        },
+        "strategy": {
+          "es": "Empareja cada número con lo que cuenta: llaves, años de oficio, años de vecindad."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que guarda las llaves «in einer alten Keksdose». ¿Qué es una «Keksdose»?",
+      "options": [
+        {
+          "id": "caja",
+          "text": "Una caja de galletas"
+        },
+        {
+          "id": "cajon",
+          "text": "Un cajón de la cocina"
+        },
+        {
+          "id": "bolsa",
+          "text": "Una bolsa de tela"
+        }
+      ],
+      "answer": "caja",
+      "evidence": "Vierzehn Stück, in einer alten Keksdose.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. La palabra se compone de Keks (galleta) y Dose (lata, caja)."
+        },
+        "incorrect": {
+          "es": "La palabra es compuesta: Keks + Dose. Descomponerla da la respuesta."
+        },
+        "strategy": {
+          "es": "Ante una palabra compuesta alemana, sepárala en sus partes. Casi siempre se entiende sola."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Cómo sabe de quién es cada llave?",
+      "options": [
+        {
+          "id": "personas",
+          "text": "Por lo que recuerda de cada vecino, no por nombres ni etiquetas"
+        },
+        {
+          "id": "etiquetas",
+          "text": "Por una etiqueta con el número de piso"
+        },
+        {
+          "id": "lista",
+          "text": "Por una lista que guarda en la caja"
+        }
+      ],
+      "answer": "personas",
+      "evidence": "An jedem Schlüssel hängt kein Name und keine Nummer … Sie merkt sich keine Namen. Sie merkt sich die Menschen.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo resume en dos frases paralelas: no nombres, personas."
+        },
+        "incorrect": {
+          "es": "El texto dice expresamente que no hay ni nombre ni número en las llaves."
+        },
+        "strategy": {
+          "es": "Cuando dos frases seguidas repiten un verbo y cambian el objeto, ahí está la distinción clave."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: en la junta los vecinos votaron en contra del sistema digital.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "Niemand war dagegen, aber am Ende hat niemand unterschrieben.",
+      "feedback": {
+        "correct": {
+          "es": "Falso, y es más sutil: nadie se opuso, pero tampoco nadie firmó."
+        },
+        "incorrect": {
+          "es": "Busca la frase sobre la junta. Dice dos cosas y ninguna es un voto en contra."
+        },
+        "strategy": {
+          "es": "No confundas «nadie se opuso» con «todos aceptaron». El texto distingue las dos cosas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "reference",
+      "skill": "reference",
+      "prompt": "En «Der alte braune gehört der Wohnung, die seit einem Jahr leer ist», ¿de qué habla?",
+      "options": [
+        {
+          "id": "llave",
+          "text": "De una llave marrón y vieja"
+        },
+        {
+          "id": "puerta",
+          "text": "De una puerta marrón"
+        },
+        {
+          "id": "edificio",
+          "text": "Del edificio entero"
+        }
+      ],
+      "answer": "llave",
+      "evidence": "Der große gehört der Familie … Der kleine silberne gehört dem jungen Mann … Der alte braune gehört der Wohnung",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Es el tercero de una serie donde cada adjetivo describe una llave."
+        },
+        "incorrect": {
+          "es": "Las tres frases tienen la misma estructura y hablan de lo mismo. Compara con las dos anteriores."
+        },
+        "strategy": {
+          "es": "Si tres frases seguidas comparten estructura, el sujeto omitido es el mismo. Búscalo en la primera."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 8–10 frases en alemán sobre una persona de tu barrio que hace algo por los demás. Usa cuatro oraciones de relativo y cuatro adjetivos declinados."
+    },
+    "minWords": 40,
+    "maxWords": 85,
+    "hints": [
+      "… ist die Frau, die… wohnt.",
+      "Das ist ein System, das…",
+      "Der große gehört…",
+      "Ein Nachbar, der… wohnt, hat gesagt:…"
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán A2: La mujer que tiene la llave | WeLearn"
+    },
+    "description": {
+      "es": "Lee un retrato en alemán A2 y practica las oraciones de relativo y la declinación del adjetivo. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/a2/lectura/die-frau-die-den-schluessel-hat",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-a2-damals-durfte-man-nicht",
+      "de-a2-auf-dem-tisch-oder-auf-den-tisch"
+    ]
+  }
+}

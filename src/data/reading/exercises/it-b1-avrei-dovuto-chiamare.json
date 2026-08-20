@@ -1,0 +1,475 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-b1-avrei-dovuto-chiamare",
+  "status": "published",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Italiano B1"
+  },
+  "slug": "avrei-dovuto-chiamare",
+  "series": {
+    "id": "italiano-b1-lectura-10",
+    "episode": 5,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-b1-la-farmacia-che-apre-di-notte",
+    "nextExerciseId": "it-b1-nessuno-ha-applaudito"
+  },
+  "classification": {
+    "genre": "confesión",
+    "topic": "seis años sin hablarse por cuatrocientos euros",
+    "intent": "learning",
+    "tags": [
+      "italiano b1",
+      "lectura",
+      "condizionale passato",
+      "trapassato prossimo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Debería haber llamado"
+    },
+    "intro": {
+      "es": "Catorce años de amistad, un préstamo de cuatrocientos euros devuelto tarde, y seis años de silencio que se arreglaron en once minutos. Lectura de italiano B1."
+    },
+    "mission": {
+      "es": "Averigua cuál de las dos razones para no llamar era la verdadera."
+    },
+    "targetText": "Con Marco eravamo amici da quattordici anni. Poi, nel 2018, abbiamo litigato per una cosa che oggi non riesco a raccontare senza vergognarmi: un prestito di quattrocento euro che gli avevo fatto e che lui aveva restituito in ritardo, con un messaggio che a me è sembrato freddo.\n\nGli avevo scritto una cosa cattiva. Lui aveva risposto con una cosa peggiore. Poi ci siamo fermati entrambi, che è la cosa più stupida che due adulti possano fare.\n\nAvrei dovuto chiamarlo la settimana dopo. Non l'ho fatto. Avrei dovuto chiamarlo a Natale, e avevo perfino il telefono in mano. Non l'ho fatto. Avrei dovuto chiamarlo quando è nata sua figlia, perché l'ho saputo da un'altra persona e mi sono commosso come uno scemo. Non l'ho fatto nemmeno allora.\n\nLe ragioni per non chiamare erano sempre le stesse due, e le conosco a memoria. La prima: dopo tanto tempo sembra strano. La seconda: se chiamo io, allora avevo torto io.\n\nLa seconda è la vera. La prima è quella che raccontavo agli altri.\n\nIn quei sei anni ho saputo di lui sempre da terzi: che aveva cambiato lavoro, che si era trasferito a Bologna, che suo padre era stato operato. Ogni volta pensavo che avrei chiamato il giorno dopo, e ogni volta il giorno dopo era già passato.\n\nSei anni dopo ci siamo visti al matrimonio di un amico comune, a Lecce, tra centoventi persone. Ci siamo trovati davanti al tavolo dell'antipasto e nessuno dei due poteva fingere di non vedere l'altro.\n\nHa parlato lui per primo. Ha detto: sei ingrassato. Io ho detto: anche tu. Poi abbiamo riso, e in undici minuti era finito tutto. Undici minuti. Sei anni contro undici minuti.\n\nAlla fine della serata gli ho detto che avrei dovuto chiamare. Lui ha risposto una cosa che non mi aspettavo: anch'io avrei dovuto. E poi ha aggiunto: probabilmente avremo pensato la stessa cosa la stessa sera più di una volta, io a Bologna e tu a Bari, come due idioti sincronizzati.\n\nAdesso ci parliamo ogni due settimane e di quei quattrocento euro non abbiamo mai più parlato. Non è che li abbiamo perdonati: è che non esistono più.\n\nL'unica cosa che ho imparato è che la telefonata non era difficile. Era solo la prima. Se avessi chiamato nel 2018, avremmo perso una settimana invece di sei anni, e mia figlia conoscerebbe suo figlio da quando è nato.",
+    "wordCount": 398,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Usar el condizionale passato para el reproche a uno mismo: avrei dovuto."
+      },
+      {
+        "es": "Formar el trapassato prossimo: gli avevo fatto, aveva restituito, avevo scritto."
+      },
+      {
+        "es": "Distinguir la razón que se cuenta de la razón que se tiene."
+      }
+    ],
+    "grammarFocus": [
+      "condizionale-passato-b1",
+      "trapassato-prossimo-b1",
+      "imperfetto-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "litigato",
+        "lemma": "litigare",
+        "glosses": {
+          "es": "discutido, peleado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "prestito",
+        "lemma": "prestito",
+        "glosses": {
+          "es": "préstamo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "restituito",
+        "lemma": "restituire",
+        "glosses": {
+          "es": "devuelto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cattiva",
+        "lemma": "cattivo",
+        "glosses": {
+          "es": "hiriente, malintencionada"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "commosso",
+        "lemma": "commuoversi",
+        "glosses": {
+          "es": "emocionado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "scemo",
+        "lemma": "scemo",
+        "glosses": {
+          "es": "tonto, bobo"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ingrassato",
+        "lemma": "ingrassare",
+        "glosses": {
+          "es": "engordado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "matrimonio",
+        "lemma": "matrimonio",
+        "glosses": {
+          "es": "boda, banquete de boda (no solo el matrimonio)"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "En Italia la boda de un amigo común es la ocasión clásica de reencuentro forzoso: la lista de invitados la hacen otros, y quien no se habla acaba en la misma mesa del aperitivo."
+    },
+    "spanishSpeakerNote": {
+      "es": "«Avrei dovuto chiamare» es «debería haber llamado»: el condicional va en el modal, no en el verbo principal. Y fíjate en «avremo pensato»: futuro anteriore usado para suponer sobre el pasado, algo que el español resuelve con «habremos pensado»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto italiano largo que desarrolla una idea y cambia de dirección, distinguir el hecho de la opinión por la forma del verbo, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere",
+      "avverbi-frequenza-modo-a2",
+      "ci-vuole-vogliono-a2",
+      "comparativi-a2",
+      "condizionale-presente-a2",
+      "congiunzioni-logiche-a2",
+      "da-presente-a2",
+      "forma-cortesia-a2",
+      "futuro-probabilita-a2",
+      "futuro-semplice-a2",
+      "imperfetto-a2",
+      "passato-prossimo-avere-a2",
+      "passato-prossimo-essere-a2",
+      "periodo-ipotetico-reale-a2",
+      "piacere-verbi-simili-a2",
+      "pronomi-diretti-a2",
+      "pronomi-indiretti-a2",
+      "pronomi-relativi-a2",
+      "stare-per-a2",
+      "trapassato-prossimo-a2",
+      "verbi-riflessivi-a2",
+      "condizionale-passato-b1",
+      "congiuntivo-passato-b1",
+      "congiuntivo-presente-b1",
+      "futuro-anteriore-b1",
+      "periodo-ipotetico-b1",
+      "trapassato-prossimo-b1"
+    ],
+    "disallowedGrammar": [
+      "passato remoto",
+      "trapassato remoto",
+      "infinito sostantivato letterario",
+      "costruzioni participiali estese"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 11.7,
+      "maxSentenceWords": 41,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Congiuntivo presente y passato, condizionale passato, futuro anteriore, trapassato prossimo y las tres condicionales. El congiuntivo imperfetto aparece solo dentro del periodo ipotetico dell'impossibilità, que es el propio tema del nivel. Sin passato remoto."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Cuál es la idea del texto?",
+      "options": [
+        {
+          "id": "primera",
+          "text": "Que la llamada no era difícil: era solo la primera, y por eso costó seis años"
+        },
+        {
+          "id": "dinero",
+          "text": "Que no hay que prestar dinero a los amigos"
+        },
+        {
+          "id": "boda",
+          "text": "Que las bodas sirven para reconciliar a la gente"
+        }
+      ],
+      "answer": "primera",
+      "evidence": "la telefonata non era difficile. Era solo la prima.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y el texto lo remata con la cuenta: una semana en vez de seis años."
+        },
+        "incorrect": {
+          "es": "El texto no da consejos sobre préstamos, y la boda es la ocasión, no la tesis. Lee las dos frases finales."
+        },
+        "strategy": {
+          "es": "Dos frases cortas y seguidas al final de un texto suelen contener su conclusión."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Cuánto duró la reconciliación en la boda?",
+      "options": [
+        {
+          "id": "once",
+          "text": "Once minutos"
+        },
+        {
+          "id": "seis",
+          "text": "Seis años"
+        },
+        {
+          "id": "noche",
+          "text": "Toda la noche"
+        }
+      ],
+      "answer": "once",
+      "evidence": "Poi abbiamo riso, e in undici minuti era finito tutto. Undici minuti. Sei anni contro undici minuti.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el texto pone las dos cifras juntas a propósito."
+        },
+        "incorrect": {
+          "es": "Los seis años son el silencio anterior. Busca la cifra que se repite tres veces seguidas."
+        },
+        "strategy": {
+          "es": "Cuando una cifra se repite en tres frases seguidas, es la que el autor quiere que retengas."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El reencuentro fue «al matrimonio di un amico comune». ¿Qué significa aquí «matrimonio»?",
+      "options": [
+        {
+          "id": "boda",
+          "text": "La boda y su banquete"
+        },
+        {
+          "id": "casado",
+          "text": "El estado civil del amigo"
+        },
+        {
+          "id": "aniversario",
+          "text": "Un aniversario de bodas"
+        }
+      ],
+      "answer": "boda",
+      "evidence": "ci siamo visti al matrimonio di un amico comune, a Lecce, tra centoventi persone",
+      "feedback": {
+        "correct": {
+          "es": "Eso es: hay ciento veinte personas y mesa de aperitivo. Es el banquete."
+        },
+        "incorrect": {
+          "es": "Tiene lugar, fecha y ciento veinte invitados: es un acontecimiento, no un estado civil."
+        },
+        "strategy": {
+          "es": "Si la palabra va con un sitio, una fecha y unos invitados, designa un acto, no una situación."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué dice que la segunda razón era la verdadera?",
+      "options": [
+        {
+          "id": "culpa",
+          "text": "Porque llamar primero equivalía a admitir que la culpa había sido suya"
+        },
+        {
+          "id": "tiempo",
+          "text": "Porque de verdad había pasado demasiado tiempo"
+        },
+        {
+          "id": "dinero",
+          "text": "Porque seguía esperando que le devolvieran el dinero"
+        }
+      ],
+      "answer": "culpa",
+      "evidence": "La seconda: se chiamo io, allora avevo torto io. La seconda è la vera. La prima è quella che raccontavo agli altri.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y añade el detalle importante: la primera era la que contaba a los demás."
+        },
+        "incorrect": {
+          "es": "El dinero ya estaba devuelto, y la primera razón la descarta él mismo. Lee las dos razones y lo que dice de ellas."
+        },
+        "strategy": {
+          "es": "Cuando un texto enumera razones y luego las juzga, quédate con el juicio, no con la lista."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: el amigo nunca devolvió los cuatrocientos euros del préstamo.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "faux",
+      "evidence": "un prestito di quattrocento euro che gli avevo fatto e che lui aveva restituito in ritardo, con un messaggio che a me è sembrato freddo",
+      "feedback": {
+        "correct": {
+          "es": "Falso: lo devolvió, solo que tarde y con un mensaje que a él le pareció frío."
+        },
+        "incorrect": {
+          "es": "La respuesta está en la primera frase larga del texto. Fíjate en «aveva restituito»."
+        },
+        "strategy": {
+          "es": "El trapassato («aveva restituito») te dice que la acción sí ocurrió, y antes que el resto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena los hechos.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "La discusión de 2018 por el préstamo devuelto tarde"
+        },
+        {
+          "id": "p2",
+          "text": "Las tres ocasiones en que debería haber llamado"
+        },
+        {
+          "id": "p3",
+          "text": "El reencuentro en la boda de Lecce"
+        },
+        {
+          "id": "p4",
+          "text": "Ahora se hablan cada dos semanas"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Poi, nel 2018, abbiamo litigato … Avrei dovuto chiamarlo la settimana dopo … Sei anni dopo ci siamo visti al matrimonio … Adesso ci parliamo ogni due settimane.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: la pelea, los silencios, el reencuentro y el presente."
+        },
+        "incorrect": {
+          "es": "Guíate por «nel 2018», «Sei anni dopo» y «Adesso»."
+        },
+        "strategy": {
+          "es": "Una confesión suele terminar en el presente: busca la palabra «adesso»."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 12–15 frases en italiano sobre una llamada o un mensaje que no hiciste. Usa cuatro veces «avrei dovuto» y tres verbos en trapassato prossimo."
+    },
+    "minWords": 80,
+    "maxWords": 140,
+    "hints": [
+      "Avrei dovuto chiamarlo la settimana dopo.",
+      "Gli avevo scritto una cosa cattiva.",
+      "La seconda ragione è la vera.",
+      "Se avessi chiamato…, avremmo perso una settimana."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano B1: debería haber llamado | WeLearn"
+    },
+    "description": {
+      "es": "Lee una confesión en italiano B1 y practica el condizionale passato y el trapassato prossimo. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/italiano/b1/lectura/avrei-dovuto-chiamare",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-b1-la-farmacia-che-apre-di-notte",
+      "it-b1-nessuno-ha-applaudito"
+    ]
+  }
+}

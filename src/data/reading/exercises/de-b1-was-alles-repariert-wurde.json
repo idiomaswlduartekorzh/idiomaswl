@@ -1,0 +1,491 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "de-b1-was-alles-repariert-wurde",
+  "status": "published",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "Alemán B1"
+  },
+  "slug": "was-alles-repariert-wurde",
+  "series": {
+    "id": "aleman-b1-lectura-10",
+    "episode": 2,
+    "totalEpisodes": 10,
+    "previousExerciseId": "de-b1-der-konjunktiv-der-nachbarn",
+    "nextExerciseId": "de-b1-die-haltestelle-die-es-nicht-gibt"
+  },
+  "classification": {
+    "genre": "reportaje local",
+    "topic": "un taller vecinal de reparaciones",
+    "intent": "learning",
+    "tags": [
+      "aleman b1",
+      "lectura",
+      "voz pasiva",
+      "participio como adjetivo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Lo que se reparó aquí"
+    },
+    "intro": {
+      "es": "Un taller vecinal lleva un cuaderno con todo lo que se ha reparado desde 2019. El objeto que más aparece no es el que se espera. Lectura de alemán B1."
+    },
+    "mission": {
+      "es": "Averigua por qué la misma cafetera aparece siete veces en el cuaderno."
+    },
+    "targetText": "Das Repair-Café in Gronau wird jeden ersten Samstag im Monat in der alten Turnhalle geöffnet. Von neun bis dreizehn Uhr werden dort Dinge repariert, die sonst weggeworfen worden wären: Toaster, Lampen, Hosen mit kaputten Reißverschlüssen, einmal sogar ein Akkordeon.\n\nDie Regeln hängen ausgedruckt an der Tür und sind kurz. Es wird nichts abgegeben: Wer etwas bringt, bleibt dabei und hilft mit. Es wird nichts bezahlt, aber am Ausgang steht eine Kasse, in die gespendet werden kann.\n\nSeit 2019 wird ein Heft geführt. In die linke Spalte wird eingetragen, was gebracht wurde, in die rechte, ob es repariert werden konnte. Bis heute sind 1.812 Gegenstände eingetragen worden. Etwa zwei Drittel wurden wieder in Gang gesetzt. Der Rest war entweder zu alt, oder es wurden für ihn längst keine Ersatzteile mehr hergestellt.\n\nDer am häufigsten eingetragene Gegenstand ist keine Waschmaschine und kein Fahrrad, sondern eine bestimmte Kaffeemaschine. Sie steht siebenmal in dem Heft. Es ist jedes Mal dieselbe Maschine, und sie wird jedes Mal von demselben Mann gebracht: Herr Vogt, achtzig Jahre alt, ehemaliger Schlosser.\n\nBeim vierten Mal wurde den Freiwilligen klar, dass an dieser Maschine nie etwas Ernsthaftes kaputt gewesen war. Es wurde ein Filter gereinigt, eine Dichtung getauscht, ein loses Kabel nachgezogen — Arbeiten, die in zehn Minuten erledigt sind. Herr Vogt blieb trotzdem jedes Mal bis eins.\n\nMan hätte ihm sagen können, dass er auch ohne Maschine kommen darf. Genau das wurde nicht gemacht, und darüber wurde auch nicht abgestimmt. Stattdessen wurde beschlossen, die Reparatur langsam durchzuführen. Der Filter wird seitdem sehr gründlich gereinigt.\n\nDie reparierte Maschine wird am Ende auf den Tisch gestellt, angeschlossen und feierlich eingeschaltet. Der erste Kaffee wird von Herrn Vogt getrunken, der zweite von der Person, die die Reparatur gemacht hat. Das ist inzwischen eine Regel, die nirgends aufgeschrieben ist.\n\nIn der rechten Spalte des Heftes steht bei ihm jedes Mal dasselbe Wort: repariert. Das ist nicht gelogen. Es ist nur nicht die ganze Wahrheit.",
+    "wordCount": 320,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Leer prosa informativa en voz pasiva sin buscar un sujeto agente."
+      },
+      {
+        "es": "Reconocer el participio usado como adjetivo delante del sustantivo."
+      },
+      {
+        "es": "Distinguir lo que un documento registra de lo que realmente ocurre."
+      }
+    ],
+    "grammarFocus": [
+      "passiv-b1",
+      "partizip-als-adjektiv-b1",
+      "perfekt-haben-a2"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Turnhalle",
+        "lemma": "Turnhalle",
+        "glosses": {
+          "es": "gimnasio escolar"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Reißverschlüssen",
+        "lemma": "Reißverschluss",
+        "glosses": {
+          "es": "cremalleras"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Spalte",
+        "lemma": "Spalte",
+        "glosses": {
+          "es": "columna de una tabla"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Ersatzteile",
+        "lemma": "Ersatzteile",
+        "glosses": {
+          "es": "piezas de repuesto"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Dichtung",
+        "lemma": "Dichtung",
+        "glosses": {
+          "es": "junta, empaque"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Freiwilligen",
+        "lemma": "Freiwilliger",
+        "glosses": {
+          "es": "voluntarios"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gründlich",
+        "lemma": "gründlich",
+        "glosses": {
+          "es": "a fondo, minuciosamente"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gespendet",
+        "lemma": "spenden",
+        "glosses": {
+          "es": "donado"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Los Repair-Cafés nacieron en Ámsterdam en 2009 y hay más de mil en Alemania. La regla de que quien trae algo se queda a ayudar es común a casi todos: no son un servicio técnico gratis."
+    },
+    "spanishSpeakerNote": {
+      "es": "La pasiva alemana se usa mucho más que la española, sobre todo en prosa institucional. Donde el español dice «se abre» o «abren», el alemán dice «wird geöffnet». No busques quién lo hace: muchas veces el texto no lo dice a propósito."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un texto alemán largo que desarrolla una idea y cambia de dirección, separar lo que ocurrió de lo que alguien dice que ocurrió, y justificar una inferencia cruzando dos pasajes distintos."
+    },
+    "allowedGrammar": [
+      "adjektive-pradikativ",
+      "akkusativ",
+      "artikel",
+      "dativ-praepositionen",
+      "imperativ",
+      "modalverben",
+      "personalpronomen-akkusativ",
+      "personalpronomen",
+      "plural-nomen",
+      "possessivpronomen",
+      "praepositionen-ort",
+      "praepositionen-zeit",
+      "prasens-regelmaessig",
+      "prasens-unregelmaessig",
+      "trennbare-verben",
+      "verb-haben",
+      "verb-sein",
+      "verneinung",
+      "w-fragen",
+      "zukunft-prasens",
+      "adjektivdeklination-a2",
+      "da-hin-her-a2",
+      "dativ-a2",
+      "futur-i-a2",
+      "genitiv-a2",
+      "infinitiv-zu-a2",
+      "komparativ-superlativ-a2",
+      "konjunktionen-a2",
+      "konjunktiv-ii-wurden-a2",
+      "modalverben-praeteritum-a2",
+      "partizip-als-adjektiv-a2",
+      "passiv-praesens-a2",
+      "perfekt-haben-a2",
+      "perfekt-sein-a2",
+      "praeteritum-basic-a2",
+      "reflexivverben-a2",
+      "relativsaetze-a2",
+      "trennbare-verben-praeteritum-a2",
+      "wechselpraepositionen-a2",
+      "zweiteilige-konnektoren-a2",
+      "adjektivdeklination-b1",
+      "genitiv-b1",
+      "imperativ-b1",
+      "indirekte-rede-b1",
+      "infinitiv-zu-b1",
+      "kausale-konzessive-satze-b1",
+      "konjunktiv-ii-b1",
+      "modalverben-prateritum-b1",
+      "nebensatze-b1",
+      "partizip-als-adjektiv-b1",
+      "passiv-b1",
+      "perfekt-haben-sein-b1",
+      "prateritum-starke-verben-b1",
+      "reflexive-verben-b1",
+      "relativsatze-b1",
+      "temporale-prapositionen-b1",
+      "verben-mit-prapositionen-b1",
+      "wechselprapositionen-b1",
+      "wortbildung-b1",
+      "zweiteilige-konnektoren-b1"
+    ],
+    "disallowedGrammar": [
+      "Futur II",
+      "erweitertes Partizipialattribut",
+      "Nominalstil amtlich",
+      "Konjunktiv I seltener Verben"
+    ],
+    "maxOutOfLevelVocabularyPercent": 6,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 12.3,
+      "maxSentenceWords": 24,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Prosa B1 con Konjunktiv II, indirekte Rede, pasiva y subordinadas encadenadas. Konjunktiv I solo en verbos frecuentes (sei, habe, wolle). Inferencia moderada: exige cruzar dos pasajes separados."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué explica finalmente el texto?",
+      "options": [
+        {
+          "id": "compania",
+          "text": "Que un hombre lleva siete veces la misma cafetera porque lo que busca es compañía, y allí le siguen el juego"
+        },
+        {
+          "id": "defecto",
+          "text": "Que esa cafetera tiene un defecto de fábrica que nadie logra arreglar"
+        },
+        {
+          "id": "dinero",
+          "text": "Que el taller decidió cobrar por las reparaciones repetidas"
+        }
+      ],
+      "answer": "compania",
+      "evidence": "wurde den Freiwilligen klar, dass an dieser Maschine nie etwas Ernsthaftes kaputt gewesen war … Stattdessen wurde beschlossen, die Reparatur langsam durchzuführen.",
+      "feedback": {
+        "correct": {
+          "es": "Sí. Y la decisión más importante del texto es la que no se toma: nadie le dice que puede venir sin la cafetera."
+        },
+        "incorrect": {
+          "es": "El texto dice expresamente que la máquina nunca tuvo nada serio, y allí no se cobra nada. Busca qué se decidió hacer después."
+        },
+        "strategy": {
+          "es": "Cuando un texto informativo termina con una frase sobre la verdad, esa frase reinterpreta todo lo anterior."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿Qué proporción de los objetos registrados se logró arreglar?",
+      "options": [
+        {
+          "id": "dostercios",
+          "text": "Alrededor de dos tercios"
+        },
+        {
+          "id": "todos",
+          "text": "Todos menos el acordeón"
+        },
+        {
+          "id": "mitad",
+          "text": "Exactamente la mitad"
+        }
+      ],
+      "answer": "dostercios",
+      "evidence": "Bis heute sind 1.812 Gegenstände eingetragen worden. Etwa zwei Drittel wurden wieder in Gang gesetzt.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el resto falló por edad o por falta de repuestos."
+        },
+        "incorrect": {
+          "es": "El acordeón es solo un ejemplo de lo que se lleva allí. Busca la frase con «Drittel»."
+        },
+        "strategy": {
+          "es": "Las proporciones suelen ir en la frase siguiente a la cifra total."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que se cambió una «Dichtung». ¿Qué es?",
+      "options": [
+        {
+          "id": "junta",
+          "text": "Una junta o empaque que impide que se escape el agua"
+        },
+        {
+          "id": "tapa",
+          "text": "La tapa exterior del aparato"
+        },
+        {
+          "id": "manual",
+          "text": "El manual de instrucciones"
+        }
+      ],
+      "answer": "junta",
+      "evidence": "Es wurde ein Filter gereinigt, eine Dichtung getauscht, ein loses Kabel nachgezogen.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es. Va en una lista de arreglos mínimos: filtro, junta, cable."
+        },
+        "incorrect": {
+          "es": "Un manual no se cambia en una reparación de diez minutos. Fíjate en la compañía de la palabra."
+        },
+        "strategy": {
+          "es": "En una enumeración técnica, las palabras que van juntas suelen ser del mismo tipo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿Por qué el filtro se limpia «muy a fondo» desde entonces?",
+      "options": [
+        {
+          "id": "alargar",
+          "text": "Para alargar la reparación y que él pueda quedarse"
+        },
+        {
+          "id": "sucio",
+          "text": "Porque el filtro se ensucia mucho más que antes"
+        },
+        {
+          "id": "norma",
+          "text": "Porque una norma de higiene lo exige"
+        }
+      ],
+      "answer": "alargar",
+      "evidence": "Stattdessen wurde beschlossen, die Reparatur langsam durchzuführen. Der Filter wird seitdem sehr gründlich gereinigt.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y las dos frases van seguidas justamente para que el lector una las piezas."
+        },
+        "incorrect": {
+          "es": "No se menciona ninguna norma ni ningún cambio en el filtro. Lee la frase inmediatamente anterior."
+        },
+        "strategy": {
+          "es": "Cuando una frase empieza por «seitdem», la causa está en la frase de antes."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: quien lleva un objeto al taller se queda allí y participa en la reparación.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Es wird nichts abgegeben: Wer etwas bringt, bleibt dabei und hilft mit.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y es la primera de las dos reglas colgadas en la puerta."
+        },
+        "incorrect": {
+          "es": "Las reglas están al principio del texto, en el segundo párrafo, y son solo dos."
+        },
+        "strategy": {
+          "es": "Si un texto anuncia que hay reglas, la respuesta literal está en ese párrafo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la información tal como la presenta el reportaje.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Cuándo abre el taller y qué se repara allí"
+        },
+        {
+          "id": "p2",
+          "text": "Las reglas de la casa y la hucha de la salida"
+        },
+        {
+          "id": "p3",
+          "text": "Las cifras del cuaderno desde 2019"
+        },
+        {
+          "id": "p4",
+          "text": "El caso de Herr Vogt y su cafetera"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "Das Repair-Café in Gronau wird jeden ersten Samstag … Die Regeln hängen ausgedruckt an der Tür … Seit 2019 wird ein Heft geführt … Der am häufigsten eingetragene Gegenstand …",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El reportaje va de lo general a lo particular, y guarda el caso para el final."
+        },
+        "incorrect": {
+          "es": "Fíjate en cómo empieza cada párrafo: horario, reglas, cuaderno, y solo después la persona."
+        },
+        "strategy": {
+          "es": "Un reportaje suele ir de datos generales a un caso concreto, no al revés."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en alemán describiendo cómo funciona un sitio que conoces (un taller, una biblioteca, un comedor). Usa al menos cinco frases en pasiva."
+    },
+    "minWords": 70,
+    "maxWords": 130,
+    "hints": [
+      "Die Tür wird um … Uhr geöffnet.",
+      "Es wird nichts bezahlt.",
+      "Seit … wird ein Heft geführt.",
+      "Am Ende wird … eingeschaltet."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de alemán B1: lo que se reparó aquí | WeLearn"
+    },
+    "description": {
+      "es": "Lee un reportaje en alemán B1 y practica la voz pasiva y el participio usado como adjetivo. Con vocabulario glosado y seis preguntas."
+    },
+    "canonicalPath": "/practica/aleman/b1/lectura/was-alles-repariert-wurde",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "de-b1-der-konjunktiv-der-nachbarn",
+      "de-b1-die-haltestelle-die-es-nicht-gibt"
+    ]
+  }
+}

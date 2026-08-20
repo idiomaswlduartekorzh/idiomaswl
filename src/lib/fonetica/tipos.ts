@@ -51,10 +51,13 @@ export interface WordToken {
   /** Pronunciaciones por sistema. Cada sistema puede traer varias variantes. */
   readonly forms: Record<string, string[]>
   /**
-   * Por sistema y variante: esa forma acaba en una /r/ que solo suena ante vocal.
-   * Solo el inglés lo usa; los demás idiomas lo omiten.
+   * Por sistema y variante: el sonido que reaparece ante vocal, o `null` si no hay.
+   *
+   * Lleva el sonido y no un simple sí/no porque cada idioma enlaza con una consonante
+   * distinta —el inglés siempre con /r/, el francés con /z/, /t/ o /n/ según la palabra—.
+   * Con un booleano, la pantalla tendría que saber de qué idioma habla.
    */
-  readonly linking?: Record<string, boolean[]>
+  readonly linking?: Record<string, (string | null)[]>
   /** La palabra siguiente empieza por vocal, así que la /r/ de enlace suena. */
   readonly followedByVowel?: boolean
   /** Forma reducida dentro de la frase, por sistema. Solo inglés. */

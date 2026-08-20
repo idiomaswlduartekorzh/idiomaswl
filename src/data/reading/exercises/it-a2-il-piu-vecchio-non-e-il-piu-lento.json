@@ -1,0 +1,469 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "it-a2-il-piu-vecchio-non-e-il-piu-lento",
+  "status": "published",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "Italiano A2"
+  },
+  "slug": "il-piu-vecchio-non-e-il-piu-lento",
+  "series": {
+    "id": "italiano-a2-lectura-10",
+    "episode": 6,
+    "totalEpisodes": 10,
+    "previousExerciseId": "it-a2-la-scuola-con-sei-bambini",
+    "nextExerciseId": "it-a2-mi-sveglio-alle-quattro-e-venti"
+  },
+  "classification": {
+    "genre": "crónica deportiva",
+    "topic": "una carrera popular de diez kilómetros",
+    "intent": "learning",
+    "tags": [
+      "italiano a2",
+      "lectura",
+      "comparativos",
+      "adverbios de modo"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "El más viejo no es el más lento"
+    },
+    "intro": {
+      "es": "Doscientas cuatro personas, el mayor con setenta y ocho años, y cuarenta y tres corredores más jóvenes llegando detrás de él. Lectura de italiano A2."
+    },
+    "mission": {
+      "es": "Averigua cuál es el razonamiento con el que Nando dice que ahora corre mejor."
+    },
+    "targetText": "La corsa di Sant'Anna è una gara popolare di dieci chilometri. Non è una gara importante: non c'è la televisione, non ci sono premi in denaro e il percorso passa davanti al supermercato.\n\nQuest'anno hanno corso duecentoquattro persone. Il più giovane aveva quindici anni. Il più vecchio, Nando Terzi, ne aveva settantotto.\n\nNando non è arrivato ultimo. È arrivato centosessantunesimo. Dietro di lui sono arrivate quarantatré persone, tutte più giovani di lui, alcune molto più giovani.\n\nHo parlato con lui alla fine. Corre lentamente ma corre regolarmente: quattro volte alla settimana, sempre lo stesso percorso, sempre alla stessa ora. Dice che il segreto non è la velocità, è la costanza. Secondo lui le persone più veloci si allenano male: corrono forte il lunedì e poi non corrono per due settimane.\n\nGli ho chiesto se il suo tempo è peggiore di dieci anni fa. Ha risposto tranquillamente: è molto peggiore. Ma dieci anni fa arrivavo centoventesimo e c'erano meno persone dietro di me. Quindi, in un certo senso, adesso vado meglio.\n\nQuesto ragionamento è discutibile, però mi piace più della matematica.\n\nL'ultimo classificato ha ventinove anni. Ha finito la gara camminando, con la maglietta in mano, e all'arrivo rideva. Nando lo ha aspettato e gli ha dato la mano. Poi ha detto una frase migliore di tutte le mie domande: qui l'unica cosa peggio di arrivare ultimi è non venire.",
+    "wordCount": 229,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Formar comparativos regulares e irregulares: più giovane, peggiore, migliore, meglio."
+      },
+      {
+        "es": "Usar adverbios de modo y de frecuencia: lentamente, regolarmente, tranquillamente, sempre."
+      },
+      {
+        "es": "Evaluar un razonamiento que el propio texto llama discutible."
+      }
+    ],
+    "grammarFocus": [
+      "comparativi-a2",
+      "avverbi-frequenza-modo-a2",
+      "aggettivi-qualificativi"
+    ],
+    "vocabulary": [
+      {
+        "surface": "gara",
+        "lemma": "gara",
+        "glosses": {
+          "es": "carrera, competición"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "percorso",
+        "lemma": "percorso",
+        "glosses": {
+          "es": "recorrido"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "denaro",
+        "lemma": "denaro",
+        "glosses": {
+          "es": "dinero"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "allenano",
+        "lemma": "allenarsi",
+        "glosses": {
+          "es": "entrenan"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "maglietta",
+        "lemma": "maglietta",
+        "glosses": {
+          "es": "camiseta"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "classificato",
+        "lemma": "classificato",
+        "glosses": {
+          "es": "clasificado; «l'ultimo classificato» es el último de la tabla"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rideva",
+        "lemma": "ridere",
+        "glosses": {
+          "es": "se reía"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dietro",
+        "lemma": "dietro",
+        "glosses": {
+          "es": "detrás de"
+        },
+        "audioRequired": true,
+        "levelStatus": "within-level"
+      }
+    ],
+    "culturalNote": {
+      "es": "Las «corse popolari» italianas son carreras de barrio con inscripción de pocos euros, sin premios en metálico y con clasificación completa: se publica el nombre del último igual que el del primero."
+    },
+    "spanishSpeakerNote": {
+      "es": "El italiano tiene comparativos irregulares como el español: «peggiore» y «migliore» son adjetivos (peor, mejor), «peggio» y «meglio» son adverbios. «Vado meglio» no es «vado migliore»."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes seguir un relato en italiano sobre hechos pasados, distinguir el passato prossimo del imperfetto, y justificar tu respuesta con la frase exacta."
+    },
+    "allowedGrammar": [
+      "aggettivi-possessivi",
+      "aggettivi-qualificativi",
+      "articoli",
+      "avverbi-frequenza",
+      "ce-ci-sono",
+      "domande-interrogativi",
+      "genere-numero",
+      "imperativo",
+      "negazione",
+      "preposizioni-articolate",
+      "preposizioni-semplici",
+      "presente-verbi-are",
+      "presente-verbi-ere-ire",
+      "pronomi-soggetto",
+      "stare-gerundio",
+      "verbi-irregolari",
+      "verbo-avere",
+      "verbo-essere",
+      "avverbi-frequenza-modo-a2",
+      "ci-vuole-vogliono-a2",
+      "comparativi-a2",
+      "condizionale-presente-a2",
+      "congiunzioni-logiche-a2",
+      "da-presente-a2",
+      "forma-cortesia-a2",
+      "futuro-probabilita-a2",
+      "futuro-semplice-a2",
+      "imperfetto-a2",
+      "passato-prossimo-avere-a2",
+      "passato-prossimo-essere-a2",
+      "periodo-ipotetico-reale-a2",
+      "piacere-verbi-simili-a2",
+      "pronomi-diretti-a2",
+      "pronomi-indiretti-a2",
+      "pronomi-relativi-a2",
+      "stare-per-a2",
+      "trapassato-prossimo-a2",
+      "verbi-riflessivi-a2"
+    ],
+    "disallowedGrammar": [
+      "congiuntivo",
+      "passato remoto",
+      "periodo ipotetico irreale",
+      "forma passiva"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 10.9,
+      "maxSentenceWords": 22,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
+      "assessedAt": "2026-08-18T00:00:00-05:00",
+      "notes": "Passato prossimo con avere y essere, imperfetto, futuro, condizionale y forma di cortesia. Sin congiuntivo ni passato remoto."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "¿Qué defiende la crónica?",
+      "options": [
+        {
+          "id": "constancia",
+          "text": "Que la constancia gana a la velocidad, y que lo peor no es llegar último sino no venir"
+        },
+        {
+          "id": "record",
+          "text": "Que Nando batió un récord de su categoría"
+        },
+        {
+          "id": "organizacion",
+          "text": "Que la carrera está mal organizada"
+        }
+      ],
+      "answer": "constancia",
+      "evidence": "Dice che il segreto non è la velocità, è la costanza … l'unica cosa peggio di arrivare ultimi è non venire.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y las dos frases que lo dicen son de Nando, no del narrador."
+        },
+        "incorrect": {
+          "es": "No hay récord y la organización no se critica. Busca las dos frases que dice Nando."
+        },
+        "strategy": {
+          "es": "Cuando un texto cita dos veces a la misma persona, esas citas suelen sostener la tesis."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "¿En qué puesto llegó Nando este año?",
+      "options": [
+        {
+          "id": "161",
+          "text": "El centosesenta y uno"
+        },
+        {
+          "id": "ultimo",
+          "text": "Último"
+        },
+        {
+          "id": "120",
+          "text": "El ciento veinte"
+        }
+      ],
+      "answer": "161",
+      "evidence": "Nando non è arrivato ultimo. È arrivato centosessantunesimo.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto, y el ciento veinte era su puesto de hace diez años."
+        },
+        "incorrect": {
+          "es": "El texto niega expresamente que llegara último, y el 120 es de hace diez años."
+        },
+        "strategy": {
+          "es": "Si el texto niega algo antes de dar el dato, la negación te avisa del error probable."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "El texto dice que las personas más rápidas «si allenano male». ¿Qué significa?",
+      "options": [
+        {
+          "id": "entrenan",
+          "text": "Entrenan mal"
+        },
+        {
+          "id": "alimentan",
+          "text": "Se alimentan mal"
+        },
+        {
+          "id": "pierden",
+          "text": "Pierden siempre"
+        }
+      ],
+      "answer": "entrenan",
+      "evidence": "le persone più veloci si allenano male: corrono forte il lunedì e poi non corrono per due settimane.",
+      "feedback": {
+        "correct": {
+          "es": "Eso es, y la frase siguiente explica en qué consiste ese error."
+        },
+        "incorrect": {
+          "es": "Los dos puntos que siguen explican la palabra: hablan de cómo corren, no de qué comen."
+        },
+        "strategy": {
+          "es": "Después de dos puntos suele venir la explicación de la palabra que acabas de leer."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "¿En qué se basa Nando para decir que ahora corre mejor que hace diez años?",
+      "options": [
+        {
+          "id": "detras",
+          "text": "En que ahora hay más gente por detrás de él, aunque su tiempo sea mucho peor"
+        },
+        {
+          "id": "tiempo",
+          "text": "En que ha mejorado su tiempo en diez kilómetros"
+        },
+        {
+          "id": "salud",
+          "text": "En que tiene mejor salud que antes"
+        }
+      ],
+      "answer": "detras",
+      "evidence": "è molto peggiore. Ma dieci anni fa arrivavo centoventesimo e c'erano meno persone dietro di me. Quindi, in un certo senso, adesso vado meglio.",
+      "feedback": {
+        "correct": {
+          "es": "Sí, y él mismo admite primero que su tiempo empeoró mucho."
+        },
+        "incorrect": {
+          "es": "Dice expresamente que su tiempo es mucho peor, y no habla de salud. Fíjate en la comparación de puestos."
+        },
+        "strategy": {
+          "es": "Cuando alguien concede algo y luego dice «ma», su argumento está después del «ma»."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Verdadero o falso: Nando esperó al último clasificado y le dio la mano en la meta.",
+      "options": [
+        {
+          "id": "vrai",
+          "text": "Verdadero"
+        },
+        {
+          "id": "faux",
+          "text": "Falso"
+        }
+      ],
+      "answer": "vrai",
+      "evidence": "Nando lo ha aspettato e gli ha dato la mano.",
+      "feedback": {
+        "correct": {
+          "es": "Verdadero, y justo después dice la frase que cierra la crónica."
+        },
+        "incorrect": {
+          "es": "Está en el último párrafo, después de describir al último clasificado."
+        },
+        "strategy": {
+          "es": "Los gestos importantes suelen ir en frases cortas justo antes de una cita final."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Ordena la crónica.",
+      "options": [
+        {
+          "id": "p1",
+          "text": "Qué tipo de carrera es y qué no tiene"
+        },
+        {
+          "id": "p2",
+          "text": "Las edades: el más joven y el más viejo"
+        },
+        {
+          "id": "p3",
+          "text": "La conversación con Nando sobre la constancia"
+        },
+        {
+          "id": "p4",
+          "text": "El último clasificado y la frase final"
+        }
+      ],
+      "answer": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "evidence": "La corsa di Sant'Anna è una gara popolare … Il più giovane aveva quindici anni … Ho parlato con lui alla fine … L'ultimo classificato ha ventinove anni.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto: contexto, datos, entrevista y cierre."
+        },
+        "incorrect": {
+          "es": "Fíjate en cuándo entra la conversación y cuándo aparece el último clasificado."
+        },
+        "strategy": {
+          "es": "Una crónica deportiva suele reservar el momento humano para el final."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 10–12 frases en italiano comparando cómo hacías algo antes y cómo lo haces ahora. Usa cinco comparativos y cuatro adverbios en -mente."
+    },
+    "minWords": 60,
+    "maxWords": 110,
+    "hints": [
+      "Corro più lentamente di prima.",
+      "Il mio tempo è peggiore.",
+      "Ma adesso vado meglio.",
+      "Mi alleno regolarmente."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "José David Duarte Silva",
+    "languageReviewer": "Zhanna Korzh",
+    "pedagogyReviewer": "Zhanna Korzh",
+    "reviewedAt": "2026-08-18T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Borrador asistido por IA, revisado y aprobado por Zhanna Korzh (lengua y pedagogía).",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de italiano A2: el más viejo no es el más lento | WeLearn"
+    },
+    "description": {
+      "es": "Lee una crónica en italiano A2 y practica los comparativos y los adverbios de modo. Con vocabulario glosado y seis preguntas de comprensión."
+    },
+    "canonicalPath": "/practica/italiano/a2/lectura/il-piu-vecchio-non-e-il-piu-lento",
+    "indexable": true,
+    "lastModified": "2026-08-18T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "it-a2-la-scuola-con-sei-bambini",
+      "it-a2-mi-sveglio-alle-quattro-e-venti"
+    ]
+  }
+}
