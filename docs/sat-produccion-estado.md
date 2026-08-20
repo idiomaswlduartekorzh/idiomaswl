@@ -5,8 +5,8 @@ Las reglas están en `docs/sat-loop-nocturno.md`; los parámetros y umbrales, en
 `docs/sat-ingles-blueprint.md`.
 
 - **Rama:** `feat/red-agentes-sat-ingles`
-- **Última vuelta:** 31 · 19 ago 2026 · **E2 publicada en la rama.** Y al conectarla salió que el hub de SAT nunca estuvo en el sitemap
-- **Siguiente tarea:** E3 · `/examenes/sat/guia/craft-and-structure` — el dominio con más peso
+- **Última vuelta:** 32 · 20 ago 2026 · **Los cuatro dominios, escritos.** El espinazo tiene cinco páginas y ningún enlace roto
+- **Siguiente tarea:** E7 · `como-estudiar-sat-desde-cero` — el plan por semanas
 
 ---
 
@@ -63,10 +63,10 @@ Espinazo, en `/examenes/sat/guia/<slug>`:
 
 - [x] **E1** · Plan del clúster, razonado sobre la SERP real y no sobre suposiciones
 - [x] **E2** · `reading-and-writing` — la sección entera. Página madre
-- [ ] **E3** · `craft-and-structure` — el dominio con más peso
-- [ ] **E4** · `information-and-ideas`
-- [ ] **E5** · `standard-english-conventions` — la mejora más barata del examen
-- [ ] **E6** · `expression-of-ideas`
+- [x] **E3** · `craft-and-structure` — el dominio con más peso
+- [x] **E4** · `information-and-ideas`
+- [x] **E5** · `standard-english-conventions` — la mejora más barata del examen
+- [x] **E6** · `expression-of-ideas`
 - [ ] **E7** · `como-estudiar-sat-desde-cero` — plan por semanas
 
 Ramas, en `/blog/<slug>`:
@@ -91,6 +91,7 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
 
 | Vuelta | Tarea | Resultado | Commit |
 |---|---|---|---|
+| 32 | E3–E6 · los cuatro dominios | ✅ Las cuatro páginas de dominio, en una sola vuelta porque cada `build` cuesta 5-7 min y compilar cuatro veces lo mismo es tiempo tirado. Verificadas a máquina las cinco del espinazo: preguntas visibles == preguntas en el `FAQPage`, `canonical`, los tres tipos de marcado y **cero enlaces a guías que no existen**. Lo que las separa de la competencia no es el temario sino el procedimiento: tapar las opciones antes de leerlas, la comprobación del *comma splice*, los falsos amigos en las transiciones | (este bloque) |
 | 31 | E2 · página madre del espinazo | ✅ `/examenes/sat/guia/reading-and-writing` con migas, `LearningResource`, `FAQPage` (8 preguntas, las mismas visibles que en el marcado) y `canonical`. **Fallo anterior descubierto al conectarla: la lista de exámenes del sitemap se escribía a mano y no tenía `sat` — el hub existía y Google no lo sabía.** Ahora se deriva de `EXAMS`. Los enlaces del clúster se filtran contra las páginas que existen, así que E3–E7 no generan 404 mientras no estén escritas | (este bloque) |
 | 30 | E1 · plan del superhub | ✅ Mirada la primera página de Google en español: la ocupan agencias de admisión con contenido genérico. **Dos huecos grandes: nadie explica los cuatro dominios en español —ese material existe solo en inglés— y nadie da un módulo real gratis, solo diagnósticos de 20 min para pedirte el teléfono.** 11 páginas priorizadas por demanda × debilidad de quien la ocupa | (este bloque) |
 | 29 | Acta firmada · **APTO** | ✅ Clave única auditada sobre los 27 en su forma de hoy: **27/27 coincidencias, cero dobles claves**. Las siete auditorías completas y en APTO. **El guardián da las doce puertas.** `tsc`, `build` y los 13 guardianes del prebuild en verde | (este bloque) |
