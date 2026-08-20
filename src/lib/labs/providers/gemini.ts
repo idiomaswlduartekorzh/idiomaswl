@@ -121,13 +121,26 @@ export async function assessWritingFree<TaskId extends string>(
 
   for (const candidateModel of [model, ...fallbackModels]) {
     const url = `${endpoint}/${candidateModel}:generateContent?key=${key}`;
+    // Flash Lite soporta visión y responseSchema, pero rechaza thinkingConfig
+    // con HTTP 400. El modelo principal sí lo necesita para no consumir el
+    // timeout razonando antes de devolver el JSON.
+    const candidateBody = candidateModel === model
+      ? body
+      : {
+          ...body,
+          generationConfig: {
+            responseMimeType: body.generationConfig.responseMimeType,
+            responseSchema: body.generationConfig.responseSchema,
+            temperature: body.generationConfig.temperature,
+          },
+        };
 
     for (let attempt = 0; attempt < 2; attempt++) {
       try {
         const res = await fetch(url, {
           method:  'POST',
           headers: { 'content-type': 'application/json' },
-          body:    JSON.stringify(body),
+          body:    JSON.stringify(candidateBody),
           // 45s se quedaba corto: un Task 2 completo ronda los 40–50s contra el
           // free tier, y el corte caía justo encima. Ver docs/blueprint-labs-ia.md
           signal:  AbortSignal.timeout(90_000),

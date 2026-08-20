@@ -49,16 +49,13 @@ export const providers = {
   groq: {
     key:      process.env.GROQ_API_KEY ?? '',
     /**
-     * OJO (18 jul 2026): antes usábamos meta-llama/llama-4-scout-17b-16e-
-     * instruct (visión + JSON) — Groq lo deprecó el 17 jun 2026 sin que
-     * nos enteráramos (devolvía model_not_found). Este es texto puro, SIN
-     * visión — Groq ya no tiene ningún modelo de visión viable para
-     * nuestro esquema completo (probamos qwen/qwen3.6-27b: lee bien la
-     * imagen, pero su límite de 8.000 tokens/min no alcanza para el JSON
-     * completo). Por eso Groq no entra en la cadena de IELTS Task 1 — ver
-     * providers/groq.ts y exam-writing-assess/route.ts.
+     * Texto puro. Groq retiró llama-3.3-70b-versatile en agosto de 2026;
+     * openai/gpt-oss-120b es el reemplazo vigente verificado contra
+     * /openai/v1/models y una generación JSON real. Qwen 3.6 puede
+     * ver imágenes, pero su presupuesto por minuto no alcanza para nuestra
+     * rúbrica + ensayo + reescritura. Task 1 sigue en Gemini con visión.
      */
-    model:    'llama-3.3-70b-versatile',
+    model:    'openai/gpt-oss-120b',
     endpoint: 'https://api.groq.com/openai/v1/chat/completions',
     /** Free tier: hasta 14.400 req/día, 30 req/min. Ver console.groq.com/docs/rate-limits */
     freeTierRpd: 14_400,
