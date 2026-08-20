@@ -5,8 +5,8 @@ Las reglas están en `docs/sat-loop-nocturno.md`; los parámetros y umbrales, en
 `docs/sat-ingles-blueprint.md`.
 
 - **Rama:** `feat/red-agentes-sat-ingles`
-- **Última vuelta:** 29 · 19 ago 2026 · **ACTA FIRMADA. Las doce puertas, superadas.** Loop detenido: el módulo está terminado
-- **Siguiente tarea:** decisión de David — publicar (merge a `main`) y, si quiere, segundo módulo con el método ya calibrado
+- **Última vuelta:** 30 · 19 ago 2026 · **Fase E abierta: el superhub.** Plan del clúster escrito sobre la SERP real, no sobre suposiciones
+- **Siguiente tarea:** E2 · `/examenes/sat/guia/reading-and-writing` — la página madre del espinazo
 
 ---
 
@@ -52,6 +52,37 @@ Sustituyen a la fase C. David aprobó las tres vías y pidió hacerlas en este o
 - [ ] **C0** · `docs/sat-fabrica.md`: la receta real, con costes y atascos medidos
 - [ ] **C1** · Segundo módulo, ya con el método R8 desde el principio
 
+### Fase E — El superhub (19 ago 2026)
+
+David: «el SEO no es solo para que nos encuentren sino para posicionarnos fuerte en
+ese nicho en Colombia y en USA». Una URL indexable no posiciona un nicho. El plan
+completo —quién ocupa hoy la SERP y por qué cada página existe— está en
+[`docs/sat-superhub-plan.md`](sat-superhub-plan.md). **Léelo antes de coger una tarea.**
+
+Espinazo, en `/examenes/sat/guia/<slug>`:
+
+- [x] **E1** · Plan del clúster, razonado sobre la SERP real y no sobre suposiciones
+- [ ] **E2** · `reading-and-writing` — la sección entera. Página madre
+- [ ] **E3** · `craft-and-structure` — el dominio con más peso
+- [ ] **E4** · `information-and-ideas`
+- [ ] **E5** · `standard-english-conventions` — la mejora más barata del examen
+- [ ] **E6** · `expression-of-ideas`
+- [ ] **E7** · `como-estudiar-sat-desde-cero` — plan por semanas
+
+Ramas, en `/blog/<slug>`:
+
+- [ ] **E8** · Qué puntaje de SAT necesitas, por tipo de universidad
+- [ ] **E9** · El SAT desde Colombia: sedes, fechas, inscripción
+- [ ] **E10** · SAT o ACT: cuál presentar
+- [ ] **E11** · SAT y TOEFL/IELTS: por qué te piden los dos
+
+Cierre:
+
+- [ ] **E12** · Enlaces en las dos direcciones: el desglose por dominio del simulacro
+      apunta a su página de dominio, y cada página vuelve al simulacro
+- [ ] **E13** · Guardián `check:sat-superhub`: que ninguna página del clúster se quede
+      sin `canonical`, sin JSON-LD, sin entrada en `sitemap.ts` o sin enlace de vuelta
+
 ---
 
 ## Registro de vueltas
@@ -60,6 +91,7 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
 
 | Vuelta | Tarea | Resultado | Commit |
 |---|---|---|---|
+| 30 | E1 · plan del superhub | ✅ Mirada la primera página de Google en español: la ocupan agencias de admisión con contenido genérico. **Dos huecos grandes: nadie explica los cuatro dominios en español —ese material existe solo en inglés— y nadie da un módulo real gratis, solo diagnósticos de 20 min para pedirte el teléfono.** 11 páginas priorizadas por demanda × debilidad de quien la ocupa | (este bloque) |
 | 29 | Acta firmada · **APTO** | ✅ Clave única auditada sobre los 27 en su forma de hoy: **27/27 coincidencias, cero dobles claves**. Las siete auditorías completas y en APTO. **El guardián da las doce puertas.** `tsc`, `build` y los 13 guardianes del prebuild en verde | (este bloque) |
 | 28 | q22 resuelto + medición definitiva | ✅ Los dos auditores que tumbaron q22 confirman el arreglo: el de lengua rehízo la prueba de supresión y revisó **cinco** escondites, uno más de los que le pedí. Panel: **23,1 %, por debajo del azar del 25 %**. Antes de firmar, se audita clave única sobre los 27 en su forma de hoy: once se han reescrito desde la última pasada completa | `a2744d72` |
 | 25 | Publicación + verificación | ⚠️ **25,5 %** con 16 jueces, igual que el azar. Set servible en `/examenes/sat/practica/set-1` y hub en `/examenes/sat`, build en verde. Dificultad **APTO**. Lengua confirma su arreglo **pero encuentra que q22, reescrito ayer, tiene DOS CLAVES**: puerta eliminatoria. No se firma | `01d7f358` |
