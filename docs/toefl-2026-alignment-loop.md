@@ -3531,3 +3531,30 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
   generado ni modificado. El siguiente gate es la aprobación humana del preview; sólo
   después se presenta para autorización separada el manifiesto, voces, muestra y costo
   de los 400 audios faltantes.
+
+### Hallazgo manual Set 1: longitudes conformes y bloqueo de audio corregido — 2026-08-20
+
+- El owner revisó Reading M1/M2 y cuestionó la densidad de Complete the Words y la
+  longitud de Bookshop, Delivery, Campus Bicycle, Room Reservation, Green Sahara y
+  Mangrove Forests. Se midieron los ocho bloques contra el blueprint y el Full-length
+  Practice Test 1 de ETS.
+- Los dos CTW tienen 76/84 palabras y 10 huecos; Daily Life tiene 57/75/63/72 palabras
+  y sets 3/2/2/3; los académicos tienen 187/188 palabras y 5 preguntas. Todo entra en
+  la forma publicada. El patrón denso de CTW —cada segunda palabra después de una
+  primera oración intacta— también es oficial; se mejoró legibilidad sin cambiarlo.
+- `DELIVERY APP` repetido es la etiqueta del interlocutor dentro de una cadena de
+  mensajes, no tres estímulos duplicados.
+- Listening sí tenía un bloqueo real. Al avanzar, React reutilizaba el reproductor del
+  ítem anterior con estado interno `started/done`; el audio nuevo no podía iniciarse y el botón
+  de avance esperaba su final. `155f8828` da una identidad por medio al panel
+  forward-only, por lo que cada MP3 monta un reproductor limpio. Los medios realmente
+  ausentes muestran ahora `Omitir ítem sin audio y continuar`.
+- Evidencia antes del preview: catálogo protegido PASS, ocho guardianes TOEFL PASS,
+  44/44 pruebas unitarias PASS, ESLint dirigido PASS y rama 0 commits detrás de
+  `origin/main`. Ningún audio se abrió, reprodujo, transcribió, generó o modificó.
+- El push de `155f8828` inició `dpl_7pkH2W2xTbV2DqSyh56Chf8zjkuN`. Vercel clonó
+  durante 39:13, ejecutó guardianes, compilación, TypeScript y generación de rutas,
+  pero canceló el despliegue con `BUILD_EXCEEDED_MAXIMUM_TIME`: la suma superó el
+  máximo de 45 minutos. No fue una falla del código TOEFL. El preview del arreglo
+  sigue abierto hasta completar un despliegue directo desde un commit limpio, sin
+  tocar producción.
