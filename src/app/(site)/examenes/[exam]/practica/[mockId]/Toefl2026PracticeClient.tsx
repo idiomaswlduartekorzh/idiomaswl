@@ -1302,6 +1302,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
         ))}
         {activeStage.navigation === 'forward-only' && currentForwardItem && (
           <ForwardItemPanel
+            key={currentMediaId ?? currentForwardItem.question.id}
             stage={activeStage}
             section={currentForwardItem.section}
             question={currentForwardItem.question}
@@ -1323,6 +1324,8 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
                 <button type="button" className="btn" disabled={!forwardCanAdvance || scoringWords} onClick={advanceForward}>
                   {scoringWords
                     ? 'Calculando resultados…'
+                    : currentForwardBlocked && forwardItemIndex < forwardItems.length - 1
+                      ? 'Omitir ítem sin audio y continuar →'
                     : forwardItemIndex < forwardItems.length - 1
                       ? 'Confirmar y siguiente ítem →'
                       : stageIndex < stages.length - 1 ? 'Cerrar bloque y continuar →' : 'Finalizar práctica'}
@@ -1343,11 +1346,11 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
 // Minimal CSS for the 2026-only task types (supplements ielts-*/prac-* in globals.css).
 const T26_CSS = `
   .t26-stimulus { white-space: pre-wrap; font-family: inherit; background: var(--surface,#f6f7f9); border:1px solid var(--line-soft,#e3e6ea); border-radius:8px; padding:.75rem 1rem; margin:.5rem 0; line-height:1.6; }
-  .t26-word .ielts-form__body { line-height: 2.4; }
-  .t26-word__wrap { display:inline-flex; align-items:baseline; margin:0 2px; white-space:nowrap; }
-  .t26-word__num { align-self:flex-start; color:var(--muted,#687386); font:700 .58rem/1.4 var(--mono,monospace); margin-right:1px; }
+  .t26-word .ielts-form__body { max-width:78ch; font-size:clamp(1rem,1.25vw,1.1rem); line-height:2.55; }
+  .t26-word__wrap { display:inline-flex; align-items:baseline; margin-inline:.16em; padding-inline:.08em; white-space:nowrap; }
+  .t26-word__num { align-self:flex-start; color:var(--muted,#687386); font:700 .6rem/1.4 var(--mono,monospace); margin-right:.14em; }
   .t26-word__given { font-weight:600; }
-  .t26-word__input { border:none; border-bottom:2px solid var(--exam-color,#0a56c4); border-radius:3px 3px 0 0; background:rgba(10,86,196,.06); color:var(--ink,#1a2230); font:inherit; text-align:left; padding:0 2px; }
+  .t26-word__input { border:none; border-bottom:2px solid var(--exam-color,#0a56c4); border-radius:4px 4px 0 0; background:rgba(10,86,196,.08); color:var(--ink,#1a2230); font:inherit; text-align:left; padding:.08em .14em .03em; }
   .t26-word__input:focus-visible { outline:3px solid #f59e0b; outline-offset:3px; }
   .t26-word__input[aria-invalid="true"] { border-bottom-color:#b42318; background:rgba(180,35,24,.08); }
   .t26-sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
@@ -1400,6 +1403,6 @@ const T26_CSS = `
   .t26-results__date { color:var(--muted,#687386); }
   .t26-results__actions { display:flex; flex-wrap:wrap; gap:.75rem; margin-top:1rem; }
   @media (max-width:640px) { .t26-results__grid { grid-template-columns:1fr; } .t26-no-clock { display:none; } }
-  @media (max-width:420px) { .t26-word .ielts-form__body { line-height:2.8; overflow-wrap:normal; } }
+  @media (max-width:420px) { .t26-word .ielts-form__body { font-size:1rem; line-height:2.85; overflow-wrap:normal; } .t26-word__wrap { margin-inline:.2em; } }
   @media (prefers-reduced-motion:reduce) { .t26-word *, .t26-technical, .t26-audio-blocked { transition-duration:.01ms!important; animation-duration:.01ms!important; scroll-behavior:auto!important; } }
 `;

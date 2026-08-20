@@ -45,6 +45,8 @@ assert.match(fixedFormSource, /\.slice\(0, 4\)/, 'the form preserves four fixed 
 assert.doesNotMatch(fixedFormSource, /answer:\s*question\.answer/, 'the public fixed adapter does not copy legacy keys');
 assert.match(clientSource, /mediaStatus === 'script-ready-audio-blocked'/, 'the preview exposes blocked media honestly');
 assert.match(clientSource, /\/api\/practica\/toefl\/listening\/score/, 'the runner closes presented Listening items through the server endpoint');
+assert.match(clientSource, /key=\{currentMediaId \?\? currentForwardItem\.question\.id\}/, 'each forward-only media item remounts with its own playback identity');
+assert.match(clientSource, /Omitir ítem sin audio y continuar/, 'blocked preview media has an explicit skip action');
 
 const labelsBySet = new Map();
 for (const privateSource of privateSources) {
