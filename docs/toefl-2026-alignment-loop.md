@@ -3570,6 +3570,10 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
   huecos compactos dentro de la oración, sin mover palabras ni respuestas. Chromium
   midió 26 px de alto en escritorio y 24 px en móvil; Tab avanzó 1→2, no hubo errores
   de consola y la vista 390 px quedó sin overflow. El checker CTW cubre la regresión.
+- El commit `ecf0b591` quedó en el preview protegido
+  `dpl_3HHzkaRN4rjaPAPyQ7B4WrVA5s6q`, estado `READY`. El build Vercel pasó catálogo,
+  Turbopack, TypeScript y 1.822/1.822 páginas; el alias estable de la rama apunta al
+  artefacto nuevo y Set 1 continúa protegido por SSO (302 sin sesión).
 - Estado: gate técnico del preview cerrado. Pendiente del owner: confirmar el espaciado
   de CTW, avanzar Listening del ítem 1 al 2 con un reproductor nuevo y verificar la
   omisión explícita cuando llegue a un medio realmente ausente. VoiceOver T16/T17 y

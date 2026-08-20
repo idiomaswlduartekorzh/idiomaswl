@@ -175,6 +175,11 @@ se conservan como evidencia.
   subrayados compactos: 26 px de alto en 1.440 px y 24 px en 390 px. Chromium verificó
   foco visible, Tab 1→2, consola sin errores y móvil sin overflow (390/390); el checker
   CTW impide reintroducir `font: inherit` y la altura genérica del input;
+- el commit limpio `ecf0b591` se publicó sólo como preview directo. El despliegue
+  `dpl_3HHzkaRN4rjaPAPyQ7B4WrVA5s6q` quedó `READY`: catálogo protegido PASS,
+  compilación Turbopack PASS en 2,2 minutos, TypeScript PASS, 1.822/1.822 páginas y
+  ruta `examenes/[exam]/practica/[mockId]` presente. El alias protegido estable apunta
+  a este artefacto y una petición anónima a Set 1 continúa recibiendo 302 al SSO;
 - ningún audio fue abierto, reproducido, transcrito, generado ni modificado.
 
 ## Gates para declarar “producto terminado”
