@@ -99,7 +99,7 @@ sí y ganan las dos menos.
 |---|---|---|---|
 | E8 ✅ | `puntaje-sat-universidades` | Intención altísima, decide la compra | Crimson, con un artículo bueno |
 | E9 ✅ | `sat-desde-colombia` | Búsqueda local y nuestra casa | Seeking English, contenido flojo |
-| E10 ⏸️ | SAT o ACT: cuál presentar | **Aplazada a propósito.** El ACT cambió de formato hace poco y no tenemos sus datos verificados contra `act.org`. Escribirla con lo que creemos recordar sería romper la primera regla de esta página | Agencias |
+| E10 ✅ | `sat-o-act` | Escrita el 20 ago 2026 tras verificar contra `act.org`. **La cautela valió la pena:** el ACT se rehízo por fases y el consejo clásico de «elige el ACT si eres bueno en ciencias» ya es falso — ciencia no entra en el compuesto | Agencias, con datos viejos |
 | E11 ✅ | `sat-toefl-ielts-diferencias` | **Tenemos los tres exámenes.** Nadie más puede enlazar así | Nadie lo cruza bien |
 
 ## 5. Reglas al escribir cualquiera de estas páginas

@@ -5,7 +5,7 @@ Las reglas están en `docs/sat-loop-nocturno.md`; los parámetros y umbrales, en
 `docs/sat-ingles-blueprint.md`.
 
 - **Rama:** `feat/red-agentes-sat-ingles`
-- **Última vuelta:** 35 · 20 ago 2026 · **FASE E TERMINADA.** El hub enseña las nueve guías; el guardián tiene siete puertas y se probó sembrándole un defecto
+- **Última vuelta:** 36 · 20 ago 2026 · **FASE E COMPLETA: diez páginas.** Se escribió la que faltaba (SAT o ACT) después de verificar el ACT contra su fuente
 - **Siguiente tarea:** decisión de David — publicar (merge a `main`). Y, cuando el árbol esté limpio, enganchar los dos guardianes al `prebuild`
 
 ---
@@ -83,7 +83,7 @@ Ramas — **movidas al espinazo el 20 ago 2026**, ver el porqué en el plan:
 
 - [x] **E8** · `puntaje-sat-universidades`
 - [x] **E9** · `sat-desde-colombia`
-- [ ] **E10** · ⏸️ SAT o ACT — **aplazada**: el ACT cambió de formato y no tenemos sus datos verificados contra `act.org`
+- [x] **E10** · `sat-o-act` — verificada contra `act.org`. La cautela estaba justificada: el ACT se rehízo por fases (ciencia opcional desde sept 2025 fuera de EE. UU.)
 - [x] **E11** · `sat-toefl-ielts-diferencias`
 
 Cierre:
@@ -102,6 +102,7 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
 
 | Vuelta | Tarea | Resultado | Commit |
 |---|---|---|---|
+| 36 | E10 · SAT o ACT | ✅ **Fase E completa: diez páginas.** Fui a `act.org` antes de escribir y la cautela de la vuelta 34 estaba justificada: el ACT se rehízo por fases —ciencia opcional desde sept 2025 fuera de EE. UU., compuesto solo con inglés/matemáticas/lectura, cambios de estructura en feb 2026—. **Eso tumba el consejo que repite media internet en español: «elige el ACT si eres bueno en ciencias».** Escribirla de memoria habría publicado ese error. Y el dato que nadie calcula: el ACT da 42 s por pregunta en inglés frente a los 71 s del SAT | (este bloque) |
 | 35 | E14 · cierre de la Fase E | ✅ El hub `/examenes/sat` enseña **las nueve guías** agrupadas en tres bloques; comprobado sobre el HTML generado. Antes solo se llegaba a una: **un clúster al que solo se entra por el sitemap es una lista de URLs, no un hub.** El guardián sube a siete puertas y se probó al revés —quitando el índice del hub a propósito— porque una puerta que nunca se ha visto fallar no sirve de nada | (este bloque) |
 | 34 | E8, E9, E11 | ✅ Nueve páginas en el clúster, las nueve en el sitemap y verificadas sobre el HTML. **Dos decisiones que cambian el plan:** las ramas van al espinazo y no al blog —`blog.ts` tiene trabajo sin commitear de otra sesión, y además concentrar todo bajo `/examenes/sat/` es mejor para un superhub—; y **E10 (SAT o ACT) se aplaza** porque el ACT cambió de formato y no tenemos sus datos verificados. El guardián volvió a cazar dos descripciones pasadas de 155 | (este bloque) |
 | 33 | E7 + E12 + E13 | ✅ Espinazo cerrado: seis páginas. El desglose por dominio del simulacro ya enlaza a la guía de ese dominio —y el mapa vive en `module-types.ts`, no en `satGuides.ts`, para no meter el texto de seis páginas en el paquete del navegador; **comprobado que no viaja**. **El guardián nuevo encontró cinco fallos en su primera pasada**: cinco descripciones pasadas de 155 caracteres que `check:seo-snippets` no mira. Vigila también que el sitemap siga derivando la lista de exámenes | (este bloque) |

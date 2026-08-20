@@ -159,7 +159,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
         a: 'Sí. Algunos textos vienen acompañados de una tabla, una gráfica de barras o una de líneas, y hay que leerla para responder. Aparecen sobre todo en Information and Ideas, en las preguntas de evidencia cuantitativa. No exigen matemáticas: exigen leer un dato y comprobar si sostiene lo que dice la opción.',
       },
     ],
-    relatedSlugs: ['craft-and-structure', 'information-and-ideas', 'standard-english-conventions', 'expression-of-ideas', 'como-estudiar-sat-desde-cero', 'puntaje-sat-universidades', 'sat-desde-colombia', 'sat-toefl-ielts-diferencias'],
+    relatedSlugs: ['craft-and-structure', 'information-and-ideas', 'standard-english-conventions', 'expression-of-ideas', 'como-estudiar-sat-desde-cero', 'puntaje-sat-universidades', 'sat-desde-colombia', 'sat-toefl-ielts-diferencias', 'sat-o-act'],
     related: [
       { href: '/examenes/sat/practica/set-1', label: 'Simulacro SAT · un módulo real', note: '27 preguntas en 32 minutos, con los cuatro dominios en la proporción del examen.' },
       { href: '/examenes/sat', label: 'Guía general del SAT', note: 'Qué es, cómo se puntúa, y dónde se consultan fechas y tarifas.' },
@@ -838,6 +838,94 @@ export const SAT_GUIDES: SatGuidePage[] = [
       { href: '/examenes/ielts', label: 'IELTS', note: 'La alternativa al TOEFL, aceptada por la mayoría de universidades de EE. UU.' },
     ],
     sources: FUENTES_BASE,
+    checked: '20 de agosto de 2026',
+    checkedISO: '2026-08-20',
+  },
+
+
+  {
+    slug: 'sat-o-act',
+    group: 'preparacion',
+    title: 'SAT o ACT: cuál te conviene presentar',
+    description: 'Las diferencias reales entre el SAT y el ACT después de los cambios del ACT: secciones, escala, ritmo por pregunta y cómo elegir desde Colombia.',
+    h1: 'SAT o ACT: cuál presentar',
+    eyebrow: 'Guía SAT · comparativa',
+    lead:
+      'Prácticamente todas las universidades de Estados Unidos aceptan <strong>el SAT o el ACT</strong> por igual, así que la pregunta no es cuál vale más, sino cuál se te da mejor a ti. Y la comparación que circula en español está desactualizada: <strong>el ACT cambió de formato por fases entre 2025 y 2026</strong> —la sección de ciencia pasó a ser opcional y el puntaje compuesto se calcula ahora solo con inglés, matemáticas y lectura—, así que el examen del que hablan la mitad de las guías ya no existe.',
+    sections: [
+      {
+        h: 'Lo que cambió en el ACT, y por qué importa para elegir',
+        body: [
+          'Si alguien te comparó el <strong>SAT</strong> con el <strong>ACT</strong> hace dos años, esa comparación ya no sirve. ACT rehízo su examen por fases: para quienes presentan fuera de Estados Unidos, en <strong>septiembre de 2025</strong> la sección de ciencia pasó a ser opcional y estrenó un puntaje compuesto nuevo, y en <strong>febrero de 2026</strong> llegaron los cambios de estructura —menos preguntas y secciones reorganizadas—.',
+          'El resultado: el <strong>puntaje compuesto del ACT se calcula ahora con inglés, matemáticas y lectura</strong>, y quien hace ciencia recibe además una nota propia de ciencia y una nota STEM. La escala sigue siendo de <strong>1 a 36</strong>. El argumento clásico de «elige el ACT si eres bueno en ciencias» se cayó con esto: ciencia ya no entra en el compuesto.',
+        ],
+      },
+      {
+        h: 'Las diferencias que de verdad cambian tu puntaje',
+        body: [
+          '<strong>La escala.</strong> El <strong>SAT</strong> va de 400 a 1600 —200 a 800 por sección, en saltos de diez—. El <strong>ACT</strong> va de 1 a 36. No hay conversión intuitiva entre las dos, y las universidades publican rangos en la escala del examen que recibieron.',
+          '<strong>Las secciones.</strong> El SAT tiene dos: Reading and Writing y Math. El ACT tiene tres que cuentan —inglés, matemáticas y lectura— más ciencia y redacción opcionales. Es decir: el ACT separa gramática (inglés) de comprensión (lectura), mientras que el SAT las mete en una sola sección.',
+          '<strong>Cómo llega el texto.</strong> En el SAT digital <strong>cada pregunta trae su propio texto corto</strong>, de 25 a 150 palabras. El ACT mantiene pasajes con varias preguntas colgando de cada uno. Si te agota saltar de tema en tema, el ACT te resulta más cómodo; si lo que te cuesta es sostener la atención en un texto largo, el SAT.',
+        ],
+      },
+      {
+        h: 'El ritmo: la diferencia que nadie mide y todo el mundo sufre',
+        body: [
+          'Esta es la comparación que casi ninguna guía hace y es la que más decide. Según la documentación de ACT, su sección de <strong>inglés son 50 preguntas en 35 minutos</strong>: <strong>42 segundos por pregunta</strong>. Lectura son 36 en 40 minutos y matemáticas 45 en 50, algo más de un minuto en ambos casos.',
+          'En el <strong>SAT</strong>, Reading and Writing da <strong>1,19 minutos por pregunta</strong> —un minuto y once segundos— y Math algo más. Traducido: <strong>el ACT es un examen más rápido</strong>, sobre todo en su sección de inglés. Si sabes las reglas pero necesitas releer para estar seguro, el SAT te trata mejor. Si decides rápido y te aburres, el ACT premia eso.',
+        ],
+      },
+      {
+        h: 'Cómo se elige de verdad: haciendo los dos',
+        body: [
+          'Ninguna tabla de comparación sustituye a la prueba. La forma en que se decide esto en cualquier proceso serio es <strong>hacer un examen de práctica de cada uno, cronometrado</strong>, y comparar no el porcentaje sino dos cosas: cuál te dejó terminar y en cuál te sentiste en tu terreno.',
+          'Dos avisos para que la comparación sea justa. Uno: hazlos en días distintos y con el mismo descanso, porque el segundo examen del mismo día siempre sale peor. Dos: no compares tus dos puntajes en bruto —las escalas no son comparables—, compara <strong>en cuál quedaste más cerca del rango que publica la universidad que te interesa</strong>. Ese es el único número que importa.',
+        ],
+      },
+      {
+        h: 'Qué pesa si presentas desde Colombia',
+        body: [
+          'Aquí hay un factor que no aparece en las comparativas escritas para estudiantes estadounidenses: <strong>la logística puede decidir por ti</strong>. Las sedes internacionales y las fechas disponibles de cada examen no coinciden, y viajar a otra ciudad entra en el presupuesto igual que la tarifa. Se comprueba en el buscador de centros de College Board para el <strong>SAT</strong> y en el sitio de ACT para el <strong>ACT</strong>, siempre para la fecha que te interesa.',
+          'Y una ventaja concreta del SAT para un hispanohablante que ya está preparando exámenes de inglés: sus cuatro dominios de Reading and Writing están documentados con mucho detalle y su material de práctica oficial es abundante y gratuito. Es más fácil saber exactamente qué estudiar. Nosotros, además, lo explicamos en español — que es la razón de que exista esta guía.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: '¿Las universidades prefieren el SAT o el ACT?',
+        a: 'Prácticamente todas las universidades de Estados Unidos aceptan cualquiera de los dos por igual y no piden uno en concreto. La elección es tuya y debería basarse en cuál se te da mejor, no en cuál crees que impresiona más. Si una universidad de tu lista tuviera una preferencia, lo diría en su página de admisiones.',
+      },
+      {
+        q: '¿Es verdad que el ACT tiene sección de ciencias?',
+        a: 'La tenía, y desde septiembre de 2025 para quienes presentan fuera de Estados Unidos es opcional: el puntaje compuesto del ACT se calcula ahora con inglés, matemáticas y lectura. Quien hace ciencia recibe una nota propia de ciencia y una nota STEM. Esto tumba el consejo clásico de elegir el ACT por ser bueno en ciencias.',
+      },
+      {
+        q: '¿Cuál de los dos exámenes es más rápido?',
+        a: 'El ACT, y sobre todo en su sección de inglés: 50 preguntas en 35 minutos, unos 42 segundos por pregunta. El SAT da 1,19 minutos por pregunta en Reading and Writing. Si necesitas releer para estar seguro, el SAT te trata mejor; si decides rápido, el ACT premia eso.',
+      },
+      {
+        q: '¿Cómo se comparan un puntaje de SAT y uno de ACT?',
+        a: 'No directamente: el SAT va de 400 a 1600 y el ACT de 1 a 36, y no hay una conversión intuitiva. La comparación útil no es entre tus dos puntajes sino entre cada uno y el rango que publica la universidad que te interesa en la escala correspondiente. Mira en cuál quedaste más cerca.',
+      },
+      {
+        q: '¿Puedo presentar los dos?',
+        a: 'Sí, y hacer un examen de práctica de cada uno es justamente la forma de decidir. Hazlos en días distintos y con el mismo descanso, porque el segundo examen del mismo día siempre sale peor y falsea la comparación. Presentar los dos exámenes oficiales también es posible, aunque duplica el costo y el tiempo de preparación.',
+      },
+      {
+        q: '¿Cuál conviene más si presento desde Colombia?',
+        a: 'Depende de dos cosas: cuál se te da mejor y qué logística tienes. Las sedes internacionales y las fechas de cada examen no coinciden, y viajar a otra ciudad entra en el presupuesto igual que la tarifa. Compruébalo para la fecha que te interesa antes de decidir, no después.',
+      },
+    ],
+    relatedSlugs: ['reading-and-writing', 'puntaje-sat-universidades', 'sat-desde-colombia', 'como-estudiar-sat-desde-cero'],
+    related: [
+      { href: '/examenes/sat/practica/set-1', label: 'Prueba el SAT antes de decidir', note: 'Un módulo cronometrado de 27 preguntas. Gratis y sin crear cuenta.' },
+    ],
+    sources: [
+      ...FUENTES_BASE,
+      { label: 'ACT — Cambios del examen para estudiantes de fuera de EE. UU.', url: 'https://global.act.org/content/global/en/products-and-services/the-act-non-us/test-preparation/test-enhancements.html' },
+      { label: 'ACT — Preguntas frecuentes sobre los cambios del examen', url: 'https://www.act.org/content/act/en/products-and-services/the-act-educator/the-act-test/enhancements-k12/faqs.html' },
+      { label: 'ACT — El examen ACT, cambios para estudiantes', url: 'https://www.act.org/content/act/en/products-and-services/the-act/test-changes/enhancements.html' },
+    ],
     checked: '20 de agosto de 2026',
     checkedISO: '2026-08-20',
   },
