@@ -99,11 +99,14 @@ Build a Sentence bruto, Writing construido `not_evaluated` y Speaking
 
 ## Gates todavía abiertos
 
+> Actualización 2026-08-20: el acta consolidada cerró VoiceOver T16/T17, sincronización
+> contra `origin/main`, preview Vercel `READY` y el gate funcional Listening. En este
+> último, Playwright confirmó 1/18→2/18 con reproductor reiniciado y 6/18→7/18 mediante
+> la omisión explícita de medio ausente, sin reproducir audio. La fuente vigente del
+> estado es `docs/toefl-2026-sets1-20-release-audit-2026-08-14.md`.
+
 - acta consolidada de contenido, scoring y release de Sets 1–20: cerrada en
   `docs/toefl-2026-sets1-20-release-audit-2026-08-14.md`;
-- VoiceOver humano T16 y T17;
-- actualización de la rama contra `origin/main` y repetición de guardianes;
-- preview Vercel editorial;
 - aprobación explícita de voces, muestra, costo y manifiesto de audio;
 - generación y QA únicamente del lote aprobado.
 

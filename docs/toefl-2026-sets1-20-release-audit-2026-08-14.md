@@ -204,7 +204,14 @@ se conservan como evidencia.
   con bypass autenticado y 302/SSO sin sesión;
 - José David Duarte Silva declaró **“voiceover ok”** el 2026-08-20 después de recibir
   los checklists T16 y T17. Ambas matrices quedan cerradas y sin pendiente humano;
-- ningún audio fue abierto, reproducido, transcrito, generado ni modificado.
+- Chromium/Playwright restauró Set 1 directamente en Listening Módulo 1 sin reproducir
+  audio. El ítem 1/18, marcado localmente como reproducción ya consumida, avanzó al
+  2/18; el segundo ítem montó un reproductor nuevo, volvió a desactivar respuestas y
+  avance, y conservó el aviso de escucha completa. En el ítem 6/18, primer medio
+  ausente, la UI mostró el estado bloqueado, desactivó sus opciones y el control
+  `Omitir ítem sin audio y continuar` avanzó al 7/18. Consola: cero errores; únicamente
+  avisos no bloqueantes de `preload` CSS;
+- ningún audio fue reproducido, escuchado, transcrito, generado ni modificado.
 
 ## Gates para declarar “producto terminado”
 
@@ -216,13 +223,12 @@ se conservan como evidencia.
 | VoiceOver T16/T17 | CERRADO | José David Duarte Silva aprobó ambos checklists con “voiceover ok” el 2026-08-20. |
 | Rama contra `origin/main` | CERRADO | `origin/main` `a6707877` está incorporado en `50d1ba6f`; 0 commits detrás, catálogo, TypeScript, build y guardianes TOEFL PASS. |
 | Build del preview Vercel | CERRADO | `dpl_Ch1VKomZPfWwTLSk8xCa75RNLaD2`, commit `1dd7b7e`, está `READY`; 1.834/1.834 páginas y Set 1 autenticado 200. El alias protegido apunta al artefacto. |
-| Revisión humana del preview | ABIERTO | Espaciado CTW y VoiceOver T16/T17 aprobados por el owner. Falta probar el avance Listening 1→2. La protección SSO no se debilitó. |
+| Revisión funcional y accesible del preview | CERRADO | Espaciado CTW y VoiceOver T16/T17 aprobados por el owner. Playwright confirmó Listening 1→2, reproductor reiniciado y omisión explícita 6→7 sin reproducir audio. La protección SSO no se debilitó. |
 | Aprobación de audio | ABIERTO | Manifiesto exacto, voces, muestra y costo; requiere autorización explícita. |
 | Generación y QA de audio | BLOQUEADO | Crear sólo el lote aprobado y luego revisar técnica, texto/voz y experiencia. |
 | Producción | BLOQUEADO | Requiere cierre de todos los gates anteriores y autorización separada. |
 
 Conclusión: los 20 simulacros y el arreglo están **desplegados en un preview técnico
-pre-audio `READY` para revisión del owner**. Aún no están listos para venderse o
-desplegarse en producción como producto terminado: falta la comprobación humana del
-avance Listening y después el gate separado de manifiesto, voces, muestra, costo,
-generación y QA de los 400 audios.
+pre-audio `READY` con los gates no-audio cerrados**. Aún no están listos para venderse
+o desplegarse en producción como producto terminado: falta el gate separado de
+manifiesto, voces, muestra, costo, generación y QA de los 400 audios.

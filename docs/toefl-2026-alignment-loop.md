@@ -3628,3 +3628,21 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
 - Queda abierto únicamente el control humano de avance Listening 1→2 antes de presentar
   el manifiesto, voces, muestra y costo de los 400 audios. No se generó ni modificó
   audio.
+
+### Gate funcional Listening cerrado sin reproducir audio — 2026-08-20
+
+- Por instrucción del owner de continuar sin dedicar tiempo a una prueba manual,
+  Chromium/Playwright restauró una sesión local de Set 1 directamente en Listening
+  Módulo 1. El estado de reproducción única se marcó en `localStorage`; no se pulsó
+  Play ni se invocó reproducción.
+- En el ítem 1/18, el botón `Confirmar y siguiente ítem` avanzó al 2/18. El ítem 2
+  montó un reproductor nuevo, anunció `press play to begin`, mantuvo desactivadas sus
+  cuatro respuestas y volvió a desactivar el avance hasta completar su propio medio.
+- En el ítem 6/18, primer medio pendiente, la UI anunció el bloqueo editorial,
+  mantuvo las opciones desactivadas y expuso `Omitir ítem sin audio y continuar`.
+  El control avanzó al 7/18 y el foco accesible quedó en el nuevo título.
+- Consola: cero errores. Los únicos avisos fueron `preload` CSS no bloqueantes. No se
+  escuchó, transcribió, generó ni modificó audio, y producción permaneció intacta.
+- Resultado: queda cerrado el último gate no-audio. La siguiente unidad permitida es
+  preparar para aprobación separada el manifiesto exacto, voces, muestra y costo de
+  los 400 audios; **no** autoriza todavía generarlos ni publicar en producción.
