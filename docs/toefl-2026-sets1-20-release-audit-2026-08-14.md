@@ -189,6 +189,15 @@ se conservan como evidencia.
   los ocho guardianes TOEFL, 44/44 pruebas, TypeScript y ESLint dirigido. El build de
   producción con Webpack compiló en 104 s, terminó TypeScript en 63 s y generó
   1.834/1.834 páginas, incluida la ruta dinámica de los simulacros;
+- `main` avanzó otra vez durante la cola de Vercel. `a6707877` se incorporó sin
+  conflictos en `50d1ba6f`; la rama quedó nuevamente 0 commits detrás. Los ocho
+  guardianes TOEFL, 44/44 pruebas, TypeScript, catálogo, guardianes globales, IELTS,
+  SAT y el build Webpack de 1.834/1.834 páginas volvieron a pasar;
+- Vercel retiró antes de compilar los intentos reconciliados Git
+  `dpl_BFxacEDNESe67QAprZwGnJw6K8KD` y directo
+  `dpl_13NNLoLdYLag9e9g44TUyBjigi2p` al entrar una producción y dos previews IELTS.
+  No existe un fallo de aplicación asociado. El alias estable TOEFL sigue sirviendo
+  el preview anterior aprobado `dpl_3HHzkaRN4rjaPAPyQ7B4WrVA5s6q` como `READY`;
 - ningún audio fue abierto, reproducido, transcrito, generado ni modificado.
 
 ## Gates para declarar “producto terminado”
@@ -199,8 +208,8 @@ se conservan como evidencia.
 | Runner, clocks y resultados honestos | CERRADO | Pruebas y build pasan. |
 | Producción local de las 20 rutas | CERRADO | Smoke 20/20 pasa. |
 | VoiceOver T16/T17 | ABIERTO | Revisión humana del owner en Build, Email y Discussion. |
-| Rama contra `origin/main` | CERRADO | `origin/main` `b5e615cb` está incorporado en `d16a75bb`; 0 commits detrás, catálogo, TypeScript y guardianes TOEFL PASS. |
-| Build del preview Vercel | CERRADO | `dpl_CC274qEYiqZWye8rWZMEXqBPy29a` está `READY`; build exacto, TypeScript y 1.822 páginas PASS. El alias protegido de la rama apunta al arreglo. |
+| Rama contra `origin/main` | CERRADO | `origin/main` `a6707877` está incorporado en `50d1ba6f`; 0 commits detrás, catálogo, TypeScript, build y guardianes TOEFL PASS. |
+| Build del preview Vercel | ABIERTO | El alias protegido conserva `dpl_3HHzkaRN4rjaPAPyQ7B4WrVA5s6q` `READY`, pero Vercel retiró los dos intentos del snapshot reconciliado antes de compilar al reorganizar la cola. Reintentar en una ventana libre. |
 | Revisión humana del preview | ABIERTO | Espaciado CTW aprobado por el owner. Falta probar el avance Listening 1→2 y aprobar T16/T17 con VoiceOver. La protección SSO no se debilitó. |
 | Aprobación de audio | ABIERTO | Manifiesto exacto, voces, muestra y costo; requiere autorización explícita. |
 | Generación y QA de audio | BLOQUEADO | Crear sólo el lote aprobado y luego revisar técnica, texto/voz y experiencia. |

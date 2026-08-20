@@ -3596,3 +3596,21 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
   TOEFL está presente.
 - Ningún audio fue abierto, reproducido, transcrito, generado ni modificado. La vista
   previa reconciliada sigue siendo el próximo gate técnico antes de T16/T17.
+
+### Segunda reconciliación por avance concurrente de `main` — 2026-08-20
+
+- Mientras Vercel mantenía el preview en cola, `main` avanzó de nuevo con trabajo de
+  IELTS y SAT. Se incorporó `origin/main` `a6707877` mediante `50d1ba6f`, sin
+  conflictos y con la identidad firmante del owner. La rama quedó otra vez 0 commits
+  detrás de `main`.
+- Sobre ese punto exacto volvieron a pasar los 16 comandos TOEFL —ocho guardianes y
+  44/44 pruebas—, TypeScript, catálogo 465, guardianes globales, 24 series, 480 MP3,
+  IELTS y SAT. Webpack compiló, terminó TypeScript y generó 1.834/1.834 páginas,
+  incluida `/examenes/[exam]/practica/[mockId]`.
+- Vercel retiró antes de compilar tanto el intento Git `dpl_BFxacEDNESe67QAprZwGnJw6K8KD`
+  como el directo `dpl_13NNLoLdYLag9e9g44TUyBjigi2p` cuando entraron una nueva
+  producción y dos previews de IELTS. No fue un error del código. El alias TOEFL
+  estable conserva el preview anterior aprobado `dpl_3HHzkaRN4rjaPAPyQ7B4WrVA5s6q`
+  en estado `READY`; publicar el snapshot reconciliado queda pendiente de una ventana
+  libre en la cola.
+- Producción y audios TOEFL siguen intactos.
