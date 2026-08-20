@@ -6,6 +6,7 @@ import type { StudentRow } from './StudentList'
 import type { StudentPlan } from '@/lib/actions/assignPlan'
 import type { StudentSubject } from '@/lib/actions/inviteStudent'
 import { EXAMS } from '@/data/exams'
+import type { FullAssessment } from '@/lib/labs/types'
 
 export interface ExamSubmission {
   id: string
@@ -31,6 +32,8 @@ export interface ExamSubmission {
   listening_band?: number | null
   writing_band?: number | null
   speaking_band?: number | null
+  writing_task1_assessment?: FullAssessment | null
+  writing_task2_assessment?: FullAssessment | null
   reviewed_at?: string | null
   reviewed_by?: string | null
 }
@@ -57,7 +60,7 @@ export interface DashboardData {
   perExam: { exam_slug: string; exam_name: string; count: number }[]
   recentSubmissions: ExamSubmission[]
   topUsers: { user_email: string; count: number }[]
-  pendingIelts: ExamSubmission[]
+  ieltsReviews: ExamSubmission[]
   students: StudentRow[]
   /** Leads de TODOS los simulacros (ICFES, SAT, IELTS, TOPIK...), no solo ICFES. */
   leads: LeadRow[]
@@ -158,10 +161,11 @@ export default async function JoseDashboardServer() {
     .sort((a, b) => b.count - a.count)
     .slice(0, 5)
 
-  // All exams with written/speaking responses pending review
-  const pendingIelts = rows.filter(r =>
-    (r.writing_band == null || r.speaking_band == null) &&
-    (r.writing_task1_answer || r.writing_task2_answer || r.speaking_answers)
+  // IELTS review history stays visible after correction. The client panel owns
+  // the Pending/Reviewed filter, so an evaluated student never disappears.
+  const ieltsReviews = rows.filter(r =>
+    r.exam_slug === 'ielts' &&
+    Boolean(r.writing_task1_answer || r.writing_task2_answer || r.speaking_answers || r.speaking_audio_paths)
   )
 
   // ── Students list ────────────────────────────────────────────────────────────
@@ -227,7 +231,7 @@ export default async function JoseDashboardServer() {
     perExam,
     recentSubmissions: rows.slice(0, 10),
     topUsers,
-    pendingIelts,
+    ieltsReviews,
     students,
     leads,
   }

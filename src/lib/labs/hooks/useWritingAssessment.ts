@@ -9,6 +9,7 @@
 
 import { useEffect, useState } from 'react';
 import type { FullAssessment } from '../types';
+import type { IeltsSubmissionReceipt } from '@/lib/ielts/review-blueprint';
 
 export type AssessmentState = 'loading' | 'success' | 'saturated' | 'unavailable';
 
@@ -24,6 +25,7 @@ export function useWritingAssessment(
   mockId:     string,
   taskNumber: 1 | 2 | 3 | 4,
   essay:      string,
+  receipt?:   IeltsSubmissionReceipt | null,
 ): UseWritingAssessmentResult {
   const [state, setState] = useState<AssessmentState>(() => (essay.trim() ? 'loading' : 'unavailable'));
   const [result, setResult] = useState<FullAssessment | null>(null);
@@ -35,7 +37,7 @@ export function useWritingAssessment(
     fetch('/api/labs/exam-writing-assess', {
       method:  'POST',
       headers: { 'content-type': 'application/json' },
-      body:    JSON.stringify({ examSlug, mockId, taskNumber, essay }),
+      body:    JSON.stringify({ examSlug, mockId, taskNumber, essay, receipt: receipt ?? undefined }),
     })
       .then(async (res) => {
         if (cancelled) return;

@@ -15,6 +15,7 @@ import { saveExamResult } from '@/lib/actions/saveExamResult';
 import { isFreeIeltsMock } from '@/lib/labs/exam-bridge/ielts';
 import { useWritingAssessment } from '@/lib/labs/hooks/useWritingAssessment';
 import { IELTS_MOCK4_ID } from '@/lib/ielts/mock4-submission';
+import type { IeltsSubmissionReceipt } from '@/lib/ielts/review-blueprint';
 import {
   Timer, AudioPlayer, SkillTabs,
   countWords, isCorrect, blankKey,
@@ -599,8 +600,8 @@ function scoreSection(section: MockSection, ans: AllAnswers): number {
 
 // ── IELTSResults — new admin-review flow ─────────────────────────────────────
 
-function IELTSResults({ mock, exam, ans, onRetry }: {
-  mock: MockExam; exam: Exam; ans: AllAnswers; onRetry: ()=>void;
+function IELTSResults({ mock, exam, ans, receipt, onRetry }: {
+  mock: MockExam; exam: Exam; ans: AllAnswers; receipt: IeltsSubmissionReceipt | null; onRetry: ()=>void;
 }) {
   const savedRef = useRef(false);
   // Lazy init (no useEffect): esta vista solo se monta tras terminar el
@@ -646,8 +647,8 @@ function IELTSResults({ mock, exam, ans, onRetry }: {
   const writingEnabled = writeQs.length > 0 && isFreeIeltsMock(mock.id);
   const task1Essay = writingEnabled && task1 ? (ans.write[task1.id] ?? '').trim() : '';
   const task2Essay = writingEnabled && task2 ? (ans.write[task2.id] ?? '').trim() : '';
-  const task1Assessment = useWritingAssessment('ielts', mock.id, 1, task1Essay);
-  const task2Assessment = useWritingAssessment('ielts', mock.id, 2, task2Essay);
+  const task1Assessment = useWritingAssessment('ielts', mock.id, 1, task1Essay, receipt);
+  const task2Assessment = useWritingAssessment('ielts', mock.id, 2, task2Essay, receipt);
 
   // Peso oficial IELTS: Task 2 cuenta el doble que Task 1.
   const writingBand = (task1Assessment.state === 'success' && task2Assessment.state === 'success')
@@ -942,6 +943,7 @@ type Phase = 'intro'|'exam'|'submit'|'results';
 
 export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: MockExam }) {
   const [phase, setPhase] = useState<Phase>('intro');
+  const [submissionReceipt, setSubmissionReceipt] = useState<IeltsSubmissionReceipt | null>(null);
 
   const comingSoonSkills = new Set(
     mock.sections.filter(s=>s.comingSoon).map(s=>s.skill).filter(Boolean) as string[]
@@ -1008,6 +1010,7 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
     setRecordings({});
     setRecordingIds(new Set());
     setFinishError('');
+    setSubmissionReceipt(null);
     setActiveSkill(firstActiveSkill); setPhase('intro');
   },[firstActiveSkill]);
 
@@ -1025,7 +1028,7 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
   if (phase==='results') {
     return (
       <div className="prac-shell">
-        <IELTSResults mock={mock} exam={exam} ans={ans} onRetry={handleRetry} />
+        <IELTSResults mock={mock} exam={exam} ans={ans} receipt={submissionReceipt} onRetry={handleRetry} />
       </div>
     );
   }
@@ -1050,7 +1053,10 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
           speakingNotes={Object.fromEntries(speakingQuestions.map(question=>[question.id,ans.speak[question.id]??'']))}
           recordings={recordings}
           onBack={()=>setPhase('exam')}
-          onSuccess={()=>setPhase('results')}
+          onSuccess={(receipt)=>{
+            setSubmissionReceipt(receipt);
+            setPhase('results');
+          }}
         />
       </div>
     );
