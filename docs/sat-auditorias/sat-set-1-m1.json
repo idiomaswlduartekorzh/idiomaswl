@@ -48,7 +48,8 @@
   "quedaAbierto": [
     "Dos ítems (q06, q14) siguen por encima del umbral por ítem en la última medición, con la media muy por debajo. Anotados para una pasada futura.",
     "El motor no hace adaptatividad entre módulos ni conversión a escala 200-800. El hub lo declara por escrito, pero la PANTALLA DE RESULTADOS NO: muestra un porcentaje con el rótulo «sobre 100 puntos», que es la escala del ICFES y no la del SAT. La versión anterior de esta acta afirmaba que la pantalla lo decía; era falso y se afirmó sin comprobarlo. Lo detectaron dos auditores de producto independientes el 19 ago 2026. Bloquea la publicación.",
-    "Auditoría de producto (19 ago 2026): el contenido es APTO pero el PRODUCTO no es publicable. Dos bloqueantes técnicos —los leads del SAT se guardan como leads de ICFES y son invisibles en el panel; y en móvil los 27 textos se recortan a 340 px, ocultando el hueco de la pregunta en cinco ítems—. Informe en docs/sat-auditorias/informes/."
+    "Auditoría de producto (19 ago 2026): el contenido es APTO pero el PRODUCTO no es publicable. Dos bloqueantes técnicos —los leads del SAT se guardan como leads de ICFES y son invisibles en el panel; y en móvil los 27 textos se recortan a 340 px, ocultando el hueco de la pregunta en cinco ítems—. Informe en docs/sat-auditorias/informes/.",
+    "CONVERSIÓN AL FORMATO DE COMPLETAR (20 ago 2026). q01, q02 y q03 se reescribieron: pasan de «As used in the text, what does the word X most nearly mean?» a «Which choice completes the text with the most logical and precise word?», que es el formato dominante de vocabulario en el SAT digital y del que el módulo carecía por completo — lo señaló el profesor de SAT en la auditoría de producto. Se conservan los tres textos, las tres claves y las tres letras (B, D, A), así que ni el reparto de letras ni la curva de dificultad se mueven. q04 se deja en la forma antigua a propósito: el examen real usa las dos, y forzar la cuarta conversión abría una segunda clave defendible (belabor / render), que es puerta eliminatoria."
   ],
   "publicable": true,
   "bloqueantesDeProducto": [],
@@ -73,5 +74,54 @@
     "abiertoParaDecision": [
       "Faltan los ítems de completar hueco, que en el SAT digital son el formato dominante de vocabulario; los cuatro nuestros usan «qué significa esta palabra». Arreglarlo son cuatro ítems nuevos y la cadena de auditoría entera. Recomendación: hacerlo en el segundo módulo."
     ]
+  },
+  "huellas": {
+    "q01": "f598c8132ef7",
+    "q02": "6a6088add62b",
+    "q03": "61ae241586c3",
+    "q04": "aa0646ffe1b5",
+    "q05": "5d1bf22ab5e0",
+    "q06": "d781b10bf330",
+    "q07": "1ac6fb072203",
+    "q08": "1babd5d1d488",
+    "q09": "fb3e863f5432",
+    "q10": "e252fe99df39",
+    "q11": "0847ac74c03e",
+    "q12": "55c7a00a756e",
+    "q13": "6f877127d3f4",
+    "q14": "cf19539d7765",
+    "q15": "680106714c97",
+    "q16": "adc5408367bf",
+    "q17": "d26fc4bde210",
+    "q18": "acce00d897a9",
+    "q19": "6cbc69dbb50e",
+    "q20": "acef60a1a973",
+    "q21": "191509250d72",
+    "q22": "a8d62a83b232",
+    "q23": "1a2e02b22f34",
+    "q24": "0317ac74da15",
+    "q25": "996f60a061a8",
+    "q26": "8b348c075f23",
+    "q27": "d3ea741de480"
+  },
+  "notaSobreLasHuellas": "Cada huella resume el enunciado, las opciones, la clave y el texto de un ítem tal y como estaban el día que se firmó esta acta. El guardián las recalcula sobre el contenido de hoy y se pone rojo si alguna no coincide. Existe porque hasta el 20 ago 2026 se podía cambiar un ítem después de firmar y las doce puertas seguían en verde: el acta certificaba unos ítems que ya no existían, y lo hacía en silencio.",
+  "reauditacionPendiente": {
+    "items": [
+      "q01",
+      "q02",
+      "q03"
+    ],
+    "porQue": "Regla R2 del blueprint: arreglar un ítem lo convierte en un ítem nuevo. Tres de los 27 son nuevos.",
+    "yaVerificado": [
+      "Las doce puertas mecánicas del guardián sobre el módulo completo (reparto de letras, solape léxico, longitudes, absolutos, mezcla de dominios, orden y curva).",
+      "tsc limpio y build en verde.",
+      "En la extracción a ciegas los tres ítems quedan SIN ninguna frase: el formato de completar borra el contexto entero al quitar el texto, mientras que la forma antigua dejaba la palabra objetivo dentro del enunciado. Estructuralmente es la posición más fuerte posible para la puerta 6."
+    ],
+    "sinHacer": [
+      "PANEL A CIEGAS de 16 solucionadores sobre el módulo en su forma de hoy. La cifra vigente (23,1 %) es de la versión anterior de estos tres ítems.",
+      "AUDITORÍA DE CLAVE ÚNICA independiente sobre q01, q02 y q03. Quien los diseñó no puede auditarlos a ciegas: es la misma cabeza.",
+      "Auditoría de lengua sobre las cuatro opciones nuevas de cada uno."
+    ],
+    "consecuencia": "Hasta que esas tres corran, el acta NO cubre q01-q03 y el guardián lo dice. No se publica."
   }
 }

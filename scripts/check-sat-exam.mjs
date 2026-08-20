@@ -3,6 +3,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import vm from 'node:vm'
 import process from 'node:process'
+import crypto from 'node:crypto'
 import { createRequire } from 'node:module'
 import { fileURLToPath } from 'node:url'
 
@@ -338,6 +339,33 @@ function checkModule(mod) {
       if (e && e.banderas > 0) fail(id, '10 equidad', `${e.banderas} banderas de equidad sin resolver`)
       if (o && o.banderasRojas > 0) fail(id, '11 originalidad', `${o.banderasRojas} banderas rojas de originalidad; esto detiene el lote entero`)
       if (a.veredicto !== 'APTO') fail(id, 'veredicto', `el acta dice ${a.veredicto}`)
+
+      // ── El acta tiene que certificar ESTE contenido, no el de la semana pasada ──
+      //
+      // Sin esto, cambiar un ítem después de firmar dejaba las doce puertas en verde
+      // sobre un acta que ya no describía lo que hay: el guardián certificaba unos
+      // ítems que habían dejado de existir, y lo hacía en silencio, que es la peor
+      // forma. La huella cubre lo que un auditor mira —enunciado, opciones y clave—;
+      // el texto fuente va aparte porque tiene su propia puerta de originalidad.
+      const huellas = Object.fromEntries(
+        items.map((q) => [
+          q.id,
+          crypto.createHash('sha256')
+            .update(JSON.stringify({ t: q.text, o: q.options, a: q.answer, s: q.stimulus ?? '' }))
+            .digest('hex').slice(0, 12),
+        ]),
+      )
+      if (!a.huellas) {
+        fail(id, 'acta caducada', 'el acta no registra QUÉ contenido firmó (falta «huellas»): no se puede saber si sigue describiendo lo que hay')
+      } else {
+        for (const [qid, h] of Object.entries(huellas)) {
+          if (!a.huellas[qid]) fail(id, 'acta caducada', `${qid} no aparece en el acta: es un ítem que nadie ha auditado`)
+          else if (a.huellas[qid] !== h) fail(id, 'acta caducada', `${qid} ha cambiado desde que se firmó el acta (${a.huellas[qid]} → ${h}): hay que reauditarlo, no reetiquetarlo`)
+        }
+        for (const qid of Object.keys(a.huellas)) {
+          if (!huellas[qid]) warn(id, 'acta caducada', `el acta firma ${qid}, que ya no está en el módulo`)
+        }
+      }
       // El acta certifica el CONTENIDO. Que el producto se pueda publicar es otra puerta, y
       // la enseñó una auditoría de producto que encontró el embudo de leads roto y los textos
       // recortados en móvil con el contenido ya en APTO. Un módulo impecable dentro de un
