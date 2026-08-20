@@ -28,10 +28,8 @@ export interface IeltsMock4PreparedUpload {
   token: string;
 }
 
-export interface IeltsMock4PrepareResponse {
+export interface IeltsMock4PrepareResponse extends IeltsSubmissionReceipt {
   ok: true;
-  submissionId: string;
-  completionToken: string;
   uploads: IeltsMock4PreparedUpload[];
 }
 
@@ -39,3 +37,4 @@ export interface IeltsMock4CompleteResponse {
   ok: true;
   submissionId: string;
 }
+import type { IeltsSubmissionReceipt } from './review-blueprint';

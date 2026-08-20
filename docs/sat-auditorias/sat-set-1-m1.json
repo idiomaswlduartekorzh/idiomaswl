@@ -1,6 +1,6 @@
 {
   "modulo": "sat-set-1-m1",
-  "fecha": "2026-08-19",
+  "fecha": "2026-08-20",
   "auditorias": {
     "clave": {
       "agente": "sat-key-auditor",
@@ -48,7 +48,8 @@
   "quedaAbierto": [
     "Dos ítems (q06, q14) siguen por encima del umbral por ítem en la última medición, con la media muy por debajo. Anotados para una pasada futura.",
     "El motor no hace adaptatividad entre módulos ni conversión a escala 200-800. El hub lo declara por escrito, pero la PANTALLA DE RESULTADOS NO: muestra un porcentaje con el rótulo «sobre 100 puntos», que es la escala del ICFES y no la del SAT. La versión anterior de esta acta afirmaba que la pantalla lo decía; era falso y se afirmó sin comprobarlo. Lo detectaron dos auditores de producto independientes el 19 ago 2026. Bloquea la publicación.",
-    "Auditoría de producto (19 ago 2026): el contenido es APTO pero el PRODUCTO no es publicable. Dos bloqueantes técnicos —los leads del SAT se guardan como leads de ICFES y son invisibles en el panel; y en móvil los 27 textos se recortan a 340 px, ocultando el hueco de la pregunta en cinco ítems—. Informe en docs/sat-auditorias/informes/."
+    "Auditoría de producto (19 ago 2026): el contenido es APTO pero el PRODUCTO no es publicable. Dos bloqueantes técnicos —los leads del SAT se guardan como leads de ICFES y son invisibles en el panel; y en móvil los 27 textos se recortan a 340 px, ocultando el hueco de la pregunta en cinco ítems—. Informe en docs/sat-auditorias/informes/.",
+    "CONVERSIÓN AL FORMATO DE COMPLETAR (20 ago 2026). q01, q02 y q03 se reescribieron: pasan de «As used in the text, what does the word X most nearly mean?» a «Which choice completes the text with the most logical and precise word?», que es el formato dominante de vocabulario en el SAT digital y del que el módulo carecía por completo — lo señaló el profesor de SAT en la auditoría de producto. Se conservan los tres textos, las tres claves y las tres letras (B, D, A), así que ni el reparto de letras ni la curva de dificultad se mueven. q04 se deja en la forma antigua a propósito: el examen real usa las dos, y forzar la cuarta conversión abría una segunda clave defendible (belabor / render), que es puerta eliminatoria."
   ],
   "publicable": true,
   "bloqueantesDeProducto": [],
@@ -72,6 +73,76 @@
     ],
     "abiertoParaDecision": [
       "Faltan los ítems de completar hueco, que en el SAT digital son el formato dominante de vocabulario; los cuatro nuestros usan «qué significa esta palabra». Arreglarlo son cuatro ítems nuevos y la cadena de auditoría entera. Recomendación: hacerlo en el segundo módulo."
+    ]
+  },
+  "huellas": {
+    "q01": "f598c8132ef7",
+    "q02": "b86f49835d3e",
+    "q03": "d007688bdb29",
+    "q04": "aa0646ffe1b5",
+    "q05": "5d1bf22ab5e0",
+    "q06": "d781b10bf330",
+    "q07": "1ac6fb072203",
+    "q08": "1babd5d1d488",
+    "q09": "fb3e863f5432",
+    "q10": "e252fe99df39",
+    "q11": "0847ac74c03e",
+    "q12": "55c7a00a756e",
+    "q13": "6f877127d3f4",
+    "q14": "cf19539d7765",
+    "q15": "680106714c97",
+    "q16": "adc5408367bf",
+    "q17": "d26fc4bde210",
+    "q18": "acce00d897a9",
+    "q19": "6cbc69dbb50e",
+    "q20": "acef60a1a973",
+    "q21": "191509250d72",
+    "q22": "a8d62a83b232",
+    "q23": "1a2e02b22f34",
+    "q24": "0317ac74da15",
+    "q25": "996f60a061a8",
+    "q26": "8b348c075f23",
+    "q27": "d3ea741de480"
+  },
+  "notaSobreLasHuellas": "Cada huella resume el enunciado, las opciones, la clave y el texto de un ítem tal y como estaban el día que se firmó esta acta. El guardián las recalcula sobre el contenido de hoy y se pone rojo si alguna no coincide. Existe porque hasta el 20 ago 2026 se podía cambiar un ítem después de firmar y las doce puertas seguían en verde: el acta certificaba unos ítems que ya no existían, y lo hacía en silencio.",
+  "completarElHueco": {
+    "fecha": "2026-08-20",
+    "porQue": "El profesor de SAT señaló en la auditoría de producto que faltaba el formato dominante de vocabulario del SAT digital: el de completar el hueco. Los cuatro ítems de Words in Context usaban «As used in the text, what does the word X most nearly mean?».",
+    "resultado": "q02 y q03 pasan al formato de completar y quedan APTO. q01 y q04 se quedan en la forma antigua. El examen real usa las dos, así que dos de cuatro es una mezcla defendible.",
+    "q01": {
+      "queSePaso": "Se convirtió, se midió y se revirtió a su forma firmada. En la primera versión 12 de 14 solucionadores lo acertaban SIN el texto; se rehicieron las opciones y subió a 9 de 10 —los diez marcando la misma letra—.",
+      "diagnostico": "El auditor de clave lo nombró mejor que el redactor: al quitar el distractor muerto («tolerates») se metió un sinónimo de otro distractor («harbors» junto a «shelters»), y dos sinónimos se cancelan entre sí. Eso deja «sustains» contra «attracts», y sustains gana sin leer nada. El atajo pasó de frecuente a mecánico.",
+      "leccionParaElBlueprint": "En un ítem de completar sobre un hábitat, el verbo semánticamente más rico —sustains— es la respuesta que cualquiera adivina sin contexto. Arreglarlo no es cuestión de distractores: hay que escribir el pasaje de modo que la palabra rica sea la trampa y la llana sea la clave. Eso es un ítem nuevo, no un retoque.",
+      "decision": "Revertido a la versión firmada y medida. Se retoma en el módulo 2, con pasaje nuevo desde el principio."
+    },
+    "panelACiegas": {
+      "metodo": "Examen extraído sin los textos. Se descartan las respuestas que no traen exactamente 27 letras: los solucionadores baratos se descuentan al responder en bloque, y el formato numerado 1..27 lo corrige.",
+      "ronda1": {
+        "n": 14,
+        "media": "34,1 %",
+        "q01": "12/14",
+        "q02": "3/14",
+        "q03": "5/14"
+      },
+      "ronda2": {
+        "n": 10,
+        "media": "35,4 %",
+        "q01": "9/10 (los diez a la misma letra)",
+        "q02": "3/10",
+        "q03": "2/10"
+      },
+      "aviso": "Estas medias NO son comparables con el 23,1 % de la serie anterior: aquel panel era de 16 y con otra mezcla de solucionadores, y a varios de estos se les pidió expresamente que usaran heurísticas de quien no lee. Lo comparable es el recuento por ítem dentro de la misma ronda."
+    },
+    "auditoriasEjecutadas": [
+      "Clave a ciegas (ronda 1): q01 APTO con reservas, q02 NO APTO por distractor muerto («sprawled»), q03 NO APTO por dos opciones descartables sin leer («overcast», «tepid»).",
+      "Clave a ciegas (ronda 2, sobre los arreglos): q02 APTO, q03 APTO, q01 NO APTO por el par de sinónimos.",
+      "Lengua (ronda 1 y ronda 2 sobre la versión final): q02 y q03 APTO. Sin doble clave, sin regla inventada, sin hecho falso, sin uso británico ni calco.",
+      "Las tres auditorías resolvieron a ciegas y las tres coincidieron con las claves declaradas: cero claves en disputa."
+    ],
+    "abiertoYNoBloqueante": [
+      "q03: «Their support was qualified» tiene el sujeto plural más cercano en «Historians», no en los ingenieros. Se resuelve por sentido pero obliga a releer. No se toca ahora porque cambiar el texto convierte el ítem en uno nuevo y obliga a reauditar.",
+      "q03: «the three engineers it had hired» — «it» admite tres antecedentes (council, river port, Elmsford).",
+      "q02: la validez del ítem depende de la frase «Families in the lanes below could not see the bakery», que es la que mata «loomed». Nadie la toca en futuras rondas."
     ]
   }
 }

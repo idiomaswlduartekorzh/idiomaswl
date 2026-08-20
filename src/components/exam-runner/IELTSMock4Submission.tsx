@@ -10,6 +10,7 @@ import {
   type IeltsMock4SubmissionPayload,
 } from '@/lib/ielts/mock4-submission';
 import type { IeltsSpeakingRecording } from './IELTSSpeakingRecorder';
+import type { IeltsSubmissionReceipt } from '@/lib/ielts/review-blueprint';
 
 interface Props {
   readingBand: number;
@@ -19,7 +20,7 @@ interface Props {
   speakingNotes: Record<string, string>;
   recordings: Record<string, IeltsSpeakingRecording>;
   onBack: () => void;
-  onSuccess: () => void;
+  onSuccess: (receipt: IeltsSubmissionReceipt) => void;
 }
 
 type SubmitState = 'idle' | 'preparing' | 'uploading' | 'confirming';
@@ -173,7 +174,10 @@ export function IELTSMock4Submission({
           audio_count: recordedEntries.length,
         });
       } catch {}
-      onSuccess();
+      onSuccess({
+        submissionId: prepared.submissionId,
+        completionToken: prepared.completionToken,
+      });
     } catch (caught) {
       setState('idle');
       setError(errorMessage(caught));

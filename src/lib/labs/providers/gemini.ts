@@ -86,8 +86,7 @@ export async function assessWritingFree<TaskId extends string>(
 
   const wordCount = essay.trim().split(/\s+/).filter(Boolean).length;
 
-  const { key, model, endpoint } = providers.gemini;
-  const url = `${endpoint}/${model}:generateContent?key=${key}`;
+  const { key, model, fallbackModels, endpoint } = providers.gemini;
 
   const promptText = image
     ? `PREGUNTA DEL EXAMEN (el gráfico/tabla referido está en la imagen adjunta — obsérvalo con atención antes de evaluar):\n${prompt}\n\nEXTENSIÓN (ya contada, úsala tal cual): ${wordCount} palabras\n\nENSAYO DEL ESTUDIANTE:\n${essay}`
@@ -114,44 +113,71 @@ export async function assessWritingFree<TaskId extends string>(
 
   // El free tier está sobresuscrito y devuelve 503 ("high demand") de forma
   // intermitente. Google recomienda reintentar: un segundo intento recupera la
-  // mayoría de los casos y es más barato que perder al estudiante.
+  // mayoría de los casos. La cuota diaria se aplica por modelo; si el principal
+  // responde 429, pasamos a otro Flash con visión, nunca a un motor de texto que
+  // no pueda verificar las cifras del gráfico.
   let raw = '';
   let lastError: LabsError = { code: 'provider_error', message: 'El evaluador no respondió.' };
 
-  for (let attempt = 0; attempt < 2; attempt++) {
-    try {
-      const res = await fetch(url, {
-        method:  'POST',
-        headers: { 'content-type': 'application/json' },
-        body:    JSON.stringify(body),
-        // 45s se quedaba corto: un Task 2 completo ronda los 40–50s contra el
-        // free tier, y el corte caía justo encima. Ver docs/blueprint-labs-ia.md
-        signal:  AbortSignal.timeout(90_000),
-      });
-
-      if (res.status === 429) {
-        return { code: 'rate_limited', message: 'Cuota diaria del free tier agotada.' };
-      }
-      if (res.status === 503) {
-        console.error('[labs/gemini] 503 high demand, intento', attempt + 1);
-        lastError = {
-          code: 'provider_error',
-          message: 'El evaluador está saturado en este momento. Intenta de nuevo en un minuto.',
+  for (const candidateModel of [model, ...fallbackModels]) {
+    const url = `${endpoint}/${candidateModel}:generateContent?key=${key}`;
+    // Flash Lite soporta visión y responseSchema, pero rechaza thinkingConfig
+    // con HTTP 400. El modelo principal sí lo necesita para no consumir el
+    // timeout razonando antes de devolver el JSON.
+    const candidateBody = candidateModel === model
+      ? body
+      : {
+          ...body,
+          generationConfig: {
+            responseMimeType: body.generationConfig.responseMimeType,
+            responseSchema: body.generationConfig.responseSchema,
+            temperature: body.generationConfig.temperature,
+          },
         };
-        continue;
-      }
-      if (!res.ok) {
-        console.error('[labs/gemini]', res.status, await res.text().catch(() => ''));
-        return { code: 'provider_error', message: 'El evaluador no respondió.' };
-      }
 
-      const json = await res.json();
-      raw = json?.candidates?.[0]?.content?.parts?.[0]?.text ?? '';
-      break;
-    } catch (err) {
-      console.error('[labs/gemini] fetch intento', attempt + 1, err);
-      lastError = { code: 'provider_error', message: 'El evaluador tardó demasiado. Intenta de nuevo.' };
+    for (let attempt = 0; attempt < 2; attempt++) {
+      try {
+        const res = await fetch(url, {
+          method:  'POST',
+          headers: { 'content-type': 'application/json' },
+          body:    JSON.stringify(candidateBody),
+          // 45s se quedaba corto: un Task 2 completo ronda los 40–50s contra el
+          // free tier, y el corte caía justo encima. Ver docs/blueprint-labs-ia.md
+          signal:  AbortSignal.timeout(90_000),
+        });
+
+        if (res.status === 429) {
+          console.error('[labs/gemini] cuota agotada para', candidateModel);
+          lastError = { code: 'rate_limited', message: 'Cuota diaria del free tier agotada.' };
+          break;
+        }
+        if (res.status === 503) {
+          console.error('[labs/gemini] 503 high demand en', candidateModel, 'intento', attempt + 1);
+          lastError = {
+            code: 'provider_error',
+            message: 'El evaluador está saturado en este momento. Intenta de nuevo en un minuto.',
+          };
+          continue;
+        }
+        if (!res.ok) {
+          console.error('[labs/gemini]', candidateModel, res.status, await res.text().catch(() => ''));
+          lastError = { code: 'provider_error', message: 'El evaluador no respondió.' };
+          break;
+        }
+
+        const json = await res.json();
+        raw = json?.candidates?.[0]?.content?.parts?.[0]?.text ?? '';
+        if (!raw) {
+          lastError = { code: 'provider_error', message: 'El evaluador no respondió.' };
+        }
+        break;
+      } catch (err) {
+        console.error('[labs/gemini] fetch', candidateModel, 'intento', attempt + 1, err);
+        lastError = { code: 'provider_error', message: 'El evaluador tardó demasiado. Intenta de nuevo.' };
+      }
     }
+
+    if (raw) break;
   }
 
   if (!raw) return lastError;

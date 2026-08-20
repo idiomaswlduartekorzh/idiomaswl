@@ -1,4 +1,4 @@
-import { createHmac, randomUUID, timingSafeEqual } from 'node:crypto';
+import { randomUUID } from 'node:crypto';
 import { createAdminClient } from '@/lib/supabase/admin';
 import { createClient } from '@/lib/supabase/server';
 import { checkRateLimit, pruneExpired } from '@/lib/labs/rate-limit';
@@ -9,6 +9,12 @@ import {
   type IeltsMock4SpeakingId,
   type IeltsMock4SubmissionPayload,
 } from '@/lib/ielts/mock4-submission';
+import { buildIeltsScoreSummary } from '@/lib/ielts/scoring';
+import {
+  createIeltsSubmissionToken,
+  IELTS_SUBMISSION_ID_PATTERN,
+  verifyIeltsSubmissionToken,
+} from '@/lib/ielts/submission-token.server';
 
 export const runtime = 'nodejs';
 
@@ -23,7 +29,6 @@ const ALLOWED_MIME_TYPES = new Set([
   'audio/wav',
   'audio/x-m4a',
 ]);
-const UUID_PATTERN = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 
 interface ErrorResponse {
   ok: false;
@@ -125,33 +130,6 @@ function extensionForMime(mimeType: string): string {
   return 'webm';
 }
 
-function signingSecret(): string {
-  const secret = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  if (!secret) throw new Error('Missing SUPABASE_SERVICE_ROLE_KEY');
-  return secret;
-}
-
-function createCompletionToken(submissionId: string): string {
-  const expiresAt = Math.floor(Date.now() / 1000) + 2 * 60 * 60;
-  const signature = createHmac('sha256', signingSecret())
-    .update(`${submissionId}:${expiresAt}`)
-    .digest('base64url');
-  return `${expiresAt}.${signature}`;
-}
-
-function verifyCompletionToken(submissionId: string, token: unknown): boolean {
-  if (typeof token !== 'string') return false;
-  const [expiresRaw, signature] = token.split('.');
-  const expiresAt = Number(expiresRaw);
-  if (!Number.isInteger(expiresAt) || expiresAt < Math.floor(Date.now() / 1000) || !signature) return false;
-  const expected = createHmac('sha256', signingSecret())
-    .update(`${submissionId}:${expiresAt}`)
-    .digest('base64url');
-  const actualBuffer = Buffer.from(signature);
-  const expectedBuffer = Buffer.from(expected);
-  return actualBuffer.length === expectedBuffer.length && timingSafeEqual(actualBuffer, expectedBuffer);
-}
-
 function clientIp(request: Request): string {
   return request.headers.get('x-forwarded-for')?.split(',')[0]?.trim()
     || request.headers.get('x-real-ip')
@@ -187,15 +165,10 @@ async function prepareSubmission(request: Request, rawPayload: unknown): Promise
 
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
-  const availableBands = [payload.listeningBand, payload.readingBand].filter((band): band is number => band != null);
-  const totalScore = availableBands.reduce((sum, band) => sum + band, 0) / availableBands.length;
-  const totalLabel = payload.listeningBand == null
-    ? `Reading Band ${payload.readingBand}`
-    : `Listening Band ${payload.listeningBand} · Reading Band ${payload.readingBand}`;
-  const skills = [
-    ...(payload.listeningBand == null ? [] : [{ skill: 'Listening', score: payload.listeningBand, max: 9, label: `Band ${payload.listeningBand}` }]),
-    { skill: 'Reading', score: payload.readingBand, max: 9, label: `Band ${payload.readingBand}` },
-  ];
+  const scoreSummary = buildIeltsScoreSummary({
+    listening: payload.listeningBand,
+    reading: payload.readingBand,
+  });
 
   const { error: insertError } = await admin.from('exam_submissions').insert({
     id: submissionId,
@@ -205,10 +178,10 @@ async function prepareSubmission(request: Request, rawPayload: unknown): Promise
     exam_slug: 'ielts',
     exam_name: 'IELTS Academic',
     mock_title: 'IELTS Academic Set 4',
-    total_score: totalScore,
+    total_score: scoreSummary.totalScore,
     total_max: 9,
-    total_label: totalLabel,
-    skills,
+    total_label: scoreSummary.totalLabel,
+    skills: scoreSummary.skills,
     writing_task1_answer: payload.writingTask1 || null,
     writing_task2_answer: payload.writingTask2 || null,
     speaking_answers: payload.speakingNotes,
@@ -226,7 +199,7 @@ async function prepareSubmission(request: Request, rawPayload: unknown): Promise
   return Response.json({
     ok: true,
     submissionId,
-    completionToken: createCompletionToken(submissionId),
+    completionToken: createIeltsSubmissionToken(submissionId),
     uploads: uploadResults.map(result => ({
       questionId: result.questionId,
       path: result.path,
@@ -236,7 +209,7 @@ async function prepareSubmission(request: Request, rawPayload: unknown): Promise
 }
 
 async function completeSubmission(submissionId: unknown, completionToken: unknown): Promise<Response> {
-  if (typeof submissionId !== 'string' || !UUID_PATTERN.test(submissionId) || !verifyCompletionToken(submissionId, completionToken)) {
+  if (typeof submissionId !== 'string' || !IELTS_SUBMISSION_ID_PATTERN.test(submissionId) || !verifyIeltsSubmissionToken(submissionId, completionToken)) {
     return jsonError('La confirmación de la entrega no es válida o venció.', 403);
   }
 

@@ -28,13 +28,10 @@ import { providers, isConfigured } from '../config';
 import type { FreeAssessment, FullAssessment, LabsError, WritingRubric } from '../types';
 
 /**
- * Ninguno de los dos modelos que quedan en el free tier de Groq soporta
- * response_format:json_schema (probado — llama-3.3 lo rechaza con 400; qwen
- * sin probar pero no vale la pena arriesgar otro 400 silencioso). Con
- * json_object suelto el modelo inventa su propia forma si no se la
- * describimos explícitamente — probado: devolvió {content, organization,
- * language, feedback} en vez de {overallBand, criteria, allIssues,
- * rewritten}. Mismo patrón que providers/nvidia.ts.
+ * El modelo vigente gpt-oss-120b rechaza response_format cuando la forma es
+ * compleja (json_validate_failed), aunque devuelve JSON válido cuando la
+ * instrucción describe explícitamente el contrato. Por eso no enviamos
+ * response_format y conservamos todas las guardas de forma y grounding.
  */
 function buildJsonInstruction(criterionKeys: string[]): string {
   return `
@@ -77,12 +74,11 @@ export async function assessWritingGroq<TaskId extends string>(
       body: JSON.stringify({
         model,
         temperature: 0,
-        max_tokens: 2000,
+        max_tokens: 3000,
         messages: [
           { role: 'system', content: systemPrompt },
           { role: 'user', content: userContent },
         ],
-        response_format: { type: 'json_object' },
       }),
       signal: AbortSignal.timeout(60_000),
     });

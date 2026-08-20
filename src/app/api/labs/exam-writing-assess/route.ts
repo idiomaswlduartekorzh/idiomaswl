@@ -7,6 +7,12 @@ import { assessWritingGroq } from '@/lib/labs/providers/groq';
 import { assessWritingOpus } from '@/lib/labs/providers/anthropic';
 import { assessWritingNvidia } from '@/lib/labs/providers/nvidia';
 import type { FullAssessment, LabsError, WritingRubric } from '@/lib/labs/types';
+import {
+  authorizeIeltsWritingAssessment,
+  persistIeltsWritingAssessment,
+  type AuthorizedWritingAssessment,
+} from '@/lib/ielts/writing-assessment.server';
+import type { IeltsSubmissionReceipt, IeltsWritingTaskNumber } from '@/lib/ielts/review-blueprint';
 
 type Engine = 'gemini' | 'groq' | 'nvidia' | 'anthropic';
 
@@ -156,14 +162,7 @@ export async function POST(req: Request) {
     req.headers.get('x-real-ip') ??
     'unknown';
 
-  if (!checkRateLimit(ip, WRITING_RULE)) {
-    return NextResponse.json(
-      { code: 'rate_limited', message: 'Demasiadas evaluaciones seguidas. Espera un minuto.' },
-      { status: 429 },
-    );
-  }
-
-  let payload: { examSlug?: unknown; mockId?: unknown; taskNumber?: unknown; essay?: unknown };
+  let payload: { examSlug?: unknown; mockId?: unknown; taskNumber?: unknown; essay?: unknown; receipt?: unknown };
   try {
     payload = await req.json();
   } catch {
@@ -174,6 +173,16 @@ export async function POST(req: Request) {
   const mockId     = typeof payload.mockId === 'string' ? payload.mockId : '';
   const taskNumber = payload.taskNumber;
   const essay      = typeof payload.essay === 'string' ? payload.essay.trim() : '';
+  const receiptCandidate = payload.receipt;
+  const receipt = receiptCandidate && typeof receiptCandidate === 'object' && !Array.isArray(receiptCandidate)
+    && typeof (receiptCandidate as Record<string, unknown>).submissionId === 'string'
+    && typeof (receiptCandidate as Record<string, unknown>).completionToken === 'string'
+      ? receiptCandidate as IeltsSubmissionReceipt
+      : null;
+
+  if (receiptCandidate !== undefined && !receipt) {
+    return NextResponse.json({ code: 'invalid_input', message: 'El comprobante de entrega no tiene un formato válido.' }, { status: 400 });
+  }
 
   const adapter = ADAPTERS[examSlug];
   if (!adapter) {
@@ -209,6 +218,52 @@ export async function POST(req: Request) {
     return NextResponse.json(
       { code: 'invalid_input', message: 'Este simulacro no tiene esa tarea de Writing.' },
       { status: 400 },
+    );
+  }
+
+  let persistenceContext: AuthorizedWritingAssessment | null = null;
+  if (receipt) {
+    if (examSlug !== 'ielts' || (taskNumber !== 1 && taskNumber !== 2)) {
+      return NextResponse.json(
+        { code: 'invalid_input', message: 'Este comprobante solo se puede usar con una tarea IELTS compatible.' },
+        { status: 400 },
+      );
+    }
+    const authorization = await authorizeIeltsWritingAssessment({
+      mockId,
+      taskNumber: taskNumber as IeltsWritingTaskNumber,
+      essay,
+      receipt,
+    });
+    if (!authorization.ok) {
+      return NextResponse.json(
+        { code: 'invalid_input', message: authorization.message },
+        { status: authorization.status },
+      );
+    }
+    persistenceContext = authorization.context;
+    if (persistenceContext.cachedAssessment) {
+      const healed = await persistIeltsWritingAssessment(persistenceContext, persistenceContext.cachedAssessment);
+      if (!healed.ok) {
+        return NextResponse.json(
+          { code: 'provider_error', message: healed.message },
+          { status: 503 },
+        );
+      }
+      return NextResponse.json(persistenceContext.cachedAssessment);
+    }
+  }
+
+  // A classroom can put many students behind one public IP. Verified IELTS
+  // submissions therefore receive an isolated quota per UUID; anonymous lab
+  // traffic keeps the existing per-IP protection.
+  const rateLimitKey = persistenceContext
+    ? `ielts-submission:${persistenceContext.submission.id}`
+    : ip;
+  if (!checkRateLimit(rateLimitKey, WRITING_RULE)) {
+    return NextResponse.json(
+      { code: 'rate_limited', message: 'Demasiadas evaluaciones seguidas. Espera un minuto.' },
+      { status: 429 },
     );
   }
 
@@ -254,5 +309,16 @@ export async function POST(req: Request) {
     return NextResponse.json(result, { status });
   }
 
-  return NextResponse.json({ ...result, engineUsed });
+  const completedAssessment: FullAssessment = { ...result, engineUsed };
+  if (persistenceContext) {
+    const persisted = await persistIeltsWritingAssessment(persistenceContext, completedAssessment);
+    if (!persisted.ok) {
+      return NextResponse.json(
+        { code: 'provider_error', message: persisted.message },
+        { status: 503 },
+      );
+    }
+  }
+
+  return NextResponse.json(completedAssessment);
 }

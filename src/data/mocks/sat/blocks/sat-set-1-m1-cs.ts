@@ -33,13 +33,13 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'The bakery stood at the top of the hill. From its door Rosalía could see the whole town. Each morning at six she rang the brass bell above the counter, though the bell was not really needed. Then she leaned out and called that the first loaves were ready. Her voice carried farther than the bell did. Families in the lanes below could not see the bakery, but they heard her, and one by one they started up the hill.',
-    text: 'As used in the text, what does the word "stood" most nearly mean?',
+      'The bakery ______ at the top of the hill. From its door Rosalía could see the whole town, roof by roof, down to the river. Each morning at six she rang the brass bell above the counter, though the bell was not really needed. Then she leaned out and called that the first loaves were ready. Her voice carried farther than the bell did. Families in the lanes below could not see the bakery, but they heard her, and one by one they started up the hill.',
+    text: 'Which choice completes the text with the most logical and precise word?',
     options: [
-      'Towered',
-      'Ranked',
-      'Remained',
-      'Perched',
+      'loomed',
+      'waited',
+      'huddled',
+      'perched',
     ],
     answer: 3,
   },
@@ -48,13 +48,13 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "When the council of the river port of Elmsford met in 1889 to consider a filtration plant, the three engineers it had hired did not simply approve the design. They agreed that beds of sand would remove most of what made the river water cloudy, but they warned that those beds would clog within a year unless the town also built a settling basin upstream, and they declined to sign until the basin appeared in the budget. Historians who read the engineers' report as an endorsement therefore miss its tone. Their support was qualified, and the council knew it.",
-    text: 'As used in the text, what does the word "cloudy" most nearly mean?',
+      "When the council of the river port of Elmsford met in 1889 to consider a filtration plant, the three engineers it had hired did not simply approve the design. They agreed that beds of sand would remove most of what made the river water ______, but they warned that those beds would clog within a year unless the town also built a settling basin upstream, and they declined to sign until the basin appeared in the budget. Historians who read the engineers' report as an endorsement therefore miss its tone. Their support was qualified, and the council knew it.",
+    text: 'Which choice completes the text with the most logical and precise word?',
     options: [
-      'Murky',
-      'Overcast',
-      'Vague',
-      'Mottled',
+      'murky',
+      'brackish',
+      'stagnant',
+      'hard',
     ],
     answer: 0,
   },
@@ -163,13 +163,13 @@ export const meta: SatItemMeta[] = [
     tema: 'literatura',
     razones: {
       A:
-        'Lee stood como «alzarse»: la panadería descollaría sobre el pueblo. Es la acepción física más vistosa del verbo, y el texto no la sostiene —no da al edificio ni una línea de altura ni de tamaño—: lo alto es el cerro, y lo único que se levanta por encima del pueblo es su voz, que «carried farther than the bell did».',
+        'Loom es alzarse grande y amenazante ante quien mira, y el texto lo refuta en la última línea: «Families in the lanes below could not see the bakery». Lo que no se ve no puede cernerse sobre nadie. Cae quien lee «at the top of the hill» y se imagina la escena desde abajo sin comprobar qué ve el de abajo.',
       B:
-        'Procesa la colocación «stood at the top of», la de las clasificaciones —«she stood at the top of her class»—, y lee un puesto donde hay un sitio. Detrás de la preposición va «the hill», un lugar que el pasaje mide en distancia y en cuesta: las familias quedan «below» y suben, no figuran por debajo en una lista.',
+        'Cae quien lee el párrafo entero como una espera —la campana, la voz, las familias que suben— y le da a la panadería el papel de quien aguarda. Pero en el texto la panadería no hace nada: todas las acciones son de Rosalía, que toca la campana, se asoma y llama. El edificio solo está donde está.',
       C:
-        'Acepción de seguir en pie, la de «the offer still stands», y en español la que empuja «la panadería seguía en pie»: el verbo hablaría de permanencia. Para eso el texto tendría que medir tiempo, y su único reloj es una rutina de un día —«Each morning at six»—; nadie dice cuánto lleva el local ahí ni que algo lo amenace.',
+        'Huddle es apretarse junto a otros o agazaparse buscando abrigo, y cae quien lee la invisibilidad desde abajo como señal de un edificio bajo y escondido. Lo impide la frase anterior: desde su puerta se ve el pueblo entero «roof by roof, down to the river», y eso es una posición que domina, no una que se esconde.',
       D:
-        'Correcta: stood aquí sitúa, y el pasaje entero depende de dónde está la panadería —desde su puerta se ve «the whole town», las familias de «the lanes below» no la ven, y para llegar «they started up the hill»—. El verbo dice que ocupaba ese punto en lo alto del cerro, nada más.',
+        'Correcta: perch nombra algo pequeño asentado en una altura desde la que se domina lo de abajo, y es lo único que sostiene a la vez las dos cosas que dice el texto — que desde la puerta se ve el pueblo entero tejado a tejado hasta el río, y que desde las callejuelas no se ve la panadería.',
     },
     fuenteHecho:
       'Ficción original; ningún hecho real implicado.',
@@ -182,13 +182,13 @@ export const meta: SatItemMeta[] = [
     tema: 'historia',
     razones: {
       A:
-        'Correcta: lo que está cloudy es «the river water», y el párrafo dice qué lo produce y cómo se quita. Unos «beds of sand» «would remove most of what made the river water cloudy» y por eso mismo «would clog within a year»: lo que enturbia el río va en suspensión, se queda en la arena y hay que decantarlo antes. Cloudy nombra aquí esa falta de transparencia del agua.',
+        'Correcta: la evidencia es interna y doble. Lo que la arena retira es lo mismo que la atasca —«those beds would clog within a year»— y contra eso los ingenieros exigen «a settling basin upstream». Un decantador solo sirve para sólidos en suspensión, y agua con sólidos en suspensión es agua turbia.',
       B:
-        'Aplica la acepción primera del adjetivo, la del cielo cubierto, que es la que se trae de memoria sin mirar de qué se predica. En el pasaje no hay tiempo atmosférico de ninguna clase: el adjetivo cuelga de «the river water», y lo que lo pone así se retira con lechos de arena.',
+        'Es el distractor bueno del ítem y cae mucha gente: suena técnico, y un puerto fluvial invita a pensar en agua salobre por la marea. Pero la sal va disuelta, atraviesa un lecho de arena sin dejar nada y sin atascarlo, y una balsa de decantación no la retira. Ninguna de las dos advertencias del párrafo tendría sentido.',
       C:
-        'Toma la acepción figurada, la de una idea o una redacción poco claras, y el párrafo la invita porque termina en cómo leen los historiadores un informe y cómo pierden «its tone». Pero cloudy no califica al informe ni a nadie que piense: su sustantivo es el agua del río, y lo que la arena retira no es una confusión, es materia.',
+        'Cae quien piensa en agua quieta y sucia, la imagen habitual del agua que hay que tratar. El texto lo desmiente por partida doble: es «the river water» de un puerto fluvial, agua que corre, y además un lecho de arena no mueve el agua ni arregla que esté estancada.',
       D:
-        'Lee cloudy como «veteado, con manchas», la acepción del mármol o del ámbar con nubes dentro, y se imagina el río a parches. El texto no describe ningún dibujo sobre el agua: describe algo repartido dentro de ella que los lechos «remove», que los atasca en un año y que obliga a «a settling basin upstream» para que sedimente antes de llegar.',
+        'Es la trampa para el estudiante que sabe algo de tratamiento de aguas: la dureza es el problema clásico del agua potable. Pero la dureza es mineral disuelto, cruza la arena sin quedarse y no colmata nada, y una balsa de decantación aguas arriba no le hace absolutamente nada.',
     },
     fuenteHecho:
       'Hecho libre de historia de la ingeniería sanitaria (filtros lentos de arena, siglo XIX); ciudad, fecha e informe inventados.',
