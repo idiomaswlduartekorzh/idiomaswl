@@ -79,8 +79,13 @@ Ninguna se ve leyendo la ficha de un rol por separado. Todas se ven al simular l
 | Nivel | Minutos | Turnos por rol | Actos que se pueden exigir | Lo que todavía no |
 |---|---|---|---|---|
 | **A1** | 3–4 | 4–6 | pedir algo, dar datos personales, decir precio y hora, aceptar o rechazar de frente | negociar, matizar, rechazar de forma indirecta |
-| **A2** | 4–6 | 6–9 | pedir un favor, dar una razón, disculparse, proponer alternativa, quejarse con educación, conceder poniendo una condición simple | ironía, concesión larga («aunque… lo cierto es que…»), discurso indirecto extenso |
+| **A2** | 5–8 | 6–9 | pedir un favor, dar una razón, disculparse, proponer alternativa, quejarse con educación, conceder poniendo una condición simple | ironía, concesión larga («aunque… lo cierto es que…»), discurso indirecto extenso |
 | **B1** | 6–9 | 8–12 | negociar, poner un límite, rechazar sin ofender, insistir, resumir el acuerdo | registro jurídico o técnico, humor que dependa de la cultura |
+
+Los minutos salen de la simulación, no del deseo. La primera versión de esta tabla daba 4-6
+minutos al A2 y a la vez le permitía 9 turnos por rol: dieciocho turnos no caben en cuatro
+minutos, y las simulaciones se pasaron entre un 17 % y un 53 % en los ocho escenarios. Si un
+escenario dura más de lo que dice, se corrige el número —no se apura al estudiante.
 
 Cada exponente del andamiaje se ancla al registro de gramática del nivel
 (`src/data/grammar/registry`). Si el acto exigido necesita una estructura que ese nivel no ha
@@ -186,3 +191,10 @@ el objetivo antes y más limpio. Un incentivo que premia mirar antes enseña a m
 
 La carta vive detrás de un botón, en su propia vista, con el turno global escrito encima.
 Nunca en la misma página que el andamiaje. Va en el encargo de `habla-integracion`.
+
+Y hay una regla de diseño que se deduce de aquello, porque ninguna pantalla arregla una
+carta mal pensada: **una carta que quita una palanca premia mirarla antes** —si sabes que
+vas a perder el argumento, no lo usas y no pierdes nada—; **una carta que asigna una tarea
+nueva, o que rompe un hecho que ya dijiste en voz alta, no se puede aprovechar mirándola**.
+Escribe siempre las del segundo tipo. Cada escenario dice por escrito qué pasa si se mira
+antes de tiempo, y la respuesta tiene que ser «nada bueno».
