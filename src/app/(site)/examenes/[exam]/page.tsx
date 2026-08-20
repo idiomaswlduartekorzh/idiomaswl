@@ -7,6 +7,8 @@ import ExamGuideBlock from './ExamGuide';
 import ExamJsonLd from './ExamJsonLd';
 import ExamCluster from './ExamCluster';
 import { EXAM_GUIDES } from '@/data/examGuides';
+import PodcastFeature from '@/components/practica/PodcastFeature';
+import { TOEFL_STRATEGY_MAP_PODCAST } from '@/data/practica/podcasts/your-2026-toefl-ibt-strategy-map';
 
 export async function generateStaticParams() {
   return Object.keys(EXAMS).map(slug => ({ exam: slug }));
@@ -60,6 +62,18 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
 
       {/* Animated infographic */}
       <ExamInfoGraphic exam={exam} />
+
+      {slug === 'toefl' && (
+        <PodcastFeature
+          {...TOEFL_STRATEGY_MAP_PODCAST}
+          compact
+          links={[
+            { href: '/practica/toefl#toefl-strategy-map', label: 'Episode notes and study map' },
+            { href: '/practica/toefl/reading', label: 'Practise Reading' },
+            { href: '/practica/toefl/writing', label: 'Practise Writing' },
+          ]}
+        />
+      )}
 
       {/* ── Practice mocks ── */}
       <MockGrid exam={exam} />

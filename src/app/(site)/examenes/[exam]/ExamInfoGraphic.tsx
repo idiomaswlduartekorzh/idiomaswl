@@ -56,6 +56,8 @@ export default function ExamInfoGraphic({ exam }: Props) {
     const m = parseInt(String(s.time));
     return acc + (isNaN(m) ? 0 : m);
   }, 0);
+  const [scoreMin = '0', scoreMaxPart = exam.scoreRange] = exam.scoreRange.split('–');
+  const scoreMax = scoreMaxPart.trim().match(/^[\d.]+/)?.[0] ?? scoreMaxPart.trim();
 
   return (
     <div>
@@ -151,7 +153,7 @@ export default function ExamInfoGraphic({ exam }: Props) {
                       <div className="wl-section-card__meta">
                         <span>{sec.time}</span>
                         <span>·</span>
-                        <span>{sec.questions} {typeof sec.questions === 'number' && sec.questions > 2 ? 'preguntas' : 'tareas'}</span>
+                        <span>{sec.questions} {exam.slug === 'toefl' ? 'ítems base' : typeof sec.questions === 'number' && sec.questions > 2 ? 'preguntas' : 'tareas'}</span>
                       </div>
                     </div>
                   </div>
@@ -196,13 +198,13 @@ export default function ExamInfoGraphic({ exam }: Props) {
               />
             </div>
             <div className="wl-score-bar__labels">
-              <span>0</span>
+              <span>{scoreMin.trim()}</span>
               {exam.passing && (
                 <span className="wl-exam-readable-accent" style={{ color: exam.color, fontWeight: 600 }}>
-                  ✓ Aprobado: {exam.passing}
+                  {exam.slug === 'toefl' ? 'Requisito: ' : '✓ Aprobado: '}{exam.passing}
                 </span>
               )}
-              <span>{exam.scoreRange.split('–')[1]?.trim()}</span>
+              <span>{scoreMax}</span>
             </div>
           </div>
 

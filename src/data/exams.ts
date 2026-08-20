@@ -97,23 +97,23 @@ export const EXAMS: Record<string, Exam> = {
     language: 'Inglés',
     color: '#2563eb',
     colorDark: '#1e40af',
-    tagline: 'El examen preferido por universidades norteamericanas y canadienses.',
-    description: 'El TOEFL iBT evalúa las 4 habilidades del inglés académico. Es el examen estándar para admisión en más de 11,000 universidades en 160 países, especialmente en Norteamérica.',
+    tagline: 'Inglés académico y de campus en el formato adaptativo vigente desde enero de 2026.',
+    description: 'El TOEFL iBT evalúa Reading, Listening, Writing y Speaking mediante tareas académicas y de campus. Reading y Listening son adaptativos por módulos; Writing y Speaking mantienen una estructura fija.',
     totalTime: '~2h',
-    totalQuestions: '54–72',
+    totalQuestions: '120 ítems base',
     // ETS cambió la escala el 21 de enero de 2026: el puntaje principal pasó a ser
     // una banda de 1 a 6 con medios puntos. El clásico 0-120 se sigue reportando
     // como equivalente durante una transición de dos años, hasta enero de 2028, y
     // es el que siguen usando las universidades en sus requisitos.
     scoreRange: '1 – 6 (equivalente 0 – 120)',
     scoreName: 'Banda TOEFL',
-    passing: 'Lo fija cada institución. Los requisitos siguen publicados en la escala 0 – 120, donde lo habitual es 80 – 100',
-    recognized: ['Más de 11,000 universidades en 160 países', 'Programas de postgrado en EE.UU. y Canadá', 'Visas estudiantiles F-1 (EE.UU.)'],
+    passing: 'No hay un puntaje universal: cada institución y programa fija el suyo',
+    recognized: ['Universidades y programas de posgrado internacionales', 'Procesos de admisión en EE.UU. y Canadá', 'Instituciones que aceptan la escala TOEFL 1–6 o su equivalente 0–120'],
     sections: [
-      { name: 'Reading', icon: '📖', time: '35–72 min', questions: 20, color: '#2563eb', types: ['Multiple choice', 'Prose summary', 'Fill in a table', 'Referente questions'] },
-      { name: 'Listening', icon: '🎧', time: '41–57 min', questions: 28, color: '#3b82f6', types: ['Conferencias académicas', 'Conversaciones campus', 'Multiple choice', 'Check the box'] },
-      { name: 'Speaking', icon: '🎙️', time: '17 min', questions: 4, color: '#60a5fa', types: ['Independent: opinión personal', 'Integrated: leer + escuchar + hablar'] },
-      { name: 'Writing', icon: '✍️', time: '50 min', questions: 2, color: '#93c5fd', types: ['Integrated: leer + escuchar + escribir', 'Academic Discussion: foro online (150+ palabras)'] },
+      { name: 'Reading', icon: '📖', time: '30 min', questions: 50, color: '#2563eb', types: ['Complete the Words', 'Read in Daily Life', 'Read an Academic Passage'] },
+      { name: 'Listening', icon: '🎧', time: '29 min', questions: 47, color: '#3b82f6', types: ['Listen and Choose a Response', 'Listen to a Conversation', 'Listen to an Announcement', 'Listen to an Academic Talk'] },
+      { name: 'Writing', icon: '✍️', time: '23 min', questions: 12, color: '#60a5fa', types: ['Build a Sentence', 'Write an Email', 'Write for an Academic Discussion'] },
+      { name: 'Speaking', icon: '🎙️', time: '8 min', questions: 11, color: '#93c5fd', types: ['Listen and Repeat', 'Take an Interview'] },
     ],
     mocks: [
       { id: 'set-1', title: 'TOEFL iBT Set 1 (Formato 2026)', subtitle: 'Complete the Words · Read in Daily Life · Academic Passage · Listening · Build a Sentence · Email · Discussion · Speaking', free: true, parts: 13, questions: 42, badge: 'Formato 2026' },
