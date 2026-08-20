@@ -97,13 +97,20 @@ entiende».
 Un set de 8 escenarios puede tener 8 escenarios buenos y ser malo. Los repartos se miden
 sobre el set completo, con script, no a ojo. Es la misma lección de [[pedagogy-defectos-de-conjunto]].
 
+**Se mide lo que se produce, no lo que se declara.** Un escenario etiquetado `pedir-favor`
+puede obligar a rechazar, proponer una alternativa y pedir aclaración por el camino: contado
+por etiquetas, el set salió variado; contado por turnos escritos, `rechazar` y
+`proponer-alternativa` aparecían en **8 de 8**. La etiqueta dice de qué va el escenario; el
+reparto se calcula sobre los turnos que la pareja tiene que producir para llegar al cierre.
+
 | Reparto | Regla |
 |---|---|
-| **Actos de habla** | Ningún acto en más del 40 % de los escenarios. Nada de ocho quejas seguidas |
+| **Actos de habla** | Ningún acto en más del 40 % de los escenarios, **contando turnos producidos, no etiquetas** |
 | **Poder** | El estudiante manda en al menos 3 de cada 8. Si siempre pide permiso, nunca aprende a concederlo |
 | **Quién arranca** | Entre 40 % y 60 % para cada rol a lo largo del set |
 | **Desenlace** | Al menos un «sin acuerdo» y un «acuerdo parcial» por cada 8. No todo termina bien |
 | **Culpa** | El problema no lo causa el estudiante en más de la mitad de los casos |
+| **Género** | Ni el poder ni la culpa se concentran en un género. Se cuenta quién manda en escena, quién decide fuera, quién gana y quién causa el problema. Ojo con arreglarlo del revés: en la primera corrección el sesgo se espejó —4 de 4 mandando mujeres, y los 2 hombres nombrados eran los culpables— y eso no es equilibrio |
 | **Escenografía** | Máximo 2 de 8 en aula. La vida pasa en otros sitios |
 
 ## 6. Las doce puertas
