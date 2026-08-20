@@ -276,6 +276,16 @@ palabra que necesita quien está detrás del mostrador no es la que necesita qui
 | `what it is` | Definición **en inglés sencillo**, no traducción. `shift — the hours you work in one day` |
 | `here` | Para qué le sirve en esta conversación concreta |
 
+**Cuidado con la columna `here`: es la más calcable de la ficha entera.** Medido en la primera
+tanda del formato nuevo, es donde se concentran los fallos —explicar para qué sirve una palabra
+empuja sola hacia la frase que se dice con ella—. Y en un escenario llegó a entregar el dato
+oculto ya convertido en frase lista para pronunciar, que es exactamente lo que la ficha no puede
+hacer.
+
+Se escribe como **nota de propósito, no como ejemplo**: `your way out — you must offer two ways`
+sí; `you can say "we can split it"` no. Si la celda contiene algo entrecomillado o algo que
+empiece por un pronombre y un verbo conjugado, reescríbela.
+
 Se eligen por una prueba, no por intuición: **¿puede este rol llegar al cierre sin esta
 palabra?** Si sí, fuera. Entran las que aparecen en los datos duros del propio rol, las que le
 va a soltar el otro, y las del oficio de la escena.
