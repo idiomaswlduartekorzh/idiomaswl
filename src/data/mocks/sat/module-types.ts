@@ -28,6 +28,23 @@ export const SAT_TYPES_BY_DOMAIN: Record<SatDomain, string[]> = {
   EOI: ['rhetorical-synthesis', 'transitions'],
 }
 
+/**
+ * La página del espinazo que explica cada dominio. Es lo que convierte el desglose de
+ * la pantalla de resultados en algo accionable: el estudiante falla seis de ocho en
+ * Craft and Structure y tiene dónde ir a arreglarlo.
+ *
+ * Vive aquí y no en `src/data/satGuides.ts` a propósito: la pantalla de resultados es
+ * un componente de cliente, e importar allí el archivo de las guías metería en el
+ * paquete del navegador el texto entero de las páginas. `scripts/check-sat-superhub.mjs`
+ * comprueba que cada slug de este mapa exista de verdad como guía escrita.
+ */
+export const SAT_DOMAIN_GUIDE_SLUG: Record<SatDomain, string> = {
+  CS: 'craft-and-structure',
+  II: 'information-and-ideas',
+  SEC: 'standard-english-conventions',
+  EOI: 'expression-of-ideas',
+}
+
 export type SatTopic = 'ciencia' | 'historia' | 'humanidades' | 'literatura'
 
 export type SatVariant = 'M1' | 'M2-facil' | 'M2-dificil'

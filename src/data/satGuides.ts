@@ -169,7 +169,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
     slug: 'craft-and-structure',
     domain: 'CS',
     title: 'Craft and Structure del SAT: vocabulario en contexto y estructura',
-    description: 'El dominio con más peso del SAT Reading and Writing: qué mide Words in Context, Text Structure and Purpose y Cross-Text Connections, y cómo se responde cada uno.',
+    description: 'El dominio con más peso del SAT: qué mide Words in Context, Text Structure and Purpose y Cross-Text Connections, y cómo se responde cada uno.',
     h1: 'Craft and Structure: el dominio con más peso del SAT',
     eyebrow: 'Guía SAT · dominio 1 de 4',
     lead:
@@ -258,7 +258,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
     slug: 'information-and-ideas',
     domain: 'II',
     title: 'Information and Ideas del SAT: evidencia, inferencias y gráficas',
-    description: 'Idea central, evidencia textual, evidencia con datos e inferencias en el SAT Reading and Writing: qué se pregunta, cómo se responde y cuál es el error que más cuesta.',
+    description: 'Idea central, evidencia textual, evidencia con datos e inferencias en el SAT: qué se pregunta y cuál es el error que más puntos cuesta.',
     h1: 'Information and Ideas: lo que el texto sostiene',
     eyebrow: 'Guía SAT · dominio 2 de 4',
     lead:
@@ -335,7 +335,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
     slug: 'standard-english-conventions',
     domain: 'SEC',
     title: 'Gramática del SAT: Standard English Conventions explicado',
-    description: 'Puntuación, límites de oración, concordancia, tiempos verbales y modificadores en el SAT. El dominio de reglas cerradas y la mejora más rápida de la sección.',
+    description: 'Puntuación, límites de oración, concordancia, tiempos y modificadores en el SAT: el dominio de reglas cerradas y la mejora más rápida.',
     h1: 'Standard English Conventions: la mejora más barata del SAT',
     eyebrow: 'Guía SAT · dominio 3 de 4',
     lead:
@@ -417,7 +417,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
     slug: 'expression-of-ideas',
     domain: 'EOI',
     title: 'Expression of Ideas del SAT: transiciones y síntesis de notas',
-    description: 'El dominio más pequeño del SAT Reading and Writing y el más recuperable: cómo se eligen las transiciones por lógica y cómo se resuelve la síntesis de notas con un objetivo.',
+    description: 'El dominio más pequeño del SAT y el más recuperable: cómo se eligen las transiciones por lógica y cómo se resuelve la síntesis de notas.',
     h1: 'Expression of Ideas: pocas preguntas, y se recuperan en un rato',
     eyebrow: 'Guía SAT · dominio 4 de 4',
     lead:
@@ -481,6 +481,99 @@ export const SAT_GUIDES: SatGuidePage[] = [
     sources: FUENTES_BASE,
     checked: '19 de agosto de 2026',
     checkedISO: '2026-08-19',
+  },
+
+
+  {
+    slug: 'como-estudiar-sat-desde-cero',
+    title: 'Cómo estudiar para el SAT desde cero: plan por semanas',
+    description: 'Un plan de preparación del SAT según el tiempo que te queda: qué estudiar primero, en qué orden y cómo usar los simulacros para que sirvan.',
+    h1: 'Cómo estudiar para el SAT desde cero',
+    eyebrow: 'Guía SAT · plan de estudio',
+    lead:
+      'Preparar el <strong>SAT</strong> no es preparar inglés general, y esa confusión cuesta meses. El examen da por hecho que lees en inglés y mide otra cosa: precisión de lectura, reglas de la norma escrita estadounidense y ritmo bajo cronómetro. Por eso un estudiante con B2 bien entrenado supera a un C1 que llega en frío. Lo que decide tu plan no es tu nivel, es <strong>cuánto tiempo te queda</strong> — y el orden en que estudias los cuatro dominios es casi el inverso del orden en que aparecen en el examen.',
+    sections: [
+      {
+        h: 'Lo primero: mide, no estimes',
+        body: [
+          'Antes de estudiar nada, haz <strong>un módulo completo cronometrado</strong>. No sirve responder preguntas sueltas con el teléfono al lado: el <strong>SAT</strong> da un minuto y once segundos por pregunta y la mitad de los problemas de la gente son de ritmo, no de inglés. Un simulacro sin reloj te devuelve un diagnóstico optimista, que es el peor de todos.',
+          'De ese primer módulo lo único que importa es el <strong>desglose por dominio</strong>, no el porcentaje. Un 60 % concentrado en gramática y un 60 % repartido por igual son dos estudiantes distintos con dos planes distintos. Y si acertaste bastante pero no terminaste, tu problema no está en ningún dominio: está en el cronómetro, y se entrena repitiendo módulos completos hasta que los 32 minutos sobren.',
+        ],
+      },
+      {
+        h: 'El orden que rinde es casi el inverso del examen',
+        body: [
+          'En el <strong>SAT</strong> las preguntas llegan en este orden: Craft and Structure, Information and Ideas, Standard English Conventions y Expression of Ideas. Para estudiar conviene ir casi al revés, porque no todos los dominios cuestan lo mismo de arreglar.',
+          '<strong>Standard English Conventions primero.</strong> Es el único dominio hecho de reglas cerradas: se aprenden enteras y se acaban. <strong>Expression of Ideas después</strong>, porque son dos procedimientos —decidir la relación antes de mirar los conectores, y leer el objetivo antes que las notas— y ninguno depende de tu nivel de inglés. <strong>Information and Ideas en tercer lugar</strong>: aquí la mejora viene de una disciplina, señalar la línea que prueba cada respuesta. Y <strong>Craft and Structure al final y en paralelo con todo</strong>, porque es el más lento: se construye leyendo, no estudiando.',
+        ],
+      },
+      {
+        h: 'Si te quedan cuatro semanas',
+        body: [
+          'Es poco tiempo, así que el plan se juega a lo que sí se puede mover. <strong>Semanas 1 y 2, Standard English Conventions</strong>: límites de oración y puntuación la primera —coma, punto y coma, dos puntos, guion largo, incisos, posesivos—, y concordancia, tiempos, pronombres y modificadores la segunda. No la estudies leyendo explicaciones: falla ítems y vuelve a la regla que fallaste.',
+          '<strong>Semana 3, Expression of Ideas</strong>, que se aprende en un fin de semana honesto, y el resto a repasar los errores de gramática. <strong>Semana 4, dos módulos completos cronometrados</strong>, separados, revisando cada error como un caso: qué línea probaba la correcta y por qué elegiste la tuya. Lo que <strong>no</strong> hay que hacer en cuatro semanas es ponerse a memorizar vocabulario: es la inversión más lenta del SAT y no llega a tiempo.',
+        ],
+      },
+      {
+        h: 'Si te quedan tres meses',
+        body: [
+          'Este es el plazo en el que se puede trabajar de verdad los cuatro dominios del <strong>SAT</strong>. <strong>Mes 1:</strong> Standard English Conventions completo y empezar a leer no ficción en inglés todos los días —artículos de divulgación científica, historia, crítica—, veinte minutos, sin diccionario salvo cuando la frase se rompa. <strong>Mes 2:</strong> Expression of Ideas e Information and Ideas, con un módulo cronometrado cada dos semanas.',
+          '<strong>Mes 3:</strong> Craft and Structure a fondo y ritmo. Aquí la lectura del mes 1 empieza a notarse, que es la razón de empezarla el primer día y no el último. Y un módulo completo por semana, siempre cronometrado, dedicando más tiempo a revisarlo que a hacerlo. Un módulo mal revisado es media hora tirada; un módulo bien revisado vale por tres.',
+        ],
+      },
+      {
+        h: 'Cómo se revisa un simulacro para que sirva',
+        body: [
+          'La parte que casi todo el mundo se salta. Hacer simulacros del <strong>SAT</strong> sin revisarlos no entrena nada: solo mide otra vez lo mismo. La revisión útil tiene tres pasos y se hace pregunta a pregunta, incluidas las que acertaste.',
+          'Uno: <strong>busca la línea exacta del texto que probaba la respuesta correcta</strong>. Si no la encuentras, acertaste por otra cosa y volverás a fallar. Dos: <strong>di en voz alta qué error concreto cometía la opción que elegiste</strong> — confundir verdadero con demostrado, invertir apoyar y debilitar, elegir el conector que sonaba bien. Tres: <strong>agrupa los errores por tipo, no por dominio</strong>. Cinco fallos que son el mismo error son un problema, no cinco.',
+        ],
+      },
+      {
+        h: 'Los tres errores de preparación más caros',
+        body: [
+          '<strong>Estudiar inglés en vez de estudiar el SAT.</strong> Un curso general de inglés mejora tu inglés y casi no mueve tu puntaje, porque el examen mide formato, precisión y ritmo. Si tu nivel es B1 o menos, sí hace falta primero el idioma; a partir de un B2 sólido, cada hora rinde más en el examen que en la lengua.',
+          '<strong>Memorizar listas de palabras.</strong> El SAT digital ya no tiene preguntas sueltas de vocabulario: pregunta qué palabra encaja en esta frase, y las opciones suelen ser palabras que ya conoces. <strong>Y hacer simulacros sin cronómetro.</strong> Es la forma más común de llegar al examen creyendo que vas mejor de lo que vas, porque el tiempo es justo la mitad de la dificultad.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: '¿Cuánto tiempo necesito para prepararme el SAT?',
+        a: 'Depende de tu punto de partida, pero con tres meses se pueden trabajar los cuatro dominios de Reading and Writing con calma. Con cuatro semanas hay que concentrarse en lo que sí se puede mover: gramática y puntuación primero, Expression of Ideas después, y dos módulos cronometrados al final. Lo que no cabe en un mes es la mejora de vocabulario en contexto, que es lenta.',
+      },
+      {
+        q: '¿Por dónde empiezo a estudiar para el SAT?',
+        a: 'Por un módulo completo cronometrado, para tener el desglose por dominio. Después, por Standard English Conventions: es el único dominio de reglas cerradas y el que más sube por hora de estudio. Craft and Structure se deja para el final en cuanto a estudio intensivo, pero la lectura diaria en inglés conviene empezarla el primer día porque tarda en notarse.',
+      },
+      {
+        q: '¿Qué nivel de inglés necesito para el SAT?',
+        a: 'El SAT no mide inglés como lengua extranjera: da por hecho que lees en inglés y mide comprensión y redacción a nivel de bachillerato estadounidense. En la práctica se necesita un B2 sólido para competir. Con B1 o menos, la prioridad es el idioma, porque preparar formato sobre una base que no está no rinde.',
+      },
+      {
+        q: '¿Sirve Khan Academy para preparar el SAT?',
+        a: 'Sí: es el socio oficial de College Board y su material es gratuito y fiable. Está en inglés, que para un estudiante hispanohablante es a la vez su límite y una ventaja — practicar en inglés es parte del entrenamiento. Lo que le falta, y es lo que intentamos cubrir aquí, es la explicación en español de por qué una opción es la correcta y qué error concreto comete cada distractor.',
+      },
+      {
+        q: '¿Cuántas veces conviene presentar el SAT?',
+        a: 'No hay un límite oficial. Muchos estudiantes lo presentan dos o tres veces y la mayoría de universidades aceptan el mejor puntaje o combinan lo mejor de cada sección. Presentarlo más de tres veces rara vez mejora el resultado, sobre todo si entre intento e intento no cambió nada en cómo se estudia.',
+      },
+      {
+        q: '¿Debo memorizar vocabulario para el SAT?',
+        a: 'No como estrategia principal. El SAT digital eliminó las preguntas sueltas de vocabulario; lo que hay es Words in Context, donde las opciones suelen ser palabras comunes y se pregunta cuál encaja en esa frase concreta. Leer no ficción en inglés todos los días rinde mucho más que cualquier lista.',
+      },
+      {
+        q: '¿Cada cuánto debo hacer un simulacro?',
+        a: 'Uno cada dos semanas al principio y uno por semana en el último mes, siempre cronometrado. Y dedicando más tiempo a revisarlo que a hacerlo: buscar la línea que probaba cada respuesta correcta y nombrar el error de la opción que elegiste. Un simulacro sin revisar solo vuelve a medir lo mismo.',
+      },
+    ],
+    relatedSlugs: ['reading-and-writing', 'standard-english-conventions', 'expression-of-ideas', 'information-and-ideas', 'craft-and-structure'],
+    related: [
+      { href: '/examenes/sat/practica/set-1', label: 'Empieza midiendo · simulacro SAT', note: 'Un módulo cronometrado de 27 preguntas con desglose por dominio. Gratis, sin crear cuenta.' },
+      { href: '/clases-de-ingles', label: 'Preparación con profesor', note: 'Si tu nivel todavía no llega a B2, esto va antes que el formato.' },
+    ],
+    sources: FUENTES_BASE,
+    checked: '20 de agosto de 2026',
+    checkedISO: '2026-08-20',
   },
 
 ];

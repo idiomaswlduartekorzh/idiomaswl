@@ -5,10 +5,20 @@ Las reglas están en `docs/sat-loop-nocturno.md`; los parámetros y umbrales, en
 `docs/sat-ingles-blueprint.md`.
 
 - **Rama:** `feat/red-agentes-sat-ingles`
-- **Última vuelta:** 32 · 20 ago 2026 · **Los cuatro dominios, escritos.** El espinazo tiene cinco páginas y ningún enlace roto
-- **Siguiente tarea:** E7 · `como-estudiar-sat-desde-cero` — el plan por semanas
+- **Última vuelta:** 33 · 20 ago 2026 · **Espinazo terminado (6 páginas) + guardián del clúster.** Encontró cinco fallos en su primera pasada
+- **Siguiente tarea:** E8 · artículo de blog «qué puntaje de SAT necesitas, por tipo de universidad»
 
 ---
+
+## Deuda conocida
+
+- **`check:sat` y `check:sat-superhub` no están en `prebuild`.** Es una línea en
+  `package.json`, y no se ha hecho porque ese archivo tiene cambios sin commitear de
+  otra sesión —y uno de ellos apunta a un script que todavía está sin rastrear—, así
+  que tocarlo significaría llevarse su trabajo dentro de un commit ajeno. **Hasta que
+  se enganchen hay que correrlos a mano**, o una regresión en el SAT pasará el build.
+- Faltan los ítems de **completar el hueco** (formato dominante de vocabulario en el
+  SAT digital). Aplazado al módulo 2 a propósito.
 
 ## Cola de trabajo
 
@@ -67,7 +77,7 @@ Espinazo, en `/examenes/sat/guia/<slug>`:
 - [x] **E4** · `information-and-ideas`
 - [x] **E5** · `standard-english-conventions` — la mejora más barata del examen
 - [x] **E6** · `expression-of-ideas`
-- [ ] **E7** · `como-estudiar-sat-desde-cero` — plan por semanas
+- [x] **E7** · `como-estudiar-sat-desde-cero` — plan por semanas
 
 Ramas, en `/blog/<slug>`:
 
@@ -78,10 +88,9 @@ Ramas, en `/blog/<slug>`:
 
 Cierre:
 
-- [ ] **E12** · Enlaces en las dos direcciones: el desglose por dominio del simulacro
+- [x] **E12** · Enlaces en las dos direcciones: el desglose por dominio del simulacro
       apunta a su página de dominio, y cada página vuelve al simulacro
-- [ ] **E13** · Guardián `check:sat-superhub`: que ninguna página del clúster se quede
-      sin `canonical`, sin JSON-LD, sin entrada en `sitemap.ts` o sin enlace de vuelta
+- [x] **E13** · `scripts/check-sat-superhub.mjs`, las seis puertas del clúster
 
 ---
 
@@ -91,6 +100,7 @@ Una línea por vuelta: qué se hizo, qué commit, qué se aprendió. Sin borrar 
 
 | Vuelta | Tarea | Resultado | Commit |
 |---|---|---|---|
+| 33 | E7 + E12 + E13 | ✅ Espinazo cerrado: seis páginas. El desglose por dominio del simulacro ya enlaza a la guía de ese dominio —y el mapa vive en `module-types.ts`, no en `satGuides.ts`, para no meter el texto de seis páginas en el paquete del navegador; **comprobado que no viaja**. **El guardián nuevo encontró cinco fallos en su primera pasada**: cinco descripciones pasadas de 155 caracteres que `check:seo-snippets` no mira. Vigila también que el sitemap siga derivando la lista de exámenes | (este bloque) |
 | 32 | E3–E6 · los cuatro dominios | ✅ Las cuatro páginas de dominio, en una sola vuelta porque cada `build` cuesta 5-7 min y compilar cuatro veces lo mismo es tiempo tirado. Verificadas a máquina las cinco del espinazo: preguntas visibles == preguntas en el `FAQPage`, `canonical`, los tres tipos de marcado y **cero enlaces a guías que no existen**. Lo que las separa de la competencia no es el temario sino el procedimiento: tapar las opciones antes de leerlas, la comprobación del *comma splice*, los falsos amigos en las transiciones | (este bloque) |
 | 31 | E2 · página madre del espinazo | ✅ `/examenes/sat/guia/reading-and-writing` con migas, `LearningResource`, `FAQPage` (8 preguntas, las mismas visibles que en el marcado) y `canonical`. **Fallo anterior descubierto al conectarla: la lista de exámenes del sitemap se escribía a mano y no tenía `sat` — el hub existía y Google no lo sabía.** Ahora se deriva de `EXAMS`. Los enlaces del clúster se filtran contra las páginas que existen, así que E3–E7 no generan 404 mientras no estén escritas | (este bloque) |
 | 30 | E1 · plan del superhub | ✅ Mirada la primera página de Google en español: la ocupan agencias de admisión con contenido genérico. **Dos huecos grandes: nadie explica los cuatro dominios en español —ese material existe solo en inglés— y nadie da un módulo real gratis, solo diagnósticos de 20 min para pedirte el teléfono.** 11 páginas priorizadas por demanda × debilidad de quien la ocupa | (este bloque) |

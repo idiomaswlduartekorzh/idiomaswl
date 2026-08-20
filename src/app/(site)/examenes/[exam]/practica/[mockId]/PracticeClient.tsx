@@ -7,6 +7,8 @@ import { saveLead } from '@/lib/actions/saveLead';
 import type { Exam } from '@/data/exams';
 import type { MockExam, MCQQuestion, MockSection, QuestionInsight } from '@/data/mocks/types';
 import { hasGuidedMock } from '@/data/icfes/guided-registry';
+import { SAT_DOMAIN_GUIDE_SLUG } from '@/data/mocks/sat/module-types';
+import type { SatDomain } from '@/data/mocks/sat/module-types';
 
 // ── Notices grid (ICFES Parte 1) ─────────────────────────────────────────────
 function NoticesGridSection({
@@ -937,6 +939,9 @@ function ResultsView({
         {domainResults
           ? domainResults.map(row => {
               const pct = row.total ? Math.round((row.correct / row.total) * 100) : 0;
+              // Saber que fallaste seis de ocho en un dominio no sirve de nada si no
+              // hay adónde ir. Cada fila lleva a la página que explica ese dominio.
+              const guia = SAT_DOMAIN_GUIDE_SLUG[row.key as SatDomain];
               return (
                 <div key={row.key} className="prac-results__sec">
                   <div className="prac-results__sec-header">
@@ -946,6 +951,14 @@ function ResultsView({
                   <div className="prac-results__bar">
                     <div className="prac-results__bar-fill" style={{ width: `${pct}%`, background: exam.color }} />
                   </div>
+                  {guia && (
+                    <Link
+                      href={`/examenes/sat/guia/${guia}`}
+                      style={{ display: 'inline-block', marginTop: 6, fontSize: '0.78rem', fontWeight: 700, color: exam.color }}
+                    >
+                      Cómo se arregla {row.label} →
+                    </Link>
+                  )}
                 </div>
               );
             })
