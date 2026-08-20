@@ -46,6 +46,12 @@ export type ExamGuide = {
   related?: { href: string; label: string; note: string }[];
   /** Fecha de última verificación, en texto. */
   checked: string;
+  /**
+   * La misma fecha en ISO (AAAA-MM-DD). Solo la usa el `dateModified` del schema:
+   * `checked` es prosa y los motores no la leen. Opcional — una guía sin ella
+   * simplemente no declara fecha, que es preferible a declararla mal.
+   */
+  checkedISO?: string;
 };
 
 export const EXAM_GUIDES: Record<string, ExamGuide> = {
@@ -59,7 +65,7 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
       {
         h: 'Qué cambió con el SAT digital',
         body: [
-          'El examen que hacían tus primos mayores ya no existe. El formato digital es el único desde marzo de 2023 para los estudiantes internacionales, y desde marzo de 2024 también dentro de Estados Unidos. Es es <strong>más corto</strong> (unas 2h 14m en vez de 3 horas), se hace en computador con una aplicación propia de College Board, y permite calculadora en toda la sección de matemáticas.',
+          'El examen que hacían tus primos mayores ya no existe. El formato digital es el único desde marzo de 2023 para los estudiantes internacionales, y desde marzo de 2024 también dentro de Estados Unidos. Es <strong>más corto</strong> (unas 2h 14m en vez de 3 horas), se hace en computador con una aplicación propia de College Board, y permite calculadora en toda la sección de matemáticas.',
           'El cambio que más afecta a cómo se estudia: <strong>cada pregunta de lectura tiene su propio texto</strong>. Antes eran cinco pasajes largos con diez preguntas cada uno; ahora son textos de un párrafo, uno por pregunta. Eso premia leer con precisión más que leer rápido.',
           'Y es <strong>adaptativo por etapas</strong>: cada sección va en dos módulos, y el segundo cambia de dificultad según cómo te fue en el primero. No puedes volver al módulo anterior una vez lo entregas.',
         ],
@@ -85,7 +91,7 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
         body: [
           'Te damos <strong>un módulo completo: 27 preguntas en 32 minutos</strong>, con los cuatro dominios en la proporción real del examen y textos originales escritos para esto.',
           'No es un examen completo, y preferimos decirlo: el SAT real tiene dos módulos por sección y el segundo se adapta a cómo te fue en el primero. Servirte dos módulos seguidos sin esa adaptación sería imitar la forma y perder lo que la forma significa. Un módulo bien hecho te dice más que un examen completo fingido.',
-          'Lo que sí garantizamos, y lo hemos medido: <strong>no se puede acertar sin leer los textos</strong>. Sometimos el simulacro a dieciséis solucionadores automáticos a los que les quitamos los pasajes, dejándoles solo las preguntas y las opciones. Acertaron el 25,5 %, que es exactamente lo que da tirar una moneda de cuatro caras. Si un simulacro se puede resolver por astucia, te da un diagnóstico falso justo cuando más lo necesitas.',
+          'Lo que sí garantizamos, y lo hemos medido: <strong>no se puede acertar sin leer los textos</strong>. Sometimos el simulacro a dieciséis solucionadores automáticos a los que les quitamos los pasajes, dejándoles solo las preguntas y las opciones. Acertaron el 23,1 %: por debajo del 25 % que daría marcar al azar entre cuatro opciones. La primera versión de este mismo simulacro sacaba 68,5 %, y hicieron falta siete mediciones y rehacer los juegos de opciones para bajarlo hasta aquí. Si un simulacro se puede resolver por astucia, te da un diagnóstico falso justo cuando más lo necesitas.',
         ],
       },
       {
@@ -182,6 +188,7 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
       { href: '/practica/ingles/b1/lectura', label: 'Práctica de lectura en inglés', note: 'Lecturas cortas con preguntas, gratis y sin registro.' },
     ],
     checked: '19 de agosto de 2026',
+    checkedISO: '2026-08-19',
   },
 
   'celpe-bras': {

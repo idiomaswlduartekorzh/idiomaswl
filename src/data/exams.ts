@@ -152,7 +152,7 @@ export const EXAMS: Record<string, Exam> = {
     color: '#6d28d9',
     colorDark: '#4c1d95',
     tagline: 'La puerta de entrada al pregrado en Estados Unidos.',
-    description: 'El SAT es el examen de admisión al pregrado en universidades de Estados Unidos. Desde 2024 es digital y adaptativo: la sección de Reading and Writing son dos módulos de 27 preguntas y 32 minutos cada uno, y el segundo módulo se ajusta a cómo te fue en el primero. Cada pregunta trae su propio texto corto —entre 25 y 150 palabras— y cuatro opciones. WeLearn prepara la sección de Reading and Writing.',
+    description: 'El SAT es el examen de admisión al pregrado en universidades de Estados Unidos. Desde marzo de 2023 fuera de Estados Unidos —Colombia incluida— y desde marzo de 2024 dentro, es digital y adaptativo: la sección de Reading and Writing son dos módulos de 27 preguntas y 32 minutos cada uno, y el segundo módulo se ajusta a cómo te fue en el primero. Cada pregunta trae su propio texto corto —entre 25 y 150 palabras— y cuatro opciones. WeLearn prepara la sección de Reading and Writing.',
     totalTime: '64 min (Reading and Writing)',
     totalQuestions: 54,
     scoreRange: '200 – 800 (sección)',

@@ -4,6 +4,7 @@ import { EXAMS } from '@/data/exams';
 import ExamInfoGraphic from './ExamInfoGraphic';
 import MockGrid from './MockGrid';
 import ExamGuideBlock from './ExamGuide';
+import ExamJsonLd from './ExamJsonLd';
 import { EXAM_GUIDES } from '@/data/examGuides';
 
 export async function generateStaticParams() {
@@ -45,6 +46,8 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
 
   return (
     <>
+      <ExamJsonLd exam={exam} guide={guide} />
+
       {/* Breadcrumb */}
       <div style={{ background: 'var(--bg-2)', borderBottom: '1px solid var(--line-soft)', padding: '0.6rem 0' }}>
         <div className="wrap" style={{ display: 'flex', alignItems: 'center', gap: 8, fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--muted)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
