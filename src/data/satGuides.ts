@@ -35,6 +35,11 @@ export type SatGuideFaq = { q: string; a: string };
 export type SatGuidePage = {
   slug: string;
   /**
+   * Bloque en el que se agrupa dentro del índice del hub. Sin esto, nueve tarjetas
+   * seguidas se leen como una lista de enlaces y no como un temario.
+   */
+  group: 'seccion' | 'dominio' | 'preparacion';
+  /**
    * Dominio del examen, si la página cubre uno. Es lo que ata el desglose por
    * dominio de la pantalla de resultados con la página que explica ese dominio:
    * el estudiante falla siete de Craft and Structure y tiene dónde ir.
@@ -67,6 +72,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
 
   {
     slug: 'reading-and-writing',
+    group: 'seccion',
     title: 'SAT Reading and Writing: qué preguntan y en qué orden',
     description: 'Las 54 preguntas de la sección, los cuatro dominios y cuánto pesa cada uno, cómo funcionan los dos módulos adaptativos y qué hacer con los 64 minutos.',
     h1: 'La sección de Reading and Writing del SAT',
@@ -167,6 +173,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
 
   {
     slug: 'craft-and-structure',
+    group: 'dominio',
     domain: 'CS',
     title: 'Craft and Structure del SAT: vocabulario en contexto y estructura',
     description: 'El dominio con más peso del SAT: qué mide Words in Context, Text Structure and Purpose y Cross-Text Connections, y cómo se responde cada uno.',
@@ -256,6 +263,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
 
   {
     slug: 'information-and-ideas',
+    group: 'dominio',
     domain: 'II',
     title: 'Information and Ideas del SAT: evidencia, inferencias y gráficas',
     description: 'Idea central, evidencia textual, evidencia con datos e inferencias en el SAT: qué se pregunta y cuál es el error que más puntos cuesta.',
@@ -333,6 +341,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
 
   {
     slug: 'standard-english-conventions',
+    group: 'dominio',
     domain: 'SEC',
     title: 'Gramática del SAT: Standard English Conventions explicado',
     description: 'Puntuación, límites de oración, concordancia, tiempos y modificadores en el SAT: el dominio de reglas cerradas y la mejora más rápida.',
@@ -415,6 +424,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
 
   {
     slug: 'expression-of-ideas',
+    group: 'dominio',
     domain: 'EOI',
     title: 'Expression of Ideas del SAT: transiciones y síntesis de notas',
     description: 'El dominio más pequeño del SAT y el más recuperable: cómo se eligen las transiciones por lógica y cómo se resuelve la síntesis de notas.',
@@ -486,6 +496,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
 
   {
     slug: 'como-estudiar-sat-desde-cero',
+    group: 'preparacion',
     title: 'Cómo estudiar para el SAT desde cero: plan por semanas',
     description: 'Un plan de preparación del SAT según el tiempo que te queda: qué estudiar primero, en qué orden y cómo usar los simulacros para que sirvan.',
     h1: 'Cómo estudiar para el SAT desde cero',
@@ -579,6 +590,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
 
   {
     slug: 'puntaje-sat-universidades',
+    group: 'preparacion',
     title: 'Qué puntaje de SAT necesitas: cómo leer el de tu universidad',
     description: 'El SAT no tiene nota de aprobado. Cómo funciona la escala 400-1600, qué es el rango del 50 % central y dónde consultar lo que pide cada universidad.',
     h1: 'Qué puntaje de SAT necesitas',
@@ -663,6 +675,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
 
   {
     slug: 'sat-desde-colombia',
+    group: 'preparacion',
     title: 'El SAT desde Colombia: inscripción, sedes y qué esperar',
     description: 'Cómo se presenta el SAT desde Colombia: la inscripción internacional, dónde se consultan sedes y fechas, y la exención de pago que no te aplica.',
     h1: 'Presentar el SAT desde Colombia',
@@ -759,6 +772,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
 
   {
     slug: 'sat-toefl-ielts-diferencias',
+    group: 'preparacion',
     title: 'SAT, TOEFL e IELTS: por qué te piden dos exámenes distintos',
     description: 'El SAT es de admisión; el TOEFL y el IELTS miden tu inglés. Qué mide cada uno, por qué las universidades piden los dos y en qué orden presentarlos.',
     h1: 'SAT, TOEFL e IELTS: para qué sirve cada uno',
@@ -829,6 +843,13 @@ export const SAT_GUIDES: SatGuidePage[] = [
   },
 
 ];
+
+/** Los tres bloques del índice, en el orden en que se leen. */
+export const SAT_GUIDE_GROUPS: { key: SatGuidePage['group']; label: string; note: string }[] = [
+  { key: 'seccion', label: 'La sección, por dentro', note: 'Cómo está construido el examen que vas a presentar.' },
+  { key: 'dominio', label: 'Los cuatro dominios', note: 'Qué se pregunta en cada uno y cómo se responde. En el orden en que aparecen.' },
+  { key: 'preparacion', label: 'Preparación y trámite', note: 'Qué estudiar, qué puntaje necesitas y cómo se presenta desde Colombia.' },
+]
 
 export const SAT_GUIDE_SLUGS = SAT_GUIDES.map(g => g.slug);
 

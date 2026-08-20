@@ -28,6 +28,8 @@ const GUIDES = path.join(ROOT, 'src/data/satGuides.ts')
 const DOMAIN_TYPES = path.join(ROOT, 'src/data/mocks/sat/module-types.ts')
 const SITEMAP = path.join(ROOT, 'src/app/sitemap.ts')
 const RUTA = path.join(ROOT, 'src/app/(site)/examenes/[exam]/guia/[slug]/page.tsx')
+const HUB = path.join(ROOT, 'src/app/(site)/examenes/[exam]/page.tsx')
+const INDICE = path.join(ROOT, 'src/app/(site)/examenes/[exam]/ExamCluster.tsx')
 
 // Tope de la descripción: el mismo que aplica check-seo-snippets a todo el sitio.
 // Por encima, Google la recorta y la promesa del resultado se parte a mitad.
@@ -92,7 +94,24 @@ if (!/Object\.keys\(EXAMS\)/.test(sitemap)) {
   fail('—', 'sitemap', 'la lista de exámenes del sitemap volvió a escribirse a mano; se deriva de EXAMS')
 }
 
-// ── Puerta 3 · cada dominio del examen tiene su página ───────────────────────
+// ── Puerta 3 · el hub enseña el clúster ──────────────────────────────────────
+//
+// Un clúster al que solo se entra por el sitemap es una lista de URLs, no un hub:
+// ni el lector lo recorre ni el rastreador reparte autoridad por él.
+if (!fs.existsSync(INDICE)) {
+  fail('—', 'hub', 'no existe ExamCluster.tsx: el hub no tiene índice del clúster')
+} else {
+  const indice = fs.readFileSync(INDICE, 'utf8')
+  if (!indice.includes('SAT_GUIDES') || !indice.includes('SAT_GUIDE_GROUPS')) {
+    fail('—', 'hub', 'el índice del hub no se genera desde SAT_GUIDES: una lista escrita a mano se queda vieja a la primera página nueva')
+  }
+}
+const hub = fs.existsSync(HUB) ? fs.readFileSync(HUB, 'utf8') : ''
+if (!hub.includes('ExamCluster')) {
+  fail('—', 'hub', '/examenes/sat no pinta el índice del clúster: a las guías solo se llegaría por el sitemap')
+}
+
+// ── Puerta 3 bis · cada dominio del examen tiene su página ───────────────────
 for (const [dominio, slug] of Object.entries(mapaDominios ?? {})) {
   const g = guias.find(x => x.slug === slug)
   if (!g) {
@@ -109,6 +128,9 @@ for (const g of guias) {
   if (!g.description) fail(s, 'metadata', 'sin description')
   else if (g.description.length > MAX_DESC) fail(s, 'metadata', `description de ${g.description.length} caracteres (máx ${MAX_DESC}): Google la recorta`)
   if (!g.h1) fail(s, 'metadata', 'sin h1')
+  if (!['seccion', 'dominio', 'preparacion'].includes(g.group)) {
+    fail(s, 'metadata', `group «${g.group}» desconocido: la página no saldría en el índice del hub`)
+  }
   if (!g.lead) fail(s, 'contenido', 'sin lead: es la frase que citan los motores de respuesta')
   if (!Array.isArray(g.sections) || g.sections.length < 3) fail(s, 'contenido', `${g.sections?.length ?? 0} secciones (mín. 3)`)
   if (!Array.isArray(g.faqs) || g.faqs.length < 3) fail(s, 'contenido', `${g.faqs?.length ?? 0} preguntas frecuentes (mín. 3)`)
@@ -169,4 +191,4 @@ if (fallos.length) {
   console.log(`\n❌ ${fallos.length} fallo(s). El clúster no se publica así.\n`)
   process.exit(1)
 }
-console.log('\n✅ Las seis puertas del clúster, superadas.\n')
+console.log('\n✅ Las siete puertas del clúster, superadas.\n')
