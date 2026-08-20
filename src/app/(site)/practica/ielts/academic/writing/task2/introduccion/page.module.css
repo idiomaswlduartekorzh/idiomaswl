@@ -8,8 +8,8 @@
   --intro-link: var(--wl-on-panel-teal, #176b87);
   --intro-ink: var(--wl-on-panel, #14244f);
   --intro-muted: var(--wl-on-panel-soft, #5c6680);
-  --intro-line: var(--wl-panel-line, #d9deea);
-  --intro-surface: var(--wl-panel-raised, #ffffff);
+  --intro-line: var(--wl-rule);
+  --intro-surface: var(--wl-surface-card);
   background: var(--wl-panel-raised, #f7f8fc);
   color: var(--intro-ink);
   min-height: 100vh;
@@ -138,7 +138,7 @@
 }
 
 .heroActions a + a {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   color: var(--intro-navy);
 }
 
@@ -245,7 +245,7 @@
 }
 
 .playerShell {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border-left: 1px solid var(--wl-panel-line, #d5dce9);
   border-right: 1px solid var(--wl-panel-line, #d5dce9);
   margin: 0 clamp(1.4rem, 4vw, 2.4rem);
@@ -410,7 +410,7 @@
 .exampleTab,
 .sentenceTab,
 .levelTabs button {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   color: var(--intro-ink);
@@ -609,7 +609,7 @@
 }
 
 .workedStepGrid > div {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--intro-line);
   border-top: 4px solid var(--intro-navy);
   border-radius: 6px;
@@ -657,7 +657,7 @@
 
 .iconButton {
   align-items: center;
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   color: var(--intro-navy);
@@ -703,7 +703,7 @@
 .planGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 1rem; }
 
 .guidedField {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   display: flex;
@@ -716,7 +716,7 @@
 .guidedField > strong { color: var(--intro-navy); }
 .guidedField > span { color: var(--intro-muted); font-size: 0.82rem; line-height: 1.45; }
 .guidedField textarea {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid #b8c1d5;
   border-radius: 5px;
   color: var(--intro-ink);
@@ -772,7 +772,7 @@
 .decisionOptions { display: flex; flex-wrap: wrap; gap: 0.65rem; }
 .decisionOptions label {
   align-items: center;
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   cursor: pointer;
@@ -794,7 +794,7 @@
   margin-top: 1rem;
   padding: 1rem;
 }
-.planReveal div { background: var(--wl-panel-raised, #fff); border: 1px solid var(--wl-panel-line, #cce5d6); padding: 0.75rem; }
+.planReveal div { background: var(--wl-surface-card); border: 1px solid var(--wl-panel-line, #cce5d6); padding: 0.75rem; }
 .planReveal p { line-height: 1.5; margin: 0.25rem 0 0; }
 
 .sentenceGrid {
@@ -805,7 +805,7 @@
 }
 
 .sentenceMini {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   padding: 1rem;
@@ -936,7 +936,7 @@
 .option,
 .blockChoices button {
   align-items: flex-start;
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   color: var(--intro-ink);
@@ -1012,7 +1012,7 @@
 
 .assemblyBlock {
   align-items: flex-start;
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border-left: 4px solid var(--intro-link);
   display: flex;
   gap: 0.65rem;
@@ -1024,7 +1024,7 @@
 
 .writer,
 .essayWriter {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid #b8c1d5;
   border-radius: 6px;
   color: var(--intro-ink);
@@ -1128,7 +1128,7 @@
 }
 
 .nextLinks a {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   color: var(--intro-navy);
@@ -1148,7 +1148,7 @@
 .pathCard,
 .studyCard,
 .sequenceCard {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--intro-line);
   border-radius: 7px;
   color: var(--intro-ink);
@@ -1250,7 +1250,7 @@
 }
 
 .bodyFormula span {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--intro-line);
   border-radius: 5px;
   padding: 0.55rem 0.7rem;
@@ -1290,7 +1290,7 @@
 .modelBlockGrid small { display: block; line-height: 1.45; margin-top: 0.65rem; opacity: 0.78; }
 
 .completeParagraph {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   color: var(--intro-ink);
@@ -1391,7 +1391,7 @@
 
 .levelButton {
   align-items: center;
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--intro-line);
   border-radius: 6px;
   color: var(--intro-navy);
@@ -1430,7 +1430,7 @@
 
 .assemblyWorkspace button {
   align-items: center;
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--intro-line);
   border-left: 4px solid var(--intro-link);
   color: var(--intro-ink);
@@ -1446,7 +1446,7 @@
 
 .engineTextarea,
 .paragraphBuilder textarea {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid #b8c1d5;
   border-radius: 6px;
   color: var(--intro-ink);
@@ -1518,7 +1518,7 @@
 }
 
 .secondaryButton {
-  background: var(--wl-panel-raised, #fff) !important;
+  background: var(--wl-surface-card) !important;
   border: 1px solid var(--intro-line) !important;
   color: var(--intro-navy) !important;
 }
@@ -1534,7 +1534,7 @@
 .engineNav button,
 .timerRow button {
   align-items: center;
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--intro-line);
   border-radius: 5px;
   color: var(--intro-navy);
@@ -1579,7 +1579,7 @@
    que son exactamente las tres cosas que la conclusión tiene que recoger. Aparece al
    acertar, no antes, porque antes sería la respuesta. */
 .essaySoFar {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--intro-line);
   border-radius: 8px;
   margin: 0 0 1.15rem;
@@ -1604,7 +1604,7 @@
 
 /* `box-decoration-break: clone` para que el fondo no se rompa al saltar de línea. */
 .essayHighlight {
-  background: var(--wl-panel-tint-warn, #fff3c4);
+  background: var(--wl-tint-warn);
   border-bottom: 2px solid #b7791f;
   border-radius: 3px;
   box-decoration-break: clone;
@@ -1642,7 +1642,7 @@
 /* Fichas del selector: mismo trato que `.exampleTab`, pero en bloque, porque aquí el texto
    es un enunciado entero y no cabe en una pestaña. */
 .promptChoice {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--intro-line);
   border-radius: 8px;
   cursor: pointer;
@@ -1676,7 +1676,7 @@
 .bandRow { display: flex; flex-wrap: wrap; gap: 0.3rem; }
 
 .bandButton {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--intro-line);
   border-radius: 5px;
   cursor: pointer;
@@ -1697,7 +1697,7 @@
    las dos, dicho sin jerga. Los colores son los mismos que usa el resto del curso para
    distinguir funciones dentro de un párrafo. */
 .mechanic {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--intro-line);
   border-radius: 8px;
   display: grid;
@@ -1731,7 +1731,7 @@
 }
 
 .mechanicHinge span {
-  background: var(--wl-panel-tint-warn, #fff3c4);
+  background: var(--wl-tint-warn);
   border: 1px solid #b7791f;
   border-radius: 999px;
   color: var(--wl-on-panel-warn, #7a4f10);
@@ -1771,8 +1771,8 @@
   text-align: center;
 }
 
-.gapButton:hover { background: var(--wl-panel-tint-warn, #fff3c4); }
-.gapOpen { background: var(--wl-panel-tint-warn, #fff3c4); box-shadow: 0 0 0 2px #f0c86a; }
+.gapButton:hover { background: var(--wl-tint-warn); }
+.gapOpen { background: var(--wl-tint-warn); box-shadow: 0 0 0 2px #f0c86a; }
 .gapRight { background: var(--wl-panel-raised, #e6f6ec); border-bottom-color: var(--intro-green); color: var(--intro-green); }
 .gapWrong { background: var(--wl-panel-raised, #fdecee); border-bottom-color: var(--intro-red); color: var(--intro-red); }
 
@@ -1788,7 +1788,7 @@
 }
 
 .gapPopover {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--intro-line);
   border-radius: 8px;
   box-shadow: 0 8px 24px rgb(20 36 79 / 14%);
@@ -1802,7 +1802,7 @@
 }
 
 .gapChoice {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--intro-line);
   border-radius: 5px;
   cursor: pointer;
@@ -1825,7 +1825,7 @@
   outline: none;
 }
 
-.gapField:focus { background: var(--wl-panel-tint-warn, #fff3c4); box-shadow: 0 0 0 2px #f0c86a; }
+.gapField:focus { background: var(--wl-tint-warn); box-shadow: 0 0 0 2px #f0c86a; }
 .gapField.gapNeutral:focus { background: var(--wl-panel-raised, #e3e8f2); box-shadow: 0 0 0 2px #97a2ba; }
 .gapField::placeholder { color: var(--wl-on-panel-warn, #b7791f); opacity: 0.75; }
 
@@ -1855,7 +1855,7 @@
 }
 
 .promptInstruction {
-  background: var(--wl-panel-tint-warn, #fff3c4);
+  background: var(--wl-tint-warn);
   border-bottom: 2px solid #b7791f;
   color: var(--intro-ink);
   font-weight: 700;
@@ -1917,7 +1917,7 @@
 }
 
 .readingAnswer p {
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   border: 1px solid var(--intro-line);
   border-radius: 5px;
   line-height: 1.6;

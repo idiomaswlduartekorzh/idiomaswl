@@ -229,8 +229,8 @@ export default function MicroExplanation({ onComplete }: Props) {
         <p style={{ margin: '0 0 8px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700 }}>
           SECCIÓN 7 DE 11
         </p>
-        <h3 style={{ margin: '0 0 8px', fontSize: 24, fontWeight: 700, color: 'var(--wl-on-panel, #1a1a2e)' }}>Micro explicación</h3>
-        <p style={{ margin: '0 0 20px', fontSize: 14, color: 'var(--wl-on-panel-soft, #6c757d)', lineHeight: 1.7 }}>
+        <h3 style={{ margin: '0 0 8px', fontSize: 24, fontWeight: 700, color: 'var(--wl-ink)' }}>Micro explicación</h3>
+        <p style={{ margin: '0 0 20px', fontSize: 14, color: 'var(--wl-ink-soft)', lineHeight: 1.7 }}>
           En coreano, la acción suele ir al final de la frase.
         </p>
 
@@ -247,7 +247,7 @@ export default function MicroExplanation({ onComplete }: Props) {
           </div>
           <div style={{ display: 'flex', justifyContent: 'center', gap: 24, marginTop: 8 }}>
             {CORE_BLOCKS.map((block) => (
-              <p key={`${block.korean}-label`} style={{ margin: 0, fontSize: 10, color: 'var(--wl-on-panel-soft, #6c757d)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>
+              <p key={`${block.korean}-label`} style={{ margin: 0, fontSize: 10, color: 'var(--wl-ink-soft)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>
                 {block.role}
               </p>
             ))}
@@ -258,7 +258,7 @@ export default function MicroExplanation({ onComplete }: Props) {
           <button
             type="button"
             onClick={() => playAudio('학교에 가요', 1)}
-            style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 100, padding: '4px 12px', fontSize: 12, color: 'var(--wl-on-panel-soft, #6c757d)', cursor: 'pointer' }}
+            style={{ background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 100, padding: '4px 12px', fontSize: 12, color: 'var(--wl-ink-soft)', cursor: 'pointer' }}
           >
             🔊 Escuchar frase
           </button>
@@ -266,26 +266,26 @@ export default function MicroExplanation({ onComplete }: Props) {
 
         <article style={{ background: 'var(--wl-panel-raised, #f8f9fa)', border: '1px solid #e9ecef', borderRadius: 12, padding: 16, marginBottom: 16 }}>
           <div style={{ marginBottom: 8 }}>
-            <p style={{ margin: '0 0 4px', fontSize: 10, color: 'var(--wl-on-panel-soft, #6c757d)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>Español natural:</p>
-            <p style={{ margin: 0, fontSize: 13, color: 'var(--wl-on-panel-soft, #6c757d)' }}>Yo voy a la escuela.</p>
+            <p style={{ margin: '0 0 4px', fontSize: 10, color: 'var(--wl-ink-soft)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>Español natural:</p>
+            <p style={{ margin: 0, fontSize: 13, color: 'var(--wl-ink-soft)' }}>Yo voy a la escuela.</p>
           </div>
           <div style={{ marginBottom: 8 }}>
-            <p style={{ margin: '0 0 4px', fontSize: 10, color: 'var(--wl-on-panel-soft, #6c757d)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>Orden coreano:</p>
+            <p style={{ margin: '0 0 4px', fontSize: 10, color: 'var(--wl-ink-soft)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>Orden coreano:</p>
             <p style={{ margin: 0, fontSize: 13, color: '#e6930a' }}>Yo a la escuela <strong style={{ color: 'var(--wl-on-panel-ok, #2d9b4e)' }}>voy</strong>.</p>
           </div>
           <div>
-            <p style={{ margin: '0 0 4px', fontSize: 10, color: 'var(--wl-on-panel-soft, #6c757d)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>Coreano:</p>
+            <p style={{ margin: '0 0 4px', fontSize: 10, color: 'var(--wl-ink-soft)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>Coreano:</p>
             <p style={{ margin: 0, fontFamily: "'Noto Sans KR', sans-serif", fontSize: 18, color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700 }}>저는 학교에 가요.</p>
           </div>
         </article>
 
         <article style={{ background: 'rgba(45,155,78,0.05)', border: '1px solid rgba(45,155,78,0.15)', borderRadius: 10, padding: 14, fontSize: 13, lineHeight: 1.8, marginBottom: 16 }}>
           {SPANISH_ORDER_TEXT.lines.map((line) => (
-            <p key={line.text} style={{ margin: '0 0 6px', color: 'var(--wl-on-panel, #1a1a2e)' }}>
+            <p key={line.text} style={{ margin: '0 0 6px', color: 'var(--wl-ink)' }}>
               <HighlightLine text={line.text} highlight={line.highlight} />
             </p>
           ))}
-          <p style={{ margin: 0, color: 'var(--wl-on-panel-soft, #6c757d)', fontSize: 11, fontStyle: 'italic' }}>{SPANISH_ORDER_TEXT.note}</p>
+          <p style={{ margin: 0, color: 'var(--wl-ink-soft)', fontSize: 11, fontStyle: 'italic' }}>{SPANISH_ORDER_TEXT.note}</p>
         </article>
 
         <NextButton label="Ver la estructura →" onClick={() => goToPhase('structure')} />
@@ -296,15 +296,15 @@ export default function MicroExplanation({ onComplete }: Props) {
   function renderStructurePhase() {
     return (
       <div key="structure" style={{ animation: 'fadeIn 0.3s ease' }}>
-        <h3 style={{ margin: '0 0 4px', fontSize: 20, fontWeight: 700, color: 'var(--wl-on-panel, #1a1a2e)' }}>La frase tiene 3 partes</h3>
-        <p style={{ margin: '0 0 20px', fontSize: 13, color: 'var(--wl-on-panel-soft, #6c757d)' }}>Cada parte tiene un trabajo.</p>
+        <h3 style={{ margin: '0 0 4px', fontSize: 20, fontWeight: 700, color: 'var(--wl-ink)' }}>La frase tiene 3 partes</h3>
+        <p style={{ margin: '0 0 20px', fontSize: 13, color: 'var(--wl-ink-soft)' }}>Cada parte tiene un trabajo.</p>
 
         <div style={{ marginBottom: 12 }}>
           {CORE_BLOCKS.map((block) => (
             <article
               key={block.korean}
               style={{
-                background: 'var(--wl-panel-raised, #fff)',
+                background: 'var(--wl-surface-card)',
                 border: `2px solid ${colorAlpha(block.color, '25')}`,
                 borderLeft: `4px solid ${block.color}`,
                 borderRadius: 12,
@@ -327,8 +327,8 @@ export default function MicroExplanation({ onComplete }: Props) {
                   🔊
                 </button>
               </div>
-              <p style={{ margin: '6px 0 0', fontSize: 13, color: 'var(--wl-on-panel-soft, #6c757d)', textAlign: 'center' }}>{block.translation}</p>
-              <p style={{ margin: '8px 0 0', fontSize: 12, color: 'var(--wl-on-panel, #1a1a2e)', lineHeight: 1.6 }}>
+              <p style={{ margin: '6px 0 0', fontSize: 13, color: 'var(--wl-ink-soft)', textAlign: 'center' }}>{block.translation}</p>
+              <p style={{ margin: '8px 0 0', fontSize: 12, color: 'var(--wl-ink)', lineHeight: 1.6 }}>
                 {block.role === 'ejecutor' && 'El que realiza la acción. Siempre va primero.'}
                 {block.role === 'complemento' && 'Todo lo que está entre el ejecutor y el verbo. Aquí van el lugar, el tiempo, el objeto...'}
                 {block.role === 'verbo' && 'La acción. Siempre al final. Sin excepciones.'}
@@ -337,8 +337,8 @@ export default function MicroExplanation({ onComplete }: Props) {
           ))}
         </div>
 
-        <article style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 12, padding: 16, textAlign: 'center', marginBottom: 20 }}>
-          <p style={{ margin: '0 0 10px', fontSize: 11, color: 'var(--wl-on-panel-soft, #6c757d)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>La frase completa</p>
+        <article style={{ background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 12, padding: 16, textAlign: 'center', marginBottom: 20 }}>
+          <p style={{ margin: '0 0 10px', fontSize: 11, color: 'var(--wl-ink-soft)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>La frase completa</p>
           <div style={{ display: 'inline-flex', gap: 8, justifyContent: 'center', flexWrap: 'wrap' }}>
             {CORE_BLOCKS.map((block) => (
               <button
@@ -368,13 +368,13 @@ export default function MicroExplanation({ onComplete }: Props) {
 
     return (
       <div key="complement" style={{ animation: 'fadeIn 0.3s ease' }}>
-        <h3 style={{ margin: '0 0 4px', fontSize: 20, fontWeight: 700, color: 'var(--wl-on-panel, #1a1a2e)' }}>Dentro del complemento</h3>
-        <p style={{ margin: '0 0 20px', fontSize: 13, color: 'var(--wl-on-panel-soft, #6c757d)' }}>
+        <h3 style={{ margin: '0 0 4px', fontSize: 20, fontWeight: 700, color: 'var(--wl-ink)' }}>Dentro del complemento</h3>
+        <p style={{ margin: '0 0 20px', fontSize: 13, color: 'var(--wl-ink-soft)' }}>
           El complemento puede tener varias piezas. Cada una tiene su posición.
         </p>
 
-        <article style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 16, padding: 20, marginBottom: 20, overflow: 'hidden' }}>
-          <p style={{ margin: '0 0 16px', fontSize: 10, color: 'var(--wl-on-panel-soft, #6c757d)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>
+        <article style={{ background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 16, padding: 20, marginBottom: 20, overflow: 'hidden' }}>
+          <p style={{ margin: '0 0 16px', fontSize: 10, color: 'var(--wl-ink-soft)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>
             Orden dentro del complemento
           </p>
 
@@ -399,7 +399,7 @@ export default function MicroExplanation({ onComplete }: Props) {
                   <p style={{ margin: 0, fontFamily: "'Noto Sans KR', sans-serif", fontSize: 16, fontWeight: 700, color: piece.available ? piece.color : '#adb5bd' }}>
                     {piece.example_kr}
                   </p>
-                  <p style={{ margin: '2px 0 0', fontSize: 10, color: 'var(--wl-on-panel-soft, #6c757d)' }}>{piece.example_es}</p>
+                  <p style={{ margin: '2px 0 0', fontSize: 10, color: 'var(--wl-ink-soft)' }}>{piece.example_es}</p>
                   {!piece.available ? (
                     <span style={{ position: 'absolute', top: -8, right: -4, background: 'var(--wl-panel-raised, #e9ecef)', color: '#adb5bd', fontSize: 8, borderRadius: 100, padding: '1px 5px' }}>
                       próximo
@@ -432,9 +432,9 @@ export default function MicroExplanation({ onComplete }: Props) {
         </article>
 
         {availablePiece ? (
-          <article style={{ background: 'var(--wl-panel-raised, #fff)', border: `1px solid ${colorAlpha(availablePiece.color, '40')}`, borderLeft: `3px solid ${availablePiece.color}`, borderRadius: 12, padding: 16, marginBottom: 10 }}>
+          <article style={{ background: 'var(--wl-surface-card)', border: `1px solid ${colorAlpha(availablePiece.color, '40')}`, borderLeft: `3px solid ${availablePiece.color}`, borderRadius: 12, padding: 16, marginBottom: 10 }}>
             <h4 style={{ margin: '0 0 8px', color: availablePiece.color, fontSize: 14, fontWeight: 700 }}>El lugar · {availablePiece.label}</h4>
-            <p style={{ margin: '0 0 12px', fontSize: 12, color: 'var(--wl-on-panel-soft, #6c757d)', lineHeight: 1.6 }}>{availablePiece.note}</p>
+            <p style={{ margin: '0 0 12px', fontSize: 12, color: 'var(--wl-ink-soft)', lineHeight: 1.6 }}>{availablePiece.note}</p>
 
             <div style={{ background: colorAlpha(availablePiece.color, '06'), border: `1px solid ${colorAlpha(availablePiece.color, '15')}`, borderRadius: 10, padding: 14, marginBottom: 12 }}>
               <p style={{ margin: '0 0 8px', fontSize: 12, fontWeight: 700, color: availablePiece.color }}>La partícula 에</p>
@@ -443,12 +443,12 @@ export default function MicroExplanation({ onComplete }: Props) {
                   const base = variant.kr.replace('에', '');
                   return (
                     <div key={variant.kr} style={{ display: 'grid', gridTemplateColumns: '1fr auto auto auto auto auto auto', gap: 6, alignItems: 'center', marginBottom: 8 }}>
-                      <span style={{ fontFamily: "'Noto Sans KR', sans-serif", fontSize: 16, color: 'var(--wl-on-panel, #1a1a2e)' }}>{base}</span>
+                      <span style={{ fontFamily: "'Noto Sans KR', sans-serif", fontSize: 16, color: 'var(--wl-ink)' }}>{base}</span>
                       <span style={{ color: '#adb5bd', fontSize: 12 }}>+</span>
                       <span style={{ fontFamily: "'Noto Sans KR', sans-serif", fontSize: 16, color: availablePiece.color, fontWeight: 700 }}>에</span>
                       <span style={{ color: '#adb5bd', fontSize: 12 }}>=</span>
                       <span style={{ fontFamily: "'Noto Sans KR', sans-serif", fontSize: 18, color: availablePiece.color, fontWeight: 700 }}>{variant.kr}</span>
-                      <span style={{ fontSize: 10, color: 'var(--wl-on-panel-soft, #6c757d)' }}>{variant.es}</span>
+                      <span style={{ fontSize: 10, color: 'var(--wl-ink-soft)' }}>{variant.es}</span>
                       <button
                         type="button"
                         onClick={() => playAudio(variant.kr, 1)}
@@ -462,7 +462,7 @@ export default function MicroExplanation({ onComplete }: Props) {
               </div>
             </div>
 
-            <p style={{ margin: '0 0 8px', fontSize: 11, color: 'var(--wl-on-panel-soft, #6c757d)' }}>Puedes cambiar el lugar:</p>
+            <p style={{ margin: '0 0 8px', fontSize: 11, color: 'var(--wl-ink-soft)' }}>Puedes cambiar el lugar:</p>
             <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
               {availablePiece.variants?.map((variant) => (
                 <div key={`${variant.kr}-pill`} style={{ textAlign: 'center' }}>
@@ -473,7 +473,7 @@ export default function MicroExplanation({ onComplete }: Props) {
                   >
                     {variant.kr}
                   </button>
-                  <p style={{ margin: '3px 0 0', fontSize: 10, color: 'var(--wl-on-panel-soft, #6c757d)' }}>{variant.es}</p>
+                  <p style={{ margin: '3px 0 0', fontSize: 10, color: 'var(--wl-ink-soft)' }}>{variant.es}</p>
                 </div>
               ))}
             </div>
@@ -502,31 +502,31 @@ export default function MicroExplanation({ onComplete }: Props) {
 
     return (
       <div key="particles" style={{ animation: 'fadeIn 0.3s ease' }}>
-        <h3 style={{ margin: '0 0 4px', fontSize: 20, fontWeight: 700, color: 'var(--wl-on-panel, #1a1a2e)' }}>La partícula 에</h3>
-        <p style={{ margin: '0 0 20px', fontSize: 13, color: 'var(--wl-on-panel-soft, #6c757d)' }}>
+        <h3 style={{ margin: '0 0 4px', fontSize: 20, fontWeight: 700, color: 'var(--wl-ink)' }}>La partícula 에</h3>
+        <p style={{ margin: '0 0 20px', fontSize: 13, color: 'var(--wl-ink-soft)' }}>
           No es una preposición. Es una posposición. Va después, pegada.
         </p>
 
         <article style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 1, background: 'var(--wl-panel-raised, #e9ecef)', borderRadius: 14, overflow: 'hidden', marginBottom: 20 }}>
-          <div style={{ background: 'var(--wl-panel-raised, #fff)', padding: 20, textAlign: 'center' }}>
-            <p style={{ margin: '0 0 12px', fontSize: 9, color: 'var(--wl-on-panel-soft, #6c757d)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>Español</p>
-            <p style={{ margin: '0 0 4px', fontSize: 48, fontWeight: 700, color: 'var(--wl-on-panel-soft, #6c757d)' }}>a</p>
-            <p style={{ margin: '0 0 4px', color: 'var(--wl-on-panel-soft, #6c757d)' }}>↓</p>
-            <p style={{ margin: 0, fontSize: 14, color: 'var(--wl-on-panel-soft, #6c757d)' }}>la escuela</p>
+          <div style={{ background: 'var(--wl-surface-card)', padding: 20, textAlign: 'center' }}>
+            <p style={{ margin: '0 0 12px', fontSize: 9, color: 'var(--wl-ink-soft)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>Español</p>
+            <p style={{ margin: '0 0 4px', fontSize: 48, fontWeight: 700, color: 'var(--wl-ink-soft)' }}>a</p>
+            <p style={{ margin: '0 0 4px', color: 'var(--wl-ink-soft)' }}>↓</p>
+            <p style={{ margin: 0, fontSize: 14, color: 'var(--wl-ink-soft)' }}>la escuela</p>
             <p style={{ margin: '8px 0 0', fontSize: 10, color: 'var(--wl-on-panel-alert, #dc3545)' }}>preposición ANTES</p>
           </div>
-          <div style={{ background: 'var(--wl-panel-raised, #fff)', padding: 20, textAlign: 'center' }}>
+          <div style={{ background: 'var(--wl-surface-card)', padding: 20, textAlign: 'center' }}>
             <p style={{ margin: '0 0 12px', fontSize: 9, color: 'var(--wl-on-panel-link, #6c63ff)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>Coreano</p>
             <p style={{ margin: '0 0 4px', fontFamily: "'Noto Sans KR', sans-serif", fontSize: 48, fontWeight: 700, color: '#e6930a' }}>에</p>
-            <p style={{ margin: '0 0 4px', color: 'var(--wl-on-panel-soft, #6c757d)' }}>↓</p>
-            <p style={{ margin: 0, fontFamily: "'Noto Sans KR', sans-serif", fontSize: 16, color: 'var(--wl-on-panel, #1a1a2e)' }}>학교<span style={{ color: '#e6930a', fontWeight: 700, borderRadius: 4, padding: '0 3px' }}>에</span></p>
+            <p style={{ margin: '0 0 4px', color: 'var(--wl-ink-soft)' }}>↓</p>
+            <p style={{ margin: 0, fontFamily: "'Noto Sans KR', sans-serif", fontSize: 16, color: 'var(--wl-ink)' }}>학교<span style={{ color: '#e6930a', fontWeight: 700, borderRadius: 4, padding: '0 3px' }}>에</span></p>
             <p style={{ margin: '8px 0 0', fontSize: 10, color: 'var(--wl-on-panel-ok, #2d9b4e)' }}>posposición DESPUÉS</p>
           </div>
         </article>
 
         <div style={{ marginBottom: 20 }}>
           {transforms.map((row) => (
-            <div key={row.result} style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12, background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 10, padding: 12 }}>
+            <div key={row.result} style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12, background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 10, padding: 12 }}>
               <span style={{ fontFamily: "'Noto Sans KR', sans-serif", fontSize: 18, background: 'rgba(230,147,10,0.1)', borderRadius: 8, padding: '4px 8px' }}>{row.base}</span>
               <span style={{ fontFamily: "'Noto Sans KR', sans-serif", fontSize: 16, background: 'rgba(230,147,10,0.14)', borderRadius: 8, padding: '4px 8px' }}>에</span>
               <span style={{ color: '#adb5bd' }}>=</span>
@@ -561,14 +561,14 @@ export default function MicroExplanation({ onComplete }: Props) {
 
     return (
       <div key="practice" style={{ animation: 'fadeIn 0.3s ease' }}>
-        <h3 style={{ margin: '0 0 4px', fontSize: 20, fontWeight: 700, color: 'var(--wl-on-panel, #1a1a2e)' }}>Identifica las partes</h3>
-        <p style={{ margin: '0 0 20px', fontSize: 13, color: 'var(--wl-on-panel-soft, #6c757d)' }}>3 frases. Toca el bloque que se pide.</p>
+        <h3 style={{ margin: '0 0 4px', fontSize: 20, fontWeight: 700, color: 'var(--wl-ink)' }}>Identifica las partes</h3>
+        <p style={{ margin: '0 0 20px', fontSize: 13, color: 'var(--wl-ink-soft)' }}>3 frases. Toca el bloque que se pide.</p>
 
-        <article style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 12, padding: 16 }}>
+        <article style={{ background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 12, padding: 16 }}>
           <button
             type="button"
             onClick={() => playAudio(practiceItem.audio, 1)}
-            style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 100, padding: '4px 12px', fontSize: 12, color: 'var(--wl-on-panel-soft, #6c757d)', cursor: 'pointer', marginBottom: 14 }}
+            style={{ background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 100, padding: '4px 12px', fontSize: 12, color: 'var(--wl-ink-soft)', cursor: 'pointer', marginBottom: 14 }}
           >
             🔊 Escuchar la frase
           </button>
@@ -605,7 +605,7 @@ export default function MicroExplanation({ onComplete }: Props) {
             })}
           </div>
 
-          <p style={{ margin: '0 0 16px', fontSize: 15, fontWeight: 600, color: 'var(--wl-on-panel, #1a1a2e)', textAlign: 'center' }}>{practiceItem.question}</p>
+          <p style={{ margin: '0 0 16px', fontSize: 15, fontWeight: 600, color: 'var(--wl-ink)', textAlign: 'center' }}>{practiceItem.question}</p>
 
           {!checkedPractice ? (
             <button
@@ -637,9 +637,9 @@ export default function MicroExplanation({ onComplete }: Props) {
   function renderCompletePhase() {
     return (
       <div key="complete" style={{ animation: 'fadeIn 0.3s ease' }}>
-        <h3 style={{ margin: '0 0 10px', fontSize: 22, fontWeight: 700, color: 'var(--wl-on-panel, #1a1a2e)', textAlign: 'center' }}>Lo que aprendiste</h3>
+        <h3 style={{ margin: '0 0 10px', fontSize: 22, fontWeight: 700, color: 'var(--wl-ink)', textAlign: 'center' }}>Lo que aprendiste</h3>
 
-        <article style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 14, padding: 16, marginBottom: 16 }}>
+        <article style={{ background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 14, padding: 16, marginBottom: 16 }}>
           <div style={{ display: 'flex', gap: 10, marginBottom: 12 }}>
             {CORE_BLOCKS.map((block) => (
               <div key={`${block.korean}-summary`} style={{ width: '33%', textAlign: 'center', border: `1px solid ${colorAlpha(block.color, '30')}`, background: colorAlpha(block.color, '10'), borderRadius: 10, padding: '10px 8px' }}>
@@ -654,7 +654,7 @@ export default function MicroExplanation({ onComplete }: Props) {
             <p style={{ margin: '2px 0 0', fontSize: 10, color: '#e6930a' }}>complemento</p>
           </div>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: 6, justifyContent: 'center', fontSize: 11, color: 'var(--wl-on-panel-soft, #6c757d)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 6, justifyContent: 'center', fontSize: 11, color: 'var(--wl-ink-soft)' }}>
             <span style={{ padding: '3px 8px', borderRadius: 100, background: 'var(--wl-panel-raised, #f8f9fa)' }}>tiempo</span>
             <span>→</span>
             <span style={{ padding: '3px 8px', borderRadius: 100, background: 'rgba(230,147,10,0.1)', color: '#e6930a' }}>lugar ✓</span>
@@ -673,7 +673,7 @@ export default function MicroExplanation({ onComplete }: Props) {
             '🔗 La partícula 에 marca el destino. Va pegada después del lugar.',
             '📐 Dentro del complemento: primero el tiempo, luego el lugar, luego el objeto, luego la manera.',
           ].map((rule) => (
-            <article key={rule} style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 10, padding: '12px 16px', marginBottom: 8, display: 'flex', gap: 10, alignItems: 'flex-start', fontSize: 13, color: 'var(--wl-on-panel, #1a1a2e)' }}>
+            <article key={rule} style={{ background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 10, padding: '12px 16px', marginBottom: 8, display: 'flex', gap: 10, alignItems: 'flex-start', fontSize: 13, color: 'var(--wl-ink)' }}>
               {rule}
             </article>
           ))}
@@ -689,7 +689,7 @@ export default function MicroExplanation({ onComplete }: Props) {
               key={row.text}
               type="button"
               onClick={() => playAudio(row.audio, 1)}
-              style={{ fontFamily: "'Noto Sans KR', sans-serif", fontSize: 14, display: 'inline-flex', gap: 8, alignItems: 'center', background: 'var(--wl-panel-raised, #f8f9fa)', border: '1px solid #e9ecef', borderRadius: 8, padding: '8px 12px', cursor: 'pointer', color: 'var(--wl-on-panel, #1a1a2e)' }}
+              style={{ fontFamily: "'Noto Sans KR', sans-serif", fontSize: 14, display: 'inline-flex', gap: 8, alignItems: 'center', background: 'var(--wl-panel-raised, #f8f9fa)', border: '1px solid #e9ecef', borderRadius: 8, padding: '8px 12px', cursor: 'pointer', color: 'var(--wl-ink)' }}
             >
               {row.text}
             </button>
@@ -697,7 +697,7 @@ export default function MicroExplanation({ onComplete }: Props) {
         </div>
 
         <p style={{ margin: '16px 0 0', fontSize: 11, color: 'var(--wl-on-panel-link, #6c63ff)', textAlign: 'center' }}>Nombrar el patrón detectado con palabras simples.</p>
-        <p style={{ margin: '10px 0 0', fontSize: 11, color: 'var(--wl-on-panel-soft, #6c757d)', textAlign: 'center' }}>Score de práctica: {practiceScore}/{PRACTICE_ITEMS.length}</p>
+        <p style={{ margin: '10px 0 0', fontSize: 11, color: 'var(--wl-ink-soft)', textAlign: 'center' }}>Score de práctica: {practiceScore}/{PRACTICE_ITEMS.length}</p>
       </div>
     );
   }

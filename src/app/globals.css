@@ -2631,7 +2631,20 @@ button {
 .prac-results__score {
   font-size: clamp(4rem, 10vw, 6rem);
   font-weight: 900;
-  color: var(--exam-color, var(--accent));
+  /* Este número se pinta sobre .prac-results__hero, cuyo fondo es --ink-bg
+     (#14215c en claro, #101722 en oscuro). El acento del examen en crudo NO es
+     legible ahí: 2,11:1 el morado del SAT (#6d28d9), 1,26:1 el azul del TOPIK y
+     1,00:1 el azul marino del ICFES —literalmente el mismo color que el fondo—.
+     Seis de los ocho exámenes quedaban por debajo del mínimo de 3:1 que pide un
+     texto grande, y el remapeo de modo oscuro de más abajo no los rescata,
+     porque el hero declara su propio --exam-color en línea y ese gana sobre el
+     de .prac-shell.
+     Se conserva la identidad del examen subiendo su acento hacia la tinta que
+     el sistema ya define para superficies inversas (--wl-on-inverse). Peor caso
+     tras la mezcla, el ICFES: 5,45:1 en claro y 6,20:1 en oscuro.
+     Si el navegador no entiende color-mix, la declaración se descarta y el
+     número hereda el #fff del hero, que también es legible. */
+  color: color-mix(in srgb, var(--exam-color, var(--accent)) 45%, var(--wl-on-inverse, #fff));
   letter-spacing: -0.05em;
   line-height: 1;
   margin-bottom: 0.2rem;
@@ -3027,7 +3040,27 @@ button {
   letter-spacing: 0.01em;
 }
 
-/* ── ICFES shared passage (Parts 4–7) ────────────────────────────────────── */
+/* ── Caja de pasaje ───────────────────────────────────────────────────────
+   La misma caja sirve a dos cosas distintas, y solo una aguanta un tope de alto:
+
+   1) Pasaje COMPARTIDO de sección (ICFES, Partes 4–7): un único texto sirve a
+      varias preguntas. Ahí el tope de 340 px es correcto — sin él, el texto
+      empuja la pregunta fuera de la pantalla en cada ítem de esa parte.
+
+   2) Texto PROPIO del ítem (SAT: cada pregunta trae el suyo, de 25 a 156
+      palabras, con stimulusStyle: 'passage'). Ahí el tope esconde justo aquello
+      por lo que se pregunta: medidos los 27 ítems del set 1 a 375 px de ancho,
+      los 27 se recortan y en 8 de ellos el hueco `______` cae por debajo del
+      área visible. Y el scroll anidado no pinta barra en iOS, así que el
+      estudiante ni siquiera sabe que hay más texto debajo.
+
+   Para el caso (2) el componente debe pintar la caja con LAS DOS clases:
+
+       className="prac-passage-box prac-passage-box--item"
+
+   (StimulusBox, en src/app/(site)/examenes/[exam]/practica/[mockId]/
+   PracticeClient.tsx, rama `style === 'passage'`.)
+   El nombre exacto del modificador es: prac-passage-box--item */
 .prac-passage-box {
   background: var(--wl-panel-raised, #fafafa);
   border: 1px solid var(--wl-panel-line, #dde1ea);
@@ -3036,6 +3069,22 @@ button {
   margin-bottom: 1.4rem;
   max-height: 340px;
   overflow-y: auto;
+}
+
+/* Red de seguridad para el pasaje compartido: en un teléfono, 340 px son unas
+   10 líneas. Se sube el tope sin bajar nunca del de escritorio — max() protege
+   el móvil en horizontal, donde 68vh sería menos que 340 px. */
+@media (max-width: 768px) {
+  .prac-passage-box { max-height: max(340px, 68vh); }
+}
+
+/* El texto que pertenece al ítem no se recorta nunca: sin tope y sin scroll
+   anidado. El selector va doblado a propósito, para que gane sobre cualquier
+   regla de una sola clase esté donde esté en el archivo — incluida la media
+   query de aquí arriba, que si no la sobrescribiría en móvil. */
+.prac-passage-box.prac-passage-box--item {
+  max-height: none;
+  overflow-y: visible;
 }
 .prac-passage-box__label {
   font-size: 0.68rem;
@@ -4361,7 +4410,18 @@ button {
   font-size: 0.9rem;
   transition: border-color 0.12s, background 0.12s;
 }
-.ielts-multiselect__opt input[type="checkbox"] { display: none; }
+.ielts-multiselect__opt { position: relative; }
+.ielts-multiselect__opt input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+.ielts-multiselect__opt:focus-within {
+  outline: 3px solid #f2c748;
+  outline-offset: 2px;
+}
 .ielts-multiselect__opt:hover:not(.ielts-multiselect__opt--disabled) { border-color: var(--accent); }
 .ielts-multiselect__opt--checked {
   border-color: var(--accent);
@@ -4441,7 +4501,18 @@ button {
   font-weight: 600;
   transition: border-color 0.12s, background 0.12s;
 }
-.ielts-tfng__opt input { display: none; }
+.ielts-tfng__opt { position: relative; }
+.ielts-tfng__opt input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+.ielts-tfng__opt:focus-within {
+  outline: 3px solid #f2c748;
+  outline-offset: 2px;
+}
 .ielts-tfng__opt:hover { border-color: var(--accent); }
 .ielts-tfng__opt--selected {
   border-color: var(--accent);
@@ -4772,6 +4843,33 @@ button {
   font-size: 0.78rem;
   color: var(--muted);
 }
+.ielts-recorder__preview {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+}
+.ielts-recorder__preview audio {
+  width: min(100%, 360px);
+}
+.ielts-recorder__remove {
+  border: 0;
+  background: transparent;
+  color: var(--wl-on-panel-alert, #c8202e);
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.ielts-recorder__message {
+  min-height: 1.25rem;
+  margin-top: 0.5rem;
+  color: var(--wl-on-panel-alert, #c8202e);
+  font-size: 0.82rem;
+}
 
 /* Topbar right */
 .prac-topbar__right {
@@ -4785,9 +4883,184 @@ button {
 .ielts-exam-footer {
   margin-top: 2rem;
   display: flex;
+  align-items: center;
+  gap: 1rem;
   justify-content: flex-end;
 }
+.ielts-exam-footer__error {
+  margin-right: auto;
+  color: var(--wl-on-panel-alert, #c8202e);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
 .ielts-skill-nav__row { display: flex; gap: 0.75rem; }
+
+/* IELTS Mock 4 verified delivery */
+.ielts-submit {
+  min-height: calc(100vh - 72px);
+  padding: clamp(1rem, 4vw, 3rem);
+  background:
+    radial-gradient(circle at top left, rgba(200, 32, 46, 0.12), transparent 34rem),
+    var(--bg);
+}
+.ielts-submit__card {
+  width: min(100%, 760px);
+  margin: 0 auto;
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+  box-shadow: 0 24px 70px rgba(10, 20, 50, 0.12);
+}
+.ielts-submit__eyebrow {
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.ielts-submit h1 {
+  margin: 0.4rem 0 0.65rem;
+  color: var(--fg);
+  font-size: clamp(1.7rem, 5vw, 2.45rem);
+  line-height: 1.08;
+  text-wrap: balance;
+}
+.ielts-submit__intro {
+  max-width: 60ch;
+  color: var(--muted);
+  line-height: 1.65;
+}
+.ielts-submit__summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 1.5rem 0 1rem;
+}
+.ielts-submit__summary-item {
+  min-width: 0;
+  padding: 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg);
+}
+.ielts-submit__summary-item strong,
+.ielts-submit__summary-item span {
+  display: block;
+  overflow-wrap: anywhere;
+}
+.ielts-submit__summary-item strong { font-size: 0.88rem; }
+.ielts-submit__summary-item span {
+  margin-top: 0.25rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+.ielts-submit__summary-item.is-ready { border-color: color-mix(in srgb, #16a34a 55%, var(--border)); }
+.ielts-submit__summary-item.is-missing { border-color: color-mix(in srgb, #d97706 55%, var(--border)); }
+.ielts-submit__audio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  list-style: none;
+}
+.ielts-submit__audio-list li {
+  display: inline-flex;
+  gap: 0.5rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, #16a34a 10%, var(--surface));
+  color: var(--fg);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+.ielts-submit__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+.ielts-submit__field {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.ielts-submit__field label {
+  color: var(--fg);
+  font-size: 0.82rem;
+  font-weight: 750;
+}
+.ielts-submit__field input {
+  width: 100%;
+  min-height: 48px;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--fg);
+  font: inherit;
+  touch-action: manipulation;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.ielts-submit__field input:focus-visible {
+  border-color: var(--accent);
+  outline: 3px solid color-mix(in srgb, var(--accent) 28%, transparent);
+  outline-offset: 2px;
+}
+.ielts-submit__consent {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding: 0.8rem;
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--fg);
+  cursor: pointer;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+.ielts-submit__consent input {
+  width: 18px;
+  height: 18px;
+  margin-top: 0.1rem;
+  accent-color: var(--accent);
+  flex: 0 0 auto;
+}
+.ielts-submit__privacy,
+.ielts-submit__error,
+.ielts-submit__status {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+.ielts-submit__privacy { color: var(--muted); }
+.ielts-submit__error { min-height: 1.2rem; color: var(--wl-on-panel-alert, #c8202e); font-weight: 700; }
+.ielts-submit__status { min-height: 1.2rem; color: var(--accent); }
+.ielts-submit__actions {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+@media (max-width: 640px) {
+  .ielts-submit__summary,
+  .ielts-submit__form { grid-template-columns: 1fr; }
+  .ielts-submit__actions { flex-direction: column-reverse; }
+  .ielts-submit__actions .btn { width: 100%; }
+  .ielts-exam-footer { align-items: stretch; flex-direction: column; }
+  .ielts-exam-footer__error { margin-right: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ielts-speak__rec-btn--recording,
+  .ielts-speak__rec-dot--live { animation: none; }
+}
 
 /* ── Unified Exam Report ──────────────────────────────────────────────────── */
 .exam-report {

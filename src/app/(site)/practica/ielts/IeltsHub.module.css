@@ -6,7 +6,7 @@
   --ielts-purple: var(--wl-on-panel-purple, #6941a5);
   --ielts-ink: var(--wl-on-panel, #14244f);
   --ielts-muted: var(--wl-on-panel-soft, #5c6680);
-  --ielts-line: var(--wl-panel-line, #d9deea);
+  --ielts-line: var(--wl-rule);
   min-height: 100vh;
   padding: 2rem 1.25rem 5rem;
   background: var(--wl-panel-raised, #f7f8fc);
@@ -47,7 +47,7 @@
   padding: 1.25rem;
   border: 1px solid var(--ielts-line);
   border-radius: 7px;
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   color: var(--ielts-ink);
 }
 .pathCard,

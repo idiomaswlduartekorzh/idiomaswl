@@ -242,13 +242,13 @@ export default function Recognition({ onComplete }: Props) {
 
     const style: React.CSSProperties = {
       padding: '12px 16px',
-      background: 'var(--wl-panel-raised, #fff)',
+      background: 'var(--wl-surface-card)',
       border: '1.5px solid #e9ecef',
       borderRadius: 10,
       fontSize: 14,
       textAlign: 'left',
       cursor: isChecked ? 'default' : 'pointer',
-      color: 'var(--wl-on-panel, #1a1a2e)',
+      color: 'var(--wl-ink)',
       transition: 'all 0.15s',
     };
 
@@ -280,7 +280,7 @@ export default function Recognition({ onComplete }: Props) {
       return (
         <article
           style={{
-            background: 'var(--wl-panel-raised, #fff)',
+            background: 'var(--wl-surface-card)',
             border: '1px solid #e9ecef',
             borderRadius: 16,
             padding: '2.5rem 2rem',
@@ -288,8 +288,8 @@ export default function Recognition({ onComplete }: Props) {
           }}
         >
           <div style={{ fontSize: 48, marginBottom: 8 }}>🎯</div>
-          <h3 style={{ margin: '0 0 8px', fontSize: 24, color: 'var(--wl-on-panel, #1a1a2e)' }}>¡Reconocimiento completado!</h3>
-          <p style={{ margin: '0 0 16px', fontSize: 13, color: 'var(--wl-on-panel-soft, #6c757d)', lineHeight: 1.7 }}>
+          <h3 style={{ margin: '0 0 8px', fontSize: 24, color: 'var(--wl-ink)' }}>¡Reconocimiento completado!</h3>
+          <p style={{ margin: '0 0 16px', fontSize: 13, color: 'var(--wl-ink-soft)', lineHeight: 1.7 }}>
             Reconociste las 6 palabras en los 4 modos. Tu cerebro ya las tiene.
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'center' }}>
@@ -319,7 +319,7 @@ export default function Recognition({ onComplete }: Props) {
     return (
       <article
         style={{
-          background: 'var(--wl-panel-raised, #fff)',
+          background: 'var(--wl-surface-card)',
           border: '1px solid #e9ecef',
           borderRadius: 16,
           padding: '2.5rem 2rem',
@@ -327,7 +327,7 @@ export default function Recognition({ onComplete }: Props) {
         }}
       >
         <p style={{ margin: 0, fontSize: 48, fontWeight: 700, color: 'var(--wl-on-panel-link, #6c63ff)' }}>{`${currentScore}/6`}</p>
-        <p style={{ margin: '8px 0 24px', fontSize: 14, color: 'var(--wl-on-panel-soft, #6c757d)' }}>
+        <p style={{ margin: '8px 0 24px', fontSize: 14, color: 'var(--wl-ink-soft)' }}>
           {passed ? '¡Bien hecho! Puedes continuar.' : 'Repasemos un poco más.'}
         </p>
         {passed ? (
@@ -419,7 +419,7 @@ export default function Recognition({ onComplete }: Props) {
               textTransform: 'uppercase',
               letterSpacing: '0.08em',
               fontSize: 11,
-              color: 'var(--wl-on-panel-soft, #6c757d)',
+              color: 'var(--wl-ink-soft)',
               fontWeight: 600,
             }}
           >
@@ -439,7 +439,7 @@ export default function Recognition({ onComplete }: Props) {
 
         {!levelComplete ? (
           <>
-            <div style={{ fontSize: 11, color: 'var(--wl-on-panel-soft, #6c757d)', textAlign: 'right', marginBottom: 6 }}>
+            <div style={{ fontSize: 11, color: 'var(--wl-ink-soft)', textAlign: 'right', marginBottom: 6 }}>
               {`${currentItemIndex + 1} de 6`}
             </div>
             <div style={{ height: 3, background: 'var(--wl-panel-raised, #e9ecef)', borderRadius: 2, marginBottom: 16 }}>
@@ -456,7 +456,7 @@ export default function Recognition({ onComplete }: Props) {
 
             <article
               style={{
-                background: 'var(--wl-panel-raised, #fff)',
+                background: 'var(--wl-surface-card)',
                 border: '1px solid #e9ecef',
                 borderRadius: 16,
                 overflow: 'hidden',
@@ -524,7 +524,7 @@ export default function Recognition({ onComplete }: Props) {
                   }}
                 >
                   <span style={{ fontSize: 64 }} aria-hidden="true">🔊</span>
-                  <p style={{ margin: 0, fontSize: 13, color: 'var(--wl-on-panel-soft, #6c757d)' }}>Escucha la palabra</p>
+                  <p style={{ margin: 0, fontSize: 13, color: 'var(--wl-ink-soft)' }}>Escucha la palabra</p>
                 </div>
               ) : null}
 
@@ -541,7 +541,7 @@ export default function Recognition({ onComplete }: Props) {
                   >
                     {vocab.hangul}
                   </p>
-                  <p style={{ margin: '4px 0 0', fontSize: 14, color: 'var(--wl-on-panel-soft, #6c757d)' }}>{vocab.romanization}</p>
+                  <p style={{ margin: '4px 0 0', fontSize: 14, color: 'var(--wl-ink-soft)' }}>{vocab.romanization}</p>
                 </div>
               ) : null}
 
@@ -559,8 +559,8 @@ export default function Recognition({ onComplete }: Props) {
                     onClick={() => playAudio(vocab.hangul, 1)}
                     style={{
                       fontSize: 12,
-                      color: 'var(--wl-on-panel-soft, #6c757d)',
-                      background: 'var(--wl-panel-raised, #fff)',
+                      color: 'var(--wl-ink-soft)',
+                      background: 'var(--wl-surface-card)',
                       border: '1px solid #e9ecef',
                       borderRadius: 100,
                       padding: '4px 12px',
@@ -574,8 +574,8 @@ export default function Recognition({ onComplete }: Props) {
                     onClick={() => playAudio(vocab.hangul, 0.5)}
                     style={{
                       fontSize: 12,
-                      color: 'var(--wl-on-panel-soft, #6c757d)',
-                      background: 'var(--wl-panel-raised, #fff)',
+                      color: 'var(--wl-ink-soft)',
+                      background: 'var(--wl-surface-card)',
                       border: '1px solid #e9ecef',
                       borderRadius: 100,
                       padding: '4px 12px',
@@ -588,7 +588,7 @@ export default function Recognition({ onComplete }: Props) {
               )}
 
               <div style={{ padding: 20 }}>
-                <p style={{ margin: '0 0 14px', fontSize: 13, color: 'var(--wl-on-panel-soft, #6c757d)', fontWeight: 500 }}>
+                <p style={{ margin: '0 0 14px', fontSize: 13, color: 'var(--wl-ink-soft)', fontWeight: 500 }}>
                   {isLevelOne && '¿Qué significa esta palabra?'}
                   {isLevelTwo && '¿Cómo se dice en coreano?'}
                   {isLevelThree && 'Escucha y elige la palabra correcta en coreano'}
@@ -620,7 +620,7 @@ export default function Recognition({ onComplete }: Props) {
 
                       const audioStyle: React.CSSProperties = {
                         padding: '16px 12px',
-                        background: 'var(--wl-panel-raised, #fff)',
+                        background: 'var(--wl-surface-card)',
                         border: `2px solid ${isChecked && isCorrect ? '#2d9b4e' : isChecked && isSelected && !isCorrect ? '#dc3545' : isSelected ? '#6c63ff' : '#e9ecef'}`,
                         borderRadius: 12,
                         display: 'flex',

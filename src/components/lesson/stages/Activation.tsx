@@ -76,7 +76,7 @@ function tts(text: string, rate = 1) {
 
 function VocabCard({ item, isNew, onSpeak }: { item: VocabItem; isNew: boolean; onSpeak: (t: string) => void }) {
   return (
-    <article style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 12, overflow: 'hidden' }}>
+    <article style={{ background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 12, overflow: 'hidden' }}>
       <div style={{ height: 110, background: 'var(--wl-panel-raised, #f1f3f5)', position: 'relative', overflow: 'hidden' }}>
         <span style={{ position: 'absolute', left: 12, top: 6, fontSize: 52, fontWeight: 700, opacity: 0.06, color: item.color, zIndex: 1 }}>{item.hangul}</span>
         <img src={item.img} alt={item.translation} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }} />
@@ -84,8 +84,8 @@ function VocabCard({ item, isNew, onSpeak }: { item: VocabItem; isNew: boolean; 
       </div>
       <div style={{ padding: '12px 14px 14px' }}>
         <p style={{ margin: 0, fontSize: 22, fontWeight: 700, color: item.color }}>{item.hangul}</p>
-        <p style={{ margin: '2px 0 0', fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--wl-on-panel-soft, #6c757d)' }}>{item.romanization}</p>
-        <p style={{ margin: '6px 0 0', fontSize: 13, color: 'var(--wl-on-panel, #1a1a2e)' }}>{item.translation}</p>
+        <p style={{ margin: '2px 0 0', fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--wl-ink-soft)' }}>{item.romanization}</p>
+        <p style={{ margin: '6px 0 0', fontSize: 13, color: 'var(--wl-ink)' }}>{item.translation}</p>
         <button type="button" onClick={() => onSpeak(item.hangul)} style={{ marginTop: 10, display: 'inline-flex', alignItems: 'center', gap: 5, background: `${item.color}18`, border: `1px solid ${item.color}35`, borderRadius: 100, padding: '4px 10px', color: item.color, fontSize: 11, cursor: 'pointer' }}>
           <Volume2 size={12} /> Escuchar
         </button>
@@ -96,15 +96,15 @@ function VocabCard({ item, isNew, onSpeak }: { item: VocabItem; isNew: boolean; 
 
 function ConceptCard({ item }: { item: ConceptItem }) {
   return (
-    <article style={{ background: 'var(--wl-panel-raised, #fff)', borderLeft: `3px solid ${item.color}`, border: '1px solid #e9ecef', borderRadius: '0 12px 12px 0', padding: '14px 16px' }}>
+    <article style={{ background: 'var(--wl-surface-card)', borderLeft: `3px solid ${item.color}`, border: '1px solid #e9ecef', borderRadius: '0 12px 12px 0', padding: '14px 16px' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
         <span style={{ fontSize: 18 }}>{item.icon}</span>
         <h4 style={{ margin: 0, fontSize: 12, fontWeight: 600, color: item.color }}>{item.title}</h4>
       </div>
-      <p style={{ margin: '0 0 10px', fontSize: 12, color: 'var(--wl-on-panel-soft, #6c757d)', lineHeight: 1.65 }}>{item.body}</p>
+      <p style={{ margin: '0 0 10px', fontSize: 12, color: 'var(--wl-ink-soft)', lineHeight: 1.65 }}>{item.body}</p>
       {item.example && (
         <div style={{ background: `${item.color}10`, borderRadius: 8, padding: '8px 10px' }}>
-          <p style={{ margin: 0, fontSize: 11, color: 'var(--wl-on-panel-soft, #6c757d)' }}>{item.example.es}</p>
+          <p style={{ margin: 0, fontSize: 11, color: 'var(--wl-ink-soft)' }}>{item.example.es}</p>
           <p style={{ margin: '4px 0 0', fontSize: 14, color: item.color }}>{item.example.kr}</p>
         </div>
       )}
@@ -131,7 +131,7 @@ function DragExercise({ item, onSpeak, onComplete, isCompleted }: { item: Exerci
 
   return (
     <>
-      <p style={{ margin: '0 0 12px', fontSize: 13, color: 'var(--wl-on-panel, #1a1a2e)', lineHeight: 1.6 }}>{item.question}</p>
+      <p style={{ margin: '0 0 12px', fontSize: 13, color: 'var(--wl-ink)', lineHeight: 1.6 }}>{item.question}</p>
       {item.source && <span style={{ display: 'block', fontSize: 13, fontWeight: 600, color: 'var(--wl-on-panel-link, #6c63ff)', marginBottom: 8 }}>{item.source}</span>}
       {item.hint && <p style={{ margin: '0 0 12px', fontSize: 11, color: '#adb5bd' }}>{item.hint}</p>}
       {item.speak && (
@@ -156,7 +156,7 @@ function DragExercise({ item, onSpeak, onComplete, isCompleted }: { item: Exerci
       {feedback && <div style={{ background: feedback === item.feedback.ok ? 'rgba(45,155,78,0.06)' : 'rgba(220,53,69,0.05)', border: `1px solid ${feedback === item.feedback.ok ? 'rgba(45,155,78,0.2)' : 'rgba(220,53,69,0.15)'}`, borderRadius: 8, padding: '10px 12px', fontSize: 12, color: feedback === item.feedback.ok ? '#2d9b4e' : '#dc3545', lineHeight: 1.6, marginBottom: 10 }}>{feedback}</div>}
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
         <button type="button" onClick={validate} disabled={placed.length !== (item.correctOrder?.length ?? 0) || isCompleted} style={{ padding: '10px', background: placed.length !== (item.correctOrder?.length ?? 0) || isCompleted ? '#f1f3f5' : '#6c63ff', border: 'none', borderRadius: 10, color: placed.length !== (item.correctOrder?.length ?? 0) || isCompleted ? '#adb5bd' : '#fff', fontSize: 13, fontWeight: 600, cursor: 'pointer' }}>Validar orden</button>
-        <button type="button" onClick={clear} style={{ padding: '10px', background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 10, color: 'var(--wl-on-panel-soft, #6c757d)', fontSize: 13, fontWeight: 600, cursor: 'pointer' }}>Limpiar</button>
+        <button type="button" onClick={clear} style={{ padding: '10px', background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 10, color: 'var(--wl-ink-soft)', fontSize: 13, fontWeight: 600, cursor: 'pointer' }}>Limpiar</button>
       </div>
       {isCompleted && <p style={{ margin: '8px 0 0', textAlign: 'center', fontSize: 12, color: 'var(--wl-on-panel-ok, #2d9b4e)', fontWeight: 600, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 6 }}><Check size={14} /> Completado</p>}
     </>
@@ -287,7 +287,7 @@ export default function Activation({ onComplete }: { onComplete?: () => void }) 
         {/* Player */}
         <article style={{ background: 'var(--bg-2)', border: '1px solid var(--line-soft)', borderRadius: 12, padding: '1rem' }}>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 10 }}>
-            {['Sofía (S)', 'Carlos (C)'].map(n => <span key={n} style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 100, padding: '3px 10px', fontSize: 11, color: 'var(--muted)' }}>{n}</span>)}
+            {['Sofía (S)', 'Carlos (C)'].map(n => <span key={n} style={{ background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 100, padding: '3px 10px', fontSize: 11, color: 'var(--muted)' }}>{n}</span>)}
           </div>
 
           {/* Waveform viz */}
@@ -315,7 +315,7 @@ export default function Activation({ onComplete }: { onComplete?: () => void }) 
             <button type="button" onClick={() => { if (wavesurfer && isReady) wavesurfer.playPause(); }} style={{ width: 36, height: 36, borderRadius: '50%', background: '#6c63ff', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff' }}>
               {isPlaying ? <Pause size={16} /> : <Play size={16} style={{ marginLeft: 1 }} />}
             </button>
-            <button type="button" onClick={() => setRate(r => r === 1 ? 1.5 : r === 1.5 ? 0.75 : 1)} style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 6, padding: '3px 8px', fontSize: 11, color: 'var(--muted)', cursor: 'pointer' }}>{rate}x</button>
+            <button type="button" onClick={() => setRate(r => r === 1 ? 1.5 : r === 1.5 ? 0.75 : 1)} style={{ background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 6, padding: '3px 8px', fontSize: 11, color: 'var(--muted)', cursor: 'pointer' }}>{rate}x</button>
           </div>
         </article>
 
@@ -342,7 +342,7 @@ export default function Activation({ onComplete }: { onComplete?: () => void }) 
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', textAlign: 'center', gap: 12, padding: 48, color: 'var(--muted)' }}>
             <p style={{ fontSize: 40, margin: 0 }}>🎧</p>
             <p style={{ margin: 0, fontSize: 14, lineHeight: 1.6 }}>El vocabulario, conceptos y ejercicios aparecerán aquí mientras escuchas el podcast.</p>
-            <button type="button" onClick={unlockAll} style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid var(--line-soft)', borderRadius: 8, padding: '8px 16px', fontSize: 12, color: 'var(--muted)', cursor: 'pointer', marginTop: 8 }}>
+            <button type="button" onClick={unlockAll} style={{ background: 'var(--wl-surface-card)', border: '1px solid var(--line-soft)', borderRadius: 8, padding: '8px 16px', fontSize: 12, color: 'var(--muted)', cursor: 'pointer', marginTop: 8 }}>
               🛠 Vista previa — mostrar todo
             </button>
           </div>
@@ -388,14 +388,14 @@ export default function Activation({ onComplete }: { onComplete?: () => void }) 
                       <span style={{ fontFamily: 'var(--mono)', fontSize: 9, color: '#adb5bd' }}>{fmt(ex.at)}</span>
                       <span style={{ flex: 1, height: 1, background: 'var(--wl-panel-raised, #e9ecef)' }} />
                     </div>
-                    <article style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderLeft: `3px solid ${isDone ? '#2d9b4e' : '#e6930a'}`, borderRadius: 12, padding: 16 }}>
+                    <article style={{ background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderLeft: `3px solid ${isDone ? '#2d9b4e' : '#e6930a'}`, borderRadius: 12, padding: 16 }}>
                       <header style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
                         <p style={{ margin: 0, fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: isDone ? '#2d9b4e' : '#e6930a' }}>{ex.title}</p>
                         {isDone && <span style={{ fontSize: 10, fontWeight: 600, color: 'var(--wl-on-panel-ok, #2d9b4e)' }}>Completado</span>}
                       </header>
                       {ex.type === 'choice' ? (
                         <>
-                          <p style={{ margin: '0 0 12px', fontSize: 13, color: 'var(--wl-on-panel, #1a1a2e)', lineHeight: 1.6 }}>{ex.question}</p>
+                          <p style={{ margin: '0 0 12px', fontSize: 13, color: 'var(--wl-ink)', lineHeight: 1.6 }}>{ex.question}</p>
                           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8, marginBottom: 12 }}>
                             {ex.choices?.map(c => {
                               const sel = choiceAnswers[ex.id] === c.label;
@@ -404,7 +404,7 @@ export default function Activation({ onComplete }: { onComplete?: () => void }) 
                               return (
                                 <button key={c.label} type="button" onClick={() => handleChoice(ex, c.label)} style={{ padding: '10px 12px', background: showOk ? 'rgba(45,155,78,0.06)' : showErr ? 'rgba(220,53,69,0.05)' : sel ? 'rgba(108,99,255,0.06)' : '#fff', border: `1px solid ${showOk ? '#2d9b4e' : showErr ? '#dc3545' : sel ? '#6c63ff' : '#e9ecef'}`, borderRadius: 10, fontSize: 13, textAlign: 'left', cursor: 'pointer', lineHeight: 1.5, color: showOk ? '#2d9b4e' : showErr ? '#dc3545' : '#1a1a2e' }}>
                                   <span style={c.kr ? { fontFamily: 'sans-serif', fontSize: 15 } : undefined}>{c.label}</span>
-                                  {c.note && <span style={{ display: 'block', fontSize: 10, color: 'var(--wl-on-panel-soft, #6c757d)', marginTop: 2 }}>{c.note}</span>}
+                                  {c.note && <span style={{ display: 'block', fontSize: 10, color: 'var(--wl-ink-soft)', marginTop: 2 }}>{c.note}</span>}
                                 </button>
                               );
                             })}
@@ -422,10 +422,10 @@ export default function Activation({ onComplete }: { onComplete?: () => void }) 
             })}
 
             {completedExercises.size === 5 && (
-              <article style={{ background: 'linear-gradient(135deg, rgba(108,99,255,0.06), var(--wl-panel-raised, #fff))', border: '1px solid rgba(108,99,255,0.15)', borderRadius: 16, padding: 32, textAlign: 'center', marginTop: 8 }}>
+              <article style={{ background: 'linear-gradient(135deg, rgba(108,99,255,0.06), var(--wl-surface-card))', border: '1px solid rgba(108,99,255,0.15)', borderRadius: 16, padding: 32, textAlign: 'center', marginTop: 8 }}>
                 <p style={{ fontSize: 36, margin: '0 0 12px' }}>🎯</p>
-                <h3 style={{ margin: '0 0 8px', fontSize: 18, fontWeight: 700, color: 'var(--wl-on-panel, #1a1a2e)' }}>¡Ya piensas en coreano!</h3>
-                <p style={{ margin: '0 0 16px', fontSize: 13, color: 'var(--wl-on-panel-soft, #6c757d)', lineHeight: 1.7 }}>Terminaste los 5 ejercicios de activación. Mantén el patrón SOV activo y sigue al siguiente bloque.</p>
+                <h3 style={{ margin: '0 0 8px', fontSize: 18, fontWeight: 700, color: 'var(--wl-ink)' }}>¡Ya piensas en coreano!</h3>
+                <p style={{ margin: '0 0 16px', fontSize: 13, color: 'var(--wl-ink-soft)', lineHeight: 1.7 }}>Terminaste los 5 ejercicios de activación. Mantén el patrón SOV activo y sigue al siguiente bloque.</p>
                 <span style={{ display: 'block', marginBottom: 4, fontSize: 22, color: 'var(--wl-on-panel-link, #6c63ff)' }}>저는 학교에 가요</span>
                 <p style={{ margin: 0, fontSize: 11, color: '#adb5bd' }}>Yo a la escuela voy.</p>
                 {onComplete && <button type="button" onClick={onComplete} style={{ marginTop: 24, width: '100%', padding: '10px', background: '#2d9b4e', border: 'none', borderRadius: 10, color: '#fff', fontSize: 13, fontWeight: 600, cursor: 'pointer' }}>Continuar →</button>}

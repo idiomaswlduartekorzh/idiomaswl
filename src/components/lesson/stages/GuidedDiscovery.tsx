@@ -135,8 +135,8 @@ export default function GuidedDiscovery({ onComplete }: Props) {
         <p style={{ margin: '0 0 8px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700 }}>
           SECCIÓN 6 DE 11
         </p>
-        <h3 style={{ margin: '0 0 10px', fontSize: 24, fontWeight: 700, color: 'var(--wl-on-panel, #1a1a2e)' }}>Descubre el patrón</h3>
-        <p style={{ margin: '0 0 20px', fontSize: 13, color: 'var(--wl-on-panel-soft, #6c757d)' }}>
+        <h3 style={{ margin: '0 0 10px', fontSize: 24, fontWeight: 700, color: 'var(--wl-ink)' }}>Descubre el patrón</h3>
+        <p style={{ margin: '0 0 20px', fontSize: 13, color: 'var(--wl-ink-soft)' }}>
           Compara las frases en español y en coreano. ¿Qué aparece siempre al final en coreano?
         </p>
 
@@ -157,21 +157,21 @@ export default function GuidedDiscovery({ onComplete }: Props) {
         </article>
 
         {COMPARISONS.map((comparison, index) => (
-          <article key={comparison.id} style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 14, overflow: 'hidden', marginBottom: 12 }}>
+          <article key={comparison.id} style={{ background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 14, overflow: 'hidden', marginBottom: 12 }}>
             <header style={{ background: 'var(--wl-panel-raised, #f8f9fa)', borderBottom: '1px solid #e9ecef', padding: '8px 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-              <span style={{ fontSize: 10, color: 'var(--wl-on-panel-soft, #6c757d)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>Frase {index + 1}</span>
+              <span style={{ fontSize: 10, color: 'var(--wl-ink-soft)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>Frase {index + 1}</span>
               <button
                 type="button"
                 onClick={() => playAudio(comparison.audioKey, 1)}
-                style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 100, padding: '3px 10px', fontSize: 11, color: 'var(--wl-on-panel-soft, #6c757d)', cursor: 'pointer' }}
+                style={{ background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 100, padding: '3px 10px', fontSize: 11, color: 'var(--wl-ink-soft)', cursor: 'pointer' }}
               >
                 🔊 Escuchar
               </button>
             </header>
             <div style={{ padding: 16 }}>
               <div style={{ marginBottom: 12 }}>
-                <p style={{ margin: '0 0 4px', fontSize: 9, color: 'var(--wl-on-panel-soft, #6c757d)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>Español</p>
-                <p style={{ margin: 0, fontSize: 14, color: 'var(--wl-on-panel-soft, #6c757d)' }}>{comparison.spanishNatural}</p>
+                <p style={{ margin: '0 0 4px', fontSize: 9, color: 'var(--wl-ink-soft)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>Español</p>
+                <p style={{ margin: 0, fontSize: 14, color: 'var(--wl-ink-soft)' }}>{comparison.spanishNatural}</p>
               </div>
               <div style={{ marginBottom: 12 }}>
                 <p style={{ margin: '0 0 4px', fontSize: 9, color: '#e6930a', textTransform: 'uppercase', letterSpacing: '0.12em' }}>Orden coreano</p>
@@ -192,7 +192,7 @@ export default function GuidedDiscovery({ onComplete }: Props) {
 
         <article
           style={{
-            background: 'linear-gradient(rgba(45,155,78,0.06), var(--wl-panel-raised, #fff))',
+            background: 'linear-gradient(rgba(45,155,78,0.06), var(--wl-surface-card))',
             border: '1px solid rgba(45,155,78,0.2)',
             borderRadius: 12,
             padding: 16,
@@ -204,7 +204,7 @@ export default function GuidedDiscovery({ onComplete }: Props) {
           <p style={{ margin: '0 0 4px', fontSize: 14, color: 'var(--wl-on-panel-ok, #2d9b4e)', fontWeight: 600 }}>
             ¿Lo notaste? En las tres frases, 가요 siempre aparece al final.
           </p>
-          <p style={{ margin: 0, fontSize: 12, color: 'var(--wl-on-panel-soft, #6c757d)' }}>
+          <p style={{ margin: 0, fontSize: 12, color: 'var(--wl-ink-soft)' }}>
             Eso no es coincidencia. Es la regla más importante del coreano.
           </p>
         </article>
@@ -226,8 +226,8 @@ export default function GuidedDiscovery({ onComplete }: Props) {
         <p style={{ margin: '0 0 8px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--wl-on-panel-link, #6c63ff)', fontWeight: 700 }}>
           SECCIÓN 6 DE 11
         </p>
-        <h3 style={{ margin: '0 0 4px', fontSize: 20, fontWeight: 700, color: 'var(--wl-on-panel, #1a1a2e)' }}>Ahora escúchalo en vivo.</h3>
-        <p style={{ margin: '0 0 20px', fontSize: 13, color: 'var(--wl-on-panel-soft, #6c757d)' }}>Las mismas 3 frases. Sin subtítulos. Solo escucha.</p>
+        <h3 style={{ margin: '0 0 4px', fontSize: 20, fontWeight: 700, color: 'var(--wl-ink)' }}>Ahora escúchalo en vivo.</h3>
+        <p style={{ margin: '0 0 20px', fontSize: 13, color: 'var(--wl-ink-soft)' }}>Las mismas 3 frases. Sin subtítulos. Solo escucha.</p>
 
         <article style={{ background: '#000', borderRadius: 14, overflow: 'hidden', marginBottom: 0, position: 'relative' }}>
           <video
@@ -250,7 +250,7 @@ export default function GuidedDiscovery({ onComplete }: Props) {
 
         <div
           style={{
-            background: 'var(--wl-panel-raised, #fff)',
+            background: 'var(--wl-surface-card)',
             border: '1px solid #e9ecef',
             borderRadius: '0 0 14px 14px',
             padding: '12px 16px',
@@ -280,14 +280,14 @@ export default function GuidedDiscovery({ onComplete }: Props) {
             <span style={{ display: 'block', height: '100%', background: '#6c63ff', borderRadius: 2, width: progressWidth }} />
           </button>
 
-          <span style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--wl-on-panel-soft, #6c757d)', flexShrink: 0 }}>
+          <span style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--wl-ink-soft)', flexShrink: 0 }}>
             {`${formatTime(videoCurrentTime)} / ${formatTime(videoDuration)}`}
           </span>
 
           <button
             type="button"
             onClick={handleVideoReplay}
-            style={{ fontSize: 11, color: 'var(--wl-on-panel-soft, #6c757d)', background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 100, padding: '4px 10px', cursor: 'pointer' }}
+            style={{ fontSize: 11, color: 'var(--wl-ink-soft)', background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 100, padding: '4px 10px', cursor: 'pointer' }}
           >
             🔁 Repetir
           </button>
@@ -322,13 +322,13 @@ export default function GuidedDiscovery({ onComplete }: Props) {
   if (phase === 'noticing') {
     return (
       <section style={{ maxWidth: 680, margin: '0 auto', padding: '2rem 1rem' }}>
-        <h3 style={{ margin: '0 0 8px', fontSize: 20, fontWeight: 700, color: 'var(--wl-on-panel, #1a1a2e)' }}>¿Qué aparece al final?</h3>
+        <h3 style={{ margin: '0 0 8px', fontSize: 20, fontWeight: 700, color: 'var(--wl-ink)' }}>¿Qué aparece al final?</h3>
 
         <div style={{ marginBottom: 16 }}>
           {COMPARISONS.map((comparison) => (
             <p
               key={comparison.id}
-              style={{ margin: '0 0 6px', fontFamily: "'Noto Sans KR', sans-serif", fontSize: 16, color: 'var(--wl-on-panel-soft, #6c757d)', padding: '8px 12px', background: 'var(--wl-panel-raised, #f8f9fa)', borderRadius: 8 }}
+              style={{ margin: '0 0 6px', fontFamily: "'Noto Sans KR', sans-serif", fontSize: 16, color: 'var(--wl-ink-soft)', padding: '8px 12px', background: 'var(--wl-panel-raised, #f8f9fa)', borderRadius: 8 }}
             >
               {comparison.korean.replace('가요', '')}
               <span style={{ color: 'var(--wl-on-panel-ok, #2d9b4e)', fontWeight: 700 }}>가요</span>.
@@ -336,8 +336,8 @@ export default function GuidedDiscovery({ onComplete }: Props) {
           ))}
         </div>
 
-        <article style={{ background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 14, padding: 20, marginBottom: 16 }}>
-          <p style={{ margin: '0 0 16px', fontSize: 16, fontWeight: 600, color: 'var(--wl-on-panel, #1a1a2e)' }}>{NOTICING_QUESTION.prompt}</p>
+        <article style={{ background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 14, padding: 20, marginBottom: 16 }}>
+          <p style={{ margin: '0 0 16px', fontSize: 16, fontWeight: 600, color: 'var(--wl-ink)' }}>{NOTICING_QUESTION.prompt}</p>
 
           {NOTICING_OPTIONS
             .filter((option) => shuffledOptions.includes(option.value))
@@ -369,7 +369,7 @@ export default function GuidedDiscovery({ onComplete }: Props) {
                   disabled={checked}
                 >
                   <span>{option.value}</span>
-                  <span style={{ marginLeft: 8, fontFamily: 'inherit', fontSize: 12, color: 'var(--wl-on-panel-soft, #6c757d)' }}>({option.desc})</span>
+                  <span style={{ marginLeft: 8, fontFamily: 'inherit', fontSize: 12, color: 'var(--wl-ink-soft)' }}>({option.desc})</span>
                 </button>
               );
             })}
@@ -426,7 +426,7 @@ export default function GuidedDiscovery({ onComplete }: Props) {
     <section style={{ maxWidth: 680, margin: '0 auto', padding: '2rem 1rem', textAlign: 'center' }}>
       <article
         style={{
-          background: 'linear-gradient(rgba(45,155,78,0.06), var(--wl-panel-raised, #fff))',
+          background: 'linear-gradient(rgba(45,155,78,0.06), var(--wl-surface-card))',
           border: '1px solid rgba(45,155,78,0.2)',
           borderRadius: 16,
           padding: '2rem',
@@ -434,8 +434,8 @@ export default function GuidedDiscovery({ onComplete }: Props) {
         }}
       >
         <p style={{ margin: '0 0 4px', fontFamily: "'Noto Sans KR', sans-serif", fontSize: 64, fontWeight: 700, color: 'var(--wl-on-panel-ok, #2d9b4e)' }}>가요</p>
-        <p style={{ margin: '0 0 16px', fontSize: 16, color: 'var(--wl-on-panel-soft, #6c757d)' }}>siempre al final</p>
-        <p style={{ margin: 0, background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 10, padding: '12px 16px', textAlign: 'left', fontSize: 13, color: 'var(--wl-on-panel, #1a1a2e)', lineHeight: 1.7 }}>
+        <p style={{ margin: '0 0 16px', fontSize: 16, color: 'var(--wl-ink-soft)' }}>siempre al final</p>
+        <p style={{ margin: 0, background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 10, padding: '12px 16px', textAlign: 'left', fontSize: 13, color: 'var(--wl-ink)', lineHeight: 1.7 }}>
           En coreano la acción va siempre al final de la frase. No importa qué tan larga sea. El verbo siempre cierra.
         </p>
       </article>
@@ -444,9 +444,9 @@ export default function GuidedDiscovery({ onComplete }: Props) {
         {COMPARISONS.map((comparison) => (
           <div
             key={comparison.id}
-            style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'var(--wl-panel-raised, #fff)', border: '1px solid #e9ecef', borderRadius: 10, padding: '8px 14px', marginBottom: 6, textAlign: 'left', gap: 10 }}
+            style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'var(--wl-surface-card)', border: '1px solid #e9ecef', borderRadius: 10, padding: '8px 14px', marginBottom: 6, textAlign: 'left', gap: 10 }}
           >
-            <div style={{ flex: 1, fontFamily: "'Noto Sans KR', sans-serif", fontSize: 16, color: 'var(--wl-on-panel, #1a1a2e)' }}>
+            <div style={{ flex: 1, fontFamily: "'Noto Sans KR', sans-serif", fontSize: 16, color: 'var(--wl-ink)' }}>
               {comparison.korean.replace('가요', '')}
               <span style={{ color: 'var(--wl-on-panel-ok, #2d9b4e)', fontWeight: 700 }}>가요</span>.
             </div>

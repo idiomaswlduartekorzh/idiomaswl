@@ -5,7 +5,7 @@
   --mh-accent: var(--wl-on-panel-teal, #176b87);
   --mh-cyan: var(--wl-panel-raised, #eef4ff);
   --mh-paper: var(--wl-panel-raised, #f7f8fc);
-  --mh-line: var(--wl-panel-line, #d9deea);
+  --mh-line: var(--wl-rule);
   --mh-good: var(--wl-on-panel-ok, #18794e);
   --mh-bad: var(--wl-on-panel-alert, #b42332);
   color: var(--ink);
@@ -832,7 +832,7 @@
   border: 1px solid var(--mh-line);
   border-left: 5px solid var(--mh-accent);
   border-radius: 6px;
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
 }
 
 .evidenceWorkspaceHeader {

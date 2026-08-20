@@ -4,6 +4,8 @@ import { EXAMS } from '@/data/exams';
 import ExamInfoGraphic from './ExamInfoGraphic';
 import MockGrid from './MockGrid';
 import ExamGuideBlock from './ExamGuide';
+import ExamJsonLd from './ExamJsonLd';
+import ExamCluster from './ExamCluster';
 import { EXAM_GUIDES } from '@/data/examGuides';
 
 export async function generateStaticParams() {
@@ -45,6 +47,8 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
 
   return (
     <>
+      <ExamJsonLd exam={exam} guide={guide} />
+
       {/* Breadcrumb */}
       <div style={{ background: 'var(--bg-2)', borderBottom: '1px solid var(--line-soft)', padding: '0.6rem 0' }}>
         <div className="wrap" style={{ display: 'flex', alignItems: 'center', gap: 8, fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--muted)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
@@ -59,6 +63,9 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
 
       {/* ── Practice mocks ── */}
       <MockGrid exam={exam} />
+
+      {/* ── Índice del superhub (hoy solo el SAT tiene clúster propio) ── */}
+      {slug === 'sat' && <ExamCluster accent={exam.color} />}
 
       {/* ── Guía de contenido (solo los exámenes que ya la tienen escrita) ── */}
       {guide && <ExamGuideBlock guide={guide} examName={exam.name} accent={exam.color} />}

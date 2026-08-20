@@ -308,7 +308,7 @@ export default function Page() {
               marginBottom: '2rem',
             }}
           >
-            <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: 'var(--wl-panel-raised, #fff)' }}>
+            <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: 'var(--wl-surface-card)' }}>
               <h2 id="official-vs-welearn" style={{ marginTop: 0, fontSize: '1.05rem' }}>
                 Formato oficial vs estrategia WeLearn
               </h2>
@@ -363,7 +363,7 @@ export default function Page() {
 
             <div style={{ display: 'grid', gap: '1rem' }}>
               {IELTS_GT_READING_TEXTS.map((text, textIndex) => (
-                <article key={text.id} style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: 'var(--wl-panel-raised, #fff)' }}>
+                <article key={text.id} style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: 'var(--wl-surface-card)' }}>
                   <p style={{ margin: '0 0 0.35rem', color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.78rem' }}>
                     TEXT {textIndex + 1} · {text.context.toUpperCase()} · FIRST MOVE: {text.firstMove.toUpperCase()}
                   </p>
@@ -431,7 +431,7 @@ export default function Page() {
                   href: '/practica/ielts/reading/tipos-de-preguntas',
                 },
               ].map((item) => (
-                <article key={item.href} style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: 'var(--wl-panel-raised, #fff)' }}>
+                <article key={item.href} style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: 'var(--wl-surface-card)' }}>
                   <h3 style={{ marginTop: 0 }}>{item.title}</h3>
                   <p style={{ color: 'var(--muted)', lineHeight: 1.6 }}>{item.text}</p>
                   <Link href={item.href}>Abrir recurso</Link>

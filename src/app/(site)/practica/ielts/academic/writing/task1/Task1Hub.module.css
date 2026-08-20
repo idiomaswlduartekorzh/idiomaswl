@@ -7,7 +7,7 @@
   --task-purple: var(--wl-on-panel-purple, #6941a5);
   --task-ink: var(--wl-on-panel, #14244f);
   --task-muted: var(--wl-on-panel-soft, #5c6680);
-  --task-line: var(--wl-panel-line, #d9deea);
+  --task-line: var(--wl-rule);
   min-height: 100vh;
   padding: 2rem 1.25rem 5rem;
   background: var(--wl-panel-raised, #f7f8fc);
@@ -160,7 +160,7 @@
   padding: 1rem 1.1rem;
   border-right: 1px solid var(--wl-panel-line, #d5dce9);
   border-left: 1px solid var(--wl-panel-line, #d5dce9);
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
 }
 
 .nowPlaying {
@@ -283,7 +283,7 @@
   padding: 1.2rem;
   border: 1px solid var(--task-line);
   border-radius: 7px;
-  background: var(--wl-panel-raised, #fff);
+  background: var(--wl-surface-card);
   color: var(--task-ink);
 }
 
