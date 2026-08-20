@@ -41,7 +41,7 @@ T17-UI-003	verified_2026-08-14	expiry and sealed status use live regions	no	none
 T17-UI-004	verified_2026-08-14	focus-visible treatment remains visible for editors buttons and checkboxes	no	none
 T17-UI-005	verified_2026-08-14	320-pixel viewport has no horizontal page overflow	no	none
 T17-UI-006	verified_2026-08-14	reduced-motion preference suppresses nonessential motion	no	none
-T17-UI-007	pending_owner_voiceover_2026-08-14	manual announcements focus sequence and disabled state not yet heard with VoiceOver	yes	owner runs short T17 VoiceOver checklist
+T17-UI-007	approved_owner_voiceover_2026-08-20	owner approved manual announcements focus sequence and disabled state with “voiceover ok”	no	none
 T17-REPO-001	verified_2026-08-14	zero mp3 transcript TTS ElevenLabs Whisper or audio pipeline changes	no	none
 T17-REPO-002	verified_2026-08-14	branch fast-forwarded to current canonical main and restored without conflicts	no	none
 T17-REPO-003	verified_2026-08-14	official Turbopack build passes all guardians TypeScript and 1363 of 1363 pages; production Chromium regression passes 19 of 19	no	none

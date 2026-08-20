@@ -3614,3 +3614,17 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
   en estado `READY`; publicar el snapshot reconciliado queda pendiente de una ventana
   libre en la cola.
 - Producción y audios TOEFL siguen intactos.
+
+### Preview reconciliado READY y VoiceOver T16/T17 aprobado — 2026-08-20
+
+- El deployment `dpl_Ch1VKomZPfWwTLSk8xCa75RNLaD2`, commit `1dd7b7e`, terminó
+  `READY`. Vercel registró catálogo 465, compilación, TypeScript, 1.834/1.834 páginas
+  y la ruta `/examenes/[exam]/practica/[mockId]`.
+- El alias protegido de la rama se asignó al artefacto reconciliado. Set 1 respondió
+  HTTP 200 con bypass autenticado y 302 al SSO sin sesión. Producción no se tocó.
+- José David Duarte Silva declaró **“voiceover ok”** después de recibir los checklists
+  cortos de Build a Sentence, Write an Email y Academic Discussion. Se registra como
+  aprobación explícita de VoiceOver T16 y T17; ambos gates pasan de `[~]` a `[x]`.
+- Queda abierto únicamente el control humano de avance Listening 1→2 antes de presentar
+  el manifiesto, voces, muestra y costo de los 400 audios. No se generó ni modificó
+  audio.

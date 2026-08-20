@@ -2,7 +2,7 @@
 
 Fecha de corte: **2026-08-14**
 Objeto: **`object:toefl-writing-constructed-set1-v2`**
-Estado: **implementación automática completa; VoiceOver humano pendiente; T17 `[~]`**
+Estado: **implementación automática completa; VoiceOver humano aprobado; T17 `[x]`**
 
 ## Resultado
 
@@ -45,7 +45,7 @@ Fuentes oficiales revalidadas:
 | Build producción | PASS, Turbopack + 1.363/1.363 páginas |
 | Chromium producción T12 + T13 + T16 + T17 | PASS 19/19 en 16,5 s |
 | Audio | Cero cambios |
-| VoiceOver T17 | Pendiente humano |
+| VoiceOver T17 | APROBADO por José David Duarte Silva, 2026-08-20 |
 
 Chromium cubrió inicio explícito, 7/10 minutos, ausencia de mínimo inventado en Email,
 recomendación de 100 en Discussion, `spellcheck=false`, persistencia de texto, foco e
@@ -73,6 +73,5 @@ de build ni se rebajó un guardián.
 6. Abrir `/practica/toefl/writing/academic-discussion`, iniciar y confirmar “10:00” y
    “mínimo recomendado 100”.
 
-Para cerrar el gate basta registrar **“VoiceOver T17 aprobado”** o indicar el primer
-anuncio/control que no coincida. T16 mantiene su propio VoiceOver pendiente. Audio
-continúa diferido.
+José David Duarte Silva registró **“voiceover ok”** el 2026-08-20 después de recibir
+este checklist. La declaración cierra T17. Audio continúa diferido.

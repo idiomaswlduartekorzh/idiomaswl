@@ -2,7 +2,7 @@
 
 Fecha de corte: **2026-08-14**
 Objeto: **`object:toefl-build-sentence-set1-v2`**
-Estado: **implementación completa; VoiceOver humano pendiente; T16 `[~]`**
+Estado: **implementación completa; VoiceOver humano aprobado; T16 `[x]`**
 
 ## Resultado
 
@@ -33,7 +33,7 @@ Fuentes oficiales revalidadas:
 | Chromium T16 | PASS 4/4 |
 | Chromium producción T12 + T13 + T16 | PASS 15/15 en 1,1 min |
 | Audio | Cero cambios |
-| VoiceOver T16 | Pendiente humano |
+| VoiceOver T16 | APROBADO por José David Duarte Silva, 2026-08-20 |
 
 Chromium cubrió construcción completa 10/10, teclado, persistencia de orden y foco,
 cierre único, resultado 10/10, fallo de endpoint sin penalidad, integración en el
@@ -54,6 +54,5 @@ después del arreglo.
 5. Formar el primero con `is` → `meeting us` → `outside` → `the library`, finalizar y
    comprobar que se anuncia “Correct order” y el resumen de resultado.
 
-Para cerrar el gate basta registrar **“VoiceOver T16 aprobado”** o indicar el primer
-anuncio/control que no coincida. T17 puede avanzar mientras tanto porque depende de
-T10/T11, no de T16. Audio continúa diferido.
+José David Duarte Silva registró **“voiceover ok”** el 2026-08-20 después de recibir
+este checklist. La declaración cierra T16. Audio continúa diferido.

@@ -128,7 +128,7 @@ se conservan como evidencia.
 - captura de Speaking temporal en la pestaña, sin carga a servidor y sin nota;
 - resultado sin overall parcial, sin banda aproximada y sin conversión `/120`;
 - persistencia probada al recargar y vista 320×900 sin overflow horizontal;
-- VoiceOver T13 aprobado por el owner; T16 y T17 siguen pendientes.
+- VoiceOver T13, T16 y T17 aprobados por el owner.
 
 ## Evidencia automática
 
@@ -198,6 +198,12 @@ se conservan como evidencia.
   `dpl_13NNLoLdYLag9e9g44TUyBjigi2p` al entrar una producción y dos previews IELTS.
   No existe un fallo de aplicación asociado. El alias estable TOEFL sigue sirviendo
   el preview anterior aprobado `dpl_3HHzkaRN4rjaPAPyQ7B4WrVA5s6q` como `READY`;
+- el intento posterior `dpl_Ch1VKomZPfWwTLSk8xCa75RNLaD2`, commit `1dd7b7e`, terminó
+  `READY`: catálogo 465, compilación, TypeScript, 1.834/1.834 páginas y ruta dinámica
+  de simulacro PASS. El alias protegido se movió a este artefacto; Set 1 responde 200
+  con bypass autenticado y 302/SSO sin sesión;
+- José David Duarte Silva declaró **“voiceover ok”** el 2026-08-20 después de recibir
+  los checklists T16 y T17. Ambas matrices quedan cerradas y sin pendiente humano;
 - ningún audio fue abierto, reproducido, transcrito, generado ni modificado.
 
 ## Gates para declarar “producto terminado”
@@ -207,16 +213,16 @@ se conservan como evidencia.
 | Contenido escrito y composición | CERRADO | 20×97 presentes y auditados. |
 | Runner, clocks y resultados honestos | CERRADO | Pruebas y build pasan. |
 | Producción local de las 20 rutas | CERRADO | Smoke 20/20 pasa. |
-| VoiceOver T16/T17 | ABIERTO | Revisión humana del owner en Build, Email y Discussion. |
+| VoiceOver T16/T17 | CERRADO | José David Duarte Silva aprobó ambos checklists con “voiceover ok” el 2026-08-20. |
 | Rama contra `origin/main` | CERRADO | `origin/main` `a6707877` está incorporado en `50d1ba6f`; 0 commits detrás, catálogo, TypeScript, build y guardianes TOEFL PASS. |
-| Build del preview Vercel | ABIERTO | El alias protegido conserva `dpl_3HHzkaRN4rjaPAPyQ7B4WrVA5s6q` `READY`, pero Vercel retiró los dos intentos del snapshot reconciliado antes de compilar al reorganizar la cola. Reintentar en una ventana libre. |
-| Revisión humana del preview | ABIERTO | Espaciado CTW aprobado por el owner. Falta probar el avance Listening 1→2 y aprobar T16/T17 con VoiceOver. La protección SSO no se debilitó. |
+| Build del preview Vercel | CERRADO | `dpl_Ch1VKomZPfWwTLSk8xCa75RNLaD2`, commit `1dd7b7e`, está `READY`; 1.834/1.834 páginas y Set 1 autenticado 200. El alias protegido apunta al artefacto. |
+| Revisión humana del preview | ABIERTO | Espaciado CTW y VoiceOver T16/T17 aprobados por el owner. Falta probar el avance Listening 1→2. La protección SSO no se debilitó. |
 | Aprobación de audio | ABIERTO | Manifiesto exacto, voces, muestra y costo; requiere autorización explícita. |
 | Generación y QA de audio | BLOQUEADO | Crear sólo el lote aprobado y luego revisar técnica, texto/voz y experiencia. |
 | Producción | BLOQUEADO | Requiere cierre de todos los gates anteriores y autorización separada. |
 
 Conclusión: los 20 simulacros y el arreglo están **desplegados en un preview técnico
 pre-audio `READY` para revisión del owner**. Aún no están listos para venderse o
-desplegarse en producción como producto terminado: faltan la aprobación humana de CTW,
-avance Listening y VoiceOver T16/T17, y después el gate separado de manifiesto, voces,
-muestra, costo, generación y QA de los 400 audios.
+desplegarse en producción como producto terminado: falta la comprobación humana del
+avance Listening y después el gate separado de manifiesto, voces, muestra, costo,
+generación y QA de los 400 audios.
