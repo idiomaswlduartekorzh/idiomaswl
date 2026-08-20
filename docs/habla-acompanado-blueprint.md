@@ -113,7 +113,11 @@ El guardián no publica un set que falle una sola.
 1. **Asimetría** — cada ficha tiene al menos un dato que la otra no.
 2. **Zona de acuerdo** — existe una salida que los dos aceptarían, y no es obvia.
 3. **Cero español calcable** — ninguna ficha trae la frase que hay que decir.
-4. **Andamiaje** — 6 a 10 exponentes por rol, en el idioma meta, con uso y registro; ninguno resuelve la conversación entero.
+4. **Andamiaje** — en **dos piezas separadas**, y esto no es organización, es lo que impide
+   que se convierta en un guion (ver §10): la **caja de herramientas del nivel**, común a los
+   ocho escenarios, y **6 a 10 exponentes propios** de este rol en este escenario. Ninguna
+   fila resuelve la conversación, y **la tabla leída en orden tampoco puede ser la
+   conversación**.
 5. **Carga** — ningún rol por debajo del 40 % de la conversación, medido en **palabras**, no
    en turnos. Un «Mm» cuenta como turno: hubo simulaciones con el 50 % de los turnos y el
    10 % de las palabras que pasaban esta puerta con las dos manos atadas. Se cuenta sobre la
@@ -198,3 +202,30 @@ vas a perder el argumento, no lo usas y no pierdes nada—; **una carta que asig
 nueva, o que rompe un hecho que ya dijiste en voz alta, no se puede aprovechar mirándola**.
 Escribe siempre las del segundo tipo. Cada escenario dice por escrito qué pasa si se mira
 antes de tiempo, y la respuesta tiene que ser «nada bueno».
+
+## 10. Las dos piezas del andamiaje
+
+Medido sobre las doce fichas de la primera versión: **seis de cada diez filas eran la misma
+función en los doce roles** —saludar, despedirse, pedir que te repitan, reformular, decir por
+qué algo importa—, y a cada rol le quedaban 4,6 filas para lo que solo se dice en su
+escenario. Peor: con saludo en la fila 1 y despedida en la fila 10, y más filas que turnos,
+**la tabla leída de arriba abajo era la conversación entera**. La puerta 4 se cumplía fila a
+fila y se rompía en el conjunto de la tabla.
+
+Y no se arregla subiendo el tope. Cada ronda de auditoría pide media docena de funciones
+nuevas; con un tope fijo, cada ronda echa fuera algo que hacía falta —así se quedó un
+escenario cuyo tercer acto es proponer alternativas sin ninguna forma de proponer una—.
+
+Se separan:
+
+| | Qué lleva | Dónde vive |
+|---|---|---|
+| **Caja de herramientas del nivel** | Lo que sirve en cualquier conversación: abrir, cerrar, agradecer, pedir que repitan, **reformular lo propio**, decir por qué algo te importa, callar sin mentir | Una sola vez por nivel, visible desde cualquier ficha |
+| **Exponentes del escenario** | 6 a 10. Solo lo que se dice **aquí**: el acto que toca, la pieza del regateo, el término técnico y su glosa | En la ficha del rol |
+
+La caja es común pero **no es plana**: el que manda y el que pide no abren igual, y quien
+suelta jerga necesita reformular mientras el otro necesita preguntar. La caja trae las dos
+mitades y cada ficha señala cuáles le tocan.
+
+Regla de reparto: si una forma sirve igual en cinco escenarios, es de la caja. Si solo se
+entiende sabiendo de qué va este escenario, es de la ficha.
